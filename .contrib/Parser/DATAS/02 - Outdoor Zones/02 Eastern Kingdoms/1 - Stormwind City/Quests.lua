@@ -468,7 +468,7 @@ _.Zones =
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
-					["lvl"] = lvl(20, 8, 20),
+					["lvl"] = lvlsquish(20, 8, 20),
 				}),
 				q(32310, {	-- A Tale of Six Masters
 					["sourceQuests"] = { 32307 },	-- Reader for the Dead Tongue
@@ -990,6 +990,177 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(10748)),	-- Wanderlust Boots
 					},
 				}),
+				-- MORE BREADCRUMBS, PLEASE DONT PUT THEM EVERWHERE THEY CAN BE PICKED UP. USE MAPS.
+				q(27271, {	-- Journey to the Wizard's Sanctum
+					["provider"] = { "n", 16749 },	-- Edirah (The Exodar)
+					["coord"] = { 47.2, 61.8, THE_EXODAR },
+					["isBreadcrumb"] = true,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { MAGE },
+					["lvl"] = 20,
+				}),
+				q(27271, {	-- Journey to the Wizard's Sanctum
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 50690 },	-- Tarelvir (Darnassus)
+					["classes"] = { MAGE },
+					["coord"] = { 37.6, 80.0, 89 },	-- Tarelvir (Darnassus)
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(27271, {	-- Journey to the Wizard's Sanctum
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 5146 },	-- Nittlebur Sparkfizzle (Ironforge)
+					["classes"] = { MAGE },
+					["coord"] = { 51.0, 26.2, 87 },	-- Nittlebur Sparkfizzle (Ironforge)
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(27265, {	-- Lord Grayson Shadowbreaker
+					["provider"] = { "n", 16761 },	-- Baatun (The Exodar)
+					["coord"] = { 43.6, 78.4, THE_EXODAR },
+					["isBreadcrumb"] = true,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { PALADIN },
+					["lvl"] = 20,
+				}),
+				q(27265, {	-- Lord Grayson Shadowbreaker
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 35281 },	-- Rukua (Darnassus)
+					["classes"] = { PALADIN },
+					["coord"] = { 43.6, 78.4, 89 },	-- Rukua (Darnassus)
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(27265, {	-- Lord Grayson Shadowbreaker
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 5147 },	-- Valgar Highforge (Ironforge)
+					["classes"] = { PALADIN },
+					["coord"] = { 51.0, 26.2, 87 },	-- Nittlebur Sparkfizzle (Ironforge)
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(27268, {	-- Make Haste to the Cathedral
+					["provider"] = { "n", 16756 },	-- Caedmos (The Exodar)
+					["coord"] = { 33.0, 65.4, THE_EXODAR },
+					["isBreadcrumb"] = true,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { PRIEST },
+					["lvl"] = 20,
+				}),
+				q(27268, {	-- Make Haste to the Cathedral
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 11401 },	-- Priestess Alathea (Darnassus)
+					["classes"] = { PRIEST },
+					["coord"] = { 43.4, 79.2, 89 },	-- Priestess Alathea (Darnassus)
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(27268, {	-- Make Haste to the Cathedral
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 11406 },	-- High Priest Rohan (Ironforge)
+					["classes"] = { PRIEST },
+					["coord"] = { 25.0, 8.2, 87 },	-- High Priest Rohan (Ironforge)
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(28258, {	-- Meet with Ander Germaine
+					["provider"] = { "n", 17120 },	-- Behomat (The Exodar)
+					["coord"] = { 56.4, 46.2, THE_EXODAR },
+					["isBreadcrumb"] = true,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { WARRIOR },
+					["lvl"] = 50,
+				}),
+				q(28258, {	-- Meet with Ander Germaine
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 4087 },	-- Arias'ta Bladesinger (Darnassus)
+					["classes"] = { WARRIOR },
+					["coord"] = { 56.4, 46.2, 89 },	-- Arias'ta Bladesinger (Darnassus)
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(28285, {	-- Meet with High Priestess Laurena
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 11401 },	-- Priestess Alathea
+					["classes"] = { PRIEST },
+					["coord"] = { 43.4, 79.2, 89 },
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(28285, {	-- Meet with High Priestess Laurena
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 11406 },	-- High Priest Rohan (Ironforge)
+					["classes"] = { PRIEST },
+					["coord"] = { 25.0, 8.2, 87 }, -- High Priest Rohan (Ironforge)
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(28285, {	-- Meet with High Priestess Laurena
+					["provider"] = { "n", 16756 },	-- Caedmos (The Exodar)
+					["coord"] = { 33.0, 65.4, THE_EXODAR },
+					["isBreadcrumb"] = true,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { PRIEST },
+					["lvl"] = 50,
+				}),
+				q(28268, {	-- Meet with Lord Grayson Shadowbreaker
+					["provider"] = { "n", 16761 },	-- Baatun (The Exodar)
+					["coord"] = { 39.0, 84.2, THE_EXODAR },
+					["isBreadcrumb"] = true,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { PALADIN },
+					["lvl"] = 50,
+				}),
+				q(28268, {	-- Meet with Lord Grayson Shadowbreaker
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 35281 },	-- Rukua (Darnassus)
+					["classes"] = { PALADIN },
+					["coord"] = { 43.6, 78.4, 89 },	-- Rukua (Darnassus)
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(28268, {	-- Meet with Lord Grayson Shadowbreaker
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 5147 },	-- Valgar Highforge (Ironforge)
+					["classes"] = { PALADIN },
+					["coord"] = { 51.0, 26.2, 87 },	-- Nittlebur Sparkfizzle (Ironforge)
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(28263, {	-- Meet with Maginor Dumas
+					["provider"] = { "n", 16749 },	-- Edirah (The Exodar)
+					["coord"] = { 26.2, 6.2, THE_EXODAR },
+					["isBreadcrumb"] = true,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { MAGE },
+					["lvl"] = 50,
+				}),
+				q(28263, {	-- Meet with Maginor Dumas
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 50690 },	-- Tarelvir (Darnassus)
+					["classes"] = { MAGE },
+					["coord"] = { 37.6, 80.0, 89 },	-- Tarelvir (Darnassus)
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(28263, {	-- Meet with Maginor Dumas
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 5146 },	-- Nittlebur Sparkfizzle (Ironforge)
+					["classes"] = { MAGE },
+					["coord"] = { 26.2, 6.2, 87 },	-- Nittlebur Sparkfizzle (Ironforge)
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(28260, {	-- Meet with Wulf Hansreim
+					["provider"] = { "n", 17122 },	-- Vord (The Exodar)
+					["coord"] = { 47.2, 88.4, THE_EXODAR },
+					["isBreadcrumb"] = true,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { HUNTER },
+					["lvl"] = 50,
+				}),
+				q(28260, {	-- Meet with Wulf Hansreim
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 5115 },	-- Daera Brightspear (Ironforge)
+					["classes"] = { HUNTER },
+					["coord"] = { 47.2, 88.4, 87 },	-- Daera Brightspear (Ironforge)
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(28260, {	-- Meet with Wulf Hansreim
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 4138 },	-- Jeen'ra Nightrunner (Darnassus)
+					["classes"] = { HUNTER },
+					["coord"] = { 43.4, 26.0, 89 },	-- Jeen'ra Nightrunner (Darnassus)
+					["races"] = ALLIANCE_ONLY,
+				}),
+				-- END BREADCRUMBS
 				q(28295, {	-- Meetup with the Caravan
 					["sourceQuests"] = { 28292 },	-- That's No Pyramid!
 					["isBreadcrumb"] = true,

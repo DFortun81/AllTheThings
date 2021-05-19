@@ -65,13 +65,6 @@ _.Zones =
 					["provider"] = { "n", 16495 },	-- Lieutenant Beitha <The Argent Dawn>
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(27271, {	-- Journey to the Wizard's Sanctum
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 50690 },	-- Tarelvir (Darnassus)
-					["classes"] = { MAGE },
-					["coord"] = { 37.6, 80.0, 89 },	-- Tarelvir (Darnassus)
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(32664, {	-- Learn to Ride
 					["DisablePartySync"] = true,
 					["isBreadcrumb"] = true,
@@ -83,25 +76,11 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(27265, {	-- Lord Grayson Shadowbreaker
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 35281 },	-- Rukua (Darnassus)
-					["classes"] = { PALADIN },
-					["coord"] = { 43.6, 78.4, 89 },	-- Rukua (Darnassus)
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(27267, {	-- Make Contact with SI:7
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 4214 },	-- Erion Shadewhisper (Darnassus)
 					["classes"] = { ROGUE },
 					["coord"] = { 40.0, 39.6, 89 },	-- Erion Shadewhisper (Darnassus)
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(27268, {	-- Make Haste to the Cathedral
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 11401 },	-- Priestess Alathea (Darnassus)
-					["classes"] = { PRIEST },
-					["coord"] = { 43.4, 79.2, 89 },	-- Priestess Alathea (Darnassus)
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(4493,  {	-- March of the Silithid [Alliance]
@@ -122,13 +101,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(6973)),	-- Fire Hardened Leggings
 					},
 				}),
-				q(28258, {	-- Meet with Ander Germaine
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 4087 },	-- Arias'ta Bladesinger (Darnassus)
-					["classes"] = { WARRIOR },
-					["coord"] = { 56.4, 46.2, 89 },	-- Arias'ta Bladesinger (Darnassus)
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(28287, {	-- Meet with Farseer Umbrua
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 52292 },	-- Droha (Darnassus)
@@ -136,39 +108,11 @@ _.Zones =
 					["coord"] = { 43.8, 78.8, 89 },	-- Droha (Darnassus)
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(28285, {	-- Meet with High Priestess Laurena
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 11401 },	-- Priestess Alathea
-					["classes"] = { PRIEST },
-					["coord"] = { 43.4, 79.2, 89 },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(28268, {	-- Meet with Lord Grayson Shadowbreaker
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 35281 },	-- Rukua (Darnassus)
-					["classes"] = { PALADIN },
-					["coord"] = { 43.6, 78.4, 89 },	-- Rukua (Darnassus)
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(28262, {	-- Meet with Lord Tony Romano
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 4214 },	-- Erion Shadewhisper (Darnassus)
 					["classes"] = { ROGUE },
 					["coord"] = { 40.0, 39.6, 89 },	-- Erion Shadewhisper (Darnassus)
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(28263, {	-- Meet with Maginor Dumas
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 50690 },	-- Tarelvir (Darnassus)
-					["classes"] = { MAGE },
-					["coord"] = { 37.6, 80.0, 89 },	-- Tarelvir (Darnassus)
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(28260, {	-- Meet with Wulf Hansreim
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 4138 },	-- Jeen'ra Nightrunner (Darnassus)
-					["classes"] = { HUNTER },
-					["coord"] = { 43.4, 26.0, 89 },	-- Jeen'ra Nightrunner (Darnassus)
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28289, {	-- Moonglade Calls

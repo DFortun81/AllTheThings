@@ -155,13 +155,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(27271, {	-- Journey to the Wizard's Sanctum
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 5146 },	-- Nittlebur Sparkfizzle (Ironforge)
-					["classes"] = { MAGE },
-					["coord"] = { 51.0, 26.2, 87 },	-- Nittlebur Sparkfizzle (Ironforge)
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(1709,  {	-- Klockmort's Creation
 					["sourceQuests"] = { 1708 },	-- Iron Coral
 					["provider"] = { "n", 6169 },	-- Klockmort Spannerspan
@@ -181,13 +174,6 @@ _.Zones =
 					},
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(27265, {	-- Lord Grayson Shadowbreaker
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 5147 },	-- Valgar Highforge (Ironforge)
-					["classes"] = { PALADIN },
-					["coord"] = { 51.0, 26.2, 87 },	-- Nittlebur Sparkfizzle (Ironforge)
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(1880,  {	-- Mage-tastic Gizmonitor
 					["provider"] = { "n", 5144 },	-- Bink
 					["classes"] = { MAGE },
@@ -206,13 +192,6 @@ _.Zones =
 					["coord"] = { 51.6, 14.6, 87 },	-- Hulfdan Blackbeard (Ironforge)
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(27268, {	-- Make Haste to the Cathedral
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 11406 },	-- High Priest Rohan (Ironforge)
-					["classes"] = { PRIEST },
-					["coord"] = { 25.0, 8.2, 87 },	-- High Priest Rohan (Ironforge)
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(28259, {	-- Meet with Demisette Cloyce
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 5173 },	-- Alexander Calder
@@ -227,39 +206,11 @@ _.Zones =
 					["coord"] = { 55.2, 29.0, 87 },	-- Farseer Javad (Ironforge)
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(28285, {	-- Meet with High Priestess Laurena
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 11406 },	-- High Priest Rohan (Ironforge)
-					["classes"] = { PRIEST },
-					["coord"] = { 25.0, 8.2, 87 }, -- High Priest Rohan (Ironforge)
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(28268, {	-- Meet with Lord Grayson Shadowbreaker
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 5147 },	-- Valgar Highforge (Ironforge)
-					["classes"] = { PALADIN },
-					["coord"] = { 51.0, 26.2, 87 },	-- Nittlebur Sparkfizzle (Ironforge)
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(28262, {	-- Meet with Lord Tony Romano
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 5165 },	-- Hulfdan Blackbeard (Ironforge)
 					["classes"] = { ROGUE },
 					["coord"] = { 51.6, 14.6, 87 },	-- Hulfdan Blackbeard (Ironforge)
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(28263, {	-- Meet with Maginor Dumas
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 5146 },	-- Nittlebur Sparkfizzle (Ironforge)
-					["classes"] = { MAGE },
-					["coord"] = { 26.2, 6.2, 87 },	-- Nittlebur Sparkfizzle (Ironforge)
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(28260, {	-- Meet with Wulf Hansreim
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 5115 },	-- Daera Brightspear (Ironforge)
-					["classes"] = { HUNTER },
-					["coord"] = { 47.2, 88.4, 87 },	-- Daera Brightspear (Ironforge)
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1050,  {	-- Mythology of the Titans
