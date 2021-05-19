@@ -57,7 +57,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'TBC|x86'">
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>..\..\..\..\..\..\..\_classic_\Interface\AddOns\ATT-Classic\.contrib\.tools\</OutputPath>
-    <DefineConstants>TRACE;DEBUG;TBC;CRIEVE;ANYCLASSIC;CLASSICBETA</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;TBC;CRIEVE;ANYCLASSIC</DefineConstants>
     <DebugType>full</DebugType>
     <PlatformTarget>x64</PlatformTarget>
     <LangVersion>7.3</LangVersion>
@@ -109,20 +109,20 @@
     </BootstrapperPackage>
   </ItemGroup>
   <Target Name="RenameClassicEXE" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'Classic'">
-	<Copy SourceFiles="$(OUTDIR)\Parser V2.exe" DestinationFiles="$(OUTDIR)\Parser for Classic.exe" />
-	<Message Text="Renamed executable file." Importance="high" />
+    <Copy SourceFiles="$(OUTDIR)\Parser V2.exe" DestinationFiles="$(OUTDIR)\Parser for Classic.exe" />
+    <Message Text="Renamed executable file." Importance="high" />
   </Target>
   <Target Name="RenamePTRExe" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'PTR'">
-	<Copy SourceFiles="$(OUTDIR)\Parser V2.exe" DestinationFiles="$(OUTDIR)\Parser for PTR.exe" />
-	<Message Text="Renamed executable file." Importance="high" />
+    <Copy SourceFiles="$(OUTDIR)\Parser V2.exe" DestinationFiles="$(OUTDIR)\Parser for PTR.exe" />
+    <Message Text="Renamed executable file." Importance="high" />
   </Target>
   <Target Name="RenameRetailExe" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'Retail'">
-	<Copy SourceFiles="$(OUTDIR)\Parser V2.exe" DestinationFiles="$(OUTDIR)\Parser for Retail.exe" />
-	<Message Text="Renamed executable file." Importance="high" />
+    <Copy SourceFiles="$(OUTDIR)\Parser V2.exe" DestinationFiles="$(OUTDIR)\Parser for Retail.exe" />
+    <Message Text="Renamed executable file." Importance="high" />
   </Target>
   <Target Name="RenameTBCExe" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'TBC'">
-	<Copy SourceFiles="$(OUTDIR)\Parser V2.exe" DestinationFiles="$(OUTDIR)\Parser for TBC.exe" />
-	<Message Text="Renamed executable file." Importance="high" />
+    <Copy SourceFiles="$(OUTDIR)\Parser V2.exe" DestinationFiles="$(OUTDIR)\Parser for TBC.exe" />
+    <Message Text="Renamed executable file." Importance="high" />
   </Target>
   <ItemGroup>
     <ProjectReference Include="..\ATT\ATT.csproj">
