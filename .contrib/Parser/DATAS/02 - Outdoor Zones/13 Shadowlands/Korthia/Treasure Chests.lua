@@ -7,6 +7,23 @@ _.Zones =
 	m(SHADOWLANDS, {
 		m(KORTHIA, {
 			n(-212, {	-- Treasure Chest
+				i(185962, {	-- Rune Chit
+					["sourceQuests"] = { 64506 },	-- What Must Be Found
+				}),
+			--	Guise of the Changeling, Ring of Self-Reflection come from Korthian Relic Boxes.
+				i(187047, {	-- Guise of the Changeling
+				--	came from Korthian Relic Box at 43.8, 76.9
+					["sourceQuests"] = { 64511 },	-- Missing Relics
+					["questID"] = 63909,	-- Guise of the Changeling
+				}),
+				i(187119, {	-- Ring of Self Reflection
+				--	came from Korthian Relic Box at 41.2, 43.2 (in cave)
+					["sourceQuests"] = { 64511 },	-- Missing Relics
+					["questID"] = 63921,	-- Ring of Self-Reflection
+					["g"] = {
+						i(187140),	-- Ring of Duplicity
+					},
+				}),
 				o(369194, {	-- Anima Laden Egg
 					["description"] = "In a tree.",
 				--	["questID"] = 64244,
@@ -80,6 +97,14 @@ _.Zones =
 					["questID"] = 64357,
 					["isDaily"] = true,
 					["coord"] = { 39.6, 30.0, KORTHIA },
+				}),
+				o(369185, {	-- Korthian Relic Box
+				--	does not currently have a lockout - doesn't even disappear when you open it
+					["coord"] = { 41.2, 43.2, KORTHIA },	-- cave entrance
+				}),
+				o(369304, {	-- Korthian Relic Box
+				--	does not currently have a lockout - doesn't even disappear when you open it
+					["coord"] = { 43.8, 76.9, KORTHIA },
 				}),
 				o(369172, {	-- Lost Memento
 				--	["questID"] = 64238,

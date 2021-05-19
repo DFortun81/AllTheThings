@@ -15,7 +15,9 @@ _.Zones =
 						--
 						i(186470),	-- Recipe: Crafter's Mark of the Chained Isle
 						i(186717),	-- Research Report: Adaptive Alloys
-						i(186714),	-- Research Report: All-Seeing Crystal
+						i(186714, {	-- Research Report: All-Seeing Crystal
+							["questID"] = 64339,
+						}),
 						i(186716),	-- Research Report: Ancient Shrines
 						i(187136),	-- Research Report: Careful Examination
 						i(187138),	-- Research Report: First Alloys
@@ -27,6 +29,8 @@ _.Zones =
 						i(186984),	-- Korthian Archivists' Key
 						i(186731),	-- Repaired Riftkey
 						i(186718),	-- Teleporter Repair Kit
+						--
+						i(186991),	-- Transmute: Stones to Ore
 					},
 				}),
 				n(179321, {	-- Duchess Mynx <Death's Advance Quartermaster>

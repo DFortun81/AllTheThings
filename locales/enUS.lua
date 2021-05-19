@@ -1943,6 +1943,7 @@ app.L = {
 		[-917] = "Tier 2: Streaming Threads",									-- Tier 2: Streaming Threads
 		[-918] = "Tier 3: Flowing Power",										-- Tier 3: Flowing Power
 		[-919] = "Night Mare",													-- Night Mare
+		[-977] = "Maelie the Wanderer",											-- Maelie the Wanderer
 
 	-- SL Maldraxxus/Necrolord
 		[-920] = "Covenant: Necrolord",											-- Covenant: Necrolord
@@ -4908,6 +4909,7 @@ app.L = {
 		[369148] = "Glittering Nest Material",
 		[369149] = "Forgotten Feather",
 		[369172] = "Lost Memento",
+		[369185] = "Korthian Relic Box",
 		[369194] = "Anima Laden Egg",
 		[369204] = "Displaced Relic",
 		[369216] = "Helsworn Chest",
@@ -4915,6 +4917,7 @@ app.L = {
 		[369225] = "Infested Vestige",
 		[369225369225] = "Dislodged Nest",	-- TODO: replace with actual objectID
 		[369232] = "Offering Box",
+		[369304] = "Korthian Relic Box",
 		[369327] = "Invasive Mawshroom",
 		[369329] = "Invasive Mawshroom",
 		[369330] = "Invasive Mawshroom",

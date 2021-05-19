@@ -346,8 +346,14 @@ _.Achievements =
 				crit(20),	-- Corpse Heap
 				crit(21),	-- Popo's Potion Patrol
 				crit(22),	-- No Stoneborn Left Behind
-				crit(23),	-- Zelnithop
-				crit(24),	-- Kroke the Tormented
+				crit(23),	-- Reliwik the Defiant
+				crit(24),	-- Zelnithop
+				crit(25),	-- Kroke the Tormented
+				crit(26),	-- Pop Quiz
+			--	last 2 crit that don't load correctly lol
+			--	crit(27),	-- Towering Exterminator
+			--	crit(28),	-- Konthrogz the Obliterator
+			--	actual crit
 			--	crit(10),	-- Guard Orguluus
 			--	crit(11),	-- Screaming Shade
 			--	crit(12),	-- Silent Soulstalker

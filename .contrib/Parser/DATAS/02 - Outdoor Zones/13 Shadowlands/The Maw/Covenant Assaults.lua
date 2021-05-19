@@ -455,6 +455,19 @@ _.Zones =
 								},
 							}),
 						}),
+						n(RARES, {
+							n(180246, {	-- Carriage Crusher
+								["description"] = "The Assault Supply Carriage starts in Korthia, moves to the northeastern bridge out of the Beastwarrens, and then finishes its supply run to the Venthyr covenant assault.\n\nWhen the carriage makes it to the bridge, the Carriage Crusher spawns.  You can hop into the carriage to heal it and yourself.",
+							--	["questID"] = 64258 and 64439, both of which also triggered on my first Traitor Balthier kill.  so currently they share a lockout and i'm not sure which quest to put where
+								["isDaily"] = true,
+								["coord"] = { 45.5, 54.8, THE_MAW },
+								["g"] = {	-- TODO: does not currently grant credit, so not sure if this will permanently be a part of the achievement or if it's truly just NYI
+									crit(8, {	-- Assault Supply Carriage [NYI]
+										["achievementID"] = 15107,	-- Conquering Korthia
+									}),
+								},
+							}),
+						}),
 						n(-18, {	-- Rewards
 							crit(2, {	-- Venthyr Assault
 								["achievementID"] = 15000,	-- United Front

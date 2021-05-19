@@ -4538,6 +4538,7 @@ _.HiddenQuestTriggers =
 		q(62750),	-- hitting Renown 19 on Venthyr / unlocking Deepening Bond 4% stam increase
 		q(62751),	-- hitting Renown 35 on Venthyr / unlocking Deepening Bond 6% stam increase
 		q(62925),	-- hitting Renown 39 on Venthyr / received mount Gravestone Battle Gargon
+		q(64508),	-- hitting Renown 41 on Venthyr
 		q(59744),	-- when opening the Battered Chest while on Repair and Restore
 		q(60302),	-- when channeling anima to Dominance Keep for the first time
 		-- q(61494),	-- using Building: Guardhouse
@@ -4706,9 +4707,11 @@ _.HiddenQuestTriggers =
 		q(64281),	-- looting a second Lost Razorwing Egg
 		q(64376),	-- tracking quest that automatically accepted when i flew in to Korthia on 5/11/21 - supposedly related to the Darkmaul mount
 		q(64341),	-- looted 20 Relic Fragments from some shardhides (177354 - Shardhide Dominator x2, 177352 - Shardhide Mauler x1, looted all 3 at once)
+		q(64342),	-- looted 14 Relic Fragments from some shardhide around 48.7, 29.3
 		q(64343),	-- looted 9 Relic Fragments from a mob around 51.6, 52.6
 		q(64344),	-- looted 7 Relic Fragments from a Ravenous Gorger, npcID 177245
 		q(64262),	-- triggered when turning in #64007, "Charge of the Covenants"
+		q(64536),	-- looting Maldraxxus Larva Shell (300 Catalogued Research)
 		
 		-- Treasures of Korthia achievement
 		q(64256),	-- Desmotaeron treasure - Helsworn Chest

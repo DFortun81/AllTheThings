@@ -969,6 +969,15 @@ _.Zones =
 					["provider"] = { "n", 177116 },	-- Polemarch Adrestes
 					["coord"] = { 24.3, 30.2, BASTION },
 				}),
+				q(63892, {	-- Diviner's Rune Chits
+					["sourceQuests"] = { 64506 },	-- What Must Be Found
+					["description"] = "The item that starts this quest and the Rune Chits themselves can drop from the daily Korthian treasure chests.",
+					["provider"] = { "i", 187055 },	-- Pouch of Rune Chits
+					["cost"] = { { "i", 185962, 20 } },	-- 20x Rune Chit
+					["g"] = {
+						i(187154),	-- Ancient Korthian Runes
+					},
+				}),
 				q(63582, {	-- He Was My Student
 					["sourceQuests"] = { 63581 },	-- Step Into the Light
 					["provider"] = { "n", 177116 },	-- Polemarch Adrestes

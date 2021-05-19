@@ -13,7 +13,10 @@ _.Zones =
 					["questID"] = 64243,
 					["isDaily"] = true,
 					["coord"] = { 51.1, 41.7, KORTHIA },
-					["cr"] = 179755,	-- Consumption (Rare, non-Elite version)
+					["crs"] = {
+						179755,	-- Consumption (Rare, non-Elite version)
+						179768,	-- Consumption (Rare Elite version)
+					},
 					["g"] = {
 						crit(4, {	-- Consumption
 							["achievementID"] = 15107,	-- Conquering Korthia
@@ -39,10 +42,14 @@ _.Zones =
 						crit(19, {	-- Escaped Wilderling
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
+						i(187278, {	-- Talon-Pierced Mawsworn Lockbox
+							["description"] = "Can contain items from the Korthian sets.",
+						}),
+						i(187216),	-- Soultwining Crescent	TODO - unsure if this is specific to this rare or if it can drop from anywhere, may need to move
 					},
 				}),
 				n(180042, {	-- Fleshwing
-					["description"] = "Help Cadaverous, Dregs, and Lurik burn necromancers' corpses until they summon the rare.",
+					["description"] = "Help Cadaverous, Dregs, and Lurik burn necromancers' corpses until they summon the rare.\n\nRequires a |cFF40bf40Necrolord|r to start.",
 					["questID"] = 64349,
 					["isDaily"] = true,
 					["coord"] = { 59.7, 43.3, KORTHIA },
@@ -73,7 +80,7 @@ _.Zones =
 				}),
 				n(179108, {	-- Kroke the Tormented
 					["description"] = "Kill |cFF883325Tormented Demolishers|r for a chance to spawn Kroke.\n\nIf the two on the surface are not up, there is a third Demolisher inside the cave in the bottom-left room.",
-				--	["questID"] = ,	-- has not been added yet
+					["questID"] = 64428,
 					["isDaily"] = true,
 					["coords"] = {
 						{ 59.8, 37.5, KORTHIA },
@@ -81,9 +88,8 @@ _.Zones =
 					},
 					["cr"] = 179029,	-- Tormented Demolisher
 					["g"] = {
-					--	crit(22, {	-- Kroke the Tormented
-						crit(24, {	-- Kroke the Tormented
-							["achievementID"] = 15107,	-- Kroke the Tormented
+						crit(25, {	-- Kroke the Tormented
+							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 					},
 				}),
@@ -114,7 +120,7 @@ _.Zones =
 					},
 				}),
 				n(179985, {	-- Stygian Stonecrusher
-					["description"] = "Speak to Drippy, and then defend the NPCs as they repair the Broken Gatecrasher.",
+					["description"] = "Speak to Drippy, and then defend the NPCs as they repair the Broken Gatecrasher.\n\nRequires a |cFFfe040fVenthyr|r to start.",
 					["questID"] = 64313,
 					["isDaily"] = true,
 					["coord"] = { 46.3, 79.7, KORTHIA },
@@ -127,19 +133,34 @@ _.Zones =
 					},
 				}),
 				n(179760, {	-- Towering Exterminator
+					["description"] = "Can spawn next to other rares when they die.  Defeat the adds that emerge from the portal, and eventually the rare will appear.\n\nWhen the portal spawns, there is a zonewide announcement: |cFFff8040A powerful mawsworn opens a portal into Korthia.|r",
 					["questID"] = 64245,
 					["isDaily"] = true,
-				--	["coord"] = { 46.7, 79.6, KORTHIA },	-- this is where i found it, engaged in combat with an npc, but i'm not sure if it spawned here
 					["g"] = {
 					--[[ this crit is currently broken
 						crit(23),	-- Towering Exterminator
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 						--]]
+						i(187241),	-- Watchful Eye of the Damned
+					},
+				}),
+				n(180162, {	-- Ve'rayn
+					["description"] = "Click on the |cFFFFFFFFPlanted Veilstaff|r and answer Ve'rayn's questions.  When you refuse to betray Ve'nari, she will attack.",
+					["questID"] = 64457,
+					["isDaily"] = true,
+					["coord"] = { 32.5, 43.0, KORTHIA },
+					["g"] = {
+						crit(26, {	-- Pop Quiz
+							["achievementID"] = 15107,	-- Conquering Korthia
+						}),
+						i(187264, {	-- Ve'rayn's Head
+							["questID"] = 64513,	-- Ve'rayn's Head
+						}),
 					},
 				}),
 				n(180032, {	-- Wild Worldcracker
-					["description"] = "Escort Popo as she helps all her friends, and eventually she will summon the rare.  She patrols from east to west.",
+					["description"] = "Escort Popo as she helps all her friends, and eventually she will summon the rare.  She patrols from east to west.\n\nRequires a |cFF516bfeKyrian|r to start.",
 					["questID"] = 64338,
 					["isDaily"] = true,
 					["coords"] = {
@@ -157,12 +178,12 @@ _.Zones =
 				}),
 				n(177336, {	-- Zelnithop
 					["description"] = "At the bottom of the cave.",
-				--	["questID"] = ,
+					["questID"] = 64442,
 					["isDaily"] = true,
 					["coord"] = { 30.2, 54.9, KORTHIA },
 					["g"] = {
-					--	crit(21, {	-- Zelnithop
-						crit(23, {	-- Zelnithop
+					--	crit(22, {	-- Zelnithop
+						crit(24, {	-- Zelnithop
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 					},

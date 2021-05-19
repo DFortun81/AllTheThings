@@ -30,6 +30,20 @@ _.Zones =
 					["provider"] = { "n", 177928 },	-- Archivist Roh-Dahl
 					["coord"] = { 39.4, 51.3, KORTHIA },
 				}),
+				q(63861, {	-- Beginning the Collection
+					["sourceQuests"] = { 64290 },	-- Collecting Research
+					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+					["coord"] = { 62.7, 22.5, KORTHIA },
+					["g"] = {
+						i(185636),	-- The Archivist's Codex
+					},
+				}),
+				q(63899, {	-- Book of Binding: The Mad Witch
+					["sourceQuests"] = { 64506 },	-- What Must Be Found
+					["description"] = "At the end of the top level of the cave.",
+					["provider"] = { "i", 187206 },	-- Book of Binding: The Mad Witch
+					["coord"] = { 27.2, 56.8, KORTHIA },
+				}),
 				q(63711, {	-- Bone Tools
 					["sourceQuests"] = { 63710 },	-- The Anima Trail
 					["provider"] = { "n", 177452 },	-- Bonesmith Heirmir
@@ -39,6 +53,11 @@ _.Zones =
 					["sourceQuests"] = { 63732 },	-- Interrupt the Interrogations
 					["provider"] = { "n", 178713 },	-- Archivist Roh-Dahl
 					["coord"] = { 58.9, 58.1, KORTHIA },
+				}),
+				q(63912, {	-- Celestial Shadowlands Chart
+					["sourceQuests"] = { 64506 },	-- What Must Be Found
+					["provider"] = { "i", 187201 },	-- Celestial Shadowlands Chart
+					["coord"] = { 45.5, 56.0, KORTHIA },
 				}),
 				q(64290, {	-- Collecting Research
 					["sourceQuests"] = { 64289 },	-- Picking Up Fragments
@@ -146,6 +165,16 @@ _.Zones =
 					["provider"] = { "n", 177451 },	-- Tal-Galan - TODO: verify NPC once on live, it's currently named "Tal-Galan (temp)"
 					["coord"] = { 34.9, 35.3, KORTHIA },
 				}),
+				q(64511, {	-- Missing Relics
+					["sourceQuests"] = {	-- TODO: not sure if the prereq is these quests (contextually it makes sense) or Tier 2 research, or both.  i had also picked up, but not finished, 63892, "Diviner's Rune Chits."  these 5 are the first set of research that he directed me to collect, so at least having discovered the diviner's rune chits quest may also be required
+						63899,	-- Book of Binding: The Mad Witch
+						63912,	-- Celestial Shadowlands Chart
+						63911,	-- Singing Steel Ingot
+						63860,	-- Talisman of the Eternal Scholar
+					},
+					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+					["coord"] = { 62.7, 22.5, KORTHIA },
+				}),
 				q(63665, {	-- Opening to Oribos
 					["sourceQuests"] = { 63994 },	-- Who is the Maw Walker?
 					["provider"] = { "n", 177227 },	-- Tal-Galan
@@ -188,6 +217,11 @@ _.Zones =
 					["provider"] = { "n", 177423 },	-- Tal-Galan
 					["coord"] = { 57.4, 29.8, KORTHIA },
 				}),
+				q(63911, {	-- Singing Steel Ingot
+					["sourceQuests"] = { 64506 },	-- What Must Be Found
+					["provider"] = { "i", 187200 },	-- Singing Steel Ingot
+					["coord"] = { 62.1, 56.8, KORTHIA },
+				}),
 				q(64193, {	-- Table of Discontent
 				--	["sourceQuests"] = {  },	-- TODO, unknown, implemented 4/21 on PTR.  definitely requires Korthia unlock, may require specific rep level (i was at 2775 Friendly)
 					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
@@ -195,6 +229,11 @@ _.Zones =
 					["g"] = {
 						i(186470),	-- Recipe: Prestigious Crafter's Mark
 					},
+				}),
+				q(63860, {	-- Talisman of the Eternal Scholar
+					["sourceQuests"] = { 64506 },	-- What Must Be Found
+					["provider"] = { "i", 185914 },	-- Damaged Talisman
+					["coord"] = { 40.6, 41.3, KORTHIA },
 				}),
 				q(63710, {	-- The Anima Trail
 					["sourceQuests"] = { 63709 },	-- Secrets of the Vault
@@ -263,6 +302,11 @@ _.Zones =
 					["sourceQuests"] = { 63703 },	-- Vault of Secrets
 					["provider"] = { "n", 177423 },	-- Tal-Galan
 					["coord"] = { 57.4, 29.9, KORTHIA },
+				}),
+				q(64506, {	-- What Must Be Found
+					["sourceQuests"] = { 63861 },	-- Beginning the Collection
+					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+					["coord"] = { 62.6, 22.5, KORTHIA },
 				}),
 				q(63994, {	-- Who is the Maw Walker?
 					["sourceQuests"] = { 63663 },	-- Korthia, the City of Secrets
@@ -552,7 +596,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 64.6, 25.4, KORTHIA },
 				}),
-				q(63961, {	-- Sealed Lockboxes
+				q(63961, {	-- Sealed Secrets
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 178845 },	-- Ve'lonu
 					["isDaily"] = true,

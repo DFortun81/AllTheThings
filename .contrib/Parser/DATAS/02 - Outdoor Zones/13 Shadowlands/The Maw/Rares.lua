@@ -595,7 +595,7 @@ _.Zones =
 					},
 				}),
 				n(179805, {	-- Traitor Balthier
-					["questID"] = 64258,	-- TODO: also 64439, not sure which is first-time ID
+				--	["questID"] = 64258 and 64439, both of which also triggered on my first completion of the Assault Supply Carriage event. so currently they share a lockout and i'm not sure which quest to put where
 					["isDaily"] = true,
 					["coords"] = {	-- TODO: the first few times i saw it, it was up on a ledge, but then it was down on the lowest level, so i'm not sure if it can spawn on multiple levels/needs additional coords or if these coords need to be changed
 						{ 67.5, 48.3, THE_MAW },

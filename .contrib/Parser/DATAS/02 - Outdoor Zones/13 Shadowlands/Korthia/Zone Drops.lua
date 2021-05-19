@@ -5,8 +5,48 @@
 _.Zones =
 {
 	m(SHADOWLANDS, {
-		m(THE_MAW, {
+		m(KORTHIA, {
 			n(ZONEDROPS, {
+			--	if these Relic Fragment loot dailies make it to live, we could change them to custom headers for localization of 'Relic Fragment.'  they may require having purchased Research Report: All-Seeing Crystal
+				q(64433, {	-- 30 Relic Fragments
+					["isDaily"] = true,
+					["name"] = "30 Relic Fragments",
+					["crs"] = {
+						179823,	-- Relic Gatherer
+						179565,	-- Relic Gorger
+					},
+				}),
+				q(64434, {	-- 20 Relic Fragments
+					["isDaily"] = true,
+					["name"] = "20 Relic Fragments",
+					["crs"] = {
+						179823,	-- Relic Gatherer
+						179565,	-- Relic Gorger
+					},
+				}),
+				q(64435, {	-- 15 Relic Fragments
+					["isDaily"] = true,
+					["name"] = "15 Relic Fragments",
+					["crs"] = {
+						179823,	-- Relic Gatherer
+						179565,	-- Relic Gorger
+					},
+				}),
+				q(64436, {	-- 5 Relic Fragments
+					["isDaily"] = true,
+					["name"] = "5 Relic Fragments",
+					["crs"] = {
+						179823,	-- Relic Gatherer
+						179565,	-- Relic Gorger
+					},
+				}),
+			--	Korthian Relics (putting here barring a better place for them)
+				i(187322),	-- Crumbling Stone Tablet
+				i(187325),	-- Faded Razorwing Anatomy Illustration
+				i(187335),	-- Maldraxxus Larva Shell
+				i(187323),	-- Runic Diagram
+				i(187331),	-- Tattered Fae Designs
+			--	Greens
 				i(186123),	-- Foresworn Scout's Coif
 				i(186124),	-- Foresworn Scout's Greaves
 				i(186122),	-- Foresworn Scout's Grips
