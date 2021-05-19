@@ -51,6 +51,19 @@ _.Zones =
 						28554,	-- Warchief's Command: Dustwallow Marsh!
 					},
 				}),
+				-- #if AFTER BFA
+				q(6625, {	-- Alliance Trauma
+					["qg"] = 5150,	-- Nissa Firestone
+					["coord"] = { 54.8, 58.6, IRONFORGE },
+					["maps"] = { IRONFORGE },
+					-- #if BEFORE BFA
+					["requireSkill"] = FIRST_AID,
+					-- #endif
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(35, 10, 35),
+				}),
+				-- #endif
 				q(27427, {	-- Arms of the Grimtotems
 					["provider"] = { "n", 23568 },	-- Captain Darill
 					["coord"] = { 46.6, 24.6, 70 },
@@ -1181,13 +1194,27 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 28552,	-- Hero's Call: Dustwallow Marsh
 				}),
-				q(6624,  {	-- Triage
-					["provider"] = { "n", 12939 },	-- Doctor Gustaf VanHowzen
-					["coord"] = { 67.7, 48.9, 70 },
-					["races"] = ALLIANCE_ONLY,
-					["requireSkill"] = TAILORING,
+				-- #if AFTER BFA
+				q(6624, {	-- Triage (A)
+					["qg"] = 12939,	-- Doctor Gustaf VanHowzen
 					["sourceQuest"] = 6625,	-- Alliance Trauma
+					["coord"] = { 67.7, 48.9, DUSTWALLOW_MARSH },
+					["maps"] = { DUSTWALLOW_MARSH },
+					["races"] = ALLIANCE_ONLY,
+					-- #if BEFORE BFA
+					["requireSkill"] = FIRST_AID,
+					-- #endif
+					["cost"] = {
+						{ "i", 16991, 1 },	-- Triage Bandage
+					},
+					["lvl"] = lvlsquish(35, 15, 35),
+					["groups"] = {
+						i(49193, {	-- Alliance Trauma Certification
+							["timeline"] = { "timeline 3.2.0.10192" },
+						}),
+					},
 				}),
+				-- #endif
 				q(9437,  {	-- Twilight of the Dawn Runner
 					["provider"] = { "n", 17095 },	-- Balandar Brightstar
 					["coord"] = { 35.8, 31.7, 70 },

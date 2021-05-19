@@ -280,18 +280,6 @@ _.Zones =
 						}),
 					}),
 				}),
-				prof(TAILORING, {
-					n(QUESTS, {
-						q(6625,  {	-- Alliance Trauma
-							["provider"] = { "n", 5150 },	-- Nissa Firestone
-							["coord"] = { 55.1, 58.3, 87 },
-							["isBreadcrumb"] = true,
-							["requireSkill"] = TAILORING,
-							["races"] = ALLIANCE_ONLY,
-							["lvl"] = 35,
-						}),
-					}),
-				}),
 			}),
 		}),
 	}),

@@ -211,18 +211,6 @@ _.Zones =
 						}),
 					}),
 				}),
-				prof(FIRST_AID, {
-					n(QUESTS, {
-						q(6623, {	-- Horde Trauma
-							["provider"] = { "n", 45540 },	-- Krenk Choplimb
-							["coord"] = { 37.6, 87.2, 85 },
-							["requireSkill"] = FIRST_AID,
-							["races"] = HORDE_ONLY,
-							["lvl"] = 25,
-							["u"] = REMOVED_FROM_GAME,
-						}),
-					}),
-				}),
 				prof(FISHING, {
 					n(ACHIEVEMENTS, {
 						ach(5477, {	-- Fish or Cut Bait: Orgrimmar
