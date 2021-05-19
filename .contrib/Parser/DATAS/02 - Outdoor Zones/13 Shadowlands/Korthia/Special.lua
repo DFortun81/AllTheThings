@@ -12,6 +12,12 @@ _.Zones =
 				--	["description"] = "",
 					["questID"] = 64298,	-- daily Maelie find
 					["isDaily"] = true,
+					["coords"] = {
+						{ 39.7, 34.8, KORTHIA },
+						{ 41.1, 39.8, KORTHIA },
+						{ 49.3, 41.8, KORTHIA },
+						{ 59.8, 15.1, KORTHIA },
+					},
 				--	["icon"] = ,	-- maelie icon unknown atm
 					["cr"] = 179912,	-- Maelie the Wanderer
 					["g"] = {
@@ -23,6 +29,12 @@ _.Zones =
 						}),
 						q(64295, {	-- Day 3
 							["name"] = "Day 3",
+						}),
+						q(64296, {	-- Day 4
+							["name"] = "Day 4",
+						}),
+						q(64297, {	-- Day 5
+							["name"] = "Day 5",
 						}),
 						--[[
 						q(, {	-- 

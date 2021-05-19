@@ -77,6 +77,15 @@ _.Zones =
 					["provider"] = { "n", 177459 },	-- Protector Kah-Rev
 					["coord"] = { 49.5, 65.0, KORTHIA },
 				}),
+				q(63892, {	-- Diviner's Rune Chits
+					["sourceQuests"] = { 64506 },	-- What Must Be Found
+					["description"] = "The item that starts this quest and the Rune Chits themselves can drop from the daily Korthian treasure chests.",
+					["provider"] = { "i", 187055 },	-- Pouch of Rune Chits
+					["cost"] = { { "i", 185962, 20 } },	-- 20x Rune Chit
+					["g"] = {
+						i(187154),	-- Ancient Korthian Runes
+					},
+				}),
 				q(63644, {	-- Dread Tidings
 					["sourceQuests"] = { 63659 },	-- Dreadlords!
 					["provider"] = { "n", 177194 },	-- The Primus

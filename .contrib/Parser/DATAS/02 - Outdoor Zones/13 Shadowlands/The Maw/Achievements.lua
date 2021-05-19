@@ -95,6 +95,7 @@ _.Zones =
 						178270,	-- Helya's Grasp (for Imprisoned Soul)
 						176149,	-- Imprisoned Soul
 						175910,	-- Scavenged Soul
+						176313,	-- Scavenged Soul
 						176145,	-- Stone Prison (for Imprisoned Souls)
 						176175,	-- Tormented Soul
 						174158,	-- Wailing Soul

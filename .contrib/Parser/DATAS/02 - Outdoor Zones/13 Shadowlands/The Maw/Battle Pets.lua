@@ -11,7 +11,7 @@ _.Zones =
 					["cr"] = 179179,	-- Clinging Remains
 				}),
 				pet(3123, {	-- Deathroach
-				--	["cr"] = ,	-- 
+					["cr"] = 179226,	-- Deathroach
 				}),
 				pet(3126, {	-- Eye of Affliction
 					["cr"] = 179229,	-- Eye of Affliction

@@ -461,6 +461,7 @@ _.Zones =
 							--	["questID"] = 64258 and 64439, both of which also triggered on my first Traitor Balthier kill.  so currently they share a lockout and i'm not sure which quest to put where
 								["isDaily"] = true,
 								["coord"] = { 45.5, 54.8, THE_MAW },
+								["cr"] = 180182,	-- Assault Supply Carriage
 								["g"] = {	-- TODO: does not currently grant credit, so not sure if this will permanently be a part of the achievement or if it's truly just NYI
 									crit(8, {	-- Assault Supply Carriage [NYI]
 										["achievementID"] = 15107,	-- Conquering Korthia
