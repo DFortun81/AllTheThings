@@ -40,7 +40,7 @@ _.Zones =
 				q(14082, {	-- Learn to Ride at the Exodar
 					["provider"] = { "i", 46879 },	-- Riding Training Pamphlet
 					["description"] = "The pamphlet that starts this quest is sent to Draenei in their Mailbox upon reaching the specified level.",
-					["timeline"] = { "removed 5.2.0.10000" },
+					["timeline"] = { "added 3.3.0.10958", "removed 5.2.0.10000" },
 					["races"] = { DRAENEI },
 					["DisablePartySync"] = true,
 					["isBreadcrumb"] = true,

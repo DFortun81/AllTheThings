@@ -9,6 +9,7 @@ _.Zones =
 				fp(83, {	-- Tranquillien, Ghostlands
 					["cr"] = 16189,	-- Skymaster Sunwing <Dragonhawk Master>
 					["coord"] = { 45.4, 30.6, GHOSTLANDS },
+					["races"] = HORDE_ONLY,
 				}),
 				fp(205, {	-- Zul'Aman, Ghostlands
 					["cr"] = 24851,	-- Kiz Coilspanner <Flight Master>
