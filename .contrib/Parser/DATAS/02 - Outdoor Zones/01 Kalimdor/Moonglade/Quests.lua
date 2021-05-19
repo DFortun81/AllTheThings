@@ -14,6 +14,33 @@ _.Zones =
 				q(29298, {	-- A Smoke-Stained Locket
 					["provider"] = { "i", 69854 },	-- Smoke-Stained Locket
 				}),
+				q(27273, {	-- An Invitation from Moonglade
+					["isBreadcrumb"] = true,
+					["providers"] = {
+						{ "n", 5504 },	-- Sheldras Moontree (Stormwind)
+						{ "n", 44395 },	-- Celestine of the Harvest (Stormwind)
+					},
+					["classes"] = { DRUID },
+					["coords"] = {
+						{ 27.6, 50.0, 84 },	-- Sheldras Moontree (Stormwind)
+						{ 57.6, 24.8, 84 },	-- Celestine of the Harvest (Stormwind)
+					},
+					["races"] = ALLIANCE_ONLY,
+				}),
+				q(27273, {	-- An Invitation from Moonglade
+					["qg"] = 16721,	-- Shalannius
+					["coord"] = { 24.4, 54.4, AZUREMYST_ISLE },
+					["classes"] = { DRUID },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
+				q(27273, {	-- An Invitation from Moonglade
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 4217 },	-- Mathrengyl Bearwalker (Darnassus)
+					["classes"] = { DRUID },
+					["coord"] = { 40.4, 27.6, 89 },	-- Mathrengyl Bearwalker (Darnassus)
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(5061,  {	-- Aquatic Form
 					["hordeQuestID"] = 31,
 					["u"] = REMOVED_FROM_GAME,
@@ -43,6 +70,12 @@ _.Zones =
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(128422)),	-- Reins of the Grove Warden
 					},
+				}),
+				q(28289, {	-- Moonglade Calls
+					["qg"] = 16721,	-- Shalannius
+					["coord"] = { 24.4, 54.5, AZUREMYST_ISLE },
+					["classes"] = { DRUID },
+					["isBreadcrumb"] = true,
 				}),
 				q(47430, {	-- Moonkin Monitoring (HOLIDAY/WORLD EVENT: Moonkin Festival)
 					["provider"] = { "n", 122134 },	-- Makkaw <Moonkin Festival>

@@ -25,6 +25,14 @@ _.Zones =
 							-- #endif
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = lvlsquish(2, 1, 2),
+							["groups"] = {
+								i(23390),	-- Exodar Bastard Sword
+								i(23391),	-- Exodar Dagger
+								i(23392),	-- Exodar Maul
+								i(23393),	-- Exodar Shortsword
+								i(24441),	-- Exodar Crossbow
+								i(25553),	-- Exodar Staff
+							},
 						}),
 						q(9799,  {	-- Botanical Legwork
 							["qg"] = 20233,	-- Apprentice Vishael
@@ -188,6 +196,7 @@ _.Zones =
 						q(9280,  {	-- Replenishing the Healing Crystals
 							["qg"] = 16477,	-- Proenitus
 							["sourceQuest"] = 9279,	-- You Survived!
+							["altQuests"] = { 9369 },	-- Replenishing the Healing Crystals [Non-Draenei Only]
 							-- #if AFTER MOP
 							["coord"] = { 52.7, 35.9, AMMEN_VALE },
 							-- #else
@@ -196,19 +205,15 @@ _.Zones =
 							["cost"] = {
 								{ "i", 22889, 8 },	-- Vial of Moth Blood
 							},
-							["races"] = { DRAENEI },
-						}),
-						q(9369,  {	-- Replenishing the Healing Crystals
-							["qg"] = 16477,	-- Proenitus
-							-- #if AFTER MOP
-							["coord"] = { 52.7, 35.9, AMMEN_VALE },
-							-- #else
-							["coord"] = { 80.4, 45.9, AZUREMYST_ISLE },
-							-- #endif
-							["cost"] = {
-								{ "i", 22889, 8 },	-- Vial of Moth Blood
+							["races"] = ALLIANCE_ONLY,
+							["groups"] = {
+								i(24129),	-- Salvaged Leather Belt
+								i(24131),	-- Slightly Rusted Bracers
+								i(24130),	-- Worn Slippers
+								-- #if AFTER LEGION
+								i(131819),	-- Partially Tarnished Chain
+								-- #endif
 							},
-							["races"] = exclude(DRAENEI, ALLIANCE_ONLY),
 						}),
 						q(9283,  {	-- Rescue the Survivors!
 							["qg"] = 16502,	-- Zalduun
@@ -223,6 +228,7 @@ _.Zones =
 								objective(1, {	-- Draenei Survivors Saved
 									["cr"] = 16483,	-- Draenei Survivor
 								}),
+								i(23389),	-- Empty Draenei Supply Pouch
 							},
 						}),
 						q(9421,  {	-- Shaman Training
@@ -253,6 +259,14 @@ _.Zones =
 							},
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = lvlsquish(2, 1, 2),
+							["groups"] = {
+								i(24423),	-- Beaten Plate Leggings
+								i(24424),	-- Rough Leather Leggings
+								i(24425),	-- Hand Sewn Pants
+								-- #if AFTER LEGION
+								i(131250),	-- Coarse Mail Leggings
+								-- #endif
+							},
 						}),
 						q(26963, {	-- Steadying Your Shot
 							["qg"] = 16499,	-- Keilnei
@@ -276,6 +290,14 @@ _.Zones =
 							-- #endif
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = lvlsquish(3, 1, 3),
+							["groups"] = {
+								i(24135),	-- Weathered Cloth Armor
+								i(24134),	-- Weathered Leather Vest
+								i(24133),	-- Weathered Plate Tunic
+								-- #if AFTER LEGION
+								i(131820),	-- Weathered Chain Shirt
+								-- #endif
+							},
 						}),
 						q(9312,  {	-- The Emitter
 							["qg"] = 16535,	-- Vindicator Aldar
@@ -332,10 +354,7 @@ _.Zones =
 						}),
 						q(9409,  {	-- Urgent Delivery!
 							["qg"] = 16477,	-- Proenitus
-							["sourceQuests"] = {
-								9369,	-- Replenishing the Healing Crystals (All other ally races)
-								9280,	-- Replenishing the Healing Crystals (Draenei)
-							},
+							["sourceQuest"] = 9280,	-- Replenishing the Healing Crystals
 							-- #if AFTER MOP
 							["coord"] = { 52.7, 35.9, AMMEN_VALE },
 							-- #else
