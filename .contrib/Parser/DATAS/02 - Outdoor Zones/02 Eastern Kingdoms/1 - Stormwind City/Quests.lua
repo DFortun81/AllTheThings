@@ -451,6 +451,25 @@ _.Zones =
 						i(65486),	-- SI:7 Special Issue Dagger
 					},
 				}),
+				q(27225, {	-- A Summons from Ander Germaine
+					["qgs"] = {
+						4087,	-- Arias'ta Bladesinger
+						17120,	-- Behomat
+					},
+					["coords"] = {
+						{ 56.4, 46.2, DARNASSUS },	-- Arias'ta Bladesinger
+						{ 56.4, 46.2, THE_EXODAR },	-- Behomat
+					},
+					["maps"] = {
+						DARNASSUS,
+						THE_EXODAR,
+					},
+					["timeline"] = { "added 4.0.3.13277" },
+					["classes"] = { WARRIOR },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = lvl(20, 8, 20),
+				}),
 				q(32310, {	-- A Tale of Six Masters
 					["sourceQuests"] = { 32307 },	-- Reader for the Dead Tongue
 					["provider"] = { "n", 5496 },	-- Sandahl (Stormwind City)

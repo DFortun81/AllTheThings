@@ -7,13 +7,6 @@ _.Zones =
 	m(KALIMDOR, {
 		m(89, {	-- Darnassus
 			n(QUESTS, {
-				q(27225, {	-- A Summons from Ander Germaine
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 4087 },	-- Arias'ta Bladesinger (Darnassus)
-					["classes"] = { WARRIOR },
-					["coord"] = { 56.4, 46.2, 89 },	-- Arias'ta Bladesinger (Darnassus)
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(27270, {	-- An Audience with the Farseer
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 52292 },	-- Droha (Darnassus)
