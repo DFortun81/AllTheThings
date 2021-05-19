@@ -2266,10 +2266,10 @@ namespace ATT
             string addonRootFolder = "../../../../../../_classic_beta_/Interface/AddOns/ATT-Classic";
 #elif TBC
             // We want Classic TBC builds of ATT to build the database to the ATT-Classic Classic TBC folder.
-            string addonRootFolder = "../../../../../../_classic_tbc_/Interface/AddOns/ATT-Classic";
+            string addonRootFolder = "../../../../../../_classic_/Interface/AddOns/ATT-Classic";
 #elif CLASSIC
             // We want Classic builds of ATT to build the database to the ATT-Classic Classic folder.
-            string addonRootFolder = "../../../../../../_classic_/Interface/AddOns/ATT-Classic";
+            string addonRootFolder = "../../../../../../_classic_era_/Interface/AddOns/ATT-Classic";
 #else
             // Default is relative to where the executable is. (.contrib/Parser)
             string addonRootFolder = "../..";
