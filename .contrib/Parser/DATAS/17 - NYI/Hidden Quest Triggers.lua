@@ -1851,7 +1851,6 @@ _.HiddenQuestTriggers =
 		q(47282),	-- First Aid Shop Searched — triggered after searching first aid shop during "Confirming Suspicions," 45414
 		q(46321),	-- Krasus Landing Searched — triggered when finding velen during "Confirming Suspicions," 45414
 		q(45855),	-- Tank Trait Complete — triggered when raising weapon during "A Gift From the Six," #45863, on vengeance DH
-		q(43511),	-- Kalec Arrives — triggered when turning in "The Power Within" at Azurewing Repose (starting Balance of Power)
 		q(45302),	-- 7.1.5 Class Hall - Brawlers Missions - Has Completed Any Brawlers Mission with Overmax - Tracking Quest — triggered when doing my first brawl for BFA
 		q(45311),	-- 7.1.5 Class Hall - Special - Brawlers - Fight 04 - Tracking Quest — completing "I've Got a Strange Feeling About This" mission while unlocking Meatball
 		q(45313),	-- 7.1.5 Class Hall - Brawlers - Fight 04 - Overmax Reward Credit - Tracking Quest — same as above
@@ -1921,7 +1920,12 @@ _.HiddenQuestTriggers =
 				40930,	-- Apocalypse [Unholy Artifact] TODO: confirm
 			},
 		}),
+		
+		-- Balance of Power questline
+		q(43511),	-- Kalec Arrives — triggered when turning in "The Power Within" at Azurewing Repose (starting Balance of Power)
 		q(43775),	-- Kalec Arrives - triggered when completing Seeking the Valkyra (40603) in the Balance of Power questline
+		q(40627),	-- Triggers after looting heart for Halls of Valor: Odyn's Blessing (40615) in the Balance of Power questline
+		q(43529),	-- Triggered when turning in Preparing to Move (43898) in the Balance of Power questline
 		
 		-- demon hunter hidden demons - maybe add this to the zone maps?
 		q(42825),	-- kill Horkus in azsuna at 56.3, 59.7
@@ -2222,6 +2226,7 @@ _.HiddenQuestTriggers =
 		q(43680),	-- Hidden Appearance Unlocked (Fury Warrior "The Dragonslayers")
 		q(43670),	-- Hidden Appearance Unlocked (Assassination Rogue "The Kingslayers")
 		q(43673),	-- Hidden Appearance Unlocked (Ele Shaman "Lost Codex of the Amani")
+		q(43649),	-- Hidden Appearance Unlocked (DH "Guise of the Deathwalker")
 
 		--	Professions
 		--	Archaeology

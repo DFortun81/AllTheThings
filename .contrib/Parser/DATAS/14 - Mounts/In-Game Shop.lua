@@ -28,6 +28,7 @@ _.Mounts =
 		un(BLIZZARD_BALANCE, i(92724)),			-- Swift Windsteed
 		un(BLIZZARD_BALANCE, i(166776)),		-- Sylverian Dreamer
 		un(BLIZZARD_BALANCE, i(160589)),		-- The Dreadwake
+		un(BLIZZARD_BALANCE, mount(346136)),	-- Viridian Phase-Hunter
 		un(BLIZZARD_BALANCE, i(166775)),		-- Vulpine Familiar
 		un(BLIZZARD_BALANCE, i(112326)),		-- Warforged Nightmare
 		un(BLIZZARD_BALANCE, i(69846)),			-- Winged Guardian

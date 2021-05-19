@@ -607,35 +607,6 @@ _.Zones =
 				q(40111, {	-- Rout the Bilgefin Invaders (Bonus Objective)
 					["coord"] = { 81.0, 61.4, 634 },
 				}),
-				q(42736, {	-- Rune Ruination
-					["sourceQuests"] = { 42735 },	-- Malace in Vrykul Land
-					["provider"] = { "n", 108576 },	-- Malace Shade
-					["classes"] = { DEMONHUNTER },
-					["coord"] = { 64.9, 59.0, 634 },
-					["lvl"] = 110,
-				}),
-				q(42738, {	-- Rune Ruination: Runelord Ragnar
-					["sourceQuests"] = { 42736 },	-- Rune Ruination (must be in log)
-					["provider"] = { "o", 251220 },	-- Ragnar's Runestone
-					["classes"] = { DEMONHUNTER },
-					["coord"] = { 64.9, 58.9, 634 },
-					["lvl"] = 110,
-				}),
-				q(42739, {	-- Rune Ruination: Runesage Floki
-					["sourceQuests"] = { 42736 },	-- Rune Ruination (must be in log)
-					["provider"] = { "o", 251221 },	-- Floki's Runestone
-					["classes"] = { DEMONHUNTER },
-					["coord"] = { 64.9, 58.9, 634 },
-					["lvl"] = 110,
-				}),
-				q(42737, {	-- Rune Ruination: Runeskeld Rollo
-					["sourceQuests"] = { 42736 },	-- Rune Ruination (must be in log)
-					["description"] = "If the game doesn't properly display the mob's location, Rollo can be found in the cliffside room at 71.4, 39.0.",
-					["provider"] = { "o", 251218 },	-- Rollo's Runestone
-					["classes"] = { DEMONHUNTER },
-					["coord"] = { 64.9, 58.9, 634 },
-					["lvl"] = 110,
-				}),
 				q(40046, {	-- Scavenging the Shallows
 					["sourceQuests"] = { 39984 },	-- Remnants of the Past
 					["coord"] = { 59.0, 42.9, 634 },
@@ -756,17 +727,6 @@ _.Zones =
 						i(132852),	-- Horn of Helheim
 						i(132854),	-- Fel-Tainted Haze
 					},
-				}),
-				q(42749, {	-- Strange Bedfellows
-					["sourceQuests"] = {
-						42738,	-- Rune Ruination: Runelord Ragnar
-						42739,	-- Rune Ruination: Runesage Floki
-						42737,	-- Rune Ruination: Runeskelt Rollo
-					},
-					["provider"] = { "n", 108576 },	-- Malace Shade
-					["classes"] = { DEMONHUNTER },
-					["coord"] = { 64.9, 58.9, 634 },
-					["lvl"] = 110,
 				}),
 				q(38036, {	-- Supplies From the Skies
 					["sourceQuests"] = { 39800 },	-- Greymane's Gambit
@@ -1048,16 +1008,6 @@ _.Zones =
 					},
 					["provider"] = { "n", 116568 },	-- Sigryn
 					["coord"] = { 74.2, 85.0, 634 },
-				}),
-				q(42752, {	-- Vault of the Wardens: Vault Break-In (not sure why there are 2 versions, but they complete each other)
-					["sourceQuests"] = { 42749 },	-- Strange Bedfellows
-					["classes"] = { DEMONHUNTER },
-					["lvl"] = 110,
-				}),
-				q(42753, {	-- Vault of the Wardens: Vault Break-In (not sure why there are 2 versions, but they complete each other)
-					["sourceQuests"] = { 42749 },	-- Strange Bedfellows
-					["classes"] = { DEMONHUNTER },
-					["lvl"] = 110,
 				}),
 				q(38815, {	-- Waking the Shieldmaiden
 					["sourceQuests"] = {

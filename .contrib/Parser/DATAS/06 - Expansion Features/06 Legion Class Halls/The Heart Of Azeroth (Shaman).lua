@@ -433,6 +433,12 @@ _.ExpansionFeatures =
 						["coord"] = { 33.0, 60.3, 726 },
 						["provider"] = { "n", 96746 },	-- Advisor Sevel
 					}),
+					q(44205, {	-- Shape Your Fate
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 112299 },	-- Bath'rah the Windwatcher
+						["coord"] = { 31.1, 35.1, 726 },
+						["description"] = "Only available if you you have the |cFFFFD700Spirit Walk|r order hall upgrade.",
+					}),
 					q(45724, {	-- Snakes and Stones
 						["classes"] = { SHAMAN },
 						["lvl"] = 110,
