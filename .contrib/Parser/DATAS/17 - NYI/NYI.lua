@@ -3401,6 +3401,13 @@ _.NeverImplemented =
 			i(86552),	-- Artisan Cookbook
 			i(86553),	-- Master Cookbook
 			i(86554),	-- Grand Master Cookbook
+			recipe(169696),	-- Marinated Elekk Steak
+			recipe(169699),	-- Seasoned Elekk Ribeye
+			recipe(169701),	-- Seasoned Elekk Ribeye
+			recipe(169693),	-- Whole Pot-Roasted Elekk
+			recipe(145170),	-- Grand Deluxe Noodle Cart Kit
+			recipe(145167),	-- Grand Noodle Cart Kit
+			recipe(145197),	-- Grand Pandaren Treasure Noodle Cart Kit
 		}),
 		prof(ENGINEERING, {
 			{	-- Blingtron's Circuit Design Tutorial
