@@ -7,228 +7,436 @@ _.Zones =
 		m(AZUREMYST_ISLE, {
 			m(AMMEN_VALE, {
 				["description"] = "Ammen Vale is a small island and subzone off the coast of Azuremyst Isle. It is a lightly forested valley with escape pods, crystals, and smoking bits of the crashed planar ship scattered about the landscape.",
-				["icon"] = "Interface\\Icons\\Achievement_Character_Draenei_Male",
+				["icon"] = "Interface\\Icons\\Spell_Arcane_TeleportExodar",
 				["groups"] = {
 					n(QUESTS, {
 						q(9798,  {	-- Blood Elf Plans
-							["sourceQuests"] = { 9309 },	-- The Missing Scout
 							["provider"] = { "i", 24414 },	-- Blood Elf Plans
-							["coord"] = { 27.8, 80.4, AMMEN_VALE },
 							["races"] = ALLIANCE_ONLY,
-							["crs"] = { 16522 },	-- Surveyor Candress
+							["lvl"] = lvlsquish(2, 1, 2),
 						}),
 						q(9311,  {	-- Blood Elf Spy
-							["sourceQuests"] = { 10303 },	-- The Blood Elves
-							["provider"] = { "n", 16546 },	-- Tolaan
-							["coord"] = { 33.9, 69.4, AMMEN_VALE },
+							["qg"] = 16546,	-- Tolaan
+							["sourceQuest"] = 10303,	-- The Blood Elves
+							-- #if AFTER MOP
+							["coord"] = { 33.8, 69.2, AMMEN_VALE },
+							-- #else
+							["coord"] = { 72.0, 60.9, AZUREMYST_ISLE },
+							-- #endif
 							["races"] = ALLIANCE_ONLY,
+							["lvl"] = lvlsquish(2, 1, 2),
 						}),
 						q(9799,  {	-- Botanical Legwork
-							["sourceQuests"] = { 10302 },	-- Volatile Mutations
-							["provider"] = { "n", 20233 },	-- Apprentice Vishael
+							["qg"] = 20233,	-- Apprentice Vishael
+							["sourceQuest"] = 10302,	-- Volatile Mutations
+							-- #if AFTER MOP
 							["coord"] = { 49.7, 37.5, AMMEN_VALE },
+							-- #else
+							["coord"] = { 79.1, 46.6, AZUREMYST_ISLE },
+							-- #endif
+							["cost"] = {
+								{ "i", 24416, 3 },	-- Corrupted Flower
+							},
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(9371,  {	-- Botanist Taerix
-							["sourceQuests"] = { 9409 },	-- Urgent Delivery!
-							["isBreadcrumb"] = true,
-							["provider"] = { "n", 16477 },	-- Proenitus
+							["qg"] = 16477,	-- Proenitus
+							["sourceQuest"] = 9409,	-- Urgent Delivery!
+							-- #if AFTER MOP
 							["coord"] = { 52.7, 35.9, AMMEN_VALE },
+							-- #else
+							["coord"] = { 80.4, 45.9, AZUREMYST_ISLE },
+							-- #endif
 							["races"] = ALLIANCE_ONLY,
+							["isBreadcrumb"] = true,
 						}),
 						q(26968, {	-- Frost Nova
-							["provider"] = { "n", 16500 },	-- Valaatu
+							["qg"] = 16500,	-- Valaatu
+							-- #if AFTER MOP
+							["coord"] = { 51.0, 43.0, AMMEN_VALE },
+							-- #else
+							["coord"] = { 79.6, 48.8, AZUREMYST_ISLE },
+							-- #endif
+							["timeline"] = { "added 4.0.3.10000", "removed 7.0.3.10000" },
 							["classes"] = { MAGE },
 							["races"] = ALLIANCE_ONLY,
-							["u"] = REMOVED_FROM_GAME,
+							["lvl"] = lvlsquish(3, 1, 3),
 						}),
 						q(9294,  {	-- Healing the Lake
-							["sourceQuests"] = { 9293 },	-- What Must Be Done...
-							["provider"] = { "n", 16514 },	-- Botanist Taerix
+							["qg"] = 16514,	-- Botanist Taerix
+							["sourceQuest"] = 9293,	-- What Must Be Done...
+							-- #if AFTER MOP
 							["coord"] = { 49.9, 37.3, AMMEN_VALE },
+							-- #else
+							["coord"] = { 79.1, 46.5, AZUREMYST_ISLE },
+							-- #endif
 							["races"] = ALLIANCE_ONLY,
+							["lvl"] = lvlsquish(2, 1, 2),
+							["groups"] = {
+								objective(1, {	-- Disperse the Neutralizing Agent
+									-- #if AFTER MOP
+									["coord"] = { 45.2, 64.9, AMMEN_VALE },
+									-- #else
+									["coord"] = { 77.2, 59.0, AZUREMYST_ISLE },
+									-- #endif
+									["cost"] = {
+										{ "i", 22955, 1 },	-- Neutralizing Agent
+									},
+								}),
+							},
 						}),
 						q(9288,  {	-- Hunter Training
-							["provider"] = { "n", 16499 },	-- Keilnei
+							["qg"] = 16499,	-- Keilnei
+							-- #if AFTER MOP
+							["coord"] = { 51.6, 44.2, AMMEN_VALE },
+							-- #else
+							["coord"] = { 79.9, 49.7, AZUREMYST_ISLE },
+							-- #endif
+							["timeline"] = { "removed 4.0.3.10000" },
 							["classes"] = { HUNTER },
 							["races"] = ALLIANCE_ONLY,
-							["u"] = REMOVED_FROM_GAME,
+							["lvl"] = lvlsquish(3, 1, 3),
 						}),
-						q(9303,  {	-- Inoculation
+						q(9303,  {	-- Inoculation [Original]
+							-- 9303 is only given to you instead of 37444 if you turn in Vindicator Aldar first, confirmed by Crieve, deleted 3 level 4 Draenei to test it and different scenarios.
+							-- There was absolutely nothing different about the quest other than the quest text, so rather than duplicate the entry, using altQuests instead.
+							-- The extra information doesn't help a new player and you get credit for both anywayson turn in, so it's whatever.
+							["qg"] = 16535,	-- Vindicator Aldar
 							["sourceQuests"] = {
 								10302,	-- Volatile Mutations
 								10304,	-- Vindicator Aldar
 							},
-							["description"] = "This quest is given if you turn in the |cFFFFD700Vindicator Aldar|r quest first.",
-							["provider"] = { "n", 16535 },	-- Vindicator Aldar
+							-- #if AFTER WOD
+							["altQuests"] = { 37444 },	-- Inoculation [Skipped Breadcrumb]
+							-- #endif
+							-- #if AFTER MOP
 							["coord"] = { 50.6, 48.7, AMMEN_VALE },
+							-- #else
+							["coord"] = { 79.5, 51.6, AZUREMYST_ISLE },
+							-- #endif
 							["races"] = ALLIANCE_ONLY,
-						}),
-						q(37444, {	-- Inoculation
-							["sourceQuests"] = { 10302 },	-- Volatile Mutations
-							["description"] = "This quest is given if you pick up before getting or turning in the |cFFFFD700Vindicator Aldar|r' quest.",
-							["provider"] = { "n", 16535 },	-- Vindicator Aldar
-							["coord"] = { 50.6, 48.7, AMMEN_VALE },
-							["races"] = ALLIANCE_ONLY,
+							["lvl"] = lvlsquish(2, 1, 2),
+							["groups"] = {
+								objective(1, {	-- 	Nestlewood Owlkin inoculated
+									["cr"] = 16518,	-- Nestlewood Owlkin
+									["cost"] = {
+										{ "i", 22962, 1 },	-- Inoculating Crystal
+									},
+								}),
+							},
 						}),
 						q(26970, {	-- Learning the Word
-							["provider"] = { "n", 16502 },	-- Zalduun
+							["qg"] = 16502,	-- Zalduun
+							-- #if AFTER MOP
+							["coord"] = { 52.1, 42.4, AMMEN_VALE },
+							-- #else
+							["coord"] = { 80.1, 48.9, AZUREMYST_ISLE },
+							-- #endif
+							["timeline"] = { "added 4.0.3.10000", "removed 7.0.3.10000" },
 							["classes"] = { PRIEST },
 							["races"] = ALLIANCE_ONLY,
-							["u"] = REMOVED_FROM_GAME,
+							["lvl"] = lvlsquish(3, 1, 3),
 						}),
 						q(9290,  {	-- Mage Training
-							["provider"] = { "n", 16500 },	-- Valaatu
+							["qg"] = 16500,	-- Valaatu
+							-- #if AFTER MOP
+							["coord"] = { 51.0, 43.0, AMMEN_VALE },
+							-- #else
+							["coord"] = { 79.6, 48.8, AZUREMYST_ISLE },
+							-- #endif
+							["timeline"] = { "removed 4.0.3.10000" },
 							["classes"] = { MAGE },
 							["races"] = ALLIANCE_ONLY,
-							["u"] = REMOVED_FROM_GAME,
+							["lvl"] = lvlsquish(3, 1, 3),
 						}),
 						q(9287,  {	-- Paladin Training
-							["provider"] = { "n", 16501 },	-- Aurelon
+							["qg"] = 16501,	-- Aurelon
+							-- #if AFTER MOP
+							["coord"] = { 51.2, 41.2, AMMEN_VALE },
+							-- #else
+							["coord"] = { 79.7, 48.2, AZUREMYST_ISLE },
+							-- #endif
+							["timeline"] = { "removed 4.0.3.10000" },
 							["classes"] = { PALADIN },
 							["races"] = ALLIANCE_ONLY,
-							["u"] = REMOVED_FROM_GAME,
+							["lvl"] = lvlsquish(3, 1, 3),
 						}),
 						q(9291,  {	-- Priest Training
-							["provider"] = { "n", 16502 },	-- Zalduun
+							["qg"] = 16502,	-- Zalduun
+							-- #if AFTER MOP
+							["coord"] = { 52.1, 42.4, AMMEN_VALE },
+							-- #else
+							["coord"] = { 80.1, 48.9, AZUREMYST_ISLE },
+							-- #endif
+							["timeline"] = { "removed 4.0.3.10000" },
 							["classes"] = { PRIEST },
 							["races"] = ALLIANCE_ONLY,
-							["u"] = REMOVED_FROM_GAME,
+							["lvl"] = lvlsquish(3, 1, 3),
 						}),
 						q(26969, {	-- Primal Strike
-							["provider"] = { "n", 17089 },	-- Firmanvaar
+							["qg"] = 17089,	-- Firmanvaar
+							-- #if AFTER MOP
+							["coord"] = { 50.2, 43.0, AMMEN_VALE },
+							-- #else
+							["coord"] = { 79.3, 49.1, AZUREMYST_ISLE },
+							-- #endif
+							["timeline"] = { "added 4.0.3.10000", "removed 7.0.3.10000" },
 							["classes"] = { SHAMAN },
 							["races"] = ALLIANCE_ONLY,
-							["u"] = REMOVED_FROM_GAME,
+							["lvl"] = lvlsquish(3, 1, 3),
 						}),
 						q(9280,  {	-- Replenishing the Healing Crystals
-							["sourceQuests"] = { 9279 },	-- You Survived!
-							["provider"] = { "n", 16477 },	-- Proenitus
+							["qg"] = 16477,	-- Proenitus
+							["sourceQuest"] = 9279,	-- You Survived!
+							-- #if AFTER MOP
 							["coord"] = { 52.7, 35.9, AMMEN_VALE },
+							-- #else
+							["coord"] = { 80.4, 45.9, AZUREMYST_ISLE },
+							-- #endif
+							["cost"] = {
+								{ "i", 22889, 8 },	-- Vial of Moth Blood
+							},
 							["races"] = { DRAENEI },
 						}),
 						q(9369,  {	-- Replenishing the Healing Crystals
-							["provider"] = { "n", 16477 },	-- Proenitus
+							["qg"] = 16477,	-- Proenitus
+							-- #if AFTER MOP
 							["coord"] = { 52.7, 35.9, AMMEN_VALE },
-							["races"] = exclude(DRAENEI, ALLIANCE_ONLY),	-- all other races except draenei
+							-- #else
+							["coord"] = { 80.4, 45.9, AZUREMYST_ISLE },
+							-- #endif
+							["cost"] = {
+								{ "i", 22889, 8 },	-- Vial of Moth Blood
+							},
+							["races"] = exclude(DRAENEI, ALLIANCE_ONLY),
 						}),
 						q(9283,  {	-- Rescue the Survivors!
-							["sourceQuests"] = { 9409 },	-- Urgent Delivery!
-							["provider"] = { "n", 16502 },	-- Zalduun
+							["qg"] = 16502,	-- Zalduun
+							["sourceQuest"] = 9409,	-- Urgent Delivery!
+							-- #if AFTER MOP
 							["coord"] = { 52.1, 42.4, AMMEN_VALE },
+							-- #else
+							["coord"] = { 80.1, 48.9, AZUREMYST_ISLE },
+							-- #endif
 							["races"] = { DRAENEI },
+							["groups"] = {
+								objective(1, {	-- Draenei Survivors Saved
+									["cr"] = 16483,	-- Draenei Survivor
+								}),
+							},
 						}),
 						q(9421,  {	-- Shaman Training
-							["provider"] = { "n", 17089 },	-- Firmanvaar
+							["qg"] = 17089,	-- Firmanvaar
+							-- #if AFTER MOP
+							["coord"] = { 50.2, 43.0, AMMEN_VALE },
+							-- #else
+							["coord"] = { 79.3, 49.1, AZUREMYST_ISLE },
+							-- #endif
+							["timeline"] = { "removed 4.0.3.10000" },
 							["classes"] = { SHAMAN },
 							["races"] = ALLIANCE_ONLY,
-							["u"] = REMOVED_FROM_GAME,
+							["lvl"] = lvlsquish(3, 1, 3),
 						}),
-						q(9305,  {	-- Spare Parts
-							["provider"] = { "n", 17071 },	-- Technician Zhanaa
+						q(9305,  {	-- Spare Parts [Original]
+							["qg"] = 17071,	-- Technician Zhanaa
+							["sourceQuest"] = 10302,	-- Volatile Mutations
+							-- #if AFTER WOD
+							["altQuests"] = { 37445 },	-- Spare Parts [New one that exists for no reason]
+							-- #endif
+							-- #if AFTER MOP
+							["coord"] = { 50.5, 47.9, AMMEN_VALE },
+							-- #else
+							["coord"] = { 79.4, 51.2, AZUREMYST_ISLE },
+							-- #endif
+							["cost"] = {
+								{ "i", 22978, 4 },	-- Emitter Spare Part
+							},
 							["races"] = ALLIANCE_ONLY,
-							["u"] = REMOVED_FROM_GAME,
-						}),
-						q(37445, {	-- Spare Parts
-							["sourceQuests"] = { 10302 },	-- Volatile Mutations
-							["provider"] = { "n", 17071 },	-- Technician Zhanaa
-							["coord"] = { 50.7, 48.0 },
-							["races"] = ALLIANCE_ONLY,
+							["lvl"] = lvlsquish(2, 1, 2),
 						}),
 						q(26963, {	-- Steadying Your Shot
-							["provider"] = { "n", 16499 },	-- Keilnei
+							["qg"] = 16499,	-- Keilnei
+							-- #if AFTER MOP
+							["coord"] = { 51.6, 44.2, AMMEN_VALE },
+							-- #else
+							["coord"] = { 79.9, 49.7, AZUREMYST_ISLE },
+							-- #endif
+							["timeline"] = { "added 4.0.3.10000", "removed 7.0.3.10000" },
 							["classes"] = { HUNTER },
 							["races"] = ALLIANCE_ONLY,
-							["u"] = REMOVED_FROM_GAME,
+							["lvl"] = lvlsquish(3, 1, 3),
 						}),
 						q(10303, {	-- The Blood Elves
-							["sourceQuests"] = { 9309 },	-- The Missing Scout
-							["provider"] = { "n", 16546 },	-- Tolaan
-							["coord"] = { 33.9, 69.4, AMMEN_VALE },
+							["qg"] = 16546,	-- Tolaan
+							["sourceQuest"] = 9309,	-- The Missing Scout
+							-- #if AFTER MOP
+							["coord"] = { 33.8, 69.2, AMMEN_VALE },
+							-- #else
+							["coord"] = { 72.0, 60.9, AZUREMYST_ISLE },
+							-- #endif
 							["races"] = ALLIANCE_ONLY,
+							["lvl"] = lvlsquish(3, 1, 3),
 						}),
 						q(9312,  {	-- The Emitter
-							["sourceQuests"] = { 9311 },	-- Blood Elf Spy
-							["provider"] = { "n", 16535 },	-- Vindicator Aldar
-							["coord"] = { 50.6, 48.8, AMMEN_VALE },
+							["qg"] = 16535,	-- Vindicator Aldar
+							["sourceQuest"] = 9311,	-- Blood Elf Spy
+							-- #if AFTER MOP
+							["coord"] = { 50.6, 48.7, AMMEN_VALE },
+							-- #else
+							["coord"] = { 79.5, 51.6, AZUREMYST_ISLE },
+							-- #endif
 							["races"] = ALLIANCE_ONLY,
+							["lvl"] = lvlsquish(2, 1, 2),
 						}),
 						q(26966, {	-- The Light's Power
-							["provider"] = { "n", 16501 },	-- Aurelon
+							["qg"] = 16501,	-- Aurelon
+							-- #if AFTER MOP
+							["coord"] = { 51.2, 41.2, AMMEN_VALE },
+							-- #else
+							["coord"] = { 79.7, 48.2, AZUREMYST_ISLE },
+							-- #endif
+							["timeline"] = { "added 4.0.3.10000", "removed 7.0.3.10000" },
 							["classes"] = { PALADIN },
 							["races"] = ALLIANCE_ONLY,
-							["u"] = REMOVED_FROM_GAME,
+							["lvl"] = lvlsquish(3, 1, 3),
 						}),
 						q(9309,  {	-- The Missing Scout
-							["sourceQuests"] = {
-								9303,	-- Inoculation
-								37444,	-- Inoculation
-							},
-							["provider"] = { "n", 16535 },	-- Vindicator Aldar
+							["qg"] = 16535,	-- Vindicator Aldar
+							["sourceQuest"] = 9303,	-- Inoculation [Original]
+							-- #if AFTER MOP
 							["coord"] = { 50.6, 48.7, AMMEN_VALE },
+							-- #else
+							["coord"] = { 79.5, 51.6, AZUREMYST_ISLE },
+							-- #endif
 							["races"] = ALLIANCE_ONLY,
+							["lvl"] = lvlsquish(3, 1, 3),
 						}),
 						q(31173, {	-- The Tiger Palm
-							["provider"] = { "n", 63335 },	-- Mojo Stormstout
+							["qg"] = 63335,	-- Mojo Stormstout
+							["coord"] = { 50.6, 48.6, AMMEN_VALE },
+							["timeline"] = { "added 5.0.1.15640", "removed 7.0.3.10000" },
 							["classes"] = { MONK },
 							["races"] = ALLIANCE_ONLY,
-							["u"] = REMOVED_FROM_GAME,
+							["lvl"] = lvlsquish(3, 1, 3),
 						}),
 						q(9313,  {	-- Travel to Azure Watch
-							["sourceQuests"] = { 9312 },	-- The Emitter
-							["provider"] = { "n", 17071 },	-- Technician Zhanaa
+							["qg"] = 17071,	-- Technician Zhanaa
+							["sourceQuest"] = 9312,	-- The Emitter
+							-- #if AFTER MOP
 							["coord"] = { 50.5, 47.9, AMMEN_VALE },
+							-- #else
+							["coord"] = { 79.4, 51.2, AZUREMYST_ISLE },
+							-- #endif
 							["races"] = ALLIANCE_ONLY,
+							["lvl"] = lvlsquish(4, 1, 4),
 						}),
 						q(9409,  {	-- Urgent Delivery!
+							["qg"] = 16477,	-- Proenitus
 							["sourceQuests"] = {
 								9369,	-- Replenishing the Healing Crystals (All other ally races)
 								9280,	-- Replenishing the Healing Crystals (Draenei)
 							},
-							["provider"] = { "n", 16477 },	-- Proenitus
+							-- #if AFTER MOP
 							["coord"] = { 52.7, 35.9, AMMEN_VALE },
+							-- #else
+							["coord"] = { 80.4, 45.9, AZUREMYST_ISLE },
+							-- #endif
+							["cost"] = {
+								{ "i", 23568, 1 },	-- Bundle of Vials
+							},
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(10304, {	-- Vindicator Aldar
-							["sourceQuests"] = { 9294 },	-- Healing the Lake
-							["isBreadcrumb"] = true,
-							["provider"] = { "n", 16514 },	-- Botanist Taerix
+							["qg"] = 16514,	-- Botanist Taerix
+							["sourceQuest"] = 9294,	-- Healing the Lake
+							-- #if AFTER MOP
 							["coord"] = { 49.9, 37.3, AMMEN_VALE },
+							-- #else
+							["coord"] = { 79.1, 46.5, AZUREMYST_ISLE },
+							-- #endif
 							["races"] = ALLIANCE_ONLY,
+							["isBreadcrumb"] = true,
+							["lvl"] = lvlsquish(3, 1, 3),
 						}),
 						q(10302, {	-- Volatile Mutations
-							["sourceQuests"] = {
+							["qg"] = 16514,	-- Botanist Taerix
+							["sourceQuests"] = {	-- TODO: Test this source quest list.
 								9369,	-- Replenishing the Healing Crystal (All other ally races)
 								9280,	-- Replenishing the Healing Crystal (Draenei)
 								9371,	-- Botanist Taerix (breadcrumb)
 							},
-							["provider"] = { "n", 16514 },	-- Botanist Taerix
+							-- #if AFTER MOP
 							["coord"] = { 49.9, 37.3, AMMEN_VALE },
+							-- #else
+							["coord"] = { 79.1, 46.5, AZUREMYST_ISLE },
+							-- #endif
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(9289,  {	-- Warrior Training
-							["provider"] = { "n", 16503 },	-- Kore
+							["qg"] = 16503,	-- Kore
+							-- #if AFTER MOP
+							["coord"] = { 51.0, 43.8, AMMEN_VALE },
+							-- #else
+							["coord"] = { 79.6, 49.5, AZUREMYST_ISLE },
+							-- #endif
+							["timeline"] = { "removed 4.0.3.10000" },
 							["classes"] = { WARRIOR },
 							["races"] = ALLIANCE_ONLY,
-							["u"] = REMOVED_FROM_GAME,
+							["lvl"] = lvlsquish(3, 1, 3),
 						}),
 						q(9293,  {	-- What Must Be Done...
-							["sourceQuests"] = { 10302 },	-- Volatile Mutations
-							["provider"] = { "n", 16514 },	-- Botanist Taerix
+							["qg"] = 16514,	-- Botanist Taerix
+							["sourceQuest"] = 10302,	-- Volatile Mutations
+							-- #if AFTER MOP
 							["coord"] = { 49.9, 37.3, AMMEN_VALE },
+							-- #else
+							["coord"] = { 79.1, 46.5, AZUREMYST_ISLE },
+							-- #endif
+							["cost"] = {
+								{ "i", 22934, 10 },	-- Lasher Sample
+							},
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(9279,  {	-- You Survived!
-							["isBreadcrumb"] = true,
-							["provider"] = { "n", 16475 },	-- Megelon
+							["qg"] = 16475,	-- Megelon
+							-- #if AFTER MOP
 							["coord"] = { 61.2, 29.5, AMMEN_VALE },
+							-- #else
+							["coord"] = { 84.2, 43.0, AZUREMYST_ISLE },
+							-- #endif
 							["races"] = { DRAENEI },
+							["isBreadcrumb"] = true,
 						}),
 						q(26958, {	-- Your First Lesson
-							["provider"] = { "n", 16503 },	-- Kore
-							["classes"] = { MONK },
+							["qg"] = 16503,	-- Kore
+							-- #if AFTER MOP
+							["coord"] = { 51.0, 43.8, AMMEN_VALE },
+							-- #else
+							["coord"] = { 79.6, 49.5, AZUREMYST_ISLE },
+							-- #endif
+							["timeline"] = { "added 4.0.3.10000", "removed 7.0.3.10000" },
+							["classes"] = { WARRIOR },
 							["races"] = ALLIANCE_ONLY,
-							["u"] = REMOVED_FROM_GAME,
+							["lvl"] = lvlsquish(3, 1, 3),
+						}),
+					}),
+					n(ZONEDROPS, {
+						i(24414, {	-- Blood Elf Plans
+							["cr"] = 16522,	-- Surveyor Candress
+							-- #if AFTER MOP
+							["coord"] = { 28.2, 80.0, AMMEN_VALE },
+							-- #else
+							["coord"] = { 69.4, 65.6, AZUREMYST_ISLE },
+							-- #endif
+							["races"] = ALLIANCE_ONLY,
+						}),
+						i(22934, {	-- Lasher Sample
+							["cr"] = 16517,	-- Mutated Root Lasher
+							["races"] = ALLIANCE_ONLY,
+						}),
+						i(22889, {	-- Vial of Moth Blood
+							["cr"] = 16520,	-- Vale Moth
+							["races"] = ALLIANCE_ONLY,
 						}),
 					}),
 				},

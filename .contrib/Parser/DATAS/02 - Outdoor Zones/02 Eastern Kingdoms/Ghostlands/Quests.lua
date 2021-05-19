@@ -840,7 +840,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(10, 1, 10),
 					["groups"] = {
-						objective(1, {	-- Aquantion slain 
+						objective(1, {	-- Aquantion slain
 							["provider"] = { "i", 22675 },	-- Bundle of Medallions
 							["cr"] = 16292,	-- Aquantion
 							["coord"] = { 71.3, 14.9, GHOSTLANDS },

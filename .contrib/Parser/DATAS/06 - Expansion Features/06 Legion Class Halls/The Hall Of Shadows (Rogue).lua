@@ -405,6 +405,20 @@ _.ExpansionFeatures =
 							i(143679),	-- Crackers (PET!)
 						},
 					}),
+					q(44202, {	-- For the Cause (A)
+						["coord"] = { 40.5, 77.9, 626 },
+						["races"] = ALLIANCE_ONLY,
+						["classes"] = { ROGUE },
+						["provider"] = { "n", 113213 },	-- Master Mathias Shaw
+						["isDaily"] = true,
+					}),
+					q(44203, {	-- For the Cause (H)
+						["coord"] = { 40.5, 77.9, 626 },
+						["races"] = HORDE_ONLY,
+						["classes"] = { ROGUE },
+						["provider"] = { "n", 113213 },	-- Master Mathias Shaw
+						["isDaily"] = true,
+					}),
 					q(46779, {	-- Further Advancement
 						["coord"] = { 37.7, 44.8, 626 },
 						["classes"] = { ROGUE },
@@ -622,6 +636,11 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 117259 },	-- Lord Jorach Ravenholdt
 						["sourceQuest"] = 45571,	-- A Bit of Espionage
 					}),
+					q(44204, {	-- Seal their Fates
+						["classes"] = { ROGUE },
+						["provider"] = { "n", 110820 },	-- Scythe
+						["description"] = "Only available if you you have the |cFFFFD700Plunder|r order hall upgrade.",
+					}),
 					q(44155, {	-- Searching For Clues
 						["maps"] = { 634 },	-- Stormheim
 						["coord"] = { 77.2, 55.0, 634 },
@@ -822,6 +841,11 @@ _.ExpansionFeatures =
 						--TBD: ["provider"] = { "n", xxxxx },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 46322,	-- The Pirate's Bay
+					}),
+					q(44195, {	-- Workorders for Armaments
+						["classes"] = { ROGUE },
+						["provider"] = { "n", 110348 },	-- Mal
+						["description"] = "Only available if you you have the |cFFFFD700Weapons Smuggler|r order hall upgrade.",
 					}),
 				}),
 				n(98093, {	-- Scouting Map

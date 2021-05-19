@@ -6767,14 +6767,14 @@ app.CreateFaction = function(id, t)
 	return setmetatable(constructor(id, t, "factionID"), app.BaseFaction);
 end
 app.OnUpdateReputationRequired = function(t)
-	if app.MODE_DEBUG or app.MODE_ACCOUNT then
-		t.visible = true;
-		return false;
-	else
-		local reputationID = t.minReputation[1];
-		t.visible = (select(3, GetFactionInfoByID(reputationID)) or 1) >= 4;
+	-- The only non-regular update processing this group should have
+	-- is if the User is not in Deubg/Account and should not see it due to the reputation requirement not being met
+	if not app.MODE_DEBUG and not app.MODE_ACCOUNT and t.minReputation and (select(6, GetFactionInfoByID(t.minReputation[1])) or 0) < t.minReputation[2] then
+		t.visible = false;
 		return true;
 	end
+	-- Returns false since we need to just call the regular update group logic
+	return false;
 end
 end)();
 
@@ -7744,21 +7744,24 @@ local itemFields = {
 		local itemLink = t.itemID;
 		if itemLink then
 			local bonusID = t.bonusID;
-			if bonusID then
-				if bonusID > 0 then
-					itemLink = string.format("item:%d::::::::::::1:%d", itemLink, bonusID);
-				else
-					itemLink = string.format("item:%d:::::::::::::", itemLink);
-				end
+			local modID = t.modID;
+			if not bonusID or bonusID < 1 then
+				bonusID = nil;
+			end
+			if not modID or modID < 1 then
+				modID = nil;
+			end
+			if bonusID and modID then
+				itemLink = string.format("item:%d:::::::::::%d:1:%d", itemLink, modID, bonusID);
+			elseif bonusID then
+				itemLink = string.format("item:%d::::::::::::1:%d", itemLink, bonusID);
+			elseif modID then
+				itemLink = string.format("item:%d:::::::::::%d:1:3524", itemLink, modID);
 			else
-				bonusID = t.modID;
-				if bonusID then
-					itemLink = string.format("item:%d:::::::::::%d:1:3524", itemLink, bonusID);
-				else
-					itemLink = string.format("item:%d:::::::::::::", itemLink);
-				end
+				itemLink = string.format("item:%d:::::::::::::", itemLink);
 			end
 			local _, link, quality, _, _, _, _, _, _, icon = GetItemInfo(itemLink);
+			-- print("Retry",rawget(t, "retries"),itemLink)
 			if link then
 				rawset(t, "retries", nil);
 				rawset(t, "link", link);
@@ -8917,7 +8920,7 @@ local questFields = {
 		return C_QuestLog_IsOnQuest(t.questID) or (app.IsInPartySync and not C_QuestLog_IsQuestReplayable(t.questID));
 	end,
 	["indicator"] = function(t)
-		return C_QuestLog_ReadyForTurnIn(t.questID) and "star" or "star";	-- TODO: change to yellow/grey question mark
+		return C_QuestLog_ReadyForTurnIn(t.questID) and "Interface_Questin" or "Interface_Questin_grey";
 	end,
 	["link"] = function(t)
 		return "quest:" .. t.questID;
@@ -12739,7 +12742,7 @@ RowOnEnter = function (self)
 		end
 
 		-- Calculate Best Drop Percentage. (Legacy Loot Mode)
-		if reference.itemID and not reference.speciesID and not reference.spellID then
+		if reference.itemID and not reference.speciesID and not reference.spellID and app.Settings:GetTooltipSetting("DropChances") then
 			local numSpecializations = GetNumSpecializations();
 			if numSpecializations and numSpecializations > 0 then
 				local encounterID = GetRelativeValue(reference.parent, "encounterID");

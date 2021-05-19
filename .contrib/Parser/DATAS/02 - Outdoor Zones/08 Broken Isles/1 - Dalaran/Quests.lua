@@ -613,18 +613,6 @@ _.Zones =
 					["coord"] = { 57.9, 72.6, 629 },
 					["lvl"] = 110,
 				}),
-				q(44203, {	-- For the Cause
-					["classes"] = { ROGUE },
-					["races"] = HORDE_ONLY,
-					["isDaily"] = true,
-					["provider"] = { "n", 113213 },	-- Master Mathias Shaw
-				}),
-				q(44202, {	-- For the Cause
-					["classes"] = { ROGUE },
-					["races"] = ALLIANCE_ONLY,
-					["isDaily"] = true,
-					["provider"] = { "n", 113213 },	-- Master Mathias Shaw
-				}),
 				q(47046, {	-- Frost: The Thieving Apprentice
 					["sourceQuests"] = {
 						44821,	-- In Dire Need
@@ -1052,10 +1040,6 @@ _.Zones =
 					["coord"] = { 56.3, 65.0, 628 },
 					["provider"] = { "n", 101097 },	-- Calydus
 				}),
-				q(44204, {	-- Seal their Fates
-					["classes"] = { ROGUE },
-					["provider"] = { "n", 110820 },	-- Scythe
-				}),
 				q(47864, {	-- Sealing Fate: Additional Marks of Honor
 					["isWeekly"] = true,
 					["coord"] = { 57.2, 67.5, 627 },
@@ -1472,10 +1456,6 @@ _.Zones =
 						{ "n", 115465 },	-- Archmage Modera
 					},
 					["coord"] = { 28.5, 48.9, 627 },
-				}),
-				q(44195, {	-- Workorders for Armaments
-					["classes"] = { ROGUE },
-					["provider"] = { "n", 110348 },	-- Mal
 				}),
 				q(45908, {	-- Xylem's Gift
 					["provider"] = { "n", 105081 },	-- Archmage Kalec

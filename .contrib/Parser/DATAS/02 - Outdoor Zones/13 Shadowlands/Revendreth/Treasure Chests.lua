@@ -282,6 +282,9 @@ _.Zones =
 					["questID"] = 60198,
 					["isDaily"] = true,
 					["coord"] = { 42.5, 50.3, REVENDRETH },
+					["g"] = {
+						i(183826),	-- Big Floppy Hat
+					},
 				}),
 				o(351542, {	-- Secret Treasure
 				--	TODO: check back and see if this ever drops from any other treasure chests/secret treasures/shows up on mission table/etc.  this is the chest i got it from and as of january 15th it's the only one listed as dropping it on wowhead!  definitely not a guaranteed drop even if it's PL; this was at least my second time looting this chest

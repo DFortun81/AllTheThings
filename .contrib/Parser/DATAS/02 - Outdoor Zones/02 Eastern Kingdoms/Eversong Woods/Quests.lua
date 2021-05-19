@@ -253,7 +253,7 @@ _.Zones =
 				q(14081, {	-- Learn to Ride in the Eversong Woods
 					["provider"] = { "i", 46882 },	-- Riding Training Pamphlet
 					["description"] = "The pamphlet that starts this quest is sent to Blood Elves in their Mailbox upon reaching the specified level.",
-					["timeline"] = { "removed 5.2.0.10000" },
+					["timeline"] = { "added 3.3.0.10958", "removed 5.2.0.10000" },
 					["races"] = { BLOODELF },
 					["DisablePartySync"] = true,
 					["isBreadcrumb"] = true,
