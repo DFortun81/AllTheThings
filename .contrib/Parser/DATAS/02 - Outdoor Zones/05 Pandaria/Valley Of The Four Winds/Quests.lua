@@ -1426,7 +1426,11 @@ _.Zones =
 					["provider"] = { "n", 58646 },	-- Farmer Yoon
 				}),
 				q(30032, {	-- The Quest for Better Barley
-					["sourceQuests"] = { 30029 },	-- Wee Little Shenanigans
+					["sourceQuests"] = {
+						30029,	-- Wee Little Shenanigans
+						30030,	-- Out of Spite
+						30031,	-- Taste Test
+					},
 					["coord"] = { 52.7, 63.0, 376 },
 					["provider"] = { "n", 57211 },	-- Grainlord Kai
 					["g"] = {
