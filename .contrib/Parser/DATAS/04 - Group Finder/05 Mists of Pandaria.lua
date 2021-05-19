@@ -17,11 +17,11 @@ _.GroupFinder =
 				i(113772),	-- Firecracker Belt*		— confirmed by Carbion on discord on May 16, 2020
 				i(113770),	-- Firecracker Boots*		— confirmed by Carbion on discord on May 16, 2020
 				i(113731),	-- Firecracker Cap*			— confirmed by Carbion on discord on May 18, 2020
-				i(113773),	-- Firecracker Girdle
+				un(REMOVED_FROM_GAME, i(113773)),	-- Firecracker Girdle
 				i(113746),	-- Firecracker Gloves*		— confirmed w/screenshot in #errors on April 15, 2020
-				i(113733),	-- Firecracker Helm
+				un(REMOVED_FROM_GAME, i(113733)),	-- Firecracker Helm
 				i(113752),	-- Firecracker Mantle*		— confirmed by Carbion on discord on May 17, 2020
-				i(113771),	-- Firecracker Slippers
+				un(REMOVED_FROM_GAME, i(113771)),	-- Firecracker Slippers
 				i(113740),	-- Firecracker Tunic*		— confirmed by Carbion on discord on May 16, 2020
 				i(113730),	-- Venomtail Helm
 				i(113753),	-- Venomtail Shoulderguards *
