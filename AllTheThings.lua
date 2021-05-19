@@ -144,8 +144,14 @@ local function Callback(method, ...)
 		local newCallback = function()
 			local args = app.__callbacks[method];
 			app.__callbacks[method] = nil;
-			-- print("Callback Running",method, args ~= true and unpack(args) or nil)
-			method(args ~= true and unpack(args) or nil);
+			-- callback with args/void
+			if args ~= true then
+				-- print("Callback/args Running",method, unpack(args))
+				method(unpack(args));
+			else
+				-- print("Callback/void Running",method)
+				method();
+			end
 			-- print("Callback Done",method)
 		end;
 		C_Timer.After(0, newCallback);
@@ -168,8 +174,14 @@ local function SelfCallback(self, name, method, ...)
 		local newCallback = function()
 			local args = app.__callbacks[self][name];
 			app.__callbacks[self][name] = nil;
-			-- print("Self-Callback Running",self,name,args ~= true and unpack(args) or nil)
-			method(args ~= true and unpack(args) or nil);
+			-- callback with args/void
+			if args ~= true then
+				-- print("Self-Callback/args Running",method, unpack(args))
+				method(unpack(args));
+			else
+				-- print("Self-Callback/void Running",method)
+				method();
+			end
 			-- print("Self-Callback Done",self,name)
 		end;
 		C_Timer.After(0, newCallback);
@@ -191,8 +203,14 @@ local function AfterCombatCallback(method, ...)
 		local newCallback = function()
 			local args = app.__callbacks[method];
 			app.__callbacks[method] = nil;
-			-- print("AfterCombatCallback:Running",method,args ~= true and unpack(args) or nil)
-			method(args ~= true and unpack(args) or nil);
+			-- AfterCombatCallback with args/void
+			if args ~= true then
+				-- print("AfterCombatCallback/args Running",method, unpack(args))
+				method(unpack(args));
+			else
+				-- print("AfterCombatCallback/void Running",method)
+				method();
+			end
 			-- print("AfterCombatCallback:Done",method)
 		end;
 		tinsert(app.__combatcallbacks, 1, newCallback);
@@ -1674,6 +1692,7 @@ local keysByPriority = {	-- Sorted by frequency of use.
 	"categoryID",
 	"followerID",
 	"illusionID",
+	"tierID",
 	"unit",
 	"dungeonID",
 	"headerID"
@@ -1748,7 +1767,7 @@ end
 -- based on the priority of possible key values
 CreateObject = function(t)
 	-- t can be anything, so if it is already a valid 'object', simply use CloneData
-	if t and t.key then
+	if t and t.key or getmetatable(t) then
 		-- print("CloneData used for",t.key,t[t.key]);
 		return CloneData(t);
 	end
@@ -1772,68 +1791,63 @@ CreateObject = function(t)
 			end
 		end
 
-		local meta = getmetatable(t);
-		if meta then
-			setmetatable(s, meta);
-			return s;
-		else
-			t = s;
-			if t.mapID then
-				t = app.CreateMap(t.mapID, t);
-			elseif t.s then
-				t = app.CreateItemSource(t.s, t.itemID, t);
-			elseif t.encounterID then
-				t = app.CreateEncounter(t.encounterID, t);
-			elseif t.instanceID then
-				t = app.CreateInstance(t.instanceID, t);
-			elseif t.currencyID then
-				t = app.CreateCurrencyClass(t.currencyID, t);
-			elseif t.speciesID then
-				t = app.CreateSpecies(t.speciesID, t);
-			elseif t.objectID then
-				t = app.CreateObject(t.objectID, t);
-			elseif t.followerID then
-				t = app.CreateFollower(t.followerID, t);
-			elseif t.illusionID then
-				t = app.CreateIllusion(t.illusionID, t);
-			elseif t.professionID then
-				t = app.CreateProfession(t.professionID, t);
-			elseif t.categoryID then
-				t = app.CreateCategory(t.categoryID, t);
-			elseif t.criteriaID then
-				t = app.CreateAchievementCriteria(t.criteriaID, t);
-			elseif t.achID then
-				t = app.CreateAchievement(t.achID, t);
-			elseif t.recipeID then
-				t = app.CreateRecipe(t.recipeID, t);
-			elseif t.spellID then
-				t = app.CreateRecipe(t.spellID, t);
-			elseif t.itemID then
-				if t.isToy then
-					t = app.CreateToy(t.itemID, t);
-				else
-					t = app.CreateItem(t.itemID, t);
-				end
-			elseif t.classID then
-				t = app.CreateCharacterClass(t.classID, t);
-			elseif t.npcID or t.creatureID then
-				t = app.CreateNPC(t.npcID or t.creatureID, t);
-			elseif t.headerID then
-				t = app.CreateNPC(t.headerID, t);
-			elseif t.questID then
-				if t.isVignette then
-					t = app.CreateVignette(t.questID, t);
-				else
-					t = app.CreateQuest(t.questID, t);
-				end
-			elseif t.unit then
-				t = app.CreateUnit(t.unit, t);
+		if t.mapID then
+			t = app.CreateMap(t.mapID, t);
+		elseif t.s then
+			t = app.CreateItemSource(t.s, t.itemID, t);
+		elseif t.encounterID then
+			t = app.CreateEncounter(t.encounterID, t);
+		elseif t.instanceID then
+			t = app.CreateInstance(t.instanceID, t);
+		elseif t.currencyID then
+			t = app.CreateCurrencyClass(t.currencyID, t);
+		elseif t.speciesID then
+			t = app.CreateSpecies(t.speciesID, t);
+		elseif t.objectID then
+			t = app.CreateObject(t.objectID, t);
+		elseif t.followerID then
+			t = app.CreateFollower(t.followerID, t);
+		elseif t.illusionID then
+			t = app.CreateIllusion(t.illusionID, t);
+		elseif t.professionID then
+			t = app.CreateProfession(t.professionID, t);
+		elseif t.categoryID then
+			t = app.CreateCategory(t.categoryID, t);
+		elseif t.criteriaID then
+			t = app.CreateAchievementCriteria(t.criteriaID, t);
+		elseif t.achID then
+			t = app.CreateAchievement(t.achID, t);
+		elseif t.recipeID then
+			t = app.CreateRecipe(t.recipeID, t);
+		elseif t.spellID then
+			t = app.CreateRecipe(t.spellID, t);
+		elseif t.itemID then
+			if t.isToy then
+				t = app.CreateToy(t.itemID, t);
 			else
-				t = setmetatable({}, { __index = t });
+				t = app.CreateItem(t.itemID, t);
 			end
-			t.visible = true;
-			return t;
+		elseif t.classID then
+			t = app.CreateCharacterClass(t.classID, t);
+		elseif t.npcID or t.creatureID then
+			t = app.CreateNPC(t.npcID or t.creatureID, t);
+		elseif t.headerID then
+			t = app.CreateNPC(t.headerID, t);
+		elseif t.questID then
+			if t.isVignette then
+				t = app.CreateVignette(t.questID, t);
+			else
+				t = app.CreateQuest(t.questID, t);
+			end
+		elseif t.tierID then
+			t = app.CreateTier(t.tierID, t);
+		elseif t.unit then
+			t = app.CreateUnit(t.unit, t);
+		else
+			t = setmetatable({}, { __index = t });
 		end
+		t.visible = true;
+		return t;
 	end
 end
 -- merges the properties of the o group into the g group, making sure not to alter the filterability of the group
@@ -4516,12 +4530,7 @@ local function PopulateQuestObject(questObject)
 	if _cache then
 		for _,data in ipairs(_cache) do
 			-- only merge into the WQ quest object properties from an object in cache with this questID
-			if data["questID"] == questObject.questID then
-				-- for key,value in pairs(data) do
-				-- 	if not (key == "g" or key == "parent") then
-				-- 		questObject[key] = value;
-				-- 	end
-				-- end
+			if data.questID == questObject.questID then
 				MergeProperties(questObject, data);
 				if data.isVignette then questObject.isVignette = true; end
 				if data.g then
@@ -4579,6 +4588,7 @@ local function PopulateQuestObject(questObject)
 	local numQuestRewards = GetNumQuestLogRewards(questObject.questID);
 	-- numQuestRewards will often be 0 for fresh questID API calls...
 	-- pre-emptively call the following API method as well to get cached data earlier for the next refresh
+	-- app.DEBUG_PRINT = questObject.questID == 53955 and 53955;
 	local _ = GetQuestLogRewardInfo(1, questObject.questID);
 	for j=1,numQuestRewards,1 do
 		local _, _, _, _, _, itemID, ilvl = GetQuestLogRewardInfo(j, questObject.questID);
@@ -4595,11 +4605,11 @@ local function PopulateQuestObject(questObject)
 				QuestHarvester.AllTheThingsProcessing = false;
 				QuestHarvester:Hide();
 				if link then
-					--print("TODO: Parse Link", link);
-					local _, itemID, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, modID = strsplit(":", link);
+					-- if app.DEBUG_PRINT then print("TODO: Parse Link", link) end
+					local _, itemID, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, modID, bonusCount, bonusID1 = strsplit(":", link);
 					itemID = tonumber(itemID);
-					local item = { ["itemID"] = itemID, ["expanded"] = false, ["link"] = link, ["modID"] = tonumber(modID) };
-					-- print("WQ reward",link,itemID)
+					local item = app.CreateItem(itemID, { ["expanded"] = false, ["rawlink"] = link, ["modID"] = modID and tonumber(modID), ["bonusID"] = bonusID1 and tonumber(bonusID1) });
+					-- if app.DEBUG_PRINT then print("WQ reward",link,itemID) end
 					_cache = SearchForLink(link);
 					if _cache then
 						for _,data in ipairs(_cache) do
@@ -4705,7 +4715,10 @@ local function PopulateQuestObject(questObject)
 			local name, texture, numItems, currencyID = GetQuestLogRewardCurrencyInfo(j, questObject.questID);
 			if currencyID then
 				currencyID = tonumber(currencyID);
-				local item = { ["currencyID"] = currencyID, ["expanded"] = false, };
+				-- TODO: this is too laggy, but generates accurate & bloated results...
+				-- local item = GetCachedSearchResults("currencyID:" .. currencyID, SearchForField, "currencyID", currencyID);
+				--[[]]
+				local item = app.CreateCurrencyClass(currencyID);
 				_cache = SearchForField("currencyID", currencyID);
 				if _cache then
 					for _,data in ipairs(_cache) do
@@ -4716,17 +4729,13 @@ local function PopulateQuestObject(questObject)
 							MergeProperties(item, data);
 						-- cache record is associated with the item
 						else
-							if not item.g then
-								item.g = {};
-								item.progress = 0;
-								item.total = 0;
-							end
-							-- print("Clone cached item")
-							MergeObject(item.g, CloneData(data));
+							-- TODO: re-design this again eventually to reduce fake bloated numbers
+							if not item.g then item.g = { CloneData(data) };
+							else MergeObject(item.g, CloneData(data)); end
 						end
 					end
-					MergeObject(questObject.g, item);
-				end
+				end--]]
+				MergeObject(questObject.g, item);
 			else
 				questObject.missingData = true;
 			end
@@ -4766,7 +4775,7 @@ local function PopulateQuestObject(questObject)
 end
 -- Returns a questObject containing a lot of Quest information for displaying in a row
 local function GetPopulatedQuestObject(questID)
-	local questObject = {questID=questID,g={},progress=0,total=0};
+	local questObject = app.CreateQuest(questID, { g = {}, progress = 0, total = 0});
 	PopulateQuestObject(questObject);
 	return questObject;
 end
@@ -7738,6 +7747,14 @@ local itemFields = {
 		return t.itemID and select(5, GetItemInfoInstant(t.itemID)) or "Interface\\Icons\\INV_Misc_QuestionMark";
 	end,
 	["link"] = function(t)
+		if t.rawlink then
+			local _, link, quality, _, _, _, _, _, _, icon = GetItemInfo(t.rawlink);
+			rawset(t, "retries", nil);
+			rawset(t, "link", link);
+			rawset(t, "icon", icon);
+			rawset(t, "q", quality);
+			return link;
+		end
 		local itemLink = t.itemID;
 		if itemLink then
 			local bonusID = t.bonusID;
@@ -7758,7 +7775,7 @@ local itemFields = {
 				itemLink = string.format("item:%d:::::::::::::", itemLink);
 			end
 			local _, link, quality, _, _, _, _, _, _, icon = GetItemInfo(itemLink);
-			-- print("Retry",rawget(t, "retries"),itemLink)
+			-- print("Retry", rawget(t, "retries"), itemLink, link)
 			if link then
 				rawset(t, "retries", nil);
 				rawset(t, "link", link);
@@ -8159,8 +8176,7 @@ app.CreateMap = function(id, t)
 	return t;
 end
 app.CreateMapWithStyle = function(id)
-	local mapObject = { mapID=id,g={},progress=0,total=0}; -- this works
-	--local mapObject = app.CreateMap(id, {g={},progress=0,total=0});	-- this doesn't TODO: Look into this.
+	local mapObject = app.CreateMap(id, { g = {}, progress = 0, total = 0 });
 	for _,data in ipairs(fieldCache["mapID"][id] or {}) do
 		if data.mapID and data.icon then
 			mapObject.text = data.text;
@@ -16242,7 +16258,8 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 					},
 				},
 			};
-			self.rawData = {};
+			-- Build the initial heirarchy
+			BuildGroups(self.data, self.data.g);
 			local emissaryMapIDs = {
 				{ 619, 650 },	-- Broken Isles, Highmountain
 				{ app.FactionID == Enum.FlightPathFaction.Horde and 875 or 876, 895 },	-- Kul'Tiras or Zandalar, Stormsong Valley
@@ -16328,7 +16345,6 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 			self.Clear = function(self)
 				local temp = self.data.g[1];
 				wipe(self.data.g);
-				wipe(self.rawData);
 				tinsert(self.data.g, temp);
 				self:Update();
 			end
@@ -16455,7 +16471,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 					end
 
 					-- look for quests on 'Zone' map child maps as well
-					local mapChildInfos = C_Map.GetMapChildrenInfo(mapID, 3, false)
+					local mapChildInfos = C_Map.GetMapChildrenInfo(mapID, 3, false);
 					if mapChildInfos then
 						for i,mapInfo in ipairs(mapChildInfos) do
 							-- start fetching the data while other stuff is setup
@@ -16536,7 +16552,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 				local numRandomDungeons = GetNumRandomDungeons();
 				-- print(numRandomDungeons,"numRandomDungeons");
 				if numRandomDungeons > 0 then
-					local groupFinder = {achID=4476,text=DUNGEONS_BUTTON,g={}};
+					local groupFinder = { achID = 4476, text = DUNGEONS_BUTTON, g = {} };
 					for index=1,numRandomDungeons,1 do
 						local dungeonID = GetLFGRandomDungeonInfo(index);
 						-- print("RandInfo",index,GetLFGRandomDungeonInfo(index));
@@ -16544,18 +16560,18 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 						-- print("DungeonAppearsInRandomLFD(dungeonID)",DungeonAppearsInRandomLFD(dungeonID)); -- useless
 						local name, typeID, subtypeID, minLevel, maxLevel, recLevel, minRecLevel, maxRecLevel, expansionLevel, groupID, textureFilename, difficulty, maxPlayers, description, isHoliday, bonusRepAmount, minPlayers, isTimeWalker, name2, minGearLevel = GetLFGDungeonInfo(dungeonID);
 						-- print(dungeonID,name, typeID, subtypeID, minLevel, maxLevel, recLevel, minRecLevel, maxRecLevel, expansionLevel, groupID, textureFilename, difficulty, maxPlayers, description, isHoliday, bonusRepAmount, minPlayers, isTimeWalker, name2, minGearLevel);
-						local _,gold,unknown,xp,unknown2,numRewards,unknown = GetLFGDungeonRewards(dungeonID);
+						local _, gold, unknown, xp, unknown2, numRewards, unknown = GetLFGDungeonRewards(dungeonID);
 						-- print("GetLFGDungeonRewards",dungeonID,GetLFGDungeonRewards(dungeonID));
-						local header = {dungeonID=dungeonID,text=name,description=description,lvl={minRecLevel or 1, maxRecLevel},g={}};
+						local header = { dungeonID = dungeonID, text = name, description = description, lvl = { minRecLevel or 1, maxRecLevel }, g = {}};
 						if expansionLevel and not isHoliday then
 							header.icon = setmetatable({["tierID"]=expansionLevel + 1}, app.BaseTier).icon;
 						elseif isTimeWalker then
 							header.icon = app.asset("Difficulty_Timewalking");
 						end
 						for rewardIndex=1,numRewards,1 do
-							local itemName,icon,count,claimed,rewardType,itemID,quality = GetLFGDungeonRewardInfo(dungeonID, rewardIndex);
+							local itemName, icon, count, claimed, rewardType, itemID, quality = GetLFGDungeonRewardInfo(dungeonID, rewardIndex);
 							if rewardType == "item" then
-								local item = { ["itemID"] = itemID, ["expanded"] = false };
+								local item = app.CreateItem(itemID, { ["expanded"] = false });
 								_cache = SearchForField("itemID", itemID);
 								if _cache then
 									local ACKCHUALLY;
@@ -16610,34 +16626,57 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 								MergeObject(header.g, item);
 							elseif rewardType == "currency" then
 								if showCurrencies then
-									local item = { ["currencyID"] = itemID, ["expanded"] = false, };
+									-- TODO: this is too laggy, but generates accurate & bloated results...
+									-- local item = GetCachedSearchResults("currencyID:" .. itemID, SearchForField, "currencyID", itemID);
+									--[[]]
+									local item = app.CreateCurrencyClass(itemID);
 									_cache = SearchForField("currencyID", itemID);
 									if _cache then
 										for _,data in ipairs(_cache) do
-											local lvl;
-											if isTimeWalker then
-												lvl = (data.lvl and type(data.lvl) == "table" and data.lvl[1]) or
-														data.lvl or
-														(data.parent and data.parent.lvl and type(data.parent.lvl) == "table" and data.parent.lvl[1]) or
-														data.parent.lvl or 0;
+											-- print("_cached",data.key,data[data.key])
+											-- cache record is the item itself
+											if data.key == "currencyID" and data[data.key] == itemID then
+												-- print("Merge cached item")
+												MergeProperties(item, data);
+											-- cache record is associated with the item
 											else
-												lvl = 0;
-											end
-											if lvl <= minRecLevel then
-												if data.f then
-													item.f = data.f;
-												end
-												if data.g and #data.g > 0 then
-													if not item.g then
-														item.g = {};
-														item.progress = 0;
-														item.total = 0;
-													end
-													MergeObject(item.g, data);
-												end
+												-- TODO: re-design this again eventually to reduce fake bloated numbers
+												if not item.g then item.g = { CloneData(data) };
+												else MergeObject(item.g, CloneData(data)); end
 											end
 										end
-									end
+									end--]]
+									-- local item = app.CreateCurrencyClass(itemID, { ["expanded"] = false, });
+									-- local item = { ["currencyID"] = itemID, ["expanded"] = false};
+									-- TODO: this is just a huge temporary duplication in the world quest list usually, plus it is not filtered properly
+									-- _cache = SearchForField("currencyID", itemID);
+									-- if _cache then
+									-- 	for _,data in ipairs(_cache) do
+									-- 		local lvl;
+									-- 		if isTimeWalker then
+									-- 			lvl = (data.lvl and type(data.lvl) == "table" and data.lvl[1]) or
+									-- 					data.lvl or
+									-- 					(data.parent and data.parent.lvl and type(data.parent.lvl) == "table" and data.parent.lvl[1]) or
+									-- 					data.parent.lvl or 0;
+									-- 		else
+									-- 			lvl = 0;
+									-- 		end
+									-- 		if lvl <= minRecLevel then
+									-- 			if data.f then
+									-- 				print("Changed filter of currency class",item.f,data.f)
+									-- 				item.f = data.f;
+									-- 			end
+									-- 			if data.g and #data.g > 0 then
+									-- 				if not item.g then
+									-- 					item.g = {};
+									-- 					item.progress = 0;
+									-- 					item.total = 0;
+									-- 				end
+									-- 				MergeObject(item.g, data);
+									-- 			end
+									-- 		end
+									-- 	end
+									-- end
 									MergeObject(header.g, item);
 								end
 							else
@@ -16649,12 +16688,12 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 					table.insert(temp, groupFinder);
 				end
 
-				if self.retry then
-					-- print("Missing API quest data on this World Quest refresh");
-					-- TODO: try turning this into a C_Timer callback to auto-refresh after a second?
-					self.retry = nil;
-					return true;
-				end
+				-- if self.retry then
+				-- 	-- print("Missing API quest data on this World Quest refresh");
+				-- 	-- TODO: try turning this into a C_Timer callback to auto-refresh after a second?
+				-- 	self.retry = nil;
+				-- 	return true;
+				-- end
 
 				-- Put a 'Clear World Quests' click at the bottom
 				MergeObject(temp, {
@@ -16670,13 +16709,13 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 				});
 
 				for i,o in ipairs(temp) do
-					UnsetNotCollectible(o);
-					MergeObject(self.rawData, o);
-				end
-				for i,o in ipairs(self.rawData) do
+					-- UnsetNotCollectible(o);
 					MergeObject(self.data.g, CreateObject(o));
 				end
-				if not no then self:Update(); end
+				-- Build the heirarchy
+				BuildGroups(self.data, self.data.g);
+				-- Force Update Callback
+				Callback(self.Update, self, true);
 			end
 			self.Sort = function(a, b)
 				-- If either object doesn't exist
@@ -16768,8 +16807,6 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 			end;
 		end
 
-		-- Update the window and all of its row data
-		BuildGroups(self.data, self.data.g);
 		self:BaseUpdate(true);
 	end
 end);
