@@ -7741,21 +7741,24 @@ local itemFields = {
 		local itemLink = t.itemID;
 		if itemLink then
 			local bonusID = t.bonusID;
-			if bonusID then
-				if bonusID > 0 then
-					itemLink = string.format("item:%d::::::::::::1:%d", itemLink, bonusID);
-				else
-					itemLink = string.format("item:%d:::::::::::::", itemLink);
-				end
+			local modID = t.modID;
+			if not bonusID or bonusID < 1 then
+				bonusID = nil;
+			end
+			if not modID or modID < 1 then
+				modID = nil;
+			end
+			if bonusID and modID then
+				itemLink = string.format("item:%d:::::::::::%d:1:%d", itemLink, modID, bonusID);
+			elseif bonusID then
+				itemLink = string.format("item:%d::::::::::::1:%d", itemLink, bonusID);
+			elseif modID then
+				itemLink = string.format("item:%d:::::::::::%d:1:3524", itemLink, modID);
 			else
-				bonusID = t.modID;
-				if bonusID then
-					itemLink = string.format("item:%d:::::::::::%d:1:3524", itemLink, bonusID);
-				else
-					itemLink = string.format("item:%d:::::::::::::", itemLink);
-				end
+				itemLink = string.format("item:%d:::::::::::::", itemLink);
 			end
 			local _, link, quality, _, _, _, _, _, _, icon = GetItemInfo(itemLink);
+			-- print("Retry",rawget(t, "retries"),itemLink)
 			if link then
 				rawset(t, "retries", nil);
 				rawset(t, "link", link);
