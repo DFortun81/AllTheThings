@@ -94,8 +94,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						49803,	-- Changing of the Guard
-						49806,	-- Hidden Dealings
-						49805,	-- Implements of Ill Intent
 						49804,	-- Sharp Thinking
 						-- Definitely requires "Changing of the Guard;" may not require others.  Needs confirmation.
 						-- Awarded "A New Order" criteria.
