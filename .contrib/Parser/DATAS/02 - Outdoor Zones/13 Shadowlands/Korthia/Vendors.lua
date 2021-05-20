@@ -124,6 +124,21 @@ _.Zones =
 								i(185045),	-- Frontline Necromancer's Wraps
 							},
 						}),
+						i(186499, {	-- Ensemble: Garb of Fall's Promise
+							["customCollect"] = "SL_COV_NFA",	-- Night Fae-only
+							["cost"] = { { "c", 1767, 6000 } },	-- 6,000x Stygia
+							["g"] = {
+								i(184965),	-- Drape of Fall's Promise
+								i(184959),	-- Handwraps of Fall's Promise
+								i(184960),	-- Hood of Fall's Promise
+								i(184961),	-- Leggings of Fall's Promise
+								i(184962),	-- Mantle of Fall's Promise
+								i(184963),	-- Sash of Fall's Promise
+								i(184958),	-- Slippers of Fall's Promise
+								i(184957),	-- Vestments of Fall's Promise
+								i(184964),	-- Wraps of Fall's Promise
+							},
+						}),
 						i(186511, {	-- Ensemble: Renathal's Battlefield Attire
 							["customCollect"] = "SL_COV_VEN",	-- Venthyr-only
 							["cost"] = { { "c", 1767, 6000 } },	-- 6,000x Stygia
