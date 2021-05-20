@@ -4485,8 +4485,6 @@ local function PopulateQuestObject(questObject)
 	-- cannot do anything on a missing object or questID
 	if not questObject or not questObject.questID then return; end
 
-	local showCurrencies = app.Settings:GetTooltipSetting("WorldQuestsList:Currencies");
-
 	-- Check for a Task-specific icon
 	local info = C_QuestLog.GetQuestTagInfo(questObject.questID);
 	-- if info then
@@ -4537,7 +4535,6 @@ local function PopulateQuestObject(questObject)
 					for _,entry in ipairs(data.g) do
 						local resolved = ResolveSymbolicLink(entry);
 						if resolved then
-							-- entry = CreateObject(entry); -- TODO: not necessary anymore
 							if entry.g then
 								MergeObjects(entry.g, resolved);
 							else
@@ -4584,109 +4581,7 @@ local function PopulateQuestObject(questObject)
 		end
 	end
 
-	-- Get reward info
-	local numQuestRewards = GetNumQuestLogRewards(questObject.questID);
-	-- numQuestRewards will often be 0 for fresh questID API calls...
-	-- pre-emptively call the following API method as well to get cached data earlier for the next refresh
-	-- app.DEBUG_PRINT = questObject.questID == 53955 and 53955;
-	local _ = GetQuestLogRewardInfo(1, questObject.questID);
-	for j=1,numQuestRewards,1 do
-		local _, _, _, _, _, itemID, ilvl = GetQuestLogRewardInfo(j, questObject.questID);
-		if itemID then
-			if showCurrencies or (
-				itemID ~= 116415 and	-- Shiny Pet Charm
-				itemID ~= 163036 and	-- Polished Pet Charm
-				itemID ~= 137642		-- Mark of Honor
-				) then
-				QuestHarvester.AllTheThingsProcessing = true;
-				QuestHarvester:SetOwner(UIParent, "ANCHOR_NONE");
-				QuestHarvester:SetQuestLogItem("reward", j, questObject.questID);
-				local link = select(2, QuestHarvester:GetItem());
-				QuestHarvester.AllTheThingsProcessing = false;
-				QuestHarvester:Hide();
-				if link then
-					-- if app.DEBUG_PRINT then print("TODO: Parse Link", link) end
-					local _, itemID, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, modID, bonusCount, bonusID1 = strsplit(":", link);
-					itemID = tonumber(itemID);
-					local item = app.CreateItem(itemID, { ["expanded"] = false, ["rawlink"] = link, ["modID"] = modID and tonumber(modID), ["bonusID"] = bonusID1 and tonumber(bonusID1) });
-					-- if app.DEBUG_PRINT then print("WQ reward",link,itemID) end
-					_cache = SearchForLink(link);
-					if _cache then
-						for _,data in ipairs(_cache) do
-							-- print("_cached",data.key,data[data.key])
-							-- cache record is the item itself
-							if data.itemID and data.itemID == itemID then
-								-- print("Merge cached item")
-								MergeProperties(item, data);
-								if data.g then
-									if not item.g then
-										item.g = {};
-										item.progress = 0;
-										item.total = 0;
-									end
-									MergeObjects(item.g, data.g);
-								end
-							-- cache record is associated with the item
-							else
-								if not item.g then
-									item.g = {};
-									item.progress = 0;
-									item.total = 0;
-								end
-								-- print("Clone cached item")
-								MergeObject(item.g, CloneData(data));
-							end
-						end
-					end
-					MergeObject(questObject.g, item);
-				else
-					-- Take the best guess at what this is... No clue.
-					local modID = tagID == 137 and ((ilvl >= 370 and 23) or (ilvl >= 355 and 2)) or 1;
-					_cache = SearchForField("itemID", itemID);
-					local item = { ["itemID"] = itemID, ["expanded"] = false, };
-					if _cache then
-						local ACKCHUALLY;
-						for _,data in ipairs(_cache) do
-							if data.f then
-								item.f = data.f;
-							end
-							if data.s then
-								item.s = data.s;
-								if data.modID == modID then
-									ACKCHUALLY = data.s;
-									item.modID = modID;
-									if tagID == 137 then
-										local parent = data.parent;
-										while parent do
-											if parent.instanceID then
-												questObject.icon = parent.icon;
-												break;
-											end
-											parent = parent.parent;
-										end
-									end
-								end
-							end
-							if data.g and #data.g > 0 then
-								if not item.g then
-									item.g = {};
-									item.progress = 0;
-									item.total = 0;
-								end
-								MergeObjects(item.g, data.g);
-							end
-						end
-						if ACKCHUALLY then
-							item.s = ACKCHUALLY;
-						end
-					end
-					MergeObject(questObject.g, item);
-				end
-			end
-		else
-			questObject.missingData = true;
-		end
-	end
+	app.TryPopulateQuestRewards(questObject);
 
 	-- Get time remaining info (only works for World Quests)
 	local timeRemaining = C_TaskQuest.GetQuestTimeLeftMinutes(questObject.questID);
@@ -4702,43 +4597,6 @@ local function PopulateQuestObject(questObject)
 			questObject.description = description;
 		else
 			questObject.description = questObject.description .. "\n\n" .. description;
-		end
-	end
-
-	-- Add info for currency rewards as containers for their respective collectibles
-	if showCurrencies then
-		local numCurrencies = GetNumQuestLogRewardCurrencies(questObject.questID);
-		-- numCurrencies will often be 0 for fresh questID API calls...
-		-- pre-emptively call the following API method as well to get cached data earlier for the next refresh
-		local _ = GetQuestLogRewardCurrencyInfo(1, questObject.questID);
-		for j=1,numCurrencies,1 do
-			local name, texture, numItems, currencyID = GetQuestLogRewardCurrencyInfo(j, questObject.questID);
-			if currencyID then
-				currencyID = tonumber(currencyID);
-				-- TODO: this is too laggy, but generates accurate & bloated results...
-				-- local item = GetCachedSearchResults("currencyID:" .. currencyID, SearchForField, "currencyID", currencyID);
-				--[[]]
-				local item = app.CreateCurrencyClass(currencyID);
-				_cache = SearchForField("currencyID", currencyID);
-				if _cache then
-					for _,data in ipairs(_cache) do
-						-- print("_cached",data.key,data[data.key])
-						-- cache record is the item itself
-						if data.key == "currencyID" and data[data.key] == currencyID then
-							-- print("Merge cached item")
-							MergeProperties(item, data);
-						-- cache record is associated with the item
-						else
-							-- TODO: re-design this again eventually to reduce fake bloated numbers
-							if not item.g then item.g = { CloneData(data) };
-							else MergeObject(item.g, CloneData(data)); end
-						end
-					end
-				end--]]
-				MergeObject(questObject.g, item);
-			else
-				questObject.missingData = true;
-			end
 		end
 	end
 
@@ -9097,6 +8955,203 @@ app.CollectibleAsQuest = function(t)
 		);
 end
 
+-- Will attempt to populate the rewards of the quest object into itself (will become the object's OnUpdate until populated or 3 seconds elapse)
+app.TryPopulateQuestRewards = function(questObject)
+	if not questObject or not questObject.questID then return; end
+
+	if not questObject.OnUpdate then questObject.OnUpdate = app.TryPopulateQuestRewards; end
+	local showCurrencies = app.Settings:GetTooltipSetting("WorldQuestsList:Currencies");
+	-- Get reward info
+	local numQuestRewards = GetNumQuestLogRewards(questObject.questID);
+	-- numQuestRewards will often be 0 for fresh questID API calls...
+	-- pre-emptively call the following API method as well to get cached data earlier for the next refresh
+	GetQuestLogRewardInfo(1, questObject.questID);
+	-- app.DEBUG_PRINT = questObject.questID == 51096 and 51096;
+	if not numQuestRewards or numQuestRewards < 1 then
+		-- only try to populate quest rewards a limited amount of times
+		if not questObject.missingItem then
+			-- print("TryPopulateQuestRewards:missingData",questObject.questID,time())
+			questObject.missingItem = time();
+		else
+			-- stop trying to get rewards after 3 seconds have gone by
+			if questObject.missingItem < (time() - 3) then
+				-- print("TryPopulateQuestRewards:expired",questObject.questID,time())
+				questObject.OnUpdate = nil;
+				questObject.missingItem = nil;
+			end
+		end
+	else
+		for j=1,numQuestRewards,1 do
+			local _, _, _, _, _, itemID, ilvl = GetQuestLogRewardInfo(j, questObject.questID);
+			if itemID then
+				-- at least one reward exists, so clear the missing data
+				questObject.missingItem = nil;
+				-- print("TryPopulateQuestRewards:found",questObject.questID)
+
+				if showCurrencies or (
+					itemID ~= 116415 and	-- Shiny Pet Charm
+					itemID ~= 163036 and	-- Polished Pet Charm
+					itemID ~= 137642		-- Mark of Honor
+					) then
+					QuestHarvester.AllTheThingsProcessing = true;
+					QuestHarvester:SetOwner(UIParent, "ANCHOR_NONE");
+					QuestHarvester:SetQuestLogItem("reward", j, questObject.questID);
+					local link = select(2, QuestHarvester:GetItem());
+					QuestHarvester.AllTheThingsProcessing = false;
+					QuestHarvester:Hide();
+					if link then
+						-- if app.DEBUG_PRINT then print("TODO: Parse Link", link) end
+						local _, itemID, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, modID, bonusCount, bonusID1 = strsplit(":", link);
+						local s = GetSourceID(link);
+						itemID = tonumber(itemID);
+						local item = app.CreateItem(itemID, { ["s"] = s, ["expanded"] = false, ["rawlink"] = link, ["modID"] = modID and tonumber(modID), ["bonusID"] = bonusID1 and tonumber(bonusID1) });
+						-- if app.DEBUG_PRINT then print("WQ reward",link,itemID,item.collectible) end
+						_cache = SearchForLink(link);
+						if _cache then
+							for _,data in ipairs(_cache) do
+								-- print("_cached",data.key,data[data.key])
+								-- cache record is the item itself
+								if data.itemID and data.itemID == itemID then
+									-- print("Merge cached item")
+									MergeProperties(item, data);
+									if data.g then
+										if not item.g then
+											item.g = {};
+											item.progress = 0;
+											item.total = 0;
+										end
+										MergeObjects(item.g, data.g);
+									end
+								-- cache record is associated with the item
+								else
+									if not item.g then
+										item.g = {};
+										item.progress = 0;
+										item.total = 0;
+									end
+									-- print("Clone cached item")
+									MergeObject(item.g, CloneData(data));
+								end
+							end
+						end
+						MergeObject(questObject.g, item);
+					else
+						-- Take the best guess at what this is... No clue.
+						local modID = tagID == 137 and ((ilvl >= 370 and 23) or (ilvl >= 355 and 2)) or 1;
+						_cache = SearchForField("itemID", itemID);
+						local item = { ["itemID"] = itemID, ["expanded"] = false, };
+						if _cache then
+							local ACKCHUALLY;
+							for _,data in ipairs(_cache) do
+								if data.f then
+									item.f = data.f;
+								end
+								if data.s then
+									item.s = data.s;
+									if data.modID == modID then
+										ACKCHUALLY = data.s;
+										item.modID = modID;
+										if tagID == 137 then
+											local parent = data.parent;
+											while parent do
+												if parent.instanceID then
+													questObject.icon = parent.icon;
+													break;
+												end
+												parent = parent.parent;
+											end
+										end
+									end
+								end
+								if data.g and #data.g > 0 then
+									if not item.g then
+										item.g = {};
+										item.progress = 0;
+										item.total = 0;
+									end
+									MergeObjects(item.g, data.g);
+								end
+							end
+							if ACKCHUALLY then
+								item.s = ACKCHUALLY;
+							end
+						end
+						MergeObject(questObject.g, item);
+					end
+				end
+			elseif not questObject.missingItem then
+				questObject.missingItem = time();
+			end
+		end
+	end
+
+	-- Add info for currency rewards as containers for their respective collectibles
+	if showCurrencies then
+		local numCurrencies = GetNumQuestLogRewardCurrencies(questObject.questID);
+		-- pre-emptively call the following API method as well to get cached data earlier for the next refresh
+		GetQuestLogRewardCurrencyInfo(1, questObject.questID);
+		-- numCurrencies will often be 0 for fresh questID API calls...		
+
+		-- print("TryPopulateQuestRewards_currencies",questObject.questID,numCurrencies)
+		if not numCurrencies or numCurrencies < 1 then
+			-- only try to populate quest rewards a limited amount of times
+			if not questObject.missingCurr then
+				-- print("TryPopulateQuestRewards_currencies:missingData",questObject.questID,time())
+				questObject.missingCurr = time();
+			else
+				-- stop trying to get rewards after 3 seconds have gone by
+				if questObject.missingCurr < (time() - 3) then
+					-- print("TryPopulateQuestRewards_currencies:expired",questObject.questID,time())
+					questObject.OnUpdate = nil;
+					questObject.missingCurr = nil;
+				end
+			end
+		else
+			local currencyID;
+			for j=1,numCurrencies,1 do
+				currencyID = select(4, GetQuestLogRewardCurrencyInfo(j, questObject.questID));
+				if currencyID then
+					-- print("TryPopulateQuestRewards_currencies:found",questObject.questID)
+					questObject.missingCurr = nil;
+					
+					currencyID = tonumber(currencyID);
+					-- TODO: this is too laggy, but generates accurate & bloated results...
+					-- local item = GetCachedSearchResults("currencyID:" .. currencyID, SearchForField, "currencyID", currencyID);
+					--[[]]
+					local item = app.CreateCurrencyClass(currencyID);
+					_cache = SearchForField("currencyID", currencyID);
+					if _cache then
+						for _,data in ipairs(_cache) do
+							-- print("_cached",data.key,data[data.key])
+							-- cache record is the item itself
+							if data.key == "currencyID" and data[data.key] == currencyID then
+								-- print("Merge cached item")
+								MergeProperties(item, data);
+							-- cache record is associated with the item
+							else
+								-- TODO: re-design this again eventually to reduce fake bloated numbers
+								if not item.g then item.g = { CloneData(data) };
+								else MergeObject(item.g, CloneData(data)); end
+							end
+						end
+					end--]]
+					MergeObject(questObject.g, item);
+				elseif not questObject.missingCurr then
+					questObject.missingCurr = time();
+				end
+			end
+		end
+	end
+
+	-- if not missing Item/Curr and OnUpdate, then build the heirarchy since something was populated
+	if not questObject.missingData and not questObject.missingCurr and questObject.OnUpdate then
+		-- print("Quest Object populated",questObject.questID)
+		questObject.OnUpdate = nil;
+		questObject.doUpdate = true;
+		BuildGroups(questObject, questObject.g);
+	end
+end
+
 local fields = RawCloneData(questFields);
 fields.collectible = questFields.collectibleAsReputation;
 fields.collected = questFields.collectedAsReputation;
@@ -10471,7 +10526,7 @@ UpdateGroups = function(parent, g, defaultVis)
 	end
 end
 ]]--
-UpdateGroup = function(parent, group)
+UpdateGroup = function(parent, group, window)
 	-- local LOG = group.key == "questID" and group[group.key] == 8623 and (group.key .. ":" .. group[group.key]);
 	-- if LOG then app.DEBUG_LOG = LOG; end
 	-- if LOG or app.DEBUG_LOG then print(group.key,group.key and group[group.key],"Updating",group._Updated,app._Updated,"t/p/v",group.total,group.progress,group.visible) end
@@ -10518,7 +10573,7 @@ UpdateGroup = function(parent, group)
 			if app.GroupFilter(group) then
 
 				-- Update the subgroups recursively...
-				visible = UpdateGroups(group, group.g);
+				visible = UpdateGroups(group, group.g, window);
 
 				-- if LOG or app.DEBUG_LOG then print(group.key,group.key and group[group.key],"After g","t/p",group.total,group.progress) end
 
@@ -10571,20 +10626,22 @@ UpdateGroup = function(parent, group)
 	-- if LOG then app.DEBUG_LOG = nil; end
 	return visible;
 end
-UpdateGroups = function(parent, g)
+UpdateGroups = function(parent, g, window)
 	if g then
 		local visible = false;
 		for key, group in ipairs(g) do
 			if group.OnUpdate then
 				if not group:OnUpdate() then
-					if UpdateGroup(parent, group) then
+					if UpdateGroup(parent, group, window) then
 						visible = true;
 					end
 				elseif group.visible then
-					UpdateGroups(group, group.g);
+					UpdateGroups(group, group.g, window);
 					visible = true;
 				end
-			elseif UpdateGroup(parent, group) then
+				-- some objects are able to populate themselves via OnUpdate and track if needing to do another update via 'doUpdate'
+				if window and group.doUpdate then window.doUpdate = true; end
+			elseif UpdateGroup(parent, group, window) then
 				visible = true;
 			end
 		end
@@ -12077,15 +12134,15 @@ local function Refresh(self)
 
 		-- If this window has an UpdateDone method which should process after the Refresh is complete
 		if self.UpdateDone then
-			SelfCallback(self, "UpdateDone",
-				function() self:UpdateDone(); end);
+			Callback(self.UpdateDone, self);
 		-- If the rows need to be processed again, do so next update.
 		elseif self.processingLinks then
-			SelfCallback(self, "Refresh",
-				function()
-					self.processingLinks = nil;
-					self:Refresh();
-				end);
+			Callback(self.Refresh, self);
+			self.processingLinks = nil;
+		-- If the data itself needs another update pass due to new rows being added dynamically
+		elseif self.doUpdate then
+			Callback(self.Update, self, true);
+			self.doUpdate = nil;
 		end
 	else
 		self:Hide();
@@ -13139,7 +13196,7 @@ local function UpdateWindow(self, force, got)
 				self.data.progress = 0;
 				self.data.total = 0;
 				-- print("UpdateGroups",self.suffix or self.Suffix)
-				UpdateGroups(self.data, self.data.g);
+				UpdateGroups(self.data, self.data.g, self);
 				-- print("Done")
 			end
 			ProcessGroup(self.rowData, self.data);
@@ -16407,6 +16464,13 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 				end
 			end
 			self.Rebuild = function(self, no)
+				-- Already filled with data, just give it a forced update pass since data for quests should now populate dynamically
+				if #self.data.g > 1 then
+					-- print("Already WQ data, just update again")
+					-- Force Update Callback
+					Callback(self.Update, self, true);
+					return;
+				end
 				-- Rebuild all World Quest data
 				self.retry = nil;
 				local temp = {};
@@ -16532,7 +16596,6 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 								for _,entry in ipairs(data.g) do
 									local resolved = ResolveSymbolicLink(entry);
 									if resolved then
-										entry = CreateObject(entry); -- TODO: not necessary anymore
 										if entry.g then
 											MergeObjects(entry.g, resolved);
 										else
