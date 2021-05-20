@@ -174,7 +174,11 @@ _.Zones =
 					["provider"] = { "n", 128349 },	-- Hilde Firebreaker
 				}),
 				q(50110, {	-- Bearers of Bad News
-					["sourceQuests"] = { 49741 },	-- Righteous Retribution
+					["sourceQuests"] = {
+						49736,	-- For Kul Tiras!
+						49740,	-- Cease Fire!
+						49741,	-- Righteous Retribution
+					},
 					["coord"] = { 56.5, 61.3, 895 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 142393 },	-- Taelia
