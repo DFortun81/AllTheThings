@@ -155,6 +155,7 @@ _.ExpansionFeatures =
 						["classes"] = { PRIEST },
 						["coord"] = { 28.7, 49.9, 627 },	-- Dalaran
 						["provider"] = { "n", 105081 },	-- Archmage Kalec
+						["maps"] = { 627 },	-- Dalaran
 					}),
 					q(43935, {	-- A Second Legend
 						["sourceQuests"] = { 41019 },	-- Actions on Azeroth

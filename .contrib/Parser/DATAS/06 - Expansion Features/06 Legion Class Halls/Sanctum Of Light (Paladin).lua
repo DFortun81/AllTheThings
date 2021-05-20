@@ -187,6 +187,7 @@ _.ExpansionFeatures =
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 105813 },	-- Orik Trueheart
 						["coord"] = { 73.9, 49.0, 627 },
+						["maps"] = { 627 },	-- Dalaran
 					}),
 					q(43494, {	-- Silver Hand Knights
 						["sourceQuests"] = { 42890 },	-- The Codex of Command
@@ -211,6 +212,7 @@ _.ExpansionFeatures =
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 106337 },	-- Travard
 						["coord"] = { 72.0, 49.3, 627 },
+						["maps"] = { 627 },	-- Dalaran
 					}),
 					q(42890, {	-- The Codex of Command
 						["sourceQuests"] = {
@@ -224,7 +226,8 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 42002 }, -- To Northrend
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 105724 },	-- Orik Trueheart
-						["coord"] = {56.8, 78.7, 117 },	-- Howling Fjord,
+						["coord"] = { 56.8, 78.7, 117 },	-- Howling Fjord
+						["maps"] = { 117 },	-- Howling Fjord
 					}),
 					q(42966, {	-- The Highlord's Command
 						["sourceQuests"] = { 42919 },	-- The Scion's Legacy
@@ -284,6 +287,7 @@ _.ExpansionFeatures =
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 105689 },	-- Orik Trueheart
 						["coord"] = { 73.9, 49.0, 627 },
+						["maps"] = { 627 },	-- Dalaran
 					}),
 					q(38576, {	-- We Meet at Light's Hope
 						["sourceQuests"] = { 42017 },	-- Shrine of the Truthguard
@@ -293,6 +297,7 @@ _.ExpansionFeatures =
 							{ "n", 106834 },	-- Lord Maxwell Tyrosus
 						},
 						["coord"] = { 71.7, 45.1, 627 },
+						["maps"] = { 627 },	-- Dalaran
 					}),
 					q(42811, {	-- We Meet at Light's Hope
 						["sourceQuests"] = { 38376 },	-- The Search for the Highlord

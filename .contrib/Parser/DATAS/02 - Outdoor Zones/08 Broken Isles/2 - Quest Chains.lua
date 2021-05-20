@@ -331,7 +331,10 @@ _.Zones =
 							["maps"] = { 627 },	-- Dalaran
 						}),
 						q(44004, {	-- Bringer of the Light
-							["sourceQuests"] = { 44009 },	-- A Falling Star (not sure if Paladin version of the quest leads to this also, so i didn't include it)
+							["sourceQuests"] = { 
+								44009,	-- A Falling Star (non-Paladin version)
+								44257,	-- A Falling Star (Paladin version)
+							},
 							["description"] = "This quest sends you to a scenario involving The Exodar and Prophet Velen. Before you kill the final boss, make sure to do everything contained within!",
 							["provider"] = { "n", 112130 },	-- Archmage Khadgar
 							["coord"] = { 27.5, 35.8, 629 },	-- Aegwynn's Gallery
