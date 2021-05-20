@@ -868,7 +868,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(48622, {	-- The Vanishing Lord
-				--	["sourceQuests"] = {  },	-- slumber is dumb and forgot lol :)
+					["sourceQuests"] = { 47961 },	-- Drustvar
 					["altQuests"] = { 53434 },	-- The Vanishing Lord
 					["provider"] = { "n", 121235 },	-- Taelia
 					["coord"] = { 68.0, 22.0, 1161 },

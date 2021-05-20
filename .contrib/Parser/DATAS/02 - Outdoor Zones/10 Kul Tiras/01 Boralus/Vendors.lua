@@ -1862,7 +1862,6 @@ _.Zones =
 								i(169750),	-- Notorious Aspirant's Pummeler
 								i(169742),	-- Notorious Aspirant's Reprieve
 								i(169735),	-- Notorious Aspirant's Shanker
-								i(167522),	-- Notorious Aspirant's Shield Wall
 								i(169744),	-- Notorious Aspirant's Shield Wall
 								i(169752),	-- Notorious Aspirant's Slicer
 								i(169734),	-- Notorious Aspirant's Stabber

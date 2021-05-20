@@ -353,6 +353,7 @@ _.Zones =
 						["coord"] = { 42.9, 26.5, 831 },
 					}),
 					q(49224, {	-- The Netherlight Crucible
+						["u"] = REMOVED_FROM_GAME,	-- removed in BFA 8.0.1
 						["sourceQuests"] = { 48560 },	-- An Offering of Shadow
 						["provider"] = { "n", 126389 },	-- Artificer Shela'na
 						["coord"] = { 58.8, 69.4, 832 },
