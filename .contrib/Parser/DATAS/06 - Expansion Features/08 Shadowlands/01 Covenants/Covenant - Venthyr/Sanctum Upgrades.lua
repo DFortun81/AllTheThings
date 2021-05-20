@@ -545,6 +545,7 @@ _.ExpansionFeatures =
 												["achievementID"] = 14724,	-- People Pleaser
 											}),
 											i(183886),	-- Sika's Rare Ore Pouch
+											i(180815),	-- Brightscale Hatchling (PET!)
 											i(181230),	-- Pugilist's Chakram
 											i(183863),	-- The Proper Path and Etiquette for Aspirants
 											i(181229),	-- Tranquil's Censer
