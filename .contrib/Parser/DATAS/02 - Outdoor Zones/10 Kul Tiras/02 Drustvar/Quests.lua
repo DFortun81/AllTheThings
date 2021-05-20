@@ -127,7 +127,10 @@ _.Zones =
 					["provider"] = { "n", 131638 },	-- Lucille Waycrest
 					["coord"] = { 31.4, 30.2, 896 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = { 50151 },	-- A Steady Ballast
+					["sourceQuests"] = {
+						50151,	-- A Steady Ballast
+						50173,	-- Precious Metals
+					},
 				}),
 				q(50450, {	-- An Offensive Harvest
 					["provider"] = { "n", 133839 },	-- Harris Hocking
