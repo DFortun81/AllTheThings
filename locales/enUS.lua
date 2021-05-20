@@ -1129,6 +1129,7 @@ app.L = {
 		[-862] = "Interface\\Icons\\inv_heartofazeroth",									-- Heart of Azeroth
 		[-900] = 3675495,																	-- Covenant Sanctum
 		[-901] = 3726261,																	-- Covenant Callings
+		[-902] = 3726261,																	-- Renown
 		[-903] = "Interface\\Icons\\buff_feltreasures",										-- Zone Rewards
 		[-904] = "Interface\\Icons\\ui_torghast",											-- Wrath of the Jailer
 		[-905] = 3675495,																	-- Command Table
@@ -1921,7 +1922,7 @@ app.L = {
 	-- Shadowlands Header
 		[-900] = "Covenant Sanctum",											-- Covenant Sanctum
 		[-901] = GetSpellInfo(339041),											-- Covenant Callings
-		--[-902] = C_CurrencyInfo.GetCurrencyInfo(1822, name),					-- Renown (NYI)
+		[-902] = "Renown",														-- Renown
 		[-903] = "Zone Rewards",												-- Zone Rewards
 		[-904] = "Wrath of the Jailer",											-- Wrath of the Jailer
 		[-905] = "Command Table",												-- Command Table
