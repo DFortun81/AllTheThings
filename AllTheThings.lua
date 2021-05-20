@@ -3170,7 +3170,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						end
 					end
 
-					if sourceGroup.missing then
+					if app.IsReady and sourceGroup.missing then
 						tinsert(info, { left = Colorize("Item Source not found in the database.\n" .. L["SOURCE_ID_MISSING"], "ffff0000") });	-- Do not localize first part of the message, it is for contribs
 						tinsert(info, { left = Colorize(tostring(itemID) .. ":" .. sourceID .. ":" .. tostring(sourceInfo.visualID), "ffe35832") });
 					end
@@ -10721,7 +10721,7 @@ function app.CompletionistItemCollectionHelper(sourceID, oldState)
 		app:RefreshData(fresh, true);
 	else
 		-- Show the collection message.
-		if app.Settings:GetTooltipSetting("Report:Collected") then
+		if app.IsReady and app.Settings:GetTooltipSetting("Report:Collected") then
 			-- Use the Blizzard API... We don't have this item in the addon.
 			-- NOTE: The itemlink that gets passed is BASE ITEM LINK, not the full item link.
 			-- So this may show green items where an epic was obtained. (particularly with Legion drops)
@@ -10818,7 +10818,7 @@ function app.UniqueModeItemCollectionHelperBase(sourceID, oldState, filter)
 			end
 		else
 			-- Show the collection message.
-			if app.Settings:GetTooltipSetting("Report:Collected") then
+			if app.IsReady and app.Settings:GetTooltipSetting("Report:Collected") then
 				-- Use the Blizzard API... We don't have this item in the addon.
 				-- NOTE: The itemlink that gets passed is BASE ITEM LINK, not the full item link.
 				-- So this may show green items where an epic was obtained. (particularly with Legion drops)
@@ -10878,7 +10878,7 @@ function app.CompletionistItemRemovalHelper(sourceID, oldState)
 		app:RefreshData(fresh, true);
 	else
 		-- Show the collection message.
-		if app.Settings:GetTooltipSetting("Report:Collected") then
+		if app.IsReady and app.Settings:GetTooltipSetting("Report:Collected") then
 			-- Use the Blizzard API... We don't have this item in the addon.
 			-- NOTE: The itemlink that gets passed is BASE ITEM LINK, not the full item link.
 			-- So this may show green items where an epic was obtained. (particularly with Legion drops)
@@ -10976,7 +10976,7 @@ function app.UniqueModeItemRemovalHelperBase(sourceID, oldState, filter)
 			end
 		else
 			-- Show the collection message.
-			if app.Settings:GetTooltipSetting("Report:Collected") then
+			if app.IsReady and app.Settings:GetTooltipSetting("Report:Collected") then
 				-- Use the Blizzard API... We don't have this item in the addon.
 				-- NOTE: The itemlink that gets passed is BASE ITEM LINK, not the full item link.
 				-- So this may show green items where an epic was obtained. (particularly with Legion drops)
