@@ -85,7 +85,7 @@ namespace ATT
             // Key-Value Pair   // Classic Release Version
             { "UNKNOWN", new int[] { 0, 0, 0, 22248 } },   // Unknown, invalid data.
             { "CLASSIC", new int[] { 1, 13, 7, 22248 } },
-            { "TBC", new int[] { 2, 4, 3, 22248 } },
+            { "TBC", new int[] { 2, 5, 4, 22248 } },
             { "WRATH", new int[] { 3, 3, 5, 22248 } },
             { "CATA", new int[] { 4, 3, 4, 22248 } },
             { "MOP", new int[] { 5, 4, 8, 22248 } },
