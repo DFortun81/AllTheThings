@@ -453,7 +453,10 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(4, 1, 4),
 					["groups"] = {
-						i(27686),	-- Recipe: Roasted Moongraze Tenderloin
+						i(27686, {	-- Recipe: Roasted Moongraze Tenderloin
+							["recipeID"] = 33277,	-- Roasted Moongraze Tenderloin
+							["requireSkill"] = COOKING,
+						}),
 					},
 				}),
 				q(10324, {	-- The Great Moongraze Hunt (2/2)

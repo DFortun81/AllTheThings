@@ -9,8 +9,11 @@ _.Zones =
 				n(18427, {	-- Fazu <Tradesman>
 					["coord"] = { 53.4, 56.6, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(22647),	-- Recipe: Crunchy Spider Surprise
+					["groups"] = {
+						i(22647, {	-- Recipe: Crunchy Spider Surprise
+							["requireSkill"] = COOKING,
+							["recipeID"] = 28267,
+						}),
 					},
 				}),
 			}),
