@@ -875,7 +875,10 @@ _.Zones =
 					["provider"] = { "n", 137694 },	-- Parin Tinklocket
 				}),
 				q(49741, {	-- Righteous Retribution
-					["sourceQuests"] = { 49738 },	-- Hands Off My Booty!
+					["sourceQuests"] = {
+						49738,	-- Hands Off My Booty!
+						52787,	-- Numbing the Pain
+					},
 					["coord"] = { 56.4, 61.6, 895 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 142393 },	-- Taelia
