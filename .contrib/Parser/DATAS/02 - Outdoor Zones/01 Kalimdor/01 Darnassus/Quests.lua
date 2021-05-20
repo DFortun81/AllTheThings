@@ -14,13 +14,6 @@ _.Zones =
 					["coord"] = { 43.8, 78.8, 89 },	-- Droha (Darnassus)
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(27273, {	-- An Invitation from Moonglade
-					["isBreadcrumb"] = true,
-					["provider"] = { "n", 4217 },	-- Mathrengyl Bearwalker (Darnassus)
-					["classes"] = { DRUID },
-					["coord"] = { 40.4, 27.6, 89 },	-- Mathrengyl Bearwalker (Darnassus)
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(6342,  {	-- An Unexpected Gift
 					["sourceQuests"] = { 6341 },	-- To Darnassus
 					["provider"] = { "n", 7316 },	-- Sister Aquinne

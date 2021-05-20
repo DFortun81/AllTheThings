@@ -623,6 +623,39 @@ _.ExpansionFeatures =
 							44087,	-- Return to the Fel Hammer
 						},
 					}),
+					q(42736, {	-- Rune Ruination
+						["sourceQuests"] = { 42735 },	-- Malace in Vrykul Land
+						["provider"] = { "n", 108576 },	-- Malace Shade
+						["classes"] = { DEMONHUNTER },
+						["coord"] = { 64.9, 59.0, 634 },
+						["maps"] = { 634 },	-- Stormheim
+						["lvl"] = 110,
+					}),
+					q(42738, {	-- Rune Ruination: Runelord Ragnar
+						["sourceQuests"] = { 42736 },	-- Rune Ruination (must be in log)
+						["provider"] = { "o", 251220 },	-- Ragnar's Runestone
+						["classes"] = { DEMONHUNTER },
+						["coord"] = { 64.9, 58.9, 634 },
+						["maps"] = { 634 },	-- Stormheim
+						["lvl"] = 110,
+					}),
+					q(42739, {	-- Rune Ruination: Runesage Floki
+						["sourceQuests"] = { 42736 },	-- Rune Ruination (must be in log)
+						["provider"] = { "o", 251221 },	-- Floki's Runestone
+						["classes"] = { DEMONHUNTER },
+						["coord"] = { 64.9, 58.9, 634 },
+						["maps"] = { 634 },	-- Stormheim
+						["lvl"] = 110,
+					}),
+					q(42737, {	-- Rune Ruination: Runeskeld Rollo
+						["sourceQuests"] = { 42736 },	-- Rune Ruination (must be in log)
+						["description"] = "If the game doesn't properly display the mob's location, Rollo can be found in the cliffside room at 71.4, 39.0.",
+						["provider"] = { "o", 251218 },	-- Rollo's Runestone
+						["classes"] = { DEMONHUNTER },
+						["coord"] = { 64.9, 58.9, 634 },
+						["maps"] = { 634 },	-- Stormheim
+						["lvl"] = 110,
+					}),
 					q(45330, {	-- Scouting Party
 						["classes"] = { DEMONHUNTER },
 						["sourceQuests"] = { 45301 },	-- Taking Charge
@@ -659,6 +692,18 @@ _.ExpansionFeatures =
 						["classes"] = { DEMONHUNTER },
 						["provider"] = { "n", 95237 },	-- Altruis the Sufferer
 						["sourceQuests"] = { 41060 },	-- Unbridled Power
+					}),
+					q(42749, {	-- Strange Bedfellows
+						["sourceQuests"] = {
+							42738,	-- Rune Ruination: Runelord Ragnar
+							42739,	-- Rune Ruination: Runesage Floki
+							42737,	-- Rune Ruination: Runeskelt Rollo
+						},
+						["provider"] = { "n", 108576 },	-- Malace Shade
+						["classes"] = { DEMONHUNTER },
+						["coord"] = { 64.9, 58.9, 634 },
+						["maps"] = { 634 },	-- Stormheim
+						["lvl"] = 110,
 					}),
 					q(45301, {	-- Taking Charge
 						["classes"] = { DEMONHUNTER },
@@ -814,6 +859,18 @@ _.ExpansionFeatures =
 					q(46940, {	-- Using Lost Knowledge
 						["classes"] = { DEMONHUNTER },
 						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(42752, {	-- Vault of the Wardens: Vault Break-In (not sure why there are 2 versions, but they complete each other)
+						["sourceQuests"] = { 42749 },	-- Strange Bedfellows
+						["classes"] = { DEMONHUNTER },
+						["maps"] = { 634 },	-- Stormheim
+						["lvl"] = 110,
+					}),
+					q(42753, {	-- Vault of the Wardens: Vault Break-In (not sure why there are 2 versions, but they complete each other)
+						["sourceQuests"] = { 42749 },	-- Strange Bedfellows
+						["classes"] = { DEMONHUNTER },
+						["maps"] = { 634 },	-- Stormheim
+						["lvl"] = 110,
 					}),
 					q(41863, {	-- Vengeance Will Be Ours (Altruis)
 						["maps"] = { 627 },	-- Dalaran

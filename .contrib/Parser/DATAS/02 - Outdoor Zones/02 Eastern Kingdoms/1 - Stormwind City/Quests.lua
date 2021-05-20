@@ -525,19 +525,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(2933)),	-- Seal of Wrynn
 					},
 				}),
-				q(27273, {	-- An Invitation from Moonglade
-					["isBreadcrumb"] = true,
-					["providers"] = {
-						{ "n", 5504 },	-- Sheldras Moontree (Stormwind)
-						{ "n", 44395 },	-- Celestine of the Harvest (Stormwind)
-					},
-					["classes"] = { DRUID },
-					["coords"] = {
-						{ 27.6, 50.0, 84 },	-- Sheldras Moontree (Stormwind)
-						{ 57.6, 24.8, 84 },	-- Celestine of the Harvest (Stormwind)
-					},
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(58496, {	-- An Unwelcome Advisor
 					["description"] = "This quest is automatically offered.",
 					["provider"] = { "n", 107574 },	-- Anduin Wrynn <King of Stormwind>

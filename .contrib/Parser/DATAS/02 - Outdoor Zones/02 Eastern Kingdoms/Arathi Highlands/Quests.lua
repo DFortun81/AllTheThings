@@ -253,6 +253,24 @@ _.Zones =
 					["altQuests"] = { 26944 },	-- Exploring Gnomeregan
 					["isBreadcrumb"] = true,
 				}),
+				-- #if AFTER BFA
+				q(6623, {	-- Horde Trauma
+					-- #if AFTER CATA
+					["qg"] = 45540,	-- Krenk Choplimb
+					["coord"] = { 36.9, 87.5, ORGRIMMAR },
+					-- #else
+					["qg"] = 3373,	-- Arnok
+					["coord"] = { 34, 84.6, ORGRIMMAR },
+					-- #endif
+					["maps"] = { ORGRIMMAR },
+					-- #if BEFORE BFA
+					["requireSkill"] = FIRST_AID,
+					-- #endif
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(35, 10, 35),
+				}),
+				-- #endif
 				q(26110, {	-- Just Like Old Times
 					["provider"] = { "n", 2712 },	-- Quae
 					["coord"] = { 54.8, 55.3, 14 },
@@ -635,13 +653,31 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26036,	-- Wand Over Fist
 				}),
-				q(6622,  {	-- Triage
-					["provider"] = { "n", 12920 },	--	Doctor Gregory Victor
-					["coord"] = { 68.4, 37.8, 14 },
-					--["sourceQuest"] = 6623,	-- Horde Trauma (this was the sourceQuest when the quest was First Aid, but doesn't exist now that the quest is for Tailoring)
-					["requireSkill"] = TAILORING,
+				-- #if AFTER BFA
+				q(6622, {	-- Triage (H)
+					["qg"] = 12920,	-- Doctor Gregory Victor
+					["sourceQuest"] = 6623,	-- Horde Trauma
+					-- #if AFTER CATA
+					["coord"] = { 73.4, 36.8, ARATHI_HIGHLANDS },
+					-- #else
+					["coord"] = { 68.5, 37.8, ARATHI_HIGHLANDS },
+					-- #endif
+					["maps"] = { ARATHI_HIGHLANDS },
+					-- #if BEFORE BFA
+					["requireSkill"] = FIRST_AID,
+					-- #endif
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 16991, 1 },	-- Triage Bandage
+					},
+					["lvl"] = lvlsquish(35, 15, 35),
+					["groups"] = {
+						i(49192, {	-- Horde Trauma Certification
+							["timeline"] = { "timeline 3.2.0.10192" },
+						}),
+					},
 				}),
+				-- #endif
 				q(645,   {	-- Trol'kalar
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,

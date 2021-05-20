@@ -638,6 +638,7 @@ _.Zones =
 					},
 				}),
 				n(106655, {	-- Arcanomancer Vridiel <Blacksmithing Trainer>
+					-- TODO: remove this nonsense and put cost on things...
 					["currencyID"] = 1533,	-- Wakening Essences
 					["coord"] = { 45.2, 29.1, 627 },
 					["g"] = {

@@ -164,14 +164,17 @@ _.Zones =
 							["coord"] = { 62.5, 68.2, 634 },
 							["maps"] = { 634 },	-- Stormheim
 						}),
-						q(43528),	-- Planning the Assault NOTE: This quest was removed when The Nighthold opened
+						q(43528, {	-- Planning the Assault
+							-- NOTE: This quest was removed when The Nighthold opened
+							["u"] = REMOVED_FROM_GAME,
+						}),
 						q(43530, {	-- The Nighthold: Delusions of Grandeur
 							["sourceQuest"] = 43898,	-- Preparing to Move
 							["provider"] = { "n", 101083 },	-- Thalrenus Rivertree
 							["coord"] = { 37.8, 47.3, 680 },
 							["maps"] = { 680 },	-- Suramar
 						}),
-						q(43531, {	-- Into the Nighthold
+						q(43531, {	-- The Nighthold: Into the Nighthold
 							["sourceQuest"] = 43898,	-- Preparing to Move
 							["provider"] = { "n", 111826 },	-- Archmage Kalec
 							["coord"] = { 37.8, 47.4, 680 },
