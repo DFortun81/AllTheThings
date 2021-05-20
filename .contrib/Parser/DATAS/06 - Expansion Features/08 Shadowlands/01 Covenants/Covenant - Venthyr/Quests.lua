@@ -16,20 +16,8 @@ _.ExpansionFeatures =
 			},
 			["g"] = {
 				n(QUESTS, sharedData({
-						["customCollect"] = { "SL_COV_VEN", },	-- Venthyr
-						}, {
-					n(-908, sharedData({["customCollect"] = { "SL_COV_VEN" } },{	-- Rewards - Venthyr
-					--	TODO: make a renown header?  putting these here instead of making a "rewards" sub-file since renown is earned mostly through quests.  i am not opposed to having a 'renown' section for covenants with the things explicitly rewarded (not "unlocks the ability to purchase X") by reaching certain renown levels, especially with more coming in 9.1
-						i(182332, {	-- Gravestone Battle Armor
-							["description"] = "Requires Renown 39.",
-						}),
-						title(429, {	-- Count
-							["description"] = "Requires Renown 40.",
-						}),
-						title(430, {	-- Countess
-							["description"] = "Requires Renown 40.",
-						}),
-					})),
+					["customCollect"] = { "SL_COV_VEN", },	-- Venthyr
+					}, {
 					q(57889, {	-- "Accidental" Arson
 						["sourceQuests"] = { 57887 },	-- Killing the Messenger
 						["provider"] = { "n", 159694 },	-- The Countess
