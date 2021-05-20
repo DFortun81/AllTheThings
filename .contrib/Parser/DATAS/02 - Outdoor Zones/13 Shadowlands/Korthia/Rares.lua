@@ -54,6 +54,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 59.7, 43.3, KORTHIA },
 					["crs"] = {
+						180079,	-- Cadaverous
 						180064,	-- Corpse Heap
 						180057,	-- Restless Necromancer
 					},
@@ -76,6 +77,7 @@ _.Zones =
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 						--]]
+						i(187183),	-- Rampaging Mauler (MOUNT!)
 					},
 				}),
 				n(179108, {	-- Kroke the Tormented
@@ -106,6 +108,7 @@ _.Zones =
 						crit(2, {	-- Hunting the Hunter
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
+						i(186645),	-- Crimson Shardhide (MOUNT!)
 					},
 				}),
 				n(179931, {	-- Relic Breaker Krelva

@@ -7,22 +7,9 @@ _.Zones =
 	m(SHADOWLANDS, {
 		m(KORTHIA, {
 			n(-212, {	-- Treasure Chest
+			--	TODO: (?) korthian relic boxes currently do not have questIDs and don't actually even disappear immediately when you open them - if quests for them get implemented, they need to be added
 				i(185962, {	-- Rune Chit
 					["sourceQuests"] = { 64506 },	-- What Must Be Found
-				}),
-			--	Guise of the Changeling, Ring of Self-Reflection come from Korthian Relic Boxes.
-				i(187047, {	-- Guise of the Changeling
-				--	came from Korthian Relic Box at 43.8, 76.9
-					["sourceQuests"] = { 64511 },	-- Missing Relics
-					["questID"] = 63909,	-- Guise of the Changeling
-				}),
-				i(187119, {	-- Ring of Self Reflection
-				--	came from Korthian Relic Box at 41.2, 43.2 (in cave)
-					["sourceQuests"] = { 64511 },	-- Missing Relics
-					["questID"] = 63921,	-- Ring of Self-Reflection
-					["g"] = {
-						i(187140),	-- Ring of Duplicity
-					},
 				}),
 				o(369194, {	-- Anima Laden Egg
 					["description"] = "In a tree.",
@@ -77,34 +64,89 @@ _.Zones =
 					["questID"] = 64351,
 					["isDaily"] = true,
 					["coord"] = { 54.2, 41.2, KORTHIA },
+					["g"] = {
+						i(187153),	-- Tasty Mawshroom
+					},
 				}),
 				o(369329, {	-- Invasive Mawshroom
 					["questID"] = 64354,
 					["isDaily"] = true,
 					["coord"] = { 53.7, 37.9, KORTHIA },
+					["g"] = {
+						i(187153),	-- Tasty Mawshroom
+					},
 				}),
 				o(369330, {	-- Invasive Mawshroom
 					["questID"] = 64355,
 					["isDaily"] = true,
 					["coord"] = { 45.6, 34.3, KORTHIA },
+					["g"] = {
+						i(187153),	-- Tasty Mawshroom
+					},
 				}),
 				o(369331, {	-- Invasive Mawshroom
 					["questID"] = 64356,
 					["isDaily"] = true,
 					["coord"] = { 39.7, 34.8, KORTHIA },
+					["g"] = {
+						i(187153),	-- Tasty Mawshroom
+					},
 				}),
 				o(369332, {	-- Invasive Mawshroom
 					["questID"] = 64357,
 					["isDaily"] = true,
 					["coord"] = { 39.6, 30.0, KORTHIA },
+					["g"] = {
+						i(187153),	-- Tasty Mawshroom
+					},
 				}),
 				o(369185, {	-- Korthian Relic Box
-				--	does not currently have a lockout - doesn't even disappear when you open it
-					["coord"] = { 41.2, 43.2, KORTHIA },	-- cave entrance
+					["description"] = "In the cave.",
+					["coord"] = { 41.2, 43.2, KORTHIA },
+					["cost"] = { { "i", 186984, 1 } },	-- Korthian Archivists' Key
+					["g"] = {
+						i(187119, {	-- Ring of Self Reflection
+							["sourceQuests"] = { 64511 },	-- Missing Relics
+							["questID"] = 63921,	-- Ring of Self-Reflection
+							["g"] = {
+								i(187140, {	-- Ring of Duplicity
+									["collectible"] = false,
+								}),
+							},
+						}),
+					},
+				}),
+				o(369245, {	-- Korthian Relic Box
+					["description"] = "On the edge of the lower cliff.",
+					["coord"] = { 33.0, 41.9, KORTHIA },
+					["cost"] = { { "i", 186984, 1 } },	-- Korthian Archivists' Key
+					["g"] = {
+						i(187052, {	-- The Netherstar
+							["sourceQuests"] = { 64511 },	-- Missing Relics
+							["questID"] = 63910,	-- The Netherstar
+						}),
+					},
 				}),
 				o(369304, {	-- Korthian Relic Box
-				--	does not currently have a lockout - doesn't even disappear when you open it
 					["coord"] = { 43.8, 76.9, KORTHIA },
+					["cost"] = { { "i", 186984, 1 } },	-- Korthian Archivists' Key
+					["g"] = {
+						i(187047, {	-- Guise of the Changeling
+							["sourceQuests"] = { 64511 },	-- Missing Relics
+							["questID"] = 63909,	-- Guise of the Changeling
+						}),
+					},
+				}),
+				o(369340, {	-- Korthian Relic Box
+					["description"] = "In the cave.",
+					["coord"] = { 43.5, 57.4, KORTHIA },
+					["cost"] = { { "i", 186984, 1 } },	-- Korthian Archivists' Key
+					["g"] = {
+						i(187150, {	-- Gorak Claw Fetish
+							["sourceQuests"] = { 64511 },	-- Missing Relics
+							["questID"] = 63924,	-- Gorak Claw Fetish
+						}),
+					},
 				}),
 				o(369172, {	-- Lost Memento
 				--	["questID"] = 64238,

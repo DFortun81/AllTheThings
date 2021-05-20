@@ -9,28 +9,59 @@ _.Zones =
 			n(VENDORS, {
 				n(178257, {	-- Archivist Roh-Suir
 					["coord"] = { 61.6, 21.7, KORTHIA },
-					["g"] = {	-- TODO - verify */NYI/PH items once it goes live
-						i(187148),	-- Codex of Untapped Soulbinding - PH*
-						i(187134),	-- Spatial Realignment Apparatus mk2 NYI*
+					["g"] = {
+						i(187134, {	-- Alloy-Warping Facetor
+							["cost"] = { { "c", 1931, 5000 } },	-- 5,000x Catalogued Research
+						}),
+						i(187148, {	-- Death-Bound Shard
+							["cost"] = { { "c", 1931, 3000 } },	-- 3,000x Catalogued Research
+						}),
 						--
-						i(186470),	-- Recipe: Crafter's Mark of the Chained Isle
-						i(186717),	-- Research Report: Adaptive Alloys
+						i(186470, {	-- Recipe: Crafter's Mark of the Chained Isle
+							["cost"] = { { "c", 1931, 2500 } },	-- 2,500x Catalogued Research
+						}),
+						i(186717, {	-- Research Report: Adaptive Alloys
+							["cost"] = { { "c", 1931, 4000 } },	-- 4,000x Catalogued Research
+						}),
 						i(186714, {	-- Research Report: All-Seeing Crystal
 							["questID"] = 64339,
+							["cost"] = { { "c", 1931, 100 } },	-- 100x Catalogued Research
 						}),
-						i(186716),	-- Research Report: Ancient Shrines
-						i(187136),	-- Research Report: Careful Examination
-						i(187138),	-- Research Report: First Alloys
-						i(187137),	-- Research Report: Relic Finding Techniques
-						i(187145),	-- Treatise: Recognizing Stygia and its Uses
-						i(186721),	-- Treatise: Relics Abound in the Shadowlands
-						i(186722),	-- Treatise: The Study of Anima and Harnessing Every Drop
+						i(186716, {	-- Research Report: Ancient Shrines
+							["cost"] = { { "c", 1931, 1000 } },	-- 1,000x Catalogued Research
+						}),
+						i(187136, {	-- Research Report: Careful Examination
+							["cost"] = { { "c", 1931, 4000 } },	-- 4,000x Catalogued Research
+						}),
+						i(187138, {	-- Research Report: First Alloys
+							["cost"] = { { "c", 1931, 8000 } },	-- 8,000x Catalogued Research
+						}),
+						i(187137, {	-- Research Report: Relic Finding Techniques
+							["cost"] = { { "c", 1931, 5000 } },	-- 5,000x Catalogued Research
+						}),
+						i(187145, {	-- Treatise: Recognizing Stygia and its Uses
+							["cost"] = { { "c", 1931, 2000 } },	-- 2,000x Catalogued Research
+						}),
+						i(186721, {	-- Treatise: Relics Abound in the Shadowlands
+							["cost"] = { { "c", 1931, 2000 } },	-- 2,000x Catalogued Research
+						}),
+						i(186722, {	-- Treatise: The Study of Anima and Harnessing Every Drop
+							["cost"] = { { "c", 1931, 2000 } },	-- 2,000x Catalogued Research
+						}),
 						--
-						i(186984),	-- Korthian Archivists' Key
-						i(186731),	-- Repaired Riftkey
-						i(186718),	-- Teleporter Repair Kit
+						i(186984, {	-- Korthian Archivists' Key
+							["cost"] = { { "c", 1931, 25 } },	-- 25x Catalogued Research
+						}),
+						i(186731, {	-- Repaired Riftkey
+							["cost"] = { { "c", 1931, 100 } },	-- 100x Catalogued Research
+						}),
+						i(186718, {	-- Teleporter Repair Kit
+							["cost"] = { { "c", 1931, 50 } },	-- 50x Catalogued Research
+						}),
 						--
-						i(186991),	-- Transmute: Stones to Ore
+						i(186991, {	-- Transmute: Stones to Ore
+							["cost"] = { { "c", 1931, 2500 } },	-- 2,500x Catalogued Research
+						}),
 					},
 				}),
 				n(179321, {	-- Duchess Mynx <Death's Advance Quartermaster>
@@ -40,12 +71,26 @@ _.Zones =
 						i(186647, {	-- Amber Shardhide (MOUNT!)
 							["cost"] = { { "c", 1767, 5000 } },	-- 5,000x Stygia
 						}),
+						i(186480, {	-- Battle-Hardened Aquilon
+							["customCollect"] = "SL_COV_KYR",	-- Kyrian-only
+							["cost"] = { { "c", 1767, 1000 } },	-- 1,000x Stygia
+						}),
+						i(186490, {	-- Battlefield Swarmer
+							["customCollect"] = "SL_COV_NEC",	-- Necrolord-only
+							["cost"] = { { "c", 1767, 1000 } },	-- 1,000x Stygia
+						}),
 						i(186477, {	-- Pale Gravewing (MOUNT!)
+							["customCollect"] = "SL_COV_VEN",	-- Venthyr-only
 							["cost"] = { { "c", 1767, 1000 } },	-- 1,000x Stygia
 						}),
 						i(186648, {	-- Soaring Razorwing (MOUNT!)
 							["cost"] = { { "c", 1767, 7500 } },	-- 7,500x Stygia
 						}),
+						i(186495, {	-- Winter Wilderling (MOUNT!)
+							["customCollect"] = "SL_COV_NFA",	-- Night Fae-only
+							["cost"] = { { "c", 1767, 1000 } },	-- 1,000x Stygia
+						}),
+						--
 						i(186997, {	-- Death's Advance Tabard
 							["cost"] = { { "c", 1767, 3000 } },	-- 3,000x Stygia
 						}),
@@ -172,7 +217,7 @@ _.Zones =
 								f(7,    {	-- Plate
 								}),
 								n(-319, {	-- Weapons
-									i(185890),	-- Korthian Caretaker's Kris
+									i(185890),	-- Korthian Caretaker's Kris*
 									i(185888),	-- Korthian Caretaker's Orb
 									i(185900),	-- Korthian Caretaker's Rod
 									i(185900),	-- Korthian Caretaker's Stave*
@@ -184,6 +229,7 @@ _.Zones =
 								}),
 							},
 						}),
+						--
 						i(186543, {	-- Domestic Aunian (PET!)
 							["cost"] = {
 								{ "i", 163036, 50 },	-- 50x Polished Pet Charm
@@ -196,6 +242,10 @@ _.Zones =
 						i(186453, {	-- Vault Anima Tracker
 							["questID"] = 64061,
 							["cost"] = { { "c", 1767, 1000 } },	-- 1,000x Stygia
+						}),
+						--
+						i(186995, {	-- Pattern: Shrouded Hand Towel
+							["cost"] = { { "c", 1767, 300 } },	-- 300x Stygia
 						}),
 					},
 				}),

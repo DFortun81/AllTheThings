@@ -7,7 +7,16 @@ _.Zones =
 	m(SHADOWLANDS, {
 		m(KORTHIA, {
 			n(-77, {	-- Special
-			--	TODO: finish figuring out maelie shit/darkmaul shit/matriarch nest shit ahhhhh
+			--	TODO: finish figuring out maelie shit/matriarch nest shit ahhhhh
+			--	seems a little wonky atm, i think this is probably intended to be at least a daily lockout but i was able to find maelie like 4x today in the same place because the quest kept resetting
+				n(180063, {	-- Darkmaul
+					["description"] = "Collect |cFFFFFFFFTasty Mawshrooms|r from the daily Invasive Mawshroom treasures in Korthia and feed them to Darkmaul.",
+					["coord"] = { 42.8, 32.7, KORTHIA },
+					["cost"] = { { "i", 187153, 5 } },	-- TODO: not sure if 5 is the correct number!  i am bad at counting!
+					["g"] = {
+						i(186646),	-- Darkmaul (MOUNT!)
+					},
+				}),
 				n(-977, {	-- Maelie the Wanderer
 				--	["description"] = "",
 					["questID"] = 64298,	-- daily Maelie find
@@ -18,7 +27,7 @@ _.Zones =
 						{ 49.3, 41.8, KORTHIA },
 						{ 59.8, 15.1, KORTHIA },
 					},
-				--	["icon"] = ,	-- maelie icon unknown atm
+					["icon"] = 3155422,
 					["cr"] = 179912,	-- Maelie the Wanderer
 					["g"] = {
 						q(64293, {	-- Day 1
@@ -35,6 +44,17 @@ _.Zones =
 						}),
 						q(64297, {	-- Day 5
 							["name"] = "Day 5",
+						}),
+						q(64299, {	-- Day 6
+							["name"] = "Day 6",
+						}),
+						q(64292, {	-- Maelie, The Wanderer
+							["description"] = "After you find Maelie 6 times, return to Tinybell and accept responsibility for the wayward unicorn.",
+							["provider"] = { "n", 179930 },	-- Tinybell
+							["coord"] = { 60.7, 21.8, KORTHIA },
+							["g"] = {
+								i(186643),	-- Reins of the Wanderer (MOUNT!)
+							},
 						}),
 						--[[
 						q(, {	-- 

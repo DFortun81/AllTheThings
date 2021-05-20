@@ -42,10 +42,16 @@ _.Zones =
 				}),
 			--	Korthian Relics (putting here barring a better place for them)
 				i(187322),	-- Crumbling Stone Tablet
+				i(187327),	-- Encrypted Korthian Journal
 				i(187325),	-- Faded Razorwing Anatomy Illustration
+				i(187324),	-- Gnawed Ancient Idol
 				i(187335),	-- Maldraxxus Larva Shell
 				i(187323),	-- Runic Diagram
 				i(187331),	-- Tattered Fae Designs
+			--	Cosmetics (not sure if this should go here or under Wild Worldcracker)
+				i(187252, {	-- Ritualist's Spiked Mantle
+					["crs"] = { 180030 },	-- Opportunistic Corruptor (mob that spawns during the Popo's Potion Patrol/Wild Worldcracker event)
+				}),
 			--	Greens
 				i(186123),	-- Foresworn Scout's Coif
 				i(186124),	-- Foresworn Scout's Greaves

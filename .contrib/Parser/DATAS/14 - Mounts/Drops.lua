@@ -52,7 +52,9 @@ _.Mounts =
 		i(95059),	-- Clutch of Ji-Kun
 		i(94228),	-- Cobalt Primordial Direhorn
 		i(163583),  -- Craghorn Chasm-Leaper
+		i(186645),	-- Crimson Shardhide
 		i(152905),	-- Crimson Slavermaw
+		i(186646),	-- Darkmaul
 		i(152843),	-- Darkspore Mana Ray Mount
 		i(182209),	-- Desire's Battle Gargon
 		i(174641),	-- Drake of the Four Winds
@@ -113,7 +115,8 @@ _.Mounts =
 		i(163646),	-- Lil' Donkey
 		i(138258),	-- Long-Forgotten Hippogryph
 		i(151623),	-- Lucid Nightmare Mount [Note: Drop's from Puzzler's Demise; a puzzle mount similar to Kosumoth, Riddler's Mind Worm and Sun Darter Hatchling]
-		i(152814),	-- Maddened Chaorunner
+		i(152814),	-- Maddened Chaosrunner
+		i(186643),	-- Maelie The Wanderer
 		i(174653),	-- Mail Muncher
 		i(184167),	-- Mawsworn Soulhunter
 		i(174769),	-- Malevolent Drone
@@ -140,6 +143,7 @@ _.Mounts =
 		}),
 		i(69224),	-- Pureblood Fire Hawk
 		i(163582),  -- Qinsho's Eternal Hound
+		i(187183),	-- Rampaging Mauler
 		i(32768),	-- Raven Lord
 		i(94291),	-- Red Primal Raptor
 		i(21321),	-- Red Qiraji Battle Tank

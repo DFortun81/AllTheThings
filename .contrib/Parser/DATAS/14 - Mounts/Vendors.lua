@@ -43,6 +43,12 @@ _.Mounts =
 			["cost"] = { { "c", 1717, 200 }, },	-- 200x 7th Legion Service Medal
 		}),
 		i(81354),	-- Azure Water Strider
+		i(186480, {	-- Battle-Hardened Aquilon
+			["customCollect"] = "SL_COV_KYR",	-- Kyrian covenant only
+		}),
+		i(186490, {	-- Battlefield Swarmer
+			["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant only
+		}),
 		i(167894),	-- Beastlord's Irontusk
 		i(167895),	-- Beastlord's Warwolf
 		i(152795),	-- Beryl Ruinstrider
@@ -304,7 +310,9 @@ _.Mounts =
 		i(47101),	-- Ochre Skeletal Warhorse
 		i(45595),	-- Orgrimmar Wolf
 		i(180726),	-- Pale Acidmaw
-		i(186477),	-- Pale Gravewing
+		i(186477, {	-- Pale Gravewing
+			["customCollect"] = "SL_COV_VEN",	-- Venthyr-only
+		}),
 		i(116776),	-- Pale Thorngrazer
 		i(163589),	-- Palehide Direhorn
 		i(180762, {	-- Phalynx of Humility
@@ -553,6 +561,9 @@ _.Mounts =
 		i(116671),	-- Wild Goretusk
 		i(40775, {	-- Winged Steed of the Ebon Blade [Death Knight Only]
 			["classes"] = { DEATHKNIGHT },
+		}),
+		i(186495, {	-- Winter Wilderling
+			["customCollect"] = "SL_COV_NFA",	-- Night Fae-only
 		}),
 		i(180415, {	-- Winterborn Runestag
 			["customCollect"] = "SL_COV_NFA",	-- Night Fae covenant only
