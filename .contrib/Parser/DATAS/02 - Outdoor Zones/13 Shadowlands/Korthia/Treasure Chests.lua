@@ -8,6 +8,7 @@ _.Zones =
 		m(KORTHIA, {
 			n(-212, {	-- Treasure Chest
 			--	TODO: (?) korthian relic boxes currently do not have questIDs and don't actually even disappear immediately when you open them - if quests for them get implemented, they need to be added
+				i(187216),	-- Soultwining Crescent
 				i(185962, {	-- Rune Chit
 					["sourceQuests"] = { 64506 },	-- What Must Be Found
 				}),

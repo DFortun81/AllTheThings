@@ -7,6 +7,7 @@ _.Zones =
 		m(KORTHIA, {
 			n(RARES, {
 			--	TODO: visual presentation of achievement criteria does not currently match its output - 2 criteria in the middle are missing, pushing everything else 2 spaces away and making the last 2 criteria not show up at all.  check back and ensure everything is correct
+				i(187216),	-- Soultwining Crescent
 				n(179769, {	-- Consumption
 				--	triggered 64280 and 64281 on my first kill, on subsequent days it's no longer 'rare,' and no quests pop, and it's also not lootable and doesn't grant achievement credit.  probably bugged but i'm not sure which quest to attach
 				--	^ 64243 pops now but it still doesn't grant achievement credit, so not sure if this will change
@@ -43,9 +44,11 @@ _.Zones =
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 						i(187278, {	-- Talon-Pierced Mawsworn Lockbox
-							["description"] = "Can contain items from the Korthian sets.",
+						--	["description"] = "Can contain items from the Korthian sets.",	-- actually not sure about this, i've just gotten 1 specific item so far that doesn't seem to be part of the sets
+							["g"] = {
+								i(187395),	-- Reinforced Stygian Spaulders
+							},
 						}),
-						i(187216),	-- Soultwining Crescent	TODO - unsure if this is specific to this rare or if it can drop from anywhere, may need to move
 					},
 				}),
 				n(180042, {	-- Fleshwing
