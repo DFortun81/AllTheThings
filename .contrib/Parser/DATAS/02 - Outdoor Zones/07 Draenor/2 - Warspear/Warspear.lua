@@ -1512,6 +1512,7 @@ _.Zones =
 							},
 						}),
 						n(93917, {	-- Malukah Lightsong <Warmongering Gladiator>
+							["races"] = HORDE_ONLY,	-- to hide it in Mark of Honor list
 							["coord"] = { 48.9, 57.3, 624 },
 							["g"] = {
 								n(-319, {	-- Weapons
@@ -2412,556 +2413,507 @@ _.Zones =
 						}),
 						n(93916, {	-- Tae'loxe Soulshrivel <Warmongering Combatant>
 							["g"] = {
-								n(-660, {	-- Combatant PvP Gear
-									n(-319, {	-- Weapons
-										i(138626, {	-- Arsenal: Primal Combatant's Weapons (H)
-											["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-											["sym"] = { {"sub", "pvp_weapons_faction_ensemble", -9981, -679, -9913, -660 }, },
-										}),
-										i(119866, {	-- Primal Combatant's Barrier (H)
-											["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-										}),
-										i(115067, {	-- Primal Combatant's Baton of Light (H)
-											["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-										}),
-										i(115069, {	-- Primal Combatant's Battle Staff (H)
-											["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-										}),
-										i(115134, {	-- Primal Combatant's Bonecracker (H)
-											["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-										}),
-										i(115137, {	-- Primal Combatant's Bonegrinder (H)
-											["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-										}),
-										i(115024, {	-- Primal Combatant's Cleaver (H)
-											["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-										}),
-										i(115136, {	-- Primal Combatant's Decapitator (H)
-											["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-										}),
-										i(119858, {	-- Primal Combatant's Endgame (H)
-											["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-										}),
-										i(115070, {	-- Primal Combatant's Energy Staff (H)
-											["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-										}),
-										i(115065, {	-- Primal Combatant's Gavel (H)
-											["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-										}),
-										i(115138, {	-- Primal Combatant's Greatsword (H)
-											["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-										}),
-										i(115132, {	-- Primal Combatant's Hacker (H)
-											["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-										}),
-										i(115029, {	-- Primal Combatant's Longbow (H)
-											["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-										}),
-										i(115032, {	-- Primal Combatant's Pike (H)
-											["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-										}),
-										i(115027, {	-- Primal Combatant's Pummeler (H)
-											["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-										}),
-										i(115028, {	-- Primal Combatant's Quickblade (H)
-											["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-										}),
-										i(119865, {	-- Primal Combatant's Redoubt (H)
-											["cost"] = { { "i", 137642, 2 } },	-- 5x Mark of Honor
-										}),
-										i(115133, {	-- Primal Combatant's Render (H)
-											["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-										}),
-										i(119859, {	-- Primal Combatant's Reprieve (H)
-											["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-										}),
-										i(115031, {	-- Primal Combatant's Rifle (H)
-											["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-										}),
-										i(115026, {	-- Primal Combatant's Ripper (H)
-											["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-										}),
-										i(115025, {	-- Primal Combatant's Shanker (H)
-											["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-										}),
-										i(119925, {	-- Primal Combatant's Shield Wall (H)
-											["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-										}),
-										i(115135, {	-- Primal Combatant's Slicer (H)
-											["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-										}),
-										i(115064, {	-- Primal Combatant's Spellblade (H)
-											["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-										}),
-										i(115033, {	-- Primal Combatant's Staff (H)
-											["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-										}),
-										i(115068, {	-- Primal Combatant's Touch of Defeat (H)
-											["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-										}),
+								n(-319, {	-- Weapons
+									i(138627, {	-- Arsenal: Warmongering Combatant's Weapons (H)
+										["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
+										["sym"] = { {"sub", "pvp_weapons_faction_ensemble", -9981, -681, -9913, -660 }, },
 									}),
-									cl(DEATHKNIGHT, {
-										i(138614, {	-- Ensemble: Primal Combatant's Dreadplate Armor (H)
-											["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-											["sym"] = {
-												{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 6 },
-												{"select", "itemID", 119898 },	-- Primal Combatant's Armplates of Cruelty (H)
-												{"select", "itemID", 119894 },	-- Primal Combatant's Girdle of Cruelty (H)
-												{"select", "itemID", 119896 },	-- Primal Combatant's Warboots of Cruelty (H)
-											},
-										}),
-										i(119839, {	-- Primal Combatant's Dreadplate Chestpiece (H)
-											["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-										}),
-										i(119840, {	-- Primal Combatant's Dreadplate Gauntlets (H)
-											["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-										}),
-										i(119841, {	-- Primal Combatant's Dreadplate Helm (H)
-											["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-										}),
-										i(119842, {	-- Primal Combatant's Dreadplate Legguards (H)
-											["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-										}),
-										i(119843, {	-- Primal Combatant's Dreadplate Shoulders (H)
-											["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-										}),
+									i(126542, {	-- Warmongering Combatant's Barrier (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
-									cl(DRUID, {
-										i(138618, {	-- Ensemble: Primal Combatant's Dragonhide Armor (H)
-											["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-											["sym"] = {
-												{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 11 },
-												{"select", "itemID", 119871 },	-- Primal Combatant's Bindings of Cruelty (H)
-												{"select", "itemID", 119868 },	-- Primal Combatant's Belt of Cruelty (H)
-												{"select", "itemID", 119869 },	-- Primal Combatant's Boots of Cruelty (H)
-											},
-										}),
-										i(119844, {	-- Primal Combatant's Dragonhide Gloves (H)
-											["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-										}),
-										i(119845, {	-- Primal Combatant's Dragonhide Helm (H)
-											["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-										}),
-										i(119846, {	-- Primal Combatant's Dragonhide Legguards (H)
-											["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-										}),
-										i(119847, {	-- Primal Combatant's Dragonhide Robes (H)
-											["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-										}),
-										i(119848, {	-- Primal Combatant's Dragonhide Spaulders (H)
-											["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-										}),
+									i(126522, {	-- Warmongering Combatant's Baton of Light (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 									}),
-									cl(HUNTER, {
-										i(138580, {	-- Ensemble: Primal Combatant's Chain Armor (H)
-											["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-											["sym"] = {
-												{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 3 },
-												{"select", "itemID", 119883 },	-- Primal Combatant's Armbands of Cruelty (H)
-												{"select", "itemID", 119878 },	-- Primal Combatant's Waistguard of Cruelty (H)
-												{"select", "itemID", 119880 },	-- Primal Combatant's Footguards of Cruelty (H)
-											},
-										}),
-										i(119849, {	-- Primal Combatant's Chain Armor (H)
-											["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-										}),
-										i(119850, {	-- Primal Combatant's Chain Gauntlets (H)
-											["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-										}),
-										i(119851, {	-- Primal Combatant's Chain Helm (H)
-											["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-										}),
-										i(119852, {	-- Primal Combatant's Chain Leggings (H)
-											["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-										}),
-										i(119853, {	-- Primal Combatant's Chain Spaulders (H)
-											["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-										}),
+									i(126524, {	-- Warmongering Combatant's Battle Staff (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 									}),
-									cl(MAGE, {
-										i(138582, {	-- Ensemble: Primal Combatant's Silk Armor (H)
-											["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-											["sym"] = {
-												{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 8 },
-												{"select", "itemID", 119838 },	-- Primal Combatant's Cuffs of Cruelty (H)
-												{"select", "itemID", 119833 },	-- Primal Combatant's Cord of Cruelty (H)
-												{"select", "itemID", 119835 },	-- Primal Combatant's Treads of Cruelty (H)
-											},
-										}),
-										i(119877, {	-- Primal Combatant's Silk Amice (H)
-											["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-										}),
-										i(119874, {	-- Primal Combatant's Silk Cowl (H)
-											["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-										}),
-										i(119873, {	-- Primal Combatant's Silk Handguards (H)
-											["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-										}),
-										i(119876, {	-- Primal Combatant's Silk Robe (H)
-											["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-										}),
-										i(119875, {	-- Primal Combatant's Silk Trousers (H)
-											["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-										}),
+									i(126608, {	-- Warmongering Combatant's Bonecracker (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 									}),
-									cl(MONK, {
-										i(138620, {	-- Ensemble: Primal Combatant's Ironskin Armor (H)
-											["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-											["sym"] = {
-												{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 10 },
-												{"select", "itemID", 119871 },	-- Primal Combatant's Bindings of Cruelty (H)
-												{"select", "itemID", 119868 },	-- Primal Combatant's Belt of Cruelty (H)
-												{"select", "itemID", 119869 },	-- Primal Combatant's Boots of Cruelty (H)
-											},
-										}),
-										i(119884, {	-- Primal Combatant's Ironskin Gloves (H)
-											["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-										}),
-										i(119885, {	-- Primal Combatant's Ironskin Helm (H)
-											["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-										}),
-										i(119886, {	-- Primal Combatant's Ironskin Legguards (H)
-											["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-										}),
-										i(119887, {	-- Primal Combatant's Ironskin Spaulders (H)
-											["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-										}),
-										i(119888, {	-- Primal Combatant's Ironskin Tunic (H)
-											["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-										}),
+									i(126611, {	-- Warmongering Combatant's Bonegrinder (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 									}),
-									cl(PALADIN, {
-										i(138616, {	-- Ensemble: Primal Combatant's Scaled Armor (H)
-											["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-											["sym"] = {
-												{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 2 },
-												{"select", "itemID", 119898 },	-- Primal Combatant's Armplates of Cruelty (H)
-												{"select", "itemID", 119894 },	-- Primal Combatant's Girdle of Cruelty (H)
-												{"select", "itemID", 119896 },	-- Primal Combatant's Warboots of Cruelty (H)
-											},
-										}),
-										i(119889, {	-- Primal Combatant's Scaled Chestpiece (H)
-											["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-										}),
-										i(119890, {	-- Primal Combatant's Scaled Gauntlets (H)
-											["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-										}),
-										i(119891, {	-- Primal Combatant's Scaled Helm (H)
-											["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-										}),
-										i(119892, {	-- Primal Combatant's Scaled Legguards (H)
-											["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-										}),
-										i(119893, {	-- Primal Combatant's Scaled Shoulders (H)
-											["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-										}),
+									i(127378, {	-- Warmongering Combatant's Chopper (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 									}),
-									cl(PRIEST, {
-										i(138584, {	-- Ensemble: Primal Combatant's Satin Armor (H)
-											["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-											["sym"] = {
-												{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 5 },
-												{"select", "itemID", 119838 },	-- Primal Combatant's Cuffs of Cruelty (H)
-												{"select", "itemID", 119833 },	-- Primal Combatant's Cord of Cruelty (H)
-												{"select", "itemID", 119835 },	-- Primal Combatant's Treads of Cruelty (H)
-											},
-										}),
-										i(119900, {	-- Primal Combatant's Satin Gloves (H)
-											["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-										}),
-										i(119901, {	-- Primal Combatant's Satin Hood (H)
-											["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-										}),
-										i(119902, {	-- Primal Combatant's Satin Leggings (H)
-											["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-										}),
-										i(119904, {	-- Primal Combatant's Satin Mantle (H)
-											["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-										}),
-										i(119903, {	-- Primal Combatant's Satin Robe (H)
-											["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-										}),
+									i(126476, {	-- Warmongering Combatant's Cleaver (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 									}),
-									cl(ROGUE, {
-										i(138622, {	-- Ensemble: Primal Combatant's Leather Armor (H)
-											["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-											["sym"] = {
-												{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 4 },
-												{"select", "itemID", 119871 },	-- Primal Combatant's Bindings of Cruelty (H)
-												{"select", "itemID", 119868 },	-- Primal Combatant's Belt of Cruelty (H)
-												{"select", "itemID", 119869 },	-- Primal Combatant's Boots of Cruelty (H)
-											},
-										}),
-										i(119906, {	-- Primal Combatant's Leather Gloves (H)
-											["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-										}),
-										i(119907, {	-- Primal Combatant's Leather Helm (H)
-											["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-										}),
-										i(119908, {	-- Primal Combatant's Leather Legguards (H)
-											["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-										}),
-										i(119909, {	-- Primal Combatant's Leather Spaulders (H)
-											["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-										}),
-										i(119905, {	-- Primal Combatant's Leather Tunic (H)
-											["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-										}),
+									i(126610, {	-- Warmongering Combatant's Decapitator (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 									}),
-									cl(SHAMAN, {
-										i(138578, {	-- Ensemble: Primal Combatant's Ringmail Armor (H)
-											["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-											["sym"] = {
-												{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 7 },
-												{"select", "itemID", 119883 },	-- Primal Combatant's Armbands of Cruelty (H)
-												{"select", "itemID", 119878 },	-- Primal Combatant's Waistguard of Cruelty (H)
-												{"select", "itemID", 119880 },	-- Primal Combatant's Footguards of Cruelty (H)
-											},
-										}),
-										i(119910, {	-- Primal Combatant's Ringmail Armor (H)
-											["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-										}),
-										i(119911, {	-- Primal Combatant's Ringmail Gauntlets (H)
-											["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-										}),
-										i(119912, {	-- Primal Combatant's Ringmail Helm (H)
-											["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-										}),
-										i(119913, {	-- Primal Combatant's Ringmail Leggings (H)
-											["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-										}),
-										i(119915, {	-- Primal Combatant's Ringmail Spaulders (H)
-											["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-										}),
+									i(126534, {	-- Warmongering Combatant's Endgame (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
-									cl(WARLOCK, {
-										i(138586, {	-- Ensemble: Primal Combatant's Felweave Armor (H)
-											["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-											["sym"] = {
-												{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 9 },
-												{"select", "itemID", 119838 },	-- Primal Combatant's Cuffs of Cruelty (H)
-												{"select", "itemID", 119833 },	-- Primal Combatant's Cord of Cruelty (H)
-												{"select", "itemID", 119835 },	-- Primal Combatant's Treads of Cruelty (H)
-											},
-										}),
-										i(119942, {	-- Primal Combatant's Felweave Amice (H)
-											["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-										}),
-										i(119939, {	-- Primal Combatant's Felweave Cowl (H)
-											["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-										}),
-										i(119938, {	-- Primal Combatant's Felweave Handguards (H)
-											["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-										}),
-										i(119941, {	-- Primal Combatant's Felweave Raiment (H)
-											["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-										}),
-										i(119940, {	-- Primal Combatant's Felweave Trousers (H)
-											["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-										}),
+									i(126525, {	-- Warmongering Combatant's Energy Staff (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 									}),
-									cl(WARRIOR, {
-										i(138612, {	-- Ensemble: Primal Combatant's Plate Armor (H)
-											["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-											["sym"] = {
-												{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 1 },
-												{"select", "itemID", 119898 },	-- Primal Combatant's Armplates of Cruelty (H)
-												{"select", "itemID", 119894 },	-- Primal Combatant's Girdle of Cruelty (H)
-												{"select", "itemID", 119896 },	-- Primal Combatant's Warboots of Cruelty (H)
-											},
-										}),
-										i(119943, {	-- Primal Combatant's Plate Chestpiece (H)
-											["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-										}),
-										i(119944, {	-- Primal Combatant's Plate Gauntlets (H)
-											["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-										}),
-										i(119945, {	-- Primal Combatant's Plate Helm (H)
-											["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-										}),
-										i(119946, {	-- Primal Combatant's Plate Legguards (H)
-											["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-										}),
-										i(119947, {	-- Primal Combatant's Plate Shoulders (H)
-											["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-										}),
+									i(126520, {	-- Warmongering Combatant's Gavel (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 									}),
-									n(-320, {	-- Head
-										i(119829, {	-- Primal Combatant's Hood of Prowess (H)
-											["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-										}),
-										i(119952, {	-- Primal Combatant's Helm (H)
-											["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-										}),
-										i(119957, {	-- Primal Combatant's Helm (H)
-											["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-										}),
-										i(119920, {	-- Primal Combatant's Plate Helmet (H)
-											["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-										}),
+									i(126612, {	-- Warmongering Combatant's Greatsword (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 									}),
-									n(-321, {	-- Shoulders
-										i(119832, {	-- Primal Combatant's Amice of Prowess (H)
-											["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-										}),
-										i(119954, {	-- Primal Combatant's Spaulders (H)
-											["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-										}),
-										i(119959, {	-- Primal Combatant's Spaulders (H)
-											["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-										}),
-										i(119922, {	-- Primal Combatant's Shoulderplates (H)
-											["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-										}),
+									i(126606, {	-- Warmongering Combatant's Hacker (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 									}),
-									n(-322, {	-- Back
-										i(119960, {	-- Primal Combatant's Cape of Cruelty (H)
-											["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-										}),
-										i(119961, {	-- Primal Combatant's Cape of Prowess (H)
-											["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-										}),
-										i(119966, {	-- Primal Combatant's Cloak of Cruelty (H)
-											["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-										}),
-										i(119967, {	-- Primal Combatant's Cloak of Prowess (H)
-											["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-										}),
-										i(119965, {	-- Primal Combatant's Drape of Contemplation (H)
-											["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-										}),
-										i(119962, {	-- Primal Combatant's Drape of Cruelty (H)
-											["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-										}),
-										i(119964, {	-- Primal Combatant's Drape of Meditation (H)
-											["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-										}),
-										i(119963, {	-- Primal Combatant's Drape of Prowess (H)
-											["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-										}),
+									i(126482, {	-- Warmongering Combatant's Heavy Crossbow (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 									}),
-									n(-323, {	-- Chest
-										i(119831, {	-- Primal Combatant's Robes of Prowess (H)
-											["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-										}),
-										i(119950, {	-- Primal Combatant's Tunic (H)
-											["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-										}),
-										i(119955, {	-- Primal Combatant's Armor (H)
-											["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-										}),
-										i(119918, {	-- Primal Combatant's Plate Breastplate (H)
-											["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-										}),
+									i(126481, {	-- Warmongering Combatant's Longbow (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 									}),
-									n(-326, {	-- Wrists
-										i(119838, {	-- Primal Combatant's Cuffs of Cruelty (H)
-											["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-										}),
-										i(119837, {	-- Primal Combatant's Cuffs of Prowess (H)
-											["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-										}),
-										i(119871, {	-- Primal Combatant's Bindings of Cruelty (H)
-											["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-										}),
-										i(119872, {	-- Primal Combatant's Bindings of Prowess (H)
-											["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-										}),
-										i(119883, {	-- Primal Combatant's Armbands of Cruelty (H)
-											["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-										}),
-										i(119882, {	-- Primal Combatant's Armbands of Prowess (H)
-											["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-										}),
-										i(119898, {	-- Primal Combatant's Armplates of Cruelty (H)
-											["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-										}),
-										i(119899, {	-- Primal Combatant's Armplates of Prowess (H)
-											["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-										}),
+									i(126521, {	-- Warmongering Combatant's Mageblade (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 									}),
-									n(-327, {	-- Hands
-										i(119828, {	-- Primal Combatant's Gloves of Prowess (H)
-											["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-										}),
-										i(119951, {	-- Primal Combatant's Gloves (H)
-											["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-										}),
-										i(119956, {	-- Primal Combatant's Gauntlets (H)
-											["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-										}),
-										i(119919, {	-- Primal Combatant's Plate Gloves (H)
-											["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-										}),
+									i(126484, {	-- Warmongering Combatant's Pike (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 									}),
-									n(-328, {	-- Waist
-										i(119833, {	-- Primal Combatant's Cord of Cruelty (H)
-											["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-										}),
-										i(119834, {	-- Primal Combatant's Cord of Prowess (H)
-											["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-										}),
-										i(119868, {	-- Primal Combatant's Belt of Cruelty (H)
-											["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-										}),
-										i(119867, {	-- Primal Combatant's Belt of Prowess (H)
-											["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-										}),
-										i(119878, {	-- Primal Combatant's Waistguard of Cruelty (H)
-											["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-										}),
-										i(119879, {	-- Primal Combatant's Waistguard of Prowess (H)
-											["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-										}),
-										i(119894, {	-- Primal Combatant's Girdle of Cruelty (H)
-											["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-										}),
-										i(119895, {	-- Primal Combatant's Girdle of Prowess (H)
-											["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-										}),
+									i(126479, {	-- Warmongering Combatant's Pummeler (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 									}),
-									n(-329, {	-- Legs
-										i(119830, {	-- Primal Combatant's Leggings of Prowess (H)
-											["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-										}),
-										i(119953, {	-- Primal Combatant's Legguards (H)
-											["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-										}),
-										i(119958, {	-- Primal Combatant's Leggings (H)
-											["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-										}),
-										i(119921, {	-- Primal Combatant's Legplates (H)
-											["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-										}),
+									i(126480, {	-- Warmongering Combatant's Quickblade (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 									}),
-									n(-330, {	-- Feet
-										i(119835, {	-- Primal Combatant's Treads of Cruelty (H)
-											["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-										}),
-										i(119836, {	-- Primal Combatant's Treads of Prowess (H)
-											["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-										}),
-										i(119869, {	-- Primal Combatant's Boots of Cruelty (H)
-											["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-										}),
-										i(119870, {	-- Primal Combatant's Boots of Prowess (H)
-											["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-										}),
-										i(119880, {	-- Primal Combatant's Footguards of Cruelty (H)
-											["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-										}),
-										i(119881, {	-- Primal Combatant's Footguards of Prowess (H)
-											["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-										}),
-										i(119896, {	-- Primal Combatant's Warboots of Cruelty (H)
-											["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-										}),
-										i(119897, {	-- Primal Combatant's Warboots of Prowess (H)
-											["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-										}),
+									i(126541, {	-- Warmongering Combatant's Redoubt (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126607, {	-- Warmongering Combatant's Render (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126535, {	-- Warmongering Combatant's Reprieve (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126483, {	-- Warmongering Combatant's Rifle (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126478, {	-- Warmongering Combatant's Ripper (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126477, {	-- Warmongering Combatant's Shanker (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126620, {	-- Warmongering Combatant's Shield Wall (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126609, {	-- Warmongering Combatant's Slicer (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126519, {	-- Warmongering Combatant's Spellblade (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126485, {	-- Warmongering Combatant's Staff (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126523, {	-- Warmongering Combatant's Touch of Defeat (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 									}),
 								}),
-						
+								cl(DEATHKNIGHT, {
+									i(138590, {	-- Ensemble: Warmongering Combatant's Dreadplate Armor (H)
+										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+										["sym"] = {
+											{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -660, 6 },
+											{"select", "itemID", 126584 },	-- Warmongering Combatant's Armplates of Cruelty (H)
+											{"select", "itemID", 126580 },	-- Warmongering Combatant's Girdle of Cruelty (H)
+											{"select", "itemID", 126582 },	-- Warmongering Combatant's Warboots of Cruelty (H)
+										},
+									}),
+									i(126504, {	-- Warmongering Combatant's Dreadplate Chestpiece (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126505, {	-- Warmongering Combatant's Dreadplate Gauntlets (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126506, {	-- Warmongering Combatant's Dreadplate Helm (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126507, {	-- Warmongering Combatant's Dreadplate Legguards (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126508, {	-- Warmongering Combatant's Dreadplate Shoulders (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+								}),
+								cl(DRUID, {
+									i(138594, {	-- Ensemble: Warmongering Combatant's Dragonhide Armor (H)
+										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+										["sym"] = {
+											{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -660, 11 },
+											{"select", "itemID", 126547 },	-- Warmongering Combatant's Bindings of Cruelty (H)
+											{"select", "itemID", 126544 },	-- Warmongering Combatant's Belt of Cruelty (H)
+											{"select", "itemID", 126545 },	-- Warmongering Combatant's Boots of Cruelty (H)
+										},
+									}),
+									i(126509, {	-- Warmongering Combatant's Dragonhide Gloves (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126510, {	-- Warmongering Combatant's Dragonhide Helm (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126511, {	-- Warmongering Combatant's Dragonhide Legguards (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126513, {	-- Warmongering Combatant's Dragonhide Spaulders (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126512, {	-- Warmongering Combatant's Dragonhide Tunic (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+								}),
+								cl(HUNTER, {
+									i(138538, {	-- Ensemble: Warmongering Combatant's Chain Armor (H)
+										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+										["sym"] = {
+											{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -660, 3 },
+											{"select", "itemID", 126564 },	-- Warmongering Combatant's Armbands of Cruelty (H)
+											{"select", "itemID", 126559 },	-- Warmongering Combatant's Waistguard of Cruelty (H)
+											{"select", "itemID", 126561 },	-- Warmongering Combatant's Footguards of Cruelty (H)
+										},
+									}),
+									i(126514, {	-- Warmongering Combatant's Chain Armor (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126515, {	-- Warmongering Combatant's Chain Gauntlets (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126516, {	-- Warmongering Combatant's Chain Helm (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126517, {	-- Warmongering Combatant's Chain Leggings (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126518, {	-- Warmongering Combatant's Chain Spaulders (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+								}),
+								cl(MAGE, {
+									i(138540, {	-- Ensemble: Warmongering Combatant's Silk Armor (H)
+										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+										["sym"] = {
+											{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -660, 8 },
+											{"select", "itemID", 126498 },	-- Warmongering Combatant's Cuffs of Cruelty (H)
+											{"select", "itemID", 126493 },	-- Warmongering Combatant's Cord of Cruelty (H)
+											{"select", "itemID", 126495 },	-- Warmongering Combatant's Treads of Cruelty (H)
+										},
+									}),
+									i(126558, {	-- Warmongering Combatant's Silk Amice (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126555, {	-- Warmongering Combatant's Silk Cowl (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126554, {	-- Warmongering Combatant's Silk Handguards (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126557, {	-- Warmongering Combatant's Silk Robe (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126556, {	-- Warmongering Combatant's Silk Trousers (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+								}),
+								cl(MONK, {
+									i(138596, {	-- Ensemble: Warmongering Combatant's Ironskin Armor (H)
+										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+										["sym"] = {
+											{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -660, 10 },
+											{"select", "itemID", 126547 },	-- Warmongering Combatant's Bindings of Cruelty (H)
+											{"select", "itemID", 126544 },	-- Warmongering Combatant's Belt of Cruelty (H)
+											{"select", "itemID", 126545 },	-- Warmongering Combatant's Boots of Cruelty (H)
+										},
+									}),
+									i(126570, {	-- Warmongering Combatant's Ironskin Gloves (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126571, {	-- Warmongering Combatant's Ironskin Helm (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126572, {	-- Warmongering Combatant's Ironskin Legguards (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126573, {	-- Warmongering Combatant's Ironskin Spaulders (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126574, {	-- Warmongering Combatant's Ironskin Tunic (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+								}),
+								cl(PALADIN, {
+									i(138592, {	-- Ensemble: Warmongering Combatant's Scaled Armor (H)
+										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+										["sym"] = {
+											{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -660, 2 },
+											{"select", "itemID", 126584 },	-- Warmongering Combatant's Armplates of Cruelty (H)
+											{"select", "itemID", 126580 },	-- Warmongering Combatant's Girdle of Cruelty (H)
+											{"select", "itemID", 126582 },	-- Warmongering Combatant's Warboots of Cruelty (H)
+										},
+									}),
+									i(126575, {	-- Warmongering Combatant's Scaled Chestpiece (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126576, {	-- Warmongering Combatant's Scaled Gauntlets (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126577, {	-- Warmongering Combatant's Scaled Helm (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126578, {	-- Warmongering Combatant's Scaled Legguards (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126579, {	-- Warmongering Combatant's Scaled Shoulders (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+								}),
+								cl(PRIEST, {
+									i(138542, {	-- Ensemble: Warmongering Combatant's Satin Armor (H)
+										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+										["sym"] = {
+											{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -660, 5 },
+											{"select", "itemID", 126498 },	-- Warmongering Combatant's Cuffs of Cruelty (H)
+											{"select", "itemID", 126493 },	-- Warmongering Combatant's Cord of Cruelty (H)
+											{"select", "itemID", 126495 },	-- Warmongering Combatant's Treads of Cruelty (H)
+										},
+									}),
+									i(126591, {	-- Warmongering Combatant's Satin Gloves (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126592, {	-- Warmongering Combatant's Satin Hood (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126593, {	-- Warmongering Combatant's Satin Leggings (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126595, {	-- Warmongering Combatant's Satin Mantle (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126594, {	-- Warmongering Combatant's Satin Robe (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+								}),
+								cl(ROGUE, {
+									i(138598, {	-- Ensemble: Warmongering Combatant's Leather Armor (H)
+										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+										["sym"] = {
+											{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -660, 4 },
+											{"select", "itemID", 126547 },	-- Warmongering Combatant's Bindings of Cruelty (H)
+											{"select", "itemID", 126544 },	-- Warmongering Combatant's Belt of Cruelty (H)
+											{"select", "itemID", 126545 },	-- Warmongering Combatant's Boots of Cruelty (H)
+										},
+									}),
+									i(126597, {	-- Warmongering Combatant's Leather Gloves (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126598, {	-- Warmongering Combatant's Leather Helm (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126599, {	-- Warmongering Combatant's Leather Legguards (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126600, {	-- Warmongering Combatant's Leather Spaulders (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126596, {	-- Warmongering Combatant's Leather Tunic (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+								}),
+								cl(SHAMAN, {
+									i(138536, {	-- Ensemble: Warmongering Combatant's Ringmail Armor (H)
+										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+										["sym"] = {
+											{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -660, 7 },
+											{"select", "itemID", 126564 },	-- Warmongering Combatant's Armbands of Cruelty (H)
+											{"select", "itemID", 126559 },	-- Warmongering Combatant's Waistguard of Cruelty (H)
+											{"select", "itemID", 126561 },	-- Warmongering Combatant's Footguards of Cruelty (H)
+										},
+									}),
+									i(126601, {	-- Warmongering Combatant's Ringmail Armor (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126602, {	-- Warmongering Combatant's Ringmail Gauntlets (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126603, {	-- Warmongering Combatant's Ringmail Helm (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126604, {	-- Warmongering Combatant's Ringmail Leggings (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126605, {	-- Warmongering Combatant's Ringmail Spaulders (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+								}),
+								cl(WARLOCK, {
+									i(138544, {	-- Ensemble: Warmongering Combatant's Felweave Armor (H)
+										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+										["sym"] = {
+											{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -660, 9 },
+											{"select", "itemID", 126498 },	-- Warmongering Combatant's Cuffs of Cruelty (H)
+											{"select", "itemID", 126493 },	-- Warmongering Combatant's Cord of Cruelty (H)
+											{"select", "itemID", 126495 },	-- Warmongering Combatant's Treads of Cruelty (H)
+										},
+									}),
+									i(126648, {	-- Warmongering Combatant's Felweave Amice (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126645, {	-- Warmongering Combatant's Felweave Cowl (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126644, {	-- Warmongering Combatant's Felweave Handguards (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126647, {	-- Warmongering Combatant's Felweave Raiment (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126646, {	-- Warmongering Combatant's Felweave Trousers (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+								}),
+								cl(WARRIOR, {
+									i(138588, {	-- Ensemble: Warmongering Combatant's Plate Armor (H)
+										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+										["sym"] = {
+											{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -660, 1 },
+											{"select", "itemID", 126584 },	-- Warmongering Combatant's Armplates of Cruelty (H)
+											{"select", "itemID", 126580 },	-- Warmongering Combatant's Girdle of Cruelty (H)
+											{"select", "itemID", 126582 },	-- Warmongering Combatant's Warboots of Cruelty (H)
+										},
+									}),
+									i(126649, {	-- Warmongering Combatant's Plate Chestpiece (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126650, {	-- Warmongering Combatant's Plate Gauntlets (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126651, {	-- Warmongering Combatant's Plate Helm (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126652, {	-- Warmongering Combatant's Plate Legguards (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126653, {	-- Warmongering Combatant's Plate Shoulders (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+								}),
+								n(-320, {	-- Head
+									i(126500),	-- Warmongering Combatant's Hood of Prowess (H)
+									i(126551),	-- Warmongering Combatant's Helm (H)
+									i(126567),	-- Warmongering Combatant's Helm (H)
+									i(126588),	-- Warmongering Combatant's Plate Helmet (H)
+								}),
+								n(-321, {	-- Shoulders
+									i(126503),	-- Warmongering Combatant's Amice of Prowess (H)
+									i(126553),	-- Warmongering Combatant's Spaulders (H)
+									i(126569),	-- Warmongering Combatant's Spaulders (H)
+									i(126590),	-- Warmongering Combatant's Shoulderplates (H)
+								}),
+								n(-322, {	-- Back
+									i(126486),	-- Warmongering Combatant's Cape of Cruelty (H)
+									i(126487),	-- Warmongering Combatant's Cape of Prowess (H)
+									i(126613),	-- Warmongering Combatant's Cloak of Cruelty (H)
+									i(126640),	-- Warmongering Combatant's Cloak of Endurance (H)
+									i(126614),	-- Warmongering Combatant's Cloak of Prowess (H)
+									i(126529),	-- Warmongering Combatant's Drape of Contemplation (H)
+									i(126526),	-- Warmongering Combatant's Drape of Cruelty (H)
+									i(126528),	-- Warmongering Combatant's Drape of Meditation (H)
+									i(126527),	-- Warmongering Combatant's Drape of Prowess (H)
+								}),
+								n(-323, {	-- Chest
+									i(126502),	-- Warmongering Combatant's Robes of Prowess (H)
+									i(126549),	-- Warmongering Combatant's Tunic (H)
+									i(126565),	-- Warmongering Combatant's Armor (H)
+									i(126586),	-- Warmongering Combatant's Plate Breastplate (H)
+								}),
+								n(-326, {	-- Wrists
+									i(126498, {	-- Warmongering Combatant's Cuffs of Cruelty (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126497, {	-- Warmongering Combatant's Cuffs of Prowess (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126547, {	-- Warmongering Combatant's Bindings of Cruelty (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126548, {	-- Warmongering Combatant's Bindings of Prowess (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126564, {	-- Warmongering Combatant's Armbands of Cruelty (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126563, {	-- Warmongering Combatant's Armbands of Prowess (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126584, {	-- Warmongering Combatant's Armplates of Cruelty (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126585, {	-- Warmongering Combatant's Armplates of Prowess (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+								}),
+								n(-327, {	-- Hands
+									i(126499),	-- Warmongering Combatant's Gloves of Prowess (H)
+									i(126550),	-- Warmongering Combatant's Gloves (H)
+									i(126566),	-- Warmongering Combatant's Gauntlets (H)
+									i(126587),	-- Warmongering Combatant's Plate Gloves (H)
+								}),
+								n(-328, {	-- Waist
+									i(126493, {	-- Warmongering Combatant's Cord of Cruelty (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126494, {	-- Warmongering Combatant's Cord of Prowess (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126544, {	-- Warmongering Combatant's Belt of Cruelty (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126543, {	-- Warmongering Combatant's Belt of Prowess (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126559, {	-- Warmongering Combatant's Waistguard of Cruelty (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126560, {	-- Warmongering Combatant's Waistguard of Prowess (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126580, {	-- Warmongering Combatant's Girdle of Cruelty (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126581, {	-- Warmongering Combatant's Girdle of Prowess (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+								}),
+								n(-329, {	-- Legs
+									i(126501),	-- Warmongering Combatant's Leggings of Prowess (H)
+									i(126552),	-- Warmongering Combatant's Legguards (H)
+									i(126568),	-- Warmongering Combatant's Leggings (H)
+									i(126589),	-- Warmongering Combatant's Legplates (H)
+								}),
+								n(-330, {	-- Feet
+									i(126495, {	-- Warmongering Combatant's Treads of Cruelty (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126496, {	-- Warmongering Combatant's Treads of Prowess (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126545, {	-- Warmongering Combatant's Boots of Cruelty (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126546, {	-- Warmongering Combatant's Boots of Prowess (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126561, {	-- Warmongering Combatant's Footguards of Cruelty (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126562, {	-- Warmongering Combatant's Footguards of Prowess (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126582, {	-- Warmongering Combatant's Warboots of Cruelty (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126583, {	-- Warmongering Combatant's Warboots of Prowess (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+								}),
 							},
 						}),
 						n(85840, {	-- Torgg Flexington <Blueprints Trader>
