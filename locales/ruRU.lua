@@ -2898,6 +2898,8 @@ for key,value in pairs({
 	[357697] = "Клад надсмотрщика",	-- Taskmaster's Trove
 	[357726] = "Сломанное копье",	-- Broken Spear
 	[357758] = "Бочонок с чумой",	-- Plague Barrel
+	[357771] = "Погребенный тайник",	-- Burried Cache
+	[357937] = "Погребенный тайник",	-- Burried Cache
 	[358298] = "Шкатулка из запретных покоев",	-- Forbidden Chamber Lockbox
 	[358315] = "Фрагменты руки скелета",	-- Skeletal Hand Fragments
 	[358318] = "\"Портрет землероя\" Р. Лоска",	-- R. Suavel Dredger Portrait
@@ -2907,6 +2909,7 @@ for key,value in pairs({
 	[358855] = "Поврежденный набор для безопасного падения",	-- Damaged Safe Fall Pack
 	[360054] = "Липкая кошка",	-- Slime Cat
 	[362489] = "Элизийский декрет",	-- Elysian Decree
+	[364483] = "Пустой бочонок для вечернего вина",	-- Empty Nightcap Cask
 	[364899] = "Кристаллизованная стигия",	-- Crystallized Stygia
 	[364926] = "Выкованные в кузне рун оковы",	-- Runeforged Shackles
 	[364932] = "Полыхающий слиток",	-- Blazing Ingot

@@ -2905,6 +2905,8 @@ for key,value in pairs({
 	[357697] = "Trésor du sous-chef",	-- Taskmaster's Trove
 	[357726] = "Lance brisée",	-- Broken Spear
 	[357758] = "Tonneau de peste",	-- Plague Barrel
+	[357771] = "Cache enfouie",	-- Burried Cache
+	[357937] = "Cache enfouie",	-- Burried Cache
 	[358298] = "Coffre de la chambre Interdite",	-- Forbidden Chamber Lockbox
 	[358315] = "Fragments de main squelettique",	-- Skeletal Hand Fragments
 	--TODO: [358318] = "R. Suavel Dredger Portrait",	-- R. Suavel Dredger Portrait
@@ -2914,6 +2916,7 @@ for key,value in pairs({
 	[358855] = "Sac à dos de chute amortie endommagé",	-- Damaged Safe Fall Pack
 	[360054] = "Chat collant",	-- Slime Cat
 	[362489] = "Décret élyséen",	-- Elysian Decree
+	[364483] = "Fût de pousse-café vide",	-- Empty Nightcap Cask
 	[364899] = "Stygies cristallisées",	-- Crystallized Stygia
 	[364926] = "Entraves runeforgées",	-- Runeforged Shackles
 	[364932] = "Lingot incandescent",	-- Blazing Ingot

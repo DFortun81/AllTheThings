@@ -2925,6 +2925,8 @@ for key, value in pairs({
 	[357697] = "工头的宝藏",	-- Taskmaster's Trove
 	[357726] = "断裂之矛",	-- Broken Spear
 	[357758] = "魔药桶",	-- Plague Barrel
+	[357771] = "埋藏的宝箱",	-- Burried Cache
+	[357937] = "埋藏的宝箱",	-- Burried Cache
 	[358298] = "禁忌密室保险箱",	-- Forbidden Chamber Lockbox
 	[358315] = "骸骨手碎片",	-- Skeletal Hand Fragments
 	--TODO: [358318] = "R. Suavel Dredger Portrait",	-- R. Suavel Dredger Portrait
@@ -2934,6 +2936,7 @@ for key, value in pairs({
 	[358855] = "损坏的安全降落包",	-- Damaged Safe Fall Pack
 	[360054] = "黏黏猫",	-- Slime Cat
 	[362489] = "极乐敕令",	-- Elysian Decree
+	[364483] = "空空的睡帽酒酒桶",	-- Empty Nightcap Cask
 	[364899] = "晶体冥殇",	-- Crystallized Stygia
 	[364926] = "符文熔铸镣铐",	-- Runeforged Shackles
 	[364932] = "灼光矿锭",	-- Blazing Ingot

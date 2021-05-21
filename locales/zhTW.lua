@@ -2905,6 +2905,8 @@ for key,value in pairs({
 	--TODO: [357697] = "Taskmaster's Trove",	-- Taskmaster's Trove
 	--TODO: [357726] = "Broken Spear",	-- Broken Spear
 	--TODO: [357758] = "Plague Barrel",	-- Plague Barrel
+	--TODO: [357771] = "Burried Cache",	-- Burried Cache
+	--TODO: [357937] = "Burried Cache",	-- Burried Cache
 	--TODO: [358298] = "Forbidden Chamber Lockbox",	-- Forbidden Chamber Lockbox
 	--TODO: [358315] = "Skeletal Hand Fragments",	-- Skeletal Hand Fragments
 	--TODO: [358318] = "R. Suavel Dredger Portrait",	-- R. Suavel Dredger Portrait
@@ -2914,6 +2916,7 @@ for key,value in pairs({
 	--TODO: [358855] = "Damaged Safe Fall Pack",	-- Damaged Safe Fall Pack
 	--TODO: [360054] = "Slime Cat",	-- Slime Cat
 	--TODO: [362489] = "Elysian Decree",	-- Elysian Decree
+	--TODO: [364483] = "Empty Nightcap Cask",	-- Empty Nightcap Cask
 	--TODO: [364899] = "Crystallized Stygia",	-- Crystallized Stygia
 	--TODO: [364926] = "Runeforged Shackles",	-- Runeforged Shackles
 	--TODO: [364932] = "Blazing Ingot",	-- Blazing Ingot

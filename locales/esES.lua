@@ -2905,6 +2905,8 @@ for key,value in pairs({
 	[357697] = "Tesoro del capataz",	-- Taskmaster's Trove
 	[357726] = "Lanza rota",	-- Broken Spear
 	[357758] = "Barril de peste",	-- Plague Barrel
+	[357771] = "Alijo enterrado",	-- Burried Cache
+	[357937] = "Alijo enterrado",	-- Burried Cache
 	[358298] = "Arcón de cámara prohibida",	-- Forbidden Chamber Lockbox
 	[358315] = "Fragmentos de mano esquelética",	-- Skeletal Hand Fragments
 	[358318] = "Retrato de dragador de R. Suavel",	-- R. Suavel Dredger Portrait
@@ -2914,6 +2916,7 @@ for key,value in pairs({
 	[358855] = "Mochila de Caída segura dañada",	-- Damaged Safe Fall Pack
 	[360054] = "Gato pegajoso",	-- Slime Cat
 	[362489] = "Decreto elisio",	-- Elysian Decree
+	[364483] = "Tonel de trago vacío",	-- Empty Nightcap Cask
 	[364899] = "Estigia cristalizada",	-- Crystallized Stygia
 	[364926] = "Grilletes forjados con runas",	-- Runeforged Shackles
 	[364932] = "Lingote llameante",	-- Blazing Ingot
