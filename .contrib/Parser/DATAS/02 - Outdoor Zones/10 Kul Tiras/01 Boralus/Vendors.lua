@@ -1836,7 +1836,6 @@ _.Zones =
 							["g"] = {
 								i(165041),	-- Sinister Gladiator's Bonecracker
 								i(166479),	-- Sinister Gladiator's Greatsword
-								un(NEVER_IMPLEMENTED, i(165036)),	-- Sinister Gladiator's Halberd (A) (either NYI or removed)
 								i(165043),	-- Sinister Gladiator's Longbow
 								i(165042),	-- Sinister Gladiator's Mageblade
 								i(165037),	-- Sinister Gladiator's Pike

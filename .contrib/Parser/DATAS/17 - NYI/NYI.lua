@@ -4163,6 +4163,7 @@ _.NeverImplemented =
 		}),
 		n(-343,	{	-- Polearms
 			i(158504),	-- Whaler's Pike
+			i(165036),	-- Sinister Gladiator's Halberd (A)
 			i(158563),	-- Tomb-Rustler's Polearm
 			i(108797),	-- Unknown
 			i(108798),	-- Unknown
