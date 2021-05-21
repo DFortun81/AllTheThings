@@ -45,12 +45,15 @@ _.Zones =
 				i(187327),	-- Encrypted Korthian Journal
 				i(187325),	-- Faded Razorwing Anatomy Illustration
 				i(187324),	-- Gnawed Ancient Idol
+				i(187326),	-- Half-Completed Runeforge Pattern
 				i(187335),	-- Maldraxxus Larva Shell
+				i(187332),	-- Recovered Page of Voices
 				i(187323),	-- Runic Diagram
+				i(187334),	-- Shattered Void Tablet
 				i(187331),	-- Tattered Fae Designs
 			--	Cosmetics (not sure if this should go here or under Wild Worldcracker)
 				i(187252, {	-- Ritualist's Spiked Mantle
-					["crs"] = { 180030 },	-- Opportunistic Corruptor (mob that spawns during the Popo's Potion Patrol/Wild Worldcracker event)
+					["crs"] = { 180030 },	-- Opportunistic Corruptor (also dropped from *i think* a mawsworn cleaver, but not positive)
 				}),
 			--	Greens
 				i(186123),	-- Foresworn Scout's Coif

@@ -195,6 +195,7 @@ _.Zones =
 						crit(24, {	-- Zelnithop
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
+						i(187371),	-- Velvet Gromit Handwraps
 					},
 				}),
 			}),
