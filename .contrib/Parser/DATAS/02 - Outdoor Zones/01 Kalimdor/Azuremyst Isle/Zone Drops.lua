@@ -25,7 +25,7 @@ _.Zones =
 				}),
 				i(23801),	-- Bristlelimb Key
 				i(23678, {	-- Faintly Glowing Crystal
-					["cr"] = 17202,	-- Infected Nightstalker Runt)
+					["cr"] = 17202,	-- Infected Nightstalker Runt
 					["coords"] = {
 						{ 45.6, 45.0, AZUREMYST_ISLE },
 						{ 26.8, 48.0, AZUREMYST_ISLE },
