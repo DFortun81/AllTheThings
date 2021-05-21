@@ -1902,13 +1902,13 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(115861)),	-- Primal Gladiator's Wyrmhide Spaulders
 				}),
 				cl(HUNTER, {
-					un(REMOVED_FROM_GAME, i(115942)),	-- Primal Gladiator's Mail Armor
-					un(REMOVED_FROM_GAME, i(115930)),	-- Primal Gladiator's Mail Footguards
-					un(REMOVED_FROM_GAME, i(115943)),	-- Primal Gladiator's Mail Gauntlets
-					un(REMOVED_FROM_GAME, i(115944)),	-- Primal Gladiator's Mail Helm
-					un(REMOVED_FROM_GAME, i(115945)),	-- Primal Gladiator's Mail Leggings
-					un(REMOVED_FROM_GAME, i(115946)),	-- Primal Gladiator's Mail Spaulders
-					un(REMOVED_FROM_GAME, i(115941)),	-- Primal Gladiator's Mail Waistguard
+					un(REMOVED_FROM_GAME, i(115870)),	-- Primal Gladiator's Chain Armor
+					un(REMOVED_FROM_GAME, i(115871)),	-- Primal Gladiator's Chain Gauntlets
+					un(REMOVED_FROM_GAME, i(115872)),	-- Primal Gladiator's Chain Helm
+					un(REMOVED_FROM_GAME, i(115873)),	-- Primal Gladiator's Chain Leggings
+					un(REMOVED_FROM_GAME, i(115866)),	-- Primal Gladiator's Chain Links
+					un(REMOVED_FROM_GAME, i(115868)),	-- Primal Gladiator's Chain Sabatons
+					un(REMOVED_FROM_GAME, i(115874)),	-- Primal Gladiator's Chain Spaulders
 				}),
 				cl(MAGE, {
 					un(REMOVED_FROM_GAME, i(115879)),	-- Primal Gladiator's Silk Amice
@@ -1977,13 +1977,13 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(115921)),	-- Primal Gladiator's Leather Waistband
 				}),
 				cl(SHAMAN, {
-					un(REMOVED_FROM_GAME, i(115870)),	-- Primal Gladiator's Chain Armor
-					un(REMOVED_FROM_GAME, i(115871)),	-- Primal Gladiator's Chain Gauntlets
-					un(REMOVED_FROM_GAME, i(115872)),	-- Primal Gladiator's Chain Helm
-					un(REMOVED_FROM_GAME, i(115873)),	-- Primal Gladiator's Chain Leggings
-					un(REMOVED_FROM_GAME, i(115866)),	-- Primal Gladiator's Chain Links
-					un(REMOVED_FROM_GAME, i(115868)),	-- Primal Gladiator's Chain Sabatons
-					un(REMOVED_FROM_GAME, i(115874)),	-- Primal Gladiator's Chain Spaulders
+					un(REMOVED_FROM_GAME, i(115942)),	-- Primal Gladiator's Mail Armor
+					un(REMOVED_FROM_GAME, i(115930)),	-- Primal Gladiator's Mail Footguards
+					un(REMOVED_FROM_GAME, i(115943)),	-- Primal Gladiator's Mail Gauntlets
+					un(REMOVED_FROM_GAME, i(115944)),	-- Primal Gladiator's Mail Helm
+					un(REMOVED_FROM_GAME, i(115945)),	-- Primal Gladiator's Mail Leggings
+					un(REMOVED_FROM_GAME, i(115946)),	-- Primal Gladiator's Mail Spaulders
+					un(REMOVED_FROM_GAME, i(115941)),	-- Primal Gladiator's Mail Waistguard
 					un(REMOVED_FROM_GAME, i(115936)),	-- Primal Gladiator's Linked Armor
 					un(REMOVED_FROM_GAME, i(115937)),	-- Primal Gladiator's Linked Gauntlets
 					un(REMOVED_FROM_GAME, i(115938)),	-- Primal Gladiator's Linked Helm
