@@ -5,32 +5,30 @@
 _.GearSets =
 {
 	n(-5350, {	-- Class Trial Item Sets
-		n(-155, {	-- Level 50 (Old Level 120)
-			["groups"] = bubbleDown({["u"] = BLIZZARD_BALANCE}, {
-				n(-150, {	-- Trailseeker
-					["classes"] = { HUNTER },
-					["groups"] = {
-						i(171988, {	-- Adventurer's Footlocker
-							i(170638),	-- Trailseeker Shotgun
-							i(170639),	-- Trailseekeer Spear
-						}),
-						i(170802),	-- Trailseekeer Helm
-						un(NEVER_IMPLEMENTED, i(170633)),	-- Trailseeker Choker
-						i(170804),	-- Trailseekeer Spaulders
-						i(170632),	-- Trailseekeer Cloak of Rage
-						i(170799),	-- Trailseekeer Vest
-						i(170806),	-- Trailseekeer Bracers
-						i(170801),	-- Trailseekeer Gauntlets
-						i(170805),	-- Trailseekeer Belt
-						i(170803),	-- Trailseekeer Legguards
-						i(170800),	-- Trailseekeer Greaves
-						i(170635),	-- Trailseekeer Band of Onslaught
-						i(170636),	-- Trailseekeer Ring of Onslaught
-						i(170637),	-- Trailseekeer Stone of Rage
-						i(170634),	-- Trailseekeer Idol of Rage
-					},
-				}),
+		n(-155, bubbleDown({["u"] = BLIZZARD_BALANCE}, {	-- Level 50 (Old Level 120)
+			n(-150, {	-- Trailseeker
+				["classes"] = { HUNTER },
+				["groups"] = {
+					i(171988, {	-- Adventurer's Footlocker
+						i(170638),	-- Trailseeker Shotgun
+						i(170639),	-- Trailseekeer Spear
+					}),
+					i(170802),	-- Trailseekeer Helm
+					un(NEVER_IMPLEMENTED, i(170633)),	-- Trailseeker Choker
+					i(170804),	-- Trailseekeer Spaulders
+					i(170632),	-- Trailseekeer Cloak of Rage
+					i(170799),	-- Trailseekeer Vest
+					i(170806),	-- Trailseekeer Bracers
+					i(170801),	-- Trailseekeer Gauntlets
+					i(170805),	-- Trailseekeer Belt
+					i(170803),	-- Trailseekeer Legguards
+					i(170800),	-- Trailseekeer Greaves
+					i(170635),	-- Trailseekeer Band of Onslaught
+					i(170636),	-- Trailseekeer Ring of Onslaught
+					i(170637),	-- Trailseekeer Stone of Rage
+					i(170634),	-- Trailseekeer Idol of Rage
+				},
 			}),
-		}),
+		})),
 	}),
 };
