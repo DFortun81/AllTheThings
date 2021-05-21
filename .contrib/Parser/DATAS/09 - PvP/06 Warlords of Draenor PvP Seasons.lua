@@ -4,7 +4,7 @@
 
 _.PVP =
 {	---- ToDo: Give every item minimun 2 Sources.
-	---- S3 Elite/S3 Horde Combatant/Gladiator Done
+	---- S3 Done. 
 	---- This gear is listed here to reduce the bloat.
 	---- The actual sources include:
 	---- arena win&lose, rbg win&lose, bg win&lose, arena skirmish win&lose, ashran boxes win&lose, 13 ashran quests & broken bones work orders
