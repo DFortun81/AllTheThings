@@ -2335,8 +2335,6 @@ _.Zones =
 											{"select", "itemID", 126107 },	-- Warmongering Combatant's Armplates of Cruelty (A)
 											{"select", "itemID", 126103 },	-- Warmongering Combatant's Girdle of Cruelty (A)
 											{"select", "itemID", 126105 },	-- Warmongering Combatant's Warboots of Cruelty (A)
-											{"pop"},
-											{"exclude", "itemID", 138589 },	-- Exclude Ensemble
 										},
 									}),
 									i(126027, {	-- Warmongering Combatant's Dreadplate Chestpiece (A)
