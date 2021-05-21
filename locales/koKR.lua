@@ -1203,7 +1203,7 @@ for key,value in pairs({
 	[180366] = "찌그러진 낚시상자",	-- Battered Tackle Box	--TODO: This was taken from classic Wowhead
 	[180368] = "광기의 서판",	-- Tablet of Madness	--TODO: This was taken from classic Wowhead
 	[180448] = "현상 수배: 죽음의 갈고리",	-- Wanted Poster: Deathclasp
-	[180503] = "모래투성이 요리책",	-- Sandy Cookbook	--TODO: This was taken from classic Wowhead
+	[180503] = "모래투성이 요리책",	-- Sandy Cookbook
 	[180633] = "눈물의 결정",	-- Crystalline Tear
 	[180642] = "눈에 띄지 않는 궤짝",	-- Inconspicuous Crate
 	[180690] = "큰 스카라베 상자",	-- Large Scarab Coffer
@@ -1944,10 +1944,10 @@ for key,value in pairs({
 	[240631] = "보물 상자",	-- Treasure Chest
 	[240634] = "보물 상자",	-- Treasure Chest
 	[240635] = "보물 상자",	-- Treasure Chest
-	--TODO: [240637] = "Glimmering Treasure Chest",	-- Glimmering Treasure Chest
+	[240637] = "반짝이는 보물 상자",	-- Glimmering Treasure Chest
 	[240638] = "논란의 보물 상자",	-- Disputed Treasure
 	[240639] = "반짝이는 보물 상자",	-- Glimmering Treasure Chest
-	--TODO: [240641] = "Treasure Chest",	-- Treasure Chest
+	[240641] = "보물 상자",	-- Treasure Chest
 	[240642] = "보물 상자",	-- Treasure Chest
 	[240643] = "보물 상자",	-- Treasure Chest
 	[240644] = "작은 보물 상자",	-- Small Treasure Chest
@@ -2054,7 +2054,7 @@ for key,value in pairs({
 	--TODO: [243392] = "Alchemy Book",	-- Alchemy Book
 	--TODO: [243688] = "Treasure Chest",	-- Treasure Chest
 	[243698] = "반짝이는 보물 상자",	-- Glimmering Treasure Chest
-	--TODO: [243773] = "Treasure Chest",	-- Treasure Chest
+	[243773] = "보물 상자",	-- Treasure Chest
 	[243798] = "야한 보석 상자",	-- A Steamy Jewelry Box
 	--TODO: [243899] = "Broken Ley Flame Burner",	-- Broken Ley Flame Burner
 	[243911] = "눈더미",	-- Snow Mound
@@ -2111,9 +2111,9 @@ for key,value in pairs({
 	[245545] = "작은 보물 상자",	-- Small Treasure Chest
 	--TODO: [245547] = "Small Treasure Chest",	-- Small Treasure Chest
 	[245548] = "보물 상자",	-- Treasure Chest
-	--TODO: [245550] = "Treasure Chest",	-- Treasure Chest
-	--TODO: [245551] = "Small Treasure Chest",	-- Small Treasure Chest
-	--TODO: [245553] = "Treasure Chest",	-- Treasure Chest
+	[245550] = "보물 상자",	-- Treasure Chest
+	[245551] = "작은 보물 상자",	-- Small Treasure Chest
+	[245553] = "보물 상자",	-- Treasure Chest
 	--TODO: [245554] = "Small Treasure Chest",	-- Small Treasure Chest
 	[245555] = "작은 보물 상자",	-- Small Treasure Chest
 	--TODO: [245579] = "Treasure Chest",	-- Treasure Chest
@@ -2128,7 +2128,7 @@ for key,value in pairs({
 	[246147] = "작은 보물 상자",	-- Small Treasure Chest
 	[246154] = "부서진 장난감 상자",	-- Broken Toy Box
 	[246205] = "작은 보물 상자",	-- Small Treasure Chest
-	--TODO: [246206] = "Small Treasure Chest",	-- Small Treasure Chest
+	[246206] = "작은 보물 상자",	-- Small Treasure Chest
 	[246249] = "작은 보물 상자",	-- Small Treasure Chest
 	--TODO: [246250] = "Letter From Jabrul",	-- Letter From Jabrul
 	[246254] = "먼지투성이 상자",	-- Dusty Coffer
@@ -2167,7 +2167,7 @@ for key,value in pairs({
 	[250103] = "작은 보물 상자",	-- Small Treasure Chest
 	[250104] = "작은 보물 상자",	-- Small Treasure Chest
 	--TODO: [250106] = "Small Treasure Chest",	-- Small Treasure Chest
-	--TODO: [250107] = "Glimmering Treasure Chest",	-- Glimmering Treasure Chest
+	[250107] = "반짝이는 보물 상자",	-- Glimmering Treasure Chest
 	[250108] = "작은 보물 상자",	-- Small Treasure Chest
 	[250109] = "보물 상자",	-- Treasure Chest
 	[250383] = "달그늘 성물",	-- Moonshade Relic
@@ -2326,7 +2326,7 @@ for key,value in pairs({
 	[270917] = "글렌브룩 명부",	-- Glenbrook Register
 	--TODO: [271103] = "Prayer Effigy",	-- Prayer Effigy
 	[271706] = "사냥꾼의 판",	-- Hunters' Board
-	--TODO: [271849] = "Eredar War Supplies",	-- Eredar War Supplies
+	[271849] = "에레다르 전쟁 물자",	-- Eredar War Supplies
 	--TODO: [271850] = "Eredar War Supplies",	-- Eredar War Supplies
 	--TODO: [272039] = "|cFFFFFFFFStep 2:|r Inconspicuous Note",	-- |cFFFFFFFFStep 2:|r Inconspicuous Note
 	--TODO: [272046] = "|cFFFFFFFFStep 3:|r Mind Larva",	-- |cFFFFFFFFStep 3:|r Mind Larva
@@ -2367,7 +2367,7 @@ for key,value in pairs({
 	--TODO: [275059] = "",	--
 	[276187] = "준지",	-- Junji
 	--TODO: [276223] = "Eredar Treasure Cache",	-- Eredar Treasure Cache
-	--TODO: [276224] = "Chest of Ill-Gotten Gains",	-- Chest of Ill-Gotten Gains
+	[276224] = "부정한 노략물 상자",	-- Chest of Ill-Gotten Gains
 	--TODO: [276225] = "Student's Surprising Surplus",	-- Student's Surprising Surplus
 	[276226] = "공허에 물든 상자",	-- Void-Tinged Chest
 	--TODO: [276227] = "Augari Secret Stash",	-- Augari Secret Stash
@@ -2376,7 +2376,7 @@ for key,value in pairs({
 	[276230] = "파멸길잡이의 보물",	-- Doomseeker's Treasure
 	--TODO: [276251] = "Excavation Inventory",	-- Excavation Inventory
 	[276488] = "아제라이트 포탄",	-- Azurite Cannonball
-	--TODO: [276489] = "Legion Tower Chest",	-- Legion Tower Chest
+	[276489] = "군단 탑 상자",	-- Legion Tower Chest
 	--TODO: [276490] = "Krokul Emergency Cache",	-- Krokul Emergency Cache
 	--TODO: [276491] = "Lost Krokul Chest",	-- Lost Krokul Chest
 	[276513] = "온전한 모래무지",	-- Intact Mudfish
@@ -2391,10 +2391,10 @@ for key,value in pairs({
 	--TODO: [277208] = "Timeworn Fel Chest",	-- Timeworn Fel Chest
 	--TODO: [277327] = "Augari-Runed Chest",	-- Augari-Runed Chest
 	[277333] = "고대 석관",	-- Ancient Sarcophagus
-	--TODO: [277340] = "Secret Augari Chest",	-- Secret Augari Chest
+	[277340] = "비밀의 아우가리 상자",	-- Secret Augari Chest
 	--TODO: [277342] = "Augari Goods",	-- Augari Goods
 	--TODO: [277343] = "Long-Lost Augari Treasure",	-- Long-Lost Augari Treasure
-	--TODO: [277344] = "Precious Augari Keepsakes",	-- Precious Augari Keepsakes
+	[277344] = "귀중한 아우가리 유품",	-- Precious Augari Keepsakes
 	[277346] = "사라진 아우가리 상자",	-- Missing Augari Chest
 	[277373] = "반짝이는 해초",	-- Glimmering Seaweed
 	[277459] = "돼지 입상",	-- Pig Effigy

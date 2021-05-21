@@ -2871,7 +2871,7 @@ for key,value in pairs({
 	[356700] = "Tribut extravagant du grand maître Vole",	-- Grandmaster Vole's Extravagant Tribute
 	[356705] = "Tribut extravagant de Marileth, catalyseur de peste",	-- Plague Deviser Marileth's Extravagant Tribute
 	--TODO: [356709] = "Lady Moonberry's Extravagant Tribute",	-- Lady Moonberry's Extravagant Tribute
-	--TODO: [356712] = "Hunt-Captain Korayn's Extravagant Tribute",	-- Hunt-Captain Korayn's Extravagant Tribute
+	[356712] = "Tribut extravagant du capitaine de l’Hallali Korayn",	-- Hunt-Captain Korayn's Extravagant Tribute
 	[356716] = "Tribut extravagant de la dromane Aliothe",	-- Droman Aliothe's Extravagant Tribute
 	[356720] = "Tribut extravagant de Choufa",	-- Choofa's Extravagant Tribute
 	--TODO: [356725] = "Polemarch Adrestes' Extravagant Tribute",	-- Polemarch Adrestes' Extravagant Tribute

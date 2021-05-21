@@ -2393,7 +2393,7 @@ for key, value in pairs({
 	--TODO: [276227] = "Augari Secret Stash",	-- Augari Secret Stash
 	--TODO: [276228] = "Desperate Eredar's Cache",	-- Desperate Eredar's Cache
 	[276229] = "房屋废墟宝箱",	-- Shattered House Chest
-	--TODO: [276230] = "Doomseeker's Treasure",	-- Doomseeker's Treasure
+	[276230] = "末日追寻者的宝藏",	-- Doomseeker's Treasure
 	[276251] = "挖掘清单",	-- Excavation Inventory
 	[276488] = "艾泽里特炮弹",	-- Azurite Cannonball
 	[276489] = "军团塔楼宝箱",	-- Legion Tower Chest
