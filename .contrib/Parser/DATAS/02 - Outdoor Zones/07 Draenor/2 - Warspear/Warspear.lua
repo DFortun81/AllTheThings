@@ -1512,15 +1512,678 @@ _.Zones =
 							},
 						}),
 						n(93917, {	-- Malukah Lightsong <Warmongering Gladiator>
+							["races"] = HORDE_ONLY,	-- to hide it in Mark of Honor list
 							["coord"] = { 48.9, 57.3, 624 },
-							["sym"] = {
-								{"sub", "pvp_gear_faction_base", -9981, -681, -9913, -661 },
-								{"pop"},
-								{"exclude", "headerID", -384 },	-- Exclude Neck
-								{"exclude", "headerID", -385 },	-- Exclude Finger
-								{"exclude", "headerID", -386 },	-- Exclude Tinket
-							},
 							["g"] = {
+								n(-319, {	-- Weapons
+									i(138636, {	-- Arsenal: Warmongering Gladiator's Weapons (H)
+										["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
+										["sym"] = { 
+											{"sub", "pvp_weapons_faction_ensemble", -9981, -681, -9913, -661 },
+											{"exclude", "itemID", 138636 },	-- Exclude itself to stop duplicating
+										},
+									}),
+									i(126342, {	-- Warmongering Gladiator's Barrier (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126322, {	-- Warmongering Gladiator's Baton of Light (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126324, {	-- Warmongering Gladiator's Battle Staff (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126432, {	-- Warmongering Gladiator's Bonecracker (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126435, {	-- Warmongering Gladiator's Bonegrinder (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126268, {	-- Warmongering Gladiator's Cleaver (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126434, {	-- Warmongering Gladiator's Decapitator (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126334, {	-- Warmongering Gladiator's Endgame (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126325, {	-- Warmongering Gladiator's Energy Staff (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126320, {	-- Warmongering Gladiator's Gavel (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126436, {	-- Warmongering Gladiator's Greatsword (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126430, {	-- Warmongering Gladiator's Hacker (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126274, {	-- Warmongering Gladiator's Heavy Crossbow (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126273, {	-- Warmongering Gladiator's Longbow (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126321, {	-- Warmongering Gladiator's Mageblade (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126276, {	-- Warmongering Gladiator's Pike (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126271, {	-- Warmongering Gladiator's Pummeler (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126272, {	-- Warmongering Gladiator's Quickblade (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126341, {	-- Warmongering Gladiator's Redoubt (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126431, {	-- Warmongering Gladiator's Render (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126335, {	-- Warmongering Gladiator's Reprieve (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126275, {	-- Warmongering Gladiator's Rifle (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126270, {	-- Warmongering Gladiator's Ripper (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126269, {	-- Warmongering Gladiator's Shanker (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126444, {	-- Warmongering Gladiator's Shield Wall (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126433, {	-- Warmongering Gladiator's Slicer (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126319, {	-- Warmongering Gladiator's Spellblade (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126277, {	-- Warmongering Gladiator's Staff (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126323, {	-- Warmongering Gladiator's Touch of Defeat (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+								}),
+								cl(DEATHKNIGHT, {
+									i(138494, {	-- Ensemble: Warmongering Gladiator's Dreadplate Armor (H)
+										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+										["sym"] = {
+											{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -661, 6 },
+											{"select", "itemID", 126402 },	-- Warmongering Gladiator's Armplates of Cruelty (H)
+											{"select", "itemID", 126396 },	-- Warmongering Gladiator's Girdle of Cruelty (H)
+											{"select", "itemID", 126401 },	-- Warmongering Gladiator's Warboots of Victory (H)
+											{"exclude", "itemID", 138494 },	-- Exclude itself to stop duplicating
+										},
+									}),
+									i(126306, {	-- Warmongering Gladiator's Dreadplate Helm (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126308, {	-- Warmongering Gladiator's Dreadplate Shoulders (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126304, {	-- Warmongering Gladiator's Dreadplate Chestpiece (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126305, {	-- Warmongering Gladiator's Dreadplate Gauntlets (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126307, {	-- Warmongering Gladiator's Dreadplate Legguards (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+								}),
+								cl(DRUID, {
+									i(138502, {	-- Ensemble: Warmongering Gladiator's Dragonhide Armor (H)
+										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+										["sym"] = {
+											{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -661, 11 },
+											{"select", "itemID", 126351 },	-- Warmongering Gladiator's Bindings of Victory (H)
+											{"select", "itemID", 126345 },	-- Warmongering Gladiator's Belt of Victory (H)
+											{"select", "itemID", 126347 },	-- Warmongering Gladiator's Boots of Prowess (H)
+											{"exclude", "itemID", 138502 },	-- Exclude itself to stop duplicating
+										},
+									}),
+									i(126309, {	-- Warmongering Gladiator's Dragonhide Gloves (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126310, {	-- Warmongering Gladiator's Dragonhide Helm (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126311, {	-- Warmongering Gladiator's Dragonhide Legguards (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126312, {	-- Warmongering Gladiator's Dragonhide Robes (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126313, {	-- Warmongering Gladiator's Dragonhide Spaulders (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+								}),
+								cl(HUNTER, {
+									i(138500, {	-- Ensemble: Warmongering Gladiator's Chain Armor (H)
+										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+										["sym"] = {
+											{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -661, 3 },
+											{"select", "itemID", 126374 },	-- Warmongering Gladiator's Armbands of Cruelty (H)
+											{"select", "itemID", 126367 },	-- Warmongering Gladiator's Waistguard of Cruelty (H)
+											{"select", "itemID", 126371 },	-- Warmongering Gladiator's Footguards of Prowess (H)
+											{"exclude", "itemID", 138500 },	-- Exclude itself to stop duplicating
+										},
+									}),
+									i(126314, {	-- Warmongering Gladiator's Chain Armor (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126315, {	-- Warmongering Gladiator's Chain Gauntlets (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126316, {	-- Warmongering Gladiator's Chain Helm (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126317, {	-- Warmongering Gladiator's Chain Leggings (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126318, {	-- Warmongering Gladiator's Chain Spaulders (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+								}),
+								cl(MAGE, {
+									i(138508, {	-- Ensemble: Warmongering Gladiator's Silk Armor (H)
+										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+										["sym"] = {
+											{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -661, 8 },
+											{"select", "itemID", 126291 },	-- Warmongering Gladiator's Cuffs of Prowess (H)
+											{"select", "itemID", 126285 },	-- Warmongering Gladiator's Cord of Cruelty (H)
+											{"select", "itemID", 126289 },	-- Warmongering Gladiator's Treads of Prowess (H)
+											{"exclude", "itemID", 138508 },	-- Exclude itself to stop duplicating
+										},
+									}),
+									i(126366, {	-- Warmongering Gladiator's Silk Amice (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126363, {	-- Warmongering Gladiator's Silk Cowl (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126362, {	-- Warmongering Gladiator's Silk Handguards (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126365, {	-- Warmongering Gladiator's Silk Robe (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126364, {	-- Warmongering Gladiator's Silk Trousers (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+								}),
+								cl(MONK, {
+									i(138504, {	-- Ensemble: Warmongering Gladiator's Ironskin Armor (H)
+										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+										["sym"] = {
+											{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -661, 10 },
+											{"select", "itemID", 126349 },	-- Warmongering Gladiator's Bindings of Cruelty (H)
+											{"select", "itemID", 126397 },	-- Warmongering Gladiator's Girdle of Prowess (H)
+											{"select", "itemID", 126348 },	-- Warmongering Gladiator's Boots of Victory (H)
+											{"exclude", "itemID", 138504 },	-- Exclude itself to stop duplicating
+										},
+									}),
+									i(126386, {	-- Warmongering Gladiator's Ironskin Gloves (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126387, {	-- Warmongering Gladiator's Ironskin Helm (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126388, {	-- Warmongering Gladiator's Ironskin Legguards (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126389, {	-- Warmongering Gladiator's Ironskin Spaulders (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126390, {	-- Warmongering Gladiator's Ironskin Tunic (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+								}),
+								cl(PALADIN, {
+									i(138496, {	-- Ensemble: Warmongering Gladiator's Scaled Armor (H)
+										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+										["sym"] = {
+											{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -661, 2 },
+											{"select", "itemID", 126404 },	-- Warmongering Gladiator's Armplates of Victory (H)
+											{"select", "itemID", 126398 },	-- Warmongering Gladiator's Girdle of Victory (H)
+											{"select", "itemID", 126400 },	-- Warmongering Gladiator's Warboots of Prowess (H)
+											{"exclude", "itemID", 138496 },	-- Exclude itself to stop duplicating
+										},
+									}),
+									i(126391, {	-- Warmongering Gladiator's Scaled Chestpiece (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126392, {	-- Warmongering Gladiator's Scaled Gauntlets (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126393, {	-- Warmongering Gladiator's Scaled Helm (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126394, {	-- Warmongering Gladiator's Scaled Legguards (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126395, {	-- Warmongering Gladiator's Scaled Shoulders (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+								}),
+								cl(PRIEST, {
+									i(138510, {	-- Ensemble: Warmongering Gladiator's Satin Armor (H)
+										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+										["sym"] = {
+											{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -661, 5 },
+											{"select", "itemID", 126293 },	-- Warmongering Gladiator's Cuffs of Victory (H)
+											{"select", "itemID", 126287 },	-- Warmongering Gladiator's Cord of Victory (H)
+											{"select", "itemID", 126288 },	-- Warmongering Gladiator's Treads of Cruelty (H)
+											{"exclude", "itemID", 138510 },	-- Exclude itself to stop duplicating
+										},
+									}),
+									i(126415, {	-- Warmongering Gladiator's Satin Gloves (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126416, {	-- Warmongering Gladiator's Satin Hood (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126417, {	-- Warmongering Gladiator's Satin Leggings (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126419, {	-- Warmongering Gladiator's Satin Mantle (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126418, {	-- Warmongering Gladiator's Satin Robe (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+								}),
+								cl(ROGUE, {
+									i(138506, {	-- Ensemble: Warmongering Gladiator's Leather Armor (H)
+										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+										["sym"] = {
+											{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -661, 4 },
+											{"select", "itemID", 126291 },	-- Warmongering Gladiator's Bindings of Prowess (H)
+											{"select", "itemID", 126344 },	-- Warmongering Gladiator's Belt of Cruelty (H)
+											{"select", "itemID", 126346 },	-- Warmongering Gladiator's Boots of Cruelty (H)
+											{"exclude", "itemID", 138506 },	-- Exclude itself to stop duplicating
+										},
+									}),
+									i(126421, {	-- Warmongering Gladiator's Leather Gloves (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126422, {	-- Warmongering Gladiator's Leather Helm (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126423, {	-- Warmongering Gladiator's Leather Legguards (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126424, {	-- Warmongering Gladiator's Leather Spaulders (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126420, {	-- Warmongering Gladiator's Leather Tunic (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+								}),
+								cl(SHAMAN, {
+									i(138498, {	-- Ensemble: Warmongering Gladiator's Ringmail Armor (H)
+										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+										["sym"] = {
+											{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -661, 7 },
+											{"select", "itemID", 139030 },	-- Warmongering Gladiator's Armbands of Alacrity (H)
+											{"select", "itemID", 126368 },	-- Warmongering Gladiator's Waistguard of Prowess (H)
+											{"select", "itemID", 126370 },	-- Warmongering Gladiator's Footguards of Cruelty (H)
+											{"exclude", "itemID", 138498 },	-- Exclude itself to stop duplicating
+										},
+									}),
+									i(126425, {	-- Warmongering Gladiator's Ringmail Armor (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126426, {	-- Warmongering Gladiator's Ringmail Gauntlets (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126427, {	-- Warmongering Gladiator's Ringmail Helm (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126428, {	-- Warmongering Gladiator's Ringmail Kilt (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126429, {	-- Warmongering Gladiator's Ringmail Spaulders (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+								}),
+								cl(WARLOCK, {
+									i(138512, {	-- Ensemble: Warmongering Gladiator's Felweave Armor (H)
+										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+										["sym"] = {
+											{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -661, 9 },
+											{"select", "itemID", 126293 },	-- Warmongering Gladiator's Cuffs of Cruelty (H)
+											{"select", "itemID", 126286 },	-- Warmongering Gladiator's Cord of Prowess (H)
+											{"select", "itemID", 126290 },	-- Warmongering Gladiator's Treads of Victory (H)
+											{"exclude", "itemID", 138512 },	-- Exclude itself to stop duplicating
+										},
+									}),
+									i(126470, {	-- Warmongering Gladiator's Felweave Amice (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126467, {	-- Warmongering Gladiator's Felweave Cowl (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126466, {	-- Warmongering Gladiator's Felweave Handguards (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126469, {	-- Warmongering Gladiator's Felweave Raiment (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126468, {	-- Warmongering Gladiator's Felweave Trousers (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+								}),
+								cl(WARRIOR, {
+									i(138492, {	-- Ensemble: Warmongering Gladiator's Plate Armor (H)
+										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+										["sym"] = {
+											{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -661, 9 },
+											{"select", "itemID", 126403 },	-- Warmongering Gladiator's Armplates of Prowess (H)
+											{"select", "itemID", 126397 },	-- Warmongering Gladiator's Girdle of Prowess (H)
+											{"select", "itemID", 126399 },	-- Warmongering Gladiator's Warboots of Cruelty (H)
+											{"exclude", "itemID", 138492 },	-- Exclude itself to stop duplicating
+										},
+									}),
+									i(126471, {	-- Warmongering Gladiator's Plate Chestpiece (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126472, {	-- Warmongering Gladiator's Plate Gauntlets (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126407, {	-- Warmongering Gladiator's Plate Helmet (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126474, {	-- Warmongering Gladiator's Plate Legguards (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126475, {	-- Warmongering Gladiator's Plate Shoulders (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+								}),
+								n(-320, {	-- Head
+									i(126300, {	-- Warmongering Gladiator's Cowl of Cruelty (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126295, {	-- Warmongering Gladiator's Hood of Prowess (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126359, {	-- Warmongering Gladiator's Headcover (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126354, {	-- Warmongering Gladiator's Helm (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126383, {	-- Warmongering Gladiator's Coif (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126378, {	-- Warmongering Gladiator's Helm (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126407, {	-- Warmongering Gladiator's Plate Helmet (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126412, {	-- Warmongering Gladiator's Plate Visor (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+								}),
+								n(-321, {	-- Shoulders
+									i(126298, {	-- Warmongering Gladiator's Amice of Prowess (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126303, {	-- Warmongering Gladiator's Mantle of Cruelty (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126361, {	-- Warmongering Gladiator's Pauldrons (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126356, {	-- Warmongering Gladiator's Spaulders (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126385, {	-- Warmongering Gladiator's Pauldrons (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126380, {	-- Warmongering Gladiator's Spaulders (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126414, {	-- Warmongering Gladiator's Plate Pauldrons (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126409, {	-- Warmongering Gladiator's Shoulderplates (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+								}),
+								n(-322, {	-- Back
+									i(126278, {	-- Warmongering Gladiator's Cape of Cruelty (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126279, {	-- Warmongering Gladiator's Cape of Prowess (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126437, {	-- Warmongering Gladiator's Cloak of Cruelty (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126445, {	-- Warmongering Gladiator's Cloak of Endurance (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126438, {	-- Warmongering Gladiator's Cloak of Prowess (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126329, {	-- Warmongering Gladiator's Drape of Contemplation (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126326, {	-- Warmongering Gladiator's Drape of Cruelty (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126328, {	-- Warmongering Gladiator's Drape of Meditation (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126327, {	-- Warmongering Gladiator's Drape of Prowess (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+								}),
+								n(-323, {	-- Chest
+									i(126302, {	-- Warmongering Gladiator's Raiment of Cruelty (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126297, {	-- Warmongering Gladiator's Robes of Prowess (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126357, {	-- Warmongering Gladiator's Chestguard (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126352, {	-- Warmongering Gladiator's Tunic (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126376, {	-- Warmongering Gladiator's Armor (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126381, {	-- Warmongering Gladiator's Chestguard (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126405, {	-- Warmongering Gladiator's Plate Breastplate (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126410, {	-- Warmongering Gladiator's Plate Chestguard (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+								}),
+								n(-326, {	-- Wrists
+									i(126292, {	-- Warmongering Gladiator's Cuffs of Cruelty (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126291, {	-- Warmongering Gladiator's Cuffs of Prowess (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126293, {	-- Warmongering Gladiator's Cuffs of Victory (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126349, {	-- Warmongering Gladiator's Bindings of Cruelty (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126350, {	-- Warmongering Gladiator's Bindings of Prowess (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126351, {	-- Warmongering Gladiator's Bindings of Victory (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(139030, {	-- Warmongering Gladiator's Armbands of Alacrity (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126374, {	-- Warmongering Gladiator's Armbands of Cruelty (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126373, {	-- Warmongering Gladiator's Armbands of Prowess (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126375, {	-- Warmongering Gladiator's Armbands of Victory (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126402, {	-- Warmongering Gladiator's Armplates of Cruelty (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126403, {	-- Warmongering Gladiator's Armplates of Prowess (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126404, {	-- Warmongering Gladiator's Armplates of Victory (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+								}),
+								n(-327, {	-- Hands
+									i(126294, {	-- Warmongering Gladiator's Gloves of Prowess (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126299, {	-- Warmongering Gladiator's Handguards of Cruelty (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126353, {	-- Warmongering Gladiator's Gloves (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126358, {	-- Warmongering Gladiator's Grips (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126377, {	-- Warmongering Gladiator's Gauntlets (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126382, {	-- Warmongering Gladiator's Gloves (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126406, {	-- Warmongering Gladiator's Plate Gloves (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126411, {	-- Warmongering Gladiator's Plate Grips (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+								}),
+								n(-328, {	-- Waist
+									i(126285, {	-- Warmongering Gladiator's Cord of Cruelty (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126286, {	-- Warmongering Gladiator's Cord of Prowess (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126287, {	-- Warmongering Gladiator's Cord of Victory (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126344, {	-- Warmongering Gladiator's Belt of Cruelty (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126343, {	-- Warmongering Gladiator's Belt of Prowess (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126345, {	-- Warmongering Gladiator's Belt of Victory (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126367, {	-- Warmongering Gladiator's Waistguard of Cruelty (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126368, {	-- Warmongering Gladiator's Waistguard of Prowess (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126369, {	-- Warmongering Gladiator's Waistguard of Victory (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126396, {	-- Warmongering Gladiator's Girdle of Cruelty (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126397, {	-- Warmongering Gladiator's Girdle of Prowess (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126398, {	-- Warmongering Gladiator's Girdle of Victory (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+								}),
+								n(-329, {	-- Legs
+									i(126296, {	-- Warmongering Gladiator's Leggings of Prowess (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126301, {	-- Warmongering Gladiator's Trousers of Cruelty (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126360, {	-- Warmongering Gladiator's Leggings (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126355, {	-- Warmongering Gladiator's Legguards (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126379, {	-- Warmongering Gladiator's Leggings (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126384, {	-- Warmongering Gladiator's Leggings (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126408, {	-- Warmongering Gladiator's Legplates (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126413, {	-- Warmongering Gladiator's Plate Leggings (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+								}),
+								n(-330, {	-- Feet
+									i(126288, {	-- Warmongering Gladiator's Treads of Cruelty (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126289, {	-- Warmongering Gladiator's Treads of Prowess (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126290, {	-- Warmongering Gladiator's Treads of Victory (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126346, {	-- Warmongering Gladiator's Boots of Cruelty (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126347, {	-- Warmongering Gladiator's Boots of Prowess (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126348, {	-- Warmongering Gladiator's Boots of Victory (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126370, {	-- Warmongering Gladiator's Footguards of Cruelty (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126371, {	-- Warmongering Gladiator's Footguards of Prowess (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126372, {	-- Warmongering Gladiator's Footguards of Victory (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126399, {	-- Warmongering Gladiator's Warboots of Cruelty (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126400, {	-- Warmongering Gladiator's Warboots of Prowess (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126401, {	-- Warmongering Gladiator's Warboots of Victory (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+								}),
 								i(116775, {	-- Breezestrider Stallion
 									["cost"] = {
 										{ "i", 137642, 100 },	-- 100x Mark of Honor
@@ -1763,20 +2426,522 @@ _.Zones =
 							},
 						}),
 						n(93916, {	-- Tae'loxe Soulshrivel <Warmongering Combatant>
-							["coord"] = { 49.2, 57.1, 624 },
-							["sym"] = {
-								{"sub", "pvp_gear_faction_base", -9981, -681, -9913, -660 },
-								{"pop"},
-								{"exclude", "headerID", -320 },	-- Exclude Head Header
-								{"exclude", "headerID", -321 },	-- Exclude Shoulder Header
-								{"exclude", "headerID", -323 },	-- Exclude Chest Header
-								{"exclude", "headerID", -327 },	-- Exclude Hands Header
-								{"exclude", "headerID", -329 },	-- Exclude Legs Header
-								{"exclude", "headerID", -384 },	-- Exclude Neck
-								{"exclude", "headerID", -385 },	-- Exclude Finger
-								{"exclude", "headerID", -386 },	-- Exclude Tinket
-								-- Need to exclude the back slot because Blizzard messed it up and put the Wild Combatant's Gear on this vendor too instead of Warmongering Combatant's Gear
-								{"exclude", "headerID", -322 },	-- Exclude Back Header
+							["g"] = {
+								n(-319, {	-- Weapons
+									i(138627, {	-- Arsenal: Warmongering Combatant's Weapons (H)
+										["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
+										["sym"] = { 
+											{"sub", "pvp_weapons_faction_ensemble", -9981, -681, -9913, -660 },
+											{"exclude", "itemID", 138627 },	-- Exclude itself to stop duplicating
+										},
+									}),
+									i(126542, {	-- Warmongering Combatant's Barrier (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126522, {	-- Warmongering Combatant's Baton of Light (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126524, {	-- Warmongering Combatant's Battle Staff (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126608, {	-- Warmongering Combatant's Bonecracker (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126611, {	-- Warmongering Combatant's Bonegrinder (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(127378, {	-- Warmongering Combatant's Chopper (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126476, {	-- Warmongering Combatant's Cleaver (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126610, {	-- Warmongering Combatant's Decapitator (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126534, {	-- Warmongering Combatant's Endgame (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126525, {	-- Warmongering Combatant's Energy Staff (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126520, {	-- Warmongering Combatant's Gavel (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126612, {	-- Warmongering Combatant's Greatsword (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126606, {	-- Warmongering Combatant's Hacker (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126482, {	-- Warmongering Combatant's Heavy Crossbow (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126481, {	-- Warmongering Combatant's Longbow (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126521, {	-- Warmongering Combatant's Mageblade (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126484, {	-- Warmongering Combatant's Pike (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126479, {	-- Warmongering Combatant's Pummeler (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126480, {	-- Warmongering Combatant's Quickblade (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126541, {	-- Warmongering Combatant's Redoubt (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126607, {	-- Warmongering Combatant's Render (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126535, {	-- Warmongering Combatant's Reprieve (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126483, {	-- Warmongering Combatant's Rifle (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126478, {	-- Warmongering Combatant's Ripper (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126477, {	-- Warmongering Combatant's Shanker (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126620, {	-- Warmongering Combatant's Shield Wall (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126609, {	-- Warmongering Combatant's Slicer (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126519, {	-- Warmongering Combatant's Spellblade (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126485, {	-- Warmongering Combatant's Staff (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(126523, {	-- Warmongering Combatant's Touch of Defeat (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+								}),
+								cl(DEATHKNIGHT, {
+									i(138590, {	-- Ensemble: Warmongering Combatant's Dreadplate Armor (H)
+										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+										["sym"] = {
+											{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -660, 6 },
+											{"select", "itemID", 126584 },	-- Warmongering Combatant's Armplates of Cruelty (H)
+											{"select", "itemID", 126580 },	-- Warmongering Combatant's Girdle of Cruelty (H)
+											{"select", "itemID", 126582 },	-- Warmongering Combatant's Warboots of Cruelty (H)
+											{"exclude", "itemID", 138590 },	-- Exclude itself to stop duplicating
+										},
+									}),
+									i(126504, {	-- Warmongering Combatant's Dreadplate Chestpiece (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126505, {	-- Warmongering Combatant's Dreadplate Gauntlets (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126506, {	-- Warmongering Combatant's Dreadplate Helm (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126507, {	-- Warmongering Combatant's Dreadplate Legguards (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126508, {	-- Warmongering Combatant's Dreadplate Shoulders (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+								}),
+								cl(DRUID, {
+									i(138594, {	-- Ensemble: Warmongering Combatant's Dragonhide Armor (H)
+										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+										["sym"] = {
+											{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -660, 11 },
+											{"select", "itemID", 126547 },	-- Warmongering Combatant's Bindings of Cruelty (H)
+											{"select", "itemID", 126544 },	-- Warmongering Combatant's Belt of Cruelty (H)
+											{"select", "itemID", 126545 },	-- Warmongering Combatant's Boots of Cruelty (H)
+											{"exclude", "itemID", 138594 },	-- Exclude itself to stop duplicating
+										},
+									}),
+									i(126509, {	-- Warmongering Combatant's Dragonhide Gloves (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126510, {	-- Warmongering Combatant's Dragonhide Helm (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126511, {	-- Warmongering Combatant's Dragonhide Legguards (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126513, {	-- Warmongering Combatant's Dragonhide Spaulders (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126512, {	-- Warmongering Combatant's Dragonhide Tunic (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+								}),
+								cl(HUNTER, {
+									i(138538, {	-- Ensemble: Warmongering Combatant's Chain Armor (H)
+										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+										["sym"] = {
+											{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -660, 3 },
+											{"select", "itemID", 126564 },	-- Warmongering Combatant's Armbands of Cruelty (H)
+											{"select", "itemID", 126559 },	-- Warmongering Combatant's Waistguard of Cruelty (H)
+											{"select", "itemID", 126561 },	-- Warmongering Combatant's Footguards of Cruelty (H)
+											{"exclude", "itemID", 138538 },	-- Exclude itself to stop duplicating
+										},
+									}),
+									i(126514, {	-- Warmongering Combatant's Chain Armor (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126515, {	-- Warmongering Combatant's Chain Gauntlets (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126516, {	-- Warmongering Combatant's Chain Helm (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126517, {	-- Warmongering Combatant's Chain Leggings (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126518, {	-- Warmongering Combatant's Chain Spaulders (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+								}),
+								cl(MAGE, {
+									i(138540, {	-- Ensemble: Warmongering Combatant's Silk Armor (H)
+										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+										["sym"] = {
+											{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -660, 8 },
+											{"select", "itemID", 126498 },	-- Warmongering Combatant's Cuffs of Cruelty (H)
+											{"select", "itemID", 126493 },	-- Warmongering Combatant's Cord of Cruelty (H)
+											{"select", "itemID", 126495 },	-- Warmongering Combatant's Treads of Cruelty (H)
+											{"exclude", "itemID", 138540 },	-- Exclude itself to stop duplicating
+										},
+									}),
+									i(126558, {	-- Warmongering Combatant's Silk Amice (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126555, {	-- Warmongering Combatant's Silk Cowl (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126554, {	-- Warmongering Combatant's Silk Handguards (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126557, {	-- Warmongering Combatant's Silk Robe (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126556, {	-- Warmongering Combatant's Silk Trousers (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+								}),
+								cl(MONK, {
+									i(138596, {	-- Ensemble: Warmongering Combatant's Ironskin Armor (H)
+										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+										["sym"] = {
+											{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -660, 10 },
+											{"select", "itemID", 126547 },	-- Warmongering Combatant's Bindings of Cruelty (H)
+											{"select", "itemID", 126544 },	-- Warmongering Combatant's Belt of Cruelty (H)
+											{"select", "itemID", 126545 },	-- Warmongering Combatant's Boots of Cruelty (H)
+											{"exclude", "itemID", 138596 },	-- Exclude itself to stop duplicating
+										},
+									}),
+									i(126570, {	-- Warmongering Combatant's Ironskin Gloves (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126571, {	-- Warmongering Combatant's Ironskin Helm (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126572, {	-- Warmongering Combatant's Ironskin Legguards (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126573, {	-- Warmongering Combatant's Ironskin Spaulders (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126574, {	-- Warmongering Combatant's Ironskin Tunic (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+								}),
+								cl(PALADIN, {
+									i(138592, {	-- Ensemble: Warmongering Combatant's Scaled Armor (H)
+										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+										["sym"] = {
+											{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -660, 2 },
+											{"select", "itemID", 126584 },	-- Warmongering Combatant's Armplates of Cruelty (H)
+											{"select", "itemID", 126580 },	-- Warmongering Combatant's Girdle of Cruelty (H)
+											{"select", "itemID", 126582 },	-- Warmongering Combatant's Warboots of Cruelty (H)
+											{"exclude", "itemID", 138592 },	-- Exclude itself to stop duplicating
+										},
+									}),
+									i(126575, {	-- Warmongering Combatant's Scaled Chestpiece (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126576, {	-- Warmongering Combatant's Scaled Gauntlets (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126577, {	-- Warmongering Combatant's Scaled Helm (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126578, {	-- Warmongering Combatant's Scaled Legguards (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126579, {	-- Warmongering Combatant's Scaled Shoulders (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+								}),
+								cl(PRIEST, {
+									i(138542, {	-- Ensemble: Warmongering Combatant's Satin Armor (H)
+										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+										["sym"] = {
+											{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -660, 5 },
+											{"select", "itemID", 126498 },	-- Warmongering Combatant's Cuffs of Cruelty (H)
+											{"select", "itemID", 126493 },	-- Warmongering Combatant's Cord of Cruelty (H)
+											{"select", "itemID", 126495 },	-- Warmongering Combatant's Treads of Cruelty (H)
+											{"exclude", "itemID", 138542 },	-- Exclude itself to stop duplicating
+										},
+									}),
+									i(126591, {	-- Warmongering Combatant's Satin Gloves (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126592, {	-- Warmongering Combatant's Satin Hood (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126593, {	-- Warmongering Combatant's Satin Leggings (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126595, {	-- Warmongering Combatant's Satin Mantle (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126594, {	-- Warmongering Combatant's Satin Robe (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+								}),
+								cl(ROGUE, {
+									i(138598, {	-- Ensemble: Warmongering Combatant's Leather Armor (H)
+										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+										["sym"] = {
+											{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -660, 4 },
+											{"select", "itemID", 126547 },	-- Warmongering Combatant's Bindings of Cruelty (H)
+											{"select", "itemID", 126544 },	-- Warmongering Combatant's Belt of Cruelty (H)
+											{"select", "itemID", 126545 },	-- Warmongering Combatant's Boots of Cruelty (H)
+											{"exclude", "itemID", 138598 },	-- Exclude itself to stop duplicating
+										},
+									}),
+									i(126597, {	-- Warmongering Combatant's Leather Gloves (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126598, {	-- Warmongering Combatant's Leather Helm (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126599, {	-- Warmongering Combatant's Leather Legguards (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126600, {	-- Warmongering Combatant's Leather Spaulders (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126596, {	-- Warmongering Combatant's Leather Tunic (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+								}),
+								cl(SHAMAN, {
+									i(138536, {	-- Ensemble: Warmongering Combatant's Ringmail Armor (H)
+										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+										["sym"] = {
+											{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -660, 7 },
+											{"select", "itemID", 126564 },	-- Warmongering Combatant's Armbands of Cruelty (H)
+											{"select", "itemID", 126559 },	-- Warmongering Combatant's Waistguard of Cruelty (H)
+											{"select", "itemID", 126561 },	-- Warmongering Combatant's Footguards of Cruelty (H)
+											{"exclude", "itemID", 138536 },	-- Exclude itself to stop duplicating
+										},
+									}),
+									i(126601, {	-- Warmongering Combatant's Ringmail Armor (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126602, {	-- Warmongering Combatant's Ringmail Gauntlets (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126603, {	-- Warmongering Combatant's Ringmail Helm (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126604, {	-- Warmongering Combatant's Ringmail Leggings (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126605, {	-- Warmongering Combatant's Ringmail Spaulders (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+								}),
+								cl(WARLOCK, {
+									i(138544, {	-- Ensemble: Warmongering Combatant's Felweave Armor (H)
+										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+										["sym"] = {
+											{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -660, 9 },
+											{"select", "itemID", 126498 },	-- Warmongering Combatant's Cuffs of Cruelty (H)
+											{"select", "itemID", 126493 },	-- Warmongering Combatant's Cord of Cruelty (H)
+											{"select", "itemID", 126495 },	-- Warmongering Combatant's Treads of Cruelty (H)
+											{"exclude", "itemID", 138544 },	-- Exclude itself to stop duplicating
+										},
+									}),
+									i(126648, {	-- Warmongering Combatant's Felweave Amice (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126645, {	-- Warmongering Combatant's Felweave Cowl (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126644, {	-- Warmongering Combatant's Felweave Handguards (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126647, {	-- Warmongering Combatant's Felweave Raiment (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126646, {	-- Warmongering Combatant's Felweave Trousers (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+								}),
+								cl(WARRIOR, {
+									i(138588, {	-- Ensemble: Warmongering Combatant's Plate Armor (H)
+										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+										["sym"] = {
+											{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -660, 1 },
+											{"select", "itemID", 126584 },	-- Warmongering Combatant's Armplates of Cruelty (H)
+											{"select", "itemID", 126580 },	-- Warmongering Combatant's Girdle of Cruelty (H)
+											{"select", "itemID", 126582 },	-- Warmongering Combatant's Warboots of Cruelty (H)
+											{"exclude", "itemID", 138588 },	-- Exclude itself to stop duplicating
+										},
+									}),
+									i(126649, {	-- Warmongering Combatant's Plate Chestpiece (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126650, {	-- Warmongering Combatant's Plate Gauntlets (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126651, {	-- Warmongering Combatant's Plate Helm (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126652, {	-- Warmongering Combatant's Plate Legguards (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(126653, {	-- Warmongering Combatant's Plate Shoulders (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+								}),
+								n(-320, {	-- Head
+									i(126500),	-- Warmongering Combatant's Hood of Prowess (H)
+									i(126551),	-- Warmongering Combatant's Helm (H)
+									i(126567),	-- Warmongering Combatant's Helm (H)
+									i(126588),	-- Warmongering Combatant's Plate Helmet (H)
+								}),
+								n(-321, {	-- Shoulders
+									i(126503),	-- Warmongering Combatant's Amice of Prowess (H)
+									i(126553),	-- Warmongering Combatant's Spaulders (H)
+									i(126569),	-- Warmongering Combatant's Spaulders (H)
+									i(126590),	-- Warmongering Combatant's Shoulderplates (H)
+								}),
+								n(-322, {	-- Back
+									i(126486),	-- Warmongering Combatant's Cape of Cruelty (H)
+									i(126487),	-- Warmongering Combatant's Cape of Prowess (H)
+									i(126613),	-- Warmongering Combatant's Cloak of Cruelty (H)
+									i(126640),	-- Warmongering Combatant's Cloak of Endurance (H)
+									i(126614),	-- Warmongering Combatant's Cloak of Prowess (H)
+									i(126529),	-- Warmongering Combatant's Drape of Contemplation (H)
+									i(126526),	-- Warmongering Combatant's Drape of Cruelty (H)
+									i(126528),	-- Warmongering Combatant's Drape of Meditation (H)
+									i(126527),	-- Warmongering Combatant's Drape of Prowess (H)
+								}),
+								n(-323, {	-- Chest
+									i(126502),	-- Warmongering Combatant's Robes of Prowess (H)
+									i(126549),	-- Warmongering Combatant's Tunic (H)
+									i(126565),	-- Warmongering Combatant's Armor (H)
+									i(126586),	-- Warmongering Combatant's Plate Breastplate (H)
+								}),
+								n(-326, {	-- Wrists
+									i(126498, {	-- Warmongering Combatant's Cuffs of Cruelty (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126497, {	-- Warmongering Combatant's Cuffs of Prowess (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126547, {	-- Warmongering Combatant's Bindings of Cruelty (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126548, {	-- Warmongering Combatant's Bindings of Prowess (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126564, {	-- Warmongering Combatant's Armbands of Cruelty (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126563, {	-- Warmongering Combatant's Armbands of Prowess (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126584, {	-- Warmongering Combatant's Armplates of Cruelty (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126585, {	-- Warmongering Combatant's Armplates of Prowess (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+								}),
+								n(-327, {	-- Hands
+									i(126499),	-- Warmongering Combatant's Gloves of Prowess (H)
+									i(126550),	-- Warmongering Combatant's Gloves (H)
+									i(126566),	-- Warmongering Combatant's Gauntlets (H)
+									i(126587),	-- Warmongering Combatant's Plate Gloves (H)
+								}),
+								n(-328, {	-- Waist
+									i(126493, {	-- Warmongering Combatant's Cord of Cruelty (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126494, {	-- Warmongering Combatant's Cord of Prowess (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126544, {	-- Warmongering Combatant's Belt of Cruelty (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126543, {	-- Warmongering Combatant's Belt of Prowess (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126559, {	-- Warmongering Combatant's Waistguard of Cruelty (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126560, {	-- Warmongering Combatant's Waistguard of Prowess (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126580, {	-- Warmongering Combatant's Girdle of Cruelty (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(126581, {	-- Warmongering Combatant's Girdle of Prowess (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+								}),
+								n(-329, {	-- Legs
+									i(126501),	-- Warmongering Combatant's Leggings of Prowess (H)
+									i(126552),	-- Warmongering Combatant's Legguards (H)
+									i(126568),	-- Warmongering Combatant's Leggings (H)
+									i(126589),	-- Warmongering Combatant's Legplates (H)
+								}),
+								n(-330, {	-- Feet
+									i(126495, {	-- Warmongering Combatant's Treads of Cruelty (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126496, {	-- Warmongering Combatant's Treads of Prowess (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126545, {	-- Warmongering Combatant's Boots of Cruelty (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126546, {	-- Warmongering Combatant's Boots of Prowess (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126561, {	-- Warmongering Combatant's Footguards of Cruelty (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126562, {	-- Warmongering Combatant's Footguards of Prowess (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126582, {	-- Warmongering Combatant's Warboots of Cruelty (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(126583, {	-- Warmongering Combatant's Warboots of Prowess (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+								}),
 							},
 						}),
 						n(85840, {	-- Torgg Flexington <Blueprints Trader>

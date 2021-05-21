@@ -307,6 +307,9 @@ _.Mounts =
 		i(143637, {	-- Netherlord's Brimstone Wrathsteed (Warlock)
 			["classes"] = { WARLOCK },
 		}),
+		i(186478, {	-- Obsidian Gravewing
+			["customCollect"] = "SL_COV_VEN",	-- Venthyr-only
+		}),
 		i(47101),	-- Ochre Skeletal Warhorse
 		i(45595),	-- Orgrimmar Wolf
 		i(180726),	-- Pale Acidmaw
@@ -411,7 +414,12 @@ _.Mounts =
 			["races"] = HORDE_ONLY,
 		}),
 		i(45596),	-- Silvermoon Hawkstrider
-		i(183715),	-- Sinfall Gargon
+		i(183715, {	-- Sinfall Gargon
+			["customCollect"] = "SL_COV_VEN",	-- Venthyr-only
+		}),
+		i(186476, {	-- Sinfall Gravewing
+			["customCollect"] = "SL_COV_VEN",	-- Venthyr-only
+		}),
 		i(161910, {	-- Smoky Charger
 			["races"] = ALLIANCE_ONLY,
 		}),

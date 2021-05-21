@@ -385,8 +385,10 @@ i(186645, 354357);	-- Crimson Shardhide
 i(186646, 354358);	-- Darkmaul
 i(185996, 332904);	-- Harvester's Dredwing
 i(186643, 354362);	-- Maelie The Wanderer
+i(186478, 353866);	-- Obsidian Gravewing
 i(186477, 353873);	-- Pale Gravewing
 i(187183, 356501);	-- Rampaging Mauler
+i(186476, 353872);	-- Sinfall Gravewing
 i(186648, 347251);	-- Soaring Razorwing
 i(186103, 352742);	-- Undying Darkhound
 i(186000, 352441);	-- Wild Hunt Legsplitter

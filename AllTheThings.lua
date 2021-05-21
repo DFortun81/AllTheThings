@@ -2325,19 +2325,19 @@ ResolveSymbolicLink = function(o)
 		local searchResults, finalized = {}, {};
 		for j,sym in ipairs(o.sym) do
 			local cmd = sym[1];
-			-- print("Resolving Symbolic Link using '" .. tostring(cmd) .. "' with [" .. tostring(sym[2]) .. "] & [" .. tostring(sym[3]) .. "]")
+			-- print("Resolving Symbolic Link '",cmd,"' with [",sym[2],"] & [",sym[3],"] for",o.key,o.key and o[o.key])
 			if cmd == "select" then
 				-- Instruction to search the full database for something.
 				local cache = app.SearchForField(sym[2], sym[3]);
 				if cache then
 					for k,s in ipairs(cache) do
+						if s.g then
+							for i,m in ipairs(s.g) do
+								table.insert(searchResults, m);
+							end
+						end
 						local ref = ResolveSymbolicLink(s);
 						if ref then
-							if s.g then
-								for i,m in ipairs(s.g) do
-									table.insert(searchResults, m);
-								end
-							end
 							for i,m in ipairs(ref) do
 								table.insert(searchResults, m);
 							end
@@ -2590,10 +2590,11 @@ ResolveSymbolicLink = function(o)
 					print("Could not find subroutine", sym[2]);
 				end
 			end
-			-- print("Current set of search results",searchResults and #searchResults);
+			-- print("Results",searchResults and #searchResults,"from '",cmd,"' with [",sym[2],"] & [",sym[3],"]for",o.key,o.key and o[o.key])
 		end
 
 		-- If we have any pending finalizations to make, then merge them into the finalized table. [Equivalent to a "finalize" instruction]
+		-- print("Forced Finalize",o.key,o.key and o[o.key])
 		if #searchResults > 0 then
 			for k,s in ipairs(searchResults) do
 				table.insert(finalized, s);
@@ -2602,7 +2603,7 @@ ResolveSymbolicLink = function(o)
 
 		-- If we had any finalized search results, then clone all the records and return it.
 		if #finalized > 0 then
-			-- print("Symbolic Link for ", o.key, " ", o[o.key], " contains ", #finalized, " values after filtering.");
+			-- print("Symbolic Link for", o.key,o[o.key], "contains", #finalized, "values after filtering.");
 			local cloned = {};
 			for k,s in ipairs(finalized) do
 				tinsert(cloned, CloneData(s));
@@ -3173,7 +3174,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						end
 					end
 
-					if sourceGroup.missing then
+					if app.IsReady and sourceGroup.missing then
 						tinsert(info, { left = Colorize("Item Source not found in the database.\n" .. L["SOURCE_ID_MISSING"], "ffff0000") });	-- Do not localize first part of the message, it is for contribs
 						tinsert(info, { left = Colorize(tostring(itemID) .. ":" .. sourceID .. ":" .. tostring(sourceInfo.visualID), "ffe35832") });
 					end
@@ -3388,28 +3389,31 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		-- print("Resolve Root",root.key,root[root.key])
 		local rootResolved = ResolveSymbolicLink(root);
 		if rootResolved then
-			-- print("Root has symbolic")
+			-- print("Root has symbolic",#rootResolved)
 			root.symbolized = true;
 			for k,o in pairs(rootResolved) do
+				o.symbolized = true;
 				MergeObject(root.g, o);
 			end
 		end
 		-- Resolve symbolic links within the Root
 		for i,o in ipairs(root.g) do
-			-- print("Resolve",o.key,o[o.key],o.sym)
-			local symbolicLink = ResolveSymbolicLink(o);
-			if symbolicLink then
-				-- print("Sub has symbolic")
-				o.symbolized = true;
-				if o.g and #o.g >= 0 then
-					for j=1,#symbolicLink,1 do
-						-- print("Merge g",symbolicLink[j].key,symbolicLink[j][symbolicLink[j].key])
-						MergeObject(o.g, symbolicLink[j]);
+			if not o.symbolized then
+				-- print("Resolve",o.key,o[o.key],o.sym)
+				local symbolicLink = ResolveSymbolicLink(o);
+				if symbolicLink then
+					-- print("Sub has symbolic")
+					o.symbolized = true;
+					if o.g and #o.g >= 0 then
+						for j=1,#symbolicLink,1 do
+							-- print("Merge g",symbolicLink[j].key,symbolicLink[j][symbolicLink[j].key])
+							MergeObject(o.g, symbolicLink[j]);
+						end
+					else
+						o.g = symbolicLink;
 					end
-				else
-					o.g = symbolicLink;
+					-- print("o.g",o.g and #o.g)
 				end
-				-- print("o.g",o.g and #o.g)
 			end
 		end
 		-- Single group which matches the root, then collapse it
@@ -3993,7 +3997,10 @@ fieldConverters = {
 	["itemID"] = function(group, value, raw)
 		if group.filterID == 102 or group.isToy then CacheField(group, "toyID", value); end
 		if not raw then
-			CacheField(group, "itemID", group.modItemID or GetGroupItemIDWithModID(group) or value);
+			-- only cache the modItemID if it is not the same as the itemID
+			if (group.modItemID or GetGroupItemIDWithModID(group) or value) ~= value then
+				CacheField(group, "itemID", group.modItemID or GetGroupItemIDWithModID(group) or value);
+			end
 		end
 		-- always cache the plain ItemID as a fallback for items which generate in-game with unaccounted-for modIDs (M+, etc.)
 		CacheField(group, "itemID", value);
@@ -4533,18 +4540,9 @@ local function PopulateQuestObject(questObject)
 			-- only merge into the WQ quest object properties from an object in cache with this questID
 			if data.questID == questObject.questID then
 				MergeProperties(questObject, data);
-				if data.isVignette then questObject.isVignette = true; end
 				if data.g then
 					for _,entry in ipairs(data.g) do
-						local resolved = ResolveSymbolicLink(entry);
-						if resolved then
-							if entry.g then
-								MergeObjects(entry.g, resolved);
-							else
-								entry.g = resolved;
-							end
-						end
-						tinsert(questObject.g, entry);
+						MergeObject(questObject.g, CloneData(entry));
 					end
 				end
 			-- otherwise this is a non-quest object flagged with this questID so it should be added under the quest
@@ -4566,16 +4564,7 @@ local function PopulateQuestObject(questObject)
 						MergeProperties(questObject, data);
 						if data.g then
 							for _,entry in ipairs(data.g) do
-								local resolved = ResolveSymbolicLink(entry);
-								if resolved then
-									-- entry = CreateObject(entry); -- TODO: not necessary anymore
-									if entry.g then
-										MergeObjects(entry.g, resolved);
-									else
-										entry.g = resolved;
-									end
-								end
-								MergeObject(questObject.g, entry);
+								MergeObject(questObject.g, CloneData(entry));
 							end
 						end
 					end
@@ -4605,7 +4594,7 @@ local function PopulateQuestObject(questObject)
 
 	-- Resolve all symbolic links
 	if questObject.g and #questObject.g > 0 then
-		for j,item in ipairs(questObject.g) do
+		for _,item in ipairs(questObject.g) do
 			local resolved = ResolveSymbolicLink(item);
 			if resolved then
 				if not item.g then
@@ -10724,7 +10713,7 @@ function app.CompletionistItemCollectionHelper(sourceID, oldState)
 		app:RefreshData(fresh, true);
 	else
 		-- Show the collection message.
-		if app.Settings:GetTooltipSetting("Report:Collected") then
+		if app.IsReady and app.Settings:GetTooltipSetting("Report:Collected") then
 			-- Use the Blizzard API... We don't have this item in the addon.
 			-- NOTE: The itemlink that gets passed is BASE ITEM LINK, not the full item link.
 			-- So this may show green items where an epic was obtained. (particularly with Legion drops)
@@ -10821,7 +10810,7 @@ function app.UniqueModeItemCollectionHelperBase(sourceID, oldState, filter)
 			end
 		else
 			-- Show the collection message.
-			if app.Settings:GetTooltipSetting("Report:Collected") then
+			if app.IsReady and app.Settings:GetTooltipSetting("Report:Collected") then
 				-- Use the Blizzard API... We don't have this item in the addon.
 				-- NOTE: The itemlink that gets passed is BASE ITEM LINK, not the full item link.
 				-- So this may show green items where an epic was obtained. (particularly with Legion drops)
@@ -10881,7 +10870,7 @@ function app.CompletionistItemRemovalHelper(sourceID, oldState)
 		app:RefreshData(fresh, true);
 	else
 		-- Show the collection message.
-		if app.Settings:GetTooltipSetting("Report:Collected") then
+		if app.IsReady and app.Settings:GetTooltipSetting("Report:Collected") then
 			-- Use the Blizzard API... We don't have this item in the addon.
 			-- NOTE: The itemlink that gets passed is BASE ITEM LINK, not the full item link.
 			-- So this may show green items where an epic was obtained. (particularly with Legion drops)
@@ -10979,7 +10968,7 @@ function app.UniqueModeItemRemovalHelperBase(sourceID, oldState, filter)
 			end
 		else
 			-- Show the collection message.
-			if app.Settings:GetTooltipSetting("Report:Collected") then
+			if app.IsReady and app.Settings:GetTooltipSetting("Report:Collected") then
 				-- Use the Blizzard API... We don't have this item in the addon.
 				-- NOTE: The itemlink that gets passed is BASE ITEM LINK, not the full item link.
 				-- So this may show green items where an epic was obtained. (particularly with Legion drops)
@@ -13725,7 +13714,7 @@ function app:GetDataCache()
 		table.insert(g, db);
 		]]--
 
-		--[[
+		
 		-- SUPER SECRETTTT!
 		-- Artifacts (Dynamic)
 		db = app.CreateAchievement(11171, (function()

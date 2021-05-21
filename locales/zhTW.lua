@@ -407,6 +407,8 @@ local L = app.L;
 		--TODO: L.LOCATIONS_SLIDER_TOOLTIP = 'Use this to customize the number of source locations to show in the tooltip.\n\nNOTE: This will also show "X" number of other sources based on how many, if that total is equivalent to the total number of displayed elements, then that will simply display the last source.\n\nDefault: 5';
 		--TODO: L.COMPLETED_SOURCES_CHECKBOX = "For Completed";
 		--TODO: L.COMPLETED_SOURCES_CHECKBOX_TOOLTIP = "Enable this option if you want to see completed source locations in the tooltip.\n\nAs an example, if you complete the quest \"Bathran's Hair\" in Ashenvale, the tooltip for Evenar Stillwhisper will no longer show that quest when hovering over him.";
+		--TODO: L.DROP_CHANCES_CHECKBOX = "Show Drop Chances";
+		--TODO: L.DROP_CHANCES_CHECKBOX_TOOLTIP = "Enable this option to calculate various drop chance information in the tooltip for an item in an ATT window.\nThis can be helpful for knowing which Loot Spec should be used when Bonus Rolling for an item.";
 		--TODO: L.FOR_CREATURES_CHECKBOX = "For Creatures";
 		--TODO: L.FOR_CREATURES_CHECKBOX_TOOLTIP = "Enable this option if you want to see Source Locations for Creatures.";
 		--TODO: L.FOR_THINGS_CHECKBOX = "For Things";
@@ -651,7 +653,6 @@ for key,value in pairs({
 		--TODO: [-149] = "Sunsoul",
 		--TODO: [-150] = "Trailseeker",
 		--TODO: [-152] = "Garrison Campaign",
-		--TODO: [-154] = "Level 48",								-- Level 48 (old level 110)
 		--TODO: [-157] = "The Hinterlands "..GetSpellInfo(78741),	-- The Hinterlands Activated
 		--TODO: [-158] = "Feralas "..GetSpellInfo(78741),			-- Feralas Activated
 		--TODO: [-159] = "Event Roll",								-- Daily Dreamway Event Roll
@@ -2905,6 +2906,8 @@ for key,value in pairs({
 	--TODO: [357697] = "Taskmaster's Trove",	-- Taskmaster's Trove
 	--TODO: [357726] = "Broken Spear",	-- Broken Spear
 	--TODO: [357758] = "Plague Barrel",	-- Plague Barrel
+	--TODO: [357771] = "Burried Cache",	-- Burried Cache
+	--TODO: [357937] = "Burried Cache",	-- Burried Cache
 	--TODO: [358298] = "Forbidden Chamber Lockbox",	-- Forbidden Chamber Lockbox
 	--TODO: [358315] = "Skeletal Hand Fragments",	-- Skeletal Hand Fragments
 	--TODO: [358318] = "R. Suavel Dredger Portrait",	-- R. Suavel Dredger Portrait
@@ -2914,6 +2917,7 @@ for key,value in pairs({
 	--TODO: [358855] = "Damaged Safe Fall Pack",	-- Damaged Safe Fall Pack
 	--TODO: [360054] = "Slime Cat",	-- Slime Cat
 	--TODO: [362489] = "Elysian Decree",	-- Elysian Decree
+	--TODO: [364483] = "Empty Nightcap Cask",	-- Empty Nightcap Cask
 	--TODO: [364899] = "Crystallized Stygia",	-- Crystallized Stygia
 	--TODO: [364926] = "Runeforged Shackles",	-- Runeforged Shackles
 	--TODO: [364932] = "Blazing Ingot",	-- Blazing Ingot

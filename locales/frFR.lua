@@ -407,6 +407,8 @@ local L = app.L;
 		--TODO: L.LOCATIONS_SLIDER_TOOLTIP = 'Use this to customize the number of source locations to show in the tooltip.\n\nNOTE: This will also show "X" number of other sources based on how many, if that total is equivalent to the total number of displayed elements, then that will simply display the last source.\n\nDefault: 5';
 		--TODO: L.COMPLETED_SOURCES_CHECKBOX = "For Completed";
 		--TODO: L.COMPLETED_SOURCES_CHECKBOX_TOOLTIP = "Enable this option if you want to see completed source locations in the tooltip.\n\nAs an example, if you complete the quest \"Bathran's Hair\" in Ashenvale, the tooltip for Evenar Stillwhisper will no longer show that quest when hovering over him.";
+		--TODO: L.DROP_CHANCES_CHECKBOX = "Show Drop Chances";
+		--TODO: L.DROP_CHANCES_CHECKBOX_TOOLTIP = "Enable this option to calculate various drop chance information in the tooltip for an item in an ATT window.\nThis can be helpful for knowing which Loot Spec should be used when Bonus Rolling for an item.";
 		--TODO: L.FOR_CREATURES_CHECKBOX = "For Creatures";
 		--TODO: L.FOR_CREATURES_CHECKBOX_TOOLTIP = "Enable this option if you want to see Source Locations for Creatures.";
 		--TODO: L.FOR_THINGS_CHECKBOX = "For Things";
@@ -651,7 +653,6 @@ for key,value in pairs({
 		--TODO: [-149] = "Sunsoul",
 		--TODO: [-150] = "Trailseeker",
 		--TODO: [-152] = "Garrison Campaign",
-		--TODO: [-154] = "Level 48",								-- Level 48 (old level 110)
 		--TODO: [-157] = "The Hinterlands "..GetSpellInfo(78741),	-- The Hinterlands Activated
 		--TODO: [-158] = "Feralas "..GetSpellInfo(78741),			-- Feralas Activated
 		--TODO: [-159] = "Event Roll",								-- Daily Dreamway Event Roll
@@ -2871,7 +2872,7 @@ for key,value in pairs({
 	[356700] = "Tribut extravagant du grand maître Vole",	-- Grandmaster Vole's Extravagant Tribute
 	[356705] = "Tribut extravagant de Marileth, catalyseur de peste",	-- Plague Deviser Marileth's Extravagant Tribute
 	--TODO: [356709] = "Lady Moonberry's Extravagant Tribute",	-- Lady Moonberry's Extravagant Tribute
-	--TODO: [356712] = "Hunt-Captain Korayn's Extravagant Tribute",	-- Hunt-Captain Korayn's Extravagant Tribute
+	[356712] = "Tribut extravagant du capitaine de l’Hallali Korayn",	-- Hunt-Captain Korayn's Extravagant Tribute
 	[356716] = "Tribut extravagant de la dromane Aliothe",	-- Droman Aliothe's Extravagant Tribute
 	[356720] = "Tribut extravagant de Choufa",	-- Choofa's Extravagant Tribute
 	--TODO: [356725] = "Polemarch Adrestes' Extravagant Tribute",	-- Polemarch Adrestes' Extravagant Tribute
@@ -2905,6 +2906,8 @@ for key,value in pairs({
 	[357697] = "Trésor du sous-chef",	-- Taskmaster's Trove
 	[357726] = "Lance brisée",	-- Broken Spear
 	[357758] = "Tonneau de peste",	-- Plague Barrel
+	[357771] = "Cache enfouie",	-- Burried Cache
+	[357937] = "Cache enfouie",	-- Burried Cache
 	[358298] = "Coffre de la chambre Interdite",	-- Forbidden Chamber Lockbox
 	[358315] = "Fragments de main squelettique",	-- Skeletal Hand Fragments
 	--TODO: [358318] = "R. Suavel Dredger Portrait",	-- R. Suavel Dredger Portrait
@@ -2914,6 +2917,7 @@ for key,value in pairs({
 	[358855] = "Sac à dos de chute amortie endommagé",	-- Damaged Safe Fall Pack
 	[360054] = "Chat collant",	-- Slime Cat
 	[362489] = "Décret élyséen",	-- Elysian Decree
+	[364483] = "Fût de pousse-café vide",	-- Empty Nightcap Cask
 	[364899] = "Stygies cristallisées",	-- Crystallized Stygia
 	[364926] = "Entraves runeforgées",	-- Runeforged Shackles
 	[364932] = "Lingot incandescent",	-- Blazing Ingot

@@ -409,6 +409,8 @@ local L = app.L;
 		L.LOCATIONS_SLIDER_TOOLTIP = '使用该功能可以自定义鼠标提示中显示的来源位置数量.\n\n注意: 这也会根据其他来源的多少来显示"X"个数量, 如果这个总数等于显示的元素总数, 那么就会简单地显示最后一个来源.\n\n默认: 5';
 		L.COMPLETED_SOURCES_CHECKBOX = "对已完成";
 		L.COMPLETED_SOURCES_CHECKBOX_TOOLTIP = "如果你想在鼠标提示中看到已完成的来源位置, 请启用此选项.\n\n举个例子, 如果你在灰谷完成了任务\"巴斯兰的头发\", 当你鼠标悬停在埃凡纳·寂语身上时, 他的鼠标提示就不会再显示这个任务了.";
+		--TODO: L.DROP_CHANCES_CHECKBOX = "Show Drop Chances";
+		--TODO: L.DROP_CHANCES_CHECKBOX_TOOLTIP = "Enable this option to calculate various drop chance information in the tooltip for an item in an ATT window.\nThis can be helpful for knowing which Loot Spec should be used when Bonus Rolling for an item.";
 		L.FOR_CREATURES_CHECKBOX = "对生物";
 		L.FOR_CREATURES_CHECKBOX_TOOLTIP = "如果你想查看生物的来源位置, 请启用此选项.";
 		L.FOR_THINGS_CHECKBOX = "对事物";
@@ -657,7 +659,6 @@ for key,value in pairs({
 		[-149] = "阳魂",												-- Sunsoul
 		[-150] = "探路者",											-- Trailseeker
 		[-152] = "要塞战役",											-- Garrison Campaign
-		[-154] = "48级",												-- Level 48 (old level 110)
 		[-157] = "辛特兰 "..GetSpellInfo(78741),						-- The Hinterlands Activated
 		[-158] = "菲拉斯 "..GetSpellInfo(78741),						-- Feralas Activated
 		[-159] = "事件roll点",										-- Daily Dreamway Event Roll
@@ -2393,7 +2394,7 @@ for key, value in pairs({
 	--TODO: [276227] = "Augari Secret Stash",	-- Augari Secret Stash
 	--TODO: [276228] = "Desperate Eredar's Cache",	-- Desperate Eredar's Cache
 	[276229] = "房屋废墟宝箱",	-- Shattered House Chest
-	--TODO: [276230] = "Doomseeker's Treasure",	-- Doomseeker's Treasure
+	[276230] = "末日追寻者的宝藏",	-- Doomseeker's Treasure
 	[276251] = "挖掘清单",	-- Excavation Inventory
 	[276488] = "艾泽里特炮弹",	-- Azurite Cannonball
 	[276489] = "军团塔楼宝箱",	-- Legion Tower Chest
@@ -2925,6 +2926,8 @@ for key, value in pairs({
 	[357697] = "工头的宝藏",	-- Taskmaster's Trove
 	[357726] = "断裂之矛",	-- Broken Spear
 	[357758] = "魔药桶",	-- Plague Barrel
+	[357771] = "埋藏的宝箱",	-- Burried Cache
+	[357937] = "埋藏的宝箱",	-- Burried Cache
 	[358298] = "禁忌密室保险箱",	-- Forbidden Chamber Lockbox
 	[358315] = "骸骨手碎片",	-- Skeletal Hand Fragments
 	--TODO: [358318] = "R. Suavel Dredger Portrait",	-- R. Suavel Dredger Portrait
@@ -2934,6 +2937,7 @@ for key, value in pairs({
 	[358855] = "损坏的安全降落包",	-- Damaged Safe Fall Pack
 	[360054] = "黏黏猫",	-- Slime Cat
 	[362489] = "极乐敕令",	-- Elysian Decree
+	[364483] = "空空的睡帽酒酒桶",	-- Empty Nightcap Cask
 	[364899] = "晶体冥殇",	-- Crystallized Stygia
 	[364926] = "符文熔铸镣铐",	-- Runeforged Shackles
 	[364932] = "灼光矿锭",	-- Blazing Ingot

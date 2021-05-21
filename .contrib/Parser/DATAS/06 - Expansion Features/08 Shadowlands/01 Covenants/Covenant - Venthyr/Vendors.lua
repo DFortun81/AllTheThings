@@ -37,6 +37,9 @@ _.ExpansionFeatures =
 									{ "c", 1885, 100 },		-- 100x Grateful Offering
 								},
 							}),
+							i(186478, {	-- Obsidian Gravewing (MOUNT!)
+							--	["cost"] = { { "", , } },	-- TODO: ADD COST
+							}),
 							i(183715, {	-- Sinfall Gargon (MOUNT!)
 								["cost"] = { { "c", 1813, 5000 } },	-- 5,000x Reservoir Anima
 							}),
@@ -189,6 +192,40 @@ _.ExpansionFeatures =
 								["cost"] = {
 									{ "c", 1813, 2000 },	-- 2,000x Reservoir Anima
 									{ "c", 1885, 15 },		-- 15x Grateful Offering
+								},
+							}),
+							i(186508, {	-- Ensemble: Court Inquisitor's Vestments
+							--	["cost"] = { { "", , } },	-- TODO: ADD COST
+								["g"] = {
+									i(185097),	-- Court Inquisitor's Cape
+									i(185091),	-- Court Inquisitor's Handwraps
+									i(185092),	-- Court Inquisitor's Hood
+									i(185093),	-- Court Inquisitor's Leggings
+									i(185094),	-- Court Inquisitor's Mantle
+									i(185089),	-- Court Inquisitor's Robe
+									i(185095),	-- Court Inquisitor's Sash
+									i(185090),	-- Court Inquisitor's Slippers
+									i(185096),	-- Court Inquisitor's Wraps
+								},
+							}),
+							i(186510, {	-- Ensemble: Sinful Inquisitor's Vestments
+							--	["cost"] = { { "", , } },	-- TODO: ADD COST
+								["g"] = {
+									i(185118),	-- Sinful Inquisitor's Handwraps
+									i(185119),	-- Sinful Inquisitor's Hood
+									i(185120),	-- Sinful Inquisitor's Leggings
+									i(185121),	-- Sinful Inquisitor's Mantle
+									i(185116),	-- Sinful Inquisitor's Robes
+									i(185122),	-- Sinful Inquisitor's Sash
+									i(185124),	-- Sinful Inquisitor's Shawl
+									i(185117),	-- Sinful Inquisitor's Slippers
+									i(185123),	-- Sinful Inquisitor's Wraps
+								},
+							}),
+							i(186509, {	-- Ensemble: Sinful Venthyr Attire
+							--	["cost"] = { { "", , } },	-- TODO: ADD COST
+								["g"] = {
+								--	TODO: there is a "Sinfall Venthyr _____" set added in 9.1 that may come from this ensemble and just have a mismatched name, but otherwise i'm not sure what this ensemble contains
 								},
 							}),
 							i(181073, {	-- Fearstalker's Crimson Belt

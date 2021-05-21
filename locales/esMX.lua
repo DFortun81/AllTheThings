@@ -407,6 +407,8 @@ local L = app.L;
 		--TODO: L.LOCATIONS_SLIDER_TOOLTIP = 'Use this to customize the number of source locations to show in the tooltip.\n\nNOTE: This will also show "X" number of other sources based on how many, if that total is equivalent to the total number of displayed elements, then that will simply display the last source.\n\nDefault: 5';
 		--TODO: L.COMPLETED_SOURCES_CHECKBOX = "For Completed";
 		--TODO: L.COMPLETED_SOURCES_CHECKBOX_TOOLTIP = "Enable this option if you want to see completed source locations in the tooltip.\n\nAs an example, if you complete the quest \"Bathran's Hair\" in Ashenvale, the tooltip for Evenar Stillwhisper will no longer show that quest when hovering over him.";
+		--TODO: L.DROP_CHANCES_CHECKBOX = "Show Drop Chances";
+		--TODO: L.DROP_CHANCES_CHECKBOX_TOOLTIP = "Enable this option to calculate various drop chance information in the tooltip for an item in an ATT window.\nThis can be helpful for knowing which Loot Spec should be used when Bonus Rolling for an item.";
 		--TODO: L.FOR_CREATURES_CHECKBOX = "For Creatures";
 		--TODO: L.FOR_CREATURES_CHECKBOX_TOOLTIP = "Enable this option if you want to see Source Locations for Creatures.";
 		--TODO: L.FOR_THINGS_CHECKBOX = "For Things";
@@ -651,7 +653,6 @@ for key,value in pairs({
 		--TODO: [-149] = "Sunsoul",
 		--TODO: [-150] = "Trailseeker",
 		--TODO: [-152] = "Garrison Campaign",
-		--TODO: [-154] = "Level 48",								-- Level 48 (old level 110)
 		--TODO: [-157] = "The Hinterlands "..GetSpellInfo(78741),	-- The Hinterlands Activated
 		--TODO: [-158] = "Feralas "..GetSpellInfo(78741),			-- Feralas Activated
 		--TODO: [-159] = "Event Roll",								-- Daily Dreamway Event Roll
@@ -2867,7 +2868,7 @@ for key,value in pairs({
 	[355947] = "Alijo de Glutharn",	-- Glutharn's Stash
 	[356555] = "Collar de Eurydea",	-- Eurydea's Necklace
 	--TODO: [356693] = "Baroness Vashj's Extravagant Tribute",	-- Baroness Vashj's Extravagant Tribute
-	--TODO: [356697] = "Alexandros Mograine's Extravagant Tribute",	-- Alexandros Mograine's Extravagant Tribute
+	[356697] = "Tributo exorbitante de Alexandros Mograine",	-- Alexandros Mograine's Extravagant Tribute
 	[356700] = "Tributo exorbitante del gran maestro Vole",	-- Grandmaster Vole's Extravagant Tribute
 	[356705] = "Tributo exorbitante del inventor de pestes Marileth",	-- Plague Deviser Marileth's Extravagant Tribute
 	--TODO: [356709] = "Lady Moonberry's Extravagant Tribute",	-- Lady Moonberry's Extravagant Tribute
@@ -2875,7 +2876,7 @@ for key,value in pairs({
 	[356716] = "Tributo exorbitante de la droman Aliothe",	-- Droman Aliothe's Extravagant Tribute
 	[356720] = "Tributo exorbitante de Choofa",	-- Choofa's Extravagant Tribute
 	[356725] = "Tributo exorbitante del polemarca Adrestes",	-- Polemarch Adrestes' Extravagant Tribute
-	--TODO: [356728] = "Mikanikos' Extravagant Tribute",	-- Mikanikos' Extravagant Tribute
+	[356728] = "Tributo exorbitante de Mikanikos",	-- Mikanikos' Extravagant Tribute
 	[356733] = "Tributo exorbitante de Kleia y Pelagos",	-- Kleia and Pelagos' Extravagant Tribute
 	[356737] = "Tributo exorbitante de Sika",	-- Sika's Extravagant Tribute
 	[356741] = "Tributo exorbitante de la condesa",	-- The Countess' Extravagant Tribute
@@ -2905,6 +2906,8 @@ for key,value in pairs({
 	[357697] = "Tesoro del capataz",	-- Taskmaster's Trove
 	[357726] = "Lanza rota",	-- Broken Spear
 	[357758] = "Barril de peste",	-- Plague Barrel
+	[357771] = "Alijo enterrado",	-- Burried Cache
+	[357937] = "Alijo enterrado",	-- Burried Cache
 	[358298] = "Arcón de cámara prohibida",	-- Forbidden Chamber Lockbox
 	[358315] = "Fragmentos de mano esquelética",	-- Skeletal Hand Fragments
 	[358318] = "Retrato de dragador de R. Suavel",	-- R. Suavel Dredger Portrait
@@ -2914,6 +2917,7 @@ for key,value in pairs({
 	[358855] = "Mochila de Caída segura dañada",	-- Damaged Safe Fall Pack
 	[360054] = "Gato pegajoso",	-- Slime Cat
 	[362489] = "Decreto elisio",	-- Elysian Decree
+	[364483] = "Tonel de trago vacío",	-- Empty Nightcap Cask
 	[364899] = "Estigia cristalizada",	-- Crystallized Stygia
 	[364926] = "Grilletes forjados con runas",	-- Runeforged Shackles
 	[364932] = "Lingote llameante",	-- Blazing Ingot
