@@ -2085,6 +2085,11 @@ _.NeverImplemented =
 			i(125521),	-- Wild Combatant's Accolade of conquest
 			i(125523),	-- Wild Combatant's Accolade of Victory
 			i(125525),	-- Wild Combatant's Accolade of Endurance
+			i(125348),	-- Wild Gladiator's Accolade of Dominance
+			i(125351),	-- Wild Gladiator's Accolade of Endurance
+			i(125347),	-- Wild Gladiator's Accolade of conquest
+			i(125349),	-- Wild Gladiator's Accolade of victory
+			i(125350),	-- Wild Gladiator's Accolade of meditation
 			i(173426),	-- Black Empire trinkets
 			i(25994),	-- rune of force (only beta)
 			i(25995),	-- Star of Sha'naar (only beta)

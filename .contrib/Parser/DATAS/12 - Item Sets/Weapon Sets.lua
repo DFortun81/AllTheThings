@@ -857,69 +857,8 @@ _.GearSets =
 						["races"] = ALLIANCE_ONLY,
 					}),
 					i(138634, {	-- Arsenal: Wild Gladiator's Weapons [ Horde ]
-						["g"] = {
-							i(124749),	-- Wild Gladiator's Barrier
-							i(125228),	-- Wild Gladiator's Barrier
-							i(124729),	-- Wild Gladiator's Baton of Light
-							i(125208),	-- Wild Gladiator's Baton of Light
-							i(124731),	-- Wild Gladiator's Battle Staff
-							i(125210),	-- Wild Gladiator's Battle Staff
-							i(124839),	-- Wild Gladiator's Bonecracker
-							i(125318),	-- Wild Gladiator's Bonecracker
-							i(124842),	-- Wild Gladiator's Bonegrinder
-							i(125321),	-- Wild Gladiator's Bonegrinder
-							i(124675),	-- Wild Gladiator's Cleaver
-							i(125154),	-- Wild Gladiator's Cleaver
-							i(124841),	-- Wild Gladiator's Decapitator
-							i(125320),	-- Wild Gladiator's Decapitator
-							i(124741),	-- Wild Gladiator's Endgame
-							i(125220),	-- Wild Gladiator's Endgame
-							i(124732),	-- Wild Gladiator's Energy Staff
-							i(125211),	-- Wild Gladiator's Energy Staff
-							i(124727),	-- Wild Gladiator's Gavel
-							i(125206),	-- Wild Gladiator's Gavel
-							i(124843),	-- Wild Gladiator's Greatsword
-							i(125322),	-- Wild Gladiator's Greatsword
-							i(124837),	-- Wild Gladiator's Hacker
-							i(125316),	-- Wild Gladiator's Hacker
-							i(124681),	-- Wild Gladiator's Heavy Crossbow
-							i(125160),	-- Wild Gladiator's Heavy Crossbow
-							i(124680),	-- Wild Gladiator's Longbow
-							i(125159),	-- Wild Gladiator's Longbow
-							i(124728),	-- Wild Gladiator's Mageblade
-							i(125207),	-- Wild Gladiator's Mageblade
-							i(124683),	-- Wild Gladiator's Pike
-							i(125162),	-- Wild Gladiator's Pike
-							i(124678),	-- Wild Gladiator's Pummeler
-							i(125157),	-- Wild Gladiator's Pummeler
-							i(124679),	-- Wild Gladiator's Quickblade
-							i(125158),	-- Wild Gladiator's Quickblade
-							i(124748),	-- Wild Gladiator's Redoubt
-							i(125227),	-- Wild Gladiator's Redoubt
-							i(124838),	-- Wild Gladiator's Render
-							i(125317),	-- Wild Gladiator's Render
-							i(124742),	-- Wild Gladiator's Reprieve
-							i(125221),	-- Wild Gladiator's Reprieve
-							i(124682),	-- Wild Gladiator's Rifle
-							i(125161),	-- Wild Gladiator's Rifle
-							i(124677),	-- Wild Gladiator's Ripper
-							i(125156),	-- Wild Gladiator's Ripper
-							i(129934),	-- Wild Gladiator's Runeaxe
-							i(129935),	-- Wild Gladiator's Runeaxe
-							i(124676),	-- Wild Gladiator's Shanker
-							i(125155),	-- Wild Gladiator's Shanker
-							i(124851),	-- Wild Gladiator's Shield Wall
-							i(125330),	-- Wild Gladiator's Shield Wall
-							i(124840),	-- Wild Gladiator's Slicer
-							i(125319),	-- Wild Gladiator's Slicer
-							i(124726),	-- Wild Gladiator's Spellblade
-							i(125205),	-- Wild Gladiator's Spellblade
-							i(124684),	-- Wild Gladiator's Staff
-							i(125163),	-- Wild Gladiator's Staff
-							i(124730),	-- Wild Gladiator's Touch of Defeat
-							i(125209),	-- Wild Gladiator's Touch of Defeat
-						},
-						["races"] = HORDE_ONLY,
+						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
+						["sym"] = { {"sub", "pvp_weapons_faction_ensemble", -9981, -680, -9913, -661 }, },
 					}),
 					-- Done
 					i(138627, {	-- Arsenal: Warmongering Combatant's Weapons (H)
