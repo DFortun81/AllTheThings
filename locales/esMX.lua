@@ -2867,7 +2867,7 @@ for key,value in pairs({
 	[355947] = "Alijo de Glutharn",	-- Glutharn's Stash
 	[356555] = "Collar de Eurydea",	-- Eurydea's Necklace
 	--TODO: [356693] = "Baroness Vashj's Extravagant Tribute",	-- Baroness Vashj's Extravagant Tribute
-	--TODO: [356697] = "Alexandros Mograine's Extravagant Tribute",	-- Alexandros Mograine's Extravagant Tribute
+	[356697] = "Tributo exorbitante de Alexandros Mograine",	-- Alexandros Mograine's Extravagant Tribute
 	[356700] = "Tributo exorbitante del gran maestro Vole",	-- Grandmaster Vole's Extravagant Tribute
 	[356705] = "Tributo exorbitante del inventor de pestes Marileth",	-- Plague Deviser Marileth's Extravagant Tribute
 	--TODO: [356709] = "Lady Moonberry's Extravagant Tribute",	-- Lady Moonberry's Extravagant Tribute
@@ -2875,7 +2875,7 @@ for key,value in pairs({
 	[356716] = "Tributo exorbitante de la droman Aliothe",	-- Droman Aliothe's Extravagant Tribute
 	[356720] = "Tributo exorbitante de Choofa",	-- Choofa's Extravagant Tribute
 	[356725] = "Tributo exorbitante del polemarca Adrestes",	-- Polemarch Adrestes' Extravagant Tribute
-	--TODO: [356728] = "Mikanikos' Extravagant Tribute",	-- Mikanikos' Extravagant Tribute
+	[356728] = "Tributo exorbitante de Mikanikos",	-- Mikanikos' Extravagant Tribute
 	[356733] = "Tributo exorbitante de Kleia y Pelagos",	-- Kleia and Pelagos' Extravagant Tribute
 	[356737] = "Tributo exorbitante de Sika",	-- Sika's Extravagant Tribute
 	[356741] = "Tributo exorbitante de la condesa",	-- The Countess' Extravagant Tribute
