@@ -659,7 +659,6 @@ for key,value in pairs({
 		[-149] = "阳魂",												-- Sunsoul
 		[-150] = "探路者",											-- Trailseeker
 		[-152] = "要塞战役",											-- Garrison Campaign
-		[-154] = "48级",												-- Level 48 (old level 110)
 		[-157] = "辛特兰 "..GetSpellInfo(78741),						-- The Hinterlands Activated
 		[-158] = "菲拉斯 "..GetSpellInfo(78741),						-- Feralas Activated
 		[-159] = "事件roll点",										-- Daily Dreamway Event Roll

@@ -1923,7 +1923,7 @@ app.L = {
 	-- Shadowlands Header
 		[-900] = "Covenant Sanctum",											-- Covenant Sanctum
 		[-901] = GetSpellInfo(339041),											-- Covenant Callings
-		[-902] = "Renown",														-- Renown
+		[-902] = C_CurrencyInfo.GetCurrencyInfo(1822).name,						-- Renown
 		[-903] = "Zone Rewards",												-- Zone Rewards
 		[-904] = "Wrath of the Jailer",											-- Wrath of the Jailer
 		[-905] = "Command Table",												-- Command Table
