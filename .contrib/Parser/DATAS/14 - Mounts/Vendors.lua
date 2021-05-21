@@ -36,6 +36,9 @@ _.Mounts =
 			["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant only
 		}),
 		i(44689),	-- Armored Snowy Gryphon
+		i(186485, {	-- Ascendant's Aquilon
+			["customCollect"] = "SL_COV_KYR",	-- Kyrian covenant only
+		}),
 		i(103638),	-- Ashhide Mushan Beast
 		i(87781),	-- Azure Riding Crane
 		i(166465, {	-- Azureshell Krolusk
@@ -175,6 +178,9 @@ _.Mounts =
 			["races"] = ALLIANCE_ONLY,
 		}),
 		i(25471),	-- Ebon Gryphon
+		i(186482, {	-- Elysian Aquilon
+			["customCollect"] = "SL_COV_KYR",	-- Kyrian covenant only
+		}),
 		i(180724, {	-- Enchanted Winterborn Runestag
 			["cost"] = { { "c", 1813, 5000 } },
 		}),

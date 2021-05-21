@@ -379,10 +379,12 @@ i(184168, 344577);	-- Bound Shadehound
 -- PATCH 9.1.0 --
 -----------------
 i(186647, 354356);	-- Amber Shardhide
+i(186485, 353880);	-- Ascendant's Aquilon
 i(186480, 343550);	-- Battle-Hardened Aquilon
 i(186490, 353885);	-- Battlefield Swarmer
 i(186645, 354357);	-- Crimson Shardhide
 i(186646, 354358);	-- Darkmaul
+i(186482, 353875);	-- Elysian Aquilon
 i(185996, 332904);	-- Harvester's Dredwing
 i(186643, 354362);	-- Maelie The Wanderer
 i(186478, 353866);	-- Obsidian Gravewing
