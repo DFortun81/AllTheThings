@@ -1616,6 +1616,7 @@ _.Zones =
 											{"select", "itemID", 126402 },	-- Warmongering Gladiator's Armplates of Cruelty (H)
 											{"select", "itemID", 126396 },	-- Warmongering Gladiator's Girdle of Cruelty (H)
 											{"select", "itemID", 126401 },	-- Warmongering Gladiator's Warboots of Victory (H)
+											{"exclude", "itemID", 138494 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(126306, {	-- Warmongering Gladiator's Dreadplate Helm (H)
@@ -1642,6 +1643,7 @@ _.Zones =
 											{"select", "itemID", 126351 },	-- Warmongering Gladiator's Bindings of Victory (H)
 											{"select", "itemID", 126345 },	-- Warmongering Gladiator's Belt of Victory (H)
 											{"select", "itemID", 126347 },	-- Warmongering Gladiator's Boots of Prowess (H)
+											{"exclude", "itemID", 138502 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(126309, {	-- Warmongering Gladiator's Dragonhide Gloves (H)
@@ -1668,6 +1670,7 @@ _.Zones =
 											{"select", "itemID", 126374 },	-- Warmongering Gladiator's Armbands of Cruelty (H)
 											{"select", "itemID", 126367 },	-- Warmongering Gladiator's Waistguard of Cruelty (H)
 											{"select", "itemID", 126371 },	-- Warmongering Gladiator's Footguards of Prowess (H)
+											{"exclude", "itemID", 138500 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(126314, {	-- Warmongering Gladiator's Chain Armor (H)
@@ -1694,6 +1697,7 @@ _.Zones =
 											{"select", "itemID", 126291 },	-- Warmongering Gladiator's Cuffs of Prowess (H)
 											{"select", "itemID", 126285 },	-- Warmongering Gladiator's Cord of Cruelty (H)
 											{"select", "itemID", 126289 },	-- Warmongering Gladiator's Treads of Prowess (H)
+											{"exclude", "itemID", 138508 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(126366, {	-- Warmongering Gladiator's Silk Amice (H)
@@ -1720,6 +1724,7 @@ _.Zones =
 											{"select", "itemID", 126349 },	-- Warmongering Gladiator's Bindings of Cruelty (H)
 											{"select", "itemID", 126397 },	-- Warmongering Gladiator's Girdle of Prowess (H)
 											{"select", "itemID", 126348 },	-- Warmongering Gladiator's Boots of Victory (H)
+											{"exclude", "itemID", 138504 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(126386, {	-- Warmongering Gladiator's Ironskin Gloves (H)
@@ -1746,6 +1751,7 @@ _.Zones =
 											{"select", "itemID", 126404 },	-- Warmongering Gladiator's Armplates of Victory (H)
 											{"select", "itemID", 126398 },	-- Warmongering Gladiator's Girdle of Victory (H)
 											{"select", "itemID", 126400 },	-- Warmongering Gladiator's Warboots of Prowess (H)
+											{"exclude", "itemID", 138496 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(126391, {	-- Warmongering Gladiator's Scaled Chestpiece (H)
@@ -1772,6 +1778,7 @@ _.Zones =
 											{"select", "itemID", 126293 },	-- Warmongering Gladiator's Cuffs of Victory (H)
 											{"select", "itemID", 126287 },	-- Warmongering Gladiator's Cord of Victory (H)
 											{"select", "itemID", 126288 },	-- Warmongering Gladiator's Treads of Cruelty (H)
+											{"exclude", "itemID", 138510 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(126415, {	-- Warmongering Gladiator's Satin Gloves (H)
@@ -1798,6 +1805,7 @@ _.Zones =
 											{"select", "itemID", 126291 },	-- Warmongering Gladiator's Bindings of Prowess (H)
 											{"select", "itemID", 126344 },	-- Warmongering Gladiator's Belt of Cruelty (H)
 											{"select", "itemID", 126346 },	-- Warmongering Gladiator's Boots of Cruelty (H)
+											{"exclude", "itemID", 138506 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(126421, {	-- Warmongering Gladiator's Leather Gloves (H)
@@ -1824,6 +1832,7 @@ _.Zones =
 											{"select", "itemID", 139030 },	-- Warmongering Gladiator's Armbands of Alacrity (H)
 											{"select", "itemID", 126368 },	-- Warmongering Gladiator's Waistguard of Prowess (H)
 											{"select", "itemID", 126370 },	-- Warmongering Gladiator's Footguards of Cruelty (H)
+											{"exclude", "itemID", 138498 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(126425, {	-- Warmongering Gladiator's Ringmail Armor (H)
@@ -1850,6 +1859,7 @@ _.Zones =
 											{"select", "itemID", 126293 },	-- Warmongering Gladiator's Cuffs of Cruelty (H)
 											{"select", "itemID", 126286 },	-- Warmongering Gladiator's Cord of Prowess (H)
 											{"select", "itemID", 126290 },	-- Warmongering Gladiator's Treads of Victory (H)
+											{"exclude", "itemID", 138512 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(126470, {	-- Warmongering Gladiator's Felweave Amice (H)
@@ -1876,6 +1886,7 @@ _.Zones =
 											{"select", "itemID", 126403 },	-- Warmongering Gladiator's Armplates of Prowess (H)
 											{"select", "itemID", 126397 },	-- Warmongering Gladiator's Girdle of Prowess (H)
 											{"select", "itemID", 126399 },	-- Warmongering Gladiator's Warboots of Cruelty (H)
+											{"exclude", "itemID", 138492 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(126471, {	-- Warmongering Gladiator's Plate Chestpiece (H)
@@ -2517,6 +2528,7 @@ _.Zones =
 											{"select", "itemID", 126584 },	-- Warmongering Combatant's Armplates of Cruelty (H)
 											{"select", "itemID", 126580 },	-- Warmongering Combatant's Girdle of Cruelty (H)
 											{"select", "itemID", 126582 },	-- Warmongering Combatant's Warboots of Cruelty (H)
+											{"exclude", "itemID", 138590 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(126504, {	-- Warmongering Combatant's Dreadplate Chestpiece (H)
@@ -2543,6 +2555,7 @@ _.Zones =
 											{"select", "itemID", 126547 },	-- Warmongering Combatant's Bindings of Cruelty (H)
 											{"select", "itemID", 126544 },	-- Warmongering Combatant's Belt of Cruelty (H)
 											{"select", "itemID", 126545 },	-- Warmongering Combatant's Boots of Cruelty (H)
+											{"exclude", "itemID", 138594 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(126509, {	-- Warmongering Combatant's Dragonhide Gloves (H)
@@ -2569,6 +2582,7 @@ _.Zones =
 											{"select", "itemID", 126564 },	-- Warmongering Combatant's Armbands of Cruelty (H)
 											{"select", "itemID", 126559 },	-- Warmongering Combatant's Waistguard of Cruelty (H)
 											{"select", "itemID", 126561 },	-- Warmongering Combatant's Footguards of Cruelty (H)
+											{"exclude", "itemID", 138538 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(126514, {	-- Warmongering Combatant's Chain Armor (H)
@@ -2595,6 +2609,7 @@ _.Zones =
 											{"select", "itemID", 126498 },	-- Warmongering Combatant's Cuffs of Cruelty (H)
 											{"select", "itemID", 126493 },	-- Warmongering Combatant's Cord of Cruelty (H)
 											{"select", "itemID", 126495 },	-- Warmongering Combatant's Treads of Cruelty (H)
+											{"exclude", "itemID", 138540 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(126558, {	-- Warmongering Combatant's Silk Amice (H)
@@ -2621,6 +2636,7 @@ _.Zones =
 											{"select", "itemID", 126547 },	-- Warmongering Combatant's Bindings of Cruelty (H)
 											{"select", "itemID", 126544 },	-- Warmongering Combatant's Belt of Cruelty (H)
 											{"select", "itemID", 126545 },	-- Warmongering Combatant's Boots of Cruelty (H)
+											{"exclude", "itemID", 138596 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(126570, {	-- Warmongering Combatant's Ironskin Gloves (H)
@@ -2647,6 +2663,7 @@ _.Zones =
 											{"select", "itemID", 126584 },	-- Warmongering Combatant's Armplates of Cruelty (H)
 											{"select", "itemID", 126580 },	-- Warmongering Combatant's Girdle of Cruelty (H)
 											{"select", "itemID", 126582 },	-- Warmongering Combatant's Warboots of Cruelty (H)
+											{"exclude", "itemID", 138592 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(126575, {	-- Warmongering Combatant's Scaled Chestpiece (H)
@@ -2673,6 +2690,7 @@ _.Zones =
 											{"select", "itemID", 126498 },	-- Warmongering Combatant's Cuffs of Cruelty (H)
 											{"select", "itemID", 126493 },	-- Warmongering Combatant's Cord of Cruelty (H)
 											{"select", "itemID", 126495 },	-- Warmongering Combatant's Treads of Cruelty (H)
+											{"exclude", "itemID", 138542 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(126591, {	-- Warmongering Combatant's Satin Gloves (H)
@@ -2699,6 +2717,7 @@ _.Zones =
 											{"select", "itemID", 126547 },	-- Warmongering Combatant's Bindings of Cruelty (H)
 											{"select", "itemID", 126544 },	-- Warmongering Combatant's Belt of Cruelty (H)
 											{"select", "itemID", 126545 },	-- Warmongering Combatant's Boots of Cruelty (H)
+											{"exclude", "itemID", 138598 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(126597, {	-- Warmongering Combatant's Leather Gloves (H)
@@ -2725,6 +2744,7 @@ _.Zones =
 											{"select", "itemID", 126564 },	-- Warmongering Combatant's Armbands of Cruelty (H)
 											{"select", "itemID", 126559 },	-- Warmongering Combatant's Waistguard of Cruelty (H)
 											{"select", "itemID", 126561 },	-- Warmongering Combatant's Footguards of Cruelty (H)
+											{"exclude", "itemID", 138536 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(126601, {	-- Warmongering Combatant's Ringmail Armor (H)
@@ -2751,6 +2771,7 @@ _.Zones =
 											{"select", "itemID", 126498 },	-- Warmongering Combatant's Cuffs of Cruelty (H)
 											{"select", "itemID", 126493 },	-- Warmongering Combatant's Cord of Cruelty (H)
 											{"select", "itemID", 126495 },	-- Warmongering Combatant's Treads of Cruelty (H)
+											{"exclude", "itemID", 138544 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(126648, {	-- Warmongering Combatant's Felweave Amice (H)
@@ -2777,6 +2798,7 @@ _.Zones =
 											{"select", "itemID", 126584 },	-- Warmongering Combatant's Armplates of Cruelty (H)
 											{"select", "itemID", 126580 },	-- Warmongering Combatant's Girdle of Cruelty (H)
 											{"select", "itemID", 126582 },	-- Warmongering Combatant's Warboots of Cruelty (H)
+											{"exclude", "itemID", 138588 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(126649, {	-- Warmongering Combatant's Plate Chestpiece (H)
