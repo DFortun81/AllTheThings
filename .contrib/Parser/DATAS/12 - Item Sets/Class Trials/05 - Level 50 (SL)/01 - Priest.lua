@@ -6,7 +6,7 @@ _.GearSets =
 {
 	n(-5350, {	-- Class Trial Item Sets
 		n(-155, {	-- Level 50 (Old Level 120)
-		--	["groups"] = bubbleDown({["u"] = BLIZZARD_BALANCE}, {
+			["groups"] = bubbleDown({["u"] = BLIZZARD_BALANCE}, {
 				n(-140, {	-- Communal
 					["classes"] = { PRIEST },
 					["groups"] = {
@@ -76,7 +76,7 @@ _.GearSets =
 						i(170697),	-- Communal Idol of Wisdom	*LA0104
 					},
 				}),
-			--}),
+			}),
 		}),
 	}),
 };
