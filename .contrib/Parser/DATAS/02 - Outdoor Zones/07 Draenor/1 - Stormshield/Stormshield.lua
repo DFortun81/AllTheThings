@@ -1215,9 +1215,21 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,	-- to hide it in Mark of Honor list
 							["coord"] = { 54.8, 18.8, 622 },
 							["g"] = { 
+								i(116776, {	-- Pale Thorngrazer
+									["cost"] = {
+										{ "i", 137642, 100 },	-- 100x Mark of Honor
+										{ "g", 50000000 },	-- 5,000g
+									},
+								}),
+								un(14, i(120287, {	-- Enchanter's Illusion - Primal Victory
+									["cost"] = { { "i", 137642, 10 } },	-- 10x Mark of Honor
+								})),
 									i(138635, {	-- Arsenal: Warmongering Gladiator's Weapons (A)
 										["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-										["sym"] = { {"sub", "pvp_weapons_faction_ensemble", -9981, -681, -9914, -661 }, },
+										["sym"] = { 
+											{"sub", "pvp_weapons_faction_ensemble", -9981, -681, -9914, -661 },
+											{"exclude", "itemID", 138635 },	-- Exclude itself to stop duplicating
+										},
 									}),
 									i(125863, {	-- Warmongering Gladiator's Barrier (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -1880,17 +1892,6 @@ _.Zones =
 									}),
 								}),
 							},
-							["g"] = {
-								i(116776, {	-- Pale Thorngrazer
-									["cost"] = {
-										{ "i", 137642, 100 },	-- 100x Mark of Honor
-										{ "g", 50000000 },	-- 5,000g
-									},
-								}),
-								un(14, i(120287, {	-- Enchanter's Illusion - Primal Victory
-									["cost"] = { { "i", 137642, 10 } },	-- 10x Mark of Honor
-								})),
-							},
 						}),
 						n(86176, {	-- Ingrid Blackingot <Primal Gladiator>
 							["itemID"] = 137642,	-- Mark of Honor
@@ -2245,7 +2246,10 @@ _.Zones =
 								n(-319, {	-- Weapons
 									i(138628, {	-- Arsenal: Warmongering Combatant's Weapons (A)
 										["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-										["sym"] = { {"sub", "pvp_weapons_faction_ensemble", -9981, -681, -9914, -660 }, },
+										["sym"] = { 
+											{"sub", "pvp_weapons_faction_ensemble", -9981, -681, -9914, -660 },
+											{"exclude", "itemID", 138628 },	-- Exclude itself to stop duplicating
+										 },
 									}),
 									i(126065, {	-- Warmongering Combatant's Barrier (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor

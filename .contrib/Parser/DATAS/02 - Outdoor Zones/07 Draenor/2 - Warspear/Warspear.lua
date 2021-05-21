@@ -1518,7 +1518,10 @@ _.Zones =
 								n(-319, {	-- Weapons
 									i(138636, {	-- Arsenal: Warmongering Gladiator's Weapons (H)
 										["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-										["sym"] = { {"sub", "pvp_weapons_faction_ensemble", -9981, -681, -9913, -661 }, },
+										["sym"] = { 
+											{"sub", "pvp_weapons_faction_ensemble", -9981, -681, -9913, -661 },
+											{"exclude", "itemID", 138636 },	-- Exclude itself to stop duplicating
+										},
 									}),
 									i(126342, {	-- Warmongering Gladiator's Barrier (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -2427,7 +2430,10 @@ _.Zones =
 								n(-319, {	-- Weapons
 									i(138627, {	-- Arsenal: Warmongering Combatant's Weapons (H)
 										["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-										["sym"] = { {"sub", "pvp_weapons_faction_ensemble", -9981, -681, -9913, -660 }, },
+										["sym"] = { 
+											{"sub", "pvp_weapons_faction_ensemble", -9981, -681, -9913, -660 },
+											{"exclude", "itemID", 138627 },	-- Exclude itself to stop duplicating
+										},
 									}),
 									i(126542, {	-- Warmongering Combatant's Barrier (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor

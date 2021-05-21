@@ -3165,7 +3165,6 @@ _.PVP =
 					n(-319, {	-- Weapons
 						i(138628, {	-- Arsenal: Warmongering Combatant's Weapons (A)
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-							["sym"] = { {"sub", "pvp_weapons_faction_ensemble", -9981, -681, -9914, -660 }, },
 						}),
 						i(126065, {	-- Warmongering Combatant's Barrier (A)
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -3667,7 +3666,6 @@ _.PVP =
 					n(-319, {	-- Weapons
 						i(138635, {	-- Arsenal: Warmongering Gladiator's Weapons (A)
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-							["sym"] = { {"sub", "pvp_weapons_faction_ensemble", -9981, -681, -9914, -661 }, },
 						}),
 						i(125863, {	-- Warmongering Gladiator's Barrier (A)
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -4437,7 +4435,6 @@ _.PVP =
 					n(-319, {	-- Weapons
 						i(138627, {	-- Arsenal: Warmongering Combatant's Weapons (H)
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-							["sym"] = { {"sub", "pvp_weapons_faction_ensemble", -9981, -681, -9913, -660 }, },
 						}),
 						i(126542, {	-- Warmongering Combatant's Barrier (H)
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -4987,7 +4984,6 @@ _.PVP =
 					n(-319, {	-- Weapons
 						i(138636, {	-- Arsenal: Warmongering Gladiator's Weapons (H)
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-							["sym"] = { {"sub", "pvp_weapons_faction_ensemble", -9981, -681, -9913, -661 }, },
 						}),
 						i(126342, {	-- Warmongering Gladiator's Barrier (H)
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
