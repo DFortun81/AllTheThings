@@ -2080,6 +2080,11 @@ _.NeverImplemented =
 		n(-386, {	-- Trinket
 			i(12805),	-- Orb of Fire
 			i(37561),	-- Unknown
+			i(125522),	-- Wild Combatant's Accolade of Dominance
+			i(125524),	-- Wild Combatant's Accolade of Meditation
+			i(125521),	-- Wild Combatant's Accolade of conquest
+			i(125523),	-- Wild Combatant's Accolade of Victory
+			i(125525),	-- Wild Combatant's Accolade of Endurance
 			i(173426),	-- Black Empire trinkets
 			i(25994),	-- rune of force (only beta)
 			i(25995),	-- Star of Sha'naar (only beta)

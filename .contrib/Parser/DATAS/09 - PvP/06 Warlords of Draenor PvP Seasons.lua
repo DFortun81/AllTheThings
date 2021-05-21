@@ -1838,35 +1838,37 @@ _.PVP =
 			n(-662, {	-- Elite PvP Gear
 				un(REMOVED_FROM_GAME, i(115979)),	-- Primal Gladiator's Greatcloak
 				un(REMOVED_FROM_GAME, i(115972)),	-- Primal Gladiator's Tabard
-				un(REMOVED_FROM_GAME, i(115948)),	-- Primal Gladiator's Ripper
-				un(REMOVED_FROM_GAME, i(115949)),	-- Primal  Gladiator's Render
-				un(REMOVED_FROM_GAME, i(115818)),	-- Primal  Gladiator's Bonegrinder
-				un(REMOVED_FROM_GAME, i(115836)),	-- Primal Gladiator's Heavy Crossbow
-				un(REMOVED_FROM_GAME, i(115817)),	-- Primal Gladiator's Decapitator
-				un(REMOVED_FROM_GAME, i(115819)),	-- Primal Gladiator's  Greatsword
-				un(REMOVED_FROM_GAME, i(115820)),	-- Primal Gladiator's Cleaver
-				un(REMOVED_FROM_GAME, i(115952)),	-- Primal Gladiator's Hacker
-				un(REMOVED_FROM_GAME, i(115823)),	-- Primal Gladiator's Longbow
-				un(REMOVED_FROM_GAME, i(115910)),	-- Primal Gladiator's Pike
-				un(REMOVED_FROM_GAME, i(115862)),	-- Primal Gladiator's Rifle
-				un(REMOVED_FROM_GAME, i(115832)),	-- Primal Gladiator's Spellblade
-				un(REMOVED_FROM_GAME, i(115947)),	-- Primal Gladiator's Shanker
-				un(REMOVED_FROM_GAME, i(115830)),	-- Primal Gladiator's Endgame
-				un(REMOVED_FROM_GAME, i(115834)),	-- Primal Gladiator's Reprieve
-				un(REMOVED_FROM_GAME, i(115822)),	-- Primal Gladiator's Quickblade
-				un(REMOVED_FROM_GAME, i(115950)),	-- Primal Gladiator's Mageblade
-				un(REMOVED_FROM_GAME, i(115954)),	-- Primal Gladiator's Slicer
-				un(REMOVED_FROM_GAME, i(115833)),	-- Primal Gladiator's Battle Staff
-				un(REMOVED_FROM_GAME, i(115854)),	-- Primal Gladiator's Staff
-				un(REMOVED_FROM_GAME, i(115865)),	-- Primal Gladiator's Energy Staff
-				un(REMOVED_FROM_GAME, i(115821)),	-- Primal Gladiator's Pummeler
-				un(REMOVED_FROM_GAME, i(115863)),	-- Primal Gladiator's Gavel
-				un(REMOVED_FROM_GAME, i(115953)),	-- Primal Gladiator's Bonecracker
-				un(REMOVED_FROM_GAME, i(115831)),	-- Primal Gladiator's Barrier
-				un(REMOVED_FROM_GAME, i(115864)),	-- Primal Gladiator's Redoubt
-				un(REMOVED_FROM_GAME, i(115955)),	-- Primal Gladiator's Shield Wall
-				un(REMOVED_FROM_GAME, i(115835)),	-- Primal Gladiator's Touch of defeat
-				un(REMOVED_FROM_GAME, i(115951)),	-- Primal Gladiator's Baton of Light
+				n(-319, {	-- Weapons
+					un(REMOVED_FROM_GAME, i(115948)),	-- Primal Gladiator's Ripper
+					un(REMOVED_FROM_GAME, i(115949)),	-- Primal  Gladiator's Render
+					un(REMOVED_FROM_GAME, i(115818)),	-- Primal  Gladiator's Bonegrinder
+					un(REMOVED_FROM_GAME, i(115836)),	-- Primal Gladiator's Heavy Crossbow
+					un(REMOVED_FROM_GAME, i(115817)),	-- Primal Gladiator's Decapitator
+					un(REMOVED_FROM_GAME, i(115819)),	-- Primal Gladiator's  Greatsword
+					un(REMOVED_FROM_GAME, i(115820)),	-- Primal Gladiator's Cleaver
+					un(REMOVED_FROM_GAME, i(115952)),	-- Primal Gladiator's Hacker
+					un(REMOVED_FROM_GAME, i(115823)),	-- Primal Gladiator's Longbow
+					un(REMOVED_FROM_GAME, i(115910)),	-- Primal Gladiator's Pike
+					un(REMOVED_FROM_GAME, i(115862)),	-- Primal Gladiator's Rifle
+					un(REMOVED_FROM_GAME, i(115832)),	-- Primal Gladiator's Spellblade
+					un(REMOVED_FROM_GAME, i(115947)),	-- Primal Gladiator's Shanker
+					un(REMOVED_FROM_GAME, i(115830)),	-- Primal Gladiator's Endgame
+					un(REMOVED_FROM_GAME, i(115834)),	-- Primal Gladiator's Reprieve
+					un(REMOVED_FROM_GAME, i(115822)),	-- Primal Gladiator's Quickblade
+					un(REMOVED_FROM_GAME, i(115950)),	-- Primal Gladiator's Mageblade
+					un(REMOVED_FROM_GAME, i(115954)),	-- Primal Gladiator's Slicer
+					un(REMOVED_FROM_GAME, i(115833)),	-- Primal Gladiator's Battle Staff
+					un(REMOVED_FROM_GAME, i(115854)),	-- Primal Gladiator's Staff
+					un(REMOVED_FROM_GAME, i(115865)),	-- Primal Gladiator's Energy Staff
+					un(REMOVED_FROM_GAME, i(115821)),	-- Primal Gladiator's Pummeler
+					un(REMOVED_FROM_GAME, i(115863)),	-- Primal Gladiator's Gavel
+					un(REMOVED_FROM_GAME, i(115953)),	-- Primal Gladiator's Bonecracker
+					un(REMOVED_FROM_GAME, i(115831)),	-- Primal Gladiator's Barrier
+					un(REMOVED_FROM_GAME, i(115864)),	-- Primal Gladiator's Redoubt
+					un(REMOVED_FROM_GAME, i(115955)),	-- Primal Gladiator's Shield Wall
+					un(REMOVED_FROM_GAME, i(115835)),	-- Primal Gladiator's Touch of defeat
+					un(REMOVED_FROM_GAME, i(115951)),	-- Primal Gladiator's Baton of Light
+				}),
 				cl(DEATHKNIGHT, {
 					un(REMOVED_FROM_GAME, i(115837)),	-- Primal Gladiator's Dreadplate Chestpiece
 					un(REMOVED_FROM_GAME, i(115838)),	-- Primal Gladiator's Dreadplate Gauntlets
@@ -2372,510 +2374,561 @@ _.PVP =
 							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 						}),
 					}),
-				--[[	-- Change ItemID's
 					cl(DEATHKNIGHT, {
-						i(138614, {	-- Ensemble: Wild Combatant's Dreadplate Armor (H)
+						i(138602, {	-- Ensemble: Wild Combatant's Dreadplate Armor (H)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 6 },
-								{"select", "itemID", 119898 },	-- Wild Combatant's Armplates of Cruelty (H)
-								{"select", "itemID", 119894 },	-- Wild Combatant's Girdle of Cruelty (H)
-								{"select", "itemID", 119896 },	-- Wild Combatant's Warboots of Cruelty (H)
+								{"sub", "pvp_set_faction_ensemble", -9981, -680, -9913, -660, 6 },
+								{"select", "itemID", 125470 },	-- Wild Combatant's Armplates of Cruelty (H)
+								{"select", "itemID", 125466 },	-- Wild Combatant's Girdle of Cruelty (H)
+								{"select", "itemID", 125468 },	-- Wild Combatant's Warboots of Cruelty (H)
+								{"exclude", "itemID", 138602 },	-- Exclude itself to stop duplicating
 							},
 						}),
-						i(119839, {	-- Wild Combatant's Dreadplate Chestpiece (H)
+						i(125390, {	-- Wild Combatant's Dreadplate Chestpiece (H)
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
-						i(119840, {	-- Wild Combatant's Dreadplate Gauntlets (H)
+						i(125391, {	-- Wild Combatant's Dreadplate Gauntlets (H)
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
-						i(119841, {	-- Wild Combatant's Dreadplate Helm (H)
+						i(125392, {	-- Wild Combatant's Dreadplate Helm (H)
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
-						i(119842, {	-- Wild Combatant's Dreadplate Legguards (H)
+						i(125393, {	-- Wild Combatant's Dreadplate Legguards (H)
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
-						i(119843, {	-- Wild Combatant's Dreadplate Shoulders (H)
+						i(125394, {	-- Wild Combatant's Dreadplate Shoulders (H)
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
 					}),
 					cl(DRUID, {
-						i(138618, {	-- Ensemble: Wild Combatant's Dragonhide Armor (H)
+						i(138606, {	-- Ensemble: Wild Combatant's Dragonhide Armor (H)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 11 },
-								{"select", "itemID", 119871 },	-- Wild Combatant's Bindings of Cruelty (H)
-								{"select", "itemID", 119868 },	-- Wild Combatant's Belt of Cruelty (H)
-								{"select", "itemID", 119869 },	-- Wild Combatant's Boots of Cruelty (H)
+								{"sub", "pvp_set_faction_ensemble", -9981, -680, -9913, -660, 11 },
+								{"select", "itemID", 125433 },	-- Wild Combatant's Bindings of Cruelty (H)
+								{"select", "itemID", 125430 },	-- Wild Combatant's Belt of Cruelty (H)
+								{"select", "itemID", 125431 },	-- Wild Combatant's Boots of Cruelty (H)
+								{"exclude", "itemID", 138606 },	-- Exclude itself to stop duplicating
 							},
 						}),
-						i(119844, {	-- Wild Combatant's Dragonhide Gloves (H)
+						i(125395, {	-- Wild Combatant's Dragonhide Gloves (H)
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
-						i(119845, {	-- Wild Combatant's Dragonhide Helm (H)
+						i(125396, {	-- Wild Combatant's Dragonhide Helm (H)
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
-						i(119846, {	-- Wild Combatant's Dragonhide Legguards (H)
+						i(125397, {	-- Wild Combatant's Dragonhide Legguards (H)
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
-						i(119847, {	-- Wild Combatant's Dragonhide Robes (H)
+						i(125398, {	-- Wild Combatant's Dragonhide Robes (H)
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
-						i(119848, {	-- Wild Combatant's Dragonhide Spaulders (H)
+						i(125399, {	-- Wild Combatant's Dragonhide Spaulders (H)
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
 					}),
 					cl(HUNTER, {
-						i(138580, {	-- Ensemble: Wild Combatant's Chain Armor (H)
+						i(138548, {	-- Ensemble: Wild Combatant's Chain Armor (H)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 3 },
-								{"select", "itemID", 119883 },	-- Wild Combatant's Armbands of Cruelty (H)
-								{"select", "itemID", 119878 },	-- Wild Combatant's Waistguard of Cruelty (H)
-								{"select", "itemID", 119880 },	-- Wild Combatant's Footguards of Cruelty (H)
+								{"sub", "pvp_set_faction_ensemble", -9981, -680, -9913, -660, 3 },
+								{"select", "itemID", 125450 },	-- Wild Combatant's Armbands of Cruelty (H)
+								{"select", "itemID", 125445 },	-- Wild Combatant's Waistguard of Cruelty (H)
+								{"select", "itemID", 125448 },	-- Wild Combatant's Footguards of Cruelty (H)
+								{"exclude", "itemID", 138548 },	-- Exclude itself to stop duplicating
 							},
 						}),
-						i(119849, {	-- Wild Combatant's Chain Armor (H)
+						i(125400, {	-- Wild Combatant's Chain Armor (H)
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
-						i(119850, {	-- Wild Combatant's Chain Gauntlets (H)
+						i(125401, {	-- Wild Combatant's Chain Gauntlets (H)
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
-						i(119851, {	-- Wild Combatant's Chain Helm (H)
+						i(125402, {	-- Wild Combatant's Chain Helm (H)
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
-						i(119852, {	-- Wild Combatant's Chain Leggings (H)
+						i(125403, {	-- Wild Combatant's Chain Leggings (H)
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
-						i(119853, {	-- Wild Combatant's Chain Spaulders (H)
+						i(125404, {	-- Wild Combatant's Chain Spaulders (H)
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
 					}),
 					cl(MAGE, {
-						i(138582, {	-- Ensemble: Wild Combatant's Silk Armor (H)
+						i(138550, {	-- Ensemble: Wild Combatant's Silk Armor (H)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 8 },
-								{"select", "itemID", 119838 },	-- Wild Combatant's Cuffs of Cruelty (H)
-								{"select", "itemID", 119833 },	-- Wild Combatant's Cord of Cruelty (H)
-								{"select", "itemID", 119835 },	-- Wild Combatant's Treads of Cruelty (H)
+								{"sub", "pvp_set_faction_ensemble", -9981, -680, -9913, -660, 8 },
+								{"select", "itemID", 125384 },	-- Wild Combatant's Cuffs of Cruelty (H)
+								{"select", "itemID", 125379 },	-- Wild Combatant's Cord of Cruelty (H)
+								{"select", "itemID", 125381 },	-- Wild Combatant's Treads of Cruelty (H)
+								{"exclude", "itemID", 138550 },	-- Exclude itself to stop duplicating
 							},
 						}),
-						i(119877, {	-- Wild Combatant's Silk Amice (H)
+						i(125444, {	-- Wild Combatant's Silk Amice (H)
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
-						i(119874, {	-- Wild Combatant's Silk Cowl (H)
+						i(125441, {	-- Wild Combatant's Silk Cowl (H)
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
-						i(119873, {	-- Wild Combatant's Silk Handguards (H)
+						i(125440, {	-- Wild Combatant's Silk Handguards (H)
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
-						i(119876, {	-- Wild Combatant's Silk Robe (H)
+						i(125443, {	-- Wild Combatant's Silk Robe (H)
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
-						i(119875, {	-- Wild Combatant's Silk Trousers (H)
+						i(125442, {	-- Wild Combatant's Silk Trousers (H)
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
 					}),
 					cl(MONK, {
-						i(138620, {	-- Ensemble: Wild Combatant's Ironskin Armor (H)
+						i(138608, {	-- Ensemble: Wild Combatant's Ironskin Armor (H)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 10 },
-								{"select", "itemID", 119871 },	-- Wild Combatant's Bindings of Cruelty (H)
-								{"select", "itemID", 119868 },	-- Wild Combatant's Belt of Cruelty (H)
-								{"select", "itemID", 119869 },	-- Wild Combatant's Boots of Cruelty (H)
+								{"sub", "pvp_set_faction_ensemble", -9981, -680, -9913, -660, 10 },
+								{"select", "itemID", 125433 },	-- Wild Combatant's Bindings of Cruelty (H)
+								{"select", "itemID", 125430 },	-- Wild Combatant's Belt of Cruelty (H)
+								{"select", "itemID", 125431 },	-- Wild Combatant's Boots of Cruelty (H)
+								{"exclude", "itemID", 138608 },	-- Exclude itself to stop duplicating
 							},
 						}),
-						i(119884, {	-- Wild Combatant's Ironskin Gloves (H)
+						i(125456, {	-- Wild Combatant's Ironskin Gloves (H)
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
-						i(119885, {	-- Wild Combatant's Ironskin Helm (H)
+						i(125457, {	-- Wild Combatant's Ironskin Helm (H)
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
-						i(119886, {	-- Wild Combatant's Ironskin Legguards (H)
+						i(125458, {	-- Wild Combatant's Ironskin Legguards (H)
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
-						i(119887, {	-- Wild Combatant's Ironskin Spaulders (H)
+						i(125459, {	-- Wild Combatant's Ironskin Spaulders (H)
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
-						i(119888, {	-- Wild Combatant's Ironskin Tunic (H)
+						i(125460, {	-- Wild Combatant's Ironskin Tunic (H)
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
 					}),
 					cl(PALADIN, {
-						i(138616, {	-- Ensemble: Wild Combatant's Scaled Armor (H)
+						i(138604, {	-- Ensemble: Wild Combatant's Scaled Armor (H)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 2 },
-								{"select", "itemID", 119898 },	-- Wild Combatant's Armplates of Cruelty (H)
-								{"select", "itemID", 119894 },	-- Wild Combatant's Girdle of Cruelty (H)
-								{"select", "itemID", 119896 },	-- Wild Combatant's Warboots of Cruelty (H)
+								{"sub", "pvp_set_faction_ensemble", -9981, -680, -9913, -660, 2 },
+								{"select", "itemID", 125450 },	-- Wild Combatant's Armplates of Cruelty (H)
+								{"select", "itemID", 125466 },	-- Wild Combatant's Girdle of Cruelty (H)
+								{"select", "itemID", 125468 },	-- Wild Combatant's Warboots of Cruelty (H)
+								{"exclude", "itemID", 138604 },	-- Exclude itself to stop duplicating
 							},
 						}),
-						i(119889, {	-- Wild Combatant's Scaled Chestpiece (H)
+						i(125461, {	-- Wild Combatant's Scaled Chestpiece (H)
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
-						i(119890, {	-- Wild Combatant's Scaled Gauntlets (H)
+						i(125462, {	-- Wild Combatant's Scaled Gauntlets (H)
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
-						i(119891, {	-- Wild Combatant's Scaled Helm (H)
+						i(125463, {	-- Wild Combatant's Scaled Helm (H)
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
-						i(119892, {	-- Wild Combatant's Scaled Legguards (H)
+						i(125464, {	-- Wild Combatant's Scaled Legguards (H)
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
-						i(119893, {	-- Wild Combatant's Scaled Shoulders (H)
+						i(125465, {	-- Wild Combatant's Scaled Shoulders (H)
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
 					}),
 					cl(PRIEST, {
-						i(138584, {	-- Ensemble: Wild Combatant's Satin Armor (H)
+						i(138552, {	-- Ensemble: Wild Combatant's Satin Armor (H)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 5 },
-								{"select", "itemID", 119838 },	-- Wild Combatant's Cuffs of Cruelty (H)
-								{"select", "itemID", 119833 },	-- Wild Combatant's Cord of Cruelty (H)
-								{"select", "itemID", 119835 },	-- Wild Combatant's Treads of Cruelty (H)
+								{"sub", "pvp_set_faction_ensemble", -9981, -680, -9913, -660, 5 },
+								{"select", "itemID", 125384 },	-- Wild Combatant's Cuffs of Cruelty (H)
+								{"select", "itemID", 125379 },	-- Wild Combatant's Cord of Cruelty (H)
+								{"select", "itemID", 125381 },	-- Wild Combatant's Treads of Cruelty (H)
+								{"exclude", "itemID", 138552 },	-- Exclude itself to stop duplicating
 							},
 						}),
-						i(119900, {	-- Wild Combatant's Satin Gloves (H)
+						i(125477, {	-- Wild Combatant's Satin Gloves (H)
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
-						i(119901, {	-- Wild Combatant's Satin Hood (H)
+						i(125478, {	-- Wild Combatant's Satin Hood (H)
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
-						i(119902, {	-- Wild Combatant's Satin Leggings (H)
+						i(125479, {	-- Wild Combatant's Satin Leggings (H)
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
-						i(119904, {	-- Wild Combatant's Satin Mantle (H)
+						i(125481, {	-- Wild Combatant's Satin Mantle (H)
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
-						i(119903, {	-- Wild Combatant's Satin Robe (H)
+						i(125480, {	-- Wild Combatant's Satin Robe (H)
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
 					}),
 					cl(ROGUE, {
-						i(138622, {	-- Ensemble: Wild Combatant's Leather Armor (H)
+						i(138610, {	-- Ensemble: Wild Combatant's Leather Armor (H)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 4 },
-								{"select", "itemID", 119871 },	-- Wild Combatant's Bindings of Cruelty (H)
-								{"select", "itemID", 119868 },	-- Wild Combatant's Belt of Cruelty (H)
-								{"select", "itemID", 119869 },	-- Wild Combatant's Boots of Cruelty (H)
+								{"sub", "pvp_set_faction_ensemble", -9981, -680, -9913, -660, 4 },
+								{"select", "itemID", 125433 },	-- Wild Combatant's Bindings of Cruelty (H)
+								{"select", "itemID", 125430 },	-- Wild Combatant's Belt of Cruelty (H)
+								{"select", "itemID", 125431 },	-- Wild Combatant's Boots of Cruelty (H)
+								{"exclude", "itemID", 138610 },	-- Exclude itself to stop duplicating
 							},
 						}),
-						i(119906, {	-- Wild Combatant's Leather Gloves (H)
+						i(125483, {	-- Wild Combatant's Leather Gloves (H)
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
-						i(119907, {	-- Wild Combatant's Leather Helm (H)
+						i(125484, {	-- Wild Combatant's Leather Helm (H)
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
-						i(119908, {	-- Wild Combatant's Leather Legguards (H)
+						i(125485, {	-- Wild Combatant's Leather Legguards (H)
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
-						i(119909, {	-- Wild Combatant's Leather Spaulders (H)
+						i(125486, {	-- Wild Combatant's Leather Spaulders (H)
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
-						i(119905, {	-- Wild Combatant's Leather Tunic (H)
+						i(125482, {	-- Wild Combatant's Leather Tunic (H)
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
 					}),
 					cl(SHAMAN, {
-						i(138578, {	-- Ensemble: Wild Combatant's Ringmail Armor (H)
+						i(138546, {	-- Ensemble: Wild Combatant's Ringmail Armor (H)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 7 },
-								{"select", "itemID", 119883 },	-- Wild Combatant's Armbands of Cruelty (H)
-								{"select", "itemID", 119878 },	-- Wild Combatant's Waistguard of Cruelty (H)
-								{"select", "itemID", 119880 },	-- Wild Combatant's Footguards of Cruelty (H)
+								{"sub", "pvp_set_faction_ensemble", -9981, -680, -9913, -660, 7 },
+								{"select", "itemID", 125450 },	-- Wild Combatant's Armbands of Cruelty (H)
+								{"select", "itemID", 125445 },	-- Wild Combatant's Waistguard of Cruelty (H)
+								{"select", "itemID", 125447 },	-- Wild Combatant's Footguards of Cruelty (H)
+								{"exclude", "itemID", 138546 },	-- Exclude itself to stop duplicating
 							},
 						}),
-						i(119910, {	-- Wild Combatant's Ringmail Armor (H)
+						i(125487, {	-- Wild Combatant's Ringmail Armor (H)
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
-						i(119911, {	-- Wild Combatant's Ringmail Gauntlets (H)
+						i(125488, {	-- Wild Combatant's Ringmail Gauntlets (H)
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
-						i(119912, {	-- Wild Combatant's Ringmail Helm (H)
+						i(125489, {	-- Wild Combatant's Ringmail Helm (H)
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
-						i(119913, {	-- Wild Combatant's Ringmail Leggings (H)
+						i(125490, {	-- Wild Combatant's Ringmail Leggings (H)
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
-						i(119915, {	-- Wild Combatant's Ringmail Spaulders (H)
+						i(125491, {	-- Wild Combatant's Ringmail Spaulders (H)
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
 					}),
 					cl(WARLOCK, {
-						i(138586, {	-- Ensemble: Wild Combatant's Felweave Armor (H)
+						i(138554, {	-- Ensemble: Wild Combatant's Felweave Armor (H)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 9 },
+								{"sub", "pvp_set_faction_ensemble", -9981, -680, -9913, -660, 9 },
 								{"select", "itemID", 119838 },	-- Wild Combatant's Cuffs of Cruelty (H)
 								{"select", "itemID", 119833 },	-- Wild Combatant's Cord of Cruelty (H)
 								{"select", "itemID", 119835 },	-- Wild Combatant's Treads of Cruelty (H)
+								{"exclude", "itemID", 138554 },	-- Exclude itself to stop duplicating
 							},
 						}),
-						i(119942, {	-- Wild Combatant's Felweave Amice (H)
+						i(125534, {	-- Wild Combatant's Felweave Amice (H)
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
-						i(119939, {	-- Wild Combatant's Felweave Cowl (H)
+						i(125531, {	-- Wild Combatant's Felweave Cowl (H)
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
-						i(119938, {	-- Wild Combatant's Felweave Handguards (H)
+						i(125530, {	-- Wild Combatant's Felweave Handguards (H)
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
-						i(119941, {	-- Wild Combatant's Felweave Raiment (H)
+						i(125533, {	-- Wild Combatant's Felweave Raiment (H)
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
-						i(119940, {	-- Wild Combatant's Felweave Trousers (H)
+						i(125532, {	-- Wild Combatant's Felweave Trousers (H)
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
 					}),
 					cl(WARRIOR, {
-						i(138612, {	-- Ensemble: Wild Combatant's Plate Armor (H)
+						i(138600, {	-- Ensemble: Wild Combatant's Plate Armor (H)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 1 },
-								{"select", "itemID", 119898 },	-- Wild Combatant's Armplates of Cruelty (H)
-								{"select", "itemID", 119894 },	-- Wild Combatant's Girdle of Cruelty (H)
-								{"select", "itemID", 119896 },	-- Wild Combatant's Warboots of Cruelty (H)
+								{"sub", "pvp_set_faction_ensemble", -9981, -680, -9913, -660, 1 },
+								{"select", "itemID", 125470 },	-- Wild Combatant's Armplates of Cruelty (H)
+								{"select", "itemID", 125466 },	-- Wild Combatant's Girdle of Cruelty (H)
+								{"select", "itemID", 125468 },	-- Wild Combatant's Warboots of Cruelty (H)
+								{"exclude", "itemID", 138600 },	-- Exclude itself to stop duplicating
 							},
 						}),
-						i(119943, {	-- Wild Combatant's Plate Chestpiece (H)
+						i(125535, {	-- Wild Combatant's Plate Chestpiece (H)
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
-						i(119944, {	-- Wild Combatant's Plate Gauntlets (H)
+						i(125536, {	-- Wild Combatant's Plate Gauntlets (H)
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
-						i(119945, {	-- Wild Combatant's Plate Helm (H)
+						i(125537, {	-- Wild Combatant's Plate Helm (H)
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
-						i(119946, {	-- Wild Combatant's Plate Legguards (H)
+						i(125538, {	-- Wild Combatant's Plate Legguards (H)
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
-						i(119947, {	-- Wild Combatant's Plate Shoulders (H)
+						i(125539, {	-- Wild Combatant's Plate Shoulders (H)
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
 					}),
 					n(-320, {	-- Head
-						i(119829, {	-- Wild Combatant's Hood of Prowess (H)
+						i(125386, {	-- Wild Combatant's Hood of Prowess (H)
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
-						i(119952, {	-- Wild Combatant's Helm (H)
+						i(125453, {	-- Wild Combatant's Helm (H)
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
-						i(119957, {	-- Wild Combatant's Helm (H)
+						i(125437, {	-- Wild Combatant's Helm (H)
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
-						i(119920, {	-- Wild Combatant's Plate Helmet (H)
+						i(125474, {	-- Wild Combatant's Plate Helmet (H)
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
 					}),
 					n(-321, {	-- Shoulders
-						i(119832, {	-- Wild Combatant's Amice of Prowess (H)
+						i(125389, {	-- Wild Combatant's Amice of Prowess (H)
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
-						i(119954, {	-- Wild Combatant's Spaulders (H)
+						i(125455, {	-- Wild Combatant's Spaulders (H)
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
-						i(119959, {	-- Wild Combatant's Spaulders (H)
+						i(125476, {	-- Wild Combatant's Spaulders (H)
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
-						i(119922, {	-- Wild Combatant's Shoulderplates (H)
+						i(125439, {	-- Wild Combatant's Shoulderplates (H)
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
 					}),
 					n(-322, {	-- Back
-						i(119960, {	-- Wild Combatant's Cape of Cruelty (H)
+						i(125372, {	-- Wild Combatant's Cape of Cruelty (H)
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 						}),
-						i(119961, {	-- Wild Combatant's Cape of Prowess (H)
+						i(125373, {	-- Wild Combatant's Cape of Prowess (H)
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 						}),
-						i(119966, {	-- Wild Combatant's Cloak of Cruelty (H)
+						i(125499, {	-- Wild Combatant's Cloak of Cruelty (H)
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 						}),
-						i(119967, {	-- Wild Combatant's Cloak of Prowess (H)
+						i(125526, {	-- Wild Combatant's Cloak of Endurance (H)
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 						}),
-						i(119965, {	-- Wild Combatant's Drape of Contemplation (H)
+						i(125500, {	-- Wild Combatant's Cloak of Prowess (H)
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 						}),
-						i(119962, {	-- Wild Combatant's Drape of Cruelty (H)
+						i(125415, {	-- Wild Combatant's Drape of Contemplation (H)
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 						}),
-						i(119964, {	-- Wild Combatant's Drape of Meditation (H)
+						i(125412, {	-- Wild Combatant's Drape of Cruelty (H)
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 						}),
-						i(119963, {	-- Wild Combatant's Drape of Prowess (H)
+						i(125414, {	-- Wild Combatant's Drape of Meditation (H)
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(125413, {	-- Wild Combatant's Drape of Prowess (H)
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 						}),
 					}),
 					n(-323, {	-- Chest
-						i(119831, {	-- Wild Combatant's Robes of Prowess (H)
+						i(125388, {	-- Wild Combatant's Robes of Prowess (H)
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
-						i(119950, {	-- Wild Combatant's Tunic (H)
+						i(125435, {	-- Wild Combatant's Tunic (H)
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
-						i(119955, {	-- Wild Combatant's Armor (H)
+						i(125451, {	-- Wild Combatant's Armor (H)
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
-						i(119918, {	-- Wild Combatant's Plate Breastplate (H)
+						i(125472, {	-- Wild Combatant's Plate Breastplate (H)
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
 					}),
 					n(-326, {	-- Wrists
-						i(119838, {	-- Wild Combatant's Cuffs of Cruelty (H)
+						i(125384, {	-- Wild Combatant's Cuffs of Cruelty (H)
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 						}),
-						i(119837, {	-- Wild Combatant's Cuffs of Prowess (H)
+						i(125383, {	-- Wild Combatant's Cuffs of Prowess (H)
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 						}),
-						i(119871, {	-- Wild Combatant's Bindings of Cruelty (H)
+						i(125433, {	-- Wild Combatant's Bindings of Cruelty (H)
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 						}),
-						i(119872, {	-- Wild Combatant's Bindings of Prowess (H)
+						i(125434, {	-- Wild Combatant's Bindings of Prowess (H)
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 						}),
-						i(119883, {	-- Wild Combatant's Armbands of Cruelty (H)
+						i(125450, {	-- Wild Combatant's Armbands of Cruelty (H)
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 						}),
-						i(119882, {	-- Wild Combatant's Armbands of Prowess (H)
+						i(125449, {	-- Wild Combatant's Armbands of Prowess (H)
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 						}),
-						i(119898, {	-- Wild Combatant's Armplates of Cruelty (H)
+						i(125470, {	-- Wild Combatant's Armplates of Cruelty (H)
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 						}),
-						i(119899, {	-- Wild Combatant's Armplates of Prowess (H)
+						i(125471, {	-- Wild Combatant's Armplates of Prowess (H)
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 						}),
 					}),
 					n(-327, {	-- Hands
-						i(119828, {	-- Wild Combatant's Gloves of Prowess (H)
+						i(125385, {	-- Wild Combatant's Gloves of Prowess (H)
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
-						i(119951, {	-- Wild Combatant's Gloves (H)
+						i(125436, {	-- Wild Combatant's Gloves (H)
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
-						i(119956, {	-- Wild Combatant's Gauntlets (H)
+						i(125452, {	-- Wild Combatant's Gauntlets (H)
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
-						i(119919, {	-- Wild Combatant's Plate Gloves (H)
+						i(125473, {	-- Wild Combatant's Plate Gloves (H)
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
 					}),
 					n(-328, {	-- Waist
-						i(119833, {	-- Wild Combatant's Cord of Cruelty (H)
+						i(125379, {	-- Wild Combatant's Cord of Cruelty (H)
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 						}),
-						i(119834, {	-- Wild Combatant's Cord of Prowess (H)
+						i(125380, {	-- Wild Combatant's Cord of Prowess (H)
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 						}),
-						i(119868, {	-- Wild Combatant's Belt of Cruelty (H)
+						i(125430, {	-- Wild Combatant's Belt of Cruelty (H)
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 						}),
-						i(119867, {	-- Wild Combatant's Belt of Prowess (H)
+						i(125429, {	-- Wild Combatant's Belt of Prowess (H)
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 						}),
-						i(119878, {	-- Wild Combatant's Waistguard of Cruelty (H)
+						i(125445, {	-- Wild Combatant's Waistguard of Cruelty (H)
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 						}),
-						i(119879, {	-- Wild Combatant's Waistguard of Prowess (H)
+						i(125446, {	-- Wild Combatant's Waistguard of Prowess (H)
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 						}),
-						i(119894, {	-- Wild Combatant's Girdle of Cruelty (H)
+						i(125466, {	-- Wild Combatant's Girdle of Cruelty (H)
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 						}),
-						i(119895, {	-- Wild Combatant's Girdle of Prowess (H)
+						i(125467, {	-- Wild Combatant's Girdle of Prowess (H)
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 						}),
 					}),
 					n(-329, {	-- Legs
-						i(119830, {	-- Wild Combatant's Leggings of Prowess (H)
+						i(125387, {	-- Wild Combatant's Leggings of Prowess (H)
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
-						i(119953, {	-- Wild Combatant's Legguards (H)
+						i(125438, {	-- Wild Combatant's Legguards (H)
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
-						i(119958, {	-- Wild Combatant's Leggings (H)
+						i(125454, {	-- Wild Combatant's Leggings (H)
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
-						i(119921, {	-- Wild Combatant's Legplates (H)
+						i(125475, {	-- Wild Combatant's Legplates (H)
 							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
 					}),
 					n(-330, {	-- Feet
-						i(119835, {	-- Wild Combatant's Treads of Cruelty (H)
+						i(125381, {	-- Wild Combatant's Treads of Cruelty (H)
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
-						i(119836, {	-- Wild Combatant's Treads of Prowess (H)
+						i(125382, {	-- Wild Combatant's Treads of Prowess (H)
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
-						i(119869, {	-- Wild Combatant's Boots of Cruelty (H)
+						i(125431, {	-- Wild Combatant's Boots of Cruelty (H)
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
-						i(119870, {	-- Wild Combatant's Boots of Prowess (H)
+						i(125432, {	-- Wild Combatant's Boots of Prowess (H)
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
-						i(119880, {	-- Wild Combatant's Footguards of Cruelty (H)
+						i(125447, {	-- Wild Combatant's Footguards of Cruelty (H)
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
-						i(119881, {	-- Wild Combatant's Footguards of Prowess (H)
+						i(125448, {	-- Wild Combatant's Footguards of Prowess (H)
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
-						i(119896, {	-- Wild Combatant's Warboots of Cruelty (H)
+						i(125468, {	-- Wild Combatant's Warboots of Cruelty (H)
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
-						i(119897, {	-- Wild Combatant's Warboots of Prowess (H)
+						i(125469, {	-- Wild Combatant's Warboots of Prowess (H)
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
 					}),
 					n(-384,	{	-- Neck
-						un(REMOVED_FROM_GAME, i(119916)),	-- Wild Combatant's Choker of Cruelty (H)
-						un(REMOVED_FROM_GAME, i(119917)),	-- Wild Combatant's Choker of Prowess (H)
-						un(REMOVED_FROM_GAME, i(119824)),	-- Wild Combatant's Necklace of Cruelty (H)
-						un(REMOVED_FROM_GAME, i(119825)),	-- Wild Combatant's Necklace of Prowess (H)
-						un(REMOVED_FROM_GAME, i(119857)),	-- Wild Combatant's Pendant of Contemplation (H)
-						un(REMOVED_FROM_GAME, i(119854)),	-- Wild Combatant's Pendant of Cruelty (H)
-						un(REMOVED_FROM_GAME, i(119856)),	-- Wild Combatant's Pendant of Meditation (H)
-						un(REMOVED_FROM_GAME, i(119855)),	-- Wild Combatant's Pendant of Prowess (H)
+						un(REMOVED_FROM_GAME, i(125501)),	-- Wild Combatant's Choker of Cruelty (H)
+						un(REMOVED_FROM_GAME, i(125502)),	-- Wild Combatant's Choker of Prowess (H)
+						un(REMOVED_FROM_GAME, i(125527)),	-- Wild Combatant's Choker of Endurance (H)
+						un(REMOVED_FROM_GAME, i(125374)),	-- Wild Combatant's Necklace of Cruelty (H)
+						un(REMOVED_FROM_GAME, i(125375)),	-- Wild Combatant's Necklace of Prowess (H)
+						un(REMOVED_FROM_GAME, i(125419)),	-- Wild Combatant's Pendant of Contemplation (H)
+						un(REMOVED_FROM_GAME, i(125416)),	-- Wild Combatant's Pendant of Cruelty (H)
+						un(REMOVED_FROM_GAME, i(125418)),	-- Wild Combatant's Pendant of Meditation (H)
+						un(REMOVED_FROM_GAME, i(125417)),	-- Wild Combatant's Pendant of Prowess (H)
 					}),
 					n(-385,	{	-- Finger
-						un(REMOVED_FROM_GAME, i(119864)),	-- Wild Combatant's Band of Contemplation (H)
-						un(REMOVED_FROM_GAME, i(119860)),	-- Wild Combatant's Band of Cruelty (H)
-						un(REMOVED_FROM_GAME, i(119863)),	-- Wild Combatant's Band of Meditation (H)
-						un(REMOVED_FROM_GAME, i(119861)),	-- Wild Combatant's Band of Prowess (H)
-						un(REMOVED_FROM_GAME, i(119862)),	-- Wild Combatant's Band of Victory (H)
-						un(REMOVED_FROM_GAME, i(119826)),	-- Wild Combatant's Ring of Cruelty (H)
-						un(REMOVED_FROM_GAME, i(119827)),	-- Wild Combatant's Ring of Prowess (H)
-						un(REMOVED_FROM_GAME, i(119948)),	-- Wild Combatant's Ring of Triumph (H)
-						un(REMOVED_FROM_GAME, i(119924)),	-- Wild Combatant's Signet of Accuracy (H)
-						un(REMOVED_FROM_GAME, i(119923)),	-- Wild Combatant's Signet of Cruelty (H)
-						un(REMOVED_FROM_GAME, i(119949)),	-- Wild Combatant's Signet of Ruthlessness (H)
+						un(REMOVED_FROM_GAME, i(125426)),	-- Wild Combatant's Band of Contemplation (H)
+						un(REMOVED_FROM_GAME, i(125422)),	-- Wild Combatant's Band of Cruelty (H)
+						un(REMOVED_FROM_GAME, i(125425)),	-- Wild Combatant's Band of Meditation (H)
+						un(REMOVED_FROM_GAME, i(125423)),	-- Wild Combatant's Band of Prowess (H)
+						un(REMOVED_FROM_GAME, i(125424)),	-- Wild Combatant's Band of Victory (H)
+						un(REMOVED_FROM_GAME, i(125376)),	-- Wild Combatant's Ring of Cruelty (H)
+						un(REMOVED_FROM_GAME, i(125377)),	-- Wild Combatant's Ring of Prowess (H)
+						un(REMOVED_FROM_GAME, i(125378)),	-- Wild Combatant's Ring of Triumph (H)
+						un(REMOVED_FROM_GAME, i(125504)),	-- Wild Combatant's Signet of Accuracy (H)
+						un(REMOVED_FROM_GAME, i(125503)),	-- Wild Combatant's Signet of Cruelty (H)
+						un(REMOVED_FROM_GAME, i(125505)),	-- Wild Combatant's Signet of Ruthlessness (H)
+						un(REMOVED_FROM_GAME, i(125528)),	-- Wild Combatant's Signet of Dedication (H)
+						un(REMOVED_FROM_GAME, i(125529)),	-- Wild Combatant's Signet of Endurance (H)
 					}),
 					n(-386,	{	-- Trinket
-						un(REMOVED_FROM_GAME, i(120049)),	-- Wild Combatant's Badge of Adaptation (H)
-						un(REMOVED_FROM_GAME, i(119926)),	-- Wild Combatant's Badge of Conquest (H)
-						un(REMOVED_FROM_GAME, i(119931)),	-- Wild Combatant's Badge of Dominance (H)
-						un(REMOVED_FROM_GAME, i(119936)),	-- Wild Combatant's Badge of Victory (H)
-						un(REMOVED_FROM_GAME, i(119928)),	-- Wild Combatant's Emblem of Cruelty (H)
-						un(REMOVED_FROM_GAME, i(119930)),	-- Wild Combatant's Emblem of Meditation (H)
-						un(REMOVED_FROM_GAME, i(119929)),	-- Wild Combatant's Emblem of Tenacity (H)
-						un(REMOVED_FROM_GAME, i(119927)),	-- Wild Combatant's Insignia of Conquest (H)
-						un(REMOVED_FROM_GAME, i(119932)),	-- Wild Combatant's Insignia of Dominance (H)
-						un(REMOVED_FROM_GAME, i(119937)),	-- Wild Combatant's Insignia of Victory (H)
-						un(REMOVED_FROM_GAME, i(122709)),	-- Wild Combatant's Medallion of Adaptation (H)
-						un(REMOVED_FROM_GAME, i(119933)),	-- Wild Combatant's Medallion of Cruelty (H)
-						un(REMOVED_FROM_GAME, i(119935)),	-- Wild Combatant's Medallion of Meditation (H)
-						un(REMOVED_FROM_GAME, i(119934)),	-- Wild Combatant's Medallion of Tenacity (H)
+						un(REMOVED_FROM_GAME, i(125520)),	-- Wild Combatant's Badge of Adaptation (H)
+						un(REMOVED_FROM_GAME, i(125507)),	-- Wild Combatant's Badge of Conquest (H)
+						un(REMOVED_FROM_GAME, i(125512)),	-- Wild Combatant's Badge of Dominance (H)
+						un(REMOVED_FROM_GAME, i(125518)),	-- Wild Combatant's Badge of Victory (H)
+						un(REMOVED_FROM_GAME, i(125509)),	-- Wild Combatant's Emblem of Cruelty (H)
+						un(REMOVED_FROM_GAME, i(125511)),	-- Wild Combatant's Emblem of Meditation (H)
+						un(REMOVED_FROM_GAME, i(125510)),	-- Wild Combatant's Emblem of Tenacity (H)
+						un(REMOVED_FROM_GAME, i(125508)),	-- Wild Combatant's Insignia of Conquest (H)
+						un(REMOVED_FROM_GAME, i(125513)),	-- Wild Combatant's Insignia of Dominance (H)
+						un(REMOVED_FROM_GAME, i(125519)),	-- Wild Combatant's Insignia of Victory (H)
+						un(REMOVED_FROM_GAME, i(125515)),	-- Wild Combatant's Medallion of Adaptation (H)
+						un(REMOVED_FROM_GAME, i(125514)),	-- Wild Combatant's Medallion of Cruelty (H)
+						un(REMOVED_FROM_GAME, i(125517)),	-- Wild Combatant's Medallion of Meditation (H)
+						un(REMOVED_FROM_GAME, i(125516)),	-- Wild Combatant's Medallion of Tenacity (H)
 					}),
-					--]]
 				}),
 			}),
 			n(-662, {	-- Elite PvP Gear
+				un(REMOVED_FROM_GAME, i(127375)),	-- Wild Gladiator's Greatcloak A
+				un(REMOVED_FROM_GAME, i(127366)),	-- Wild Gladiator's Tabard A
+				un(REMOVED_FROM_GAME, i(127374)),	-- Wild Gladiator's Greatcloak H
+				un(REMOVED_FROM_GAME, i(127365)),	-- Wild Gladiator's Tabard H
+				n(-319, {	-- Weapons
+					un(REMOVED_FROM_GAME, i(125762)),	-- Wild Gladiator's Ripper
+					un(REMOVED_FROM_GAME, i(125763)),	-- Wild Gladiator's Render
+					un(REMOVED_FROM_GAME, i(125632)),	-- Wild Gladiator's Bonegrinder
+					un(REMOVED_FROM_GAME, i(125650)),	-- Wild Gladiator's  Heavy Crossbow
+					un(REMOVED_FROM_GAME, i(125631)),	-- Wild Gladiator's  Decapi
+					un(REMOVED_FROM_GAME, i(125633)),	-- Wild Gladiator's  Greatsword
+					un(REMOVED_FROM_GAME, i(125634)),	-- Wild Gladiator's Cleaver
+					un(REMOVED_FROM_GAME, i(125766)),	-- Wild Gladiator's Hacker
+					un(REMOVED_FROM_GAME, i(129936)),	-- Wild Gladiator's Runeaxe
+					un(REMOVED_FROM_GAME, i(125637)),	-- Wild Gladiator's Longbow
+					un(REMOVED_FROM_GAME, i(125724)),	-- Wild Gladiator's Pike
+					un(REMOVED_FROM_GAME, i(125676)),	-- Wild Gladiator's Rifle
+					un(REMOVED_FROM_GAME, i(125646)),	-- Wild Gladiator's Spellblade
+					un(REMOVED_FROM_GAME, i(125761)),	-- Wild Gladiator's Shanker
+					un(REMOVED_FROM_GAME, i(125644)),	-- Wild Gladiator's Endgame
+					un(REMOVED_FROM_GAME, i(125648)),	-- Wild Gladiator's Reprieve
+					un(REMOVED_FROM_GAME, i(125636)),	-- Wild Gladiator's Quickblade
+					un(REMOVED_FROM_GAME, i(125764)),	-- Wild Gladiator's Mageblade
+					un(REMOVED_FROM_GAME, i(125768)),	-- Wild Gladiator's Slicer
+					un(REMOVED_FROM_GAME, i(125647)),	-- Wild Gladiator's Battle Staff
+					un(REMOVED_FROM_GAME, i(125668)),	-- Wild Gladiator's Staff
+					un(REMOVED_FROM_GAME, i(125679)),	-- Wild Gladiator's Energy Staff
+					un(REMOVED_FROM_GAME, i(125635)),	-- Wild Gladiator's Pummeler
+					un(REMOVED_FROM_GAME, i(125677)),	-- Wild Gladiator's Gavel
+					un(REMOVED_FROM_GAME, i(125767)),	-- Wild Gladiator's Bonecracker
+					un(REMOVED_FROM_GAME, i(125645)),	-- Wild Gladiator's Barrier
+					un(REMOVED_FROM_GAME, i(125678)),	-- Wild Gladiator's Redoubt
+					un(REMOVED_FROM_GAME, i(125769)),	-- Wild Gladiator's Shield Wall
+					un(REMOVED_FROM_GAME, i(125649)),	-- Wild Gladiator's Touch of defeat
+					un(REMOVED_FROM_GAME, i(125765)),	-- Wild Gladiator's Baton of Light	
+				}),	
 				cl(DEATHKNIGHT, {
 					un(REMOVED_FROM_GAME, i(125651)),	-- Wild Gladiator's Dreadplate Chestpiece
 					un(REMOVED_FROM_GAME, i(125652)),	-- Wild Gladiator's Dreadplate Gauntlets
@@ -5623,36 +5676,38 @@ _.PVP =
 				un(REMOVED_FROM_GAME, i(127371)),	-- Warmongering Gladiator's Tabard h
 				un(REMOVED_FROM_GAME, i(127377)),	-- Warmongering Gladiator's Greatcloak a 
 				un(REMOVED_FROM_GAME, i(127369)),	-- Warmongering Gladiator's Tabarda
-				un(REMOVED_FROM_GAME, i(126876)),	-- Warmongering Gladiator's Ripper
-				un(REMOVED_FROM_GAME, i(126877)),	-- Warmongering Gladiator's Render
-				un(REMOVED_FROM_GAME, i(126746)),	-- Warmongering  Gladiator's Bonegrinder
-				un(REMOVED_FROM_GAME, i(126764)),	-- Warmongering Gladiator's  Heavy Crossbow
-				un(REMOVED_FROM_GAME, i(126745)),	-- Warmongering Gladiator's  Decapi
-				un(REMOVED_FROM_GAME, i(126747)),	-- Warmongering Gladiator's  Greatsword
-				un(REMOVED_FROM_GAME, i(126748)),	-- Warmongering Gladiator's Cleaver
-				un(REMOVED_FROM_GAME, i(126880)),	-- Warmongering Gladiator's Hacker
-				un(REMOVED_FROM_GAME, i(133584)),	-- Warmongering Gladiator's Runeaxe
-				un(REMOVED_FROM_GAME, i(126751)),	-- Warmongering Gladiator's Longbow
-				un(REMOVED_FROM_GAME, i(126838)),	-- Warmongering Gladiator's Pike
-				un(REMOVED_FROM_GAME, i(126790)),	-- Warmongering Gladiator's Rifle
-				un(REMOVED_FROM_GAME, i(126760)),	-- Warmongering Gladiator's Spellblade
-				un(REMOVED_FROM_GAME, i(126875)),	-- Warmongering Gladiator's SHanker
-				un(REMOVED_FROM_GAME, i(126758)),	-- Warmongering Gladiator's Endgame
-				un(REMOVED_FROM_GAME, i(126762)),	-- Warmonger Gladiator's Reprieve
-				un(REMOVED_FROM_GAME, i(126750)),	-- Warmongering Gladiator's Quickblade
-				un(REMOVED_FROM_GAME, i(126878)),	-- Warmongering Gladiator's mageblade
-				un(REMOVED_FROM_GAME, i(126882)),	-- Warmongering Gladiator's Slicer
-				un(REMOVED_FROM_GAME, i(126761)),	-- Warmongering Gladiator's Battle Staff
-				un(REMOVED_FROM_GAME, i(126782)),	-- Warmongering Gladiator's Staff
-				un(REMOVED_FROM_GAME, i(126793)),	-- Warmongering Gladiator's Energy Staff
-				un(REMOVED_FROM_GAME, i(126749)),	-- Warmongering Gladiator's Pummeler
-				un(REMOVED_FROM_GAME, i(126791)),	-- Warmongering Gladiator's Gavel
-				un(REMOVED_FROM_GAME, i(126881)),	-- Warmongering Gladiator's Bonecracker
-				un(REMOVED_FROM_GAME, i(126759)),	-- Warmongering Gladiator's Barrier
-				un(REMOVED_FROM_GAME, i(126792)),	-- Warmongering Gladiator's Redoubt
-				un(REMOVED_FROM_GAME, i(126883)),	-- Warmongering Gladiator's Shield Wall
-				un(REMOVED_FROM_GAME, i(126763)),	-- Warmongering Gladiator's Touch of defeat
-				un(REMOVED_FROM_GAME, i(126879)),	-- Warmongering Gladiator's Baton of Light
+				n(-319, {	-- Weapons
+					un(REMOVED_FROM_GAME, i(126876)),	-- Warmongering Gladiator's Ripper
+					un(REMOVED_FROM_GAME, i(126877)),	-- Warmongering Gladiator's Render
+					un(REMOVED_FROM_GAME, i(126746)),	-- Warmongering  Gladiator's Bonegrinder
+					un(REMOVED_FROM_GAME, i(126764)),	-- Warmongering Gladiator's  Heavy Crossbow
+					un(REMOVED_FROM_GAME, i(126745)),	-- Warmongering Gladiator's  Decapi
+					un(REMOVED_FROM_GAME, i(126747)),	-- Warmongering Gladiator's  Greatsword
+					un(REMOVED_FROM_GAME, i(126748)),	-- Warmongering Gladiator's Cleaver
+					un(REMOVED_FROM_GAME, i(126880)),	-- Warmongering Gladiator's Hacker
+					un(REMOVED_FROM_GAME, i(133584)),	-- Warmongering Gladiator's Runeaxe
+					un(REMOVED_FROM_GAME, i(126751)),	-- Warmongering Gladiator's Longbow
+					un(REMOVED_FROM_GAME, i(126838)),	-- Warmongering Gladiator's Pike
+					un(REMOVED_FROM_GAME, i(126790)),	-- Warmongering Gladiator's Rifle
+					un(REMOVED_FROM_GAME, i(126760)),	-- Warmongering Gladiator's Spellblade
+					un(REMOVED_FROM_GAME, i(126875)),	-- Warmongering Gladiator's SHanker
+					un(REMOVED_FROM_GAME, i(126758)),	-- Warmongering Gladiator's Endgame
+					un(REMOVED_FROM_GAME, i(126762)),	-- Warmongering Gladiator's Reprieve
+					un(REMOVED_FROM_GAME, i(126750)),	-- Warmongering Gladiator's Quickblade
+					un(REMOVED_FROM_GAME, i(126878)),	-- Warmongering Gladiator's mageblade
+					un(REMOVED_FROM_GAME, i(126882)),	-- Warmongering Gladiator's Slicer
+					un(REMOVED_FROM_GAME, i(126761)),	-- Warmongering Gladiator's Battle Staff
+					un(REMOVED_FROM_GAME, i(126782)),	-- Warmongering Gladiator's Staff
+					un(REMOVED_FROM_GAME, i(126793)),	-- Warmongering Gladiator's Energy Staff
+					un(REMOVED_FROM_GAME, i(126749)),	-- Warmongering Gladiator's Pummeler
+					un(REMOVED_FROM_GAME, i(126791)),	-- Warmongering Gladiator's Gavel
+					un(REMOVED_FROM_GAME, i(126881)),	-- Warmongering Gladiator's Bonecracker
+					un(REMOVED_FROM_GAME, i(126759)),	-- Warmongering Gladiator's Barrier
+					un(REMOVED_FROM_GAME, i(126792)),	-- Warmongering Gladiator's Redoubt
+					un(REMOVED_FROM_GAME, i(126883)),	-- Warmongering Gladiator's Shield Wall
+					un(REMOVED_FROM_GAME, i(126763)),	-- Warmongering Gladiator's Touch of defeat
+					un(REMOVED_FROM_GAME, i(126879)),	-- Warmongering Gladiator's Baton of Light
+				}),
 				cl(DEATHKNIGHT, {
 					un(REMOVED_FROM_GAME, i(126765)), -- Warmongering Gladiator's Dreadplate Chestpiece
 					un(REMOVED_FROM_GAME, i(126766)), -- Warmongering Gladiator's Dreadplate Gauntlets

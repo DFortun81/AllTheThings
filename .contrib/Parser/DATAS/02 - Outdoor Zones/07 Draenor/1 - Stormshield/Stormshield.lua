@@ -1224,6 +1224,7 @@ _.Zones =
 								un(14, i(120287, {	-- Enchanter's Illusion - Primal Victory
 									["cost"] = { { "i", 137642, 10 } },	-- 10x Mark of Honor
 								})),
+								n(-319, {	-- Weapons
 									i(138635, {	-- Arsenal: Warmongering Gladiator's Weapons (A)
 										["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 										["sym"] = { 
@@ -1318,6 +1319,7 @@ _.Zones =
 									i(125844, {	-- Warmongering Gladiator's Touch of Defeat (A)
 										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 									}),
+								}),	
 								cl(DEATHKNIGHT, {
 									i(138493, {	-- Ensemble: Warmongering Gladiator's Dreadplate Armor (A)
 										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
