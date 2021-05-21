@@ -127,7 +127,16 @@ _.Achievements =
 			}),
 			ach(12414, {	-- Heritage of the Lightforged
 				["races"] = { LIGHTFORGED },
-				--Note!! Removed the items you get since they are now linked to the quest and grants +2 rather than +3
+				["g"] = {
+					i(156699),	-- Lightforged Gorget
+					i(156700),	-- Lightforged Pauldrons
+					i(156701),	-- Lightforged Chestguard
+					i(156706),	-- Lightforged Bracers
+					i(156702),	-- Lightforged Gloves
+					i(156703),	-- Lightforged Girdle
+					i(156704),	-- Lightforged Legplates
+					i(156705),	-- Lightforged Hoofguards
+				},
 			}),
 			ach(13077, {	-- Heritage of the Mag'har
 				["races"] = { MAGHAR },
@@ -170,7 +179,6 @@ _.Achievements =
 				},
 			}),
 			ach(12413, {	-- Heritage of the Nightborne
-				["questID"] = 49784,	-- Heritage of the Nightborne
 				["races"] = { NIGHTBORNE },
 				["g"] = {
 					i(156675),	-- Shal'dorei Crown
