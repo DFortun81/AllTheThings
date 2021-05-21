@@ -35,9 +35,11 @@ _.Zones =
 					},
 				}),
 				n(180014, {	-- Escaped Wilderling
+					["description"] = "Requires a |cFFA330C9Night Fae|r to start.",
 					["questID"] = 64320,
 					["isDaily"] = true,
 					["coord"] = { 33.1, 39.5, KORTHIA },
+					["cr"] = 180005,	-- Karras
 					["g"] = {
 					--	crit(17, {	-- Escaped Wilderling
 						crit(19, {	-- Escaped Wilderling
@@ -46,6 +48,7 @@ _.Zones =
 						i(187278, {	-- Talon-Pierced Mawsworn Lockbox
 						--	["description"] = "Can contain items from the Korthian sets.",	-- actually not sure about this, i've just gotten 1 specific item so far that doesn't seem to be part of the sets
 							["g"] = {
+							--	i(187246),	-- Death-Enveloped Pauldrons (not sure about this one, a stranger said they got it from the cache)
 								i(187395),	-- Reinforced Stygian Spaulders
 							},
 						}),

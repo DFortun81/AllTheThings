@@ -605,19 +605,19 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 64.6, 25.4, KORTHIA },
 				}),
-				q(63961, {	-- Sealed Secrets
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
-					["provider"] = { "n", 178845 },	-- Ve'lonu
-					["isDaily"] = true,
-					["coord"] = { 64.6, 25.4, KORTHIA },
-				}),
 				q(63954, {	-- Sealed Lockboxes
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 178845 },	-- Ve'lonu
 					["isDaily"] = true,
 					["coord"] = { 64.6, 25.4, KORTHIA },
 				}),
-				q(63956, {	-- Sealed Lockboxes
+				q(63961, {	-- Sealed Secrets
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 178845 },	-- Ve'lonu
+					["isDaily"] = true,
+					["coord"] = { 64.6, 25.4, KORTHIA },
+				}),
+				q(63956, {	-- Sealed Secrets
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 178845 },	-- Ve'lonu
 					["isDaily"] = true,
