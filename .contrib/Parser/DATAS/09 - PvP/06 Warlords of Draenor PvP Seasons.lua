@@ -139,7 +139,10 @@ _.PVP =
 					n(-319, {	-- Weapons
 						i(138625, {	-- Arsenal: Primal Combatant's Weapons (A)
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-							["sym"] = { {"sub", "pvp_weapons_faction_ensemble", -9981, -679, -9914, -660 }, },
+							["sym"] = { 
+								{"sub", "pvp_weapons_faction_ensemble", -9981, -679, -9914, -660 },
+								{"exclude", "itemID", 138625 },	-- Exclude itself to stop duplicating
+							},
 						}),
 						i(115083, {	-- Primal Combatant's Barrier (A)
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -724,45 +727,42 @@ _.PVP =
 					}),
 				}),
 				n(-661, {	-- Gladiator PvP Gear
-					i(138631),	-- Arsenal: Primal Gladiator's Weapons
-					-- Ensemble: Primal Gladiator's Chain Armor (Hunter)
-					-- Ensemble: Primal Gladiator's Dragonhide Armor (Druid)
-					-- Ensemble: Primal Gladiator's Dreadplate Armor (DK)
-					-- Ensemble: Primal Gladiator's Felweave Armor (Warlock)
-					-- Ensemble: Primal Gladiator's Ironskin Armor (Monk)
-					-- Ensemble: Primal Gladiator's Leather Armor (Rogue)
-					-- Ensemble: Primal Gladiator's Plate Armor (Warrior)
-					-- Ensemble: Primal Gladiator's Ringmail Armor (Shaman)
-					-- Ensemble: Primal Gladiator's Satin Armor (Priest)
-					-- Ensemble: Primal Gladiator's Scaled Armor (Paladin)
-					-- Ensemble: Primal Gladiator's Silk Armor (Mage)
-					i(115594),	-- Primal Gladiator's Cleaver
-					i(115595),	-- Primal Gladiator's Shanker
-					i(115596),	-- Primal Gladiator's Ripper
-					i(115597),	-- Primal Gladiator's Pummeler
-					i(115598),	-- Primal Gladiator's Quickblade
-					i(115599),	-- Primal Gladiator's Longbow
-					i(115601),	-- Primal Gladiator's Rifle
-					i(115602),	-- Primal Gladiator's Pike
-					i(115644),	-- Primal Gladiator's Spellblade
-					i(115645),	-- Primal Gladiator's Gavel
-					i(115646),	-- Primal Gladiator's Mageblade
-					i(115647),	-- Primal Gladiator's Baton of Light
-					i(115648),	-- Primal Gladiator's Touch of Defeat
-					i(115649),	-- Primal Gladiator's Battle Staff
-					i(115650),	-- Primal Gladiator's Energy Staff
-					i(115659),	-- Primal Gladiator's Endgame
-					i(115660),	-- Primal Gladiator's Reprieve
-					i(115666),	-- Primal Gladiator's Redoubt
-					i(115667),	-- Primal Gladiator's Barrier
-					i(115725),	-- Primal Gladiator's Hacker
-					i(115726),	-- Primal Gladiator's Render
-					i(115727),	-- Primal Gladiator's Bonecracker
-					i(115728),	-- Primal Gladiator's Slicer
-					i(115729),	-- Primal Gladiator's Decapitator
-					i(115730),	-- Primal Gladiator's Bonegrinder
-					i(115731),	-- Primal Gladiator's Greatsword
-					i(115748),	-- Primal Gladiator's Shield Wall
+					n(-319, {	-- Weapons
+						i(138631, {	-- Arsenal: Primal Gladiator's Weapons
+							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
+							["sym"] = { 
+								{"sub", "pvp_weapons_faction_ensemble", -9981, -679, -9914, -661 },
+								{"exclude", "itemID", 138631 },	-- Exclude itself to stop duplicating
+							},
+						}),
+						i(115594),	-- Primal Gladiator's Cleaver
+						i(115595),	-- Primal Gladiator's Shanker
+						i(115596),	-- Primal Gladiator's Ripper
+						i(115597),	-- Primal Gladiator's Pummeler
+						i(115598),	-- Primal Gladiator's Quickblade
+						i(115599),	-- Primal Gladiator's Longbow
+						i(115601),	-- Primal Gladiator's Rifle
+						i(115602),	-- Primal Gladiator's Pike
+						i(115644),	-- Primal Gladiator's Spellblade
+						i(115645),	-- Primal Gladiator's Gavel
+						i(115646),	-- Primal Gladiator's Mageblade
+						i(115647),	-- Primal Gladiator's Baton of Light
+						i(115648),	-- Primal Gladiator's Touch of Defeat
+						i(115649),	-- Primal Gladiator's Battle Staff
+						i(115650),	-- Primal Gladiator's Energy Staff
+						i(115659),	-- Primal Gladiator's Endgame
+						i(115660),	-- Primal Gladiator's Reprieve
+						i(115666),	-- Primal Gladiator's Redoubt
+						i(115667),	-- Primal Gladiator's Barrier
+						i(115725),	-- Primal Gladiator's Hacker
+						i(115726),	-- Primal Gladiator's Render
+						i(115727),	-- Primal Gladiator's Bonecracker
+						i(115728),	-- Primal Gladiator's Slicer
+						i(115729),	-- Primal Gladiator's Decapitator
+						i(115730),	-- Primal Gladiator's Bonegrinder
+						i(115731),	-- Primal Gladiator's Greatsword
+						i(115748),	-- Primal Gladiator's Shield Wall
+					}),
 					i(115604),	-- Primal Gladiator's Cape of Cruelty
 					i(115605),	-- Primal Gladiator's Cape of Prowess
 					i(115620),	-- Primal Gladiator's Cord of Cruelty
@@ -1076,6 +1076,10 @@ _.PVP =
 					n(-319, {	-- Weapons
 						i(138626, {	-- Arsenal: Primal Combatant's Weapons (H)
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
+							["sym"] = { 
+								{"sub", "pvp_weapons_faction_ensemble", -9981, -679, -9913, -660 },
+								{"exclude", "itemID", 138626 },	-- Exclude itself to stop duplicating
+							},
 						}),
 						i(119866, {	-- Primal Combatant's Barrier (H)
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -1594,34 +1598,42 @@ _.PVP =
 					}),
 				}),
 				n(-661, {	-- Gladiator PvP Gear
-					i(138632),	-- Arsenal: Primal Gladiator's Weapons
-					i(111067),	-- Primal Gladiator's Cleaver
-					i(111068),	-- Primal Gladiator's Shanker
-					i(111069),	-- Primal Gladiator's Ripper
-					i(111070),	-- Primal Gladiator's Pummeler
-					i(111071),	-- Primal Gladiator's Quickblade
-					i(111072),	-- Primal Gladiator's Longbow
-					i(111074),	-- Primal Gladiator's Rifle
-					i(111075),	-- Primal Gladiator's Pike
-					i(111117),	-- Primal Gladiator's Spellblade
-					i(111118),	-- Primal Gladiator's Gavel
-					i(111119),	-- Primal Gladiator's Mageblade
-					i(111120),	-- Primal Gladiator's Baton of Light
-					i(111121),	-- Primal Gladiator's Touch of Defeat
-					i(111122),	-- Primal Gladiator's Battle Staff
-					i(111123),	-- Primal Gladiator's Energy Staff
-					i(111132),	-- Primal Gladiator's Endgame
-					i(111133),	-- Primal Gladiator's Reprieve
-					i(111139),	-- Primal Gladiator's Redoubt
-					i(111140),	-- Primal Gladiator's Barrier
-					i(111198),	-- Primal Gladiator's Hacker
-					i(111199),	-- Primal Gladiator's Render
-					i(111200),	-- Primal Gladiator's Bonecracker
-					i(111201),	-- Primal Gladiator's Slicer
-					i(111202),	-- Primal Gladiator's Decapitator
-					i(111203),	-- Primal Gladiator's Bonegrinder
-					i(111204),	-- Primal Gladiator's Greatsword
-					i(111221),	-- Primal Gladiator's Shield Wall
+					n(-319, {	-- Weapons
+						i(138632, {	-- Arsenal: Primal Gladiator's Weapons
+							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
+							["sym"] = { 
+								{"sub", "pvp_weapons_faction_ensemble", -9981, -679, -9913, -661 },
+								{"exclude", "itemID", 138632 },	-- Exclude itself to stop duplicating
+							},
+						}),
+						i(111067),	-- Primal Gladiator's Cleaver
+						i(111068),	-- Primal Gladiator's Shanker
+						i(111069),	-- Primal Gladiator's Ripper
+						i(111070),	-- Primal Gladiator's Pummeler
+						i(111071),	-- Primal Gladiator's Quickblade
+						i(111072),	-- Primal Gladiator's Longbow
+						i(111074),	-- Primal Gladiator's Rifle
+						i(111075),	-- Primal Gladiator's Pike
+						i(111117),	-- Primal Gladiator's Spellblade
+						i(111118),	-- Primal Gladiator's Gavel
+						i(111119),	-- Primal Gladiator's Mageblade
+						i(111120),	-- Primal Gladiator's Baton of Light
+						i(111121),	-- Primal Gladiator's Touch of Defeat
+						i(111122),	-- Primal Gladiator's Battle Staff
+						i(111123),	-- Primal Gladiator's Energy Staff
+						i(111132),	-- Primal Gladiator's Endgame
+						i(111133),	-- Primal Gladiator's Reprieve
+						i(111139),	-- Primal Gladiator's Redoubt
+						i(111140),	-- Primal Gladiator's Barrier
+						i(111198),	-- Primal Gladiator's Hacker
+						i(111199),	-- Primal Gladiator's Render
+						i(111200),	-- Primal Gladiator's Bonecracker
+						i(111201),	-- Primal Gladiator's Slicer
+						i(111202),	-- Primal Gladiator's Decapitator
+						i(111203),	-- Primal Gladiator's Bonegrinder
+						i(111204),	-- Primal Gladiator's Greatsword
+						i(111221),	-- Primal Gladiator's Shield Wall
+					}),
 					i(111077),	-- Primal Gladiator's Cape of Cruelty
 					i(111078),	-- Primal Gladiator's Cape of Prowess
 					i(111093),	-- Primal Gladiator's Cord of Cruelty
@@ -2154,17 +2166,16 @@ _.PVP =
 						un(REMOVED_FROM_GAME, i(125143)),	-- Wild Aspirant's Accolade of Endurance (A)
 					}),
 				}),
-				--[[
 				n(-660, {	-- Combatant PvP Gear
 					n(-319, {	-- Weapons
-						i(124   , {	-- Arsenal: Wild Combatant's Weapons (A)
+						i(138630, {	-- Arsenal: Wild Combatant's Weapons (A)
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 							["sym"] = { 
 								{"sub", "pvp_weapons_faction_ensemble", -9981, -680, -9914, -660 },
-								{"exclude", "itemID", 124    },	-- Exclude itself to stop duplicating
+								{"exclude", "itemID", 138630 },	-- Exclude itself to stop duplicating
 							},
 						}),
-						i(124   , {	-- Wild Combatant's Barrier (A)
+						i(124300   , {	-- Wild Combatant's Barrier (A)
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
 						i(124   , {	-- Wild Combatant's Baton of Light (A)
@@ -2246,6 +2257,7 @@ _.PVP =
 							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 						}),
 					}),
+					--[[
 					cl(DEATHKNIGHT, {
 						i(124   , {	-- Ensemble: Wild Combatant's Dreadplate Armor (A)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
@@ -2763,107 +2775,109 @@ _.PVP =
 						un(REMOVED_FROM_GAME, i(124   )),	-- Wild Combatant's Medallion of Tenacity (A)
 					}),
 				}),
+				--]]
+				}),
 				n(-661, {	-- Gladiator PvP Gear
 					n(-319, {	-- Weapons
-						i(124   , {	-- Arsenal: Wild Gladiator's Weapons (A)
+						i(138633, {	-- Arsenal: Wild Gladiator's Weapons (A)
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 							["sym"] = { 
-								{"sub", "pvp_weapons_faction_ensemble", -9981, -680, -9913, -661 },
-								{"exclude", "itemID", 124    },	-- Exclude itself to stop duplicating
+								{"sub", "pvp_weapons_faction_ensemble", -9981, -680, -9914, -661 },
+								{"exclude", "itemID", 138633 },	-- Exclude itself to stop duplicating
 							},
 						}),
-						i(124   , {	-- Wild Gladiator's Barrier (A)
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(124   , {	-- Wild Gladiator's Baton of Light (A)
+						i(124675, {	-- Wild Gladiator's Cleaver
 							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 						}),
-						i(124   , {	-- Wild Gladiator's Battle Staff (A)
+						i(124676, {	-- Wild Gladiator's Shanker
 							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 						}),
-						i(124   , {	-- Wild Gladiator's Bonecracker (A)
+						i(124677, {	-- Wild Gladiator's Ripper
 							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 						}),
-						i(124   , {	-- Wild Gladiator's Bonegrinder (A)
+						i(124678, {	-- Wild Gladiator's Pummeler
 							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 						}),
-						i(124   , {	-- Wild Gladiator's Cleaver (A)
+						i(124679, {	-- Wild Gladiator's Quickblade
 							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 						}),
-						i(124   , {	-- Wild Gladiator's Decapitator (A)
+						i(124680, {	-- Wild Gladiator's Longbow
 							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 						}),
-						i(124   , {	-- Wild Gladiator's Endgame (A)
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(124   , {	-- Wild Gladiator's Energy Staff (A)
+						i(124681, {	-- Wild Gladiator's Heavy Crossbow
 							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 						}),
-						i(124   , {	-- Wild Gladiator's Gavel (A)
+						i(124682, {	-- Wild Gladiator's Rifle
 							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 						}),
-						i(124   , {	-- Wild Gladiator's Greatsword (A)
+						i(124683, {	-- Wild Gladiator's Pike
 							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 						}),
-						i(124   , {	-- Wild Gladiator's Hacker (A)
+						i(124684, {	-- Wild Gladiator's Staff
 							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 						}),
-						i(124   , {	-- Wild Gladiator's Heavy Crossbow(A)
+						i(124726, {	-- Wild Gladiator's Spellblade
 							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 						}),
-						i(124   , {	-- Wild Gladiator's Longbow (A)
+						i(124727, {	-- Wild Gladiator's Gavel
 							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 						}),
-						i(124   , {	-- Wild Gladiator's Mageblade (A)
+						i(124728, {	-- Wild Gladiator's Mageblade
 							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 						}),
-						i(124   , {	-- Wild Gladiator's Pike (A)
+						i(124729, {	-- Wild Gladiator's Baton of Light
 							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 						}),
-						i(124   , {	-- Wild Gladiator's Pummeler (A)
-							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-						}),
-						i(124   , {	-- Wild Gladiator's Quickblade (A)
-							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-						}),
-						i(124   , {	-- Wild Gladiator's Redoubt (A)
+						i(124730, {	-- Wild Gladiator's Touch of Defeat
 							["cost"] = { { "i", 137642, 2 } },	-- 5x Mark of Honor
 						}),
-						i(124   , {	-- Wild Gladiator's Render (A)
+						i(124731, {	-- Wild Gladiator's Battle Staff
 							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 						}),
-						i(124   , {	-- Wild Gladiator's Reprieve (A)
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(124   , {	-- Wild Gladiator's Rifle (A)
+						i(124732, {	-- Wild Gladiator's Energy Staff
 							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 						}),
-						i(124   , {	-- Wild Gladiator's Ripper (A)
+						i(124741, {	-- Wild Gladiator's Endgame
+							["cost"] = { { "i", 137642, 2 } },	-- 5x Mark of Honor
+						}),
+						i(124742, {	-- Wild Gladiator's Reprieve
+							["cost"] = { { "i", 137642, 2 } },	-- 5x Mark of Honor
+						}),
+						i(124748, {	-- Wild Gladiator's Redoubt
+							["cost"] = { { "i", 137642, 2 } },	-- 5x Mark of Honor
+						}),
+						i(124749, {	-- Wild Gladiator's Barrier
+							["cost"] = { { "i", 137642, 2 } },	-- 5x Mark of Honor
+						}),
+						i(124837, {	-- Wild Gladiator's Hacker
 							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 						}),
-						i(124   , {	-- Wild Gladiator's Runeaxe (A)
+						i(124838, {	-- Wild Gladiator's Render
 							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 						}),
-						i(124   , {	-- Wild Gladiator's Shanker (A)
+						i(124839, {	-- Wild Gladiator's Bonecracker
 							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 						}),
-						i(124   , {	-- Wild Gladiator's Shield Wall (A)
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(124   , {	-- Wild Gladiator's Slicer (A)
+						i(124840, {	-- Wild Gladiator's Slicer
 							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 						}),
-						i(124   , {	-- Wild Gladiator's Spellblade (A)
+						i(124841, {	-- Wild Gladiator's Decapitator
 							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 						}),
-						i(124   , {	-- Wild Gladiator's Staff (A)
+						i(124842, {	-- Wild Gladiator's Bonegrinder
 							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 						}),
-						i(124   , {	-- Wild Gladiator's Touch of Defeat (A)
+						i(124843, {	-- Wild Gladiator's Greatsword
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(124851, {	-- Wild Gladiator's Shield Wall
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(129934, {	-- Wild Gladiator's Runeaxe
 							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 						}),
 					}),
-					cl(DEATHKNIGHT, {
+					--[[cl(DEATHKNIGHT, {
 						i(124   , {	-- Ensemble: Wild Gladiator's Dreadplate Armor (A)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
@@ -3467,9 +3481,8 @@ _.PVP =
 						un(REMOVED_FROM_GAME, i(124   )),	-- Wild Gladiator's Medallion of Meditation (A)
 						un(REMOVED_FROM_GAME, i(124   )),	-- Wild Gladiator's Medallion of Tenacity (A)
 					}),
-				}),
 				--]]
-
+				}),
 			}),
 			n(-9913, {	-- Horde
 				n(-659, {	-- Aspirant PvP Gear

@@ -486,375 +486,52 @@ _.GearSets =
 						["races"] = HORDE_ONLY,
 					}),
 				}),
-				tier(6, {	-- Warlords of Draenor	-- MISSING: Wild Combatant (W S2)
+				tier(6, {	-- Warlords of Draenor
 					i(138625, {	-- Arsenal: Primal Combatant's Weapons [ Alliance / Tested ]
-						["g"] = {
-							i(115083),	-- Primal Combatant's Barrier
-							i(119866),	-- Primal Combatant's Barrier
-							i(115067),	-- Primal Combatant's Baton of Light
-							i(120066),	-- Primal Combatant's Baton of Light
-							i(115069),	-- Primal Combatant's Battle Staff
-							i(120068),	-- Primal Combatant's Battle Staff
-							i(115134),	-- Primal Combatant's Bonecracker
-							i(120072),	-- Primal Combatant's Bonecracker
-							i(115137),	-- Primal Combatant's Bonegrinder
-							i(120075),	-- Primal Combatant's Bonegrinder
-							i(115024),	-- Primal Combatant's Cleaver
-							i(120053),	-- Primal Combatant's Cleaver
-							i(115136),	-- Primal Combatant's Decapitator
-							i(120074),	-- Primal Combatant's Decapitator
-							i(115075),	-- Primal Combatant's Endgame
-							i(119858),	-- Primal Combatant's Endgame
-							i(115070),	-- Primal Combatant's Energy Staff
-							i(120069),	-- Primal Combatant's Energy Staff
-							i(115065),	-- Primal Combatant's Gavel
-							i(120064),	-- Primal Combatant's Gavel
-							i(115138),	-- Primal Combatant's Greatsword
-							i(120076),	-- Primal Combatant's Greatsword
-							i(115132),	-- Primal Combatant's Hacker
-							i(120070),	-- Primal Combatant's Hacker
-							i(115029),	-- Primal Combatant's Longbow
-							i(120058),	-- Primal Combatant's Longbow
-							i(115032),	-- Primal Combatant's Pike
-							i(120061),	-- Primal Combatant's Pike
-							i(115027),	-- Primal Combatant's Pummeler
-							i(120056),	-- Primal Combatant's Pummeler
-							i(115028),	-- Primal Combatant's Quickblade
-							i(120057),	-- Primal Combatant's Quickblade
-							i(115082),	-- Primal Combatant's Redoubt
-							i(119865),	-- Primal Combatant's Redoubt
-							i(115133),	-- Primal Combatant's Render
-							i(120071),	-- Primal Combatant's Render
-							i(115076),	-- Primal Combatant's Reprieve
-							i(119859),	-- Primal Combatant's Reprieve
-							i(115031),	-- Primal Combatant's Rifle
-							i(120060),	-- Primal Combatant's Rifle
-							i(115026),	-- Primal Combatant's Ripper
-							i(120055),	-- Primal Combatant's Ripper
-							i(115025),	-- Primal Combatant's Shanker
-							i(120054),	-- Primal Combatant's Shanker
-							i(115148),	-- Primal Combatant's Shield Wall
-							i(119925),	-- Primal Combatant's Shield Wall
-							i(115135),	-- Primal Combatant's Slicer
-							i(120073),	-- Primal Combatant's Slicer
-							i(115064),	-- Primal Combatant's Spellblade
-							i(120063),	-- Primal Combatant's Spellblade
-							i(115033),	-- Primal Combatant's Staff
-							i(120062),	-- Primal Combatant's Staff
-							i(115068),	-- Primal Combatant's Touch of Defeat
-							i(120067),	-- Primal Combatant's Touch of Defeat
+						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
+						["sym"] = { 
+							{"sub", "pvp_weapons_faction_ensemble", -9981, -679, -9914, -660 },
+							{"exclude", "itemID", 138625 },	-- Exclude itself to stop duplicating
 						},
-						["races"] = ALLIANCE_ONLY,
 					}),
 					i(138626, {	-- Arsenal: Primal Combatant's Weapons [ Horde ]
-						["g"] = {
-							i(115083),	-- Primal Combatant's Barrier
-							i(119866),	-- Primal Combatant's Barrier
-							i(115067),	-- Primal Combatant's Baton of Light
-							i(120066),	-- Primal Combatant's Baton of Light
-							i(115069),	-- Primal Combatant's Battle Staff
-							i(120068),	-- Primal Combatant's Battle Staff
-							i(115134),	-- Primal Combatant's Bonecracker
-							i(120072),	-- Primal Combatant's Bonecracker
-							i(115137),	-- Primal Combatant's Bonegrinder
-							i(120075),	-- Primal Combatant's Bonegrinder
-							i(115024),	-- Primal Combatant's Cleaver
-							i(120053),	-- Primal Combatant's Cleaver
-							i(115136),	-- Primal Combatant's Decapitator
-							i(120074),	-- Primal Combatant's Decapitator
-							i(115075),	-- Primal Combatant's Endgame
-							i(119858),	-- Primal Combatant's Endgame
-							i(115070),	-- Primal Combatant's Energy Staff
-							i(120069),	-- Primal Combatant's Energy Staff
-							i(115065),	-- Primal Combatant's Gavel
-							i(120064),	-- Primal Combatant's Gavel
-							i(115138),	-- Primal Combatant's Greatsword
-							i(120076),	-- Primal Combatant's Greatsword
-							i(115132),	-- Primal Combatant's Hacker
-							i(120070),	-- Primal Combatant's Hacker
-							i(115029),	-- Primal Combatant's Longbow
-							i(120058),	-- Primal Combatant's Longbow
-							i(115032),	-- Primal Combatant's Pike
-							i(120061),	-- Primal Combatant's Pike
-							i(115027),	-- Primal Combatant's Pummeler
-							i(120056),	-- Primal Combatant's Pummeler
-							i(115028),	-- Primal Combatant's Quickblade
-							i(120057),	-- Primal Combatant's Quickblade
-							i(115082),	-- Primal Combatant's Redoubt
-							i(119865),	-- Primal Combatant's Redoubt
-							i(115133),	-- Primal Combatant's Render
-							i(120071),	-- Primal Combatant's Render
-							i(115076),	-- Primal Combatant's Reprieve
-							i(119859),	-- Primal Combatant's Reprieve
-							i(115031),	-- Primal Combatant's Rifle
-							i(120060),	-- Primal Combatant's Rifle
-							i(115026),	-- Primal Combatant's Ripper
-							i(120055),	-- Primal Combatant's Ripper
-							i(115025),	-- Primal Combatant's Shanker
-							i(120054),	-- Primal Combatant's Shanker
-							i(115148),	-- Primal Combatant's Shield Wall
-							i(119925),	-- Primal Combatant's Shield Wall
-							i(115135),	-- Primal Combatant's Slicer
-							i(120073),	-- Primal Combatant's Slicer
-							i(115064),	-- Primal Combatant's Spellblade
-							i(120063),	-- Primal Combatant's Spellblade
-							i(115033),	-- Primal Combatant's Staff
-							i(120062),	-- Primal Combatant's Staff
-							i(115068),	-- Primal Combatant's Touch of Defeat
-							i(120067),	-- Primal Combatant's Touch of Defeat
+						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
+						["sym"] = { 
+							{"sub", "pvp_weapons_faction_ensemble", -9981, -679, -9913, -660 },
+							{"exclude", "itemID", 138626 },	-- Exclude itself to stop duplicating
 						},
-						["races"] = HORDE_ONLY,
 					}),
 					i(138631, {	-- Arsenal: Primal Gladiator's Weapons [ Alliance ]
-						["g"] = {
-							i(111140),	-- Primal Gladiator's Barrier
-							i(115667),	-- Primal Gladiator's Barrier
-							i(111120),	-- Primal Gladiator's Baton of Light
-							i(115647),	-- Primal Gladiator's Baton of Light
-							i(111122),	-- Primal Gladiator's Battle Staff
-							i(115649),	-- Primal Gladiator's Battle Staff
-							i(111200),	-- Primal Gladiator's Bonecracker
-							i(115727),	-- Primal Gladiator's Bonecracker
-							i(111203),	-- Primal Gladiator's Bonegrinder
-							i(115730),	-- Primal Gladiator's Bonegrinder
-							i(111067),	-- Primal Gladiator's Cleaver
-							i(115594),	-- Primal Gladiator's Cleaver
-							i(111202),	-- Primal Gladiator's Decapitator
-							i(115729),	-- Primal Gladiator's Decapitator
-							i(111132),	-- Primal Gladiator's Endgame
-							i(115659),	-- Primal Gladiator's Endgame
-							i(111123),	-- Primal Gladiator's Energy Staff
-							i(115650),	-- Primal Gladiator's Energy Staff
-							i(111118),	-- Primal Gladiator's Gavel
-							i(115645),	-- Primal Gladiator's Gavel
-							i(111204),	-- Primal Gladiator's Greatsword
-							i(115731),	-- Primal Gladiator's Greatsword
-							i(111198),	-- Primal Gladiator's Hacker
-							i(115725),	-- Primal Gladiator's Hacker
-							i(111072),	-- Primal Gladiator's Longbow
-							i(115599),	-- Primal Gladiator's Longbow
-							i(111119),	-- Primal Gladiator's Mageblade
-							i(115646),	-- Primal Gladiator's Mageblade
-							i(111075),	-- Primal Gladiator's Pike
-							i(115602),	-- Primal Gladiator's Pike
-							i(111070),	-- Primal Gladiator's Pummeler
-							i(115597),	-- Primal Gladiator's Pummeler
-							i(111071),	-- Primal Gladiator's Quickblade
-							i(115598),	-- Primal Gladiator's Quickblade
-							i(111139),	-- Primal Gladiator's Redoubt
-							i(115666),	-- Primal Gladiator's Redoubt
-							i(111199),	-- Primal Gladiator's Render
-							i(115726),	-- Primal Gladiator's Render
-							i(111133),	-- Primal Gladiator's Reprieve
-							i(115660),	-- Primal Gladiator's Reprieve
-							i(111074),	-- Primal Gladiator's Rifle
-							i(115601),	-- Primal Gladiator's Rifle
-							i(111069),	-- Primal Gladiator's Ripper
-							i(115596),	-- Primal Gladiator's Ripper
-							i(111068),	-- Primal Gladiator's Shanker
-							i(115595),	-- Primal Gladiator's Shanker
-							i(111221),	-- Primal Gladiator's Shield Wall
-							i(115748),	-- Primal Gladiator's Shield Wall
-							i(111201),	-- Primal Gladiator's Slicer
-							i(115728),	-- Primal Gladiator's Slicer
-							i(111117),	-- Primal Gladiator's Spellblade
-							i(115644),	-- Primal Gladiator's Spellblade
-							i(111121),	-- Primal Gladiator's Touch of Defeat
-							i(115648),	-- Primal Gladiator's Touch of Defeat
+						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
+						["sym"] = { 
+							{"sub", "pvp_weapons_faction_ensemble", -9981, -679, -9914, -661 },
+							{"exclude", "itemID", 138631 },	-- Exclude itself to stop duplicating
 						},
-						["races"] = ALLIANCE_ONLY,
 					}),
 					i(138632, {	-- Arsenal: Primal Gladiator's Weapons [ Horde / Tested ]
-						["g"] = {
-							i(111140),	-- Primal Gladiator's Barrier
-							i(115667),	-- Primal Gladiator's Barrier
-							i(111120),	-- Primal Gladiator's Baton of Light
-							i(115647),	-- Primal Gladiator's Baton of Light
-							i(111122),	-- Primal Gladiator's Battle Staff
-							i(115649),	-- Primal Gladiator's Battle Staff
-							i(111200),	-- Primal Gladiator's Bonecracker
-							i(115727),	-- Primal Gladiator's Bonecracker
-							i(111203),	-- Primal Gladiator's Bonegrinder
-							i(115730),	-- Primal Gladiator's Bonegrinder
-							i(111067),	-- Primal Gladiator's Cleaver
-							i(115594),	-- Primal Gladiator's Cleaver
-							i(111202),	-- Primal Gladiator's Decapitator
-							i(115729),	-- Primal Gladiator's Decapitator
-							i(111132),	-- Primal Gladiator's Endgame
-							i(115659),	-- Primal Gladiator's Endgame
-							i(111123),	-- Primal Gladiator's Energy Staff
-							i(115650),	-- Primal Gladiator's Energy Staff
-							i(111118),	-- Primal Gladiator's Gavel
-							i(115645),	-- Primal Gladiator's Gavel
-							i(111204),	-- Primal Gladiator's Greatsword
-							i(115731),	-- Primal Gladiator's Greatsword
-							i(111198),	-- Primal Gladiator's Hacker
-							i(115725),	-- Primal Gladiator's Hacker
-							i(111072),	-- Primal Gladiator's Longbow
-							i(115599),	-- Primal Gladiator's Longbow
-							i(111119),	-- Primal Gladiator's Mageblade
-							i(115646),	-- Primal Gladiator's Mageblade
-							i(111075),	-- Primal Gladiator's Pike
-							i(115602),	-- Primal Gladiator's Pike
-							i(111070),	-- Primal Gladiator's Pummeler
-							i(115597),	-- Primal Gladiator's Pummeler
-							i(111071),	-- Primal Gladiator's Quickblade
-							i(115598),	-- Primal Gladiator's Quickblade
-							i(111139),	-- Primal Gladiator's Redoubt
-							i(115666),	-- Primal Gladiator's Redoubt
-							i(111199),	-- Primal Gladiator's Render
-							i(115726),	-- Primal Gladiator's Render
-							i(111133),	-- Primal Gladiator's Reprieve
-							i(115660),	-- Primal Gladiator's Reprieve
-							i(111074),	-- Primal Gladiator's Rifle
-							i(115601),	-- Primal Gladiator's Rifle
-							i(111069),	-- Primal Gladiator's Ripper
-							i(115596),	-- Primal Gladiator's Ripper
-							i(111068),	-- Primal Gladiator's Shanker
-							i(115595),	-- Primal Gladiator's Shanker
-							i(111221),	-- Primal Gladiator's Shield Wall
-							i(115748),	-- Primal Gladiator's Shield Wall
-							i(111201),	-- Primal Gladiator's Slicer
-							i(115728),	-- Primal Gladiator's Slicer
-							i(111117),	-- Primal Gladiator's Spellblade
-							i(115644),	-- Primal Gladiator's Spellblade
-							i(111121),	-- Primal Gladiator's Touch of Defeat
-							i(115648),	-- Primal Gladiator's Touch of Defeat
+						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
+						["sym"] = { 
+							{"sub", "pvp_weapons_faction_ensemble", -9981, -679, -9913, -661 },
+							{"exclude", "itemID", 138632 },	-- Exclude itself to stop duplicating
 						},
-						["races"] = HORDE_ONLY,
 					}),
 					i(138629, {	-- Arsenal: Wild Combatant's Weapons [ Horde / Tested ]
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 						["sym"] = { {"sub", "pvp_weapons_faction_ensemble", -9981, -680, -9913, -660 }, },
 					}),
 					i(138630, {	-- Arsenal: Wild Combatant's Weapons [ Alliance ]
-						["g"] = {
-							i(125428),	-- Wild Combatant's Barrier
-							i(124951),	-- Wild Combatant's Barrier
-							i(124931),	-- Wild Combatant's Baton of Light
-							i(125408),	-- Wild Combatant's Baton of Light
-							i(125410),	-- Wild Combatant's Battle Staff
-							i(124933),	-- Wild Combatant's Battle Staff
-							i(125017),	-- Wild Combatant's Bonecracker
-							i(125494),	-- Wild Combatant's Bonecracker
-							i(125020),	-- Wild Combatant's Bonegrinder
-							i(125497),	-- Wild Combatant's Bonegrinder
-							i(127380),	-- Wild Combatant's Chopper
-							i(127381),	-- Wild Combatant's Chopper
-							i(124885),	-- Wild Combatant's Cleaver
-							i(125362),	-- Wild Combatant's Cleaver
-							i(125019),	-- Wild Combatant's Decapitator
-							i(125496),	-- Wild Combatant's Decapitator
-							i(124943),	-- Wild Combatant's Endgame
-							i(125420),	-- Wild Combatant's Endgame
-							i(124934),	-- Wild Combatant's Energy Staff
-							i(125411),	-- Wild Combatant's Energy Staff
-							i(125406),	-- Wild Combatant's Gavel
-							i(125021),	-- Wild Combatant's Greatsword
-							i(125498),	-- Wild Combatant's Greatsword
-							i(125015),	-- Wild Combatant's Hacker
-							i(125492),	-- Wild Combatant's Hacker
-							i(125368),	-- Wild Combatant's Heavy Crossbow
-							i(124891),	-- Wild Combatant's Heavy Crossbow
-							i(125367),	-- Wild Combatant's Longbow
-							i(124890),	-- Wild Combatant's Longbow
-							i(125407),	-- Wild Combatant's Mageblade
-							i(124930),	-- Wild Combatant's Mageblade
-							i(125370),	-- Wild Combatant's Pike
-							i(124893),	-- Wild Combatant's Pike
-							i(125365),	-- Wild Combatant's Pummeler
-							i(124888),	-- Wild Combatant's Pummeler
-							i(125366),	-- Wild Combatant's Quickblade
-							i(124889),	-- Wild Combatant's Quickblade
-							i(125427),	-- Wild Combatant's Redoubt
-							i(124950),	-- Wild Combatant's Redoubt
-							i(125016),	-- Wild Combatant's Render
-							i(125493),	-- Wild Combatant's Render
-							i(125421),	-- Wild Combatant's Reprieve
-							i(124944),	-- Wild Combatant's Reprieve
-							i(125369),	-- Wild Combatant's Rifle
-							i(124892),	-- Wild Combatant's Rifle
-							i(125364),	-- Wild Combatant's Ripper
-							i(124887),	-- Wild Combatant's Ripper
-							i(125363),	-- Wild Combatant's Shanker
-							i(124886),	-- Wild Combatant's Shanker
-							i(125029),	-- Wild Combatant's Shield Wall
-							i(125506),	-- Wild Combatant's Shield Wall
-							i(125018),	-- Wild Combatant's Slicer
-							i(125495),	-- Wild Combatant's Slicer
-							i(125405),	-- Wild Combatant's Spellblade
-							i(124928),	-- Wild Combatant's Spellblade
-							i(125371),	-- Wild Combatant's Staff
-							i(124894),	-- Wild Combatant's Staff
-							i(125409),	-- Wild Combatant's Touch of Defeat
-							i(124932),	-- Wild Combatant's Touch of Defeat
+						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
+						["sym"] = { 
+							{"sub", "pvp_weapons_faction_ensemble", -9981, -680, -9914, -660 },
+							{"exclude", "itemID", 138631 },	-- Exclude itself to stop duplicating
 						},
-						["races"] = ALLIANCE_ONLY,
 					}),
 					i(138633, {	-- Arsenal: Wild Gladiator's Weapons [ Alliance / Tested ]
-						["g"] = {
-							i(124749),	-- Wild Gladiator's Barrier
-							i(125228),	-- Wild Gladiator's Barrier
-							i(124729),	-- Wild Gladiator's Baton of Light
-							i(125208),	-- Wild Gladiator's Baton of Light
-							i(124731),	-- Wild Gladiator's Battle Staff
-							i(125210),	-- Wild Gladiator's Battle Staff
-							i(124839),	-- Wild Gladiator's Bonecracker
-							i(125318),	-- Wild Gladiator's Bonecracker
-							i(124842),	-- Wild Gladiator's Bonegrinder
-							i(125321),	-- Wild Gladiator's Bonegrinder
-							i(124675),	-- Wild Gladiator's Cleaver
-							i(125154),	-- Wild Gladiator's Cleaver
-							i(124841),	-- Wild Gladiator's Decapitator
-							i(125320),	-- Wild Gladiator's Decapitator
-							i(124741),	-- Wild Gladiator's Endgame
-							i(125220),	-- Wild Gladiator's Endgame
-							i(124732),	-- Wild Gladiator's Energy Staff
-							i(125211),	-- Wild Gladiator's Energy Staff
-							i(124727),	-- Wild Gladiator's Gavel
-							i(125206),	-- Wild Gladiator's Gavel
-							i(124843),	-- Wild Gladiator's Greatsword
-							i(125322),	-- Wild Gladiator's Greatsword
-							i(124837),	-- Wild Gladiator's Hacker
-							i(125316),	-- Wild Gladiator's Hacker
-							i(124681),	-- Wild Gladiator's Heavy Crossbow
-							i(125160),	-- Wild Gladiator's Heavy Crossbow
-							i(124680),	-- Wild Gladiator's Longbow
-							i(125159),	-- Wild Gladiator's Longbow
-							i(124728),	-- Wild Gladiator's Mageblade
-							i(125207),	-- Wild Gladiator's Mageblade
-							i(124683),	-- Wild Gladiator's Pike
-							i(125162),	-- Wild Gladiator's Pike
-							i(124678),	-- Wild Gladiator's Pummeler
-							i(125157),	-- Wild Gladiator's Pummeler
-							i(124679),	-- Wild Gladiator's Quickblade
-							i(125158),	-- Wild Gladiator's Quickblade
-							i(124748),	-- Wild Gladiator's Redoubt
-							i(125227),	-- Wild Gladiator's Redoubt
-							i(124838),	-- Wild Gladiator's Render
-							i(125317),	-- Wild Gladiator's Render
-							i(124742),	-- Wild Gladiator's Reprieve
-							i(125221),	-- Wild Gladiator's Reprieve
-							i(124682),	-- Wild Gladiator's Rifle
-							i(125161),	-- Wild Gladiator's Rifle
-							i(124677),	-- Wild Gladiator's Ripper
-							i(125156),	-- Wild Gladiator's Ripper
-							i(129934),	-- Wild Gladiator's Runeaxe
-							i(129935),	-- Wild Gladiator's Runeaxe
-							i(124676),	-- Wild Gladiator's Shanker
-							i(125155),	-- Wild Gladiator's Shanker
-							i(124851),	-- Wild Gladiator's Shield Wall
-							i(125330),	-- Wild Gladiator's Shield Wall
-							i(124840),	-- Wild Gladiator's Slicer
-							i(125319),	-- Wild Gladiator's Slicer
-							i(124726),	-- Wild Gladiator's Spellblade
-							i(125205),	-- Wild Gladiator's Spellblade
-							i(124684),	-- Wild Gladiator's Staff
-							i(125163),	-- Wild Gladiator's Staff
-							i(124730),	-- Wild Gladiator's Touch of Defeat
-							i(125209),	-- Wild Gladiator's Touch of Defeat
+						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
+						["sym"] = { 
+							{"sub", "pvp_weapons_faction_ensemble", -9981, -680, -9914, -661 },
+							{"exclude", "itemID", 138633 },	-- Exclude itself to stop duplicating
 						},
-						["races"] = ALLIANCE_ONLY,
 					}),
 					i(138634, {	-- Arsenal: Wild Gladiator's Weapons [ Horde ]
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
