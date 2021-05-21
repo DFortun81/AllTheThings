@@ -2905,6 +2905,8 @@ for key,value in pairs({
 	[357697] = "Manufatto del Coordinatore",	-- Taskmaster's Trove
 	[357726] = "Lancia Spezzata",	-- Broken Spear
 	[357758] = "Barile di Piaga",	-- Plague Barrel
+	[357771] = "Cassa Sepolta",	-- Burried Cache
+	[357937] = "Cassa Sepolta",	-- Burried Cache
 	[358298] = "Scrigno della Stanza Proibita",	-- Forbidden Chamber Lockbox
 	[358315] = "Frammenti di Mano Scheletrica",	-- Skeletal Hand Fragments
 	--TODO: [358318] = "R. Suavel Dredger Portrait",	-- R. Suavel Dredger Portrait
@@ -2914,6 +2916,7 @@ for key,value in pairs({
 	[358855] = "Zaino della Caduta Sicura Danneggiato",	-- Damaged Safe Fall Pack
 	--TODO: [360054] = "Slime Cat",	-- Slime Cat
 	[362489] = "Decreto Elisio",	-- Elysian Decree
+	[364483] = "Barile di Cicchetti Vuoto",	-- Empty Nightcap Cask
 	[364899] = "Stigia Cristallizzata",	-- Crystallized Stygia
 	[364926] = "Catene Runaforgiate",	-- Runeforged Shackles
 	[364932] = "Lingotto Fiammeggiante",	-- Blazing Ingot

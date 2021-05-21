@@ -2905,6 +2905,8 @@ for key,value in pairs({
 	[357697] = "Schatz des Zuchtmeisters",	-- Taskmaster's Trove
 	[357726] = "Zerbrochener Speer",	-- Broken Spear
 	[357758] = "Seuchenfass",	-- Plague Barrel
+	[357771] = "Vergrabene Truhe",	-- Burried Cache
+	[357937] = "Vergrabene Truhe",	-- Burried Cache
 	[358298] = "Schließkassette der verbotenen Kammer",	-- Forbidden Chamber Lockbox
 	[358315] = "Skeletthandfragmente",	-- Skeletal Hand Fragments
 	[358318] = "Gräberporträt von R. Suavel",	-- R. Suavel Dredger Portrait
@@ -2914,6 +2916,7 @@ for key,value in pairs({
 	[358855] = "Beschädigter Rucksack des sicheren Fallens",	-- Damaged Safe Fall Pack
 	[360054] = "Klebrige Katze",	-- Slime Cat
 	[362489] = "Elysischer Erlass",	-- Elysian Decree
+	[364483] = "Leeres Schlummertrunkfass",	-- Empty Nightcap Cask
 	[364899] = "Kristallisierte Stygia",	-- Crystallized Stygia
 	[364926] = "Runengeschmiedete Fesseln",	-- Runeforged Shackles
 	[364932] = "Lodernder Barren",	-- Blazing Ingot

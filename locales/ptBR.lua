@@ -2905,6 +2905,8 @@ for key,value in pairs({
 	[357697] = "Tesouro do Capataz",	-- Taskmaster's Trove
 	[357726] = "Lança Quebrada",	-- Broken Spear
 	[357758] = "Barril de Peste",	-- Plague Barrel
+	[357771] = "Tesouro Enterrado",	-- Burried Cache
+	[357937] = "Tesouro Enterrado",	-- Burried Cache
 	[358298] = "Cofre da Câmara Proibida",	-- Forbidden Chamber Lockbox
 	[358315] = "Fragmentos de Mão Esquelética",	-- Skeletal Hand Fragments
 	--TODO: [358318] = "R. Suavel Dredger Portrait",	-- R. Suavel Dredger Portrait
@@ -2914,6 +2916,7 @@ for key,value in pairs({
 	[358855] = "Mochila de Queda Segura Danificada",	-- Damaged Safe Fall Pack
 	[360054] = "Gato Grudento",	-- Slime Cat
 	[362489] = "Decreto Elísio",	-- Elysian Decree
+	[364483] = "Barril da Saideira Esvaziado",	-- Empty Nightcap Cask
 	[364899] = "Estígia Cristalizada",	-- Crystallized Stygia
 	[364926] = "Grilhões Forjados em Runas",	-- Runeforged Shackles
 	[364932] = "Lingote Fulgurante",	-- Blazing Ingot

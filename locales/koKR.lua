@@ -2905,6 +2905,8 @@ for key,value in pairs({
 	[357697] = "작업반장의 보물",	-- Taskmaster's Trove
 	[357726] = "부러진 창",	-- Broken Spear
 	--TODO: [357758] = "Plague Barrel",	-- Plague Barrel
+	[357771] = "파묻힌 보관함",	-- Burried Cache
+	[357937] = "파묻힌 보관함",	-- Burried Cache
 	[358298] = "금단의 방 금고",	-- Forbidden Chamber Lockbox
 	[358315] = "해골 손 파편",	-- Skeletal Hand Fragments
 	--TODO: [358318] = "R. Suavel Dredger Portrait",	-- R. Suavel Dredger Portrait
@@ -2914,6 +2916,7 @@ for key,value in pairs({
 	[358855] = "손상된 안전 낙하 가방",	-- Damaged Safe Fall Pack
 	--TODO: [360054] = "Slime Cat",	-- Slime Cat
 	[362489] = "엘리시안 칙령",	-- Elysian Decree
+	[364483] = "텅 빈 취침주 통",	-- Empty Nightcap Cask
 	[364899] = "결정화 저승석",	-- Crystallized Stygia
 	[364926] = "룬벼림 족쇄",	-- Runeforged Shackles
 	[364932] = "이글거리는 주괴",	-- Blazing Ingot
