@@ -15,10 +15,10 @@ _.ExpansionFeatures =
 				n(-902, sharedData({["customCollect"] = { "SL_COV_KYR" } },{	-- Renown - Kyrian
 					["description"] = "These are rewards automatically granted by reaching a specific level of Renown.",
 					["g"] = {
-						i(186482, {	-- Elysian Aquilon (MOUNT!)
+						i(186482,  {	-- Elysian Aquilon (MOUNT!)
 							["description"] = "Requires Renown 45.",
 						}),
-						i(180765, {	-- Eternal Phalynx of Purity (MOUNT!)
+						i(180765,  {	-- Eternal Phalynx of Purity (MOUNT!)
 							["description"] = "Requires Renown 39.",
 						}),
 						title(445, {	-- Disciple of Devotion
@@ -27,7 +27,7 @@ _.ExpansionFeatures =
 						title(425, {	-- Hand of the Archon
 							["description"] = "Requires Renown 40.",
 						}),
-						i(186515, {	-- Ensemble: Aspiring Aspirant's Regalia
+						i(186515,  {	-- Ensemble: Aspiring Aspirant's Regalia
 							["description"] = "Requires Renown 60.",
 							["g"] = {
 								i(184998),	-- Aspiring Aspirant's Drape
@@ -41,7 +41,7 @@ _.ExpansionFeatures =
 								i(184997),	-- Aspiring Aspirant's Wraps
 							},
 						}),
-						i(186593, {	-- A Tiny Pair of Wings
+						i(186593,  {	-- A Tiny Pair of Wings
 							["description"] = "Requires Renown 56.",
 						}),
 					},

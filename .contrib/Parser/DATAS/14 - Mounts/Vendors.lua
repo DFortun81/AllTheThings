@@ -307,6 +307,9 @@ _.Mounts =
 		i(67107),	-- Kor'kron Annihilator
 		i(152788),	-- Lightforged Warframe Mount
 		i(182082),	-- Lurid Bloodtusk
+		i(186487, {	-- Maldraxxian Corpsefly
+			["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant only
+		}),
 		un(9, i(163042)),	-- Mighty Caravan Brutosaur
 		i(116768),	-- Mosshide Riverwallow
 		i(73838),	-- Mountain Horse
@@ -371,6 +374,9 @@ _.Mounts =
 		i(89306),	-- Red Shado-Pan Riding Tiger
 		i(13331),	-- Red Skeletal Horse
 		i(29470),	-- Red Skeletal Warhorse
+		i(186488, {	-- Regal Corpsefly
+			["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant only
+		}),
 		i(87783),	-- Regal Riding Crane
 		i(116667),	-- Rocktusk Battleboar
 		i(166464, {	-- Rubyshell Krolusk

@@ -10,15 +10,41 @@ _.ExpansionFeatures =
 			["maps"] = { 1698 },	-- Seat of the Primus
 			["g"] = {
 				n(-902, sharedData({["customCollect"] = { "SL_COV_NEC" } },{	-- Renown - Necrolord
-					i(181821, {	-- Armored Plaguerot Tauralus (MOUNT!)
-						["description"] = "Requires 39 Renown.",
-					}),
-					title(426, {	-- Baron
-						["description"] = "Requires 40 Renown.",
-					}),
-					title(427, {	-- Baroness
-						["description"] = "Requires 40 Renown.",
-					}),
+					["description"] = "These are rewards automatically granted by reaching a specific level of Renown.",
+					["g"] = {
+						i(181821,  {	-- Armored Plaguerot Tauralus (MOUNT!)
+							["description"] = "Requires 39 Renown.",
+						}),
+						i(186487,  {	-- Maldraxxian Corpsefly (MOUNT!)
+							["description"] = "Requires 45 Renown.",
+						}),
+						title(426, {	-- Baron
+							["description"] = "Requires 40 Renown.",
+						}),
+						title(427, {	-- Baroness
+							["description"] = "Requires 40 Renown.",
+						}),
+						title(443, {	-- Sword of the Primus
+							["description"] = "Requires 80 Renown.",
+						}),
+						i(186503,  {	-- Initiate's Necromantle Vestments
+							["description"] = "Requires 60 Renown.",
+							["g"] = {
+								i(185028),	-- Initiate's Necromantle Drape
+								i(185022),	-- Initiate's Necromantle Handwraps
+								i(185023),	-- Initiate's Necromantle Hood
+								i(185024),	-- Initiate's Necromantle Leggings
+								i(185026),	-- Initiate's Necromantle Sash
+								i(185025),	-- Initiate's Necromantle Shoulders
+								i(185021),	-- Initiate's Necromantle Slippers
+								i(185020),	-- Initiate's Necromantle Vestments
+								i(185027),	-- Initiate's Necromantle Wraps
+							},
+						}),
+						i(186524,  {	-- A Tiny Vial of Slime
+							["description"] = "Requires 56 Renown.",
+						}),
+					},
 				})),
 			},
 		}),
