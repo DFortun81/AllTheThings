@@ -6,7 +6,7 @@ _.GearSets =
 {
 	n(-5350, {	-- Class Trial Item Sets
 		n(-137, {	-- Level 90
-			["description"] = "These are obtained by creating a Level 90 Class Trial for each class and specialization.",
+			["description"] = "These were obtained by creating a Level 90 Class Trial (MoP) for each class and specialization.",
 			["icon"] = "Interface\\Icons\\achievement_level_90",
 			["lvl"] = 90,
 			["groups"] = bubbleDown({["u"] = REMOVED_FROM_GAME}, {
