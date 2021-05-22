@@ -4,7 +4,7 @@
 
 _.PVP =
 {	---- ToDo: Give every item minimun 2 Sources.
-	---- S3 Done. 
+	---- S3 Done.
 	---- This gear is listed here to reduce the bloat.
 	---- The actual sources include:
 	---- arena win&lose, rbg win&lose, bg win&lose, arena skirmish win&lose, ashran boxes win&lose, 13 ashran quests & broken bones work orders
@@ -139,7 +139,7 @@ _.PVP =
 					n(-319, {	-- Weapons
 						i(138625, {	-- Arsenal: Primal Combatant's Weapons (A)
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_weapons_faction_ensemble", -9981, -679, -9914, -660 },
 								{"exclude", "itemID", 138625 },	-- Exclude itself to stop duplicating
 							},
@@ -730,7 +730,7 @@ _.PVP =
 					n(-319, {	-- Weapons
 						i(138631, {	-- Arsenal: Primal Gladiator's Weapons
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_weapons_faction_ensemble", -9981, -679, -9914, -661 },
 								{"exclude", "itemID", 138631 },	-- Exclude itself to stop duplicating
 							},
@@ -898,7 +898,7 @@ _.PVP =
 					i(115768),	-- Primal Gladiator's Plate Helm
 					i(115769),	-- Primal Gladiator's Plate Legguards
 					i(115770),	-- Primal Gladiator's Plate Shoulders
-					
+
 					cl(DEATHKNIGHT, {
 						i(138557, {	-- Ensemble: Primal Gladiator's Dreadplate Armor (A)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
@@ -1108,7 +1108,7 @@ _.PVP =
 					n(-319, {	-- Weapons
 						i(138626, {	-- Arsenal: Primal Combatant's Weapons (H)
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_weapons_faction_ensemble", -9981, -679, -9913, -660 },
 								{"exclude", "itemID", 138626 },	-- Exclude itself to stop duplicating
 							},
@@ -1633,7 +1633,7 @@ _.PVP =
 					n(-319, {	-- Weapons
 						i(138632, {	-- Arsenal: Primal Gladiator's Weapons
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_weapons_faction_ensemble", -9981, -679, -9913, -661 },
 								{"exclude", "itemID", 138632 },	-- Exclude itself to stop duplicating
 							},
@@ -2200,7 +2200,7 @@ _.PVP =
 					n(-319, {	-- Weapons
 						i(138630, {	-- Arsenal: Wild Combatant's Weapons (A)
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_weapons_faction_ensemble", -9981, -680, -9914, -660 },
 								{"exclude", "itemID", 138630 },	-- Exclude itself to stop duplicating
 							},
@@ -2808,7 +2808,7 @@ _.PVP =
 					n(-319, {	-- Weapons
 						i(138633, {	-- Arsenal: Wild Gladiator's Weapons (A)
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_weapons_faction_ensemble", -9981, -680, -9914, -661 },
 								{"exclude", "itemID", 138633 },	-- Exclude itself to stop duplicating
 							},
@@ -3646,7 +3646,7 @@ _.PVP =
 					n(-319, {	-- Weapons
 						i(138629, {	-- Arsenal: Wild Combatant's Weapons (H)
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_weapons_faction_ensemble", -9981, -680, -9913, -660 },
 								{"exclude", "itemID", 138629 },	-- Exclude itself to stop duplicating
 							},
@@ -4254,7 +4254,7 @@ _.PVP =
 					n(-319, {	-- Weapons
 						i(138634, {	-- Arsenal: Wild Gladiator's Weapons (H)
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_weapons_faction_ensemble", -9981, -680, -9913, -661 },
 								{"exclude", "itemID", 138634 },	-- Exclude itself to stop duplicating
 							},
@@ -4991,8 +4991,8 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(125678)),	-- Wild Gladiator's Redoubt
 					un(REMOVED_FROM_GAME, i(125769)),	-- Wild Gladiator's Shield Wall
 					un(REMOVED_FROM_GAME, i(125649)),	-- Wild Gladiator's Touch of defeat
-					un(REMOVED_FROM_GAME, i(125765)),	-- Wild Gladiator's Baton of Light	
-				}),	
+					un(REMOVED_FROM_GAME, i(125765)),	-- Wild Gladiator's Baton of Light
+				}),
 				cl(DEATHKNIGHT, {
 					un(REMOVED_FROM_GAME, i(125651)),	-- Wild Gladiator's Dreadplate Chestpiece
 					un(REMOVED_FROM_GAME, i(125652)),	-- Wild Gladiator's Dreadplate Gauntlets
@@ -6552,7 +6552,7 @@ _.PVP =
 					n(-319, {	-- Weapons
 						i(138627, {	-- Arsenal: Warmongering Combatant's Weapons (H)
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_weapons_faction_ensemble", -9981, -681, -9913, -660 },
 								{"exclude", "itemID", 138627 },	-- Exclude itself to stop duplicating
 							},
@@ -7105,7 +7105,7 @@ _.PVP =
 					n(-319, {	-- Weapons
 						i(138636, {	-- Arsenal: Warmongering Gladiator's Weapons (H)
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_weapons_faction_ensemble", -9981, -681, -9913, -661 },
 								{"exclude", "itemID", 138636 },	-- Exclude itself to stop duplicating
 							},
@@ -7746,7 +7746,7 @@ _.PVP =
 			n(-662, {	-- Elite PvP Gear
 				un(REMOVED_FROM_GAME, i(127376)),	-- Warmongering Gladiator's Greatcloak h
 				un(REMOVED_FROM_GAME, i(127371)),	-- Warmongering Gladiator's Tabard h
-				un(REMOVED_FROM_GAME, i(127377)),	-- Warmongering Gladiator's Greatcloak a 
+				un(REMOVED_FROM_GAME, i(127377)),	-- Warmongering Gladiator's Greatcloak a
 				un(REMOVED_FROM_GAME, i(127369)),	-- Warmongering Gladiator's Tabarda
 				n(-319, {	-- Weapons
 					un(REMOVED_FROM_GAME, i(126876)),	-- Warmongering Gladiator's Ripper

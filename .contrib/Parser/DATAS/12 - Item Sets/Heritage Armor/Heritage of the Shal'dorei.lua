@@ -7,7 +7,7 @@ _.GearSets =
 	n(-254, {	-- Heritage Armor
 		gs(1523, {	-- Heritage of the Shal'dorei
 			["races"] = { NIGHTBORNE },
-			["g"] = {   
+			["g"] = {
 				q(49784, {    -- Heritage of the Nightborne
 					i(156675),	-- Shal'dorei Crown
 					i(156676),	-- Shal'dorei Mantle
