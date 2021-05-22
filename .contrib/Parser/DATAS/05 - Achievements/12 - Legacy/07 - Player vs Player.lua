@@ -211,6 +211,8 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, h(ach(445, {		-- Warlord
 				un(REMOVED_FROM_GAME, h(title(27))),	-- Warlord
 			}))),
+			un(REMOVED_FROM_GAME, a(ach(10095))),	-- Warmongering Combatant (Alliance)
+			un(REMOVED_FROM_GAME, h(ach(10094))),	-- Warmongering Combatant (Horde)
 			ach(10091, {	-- Warmongering Conquest (A)
 				["races"] = ALLIANCE_ONLY,
 				["u"] = REMOVED_FROM_GAME,	-- Removed in Patch 7.0

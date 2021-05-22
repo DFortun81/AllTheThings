@@ -2085,7 +2085,11 @@ _.NeverImplemented =
 			i(125044),	-- Wild Combatant's Accolade of conquest
 			i(125046),	-- Wild Combatant's Accolade of Victory
 			i(125048),	-- Wild Combatant's Accolade of Endurance
-			
+			i(124871),	-- Wild Gladiator's Accolade of Dominance
+			i(124874),	-- Wild Gladiator's Accolade of Endurance
+			i(124870),	-- Wild Gladiator's Accolade of conquest
+			i(124872),	-- Wild Gladiator's Accolade of victory
+			i(124873),	-- Wild Gladiator's Accolade of meditation
 			i(125522),	-- Wild Combatant's Accolade of Dominance
 			i(125524),	-- Wild Combatant's Accolade of Meditation
 			i(125521),	-- Wild Combatant's Accolade of conquest
