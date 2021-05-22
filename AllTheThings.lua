@@ -157,36 +157,6 @@ local function Callback(method, ...)
 		C_Timer.After(0, newCallback);
 	end
 end
--- Triggers a named timer callback method to run on the next game frame with the provided params; the name can only be set to run once per frame
--- This callback version is used for in-line self-encapsulated functions since they are apparently
--- re-defined on every call and thus are non-unique
-local function SelfCallback(self, name, method, ...)
-	if not app.__callbacks then
-		app.__callbacks = {};
-		app.__callbacks[self] = {};
-	end
-	if not app.__callbacks[self] then
-		app.__callbacks[self] = {};
-	end
-	if not app.__callbacks[self][name] then
-		app.__callbacks[self][name] = ... and {...} or true;
-		-- print("Self-Callback:", self, name, ...)
-		local newCallback = function()
-			local args = app.__callbacks[self][name];
-			app.__callbacks[self][name] = nil;
-			-- callback with args/void
-			if args ~= true then
-				-- print("Self-Callback/args Running",method, unpack(args))
-				method(unpack(args));
-			else
-				-- print("Self-Callback/void Running",method)
-				method();
-			end
-			-- print("Self-Callback Done",self,name)
-		end;
-		C_Timer.After(0, newCallback);
-	end
-end
 -- Triggers a timer callback method to run on the next game frame or following combat if in combat currently with the provided params; the method can only be set to run once per frame
 local function AfterCombatCallback(method, ...)
 	if not InCombatLockdown() then Callback(method, ...); return; end
@@ -12188,13 +12158,16 @@ local function Refresh(self)
 
 		-- If this window has an UpdateDone method which should process after the Refresh is complete
 		if self.UpdateDone then
+			-- print("Refresh-UpdateDone")
 			Callback(self.UpdateDone, self);
 		-- If the rows need to be processed again, do so next update.
 		elseif self.processingLinks then
+			-- print("Refresh-processingLinks")
 			Callback(self.Refresh, self);
 			self.processingLinks = nil;
 		-- If the data itself needs another update pass due to new rows being added dynamically
 		elseif self.doUpdate then
+			-- print("Refresh-doUpdate")
 			Callback(self.Update, self, true);
 			self.doUpdate = nil;
 		end
@@ -14309,7 +14282,6 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 	if not self.initialized then
 		self.initialized = true;
 		self.openedOnLogin = false;
-		self.rawData = {};
 		self.IsSameMapData = function(self)
 			local data = self.data;
 			if data.mapID then
@@ -14586,9 +14558,9 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 				-- print("update groups");
 				-- check to expand groups after they have been built and updated
 				-- dont re-expand if the user has previously full-collapsed the minilist
+				-- need to force expand if so since the groups haven't been updated yet
 				if not self.fullCollapsed then
-					-- print("expand current zone");
-					ExpandGroupsRecursively(self.data, true);
+					ExpandGroupsRecursively(self.data, true, true);
 				end
 
 				-- if enabled, minimize rows based on difficulty
@@ -14671,8 +14643,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 				});
 				BuildGroups(self.data, self.data.g);
 			end
-			SelfCallback(self, "Update",
-				function() self:Update(); end);
+			Callback(self.Update, self);
 		end
 		local function OpenMiniList(id, show)
 			-- print("OpenMiniList",id,show);
@@ -14697,8 +14668,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 			-- Cache that we're in the current map ID.
 			-- print("new map");
 			self.mapID = id;
-			SelfCallback(self, "Update",
-				function() self:Update(); end);
+			Callback(self.Update, self);
 		end
 		local function OpenMiniListForCurrentZone()
 			OpenMiniList(app.GetCurrentMapID(), true);
@@ -14877,13 +14847,10 @@ app:GetWindow("Harvester", UIParent, function(self)
 						-- revert the number of retries to retrieve item information
 						app.MaximumItemInfoRetries = oldRetries or 400;
 						self.UpdateDone = nil;
-						-- un-initialize self so we can harvest again without reloading if needed
-						self.initialized = nil;
 					end
 				end
 				-- Update the Harvester Window to re-populate row data for next refresh
-				SelfCallback(self, "Refresh",
-					function() self:Refresh(); end);
+				Callback(self.Refresh, self);
 			end
 		end
 		self:BaseUpdate(true);
