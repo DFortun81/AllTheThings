@@ -88,6 +88,7 @@ _.WorldEvents =
 								{ "c", 1166, 1000 },	-- 1,000x Timewarped Badge
 								{ "i", 33226, 450 },	-- 450x   Tricky Treat
 							},
+							["sym"] = { { "select", "itemID", 122340 } },	-- Fake select for whatever is cached for itself
 						}),
 						i(151614, {	-- Weathered Heirloom Armor Casing
 							["cost"] = {
@@ -97,6 +98,7 @@ _.WorldEvents =
 								{ "c", 1166, 1000 },	-- 1,000x Timewarped Badge
 								{ "i", 33226, 450 },	-- 450x   Tricky Treat
 							},
+							["sym"] = { { "select", "itemID", 151614 } },	-- Fake select for whatever is cached for itself
 						}),
 						i(122338, {	-- Ancient Heirloom Armor Casing
 							["cost"] = {
@@ -109,6 +111,7 @@ _.WorldEvents =
 								{ "c", 1166, 750 },		-- 750x Timewarped Badge
 								{ "i", 33226, 250 },	-- 250x Tricky Treat
 							},
+							["sym"] = { { "select", "itemID", 122338 } },	-- Fake select for whatever is cached for itself
 						}),
 						i(122341, {	-- Timeworn Heirloom Scabbard
 							["cost"] = {
@@ -117,6 +120,7 @@ _.WorldEvents =
 								{ "i", 49927, 450 },	-- 450x   Love Token
 								{ "c", 1166, 1200 },	-- 1,200x Timewarped Badge
 							},
+							["sym"] = { { "select", "itemID", 122341 } },	-- Fake select for whatever is cached for itself
 						}),
 						i(151615, {	-- Weathered Heirloom Scabbard
 							["cost"] = {
@@ -125,6 +129,7 @@ _.WorldEvents =
 								{ "i", 49927, 450 },	-- 450x   Love Token
 								{ "c", 1166, 1200 },	-- 1,200x Timewarped Badge
 							},
+							["sym"] = { { "select", "itemID", 151615 } },	-- Fake select for whatever is cached for itself
 						}),
 					-- Gear!!
 						i(133525, {	-- Bones of the Damned

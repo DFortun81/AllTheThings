@@ -150,6 +150,7 @@ _.WorldEvents =
 								{ "c", 1166, 750 },		-- 750x Timewarped Badge
 								{ "i", 33226, 250 },	-- 250x Tricky Treat
 							},
+							["sym"] = { { "select", "itemID", 122338 } },	-- Fake select for whatever is cached for itself
 						}),
 						i(122339, {	-- Ancient Heirloom Scabbard
 							["cost"] = {
@@ -161,6 +162,7 @@ _.WorldEvents =
 								{ "i", 137642, 14 },	-- 14x  Mark of Honor
 								{ "c", 1166, 900 },		-- 900x Timewarped Badge
 							},
+							["sym"] = { { "select", "itemID", 122339 } },	-- Fake select for whatever is cached for itself
 						}),
 						i(167731, {	-- Battle-Hardened Heirloom Armor Casing
 							["cost"] = {
@@ -169,6 +171,7 @@ _.WorldEvents =
 								{ "c", 1166, 1000 },	-- 1,000x Timewarped Badge
 								{ "i", 33226, 450 },	-- 450x   Tricky Treat
 							},
+							["sym"] = { { "select", "itemID", 167731 } },	-- Fake select for whatever is cached for itself
 						}),
 						i(167732, {	-- Battle-Hardened Heirloom Scabbard
 							["cost"] = {
@@ -176,6 +179,7 @@ _.WorldEvents =
 								{ "i", 37829, 500 },	-- 500x   Brewfest Prize Token
 								{ "c", 1166, 1200 },	-- 1,200x Timewarped Badge
 							},
+							["sym"] = { { "select", "itemID", 167732 } },	-- Fake select for whatever is cached for itself
 						}),
 						i(122340, {	-- Timeworn Heirloom Armor Casing
 							["cost"] = {
@@ -185,6 +189,7 @@ _.WorldEvents =
 								{ "c", 1166, 1000 },	-- 1,000x Timewarped Badge
 								{ "i", 33226, 450 },	-- 450x   Tricky Treat
 							},
+							["sym"] = { { "select", "itemID", 122340 } },	-- Fake select for whatever is cached for itself
 						}),
 						i(122341, {	-- Timeworn Heirloom Scabbard
 							["cost"] = {
@@ -193,6 +198,7 @@ _.WorldEvents =
 								{ "i", 49927, 450 },	-- 450x   Love Token
 								{ "c", 1166, 1200 },	-- 1,200x Timewarped Badge
 							},
+							["sym"] = { { "select", "itemID", 122341 } },	-- Fake select for whatever is cached for itself
 						}),
 						i(151614, {	-- Weathered Heirloom Armor Casing
 							["cost"] = {
@@ -202,6 +208,7 @@ _.WorldEvents =
 								{ "c", 1166, 1000 },	-- 1,000x Timewarped Badge
 								{ "i", 33226, 450 },	-- 450x   Tricky Treat
 							},
+							["sym"] = { { "select", "itemID", 151614 } },	-- Fake select for whatever is cached for itself
 						}),
 						i(151615, {	-- Weathered Heirloom Scabbard
 							["cost"] = {
@@ -210,6 +217,7 @@ _.WorldEvents =
 								{ "i", 49927, 450 },	-- 450x   Love Token
 								{ "c", 1166, 1200 },	-- 1,200x Timewarped Badge
 							},
+							["sym"] = { { "select", "itemID", 151615 } },	-- Fake select for whatever is cached for itself
 						}),
 						i(129948, {	-- Commendation of Honor Hold
 							["races"] = ALLIANCE_ONLY,

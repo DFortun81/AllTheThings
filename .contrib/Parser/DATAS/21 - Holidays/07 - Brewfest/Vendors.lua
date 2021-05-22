@@ -176,6 +176,7 @@ _.Holidays =
 								{ "i", 49927, 450 },	-- 450x   Love Token
 								{ "c", 1166, 1200 },	-- 1,200x Timewarped Badge
 							},
+							["sym"] = { { "select", "itemID", 122341 } },	-- Fake select for whatever is cached for itself
 						}),
 						i(151615, {	-- Weathered Heirloom Scabbard
 							["cost"] = {
@@ -184,6 +185,7 @@ _.Holidays =
 								{ "i", 49927, 450 },	-- 450x   Love Token
 								{ "c", 1166, 1200 },	-- 1,200x Timewarped Badge
 							},
+							["sym"] = { { "select", "itemID", 151615 } },	-- Fake select for whatever is cached for itself
 						}),
 						i(32233, {	-- Wolpertinger's Tankard
 							["u"] = 24,	-- Brewfest
@@ -343,6 +345,7 @@ _.Holidays =
 								{ "i", 49927, 450 },	-- 450x   Love Token
 								{ "c", 1166, 1200 },	-- 1,200x Timewarped Badge
 							},
+							["sym"] = { { "select", "itemID", 122341 } },	-- Fake select for whatever is cached for itself
 						}),
 						i(151615, {	-- Weathered Heirloom Scabbard
 							["cost"] = {
@@ -351,6 +354,7 @@ _.Holidays =
 								{ "i", 49927, 450 },	-- 450x   Love Token
 								{ "c", 1166, 1200 },	-- 1,200x Timewarped Badge
 							},
+							["sym"] = { { "select", "itemID", 151615 } },	-- Fake select for whatever is cached for itself
 						}),
 						i(32233, {	-- Wolpertinger's Tankard
 							["u"] = 24,	-- Brewfest

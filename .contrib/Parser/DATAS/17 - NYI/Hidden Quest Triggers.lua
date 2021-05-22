@@ -2658,6 +2658,7 @@ _.HiddenQuestTriggers =
 		q(54769),	-- triggered when turning in #53939, "Breaching Boralus," tiragade sound assault.  had WM on
 		q(54322),	-- triggered when turning in #53885, "Isolated Victory," vol'dun assault.  had WM on
 		q(54778),	-- triggered when turning in #53885, "Isolated Victory," vol'dun assault.  had WM on
+		q(54399),	-- triggered when collecting 'Leeroy Jenkins' for 'Upright Citizens' achieve
 		q(57593),	-- triggered when talking to chromie in CoT during the 2019 anniversary event, before turning in #57249, "A Timely Invitation"
 		q(54035),	-- Blessing of the Night Warden unlock chain started
 		q(53956),	-- Triggered when turning in "We Are Coming" as alliance. Probably related to darkshore warfront unlock?

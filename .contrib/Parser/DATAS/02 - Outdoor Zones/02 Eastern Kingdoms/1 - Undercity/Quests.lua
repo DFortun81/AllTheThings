@@ -20,7 +20,9 @@ _.Zones =
 					},
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(122339),	-- Ancient Heirloom Scabbard
+						i(122339, {	-- Ancient Heirloom Scabbard
+							["sym"] = { { "select", "itemID", 122339 } },	-- Fake select for whatever is cached for itself
+						}),
 					},
 				}),
 				q(7817,  {	-- A Donation of Mageweave
@@ -113,7 +115,9 @@ _.Zones =
 					},
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(122340),	-- Timeworn Heirloom Armor Casing
+						i(122340, {	-- Timeworn Heirloom Armor Casing
+							["sym"] = { { "select", "itemID", 122340 } },	-- Fake select for whatever is cached for itself
+						}),
 					},
 				}),
 				q(9189, {	-- Delivery to the Sepulcher
@@ -293,7 +297,9 @@ _.Zones =
 					},
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(122338),	-- Ancient Heirloom Armor Casing
+						i(122338, {	-- Ancient Heirloom Armor Casing
+							["sym"] = { { "select", "itemID", 122338 } },	-- Fake select for whatever is cached for itself
+						}),
 					},
 				}),
 				q(8273,  {	-- Oran's Gratitude
@@ -495,7 +501,9 @@ _.Zones =
 					},
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(122341),	-- Timeworn Heirloom Scabbard
+						i(122341, {	-- Timeworn Heirloom Scabbard
+							["sym"] = { { "select", "itemID", 122341 } },	-- Fake select for whatever is cached for itself
+						}),
 					},
 				}),
 				q(736,   {	-- The Star, the Hand and the Heart

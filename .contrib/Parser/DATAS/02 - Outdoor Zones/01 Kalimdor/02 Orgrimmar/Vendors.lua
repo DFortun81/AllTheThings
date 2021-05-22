@@ -972,6 +972,7 @@ _.Zones =
 								{ "c", 1166, 750 },		-- 750x Timewarped Badge
 								{ "i", 33226, 250 },	-- 250x Tricky Treat
 							},
+							["sym"] = { { "select", "itemID", 122338 } },	-- Fake select for whatever is cached for itself
 						}),
 						i(122339, {	-- Ancient Heirloom Scabbard
 							["cost"] = {
@@ -983,6 +984,7 @@ _.Zones =
 								{ "i", 137642, 14 },	-- 14x  Mark of Honor
 								{ "c", 1166, 900 },		-- 900x Timewarped Badge
 							},
+							["sym"] = { { "select", "itemID", 122339 } },	-- Fake select for whatever is cached for itself
 						}),
 						i(122369, {	-- Battleworn Thrash Blade
 							["cost"] = { { "i", 137642, 10 }, },	-- 10x Mark of Honor
