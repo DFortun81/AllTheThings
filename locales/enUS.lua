@@ -765,16 +765,16 @@ app.L = {
 		-- "Legit" Holidays
 		[235442] = app.asset("Holiday_brewfest"),	-- Brewfest
 		[235445] = app.asset("Holiday_Children"),	-- Children's Week
-		[235448] = app.asset("Holiday_dmf"),	-- Darkmoon Faire
+		[235448] = app.asset("Event_dmf"),	-- Darkmoon Faire
 		[307365] = app.asset("Holiday_Day_of_the_Dead"),	-- Day of the Dead
 		[235485] = app.asset("Holiday_winter_veil"),	-- Feast of Winter Veil
 		-- [235457] = app.asset("TODO"),	-- Fireworks Spectacular
 		[235462] = app.asset("Holiday_hallows_end"),	-- Hallow's End
 		[235465] = app.asset("Holiday_Harvestfest"),	-- Harvest Festival
-		[235468] = app.asset("love_is_in_the_air"),	-- Love is in the Air
+		[235468] = app.asset("Holiday_love"),	-- Love is in the Air
 		[235471] = app.asset("Holiday_Lunar"),	-- Lunar Festival
 		[235474] = app.asset("Holiday_Midsummer"),	-- Midsummer Fire Festival
-		[235477] = app.asset("noblegarden"),	-- Noblegarden
+		[235477] = app.asset("Holiday_noblegarden"),	-- Noblegarden
 		[235466] = app.asset("Holiday_Pilgrim"),	-- Pilgrim's Bounty
 		[235481] = app.asset("Holiday_Pirate"),	-- Pirates' Day
 

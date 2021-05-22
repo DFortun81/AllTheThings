@@ -5,7 +5,7 @@
 _.WorldEvents =
 {
 	m(407, {	-- Darkmoon Island
-		["icon"] = asset("dmf"),
+		["icon"] = asset("Event_dmf"),
 		["achievementID"] = 6019,	-- Come One, Come All!
 		["maps"] = {
 			408,	-- Cauldron of Rock
