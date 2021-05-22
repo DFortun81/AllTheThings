@@ -24,6 +24,7 @@ _.Holidays =
 								{ "c", 1166, 750 },		-- 750x Timewarped Badge
 								{ "i", 33226, 250 },	-- 250x Tricky Treat
 							},
+							["sym"] = { { "select", "itemID", 122338 } },	-- Fake select for whatever is cached for itself
 						}),
 						i(37585,  {	-- Chewy Fel Taffy
 							["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
@@ -101,6 +102,7 @@ _.Holidays =
 								{ "c", 1166, 1000 },	-- 1,000x Timewarped Badge
 								{ "i", 33226, 450 },	-- 450x   Tricky Treat
 							},
+							["sym"] = { { "select", "itemID", 122340 } },	-- Fake select for whatever is cached for itself
 						}),
 						i(37604,  {	-- Tooth Pick
 							["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
@@ -120,6 +122,7 @@ _.Holidays =
 								{ "c", 1166, 1000 },	-- 1,000x Timewarped Badge
 								{ "i", 33226, 450 },	-- 450x   Tricky Treat
 							},
+							["sym"] = { { "select", "itemID", 151614 } },	-- Fake select for whatever is cached for itself
 						}),
 					},
 				}),
@@ -232,6 +235,7 @@ _.Holidays =
 								{ "c", 1166, 750 },		-- 750x Timewarped Badge
 								{ "i", 33226, 250 },	-- 250x Tricky Treat
 							},
+							["sym"] = { { "select", "itemID", 122338 } },	-- Fake select for whatever is cached for itself
 						}),
 						i(37585,  {	-- Chewy Fel Taffy
 							["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
@@ -309,6 +313,7 @@ _.Holidays =
 								{ "c", 1166, 1000 },	-- 1,000x Timewarped Badge
 								{ "i", 33226, 450 },	-- 450x   Tricky Treat
 							},
+							["sym"] = { { "select", "itemID", 122340 } },	-- Fake select for whatever is cached for itself
 						}),
 						i(37604,  {	-- Tooth Pick
 							["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
@@ -328,6 +333,7 @@ _.Holidays =
 								{ "c", 1166, 1000 },	-- 1,000x Timewarped Badge
 								{ "i", 33226, 450 },	-- 450x   Tricky Treat
 							},
+							["sym"] = { { "select", "itemID", 151614 } },	-- Fake select for whatever is cached for itself
 						}),
 					},
 				}),

@@ -157,36 +157,6 @@ local function Callback(method, ...)
 		C_Timer.After(0, newCallback);
 	end
 end
--- Triggers a named timer callback method to run on the next game frame with the provided params; the name can only be set to run once per frame
--- This callback version is used for in-line self-encapsulated functions since they are apparently
--- re-defined on every call and thus are non-unique
-local function SelfCallback(self, name, method, ...)
-	if not app.__callbacks then
-		app.__callbacks = {};
-		app.__callbacks[self] = {};
-	end
-	if not app.__callbacks[self] then
-		app.__callbacks[self] = {};
-	end
-	if not app.__callbacks[self][name] then
-		app.__callbacks[self][name] = ... and {...} or true;
-		-- print("Self-Callback:", self, name, ...)
-		local newCallback = function()
-			local args = app.__callbacks[self][name];
-			app.__callbacks[self][name] = nil;
-			-- callback with args/void
-			if args ~= true then
-				-- print("Self-Callback/args Running",method, unpack(args))
-				method(unpack(args));
-			else
-				-- print("Self-Callback/void Running",method)
-				method();
-			end
-			-- print("Self-Callback Done",self,name)
-		end;
-		C_Timer.After(0, newCallback);
-	end
-end
 -- Triggers a timer callback method to run on the next game frame or following combat if in combat currently with the provided params; the method can only be set to run once per frame
 local function AfterCombatCallback(method, ...)
 	if not InCombatLockdown() then Callback(method, ...); return; end
@@ -2331,18 +2301,21 @@ ResolveSymbolicLink = function(o)
 				local cache = app.SearchForField(sym[2], sym[3]);
 				if cache then
 					for k,s in ipairs(cache) do
-						if s.g then
-							for i,m in ipairs(s.g) do
-								table.insert(searchResults, m);
+						-- if finding itself in the cache, don't try to resolve itself
+						if s ~= o and (s.key ~= o.key or s[s.key] ~= o[o.key]) then
+							if s.g then
+								for i,m in ipairs(s.g) do
+									table.insert(searchResults, m);
+								end
 							end
-						end
-						local ref = ResolveSymbolicLink(s);
-						if ref then
-							for i,m in ipairs(ref) do
-								table.insert(searchResults, m);
+							local ref = ResolveSymbolicLink(s);
+							if ref then
+								for i,m in ipairs(ref) do
+									table.insert(searchResults, m);
+								end
+							else
+								table.insert(searchResults, s);
 							end
-						else
-							table.insert(searchResults, s);
 						end
 					end
 				else
@@ -2686,7 +2659,7 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 					-- not for group which contains an artifact
 					-- and not group.g[1].artifactID
 					-- not for heirlooms
-					and not (group.filterID == 109)
+					-- and not (group.filterID == 109)
 					-- not for a group which is symbolized
 					-- and not group.symbolized
 					then
@@ -3751,7 +3724,9 @@ app.ExpandSubGroups = function(item)
 		for i=1,count do
 			-- only expand sub-items
 			local sub = item.g[i];
-			if sub.itemID then
+			if sub.itemID
+				and (not sub.filterID or sub.filterID ~= 109)	-- do not expand heirloom items
+			then
 				modItemID = GetGroupItemIDWithModID(sub);
 				-- print("Search sub",modItemID)
 				-- find a reference to the item in the DB and add it to the group
@@ -7163,7 +7138,11 @@ local C_Heirloom_GetHeirloomInfo = C_Heirloom.GetHeirloomInfo;
 local C_Heirloom_GetHeirloomLink = C_Heirloom.GetHeirloomLink;
 local C_Heirloom_PlayerHasHeirloom = C_Heirloom.PlayerHasHeirloom;
 local C_Heirloom_GetHeirloomMaxUpgradeLevel = C_Heirloom.GetHeirloomMaxUpgradeLevel;
+local heirloomIDs = {};
 local fields = {
+	["key"] = function(t)
+		return "heirloomUnlockID";
+	end,
 	["text"] = function(t)
 		return L["HEIRLOOM_TEXT"];
 	end,
@@ -7177,15 +7156,9 @@ local fields = {
 		return app.CollectibleHeirlooms;
 	end,
 	["saved"] = function(t)
-		return C_Heirloom_PlayerHasHeirloom(t.parent.itemID);
+		return C_Heirloom_PlayerHasHeirloom(t.heirloomUnlockID);
 	end,
 	["trackable"] = app.ReturnTrue,
-	["u"] = function(t)
-		return t.parent.u;
-	end,
-	["f"] = function(t)
-		return t.parent.f;
-	end,
 };
 fields.collected = fields.saved;
 app.BaseHeirloomUnlocked = app.BaseObjectFields(fields);
@@ -7204,6 +7177,9 @@ local weaponTextures = {
 };
 local isWeapon = { 20, 29, 28, 21, 22, 23, 24, 25, 26, 50, 57, 34, 35, 27, 33, 32, 31 };
 local fields = {
+	["key"] = function(t)
+		return "heirloomLevelID";
+	end,
 	["level"] = function(t)
 		return 1;
 	end,
@@ -7220,7 +7196,7 @@ local fields = {
 		return app.CollectibleHeirlooms and app.CollectibleHeirloomUpgrades;
 	end,
 	["saved"] = function(t)
-		local itemID = t.parent.itemID;
+		local itemID = t.heirloomLevelID;
 		if itemID then
 			if t.level <= (ATTAccountWideData.HeirloomRanks[itemID] or 0) then return true; end
 			local level = select(5, C_Heirloom_GetHeirloomInfo(itemID));
@@ -7232,18 +7208,12 @@ local fields = {
 	end,
 	["trackable"] = app.ReturnTrue,
 	["isWeapon"] = function(t)
-		if t.parent.f and contains(isWeapon, t.parent.f) then
+		if t.f and contains(isWeapon, t.f) then
 			rawset(t, "isWeapon", true);
 			return true;
 		end
 		rawset(t, "isWeapon", false);
 		return false;
-	end,
-	["u"] = function(t)
-		return t.parent.u;
-	end,
-	["f"] = function(t)
-		return t.parent.f;
 	end,
 };
 fields.collected = fields.saved;
@@ -7258,11 +7228,6 @@ local fields = {
 	end,
 	["filterID"] = function(t)
 		return 109;
-	end,
-	["modItemID"] = function(t)
-		local modItemID = GetGroupItemIDWithModID(t);
-		rawset(t, "modItemID", modItemID);
-		return modItemID;
 	end,
 	["text"] = function(t)
 		return t.link;
@@ -7298,55 +7263,125 @@ local fields = {
 	["saved"] = function(t)
 		return t.collected == 1;
 	end,
-	["g"] = function(t)
-		if app.CollectibleHeirlooms then
-			local g = {};
-			local total = GetDataSubMember("HeirloomUpgradeLevels", t.itemID) or C_Heirloom_GetHeirloomMaxUpgradeLevel(t.itemID);
-			if total then
-				SetDataSubMember("HeirloomUpgradeLevels", t.itemID, total);
-				local armorTokens = {
-					app.CreateItem(167731),	-- Battle-Hardened Heirloom Armor Casing
-					app.CreateItem(151614),	-- Weathered Heirloom Armor Casing
-					app.CreateItem(122340),	-- Timeworn Heirloom Armor Casing
-					app.CreateItem(122338),	-- Ancient Heirloom Armor Casing
-				};
-				local weaponTokens = {
-					app.CreateItem(167732),	-- Battle-Hardened Heirloom Scabbard
-					app.CreateItem(151615),	-- Weathered Heirloom Scabbard
-					app.CreateItem(122341),	-- Timeworn Heirloom Scabbard
-					app.CreateItem(122339),	-- Ancient Heirloom Scabbard
-				};
-				for i,item in ipairs(armorTokens) do
-					CacheFields(item);
-					item.g = {};
-				end
-				for i,item in ipairs(weaponTokens) do
-					CacheFields(item);
-					item.g = {};
-				end
-				local heirhashpre = "hl" .. tostring(t.itemID)
-				tinsert(g, setmetatable({ ["parent"] = t, ["hash"] = heirhashpre }, app.BaseHeirloomUnlocked));
-				for i=1,total,1 do
-					local hLvlhash = heirhashpre .. ":" .. tostring(i);
-					local l = setmetatable({ ["level"] = i, ["parent"] = t, ["hash"] = hLvlhash }, app.BaseHeirloomLevel);
-					local c = setmetatable({ ["level"] = i, ["itemID"] = t.itemID, ["parent"] = t, ["hash"] = hLvlhash }, app.BaseHeirloomLevel);
-					if l.isWeapon then
-						tinsert(weaponTokens[total + 1 - i].g, c);
-					else
-						tinsert(armorTokens[total + 1 - i].g, c);
-					end
-					tinsert(g, l);
-				end
-				BuildGroups(t, g);
-			end
-			rawset(t, "g", g);
-			return g;
+	["isWeapon"] = function(t)
+		if t.f and contains(isWeapon, t.f) then
+			rawset(t, "isWeapon", true);
+			return true;
 		end
+		rawset(t, "isWeapon", false);
+		return false;
+	end,
+	["g"] = function(t)
+		-- unlocking the heirloom is the only thing contained in the heirloom
+		rawset(t, "g", { setmetatable({ ["heirloomUnlockID"] = t.itemID, ["u"] = t.u, ["f"] = t.f }, app.BaseHeirloomUnlocked) });
+		return rawget(t, "g");
 	end,
 };
 app.BaseHeirloom = app.BaseObjectFields(fields);
 app.CreateHeirloom = function(id, t)
+	tinsert(heirloomIDs, id);
 	return setmetatable(constructor(id, t, "itemID"), app.BaseHeirloom);
+end
+
+-- Will retrieve all the cached entries by itemID for existing heirlooms and generate their
+-- upgrade levels into the respective upgrade tokens
+app.CacheHeirlooms = function()
+	if #heirloomIDs < 1 then return; end
+
+	-- setup the armor tokens which will contain the upgrades for the heirlooms
+	local armorTokens = {
+		app.CreateItem(167731),	-- Battle-Hardened Heirloom Armor Casing
+		app.CreateItem(151614),	-- Weathered Heirloom Armor Casing
+		app.CreateItem(122340),	-- Timeworn Heirloom Armor Casing
+		app.CreateItem(122338),	-- Ancient Heirloom Armor Casing
+	};
+	local weaponTokens = {
+		app.CreateItem(167732),	-- Battle-Hardened Heirloom Scabbard
+		app.CreateItem(151615),	-- Weathered Heirloom Scabbard
+		app.CreateItem(122341),	-- Timeworn Heirloom Scabbard
+		app.CreateItem(122339),	-- Ancient Heirloom Scabbard
+	};
+
+	-- cache the heirloom upgrade tokens
+	for i,item in ipairs(armorTokens) do
+		-- CacheFields(item);
+		item.g = {};
+	end
+	for i,item in ipairs(weaponTokens) do
+		-- CacheFields(item);
+		item.g = {};
+	end
+
+	-- for each cached heirloom, push a copy of itself with respective upgrade level under the respective upgrade token
+	local heirloom, upgrades, isWeapon;
+	local uniques = {};
+	for _,itemID in ipairs(heirloomIDs) do
+		if not uniques[itemID] then
+			uniques[itemID] = true;
+
+			heirloom = app.SearchForObject("itemID", itemID);
+			if heirloom then
+				upgrades = GetDataSubMember("HeirloomUpgradeLevels", itemID) or C_Heirloom_GetHeirloomMaxUpgradeLevel(itemID);
+				if upgrades then
+					SetDataSubMember("HeirloomUpgradeLevels", itemID, upgrades);
+					isWeapon = heirloom.isWeapon;
+					
+					local heirloomHeader;
+					for i=1,upgrades,1 do
+						-- Create a non-collectible version of the heirloom item itself to hold the upgrade within the token
+						heirloomHeader = CloneData(heirloom);
+						heirloomHeader.collectible = false;
+						-- put the upgrade object into the header heirloom object					
+						heirloomHeader.g = { setmetatable({ ["level"] = i, ["heirloomLevelID"] = itemID, ["u"] = heirloom.u, ["f"] = heirloom.f }, app.BaseHeirloomLevel) };
+
+						-- add the header into the appropriate upgrade token
+						if isWeapon then
+							tinsert(weaponTokens[upgrades + 1 - i].g, heirloomHeader);
+						else
+							tinsert(armorTokens[upgrades + 1 - i].g, heirloomHeader);
+						end
+					end
+				end
+			end
+		end
+	end
+	
+	-- build groups for each upgrade token
+	-- and copy the set of upgrades into the cached versions of the upgrade tokens so they therefore exist in the main list
+	-- where the sources of the upgrade tokens exist
+	local cachedTokenGroups;
+	for i,item in ipairs(armorTokens) do
+		cachedTokenGroups = app.SearchForField("itemID", item.itemID);
+		for _,token in ipairs(cachedTokenGroups) do
+			-- ensure the tokens do not have a modID attached
+			token.modID = nil;
+			if not token.sym then
+				for _,heirloom in ipairs(item.g) do
+					-- merge the cloned heirloom with upgrade into the source token listing
+					if not token.g then token.g = { CloneData(heirloom) }
+					else MergeObject(token.g, CloneData(heirloom)); end
+				end
+				BuildGroups(token, token.g);
+			end
+		end
+	end
+	for i,item in ipairs(weaponTokens) do
+		cachedTokenGroups = app.SearchForField("itemID", item.itemID);
+		for _,token in ipairs(cachedTokenGroups) do
+			-- ensure the tokens do not have a modID attached
+			token.modID = nil;
+			if not token.sym then
+				for _,heirloom in ipairs(item.g) do
+					-- merge the cloned heirloom with upgrade into the source token listing
+					if not token.g then token.g = { CloneData(heirloom) }
+					else MergeObject(token.g, CloneData(heirloom)); end
+				end
+				BuildGroups(token, token.g);
+			end
+		end
+	end
+
+	wipe(heirloomIDs);
 end
 end)();
 
@@ -12126,13 +12161,16 @@ local function Refresh(self)
 
 		-- If this window has an UpdateDone method which should process after the Refresh is complete
 		if self.UpdateDone then
+			-- print("Refresh-UpdateDone")
 			Callback(self.UpdateDone, self);
 		-- If the rows need to be processed again, do so next update.
 		elseif self.processingLinks then
+			-- print("Refresh-processingLinks")
 			Callback(self.Refresh, self);
 			self.processingLinks = nil;
 		-- If the data itself needs another update pass due to new rows being added dynamically
 		elseif self.doUpdate then
+			-- print("Refresh-doUpdate")
 			Callback(self.Update, self, true);
 			self.doUpdate = nil;
 		end
@@ -14078,13 +14116,8 @@ function app:GetDataCache()
 		end;
 		flightPathsCategory:OnUpdate();
 
-		-- Pull all artifacts and get their relative itemID cached
-		-- TODO: remove this if artifacts have their sourceID in each raw artifact group
-		for artifactID,groups in pairs(fieldCache["artifactID"]) do
-			for _,group in pairs(groups) do
-				_ = group.silentItemID;
-			end
-		end
+		-- Perform Heirloom caching/upgrade generation
+		app.CacheHeirlooms();
 
 		-- StartCoroutine("VerifyRecursionUnsorted", function() app.VerifyCache(); end, 5);
 	end
@@ -14317,7 +14350,6 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 	if not self.initialized then
 		self.initialized = true;
 		self.openedOnLogin = false;
-		self.rawData = {};
 		self.IsSameMapData = function(self)
 			local data = self.data;
 			if data.mapID then
@@ -14594,9 +14626,9 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 				-- print("update groups");
 				-- check to expand groups after they have been built and updated
 				-- dont re-expand if the user has previously full-collapsed the minilist
+				-- need to force expand if so since the groups haven't been updated yet
 				if not self.fullCollapsed then
-					-- print("expand current zone");
-					ExpandGroupsRecursively(self.data, true);
+					ExpandGroupsRecursively(self.data, true, true);
 				end
 
 				-- if enabled, minimize rows based on difficulty
@@ -14679,8 +14711,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 				});
 				BuildGroups(self.data, self.data.g);
 			end
-			SelfCallback(self, "Update",
-				function() self:Update(); end);
+			Callback(self.Update, self);
 		end
 		local function OpenMiniList(id, show)
 			-- print("OpenMiniList",id,show);
@@ -14705,8 +14736,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 			-- Cache that we're in the current map ID.
 			-- print("new map");
 			self.mapID = id;
-			SelfCallback(self, "Update",
-				function() self:Update(); end);
+			Callback(self.Update, self);
 		end
 		local function OpenMiniListForCurrentZone()
 			OpenMiniList(app.GetCurrentMapID(), true);
@@ -14887,13 +14917,10 @@ app:GetWindow("Harvester", UIParent, function(self)
 						-- revert the number of retries to retrieve item information
 						app.MaximumItemInfoRetries = oldRetries or 400;
 						self.UpdateDone = nil;
-						-- un-initialize self so we can harvest again without reloading if needed
-						self.initialized = nil;
 					end
 				end
 				-- Update the Harvester Window to re-populate row data for next refresh
-				SelfCallback(self, "Refresh",
-					function() self:Refresh(); end);
+				Callback(self.Refresh, self);
 			end
 		end
 		self:BaseUpdate(true);

@@ -5,7 +5,7 @@ _.Instances = { tier(1, applylegacyclassicphase(PHASE_FIVE, {	-- Classic
 	n(-420, {	-- Tier 0.5 Sets
 		["description"] = "The Dungeon Set 2 class sets, commonly referred to as Tier 0.5, are obtained by completing a long quest chain to upgrade the first set available as drops in end game dungeons into stronger versions of themselves. In current WoW, these sets are covetted by Collectors as the quest chain was completely removed from the game with Cataclysm. In WoW Classic, you should finish this quest chain on all of your characters before then!",
 		["groups"] = {
-			cl(DRUID, bubbleDown({ ["classes"] = { DRUID } }, {
+			cl(DRUID, {
 				q(8905,	{	-- An Earnest Proposition [ALLIANCE]
 					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
@@ -146,8 +146,8 @@ _.Instances = { tier(1, applylegacyclassicphase(PHASE_FIVE, {	-- Classic
 						i(22113),	-- Feralheart Vest
 					},
 				}),
-			})),
-			cl(HUNTER, bubbleDown({ ["classes"] = { HUNTER } }, {
+			}),
+			cl(HUNTER, {
 				q(8906,	{	-- An Earnest Proposition [ALLIANCE]
 					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
@@ -162,7 +162,7 @@ _.Instances = { tier(1, applylegacyclassicphase(PHASE_FIVE, {	-- Classic
 					["lvl"] = 58,
 					["groups"] = {
 						i(22011),	-- Beastmaster's Bindings
-					},					
+					},
 				}),
 				q(8914, {	-- An Earnest Proposition [HORDE]
 					["qg"] = 16012,	-- Mokvar
@@ -288,8 +288,8 @@ _.Instances = { tier(1, applylegacyclassicphase(PHASE_FIVE, {	-- Classic
 						i(22060),	-- Beastmaster's Tunic
 					},
 				}),
-			})),
-			cl(MAGE, bubbleDown({ ["classes"] = { MAGE } }, {
+			}),
+			cl(MAGE, {
 				q(8907, {	-- An Earnest Proposition [ALLIANCE]
 					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
@@ -430,8 +430,8 @@ _.Instances = { tier(1, applylegacyclassicphase(PHASE_FIVE, {	-- Classic
 						i(22069),	-- Sorcerer's Robes
 					},
 				}),
-			})),
-			cl(PALADIN, bubbleDown({ ["classes"] = { PALADIN } }, {
+			}),
+			cl(PALADIN, {
 				q(8908, {	-- An Earnest Proposition [ALLIANCE]
 					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
@@ -581,8 +581,8 @@ _.Instances = { tier(1, applylegacyclassicphase(PHASE_FIVE, {	-- Classic
 						i(22089),	-- Soulforge Breastplate
 					},
 				}),
-			})),
-			cl(PRIEST, bubbleDown({ ["classes"] = { PRIEST } }, {
+			}),
+			cl(PRIEST, {
 				q(8909, {	-- An Earnest Proposition [ALLIANCE]
 					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
@@ -723,8 +723,8 @@ _.Instances = { tier(1, applylegacyclassicphase(PHASE_FIVE, {	-- Classic
 						i(22083),	-- Virtuous Robe
 					},
 				}),
-			})),
-			cl(ROGUE, bubbleDown({ ["classes"] = { ROGUE } }, {
+			}),
+			cl(ROGUE, {
 				q(8910, {	-- An Earnest Proposition [ALLIANCE]
 					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
@@ -865,8 +865,8 @@ _.Instances = { tier(1, applylegacyclassicphase(PHASE_FIVE, {	-- Classic
 						i(22009),	-- Darkmantle Tunic
 					},
 				}),
-			})),
-			cl(SHAMAN, bubbleDown({ ["classes"] = { SHAMAN } }, {
+			}),
+			cl(SHAMAN, {
 				q(10492, {	-- An Earnest Proposition [ALLIANCE]
 					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
@@ -1019,8 +1019,8 @@ _.Instances = { tier(1, applylegacyclassicphase(PHASE_FIVE, {	-- Classic
 						i(22102),	-- Vest of The Five Thunders
 					},
 				}),
-			})),
-			cl(WARLOCK, bubbleDown({ ["classes"] = { WARLOCK } }, {
+			}),
+			cl(WARLOCK, {
 				q(8911, {	-- An Earnest Proposition [ALLIANCE]
 					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
@@ -1161,8 +1161,8 @@ _.Instances = { tier(1, applylegacyclassicphase(PHASE_FIVE, {	-- Classic
 						i(22075),	-- Deathmist Robe
 					},
 				}),
-			})),
-			cl(WARRIOR, bubbleDown({ ["classes"] = { WARRIOR } }, {
+			}),
+			cl(WARRIOR, {
 				q(8912, {	-- An Earnest Proposition [ALLIANCE]
 					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
@@ -1303,7 +1303,7 @@ _.Instances = { tier(1, applylegacyclassicphase(PHASE_FIVE, {	-- Classic
 						i(21997),	-- Breastplate of Heroism
 					},
 				}),
-			})),
+			}),
 			n(QUESTS, {
 				q(8925, {	-- A Portable Power Source
 					["qg"] = 16014,	-- Mux Manascrambler
