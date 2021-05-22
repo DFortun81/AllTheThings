@@ -1149,6 +1149,10 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(115664)),	-- Primal Gladiator's Band of Meditation
 							un(REMOVED_FROM_GAME, i(115663)),	-- Primal Gladiator's Band of Victory
 							un(REMOVED_FROM_GAME, i(115662)),	-- Primal Gladiator's Band of Prowess
+							un(REMOVED_FROM_GAME, i(115608)),	-- Primal Gladiator's ring of cruelty
+							un(REMOVED_FROM_GAME, i(115609)),	-- Primal Gladiator's ring of prowess
+							un(REMOVED_FROM_GAME, i(115661)),	-- Primal Gladiator's band of cruelty
+							un(REMOVED_FROM_GAME, i(120104)),	-- Primal Gladiator's signet of endurance
 						}),
 						n(-386,	{	-- Trinket
 							un(REMOVED_FROM_GAME, i(122706)),	-- Primal Gladiator's Medallion of Adaptation
@@ -2033,6 +2037,7 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(111131)),	-- Primal Gladiator's pendant of contemplation
 							un(REMOVED_FROM_GAME, i(111207)),	-- Primal Gladiator's choker of cruelty
 							un(REMOVED_FROM_GAME, i(111208)),	-- Primal Gladiator's choker of prowess
+							un(REMOVED_FROM_GAME, i(120107)),	-- Primal Gladiator's choker of endurance
 						}),
 						n(-385,	{	-- Finger
 							un(REMOVED_FROM_GAME, i(111081)),	-- Primal Gladiator's ring of cruelty
@@ -2045,12 +2050,13 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(111219)),	-- Primal Gladiator's signet of cruelty
 							un(REMOVED_FROM_GAME, i(111220)),	-- Primal Gladiator's signet of accuracy
 							un(REMOVED_FROM_GAME, i(111271)),	-- Primal Gladiator's ring of triumph
+							un(REMOVED_FROM_GAME, i(120103)),	-- Primal Gladiator's signet of endurance
 						}),
 						n(-386,	{	-- Trinket
 							un(REMOVED_FROM_GAME, i(111272)),	-- Primal Gladiator's signet of ruthlessness
 							un(REMOVED_FROM_GAME, i(111222)),	-- Primal Gladiator's badge of conquest
 							un(REMOVED_FROM_GAME, i(111223)),	-- Primal Gladiator's insignia of conquest
-							un(REMOVED_FROM_GAME, i(111224)),	-- Primal Gladiator's e,blem of cruelty
+							un(REMOVED_FROM_GAME, i(111224)),	-- Primal Gladiator's emblem of cruelty
 							un(REMOVED_FROM_GAME, i(111225)),	-- Primal Gladiator's emblem of tenacity
 							un(REMOVED_FROM_GAME, i(111226)),	-- Primal Gladiator's emblem of mediation
 							un(REMOVED_FROM_GAME, i(111227)),	-- Primal Gladiator's badge of dominance
@@ -2060,6 +2066,8 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(111231)),	-- Primal Gladiator's medallion of mediation
 							un(REMOVED_FROM_GAME, i(111232)),	-- Primal Gladiator's badge of citory
 							un(REMOVED_FROM_GAME, i(111233)),	-- Primal Gladiator's insignia of victory
+							un(REMOVED_FROM_GAME, i(115495)),	-- Primal Gladiator's badge of adaptation
+							un(REMOVED_FROM_GAME, i(122707)),	-- Primal Gladiator's medalionof adaptation
 						}),
 					}),
 				},
