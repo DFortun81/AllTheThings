@@ -898,7 +898,6 @@ _.PVP =
 					i(115768),	-- Primal Gladiator's Plate Helm
 					i(115769),	-- Primal Gladiator's Plate Legguards
 					i(115770),	-- Primal Gladiator's Plate Shoulders
-
 					cl(DEATHKNIGHT, {
 						i(138557, {	-- Ensemble: Primal Gladiator's Dreadplate Armor (A)
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
