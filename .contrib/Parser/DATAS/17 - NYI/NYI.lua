@@ -2080,6 +2080,12 @@ _.NeverImplemented =
 		n(-386, {	-- Trinket
 			i(12805),	-- Orb of Fire
 			i(37561),	-- Unknown
+			i(125045),	-- Wild Combatant's Accolade of Dominance
+			i(125047),	-- Wild Combatant's Accolade of Meditation
+			i(125044),	-- Wild Combatant's Accolade of conquest
+			i(125046),	-- Wild Combatant's Accolade of Victory
+			i(125048),	-- Wild Combatant's Accolade of Endurance
+			
 			i(125522),	-- Wild Combatant's Accolade of Dominance
 			i(125524),	-- Wild Combatant's Accolade of Meditation
 			i(125521),	-- Wild Combatant's Accolade of conquest
