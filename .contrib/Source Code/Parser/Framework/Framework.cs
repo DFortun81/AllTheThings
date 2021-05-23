@@ -343,6 +343,38 @@ namespace ATT
             if (data.TryGetValue("categoryID", out long categoryID))
             {
                 CATEGORY_WITH_REFERENCES[categoryID] = true;
+                if (!CATEGORY_ICONS.ContainsKey(categoryID) && data.TryGetValue("icon", out string categoryIcon))
+                {
+                    // Assign the icon to the category icon db and then inform the engineer.
+                    CATEGORY_ICONS[categoryID] = categoryIcon;
+                    Trace.Write("CATEGORY ICON MISSING FOR ");
+                    Trace.Write(categoryID);
+                    Trace.Write(": ASSIGNED ");
+                    Trace.Write(categoryIcon);
+                    Trace.WriteLine(" FROM SOURCE.");
+                    if (!Framework.DebugMode)
+                    {
+                        Trace.WriteLine("Activating Debug Mode!");
+                        Trace.WriteLine("Update CategoriesDB.lua from the Debugging folder.");
+                        Framework.DebugMode = true;
+                    }
+                }
+                if (!CATEGORY_NAMES.ContainsKey(categoryID) && data.TryGetValue("name", out string categoryName))
+                {
+                    // Assign the name to the category name db and then inform the engineer.
+                    CATEGORY_NAMES[categoryID] = categoryName;
+                    Trace.Write("CATEGORY NAME MISSING FOR ");
+                    Trace.Write(categoryID);
+                    Trace.Write(": ASSIGNED ");
+                    Trace.Write(categoryName);
+                    Trace.WriteLine(" FROM SOURCE.");
+                    if (!Framework.DebugMode)
+                    {
+                        Trace.WriteLine("Activating Debug Mode!");
+                        Trace.WriteLine("Update CategoriesDB.lua from the Debugging folder.");
+                        Framework.DebugMode = true;
+                    }
+                }
             }
             if (data.TryGetValue("creatureID", out long creatureID))
             {
@@ -2347,7 +2379,12 @@ namespace ATT
                         keys = CATEGORY_ICONS.Keys.ToList();
                         keys.Sort();
                         builder.Append("_.CategoryIcons = {").AppendLine();
-                        foreach (var key in keys) builder.Append("\t[").Append(key).Append("] = \"").Append(CATEGORY_ICONS[key]).Append("\",").AppendLine();
+                        foreach (var key in keys)
+                        {
+                            builder.Append("\t[").Append(key).Append("] = \"").Append(CATEGORY_ICONS[key]).Append("\",");
+                            if (CATEGORY_NAMES.TryGetValue(key, out string name)) builder.Append("\t-- ").Append(name);
+                            builder.AppendLine();
+                        }
                         builder.AppendLine("};");
                         File.WriteAllText(Path.Combine(debugFolder.FullName, "CategoryDB.lua"), builder.ToString());
                     }
