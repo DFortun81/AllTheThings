@@ -252,7 +252,7 @@ _.Zones =
 				q(751,   {	-- The Ravaged Caravan
 					["coord"] = { 53.6, 48.4, 7 },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "o", 908 },	-- Sealed Supply Crate
+					["provider"] = { "o", 2908 },	-- Sealed Supply Crate
 					["sourceQuest"] = 749,	-- The Ravaged Caravan
 				}),
 				q(14491, {	-- The Restless Earth
