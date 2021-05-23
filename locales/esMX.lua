@@ -1109,7 +1109,6 @@ for key,value in pairs({
 	[261] = "Cajón dañado",	-- Damaged Crate
 	[270] = "Barrica de Cerveza del Trueno sin vigilar",	-- Unguarded Thunder Ale Barrel
 	[711] = "¡Se busca!",	-- Wanted!
-	--TODO: [908] = "",	--
 	[1593] = "Barco cargado de cadáveres",	-- Corpse Laden Boat
 	[1599] = "Tumba poco profunda",	-- Shallow Grave
 	[1627] = "Cajón de Dalaran",	-- Dalaran Crate
@@ -1123,7 +1122,6 @@ for key,value in pairs({
 	[2701] = "Fragmentos iridiscentes",	-- Iridescent Shards
 	[2702] = "Piedra de Vínculo Interior",	-- Stone of Inner Binding
 	[2703] = "Tumba de Aterratrols",	-- Trollbane's Tomb
-	--TODO: [2706] = "",	--
 	[2713] = "Tablón de Se busca",	-- Wanted Board
 	[3238] = "Barril vacío de Chen",	-- Chen's Empty Keg
 	[3972] = "SE BUSCA",	-- WANTED
@@ -1131,9 +1129,6 @@ for key,value in pairs({
 	[6751] = "Planta con extraños frutos",	-- Strange Fruited Plant
 	[6752] = "Planta con extrañas hojas",	-- Strange Fronded Plant
 	[7510] = "Fronda crecida",	-- Sprouted Frond
-	--TODO: [10879] = "",	--
-	--TODO: [10880] = "",	--
-	--TODO: [10881] = "",	--
 	[19023] = "|cFFFFFFFFStep 7:|r Página 2351",	-- |cFFFFFFFFStep 7:|r Page 2351
 	[20805] = "Planes sin vigilancia de Rizzle",	-- Rizzle's Unguarded Plans
 	[20985] = "Tierra esparcida",	-- Loose Dirt

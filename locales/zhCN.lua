@@ -1129,7 +1129,6 @@ for key, value in pairs({
 	[261] = "破损的箱子",	-- Damaged Crate
 	[270] = "无人守卫的雷酒桶",	-- Unguarded Thunder Ale Barrel	--TODO: This was taken from classic Wowhead
 	[711] = "通缉！",	-- Wanted!	--TODO: This was taken from classic Wowhead
-	--TODO: [908] = "",	--
 	[1593] = "运尸船",	-- Corpse Laden Boat	--TODO: This was taken from classic Wowhead
 	--TODO: [1599] = "Shallow Grave",	-- Shallow Grave
 	[1627] = "达拉然板条箱",	-- Dalaran Crate
@@ -1143,7 +1142,6 @@ for key, value in pairs({
 	[2701] = "虹光水晶碎块",	-- Iridescent Shards
 	[2702] = "内禁锢之石",	-- Stone of Inner Binding
 	[2703] = "托尔贝恩的墓室",	-- Trollbane's Tomb	--TODO: This was taken from classic Wowhead
-	--TODO: [2706] = "",	--
 	[2713] = "通缉板",	-- Wanted Board
 	[3238] = "老陈的空酒桶",	-- Chen's Empty Keg	--TODO: This was taken from classic Wowhead
 	[3972] = "通缉",	-- WANTED
@@ -1151,9 +1149,6 @@ for key, value in pairs({
 	[6751] = "奇怪的果树",	-- Strange Fruited Plant	--TODO: This was taken from classic Wowhead
 	[6752] = "奇怪的树木",	-- Strange Fronded Plant	--TODO: This was taken from classic Wowhead
 	[7510] = "发芽的树叶",	-- Sprouted Frond	--TODO: This was taken from classic Wowhead
-	--TODO: [10879] = "",	--
-	--TODO: [10880] = "",	--
-	--TODO: [10881] = "",	--
 	[19023] = "|cFFFFFFFF第7步:|r 第2351页",	-- |cFFFFFFFFStep 7:|r Page 2351
 	[20805] = "瑞兹尔的计划",	-- Rizzle's Unguarded Plans	--TODO: This was taken from classic Wowhead
 	[20985] = "松软的泥土",	-- Loose Dirt

@@ -1109,7 +1109,6 @@ for key,value in pairs({
 	[261] = "Caisse endommagée",	-- Damaged Crate
 	[270] = "Tonneau de Tonneblonde non gardé",	-- Unguarded Thunder Ale Barrel
 	[711] = "Avis de recherche !",	-- Wanted!
-	--TODO: [908] = "",	--
 	[1593] = "Bateau chargé de cadavres",	-- Corpse Laden Boat
 	[1599] = "Tombe peu profonde",	-- Shallow Grave
 	[1627] = "Caisse de Dalaran",	-- Dalaran Crate
@@ -1123,7 +1122,6 @@ for key,value in pairs({
 	[2701] = "Fragments iridescents",	-- Iridescent Shards
 	[2702] = "Pierre de Lien intérieure",	-- Stone of Inner Binding
 	[2703] = "Tombeau de Trollemort",	-- Trollbane's Tomb
-	--TODO: [2706] = "",	--
 	[2713] = "Tableau des recherches",	-- Wanted Board
 	[3238] = "Tonneau vide de Chen",	-- Chen's Empty Keg
 	[3972] = "AVIS DE RECHERCHE",	-- WANTED
@@ -1131,9 +1129,6 @@ for key,value in pairs({
 	[6751] = "Plante aux fruits étranges",	-- Strange Fruited Plant
 	[6752] = "Plantes aux feuilles étranges",	-- Strange Fronded Plant
 	[7510] = "Racine éclose",	-- Sprouted Frond
-	--TODO: [10879] = "",	--
-	--TODO: [10880] = "",	--
-	--TODO: [10881] = "",	--
 	[19023] = "|cFFFFFFFFStep 7:|r Page 2351",	-- |cFFFFFFFFStep 7:|r Page 2351
 	[20805] = "Plans de Séhouf",	-- Rizzle's Unguarded Plans
 	[20985] = "Poussière flottante",	-- Loose Dirt

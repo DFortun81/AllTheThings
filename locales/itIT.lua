@@ -1109,7 +1109,6 @@ for key,value in pairs({
 	[261] = "Cassa Danneggiata",	-- Damaged Crate
 	[270] = "Unguarded Thunder Ale Barrel",	-- Unguarded Thunder Ale Barrel	--TODO: This was taken from classic Wowhead
 	[711] = "Wanted!",	-- Wanted!	--TODO: This was taken from classic Wowhead
-	--TODO: [908] = "",	--
 	[1593] = "Corpse Laden Boat",	-- Corpse Laden Boat	--TODO: This was taken from classic Wowhead
 	[1599] = "Shallow Grave",	-- Shallow Grave	--TODO: This was taken from classic Wowhead
 	[1627] = "Cassa di Dalaran",	-- Dalaran Crate
@@ -1123,7 +1122,6 @@ for key,value in pairs({
 	[2701] = "Frammento Iridescente",	-- Iridescent Shards
 	[2702] = "Pietra del Vincolo Interno",	-- Stone of Inner Binding
 	[2703] = "Trollbane's Tomb",	-- Trollbane's Tomb	--TODO: This was taken from classic Wowhead
-	--TODO: [2706] = "",	--
 	[2713] = "Bacheca dei Ricercati",	-- Wanted Board
 	[3238] = "Chen's Empty Keg",	-- Chen's Empty Keg	--TODO: This was taken from classic Wowhead
 	[3972] = "RICERCATO",	-- WANTED
@@ -1131,9 +1129,6 @@ for key,value in pairs({
 	[6751] = "Strana Pianta da Frutto",	-- Strange Fruited Plant
 	[6752] = "Strana Pianta Frondosa",	-- Strange Fronded Plant
 	[7510] = "Pianta Rigogliosa",	-- Sprouted Frond
-	--TODO: [10879] = "",	--
-	--TODO: [10880] = "",	--
-	--TODO: [10881] = "",	--
 	[19023] = "|cFFFFFFFFStep 7:|r Pagina 2.351",	-- |cFFFFFFFFStep 7:|r Page 2351
 	[20805] = "Rizzle's Unguarded Plans",	-- Rizzle's Unguarded Plans	--TODO: This was taken from classic Wowhead
 	[20985] = "Terra Smossa",	-- Loose Dirt

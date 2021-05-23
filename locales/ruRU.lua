@@ -1102,7 +1102,6 @@ for key,value in pairs({
 	[261] = "Поврежденный ящик",	-- Damaged Crate
 	[270] = "Неохраняемая бочка Громового эля",	-- Unguarded Thunder Ale Barrel
 	[711] = "Розыск!",	-- Wanted!
-	--TODO: [908] = "",	--
 	[1593] = "Корабль с трупами",	-- Corpse Laden Boat
 	[1599] = "Неглубокая могила",	-- Shallow Grave
 	[1627] = "Ящик из Даларана",	-- Dalaran Crate
@@ -1116,7 +1115,6 @@ for key,value in pairs({
 	[2701] = "Радужные осколки",	-- Iridescent Shards
 	[2702] = "Внутренний связывающий камень",	-- Stone of Inner Binding
 	[2703] = "Могила Троллебоя",	-- Trollbane's Tomb
-	--TODO: [2706] = "",	--
 	[2713] = "Розыск!",	-- Wanted Board
 	[3238] = "Пустой бочонок Чена",	-- Chen's Empty Keg
 	[3972] = "РАЗЫСКИВАЕТСЯ",	-- WANTED
@@ -1124,9 +1122,6 @@ for key,value in pairs({
 	[6751] = "Чудоягодник",	-- Strange Fruited Plant
 	[6752] = "Растение со странными листьями",	-- Strange Fronded Plant
 	[7510] = "Росток папоротника",	-- Sprouted Frond
-	--TODO: [10879] = "",	--
-	--TODO: [10880] = "",	--
-	--TODO: [10881] = "",	--
 	[19023] = "|cFFFFFFFFШаг 7:|r Страница 2351",	-- |cFFFFFFFFStep 7:|r Page 2351
 	[20805] = "Неохраняемые чертежи Риззла",	-- Rizzle's Unguarded Plans
 	[20985] = "Рыхлая земля",	-- Loose Dirt

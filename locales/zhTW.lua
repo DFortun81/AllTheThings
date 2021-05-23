@@ -1109,7 +1109,6 @@ for key,value in pairs({
 	--TODO: [261] = "Damaged Crate",	-- Damaged Crate
 	--TODO: [270] = "Unguarded Thunder Ale Barrel",	-- Unguarded Thunder Ale Barrel
 	--TODO: [711] = "Wanted!",	-- Wanted!
-	--TODO: [908] = "",	--
 	--TODO: [1593] = "Corpse Laden Boat",	-- Corpse Laden Boat
 	--TODO: [1599] = "Shallow Grave",	-- Shallow Grave
 	--TODO: [1627] = "Dalaran Crate",	-- Dalaran Crate
@@ -1123,7 +1122,6 @@ for key,value in pairs({
 	--TODO: [2701] = "Iridescent Shards",	-- Iridescent Shards
 	--TODO: [2702] = "Stone of Inner Binding",	-- Stone of Inner Binding
 	--TODO: [2703] = "Trollbane's Tomb",	-- Trollbane's Tomb
-	--TODO: [2706] = "",	--
 	--TODO: [2713] = "Wanted Board",	-- Wanted Board
 	--TODO: [3238] = "Chen's Empty Keg",	-- Chen's Empty Keg
 	--TODO: [3972] = "WANTED",	-- WANTED
@@ -1131,9 +1129,6 @@ for key,value in pairs({
 	--TODO: [6751] = "Strange Fruited Plant",	-- Strange Fruited Plant
 	--TODO: [6752] = "Strange Fronded Plant",	-- Strange Fronded Plant
 	--TODO: [7510] = "Sprouted Frond",	-- Sprouted Frond
-	--TODO: [10879] = "",	--
-	--TODO: [10880] = "",	--
-	--TODO: [10881] = "",	--
 	--TODO: [19023] = "|cFFFFFFFFStep 7:|r Page 2351",	-- |cFFFFFFFFStep 7:|r Page 2351
 	--TODO: [20805] = "Rizzle's Unguarded Plans",	-- Rizzle's Unguarded Plans
 	--TODO: [20985] = "Loose Dirt",	-- Loose Dirt

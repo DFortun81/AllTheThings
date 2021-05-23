@@ -1109,7 +1109,6 @@ for key,value in pairs({
 	[261] = "Beschädigte Kiste",	-- Damaged Crate
 	[270] = "Unbewachtes Fass mit Donnerbräu Lager",	-- Unguarded Thunder Ale Barrel
 	[711] = "GESUCHT!",	-- Wanted!
-	--TODO: [908] = "",	--
 	[1593] = "Boot mit Leichen",	-- Corpse Laden Boat
 	[1599] = "Flaches Grab",	-- Shallow Grave
 	[1627] = "Kiste aus Dalaran",	-- Dalaran Crate
@@ -1123,7 +1122,6 @@ for key,value in pairs({
 	[2701] = "Regenbogenfarbene Splitter",	-- Iridescent Shards
 	[2702] = "Stein der Inneren Bindung",	-- Stone of Inner Binding
 	[2703] = "Trollbanns Grabmal",	-- Trollbane's Tomb
-	--TODO: [2706] = "",	--
 	[2713] = "Steckbriefbrett",	-- Wanted Board
 	[3238] = "Chens leeres Fässchen",	-- Chen's Empty Keg
 	[3972] = "GESUCHT",	-- WANTED
@@ -1131,9 +1129,6 @@ for key,value in pairs({
 	[6751] = "Sonderbare fruchtbeladene Pflanze",	-- Strange Fruited Plant
 	[6752] = "Sonderbare wedelbestückte Pflanze",	-- Strange Fronded Plant
 	[7510] = "Sprießender Wedel",	-- Sprouted Frond
-	--TODO: [10879] = "",	--
-	--TODO: [10880] = "",	--
-	--TODO: [10881] = "",	--
 	[19023] = "|cFFFFFFFFSchritt 7:|r Seite 2351",	-- |cFFFFFFFFStep 7:|r Page 2351
 	[20805] = "Rizzels Pläne",	-- Rizzle's Unguarded Plans
 	[20985] = "Lockere Erde",	-- Loose Dirt

@@ -1109,7 +1109,6 @@ for key,value in pairs({
 	[261] = "부서진 상자",	-- Damaged Crate
 	[270] = "아무도 지키지 않는 썬더브루 맥주통",	-- Unguarded Thunder Ale Barrel	--TODO: This was taken from classic Wowhead
 	[711] = "현상 수배!",	-- Wanted!
-	--TODO: [908] = "",	--
 	[1593] = "시체 더미 나룻배",	-- Corpse Laden Boat	--TODO: This was taken from classic Wowhead
 	[1599] = "얕은 무덤",	-- Shallow Grave	--TODO: This was taken from classic Wowhead
 	[1627] = "달라란 상자",	-- Dalaran Crate
@@ -1123,7 +1122,6 @@ for key,value in pairs({
 	[2701] = "오색 결정",	-- Iridescent Shards
 	[2702] = "내부 봉인석",	-- Stone of Inner Binding
 	[2703] = "트롤베인의 무덤",	-- Trollbane's Tomb	--TODO: This was taken from classic Wowhead
-	--TODO: [2706] = "",	--
 	[2713] = "현상 수배 전단",	-- Wanted Board
 	[3238] = "첸의 빈 술통",	-- Chen's Empty Keg
 	[3972] = "현상 수배!",	-- WANTED
@@ -1131,9 +1129,6 @@ for key,value in pairs({
 	[6751] = "이상한 열매의 식물",	-- Strange Fruited Plant
 	[6752] = "이상한 잎의 식물",	-- Strange Fronded Plant	--TODO: This was taken from classic Wowhead
 	[7510] = "싹튼 잎",	-- Sprouted Frond	--TODO: This was taken from classic Wowhead
-	--TODO: [10879] = "",	--
-	--TODO: [10880] = "",	--
-	--TODO: [10881] = "",	--
 	[19023] = "|cFFFFFFFFStep 7:|r 2351쪽",	-- |cFFFFFFFFStep 7:|r Page 2351
 	[20805] = "아무도 지키지 않는 리즐의 설계도",	-- Rizzle's Unguarded Plans	--TODO: This was taken from classic Wowhead
 	[20985] = "푸석푸석한 흙더미",	-- Loose Dirt

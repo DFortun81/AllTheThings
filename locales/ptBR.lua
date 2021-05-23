@@ -1109,7 +1109,6 @@ for key,value in pairs({
 	[261] = "Caixote Danificado",	-- Damaged Crate
 	[270] = "Barril de Cerveja do Trovão Desprotegido",	-- Unguarded Thunder Ale Barrel	--TODO: This was taken from classic Wowhead
 	[711] = "Procura-se!",	-- Wanted!	--TODO: This was taken from classic Wowhead
-	--TODO: [908] = "",	--
 	[1593] = "Barco Cheio de Cadáveres",	-- Corpse Laden Boat	--TODO: This was taken from classic Wowhead
 	[1599] = "Cova Rasa",	-- Shallow Grave	--TODO: This was taken from classic Wowhead
 	[1627] = "Caixote de Dalaran",	-- Dalaran Crate
@@ -1123,7 +1122,6 @@ for key,value in pairs({
 	[2701] = "Fragmentos Iridescentes",	-- Iridescent Shards
 	[2702] = "Pedra da União Interna",	-- Stone of Inner Binding
 	[2703] = "Tumba de Matatroll",	-- Trollbane's Tomb	--TODO: This was taken from classic Wowhead
-	--TODO: [2706] = "",	--
 	[2713] = "Quadro de Procurados",	-- Wanted Board
 	[3238] = "Barril Vazio do Chen",	-- Chen's Empty Keg	--TODO: This was taken from classic Wowhead
 	[3972] = "PROCURA-SE",	-- WANTED
@@ -1131,9 +1129,6 @@ for key,value in pairs({
 	[6751] = "Planta Frutífera Estranha",	-- Strange Fruited Plant
 	[6752] = "Planta Frondosa Estranha",	-- Strange Fronded Plant
 	[7510] = "Fronde Desenvolvida",	-- Sprouted Frond
-	--TODO: [10879] = "",	--
-	--TODO: [10880] = "",	--
-	--TODO: [10881] = "",	--
 	[19023] = "|cFFFFFFFFStep 7:|r Página 2351",	-- |cFFFFFFFFStep 7:|r Page 2351
 	[20805] = "Projeto Desprotegido do Rebu",	-- Rizzle's Unguarded Plans	--TODO: This was taken from classic Wowhead
 	[20985] = "Terra Solta",	-- Loose Dirt
