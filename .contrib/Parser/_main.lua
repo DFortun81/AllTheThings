@@ -230,6 +230,7 @@ ALL_CLASSES = {	-- NOTE: Use this with the exclude function.
 -- Headers
 ACHIEVEMENTS = -4
 COMMON_BOSS_DROPS = -1;
+DISCOVERY = -37;
 EXPLORATION = -15;
 FACTIONS = -6013;
 FLIGHT_PATHS = -228;
@@ -749,6 +750,9 @@ battlepet = function(id, t)								-- Create a BATTLE PET Object (Battle Pet == 
 	return struct("speciesID", id, t);
 end
 cat = function(id, t)									-- Create a CATEGORY Object.
+	return struct("categoryID", id, t);
+end
+category = function(id, t)								-- Create a CATEGORY Object.
 	return struct("categoryID", id, t);
 end
 p = battlepet;											-- Create a BATTLE PET Object (alternative shortcut)

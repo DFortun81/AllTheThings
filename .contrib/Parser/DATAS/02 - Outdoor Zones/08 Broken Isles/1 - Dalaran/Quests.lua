@@ -1342,10 +1342,6 @@ _.Zones =
 					["coord"] = { 28.4, 48.3, 627 },
 					["provider"] = { "n", 90417 },	-- Archmage Khadgar
 				}),
-				q(43535, {	-- Translation: Danger!
-					["classes"] = { PALADIN },
-					["provider"] = { "n", 110571 },	-- Delas Moonfang
-				}),
 				q(39861, {	-- Tying Up Loose Ends
 					["sourceQuests"] = { 39731 },	-- The Tranquil Forest
 					["coord"] = { 70.1, 43.7, 627 },

@@ -1,10 +1,8 @@
 profession(INSCRIPTION, {
-	n(-37, {	-- Discovery
-		["groups"] = {
-			i(172450, {	-- Technique: Glyph of Lavish Servings
-				["description"] = "A Mage inscriptionist with 175 skill (BfA) has a chance to create this recipe when conjuring their refreshment table. Other classes must get it from a Mage or the auction house.",
-			}),
-		},
+	n(DISCOVERY, {
+		i(172450, {	-- Technique: Glyph of Lavish Servings
+			["description"] = "A Mage inscriptionist with 175 skill (BfA) has a chance to create this recipe when conjuring their refreshment table. Other classes must get it from a Mage or the auction house.",
+		}),
 	}),
 	n(-26, {	-- Drop
 		q(36239, {	-- A Mysterious Satchel

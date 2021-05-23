@@ -3,7 +3,7 @@ profession(ALCHEMY, {
 				{
 			["categoryID"] = 600--[[Alchemy of Northrend]],
 			["g"] = {
-				n(-37, {	-- Discovery
+				n(DISCOVERY, {
 					["g"] = bubbleDown({ ["description"] = "This recipe can be discovered randomly by crafting any Wrath of the Lich King+ transmutation." }, {
 						recipe(53777),	-- Transmute: Eternal Air to Earth
 							recipe(53776),	-- Transmute: Eternal Air to Water

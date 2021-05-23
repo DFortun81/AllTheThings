@@ -152,9 +152,44 @@ namespace ATT
         public static Dictionary<object, bool> HORDE_ONLY_DICT;
 
         /// <summary>
+        /// All of the Category Icons that have been loaded into the database.
+        /// NOTE: For the purpose of creating a sorted list.
+        /// </summary>
+        private static Dictionary<long, string> CATEGORY_ICONS = new Dictionary<long, string>();
+
+        /// <summary>
+        /// All of the Category Names that have been loaded into the database.
+        /// NOTE: For the purpose of creating a sorted list.
+        /// </summary>
+        private static Dictionary<long, string> CATEGORY_NAMES = new Dictionary<long, string>();
+
+        /// <summary>
+        /// All of the Category IDs that have been referenced somewhere in the database.
+        /// </summary>
+        private static Dictionary<long, bool> CATEGORY_WITH_REFERENCES = new Dictionary<long, bool>();
+
+        /// <summary>
         /// All of the NPC IDs that have been referenced somewhere in the database.
         /// </summary>
         private static IDictionary<long, bool> NPCS_WITH_REFERENCES = new Dictionary<long, bool>();
+
+        /// <summary>
+        /// All of the Object Icons that have been loaded into the database.
+        /// NOTE: For the purpose of creating a sorted list.
+        /// </summary>
+        private static Dictionary<long, string> OBJECT_ICONS = new Dictionary<long, string>();
+
+        /// <summary>
+        /// All of the Object Models that have been loaded into the database.
+        /// NOTE: For the purpose of creating a sorted list.
+        /// </summary>
+        private static Dictionary<long, long> OBJECT_MODELS = new Dictionary<long, long>();
+
+        /// <summary>
+        /// All of the Object Names that have been loaded into the database.
+        /// NOTE: For the purpose of creating a sorted list.
+        /// </summary>
+        private static Dictionary<long, string> OBJECT_NAMES = new Dictionary<long, string>();
 
         /// <summary>
         /// All of the Object IDs that have been referenced somewhere in the database.
@@ -323,17 +358,18 @@ namespace ATT
                 // only modID if it's a real item and real modID
                 data["modID"] = modID;
             }
-            if (data.TryGetValue("npcID", out long npcID))
+            if (data.TryGetValue("categoryID", out long categoryID)) ProcessCategoryObject(data, categoryID);
+            if (data.TryGetValue("creatureID", out long creatureID))
             {
-                NPCS_WITH_REFERENCES[npcID] = true;
+                NPCS_WITH_REFERENCES[creatureID] = true;
             }
-            if (data.TryGetValue("creatureID", out npcID))
+            if (data.TryGetValue("npcID", out creatureID))
             {
-                NPCS_WITH_REFERENCES[npcID] = true;
+                NPCS_WITH_REFERENCES[creatureID] = true;
             }
-            if (data.TryGetValue("qg", out npcID))
+            if (data.TryGetValue("qg", out creatureID))
             {
-                NPCS_WITH_REFERENCES[npcID] = true;
+                NPCS_WITH_REFERENCES[creatureID] = true;
             }
             if (data.TryGetValue("qgs", out List<object> qgs))
             {
@@ -343,11 +379,8 @@ namespace ATT
             {
                 foreach (var qg in qgs) NPCS_WITH_REFERENCES[Convert.ToInt64(qg)] = true;
             }
-            if (data.TryGetValue("objectID", out npcID))
-            {
-                OBJECTS_WITH_REFERENCES[npcID] = true;
-            }
-            if (data.TryGetValue("artifactID", out npcID) && !data.ContainsKey("s") && Objects.ArtifactSources.TryGetValue(npcID, out Dictionary<string, long> sources))
+            if (data.TryGetValue("objectID", out creatureID)) ProcessObjectInstance(data, creatureID);
+            if (data.TryGetValue("artifactID", out creatureID) && !data.ContainsKey("s") && Objects.ArtifactSources.TryGetValue(creatureID, out Dictionary<string, long> sources))
             {
                 // off-hand artifact source
                 if (data.ContainsKey("isOffHand"))
@@ -698,6 +731,106 @@ namespace ATT
             }
 
             return true;
+        }
+
+        /// <summary>
+        /// Process the Category Object.
+        /// </summary>
+        /// <param name="data">The Category data.</param>
+        /// <param name="categoryID">The Category ID.</param>
+        private static void ProcessCategoryObject(Dictionary<string, object> data, long categoryID)
+        {
+            CATEGORY_WITH_REFERENCES[categoryID] = true;
+            if (!CATEGORY_ICONS.ContainsKey(categoryID) && data.TryGetValue("icon", out string icon))
+            {
+                // Assign the icon and then inform the engineer.
+                CATEGORY_ICONS[categoryID] = icon.Replace("\\", "/");
+                Trace.Write("CATEGORY ICON MISSING FOR ");
+                Trace.Write(categoryID);
+                Trace.Write(": ASSIGNED ");
+                Trace.Write(icon);
+                Trace.WriteLine(" FROM SOURCE.");
+                if (!Framework.DebugMode)
+                {
+                    Trace.WriteLine("Activating Debug Mode!");
+                    Trace.WriteLine("Update CategoriesDB.lua from the Debugging folder.");
+                    Framework.DebugMode = true;
+                }
+            }
+            if (!CATEGORY_NAMES.ContainsKey(categoryID) && data.TryGetValue("name", out string name))
+            {
+                // Assign the name and then inform the engineer.
+                CATEGORY_NAMES[categoryID] = name;
+                Trace.Write("CATEGORY NAME MISSING FOR ");
+                Trace.Write(categoryID);
+                Trace.Write(": ASSIGNED ");
+                Trace.Write(name);
+                Trace.WriteLine(" FROM SOURCE.");
+                if (!Framework.DebugMode)
+                {
+                    Trace.WriteLine("Activating Debug Mode!");
+                    Trace.WriteLine("Update CategoriesDB.lua from the Debugging folder.");
+                    Framework.DebugMode = true;
+                }
+            }
+        }
+
+        /// <summary>
+        /// Process the Object Instance.
+        /// </summary>
+        /// <param name="data">The Object data.</param>
+        /// <param name="objectID">The Object ID.</param>
+        private static void ProcessObjectInstance(Dictionary<string, object> data, long objectID)
+        {
+            OBJECTS_WITH_REFERENCES[objectID] = true;
+            if (!OBJECT_ICONS.ContainsKey(objectID) && data.TryGetValue("icon", out string icon))
+            {
+                // Assign the icon and then inform the engineer.
+                OBJECT_ICONS[objectID] = icon.Replace("\\", "/");
+                Trace.Write("OBJECT ICON MISSING FOR ");
+                Trace.Write(objectID);
+                Trace.Write(": ASSIGNED ");
+                Trace.Write(icon);
+                Trace.WriteLine(" FROM SOURCE.");
+                if (!Framework.DebugMode)
+                {
+                    Trace.WriteLine("Activating Debug Mode!");
+                    Trace.WriteLine("Update NPCDB.lua from the Debugging folder.");
+                    Framework.DebugMode = true;
+                }
+            }
+            if (!OBJECT_MODELS.ContainsKey(objectID) && data.TryGetValue("model", out long model))
+            {
+                // Assign the model and then inform the engineer.
+                OBJECT_MODELS[objectID] = model;
+                Trace.Write("OBJECT ICON MISSING FOR ");
+                Trace.Write(objectID);
+                Trace.Write(": ASSIGNED ");
+                Trace.Write(model);
+                Trace.WriteLine(" FROM SOURCE.");
+                if (!Framework.DebugMode)
+                {
+                    Trace.WriteLine("Activating Debug Mode!");
+                    Trace.WriteLine("Update NPCDB.lua from the Debugging folder.");
+                    Framework.DebugMode = true;
+                }
+            }
+            if (!OBJECT_NAMES.ContainsKey(objectID) && data.TryGetValue("name", out string name))
+            {
+                // Assign the name and then inform the engineer.
+                OBJECT_NAMES[objectID] = name;
+                Trace.Write("OBJECT NAME MISSING FOR ");
+                Trace.Write(objectID);
+                Trace.Write(": ASSIGNED ");
+                Trace.Write(name);
+                Trace.WriteLine(" FROM SOURCE.");
+                if (!Framework.DebugMode)
+                {
+                    Trace.WriteLine("Activating Debug Mode!");
+                    Trace.WriteLine("Update NPCDB.lua from the Debugging folder.");
+                    Framework.DebugMode = true;
+                }
+            }
         }
 
         /// <summary>
@@ -2000,6 +2133,76 @@ namespace ATT
                             }
                         }
                         break;
+                    case "CategoryIcons":
+                        {
+                            // The format of the Category Icons DB is a dictionary of Category ID <-> Icon pairs.
+                            // This is slightly more annoying to parse, but it works okay.
+                            foreach (var o in data)
+                            {
+                                // KEY: Category ID, VALUE: Icon
+                                if (o.Key is long id && o.Value is string name)
+                                {
+                                    CATEGORY_ICONS[id] = name;
+                                }
+                            }
+                            break;
+                        }
+                    case "CategoryNames":
+                        {
+                            // The format of the Category Names DB is a dictionary of Category ID <-> Name pairs.
+                            // This is slightly more annoying to parse, but it works okay.
+                            foreach (var o in data)
+                            {
+                                // KEY: Category ID, VALUE: Name
+                                if (o.Key is long id && o.Value is string name)
+                                {
+                                    CATEGORY_NAMES[id] = name;
+                                }
+                            }
+                            break;
+                        }
+                    case "ObjectIcons":
+                        {
+                            // The format of the Object Icons DB is a dictionary of Object ID <-> Icon pairs.
+                            // This is slightly more annoying to parse, but it works okay.
+                            foreach (var o in data)
+                            {
+                                // KEY: Object ID, VALUE: Icon
+                                if (o.Key is long id && o.Value is string name)
+                                {
+                                    OBJECT_ICONS[id] = name;
+                                }
+                            }
+                            break;
+                        }
+                    case "ObjectModels":
+                        {
+                            // The format of the Object Models DB is a dictionary of Object ID <-> Model ID pairs.
+                            // This is slightly more annoying to parse, but it works okay.
+                            foreach (var o in data)
+                            {
+                                // KEY: Object ID, VALUE: Model ID
+                                if (o.Key is long id && o.Value is long modelID)
+                                {
+                                    OBJECT_MODELS[id] = modelID;
+                                }
+                            }
+                            break;
+                        }
+                    case "ObjectNames":
+                        {
+                            // The format of the Object Names DB is a dictionary of Object ID <-> Name pairs.
+                            // This is slightly more annoying to parse, but it works okay.
+                            foreach (var o in data)
+                            {
+                                // KEY: Object ID, VALUE: Name
+                                if (o.Key is long id && o.Value is string name)
+                                {
+                                    OBJECT_NAMES[id] = name;
+                                }
+                            }
+                            break;
+                        }
                     default:
                         {
                             // Parse a Source DB Container
@@ -2285,7 +2488,159 @@ namespace ATT
                     Items.ExportDebug(debugFolder.FullName);
                     Objects.ExportDebug(debugFolder.FullName);
                     Objects.ExportDB(debugFolder.FullName);
+
+                    // Export the Category DB file.
+                    if (CATEGORY_NAMES.Any())
+                    {
+                        var builder = new StringBuilder("---------------------------------------------------------\n--   C A T E G O R Y   D A T A B A S E   M O D U L E   --\n---------------------------------------------------------\n");
+                        var keys = CATEGORY_NAMES.Keys.ToList();
+                        keys.Sort();
+                        builder.Append("_.CategoryNames = {").AppendLine();
+                        foreach (var key in keys)
+                        {
+                            var name = CATEGORY_NAMES[key];
+                            builder.Append("\t[").Append(key).Append("] = ");
+                            if (name.StartsWith("GetSpellInfo") || name.StartsWith("GetItem") || name.StartsWith("select(") || name.StartsWith("~"))
+                            {
+                                builder.Append("[[").Append(name).Append("]],").AppendLine();
+                            }
+                            else builder.Append("\"").Append(name).Append("\",").AppendLine();
+                        }
+                        builder.AppendLine("};");
+                        keys = CATEGORY_ICONS.Keys.ToList();
+                        keys.Sort();
+                        builder.Append("_.CategoryIcons = {").AppendLine();
+                        foreach (var key in keys)
+                        {
+                            builder.Append("\t[").Append(key).Append("] = \"").Append(CATEGORY_ICONS[key]).Append("\",");
+                            if (CATEGORY_NAMES.TryGetValue(key, out string name)) builder.Append("\t-- ").Append(name);
+                            builder.AppendLine();
+                        }
+                        builder.AppendLine("};");
+                        File.WriteAllText(Path.Combine(debugFolder.FullName, "CategoryDB.lua"), builder.ToString());
+                    }
+
+                    // Export the Object DB file.
+                    if (OBJECT_NAMES.Any())
+                    {
+                        var builder = new StringBuilder("-----------------------------------------------------\n--   O B J E C T   D A T A B A S E   M O D U L E   --\n-----------------------------------------------------\n");
+                        var keys = OBJECT_NAMES.Keys.ToList();
+                        keys.Sort();
+                        builder.Append("_.ObjectNames = {").AppendLine();
+                        foreach (var key in keys)
+                        {
+                            var name = OBJECT_NAMES[key];
+                            builder.Append("\t[").Append(key).Append("] = ");
+                            if (name.StartsWith("GetSpellInfo") || name.StartsWith("GetItem") || name.StartsWith("select(") || name.StartsWith("~"))
+                            {
+                                builder.Append("[[").Append(name).Append("]],").AppendLine();
+                            }
+                            else builder.Append("\"").Append(name).Append("\",").AppendLine();
+                        }
+                        builder.AppendLine("};");
+                        keys = OBJECT_ICONS.Keys.ToList();
+                        keys.Sort();
+                        builder.Append("_.ObjectIcons = {").AppendLine();
+                        foreach (var key in keys)
+                        {
+                            builder.Append("\t[").Append(key).Append("] = \"").Append(OBJECT_ICONS[key]).Append("\",");
+                            if (OBJECT_NAMES.TryGetValue(key, out string name)) builder.Append("\t-- ").Append(name);
+                            builder.AppendLine();
+                        }
+                        builder.AppendLine("};");
+                        keys = OBJECT_MODELS.Keys.ToList();
+                        keys.Sort();
+                        builder.Append("_.ObjectModels = {").AppendLine();
+                        foreach (var key in keys)
+                        {
+                            builder.Append("\t[").Append(key).Append("] = ").Append(OBJECT_MODELS[key]).Append(",");
+                            if (OBJECT_NAMES.TryGetValue(key, out string name)) builder.Append("\t-- ").Append(name);
+                            builder.AppendLine();
+                        }
+                        builder.AppendLine("};");
+                        File.WriteAllText(Path.Combine(debugFolder.FullName, "ObjectDB.lua"), builder.ToString());
+                    }
                 }
+            }
+
+            // Export the Category DB file, but only Categories that have references in the addon.
+            if (CATEGORY_NAMES.Any())
+            {
+                var builder = new StringBuilder("---------------------------------------------------------\n--   C A T E G O R Y   D A T A B A S E   M O D U L E   --\n---------------------------------------------------------\n");
+                var keys = CATEGORY_NAMES.Keys.ToList();
+                keys.Sort();
+                builder.Append("select(2, ...).CategoryNames = {").AppendLine();
+                foreach (var key in keys)
+                {
+                    if (CATEGORY_WITH_REFERENCES.ContainsKey(key))
+                    {
+                        var name = CATEGORY_NAMES[key];
+                        builder.Append("\t[").Append(key).Append("] = ");
+                        if (name.StartsWith("GetSpellInfo") || name.StartsWith("GetItem") || name.StartsWith("select(") || name.StartsWith("~"))
+                        {
+                            builder.Append(name).Append(",").AppendLine();
+                        }
+                        else builder.Append("\"").Append(name).Append("\",").AppendLine();
+                    }
+                }
+                builder.AppendLine("};");
+                keys = CATEGORY_ICONS.Keys.ToList();
+                keys.Sort();
+                builder.Append("select(2, ...).CategoryIcons = {").AppendLine();
+                foreach (var key in keys)
+                {
+                    if (CATEGORY_WITH_REFERENCES.ContainsKey(key))
+                    {
+                        builder.Append("\t[").Append(key).Append("] = \"").Append(CATEGORY_ICONS[key]).Append("\",").AppendLine();
+                    }
+                }
+                builder.AppendLine("};");
+                File.WriteAllText(Path.Combine(addonRootFolder, "db/CategoryDB.lua"), builder.ToString());
+            }
+
+            // Export the Object DB file.
+            if (OBJECT_NAMES.Any())
+            {
+                var builder = new StringBuilder("-------------------------------------------------------\n--   O B J E C T   D A T A B A S E   M O D U L E   --\n-------------------------------------------------------\n");
+                var keys = OBJECT_NAMES.Keys.ToList();
+                keys.Sort();
+                builder.Append("select(2, ...).ObjectNames = {").AppendLine();
+                foreach (var key in keys)
+                {
+                    if (OBJECTS_WITH_REFERENCES.ContainsKey(key))
+                    {
+                        var name = OBJECT_NAMES[key];
+                        builder.Append("\t[").Append(key).Append("] = ");
+                        if (name.StartsWith("GetSpellInfo") || name.StartsWith("GetItem") || name.StartsWith("select(") || name.StartsWith("~"))
+                        {
+                            builder.Append(name).Append(",").AppendLine();
+                        }
+                        else builder.Append("\"").Append(name).Append("\",").AppendLine();
+                    }
+                }
+                builder.AppendLine("};");
+                keys = OBJECT_ICONS.Keys.ToList();
+                keys.Sort();
+                builder.Append("select(2, ...).ObjectIcons = {").AppendLine();
+                foreach (var key in keys)
+                {
+                    if (OBJECTS_WITH_REFERENCES.ContainsKey(key))
+                    {
+                        builder.Append("\t[").Append(key).Append("] = \"").Append(OBJECT_ICONS[key]).Append("\",").AppendLine();
+                    }
+                }
+                builder.AppendLine("};");
+                keys = OBJECT_MODELS.Keys.ToList();
+                keys.Sort();
+                builder.Append("select(2, ...).ObjectModels = {").AppendLine();
+                foreach (var key in keys)
+                {
+                    if (OBJECTS_WITH_REFERENCES.ContainsKey(key))
+                    {
+                        builder.Append("\t[").Append(key).Append("] = ").Append(OBJECT_MODELS[key]).Append(",").AppendLine();
+                    }
+                }
+                builder.AppendLine("};"); File.WriteAllText(Path.Combine(addonRootFolder, "db/ObjectDB.lua"), builder.ToString());
             }
 
             // Setup the output folder (/db)

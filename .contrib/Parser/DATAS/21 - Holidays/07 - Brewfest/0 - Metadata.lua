@@ -5,7 +5,6 @@
 _.Holidays =
 {
 	holiday(235442, {	-- Brewfest
-		["icon"] = "Interface\\Icons\\inv_misc_beer_01",
 		["u"] = 24,	-- Brewfest
 	}),
 };

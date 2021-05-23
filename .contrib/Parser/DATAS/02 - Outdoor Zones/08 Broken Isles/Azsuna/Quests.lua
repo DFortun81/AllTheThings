@@ -871,7 +871,6 @@ _.Zones =
 				q(38950),	-- The Wayward Tailor
 				q(43581),	-- The Wisdom of Patience
 				q(37963),	-- Those Beyond Redemption
-				q(43489),	-- To Felblaze Ingress
 				q(47064),	-- Tracking Quest
 				q(44081),	-- Treacherous Leyrunners
 				q(37649),	-- Treasure: Offerings for the Giants

@@ -3,7 +3,7 @@ profession(ALCHEMY, {
 		{
 			["categoryID"] = 592,  -- Zandalari Alchemy
 			["g"] = {
-				n(-37, {    -- Discovery
+				n(DISCOVERY, {
 					["g"] = {
 						{	-- Sanguinated Alchemist Stone
 							["spellID"] = 291084,	-- Sanguinated Alchemist Stone

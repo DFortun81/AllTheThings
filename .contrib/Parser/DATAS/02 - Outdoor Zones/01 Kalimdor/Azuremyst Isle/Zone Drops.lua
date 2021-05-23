@@ -6,6 +6,9 @@ _.Zones =
 	m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 		m(AZUREMYST_ISLE, {
 			n(ZONEDROPS, {
+				i(23909, {	-- Blood Elf Bandit Mask
+					["cr"] = 17591,	-- Blood Elf Bandit
+				}),
 				i(23910, {	-- Blood Elf Communications
 					["cr"] = 17591,	-- Blood Elf Bandit
 					["coords"] = {
@@ -23,9 +26,15 @@ _.Zones =
 					},
 					["races"] = ALLIANCE_ONLY,
 				}),
-				i(23801),	-- Bristlelimb Key
+				i(23801, {	-- Bristlelimb Key
+					["crs"] = {
+						17183,	-- Bristlelimb Furbolg
+						17185,	-- Bristlelimb Ursa
+						17184,	-- Bristlelimb Windcaller
+					},
+				}),
 				i(23678, {	-- Faintly Glowing Crystal
-					["cr"] = 17202,	-- Infected Nightstalker Runt
+					["cr"] = 17202,	-- Infected Nightstalker Runt)
 					["coords"] = {
 						{ 45.6, 45.0, AZUREMYST_ISLE },
 						{ 26.8, 48.0, AZUREMYST_ISLE },
@@ -44,7 +53,7 @@ _.Zones =
 					},
 					["races"] = ALLIANCE_ONLY,
 				}),
-				i(23676, {	-- Moongraze Buck Hide
+				i(23677, {	-- Moongraze Buck Hide
 					["cr"] = 17201,	-- Moongraze Buck
 				}),
 				i(23676, {	-- Moongraze Stag Tenderloin
@@ -66,6 +75,10 @@ _.Zones =
 						17187,	-- Aberrant Owlbeast
 						17186,	-- Deranged Owlbeast
 					},
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(23733, {	-- Ritual Torch
+					["cr"] = 17189,	-- Crazed Wildkin
 					["races"] = ALLIANCE_ONLY,
 				}),
 				i(23685, {	-- Root Trapper Vine

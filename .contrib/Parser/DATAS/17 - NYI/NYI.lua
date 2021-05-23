@@ -2079,7 +2079,11 @@ _.NeverImplemented =
 			i(125044),	-- Wild Combatant's Accolade of conquest
 			i(125046),	-- Wild Combatant's Accolade of Victory
 			i(125048),	-- Wild Combatant's Accolade of Endurance
-			
+			i(124871),	-- Wild Gladiator's Accolade of Dominance
+			i(124874),	-- Wild Gladiator's Accolade of Endurance
+			i(124870),	-- Wild Gladiator's Accolade of conquest
+			i(124872),	-- Wild Gladiator's Accolade of victory
+			i(124873),	-- Wild Gladiator's Accolade of meditation
 			i(125522),	-- Wild Combatant's Accolade of Dominance
 			i(125524),	-- Wild Combatant's Accolade of Meditation
 			i(125521),	-- Wild Combatant's Accolade of conquest
@@ -3568,44 +3572,6 @@ _.NeverImplemented =
 			i(141061),	-- Technique: Glyph of the Abyssal (Item never made it into the game)
 			i(141065),	-- Technique: Glyph of the Terrorguard (Item never made it into the game)
 			i(169550),	-- "REUSE ME [MTMM]"
-		}),
-		prof(JEWELCRAFTING, {
-			{	-- Arcanite Sword Pendant
-				["itemID"] = 21793,	-- Arcanite Sword Pendant
-				["timeline"] = {
-					"created 2.1.3.6898",	-- Never Implemented
-				},
-			},
-			{	-- Design: Blood Crown
-				["itemID"] = 21959,	-- Design: Blood Crown
-				["timeline"] = {
-					"created 2.1.3.6898",	-- Never Implemented
-				},
-			},
-			{	-- Blood Crown
-				["itemID"] = 21780,	-- Blood Crown
-				["timeline"] = {
-					"created 2.1.3.6898",	-- Never Implemented
-				},
-			},
-			{	-- Design: Primal Stone Statue
-				["itemID"] = 25888,	-- Design: Primal Stone Statue
-				["timeline"] = {
-					"created 4.0.3.13287",	-- Never Implemented
-				},
-			},
-			{	-- Design: Silver Rose Pendant
-				["itemID"] = 20972,	-- Design: Silver Rose Pendant
-				["timeline"] = {
-					"created 2.1.3.6898",	-- Never Implemented
-				},
-			},
-			{	-- Silver Rose Pendant
-				["itemID"] = 20956,	-- Silver Rose Pendant
-				["timeline"] = {
-					"created 2.1.3.6898",	-- Never Implemented
-				},
-			},
 		}),
 		prof(LEATHERWORKING, {
 			{	-- Pattern: Cloak of Beasts

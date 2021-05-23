@@ -131,7 +131,6 @@ _.Zones =
 				q(9603, {	-- Beds, Bandages, and Beyond
 					["qg"] = 16553,	-- Caregiver Chellan
 					["coord"] = { 48.3, 49.1, AZUREMYST_ISLE },
-					["timeline"] = { "added 3.3.0.10772" },
 					["cost"] = {
 						{ "i", 23902, 1 },	-- Chellan's List
 					},
@@ -141,7 +140,12 @@ _.Zones =
 				-- #endif
 				q(10350, {	-- Behomat
 					["qg"] = 17480,	-- Ruada
-					["sourceQuest"] = 9582,	-- Strength of One
+					["sourceQuests"] = {
+						1638,	-- A Warrior's Training
+						1684,	-- Elanaria
+						1679,	-- Muren Stormpike
+						9582,	-- Strength of One
+					},
 					["coord"] = { 49.8, 50.4, AZUREMYST_ISLE },
 					["maps"] = { THE_EXODAR },
 					["classes"] = { WARRIOR },
@@ -154,7 +158,7 @@ _.Zones =
 						i(23430),	-- Mercenary Sword
 						-- #if BEFORE CATA
 						recipe(71),		-- Defensive Stance
-						recipe(7386),	-- Sunder Armor
+						--recipe(7386),	-- Sunder Armor	[TODO: Users are reporting they can't collect this.]
 						recipe(355),	-- Taunt
 						-- #endif
 					},
@@ -167,12 +171,104 @@ _.Zones =
 					["model"] = 191579,
 					["lvl"] = lvlsquish(9, 1, 9),
 				}),
+				q(9462, {	-- Call of Fire (1/4)
+					["qg"] = 17219,	-- Sulaa <Shaman Trainer>
+					["coord"] = { 32.3, 23.9, THE_EXODAR },
+					["timeline"] = { "removed 4.0.3.10000" },
+					["maps"] = { THE_EXODAR },
+					["classes"] = { SHAMAN },
+					["races"] = { DRAENEI },
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(10, 1, 10),
+				}),
+				q(9464, {	-- Call of Fire (2/4)
+					["qg"] = 17212,	-- Tuluun <Shaman Trainer>
+					["sourceQuest"] = 9462,	-- Call of Fire (1/4)
+					["coord"] = { 48.0, 50.4, AZUREMYST_ISLE },
+					["timeline"] = { "removed 4.0.3.10000" },
+					["classes"] = { SHAMAN },
+					["races"] = { DRAENEI },
+					["lvl"] = lvlsquish(10, 1, 10),
+				}),
+				q(9465, {	-- Call of Fire (3/4)
+					["qg"] = 17205,	-- Temper
+					["sourceQuest"] = 9464,	-- Call of Fire (2/4)
+					["coord"] = { 59.5, 18.1, AZUREMYST_ISLE },
+					["timeline"] = { "removed 4.0.3.10000" },
+					["cost"] = {
+						{ "i", 23733, 1 },	-- Ritual Torch
+					},
+					["classes"] = { SHAMAN },
+					["races"] = { DRAENEI },
+					["lvl"] = lvlsquish(10, 1, 10),
+				}),
+				q(9467, {	-- Call of Fire (4/4)
+					["qg"] = 17205,	-- Temper
+					["sourceQuest"] = 9465,	-- Call of Fire (3/4)
+					["coord"] = { 59.5, 18.1, AZUREMYST_ISLE },
+					["timeline"] = { "removed 4.0.3.10000" },
+					["cost"] = {
+						{ "i", 23688, 1 },	-- Hauteur's Ashes
+						{ "i", 23682, 1 },	-- Ritual Torch
+					},
+					["classes"] = { SHAMAN },
+					["races"] = { DRAENEI },
+					["lvl"] = lvlsquish(10, 1, 10),
+					["groups"] = {
+						objective(1, {	-- 0/1 Hauteur's Ashes
+							["provider"] = { "i", 23688 },	-- Hauteur's Ashes
+							["coord"] = { 11.4, 82.2, AZUREMYST_ISLE },
+							["cr"] = 17206,	-- Hauteur
+							["cost"] = {
+								{ "i", 23682, 1 },	-- Ritual Torch
+							},
+						}),
+						i(24336, {	-- Fireproof Satchel
+							i(24335),	-- Orb of Returning
+							i(23682),	-- Ritual Torch
+						}),
+					},
+				}),
+				q(9468, {	-- Call of Fire (5/4)
+					["qg"] = 17205,	-- Temper
+					["sourceQuest"] = 9467,	-- Call of Fire (4/4)
+					["coord"] = { 59.5, 18.1, AZUREMYST_ISLE },
+					["timeline"] = { "removed 4.0.3.10000" },
+					["cost"] = {
+						{ "i", 23688, 1 },	-- Hauteur's Ashes
+					},
+					["classes"] = { SHAMAN },
+					["races"] = { DRAENEI },
+					["lvl"] = lvlsquish(10, 1, 10),
+				}),
+				q(9461, {	-- Call of Fire (6/4)
+					["qg"] = 17212,	-- Tuluun <Shaman Trainer>
+					["sourceQuest"] = 9468,	-- Call of Fire (5/4)
+					["coord"] = { 48.0, 50.4, AZUREMYST_ISLE },
+					["timeline"] = { "removed 4.0.3.10000" },
+					["classes"] = { SHAMAN },
+					["races"] = { DRAENEI },
+					["lvl"] = lvlsquish(10, 1, 10),
+				}),
+				q(9555, {	-- Call of Fire (7/4)
+					["qg"] = 17468,	-- Prophet Velen
+					["sourceQuest"] = 9461,	-- Call of Fire (6/4)
+					["coord"] = { 32.9, 54.5, THE_EXODAR },
+					["maps"] = { THE_EXODAR },
+					["timeline"] = { "removed 4.0.3.10000" },
+					["classes"] = { SHAMAN },
+					["races"] = { DRAENEI },
+					["lvl"] = lvlsquish(10, 1, 10),
+					["groups"] = {
+						recipe(3599),	-- Searing Totem
+						i(5176, {	-- Fire Totem
+							["description"] = "You must keep this in your bags forever.",
+						}),
+					},
+				}),
 				q(9573, {	-- Chieftain Oomooroo
 					["qg"] = 17445,	-- Stillpine the Younger
-					["sourceQuests"] = {
-						9560,	-- Beasts of the Apocalypse
-						9562,	-- Murlocs... Why Here? Why Now?
-					},
+					["sourceQuest"] = 9562,	-- Murlocs... Why Here? Why Now?
 					["coord"] = { 46.8, 21.2, AZUREMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(7, 1, 7),
@@ -346,7 +442,6 @@ _.Zones =
 					["qg"] = 43991,	-- Zaldaan
 					["sourceQuest"] = 9603,	-- Beds, Bandages, and Beyond
 					["coord"] = { 49.7, 49.1, AZUREMYST_ISLE },
-					["timeline"] = { "added 3.3.0.10772" },
 					["cost"] = {
 						{ "i", 23902, 1 },	-- Chellan's List
 					},
@@ -391,10 +486,7 @@ _.Zones =
 				}),
 				q(9565, {	-- Search Stillpine Hold
 					["qg"] = 17440,	-- High Chief Stillpine
-					["sourceQuests"] = {
-						9560,	-- Beasts of the Apocalypse
-						9562,	-- Murlocs... Why Here? Why Now?
-					},
+					["sourceQuest"] = 9562,	-- Murlocs... Why Here? Why Now?
 					["coord"] = { 46.6, 20.6, AZUREMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(9, 1, 9),
@@ -431,6 +523,14 @@ _.Zones =
 				q(9582, {	-- Strength of One
 					["qg"] = 17480,	-- Ruada
 					["coord"] = { 49.8, 50.4, AZUREMYST_ISLE },
+					["altQuests"] = {
+						1665,	-- Bartleby's Mug
+						-- #if AFTER TBC
+						--9582,	-- Strength of One
+						-- #endif
+						1678,	-- Vejrek
+						1683,	-- Vorlus Vilehoof
+					},
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(10, 1, 10),
@@ -442,6 +542,11 @@ _.Zones =
 								{ "i", 23925, 1 },	-- Ravager Cage Key
 							},
 						}),
+						-- #if BEFORE CATA
+						recipe(71),		-- Defensive Stance
+						--recipe(7386),	-- Sunder Armor	[TODO: Users are reporting they can't collect this.]
+						recipe(355),	-- Taunt
+						-- #endif
 					},
 				}),
 				q(9454, {	-- The Great Moongraze Hunt (1/2)
@@ -478,10 +583,15 @@ _.Zones =
 				}),
 				q(9570, {	-- The Kurken is Lurkin'
 					["qg"] = 17443,	-- Kurz the Revelator
+					-- #if AFTER MOP
+					-- TODO: Double check this when MOP comes out.
 					["sourceQuests"] = {
 						9560,	-- Beasts of the Apocalypse
 						9562,	-- Murlocs... Why Here? Why Now?
 					},
+					-- #else
+					["sourceQuest"] = 9565,	-- Search Stillpine Hold
+					-- #endif
 					["coord"] = { 46.8, 22.2, AZUREMYST_ISLE },
 					["cost"] = {
 						{ "i", 23860, 1 },	-- The Kurken's Hide
@@ -526,6 +636,10 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(8, 1, 8),
 					["groups"] = {
+						objective(1, {	-- 0/8 Stillpine Captive Freed
+							["provider"] = { "i", 23801 },	-- Bristlelimb Key
+							["cr"] = 17375,	-- Stillpine Captive
+						}),
 						i(27399),	-- Stillpine Defender
 						i(27403),	-- Stillpine Stinger
 						i(27401),	-- Arugoo's Crossbow of Destruction

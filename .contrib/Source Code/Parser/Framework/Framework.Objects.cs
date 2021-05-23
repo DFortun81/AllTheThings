@@ -976,69 +976,6 @@ namespace ATT
                         }
                     }
                 }
-
-                // Lazily do the same thing, but for Objects.
-                content = File.ReadAllText("./../../locales/enUS.lua");
-                content = content.Substring(content.IndexOf("{", content.IndexOf("[\"OBJECT_ID_NAMES\"]")));
-                content = content.Substring(0, content.IndexOf('}'));
-
-                // Scan through for Header Localization. (we don't care about the actual name)
-                long objectID;
-                index = 0;
-                var allLocalizedObjects = new Dictionary<long, string>();
-                while ((index = content.IndexOf('[', index)) > -1)
-                {
-                    ++index;
-                    int endIndex = content.IndexOf(']', index);
-                    if (endIndex > -1 && long.TryParse(content.Substring(index, endIndex - index), out objectID))
-                    {
-                        int dataStartIndex = content.IndexOf('=', endIndex) + 1;
-                        int dataEndIndex = content.IndexOfAny(new char[] { '\r', '\n' }, dataStartIndex);
-                        allLocalizedObjects[objectID] = content.Substring(dataStartIndex, dataEndIndex - dataStartIndex).Trim();
-                    }
-                }
-
-                // Determine if any of the localized objects have no references.
-                if (allLocalizedObjects.Any())
-                {
-                    var sortedObjectIDs = allLocalizedObjects.Keys.ToList();
-                    sortedObjectIDs.Sort();
-                    sortedObjectIDs.Reverse();
-                    foreach (int sortedObjectID in sortedObjectIDs)
-                    {
-                        if (OBJECTS_WITH_REFERENCES.ContainsKey(sortedObjectID)) continue;
-                        Trace.Write("Object [");
-                        Trace.Write(sortedObjectID);
-                        Trace.WriteLine("] has no reference and should be removed.");
-                    }
-
-                    var missingLocalization = new List<long>();
-                    foreach (var pair in OBJECTS_WITH_REFERENCES)
-                    {
-                        if (allLocalizedObjects.ContainsKey(pair.Key)) continue;
-                        missingLocalization.Add(pair.Key);
-                    }
-                    if (missingLocalization.Any())
-                    {
-                        Trace.WriteLine("Missing Localization for Objects:");
-                        missingLocalization.Sort();
-                        foreach (int id in missingLocalization)
-                        {
-                            allLocalizedObjects[id] = "\"\",";
-                            Trace.Write(id);
-                            Trace.Write(',');
-                        }
-
-                        var allLocalizationIDs = allLocalizedObjects.Keys.ToList();
-                        allLocalizationIDs.Sort();
-                        var builder = new StringBuilder();
-                        foreach (var id in allLocalizationIDs)
-                        {
-                            builder.Append("\t\t[").Append(id).Append("] = ").Append(allLocalizedObjects[id]).AppendLine();
-                        }
-                        File.WriteAllText("localizedObjects.txt", builder.ToString());
-                    }
-                }
             }
 
             /// <summary>
@@ -1971,7 +1908,7 @@ namespace ATT
                             }
                             else if (newProvider.Item1 == "o")
                             {
-                                OBJECTS_WITH_REFERENCES[newProvider.Item2] = true;
+                                ProcessObjectInstance(item, newProvider.Item2);
                             }
                         }
                     }

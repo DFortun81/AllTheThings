@@ -436,6 +436,6 @@ _.IllusionDB = {
 		["itemID"] = 184352,
 		["illusionID"] = 6257,
 		["text"] = "Transcendent Soul",
-	--	["questID"] = ,
+		["questID"] = 62395,
 	},
 };

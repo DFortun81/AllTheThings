@@ -7,7 +7,7 @@ _.Craftables =
 	tier(5, {	-- Mists of Pandaria
 		prof(ALCHEMY, {
 --[[	20.Nov.2018 - automation should handle discovery. Leaving this here in case we change our mind later
-			n(-37, {	-- Discovery
+			n(DISCOVERY, {
 				["description"] = "These recipes can be discovered randomly by crafting Mists of Pandaria potions, elixirs, flasks or transmutations.",
 				["groups"] = {
 					recipe(114774),	-- Darkwater Potion

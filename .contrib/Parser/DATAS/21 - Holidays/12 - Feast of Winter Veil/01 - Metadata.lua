@@ -5,7 +5,6 @@
 _.Holidays = bubbleDown({["u"] = 29},
 {
 	holiday(235485, {	-- Feast of Winter Veil
-		["icon"] = asset("winter_veil"),
 		["maps"] = {
 			87,	-- Ironforge
 			85,	-- Orgrimmar

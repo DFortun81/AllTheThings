@@ -392,6 +392,7 @@ _.Zones =
 					["coord"] = { 45.4, 32.4, GHOSTLANDS },
 					["minReputation"] = { 922, FRIENDLY },	-- Tranquillien, Friendly.
 					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(9, 1, 9),
 				}),
 				q(9328, {	-- Hero of the Sin'dorei [Blood Elf Only]

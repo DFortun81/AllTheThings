@@ -5,7 +5,7 @@ _.Craftables =
 {
 	tier(7, {	-- Legion
 		prof(ALCHEMY, {
-			n(-37, {	-- Discovery
+			n(DISCOVERY, {
 				["requireSkill"] = ALCHEMY,
 				["groups"] = {
 					spell(188299, {	-- Ancient Healing Potion (Rank 2)
