@@ -6,11 +6,52 @@ _.Zones =
 	m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 		m(THE_EXODAR, {
 			n(QUESTS, {
+				q(10356, {	-- A Donation of Mageweave
+					["qg"] = 20604,	-- Dugiru <Alliance Cloth Quartermaster>
+					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth
+					["coord"] = { 63.5, 67.7, THE_EXODAR },
+					["timeline"] = { "removed 4.0.3.10000"},
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 40,
+				}),
+				q(10357, {	-- A Donation of Runecloth
+					["qg"] = 20604,	-- Dugiru <Alliance Cloth Quartermaster>
+					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
+					["coord"] = { 63.5, 67.7, THE_EXODAR },
+					["timeline"] = { "removed 4.0.3.10000"},
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 50,
+				}),
+				q(10354, {	-- A Donation of Silk
+					["qg"] = 20604,	-- Dugiru <Alliance Cloth Quartermaster>
+					["cost"] = { { "i", 4306, 60 } },	-- Silk Cloth
+					["coord"] = { 63.5, 67.7, THE_EXODAR },
+					["timeline"] = { "removed 4.0.3.10000"},
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 26,
+				}),
+				q(10352, {	-- A Donation of Wool
+					["qg"] = 20604,	-- Dugiru <Alliance Cloth Quartermaster>
+					["cost"] = { { "i", 2592, 60 } },	-- Wool Cloth
+					["coord"] = { 63.5, 67.7, THE_EXODAR },
+					["timeline"] = { "removed 4.0.3.10000"},
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 12,
+				}),
+				q(10358, {	-- Additional Runecloth
+					["qg"] = 20604,	-- Dugiru <Alliance Cloth Quartermaster>
+					["sourceQuest"] = 10357,	-- A Donation of Runecloth
+					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
+					["coord"] = { 63.5, 67.7, THE_EXODAR },
+					["timeline"] = { "removed 4.0.3.10000"},
+					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
+					["lvl"] = 50,
+				}),
 				q(9605, {	-- Hippogryph Master Stephanos
 					["qg"] = 16768,	-- Nurguni
 					["sourceQuest"] = 9604,	-- On the Wings of a Hippogryph
 					["coord"] = { 56.8, 49.8, THE_EXODAR },
-					["timeline"] = { "added 3.3.0.10772" },
 					-- #if AFTER CATA
 					["maps"] = { AZUREMYST_ISLE },
 					-- #else
@@ -50,7 +91,6 @@ _.Zones =
 					["qg"] = 17555,	-- Stephanos
 					["sourceQuest"] = 9605,	-- Hippogryph Master Stephanos
 					["coord"] = { 54.8, 35.8, THE_EXODAR },
-					["timeline"] = { "added 3.3.0.10772" },
 					-- #if AFTER CATA
 					["maps"] = { AZUREMYST_ISLE },
 					-- #else

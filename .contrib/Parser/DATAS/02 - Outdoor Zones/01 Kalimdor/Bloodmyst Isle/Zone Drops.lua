@@ -92,6 +92,9 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				i(23900, {	-- Tzerak's Armor Plate
+					-- #if ANYCLASSIC
+					["description"] = "The event that spawns Tzerak is currently bugged. Please let the ATT Discord know if you are able to complete the associated quest!",
+					-- #endif
 					["cr"] = 17528,	-- Tzerak
 					["races"] = ALLIANCE_ONLY,
 				}),

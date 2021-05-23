@@ -87,7 +87,6 @@ _.Zones =
 				q(9603, {	-- Beds, Bandages, and Beyond
 					["qg"] = 17553,	-- Caregiver Topher Loaal
 					["coord"] = { 55.8, 59.8, BLOODMYST_ISLE },
-					["timeline"] = { "added 3.3.0.10772" },
 					["cost"] = {
 						{ "i", 23902, 1 },	-- Topher's List
 					},
@@ -342,7 +341,7 @@ _.Zones =
 				q(9706, {	-- Galaen's Journal - The Fate of Vindicator Saruan
 					["provider"] = { "o", 182032 },	-- Galaen's Journal
 					-- #if BEFORE CATA
-					["sourceQuest"] = 9578,	-- Searching for Galaen
+					["sourceQuest"] = 9694,	-- Blood Watch
 					-- #else
 					["sourceQuest"] = 9779,	-- Intercepting the Message
 					-- #endif
@@ -509,6 +508,7 @@ _.Zones =
 				q(9632, {	-- Newfound Allies
 					["qg"] = 17424,	-- Anchorite Paetheus
 					["coord"] = { 54.6, 53.9, BLOODMYST_ISLE },
+					["maps"] = { AZUREMYST_ISLE },
 					["cost"] = {
 						{ "i", 23937, 1 },	-- Letter of Introduction
 					},
@@ -553,7 +553,6 @@ _.Zones =
 					["qg"] = 17554,	-- Laando
 					["sourceQuest"] = 9603,	-- Beds, Bandages, and Beyond
 					["coord"] = { 57.7, 53.9, BLOODMYST_ISLE },
-					["timeline"] = { "added 3.3.0.10772" },
 					["cost"] = {
 						{ "i", 23902, 1 },	-- Topher's List
 					},
@@ -665,6 +664,9 @@ _.Zones =
 				}),
 				q(9594, {	-- Signs of the Legion
 					["provider"] = { "i", 23900 },	-- Tzerak's Armor Plate
+					-- #if ANYCLASSIC
+					["description"] = "The event that spawns the mob to start this quest is currently bugged. Please let the ATT Discord know if you are able to complete this quest!",
+					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(10, 1, 10),
 				}),
@@ -840,7 +842,7 @@ _.Zones =
 					["sourceQuest"] = 9632,	-- Newfound Allies
 					["coord"] = { 54.6, 53.9, AZUREMYST_ISLE },
 					["timeline"] = { "removed 4.0.3.10000" },
-					["maps"] = { AZUREMYST_ISLE },
+					["maps"] = { AZUREMYST_ISLE, DARKSHORE },
 					["cost"] = {
 						{ "i", 23937, 1 },	-- Letter of Introduction
 					},

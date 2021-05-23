@@ -12,6 +12,9 @@ _.Zones =
 					n(QUESTS, {
 						q(9798,  {	-- Blood Elf Plans
 							["provider"] = { "i", 24414 },	-- Blood Elf Plans
+							["cost"] = {
+								{ "i", 23003, 1 },	-- Blood Elf Plans
+							},
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = lvlsquish(2, 1, 2),
 						}),
@@ -58,6 +61,58 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["isBreadcrumb"] = true,
 						}),
+						q(9449,  {	-- Call of Earth (1/3)
+							["qg"] = 17089,	-- Firmanvaar
+							-- #if AFTER MOP
+							["coord"] = { 50.2, 43.0, AMMEN_VALE },
+							-- #else
+							["coord"] = { 79.3, 49.1, AZUREMYST_ISLE },
+							-- #endif
+							["timeline"] = { "removed 4.0.3.10000" },
+							["races"] = { DRAENEI },
+							["classes"] = { SHAMAN },
+							["lvl"] = lvlsquish(4, 1, 4),
+						}),
+						q(9450,  {	-- Call of Earth (2/3)
+							["qg"] = 17087,	-- Spirit of the Vale
+							["sourceQuest"] = 9449,	-- Call of Earth (1/3)
+							-- #if AFTER MOP
+							["coord"] = { 33.6, 23.8, AMMEN_VALE },
+							-- #else
+							["coord"] = { 71.3, 39.1, AZUREMYST_ISLE },
+							-- #endif
+							["timeline"] = { "removed 4.0.3.10000" },
+							["races"] = { DRAENEI },
+							["classes"] = { SHAMAN },
+							["lvl"] = lvlsquish(4, 1, 4),
+							["groups"] = {
+								objective(1, {	-- 0/4 Restless Spirit of Earth slain
+									["cr"] = 17179,	-- Restless Spirit of Earth
+								}),
+							},
+						}),
+						q(9451,  {	-- Call of Earth (3/3)
+							["qg"] = 17087,	-- Spirit of the Vale
+							["sourceQuest"] = 9450,	-- Call of Earth (2/3)
+							-- #if AFTER MOP
+							["coord"] = { 33.6, 23.8, AMMEN_VALE },
+							-- #else
+							["coord"] = { 71.3, 39.1, AZUREMYST_ISLE },
+							-- #endif
+							["timeline"] = { "removed 4.0.3.10000" },
+							["cost"] = {
+								{ "i", 23671, 1 },	-- Earth Crystal
+							},
+							["races"] = { DRAENEI },
+							["classes"] = { SHAMAN },
+							["lvl"] = lvlsquish(4, 1, 4),
+							["groups"] = {
+								recipe(8071),	-- Stoneskin Totem
+								i(5175, {	-- Earth Totem
+									["description"] = "You must keep this in your bags forever.",
+								}),
+							},
+						}),
 						q(26968, {	-- Frost Nova
 							["qg"] = 16500,	-- Valaatu
 							-- #if AFTER MOP
@@ -82,14 +137,12 @@ _.Zones =
 							["lvl"] = lvlsquish(2, 1, 2),
 							["groups"] = {
 								objective(1, {	-- Disperse the Neutralizing Agent
+									["provider"] = { "i", 22955 },	-- Neutralizing Agent
 									-- #if AFTER MOP
 									["coord"] = { 45.2, 64.9, AMMEN_VALE },
 									-- #else
 									["coord"] = { 77.2, 59.0, AZUREMYST_ISLE },
 									-- #endif
-									["cost"] = {
-										{ "i", 22955, 1 },	-- Neutralizing Agent
-									},
 								}),
 							},
 						}),
@@ -101,8 +154,8 @@ _.Zones =
 							["coord"] = { 79.9, 49.7, AZUREMYST_ISLE },
 							-- #endif
 							["timeline"] = { "removed 4.0.3.10000" },
+							["races"] = { DRAENEI },
 							["classes"] = { HUNTER },
-							["races"] = ALLIANCE_ONLY,
 							["lvl"] = lvlsquish(3, 1, 3),
 						}),
 						q(9303,  {	-- Inoculation [Original]
@@ -110,10 +163,7 @@ _.Zones =
 							-- There was absolutely nothing different about the quest other than the quest text, so rather than duplicate the entry, using altQuests instead.
 							-- The extra information doesn't help a new player and you get credit for both anywayson turn in, so it's whatever.
 							["qg"] = 16535,	-- Vindicator Aldar
-							["sourceQuests"] = {
-								10302,	-- Volatile Mutations
-								10304,	-- Vindicator Aldar
-							},
+							["sourceQuest"] = 10304,	-- Vindicator Aldar
 							-- #if AFTER WOD
 							["altQuests"] = { 37444 },	-- Inoculation [Skipped Breadcrumb]
 							-- #endif
@@ -126,10 +176,8 @@ _.Zones =
 							["lvl"] = lvlsquish(2, 1, 2),
 							["groups"] = {
 								objective(1, {	-- 	Nestlewood Owlkin inoculated
+									["provider"] = { "i", 22962 },	-- Inoculating Crystal
 									["cr"] = 16518,	-- Nestlewood Owlkin
-									["cost"] = {
-										{ "i", 22962, 1 },	-- Inoculating Crystal
-									},
 								}),
 							},
 						}),
@@ -153,8 +201,8 @@ _.Zones =
 							["coord"] = { 79.6, 48.8, AZUREMYST_ISLE },
 							-- #endif
 							["timeline"] = { "removed 4.0.3.10000" },
+							["races"] = { DRAENEI },
 							["classes"] = { MAGE },
-							["races"] = ALLIANCE_ONLY,
 							["lvl"] = lvlsquish(3, 1, 3),
 						}),
 						q(9287,  {	-- Paladin Training
@@ -165,8 +213,8 @@ _.Zones =
 							["coord"] = { 79.7, 48.2, AZUREMYST_ISLE },
 							-- #endif
 							["timeline"] = { "removed 4.0.3.10000" },
+							["races"] = { DRAENEI },
 							["classes"] = { PALADIN },
-							["races"] = ALLIANCE_ONLY,
 							["lvl"] = lvlsquish(3, 1, 3),
 						}),
 						q(9291,  {	-- Priest Training
@@ -177,8 +225,8 @@ _.Zones =
 							["coord"] = { 80.1, 48.9, AZUREMYST_ISLE },
 							-- #endif
 							["timeline"] = { "removed 4.0.3.10000" },
+							["races"] = { DRAENEI },
 							["classes"] = { PRIEST },
-							["races"] = ALLIANCE_ONLY,
 							["lvl"] = lvlsquish(3, 1, 3),
 						}),
 						q(26969, {	-- Primal Strike
@@ -239,8 +287,8 @@ _.Zones =
 							["coord"] = { 79.3, 49.1, AZUREMYST_ISLE },
 							-- #endif
 							["timeline"] = { "removed 4.0.3.10000" },
+							["races"] = { DRAENEI },
 							["classes"] = { SHAMAN },
-							["races"] = ALLIANCE_ONLY,
 							["lvl"] = lvlsquish(3, 1, 3),
 						}),
 						q(9305,  {	-- Spare Parts [Original]
@@ -379,11 +427,15 @@ _.Zones =
 						}),
 						q(10302, {	-- Volatile Mutations
 							["qg"] = 16514,	-- Botanist Taerix
+							-- #if BEFORE MOP
+							["sourceQuest"] = 9279,	-- You Survived! [NOTE: On new Draenei, it was offered at the same time as Replenishing the Healing Crystal]
+							-- #else
 							["sourceQuests"] = {	-- TODO: Test this source quest list.
 								9369,	-- Replenishing the Healing Crystal (All other ally races)
 								9280,	-- Replenishing the Healing Crystal (Draenei)
 								9371,	-- Botanist Taerix (breadcrumb)
 							},
+							-- #endif
 							-- #if AFTER MOP
 							["coord"] = { 49.9, 37.3, AMMEN_VALE },
 							-- #else
@@ -399,8 +451,8 @@ _.Zones =
 							["coord"] = { 79.6, 49.5, AZUREMYST_ISLE },
 							-- #endif
 							["timeline"] = { "removed 4.0.3.10000" },
+							["races"] = { DRAENEI },
 							["classes"] = { WARRIOR },
-							["races"] = ALLIANCE_ONLY,
 							["lvl"] = lvlsquish(3, 1, 3),
 						}),
 						q(9293,  {	-- What Must Be Done...
