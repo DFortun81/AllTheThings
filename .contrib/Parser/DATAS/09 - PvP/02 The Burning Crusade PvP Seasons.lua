@@ -84,22 +84,25 @@ _.PVP =
 					}),
 				}),
 				cl(DRUID, {
+					--[[
 					i(146609, {	-- Ensemble: Gladiator's Dragonhide Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10003, -664, -661, 11 }, },
 					}),
-					--[[
+					--]]
 					i(146609, {	-- Ensemble: Gladiator's Dragonhide Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", -10003, -664, -661, 11 }, 
-						--	{"select", "itemID", 124993 },	-- Wrists
-						--	{"select", "itemID", 124989 },	-- Belt
-						--	{"select", "itemID", 124991 },	-- Boot
+							{"select", "itemID", 28444 },	-- General's Dragonhide Boots
+							{"select", "itemID", 28443 },	-- General's Dragonhide Belt
+							{"select", "itemID", 28446 },	-- General's Wyrmhide Belt
+							{"select", "itemID", 28447 },	-- General's Wyrmhide Boots
+							{"select", "itemID", 31594 },	-- General's kodohide Belt
+							{"select", "itemID", 31595 },	-- General's Kodohide Belt
 							{"exclude", "itemID", 146609 },	-- Exclude itself to stop duplicating
 						},
 					}),
-					--]]
 					i(28126, {	-- Gladiator's Dragonhide Gloves
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),

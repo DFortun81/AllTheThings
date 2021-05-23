@@ -321,15 +321,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(10743)),	-- Drakefire Headguard
 					},
 				}),
-				q(3379,  {	-- Shadoweaver
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 8439 },	-- Nilith Lokrav
-					["requireSkill"] = TAILORING,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(10461)),	-- Shadowy Bracers
-						un(REMOVED_FROM_GAME, i(10479)),	-- Kovic's Trading Satchel
-					},
-				}),
 				q(28028, {	-- Siege!
 					["provider"] = { "n", 47393 },	-- Mountain-Lord Rendan
 					["coord"] = { 39.4, 67.8, 32 },
@@ -404,24 +395,6 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3479 },	-- Kalaran Windblade
 					["sourceQuest"] = 3453,	-- The Torch of Retribution
-				}),
-				q(3385,  {	-- The Undermarket
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 8439 },	-- Nilith Lokrav
-					["sourceQuest"] = 3379,	-- Shadoweaver
-					["requireSkill"] = TAILORING,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(10462)),	-- Shadowy Belt
-					},
-				}),
-				q(3402,  {	-- The Undermarket
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 8439 },	-- Nilith Lokrav
-					["sourceQuest"] = 3385,	-- The Undermarket
-					["requireSkill"] = TAILORING,
-					["g"] = {
-						i(10463),	-- Pattern: Shadoweave Mask
-					},
 				}),
 				q(28030, {	-- They Build a Better Bullet
 					["provider"] = { "n", 47393 },	-- Mountain-Lord Rendan

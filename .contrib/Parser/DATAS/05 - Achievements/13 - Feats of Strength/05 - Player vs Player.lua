@@ -186,9 +186,8 @@ _.Achievements =
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						--title(29),	-- Gladiator <Name>
-						i(104326, {	-- Grievous Gladiator's Cloud Serpent
-							["u"] = REMOVED_FROM_GAME,
-						}),
+						-- Mount is listed under FoS>Mounts. 
+						-- i(104326, {	-- Grievous Gladiator's Cloud Serpent
 					},
 				}),
 				-- Sometimes under Legacy, sometimes under FoS. 
@@ -241,9 +240,8 @@ _.Achievements =
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						--title(29),	-- Gladiator <Name>
-						i(104327, {	-- Prideful Gladiator's Cloud Serpent
-							["u"] = REMOVED_FROM_GAME,
-						}),
+						-- Mount is listed under FoS>Mounts. 
+						-- i(104327, {	-- Prideful Gladiator's Cloud Serpent
 					},
 				}),
 				ach(8658, {	-- Hero of the Alliance: Prideful
@@ -314,9 +312,8 @@ _.Achievements =
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						--title(29),	-- Gladiator <Name>
-						i(128277, {	-- Primal Gladiator's Felblood Gronnling
-							["u"] = REMOVED_FROM_GAME,
-						}),
+						-- Mount is listed under FoS>Mounts. 
+						-- i(128277, {	-- Primal Gladiator's Felblood Gronnling
 					},
 				}),
 				ach(9997, {	-- Guardian of the Alliance: Warlords of Draenor Season 1
@@ -423,9 +420,8 @@ _.Achievements =
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						--title(29),	-- Gladiator <Name>
-						i(128281, {	-- Wild Gladiator's Felblood Gronnling
-							["u"] = REMOVED_FROM_GAME,
-						}),
+						-- Mount is listed under FoS>Mounts. 
+						--i(128281, {	-- Wild Gladiator's Felblood Gronnling
 					},
 				}),
 				ach(10108, {	-- Guardian of the Alliance: Warlords of Draenor Season 2
@@ -532,9 +528,8 @@ _.Achievements =
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						--title(29),	-- Gladiator <Name>
-						i(128282, {	-- Warmongering Gladiator's Felblood Gronnling
-							["u"] = REMOVED_FROM_GAME,
-						}),
+						-- Mount is listed under FoS>Mounts. 
+						--i(128282, {	-- Warmongering Gladiator's Felblood Gronnling
 					},
 				}),
 				ach(10116, {	-- Guardian of the Alliance: Warlords of Draenor Season 3
@@ -637,9 +632,8 @@ _.Achievements =
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						--title(29),			-- Gladiator <Name>
-						i(141843, {	-- Vindictive Gladiator's Storm Dragon
-							["u"] = REMOVED_FROM_GAME,
-						}),
+						-- Mount is listed under FoS>Mounts. 
+						--i(141843, {	-- Vindictive Gladiator's Storm Dragon
 					},
 				}),
 				ach(11020, {	-- Guardian of the Alliance: Legion Season 1
@@ -758,9 +752,8 @@ _.Achievements =
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						--title(29),			-- Gladiator <Name>
-						i(141844, {	-- Fearless Gladiator's Storm Dragon
-							["u"] = REMOVED_FROM_GAME,
-						}),
+						-- Mount is listed under FoS>Mounts. 
+						--i(141844, {	-- Fearless Gladiator's Storm Dragon
 					},
 				}),
 				ach(11032, {	-- Guardian of the Alliance: Legion Season 2
@@ -858,9 +851,8 @@ _.Achievements =
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						--title(29),			-- Gladiator <Name>
-						i(141845, {	-- Cruel Gladiator's Storm Dragon
-							["u"] = REMOVED_FROM_GAME,
-						}),
+						-- Mount is listed under FoS>Mounts. 
+						--i(141845, {	-- Cruel Gladiator's Storm Dragon
 					},
 				}),
 				ach(11047, {	-- Guardian of the Alliance: Legion Season 3
@@ -972,9 +964,8 @@ _.Achievements =
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						--title(29),			-- Gladiator <Name>
-						i(141846, {	-- Ferocious  Gladiator's Storm Dragon
-							["u"] = REMOVED_FROM_GAME,
-						}),
+						-- Mount is listed under FoS>Mounts. 
+						--i(141846, {	-- Ferocious  Gladiator's Storm Dragon
 					},
 				}),
 				ach(11056, {	-- Hero of the Alliance: Ferocious
@@ -1072,9 +1063,8 @@ _.Achievements =
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						--title(29),			-- Gladiator <Name>
-						i(141847, {	-- Fierce  Gladiator's Storm Dragon
-							["u"] = REMOVED_FROM_GAME,
-						}),
+						-- Mount is listed under FoS>Mounts. 
+						--i(141847, {	-- Fierce  Gladiator's Storm Dragon
 					},
 				}),
 				ach(12037, {	-- Hero of the Alliance: Fierce
@@ -1172,9 +1162,8 @@ _.Achievements =
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						--title(29),			-- Gladiator <Name>
-						i(141848, {	-- Dominant Gladiator's Storm Dragon
-							["u"] = REMOVED_FROM_GAME,
-						}),
+						-- Mount is listed under FoS>Mounts. 
+						--i(141848, {	-- Dominant Gladiator's Storm Dragon
 					},
 				}),
 				ach(12173, {	-- Hero of the Alliance: Dominant
@@ -1272,9 +1261,8 @@ _.Achievements =
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						--title(29),			-- Gladiator <Name>
-						i(153493, {	-- Demonic Gladiator's Storm Dragon
-							["u"] = REMOVED_FROM_GAME,
-						}),
+						-- Mount is listed under FoS>Mounts. 
+						--(153493, {	-- Demonic Gladiator's Storm Dragon
 					},
 				}),
 				ach(12197, {	-- Hero of the Alliance: Demonic
@@ -1340,9 +1328,8 @@ _.Achievements =
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						--title(29),			-- Gladiator <Name>
-						i(156879, {	-- Dread Gladiator's Proto-Drake
-							["u"] = REMOVED_FROM_GAME,
-						}),
+						-- Mount is listed under FoS>Mounts. 
+						--i(156879, {	-- Dread Gladiator's Proto-Drake
 						i(164573, {	-- Dread Gladiator's Tabard (A)
 							["u"] = REMOVED_FROM_GAME,
 						}),
@@ -1416,9 +1403,8 @@ _.Achievements =
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						--title(29),	-- Gladiator <Name>
-						i(156880, {	-- Sinister Gladiator's Proto-Drake
-							["u"] = REMOVED_FROM_GAME,
-						}),
+						-- Mount is listed under FoS>Mounts. 
+						--i(156880, {	-- Sinister Gladiator's Proto-Drake
 					},
 				}),
 				ach(13210, {	-- Hero of the Alliance: Sinister
@@ -1486,9 +1472,8 @@ _.Achievements =
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						--title(29),	-- Gladiator <Name>
-						i(156881, {	-- Notorious Gladiator's Proto-Drake
-							["u"] = REMOVED_FROM_GAME,
-						}),
+						-- Mount is listed under FoS>Mounts. 
+						--i(156881, {	-- Notorious Gladiator's Proto-Drake
 					},
 				}),
 				ach(13643, {	-- Hero of the Alliance: Notorious
@@ -1556,9 +1541,8 @@ _.Achievements =
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						--title(29),	-- Gladiator <Name>
-						i(156884, {	-- Corrupted Gladiator's Proto-Drake
-							["u"] = REMOVED_FROM_GAME,
-						}),
+						-- Mount is listed under FoS>Mounts. 
+						--i(156884, {	-- Corrupted Gladiator's Proto-Drake
 					},
 				}),
 				ach(13966, {	-- Hero of the Alliance: Corrupted
@@ -1623,9 +1607,9 @@ _.Achievements =
 					--["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						--title(29),	-- Gladiator <Name>
-						i(183937, {	-- Sinful Gladiator's Soul Eater
+						-- Mount is listed under FoS>Mounts. 
+						--i(183937, {	-- Sinful Gladiator's Soul Eater
 						--	["u"] = REMOVED_FROM_GAME,
-						}),
 					},
 				}),
 				ach(14692, {	-- Hero of the Alliance: Sinful
