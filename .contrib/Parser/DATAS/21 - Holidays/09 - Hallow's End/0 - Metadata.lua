@@ -4,6 +4,5 @@
 
 _.Holidays = bubbleDown({["u"] = 26},
 {
-	holiday(235462, {	-- Hallow's End
-		}),
+	holiday(235462),	-- Hallow's End
 });

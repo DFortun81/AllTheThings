@@ -2377,7 +2377,7 @@ app.L = {
 		[-34] = "World Quests are time-limited Quests available in specific locations with variable rewards.\n\nMake sure to check the ATT World Quests window (/attwq) often to see what time-limited Things you should go collect!",
 		[-799] = "The following items can be created by using a Burden of Eternity on a Timeless Armor Token for a double dose of pointless RNG.",
 	};
-	
+
 	-- Saved Instance Name => Dungeon Journal Instance Name Converter
 	-- If your saves aren't lining up, it's probably because Blizzard
 	-- didn't use the same localization for the instance. Sorry.
@@ -2498,15 +2498,3 @@ app.L = {
 		["SL_COV_VEN"] = { "|cFFfe040fVenthyr Covenant|r" },
 	};
 };
-
--- Assign programmatic names here. (This means you don't need to manually assign a locale for each one)
-local a = app.ObjectNames;
-for key,value in pairs({
-	[226468] = GetSpellInfo(155344),										-- Buffeting Galefury
-	[226469] = GetSpellInfo(154259),										-- Spirit of the Wolf
-	[230544] = GetSpellInfo(155334),										-- Touched By Ice
-	[233263] = GetSpellInfo(154253),										-- Blessing of the Wolf
-	[239925] = GetSpellInfo(155346),										-- Ogrish Fortitude
-	[239926] = GetSpellInfo(155315),										-- Touched By Fire
-})
-do a[key] = value; end
