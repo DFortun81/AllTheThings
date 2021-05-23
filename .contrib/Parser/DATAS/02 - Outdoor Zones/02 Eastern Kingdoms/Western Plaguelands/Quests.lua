@@ -10,17 +10,17 @@ _.Zones =
 				q(5093, {	-- A Call to Arms: The Plaguelands!
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
-					["provider"] = { "o", 10880 },	-- Warcaller Gorlach
+					["provider"] = { "n", 10880 },	-- Warcaller Gorlach
 				}),
 				q(5094, {	-- A Call to Arms: The Plaguelands!
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
-					["provider"] = { "o", 10879 },	-- Harbinger Balthazad
+					["provider"] = { "n", 10879 },	-- Harbinger Balthazad
 				}),
 				q(5095, {	-- A Call to Arms: The Plaguelands!
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
-					["provider"] = { "o", 10881 },	-- Bluff Runner Windstrider
+					["provider"] = { "n", 10881 },	-- Bluff Runner Windstrider
 				}),
 				q(26954, {	-- A Different Approach
 					["provider"] = { "n", 44456 },	-- Adrine Towhide
