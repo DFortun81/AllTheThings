@@ -2359,7 +2359,6 @@ for key,value in pairs({
 	[273538] = "Suministros bélicos de la Legión",	-- Legion War Supplies
 	[273814] = "Talismán afilado",	-- Bladed Charm
 	[273854] = "Mochila",	-- Backpack
-	--TODO: [275059] = "",	--
 	[276187] = "Junji",	-- Junji
 	[276223] = "Alijo de tesoro eredar",	-- Eredar Treasure Cache
 	[276224] = "Cofre de ganancias obtenidas con malas artes",	-- Chest of Ill-Gotten Gains

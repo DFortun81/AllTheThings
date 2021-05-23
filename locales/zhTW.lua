@@ -2359,7 +2359,6 @@ for key,value in pairs({
 	--TODO: [273538] = "Legion War Supplies",	-- Legion War Supplies
 	--TODO: [273814] = "Bladed Charm",	-- Bladed Charm
 	--TODO: [273854] = "Backpack",	-- Backpack
-	--TODO: [275059] = "",	--
 	--TODO: [276187] = "Junji",	-- Junji
 	--TODO: [276223] = "Eredar Treasure Cache",	-- Eredar Treasure Cache
 	--TODO: [276224] = "Chest of Ill-Gotten Gains",	-- Chest of Ill-Gotten Gains

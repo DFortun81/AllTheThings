@@ -2359,7 +2359,6 @@ for key,value in pairs({
 	[273538] = "군단 전쟁 물자",	-- Legion War Supplies
 	[273814] = "칼날 달린 부적",	-- Bladed Charm
 	[273854] = "배낭",	-- Backpack
-	--TODO: [275059] = "",	--
 	[276187] = "준지",	-- Junji
 	--TODO: [276223] = "Eredar Treasure Cache",	-- Eredar Treasure Cache
 	[276224] = "부정한 노략물 상자",	-- Chest of Ill-Gotten Gains

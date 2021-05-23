@@ -2359,7 +2359,6 @@ for key,value in pairs({
 	[273538] = "Kriegsvorräte der Legion",	-- Legion War Supplies
 	[273814] = "Klingenbewehrter Talisman",	-- Bladed Charm
 	[273854] = "Rucksack",	-- Backpack
-	--TODO: [275059] = "",	--
 	[276187] = "Junji",	-- Junji
 	[276223] = "Schatztruhe der Eredar",	-- Eredar Treasure Cache
 	[276224] = "Kiste mit Diebesgut",	-- Chest of Ill-Gotten Gains

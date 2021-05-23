@@ -2352,7 +2352,6 @@ for key,value in pairs({
 	[273538] = "Военные припасы Легиона",	-- Legion War Supplies
 	[273814] = "Шипастый оберег",	-- Bladed Charm
 	[273854] = "Рюкзак",	-- Backpack
-	--TODO: [275059] = "",	--
 	[276187] = "Джунджи",	-- Junji
 	[276223] = "Эредарский сундук с сокровищами",	-- Eredar Treasure Cache
 	[276224] = "Сундук украденных сокровищ",	-- Chest of Ill-Gotten Gains
