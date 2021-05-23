@@ -391,6 +391,7 @@ _.Zones =
 						PRIEST,		-- Shadow
 						WARLOCK,	-- Affliction
 					},
+					["coord"] = { 56.4, 27.2, 646 },
 				}),
 				q(47067, {	-- Seeking Lost Knowledge
 					["u"] = REMOVED_FROM_GAME,

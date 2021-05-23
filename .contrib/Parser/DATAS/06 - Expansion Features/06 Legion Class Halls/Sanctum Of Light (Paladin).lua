@@ -43,18 +43,32 @@ _.ExpansionFeatures =
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 110571 },	-- Delas Moonfang
 						["coord"] = { 44.6, 23.1, 627 },
+						["maps"] = { 627 },	-- Dalaran
+					}),
+					q(43493, {	-- Black Rook Hold: Lord Ravencrest
+						["sourceQuests"] = { 43535 },	-- Translation: Danger!
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker
+						["coord"] = { 52.3, 78.1, 24 },
 					}),
 					q(43488, {	-- Blood of Our Enemy
 						["sourceQuests"] = { 43486 },	-- Cracking the Codex
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 110571 },	-- Delas Moonfang
 						["coord"] = { 44.6, 23.1, 627 },
+						["maps"] = { 627 },	-- Dalaran
 					}),
 					q(44063, {	-- Bolstering Your Arsenal
 						["sourceQuests"] = { 39756 },	-- A Sound Plan
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
 						["coord"] = { 49.8, 72.4, 24 },
+					}),
+					q(44218, {	-- Champion Armaments
+						-- TBD: ["coord"] = {  },
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 110434 },	-- Kristoff
+						["description"] = "Only available if you you have the |cFFFFD700Plowshares to Swords|r order hall upgrade.",
 					}),
 					q(44250, {	-- Champion of the Light
 						["sourceQuests"] = { 38566 },	-- A United Force
@@ -97,6 +111,7 @@ _.ExpansionFeatures =
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 109384 },	-- Justicar Julia Celeste
 						["coord"] = { 30.6, 44.9, 630 },
+						["maps"] = { 630 },	-- Azsuna
 					}),
 					q(44370, {	-- Completing Your Arsenal
 						["sourceQuests"] = { 42120 },	-- The Silver Hand
@@ -116,17 +131,25 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
 						["coord"] = { 52.3, 78.1, 24 },
 					}),
+					q(44219, {	-- Fate's Blessing
+						-- TBD: ["coord"] = {  },
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 112986 },	-- Librarian Lightmorne
+						["description"] = "Only available if you you have the |cFFFFD700Holy Purpose|r order hall upgrade.",
+					}),
 					q(42774, {	-- Hope Prevails
 						["sourceQuests"] = { 42773 },	-- The Light Reveals
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 108776 },	-- Lord Maxwell Tyrosus
 						["coord"] = { 52.1, 83.2, 22 },
+						["maps"] = { 22 },	-- Western Plaguelands
 					}),
 					q(42771, {	-- Keeping the Peace
 						["sourceQuests"] = { 42770 },	-- Seeking Guidance
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 108778 },	-- Mehlar Dawnblade
 						["coord"] = { 51.3, 79.0, 22 },
+						["maps"] = { 22 },	-- Western Plaguelands
 					}),
 					q(38933, {	-- Logistical Matters
 						["sourceQuests"] = { 38566 },	-- A United Force
@@ -145,6 +168,7 @@ _.ExpansionFeatures =
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 109384 },	-- Justicar Julia Celeste
 						["coord"] = { 30.6, 44.9, 630 },
+						["maps"] = { 630 },	-- Azsuna
 					}),
 					q(42848, {	-- Recruiting the Troops
 						["sourceQuests"] = { 42847 },	-- Dark Storms
@@ -166,6 +190,7 @@ _.ExpansionFeatures =
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 108777 },	-- High Priest Thel'danis
 						["coord"] = { 51.4, 79.0, 22 },
+						["maps"] = { 22 },	-- Western Plaguelands
 					}),
 					q(42000, {	-- Seeker of Truth
 						["sourceQuests"] = { 40408 },	-- Weapons of Legend
@@ -221,6 +246,7 @@ _.ExpansionFeatures =
 						},
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 109434 },	-- Justicar Julia Celeste
+						["maps"] = { 630 },	-- Azsuna
 					}),
 					q(42005, {	-- The End of the Saga
 						["sourceQuests"] = { 42002 }, -- To Northrend
@@ -245,6 +271,7 @@ _.ExpansionFeatures =
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 108776 },	-- Lord Maxwell Tyrosus
 						["coord"] = { 51.6, 81.9, 22 },
+						["maps"] = { 22 },	-- Western Plaguelands
 					}),
 					q(42231, {	-- The Mysterious Paladin
 						["sourceQuests"] = { 44063 },	-- Bolstering Your Arsenal
@@ -269,12 +296,14 @@ _.ExpansionFeatures =
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 106337 },	-- Travard
 						["coord"] = { 72.0, 49.3, 627 },
+						["maps"] = { 627 },	-- Dalaran
 					}),
 					q(42887, {	-- This Is Retribution
 						["sourceQuests"] = { 42886 },	-- To Faronaar
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 109356 },	-- Vindicator Boros
 						["coord"] = { 45.9, 51.6, 630 },
+						["maps"] = { 630 },	-- Azsuna
 					}),
 					q(42886, {	-- To Faronaar
 						["sourceQuests"] = { 42966 },	-- The Highlord's Command
@@ -282,11 +311,27 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
 						["coord"] = { 52.3, 78.1, 24 },
 					}),
+					q(43489, {	-- To Felblaze Ingress
+						["sourceQuests"] = { 43493 },	-- Black Rook Hold: Lord Ravencrest
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker
+						["coord"] = { 52.3, 78.1, 24 },
+					}),
 					q(42002, {	-- To Northrend
 						["sourceQuests"] = { 42000 },	-- Seeker of Truth
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 105689 },	-- Orik Trueheart
 						["coord"] = { 73.9, 49.0, 627 },
+						["maps"] = { 627 },	-- Dalaran
+					}),
+					q(43535, {	-- Translation: Danger!
+						["sourceQuests"] = {
+							43487,	-- Assault on Violet Hold: The Fel Lexicon
+							43488,	-- Blood of Our Enemy
+						},
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 110571 },	-- Delas Moonfang
+						["coord"] = { 44.6, 23.1, 627 },
 						["maps"] = { 627 },	-- Dalaran
 					}),
 					q(38576, {	-- We Meet at Light's Hope
@@ -323,15 +368,12 @@ _.ExpansionFeatures =
 					q(43934),	-- A New Path (also warrior?)
 					q(43491),	-- Allies of the Light
 					q(45890),	-- Ancestors and Enemies (also warrior?)
-					q(43493),	-- Black Rook Hold: Lord Ravencrest (also priest?)
 					q(44220, {	-- Blessing of the Order
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(43534),	-- Blood of Sargeras
-					q(44218),	-- Champion Armaments
 					q(43699),	-- Defenders of the World
 					q(45149),	-- Ending the Crescent Curse
-					q(44219),	-- Fate's Blessing
 					q(45147),	-- Felstone Destruction (and warrior?)
 					q(39722),	-- Forging New Strength
 					q(42774),	-- Hope Prevails
@@ -345,8 +387,6 @@ _.ExpansionFeatures =
 					--]]
 					--[[
 					q(43540),	-- The Mind of the Enemy
-					q(43489),	-- To Felblaze Ingress (also warrior?)
-					q(43535),	-- Translation: Danger!
 					q(46069),	-- Worthy of the Title
 					]]--
 					q(45974, {	-- An Urgent Warning
@@ -521,12 +561,10 @@ _.ExpansionFeatures =
 						["description"] = "Your spec must be Retribution for her to respond to your books. Bring both of the books to her and she'll give you the completed book to use in the next part.",
 						["g"] = {
 							i(139620, {	-- A Complete Copy of "Nat Pagle's Guide to Extreme Anglin'."
-								i(18365, {	-- A Thoroughly Read Copy of "Nat Pagle's Guide to Extreme Anglin'."
-									["description"] = "Looted from A Dusty Tome in Dire Maul.",
-								}),
-								i(18229, {	-- Nat Pagle's Guide to Extreme Anglin'
-									["description"] = "Required for the Retribution Paladin Hidden Artifact Appearance.\n\nLooted from Player Corpses in Alterac Valley.",
-								}),
+								["cost"] = {
+									{ "i", 18365, 1 },	-- A Thoroughly Read Copy of "Nat Pagle's Guide to Extreme Anglin'."
+									{ "i", 18229, 1 },	-- Nat Pagle's Guide to Extreme Anglin'
+								},
 							}),
 						},
 					}),
