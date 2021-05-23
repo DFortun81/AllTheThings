@@ -614,6 +614,7 @@ _.Zones =
 						i(181690),	-- Gorewrought Crusher
 						i(181691),	-- Gorewrought Greatstaff
 						i(181688),	-- Gorewrought Stave
+						i(181686),	-- Gorewrought Tome
 						i(181692),	-- Gorewrought Warblade
 						-- TODO: more rewards
 					},
@@ -636,7 +637,10 @@ _.Zones =
 						63037,	-- Dark Aspirations [Venthyr]
 					},
 					["g"] = {
+						i(181208),	-- Anima-Infused Muck
 						i(181224),	-- Avowed Arcanist's Staff
+						i(181216),	-- Cinderwall Great Mace
+						i(181222),	-- Darkwing Rebel's Halberd
 						i(181207),	-- Dominance Keep Barrier
 						i(181223),	-- Mace of Emberwrath
 						i(181213),	-- Shard-Dusted Shank
