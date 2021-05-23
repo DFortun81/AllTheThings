@@ -921,6 +921,15 @@ _.CategoryIcons = {
 	[642] = "Interface/Icons/INV_Misc_Orb_01",	-- Trinkets
 	[643] = "Interface/Icons/INV_Drink_12",	-- Oils
 	[644] = "Interface/Icons/INV_Cask_02",	-- Materials
+	
+	[672] = "Interface/Icons/inv_enchant_abysscrystal",	-- Reagents
+	[673] = "Interface/Icons/INV_Boots_01",	-- Boot Enchantments
+	[674] = "Interface/Icons/INV_Gauntlets_04",	-- Glove Enchantments
+	[675] = "Interface/Icons/INV_Chest_Chain",	-- Chest Enchantments
+	[676] = "Interface/Icons/INV_Misc_Cape_18",	-- Cloak Enchantments
+	[677] = "Interface/Icons/INV_Bracer_17",	-- Bracer Enchantments
+	[678] = "Interface/Icons/Spell_Fire_EnchantWeapon",	-- Weapon Enchantments
+	[679] = "Interface/Icons/INV_Shield_05",	-- Shield Enchantments
 	[680] = "Interface/Icons/inv_enchant_shardprismaticlarge",	-- Reagents
 	[681] = "Interface/Icons/INV_Boots_01",	-- Boot Enchantments
 	[682] = "Interface/Icons/INV_Bracer_17",	-- Bracer Enchantments
