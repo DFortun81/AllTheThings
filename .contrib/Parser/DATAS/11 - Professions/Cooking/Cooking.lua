@@ -1,6 +1,6 @@
 -- Cooking - Skill ID 185 / Spell ID 2550
 profession(COOKING, {
-	n(-37, {	-- Discovery
+	n(DISCOVERY, {
 		["description"] = "These items have a chance to appear in your bag after cooking any recipe from Warlords of Draenor.",
 		["groups"] = {
 			i(118311),	-- Recipe Idea: Blackrock Ham

@@ -3,7 +3,7 @@ profession(BLACKSMITHING, {
 		{
 			["categoryID"] = 553,  -- Pandaren Plans
 			["g"] = {
-				n(-37, {    -- Discovery
+				n(DISCOVERY, {
 					["groups"] = {
 						spell(143255, {	-- Balanced Trillium Ingot
 							recipe(143165),	-- Crafted Malevolent Gladiator's Dreadplate Helm
@@ -95,7 +95,7 @@ profession(BLACKSMITHING, {
 		{
 			["categoryID"] = 542,  -- Zandalari Plans
 			["g"] = {
-				n(-37, {    -- Discovery
+				n(DISCOVERY, {
 					["g"] = {
 						{	-- Stormsteel Girdle
 							["spellID"] = 253190,	-- Stormsteel Girdle
