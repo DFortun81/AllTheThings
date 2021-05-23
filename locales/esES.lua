@@ -1,5 +1,5 @@
--- Localization for Spanish (Spain) Clients.
-if GetLocale() ~= "esES" then return; end
+-- Localization for Spanish (Spain) and Spanish (Mexico) Clients.
+if GetLocale() ~= "esES" and GetLocale() ~= "esMX" then return; end
 local app = select(2, ...);
 local L = app.L;
 

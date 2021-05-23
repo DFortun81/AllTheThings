@@ -1,5 +1,5 @@
--- Localization for Chinese (Simplified, PRC) Clients.
-if GetLocale() ~= "zhCN" then return; end
+-- Localization for Chinese (Simplified, PRC) and Chinese (Traditional, Taiwan) Clients.
+if GetLocale() ~= "zhCN" and GetLocale() ~= "zhTW" then return; end
 local app = select(2, ...);
 local L = app.L;
 
