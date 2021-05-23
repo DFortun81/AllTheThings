@@ -8,88 +8,18 @@ _.GearSets =
 		["g"] = {
 			n(-9, {	-- PvP
 				tier(2, {	-- Burning Crusade
+					
 					i(146650, {	-- Arsenal: Merciless Gladiator's Weapons [Horde / Alliance / Tested ] { Note: Contains Gladiator/Merciless Sets }
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 						["sym"] = { {"sub", "pvp_weapons_ensemble", -10003, -665, -661 }, },
 					}),
 					i(146649, {	-- Arsenal: Vengeful Gladiator's Weapons [ Horde / Alliance / Tested ]
-						i(33661),	-- Vengeful Gladiator's Barrier
-						i(34059),	-- Vengeful Gladiator's Baton of Light
-						i(34540),	-- Vengeful Gladiator's Battle Staff
-						i(33662),	-- Vengeful Gladiator's Bonecracker
-						i(33663),	-- Vengeful Gladiator's Bonegrinder
-						i(34015),	-- Vengeful Gladiator's Chopper
-						i(33669),	-- Vengeful Gladiator's Cleaver
-						i(33670),	-- Vengeful Gladiator's Decapitator
-						i(33681),	-- Vengeful Gladiator's Endgame
-						i(33705),	-- Vengeful Gladiator's Fleshslicer
-						i(33687),	-- Vengeful Gladiator's Gavel
-						i(33688),	-- Vengeful Gladiator's Greatsword
-						i(34033),	-- Vengeful Gladiator's Grimoire
-						i(33689),	-- Vengeful Gladiator's Hacker
-						i(33006),	-- Vengeful Gladiator's Heavy Crossbow
-						i(34529),	-- Vengeful Gladiator's Longbow
-						i(33801),	-- Vengeful Gladiator's Mutilator
-						i(33727),	-- Vengeful Gladiator's Painsaw
-						i(34066),	-- Vengeful Gladiator's Piercing Touch
-						i(33733),	-- Vengeful Gladiator's Pummeler
-						i(33734),	-- Vengeful Gladiator's Quickblade
-						i(33735),	-- Vengeful Gladiator's Redoubt
-						i(33736),	-- Vengeful Gladiator's Reprieve
-						i(34530),	-- Vengeful Gladiator's Rifle
-						i(33737),	-- Vengeful Gladiator's Ripper
-						i(33743),	-- Vengeful Gladiator's Salvation
-						i(33754),	-- Vengeful Gladiator's Shanker
-						i(33755),	-- Vengeful Gladiator's Shield Wall
-						i(33756),	-- Vengeful Gladiator's Shiv
-						i(34016),	-- Vengeful Gladiator's Slasher
-						i(33762),	-- Vengeful Gladiator's Slicer
-						i(33763),	-- Vengeful Gladiator's Spellblade
-						i(33716),	-- Vengeful Gladiator's Staff
-						i(33764),	-- Vengeful Gladiator's Touch of Defeat
-						i(33766),	-- Vengeful Gladiator's War Staff
-						i(34014),	-- Vengeful Gladiator's Waraxe
+						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
+						["sym"] = { {"sub", "pvp_weapons_ensemble", -10003, -666, -661 }, },
 					}),
 					i(146648, {	-- Arsenal: Brutal Gladiator's Weapons [ Horde / Alliance / Tested ]
-						i(34986),	-- Brutal Gladiator's Barrier
-						i(34985),	-- Brutal Gladiator's Baton of Light
-						i(34987),	-- Brutal Gladiator's Battle Staff
-						i(37739),	-- Brutal Gladiator's Blade of Alacrity
-						i(34988),	-- Brutal Gladiator's Bonecracker
-						i(34989),	-- Brutal Gladiator's Bonegrinder
-						i(34995),	-- Brutal Gladiator's Chopper
-						i(34996),	-- Brutal Gladiator's Cleaver
-						i(34997),	-- Brutal Gladiator's Decapitator
-						i(35008),	-- Brutal Gladiator's Endgame
-						i(35038),	-- Brutal Gladiator's Fleshslicer
-						i(35014),	-- Brutal Gladiator's Gavel
-						i(35015),	-- Brutal Gladiator's Greatsword
-						i(35016),	-- Brutal Gladiator's Grimoire
-						i(35017),	-- Brutal Gladiator's Hacker
-						i(36737),	-- Brutal Gladiator's Hatchet
-						i(35018),	-- Brutal Gladiator's Heavy Crossbow
-						i(35047),	-- Brutal Gladiator's Longbow
-						i(35058),	-- Brutal Gladiator's Mutilator
-						i(35064),	-- Brutal Gladiator's Painsaw
-						i(35065),	-- Brutal Gladiator's Piercing Touch
-						i(35071),	-- Brutal Gladiator's Pummeler
-						i(35072),	-- Brutal Gladiator's Quickblade
-						i(35073),	-- Brutal Gladiator's Redoubt
-						i(35074),	-- Brutal Gladiator's Reprieve
-						i(35075),	-- Brutal Gladiator's Rifle
-						i(35076),	-- Brutal Gladiator's Ripper
-						i(35082),	-- Brutal Gladiator's Salvation
-						i(35093),	-- Brutal Gladiator's Shanker
-						i(35094),	-- Brutal Gladiator's Shield Wall
-						i(35095),	-- Brutal Gladiator's Shiv
-						i(35037),	-- Brutal Gladiator's Slasher
-						i(35101),	-- Brutal Gladiator's Slicer
-						i(35102),	-- Brutal Gladiator's Spellblade
-						i(35103),	-- Brutal Gladiator's Staff
-						i(37740),	-- Brutal Gladiator's Swift Judgment
-						i(35107),	-- Brutal Gladiator's Touch of Defeat
-						i(35109),	-- Brutal Gladiator's War Staff
-						i(35110),	-- Brutal Gladiator's Waraxe
+						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
+						["sym"] = { {"sub", "pvp_weapons_ensemble", -10003, -667, -661 }, },
 					}),
 				}),
 				tier(3, {	-- Wrath of the Lich King

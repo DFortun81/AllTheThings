@@ -30,10 +30,6 @@ _.GearSets =
 					i(28943),	-- Grand Marshal's Warblade
 					i(28959),	-- Grand Marshal's War Staff
 				}),
-				filter(51, {	-- Necklaces
-					i(28245),	-- Pendant of Dominance
-					i(28244),	-- Pendant of Triumph
-				}),
 				cl(WARRIOR, {
 					-- Grand Marshal's Plate [Warrior]
 					i(28701),	-- Grand Marshal's Plate Helm
