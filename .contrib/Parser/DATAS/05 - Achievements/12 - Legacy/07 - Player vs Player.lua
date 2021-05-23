@@ -41,24 +41,8 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, ach(11685)),		-- Decade of Dominance
 			un(REMOVED_FROM_GAME, a(ach(1757))),	-- Defense of the Ancients (Alliance)
 			un(REMOVED_FROM_GAME, h(ach(2200))),	-- Defense of the Ancients (Horde)
-			un(REMOVED_FROM_GAME, a(ach(12200, {	-- Demonic Combatant (Alliance)
-				crit(1),				-- Win 100 Arena (3v3) matches in Legion Season 7
-				crit(2),				-- Win 40 Rated Battleground Matches in Legion Season 7
-			}))),
-			un(REMOVED_FROM_GAME, h(ach(12199, {	-- Demonic Combatant (Horde)
-				crit(1),				-- Win 100 Arena (3v3) matches in Legion Season 7
-				crit(2),				-- Win 40 Rated Battleground Matches in Legion Season 7
-			}))),
 			un(REMOVED_FROM_GAME, ach(12182)),		-- Demonic Double Dozen
 			un(REMOVED_FROM_GAME, ach(11687)),		-- Demonic Dozen
-			un(REMOVED_FROM_GAME, a(ach(12137, {	-- Dominant Combatant (Alliance)
-				crit(1),				-- Win 100 Arena (3v3) matches in Legion Season 6
-				crit(2),				-- Win 40 Rated Battleground Matches in Legion Season 6
-			}))),
-			un(REMOVED_FROM_GAME, h(ach(12136, {	-- Dominant Combatant (Horde)
-				crit(1),				-- Win 100 Arena (3v3) matches in Legion Season 6
-				crit(2),				-- Win 40 Rated Battleground Matches in Legion Season 6
-			}))),
 			un(REMOVED_FROM_GAME, ach(11471)),		-- Don't Hate, Grind to Eight
 			un(REMOVED_FROM_GAME, ach(12108)),		-- Double Decade of Dominance
 			ach(612, {	-- Downing the Dark Lady
@@ -154,8 +138,6 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, h(ach(8641))),	-- Prideful Combatant (Horde)
 			un(REMOVED_FROM_GAME, a(ach(8451))),	-- Prideful Conquest (Alliance)
 			un(REMOVED_FROM_GAME, h(ach(8450))),	-- Prideful Conquest (Horde)
-			un(REMOVED_FROM_GAME, a(ach(9238))),	-- Primal Combatant (Alliance)
-			un(REMOVED_FROM_GAME, h(ach(9236))),	-- Primal Combatant (Horde)
 			un(REMOVED_FROM_GAME, a(ach(9234))),	-- Primal Conquest (Alliance)
 			un(REMOVED_FROM_GAME, h(ach(9233))),	-- Primal Conquest (Horde)
 			un(REMOVED_FROM_GAME, a(ach(442, {		-- Private
@@ -211,8 +193,6 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, h(ach(445, {		-- Warlord
 				un(REMOVED_FROM_GAME, h(title(27))),	-- Warlord
 			}))),
-			un(REMOVED_FROM_GAME, a(ach(10095))),	-- Warmongering Combatant (Alliance)
-			un(REMOVED_FROM_GAME, h(ach(10094))),	-- Warmongering Combatant (Horde)
 			ach(10091, {	-- Warmongering Conquest (A)
 				["races"] = ALLIANCE_ONLY,
 				["u"] = REMOVED_FROM_GAME,	-- Removed in Patch 7.0
@@ -222,14 +202,6 @@ _.Achievements =
 				["u"] = REMOVED_FROM_GAME,	-- Removed in Patch 7.0
 			}),
 			un(REMOVED_FROM_GAME, ach(11690)),		-- When You're Fifteen
-			ach(10093, {	-- Wild Combatant (A)
-				["races"] = ALLIANCE_ONLY,
-				["u"] = REMOVED_FROM_GAME,	-- Removed in Patch 6.2.2
-			}),
-			ach(10092, {	-- Wild Combatant (H)
-				["races"] = HORDE_ONLY,
-				["u"] = REMOVED_FROM_GAME,	-- Removed in Patch 6.2.2
-			}),
 			ach(10089, {	-- Wild Conquest (A)
 				["races"] = ALLIANCE_ONLY,
 				["u"] = REMOVED_FROM_GAME,	-- Removed in Patch 6.2.2
