@@ -208,13 +208,6 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 				["name"] = "Sapphire Pendant of Winter Night",
 				["recipeID"] = 26908
 			},
-			--[[
-			-- This has been moved to Never Implemented.
-			{
-				["name"] = "Silver Rose Pendant",
-				["recipeID"] = 25614
-			},
-			]]--
 			{
 				["name"] = "Thick Bronze Necklace",
 				["recipeID"] = 26927
@@ -777,10 +770,6 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 					["recipeID"] = 46126
 				},
 				{
-					["name"] = "Arcanite Sword Pendant",
-					["recipeID"] = 26918
-				},
-				{
 					["name"] = "Braided Eternium Chain",
 					["recipeID"] = 31070
 				},
@@ -936,10 +925,6 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 			["name"] = "Crowns",
 			["categoryID"] = 869,
 			["g"] = {
-				{
-					["name"] = "Blood Crown",
-					["recipeID"] = 26920
-				},
 				{
 					["name"] = "Circlet of Arcane Might",
 					["recipeID"] = 31078
@@ -5019,7 +5004,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 			},
 		}),
 	})),
-	applyclassicphase(SHADOWLANDS_PHASE_ONE, tier(8, {	-- Shadowlands
+	applyclassicphase(SHADOWLANDS_PHASE_ONE, tier(9, {	-- Shadowlands
 		{
 			["name"] = "Quest Recipes",
 			["categoryID"] = 1530,
@@ -5382,6 +5367,8 @@ _.NeverImplemented = {};
 
 -- Recipe Cache (for Validation)
 local recipeCache = {
+	[26918]=1,	-- Design: Arcanite Sword Pendant
+	[26920]=1,	-- Design: Blood Crown
 	[25614]=1,	-- Design: Silver Rose Pendant
 	[32810]=1,	-- Design: Primal Stone Statue
 };

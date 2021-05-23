@@ -2507,14 +2507,30 @@ namespace ATT
                             else builder.Append("\"").Append(name).Append("\",").AppendLine();
                         }
                         builder.AppendLine("};");
-                        keys = CATEGORY_ICONS.Keys.ToList();
-                        keys.Sort();
                         builder.Append("_.CategoryIcons = {").AppendLine();
                         foreach (var key in keys)
                         {
-                            builder.Append("\t[").Append(key).Append("] = \"").Append(CATEGORY_ICONS[key]).Append("\",");
-                            if (CATEGORY_NAMES.TryGetValue(key, out string name)) builder.Append("\t-- ").Append(name);
-                            builder.AppendLine();
+                            if (CATEGORY_ICONS.TryGetValue(key, out string icon))
+                            {
+                                builder.Append("\t[").Append(key).Append("] = \"").Append(icon).Append("\",");
+                                if (CATEGORY_NAMES.TryGetValue(key, out string name)) builder.Append("\t-- ").Append(name);
+                                builder.AppendLine();
+                            }
+                            else
+                            {
+                                builder.Append("\t-- [").Append(key).Append("] = \"\",");
+                                if (CATEGORY_NAMES.TryGetValue(key, out string name)) builder.Append("\t-- ").Append(name);
+                                builder.AppendLine();
+                            }
+                        }
+                        keys = CATEGORY_ICONS.Keys.ToList();
+                        keys.Sort();
+                        foreach (var key in keys)
+                        {
+                            if (!CATEGORY_NAMES.ContainsKey(key))
+                            {
+                                builder.Append("\t[").Append(key).Append("] = \"").Append(CATEGORY_ICONS[key]).Append("\",").AppendLine();
+                            }
                         }
                         builder.AppendLine("};");
                         File.WriteAllText(Path.Combine(debugFolder.FullName, "CategoryDB.lua"), builder.ToString());

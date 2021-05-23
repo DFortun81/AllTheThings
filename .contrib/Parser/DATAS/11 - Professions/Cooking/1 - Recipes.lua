@@ -2,11 +2,7 @@ profession(COOKING, {
 	tier(1, {	-- Classic
 		{
 			["name"] = "Everyday Cooking",
-			-- #if ANYCLASSIC
-			["categoryID"] = 10,
-			-- #else
-			["categoryID"] = 1023,
-			-- #endif
+			["categoryID"] = 63,
 			["g"] = {
 				{
 					["name"] = "Baked Salmon",
@@ -401,11 +397,7 @@ profession(COOKING, {
 		},
 		{
 			["name"] = "Holiday Cooking",
-			-- #if ANYCLASSIC
-			["categoryID"] = 11,
-			-- #else
 			["categoryID"] = 58,
-			-- #endif
 			["g"] = {
 				applyclassicphase(WRATH_PHASE_ONE, {	-- Bread of the Dead [Day of the Dead]
 					["name"] = "Bread of the Dead",
@@ -499,11 +491,7 @@ profession(COOKING, {
 		},
 		{
 			["name"] = "Unusual Delights",
-			-- #if ANYCLASSIC
-			["categoryID"] = 12,
-			-- #else
 			["categoryID"] = 70,
-			-- #endif
 			["g"] = {
 				applyclassicphase(TBC_PHASE_ONE, {
 					["name"] = "Captain Rumsey's Lager",
