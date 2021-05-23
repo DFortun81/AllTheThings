@@ -784,5 +784,5 @@ select(2, ...).CategoryNames = {
 	[1538] = "Bags",
 };
 select(2, ...).CategoryIcons = {
-	[773] = "Interface\\Icons\\inv_misc_ticket_tarot_twistingnether_01",
+	[773] = "Interface/Icons/inv_misc_ticket_tarot_twistingnether_01",
 };

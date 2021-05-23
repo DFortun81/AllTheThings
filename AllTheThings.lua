@@ -3987,9 +3987,9 @@ fieldConverters = {
 	end,
 	["objectID"] = function(group, value)
 		-- WARNING: DEV ONLY START
-		if not L["OBJECT_ID_NAMES"][value] then
+		if not app.ObjectNames[value] then
 			print("Object Missing Name ", value);
-			L["OBJECT_ID_NAMES"][value] = "Object #" .. value;
+			app.ObjectNames[value] = "Object #" .. value;
 		end
 		-- WARNING: DEV ONLY END
 		CacheField(group, "objectID", value);
@@ -4053,9 +4053,9 @@ fieldConverters = {
 					CacheField(group, "itemIDAsCost", v[2]);
 				elseif v[1] == "o" then
 					-- WARNING: DEV ONLY START
-					if not L["OBJECT_ID_NAMES"][v[2]] then
+					if not app.ObjectNames[v[2]] then
 						print("Object Missing Name ", v[2]);
-						L["OBJECT_ID_NAMES"][v[2]] = "Object #" .. v[2];
+						app.ObjectNames[v[2]] = "Object #" .. v[2];
 					end
 					-- WARNING: DEV ONLY END
 					rawget(fieldConverters, "objectID")(group, v[2]);
@@ -8517,10 +8517,13 @@ local objectFields = {
 		return app.TryColorizeName(t, t.name);
 	end,
 	["name"] = function(t)
-		return L["OBJECT_ID_NAMES"][t.objectID] or ("Object ID #" .. t.objectID);
+		return app.ObjectNames[t.objectID] or ("Object ID #" .. t.objectID);
 	end,
 	["icon"] = function(t)
-		return L["OBJECT_ID_ICONS"][t.objectID] or "Interface\\Icons\\INV_Misc_Bag_10";
+		return app.ObjectIcons[t.objectID] or "Interface\\Icons\\INV_Misc_Bag_10";
+	end,
+	["model"] = function(t)
+		return app.ObjectModels[t.objectID];
 	end,
 	
 	["nameAsAchievement"] = function(t)
@@ -8796,7 +8799,7 @@ local questFields = {
 			for k,v in ipairs(t.providers) do
 				if v[2] > 0 then
 					if v[1] == "o" then
-						return L["OBJECT_ID_ICONS"][v[2]] or "Interface\\Icons\\INV_Misc_Bag_10";
+						return app.ObjectIcons[v[2]] or "Interface\\Icons\\INV_Misc_Bag_10";
 					elseif v[1] == "i" then
 						return select(5, GetItemInfoInstant(v[2])) or "Interface\\Icons\\INV_Misc_Book_09";
 					end
@@ -8809,6 +8812,17 @@ local questFields = {
 			return "Interface\\AddOns\\AllTheThings\\assets\\Interface_Questd";
 		else
 			return "Interface\\AddOns\\AllTheThings\\assets\\Interface_Quest";
+		end
+	end,
+	["model"] = function(t)
+		if t.providers then
+			for k,v in ipairs(t.providers) do
+				if v[2] > 0 then
+					if v[1] == "o" then
+						return app.ObjectModels[v[2]];
+					end
+				end
+			end
 		end
 	end,
 	["hasIndicator"] = function(t)
@@ -9215,7 +9229,7 @@ local fields = {
 			for k,v in ipairs(t.providers) do
 				if v[2] > 0 then
 					if v[1] == "o" then
-						return L["OBJECT_ID_ICONS"][v[2]] or "Interface\\Worldmap\\Gear_64Grey";
+						return app.ObjectIcons[v[2]] or "Interface\\Worldmap\\Gear_64Grey";
 					elseif v[1] == "i" then
 						return select(5, GetItemInfoInstant(v[2])) or "Interface\\Worldmap\\Gear_64Grey";
 					end
@@ -9223,6 +9237,17 @@ local fields = {
 			end
 		end
 		return t.parent.icon or "Interface\\Worldmap\\Gear_64Grey";
+	end,
+	["model"] = function(t)
+		if t.providers then
+			for k,v in ipairs(t.providers) do
+				if v[2] > 0 then
+					if v[1] == "o" then
+						return app.ObjectModels[v[2]];
+					end
+				end
+			end
+		end
 	end,
 	["objectiveID"] = function(t)
 		return 1;
@@ -12658,7 +12683,7 @@ RowOnEnter = function (self)
 				local providerID = provider[2] or 0
 				local providerString = "UNKNOWN"
 				if providerType == "o" then
-					providerString = L["OBJECT_ID_NAMES"][providerID] or 'Object #'..providerID
+					providerString = app.ObjectNames[providerID] or 'Object #'..providerID
 				elseif providerType == "n" then
 					providerString = (providerID > 0 and NPCNameFromID[providerID]) or "Creature #"..providerID
 				elseif providerType == "i" then

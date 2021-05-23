@@ -15,6 +15,7 @@ src\base.lua
 db\Presets.lua
 db\CategoryDB.lua
 db\FlightPathDB.lua
+db\ObjectDB.lua
 db\RaceDB.lua
 locales\enUS.lua
 locales\esES.lua

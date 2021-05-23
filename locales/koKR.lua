@@ -1098,7 +1098,7 @@ for key,value in pairs({
 })
 do a[key] = value; end
 
-local a = L.OBJECT_ID_NAMES;
+local a = app.ObjectNames;
 for key,value in pairs({
 	[31] = "오래된 사자상",	-- Old Lion Statue
 	[55] = "반쯤 파먹힌 시체",	-- A half-eaten body

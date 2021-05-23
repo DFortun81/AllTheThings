@@ -855,5 +855,5 @@ _.CategoryNames = {
 	[1538] = "Bags",
 };
 _.CategoryIcons = {
-	[773] = "Interface\\Icons\\inv_misc_ticket_tarot_twistingnether_01",	-- Trinkets
+	[773] = "Interface/Icons/inv_misc_ticket_tarot_twistingnether_01",	-- Trinkets
 };
