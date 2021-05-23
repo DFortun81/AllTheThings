@@ -76,6 +76,96 @@ _.Achievements =
 					},
 				}),
 			}),
+			n(-672, {	-- Ruthless Gladiator: Cataclysm Season 2
+				ach(6316, {	-- Hero of the Alliance: Ruthless
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				ach(6317, {	-- Hero of the Horde: Ruthless
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				ach(6124, {	-- Ruthless Gladiator: Cataclysm Season 2
+					["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+						title(192, {	-- Ruthless Gladiator <Name>
+							["u"] = REMOVED_FROM_GAME,
+						}),
+					},
+				}),
+			}),
+			n(-673, {	--  Cataclysmic Gladiator: Cataclysm Season 3
+				ach(6938, {	-- Cataclysmic Gladiator: Cataclysm Season 3
+					["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+						title(193, {	-- Cataclysmic Gladiator <Name>
+							["u"] = REMOVED_FROM_GAME,
+						}),
+					},
+				}),
+				ach(6939, {	-- Hero of the Alliance: Cataclysmic
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				ach(6940, {	-- Hero of the Horde: Cataclysmic
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+			}),
+			n(-674, {	-- Vicious Gladiator: Cataclysm Season 1
+				ach(5344, {	-- Hero of the Alliance: Vicious
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				ach(5358, {	-- Hero of the Horde: Vicious
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				ach(6002, {	-- Vicious Gladiator: Cataclysm Season 1
+					["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+						title(191, {	-- Vicious Gladiator <Name>
+							["u"] = REMOVED_FROM_GAME,
+						}),
+					},
+				}),
+			}),
+			n(-675, {	-- Malevolent Gladiator: Mists of Pandaria Season 1
+				ach(8243, {	-- Hero of the Alliance: Malevolent
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				ach(8244, {	-- Hero of the Horde: Malevolent
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				ach(8214, {	-- Malevolent Gladiator: Mists of Pandaria  Season 1
+					["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+						title(223, {	-- Malevolent Gladiator <Name>
+							["u"] = REMOVED_FROM_GAME,
+						}),
+					},
+				}),
+			}),
+			n(-676, {	-- Tyrannical Gladiator: Mists of Pandaria  Season 2
+				ach(8652, {	-- Hero of the Alliance: Tyrannical
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				ach(8653, {	-- Hero of the Horde: Tyrannical
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				ach(8791, {	-- Tyrannical Gladiator: Mists of Pandaria  Season 2
+					["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+						title(225, {	-- Tyrannical Gladiator <Name>
+							["u"] = REMOVED_FROM_GAME,
+						}),
+					},
+				}),
+			}),
 			n(-679, {	-- Primal Gladiator: Warlords of Draenor Season 1
 				ach(9242, {	-- Challenger: Warlords of Draenor  Season 1
 					["u"] = REMOVED_FROM_GAME,
@@ -1448,7 +1538,6 @@ _.Achievements =
 					},
 				}),
 			}),
-			un(REMOVED_FROM_GAME, ach(6938)),		-- Cataclysmic Gladiator
 			un(REMOVED_FROM_GAME, ach(8649)),		-- Challenger: Season 14
 			un(REMOVED_FROM_GAME, ach(8670)),		-- Challenger: Season 15
 			un(REMOVED_FROM_GAME, ach(8645)),		-- Duelist: Season 14
@@ -1458,27 +1547,16 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, ach(8643, {		-- Grievous Gladiator: Season 14
 				un(REMOVED_FROM_GAME, title(253)),		-- Grievous Gladiator
 			})),
-			un(REMOVED_FROM_GAME, a(ach(6939))),	-- Hero of the Alliance: Cataclysmic
 			un(REMOVED_FROM_GAME, a(ach(8654))),	-- Hero of the Alliance: Grievous
-			un(REMOVED_FROM_GAME, a(ach(8243))),	-- Hero of the Alliance: Malevolent
 			un(REMOVED_FROM_GAME, a(ach(8658))),	-- Hero of the Alliance: Prideful
-			un(REMOVED_FROM_GAME, a(ach(6316))),	-- Hero of the Alliance: Ruthless
-			un(REMOVED_FROM_GAME, a(ach(8652))),	-- Hero of the Alliance: Tyrannical
-			un(REMOVED_FROM_GAME, a(ach(5344))),	-- Hero of the Alliance: Vicious
-			un(REMOVED_FROM_GAME, h(ach(6940))),	-- Hero of the Horde: Cataclysmic
 			un(REMOVED_FROM_GAME, h(ach(8657))),	-- Hero of the Horde: Grievous
-			un(REMOVED_FROM_GAME, h(ach(8244))),	-- Hero of the Horde: Malevolent
 			un(REMOVED_FROM_GAME, h(ach(8659))),	-- Hero of the Horde: Prideful
-			un(REMOVED_FROM_GAME, h(ach(6317))),	-- Hero of the Horde: Ruthless
-			un(REMOVED_FROM_GAME, h(ach(8653))),	-- Hero of the Horde: Tyrannical
-			un(REMOVED_FROM_GAME, h(ach(5358))),	-- Hero of the Horde: Vicious
 			un(REMOVED_FROM_GAME, ach(1161, {		-- High Five: 2200
 				un(REMOVED_FROM_GAME, ach(404)),		-- High Five: 2000
 				un(REMOVED_FROM_GAME, ach(407)),		-- High Five: 1750
 				un(REMOVED_FROM_GAME, ach(406)),		-- High Five: 1550
 			})),
 			un(REMOVED_FROM_GAME, ach(409)),		-- Last Man Standing
-			un(REMOVED_FROM_GAME, ach(8214)),		-- Malevolent Gladiator
 			un(REMOVED_FROM_GAME, ach(3618)),		-- Murkimus the Gladiator
 				un(REMOVED_FROM_GAME, i(100870)),	-- Murkismus the gladiator
 			un(REMOVED_FROM_GAME, ach(8666, {		-- Prideful Gladiator: Season 15
@@ -1496,7 +1574,6 @@ _.Achievements =
 			}))),
 			un(REMOVED_FROM_GAME, ach(8646)),		-- Rival: Season 14
 			un(REMOVED_FROM_GAME, ach(8669)),		-- Rival: Season 15
-			un(REMOVED_FROM_GAME, ach(6124)),		-- Ruthless Gladiator
 			(ach(12568)),			-- The Alliance Slayer
 			a(ach(12567)),			-- The Horde Slayer
 			ach(9725, {				-- The Last of Us
@@ -1515,8 +1592,6 @@ _.Achievements =
 				un(REMOVED_FROM_GAME, title(128)),		-- Vanquisher
 			})),
 			un(REMOVED_FROM_GAME, ach(8391)),		-- Tournament Participation 2013
-			un(REMOVED_FROM_GAME, ach(8791)),		-- Tyrannical Gladiator
-			un(REMOVED_FROM_GAME, ach(6002)),		-- Vicious Gladiator
 		}),
 	}),
 };
