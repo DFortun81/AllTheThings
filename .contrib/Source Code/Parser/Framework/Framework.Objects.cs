@@ -986,7 +986,10 @@ namespace ATT
             {
                 var AllContainerClones = new Dictionary<string, List<object>>(AllContainers);
                 AllContainerClones.Remove("Uncollectable");
-                File.WriteAllText(Path.Combine(directory, "Categories.lua"), ATT.Export.ExportCompressedLuaCategories(AllContainerClones).ToString());
+
+                var filename = Path.Combine(directory, "Categories.lua");
+                var content = ATT.Export.ExportCompressedLuaCategories(AllContainerClones).ToString().Replace("\r\n", "\n").Trim();
+                if (!File.Exists(filename) || File.ReadAllText(filename).Replace("\r\n", "\n").Trim() != content) File.WriteAllText(filename, content);
             }
             #endregion
             #region Export DB

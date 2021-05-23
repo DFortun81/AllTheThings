@@ -5083,12 +5083,12 @@ profession(TAILORING, {
 			}
 		},
 	})),
-	n(QUESTS, {
+	n(QUESTS, bubbleDown({ ["timeline"] = { "removed 4.0.3.10000" } }, {
 		q(3379, {	-- Shadoweaver
 			["qg"] = 8439,	-- Nilith Lokrav
-			["requireSkill"] = TAILORING,
 			["coord"] = { 41.0, 75.0, SEARING_GORGE },
 			["maps"] = { SEARING_GORGE },
+			["requireSkill"] = TAILORING,
 			["lvl"] = 40,
 			["groups"] = {
 				i(10461),	-- Shadowy Bracers
@@ -5097,9 +5097,9 @@ profession(TAILORING, {
 		q(3385, {	-- The Undermarket (1/2)
 			["qg"] = 8439,	-- Nilith Lokrav
 			["sourceQuest"] = 3379,	-- Shadoweaver
-			["requireSkill"] = TAILORING,
 			["coord"] = { 41.0, 75.0, SEARING_GORGE },
 			["maps"] = { SEARING_GORGE },
+			["requireSkill"] = TAILORING,
 			["cost"] = {
 				{ "i", 10467, 1 },	-- Trader's Satchel
 			},
@@ -5107,7 +5107,6 @@ profession(TAILORING, {
 			["groups"] = {
 				{
 					["itemID"] = 10467,	-- Trader's Satchel
-					["questID"] = 3385,	-- The Undermarket (1/2)
 					["cr"] = 8444,	-- Trade Master Kovic <The Undermarket>
 					["coord"] = { 35.8, 52.6, SEARING_GORGE },
 				},
@@ -5118,14 +5117,15 @@ profession(TAILORING, {
 		q(3402, {	-- The Undermarket (2/2)
 			["qg"] = 8439,	-- Nilith Lokrav
 			["sourceQuest"] = 3385,	-- The Undermarket (1/2)
-			["requireSkill"] = TAILORING,
+			["coord"] = { 41.0, 75.0, SEARING_GORGE },
 			["maps"] = { SEARING_GORGE },
+			["requireSkill"] = TAILORING,
 			["lvl"] = 40,
 			["groups"] = {
 				i(10463),	-- Pattern: Shadoweave Mask
 			},
 		}),
-	}),
+	})),
 });
 
 -- Add the following recipes to the Time Lost Trader without applying the phase release.
