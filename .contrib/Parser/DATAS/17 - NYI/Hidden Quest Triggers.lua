@@ -4545,6 +4545,9 @@ _.HiddenQuestTriggers =
 		q(62751),	-- hitting Renown 35 on Venthyr / unlocking Deepening Bond 6% stam increase
 		q(62925),	-- hitting Renown 39 on Venthyr / received mount Gravestone Battle Gargon
 		q(64508),	-- hitting Renown 41 on Venthyr
+		q(64131),	-- hitting Renown 45 on Venthyr / received mount Sinfall Gravewing
+		q(64076),	-- hitting Renown 46 on Venthyr
+		q(64073),	-- Hitting Renown 47 on Venthyr
 		q(59744),	-- when opening the Battered Chest while on Repair and Restore
 		q(60302),	-- when channeling anima to Dominance Keep for the first time
 		-- q(61494),	-- using Building: Guardhouse

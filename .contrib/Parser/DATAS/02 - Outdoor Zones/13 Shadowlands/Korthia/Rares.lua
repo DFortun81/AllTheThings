@@ -126,6 +126,19 @@ _.Zones =
 						crit(9, {	-- Relic Breaker Krelva
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
+						i(187403),	-- Relic Breaker's Drape
+					},
+				}),
+				n(180160, {	-- Reliwik the Defiant
+					["description"] = "Click the |cFFFFFFFFUncorrupted Razorwing Egg|r to draw the attention of the rare.",
+					["questID"] = 64455,
+					["isDaily"] = true,
+					["coord"] = { 56.3, 66.2, KORTHIA },
+					["g"] = {
+						crit(23, {	-- Reliwik the Defiant
+							["achievementID"] = 15107,	-- Conquering Korthia
+						}),
+						i(186652),	-- Garnet Razorwing (MOUNT!)
 					},
 				}),
 				n(179985, {	-- Stygian Stonecrusher

@@ -19,7 +19,6 @@ _.Zones =
 					},
 				}),
 				ach(15107, {	-- Conquering Korthia
-					crit(3),	-- Torgllun, Lord of Shades - maw, think it's connected to a specific tormentor of torghast event, replaces cyrixia
 					crit(10),	-- Guard Orguluus
 					crit(11),	-- Screaming Shade - korthia (44.6, 42.9) but requires a currently inaccessible phase to engage in combat
 					crit(12),	-- Silent Soulstalker
@@ -27,10 +26,6 @@ _.Zones =
 					crit(14),	-- Chamber of Knowledge
 					crit(15),	-- Chamber of Wisdom
 					crit(16),	-- Blinding Shadow
-					crit(23),	-- Towering Exterminator
-					crit(24),	-- 
-					crit(25),	-- 
-					crit(26),	-- 
 				}),
 				ach(15066),		-- Reliquary Restoration
 				ach(15099, {	-- Treasures of Korthia

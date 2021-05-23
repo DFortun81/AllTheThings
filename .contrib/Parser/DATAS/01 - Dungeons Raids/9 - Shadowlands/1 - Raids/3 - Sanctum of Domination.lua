@@ -11,6 +11,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 		["maps"] = {
 			1998,	-- TorghastRaidA
 			1999,	-- TorghastRaidB
+			2000,	-- TorghastRaidC
 			2001,	-- TorghastRaidD
 		},
 		["g"] = {
@@ -39,7 +40,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2445, {	-- Soulrender Dormazain
-				--	["crs"] = {  },	-- 
+					["crs"] = { 175727 },	-- Soulrender Dormazain 175728 Garrosh Hellscream
 					["g"] = {
 					},
 				}),

@@ -8,6 +8,7 @@ _.Zones =
 		m(KORTHIA, {
 			n(-212, {	-- Treasure Chest
 			--	TODO: (?) korthian relic boxes currently do not have questIDs and don't actually even disappear immediately when you open them - if quests for them get implemented, they need to be added
+			--	i looted i(186987),	-- Recipe: Torch Burst and it MAY have come from an Invasive Mawshroom, but i'm not sure :(  it's a white item and i didn't notice it until a little while later
 				i(187216),	-- Soultwining Crescent
 				i(185962, {	-- Rune Chit
 					["sourceQuests"] = { 64506 },	-- What Must Be Found
@@ -177,27 +178,42 @@ _.Zones =
 					["questID"] = 64358,
 					["isDaily"] = true,
 					["coord"] = { 41.0, 39.7, KORTHIA },
+					["g"] = {
+						i(187008),	-- Recipe: Porous Rock Candy
+					},
 				}),
 				o(369334, {	-- Nest of Unusual Materials
 					["questID"] = 64359,
 					["isDaily"] = true,
 					["coord"] = { 42.4, 54.8, KORTHIA },
+					["g"] = {
+						i(187008),	-- Recipe: Porous Rock Candy
+					},
 				}),
 				o(369335, {	-- Nest of Unusual Materials
 					["description"] = "Climb across the tree to reach the nest.",
 					["questID"] = 64360,
 					["isDaily"] = true,
 					["coord"] = { 52.4, 43.8, KORTHIA },
+					["g"] = {
+						i(187008),	-- Recipe: Porous Rock Candy
+					},
 				}),
 				o(369336, {	-- Nest of Unusual Materials
 					["questID"] = 64361,
 					["isDaily"] = true,
 					["coord"] = { 63.7, 31.4, KORTHIA },
+					["g"] = {
+						i(187008),	-- Recipe: Porous Rock Candy
+					},
 				}),
 				o(369337, {	-- Nest of Unusual Materials
 					["questID"] = 64362,
 					["isDaily"] = true,
 					["coord"] = { 52.3, 72.7, KORTHIA },
+					["g"] = {
+						i(187008),	-- Recipe: Porous Rock Candy
+					},
 				}),
 				o(369232, {	-- Offering Box
 					["description"] = "To open the treasure, climb up the outside of the building and loot the |cFFFFFFFFSmall Offering Key|r at |cFFFFFFFF43.5 67.5|r.",

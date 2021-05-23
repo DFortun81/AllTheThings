@@ -643,6 +643,7 @@ _.Zones =
 				}),
 				q(57876, {	-- The End of the Beginning
 					["sourceQuests"] = { 58086 },	-- The Master of Lies
+					["altQuests"] = { 62704 },	-- The Threads of Fate (can't do this version on a Skip character)
 					["provider"] = { "n", 165557 },	-- Prince Renathal
 					["coord"] = { 50.2, 28.2, REVENDRETH },
 				}),

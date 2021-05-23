@@ -241,6 +241,7 @@ _.Zones =
 									i(185894),	-- Attendant's Loop*
 									i(185941),	-- Korthian Scholar's Signet*
 									i(185895),	-- Lost Wayfairer's Band*
+									i(185903),	-- Soul-Seeker's Ring*
 								}),
 							},
 						}),

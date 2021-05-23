@@ -226,6 +226,11 @@ _.Zones =
 					["provider"] = { "n", 177423 },	-- Tal-Galan
 					["coord"] = { 57.4, 29.8, KORTHIA },
 				}),
+				q(63731, {	-- Shattered Relics
+					["isBreadcrumb"] = true,	-- TODO: definitely optional, you can unlock archivist's codex without it, but i'm not sure how.
+					["description"] = "The item that starts this quest can be looted from any treasure chest or rare in Korthia.",
+					["provider"] = { "i", 187177 },	-- Shattered Relic
+				}),
 				q(63911, {	-- Singing Steel Ingot
 					["sourceQuests"] = { 64506 },	-- What Must Be Found
 					["provider"] = { "i", 187200 },	-- Singing Steel Ingot

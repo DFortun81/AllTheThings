@@ -385,6 +385,7 @@ i(186490, 353885);	-- Battlefield Swarmer
 i(186645, 354357);	-- Crimson Shardhide
 i(186646, 354358);	-- Darkmaul
 i(186482, 353875);	-- Elysian Aquilon
+i(186652, 354360);	-- Garnet Razorwing
 i(185996, 332904);	-- Harvester's Dredwing
 i(186643, 354362);	-- Maelie The Wanderer
 i(186487, 353883);	-- Maldraxxian Corpsefly

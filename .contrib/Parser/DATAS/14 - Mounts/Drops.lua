@@ -75,6 +75,7 @@ _.Mounts =
 		i(166433),	-- Frightened Kodo
 		i(116794),	-- Garn Nighthowl
 		i(116779),	-- Garn Steelmaw
+		i(186652),	-- Garnet Razorwing
 		i(116673),	-- Giant Coldsnout
 		i(166705),	-- Glacial Tidestorm
 		i(153042),	-- Glorious Felcrusher Mount

@@ -165,6 +165,7 @@ _.Zones =
 				}),
 				q(57878, {	-- Choosing Your Purpose
 					["sourceQuests"] = { 57877 },	-- The Looming Dark
+					["altQuests"] = { 62704 },	-- The Threads of Fate (can't do this version on a Skip character)
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 39.2, 69.7, ORIBOS },
 				}),
@@ -274,7 +275,9 @@ _.Zones =
 					},
 				}),
 				q(61558, {	-- The Highlord's Vision
-					["sourceQuests"] = { 61557 },	-- An Echo in the Darkness
+				--	unsure when these SQs were changed, but this is the correct SQ in 9.1
+				--	["sourceQuests"] = { 61557 },	-- An Echo in the Darkness
+					["sourceQuests"] = { 61730 },	-- The Captive King
 					["providers"] = {
 						{ "n", 171362 },	-- Thrall (this NPC gives the quest but the RP does not properly progress)
 						{ "n", 175912 },	-- Thrall (this NPC gives the quest and triggers the RP properly)
@@ -289,6 +292,7 @@ _.Zones =
 				}),
 				q(57877, {	-- The Looming Dark
 					["sourceQuests"] = { 57876 },	-- The End of the Beginning
+					["altQuests"] = { 62704 },	-- The Threads of Fate (can't do this version on a Skip character)
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 39.2, 69.7, ORIBOS },
 				}),
@@ -765,6 +769,12 @@ _.Zones =
 					["sourceQuests"] = { 63976 },	-- The Al'ley Cat of Oribos
 					["provider"] = { "n", 178908 },	-- Al'dalil
 					["coord"] = { 57.1, 31.1, ORIBOS },	-- Ring of Fates
+				}),
+				q(63944, {	-- Korthia Awaits
+					["description"] = "Only available to characters who choose to skip ahead to Korthia.",
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
+					["coord"] = { 40.3, 67.9, ORIBOS },	-- Ring of Fates
 				}),
 				q(63661, {	-- Link to the Maw
 					["sourceQuests"] = { 63660 },	-- Opening the Maw
