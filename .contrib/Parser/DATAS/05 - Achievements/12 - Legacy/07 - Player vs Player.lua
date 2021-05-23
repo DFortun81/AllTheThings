@@ -72,8 +72,6 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, a(ach(433, {		-- Grand Marshal
 				un(REMOVED_FROM_GAME, a(title(14))),	-- Grand Marshal
 			}))),
-			un(REMOVED_FROM_GAME, a(ach(8485))),	-- Grievous Combatant (Alliance)
-			un(REMOVED_FROM_GAME, h(ach(8484))),	-- Grievous Combatant (Horde)
 			un(REMOVED_FROM_GAME, a(ach(8382))),	-- Grievous Conquest (Alliance)
 			un(REMOVED_FROM_GAME, h(ach(8381))),	-- Grievous Conquest (Horde)
 			un(REMOVED_FROM_GAME, h(ach(468, {		-- Grunt
@@ -134,8 +132,6 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, h(ach(2192))),	-- Not Even a Scratch (Horde)
 			un(REMOVED_FROM_GAME, a(ach(610))),		-- Orgrimmar Offensive
 			un(REMOVED_FROM_GAME, ach(12183)),		-- Prestige Quartermaster
-			un(REMOVED_FROM_GAME, a(ach(8642))),	-- Prideful Combatant (Alliance)
-			un(REMOVED_FROM_GAME, h(ach(8641))),	-- Prideful Combatant (Horde)
 			un(REMOVED_FROM_GAME, a(ach(8451))),	-- Prideful Conquest (Alliance)
 			un(REMOVED_FROM_GAME, h(ach(8450))),	-- Prideful Conquest (Horde)
 			un(REMOVED_FROM_GAME, a(ach(9234))),	-- Primal Conquest (Alliance)
@@ -165,7 +161,7 @@ _.Achievements =
 				un(REMOVED_FROM_GAME, h(title(20))),	-- Stone Guard
 			}))),
 			un(REMOVED_FROM_GAME, ach(1310)),		-- Storm the Beach
-			ach(615, {	-- Storming Stormwind
+			ach(615, {								-- Storming Stormwind
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 			}),
@@ -179,11 +175,11 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, ach(11469)),		-- The River Six
 			un(REMOVED_FROM_GAME, ach(11686)),		-- These Go To Eleven
 			un(REMOVED_FROM_GAME, ach(10993)),		-- Third Time's The Charm
-			ach(10988, {	-- Top Honors (A)
+			ach(10988, {							-- Top Honors (A)
 				["races"] = ALLIANCE_ONLY,
 				["u"] = REMOVED_FROM_GAME,	-- Removed in Patch 8.0
 			}),
-			ach(10990, {	-- Top Honors (H)
+			ach(10990, {							-- Top Honors (H)
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,	-- Removed in Patch 8.0
 			}),
@@ -193,20 +189,20 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, h(ach(445, {		-- Warlord
 				un(REMOVED_FROM_GAME, h(title(27))),	-- Warlord
 			}))),
-			ach(10091, {	-- Warmongering Conquest (A)
+			ach(10091, {							-- Warmongering Conquest (A)
 				["races"] = ALLIANCE_ONLY,
 				["u"] = REMOVED_FROM_GAME,	-- Removed in Patch 7.0
 			}),
-			ach(10090, {	-- Warmongering Conquest (H)
+			ach(10090, {							-- Warmongering Conquest (H)
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,	-- Removed in Patch 7.0
 			}),
 			un(REMOVED_FROM_GAME, ach(11690)),		-- When You're Fifteen
-			ach(10089, {	-- Wild Conquest (A)
+			ach(10089, {							-- Wild Conquest (A)
 				["races"] = ALLIANCE_ONLY,
 				["u"] = REMOVED_FROM_GAME,	-- Removed in Patch 6.2.2
 			}),
-			ach(10088, {	-- Wild Conquest (H)
+			ach(10088, {							-- Wild Conquest (H)
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,	-- Removed in Patch 6.2.2
 			}),

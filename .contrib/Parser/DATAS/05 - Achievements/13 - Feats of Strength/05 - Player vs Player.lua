@@ -169,6 +169,116 @@ _.Achievements =
 					},
 				}),
 			}),
+			n(-677, {	-- Grievous Gladiator: Mists of Pandaria Season 3/Season 14
+				ach(8649, {	-- Challenger: WMists of Pandaria Season 3/Season 14
+					["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+						--title(32),	-- Challenger <Name>
+					},
+				}),
+				ach(8645, {	-- Duelist: Mists of Pandaria Season 3/Season 14
+					["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+						--title(30),	-- Duelist <Name>
+					},
+				}),
+				ach(8644, {	-- Gladiator: Mists of Pandaria Season 3/Season 14
+					["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+						--title(29),	-- Gladiator <Name>
+						i(104326, {	-- Grievous Gladiator's Cloud Serpent
+							["u"] = REMOVED_FROM_GAME,
+						}),
+					},
+				}),
+				-- Sometimes under Legacy, sometimes under FoS. 
+				-- We put them all under FoS in ATT.
+				ach(8485, {	-- Grievous Combatant (Alliance) Mists of Pandaria Season 3/Season 14
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				ach(8484, {	-- Grievous Combatant (Horde) Mists of Pandaria Season 3/Season 14
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				ach(8643, {	-- Grievous Gladiator: Mists of Pandaria Season 3/Season 14
+					["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+						title(253, {	-- Grievous Gladiator <Name>
+							["u"] = REMOVED_FROM_GAME,
+						}),
+					},
+				}),
+				ach(8654, {	-- Hero of the Alliance: Grievous
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				ach(8657, {	-- Hero of the Horde: Grievous
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				ach(8646, {	-- Rival: Mists of Pandaria Season 3/Season 14
+					["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+						--title(31),	-- Rival <Name>
+					},
+				}),
+			}),
+			n(-678, {	-- Prideful Gladiator: Mists of Pandaria Season 4/Season 15
+				ach(8670, {	-- Challenger: Mists of Pandaria Season 4/Season 15
+					["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+						--title(32),	-- Challenger <Name>
+					},
+				}),
+				ach(8668, {	-- Duelist: Mists of Pandaria Season 4/Season 15
+					["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+						--title(30),	-- Duelist <Name>
+					},
+				}),
+				ach(8667, {	-- Gladiator: Mists of Pandaria Season 4/Season 15
+					["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+						--title(29),	-- Gladiator <Name>
+						i(104327, {	-- Prideful Gladiator's Cloud Serpent
+							["u"] = REMOVED_FROM_GAME,
+						}),
+					},
+				}),
+				ach(8658, {	-- Hero of the Alliance: Prideful
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				ach(8659, {	-- Hero of the Horde: Prideful
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				-- Sometimes under Legacy, sometimes under FoS. 
+				-- We put them all under FoS in ATT.
+				ach(8642, {	-- Prideful Combatant (Alliance) Mists of Pandaria Season 4/Season 15
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				ach(8641, {	-- Prideful Combatant (Horde) Mists of Pandaria Season 4/Season 15
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				ach(8666, {	-- Prideful Gladiator: Mists of Pandaria Season 4/Season 15
+					["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+						title(254, {	-- Prideful Gladiator <Name>
+							["u"] = REMOVED_FROM_GAME,
+						}),
+					},
+				}),
+				ach(8669, {	-- Rival: Mists of Pandaria Season 4/Season 15
+					["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+						--title(31),	-- Rival <Name>
+					},
+				}),
+			}),
 			n(-679, {	-- Primal Gladiator: Warlords of Draenor Season 1
 				ach(9242, {	-- Challenger: Warlords of Draenor Season 1
 					["u"] = REMOVED_FROM_GAME,
@@ -1541,19 +1651,6 @@ _.Achievements =
 					},
 				}),
 			}),
-			un(REMOVED_FROM_GAME, ach(8649)),		-- Challenger: Season 14
-			un(REMOVED_FROM_GAME, ach(8670)),		-- Challenger: Season 15
-			un(REMOVED_FROM_GAME, ach(8645)),		-- Duelist: Season 14
-			un(REMOVED_FROM_GAME, ach(8668)),		-- Duelist: Season 15
-			un(REMOVED_FROM_GAME, ach(8644)),		-- Gladiator: Season 14
-			un(REMOVED_FROM_GAME, ach(8667)),		-- Gladiator: Season 15
-			un(REMOVED_FROM_GAME, ach(8643, {		-- Grievous Gladiator: Season 14
-				un(REMOVED_FROM_GAME, title(253)),		-- Grievous Gladiator
-			})),
-			un(REMOVED_FROM_GAME, a(ach(8654))),	-- Hero of the Alliance: Grievous
-			un(REMOVED_FROM_GAME, a(ach(8658))),	-- Hero of the Alliance: Prideful
-			un(REMOVED_FROM_GAME, h(ach(8657))),	-- Hero of the Horde: Grievous
-			un(REMOVED_FROM_GAME, h(ach(8659))),	-- Hero of the Horde: Prideful
 			un(REMOVED_FROM_GAME, ach(1161, {		-- High Five: 2200
 				un(REMOVED_FROM_GAME, ach(404)),		-- High Five: 2000
 				un(REMOVED_FROM_GAME, ach(407)),		-- High Five: 1750
@@ -1561,33 +1658,24 @@ _.Achievements =
 			})),
 			un(REMOVED_FROM_GAME, ach(409)),		-- Last Man Standing
 			un(REMOVED_FROM_GAME, ach(3618)),		-- Murkimus the Gladiator
-				un(REMOVED_FROM_GAME, i(100870)),	-- Murkismus the gladiator
-			un(REMOVED_FROM_GAME, ach(8666, {		-- Prideful Gladiator: Season 15
-				un(REMOVED_FROM_GAME, title(254)),		-- Prideful Gladiator
-			})),
-			un(REMOVED_FROM_GAME, a(ach(9256, {	-- Rescue Operation (Alliance)
-					crit(1),			-- Commander Jobby Shortsight
-					crit(2),			-- Marshal Andrea DeSousa
-					crit(3),			-- Field Marshal Kerwin
+				un(REMOVED_FROM_GAME, i(100870)),		-- Murkismus the gladiator
+			un(REMOVED_FROM_GAME, a(ach(9256, {		-- Rescue Operation (Alliance)
+					crit(1),						-- Commander Jobby Shortsight
+					crit(2),						-- Marshal Andrea DeSousa
+					crit(3),						-- Field Marshal Kerwin
 			}))),
-			un(REMOVED_FROM_GAME, h(ach(9257, {	-- Rescue Operation (Horde)
-					crit(1),			-- Warlord Jugan
-					crit(2),			-- General Lizzie Heartbane
-					crit(3),			-- Marshal Lyrdrea Daybreaker
+			un(REMOVED_FROM_GAME, h(ach(9257, {		-- Rescue Operation (Horde)
+					crit(1),							-- Warlord Jugan
+					crit(2),							-- General Lizzie Heartbane
+					crit(3),						-- Marshal Lyrdrea Daybreaker
 			}))),
-			un(REMOVED_FROM_GAME, ach(8646)),		-- Rival: Season 14
-			un(REMOVED_FROM_GAME, ach(8669)),		-- Rival: Season 15
-			(ach(12568)),			-- The Alliance Slayer
-			a(ach(12567)),			-- The Horde Slayer
-			ach(9725, {				-- The Last of Us
-				title(302, {			-- ,Lord of War (Gender specific title, must log in with both genders to recieve both titles)
-					["groups"] = {
-					},
+			(ach(12568)),							-- The Alliance Slayer
+			a(ach(12567)),							-- The Horde Slayer
+			ach(9725, {								-- The Last of Us
+				title(302, {						-- Lord of War (Gender specific title, must log in with both genders to recieve both titles)
 					["description"] = "Must earn with a male character.",
 				}),
-				title(303, {			-- ,Lady of War (Gender specific title, must log in with both genders to recieve both titles)
-					["groups"] = {
-					},
+				title(303, {						-- Lady of War (Gender specific title, must log in with both genders to recieve both titles)
 					["description"] = "Must earn with a female character.",
 				}),
 			}),
