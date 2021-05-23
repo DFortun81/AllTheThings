@@ -5019,7 +5019,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 			},
 		}),
 	})),
-	applyclassicphase(SHADOWLANDS_PHASE_ONE, tier(8, {	-- Shadowlands
+	applyclassicphase(SHADOWLANDS_PHASE_ONE, tier(9, {	-- Shadowlands
 		{
 			["name"] = "Quest Recipes",
 			["categoryID"] = 1530,
