@@ -232,6 +232,7 @@ _.Zones =
 								f(7,    {	-- Plate
 								}),
 								n(-319, {	-- Weapons
+									i(186759),	-- Korthian Anima Vessel*
 									i(185890),	-- Korthian Caretaker's Kris*
 									i(185888),	-- Korthian Caretaker's Orb
 									i(185900),	-- Korthian Caretaker's Rod

@@ -47,6 +47,7 @@ _.Zones =
 				i(187324),	-- Gnawed Ancient Idol
 				i(187326),	-- Half-Completed Runeforge Pattern
 				i(187335),	-- Maldraxxus Larva Shell
+				i(187330),	-- Naaru Shard Fragment
 				i(187332),	-- Recovered Page of Voices
 				i(187323),	-- Runic Diagram
 				i(187334),	-- Shattered Void Tablet

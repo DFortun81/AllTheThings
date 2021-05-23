@@ -464,6 +464,12 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 60.9, 21.7, KORTHIA },
 				}),
+				q(63915, {	-- Drum of Driving
+					["sourceQuests"] = { 64506 },	-- What Must Be Found
+					["description"] = "Requires someone with Tier 3 Archivist's Codex reputation to repair the teleportation pad",
+					["provider"] = { "i", 187204 },	-- Drum of Driving
+					["coord"] = { 39.3, 52.4, KORTHIA },
+				}),
 				q(63958, {	-- Encrypted Databanks
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 178844 },	-- Ta'nasi
@@ -504,6 +510,17 @@ _.Zones =
 					["provider"] = { "n", 178806 },	-- Plague Deviser Marileth
 					["isDaily"] = true,
 					["coord"] = { 60.5, 27.7, KORTHIA },
+				}),
+				q(64519, {	-- Lost Vaults
+					["sourceQuests"] = {
+						64511,	-- Missing Relics
+					--	TODO: "Missing Relics" is the previous quest in the chain.  i didn't get access to this until i had turned in the 2 quests below, which took me to Tier 3 research.
+					--	not sure if the quests are the prerequisite, the research, or both.  fragment turn-ins are SUPER janky atm on PTR so i can't test trying to get the rep without turning in any reliquaries
+						63915,	-- Drum of Driving
+						63917,	-- Everliving Statuette
+					},
+					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+					["coord"] = { 62.7, 22.5, KORTHIA },
 				}),
 				q(63781, {	-- Mawsworn Battle Plans
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants

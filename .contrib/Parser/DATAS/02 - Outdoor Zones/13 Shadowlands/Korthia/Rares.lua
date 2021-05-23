@@ -164,6 +164,7 @@ _.Zones =
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 						--]]
+						i(187242),	-- Exterminator's Crest of the Damned
 						i(187241),	-- Watchful Eye of the Damned
 					},
 				}),
@@ -196,6 +197,20 @@ _.Zones =
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 						i(187176),	-- Vesper of Harmony
+					},
+				}),
+				n(179802, {	-- Yarxhov the Pillager
+					["description"] = "Requires someone with Tier 3 Archivist's Codex reputation to repair the teleportation pad",
+					["questID"] = 64257,
+					["isDaily"] = true,
+					["coord"] = { 39.3, 52.4, KORTHIA },
+					["g"] = {
+						crit(16, {	-- Chamber of Knowledge
+							["achievementID"] = 15107,	-- Conquering Korthia
+						}),
+						i(187103, {	-- Everliving Statuette
+							["questID"] = 63917,	-- Everliving Statuette
+						}),
 					},
 				}),
 				n(177336, {	-- Zelnithop

@@ -23,7 +23,7 @@ _.Zones =
 						}),
 					},
 				}),
-				o(369225369225, {	-- Dislodged Nest TODO: REPLACE WITH ACTUAL OBJECTID
+				o(369183, {	-- Dislodged Nest
 					["description"] = "Find and click one of the sparkling |cFFFFFFFFNoxious Moths|r in Mauler's Outlook.  There is a |cFFFFFFFFPrecarious Silk Nest|r stuck in the branches of a tree.  Use the Extra Action Button ability granted by the moth to ride a Shardhide into the tree to dislodge the nest.",
 				--	["questID"] = 64241,
 					["coord"] = { 47.5, 29.2, KORTHIA },

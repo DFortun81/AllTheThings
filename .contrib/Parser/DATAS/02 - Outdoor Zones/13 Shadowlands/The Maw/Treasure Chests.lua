@@ -6,7 +6,18 @@ _.Zones =
 {
 	m(SHADOWLANDS, {
 		m(THE_MAW, {
-			n(-212, {	-- Treasure Chest
+			n(TREASURES, {	-- Treasure Chest
+				i(186188, {	-- Lil'Abom (PET!)
+				--	TODO: maybe move to battle pet section?  but idk because all the parts come from treasures :\
+				--	originally showed up during a necrolord assault so i thought it was tied to that, but now it shows up every day regardless of assault
+					["cost"] = {
+						{ "i", 186183, 1 },	-- Lil'Abom Head
+						{ "i", 186185, 1 },	-- Lil'Abom Legs
+						{ "i", 186186, 1 },	-- Lil'Abom Right Hand
+						{ "i", 186187, 1 },	-- Lil'Abom Spare Arm
+						{ "i", 186184, 1 },	-- Lil'Abom Torso
+					},
+				}),
 				o(369132, {	-- Domination Sealed Chest
 				--	4 quests total, 64204/64205 for the first 2 cage unlocks, then 64207/64208 for the last cage unlock + chest unlock.  not sure which is which because i stupidly did them 2 steps at a time
 				--	this is *possibly* related to i(186713) for the Hand of Nilganihmaht mount, so may need to be moved to a special/secret header when it's fully figured out
@@ -39,6 +50,47 @@ _.Zones =
 						crit(8, {	-- Jeweled Heart
 							["achievementID"] = 15099,	-- Treasures of Korthia
 						}),
+					},
+				}),
+				o(368666, {	-- Lil'Abom's Head
+					["questID"] = 64010,
+					["isDaily"] = true,
+					["coord"] = { 30.3, 63.3, THE_MAW },
+					["g"] = {
+						i(186183),	-- Lil'Abom Head
+					},
+				}),
+				o(368663, {	-- Lil'Abom's Right Hand
+					["description"] = "At the back of the cave, behind a rock on the left side.",
+					["questID"] = 64008,
+					["isDaily"] = true,
+					["coord"] = { 38.5, 58.5, THE_MAW },
+					["g"] = {
+						i(186186),	-- Lil'Abom Right Hand
+					},
+				}),
+				o(368665, {	-- Lil'Abom's Spare Arm
+					["questID"] = 64009,
+					["isDaily"] = true,
+					["coord"] = { 39.2, 66.5, THE_MAW },
+					["g"] = {
+						i(186187),	-- Lil'Abom Spare Arm
+					},
+				}),
+				o(368667, {	-- Lil'Abom's Torso
+					["questID"] = 64011,
+					["isDaily"] = true,
+					["coord"] = { 39.9, 62.6, THE_MAW },
+					["g"] = {
+						i(186184),	-- Lil'Abom Torso
+					},
+				}),
+				o(368668, {	-- Lil'Abom's Trunk
+					["questID"] = 64013,
+					["isDaily"] = true,
+					["coord"] = { 29.4, 67.2, THE_MAW },
+					["g"] = {
+						i(186185),	-- Lil'Abom Legs
 					},
 				}),
 				n(173841, {	-- Paper Scrap

@@ -310,54 +310,6 @@ _.Zones =
 								},
 							}),
 						}),
-						n(TREASURES, {
-						--	TODO: these quests currently reset, unsure if that's intended or not though.  but just a reminder to check back about it as ptr continues i guess - currently you could just make infinite lil'aboms lol
-							i(186188, {	-- Lil'Abom (PET!)
-								["cost"] = {
-									{ "i", 186183, 1 },	-- Lil'Abom Head
-									{ "i", 186185, 1 },	-- Lil'Abom Legs
-									{ "i", 186186, 1 },	-- Lil'Abom Right Hand
-									{ "i", 186187, 1 },	-- Lil'Abom Spare Arm
-									{ "i", 186184, 1 },	-- Lil'Abom Torso
-								},
-							}),
-							o(368666, {	-- Lil'Abom's Head
-								["questID"] = 64010,
-								["coord"] = { 30.3, 63.3, THE_MAW },
-								["g"] = {
-									i(186183),	-- Lil'Abom Head
-								},
-							}),
-							o(368663, {	-- Lil'Abom's Right Hand
-								["description"] = "At the back of the cave, behind a rock on the left side.",
-								["questID"] = 64008,
-								["coord"] = { 38.5, 58.5, THE_MAW },
-								["g"] = {
-									i(186186),	-- Lil'Abom Right Hand
-								},
-							}),
-							o(368665, {	-- Lil'Abom's Spare Arm
-								["questID"] = 64009,
-								["coord"] = { 39.2, 66.5, THE_MAW },
-								["g"] = {
-									i(186187),	-- Lil'Abom Spare Arm
-								},
-							}),
-							o(368667, {	-- Lil'Abom's Torso
-								["questID"] = 64011,
-								["coord"] = { 39.9, 62.6, THE_MAW },
-								["g"] = {
-									i(186184),	-- Lil'Abom Torso
-								},
-							}),
-							o(368668, {	-- Lil'Abom's Trunk
-								["questID"] = 64013,
-								["coord"] = { 29.4, 67.2, THE_MAW },
-								["g"] = {
-									i(186185),	-- Lil'Abom Legs
-								},
-							}),
-						}),
 						n(-18, {	-- Rewards
 							crit(1, {	-- Necrolord Assault
 								["achievementID"] = 15000,	-- United Front
@@ -448,6 +400,17 @@ _.Zones =
 											}),
 										},
 									}),
+									n(179851, {	-- Guard Orguluus
+										["description"] = "Patrols in a circle around a large rock formation in the Beastwarrens.",
+										["questID"] = 64272,
+										["isDaily"] = true,
+										["coord"] = { 51.1, 71.1, THE_MAW },
+										["g"] = {
+											crit(11, {	-- Guard Orguluus
+												["achievementID"] = 15107,	-- Conquering Korthia
+											}),
+										},
+									}),
 									n(179735, {	-- Torglluun
 										["questID"] = 64232,	-- not sure if this is daily kill ID - it was not rare when i found it, may be related to ring drop
 										["isDaily"] = true,
@@ -456,6 +419,7 @@ _.Zones =
 											crit(3, {	-- Torgllun, Lord of Shades
 												["achievementID"] = 15107,	-- Conquering Korthia
 											}),
+											i(187360),	-- Orb of Enveloping Rifts
 											i(186605),	-- Nilganihmaht's Runed Band
 										},
 									}),
@@ -498,8 +462,9 @@ _.Zones =
 										["questID"] = 64283,
 										["isDaily"] = true,
 										["coords"] = {
-											{ 41.6, 46.7, THE_MAW },	-- first place i found it, not sure if someone else had dragged it there.
 											{ 33.0, 66.3, THE_MAW },
+											{ 41.6, 46.7, THE_MAW },	-- first place i found it, not sure if someone else had dragged it there.  but it appears to have multiple spawnpoints
+											{ 47.2, 79.6, THE_MAW },
 										},
 										["g"] = {
 											i(187113),	-- Personal Ball and Chain
