@@ -12,6 +12,10 @@ lib\LibStub\LibStub.lua
 lib\CallbackHandler-1.0\CallbackHandler-1.0.lua
 lib\LibDataBroker-1.1\LibDataBroker-1.1.lua
 src\base.lua
+db\Presets.lua
+db\CategoryDB.lua
+db\FlightPathDB.lua
+db\RaceDB.lua
 locales\enUS.lua
 locales\esES.lua
 locales\esMX.lua
@@ -22,9 +26,6 @@ locales\koKR.lua
 locales\ptBR.lua
 locales\ruRU.lua
 locales\zhCN.lua
-db\Presets.lua
 Settings.lua
 AllTheThings.lua
-db\FlightPathDB.lua
-db\RaceDB.lua
 db\Categories.lua

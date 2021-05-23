@@ -5951,13 +5951,13 @@ local fields = {
 		return "categoryID";
 	end,
 	["name"] = function(t)
-		return app.GetDataSubMember("Categories", t.categoryID) or "Open your Professions to Cache";
+		return AllTheThingsAD.LocalizedCategoryNames[t.categoryID] or ("Unknown Category #" .. t.categoryID);
 	end,
 	["text"] = function(t)
 		return app.TryColorizeName(t, t.name);
 	end,
 	["icon"] = function(t)
-		return "Interface/ICONS/INV_Garrison_Blueprints1";
+		return AllTheThings.CategoryIcons[t.categoryID] or "Interface/ICONS/INV_Garrison_Blueprints1";
 	end,
 };
 app.BaseCategory = app.BaseObjectFields(fields);
@@ -15998,7 +15998,7 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 					local categoryData = C_TradeSkillUI.GetCategoryInfo(currentCategoryID);
 					if categoryData then
 						if not categories[currentCategoryID] then
-							app.SetDataSubMember("Categories", currentCategoryID, categoryData.name);
+							rawset(AllTheThingsAD.LocalizedCategoryNames, currentCategoryID, categoryData.name);
 							categories[currentCategoryID] = true;
 						end
 					end
@@ -16016,7 +16016,7 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 						if not categories[currentCategoryID] then
 							local categoryData = C_TradeSkillUI.GetCategoryInfo(currentCategoryID);
 							if categoryData then
-								app.SetDataSubMember("Categories", currentCategoryID, categoryData.name);
+								rawset(AllTheThingsAD.LocalizedCategoryNames, currentCategoryID, categoryData.name);
 								categories[currentCategoryID] = true;
 							end
 						end
@@ -18025,7 +18025,15 @@ app.events.VARIABLES_LOADED = function()
 		AllTheThingsAD = { };
 		_G["AllTheThingsAD"] = AllTheThingsAD;
 	end
-
+	
+	-- Cache the Localized Category Data
+	AllTheThingsAD.LocalizedCategoryNames = setmetatable(AllTheThingsAD.LocalizedCategoryNames or {}, { __index = app.CategoryNames });
+	app.CategoryNames = nil;
+	
+	-- Cache the Localized Flight Path Data
+	--AllTheThingsAD.LocalizedFlightPathDB = setmetatable(AllTheThingsAD.LocalizedFlightPathDB or {}, { __index = app.FlightPathDB });
+	--app.FlightPathDB = nil;	-- TODO: Deprecate this.
+	
 	-- Cache information about the player.
 	local class, classID = UnitClassBase("player");
 	local raceName, race, raceID = UnitRace("player");
@@ -18284,10 +18292,11 @@ app.events.VARIABLES_LOADED = function()
 	-- Clean up settings
 	local oldsettings = {};
 	for i,key in ipairs({
-		"Categories",
 		"FilterSeasonal",
 		"FilterUnobtainableItems",
 		"HeirloomUpgradeLevels",
+		"LocalizedCategoryNames",
+		--"LocalizedFlightPathDB",
 		"LockedWindows",
 		"Position",
 		"RandomSearchFilter",

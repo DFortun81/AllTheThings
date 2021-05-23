@@ -751,6 +751,9 @@ end
 cat = function(id, t)									-- Create a CATEGORY Object.
 	return struct("categoryID", id, t);
 end
+category = function(id, t)								-- Create a CATEGORY Object.
+	return struct("categoryID", id, t);
+end
 p = battlepet;											-- Create a BATTLE PET Object (alternative shortcut)
 pet = p;												-- Create a BATTLE PET Object (alternative shortcut)
 battlepetability = function(id, t)						-- Create a BATTLE PET ABILITY Object
