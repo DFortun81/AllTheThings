@@ -88,6 +88,18 @@ _.PVP =
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { {"sub", "pvp_set_ensemble", -10003, -664, -661, 11 }, },
 					}),
+					--[[
+					i(146609, {	-- Ensemble: Gladiator's Dragonhide Armor
+						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+						["sym"] = {
+							{"sub", "pvp_set_ensemble", -10003, -664, -661, 11 }, 
+						--	{"select", "itemID", 124993 },	-- Wrists
+						--	{"select", "itemID", 124989 },	-- Belt
+						--	{"select", "itemID", 124991 },	-- Boot
+							{"exclude", "itemID", 146609 },	-- Exclude itself to stop duplicating
+						},
+					}),
+					--]]
 					i(28126, {	-- Gladiator's Dragonhide Gloves
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
@@ -137,7 +149,10 @@ _.PVP =
 				cl(HUNTER, {
 					i(146608, {	-- Ensemble: Gladiator's Chain Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -10003, -664, -661, 3 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -10003, -664, -661, 3 },
+							{"exclude", "itemID", 146608 },	-- Exclude itself to stop duplicating
+						},
 					}),
 					i(28334, {	-- Gladiator's Chain Armor
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -158,7 +173,10 @@ _.PVP =
 				cl(MAGE, {
 					i(146617, {	-- Ensemble: Gladiator's Silk Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -10003, -664, -661, 8 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -10003, -664, -661, 8 },
+							{"exclude", "itemID", 146617 },	-- Exclude itself to stop duplicating
+						},
 					}),
 					i(25854, {	-- Merciless Gladiator's Silk Amice
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -179,7 +197,10 @@ _.PVP =
 				cl(PALADIN, {
 					i(146616, {	-- Ensemble: Gladiator's Scaled Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -10003, -664, -661, 2 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -10003, -664, -661, 2 }, 
+							{"exclude", "itemID", 146616 },	-- Exclude itself to stop duplicating
+						},
 					}),
 					i(27702, {	-- Gladiator's Lamellar Chestpiece
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -230,7 +251,10 @@ _.PVP =
 				cl(PRIEST, {
 					i(146615, {	-- Ensemble: Gladiator's Satin Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -10003, -664, -661, 5 }, },
+						["sym"] = {
+							{"sub", "pvp_set_ensemble", -10003, -664, -661, 5 }, 
+							{"exclude", "itemID", 146615 },	-- Exclude itself to stop duplicating
+						},
 					}),
 					i(31409, {	-- Gladiator's Mooncloth Gloves
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -266,7 +290,10 @@ _.PVP =
 				cl(ROGUE, {
 					i(146612, {	-- Ensemble: Gladiator's Leather Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -10003, -664, -661, 4 }, },
+						["sym"] = {
+							{"sub", "pvp_set_ensemble", -10003, -664, -661, 4 }, 
+							{"exclude", "itemID", 146612 },	-- Exclude itself to stop duplicating
+						},
 					}),
 					i(25834, {	-- Gladiator's Leather Gloves
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -287,7 +314,10 @@ _.PVP =
 				cl(SHAMAN, {
 					i(146614, {	-- Ensemble: Gladiator's Ringmail Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -10003, -664, -661, 7 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -10003, -664, -661, 7 }, 
+							{"exclude", "itemID", 146614 },	-- Exclude itself to stop duplicating
+						},
 					}),
 					i(25997, {	-- Gladiator's Linked Armor
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -338,7 +368,10 @@ _.PVP =
 				cl(WARLOCK, {
 					i(146611, {	-- Ensemble: Gladiator's Felweave Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -10003, -664, -661, 9 }, },
+						["sym"] = {
+							{"sub", "pvp_set_ensemble", -10003, -664, -661, 9 }, 
+							{"exclude", "itemID", 146611 },	-- Exclude itself to stop duplicating
+						},
 					}),
 					i(24556, {	-- Gladiator's Dreadweave Gloves
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -374,7 +407,10 @@ _.PVP =
 				cl(WARRIOR, {
 					i(146613, {	-- Ensemble: Gladiator's Plate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -10003, -664, -661, 1 }, },
+						["sym"] = {
+							{"sub", "pvp_set_ensemble", -10003, -664, -661, 1 }, 
+							{"exclude", "itemID", 146613 },	-- Exclude itself to stop duplicating
+						},
 					}),
 					i(24544, {	-- Gladiator's Plate Chestpiece
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
