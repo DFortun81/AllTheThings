@@ -85,7 +85,7 @@ _.Achievements =
 			ach(5767, {			-- Scourer of the Eternal Sands
 				title(143),		-- the Camel-Hoarder
 			}),
-			ach(886, {	-- Sinful Gladiator's Soul Eater
+			ach(14816, {	-- Sinful Gladiator's Soul Eater
 				i(183937),	-- Sinful Gladiator's Soul Eater
 			}),
 			un(REMOVED_FROM_GAME, ach(886, {	-- Swift Nether Drake

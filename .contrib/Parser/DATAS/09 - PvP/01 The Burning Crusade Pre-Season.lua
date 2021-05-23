@@ -1,11 +1,11 @@
------------------------------------------------------
---       G E A R     S E T S     M O D U L E       --
------------------------------------------------------
+-----------------------------------------------
+--      P L A Y E R   V S   P L A Y E R      --
+-----------------------------------------------
 
-_.GearSets =
+_.PVP =
 {
-	n(-4189, {	-- PvP Item Sets
-		n(-4190, {
+	n(-10003, {	-- The Burning Crusade
+		n(-4190, { -- Burning Crusade Pre-Season
 			["description"] = "These items were available during Burning Crusade as Level 70 Pre-Season 1 rewards in Netherstorm. They cannot be transmogged, not even if you were a High Warlord or Grand Marshall. Replica items were introduced in their place.",
 			["u"] = REMOVED_FROM_GAME,
 			["groups"] = bubbleDown({["u"] = REMOVED_FROM_GAME}, {
@@ -267,4 +267,3 @@ _.GearSets =
 		}),
 	}),
 };
-
