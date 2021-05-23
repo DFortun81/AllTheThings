@@ -855,5 +855,7 @@ _.CategoryNames = {
 	[1538] = "Bags",
 };
 _.CategoryIcons = {
+	[167] = "Interface/Icons/inv_crown_13",	-- Crowns
+	[168] = "Interface/Icons/inv_jewelcrafting_bronzesetting",	-- Materials
 	[773] = "Interface/Icons/inv_misc_ticket_tarot_twistingnether_01",	-- Trinkets
 };

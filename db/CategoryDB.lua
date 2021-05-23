@@ -20,6 +20,8 @@ select(2, ...).CategoryNames = {
 	[108] = "Research",
 	[114] = "Other",
 	[119] = "Shoulder Inscription",
+	[167] = "Crowns",
+	[168] = "Materials",
 	[183] = "Parts",
 	[184] = "Explosives",
 	[185] = "Goggles",
@@ -784,5 +786,7 @@ select(2, ...).CategoryNames = {
 	[1538] = "Bags",
 };
 select(2, ...).CategoryIcons = {
+	[167] = "Interface/Icons/inv_crown_13",
+	[168] = "Interface/Icons/inv_jewelcrafting_bronzesetting",
 	[773] = "Interface/Icons/inv_misc_ticket_tarot_twistingnether_01",
 };
