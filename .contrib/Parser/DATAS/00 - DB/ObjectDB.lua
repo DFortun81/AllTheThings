@@ -2864,6 +2864,7 @@ _.ObjectModels = {
 	[185165] = 192342,	-- Legion Communicator
 	[185168] = 196989,	-- Reinforced Fel Iron Chest
 	[188261] = 200908,	-- Battered Journal
+	[188364] = 195350,	-- Wrecked Crab Trap
 	[188365] = 192714,	-- Heart of the Ancients
 	[188418] = 199476,	-- Wanted!
 	[188419] = 194335,	-- Elder Mana'loa
