@@ -8,6 +8,8 @@ _.PVP =
 		n(-664, {	-- Gladiator: Season 1
 			n(-661, {	-- Gladiator PvP Gear
 				n(-319, {	-- Weapons
+					-- -- Never added, combined with Season 2
+					-- i(146651, {	-- Arsenal: Gladiator's Weapons
 					i(28302, {	-- Gladiator's Bonecracker
 						["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 					}),
@@ -751,9 +753,36 @@ _.PVP =
 		n(-665, {	-- Merciless Gladiator: Season 2
 			n(-661, {	-- Gladiator PvP Gear
 				n(-319, {	-- Weapons
-					i(146650, {	-- Arsenal: Merciless Gladiator's Weapons
+					i(146650, {	-- Arsenal: Merciless Gladiator's Weapons [Horde / Alliance / Tested ] { Note: Contains Gladiator/Merciless Sets }
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-						["sym"] = { {"sub", "pvp_weapons_ensemble", -10003, -665, -661 }, },
+						["sym"] = { 
+							{"sub", "pvp_weapons_ensemble", -10003, -665, -661 },
+							{"select", "itemID", 28302 },	--  Gladiator's Bonecracker
+							{"select", "itemID", 28299 },	--  Gladiator's Bonegrinder
+							{"select", "itemID", 28308 },	--  Gladiator's Cleaver
+							{"select", "itemID", 28298 },	--  Gladiator's Decapitator
+							{"select", "itemID", 28346 },	--  Gladiator's Endgame
+							{"select", "itemID", 28314 },	--  Gladiator's Fleshslicer
+							{"select", "itemID", 32450 },	--  Gladiator's Gav,
+							{"select", "itemID", 24550 },	--  Gladiator's Greatsword
+							{"select", "itemID", 28309 },	--  Gladiator's Hacke,
+							{"select", "itemID", 28294 },	--  Gladiator's Heavy Crossbow
+							{"select", "itemID", 28476 },	--  Gladiator's Maul
+							{"select", "itemID", 28300 },	--  Gladiator's Painsaw
+							{"select", "itemID", 28305 },	--  Gladiator's Pummeler
+							{"select", "itemID", 28307 },	--  Gladiator's Quickblade
+							{"select", "itemID", 32452 },	--  Gladiator's Reprieve
+							{"select", "itemID", 28313 },	--  Gladiator's Rippe
+							{"select", "itemID", 32451 },	--  Gladiator's Salvation
+							{"select", "itemID", 28312 },	--  Gladiator's Shanker
+							{"select", "itemID", 28358 },	--  Gladiator's Shield Wall
+							{"select", "itemID", 28310 },	--  Gladiator's Shiv
+							{"select", "itemID", 28295 },	--  Gladiator's Slicer
+							{"select", "itemID", 28297 },	--  Gladiator's Spellblade
+							{"select", "itemID", 28320 },	--  Gladiator's Touch of Defeat
+							{"select", "itemID", 24557 },	--  Gladiator's War Staff
+							{"exclude", "itemID", 146650 },	-- Exclude itself to stop duplicating
+						 },
 					}),
 					i(33313, {	-- Merciless Gladiator's Barrier
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -1296,6 +1325,9 @@ _.PVP =
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),	
+				-- Orinally sold Offhand/Neck/Finger by 
+				-- Alliance SW: n(23446,  {	-- Lieutenant Tristia -- BC S1/S2/S3/S4 Vendor &
+				-- Horde OG: n(24520, {	-- Doris Volanthius -- BC S1/S2/S3/S4 Vendor
 				n(-331, {	-- Held In Offhand
 					un(REMOVED_FROM_GAME, i(33946)), -- Merciless Gladiator's Idol of Resolve
 					un(REMOVED_FROM_GAME, i(33943)), -- Merciless Gladiator's Idol of Steadfastness
@@ -1325,9 +1357,12 @@ _.PVP =
 		n(-666, {	-- Vengeful Gladiator: Season 3
 			n(-661, {	-- Gladiator PvP Gear
 				n(-319, {	-- Weapons
-					i(146649, {	-- Arsenal: Vengeful Gladiator's Weapons
+					i(146649, {	-- Arsenal: Vengeful Gladiator's Weapons [ Horde / Alliance / Tested ]
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-						["sym"] = { {"sub", "pvp_weapons_ensemble", -10003, -666, -661 }, },
+						["sym"] = { 
+							{"sub", "pvp_weapons_ensemble", -10003, -666, -661 },
+							{"exclude", "itemID", 146649 },	-- Exclude itself to stop duplicating
+						 },
 					}),
 					i(33661, {	-- Vengeful Gladiator's Barrier
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -1929,9 +1964,12 @@ _.PVP =
 		n(-667, {	-- Brutal Gladiator: Season 4
 			n(-661, {	-- Gladiator PvP Gear
 				n(-319, {	-- Weapons
-					i(146648, {	-- Arsenal: Brutal Gladiator's Weapons
+					i(146648, {	-- Arsenal: Brutal Gladiator's Weapons [ Horde / Alliance / Tested ]
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-						["sym"] = { {"sub", "pvp_weapons_ensemble", -10003, -667, -661 }, },
+						["sym"] = { 
+							{"sub", "pvp_weapons_ensemble", -10003, -667, -661 },
+							{"exclude", "itemID", 146648 },	-- Exclude itself to stop duplicating
+						 },
 					}),
 					i(34986, {	-- Brutal Gladiator's Barrier
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
