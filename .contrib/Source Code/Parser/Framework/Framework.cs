@@ -2607,13 +2607,16 @@ namespace ATT
                 builder.Append("select(2, ...).ObjectNames = {").AppendLine();
                 foreach (var key in keys)
                 {
-                    var name = OBJECT_NAMES[key];
-                    builder.Append("\t[").Append(key).Append("] = ");
-                    if (name.StartsWith("GetSpellInfo") || name.StartsWith("GetItem") || name.StartsWith("select(") || name.StartsWith("~"))
+                    if (OBJECTS_WITH_REFERENCES.ContainsKey(key))
                     {
-                        builder.Append(name).Append(",").AppendLine();
+                        var name = OBJECT_NAMES[key];
+                        builder.Append("\t[").Append(key).Append("] = ");
+                        if (name.StartsWith("GetSpellInfo") || name.StartsWith("GetItem") || name.StartsWith("select(") || name.StartsWith("~"))
+                        {
+                            builder.Append(name).Append(",").AppendLine();
+                        }
+                        else builder.Append("\"").Append(name).Append("\",").AppendLine();
                     }
-                    else builder.Append("\"").Append(name).Append("\",").AppendLine();
                 }
                 builder.AppendLine("};");
                 keys = OBJECT_ICONS.Keys.ToList();
@@ -2621,7 +2624,10 @@ namespace ATT
                 builder.Append("select(2, ...).ObjectIcons = {").AppendLine();
                 foreach (var key in keys)
                 {
-                    builder.Append("\t[").Append(key).Append("] = \"").Append(OBJECT_ICONS[key]).Append("\",").AppendLine();
+                    if (OBJECTS_WITH_REFERENCES.ContainsKey(key))
+                    {
+                        builder.Append("\t[").Append(key).Append("] = \"").Append(OBJECT_ICONS[key]).Append("\",").AppendLine();
+                    }
                 }
                 builder.AppendLine("};");
                 keys = OBJECT_MODELS.Keys.ToList();
@@ -2629,7 +2635,10 @@ namespace ATT
                 builder.Append("select(2, ...).ObjectModels = {").AppendLine();
                 foreach (var key in keys)
                 {
-                    builder.Append("\t[").Append(key).Append("] = ").Append(OBJECT_MODELS[key]).Append(",").AppendLine();
+                    if (OBJECTS_WITH_REFERENCES.ContainsKey(key))
+                    {
+                        builder.Append("\t[").Append(key).Append("] = ").Append(OBJECT_MODELS[key]).Append(",").AppendLine();
+                    }
                 }
                 builder.AppendLine("};"); File.WriteAllText(Path.Combine(addonRootFolder, "db/ObjectDB.lua"), builder.ToString());
             }
