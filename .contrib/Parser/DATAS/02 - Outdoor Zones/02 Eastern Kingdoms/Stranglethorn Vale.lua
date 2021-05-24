@@ -186,7 +186,7 @@ _.Zones =
 					q(588,   {	-- The Fate of Yenniku
 						["u"] = REMOVED_FROM_GAME,
 						["races"] = HORDE_ONLY,
-						["provider"] = { "o", 2706 },	-- Bubbling Cauldron
+						["provider"] = { "o", 2076 },	-- Bubbling Cauldron
 						["sourceQuests"] = {
 							586,	-- Speaking with Gan'zulah
 							585,	-- Speaking with Nezzliok

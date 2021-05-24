@@ -91,7 +91,7 @@ _.Mounts =
 				un(REMOVED_FROM_GAME, i(156881)),	-- Notorious Gladiator's Proto-Drake
 			})),
 			un(REMOVED_FROM_GAME, ach(13967, {	-- Gladiator: Battle for Azeroth Season 4
-				un(REMOVED_FROM_GAME, i(156884)),	-- Dread Gladiator's Proto-Drake
+				un(REMOVED_FROM_GAME, i(156884)),	-- Corrupted Gladiator's Proto-Drake
 			})),
 		}),
 		un(REMOVED_FROM_GAME, ach(4156, {	-- A Tribute to Immortality

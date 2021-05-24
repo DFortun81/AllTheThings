@@ -2177,10 +2177,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(33065)),	-- Veterans Pendant of Dominance
-						un(REMOVED_FROM_GAME, i(33066)),	-- Veterans Pendant of triumph
-						un(REMOVED_FROM_GAME, i(33067)),	-- Veterans Pendant of conquest
-						un(REMOVED_FROM_GAME, i(33068)),	-- Veterans Pendant of salvation
 						un(REMOVED_FROM_GAME, i(33918)),	-- vindicator's band of salvation
 						un(REMOVED_FROM_GAME, i(33919)),	-- vindicator's band of triumph
 						un(REMOVED_FROM_GAME, i(37927)),	-- vindicator's band of subjugation
@@ -2204,9 +2200,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(41588)),	-- battlemaster's aggression
 						un(REMOVED_FROM_GAME, i(41589)),	-- battlemaster's resolve
 						un(REMOVED_FROM_GAME, i(41590)),	-- battlemaster's courage
-						un(REMOVED_FROM_GAME, i(33056)),	-- Veteran's Band of Dominance
-						un(REMOVED_FROM_GAME, i(33057)),	-- Veteran's Band of Triumph
-						un(REMOVED_FROM_GAME, i(33064)),	-- Veteran's Band of Salvation
 						un(REMOVED_FROM_GAME, i(33853)),	-- Vindicator's Band of Dominance
 						un(REMOVED_FROM_GAME, i(35320)),	-- Vindicator's Band of subjugation
 					},

@@ -109,7 +109,7 @@ _.Zones =
 						["icon"] = "Interface\\Icons\\inv_misc_herb_talandrasrose_petal",
 					}),
 					crit(6, {	-- Stonebloom
-						["objectID"] = 275059,	-- Stonebloom
+						["objectID"] = 292825,	-- Stonebloom
 						["coords"] = {
 							{ 54.5, 56.1, 863 },
 							{ 55.4, 67.1, 863 },

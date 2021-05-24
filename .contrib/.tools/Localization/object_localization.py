@@ -27,7 +27,7 @@ def get_localized_obj_name(obj_id, lang_code="en", game_flavor="retail"):
 
     page = requests.get(URL)
     if "notFound" in page.url:
-        print(f"Can't find {obj_id} on Wowhead!")
+        print(f"Can't find {obj_id} at {URL}!")
         return ""
     soup = BeautifulSoup(page.content, "html.parser")
     heading = soup.find("h1", class_="heading-size-1")
@@ -47,7 +47,7 @@ def get_todo_lines_and_og_names(lines):
     todo_dict = {}
     original_obj_names = {}
     for ind, line in enumerate(lines):
-        if "OBJECT_ID_NAMES" in line:
+        if "ObjectNames" in line:
             # print(f"Found beginning at line {ind + 2}!")
             while True:
                 line = lines[ind]
@@ -110,10 +110,10 @@ def sort_objects(filename):
 
     todo_dict = {}
     for ind, line in enumerate(lines):
-        if "OBJECT_ID_NAMES" in line:
+        if "ObjectNames" in line:
             first_obj_line = ind + 2
             ind += 2
-            if "enUS" in filename:
+            if "ObjectDB" in filename:
                 first_obj_line -= 1
                 ind -= 1
             # print(f"Found beginning at line {first_obj_line}!")
@@ -156,10 +156,10 @@ def get_objects_info(filename):
     first_obj_line = 0
     last_obj_line = 0
     for ind, line in enumerate(lines):
-        if "OBJECT_ID_NAMES" in line:
+        if "ObjectNames" in line:
             first_obj_line = ind + 2
             ind += 2
-            if "enUS" in filename:
+            if "ObjectDB" in filename:
                 first_obj_line -= 1
                 ind -= 1
             # print(f"Found beginning at line {first_obj_line}!")
@@ -212,7 +212,7 @@ def get_new_object_line(obj_id, obj_name, lang_code):
 
     if obj_name == "":  # those weird objects that don't have page even in enUS
         new_object = f'\t--TODO: [{obj_id}] = "",\t--\n'
-    elif lang_code == "tw" or localized_obj_name == "":  # no translation on Wowhead
+    elif localized_obj_name == "":  # no translation on Wowhead
         new_object = f'\t--TODO: [{obj_id}] = "{obj_name}",\t-- {obj_name}\n'
     else:  # all good (maybe)
         new_object = f'\t[{obj_id}] = "{localized_obj_name}",\t-- {obj_name}\n'
@@ -268,18 +268,5 @@ def sync_objects(objects, filename, lang_code):
     localized_obj_lines = [i.line for i in localized_objects]
     contents[first_obj_line : last_obj_line + 1] = localized_obj_lines
     f = open(filename, "w")
-    f.writelines(contents)
-    f.close()
-
-
-def copy_esES_objects_to_esMX():
-    es_objects = get_objects_info(f"{LOCALES_DIR}esES.lua").objects
-    _, esMX_start, esMX_end = get_objects_info(f"{LOCALES_DIR}esMX.lua")
-    f = open(f"{LOCALES_DIR}esMX.lua")
-    contents = f.readlines()
-    f.close()
-    localized_obj_lines = [i.line for i in es_objects]
-    contents[esMX_start : esMX_end + 1] = localized_obj_lines
-    f = open(f"{LOCALES_DIR}esMX.lua", "w")
     f.writelines(contents)
     f.close()

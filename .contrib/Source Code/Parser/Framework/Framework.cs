@@ -2611,7 +2611,11 @@ namespace ATT
                     }
                 }
                 builder.AppendLine("};");
-                File.WriteAllText(Path.Combine(addonRootFolder, "db/CategoryDB.lua"), builder.ToString());
+
+                // Check to make sure the content is different since Diff tools are dumb as hell.
+                var filename = Path.Combine(addonRootFolder, "db/CategoryDB.lua");
+                var content = builder.ToString().Replace("\r\n", "\n").Trim();
+                if (!File.Exists(filename) || File.ReadAllText(filename).Replace("\r\n", "\n").Trim() != content) File.WriteAllText(filename, content);
             }
 
             // Export the Object DB file.
@@ -2656,7 +2660,12 @@ namespace ATT
                         builder.Append("\t[").Append(key).Append("] = ").Append(OBJECT_MODELS[key]).Append(",").AppendLine();
                     }
                 }
-                builder.AppendLine("};"); File.WriteAllText(Path.Combine(addonRootFolder, "db/ObjectDB.lua"), builder.ToString());
+                builder.AppendLine("};");
+
+                // Check to make sure the content is different since Diff tools are dumb as hell.
+                var filename = Path.Combine(addonRootFolder, "db/ObjectDB.lua");
+                var content = builder.ToString().Replace("\r\n", "\n").Trim();
+                if (!File.Exists(filename) || File.ReadAllText(filename).Replace("\r\n", "\n").Trim() != content) File.WriteAllText(filename, content);
             }
 
             // Setup the output folder (/db)

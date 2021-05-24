@@ -19,7 +19,6 @@ db\ObjectDB.lua
 db\RaceDB.lua
 locales\enUS.lua
 locales\esES.lua
-locales\esMX.lua
 locales\deDE.lua
 locales\frFR.lua
 locales\itIT.lua
