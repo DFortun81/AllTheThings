@@ -1287,46 +1287,15 @@ _.Zones =
 									i(125287, {	-- Wild Gladiator's Warboots of Victory (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
-								}),
-								n(-384,	{	-- Neck
-									un(REMOVED_FROM_GAME, i(125325)),	-- Wild Gladiator's Choker of Cruelty (H)
-									un(REMOVED_FROM_GAME, i(125326)),	-- Wild Gladiator's Choker of Prowess (H)
-									un(REMOVED_FROM_GAME, i(125332)),	-- Wild Gladiator's Choker of Endurance (H)
-									un(REMOVED_FROM_GAME, i(125166)),	-- Wild Gladiator's Necklace of Cruelty (H)
-									un(REMOVED_FROM_GAME, i(125167)),	-- Wild Gladiator's Necklace of Prowess (H)
-									un(REMOVED_FROM_GAME, i(125219)),	-- Wild Gladiator's Pendant of Contemplation (H)
-									un(REMOVED_FROM_GAME, i(125216)),	-- Wild Gladiator's Pendant of Cruelty (H)
-									un(REMOVED_FROM_GAME, i(125218)),	-- Wild Gladiator's Pendant of Meditation (H)
-									un(REMOVED_FROM_GAME, i(125217)),	-- Wild Gladiator's Pendant of Prowess (H)
-								}),
-								n(-385,	{	-- Finger
-									un(REMOVED_FROM_GAME, i(125226)),	-- Wild Gladiator's Band of Contemplation (H)
-									un(REMOVED_FROM_GAME, i(125222)),	-- Wild Gladiator's Band of Cruelty (H)
-									un(REMOVED_FROM_GAME, i(125225)),	-- Wild Gladiator's Band of Meditation (H)
-									un(REMOVED_FROM_GAME, i(125223)),	-- Wild Gladiator's Band of Prowess (H)
-									un(REMOVED_FROM_GAME, i(125224)),	-- Wild Gladiator's Band of Victory (H)
-									un(REMOVED_FROM_GAME, i(125168)),	-- Wild Gladiator's Ring of Cruelty (H)
-									un(REMOVED_FROM_GAME, i(125169)),	-- Wild Gladiator's Ring of Prowess (H)
-									un(REMOVED_FROM_GAME, i(125170)),	-- Wild Gladiator's Ring of Triumph (H)
-									un(REMOVED_FROM_GAME, i(125328)),	-- Wild Gladiator's Signet of Accuracy (H)
-									un(REMOVED_FROM_GAME, i(125327)),	-- Wild Gladiator's Signet of Cruelty (H)
-									un(REMOVED_FROM_GAME, i(125329)),	-- Wild Gladiator's Signet of Ruthlessness (H)
-									un(REMOVED_FROM_GAME, i(125333)),	-- Wild Gladiator's Signet of Dedication (H)
-									un(REMOVED_FROM_GAME, i(125334)),	-- Wild Gladiator's Signet of Endurance (H)
-								}),
-								n(-386,	{	-- Trinket
-									un(REMOVED_FROM_GAME, i(125346)),	-- Wild Gladiator's Badge of Adaptation (H)
-									un(REMOVED_FROM_GAME, i(125335)),	-- Wild Gladiator's Badge of Conquest (H)
-									un(REMOVED_FROM_GAME, i(125340)),	-- Wild Gladiator's Badge of Dominance (H)
-									un(REMOVED_FROM_GAME, i(125344)),	-- Wild Gladiator's Badge of Victory (H)
-									un(REMOVED_FROM_GAME, i(125337)),	-- Wild Gladiator's Emblem of Cruelty (H)
-									un(REMOVED_FROM_GAME, i(125339)),	-- Wild Gladiator's Emblem of Meditation (H)
-									un(REMOVED_FROM_GAME, i(125338)),	-- Wild Gladiator's Emblem of Tenacity (H)
-									un(REMOVED_FROM_GAME, i(125341)),	-- Wild Gladiator's Insignia of Dominance (H)
-									un(REMOVED_FROM_GAME, i(125345)),	-- Wild Gladiator's Insignia of Victory (H)
-									un(REMOVED_FROM_GAME, i(127124)),	-- Wild Gladiator's Medallion of Cruelty (H)
-									un(REMOVED_FROM_GAME, i(125343)),	-- Wild Gladiator's Medallion of Meditation (H)
-									un(REMOVED_FROM_GAME, i(125342)),	-- Wild Gladiator's Medallion of Tenacity (H)
+									i(125174, {	-- Wild Gladiator's treads of cruelty (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(125175, {	-- Wild Gladiator's treads of prowess (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(125176, {	-- Wild Gladiator's treads of victory (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
 								}),
 							},
 						}),
@@ -2876,6 +2845,9 @@ _.Zones =
 									i(126300, {	-- Warmongering Gladiator's Cowl of Cruelty (H)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
+									i(126300, {	-- Warmongering Gladiator's Cowl of Cruelty (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
 									i(126295, {	-- Warmongering Gladiator's Hood of Prowess (H)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -2891,7 +2863,7 @@ _.Zones =
 									i(126378, {	-- Warmongering Gladiator's Helm (H)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
-									i(126407, {	-- Warmongering Gladiator's Plate Helmet (H)
+									i(126473, {	-- Warmongering Gladiator's Plate Helmet (H)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
 									i(126412, {	-- Warmongering Gladiator's Plate Visor (H)

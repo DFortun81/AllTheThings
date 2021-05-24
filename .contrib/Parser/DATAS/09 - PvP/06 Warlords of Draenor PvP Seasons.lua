@@ -5120,6 +5120,15 @@ _.PVP =
 							i(125287, {	-- Wild Gladiator's Warboots of Victory (H)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
+							i(125174, {	-- Wild Gladiator's treads of cruelty (H)
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(125175, {	-- Wild Gladiator's treads of prowess (H)
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(125176, {	-- Wild Gladiator's treads of victory (H)
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
 						}),
 						n(-384,	{	-- Neck
 							un(REMOVED_FROM_GAME, i(125325)),	-- Wild Gladiator's Choker of Cruelty (H)
@@ -7650,7 +7659,7 @@ _.PVP =
 							i(126378, {	-- Warmongering Gladiator's Helm (H)
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
-							i(126407, {	-- Warmongering Gladiator's Plate Helmet (H)
+							i(126473, {	-- Warmongering Gladiator's Plate Helmet (H)
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 							i(126412, {	-- Warmongering Gladiator's Plate Visor (H)
