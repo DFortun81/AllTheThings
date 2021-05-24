@@ -31,7 +31,7 @@ _.Zones =
 					["coord"] = { 39.4, 51.3, KORTHIA },
 				}),
 				q(63861, {	-- Beginning the Collection
-					["sourceQuests"] = { 64290 },	-- Collecting Research
+					["sourceQuests"] = { 63738 },	-- Establishing the Archive
 					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 					["coord"] = { 62.7, 22.5, KORTHIA },
 					["g"] = {
@@ -60,7 +60,7 @@ _.Zones =
 					["coord"] = { 45.5, 56.0, KORTHIA },
 				}),
 				q(64290, {	-- Collecting Research
-					["sourceQuests"] = { 64289 },	-- Picking Up Fragments
+					["sourceQuests"] = { 64289 },	-- Picking Up the Pieces
 					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 					["coord"] = { 61.6, 21.7, KORTHIA },
 				}),
@@ -140,8 +140,7 @@ _.Zones =
 					["coord"] = { 39.4, 51.3, KORTHIA },
 				}),
 				q(63732, {	-- Interrupt the Interrogations
-				--	TODO: verify SQ.  intro chain has been changed slightly since i first did it - i forgot to check when i initially got to korthia for the map '!' but saw it after turning in "Good News, Everyone!" (may be available sooner - NPC is cloaked until you get very close, look for the '!' on the map)
-					["sourceQuests"] = { 63855 },	-- Ease of Passage
+					["sourceQuests"] = { 63731 },	-- Shattered Relics
 					["provider"] = { "n", 178694 },	-- Scholar Roh-Suir
 					["coord"] = { 59.0, 58.1, KORTHIA },
 				}),
@@ -196,14 +195,16 @@ _.Zones =
 					["provider"] = { "n", 177227 },	-- Tal-Galan
 					["coord"] = { 63.8, 23.7, KORTHIA },
 				}),
-				q(64289, {	-- Picking Up Fragments
-				--	think this unlocked 'the archivist's codex' reputation, these quests may need to be in their own section depending on how extensive the faction/friendship is
-				--	["sourceQuests"] = {  },	-- TODO, was randomly added on 5/11 so unsure if it has specific SQs or rep requirements (i was at 1650/21000 Revered)
+				q(64289, {	-- Picking Up the Pieces
+					["sourceQuests"] = { 63738 },	-- Establishing the Archive
 					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 					["coord"] = { 61.6, 21.7, KORTHIA },
 					["g"] = { -- TODO: unsure if these rewards vary from class to class + if they don't, remainder of armor class rewards need to be added
+					--	NOT DONE: death knight, demon hunter, druid, hunter, mage, monk, paladin, rogue, warlock, warrior
 						i(186665),	-- Korthian Caretaker's Mitts
 						i(186664),	-- Korthian Caretaker's Sandals
+						i(186742),	-- Razorwing Scale Fists
+						i(186741),	-- Razorwing Scale Footguards
 					},
 				}),
 				q(63759, {	-- Redirect the Search
@@ -241,7 +242,7 @@ _.Zones =
 					["coord"] = { 57.4, 29.8, KORTHIA },
 				}),
 				q(63731, {	-- Shattered Relics
-					["isBreadcrumb"] = true,	-- TODO: definitely optional, you can unlock archivist's codex without it, but i'm not sure how.
+					["isBreadcrumb"] = true,
 					["description"] = "The item that starts this quest can be looted from any treasure chest or rare in Korthia.",
 					["provider"] = { "i", 187177 },	-- Shattered Relic
 				}),
@@ -251,11 +252,11 @@ _.Zones =
 					["coord"] = { 62.1, 56.8, KORTHIA },
 				}),
 				q(64193, {	-- Table of Discontent
-				--	["sourceQuests"] = {  },	-- TODO, unknown, implemented 4/21 on PTR.  definitely requires Korthia unlock, may require specific rep level (i was at 2775 Friendly)
+					["sourceQuests"] = { 63738 },	-- Establishing the Archive
 					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
-					["coord"] = { 63.3, 21.3, KORTHIA },
+					["coord"] = { 62.7, 22.5, KORTHIA },
 					["g"] = {
-						i(186470),	-- Recipe: Prestigious Crafter's Mark
+						i(186470),	-- Recipe: Crafter's Mark of the Chained Isle
 					},
 				}),
 				q(63860, {	-- Talisman of the Eternal Scholar
