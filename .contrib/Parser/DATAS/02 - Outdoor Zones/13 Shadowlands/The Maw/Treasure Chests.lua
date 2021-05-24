@@ -50,6 +50,7 @@ _.Zones =
 						crit(8, {	-- Jeweled Heart
 							["achievementID"] = 15099,	-- Treasures of Korthia
 						}),
+						i(187352),	-- Jeweled Heart of Ezekiel
 					},
 				}),
 				o(368666, {	-- Lil'Abom's Head
