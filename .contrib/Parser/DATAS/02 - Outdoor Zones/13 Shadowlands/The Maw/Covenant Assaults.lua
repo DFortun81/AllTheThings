@@ -431,15 +431,6 @@ _.Zones =
 										["coord"] = { 19.1, 43.6, THE_MAW },
 										["cr"] = 179030,	-- Elusive Keybinder
 									}),
-									o(368653, {	-- Etherwyrm Cage
-										["description"] = "At the back of the cave.",
-										["questID"] = 64000,
-										["coord"] = { 20.7, 39.7, THE_MAW },
-										["cost"] = { { "i", 186190, 1 } },	-- Etherwyrm Cage Key
-										["g"] = {
-											i(186191),	-- Infused Etherwyrm (PET!)
-										},
-									}),
 									o(368645, {	-- Rift Hidden Cache
 										["questID"] = 63993,
 										["isDaily"] = true,
@@ -489,6 +480,15 @@ _.Zones =
 							},
 						}),
 						n(TREASURES, {
+							o(368653, {	-- Etherwyrm Cage
+								["description"] = "At the back of the cave.",
+								["questID"] = 64000,
+								["coord"] = { 20.7, 39.7, THE_MAW },
+								["cost"] = { { "i", 186190, 1 } },	-- Etherwyrm Cage Key
+								["g"] = {
+									i(186191),	-- Infused Etherwyrm (PET!)
+								},
+							}),
 						}),
 						n(-18, {	-- Rewards
 							crit(3, {	-- Night Fae Assault

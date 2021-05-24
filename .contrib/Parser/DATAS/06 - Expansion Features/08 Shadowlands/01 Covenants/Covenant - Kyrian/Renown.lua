@@ -28,6 +28,8 @@ _.ExpansionFeatures =
 							["description"] = "Requires Renown 40.",
 						}),
 						i(186515,  {	-- Ensemble: Aspiring Aspirant's Regalia
+						--	TODO: randomly received this ensemble when i turned in my last covenant assault (night fae) and received the 'united front' achievement as a 48 renown venthyr.
+						--	i am able to transmog the appearances on a venthyr.  i doubt all of this is intended, but it should be checked once this stuff goes live in case this doesn't need the custom collect tag
 							["description"] = "Requires Renown 60.",
 							["g"] = {
 								i(184998),	-- Aspiring Aspirant's Drape

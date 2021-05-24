@@ -391,7 +391,6 @@ _.Zones =
 					["coord"] = { 64.7, 25.6, KORTHIA },
 				}),
 				q(63964, {	-- Broker's Bounty: Grimtalon
-				--	TODO: add object localization
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "o", 368772 },	-- Sigilscored Scroll
 					["isDaily"] = true,
@@ -410,7 +409,6 @@ _.Zones =
 					["coord"] = { 64.7, 25.6, KORTHIA },
 				}),
 				q(63792, {	-- Broker's Bounty: Nocturnus the Unraveler
-				--	TODO: add object localization
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "o", 368772 },	-- Sigilscored Scroll
 					["isDaily"] = true,

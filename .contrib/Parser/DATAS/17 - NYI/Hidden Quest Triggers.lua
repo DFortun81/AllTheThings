@@ -4751,6 +4751,7 @@ _.HiddenQuestTriggers =
 		q(64344),	-- looted 7 Relic Fragments from a Ravenous Gorger, npcID 177245
 		q(64262),	-- triggered when turning in #64007, "Charge of the Covenants"
 		q(64536),	-- looting Maldraxxus Larva Shell (300 Catalogued Research)
+		q(63601),	-- this was either learning Aspiring Aspirant's ensemble or pulling a legendary out of the mailbox that i hadn't had bagspace for earlier
 		
 		-- Treasures of Korthia achievement
 		q(64256),	-- Desmotaeron treasure - Helsworn Chest

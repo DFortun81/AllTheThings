@@ -39,7 +39,7 @@ _.Zones =
 					["questID"] = 64320,
 					["isDaily"] = true,
 					["coord"] = { 33.1, 39.5, KORTHIA },
-					["cr"] = 180005,	-- Karras
+					["cr"] = 180009,	-- Alluring Drum
 					["g"] = {
 					--	crit(17, {	-- Escaped Wilderling
 						crit(19, {	-- Escaped Wilderling
