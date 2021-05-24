@@ -107,7 +107,6 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(115219)), -- Primal Aspirant's Bindings of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(115227)), -- Primal Aspirant's Armbands of Prowess (A)
 							un(REMOVED_FROM_GAME, i(115240)), -- Primal Aspirant's Armplates of Cruelty (A)
-							un(REMOVED_FROM_GAME, i(119973)), -- Primal Aspirant's Cuffs of Prowess (H)
 						}),
 						n(-328, {	-- Waist
 							un(REMOVED_FROM_GAME, i(115194)), -- Primal Aspirant's Cord of Cruelty (A)
