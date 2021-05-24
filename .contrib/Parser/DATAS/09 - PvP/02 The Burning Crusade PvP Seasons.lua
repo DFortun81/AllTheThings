@@ -5,6 +5,266 @@
 _.PVP =
 {
 	n(-10003, {	-- The Burning Crusade
+		n(-4190, { -- Burning Crusade Pre-Season
+			["description"] = "These items were available during Burning Crusade as Level 70 Pre-Season 1 rewards in Netherstorm. They cannot be transmogged, not even if you were a High Warlord or Grand Marshall. Replica items were introduced in their place.",
+			["u"] = REMOVED_FROM_GAME,
+			["groups"] = bubbleDown({["u"] = REMOVED_FROM_GAME}, {
+				n(-319, {	-- Weapons
+					i(28940),	-- Grand Marshal's Barricade
+					i(28941),	-- Grand Marshal's Battletome
+					i(28950),	-- Grand Marshal's Bonecracker
+					i(28942),	-- Grand Marshal's Bonegrinder
+					i(28944),	-- Grand Marshal's Cleaver
+					i(28945),	-- Grand Marshal's Decapitator
+					i(28947),	-- Grand Marshal's Fleshslicer
+					i(28946),	-- Grand Marshal's Hacker
+					i(28948),	-- Grand Marshal's Maul
+					i(28949),	-- Grand Marshal's Painsaw
+					i(28951),	-- Grand Marshal's Pummeler
+					i(28952),	-- Grand Marshal's Quickblade
+					i(28953),	-- Grand Marshal's Ripper
+					i(28954),	-- Grand Marshal's Shanker
+					i(28955),	-- Grand Marshal's Shiv
+					i(28956),	-- Grand Marshal's Slicer
+					i(28957),	-- Grand Marshal's Spellblade
+					i(28943),	-- Grand Marshal's Warblade
+					i(28959),	-- Grand Marshal's War Staff
+				}),
+				cl(WARRIOR, {
+					-- Grand Marshal's Plate [Warrior]
+					i(28701),	-- Grand Marshal's Plate Helm
+					i(28703),	-- Grand Marshal's Plate Shoulders
+					i(28699),	-- Grand Marshal's Plate Chestpiece
+					i(28700),	-- Grand Marshal's Plate Gauntlets
+					i(28702),	-- Grand Marshal's Plate Legguards
+
+					-- High Warlord's Plate [Warrior]
+					i(28851),	-- High Warlord's Plate Chestpiece
+					i(28852),	-- High Warlord's Plate Gauntlets
+					i(28853),	-- High Warlord's Plate Helm
+					i(28854),	-- High Warlord's Plate Legguards
+					i(28855),	-- High Warlord's Plate Shoulders
+				}),
+				cl(PALADIN, {
+					-- Grand Marshal's Lamellar [Paladin]
+					i(28681),	-- Grand Marshal's Lamellar Helm
+					i(28683),	-- Grand Marshal's Lamellar Shoulders
+					i(28679),	-- Grand Marshal's Lamellar Chestpiece
+					i(28680),	-- Grand Marshal's Lamellar Gauntlets
+					i(28724),	-- Grand Marshal's Lamellar Legguards
+
+					-- Grand Marshal's Ornamented [Paladin]
+					i(31632),	-- Grand Marshal's Ornamented Headguard
+					i(31634),	-- Grand Marshal's Ornamented Spaulders
+					i(31630),	-- Grand Marshal's Ornamented Chestplate
+					i(31631),	-- Grand Marshal's Ornamented Gloves
+					i(31633),	-- Grand Marshal's Ornamented Leggings
+
+					-- Grand Marshal's Scaled [Paladin]
+					i(28711),	-- Grand Marshal's Scaled Helm
+					i(28713),	-- Grand Marshal's Scaled Shoulders
+					i(28709),	-- Grand Marshal's Scaled Chestpiece
+					i(28710),	-- Grand Marshal's Scaled Gauntlets
+					i(28712),	-- Grand Marshal's Scaled Legguards
+
+					-- High Warlord's Lamellar [Paladin]
+					i(28831),	-- High Warlord's Lamellar Chestpiece
+					i(28832),	-- High Warlord's Lamellar Gauntlets
+					i(28833),	-- High Warlord's Lamellar Helm
+					i(28834),	-- High Warlord's Lamellar Legguards
+					i(28835),	-- High Warlord's Lamellar Shoulders
+
+					-- High Warlord's Ornamented [Paladin]
+					i(31635),	-- High Warlord's Ornamented Chestplate
+					i(31636),	-- High Warlord's Ornamented Gloves
+					i(31637),	-- High Warlord's Ornamented Headguard
+					i(31638),	-- High Warlord's Ornamented Leggings
+					i(31639),	-- High Warlord's Ornamented Spaulders
+
+					-- High Warlord's Scaled [Paladin]
+					i(28861),	-- High Warlord's Scaled Chestpiece
+					i(28862),	-- High Warlord's Scaled Gauntlets
+					i(28863),	-- High Warlord's Scaled Helm
+					i(28864),	-- High Warlord's Scaled Legguards
+					i(28865),	-- High Warlord's Scaled Shoulders
+				}),
+				cl(HUNTER, {
+					-- Grand Marshal's Chain [Hunter]
+					i(28615),	-- Grand Marshal's Chain Helm
+					i(28617),	-- Grand Marshal's Chain Spaulders
+					i(28613),	-- Grand Marshal's Chain Armor
+					i(28614),	-- Grand Marshal's Chain Gauntlets
+					i(28616),	-- Grand Marshal's Chain Leggings
+
+					-- High Warlord's Chain [Hunter]
+					i(28805),	-- High Warlord's Chain Armor
+					i(28806),	-- High Warlord's Chain Gauntlets
+					i(28807),	-- High Warlord's Chain Helm
+					i(28808),	-- High Warlord's Chain Leggings
+					i(28809),	-- High Warlord's Chain Spaulders
+				}),
+				cl(ROGUE, {
+					-- Grand Marshal's Leather [Rogue]
+					i(28685),	-- Grand Marshal's Leather Helm
+					i(28687),	-- Grand Marshal's Leather Spaulders
+					i(28688),	-- Grand Marshal's Leather Tunic
+					i(28684),	-- Grand Marshal's Leather Gloves
+					i(28686),	-- Grand Marshal's Leather Legguards
+
+					-- High Warlord's Leather [Rogue]
+					i(28836),	-- High Warlord's Leather Gloves
+					i(28837),	-- High Warlord's Leather Helm
+					i(28838),	-- High Warlord's Leather Legguards
+					i(28839),	-- High Warlord's Leather Spaulders
+					i(28840),	-- High Warlord's Leather Tunic
+				}),
+				cl(PRIEST, {
+					-- Grand Marshal's Mooncloth [Priest]
+					i(31622),	-- Grand Marshal's Mooncloth Cowl
+					i(31624),	-- Grand Marshal's Mooncloth Shoulderpads
+					i(31625),	-- Grand Marshal's Mooncloth Vestments
+					i(31620),	-- Grand Marshal's Mooncloth Mitts
+					i(31623),	-- Grand Marshal's Mooncloth Legguards
+
+					-- Grand Marshal's Satin [Priest]
+					i(28705),	-- Grand Marshal's Satin Hood
+					i(28707),	-- Grand Marshal's Satin Mantle
+					i(28708),	-- Grand Marshal's Satin Robe
+					i(28704),	-- Grand Marshal's Satin Gloves
+					i(28706),	-- Grand Marshal's Satin Leggings
+
+					-- High Warlord's Mooncloth [Priest]
+					i(31626),	-- High Warlord's Mooncloth Cowl
+					i(31621),	-- High Warlord's Mooncloth Mitts
+					i(31627),	-- High Warlord's Mooncloth Legguards
+					i(31628),	-- High Warlord's Mooncloth Shoulderpads
+					i(31629),	-- High Warlord's Mooncloth Vestments
+
+					-- High Warlord's Satin [Priest]
+					i(28856),	-- High Warlord's Satin Gloves
+					i(28857),	-- High Warlord's Satin Hood
+					i(28858),	-- High Warlord's Satin Leggings
+					i(28859),	-- High Warlord's Satin Mantle
+					i(28860),	-- High Warlord's Satin Robe
+				}),
+				cl(SHAMAN, {
+					-- Grand Marshal's Linked [Shaman]
+					i(28691),	-- Grand Marshal's Linked Helm
+					i(28693),	-- Grand Marshal's Linked Spaulders
+					i(28689),	-- Grand Marshal's Linked Armor
+					i(28690),	-- Grand Marshal's Linked Gauntlets
+					i(28692),	-- Grand Marshal's Linked Leggings
+
+					-- Grand Marshal's Mail [Shaman]
+					i(28696),	-- Grand Marshal's Mail Helm
+					i(28698),	-- Grand Marshal's Mail Spaulders
+					i(28694),	-- Grand Marshal's Mail Armor
+					i(28695),	-- Grand Marshal's Mail Gauntlets
+					i(28697),	-- Grand Marshal's Mail Leggings
+
+					-- Grand Marshal's Ringmail [Shaman]
+					i(31642),	-- Grand Marshal's Ringmail Headpiece
+					i(31644),	-- Grand Marshal's Ringmail Shoulders
+					i(31640),	-- Grand Marshal's Ringmail Chestguard
+					i(31641),	-- Grand Marshal's Ringmail Gloves
+					i(31643),	-- Grand Marshal's Ringmail Legguards
+
+					-- High Warlord's Linked [Shaman]
+					i(28841),   -- High Warlord's Linked Armor
+					i(28842),   -- High Warlord's Linked Gauntlets
+					i(28843),   -- High Warlord's Linked Helm
+					i(28844),   -- High Warlord's Linked Leggings
+					i(28845),   -- High Warlord's Linked Spaulders
+
+					-- High Warlord's Mail [Shaman]
+					i(28846),   -- High Warlord's Mail Armor
+					i(28847),   -- High Warlord's Mail Gauntlets
+					i(28848),   -- High Warlord's Mail Helm
+					i(28849),   -- High Warlord's Mail Leggings
+					i(28850),   -- High Warlord's Mail Spaulders
+
+					-- High Warlord's Ringmail [Shaman]
+					i(31646),   -- High Warlord's Ringmail Chestguard
+					i(31647),   -- High Warlord's Ringmail Gloves
+					i(31648),   -- High Warlord's Ringmail Headpiece
+					i(31649),   -- High Warlord's Ringmail Legguards
+					i(31650),   -- High Warlord's Ringmail Shoulders
+				}),
+				cl(MAGE, {
+					-- Grand Marshal's Silk [Mage]
+					i(28715),	-- Grand Marshal's Silk Cowl
+					i(28714),	-- Grand Marshal's Silk Amice
+					i(28717),	-- Grand Marshal's Silk Raiment
+					i(28716),	-- Grand Marshal's Silk Handguards
+					i(28718),	-- Grand Marshal's Silk Trousers
+
+					-- High Warlord's Silk [Mage]
+					i(28866),	-- High Warlord's Silk Amice
+					i(28867),	-- High Warlord's Silk Cowl
+					i(28868),	-- High Warlord's Silk Handguards
+					i(28869),	-- High Warlord's Silk Raiment
+					i(28870),	-- High Warlord's Silk Trousers
+				}),
+				cl(WARLOCK, {
+					-- Grand Marshal's Dreadweave [Warlock]
+					i(28625),	-- Grand Marshal's Dreadweave Hood
+					i(28627),	-- Grand Marshal's Dreadweave Mantle
+					i(28628),	-- Grand Marshal's Dreadweave Robe
+					i(28624),	-- Grand Marshal's Dreadweave Gloves
+					i(28626),	-- Grand Marshal's Dreadweave Leggings
+
+					-- High Warlord's Dreadweave [Warlock]
+					i(28817),	-- High Warlord's Dreadweave Gloves
+					i(28818),	-- High Warlord's Dreadweave Hood
+					i(28819),	-- High Warlord's Dreadweave Leggings
+					i(28820),	-- High Warlord's Dreadweave Mantle
+					i(28821),	-- High Warlord's Dreadweave Robe
+				}),
+				cl(DRUID, {
+					-- Grand Marshal's Dragonhide [Druid]
+					i(28619),	-- Grand Marshal's Dragonhide Helm
+					i(28622),	-- Grand Marshal's Dragonhide Spaulders
+					i(28623),	-- Grand Marshal's Dragonhide Tunic
+					i(28618),	-- Grand Marshal's Dragonhide Gloves
+					i(28620),	-- Grand Marshal's Dragonhide Legguards
+
+					-- Grand Marshal's Kodohide [Druid]
+					i(31590),	-- Grand Marshal's Kodohide Helm
+					i(31592),	-- Grand Marshal's Kodohide Spaulders
+					i(31593),	-- Grand Marshal's Kodohide Tunic
+					i(31589),	-- Grand Marshal's Kodohide Gloves
+					i(31591),	-- Grand Marshal's Kodohide Legguards
+
+					-- Grand Marshal's Wyrmhide [Druid]
+					i(28720),	-- Grand Marshal's Wyrmhide Helm
+					i(28722),	-- Grand Marshal's Wyrmhide Spaulders
+					i(28723),	-- Grand Marshal's Wyrmhide Tunic
+					i(28719),	-- Grand Marshal's Wyrmhide Gloves
+					i(28721),	-- Grand Marshal's Wyrmhide Legguards
+
+					-- High Warlord's Dragonhide [Druid]
+					i(28811),	-- High Warlord's Dragonhide Gloves
+					i(28812),	-- High Warlord's Dragonhide Helm
+					i(28813),	-- High Warlord's Dragonhide Legguards
+					i(28814),	-- High Warlord's Dragonhide Spaulders
+					i(28815),	-- High Warlord's Dragonhide Tunic
+
+					-- High Warlord's Kodohide [Druid]
+					i(31584),	-- High Warlord's Kodohide Gloves
+					i(31585),	-- High Warlord's Kodohide Helm
+					i(31586),	-- High Warlord's Kodohide Legguards
+					i(31587),	-- High Warlord's Kodohide Spaulders
+					i(31588),	-- High Warlord's Kodohide Tunic
+
+					-- High Warlord's Wyrmhide [Druid]
+					i(28871),	-- High Warlord's Wyrmhide Gloves
+					i(28872),	-- High Warlord's Wyrmhide Helm
+					i(28873),	-- High Warlord's Wyrmhide Legguards
+					i(28874),	-- High Warlord's Wyrmhide Spaulders
+					i(28875),	-- High Warlord's Wyrmhide Tunic
+				}),
+			}),
+		}),
 		n(-664, {	-- Gladiator: Season 1
 			n(-661, {	-- Gladiator PvP Gear
 				n(-319, {	-- Weapons
@@ -84,22 +344,22 @@ _.PVP =
 					}),
 				}),
 				cl(DRUID, {
-					--[[
-					i(146609, {	-- Ensemble: Gladiator's Dragonhide Armor
-						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -10003, -664, -661, 11 }, },
-					}),
-					--]]
 					i(146609, {	-- Ensemble: Gladiator's Dragonhide Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", -10003, -664, -661, 11 }, 
-							{"select", "itemID", 28444 },	-- General's Dragonhide Boots
 							{"select", "itemID", 28443 },	-- General's Dragonhide Belt
+							{"select", "itemID", 28444 },	-- General's Dragonhide Boots
+							{"select", "itemID", 31594 },	-- General's Kodohide Belt
+							{"select", "itemID", 31595 },	-- General's Kodohide Boots
 							{"select", "itemID", 28446 },	-- General's Wyrmhide Belt
 							{"select", "itemID", 28447 },	-- General's Wyrmhide Boots
-							{"select", "itemID", 31594 },	-- General's kodohide Belt
-							{"select", "itemID", 31595 },	-- General's Kodohide Belt
+							{"select", "itemID", 28976 },	-- Marshal's Dragonhide Belt
+							{"select", "itemID", 28977 },	-- Marshal's Dragonhide Boots
+							{"select", "itemID", 31596 },   -- Marshal's Kodohide Belt
+							{"select", "itemID", 31597 },	-- Marshal's Kodohide Boots
+							{"select", "itemID", 29004 },   -- Marshal's Wyrmhide Belt
+							{"select", "itemID", 29005 },	-- Marshal's Wyrmhide Boots
 							{"exclude", "itemID", 146609 },	-- Exclude itself to stop duplicating
 						},
 					}),
@@ -154,6 +414,10 @@ _.PVP =
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { 
 							{"sub", "pvp_set_ensemble", -10003, -664, -661, 3 },
+							{"select", "itemID", 28450 },	-- General's Chain Girdle
+							{"select", "itemID", 28449 },	-- General's Chain Sabatons
+							{"select", "itemID", 28974 },	-- Marshal's Chain Girdle
+							{"select", "itemID", 28975 },	-- Marshal's Chain Sabatons		
 							{"exclude", "itemID", 146608 },	-- Exclude itself to stop duplicating
 						},
 					}),
@@ -178,6 +442,10 @@ _.PVP =
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { 
 							{"sub", "pvp_set_ensemble", -10003, -664, -661, 8 },
+							{"select", "itemID", 28409 },   -- General's Silk Belt
+							{"select", "itemID", 29001 },	-- Marshal's Silk Belt
+							{"select", "itemID", 28410 },	-- General's Silk Footguards
+							{"select", "itemID", 29003 },	-- Marshal's Silk Footguards
 							{"exclude", "itemID", 146617 },	-- Exclude itself to stop duplicating
 						},
 					}),
@@ -202,6 +470,18 @@ _.PVP =
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { 
 							{"sub", "pvp_set_ensemble", -10003, -664, -661, 2 }, 
+							{"select", "itemID", 28641 },	-- General's Lamellar Belt
+							{"select", "itemID", 28642 },	-- General's Lamellar Greaves
+							{"select", "itemID", 32982 },	-- General's Ornamented Belt
+							{"select", "itemID", 32984 },	-- General's Ornamented Greaves
+							{"select", "itemID", 28644 },	-- General's Scaled Belt
+							{"select", "itemID", 28645 },	-- General's Scaled Greaves
+							{"select", "itemID", 28983 },	-- Marshal's Lamellar Belt
+							{"select", "itemID", 28985 },	-- Marshal's Lamellar Greaves
+							{"select", "itemID", 32985 },   -- Marshal's Ornamented Belt
+							{"select", "itemID", 32987 },	-- Marshal's Ornamented Greaves
+							{"select", "itemID", 28998 },   -- Marshal's Scaled Belt
+							{"select", "itemID", 29000 },	-- Marshal's Scaled Greaves
 							{"exclude", "itemID", 146616 },	-- Exclude itself to stop duplicating
 						},
 					}),
@@ -256,6 +536,12 @@ _.PVP =
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", -10003, -664, -661, 5 }, 
+							{"select", "itemID", 32974 },	-- General's Mooncloth Bel
+							{"select", "itemID", 32975 },	-- General's Mooncloth Slippers
+							{"select", "itemID", 147613 },	-- General's Satin Cord
+							{"select", "itemID", 147614 },	-- General's Satin Slippers
+							{"select", "itemID", 32976 },	-- Marshal's Mooncloth Belt
+							{"select", "itemID", 32978 },	-- Marshal's Mooncloth Slippers
 							{"exclude", "itemID", 146615 },	-- Exclude itself to stop duplicating
 						},
 					}),
@@ -295,6 +581,10 @@ _.PVP =
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", -10003, -664, -661, 4 }, 
+							{"select", "itemID", 28423 },	-- General's Leather Belt
+							{"select", "itemID", 28422 },   -- General's Leather Boots
+							{"select", "itemID", 28986 },	-- Marshal's Leather Belt
+							{"select", "itemID", 28987 },	-- Marshal's Leather Boots
 							{"exclude", "itemID", 146612 },	-- Exclude itself to stop duplicating
 						},
 					}),
@@ -319,6 +609,18 @@ _.PVP =
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { 
 							{"sub", "pvp_set_ensemble", -10003, -664, -661, 7 }, 
+							{"select", "itemID", 28629 },	-- General's Linked Girdle
+							{"select", "itemID", 28630 },	-- General's Linked Sabatons
+							{"select", "itemID", 28639 },	-- General's Mail Girdle
+							{"select", "itemID", 28640 },	-- General's Mail Sabatons
+							{"select", "itemID", 32992 },   -- General's Ringmail Girdle
+							{"select", "itemID", 32993 },	-- General's Ringmail Sabatons
+							{"select", "itemID", 28990 },	-- Marshal's Linked Girdle
+							{"select", "itemID", 28991 },	-- Marshal's Linked Sabatons
+							{"select", "itemID", 28993 },   -- Marshal's Mail Girdle
+							{"select", "itemID", 28994 },	-- Marshal's Mail Sabatons
+							{"select", "itemID", 32995 },   -- Marshal's Ringmail Girdle
+							{"select", "itemID", 32996 },	-- Marshal's Ringmail Sabatons
 							{"exclude", "itemID", 146614 },	-- Exclude itself to stop duplicating
 						},
 					}),
@@ -372,7 +674,13 @@ _.PVP =
 					i(146611, {	-- Ensemble: Gladiator's Felweave Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", -10003, -664, -661, 9 }, 
+							{"sub", "pvp_set_ensemble", -10003, -664, -661, 9 },
+							{"select", "itemID", 28404 },	-- General's Dreadweave Belt
+							{"select", "itemID", 28402 },	-- General's Dreadweave Stalkers
+							{"select", "itemID", 147615 },	-- General's Felweave Belt
+							{"select", "itemID", 147616 },	-- General's Felweave Boots
+							{"select", "itemID", 28980 },   -- Marshal's Dreadweave Belt
+							{"select", "itemID", 28982 },	-- Marshal's Dreadweave Stalkers						
 							{"exclude", "itemID", 146611 },	-- Exclude itself to stop duplicating
 						},
 					}),
@@ -411,7 +719,11 @@ _.PVP =
 					i(146613, {	-- Ensemble: Gladiator's Plate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", -10003, -664, -661, 1 }, 
+							{"sub", "pvp_set_ensemble", -10003, -664, -661, 1 }, 	
+							{"select", "itemID", 28385 },	-- General's Plate Belt
+							{"select", "itemID", 28383 },	-- General's Plate Greaves
+							{"select", "itemID", 28995 },	-- Marshal's Plate Belt
+							{"select", "itemID", 28997 },	-- Marshal's Plate Greaves												
 							{"exclude", "itemID", 146613 },	-- Exclude itself to stop duplicating
 						},
 					}),
@@ -486,7 +798,7 @@ _.PVP =
 					i(28973, {	-- Marshal's Chain Bracers
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
-					i(28978, {	-- Marshal'sDragonhide Bracers
+					i(28978, {	-- Marshal's Dragonhide Bracers
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
 					i(28981, {	-- Marshal's Dreadweave Cuffs
@@ -584,46 +896,46 @@ _.PVP =
 					i(28974, {	-- Marshal's Chain Girdle
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
-					i(28976, {	-- Marshal's  Dragonhide Belt
+					i(28976, {	-- Marshal's Dragonhide Belt
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
-					i(28980, {	-- Marshal's  Dreadweave Belt
+					i(28980, {	-- Marshal's Dreadweave Belt
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
-					i(31596, {	-- Marshal's  Kodohide Belt
+					i(31596, {	-- Marshal's Kodohide Belt
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
-					i(28983, {	-- Marshal's  Lamellar Belt
+					i(28983, {	-- Marshal's Lamellar Belt
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
-					i(28986, {	-- Marshal's  Leather Belt
+					i(28986, {	-- Marshal's Leather Belt
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
-					i(28990, {	-- Marshal's  Linked Girdle
+					i(28990, {	-- Marshal's Linked Girdle
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
-					i(28993, {	-- Marshal's  Mail Girdle
+					i(28993, {	-- Marshal's Mail Girdle
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
 					i(32976, {	-- Marshal's Mooncloth Belt
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
-					i(32985, {	-- Marshal's  Ornamented Belt
+					i(32985, {	-- Marshal's Ornamented Belt
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
-					i(28995, {	-- Marshal's  Plate Belt
+					i(28995, {	-- Marshal's Plate Belt
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
 					i(32995, {	-- Marshal's Ringmail Girdle
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
-					i(28998, {	-- Marshal's  Scaled Belt
+					i(28998, {	-- Marshal's Scaled Belt
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
-					i(29001, {	-- Marshal's  Silk Belt
+					i(29001, {	-- Marshal's Silk Belt
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
-					i(29004, {	-- Marshal's  Wyrmhide Belt
+					i(29004, {	-- Marshal's Wyrmhide Belt
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
 				}),
@@ -802,16 +1114,16 @@ _.PVP =
 							{"select", "itemID", 28298 },	--  Gladiator's Decapitator
 							{"select", "itemID", 28346 },	--  Gladiator's Endgame
 							{"select", "itemID", 28314 },	--  Gladiator's Fleshslicer
-							{"select", "itemID", 32450 },	--  Gladiator's Gav,
+							{"select", "itemID", 32450 },	--  Gladiator's Gavel
 							{"select", "itemID", 24550 },	--  Gladiator's Greatsword
-							{"select", "itemID", 28309 },	--  Gladiator's Hacke,
+							{"select", "itemID", 28309 },	--  Gladiator's Hacker
 							{"select", "itemID", 28294 },	--  Gladiator's Heavy Crossbow
 							{"select", "itemID", 28476 },	--  Gladiator's Maul
 							{"select", "itemID", 28300 },	--  Gladiator's Painsaw
 							{"select", "itemID", 28305 },	--  Gladiator's Pummeler
 							{"select", "itemID", 28307 },	--  Gladiator's Quickblade
 							{"select", "itemID", 32452 },	--  Gladiator's Reprieve
-							{"select", "itemID", 28313 },	--  Gladiator's Rippe
+							{"select", "itemID", 28313 },	--  Gladiator's Ripper
 							{"select", "itemID", 32451 },	--  Gladiator's Salvation
 							{"select", "itemID", 28312 },	--  Gladiator's Shanker
 							{"select", "itemID", 28358 },	--  Gladiator's Shield Wall
@@ -905,7 +1217,19 @@ _.PVP =
 				cl(DRUID, {
 					i(146619, {	-- Ensemble: Merciless Gladiator's Dragonhide Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -10003, -665, -661, 11 }, },
+						["sym"] = {
+							{"sub", "pvp_set_ensemble", -10003, -665, -661, 11 }, 
+							{"select", "itemID", 32810 },	-- Veteran's Dragonhide Bracers
+							{"select", "itemID", 32798 },	-- Veteran's Dragonhide Belt
+							{"select", "itemID", 32786 },	-- Veteran's Dragonhide Boots
+							{"select", "itemID", 32812 },	-- Veteran's Kodohide Bracers
+							{"select", "itemID", 32800 },	-- Veteran's Kodohide Belt
+							{"select", "itemID", 32788 },	-- Veteran's Kodohide Boots
+							{"select", "itemID", 32821 },	-- Veteran's Wyrmhide Bracers
+							{"select", "itemID", 32808 },	-- Veteran's Wyrmhide Belt
+							{"select", "itemID", 32796 },   -- Veteran's Wyrmhide Boots
+							{"exclude", "itemID", 146619 },	-- Exclude itself to stop duplicating
+						},
 					}),
 					i(31967, {	-- Merciless Gladiator's Dragonhide Gloves
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -956,7 +1280,13 @@ _.PVP =
 				cl(HUNTER, {
 					i(146618, {	-- Ensemble: Merciless Gladiator's Chain Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -10003, -665, -661, 3 }, },
+						["sym"] = {
+							{"sub", "pvp_set_ensemble", -10003, -665, -661, 3 }, 
+							{"select", "itemID", 32809 },	-- Veteran's Chain Bracers
+							{"select", "itemID", 32797 },	-- Veteran's Chain Girdle
+							{"select", "itemID", 32785 },	-- Veteran's Chain Sabatons
+							{"exclude", "itemID", 146618 },	-- Exclude itself to stop duplicating
+						},
 					}),
 					i(31960, {	-- Merciless Gladiator's Chain Armor
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -977,7 +1307,13 @@ _.PVP =
 				cl(MAGE, {
 					i(146627, {	-- Ensemble: Merciless Gladiator's Silk Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -10003, -665, -661, 8 }, },
+						["sym"] = {
+							{"sub", "pvp_set_ensemble", -10003, -665, -661, 8 }, 
+							{"select", "itemID", 32820 },	-- Veteran's Silk Cuffs
+							{"select", "itemID", 32807 },	-- Veteran's Silk Belt
+							{"select", "itemID", 32795 },	-- Veteran's Silk Footguards
+							{"exclude", "itemID", 146627 },	-- Exclude itself to stop duplicating
+						},
 					}),
 					i(32047, {	-- Merciless Gladiator's Silk Amice
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -998,7 +1334,19 @@ _.PVP =
 				cl(PALADIN, {
 					i(146626, {	-- Ensemble: Merciless Gladiator's Scaled Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -10003, -665, -661, 2 }, },
+						["sym"] = {
+							{"sub", "pvp_set_ensemble", -10003, -665, -661, 2 }, 
+							{"select", "itemID", 32813 },	-- Veteran's Lamellar Bracers
+							{"select", "itemID", 32801 },	-- Veteran's Lamellar Belt
+							{"select", "itemID", 32789 },	-- Veteran's Lamellar Greaves
+							{"select", "itemID", 32989 },	-- Veteran's Ornamented Bracers
+							{"select", "itemID", 32988 },	-- Veteran's Ornamented Belt
+							{"select", "itemID", 32990 },	-- Veteran's Ornamented Greaves
+							{"select", "itemID", 32819 },	-- Veteran's Scaled Bracers
+							{"select", "itemID", 32806 },	-- Veteran's Scaled Belt
+							{"select", "itemID", 32794 },   -- Veteran's Scaled Greaves
+							{"exclude", "itemID", 146626 },	-- Exclude itself to stop duplicating
+						},
 					}),
 					i(31992, {	-- Merciless Gladiator's Lamellar Chestpiece
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -1049,7 +1397,14 @@ _.PVP =
 				cl(PRIEST, {
 					i(146625, {	-- Ensemble: Merciless Gladiator's Satin Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -10003, -665, -661, 5 }, },
+						["sym"] = {
+							{"sub", "pvp_set_ensemble", -10003, -665, -661, 5 }, 
+							{"select", "itemID", 32980 },	-- Veteran's Mooncloth Cuffs
+							{"select", "itemID", 32979 },	-- Veteran's Mooncloth Belt
+							{"select", "itemID", 32981 },	-- Veteran's Mooncloth Slippers
+							{"select", "itemID", 147609 },	-- Veteran's Satin Slippers
+							{"exclude", "itemID", 146625 },	-- Exclude itself to stop duplicating
+						},
 					}),
 					i(32015, {	-- Merciless Gladiator's Mooncloth Gloves
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -1085,7 +1440,16 @@ _.PVP =
 				cl(ROGUE, {
 					i(146622, {	-- Ensemble: Merciless Gladiator's Leather Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -10003, -665, -661, 4 }, },
+						["sym"] = {
+							{"sub", "pvp_set_ensemble", -10003, -665, -661, 4 }, 
+							{"select", "itemID", 32814 },	-- Veteran's Leather Bracers
+							{"select", "itemID", 32802 },	-- Veteran's Leather Belt
+							{"select", "itemID", 32790 },	-- Veteran's Leather Boots
+							{"select", "itemID", 147612 },	-- Veteran's Leather Wristguards
+							{"select", "itemID", 147610 },	-- Veteran's Leather Waistband
+							{"select", "itemID", 147611 },	-- Veteran's Leather Footguards
+							{"exclude", "itemID", 146622 },	-- Exclude itself to stop duplicating
+						},
 					}),
 					i(31998, {	-- Merciless Gladiator's Leather Gloves
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -1106,7 +1470,19 @@ _.PVP =
 				cl(SHAMAN, {
 					i(146624, {	-- Ensemble: Merciless Gladiator's Ringmail Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -10003, -665, -661, 7 }, },
+						["sym"] = {
+							{"sub", "pvp_set_ensemble", -10003, -665, -661, 7 }, 
+							{"select", "itemID", 32816 },	-- Veteran's Linked Bracers
+							{"select", "itemID", 32803 },	-- Veteran's Linked Girdle
+							{"select", "itemID", 32791 },	-- Veteran's Linked Sabatons
+							{"select", "itemID", 32817 },	-- Veteran's Mail Bracers
+							{"select", "itemID", 32804 },	-- Veteran's Mail Girdle
+							{"select", "itemID", 32792 },	-- Veteran's Mail Sabatons
+							{"select", "itemID", 32997 },	-- Veteran's Ringmail Bracers
+							{"select", "itemID", 32998 },	-- Veteran's Ringmail Girdle
+							{"select", "itemID", 32999 },   -- Veteran's Ringmail Sabatons
+							{"exclude", "itemID", 146624 },	-- Exclude itself to stop duplicating
+						},
 					}),
 					i(32004, {	-- Merciless Gladiator's Linked Armor
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -1157,7 +1533,13 @@ _.PVP =
 				cl(WARLOCK, {
 					i(146621, {	-- Ensemble: Merciless Gladiator's Felweave Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -10003, -665, -661, 9 }, },
+						["sym"] = {
+							{"sub", "pvp_set_ensemble", -10003, -665, -661, 9 }, 
+							{"select", "itemID", 32811 },	-- Veteran's Dreadweave Cuffs
+							{"select", "itemID", 32799 },	-- Veteran's Dreadweave Belt
+							{"select", "itemID", 32787 },	-- Veteran's Dreadweave Stalkers
+							{"exclude", "itemID", 146621 },	-- Exclude itself to stop duplicating
+						},
 					}),
 					i(31973, {	-- Merciless Gladiator's Dreadweave Gloves
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -1193,7 +1575,13 @@ _.PVP =
 				cl(WARRIOR, {
 					i(146623, {	-- Ensemble: Merciless Gladiator's Plate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -10003, -665, -661, 1 }, },
+						["sym"] = {
+							{"sub", "pvp_set_ensemble", -10003, -665, -661, 1 }, 
+							{"select", "itemID", 32818 },	-- Veteran's Plate Bracers
+							{"select", "itemID", 32805 },	-- Veteran's Plate Bel
+							{"select", "itemID", 32793 },	-- Veteran's Plate Greaves
+							{"exclude", "itemID", 146623 },	-- Exclude itself to stop duplicating
+						},
 					}),
 					i(30486, {	-- Merciless Gladiator's Plate Chestpiece
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -1515,7 +1903,19 @@ _.PVP =
 				cl(DRUID, {
 					i(146629, {	-- Ensemble: Vengeful Gladiator's Dragonhide Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -10003, -666, -661, 11 }, },
+						["sym"] = {
+							{"sub", "pvp_set_ensemble", -10003, -666, -661, 11 }, 
+							{"select", "itemID", 33881 },	-- Vindicator's Dragonhide Bracers
+							{"select", "itemID", 33879 },	-- Vindicator's Dragonhide Belt
+							{"select", "itemID", 33880 },	-- Vindicator's Dragonhide Boots
+							{"select", "itemID", 33887 },	-- Vindicator's Kodohide Bracers
+							{"select", "itemID", 33885 },	-- Vindicator's Kodohide Belt
+							{"select", "itemID", 33886 },	-- Vindicator's Kodohide Boots
+							{"select", "itemID", 33917 },	-- Vindicator's Wyrmhide Bracers
+							{"select", "itemID", 33915 },	-- Vindicator's Wyrmhide Belt
+							{"select", "itemID", 33916 },   -- Vindicator's Wyrmhide Boots
+							{"exclude", "itemID", 146629 },	-- Exclude itself to stop duplicating
+						},
 					}),
 					i(33671, {	-- Vengeful Gladiator's Dragonhide Gloves
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -1566,7 +1966,13 @@ _.PVP =
 				cl(HUNTER, {
 					i(146628, {	-- Ensemble: Vengeful Gladiator's Chain Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -10003, -666, -661, 3 }, },
+						["sym"] = {
+							{"sub", "pvp_set_ensemble", -10003, -666, -661, 3 }, 
+							{"select", "itemID", 33876 },	-- Vindicator's Chain Bracers
+							{"select", "itemID", 33877 },	-- Vindicator's Chain Girdle
+							{"select", "itemID", 33878 },	-- Vindicator's Chain Sabatons
+							{"exclude", "itemID", 146628 },	-- Exclude itself to stop duplicating
+						},
 					}),
 					i(33664, {	-- Vengeful Gladiator's Chain Armor
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -1587,7 +1993,13 @@ _.PVP =
 				cl(MAGE, {
 					i(146637, {	-- Ensemble: Vengeful Gladiator's Silk Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -10003, -666, -661, 8 }, },
+						["sym"] = {
+							{"sub", "pvp_set_ensemble", -10003, -666, -661, 8 }, 
+							{"select", "itemID", 33913 },	-- Vindicator's Silk Cuffs
+							{"select", "itemID", 33912 },	-- Vindicator's Silk Belt
+							{"select", "itemID", 33914 },	-- Vindicator's Silk Footguards
+							{"exclude", "itemID", 146637 },	-- Exclude itself to stop duplicating
+						},
 					}),
 					i(33757, {	-- Vengeful Gladiator's Silk Amice
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -1608,7 +2020,19 @@ _.PVP =
 				cl(PALADIN, {
 					i(146636, {	-- Ensemble: Vengeful Gladiator's Scaled Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -10003, -666, -661, 2 }, },
+						["sym"] = {
+							{"sub", "pvp_set_ensemble", -10003, -666, -661, 2 }, 
+							{"select", "itemID", 33889 },	-- Vindicator's Lamellar Bracers
+							{"select", "itemID", 33888 },	-- Vindicator's Lamellar Belt
+							{"select", "itemID", 33890 },	-- Vindicator's Lamellar Greaves
+							{"select", "itemID", 33904 },	-- Vindicator's Ornamented Bracers
+							{"select", "itemID", 33903 },	-- Vindicator's Ornamented Belt
+							{"select", "itemID", 33905 },	-- Vindicator's Ornamented Greaves
+							{"select", "itemID", 33910 },	-- Vindicator's Scaled Bracers
+							{"select", "itemID", 33909 },	-- Vindicator's Scaled Belt
+							{"select", "itemID", 33911 },   -- Vindicator's Scaled Greaves
+							{"exclude", "itemID", 146636 },	-- Exclude itself to stop duplicating
+						},
 					}),
 					i(33695, {	-- Vengeful Gladiator's Lamellar Chestpiece
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -1659,7 +2083,13 @@ _.PVP =
 				cl(PRIEST, {
 					i(146635, {	-- Ensemble: Vengeful Gladiator's Satin Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -10003, -666, -661, 5 }, },
+						["sym"] = {
+							{"sub", "pvp_set_ensemble", -10003, -666, -661, 5 }, 
+							{"select", "itemID", 33901 },	-- Vindicator's Mooncloth Cuffs
+							{"select", "itemID", 33900 },	-- Vindicator's Mooncloth Belt
+							{"select", "itemID", 33902 },	-- Vindicator's Mooncloth Slippers
+							{"exclude", "itemID", 146635 },	-- Exclude itself to stop duplicating
+						},
 					}),
 					i(33717, {	-- Vengeful Gladiator's Mooncloth Gloves
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -1695,7 +2125,14 @@ _.PVP =
 				cl(ROGUE, {
 					i(146632, {	-- Ensemble: Vengeful Gladiator's Leather Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -10003, -666, -661, 4 }, },
+						["sym"] = {
+							{"sub", "pvp_set_ensemble", -10003, -666, -661, 4 }, 
+							{"select", "itemID", 33893 },	-- Vindicator's Leather Bracers
+							{"select", "itemID", 33891 },	-- Vindicator's Leather Belt
+							{"select", "itemID", 33892 },	-- Vindicator's Leather Boots
+							{"select", "itemID", 147670 },	-- Vindicator's Leather Wristguards
+							{"exclude", "itemID", 146632 },	-- Exclude itself to stop duplicating
+						},
 					}),
 					i(33700, {	-- Vengeful Gladiator's Leather Gloves
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -1716,7 +2153,19 @@ _.PVP =
 				cl(SHAMAN, {
 					i(146634, {	-- Ensemble: Vengeful Gladiator's Ringmail Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -10003, -666, -661, 7 }, },
+						["sym"] = {
+							{"sub", "pvp_set_ensemble", -10003, -666, -661, 7 }, 
+							{"select", "itemID", 33894 },	-- Vindicator's Linked Bracers
+							{"select", "itemID", 33895 },	-- Vindicator's Linked Girdle
+							{"select", "itemID", 33896 },	-- Vindicator's Linked Sabatons
+							{"select", "itemID", 33897 },	-- Vindicator's Mail Bracers
+							{"select", "itemID", 33898 },	-- Vindicator's Mail Girdle
+							{"select", "itemID", 33899 },	-- Vindicator's Mail Sabatons
+							{"select", "itemID", 33906 },	-- Vindicator's Ringmail Bracers
+							{"select", "itemID", 33907 },	-- Vindicator's Ringmail Girdle
+							{"select", "itemID", 33908 },   -- Vindicator's Ringmail Sabatons
+							{"exclude", "itemID", 146634 },	-- Exclude itself to stop duplicating
+						},
 					}),
 					i(33706, {	-- Vengeful Gladiator's Linked Armor
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -1767,7 +2216,13 @@ _.PVP =
 				cl(WARLOCK, {
 					i(146631, {	-- Ensemble: Vengeful Gladiator's Felweave Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -10003, -666, -661, 9 }, },
+						["sym"] = {
+							{"sub", "pvp_set_ensemble", -10003, -666, -661, 9 }, 
+							{"select", "itemID", 33883 },	-- Vindicator's Dreadweave Cuffs
+							{"select", "itemID", 33882 },	-- Vindicator's Dreadweave Belt
+							{"select", "itemID", 33884 },	-- Vindicator's Dreadweave Stalkers
+							{"exclude", "itemID", 146631 },	-- Exclude itself to stop duplicating
+						},
 					}),
 					i(33676, {	-- Vengeful Gladiator's Dreadweave Gloves
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -1803,7 +2258,13 @@ _.PVP =
 				cl(WARRIOR, {
 					i(146633, {	-- Ensemble: Vengeful Gladiator's Plate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -10003, -666, -661, 1 }, },
+						["sym"] = {
+							{"sub", "pvp_set_ensemble", -10003, -666, -661, 1 }, 
+							{"select", "itemID", 33813 },	-- Vindicator's Plate Bracers
+							{"select", "itemID", 33811 },	-- Vindicator's Plate Belt
+							{"select", "itemID", 33812 },	-- Vindicator's Plate Greaves
+							{"exclude", "itemID", 146633 },	-- Exclude itself to stop duplicating
+						},
 					}),
 					i(33728, {	-- Vengeful Gladiator's Plate Chestpiece
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -2125,7 +2586,19 @@ _.PVP =
 				cl(DRUID, {
 					i(146599, {	-- Ensemble: Brutal Gladiator's Dragonhide Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -10003, -667, -661, 11 }, },
+						["sym"] = {
+							{"sub", "pvp_set_ensemble", -10003, -667, -661, 11 }, 
+							{"select", "itemID", 35167 },	-- Guardian's Dragonhide Bracers
+							{"select", "itemID", 35152 },	-- Guardian's Dragonhide Belt
+							{"select", "itemID", 35137 },	-- Guardian's Dragonhide Boots
+							{"select", "itemID", 35169 },	-- Guardian's Kodohide Bracers
+							{"select", "itemID", 35154 },	-- Guardian's Kodohide Belt
+							{"select", "itemID", 35139 },	-- Guardian's Kodohide Boots
+							{"select", "itemID", 35180 },	-- Guardian's Wyrmhide Bracers
+							{"select", "itemID", 35165 },	-- Guardian's Wyrmhide Belt
+							{"select", "itemID", 35150 },   -- Guardian's Wyrmhide Boots
+							{"exclude", "itemID", 146599 },	-- Exclude itself to stop duplicating
+						},
 					}),
 					i(34998, {	-- Brutal Gladiator's Dragonhide Gloves
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -2176,7 +2649,13 @@ _.PVP =
 				cl(HUNTER, {
 					i(146598, {	-- Ensemble: Brutal Gladiator's Chain Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -10003, -667, -661, 3 }, },
+						["sym"] = {
+							{"sub", "pvp_set_ensemble", -10003, -667, -661, 3 }, 
+							{"select", "itemID", 35166 },	-- Guardian's Chain Bracers
+							{"select", "itemID", 35151 },	-- Guardian's Chain Girdle
+							{"select", "itemID", 35136 },	-- Guardian's Chain Sabatons
+							{"exclude", "itemID", 146598 },	-- Exclude itself to stop duplicating
+						},
 					}),
 					i(34990, {	-- Brutal Gladiator's Chain Armor
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -2197,7 +2676,13 @@ _.PVP =
 				cl(MAGE, {
 					i(146607, {	-- Ensemble: Brutal Gladiator's Silk Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -10003, -667, -661, 8 }, },
+						["sym"] = {
+							{"sub", "pvp_set_ensemble", -10003, -667, -661, 8 }, 
+							{"select", "itemID", 35179 },	-- Guardian's Silk Cuffs
+							{"select", "itemID", 35164 },	-- Guardian's Silk Belt
+							{"select", "itemID", 35149 },	-- Guardian's Silk Footguards
+							{"exclude", "itemID", 146607 },	-- Exclude itself to stop duplicating
+						},
 					}),
 					i(35096, {	-- Brutal Gladiator's Silk Amice
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -2218,7 +2703,19 @@ _.PVP =
 				cl(PALADIN, {
 					i(146606, {	-- Ensemble: Brutal Gladiator's Scaled Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -10003, -667, -661, 2 }, },
+						["sym"] = {
+							{"sub", "pvp_set_ensemble", -10003, -667, -661, 2 }, 
+							{"select", "itemID", 35170 },	-- Guardian's Lamellar Bracers
+							{"select", "itemID", 35155 },	-- Guardian's Lamellar Belt
+							{"select", "itemID", 35140 },	-- Guardian's Lamellar Greaves
+							{"select", "itemID", 35175 },	-- Guardian's Ornamented Bracers
+							{"select", "itemID", 35160 },	-- Guardian's Ornamented Belt
+							{"select", "itemID", 35145 },	-- Guardian's Ornamented Greaves
+							{"select", "itemID", 35178 },	-- Guardian's Scaled Bracers
+							{"select", "itemID", 35163 },	-- Guardian's Scaled Belt
+							{"select", "itemID", 35148 },   -- Guardian's Scaled Greaves
+							{"exclude", "itemID", 146606 },	-- Exclude itself to stop duplicating
+						},
 					}),
 					i(35027, {	-- Brutal Gladiator's Lamellar Chestpiece
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -2269,7 +2766,13 @@ _.PVP =
 				cl(PRIEST, {
 					i(146605, {	-- Ensemble: Brutal Gladiator's Satin Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -10003, -667, -661, 5 }, },
+						["sym"] = {
+							{"sub", "pvp_set_ensemble", -10003, -667, -661, 5 }, 
+							{"select", "itemID", 35174 },	-- Guardian's Mooncloth Cuffs
+							{"select", "itemID", 35159 },	-- Guardian's Mooncloth Belt
+							{"select", "itemID", 35144 },	-- Guardian's Mooncloth Slippers
+							{"exclude", "itemID", 146605 },	-- Exclude itself to stop duplicating
+						},
 					}),
 					i(35053, {	-- Brutal Gladiator's Mooncloth Gloves
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -2305,7 +2808,13 @@ _.PVP =
 				cl(ROGUE, {
 					i(146602, {	-- Ensemble: Brutal Gladiator's Leather Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -10003, -667, -661, 4 }, },
+						["sym"] = {
+							{"sub", "pvp_set_ensemble", -10003, -667, -661, 4 }, 
+							{"select", "itemID", 35171 },	-- Guardian's Leather Bracers
+							{"select", "itemID", 35156 },	-- Guardian's Leather Belt
+							{"select", "itemID", 35141 },	-- Guardian's Leather Boots
+							{"exclude", "itemID", 146602 },	-- Exclude itself to stop duplicating
+						},
 					}),
 					i(35032, {	-- Brutal Gladiator's Leather Gloves
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -2326,7 +2835,19 @@ _.PVP =
 				cl(SHAMAN, {
 					i(146604, {	-- Ensemble: Brutal Gladiator's Ringmail Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -10003, -667, -661, 7 }, },
+						["sym"] = {
+							{"sub", "pvp_set_ensemble", -10003, -667, -661, 7 }, 
+							{"select", "itemID", 35172 },	-- Guardian's Linked Bracers
+							{"select", "itemID", 35157 },	-- Guardian's Linked Girdle
+							{"select", "itemID", 35142 },	-- Guardian's Linked Sabatons
+							{"select", "itemID", 35173 },	-- Guardian's Mail Bracers
+							{"select", "itemID", 35158 },	-- Guardian's Mail Girdle
+							{"select", "itemID", 35143 },	-- Guardian's Mail Sabatons
+							{"select", "itemID", 35177 },	-- Guardian's Ringmail Bracers
+							{"select", "itemID", 35162 },	-- Guardian's Ringmail Girdle
+							{"select", "itemID", 35148 },   -- Guardian's Scaled Greaves
+							{"exclude", "itemID", 146604 },	-- Exclude itself to stop duplicating
+						},
 					}),
 					i(35042, {	-- Brutal Gladiator's Linked Armor
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -2377,7 +2898,19 @@ _.PVP =
 				cl(WARLOCK, {
 					i(146601, {	-- Ensemble: Brutal Gladiator's Felweave Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -10003, -667, -661, 9 }, },
+						["sym"] = {
+							{"sub", "pvp_set_ensemble", -10003, -667, -661, 9 }, 
+							{"select", "itemID", 35167 },	-- Guardian's Dragonhide Bracers
+							{"select", "itemID", 35152 },	-- Guardian's Dragonhide Belt
+							{"select", "itemID", 35137 },	-- Guardian's Dragonhide Boots
+							{"select", "itemID", 35169 },	-- Guardian's Kodohide Bracers
+							{"select", "itemID", 35154 },	-- Guardian's Kodohide Belt
+							{"select", "itemID", 35139 },	-- Guardian's Kodohide Boots
+							{"select", "itemID", 35180 },	-- Guardian's Wyrmhide Bracers
+							{"select", "itemID", 35165 },	-- Guardian's Wyrmhide Belt
+							{"select", "itemID", 35150 },   -- Guardian's Wyrmhide Boots
+							{"exclude", "itemID", 146601 },	-- Exclude itself to stop duplicating
+						},
 					}),
 					i(35003, {	-- Brutal Gladiator's Dreadweave Gloves
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -2413,7 +2946,19 @@ _.PVP =
 				cl(WARRIOR, {
 					i(146603, {	-- Ensemble: Brutal Gladiator's Plate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -10003, -667, -661, 1 }, },
+						["sym"] = {
+							{"sub", "pvp_set_ensemble", -10003, -667, -661, 1 }, 
+							{"select", "itemID", 35167 },	-- Guardian's Dragonhide Bracers
+							{"select", "itemID", 35152 },	-- Guardian's Dragonhide Belt
+							{"select", "itemID", 35137 },	-- Guardian's Dragonhide Boots
+							{"select", "itemID", 35169 },	-- Guardian's Kodohide Bracers
+							{"select", "itemID", 35154 },	-- Guardian's Kodohide Belt
+							{"select", "itemID", 35139 },	-- Guardian's Kodohide Boots
+							{"select", "itemID", 35180 },	-- Guardian's Wyrmhide Bracers
+							{"select", "itemID", 35165 },	-- Guardian's Wyrmhide Belt
+							{"select", "itemID", 35150 },   -- Guardian's Wyrmhide Boots
+							{"exclude", "itemID", 146603 },	-- Exclude itself to stop duplicating
+						},
 					}),
 					i(35066, {	-- Brutal Gladiator's Plate Chestpiece
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor

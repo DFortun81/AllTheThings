@@ -942,16 +942,16 @@ _.Zones =
 									{"select", "itemID", 28298 },	--  Gladiator's Decapitator
 									{"select", "itemID", 28346 },	--  Gladiator's Endgame
 									{"select", "itemID", 28314 },	--  Gladiator's Fleshslicer
-									{"select", "itemID", 32450 },	--  Gladiator's Gav,
+									{"select", "itemID", 32450 },	--  Gladiator's Gavel
 									{"select", "itemID", 24550 },	--  Gladiator's Greatsword
-									{"select", "itemID", 28309 },	--  Gladiator's Hacke,
+									{"select", "itemID", 28309 },	--  Gladiator's Hacker
 									{"select", "itemID", 28294 },	--  Gladiator's Heavy Crossbow
 									{"select", "itemID", 28476 },	--  Gladiator's Maul
 									{"select", "itemID", 28300 },	--  Gladiator's Painsaw
 									{"select", "itemID", 28305 },	--  Gladiator's Pummeler
 									{"select", "itemID", 28307 },	--  Gladiator's Quickblade
 									{"select", "itemID", 32452 },	--  Gladiator's Reprieve
-									{"select", "itemID", 28313 },	--  Gladiator's Rippe
+									{"select", "itemID", 28313 },	--  Gladiator's Ripper
 									{"select", "itemID", 32451 },	--  Gladiator's Salvation
 									{"select", "itemID", 28312 },	--  Gladiator's Shanker
 									{"select", "itemID", 28358 },	--  Gladiator's Shield Wall
@@ -1045,7 +1045,19 @@ _.Zones =
 						cl(DRUID, {
 							i(146619, {	-- Ensemble: Merciless Gladiator's Dragonhide Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-								["sym"] = { {"sub", "pvp_set_ensemble", -10003, -665, -661, 11 }, },
+								["sym"] = {
+									{"sub", "pvp_set_ensemble", -10003, -665, -661, 11 }, 
+									{"select", "itemID", 32810 },	-- Veteran's Dragonhide Bracers
+									{"select", "itemID", 32798 },	-- Veteran's Dragonhide Belt
+									{"select", "itemID", 32786 },	-- Veteran's Dragonhide Boots
+									{"select", "itemID", 32812 },	-- Veteran's Kodohide Bracers
+									{"select", "itemID", 32800 },	-- Veteran's Kodohide Belt
+									{"select", "itemID", 32788 },	-- Veteran's Kodohide Boots
+									{"select", "itemID", 32821 },	-- Veteran's Wyrmhide Bracers
+									{"select", "itemID", 32808 },	-- Veteran's Wyrmhide Belt
+									{"select", "itemID", 32796 },   -- Veteran's Wyrmhide Boots
+									{"exclude", "itemID", 146619 },	-- Exclude itself to stop duplicating
+								},
 							}),
 							i(31967, {	-- Merciless Gladiator's Dragonhide Gloves
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -1096,7 +1108,13 @@ _.Zones =
 						cl(HUNTER, {
 							i(146618, {	-- Ensemble: Merciless Gladiator's Chain Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-								["sym"] = { {"sub", "pvp_set_ensemble", -10003, -665, -661, 3 }, },
+								["sym"] = {
+									{"sub", "pvp_set_ensemble", -10003, -665, -661, 3 }, 
+									{"select", "itemID", 32809 },	-- Veteran's Chain Bracers
+									{"select", "itemID", 32797 },	-- Veteran's Chain Girdle
+									{"select", "itemID", 32785 },	-- Veteran's Chain Sabatons
+									{"exclude", "itemID", 146618 },	-- Exclude itself to stop duplicating
+								},
 							}),
 							i(31960, {	-- Merciless Gladiator's Chain Armor
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -1117,7 +1135,13 @@ _.Zones =
 						cl(MAGE, {
 							i(146627, {	-- Ensemble: Merciless Gladiator's Silk Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-								["sym"] = { {"sub", "pvp_set_ensemble", -10003, -665, -661, 8 }, },
+								["sym"] = {
+									{"sub", "pvp_set_ensemble", -10003, -665, -661, 8 }, 
+									{"select", "itemID", 32820 },	-- Veteran's Silk Cuffs
+									{"select", "itemID", 32807 },	-- Veteran's Silk Belt
+									{"select", "itemID", 32795 },	-- Veteran's Silk Footguards
+									{"exclude", "itemID", 146627 },	-- Exclude itself to stop duplicating
+								},
 							}),
 							i(32047, {	-- Merciless Gladiator's Silk Amice
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -1138,7 +1162,19 @@ _.Zones =
 						cl(PALADIN, {
 							i(146626, {	-- Ensemble: Merciless Gladiator's Scaled Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-								["sym"] = { {"sub", "pvp_set_ensemble", -10003, -665, -661, 2 }, },
+								["sym"] = {
+									{"sub", "pvp_set_ensemble", -10003, -665, -661, 2 }, 
+									{"select", "itemID", 32813 },	-- Veteran's Lamellar Bracers
+									{"select", "itemID", 32801 },	-- Veteran's Lamellar Belt
+									{"select", "itemID", 32789 },	-- Veteran's Lamellar Greaves
+									{"select", "itemID", 32989 },	-- Veteran's Ornamented Bracers
+									{"select", "itemID", 32988 },	-- Veteran's Ornamented Belt
+									{"select", "itemID", 32990 },	-- Veteran's Ornamented Greaves
+									{"select", "itemID", 32819 },	-- Veteran's Scaled Bracers
+									{"select", "itemID", 32806 },	-- Veteran's Scaled Belt
+									{"select", "itemID", 32794 },   -- Veteran's Scaled Greaves
+									{"exclude", "itemID", 146626 },	-- Exclude itself to stop duplicating
+								},
 							}),
 							i(31992, {	-- Merciless Gladiator's Lamellar Chestpiece
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -1189,7 +1225,14 @@ _.Zones =
 						cl(PRIEST, {
 							i(146625, {	-- Ensemble: Merciless Gladiator's Satin Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-								["sym"] = { {"sub", "pvp_set_ensemble", -10003, -665, -661, 5 }, },
+								["sym"] = {
+									{"sub", "pvp_set_ensemble", -10003, -665, -661, 5 }, 
+									{"select", "itemID", 32980 },	-- Veteran's Mooncloth Cuffs
+									{"select", "itemID", 32979 },	-- Veteran's Mooncloth Belt
+									{"select", "itemID", 32981 },	-- Veteran's Mooncloth Slippers
+									{"select", "itemID", 147609 },	-- Veteran's Satin Slippers
+									{"exclude", "itemID", 146625 },	-- Exclude itself to stop duplicating
+								},
 							}),
 							i(32015, {	-- Merciless Gladiator's Mooncloth Gloves
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -1225,7 +1268,16 @@ _.Zones =
 						cl(ROGUE, {
 							i(146622, {	-- Ensemble: Merciless Gladiator's Leather Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-								["sym"] = { {"sub", "pvp_set_ensemble", -10003, -665, -661, 4 }, },
+								["sym"] = {
+									{"sub", "pvp_set_ensemble", -10003, -665, -661, 4 }, 
+									{"select", "itemID", 32814 },	-- Veteran's Leather Bracers
+									{"select", "itemID", 32802 },	-- Veteran's Leather Belt
+									{"select", "itemID", 32790 },	-- Veteran's Leather Boots
+									{"select", "itemID", 147612 },	-- Veteran's Leather Wristguards
+									{"select", "itemID", 147610 },	-- Veteran's Leather Waistband
+									{"select", "itemID", 147611 },	-- Veteran's Leather Footguards
+									{"exclude", "itemID", 146622 },	-- Exclude itself to stop duplicating
+								},
 							}),
 							i(31998, {	-- Merciless Gladiator's Leather Gloves
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -1246,7 +1298,19 @@ _.Zones =
 						cl(SHAMAN, {
 							i(146624, {	-- Ensemble: Merciless Gladiator's Ringmail Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-								["sym"] = { {"sub", "pvp_set_ensemble", -10003, -665, -661, 7 }, },
+								["sym"] = {
+									{"sub", "pvp_set_ensemble", -10003, -665, -661, 7 }, 
+									{"select", "itemID", 32816 },	-- Veteran's Linked Bracers
+									{"select", "itemID", 32803 },	-- Veteran's Linked Girdle
+									{"select", "itemID", 32791 },	-- Veteran's Linked Sabatons
+									{"select", "itemID", 32817 },	-- Veteran's Mail Bracers
+									{"select", "itemID", 32804 },	-- Veteran's Mail Girdle
+									{"select", "itemID", 32792 },	-- Veteran's Mail Sabatons
+									{"select", "itemID", 32997 },	-- Veteran's Ringmail Bracers
+									{"select", "itemID", 32998 },	-- Veteran's Ringmail Girdle
+									{"select", "itemID", 32999 },   -- Veteran's Ringmail Sabatons
+									{"exclude", "itemID", 146624 },	-- Exclude itself to stop duplicating
+								},
 							}),
 							i(32004, {	-- Merciless Gladiator's Linked Armor
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -1297,7 +1361,13 @@ _.Zones =
 						cl(WARLOCK, {
 							i(146621, {	-- Ensemble: Merciless Gladiator's Felweave Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-								["sym"] = { {"sub", "pvp_set_ensemble", -10003, -665, -661, 9 }, },
+								["sym"] = {
+									{"sub", "pvp_set_ensemble", -10003, -665, -661, 9 }, 
+									{"select", "itemID", 32811 },	-- Veteran's Dreadweave Cuffs
+									{"select", "itemID", 32799 },	-- Veteran's Dreadweave Belt
+									{"select", "itemID", 32787 },	-- Veteran's Dreadweave Stalkers
+									{"exclude", "itemID", 146621 },	-- Exclude itself to stop duplicating
+								},
 							}),
 							i(31973, {	-- Merciless Gladiator's Dreadweave Gloves
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -1333,7 +1403,13 @@ _.Zones =
 						cl(WARRIOR, {
 							i(146623, {	-- Ensemble: Merciless Gladiator's Plate Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-								["sym"] = { {"sub", "pvp_set_ensemble", -10003, -665, -661, 1 }, },
+								["sym"] = {
+									{"sub", "pvp_set_ensemble", -10003, -665, -661, 1 }, 
+									{"select", "itemID", 32818 },	-- Veteran's Plate Bracers
+									{"select", "itemID", 32805 },	-- Veteran's Plate Bel
+									{"select", "itemID", 32793 },	-- Veteran's Plate Greaves
+									{"exclude", "itemID", 146623 },	-- Exclude itself to stop duplicating
+								},
 							}),
 							i(30486, {	-- Merciless Gladiator's Plate Chestpiece
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -1503,7 +1579,7 @@ _.Zones =
 							i(32796, {	-- Veteran's Wyrmhide Boots
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
-						}),
+						}),	
 					},
 				}),
 				n(21493,  {	-- Kablamm Farflinger <Transportation Engineer>
