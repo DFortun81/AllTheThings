@@ -8,6 +8,7 @@ _.ObjectNames = {
 	[368648] = "Rift Hidden Cache",
 	[368649] = "Rift Hidden Cache",
 	[368650] = "Rift Hidden Cache",
+	[368653] = "Etherwyrm Cage",
 	[368663] = "Lil'Abom's Right Hand",
 	[368665] = "Lil'Abom's Spare Arm",
 	[368666] = "Lil'Abom's Head",
