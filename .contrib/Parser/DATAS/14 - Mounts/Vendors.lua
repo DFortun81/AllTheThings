@@ -16,6 +16,9 @@ _.Mounts =
 		i(152794),	-- Amethyst Ruinstrider
 		i(167167),	-- Ankoan Waveray
 		i(141713),	-- Arcadian War Turtle
+		i(186493, {	-- Ardenweald Wilderling
+			["customCollect"] = "SL_COV_NFA",	-- Night Fae covenant only
+		}),
 		i(47179, {	-- Argent Charger
 			["classes"] = { PALADIN },
 		}),
@@ -40,6 +43,9 @@ _.Mounts =
 			["customCollect"] = "SL_COV_KYR",	-- Kyrian covenant only
 		}),
 		i(103638),	-- Ashhide Mushan Beast
+		i(186494, {	-- Autumnal Wilderling
+			["customCollect"] = "SL_COV_NFA",	-- Night Fae covenant only
+		}),
 		i(87781),	-- Azure Riding Crane
 		i(166465, {	-- Azureshell Krolusk
 			["races"] = ALLIANCE_ONLY,

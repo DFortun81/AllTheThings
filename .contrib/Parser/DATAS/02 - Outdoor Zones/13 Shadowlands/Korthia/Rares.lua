@@ -172,7 +172,10 @@ _.Zones =
 					["description"] = "Click on the |cFFFFFFFFPlanted Veilstaff|r and answer Ve'rayn's questions.  When you refuse to betray Ve'nari, she will attack.",
 					["questID"] = 64457,
 					["isDaily"] = true,
-					["coord"] = { 32.5, 43.0, KORTHIA },
+					["coords"] = {
+						{ 32.5, 43.0, KORTHIA },
+						{ 49.0, 29.0, KORTHIA },
+					},
 					["g"] = {
 						crit(26, {	-- Pop Quiz
 							["achievementID"] = 15107,	-- Conquering Korthia
@@ -180,6 +183,7 @@ _.Zones =
 						i(187264, {	-- Ve'rayn's Head
 							["questID"] = 64513,	-- Ve'rayn's Head
 						}),
+						i(187369),	-- Ve'rayn's Formal Robes
 					},
 				}),
 				n(180032, {	-- Wild Worldcracker
@@ -199,16 +203,35 @@ _.Zones =
 						i(187176),	-- Vesper of Harmony
 					},
 				}),
+				n(179859, {	-- Xyraxz the Unknowable
+					["description"] = "Requires someone with Tier 3 Archivist's Codex reputation to repair the teleportation pad.",
+					["questID"] = 64278,
+					["isDaily"] = true,
+					["coord"] = { 45.0, 35.5, KORTHIA },
+					["cost"] = { { "i", 186718, 1 } },	-- Teleporter Repair Kit
+					["g"] = {
+						crit(17, {	-- Chamber of Wisdom
+							["achievementID"] = 15107,	-- Conquering Korthia
+						}),
+						i(187104, {	-- Obelisk of Dark Tidings
+						--	TODO: may be available with no prereqs (or with only the rep unlocked) if someone else repairs the teleporter?  but 'lost vaults' is when you first learn about the relic
+							["sourceQuests"] = { 64519 },	-- Lost Vaults
+							["questID"] = 63918,	-- Obelisk of Dark Tidings
+						}),
+					},
+				}),
 				n(179802, {	-- Yarxhov the Pillager
-					["description"] = "Requires someone with Tier 3 Archivist's Codex reputation to repair the teleportation pad",
+					["description"] = "Requires someone with Tier 3 Archivist's Codex reputation to repair the teleportation pad.",
 					["questID"] = 64257,
 					["isDaily"] = true,
 					["coord"] = { 39.3, 52.4, KORTHIA },
+					["cost"] = { { "i", 186718, 1 } },	-- Teleporter Repair Kit
 					["g"] = {
 						crit(16, {	-- Chamber of Knowledge
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 						i(187103, {	-- Everliving Statuette
+							["sourceQuests"] = { 64506 },	-- What Must Be Found
 							["questID"] = 63917,	-- Everliving Statuette
 						}),
 					},

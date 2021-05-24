@@ -96,6 +96,13 @@ _.Zones =
 					["provider"] = { "n", 177167 },	-- Baroness Vashj
 					["coord"] = { 65.0, 23.0, KORTHIA },
 				}),
+				q(63915, {	-- Drum of Driving
+					["sourceQuests"] = { 64506 },	-- What Must Be Found
+					["description"] = "Requires someone with Tier 3 Archivist's Codex reputation to repair the teleportation pad.",
+					["provider"] = { "i", 187204 },	-- Drum of Driving
+					["coord"] = { 39.3, 52.4, KORTHIA },
+					["cost"] = { { "i", 186718, 1 } },	-- Teleporter Repair Kit
+				}),
 				q(63855, {	-- Ease of Passage
 					["sourceQuests"] = { 63848 },	-- A Show of Gratitude
 					["provider"] = { "n", 178470 },	-- Ve'nari
@@ -216,6 +223,13 @@ _.Zones =
 					["sourceQuests"] = { 63759 },	-- Redirect the Search
 					["provider"] = { "n", 177850 },	-- Protector Rih-Mat
 					["coord"] = { 55.6, 22.2, KORTHIA },
+				}),
+				q(63916, {	-- Sack of Strange Soil
+					["sourceQuests"] = { 64506 },	-- What Must Be Found
+					["description"] = "Requires someone with Tier 3 Archivist's Codex reputation to repair the teleportation pad.",
+					["provider"] = { "i", 187205 },	-- Sack of Strange Soil
+					["coord"] = { 45.0, 35.5, KORTHIA },
+					["cost"] = { { "i", 186718, 1 } },	-- Teleporter Repair Kit
 				}),
 				q(63709, {	-- Secrets of the Vault
 					["sourceQuests"] = {
@@ -463,12 +477,6 @@ _.Zones =
 					["provider"] = { "n", 178841 },	-- Hunt-Captain Korayn
 					["isDaily"] = true,
 					["coord"] = { 60.9, 21.7, KORTHIA },
-				}),
-				q(63915, {	-- Drum of Driving
-					["sourceQuests"] = { 64506 },	-- What Must Be Found
-					["description"] = "Requires someone with Tier 3 Archivist's Codex reputation to repair the teleportation pad",
-					["provider"] = { "i", 187204 },	-- Drum of Driving
-					["coord"] = { 39.3, 52.4, KORTHIA },
 				}),
 				q(63958, {	-- Encrypted Databanks
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants

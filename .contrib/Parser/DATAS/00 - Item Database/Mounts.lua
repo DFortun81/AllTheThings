@@ -379,7 +379,9 @@ i(184168, 344577);	-- Bound Shadehound
 -- PATCH 9.1.0 --
 -----------------
 i(186647, 354356);	-- Amber Shardhide
+i(186493, 353856);	-- Ardenweald Wilderling
 i(186485, 353880);	-- Ascendant's Aquilon
+i(186494, 353857);	-- Autumnal Wilderling
 i(186480, 343550);	-- Battle-Hardened Aquilon
 i(186490, 353885);	-- Battlefield Swarmer
 i(186645, 354357);	-- Crimson Shardhide

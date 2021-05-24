@@ -111,9 +111,8 @@ _.Zones =
 							["sourceQuests"] = { 64511 },	-- Missing Relics
 							["questID"] = 63921,	-- Ring of Self-Reflection
 							["g"] = {
-								i(187140, {	-- Ring of Duplicity
-									["collectible"] = false,
-								}),
+							--	TODO: currently this uncollectible item always makes the chest show up when "show all trackable things" is up, even though it's a one-time chest and the quest is finished.  there's no spellID or anything attached to the item so idk why that is!  but i'm commenting it out for now so it stops annoying me
+							--	i(187140),	-- Ring of Duplicity
 							},
 						}),
 					},
