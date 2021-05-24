@@ -222,6 +222,8 @@ local L = app.L;
 	L.TOP_ROW_TO_LOCK = "|cff3399ffAlt + Левый клик - Закрепить это Окно";
 	L.TOP_ROW_TO_UNLOCK = "|cffcf0000Alt + Левый клик - Открепить это Окно";
 	L.QUEST_ROW_INSTRUCTIONS = "Правый клик - Открыть Цепочку Заданий";
+	L.QUEST_ONCE_PER_ACCOUNT = "Один-Раз-На-Аккаунт Задание";
+	L.QUEST_ONCE_PER_ACCOUNT_FORMAT = "Выполнено На: %s";
 
 -- Settings.lua
 	-- General tab
@@ -980,7 +982,7 @@ for key,value in pairs({
 
 	-- PvP Sets
 	-- Note: Some of these may go away once I check as I think I am localizing with gear sets, but leave for now
-		[-4190] = "Предсезон",
+		[-4190] = "Burning Crusade Предсезон",
 		[-4191] = "Турнир",
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings

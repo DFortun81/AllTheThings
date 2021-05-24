@@ -224,6 +224,8 @@ local L = app.L;
 	L.TOP_ROW_TO_LOCK = "|cff3399ffAlt单击锁定窗口";
 	L.TOP_ROW_TO_UNLOCK = "|cffcf0000Alt单击解锁窗口";
 	--TODO: L.QUEST_ROW_INSTRUCTIONS = "Right Click to see any Quest Chain Requirements";
+	--TODO: L.QUEST_ONCE_PER_ACCOUNT = "Once-Per-Account Quest";
+	--TODO: L.QUEST_ONCE_PER_ACCOUNT_FORMAT = "Completed By: %s";
 
 -- Settings.lua
 	-- General tab
@@ -1011,7 +1013,7 @@ for key,value in pairs({
 	-- PvP Sets
 	-- Note: Some of these may go away once I check as I think I am localizing with gear sets, but leave for now
 		[-4189] = "PvP套装",											-- Instance Item Sets, PvP
-		[-4190] = "季前赛",											-- Pre-Season
+		[-4190] = "Burning Crusade 季前赛",							-- Burning Crusade Pre-Season
 		[-4191] = "竞技装备",										-- Tournament
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
