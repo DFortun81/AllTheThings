@@ -8825,12 +8825,6 @@ local questFields = {
 			end
 		end
 	end,
-	["hasIndicator"] = function(t)
-		return C_QuestLog_IsOnQuest(t.questID);
-	end,
-	["indicator"] = function(t)
-		return C_QuestLog_ReadyForTurnIn(t.questID) and "Interface_Questin" or "Interface_Questin_grey";
-	end,
 	["link"] = function(t)
 		return "quest:" .. t.questID;
 	end,
@@ -8985,6 +8979,8 @@ app.CollectibleAsQuest = function(t)
 					(app.MODE_ACCOUNT
 					or (app.IsInPartySync and not t.DisablePartySync)
 					or not t.breadcrumbLockedBy)))
+			-- tracking account-wide quests or must not be a once-per-account quest which has already been flagged as completed on a different character
+			and (app.AccountWideQuests or (not ATTAccountWideData.OneTimeQuests[t.questID] or ATTAccountWideData.OneTimeQuests[t.questID] == app.GUID))
 			)
 
 			-- If it is an item and associated to an active quest.
@@ -9189,6 +9185,17 @@ app.TryPopulateQuestRewards = function(questObject)
 		BuildGroups(questObject, questObject.g);
 	end
 end
+-- Given an Object, will return the indicator (asset name) if this Object should show one
+app.GetIndicator = function(t)
+	if t.questID then
+		if C_QuestLog_IsOnQuest(t.questID) then
+			return (C_QuestLog_ReadyForTurnIn(t.questID) and "Interface_Questin")
+				or "Interface_Questin_grey";
+		elseif ATTAccountWideData.OneTimeQuests[t.questID] == false then
+			return "Interface_Quest_Arrow";
+		end
+	end
+end
 
 local fields = RawCloneData(questFields);
 fields.collectible = questFields.collectibleAsReputation;
@@ -9318,7 +9325,7 @@ end)();
 
 local function QueryCompletedQuests()
 	local t = CompletedQuests;
-	for k,v in pairs(C_QuestLog_GetAllCompletedQuestIDs()) do
+	for _,v in pairs(C_QuestLog_GetAllCompletedQuestIDs()) do
 		t[v] = true;
 	end
 end
@@ -12053,10 +12060,13 @@ local function SetRowData(self, row, data)
 			end
 			row.Indicator:SetPoint("RIGHT", leftmost, relative, x, 0);
 			row.Indicator:Show();
-		elseif data.hasIndicator then
-			row.Indicator:SetTexture(app.asset(data.indicator));
-			row.Indicator:SetPoint("RIGHT", leftmost, relative, x, 0);
-			row.Indicator:Show();
+		else
+			local indicator = app.GetIndicator(data);
+			if indicator then
+				row.Indicator:SetTexture(app.asset(indicator));
+				row.Indicator:SetPoint("RIGHT", leftmost, relative, x, 0);
+				row.Indicator:Show();
+			end
 		end
 		if SetPortraitIcon(row.Texture, data) then
 			row.Texture.Background:SetPoint("TOPLEFT", row.Texture);
@@ -12730,15 +12740,22 @@ RowOnEnter = function (self)
 			GameTooltip:AddDoubleLine(" ", L[IsTitleKnown(reference.titleID) and "KNOWN_ON_CHARACTER" or "UNKNOWN_ON_CHARACTER"]);
 			AttachTooltipSearchResults(GameTooltip, "titleID:" .. reference.titleID, SearchForField, "titleID", reference.titleID);
 		end
-		if reference.questID and app.Settings:GetTooltipSetting("questID") then
-			GameTooltip:AddDoubleLine(L["QUEST_ID"], tostring(reference.questID));
-			if reference.altQuests and #reference.altQuests > 0 then
-				local altQuests="";
-				for i,questID in ipairs(reference.altQuests) do
-					if (i > 1) then altQuests = altQuests .. ","; end
-					altQuests = altQuests .. tostring(questID) .. GetCompletionIcon(IsQuestFlaggedCompleted(questID));
+		if reference.questID then
+			if app.Settings:GetTooltipSetting("questID") then
+				GameTooltip:AddDoubleLine(L["QUEST_ID"], tostring(reference.questID));
+				if reference.altQuests and #reference.altQuests > 0 then
+					local altQuests="";
+					for i,questID in ipairs(reference.altQuests) do
+						if (i > 1) then altQuests = altQuests .. ","; end
+						altQuests = altQuests .. tostring(questID) .. GetCompletionIcon(IsQuestFlaggedCompleted(questID));
+					end
+					GameTooltip:AddDoubleLine(" ", "[" .. altQuests .. "]");
 				end
-				GameTooltip:AddDoubleLine(" ", "[" .. altQuests .. "]");
+			end
+			if ATTAccountWideData.OneTimeQuests[reference.questID] then
+				GameTooltip:AddDoubleLine(L["QUEST_ONCE_PER_ACCOUNT"], string.format(L["QUEST_ONCE_PER_ACCOUNT_FORMAT"], ATTCharacterData[ATTAccountWideData.OneTimeQuests[reference.questID]].text));
+			elseif ATTAccountWideData.OneTimeQuests[reference.questID] == false then
+				GameTooltip:AddLine("|cffcf271b" .. L["QUEST_ONCE_PER_ACCOUNT"] .. "|r");
 			end
 		end
 		if reference.qgs and app.Settings:GetTooltipSetting("QuestGivers") then
@@ -18253,6 +18270,7 @@ app.events.VARIABLES_LOADED = function()
 	if not accountWideData.Spells then accountWideData.Spells = {}; end
 	if not accountWideData.Titles then accountWideData.Titles = {}; end
 	if not accountWideData.Toys then accountWideData.Toys = {}; end
+	if not accountWideData.OneTimeQuests then accountWideData.OneTimeQuests = {}; end
 
 	-- Update the total account wide death counter.
 	local deaths = 0;
@@ -18375,7 +18393,18 @@ app.events.VARIABLES_LOADED = function()
 		-- Harvest the Spell IDs for Conversion.
 		app:UnregisterEvent("PET_JOURNAL_LIST_UPDATE");
 
-		-- Cache some collection states for account wide quests that aren't actually account wide. (Allied Races)
+		-- Mark all previously completed quests.
+		QueryCompletedQuests();
+		wipe(DirtyQuests);
+
+		-- Current character collections shouldn't use '2' ever... so clear any 'inaccurate' data
+		local currentQuestsCache = currentCharacter.Quests;
+		for questID,completion in pairs(currentQuestsCache) do
+			if completion == 2 then currentQuestsCache[questID] = nil; end
+		end
+
+		-- Cache some collection states for account wide quests that aren't actually granted account wide and can be flagged using an achievementID. (Allied Races)
+		local collected;
 		-- achievement collection state isn't readily available when VARIABLES_LOADED fires, so we do it here to ensure we get a valid state for matching
 		for i,achievementQuests in ipairs({
 			{ 12453, { 49973, 49613, 49354, 49614 } },	-- Allied Races: Nightborne
@@ -18402,36 +18431,78 @@ app.events.VARIABLES_LOADED = function()
 			{ 6602, { 32009 } },	-- Taming Kalimdor / Varzok (H)
 		}) do
 			-- If you completed the achievement, then mark the associated quests.
-			if select(4, GetAchievementInfo(achievementQuests[1])) then
-				for j,questID in ipairs(achievementQuests[2]) do
-					rawset(CompletedQuests, questID, 2);
-					if not app.CurrentCharacter.Quests[questID] then
-						app.CurrentCharacter.Quests[questID] = 2;
-						ATTAccountWideData.Quests[questID] = 1;
+			collected = select(4, GetAchievementInfo(achievementQuests[1]));
+			for j,questID in ipairs(achievementQuests[2]) do
+				if collected then
+					-- Mark the quest as completed for the Account
+					accountWideData.Quests[questID] = 1;
+					if CompletedQuests[questID] then
+						-- this once-per-account quest only counts for a specific character
+						accountWideData.OneTimeQuests[questID] = app.GUID;
 					end
+				else
+					-- otherwise indicate the one-time-nature of the quest
+					accountWideData.OneTimeQuests[questID] = false;
 				end
 			end
 		end
-		-- Cache some collection states for account wide quests that aren't actually account wide. (Secrets)
+		-- Cache some collection states for account wide quests that aren't actually granted account wide and can be flagged using a known sourceID.  (Secrets)
 		for i,appearanceQuests in ipairs({
-			{ 98614, { 52829, 52830, 52831, 52898, 52899, 52900, 52901, 52902, 52903, 52904, 52905, 52906, 52907, 52908, 52909, 52910, 52911, 52912, 52913, 52914, 52915, 52916, 52917, 52918, 52919, 52920, 52921, 52922, 52822, 52823, 52824, 52826} },	-- Waist of Time
+			-- Waist of Time isn't technically once-per-account, so don't fake the cached data
+			-- { 98614, { 52829, 52830, 52831, 52898, 52899, 52900, 52901, 52902, 52903, 52904, 52905, 52906, 52907, 52908, 52909, 52910, 52911, 52912, 52913, 52914, 52915, 52916, 52917, 52918, 52919, 52920, 52921, 52922, 52822, 52823, 52824, 52826} },	-- Waist of Time
 		}) do
 			-- If you have the appearance, then mark the associated quests.
-			local SourceInfo = C_TransmogCollection_GetSourceInfo(appearanceQuests[1]);
-			if SourceInfo.isCollected then
-				for j,questID in ipairs(appearanceQuests[2]) do
-					rawset(CompletedQuests, questID, 2);
-					if not app.CurrentCharacter.Quests[questID] then
-						app.CurrentCharacter.Quests[questID] = 2;
-						ATTAccountWideData.Quests[questID] = 1;
+			local sourceInfo = C_TransmogCollection_GetSourceInfo(appearanceQuests[1]);
+			collected = sourceInfo.isCollected;
+			for j,questID in ipairs(appearanceQuests[2]) do
+				if collected then
+					-- Mark the quest as completed for the Account
+					accountWideData.Quests[questID] = 1;
+					if CompletedQuests[questID] then
+						-- this once-per-account quest only counts for a specific character
+						accountWideData.OneTimeQuests[questID] = app.GUID;
 					end
+				else
+					-- otherwise indicate the one-time-nature of the quest
+					accountWideData.OneTimeQuests[questID] = false;
 				end
+			end
+		end
+		-- Cache some collection states for misc. once-per-account quests
+		for i,questID in ipairs({
+			52479,	-- Hillcrest Pasture (BFA Horde Outpost Unlock)
+			52314,	-- Mudfisher Cove (BFA Horde Outpost Unlock)
+			52222,	-- Stonefist Watch (BFA Horde Outpost Unlock)
+			52777,	-- Stonetusk Watch (BFA Horde Outpost Unlock)
+			52276,	-- Swiftwind Post (BFA Horde Outpost Unlock)
+			52320,	-- Windfall Cavern (BFA Horde Outpost Unlock)
+			52127,	-- The Wolf's Den (BFA Horde Outpost Unlock)
+
+			53007,	-- Grimwatt's Crash (BFA Alliance Outpost Unlock)
+			52802,	-- Veiled Grotto (BFA Alliance Outpost Unlock)
+			52963,	-- Mistvine Ledge (BFA Alliance Outpost Unlock)
+			52852,	-- Mugamba Overlook (BFA Alliance Outpost Unlock)
+			52888,	-- Verdant Hollow (BFA Alliance Outpost Unlock)
+			53044,	-- Vulture's Nest (BFA Alliance Outpost Unlock)
+
+			-- etc.
+		}) do
+			-- If this Character has the Quest completed and it is not marked as completed for Account or not for specific Character
+			if CompletedQuests[questID] then
+				-- Throw up a warning to report if this was already completed by another character
+				if accountWideData.OneTimeQuests[questID] and accountWideData.OneTimeQuests[questID] ~= app.GUID then
+					app.report("One-Time-Quest ID #" .. questID .. " was previously marked as completed, but is also completed on the current character!");
+				end
+				-- Mark the quest as completed for the Account
+				accountWideData.Quests[questID] = 1;
+				-- Mark the character which completed the Quest
+				accountWideData.OneTimeQuests[questID] = app.GUID;
+			elseif not accountWideData.OneTimeQuests[questID] then
+				-- Mark that this Quest is a OneTimeQuest which hasn't been determined as completed by any Character yet
+				accountWideData.OneTimeQuests[questID] = false;
 			end
 		end
 
-		-- Mark all previously completed quests.
-		QueryCompletedQuests();
-		wipe(DirtyQuests);
 		app:RegisterEvent("QUEST_LOG_UPDATE");
 		app:RegisterEvent("QUEST_TURNED_IN");
 		app:RegisterEvent("QUEST_ACCEPTED");
@@ -18448,7 +18519,7 @@ app.events.VARIABLES_LOADED = function()
 			local lastTime = GetDataMember("RefreshedCollectionsAlready");
 			if not lastTime or (lastTime ~= app.Version) then
 				SetDataMember("RefreshedCollectionsAlready", app.Version);
-				wipe(ATTAccountWideData.Sources);	-- This option causes a caching issue, so we have to purge the Source ID data cache.
+				wipe(accountWideData.Sources);	-- This option causes a caching issue, so we have to purge the Source ID data cache.
 				needRefresh = true;
 			end
 		end
