@@ -3067,15 +3067,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(18862)),	-- Insignia of the Alliance [Priest]
 						un(REMOVED_FROM_GAME, i(18858)),	-- Insignia of the Alliance [Warlock]
 						un(REMOVED_FROM_GAME, i(18863)),	-- Insignia of the Alliance [Druid]
-						un(REMOVED_FROM_GAME, i(28234)),	-- medallion of the alliance (rogue)
-						un(REMOVED_FROM_GAME, i(28235)),	-- medallion of the alliance (druid)
-						un(REMOVED_FROM_GAME, i(28236)),	-- medallion of the alliance (pala)
-						un(REMOVED_FROM_GAME, i(28237)),	-- medallion of the alliance (hunter)
-						un(REMOVED_FROM_GAME, i(28238)),	-- medallion of the alliance (mage)
-						un(REMOVED_FROM_GAME, i(30348)),	-- medallion of the alliance (warlock)
-						un(REMOVED_FROM_GAME, i(30349)),	-- medallion of the alliance (priest)
-						un(REMOVED_FROM_GAME, i(30350)),	-- medallion of the alliance (warrior)
-						un(REMOVED_FROM_GAME, i(30351)),	-- medallion of the alliance (shaman)
 						un(REMOVED_FROM_GAME, i(37864)),	-- medallion of the alliance (epic)
 						un(REMOVED_FROM_GAME, i(38589)),	-- Medallion of the alliance (dk)
 						un(REMOVED_FROM_GAME, i(69861)),	-- Medallion of the alliance
@@ -3085,8 +3076,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(34579)),	-- battlemaster's audacity
 						un(REMOVED_FROM_GAME, i(34580)),	-- battlemaster's persevennerance
 						un(REMOVED_FROM_GAME, i(35327)),	-- battlemaster's alacrity
-						un(REMOVED_FROM_GAME, i(28246)),	-- Band of Triumph
-						un(REMOVED_FROM_GAME, i(28247)),	-- Band of Dominance
 						un(REMOVED_FROM_GAME, i(18442)),	-- Master Sergeant's Insignia
 						un(REMOVED_FROM_GAME, i(18444)),	-- Master Sergeant's Insignia
 						un(REMOVED_FROM_GAME, i(18443)),	-- Master Sergeant's Insignia
@@ -3611,7 +3600,6 @@ _.Zones =
 						i(16437, {	-- Marshal's Silk Footwraps
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-						un(REMOVED_FROM_GAME, i(25829)),	-- Talisman of the Alliance
 					},
 				}),
 				n(8665,   {	-- Shylenai

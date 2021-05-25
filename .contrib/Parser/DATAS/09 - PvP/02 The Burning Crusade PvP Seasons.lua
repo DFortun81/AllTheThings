@@ -1051,6 +1051,9 @@ _.PVP =
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
 				}),	
+				-- Orinally sold Offhand/Neck/Finger by 
+				-- Alliance SW: n(12781,  {	-- Master Sergeant Biggins  &
+				-- Horde OG: n(12793,  {	-- Brave Stonehide
 				n(-331, {	-- Held In Offhand
 					un(REMOVED_FROM_GAME, i(33945)), -- Gladiator's Idol of Resolve
 					un(REMOVED_FROM_GAME, i(33942)), -- Gladiator's Idol of Steadfastness
@@ -1094,10 +1097,6 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(30343)), -- Medallion of the Horde (H) (Warlock)
 					un(REMOVED_FROM_GAME, i(30344)), -- Medallion of the Horde (H) (Warrior)
 					un(REMOVED_FROM_GAME, i(24551)), -- Talisman of the Horde
-				}),
-				
-				filter(100, { -- Mount
-					un(REMOVED_FROM_GAME, i(30609)), -- Swift Nether Drake Ask Gold
 				}),
 			}),
 		}),
@@ -1753,8 +1752,8 @@ _.PVP =
 					}),
 				}),	
 				-- Orinally sold Offhand/Neck/Finger by 
-				-- Alliance SW: n(23446,  {	-- Lieutenant Tristia -- BC S1/S2/S3/S4 Vendor &
-				-- Horde OG: n(24520, {	-- Doris Volanthius -- BC S1/S2/S3/S4 Vendor
+				-- Alliance SW: n(23446,  {	-- Lieutenant Tristia --  &
+				-- Horde OG: n(24520, {	-- Doris Volanthius --
 				n(-331, {	-- Held In Offhand
 					un(REMOVED_FROM_GAME, i(33946)), -- Merciless Gladiator's Idol of Resolve
 					un(REMOVED_FROM_GAME, i(33943)), -- Merciless Gladiator's Idol of Steadfastness

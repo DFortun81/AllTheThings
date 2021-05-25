@@ -307,26 +307,6 @@ _.Zones =
 						{"pop"},	-- Discard the Set header and acquire the children.
 					},
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(24551)),	-- Talisman of the Horde
-						un(REMOVED_FROM_GAME, i(25829)),	-- Talisman of the Alliance
-						un(REMOVED_FROM_GAME, i(28234)),	-- medallion of the alliance (rogue)
-						un(REMOVED_FROM_GAME, i(28235)),	-- medallion of the alliance (druid)
-						un(REMOVED_FROM_GAME, i(28236)),	-- medallion of the alliance (pala)
-						un(REMOVED_FROM_GAME, i(28237)),	-- medallion of the alliance (hunter)
-						un(REMOVED_FROM_GAME, i(28238)),	-- medallion of the alliance (mage)
-						un(REMOVED_FROM_GAME, i(30348)),	-- medallion of the alliance (warlock)
-						un(REMOVED_FROM_GAME, i(30349)),	-- medallion of the alliance (priest)
-						un(REMOVED_FROM_GAME, i(30350)),	-- medallion of the alliance (warrior)
-						un(REMOVED_FROM_GAME, i(30351)),	-- medallion of the alliance (shaman)
-						un(REMOVED_FROM_GAME, i(28240)),	-- medallion of the horde (rogue)
-						un(REMOVED_FROM_GAME, i(28241)),	-- medallion of the horde (druid)
-						un(REMOVED_FROM_GAME, i(28242)),	-- medallion of the horde (pala)
-						un(REMOVED_FROM_GAME, i(28243)),	-- medallion of the horde (hunter)
-						un(REMOVED_FROM_GAME, i(28239)),	-- medallion of the horde (mage)
-						un(REMOVED_FROM_GAME, i(30343)),	-- medallion of the horde (warlock)
-						un(REMOVED_FROM_GAME, i(30346)),	-- medallion of the horde (priest)
-						un(REMOVED_FROM_GAME, i(30344)),	-- medallion of the horde (warrior)
-						un(REMOVED_FROM_GAME, i(30345)),	-- medallion of the horde (shaman)
 						un(REMOVED_FROM_GAME, i(37865)),	-- medallion of the horde (epic)
 						un(REMOVED_FROM_GAME, i(38588)),	-- Medallion of the horde (dk)
 						un(REMOVED_FROM_GAME, i(69862)),	-- Medallion of the horde

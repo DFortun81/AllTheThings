@@ -499,8 +499,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(18851)),	-- Insignia of the Horde (Priest)
 						un(REMOVED_FROM_GAME, i(18852)),	-- Insignia of the Horde (Warlock)
 						un(REMOVED_FROM_GAME, i(18853)),	-- Insignia of the Horde (Druid)
-						un(REMOVED_FROM_GAME, i(28246)),	-- Band of Triumph
-						un(REMOVED_FROM_GAME, i(28247)),	-- Band of Dominance
 						un(REMOVED_FROM_GAME, i(15200)),	-- Senior Sergeant's Insignia
 						un(REMOVED_FROM_GAME, i(18428)),	-- Senior Sergeant's Insignia
 						un(REMOVED_FROM_GAME, i(16335)),	-- Senior Sergeant's Insignia
@@ -914,16 +912,6 @@ _.Zones =
 						i(18436), 	-- First Sergeant's Dragonhide Armguards
 						i(18437), 	-- First Sergeant's Silk Cuffs
 						i(18427), 	-- Sergeant's Cloak
-						un(REMOVED_FROM_GAME, i(24551)),	-- Talisman of the Horde
-						un(REMOVED_FROM_GAME, i(28240)),	-- medallion of the horde (rogue)
-						un(REMOVED_FROM_GAME, i(28241)),	-- medallion of the horde (druid)
-						un(REMOVED_FROM_GAME, i(28242)),	-- medallion of the horde (pala)
-						un(REMOVED_FROM_GAME, i(28243)),	-- medallion of the horde (hunter)
-						un(REMOVED_FROM_GAME, i(28239)),	-- medallion of the horde (mage)
-						un(REMOVED_FROM_GAME, i(30343)),	-- medallion of the horde (warlock)
-						un(REMOVED_FROM_GAME, i(30346)),	-- medallion of the horde (priest)
-						un(REMOVED_FROM_GAME, i(30344)),	-- medallion of the horde (warrior)
-						un(REMOVED_FROM_GAME, i(30345)),	-- medallion of the horde (shaman)
 						un(REMOVED_FROM_GAME, i(37865)),	-- medallion of the horde (epic)
 						un(REMOVED_FROM_GAME, i(38588)),	-- Medallion of the horde (dk)
 						un(REMOVED_FROM_GAME, i(69862)),	-- Medallion of the horde
