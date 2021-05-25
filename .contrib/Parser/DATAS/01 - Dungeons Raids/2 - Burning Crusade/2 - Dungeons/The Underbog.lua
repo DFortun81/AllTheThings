@@ -60,13 +60,11 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 					["maps"] = { COILFANG_RESERVOIR_SLAVEPENS, ZANGARMARSH },
 					["timeline"] = { "removed 4.3.0.14732" },
 					["lvl"] = lvlsquish(62, 10, 62),
-					-- #if BEFORE 4.3.0.14732
 					["groups"] = {
 						i(25541),	-- Cenarion Ring of Casting
 						i(28029),	-- Goldenvine Wraps
 						i(25540),	-- Dark Cloak of the Marsh
 					},
-					-- #endif
 				}),
 				q(9717, {	-- Oh, It's On!
 					["qg"] = 17857,	-- T'shu

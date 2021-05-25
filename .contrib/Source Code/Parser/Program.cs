@@ -316,13 +316,27 @@ namespace ATT
                     case "BEFORE":
                         if (command.Length == 3)    // Example: "IF" "BEFORE" "WOD"
                         {
-                            return Framework.FIRST_EXPANSION_PHASE.TryGetValue(command[2], out int phase) && Framework.CURRENT_RELEASE_PHASE < phase;
+                            if (Framework.FIRST_EXPANSION_PHASE.TryGetValue(command[2], out int phase))
+                            {
+                                return Framework.CURRENT_RELEASE_PHASE < phase;
+                            }
+                            else
+                            {
+                                return Framework.CURRENT_RELEASE_VERSION < command[2].Split('.').ConvertVersion();
+                            }
                         }
                         throw new Exception($"Malformed #IF BEFORE statement. '{string.Join(" ", command)}'");
                     case "AFTER":
                         if (command.Length == 3)    // Example: "IF" "AFTER" "WOD"
                         {
-                            return Framework.FIRST_EXPANSION_PHASE.TryGetValue(command[2], out int phase) && Framework.CURRENT_RELEASE_PHASE >= phase;
+                            if (Framework.FIRST_EXPANSION_PHASE.TryGetValue(command[2], out int phase))
+                            {
+                                return Framework.CURRENT_RELEASE_PHASE >= phase;
+                            }
+                            else
+                            {
+                                return Framework.CURRENT_RELEASE_VERSION >= command[2].Split('.').ConvertVersion();
+                            }
                         }
                         throw new Exception($"Malformed #IF AFTER statement. '{string.Join(" ", command)}'");
                     case "RETAIL":
