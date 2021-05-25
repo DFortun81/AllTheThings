@@ -138,8 +138,6 @@ _.PVP =
 							{"exclude", "itemID", 146560 },	-- Exclude itself to stop duplicating
 						},
 					}),
-					
-
 					i(40781, {	-- Hateful Gladiator's Dreadplate Chestpiece
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 					}),
