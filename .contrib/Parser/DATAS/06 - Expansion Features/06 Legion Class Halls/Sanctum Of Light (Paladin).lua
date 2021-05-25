@@ -12,6 +12,12 @@ _.ExpansionFeatures =
 			},
 			["g"] = {
 				n(QUESTS, {
+					q(43934, {	-- A New Path
+						["sourceQuests"] = { 43541 },	-- United As One
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 110866 },	-- Delas Moonfang
+						["coord"] = { 48.5, 71.3, 24 },
+					}),
 					q(42866, {	-- A Sign From The Sky
 						["sourceQuests"] = { 42847 },	-- Dark Storms
 						["classes"] = { PALADIN },
@@ -33,10 +39,27 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 100031 },	-- Lord Maxwell Tyrosus
 						["coord"] = { 63.0, 37.2, 24 },
 					}),
+					q(43491, {	-- Allies of the Light
+						["sourceQuests"] = { 43490 },	-- Aponi's Trail
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 110969 },	-- Aponi Brightmane
+						["coord"] = { 48.9, 63.7, 748 },
+						["maps"] = { 748 },	-- Niskara
+					}),
 					q(38710, {	-- An Urgent Gathering
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 92909 },	-- Lord Maxwell Tyrosus
 						["maps"] = { 627 },
+					}),
+					q(45974, {	-- An Urgent Warning
+						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
+					}),
+					q(43490, {	-- Aponi's Trail
+						["sourceQuests"] = { 43489 },	-- To Felblaze Ingress
+						["classes"] = { PALADIN },
+						["provider"] = { "o", 252232 },	-- Aponi's Libram
+						["coord"] = { 66.2, 26.1, 630 },	-- Azsuna
+						["maps"] = { 630, 748 },	-- Azsuna, Niskara
 					}),
 					q(43487, {	-- Assault on Violet Hold: The Fel Lexicon
 						["sourceQuests"] = { 43486 },	-- Cracking the Codex
@@ -58,6 +81,15 @@ _.ExpansionFeatures =
 						["coord"] = { 44.6, 23.1, 627 },
 						["maps"] = { 627 },	-- Dalaran
 					}),
+					q(43534, {	-- Blood of Sargeras
+						["sourceQuests"] = {
+							43492,	-- Champion: Aponi Brightmane
+							43933,	-- Champion: Delas Moonfang
+						},
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker
+						["coord"] = { 52.3, 78.1, 24 },
+					}),
 					q(44063, {	-- Bolstering Your Arsenal
 						["sourceQuests"] = { 39756 },	-- A Sound Plan
 						["classes"] = { PALADIN },
@@ -65,9 +97,9 @@ _.ExpansionFeatures =
 						["coord"] = { 49.8, 72.4, 24 },
 					}),
 					q(44218, {	-- Champion Armaments
-						-- TBD: ["coord"] = {  },
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 110434 },	-- Kristoff
+						["coord"] = { 54.1, 49.8, 24 },
 						["description"] = "Only available if you you have the |cFFFFD700Plowshares to Swords|r order hall upgrade.",
 					}),
 					q(44250, {	-- Champion of the Light
@@ -77,6 +109,31 @@ _.ExpansionFeatures =
 						["coord"] = { 41.4, 61.1, 24 },
 						["g"] = {
 							i(139693),	-- Crown of the Silver Hand
+						},
+					}),
+					q(43492, {	-- Champion: Aponi Brightmane
+						["sourceQuests"] = { 43541 },	-- United As One
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 90251 },		-- Aponi Brightmane <Sunwalker Chieftain>
+						["coord"] = { 48.3, 72.4, 24 },
+						["g"] = {
+							follower(757),	-- Aponi Brightmane
+						},
+					}),
+					q(43785, {	-- Champion: Arator the Redeemer
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 99997 },		-- Arator the Redeemer
+						["g"] = {
+							follower(758),	-- Arator the Redeemer
+						},
+					}),
+					q(43933, {	-- Champion: Delas Moonfang
+						["sourceQuests"] = { 43934 },	-- A New Path
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 113299 },	-- Delas Moonfang
+						["coord"] = { 71.9, 24.4, 24 },
+						["g"] = {
+							follower(756),	-- Delas Moonfang
 						},
 					}),
 					q(42852, {	-- Champion: Justicar Julia Celeste
@@ -95,6 +152,20 @@ _.ExpansionFeatures =
 						["coord"] = { 38.2, 64.6, 24 },
 						["g"] = {
 							follower(478),	-- Lady Liadrin
+						},
+					}),
+					q(43701, {	-- Champion: Lothraxion
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 109105 },	-- Lothraxion <High Commander>
+						["g"] = {
+							follower(759),	-- Lothraxion
+						},
+					}),
+					q(46045, {	-- Champion: Nerus Moonfang
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 119545 },	-- Nerus Moonfang
+						["g"] = {
+							follower(1000),	-- Nerus Moonfang
 						},
 					}),
 					q(42851, {	-- Champion: Vindicator Boros
@@ -131,11 +202,31 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
 						["coord"] = { 52.3, 78.1, 24 },
 					}),
+					q(43699, {	-- Defenders of the World
+						["sourceQuests"] = {
+							43492,	-- Champion: Aponi Brightmane
+							43933,	-- Champion: Delas Moonfang
+						},
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker
+						["coord"] = { 52.3, 78.1, 24 },
+					}),
 					q(44219, {	-- Fate's Blessing
 						-- TBD: ["coord"] = {  },
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 112986 },	-- Librarian Lightmorne
 						["description"] = "Only available if you you have the |cFFFFD700Holy Purpose|r order hall upgrade.",
+					}),
+					q(46151, {	-- Furthering Knowledge
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(42844, {	-- Growing Power
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 112701 },	-- Justicar Julia Celeste
+						["isBreadcrumb"] = true,
+					}),
+					q(43883, {	-- Hitting the Books
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(42774, {	-- Hope Prevails
 						["sourceQuests"] = { 42773 },	-- The Light Reveals
@@ -144,6 +235,9 @@ _.ExpansionFeatures =
 						["coord"] = { 52.1, 83.2, 22 },
 						["maps"] = { 22 },	-- Western Plaguelands
 					}),
+					q(45975, {	-- Investigate the Broken Shore
+						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
+					}),
 					q(42771, {	-- Keeping the Peace
 						["sourceQuests"] = { 42770 },	-- Seeking Guidance
 						["classes"] = { PALADIN },
@@ -151,11 +245,23 @@ _.ExpansionFeatures =
 						["coord"] = { 51.3, 79.0, 22 },
 						["maps"] = { 22 },	-- Western Plaguelands
 					}),
+					q(46132, {	-- Knowledge is Power
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					q(38933, {	-- Logistical Matters
 						["sourceQuests"] = { 38566 },	-- A United Force
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 100031 },	-- Lord Maxwell Tyrosus
 						["coord"] = { 73.7, 19.6, 24 },
+					}),
+					q(43698, {	-- Lumenstone
+						["sourceQuests"] = {
+							43492,	-- Champion: Aponi Brightmane
+							43933,	-- Champion: Delas Moonfang
+						},
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker
+						["coord"] = { 52.3, 78.1, 24 },
 					}),
 					q(42867, {	-- Meeting of the Silver Hand
 						["sourceQuests"] = { 44153 },	-- Light's Charge
@@ -220,6 +326,12 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
 						["coord"] = { 52.3, 78.1, 24 },
 					}),
+					q(45770, {	-- Stirring in the Shadows
+						["classes"] = { PALADIN },
+						["g"] = {
+							i(143502),	-- Highlord's Golden Charge
+						},
+					}),
 					q(42850, {	-- Tech It Up a Notch
 						["sourceQuests"] = { 42849 },	-- Wrath and Justice
 						["classes"] = { PALADIN },
@@ -255,6 +367,11 @@ _.ExpansionFeatures =
 						["coord"] = { 56.8, 78.7, 117 },	-- Howling Fjord
 						["maps"] = { 117 },	-- Howling Fjord
 					}),
+					q(46071, {	-- The Hammer of Dalaran
+						["sourceQuests"] = { 46070 },	-- Preparations Underway
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker
+					}),
 					q(42966, {	-- The Highlord's Command
 						["sourceQuests"] = { 42919 },	-- The Scion's Legacy
 						["classes"] = { PALADIN },
@@ -272,6 +389,13 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 108776 },	-- Lord Maxwell Tyrosus
 						["coord"] = { 51.6, 81.9, 22 },
 						["maps"] = { 22 },	-- Western Plaguelands
+					}),
+					q(43540, {	-- The Mind of the Enemy
+						["sourceQuests"] = { 43490 },	-- Aponi's Trail
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 110969 },	-- Aponi Brightmane
+						["coord"] = { 48.9, 63.7, 748 },
+						["maps"] = { 748 },	-- Niskara
 					}),
 					q(42231, {	-- The Mysterious Paladin
 						["sourceQuests"] = { 44063 },	-- Bolstering Your Arsenal
@@ -334,6 +458,38 @@ _.ExpansionFeatures =
 						["coord"] = { 44.6, 23.1, 627 },
 						["maps"] = { 627 },	-- Dalaran
 					}),
+					q(43541, {	-- United As One
+						["sourceQuests"] = {
+							43491,	-- Allies of the Light
+							43540,	-- The Mind of the Enemy
+						},
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
+						["coord"] = { 52.3, 78.1, 24 },
+						["g"] = {
+							i(139697),	-- Bindings of the Silver Hand
+						},
+					}),
+					q(46940, {	-- Using Lost Knowledge
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(43687, {	-- Walking in the Shadows (Artifact Appearance)
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
+						["description"] = "You must have the Shard of Darkness in your inventory in order for him to give you this quest. Once you have it, go to the Legion version of Acherus: The Ebon Hold using the Dalaran flight master.",
+						["sourceQuests"] = { 43685 },	-- Phylactery Used
+						["g"] = {
+							i(139566, {	-- Heart of Corruption
+								artifact(865),	-- Retribution Hidden Artifact Appearance
+							}),
+						},
+					}),
+					q(43697, {	-- Warriors of the Light
+						["classes"] = { PALADIN },
+						["g"] = {
+							i(139690),	-- Breastplate of the Silver Hand
+						},
+					}),
 					q(38576, {	-- We Meet at Light's Hope
 						["sourceQuests"] = { 42017 },	-- Shrine of the Truthguard
 						["classes"] = { PALADIN },
@@ -356,6 +512,12 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 90369 },	-- Lord Maxwell Tyrosus
 						["coord"] = { 74.8, 48.2, 627 },
 					}),
+					q(45813, {	-- Where Art Thou, My Sweet
+						["provider"] = { "n", 118088 },	-- Maximillian of Northshire <Knight-Errant>
+						["g"] = {
+							follower(1001),	-- Maximillian of Northshire
+						},
+					}),
 					q(42849, {	-- Wrath and Justice
 						["sourceQuests"] = { 42848 },	-- Recruiting the Troops
 						["classes"] = { PALADIN },
@@ -365,116 +527,22 @@ _.ExpansionFeatures =
 					--[[
 					q(43424),	-- A Hero's Weapon
 					q(43700),	-- A Light in the Darkness
-					q(43934),	-- A New Path (also warrior?)
-					q(43491),	-- Allies of the Light
 					q(45890),	-- Ancestors and Enemies (also warrior?)
 					q(44220, {	-- Blessing of the Order
 						["u"] = REMOVED_FROM_GAME,
 					}),
-					q(43534),	-- Blood of Sargeras
-					q(43699),	-- Defenders of the World
 					q(45149),	-- Ending the Crescent Curse
 					q(45147),	-- Felstone Destruction (and warrior?)
 					q(39722),	-- Forging New Strength
 					q(42774),	-- Hope Prevails
 					q(45143),	-- Judgment Awaits
 					q(46074),	-- Leather to Legendary
-					q(43698),	-- Lumenstone
 					q(45145),	-- Moonfang Family Relics
 					q(45148),	-- Oath Breaker
 					q(46070),	-- Preparations Underway
 					q(45146),	-- Runic Reading
-					--]]
-					--[[
-					q(43540),	-- The Mind of the Enemy
 					q(46069),	-- Worthy of the Title
 					]]--
-					q(45974, {	-- An Urgent Warning
-						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
-					}),
-					q(46151, {	-- Furthering Knowledge
-						["u"] = REMOVED_FROM_GAME,
-					}),
-					q(42844, {	-- Growing Power
-						["provider"] = { "n", 112701 },	-- Justicar Julia Celeste
-						["isBreadcrumb"] = true,
-					}),
-					q(43883, {	-- Hitting the Books
-						["u"] = REMOVED_FROM_GAME,
-					}),
-					q(45975, {	-- Investigate the Broken Shore
-						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
-					}),
-					q(46132, {	-- Knowledge is Power
-						["u"] = REMOVED_FROM_GAME,
-					}),
-					q(45770, {	-- Stirring in the Shadows
-						["lvl"] = 110,
-						["classes"] = { PALADIN },
-						["g"] = {
-							i(143502),	-- Highlord's Golden Charge
-						},
-					}),
-					q(46071, {	-- The Hammer of Dalaran
-						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker
-						["sourceQuests"] = { 46070 },	-- Preparations Underway
-					}),
-					q(43687, {	-- Walking in the Shadows (Artifact Appearance)
-						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
-						["description"] = "You must have the Shard of Darkness in your inventory in order for him to give you this quest. Once you have it, go to the Legion version of Acherus: The Ebon Hold using the Dalaran flight master.",
-						["sourceQuests"] = { 43685 },	-- Phylactery Used
-						["g"] = {
-							i(139566, {	-- Heart of Corruption
-								artifact(865),	-- Retribution Hidden Artifact Appearance
-							}),
-						},
-					}),
-					q(43697, {	-- Warriors of the Light
-						i(139690),	-- Breastplate of the Silver Hand
-					}),
-					q(43541, {	-- United As One
-						i(139697),	-- Bindings of the Silver Hand
-					}),
-					-- Followers TODO: Sort to other quests later.
-					q(43492, {	-- Champion: Aponi Brightmane
-						["provider"] = { "n", 90251 },		-- Aponi Brightmane <Sunwalker Chieftain>
-						["g"] = {
-							follower(757),	-- Aponi Brightmane
-						},
-					}),
-					q(43785, {	-- Champion: Arator the Redeemer
-						["provider"] = { "n", 99997 },		-- Arator the Redeemer
-						["g"] = {
-							follower(758),	-- Arator the Redeemer
-						},
-					}),
-					q(43933, {	-- Champion: Delas Moonfang
-						["provider"] = { "n", 113299 },	-- Delas Moonfang <Priestess of the Moon>
-						["g"] = {
-							follower(756),	-- Delas Moonfang
-						},
-					}),
-					q(43701, {	-- Champion: Lothraxion
-						["provider"] = { "n", 109105 },	-- Lothraxion <High Commander>
-						["g"] = {
-							follower(759),	-- Lothraxion
-						},
-					}),
-					q(46940, {	-- Using Lost Knowledge
-						["u"] = REMOVED_FROM_GAME,
-					}),
-					q(45813, {	-- Where Art Thou, My Sweet
-						["provider"] = { "n", 118088 },	-- Maximillian of Northshire <Knight-Errant>
-						["g"] = {
-							follower(1001),	-- Maximillian of Northshire
-						},
-					}),
-					q(46045, {	-- Champion: Nerus Moonfang
-						["provider"] = { "n", 119545 },	-- Nerus Moonfang
-						["g"] = {
-							follower(1000),	-- Nerus Moonfang
-						},
-					}),
 				}),
 				n(93787, {	-- Scouting Map
 					["g"] = {

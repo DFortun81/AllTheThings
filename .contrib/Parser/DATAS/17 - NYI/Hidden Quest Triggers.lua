@@ -1934,7 +1934,6 @@ _.HiddenQuestTriggers =
 		q(46835),	-- Whispers of a Frightened World Tracking, while doing quest 46206
 		q(43659),	-- Mage - learned the Felo'melorn appearance from The Stars' Design (maybe put this on the appearance item?)
 		q(42189),	-- Fire Mage - Flavor Event 01. Showed Arcanomancer Vridiel in Dalaran the newly acquired Felo'melorne
-		q(43660),	-- Hidden Appearance Unlocked — unlocking frost mage hidden appearance
 		q(40340),	-- Alard Schmied Greeting Seen. "Well, I'll be... the Ashbringer. ...' in Dalaran
 		q(39607),	-- God-King Scene (Vault) — when turning in #39590, "Ahead of the Game"
 		q(38420),	-- triggered when turning in #38624, "Cry Thunder!"
@@ -1950,6 +1949,12 @@ _.HiddenQuestTriggers =
 				40930,	-- Apocalypse [Unholy Artifact] TODO: confirm
 			},
 		}),
+		q(42646),	-- triggered after getting Extra Thick Mojo in Durotar when on the Legion intro quest To Be Prepared
+
+		-- Artifact Power questlines
+		q(45851),	-- triggered after bm hunter artifact power questline
+		q(45852),	-- triggered after resto shaman / holy pal artifact power questlines
+		q(41263),	-- triggered after unholy dk artifact power questline
 
 		-- Balance of Power questline
 		q(43511),	-- Kalec Arrives — triggered when turning in "The Power Within" at Azurewing Repose (starting Balance of Power)
@@ -2143,6 +2148,10 @@ _.HiddenQuestTriggers =
 		q(44460),	-- Paladin Order Hall - Tracking Quest: Blood of Our Enemy 3
 		q(44461),	-- Paladin Order Hall - Tracking Quest: Blood of Our Enemy 4
 		q(44462),	-- Paladin Order Hall - Tracking Quest: Blood of Our Enemy 5
+		q(42136),	-- Paladin Order Hall - Tracking Quest: Chose Strategy A (choice for 42919 The Scion's Legacy)
+		q(42960),	-- Paladin Order Hall - Tracking Quest: Chose Strategy B (choice for 42919 The Scion's Legacy)
+		q(42135),	-- Paladin Order Hall - Tracking Quest: Chose Strategy C (choice for 42919 The Scion's Legacy)
+		q(42961),	-- Paladin Order Hall - Tracking Quest: Chose Strategy D (choice for 42919 The Scion's Legacy)
 
 		q(40708),	-- Priest Order Hall - Holy chosen first
 		q(40709),	-- Priest Order Hall - Discipline chosen first
@@ -2257,6 +2266,11 @@ _.HiddenQuestTriggers =
 		q(43670),	-- Hidden Appearance Unlocked (Assassination Rogue "The Kingslayers")
 		q(43673),	-- Hidden Appearance Unlocked (Ele Shaman "Lost Codex of the Amani")
 		q(43649),	-- Hidden Appearance Unlocked (DH "Guise of the Deathwalker")
+		q(43660),	-- Hidden Appearance Unlocked — unlocking frost mage hidden appearance
+		q(43679),	-- Hidden Appearance Unlocked (Arms Warrior "The Arcanite Bladebreaker")
+		q(43681),	-- Hidden Appearance Unlocked (Prot Warrior "Burning Plate of the Worldbreaker")
+		q(43664),	-- Hidden Appearance Unlocked (Holy Paladin "Lost Edicts of the Watcher")
+		q(43657),	-- Hidden Appearance Unlocked (Survival Hunter "Last Breath of the Forest")
 
 		--	Professions
 		--	Archaeology
@@ -4061,6 +4075,7 @@ _.HiddenQuestTriggers =
 		q(62960),	-- triggered after questID #62459, "Go Beyond!"
 		q(62415),	-- hitting Renown 39 as Night Fae
 		q(62806),	-- HQT for Arsenal: Winterborn Weapons
+		q(61169),	-- Night Fae buff from Claw's Edge anima conductor
 
 		-- Bastion
 		q(57574),	-- landing in Bastion for the first time during Seek the Ascended
@@ -4626,6 +4641,10 @@ _.HiddenQuestTriggers =
 		q(59687),	-- using "Dog Bone's Bone"
 		q(59681),	-- using "Anima-Infused Water"
 		q(61455),	-- using "Protective Braziers"
+		q(63001),	-- triggers when choosing to skip the Venthyr sanctum intro quests
+		q(63023),	-- triggers when choosing to skip the Venthyr sanctum intro quests
+		q(63425),	-- triggers when choosing to skip the Venthyr sanctum intro quests
+		q(63429),	-- triggers when choosing to skip the Venthyr sanctum intro quests
 
 		-- The Maw
 		q(59911),	-- triggered after picking up Ruiner's End

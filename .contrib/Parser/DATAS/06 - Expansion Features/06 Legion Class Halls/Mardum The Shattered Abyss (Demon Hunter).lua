@@ -560,10 +560,7 @@ _.ExpansionFeatures =
 					}),
 					q(42669, {	-- Preparations for Invasion
 						["classes"] = { DEMONHUNTER },
-						["sourceQuests"] = {
-							42777,	-- Champion: Belath Dawnblade
-							42701,	-- Champion: Matron Mother Malevolence
-						},
+						["sourceQuests"] = { 42776 },	-- Two Worthies
 						["provider"] = { "n", 98648 },	-- Allari the Souleater
 						["coord"] = { 62.3, 58.8, 721 },
 						["lvl"] = 110,
