@@ -1935,13 +1935,8 @@ _.Zones =
 							}),
 						},
 					}),
-					n(33921, { 	-- Nargle Lashcord <Veteran Arena Vendor>
+					n(33921, { 	-- Nargle Lashcord <Veteran Arena Vendor> // Furious Gladiator: Season 6 Gladiator Gear
 						["u"] = REMOVED_FROM_GAME,
-						["sym"] = {
-							{"sub", "pvp_gear_base", -10014, -669, -661 },	-- Furious Gladiator: Season 6 Gladiator Gear
-							{"pop"},	-- Discard the Set header and acquire the children.
-							{"exclude", "headerID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
-						},
 						["g"] = {
 							un(REMOVED_FROM_GAME, i(45983)),	-- Furious Gladiator's Tabard [Elite Rating]
 						},
@@ -1952,7 +1947,7 @@ _.Zones =
 							{"sub", "pvp_gear_base", -9979, -672, -662 },	-- Vicious Gladiator: Season 9 Elite Gear
 							{"pop"},	-- Discard the Set header and acquire the children.
 						},
-					["g"] = {
+						["g"] = {
 							un(REMOVED_FROM_GAME, i(70515)),	-- Vicious Gladiator's armwraps of accuracy. S10 Version
 							un(REMOVED_FROM_GAME, i(70516)),	-- Vicious Gladiator's armwrapf of alacrity. S10 Version
 							un(REMOVED_FROM_GAME, i(70523)),	-- Vicious Gladiator's belt of cruelty. S10 Version

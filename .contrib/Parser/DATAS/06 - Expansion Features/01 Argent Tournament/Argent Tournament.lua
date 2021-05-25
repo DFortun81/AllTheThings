@@ -2181,7 +2181,13 @@ _.ExpansionFeatures =
 				n(35573, {	-- Arcanist Asarina <Legacy Justice Quartermaster>
 					["coord"] = { 75.2, 21.6, 118 },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					-- We have a different Vendor with the same PvP Items in Dalaran listed. Both of them sell the Furious Gladiator Items for Gold. For sake of numbers we use Symlink on the 2nd NPC
+					["sym"] = {
+						{"sub", "pvp_gear_base", -10014, -669, -661 },	-- Furious Gladiator: Season 6 Gladiator Gear
+						{"pop"},	-- Discard the Set header and acquire the children.
+						{"exclude", "headerID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
+						
+						-- Normal items here
 						i(47732),	-- Band of the Invoker
 						i(47729),	-- Bloodshed Band
 						i(47658),	-- Brimstone Igniter
@@ -2191,86 +2197,6 @@ _.ExpansionFeatures =
 						i(47708),	-- Duskstalker Shoulderpads
 						i(47704),	-- Epaulets of the Devourer
 						i(47677),	-- Faceplate of the Honorbound
-						i(41087),	-- Furious Gladiator's Chain Armor
-						i(41143),	-- Furious Gladiator's Chain Gauntlets
-						i(41157),	-- Furious Gladiator's Chain Helm
-						i(41205),	-- Furious Gladiator's Chain Leggings
-						i(41217),	-- Furious Gladiator's Chain Spaulders
-						i(41773),	-- Furious Gladiator's Dragonhide Gloves
-						i(41678),	-- Furious Gladiator's Dragonhide Helm
-						i(41667),	-- Furious Gladiator's Dragonhide Legguards
-						i(41661),	-- Furious Gladiator's Dragonhide Robes
-						i(41715),	-- Furious Gladiator's Dragonhide Spaulders
-						i(40787),	-- Furious Gladiator's Dreadplate Chestpiece
-						i(40809),	-- Furious Gladiator's Dreadplate Gauntlets
-						i(40827),	-- Furious Gladiator's Dreadplate Helm
-						i(40848),	-- Furious Gladiator's Dreadplate Legguards
-						i(40868),	-- Furious Gladiator's Dreadplate Shoulders
-						i(42011),	-- Furious Gladiator's Felweave Amice
-						i(41993),	-- Furious Gladiator's Felweave Cowl
-						i(42017),	-- Furious Gladiator's Felweave Handguards
-						i(41998),	-- Furious Gladiator's Felweave Raiment
-						i(42005),	-- Furious Gladiator's Felweave Trousers
-						i(41287),	-- Furious Gladiator's Kodohide Gloves
-						i(41321),	-- Furious Gladiator's Kodohide Helm
-						i(41298),	-- Furious Gladiator's Kodohide Legguards
-						i(41310),	-- Furious Gladiator's Kodohide Robes
-						i(41275),	-- Furious Gladiator's Kodohide Spaulders
-						i(41767),	-- Furious Gladiator's Leather Gloves
-						i(41672),	-- Furious Gladiator's Leather Helm
-						i(41655),	-- Furious Gladiator's Leather Legguards
-						i(41683),	-- Furious Gladiator's Leather Spaulders
-						i(41650),	-- Furious Gladiator's Leather Tunic
-						i(41081),	-- Furious Gladiator's Linked Armor
-						i(41137),	-- Furious Gladiator's Linked Gauntlets
-						i(41151),	-- Furious Gladiator's Linked Helm
-						i(41199),	-- Furious Gladiator's Linked Leggings
-						i(41211),	-- Furious Gladiator's Linked Spaulders
-						i(40993),	-- Furious Gladiator's Mail Armor
-						i(41007),	-- Furious Gladiator's Mail Gauntlets
-						i(41019),	-- Furious Gladiator's Mail Helm
-						i(41033),	-- Furious Gladiator's Mail Leggings
-						i(41044),	-- Furious Gladiator's Mail Spaulders
-						i(41874),	-- Furious Gladiator's Mooncloth Gloves
-						i(41854),	-- Furious Gladiator's Mooncloth Hood
-						i(41864),	-- Furious Gladiator's Mooncloth Leggings
-						i(41869),	-- Furious Gladiator's Mooncloth Mantle
-						i(41859),	-- Furious Gladiator's Mooncloth Robe
-						i(40907),	-- Furious Gladiator's Ornamented Chestguard
-						i(40927),	-- Furious Gladiator's Ornamented Gloves
-						i(40933),	-- Furious Gladiator's Ornamented Headcover
-						i(40939),	-- Furious Gladiator's Ornamented Legplates
-						i(40963),	-- Furious Gladiator's Ornamented Spaulders
-						i(40789),	-- Furious Gladiator's Plate Chestpiece
-						i(40807),	-- Furious Gladiator's Plate Gauntlets
-						i(40826),	-- Furious Gladiator's Plate Helm
-						i(40847),	-- Furious Gladiator's Plate Legguards
-						i(40866),	-- Furious Gladiator's Plate Shoulders
-						i(40992),	-- Furious Gladiator's Ringmail Armor
-						i(41001),	-- Furious Gladiator's Ringmail Gauntlets
-						i(41013),	-- Furious Gladiator's Ringmail Helm
-						i(41027),	-- Furious Gladiator's Ringmail Leggings
-						i(41038),	-- Furious Gladiator's Ringmail Spaulders
-						i(41940),	-- Furious Gladiator's Satin Gloves
-						i(41915),	-- Furious Gladiator's Satin Hood
-						i(41927),	-- Furious Gladiator's Satin Leggings
-						i(41934),	-- Furious Gladiator's Satin Mantle
-						i(41921),	-- Furious Gladiator's Satin Robe
-						i(40788),	-- Furious Gladiator's Scaled Chestpiece
-						i(40808),	-- Furious Gladiator's Scaled Gauntlets
-						i(40828),	-- Furious Gladiator's Scaled Helm
-						i(40849),	-- Furious Gladiator's Scaled Legguards
-						i(40869),	-- Furious Gladiator's Scaled Shoulders
-						i(41965),	-- Furious Gladiator's Silk Amice
-						i(41946),	-- Furious Gladiator's Silk Cowl
-						i(41971),	-- Furious Gladiator's Silk Handguards
-						i(41953),	-- Furious Gladiator's Silk Raiment
-						i(41959),	-- Furious Gladiator's Silk Trousers
-						i(41293),	-- Furious Gladiator's Wyrmhide Gloves
-						i(41327),	-- Furious Gladiator's Wyrmhide Helm
-						i(41304),	-- Furious Gladiator's Wyrmhide Legguards
-						i(41316),	-- Furious Gladiator's Wyrmhide Robes
-						i(41281),	-- Furious Gladiator's Wyrmhide Spaulders
 						i(47735),	-- Glyph of Indomitability
 						i(47733),	-- Heartmender Circle
 						i(47681),	-- Heaume of the Restless Watch
@@ -3290,7 +3216,13 @@ _.ExpansionFeatures =
 				n(35574, {	-- Magistrix Iruvia <Legacy Justice Quartermaster>
 					["coord"] = { 75.2, 22.0, 118 },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					-- We have a different Vendor with the same PvP Items in Dalaran listed. Both of them sell the Furious Gladiator Items for Gold. For sake of numbers we use Symlink on the 2nd NPC
+					["sym"] = {
+						{"sub", "pvp_gear_base", -10014, -669, -661 },	-- Furious Gladiator: Season 6 Gladiator Gear
+						{"pop"},	-- Discard the Set header and acquire the children.
+						{"exclude", "headerID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
+						
+						-- Normal Items here
 						i(47732),	-- Band of the Invoker
 						i(47729),	-- Bloodshed Band
 						i(47658),	-- Brimstone Igniter
@@ -3301,86 +3233,6 @@ _.ExpansionFeatures =
 						i(47709),	-- Duskstalker Pauldrons
 						i(47710),	-- Epaulets of the Fateful Accord
 						i(47675),	-- Faceplate of Thunderous Rampage
-						i(41087),	-- Furious Gladiator's Chain Armor
-						i(41143),	-- Furious Gladiator's Chain Gauntlets
-						i(41157),	-- Furious Gladiator's Chain Helm
-						i(41205),	-- Furious Gladiator's Chain Leggings
-						i(41217),	-- Furious Gladiator's Chain Spaulders
-						i(41773),	-- Furious Gladiator's Dragonhide Gloves
-						i(41678),	-- Furious Gladiator's Dragonhide Helm
-						i(41667),	-- Furious Gladiator's Dragonhide Legguards
-						i(41661),	-- Furious Gladiator's Dragonhide Robes
-						i(41715),	-- Furious Gladiator's Dragonhide Spaulders
-						i(40787),	-- Furious Gladiator's Dreadplate Chestpiece
-						i(40809),	-- Furious Gladiator's Dreadplate Gauntlets
-						i(40827),	-- Furious Gladiator's Dreadplate Helm
-						i(40848),	-- Furious Gladiator's Dreadplate Legguards
-						i(40868),	-- Furious Gladiator's Dreadplate Shoulders
-						i(42011),	-- Furious Gladiator's Felweave Amice
-						i(41993),	-- Furious Gladiator's Felweave Cowl
-						i(42017),	-- Furious Gladiator's Felweave Handguards
-						i(41998),	-- Furious Gladiator's Felweave Raiment
-						i(42005),	-- Furious Gladiator's Felweave Trousers
-						i(41287),	-- Furious Gladiator's Kodohide Gloves
-						i(41321),	-- Furious Gladiator's Kodohide Helm
-						i(41298),	-- Furious Gladiator's Kodohide Legguards
-						i(41310),	-- Furious Gladiator's Kodohide Robes
-						i(41275),	-- Furious Gladiator's Kodohide Spaulders
-						i(41767),	-- Furious Gladiator's Leather Gloves
-						i(41672),	-- Furious Gladiator's Leather Helm
-						i(41655),	-- Furious Gladiator's Leather Legguards
-						i(41683),	-- Furious Gladiator's Leather Spaulders
-						i(41650),	-- Furious Gladiator's Leather Tunic
-						i(41081),	-- Furious Gladiator's Linked Armor
-						i(41137),	-- Furious Gladiator's Linked Gauntlets
-						i(41151),	-- Furious Gladiator's Linked Helm
-						i(41199),	-- Furious Gladiator's Linked Leggings
-						i(41211),	-- Furious Gladiator's Linked Spaulders
-						i(40993),	-- Furious Gladiator's Mail Armor
-						i(41007),	-- Furious Gladiator's Mail Gauntlets
-						i(41019),	-- Furious Gladiator's Mail Helm
-						i(41033),	-- Furious Gladiator's Mail Leggings
-						i(41044),	-- Furious Gladiator's Mail Spaulders
-						i(41874),	-- Furious Gladiator's Mooncloth Gloves
-						i(41854),	-- Furious Gladiator's Mooncloth Hood
-						i(41864),	-- Furious Gladiator's Mooncloth Leggings
-						i(41869),	-- Furious Gladiator's Mooncloth Mantle
-						i(41859),	-- Furious Gladiator's Mooncloth Robe
-						i(40907),	-- Furious Gladiator's Ornamented Chestguard
-						i(40927),	-- Furious Gladiator's Ornamented Gloves
-						i(40933),	-- Furious Gladiator's Ornamented Headcover
-						i(40939),	-- Furious Gladiator's Ornamented Legplates
-						i(40963),	-- Furious Gladiator's Ornamented Spaulders
-						i(40789),	-- Furious Gladiator's Plate Chestpiece
-						i(40807),	-- Furious Gladiator's Plate Gauntlets
-						i(40826),	-- Furious Gladiator's Plate Helm
-						i(40847),	-- Furious Gladiator's Plate Legguards
-						i(40866),	-- Furious Gladiator's Plate Shoulders
-						i(40992),	-- Furious Gladiator's Ringmail Armor
-						i(41001),	-- Furious Gladiator's Ringmail Gauntlets
-						i(41013),	-- Furious Gladiator's Ringmail Helm
-						i(41027),	-- Furious Gladiator's Ringmail Leggings
-						i(41038),	-- Furious Gladiator's Ringmail Spaulders
-						i(41940),	-- Furious Gladiator's Satin Gloves
-						i(41915),	-- Furious Gladiator's Satin Hood
-						i(41927),	-- Furious Gladiator's Satin Leggings
-						i(41934),	-- Furious Gladiator's Satin Mantle
-						i(41921),	-- Furious Gladiator's Satin Robe
-						i(40788),	-- Furious Gladiator's Scaled Chestpiece
-						i(40808),	-- Furious Gladiator's Scaled Gauntlets
-						i(40828),	-- Furious Gladiator's Scaled Helm
-						i(40849),	-- Furious Gladiator's Scaled Legguards
-						i(40869),	-- Furious Gladiator's Scaled Shoulders
-						i(41965),	-- Furious Gladiator's Silk Amice
-						i(41946),	-- Furious Gladiator's Silk Cowl
-						i(41971),	-- Furious Gladiator's Silk Handguards
-						i(41953),	-- Furious Gladiator's Silk Raiment
-						i(41959),	-- Furious Gladiator's Silk Trousers
-						i(41293),	-- Furious Gladiator's Wyrmhide Gloves
-						i(41327),	-- Furious Gladiator's Wyrmhide Helm
-						i(41304),	-- Furious Gladiator's Wyrmhide Legguards
-						i(41316),	-- Furious Gladiator's Wyrmhide Robes
-						i(41281),	-- Furious Gladiator's Wyrmhide Spaulders
 						i(47735),	-- Glyph of Indomitability
 						i(47687),	-- Headguard of Inner Warmth
 						i(47678),	-- Headplate of the Honorbound
