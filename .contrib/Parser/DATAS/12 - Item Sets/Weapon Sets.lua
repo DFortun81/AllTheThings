@@ -59,27 +59,45 @@ _.GearSets =
 				tier(3, {	-- Wrath of the Lich King
 					i(146647, {	-- Arsenal: Savage Gladiator's Weapons
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-						["sym"] = { {"sub", "pvp_weapons_ensemble", -10014, -668, -660 }, },
+						["sym"] = { 
+							{"sub", "pvp_weapons_ensemble", -10014, -668, -660 },
+							{"exclude", "itemID", 146647 },	-- Exclude itself to stop duplicating
+						},
 					}),
 					i(146646, {	-- Arsenal: Hateful Gladiator's Weapons
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-						["sym"] = { {"sub", "pvp_weapons_ensemble", -10014, -668, -9983 }, },
+						["sym"] = { 
+							{"sub", "pvp_weapons_ensemble", -10014, -668, -9983 },
+							{"exclude", "itemID", 146646 },	-- Exclude itself to stop duplicating
+						},
 					}),
 					i(146645, {	-- Arsenal: Deadly Gladiator's Weapon
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-						["sym"] = { {"sub", "pvp_weapons_ensemble", -10014, -668, -661 }, },
+						["sym"] = { 
+							{"sub", "pvp_weapons_ensemble", -10014, -668, -661 },
+							{"exclude", "itemID", 146645 },	-- Exclude itself to stop duplicating
+						},
 					}),
 					i(146644, {	-- Arsenal: Furious Gladiator's Weapons
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-						["sym"] = { {"sub", "pvp_weapons_ensemble", -10014, -669, -661 }, },
+						["sym"] = { 
+							{"sub", "pvp_weapons_ensemble", -10014, -669, -661 },
+							{"exclude", "itemID", 146644 },	-- Exclude itself to stop duplicating
+						},
 					}),
 					i(146643, {	-- Arsenal: Relentless Gladiator's Weapons
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-						["sym"] = { {"sub", "pvp_weapons_ensemble", -10014, -670, -661 }, },
+						["sym"] = { 
+							{"sub", "pvp_weapons_ensemble", -10014, -670, -661 },
+							{"exclude", "itemID", 146644 },	-- Exclude itself to stop duplicating
+						},
 					}),
 					i(146642, {	-- Arsenal: Wrathful Gladiator's Weapons
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-						["sym"] = { {"sub", "pvp_weapons_ensemble", -10014, -671, -661 }, },
+						["sym"] = { 
+							{"sub", "pvp_weapons_ensemble", -10014, -671, -661 },
+							{"exclude", "itemID", 146642 },	-- Exclude itself to stop duplicating
+						},
 					}),
 				}),
 				tier(4, {	-- Cataclysm

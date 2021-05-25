@@ -9,13 +9,7 @@ _.Zones =
 			n(-213, {	-- The Underbelly
 				n(VENDORS, {
 					n(30885, {	-- Blazik Fireclaw <Hateful Gladiator>
-						["itemID"] = 137642,	-- Mark of Honor
 						["coord"] = { 59.5, 57.9, 126 },
-						["sym"] = {
-							{"sub", "pvp_gear_base", -10014, -668, -9983 },	-- Deadly Gladiator: Season 5 Honor Gear
-							{"pop"},	-- Discard the Set header and acquire the children.
-							{"exclude", "headerID", -384, -385, -386 }, -- Exclude Neck, Finger and Trinkets
-						},
 					}),
 					n(106887, {	-- Cravitz Lorent <Shady Book Dealer>
 						["description"] = "This vendor is not always present. It can appear in either version of Dalaran.",
