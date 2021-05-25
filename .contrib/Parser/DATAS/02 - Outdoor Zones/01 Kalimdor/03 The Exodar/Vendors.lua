@@ -92,44 +92,16 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = appendGroups(COMMON_CATACLYSM_JEWELCRAFTING_RECIPES, {
 						i(20854, {	-- Design: Amulet of the Moon
-							["spellID"] = 25339,	-- Amulet of the Moon
-							["requireSkill"] = JEWELCRAFTING,
-							["timeline"] = { "added 2.0.1.6180" },
-							-- #if ANYCLASSIC
-							["u"] = TBC_PHASE_ONE,
-							-- #endif
 							["isLimited"] = true,
-							["f"] = 200,
 						}),
 						i(20856, {	-- Design: Heavy Golden Necklace of Battle
-							["spellID"] = 25320,	-- Heavy Golden Necklace of Battle
-							["requireSkill"] = JEWELCRAFTING,
-							["timeline"] = { "added 2.0.1.6180" },
-							-- #if ANYCLASSIC
-							["u"] = TBC_PHASE_ONE,
-							-- #endif
 							["isLimited"] = true,
-							["f"] = 200,
 						}),
 						i(21948, {	-- Design: Opal Necklace of Impact
-							["spellID"] = 26897,	-- Opal Necklace of Impact
-							["requireSkill"] = JEWELCRAFTING,
-							["timeline"] = { "added 2.0.1.6180" },
-							-- #if ANYCLASSIC
-							["u"] = TBC_PHASE_ONE,
-							-- #endif
 							["isLimited"] = true,
-							["f"] = 200,
 						}),
 						i(20975, {	-- Design: The Jade Eye
-							["spellID"] = 25619,	-- The Jade Eye
-							["requireSkill"] = JEWELCRAFTING,
-							["timeline"] = { "added 2.0.1.6180" },
-							-- #if ANYCLASSIC
-							["u"] = TBC_PHASE_ONE,
-							-- #endif
 							["isLimited"] = true,
-							["f"] = 200,
 						}),
 					}),
 				}),

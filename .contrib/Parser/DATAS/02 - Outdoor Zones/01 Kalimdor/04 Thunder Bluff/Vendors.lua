@@ -390,17 +390,12 @@ _.Zones =
 				n(8363, {	-- Shadi Mistrunner <Trade Supplies>
 					["coord"] = { 40.33, 63.38, 88 },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
+						-- #if AFTER TBC
 						i(21948, {	-- Design: Opal Necklace of Impact
-							["spellID"] = 26897,	-- Opal Necklace of Impact
-							["requireSkill"] = JEWELCRAFTING,
-							["timeline"] = { "added 2.0.1.6180" },
-							-- #if ANYCLASSIC
-							["u"] = TBC_PHASE_ONE,
-							-- #endif
 							["isLimited"] = true,
-							["f"] = 200,
 						}),
+						-- #endif
 					},
 				}),
 				n(3016, {	-- Tand <Basket Weaver>

@@ -444,360 +444,101 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 			}),
 			n(VENDORS, {
 				n(23437, {	-- Indormi <Keeper of Ancient Gem Lore>
+					-- NOTE: You're probably looking at this and going "oh my god", I'm gonna add a way to sort by name after I'm done.
 					-- #if BEFORE CATA
-					i(32299, {	-- Design: Balanced Shadowsong Amethyst [TBC] / Design: Shifting Shadowsong Amethyst [CATA+]
-						-- #if BEFORE CATA
-						["spellID"] = 39729,	-- Balanced Shadowsong Amethyst [TBC]
-						-- #else
-						["spellID"] = 39728,	-- Shifting Shadowsong Amethyst [CATA+]
-						["timeline"] = { "removed 4.0.1.10000" },
-						-- #endif
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = 200,
-					}),
+					i(32299),	-- Design: Balanced Shadowsong Amethyst [TBC] / Design: Shifting Shadowsong Amethyst [CATA+]
 					-- #endif
-					i(32274, {	-- Design: Bold Crimson Spinel
-						["spellID"] = 39705,	-- Bold Crimson Spinel
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = 200,
-					}),
+					i(32274),	-- Design: Bold Crimson Spinel
 					-- #if AFTER CATA
-					i(32282, {	-- Design: Runed Crimson Spinel [TBC] / Design: Brilliant Crimson Spinel [CATA+]
-						["spellID"] = 39711,	-- Runed Crimson Spinel [TBC] / Brilliant Crimson Spinel [CATA+]
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = 200,
-					}),
+					i(32282),	-- Design: Brilliant Crimson Spinel [CATA+] / Design: Runed Crimson Spinel [TBC]
 					-- #endif
 					-- #if AFTER CATA
-					i(32281, {	-- Design: Teardrop Crimson Spinel [TBC] / Design: Brilliant Crimson Spinel [CATA+]
-						-- #if BEFORE CATA
-						["spellID"] = 39710,	-- Teardrop Crimson Spinel [TBC]
-						-- #else
-						["spellID"] = 39711,	-- Brilliant Crimson Spinel [CATA+]
-						["timeline"] = { "removed 4.0.1.10000" },
-						-- #endif
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = 200,
-					}),
+					i(32281),	-- Design: Brilliant Crimson Spinel [CATA+] / Design: Teardrop Crimson Spinel [TBC]
 					-- #endif
 					-- #if BEFORE CATA
-					i(32283, {	-- Design: Bright Crimson Spinel [TBC] / Design: Delicate Crimson Spinel [CATA+]
-						-- #if BEFORE CATA
-						["spellID"] = 39712,	-- Bright Crimson Spinel [TBC]
-						-- #else
-						["spellID"] = 39706,	-- Delicate Crimson Spinel [CATA+]
-						["timeline"] = { "removed 4.0.1.10000" },
-						-- #endif
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = 200,
-					}),
+					i(32283),	-- Design: Bright Crimson Spinel [TBC] / Design: Delicate Crimson Spinel [CATA+]
 					-- #endif
-					i(32290, {	-- Design: Brilliant Lionseye [TBC] / Design: Brilliant Crimson Spinel [CATA+]
-						-- #if BEFORE CATA
-						["spellID"] = 39719,	-- Brilliant Lionseye [TBC]
-						-- #else
-						["spellID"] = 39711,	-- Brilliant Crimson Spinel [CATA+]
-						["timeline"] = { "removed 4.0.1.10000" },
-						-- #endif
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = 200,
-					}),
+					i(32290),	-- Design: Brilliant Lionseye [TBC] / Design: Brilliant Crimson Spinel [CATA+]
 					-- #if BEFORE CATA
-					i(32311, {	-- Design: Dazzling Seaspray Emerald [TBC] / Design: Purified Shadowsong Amethyst [CATA+]
-						["spellID"] = 39741,	-- Dazzling Seaspray Emerald [TBC] / Purified Shadowsong Amethyst [CATA+]
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = 200,
-					}),
+					i(32311),	-- Design: Dazzling Seaspray Emerald [TBC] / Design: Purified Shadowsong Amethyst [CATA+]
 					-- #endif
 					-- #if AFTER CATA
-					i(32308, {	-- Design: Wicked Pyrestone [TBC] / Design: Deadly Pyrestone [CATA+]
-						["spellID"] = 39738,	-- Wicked Pyrestone [TBC] / Deadly Pyrestone [CATA+]
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = 200,
-					}),
+					i(32308),	-- Design: Deadly Pyrestone [CATA+] / Design: Wicked Pyrestone [TBC]
 					-- #endif
-					i(32277, {	-- Design: Delicate Crimson Spinel
-						["spellID"] = 39706,	-- Delicate Crimson Spinel
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = 200,
-					}),
+					i(32277),	-- Design: Delicate Crimson Spinel
 					-- #if AFTER CATA
-					i(32283, {	-- Design: Bright Crimson Spinel [TBC] / Design: Delicate Crimson Spinel [CATA+]
-						-- #if BEFORE CATA
-						["spellID"] = 39712,	-- Bright Crimson Spinel [TBC]
-						-- #else
-						["spellID"] = 39706,	-- Delicate Crimson Spinel [CATA+]
-						["timeline"] = { "removed 4.0.1.10000" },
-						-- #endif
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = 200,
-					}),
+					i(32283),	-- Design: Bright Crimson Spinel [TBC] / Design: Delicate Crimson Spinel [CATA+]
 					-- #endif
 					-- #if BEFORE CATA
-					i(32309, {	-- Design: Enduring Seaspray Emerald [TBC] / Design: Regal Seaspray Emerald [CATA+]
-						["spellID"] = 39739,	-- Enduring Seaspray Emerald [TBC] / Regal Seaspray Emerald [CATA+]
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = 200,
-					}),
+					i(32309),	-- Design: Enduring Seaspray Emerald [TBC] / Design: Regal Seaspray Emerald [CATA+]
 					-- #endif
-					i(35765, {	-- Design: Forceful Seaspray Emerald
-						["spellID"] = 47053,	-- Forceful Seaspray Emerald
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = 200,
-					}),
+					i(35765),	-- Design: Forceful Seaspray Emerald
 					-- #if BEFORE CATA
-					i(32293, {	-- Design: Gleaming Lionseye [TBC] / Design: Smooth Lionseye [CATA+]
-						-- #if BEFORE CATA
-						["spellID"] = 39722,	-- Gleaming Lionseye [TBC]
-						-- #else
-						["spellID"] = 39720,	-- Smooth Lionseye [CATA+]
-						["timeline"] = { "removed 4.0.1.10000" },
-						-- #endif
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = 200,
-					}),
+					i(32293),	-- Design: Gleaming Lionseye [TBC] / Design: Smooth Lionseye [CATA+]
 					-- #endif
-					i(32306, {	-- Design: Glinting Pyrestone [TBC] / Design: Glinting Shadowsong Amethyst [CATA+]
-						["spellID"] = 39736,	-- Glinting Pyrestone [TBC] / Glinting Shadowsong Amethyst [CATA+]
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = 200,
-					}),
-					i(32300, {	-- Design: Infused Shadowsong Amethyst [TBC] / Design: Glinting Shadowsong Amethyst [CATA+]
-						-- #if BEFORE CATA
-						["spellID"] = 39730,	-- Infused Shadowsong Amethyst [TBC]
-						-- #else
-						["spellID"] = 39736,	-- Glinting Shadowsong Amethyst [CATA+]
-						["timeline"] = { "removed 4.0.1.10000" },
-						-- #endif
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = 200,
-					}),
-					i(32312, {	-- Design: Jagged Seaspray Emerald
-						["spellID"] = 39742,	-- Jagged Seaspray Emerald
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = 200,
-					}),
+					i(32306),	-- Design: Glinting Pyrestone [TBC] / Design: Glinting Shadowsong Amethyst [CATA+]
 					-- #if BEFORE CATA
-					i(32305, {	-- Design: Luminous Pyrestone [TBC] / Design: Reckless Pyrestone [CATA+]
-						-- #if BEFORE CATA
-						["spellID"] = 39735,	-- Luminous Pyrestone [TBC]
-						-- #else
-						["spellID"] = 47055,	-- Reckless Pyrestone [CATA+]
-						["timeline"] = { "removed 4.0.1.10000" },
-						-- #endif
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = 200,
-					}),
+					i(32301),	-- Design: Glowing Shadowsong Amethyst [TBC] / Design: Timeless Shadowsong Amethyst [CATA+]
+					-- #endif
+					i(32300),	-- Design: Infused Shadowsong Amethyst [TBC] / Design: Glinting Shadowsong Amethyst [CATA+]
+					i(32312),	-- Design: Jagged Seaspray Emerald
+					-- #if BEFORE CATA
+					i(32305),	-- Design: Luminous Pyrestone [TBC] / Design: Reckless Pyrestone [CATA+]
 					-- #endif
 					-- #if BEFORE CATA
-					i(32288, {	-- Design: Lustrous Empyrean Sapphire [TBC] / Design: Sparkling Empyrean Sapphire [CATA+]
-						-- #if BEFORE CATA
-						["spellID"] = 39717,	-- Lustrous Empyrean Sapphire [TBC]
-						-- #else
-						["spellID"] = 39716,	-- Sparkling Empyrean Sapphire [CATA+]
-						["timeline"] = { "removed 4.0.1.10000" },
-						-- #endif
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = 200,
-					}),
+					i(32288),	-- Design: Lustrous Empyrean Sapphire [TBC] / Design: Sparkling Empyrean Sapphire [CATA+]
 					-- #endif
-					i(32304, {	-- Design: Potent Pyrestone
-						["spellID"] = 39734,	-- Potent Pyrestone
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = 200,
-					}),
+					i(32304),	-- Design: Potent Pyrestone
 					-- #if AFTER CATA
-					i(32311, {	-- Design: Dazzling Seaspray Emerald [TBC] / Design: Purified Shadowsong Amethyst [CATA+]
-						["spellID"] = 39741,	-- Dazzling Seaspray Emerald [TBC] / Purified Shadowsong Amethyst [CATA+]
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = 200,
-					}),
+					i(32311),	-- Design: Purified Shadowsong Amethyst [CATA+] / Design: Dazzling Seaspray Emerald [TBC]
 					-- #endif
 					-- #if AFTER CATA
-					i(32302, {	-- Design: Royal Shadowsong Amethyst [TBC] / Design: Purified Shadowsong Amethyst [CATA+]
-						-- #if BEFORE CATA
-						["spellID"] = 39732,	-- Royal Shadowsong Amethyst [TBC]
-						-- #else
-						["spellID"] = 39741,	-- Purified Shadowsong Amethyst [CATA+]
-						["timeline"] = { "removed 4.0.1.10000" },
-						-- #endif
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = 200,
-					}),
+					i(32302),	-- Design: Purified Shadowsong Amethyst [CATA+] / Design: Royal Shadowsong Amethyst [TBC]
 					-- #endif
-					i(35763, {	-- Design: Quick Lionseye
-						["spellID"] = 47056,	-- Quick Lionseye
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = 200,
-					}),
-					i(32310, {	-- Design: Radiant Seaspray Emerald
-						["spellID"] = 39740,	-- Radiant Seaspray Emerald
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = 200,
-					}),
-					i(35762, {	-- Design: Reckless Pyrestone
-						["spellID"] = 47055,	-- Reckless Pyrestone
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = 200,
-					}),
+					i(35763),	-- Design: Quick Lionseye
+					i(32310),	-- Design: Radiant Seaspray Emerald
+					i(35762),	-- Design: Reckless Pyrestone
 					-- #if AFTER CATA
-					i(32305, {	-- Design: Luminous Pyrestone [TBC] / Design: Reckless Pyrestone [CATA+]
-						-- #if BEFORE CATA
-						["spellID"] = 39735,	-- Luminous Pyrestone [TBC]
-						-- #else
-						["spellID"] = 47055,	-- Reckless Pyrestone [CATA+]
-						["timeline"] = { "removed 4.0.1.10000" },
-						-- #endif
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = 200,
-					}),
+					i(32305),	-- Design: Reckless Pyrestone [CATA+] / Design: Luminous Pyrestone [TBC]
 					-- #endif
 					-- #if AFTER CATA
-					i(32309, {	-- Design: Enduring Seaspray Emerald [TBC] / Design: Regal Seaspray Emerald [CATA+]
-						["spellID"] = 39739,	-- Enduring Seaspray Emerald [TBC] / Regal Seaspray Emerald [CATA+]
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = 200,
-					}),
+					i(32309),	-- Design: Regal Seaspray Emerald [CATA+] / Design: Enduring Seaspray Emerald [TBC]
 					-- #endif
-					i(32292, {	-- Design: Rigid Lionseye [TBC] / Design: Rigid Empyrean Sapphire [CATA+]
-						["spellID"] = 39721,	-- Rigid Lionseye [TBC] / Rigid Empyrean Sapphire [CATA+]
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = 200,
-					}),
+					i(32292),	-- Design: Rigid Lionseye [TBC] / Design: Rigid Empyrean Sapphire [CATA+]
 					-- #if BEFORE CATA
-					i(32302, {	-- Design: Royal Shadowsong Amethyst [TBC] / Design: Purified Shadowsong Amethyst [CATA+]
-						-- #if BEFORE CATA
-						["spellID"] = 39732,	-- Royal Shadowsong Amethyst [TBC]
-						-- #else
-						["spellID"] = 39741,	-- Purified Shadowsong Amethyst [CATA+]
-						["timeline"] = { "removed 4.0.1.10000" },
-						-- #endif
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = 200,
-					}),
+					i(32302),	-- Design: Royal Shadowsong Amethyst [TBC] / Design: Purified Shadowsong Amethyst [CATA+]
 					-- #endif
 					-- #if BEFORE CATA
-					i(32282, {	-- Design: Runed Crimson Spinel [TBC] / Design: Brilliant Crimson Spinel [CATA+]
-						["spellID"] = 39711,	-- Runed Crimson Spinel [TBC] / Brilliant Crimson Spinel [CATA+]
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = 200,
-					}),
+					i(32282),	-- Design: Runed Crimson Spinel [TBC] / Design: Brilliant Crimson Spinel [CATA+]
 					-- #endif
 					-- #if AFTER CATA
-					i(32299, {	-- Design: Balanced Shadowsong Amethyst [TBC] / Design: Shifting Shadowsong Amethyst [CATA+]
-						-- #if BEFORE CATA
-						["spellID"] = 39729,	-- Balanced Shadowsong Amethyst [TBC]
-						-- #else
-						["spellID"] = 39728,	-- Shifting Shadowsong Amethyst [CATA+]
-						["timeline"] = { "removed 4.0.1.10000" },
-						-- #endif
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = 200,
-					}),
+					i(32299),	-- Design: Shifting Shadowsong Amethyst [CATA+] / Design: Balanced Shadowsong Amethyst [TBC]
 					-- #endif
-					i(32291, {	-- Design: Smooth Lionseye
-						["spellID"] = 39720,	-- Smooth Lionseye
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = 200,
-					}),
+					i(32291),	-- Design: Smooth Lionseye
 					-- #if AFTER CATA
-					i(32293, {	-- Design: Gleaming Lionseye [TBC] / Design: Smooth Lionseye [CATA+]
-						-- #if BEFORE CATA
-						["spellID"] = 39722,	-- Gleaming Lionseye [TBC]
-						-- #else
-						["spellID"] = 39720,	-- Smooth Lionseye [CATA+]
-						["timeline"] = { "removed 4.0.1.10000" },
-						-- #endif
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = 200,
-					}),
+					i(32293),	-- Design: Smooth Lionseye [CATA+] / Design: Gleaming Lionseye [TBC]
 					-- #endif
-					i(32286, {	-- Design: Solid Empyrean Sapphire
-						["spellID"] = 39715,	-- Solid Empyrean Sapphire
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = 200,
-					}),
-					i(32287, {	-- Design: Sparkling Empyrean Sapphire
-						["spellID"] = 39716,	-- Sparkling Empyrean Sapphire
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = 200,
-					}),
+					i(32286),	-- Design: Solid Empyrean Sapphire
+					i(32287),	-- Design: Sparkling Empyrean Sapphire
 					-- #if AFTER CATA
-					i(32288, {	-- Design: Lustrous Empyrean Sapphire [TBC] / Design: Sparkling Empyrean Sapphire [CATA+]
-						-- #if BEFORE CATA
-						["spellID"] = 39717,	-- Lustrous Empyrean Sapphire [TBC]
-						-- #else
-						["spellID"] = 39716,	-- Sparkling Empyrean Sapphire [CATA+]
-						["timeline"] = { "removed 4.0.1.10000" },
-						-- #endif
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = 200,
-					}),
+					i(32288),	-- Design: Sparkling Empyrean Sapphire [CATA+] / Design: Lustrous Empyrean Sapphire [TBC]
 					-- #endif
-					i(35764, {	-- Design: Steady Seaspray Emerald
-						["spellID"] = 47054,	-- Steady Seaspray Emerald
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = 200,
-					}),
-					i(32284, {	-- Design: Subtle Lionseye
-						["spellID"] = 39713,	-- Subtle Lionseye
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = 200,
-					}),
+					i(35764),	-- Design: Steady Seaspray Emerald
+					i(32284),	-- Design: Subtle Lionseye
 					-- #if AFTER CATA
-					i(32294, {	-- Design: Thick Lionseye [TBC] / Design: Subtle Lionseye [CATA+]
-						-- #if BEFORE CATA
-						["spellID"] = 39723,	-- Thick Lionseye [TBC]
-						-- #else
-						["spellID"] = 39713,	-- Subtle Lionseye [CATA+]
-						["timeline"] = { "removed 4.0.1.10000" },
-						-- #endif
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = 200,
-					}),
+					i(32294),	-- Design: Subtle Lionseye [CATA+] / Design: Thick Lionseye [TBC]
 					-- #endif
 					-- #if BEFORE CATA
-					i(32281, {	-- Design: Teardrop Crimson Spinel [TBC] / Design: Brilliant Crimson Spinel [CATA+]
-						-- #if BEFORE CATA
-						["spellID"] = 39710,	-- Teardrop Crimson Spinel [TBC]
-						-- #else
-						["spellID"] = 39711,	-- Brilliant Crimson Spinel [CATA+]
-						["timeline"] = { "removed 4.0.1.10000" },
-						-- #endif
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = 200,
-					}),
+					i(32281),	-- Design: Teardrop Crimson Spinel [TBC] / Design: Brilliant Crimson Spinel [CATA+]
 					-- #endif
 					-- #if BEFORE CATA
-					i(32294, {	-- Design: Thick Lionseye [TBC] / Design: Subtle Lionseye [CATA+]
-						-- #if BEFORE CATA
-						["spellID"] = 39723,	-- Thick Lionseye [TBC]
-						-- #else
-						["spellID"] = 39713,	-- Subtle Lionseye [CATA+]
-						["timeline"] = { "removed 4.0.1.10000" },
-						-- #endif
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = 200,
-					}),
+					i(32294),	-- Design: Thick Lionseye [TBC] / Design: Subtle Lionseye [CATA+]
 					-- #endif
 					-- #if AFTER CATA
-					i(32301, {	-- Design: Glowing Shadowsong Amethyst [TBC] / Design: Timeless Shadowsong Amethyst [CATA+]
-						-- #if BEFORE CATA
-						["spellID"] = 39731,	-- Glowing Shadowsong Amethyst [TBC]
-						-- #else
-						["spellID"] = 39731,	-- Timeless Shadowsong Amethyst [CATA+]
-						["timeline"] = { "removed 4.0.1.10000" },
-						-- #endif
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = 200,
-					}),
+					i(32301),	-- Design: Timeless Shadowsong Amethyst [CATA+] / Design: Glowing Shadowsong Amethyst [TBC]
 					-- #endif
 					-- #if BEFORE CATA
-					i(32308, {	-- Design: Wicked Pyrestone [TBC] / Design: Deadly Pyrestone [CATA+]
-						["spellID"] = 39738,	-- Wicked Pyrestone [TBC] / Deadly Pyrestone [CATA+]
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = 200,
-					}),
+					i(32308),	-- Design: Wicked Pyrestone [TBC] / Design: Deadly Pyrestone [CATA+]
 					-- #endif
 				}),
 				n(23381, {	-- Tydormu
@@ -1106,65 +847,19 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 					17968,	-- Archimonde
 				},
 				["groups"] = {
-					i(32285, {	-- Design: Flashing Crimson Spinel
-						["spellID"] = 39714,	-- Flashing Crimson Spinel
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = 200,
-					}),
+					i(32285),	-- Design: Flashing Crimson Spinel
 					-- #if BEFORE CATA
-					i(32296, {	-- Design: Great Lionseye [TBC] / Design: Rigid Empyrean Sapphire [CATA+]
-						-- #if BEFORE CATA
-						["spellID"] = 39725,	-- Great Lionseye [TBC]
-						-- #else
-						["spellID"] = 39721,	-- Rigid Empyrean Sapphire [CATA+]
-						["timeline"] = { "removed 4.0.1.10000" },
-						-- #endif
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = 200,
-					}),
+					i(32296),	-- Design: Great Lionseye [TBC] / Design: Rigid Empyrean Sapphire [CATA+]
 					-- #endif
-					i(32303, {	-- Design: Inscribed Pyrestone
-						["spellID"] = 39733,	-- Inscribed Pyrestone
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = 200,
-					}),
-					i(32295, {	-- Design: Mystic Lionseye
-						["spellID"] = 39724,	-- Mystic Lionseye
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = 200,
-					}),
+					i(32303),	-- Design: Inscribed Pyrestone
+					i(32295),	-- Design: Mystic Lionseye
 					-- #if AFTER CATA
-					i(32296, {	-- Design: Great Lionseye [TBC] / Design: Rigid Empyrean Sapphire [CATA+]
-						-- #if BEFORE CATA
-						["spellID"] = 39725,	-- Great Lionseye [TBC]
-						-- #else
-						["spellID"] = 39721,	-- Rigid Empyrean Sapphire [CATA+]
-						["timeline"] = { "removed 4.0.1.10000" },
-						-- #endif
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = 200,
-					}),
+					i(32296),	-- Design: Rigid Empyrean Sapphire [CATA+] / Design: Great Lionseye [TBC]
 					-- #endif
-					i(32298, {	-- Design: Shifting Shadowsong Amethyst
-						["spellID"] = 39728,	-- Shifting Shadowsong Amethyst
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = 200,
-					}),
-					i(32297, {	-- Design: Sovereign Shadowsong Amethyst
-						["spellID"] = 39727,	-- Sovereign Shadowsong Amethyst
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = 200,
-					}),
-					i(32289, {	-- Design: Stormy Empyrean Sapphire
-						["spellID"] = 39718,	-- Stormy Empyrean Sapphire
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = 200,
-					}),
-					i(32307, {	-- Design: Veiled Shadowsong Amethyst
-						["spellID"] = 39737,	-- Veiled Shadowsong Amethyst
-						["requireSkill"] = JEWELCRAFTING,
-						["f"] = 200,
-					}),
+					i(32298),	-- Design: Shifting Shadowsong Amethyst
+					i(32297),	-- Design: Sovereign Shadowsong Amethyst
+					i(32289),	-- Design: Stormy Empyrean Sapphire
+					i(32307),	-- Design: Veiled Shadowsong Amethyst
 				},
 			}),
 			n(ZONEDROPS, {

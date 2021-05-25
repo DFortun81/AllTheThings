@@ -14,36 +14,12 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_FIVE, {	-- Burning Crusade
 		["lvl"] = lvlsquish(68, 30, 68),	-- Level 68s could zone in without any attunements. TODO: Check this.
 		["groups"] = {
 			n(ZONEDROPS, {
-				i(35202, {	-- Design: Amulet of Flowing Life
-					["spellID"] = 46126,	-- Amulet of Flowing Life
-					["requireSkill"] = JEWELCRAFTING,
-					["f"] = 200,
-				}),
-				i(35200, {	-- Design: Hard Khorium Band
-					["spellID"] = 46124,	-- Hard Khorium Band
-					["requireSkill"] = JEWELCRAFTING,
-					["f"] = 200,
-				}),
-				i(35203, {	-- Design: Hard Khorium Choker
-					["spellID"] = 46127,	-- Hard Khorium Choker
-					["requireSkill"] = JEWELCRAFTING,
-					["f"] = 200,
-				}),
-				i(35198, {	-- Design: Loop of Forged Power
-					["spellID"] = 46122,	-- Loop of Forged Power
-					["requireSkill"] = JEWELCRAFTING,
-					["f"] = 200,
-				}),
-				i(35201, {	-- Design: Pendant of Sunfire
-					["spellID"] = 46125,	-- Pendant of Sunfire
-					["requireSkill"] = JEWELCRAFTING,
-					["f"] = 200,
-				}),
-				i(35199, {	-- Design: Ring of Flowing Life
-					["spellID"] = 46123,	-- Ring of Flowing Life
-					["requireSkill"] = JEWELCRAFTING,
-					["f"] = 200,
-				}),
+				i(35202),	-- Design: Amulet of Flowing Life
+				i(35200),	-- Design: Hard Khorium Band
+				i(35203),	-- Design: Hard Khorium Choker
+				i(35198),	-- Design: Loop of Forged Power
+				i(35201),	-- Design: Pendant of Sunfire
+				i(35199),	-- Design: Ring of Flowing Life
 				i(35218, {	-- Pattern: Carapace of Sun and Shadow
 					["spellID"] = 46138,	-- Carapace of Sun and Shadow
 					["requireSkill"] = LEATHERWORKING,

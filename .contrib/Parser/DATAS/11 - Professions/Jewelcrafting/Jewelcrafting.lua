@@ -316,7 +316,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Reagents",
 			["categoryID"] = 868,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Mercurial Adamantite",
 					["recipeID"] = 38068
@@ -326,7 +326,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Blue Gems",
 			["categoryID"] = 857,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Falling Star",
 					["recipeID"] = 42590
@@ -384,7 +384,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Green Gems",
 			["categoryID"] = 858,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Forceful Seaspray Emerald",
 					["recipeID"] = 47053
@@ -442,7 +442,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Orange Gems",
 			["categoryID"] = 859,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Deadly Flame Spessarite",
 					["recipeID"] = 39467
@@ -496,7 +496,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Purple Gems",
 			["categoryID"] = 860,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Glinting Nightseye",
 					["recipeID"] = 31109
@@ -582,7 +582,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Red Gems",
 			["categoryID"] = 861,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Bold Blood Garnet",
 					["recipeID"] = 28905
@@ -644,7 +644,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Yellow Gems",
 			["categoryID"] = 862,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Blood of Amber",
 					["recipeID"] = 42592
@@ -702,7 +702,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Meta Gems",
 			["categoryID"] = 863,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Bracing Earthstorm Diamond",
 					["recipeID"] = 32867
@@ -764,7 +764,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Necklaces",
 			["categoryID"] = 864,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Amulet of Flowing Life",
 					["recipeID"] = 46126
@@ -830,7 +830,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Rings",
 			["categoryID"] = 865,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Arcane Khorium Band",
 					["recipeID"] = 31057
@@ -924,7 +924,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Crowns",
 			["categoryID"] = 869,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Circlet of Arcane Might",
 					["recipeID"] = 31078
@@ -942,7 +942,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Trinkets",
 			["categoryID"] = 866,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Figurine - Crimson Serpent",
 					["recipeID"] = 46777
@@ -988,7 +988,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Prisms & Statues",
 			["categoryID"] = 867,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Brilliant Glass",
 					["recipeID"] = 47280
@@ -1005,7 +1005,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Blue Gems",
 			["categoryID"] = 846,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Rigid Chalcedony",
 					["recipeID"] = 53854
@@ -1075,7 +1075,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Green Gems",
 			["categoryID"] = 847,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Energized Dark Jade",
 					["recipeID"] = 53925
@@ -1213,7 +1213,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Orange Gems",
 			["categoryID"] = 848,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Champion's Ametrine",
 					["recipeID"] = 66579
@@ -1363,7 +1363,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Purple Gems",
 			["categoryID"] = 849,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Accurate Dreadstone",
 					["recipeID"] = 66576
@@ -1501,7 +1501,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Red Gems",
 			["categoryID"] = 850,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Bold Bloodstone",
 					["recipeID"] = 53831
@@ -1587,7 +1587,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Yellow Gems",
 			["categoryID"] = 851,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Mystic Autumn's Glow",
 					["recipeID"] = 53960
@@ -1657,7 +1657,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Meta Gems",
 			["categoryID"] = 852,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Austere Earthsiege Diamond",
 					["recipeID"] = 55401
@@ -1743,7 +1743,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Prismatic Gems",
 			["categoryID"] = 855,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Enchanted Pearl",
 					["recipeID"] = 56530
@@ -1761,7 +1761,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Necklaces",
 			["categoryID"] = 853,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Blood Sun Necklace",
 					["recipeID"] = 56196
@@ -1803,7 +1803,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Rings",
 			["categoryID"] = 854,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Bloodstone Band",
 					["recipeID"] = 56193
@@ -1889,7 +1889,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Pets and Projects",
 			["categoryID"] = 856,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Dark Jade Focusing Lens",
 					["recipeID"] = 56205
@@ -1933,7 +1933,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Blue Gems",
 			["categoryID"] = 834,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Rigid Chimera's Eye",
 					["recipeID"] = 73404
@@ -2003,7 +2003,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Green Gems",
 			["categoryID"] = 835,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Balanced Elven Peridot",
 					["recipeID"] = 101749
@@ -2165,7 +2165,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Orange Gems",
 			["categoryID"] = 836,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Adept Ember Topaz",
 					["recipeID"] = 73371
@@ -2375,7 +2375,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Purple Gems",
 			["categoryID"] = 837,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Accurate Demonseye",
 					["recipeID"] = 73360
@@ -2517,7 +2517,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Red Gems",
 			["categoryID"] = 838,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Bold Carnelian",
 					["recipeID"] = 73222
@@ -2603,7 +2603,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Yellow Gems",
 			["categoryID"] = 839,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Fractured Alicite",
 					["recipeID"] = 73239
@@ -2689,7 +2689,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Meta Gems",
 			["categoryID"] = 840,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Agile Shadowspirit Diamond",
 					["recipeID"] = 96255
@@ -2759,7 +2759,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Necklaces",
 			["categoryID"] = 841,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Alicite Pendant",
 					["recipeID"] = 73496
@@ -2801,7 +2801,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Rings",
 			["categoryID"] = 842,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Band of Blades",
 					["recipeID"] = 73498
@@ -2847,7 +2847,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Crowns",
 			["categoryID"] = 843,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Jeweler's Amber Monocle",
 					["recipeID"] = 73627
@@ -2869,7 +2869,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Fist Weapons",
 			["categoryID"] = 844,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Carnelian Spikes",
 					["recipeID"] = 73620
@@ -2883,7 +2883,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Toys & Prisms",
 			["categoryID"] = 845,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Fire Prism",
 					["recipeID"] = 73478
@@ -2899,7 +2899,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Research",
 			["categoryID"] = 831,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Imperial Amethyst",
 					["recipeID"] = 131691
@@ -2937,7 +2937,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Blue Gems",
 			["categoryID"] = 821,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Rigid Lapis Lazuli",
 					["recipeID"] = 107617
@@ -2987,7 +2987,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Green Gems",
 			["categoryID"] = 822,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Balanced Alexandrite",
 					["recipeID"] = 107598
@@ -3137,7 +3137,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Orange Gems",
 			["categoryID"] = 823,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Adept Tiger Opal",
 					["recipeID"] = 107645
@@ -3331,7 +3331,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Purple Gems",
 			["categoryID"] = 824,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Accurate Imperial Amethyst",
 					["recipeID"] = 107693
@@ -3461,7 +3461,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Red Gems",
 			["categoryID"] = 825,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Bold Pandarian Garnet",
 					["recipeID"] = 107622
@@ -3527,7 +3527,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Yellow Gems",
 			["categoryID"] = 833,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Fractured Serpent's Eye",
 					["recipeID"] = 122684
@@ -3589,7 +3589,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Meta Gems",
 			["categoryID"] = 827,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Agile Primal Diamond",
 					["recipeID"] = 107753
@@ -3655,7 +3655,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Necklaces",
 			["categoryID"] = 828,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Golembreaker Amulet",
 					["recipeID"] = 122670
@@ -3685,7 +3685,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Rings",
 			["categoryID"] = 829,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Band of Blood",
 					["recipeID"] = 122668
@@ -3715,7 +3715,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Mounts",
 			["categoryID"] = 830,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Jade Panther",
 					["recipeID"] = 121844
@@ -3741,7 +3741,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Toys & Pets",
 			["categoryID"] = 832,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Jade Owl",
 					["recipeID"] = 131897
@@ -3761,7 +3761,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Reagents and Research",
 			["categoryID"] = 374,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Primal Gemcutting",
 					["recipeID"] = 182127
@@ -3787,7 +3787,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Jewelry Enhancers",
 			["categoryID"] = 375,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Mighty Taladite Amplifier",
 					["timeline"] = { "removed 9.0.1.10000" },
@@ -3812,7 +3812,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Jewelry",
 			["categoryID"] = 376,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Glowing Blackrock Band",
 					["recipeID"] = 170710
@@ -3878,7 +3878,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Gems",
 			["categoryID"] = 377,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Critical Strike Taladite",
 					["recipeID"] = 170719
@@ -3944,7 +3944,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Other",
 			["categoryID"] = 378,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Prismatic Focusing Lens",
 					["recipeID"] = 170732
@@ -3960,7 +3960,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Training",
 			["categoryID"] = 536,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Empyrial Circlet",
 					["recipeID"] = 248937,
@@ -3994,7 +3994,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Rings",
 			["categoryID"] = 465,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Azsunite Loop",
 					["nextRecipeID"] = 195904,
@@ -4128,7 +4128,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Necklaces",
 			["categoryID"] = 507,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Ancient Maelstrom Amulet",
 					["nextRecipeID"] = 195919,
@@ -4390,7 +4390,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Gems",
 			["categoryID"] = 466,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Deadly Deep Amber",
 					["recipeID"] = 195848
@@ -4460,7 +4460,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Crowns",
 			["categoryID"] = 535,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Empyrial Cosmic Crown",
 					["nextRecipeID"] = 247754,
@@ -4530,7 +4530,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Other",
 			["categoryID"] = 467,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Chatterstone",
 					["recipeID"] = 195883
@@ -4548,7 +4548,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Mass Prospecting",
 			["categoryID"] = 505,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Mass Prospect Empyrium",
 					["recipeID"] = 247761
@@ -4580,7 +4580,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Gems",
 			["categoryID"] = 817,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Deadly Amberblaze",
 					["recipeID"] = 256696
@@ -4670,7 +4670,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Mass Prospecting",
 			["categoryID"] = 818,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Mass Prospect Monelite",
 					["recipeID"] = 256611
@@ -4692,7 +4692,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Rings",
 			["categoryID"] = 819,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Amberblaze Loop",
 					["nextRecipeID"] = 256514,
@@ -4826,7 +4826,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Weapons",
 			["categoryID"] = 820,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Honorable Combatant's Intuitive Staff",
 					["nextRecipeID"] = 269735,
@@ -4936,7 +4936,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Conversions",
 			["categoryID"] = 1243,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Aqueous Recalibration",
 					["recipeID"] = 287272
@@ -4950,7 +4950,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Focus",
 			["categoryID"] = 1307,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Void Focus",
 					["recipeID"] = 307219
@@ -4960,7 +4960,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Follower Equipment",
 			["categoryID"] = 1233,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Kaleidoscopic Lens",
 					["recipeID"] = 278419
@@ -4970,7 +4970,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Tool of the Trade",
 			["categoryID"] = 1278,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Jewelhammer's Focus",
 					["recipeID"] = 256703
@@ -5008,7 +5008,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Quest Recipes",
 			["categoryID"] = 1530,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Brilliant Bauble",
 					["recipeID"] = 338248,
@@ -5098,7 +5098,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Gems",
 			["categoryID"] = 1419,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Deadly Jewel Cluster",
 					["recipeID"] = 311863
@@ -5144,7 +5144,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Mass Prospecting",
 			["categoryID"] = 1420,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Mass Prospect Elethium",
 					["recipeID"] = 311953
@@ -5174,7 +5174,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Optional Reagents",
 			["categoryID"] = 1421,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Crafter's Mark I",
 					["recipeID"] = 343697
@@ -5192,7 +5192,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Necklaces",
 			["categoryID"] = 1422,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Deadly Laestrite Choker",
 					["recipeID"] = 311902
@@ -5230,7 +5230,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Rings",
 			["categoryID"] = 1424,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Deadly Laestrite Band",
 					["recipeID"] = 311880
@@ -5268,7 +5268,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Specialized Jewelry",
 			["categoryID"] = 1484,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Shadowghast Necklace",
 					["recipeID"] = 332040
@@ -5306,7 +5306,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 		{
 			["name"] = "Hats",
 			["categoryID"] = 1520,
-			["g"] = {
+			["groups"] = {
 				{
 					["name"] = "Crown of the Righteous",
 					["recipeID"] = 334548
@@ -5425,6 +5425,9 @@ end
 -- #if AFTER TBC
 -- Recipes introduced with Burning Crusade
 itemrecipe("Design: Amulet of Flowing Life", 35202, 46126);
+itemrecipe("Design: Amulet of the Moon", 20854, 25339);
+itemrecipe("Design: Black Pearl Panther", 21941, 26875);
+itemrecipe("Design: Blazing Citrine Ring", 20973, 25617);
 itemrecipe("Design: Blazing Eternium Band", 24165, 31061);
 itemrecipe("Design: Bold Crimson Spinel", 32274, 39705);
 itemrecipe("Design: Bold Living Ruby", 24193, 31084);
@@ -5432,6 +5435,8 @@ itemrecipe("Design: Bracing Earthstorm Diamond", 25903, 32867);
 itemrecipe("Design: Braided Eternium Chain", 24168, 31070);
 itemrecipe("Design: Brutal Earthstorm Diamond", 25906, 32869);
 itemrecipe("Design: Chain of the Twilight Owl", 24171, 31076);
+itemrecipe("Design: Dawnstone Crab - Alliance", 24180, 31080);
+itemrecipe("Design: Dawnstone Crab - Horde", 31358, 31080);
 itemrecipe("Design: Delicate Crimson Spinel", 32277, 39706);
 itemrecipe("Design: Delicate Eternium Ring", 24164, 31060);
 itemrecipe("Design: Delicate Living Ruby", 24194, 31085);
@@ -5444,6 +5449,8 @@ itemrecipe("Design: Forceful Seaspray Emerald", 35765, 47053);
 itemrecipe("Design: Hard Khorium Band", 35200, 46124);
 itemrecipe("Design: Hard Khorium Choker", 35203, 46127);
 itemrecipe("Design: Heavy Felsteel Ring", 24163, 31058);
+itemrecipe("Design: Heavy Iron Knuckles", 20971, 25612);
+itemrecipe("Design: Heavy Golden Necklace of Battle", 20856, 25320);
 itemrecipe("Design: Inscribed Noble Topaz", 24213, 31106);
 itemrecipe("Design: Inscribed Pyrestone", 32303, 39733);
 itemrecipe("Design: Jagged Seaspray Emerald", 32312, 39742);
@@ -5452,6 +5459,7 @@ itemrecipe("Design: Living Ruby Pendant", 24167, 31068);
 itemrecipe("Design: Loop of Forged Power", 35198, 46122);
 itemrecipe("Design: Mystic Lionseye", 32295, 39724);
 itemrecipe("Design: Mystical Skyfire Diamond", 25909, 32872);
+itemrecipe("Design: Opal Necklace of Impact", 21948, 26897);
 itemrecipe("Design: Pendant of Sunfire", 35201, 46125);
 itemrecipe("Design: Potent Noble Topaz", 24214, 31107);
 itemrecipe("Design: Potent Pyrestone", 32304, 39734);
@@ -5461,6 +5469,7 @@ itemrecipe("Design: Radiant Seaspray Emerald", 32310, 39740);
 itemrecipe("Design: Radiant Talasite", 24218, 31111);
 itemrecipe("Design: Reckless Pyrestone", 35762, 47055);
 itemrecipe("Design: Ring of Flowing Life", 35199, 46123);
+itemrecipe("Design: Ruby Crown of Restoration", 21942, 26878);
 itemrecipe("Design: Shifting Nightseye", 24210, 31103);
 itemrecipe("Design: Shifting Shadowsong Amethyst", 32298, 39728);
 itemrecipe("Design: Smooth Dawnstone", 24204, 31097);
@@ -5477,8 +5486,11 @@ itemrecipe("Design: Stormy Empyrean Sapphire", 32289, 39718);
 itemrecipe("Design: Stormy Star of Elune", 24202, 31095);
 itemrecipe("Design: Subtle Lionseye", 32284, 39713);
 itemrecipe("Design: Tenacious Earthstorm Diamond", 25905, 32868);
+itemrecipe("Design: The Frozen Eye", 31401, 38503);
+itemrecipe("Design: The Jade Eye", 20975, 25619);
 itemrecipe("Design: Thick Felsteel Necklace", 24166, 31067);
 itemrecipe("Design: Thundering Skyfire Diamond", 32411, 39963);
+itemrecipe("Design: Truesilver Crab", 21943, 26881);
 itemrecipe("Design: Veiled Shadowsong Amethyst", 32307, 39737);
 -- itemrecipe("", ITEMID, SPELLID);
 -- itemrecipe("", ITEMID, SPELLID);
@@ -5487,6 +5499,8 @@ itemrecipe("Design: Veiled Shadowsong Amethyst", 32307, 39737);
 -- Recipes Renamed with Cata
 itemrecipe({"Design: Dazzling Seaspray Emerald [TBC]", "Design: Purified Shadowsong Amethyst [CATA+]"}, 32311, 39741);
 itemrecipe({"Design: Dazzling Talasite [TBC]", "Design: Purified Nightseye [CATA+]"}, 24219, 31112);
+itemrecipe({"Design: Enduring Deep Peridot [TBC - Alliance]", "Design: Regal Deep Peridot [CATA+ - Alliance]"}, 23142, 28918);
+itemrecipe({"Design: Enduring Deep Peridot [TBC - Horde]", "Design: Regal Deep Peridot [CATA+ - Horde]"}, 31359, 28918);
 itemrecipe({"Design: Enduring Seaspray Emerald [TBC]", "Design: Regal Seaspray Emerald [CATA+]"}, 32309, 39739);
 itemrecipe({"Design: Glinting Noble Topaz [TBC]", "Design: Glinting Nightseye [CATA+]"}, 24216, 31109);
 itemrecipe({"Design: Glinting Pyrestone [TBC]", "Design: Glinting Shadowsong Amethyst [CATA+]"}, 32306, 39736);
@@ -5502,6 +5516,7 @@ itemrecipe({"Design: Wicked Noble Topaz [TBC]", "Design: Deadly Noble Topaz [CAT
 itemrecipe({"Design: Wicked Pyrestone [TBC]", "Design: Deadly Pyrestone [CATA+]"}, 32308, 39738);
 -- itemrecipe({" [TBC]", " [CATA+]"}, ITEMID, SPELLID);
 -- itemrecipe({" [TBC]", " [CATA+]"}, ITEMID, SPELLID);
+-- itemrecipe({" [TBC]", " [CATA+]"}, ITEMID, SPELLID);
 
 -- Recipes that got new Spell IDs with Cata?!
 itemrecipe({"Design: Enduring Talasite [TBC]", "Design: Regal Talasite [CATA+]"}, 24217, 31110, 46803);
@@ -5511,7 +5526,7 @@ itemrecipe({"Design: Balanced Nightseye [TBC]", "Design: Shifting Nightseye [CAT
 itemrecipe({"Design: Balanced Shadowsong Amethyst [TBC]", "Design: Shifting Shadowsong Amethyst [CATA+]"}, 32299, 39729, 39728, REMOVED_WITH_CATA);
 itemrecipe({"Design: Bright Crimson Spinel [TBC]", "Design: Delicate Crimson Spinel [CATA+]"}, 32283, 39712, 39706, REMOVED_WITH_CATA);
 itemrecipe({"Design: Bright Living Ruby [TBC]", "Design: Delicate Living Ruby [CATA+]"}, 24192, 31089, 31085, REMOVED_WITH_CATA);
-itemrecipe({"Design: Bright Living Ruby [TBC]", "Design: Delicate Living Ruby [CATA+]"}, 35306, 31085, 31089, REMOVED_WITH_CATA);
+itemrecipe({"Design: Bright Living Ruby [TBC]", "Design: Delicate Living Ruby [CATA+]"}, 35306, 31089, 31085, REMOVED_WITH_CATA);
 itemrecipe({"Design: Brilliant Dawnstone [TBC]", "Design: Brilliant Living Ruby [CATA+]"}, 24203, 31088, 31096, REMOVED_WITH_CATA);
 itemrecipe({"Design: Brilliant Lionseye [TBC]", "Design: Brilliant Crimson Spinel [CATA+]"}, 32290, 39719, 39711, REMOVED_WITH_CATA);
 itemrecipe({"Design: Gleaming Dawnstone [TBC]", "Design: Smooth Dawnstone [CATA+]"}, 24206, 31099, 31097, REMOVED_WITH_CATA);
@@ -5529,13 +5544,645 @@ itemrecipe({"Design: Royal Shadowsong Amethyst [TBC]", "Design: Purified Shadows
 itemrecipe({"Design: Teardrop Crimson Spinel [TBC]", "Design: Brilliant Crimson Spinel [CATA+]"}, 32281, 39710, 39711, REMOVED_WITH_CATA);
 itemrecipe({"Design: Thick Dawnstone [TBC]", "Design: Subtle Dawnstone [CATA+]"}, 24207, 31100, 31090, REMOVED_WITH_CATA);
 itemrecipe({"Design: Thick Lionseye [TBC]", "Design: Subtle Lionseye [CATA+]"}, 32294, 39723, 39713, REMOVED_WITH_CATA);
+
+-- Recipes that were only removed as a Recipe Item in Cata, but still available from a trainer? Cata was a god damned mystery.
+itemrecipe({"Design: Bright Blood Garnet [TBC]", "Design: Delicate Blood Garnet [CATA+]"}, 28596, 34590, 34590, REMOVED_WITH_CATA);
+itemrecipe({"Design: Bold Blood Garnet [TBC]", "Design: Bold Blood Garnet [CATA+]"}, 23131, 28905, 28905, REMOVED_WITH_CATA);
+itemrecipe({"Design: Brilliant Golden Draenite [TBC]", "Design: Brilliant Blood Garnet [CATA+]"}, 23148, 28938, 28903, REMOVED_WITH_CATA);
+itemrecipe({"Design: Glinting Flame Spessarite [TBC]", "Design: Glinting Shadow Draenite [CATA+]"}, 23137, 28914, 28914, REMOVED_WITH_CATA);
+itemrecipe({"Design: Inscribed Flame Spessarite [TBC]", "Design: Inscribed Flame Spessarite [CATA+]"}, 23135, 28910, 28910, REMOVED_WITH_CATA);
+itemrecipe({"Design: Jagged Deep Peridot [TBC]", "Design: Jagged Deep Peridot [CATA+]"}, 23141, 28917, 28917, REMOVED_WITH_CATA);
+itemrecipe({"Design: Radiant Deep Peridot [TBC]", "Design: Radiant Deep Peridot [CATA+]"}, 23140, 28916, 28916, REMOVED_WITH_CATA);
+itemrecipe({"Design: Rigid Golden Draenite [TBC]", "Design: Rigid Azure Moonstone [CATA+]"}, 23151, 28948, 28948, REMOVED_WITH_CATA);
+itemrecipe({"Design: Smooth Golden Draenite [TBC]", "Design: Smooth Golden Draenite [CATA+]"}, 28291, 34069, 28944, REMOVED_WITH_CATA);
+itemrecipe({"Design: Solid Azure Moonstone [TBC]", "Design: Solid Azure Moonstone [CATA+]"}, 23152, 28950, 28950, REMOVED_WITH_CATA);
+itemrecipe({"Design: Sovereign Shadow Draenite [TBC]", "Design: Sovereign Shadow Draenite [CATA+]"}, 23147, 28936, 28936, REMOVED_WITH_CATA);
+itemrecipe({"Design: Sparkling Azure Moonstone [TBC]", "Design: Sparkling Azure Moonstone [CATA+]"}, 23153, 28953, 28953, REMOVED_WITH_CATA);
+itemrecipe({"Design: Teardrop Blood Garnet [TBC]", "Design: Brilliant Blood Garnet [CATA+]"}, 23130, 28903, 28903, REMOVED_WITH_CATA);
+itemrecipe({"Design: Glowing Shadow Draenite [TBC]", "Design: Timeless Shadow Draenite [CATA+]"}, 23144, 28925, 28925, REMOVED_WITH_CATA);
+
 -- itemrecipe({" [TBC]", " [CATA+]"}, ITEMID, SPELLID, AFTERCATA, REMOVED_WITH_CATA);
 -- itemrecipe({" [TBC]", " [CATA+]"}, ITEMID, SPELLID, AFTERCATA, REMOVED_WITH_CATA);
 -- itemrecipe({" [TBC]", " [CATA+]"}, ITEMID, SPELLID, AFTERCATA, REMOVED_WITH_CATA);
+
+
+--[[
+i(24162, {	-- Design: Arcane Khorium Band
+	["cr"] = 18866,  -- Mageslayer
+}),
+i(34689, {	-- Design: Chaotic Skyfire Diamond
+	["crs"] = { 19768 },  -- Coilskar Siren
+}),
+i(24158, {  -- Design: Khorium Band of Shadows
+	["crs"] = { 19826 },  -- Dark Conclave Shadowmancer
+}),
+i(24183),	-- Design: Nightseye Panther
+i(31402),	-- Design: The Natural Ward
+i(24208, {	-- Design: Mystic Dawnstone
+	["isLimited"] = true,
+}),
+i(33783, {	-- Design: Steady Talasite
+	["cost"] = { { "i", 26044, 4 }, },	-- 4x Halaa Research Token
+}),
+i(33156),	-- Design: Crimson Sun
+i(23134),	-- Design: Delicate Blood Garnet
+i(33305),	-- Design: Don Julio's Heart
+i(24178),	-- Design: Pendant of the Null Rune
+i(23136),	-- Design: Reckless Flame Spessarite
+i(33622),	-- Design: Relentless Earthstorm Diamond
+i(32412, {	-- Design: Relentless Earthstorm Diamond
+	["spellID"] = 0,	-- This is now available via 33622, need to delink the old plans from the recipe
+	["u"] = REMOVED_FROM_GAME,
+}),
+i(23146),	-- Design: Shifting Shadow Draenite
+i(31871, {	-- Design: Shifting Shadow Draenite
+	["spellID"] = 0,	-- This is now available via 23146, need to delink the old plans from the recipe
+	["u"] = REMOVED_FROM_GAME,
+}),
+i(31872, {	-- Design: Shifting Shadow Draenite
+	["spellID"] = 0,	-- This is now available via 23146, need to delink the old plans from the recipe
+	["u"] = REMOVED_FROM_GAME,
+}),
+i(23155),	-- Design: Sparkling Azure Moonstone
+i(23150),	-- Design: Subtle Golden Draenite
+i(25908),	-- Design: Swift Skyfire Diamond
+
+
+i(31874, {	-- Design: Deadly Flame Spessarite
+
+}),
+i(24161, {	-- Design: Khorium Band of Leaves
+	["cr"] = 19984,	-- Vekh'nir Dreadhawk
+}),
+i(31870, {	-- Design: Great Golden Draenite [Before 4.0.1] / Design: Rigid Azure Moonstone [After 4.0.1]
+	-- #if TBC
+	["recipeID"] = 39451,	-- Great Golden Draenite
+	-- #else
+	["recipeID"] = 28948,	-- Rigid Azure Moonstone
+	-- #endif
+	["timeline"] = {
+		"added 2.2.0.7272",
+	},
+}),
+i(31873, {	-- Design: Veiled Shadow Draenite
+	
+}),
+
+i(24165),	-- Design: Blazing Eternium Band
+i(24193),	-- Design: Bold Living Ruby
+i(24168),	-- Design: Braided Eternium Chain
+-- #if BEFORE CATA
+i(24192),	-- Design: Bright Living Ruby [TBC] / Design: Delicate Living Ruby [CATA+]
+-- #endif
+-- #if BEFORE CATA
+i(35306),	-- Design: Bright Living Ruby [TBC] / Design: Delicate Living Ruby [CATA+]
+-- #endif
+-- #if BEFORE CATA
+i(24203),	-- Design: Brilliant Dawnstone [TBC] / Design: Brilliant Living Ruby [CATA+]
+-- #endif
+-- #if AFTER CATA
+i(24196),	-- Design: Brilliant Living Ruby [CATA+] / Design: Runed Living Ruby [TBC]
+-- #endif
+-- #if AFTER CATA
+i(24203),	-- Design: Brilliant Dawnstone [TBC] / Design: Brilliant Living Ruby [CATA+]
+-- #endif
+i(25906),	-- Design: Brutal Earthstorm Diamond
+i(24171),	-- Design: Chain of the Twilight Owl
+-- #if AFTER CATA
+i(31879),	-- Design: Deadly Noble Topaz [CATA+] / Design: Wicked Noble Topaz [TBC]
+-- #endif
+i(24164),	-- Design: Delicate Eternium Ring
+i(24194),	-- Design: Delicate Living Ruby
+-- #if AFTER CATA
+i(24192),	-- Design: Delicate Living Ruby [CATA+] / Design: Bright Living Ruby [TBC]
+-- #endif
+-- #if AFTER CATA
+i(35306),	-- Design: Delicate Living Ruby [CATA+] / Design: Bright Living Ruby [TBC]
+-- #endif
+i(25907),	-- Design: Destructive Skyfire Diamond
+i(24170),	-- Design: Embrace of the Dawn
+i(24169),	-- Design: Eye of the Night
+i(24198),	-- Design: Flashing Living Ruby
+i(24216),	-- Design: Glinting Nightseye
+i(31877, {	-- Design: Glinting Nightseye
+	["spellID"] = 0,	-- This is now available via 24216, need to delink the old plans from the recipe
+	["u"] = REMOVED_FROM_GAME,
+}),
+i(24163),	-- Design: Heavy Felsteel Ring
+i(24213),	-- Design: Inscribed Noble Topaz
+i(24220),	-- Design: Jagged Talasite
+i(24167),	-- Design: Living Ruby Pendant
+i(25909),	-- Design: Mystical Skyfire Diamond
+i(24214),	-- Design: Potent Noble Topaz
+i(24219),	-- Design: Purified Nightseye
+i(24212, {	-- Design: Purified Nightseye
+	["spellID"] = 0,	-- This is now available via 24219, need to delink the old plans from the recipe
+	["u"] = REMOVED_FROM_GAME,
+}),
+i(24218),	-- Design: Radiant Talasite
+i(24215),	-- Design: Reckless Noble Topaz
+i(24217),	-- Design: Regal Talasite
+i(24205),	-- Design: Rigid Star of Elune (BoE version)
+i(31875, {	-- Design: Rigid Star of Elune
+	["spellID"] = 0,	-- This is now available via 24205, need to delink the old plans from the recipe
+	["u"] = REMOVED_FROM_GAME,
+}),
+-- #if BEFORE CATA
+i(24196),	-- Design: Runed Living Ruby [TBC] / Design: Brilliant Living Ruby [CATA+]
+-- #endif
+i(24210),	-- Design: Shifting Nightseye
+i(31876, {	-- Design: Shifting Nightseye
+	["spellID"] = 0,	-- This is now available via 24210, need to delink the old plans from the recipe
+	["u"] = REMOVED_FROM_GAME,
+}),
+i(24204),	-- Design: Smooth Dawnstone
+i(24206, {	-- Design: Smooth Dawnstone
+	["spellID"] = 0,	-- This is now available via 24204, need to delink the old plans from the recipe
+	["u"] = REMOVED_FROM_GAME,
+}),
+i(24199),	-- Design: Solid Star of Elune (BoE version)
+i(24209),	-- Design: Sovereign Nightseye
+i(24200),	-- Design: Sparkling Star of Elune
+i(24201, {	-- Design: Sparkling Star of Elune
+	["spellID"] = 0,	-- This is now available via 24200, need to delink the old plans from the recipe
+	["u"] = REMOVED_FROM_GAME,
+}),
+i(24202),	-- Design: Stormy Star of Elune
+i(23154),	-- Design: Stormy Azure Moonstone
+i(24197),	-- Design: Subtle Dawnstone
+i(24207, {	-- Design: Subtle Dawnstone
+	["spellID"] = 0,	-- This is now available via 24197, need to delink the old plans from the recipe
+	["u"] = REMOVED_FROM_GAME,
+}),
+i(25905),	-- Design: Tenacious Earthstorm Diamond
+i(24166),	-- Design: Thick Felsteel Necklace
+i(32411),	-- Design: Thundering Skyfire Diamond
+i(24211),	-- Design: Timeless Nightseye
+i(31878),	-- Design: Veiled Nightseye
+-- #if BEFORE CATA
+i(31879),	-- Design: Wicked Noble Topaz [TBC] / Design: Deadly Noble Topaz [CATA+]
+-- #endif
+
+
+-- From the Isle of QD:
+i(34667),	-- Archmage's Guile
+i(34665),	-- Bombardier's Blade
+i(34676),	-- Dawnforged Defender
+i(35505),	-- Design: Ember Skyfire Diamond
+i(35502),	-- Design: Eternal Earthstorm Diamond
+i(35697),	-- Design: Figurine - Crimson Serpent
+i(35695),	-- Design: Figurine - Empyrean Tortoise
+i(35696),	-- Design: Figurine - Khorium Boar
+i(35699),	-- Design: Figurine - Seaspray Albatross
+i(35698),	-- Design: Figurine - Shadowsong Panther
+i(35769),	-- Design: Forceful Seaspray Emerald
+i(35768),	-- Design: Quick Lionseye
+i(35767),	-- Design: Reckless Pyrestone
+i(35268, {	-- Design: Reckless Pyrestone
+	["spellID"] = 0,	-- This is now available via 35767, need to delink the old plans from the recipe
+	["u"] = REMOVED_FROM_GAME,
+}),
+i(35708),	-- Design: Regal Talasite
+i(35766),	-- Design: Steady Seaspray Emerald
+i(35244),	-- Design: Bold Crimson Spinel
+
+
+i(35248),	-- Design: Brilliant Crimson Spinel
+i(35250, {	-- Design: Brilliant Crimson Spinel
+	["spellID"] = 0,	-- This is now available via 35248, need to delink the old plans from the recipe
+	["u"] = REMOVED_FROM_GAME,
+}),
+i(35255, {	-- Design: Brilliant Crimson Spinel
+	["spellID"] = 0,	-- This is now available via 35248, need to delink the old plans from the recipe
+	["u"] = REMOVED_FROM_GAME,
+}),
+i(35271),	-- Design: Deadly Pyrestone
+i(35246),	-- Design: Delicate Crimson Spinel
+i(35245, {	-- Design: Delicate Crimson Spinel
+	["spellID"] = 0,	-- This is now available via 35246, need to delink the old plans from the recipe
+	["u"] = REMOVED_FROM_GAME,
+}),
+i(35247),	-- Design: Flashing Crimson Spinel
+i(35769),	-- Design: Forceful Seaspray Emerald
+i(35325),	-- Design: Forceful Talasite
+i(35266),	-- Design: Glinting Shadowsong Amethyst
+i(35240, {	-- Design: Glinting Shadowsong Amethyst
+	["spellID"] = 0,	-- This is now available via 35266, need to delink the old plans from the recipe
+	["u"] = REMOVED_FROM_GAME,
+}),
+i(35267),	-- Design: Inscribed Pyrestone
+i(35253),	-- Design: Jagged Seaspray Emerald
+i(35258),	-- Design: Mystic Lionseye
+i(35269),	-- Design: Potent Pyrestone
+i(35251),	-- Design: Purified Shadowsong Amethyst
+i(35241, {	-- Design: Purified Shadowsong Amethyst
+	["spellID"] = 0,	-- This is now available via 35251, need to delink the old plans from the recipe
+	["u"] = REMOVED_FROM_GAME,
+}),
+i(37504, {	-- Design: Purified Shadowsong Amethyst
+	["spellID"] = 0,	-- This is now available via 35251, need to delink the old plans from the recipe
+	["u"] = REMOVED_FROM_GAME,
+}),
+i(35322),	-- Design: Quick Dawnstone
+i(35768),	-- Design: Quick Lionseye
+i(35254),	-- Design: Radiant Seaspray Emerald
+i(35323),	-- Design: Reckless Noble Topaz
+i(35767),	-- Design: Reckless Pyrestone
+i(35268, {	-- Design: Reckless Pyrestone
+	["spellID"] = 0,	-- This is now available via 35767, need to delink the old plans from the recipe
+	["u"] = REMOVED_FROM_GAME,
+}),
+i(35252),	-- Design: Regal Seaspray Emerald
+i(35259),	-- Design: Rigid Empyrean Sapphire
+i(35257, {	-- Design: Rigid Empyrean Sapphire
+	["spellID"] = 0,	-- This is now available via 35259, need to delink the old plans from the recipe
+	["u"] = REMOVED_FROM_GAME,
+}),
+i(35242),	-- Design: Shifting Shadowsong Amethyst
+i(35238, {	-- Design: Shifting Shadowsong Amethyst
+	["spellID"] = 0,	-- This is now available via 35242, need to delink the old plans from the recipe
+	["u"] = REMOVED_FROM_GAME,
+}),
+i(35260),	-- Design: Smooth Lionseye
+i(35256, {	-- Design: Smooth Lionseye
+	["spellID"] = 0,	-- This is now available via 35260, need to delink the old plans from the recipe
+	["u"] = REMOVED_FROM_GAME,
+}),
+i(35263),	-- Design: Solid Empyrean Sapphire
+i(35243),	-- Design: Sovereign Shadowsong Amethyst
+i(35264),	-- Design: Sparkling Empyrean Sapphire
+i(35262, {	-- Design: Sparkling Empyrean Sapphire
+	["spellID"] = 0,	-- This is now available via 35262, need to delink the old plans from the recipe
+	["u"] = REMOVED_FROM_GAME,
+}),
+i(35766),	-- Design: Steady Seaspray Emerald
+i(35265),	-- Design: Stormy Empyrean Sapphire
+i(35249),	-- Design: Subtle Lionseye
+i(35261, {	-- Design: Subtle Lionseye
+	["spellID"] = 0,	-- This is now available via 35261, need to delink the old plans from the recipe
+	["u"] = REMOVED_FROM_GAME,
+}),
+i(35239),	-- Design: Timeless Shadowsong Amethyst
+i(35270),	-- Design: Veiled Shadowsong Amethyst
+
+
+
+
+-- From Shattrath... Oh god please why
+
+
+i(33157),	-- Design: Falling Star
+i(24179),	-- Design: Felsteel Boar
+i(24175),	-- Design: Pendant of Thawing
+i(23138),	-- Design: Potent Flame Spessarite
+
+i(35244),	-- Design: Bold Crimson Spinel
+i(35248),	-- Design: Brilliant Crimson Spinel
+i(35250, {	-- Design: Brilliant Crimson Spinel
+	["spellID"] = 0,	-- This is now available via 35248, need to delink the old plans from the recipe
+		["u"] = REMOVED_FROM_GAME,
+}),
+i(35255, {	-- Design: Brilliant Crimson Spinel
+	["spellID"] = 0,	-- This is now available via 35248, need to delink the old plans from the recipe
+		["u"] = REMOVED_FROM_GAME,
+}),
+i(35271),	-- Design: Deadly Pyrestone
+i(35246),	-- Design: Delicate Crimson Spinel
+i(35245, {	-- Design: Delicate Crimson Spinel
+	["spellID"] = 0,	-- This is now available via 35246, need to delink the old plans from the recipe
+		["u"] = REMOVED_FROM_GAME,
+}),
+i(35247),	-- Design: Flashing Crimson Spinel
+i(35769),	-- Design: Forceful Seaspray Emerald
+i(35325),	-- Design: Forceful Talasite
+i(35266),	-- Design: Glinting Shadowsong Amethyst
+i(35240, {	-- Design: Glinting Shadowsong Amethyst
+	["spellID"] = 0,	-- This is now available via 35266, need to delink the old plans from the recipe
+		["u"] = REMOVED_FROM_GAME,
+}),
+i(35267),	-- Design: Inscribed Pyrestone
+i(35253),	-- Design: Jagged Seaspray Emerald
+i(35258),	-- Design: Mystic Lionseye
+i(35269),	-- Design: Potent Pyrestone
+i(35251),	-- Design: Purified Shadowsong Amethyst
+i(35241, {	-- Design: Purified Shadowsong Amethyst
+	["spellID"] = 0,	-- This is now available via 35251, need to delink the old plans from the recipe
+		["u"] = REMOVED_FROM_GAME,
+}),
+i(37504, {	-- Design: Purified Shadowsong Amethyst
+	["spellID"] = 0,	-- This is now available via 35251, need to delink the old plans from the recipe
+		["u"] = REMOVED_FROM_GAME,
+}),
+i(35322),	-- Design: Quick Dawnstone
+i(35768),	-- Design: Quick Lionseye
+i(35254),	-- Design: Radiant Seaspray Emerald
+i(35323),	-- Design: Reckless Noble Topaz
+i(35767),	-- Design: Reckless Pyrestone
+i(35268, {	-- Design: Reckless Pyrestone
+	["spellID"] = 0,	-- This is now available via 35767, need to delink the old plans from the recipe
+		["u"] = REMOVED_FROM_GAME,
+}),
+i(35252),	-- Design: Regal Seaspray Emerald
+i(35259),	-- Design: Rigid Empyrean Sapphire
+i(35257, {	-- Design: Rigid Empyrean Sapphire
+	["spellID"] = 0,	-- This is now available via 35259, need to delink the old plans from the recipe
+		["u"] = REMOVED_FROM_GAME,
+}),
+i(35242),	-- Design: Shifting Shadowsong Amethyst
+i(35238, {	-- Design: Shifting Shadowsong Amethyst
+	["spellID"] = 0,	-- This is now available via 35242, need to delink the old plans from the recipe
+		["u"] = REMOVED_FROM_GAME,
+}),
+i(35260),	-- Design: Smooth Lionseye
+i(35256, {	-- Design: Smooth Lionseye
+	["spellID"] = 0,	-- This is now available via 35260, need to delink the old plans from the recipe
+		["u"] = REMOVED_FROM_GAME,
+}),
+i(35263),	-- Design: Solid Empyrean Sapphire
+i(35243),	-- Design: Sovereign Shadowsong Amethyst
+i(35264),	-- Design: Sparkling Empyrean Sapphire
+i(35262, {	-- Design: Sparkling Empyrean Sapphire
+	["spellID"] = 0,	-- This is now available via 35264, need to delink the old plans from the recipe
+		["u"] = REMOVED_FROM_GAME,
+}),
+i(35766),	-- Design: Steady Seaspray Emerald
+i(35265),	-- Design: Stormy Empyrean Sapphire
+i(35249),	-- Design: Subtle Lionseye
+i(35261, {	-- Design: Subtle Lionseye
+	["spellID"] = 0,	-- This is now available via 35249, need to delink the old plans from the recipe
+		["u"] = REMOVED_FROM_GAME,
+}),
+i(35239),	-- Design: Timeless Shadowsong Amethyst
+i(35270),	-- Design: Veiled Shadowsong Amethyst
+
+
+i(24177),	-- Design: Pendant of Shadow's End
+i(23145),	-- Design: Purified Shadow Draenite
+i(23143, {	-- Design: Purified Shadow Draenite
+	["spellID"] = 0,	-- This is now available via 23145, need to delink the old plans from the recipe
+		["u"] = REMOVED_FROM_GAME,
+}),
+i(23149),	-- Design: Smooth Golden Draenite
+
+i(33159),	-- Design: Blood of Amber
+i(25904),	-- Design: Insightful Earthstorm Diamond
+i(33155),	-- Design: Kailee's Rose
+i(30826),	-- Design: Ring of Arcane Shielding
+i(24182),	-- Design: Talasite Owl
+i(23133),	-- Design: Brilliant Blood Garnet
+i(24176),	-- Design: Pendant of Withering
+]]--
+
+
 -- #endif
 
 -- #if AFTER WRATH
-
+--[[
+i(47010, {	-- Design: Accurate Dreadstone
+	["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+}),
+i(46917, {	-- Design: Bold Cardinal Ruby
+	["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+}),
+i(46916, {	-- Design: Brilliant Cardinal Ruby
+	["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+}),
+i(46930, {	-- Design: Brilliant Cardinal Ruby
+	["spellID"] = 0,	-- This is now available via 46916, need to delink the old plans from the recipe
+	["u"] = REMOVED_FROM_GAME,
+}),
+i(47015, {	-- Design: Champion's Ametrine
+	["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+}),
+i(46949, {	-- Design: Deadly Ametrine
+	["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+}),
+i(47011, {	-- Design: Deadly Ametrine
+	["spellID"] = 0,	-- This is now available via 46949, need to delink the old plans from the recipe
+	["u"] = REMOVED_FROM_GAME,
+}),
+i(46941, {	-- Design: Defender's Dreadstone
+	["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+}),
+i(47020, {	-- Design: Deft Ametrine
+	["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+}),
+i(47023, {	-- Design: Deft Ametrine
+	["spellID"] = 0,	-- This is now available via 47020, need to delink the old plans from the recipe
+	["u"] = REMOVED_FROM_GAME,
+}),
+i(46918, {	-- Design: Delicate Cardinal Ruby
+	["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+}),
+i(46919, {	-- Design: Delicate Cardinal Ruby
+	["spellID"] = 0,	-- This is now available via 46918, need to delink the old plans from the recipe
+	["u"] = REMOVED_FROM_GAME,
+}),
+i(46912, {	-- Design: Energized Eye of Zul
+	["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+}),
+i(46910, {	-- Design: Energized Eye of Zul
+	["spellID"] = 0,	-- This is now available via 46912, need to delink the old plans from the recipe
+	["u"] = REMOVED_FROM_GAME,
+}),
+i(46953, {	-- Design: Etched Dreadstone
+	["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+}),
+i(47019, {	-- Design: Fierce Ametrine
+	["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+}),
+i(46923, {	-- Design: Flashing Cardinal Ruby
+	["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+}),
+i(46904, {	-- Design: Forceful Eye of Zul
+	["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+}),
+i(46956, {	-- Design: Glinting Dreadstone
+	["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+}),
+i(46945, {	-- Design: Glinting Dreadstone
+	["spellID"] = 0,	-- This is now available via 46956, need to delink the old plans from the recipe
+	["u"] = REMOVED_FROM_GAME,
+}),
+i(46946, {	-- Design: Glinting Dreadstone
+	["spellID"] = 0,	-- This is now available via 46956, need to delink the old plans from the recipe
+	["u"] = REMOVED_FROM_GAME,
+}),
+i(47008, {	-- Design: Glinting Dreadstone
+	["spellID"] = 0,	-- This is now available via 46956, need to delink the old plans from the recipe
+	["u"] = REMOVED_FROM_GAME,
+}),
+i(46942, {	-- Design: Guardian's Dreadstone
+	["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+}),
+i(46948, {	-- Design: Inscribed Ametrine
+	["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+}),
+i(46901, {	-- Design: Jagged Eye of Zul
+	["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+}),
+i(46944, {	-- Design: Jagged Eye of Zul
+	["spellID"] = 0,	-- This is now available via 46901, need to delink the old plans from the recipe
+	["u"] = REMOVED_FROM_GAME,
+}),
+i(46909, {	-- Design: Lightning Eye of Zul
+	["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+}),
+i(46907, {	-- Design: Lightning Eye of Zul
+	["spellID"] = 0,	-- This is now available via 46909, need to delink the old plans from the recipe
+	["u"] = REMOVED_FROM_GAME,
+}),
+i(47021, {	-- Design: Lucent Ametrine
+	["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+}),
+i(47016, {	-- Design: Lucent Ametrine
+	["spellID"] = 0,	-- This is now available via 47021, need to delink the old plans from the recipe
+	["u"] = REMOVED_FROM_GAME,
+}),
+i(46905, {	-- Design: Misty Eye of Zul
+	["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+}),
+i(46906, {	-- Design: Misty Eye of Zul
+	["spellID"] = 0,	-- This is now available via 46905, need to delink the old plans from the recipe
+	["u"] = REMOVED_FROM_GAME,
+}),
+i(46943, {	-- Design: Mysterious Dreadstone
+	["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+}),
+i(46932, {	-- Design: Mystic King's Amber
+	["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+}),
+i(49112, {	-- Design: Nightmare Tear
+	["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+}),
+i(46899, {	-- Design: Nimble Eye of Zul
+	["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+}),
+i(46950, {	-- Design: Potent Ametrine
+	["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+}),
+i(46920, {	-- Design: Precise Cardinal Ruby
+	["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+}),
+i(46937, {	-- Design: Purified Dreadstone
+	["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+}),
+i(46900, {	-- Design: Purified Dreadstone
+	["spellID"] = 0,	-- This is now available via 46937, need to delink the old plans from the recipe
+	["u"] = REMOVED_FROM_GAME,
+}),
+i(46903, {	-- Design: Purified Dreadstone
+	["spellID"] = 0,	-- This is now available via 46937, need to delink the old plans from the recipe
+	["u"] = REMOVED_FROM_GAME,
+}),
+i(46947, {	-- Design: Purified Dreadstone
+	["spellID"] = 0,	-- This is now available via 46937, need to delink the old plans from the recipe
+	["u"] = REMOVED_FROM_GAME,
+}),
+i(46939, {	-- Design: Purified Dreadstone
+	["spellID"] = 0,	-- This is now available via 46937, need to delink the old plans from the recipe
+	["u"] = REMOVED_FROM_GAME,
+}),
+i(46933, {	-- Design: Quick King's Amber
+	["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+}),
+i(46911, {	-- Design: Radiant Eye of Zul
+	["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+}),
+i(46908, {	-- Design: Radiant Eye of Zul
+	["spellID"] = 0,	-- This is now available via 46911, need to delink the old plans from the recipe
+	["u"] = REMOVED_FROM_GAME,
+}),
+i(47007, {	-- Design: Reckless Ametrine
+	["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+}),
+i(46897, {	-- Design: Regal Eye of Zul
+	["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+}),
+i(46940, {	-- Design: Regal Eye of Zul
+	["spellID"] = 0,	-- This is now available via 46897, need to delink the old plans from the recipe
+	["u"] = REMOVED_FROM_GAME,
+}),
+i(47022, {	-- Design: Resolute Ametrine
+	["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+}),
+i(47018, {	-- Design: Resplendent Ametrine
+	["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+}),
+i(46928, {	-- Design: Rigid Majestic Zircon
+	["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+}),
+i(46913, {	-- Design: Shattered Eye of Zul
+	["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+}),
+i(46938, {	-- Design: Shifting Dreadstone
+	["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+}),
+i(46934, {	-- Design: Shifting Dreadstone
+	["spellID"] = 0,	-- This is now available via 46938, need to delink the old plans from the recipe
+	["u"] = REMOVED_FROM_GAME,
+}),
+i(46929, {	-- Design: Smooth King's Amber
+	["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+}),
+i(46921, {	-- Design: Smooth King's Amber
+	["spellID"] = 0,	-- This is now available via 46929, need to delink the old plans from the recipe
+	["u"] = REMOVED_FROM_GAME,
+}),
+i(46924, {	-- Design: Solid Majestic Zircon
+	["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+}),
+i(46935, {	-- Design: Sovereign Dreadstone
+	["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+}),
+i(46925, {	-- Design: Sparkling Majestic Zircon
+	["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+}),
+i(46927, {	-- Design: Sparkling Majestic Zircon
+	["spellID"] = 0,	-- This is now available via 46925, need to delink the old plans from the recipe
+	["u"] = REMOVED_FROM_GAME,
+}),
+i(47017, {	-- Design: Stalwart Ametrine
+	["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+}),
+i(47012, {	-- Design: Stalwart Ametrine
+	["spellID"] = 0,	-- This is now available via 47017, need to delink the old plans from the recipe
+	["u"] = REMOVED_FROM_GAME,
+}),
+i(46898, {	-- Design: Steady Eye of Zul
+	["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+}),
+i(46926, {	-- Design: Stormy Majestic Zircon
+	["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+}),
+i(46922, {	-- Design: Subtle King's Amber
+	["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+}),
+i(46931, {	-- Design: Subtle King's Amber
+	["spellID"] = 0,	-- This is now available via 46922, need to delink the old plans from the recipe
+	["u"] = REMOVED_FROM_GAME,
+}),
+i(46902, {	-- Design: Timeless Dreadstone
+	["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+}),
+i(46936, {	-- Design: Timeless Dreadstone
+	["spellID"] = 0,	-- This is now available via 46902, need to delink the old plans from the recipe
+	["u"] = REMOVED_FROM_GAME,
+}),
+i(46915, {	-- Design: Turbid Eye of Zul
+	["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+}),
+i(46914, {	-- Design: Turbid Eye of Zul
+	["spellID"] = 0,	-- This is now available via 46915, need to delink the old plans from the recipe
+	["u"] = REMOVED_FROM_GAME,
+}),
+i(46951, {	-- Design: Veiled Dreadstone
+	["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+}),
+i(46952, {	-- Design: Willful Ametrine
+	["cost"] = { { "c", 61, 4 }, },	-- 4x Dalaran Jewelcrafter's Token
+}),
+]]
 -- #endif
 
 -- #if AFTER CATA

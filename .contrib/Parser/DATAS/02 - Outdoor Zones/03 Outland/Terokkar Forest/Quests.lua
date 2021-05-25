@@ -12,7 +12,7 @@ _.Zones =
 					["description"] = "One of five random fishing daily quests. The other four do not drop minipets.",
 					["isDaily"] = true,
 					["requireSkill"] = FISHING,
-					["groups"] = {
+					["g"] = {
 						i(35348,  { -- Bag of Fishing Treasures
 							i(35350),	-- Chuck's Bucket
 							i(33818),	-- Muckbreath's Bucket
@@ -31,7 +31,7 @@ _.Zones =
 					["coord"] = { 38.6, 12.8, TEROKKAR_FOREST },
 					["isDaily"] = true,
 					["requireSkill"] = FISHING,
-					["groups"] = {
+					["g"] = {
 						i(34863,  {  -- Bag of Fishing Treasures
 							i(33820),  -- Weather-Beaten Fishing Hat
 						}),
@@ -45,7 +45,7 @@ _.Zones =
 					["coord"] = { 38.6, 12.8, TEROKKAR_FOREST },
 					["isDaily"] = true,
 					["requireSkill"] = FISHING,
-					["groups"] = {
+					["g"] = {
 						i(34863,  {  -- Bag of Fishing Treasures
 							i(33820),  -- Weather-Beaten Fishing Hat
 						}),
@@ -59,7 +59,7 @@ _.Zones =
 					["coord"] = { 38.6, 12.8, TEROKKAR_FOREST },
 					["isDaily"] = true,
 					["requireSkill"] = FISHING,
-					["groups"] = {
+					["g"] = {
 						i(34863,  {  -- Bag of Fishing Treasures
 							i(33820),  -- Weather-Beaten Fishing Hat
 						}),
@@ -73,7 +73,7 @@ _.Zones =
 					["coord"] = { 38.6, 12.8, TEROKKAR_FOREST },
 					["isDaily"] = true,
 					["requireSkill"] = FISHING,
-					["groups"] = {
+					["g"] = {
 						i(34863,  {  -- Bag of Fishing Treasures
 							i(33820),  -- Weather-Beaten Fishing Hat
 						}),

@@ -3,70 +3,40 @@
 ---------------------------------------------------
 -- The following recipes and gems go through a lot of changes between TBC and Cata.
 local JEWELCRAFTING_PATTERNS = {
-	i(23131, {	-- Design: Bold Blood Garnet (Both)
-		["spellID"] = 28905,	-- Bold Blood Garnet
-		["requireSkill"] = JEWELCRAFTING,
-	}),
-	i(23130, {	-- Design: Brilliant Blood Garnet (Cata+) / Design: Teardrop Blood Garnet (TBC)
-		["spellID"] = 28903,	-- Brilliant Blood Garnet (Cata+) / Teardrop Blood Garnet (TBC)
-		["requireSkill"] = JEWELCRAFTING,
-	}),
-	i(23148, {	-- Design: Brilliant Blood Garnet (Both)
-		-- #if BEFORE CATA
-		["spellID"] = 28938,	-- Brilliant Blood Garnet
-		-- #else
-		["spellID"] = 28903,	-- Brilliant Blood Garnet
-		-- #endif
-		["requireSkill"] = JEWELCRAFTING,
-	}),
-	i(28596, {	-- Design: Delicate Blood Garnet (Cata+) / Design: Bright Blood Garnet (TBC)
-		["spellID"] = 34590,	-- Delicate Blood Garnet (Cata+) / Bright Blood Garnet (TBC)
-		["requireSkill"] = JEWELCRAFTING,
-	}),
-	i(23137, {	-- Design: Glinting Shadow Draenite (Both)
-		["spellID"] = 28914,	-- Glinting Shadow Draenite
-		["requireSkill"] = JEWELCRAFTING,
-	}),
-	i(23135, {	-- Design: Inscribed Flame Spessarite (Both)
-		["spellID"] = 28910,	-- Inscribed Flame Spessarite
-		["requireSkill"] = JEWELCRAFTING,
-	}),
-	i(23141, {	-- Design: Jagged Deep Peridot (Both)
-		["spellID"] = 28917,	-- Jagged Deep Peridot
-		["requireSkill"] = JEWELCRAFTING,
-	}),
-	i(23140, {	-- Design: Radiant Deep Peridot (Both)
-		["spellID"] = 28916,	-- Radiant Deep Peridot
-		["requireSkill"] = JEWELCRAFTING,
-	}),
-	i(23151, {	-- Design: Rigid Azure Moonstone (Cata+) / Design: Rigid Golden Draenite (TBC)
-		["spellID"] = 28948,	-- Rigid Azure Moonstone (Cata+) / Rigid Golden Draenite (TBC)
-		["requireSkill"] = JEWELCRAFTING,
-	}),
-	i(28291, {	-- Design: Smooth Golden Draenite (Both)
-		-- #if BEFORE CATA
-		["spellID"] = 34069,	-- Smooth Golden Draenite
-		-- #else
-		["spellID"] = 28944,	-- Smooth Golden Draenite
-		-- #endif
-		["requireSkill"] = JEWELCRAFTING,
-	}),
-	i(23152, {	-- Design: Solid Azure Moonstone (Both)
-		["spellID"] = 28950,	-- Solid Azure Moonstone
-		["requireSkill"] = JEWELCRAFTING,
-	}),
-	i(23147, {	-- Design: Sovereign Shadow Draenite (Both)
-		["spellID"] = 28936,	-- Sovereign Shadow Draenite
-		["requireSkill"] = JEWELCRAFTING,
-	}),
-	i(23153, {	-- Design: Sparkling Azure Moonstone (Both)
-		["spellID"] = 28953,	-- Sparkling Azure Moonstone
-		["requireSkill"] = JEWELCRAFTING,
-	}),
-	i(23144, {	-- Design: Timeless Shadow Draenite (Cata+) / Design: Glowing Shadow Draenite (TBC)
-		["spellID"] = 28925,	-- Timeless Shadow Draenite (Cata+) / Glowing Shadow Draenite (TBC)
-		["requireSkill"] = JEWELCRAFTING,
-	}),
+	i(23131),	-- Design: Bold Blood Garnet (Both)
+	-- #if BEFORE CATA
+	i(28596),	-- Design: Bright Blood Garnet [TBC] / Design: Delicate Blood Garnet [Cata+]
+	-- #endif
+	-- #if AFTER CATA
+	i(23130),	-- Design: Brilliant Blood Garnet [Cata+] / Design: Teardrop Blood Garnet (TBC)
+	-- #endif
+	-- #if AFTER CATA
+	i(23148),	-- Design: Brilliant Blood Garnet [Cata+] / Design: Brilliant Golden Draenite [TBC]
+	-- #endif
+	-- #if AFTER CATA
+	i(23148),	-- Design: Brilliant Golden Draenite [TBC] / Design: Brilliant Blood Garnet [Cata+]
+	-- #endif
+	-- #if AFTER CATA
+	i(28596),	-- Design: Delicate Blood Garnet [Cata+] / Design: Bright Blood Garnet [TBC]
+	-- #endif
+	i(23137),	-- Design: Glinting Flame Spessarite [TBC] / Design: Glinting Shadow Draenite [CATA+]
+	-- #if AFTER CATA
+	i(23144),	-- Design: Glowing Shadow Draenite [TBC] / Design: Timeless Shadow Draenite [Cata+]
+	-- #endif
+	i(23135),	-- Design: Inscribed Flame Spessarite (Both)
+	i(23141),	-- Design: Jagged Deep Peridot (Both)
+	i(23140),	-- Design: Radiant Deep Peridot (Both)
+	i(23151),	-- Design: Rigid Azure Moonstone [Cata+] / Design: Rigid Golden Draenite [TBC]
+	i(28291),	-- Design: Smooth Golden Draenite (Both)
+	i(23152),	-- Design: Solid Azure Moonstone (Both)
+	i(23147),	-- Design: Sovereign Shadow Draenite (Both)
+	i(23153),	-- Design: Sparkling Azure Moonstone (Both)
+	-- #if AFTER CATA
+	i(23130),	-- Design: Teardrop Blood Garnet [TBC] / Design: Brilliant Blood Garnet [Cata+]
+	-- #endif
+	-- #if AFTER CATA
+	i(23144),	-- Design: Timeless Shadow Draenite [Cata+] / Design: Glowing Shadow Draenite [TBC]
+	-- #endif
 };
 local VENDOR_GEMS = {
 	i(28458),	-- Bold Tourmaline (Both)
@@ -277,14 +247,8 @@ _.Zones =
 						i(29153),	-- Blade of the Archmage
 						i(35476),	-- Crusader's Ornamented Spaulders
 						i(35477),	-- Crusader's Scaled Gauntlets
-						i(24180, {	-- Design: Dawnstone Crab
-							["spellID"] = 31080,	-- Figurine - Dawnstone Crab
-							["requireSkill"] = JEWELCRAFTING,
-						}),
-						i(23142, {	-- Design: Regal Deep Peridot (Cata+) / Design: Enduring Deep Peridot (TBC)
-							["spellID"] = 28918,	-- Regal Deep Peridot (Cata+) / Enduring Deep Peridot (TBC)
-							["requireSkill"] = JEWELCRAFTING,
-						}),
+						i(24180),	-- Design: Dawnstone Crab
+						i(23142),	-- Design: Regal Deep Peridot (Cata+) / Design: Enduring Deep Peridot (TBC)
 						i(35469),	-- Dragonhide Robe
 						i(35464),	-- Dreadweave Robe
 						i(35465),	-- Evoker's Silk Amice
@@ -398,14 +362,8 @@ _.Zones =
 						i(29167),	-- Blackened Spear
 						i(35406),	-- Crusader's Ornamented Spaulders
 						i(35413),	-- Crusader's Scaled Gauntlets
-						i(31358, {	-- Design: Dawnstone Crab
-							["spellID"] = 31080,	-- Figurine - Dawnstone Crab
-							["requireSkill"] = JEWELCRAFTING,
-						}),
-						i(31359, {	-- Design: Regal Deep Peridot (Cata+) / Design: Enduring Deep Peridot (TBC)
-							["spellID"] = 28918,	-- Regal Deep Peridot (Cata+) / Enduring Deep Peridot (TBC)
-							["requireSkill"] = JEWELCRAFTING,
-						}),
+						i(31358),	-- Design: Dawnstone Crab
+						i(31359),	-- Design: Regal Deep Peridot (Cata+) / Design: Enduring Deep Peridot (TBC)
 						i(35360),	-- Dragonhide Robe
 						i(35332),	-- Dreadweave Robe
 						i(35343),	-- Evoker's Silk Amice
