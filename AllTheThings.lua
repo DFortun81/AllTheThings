@@ -9133,6 +9133,8 @@ app.TryPopulateQuestRewards = function(questObject)
 							
 							-- at least one reward exists, so clear the missing data
 							questObject.missingItem = 0;
+							-- don't let cached groups pollute potentially inaccurate raw Data
+							item.link = nil;
 							MergeObject(questObject.g, CreateObject(item));
 						end
 					else
