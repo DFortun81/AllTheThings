@@ -688,7 +688,10 @@ _.Zones =
 					["coord"] = { 67.0, 46.5, 199 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
-					["sourceQuest"] = 24948,	-- Lifting the Siege
+					["sourceQuests"] = {
+						24948,	-- Lifting the Siege
+						24956,	-- Silencing Rageroar
+					},
 				}),
 				q(25197, {	-- The Admiral Won't Back Down
 					["isBreadcrumb"] = true,
