@@ -9081,7 +9081,7 @@ app.TryPopulateQuestRewards = function(questObject)
 									data = search[i];
 									if app.DEBUG_PRINT then print("cached",data.key,data[data.key]) end
 									-- cache record is the exact item from the WQ reward
-									if GroupMatchesParams(data, "itemID", modItemID, count == 1) then
+									if GroupMatchesParams(data, "itemID", modItemID, true) then
 										-- create the object which will be in the actual list
 										if app.DEBUG_PRINT then print(modItemID," ? found cached") end
 										-- if not item then
