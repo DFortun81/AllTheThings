@@ -1054,6 +1054,9 @@ _.PVP =
 					i(60651),	-- Vicious Gladiator's Signet of Accuracy
 					i(60650),	-- Vicious Gladiator's Signet of Cruelty
 				}),
+				n(-331, {	-- Held In Offhand
+					un(REMOVED_FROM_GAME, i(61347)), -- Vicious Gladiator's War Edge (Throw wep)
+				}),
 				n(-386,	{	-- Trinket
 					i(61033),	-- Vicious Gladiator's Badge of Conquest
 					i(61026),	-- Vicious Gladiator's Emblem of Cruelty
