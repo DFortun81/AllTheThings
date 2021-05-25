@@ -590,6 +590,7 @@ app.L = {
 		["Expansion Features"] = "EF",
 		["Dungeons & Raids"] = "D&R",
 		["Classic %> "] = "",
+		["The Burning Crusade"] = "BC",
 		["Burning Crusade"] = "BC",
 		["Wrath of the Lich King"] = "WotLK",
 		["Cataclysm"] = "Cata",

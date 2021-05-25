@@ -2171,37 +2171,12 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(18242)),	-- Reins of the Black War Tiger. Pre 2.0 Version
 					},
 				}),
-				n(23446,  {	-- Lieutenant Tristia -- BC S1/S2/S3/S4 Vendor
-					-- The NPC ID got reused — she was also >S11< Elite Vendor & >S9< Vendor
+				n(23446,  {	-- Lieutenant Tristia -- BC Vendor for Trinkets
+					-- The NPC ID got reused many times. This is the BC Version, items listed under PvP>BC
 					["coord"] = { 75.0, 67.0, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(33918)),	-- vindicator's band of salvation
-						un(REMOVED_FROM_GAME, i(33919)),	-- vindicator's band of triumph
-						un(REMOVED_FROM_GAME, i(37927)),	-- vindicator's band of subjugation
-						un(REMOVED_FROM_GAME, i(33920)),	-- Vindicator's Pendant of conquest
-						un(REMOVED_FROM_GAME, i(33921)),	-- Vindicator's Pendant of dominance
-						un(REMOVED_FROM_GAME, i(33922)),	-- Vindicator's Pendant of salvation
-						un(REMOVED_FROM_GAME, i(33923)),	-- Vindicator's Pendant of triumph
-						un(REMOVED_FROM_GAME, i(35132)),	-- guardians pendant of conquest
-						un(REMOVED_FROM_GAME, i(35133)),	-- guardians pendant of dominance
-						un(REMOVED_FROM_GAME, i(35134)),	-- guardians pendant of salvation
-						un(REMOVED_FROM_GAME, i(35135)),	-- guardians pendant of triumph
-						un(REMOVED_FROM_GAME, i(35129)),	-- guardians band of dominance
-						un(REMOVED_FROM_GAME, i(35130)),	-- guardians band of salvation
-						un(REMOVED_FROM_GAME, i(35131)),	-- guardians band of triumph
-						un(REMOVED_FROM_GAME, i(37927)),	-- guardians band of subjugations
-						un(REMOVED_FROM_GAME, i(35317)),	-- Vindicator's Pendant of reprive
-						un(REMOVED_FROM_GAME, i(35319)),	-- Vindicator's Pendant of subjugation
-						un(REMOVED_FROM_GAME, i(37928)),	-- guardians pendant of subjugation
-						un(REMOVED_FROM_GAME, i(37929)),	-- guardians pendant of reprieve
-						un(REMOVED_FROM_GAME, i(41587)),	-- battlemaster's celerity
-						un(REMOVED_FROM_GAME, i(41588)),	-- battlemaster's aggression
-						un(REMOVED_FROM_GAME, i(41589)),	-- battlemaster's resolve
-						un(REMOVED_FROM_GAME, i(41590)),	-- battlemaster's courage
-						un(REMOVED_FROM_GAME, i(33853)),	-- Vindicator's Band of Dominance
-						un(REMOVED_FROM_GAME, i(35320)),	-- Vindicator's Band of subjugation
 					},
 				}),
 				n(51255,  {	-- Lieutenant Tristia >S9< Elite <Vicious Gladiator>
@@ -3067,15 +3042,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(18862)),	-- Insignia of the Alliance [Priest]
 						un(REMOVED_FROM_GAME, i(18858)),	-- Insignia of the Alliance [Warlock]
 						un(REMOVED_FROM_GAME, i(18863)),	-- Insignia of the Alliance [Druid]
-						un(REMOVED_FROM_GAME, i(37864)),	-- medallion of the alliance (epic)
-						un(REMOVED_FROM_GAME, i(38589)),	-- Medallion of the alliance (dk)
-						un(REMOVED_FROM_GAME, i(69861)),	-- Medallion of the alliance
-						un(REMOVED_FROM_GAME, i(34576)),	-- battlemaster's cruelty
-						un(REMOVED_FROM_GAME, i(34577)),	-- battlemaster's depravity
-						un(REMOVED_FROM_GAME, i(34578)),	-- battlemaster's determination
-						un(REMOVED_FROM_GAME, i(34579)),	-- battlemaster's audacity
-						un(REMOVED_FROM_GAME, i(34580)),	-- battlemaster's persevennerance
-						un(REMOVED_FROM_GAME, i(35327)),	-- battlemaster's alacrity
 						un(REMOVED_FROM_GAME, i(18442)),	-- Master Sergeant's Insignia
 						un(REMOVED_FROM_GAME, i(18444)),	-- Master Sergeant's Insignia
 						un(REMOVED_FROM_GAME, i(18443)),	-- Master Sergeant's Insignia

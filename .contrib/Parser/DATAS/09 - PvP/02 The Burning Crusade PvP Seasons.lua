@@ -2425,6 +2425,9 @@ _.PVP =
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
+				-- Orinally sold Offhand/Neck/Finger by 
+				-- Alliance SW: n(23446,  {	-- Lieutenant Tristia --  &
+				-- Horde OG: n(24520, {	-- Doris Volanthius --
 				n(-331, {	-- Held In Offhand
 					un(REMOVED_FROM_GAME, i(33947)), -- Vengeful Gladiator's Idol of Resolve
 					un(REMOVED_FROM_GAME, i(33944)), -- Vengeful Gladiator's Idol of Steadfastness
@@ -2457,6 +2460,10 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(34577)), -- Battlemaster's Depravity
 					un(REMOVED_FROM_GAME, i(34578)), -- Battlemaster's Determination
 					un(REMOVED_FROM_GAME, i(34580)), -- Battlemaster's Perseverance
+					un(REMOVED_FROM_GAME, i(41587)),	-- battlemaster's celerity
+					un(REMOVED_FROM_GAME, i(41588)),	-- battlemaster's aggression
+					un(REMOVED_FROM_GAME, i(41589)),	-- battlemaster's resolve
+					un(REMOVED_FROM_GAME, i(41590)),	-- battlemaster's courage
 				}),
 			}),
 		}),
@@ -3146,6 +3153,10 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(37864)), -- (A) Medallion of the Alliance
 					un(REMOVED_FROM_GAME, i(37865)), -- (H) Medallion of the Horde
 					un(REMOVED_FROM_GAME, i(35327)), -- Battlemaster's Alacrity
+					un(REMOVED_FROM_GAME, i(37865)),	-- medallion of the horde (epic)
+					un(REMOVED_FROM_GAME, i(38588)),	-- Medallion of the horde (dk)
+					un(REMOVED_FROM_GAME, i(37864)),	-- medallion of the alliance (epic)
+					un(REMOVED_FROM_GAME, i(38589)),	-- Medallion of the alliance (dk)
 				}),
 			}),
 		}),
