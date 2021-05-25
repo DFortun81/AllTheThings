@@ -1679,7 +1679,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(42597)), -- Deadly Gladiator's Totem of the Third Wind
 					un(REMOVED_FROM_GAME, i(42450)), -- Deadly Gladiator's War Edge (Throw Wep)
 				}),
-				n(-386,	{	-- Trinket, se https://www.wowhead.com/forums/topic/arena-season-5-guide-60347 also has npcs
+				n(-386,	{	-- Trinket, see https://www.wowhead.com/forums/topic/arena-season-5-guide-60347 also has npcs
 					un(REMOVED_FROM_GAME, i(42123)), -- (A) Medallion of the Alliance Patch 3.0.1
 					un(REMOVED_FROM_GAME, i(42122)), -- (H) Medallion of the Horde Patch 3.0.1
 					
