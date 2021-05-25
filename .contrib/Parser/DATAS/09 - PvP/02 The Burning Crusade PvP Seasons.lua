@@ -2606,6 +2606,7 @@ _.PVP =
 							{"select", "itemID", 35176 },	-- Guardian's Plate Bracers
 							{"select", "itemID", 35161 },	-- Guardian's Plate Belt
 							{"select", "itemID", 35146 },	-- Guardian's Plate Greaves
+							{"exclude", "itemID", 146600 },	-- Exclude itself to stop duplicating
 						},
 					}),
 					i(40440, {	-- Brutal Gladiator's Dreadplate Chestpiece
