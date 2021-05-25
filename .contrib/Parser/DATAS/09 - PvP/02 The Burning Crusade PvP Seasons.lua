@@ -3005,6 +3005,20 @@ _.PVP =
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
+				n(-322, {	-- Back
+					i(41591, {	-- Sergeant's Reinforced Cape
+						["cost"] = { { "i", 137642, 2 } },	-- 1x Mark of Honor
+					}),
+					i(41592, {	-- The gladiator's resolution
+						["cost"] = { { "i", 137642, 2 } },	-- 1x Mark of Honor
+					}),
+					i(44429, {	-- Volanthius Shroud
+						["cost"] = { { "i", 137642, 2 } },	-- 1x Mark of Honor
+					}),
+					i(44431, {	-- Cloak of Certain Reprieve
+						["cost"] = { { "i", 137642, 2 } },	-- 1x Mark of Honor
+					}),
+				}),
 				n(-326, {	-- Wrists
 					i(35166, {	-- Guardian's Chain Bracers
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
