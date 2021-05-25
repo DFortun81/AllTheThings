@@ -148,6 +148,20 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 			d(2, {	-- Heroic
 				["lvl"] = 70,
 				["groups"] = {
+					n(COMMON_BOSS_DROPS, {
+						["crs"] = {
+							18371,	-- Shirrak the Dead Watcher
+							18373,	-- Exarch Maladaar
+						},
+						["groups"] = {
+							-- #if BEFORE CATA
+							i(29434),	-- Badge of Justice
+							-- #endif
+							i(30587),	-- Champion's Fire Opal
+							i(30588),	-- Potent Fire Opal
+							i(30586),	-- Purified Tanzanite
+						},
+					}),
 					e(523, {	-- Shirrak the Dead Watcher
 						["creatureID"] = 18371,
 						["groups"] = {
@@ -218,9 +232,9 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 
 -- #if AFTER 4.3.0
 -- This version of the quest never made it in.
-_.NeverImplemented = {
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(29597),	-- The End of the Exarch
 	}),
-};
+});
 -- #endif

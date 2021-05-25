@@ -629,6 +629,10 @@ _.Zones =
 				}),
 				q(11500, {	-- Wanted: Sisters of Torment
 					["provider"] = { "n", 24370 },	-- Nether-Stalker Mah'duun
+					["maps"] = { MAGISTERS_TERRACE },
+					-- #if ANYCLASSIC
+					["u"] = TBC_PHASE_FIVE,
+					-- #endif
 					["isDaily"] = true,
 					["g"] = {
 						i(29460),	-- Ethereum Prison Key
