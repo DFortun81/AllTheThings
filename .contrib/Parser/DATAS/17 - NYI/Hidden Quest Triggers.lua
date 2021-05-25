@@ -2271,6 +2271,8 @@ _.HiddenQuestTriggers =
 		q(43681),	-- Hidden Appearance Unlocked (Prot Warrior "Burning Plate of the Worldbreaker")
 		q(43664),	-- Hidden Appearance Unlocked (Holy Paladin "Lost Edicts of the Watcher")
 		q(43657),	-- Hidden Appearance Unlocked (Survival Hunter "Last Breath of the Forest")
+		q(43559),	-- Triggers when turning in Bindings of the Windlord (43558) just prior to getting outlaw rogue hidden appearance
+		q(43671),	-- Hidden Appearance Unlocked (Outlaw Rogue "Emanation of the Winds")
 
 		--	Professions
 		--	Archaeology

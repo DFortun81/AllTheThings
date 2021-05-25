@@ -754,10 +754,6 @@ _.Zones =
 				q(44663, {	-- In the Blink of an Eye
 					i(143785),	-- Tome of the Tranquil Mind
 				}),
-				q(40995, {	-- Injection of Power
-					["classes"] = { ROGUE },
-					["provider"] = { "n", 102594 },	-- Marin Noggenfogger
-				}),
 				q(44547, {	-- Isle Hopping
 					["isBreadcrumb"] = true,
 				}),
