@@ -216,6 +216,20 @@ local containsValue = function(dict, value)
 		if value2 == value then return true; end
 	end
 end
+local defaultComparison = function(a,b)
+	return a > b;
+end
+local insertionSort = function(t, compare)
+	if not compare then compare = defaultComparison; end
+	local j;
+	for i=2,#t,1 do
+		j = i;
+		while j > 1 and compare(t[j], t[j - 1]) do
+			t[j],t[j - 1] = t[j - 1],t[j];
+			j = j - 1;
+		end
+	end
+end
 
 -- Data Lib
 local attData;
@@ -1379,7 +1393,7 @@ local function FilterSpecs(specs)
 				table.remove(specs, i);
 			end
 		end
-		table.sort(specs);
+		insertionSort(specs);
 	end
 end
 -- Returns a string containing the spec icons, followed by their respective names if desired
@@ -1429,7 +1443,7 @@ local function GetFixedItemSpecInfo(itemID)
 				end
 			end
 		end
-		table.sort(specs);
+		insertionSort(specs);
 	else
 		FilterSpecs(specs);
 	end
@@ -2788,7 +2802,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					end
 				end
 				local subgroup = {};
-				table.sort(group, function(a, b)
+				insertionSort(group, function(a, b)
 					return not (a.headerID and a.headerID == -1) and b.headerID and b.headerID == -1;
 				end);
 				for i,j in ipairs(group) do
@@ -3242,7 +3256,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		if #temp > 0 then
 			local listing = {};
 			local maximum = app.Settings:GetTooltipSetting("Locations");
-			table.sort(temp);
+			insertionSort(temp);
 			for i,j in ipairs(temp) do
 				if not contains(listing, j) then
 					tinsert(listing, 1, j);
@@ -3549,7 +3563,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			end
 		end
 		if #knownBy > 0 then
-			table.sort(knownBy, function(a, b)
+			insertionSort(knownBy, function(a, b)
 				return a.text < b.text;
 			end);
 			local desc = L["KNOWN_BY"];
@@ -4931,7 +4945,7 @@ local function SortGroup(group, sortType, row, recur)
 	if group.visible and group.g then
 		if sortType == "name" then
 			local txtA, txtB;
-			table.sort(group.g, function(a, b)
+			insertionSort(group.g, function(a, b)
 				txtA = a and tostring(a.name or a.text) or "";
 				txtB = b and tostring(b.name or b.text) or "";
 				if txtA then
@@ -4942,7 +4956,7 @@ local function SortGroup(group, sortType, row, recur)
 			end);
 		elseif sortType == "progress" then
 			local progA, progB;
-			table.sort(group.g, function(a, b)
+			insertionSort(group.g, function(a, b)
 				progA = GetGroupSortValue(a);
 				progB = GetGroupSortValue(b);
 				if progA then
@@ -4953,7 +4967,7 @@ local function SortGroup(group, sortType, row, recur)
 			end);
 		else
 			local sortA, sortB;
-			table.sort(group.g, function(a, b)
+			insertionSort(group.g, function(a, b)
 				sortA = a and tostring(a[sortType]);
 				sortB = b and tostring(b[sortType]);
 				return sortA < sortB;
@@ -6156,7 +6170,7 @@ local fields = {
 		if #c > 0 then
 			GameTooltip:AddLine(" ");
 			GameTooltip:AddLine("Deaths Per Character:");
-			table.sort(c, function(a, b)
+			insertionSort(c, function(a, b)
 				return a.Deaths > b.Deaths;
 			end);
 			for i,data in ipairs(c) do
@@ -11485,7 +11499,7 @@ local function NestSourceQuests(root, addedQuests, depth)
 		end
 		-- sort quests with less sub-quests to the top
 		if prereqs then
-			table.sort(prereqs, function(a, b) return (a.depth or 0) < (b.depth or 0); end);
+			insertionSort(prereqs, function(a, b) return (a.depth or 0) < (b.depth or 0); end);
 			if not root.g then root.g = prereqs;
 			else MergeObjects(root.g, prereqs); end
 		end
@@ -13893,10 +13907,10 @@ function app:GetDataCache()
 								tinsert(sources, setmetatable({ s = sourceID }, app.BaseGearSource));
 							end
 						end
-						table.sort(sources, SortGearSetSources);
+						insertionSort(sources, SortGearSetSources);
 					end
 				end
-				table.sort(gearSets, SortGearSetInformation);
+				insertionSort(gearSets, SortGearSetInformation);
 
 				-- Let's build some headers!
 				local headers = {};
@@ -14050,7 +14064,7 @@ function app:GetDataCache()
 					CacheFields(faction);
 				end
 			end
-			table.sort(self.g, function(a, b)
+			insertionSort(self.g, function(a, b)
 				return a.text < b.text;
 			end);
 		end
@@ -14085,7 +14099,7 @@ function app:GetDataCache()
 					end
 				end
 			end
-			table.sort(self.g, function(a, b)
+			insertionSort(self.g, function(a, b)
 				return a.name < b.name;
 			end);
 		end;
@@ -14877,8 +14891,8 @@ app:GetWindow("Harvester", UIParent, function(self)
 							end
 						end
 					else
-						table.sort(AllTheThingsHarvestItems);
-						table.sort(AllTheThingsArtifactsItems);
+						insertionSort(AllTheThingsHarvestItems);
+						insertionSort(AllTheThingsArtifactsItems);
 						-- revert Debug if it was enabled by the harvester
 						if self.forcedDebug then
 							app.print("Reverted Debug Mode");
@@ -16619,11 +16633,11 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 					end
 
 					-- Merge everything for this map into the list
-					table.sort(mapObject.g, self.Sort);
+					insertionSort(mapObject.g, self.Sort);
 					-- Sort the sub-groups as well
 					for i,mapGrp in ipairs(mapObject.g) do
 						if mapGrp.mapID and mapGrp.g then
-							table.sort(mapGrp.g, self.Sort);
+							insertionSort(mapGrp.g, self.Sort);
 						end
 					end
 					MergeObject(temp, mapObject);
@@ -16641,11 +16655,11 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 							MergeObject(mapObject.g, questObject);
 						end
 					end
-					table.sort(mapObject.g, self.Sort);
+					insertionSort(mapObject.g, self.Sort);
 					-- Sort the map groups as well
 					for i,mapGrp in ipairs(mapObject.g) do
 						if mapGrp.mapID and mapGrp.g then
-							table.sort(mapGrp.g, self.Sort);
+							insertionSort(mapGrp.g, self.Sort);
 						end
 					end
 					MergeObject(temp, mapObject);
@@ -17453,7 +17467,7 @@ local ProcessAuctionData = function()
 			end
 		end
 		for f,entry in pairs(filteredItems) do
-			table.sort(entry.g, function(a,b)
+			insertionSort(entry.g, function(a,b)
 				return a.u and not b.u;
 			end);
 		end
@@ -17554,7 +17568,7 @@ local ProcessAuctionData = function()
 		end
 		table.insert(window.data.g, subdata);
 	end
-	table.sort(window.data.g, function(a, b)
+	insertionSort(window.data.g, function(a, b)
 		return (b.priority or 0) > (a.priority or 0);
 	end);
 	BuildGroups(window.data, window.data.g);
