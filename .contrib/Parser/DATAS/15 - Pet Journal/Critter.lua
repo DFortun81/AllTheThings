@@ -105,6 +105,7 @@ _.PetJournal =
 		p(570),		-- Masked Tanuki
 		p(703),		-- Masked Tanuki Pup
 		p(2670),	-- Mechagon Marmot
+		p(3137),	-- Mosscoated Gromit
 		p(391),		-- Mountain Cottontail
 		p(633),		-- Mountain Skunk
 		p(385),		-- Mouse

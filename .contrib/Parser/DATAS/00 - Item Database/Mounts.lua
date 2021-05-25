@@ -384,11 +384,15 @@ i(186485, 353880);	-- Ascendant's Aquilon
 i(186494, 353857);	-- Autumnal Wilderling
 i(186480, 343550);	-- Battle-Hardened Aquilon
 i(186490, 353885);	-- Battlefield Swarmer
+i(186644, 347810);	-- Beryl Shardhide
 i(186645, 354357);	-- Crimson Shardhide
 i(186646, 354358);	-- Darkmaul
 i(186482, 353875);	-- Elysian Aquilon
+i(186649, 354359);	-- Fierce Razorwing
 i(186483, 353877);	-- Foresworn Aquilon
 i(186652, 354360);	-- Garnet Razorwing
+i(185973, 352309);	-- Hand of Bahmethra
+i(186654, 354355);	-- Hand of Salaranga
 i(185996, 332904);	-- Harvester's Dredwing
 i(186489, 347250);	-- Lord of the Corpseflies
 i(186643, 354362);	-- Maelie The Wanderer
@@ -400,6 +404,10 @@ i(187183, 356501);	-- Rampaging Mauler
 i(186488, 353884);	-- Regal Corpsefly
 i(186476, 353872);	-- Sinfall Gravewing
 i(186648, 347251);	-- Soaring Razorwing
+i(186657, 354352);	-- Soulbound Gloomcharger
+i(186492, 353859);	-- Summer Wilderling
+i(186641, 347536);	-- Tamed Mauler
 i(186103, 352742);	-- Undying Darkhound
+i(186642, 351195);	-- Vengeance
 i(186000, 352441);	-- Wild Hunt Legsplitter
 i(186495, 353858);	-- Winter Wilderling

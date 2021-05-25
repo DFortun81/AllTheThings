@@ -224,6 +224,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 				e(2441, {	-- Sylvanas Windrunner
 				--	["crs"] = {  },	-- 
 					["g"] = {
+						i(186642),	-- Vengeance (MOUNT!)
 					},
 				}),
 			}),

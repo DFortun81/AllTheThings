@@ -49,6 +49,7 @@ _.Mounts =
 		i(137614),	-- Frostshard Infernal
 		i(116383),	-- Gorestrider Gronnling
 		i(141216),	-- Grove Defiler
+		i(186654),	-- Hand of Salaranga
 		i(87776),	-- Heavenly Azure Cloud Serpent
 		i(87773),	-- Heavenly Crimson Cloud Serpent
 		i(155662),	-- Highmountain Thunderhoof (Horde Only)

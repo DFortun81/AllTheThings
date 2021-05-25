@@ -148,7 +148,9 @@ _.Zones =
 									178886,	-- Zul'gath the Flayer <Tormentor of Torghast>
 								},
 								["g"] = {
-									i(185974),	-- Bahmeht Chain Link (200 = mount)
+									i(185974, {	-- Bahmeht Chain Link
+										["description"] = "A guaranteed drop from the Tormentor, and a possible drop from its lieutenants.",
+									}),
 									i(186218),	-- Fire-Tempered Armor Cinch (probably CBD, but looted from Zul'gath)
 									i(185972, {	-- Tormentor's Cache
 										i(185756),	-- Warped Phantasma (TODO: add rep item if this makes it to live)
@@ -157,6 +159,9 @@ _.Zones =
 							}),
 							n(177979, {	-- Gralebboih <Tormentor of Torghast>
 								i(186449),	-- Amaranthine Stinger (PET!)
+							}),
+							i(185973, {	-- Chain of Bahmethra
+								["cost"] = { { "i", 185974, 200 } },	-- 200x Bahmet Chain Link
 							}),
 						},
 					}),

@@ -47,7 +47,8 @@ _.Zones =
 						}),
 						i(187278, {	-- Talon-Pierced Mawsworn Lockbox
 						--	["description"] = "Can contain items from the Korthian sets.",	-- actually not sure about this, i've just gotten 1 specific item so far that doesn't seem to be part of the sets
-							["g"] = {
+							["g"] = {	-- TODO: commented mount because i haven't received it and it isn't explicitly listed as coming from the rare in the journal like the others.  if it is NF-only it needs to be marked here + in the mount section
+							--	i(186492),	-- Summer Wilderling (MOUNT!)
 							--	i(187246),	-- Death-Enveloped Pauldrons (not sure about this one, a stranger said they got it from the cache)
 								i(187395),	-- Reinforced Stygian Spaulders
 							},

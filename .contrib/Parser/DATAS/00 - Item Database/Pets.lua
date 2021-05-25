@@ -1012,6 +1012,8 @@ pet(186191, 3099);	-- Infused Etherwyrm
 pet(186547, 3116);	-- Invasive Buzzer
 pet(186188, 3098);	-- Lil'Abom
 pet(186551, 3132);	-- Mord'al Eveningstar
+pet(186541, 3137);	-- Mosscoated Gromit
+pet(186552, 3133);	-- Rook
 pet(186537, 3104);	-- Ruby Baubleworm
 pet(186544, 3010);	-- Sinfall Screecher
 pet(186539, 3101);	-- Sly

@@ -12,31 +12,33 @@ _.Zones =
 				-- the quest was automatically on the map, but you had to speak to Xandria to ~activate it, and then all the other quests popped up.  weird system
 				-- everything after "Kyrian Assault" requires speaking to Xandria to show up.  these are probably periodically repeatable, like potentially up every time the kyrian assault is active
 				n(ACHIEVEMENTS, {
-					ach(15032),	-- Breaking Their Hold
-					ach(15035, {	-- On the Offensive
-						ach(15000),		-- United Front
-						ach(15037, {	-- This Army
-							crit(2),	-- Kearnen the Blade
-							crit(3),	-- Winslow Swan
-						}),
-						ach(15039),		-- Up For Grabs
-						ach(15042, {	-- Tea for the Troubled
-							crit(1),	-- Simone
-							crit(2),	-- Laurent
-							crit(3),	-- CryptKeeper Kassir
-							crit(4),	-- The Countess
-							crit(5),	-- Temel
-							crit(6),	-- Lost Sybille
-							crit(7),	-- Vulca
-							crit(8),	-- Watchmaster Boromod
-						}),
-						ach(15044, {	-- Krrprripripkraak's Heroes
-							crit(1),	-- Elder Gwenna
-							crit(2),	-- Foreman Thorodir
-							crit(3),	-- Te'zan
-							crit(4),	-- Warden Casad
-							crit(5),	-- Kivarr
-							crit(6),	-- Guardian Kota
+					ach(15032),		-- Breaking Their Hold
+					ach(15064, {	-- Breaking the Chains
+						ach(15035, {	-- On the Offensive
+							ach(15000),		-- United Front
+							ach(15037, {	-- This Army
+								crit(2),	-- Kearnen the Blade
+								crit(3),	-- Winslow Swan
+							}),
+							ach(15039),		-- Up For Grabs
+							ach(15042, {	-- Tea for the Troubled
+								crit(1),	-- Simone
+								crit(2),	-- Laurent
+								crit(3),	-- CryptKeeper Kassir
+								crit(4),	-- The Countess
+								crit(5),	-- Temel
+								crit(6),	-- Lost Sybille
+								crit(7),	-- Vulca
+								crit(8),	-- Watchmaster Boromod
+							}),
+							ach(15044, {	-- Krrprripripkraak's Heroes
+								crit(1),	-- Elder Gwenna
+								crit(2),	-- Foreman Thorodir
+								crit(3),	-- Te'zan
+								crit(4),	-- Warden Casad
+								crit(5),	-- Kivarr
+								crit(6),	-- Guardian Kota
+							}),
 						}),
 					}),
 					ach(15036, {	-- Rooting Out The Evil

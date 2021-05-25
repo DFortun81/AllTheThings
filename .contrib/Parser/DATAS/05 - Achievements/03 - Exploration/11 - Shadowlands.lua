@@ -511,6 +511,17 @@ _.Achievements =
 				crit(12),		-- Wild Gormling
 			}),
 		--	PTR - TODO: add achievementIDs, merge into list above, add to zones
+			ach(15053, {	-- Explore Korthia
+				crit(1),	-- Estuary of Awakening
+				crit(2),	-- Hope's Ascent
+				crit(3),	-- Keeper's Respite
+				crit(4),	-- Mauler's Outlook
+				crit(5),	-- Sanctuary of Guidance
+				crit(6),	-- Scholar's Den
+				crit(7),	-- Seeker's Quorum
+				crit(8),	-- Vault of Secrets
+				crit(9),	-- Windswept Aerie
+			}),
 			ach(14943),		-- Guarmageddon
 			ach(15054, {	-- Minions of the Cold Dark
 				crit(1),	-- Versya the Damned slain

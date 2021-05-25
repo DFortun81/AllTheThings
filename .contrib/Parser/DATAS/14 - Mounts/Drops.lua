@@ -24,6 +24,7 @@ _.Mounts =
 		i(87777),	-- Astral Cloud Serpent
 		i(153044),	-- Avenging Felcrusher Mount
 		i(43952),	-- Azure Drake
+		i(186644),	-- Beryl Shardhide
 		i(152903),	-- Biletooth Gnasher Mount [Note: Drop Argus]
 		i(43986),	-- Black Drake
 		i(166428),	-- Blackpaw
@@ -70,6 +71,7 @@ _.Mounts =
 		i(137574),	-- Felblaze Infernal
 		i(152841),	-- Felglow Mana Ray Mount
 		i(123890),	-- Felsteel Annihilator
+		i(186649),	-- Fierce Razorwing
 		i(30480),	-- Fiery Warhorse
 		i(71665),	-- Flametalon of Alysrazor
 		i(186483),	-- Foresworn Aquilon
@@ -91,6 +93,7 @@ _.Mounts =
 		i(44707),	-- Green Proto-Drake
 		i(21323),	-- Green Qiraji Battle Tank
 		i(63046),	-- Grey Riding Camel
+		i(185973),	-- Hand of Bahmethra
 		i(87771),	-- Heavenly Onyx Cloud Serpent
 		i(137575),	-- Hellfire Infernal
 		i(163579),	-- Highland Mustang
@@ -174,11 +177,13 @@ _.Mounts =
 		i(142552),	-- Smoldering Ember Wyrm
 		i(116771),	-- Solar Spirehawk
 		i(89783),	-- Son of Galleon
+		i(186657),	-- Soulbound Gloomcharger
 		i(163586),  -- Squawks
 		i(93666),	-- Spawn of Horridon
 		i(180725),	-- Spinemaw Gladechewer
 		i(166470),	-- Stonehide Elderhorn
 		i(67151),	-- Subdued Seahorse
+		i(186492),	-- Summer Wilderling
 		i(159842),	-- Summon Sharkbait
 		i(180773),	-- Sundancer
 		i(116792),	-- Sunhide Gronnling
@@ -188,6 +193,7 @@ _.Mounts =
 		i(180728),	-- Swift Gloomhoof
 		i(35513),	-- Swift White Hawkstrider
 		i(68824),	-- Swift Zulian Panther
+		i(186641),	-- Tamed Mauler
 		i(163574),	-- Terrified Pack Mule
 		i(156798),	-- The Hivemind
 		i(95057),	-- Thundering Cobalt Cloud Serpent
@@ -201,6 +207,7 @@ _.Mounts =
 		i(166803),	-- Umber Nightsaber
 		i(160829),	-- Underrot Crawg Harness
 		i(147805),	-- Valarjar Stormwing
+		i(186642),	-- Vengeance
 		i(152842),	-- Vibrant Mana Ray Mount
 		i(152790),	-- Vile Fiend
 		i(63043),	-- Vitreous Stone Drake
