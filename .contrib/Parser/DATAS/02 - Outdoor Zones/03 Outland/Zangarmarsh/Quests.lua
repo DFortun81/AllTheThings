@@ -169,10 +169,6 @@ _.Zones =
 					["provider"] = { "n", 18070 },	-- Windcaller Blackhoof
 					["coord"] = { 80.4, 64.7, ZANGARMARSH },
 				}),
-				q(9715,  {	-- Bring Me A Shrubbery!
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 17856 },	-- Gzhun'tt
-				}),
 				q(9814,  {	-- Burstcap Mushrooms, Mon!
 					["provider"] = { "n", 18014 },	-- Witch Doctor Tor'gash
 					["coord"] = { 32.9, 48.9, ZANGARMARSH },
@@ -341,15 +337,6 @@ _.Zones =
 						i(27756),	-- Marshfang Blade Axe
 					},
 				}),
-				q(9738,  {	-- Lost in Action
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 17884 },	-- Watcher Jhang
-					["groups"] = {
-						i(25541),	-- Cenarion Ring of Casting
-						i(28029),	-- Goldenvine Wraps
-						i(25540),	-- Dark Cloak of the Marsh
-					},
-				}),
 				q(9905,  {	-- Maktu's Revenge
 					["provider"] = { "n", 18010 },	-- Maktu
 					["coord"] = { 41.6, 27.4, ZANGARMARSH },
@@ -440,10 +427,6 @@ _.Zones =
 						i(27752),	-- Zangarmarsh Claymore
 					},
 				}),
-				q(9717,  {	-- Oh, It's On!
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 17857 },	-- T'shu
-				}),
 				q(9701,  {	-- Observing the Sporelings
 					["provider"] = { "n", 17831 },	-- Watcher Leesa'oh
 					["coord"] = { 23.3, 66.2, ZANGARMARSH },
@@ -523,14 +506,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(25616),	-- Tim's Trusty Helmet
-					},
-				}),
-				q(9719,  {	-- Stalk the Stalker
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 17866 },	-- Khn'nix
-					["groups"] = {
-						i(28109),	-- Essence Infused Mushroom
-						i(28108),	-- Power Infused Mushroom
 					},
 				}),
 				q(9846,  {	-- Spirits of the Feralfen

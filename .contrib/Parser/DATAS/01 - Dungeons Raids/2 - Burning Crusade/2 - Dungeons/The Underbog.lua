@@ -10,22 +10,108 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 		["groups"] = {
 			n(QUESTS, {
 				q(29568, {	-- A Necessary Evil
-					["provider"] = { "n", 54678 },	-- Naturalist Bite
+					["qg"] = 54678,	-- Naturalist Bite
+					["timeline"] = { "added 4.3.0.14732" },
+					["lvl"] = lvlsquish(61, 10, 61),
+				}),
+				q(9715, {	-- Bring Me A Shrubbery!
+					["qg"] = 17856,	-- Gzhun'tt
+					["coord"] = { 19.4, 50.0, ZANGARMARSH },
+					["timeline"] = { "removed 4.3.0.14732" },
+					["maps"] = { ZANGARMARSH },
+					["cost"] = {
+						{ "i", 24246, 5 },	-- Sanguine Hibiscus
+					},
+					["lvl"] = lvlsquish(63, 10, 63),
+				}),
+				q(9714, {	-- Bring Me Another Shrubbery!
+					["qg"] = 17856,	-- Gzhun'tt
+					["sourceQuest"] = 9715,	-- Bring Me A Shrubbery!
+					["coord"] = { 19.4, 50.0, ZANGARMARSH },
+					["timeline"] = { "removed 4.3.0.14732" },
+					["maps"] = { ZANGARMARSH },
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 24246, 5 },	-- Sanguine Hibiscus
+					},
+					["lvl"] = lvlsquish(63, 10, 63),
 				}),
 				q(29691, {	-- Bring Me A Shrubbery!
-					["provider"] = { "n", 54674 },	-- T'shu
+					["qg"] = 54674,	-- T'shu
+					["timeline"] = { "added 4.3.0.14732" },
+					["cost"] = {
+						{ "i", 24246, 5 },	-- Sanguine Hibiscus
+					},
+					["lvl"] = lvlsquish(61, 10, 61),
 				}),
 				q(29692, {	-- Bring Me Another Shrubbery!
+					["qg"] = 54674,	-- T'shu
 					["sourceQuest"] = 29691,	-- Bring Me A Shrubbery!
+					["timeline"] = { "added 4.3.0.14732" },
 					["repeatable"] = true,
-					["provider"] = { "n", 54674 },	-- T'shu
+					["cost"] = {
+						{ "i", 24246, 5 },	-- Sanguine Hibiscus
+					},
+					["lvl"] = lvlsquish(61, 10, 61),
+				}),
+				q(9738, {	-- Lost in Action
+					["qg"] = 17884,	-- Watcher Jhang
+					["coord"] = { 52.3, 36.0, ZANGARMARSH },
+					["maps"] = { COILFANG_RESERVOIR_SLAVEPENS, ZANGARMARSH },
+					["timeline"] = { "removed 4.3.0.14732" },
+					["lvl"] = lvlsquish(62, 10, 62),
+					-- #if BEFORE 4.3.0.14732
+					["groups"] = {
+						i(25541),	-- Cenarion Ring of Casting
+						i(28029),	-- Goldenvine Wraps
+						i(25540),	-- Dark Cloak of the Marsh
+					},
+					-- #endif
+				}),
+				q(9717, {	-- Oh, It's On!
+					["qg"] = 17857,	-- T'shu
+					["coord"] = { 19.4, 49.8, ZANGARMARSH },
+					["timeline"] = { "removed 4.3.0.14732" },
+					["maps"] = { ZANGARMARSH },
+					["cost"] = {
+						{ "i", 24247, 1 },	-- Underspore Frond
+					},
+					["lvl"] = lvlsquish(63, 10, 63),
+					["groups"] = {
+						{
+							["itemID"] = 24247,	-- Underspore Frond
+							["coord"] = { 71.5, 86.9, COILFANG_RESERVOIR_UNDERBOG },
+						},
+						i(28111),	-- Everlasting Underspore Frond
+					},
 				}),
 				q(29570, {	-- Rescuing the Expedition
-					["provider"] = { "n", 54675 },	-- Watcher Jhang
+					["qg"] = 54675,	-- Watcher Jhang
+					["timeline"] = { "added 4.3.0.14732" },
+					["lvl"] = lvlsquish(61, 10, 61),
 				}),
 				q(29567, {	-- Stalk the Stalker
-					["provider"] = { "n", 54674 },	-- T'shu
+					["qg"] = 54674,	-- T'shu
+					["timeline"] = { "added 4.3.0.14732" },
+					["cost"] = {
+						{ "i", 24248, 1 },	-- Brain of the Black Stalker
+					},
 					["groups"] = {
+						i(28109),	-- Essence Infused Mushroom
+						i(28108),	-- Power Infused Mushroom
+					},
+				}),
+				q(9719, {	-- Stalk the Stalker
+					["qg"] = 17866,	-- Khn'nix
+					["coord"] = { 19.6, 49.8, ZANGARMARSH },
+					["timeline"] = { "removed 4.3.0.14732" },
+					["maps"] = { ZANGARMARSH },
+					["cost"] = {
+						{ "i", 24248, 1 },	-- Brain of the Black Stalker
+					},
+					["lvl"] = lvlsquish(63, 10, 63),
+					["groups"] = {
+						
 						i(28109),	-- Essence Infused Mushroom
 						i(28108),	-- Power Infused Mushroom
 					},
@@ -67,60 +153,85 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 				e(577, {	-- Ghaz'an
 					["creatureID"] = 18105,
 					["groups"] = {
+						-- #if AFTER 7.3.5
 						i(27757),	-- Greatstaff of the Leviathan
+						-- #endif
 						i(24461),	-- Hatebringer
+						-- #if AFTER 7.3.5
 						i(27759),	-- Headdress of the Tides
 						i(27758),	-- Hydra-Fang Necklace
+						-- #endif
 						i(24462),	-- Luminous Pearls of Insight
 						i(24460),	-- Talisman of Tenacity
 						i(24459),	-- Cloak of Healing Rays
+						-- #if AFTER 7.3.5
 						i(27760),	-- Dunewind Sash
 						i(27755),	-- Girdle of Gallantry
+						-- #endif
 						i(24458),	-- Studded Girdle of Virtue
+						-- #if AFTER 7.3.5
 						i(27761),	-- Ring of the Shadow Deeps
+						-- #endif
 					},
 				}),
 				e(578, {	-- Swamplord Musel'ek
 					["creatureID"] = 17826,
 					["groups"] = {
+						-- #if AFTER 7.3.5
 						i(27767),	-- Bogreaver
+						-- #endif
 						i(24453),	-- Zangartooth Shortblade
+						-- #if AFTER 7.3.5
 						i(27763),	-- Crown of the Forest Lord
 						i(27766),	-- Swampstone Necklace
+						-- #endif
 						i(24457),	-- Truth Bearer Shoulderguards
 						i(24454),	-- Cloak of Enduring Swiftness
 						i(24455),	-- Tunic of the Nightwatcher
+						-- #if AFTER 7.3.5
 						i(27765),	-- Armwraps of Disdain
 						i(27764),	-- Hands of the Sun
+						-- #endif
 						i(24456),	-- Greaves of the Iron Guardian
+						-- #if AFTER 7.3.5
 						i(27762),	-- Weathered Band of the Swamplord
+						-- #endif
 					},
 				}),
 				e(579, {	-- The Black Stalker
 					["creatureID"] = 17882,
 					["groups"] = {
 						ach(650),	-- Underbog
+						-- #if AFTER 7.3.5
 						i(27769),	-- Endbringer
+						-- #endif
 						i(24464),	-- The Stalker's Fangs
+						-- #if AFTER 7.3.5
 						i(29350),	-- The Black Stalk
 						i(27772),	-- Stormshield of Renewal
 						i(27781),	-- Demonfang Ritual Helm
 						i(27938),	-- Savage Mask of the Lynx Lord
 						i(27779),	-- Bone Chain Necklace
 						i(27771),	-- Doomplate Shoulderguards
+						-- #endif
 						i(24463),	-- Pauldrons of Brute Force
 						i(24481),	-- Robes of the Augurer
 						i(24465),	-- Shamblehide Chestguard
+						-- #if AFTER 7.3.5
 						i(27768),	-- Oracle Belt of Timeless Mystery
 						i(27773),	-- Barbaric Legstraps
 						i(27907),	-- Mana-Etched Pantaloons
+						-- #endif
 						i(24466),	-- Skulldugger's Leggings
+						-- #if AFTER 7.3.5
 						i(30541),	-- Stormsong Kilt
 						i(29265),	-- Barkchip Boots
 						i(32081),	-- Eye of the Stalker
 						i(27780),	-- Ring of Fabled Hope
 						i(27896),	-- Alembic of Infernal Power
 						i(27770),	-- Argussian Compass
+						-- #endif
+						i(24248),	-- Brain of the Black Stalker
 					},
 				}),
 			}),
@@ -173,56 +284,85 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 							-- #endif
 						},
 					}),
-					cr(18105, e(577, {	-- Ghaz'an
-						i(27757),	-- Greatstaff of the Leviathan
-						i(24461),	-- Hatebringer
-						i(27759),	-- Headdress of the Tides
-						i(27758),	-- Hydra-Fang Necklace
-						i(24462),	-- Luminous Pearls of Insight
-						i(24460),	-- Talisman of Tenacity
-						i(24459),	-- Cloak of Healing Rays
-						i(27760),	-- Dunewind Sash
-						i(27755),	-- Girdle of Gallantry
-						i(24458),	-- Studded Girdle of Virtue
-						i(27761),	-- Ring of the Shadow Deeps
-					})),
-					cr(17826, e(578, {	-- Swamplord Musel'ek
-						i(27767),	-- Bogreaver
-						i(24453),	-- Zangartooth Shortblade
-						i(27763),	-- Crown of the Forest Lord
-						i(27766),	-- Swampstone Necklace
-						i(24457),	-- Truth Bearer Shoulderguards
-						i(24454),	-- Cloak of Enduring Swiftness
-						i(24455),	-- Tunic of the Nightwatcher
-						i(27765),	-- Armwraps of Disdain
-						i(27764),	-- Hands of the Sun
-						i(24456),	-- Greaves of the Iron Guardian
-						i(27762),	-- Weathered Band of the Swamplord
-					})),
-					cr(17882, e(579, {	-- The Black Stalker
-						ach(670),	-- Heroic: Underbog
-						i(27769),	-- Endbringer
-						i(24464),	-- The Stalker's Fangs
-						i(29350),	-- The Black Stalk
-						i(27772),	-- Stormshield of Renewal
-						i(27781),	-- Demonfang Ritual Helm
-						i(27938),	-- Savage Mask of the Lynx Lord
-						i(27779),	-- Bone Chain Necklace
-						i(27771),	-- Doomplate Shoulderguards
-						i(24463),	-- Pauldrons of Brute Force
-						i(24481),	-- Robes of the Augurer
-						i(24465),	-- Shamblehide Chestguard
-						i(27768),	-- Oracle Belt of Timeless Mystery
-						i(27773),	-- Barbaric Legstraps
-						i(27907),	-- Mana-Etched Pantaloons
-						i(24466),	-- Skulldugger's Leggings
-						i(30541),	-- Stormsong Kilt
-						i(29265),	-- Barkchip Boots
-						i(32081),	-- Eye of the Stalker
-						i(27780),	-- Ring of Fabled Hope
-						i(27896),	-- Alembic of Infernal Power
-						i(27770),	-- Argussian Compass
-					})),
+					e(577, {	-- Ghaz'an
+						["creatureID"] = 18105,
+						["groups"] = {
+							i(27757),	-- Greatstaff of the Leviathan
+							-- #if AFTER 7.3.5
+							i(24461),	-- Hatebringer
+							-- #endif
+							i(27759),	-- Headdress of the Tides
+							i(27758),	-- Hydra-Fang Necklace
+							-- #if AFTER 7.3.5
+							i(24462),	-- Luminous Pearls of Insight
+							i(24460),	-- Talisman of Tenacity
+							i(24459),	-- Cloak of Healing Rays
+							-- #endif
+							i(27760),	-- Dunewind Sash
+							i(27755),	-- Girdle of Gallantry
+							-- #if AFTER 7.3.5
+							i(24458),	-- Studded Girdle of Virtue
+							-- #endif
+							i(27761),	-- Ring of the Shadow Deeps
+						},
+					}),
+					e(578, {	-- Swamplord Musel'ek
+						["creatureID"] = 17826,
+						["groups"] = {
+							i(27767),	-- Bogreaver
+							-- #if AFTER 7.3.5
+							i(24453),	-- Zangartooth Shortblade
+							-- #endif
+							i(27763),	-- Crown of the Forest Lord
+							i(27766),	-- Swampstone Necklace
+							-- #if AFTER 7.3.5
+							i(24457),	-- Truth Bearer Shoulderguards
+							i(24454),	-- Cloak of Enduring Swiftness
+							i(24455),	-- Tunic of the Nightwatcher
+							-- #endif
+							i(27765),	-- Armwraps of Disdain
+							i(27764),	-- Hands of the Sun
+							-- #if AFTER 7.3.5
+							i(24456),	-- Greaves of the Iron Guardian
+							-- #endif
+							i(27762),	-- Weathered Band of the Swamplord
+						},
+					}),
+					e(579, {	-- The Black Stalker
+						["creatureID"] = 17882,
+						["groups"] = {
+							ach(670),	-- Heroic: Underbog
+							i(27769),	-- Endbringer
+							-- #if AFTER 7.3.5
+							i(24464),	-- The Stalker's Fangs
+							-- #endif
+							i(29350),	-- The Black Stalk
+							i(27772),	-- Stormshield of Renewal
+							i(27781),	-- Demonfang Ritual Helm
+							i(27938),	-- Savage Mask of the Lynx Lord
+							i(27779),	-- Bone Chain Necklace
+							i(27771),	-- Doomplate Shoulderguards
+							-- #if AFTER 7.3.5
+							i(24463),	-- Pauldrons of Brute Force
+							i(24481),	-- Robes of the Augurer
+							i(24465),	-- Shamblehide Chestguard
+							-- #endif
+							i(27768),	-- Oracle Belt of Timeless Mystery
+							i(27773),	-- Barbaric Legstraps
+							i(27907),	-- Mana-Etched Pantaloons
+							-- #if AFTER 7.3.5
+							i(24466),	-- Skulldugger's Leggings
+							-- #endif
+							i(30541),	-- Stormsong Kilt
+							i(29265),	-- Barkchip Boots
+							i(32081),	-- Eye of the Stalker
+							i(27780),	-- Ring of Fabled Hope
+							i(27896),	-- Alembic of Infernal Power
+							i(27770),	-- Argussian Compass
+							i(24248),	-- Brain of the Black Stalker
+							i(33826),	-- Black Stalker Egg
+						},
+					}),
 				},
 			}),
 		},
