@@ -72,6 +72,7 @@ _.Mounts =
 		i(123890),	-- Felsteel Annihilator
 		i(30480),	-- Fiery Warhorse
 		i(71665),	-- Flametalon of Alysrazor
+		i(186483),	-- Foresworn Aquilon
 		i(166433),	-- Frightened Kodo
 		i(116794),	-- Garn Nighthowl
 		i(116779),	-- Garn Steelmaw
@@ -115,6 +116,7 @@ _.Mounts =
 		i(77069),	-- Life-Binder's Handmaiden
 		i(163646),	-- Lil' Donkey
 		i(138258),	-- Long-Forgotten Hippogryph
+		i(186489),	-- Lord of the Corpseflies
 		i(151623),	-- Lucid Nightmare Mount [Note: Drop's from Puzzler's Demise; a puzzle mount similar to Kosumoth, Riddler's Mind Worm and Sun Darter Hatchling]
 		i(152814),	-- Maddened Chaosrunner
 		i(186643),	-- Maelie The Wanderer
@@ -122,6 +124,7 @@ _.Mounts =
 		i(184167),	-- Mawsworn Soulhunter
 		i(174769),	-- Malevolent Drone
 		i(181819),	-- Marrowfang's Reins
+		i(186479),	-- Masterwork Gravewing
 		i(168826),	-- Mechagon Peacekeeper
 		i(142236),	-- Midnight
 		i(45693),	-- Mimiron's Head

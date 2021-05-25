@@ -64,11 +64,12 @@ _.Zones =
 						180064,	-- Corpse Heap
 						180057,	-- Restless Necromancer
 					},
-					["g"] = {
+					["g"] = {	-- TODO: if 'lord of the corpseflies' is necrolord-only, it needs to be marked here + in mount section
 					--	crit(18, {	-- Corpse Heap
 						crit(20, {	-- Corpse Heap
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
+						i(186489),	-- Lord of the Corpseflies (MOUNT!)
 					},
 				}),
 				n(179472, {	-- Konthrogz the Obliterator
@@ -152,6 +153,12 @@ _.Zones =
 						crit(22, {	-- No Stoneborn Left Behind
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
+						i(187283, {	-- Gravewing Crystal
+							["questID"] = 64530,	-- Gravewing Crystal
+							["g"] = {	-- TODO: cannot test whether or not this mount is venthyr-specific because it doesn't show up in the mount journal.
+								i(186479),	-- Masterwork Gravewing (MOUNT!)
+							},
+						}),
 					},
 				}),
 				n(179760, {	-- Towering Exterminator
@@ -191,15 +198,16 @@ _.Zones =
 					["questID"] = 64338,
 					["isDaily"] = true,
 					["coords"] = {
-						{ 55.6, 31.7, KORTHIA },
-						{ 56.8, 32.6, KORTHIA },
+						{ 56.8, 32.6, KORTHIA },	-- start
+						{ 46.9, 35.1, KORTHIA },	-- end
 					},
 					["cr"] = 180028,	-- Popo
-					["g"] = {
+					["g"] = {	-- TODO: if foresworn aquilon is kyrian-only, it needs to be marked here + in mount section
 					--	crit(19, {	-- Popo's Potion Patrol
 						crit(21, {	-- Popo's Potion Patrol
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
+						i(186483),	-- Foresworn Aquilon (MOUNT!)
 						i(187176),	-- Vesper of Harmony
 					},
 				}),

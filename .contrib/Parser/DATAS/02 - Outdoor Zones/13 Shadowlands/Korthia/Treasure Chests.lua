@@ -225,6 +225,154 @@ _.Zones =
 						}),
 					},
 				}),
+				q(64316,  {	-- Shared Treasure #1
+					["description"] = "Korthia has treasures that share a set of daily quests.  Looting a specific object does not lock you out for the day - they are repeatable until you have collected all the daily quests.\n\nThe treasures' names are |cFFFFFFFFPile of Bones|r, |cFFFFFFFFRelic Cache|r, and |cFFFFFFFFShardhide Stash|r.  These treasures do not show up on the minimap.",
+					["isDaily"] = true,
+					["coords"] = {
+						{ 27.2, 48.3, KORTHIA },	--  Pile of Bones
+						{ 28.2, 50.7, KORTHIA },	--  Pile of Bones
+						{ 32.7, 42.0, KORTHIA },	--  Pile of Bones
+						{ 32.8, 45.3, KORTHIA },	--  Pile of Bones
+						{ 32.8, 55.1, KORTHIA },	--  Pile of Bones
+						{ 34.7, 45.8, KORTHIA },	--  Pile of Bones
+						{ 37.1, 53.7, KORTHIA },	--  Pile of Bones
+						{ 38.2, 51.7, KORTHIA },	--  Pile of Bones
+						{ 39.6, 50.2, KORTHIA },	--  Pile of Bones
+						{ 45.6, 81.4, KORTHIA },	--  Relic Cache
+						{ 53.9, 76.1, KORTHIA },	--  Relic Cache
+						{ 54.2, 72.3, KORTHIA },	--  Relic Cache
+						{ 54.9, 50.2, KORTHIA },	--  Relic Cache
+						{ 55.3, 65.1, KORTHIA },	--  Relic Cache
+						{ 55.8, 37.3, KORTHIA },	--  Relic Cache
+						{ 56.3, 67.6, KORTHIA },	--  Relic Cache
+						{ 56.8, 38.8, KORTHIA },	--  Relic Cache
+						{ 57.3, 34.9, KORTHIA },	--  Relic Cache
+						{ 58.8, 33.6, KORTHIA },	--  Relic Cache
+						{ 59.8, 35.9, KORTHIA },	--  Relic Cache
+						{ 60.3, 39.0, KORTHIA },	--  Relic Cache
+						{ 61.0, 32.9, KORTHIA },	--  Relic Cache
+						{ 61.4, 38.1, KORTHIA },	--  Relic Cache
+						{ 62.4, 37.5, KORTHIA },	--  Relic Cache
+						{ 45.8, 30.1, KORTHIA },	--  Shardhide Stash
+						{ 47.4, 26.2, KORTHIA },	--  Shardhide Stash
+						{ 49.1, 30.1, KORTHIA },	--  Shardhide Stash
+						{ 49.7, 33.3, KORTHIA },	--  Shardhide Stash
+						{ 50.4, 31.1, KORTHIA },	--  Shardhide Stash
+					},
+					["name"] = "Shared Treasure #1",
+					["icon"] = 1542847,
+				}),
+				q(64317,  {	-- Shared Treasure #2
+					["description"] = "Korthia has treasures that share a set of daily quests.  Looting a specific object does not lock you out for the day - they are repeatable until you have collected all the daily quests.\n\nThe treasures' names are |cFFFFFFFFPile of Bones|r, |cFFFFFFFFRelic Cache|r, and |cFFFFFFFFShardhide Stash|r.  These treasures do not show up on the minimap.",
+					["isDaily"] = true,
+					["coords"] = {
+						{ 27.2, 48.3, KORTHIA },	--  Pile of Bones
+						{ 28.2, 50.7, KORTHIA },	--  Pile of Bones
+						{ 32.7, 42.0, KORTHIA },	--  Pile of Bones
+						{ 32.8, 45.3, KORTHIA },	--  Pile of Bones
+						{ 32.8, 55.1, KORTHIA },	--  Pile of Bones
+						{ 34.7, 45.8, KORTHIA },	--  Pile of Bones
+						{ 37.1, 53.7, KORTHIA },	--  Pile of Bones
+						{ 38.2, 51.7, KORTHIA },	--  Pile of Bones
+						{ 39.6, 50.2, KORTHIA },	--  Pile of Bones
+						{ 45.6, 81.4, KORTHIA },	--  Relic Cache
+						{ 53.9, 76.1, KORTHIA },	--  Relic Cache
+						{ 54.2, 72.3, KORTHIA },	--  Relic Cache
+						{ 54.9, 50.2, KORTHIA },	--  Relic Cache
+						{ 55.3, 65.1, KORTHIA },	--  Relic Cache
+						{ 55.8, 37.3, KORTHIA },	--  Relic Cache
+						{ 56.3, 67.6, KORTHIA },	--  Relic Cache
+						{ 56.8, 38.8, KORTHIA },	--  Relic Cache
+						{ 57.3, 34.9, KORTHIA },	--  Relic Cache
+						{ 58.8, 33.6, KORTHIA },	--  Relic Cache
+						{ 59.8, 35.9, KORTHIA },	--  Relic Cache
+						{ 60.3, 39.0, KORTHIA },	--  Relic Cache
+						{ 61.0, 32.9, KORTHIA },	--  Relic Cache
+						{ 61.4, 38.1, KORTHIA },	--  Relic Cache
+						{ 62.4, 37.5, KORTHIA },	--  Relic Cache
+						{ 45.8, 30.1, KORTHIA },	--  Shardhide Stash
+						{ 47.4, 26.2, KORTHIA },	--  Shardhide Stash
+						{ 49.1, 30.1, KORTHIA },	--  Shardhide Stash
+						{ 49.7, 33.3, KORTHIA },	--  Shardhide Stash
+						{ 50.4, 31.1, KORTHIA },	--  Shardhide Stash
+					},
+					["name"] = "Shared Treasure #2",
+					["icon"] = 1542847,
+				}),
+				q(64318,  {	-- Shared Treasure #3
+					["description"] = "Korthia has treasures that share a set of daily quests.  Looting a specific object does not lock you out for the day - they are repeatable until you have collected all the daily quests.\n\nThe treasures' names are |cFFFFFFFFPile of Bones|r, |cFFFFFFFFRelic Cache|r, and |cFFFFFFFFShardhide Stash|r.  These treasures do not show up on the minimap.",
+					["isDaily"] = true,
+					["coords"] = {
+						{ 27.2, 48.3, KORTHIA },	--  Pile of Bones
+						{ 28.2, 50.7, KORTHIA },	--  Pile of Bones
+						{ 32.7, 42.0, KORTHIA },	--  Pile of Bones
+						{ 32.8, 45.3, KORTHIA },	--  Pile of Bones
+						{ 32.8, 55.1, KORTHIA },	--  Pile of Bones
+						{ 34.7, 45.8, KORTHIA },	--  Pile of Bones
+						{ 37.1, 53.7, KORTHIA },	--  Pile of Bones
+						{ 38.2, 51.7, KORTHIA },	--  Pile of Bones
+						{ 39.6, 50.2, KORTHIA },	--  Pile of Bones
+						{ 45.6, 81.4, KORTHIA },	--  Relic Cache
+						{ 53.9, 76.1, KORTHIA },	--  Relic Cache
+						{ 54.2, 72.3, KORTHIA },	--  Relic Cache
+						{ 54.9, 50.2, KORTHIA },	--  Relic Cache
+						{ 55.3, 65.1, KORTHIA },	--  Relic Cache
+						{ 55.8, 37.3, KORTHIA },	--  Relic Cache
+						{ 56.3, 67.6, KORTHIA },	--  Relic Cache
+						{ 56.8, 38.8, KORTHIA },	--  Relic Cache
+						{ 57.3, 34.9, KORTHIA },	--  Relic Cache
+						{ 58.8, 33.6, KORTHIA },	--  Relic Cache
+						{ 59.8, 35.9, KORTHIA },	--  Relic Cache
+						{ 60.3, 39.0, KORTHIA },	--  Relic Cache
+						{ 61.0, 32.9, KORTHIA },	--  Relic Cache
+						{ 61.4, 38.1, KORTHIA },	--  Relic Cache
+						{ 62.4, 37.5, KORTHIA },	--  Relic Cache
+						{ 45.8, 30.1, KORTHIA },	--  Shardhide Stash
+						{ 47.4, 26.2, KORTHIA },	--  Shardhide Stash
+						{ 49.1, 30.1, KORTHIA },	--  Shardhide Stash
+						{ 49.7, 33.3, KORTHIA },	--  Shardhide Stash
+						{ 50.4, 31.1, KORTHIA },	--  Shardhide Stash
+					},
+					["name"] = "Shared Treasure #3",
+					["icon"] = 1542847,
+				}),
+				q(64309,  {	-- Shared Treasure #4
+					["description"] = "Korthia has treasures that share a set of daily quests.  Looting a specific object does not lock you out for the day - they are repeatable until you have collected all the daily quests.\n\nThe treasures' names are |cFFFFFFFFPile of Bones|r, |cFFFFFFFFRelic Cache|r, and |cFFFFFFFFShardhide Stash|r.  These treasures do not show up on the minimap.",
+					["isDaily"] = true,
+					["coords"] = {
+						{ 27.2, 48.3, KORTHIA },	--  Pile of Bones
+						{ 28.2, 50.7, KORTHIA },	--  Pile of Bones
+						{ 32.7, 42.0, KORTHIA },	--  Pile of Bones
+						{ 32.8, 45.3, KORTHIA },	--  Pile of Bones
+						{ 32.8, 55.1, KORTHIA },	--  Pile of Bones
+						{ 34.7, 45.8, KORTHIA },	--  Pile of Bones
+						{ 37.1, 53.7, KORTHIA },	--  Pile of Bones
+						{ 38.2, 51.7, KORTHIA },	--  Pile of Bones
+						{ 39.6, 50.2, KORTHIA },	--  Pile of Bones
+						{ 45.6, 81.4, KORTHIA },	--  Relic Cache
+						{ 53.9, 76.1, KORTHIA },	--  Relic Cache
+						{ 54.2, 72.3, KORTHIA },	--  Relic Cache
+						{ 54.9, 50.2, KORTHIA },	--  Relic Cache
+						{ 55.3, 65.1, KORTHIA },	--  Relic Cache
+						{ 55.8, 37.3, KORTHIA },	--  Relic Cache
+						{ 56.3, 67.6, KORTHIA },	--  Relic Cache
+						{ 56.8, 38.8, KORTHIA },	--  Relic Cache
+						{ 57.3, 34.9, KORTHIA },	--  Relic Cache
+						{ 58.8, 33.6, KORTHIA },	--  Relic Cache
+						{ 59.8, 35.9, KORTHIA },	--  Relic Cache
+						{ 60.3, 39.0, KORTHIA },	--  Relic Cache
+						{ 61.0, 32.9, KORTHIA },	--  Relic Cache
+						{ 61.4, 38.1, KORTHIA },	--  Relic Cache
+						{ 62.4, 37.5, KORTHIA },	--  Relic Cache
+						{ 45.8, 30.1, KORTHIA },	--  Shardhide Stash
+						{ 47.4, 26.2, KORTHIA },	--  Shardhide Stash
+						{ 49.1, 30.1, KORTHIA },	--  Shardhide Stash
+						{ 49.7, 33.3, KORTHIA },	--  Shardhide Stash
+						{ 50.4, 31.1, KORTHIA },	--  Shardhide Stash
+					},
+					["name"] = "Shared Treasure #4",
+					["icon"] = 1542847,
+				}),
 				n(179772, {	-- Spectral Bound Chest
 					["description"] = "Requires collecting three |cFFFFFFFFSpectral Keys|r in a specific order.",
 				--	["isDaily"] = true,	-- TODO - the keys reset daily, but i'm not actually sure if this chest does, because i have not yet personally opened it lol.  under the assumption the chest is 1-time, i commented out isDaily on the keys for ease of tracking, and attached altQuests so if the quest is permanent they won't show up once the one-time chest has been collected.  will revisit and change if necessary when i'm able to open the chest myself

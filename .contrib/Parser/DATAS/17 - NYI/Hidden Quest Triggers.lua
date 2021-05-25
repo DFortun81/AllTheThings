@@ -4763,10 +4763,6 @@ _.HiddenQuestTriggers =
 		q(64264),	-- Korthia treasure - Infested Vestige
 		q(64238),	-- Korthia treasure - Lost Memento
 		q(64268),	-- Korthia treasure - Offering Box
-		q(64316),	-- Korthia repeatable treasure, Relic Cache
-		q(64317),	-- Korthia repeatable treasure, Relic Cache
-		q(64318),	-- Korthia repeatable treasure, Relic Cache / Pile of Bones
-		q(64309),	-- Korthia repeatable treasure, Relic Cache
 		q(64045),	-- The Maw repeatable treasure, Stolen Anima Vessel
 		q(64044),	-- The Maw repeatable treasure, Stolen Anima Vessel (34.2, 64.6)
 	}),

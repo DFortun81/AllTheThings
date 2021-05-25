@@ -495,18 +495,12 @@ _.Zones =
 								["achievementID"] = 15000,	-- United Front
 							}),
 							i(185991, {	-- War Chest of the Wild Hunt
+								i(186000),	-- Wild Hunt Legsplitter (MOUNT!)
+								i(186547),	-- Invasive Buzzer (PET!)
 							}),
 						}),
 					},
 				}),
-				--[[
-				-- this apparently comes from an Etherwyrm Cage from the Ardenweald/Night Fae assault.  probably also requires i(186190),	-- Etherwyrm Cage Key
-				i(186191),	-- Infused Etherwyrm (PET!)
-				i(, {	-- War Chest of the Wild Hunt
-					i(186547),	-- Invasive Buzzer (PET!)
-					i(186000),	-- Wild Hunt Legsplitter (MOUNT!)
-				}),
-				--]]
 				q(63822, {	-- Venthyr Assault
 					["sourceQuests"] = { 63902 },	-- Good News, Everyone!
 					["provider"] = { "n", 178006 },	-- Prince Renathal

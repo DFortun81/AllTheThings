@@ -64,7 +64,10 @@ _.Zones =
 				i(186121),	-- Foresworn Scout's Striders
 				i(186153),	-- Foresworn Seal
 				i(186559, {	-- Grappling Gauntlet (PET!)
-					["cr"] = 177293,	-- Mawsworn Torturer (possibly from other mobs in Scholar's Den)
+					["crs"] = {	-- probably from other Mawsworn mobs
+						179305,	-- Mawsworn Steelshaper
+						177293,	-- Mawsworn Torturer
+					},
 				}),
 				i(186151),	-- Mawsworn Assasin's Twinblade
 				i(186143),	-- Mawsworn Assassin's Backstabber

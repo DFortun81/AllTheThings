@@ -387,10 +387,13 @@ i(186490, 353885);	-- Battlefield Swarmer
 i(186645, 354357);	-- Crimson Shardhide
 i(186646, 354358);	-- Darkmaul
 i(186482, 353875);	-- Elysian Aquilon
+i(186483, 353877);	-- Foresworn Aquilon
 i(186652, 354360);	-- Garnet Razorwing
 i(185996, 332904);	-- Harvester's Dredwing
+i(186489, 347250);	-- Lord of the Corpseflies
 i(186643, 354362);	-- Maelie The Wanderer
 i(186487, 353883);	-- Maldraxxian Corpsefly
+i(186479, 215545);	-- Masterwork Gravewing
 i(186478, 353866);	-- Obsidian Gravewing
 i(186477, 353873);	-- Pale Gravewing
 i(187183, 356501);	-- Rampaging Mauler
