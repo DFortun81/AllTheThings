@@ -363,12 +363,6 @@ _.Zones =
 						i(31732),	-- Unearthed Orb
 					},
 				}),
-				q(29595, {	-- Everything Will Be Alright
-					["coord"] = { 35.0, 65.2, TEROKKAR_FOREST },
-					["provider"] = { "n", 19698 },	-- Greatfather Aldrimus
-					["sourceQuest"] = 10253,	-- Levixus the Soul Caller
-					["isBreadcrumb"] = true,
-				}),
 				q(10923, {	-- Evil Draws Near
 					["provider"] = { "n", 22456 },	-- Oakun
 					["coord"] = { 31.0, 76.5, TEROKKAR_FOREST },
@@ -406,16 +400,6 @@ _.Zones =
 					["provider"] = { "n", 22481 },	-- Dwarfowitz
 					["coord"] = { 30.9, 76.1, TEROKKAR_FOREST },
 					["sourceQuest"] = 10922,	-- Digging Through Bones
-				}),
-				q(10164, {	-- Greatfather Aldrimus
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 19698 },	-- Greatfather Aldrimus
-					["groups"] = {
-						i(29341),	-- Auchenai Anchorite's Robe
-						i(29340),	-- Auchenai Monk's Tunic
-						i(29339),	-- Auchenai Tracker's Hauberk
-						i(29337),	-- The Exarch's Protector
-					},
 				}),
 				q(29582, {	-- Grek's Crazy Night
 					["provider"] = { "n", 19606 },	-- Grek

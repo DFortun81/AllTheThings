@@ -5567,6 +5567,22 @@ itemrecipe({"Design: Glowing Shadow Draenite [TBC]", "Design: Timeless Shadow Dr
 
 
 --[[
+i(24173),	-- Design: Circlet of Arcane Might
+i(24160),	-- Design: Khorium Inferno Band
+i(24159, {	-- Design: Khorium Band of Frost
+					["crs"] = { 17722 },	-- Coilfang Sorceress
+				}),
+				i(24172, {	-- Design: Coronet of Verdant Flame
+					["cr"] = 18422,	-- Sunseeker Botanist
+				}),
+				i(35305),	-- Design: Brilliant Living Ruby
+							{	-- Design: Brilliant Living Ruby
+								["itemID"] = 24195,	-- Design: Brilliant Living Ruby
+								["spellID"] = 0,	-- This is now available via 35305, need to delink the old plans from the recipe
+								["u"] = REMOVED_FROM_GAME,
+							},
+							i(35307),	-- Design: Rigid Star of Elune (BoP version)
+							i(35304),	-- Design: Solid Star of Elune (BoP version)
 i(24162, {	-- Design: Arcane Khorium Band
 	["cr"] = 18866,  -- Mageslayer
 }),

@@ -385,11 +385,6 @@ _.Zones =
 					["coord"] = { 54.7, 44.3, SHATTRATH_CITY },
 					["sourceQuests"] = { 10210 },	-- A'dal
 				}),
-				q(10167, {	-- Auchindoun...
-					["provider"] = { "n", 18481 },	-- A'dal
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 10102 },	-- A Secret Revealed (*UNTESTED*)
-				}),
 				q(10180, {	-- Can't Stay Away
 					["provider"] = { "n", 19045 },	-- Oloraak
 					["isBreadcrumb"] = true,
