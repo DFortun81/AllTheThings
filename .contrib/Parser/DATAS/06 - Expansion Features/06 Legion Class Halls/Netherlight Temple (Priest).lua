@@ -542,7 +542,7 @@ _.ExpansionFeatures =
 						["maps"] = { 748 },
 					}),
 					q(41631, {	-- The Nexus Vault
-						["sourceQuests"] = { 41629 } ,	-- Unleashing Judgment
+						["sourceQuests"] = { 41630 } ,	-- Unleashing Judgment
 						["classes"] = { PRIEST },
 						["provider"] = { "n", 105917 },	-- Image of Kalec
 						["maps"] = { 736 },	-- The Nexus Vault

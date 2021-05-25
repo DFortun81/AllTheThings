@@ -30,10 +30,6 @@ _.Zones =
 					["coord"] = { 32.7, 70.7, 198 },
 					["sourceQuest"] = 25740,	-- Fact-Finding Mission
 				}),
-				q(42046, {	-- A New Beginning
-					["provider"] = { "n", 106250 },	--
-					["classes"] = { DRUID },
-				}),
 				q(25411, {	-- A New Master
 					["provider"] = { "n", 39933 },	-- Tyrus Blackhorn
 					["coord"] = { 22.2, 44.9, 198 },

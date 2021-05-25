@@ -195,9 +195,6 @@ _.Zones =
 					["classes"] = { DEATHKNIGHT },
 					["provider"] = { "n", 101441 },	-- Duke Lankral
 				}),
-				q(40930, {	-- Apocalypse
-					["classes"] = { DEATHKNIGHT },
-				}),
 				q(38035, {	-- A Royal Summons
 					["provider"] = { "n", 96644 },	-- Sky Admiral Rogers
 					["coord"] = { 29.2, 47.2, 627 },
@@ -452,16 +449,6 @@ _.Zones =
 					["provider"] = { "n", 116714 },	-- Ritssyn Flamescowl
 					["coord"] = { 57.9, 72.6, 629 },
 					["lvl"] = 110,
-				}),
-				q(42125, {	-- Dark Whispers
-					["sourceQuests"] = {
-						40623,	-- The Dark Riders
-						41155,	-- The Dark Riders
-						42168,	-- Looking into the Darkness
-					},
-					["classes"] = { WARLOCK },
-					["coord"] = { 54.0, 47.0, 627 },
-					["provider"] = { "n", 106610 },	-- Calydus
 				}),
 				q(42680, {	-- Deciphering the Letter
 					["sourceQuests"] = { 42678 },	-- Black Rook Hold: Into Black Rook Hold
@@ -736,10 +723,6 @@ _.Zones =
 					["classes"] = { PALADIN },
 					["provider"] = { "n", 108776 },	-- Lord Maxwell Tyrosus
 				}),
-				q(41966, {	-- House Call
-					["classes"] = { PRIEST },
-					["provider"] = { "n", 105602 },	-- Vindicator Boros
-				}),
 				q(44821, {	-- In Dire Need
 					["sourceQuests"] = { 44782 },	-- Away From Prying Eyes
 					["provider"] = { "n", 115465 },	-- Archmage Modera
@@ -893,10 +876,6 @@ _.Zones =
 					["classes"] = { PALADIN },
 					["provider"] = { "n", 118009 },	-- Maximillian of Northshire
 				}),
-				q(41967, {	-- Out of the Darkness
-					["classes"] = { PRIEST },
-					["provider"] = { "n", 105603 },	-- Defender Barrem
-				}),
 				q(47058, {	-- Outlaw: The Folly of Levia Laurence
 					["sourceQuests"] = {
 						44821,	-- In Dire Need
@@ -913,14 +892,6 @@ _.Zones =
 					["sourceQuests"] = { 40731 },	-- The Heart of the Dreadscar
 					["classes"] = { WARLOCK },
 					["provider"] = { "n", 101097 },	-- Calydus
-				}),
-				q(41542, {	-- Preparation for the Hunt
-					["classes"] = { HUNTER },
-					["providers"] = {
-						{ "n", 102478 },	-- Emmarel Shadewarden
-						{ "n", 107317 },	-- Emmarel Shadewarden
-						{ "n", 107973 },	-- Emmarel Shadewarden
-					},
 				}),
 				q(44545, {	-- Pressing the Assault
 					["isBreadcrumb"] = true,
@@ -971,18 +942,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 90463 },	-- Archmage Karlain
 					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(40823, {	-- Rebuilding the Council
-					["classes"] = { WARLOCK },
-					["provider"] = { "n", 101097 },	-- Calydus
-				}),
-				q(41540, {	-- Rendezvous with the Courier
-					["classes"] = { HUNTER },
-					["providers"] = {
-						{ "n", 102478 },	-- Emmarel Shadewarden
-						{ "n", 107317 },	-- Emmarel Shadewarden
-						{ "n", 107973 },	-- Emmarel Shadewarden
-					},
 				}),
 				q(47004, {	-- Restoration: The Bradensbrook Investigation (Druid version)
 					["sourceQuests"] = {
@@ -1237,10 +1196,6 @@ _.Zones =
 					["coord"] = { 57.3, 60.8, 628 },	-- Dalaran Underbelly
 					["provider"] = { "n", 101456 },	-- Ritssyn Flamescowl
 				}),
-				q(41631, {	-- The Nexus Vault
-					["sourceQuests"] = { 41630 },	-- Unleashing Judgment
-					["classes"] = { PRIEST },
-				}),
 				q(43249, {	-- The Raven's Eye
 					["sourceQuests"] = { 43253 },	-- Maw of Souls: Ancient Vrykul Legends
 					["classes"] = { ROGUE },
@@ -1249,11 +1204,6 @@ _.Zones =
 				q(38376, {	-- The Search for the Highlord
 					["classes"] = { PALADIN },
 					["provider"] = { "n", 90369 },	-- Lord Maxwell Tyrosus
-				}),
-				q(42120, {	-- The Silver Hand
-					["sourceQuests"] = { 42377 },	-- The Brother's Trail
-					["classes"] = { PALADIN },
-					["provider"] = { "n", 106337 },	-- Travard
 				}),
 				q(40716, {	-- The Sixth
 					["sourceQuests"] = { 44663 },	-- In the Blink of an Eye

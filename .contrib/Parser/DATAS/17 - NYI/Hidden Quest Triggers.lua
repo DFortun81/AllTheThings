@@ -3122,7 +3122,6 @@ _.HiddenQuestTriggers =
 			["isWorldQuest"] = true,
 		}),
 		-- Chests
-		q(50855),	-- Nazmir repeatable random chest
 		q(49885),	-- Nazmir repeatable random chest
 		q(50895),	-- Nazmir repeatable random chest
 		q(49904),	-- Nazmir repeatable random chest
@@ -3239,7 +3238,6 @@ _.HiddenQuestTriggers =
 		q(49684),	-- triggered when picking the staff on "Armed and Ready"
 		q(49685),	-- triggered when picking the scythe/glaive thing on "Armed and Ready"
 		q(47647),	-- Monsters of Zem'lan - bonus quest
-		q(50805),	-- Skycaller Shutdown - bonus quest
 		q(50805),	-- Skycaller Shutdown - bonus quest
 		q(51648),	-- Vol'dun - select "The Nimble" as your Akunda title during "Trial of Truth"
 		q(51649),	-- Vol'dun - select "the Serene" as your Akunda title during "Trial of Truth"
