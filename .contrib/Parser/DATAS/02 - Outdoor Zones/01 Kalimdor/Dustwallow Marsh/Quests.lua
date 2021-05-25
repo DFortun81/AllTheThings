@@ -40,7 +40,11 @@ _.Zones =
 					["provider"] = { "n", 4944 },	-- Captain Garran Vimes
 					["coord"] = { 68.1, 48.5, 70 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 27288,	-- The Deserters
+					["sourceQuests"] = {
+						27288,	-- The Deserters
+						27262,	-- Suspicious Hoofprints
+						27285,	-- The Black Shield
+					},
 				}),
 				q(26682, {	-- A Shambling Threat
 					["provider"] = { "n", 4926 },	-- Krog
@@ -466,6 +470,7 @@ _.Zones =
 					["coord"] = { 29.8, 48.2, 70 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 21042 },	-- Theramore Guard Badge
+					["sourceQuest"] = 27249,	-- Inspecting the Ruins
 				}),
 				q(27260, { 	-- Lieutenant Paval Reethe (H)
 					["coord"] = { 29.8, 48.2, 70 },
@@ -901,6 +906,7 @@ _.Zones =
 					["coord"] = { 29.6, 48.5, 70 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 20992 },	-- Black Shield
+					["sourceQuest"] = 27249,	-- Inspecting the Ruins
 				}),
 				q(27254, {	-- The Black Shield (#1, H)
 					["coord"] = { 29.6, 48.5, 70 },

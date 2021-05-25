@@ -71,8 +71,18 @@ _.Zones =
 							["coord"] = { 48.0, 25.7, 630 },
 							["maps"] = { 630 },	-- Azsuna
 						}),
-						q(43514),	-- A Vainglorious Past
-						q(43517),	-- Fallen Power
+						q(43514, {	-- A Vainglorious Past
+							["sourceQuests"] = { 40668 },	-- Eye of Azshara: The Heart of Zin-Azshari
+							["provider"] = { "n", 100482 },	-- Senegos
+							["coord"] = { 48.0, 25.7, 630 },
+							["maps"] = { 630 },	-- Azsuna
+						}),
+						q(43517, {	-- Darkheart Thicket: Fallen Power
+							["sourceQuests"] = { 40668 },	-- Eye of Azshara: The Heart of Zin-Azshari
+							["provider"] = { "n", 100482 },	-- Senegos
+							["coord"] = { 48.0, 25.7, 630 },
+							["maps"] = { 630 },	-- Azsuna
+						}),
 						q(43518),	-- Tempering Darkness
 						q(43519),	-- Lucid Strength
 						q(43581, {	-- The Wisdom of Patience

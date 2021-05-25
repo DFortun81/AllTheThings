@@ -499,8 +499,6 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(18851)),	-- Insignia of the Horde (Priest)
 						un(REMOVED_FROM_GAME, i(18852)),	-- Insignia of the Horde (Warlock)
 						un(REMOVED_FROM_GAME, i(18853)),	-- Insignia of the Horde (Druid)
-						un(REMOVED_FROM_GAME, i(28246)),	-- Band of Triumph
-						un(REMOVED_FROM_GAME, i(28247)),	-- Band of Dominance
 						un(REMOVED_FROM_GAME, i(15200)),	-- Senior Sergeant's Insignia
 						un(REMOVED_FROM_GAME, i(18428)),	-- Senior Sergeant's Insignia
 						un(REMOVED_FROM_GAME, i(16335)),	-- Senior Sergeant's Insignia
@@ -562,37 +560,12 @@ _.Zones =
 						i(92070),	-- Houjin Satchel
 					},
 				}),
-				n(24520, {	-- Doris Volanthius <Armor Quartermaster> -- BC S4 Vendor for Trinkets
-					-- The NPC ID got reused — she was also >S11< Elite Vendor & >S9< Vendor
+				n(24520, {	-- Doris Volanthius <Armor Quartermaster> -- BC Vendor for Trinkets
+					-- The NPC ID got reused many times. This is the BC Version, items listed under PvP>BC
 					["coord"] = { 38.8, 69.8, 85 },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(33918)),	-- vindicator's band of salvation
-						un(REMOVED_FROM_GAME, i(33919)),	-- vindicator's band of triumph
-						un(REMOVED_FROM_GAME, i(37927)),	-- vindicator's band of subjugation
-						un(REMOVED_FROM_GAME, i(33920)),	-- Vindicator's Pendant of conquest
-						un(REMOVED_FROM_GAME, i(33921)),	-- Vindicator's Pendant of dominance
-						un(REMOVED_FROM_GAME, i(33922)),	-- Vindicator's Pendant of salvation
-						un(REMOVED_FROM_GAME, i(33923)),	-- Vindicator's Pendant of triumph
-						un(REMOVED_FROM_GAME, i(35132)),	-- guardians pendant of conquest
-						un(REMOVED_FROM_GAME, i(35133)),	-- guardians pendant of dominance
-						un(REMOVED_FROM_GAME, i(35134)),	-- guardians pendant of salvation
-						un(REMOVED_FROM_GAME, i(35135)),	-- guardians pendant of triumph
-						un(REMOVED_FROM_GAME, i(35129)),	-- guardians band of dominance
-						un(REMOVED_FROM_GAME, i(35130)),	-- guardians band of salvation
-						un(REMOVED_FROM_GAME, i(35131)),	-- guardians band of triumph
-						un(REMOVED_FROM_GAME, i(37927)),	-- guardians band of subjugations
-						un(REMOVED_FROM_GAME, i(35317)),	-- Vindicator's Pendant of reprive
-						un(REMOVED_FROM_GAME, i(35319)),	-- Vindicator's Pendant of subjugation
-						un(REMOVED_FROM_GAME, i(37928)),	-- guardians pendant of subjugation
-						un(REMOVED_FROM_GAME, i(37929)),	-- guardians pendant of reprieve
-						un(REMOVED_FROM_GAME, i(41587)),	-- battlemaster's celerity
-						un(REMOVED_FROM_GAME, i(41588)),	-- battlemaster's aggression
-						un(REMOVED_FROM_GAME, i(41589)),	-- battlemaster's resolve
-						un(REMOVED_FROM_GAME, i(41590)),	-- battlemaster's courage
-						un(REMOVED_FROM_GAME, i(33853)),	-- Vindicator's Band of Dominance
-						un(REMOVED_FROM_GAME, i(35320)),	-- Vindicator's Band of subjugation
 					},
 				}),
 				n(46593,  {	-- Doris Volanthius >S9< Elite <Vicious Gladiator>
@@ -766,6 +739,7 @@ _.Zones =
 					},
 					["races"] = HORDE_ONLY,
 					["g"] = {
+						-- #if AFTER TBC
 						i(20856, {	-- Design: Heavy Golden Necklace of Battle
 							["spellID"] = 25320,	-- Heavy Golden Necklace of Battle
 							["requireSkill"] = JEWELCRAFTING,
@@ -776,6 +750,7 @@ _.Zones =
 							["isLimited"] = true,
 							["f"] = 200,
 						}),
+						-- #endif
 					},
 				}),
 				n(133261, {	-- Feng Su <Cooking Trainer>
@@ -914,25 +889,6 @@ _.Zones =
 						i(18436), 	-- First Sergeant's Dragonhide Armguards
 						i(18437), 	-- First Sergeant's Silk Cuffs
 						i(18427), 	-- Sergeant's Cloak
-						un(REMOVED_FROM_GAME, i(24551)),	-- Talisman of the Horde
-						un(REMOVED_FROM_GAME, i(28240)),	-- medallion of the horde (rogue)
-						un(REMOVED_FROM_GAME, i(28241)),	-- medallion of the horde (druid)
-						un(REMOVED_FROM_GAME, i(28242)),	-- medallion of the horde (pala)
-						un(REMOVED_FROM_GAME, i(28243)),	-- medallion of the horde (hunter)
-						un(REMOVED_FROM_GAME, i(28239)),	-- medallion of the horde (mage)
-						un(REMOVED_FROM_GAME, i(30343)),	-- medallion of the horde (warlock)
-						un(REMOVED_FROM_GAME, i(30346)),	-- medallion of the horde (priest)
-						un(REMOVED_FROM_GAME, i(30344)),	-- medallion of the horde (warrior)
-						un(REMOVED_FROM_GAME, i(30345)),	-- medallion of the horde (shaman)
-						un(REMOVED_FROM_GAME, i(37865)),	-- medallion of the horde (epic)
-						un(REMOVED_FROM_GAME, i(38588)),	-- Medallion of the horde (dk)
-						un(REMOVED_FROM_GAME, i(69862)),	-- Medallion of the horde
-						un(REMOVED_FROM_GAME, i(34576)),	-- battlemaster's cruelty
-						un(REMOVED_FROM_GAME, i(34577)),	-- battlemaster's depravity
-						un(REMOVED_FROM_GAME, i(34578)),	-- battlemaster's determination
-						un(REMOVED_FROM_GAME, i(34579)),	-- battlemaster's audacity
-						un(REMOVED_FROM_GAME, i(34580)),	-- battlemaster's persevennerance
-						un(REMOVED_FROM_GAME, i(35327)),	-- battlemaster's alacrity
 					},
 				}),
 				n(50323,  {	-- Frizzo Villamar <Bilgewater Cartel Quartermaster>

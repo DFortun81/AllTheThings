@@ -489,6 +489,11 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 123087 },	-- Al'Abas
 						["sourceQuest"] = 47603,	-- The Mysterious, Magnificent Al'Abas
 					}),
+					q(40995, {	-- Injection of Power
+						["u"] = REMOVED_FROM_GAME,
+						["classes"] = { ROGUE },
+						["provider"] = { "n", 102594 },	-- Marin Noggenfogger
+					}),
 					q(45992, {	-- Investigate the Broken Shore
 						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["classes"] = { ROGUE },

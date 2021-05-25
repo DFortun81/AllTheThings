@@ -171,10 +171,6 @@ _.Zones =
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(23155),	-- Design: Sparkling Azure Moonstone
-						i(23153, {	-- Design: Sparkling Azure Moonstone
-							["spellID"] = 0,	-- This is now available via 23155, need to delink the old plans from the recipe
-							["u"] = REMOVED_FROM_GAME,
-						}),
 						i(23150),	-- Design: Subtle Golden Draenite
 						i(25908),	-- Design: Swift Skyfire Diamond
 						i(28274),	-- Formula: Enchant Cloak - PvP Power

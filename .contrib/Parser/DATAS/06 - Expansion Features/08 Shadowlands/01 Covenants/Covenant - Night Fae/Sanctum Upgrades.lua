@@ -197,15 +197,15 @@ _.ExpansionFeatures =
 									},
 								}),
 								i(181315),	-- Bloodfeaster Spiderling
+								i(180815),	-- Brightscale Hatchling
+								i(181168),	-- Corpulent Bonetusk
 								i(180639),	-- Dusty Sporeflutterer
-								--i(181314),	-- Gulper Soul
 								i(180628),	-- Pearlwing Heron
-								i(181313),	-- Snapper Soul
+								i(181264),	-- Plaguelouse Larva
 								i(181302),	-- Spirit Tender's Branches
 								i(181306),	-- Spirit Tender's Bulb
 								i(181310),	-- Spirit Tender's Pack
 								i(180603),	-- Violet Dredwing Pup
-								i(180815),	-- Brightscale Hatchling
 							}),
 							n(QUESTS, {
 								q(62447, {	-- A Rare and Unusual Spirit (1)

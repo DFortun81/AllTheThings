@@ -558,7 +558,7 @@ _.Zones =
 					["sourceQuests"] = { 62279 },	-- Revendreth
 				}),
 
-				-- Zone Meta Quests (keep in Bastion for visibility to players who may skip storyline I suppose)
+				-- Zone Meta Quests (keep in Oribos for visibility to players who may skip storyline I suppose)
 				-- Ardenweald
 				q(62763, {	-- Support the Court
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
@@ -574,6 +574,7 @@ _.Zones =
 						i(179562),	-- Duskwarder Branch
 						i(179517),	-- Duskwarder Censor
 						i(181433),	-- Duskwarder Gavel
+						i(179537),	-- Duskwarder Maul
 						i(179513),	-- Duskwarder Scimitar
 						i(179532),	-- Duskwarder Scythe
 						i(179604),	-- Duskwarder Shield
@@ -617,6 +618,8 @@ _.Zones =
 						i(181689),	-- Gorewrought Bonesaw
 						i(181690),	-- Gorewrought Crusher
 						i(181691),	-- Gorewrought Greatstaff
+						i(181694),	-- Gorewrought Greatsword
+						i(181695),	-- Gorewrought Shortsword
 						i(181688),	-- Gorewrought Stave
 						i(181686),	-- Gorewrought Tome
 						i(181692),	-- Gorewrought Warblade

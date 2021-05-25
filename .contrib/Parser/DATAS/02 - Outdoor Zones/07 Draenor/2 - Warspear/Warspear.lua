@@ -211,205 +211,222 @@ _.Zones =
 						n(88569, {	-- Blood Guard Axelash <Primal Gladiator>
 							["coord"] = { 48.5, 57.6, 624 },
 							["g"] = {
-								i(138632),	-- Arsenal: Primal Gladiator's Weapons
-								i(111067),	-- Primal Gladiator's Cleaver
-								i(111068),	-- Primal Gladiator's Shanker
-								i(111069),	-- Primal Gladiator's Ripper
-								i(111070),	-- Primal Gladiator's Pummeler
-								i(111071),	-- Primal Gladiator's Quickblade
-								i(111072),	-- Primal Gladiator's Longbow
-								i(111074),	-- Primal Gladiator's Rifle
-								i(111075),	-- Primal Gladiator's Pike
-								i(111117),	-- Primal Gladiator's Spellblade
-								i(111118),	-- Primal Gladiator's Gavel
-								i(111119),	-- Primal Gladiator's Mageblade
-								i(111120),	-- Primal Gladiator's Baton of Light
-								i(111121),	-- Primal Gladiator's Touch of Defeat
-								i(111122),	-- Primal Gladiator's Battle Staff
-								i(111123),	-- Primal Gladiator's Energy Staff
-								i(111132),	-- Primal Gladiator's Endgame
-								i(111133),	-- Primal Gladiator's Reprieve
-								i(111139),	-- Primal Gladiator's Redoubt
-								i(111140),	-- Primal Gladiator's Barrier
-								i(111198),	-- Primal Gladiator's Hacker
-								i(111199),	-- Primal Gladiator's Render
-								i(111200),	-- Primal Gladiator's Bonecracker
-								i(111201),	-- Primal Gladiator's Slicer
-								i(111202),	-- Primal Gladiator's Decapitator
-								i(111203),	-- Primal Gladiator's Bonegrinder
-								i(111204),	-- Primal Gladiator's Greatsword
-								i(111221),	-- Primal Gladiator's Shield Wall
-								i(111077),	-- Primal Gladiator's Cape of Cruelty
-								i(111078),	-- Primal Gladiator's Cape of Prowess
-								i(111093),	-- Primal Gladiator's Cord of Cruelty
-								i(111094),	-- Primal Gladiator's Cord of Prowess
-								i(111095),	-- Primal Gladiator's Cord of Victory
-								i(111096),	-- Primal Gladiator's Treads of Cruelty
-								i(111097),	-- Primal Gladiator's Treads of Prowess
-								i(111098),	-- Primal Gladiator's Treads of Victory
-								i(111099),	-- Primal Gladiator's Cuffs of Prowess
-								i(111100),	-- Primal Gladiator's Cuffs of Cruelty
-								i(111101),	-- Primal Gladiator's Cuffs of Victory
-								i(111083),	-- Primal Gladiator's Gloves of Prowess
-								i(111084),	-- Primal Gladiator's Hood of Prowess
-								i(111085),	-- Primal Gladiator's Leggings of Prowess
-								i(111086),	-- Primal Gladiator's Robes of Prowess
-								i(111087),	-- Primal Gladiator's Amice of Prowess
-								i(111088),	-- Primal Gladiator's Handguards of Cruelty
-								i(111089),	-- Primal Gladiator's Cowl of Cruelty
-								i(111090),	-- Primal Gladiator's Trousers of Cruelty
-								i(111091),	-- Primal Gladiator's Raiment of Cruelty
-								i(111092),	-- Primal Gladiator's Mantle of Cruelty
-								i(111102),	-- Primal Gladiator's Dreadplate Chestpiece
-								i(111103),	-- Primal Gladiator's Dreadplate Gauntlets
-								i(111104),	-- Primal Gladiator's Dreadplate Helm
-								i(111105),	-- Primal Gladiator's Dreadplate Legguards
-								i(111106),	-- Primal Gladiator's Dreadplate Shoulders
-								i(111107),	-- Primal Gladiator's Dragonhide Gloves
-								i(111108),	-- Primal Gladiator's Dragonhide Helm
-								i(111109),	-- Primal Gladiator's Dragonhide Legguards
-								i(111110),	-- Primal Gladiator's Dragonhide Robes
-								i(111111),	-- Primal Gladiator's Dragonhide Spaulders
-								i(111112),	-- Primal Gladiator's Chain Armor
-								i(111113),	-- Primal Gladiator's Chain Gauntlets
-								i(111114),	-- Primal Gladiator's Chain Helm
-								i(111115),	-- Primal Gladiator's Chain Leggings
-								i(111116),	-- Primal Gladiator's Chain Spaulders
-								i(111124),	-- Primal Gladiator's Drape of Cruelty
-								i(111125),	-- Primal Gladiator's Drape of Prowess
-								i(111126),	-- Primal Gladiator's Drape of Meditation
-								i(111127),	-- Primal Gladiator's Drape of Contemplation
-								i(111141),	-- Primal Gladiator's Belt of Prowess
-								i(111142),	-- Primal Gladiator's Belt of Cruelty
-								i(111143),	-- Primal Gladiator's Belt of Victory
-								i(111144),	-- Primal Gladiator's Boots of Cruelty
-								i(111145),	-- Primal Gladiator's Boots of Prowess
-								i(111146),	-- Primal Gladiator's Boots of Victory
-								i(111147),	-- Primal Gladiator's Bindings of Cruelty
-								i(111148),	-- Primal Gladiator's Bindings of Prowess
-								i(111149),	-- Primal Gladiator's Bindings of Victory
-								i(111273),	-- Primal Gladiator's Tunic
-								i(111274),	-- Primal Gladiator's Gloves
-								i(111275),	-- Primal Gladiator's Helm
-								i(111276),	-- Primal Gladiator's Legguards
-								i(111277),	-- Primal Gladiator's Spaulders
-								i(111283),	-- Primal Gladiator's Chestguard
-								i(111284),	-- Primal Gladiator's Grips
-								i(111285),	-- Primal Gladiator's Headcover
-								i(111286),	-- Primal Gladiator's Leggings
-								i(111287),	-- Primal Gladiator's Pauldrons
-								i(111150),	-- Primal Gladiator's Silk Handguards
-								i(111151),	-- Primal Gladiator's Silk Cowl
-								i(111152),	-- Primal Gladiator's Silk Trousers
-								i(111153),	-- Primal Gladiator's Silk Robe
-								i(111154),	-- Primal Gladiator's Silk Amice
-								i(111155),	-- Primal Gladiator's Waistguard of Cruelty
-								i(111156),	-- Primal Gladiator's Waistguard of Prowess
-								i(111157),	-- Primal Gladiator's Waistguard of Victory
-								i(111158),	-- Primal Gladiator's Footguards of Cruelty
-								i(111159),	-- Primal Gladiator's Footguards of Prowess
-								i(111160),	-- Primal Gladiator's Footguards of Victory
-								i(111161),	-- Primal Gladiator's Armbands of Prowess
-								i(111162),	-- Primal Gladiator's Armbands of Cruelty
-								i(111163),	-- Primal Gladiator's Armbands of Victory
-								i(111278),	-- Primal Gladiator's Armor
-								i(111279),	-- Primal Gladiator's Gauntlets
-								i(111280),	-- Primal Gladiator's Helm
-								i(111281),	-- Primal Gladiator's Leggings
-								i(111282),	-- Primal Gladiator's Spaulders
-								i(111288),	-- Primal Gladiator's Chestguard
-								i(111289),	-- Primal Gladiator's Gloves
-								i(111290),	-- Primal Gladiator's Coif
-								i(111291),	-- Primal Gladiator's Leggings
-								i(111292),	-- Primal Gladiator's Pauldrons
-								i(111164),	-- Primal Gladiator's Ironskin Gloves
-								i(111165),	-- Primal Gladiator's Ironskin Helm
-								i(111166),	-- Primal Gladiator's Ironskin Legguards
-								i(111167),	-- Primal Gladiator's Ironskin Spaulders
-								i(111168),	-- Primal Gladiator's Ironskin Tunic
-								i(111169),	-- Primal Gladiator's Scaled Chestpiece
-								i(111170),	-- Primal Gladiator's Scaled Gauntlets
-								i(111171),	-- Primal Gladiator's Scaled Helm
-								i(111172),	-- Primal Gladiator's Scaled Legguards
-								i(111173),	-- Primal Gladiator's Scaled Shoulders
-								i(111174),	-- Primal Gladiator's Girdle of Cruelty
-								i(111175),	-- Primal Gladiator's Girdle of Prowess
-								i(111176),	-- Primal Gladiator's Girdle of Victory
-								i(111177),	-- Primal Gladiator's Warboots of Cruelty
-								i(111178),	-- Primal Gladiator's Warboots of Prowess
-								i(111179),	-- Primal Gladiator's Warboots of Victory
-								i(111180),	-- Primal Gladiator's Armplates of Cruelty
-								i(111181),	-- Primal Gladiator's Armplates of Prowess
-								i(111182),	-- Primal Gladiator's Armplates of Victory
-								i(111209),	-- Primal Gladiator's Plate Breastplate
-								i(111210),	-- Primal Gladiator's Plate Gloves
-								i(111211),	-- Primal Gladiator's Plate Helmet
-								i(111212),	-- Primal Gladiator's Legplates
-								i(111213),	-- Primal Gladiator's Shoulderplates
-								i(111214),	-- Primal Gladiator's Plate Chestguard
-								i(111215),	-- Primal Gladiator's Plate Grips
-								i(111216),	-- Primal Gladiator's Plate Visor
-								i(111217),	-- Primal Gladiator's Plate Leggings
-								i(111218),	-- Primal Gladiator's Plate Pauldrons
-								i(111183),	-- Primal Gladiator's Satin Gloves
-								i(111184),	-- Primal Gladiator's Satin Hood
-								i(111185),	-- Primal Gladiator's Satin Leggings
-								i(111186),	-- Primal Gladiator's Satin Robe
-								i(111187),	-- Primal Gladiator's Satin Mantle
-								i(111188),	-- Primal Gladiator's Leather Tunic
-								i(111189),	-- Primal Gladiator's Leather Gloves
-								i(111190),	-- Primal Gladiator's Leather Helm
-								i(111191),	-- Primal Gladiator's Leather Legguards
-								i(111192),	-- Primal Gladiator's Leather Spaulders
-								i(111193),	-- Primal Gladiator's Ringmail Armor
-								i(111194),	-- Primal Gladiator's Ringmail Gauntlets
-								i(111195),	-- Primal Gladiator's Ringmail Helm
-								i(111196),	-- Primal Gladiator's Ringmail Leggings
-								i(111197),	-- Primal Gladiator's Ringmail Spaulders
-								i(111205),	-- Primal Gladiator's Cloak of Cruelty
-								i(111206),	-- Primal Gladiator's Cloak of Prowess
-								i(120099),	-- Primal Gladiator's Cloak of Endurance
-								i(111234),	-- Primal Gladiator's Felweave Handguards
-								i(111235),	-- Primal Gladiator's Felweave Cowl
-								i(111236),	-- Primal Gladiator's Felweave Trousers
-								i(111237),	-- Primal Gladiator's Felweave Raiment
-								i(111238),	-- Primal Gladiator's Felweave Amice
-								i(111239),	-- Primal Gladiator's Plate Chestpiece
-								i(111240),	-- Primal Gladiator's Plate Gauntlets
-								i(111241),	-- Primal Gladiator's Plate Helm
-								i(111242),	-- Primal Gladiator's Plate Legguards
-								i(111243),	-- Primal Gladiator's Plate Shoulders
-								un(REMOVED_FROM_GAME, i(111079)),	-- Primal Gladiator's Necklace of Cruelty
-								un(REMOVED_FROM_GAME, i(111080)),	-- Primal Gladiator's necklace of prowess
-								un(REMOVED_FROM_GAME, i(111128)),	-- Primal Gladiator's pendant of cruelty
-								un(REMOVED_FROM_GAME, i(111129)),	-- Primal Gladiator's pendant of prowess
-								un(REMOVED_FROM_GAME, i(111130)),	-- Primal Gladiator's pendant of meditation
-								un(REMOVED_FROM_GAME, i(111131)),	-- Primal Gladiator's pendant of contemplation
-								un(REMOVED_FROM_GAME, i(111207)),	-- Primal Gladiator's choker of cruelty
-								un(REMOVED_FROM_GAME, i(111208)),	-- Primal Gladiator's choker of prowess
-								un(REMOVED_FROM_GAME, i(111081)),	-- Primal Gladiator's ring of cruelty
-								un(REMOVED_FROM_GAME, i(111082)),	-- Primal Gladiator's Ring of prowess
-								un(REMOVED_FROM_GAME, i(111134)),	-- Primal Gladiator's band of cruelty
-								un(REMOVED_FROM_GAME, i(111135)),	-- Primal Gladiator's band of prowess
-								un(REMOVED_FROM_GAME, i(111136)),	-- Primal Gladiator's band of victory
-								un(REMOVED_FROM_GAME, i(111137)),	-- Primal Gladiator's band of meditation
-								un(REMOVED_FROM_GAME, i(111138)),	-- Primal Gladiator's band of contemplation
-								un(REMOVED_FROM_GAME, i(111219)),	-- Primal Gladiator's signet of cruelty
-								un(REMOVED_FROM_GAME, i(111220)),	-- Primal Gladiator's signet of accuracy
-								un(REMOVED_FROM_GAME, i(111271)),	-- Primal Gladiator's ring of triumph
-								un(REMOVED_FROM_GAME, i(111272)),	-- Primal Gladiator's signet of ruthlessness
-								un(REMOVED_FROM_GAME, i(111222)),	-- Primal Gladiator's badge of conquest
-								un(REMOVED_FROM_GAME, i(111223)),	-- Primal Gladiator's insignia of conquest
-								un(REMOVED_FROM_GAME, i(111224)),	-- Primal Gladiator's e,blem of cruelty
-								un(REMOVED_FROM_GAME, i(111225)),	-- Primal Gladiator's emblem of tenacity
-								un(REMOVED_FROM_GAME, i(111226)),	-- Primal Gladiator's emblem of mediation
-								un(REMOVED_FROM_GAME, i(111227)),	-- Primal Gladiator's badge of dominance
-								un(REMOVED_FROM_GAME, i(111228)),	-- Primal Gladiator's insignia of dominance
-								un(REMOVED_FROM_GAME, i(111229)),	-- Primal Gladiator's mmedallion of cruelty
-								un(REMOVED_FROM_GAME, i(111230)),	-- Primal Gladiator's medallion of tenacity
-								un(REMOVED_FROM_GAME, i(111231)),	-- Primal Gladiator's medallion of mediation
-								un(REMOVED_FROM_GAME, i(111232)),	-- Primal Gladiator's badge of citory
-								un(REMOVED_FROM_GAME, i(111233)),	-- Primal Gladiator's insignia of victory
+								n(-319, {	-- Weapons
+									i(138632, {	-- Arsenal: Primal Gladiator's Weapons
+										["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
+										["sym"] = {
+											{"sub", "pvp_weapons_faction_ensemble", -9981, -679, -9913, -661 },
+											{"exclude", "itemID", 138632 },	-- Exclude itself to stop duplicating
+										},
+									}),
+									i(111067),	-- Primal Gladiator's Cleaver
+									i(111068),	-- Primal Gladiator's Shanker
+									i(111069),	-- Primal Gladiator's Ripper
+									i(111070),	-- Primal Gladiator's Pummeler
+									i(111071),	-- Primal Gladiator's Quickblade
+									i(111072),	-- Primal Gladiator's Longbow
+									i(111074),	-- Primal Gladiator's Rifle
+									i(111075),	-- Primal Gladiator's Pike
+									i(111117),	-- Primal Gladiator's Spellblade
+									i(111118),	-- Primal Gladiator's Gavel
+									i(111119),	-- Primal Gladiator's Mageblade
+									i(111120),	-- Primal Gladiator's Baton of Light
+									i(111121),	-- Primal Gladiator's Touch of Defeat
+									i(111122),	-- Primal Gladiator's Battle Staff
+									i(111123),	-- Primal Gladiator's Energy Staff
+									i(111132),	-- Primal Gladiator's Endgame
+									i(111133),	-- Primal Gladiator's Reprieve
+									i(111139),	-- Primal Gladiator's Redoubt
+									i(111140),	-- Primal Gladiator's Barrier
+									i(111198),	-- Primal Gladiator's Hacker
+									i(111199),	-- Primal Gladiator's Render
+									i(111200),	-- Primal Gladiator's Bonecracker
+									i(111201),	-- Primal Gladiator's Slicer
+									i(111202),	-- Primal Gladiator's Decapitator
+									i(111203),	-- Primal Gladiator's Bonegrinder
+									i(111204),	-- Primal Gladiator's Greatsword
+									i(111221),	-- Primal Gladiator's Shield Wall
+								}),
+								cl(DEATHKNIGHT, {
+									i(111102),	-- Primal Gladiator's Dreadplate Chestpiece
+									i(111103),	-- Primal Gladiator's Dreadplate Gauntlets
+									i(111104),	-- Primal Gladiator's Dreadplate Helm
+									i(111105),	-- Primal Gladiator's Dreadplate Legguards
+									i(111106),	-- Primal Gladiator's Dreadplate Shoulders
+								}),
+								cl(DRUID, {
+									i(111107),	-- Primal Gladiator's Dragonhide Gloves
+									i(111108),	-- Primal Gladiator's Dragonhide Helm
+									i(111109),	-- Primal Gladiator's Dragonhide Legguards
+									i(111110),	-- Primal Gladiator's Dragonhide Robes
+									i(111111),	-- Primal Gladiator's Dragonhide Spaulders
+								}),
+								cl(HUNTER, {
+									i(111112),	-- Primal Gladiator's Chain Armor
+									i(111113),	-- Primal Gladiator's Chain Gauntlets
+									i(111114),	-- Primal Gladiator's Chain Helm
+									i(111115),	-- Primal Gladiator's Chain Leggings
+									i(111116),	-- Primal Gladiator's Chain Spaulders
+								}),
+								cl(MAGE, {
+									i(111150),	-- Primal Gladiator's Silk Handguards
+									i(111151),	-- Primal Gladiator's Silk Cowl
+									i(111152),	-- Primal Gladiator's Silk Trousers
+									i(111153),	-- Primal Gladiator's Silk Robe
+									i(111154),	-- Primal Gladiator's Silk Amice
+								}),
+								cl(MONK, {
+									i(111164),	-- Primal Gladiator's Ironskin Gloves
+									i(111165),	-- Primal Gladiator's Ironskin Helm
+									i(111166),	-- Primal Gladiator's Ironskin Legguards
+									i(111167),	-- Primal Gladiator's Ironskin Spaulders
+									i(111168),	-- Primal Gladiator's Ironskin Tunic
+								}),
+								cl(PALADIN, {
+									i(111169),	-- Primal Gladiator's Scaled Chestpiece
+									i(111170),	-- Primal Gladiator's Scaled Gauntlets
+									i(111171),	-- Primal Gladiator's Scaled Helm
+									i(111172),	-- Primal Gladiator's Scaled Legguards
+									i(111173),	-- Primal Gladiator's Scaled Shoulders
+								}),
+								cl(PRIEST, {
+									i(111183),	-- Primal Gladiator's Satin Gloves
+									i(111184),	-- Primal Gladiator's Satin Hood
+									i(111185),	-- Primal Gladiator's Satin Leggings
+									i(111186),	-- Primal Gladiator's Satin Robe
+									i(111187),	-- Primal Gladiator's Satin Mantle
+								}),
+								cl(ROGUE, {
+									i(111188),	-- Primal Gladiator's Leather Tunic
+									i(111189),	-- Primal Gladiator's Leather Gloves
+									i(111190),	-- Primal Gladiator's Leather Helm
+									i(111191),	-- Primal Gladiator's Leather Legguards
+									i(111192),	-- Primal Gladiator's Leather Spaulders
+								}),
+								cl(SHAMAN, {
+									i(111193),	-- Primal Gladiator's Ringmail Armor
+									i(111194),	-- Primal Gladiator's Ringmail Gauntlets
+									i(111195),	-- Primal Gladiator's Ringmail Helm
+									i(111196),	-- Primal Gladiator's Ringmail Leggings
+									i(111197),	-- Primal Gladiator's Ringmail Spaulders
+								}),
+								cl(WARLOCK, {
+									i(111234),	-- Primal Gladiator's Felweave Handguards
+									i(111235),	-- Primal Gladiator's Felweave Cowl
+									i(111236),	-- Primal Gladiator's Felweave Trousers
+									i(111237),	-- Primal Gladiator's Felweave Raiment
+									i(111238),	-- Primal Gladiator's Felweave Amice
+								}),
+								cl(WARRIOR, {
+									i(111239),	-- Primal Gladiator's Plate Chestpiece
+									i(111240),	-- Primal Gladiator's Plate Gauntlets
+									i(111241),	-- Primal Gladiator's Plate Helm
+									i(111242),	-- Primal Gladiator's Plate Legguards
+									i(111243),	-- Primal Gladiator's Plate Shoulders
+								}),
+								n(-322, {	-- Back
+									i(111205),	-- Primal Gladiator's Cloak of Cruelty
+									i(111206),	-- Primal Gladiator's Cloak of Prowess
+									i(120099),	-- Primal Gladiator's Cloak of Endurance
+									i(111077),	-- Primal Gladiator's Cape of Cruelty
+									i(111078),	-- Primal Gladiator's Cape of Prowess
+									i(111124),	-- Primal Gladiator's Drape of Cruelty
+									i(111125),	-- Primal Gladiator's Drape of Prowess
+									i(111126),	-- Primal Gladiator's Drape of Meditation
+									i(111127),	-- Primal Gladiator's Drape of Contemplation
+								}),
+								n(-320, {	-- Head
+									i(111216),	-- Primal Gladiator's Plate Visor
+									i(111211),	-- Primal Gladiator's Plate Helmet
+									i(111290),	-- Primal Gladiator's Coif
+									i(111280),	-- Primal Gladiator's Helm
+									i(111285),	-- Primal Gladiator's Headcover
+									i(111275),	-- Primal Gladiator's Helm
+									i(111089),	-- Primal Gladiator's Cowl of Cruelty
+									i(111084),	-- Primal Gladiator's Hood of Prowess
+								}),
+								n(-321, {	-- Shoulders
+									i(111218),	-- Primal Gladiator's Plate Pauldrons
+									i(111213),	-- Primal Gladiator's Shoulderplates
+									i(111292),	-- Primal Gladiator's Pauldrons
+									i(111282),	-- Primal Gladiator's Spaulders
+									i(111287),	-- Primal Gladiator's Pauldrons
+									i(111277),	-- Primal Gladiator's Spaulders
+									i(111092),	-- Primal Gladiator's Mantle of Cruelty
+									i(111087),	-- Primal Gladiator's Amice of Prowess
+								}),
+								n(-323, {	-- Chest
+									i(111214),	-- Primal Gladiator's Plate Chestguard
+									i(111209),	-- Primal Gladiator's Plate Breastplate
+									i(111288),	-- Primal Gladiator's Chestguard
+									i(111278),	-- Primal Gladiator's Armor
+									i(111283),	-- Primal Gladiator's Chestguard
+									i(111273),	-- Primal Gladiator's Tunic
+									i(111091),	-- Primal Gladiator's Raiment of Cruelty
+									i(111086),	-- Primal Gladiator's Robes of Prowess
+								}),
+								n(-327, {	-- Hands
+									i(111083),	-- Primal Gladiator's Gloves of Prowess
+									i(111088),	-- Primal Gladiator's Handguards of Cruelty
+									i(111274),	-- Primal Gladiator's Gloves
+									i(111284),	-- Primal Gladiator's Grips
+									i(111279),	-- Primal Gladiator's Gauntlets
+									i(111289),	-- Primal Gladiator's Gloves
+									i(111210),	-- Primal Gladiator's Plate Gloves
+									i(111215),	-- Primal Gladiator's Plate Grips
+								}),
+								n(-326, {	-- Wrists
+									i(111180),	-- Primal Gladiator's Armplates of Cruelty
+									i(111181),	-- Primal Gladiator's Armplates of Prowess
+									i(111182),	-- Primal Gladiator's Armplates of Victory
+									i(111161),	-- Primal Gladiator's Armbands of Prowess
+									i(111162),	-- Primal Gladiator's Armbands of Cruelty
+									i(111163),	-- Primal Gladiator's Armbands of Victory
+									i(111147),	-- Primal Gladiator's Bindings of Cruelty
+									i(111148),	-- Primal Gladiator's Bindings of Prowess
+									i(111149),	-- Primal Gladiator's Bindings of Victory
+									i(111099),	-- Primal Gladiator's Cuffs of Prowess
+									i(111100),	-- Primal Gladiator's Cuffs of Cruelty
+									i(111101),	-- Primal Gladiator's Cuffs of Victory
+								}),
+								n(-328, {	-- Waist
+									i(111141),	-- Primal Gladiator's Belt of Prowess
+									i(111142),	-- Primal Gladiator's Belt of Cruelty
+									i(111143),	-- Primal Gladiator's Belt of Victory
+									i(111093),	-- Primal Gladiator's Cord of Cruelty
+									i(111094),	-- Primal Gladiator's Cord of Prowess
+									i(111095),	-- Primal Gladiator's Cord of Victory
+									i(111155),	-- Primal Gladiator's Waistguard of Cruelty
+									i(111156),	-- Primal Gladiator's Waistguard of Prowess
+									i(111157),	-- Primal Gladiator's Waistguard of Victory
+									i(111174),	-- Primal Gladiator's Girdle of Cruelty
+									i(111175),	-- Primal Gladiator's Girdle of Prowess
+									i(111176),	-- Primal Gladiator's Girdle of Victory
+								}),
+								n(-329, {	-- Legs
+									i(111276),	-- Primal Gladiator's Legguards
+									i(111085),	-- Primal Gladiator's Leggings of Prowess
+									i(111090),	-- Primal Gladiator's Trousers of Cruelty
+									i(111286),	-- Primal Gladiator's Leggings
+									i(111281),	-- Primal Gladiator's Leggings
+									i(111291),	-- Primal Gladiator's Leggings
+									i(111212),	-- Primal Gladiator's Legplates
+									i(111217),	-- Primal Gladiator's Plate Leggings
+								}),
+								n(-330, {	-- Feet
+									i(111144),	-- Primal Gladiator's Boots of Cruelty
+									i(111145),	-- Primal Gladiator's Boots of Prowess
+									i(111146),	-- Primal Gladiator's Boots of Victory
+									i(111096),	-- Primal Gladiator's Treads of Cruelty
+									i(111097),	-- Primal Gladiator's Treads of Prowess
+									i(111098),	-- Primal Gladiator's Treads of Victory
+									i(111158),	-- Primal Gladiator's Footguards of Cruelty
+									i(111159),	-- Primal Gladiator's Footguards of Prowess
+									i(111160),	-- Primal Gladiator's Footguards of Victory
+									i(111177),	-- Primal Gladiator's Warboots of Cruelty
+									i(111178),	-- Primal Gladiator's Warboots of Prowess
+									i(111179),	-- Primal Gladiator's Warboots of Victory
+								}),
 							},
 						}),
 						n(88161, {	-- Challenger Sunforge
@@ -3353,12 +3370,491 @@ _.Zones =
 						}),
 						n(87774, {	-- Stone Guard Brokefist <Primal Combatant>
 							["coord"] = { 48.3, 57.5, 624 },
-							["sym"] = {
-								{"sub", "pvp_gear_faction_base", -9981, -679, -9913, -660 },
-								{"pop"},
-								{"exclude", "headerID", -384 },	-- Exclude Neck
-								{"exclude", "headerID", -385 },	-- Exclude Finger
-								{"exclude", "headerID", -386 },	-- Exclude Tinket
+							["g"] = {
+								n(-319, {	-- Weapons
+									i(138626, {	-- Arsenal: Primal Combatant's Weapons (H)
+										["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
+										["sym"] = {
+											{"sub", "pvp_weapons_faction_ensemble", -9981, -679, -9913, -660 },
+											{"exclude", "itemID", 138626 },	-- Exclude itself to stop duplicating
+										},
+									}),
+									i(119866, {	-- Primal Combatant's Barrier (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(115067, {	-- Primal Combatant's Baton of Light (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(115069, {	-- Primal Combatant's Battle Staff (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(115134, {	-- Primal Combatant's Bonecracker (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(115137, {	-- Primal Combatant's Bonegrinder (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(115024, {	-- Primal Combatant's Cleaver (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(115136, {	-- Primal Combatant's Decapitator (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(119858, {	-- Primal Combatant's Endgame (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(115070, {	-- Primal Combatant's Energy Staff (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(115065, {	-- Primal Combatant's Gavel (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(115138, {	-- Primal Combatant's Greatsword (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(115132, {	-- Primal Combatant's Hacker (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(115029, {	-- Primal Combatant's Longbow (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(115032, {	-- Primal Combatant's Pike (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(115027, {	-- Primal Combatant's Pummeler (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(115028, {	-- Primal Combatant's Quickblade (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(119865, {	-- Primal Combatant's Redoubt (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 5x Mark of Honor
+									}),
+									i(115133, {	-- Primal Combatant's Render (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(119859, {	-- Primal Combatant's Reprieve (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(115031, {	-- Primal Combatant's Rifle (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(115026, {	-- Primal Combatant's Ripper (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(115025, {	-- Primal Combatant's Shanker (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(119925, {	-- Primal Combatant's Shield Wall (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(115135, {	-- Primal Combatant's Slicer (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(115064, {	-- Primal Combatant's Spellblade (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(115033, {	-- Primal Combatant's Staff (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(115068, {	-- Primal Combatant's Touch of Defeat (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+								}),
+								cl(DEATHKNIGHT, {
+									i(138614, {	-- Ensemble: Primal Combatant's Dreadplate Armor (H)
+										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									}),
+									i(119839, {	-- Primal Combatant's Dreadplate Chestpiece (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(119840, {	-- Primal Combatant's Dreadplate Gauntlets (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(119841, {	-- Primal Combatant's Dreadplate Helm (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(119842, {	-- Primal Combatant's Dreadplate Legguards (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(119843, {	-- Primal Combatant's Dreadplate Shoulders (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+								}),
+								cl(DRUID, {
+									i(138618, {	-- Ensemble: Primal Combatant's Dragonhide Armor (H)
+										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									}),
+									i(119844, {	-- Primal Combatant's Dragonhide Gloves (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(119845, {	-- Primal Combatant's Dragonhide Helm (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(119846, {	-- Primal Combatant's Dragonhide Legguards (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(119847, {	-- Primal Combatant's Dragonhide Robes (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(119848, {	-- Primal Combatant's Dragonhide Spaulders (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+								}),
+								cl(HUNTER, {
+									i(138580, {	-- Ensemble: Primal Combatant's Chain Armor (H)
+										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									}),
+									i(119849, {	-- Primal Combatant's Chain Armor (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(119850, {	-- Primal Combatant's Chain Gauntlets (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(119851, {	-- Primal Combatant's Chain Helm (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(119852, {	-- Primal Combatant's Chain Leggings (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(119853, {	-- Primal Combatant's Chain Spaulders (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+								}),
+								cl(MAGE, {
+									i(138582, {	-- Ensemble: Primal Combatant's Silk Armor (H)
+										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									}),
+									i(119877, {	-- Primal Combatant's Silk Amice (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(119874, {	-- Primal Combatant's Silk Cowl (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(119873, {	-- Primal Combatant's Silk Handguards (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(119876, {	-- Primal Combatant's Silk Robe (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(119875, {	-- Primal Combatant's Silk Trousers (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+								}),
+								cl(MONK, {
+									i(138620, {	-- Ensemble: Primal Combatant's Ironskin Armor (H)
+										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									}),
+									i(119884, {	-- Primal Combatant's Ironskin Gloves (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(119885, {	-- Primal Combatant's Ironskin Helm (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(119886, {	-- Primal Combatant's Ironskin Legguards (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(119887, {	-- Primal Combatant's Ironskin Spaulders (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(119888, {	-- Primal Combatant's Ironskin Tunic (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+								}),
+								cl(PALADIN, {
+									i(138616, {	-- Ensemble: Primal Combatant's Scaled Armor (H)
+										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									}),
+									i(119889, {	-- Primal Combatant's Scaled Chestpiece (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(119890, {	-- Primal Combatant's Scaled Gauntlets (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(119891, {	-- Primal Combatant's Scaled Helm (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(119892, {	-- Primal Combatant's Scaled Legguards (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(119893, {	-- Primal Combatant's Scaled Shoulders (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+								}),
+								cl(PRIEST, {
+									i(138584, {	-- Ensemble: Primal Combatant's Satin Armor (H)
+										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									}),
+									i(119900, {	-- Primal Combatant's Satin Gloves (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(119901, {	-- Primal Combatant's Satin Hood (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(119902, {	-- Primal Combatant's Satin Leggings (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(119904, {	-- Primal Combatant's Satin Mantle (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(119903, {	-- Primal Combatant's Satin Robe (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+								}),
+								cl(ROGUE, {
+									i(138622, {	-- Ensemble: Primal Combatant's Leather Armor (H)
+										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									}),
+									i(119906, {	-- Primal Combatant's Leather Gloves (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(119907, {	-- Primal Combatant's Leather Helm (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(119908, {	-- Primal Combatant's Leather Legguards (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(119909, {	-- Primal Combatant's Leather Spaulders (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(119905, {	-- Primal Combatant's Leather Tunic (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+								}),
+								cl(SHAMAN, {
+									i(138578, {	-- Ensemble: Primal Combatant's Ringmail Armor (H)
+										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									}),
+									i(119910, {	-- Primal Combatant's Ringmail Armor (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(119911, {	-- Primal Combatant's Ringmail Gauntlets (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(119912, {	-- Primal Combatant's Ringmail Helm (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(119913, {	-- Primal Combatant's Ringmail Leggings (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(119915, {	-- Primal Combatant's Ringmail Spaulders (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+								}),
+								cl(WARLOCK, {
+									i(138586, {	-- Ensemble: Primal Combatant's Felweave Armor (H)
+										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									}),
+									i(119942, {	-- Primal Combatant's Felweave Amice (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(119939, {	-- Primal Combatant's Felweave Cowl (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(119938, {	-- Primal Combatant's Felweave Handguards (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(119941, {	-- Primal Combatant's Felweave Raiment (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(119940, {	-- Primal Combatant's Felweave Trousers (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+								}),
+								cl(WARRIOR, {
+									i(138612, {	-- Ensemble: Primal Combatant's Plate Armor (H)
+										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									}),
+									i(119943, {	-- Primal Combatant's Plate Chestpiece (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(119944, {	-- Primal Combatant's Plate Gauntlets (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(119945, {	-- Primal Combatant's Plate Helm (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(119946, {	-- Primal Combatant's Plate Legguards (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(119947, {	-- Primal Combatant's Plate Shoulders (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+								}),
+								n(-320, {	-- Head
+									i(119829, {	-- Primal Combatant's Hood of Prowess (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(119952, {	-- Primal Combatant's Helm (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(119957, {	-- Primal Combatant's Helm (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(119920, {	-- Primal Combatant's Plate Helmet (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+								}),
+								n(-321, {	-- Shoulders
+									i(119832, {	-- Primal Combatant's Amice of Prowess (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(119954, {	-- Primal Combatant's Spaulders (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(119959, {	-- Primal Combatant's Spaulders (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(119922, {	-- Primal Combatant's Shoulderplates (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+								}),
+								n(-322, {	-- Back
+									i(119960, {	-- Primal Combatant's Cape of Cruelty (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(119961, {	-- Primal Combatant's Cape of Prowess (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(119966, {	-- Primal Combatant's Cloak of Cruelty (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(119967, {	-- Primal Combatant's Cloak of Prowess (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(119965, {	-- Primal Combatant's Drape of Contemplation (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(119962, {	-- Primal Combatant's Drape of Cruelty (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(119964, {	-- Primal Combatant's Drape of Meditation (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(119963, {	-- Primal Combatant's Drape of Prowess (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+								}),
+								n(-323, {	-- Chest
+									i(119831, {	-- Primal Combatant's Robes of Prowess (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(119950, {	-- Primal Combatant's Tunic (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(119955, {	-- Primal Combatant's Armor (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(119918, {	-- Primal Combatant's Plate Breastplate (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+								}),
+								n(-326, {	-- Wrists
+									i(119838, {	-- Primal Combatant's Cuffs of Cruelty (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(119837, {	-- Primal Combatant's Cuffs of Prowess (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(119871, {	-- Primal Combatant's Bindings of Cruelty (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(119872, {	-- Primal Combatant's Bindings of Prowess (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(119883, {	-- Primal Combatant's Armbands of Cruelty (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(119882, {	-- Primal Combatant's Armbands of Prowess (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(119898, {	-- Primal Combatant's Armplates of Cruelty (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(119899, {	-- Primal Combatant's Armplates of Prowess (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+								}),
+								n(-327, {	-- Hands
+									i(119828, {	-- Primal Combatant's Gloves of Prowess (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(119951, {	-- Primal Combatant's Gloves (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(119956, {	-- Primal Combatant's Gauntlets (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(119919, {	-- Primal Combatant's Plate Gloves (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+								}),
+								n(-328, {	-- Waist
+									i(119833, {	-- Primal Combatant's Cord of Cruelty (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(119834, {	-- Primal Combatant's Cord of Prowess (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(119868, {	-- Primal Combatant's Belt of Cruelty (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(119867, {	-- Primal Combatant's Belt of Prowess (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(119878, {	-- Primal Combatant's Waistguard of Cruelty (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(119879, {	-- Primal Combatant's Waistguard of Prowess (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(119894, {	-- Primal Combatant's Girdle of Cruelty (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+									i(119895, {	-- Primal Combatant's Girdle of Prowess (H)
+										["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+									}),
+								}),
+								n(-329, {	-- Legs
+									i(119830, {	-- Primal Combatant's Leggings of Prowess (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(119953, {	-- Primal Combatant's Legguards (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(119958, {	-- Primal Combatant's Leggings (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(119921, {	-- Primal Combatant's Legplates (H)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+								}),
+								n(-330, {	-- Feet
+									i(119835, {	-- Primal Combatant's Treads of Cruelty (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(119836, {	-- Primal Combatant's Treads of Prowess (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(119869, {	-- Primal Combatant's Boots of Cruelty (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(119870, {	-- Primal Combatant's Boots of Prowess (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(119880, {	-- Primal Combatant's Footguards of Cruelty (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(119881, {	-- Primal Combatant's Footguards of Prowess (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(119896, {	-- Primal Combatant's Warboots of Cruelty (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(119897, {	-- Primal Combatant's Warboots of Prowess (H)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+								}),
 							},
 						}),
 						n(93916, {	-- Tae'loxe Soulshrivel <Warmongering Combatant>

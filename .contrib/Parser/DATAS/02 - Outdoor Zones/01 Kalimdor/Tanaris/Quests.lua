@@ -10,7 +10,10 @@ _.Zones =
 				q(25072, {	-- A Few Good Goblins
 					["provider"] = { "n", 38706 },	-- Zeke Bootscuff
 					["coord"] = { 55.6, 60.8, 71 },
-					["sourceQuest"] = 25103,	-- Bootlegger Outpost
+					["sourceQuests"] = {
+						25103,	-- Bootlegger Outpost
+						26889,	-- All Cheered Out
+					},
 					["g"] = {
 						i(56855),	-- Dangerous Machinery Piece
 						i(56856),	-- Bughunter Belt
@@ -291,7 +294,7 @@ _.Zones =
 					["coord"] = { 72.1, 45.1, 71 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
-						25052,	-- Dead Man's Chest
+						25053,	-- To The Ground!
 						25054,	-- Lootin' Plunder
 					},
 				}),
@@ -366,7 +369,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						25052,	-- Dead Man's Chest
-						25054,	-- Lootin' Plunder
 					},
 				}),
 				q(25534, {	-- Going Off-Task
@@ -913,7 +915,7 @@ _.Zones =
 					["coord"] = { 37.8, 82.4, 71 },	-- object is technically in Uldum but just barely across the zone border, so using closest coords that show in Tanaris instead
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 202474 },	-- Antediluvean Chest
-					["sourceQuest"] = 25070,	-- What Lies Within
+					["sourceQuest"] = 25070,	-- What Lies Within  ?? Acnient Obstacles
 					["g"] = {
 						i(56897),	-- Hieroglyphic Helm
 						i(56898),	-- Translation Boots
@@ -1074,10 +1076,7 @@ _.Zones =
 					["provider"] = { "n", 38704 },	-- Kelsey Steelspark
 					["coord"] = { 72.1, 45.1, 71 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = {
-						25052,	-- Dead Man's Chest
-						25054,	-- Lootin' Plunder
-					},
+					["sourceQuest"] = 24910,	-- Rocket Rescue
 				}),
 				q(24928, {	-- To The Ground!
 					["provider"] = { "n", 38703 },	-- Megs Dreadshredder

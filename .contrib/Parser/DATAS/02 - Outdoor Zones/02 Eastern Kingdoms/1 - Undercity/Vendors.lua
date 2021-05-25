@@ -377,7 +377,8 @@ _.Zones =
 				n(4775,  {	-- Felicia Doan <Trade Supplies>
 					["coord"] = { 64.1, 50.6, 90 },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["groups"] = {
+						-- #if AFTER TBC
 						i(20975, {	-- Design: The Jade Eye
 							["spellID"] = 25619,	-- The Jade Eye
 							["requireSkill"] = JEWELCRAFTING,
@@ -388,6 +389,7 @@ _.Zones =
 							["isLimited"] = true,
 							["f"] = 200,
 						}),
+						-- #endif
 					},
 				}),
 				n(8403,  {	-- Jeremiah Payson <Cockroach Vendor>

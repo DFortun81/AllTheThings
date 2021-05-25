@@ -22,9 +22,9 @@ _.Zones =
 					["provider"] = { "n", 92218 },	-- Thrymjaris <Mother of the Thorignir>
 					["classes"] = { ROGUE },
 					["sourceQuests"] = { 39652 },	-- Where Dragons Rule
-					["groups"] = {
-						i(139468),	-- Bindings of the Windlord
-						i(139466),	-- Bindings of the Windlord
+					["cost"] = {
+						{ "i", 139466, 1 },	-- Bindings of the Windlord (left)
+						{ "i", 139468, 1 },	-- Bindings of the Windlord (right)
 					},
 				}),
 			}),

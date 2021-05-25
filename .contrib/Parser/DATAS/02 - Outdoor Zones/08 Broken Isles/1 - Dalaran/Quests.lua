@@ -216,7 +216,9 @@ _.Zones =
 					["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
 				}),
 				q(40643, {	-- A Summons From Moonglade
+					["sourceQuests"] = { 44663 },	-- In the Blink of an Eye
 					["provider"] = { "n", 101061 },  -- Archdruid Hamuul Runetotem
+					["coord"] = { 57.8, 45.8, 627 },
 					["classes"] = { DRUID },
 				}),
 				q(50318, {	-- A Timely Summons from Northrend
@@ -751,10 +753,6 @@ _.Zones =
 				}),
 				q(44663, {	-- In the Blink of an Eye
 					i(143785),	-- Tome of the Tranquil Mind
-				}),
-				q(40995, {	-- Injection of Power
-					["classes"] = { ROGUE },
-					["provider"] = { "n", 102594 },	-- Marin Noggenfogger
 				}),
 				q(44547, {	-- Isle Hopping
 					["isBreadcrumb"] = true,

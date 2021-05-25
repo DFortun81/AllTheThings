@@ -1106,6 +1106,7 @@ select(2, ...).ObjectNames = {
 	[251857] = "Treasure Chest",
 	[251991] = "The Aegis of Aggramar",
 	[252107] = "Unpowered Telemancy Beacon",
+	[252232] = "Aponi's Libram",
 	[252258] = "Leyline Feed",
 	[252259] = "Leyline Feed",
 	[252260] = "Leyline Feed",

@@ -326,26 +326,6 @@ _.Zones =
 						23355,	-- Zarcsin
 					},
 				}),
-				i(23151, {	-- Design: Rigid Azure Moonstone
-					["recipeID"] = 28948,	-- This is now available via 31870, need to delink the old plans from the recipe
-					["crs"] = {
-						22275,	-- Apexis Guardian
-						23390,	-- Bash'ir's Harbinger
-						23353,	-- Braxxus
-						23261,	-- Furywing
-						22281,	-- Galvanoth
-						23281,	-- Insidion
-						23354,	-- Mo'arg Incinerator
-						23282,	-- Obsidia
-						23061,	-- Rivendark
-						23333,	-- The Grand Collector
-						23355,	-- Zarcsin
-					},
-					["timeline"] = {
-						"added 2.0.1.6180",
-						"removed 4.0.1.7000"
-					},
-				}),
 				i(31873, {	-- Design: Veiled Shadow Draenite
 					["crs"] = {
 						22275,	-- Apexis Guardian

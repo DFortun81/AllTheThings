@@ -655,16 +655,8 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 				n(17518, { 	-- Ythyar
 					["description"] = "This vendor is located in the Guardian's Library.",
 					["groups"] = {
-						i(25903, {	-- Design: Bracing Earthstorm Diamond
-							["spellID"] = 32867,	-- Bracing Earthstorm Diamond
-							["requireSkill"] = JEWELCRAFTING,
-							["f"] = 200,
-						}),
-						i(25902, {	-- Design: Powerful Earthstorm Diamond
-							["spellID"] = 32866,	-- Powerful Earthstorm Diamond
-							["requireSkill"] = JEWELCRAFTING,
-							["f"] = 200,
-						}),
+						i(25903),	-- Design: Bracing Earthstorm Diamond
+						i(25902),	-- Design: Powerful Earthstorm Diamond
 						i(22535, {	-- Formula: Enchant Ring - Striking
 							-- #if AFTER WOD
 							-- #if AFTER BFA

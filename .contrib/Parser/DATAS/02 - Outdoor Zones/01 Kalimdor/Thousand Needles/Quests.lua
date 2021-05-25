@@ -885,14 +885,18 @@ _.Zones =
 				q(27357, {	-- The Captive Bride
 					["provider"] = { "n", 45277 },	-- Feralas Sentinel
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 27327,	-- Grimtotem Chiefs: The Chief of Chiefs
+					["sourceQuests"] = {
+						27327,	-- Grimtotem Chiefs: The Chief of Chiefs
+						27320,	-- The Writ of History
+						27325,	-- The Drums of War
+					},
 				}),
 				q(27358, {	-- The Captive Bride
 					["provider"] = { "n", 45278 },	-- Freewind Brave
 					["races"] = HORDE_ONLY,	-- missing source quests
 					["sourceQuests"] = {
 						27328,	-- Grimtotem Chiefs: The Chief of Chiefs
-						--27326,	-- The Drums of War	-- required?
+						27326,	-- The Drums of War
 						27321,	-- The Writ of History
 					},
 				}),

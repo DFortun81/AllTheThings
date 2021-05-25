@@ -14,11 +14,7 @@ _.Zones =
 					["u"] = TBC_PHASE_ONE,
 					-- #endif
 					["groups"] = {
-						i(31401, {	-- Design: The Frozen Eye
-							["spellID"] = 38503,	-- The Frozen Eye
-							["requireSkill"] = JEWELCRAFTING,
-							["f"] = 200,
-						}),
+						i(31401),	-- Design: The Frozen Eye
 						i(33165, {	-- Formula: Enchant Weapon - Greater Agility
 							["spellID"] = 42620,	-- Enchant Weapon - Greater Agility
 							["requireSkill"] = ENCHANTING,

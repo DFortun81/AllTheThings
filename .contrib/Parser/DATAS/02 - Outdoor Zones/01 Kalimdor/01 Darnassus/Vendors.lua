@@ -197,6 +197,7 @@ _.Zones =
 					["coord"] = { 58.2, 35.0, 89 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
+						-- #if AFTER TBC
 						i(20854, {	-- Design: Amulet of the Moon
 							["spellID"] = 25339,	-- Amulet of the Moon
 							["requireSkill"] = JEWELCRAFTING,
@@ -207,6 +208,7 @@ _.Zones =
 							["isLimited"] = true,
 							["f"] = 200,
 						}),
+						-- #endif
 						i(11223, {	-- Formula: Enchant Bracer - Dodge
 							["isLimited"] = true,
 						}),

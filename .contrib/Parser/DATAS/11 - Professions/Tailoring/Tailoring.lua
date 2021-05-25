@@ -374,11 +374,17 @@ profession(TAILORING, {
 				},
 				{
 					["name"] = "Festival Dress",
-					["recipeID"] = 26403
+					["recipeID"] = 26403,
+					-- #if NOT ANYCLASSIC
+					["u"] = 17,
+					-- #endif
 				},
 				{
 					["name"] = "Festival Suit",
-					["recipeID"] = 26407
+					["recipeID"] = 26407,
+					-- #if NOT ANYCLASSIC
+					["u"] = 17,
+					-- #endif
 				},
 				{
 					["name"] = "Flarecore Robe",
@@ -416,7 +422,10 @@ profession(TAILORING, {
 				applyclassicphase(TBC_PHASE_ONE, {
 					["name"] = "Green Winter Clothes",
 					["timeline"] = { "added 2.3.0.7382" },
-					["recipeID"] = 44950
+					["recipeID"] = 44950,
+					-- #if NOT ANYCLASSIC
+					["u"] = 29,
+					-- #endif
 				}),
 				{
 					["name"] = "Green Woolen Vest",
@@ -454,7 +463,10 @@ profession(TAILORING, {
 				applyclassicphase(TBC_PHASE_ONE, {
 					["name"] = "Red Winter Clothes",
 					["timeline"] = { "added 2.3.0.7382" },
-					["recipeID"] = 44958
+					["recipeID"] = 44958,
+					-- #if NOT ANYCLASSIC
+					["u"] = 29,
+					-- #endif
 				}),
 				{
 					["name"] = "Robe of Power",
@@ -993,7 +1005,10 @@ profession(TAILORING, {
 				},
 				{
 					["name"] = "Green Holiday Shirt",
-					["recipeID"] = 21945
+					["recipeID"] = 21945,
+					-- #if NOT ANYCLASSIC
+					["u"] = 29,
+					-- #endif
 				},
 				{
 					["name"] = "Green Linen Shirt",
@@ -5176,99 +5191,178 @@ for i,o in ipairs({
 	}),
 }) do table.insert(TIME_LOST_TRADER_GROUPS, o); end
 
+-- Tailoring Item Database
+local REMOVED_WITH_CATA = "removed 4.0.1.10000";
+_.ItemDB = {};
+
+-- Recipe Cache (for Validation)
+local recipeCache = {
+	
+};
+local function cacheRecipes(g)
+	if g and type(g) == "table" then
+		if g.groups then cacheRecipes(g.groups); end
+		if g.g then cacheRecipes(g.g); end
+		if g.recipeID then recipeCache[g.recipeID] = true; end
+		if g.spellID then recipeCache[g.spellID] = true; end
+		for i,o in ipairs(g) do
+			cacheRecipes(o);
+		end
+	end
+end
+cacheRecipes(_.Professions);
+
+-- Tailoring Item Recipe Database
+local itemrecipe = function(name, itemID, spellID, phase, timeline)
+	local o = { ["itemID"] = itemID, ["spellID"] = spellID, ["requireSkill"] = TAILORING, ["f"] = 200 };
+	if type(phase) == "string" then
+		timeline = phase;
+		phase = nil;
+	end
+	if timeline then
+		-- Ensure that the timeline is in a table format.
+		if type(timeline) == "string" then timeline = { timeline }; end
+		o.timeline = timeline;
+	end
+	if name then
+		-- Ensure that the name is in a string format.
+		if type(name) == "table" then
+			-- #if AFTER CATA
+			name = name[2];
+			-- #else
+			name = name[1];
+			-- #endif
+		end
+		o.name = name;
+	end
+	_.ItemDB[itemID] = phase and applyclassicphase(phase, o) or o;
+	
+	-- Ensure that this recipe's spellID exists in the profession database.
+	if recipeCache and not recipeCache[o.spellID] then print("MISSING RECIPE", name, o.spellID); end
+	return o;
+end
+
+-- Never Implemented Recipe and Crafted Item Database
+local neverimplemented = function(thing)
+	table.insert(_.NeverImplemented, prof(TAILORING, { thing }));
+end
+_.NeverImplemented = {};
+recipeCache = nil;	-- Disable the cache validation.
+--[[
+neverimplemented(itemrecipe("Pattern: ", , ));
+neverimplemented(recipe());	-- 
+neverimplemented(i());	-- 
+]]
+
+-- Recipes that were created with the launch of the game, but never implemented. :(
+neverimplemented(itemrecipe("Pattern: Boots of Darkness", 7093, 8778));
+neverimplemented(recipe(8778));	-- Boots of Darkness
+neverimplemented(i(7027));	-- Boots of Darkness
+neverimplemented(itemrecipe("Pattern: Green Woolen Robe", 6273, 7636));
+neverimplemented(recipe(7636));	-- Green Woolen Robe
+neverimplemented(i(6243));	-- Green Woolen Robe
+neverimplemented(itemrecipe("Pattern: Stormcloth Boots", 10324, 12090));
+neverimplemented(recipe(12090));	-- Stormcloth Boots
+neverimplemented(i(10039));	-- Stormcloth Boots
+neverimplemented(itemrecipe("Pattern: Stormcloth Gloves", 10304, 12063));
+neverimplemented(recipe(12063));	-- Stormcloth Gloves
+neverimplemented(i(10011));	-- Stormcloth Gloves
+neverimplemented(itemrecipe("Pattern: Stormcloth Headband", 10319, 12083));
+neverimplemented(recipe(12083));	-- Stormcloth Headband
+neverimplemented(i(10032));	-- Stormcloth Headband
+neverimplemented(itemrecipe("Pattern: Stormcloth Pants", 10303, 12062));
+neverimplemented(recipe(12062));	-- Stormcloth Pants
+neverimplemented(i(10010));	-- Stormcloth Pants
+neverimplemented(itemrecipe("Pattern: Stormcloth Shoulders", 10322, 12087));
+neverimplemented(recipe(12087));	-- Stormcloth Shoulders
+neverimplemented(i(10038));	-- Stormcloth Shoulders
+neverimplemented(itemrecipe("Pattern: Stormcloth Vest", 10313, 12068));
+neverimplemented(recipe(12068));	-- Stormcloth Vest
+neverimplemented(i(10020));	-- Stormcloth Vest
+neverimplemented(itemrecipe("Pattern: Felcloth Bag", 21369, 26086));	-- recipe item is not in game; you learn the pattern from Jandice Barov's Journal in Scholo
+
+-- #if AFTER TBC
+neverimplemented(itemrecipe("Pattern: Lifeblood Bracers", 30474, 36672));
+neverimplemented(recipe(36672));	-- Lifeblood Bracers
+neverimplemented(i(30464));	-- Lifeblood Bracers
+neverimplemented(itemrecipe("Pattern: Lifeblood Belt", 30473, 36670));
+neverimplemented(recipe(36670));	-- Lifeblood Belt
+neverimplemented(i(30463));	-- Lifeblood Belt
+neverimplemented(itemrecipe("Pattern: Lifeblood Leggings", 30472, 36669));
+neverimplemented(recipe(36669));	-- Lifeblood Leggings
+neverimplemented(i(30465));	-- Lifeblood Leggings
+neverimplemented(itemrecipe("Pattern: Netherflame Belt", 30470, 36667));
+neverimplemented(recipe(36667));	-- Netherflame Belt
+neverimplemented(i(30460));	-- Netherflame Belt
+neverimplemented(itemrecipe("Pattern: Netherflame Boots", 30471, 36668));
+neverimplemented(recipe(36668));	-- Netherflame Boots
+neverimplemented(i(30461));	-- Netherflame Boots
+neverimplemented(itemrecipe("Pattern: Netherflame Robe", 30469, 36665));
+neverimplemented(recipe(36665));	-- Netherflame Robe
+neverimplemented(i(30459));	-- Netherflame Robe
+-- #endif
+
+-- #if AFTER WRATH
+neverimplemented(i(42196));	-- Pattern: Aurora Slippers (pattern never went live, but it's learned at the trainer)
+neverimplemented(i(42190));	-- Pattern: Deathchill Cloak (pattern never went live, but it's learned at the trainer)
+neverimplemented(i(42180));	-- Pattern: Ebonweave (pattern never went live, but it's learned at the trainer)
+neverimplemented(i(42200));	-- Pattern: Ebonweave Gloves (pattern never went live, but it's learned at the trainer)
+neverimplemented(i(42199));	-- Pattern: Ebonweave Robe (pattern never went live, but it's learned at the trainer)
+neverimplemented(i(42194));	-- Pattern: Frostmoon Pants (pattern never went live, but it's learned at the trainer)
+neverimplemented(i(42186));	-- Pattern: Frostweave Bag (pattern never went live, but it's learned at the trainer)
+neverimplemented(i(42179));	-- Pattern: Green Workman's Shirt (pattern never went live, but it's learned at the trainer)
+neverimplemented(i(42191));	-- Pattern: Hat of Wintry Doom (pattern never went live, but it's learned at the trainer)
+neverimplemented(i(42195));	-- Pattern: Light Blessed Mittens (pattern never went live, but it's learned at the trainer)
+neverimplemented(i(42181));	-- Pattern: Moonshroud (pattern never went live, but it's learned at the trainer)
+neverimplemented(i(42198));	-- Pattern: Moonshroud Gloves (pattern never went live, but it's learned at the trainer)
+neverimplemented(i(42197));	-- Pattern: Moonshroud Robe (pattern never went live, but it's learned at the trainer)
+neverimplemented(i(42192));	-- Pattern: Silky Iceshard Boots (pattern never went live, but it's learned at the trainer)
+neverimplemented(i(42182));	-- Pattern: Spellweave (pattern never went live, but it's learned at the trainer)
+neverimplemented(i(42202));	-- Pattern: Spellweave Gloves (pattern never went live, but it's learned at the trainer)
+neverimplemented(i(42201));	-- Pattern: Spellweave Robe (pattern never went live, but it's learned at the trainer)
+neverimplemented(i(42189));	-- Pattern: Wispcloak (pattern never went live, but it's learned at the trainer)
+neverimplemented(i(42174));	-- Pattern: Yellow Lumberjack Shirt (pattern never went live, but it's learned at the trainer)
+-- #endif
+
+-- #if AFTER CATA
+
+-- #endif
+
+-- #if AFTER MOP
+
+-- #endif
+
+-- #if AFTER WOD
+neverimplemented(recipe(169669));	-- Hexweave Cloth
+neverimplemented(recipe(168851));	-- Miniature Flying Carpet
+neverimplemented(i(114833));	-- Miniature Flying Carpet
+neverimplemented(recipe(173415));	-- Murloc Chew Toy
+neverimplemented(i(118052));	-- Murloc Chew Toy
+-- #endif
+
+-- #if AFTER LEGION
+neverimplemented(i(137981));	-- Pattern: Silkweave Cloak
+-- #endif
+
+-- #if AFTER BFA
+neverimplemented(i(162424));	-- Pattern: Embroidered Deep Sea Cloak of the Feather (alliance)
+neverimplemented(i(162770));	-- Pattern: Embroidered Deep Sea Cloak of the Feather (horde)
+neverimplemented(i(162426));	-- Pattern: Embroidered Deep Sea Cloak of Resilience (alliance)
+neverimplemented(i(162771));	-- Pattern: Embroidered Deep Sea Cloak of Resilience (horde)
+neverimplemented(i(162428));	-- Pattern: Embroidered Deep Sea Gloves (Rank 3)
+neverimplemented(i(162430));	-- Pattern: Embroidered Deep Sea Breeches (Rank 3)
+-- #endif
+
+-- #if AFTER SHADOWLANDS
+
+-- #endif
+
+-- Apply the Never Implemented flag to the Never Implemented things.
+bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, _.NeverImplemented);
+
 --[[
 -- TODO LIST
 un(REMOVED_FROM_GAME, recipe(26801)),  -- Shadoweave Tailoring
 un(REMOVED_FROM_GAME, recipe(26797)),  -- Spellfire Tailoring
 un(REMOVED_FROM_GAME, recipe(26798)),  -- Mooncloth Tailoring
-
--- Stuff that was never implemented does not belong in the main profession list.
-{
-	["recipeID"] = 12083,-- Stormcloth Headband
-	["u"] = NEVER_IMPLEMENTED,
-},
-{
-	["recipeID"] = 12087,-- Stormcloth Shoulders
-	["u"] = NEVER_IMPLEMENTED,
-},
-{
-	["recipeID"] = 7636,-- Green Woolen Robe
-	["u"] = NEVER_IMPLEMENTED,
-},
-{
-	["recipeID"] = 12068,-- Stormcloth Vest
-	["u"] = NEVER_IMPLEMENTED,
-},
-{
-	["recipeID"] = 12063,-- Stormcloth Gloves
-	["u"] = NEVER_IMPLEMENTED,
-},
-{
-	["recipeID"] = 12062,-- Stormcloth Pants
-	["u"] = NEVER_IMPLEMENTED,
-},
-{
-	["recipeID"] = 12090,-- Stormcloth Boots
-	["u"] = NEVER_IMPLEMENTED,
-},
-{
-	["recipeID"] = 8778,	-- Boots of Darkness
-	["u"] = NEVER_IMPLEMENTED,
-},
-{
-	["recipeID"] = 36665,-- Netherflame Robe
-	["u"] = NEVER_IMPLEMENTED,
-},
-{
-	["recipeID"] = 36672,-- Lifeblood Bracers
-	["u"] = NEVER_IMPLEMENTED,
-},
-{
-	["recipeID"] = 36670,-- Lifeblood Belt
-	["u"] = NEVER_IMPLEMENTED,
-},
-{
-	["recipeID"] = 36667,-- Netherflame Belt
-	["u"] = NEVER_IMPLEMENTED,
-},
-{
-	["recipeID"] = 36669,-- Lifeblood Leggings
-	["u"] = NEVER_IMPLEMENTED,
-},
-{
-	["recipeID"] = 36668,-- Netherflame Boots
-	["u"] = NEVER_IMPLEMENTED,
-},
-{
-	["recipeID"] = 169669,-- Hexweave Cloth
-	["u"] = NEVER_IMPLEMENTED,
-},
-{
-	["recipeID"] = 168851,-- Miniature Flying Carpet
-	["u"] = NEVER_IMPLEMENTED,
-},
-{
-	["recipeID"] = 173415,-- Murloc Chew Toy
-	["u"] = NEVER_IMPLEMENTED,
-},
-{
-							["recipeID"] = 26403,-- Festival Dress
-							["u"] = 17,
-						},
-						{
-							["recipeID"] = 26407,-- Festival Suit
-							["u"] = 17,
-						},
-						{
-							["recipeID"] = 44950,-- Green Winter Clothes
-							["u"] = 29,
-						},
-						{
-							["recipeID"] = 44958,-- Red Winter Clothes
-							["u"] = 29,
-						},
-						{
-							["recipeID"] = 21945,-- Green Holiday Shirt
-							["u"] = 29,
-						},
 ]]--
