@@ -244,6 +244,9 @@ _.Zones =
 							i(34987, {	-- Brutal Gladiator's Battle Staff
 								["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 							}),
+							i(37739, {	-- Brutal Gladiator's Blade of Alacrity
+								["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+							}),
 							i(34988, {	-- Brutal Gladiator's Bonecracker
 								["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 							}),
@@ -337,6 +340,9 @@ _.Zones =
 							i(35103, {	-- Brutal Gladiator's Staff
 								["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 							}),
+							i(37740, {	-- Brutal Gladiator's Swift Judgement
+								["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+							}),
 							i(35107, {	-- Brutal Gladiator's Touch of Defeat
 								["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 							}),
@@ -345,6 +351,32 @@ _.Zones =
 							}),
 							i(35110, {	-- Brutal Gladiator's Waraxe
 								["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+							}),
+						}),
+						cl(DEATHKNIGHT, {
+							i(146600, {	-- Ensemble: Brutal Gladiator's Dreadplate Armor
+								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+								["sym"] = {
+									{"sub", "pvp_set_ensemble", -10003, -667, -661, 6 }, 
+									{"select", "itemID", 35176 },	-- Guardian's Plate Bracers
+									{"select", "itemID", 35161 },	-- Guardian's Plate Belt
+									{"select", "itemID", 35146 },	-- Guardian's Plate Greaves
+								},
+							}),
+							i(40440, {	-- Brutal Gladiator's Dreadplate Chestpiece
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(40441, {	-- Brutal Gladiator's Dreadplate Gauntlets
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(40442, {	-- Brutal Gladiator's Dreadplate Helm
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(40443, {	-- Brutal Gladiator's Dreadplate Legguards
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(40444, {	-- Brutal Gladiator's Dreadplate Shoulders
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
 						cl(DRUID, {
@@ -664,15 +696,9 @@ _.Zones =
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
 									{"sub", "pvp_set_ensemble", -10003, -667, -661, 9 }, 
-									{"select", "itemID", 35167 },	-- Guardian's Dragonhide Bracers
-									{"select", "itemID", 35152 },	-- Guardian's Dragonhide Belt
-									{"select", "itemID", 35137 },	-- Guardian's Dragonhide Boots
-									{"select", "itemID", 35169 },	-- Guardian's Kodohide Bracers
-									{"select", "itemID", 35154 },	-- Guardian's Kodohide Belt
-									{"select", "itemID", 35139 },	-- Guardian's Kodohide Boots
-									{"select", "itemID", 35180 },	-- Guardian's Wyrmhide Bracers
-									{"select", "itemID", 35165 },	-- Guardian's Wyrmhide Belt
-									{"select", "itemID", 35150 },   -- Guardian's Wyrmhide Boots
+									{"select", "itemID", 35168 },	-- Guardian's Dreadweave Cuffs
+									{"select", "itemID", 35153 },	-- Guardian's Dreadweave Belt
+									{"select", "itemID", 35138 },	-- Guardian's Dreadweave Stalkers
 									{"exclude", "itemID", 146601 },	-- Exclude itself to stop duplicating
 								},
 							}),
@@ -712,15 +738,9 @@ _.Zones =
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
 									{"sub", "pvp_set_ensemble", -10003, -667, -661, 1 }, 
-									{"select", "itemID", 35167 },	-- Guardian's Dragonhide Bracers
-									{"select", "itemID", 35152 },	-- Guardian's Dragonhide Belt
-									{"select", "itemID", 35137 },	-- Guardian's Dragonhide Boots
-									{"select", "itemID", 35169 },	-- Guardian's Kodohide Bracers
-									{"select", "itemID", 35154 },	-- Guardian's Kodohide Belt
-									{"select", "itemID", 35139 },	-- Guardian's Kodohide Boots
-									{"select", "itemID", 35180 },	-- Guardian's Wyrmhide Bracers
-									{"select", "itemID", 35165 },	-- Guardian's Wyrmhide Belt
-									{"select", "itemID", 35150 },   -- Guardian's Wyrmhide Boots
+									{"select", "itemID", 35176 },	-- Guardian's Plate Bracers
+									{"select", "itemID", 35161 },	-- Guardian's Plate Belt
+									{"select", "itemID", 35146 },	-- Guardian's Plate Greaves
 									{"exclude", "itemID", 146603 },	-- Exclude itself to stop duplicating
 								},
 							}),
@@ -2480,6 +2500,9 @@ _.Zones =
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 							i(28383, {	-- General's Plate Greaves
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(30491, {	-- General's Plate Sabatons
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 							i(32993, {	-- General's Ringmail Sabatons
