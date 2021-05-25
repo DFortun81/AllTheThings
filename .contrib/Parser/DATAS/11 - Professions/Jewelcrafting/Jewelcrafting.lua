@@ -5363,7 +5363,6 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 -- Jewelcrafting Item Database
 local REMOVED_WITH_CATA = "removed 4.0.1.10000";
 _.ItemDB = {};
-_.NeverImplemented = {};
 
 -- Recipe Cache (for Validation)
 local recipeCache = {
@@ -5389,7 +5388,7 @@ cacheRecipes(_.Professions);
 local itemrecipe = function(name, itemID, spellID, spellIDAfterCata, timeline)
 	local o = { ["itemID"] = itemID, ["spellID"] = spellID, ["requireSkill"] = JEWELCRAFTING, ["f"] = 200 };
 	if spellIDAfterCata then
-		if type(spellIDAfterCata) ~= "number" then
+		if type(spellIDAfterCata) == "number" then
 			-- #if AFTER CATA
 			o.spellID = spellIDAfterCata;
 			-- #endif
@@ -5397,6 +5396,7 @@ local itemrecipe = function(name, itemID, spellID, spellIDAfterCata, timeline)
 			-- Check to see if the timeline was shifted over one argument.
 			-- A non-numerical argument for the spellID is not valid, so it must have been intended.
 			if not timeline then timeline = spellIDAfterCata; end
+			spellIDAfterCata = nil;
 		end
 	end
 	if timeline then
@@ -5418,16 +5418,12 @@ local itemrecipe = function(name, itemID, spellID, spellIDAfterCata, timeline)
 	_.ItemDB[itemID] = applyclassicphase(TBC_PHASE_ONE, o);
 	
 	-- Ensure that this recipe's spellID exists in the profession database.
-	if not recipeCache[o.spellID] then print("MISSING RECIPE", name, o.spellID); end
+	if recipeCache and not recipeCache[o.spellID] then print("MISSING RECIPE", name, o.spellID); end
 	return o;
-end
-local neverimplemented = function(thing)
-	table.insert(_.NeverImplemented, prof(JEWELCRAFTING, { thing }));
 end
 
 -- #if AFTER TBC
 -- Recipes introduced with Burning Crusade
--- itemrecipe("", ITEMID, SPELLID);
 itemrecipe("Design: Amulet of Flowing Life", 35202, 46126);
 itemrecipe("Design: Blazing Eternium Band", 24165, 31061);
 itemrecipe("Design: Bold Crimson Spinel", 32274, 39705);
@@ -5441,34 +5437,140 @@ itemrecipe("Design: Delicate Eternium Ring", 24164, 31060);
 itemrecipe("Design: Delicate Living Ruby", 24194, 31085);
 itemrecipe("Design: Destructive Skyfire Diamond", 25907, 32871);
 itemrecipe("Design: Embrace of the Dawn", 24170, 31072);
+itemrecipe("Design: Eye of the Night", 24169, 31071);
 itemrecipe("Design: Flashing Crimson Spinel", 32285, 39714);
+itemrecipe("Design: Flashing Living Ruby", 24198, 31091);
 itemrecipe("Design: Forceful Seaspray Emerald", 35765, 47053);
 itemrecipe("Design: Hard Khorium Band", 35200, 46124);
 itemrecipe("Design: Hard Khorium Choker", 35203, 46127);
+itemrecipe("Design: Heavy Felsteel Ring", 24163, 31058);
+itemrecipe("Design: Inscribed Noble Topaz", 24213, 31106);
 itemrecipe("Design: Inscribed Pyrestone", 32303, 39733);
 itemrecipe("Design: Jagged Seaspray Emerald", 32312, 39742);
+itemrecipe("Design: Jagged Talasite", 24220, 31113);
+itemrecipe("Design: Living Ruby Pendant", 24167, 31068);
 itemrecipe("Design: Loop of Forged Power", 35198, 46122);
 itemrecipe("Design: Mystic Lionseye", 32295, 39724);
+itemrecipe("Design: Mystical Skyfire Diamond", 25909, 32872);
 itemrecipe("Design: Pendant of Sunfire", 35201, 46125);
+itemrecipe("Design: Potent Noble Topaz", 24214, 31107);
 itemrecipe("Design: Potent Pyrestone", 32304, 39734);
 itemrecipe("Design: Powerful Earthstorm Diamond", 25902, 32866);
 itemrecipe("Design: Quick Lionseye", 35763, 47056);
 itemrecipe("Design: Radiant Seaspray Emerald", 32310, 39740);
+itemrecipe("Design: Radiant Talasite", 24218, 31111);
 itemrecipe("Design: Reckless Pyrestone", 35762, 47055);
 itemrecipe("Design: Ring of Flowing Life", 35199, 46123);
+itemrecipe("Design: Shifting Nightseye", 24210, 31103);
 itemrecipe("Design: Shifting Shadowsong Amethyst", 32298, 39728);
+itemrecipe("Design: Smooth Dawnstone", 24204, 31097);
 itemrecipe("Design: Smooth Lionseye", 32291, 39720);
 itemrecipe("Design: Solid Empyrean Sapphire", 32286, 39715);
+itemrecipe("Design: Solid Star of Elune", 24199, 31092);
+itemrecipe("Design: Sovereign Nightseye", 24209, 31102);
 itemrecipe("Design: Sovereign Shadowsong Amethyst", 32297, 39727);
 itemrecipe("Design: Sparkling Empyrean Sapphire", 32287, 39716);
+itemrecipe("Design: Sparkling Star of Elune", 24200, 31149);
 itemrecipe("Design: Steady Seaspray Emerald", 35764, 47054);
+itemrecipe("Design: Stormy Azure Moonstone", 23154, 28955);
 itemrecipe("Design: Stormy Empyrean Sapphire", 32289, 39718);
+itemrecipe("Design: Stormy Star of Elune", 24202, 31095);
 itemrecipe("Design: Subtle Lionseye", 32284, 39713);
+itemrecipe("Design: Tenacious Earthstorm Diamond", 25905, 32868);
+itemrecipe("Design: Thick Felsteel Necklace", 24166, 31067);
+itemrecipe("Design: Thundering Skyfire Diamond", 32411, 39963);
 itemrecipe("Design: Veiled Shadowsong Amethyst", 32307, 39737);
 -- itemrecipe("", ITEMID, SPELLID);
 -- itemrecipe("", ITEMID, SPELLID);
 -- itemrecipe("", ITEMID, SPELLID);
 
+-- Recipes Renamed with Cata
+itemrecipe({"Design: Dazzling Seaspray Emerald [TBC]", "Design: Purified Shadowsong Amethyst [CATA+]"}, 32311, 39741);
+itemrecipe({"Design: Dazzling Talasite [TBC]", "Design: Purified Nightseye [CATA+]"}, 24219, 31112);
+itemrecipe({"Design: Enduring Seaspray Emerald [TBC]", "Design: Regal Seaspray Emerald [CATA+]"}, 32309, 39739);
+itemrecipe({"Design: Glinting Noble Topaz [TBC]", "Design: Glinting Nightseye [CATA+]"}, 24216, 31109);
+itemrecipe({"Design: Glinting Pyrestone [TBC]", "Design: Glinting Shadowsong Amethyst [CATA+]"}, 32306, 39736);
+itemrecipe({"Design: Glowing Nightseye [TBC]", "Design: Timeless Nightseye [CATA+]"}, 24211, 31104);
+itemrecipe({"Design: Luminous Noble Topaz [TBC]", "Design: Reckless Noble Topaz [CATA+]"}, 24215, 31108);
+itemrecipe({"Design: Rigid Dawnstone [TBC]", "Design: Rigid Star of Elune [CATA+]"}, 24205, 31098);
+itemrecipe({"Design: Rigid Lionseye [TBC]", "Design: Rigid Empyrean Sapphire [CATA+]"}, 32292, 39721);
+itemrecipe({"Design: Runed Crimson Spinel [TBC]", "Design: Brilliant Crimson Spinel [CATA+]"}, 32282, 39711);
+itemrecipe({"Design: Runed Living Ruby [TBC]", "Design: Brilliant Living Ruby [CATA+]"}, 24196, 31088);
+itemrecipe({"Design: Subtle Living Ruby [TBC]", "Design: Subtle Dawnstone [CATA+]"}, 24197, 31090);
+itemrecipe({"Design: Veiled Noble Topaz [TBC]", "Design: Veiled Nightseye [CATA+]"}, 31878, 39470);
+itemrecipe({"Design: Wicked Noble Topaz [TBC]", "Design: Deadly Noble Topaz [CATA+]"}, 31879, 39471);
+itemrecipe({"Design: Wicked Pyrestone [TBC]", "Design: Deadly Pyrestone [CATA+]"}, 32308, 39738);
+-- itemrecipe({" [TBC]", " [CATA+]"}, ITEMID, SPELLID);
+-- itemrecipe({" [TBC]", " [CATA+]"}, ITEMID, SPELLID);
+
+-- Recipes that got new Spell IDs with Cata?!
+itemrecipe({"Design: Enduring Talasite [TBC]", "Design: Regal Talasite [CATA+]"}, 24217, 31110, 46803);
+
+-- Recipes Removed with Cata
+itemrecipe({"Design: Balanced Nightseye [TBC]", "Design: Shifting Nightseye [CATA+]"}, 31876, 39463, 31103, REMOVED_WITH_CATA);
+itemrecipe({"Design: Balanced Shadowsong Amethyst [TBC]", "Design: Shifting Shadowsong Amethyst [CATA+]"}, 32299, 39729, 39728, REMOVED_WITH_CATA);
+itemrecipe({"Design: Bright Crimson Spinel [TBC]", "Design: Delicate Crimson Spinel [CATA+]"}, 32283, 39712, 39706, REMOVED_WITH_CATA);
+itemrecipe({"Design: Bright Living Ruby [TBC]", "Design: Delicate Living Ruby [CATA+]"}, 24192, 31089, 31085, REMOVED_WITH_CATA);
+itemrecipe({"Design: Bright Living Ruby [TBC]", "Design: Delicate Living Ruby [CATA+]"}, 35306, 31085, 31089, REMOVED_WITH_CATA);
+itemrecipe({"Design: Brilliant Dawnstone [TBC]", "Design: Brilliant Living Ruby [CATA+]"}, 24203, 31088, 31096, REMOVED_WITH_CATA);
+itemrecipe({"Design: Brilliant Lionseye [TBC]", "Design: Brilliant Crimson Spinel [CATA+]"}, 32290, 39719, 39711, REMOVED_WITH_CATA);
+itemrecipe({"Design: Gleaming Dawnstone [TBC]", "Design: Smooth Dawnstone [CATA+]"}, 24206, 31099, 31097, REMOVED_WITH_CATA);
+itemrecipe({"Design: Gleaming Lionseye [TBC]", "Design: Smooth Lionseye [CATA+]"}, 32293, 39722, 39720, REMOVED_WITH_CATA);
+itemrecipe({"Design: Glowing Shadowsong Amethyst [TBC]", "Design: Timeless Shadowsong Amethyst [CATA+]"}, 32301, 39731, 39731, REMOVED_WITH_CATA);
+itemrecipe({"Design: Great Lionseye [TBC]", "Design: Rigid Empyrean Sapphire [CATA+]"}, 32296, 39725, 39721, REMOVED_WITH_CATA);
+itemrecipe({"Design: Infused Nightseye [TBC]", "Design: Glinting Nightseye [CATA+]"}, 31877, 39462, 31109, REMOVED_WITH_CATA);
+itemrecipe({"Design: Infused Shadowsong Amethyst [TBC]", "Design: Glinting Shadowsong Amethyst [CATA+]"}, 32300, 39730, 39736, REMOVED_WITH_CATA);
+itemrecipe({"Design: Luminous Pyrestone [TBC]", "Design: Reckless Pyrestone [CATA+]"}, 32305, 39735, 47055, REMOVED_WITH_CATA);
+itemrecipe({"Design: Lustrous Empyrean Sapphire [TBC]", "Design: Sparkling Empyrean Sapphire [CATA+]"}, 32288, 39717, 39716, REMOVED_WITH_CATA);
+itemrecipe({"Design: Lustrous Star of Elune [TBC]", "Design: Sparkling Star of Elune [CATA+]"}, 24201, 31094, 31149, REMOVED_WITH_CATA);
+itemrecipe({"Design: Rigid Star of Elune [TBC]", "Design: Rigid Star of Elune [CATA+]"}, 31875, 39452, 31098, REMOVED_WITH_CATA);
+itemrecipe({"Design: Royal Nightseye [TBC]", "Design: Purified Nightseye [CATA+]"}, 24212, 31105, 31112, REMOVED_WITH_CATA);
+itemrecipe({"Design: Royal Shadowsong Amethyst [TBC]", "Design: Purified Shadowsong Amethyst [CATA+]"}, 32302, 39732, 39741, REMOVED_WITH_CATA);
+itemrecipe({"Design: Teardrop Crimson Spinel [TBC]", "Design: Brilliant Crimson Spinel [CATA+]"}, 32281, 39710, 39711, REMOVED_WITH_CATA);
+itemrecipe({"Design: Thick Dawnstone [TBC]", "Design: Subtle Dawnstone [CATA+]"}, 24207, 31100, 31090, REMOVED_WITH_CATA);
+itemrecipe({"Design: Thick Lionseye [TBC]", "Design: Subtle Lionseye [CATA+]"}, 32294, 39723, 39713, REMOVED_WITH_CATA);
+-- itemrecipe({" [TBC]", " [CATA+]"}, ITEMID, SPELLID, AFTERCATA, REMOVED_WITH_CATA);
+-- itemrecipe({" [TBC]", " [CATA+]"}, ITEMID, SPELLID, AFTERCATA, REMOVED_WITH_CATA);
+-- itemrecipe({" [TBC]", " [CATA+]"}, ITEMID, SPELLID, AFTERCATA, REMOVED_WITH_CATA);
+-- #endif
+
+-- #if AFTER WRATH
+
+-- #endif
+
+-- #if AFTER CATA
+
+-- #endif
+
+-- #if AFTER MOP
+
+-- #endif
+
+-- #if AFTER WOD
+
+-- #endif
+
+-- #if AFTER LEGION
+
+-- #endif
+
+-- #if AFTER BFA
+
+-- #endif
+
+-- #if AFTER SHADOWLANDS
+
+-- #endif
+
+
+-- Never Implemented Recipe and Crafted Item Database
+local neverimplemented = function(thing)
+	table.insert(_.NeverImplemented, prof(JEWELCRAFTING, { thing }));
+end
+_.NeverImplemented = {};
+recipeCache = nil;	-- Disable the cache validation.
+
+-- #if AFTER TBC
 -- Recipes created with Burning Crusade, but never implemented. :(
 neverimplemented(itemrecipe("Design: Arcanite Sword Pendant", 21793, 26918));
 neverimplemented(recipe(26918));	-- Arcanite Sword Pendant
@@ -5482,101 +5584,6 @@ neverimplemented(i(25884));	-- Primal Stone Statue
 neverimplemented(itemrecipe("Design: Silver Rose Pendant", 20972, 25614));
 neverimplemented(recipe(25614));	-- Silver Rose Pendant
 neverimplemented(i(20956));	-- Silver Rose Pendant
-
--- Recipes Renamed with Cata
--- itemrecipe({" [TBC]", " [CATA+]"}, ITEMID, SPELLID);
-itemrecipe({"Design: Dazzling Seaspray Emerald [TBC]", "Design: Purified Shadowsong Amethyst [CATA+]"}, 32311, 39741);
-itemrecipe({"Design: Enduring Seaspray Emerald [TBC]", "Design: Regal Seaspray Emerald [CATA+]"}, 32309, 39739);
-itemrecipe({"Design: Glinting Pyrestone [TBC]", "Design: Glinting Shadowsong Amethyst [CATA+]"}, 32306, 39736);
-itemrecipe({"Design: Rigid Lionseye [TBC]", "Design: Rigid Empyrean Sapphire [CATA+]"}, 32292, 39721);
-itemrecipe({"Design: Runed Crimson Spinel [TBC]", "Design: Brilliant Crimson Spinel [CATA+]"}, 32282, 39711);
-itemrecipe({"Design: Runed Living Ruby [TBC]", "Design: Brilliant Living Ruby [CATA+]"}, 24196, 31088);
-itemrecipe({"Design: Wicked Noble Topaz [TBC]", "Design: Deadly Noble Topaz [CATA+]"}, 31879, 39471);
-itemrecipe({"Design: Wicked Pyrestone [TBC]", "Design: Deadly Pyrestone [CATA+]"}, 32308, 39738);
--- itemrecipe({" [TBC]", " [CATA+]"}, ITEMID, SPELLID);
--- itemrecipe({" [TBC]", " [CATA+]"}, ITEMID, SPELLID);
--- itemrecipe({" [TBC]", " [CATA+]"}, ITEMID, SPELLID);
-
--- Recipes Removed with Cata
--- itemrecipe({" [TBC]", " [CATA+]"}, ITEMID, SPELLID, AFTERCATA, REMOVED_WITH_CATA);
-itemrecipe({"Design: Balanced Shadowsong Amethyst [TBC]", "Design: Shifting Shadowsong Amethyst [CATA+]"}, 32299, 39729, 39728, REMOVED_WITH_CATA);
-itemrecipe({"Design: Bright Crimson Spinel [TBC]", "Design: Delicate Crimson Spinel [CATA+]"}, 32283, 39712, 39706, REMOVED_WITH_CATA);
-itemrecipe({"Design: Bright Living Ruby [TBC]", "Design: Delicate Living Ruby [CATA+]"}, 24192, 31089, 31085, REMOVED_WITH_CATA);
-itemrecipe({"Design: Bright Living Ruby [TBC]", "Design: Delicate Living Ruby [CATA+]"}, 35306, 31085, 31089, REMOVED_WITH_CATA);
-itemrecipe({"Design: Brilliant Dawnstone [TBC]", "Design: Brilliant Living Ruby [CATA+]"}, 24203, 31088, 31096, REMOVED_WITH_CATA);
-itemrecipe({"Design: Brilliant Lionseye [TBC]", "Design: Brilliant Crimson Spinel [CATA+]"}, 32290, 39719, 39711, REMOVED_WITH_CATA);
-itemrecipe({"Design: Gleaming Lionseye [TBC]", "Design: Smooth Lionseye [CATA+]"}, 32293, 39722, 39720, REMOVED_WITH_CATA);
-itemrecipe({"Design: Glowing Shadowsong Amethyst [TBC]", "Design: Timeless Shadowsong Amethyst [CATA+]"}, 32301, 39731, 39731, REMOVED_WITH_CATA);
-itemrecipe({"Design: Great Lionseye [TBC]", "Design: Rigid Empyrean Sapphire [CATA+]"}, 32296, 39725, 39721, REMOVED_WITH_CATA);
-itemrecipe({"Design: Infused Shadowsong Amethyst [TBC]", "Design: Glinting Shadowsong Amethyst [CATA+]"}, 32300, 39730, 39736, REMOVED_WITH_CATA);
-itemrecipe({"Design: Luminous Pyrestone [TBC]", "Design: Reckless Pyrestone [CATA+]"}, 32305, 39735, 47055, REMOVED_WITH_CATA);
-itemrecipe({"Design: Lustrous Empyrean Sapphire [TBC]", "Design: Sparkling Empyrean Sapphire [CATA+]"}, 32288, 39717, 39716, REMOVED_WITH_CATA);
-itemrecipe({"Design: Royal Shadowsong Amethyst [TBC]", "Design: Purified Shadowsong Amethyst [CATA+]"}, 32302, 39732, 39741, REMOVED_WITH_CATA);
-itemrecipe({"Design: Teardrop Crimson Spinel [TBC]", "Design: Brilliant Crimson Spinel [CATA+]"}, 32281, 39710, 39711, REMOVED_WITH_CATA);
-itemrecipe({"Design: Thick Lionseye [TBC]", "Design: Subtle Lionseye [CATA+]"}, 32294, 39723, 39713, REMOVED_WITH_CATA);
--- itemrecipe({" [TBC]", " [CATA+]"}, ITEMID, SPELLID, AFTERCATA, REMOVED_WITH_CATA);
--- itemrecipe({" [TBC]", " [CATA+]"}, ITEMID, SPELLID, AFTERCATA, REMOVED_WITH_CATA);
--- itemrecipe({" [TBC]", " [CATA+]"}, ITEMID, SPELLID, AFTERCATA, REMOVED_WITH_CATA);
--- #endif
-
--- #if AFTER WRATH
---[[
-i(24169),	-- Design: Eye of the Night
-i(24198),	-- Design: Flashing Living Ruby
-i(24216),	-- Design: Glinting Nightseye
-i(31877, {	-- Design: Glinting Nightseye
-	["spellID"] = 0,	-- This is now available via 24216, need to delink the old plans from the recipe
-	["u"] = REMOVED_FROM_GAME,
-}),
-i(24163),	-- Design: Heavy Felsteel Ring
-i(24213),	-- Design: Inscribed Noble Topaz
-i(24220),	-- Design: Jagged Talasite
-i(24167),	-- Design: Living Ruby Pendant
-i(25909),	-- Design: Mystical Skyfire Diamond
-i(24214),	-- Design: Potent Noble Topaz
-i(24219),	-- Design: Purified Nightseye
-i(24212, {	-- Design: Purified Nightseye
-	["spellID"] = 0,	-- This is now available via 24219, need to delink the old plans from the recipe
-	["u"] = REMOVED_FROM_GAME,
-}),
-i(24218),	-- Design: Radiant Talasite
-i(24215),	-- Design: Reckless Noble Topaz
-i(24217),	-- Design: Regal Talasite
-i(24205),	-- Design: Rigid Star of Elune (BoE version)
-i(31875, {	-- Design: Rigid Star of Elune
-	["spellID"] = 0,	-- This is now available via 24205, need to delink the old plans from the recipe
-	["u"] = REMOVED_FROM_GAME,
-}),
-i(24210),	-- Design: Shifting Nightseye
-i(31876, {	-- Design: Shifting Nightseye
-	["spellID"] = 0,	-- This is now available via 24210, need to delink the old plans from the recipe
-	["u"] = REMOVED_FROM_GAME,
-}),
-i(24204),	-- Design: Smooth Dawnstone
-i(24206, {	-- Design: Smooth Dawnstone
-	["spellID"] = 0,	-- This is now available via 24204, need to delink the old plans from the recipe
-	["u"] = REMOVED_FROM_GAME,
-}),
-i(24199),	-- Design: Solid Star of Elune (BoE version)
-i(24209),	-- Design: Sovereign Nightseye
-i(24200),	-- Design: Sparkling Star of Elune
-i(24201, {	-- Design: Sparkling Star of Elune
-	["spellID"] = 0,	-- This is now available via 24200, need to delink the old plans from the recipe
-	["u"] = REMOVED_FROM_GAME,
-}),
-i(24202),	-- Design: Stormy Star of Elune
-i(23154),	-- Design: Stormy Azure Moonstone
-i(24197),	-- Design: Subtle Dawnstone
-i(24207, {	-- Design: Subtle Dawnstone
-	["spellID"] = 0,	-- This is now available via 24197, need to delink the old plans from the recipe
-	["u"] = REMOVED_FROM_GAME,
-}),
-i(25905),	-- Design: Tenacious Earthstorm Diamond
-i(24166),	-- Design: Thick Felsteel Necklace
-i(32411),	-- Design: Thundering Skyfire Diamond
-i(24211),	-- Design: Timeless Nightseye
-i(31878),	-- Design: Veiled Nightseye
-]]--
 -- #endif
 
 -- #if AFTER CATA
@@ -5587,6 +5594,14 @@ neverimplemented(i(52150));	-- Perfect Resolute Hessonite
 neverimplemented(recipe(73233));	-- Mystic Alicite
 neverimplemented(i(52092));	-- Mystic Alicite
 neverimplemented(i(52165));	-- Perfect Mystic Alicite
+-- #endif
+
+-- #if AFTER WRATH
+
+-- #endif
+
+-- #if AFTER CATA
+
 -- #endif
 
 -- #if AFTER MOP

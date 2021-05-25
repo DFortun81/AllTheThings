@@ -19,7 +19,6 @@ _.WorldDrops =
 				i(13112),	-- Winged Helm
 			}),
 			f(51,   {	-- Neck
-				un(NEVER_IMPLEMENTED, i(21793)),	-- Arcanite Sword Pendant
 				i(12044),	-- Arctic Pendant
 				i(12028),	-- Basalt Necklace
 				i(12019),	-- Cerulean Talisman

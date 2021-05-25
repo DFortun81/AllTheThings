@@ -1167,7 +1167,6 @@ _.Craftables =
 			}),
 			n(-330, {	-- Feet
 				un(REMOVED_FROM_GAME, i(19684)),	-- Bloodvine Boots
-				un(NEVER_IMPLEMENTED, i(7027)),		-- Boots of Darkness
 				i(19056),	-- Argent Boots
 				i(10026),	-- Black Mageweave Boots
 				i(4325),	-- Boots of the Enchanter

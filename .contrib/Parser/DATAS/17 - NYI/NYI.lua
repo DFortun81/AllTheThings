@@ -365,7 +365,6 @@ _.NeverImplemented =
 				i(96356),	-- Robes of the Thousandfold Hells
 				i(96357),	-- Mantle of the Thousandfold Hells
 			}),
-			i(6243),		-- Green Woolen Robe
 			i(105710),	-- Lasso Bracers, Humanoid
 			i(105928),	-- Magic Bunny Hat
 			i(159190),	-- Foxhollow Bracelets
@@ -517,14 +516,8 @@ _.NeverImplemented =
 			i(109298),	-- Unknown
 			i(109299),	-- Unknown
 			i(109302),	-- Unknown
-			i(6478),		-- Rat Stompers
-			i(10010),	-- Stormcloth Pants
-			i(10011),	-- Stormcloth Gloves
-			i(10020),	-- Stormcloth Vest
+			i(6478),	-- Rat Stompers
 			i(47102),	-- Unknown
-			i(10032),	-- Stormcloth Headband
-			i(10038),	-- Stormcloth Shoulders (comment on wowhead says they have the pattern, but I'm pretty sure that's fake - no history of the pattern or item on UMJ)
-			i(10039),	-- Stormcloth Boots
 			i(12107),	-- Whispersilk Leggings
 			i(13080),	-- Widow's Clutch
 			i(1216),		-- Frost Bracers
@@ -536,12 +529,6 @@ _.NeverImplemented =
 			i(26015),	-- Anchorite Neophyte's Cuffs
 			i(27720),	-- Robes of the Aldor
 			i(30287),	-- Mantle of Arcane Mastery
-			i(30459),	-- Netherflame Robe
-			i(30460),	-- Netherflame Belt
-			i(30461),	-- Netherflame Boots
-			i(30463),	-- Lifeblood Belt
-			i(30464),	-- Lifeblood Bracers
-			i(30465),	-- Lifeblood Leggings
 			i(34107),	-- Tattered Shoulderpads
 			i(37210),	-- Seafarer Cinch (removed in beta)
 			i(37225),	-- Sweltering Sandals (removed in beta)
@@ -2308,7 +2295,6 @@ _.NeverImplemented =
 		i(31507),	-- Unknown
 		i(36963),	-- Unknown
 		i(90568),	-- Unknown
-		i(114833),	-- Miniature Flying Carpet
 		i(90569),	-- Unknown
 		i(98001),	-- Saurok Collection
 		i(98005),	-- Saurok Collection
@@ -3753,53 +3739,6 @@ _.NeverImplemented =
 				["u"] = NEVER_IMPLEMENTED,
 			},
 			i(118097),	-- Recipe: Small Football
-		}),
-		prof(TAILORING, {
-			i(42196),	-- Pattern: Aurora Slippers (pattern never went live, but it's learned at the trainer)
-			i(7093),		-- Pattern: Boots of Darkness
-			i(6273),		-- Pattern: Green Woolen Robe
-			i(42190),	-- Pattern: Deathchill Cloak (pattern never went live, but it's learned at the trainer)
-			i(42180),	-- Pattern: Ebonweave (pattern never went live, but it's learned at the trainer)
-			i(42200),	-- Pattern: Ebonweave Gloves (pattern never went live, but it's learned at the trainer)
-			i(42199),	-- Pattern: Ebonweave Robe (pattern never went live, but it's learned at the trainer)
-			i(162424),	-- Pattern: Embroidered Deep Sea Cloak of the Feather (alliance)
-			i(162770),	-- Pattern: Embroidered Deep Sea Cloak of the Feather (horde)
-			i(162426),	-- Pattern: Embroidered Deep Sea Cloak of Resilience (alliance)
-			i(162771),	-- Pattern: Embroidered Deep Sea Cloak of Resilience (horde)
-			i(8388),	-- Pattern: Nightscape Cloak							(Never added in Game)
-			i(162428),	-- Pattern: Embroidered Deep Sea Gloves (Rank 3)
-			i(162430),	-- Pattern: Embroidered Deep Sea Breeches (Rank 3)
-			i(21369),	-- Pattern: Felcloth Bag
-			i(42194),	-- Pattern: Frostmoon Pants (pattern never went live, but it's learned at the trainer)
-			i(42186),	-- Pattern: Frostweave Bag (pattern never went live, but it's learned at the trainer)
-			i(42179),	-- Pattern: Green Workman's Shirt (pattern never went live, but it's learned at the trainer)
-			i(42191),	-- Pattern: Hat of Wintry Doom (pattern never went live, but it's learned at the trainer)
-			i(30473),	-- Pattern: Lifeblood Belt
-			i(30474),	-- Pattern: Lifeblood Bracers
-			i(30472),	-- Pattern: Lifeblood Leggings
-			i(42195),	-- Pattern: Light Blessed Mittens (pattern never went live, but it's learned at the trainer)
-			i(114867),	-- Pattern: Miniature Flying Carpet - NYI
-			i(42181),	-- Pattern: Moonshroud (pattern never went live, but it's learned at the trainer)
-			i(42198),	-- Pattern: Moonshroud Gloves (pattern never went live, but it's learned at the trainer)
-			i(42197),	-- Pattern: Moonshroud Robe (pattern never went live, but it's learned at the trainer)
-			i(118098),	-- Pattern: Murloc Chew Toy
-			i(30470),	-- Pattern: Netherflame Belt
-			i(30471),	-- Pattern: Netherflame Boots
-			i(30469),	-- Pattern: Netherflame Robe
-			i(137981),	-- Pattern: Silkweave Cloak
-			i(6273),	-- Pattern: Green Woolen Robe
-			i(42192),	-- Pattern: Silky Iceshard Boots (pattern never went live, but it's learned at the trainer)
-			i(42182),	-- Pattern: Spellweave (pattern never went live, but it's learned at the trainer)
-			i(42202),	-- Pattern: Spellweave Gloves (pattern never went live, but it's learned at the trainer)
-			i(42201),	-- Pattern: Spellweave Robe (pattern never went live, but it's learned at the trainer)
-			i(10303),	-- Pattern: Stormcloth Pants (pattern never went live despite it showing in the appearance tab)
-			i(10304),	-- Pattern: Stormcloth Gloves (pattern never went live despite it showing in the appearance tab)
-			i(10313),	-- Pattern: Stormcloth Vest (pattern never went live despite it showing in the appearance tab)
-			i(10319),	-- Pattern: Stormcloth Headband (pattern never went live despite it showing in the appearance tab)
-			i(10322),	-- Pattern: Stormcloth Shoulders (pattern never went live despite it showing in the appearance tab)
-			i(10324),	-- Pattern: Stormcloth Boots (pattern never went live despite it showing in the appearance tab)
-			i(42189),	-- Pattern: Wispcloak (pattern never went live, but it's learned at the trainer)
-			i(42174),	-- Pattern: Yellow Lumberjack Shirt (pattern never went live, but it's learned at the trainer)
 		}),
 		i(5657),	-- Recipe: Instant Toxin
 	}),
