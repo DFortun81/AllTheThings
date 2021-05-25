@@ -174,7 +174,7 @@ _.Zones =
 									["races"] = HORDE_ONLY,
 								}),
 								mi(2092, {	-- Spare Parts
-								--	["sourceQuests"] = { 52222 },	-- Stonefist Watch
+									-- ["sourceQuests"] = { 52222 },	-- Stonefist Watch
 									["races"] = HORDE_ONLY,
 									["g"] = {
 										q(53081, {	-- Mission Report: Spare Parts

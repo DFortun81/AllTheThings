@@ -1138,6 +1138,7 @@ local function BuildSourceTextForTSM(group, l)
 	end
 	return L["TITLE"];
 end
+local CreateObject;
 -- does not actually Clone Data, but rather returns a new table whose __index is the source table
 local function CloneData(data)
 	local clone = {};
@@ -1152,7 +1153,7 @@ local function CloneData(data)
 		if data.g then
 			clone.g = {};
 			for i,group in ipairs(data.g) do
-				local child = CloneData(group);
+				local child = CreateObject(group);
 				rawset(child, "sourceParent", nil);
 				rawset(child, "parent", clone);
 				tinsert(clone.g, child);
@@ -1373,9 +1374,9 @@ end
 local function GroupMatchesParams(group, key, value, ignoreModID)
 	if not group then return false; end
 	if key == "itemID" then
-		if group.modItemID == value then
+		if group.modItemID and group.modItemID == value then
 			return true;
-		elseif ignoreModID then
+		elseif ignoreModID or not group.modItemID then
 			value = GetItemIDAndModID(value);
 			return group.itemID == value;
 		end
@@ -1650,7 +1651,7 @@ local NPCNameFromID = setmetatable({}, { __index = function(t, id)
 end});
 
 -- Search Caching
-local searchCache, CreateObject, MergeObject, MergeObjects, MergeProperties, RefreshAchievementCollection = {};
+local searchCache, MergeObject, MergeObjects, MergeProperties, RefreshAchievementCollection = {};
 app.searchCache = searchCache;
 (function()
 local keysByPriority = {	-- Sorted by frequency of use.
@@ -1752,28 +1753,29 @@ end
 CreateObject = function(t)
 	-- t can be anything, so if it is already a valid 'object', simply use CloneData
 	if t and t.key or getmetatable(t) then
-		-- print("CloneData used for",t.key,t[t.key]);
+		-- if app.DEBUG_PRINT then print("CloneData used for",t.key,t[t.key]); end
 		return CloneData(t);
 	end
 	-- otherwise it is a set of raw data or array of raw data which needs to be turned into usable objects
-	local s = {};
 	if t[1] then
+		local s = {};
 		-- array
-		for i,o in ipairs(t) do
+		-- if app.DEBUG_PRINT then print("CreateObject on array",#t); end
+		for _,o in ipairs(t) do
 			tinsert(s, CreateObject(o));
 		end
 		return s;
 	else
-		if t.key == "criteriaID" then s.achievementID = t.achievementID; end
-		for k,v in pairs(t) do
-			rawset(s, k, v);
-		end
-		if t.g then
-			s.g = {};
-			for i,o in ipairs(t.g) do
-				tinsert(s.g, CreateObject(o));
-			end
-		end
+		-- if t.key == "criteriaID" then s.achievementID = t.achievementID; end
+		-- for k,v in pairs(t) do
+		-- 	rawset(s, k, v);
+		-- end
+		-- if t.g then
+		-- 	s.g = {};
+		-- 	for i,o in ipairs(t.g) do
+		-- 		tinsert(s.g, CreateObject(o));
+		-- 	end
+		-- end
 
 		if t.mapID then
 			t = app.CreateMap(t.mapID, t);
@@ -1828,9 +1830,19 @@ CreateObject = function(t)
 		elseif t.unit then
 			t = app.CreateUnit(t.unit, t);
 		else
+			-- if app.DEBUG_PRINT then print("CreateObject no specific object type"); app.PrintTable(t); end
 			t = setmetatable({}, { __index = t });
 		end
-		t.visible = true;
+		-- if app.DEBUG_PRINT then print("CreateObject key/value",t.key,t[t.key]); end
+		
+		-- if g, then replace each objects in all sub groups with an object version of the table
+		if t.g then
+			-- if app.DEBUG_PRINT then print("CreateObject for sub-groups of",t.key,t[t.key]); end
+			for i,o in pairs(t.g) do
+				t.g[i] = CreateObject(o);
+			end
+		end
+
 		return t;
 	end
 end
@@ -3093,10 +3105,8 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 										tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and " (*)" or ""), right = GetCollectionIcon(sourceGroup.collected)});
 									end
 								else
-									local otherATTSource = app.SearchForField("s", otherSourceID);
+									local otherATTSource = app.SearchForObject("s", otherSourceID);
 									if otherATTSource then
-										otherATTSource = otherATTSource[1];
-
 										-- Show information about the appearance:
 										local failText = "";
 										local link = otherATTSource.link or otherATTSource.silentLink;
@@ -9009,32 +9019,39 @@ app.TryPopulateQuestRewards = function(questObject)
 
 	if not questObject.OnUpdate then questObject.OnUpdate = app.TryPopulateQuestRewards; end
 	local showCurrencies = app.Settings:GetTooltipSetting("WorldQuestsList:Currencies");
+
+	-- track how many attempts for retrieving reward data for both types (10 frames)
+	questObject.missingItem = questObject.missingItem and (questObject.missingItem - 1) or 10;
+	questObject.missingCurr = questObject.missingCurr and (questObject.missingCurr - 1) or 10;
+
 	-- Get reward info
 	local numQuestRewards = GetNumQuestLogRewards(questObject.questID);
 	-- numQuestRewards will often be 0 for fresh questID API calls...
 	-- pre-emptively call the following API method as well to get cached data earlier for the next refresh
 	GetQuestLogRewardInfo(1, questObject.questID);
-	-- app.DEBUG_PRINT = questObject.questID == 51096 and 51096;
-	if not numQuestRewards or numQuestRewards < 1 then
+	-- app.DEBUG_PRINT = questObject.questID == 47566 and 47566;
+	if app.DEBUG_PRINT then print("TryPopulateQuestRewards",questObject.questID) end
+	-- if not numQuestRewards or numQuestRewards < 1 then
 		-- only try to populate quest rewards a limited amount of times
-		if not questObject.missingItem then
-			-- print("TryPopulateQuestRewards:missingData",questObject.questID,time())
-			questObject.missingItem = time();
-		else
-			-- stop trying to get rewards after 3 seconds have gone by
-			if questObject.missingItem < (time() - 3) then
-				-- print("TryPopulateQuestRewards:expired",questObject.questID,time())
-				questObject.OnUpdate = nil;
-				questObject.missingItem = nil;
-			end
-		end
-	else
+		-- if not questObject.missingItem then
+		-- 	if app.DEBUG_PRINT then print("TryPopulateQuestRewards:missingData",questObject.questID,time()) end
+		-- 	questObject.missingItem = time();
+		-- else
+		-- 	-- stop trying to get rewards after 1 second has gone by
+		-- 	if questObject.missingItem < (time() - 1) then
+		-- 		if app.DEBUG_PRINT then print("TryPopulateQuestRewards:expired",questObject.questID,time()) end
+		-- 		questObject.OnUpdate = nil;
+		-- 		questObject.missingItem = nil;
+		-- 	end
+		-- end
+		-- onyl add quest rewards if not already added
+	-- elseif not questObject.addedItem or questObject.addedItem < numQuestRewards then
+	if questObject.missingItem > 0 then
+		if app.DEBUG_PRINT then print("TryPopulateQuestRewards:numQuestRewards",questObject.questID,numQuestRewards,questObject.missingItem) end
 		for j=1,numQuestRewards,1 do
 			local _, _, _, _, _, itemID, ilvl = GetQuestLogRewardInfo(j, questObject.questID);
 			if itemID then
-				-- at least one reward exists, so clear the missing data
-				questObject.missingItem = nil;
-				-- print("TryPopulateQuestRewards:found",questObject.questID)
+				if app.DEBUG_PRINT then print("TryPopulateQuestRewards:found",questObject.questID,itemID) end
 
 				if showCurrencies or (
 					itemID ~= 116415 and	-- Shiny Pet Charm
@@ -9043,94 +9060,134 @@ app.TryPopulateQuestRewards = function(questObject)
 					) then
 					QuestHarvester.AllTheThingsProcessing = true;
 					QuestHarvester:SetOwner(UIParent, "ANCHOR_NONE");
-					QuestHarvester:SetQuestLogItem("reward", j, questObject.questID);
+					QuestHarvester:SetQuestLogItem("reward", j, questObject.questID) ;
 					local link = select(2, QuestHarvester:GetItem());
 					QuestHarvester.AllTheThingsProcessing = false;
 					QuestHarvester:Hide();
 					if link then
-						-- if app.DEBUG_PRINT then print("TODO: Parse Link", link) end
-						local _, itemID, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, modID, bonusCount, bonusID1 = strsplit(":", link);
-						local s = GetSourceID(link);
-						itemID = tonumber(itemID);
-						local item = app.CreateItem(itemID, { ["s"] = s, ["expanded"] = false, ["rawlink"] = link, ["modID"] = modID and tonumber(modID), ["bonusID"] = bonusID1 and tonumber(bonusID1) });
-						-- if app.DEBUG_PRINT then print("WQ reward",link,itemID,item.collectible) end
-						_cache = SearchForLink(link);
-						if _cache then
-							for _,data in ipairs(_cache) do
-								-- print("_cached",data.key,data[data.key])
-								-- cache record is the item itself
-								if data.itemID and data.itemID == itemID then
-									-- print("Merge cached item")
-									MergeProperties(item, data);
-									if data.g then
-										if not item.g then
-											item.g = {};
-											item.progress = 0;
-											item.total = 0;
+						if app.DEBUG_PRINT then print("Parse Link", link) end
+						local _, linkItemID, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, modID, bonusCount, bonusID1 = strsplit(":", link);
+						if linkItemID then
+							if app.DEBUG_PRINT then print(_, linkItemID, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, modID, bonusCount, bonusID1); end
+							itemID = tonumber(itemID);
+							local search, subItems = SearchForLink(link), {};
+							-- put all the item information into a basic table
+							local item = { ["itemID"] = itemID, ["s"] = GetSourceID(link), ["expanded"] = false, ["rawlink"] = link, ["modID"] = modID and tonumber(modID), ["bonusID"] = bonusID1 and tonumber(bonusID1) };
+							if search then
+								-- find the specific item which the link represents
+								local modItemID, count, data = GetGroupItemIDWithModID(nil, itemID, modID), #search;
+								if app.DEBUG_PRINT then print("Search for",modItemID,#search) end
+								for i=1,count,1 do
+									data = search[i];
+									if app.DEBUG_PRINT then print("cached",data.key,data[data.key]) end
+									-- cache record is the exact item from the WQ reward
+									if GroupMatchesParams(data, "itemID", modItemID, count == 1) then
+										-- create the object which will be in the actual list
+										if app.DEBUG_PRINT then print(modItemID," ? found cached") end
+										-- if not item then
+										-- 	if data.s then
+										-- 		item = app.CreateItemSource(data.s, itemID, { ["expanded"] = false, ["rawlink"] = link, ["modID"] = modID and tonumber(modID), ["bonusID"] = bonusID1 and tonumber(bonusID1) });
+										-- 	else
+										-- 		item = app.CreateItem(itemID, { ["expanded"] = false, ["rawlink"] = link, ["modID"] = modID and tonumber(modID), ["bonusID"] = bonusID1 and tonumber(bonusID1) });
+										-- 	end
+										-- 	if app.DEBUG_PRINT then print("WQ reward",link,itemID,item.s,item.collectible) end
+										-- end
+										MergeProperties(item, data);
+										if data.g then
+											if not item.g then
+												item.g = {};
+												item.progress = 0;
+												item.total = 0;
+											end
+											MergeObjects(item.g, data.g);
 										end
-										MergeObjects(item.g, data.g);
+									else
+										tinsert(subItems, data);
 									end
-								-- cache record is associated with the item
-								else
+								end
+
+								-- the WQ reward does not match any actual cached version of this itemID, so will have to just create it manually
+								-- if not item then
+								-- 	item = app.CreateItem(itemID, { ["s"] = GetSourceID(link), ["expanded"] = false, ["rawlink"] = link, ["modID"] = modID and tonumber(modID), ["bonusID"] = bonusID1 and tonumber(bonusID1) });
+								-- 	if app.DEBUG_PRINT then print("Created Uncached Item",item.s,item.itemID,item.modItemID) end
+								-- end
+
+								-- then pull in any other sub-items which were not the item itself
+								for _,data in pairs(subItems) do
+									-- cache record is the item itself, including modID
 									if not item.g then
 										item.g = {};
 										item.progress = 0;
 										item.total = 0;
 									end
-									-- print("Clone cached item")
+									if app.DEBUG_PRINT then print(modItemID," ? added",data.key,data[data.key]) end
 									MergeObject(item.g, CloneData(data));
 								end
 							end
+
+							-- the WQ reward does not match any actual cached version of this itemID, so will have to just create it manually
+							-- if not item then
+							-- 	item = app.CreateItem(itemID, { ["s"] = GetSourceID(link), ["expanded"] = false, ["rawlink"] = link, ["modID"] = modID and tonumber(modID), ["bonusID"] = bonusID1 and tonumber(bonusID1) });
+							-- 	if app.DEBUG_PRINT then print("Created Uncached Item",item.s,item.itemID,item.modItemID) end
+							-- end
+							
+							-- at least one reward exists, so clear the missing data
+							questObject.missingItem = 0;
+							MergeObject(questObject.g, CreateObject(item));
 						end
-						MergeObject(questObject.g, item);
 					else
 						-- Take the best guess at what this is... No clue.
-						local modID = tagID == 137 and ((ilvl >= 370 and 23) or (ilvl >= 355 and 2)) or 1;
-						_cache = SearchForField("itemID", itemID);
-						local item = { ["itemID"] = itemID, ["expanded"] = false, };
-						if _cache then
-							local ACKCHUALLY;
-							for _,data in ipairs(_cache) do
-								if data.f then
-									item.f = data.f;
-								end
-								if data.s then
-									item.s = data.s;
-									if data.modID == modID then
-										ACKCHUALLY = data.s;
-										item.modID = modID;
-										if tagID == 137 then
-											local parent = data.parent;
-											while parent do
-												if parent.instanceID then
-													questObject.icon = parent.icon;
-													break;
-												end
-												parent = parent.parent;
-											end
-										end
-									end
-								end
-								if data.g and #data.g > 0 then
-									if not item.g then
-										item.g = {};
-										item.progress = 0;
-										item.total = 0;
-									end
-									MergeObjects(item.g, data.g);
-								end
-							end
-							if ACKCHUALLY then
-								item.s = ACKCHUALLY;
-							end
-						end
-						MergeObject(questObject.g, item);
+						-- if app.DEBUG_PRINT then print("TryPopulateQuestRewards:best-guess",questObject.questID,itemID) end
+						-- local modID = tagID == 137 and ((ilvl >= 370 and 23) or (ilvl >= 355 and 2)) or 1;
+						-- _cache = SearchForField("itemID", itemID);
+						-- local item = { ["itemID"] = itemID, ["expanded"] = false, };
+						-- if _cache then
+						-- 	local ACKCHUALLY;
+						-- 	for _,data in ipairs(_cache) do
+						-- 		if data.f then
+						-- 			item.f = data.f;
+						-- 		end
+						-- 		if data.s then
+						-- 			item.s = data.s;
+						-- 			if data.modID == modID then
+						-- 				ACKCHUALLY = data.s;
+						-- 				item.modID = modID;
+						-- 				if tagID == 137 then
+						-- 					local parent = data.parent;
+						-- 					while parent do
+						-- 						if parent.instanceID then
+						-- 							questObject.icon = parent.icon;
+						-- 							break;
+						-- 						end
+						-- 						parent = parent.parent;
+						-- 					end
+						-- 				end
+						-- 			end
+						-- 		end
+						-- 		if data.g and #data.g > 0 then
+						-- 			if not item.g then
+						-- 				item.g = {};
+						-- 				item.progress = 0;
+						-- 				item.total = 0;
+						-- 			end
+						-- 			MergeObjects(item.g, data.g);
+						-- 		end
+						-- 	end
+						-- 	if ACKCHUALLY then
+						-- 		item.s = ACKCHUALLY;
+						-- 	end
+						-- end
+						-- MergeObject(questObject.g, item);
 					end
+				else
+					-- item that we don't want to show in the list, so say that we're done
+					questObject.missingItem = 0;
 				end
-			elseif not questObject.missingItem then
-				questObject.missingItem = time();
+			-- elseif not questObject.missingItem then
+			-- 	questObject.missingItem = time();
 			end
 		end
+		questObject.addedItem = numQuestRewards;
 	end
 
 	-- Add info for currency rewards as containers for their respective collectibles
@@ -9141,38 +9198,39 @@ app.TryPopulateQuestRewards = function(questObject)
 		-- numCurrencies will often be 0 for fresh questID API calls...		
 
 		-- print("TryPopulateQuestRewards_currencies",questObject.questID,numCurrencies)
-		if not numCurrencies or numCurrencies < 1 then
-			-- only try to populate quest rewards a limited amount of times
-			if not questObject.missingCurr then
-				-- print("TryPopulateQuestRewards_currencies:missingData",questObject.questID,time())
-				questObject.missingCurr = time();
-			else
-				-- stop trying to get rewards after 3 seconds have gone by
-				if questObject.missingCurr < (time() - 3) then
-					-- print("TryPopulateQuestRewards_currencies:expired",questObject.questID,time())
-					questObject.OnUpdate = nil;
-					questObject.missingCurr = nil;
-				end
-			end
-		else
+		-- if not numCurrencies or numCurrencies < 1 then
+		-- 	-- only try to populate quest rewards a limited amount of times
+		-- 	if not questObject.missingCurr then
+		-- 		if app.DEBUG_PRINT then print("TryPopulateQuestRewards_currencies:missingData",questObject.questID,time()) end
+		-- 		questObject.missingCurr = time();
+		-- 	else
+		-- 		-- stop trying to get rewards after 1 second has gone by
+		-- 		if questObject.missingCurr < (time() - 1) then
+		-- 			if app.DEBUG_PRINT then print("TryPopulateQuestRewards_currencies:expired",questObject.questID,time()) end
+		-- 			questObject.OnUpdate = nil;
+		-- 			questObject.missingCurr = nil;
+		-- 		end
+		-- 	end
+			-- only process the currency logic if it hasn't already been added
+		-- elseif not questObject.addedCurr or questObject.addedCurr < numCurrencies then
+		if questObject.missingCurr > 0 then
 			local currencyID;
 			for j=1,numCurrencies,1 do
 				currencyID = select(4, GetQuestLogRewardCurrencyInfo(j, questObject.questID));
 				if currencyID then
-					-- print("TryPopulateQuestRewards_currencies:found",questObject.questID)
-					questObject.missingCurr = nil;
+					if app.DEBUG_PRINT then print("TryPopulateQuestRewards_currencies:found",questObject.questID,currencyID,questObject.missingCurr) end
 					
 					currencyID = tonumber(currencyID);
 					-- TODO: this is too laggy, but generates accurate & bloated results...
 					-- local item = GetCachedSearchResults("currencyID:" .. currencyID, SearchForField, "currencyID", currencyID);
 					--[[]]
-					local item = app.CreateCurrencyClass(currencyID);
+					local item = { ["currencyID"] = currencyID, ["expanded"] = false, };
 					_cache = SearchForField("currencyID", currencyID);
 					if _cache then
 						for _,data in ipairs(_cache) do
 							-- print("_cached",data.key,data[data.key])
 							-- cache record is the item itself
-							if data.key == "currencyID" and data[data.key] == currencyID then
+							if GroupMatchesParams(data, "currencyID", currencyID) then
 								-- print("Merge cached item")
 								MergeProperties(item, data);
 							-- cache record is associated with the item
@@ -9183,21 +9241,34 @@ app.TryPopulateQuestRewards = function(questObject)
 							end
 						end
 					end--]]
-					MergeObject(questObject.g, item);
-				elseif not questObject.missingCurr then
-					questObject.missingCurr = time();
+					questObject.missingCurr = 0;
+					MergeObject(questObject.g, CreateObject(item));
+				-- elseif not questObject.missingCurr then
+				-- 	questObject.missingCurr = time();
 				end
 			end
+			-- questObject.addedCurr = numCurrencies;
 		end
 	end
 
-	-- if not missing Item/Curr and OnUpdate, then build the heirarchy since something was populated
-	if not questObject.missingData and not questObject.missingCurr and questObject.OnUpdate then
-		-- print("Quest Object populated",questObject.questID)
+	-- done attempting to populate the quest object
+	if questObject.missingItem < 1 and questObject.missingCurr < 1 then
+		if app.DEBUG_PRINT then print("TryPopulateQuestRewards:populated",questObject.questID) end
 		questObject.OnUpdate = nil;
 		questObject.doUpdate = true;
 		BuildGroups(questObject, questObject.g);
+	-- still missing something, so do update still
+	-- elseif questObject.missingItem or questObject.missingCurr then
+	-- 	if app.DEBUG_PRINT then print("TryPopulateQuestRewards:doupdate-true",questObject.questID) end
+	-- 	questObject.doUpdate = true;
+	-- not missing data, and did not just populate the group, so stop updating this group
+	-- else
+		-- if app.DEBUG_PRINT then print("TryPopulateQuestRewards:doupdate-clear",questObject.questID) end
+	else
+		questObject.doUpdate = questObject.OnUpdate;
 	end
+
+	app.DEBUG_PRINT = nil;
 end
 -- Given an Object, will return the indicator (asset name) if this Object should show one
 app.GetIndicator = function(t)
@@ -16508,7 +16579,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 								-- end
 								MergeObject(mapObject.g, questObject);
 								-- see if need to retry based on missing data
-								if not self.retry and questObject.missingData then self.retry = true; end
+								-- if not self.retry and questObject.missingData then self.retry = true; end
 							end
 						end
 					end
@@ -16534,7 +16605,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 								(questObject.timeRemaining or 0 > 0) then
 								MergeObject(mapObject.g, questObject);
 								-- see if need to retry based on missing data
-								if not self.retry and questObject.missingData then self.retry = true; end
+								-- if not self.retry and questObject.missingData then self.retry = true; end
 							end
 						end
 					end
@@ -16544,14 +16615,15 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 				end
 			end
 			self.Rebuild = function(self, no)
-				-- Already filled with data, just give it a forced update pass since data for quests should now populate dynamically
-				if #self.data.g > 1 then
+				-- Already filled with data and nothing needing to retry, just give it a forced update pass since data for quests should now populate dynamically
+				if not self.retry and #self.data.g > 1 then
 					-- print("Already WQ data, just update again")
 					-- Force Update Callback
 					Callback(self.Update, self, true);
 					return;
 				end
 				-- Rebuild all World Quest data
+				-- print("Rebuild WQ Data")
 				self.retry = nil;
 				local temp = {};
 				-- options when refreshing the list
@@ -16853,6 +16925,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 
 				for i,o in ipairs(temp) do
 					-- UnsetNotCollectible(o);
+					BuildGroups(o, o.g);
 					MergeObject(self.data.g, CreateObject(o));
 				end
 				-- Build the heirarchy

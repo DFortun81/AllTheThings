@@ -614,6 +614,8 @@ _.Zones =
 						i(181689),	-- Gorewrought Bonesaw
 						i(181690),	-- Gorewrought Crusher
 						i(181691),	-- Gorewrought Greatstaff
+						i(181694),	-- Gorewrought Greatsword
+						i(181695),	-- Gorewrought Shortsword
 						i(181688),	-- Gorewrought Stave
 						i(181686),	-- Gorewrought Tome
 						i(181692),	-- Gorewrought Warblade
