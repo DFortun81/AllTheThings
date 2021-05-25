@@ -1857,7 +1857,7 @@ app.L = {
 
 	-- Wrath of the Lich-King PvP Seasons
 		[-668] = select(2, GetAchievementInfo(3336))..": Season 5",				-- Deadly Gladiator: Season 5
-		[-798] = "Hateful Gladiator: Season 5",									-- Hateful Gladiator: Season 5 ("medium pvp gear")
+		[-798] = "Hateful Gladiator",											-- Hateful Gladiator: Season 5 ("medium pvp gear")
 		[-669] = select(2, GetAchievementInfo(3436))..": Season 6",				-- Furious Gladiator: Season 6
 		[-670] = select(2, GetAchievementInfo(3758))..": Season 7",				-- Relentless Gladiator: Season 7
 		[-671] = select(2, GetAchievementInfo(4599))..": Season 8",				-- Wrathful Gladiator: Season 8

@@ -10,6 +10,631 @@ _.Zones =
 				n(VENDORS, {
 					n(30885, {	-- Blazik Fireclaw <Hateful Gladiator>
 						["coord"] = { 59.5, 57.9, 126 },
+						["g"] = {
+							n(-319, {	-- Weapons
+								i(146646, {	-- Arsenal: Hateful Gladiator's Weapons
+									["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_weapons_ensemble", -10014, -668, -798 },
+										{"exclude", "itemID", 146646 },	-- Exclude itself to stop duplicating
+									},
+								}),
+								i(42563, {	-- Hateful Gladiator's Barrier
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(42512, {	-- Hateful Gladiator's Baton of Light
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42359, {	-- Hateful Gladiator's Battle Staff
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42279, {	-- Hateful Gladiator's Bonecracker
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42321, {	-- Hateful Gladiator's Bonegrinder
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42231, {	-- Hateful Gladiator's Chopper
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42207, {	-- Hateful Gladiator's Cleaver
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42316, {	-- Hateful Gladiator's Decapitator
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42524, {	-- Hateful Gladiator's Endgame
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(42383, {	-- Hateful Gladiator's Energy Staff
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42269, {	-- Hateful Gladiator's Fleshslicer
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(44418, {	-- Hateful Gladiator's Focus Staff
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42351, {	-- Hateful Gladiator's Gavel
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42331, {	-- Hateful Gladiator's Greatsword
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42536, {	-- Hateful Gladiator's Grimoire
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(42226, {	-- Hateful Gladiator's Hacker
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42494, {	-- Hateful Gladiator's Heavy Crossbow
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42489, {	-- Hateful Gladiator's Longbow
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42254, {	-- Hateful Gladiator's Mutilator
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42518, {	-- Hateful Gladiator's Piercing Touch
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42326, {	-- Hateful Gladiator's Pike
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42274, {	-- Hateful Gladiator's Pummeler
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42289, {	-- Hateful Gladiator's Quickblade
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42569, {	-- Hateful Gladiator's Redoubt
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(42530, {	-- Hateful Gladiator's Reprieve
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(42484, {	-- Hateful Gladiator's Rifle
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42259, {	-- Hateful Gladiator's Ripper
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42241, {	-- Hateful Gladiator's Shanker
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42558, {	-- Hateful Gladiator's Shield Wall
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(42247, {	-- Hateful Gladiator's Shiv
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42264, {	-- Hateful Gladiator's Slasher
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42284, {	-- Hateful Gladiator's Slicer
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42345, {	-- Hateful Gladiator's Spellblade
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42389, {	-- Hateful Gladiator's Staff
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42501, {	-- Hateful Gladiator's Touch of Defeat
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(44417, {	-- Hateful Gladiator's War Staff
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42236, {	-- Hateful Gladiator's Waraxe
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+							}),
+							cl(DEATHKNIGHT, {
+								i(146560, {	-- Ensemble: Hateful Gladiator's Dreadplate Armor
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_ensemble", -10014, -668, -798, 6 },
+										{"select", "itemID", 147583 },	-- Hateful Gladiator's Bracers of Victory
+										{"select", "itemID", 147584 },	-- Hateful Gladiator's Girdle of Victory
+										{"select", "itemID", 147585 },	-- Hateful Gladiator's Greaves of Victory
+										{"exclude", "itemID", 146560 },	-- Exclude itself to stop duplicating
+									},
+								}),
+								i(40781, {	-- Hateful Gladiator's Dreadplate Chestpiece
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(40803, {	-- Hateful Gladiator's Dreadplate Gauntlets
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(40820, {	-- Hateful Gladiator's Dreadplate Helm
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(40841, {	-- Hateful Gladiator's Dreadplate Legguards
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(40860, {	-- Hateful Gladiator's Dreadplate Shoulders
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+							}),
+							cl(DRUID, {
+								i(146559, {	-- Ensemble: Hateful Gladiator's Dragonhide Armor
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_ensemble", -10014, -668, -798, 11 },
+										{"select", "itemID", 41638 },	-- Hateful Gladiator's Armwraps of Dominance
+										{"select", "itemID", 41628 },	-- Hateful Gladiator's Belt of Dominance
+										{"select", "itemID", 41633 },	-- Hateful Gladiator's Boots of Dominance
+										{"select", "itemID", 41332 },	-- Hateful Gladiator's Armwraps of Salvation
+										{"select", "itemID", 41330 },	-- Hateful Gladiator's Belt of Salvation
+										{"select", "itemID", 41331 },	-- Hateful Gladiator's Boots of Salvation
+										{"exclude", "itemID", 146559 },	-- Exclude itself to stop duplicating
+									},
+								}),
+								i(41771, {	-- Hateful Gladiator's Dragonhide Gloves
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41676, {	-- Hateful Gladiator's Dragonhide Helm
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41665, {	-- Hateful Gladiator's Dragonhide Legguards
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41659, {	-- Hateful Gladiator's Dragonhide Robes
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41713, {	-- Hateful Gladiator's Dragonhide Spaulders
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41284, {	-- Hateful Gladiator's Kodohide Gloves
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41319, {	-- Hateful Gladiator's Kodohide Helm
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41296, {	-- Hateful Gladiator's Kodohide Legguards
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41308, {	-- Hateful Gladiator's Kodohide Robes
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41273, {	-- Hateful Gladiator's Kodohide Spaulders
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41291, {	-- Hateful Gladiator's Wyrmhide Gloves
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41325, {	-- Hateful Gladiator's Wyrmhide Helm
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41302, {	-- Hateful Gladiator's Wyrmhide Legguards
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41314, {	-- Hateful Gladiator's Wyrmhide Robes
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41279, {	-- Hateful Gladiator's Wyrmhide Spaulders
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+							}),
+							cl(HUNTER, {
+								i(146558, {	-- Ensemble: Hateful Gladiator's Chain Armor
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_ensemble", -10014, -668, -798, 3 },
+										{"select", "itemID", 41223 },	-- Hateful Gladiator's Wristguards of Triumph
+										{"select", "itemID", 41233 },	-- Hateful Gladiator's Waistguard of Triumph
+										{"select", "itemID", 41228 },	-- Hateful Gladiator's Sabatons of Triumph
+										{"exclude", "itemID", 146558 },	-- Exclude itself to stop duplicating
+									},
+								}),
+								i(41085, {	-- Hateful Gladiator's Chain Armor
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41141, {	-- Hateful Gladiator's Chain Gauntlets
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41155, {	-- Hateful Gladiator's Chain Helm
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41203, {	-- Hateful Gladiator's Chain Leggings
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41215, {	-- Hateful Gladiator's Chain Spaulders
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+							}),
+							cl(MAGE, {
+								i(146567, {	-- Ensemble: Hateful Gladiator's Silk Armor
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_ensemble", -10014, -668, -798, 8 },
+										{"select", "itemID", 41907 },	-- Hateful Gladiator's Cuffs of Dominance
+										{"select", "itemID", 41896 },	-- Hateful Gladiator's Cord of Dominance
+										{"select", "itemID", 41901 },	-- Hateful Gladiator's Slippers of Dominance
+										{"exclude", "itemID", 146567 },	-- Exclude itself to stop duplicating
+									},
+								}),
+								i(41963, {	-- Hateful Gladiator's Silk Amice
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41944, {	-- Hateful Gladiator's Silk Cowl
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41969, {	-- Hateful Gladiator's Silk Handguards
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41950, {	-- Hateful Gladiator's Silk Raiment
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41957, {	-- Hateful Gladiator's Silk Trousers
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+							}),
+							cl(PALADIN, {
+								i(146566, {	-- Ensemble: Hateful Gladiator's Scaled Armor
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_ensemble", -10014, -668, -798, 2 },
+										{"select", "itemID", 40972 },	-- Hateful Gladiator's Bracers of Salvation
+										{"select", "itemID", 40966 },	-- Hateful Gladiator's Girdle of Salvation
+										{"select", "itemID", 40973 },	-- Hateful Gladiator's Greaves of Salvation
+										{"exclude", "itemID", 146566 },	-- Exclude itself to stop duplicating
+									},
+								}),	
+								i(40904, {	-- Hateful Gladiator's Ornamented Chestguard
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(40925, {	-- Hateful Gladiator's Ornamented Gloves
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(40931, {	-- Hateful Gladiator's Ornamented Headcover
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(40937, {	-- Hateful Gladiator's Ornamented Legplates
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(40961, {	-- Hateful Gladiator's Ornamented Spaulders
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(40782, {	-- Hateful Gladiator's Scaled Chestpiece
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(40802, {	-- Hateful Gladiator's Scaled Gauntlets
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(40821, {	-- Hateful Gladiator's Scaled Helm
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(40842, {	-- Hateful Gladiator's Scaled Legguards
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(40861, {	-- Hateful Gladiator's Scaled Shoulders
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+							}),
+							cl(PRIEST, {
+								i(146565, {	-- Ensemble: Hateful Gladiator's Satin Armor
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_ensemble", -10014, -668, -798, 5 },
+										{"select", "itemID", 41878 },	-- Hateful Gladiator's Cuffs of Salvation
+										{"select", "itemID", 41877 },	-- Hateful Gladiator's Cord of Salvation
+										{"select", "itemID", 41879 },	-- Hateful Gladiator's Slippers of Salvation
+										{"exclude", "itemID", 146565 },	-- Exclude itself to stop duplicating
+									},
+								}),
+								i(41872, {	-- Hateful Gladiator's Mooncloth Gloves
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41852, {	-- Hateful Gladiator's Mooncloth Hood
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41862, {	-- Hateful Gladiator's Mooncloth Leggings
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41867, {	-- Hateful Gladiator's Mooncloth Mantle
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41857, {	-- Hateful Gladiator's Mooncloth Robe
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41938, {	-- Hateful Gladiator's Satin Gloves
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41913, {	-- Hateful Gladiator's Satin Hood
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41925, {	-- Hateful Gladiator's Satin Leggings
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41931, {	-- Hateful Gladiator's Satin Mantle
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41919, {	-- Hateful Gladiator's Satin Robe
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+							}),
+							cl(ROGUE, {
+								i(146562, {	-- Ensemble: Hateful Gladiator's Leather Armor
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_ensemble", -10014, -668, -798, 4 },
+										{"select", "itemID", 41830 },	-- Hateful Gladiator's Armwraps of Triumph
+										{"select", "itemID", 41827 },	-- Hateful Gladiator's Belt of Triumph
+										{"select", "itemID", 41828 },	-- Hateful Gladiator's Boots of Triumph
+										{"exclude", "itemID", 146562 },	-- Exclude itself to stop duplicating
+									},
+								}),
+								i(41765, {	-- Hateful Gladiator's Leather Gloves
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41670, {	-- Hateful Gladiator's Leather Helm
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41653, {	-- Hateful Gladiator's Leather Legguards
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41681, {	-- Hateful Gladiator's Leather Spaulders
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41648, {	-- Hateful Gladiator's Leather Tunic
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+							}),
+							cl(SHAMAN, {
+								i(146564, {	-- Ensemble: Hateful Gladiator's Ringmail Armor
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_ensemble", -10014, -668, -798, 7 },
+										{"select", "itemID", 41063 },	-- Hateful Gladiator's Wristguards of Dominance
+										{"select", "itemID", 41068 },	-- Hateful Gladiator's Waistguard of Dominance
+										{"select", "itemID", 41073 },	-- Hateful Gladiator's Sabatons of Dominance
+										{"select", "itemID", 41047 },	-- Hateful Gladiator's Wristguards of Salvation
+										{"select", "itemID", 41050 },	-- Hateful Gladiator's Waistguard of Salvation
+										{"select", "itemID", 41049 },	-- Hateful Gladiator's Sabatons of Salvation
+										{"exclude", "itemID", 146564 },	-- Exclude itself to stop duplicating
+									},
+								}),
+								i(41079, {	-- Hateful Gladiator's Linked Armor
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41135, {	-- Hateful Gladiator's Linked Gauntlets
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41149, {	-- Hateful Gladiator's Linked Helm
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41162, {	-- Hateful Gladiator's Linked Leggings
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41209, {	-- Hateful Gladiator's Linked Spaulders
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(40989, {	-- Hateful Gladiator's Mail Armor
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41005, {	-- Hateful Gladiator's Mail Gauntlets
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41017, {	-- Hateful Gladiator's Mail Helm
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41031, {	-- Hateful Gladiator's Mail Leggings
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41042, {	-- Hateful Gladiator's Mail Spaulders
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(40988, {	-- Hateful Gladiator's Ringmail Armor
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(40999, {	-- Hateful Gladiator's Ringmail Gauntlets
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41011, {	-- Hateful Gladiator's Ringmail Helm
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41025, {	-- Hateful Gladiator's Ringmail Leggings
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41036, {	-- Hateful Gladiator's Ringmail Spaulders
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+							}),
+							cl(WARLOCK, {
+								i(146561, {	-- Ensemble: Hateful Gladiator's Felweave Armor
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_ensemble", -10014, -668, -798, 9 },
+										{"select", "itemID", 147586 },	-- Hateful Gladiator's Cuffs of Ascendancy
+										{"select", "itemID", 147587 },	-- Hateful Gladiator's Cord of Ascendancy
+										{"select", "itemID", 147588 },	-- Hateful Gladiator's Slippers of Ascendancy
+										{"exclude", "itemID", 146561 },	-- Exclude itself to stop duplicating
+									},
+								}),
+								i(42009, {	-- Hateful Gladiator's Felweave Amice
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41991, {	-- Hateful Gladiator's Felweave Cowl
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(42015, {	-- Hateful Gladiator's Felweave Handguards
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(42001, {	-- Hateful Gladiator's Felweave Raiment
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(42003, {	-- Hateful Gladiator's Felweave Trousers
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+							}),
+							cl(WARRIOR, {
+								i(146563, {	-- Ensemble: Hateful Gladiator's Plate Armor
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_ensemble", -10014, -668, -798, 1 },
+										{"select", "itemID", 40887 },	-- Hateful Gladiator's Bracers of Triumph
+										{"select", "itemID", 40877 },	-- Hateful Gladiator's Girdle of Triumph
+										{"select", "itemID", 40878 },	-- Hateful Gladiator's Greaves of Triumph
+										{"exclude", "itemID", 146563 },	-- Exclude itself to stop duplicating 
+									},
+								}),
+								i(40783, {	-- Hateful Gladiator's Plate Chestpiece
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(40801, {	-- Hateful Gladiator's Plate Gauntlets
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(40819, {	-- Hateful Gladiator's Plate Helm
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(40840, {	-- Hateful Gladiator's Plate Legguards
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(40859, {	-- Hateful Gladiator's Plate Shoulders
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+							}),
+							n(-322, {	-- Back
+								i(42057, {	-- Hateful Gladiator's Cloak of Ascendancy
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(42059, {	-- Hateful Gladiator's Cloak of Deliverance
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(42055, {	-- Hateful Gladiator's Cloak of Dominance
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(42058, {	-- Hateful Gladiator's Cloak of Salvation
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(42056, {	-- Hateful Gladiator's Cloak of Subjugation
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(42060, {	-- Hateful Gladiator's Cloak of Triumph
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(42061, {	-- Hateful Gladiator's Cloak of Victory
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+							}),
+							n(-326, {	-- Wrists
+								i(41638, {	-- Hateful Gladiator's Armwraps of Dominance
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(41332, {	-- Hateful Gladiator's Armwraps of Salvation
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(41830, {	-- Hateful Gladiator's Armwraps of Triumph
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(40972, {	-- Hateful Gladiator's Bracers of Salvation
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(40887, {	-- Hateful Gladiator's Bracers of Triumph
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(147583, {	-- Hateful Gladiator's Bracers of Victory
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(147586, {	-- Hateful Gladiator's Cuffs of Ascendancy
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(41907, {	-- Hateful Gladiator's Cuffs of Dominance
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(41878, {	-- Hateful Gladiator's Cuffs of Salvation
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(41063, {	-- Hateful Gladiator's Wristguards of Dominance
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(41047, {	-- Hateful Gladiator's Wristguards of Salvation
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(41223, {	-- Hateful Gladiator's Wristguards of Triumph
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+							}),
+							n(-328, {	-- Waist
+								i(41628, {	-- Hateful Gladiator's Belt of Dominance
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(41330, {	-- Hateful Gladiator's Belt of Salvation
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(41827, {	-- Hateful Gladiator's Belt of Triumph
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(147587, {	-- Hateful Gladiator's Cord of Ascendancy
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(41896, {	-- Hateful Gladiator's Cord of Dominance
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(41877, {	-- Hateful Gladiator's Cord of Salvation
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(40966, {	-- Hateful Gladiator's Girdle of Salvation
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(40877, {	-- Hateful Gladiator's Girdle of Triumph
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(147584, {	-- Hateful Gladiator's Girdle of Victory
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(41068, {	-- Hateful Gladiator's Waistguard of Dominance
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(41050, {	-- Hateful Gladiator's Waistguard of Salvation
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(41233, {	-- Hateful Gladiator's Waistguard of Triumph
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+							}),
+							n(-330, {	-- Feet
+								i(41633, {	-- Hateful Gladiator's Boots of Dominance
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41331, {	-- Hateful Gladiator's Boots of Salvation
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41828, {	-- Hateful Gladiator's Boots of Triumph
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(40973, {	-- Hateful Gladiator's Greaves of Salvation
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(40878, {	-- Hateful Gladiator's Greaves of Triumph
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(147585, {	-- Hateful Gladiator's Greaves of Victory
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41073, {	-- Hateful Gladiator's Sabatons of Dominance
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41049, {	-- Hateful Gladiator's Sabatons of Salvation
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41228, {	-- Hateful Gladiator's Sabatons of Triumph
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(147588, {	-- Hateful Gladiator's Slippers of Ascendancy
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41901, {	-- Hateful Gladiator's Slippers of Dominance
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41879, {	-- Hateful Gladiator's Slippers of Salvation
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+							}),
+						},
 					}),
 					n(106887, {	-- Cravitz Lorent <Shady Book Dealer>
 						["description"] = "This vendor is not always present. It can appear in either version of Dalaran.",
@@ -226,33 +851,387 @@ _.Zones =
 							un(REMOVED_FROM_GAME, i(70607)),	-- Vicious Gladiator's medallion of tenactiy. S10 Version (horde)
 						},
 					}),
-					n(54653, {	-- Nargle Lashcord >S11< Elite <Glorious Conquest Quartermaster>
-						["u"] = REMOVED_FROM_GAME,
-						["sym"] = {
-							{"sub", "pvp_gear_base", -9979, -674, -662 },	-- Cataclysmic Gladiator: Season 11 Elite Gear
-							{"pop"},	-- Discard the Set header and acquire the children.
-						},
-					}),
 					n(34092, {	-- Trapjaw Rix Season >7< Elite Version [Note: Yes, two npc's with same name. One is removed]
 						["u"] = REMOVED_FROM_GAME,
-						["sym"] = { {"sub", "pvp_weapons_ensemble", -10014, -670, -662 }, },	-- Relentless Gladiator: Season 7 Elite Weapons
-						["g"] = {
-							un(REMOVED_FROM_GAME, i(49086)),	-- Relentless Gladiator's Tabard [Elite Rating]
-						},
 					}),
 					n(34095, {	-- Trapjaw Rix Season >8< Elite Version [Note: Yes, two npc's with same name. One is removed]
 						["u"] = REMOVED_FROM_GAME,
-						["sym"] = { {"sub", "pvp_weapons_ensemble", -10014, -671, -662 }, },	-- Wrathful Gladiator: Season 8 Elite Weapons
-						["g"] = {
-							un(REMOVED_FROM_GAME, i(51534)),	-- Wrathful Gladiator's Tabard [Elite Rating]
-						},
 					}),
 					n(40212, { 	-- Trapjaw Rix <Savage Gladiator>
-						["itemID"] = 137642,	-- Mark of Honor
 						["coord"] = { 59.3, 57.3, 126 },
-						["sym"] = {
-							{"sub", "pvp_gear_base", -10014, -668, -660 },	-- Deadly Gladiator: Season 5 Aspirant / Combatant Gear
-							{"pop"},	-- Discard the Set header and acquire the children.
+						["g"] = {
+							n(-319, {	-- Weapons
+								i(146647, {	-- Arsenal: Savage Gladiator's Weapons
+									["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_weapons_ensemble", -10014, -668, -9983 },
+										{"exclude", "itemID", 146647 },	-- Exclude itself to stop duplicating
+									},
+								}),
+								i(42557),	-- Savage Gladiator's Barrier
+								i(42511),	-- Savage Gladiator's Baton of Light
+								i(42356),	-- Savage Gladiator's Battle Staff
+								i(42221),	-- Savage Gladiator's Bonecracker
+								i(42295),	-- Savage Gladiator's Bonegrinder
+								i(42212),	-- Savage Gladiator's Chopper
+								i(42206),	-- Savage Gladiator's Cleaver
+								i(42294),	-- Savage Gladiator's Decapitator
+								i(42382),	-- Savage Gladiator's Energy Staff
+								i(42220),	-- Savage Gladiator's Fleshslicer
+								i(44416),	-- Savage Gladiator's Focus Staff
+								i(42344),	-- Savage Gladiator's Gavel
+								i(42297),	-- Savage Gladiator's Greatsword
+								i(42213),	-- Savage Gladiator's Hacker
+								i(42446),	-- Savage Gladiator's Heavy Crossbow
+								i(42445),	-- Savage Gladiator's Longbow
+								i(42215),	-- Savage Gladiator's Mutilator
+								i(42517),	-- Savage Gladiator's Piercing Touch
+								i(42296),	-- Savage Gladiator's Pike
+								i(42222),	-- Savage Gladiator's Pummeler
+								i(42223),	-- Savage Gladiator's Quickblade
+								i(42568),	-- Savage Gladiator's Redoubt
+								i(42447),	-- Savage Gladiator's Rifle
+								i(42218),	-- Savage Gladiator's Ripper
+								i(42216),	-- Savage Gladiator's Shanker
+								i(42556),	-- Savage Gladiator's Shield Wall
+								i(42217),	-- Savage Gladiator's Shiv
+								i(42219),	-- Savage Gladiator's Slasher
+								i(42224),	-- Savage Gladiator's Slicer
+								i(42343),	-- Savage Gladiator's Spellblade
+								i(42388),	-- Savage Gladiator's Staff
+								i(42448),	-- Savage Gladiator's Touch of Defeat
+								i(44415),	-- Savage Gladiator's War Staff
+							}),
+							cl(DEATHKNIGHT, {
+								i(146580, {	-- Ensemble: Savage Gladiator's Dreadplate Armor
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = {
+										{"sub", "pvp_set_ensemble", -10014, -668, -9983, 6 }, 
+										{"exclude", "itemID", 146580 },	-- Exclude itself to stop duplicating
+									},
+								}),
+								i(40779, {	-- Savage Gladiator's Dreadplate Chestpiece
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(40799, {	-- Savage Gladiator's Dreadplate Gauntlets
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(40817, {	-- Savage Gladiator's Dreadplate Helm
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(40837, {	-- Savage Gladiator's Dreadplate Legguards
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(40857, {	-- Savage Gladiator's Dreadplate Shoulders
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+							}),
+							cl(DRUID, {
+								i(146579, {	-- Ensemble: Savage Gladiator's Dragonhide Armor
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = {
+										{"sub", "pvp_set_ensemble", -10014, -668, -9983, 11 }, 
+										{"exclude", "itemID", 146579 },	-- Exclude itself to stop duplicating
+									},
+								}),
+								i(41770, {	-- Savage Gladiator's Dragonhide Gloves
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41675, {	-- Savage Gladiator's Dragonhide Helm
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41664, {	-- Savage Gladiator's Dragonhide Legguards
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41658, {	-- Savage Gladiator's Dragonhide Robes
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41712, {	-- Savage Gladiator's Dragonhide Spaulders
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41268, {	-- Savage Gladiator's Kodohide Gloves
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41269, {	-- Savage Gladiator's Kodohide Helm
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41270, {	-- Savage Gladiator's Kodohide Legguards
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41272, {	-- Savage Gladiator's Kodohide Robes
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41271, {	-- Savage Gladiator's Kodohide Spaulders
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41290, {	-- Savage Gladiator's Wyrmhide Gloves
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41324, {	-- Savage Gladiator's Wyrmhide Helm
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41301, {	-- Savage Gladiator's Wyrmhide Legguards
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41313, {	-- Savage Gladiator's Wyrmhide Robes
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41278, {	-- Savage Gladiator's Wyrmhide Spaulders
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+							}),
+							cl(HUNTER, {
+								i(146578, {	-- Ensemble: Savage Gladiator's Chain Armor
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = {
+										{"sub", "pvp_set_ensemble", -10014, -668, -9983, 3 }, 
+										{"exclude", "itemID", 146578 },	-- Exclude itself to stop duplicating
+									},
+								}),
+								i(41084, {	-- Savage Gladiator's Chain Armor
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41140, {	-- Savage Gladiator's Chain Gauntlets
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41154, {	-- Savage Gladiator's Chain Helm
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41202, {	-- Savage Gladiator's Chain Leggings
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41214, {	-- Savage Gladiator's Chain Spaulders
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+							}),
+							cl(MAGE, {
+								i(146587, {	-- Ensemble: Savage Gladiator's Silk Armor
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = {
+										{"sub", "pvp_set_ensemble", -10014, -668, -9983, 8 }, 
+										{"exclude", "itemID", 146587 },	-- Exclude itself to stop duplicating
+									},
+								}),
+								i(41962, {	-- Savage Gladiator's Silk Amice
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41943, {	-- Savage Gladiator's Silk Cowl
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41968, {	-- Savage Gladiator's Silk Handguards
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41949, {	-- Savage Gladiator's Silk Raiment
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41956, {	-- Savage Gladiator's Silk Trousers
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+							}),
+							cl(PALADIN, {
+								i(146586, {	-- Ensemble: Savage Gladiator's Scaled Armor
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = {
+										{"sub", "pvp_set_ensemble", -10014, -668, -9983, 2 }, 
+										{"exclude", "itemID", 146586 },	-- Exclude itself to stop duplicating
+									},
+								}),
+								i(40898, {	-- Savage Gladiator's Ornamented Chestguard
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(40918, {	-- Savage Gladiator's Ornamented Gloves
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(40930, {	-- Savage Gladiator's Ornamented Headcover
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(40936, {	-- Savage Gladiator's Ornamented Legplates
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(40960, {	-- Savage Gladiator's Ornamented Spaulders
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(40780, {	-- Savage Gladiator's Scaled Chestpiece
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(40798, {	-- Savage Gladiator's Scaled Gauntlets
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(40818, {	-- Savage Gladiator's Scaled Helm
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(40838, {	-- Savage Gladiator's Scaled Legguards
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(40858, {	-- Savage Gladiator's Scaled Shoulders
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+							}),
+							cl(PRIEST, {
+								i(146585, {	-- Ensemble: Savage Gladiator's Satin Armor
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = {
+										{"sub", "pvp_set_ensemble", -10014, -668, -9983, 5 }, 
+										{"exclude", "itemID", 146585 },	-- Exclude itself to stop duplicating
+									},
+								}),
+								i(41847, {	-- Savage Gladiator's Mooncloth Gloves
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41848, {	-- Savage Gladiator's Mooncloth Hood
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41849, {	-- Savage Gladiator's Mooncloth Leggings
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41850, {	-- Savage Gladiator's Mooncloth Mantle
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41851, {	-- Savage Gladiator's Mooncloth Robe
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41937, {	-- Savage Gladiator's Satin Gloves
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41912, {	-- Savage Gladiator's Satin Hood
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41924, {	-- Savage Gladiator's Satin Leggings
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41930, {	-- Savage Gladiator's Satin Mantle
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41918, {	-- Savage Gladiator's Satin Robe
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+							}),
+							cl(ROGUE, {
+								i(146582, {	-- Ensemble: Savage Gladiator's Leather Armor
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = {
+										{"sub", "pvp_set_ensemble", -10014, -668, -9983, 4 }, 
+										{"exclude", "itemID", 146582 },	-- Exclude itself to stop duplicating
+									},
+								}),
+								i(41643, {	-- Savage Gladiator's Leather Gloves
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41644, {	-- Savage Gladiator's Leather Helm
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41645, {	-- Savage Gladiator's Leather Legguards
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41646, {	-- Savage Gladiator's Leather Spaulders
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41647, {	-- Savage Gladiator's Leather Tunic
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+							}),
+							cl(SHAMAN, {
+								i(146584, {	-- Ensemble: Savage Gladiator's Ringmail Armor
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = {
+										{"sub", "pvp_set_ensemble", -10014, -668, -9983, 7 }, 
+										{"exclude", "itemID", 146584 },	-- Exclude itself to stop duplicating
+									},
+								}),
+								i(41078, {	-- Savage Gladiator's Linked Armor
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41134, {	-- Savage Gladiator's Linked Gauntlets
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41148, {	-- Savage Gladiator's Linked Helm
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41160, {	-- Savage Gladiator's Linked Leggings
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41208, {	-- Savage Gladiator's Linked Spaulders
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(40987, {	-- Savage Gladiator's Mail Armor
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41004, {	-- Savage Gladiator's Mail Gauntlets
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41016, {	-- Savage Gladiator's Mail Helm
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41030, {	-- Savage Gladiator's Mail Leggings
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41041, {	-- Savage Gladiator's Mail Spaulders
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(40986, {	-- Savage Gladiator's Ringmail Armor
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(40998, {	-- Savage Gladiator's Ringmail Gauntlets
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41010, {	-- Savage Gladiator's Ringmail Helm
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41023, {	-- Savage Gladiator's Ringmail Leggings
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41024, {	-- Savage Gladiator's Ringmail Spaulders
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+							}),
+							cl(WARLOCK, {
+								i(146581, {	-- Ensemble: Savage Gladiator's Felweave Armor
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = {
+										{"sub", "pvp_set_ensemble", -10014, -668, -9983, 9 }, 
+										{"exclude", "itemID", 146581 },	-- Exclude itself to stop duplicating
+									},
+								}),
+								i(42008, {	-- Savage Gladiator's Felweave Amice
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41990, {	-- Savage Gladiator's Felweave Cowl
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(42014, {	-- Savage Gladiator's Felweave Handguards
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41996, {	-- Savage Gladiator's Felweave Raiment
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(42002, {	-- Savage Gladiator's Felweave Trousers
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+							}),
+							cl(WARRIOR, {
+								i(146583, {	-- Ensemble: Savage Gladiator's Plate Armor
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = {
+										{"sub", "pvp_set_ensemble", -10014, -668, -9983, 1 }, 
+										{"exclude", "itemID", 146583 },	-- Exclude itself to stop duplicating
+									},
+								}),
+								i(40778, {	-- Savage Gladiator's Plate Chestpiece
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(40797, {	-- Savage Gladiator's Plate Gauntlets
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(40816, {	-- Savage Gladiator's Plate Helm
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(40836, {	-- Savage Gladiator's Plate Legguards
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(40856, {	-- Savage Gladiator's Plate Shoulders
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+							}),
 						},
 					}),
 					n(31864, { 	-- Xazi Smolderpipe >Season 6< Elite
