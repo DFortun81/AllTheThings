@@ -10,7 +10,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		["g"] = {
 			n(QUESTS, {
 				q(29539, {	-- Heart of Rage (A)
-					["provider"] = { "n", 54629 },	-- Gunny
+					["qg"] = 54629,	-- Gunny
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(25714),	-- Crimson Pendant of Clarity
@@ -19,7 +19,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					},
 				}),
 				q(29536, {	-- Heart of Rage (H)
-					["provider"] = { "n", 54636 },	-- Caza'rez
+					["qg"] = 54636,	-- Caza'rez
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(25714),	-- Crimson Pendant of Clarity
@@ -27,8 +27,17 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(25712),	-- Perfectly Balanced Cape
 					},
 				}),
+				q(9607,  {	-- Heart of Rage
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(9608,  {	-- Heart of Rage
+					["provider"] = { "n", 17558 },	-- Caza'rez
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+				}),
 				q(29540, {	-- Mind the Gap (A)
-					["provider"] = { "n", 54629 },	-- Gunny
+					["qg"] = 54629,	-- Gunny
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(25701),	-- Breastplate of Retribution
@@ -38,7 +47,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					},
 				}),
 				q(29537, {	-- Mind the Gap (H)
-					["provider"] = { "n", 54636 },	-- Caza'rez
+					["qg"] = 54636,	-- Caza'rez
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(25701),	-- Breastplate of Retribution
@@ -48,12 +57,36 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					},
 				}),
 				q(29538, {	-- Make Them Bleed (A)
-					["provider"] = { "n", 54629 },	-- Gunny
+					["qg"] = 54629,	-- Gunny
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(29535, {	-- Make Them Bleed (H)
-					["provider"] = { "n", 54636 },	-- Caza'rez
+					["qg"] = 54636,	-- Caza'rez
 					["races"] = HORDE_ONLY,
+				}),
+				q(9589,  {	-- The Blood is Life [Alliance]
+					["qg"] = 17479,	-- Gunny
+					["sourceQuest"] = 9587,	-- Dark Tidings [Alliance]
+					["races"] = ALLIANCE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+					["groups"] = { -- NOTE: rewards are available in a different quest
+						i(25701),	-- Breastplate of Retribution
+						i(25711),	-- Deadly Borer Leggings
+						i(25710),	-- Moonkin Headdress
+						i(25702),	-- Scaled Legs of Ruination
+					},
+				}),
+				q(9590,  {	-- The Blood is Life [Horde]
+					["qg"] = 17558,	-- Caza'rez
+					["sourceQuest"] = 9588,	-- Dark Tidings [Horde]
+					["races"] = HORDE_ONLY,
+					["u"] = REMOVED_FROM_GAME,
+					["groups"] = { -- NOTE: rewards are available in a different quest
+						i(25701),	-- Breastplate of Retribution
+						i(25711),	-- Deadly Borer Leggings
+						i(25710),	-- Moonkin Headdress
+						i(25702),	-- Scaled Legs of Ruination
+					},
 				}),
 			}),
 			d(1, {	-- Normal

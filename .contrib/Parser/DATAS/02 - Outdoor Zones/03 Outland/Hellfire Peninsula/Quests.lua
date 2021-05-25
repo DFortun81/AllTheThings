@@ -302,16 +302,6 @@ _.Zones =
 					["provider"] = { "n", 116880 },	-- Kor'vas Bloodthorn
 					["coord"] = { 85.2, 50.1, HELLFIRE_PENINSULA },
 				}),
-				q(9587,  {	-- Dark Tidings (A)
-					["provider"] = { "i", 23890 },	-- Ominous Letter
-					["races"] = ALLIANCE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(9588,  {	-- Dark Tidings (H)
-					["provider"] = { "i", 23892 },	-- Ominous Letter
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(9398,  {	-- Deadly Predators
 					["provider"] = { "n", 16797 },	-- Scout Vanura
 					["coord"] = { 23.3, 38.1, HELLFIRE_PENINSULA },
@@ -561,11 +551,6 @@ _.Zones =
 						i(28050),	-- Sacred Feather Vest
 					},
 				}),
-				q(9608,  {	-- Heart of Rage
-					["provider"] = { "n", 17558 },	-- Caza'rez
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(9361,  {	-- Helboar, the Other White Meat
 					["sourceQuests"] = { 9349 },	-- Ravager Egg Roundup
 					["provider"] = { "n", 19344 },	-- Legassi
@@ -696,16 +681,6 @@ _.Zones =
 					["provider"] = { "n", 16834 },	-- Anchorite Obadei
 					["coord"] = { 23.0, 40.3, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(29543, {	-- Invading the Citadel (A)
-					["provider"] = { "n", 19309 },	-- Sergeant Altumus
-					["coord"] = { 61.6, 60.7, HELLFIRE_PENINSULA },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(29542, {	-- Invading the Citadel (H)
-					["provider"] = { "n", 19256 },	-- Sergeant Shatterskull
-					["coord"] = { 58.0, 41.2, HELLFIRE_PENINSULA },
-					["races"] = HORDE_ONLY,
 				}),
 				q(10397, {	-- Invasion Point: Annihilator
 					["sourceQuests"] = { 10396 },	-- Enemy of my Enemy...
@@ -1081,17 +1056,6 @@ _.Zones =
 					["coord"] = { 61.7, 81.7, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 				}),
-				q(9590,  {	-- The Blood is Life
-					["provider"] = { "n", 17558 },	-- Caza'rez
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["groups"] = { -- NOTE: rewards are available in a different quest
-						i(25701),	-- Breastplate of Retribution
-						i(25711),	-- Deadly Borer Leggings
-						i(25710),	-- Moonkin Headdress
-						i(25702),	-- Scaled Legs of Ruination
-					},
-				}),
 				q(9912,  {	-- The Cenarion Expedition
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 16885 },	-- Amythiel Mistwalker
@@ -1384,17 +1348,6 @@ _.Zones =
 						i(29943),	-- Legionnaire's Studded Helm
 						i(29945),	-- Magistrate's Greaves
 						i(29931),	-- Phantasmal Headdress
-					},
-				}),
-				q(9572,  {	-- Weaken the Ramparts
-					["provider"] = { "n", 17493 },	-- Stone Guard Stok'ton
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
-					["groups"] = { -- NOTE: rewards now available from a different quest
-						i(25716),	-- Handguards of Precision
-						i(25715),	-- Jade Warrior Pauldrons
-						i(25718),	-- Mantle of Magical Might
-						i(25717),	-- Sure-Step Boots
 					},
 				}),
 				q(10079, {	-- When This Mine's a-Rockin'

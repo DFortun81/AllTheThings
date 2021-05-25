@@ -235,6 +235,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 			}),
 			d(2, {	-- Heroic
 				-- #if BEFORE WRATH
+				["description"] = "You need to have a key to the instance in order to access this mode.",
 				["cost"] = {
 					{ "i", 30623, 1 },	-- Reservoir Key
 				},
