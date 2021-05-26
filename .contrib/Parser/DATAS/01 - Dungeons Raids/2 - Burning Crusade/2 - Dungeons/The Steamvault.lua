@@ -80,8 +80,16 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				})),
 			}),
 			d(2, {	-- Heroic
-				["lvl"] = 60,
+				-- #if BEFORE 4.2.0
+				["description"] = "You need to have a key to the instance in order to access this mode.",
+				["cost"] = {
+					{ "i", 30623, 1 },	-- Reservoir Key
+				},
+				-- #endif
+				-- #if NOT ANYCLASSIC
 				["ignoreBonus"] = true,
+				-- #endif
+				["lvl"] = 70,
 				["g"] = {
 					cr(17797, e(573, {	-- Hydromancer Thespia
 						i(27789),	-- Cloak of Whispering Shells

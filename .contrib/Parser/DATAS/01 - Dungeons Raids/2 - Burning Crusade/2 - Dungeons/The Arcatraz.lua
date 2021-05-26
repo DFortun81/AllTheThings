@@ -116,8 +116,16 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				})),
 			}),
 			d(2,  {	-- Heroic
-				["lvl"] = 70,
+				-- #if BEFORE 4.2.0
+				["description"] = "You need to have a key to the instance in order to access this mode.",
+				["cost"] = {
+					{ "i", 30634, 1 },	-- Warpforged Key
+				},
+				-- #endif
+				-- #if NOT ANYCLASSIC
 				["ignoreBonus"] = true,
+				-- #endif
+				["lvl"] = 70,
 				["g"] = {
 					cr(20870, e(548, {	-- Zereketh the Unbound
 						i(28373),	-- Cloak of Scintillating Auras

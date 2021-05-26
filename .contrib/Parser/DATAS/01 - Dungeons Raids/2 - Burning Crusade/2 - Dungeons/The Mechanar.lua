@@ -86,8 +86,16 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				}))
 			}),
 			d(2, {	-- Heroic
-				["lvl"] = 70,
+				-- #if BEFORE 4.2.0
+				["description"] = "You need to have a key to the instance in order to access this mode.",
+				["cost"] = {
+					{ "i", 30634, 1 },	-- Warpforged Key
+				},
+				-- #endif
+				-- #if NOT ANYCLASSIC
 				["ignoreBonus"] = true,
+				-- #endif
+				["lvl"] = 70,
 				["groups"] = {
 					cr(19219, e(563, {	-- Mechano-Lord Capacitus
 						i(28257),	-- Hammer of the Penitent

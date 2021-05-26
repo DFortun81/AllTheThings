@@ -151,7 +151,13 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 				}),
 			}),
 			d(2, {	-- Heroic
-				["lvl"] = 70,
+				-- #if BEFORE 4.2.0
+				["description"] = "You need to have a key to the instance in order to access this mode.",
+				["cost"] = {
+					{ "i", 30633, 1 },	-- Auchenai Key
+				},
+				-- #endif
+				["lvl"] = lvlsquish(70, 30, 70),
 				["groups"] = {
 					n(COMMON_BOSS_DROPS, {
 						["crs"] = {

@@ -92,8 +92,16 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				}))
 			}),
 			d(2, {	-- Heroic
-				["lvl"] = 70,
+				-- #if BEFORE 4.2.0
+				["description"] = "You need to have a key to the instance in order to access this mode.",
+				["cost"] = {
+					{ "i", 30635, 1 },	-- Key of Time
+				},
+				-- #endif
+				-- #if NOT ANYCLASSIC
 				["ignoreBonus"] = true,
+				-- #endif
+				["lvl"] = 70,
 				["groups"] = {
 					cr(17879, e(552, {	-- Chrono Lord Deja
 						i(27987),	-- Melmorta's Twilight Longbow

@@ -559,28 +559,6 @@ _.Zones =
 					["provider"] = { "n", 7407 },	-- Chief Engineer Bilgewhizzle
 					["sourceQuest"] = 1690,	-- Wastewander Justice
 				}),
-				q(12513, {	-- Nice Hat...
-					-- Races straight from Blizz api confirmed by Gaulish 9/27/20
-					["provider"] = { "n", 28126 },	-- Don Carlos
-					["coord"] = { 50.7, 27.5, 71 },
-					["races"] = { HUMAN, DWARF, GNOME, KULTIRAN, DARKIRON, MECHAGNOME },
-					["g"] = {
-						i(38276, {	-- Haliscan Brimmed Hat
-							["ignoreSource"] = true,	-- White Item
-						}),
-					},
-				}),
-				q(12515, {	-- Nice Hat...
-					-- Races straight from Blizz api confirmed by Gaulish 9/27/20
-					["provider"] = { "n", 28126 },	-- Don Carlos
-					["coord"] = { 50.7, 27.5, 71 },
-					["races"] = exclude({ HUMAN, DWARF, GNOME, KULTIRAN, DARKIRON, MECHAGNOME }, ALL_RACES),
-					["g"] = {
-						i(38276, {	-- Haliscan Brimmed Hat
-							["ignoreSource"] = true,	-- White Item
-						}),
-					},
-				}),
 				q(2662, {	-- Noggenfogger Elixir
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 7564 },	-- Marin Noggenfogger
@@ -599,11 +577,6 @@ _.Zones =
 					["coord"] = { 69.5, 68.4, 71 },
 					["provider"] = { "o", 246438 },	-- Blingtron Circuit Design
 					["requireSkill"] = ENGINEERING,
-				}),
-				q(10282, {	-- Old Hillsbrad
-					["provider"] = { "n", 20130 },	-- Andormu
-					["coord"] = { 41.5, 38.5, 71 },
-					["sourceQuest"] = 10277,	-- The Caverns of Time
 				}),
 				q(4507,  {	-- Pawn Captures Queen
 					["provider"] = { "n", 5594 },	-- Alchemist Pestlezugg

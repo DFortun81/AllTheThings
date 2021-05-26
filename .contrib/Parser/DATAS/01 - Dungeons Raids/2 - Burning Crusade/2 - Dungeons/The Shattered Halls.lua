@@ -122,14 +122,16 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				})),
 			}),
 			d(2, {	-- Heroic
-				-- #if BEFORE MOP
+				-- #if BEFORE 4.2.0
 				["description"] = "You need to have a key to the instance in order to access this mode.",
 				["cost"] = {
 					{ "i", 30622, 1 },	-- Flamewrought Key [A]
 					{ "i", 30637, 1 },	-- Flamewrought Key [H]
 				},
 				-- #endif
+				-- #if NOT ANYCLASSIC
 				["ignoreBonus"] = true,
+				-- #endif
 				["lvl"] = 70,
 				["g"] = {
 					cr(16807, e(566, {	-- Grand Warlock Nethekurse

@@ -135,6 +135,12 @@ _.Instances = { tier(2, {	-- Burning Crusade
 				},
 			}),
 			d(2, {	-- Heroic
+				-- #if BEFORE 4.2.0
+				["description"] = "You need to have a key to the instance in order to access this mode.",
+				["cost"] = {
+					{ "i", 30633, 1 },	-- Auchenai Key
+				},
+				-- #endif
 				["lvl"] = 70,
 				["groups"] = {
 					e(544, {	-- Ambassador Hellmaw
