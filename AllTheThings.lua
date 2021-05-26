@@ -12018,10 +12018,10 @@ function app:CreateMiniListForGroup(group)
 		if not popout.data.expanded then
 			ExpandGroupsRecursively(popout.data, true, true);
 		end
-		popout:Toggle(true);
-		return;
+		-- popout:Toggle(true);
+		-- return;
 	end
-	popout:Toggle();
+	popout:Toggle(true);
 end
 local function ClearRowData(self)
 	self.ref = nil;
