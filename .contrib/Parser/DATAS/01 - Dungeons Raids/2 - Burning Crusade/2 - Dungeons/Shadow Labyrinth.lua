@@ -60,6 +60,11 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					},
 				}),
 			}),
+			n(COMMON_BOSS_DROPS, {
+				i(28558, {	-- Spirit Shard
+					["description"] = "Spirit Shards are currency tokens dropped by bosses in the Auchindoun instances. For shards to drop the player's faction must control the five Spirit Towers in the Bone Wastes. Bosses in the Mana-Tombs and Auchenai Crypts drop one shard each; bosses in the Sethekk Halls and Shadow Labyrinth drop two each.",
+				}),
+			}),
 			n(ZONEDROPS, {
 				i(24514, {	-- First Key Fragment
 					["coord"] = { 82.6, 30.8, 260 },
