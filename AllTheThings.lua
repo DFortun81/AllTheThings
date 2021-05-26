@@ -2813,23 +2813,30 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						tinsert(info, 1, { left = description, wrap = true, color = "ff66ccff" });
 					end
 				end
-				local subgroup = {};
+				-- local subgroup = {};
 				insertionSort(group, function(a, b)
 					return not (a.headerID and a.headerID == -1) and b.headerID and b.headerID == -1;
 				end);
-				for i,j in ipairs(group) do
-					-- always include the root quest/item when it's contained
-					if j.questID or j.itemID then
-						tinsert(subgroup, j);
-					elseif j.g and not (j.achievementID and j.parent.difficultyID) and j.headerID ~= 0 then
-						for k,l in ipairs(j.g) do
-							tinsert(subgroup, l);
-						end
-					else
-						tinsert(subgroup, j);
-					end
-				end
-				group = subgroup;
+				-- don't think we want this logic anymmore either... it basically changes our search of actual NPC groups into a search for the items for that NPC
+				-- and messes up logic later down the line
+				-- for i,j in ipairs(group) do
+				-- 	print("regroup",j.key,j.key and j[j.key])
+				-- 	-- always include the root quest/item when it's contained
+				-- 	if j.questID or j.itemID then
+				-- 		print("quest or item")
+				-- 		tinsert(subgroup, j);
+				-- 	elseif j.g and not (j.achievementID and j.parent.difficultyID) and j.headerID ~= 0 then
+				-- 		print("special with sub groups")
+				-- 		for k,l in ipairs(j.g) do
+				-- 			print("moving into search group", l.key,l.key and l[l.key])
+				-- 			tinsert(subgroup, l);
+				-- 		end
+				-- 	else
+				-- 		print("other")
+				-- 		tinsert(subgroup, j);
+				-- 	end
+				-- end
+				-- group = subgroup;
 			end
 		end
 	elseif paramA == "achievementID" then
