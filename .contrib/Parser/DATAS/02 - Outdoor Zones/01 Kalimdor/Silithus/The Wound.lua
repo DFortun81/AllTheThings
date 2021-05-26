@@ -15,12 +15,11 @@ _.Zones =
 							["lvl"] = 120,
 						}),
 						q(54938, {	-- A Brother's Help
+							-- This was removed during BfA in 8.2 but is now appearing again for characters leveling up during Shadowlands
 							["sourceQuests"] = { 53406 },	-- The Chamber of Heart
 							["description"] = "Once you complete 'The Chamber of Heart' in Silithus, you can pick this quest up from Magni, or it will be automatically offered when you return to your capital city.",
 							["coord"] = { 42.1, 44.3, 81 },	-- Silithus
 							["provider"] = { "n", 130216 },	-- Magni Bronzebeard
-							["lvl"] = 120,
-							["u"] = REMOVED_FROM_GAME,	-- Retired with the implementation of 8.2
 						}),
 						q(50373, {	-- A Recent Arrival
 							["sourceQuest"] = 50228,	-- The Twilight Survivor

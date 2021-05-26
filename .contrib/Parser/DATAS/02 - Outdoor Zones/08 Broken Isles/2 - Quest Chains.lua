@@ -91,12 +91,25 @@ _.Zones =
 						}),
 						q(43520),	-- The Emerald Nightmare: In Nightmares
 						q(43521),	-- The Emerald Nightmare: Essence of Power
-						q(43522),	-- Essential Consumption
+						q(43522, {	-- Essential Consumption
+							["sourceQuests"] = { 43520 },	-- The Emerald Nightmare: Essence of Power
+							["provider"] = { "n", 100482 },	-- Senegos
+							["coord"] = { 48.0, 25.7, 630 },
+							["maps"] = { 630 },	-- Azsuna
+						}),
 						q(43523, {	-- Repaid Debt
-							["description"] = "This quest is available if you *have* completed the Moonguard Stronghold quests in Suramar."
+							["description"] = "This quest is available if you *have* completed the Moonguard Stronghold quests in Suramar.",
+							["sourceQuests"] = { 43522 },	-- Essential Consumption
+							["provider"] = { "n", 110773 },	-- Archmage Kalec
+							["coord"] = { 48.1, 25.6, 630 },
+							["maps"] = { 630 },	-- Azsuna
 						}),
 						q(43527, {	-- Saving the Guard
-							["description"] = "This quest is available if you have *not* completed the Moonguard Stronghold quests in Suramar."
+							["description"] = "This quest is available if you have *not* completed the Moonguard Stronghold quests in Suramar.",
+							["sourceQuests"] = { 43522 },	-- Essential Consumption
+							["provider"] = { "n", 110773 },	-- Archmage Kalec
+							["coord"] = { 48.1, 25.6, 630 },
+							["maps"] = { 630 },	-- Azsuna
 						}),
 						q(43937),	-- Seeking Refuge
 						q(43938),	-- Focusing Our Efforts

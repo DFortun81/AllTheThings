@@ -2152,6 +2152,7 @@ _.HiddenQuestTriggers =
 		q(42960),	-- Paladin Order Hall - Tracking Quest: Chose Strategy B (choice for 42919 The Scion's Legacy)
 		q(42135),	-- Paladin Order Hall - Tracking Quest: Chose Strategy C (choice for 42919 The Scion's Legacy)
 		q(42961),	-- Paladin Order Hall - Tracking Quest: Chose Strategy D (choice for 42919 The Scion's Legacy)
+		q(42352),	-- Paladin Order Hall - Tracking Quest: Lumenstone 3
 
 		q(40708),	-- Priest Order Hall - Holy chosen first
 		q(40709),	-- Priest Order Hall - Discipline chosen first
@@ -2273,6 +2274,7 @@ _.HiddenQuestTriggers =
 		q(43657),	-- Hidden Appearance Unlocked (Survival Hunter "Last Breath of the Forest")
 		q(43559),	-- Triggers when turning in Bindings of the Windlord (43558) just prior to getting outlaw rogue hidden appearance
 		q(43671),	-- Hidden Appearance Unlocked (Outlaw Rogue "Emanation of the Winds")
+		q(43661),	-- Hidden Appearance Unlocked (Brewmaster Monk "Legend of the Monkey King")
 
 		--	Professions
 		--	Archaeology
@@ -4076,6 +4078,7 @@ _.HiddenQuestTriggers =
 		q(62415),	-- hitting Renown 39 as Night Fae
 		q(62806),	-- HQT for Arsenal: Winterborn Weapons
 		q(61169),	-- Night Fae buff from Claw's Edge anima conductor
+		q(61158),	-- Night Fae buff from Claw's Edge anima conductor (Ka'rolei)
 
 		-- Bastion
 		q(57574),	-- landing in Bastion for the first time during Seek the Ascended
