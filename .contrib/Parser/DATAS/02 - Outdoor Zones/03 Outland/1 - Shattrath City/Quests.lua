@@ -565,15 +565,6 @@ _.Zones =
 					["provider"] = { "n", 18481 },	-- A'dal
 					["sourceQuests"] = { 10883 },	-- The Tempest Key
 				}),
-				q(10177, {	-- Trouble at Auchindoun
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 18893 },	-- Spymistress Mehlisah Highcrown
-				}),
-				q(29642, {	-- Trouble at Auchindoun
-					["provider"] = { "n", 18893 },	-- Spymistress Mehlisah Highcrown
-					["isBreadcrumb"] = true,
-					-- ["sourceQuests"] = {  },	-- UNKNOWN IF HAS SOURCE
-				}),
 				q(11369, {	-- Wanted: A Black Stalker Egg
 					["provider"] = { "n", 24369 },	-- Wind Trader Zhareem
 					["coord"] = { 75, 37, SHATTRATH_CITY },

@@ -39,10 +39,6 @@ _.Zones =
 					["provider"] = { "n", 18417 },	-- Altruis the Sufferer
 					["sourceQuest"] = 10649,	-- The Book of Fel Names
 				}),
-				q(10649, {	-- The Book of Fel Names
-					["provider"] = { "n", 18417 },	-- Altruis
-					["sourceQuest"] = 10646,	-- Illidan's Pupil
-				}),
 				q(10669, {	-- Against All Odds
 					["provider"] = { "n", 18417 },	-- Altruis the Sufferer
 					["coord"] = { 27.3, 43.0, NAGRAND },
@@ -80,11 +76,6 @@ _.Zones =
 					["provider"] = { "n", 18417 },	-- Altruis
 					["coord"] = { 27.3, 43.0, NAGRAND },
 					["sourceQuest"] = 10649,	-- The Book of Fel Names
-				}),
-				q(10649, {	-- The Book of Fel Names
-					["provider"] = { "n", 18417 },	-- Altruis
-					["coord"] = { 27.3, 43.0, NAGRAND },
-					["sourceQuest"] = 10646,	-- Illidan's Pupil
 				}),
 				q(11042, {	-- A Mystifying Vision
 					["provider"] = { "n", 23268 },	-- Seer Jovar

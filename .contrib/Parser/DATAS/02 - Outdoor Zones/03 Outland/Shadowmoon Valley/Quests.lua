@@ -754,11 +754,6 @@ _.Zones =
 					["coord"] = { 77.4, 38.6, TEROKKAR_FOREST },
 					["sourceQuest"] = 10664,	-- Additional Materials
 				}),
-				q(10666, {	-- The Lexicon Demonica
-					["provider"] = { "n", 21465 },	-- David Wayne
-					["coord"] = { 77.4, 38.6, TEROKKAR_FOREST },
-					["sourceQuest"] = 10664,	-- Additional Materials
-				}),
 				q(10667, {	-- Underworld Loam
 					["provider"] = { "n", 21465 },	-- David Wayne
 					["coord"] = { 77.4, 38.6, TEROKKAR_FOREST },

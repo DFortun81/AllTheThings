@@ -196,7 +196,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 				-- #if NOT ANYCLASSIC
 				["ignoreBonus"] = true,
 				-- #endif
-				["lvl"] = 70,
+				["lvl"] = lvlsquish(70, 30, 70),
 				["groups"] = {
 					n(COMMON_BOSS_DROPS, {
 						["crs"] = {

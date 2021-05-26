@@ -382,11 +382,7 @@ _.Zones =
 					["provider"] = { "o", 182549 },	-- Fel Orc Plans
 					["sourceQuest"] = 9998,	-- Unruly Neighbors
 				}),
-				q(10178, {	-- Find Spy To'gun
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 19496 },	-- Spy Grik'tha
-				}),
-				q(10920, {	-- For the Fallen -- aa
+				q(10920, {	-- For the Fallen
 					["provider"] = { "n", 22462 },	-- Vindicator Haylen
 					["coord"] = { 49.7, 76.1, TEROKKAR_FOREST },
 				}),
