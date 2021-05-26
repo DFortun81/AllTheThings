@@ -894,6 +894,9 @@ _.PVP =
 					i(60787, {	-- Vicious Gladiator's Drape of Prowess
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
+					un(REMOVED_FROM_GAME, i(60782)),	-- Vicious Gladiator's Cloak of Conquest
+					un(REMOVED_FROM_GAME, i(60784)),	-- Vicious Gladiator's Cloak of Dominance
+					un(REMOVED_FROM_GAME, i(60785)),	-- Vicious Gladiator's Cloak of Dominance
 				}),
 				n(-326, {	-- Wrists
 					i(60535, {	-- Vicious Gladiator's Armbands of Meditation
@@ -941,6 +944,23 @@ _.PVP =
 					i(60559, {	-- Vicious Gladiator's Wristguards of Alacrity
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
+					un(REMOVED_FROM_GAME, i(60629)),	-- Vicious Gladiator's Cuffs of Dominance
+					un(REMOVED_FROM_GAME, i(60614)),	-- Vicious Gladiator's Cuffs of Dominance
+					un(REMOVED_FROM_GAME, i(60585)),	-- Vicious Gladiator's Armwraps of Dominance
+					un(REMOVED_FROM_GAME, i(60608)),	-- Vicious Gladiator's Armwraps of Dominance
+					un(REMOVED_FROM_GAME, i(60588)),	-- Vicious Gladiator's Armwraps of Triumph
+					un(REMOVED_FROM_GAME, i(60597)),	-- Vicious Gladiator's Armwraps of Triumph
+					un(REMOVED_FROM_GAME, i(60598)),	-- Vicious Gladiator's Armwraps of Triumph
+					un(REMOVED_FROM_GAME, i(60507)),	-- Vicious Gladiator's Bracers of Salvation
+					un(REMOVED_FROM_GAME, i(60515)),	-- Vicious Gladiator's Bracers of Salvation
+					un(REMOVED_FROM_GAME, i(60510)),	-- Vicious Gladiator's Bracers of Triumph
+					un(REMOVED_FROM_GAME, i(60524)),	-- Vicious Gladiator's Bracers of Triumph
+					un(REMOVED_FROM_GAME, i(60529)),	-- Vicious Gladiator's Bracers of Triumph
+					un(REMOVED_FROM_GAME, i(60538)),	-- Vicious Gladiator's Wristguards of Dominance
+					un(REMOVED_FROM_GAME, i(60568)),	-- Vicious Gladiator's Wristguards of Salvation
+					un(REMOVED_FROM_GAME, i(60553)),	-- Vicious Gladiator's Wristguards of Triumph
+					un(REMOVED_FROM_GAME, i(60556)),	-- Vicious Gladiator's Wristguards of Triumph
+					un(REMOVED_FROM_GAME, i(60560)),	-- Vicious Gladiator's Wristguards of Triumph
 				}),
 				n(-328, {	-- Waist
 					i(60583, {	-- Vicious Gladiator's Belt of Cruelty
@@ -988,6 +1008,21 @@ _.PVP =
 					i(60533, {	-- Vicious Gladiator's Waistguard of Meditation
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
+					un(REMOVED_FROM_GAME, i(60592)),	-- Vicious Gladiator's Belt of Triumph
+					un(REMOVED_FROM_GAME, i(60595)),	-- Vicious Gladiator's Belt of Triumph
+					un(REMOVED_FROM_GAME, i(60600)),	-- Vicious Gladiator's Belt of Triumph
+					un(REMOVED_FROM_GAME, i(60631)),	-- Vicious Gladiator's Cord of Dominance
+					un(REMOVED_FROM_GAME, i(60632)),	-- Vicious Gladiator's Cord of Dominance
+					un(REMOVED_FROM_GAME, i(60517)),	-- Vicious Gladiator's Girdle of Salvation
+					un(REMOVED_FROM_GAME, i(60518)),	-- Vicious Gladiator's Girdle of Salvation
+					un(REMOVED_FROM_GAME, i(60514)),	-- Vicious Gladiator's Girdle of Triumph
+					un(REMOVED_FROM_GAME, i(60526)),	-- Vicious Gladiator's Girdle of Triumph
+					un(REMOVED_FROM_GAME, i(60527)),	-- Vicious Gladiator's Girdle of Triumph
+					un(REMOVED_FROM_GAME, i(60566)),	-- Vicious Gladiator's Waistguard of Salvation
+					un(REMOVED_FROM_GAME, i(60571)),	-- Vicious Gladiator's Waistguard of Salvation
+					un(REMOVED_FROM_GAME, i(60551)),	-- Vicious Gladiator's Waistguard of Triumph
+					un(REMOVED_FROM_GAME, i(60558)),	-- Vicious Gladiator's Waistguard of Triumph
+					un(REMOVED_FROM_GAME, i(60561)),	-- Vicious Gladiator's Waistguard of Triumph
 				}),
 				n(-330, {	-- Feet
 					i(60593, {	-- Vicious Gladiator's Boots of Alacrity
@@ -1035,6 +1070,23 @@ _.PVP =
 					i(60509, {	-- Vicious Gladiator's Warboots of Cruelty
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
+					un(REMOVED_FROM_GAME, i(60584)),	-- Vicious Gladiator's Boots of Dominance
+					un(REMOVED_FROM_GAME, i(60610)),	-- Vicious Gladiator's Boots of Dominance
+					un(REMOVED_FROM_GAME, i(60590)),	-- Vicious Gladiator's Boots of Triumph
+					un(REMOVED_FROM_GAME, i(60596)),	-- Vicious Gladiator's Boots of Triumph
+					un(REMOVED_FROM_GAME, i(60599)),	-- Vicious Gladiator's Boots of Triumph
+					un(REMOVED_FROM_GAME, i(60506)),	-- Vicious Gladiator's Greaves of Salvation
+					un(REMOVED_FROM_GAME, i(60519)),	-- Vicious Gladiator's Greaves of Salvation
+					un(REMOVED_FROM_GAME, i(60522)),	-- Vicious Gladiator's Greaves of Triumph
+					un(REMOVED_FROM_GAME, i(60525)),	-- Vicious Gladiator's Greaves of Triumph
+					un(REMOVED_FROM_GAME, i(60528)),	-- Vicious Gladiator's Greaves of Triumph
+					un(REMOVED_FROM_GAME, i(60537)),	-- Vicious Gladiator's Sabatons of Dominance
+					un(REMOVED_FROM_GAME, i(60570)),	-- Vicious Gladiator's Sabatons of Salvation
+					un(REMOVED_FROM_GAME, i(60552)),	-- Vicious Gladiator's Sabatons of Triumph
+					un(REMOVED_FROM_GAME, i(60562)),	-- Vicious Gladiator's Sabatons of Triumph
+					un(REMOVED_FROM_GAME, i(60563)),	-- Vicious Gladiator's Sabatons of Triumph
+					un(REMOVED_FROM_GAME, i(60627)),	-- Vicious Gladiator's Treads of Dominance
+					un(REMOVED_FROM_GAME, i(60633)),	-- Vicious Gladiator's Treads of Dominance
 				}),
 				n(-384,	{	-- Neck
 					i(60673),	-- Vicious Gladiator's Choker of Accuracy
@@ -1044,6 +1096,7 @@ _.PVP =
 					i(60662),	-- Vicious Gladiator's Pendant of Alacrity
 					i(60661),	-- Vicious Gladiator's Pendant of Diffusion
 					i(60664),	-- Vicious Gladiator's Pendant of Meditation
+					un(REMOVED_FROM_GAME, i(60666)), 	-- Vicious Gladiator's Pendant of Conquest
 				}),
 				n(-385,	{	-- Finger
 					i(60647),	-- Vicious Gladiator's Band of Accuracy
@@ -1055,7 +1108,12 @@ _.PVP =
 					i(60650),	-- Vicious Gladiator's Signet of Cruelty
 				}),
 				n(-331, {	-- Held In Offhand
-					un(REMOVED_FROM_GAME, i(61347)), -- Vicious Gladiator's War Edge (Throw wep)
+					un(REMOVED_FROM_GAME, i(61348)),	-- Vicious Gladiator's Hatchet (Throw wep)
+					un(REMOVED_FROM_GAME, i(61391)),	-- Vicious Gladiator's Relic of Conquest
+					un(REMOVED_FROM_GAME, i(61388)), 	-- Vicious Gladiator's Relic of Dominance
+					un(REMOVED_FROM_GAME, i(61389)), 	-- Vicious Gladiator's Relic of Salvation
+					un(REMOVED_FROM_GAME, i(61390)), 	-- Vicious Gladiator's Relic of Triumph
+					un(REMOVED_FROM_GAME, i(61347)), 	-- Vicious Gladiator's War Edge (Throw wep)
 				}),
 				n(-386,	{	-- Trinket
 					i(61033),	-- Vicious Gladiator's Badge of Conquest
@@ -1063,21 +1121,141 @@ _.PVP =
 					i(61031),	-- Vicious Gladiator's Emblem of Meditation
 					i(61032),	-- Vicious Gladiator's Emblem of Tenacity
 					i(61047),	-- Vicious Gladiator's Insignia of Conquest
-					i(61045),	-- Vicious Gladiator's Insignia of Dominance
-					i(61046),	-- Vicious Gladiator's Insignia of Victory
 					i(60794),	-- Vicious Gladiator's Medallion of Cruelty (A)
 					i(60799),	-- Vicious Gladiator's Medallion of Meditation (A)
 					i(60800),	-- Vicious Gladiator's Medallion of Tenacity (A)
 					i(60801),	-- Vicious Gladiator's Medallion of Cruelty (H)
 					i(60806),	-- Vicious Gladiator's Medallion of Meditation (H)
 					i(60807),	-- Vicious Gladiator's Medallion of Tenacity (H)
+					un(REMOVED_FROM_GAME, i(61035)),	-- Vicious Gladiator's Badge of Dominance
+					un(REMOVED_FROM_GAME, i(61034)),	-- Vicious Gladiator's Badge of Victory
+					un(REMOVED_FROM_GAME, i(61030)),	-- Vicious Gladiator's Emblem of Proficiency
+					un(REMOVED_FROM_GAME, i(61045)),	-- Vicious Gladiator's Insignia of Dominance
+					un(REMOVED_FROM_GAME, i(61046)),	-- Vicious Gladiator's Insignia of Victory
+					un(REMOVED_FROM_GAME, i(69781)),	-- Vicious Gladiator's Mark of Cruelty
+					un(REMOVED_FROM_GAME, i(69783)),	-- Vicious Gladiator's Mark of Meditation
+					un(REMOVED_FROM_GAME, i(69782)),	-- Vicious Gladiator's Mark of Tenacity
+					un(REMOVED_FROM_GAME, i(69784)),	-- Vicious Gladiator's Symbol of Cruelty
+					un(REMOVED_FROM_GAME, i(69786)),	-- Vicious Gladiator's Symbol of Meditation
+					un(REMOVED_FROM_GAME, i(69785)),	-- Vicious Gladiator's Symbol of Tenacity
+					un(REMOVED_FROM_GAME, i(60795)),	-- Vicious Gladiator's Medallion of Accuracy (A)
+					un(REMOVED_FROM_GAME, i(60796)),	-- Vicious Gladiator's Medallion of Alacrity (A)
+					un(REMOVED_FROM_GAME, i(60798)),	-- Vicious Gladiator's Medallion of Command (A)
+					un(REMOVED_FROM_GAME, i(60797)),	-- Vicious Gladiator's Medallion of Prowess (A)
+					un(REMOVED_FROM_GAME, i(69785)),	-- Vicious Gladiator's Symbol of Tenacity
+				}),
+			}),
+			n(-659, {	-- Aspirant (Season 10 version)
+				
+				
+				n(-322, {	-- Back
+					un(REMOVED_FROM_GAME, i(70531)),	-- Vicious Gladiator's Cape of Cruelty
+					un(REMOVED_FROM_GAME, i(70532)),	-- Vicious Gladiator's Cape of Prowess
+					un(REMOVED_FROM_GAME, i(70542)),	-- Vicious Gladiator's Cloak of Alacrity
+					un(REMOVED_FROM_GAME, i(70543)),	-- Vicious Gladiator's Cloak of Prowess
+					un(REMOVED_FROM_GAME, i(70555)),	-- Vicious Gladiator's Drape of Diffusion
+					un(REMOVED_FROM_GAME, i(70556)),	-- Vicious Gladiator's Drape of Meditation
+					un(REMOVED_FROM_GAME, i(70557)),	-- Vicious Gladiator's Drape of Prowess
+				
+				}),
+				n(-322, {	-- Wrists
+					un(REMOVED_FROM_GAME, i(70511)),	-- Vicious Gladiator's Armbands of Meditation
+					un(REMOVED_FROM_GAME, i(70512)),	-- Vicious Gladiator's Armbands of Prowess
+					un(REMOVED_FROM_GAME, i(70513)),	-- Vicious Gladiator's Armplates of Alacrity
+					un(REMOVED_FROM_GAME, i(70514)),	-- Vicious Gladiator's Armplates of Proficiency
+					un(REMOVED_FROM_GAME, i(70515)),	-- Vicious Gladiator's Armwraps of Accuracy
+					un(REMOVED_FROM_GAME, i(70516)),	-- Vicious Gladiator's Armwraps of Alacrity
+					un(REMOVED_FROM_GAME, i(70525)),	-- Vicious Gladiator's Bindings of Meditation
+					un(REMOVED_FROM_GAME, i(70526)),	-- Vicious Gladiator's Bindings of Prowess
+					un(REMOVED_FROM_GAME, i(70529)),	-- Vicious Gladiator's Bracers of Meditation
+					un(REMOVED_FROM_GAME, i(70530)),	-- Vicious Gladiator's Bracers of Prowess
+					un(REMOVED_FROM_GAME, i(70547)),	-- Vicious Gladiator's Cuffs of Accuracy
+					un(REMOVED_FROM_GAME, i(70548)),	-- Vicious Gladiator's Cuffs of Meditation
+					un(REMOVED_FROM_GAME, i(70549)),	-- Vicious Gladiator's Cuffs of Prowess
+					un(REMOVED_FROM_GAME, i(70669)),	-- Vicious Gladiator's Wristguards of Accuracy
+					un(REMOVED_FROM_GAME, i(70670)),	-- Vicious Gladiator's Wristguards of Alacrity
+				}),
+				n(-328, {	-- Waist
+					un(REMOVED_FROM_GAME, i(70523)),	-- Vicious Gladiator's Belt of Cruelty
+					un(REMOVED_FROM_GAME, i(70524)),	-- Vicious Gladiator's Belt of Meditation
+					un(REMOVED_FROM_GAME, i(70540)),	-- Vicious Gladiator's Clasp of Cruelty
+					un(REMOVED_FROM_GAME, i(70541)),	-- Vicious Gladiator's Clasp of Meditation
+					un(REMOVED_FROM_GAME, i(70544)),	-- Vicious Gladiator's Cord of Accuracy
+					un(REMOVED_FROM_GAME, i(70545)),	-- Vicious Gladiator's Cord of Cruelty
+					un(REMOVED_FROM_GAME, i(70546)),	-- Vicious Gladiator's Cord of Meditation
+					un(REMOVED_FROM_GAME, i(70573)),	-- Vicious Gladiator's Girdle of Cruelty
+					un(REMOVED_FROM_GAME, i(70574)),	-- Vicious Gladiator's Girdle of Prowess
+					un(REMOVED_FROM_GAME, i(70595)),	-- Vicious Gladiator's Links of Accuracy
+					un(REMOVED_FROM_GAME, i(70596)),	-- Vicious Gladiator's Links of Cruelty
+					un(REMOVED_FROM_GAME, i(70663)),	-- Vicious Gladiator's Waistband of Accuracy
+					un(REMOVED_FROM_GAME, i(70664)),	-- Vicious Gladiator's Waistband of Cruelty
+					un(REMOVED_FROM_GAME, i(70665)),	-- Vicious Gladiator's Waistguard of Cruelty
+					un(REMOVED_FROM_GAME, i(70666)),	-- Vicious Gladiator's Waistguard of Meditation
+				}),
+				n(-330, {	-- Feet
+					un(REMOVED_FROM_GAME, i(70527)),	-- Vicious Gladiator's Boots of Alacrity
+					un(REMOVED_FROM_GAME, i(70528)),	-- Vicious Gladiator's Boots of Cruelty
+					un(REMOVED_FROM_GAME, i(70571)),	-- Vicious Gladiator's Footguards of Alacrity
+					un(REMOVED_FROM_GAME, i(70572)),	-- Vicious Gladiator's Footguards of Meditation
+					un(REMOVED_FROM_GAME, i(70575)),	-- Vicious Gladiator's Greaves of Alacrity
+					un(REMOVED_FROM_GAME, i(70576)),	-- Vicious Gladiator's Greaves of Meditation
+					un(REMOVED_FROM_GAME, i(70639)),	-- Vicious Gladiator's Sabatons of Alacrity
+					un(REMOVED_FROM_GAME, i(70640)),	-- Vicious Gladiator's Sabatons of Alacrity
+					un(REMOVED_FROM_GAME, i(70641)),	-- Vicious Gladiator's Sabatons of Cruelty
+					un(REMOVED_FROM_GAME, i(70642)),	-- Vicious Gladiator's Sabatons of Meditation
+					un(REMOVED_FROM_GAME, i(70660)),	-- Vicious Gladiator's Treads of Alacrity
+					un(REMOVED_FROM_GAME, i(70661)),	-- Vicious Gladiator's Treads of Cruelty
+					un(REMOVED_FROM_GAME, i(70662)),	-- Vicious Gladiator's Treads of Meditation
+					un(REMOVED_FROM_GAME, i(70667)),	-- Vicious Gladiator's Warboots of Alacrity
+					un(REMOVED_FROM_GAME, i(70668)),	-- Vicious Gladiator's Warboots of Cruelty
+				}),	
+				n(-384,	{	-- Neck
+					un(REMOVED_FROM_GAME, i(70538)),	-- Vicious Gladiator's Choker of Accuracy
+					un(REMOVED_FROM_GAME, i(70539)),	-- Vicious Gladiator's Choker of Proficiency
+					un(REMOVED_FROM_GAME, i(70613)),	-- Vicious Gladiator's Necklace of Proficiency
+					un(REMOVED_FROM_GAME, i(70614)),	-- Vicious Gladiator's Necklace of Prowess
+					un(REMOVED_FROM_GAME, i(70620)),	-- Vicious Gladiator's Pendant of Alacrity
+					un(REMOVED_FROM_GAME, i(70621)),	-- Vicious Gladiator's Pendant of Diffusion
+					un(REMOVED_FROM_GAME, i(70622)),	-- Vicious Gladiator's Pendant of Meditation
+				}),
+				n(-385,	{	-- Finger
+					un(REMOVED_FROM_GAME, i(70520)),	-- Vicious Gladiator's Band of Accuracy
+					un(REMOVED_FROM_GAME, i(70521)),	-- Vicious Gladiator's Band of Cruelty
+					un(REMOVED_FROM_GAME, i(70522)),	-- Vicious Gladiator's Band of Meditation
+					un(REMOVED_FROM_GAME, i(70637)),	-- Vicious Gladiator's Ring of Accuracy
+					un(REMOVED_FROM_GAME, i(70638)),	-- Vicious Gladiator's Ring of Cruelty
+					un(REMOVED_FROM_GAME, i(70653)),	-- Vicious Gladiator's Signet of Accuracy
+					un(REMOVED_FROM_GAME, i(70654)), 	-- Vicious Gladiator's Signet of Cruelty
+				}),	
+				n(-331, {	-- Held In Offhand
+					un(REMOVED_FROM_GAME, i(70628)), 	-- Vicious Gladiator's Relic of Conquest
+					un(REMOVED_FROM_GAME, i(70629)),	-- Vicious Gladiator's Relic of Dominance
+					un(REMOVED_FROM_GAME, i(70630)),	-- Vicious Gladiator's Relic of Salvation
+					un(REMOVED_FROM_GAME, i(70631)),	-- Vicious Gladiator's Relic of Triumph
+				}),
+				f(53,	{	-- Trinket
+					un(REMOVED_FROM_GAME, i(70517)),	-- Vicious Gladiator's Badge of Conquest
+					un(REMOVED_FROM_GAME, i(70518)),	-- Vicious Gladiator's Badge of Dominance
+					un(REMOVED_FROM_GAME, i(70519)),	-- Vicious Gladiator's Badge of Victory
+					un(REMOVED_FROM_GAME, i(70563)),	-- Vicious Gladiator's Emblem of Cruelty
+					un(REMOVED_FROM_GAME, i(70564)),	-- Vicious Gladiator's Emblem of Meditation
+					un(REMOVED_FROM_GAME, i(70565)),	-- Vicious Gladiator's Emblem of Tenacity
+					un(REMOVED_FROM_GAME, i(70577)),	-- Vicious Gladiator's Insignia of Conquest
+					un(REMOVED_FROM_GAME, i(70578)),	-- Vicious Gladiator's Insignia of Dominance
+					un(REMOVED_FROM_GAME, i(70579)),	-- Vicious Gladiator's Insignia of Victory
+					un(REMOVED_FROM_GAME, i(70603)),	-- Vicious Gladiator's Medallion of Cruelty (A)
+					un(REMOVED_FROM_GAME, i(70604)),	-- Vicious Gladiator's Medallion of Meditation (A)
+					un(REMOVED_FROM_GAME, i(70606)),	-- Vicious Gladiator's Medallion of Tenacity (A)
+					un(REMOVED_FROM_GAME, i(70602)),	-- Vicious Gladiator's Medallion of Cruelty (H)
+					un(REMOVED_FROM_GAME, i(70605)),	-- Vicious Gladiator's Medallion of Meditation (H)
+					un(REMOVED_FROM_GAME, i(70607)),	-- Vicious Gladiator's Medallion of Tenacity (H)
 				}),
 			}),
 			n(-662, {	-- Elite PvP Gear
 				n(-319, {	-- Weapons
 					un(REMOVED_FROM_GAME, i(67476)),	-- Vicious Gladiator's Barrier
 					un(REMOVED_FROM_GAME, i(67464)),	-- Vicious Gladiator's Baton of Light
-					un(REMOVED_FROM_GAME, i(67450)),	-- Vicious Gladiator's Battle  Staff
+					un(REMOVED_FROM_GAME, i(67450)),	-- Vicious Gladiator's Battle Staff
 					un(REMOVED_FROM_GAME, i(67470)),	-- Vicious Gladiator's Bonebracker
 					un(REMOVED_FROM_GAME, i(67452)),	-- Vicious Gladiator's Bonegrinder
 					un(REMOVED_FROM_GAME, i(67474)),	-- Vicious Gladiator's Cleaver
@@ -1223,6 +1401,10 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(65600)),	-- Vicious Gladiator's Treads of Meditation
 					un(REMOVED_FROM_GAME, i(65608)),	-- Vicious Gladiator's Warboots of Alacrity
 					un(REMOVED_FROM_GAME, i(65607)),	-- Vicious Gladiator's Warboots of Cruelty
+				}),
+				n(-331, {	-- Held In Offhand
+					un(REMOVED_FROM_GAME, i(67467)), -- Vicious Gladiator's War Edge (Throw wep) wrong label by blizz
+					un(REMOVED_FROM_GAME, i(67466)), -- Vicious Gladiator's Hatchet (Throw wep) wrong label by blizz
 				}),
 			}),
 		}),
