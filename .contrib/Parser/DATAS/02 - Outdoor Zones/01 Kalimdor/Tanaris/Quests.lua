@@ -861,10 +861,6 @@ _.Zones =
 					["provider"] = { "n", 8579 },	-- Yeh'kinya
 					["sourceQuest"] = 3527,	-- The Prophecy of Mosh'aru
 				}),
-				q(10296, {	-- The Black Morass
-					["provider"] = { "n", 20130 },	-- Andormu
-					["coord"] = { 41.5, 38.5, 71 },
-				}),
 				q(10277, {	-- The Caverns of Time
 					["provider"] = { "n", 20130 },	-- Andormu
 					["coord"] = { 41.5, 38.5, 71 },

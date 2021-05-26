@@ -201,6 +201,16 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 					["requireSkill"] = BLACKSMITHING,
 					["f"] = 200,
 				}),
+				-- #if BEFORE WRATH
+				-- This is going to sound crazy, but apparently during TBC, some of the trash drops from Hyjal dropped from Black Temple.
+				-- This was changed after the Wrath Prepatch.
+				i(34009),	-- Hammer of Judgement
+				i(32589),	-- Hellfire-Encased Pendant
+				i(32591),	-- Choker of Serrated Blades
+				i(32590),	-- Nethervoid Cloak
+				i(32592),	-- Chestguard of Relentless Storms
+				i(32609),	-- Boots of the Divine Light
+				-- #endif
 				i(32606),	-- Girdle of the Lightbearer
 				i(34011),	-- Illidari Runeshield
 				i(32608),	-- Pillager's Gauntlets
@@ -217,6 +227,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 				i(32230),	-- Shadowsong Amethyst
 				i(32249),	-- Seaspray Emerald
 				i(32428),	-- Heart of Darkness
+				i(32897),	-- Mark of the Illidari
 			}),
 			-- #if AFTER LEGION
 			d(14, {	-- Normal
@@ -270,6 +281,11 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 							i(32258),	-- Naturalist's Preserving Cinch
 							i(32256),	-- Waistwrap of Infinity
 							i(32261),	-- Band of the Abyssal Lord
+							-- #if BEFORE MOP
+							i(32257, {	-- Idol of the White Stag
+								["timeline"] = { "removed 5.0.4.10000" },
+							}),
+							-- #endif
 						},
 					}),
 					e(1584, {	-- Shade of Akama
@@ -309,6 +325,11 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 							i(32280),	-- Gauntlets of Enforcement
 							i(32512),	-- Girdle of Lordaeron's Fallen
 							i(32510),	-- Softstep Boots of Tracking
+							-- #if BEFORE MOP
+							i(32330, {	-- Totem of Ancestral Guidance
+								["timeline"] = { "removed 5.0.4.10000" },
+							}),
+							-- #endif
 						},
 					}),
 					e(1586, {	-- Gurtogg Bloodboil
@@ -382,6 +403,11 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 							i(32365),	-- Heartshatter Breastplate
 							i(32367),	-- Leggings of Devastation
 							i(32366),	-- Shadowmaster's Boots
+							-- #if BEFORE MOP
+							i(32368, {	-- Tome of the Lightbringer
+								["timeline"] = { "removed 5.0.4.10000" },
+							}),
+							-- #endif
 						},
 					}),
 					e(1589, {	-- The Illidari Council
