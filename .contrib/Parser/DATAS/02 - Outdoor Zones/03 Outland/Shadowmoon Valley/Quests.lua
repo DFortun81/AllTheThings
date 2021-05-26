@@ -748,14 +748,6 @@ _.Zones =
 						10666,	-- The Lexicon Demonica
 					},
 				}),
-				q(10670, {	-- Tear of the Earthmother
-					["provider"] = { "n", 21465 },	-- David Wayne
-					["coord"] = { 77.4, 38.6, TEROKKAR_FOREST },
-					["sourceQuests"] = {
-						10665,	-- Fresh From the Mechanar
-						10666,	-- The Lexicon Demonica
-					},
-				}),
 				q(10676, {	-- Bane of the Illidari
 					["provider"] = { "n", 21465 },	-- David Wayne
 					["coord"] = { 77.4, 38.6, TEROKKAR_FOREST },

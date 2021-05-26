@@ -84,16 +84,6 @@ _.Zones =
 						-- #endif
 					},
 				}),
-				q(29689, {	-- Advancing the Campaign (A)
-					["provider"] = { "n", 16819 },	-- Force Commander Danath Trollbane
-					["coord"] = { 56.6, 66.6, HELLFIRE_PENINSULA },
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(29688, {	-- Advancing the Campaign (H)
-					["provider"] = { "n", 16575 },	-- Shadow Hunter Ty'jin
-					["coord"] = { 55.0, 36.3, HELLFIRE_PENINSULA },
-					["races"] = HORDE_ONLY,
-				}),
 				q(9383,  {	-- An Ambitious Plan
 					["provider"] = { "n", 17006 },	-- Elsaana
 					["coord"] = { 23.2, 36.6, HELLFIRE_PENINSULA },

@@ -532,10 +532,6 @@ _.Zones =
 					["provider"] = { "n", 28318 },	-- Grand Apothecary Putress
 					["sourceQuest"] = 12784,	-- Desperate Research
 				}),
-				q(10884, {	-- Trial of the Naaru: Mercy
-					["provider"] = { "n", 18481 },	-- A'dal
-					["sourceQuests"] = { 10883 },	-- The Tempest Key
-				}),
 				q(10885, {	-- Trial of the Naaru: Strength
 					["provider"] = { "n", 18481 },	-- A'dal
 					["sourceQuests"] = { 10883 },	-- The Tempest Key
