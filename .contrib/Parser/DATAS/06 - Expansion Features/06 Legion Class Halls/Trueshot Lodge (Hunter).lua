@@ -457,7 +457,11 @@ _.ExpansionFeatures =
 					}),
 					q(41542, {	-- Preparation for the Hunt
 						["classes"] = { HUNTER },
-						["provider"] = { "n", 107317 },	-- Emmarel Shadewarden
+						["providers"] = {
+							{ "n", 102478 },	-- Emmarel Shadewarden
+							{ "n", 107317 },	-- Emmarel Shadewarden
+							{ "n", 107973 },	-- Emmarel Shadewarden
+						},
 						["coord"] = { 43.4, 26.4, 739 },
 					}),
 					q(45556, {	-- Ready to Strike
@@ -494,7 +498,11 @@ _.ExpansionFeatures =
 					}),
 					q(41540, {	-- Rendezvous with the Courier
 						["classes"] = { HUNTER },
-						["provider"] = { "n", 107317 },	-- Emmarel Shadewarden
+						["providers"] = {
+							{ "n", 102478 },	-- Emmarel Shadewarden
+							{ "n", 107317 },	-- Emmarel Shadewarden
+							{ "n", 107973 },	-- Emmarel Shadewarden
+						},
 						["coord"] = { 43.4, 26.4, 739 },
 					}),
 					q(42402, {	-- Requesting Reinforcements

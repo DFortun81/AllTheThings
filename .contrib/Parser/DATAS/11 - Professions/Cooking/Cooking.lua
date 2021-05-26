@@ -320,7 +320,6 @@ profession(COOKING, {
 						i(133826),	-- Recipe: Dried Mackerel Strips [Rank 1]
 					},
 				}),
-				q(40990),	-- A Good Recipe List
 				q(40991, {	-- Opening the Test Kitchen
 					ach(10591),	-- All Grown Up
 				}),

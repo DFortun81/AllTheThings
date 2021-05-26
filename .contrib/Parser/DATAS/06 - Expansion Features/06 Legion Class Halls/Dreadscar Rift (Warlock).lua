@@ -226,6 +226,16 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 115863 },	-- Jubeka Shadowbreaker
 						["maps"] = { 630 },	-- Azsuna
 					}),
+					q(42125, {	-- Dark Whispers
+						["sourceQuests"] = {
+							40623,	-- The Dark Riders
+							41155,	-- The Dark Riders
+							42168,	-- Looking into the Darkness
+						},
+						["classes"] = { WARLOCK },
+						["coord"] = { 54.0, 47.0, 627 },
+						["provider"] = { "n", 106610 },	-- Calydus
+					}),
 					q(40218, {	-- Debt Repaid
 						["sourceQuests"] = { 39142 },	-- Testing a Theory
 						["classes"] = { WARLOCK },
@@ -597,15 +607,11 @@ _.ExpansionFeatures =
 				--	TODO: not organized/sourced yet.
 					q(43414),	-- A Hero's Weapon
 					q(44228),	-- Champion Armaments
-					q(42125),	-- Dark Whispers
-					q(40218),	-- Debt Repaid
 					q(41785),	-- Finding Fizzlebang
 					q(41793),	-- Lulubelle on Loan
-					q(40821),	-- Power Overwhelming
 					q(43895),	-- Sealing Fate: Gold
 					q(41795),	-- Summoning the Sisters
 					q(41155),	-- The Dark Riders
-					q(40729),	-- The New Blood
 					q(41156),	-- The Power Possessed
 					q(44227),	-- Unleashing our Wrath
 					q(44682),	-- Unparalleled Power

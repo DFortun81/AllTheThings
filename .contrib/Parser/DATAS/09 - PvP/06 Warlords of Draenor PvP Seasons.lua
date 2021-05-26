@@ -231,7 +231,7 @@ _.PVP =
 							i(138613, {	-- Ensemble: Primal Combatant's Dreadplate Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 6 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, -9914, -660, 6 },
 									{"select", "itemID", 115115 },	-- Primal Combatant's Armplates of Cruelty (A)
 									{"select", "itemID", 115111 },	-- Primal Combatant's Girdle of Cruelty (A)
 									{"select", "itemID", 115113 },	-- Primal Combatant's Warboots of Cruelty (A)
@@ -257,7 +257,7 @@ _.PVP =
 							i(138617, {	-- Ensemble: Primal Combatant's Dragonhide Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 11 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, -9914, -660, 11 },
 									{"select", "itemID", 115088 },	-- Primal Combatant's Bindings of Cruelty (A)
 									{"select", "itemID", 115085 },	-- Primal Combatant's Belt of Cruelty (A)
 									{"select", "itemID", 115086 },	-- Primal Combatant's Boots of Cruelty (A)
@@ -283,7 +283,7 @@ _.PVP =
 							i(138579, {	-- Ensemble: Primal Combatant's Chain Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 3 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, -9914, -660, 3 },
 									{"select", "itemID", 115100 },	-- Primal Combatant's Armbands of Cruelty (A)
 									{"select", "itemID", 115095 },	-- Primal Combatant's Waistguard of Cruelty (A)
 									{"select", "itemID", 115097 },	-- Primal Combatant's Footguards of Cruelty (A)
@@ -309,7 +309,7 @@ _.PVP =
 							i(138581, {	-- Ensemble: Primal Combatant's Silk Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 8 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, -9914, -660, 8 },
 									{"select", "itemID", 115048 },	-- Primal Combatant's Cuffs of Cruelty (A)
 									{"select", "itemID", 115043 },	-- Primal Combatant's Cord of Cruelty (A)
 									{"select", "itemID", 115045 },	-- Primal Combatant's Treads of Cruelty (A)
@@ -335,7 +335,7 @@ _.PVP =
 							i(138619, {	-- Ensemble: Primal Combatant's Ironskin Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 10 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, -9914, -660, 10 },
 									{"select", "itemID", 115088 },	-- Primal Combatant's Bindings of Cruelty (A)
 									{"select", "itemID", 115085 },	-- Primal Combatant's Belt of Cruelty (A)
 									{"select", "itemID", 115086 },	-- Primal Combatant's Boots of Cruelty (A)
@@ -361,7 +361,7 @@ _.PVP =
 							i(138615, {	-- Ensemble: Primal Combatant's Scaled Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 2 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, -9914, -660, 2 },
 									{"select", "itemID", 115115 },	-- Primal Combatant's Armplates of Cruelty (A)
 									{"select", "itemID", 115111 },	-- Primal Combatant's Girdle of Cruelty (A)
 									{"select", "itemID", 115113 },	-- Primal Combatant's Warboots of Cruelty (A)
@@ -387,7 +387,7 @@ _.PVP =
 							i(138583, {	-- Ensemble: Primal Combatant's Satin Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 8 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, -9914, -660, 8 },
 									{"select", "itemID", 115048 },	-- Primal Combatant's Cuffs of Cruelty (A)
 									{"select", "itemID", 115043 },	-- Primal Combatant's Cord of Cruelty (A)
 									{"select", "itemID", 115045 },	-- Primal Combatant's Treads of Cruelty (A)
@@ -413,7 +413,7 @@ _.PVP =
 							i(138621, {	-- Ensemble: Primal Combatant's Leather Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 4 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, -9914, -660, 4 },
 									{"select", "itemID", 115088 },	-- Primal Combatant's Bindings of Cruelty (A)
 									{"select", "itemID", 115085 },	-- Primal Combatant's Belt of Cruelty (A)
 									{"select", "itemID", 115086 },	-- Primal Combatant's Boots of Cruelty (A)
@@ -439,7 +439,7 @@ _.PVP =
 							i(138577, {	-- Ensemble: Primal Combatant's Ringmail Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 3 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, -9914, -660, 3 },
 									{"select", "itemID", 115100 },	-- Primal Combatant's Armbands of Cruelty (A)
 									{"select", "itemID", 115095 },	-- Primal Combatant's Waistguard of Cruelty (A)
 									{"select", "itemID", 115097 },	-- Primal Combatant's Footguards of Cruelty (A)
@@ -465,7 +465,7 @@ _.PVP =
 							i(138585, {	-- Ensemble: Primal Combatant's Felweave Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 8 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, -9914, -660, 8 },
 									{"select", "itemID", 115048 },	-- Primal Combatant's Cuffs of Cruelty (A)
 									{"select", "itemID", 115043 },	-- Primal Combatant's Cord of Cruelty (A)
 									{"select", "itemID", 115045 },	-- Primal Combatant's Treads of Cruelty (A)
@@ -491,7 +491,7 @@ _.PVP =
 							i(138611, {	-- Ensemble: Primal Combatant's Plate Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_faction_ensemble", -9981, -679, -9913, -660, 1 },
+									{"sub", "pvp_set_faction_ensemble", -9981, -679, -9914, -660, 1 },
 									{"select", "itemID", 115115 },	-- Primal Combatant's Armplates of Cruelty (A)
 									{"select", "itemID", 115111 },	-- Primal Combatant's Girdle of Cruelty (A)
 									{"select", "itemID", 115113 },	-- Primal Combatant's Warboots of Cruelty (A)

@@ -536,10 +536,11 @@ _.PVP =
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
 							{"sub", "pvp_set_ensemble", -10003, -664, -661, 5 }, 
-							{"select", "itemID", 32974 },	-- General's Mooncloth Bel
+							{"select", "itemID", 32974 },	-- General's Mooncloth Belt
 							{"select", "itemID", 32975 },	-- General's Mooncloth Slippers
 							{"select", "itemID", 147613 },	-- General's Satin Cord
 							{"select", "itemID", 147614 },	-- General's Satin Slippers
+							{"select", "itemID", 147771 },  -- General's Satin Cuffs
 							{"select", "itemID", 32976 },	-- Marshal's Mooncloth Belt
 							{"select", "itemID", 32978 },	-- Marshal's Mooncloth Slippers
 							{"exclude", "itemID", 146615 },	-- Exclude itself to stop duplicating
@@ -679,6 +680,7 @@ _.PVP =
 							{"select", "itemID", 28402 },	-- General's Dreadweave Stalkers
 							{"select", "itemID", 147615 },	-- General's Felweave Belt
 							{"select", "itemID", 147616 },	-- General's Felweave Boots
+							{"select", "itemID", 147772 },  -- General's Felweave Cuffs
 							{"select", "itemID", 28980 },   -- Marshal's Dreadweave Belt
 							{"select", "itemID", 28982 },	-- Marshal's Dreadweave Stalkers						
 							{"exclude", "itemID", 146611 },	-- Exclude itself to stop duplicating
@@ -1069,15 +1071,15 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(28357)), -- Gladiator's Totem of the Third Wind
 					un(REMOVED_FROM_GAME, i(28319)), -- Gladiator's War Edge (Throw Wep) Ask Gold
 				}),
-				n(-384,	{	-- Neck
+				f(51,	{	-- Neck
 					un(REMOVED_FROM_GAME, i(28245)), -- Pendant of Dominance
 					un(REMOVED_FROM_GAME, i(28244)), -- Pendant of Triumph
 				}),
-				n(-385,	{	-- Finger
+				f(52,	{	-- Finger
 					un(REMOVED_FROM_GAME, i(28247)), -- Band of Dominance
 					un(REMOVED_FROM_GAME, i(28246)), -- Band of Triumph
 				}),
-				n(-386,	{	-- Trinket
+				f(53,	{	-- Trinket
 					un(REMOVED_FROM_GAME, i(28235)), -- Medallion of the Alliance (A) (Druid)
 					un(REMOVED_FROM_GAME, i(28237)), -- Medallion of the Alliance (A) (Hunter)
 					un(REMOVED_FROM_GAME, i(28238)), -- Medallion of the Alliance (A) (Mage)
@@ -1769,14 +1771,14 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(33078)), -- Merciless Gladiator's Totem of the Third Wind
 					un(REMOVED_FROM_GAME, i(32054)), -- Merciless Gladiator's War Edge (Throw Wep) 
 				}),
-				n(-384,	{	-- Neck
+				f(51,	{	-- Neck
 					un(REMOVED_FROM_GAME, i(33067)), -- Veteran's Pendant of Conquest
 					un(REMOVED_FROM_GAME, i(33065)), -- Veteran's Pendant of Dominance
 					un(REMOVED_FROM_GAME, i(33068)), -- Veteran's Pendant of Salvation
 					un(REMOVED_FROM_GAME, i(33067)), -- Veteran's Pendant of Conquest
 					un(REMOVED_FROM_GAME, i(33066)), -- Veteran's Pendant of Triumph
 				}),
-				n(-385,	{	-- Finger
+				f(52,	{	-- Finger
 					un(REMOVED_FROM_GAME, i(33056)), -- Veteran's Band of Dominance
 					un(REMOVED_FROM_GAME, i(33064)), -- Veteran's Band of Salvation
 					un(REMOVED_FROM_GAME, i(33057)), -- Veteran's Band of Triumph
@@ -2443,7 +2445,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(33843)), -- Vengeful Gladiator's Totem of the Third Wind
 					un(REMOVED_FROM_GAME, i(33765)), -- Vengeful Gladiator's War Edge (Throw Wep)
 				}),
-				n(-384,	{	-- Neck
+				f(51,	{	-- Neck
 					un(REMOVED_FROM_GAME, i(33920)), -- Vindicator's Pendant of Conquest
 					un(REMOVED_FROM_GAME, i(33921)), -- Vindicator's Pendant of Dominance
 					un(REMOVED_FROM_GAME, i(35317)), -- Vindicator's Pendant of Reprieve
@@ -2451,13 +2453,13 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(35319)), -- Vindicator's Pendant of Subjugation
 					un(REMOVED_FROM_GAME, i(33923)), -- Vindicator's Pendant of Triumph
 				}),
-				n(-385,	{	-- Finger
+				f(52,	{	-- Finger
 					un(REMOVED_FROM_GAME, i(33853)), -- Vindicator's Band of Dominance
 					un(REMOVED_FROM_GAME, i(33918)), -- Vindicator's Band of Salvation
 					un(REMOVED_FROM_GAME, i(35320)), -- Vindicator's Band of Subjugation
 					un(REMOVED_FROM_GAME, i(33919)), -- Vindicator's Band of Triumph
 				}),
-				n(-386,	{	-- Trinket
+				f(53,	{	-- Trinket
 					un(REMOVED_FROM_GAME, i(34579)), -- Battlemaster's Audacity
 					un(REMOVED_FROM_GAME, i(34576)), -- Battlemaster's Cruelty
 					un(REMOVED_FROM_GAME, i(34577)), -- Battlemaster's Depravity
@@ -3169,7 +3171,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(35106)), -- Brutal Gladiator's Totem of the Third Wind
 					un(REMOVED_FROM_GAME, i(35108)), -- Brutal Gladiator's War Edge (Throw Wep)
 				}),
-				n(-384,	{	-- Neck
+				f(51,	{	-- Neck
 					un(REMOVED_FROM_GAME, i(35132)), -- Guardian's Pendant of Conquest
 					un(REMOVED_FROM_GAME, i(35133)), -- Guardian's Pendant of Dominance
 					un(REMOVED_FROM_GAME, i(37929)), -- Guardian's Pendant of Reprieve
@@ -3177,24 +3179,24 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(37928)), -- Guardian's Pendant of Subjugation
 					un(REMOVED_FROM_GAME, i(35135)), -- Guardian's Pendant of Triumph
 				}),
-				n(-385,	{	-- Finger
+				f(52,	{	-- Finger
 					un(REMOVED_FROM_GAME, i(35129)), -- Guardian's Band of Dominance
 					un(REMOVED_FROM_GAME, i(35130)), -- Guardian's Band of Salvation
 					un(REMOVED_FROM_GAME, i(37927)), -- Guardian's Band of Subjugation
 					un(REMOVED_FROM_GAME, i(35131)), -- Guardian's Band of Triumph
 				}),
-				n(-386,	{	-- Trinket
+				f(53,	{	-- Trinket
 					un(REMOVED_FROM_GAME, i(37864)), -- (A) Medallion of the Alliance
 					un(REMOVED_FROM_GAME, i(37865)), -- (H) Medallion of the Horde
 					un(REMOVED_FROM_GAME, i(35327)), -- Battlemaster's Alacrity
-					un(REMOVED_FROM_GAME, i(41587)), -- battlemaster's celerity
-					un(REMOVED_FROM_GAME, i(41588)), -- battlemaster's aggression
-					un(REMOVED_FROM_GAME, i(41589)),	-- battlemaster's resolve
-					un(REMOVED_FROM_GAME, i(41590)),	-- battlemaster's courage
-					un(REMOVED_FROM_GAME, i(37865)),	-- medallion of the horde (epic)
-					un(REMOVED_FROM_GAME, i(38588)),	-- Medallion of the horde (dk)
-					un(REMOVED_FROM_GAME, i(37864)),	-- medallion of the alliance (epic)
-					un(REMOVED_FROM_GAME, i(38589)),	-- Medallion of the alliance (dk)
+					un(REMOVED_FROM_GAME, i(41587)), -- Battlemaster's Celerity
+					un(REMOVED_FROM_GAME, i(41588)), -- Battlemaster's Aggression
+					un(REMOVED_FROM_GAME, i(41589)),	-- Battlemaster's Resolve
+					un(REMOVED_FROM_GAME, i(41590)),	-- Battlemaster's Courage
+					un(REMOVED_FROM_GAME, i(37865)),	-- Medallion of the Horde (epic)
+					un(REMOVED_FROM_GAME, i(38588)),	-- Medallion of the Horde (dk)
+					un(REMOVED_FROM_GAME, i(37864)),	-- Medallion of the Alliance (epic)
+					un(REMOVED_FROM_GAME, i(38589)),	-- Medallion of the Alliance (dk)
 					un(REMOVED_FROM_GAME, i(69861)), -- (A) Medallion of the Alliance (not during bc, but for bc)
 					un(REMOVED_FROM_GAME, i(69862)), -- (H) Medallion of the Alliance (not during bc, but for bc)
 				}),

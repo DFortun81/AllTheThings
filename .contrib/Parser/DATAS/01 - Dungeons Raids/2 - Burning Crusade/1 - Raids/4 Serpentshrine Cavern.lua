@@ -114,6 +114,12 @@ _.Instances = { tier(2,	applyclassicphase(TBC_PHASE_TWO, { -- Burning Crusade
 				i(30620),	-- Spyglass of the Hidden Fleet
 				i(30021),	-- Wildfury Greatstaff
 				i(30183),	-- Nether Vortex
+				i(32897),	-- Mark of the Illidari
+				-- #if BEFORE MOP
+				i(30023, {	-- Totem of the Maelstrom
+					["timeline"] = { "removed 5.0.4.10000" },
+				}),
+				-- #endif
 			}),
 			e(1567, {	-- Hydross the Unstable
 				["creatureID"] = 21216,

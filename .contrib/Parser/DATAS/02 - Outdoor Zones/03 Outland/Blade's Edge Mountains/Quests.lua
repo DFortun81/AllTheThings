@@ -544,12 +544,6 @@ _.Zones =
 					["coord"] = { 62.6, 40.2, BLADES_EDGE_MOUNTAINS },
 					["sourceQuest"] = 10810,	-- Damaged Mask
 				}),
-				q(10981, {	-- Nexus-Prince Shaffar's Personal Chamber
-					["provider"] = { "n", 22919 },	-- Image of Commander Ameer
-					["coord"] = { 52.8, 15.0, BLADES_EDGE_MOUNTAINS },
-					["sourceQuest"] = 10977,	-- Stasis Chambers of the Mana-Tombs
-					["repeatable"] = true,
-				}),
 				q(11009, {	-- Ogre Heaven
 					["provider"] = { "n", 22941 },	-- Mog'dorg the Wizened
 					["coord"] = { 55.5, 44.8, BLADES_EDGE_MOUNTAINS },
@@ -786,14 +780,6 @@ _.Zones =
 						i(31713),	-- Ritualist's Helm
 					},
 				}),
-				q(10977, {	-- Stasis Chambers of the Mana-Tombs
-					["provider"] = { "n", 22919 },	-- Image of Commander Ameer
-					["coord"] = { 52.8, 15.0, BLADES_EDGE_MOUNTAINS },
-					["sourceQuest"] = 10976,	-- The Mark of the Nexus-King
-					["groups"] = {
-						i(32064),	-- Protectorate Treasure Cache
-					},
-				}),
 				q(10511, {	-- Strange Brew
 					["provider"] = { "n", 21151 },	-- Borgrim Stouthammer
 					["coord"] = { 37.4, 64.6, BLADES_EDGE_MOUNTAINS },
@@ -897,15 +883,6 @@ _.Zones =
 						9795,	-- The Ogre Threat
 					},
 					["races"] = HORDE_ONLY,
-				}),
-				q(10982, {	-- The Eye of Haramad
-					["provider"] = { "n", 22919 },	-- Image of Commander Ameer
-					["coord"] = { 52.8, 15.0, BLADES_EDGE_MOUNTAINS },
-					["sourceQuest"] = 10981,	-- Nexus-Prince Shaffar's Personal Chamber
-					["minReputation"] = { 933, EXALTED },	-- The Consortium
-					["groups"] = {
-						i(32092),	-- The Eye of Haramad
-					},
 				}),
 				q(10912, {	-- The Hound-Master
 					["provider"] = { "n", 22423 },	-- Evergrove Druid

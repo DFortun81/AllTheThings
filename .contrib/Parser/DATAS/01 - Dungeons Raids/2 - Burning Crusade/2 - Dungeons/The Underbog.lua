@@ -234,7 +234,8 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 				}),
 			}),
 			d(2, {	-- Heroic
-				-- #if BEFORE WRATH
+				-- #if BEFORE 4.2.0
+				["description"] = "You need to have a key to the instance in order to access this mode.",
 				["cost"] = {
 					{ "i", 30623, 1 },	-- Reservoir Key
 				},
@@ -242,7 +243,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 				-- #if NOT ANYCLASSIC
 				["ignoreBonus"] = true,
 				-- #endif
-				["lvl"] = lvlsquish(70, 10, 70),
+				["lvl"] = lvlsquish(70, 30, 70),
 				["groups"] = {
 					n(COMMON_BOSS_DROPS, {
 						["crs"] = {

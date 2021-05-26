@@ -39,10 +39,6 @@ _.Zones =
 					["provider"] = { "n", 18417 },	-- Altruis the Sufferer
 					["sourceQuest"] = 10649,	-- The Book of Fel Names
 				}),
-				q(10649, {	-- The Book of Fel Names
-					["provider"] = { "n", 18417 },	-- Altruis
-					["sourceQuest"] = 10646,	-- Illidan's Pupil
-				}),
 				q(10669, {	-- Against All Odds
 					["provider"] = { "n", 18417 },	-- Altruis the Sufferer
 					["coord"] = { 27.3, 43.0, NAGRAND },
@@ -80,11 +76,6 @@ _.Zones =
 					["provider"] = { "n", 18417 },	-- Altruis
 					["coord"] = { 27.3, 43.0, NAGRAND },
 					["sourceQuest"] = 10649,	-- The Book of Fel Names
-				}),
-				q(10649, {	-- The Book of Fel Names
-					["provider"] = { "n", 18417 },	-- Altruis
-					["coord"] = { 27.3, 43.0, NAGRAND },
-					["sourceQuest"] = 10646,	-- Illidan's Pupil
 				}),
 				q(11042, {	-- A Mystifying Vision
 					["provider"] = { "n", 23268 },	-- Seer Jovar
@@ -148,12 +139,6 @@ _.Zones =
 					["provider"] = { "n", 18261 },	-- Lantresor of the Blade
 					["coord"] = { 73.8, 62.6, NAGRAND },
 					["sourceQuest"] = 10107,	-- Diplomatic Measures (Horde Version)´
-				}),
-				q(10167, {	-- Auchindoun...
-					["provider"] = { "n", 18481 },	-- A'dal
-					["coord"] = { 53.9, 44.8, SHATTRATH_CITY },
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 10102,	-- A Secret Revealed
 				}),
 				q(9891,  {	-- Because Kilrath is a Coward
 					["provider"] = { "n", 18273 },	-- Kilrath
@@ -815,7 +800,7 @@ _.Zones =
 					["provider"] = { "n", 18141 },	-- Greatmother Geyah
 					["coord"] = { 56.6, 34.2, NAGRAND },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 10168,	-- Return to the Greatmother
+					["sourceQuest"] = 10170,	-- Return to the Greatmother
 				}),
 				q(10001, {	-- The Master Planner
 					["provider"] = { "n", 18417 },	-- Altruis the Sufferer
@@ -1084,15 +1069,6 @@ _.Zones =
 					["coord"] = { 32.2, 36.2, NAGRAND },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 9944,	-- Missing Mag'hari Procession
-				}),
-				q(10168, {	-- What the Soul Sees
-					["provider"] = { "n", 19412 },	-- D'ore
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 10167,	-- Auchindoun...
-					["coords"] = {
-						{ 34.3, 65.6, TEROKKAR_FOREST },
-						{ 73.8, 57.0, 257 },
-					},
 				}),
 				q(10101, {	-- When Spirits Speak
 					["provider"] = { "n", 18687 },	-- Mother Kashur

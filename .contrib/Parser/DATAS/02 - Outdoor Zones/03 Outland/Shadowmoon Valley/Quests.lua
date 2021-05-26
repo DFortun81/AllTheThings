@@ -83,11 +83,6 @@ _.Zones =
 					["coord"] = { 57.3, 49.5, SHADOWMOON_VALLEY },
 					["sourceQuests"] = { 10622 },	-- Proof of Allegiance
 				}),
-				q(10705, {	-- Seer Udalo
-					["provider"] = { "n", 21700 },	-- Akama
-					["coord"] = { 58.1, 48.1, SHADOWMOON_VALLEY },
-					["sourceQuests"] = { 10628 },	-- Akama
-				}),
 				q(10707, {	-- The Ata'mal Terrace
 					["provider"] = { "n", 21770 },	-- Akama
 					["coord"] = { 58.1, 48.1, SHADOWMOON_VALLEY },
@@ -510,10 +505,6 @@ _.Zones =
 					["provider"] = { "n", 21826 },	-- Sanoru
 					["sourceQuests"] = { 10622 },	-- Proof of Allegiance
 				}),
-				q(10705, {	-- Seer Udalo
-					["provider"] = { "n", 21700 },	-- Akama
-					["sourceQuests"] = { 10628 },	-- Akama
-				}),
 				q(10707, {	-- The Ata'mal Terrace
 					["provider"] = { "n", 21770 },	-- Akama
 					["sourceQuests"] = { 10706 },	-- A Mysterious Portent
@@ -748,16 +739,6 @@ _.Zones =
 						10662,	-- The Hermit Smith (A)
 						10663,	-- The Hermit Smith (H)
 					},
-				}),
-				q(10665, {	-- Fresh from the Mechanar
-					["provider"] = { "n", 21465 },	-- David Wayne
-					["coord"] = { 77.4, 38.6, TEROKKAR_FOREST },
-					["sourceQuest"] = 10664,	-- Additional Materials
-				}),
-				q(10666, {	-- The Lexicon Demonica
-					["provider"] = { "n", 21465 },	-- David Wayne
-					["coord"] = { 77.4, 38.6, TEROKKAR_FOREST },
-					["sourceQuest"] = 10664,	-- Additional Materials
 				}),
 				q(10667, {	-- Underworld Loam
 					["provider"] = { "n", 21465 },	-- David Wayne

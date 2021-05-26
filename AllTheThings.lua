@@ -1081,6 +1081,8 @@ local function BuildGroups(parent, g, noRecur)
 		for key, group in ipairs(g) do
 			-- Set the group's parent
 			group.parent = parent;
+			group.indent = nil;
+			group.back = nil;
 			-- Build the sub-groups by default
 			if not noRecur then
 				BuildGroups(group, group.g);
@@ -2816,23 +2818,30 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						tinsert(info, 1, { left = description, wrap = true, color = "ff66ccff" });
 					end
 				end
-				local subgroup = {};
+				-- local subgroup = {};
 				insertionSort(group, function(a, b)
 					return not (a.headerID and a.headerID == -1) and b.headerID and b.headerID == -1;
 				end);
-				for i,j in ipairs(group) do
-					-- always include the root quest/item when it's contained
-					if j.questID or j.itemID then
-						tinsert(subgroup, j);
-					elseif j.g and not (j.achievementID and j.parent.difficultyID) and j.headerID ~= 0 then
-						for k,l in ipairs(j.g) do
-							tinsert(subgroup, l);
-						end
-					else
-						tinsert(subgroup, j);
-					end
-				end
-				group = subgroup;
+				-- don't think we want this logic anymmore either... it basically changes our search of actual NPC groups into a search for the items for that NPC
+				-- and messes up logic later down the line
+				-- for i,j in ipairs(group) do
+				-- 	print("regroup",j.key,j.key and j[j.key])
+				-- 	-- always include the root quest/item when it's contained
+				-- 	if j.questID or j.itemID then
+				-- 		print("quest or item")
+				-- 		tinsert(subgroup, j);
+				-- 	elseif j.g and not (j.achievementID and j.parent.difficultyID) and j.headerID ~= 0 then
+				-- 		print("special with sub groups")
+				-- 		for k,l in ipairs(j.g) do
+				-- 			print("moving into search group", l.key,l.key and l[l.key])
+				-- 			tinsert(subgroup, l);
+				-- 		end
+				-- 	else
+				-- 		print("other")
+				-- 		tinsert(subgroup, j);
+				-- 	end
+				-- end
+				-- group = subgroup;
 			end
 		end
 	elseif paramA == "achievementID" then
@@ -10782,6 +10791,8 @@ UpdateGroups = function(parent, g, window)
 						visible = true;
 					end
 				elseif group.visible then
+					group.total = 0;
+					group.progress = 0;
 					UpdateGroups(group, group.g, window);
 					visible = true;
 				end
@@ -11617,17 +11628,16 @@ function app:CreateMiniListForGroup(group)
 	local popout = app.Windows[suffix];
 	local showing = not popout or not popout:IsVisible();
 	-- force data to be re-collected if this is a quest chain since its logic is affected by settings
-	if not group.s and (group.questID or group.sourceQuests) then popout = nil; end
+	if group.questID or group.sourceQuests then popout = nil; end
 	-- print("Popout for",suffix,"showing?",showing)
 	if not popout then
-		-- clone/search initially so as to not let popout operations modify the source data
 		-- make a search for this group if it is an item/currency and not already a container for things
 		if not group.g and (group.itemID or group.currencyID) then
-			local cmd = group.key .. ":" .. group[group.key];
+			local cmd = group.link or group.key .. ":" .. group[group.key];
 			group = GetCachedSearchResults(cmd, SearchForLink, cmd);
-		else
-			group = CloneData(group);
 		end
+		-- clone/search initially so as to not let popout operations modify the source data
+		group = CloneData(group);
 		-- This logic allows for nested searches of groups within a popout to be returned as the root search which resets the parent
 		-- if not group.isBaseSearchResult then
 		-- 	-- make a search for this group if it is an item/currency and not already a container for things
@@ -11651,16 +11661,25 @@ function app:CreateMiniListForGroup(group)
 		-- 		group.s = s;
 		-- 	end
 		-- end
-		if group.s then
-			popout.data = group;
-			popout.data.collectible = true;
-			popout.data.visible = true;
-			popout.data.progress = 0;
-			popout.data.total = 0;
-			popout.data.expanded = nil;
-			if not popout.data.g then
-				popout.data.g = {};
+		-- Merge any symbolic linked data into the sub-groups
+		if group.sym then
+			local resolved = ResolveSymbolicLink(group);
+			if resolved then
+				if not group.g then group.g = { resolved }
+				else MergeObjects(group.g, resolved); end
 			end
+		end
+		-- Create groups showing Appearance information
+		if group.s then
+			-- popout.data = group;
+			-- popout.data.collectible = true;
+			-- popout.data.visible = true;
+			-- popout.data.progress = 0;
+			-- popout.data.total = 0;
+			-- popout.data.expanded = nil;
+			-- if not popout.data.g then
+			-- 	popout.data.g = {};
+			-- end
 
 			-- Attempt to get information about the source ID.
 			local sourceInfo = C_TransmogCollection_GetSourceInfo(group.s);
@@ -11693,21 +11712,26 @@ function app:CreateMiniListForGroup(group)
 						end
 					end
 				end
+				local appearanceGroup;
 				if #g > 0 then
-					table.insert(popout.data.g, {
+					appearanceGroup = {
 						["text"] = L["SHARED_APPEARANCES_LABEL"],
 						["description"] = L["SHARED_APPEARANCES_LABEL_DESC"],
 						["icon"] = "Interface\\Icons\\Achievement_GarrisonFollower_ItemLevel650.blp",
-						["g"] = g
-					});
+						["g"] = g,
+						["OnUpdate"] = app.AlwaysShowUpdate,
+					};
 				else
-					table.insert(popout.data.g, {
+					appearanceGroup = {
 						["text"] = L["UNIQUE_APPEARANCE_LABEL"],
 						["description"] = L["UNIQUE_APPEARANCE_LABEL_DESC"],
 						["icon"] = "Interface\\Icons\\ACHIEVEMENT_GUILDPERK_EVERYONES A HERO.blp",
-						["collectible"] = true,
-					});
+						["OnUpdate"] = app.AlwaysShowUpdate,
+					};
 				end
+				-- add the group showing the Appearance information for this popout
+				if not group.g then group.g = { appearanceGroup }
+				else tinsert(group.g, appearanceGroup) end
 			end
 
 			-- Determine if this source is part of a set or two.
@@ -11742,10 +11766,10 @@ function app:CreateMiniListForGroup(group)
 					end
 				end
 			end
-			local data = sourceSets[group.s];
+			local data, g = sourceSets[group.s];
 			if data then
 				for setID,value in pairs(data) do
-					local g = {};
+					g = {};
 					setID = tonumber(setID);
 					for i,sourceID in ipairs(allSets[setID]) do
 						local attSearch = SearchForSourceIDQuickly(sourceID);
@@ -11766,30 +11790,36 @@ function app:CreateMiniListForGroup(group)
 							end
 						end
 					end
-					table.insert(popout.data.g, app.CreateGearSet(setID, { ["visible"] = true, ["g"] = g }));
+					-- add the group showing the related Set information for this popout
+					if not group.g then group.g = { app.CreateGearSet(setID, { ["OnUpdate"] = app.AlwaysShowUpdate, ["g"] = g }) }
+					else tinsert(group.g, app.CreateGearSet(setID, { ["OnUpdate"] = app.AlwaysShowUpdate, ["g"] = g })) end
 				end
 			end
-			local oldUpdate = popout.Update;
-			popout.Update = function(self, ...)
-				-- Turn off all filters momentarily.
-				local GroupFilter = app.GroupFilter;
-				local GroupVisibilityFilter = app.GroupVisibilityFilter;
-				local CollectedItemVisibilityFilter = app.CollectedItemVisibilityFilter;
-				app.GroupFilter = app.NoFilter;
-				app.GroupVisibilityFilter = app.NoFilter;
-				app.CollectedItemVisibilityFilter = app.NoFilter;
-				oldUpdate(self, ...);
-				app.GroupFilter = GroupFilter;
-				app.GroupVisibilityFilter = GroupVisibilityFilter;
-				app.CollectedItemVisibilityFilter = CollectedItemVisibilityFilter;
-			end;
-		elseif showing and ((group.key == "questID" and group.questID) or group.sourceQuests) then
+			-- local oldUpdate = popout.Update;
+			-- popout.Update = function(self, ...)
+			-- 	-- Turn off all filters momentarily.
+			-- 	local GroupFilter = app.GroupFilter;
+			-- 	local GroupVisibilityFilter = app.GroupVisibilityFilter;
+			-- 	local CollectedItemVisibilityFilter = app.CollectedItemVisibilityFilter;
+			-- 	app.GroupFilter = app.NoFilter;
+			-- 	app.GroupVisibilityFilter = app.NoFilter;
+			-- 	app.CollectedItemVisibilityFilter = app.NoFilter;
+			-- 	oldUpdate(self, ...);
+			-- 	app.GroupFilter = GroupFilter;
+			-- 	app.GroupVisibilityFilter = GroupVisibilityFilter;
+			-- 	app.CollectedItemVisibilityFilter = CollectedItemVisibilityFilter;
+			-- end;
+		end
+		if showing and ((group.key == "questID" and group.questID) or group.sourceQuests) then
 			-- This is a quest object. Let's show prereqs and breadcrumbs.
 			-- This causes a popout insertion into the Main list when a popout group has a parent (in Main list) with the same questID (#714)
 			-- if group.questID ~= nil and group.parent and group.parent.questID == group.questID then
 			-- 	group = group.parent;
 			-- end
-			local root = group;
+			-- Create a copy of the root group
+			local root = CreateObject(group);
+			-- clean out the sub-groups of the root since it will be listed elsewhere in the popout
+			root.g = nil;
 			root.collectible = not root.repeatable;
 			local g = { root };
 			popout.isQuestChain = true;
@@ -11817,7 +11847,7 @@ function app:CreateMiniListForGroup(group)
 			-- Show Quest Prereqs
 			local gTop;
 			if app.Settings:GetTooltipSetting("QuestChain:Nested") then
-				gTop = NestSourceQuests(root);
+				gTop = NestSourceQuests(root).g or {};
 			elseif root.sourceQuests then
 				local sourceQuests, sourceQuest, subSourceQuests, prereqs = root.sourceQuests;
 				while sourceQuests and #sourceQuests > 0 do
@@ -11953,45 +11983,28 @@ function app:CreateMiniListForGroup(group)
 					end
 				end
 			end
-			popout.data = {
-				["text"] = L["QUEST_CHAIN_REQ"],
+			local questChainHeader = {
+				["text"] = gTop and L["QUEST_CHAIN_NESTED_CHECKBOX"] or L["QUEST_CHAIN_REQ"],
 				["description"] = L["QUEST_CHAIN_REQ_DESC"],
 				["icon"] = "Interface\\Icons\\Spell_Holy_MagicalSentry.blp",
-				["g"] = gTop and { gTop } or g,
-				["hideText"] = true
+				["g"] = gTop or g,
+				["hideText"] = true,
+				["OnUpdate"] = app.AlwaysShowUpdate,
 			};
-		elseif group.sym then
-			popout.data = group;
-			popout.data.collectible = true;
-			popout.data.visible = true;
-			popout.data.progress = 0;
-			popout.data.total = 0;
-			if not popout.data.g then
-				local resolved = ResolveSymbolicLink(group);
-				if resolved then
-					for i=#resolved,1,-1 do
-						resolved[i] = CreateObject(resolved[i]); -- TODO: not necessary anymore
-					end
-					popout.data.g = resolved;
-				end
-			else
-				local resolved = ResolveSymbolicLink(group);
-				if resolved then
-					MergeObjects(popout.data.g, resolved);
-				end
-			end
-		else
-			-- This is a standalone item/group
-			popout.data = group;
+			if not group.g then group.g = { questChainHeader }
+			else tinsert(group.g, questChainHeader); end
 		end
 
-		-- Clone the data and then insert it into the Raw Data table.
+		-- Insert the data group into the Raw Data table.
+		popout.data = group;
 		popout.data.hideText = true;
 		popout.data.visible = true;
-		popout.data.indent = 0;
+		popout.data.indent = 0;	-- TODO: get some extra padding for potential indicators on the top row
 		popout.data.total = 0;
 		popout.data.progress = 0;
 		BuildGroups(popout.data, popout.data.g);
+		-- always expand all groups on initial creation
+		ExpandGroupsRecursively(popout.data, true, true);
 		-- Adjust some update/refresh logic if this is a Quest Chain window
 		if popout.isQuestChain then
 			local oldUpdate = popout.Update;
@@ -12008,10 +12021,8 @@ function app:CreateMiniListForGroup(group)
 				oldRefresh(self, ...);
 				app.AccountWideQuests = oldQuestTracking;
 			end;
+			-- TODO: register quest log update event to refresh/soft-update the window for indicators
 		end
-	end
-	if not popout.data.expanded then
-		ExpandGroupsRecursively(popout.data, true, true);
 	end
 	popout:Toggle(true);
 end
@@ -12348,9 +12359,10 @@ local function RowOnClick(self, button)
 			return true;
 		end
 
+		local window = self:GetParent():GetParent();
 		-- All non-Shift Right Clicks open a mini list or the settings.
 		if button == "RightButton" then
-			if IsAltKeyDown() and self.index > 0 then
+			if IsAltKeyDown() and (self.index > 0 or window.isQuestChain) then
 				AddTomTomWaypoint(reference, false);
 			elseif IsShiftKeyDown() then
 				if app.Settings:GetTooltipSetting("Sort:Progress") then
@@ -12515,7 +12527,6 @@ local function RowOnClick(self, button)
 				-- If this reference is anything else, expand the groups.
 				if reference.g then
 					-- mark the window if it is being fully-collapsed
-					local window = self:GetParent():GetParent();
 					if self.index < 1 then
 						window.fullCollapsed = HasExpandedSubgroup(reference);
 					end
@@ -12527,21 +12538,20 @@ local function RowOnClick(self, button)
 			end
 			if self.index > 0 then
 				reference.expanded = not reference.expanded;
-				self:GetParent():GetParent():Update();
+				window:Update();
 			elseif not reference.expanded then
 				reference.expanded = true;
-				self:GetParent():GetParent():Update();
+				window:Update();
 			else
 				-- Allow the First Frame to move the parent.
-				local owner = self:GetParent():GetParent();
 				-- Toggle lock/unlock by holding Alt when clicking the header of a Window
 				if IsAltKeyDown() then
-					local locked = not owner.isLocked;
-					owner.isLocked = locked;
+					local locked = not window.isLocked;
+					window.isLocked = locked;
 					-- only certain window locks may be persisted
-					if owner.lockPersistable and owner.Suffix then
+					if window.lockPersistable and window.Suffix then
 						local lockedWindows = GetDataMember("LockedWindows", {});
-						local lockedName = owner.Suffix;
+						local lockedName = window.Suffix;
 						if locked then
 							-- windows would be locked for all characters, but position can be changed per character
 							lockedWindows[lockedName] = 1;
@@ -12558,9 +12568,9 @@ local function RowOnClick(self, button)
 				else
 					self:SetScript("OnMouseUp", function(self)
 						self:SetScript("OnMouseUp", nil);
-						StopMovingOrSizing(owner);
+						StopMovingOrSizing(window);
 					end);
-					StartMovingOrSizing(owner, true);
+					StartMovingOrSizing(window, true);
 				end
 			end
 		end
@@ -13234,6 +13244,8 @@ RowOnEnter = function (self)
 		-- GameTooltip:AddDoubleLine("Completed AltQuest ID",tostring(reference.altcompleted));
 		-- GameTooltip:AddDoubleLine("Breadcrumb Locking QuestID",tostring(reference.breadcrumbLockedBy));
 		-- GameTooltip:AddDoubleLine("Completed All SourceQuests",tostring(reference.sourceQuestsCompleted));
+		-- GameTooltip:AddDoubleLine("Parent Text",tostring(reference.parent and reference.parent.text));
+		-- GameTooltip:AddDoubleLine("Row Indent",tostring(CalculateRowIndent(reference)));
 
 		-- print("OnRowEnter-Show");
 		GameTooltip.MiscFieldsComplete = true;

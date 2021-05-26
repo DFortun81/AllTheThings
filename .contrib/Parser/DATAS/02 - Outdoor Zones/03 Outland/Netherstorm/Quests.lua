@@ -170,6 +170,9 @@ _.Zones =
 					["provider"] = { "n", 20448 },	-- Commander Ameer
 					["coord"] = { 59.5, 32.4, NETHERSTORM },
 					["sourceQuest"] = 10973,	-- A Thousand Worlds
+					["groups"] = {
+						i(32064),	-- Protectorate Treasure Cache
+					},
 				}),
 				q(10380, {	-- A Dark Pact
 					["provider"] = { "n", 20780 },	-- Kaylaan
@@ -409,11 +412,6 @@ _.Zones =
 						{ 59.4, 32.0, NETHERSTORM },
 						{ 60.1, 32.5, NETHERSTORM },
 					},
-				}),
-				q(10257, {	-- Capturing the Keystone
-					["provider"] = { "n", 19481 },	-- Archmage Vargoth
-					["coord"] = { 58.3, 86.4, NETHERSTORM },
-					["sourceQuest"] = 10256,	-- Finding the Keymaster
 				}),
 				q(10319, {	-- Capturing the Phylactery
 					["provider"] = { "n", 19488 },	-- Custodian Dieworth

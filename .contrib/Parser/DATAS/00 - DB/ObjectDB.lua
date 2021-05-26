@@ -2181,11 +2181,15 @@ _.ObjectIcons = {
 	[182549] = "Interface/Icons/INV_Inscription_ScrollOfWisdom_01",	-- Fel Orc Plans
 	[182587] = "Interface/Icons/INV_Inscription_ScrollOfWisdom_01",	-- Wanted Poster
 	[182588] = "Interface/Icons/INV_Inscription_ScrollOfWisdom_01",	-- Wanted Poster
-	[182947] = "Interface//Icons//ability_warlock_ancientgrimoire",	-- The Codex of Blood
+	-- #if AFTER CATA
+	[182947] = "Interface/Icons/ability_warlock_ancientgrimoire",	-- The Codex of Blood
+	-- #else
+	[182947] = "Interface/Icons/inv_misc_book_06",	-- The Codex of Blood
+	-- #endif
 	[182952] = "Interface/Icons/INV_Crate_01",	-- Steam Pump Flotsam
 	[183770] = "Interface/Icons/Spell_Mage_FocusingCrystal",	-- B'naar Control Console
 	[183811] = "Interface/Icons/INV_Inscription_ScrollOfWisdom_01",	-- Wanted Poster
-	[184465] = "Interface/Icons/INV_6_2Raid_Trinket_3b",	-- Cache of the Legion
+	[184465] = "Interface/Icons/INV_Gizmo_KhoriumPowerCore",	-- Cache of the Legion
 	[184660] = "Interface/Icons/INV_Inscription_ScrollOfWisdom_01",	-- Wanted Poster
 	[184825] = "Interface/Icons/INV_Misc_Book_05",	-- Lashh'an Tome
 	[184945] = "Interface/Icons/INV_Inscription_ScrollOfWisdom_01",	-- Wanted Poster

@@ -93,15 +93,6 @@ _.Zones =
 					["coord"] = { 47.4, 35.3, ISLE_OF_QUELDANAS },
 					["isDaily"] = true,
 				}),
-				q(11488, {	-- Magisters' Terrace
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 24813 },	-- Exarch Larethor
-					["sourceQuest"] = 11481,	-- Crisis at the Sunwell
-				}),
-				q(29682, {	-- Magisters' Terrace
-					["provider"] = { "n", 24967 },	-- Captain Theris Dawnhearth
-					["coord"] = { 47.4, 30.4, ISLE_OF_QUELDANAS },
-				}),
 				q(11535, {	-- Making Ready
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 25046 },	-- Smith Hauthaa

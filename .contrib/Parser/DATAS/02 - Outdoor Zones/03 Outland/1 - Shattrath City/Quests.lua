@@ -385,15 +385,6 @@ _.Zones =
 					["coord"] = { 54.7, 44.3, SHATTRATH_CITY },
 					["sourceQuests"] = { 10210 },	-- A'dal
 				}),
-				q(10167, {	-- Auchindoun...
-					["provider"] = { "n", 18481 },	-- A'dal
-					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 10102 },	-- A Secret Revealed (*UNTESTED*)
-				}),
-				q(10180, {	-- Can't Stay Away
-					["provider"] = { "n", 19045 },	-- Oloraak
-					["isBreadcrumb"] = true,
-				}),
 				q(11046, {	-- Chief Apothecary Hildagard
 					["provider"] = { "n", 19678 },	-- Fantei
 					["races"] = HORDE_ONLY,
@@ -458,27 +449,6 @@ _.Zones =
 					["provider"] = { "n", 18481 },	-- A'dal
 					["coord"] = { 54.3, 44.3, SHATTRATH_CITY },
 					["sourceQuests"] = { 10948 },	-- The Hostage Soul
-				}),
-				q(10882, {	-- Harbinger of Doom
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 18481 },	-- A'dal
-					["g"] = {
-						i(31747),	-- Potent Sha'tari Pendant
-						i(31749),	-- A'dal's Recovery Necklace
-						i(31748),	-- Shattrath Choker of Power
-					},
-				}),
-				q(10704, {	-- How to Break Into the Arcatraz
-					["provider"] = { "n", 18481 },	-- A'dal
-					["coord"] = { 53.7, 44.6, SHATTRATH_CITY },
-					["sourceQuest"] = 10280,	-- Special Delivery to Shattrath City
-					["g"] = {
-						i(31465),	-- Sha'tari Achorite's Cloak
-						i(31461),	-- A'dal's Gift
-						i(31464),	-- Naaru Belt of Precision
-						i(31462),	-- Shattrath's Champion Belt
-						i(31460),	-- Sha'tari Vindicator's Waistguard
-					},
 				}),
 				q(12771, {	-- Ironforge (Dwarf)
 					["u"] = REMOVED_FROM_GAME,
@@ -574,15 +544,6 @@ _.Zones =
 					["provider"] = { "n", 18481 },	-- A'dal
 					["sourceQuests"] = { 10883 },	-- The Tempest Key
 				}),
-				q(10177, {	-- Trouble at Auchindoun
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 18893 },	-- Spymistress Mehlisah Highcrown
-				}),
-				q(29642, {	-- Trouble at Auchindoun
-					["provider"] = { "n", 18893 },	-- Spymistress Mehlisah Highcrown
-					["isBreadcrumb"] = true,
-					-- ["sourceQuests"] = {  },	-- UNKNOWN IF HAS SOURCE
-				}),
 				q(11369, {	-- Wanted: A Black Stalker Egg
 					["provider"] = { "n", 24369 },	-- Wind Trader Zhareem
 					["coord"] = { 75, 37, SHATTRATH_CITY },
@@ -634,6 +595,10 @@ _.Zones =
 				}),
 				q(11500, {	-- Wanted: Sisters of Torment
 					["provider"] = { "n", 24370 },	-- Nether-Stalker Mah'duun
+					["maps"] = { MAGISTERS_TERRACE },
+					-- #if ANYCLASSIC
+					["u"] = TBC_PHASE_FIVE,
+					-- #endif
 					["isDaily"] = true,
 					["g"] = {
 						i(29460),	-- Ethereum Prison Key

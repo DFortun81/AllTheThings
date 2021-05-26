@@ -536,10 +536,6 @@ _.Zones =
 				}),
 
 			-- TODO: unconfirmed or old af data that needs to be re-confirmed anyway
-				q(42074, {	-- Return of the Light
-					["provider"] = { "n", 106011 },	-- Jace Darkweaver
-					["classes"] = { PRIEST },
-				}),
 				--[[
 				q(45343),	-- A Curious Contagion
 				q(42708),	-- A Personal Request
