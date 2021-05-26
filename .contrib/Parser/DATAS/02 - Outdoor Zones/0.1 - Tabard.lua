@@ -50,142 +50,107 @@ _.Zones =
 			5189,	-- Thrumn [Thunder Bluff]
 		},
 		["g"] = {
-			{	-- Aldor Tabard
-				["itemID"] = 31779,	-- Aldor Tabard
-			},
-			{	-- Cenarion Expedition Tabard
-				["itemID"] = 31804,	-- Cenarion Expedition Tabard
-			},
-			{	-- Competitor's Tabard
-				["itemID"] = 36941,	-- Competitor's Tabard
+			i(31779),	-- Aldor Tabard
+			i(31804),	-- Cenarion Expedition Tabard
+			i(36941, {	-- Competitor's Tabard
 				["u"] = REMOVED_FROM_GAME,
 				["description"]	= "Participated in a battleground during the Beijing 2008 Summer Olympics event.",
-			},
-			{	-- Consortium Tabard
-				["itemID"] = 31776,	-- Consortium Tabard
-			},
-			{	-- Frostwolf Battle Tabard
-				["itemID"] = 19031,	-- Frostwolf Battle Tabard
+			}),
+			i(31776),	-- Consortium Tabard
+			i(19031, {	-- Frostwolf Battle Tabard
+				["races"] = HORDE_ONLY,
 				["cost"] = { { "i", 137642, 10 } },	-- 10x Mark of Honor
-			},
-			{	-- Green Trophy Tabard of the Illidari
-				["itemID"] = 31404,	-- Green Trophy Tabard of the Illidari
+			}),
+			i(31404, {	-- Green Trophy Tabard of the Illidari
 				["sourceQuests"] = {
 					10781,	-- Battle of the Crimson Watch
 				},
-			},
-			{	-- Guild Tabard
-				["itemID"] = 5976,	-- Guild Tabard
-			},
-			{	-- Honor Hold Tabard
-				["itemID"] = 23999,	-- Honor Hold Tabard
-			},
-			{	-- Keepers of Time Tabard
-				["itemID"] = 31777,	-- Keepers of Time Tabard
-			},
-			{	-- Knight's Colors
-				["itemID"] = 15198,	-- Knight's Colors
+			}),
+			i(5976),	-- Guild Tabard
+			i(23999, {	-- Honor Hold Tabard
+				["races"] = ALLIANCE_ONLY,
+			}),
+			i(31777),	-- Keepers of Time Tabard
+			i(15198, {	-- Knight's Colors
+				["races"] = ALLIANCE_ONLY,
 				["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-			},
-			{	-- Kurenai Tabard
-				["itemID"] = 31774,	-- Kurenai Tabard
-			},
-			{	-- Loremaster's Colors
-				["itemID"] = 43300,	-- Loremaster's Colors
-			},
-			{	-- Lower City Tabard
-				["itemID"] = 31778,	-- Lower City Tabard
-			},
-			{	-- Mag'har Tabard
-				["itemID"] = 31773,	-- Mag'har Tabard
-			},
-			{	-- Ogri'la Tabard
-				["itemID"] = 32828,	-- Ogri'la Tabard
+			}),
+			i(31774, {	-- Kurenai Tabard
+				["races"] = ALLIANCE_ONLY,
+			}),
+			i(43300),	-- Loremaster's Colors
+			i(31778),	-- Lower City Tabard
+			i(31773, {	-- Mag'har Tabard
+				["races"] = HORDE_ONLY,
+			}),
+			i(32828, {	-- Ogri'la Tabard
 				["cost"] = { { "i", 32569, 10 } },	-- 10x Apexis Shard
-			},
-			{	-- Private's Tabard
-				["itemID"] = 15196,	-- Private's Tabard
+			}),
+			i(15196, {	-- Private's Tabard
+				["races"] = ALLIANCE_ONLY,
 				["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-			},
-			{	-- Purple Trophy Tabard of the Illidari
-				["itemID"] = 31405,	-- Purple Trophy Tabard of the Illidari
+			}),
+			i(31405, {	-- Purple Trophy Tabard of the Illidari
 				["sourceQuests"] = {
 					10781,	-- Battle of the Crimson Watch
 				},
-			},
-			{	-- Scryers Tabard
-				["itemID"] = 31780,	-- Scryers Tabard
-			},
-			{	-- Scout's Tabard
-				["itemID"] = 15197,	-- Scout's Tabard
-			},
-			{	-- Sha'tar Tabard
-				["itemID"] = 31781,	-- Sha'tar Tabard
-			},
-			{	-- Silverwing Battle Tabard
-				["itemID"] = 19506,	-- Silverwing Battle Tabard
-				["cost"] = { { "i", 137642, 10 } },	-- 10x Mark of Honor
-			},
-			{	-- Skyguard Tabard
-				["itemID"] = 32445,	-- Skyguard Tabard
-			},
-			{	-- Sporeggar Tabard
-				["itemID"] = 31775,	-- Sporeggar Tabard
+			}),
+			i(31780),	-- Scryers Tabard
+			i(15197, {	-- Scout's Tabard
+				["races"] = HORDE_ONLY,
+				["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+			}),
+			i(31781),	-- Sha'tar Tabard
+			i(19506, {	-- Silverwing Battle Tabard
+				["races"] = ALLIANCE_ONLY,
+				["cost"] = { { "i", 137642, 10 } },	-- 10x Mark of Honor 
+			}),
+			i(32445),	-- Skyguard Tabard
+			i(31775, {	-- Sporeggar Tabard
 				["cost"] = { { "i", 24245, 10 }, },	-- 10x Glowcap
-			},
-			{	-- Stone Guard's Herald
-				["itemID"] = 15199,	-- Stone Guard's Herald
-			},
-			{	-- Stormpike Battle Tabard
-				["itemID"] = 19032,	-- Stormpike Battle Tabard
+			}),
+			i(15199, {	-- Stone Guard's Herald
+				["races"] = HORDE_ONLY,
+				["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+			}),
+			i(19032, {	-- Stormpike Battle Tabard
+				["races"] = ALLIANCE_ONLY,
 				["cost"] = { { "i", 137642, 10 } },	-- 10x Mark of Honor
-			},
-			{	-- Tabard of Brute Force
-				["itemID"] = 43349,	-- Tabard of Brute Force
-			},
-			{	-- Tabard of Conquest [Alliance]
-				["itemID"] = 49052,	-- Tabard of Conquest
-			},
-			{	-- Tabard of Conquest [Horde]
-				["itemID"] = 49054,	-- Tabard of Conquest
-			},
-			{	-- Tabard of Summer Flames
-				["itemID"] = 35280,	-- Tabard of Summer Flames
+			}),
+			i(43349),	-- Tabard of Brute Force
+			i(49052, {	-- Tabard of Conquest [Alliance]
+				["races"] = ALLIANCE_ONLY,
+			}),
+			i(49054, {	-- Tabard of Conquest [Horde]
+				["races"] = HORDE_ONLY,
+			}),
+			i(35280, {	-- Tabard of Summer Flames
 				["sourceQuests"] = {
 					11972,	-- Shards of Ahune
 				},
-			},
-			{	-- Tabard of Summer Skies
-				["itemID"] = 35279,	-- Tabard of Summer Skies
+			}),
+			i(35279, {	-- Tabard of Summer Skies
 				["sourceQuests"] = {
 					11972,	-- Shards of Ahune
 				},
-			},
-			{	-- Tabard of the Achiever
-				["itemID"] = 40643,	-- Tabard of the Achiever
-			},
-			i(178991),	-- Tabard of the Ascended
-			{	-- Tabard of the Explorer
-				["itemID"] = 43348,	-- Tabard of the Explorer
-			},
-			{	-- Tabard of the Hand
-				["itemID"] = 24344,	-- Tabard of the Hand
+			}),
+			i(40643),	-- Tabard of the Achiever
+			i(43348),	-- Tabard of the Explorer
+			i(24344, {	-- Tabard of the Hand
 				["sourceQuests"] = {
 					9762,	-- The Unwritten Prophecy
 				},
 				["description"] = "This is from a Draenei only quest, but can used by any Alliance race.",
 				["races"] = ALLIANCE_ONLY,	-- Note!! This is strictly Alliance only as the only thing it converts to for Horde is "Guild Tabard"
-			},
-			{	-- Tabard of the Shattered Sun
-				["itemID"] = 35221,	-- Tabard of the Shattered Sun
-			},
-			{	-- Thrallmar Tabard
-				["itemID"] = 24004,	-- Thrallmar Tabard
-			},
-			{	-- Warsong Battle Tabard
-				["itemID"] = 19505,	-- Warsong Battle Tabard
+			}),
+			i(35221),	-- Tabard of the Shattered Sun
+			i(24004, {	-- Thrallmar Tabard
+				["races"] = HORDE_ONLY,
+			}),
+			i(19505, {	-- Warsong Battle Tabard
+				["races"] = HORDE_ONLY,
 				["cost"] = { { "i", 137642, 10 } },	-- 10x Mark of Honor
-			},
+			}),
 		},
 	},
 };
