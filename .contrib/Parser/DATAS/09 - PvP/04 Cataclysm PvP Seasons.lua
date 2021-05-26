@@ -7,6 +7,39 @@ _.PVP =
 	n(-9979, {	-- Cataclysm
 		n(-672, {	-- Vicious Gladiator: Season 9
 			n(-9983, {	-- Honor Gear
+				n(-319, {	-- Weapons
+					un(NEVER_IMPLEMENTED, i(64693)),	-- Bloodthirsty Gladiator's Barrier
+					un(NEVER_IMPLEMENTED, i(64694)),	-- Bloodthirsty Gladiator's Baton of Light
+					un(NEVER_IMPLEMENTED, i(64695)),	-- Bloodthirsty Gladiator's Battle Staff
+					un(NEVER_IMPLEMENTED, i(64700)),	-- Bloodthirsty Gladiator's Bonecracker
+					un(NEVER_IMPLEMENTED, i(64701)),	-- Bloodthirsty Gladiator's Bonegrinder
+					un(NEVER_IMPLEMENTED, i(64717)),	-- Bloodthirsty Gladiator's Cleaver
+					un(NEVER_IMPLEMENTED, i(64726)),	-- Bloodthirsty Gladiator's Decapitator
+					un(NEVER_IMPLEMENTED, i(64743)),	-- Bloodthirsty Gladiator's Endgame
+					un(NEVER_IMPLEMENTED, i(64744)),	-- Bloodthirsty Gladiator's Energy Staff
+					un(NEVER_IMPLEMENTED, i(64775)),	-- Bloodthirsty Gladiator's Fleshslicer
+					un(NEVER_IMPLEMENTED, i(64752)),	-- Bloodthirsty Gladiator's Gavel
+					un(NEVER_IMPLEMENTED, i(64755)),	-- Bloodthirsty Gladiator's Greatsword
+					un(NEVER_IMPLEMENTED, i(64758)),	-- Bloodthirsty Gladiator's Hacker
+					un(NEVER_IMPLEMENTED, i(64760)),	-- Bloodthirsty Gladiator's Heavy Crossbow
+					un(NEVER_IMPLEMENTED, i(64783)),	-- Bloodthirsty Gladiator's Longbow
+					un(NEVER_IMPLEMENTED, i(64810)),	-- Bloodthirsty Gladiator's Pike
+					un(NEVER_IMPLEMENTED, i(64816)),	-- Bloodthirsty Gladiator's Pummeler
+					un(NEVER_IMPLEMENTED, i(64817)),	-- Bloodthirsty Gladiator's Quickblade
+					un(NEVER_IMPLEMENTED, i(64818)),	-- Bloodthirsty Gladiator's Redoubt
+					un(NEVER_IMPLEMENTED, i(64823)),	-- Bloodthirsty Gladiator's Reprieve
+					un(NEVER_IMPLEMENTED, i(64824)),	-- Bloodthirsty Gladiator's Rifle
+					un(NEVER_IMPLEMENTED, i(64825)),	-- Bloodthirsty Gladiator's Right Render
+					un(NEVER_IMPLEMENTED, i(64826)),	-- Bloodthirsty Gladiator's Ripper
+					un(NEVER_IMPLEMENTED, i(64848)),	-- Bloodthirsty Gladiator's Shanker
+					un(NEVER_IMPLEMENTED, i(64849)),	-- Bloodthirsty Gladiator's Shield Wall
+					un(NEVER_IMPLEMENTED, i(64850)),	-- Bloodthirsty Gladiator's Shiv
+					un(NEVER_IMPLEMENTED, i(64774)),	-- Bloodthirsty Gladiator's Slasher
+					un(NEVER_IMPLEMENTED, i(64858)),	-- Bloodthirsty Gladiator's Slicer
+					un(NEVER_IMPLEMENTED, i(64859)),	-- Bloodthirsty Gladiator's Spellblade
+					un(NEVER_IMPLEMENTED, i(64860)),	-- Bloodthirsty Gladiator's Staff
+					un(NEVER_IMPLEMENTED, i(64861)),	-- Bloodthirsty Gladiator's Touch of Defeat
+				}),
 				cl(DEATHKNIGHT, {
 					i(146423, {	-- Ensemble: Bloodthirsty Gladiator's Dreadplate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
@@ -471,6 +504,56 @@ _.PVP =
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
+				f(51,	{	-- Neck
+					un(REMOVED_FROM_GAME, i(64713)),	-- Bloodthirsty Gladiator's Choker of Accuracy
+					un(REMOVED_FROM_GAME, i(64714)),	-- Bloodthirsty Gladiator's Choker of Proficiency
+					un(REMOVED_FROM_GAME, i(64800)),	-- Bloodthirsty Gladiator's Necklace of Proficiency
+					un(REMOVED_FROM_GAME, i(64801)),	-- Bloodthirsty Gladiator's Necklace of Prowess
+					un(REMOVED_FROM_GAME, i(64807)),	-- Bloodthirsty Gladiator's Pendant of Alacrity
+					un(REMOVED_FROM_GAME, i(64808)),	-- Bloodthirsty Gladiator's Pendant of Diffusion
+					un(REMOVED_FROM_GAME, i(64809)),	-- Bloodthirsty Gladiator's Pendant of Meditation
+				}),
+				f(52,	{	-- Finger
+					un(REMOVED_FROM_GAME, i(64690)),	-- Bloodthirsty Gladiator's Band of Accuracy
+					un(REMOVED_FROM_GAME, i(64691)),	-- Bloodthirsty Gladiator's Band of Cruelty
+					un(REMOVED_FROM_GAME, i(64692)),	-- Bloodthirsty Gladiator's Band of Meditation
+					un(REMOVED_FROM_GAME, i(64832)),	-- Bloodthirsty Gladiator's Ring of Accuracy
+					un(REMOVED_FROM_GAME, i(64833)),	-- Bloodthirsty Gladiator's Ring of Cruelty
+					un(REMOVED_FROM_GAME, i(64851)),	-- Bloodthirsty Gladiator's Signet of Accuracy
+					un(REMOVED_FROM_GAME, i(64852)),	-- Bloodthirsty Gladiator's Signet of Cruelty
+				}),
+				n(-331, {	-- Held In Offhand
+					un(REMOVED_FROM_GAME, i(64759)),	-- Bloodthirsty Gladiator's Hatchet (Throw wep)
+					un(REMOVED_FROM_GAME, i(64819)),	-- Bloodthirsty Gladiator's Relic of Conquest
+					un(REMOVED_FROM_GAME, i(64820)),	-- Bloodthirsty Gladiator's Relic of Dominance
+					un(REMOVED_FROM_GAME, i(64821)),	-- Bloodthirsty Gladiator's Relic of Salvation
+					un(REMOVED_FROM_GAME, i(64822)),	-- Bloodthirsty Gladiator's Relic of Triumph
+					un(REMOVED_FROM_GAME, i(64871)),	-- Bloodthirsty Gladiator's War Edge (Throw wep)
+
+				}),
+				f(53,	{	-- Trinket
+					un(REMOVED_FROM_GAME, i(64687)),	-- Bloodthirsty Gladiator's Badge of Conquest
+					un(REMOVED_FROM_GAME, i(64688)),	-- Bloodthirsty Gladiator's Badge of Dominance
+					un(REMOVED_FROM_GAME, i(64689)),	-- Bloodthirsty Gladiator's Badge of Victory
+					un(REMOVED_FROM_GAME, i(64740)),	-- Bloodthirsty Gladiator's Emblem of Cruelty
+					un(REMOVED_FROM_GAME, i(64741)),	-- Bloodthirsty Gladiator's Emblem of Meditation
+					un(REMOVED_FROM_GAME, i(64742)),	-- Bloodthirsty Gladiator's Emblem of Tenacity
+					un(REMOVED_FROM_GAME, i(64761)),	-- Bloodthirsty Gladiator's Insignia of Conquest
+					un(REMOVED_FROM_GAME, i(64762)),	-- Bloodthirsty Gladiator's Insignia of Dominance
+					un(REMOVED_FROM_GAME, i(64763)),	-- Bloodthirsty Gladiator's Insignia of Victory
+					un(REMOVED_FROM_GAME, i(69787)),	-- Bloodthirsty Gladiator's Mark of Cruelty
+					un(REMOVED_FROM_GAME, i(69789)),	-- Bloodthirsty Gladiator's Mark of Meditation
+					un(REMOVED_FROM_GAME, i(69788)),	-- Bloodthirsty Gladiator's Mark of Tenacity
+					un(REMOVED_FROM_GAME, i(64790)),	-- Bloodthirsty Gladiator's Medallion of Cruelty (A)
+					un(REMOVED_FROM_GAME, i(64791)),	-- Bloodthirsty Gladiator's Medallion of Meditation (A)
+					un(REMOVED_FROM_GAME, i(64793)),	-- Bloodthirsty Gladiator's Medallion of Tenacity (A)
+					un(REMOVED_FROM_GAME, i(64789)),	-- Bloodthirsty Gladiator's Medallion of Cruelty (H)
+					un(REMOVED_FROM_GAME, i(64792)),	-- Bloodthirsty Gladiator's Medallion of Meditation (H)
+					un(REMOVED_FROM_GAME, i(64794)),	-- Bloodthirsty Gladiator's Medallion of Tenacity (H)
+					un(REMOVED_FROM_GAME, i(69790)),	-- Bloodthirsty Gladiator's Symbol of Cruelty
+					un(REMOVED_FROM_GAME, i(69792)),	-- Bloodthirsty Gladiator's Symbol of Meditation
+					un(REMOVED_FROM_GAME, i(69791)),	-- Bloodthirsty Gladiator's Symbol of Tenacity
+				}),
 			}),
 			n(-661, {	-- Gladiator PvP Gear
 				n(-319, {	-- Weapons
@@ -894,9 +977,9 @@ _.PVP =
 					i(60787, {	-- Vicious Gladiator's Drape of Prowess
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
-					un(REMOVED_FROM_GAME, i(60782)),	-- Vicious Gladiator's Cloak of Conquest
-					un(REMOVED_FROM_GAME, i(60784)),	-- Vicious Gladiator's Cloak of Dominance
-					un(REMOVED_FROM_GAME, i(60785)),	-- Vicious Gladiator's Cloak of Dominance
+					un(NEVER_IMPLEMENTED, i(60782)),	-- Vicious Gladiator's Cloak of Conquest
+					un(NEVER_IMPLEMENTED, i(60784)),	-- Vicious Gladiator's Cloak of Dominance
+					un(NEVER_IMPLEMENTED, i(60785)),	-- Vicious Gladiator's Cloak of Dominance
 				}),
 				n(-326, {	-- Wrists
 					i(60535, {	-- Vicious Gladiator's Armbands of Meditation
@@ -946,11 +1029,11 @@ _.PVP =
 					}),
 					un(REMOVED_FROM_GAME, i(60629)),	-- Vicious Gladiator's Cuffs of Dominance
 					un(REMOVED_FROM_GAME, i(60614)),	-- Vicious Gladiator's Cuffs of Dominance
-					un(REMOVED_FROM_GAME, i(60585)),	-- Vicious Gladiator's Armwraps of Dominance
-					un(REMOVED_FROM_GAME, i(60608)),	-- Vicious Gladiator's Armwraps of Dominance
-					un(REMOVED_FROM_GAME, i(60588)),	-- Vicious Gladiator's Armwraps of Triumph
-					un(REMOVED_FROM_GAME, i(60597)),	-- Vicious Gladiator's Armwraps of Triumph
-					un(REMOVED_FROM_GAME, i(60598)),	-- Vicious Gladiator's Armwraps of Triumph
+					un(NEVER_IMPLEMENTED, i(60585)),	-- Vicious Gladiator's Armwraps of Dominance
+					un(NEVER_IMPLEMENTED, i(60608)),	-- Vicious Gladiator's Armwraps of Dominance
+					un(NEVER_IMPLEMENTED, i(60588)),	-- Vicious Gladiator's Armwraps of Triumph
+					un(NEVER_IMPLEMENTED, i(60597)),	-- Vicious Gladiator's Armwraps of Triumph
+					un(NEVER_IMPLEMENTED, i(60598)),	-- Vicious Gladiator's Armwraps of Triumph
 					un(REMOVED_FROM_GAME, i(60507)),	-- Vicious Gladiator's Bracers of Salvation
 					un(REMOVED_FROM_GAME, i(60515)),	-- Vicious Gladiator's Bracers of Salvation
 					un(REMOVED_FROM_GAME, i(60510)),	-- Vicious Gladiator's Bracers of Triumph
@@ -1070,9 +1153,9 @@ _.PVP =
 					i(60509, {	-- Vicious Gladiator's Warboots of Cruelty
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
-					un(REMOVED_FROM_GAME, i(60584)),	-- Vicious Gladiator's Boots of Dominance
-					un(REMOVED_FROM_GAME, i(60610)),	-- Vicious Gladiator's Boots of Dominance
-					un(REMOVED_FROM_GAME, i(60590)),	-- Vicious Gladiator's Boots of Triumph
+					un(NEVER_IMPLEMENTED, i(60584)),	-- Vicious Gladiator's Boots of Dominance
+					un(NEVER_IMPLEMENTED, i(60610)),	-- Vicious Gladiator's Boots of Dominance
+					un(NEVER_IMPLEMENTED, i(60590)),	-- Vicious Gladiator's Boots of Triumph
 					un(REMOVED_FROM_GAME, i(60596)),	-- Vicious Gladiator's Boots of Triumph
 					un(REMOVED_FROM_GAME, i(60599)),	-- Vicious Gladiator's Boots of Triumph
 					un(REMOVED_FROM_GAME, i(60506)),	-- Vicious Gladiator's Greaves of Salvation
@@ -1096,7 +1179,7 @@ _.PVP =
 					i(60662),	-- Vicious Gladiator's Pendant of Alacrity
 					i(60661),	-- Vicious Gladiator's Pendant of Diffusion
 					i(60664),	-- Vicious Gladiator's Pendant of Meditation
-					un(REMOVED_FROM_GAME, i(60666)), 	-- Vicious Gladiator's Pendant of Conquest
+					un(NEVER_IMPLEMENTED, i(60666)), 	-- Vicious Gladiator's Pendant of Conquest
 				}),
 				f(52,	{	-- Finger
 					i(60647),	-- Vicious Gladiator's Band of Accuracy
@@ -1256,7 +1339,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(70557)),	-- Vicious Gladiator's Drape of Prowess
 				
 				}),
-				n(-322, {	-- Wrists
+				n(-326, {	-- Wrists
 					un(REMOVED_FROM_GAME, i(70511)),	-- Vicious Gladiator's Armbands of Meditation
 					un(REMOVED_FROM_GAME, i(70512)),	-- Vicious Gladiator's Armbands of Prowess
 					un(REMOVED_FROM_GAME, i(70513)),	-- Vicious Gladiator's Armplates of Alacrity
