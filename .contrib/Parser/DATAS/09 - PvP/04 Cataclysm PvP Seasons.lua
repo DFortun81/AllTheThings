@@ -43,7 +43,13 @@ _.PVP =
 				cl(DEATHKNIGHT, {
 					i(146423, {	-- Ensemble: Bloodthirsty Gladiator's Dreadplate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -672, -9983, 6 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -9979, -672, -9983, 6 },
+							{"select", "itemID", 64684 },	-- Bloodthirsty Gladiator's Armplates of Proficiency
+							{"select", "itemID", 64753 },	-- Bloodthirsty Gladiator's Girdle of Cruelty
+							{"select", "itemID", 64870 },	-- Bloodthirsty Gladiator's Warboots of Cruelty
+							{"exclude", "itemID", 146423 },	-- Exclude itself to stop duplicating 
+						},
 					}),
 					i(64735, {	-- Bloodthirsty Gladiator's Dreadplate Chestpiece
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -64,7 +70,16 @@ _.PVP =
 				cl(DRUID, {
 					i(146421, {	-- Ensemble: Bloodthirsty Gladiator's Dragonhide Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -672, -9983, 11 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -9979, -672, -9983, 11 },
+							{"select", "itemID", 64698 },	-- Bloodthirsty Gladiator's Bindings of Meditation
+							{"select", "itemID", 64699 },	-- Bloodthirsty Gladiator's Bindings of Prowess
+							{"select", "itemID", 64696 },	-- Bloodthirsty Gladiator's Belt of Cruelty
+							{"select", "itemID", 64697 },	-- Bloodthirsty Gladiator's Belt of Meditation
+							{"select", "itemID", 64750 },	-- Bloodthirsty Gladiator's Footguards of Alacrity
+							{"select", "itemID", 64751 },	-- Bloodthirsty Gladiator's Footguards of Meditation
+							{"exclude", "itemID", 146421 },	-- Exclude itself to stop duplicating 
+						},
 					}),
 					i(64727, {	-- Bloodthirsty Gladiator's Dragonhide Gloves
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -115,7 +130,16 @@ _.PVP =
 				cl(HUNTER, {
 					i(146419, {	-- Ensemble: Bloodthirsty Gladiator's Chain Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -672, -9983, 3 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -9979, -672, -9983, 3 },
+							{"select", "itemID", 64872 },	-- Bloodthirsty Gladiator's Wristguards of Accuracy
+							{"select", "itemID", 64873 },	-- Bloodthirsty Gladiator's Wristguards of Alacrity
+							{"select", "itemID", 64781 },	-- Bloodthirsty Gladiator's Links of Accuracy
+							{"select", "itemID", 64782 },	-- Bloodthirsty Gladiator's Links of Cruelty
+							{"select", "itemID", 64834 },	-- Bloodthirsty Gladiator's Sabatons of Alacrity
+							{"select", "itemID", 64836 },	-- Bloodthirsty Gladiator's Sabatons of Cruelty
+							{"exclude", "itemID", 146419 },	-- Exclude itself to stop duplicating 
+						},
 					}),
 					i(64708, {	-- Bloodthirsty Gladiator's Chain Armor
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -136,7 +160,13 @@ _.PVP =
 				cl(MAGE, {
 					i(146437, {	-- Ensemble: Bloodthirsty Gladiator's Silk Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -672, -9983, 8 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -9979, -672, -9983, 8 },
+							{"select", "itemID", 64723 },	-- Bloodthirsty Gladiator's Cuffs of Accuracy	
+							{"select", "itemID", 64721 },	-- Bloodthirsty Gladiator's Cord of Cruelty
+							{"select", "itemID", 64863 },	-- Bloodthirsty Gladiator's Treads of Cruelty
+							{"exclude", "itemID", 146437 },	-- Exclude itself to stop duplicating 
+						},
 					}),
 					i(64853, {	-- Bloodthirsty Gladiator's Silk Amice
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -157,7 +187,16 @@ _.PVP =
 				cl(PALADIN, {
 					i(146435, {	-- Ensemble: Bloodthirsty Gladiator's Scaled Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -672, -9983, 2 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -9979, -672, -9983, 2 },
+							{"select", "itemID", 64704 },	-- Bloodthirsty Gladiator's Bracers of Meditation
+							{"select", "itemID", 64705 },	-- Bloodthirsty Gladiator's Bracers of Prowess
+							{"select", "itemID", 64715 },	-- Bloodthirsty Gladiator's Clasp of Cruelty
+							{"select", "itemID", 64716 },	-- Bloodthirsty Gladiator's Clasp of Meditation
+							{"select", "itemID", 64756 },	-- Bloodthirsty Gladiator's Greaves of Alacrity
+							{"select", "itemID", 64757 },	-- Bloodthirsty Gladiator's Greaves of Meditation
+							{"exclude", "itemID", 146435 },	-- Exclude itself to stop duplicating 
+						},
 					}),
 					i(64802, {	-- Bloodthirsty Gladiator's Ornamented Chestguard
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -193,7 +232,13 @@ _.PVP =
 				cl(PRIEST, {
 					i(146433, {	-- Ensemble: Bloodthirsty Gladiator's Satin Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -672, -9983, 5 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -9979, -672, -9983, 5 },
+							{"select", "itemID", 64724 },	-- Bloodthirsty Gladiator's Cuffs of Meditation
+							{"select", "itemID", 64722 },	-- Bloodthirsty Gladiator's Cord of Meditation
+							{"select", "itemID", 64864 },	-- Bloodthirsty Gladiator's Treads of Meditation
+							{"exclude", "itemID", 146433 },	-- Exclude itself to stop duplicating 
+						},
 					}),
 					i(64795, {	-- Bloodthirsty Gladiator's Mooncloth Gloves
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -229,7 +274,16 @@ _.PVP =
 				cl(ROGUE, {
 					i(146427, {	-- Ensemble: Bloodthirsty Gladiator's Leather Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -672, -9983, 4 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -9979, -672, -9983, 4 },
+							{"select", "itemID", 64685 },	-- Bloodthirsty Gladiator's Armwraps of Accuracy
+							{"select", "itemID", 64686 },	-- Bloodthirsty Gladiator's Armwraps of Alacrity
+							{"select", "itemID", 64865 },	-- Bloodthirsty Gladiator's Waistband of Accuracy
+							{"select", "itemID", 64866 },	-- Bloodthirsty Gladiator's Waistband of Cruelty
+							{"select", "itemID", 64702 },	-- Bloodthirsty Gladiator's Boots of Alacrity
+							{"select", "itemID", 64703 },	-- Bloodthirsty Gladiator's Boots of Cruelty
+							{"exclude", "itemID", 146427 },	-- Exclude itself to stop duplicating 
+						},
 					}),
 					i(64769, {	-- Bloodthirsty Gladiator's Leather Gloves
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -250,8 +304,17 @@ _.PVP =
 				cl(SHAMAN, {
 					i(146431, {	-- Ensemble: Bloodthirsty Gladiator's Ringmail Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -672, -9983, 7 }, },
-					}),
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -9979, -672, -9983, 7 },
+							{"select", "itemID", 64681 },	-- Bloodthirsty Gladiator's Armbands of Meditation
+							{"select", "itemID", 64682 },	-- Bloodthirsty Gladiator's Armbands of Prowess
+							{"select", "itemID", 64867 },	-- Bloodthirsty Gladiator's Waistguard of Cruelty
+							{"select", "itemID", 64868 },	-- Bloodthirsty Gladiator's Waistguard of Meditation
+							{"select", "itemID", 64835 },	-- Bloodthirsty Gladiator's Sabatons of Alacrity
+							{"select", "itemID", 64837 },	-- Bloodthirsty Gladiator's Sabatons of Meditation
+							{"exclude", "itemID", 146431 },	-- Exclude itself to stop duplicating 
+						},
+					}),	
 					i(64776, {	-- Bloodthirsty Gladiator's Linked Armor
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 					}),
@@ -301,7 +364,13 @@ _.PVP =
 				cl(WARLOCK, {
 					i(146425, {	-- Ensemble: Bloodthirsty Gladiator's Felweave Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -672, -9983, 9 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -9979, -672, -9983, 9 },
+							{"select", "itemID", 64725 },	-- Bloodthirsty Gladiator's Cuffs of Prowess
+							{"select", "itemID", 64720 },	-- Bloodthirsty Gladiator's Cord of Accuracy
+							{"select", "itemID", 64862 },	-- Bloodthirsty Gladiator's Treads of Alacrity
+							{"exclude", "itemID", 146425 },	-- Exclude itself to stop duplicating 
+						},
 					}),
 					i(64745, {	-- Bloodthirsty Gladiator's Felweave Amice
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -322,7 +391,13 @@ _.PVP =
 				cl(WARRIOR, {
 					i(146429, {	-- Ensemble: Bloodthirsty Gladiator's Plate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -672, -9983, 1 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -9979, -672, -9983, 1 },
+							{"select", "itemID", 64683 },	-- Bloodthirsty Gladiator's Armplates of Alacrity
+							{"select", "itemID", 64754 },	-- Bloodthirsty Gladiator's Girdle of Prowess
+							{"select", "itemID", 64869 },	-- Bloodthirsty Gladiator's Warboots of Alacrity
+							{"exclude", "itemID", 146429 },	-- Exclude itself to stop duplicating 
+						},
 					}),
 					i(64811, {	-- Bloodthirsty Gladiator's Plate Chestpiece
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -559,7 +634,10 @@ _.PVP =
 				n(-319, {	-- Weapons
 					i(146641, {	--  Arsenal: Vicious Gladiator's Weapons
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-						["sym"] = { {"sub", "pvp_weapons_ensemble", -9979, -672, -661 }, },
+						["sym"] = { 
+							{"sub", "pvp_weapons_ensemble", -9979, -672, -661 },
+							{"exclude", "itemID", 146641 },	-- Exclude itself to stop duplicating
+						},
 					}),
 					i(61360, {	-- Vicious Gladiator's Barrier
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -658,7 +736,13 @@ _.PVP =
 				cl(DEATHKNIGHT, {
 					i(146523, {	-- Ensemble: Vicious Gladiator's Dreadplate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -672, -661, 6 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -9979, -672, -661, 6 },
+							{"select", "itemID", 60523 },	-- Vicious Gladiator's Armplates of Proficiency
+							{"select", "itemID", 60508 },	-- Vicious Gladiator's Girdle of Cruelty
+							{"select", "itemID", 60509 },	-- Vicious Gladiator's Warboots of Cruelty
+							{"exclude", "itemID", 146523 },	-- Exclude itself to stop duplicating 
+						},
 					}),
 					i(60408, {	-- Vicious Gladiator's Dreadplate Chestpiece
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -679,7 +763,16 @@ _.PVP =
 				cl(DRUID, {
 					i(146521, {	-- Ensemble: Vicious Gladiator's Dragonhide Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -672, -661, 11 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -9979, -672, -661, 11 },
+							{"select", "itemID", 60582 },	-- Vicious Gladiator's Bindings of Meditation
+							{"select", "itemID", 60611 },	-- Vicious Gladiator's Bindings of Prowess
+							{"select", "itemID", 60583 },	-- Vicious Gladiator's Belt of Cruelty
+							{"select", "itemID", 60580 },	-- Vicious Gladiator's Belt of Meditation
+							{"select", "itemID", 60607 },	-- Vicious Gladiator's Footguards of Alacrity
+							{"select", "itemID", 60581 },	-- Vicious Gladiator's Footguards of Meditation
+							{"exclude", "itemID", 146521 },	-- Exclude itself to stop duplicating 
+						},
 					}),
 					i(60443, {	-- Vicious Gladiator's Dragonhide Gloves
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -730,7 +823,16 @@ _.PVP =
 				cl(HUNTER, {
 					i(146519, {	-- Ensemble: Vicious Gladiator's Chain Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -672, -661, 3 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -9979, -672, -661, 3 },
+							{"select", "itemID", 60565 },	-- Vicious Gladiator's Wristguards of Accuracy
+							{"select", "itemID", 60559 },	-- Vicious Gladiator's Wristguards of Alacrity
+							{"select", "itemID", 60564 },	-- Vicious Gladiator's Links of Accuracy
+							{"select", "itemID", 60555 },	-- Vicious Gladiator's Links of Cruelty
+							{"select", "itemID", 60557 },	-- Vicious Gladiator's Sabatons of Alacrity
+							{"select", "itemID", 60554 },	-- Vicious Gladiator's Sabatons of Cruelty
+							{"exclude", "itemID", 146519 },	-- Exclude itself to stop duplicating 
+						},
 					}),
 					i(60423, {	-- Vicious Gladiator's Chain Armor
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -751,7 +853,13 @@ _.PVP =
 				cl(MAGE, {
 					i(146537, {	-- Ensemble: Vicious Gladiator's Silk Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -672, -661, 8 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -9979, -672, -661, 8 },
+							{"select", "itemID", 60628 },	-- Vicious Gladiator's Cuffs of Accuracy	
+							{"select", "itemID", 60612 },	-- Vicious Gladiator's Cord of Cruelty
+							{"select", "itemID", 60613 },	-- Vicious Gladiator's Treads of Cruelty
+							{"exclude", "itemID", 146537 },	-- Exclude itself to stop duplicating 
+						},
 					}),
 					i(60467, {	-- Vicious Gladiator's Silk Amice
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -772,7 +880,16 @@ _.PVP =
 				cl(PALADIN, {
 					i(146535, {	-- Ensemble: Vicious Gladiator's Scaled Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -672, -661, 2 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -9979, -672, -661, 2 },
+							{"select", "itemID", 60541 },	-- Vicious Gladiator's Bracers of Meditation
+							{"select", "itemID", 60520 },	-- Vicious Gladiator's Bracers of Prowess
+							{"select", "itemID", 60505 },	-- Vicious Gladiator's Clasp of Cruelty
+							{"select", "itemID", 60539 },	-- Vicious Gladiator's Clasp of Meditation
+							{"select", "itemID", 60516 },	-- Vicious Gladiator's Greaves of Alacrity
+							{"select", "itemID", 60540 },	-- Vicious Gladiator's Greaves of Meditation
+							{"exclude", "itemID", 146535 },	-- Exclude itself to stop duplicating 
+						},
 					}),
 					i(60601, {	-- Vicious Gladiator's Ornamented Chestguard
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -808,7 +925,13 @@ _.PVP =
 				cl(PRIEST, {
 					i(146533, {	-- Ensemble: Vicious Gladiator's Satin Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -672, -661, 5 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -9979, -672, -661, 5 },
+							{"select", "itemID", 60635 },	-- Vicious Gladiator's Cuffs of Meditation
+							{"select", "itemID", 60637 },	-- Vicious Gladiator's Cord of Meditation
+							{"select", "itemID", 60636 },	-- Vicious Gladiator's Treads of Meditation
+							{"exclude", "itemID", 146533 },	-- Exclude itself to stop duplicating 
+						},
 					}),
 					i(60468, {	-- Vicious Gladiator's Mooncloth Gloves
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -844,7 +967,16 @@ _.PVP =
 				cl(ROGUE, {
 					i(146527, {	-- Ensemble: Vicious Gladiator's Leather Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -672, -661, 4 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -9979, -672, -661, 4 },
+							{"select", "itemID", 60591 },	-- Vicious Gladiator's Armwraps of Accuracy
+							{"select", "itemID", 60594 },	-- Vicious Gladiator's Armwraps of Alacrity
+							{"select", "itemID", 60589 },	-- Vicious Gladiator's Waistband of Accuracy
+							{"select", "itemID", 60586 },	-- Vicious Gladiator's Waistband of Cruelty
+							{"select", "itemID", 60593 },	-- Vicious Gladiator's Boots of Alacrity
+							{"select", "itemID", 60587 },	-- Vicious Gladiator's Boots of Cruelty
+							{"exclude", "itemID", 146527 },	-- Exclude itself to stop duplicating 
+						},
 					}),
 					i(60459, {	-- Vicious Gladiator's Leather Gloves
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -865,7 +997,16 @@ _.PVP =
 				cl(SHAMAN, {
 					i(146531, {	-- Ensemble: Vicious Gladiator's Ringmail Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -672, -661, 7 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -9979, -672, -661, 7 },
+							{"select", "itemID", 60535 },	-- Vicious Gladiator's Armbands of Meditation
+							{"select", "itemID", 60569 },	-- Vicious Gladiator's Armbands of Prowess
+							{"select", "itemID", 60536 },	-- Vicious Gladiator's Waistguard of Cruelty
+							{"select", "itemID", 60533 },	-- Vicious Gladiator's Waistguard of Meditation
+							{"select", "itemID", 60567 },	-- Vicious Gladiator's Sabatons of Alacrity
+							{"select", "itemID", 60534 },	-- Vicious Gladiator's Sabatons of Meditation
+							{"exclude", "itemID", 146531 },	-- Exclude itself to stop duplicating 
+						},
 					}),
 					i(60433, {	-- Vicious Gladiator's Linked Armor
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -916,7 +1057,13 @@ _.PVP =
 				cl(WARLOCK, {
 					i(146525, {	-- Ensemble: Vicious Gladiator's Felweave Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -672, -661, 9 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -9979, -672, -661, 9 },
+							{"select", "itemID", 60634 },	-- Vicious Gladiator's Cuffs of Prowess
+							{"select", "itemID", 60626 },	-- Vicious Gladiator's Cord of Accuracy
+							{"select", "itemID", 60630 },	-- Vicious Gladiator's Treads of Alacrity
+							{"exclude", "itemID", 146525 },	-- Exclude itself to stop duplicating 
+						},
 					}),
 					i(60482, {	-- Vicious Gladiator's Felweave Amice
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -937,7 +1084,13 @@ _.PVP =
 				cl(WARRIOR, {
 					i(146529, {	-- Ensemble: Vicious Gladiator's Plate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -672, -661, 1 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -9979, -672, -661, 1 },
+							{"select", "itemID", 60512 },	-- Vicious Gladiator's Armplates of Alacrity
+							{"select", "itemID", 60521 },	-- Vicious Gladiator's Girdle of Prowess
+							{"select", "itemID", 60513 },	-- Vicious Gladiator's Warboots of Alacrity
+							{"exclude", "itemID", 146529 },	-- Exclude itself to stop duplicating 
+						},
 					}),
 					i(60418, {	-- Vicious Gladiator's Plate Chestpiece
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
