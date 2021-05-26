@@ -17,35 +17,6 @@ _.Zones =
 				}),
 				n(26352,  {	-- Big Zokk Torquewrench >Season 6< Elite
 					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(45952)),	-- Furious Gladiator's Greatstaff
-						un(REMOVED_FROM_GAME, i(45948)),	-- Furious Gladiator's Sunderer
-						un(REMOVED_FROM_GAME, i(45958)),	-- Furious Gladiator's Spike
-						un(REMOVED_FROM_GAME, i(45962)),	-- Furious Gladiator's Dirk
-						un(REMOVED_FROM_GAME, i(45967)),	-- Furious Gladiator's Eviscerator
-						un(REMOVED_FROM_GAME, i(45970)),	-- Furious Gladiator's Mageblade
-						un(REMOVED_FROM_GAME, i(45957)),	-- Furious Gladiator's Handaxe
-						un(REMOVED_FROM_GAME, i(45961)),	-- Furious Gladiator's Dicer
-						un(REMOVED_FROM_GAME, i(45966)),	-- Furious Gladiator's Splitter)
-						un(REMOVED_FROM_GAME, i(45959)),	-- Furious Gladiator's Truncheon
-						un(REMOVED_FROM_GAME, i(45964)),	-- Furious Gladiator's Punisher
-						un(REMOVED_FROM_GAME, i(45971)),	-- Furious Gladiator's Salvation)
-						un(REMOVED_FROM_GAME, i(45960)),	-- Furious Gladiator's Longblade
-						un(REMOVED_FROM_GAME, i(45965)),	-- Furious Gladiator's Swiftblade
-						un(REMOVED_FROM_GAME, i(45937)),	-- Furious Gladiator's Shotgun
-						un(REMOVED_FROM_GAME, i(45938)),	-- Furious Gladiator's Recurve
-						un(REMOVED_FROM_GAME, i(45939)),	-- Furious Gladiator's Repeater
-						un(REMOVED_FROM_GAME, i(45949)),	-- Furious Gladiator's Crusher
-						un(REMOVED_FROM_GAME, i(45950)),	-- Furious Gladiator's Claymore
-						un(REMOVED_FROM_GAME, i(45951)),	-- Furious Gladiator's Halberd
-						un(REMOVED_FROM_GAME, i(45953)),	-- Furious Gladiator's Combat Staff
-						un(REMOVED_FROM_GAME, i(45954)),	-- Furious Gladiator's Acute Staff
-						un(REMOVED_FROM_GAME, i(45955)),	-- Furious Gladiator's Skirmish Staff
-						un(REMOVED_FROM_GAME, i(45956)),	-- Furious Gladiator's Light Staff
-						un(REMOVED_FROM_GAME, i(45963)),	-- Furious Gladiator's Fleshslicer
-						un(REMOVED_FROM_GAME, i(45968)),	-- Furious Gladiator's Claw
-						un(REMOVED_FROM_GAME, i(45969)),	-- Furious Gladiator's Grasp)
-					},
 				}),
 				n(54649,  {	-- Big Zokk Torquewrench <Classic Weapons>
 					["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.|r",

@@ -2181,12 +2181,7 @@ _.ExpansionFeatures =
 				n(35573, {	-- Arcanist Asarina <Legacy Justice Quartermaster>
 					["coord"] = { 75.2, 21.6, 118 },
 					["races"] = ALLIANCE_ONLY,
-					-- We have a different Vendor with the same PvP Items in Dalaran listed. Both of them sell the Furious Gladiator Items for Gold. For sake of numbers we use Symlink on the 2nd NPC
-					["sym"] = {
-						{"sub", "pvp_gear_base", -10014, -669, -661 },	-- Furious Gladiator: Season 6 Gladiator Gear
-						{"pop"},	-- Discard the Set header and acquire the children.
-						{"exclude", "headerID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
-						
+					["g"] = {
 						-- Normal items here
 						i(47732),	-- Band of the Invoker
 						i(47729),	-- Bloodshed Band
@@ -2217,6 +2212,12 @@ _.ExpansionFeatures =
 						i(47698),	-- Shoulderplates of Enduring Order
 						i(47712),	-- Shoulders of the Fateful Accord
 						i(48724),	-- Talisman of Resurgence
+					},
+					-- We have a different Vendor with the same PvP Items in Dalaran listed. Both of them sell the Furious Gladiator Items for Gold. For sake of numbers we use Symlink on the 2nd NPC
+					["sym"] = {
+						{"sub", "pvp_gear_base", -10014, -669, -661 },	-- Furious Gladiator: Season 6 Gladiator Gear
+						{"pop"},	-- Discard the Set header and acquire the children.
+						{"exclude", "headerID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
 					},
 				}),
 				n(35579, {	-- Aspirant Forudir <Triumphant Armor Vendor>
@@ -3216,12 +3217,7 @@ _.ExpansionFeatures =
 				n(35574, {	-- Magistrix Iruvia <Legacy Justice Quartermaster>
 					["coord"] = { 75.2, 22.0, 118 },
 					["races"] = HORDE_ONLY,
-					-- We have a different Vendor with the same PvP Items in Dalaran listed. Both of them sell the Furious Gladiator Items for Gold. For sake of numbers we use Symlink on the 2nd NPC
-					["sym"] = {
-						{"sub", "pvp_gear_base", -10014, -669, -661 },	-- Furious Gladiator: Season 6 Gladiator Gear
-						{"pop"},	-- Discard the Set header and acquire the children.
-						{"exclude", "headerID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
-						
+					["g"] = {
 						-- Normal Items here
 						i(47732),	-- Band of the Invoker
 						i(47729),	-- Bloodshed Band
@@ -3252,6 +3248,12 @@ _.ExpansionFeatures =
 						i(47696),	-- Shoulderplates of Trembling Rage
 						i(47706),	-- Shoulders of the Groundbreaker
 						i(48724),	-- Talisman of Resurgence
+					},
+					-- We have a different Vendor with the same PvP Items in Dalaran listed. Both of them sell the Furious Gladiator Items for Gold. For sake of numbers we use Symlink on the 2nd NPC
+					["sym"] = {
+						{"sub", "pvp_gear_base", -10014, -669, -661 },	-- Furious Gladiator: Season 6 Gladiator Gear
+						{"pop"},	-- Discard the Set header and acquire the children.
+						{"exclude", "headerID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
 					},
 				}),
 				n(33595, {	-- Mera Mistrunner <Cooking Supplies>

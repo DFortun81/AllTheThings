@@ -2347,6 +2347,7 @@ _.PVP =
 			}),
 			n(-662, {	-- Elite PvP Gear
 				un(REMOVED_FROM_GAME, i(45983)),	-- Furious Gladiator's Tabard
+				-- Original Sources are unknown
 				n(-319, {	-- Weapon
 					un(REMOVED_FROM_GAME, i(45954)),	-- Furious Gladiator's Acute Staff
 					un(REMOVED_FROM_GAME, i(45968)),	-- Furious Gladiator's Claw
