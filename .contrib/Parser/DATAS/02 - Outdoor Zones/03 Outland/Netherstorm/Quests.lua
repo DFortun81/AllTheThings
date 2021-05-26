@@ -413,11 +413,6 @@ _.Zones =
 						{ 60.1, 32.5, NETHERSTORM },
 					},
 				}),
-				q(10257, {	-- Capturing the Keystone
-					["provider"] = { "n", 19481 },	-- Archmage Vargoth
-					["coord"] = { 58.3, 86.4, NETHERSTORM },
-					["sourceQuest"] = 10256,	-- Finding the Keymaster
-				}),
 				q(10319, {	-- Capturing the Phylactery
 					["provider"] = { "n", 19488 },	-- Custodian Dieworth
 					["coord"] = { 57.5, 86.3, NETHERSTORM },
