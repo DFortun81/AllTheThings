@@ -83,6 +83,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(29362),	-- The Sun Eater
 					i(28204),	-- Tunic of Assassination
 					i(30533),	-- Vanquisher's Legplates
+					i(31086),	-- Bottom Shard of the Arcatraz Key
 				}))
 			}),
 			d(2, {	-- Heroic
@@ -138,6 +139,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(29362),	-- The Sun Eater
 						i(28204),	-- Tunic of Assassination
 						i(30533),	-- Vanquisher's Legplates
+						i(31086),	-- Bottom Shard of the Arcatraz Key
 					})),
 				},
 			}),

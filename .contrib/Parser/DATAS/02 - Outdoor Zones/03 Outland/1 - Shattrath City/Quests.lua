@@ -450,27 +450,6 @@ _.Zones =
 					["coord"] = { 54.3, 44.3, SHATTRATH_CITY },
 					["sourceQuests"] = { 10948 },	-- The Hostage Soul
 				}),
-				q(10882, {	-- Harbinger of Doom
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 18481 },	-- A'dal
-					["g"] = {
-						i(31747),	-- Potent Sha'tari Pendant
-						i(31749),	-- A'dal's Recovery Necklace
-						i(31748),	-- Shattrath Choker of Power
-					},
-				}),
-				q(10704, {	-- How to Break Into the Arcatraz
-					["provider"] = { "n", 18481 },	-- A'dal
-					["coord"] = { 53.7, 44.6, SHATTRATH_CITY },
-					["sourceQuest"] = 10280,	-- Special Delivery to Shattrath City
-					["g"] = {
-						i(31465),	-- Sha'tari Achorite's Cloak
-						i(31461),	-- A'dal's Gift
-						i(31464),	-- Naaru Belt of Precision
-						i(31462),	-- Shattrath's Champion Belt
-						i(31460),	-- Sha'tari Vindicator's Waistguard
-					},
-				}),
 				q(12771, {	-- Ironforge (Dwarf)
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = { DWARF },

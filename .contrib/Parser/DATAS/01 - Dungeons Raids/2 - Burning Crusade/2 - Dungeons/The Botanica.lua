@@ -82,6 +82,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(28345),	-- Warp Splinter's Thorn
 					-- i(28347),	-- Warpscale Leggings (7.3.5 - Moved to Commander Sarannis)
 					i(28341),	-- Warpstaff of Arcanum
+					i(31085),	-- Top Shard of the Arcatraz Key
 				})),
 			}),
 			d(2, {	-- Heroic
@@ -151,6 +152,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(28345),	-- Warp Splinter's Thorn
 						-- i(28347),	-- Warpscale Leggings (7.3.5 - Moved to Commander Sarannis)
 						i(28341),	-- Warpstaff of Arcanum
+						i(31085),	-- Top Shard of the Arcatraz Key
 					}))
 				}
 			}),

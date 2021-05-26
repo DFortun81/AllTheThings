@@ -83,11 +83,6 @@ _.Zones =
 					["coord"] = { 57.3, 49.5, SHADOWMOON_VALLEY },
 					["sourceQuests"] = { 10622 },	-- Proof of Allegiance
 				}),
-				q(10705, {	-- Seer Udalo
-					["provider"] = { "n", 21700 },	-- Akama
-					["coord"] = { 58.1, 48.1, SHADOWMOON_VALLEY },
-					["sourceQuests"] = { 10628 },	-- Akama
-				}),
 				q(10707, {	-- The Ata'mal Terrace
 					["provider"] = { "n", 21770 },	-- Akama
 					["coord"] = { 58.1, 48.1, SHADOWMOON_VALLEY },
@@ -509,10 +504,6 @@ _.Zones =
 				q(10628, {	-- Akama
 					["provider"] = { "n", 21826 },	-- Sanoru
 					["sourceQuests"] = { 10622 },	-- Proof of Allegiance
-				}),
-				q(10705, {	-- Seer Udalo
-					["provider"] = { "n", 21700 },	-- Akama
-					["sourceQuests"] = { 10628 },	-- Akama
 				}),
 				q(10707, {	-- The Ata'mal Terrace
 					["provider"] = { "n", 21770 },	-- Akama
