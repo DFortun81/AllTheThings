@@ -782,6 +782,11 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 					i(28569),	-- Boots of Valiance
 					i(28545),	-- Edgewalker Longboots
 					i(28528),	-- Moroes' Lucky Pocket Watch
+					-- #if BEFORE MOP
+					i(28568, {	-- Idol of the Avian Heart
+						["timeline"] = { "removed 5.0.4.10000" },
+					}),
+					-- #endif
 				},
 			}),
 			e(1555, {	-- Maiden of Virtue
@@ -798,6 +803,11 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 					i(28518),	-- Iron Gauntlets of the Maiden
 					i(28521),	-- Mitts of the Treemender
 					i(28517),	-- Boots of Foretelling
+					-- #if BEFORE MOP
+					i(28523, {	-- Totem of Healing Rains
+						["timeline"] = { "removed 5.0.4.10000" },
+					}),
+					-- #endif
 				},
 			}),
 			e(1556, {	-- Opera Hall
@@ -838,6 +848,11 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 							i(28591),	-- Earthsoul Leggings
 							i(28594),	-- Trial-Fire Trousers
 							i(28590),	-- Ribbon of Sacrifice
+							-- #if BEFORE MOP
+							i(28592, {	-- Libram of Souls Redeemed
+								["timeline"] = { "removed 5.0.4.10000" },
+							}),
+							-- #endif
 						},
 					}),
 					n(17521, {	-- The Big Bad Wolf [Red Riding Hood]
