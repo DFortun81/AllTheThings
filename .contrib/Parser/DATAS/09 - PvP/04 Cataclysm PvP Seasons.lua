@@ -1747,7 +1747,10 @@ _.PVP =
 				n(-319, {	-- Weapons
 					i(146640, {	-- Arsenal: Ruthless Gladiator's Weapons
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-						["sym"] = { {"sub", "pvp_weapons_ensemble", -9979, -673, -661 }, },
+						["sym"] = { 
+							{"sub", "pvp_weapons_ensemble", -9979, -673, -661 },
+							{"exclude", "itemID", 146640 },	-- Exclude itself to stop duplicating
+						},
 					}),
 					i(70242, {	-- Ruthless Gladiator's Barrier
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -1846,7 +1849,13 @@ _.PVP =
 				cl(DEATHKNIGHT, {
 					i(146503, {	-- Ensemble: Ruthless Gladiator's Dreadplate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -673, -661, 6 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -9979, -673, -661, 6 },
+							{"select", "itemID", 70327 },	-- Ruthless Gladiator's Armplates of Proficiency
+							{"select", "itemID", 70320 },	-- Ruthless Gladiator's Girdle of Cruelty
+							{"select", "itemID", 70321 },	-- Ruthless Gladiator's Warboots of Cruelty
+							{"exclude", "itemID", 146503 },	-- Exclude itself to stop duplicating 
+						},
 					}),
 					i(70244, {	-- Ruthless Gladiator's Dreadplate Chestpiece
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -1867,7 +1876,16 @@ _.PVP =
 				cl(DRUID, {
 					i(146501, {	-- Ensemble: Ruthless Gladiator's Dragonhide Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -673, -661, 11 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -9979, -673, -661, 11 },
+							{"select", "itemID", 70345 },	-- Ruthless Gladiator's Bindings of Meditation
+							{"select", "itemID", 70359 },	-- Ruthless Gladiator's Bindings of Prowess
+							{"select", "itemID", 70346 },	-- Ruthless Gladiator's Belt of Cruelty
+							{"select", "itemID", 70343 },	-- Ruthless Gladiator's Belt of Meditation
+							{"select", "itemID", 70358 },	-- Ruthless Gladiator's Footguards of Alacrity
+							{"select", "itemID", 70344 },	-- Ruthless Gladiator's Footguards of Meditation
+							{"exclude", "itemID", 146501 },	-- Exclude itself to stop duplicating 
+						},
 					}),
 					i(70279, {	-- Ruthless Gladiator's Dragonhide Gloves
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -1918,7 +1936,16 @@ _.PVP =
 				cl(HUNTER, {
 					i(146499, {	-- Ensemble: Ruthless Gladiator's Chain Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -673, -661, 3 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -9979, -673, -661, 3 },
+							{"select", "itemID", 70340 },	-- Ruthless Gladiator's Wristguards of Accuracy
+							{"select", "itemID", 70338 },	-- Ruthless Gladiator's Wristguards of Alacrity
+							{"select", "itemID", 70339 },	-- Ruthless Gladiator's Links of Accuracy
+							{"select", "itemID", 70336 },	-- Ruthless Gladiator's Links of Cruelty
+							{"select", "itemID", 70337 },	-- Ruthless Gladiator's Sabatons of Alacrity
+							{"select", "itemID", 70335 },	-- Ruthless Gladiator's Sabatons of Cruelty
+							{"exclude", "itemID", 146499 },	-- Exclude itself to stop duplicating 
+						},
 					}),
 					i(70259, {	-- Ruthless Gladiator's Chain Armor
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -1939,7 +1966,13 @@ _.PVP =
 				cl(MAGE, {
 					i(146517, {	-- Ensemble: Ruthless Gladiator's Silk Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -673, -661, 8 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -9979, -673, -661, 8 },
+							{"select", "itemID", 70365 },	-- Ruthless Gladiator's Cuffs of Prowess
+							{"select", "itemID", 70360 },	-- Ruthless Gladiator's Cord of Cruelty
+							{"select", "itemID", 70361 },	-- Ruthless Gladiator's Treads of Cruelty
+							{"exclude", "itemID", 146517 },	-- Exclude itself to stop duplicating 
+						},
 					}),
 					i(70303, {	-- Ruthless Gladiator's Silk Amice
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -1961,7 +1994,16 @@ _.PVP =
 				cl(PALADIN, {
 					i(146515, {	-- Ensemble: Ruthless Gladiator's Scaled Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -673, -661, 2 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -9979, -673, -661, 2 },
+							{"select", "itemID", 70334 },	-- Ruthless Gladiator's Bracers of Meditation
+							{"select", "itemID", 70325 },	-- Ruthless Gladiator's Bracers of Prowess
+							{"select", "itemID", 70319 },	-- Ruthless Gladiator's Clasp of Cruelty
+							{"select", "itemID", 70332 },	-- Ruthless Gladiator's Clasp of Meditation
+							{"select", "itemID", 70324 },	-- Ruthless Gladiator's Greaves of Alacrity
+							{"select", "itemID", 70333 },	-- Ruthless Gladiator's Greaves of Meditation
+							{"exclude", "itemID", 146515 },	-- Exclude itself to stop duplicating 
+						},
 					}),
 					i(70353, {	-- Ruthless Gladiator's Ornamented Chestguard
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -1997,7 +2039,13 @@ _.PVP =
 				cl(PRIEST, {
 					i(146513, {	-- Ensemble: Ruthless Gladiator's Satin Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -673, -661, 5 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -9979, -673, -661, 5 },
+							{"select", "itemID", 70366 },	-- Ruthless Gladiator's Cuffs of Meditation
+							{"select", "itemID", 70368 },	-- Ruthless Gladiator's Cord of Meditation
+							{"select", "itemID", 70367 },	-- Ruthless Gladiator's Treads of Meditation
+							{"exclude", "itemID", 146513 },	-- Exclude itself to stop duplicating 
+						},
 					}),
 					i(70304, {	-- Ruthless Gladiator's Mooncloth Gloves
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -2033,7 +2081,16 @@ _.PVP =
 				cl(ROGUE, {
 					i(146507, {	-- Ensemble: Ruthless Gladiator's Leather Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -673, -661, 4 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -9979, -673, -661, 4 },
+							{"select", "itemID", 70350 },	-- Ruthless Gladiator's Armwraps of Accuracy
+							{"select", "itemID", 70352 },	-- Ruthless Gladiator's Armwraps of Alacrity
+							{"select", "itemID", 70349 },	-- Ruthless Gladiator's Waistband of Accuracy
+							{"select", "itemID", 70347 },	-- Ruthless Gladiator's Waistband of Cruelty
+							{"select", "itemID", 70351 },	-- Ruthless Gladiator's Boots of Alacrity
+							{"select", "itemID", 70348 },	-- Ruthless Gladiator's Boots of Cruelty
+							{"exclude", "itemID", 146507 },	-- Exclude itself to stop duplicating 
+						},
 					}),
 					i(70295, {	-- Ruthless Gladiator's Leather Gloves
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -2054,7 +2111,16 @@ _.PVP =
 				cl(SHAMAN, {
 					i(146511, {	-- Ensemble: Ruthless Gladiator's Ringmail Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -673, -661, 7 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -9979, -673, -661, 7 },
+							{"select", "itemID", 70330 },	-- Ruthless Gladiator's Armbands of Meditation
+							{"select", "itemID", 70342 },	-- Ruthless Gladiator's Armbands of Prowess
+							{"select", "itemID", 70331 },	-- Ruthless Gladiator's Waistguard of Cruelty
+							{"select", "itemID", 70328 },	-- Ruthless Gladiator's Waistguard of Meditation
+							{"select", "itemID", 70341 },	-- Ruthless Gladiator's Sabatons of Alacrity
+							{"select", "itemID", 70329 },	-- Ruthless Gladiator's Sabatons of Meditation
+							{"exclude", "itemID", 146511 },	-- Exclude itself to stop duplicating 
+						},
 					}),
 					i(70269, {	-- Ruthless Gladiator's Linked Armor
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -2105,7 +2171,13 @@ _.PVP =
 				cl(WARLOCK, {
 					i(146505, {	-- Ensemble: Ruthless Gladiator's Felweave Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -673, -661, 9 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -9979, -673, -661, 9 },
+							{"select", "itemID", 70363 },	-- Ruthless Gladiator's Cuffs of Accuracy
+							{"select", "itemID", 70362 },	-- Ruthless Gladiator's Cord of Accuracy
+							{"select", "itemID", 70364 },	-- Ruthless Gladiator's Treads of Alacrity
+							{"exclude", "itemID", 146505 },	-- Exclude itself to stop duplicating 
+						},
 					}),
 					i(70318, {	-- Ruthless Gladiator's Felweave Amice
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -2126,7 +2198,13 @@ _.PVP =
 				cl(WARRIOR, {
 					i(146509, {	-- Ensemble: Ruthless Gladiator's Plate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -673, -661, 1 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -9979, -673, -661, 1 },
+							{"select", "itemID", 70322 },	-- Ruthless Gladiator's Armplates of Alacrity
+							{"select", "itemID", 70326 },	-- Ruthless Gladiator's Girdle of Prowess
+							{"select", "itemID", 70323 },	-- Ruthless Gladiator's Warboots of Alacrity
+							{"exclude", "itemID", 146509 },	-- Exclude itself to stop duplicating 
+						},
 					}),
 					i(70254, {	-- Ruthless Gladiator's Plate Chestpiece
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -2359,6 +2437,107 @@ _.PVP =
 				}),
 			}),
 			n(-659, {	-- Aspirant (Season 11 version)
+				cl(DEATHKNIGHT, {
+					un(REMOVED_FROM_GAME, i(72332)),	-- Ruthless Gladiator's Dreadplate Chestpiece
+					un(REMOVED_FROM_GAME, i(72333)),	-- Ruthless Gladiator's Dreadplate Gauntlets
+					un(REMOVED_FROM_GAME, i(72334)),	-- Ruthless Gladiator's Dreadplate Helm
+					un(REMOVED_FROM_GAME, i(72335)),	-- Ruthless Gladiator's Dreadplate Legguards
+					un(REMOVED_FROM_GAME, i(72336)),	-- Ruthless Gladiator's Dreadplate Shoulders
+				}),
+				cl(DRUID, {
+					un(REMOVED_FROM_GAME, i(72337)),	-- Ruthless Gladiator's Dragonhide Gloves
+					un(REMOVED_FROM_GAME, i(72338)),	-- Ruthless Gladiator's Dragonhide Helm
+					un(REMOVED_FROM_GAME, i(72339)),	-- Ruthless Gladiator's Dragonhide Legguards
+					un(REMOVED_FROM_GAME, i(72340)),	-- Ruthless Gladiator's Dragonhide Robes
+					un(REMOVED_FROM_GAME, i(72341)),	-- Ruthless Gladiator's Dragonhide Spaulders
+					un(REMOVED_FROM_GAME, i(72345)),	-- Ruthless Gladiator's Kodohide Gloves
+					un(REMOVED_FROM_GAME, i(72346)),	-- Ruthless Gladiator's Kodohide Helm
+					un(REMOVED_FROM_GAME, i(72347)),	-- Ruthless Gladiator's Kodohide Legguards
+					un(REMOVED_FROM_GAME, i(72348)),	-- Ruthless Gladiator's Kodohide Robes
+					un(REMOVED_FROM_GAME, i(72349)),	-- Ruthless Gladiator's Kodohide Spaulders
+					un(REMOVED_FROM_GAME, i(72353)),	-- Ruthless Gladiator's Wyrmhide Gloves
+					un(REMOVED_FROM_GAME, i(72354)),	-- Ruthless Gladiator's Wyrmhide Helm
+					un(REMOVED_FROM_GAME, i(72355)),	-- Ruthless Gladiator's Wyrmhide Legguards
+					un(REMOVED_FROM_GAME, i(72356)),	-- Ruthless Gladiator's Wyrmhide Robes
+					un(REMOVED_FROM_GAME, i(72357)),	-- Ruthless Gladiator's Wyrmhide Spaulders
+				}),
+				cl(HUNTER, {
+					un(REMOVED_FROM_GAME, i(72368)),	-- Ruthless Gladiator's Chain Armor
+					un(REMOVED_FROM_GAME, i(72369)),	-- Ruthless Gladiator's Chain Gauntlets
+					un(REMOVED_FROM_GAME, i(72370)),	-- Ruthless Gladiator's Chain Helm
+					un(REMOVED_FROM_GAME, i(72371)),	-- Ruthless Gladiator's Chain Legs
+					un(REMOVED_FROM_GAME, i(72372)),	-- Ruthless Gladiator's Chain Spaulders
+				}),
+				cl(MAGE, {
+					un(REMOVED_FROM_GAME, i(72377)),	-- Ruthless Gladiator's Silk Amice
+					un(REMOVED_FROM_GAME, i(72374)),	-- Ruthless Gladiator's Silk Cowl
+					un(REMOVED_FROM_GAME, i(72373)),	-- Ruthless Gladiator's Silk Handguards
+					un(REMOVED_FROM_GAME, i(72376)),	-- Ruthless Gladiator's Silk Robe
+					un(REMOVED_FROM_GAME, i(72375)),	-- Ruthless Gladiator's Silk Trousers
+				}),
+				cl(PALADIN, {
+					un(REMOVED_FROM_GAME, i(72389)),	-- Ruthless Gladiator's Ornamented Chestguard
+					un(REMOVED_FROM_GAME, i(72390)),	-- Ruthless Gladiator's Ornamented Gloves
+					un(REMOVED_FROM_GAME, i(72391)),	-- Ruthless Gladiator's Ornamented Headcover
+					un(REMOVED_FROM_GAME, i(72392)),	-- Ruthless Gladiator's Ornamented Legplates
+					un(REMOVED_FROM_GAME, i(72393)),	-- Ruthless Gladiator's Ornamented Spaulders
+					un(REMOVED_FROM_GAME, i(72378)),	-- Ruthless Gladiator's Scaled Chestpiece
+					un(REMOVED_FROM_GAME, i(72379)),	-- Ruthless Gladiator's Scaled Gauntlets
+					un(REMOVED_FROM_GAME, i(72380)),	-- Ruthless Gladiator's Scaled Helm
+					un(REMOVED_FROM_GAME, i(72381)),	-- Ruthless Gladiator's Scaled Legguards
+					un(REMOVED_FROM_GAME, i(72382)),	-- Ruthless Gladiator's Scaled Shoulders
+				}),
+				cl(PRIEST, {
+					un(REMOVED_FROM_GAME, i(72400)),	-- Ruthless Gladiator's Mooncloth Gloves
+					un(REMOVED_FROM_GAME, i(72401)),	-- Ruthless Gladiator's Mooncloth Helm
+					un(REMOVED_FROM_GAME, i(72402)),	-- Ruthless Gladiator's Mooncloth Leggings
+					un(REMOVED_FROM_GAME, i(72404)),	-- Ruthless Gladiator's Mooncloth Mantle
+					un(REMOVED_FROM_GAME, i(72403)),	-- Ruthless Gladiator's Mooncloth Robe
+					un(REMOVED_FROM_GAME, i(72405)),	-- Ruthless Gladiator's Satin Gloves
+					un(REMOVED_FROM_GAME, i(72406)),	-- Ruthless Gladiator's Satin Hood
+					un(REMOVED_FROM_GAME, i(72407)),	-- Ruthless Gladiator's Satin Leggings
+					un(REMOVED_FROM_GAME, i(72409)),	-- Ruthless Gladiator's Satin Mantle
+					un(REMOVED_FROM_GAME, i(72408)),	-- Ruthless Gladiator's Satin Robe
+				}),
+				cl(ROGUE, {
+					un(REMOVED_FROM_GAME, i(72423)),	-- Ruthless Gladiator's Leather Gloves
+					un(REMOVED_FROM_GAME, i(72424)),	-- Ruthless Gladiator's Leather Helm
+					un(REMOVED_FROM_GAME, i(72425)),	-- Ruthless Gladiator's Leather Legguards
+					un(REMOVED_FROM_GAME, i(72426)),	-- Ruthless Gladiator's Leather Spaulders
+					un(REMOVED_FROM_GAME, i(72422)),	-- Ruthless Gladiator's Leather Tunic
+				}),
+				cl(SHAMAN, {
+					un(REMOVED_FROM_GAME, i(72437)),	-- Ruthless Gladiator's Linked Armor
+					un(REMOVED_FROM_GAME, i(72438)),	-- Ruthless Gladiator's Linked Gauntlets
+					un(REMOVED_FROM_GAME, i(72439)),	-- Ruthless Gladiator's Linked Helm
+					un(REMOVED_FROM_GAME, i(72440)),	-- Ruthless Gladiator's Linked Leggings
+					un(REMOVED_FROM_GAME, i(72441)),	-- Ruthless Gladiator's Linked Spaulders
+					un(REMOVED_FROM_GAME, i(72443)),	-- Ruthless Gladiator's Mail Armor
+					un(REMOVED_FROM_GAME, i(72444)),	-- Ruthless Gladiator's Mail Gauntlets
+					un(REMOVED_FROM_GAME, i(72445)),	-- Ruthless Gladiator's Mail Helm
+					un(REMOVED_FROM_GAME, i(72446)),	-- Ruthless Gladiator's Mail Leggings
+					un(REMOVED_FROM_GAME, i(72447)),	-- Ruthless Gladiator's Mail Spaulders
+					un(REMOVED_FROM_GAME, i(72432)),	-- Ruthless Gladiator's Ringmail Armor
+					un(REMOVED_FROM_GAME, i(72433)),	-- Ruthless Gladiator's Ringmail Gauntlets
+					un(REMOVED_FROM_GAME, i(72434)),	-- Ruthless Gladiator's Ringmail Helm
+					un(REMOVED_FROM_GAME, i(72435)),	-- Ruthless Gladiator's Ringmail Leggings
+					un(REMOVED_FROM_GAME, i(72436)),	-- Ruthless Gladiator's Ringmail Spaulders
+
+				}),
+				cl(WARLOCK, {
+					un(REMOVED_FROM_GAME, i(72463)),	-- Ruthless Gladiator's Felweave Amice
+					un(REMOVED_FROM_GAME, i(72460)),	-- Ruthless Gladiator's Felweave Cowl
+					un(REMOVED_FROM_GAME, i(72459)),	-- Ruthless Gladiator's Felweave Handguards
+					un(REMOVED_FROM_GAME, i(72462)),	-- Ruthless Gladiator's Felweave Raiment
+					un(REMOVED_FROM_GAME, i(72461)),	-- Ruthless Gladiator's Felweave Trousers
+				}),
+				cl(WARRIOR, {
+					un(REMOVED_FROM_GAME, i(72464)),	-- Ruthless Gladiator's Plate Chestpiece
+					un(REMOVED_FROM_GAME, i(72465)),	-- Ruthless Gladiator's Plate Gauntlets
+					un(REMOVED_FROM_GAME, i(72466)),	-- Ruthless Gladiator's Plate Helm
+					un(REMOVED_FROM_GAME, i(72467)),	-- Ruthless Gladiator's Plate Legguards
+					un(REMOVED_FROM_GAME, i(72468)),	-- Ruthless Gladiator's Plate Shoulders
+				}),
 				n(-322, {	-- Back
 					un(REMOVED_FROM_GAME, i(72305)),	-- Ruthless Gladiator's Cape of Cruelty
 					un(REMOVED_FROM_GAME, i(72306)),	-- Ruthless Gladiator's Cape of Prowess
@@ -2496,11 +2675,11 @@ _.PVP =
 				}),
 				cl(DEATHKNIGHT, {
 					un(NEVER_IMPLEMENTED, i(146483)),	-- Ensemble: Elite Ruthless Gladiator's Dreadplate Armor
-					un(REMOVED_FROM_GAME, i(70490)),	-- Ruthless Gladiator's Dreadplate Shoulders
-					un(REMOVED_FROM_GAME, i(70491)),	-- Ruthless Gladiator's Dreadplate Legs
+					un(REMOVED_FROM_GAME, i(70494)),	-- Ruthless Gladiator's Dreadplate Chestpiece
+					un(REMOVED_FROM_GAME, i(70493)),	-- Ruthless Gladiator's Dreadplate Gauntlets
 					un(REMOVED_FROM_GAME, i(70492)),	-- Ruthless Gladiator's Dreadplate Helm
-					un(REMOVED_FROM_GAME, i(70493)),	-- Ruthless Gladiator's Dreadplate Gloves
-					un(REMOVED_FROM_GAME, i(70494)),	-- Ruthless Gladiator's Dreadplate Chest
+					un(REMOVED_FROM_GAME, i(70491)),	-- Ruthless Gladiator's Dreadplate Legguards
+					un(REMOVED_FROM_GAME, i(70490)),	-- Ruthless Gladiator's Dreadplate Shoulders
 				}),
 				cl(DRUID, {
 					un(NEVER_IMPLEMENTED, i(146481)),	-- Ensemble: Elite Ruthless Gladiator's Dragonhide Armor
@@ -2538,15 +2717,15 @@ _.PVP =
 				}),
 				cl(PALADIN, {
 					un(NEVER_IMPLEMENTED, i(146495)),	-- Ensemble: Elite Ruthless Gladiator's Scaled Armor
-					un(REMOVED_FROM_GAME, i(70419)),	-- Ruthless Gladiator's Ornamented Chest
+					un(REMOVED_FROM_GAME, i(70419)),	-- Ruthless Gladiator's Ornamented Chestguard
 					un(REMOVED_FROM_GAME, i(70418)),	-- Ruthless Gladiator's Ornamented Gloves
-					un(REMOVED_FROM_GAME, i(70417)),	-- Ruthless Gladiator's Ornamented Head
-					un(REMOVED_FROM_GAME, i(70416)),	-- Ruthless Gladiator's Ornamented Legs
+					un(REMOVED_FROM_GAME, i(70417)),	-- Ruthless Gladiator's Ornamented Headcover
+					un(REMOVED_FROM_GAME, i(70416)),	-- Ruthless Gladiator's Ornamented Legplates
 					un(REMOVED_FROM_GAME, i(70415)),	-- Ruthless Gladiator's Ornamented Spaulders
 					un(REMOVED_FROM_GAME, i(70489)),	-- Ruthless Gladiator's Scaled Chest
-					un(REMOVED_FROM_GAME, i(70488)),	-- Ruthless Gladiator's Scaled Gloves
+					un(REMOVED_FROM_GAME, i(70488)),	-- Ruthless Gladiator's Scaled Gauntlets
 					un(REMOVED_FROM_GAME, i(70487)),	-- Ruthless Gladiator's Scaled Helm
-					un(REMOVED_FROM_GAME, i(70483)),	-- Ruthless Gladiator's Scaled Legs
+					un(REMOVED_FROM_GAME, i(70483)),	-- Ruthless Gladiator's Scaled Legguards
 					un(REMOVED_FROM_GAME, i(70482)),	-- Ruthless Gladiator's Scaled Shoulders
 				}),
 				cl(PRIEST, {
@@ -2572,21 +2751,21 @@ _.PVP =
 				}),
 				cl(SHAMAN, {
 					un(NEVER_IMPLEMENTED, i(146491)),	-- Ensemble: Elite Ruthless Gladiator's Ringmail Armor
-					un(REMOVED_FROM_GAME, i(70420)),	-- Ruthless Gladiator's Mail Spaulders
-					un(REMOVED_FROM_GAME, i(70421)),	-- Ruthless Gladiator's Mail Legs
-					un(REMOVED_FROM_GAME, i(70422)),	-- Ruthless Gladiator's Mail Helm
-					un(REMOVED_FROM_GAME, i(70423)),	-- Ruthless Gladiator's Mail Gauntlets
-					un(REMOVED_FROM_GAME, i(70424)),	-- Ruthless Gladiator's Mail Armor
-					un(REMOVED_FROM_GAME, i(70456)),	-- Ruthless Gladiator's Linked Spaulders
-					un(REMOVED_FROM_GAME, i(70457)),	-- Ruthless Gladiator's Linked Legs
-					un(REMOVED_FROM_GAME, i(70458)),	-- Ruthless Gladiator's Linked Helm
-					un(REMOVED_FROM_GAME, i(70459)),	-- Ruthless Gladiator's Linked Gauntlets
 					un(REMOVED_FROM_GAME, i(70460)),	-- Ruthless Gladiator's Linked Armor
+					un(REMOVED_FROM_GAME, i(70459)),	-- Ruthless Gladiator's Linked Gauntlets
+					un(REMOVED_FROM_GAME, i(70458)),	-- Ruthless Gladiator's Linked Helm
+					un(REMOVED_FROM_GAME, i(70457)),	-- Ruthless Gladiator's Linked Leggings
+					un(REMOVED_FROM_GAME, i(70456)),	-- Ruthless Gladiator's Linked Spaulders
+					un(REMOVED_FROM_GAME, i(70424)),	-- Ruthless Gladiator's Mail Armor
+					un(REMOVED_FROM_GAME, i(70423)),	-- Ruthless Gladiator's Mail Gauntlets
+					un(REMOVED_FROM_GAME, i(70422)),	-- Ruthless Gladiator's Mail Helm
+					un(REMOVED_FROM_GAME, i(70421)),	-- Ruthless Gladiator's Mail Leggings
+					un(REMOVED_FROM_GAME, i(70420)),	-- Ruthless Gladiator's Mail Spaulders
 					un(REMOVED_FROM_GAME, i(70433)),	-- Ruthless Gladiator's Ringmail Armor
-					un(REMOVED_FROM_GAME, i(70464)),	-- Ruthless Gladiator's Ringmail Spaulders
-					un(REMOVED_FROM_GAME, i(70465)),	-- Ruthless Gladiator's Ringmail Legs
-					un(REMOVED_FROM_GAME, i(70466)),	-- Ruthless Gladiator's Ringmail Helm
 					un(REMOVED_FROM_GAME, i(70467)),	-- Ruthless Gladiator's Ringmail Gauntlets
+					un(REMOVED_FROM_GAME, i(70466)),	-- Ruthless Gladiator's Ringmail Helm
+					un(REMOVED_FROM_GAME, i(70465)),	-- Ruthless Gladiator's Ringmail Leggings
+					un(REMOVED_FROM_GAME, i(70464)),	-- Ruthless Gladiator's Ringmail Spaulders
 				}),
 				cl(WARLOCK, {
 					un(NEVER_IMPLEMENTED, i(146485)),	-- Ensemble: Elite Ruthless Gladiator's Felweave Armor
@@ -2598,8 +2777,8 @@ _.PVP =
 				}),
 				cl(WARRIOR, {
 					un(NEVER_IMPLEMENTED, i(146489)),	-- Ensemble: Elite Ruthless Gladiator's Plate Armor
-					un(REMOVED_FROM_GAME, i(70481)),	-- Ruthless Gladiator's Plate Chest
-					un(REMOVED_FROM_GAME, i(70480)),	-- Ruthless Gladiator's Plate Gloves
+					un(REMOVED_FROM_GAME, i(70481)),	-- Ruthless Gladiator's Plate Chestpiece
+					un(REMOVED_FROM_GAME, i(70480)),	-- Ruthless Gladiator's Plate Gauntlets
 					un(REMOVED_FROM_GAME, i(70479)),	-- Ruthless Gladiator's Plate Helm
 					un(REMOVED_FROM_GAME, i(70478)),	-- Ruthless Gladiator's Plate Legguards
 					un(REMOVED_FROM_GAME, i(70477)),	-- Ruthless Gladiator's Plate Shoulders
