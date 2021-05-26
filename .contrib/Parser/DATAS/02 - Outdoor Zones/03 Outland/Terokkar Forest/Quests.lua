@@ -327,12 +327,6 @@ _.Zones =
 					["provider"] = { "n", 22458 },	-- Chief Archaeologist Letoll
 					["coord"] = { 31.0, 76.1, TEROKKAR_FOREST },
 				}),
-				q(29583, {	-- Eckert the Mad
-					["provider"] = { "n", 21400 },	-- Eckert
-					["coord"] = { 57.6, 53.6, TEROKKAR_FOREST },
-					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,
-				}),
 				q(10051, {	-- Escape from Firewing Point! (A)
 					["provider"] = { "n", 18760 },	-- Isla Starmane
 					["coord"] = { 73.9, 35.2, TEROKKAR_FOREST },
@@ -400,12 +394,6 @@ _.Zones =
 					["provider"] = { "n", 22481 },	-- Dwarfowitz
 					["coord"] = { 30.9, 76.1, TEROKKAR_FOREST },
 					["sourceQuest"] = 10922,	-- Digging Through Bones
-				}),
-				q(29582, {	-- Grek's Crazy Night
-					["provider"] = { "n", 19606 },	-- Grek
-					["coord"] = { 49.8, 45.3, TEROKKAR_FOREST },
-					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
 				}),
 				q(10031, {	-- Helping the Lost Find Their Way
 					["provider"] = { "n", 19417 },	-- Ramdor the Mad
@@ -587,15 +575,6 @@ _.Zones =
 						i(31765),	-- Redeemer's Plate
 						i(31764),	-- Stillfire Leggings
 						i(31760),	-- Miniwing (PET!)
-					},
-				}),
-				q(10218, {	-- Someone Else's Hard Work Pays Off
-					["u"] = REMOVED_FROM_GAME,
-					["groups"] = {
-						un(REMOVED_FROM_GAME, i(29328)),	-- Consortium Prince's Wrap
-						un(REMOVED_FROM_GAME, i(29327)),	-- Cryo-mitts
-						un(REMOVED_FROM_GAME, i(29326)),	-- Consortium Mantle of Phasing
-						un(REMOVED_FROM_GAME, i(29325)),	-- Flesh Beast's Metal Greaves
 					},
 				}),
 				q(10038, {	-- Speak with Private Weeks
@@ -829,15 +808,6 @@ _.Zones =
 					["groups"] = {
 						i(25937),	-- Terokkar Tablet of Precision
 						i(25936),	-- Terokkar Tablet of Vim
-					},
-				}),
-				q(10165, {	-- Undercutting the Competition
-					["u"] = REMOVED_FROM_GAME,
-					["groups"] = {
-						un(REMOVED_FROM_GAME, i(29342)),	-- Consortium Plated Legguards
-						un(REMOVED_FROM_GAME, i(29343)),	-- Haramad's Leggings of the Third Coin
-						un(REMOVED_FROM_GAME, i(29345)),	-- Haramad's Leg Wraps
-						un(REMOVED_FROM_GAME, i(29344)),	-- Haramad's Linked Chain Pantaloons
 					},
 				}),
 				q(9998,  {	-- Unruly Neighbors

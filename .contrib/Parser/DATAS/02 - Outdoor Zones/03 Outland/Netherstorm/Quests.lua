@@ -170,6 +170,9 @@ _.Zones =
 					["provider"] = { "n", 20448 },	-- Commander Ameer
 					["coord"] = { 59.5, 32.4, NETHERSTORM },
 					["sourceQuest"] = 10973,	-- A Thousand Worlds
+					["groups"] = {
+						i(32064),	-- Protectorate Treasure Cache
+					},
 				}),
 				q(10380, {	-- A Dark Pact
 					["provider"] = { "n", 20780 },	-- Kaylaan

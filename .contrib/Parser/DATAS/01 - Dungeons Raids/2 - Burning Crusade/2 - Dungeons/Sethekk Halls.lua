@@ -11,13 +11,6 @@ _.Instances = { tier(2, {	-- Burning Crusade
 		},
 		["coord"] = { 44.93, 65.61, TEROKKAR_FOREST },	-- Sethekk Halls, Terokkar Forest
 		["groups"] = {
-			n(ZONEDROPS, {
-				i(25731, {	-- Pattern: Stylin' Crimson Hat
-					["crs"] = {
-						18322,	-- Sethekk Ravenguard
-					},
-				}),
-			}),
 			n(QUESTS, {
 				q(10097,  {	-- Brother Against Brother
 					["u"] = REMOVED_FROM_GAME,
@@ -47,6 +40,18 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(29330),	-- The Saga of Terokk
 						i(29332),	-- Terokk's Mask
 						i(29329),	-- Terokk's Quill
+					},
+				}),
+			}),
+			n(COMMON_BOSS_DROPS, {
+				i(28558, {	-- Spirit Shard
+					["description"] = "Spirit Shards are currency tokens dropped by bosses in the Auchindoun instances. For shards to drop the player's faction must control the five Spirit Towers in the Bone Wastes. Bosses in the Mana-Tombs and Auchenai Crypts drop one shard each; bosses in the Sethekk Halls and Shadow Labyrinth drop two each.",
+				}),
+			}),
+			n(ZONEDROPS, {
+				i(25731, {	-- Pattern: Stylin' Crimson Hat
+					["crs"] = {
+						18322,	-- Sethekk Ravenguard
 					},
 				}),
 			}),
