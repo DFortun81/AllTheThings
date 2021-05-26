@@ -222,6 +222,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 							-- #if AFTER 7.3.5
 							i(27416),	-- Fetish of the Fallen
 							-- #endif
+							i(33836),	-- The Exarch's Soul Gem
 							n(18478, {	-- Avatar of the Fallen
 								["description"] = "This mob will spawn once the Exarch reaches 25%. If you want the extra loot, the Exarch must stay alive until he spawns.",
 								["groups"] = {

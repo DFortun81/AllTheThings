@@ -210,7 +210,9 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_FIVE, {	-- Burning Crusade
 						i(34797),	-- Sun-Infused Focus Staff
 						i(34809),	-- Sunrage Treads
 						i(34807),	-- Sunstrider Warboots
+						-- #if AFTER 7.3.5
 						i(34614),	-- Tunic of the Ranger Lord
+						-- #endif
 						i(34157),	-- Head of Kael'thas
 					},
 				})
