@@ -1088,7 +1088,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(60627)),	-- Vicious Gladiator's Treads of Dominance
 					un(REMOVED_FROM_GAME, i(60633)),	-- Vicious Gladiator's Treads of Dominance
 				}),
-				n(-384,	{	-- Neck
+				f(51,	{	-- Neck
 					i(60673),	-- Vicious Gladiator's Choker of Accuracy
 					i(60670),	-- Vicious Gladiator's Choker of Proficiency
 					i(60669),	-- Vicious Gladiator's Necklace of Proficiency
@@ -1098,7 +1098,7 @@ _.PVP =
 					i(60664),	-- Vicious Gladiator's Pendant of Meditation
 					un(REMOVED_FROM_GAME, i(60666)), 	-- Vicious Gladiator's Pendant of Conquest
 				}),
-				n(-385,	{	-- Finger
+				f(52,	{	-- Finger
 					i(60647),	-- Vicious Gladiator's Band of Accuracy
 					i(60645),	-- Vicious Gladiator's Band of Cruelty
 					i(60649),	-- Vicious Gladiator's Band of Meditation
@@ -1115,7 +1115,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(61390)), 	-- Vicious Gladiator's Relic of Triumph
 					un(REMOVED_FROM_GAME, i(61347)), 	-- Vicious Gladiator's War Edge (Throw wep)
 				}),
-				n(-386,	{	-- Trinket
+				f(53,	{	-- Trinket
 					i(61033),	-- Vicious Gladiator's Badge of Conquest
 					i(61026),	-- Vicious Gladiator's Emblem of Cruelty
 					i(61031),	-- Vicious Gladiator's Emblem of Meditation
@@ -1146,8 +1146,106 @@ _.PVP =
 				}),
 			}),
 			n(-659, {	-- Aspirant (Season 10 version)
-				
-				
+				cl(DEATHKNIGHT, {
+					un(REMOVED_FROM_GAME, i(70558)),	-- Vicious Gladiator's Dreadplate Chestpiece
+					un(REMOVED_FROM_GAME, i(70559)),	-- Vicious Gladiator's Dreadplate Gauntlets
+					un(REMOVED_FROM_GAME, i(70560)),	-- Vicious Gladiator's Dreadplate Helm
+					un(REMOVED_FROM_GAME, i(70561)),	-- Vicious Gladiator's Dreadplate Legguards
+					un(REMOVED_FROM_GAME, i(70562)),	-- Vicious Gladiator's Dreadplate Shoulders
+				}),
+				cl(DRUID, {
+					un(REMOVED_FROM_GAME, i(70550)),	-- Vicious Gladiator's Dragonhide Gloves
+					un(REMOVED_FROM_GAME, i(70551)),	-- Vicious Gladiator's Dragonhide Helm
+					un(REMOVED_FROM_GAME, i(70552)),	-- Vicious Gladiator's Dragonhide Legguards
+					un(REMOVED_FROM_GAME, i(70553)),	-- Vicious Gladiator's Dragonhide Robes
+					un(REMOVED_FROM_GAME, i(70554)),	-- Vicious Gladiator's Dragonhide Spaulders
+					un(REMOVED_FROM_GAME, i(70580)),	-- Vicious Gladiator's Kodohide Gloves
+					un(REMOVED_FROM_GAME, i(70581)),	-- Vicious Gladiator's Kodohide Helm
+					un(REMOVED_FROM_GAME, i(70582)),	-- Vicious Gladiator's Kodohide Legguards
+					un(REMOVED_FROM_GAME, i(70583)),	-- Vicious Gladiator's Kodohide Robes
+					un(REMOVED_FROM_GAME, i(70584)),	-- Vicious Gladiator's Kodohide Spaulders
+					un(REMOVED_FROM_GAME, i(70671)),	-- Vicious Gladiator's Wyrmhide Gloves
+					un(REMOVED_FROM_GAME, i(70672)),	-- Vicious Gladiator's Wyrmhide Helm
+					un(REMOVED_FROM_GAME, i(70673)),	-- Vicious Gladiator's Wyrmhide Legguards
+					un(REMOVED_FROM_GAME, i(70674)),	-- Vicious Gladiator's Wyrmhide Robes
+					un(REMOVED_FROM_GAME, i(70675)),	-- Vicious Gladiator's Wyrmhide Spaulders
+				}),
+				cl(HUNTER, {
+					un(REMOVED_FROM_GAME, i(70533)),	-- Vicious Gladiator's Chain Armor
+					un(REMOVED_FROM_GAME, i(70534)),	-- Vicious Gladiator's Chain Gauntlets
+					un(REMOVED_FROM_GAME, i(70535)),	-- Vicious Gladiator's Chain Helm
+					un(REMOVED_FROM_GAME, i(70536)),	-- Vicious Gladiator's Chain Leggings
+					un(REMOVED_FROM_GAME, i(70537)),	-- Vicious Gladiator's Chain Spaulders
+				}),
+				cl(MAGE, {
+					un(REMOVED_FROM_GAME, i(70655)),	-- Vicious Gladiator's Silk Amice
+					un(REMOVED_FROM_GAME, i(70656)),	-- Vicious Gladiator's Silk Cowl
+					un(REMOVED_FROM_GAME, i(70657)),	-- Vicious Gladiator's Silk Handguards
+					un(REMOVED_FROM_GAME, i(70658)),	-- Vicious Gladiator's Silk Robe
+					un(REMOVED_FROM_GAME, i(70659)),	-- Vicious Gladiator's Silk Trousers
+				}),
+				cl(PALADIN, {
+					un(REMOVED_FROM_GAME, i(70615)),	-- Vicious Gladiator's Ornamented Chestguard
+					un(REMOVED_FROM_GAME, i(70616)),	-- Vicious Gladiator's Ornamented Gloves
+					un(REMOVED_FROM_GAME, i(70617)),	-- Vicious Gladiator's Ornamented Headcover
+					un(REMOVED_FROM_GAME, i(70618)),	-- Vicious Gladiator's Ornamented Legplates
+					un(REMOVED_FROM_GAME, i(70619)),	-- Vicious Gladiator's Ornamented Spaulders
+					un(REMOVED_FROM_GAME, i(70648)),	-- Vicious Gladiator's Scaled Chestpiece
+					un(REMOVED_FROM_GAME, i(70649)),	-- Vicious Gladiator's Scaled Gauntlets
+					un(REMOVED_FROM_GAME, i(70650)),	-- Vicious Gladiator's Scaled Helm
+					un(REMOVED_FROM_GAME, i(70651)),	-- Vicious Gladiator's Scaled Legguards
+					un(REMOVED_FROM_GAME, i(70652)),	-- Vicious Gladiator's Scaled Shoulders
+				}),
+				cl(PRIEST, {
+					un(REMOVED_FROM_GAME, i(70608)),	-- Vicious Gladiator's Mooncloth Gloves
+					un(REMOVED_FROM_GAME, i(70609)),	-- Vicious Gladiator's Mooncloth Helm
+					un(REMOVED_FROM_GAME, i(70610)),	-- Vicious Gladiator's Mooncloth Leggings
+					un(REMOVED_FROM_GAME, i(70611)),	-- Vicious Gladiator's mooncloth Mantle
+					un(REMOVED_FROM_GAME, i(70612)),	-- Vicious Gladiator's Mooncloth Robe
+					un(REMOVED_FROM_GAME, i(70643)),	-- Vicious Gladiator's Satin Gloves
+					un(REMOVED_FROM_GAME, i(70644)),	-- Vicious Gladiator's Satin Hood
+					un(REMOVED_FROM_GAME, i(70645)),	-- Vicious Gladiator's Satin Leggings
+					un(REMOVED_FROM_GAME, i(70646)),	-- Vicious Gladiator's Satin Mantle
+					un(REMOVED_FROM_GAME, i(70647)),	-- Vicious Gladiator's Satin Robe
+				}),
+				cl(ROGUE, {
+					un(REMOVED_FROM_GAME, i(70585)),	-- Vicious Gladiator's Leather Gloves
+					un(REMOVED_FROM_GAME, i(70586)),	-- Vicious Gladiator's Leather Helm
+					un(REMOVED_FROM_GAME, i(70587)),	-- Vicious Gladiator's Leather Legguards
+					un(REMOVED_FROM_GAME, i(70588)),	-- Vicious Gladiator's Leather Spaulders
+					un(REMOVED_FROM_GAME, i(70589)),	-- Vicious Gladiator's Leather Tunic
+				}),
+				cl(SHAMAN, {				
+					un(REMOVED_FROM_GAME, i(70590)),	-- Vicious Gladiator's Linked Armor
+					un(REMOVED_FROM_GAME, i(70591)),	-- Vicious Gladiator's Linked Gauntlets
+					un(REMOVED_FROM_GAME, i(70592)),	-- Vicious Gladiator's Linked Helm
+					un(REMOVED_FROM_GAME, i(70593)),	-- Vicious Gladiator's Linked Leggings
+					un(REMOVED_FROM_GAME, i(70594)),	-- Vicious Gladiator's Linked Spaulders
+					un(REMOVED_FROM_GAME, i(70597)),	-- Vicious Gladiator's Mail Armor
+					un(REMOVED_FROM_GAME, i(70598)),	-- Vicious Gladiator's Mail Gauntlets
+					un(REMOVED_FROM_GAME, i(70599)),	-- Vicious Gladiator's Mail Helm
+					un(REMOVED_FROM_GAME, i(70600)),	-- Vicious Gladiator's Mail Leggings
+					un(REMOVED_FROM_GAME, i(70601)),	-- Vicious Gladiator's Mail Spaulders
+					un(REMOVED_FROM_GAME, i(70632)),	-- Vicious Gladiator's Ringmail Armor
+					un(REMOVED_FROM_GAME, i(70633)),	-- Vicious Gladiator's Ringmail Gauntlets
+					un(REMOVED_FROM_GAME, i(70634)),	-- Vicious Gladiator's Ringmail Helm
+					un(REMOVED_FROM_GAME, i(70635)),	-- Vicious Gladiator's Ringmail Leggings
+					un(REMOVED_FROM_GAME, i(70636)),	-- Vicious Gladiator's Ringmail Spaulders
+				}),
+				cl(WARLOCK, {
+					un(REMOVED_FROM_GAME, i(70566)),	-- Vicious Gladiator's Felweave Amice
+					un(REMOVED_FROM_GAME, i(70567)),	-- Vicious Gladiator's Felweave Cowl
+					un(REMOVED_FROM_GAME, i(70568)),	-- Vicious Gladiator's Felweave Handguards
+					un(REMOVED_FROM_GAME, i(70569)),	-- Vicious Gladiator's Felweave Rainment
+					un(REMOVED_FROM_GAME, i(70570)),	-- Vicious Gladiator's Felweave Trousers
+				}),
+				cl(WARRIOR, {
+					un(REMOVED_FROM_GAME, i(70623)),	-- Vicious Gladiator's Plate Chestpiece
+					un(REMOVED_FROM_GAME, i(70624)),	-- Vicious Gladiator's Plate Gauntlets
+					un(REMOVED_FROM_GAME, i(70625)),	-- Vicious Gladiator's Plate Helm
+					un(REMOVED_FROM_GAME, i(70626)),	-- Vicious Gladiator's Plate Legguards
+					un(REMOVED_FROM_GAME, i(70627)),	-- Vicious Gladiator's Plate Shoulders
+				}),
 				n(-322, {	-- Back
 					un(REMOVED_FROM_GAME, i(70531)),	-- Vicious Gladiator's Cape of Cruelty
 					un(REMOVED_FROM_GAME, i(70532)),	-- Vicious Gladiator's Cape of Prowess
@@ -1209,7 +1307,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(70667)),	-- Vicious Gladiator's Warboots of Alacrity
 					un(REMOVED_FROM_GAME, i(70668)),	-- Vicious Gladiator's Warboots of Cruelty
 				}),	
-				n(-384,	{	-- Neck
+				f(51,	{	-- Neck
 					un(REMOVED_FROM_GAME, i(70538)),	-- Vicious Gladiator's Choker of Accuracy
 					un(REMOVED_FROM_GAME, i(70539)),	-- Vicious Gladiator's Choker of Proficiency
 					un(REMOVED_FROM_GAME, i(70613)),	-- Vicious Gladiator's Necklace of Proficiency
@@ -1218,7 +1316,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(70621)),	-- Vicious Gladiator's Pendant of Diffusion
 					un(REMOVED_FROM_GAME, i(70622)),	-- Vicious Gladiator's Pendant of Meditation
 				}),
-				n(-385,	{	-- Finger
+				f(52,	{	-- Finger
 					un(REMOVED_FROM_GAME, i(70520)),	-- Vicious Gladiator's Band of Accuracy
 					un(REMOVED_FROM_GAME, i(70521)),	-- Vicious Gladiator's Band of Cruelty
 					un(REMOVED_FROM_GAME, i(70522)),	-- Vicious Gladiator's Band of Meditation
@@ -1324,15 +1422,15 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(65564)),	-- Vicious Gladiator's Silk Trousers
 				}),
 				cl(PALADIN, {
-					un(REMOVED_FROM_GAME, i(65522)),	-- Vicious Gladiator's Ornamented Chest
+					un(REMOVED_FROM_GAME, i(65522)),	-- Vicious Gladiator's Ornamented Chestguard
 					un(REMOVED_FROM_GAME, i(65521)),	-- Vicious Gladiator's Ornamented Gloves
-					un(REMOVED_FROM_GAME, i(65520)),	-- Vicious Gladiator's Ornamented Head
-					un(REMOVED_FROM_GAME, i(65519)),	-- Vicious Gladiator's Ornamented Legs
+					un(REMOVED_FROM_GAME, i(65520)),	-- Vicious Gladiator's Ornamented Headcover
+					un(REMOVED_FROM_GAME, i(65519)),	-- Vicious Gladiator's Ornamented Legplates
 					un(REMOVED_FROM_GAME, i(65518)),	-- Vicious Gladiator's Ornamented Spaulders
-					un(REMOVED_FROM_GAME, i(65592)),	-- Vicious Gladiator's Scaled Chest
-					un(REMOVED_FROM_GAME, i(65591)),	-- Vicious Gladiator's Scaled Gloves
+					un(REMOVED_FROM_GAME, i(65592)),	-- Vicious Gladiator's Scaled Chestpiece
+					un(REMOVED_FROM_GAME, i(65591)),	-- Vicious Gladiator's Scaled Gauntlets
 					un(REMOVED_FROM_GAME, i(65590)),	-- Vicious Gladiator's Scaled Helm
-					un(REMOVED_FROM_GAME, i(65586)),	-- Vicious Gladiator's Scaled Legs
+					un(REMOVED_FROM_GAME, i(65586)),	-- Vicious Gladiator's Scaled Legguards
 					un(REMOVED_FROM_GAME, i(65585)),	-- Vicious Gladiator's Scaled Shoulders
 				}),
 				cl(PRIEST, {
@@ -1350,25 +1448,25 @@ _.PVP =
 				cl(ROGUE, {
 					un(REMOVED_FROM_GAME, i(65548)),	-- Vicious Gladiator's Leather Gloves
 					un(REMOVED_FROM_GAME, i(65547)),	-- Vicious Gladiator's Leather Helm
-					un(REMOVED_FROM_GAME, i(65546)),	-- Vicious Gladiator's Leather Legs
+					un(REMOVED_FROM_GAME, i(65546)),	-- Vicious Gladiator's Leather Legguards
 					un(REMOVED_FROM_GAME, i(65545)),	-- Vicious Gladiator's Leather Spaulders
 					un(REMOVED_FROM_GAME, i(65549)),	-- Vicious Gladiator's Leather Tunic
 				}),
 				cl(SHAMAN, {
-					un(REMOVED_FROM_GAME, i(65559)),	-- Vicious Gladiator's Linked  Spaulders
 					un(REMOVED_FROM_GAME, i(65563)),	-- Vicious Gladiator's Linked Armor
 					un(REMOVED_FROM_GAME, i(65562)),	-- Vicious Gladiator's Linked Gauntlets
 					un(REMOVED_FROM_GAME, i(65561)),	-- Vicious Gladiator's Linked Helm
-					un(REMOVED_FROM_GAME, i(65560)),	-- Vicious Gladiator's Linked Legs
+					un(REMOVED_FROM_GAME, i(65560)),	-- Vicious Gladiator's Linked Leggings
+					un(REMOVED_FROM_GAME, i(65559)),	-- Vicious Gladiator's Linked Spaulders
 					un(REMOVED_FROM_GAME, i(65527)),	-- Vicious Gladiator's Mail Armor
 					un(REMOVED_FROM_GAME, i(65526)),	-- Vicious Gladiator's Mail Gauntlets
 					un(REMOVED_FROM_GAME, i(65525)),	-- Vicious Gladiator's Mail Helm
-					un(REMOVED_FROM_GAME, i(65524)),	-- Vicious Gladiator's Mail Legs
+					un(REMOVED_FROM_GAME, i(65524)),	-- Vicious Gladiator's Mail Leggings
 					un(REMOVED_FROM_GAME, i(65523)),	-- Vicious Gladiator's Mail Spaulders
 					un(REMOVED_FROM_GAME, i(65536)),	-- Vicious Gladiator's Ringmail Armor
 					un(REMOVED_FROM_GAME, i(65570)),	-- Vicious Gladiator's Ringmail Gauntlets
 					un(REMOVED_FROM_GAME, i(65569)),	-- Vicious Gladiator's Ringmail Helm
-					un(REMOVED_FROM_GAME, i(65568)),	-- Vicious Gladiator's Ringmail Legs
+					un(REMOVED_FROM_GAME, i(65568)),	-- Vicious Gladiator's Ringmail Leggings
 					un(REMOVED_FROM_GAME, i(65567)),	-- Vicious Gladiator's Ringmail Spaulders
 				}),
 				cl(WARLOCK, {
@@ -1379,8 +1477,8 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(65530)),	-- Vicious Gladiator's Felweave Trousers
 				}),
 				cl(WARRIOR, {
-					un(REMOVED_FROM_GAME, i(65584)),	-- Vicious Gladiator's Plate Chest
-					un(REMOVED_FROM_GAME, i(65583)),	-- Vicious Gladiator's Plate Gloves
+					un(REMOVED_FROM_GAME, i(65584)),	-- Vicious Gladiator's Plate Chestpiece
+					un(REMOVED_FROM_GAME, i(65583)),	-- Vicious Gladiator's Plate Gauntlets
 					un(REMOVED_FROM_GAME, i(65582)),	-- Vicious Gladiator's Plate Helm
 					un(REMOVED_FROM_GAME, i(65581)),	-- Vicious Gladiator's Plate Legguards
 					un(REMOVED_FROM_GAME, i(65580)),	-- Vicious Gladiator's Plate Shoulders
@@ -1974,7 +2072,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
-				n(-384,	{	-- Neck
+				f(51,	{	-- Neck
 					i(70382),	-- Ruthless Gladiator's Choker of Accuracy
 					i(70381),	-- Ruthless Gladiator's Choker of Proficiency
 					i(70380),	-- Ruthless Gladiator's Necklace of Proficiency
@@ -1983,7 +2081,7 @@ _.PVP =
 					i(70376),	-- Ruthless Gladiator's Pendant of Diffusion
 					i(70378),	-- Ruthless Gladiator's Pendant of Meditation
 				}),
-				n(-385,	{	-- Finger
+				f(52,	{	-- Finger
 					i(70370),	-- Ruthless Gladiator's Band of Accuracy
 					i(70369),	-- Ruthless Gladiator's Band of Cruelty
 					i(70371),	-- Ruthless Gladiator's Band of Meditation
@@ -1992,7 +2090,7 @@ _.PVP =
 					i(70373),	-- Ruthless Gladiator's Signet of Accuracy
 					i(70372),	-- Ruthless Gladiator's Signet of Cruelty
 				}),
-				n(-386,	{	-- Trinket
+				f(53,	{	-- Trinket
 					i(70399),	-- Ruthless Gladiator's Badge of Conquest
 					i(70401),	-- Ruthless Gladiator's Badge of Dominance
 					i(70400),	-- Ruthless Gladiator's Badge of Victory
@@ -2730,7 +2828,7 @@ _.PVP =
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
 				}),
-				n(-384,	{	-- Neck
+				f(51,	{	-- Neck
 					i(73493),	-- Cataclysmic Gladiator's Choker of Proficiency
 					i(73492),	-- Cataclysmic Gladiator's Choker of Prowess
 					i(73645),	-- Cataclysmic Gladiator's Necklace of Proficiency
@@ -2739,7 +2837,7 @@ _.PVP =
 					i(73626),	-- Cataclysmic Gladiator's Pendant of Diffusion
 					i(73625),	-- Cataclysmic Gladiator's Pendant of Meditation
 				}),
-				n(-385,	{	-- Finger
+				f(52,	{	-- Finger
 					i(73622),	-- Cataclysmic Gladiator's Band of Accuracy
 					i(73623),	-- Cataclysmic Gladiator's Band of Cruelty
 					i(73621),	-- Cataclysmic Gladiator's Band of Meditation
@@ -2748,7 +2846,7 @@ _.PVP =
 					i(73488),	-- Cataclysmic Gladiator's Signet of Accuracy
 					i(73489),	-- Cataclysmic Gladiator's Signet of Cruelty
 				}),
-				n(-386,	{	-- Trinket
+				f(53,	{	-- Trinket
 					i(73648),	-- Cataclysmic Gladiator's Badge of Conquest
 					i(73498),	-- Cataclysmic Gladiator's Badge of Dominance
 					i(73496),	-- Cataclysmic Gladiator's Badge of Victory
