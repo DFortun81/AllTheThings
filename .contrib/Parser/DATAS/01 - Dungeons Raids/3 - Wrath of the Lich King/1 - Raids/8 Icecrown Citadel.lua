@@ -1140,43 +1140,45 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					},
 				}),
 				n(38858, { 	-- Goodman the "Closer" <Legacy Justice Quartermaster>
-					i(50993),	-- Band of the Night Raven
-					i(50996),	-- Belt of Omission
-					i(50994),	-- Belt of Petrified Ivy
-					i(50980),	-- Blizzard Keeper's Mitts
-					i(50965),	-- Castle Breaker's Battleplate
-					i(50982),	-- Cat Burglar's Grips
-					i(50968),	-- Cataclysmic Chestguard
-					i(50969),	-- Chestplate of Unspoken Truths
-					i(50997),	-- Circle of Ossus
-					i(50356),	-- Corroded Skeleton Key
-					i(50468),	-- Drape of the Violet Tower
-					i(50975),	-- Ermine Coronation Robes
-					i(50977),	-- Gatecrasher's Gauntlets
-					i(50976),	-- Gauntlets of Overexposure
-					i(50978),	-- Gauntlets of the Kraken
-					i(50984),	-- Gloves of Ambivalence
-					i(50983),	-- Gloves of False Gestures
-					i(50981),	-- Gloves of the Great Horned Owl
-					i(50355),	-- Herkumi War Token
-					i(50989),	-- Lich Killer's Lanyard
-					i(50979),	-- Logsplitters
-					i(50970),	-- Longstrider's Vest
-					i(50357),	-- Maghia's Misguised Quill
-					i(50971),	-- Mail of the Geyser
-					i(50987),	-- Malevolent Girdle
-					i(50974),	-- Meteor Chaser's Raiment
-					i(50467),	-- Might of the Ocean Serpent
-					i(49908),	-- Primordial Saronite
-					i(50358),	-- Purified Lunar Dust
-					i(50470),	-- Recovered Scarlet Onsalught Cape
-					i(50466),	-- Sentinel's Winter Cloak
-					i(50972),	-- Shadow Seeker's Tunic
-					i(50995),	-- Vengeful Noose
-					i(50991),	-- Verdigris Chain Belt
-					i(50973),	-- Vestments of Spruce and Fir
-					i(50469),	-- Volde's Cloak of the Night Sky
-					i(50992),	-- Waistband of Despair
+					["g"] = {
+						i(50993),	-- Band of the Night Raven
+						i(50996),	-- Belt of Omission
+						i(50994),	-- Belt of Petrified Ivy
+						i(50980),	-- Blizzard Keeper's Mitts
+						i(50965),	-- Castle Breaker's Battleplate
+						i(50982),	-- Cat Burglar's Grips
+						i(50968),	-- Cataclysmic Chestguard
+						i(50969),	-- Chestplate of Unspoken Truths
+						i(50997),	-- Circle of Ossus
+						i(50356),	-- Corroded Skeleton Key
+						i(50468),	-- Drape of the Violet Tower
+						i(50975),	-- Ermine Coronation Robes
+						i(50977),	-- Gatecrasher's Gauntlets
+						i(50976),	-- Gauntlets of Overexposure
+						i(50978),	-- Gauntlets of the Kraken
+						i(50984),	-- Gloves of Ambivalence
+						i(50983),	-- Gloves of False Gestures
+						i(50981),	-- Gloves of the Great Horned Owl
+						i(50355),	-- Herkumi War Token
+						i(50989),	-- Lich Killer's Lanyard
+						i(50979),	-- Logsplitters
+						i(50970),	-- Longstrider's Vest
+						i(50357),	-- Maghia's Misguised Quill
+						i(50971),	-- Mail of the Geyser
+						i(50987),	-- Malevolent Girdle
+						i(50974),	-- Meteor Chaser's Raiment
+						i(50467),	-- Might of the Ocean Serpent
+						i(49908),	-- Primordial Saronite
+						i(50358),	-- Purified Lunar Dust
+						i(50470),	-- Recovered Scarlet Onsalught Cape
+						i(50466),	-- Sentinel's Winter Cloak
+						i(50972),	-- Shadow Seeker's Tunic
+						i(50995),	-- Vengeful Noose
+						i(50991),	-- Verdigris Chain Belt
+						i(50973),	-- Vestments of Spruce and Fir
+						i(50469),	-- Volde's Cloak of the Night Sky
+						i(50992),	-- Waistband of Despair
+					},
 					["sym"] = {
 						{"sub", "pvp_gear_base", -10014, -670, -661 },	-- Relentless Gladiator: Season 7 Gladiator Gear
 						{"pop"},	-- Discard the Set header and acquire the children.

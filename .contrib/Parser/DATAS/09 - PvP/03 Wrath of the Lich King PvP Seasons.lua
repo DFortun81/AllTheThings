@@ -2346,8 +2346,11 @@ _.PVP =
 				}),
 			}),
 			n(-662, {	-- Elite PvP Gear
+				-- Original Sources are: 
+				-- n34087 Trapjaw Rix <Exceptional Arena Weaponry> in Dalaran (Northrend)
+				-- n34089 Grex Brainboiler <Exceptional Arena Weaponry> in Area 52 
+				-- n34088 Blazzek the Biter <Exceptional Arena Weaponry> in Gadgetzan
 				un(REMOVED_FROM_GAME, i(45983)),	-- Furious Gladiator's Tabard
-				-- Original Sources are unknown
 				n(-319, {	-- Weapon
 					un(REMOVED_FROM_GAME, i(45954)),	-- Furious Gladiator's Acute Staff
 					un(REMOVED_FROM_GAME, i(45968)),	-- Furious Gladiator's Claw
@@ -3049,6 +3052,10 @@ _.PVP =
 				}),
 			}),
 			n(-662, {	-- Elite PvP Gear
+				-- Original Sources are: 
+				-- n34092 Trapjaw Rix <Exceptional Arena Weaponry> in Dalaran (Northrend)
+				-- n34091 Grex Brainboiler <Exceptional Arena Weaponry> in Area 52 
+				-- n34090 Blazzek the Biter <Exceptional Arena Weaponry> in Gadgetzan
 				un(REMOVED_FROM_GAME, i(49086)),	-- Relentless Gladiator's Tabard
 				n(-319, {	-- Weapons
 					un(REMOVED_FROM_GAME, i(48412)),	-- Relentless Gladiator's Acute Staff
@@ -3750,6 +3757,10 @@ _.PVP =
 				}),
 			}),
 			n(-662, {	-- Elite PvP Gear
+				-- Original Sources are: 
+				-- n34095 Trapjaw Rix <Exceptional Arena Weaponry> in Dalaran (Northrend)
+				-- n34094 Grex Brainboiler <Exceptional Arena Weaponry> in Area 52 
+				-- n34093 Blazzek the Biter <Exceptional Arena Weaponry> in Gadgetzan
 				un(REMOVED_FROM_GAME, i(51534)),	-- Wrathful Gladiator's Tabard
 				n(-319, {	-- Weapons
 					un(REMOVED_FROM_GAME, i(51403)),	-- Wrathful Gladiator's Acute Staff
