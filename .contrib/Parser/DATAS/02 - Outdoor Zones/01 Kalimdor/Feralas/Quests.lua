@@ -192,6 +192,7 @@ _.Zones =
 					["provider"] = { "n", 40913 },	-- Handler Jesana
 					["coord"] = { 77.0, 56.6, 69 },
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 25410,	-- Forces of Nature: Treants
 				}),
 				q(25409, {	-- Forces of Nature: Hippogryphs
 					["provider"] = { "n", 40078 },	-- Handler Tessina
@@ -203,7 +204,7 @@ _.Zones =
 					["provider"] = { "n", 40913 },	-- Handler Jesana
 					["coord"] = { 77.0, 56.6, 69 },
 					["races"] = ALLIANCE_ONLY,
-					--["sourceQuest"] = 25468,	-- Forces of Nature: Faerie Dragons (6/6/2019 Wowhead shows this as a chain but in game she offered me both quests at same time)
+					["sourceQuest"] = 25410,	-- Forces of Nature: Treants
 					["g"] = {
 						i(54885),	-- Power of the Hippogryph
 						i(54886),	-- Power of the Mountain Giant

@@ -638,6 +638,7 @@ _.Zones =
 					["provider"] = { "n", 38504 },	-- Un'Goro Examinant
 					["coord"] = { 53.8, 62.5, 78 },
 					["sourceQuests"] = {
+						24720,	-- Crystals of Power
 						24721,	-- The Eastern Pylon
 						24722,	-- The Northern Pylon
 						24723,	-- The Western Pylon
