@@ -11646,7 +11646,7 @@ function app:CreateMiniListForGroup(group)
 		-- if popping out a thing with a Cost, generate a Cost group to allow referencing the Cost things directly
 		if group.cost then app.BuildCost(group); end
 		popout = app:GetWindow(suffix);
-		-- popout.shouldFullRefresh = true;
+		popout.shouldFullRefresh = true;
 		-- popping out something without a source, try to determine it on-the-fly using same logic as harvester
 		-- TODO: modify parser to include known sources for unsorted before commenting this back in
 		-- if not group.s or group.s == 0 then
