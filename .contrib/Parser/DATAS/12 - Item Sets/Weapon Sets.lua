@@ -60,14 +60,14 @@ _.GearSets =
 					i(146647, {	-- Arsenal: Savage Gladiator's Weapons
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 						["sym"] = { 
-							{"sub", "pvp_weapons_ensemble", -10014, -668, -660 },
+							{"sub", "pvp_weapons_ensemble", -10014, -668, -9983 },
 							{"exclude", "itemID", 146647 },	-- Exclude itself to stop duplicating
 						},
 					}),
 					i(146646, {	-- Arsenal: Hateful Gladiator's Weapons
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 						["sym"] = { 
-							{"sub", "pvp_weapons_ensemble", -10014, -668, -9983 },
+							{"sub", "pvp_weapons_ensemble", -10014, -668, -660 },
 							{"exclude", "itemID", 146646 },	-- Exclude itself to stop duplicating
 						},
 					}),

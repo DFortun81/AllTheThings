@@ -272,6 +272,21 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 				["lvl"] = lvlsquish(70, 10, 70),
 				["groups"] = {
 					ach(667),	-- Heroic: Hellfire Ramparts
+					n(COMMON_BOSS_DROPS, {
+						["crs"] = {
+							17306,	-- Watchkeeper Gargolmar
+							17308,	-- Omor the Unscarred
+							17307,	-- Vazruden the Herald
+						},
+						["groups"] = {
+							-- #if BEFORE CATA
+							i(29434),	-- Badge of Justice
+							-- #endif
+							i(30593),	-- Potent Fire Opal
+							i(30594),	-- Regal Chrysoprase
+							i(30592),	-- Steady Chrysoprase
+						},
+					}),
 					e(527, {	-- Watchkeeper Gargolmar
 						["creatureID"] = 17306,
 						["groups"] = {

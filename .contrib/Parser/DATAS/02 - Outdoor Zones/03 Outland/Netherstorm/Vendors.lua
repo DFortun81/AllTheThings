@@ -17,35 +17,6 @@ _.Zones =
 				}),
 				n(26352,  {	-- Big Zokk Torquewrench >Season 6< Elite
 					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(45952)),	-- Furious Gladiator's Greatstaff
-						un(REMOVED_FROM_GAME, i(45948)),	-- Furious Gladiator's Sunderer
-						un(REMOVED_FROM_GAME, i(45958)),	-- Furious Gladiator's Spike
-						un(REMOVED_FROM_GAME, i(45962)),	-- Furious Gladiator's Dirk
-						un(REMOVED_FROM_GAME, i(45967)),	-- Furious Gladiator's Eviscerator
-						un(REMOVED_FROM_GAME, i(45970)),	-- Furious Gladiator's Mageblade
-						un(REMOVED_FROM_GAME, i(45957)),	-- Furious Gladiator's Handaxe
-						un(REMOVED_FROM_GAME, i(45961)),	-- Furious Gladiator's Dicer
-						un(REMOVED_FROM_GAME, i(45966)),	-- Furious Gladiator's Splitter)
-						un(REMOVED_FROM_GAME, i(45959)),	-- Furious Gladiator's Truncheon
-						un(REMOVED_FROM_GAME, i(45964)),	-- Furious Gladiator's Punisher
-						un(REMOVED_FROM_GAME, i(45971)),	-- Furious Gladiator's Salvation)
-						un(REMOVED_FROM_GAME, i(45960)),	-- Furious Gladiator's Longblade
-						un(REMOVED_FROM_GAME, i(45965)),	-- Furious Gladiator's Swiftblade
-						un(REMOVED_FROM_GAME, i(45937)),	-- Furious Gladiator's Shotgun
-						un(REMOVED_FROM_GAME, i(45938)),	-- Furious Gladiator's Recurve
-						un(REMOVED_FROM_GAME, i(45939)),	-- Furious Gladiator's Repeater
-						un(REMOVED_FROM_GAME, i(45949)),	-- Furious Gladiator's Crusher
-						un(REMOVED_FROM_GAME, i(45950)),	-- Furious Gladiator's Claymore
-						un(REMOVED_FROM_GAME, i(45951)),	-- Furious Gladiator's Halberd
-						un(REMOVED_FROM_GAME, i(45953)),	-- Furious Gladiator's Combat Staff
-						un(REMOVED_FROM_GAME, i(45954)),	-- Furious Gladiator's Acute Staff
-						un(REMOVED_FROM_GAME, i(45955)),	-- Furious Gladiator's Skirmish Staff
-						un(REMOVED_FROM_GAME, i(45956)),	-- Furious Gladiator's Light Staff
-						un(REMOVED_FROM_GAME, i(45963)),	-- Furious Gladiator's Fleshslicer
-						un(REMOVED_FROM_GAME, i(45968)),	-- Furious Gladiator's Claw
-						un(REMOVED_FROM_GAME, i(45969)),	-- Furious Gladiator's Grasp)
-					},
 				}),
 				n(54649,  {	-- Big Zokk Torquewrench <Classic Weapons>
 					["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.|r",
@@ -833,9 +804,85 @@ _.Zones =
 						i(10393),	-- Undercity Cockroach (PET!)
 					},
 				}),
-				n(34094, {	-- Grex Brainboiler <Veteran Arena Vendor> [Note: Yes, two NPCs with same name. One is removed]
+				n(34089, {	-- Grex Brainboiler <Veteran Arena Vendor> Original WOTLK S6 ELITE VENDOR
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
+					--[[	-- Items are commented out to reduce bloat.
+						un(REMOVED_FROM_GAME, i(45983)),	-- Furious Gladiator's Tabard
+						n(-319, {	-- Weapon
+							un(REMOVED_FROM_GAME, i(45954)),	-- Furious Gladiator's Acute Staff
+							un(REMOVED_FROM_GAME, i(45968)),	-- Furious Gladiator's Claw
+							un(REMOVED_FROM_GAME, i(45950)),	-- Furious Gladiator's Claymore
+							un(REMOVED_FROM_GAME, i(45953)),	-- Furious Gladiator's Combat Staff
+							un(REMOVED_FROM_GAME, i(45949)),	-- Furious Gladiator's Crusher
+							un(REMOVED_FROM_GAME, i(45961)),	-- Furious Gladiator's Dicer
+							un(REMOVED_FROM_GAME, i(45962)),	-- Furious Gladiator's Dirk
+							un(REMOVED_FROM_GAME, i(45967)),	-- Furious Gladiator's Eviscerator
+							un(REMOVED_FROM_GAME, i(45963)),	-- Furious Gladiator's Fleshslicer
+							un(REMOVED_FROM_GAME, i(45969)),	-- Furious Gladiator's Grasp
+							un(REMOVED_FROM_GAME, i(45952)),	-- Furious Gladiator's Greatstaff
+							un(REMOVED_FROM_GAME, i(45951)),	-- Furious Gladiator's Halberd
+							un(REMOVED_FROM_GAME, i(45957)),	-- Furious Gladiator's Handaxe
+							un(REMOVED_FROM_GAME, i(45956)),	-- Furious Gladiator's Light Staff
+							un(REMOVED_FROM_GAME, i(45960)),	-- Furious Gladiator's Longblade
+							un(REMOVED_FROM_GAME, i(45970)),	-- Furious Gladiator's Mageblade
+							un(REMOVED_FROM_GAME, i(45964)),	-- Furious Gladiator's Punisher
+							un(REMOVED_FROM_GAME, i(45938)),	-- Furious Gladiator's Recurve
+							un(REMOVED_FROM_GAME, i(45939)),	-- Furious Gladiator's Repeater
+							un(REMOVED_FROM_GAME, i(45971)),	-- Furious Gladiator's Salvation
+							un(REMOVED_FROM_GAME, i(45937)),	-- Furious Gladiator's Shotgun
+							un(REMOVED_FROM_GAME, i(45955)),	-- Furious Gladiator's Skirmish Staff
+							un(REMOVED_FROM_GAME, i(45958)),	-- Furious Gladiator's Spike
+							un(REMOVED_FROM_GAME, i(45966)),	-- Furious Gladiator's Splitter
+							un(REMOVED_FROM_GAME, i(45948)),	-- Furious Gladiator's Sunderer
+							un(REMOVED_FROM_GAME, i(45965)),	-- Furious Gladiator's Swiftblade
+							un(REMOVED_FROM_GAME, i(45959)),	-- Furious Gladiator's Truncheon
+						}),
+					--]]
+					},
+				}),
+				n(34091,  {	-- Grex Brainboiler <Veteran Arena Vendor> Original WOTLK S7 ELITE VENDOR
+					["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+					--[[	-- Items are commented out to reduce bloat.
+						un(REMOVED_FROM_GAME, i(49086)),	-- Relentless Gladiator's Tabard
+						n(-319, {	-- Weapons
+							un(REMOVED_FROM_GAME, i(48412)),	-- Relentless Gladiator's Acute Staff
+							un(REMOVED_FROM_GAME, i(49191)),	-- Relentless Gladiator's Blade of Celerity
+							un(REMOVED_FROM_GAME, i(48444)),	-- Relentless Gladiator's Claw (wrong itemtag from blizzard)
+							un(REMOVED_FROM_GAME, i(48406)),	-- Relentless Gladiator's Claymore
+							un(REMOVED_FROM_GAME, i(48414)),	-- Relentless Gladiator's Combat Staff
+							un(REMOVED_FROM_GAME, i(48404)),	-- Relentless Gladiator's Crusher
+							un(REMOVED_FROM_GAME, i(48426)),	-- Relentless Gladiator's Dicer
+							un(REMOVED_FROM_GAME, i(48428)),	-- Relentless Gladiator's Dirk
+							un(REMOVED_FROM_GAME, i(48442)),	-- Relentless Gladiator's Eviscerator
+							un(REMOVED_FROM_GAME, i(48432)),	-- Relentless Gladiator's Fleshslicer
+							un(REMOVED_FROM_GAME, i(48515)),	-- Relentless Gladiator's Grasp
+							un(REMOVED_FROM_GAME, i(48523)),	-- Relentless Gladiator's Greatstaff
+							un(REMOVED_FROM_GAME, i(48517)),	-- Relentless Gladiator's Halberd
+							un(REMOVED_FROM_GAME, i(48507)),	-- Relentless Gladiator's Handaxe
+							un(REMOVED_FROM_GAME, i(48521)),	-- Relentless Gladiator's Light Staff
+							un(REMOVED_FROM_GAME, i(48513)),	-- Relentless Gladiator's Longblade
+							un(REMOVED_FROM_GAME, i(48408)),	-- Relentless Gladiator's Mageblade
+							un(REMOVED_FROM_GAME, i(48435)),	-- Relentless Gladiator's Punisher
+							un(REMOVED_FROM_GAME, i(48420)),	-- Relentless Gladiator's Recurve
+							un(REMOVED_FROM_GAME, i(48422)),	-- Relentless Gladiator's Repeater
+							un(REMOVED_FROM_GAME, i(48519)),	-- Relentless Gladiator's Salvation
+							un(REMOVED_FROM_GAME, i(48424)),	-- Relentless Gladiator's Shotgun
+							un(REMOVED_FROM_GAME, i(48410)),	-- Relentless Gladiator's Skirmish Staff
+							un(REMOVED_FROM_GAME, i(48509)),	-- Relentless Gladiator's Spike
+							un(REMOVED_FROM_GAME, i(48440)),	-- Relentless Gladiator's Splitter
+							un(REMOVED_FROM_GAME, i(48402)),	-- Relentless Gladiator's Sunderer
+							un(REMOVED_FROM_GAME, i(48438)),	-- Relentless Gladiator's Swiftblade
+							un(REMOVED_FROM_GAME, i(48511)),	-- Relentless Gladiator's Truncheon
+						}),
+					--]]
+					},
+				}),
+				n(34094, {	-- Grex Brainboiler <Veteran Arena Vendor> Original WOTLK S8 ELITE VENDOR
+					["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+					--[[	-- Items are commented out to reduce bloat.
 						un(REMOVED_FROM_GAME, i(51534)),	-- Wrathful Gladiator's Tabard [Elite Rating]
 						un(REMOVED_FROM_GAME, i(51403)),	-- Wrathful Gladiator's Acute Staff [Elite Rating]
 						un(REMOVED_FROM_GAME, i(51398)),	-- Wrathful Gladiator's Blade of Celerity [Elite Rating]
@@ -865,31 +912,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(51389)),	-- Wrathful Gladiator's Sunderer [Elite Rating]
 						un(REMOVED_FROM_GAME, i(51448)),	-- Wrathful Gladiator's Swiftblade [Elite Rating]
 						un(REMOVED_FROM_GAME, i(51520)),	-- Wrathful Gladiator's Truncheon [Elite Rating]
-					},
-				}),
-				n(34091,  {	-- Grex Brainboiler Season >7< Elite Version [Note: Yes, two npc's with same name. One is removed]
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(49086)),	-- Relentless Gladiator's Tabard [Elite Rating]
-						un(REMOVED_FROM_GAME, i(48435)),	-- Relentless Gladiator's Punisher
-						un(REMOVED_FROM_GAME, i(48511)),	-- Relentless Gladiator's Truncheon
-						un(REMOVED_FROM_GAME, i(48519)),	-- Relentless Gladiator's Salvation
-						un(REMOVED_FROM_GAME, i(48426)),	-- Relentless Gladiator's Dicer
-						un(REMOVED_FROM_GAME, i(48438)),	-- Relentless Gladiator's Swiftblade
-						un(REMOVED_FROM_GAME, i(48513)),	-- Relentless Gladiator's Longblade
-						un(REMOVED_FROM_GAME, i(48517)),	-- Relentless Gladiator's Halberd
-						un(REMOVED_FROM_GAME, i(48410)),	-- Relentless Gladiator's Skirmish Staff
-						un(REMOVED_FROM_GAME, i(48414)),	-- Relentless Gladiator's Combat Staff
-						un(REMOVED_FROM_GAME, i(48521)),	-- Relentless Gladiator's Light Staff
-						un(REMOVED_FROM_GAME, i(48523)),	-- Relentless Gladiator's Greatstaff
-						un(REMOVED_FROM_GAME, i(48408)),	-- Relentless Gladiator's Mageblade
-						un(REMOVED_FROM_GAME, i(48428)),	-- Relentless Gladiator's Dirk
-						un(REMOVED_FROM_GAME, i(49191)),	-- Relentless Gladiator's Blade of Celerity
-						un(REMOVED_FROM_GAME, i(48424)),	-- Relentless Gladiator's Shotgun
-						un(REMOVED_FROM_GAME, i(48420)),	-- Relentless Gladiator's Recurve
-						un(REMOVED_FROM_GAME, i(48422)),	-- Relentless Gladiator's Repeater
-						un(REMOVED_FROM_GAME, i(48402)),	-- Relentless Gladiator's Sunderer
-						un(REMOVED_FROM_GAME, i(48406)),	-- Relentless Gladiator's Claymore)
+					--]]
 					},
 				}),
 				n(40209,  {	-- Grex Brainboiler <Classic Alliance Cloth & Leather>
@@ -999,100 +1022,6 @@ _.Zones =
 				}),
 				n(33918, {  -- Kezzik the Striker <Veteran Arena Vendor> [Note: Yes, two NPCs with same name. One is removed]
 					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(45983)),	-- Furious Gladiator's Tabard [Elite Rating]
-						i(42565),	-- Furious Gladiator's Barrier
-						i(42514),	-- Furious Gladiator's Baton of Light
-						i(42364),	-- Furious Gladiator's Battle Staff
-						i(42281),	-- Furious Gladiator's Bonecracker
-						i(42323),	-- Furious Gladiator's Bonegrinder
-						i(41087),	-- Furious Gladiator's Chain Armor
-						i(41143),	-- Furious Gladiator's Chain Gauntlets
-						i(41157),	-- Furious Gladiator's Chain Helm
-						i(41205),	-- Furious Gladiator's Chain Leggings
-						i(41217),	-- Furious Gladiator's Chain Spaulders
-						i(42233),	-- Furious Gladiator's Chopper
-						i(42209),	-- Furious Gladiator's Cleaver
-						i(42318),	-- Furious Gladiator's Decapitator
-						i(41773),	-- Furious Gladiator's Dragonhide Gloves
-						i(41678),	-- Furious Gladiator's Dragonhide Helm
-						i(41667),	-- Furious Gladiator's Dragonhide Legguards
-						i(41661),	-- Furious Gladiator's Dragonhide Robes
-						i(41715),	-- Furious Gladiator's Dragonhide Spaulders
-						i(40787),	-- Furious Gladiator's Dreadplate Chestpiece
-						i(40809),	-- Furious Gladiator's Dreadplate Gauntlets
-						i(40827),	-- Furious Gladiator's Dreadplate Helm
-						i(40848),	-- Furious Gladiator's Dreadplate Legguards
-						i(40868),	-- Furious Gladiator's Dreadplate Shoulders
-						i(42526),	-- Furious Gladiator's Endgame
-						i(42385),	-- Furious Gladiator's Energy Staff
-						i(44422),	-- Furious Gladiator's Focus Staff
-						i(42353),	-- Furious Gladiator's Gavel
-						i(42333),	-- Furious Gladiator's Greatsword
-						i(42538),	-- Furious Gladiator's Grimoire
-						i(42228),	-- Furious Gladiator's Hacker
-						i(42496),	-- Furious Gladiator's Heavy Crossbow
-						i(41287),	-- Furious Gladiator's Kodohide Gloves
-						i(41321),	-- Furious Gladiator's Kodohide Helm
-						i(41298),	-- Furious Gladiator's Kodohide Legguards
-						i(41310),	-- Furious Gladiator's Kodohide Robes
-						i(41275),	-- Furious Gladiator's Kodohide Spaulders
-						i(41767),	-- Furious Gladiator's Leather Gloves
-						i(41672),	-- Furious Gladiator's Leather Helm
-						i(41655),	-- Furious Gladiator's Leather Legguards
-						i(41683),	-- Furious Gladiator's Leather Spaulders
-						i(41650),	-- Furious Gladiator's Leather Tunic
-						i(42266),	-- Furious Gladiator's Left Render
-						i(42271),	-- Furious Gladiator's Left Ripper
-						i(42491),	-- Furious Gladiator's Longbow
-						i(41874),	-- Furious Gladiator's Mooncloth Gloves
-						i(41854),	-- Furious Gladiator's Mooncloth Hood
-						i(41864),	-- Furious Gladiator's Mooncloth Leggings
-						i(41869),	-- Furious Gladiator's Mooncloth Mantle
-						i(41859),	-- Furious Gladiator's Mooncloth Robe
-						i(42256),	-- Furious Gladiator's Mutilator
-						i(40907),	-- Furious Gladiator's Ornamented Chestguard
-						i(40927),	-- Furious Gladiator's Ornamented Gloves
-						i(40933),	-- Furious Gladiator's Ornamented Headcover
-						i(40939),	-- Furious Gladiator's Ornamented Legplates
-						i(40963),	-- Furious Gladiator's Ornamented Spaulders
-						i(42520),	-- Furious Gladiator's Piercing Touch
-						i(42328),	-- Furious Gladiator's Pike
-						i(40789),	-- Furious Gladiator's Plate Chestpiece
-						i(40807),	-- Furious Gladiator's Plate Gauntlets
-						i(40826),	-- Furious Gladiator's Plate Helm
-						i(40847),	-- Furious Gladiator's Plate Legguards
-						i(40866),	-- Furious Gladiator's Plate Shoulders
-						i(42276),	-- Furious Gladiator's Pummeler
-						i(42291),	-- Furious Gladiator's Quickblade
-						i(42571),	-- Furious Gladiator's Redoubt
-						i(42532),	-- Furious Gladiator's Reprieve
-						i(42486),	-- Furious Gladiator's Rifle
-						i(42261),	-- Furious Gladiator's Right Ripper
-						i(41940),	-- Furious Gladiator's Satin Gloves
-						i(41915),	-- Furious Gladiator's Satin Hood
-						i(41927),	-- Furious Gladiator's Satin Leggings
-						i(41934),	-- Furious Gladiator's Satin Mantle
-						i(41921),	-- Furious Gladiator's Satin Robe
-						i(40788),	-- Furious Gladiator's Scaled Chestpiece
-						i(40808),	-- Furious Gladiator's Scaled Gauntlets
-						i(40828),	-- Furious Gladiator's Scaled Helm
-						i(40849),	-- Furious Gladiator's Scaled Legguards
-						i(40869),	-- Furious Gladiator's Scaled Shoulders
-						i(42243),	-- Furious Gladiator's Shanker
-						i(42560),	-- Furious Gladiator's Shield Wall
-						i(42249),	-- Furious Gladiator's Shiv
-						i(42286),	-- Furious Gladiator's Slicer
-						i(42347),	-- Furious Gladiator's Spellblade
-						i(42391),	-- Furious Gladiator's Staff
-						i(42503),	-- Furious Gladiator's Touch of Defeat
-						i(44421),	-- Furious Gladiator's War Staff
-						i(41293),	-- Furious Gladiator's Wyrmhide Gloves
-						i(41327),	-- Furious Gladiator's Wyrmhide Helm
-						i(41304),	-- Furious Gladiator's Wyrmhide Legguards
-						i(41316),	-- Furious Gladiator's Wyrmhide Robes
-						i(41281),	-- Furious Gladiator's Wyrmhide Spaulders
-					},
 				}),
 				n(107599, {	-- Izzee the 'Clutch' <Merciless and Veteran's Gladiator>
 					["coord"] = { 33.0, 64.2, NETHERSTORM },
