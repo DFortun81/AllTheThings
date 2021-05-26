@@ -177,7 +177,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 						i(27838),	-- Incanter's Trousers
 						i(27948),	-- Trousers of Oblivion
 						i(27925),	-- Ravenclaw Band
-						i(27936),	-- Greaves of Desolation (7.3.5 - Added to Anzu on Heroic Mode // Note!! Sanct looted one Dec. 30th 2018 on Normal Mode)
+						i(27936),	-- Greaves of Desolation (7.3.5 - Added to Anzu on Heroic Mode)
 						i(27632),	-- Terokk's Quill
 						i(27991, {	-- Shadow Labyrinth Key
 							["description"] = "You can loot this from the Talon King's Coffer after Patch 2.3.0, before that (and perhaps in TBC Classic), you would loot it from his corpse.",
@@ -272,6 +272,9 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 							i(29249),	-- Bands of the Benevolent
 							i(29259),	-- Bracers of the Hunt
 							i(27985),	-- Deathforge Girdle
+							-- #if BEFORE 7.3.5
+							i(27936),	-- Greaves of Desolation  (7.3.5 - Moved to Anzu)
+							-- #endif
 							i(27875),	-- Hallowed Trousers
 							i(27838),	-- Incanter's Trousers
 							i(27948),	-- Trousers of Oblivion

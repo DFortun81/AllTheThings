@@ -186,7 +186,9 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 						ach(654),	-- Shadow Labyrinth
 						i(27903),	-- Sonic Spear
 						i(27905),	-- Greatsword of Horrid Dreams
+						-- #if AFTER 7.3.5
 						i(29353),	-- Shockwave Truncheon
+						-- #endif
 						i(27913),	-- Whispering Blade of Slaying
 						i(27910),	-- Silvermoon Crest Shield
 						i(27803),	-- Shoulderguards of the Bold
@@ -194,9 +196,11 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 						i(28230),	-- Hallowed Garments
 						i(27912),	-- Harness of the Deep Currents
 						i(28232),	-- Robe of Oblivion
+						-- #if AFTER 7.3.5
 						i(29357),	-- Master Thief's Gloves
 						i(29261),	-- Girdle of Ferocity
 						i(30532),	-- Kirin Tor Master's Trousers
+						-- #endif
 						i(27902),	-- Silent Slippers of Meditation
 						i(24309),	-- Pattern: Spellstrike Pants
 					},
