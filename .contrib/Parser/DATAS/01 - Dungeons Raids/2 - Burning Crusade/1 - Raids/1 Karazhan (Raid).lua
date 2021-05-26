@@ -564,16 +564,6 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 						i(29283),	-- Violet Signet of the Master Assassin
 					},
 				}),
-				q(9837, {	-- Return to Khadgar
-					["qg"] = 15608,	-- Medivh
-					["sourceQuest"] = 9836,	-- The Master's Touch
-					["coord"] = { 48.8, 71.8, CAVERNS_OF_TIME_BLACK_MORASS },
-					["maps"] = { CAVERNS_OF_TIME_BLACK_MORASS, SHATTRATH_CITY },
-					["cost"] = {
-						{ "i", 24490, 1 },	-- The Master's Key
-					},
-					["lvl"] = 69,
-				}),
 				q(9645, {	-- The Master's Terrace
 					["qg"] = 16815,	-- Kamsis <The Conjurer>
 					["sourceQuest"] = 9640,	-- The Shade of Aran
@@ -582,16 +572,6 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 						{ "i", 23934, 1 },	-- Medivh's Journal
 					},
 					["lvl"] = 70,
-				}),
-				q(9836, {	-- The Master's Touch
-					["qg"] = 18166,	-- Khadgar <Sons of Lothar>
-					["sourceQuest"] = 9832,	-- The Second and Third Fragments
-					["coord"] = { 54.8, 44.3, SHATTRATH_CITY },
-					["maps"] = { CAVERNS_OF_TIME_BLACK_MORASS, SHATTRATH_CITY },
-					["cost"] = {
-						{ "i", 24489, 1 },	-- Restored Apprentice's Key
-					},
-					["lvl"] = 69,
 				}),
 				q(9860, {	-- The New Directive
 					["qg"] = 17613,	-- Archmage Alturus
