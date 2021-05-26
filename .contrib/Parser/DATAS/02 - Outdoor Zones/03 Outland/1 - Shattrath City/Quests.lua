@@ -385,10 +385,6 @@ _.Zones =
 					["coord"] = { 54.7, 44.3, SHATTRATH_CITY },
 					["sourceQuests"] = { 10210 },	-- A'dal
 				}),
-				q(10180, {	-- Can't Stay Away
-					["provider"] = { "n", 19045 },	-- Oloraak
-					["isBreadcrumb"] = true,
-				}),
 				q(11046, {	-- Chief Apothecary Hildagard
 					["provider"] = { "n", 19678 },	-- Fantei
 					["races"] = HORDE_ONLY,
