@@ -83,7 +83,7 @@ _.Zones =
 					["provider"] = { "i", 187055 },	-- Pouch of Rune Chits
 					["cost"] = { { "i", 185962, 20 } },	-- 20x Rune Chit
 					["g"] = {
-						i(187154),	-- Ancient Korthian Runes
+						i(187154),	-- Ancient Korthian Runes (TOY!)
 					},
 				}),
 				q(63644, {	-- Dread Tidings
@@ -468,7 +468,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 61.7, 23.9, KORTHIA },
 					["g"] = { -- TODO: unsure if this item will be up every time, it was added
-						i(187184),	-- Vesper of Clarity
+						i(187184),	-- Vesper of Clarity (TOY!)
 					},
 				}),
 				q(64080, {	-- Down to Earth

@@ -56,7 +56,8 @@ _.Zones =
 				o(368666, {	-- Lil'Abom's Head
 					["questID"] = 64010,
 					["isDaily"] = true,
-					["coord"] = { 30.3, 63.3, THE_MAW },
+				--	["coord"] = { 30.3, 63.3, THE_MAW }, original coord
+					["coord"] = { 32.1, 56.0, THE_MAW },	-- new coord?  or possibly multiple spawnpoints
 					["g"] = {
 						i(186183),	-- Lil'Abom Head
 					},

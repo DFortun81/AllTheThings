@@ -209,7 +209,7 @@ _.Zones =
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 						i(186483),	-- Foresworn Aquilon (MOUNT!)
-						i(187176),	-- Vesper of Harmony
+						i(187176),	-- Vesper of Harmony (TOY!)
 					},
 				}),
 				n(179859, {	-- Xyraxz the Unknowable

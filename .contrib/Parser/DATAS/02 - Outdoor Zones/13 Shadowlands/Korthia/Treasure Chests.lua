@@ -67,6 +67,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 54.2, 41.2, KORTHIA },
 					["g"] = {
+						i(186986),	-- Recipe: Widow Burst
 						i(187153),	-- Tasty Mawshroom
 					},
 				}),
@@ -75,6 +76,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 53.7, 37.9, KORTHIA },
 					["g"] = {
+						i(186986),	-- Recipe: Widow Burst
 						i(187153),	-- Tasty Mawshroom
 					},
 				}),
@@ -83,6 +85,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 45.6, 34.3, KORTHIA },
 					["g"] = {
+						i(186986),	-- Recipe: Widow Burst
 						i(187153),	-- Tasty Mawshroom
 					},
 				}),
@@ -91,6 +94,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 39.7, 34.8, KORTHIA },
 					["g"] = {
+						i(186986),	-- Recipe: Widow Burst
 						i(187153),	-- Tasty Mawshroom
 					},
 				}),
@@ -111,8 +115,7 @@ _.Zones =
 							["sourceQuests"] = { 64511 },	-- Missing Relics
 							["questID"] = 63921,	-- Ring of Self-Reflection
 							["g"] = {
-							--	TODO: currently this uncollectible item always makes the chest show up when "show all trackable things" is up, even though it's a one-time chest and the quest is finished.  there's no spellID or anything attached to the item so idk why that is!  but i'm commenting it out for now so it stops annoying me
-							--	i(187140),	-- Ring of Duplicity
+								i(187140),	-- Ring of Duplicity (TOY!)
 							},
 						}),
 					},

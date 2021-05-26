@@ -732,3 +732,13 @@ t(184396);	-- Malfunctioning Goliath Gauntlet
 t(184435);	-- Mark of Purity
 t(184476);	-- Regenerating Slime Vial
 t(178530);	-- Wreath-A-Rang
+
+-----------------
+-- PATCH 9.1.0 --
+-----------------
+t(187139);	-- Bottled Shade Heart
+t(187154);	-- Diviner's Rune Chits
+t(187113);	-- Personal Ball and Chain
+t(187140);	-- Ring of Duplicity
+t(187176);	-- Vesper of Harmony
+t(187184);	-- Vesper of Clarity

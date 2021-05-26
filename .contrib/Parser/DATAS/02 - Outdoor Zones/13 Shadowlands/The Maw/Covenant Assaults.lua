@@ -20,7 +20,6 @@ _.Zones =
 								crit(2),	-- Kearnen the Blade
 								crit(3),	-- Winslow Swan
 							}),
-							ach(15039),		-- Up For Grabs
 							ach(15042, {	-- Tea for the Troubled
 								crit(1),	-- Simone
 								crit(2),	-- Laurent
@@ -191,6 +190,9 @@ _.Zones =
 					["isWeekly"] = true,
 					["coord"] = { 33.8, 54.8, THE_MAW },
 					["g"] = {
+						n(ACHIEVEMENTS, {
+							ach(15039),	-- Up For Grabs
+						}),
 						n(QUESTS, {
 							q(63774, {	-- An Embarrassment Of Corpses
 								["provider"] = { "n", 177720 },	-- Rathan
@@ -323,6 +325,26 @@ _.Zones =
 							--	i(186156),	-- PH Korthia Trinket
 							}),
 						}),
+						n(TREASURES, {
+							o(369141, {	-- Mawsworn Cache
+								["questID"] = 64209,
+								["isDaily"] = true,
+								["coord"] = { 27.7, 61.6, THE_MAW },
+								["g"] = {
+									i(186600),	-- Quartered Ancient Ring
+								},
+							}),
+							o(368208, {	-- Mawsworn Cache
+								["questID"] = 63818,
+								["isDaily"] = true,
+								["coord"] = { 33.5, 70.4, THE_MAW },
+							}),
+							o(368213, {	-- Mawsworn Cache
+								["questID"] = 63825,
+								["isDaily"] = true,
+								["coord"] = { 32.8, 65.0, THE_MAW },
+							}),
+						}),
 					},
 				}),
 				q(63823, {	-- Night Fae Assault
@@ -421,7 +443,7 @@ _.Zones =
 											crit(3, {	-- Torgllun, Lord of Shades
 												["achievementID"] = 15107,	-- Conquering Korthia
 											}),
-											i(187139),	-- Bottled Shade Heart
+											i(187139),	-- Bottled Shade Heart (TOY!)
 											i(187360),	-- Orb of Enveloping Rifts
 											i(186605),	-- Nilganihmaht's Runed Band
 										},
@@ -475,7 +497,7 @@ _.Zones =
 											{ 47.2, 79.6, THE_MAW },
 										},
 										["g"] = {
-											i(187113),	-- Personal Ball and Chain
+											i(187113),	-- Personal Ball and Chain (TOY!)
 										},
 									}),
 								}),
