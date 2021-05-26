@@ -11998,6 +11998,8 @@ function app:CreateMiniListForGroup(group)
 		popout.data.total = 0;
 		popout.data.progress = 0;
 		BuildGroups(popout.data, popout.data.g);
+		-- always expand all groups on initial creation
+		ExpandGroupsRecursively(popout.data, true, true);
 		-- Adjust some update/refresh logic if this is a Quest Chain window
 		if popout.isQuestChain then
 			local oldUpdate = popout.Update;
@@ -12015,11 +12017,6 @@ function app:CreateMiniListForGroup(group)
 				app.AccountWideQuests = oldQuestTracking;
 			end;
 		end
-		if not popout.data.expanded then
-			ExpandGroupsRecursively(popout.data, true, true);
-		end
-		-- popout:Toggle(true);
-		-- return;
 	end
 	popout:Toggle(true);
 end
@@ -12356,9 +12353,10 @@ local function RowOnClick(self, button)
 			return true;
 		end
 
+		local window = self:GetParent():GetParent();
 		-- All non-Shift Right Clicks open a mini list or the settings.
 		if button == "RightButton" then
-			if IsAltKeyDown() and self.index > 0 then
+			if IsAltKeyDown() and (self.index > 0 or window.isQuestChain) then
 				AddTomTomWaypoint(reference, false);
 			elseif IsShiftKeyDown() then
 				if app.Settings:GetTooltipSetting("Sort:Progress") then
@@ -12523,7 +12521,6 @@ local function RowOnClick(self, button)
 				-- If this reference is anything else, expand the groups.
 				if reference.g then
 					-- mark the window if it is being fully-collapsed
-					local window = self:GetParent():GetParent();
 					if self.index < 1 then
 						window.fullCollapsed = HasExpandedSubgroup(reference);
 					end
@@ -12535,21 +12532,20 @@ local function RowOnClick(self, button)
 			end
 			if self.index > 0 then
 				reference.expanded = not reference.expanded;
-				self:GetParent():GetParent():Update();
+				window:Update();
 			elseif not reference.expanded then
 				reference.expanded = true;
-				self:GetParent():GetParent():Update();
+				window:Update();
 			else
 				-- Allow the First Frame to move the parent.
-				local owner = self:GetParent():GetParent();
 				-- Toggle lock/unlock by holding Alt when clicking the header of a Window
 				if IsAltKeyDown() then
-					local locked = not owner.isLocked;
-					owner.isLocked = locked;
+					local locked = not window.isLocked;
+					window.isLocked = locked;
 					-- only certain window locks may be persisted
-					if owner.lockPersistable and owner.Suffix then
+					if window.lockPersistable and window.Suffix then
 						local lockedWindows = GetDataMember("LockedWindows", {});
-						local lockedName = owner.Suffix;
+						local lockedName = window.Suffix;
 						if locked then
 							-- windows would be locked for all characters, but position can be changed per character
 							lockedWindows[lockedName] = 1;
@@ -12566,9 +12562,9 @@ local function RowOnClick(self, button)
 				else
 					self:SetScript("OnMouseUp", function(self)
 						self:SetScript("OnMouseUp", nil);
-						StopMovingOrSizing(owner);
+						StopMovingOrSizing(window);
 					end);
-					StartMovingOrSizing(owner, true);
+					StartMovingOrSizing(window, true);
 				end
 			end
 		end
