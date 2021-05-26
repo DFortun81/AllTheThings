@@ -1081,6 +1081,8 @@ local function BuildGroups(parent, g, noRecur)
 		for key, group in ipairs(g) do
 			-- Set the group's parent
 			group.parent = parent;
+			group.indent = nil;
+			group.back = nil;
 			-- Build the sub-groups by default
 			if not noRecur then
 				BuildGroups(group, group.g);
@@ -11994,7 +11996,7 @@ function app:CreateMiniListForGroup(group)
 		popout.data = group;
 		popout.data.hideText = true;
 		popout.data.visible = true;
-		popout.data.indent = 0;
+		popout.data.indent = 0;	-- TODO: get some extra padding for potential indicators on the top row
 		popout.data.total = 0;
 		popout.data.progress = 0;
 		BuildGroups(popout.data, popout.data.g);
@@ -12016,6 +12018,7 @@ function app:CreateMiniListForGroup(group)
 				oldRefresh(self, ...);
 				app.AccountWideQuests = oldQuestTracking;
 			end;
+			-- TODO: register quest log update event to refresh/soft-update the window for indicators
 		end
 	end
 	popout:Toggle(true);
@@ -12184,7 +12187,7 @@ local function SetRowData(self, row, data)
 		else
 			iconAdjust = string.find(summary, "|T") and -1 or 0;
 		end
-		local specs, icons = data.specs, {};
+		local specs = data.specs;
 		if specs and #specs > 0 then
 			summary = GetSpecsString(specs, false, false) .. summary;
 			iconAdjust = iconAdjust - #specs;
@@ -13238,6 +13241,8 @@ RowOnEnter = function (self)
 		-- GameTooltip:AddDoubleLine("Completed AltQuest ID",tostring(reference.altcompleted));
 		-- GameTooltip:AddDoubleLine("Breadcrumb Locking QuestID",tostring(reference.breadcrumbLockedBy));
 		-- GameTooltip:AddDoubleLine("Completed All SourceQuests",tostring(reference.sourceQuestsCompleted));
+		-- GameTooltip:AddDoubleLine("Parent Text",tostring(reference.parent and reference.parent.text));
+		-- GameTooltip:AddDoubleLine("Row Indent",tostring(CalculateRowIndent(reference)));
 
 		-- print("OnRowEnter-Show");
 		GameTooltip.MiscFieldsComplete = true;
