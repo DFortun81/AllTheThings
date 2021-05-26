@@ -2010,6 +2010,7 @@ _.Zones =
 									{"select", "itemID", 32975 },	-- General's Mooncloth Slippers
 									{"select", "itemID", 147613 },	-- General's Satin Cord
 									{"select", "itemID", 147614 },	-- General's Satin Slippers
+									{"select", "itemID", 147771 },  -- General's Satin Cuffs
 									{"select", "itemID", 32976 },	-- Marshal's Mooncloth Belt
 									{"select", "itemID", 32978 },	-- Marshal's Mooncloth Slippers
 									{"exclude", "itemID", 146615 },	-- Exclude itself to stop duplicating
@@ -2149,6 +2150,7 @@ _.Zones =
 									{"select", "itemID", 28402 },	-- General's Dreadweave Stalkers
 									{"select", "itemID", 147615 },	-- General's Felweave Belt
 									{"select", "itemID", 147616 },	-- General's Felweave Boots
+									{"select", "itemID", 147772 },  -- General's Felweave Cuffs
 									{"select", "itemID", 28980 },   -- Marshal's Dreadweave Belt
 									{"select", "itemID", 28982 },	-- Marshal's Dreadweave Stalkers						
 									{"exclude", "itemID", 146611 },	-- Exclude itself to stop duplicating
