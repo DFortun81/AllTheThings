@@ -1941,151 +1941,10 @@ _.Zones =
 							un(REMOVED_FROM_GAME, i(45983)),	-- Furious Gladiator's Tabard [Elite Rating]
 						},
 					}),
-					n(40211, {	-- Nargle Lashcord >S9< Elite <Vicious Gladiator>
-						["u"] = REMOVED_FROM_GAME,
-						["sym"] = {
-							{"sub", "pvp_gear_base", -9979, -672, -662 },	-- Vicious Gladiator: Season 9 Elite Gear
-							{"pop"},	-- Discard the Set header and acquire the children.
-						},
-						["g"] = {
-							un(REMOVED_FROM_GAME, i(70515)),	-- Vicious Gladiator's armwraps of accuracy. S10 Version
-							un(REMOVED_FROM_GAME, i(70516)),	-- Vicious Gladiator's armwrapf of alacrity. S10 Version
-							un(REMOVED_FROM_GAME, i(70523)),	-- Vicious Gladiator's belt of cruelty. S10 Version
-							un(REMOVED_FROM_GAME, i(70524)),	-- Vicious Gladiator's belt of mediation. S10 Version
-							un(REMOVED_FROM_GAME, i(70525)),	-- Vicious Gladiator's bindings of meditation. S10 Version
-							un(REMOVED_FROM_GAME, i(70526)),	-- Vicious Gladiator's bindings of prowess. S10 Version
-							un(REMOVED_FROM_GAME, i(70527)),	-- Vicious Gladiator's boots of alacrity. S10 Version
-							un(REMOVED_FROM_GAME, i(70528)),	-- Vicious Gladiator's boots of cruelty. S10 Version
-							un(REMOVED_FROM_GAME, i(70550)),	-- Vicious Gladiator's dragonhide gloves. S10 Version
-							un(REMOVED_FROM_GAME, i(70551)),	-- Vicious Gladiator's dragonhide helm. S10 Version
-							un(REMOVED_FROM_GAME, i(70552)),	-- Vicious Gladiator's dragonhide legguards. S10 Version
-							un(REMOVED_FROM_GAME, i(70553)),	-- Vicious Gladiator's dragonhide robes. S10 Version
-							un(REMOVED_FROM_GAME, i(70554)),	-- Vicious Gladiator's dragonhide spaulders. S10 Version
-							un(REMOVED_FROM_GAME, i(70571)),	-- Vicious Gladiator's footguards of alacrity. S10 Version
-							un(REMOVED_FROM_GAME, i(70572)),	-- Vicious Gladiator's footguards of mediation. S10 Version
-							un(REMOVED_FROM_GAME, i(70580)),	-- Vicious Gladiator's kodohide gloves. S10 Version
-							un(REMOVED_FROM_GAME, i(70581)),	-- Vicious Gladiator's kodohide helm. S10 Version
-							un(REMOVED_FROM_GAME, i(70582)),	-- Vicious Gladiator's kodohide legguards. S10 Version
-							un(REMOVED_FROM_GAME, i(70583)),	-- Vicious Gladiator's kodohide robes. S10 Version
-							un(REMOVED_FROM_GAME, i(70584)),	-- Vicious Gladiator's kodohide spaulders. S10 Version
-							un(REMOVED_FROM_GAME, i(70585)),	-- Vicious Gladiator's leather gloves. S10 Version
-							un(REMOVED_FROM_GAME, i(70586)),	-- Vicious Gladiator's leather helm. S10 Version
-							un(REMOVED_FROM_GAME, i(70587)),	-- Vicious Gladiator's leather legguards. S10 Version
-							un(REMOVED_FROM_GAME, i(70588)),	-- Vicious Gladiator's leather spaulders. S10 Version
-							un(REMOVED_FROM_GAME, i(70589)),	-- Vicious Gladiator's leather tunic. S10 Version
-							un(REMOVED_FROM_GAME, i(70663)),	-- Vicious Gladiator's waistband of accuracy. S10 Version
-							un(REMOVED_FROM_GAME, i(70664)),	-- Vicious Gladiator's waistband of cruelty. S10 Version
-							un(REMOVED_FROM_GAME, i(70671)),	-- Vicious Gladiator's wyrmhide gloves. S10 Version
-							un(REMOVED_FROM_GAME, i(70672)),	-- Vicious Gladiator's wyrmhide helm. S10 Version
-							un(REMOVED_FROM_GAME, i(70673)),	-- Vicious Gladiator's wyrmhide legguards. S10 Version
-							un(REMOVED_FROM_GAME, i(70674)),	-- Vicious Gladiator's wyrmhide robes. S10 Version
-							un(REMOVED_FROM_GAME, i(70675)),	-- Vicious Gladiator's wyrmhide spaulders. S10 Version
-							un(REMOVED_FROM_GAME, i(70542)),	-- Vicious Gladiator's Cloak of Alacrity. S10 Version
-							un(REMOVED_FROM_GAME, i(70543)),	-- Vicious Gladiator's Cloak of Prowess. S10 Version
-							un(REMOVED_FROM_GAME, i(70555)),	-- Vicious Gladiator's Drape of Diffusion. S10 Version
-							un(REMOVED_FROM_GAME, i(70556)),	-- Vicious Gladiator's Drape of of Mediation. S10 Version
-							un(REMOVED_FROM_GAME, i(70557)),	-- Vicious Gladiator's Drape of of Prowess.. S10 Version
-							un(REMOVED_FROM_GAME, i(70531)),	-- Vicious Gladiator's Cape of Cruelty. S10 Version
-							un(REMOVED_FROM_GAME, i(70532)),	-- Vicious Gladiator's Cape of Prowess. S10 Version
-							un(REMOVED_FROM_GAME, i(70511)),	-- Vicious Gladiator's Armsband of Mediation. S10 Version
-							un(REMOVED_FROM_GAME, i(70512)),	-- Vicious Gladiator's Armsband of Prowess. S10 Version
-							un(REMOVED_FROM_GAME, i(70590)),	-- Vicious Gladiator's Linked Armor. S10 Version
-							un(REMOVED_FROM_GAME, i(70591)),	-- Vicious Gladiator's Linked Gauntlets. S10 Version
-							un(REMOVED_FROM_GAME, i(70592)),	-- Vicious Gladiator's Linked Helm. S10 Version
-							un(REMOVED_FROM_GAME, i(70593)),	-- Vicious Gladiator's Linked Legs. S10 Version
-							un(REMOVED_FROM_GAME, i(70594)),	-- Vicious Gladiator's Linked Spaulders. S10 Version
-							un(REMOVED_FROM_GAME, i(70597)),	-- Vicious Gladiator's Mail Armor. S10 Version
-							un(REMOVED_FROM_GAME, i(70598)),	-- Vicious Gladiator's Mail Gauntlets. S10 Version
-							un(REMOVED_FROM_GAME, i(70599)),	-- Vicious Gladiator's Mail Helm. S10 Version
-							un(REMOVED_FROM_GAME, i(70600)),	-- Vicious Gladiator's Mail Legs. S10 Version
-							un(REMOVED_FROM_GAME, i(70601)),	-- Vicious Gladiator's Mail Spaulders. S10 Version
-							un(REMOVED_FROM_GAME, i(70632)),	-- Vicious Gladiator's RingMail Armor. S10 Version
-							un(REMOVED_FROM_GAME, i(70633)),	-- Vicious Gladiator's RingMail Gauntlets. S10 Version
-							un(REMOVED_FROM_GAME, i(70634)),	-- Vicious Gladiator's RingMail Helm. S10 Version
-							un(REMOVED_FROM_GAME, i(70635)),	-- Vicious Gladiator's RingMail Legs. S10 Version
-							un(REMOVED_FROM_GAME, i(70636)),	-- Vicious Gladiator's RingMail Spaulders. S10 Version
-							un(REMOVED_FROM_GAME, i(70640)),	-- Vicious Gladiator's Sabatons of Alacrity. S10 Version
-							un(REMOVED_FROM_GAME, i(70642)),	-- Vicious Gladiator's Sabatons of Medi. S10 Version
-							un(REMOVED_FROM_GAME, i(70665)),	-- Vicious Gladiator's Waistguard of Cruelty. S10 Version
-							un(REMOVED_FROM_GAME, i(70666)),	-- Vicious Gladiator's Waistguard of Medi. S10 Version
-							un(REMOVED_FROM_GAME, i(70513)),	-- Vicious Gladiator's armplates of alacrity. S10 Version
-							un(REMOVED_FROM_GAME, i(70514)),	-- Vicious Gladiator's armplates of proficiency. S10 Version
-							un(REMOVED_FROM_GAME, i(70529)),	-- Vicious Gladiator's bracers of meditation. S10 Version
-							un(REMOVED_FROM_GAME, i(70530)),	-- Vicious Gladiator's bracers of prowess. S10 Version
-							un(REMOVED_FROM_GAME, i(70540)),	-- Vicious Gladiator's clasp of cruelty. S10 Version
-							un(REMOVED_FROM_GAME, i(70541)),	-- Vicious Gladiator's clasp of meditation. S10 Version
-							un(REMOVED_FROM_GAME, i(70558)),	-- Vicious Gladiator's Dreadplate chest. S10 Version
-							un(REMOVED_FROM_GAME, i(70559)),	-- Vicious Gladiator's Dreadplate gloves. S10 Version
-							un(REMOVED_FROM_GAME, i(70560)),	-- Vicious Gladiator's Dreadplate helm. S10 Version
-							un(REMOVED_FROM_GAME, i(70561)),	-- Vicious Gladiator's Dreadplate legs. S10 Version
-							un(REMOVED_FROM_GAME, i(70562)),	-- Vicious Gladiator's Dreadplate shoulders. S10 Version
-							un(REMOVED_FROM_GAME, i(70573)),	-- Vicious Gladiator's girdle of cruelty. S10 Version
-							un(REMOVED_FROM_GAME, i(70574)),	-- Vicious Gladiator's girdle of prowess. S10 Version
-							un(REMOVED_FROM_GAME, i(70575)),	-- Vicious Gladiator's greaves of alacrity. S10 Version
-							un(REMOVED_FROM_GAME, i(70576)),	-- Vicious Gladiator's greaves of meditation. S10 Version
-							un(REMOVED_FROM_GAME, i(70615)),	-- Vicious Gladiator's Ornamented chest. S10 Version
-							un(REMOVED_FROM_GAME, i(70616)),	-- Vicious Gladiator's Ornamented gloves. S10 Version
-							un(REMOVED_FROM_GAME, i(70617)),	-- Vicious Gladiator's Ornamented head. S10 Version
-							un(REMOVED_FROM_GAME, i(70618)),	-- Vicious Gladiator's Ornamented legs. S10 Version
-							un(REMOVED_FROM_GAME, i(70619)),	-- Vicious Gladiator's Ornamented shoulders. S10 Version
-							un(REMOVED_FROM_GAME, i(70623)),	-- Vicious Gladiator's Plate chest. S10 Version
-							un(REMOVED_FROM_GAME, i(70624)),	-- Vicious Gladiator's Plate gloves. S10 Version
-							un(REMOVED_FROM_GAME, i(70625)),	-- Vicious Gladiator's Plate helm. S10 Version
-							un(REMOVED_FROM_GAME, i(70626)),	-- Vicious Gladiator's Plate legs. S10 Version
-							un(REMOVED_FROM_GAME, i(70627)),	-- Vicious Gladiator's Plate shoulders. S10 Version
-							un(REMOVED_FROM_GAME, i(70648)),	-- Vicious Gladiator's Scaled chest. S10 Version
-							un(REMOVED_FROM_GAME, i(70649)),	-- Vicious Gladiator's Scaled gloves. S10 Version
-							un(REMOVED_FROM_GAME, i(70650)),	-- Vicious Gladiator's Scaled helm. S10 Version
-							un(REMOVED_FROM_GAME, i(70651)),	-- Vicious Gladiator's Scaled legs. S10 Version
-							un(REMOVED_FROM_GAME, i(70652)),	-- Vicious Gladiator's Scaled shoulders. S10 Version
-							un(REMOVED_FROM_GAME, i(70667)),	-- Vicious Gladiator's Warboots of alacrity. S10 Version
-							un(REMOVED_FROM_GAME, i(70668)),	-- Vicious Gladiator's warboots of cruelty. S10 Version
-							un(REMOVED_FROM_GAME, i(70533)),	-- Vicious Gladiator's Chain armor. S10 Version
-							un(REMOVED_FROM_GAME, i(70534)),	-- Vicious Gladiator's Chain gloves. S10 Version
-							un(REMOVED_FROM_GAME, i(70535)),	-- Vicious Gladiator's Chain helm. S10 Version
-							un(REMOVED_FROM_GAME, i(70536)),	-- Vicious Gladiator's Chain leggs. S10 Version
-							un(REMOVED_FROM_GAME, i(70537)),	-- Vicious Gladiator's Chain spaulders. S10 Version
-							un(REMOVED_FROM_GAME, i(70595)),	-- Vicious Gladiator's links of accuracy. S10 Version
-							un(REMOVED_FROM_GAME, i(70596)),	-- Vicious Gladiator's links of cruelty. S10 Version
-							un(REMOVED_FROM_GAME, i(70639)),	-- Vicious Gladiator's sabatons of alacrity. S10 Version
-							un(REMOVED_FROM_GAME, i(70641)),	-- Vicious Gladiator's sabatons of cruelty. S10 Version
-							un(REMOVED_FROM_GAME, i(70669)),	-- Vicious Gladiator's wristguards of accuracy. S10 Version
-							un(REMOVED_FROM_GAME, i(70670)),	-- Vicious Gladiator's wristguards of alacrity. S10 Version
-							un(REMOVED_FROM_GAME, i(70538)),	-- Vicious Gladiator's choker of accuracy. S10 Version
-							un(REMOVED_FROM_GAME, i(70539)),	-- Vicious Gladiator's choker of proficiency. S10 Version
-							un(REMOVED_FROM_GAME, i(70613)),	-- Vicious Gladiator's necklace of proficiency. S10 Version
-							un(REMOVED_FROM_GAME, i(70614)),	-- Vicious Gladiator's necklace of prowess. S10 Version
-							un(REMOVED_FROM_GAME, i(70620)),	-- Vicious Gladiator's pendant of alacrity. S10 Version
-							un(REMOVED_FROM_GAME, i(70621)),	-- Vicious Gladiator's pendant of diffusion. S10 Version
-							un(REMOVED_FROM_GAME, i(70622)),	-- Vicious Gladiator's pendant of meditation. S10 Version
-							un(REMOVED_FROM_GAME, i(70520)),	-- Vicious Gladiator's band of accuracy. S10 Version
-							un(REMOVED_FROM_GAME, i(70521)),	-- Vicious Gladiator's band of cruelty S10 Version
-							un(REMOVED_FROM_GAME, i(70522)),	-- Vicious Gladiator's band of mediation S10 Version
-							un(REMOVED_FROM_GAME, i(70637)),	-- Vicious Gladiator's ring of accuracy S10 Version
-							un(REMOVED_FROM_GAME, i(70638)),	-- Vicious Gladiator's ring of cruelty S10 Version
-							un(REMOVED_FROM_GAME, i(70653)),	-- Vicious Gladiator's signet of accuracy S10 Version
-							un(REMOVED_FROM_GAME, i(70654)),	-- Vicious Gladiator's signet of cruelty S10 Version
-							un(REMOVED_FROM_GAME, i(70517)),	-- Vicious Gladiator's badge of conquest. S10 Version
-							un(REMOVED_FROM_GAME, i(70518)),	-- Vicious Gladiator's badge of dominance. S10 Version
-							un(REMOVED_FROM_GAME, i(70519)),	-- Vicious Gladiator's badge of citory. S10 Version
-							un(REMOVED_FROM_GAME, i(70563)),	-- Vicious Gladiator's emblem of cruelty. S10 Version
-							un(REMOVED_FROM_GAME, i(70564)),	-- Vicious Gladiator's emblem of mediation. S10 Version
-							un(REMOVED_FROM_GAME, i(70565)),	-- Vicious Gladiator's emblem of tanicty. S10 Version
-							un(REMOVED_FROM_GAME, i(70577)),	-- Vicious Gladiator's insignia of conquest. S10 Version
-							un(REMOVED_FROM_GAME, i(70578)),	-- Vicious Gladiator's insignia of dominance. S10 Version
-							un(REMOVED_FROM_GAME, i(70579)),	-- Vicious Gladiator's insignia of victory. S10 Version
-							un(REMOVED_FROM_GAME, i(70602)),	-- Vicious Gladiator's medallion of cruelty . S10 Version(horde)
-							un(REMOVED_FROM_GAME, i(70603)),	-- Vicious Gladiator's medallion of cruelty. S10 Version (ally)
-							un(REMOVED_FROM_GAME, i(70604)),	-- Vicious Gladiator's medallion of meditation. S10 Version (ally)
-							un(REMOVED_FROM_GAME, i(70605)),	-- Vicious Gladiator's medallion of meditation. S10 Version (horde)
-							un(REMOVED_FROM_GAME, i(70606)),	-- Vicious Gladiator's medallion of tenacity. S10 Version (ally)
-							un(REMOVED_FROM_GAME, i(70607)),	-- Vicious Gladiator's medallion of tenactiy. S10 Version (horde)
-						},
-					}),
-					n(34092, {	-- Trapjaw Rix Season >7< Elite Version [Note: Yes, two npc's with same name. One is removed]
+					n(34092, {	-- Trapjaw Rix Season >7< Elite Version [Note: Yes, npc's with same name. Blizzard liked to reuse them!]
 						["u"] = REMOVED_FROM_GAME,
 					}),
-					n(34095, {	-- Trapjaw Rix Season >8< Elite Version [Note: Yes, two npc's with same name. One is removed]
+					n(34095, {	-- Trapjaw Rix Season >8< Elite Version [Note: Yes, npc's with same name. Blizzard liked to reuse them!]
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					n(40212, { 	-- Trapjaw Rix <Savage Gladiator>
@@ -2467,22 +2326,792 @@ _.Zones =
 					}),
 					n(31864, { 	-- Xazi Smolderpipe >Season 6< Elite
 						["u"] = REMOVED_FROM_GAME,
-						["sym"] = { {"sub", "pvp_weapons_ensemble", -10014, -669, -662 }, },	-- Furious Gladiator: Season 6 Elite Weapons
+					}),
+					n(69973, { 	-- Zom Bocom <Relentless Gladiator>
+						["coord"] = { 59.0, 58.8, 126 },
+						["g"] = {
+							n(-319, {	-- Weapons
+								i(146643, {	-- Arsenal: Relentless Gladiator's Weapons
+									["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_weapons_ensemble", -10014, -670, -661 },
+										{"exclude", "itemID", 146644 },	-- Exclude itself to stop duplicating
+									},
+								}),
+								i(42566, {	-- Relentless Gladiator's Barrier
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(42515, {	-- Relentless Gladiator's Baton of Light
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42366, {	-- Relentless Gladiator's Battle Staff
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(49189, {	-- Relentless Gladiator's Blade of Alacrity
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42282, {	-- Relentless Gladiator's Bonecracker
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42324, {	-- Relentless Gladiator's Bonegrinder
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42234, {	-- Relentless Gladiator's Chopper
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42210, {	-- Relentless Gladiator's Cleaver
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(49187, {	-- Relentless Gladiator's Compendium
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(42319, {	-- Relentless Gladiator's Decapitator
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42527, {	-- Relentless Gladiator's Endgame
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(42386, {	-- Relentless Gladiator's Energy Staff
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42272, {	-- Relentless Gladiator's Fleshslicer
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(44424, {	-- Relentless Gladiator's Focus Staff
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42354, {	-- Relentless Gladiator's Gavel
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42334, {	-- Relentless Gladiator's Greatsword
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42539, {	-- Relentless Gladiator's Grimoire
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(42229, {	-- Relentless Gladiator's Hacker
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42498, {	-- Relentless Gladiator's Heavy Crossbow
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42492, {	-- Relentless Gladiator's Longbow
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42257, {	-- Relentless Gladiator's Mutilator
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42521, {	-- Relentless Gladiator's Piercing Touch
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42329, {	-- Relentless Gladiator's Pike
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42277, {	-- Relentless Gladiator's Pummeler
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42292, {	-- Relentless Gladiator's Quickblade
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42572, {	-- Relentless Gladiator's Redoubt
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(42533, {	-- Relentless Gladiator's Reprieve
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(42487, {	-- Relentless Gladiator's Rifle
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42262, {	-- Relentless Gladiator's Ripper
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42244, {	-- Relentless Gladiator's Shanker
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42561, {	-- Relentless Gladiator's Shield Wall
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(42250, {	-- Relentless Gladiator's Shiv
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42267, {	-- Relentless Gladiator's Slasher
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42287, {	-- Relentless Gladiator's Slicer
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42348, {	-- Relentless Gladiator's Spellblade
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42392, {	-- Relentless Gladiator's Staff
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(42504, {	-- Relentless Gladiator's Touch of Defeat
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(49185, {	-- Relentless Gladiator's Wand of Alacrity
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+								i(44423, {	-- Relentless Gladiator's War Staff
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+								}),
+							}),
+							cl(DEATHKNIGHT, {
+								i(146570, {	-- Ensemble: Relentless Gladiator's Dreadplate Armor
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_ensemble", -10014, -670, -661, 6 },
+										{"select", "itemID", 40890 },	-- Relentless Gladiator's Bracers of Triumph
+										{"select", "itemID", 40883 },	-- Relentless Gladiator's Girdle of Triumph
+										{"select", "itemID", 147601 },	-- Relentless Gladiator's Greaves of Victory
+										{"exclude", "itemID", 146570 },	-- Exclude itself to stop duplicating
+									},
+								}),
+								i(40791, {	-- Relentless Gladiator's Dreadplate Chestpiece
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(40811, {	-- Relentless Gladiator's Dreadplate Gauntlets
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(40830, {	-- Relentless Gladiator's Dreadplate Helm
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(40851, {	-- Relentless Gladiator's Dreadplate Legguards
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(40871, {	-- Relentless Gladiator's Dreadplate Shoulders
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+							}),
+							cl(DRUID, {
+								i(146569, {	-- Ensemble: Relentless Gladiator's Dragonhide Armor
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_ensemble", -10014, -670, -661, 11 },
+										{"select", "itemID", 41641 },	-- Relentless Gladiator's Armwraps of Dominance
+										{"select", "itemID", 41631 },	-- Relentless Gladiator's Belt of Dominance
+										{"select", "itemID", 41636 },	-- Relentless Gladiator's Boots of Dominance
+										{"select", "itemID", 41626 },	-- Relentless Gladiator's Armwraps of Salvation
+										{"select", "itemID", 41618 },	-- Relentless Gladiator's Belt of Salvation
+										{"select", "itemID", 41622 },	-- Relentless Gladiator's Boots of Salvation
+										{"exclude", "itemID", 146569 },	-- Exclude itself to stop duplicating
+									},
+								}),
+								i(41774, {	-- Relentless Gladiator's Dragonhide Gloves
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41679, {	-- Relentless Gladiator's Dragonhide Helm
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41668, {	-- Relentless Gladiator's Dragonhide Legguards
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41662, {	-- Relentless Gladiator's Dragonhide Robes
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41716, {	-- Relentless Gladiator's Dragonhide Spaulders
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41288, {	-- Relentless Gladiator's Kodohide Gloves
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41322, {	-- Relentless Gladiator's Kodohide Helm
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41299, {	-- Relentless Gladiator's Kodohide Legguards
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41311, {	-- Relentless Gladiator's Kodohide Robes
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41276, {	-- Relentless Gladiator's Kodohide Spaulders
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41294, {	-- Relentless Gladiator's Wyrmhide Gloves
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41328, {	-- Relentless Gladiator's Wyrmhide Helm
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41305, {	-- Relentless Gladiator's Wyrmhide Legguards
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41317, {	-- Relentless Gladiator's Wyrmhide Robes
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41282, {	-- Relentless Gladiator's Wyrmhide Spaulders
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+							}),
+							cl(HUNTER, {
+								i(146568, {	-- Ensemble: Relentless Gladiator's Chain Armor
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_ensemble", -10014, -670, -661, 3 },
+										{"select", "itemID", 41226 },	-- Relentless Gladiator's Wristguards of Triumph
+										{"select", "itemID", 41236 },	-- Relentless Gladiator's Waistguard of Triumph
+										{"select", "itemID", 41231 },	-- Relentless Gladiator's Sabatons of Triumph
+										{"exclude", "itemID", 146568 },	-- Exclude itself to stop duplicating
+									},
+								}),
+								i(41088, {	-- Relentless Gladiator's Chain Armor
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41144, {	-- Relentless Gladiator's Chain Gauntlets
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41158, {	-- Relentless Gladiator's Chain Helm
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41206, {	-- Relentless Gladiator's Chain Leggings
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41218, {	-- Relentless Gladiator's Chain Spaulders
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+							}),
+							cl(MAGE, {
+								i(146577, {	-- Ensemble: Relentless Gladiator's Silk Armor
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_ensemble", -10014, -670, -661, 8 },
+										{"select", "itemID", 41910 },	-- Relentless Gladiator's Cuffs of Dominance
+										{"select", "itemID", 41899 },	-- Relentless Gladiator's Cord of Dominance
+										{"select", "itemID", 41904 },	-- Relentless Gladiator's Treads of Dominance
+										{"select", "itemID", 49181 },	-- Relentless Gladiator's Cuffs of Alacrity
+										{"exclude", "itemID", 146577 },	-- Exclude itself to stop duplicating
+									},
+								}),
+								i(41966, {	-- Relentless Gladiator's Silk Amice
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41947, {	-- Relentless Gladiator's Silk Cowl
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41972, {	-- Relentless Gladiator's Silk Handguards
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41954, {	-- Relentless Gladiator's Silk Raiment
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41960, {	-- Relentless Gladiator's Silk Trousers
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+							}),
+							cl(PALADIN, {
+								i(146576, {	-- Ensemble: Relentless Gladiator's Scaled Armor
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_ensemble", -10014, -670, -661, 2 },
+										{"select", "itemID", 40984 },	-- Relentless Gladiator's Bracers of Salvation
+										{"select", "itemID", 40978 },	-- Relentless Gladiator's Girdle of Salvation
+										{"select", "itemID", 40979 },	-- Relentless Gladiator's Greaves of Salvation
+										{"exclude", "itemID", 146576 },	-- Exclude itself to stop duplicating
+									},
+								}),
+								i(40910, {	-- Relentless Gladiator's Ornamented Chestguard
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(40928, {	-- Relentless Gladiator's Ornamented Gloves
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(40934, {	-- Relentless Gladiator's Ornamented Headcover
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(40940, {	-- Relentless Gladiator's Ornamented Legplates
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(40964, {	-- Relentless Gladiator's Ornamented Spaulders
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(40792, {	-- Relentless Gladiator's Scaled Chestpiece
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(40812, {	-- Relentless Gladiator's Scaled Gauntlets
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(40831, {	-- Relentless Gladiator's Scaled Helm
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(40852, {	-- Relentless Gladiator's Scaled Legguards
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(40872, {	-- Relentless Gladiator's Scaled Shoulders
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+							}),
+							cl(PRIEST, {
+								i(146575, {	-- Ensemble: Relentless Gladiator's Satin Armor
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_ensemble", -10014, -670, -661, 5 },
+										{"select", "itemID", 41894 },	-- Relentless Gladiator's Cuffs of Salvation
+										{"select", "itemID", 41882 },	-- Relentless Gladiator's Cord of Salvation
+										{"select", "itemID", 41886 },	-- Relentless Gladiator's Treads of Salvation
+										{"select", "itemID", 49179 },	-- Relentless Gladiator's Cord of Alacrity
+										{"exclude", "itemID", 146575 },	-- Exclude itself to stop duplicating
+									},
+								}),
+								i(41875, {	-- Relentless Gladiator's Mooncloth Gloves
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41855, {	-- Relentless Gladiator's Mooncloth Hood
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41865, {	-- Relentless Gladiator's Mooncloth Leggings
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41870, {	-- Relentless Gladiator's Mooncloth Mantle
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41860, {	-- Relentless Gladiator's Mooncloth Robe
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41941, {	-- Relentless Gladiator's Satin Gloves
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41916, {	-- Relentless Gladiator's Satin Hood
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41928, {	-- Relentless Gladiator's Satin Leggings
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41935, {	-- Relentless Gladiator's Satin Mantle
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41922, {	-- Relentless Gladiator's Satin Robe
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+							}),
+							cl(ROGUE, {
+								i(146572, {	-- Ensemble: Relentless Gladiator's Leather Armor
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_ensemble", -10014, -670, -661, 4 },
+										{"select", "itemID", 41841 },	-- Relentless Gladiator's Armwraps of Triumph
+										{"select", "itemID", 41833 },	-- Relentless Gladiator's Belt of Triumph
+										{"select", "itemID", 41837 },	-- Relentless Gladiator's Boots of Triumph
+										{"exclude", "itemID", 146572 },	-- Exclude itself to stop duplicating
+									},
+								}),
+								i(41768, {	-- Relentless Gladiator's Leather Gloves
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41673, {	-- Relentless Gladiator's Leather Helm
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41656, {	-- Relentless Gladiator's Leather Legguards
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41684, {	-- Relentless Gladiator's Leather Spaulders
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41651, {	-- Relentless Gladiator's Leather Tunic
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+							}),
+							cl(SHAMAN, {
+								i(146574, {	-- Ensemble: Relentless Gladiator's Ringmail Armor
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_ensemble", -10014, -670, -661, 7 },
+										{"select", "itemID", 41066 },	-- Relentless Gladiator's Wristguards of Dominance
+										{"select", "itemID", 41071 },	-- Relentless Gladiator's Waistguard of Dominance
+										{"select", "itemID", 41076 },	-- Relentless Gladiator's Sabatons of Dominance
+										{"select", "itemID", 41061 },	-- Relentless Gladiator's Wristguards of Salvation
+										{"select", "itemID", 41052 },	-- Relentless Gladiator's Waistguard of Salvation
+										{"select", "itemID", 41056 },	-- Relentless Gladiator's Sabatons of Salvation
+										{"exclude", "itemID", 146574 },	-- Exclude itself to stop duplicating
+									},
+								}),
+								i(41082, {	-- Relentless Gladiator's Linked Armor
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41138, {	-- Relentless Gladiator's Linked Gauntlets
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41152, {	-- Relentless Gladiator's Linked Helm
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41200, {	-- Relentless Gladiator's Linked Leggings
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41212, {	-- Relentless Gladiator's Linked Spaulders
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(40995, {	-- Relentless Gladiator's Mail Armor
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41008, {	-- Relentless Gladiator's Mail Gauntlets
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41020, {	-- Relentless Gladiator's Mail Helm
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41034, {	-- Relentless Gladiator's Mail Leggings
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41045, {	-- Relentless Gladiator's Mail Spaulders
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(40994, {	-- Relentless Gladiator's Ringmail Armor
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41002, {	-- Relentless Gladiator's Ringmail Gauntlets
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41014, {	-- Relentless Gladiator's Ringmail Helm
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41028, {	-- Relentless Gladiator's Ringmail Leggings
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41039, {	-- Relentless Gladiator's Ringmail Spaulders
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+							}),
+							cl(WARLOCK, {
+								i(146571, {	-- Ensemble: Relentless Gladiator's Felweave Armor
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_ensemble", -10014, -670, -661, 9 },
+										{"select", "itemID", 147602 },	-- Relentless Gladiator's Cuffs of Ascendancy
+										{"select", "itemID", 49183 },	-- Relentless Gladiator's Treads of Alacrity
+										{"exclude", "itemID", 146571 },	-- Exclude itself to stop duplicating
+									},
+								}),
+								i(42012, {	-- Relentless Gladiator's Felweave Amice
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41994, {	-- Relentless Gladiator's Felweave Cowl
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(42018, {	-- Relentless Gladiator's Felweave Handguards
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41999, {	-- Relentless Gladiator's Felweave Raiment
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(42006, {	-- Relentless Gladiator's Felweave Trousers
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+							}),
+							cl(WARRIOR, {
+								i(146573, {	-- Ensemble: Relentless Gladiator's Plate Armor
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_ensemble", -10014, -670, -661, 1 },
+										{"select", "itemID", 147603 },	-- Relentless Gladiator's Bracers of Victory
+										{"select", "itemID", 147604 },	-- Relentless Gladiator's Girdle of Victory
+										{"select", "itemID", 40884 },	-- Relentless Gladiator's Greaves of Triumph
+										{"exclude", "itemID", 146573 },	-- Exclude itself to stop duplicating 
+									},
+								}),
+								i(40790, {	-- Relentless Gladiator's Plate Chestpiece
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(40810, {	-- Relentless Gladiator's Plate Gauntlets
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(40829, {	-- Relentless Gladiator's Plate Helm
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(40850, {	-- Relentless Gladiator's Plate Legguards
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(40870, {	-- Relentless Gladiator's Plate Shoulders
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+							}),
+							n(-322, {	-- Back
+								i(42078, {	-- Relentless Gladiator's Cloak of Ascendancy
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(42080, {	-- Relentless Gladiator's Cloak of Deliverance
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(42076, {	-- Relentless Gladiator's Cloak of Dominance
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(42079, {	-- Relentless Gladiator's Cloak of Salvation
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(42077, {	-- Relentless Gladiator's Cloak of Subjugation
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(42081, {	-- Relentless Gladiator's Cloak of Triumph
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(42082, {	-- Relentless Gladiator's Cloak of Victory
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+							}),
+							n(-326, {	-- Wrists
+								i(41641, {	-- Relentless Gladiator's Armwraps of Dominance
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(41626, {	-- Relentless Gladiator's Armwraps of Salvation
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(41841, {	-- Relentless Gladiator's Armwraps of Triumph
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(40984, {	-- Relentless Gladiator's Bracers of Salvation
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(40890, {	-- Relentless Gladiator's Bracers of Triumph
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(147603, {	-- Relentless Gladiator's Bracers of Victory
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(49181, {	-- Relentless Gladiator's Cuffs of Alacrity
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(147602, {	-- Relentless Gladiator's Cuffs of Ascendancy
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(41910, {	-- Relentless Gladiator's Cuffs of Dominance
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(41894, {	-- Relentless Gladiator's Cuffs of Salvation
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(41066, {	-- Relentless Gladiator's Wristguards of Dominance
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(41061, {	-- Relentless Gladiator's Wristguards of Salvation
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(41226, {	-- Relentless Gladiator's Wristguards of Triumph
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+							}),
+							n(-328, {	-- Waist
+								i(41631, {	-- Relentless Gladiator's Belt of Dominance
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(41618, {	-- Relentless Gladiator's Belt of Salvation
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(41833, {	-- Relentless Gladiator's Belt of Triumph
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(49179, {	-- Relentless Gladiator's Cord of Alacrity
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(41899, {	-- Relentless Gladiator's Cord of Dominance
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(41882, {	-- Relentless Gladiator's Cord of Salvation
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(40978, {	-- Relentless Gladiator's Girdle of Salvation
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(40883, {	-- Relentless Gladiator's Girdle of Triumph
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(147604, {	-- Relentless Gladiator's Girdle of Victory
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(41071, {	-- Relentless Gladiator's Waistguard of Dominance
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(41052, {	-- Relentless Gladiator's Waistguard of Salvation
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+								i(41236, {	-- Relentless Gladiator's Waistguard of Triumph
+									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+								}),
+							}),
+							n(-330, {	-- Feet
+								i(41636, {	-- Relentless Gladiator's Boots of Dominance
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41622, {	-- Relentless Gladiator's Boots of Salvation
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41837, {	-- Relentless Gladiator's Boots of Triumph
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(40979, {	-- Relentless Gladiator's Greaves of Salvation
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(40884, {	-- Relentless Gladiator's Greaves of Triumph
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(147601, {	-- Relentless Gladiator's Greaves of Victory
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41076, {	-- Relentless Gladiator's Sabatons of Dominance
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41056, {	-- Relentless Gladiator's Sabatons of Salvation
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41231, {	-- Relentless Gladiator's Sabatons of Triumph
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(49183, {	-- Relentless Gladiator's Treads of Alacrity
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41904, {	-- Relentless Gladiator's Treads of Dominance
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41886, {	-- Relentless Gladiator's Treads of Salvation
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+							}),
+						
+					}),
+					-- Sort me later:
+					n(40211, {	-- Nargle Lashcord >S9< Elite <Vicious Gladiator>
+						["u"] = REMOVED_FROM_GAME,
+						["sym"] = {
+							{"sub", "pvp_gear_base", -9979, -672, -662 },	-- Vicious Gladiator: Season 9 Elite Gear
+							{"pop"},	-- Discard the Set header and acquire the children.
+						},
+						["g"] = {
+							un(REMOVED_FROM_GAME, i(70515)),	-- Vicious Gladiator's armwraps of accuracy. S10 Version
+							un(REMOVED_FROM_GAME, i(70516)),	-- Vicious Gladiator's armwrapf of alacrity. S10 Version
+							un(REMOVED_FROM_GAME, i(70523)),	-- Vicious Gladiator's belt of cruelty. S10 Version
+							un(REMOVED_FROM_GAME, i(70524)),	-- Vicious Gladiator's belt of mediation. S10 Version
+							un(REMOVED_FROM_GAME, i(70525)),	-- Vicious Gladiator's bindings of meditation. S10 Version
+							un(REMOVED_FROM_GAME, i(70526)),	-- Vicious Gladiator's bindings of prowess. S10 Version
+							un(REMOVED_FROM_GAME, i(70527)),	-- Vicious Gladiator's boots of alacrity. S10 Version
+							un(REMOVED_FROM_GAME, i(70528)),	-- Vicious Gladiator's boots of cruelty. S10 Version
+							un(REMOVED_FROM_GAME, i(70550)),	-- Vicious Gladiator's dragonhide gloves. S10 Version
+							un(REMOVED_FROM_GAME, i(70551)),	-- Vicious Gladiator's dragonhide helm. S10 Version
+							un(REMOVED_FROM_GAME, i(70552)),	-- Vicious Gladiator's dragonhide legguards. S10 Version
+							un(REMOVED_FROM_GAME, i(70553)),	-- Vicious Gladiator's dragonhide robes. S10 Version
+							un(REMOVED_FROM_GAME, i(70554)),	-- Vicious Gladiator's dragonhide spaulders. S10 Version
+							un(REMOVED_FROM_GAME, i(70571)),	-- Vicious Gladiator's footguards of alacrity. S10 Version
+							un(REMOVED_FROM_GAME, i(70572)),	-- Vicious Gladiator's footguards of mediation. S10 Version
+							un(REMOVED_FROM_GAME, i(70580)),	-- Vicious Gladiator's kodohide gloves. S10 Version
+							un(REMOVED_FROM_GAME, i(70581)),	-- Vicious Gladiator's kodohide helm. S10 Version
+							un(REMOVED_FROM_GAME, i(70582)),	-- Vicious Gladiator's kodohide legguards. S10 Version
+							un(REMOVED_FROM_GAME, i(70583)),	-- Vicious Gladiator's kodohide robes. S10 Version
+							un(REMOVED_FROM_GAME, i(70584)),	-- Vicious Gladiator's kodohide spaulders. S10 Version
+							un(REMOVED_FROM_GAME, i(70585)),	-- Vicious Gladiator's leather gloves. S10 Version
+							un(REMOVED_FROM_GAME, i(70586)),	-- Vicious Gladiator's leather helm. S10 Version
+							un(REMOVED_FROM_GAME, i(70587)),	-- Vicious Gladiator's leather legguards. S10 Version
+							un(REMOVED_FROM_GAME, i(70588)),	-- Vicious Gladiator's leather spaulders. S10 Version
+							un(REMOVED_FROM_GAME, i(70589)),	-- Vicious Gladiator's leather tunic. S10 Version
+							un(REMOVED_FROM_GAME, i(70663)),	-- Vicious Gladiator's waistband of accuracy. S10 Version
+							un(REMOVED_FROM_GAME, i(70664)),	-- Vicious Gladiator's waistband of cruelty. S10 Version
+							un(REMOVED_FROM_GAME, i(70671)),	-- Vicious Gladiator's wyrmhide gloves. S10 Version
+							un(REMOVED_FROM_GAME, i(70672)),	-- Vicious Gladiator's wyrmhide helm. S10 Version
+							un(REMOVED_FROM_GAME, i(70673)),	-- Vicious Gladiator's wyrmhide legguards. S10 Version
+							un(REMOVED_FROM_GAME, i(70674)),	-- Vicious Gladiator's wyrmhide robes. S10 Version
+							un(REMOVED_FROM_GAME, i(70675)),	-- Vicious Gladiator's wyrmhide spaulders. S10 Version
+							un(REMOVED_FROM_GAME, i(70542)),	-- Vicious Gladiator's Cloak of Alacrity. S10 Version
+							un(REMOVED_FROM_GAME, i(70543)),	-- Vicious Gladiator's Cloak of Prowess. S10 Version
+							un(REMOVED_FROM_GAME, i(70555)),	-- Vicious Gladiator's Drape of Diffusion. S10 Version
+							un(REMOVED_FROM_GAME, i(70556)),	-- Vicious Gladiator's Drape of of Mediation. S10 Version
+							un(REMOVED_FROM_GAME, i(70557)),	-- Vicious Gladiator's Drape of of Prowess.. S10 Version
+							un(REMOVED_FROM_GAME, i(70531)),	-- Vicious Gladiator's Cape of Cruelty. S10 Version
+							un(REMOVED_FROM_GAME, i(70532)),	-- Vicious Gladiator's Cape of Prowess. S10 Version
+							un(REMOVED_FROM_GAME, i(70511)),	-- Vicious Gladiator's Armsband of Mediation. S10 Version
+							un(REMOVED_FROM_GAME, i(70512)),	-- Vicious Gladiator's Armsband of Prowess. S10 Version
+							un(REMOVED_FROM_GAME, i(70590)),	-- Vicious Gladiator's Linked Armor. S10 Version
+							un(REMOVED_FROM_GAME, i(70591)),	-- Vicious Gladiator's Linked Gauntlets. S10 Version
+							un(REMOVED_FROM_GAME, i(70592)),	-- Vicious Gladiator's Linked Helm. S10 Version
+							un(REMOVED_FROM_GAME, i(70593)),	-- Vicious Gladiator's Linked Legs. S10 Version
+							un(REMOVED_FROM_GAME, i(70594)),	-- Vicious Gladiator's Linked Spaulders. S10 Version
+							un(REMOVED_FROM_GAME, i(70597)),	-- Vicious Gladiator's Mail Armor. S10 Version
+							un(REMOVED_FROM_GAME, i(70598)),	-- Vicious Gladiator's Mail Gauntlets. S10 Version
+							un(REMOVED_FROM_GAME, i(70599)),	-- Vicious Gladiator's Mail Helm. S10 Version
+							un(REMOVED_FROM_GAME, i(70600)),	-- Vicious Gladiator's Mail Legs. S10 Version
+							un(REMOVED_FROM_GAME, i(70601)),	-- Vicious Gladiator's Mail Spaulders. S10 Version
+							un(REMOVED_FROM_GAME, i(70632)),	-- Vicious Gladiator's RingMail Armor. S10 Version
+							un(REMOVED_FROM_GAME, i(70633)),	-- Vicious Gladiator's RingMail Gauntlets. S10 Version
+							un(REMOVED_FROM_GAME, i(70634)),	-- Vicious Gladiator's RingMail Helm. S10 Version
+							un(REMOVED_FROM_GAME, i(70635)),	-- Vicious Gladiator's RingMail Legs. S10 Version
+							un(REMOVED_FROM_GAME, i(70636)),	-- Vicious Gladiator's RingMail Spaulders. S10 Version
+							un(REMOVED_FROM_GAME, i(70640)),	-- Vicious Gladiator's Sabatons of Alacrity. S10 Version
+							un(REMOVED_FROM_GAME, i(70642)),	-- Vicious Gladiator's Sabatons of Medi. S10 Version
+							un(REMOVED_FROM_GAME, i(70665)),	-- Vicious Gladiator's Waistguard of Cruelty. S10 Version
+							un(REMOVED_FROM_GAME, i(70666)),	-- Vicious Gladiator's Waistguard of Medi. S10 Version
+							un(REMOVED_FROM_GAME, i(70513)),	-- Vicious Gladiator's armplates of alacrity. S10 Version
+							un(REMOVED_FROM_GAME, i(70514)),	-- Vicious Gladiator's armplates of proficiency. S10 Version
+							un(REMOVED_FROM_GAME, i(70529)),	-- Vicious Gladiator's bracers of meditation. S10 Version
+							un(REMOVED_FROM_GAME, i(70530)),	-- Vicious Gladiator's bracers of prowess. S10 Version
+							un(REMOVED_FROM_GAME, i(70540)),	-- Vicious Gladiator's clasp of cruelty. S10 Version
+							un(REMOVED_FROM_GAME, i(70541)),	-- Vicious Gladiator's clasp of meditation. S10 Version
+							un(REMOVED_FROM_GAME, i(70558)),	-- Vicious Gladiator's Dreadplate chest. S10 Version
+							un(REMOVED_FROM_GAME, i(70559)),	-- Vicious Gladiator's Dreadplate gloves. S10 Version
+							un(REMOVED_FROM_GAME, i(70560)),	-- Vicious Gladiator's Dreadplate helm. S10 Version
+							un(REMOVED_FROM_GAME, i(70561)),	-- Vicious Gladiator's Dreadplate legs. S10 Version
+							un(REMOVED_FROM_GAME, i(70562)),	-- Vicious Gladiator's Dreadplate shoulders. S10 Version
+							un(REMOVED_FROM_GAME, i(70573)),	-- Vicious Gladiator's girdle of cruelty. S10 Version
+							un(REMOVED_FROM_GAME, i(70574)),	-- Vicious Gladiator's girdle of prowess. S10 Version
+							un(REMOVED_FROM_GAME, i(70575)),	-- Vicious Gladiator's greaves of alacrity. S10 Version
+							un(REMOVED_FROM_GAME, i(70576)),	-- Vicious Gladiator's greaves of meditation. S10 Version
+							un(REMOVED_FROM_GAME, i(70615)),	-- Vicious Gladiator's Ornamented chest. S10 Version
+							un(REMOVED_FROM_GAME, i(70616)),	-- Vicious Gladiator's Ornamented gloves. S10 Version
+							un(REMOVED_FROM_GAME, i(70617)),	-- Vicious Gladiator's Ornamented head. S10 Version
+							un(REMOVED_FROM_GAME, i(70618)),	-- Vicious Gladiator's Ornamented legs. S10 Version
+							un(REMOVED_FROM_GAME, i(70619)),	-- Vicious Gladiator's Ornamented shoulders. S10 Version
+							un(REMOVED_FROM_GAME, i(70623)),	-- Vicious Gladiator's Plate chest. S10 Version
+							un(REMOVED_FROM_GAME, i(70624)),	-- Vicious Gladiator's Plate gloves. S10 Version
+							un(REMOVED_FROM_GAME, i(70625)),	-- Vicious Gladiator's Plate helm. S10 Version
+							un(REMOVED_FROM_GAME, i(70626)),	-- Vicious Gladiator's Plate legs. S10 Version
+							un(REMOVED_FROM_GAME, i(70627)),	-- Vicious Gladiator's Plate shoulders. S10 Version
+							un(REMOVED_FROM_GAME, i(70648)),	-- Vicious Gladiator's Scaled chest. S10 Version
+							un(REMOVED_FROM_GAME, i(70649)),	-- Vicious Gladiator's Scaled gloves. S10 Version
+							un(REMOVED_FROM_GAME, i(70650)),	-- Vicious Gladiator's Scaled helm. S10 Version
+							un(REMOVED_FROM_GAME, i(70651)),	-- Vicious Gladiator's Scaled legs. S10 Version
+							un(REMOVED_FROM_GAME, i(70652)),	-- Vicious Gladiator's Scaled shoulders. S10 Version
+							un(REMOVED_FROM_GAME, i(70667)),	-- Vicious Gladiator's Warboots of alacrity. S10 Version
+							un(REMOVED_FROM_GAME, i(70668)),	-- Vicious Gladiator's warboots of cruelty. S10 Version
+							un(REMOVED_FROM_GAME, i(70533)),	-- Vicious Gladiator's Chain armor. S10 Version
+							un(REMOVED_FROM_GAME, i(70534)),	-- Vicious Gladiator's Chain gloves. S10 Version
+							un(REMOVED_FROM_GAME, i(70535)),	-- Vicious Gladiator's Chain helm. S10 Version
+							un(REMOVED_FROM_GAME, i(70536)),	-- Vicious Gladiator's Chain leggs. S10 Version
+							un(REMOVED_FROM_GAME, i(70537)),	-- Vicious Gladiator's Chain spaulders. S10 Version
+							un(REMOVED_FROM_GAME, i(70595)),	-- Vicious Gladiator's links of accuracy. S10 Version
+							un(REMOVED_FROM_GAME, i(70596)),	-- Vicious Gladiator's links of cruelty. S10 Version
+							un(REMOVED_FROM_GAME, i(70639)),	-- Vicious Gladiator's sabatons of alacrity. S10 Version
+							un(REMOVED_FROM_GAME, i(70641)),	-- Vicious Gladiator's sabatons of cruelty. S10 Version
+							un(REMOVED_FROM_GAME, i(70669)),	-- Vicious Gladiator's wristguards of accuracy. S10 Version
+							un(REMOVED_FROM_GAME, i(70670)),	-- Vicious Gladiator's wristguards of alacrity. S10 Version
+							un(REMOVED_FROM_GAME, i(70538)),	-- Vicious Gladiator's choker of accuracy. S10 Version
+							un(REMOVED_FROM_GAME, i(70539)),	-- Vicious Gladiator's choker of proficiency. S10 Version
+							un(REMOVED_FROM_GAME, i(70613)),	-- Vicious Gladiator's necklace of proficiency. S10 Version
+							un(REMOVED_FROM_GAME, i(70614)),	-- Vicious Gladiator's necklace of prowess. S10 Version
+							un(REMOVED_FROM_GAME, i(70620)),	-- Vicious Gladiator's pendant of alacrity. S10 Version
+							un(REMOVED_FROM_GAME, i(70621)),	-- Vicious Gladiator's pendant of diffusion. S10 Version
+							un(REMOVED_FROM_GAME, i(70622)),	-- Vicious Gladiator's pendant of meditation. S10 Version
+							un(REMOVED_FROM_GAME, i(70520)),	-- Vicious Gladiator's band of accuracy. S10 Version
+							un(REMOVED_FROM_GAME, i(70521)),	-- Vicious Gladiator's band of cruelty S10 Version
+							un(REMOVED_FROM_GAME, i(70522)),	-- Vicious Gladiator's band of mediation S10 Version
+							un(REMOVED_FROM_GAME, i(70637)),	-- Vicious Gladiator's ring of accuracy S10 Version
+							un(REMOVED_FROM_GAME, i(70638)),	-- Vicious Gladiator's ring of cruelty S10 Version
+							un(REMOVED_FROM_GAME, i(70653)),	-- Vicious Gladiator's signet of accuracy S10 Version
+							un(REMOVED_FROM_GAME, i(70654)),	-- Vicious Gladiator's signet of cruelty S10 Version
+							un(REMOVED_FROM_GAME, i(70517)),	-- Vicious Gladiator's badge of conquest. S10 Version
+							un(REMOVED_FROM_GAME, i(70518)),	-- Vicious Gladiator's badge of dominance. S10 Version
+							un(REMOVED_FROM_GAME, i(70519)),	-- Vicious Gladiator's badge of citory. S10 Version
+							un(REMOVED_FROM_GAME, i(70563)),	-- Vicious Gladiator's emblem of cruelty. S10 Version
+							un(REMOVED_FROM_GAME, i(70564)),	-- Vicious Gladiator's emblem of mediation. S10 Version
+							un(REMOVED_FROM_GAME, i(70565)),	-- Vicious Gladiator's emblem of tanicty. S10 Version
+							un(REMOVED_FROM_GAME, i(70577)),	-- Vicious Gladiator's insignia of conquest. S10 Version
+							un(REMOVED_FROM_GAME, i(70578)),	-- Vicious Gladiator's insignia of dominance. S10 Version
+							un(REMOVED_FROM_GAME, i(70579)),	-- Vicious Gladiator's insignia of victory. S10 Version
+							un(REMOVED_FROM_GAME, i(70602)),	-- Vicious Gladiator's medallion of cruelty . S10 Version(horde)
+							un(REMOVED_FROM_GAME, i(70603)),	-- Vicious Gladiator's medallion of cruelty. S10 Version (ally)
+							un(REMOVED_FROM_GAME, i(70604)),	-- Vicious Gladiator's medallion of meditation. S10 Version (ally)
+							un(REMOVED_FROM_GAME, i(70605)),	-- Vicious Gladiator's medallion of meditation. S10 Version (horde)
+							un(REMOVED_FROM_GAME, i(70606)),	-- Vicious Gladiator's medallion of tenacity. S10 Version (ally)
+							un(REMOVED_FROM_GAME, i(70607)),	-- Vicious Gladiator's medallion of tenactiy. S10 Version (horde)
+						},
 					}),
 					n(69971, { 	-- Xazi Smolderpipe <Wrathful Gladiator>
 						["itemID"] = 137642,	-- Mark of Honor
 						["coord"] = { 58.5, 58.3, 126 },
 						["sym"] = {
 							{"sub", "pvp_gear_base", -10014, -671, -661 },	-- Wrathful Gladiator: Season 8 Gladiator Gear
-							{"pop"},	-- Discard the Set header and acquire the children.
-							{"exclude", "headerID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
-						},
-					}),
-					n(69973, { 	-- Zom Bocom <Relentless Gladiator>
-						["itemID"] = 137642,	-- Mark of Honor
-						["coord"] = { 59.0, 58.8, 126 },
-						["sym"] = {
-							{"sub", "pvp_gear_base", -10014, -670, -661 },	-- Relentless Gladiator: Season 7 Gladiator Gear
 							{"pop"},	-- Discard the Set header and acquire the children.
 							{"exclude", "headerID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
 						},
