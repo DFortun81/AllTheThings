@@ -6160,7 +6160,7 @@ local fields = {
 		if results and #results > 0 then
 			for _,ref in pairs(results) do
 				if ref.currencyID ~= t.currencyID and app.RecursiveGroupRequirementsFilter(ref) then
-					if (ref.collectible and not ref.collected) or (ref.total and ref.total > 0) then
+					if (ref.collectible and not ref.collected) or (ref.total and ref.total > 0 and ref.total < ref.progress) then
 						return true;
 					end
 				end
@@ -7844,7 +7844,7 @@ local itemFields = {
 					app.RecursiveGroupRequirementsFilter(ref) and
 					-- don't include items which are from something the current character cannot complete
 					not GetRelativeValue(t, "altcollected") then
-					if ref.collectible or (ref.total and ref.total > 0) then
+					if (ref.collectible and not ref.collected) or (ref.total and ref.total > 0 and ref.total < ref.progress) then
 						return true;
 					end
 				end
@@ -12995,18 +12995,28 @@ RowOnEnter = function (self)
 					_ = v[1];
 					if _ == "i" then
 						_,name,_,_,_,_,_,_,_,icon = GetItemInfo(v[2]);
-						amount = "x" .. formatNumericWithCommas(v[3]);
+						amount = v[3];
+						if amount > 1 then
+							amount = formatNumericWithCommas(amount) .. "x ";
+						else
+							amount = "";
+						end
 					elseif _ == "c" then
+						amount = v[3];
 						local currencyData = C_CurrencyInfo.GetCurrencyInfo(v[2])
-						name = currencyData.name or "Unknown"
+						name = C_CurrencyInfo.GetCurrencyLink(v[2], amount) or currencyData.name or "Unknown"
 						icon = currencyData.iconFileID or nil
-						amount = "x" .. formatNumericWithCommas(v[3]);
+						if amount > 1 then
+							amount = formatNumericWithCommas(amount) .. "x ";
+						else
+							amount = "";
+						end
 					elseif _ == "g" then
 						name = "";
 						icon = nil;
-						amount = GetMoneyString(v[2])
+						amount = GetMoneyString(v[2]);
 					end
-					GameTooltip:AddDoubleLine(k == 1 and L["COST"] or " ", (icon and ("|T" .. icon .. ":0|t") or "") .. (name or "???") .. " " .. amount);
+					GameTooltip:AddDoubleLine(k == 1 and L["COST"] or " ", amount .. (icon and ("|T" .. icon .. ":0|t") or "") .. (name or "???"));
 				end
 			else
 				local amount = GetMoneyString(reference.cost)
