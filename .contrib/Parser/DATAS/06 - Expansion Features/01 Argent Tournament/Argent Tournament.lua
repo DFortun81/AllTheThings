@@ -235,9 +235,6 @@ _.ExpansionFeatures =
 			n(QUESTS, {
 				i(45724, {	-- Champion's Purse
 					["description"] = "You get 1 Champion's Seal from these bags.",
-					["g"] = {
-						currency(241),	-- Champion's Seal
-					},
 				}),
 				q(13741, {	-- A Blade Fit For A Champion (A)
 					["coord"] = { 76.6, 19.5, 118 },
@@ -336,7 +333,6 @@ _.ExpansionFeatures =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 33225 },	-- Marshal Jacob Alerius
 					["g"] = {
-						currency(241),	-- Champion's Seal
 						i(44998),	-- Argent Squire
 					},
 				}),
@@ -365,7 +361,6 @@ _.ExpansionFeatures =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 33361 },	-- Mokra the Skullcrusher
 					["g"] = {
-						currency(241),	-- Champion's Seal
 						i(45022),	-- Argent Gruntling
 					},
 				}),
@@ -374,18 +369,12 @@ _.ExpansionFeatures =
 					["coord"] = { 76.2, 19.6, 118 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 34880 },	-- Narasi Snowdawn <The Silver Covenant>
-					["g"] = {
-						currency(241),	-- Champion's Seal
-					},
 				}),
 				q(14143, {	-- A Leg Up (H)
 					["isDaily"] = true,
 					["coord"] = { 76.1, 24.0, 118 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 34771 },	-- Girana the Blooded <The Sunreavers>
-					["g"] = {
-						currency(241),	-- Champion's Seal
-					},
 				}),
 				q(13689, {	-- A Valiant Of Darnassus
 					["coord"] = { 76.5, 19.4, 118 },
@@ -591,7 +580,6 @@ _.ExpansionFeatures =
 						33749,	-- Undercity Champion
 					},
 					["g"] = {
-						currency(241),	-- Champion's Seal
 						i(46114),	-- Champion's Writ
 						i(45724),	-- Champion's Purse
 						i(45500),	-- Mark of the Champion
@@ -616,7 +604,6 @@ _.ExpansionFeatures =
 						33749,	-- Undercity Champion
 					},
 					["g"] = {
-						currency(241),	-- Champion's Seal
 						i(46114),	-- Champion's Writ
 						i(45724),	-- Champion's Purse
 						i(45500),	-- Mark of the Champion
@@ -689,7 +676,6 @@ _.ExpansionFeatures =
 					["coord"] = { 69.9, 23.4, 118 },
 					["provider"] = { "n", 33759 },	-- Eadric the Pure <Grand Champion of the Argent Crusade>
 					["g"] = {
-						currency(241),	-- Champion's Seal
 						i(46114),	-- Champion's Writ
 						i(45724),	-- Champion's Purse
 					},
@@ -701,7 +687,6 @@ _.ExpansionFeatures =
 					["coord"] = { 73.8, 20.0, 118 },
 					["provider"] = { "n", 33762 },	-- Crok Scourgebane <Grand Champion of the Ebon Blade>
 					["g"] = {
-						currency(241),	-- Champion's Seal
 						i(46114),	-- Champion's Writ
 						i(45724),	-- Champion's Purse
 					},
@@ -718,18 +703,12 @@ _.ExpansionFeatures =
 					["coord"] = { 76.2, 19.6, 118 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 34912 },	-- Savinia Loresong <The Silver Covenant>
-					["g"] = {
-						currency(241),	-- Champion's Seal
-					},
 				}),
 				q(14092, {	-- Breakfast Of Champions (H)
 					["isDaily"] = true,
 					["coord"] = { 76.1, 24.0, 118 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 34914 },	-- Tylos Dawnrunner <The Sunreavers>
-					["g"] = {
-						currency(241),	-- Champion's Seal
-					},
 				}),
 				q(13846, {	-- Contributin' To The Cause
 					["isDaily"] = true,
@@ -740,17 +719,11 @@ _.ExpansionFeatures =
 					["isDaily"] = true,
 					["coord"] = { 69.4, 23.1, 118 },
 					["provider"] = { "n", 34882 },	-- High Crusader Adelard
-					["g"] = {
-						currency(241),	-- Champion's Seal
-					},
 				}),
 				q(14101, {	-- Drottinn Hrothgar
 					["isDaily"] = true,
 					["coord"] = { 69.4, 23.1, 118 },
 					["provider"] = { "n", 34882 },	-- High Crusader Adelard
-					["g"] = {
-						currency(241),	-- Champion's Seal
-					},
 				}),
 				q(13794, {	-- Eadric the Pure
 					["coord"] = { 69.6, 22.8, 118 },
@@ -760,27 +733,18 @@ _.ExpansionFeatures =
 					["isDaily"] = true,
 					["coord"] = { 69.4, 23.1, 118 },
 					["provider"] = { "n", 35094 },	-- Crusader Silverdawn
-					["g"] = {
-						currency(241),	-- Champion's Seal
-					},
 				}),
 				q(14090, {	-- Gormok Wants His Snobolds (A)
 					["isDaily"] = true,
 					["coord"] = { 76.2, 19.6, 118 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 34912 },	-- Savinia Loresong <The Silver Covenant>
-					["g"] = {
-						currency(241),	-- Champion's Seal
-					},
 				}),
 				q(14141, {	-- Gormok Wants His Snobolds (H)
 					["isDaily"] = true,
 					["coord"] = { 76.1, 24.0, 118 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 34914 },	-- Tylos Dawnrunner <The Sunreavers>
-					["g"] = {
-						currency(241),	-- Champion's Seal
-					},
 				}),
 				q(14095, {	-- Identifying the Remains
 					["isDaily"] = true,
@@ -841,53 +805,35 @@ _.ExpansionFeatures =
 					["isDaily"] = true,
 					["coord"] = { 69.4, 23.1, 118 },
 					["provider"] = { "n", 34882 },	-- High Crusader Adelard
-					["g"] = {
-						currency(241),	-- Champion's Seal
-					},
 				}),
 				q(14104, {	-- Ornolf The Scarred
 					["isDaily"] = true,
 					["coord"] = { 69.4, 23.1, 118 },
 					["provider"] = { "n", 34882 },	-- High Crusader Adelard
-					["g"] = {
-						currency(241),	-- Champion's Seal
-					},
 				}),
 				q(14152, {	-- Rescue at Sea (A)
 					["isDaily"] = true,
 					["coord"] = { 76.2, 19.6, 118 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 34880 },	-- Narasi Snowdawn <The Silver Covenant>
-					["g"] = {
-						currency(241),	-- Champion's Seal
-					},
 				}),
 				q(14136, {	-- Rescue at Sea (H)
 					["isDaily"] = true,
 					["coord"] = { 76.1, 24.0, 118 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 34771 },	-- Girana the Blooded <The Sunreavers>
-					["g"] = {
-						currency(241),	-- Champion's Seal
-					},
 				}),
 				q(14080, {	-- Stop The Aggressors (A)
 					["isDaily"] = true,
 					["coord"] = { 76.2, 19.6, 118 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 34880 },	-- Narasi Snowdawn <The Silver Covenant>
-					["g"] = {
-						currency(241),	-- Champion's Seal
-					},
 				}),
-				q(14140, {	-- Stop The Aggressors
+				q(14140, {	-- Stop The Aggressors (H)
 					["isDaily"] = true,
 					["coord"] = { 76.1, 24.0, 118 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 34771 },	-- Girana the Blooded <The Sunreavers>
-					["g"] = {
-						currency(241),	-- Champion's Seal
-					},
 				}),
 				q(13789, {	-- Taking Battle To The Enemy (A / H, non-DK)
 					["hordeQuestID"] = 13810,
@@ -896,7 +842,6 @@ _.ExpansionFeatures =
 					["coord"] = { 69.9, 23.4, 118 },
 					["provider"] = { "n", 33763 },	-- Cellian Daybreak <Master of Arms>
 					["g"] = {
-						currency(241),	-- Champion's Seal
 						i(46114),	-- Champion's Writ
 						i(45724),	-- Champion's Purse
 					},
@@ -908,7 +853,6 @@ _.ExpansionFeatures =
 					["coord"] = { 73.8, 19.6, 118 },
 					["provider"] = { "n", 33769 },	-- Zor'be the Bloodletter <Master of Arms>
 					["g"] = {
-						currency(241),	-- Champion's Seal
 						i(46114),	-- Champion's Writ
 						i(45724),	-- Champion's Purse
 					},
@@ -957,9 +901,6 @@ _.ExpansionFeatures =
 					["coord"] = { 69.4, 23.0, 118 },
 					["provider"] = { "n", 33417 },	-- Crusader Rhydalla
 					["sourceQuest"] = 14016,	-- The Black Knight's Curse
-					["g"] = {
-						currency(241),	-- Champion's Seal
-					},
 				}),
 				q(13663, {	-- The Black Knight's Orders
 					["coord"] = { 69.4, 23.0, 118 },
@@ -1047,9 +988,6 @@ _.ExpansionFeatures =
 					["isDaily"] = true,
 					["coord"] = { 69.4, 23.1, 118 },
 					["provider"] = { "n", 35094 },	-- Crusader Silverdawn
-					["g"] = {
-						currency(241),	-- Champion's Seal
-					},
 				}),
 				q(13665, {	-- The Grand Melee (A)
 					["coord"] = { 76.6, 19.2, 118 },
@@ -1116,18 +1054,12 @@ _.ExpansionFeatures =
 					["coord"] = { 76.2, 19.6, 118 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 34880 },	-- Narasi Snowdawn <The Silver Covenant>
-					["g"] = {
-						currency(241),	-- Champion's Seal
-					},
 				}),
 				q(14144, {	-- The Light's Mercy
 					["isDaily"] = true,
 					["coord"] = { 76.1, 24.0, 118 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 34771 },	-- Girana the Blooded <The Sunreavers>
-					["g"] = {
-						currency(241),	-- Champion's Seal
-					},
 				}),
 				q(13795, {	-- The Scourgebane
 					["coord"] = { 69.6, 22.8, 118 },
@@ -1269,7 +1201,6 @@ _.ExpansionFeatures =
 					["coord"] = { 69.9, 23.4, 118 },
 					["provider"] = { "n", 33759 },	-- Eadric the Pure <Grand Champion of the Argent Crusade>
 					["g"] = {
-						currency(241),	-- Champion's Seal
 						i(46114),	-- Champion's Writ
 						i(45724),	-- Champion's Purse
 					},
@@ -1281,7 +1212,6 @@ _.ExpansionFeatures =
 					["coord"] = { 73.8, 20.0, 118 },
 					["provider"] = { "n", 33762 },	-- Crok Scourgebane <Grand Champion of the Ebon Blade>
 					["g"] = {
-						currency(241),	-- Champion's Seal
 						i(46114),	-- Champion's Writ
 						i(45724),	-- Champion's Purse
 					},
@@ -1374,37 +1304,31 @@ _.ExpansionFeatures =
 					["coord"] = { 76.2, 19.6, 118 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 34912 },	-- Savinia Loresong <The Silver Covenant>
-					["g"] = {
-						currency(241),	-- Champion's Seal
-					},
 				}),
 				q(14145, {	-- What Do You Feed a Yeti, Anyway? (H)
 					["isDaily"] = true,
 					["coord"] = { 76.1, 24.0, 118 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 34914 },	-- Tylos Dawnrunner <The Sunreavers>
-					["g"] = {
-						currency(241),	-- Champion's Seal
-					},
 				}),
 				q(14096, {	-- You've Really Done It This Time, Kul (A)
 					["isDaily"] = true,
 					["coord"] = { 76.2, 19.6, 118 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 34880 },	-- Narasi Snowdawn <The Silver Covenant>
-					["g"] = {
-						currency(241),	-- Champion's Seal
-					},
 				}),
 				q(14142, {	-- You've Really Done It This Time, Kul (H)
 					["isDaily"] = true,
 					["coord"] = { 76.1, 24.0, 118 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 34771 },	-- Girana the Blooded <The Sunreavers>
-					["g"] = {
-						currency(241),	-- Champion's Seal
-					},
 				}),
+			}),
+			n(REWARDS, {
+				["description"] = "These are rewarded by completing the daily quests and heroic dungeon.",
+				["groups"] = {
+					currency(241),	-- Champion's Seal
+				},
 			}),
 			n(VENDORS, {
 				n(-20, {	-- Common Vendor Items
