@@ -3469,7 +3469,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				MergeObject(root.g, usedToBuy);
 			end
 		elseif paramA == "itemID" or (paramA == "s" and group.itemID) then
-			local costResults = app.SearchForField("itemIDAsCost", group.itemID or paramB);
+			local costResults = app.SearchForField("itemIDAsCost", group.modItemID or group.itemID or paramB);
 			if costResults and #costResults > 0 then
 				if not root.g then root.g = {} end
 				local usedToBuy = app.CreateNPC(-2);
