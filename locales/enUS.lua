@@ -1839,7 +1839,9 @@ app.L = {
 		[-650] = "Quest Items",													-- Quest Items
 
 -- PvP Header
-
+	-- Special Season Tags
+		--[-657] = "Hateful Gladiator",											-- Listed under WOTLK PvP Seasons
+		[-658] = "Pre-Season",													-- Pre-Season (PvP BC & later)
 	-- PvP Set Names
 		[-659] = "Aspirant Gear",												-- Aspirant PvP Gear (WoD, BfA)
 		[-660] = "Combatant Gear",												-- Combatant PvP Gear (WoD, Legion)
@@ -1857,7 +1859,7 @@ app.L = {
 
 	-- Wrath of the Lich-King PvP Seasons
 		[-668] = select(2, GetAchievementInfo(3336))..": Season 5",				-- Deadly Gladiator: Season 5
-		[-798] = "Hateful Gladiator",											-- Hateful Gladiator: Season 5 ("medium pvp gear")
+		[-657] = "Hateful Gladiator",											-- Hateful Gladiator: Season 5 ("medium pvp gear")
 		[-669] = select(2, GetAchievementInfo(3436))..": Season 6",				-- Furious Gladiator: Season 6
 		[-670] = select(2, GetAchievementInfo(3758))..": Season 7",				-- Relentless Gladiator: Season 7
 		[-671] = select(2, GetAchievementInfo(4599))..": Season 8",				-- Wrathful Gladiator: Season 8
@@ -1896,6 +1898,7 @@ app.L = {
 	-- Shadowlands PvP Seasons
 		[-693] = select(2, GetAchievementInfo(14690)),							-- Sinful Gladiator: Shadowlands Season 1
 
+
 		[-799] = "Burden of Eternity",											-- Burden of Eternity
 
 	-- Secret Header [Maybe need to change the numbers again when I need more space for PvP -- sadidorf]
@@ -1911,8 +1914,8 @@ app.L = {
 	-- Mechagon
 		[-850] = "Mechanized Chest",											-- Mechanized Chest
 		[-851] = "Irontide Chest",												-- Irontide Chest
-		[-862] = GetSpellInfo(275825),											-- Heart of Azeroth
 
+	-- 8.2 Neck Stuff
 		[-852] = "Azerite Essences",											-- Azerite Essences
 		[-853] = "All Roles",													-- All Roles
 		[-854] = "DPS",															-- DPS
@@ -1923,6 +1926,7 @@ app.L = {
 		[-859] = "Rank 2",														-- Rank 2
 		[-860] = "Rank 3",														-- Rank 3
 		[-861] = "Rank 4",														-- Rank 4
+		[-862] = GetSpellInfo(275825),											-- Heart of Azeroth
 
 	-- Shadowlands Header
 		[-900] = "Covenant Sanctum",											-- Covenant Sanctum
@@ -2132,7 +2136,6 @@ app.L = {
 -- PvP Sets
 	-- Note: Some of these may go away once I check as I think I am localizing with gear sets, but leave for now
 		[-4189] = CALENDAR_TYPE_PVP.." "..LOOT_JOURNAL_ITEM_SETS, 				-- Instance Item Sets, PvP
-		[-4190] = "Burning Crusade Pre-Season",
 		[-4191] = "Tournament",
 -- Tier/Dungeon/Event/Holiday Sets
 	-- Artifact Strings

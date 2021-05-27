@@ -380,12 +380,12 @@ _.PVP =
 					}),
 				}),
 			}),
-			n(-798, {	-- Hateful Gladiator
+			n(-657, {	-- Hateful Gladiator
 				n(-319, {	-- Weapons
 					i(146646, {	-- Arsenal: Hateful Gladiator's Weapons
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 						["sym"] = { 
-							{"sub", "pvp_weapons_ensemble", -10014, -668, -798 },
+							{"sub", "pvp_weapons_ensemble", -10014, -668, -657 },
 							{"exclude", "itemID", 146646 },	-- Exclude itself to stop duplicating
 						},
 					}),
@@ -505,7 +505,7 @@ _.PVP =
 					i(146560, {	-- Ensemble: Hateful Gladiator's Dreadplate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { 
-							{"sub", "pvp_set_ensemble", -10014, -668, -798, 6 },
+							{"sub", "pvp_set_ensemble", -10014, -668, -657, 6 },
 							{"select", "itemID", 147583 },	-- Hateful Gladiator's Bracers of Victory
 							{"select", "itemID", 147584 },	-- Hateful Gladiator's Girdle of Victory
 							{"select", "itemID", 147585 },	-- Hateful Gladiator's Greaves of Victory
@@ -532,7 +532,7 @@ _.PVP =
 					i(146559, {	-- Ensemble: Hateful Gladiator's Dragonhide Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { 
-							{"sub", "pvp_set_ensemble", -10014, -668, -798, 11 },
+							{"sub", "pvp_set_ensemble", -10014, -668, -657, 11 },
 							{"select", "itemID", 41638 },	-- Hateful Gladiator's Armwraps of Dominance
 							{"select", "itemID", 41628 },	-- Hateful Gladiator's Belt of Dominance
 							{"select", "itemID", 41633 },	-- Hateful Gladiator's Boots of Dominance
@@ -592,7 +592,7 @@ _.PVP =
 					i(146558, {	-- Ensemble: Hateful Gladiator's Chain Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { 
-							{"sub", "pvp_set_ensemble", -10014, -668, -798, 3 },
+							{"sub", "pvp_set_ensemble", -10014, -668, -657, 3 },
 							{"select", "itemID", 41223 },	-- Hateful Gladiator's Wristguards of Triumph
 							{"select", "itemID", 41233 },	-- Hateful Gladiator's Waistguard of Triumph
 							{"select", "itemID", 41228 },	-- Hateful Gladiator's Sabatons of Triumph
@@ -619,7 +619,7 @@ _.PVP =
 					i(146567, {	-- Ensemble: Hateful Gladiator's Silk Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { 
-							{"sub", "pvp_set_ensemble", -10014, -668, -798, 8 },
+							{"sub", "pvp_set_ensemble", -10014, -668, -657, 8 },
 							{"select", "itemID", 41907 },	-- Hateful Gladiator's Cuffs of Dominance
 							{"select", "itemID", 41896 },	-- Hateful Gladiator's Cord of Dominance
 							{"select", "itemID", 41901 },	-- Hateful Gladiator's Slippers of Dominance
@@ -646,7 +646,7 @@ _.PVP =
 					i(146566, {	-- Ensemble: Hateful Gladiator's Scaled Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { 
-							{"sub", "pvp_set_ensemble", -10014, -668, -798, 2 },
+							{"sub", "pvp_set_ensemble", -10014, -668, -657, 2 },
 							{"select", "itemID", 40972 },	-- Hateful Gladiator's Bracers of Salvation
 							{"select", "itemID", 40966 },	-- Hateful Gladiator's Girdle of Salvation
 							{"select", "itemID", 40973 },	-- Hateful Gladiator's Greaves of Salvation
@@ -688,7 +688,7 @@ _.PVP =
 					i(146565, {	-- Ensemble: Hateful Gladiator's Satin Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { 
-							{"sub", "pvp_set_ensemble", -10014, -668, -798, 5 },
+							{"sub", "pvp_set_ensemble", -10014, -668, -657, 5 },
 							{"select", "itemID", 41878 },	-- Hateful Gladiator's Cuffs of Salvation
 							{"select", "itemID", 41877 },	-- Hateful Gladiator's Cord of Salvation
 							{"select", "itemID", 41879 },	-- Hateful Gladiator's Slippers of Salvation
@@ -730,7 +730,7 @@ _.PVP =
 					i(146562, {	-- Ensemble: Hateful Gladiator's Leather Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { 
-							{"sub", "pvp_set_ensemble", -10014, -668, -798, 4 },
+							{"sub", "pvp_set_ensemble", -10014, -668, -657, 4 },
 							{"select", "itemID", 41830 },	-- Hateful Gladiator's Armwraps of Triumph
 							{"select", "itemID", 41827 },	-- Hateful Gladiator's Belt of Triumph
 							{"select", "itemID", 41828 },	-- Hateful Gladiator's Boots of Triumph
@@ -757,7 +757,7 @@ _.PVP =
 					i(146564, {	-- Ensemble: Hateful Gladiator's Ringmail Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { 
-							{"sub", "pvp_set_ensemble", -10014, -668, -798, 7 },
+							{"sub", "pvp_set_ensemble", -10014, -668, -657, 7 },
 							{"select", "itemID", 41063 },	-- Hateful Gladiator's Wristguards of Dominance
 							{"select", "itemID", 41068 },	-- Hateful Gladiator's Waistguard of Dominance
 							{"select", "itemID", 41073 },	-- Hateful Gladiator's Sabatons of Dominance
@@ -817,7 +817,7 @@ _.PVP =
 					i(146561, {	-- Ensemble: Hateful Gladiator's Felweave Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { 
-							{"sub", "pvp_set_ensemble", -10014, -668, -798, 9 },
+							{"sub", "pvp_set_ensemble", -10014, -668, -657, 9 },
 							{"select", "itemID", 147586 },	-- Hateful Gladiator's Cuffs of Ascendancy
 							{"select", "itemID", 147587 },	-- Hateful Gladiator's Cord of Ascendancy
 							{"select", "itemID", 147588 },	-- Hateful Gladiator's Slippers of Ascendancy
@@ -844,7 +844,7 @@ _.PVP =
 					i(146563, {	-- Ensemble: Hateful Gladiator's Plate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { 
-							{"sub", "pvp_set_ensemble", -10014, -668, -798, 1 },
+							{"sub", "pvp_set_ensemble", -10014, -668, -657, 1 },
 							{"select", "itemID", 40887 },	-- Hateful Gladiator's Bracers of Triumph
 							{"select", "itemID", 40877 },	-- Hateful Gladiator's Girdle of Triumph
 							{"select", "itemID", 40878 },	-- Hateful Gladiator's Greaves of Triumph
