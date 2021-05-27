@@ -2151,14 +2151,14 @@ _.PVP =
 					}),
 				}),
 				cl(WARRIOR, {
-					i(146543, {	-- Ensemble: Furious Gladiator's Plate Armor
+					i(146553, {	-- Ensemble: Furious Gladiator's Plate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = { 
 							{"sub", "pvp_set_ensemble", -10014, -669, -661, 1 },
 							{"select", "itemID", 147598 },	-- Furious Gladiator's Bracers of Victory
 							{"select", "itemID", 147599 },	-- Furious Gladiator's Girdle of Victory
 							{"select", "itemID", 147600 },	-- Furious Gladiator's Greaves of Victory
-							{"exclude", "itemID", 146543 },	-- Exclude itself to stop duplicating 
+							{"exclude", "itemID", 146553 },	-- Exclude itself to stop duplicating 
 						},
 					}),
 					i(40789, {	-- Furious Gladiator's Plate Chestpiece

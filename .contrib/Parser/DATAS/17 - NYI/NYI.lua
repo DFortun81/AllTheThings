@@ -2380,6 +2380,8 @@ _.NeverImplemented =
 		i(28261),	-- Video Invis Broken Fitz's Throwing Axe
 		i(25641),	-- Broken Fitz's Throwing Axe
 		i(33564),	-- World Drop Certificate
+		i(47558),	-- Regalia of the grand protector
+		i(47559),	-- Regalia of the grand vanq
 		i(20560),
 		i(41596),
 		i(43016),
