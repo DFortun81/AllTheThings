@@ -1938,7 +1938,7 @@ _.Zones =
 					n(33921, { 	-- Nargle Lashcord <Veteran Arena Vendor> // Original S6 Vendor // Furious Gladiator: Season 6 Gladiator Gear
 						["u"] = REMOVED_FROM_GAME,
 					}),
-					n(40211, {	-- Nargle Lashcord Original Cata S9 Vendor // Vicious Gladiator
+					n(40211, {	-- Nargle Lashcord
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					n(34087, {	-- Trapjaw Rix Season <Veteran Arena Vendor> Original WOTLK S6 ELITE VENDOR
