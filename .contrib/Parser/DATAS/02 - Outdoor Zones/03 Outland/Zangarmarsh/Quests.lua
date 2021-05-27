@@ -174,10 +174,6 @@ _.Zones =
 					["coord"] = { 32.9, 48.9, ZANGARMARSH },
 					["races"] = HORDE_ONLY,
 				}),
-				q(29566, {	-- Checking Up
-					["provider"] = { "n", 17841 },	-- Ysiel Windsinger
-					["coord"] = { 78.4, 62.0, ZANGARMARSH },
-				}),
 				q(10104, {	-- Concerns About Tuurem
 					["provider"] = { "n", 18008 },	-- Ikuti
 					["coord"] = { 41.8, 27.2, ZANGARMARSH },
@@ -451,9 +447,13 @@ _.Zones =
 					},
 				}),
 				q(9765,  {	-- Preparing for War
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 17841 },	-- Ysiel Windsinger
+					["qg"] = 17841,	-- Ysiel Windsinger
 					["sourceQuest"] = 9764,	-- Orders from Lady Vashj
+					["timeline"] = { "removed 4.3.0.14732" },
+					["cost"] = {
+						{ "i", 24368, 1 },	-- Coilfang Armaments
+					},
+					["lvl"] = lvlsquish(67, 20, 67),
 				}),
 				q(9904,  {	-- Pursuing Terrorclaw
 					["provider"] = { "n", 18018 },	-- Zurjaya
@@ -540,10 +540,6 @@ _.Zones =
 					["coord"] = { 31.6, 49.2, ZANGARMARSH },
 					["races"] = HORDE_ONLY,
 				}),
-				q(29616, {	-- Storming the Steamvault
-					["provider"] = { "n", 17841 },	-- Ysiel Windsinger
-					["coord"] = { 78.4, 62.0, ZANGARMARSH },
-				}),
 				q(11531, {	-- Strange Engine Part
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "i", 34469 },	-- Strange Engine Part
@@ -623,16 +619,6 @@ _.Zones =
 				q(9747,  {	-- The Umbrafen Tribe
 					["provider"] = { "n", 17956 },	-- Ikeyen
 					["coord"] = { 80.4, 64.2, ZANGARMARSH },
-				}),
-				q(9763,  {	-- The Warlord's Hideout
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 17884 },	-- Watcher Jhang
-					["groups"] = {
-						un(REMOVED_FROM_GAME, i(28181)),	-- Earthwarden's Coif
-						un(REMOVED_FROM_GAME, i(28182)),	-- Helm of the Claw
-						un(REMOVED_FROM_GAME, i(28183)),	-- Hydromancer's Headwrap
-						un(REMOVED_FROM_GAME, i(28180)),	-- Myrmidon's Headdress
-					},
 				}),
 				q(9781,  {	-- Too Many Mouths to Feed
 					["provider"] = { "n", 18005 },	-- Haalrun

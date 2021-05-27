@@ -13,6 +13,13 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 					["timeline"] = { "added 4.3.0.14732" },
 					["lvl"] = lvlsquish(57, 10, 57),
 				}),
+				q(29566, {	-- Checking Up
+					["qg"] = 17841,	-- Ysiel Windsinger
+					["coord"] = { 78.4, 62.0, ZANGARMARSH },
+					["timeline"] = { "added 4.3.0.14732" },
+					["maps"] = { ZANGARMARSH },
+					["lvl"] = lvlsquish(62, 10, 62),
+				}),
 				q(9738, {	-- Lost in Action
 					["qg"] = 17884,	-- Watcher Jhang
 					["coord"] = { 52.3, 36.0, ZANGARMARSH },
@@ -87,6 +94,9 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 					["qg"] = 22421,	-- Skar'this the Heretic
 					["lvl"] = lvlsquish(70, 10, 70),
 				}),
+			}),
+			n(ZONEDROPS, {
+				i(24368),	-- Coilfang Armaments
 			}),
 			d(1, {	-- Normal
 				e(570, {	-- Mennu the Betrayer
