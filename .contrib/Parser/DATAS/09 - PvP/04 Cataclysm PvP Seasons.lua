@@ -2811,7 +2811,10 @@ _.PVP =
 				n(-319, {	-- Weapons
 					i(146639, {	-- Arsenal: Cataclysmic Gladiator's Weapons
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-						["sym"] = { {"sub", "pvp_weapons_ensemble", -9979, -674, -661 }, },
+						["sym"] = { 
+							{"sub", "pvp_weapons_ensemble", -9979, -674, -661 },
+							{"exclude", "itemID", 146639 },	-- Exclude itself to stop duplicating
+						},
 					}),
 					i(73468, {	-- Cataclysmic Gladiator's Barrier
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -2910,7 +2913,13 @@ _.PVP =
 				cl(DEATHKNIGHT, {
 					i(146443, {	-- Ensemble: Cataclysmic Gladiator's Dreadplate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -674, -661, 6 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -9979, -674, -661, 6 },
+							{"select", "itemID", 73551 },	-- Cataclysmic Gladiator's Armplates of Proficiency
+							{"select", "itemID", 73555 },	-- Cataclysmic Gladiator's Girdle of Cruelty
+							{"select", "itemID", 73553 },	-- Cataclysmic Gladiator's Warboots of Cruelty
+							{"exclude", "itemID", 146443 },	-- Exclude itself to stop duplicating 
+						},
 					}),
 					i(73620, {	-- Cataclysmic Gladiator's Dreadplate Chestpiece
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -2931,7 +2940,16 @@ _.PVP =
 				cl(DRUID, {
 					i(146441, {	-- Ensemble: Cataclysmic Gladiator's Dragonhide Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -674, -661, 11 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -9979, -674, -661, 11 },
+							{"select", "itemID", 73608 },	-- Cataclysmic Gladiator's Bindings of Meditation
+							{"select", "itemID", 73600 },	-- Cataclysmic Gladiator's Bindings of Prowess
+							{"select", "itemID", 73602 },	-- Cataclysmic Gladiator's Belt of Cruelty
+							{"select", "itemID", 73610 },	-- Cataclysmic Gladiator's Belt of Meditation
+							{"select", "itemID", 73601 },	-- Cataclysmic Gladiator's Footguards of Alacrity
+							{"select", "itemID", 73609 },	-- Cataclysmic Gladiator's Footguards of Meditation
+							{"exclude", "itemID", 146441 },	-- Exclude itself to stop duplicating 
+						},
 					}),
 					i(73615, {	-- Cataclysmic Gladiator's Dragonhide Gloves
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -2982,7 +3000,16 @@ _.PVP =
 				cl(HUNTER, {
 					i(146439, {	-- Ensemble: Cataclysmic Gladiator's Chain Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -674, -661, 3 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -9979, -674, -661, 3 },
+							{"select", "itemID", 73585 },	-- Cataclysmic Gladiator's Wristguards of Accuracy
+							{"select", "itemID", 73586 },	-- Cataclysmic Gladiator's Wristguards of Alacrity
+							{"select", "itemID", 73589 },	-- Cataclysmic Gladiator's Links of Accuracy
+							{"select", "itemID", 73590 },	-- Cataclysmic Gladiator's Links of Cruelty
+							{"select", "itemID", 73587 },	-- Cataclysmic Gladiator's Sabatons of Alacrity
+							{"select", "itemID", 73588 },	-- Cataclysmic Gladiator's Sabatons of Cruelty
+							{"exclude", "itemID", 146439 },	-- Exclude itself to stop duplicating 
+						},
 					}),
 					i(73584, {	-- Cataclysmic Gladiator's Chain Armor
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -3003,7 +3030,13 @@ _.PVP =
 				cl(MAGE, {
 					i(146457, {	-- Ensemble: Cataclysmic Gladiator's Silk Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -674, -661, 8 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -9979, -674, -661, 8 },
+							{"select", "itemID", 73632 },	-- Cataclysmic Gladiator's Cuffs of Prowess
+							{"select", "itemID", 73639 },	-- Cataclysmic Gladiator's Cord of Cruelty
+							{"select", "itemID", 73636 },	-- Cataclysmic Gladiator's Treads of Cruelty
+							{"exclude", "itemID", 146457 },	-- Exclude itself to stop duplicating 
+						},
 					}),
 					i(73572, {	-- Cataclysmic Gladiator's Silk Amice
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -3024,7 +3057,16 @@ _.PVP =
 				cl(PALADIN, {
 					i(146455, {	-- Ensemble: Cataclysmic Gladiator's Scaled Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -674, -661, 2 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -9979, -674, -661, 2 },
+							{"select", "itemID", 73561 },	-- Cataclysmic Gladiator's Bracers of Meditation
+							{"select", "itemID", 73562 },	-- Cataclysmic Gladiator's Bracers of Prowess
+							{"select", "itemID", 73566 },	-- Cataclysmic Gladiator's Clasp of Cruelty
+							{"select", "itemID", 73565 },	-- Cataclysmic Gladiator's Clasp of Meditation
+							{"select", "itemID", 73564 },	-- Cataclysmic Gladiator's Greaves of Alacrity
+							{"select", "itemID", 73563 },	-- Cataclysmic Gladiator's Greaves of Meditation
+							{"exclude", "itemID", 146455 },	-- Exclude itself to stop duplicating 
+						},
 					}),
 					i(88170, {	-- Cataclysmic Gladiator's Ornamented Battlerobe
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -3063,7 +3105,13 @@ _.PVP =
 				cl(PRIEST, {
 					i(146453, {	-- Ensemble: Cataclysmic Gladiator's Satin Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -674, -661, 5 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -9979, -674, -661, 5 },
+							{"select", "itemID", 73631 },	-- Cataclysmic Gladiator's Cuffs of Meditation
+							{"select", "itemID", 73637 },	-- Cataclysmic Gladiator's Cord of Meditation
+							{"select", "itemID", 73634 },	-- Cataclysmic Gladiator's Treads of Meditation
+							{"exclude", "itemID", 146453 },	-- Exclude itself to stop duplicating 
+						},
 					}),
 					i(73549, {	-- Cataclysmic Gladiator's Mooncloth Gloves
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -3099,7 +3147,16 @@ _.PVP =
 				cl(ROGUE, {
 					i(146447, {	-- Ensemble: Cataclysmic Gladiator's Leather Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -674, -661, 4 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -9979, -674, -661, 4 },
+							{"select", "itemID", 73528 },	-- Cataclysmic Gladiator's Armwraps of Accuracy
+							{"select", "itemID", 73529 },	-- Cataclysmic Gladiator's Armwraps of Alacrity
+							{"select", "itemID", 73532 },	-- Cataclysmic Gladiator's Waistband of Accuracy
+							{"select", "itemID", 73533 },	-- Cataclysmic Gladiator's Waistband of Cruelty
+							{"select", "itemID", 73530 },	-- Cataclysmic Gladiator's Boots of Alacrity
+							{"select", "itemID", 73531 },	-- Cataclysmic Gladiator's Boots of Cruelty
+							{"exclude", "itemID", 146447 },	-- Exclude itself to stop duplicating 
+						},
 					}),
 					i(73526, {	-- Cataclysmic Gladiator's Leather Gloves
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -3120,7 +3177,16 @@ _.PVP =
 				cl(SHAMAN, {
 					i(146451, {	-- Ensemble: Cataclysmic Gladiator's Ringmail Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -674, -661, 7 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -9979, -674, -661, 7 },
+							{"select", "itemID", 73518 },	-- Cataclysmic Gladiator's Armbands of Meditation
+							{"select", "itemID", 73519 },	-- Cataclysmic Gladiator's Armbands of Prowess
+							{"select", "itemID", 73507 },	-- Cataclysmic Gladiator's Waistguard of Cruelty
+							{"select", "itemID", 73522 },	-- Cataclysmic Gladiator's Waistguard of Meditation
+							{"select", "itemID", 73521 },	-- Cataclysmic Gladiator's Sabatons of Alacrity
+							{"select", "itemID", 73520 },	-- Cataclysmic Gladiator's Sabatons of Meditation
+							{"exclude", "itemID", 146451 },	-- Exclude itself to stop duplicating 
+						},
 					}),
 					i(73512, {	-- Cataclysmic Gladiator's Linked Armor
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -3171,7 +3237,13 @@ _.PVP =
 				cl(WARLOCK, {
 					i(146445, {	-- Ensemble: Cataclysmic Gladiator's Felweave Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -674, -661, 9 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -9979, -674, -661, 9 },
+							{"select", "itemID", 73633 },	-- Cataclysmic Gladiator's Cuffs of Accuracy
+							{"select", "itemID", 73638 },	-- Cataclysmic Gladiator's Cord of Accuracy
+							{"select", "itemID", 73635 },	-- Cataclysmic Gladiator's Treads of Alacrity
+							{"exclude", "itemID", 146445 },	-- Exclude itself to stop duplicating 
+						},
 					}),
 					i(73483, {	-- Cataclysmic Gladiator's Felweave Amice
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -3192,7 +3264,13 @@ _.PVP =
 				cl(WARRIOR, {
 					i(146449, {	-- Ensemble: Cataclysmic Gladiator's Plate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -674, -661, 1 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -9979, -674, -661, 1 },
+							{"select", "itemID", 73550 },	-- Cataclysmic Gladiator's Armplates of Alacrity
+							{"select", "itemID", 73554 },	-- Cataclysmic Gladiator's Girdle of Prowess
+							{"select", "itemID", 73552 },	-- Cataclysmic Gladiator's Warboots of Alacrity
+							{"exclude", "itemID", 146449 },	-- Exclude itself to stop duplicating 
+						},
 					}),
 					i(73482, {	-- Cataclysmic Gladiator's Plate Chestpiece
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
