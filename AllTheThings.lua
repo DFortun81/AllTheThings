@@ -3434,6 +3434,33 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		group = root;
 		-- print(group.g and #group.g,"Merge total");
 		-- print("Final Group",group.key,group[group.key],group.collectible,group.collected);
+		
+		-- Resolve Cost
+		if paramA == "currencyID" then
+			local costResults = app.SearchForField("currencyIDAsCost", paramB);
+			if costResults and #costResults > 0 then
+				if not root.g then root.g = {} end
+				local usedToBuy = app.CreateNPC(-2);
+				usedToBuy.text = "Currency For";
+				if not usedToBuy.g then usedToBuy.g = {}; end
+				for i,o in ipairs(costResults) do
+					MergeObject(usedToBuy.g, CreateObject(o));
+				end
+				MergeObject(root.g, usedToBuy);
+			end
+		elseif paramA == "itemID" or (paramA == "s" and group.itemID) then
+			local costResults = app.SearchForField("itemIDAsCost", group.itemID or paramB);
+			if costResults and #costResults > 0 then
+				if not root.g then root.g = {} end
+				local usedToBuy = app.CreateNPC(-2);
+				usedToBuy.text = "Currency For";
+				if not usedToBuy.g then usedToBuy.g = {}; end
+				for i,o in ipairs(costResults) do
+					MergeObject(usedToBuy.g, CreateObject(o));
+				end
+				MergeObject(root.g, usedToBuy);
+			end
+		end
 
 		-- Special cases
 		-- Don't show nested criteria of achievements
@@ -3448,7 +3475,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			group.g = noCrits;
 			-- print("achieve nocrits",#group.g)
 		end
-
+		
 		-- Append any crafted things using this group
 		app.BuildCrafted(group);
 
@@ -4284,19 +4311,6 @@ local function SearchForLink(link)
 					_ = (modItemID ~= itemID) and SearchForField("itemID", modItemID) or SearchForField("itemID", itemID);
 					-- print("SEARCHING FOR ITEM LINK ", link, modItemID, itemID, _ and #_);
 				end
-
-				-- Merge together the cost search results as well.
-				local searchResultsAsCost = (modItemID ~= itemID) and SearchForField("itemIDAsCost", modItemID) or SearchForField("itemIDAsCost", itemID);
-				-- print("SEARCHING FOR COST",modItemID,itemID,searchResultsAsCost and #searchResultsAsCost)
-				if searchResultsAsCost and #searchResultsAsCost > 0 then
-					if not _ then
-						_ = searchResultsAsCost;
-					else
-						for i,o in ipairs(searchResultsAsCost) do
-							table.insert(_, o);
-						end
-					end
-				end
 				return _;
 			end
 		end
@@ -4323,18 +4337,7 @@ local function SearchForLink(link)
 		elseif kind == "achievementid" or kind == "achievement" then
 			return SearchForField("achievementID", id);
 		elseif kind == "currencyid" or kind == "currency" then
-			local _ = SearchForField("currencyID", id);
-			local searchResultsAsCost = SearchForField("currencyIDAsCost", id);
-			if searchResultsAsCost and #searchResultsAsCost > 0 then
-				if not _ then
-					_ = searchResultsAsCost;
-				else
-					for i,o in ipairs(searchResultsAsCost) do
-						table.insert(_, o);
-					end
-				end
-			end
-			return _;
+			return SearchForField("currencyID", id);
 		elseif kind == "spellid" or kind == "spell" or kind == "enchant" or kind == "talent" then
 			return SearchForField("spellID", id);
 		elseif kind == "speciesid" or kind == "species" or kind == "battlepet" then
