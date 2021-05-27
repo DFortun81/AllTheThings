@@ -1074,8 +1074,9 @@ app.L = {
 		[-594] = "Interface\\Icons\\70_inscription_deck_Hellfire_2",						-- Kill Credit 2
 		[-595] = "Interface\\Icons\\70_inscription_deck_Hellfire_3",						-- Kill Credit 3
 		[-650] = "Interface\\Icons\\inv_misc_questionmark",									-- Quest Item
-		--[-655] = "Interface\\Worldmap\\GlowSkull_64Grey",									-- Not used yet. Future PvP Icons if needed
-		--[-656] = "Interface\\Worldmap\\GlowSkull_64",										-- Not used yet. Future PvP Icons if needed
+		--[-651] = "Interface\\Worldmap\\GlowSkull_64Grey",									-- Not used yet. Future PvP Icons if needed
+		--[-652] = "Interface\\Worldmap\\GlowSkull_64",										-- Not used yet. Future PvP Icons if needed
+		[-655] = 3052064, 																	-- Ensemble Gear (PvP)
 		[-657] = "Interface\\Icons\\ability_mount_redfrostwyrm_01",							-- Hateful Gladiator: Season 5 (Medium Gear)
 		[-658] = app.asset("Expansion_TBC"),												-- Pre-Season BC
 		[-659] = "Interface\\Worldmap\\GlowSkull_64Green",									-- Aspirant PvP Gear
@@ -1844,6 +1845,7 @@ app.L = {
 
 -- PvP Header
 	-- Special Season Tags
+		[-655] = "Ensemble Gear", 												-- Ensemble Gear (PvP)
 		[-656] = "Pre-Season",													-- Pre-Season (PvP Cata & later)
 		--[-657] = "Hateful Gladiator",											-- Listed under WOTLK PvP Seasons
 		[-658] = "BC Pre-Season",												-- Pre-Season (PvP BC)
