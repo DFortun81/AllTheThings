@@ -87,9 +87,15 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 				}),
 			}),
 			n(COMMON_BOSS_DROPS, {
+				-- #if AFTER 8.0.1.27326
+				currency(1704, {	-- Spirit Shard
+					["description"] = "Spirit Shards are currency tokens dropped by bosses in the Auchindoun instances. For shards to drop the player's faction must control the five Spirit Towers in the Bone Wastes. Bosses in the Mana-Tombs and Auchenai Crypts drop one shard each; bosses in the Sethekk Halls and Shadow Labyrinth drop two each.",
+				}),
+				-- #else
 				i(28558, {	-- Spirit Shard
 					["description"] = "Spirit Shards are currency tokens dropped by bosses in the Auchindoun instances. For shards to drop the player's faction must control the five Spirit Towers in the Bone Wastes. Bosses in the Mana-Tombs and Auchenai Crypts drop one shard each; bosses in the Sethekk Halls and Shadow Labyrinth drop two each.",
 				}),
+				-- #endif
 			}),
 			n(ZONEDROPS, {
 				i(22544, {	-- Formula: Enchant Boots - Dexterity
