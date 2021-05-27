@@ -514,6 +514,11 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 175772 },	-- Rahel
 						["coord"] = { 54.1, 26.8, 1699 },	-- Sinfall Reaches
 					}),
+					q(64325, {	-- Sinfall Veteran #2
+						["description"] = "Requires Renown 43.",
+						["provider"] = { "n", 175772 },	-- Rahel
+						["coord"] = { 54.1, 26.8, 1699 },	-- Sinfall Reaches
+					}),
 					q(58382, {	-- Someone Worth Saving
 						["sourceQuests"] = { 61077 },	-- Confronting Sin
 						["provider"] = { "n", 165291 },	-- The Accuser

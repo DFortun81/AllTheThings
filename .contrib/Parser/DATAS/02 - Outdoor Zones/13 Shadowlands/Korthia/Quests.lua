@@ -49,6 +49,12 @@ _.Zones =
 					["provider"] = { "n", 177452 },	-- Bonesmith Heirmir
 					["coord"] = { 34.9, 35.3, KORTHIA },
 				}),
+				q(63908, {	-- Bulwark of Divine Intent
+					["sourceQuests"] = { 64532 },	-- The Final Relics
+					["description"] = "Requires having purchased |cFF0070ddResearch Report: Ancient Shrines|r, allowing you to interact with the phasing swords.",
+					["provider"] = { "i", 186014 },	-- Bulwark of Divine Intent
+					["coord"] = { 18.5, 38.0, KORTHIA },
+				}),
 				q(63733, {	-- Carving Out a Path
 					["sourceQuests"] = { 63732 },	-- Interrupt the Interrogations
 					["provider"] = { "n", 178713 },	-- Archivist Roh-Dahl
@@ -163,6 +169,12 @@ _.Zones =
 					["provider"] = { "n", 177202 },	-- Ve'nari
 					["coord"] = { 58.3, 14.3, KORTHIA },
 				}),
+				q(63923, {	-- Lang Family Wood-Carving
+					["sourceQuests"] = { 64532 },	-- The Final Relics
+					["description"] = "Requires having purchased |cFF0070ddResearch Report: Ancient Shrines|r, allowing you to interact with the phasing swords.",
+					["provider"] = { "i", 187209 },	-- Lang Family Wood-Carving
+					["coord"] = { 24.3, 56.6, KORTHIA },
+				}),
 				q(63706, {	-- Let the Anima Flow
 					["sourceQuests"] = { 63703 },	-- Vault of Secrets
 					["provider"] = { "n", 177449 },	-- Bonesmith Heirmir
@@ -186,6 +198,16 @@ _.Zones =
 						63912,	-- Celestial Shadowlands Chart
 						63911,	-- Singing Steel Ingot
 						63860,	-- Talisman of the Eternal Scholar
+					},
+					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+					["coord"] = { 62.7, 22.5, KORTHIA },
+				}),
+				q(64526, {	-- Mysterious Rifts
+					["sourceQuests"] = {	-- TODO: not sure if the prereq is simply Tier 4 research, or if previous relics are required
+						63915,	-- Drum of Driving
+						63917,	-- Everliving Statuette
+						63918,	-- Obelisk of Dark Tidings
+						63916,	-- Sack of Strange Soil
 					},
 					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 					["coord"] = { 62.7, 22.5, KORTHIA },
@@ -241,6 +263,12 @@ _.Zones =
 					["provider"] = { "n", 177423 },	-- Tal-Galan
 					["coord"] = { 57.4, 29.8, KORTHIA },
 				}),
+				q(63922, {	-- Shadow Slicing Shortsword
+					["sourceQuests"] = { 64532 },	-- The Final Relics
+					["description"] = "Requires having purchased |cFF0070ddResearch Report: Ancient Shrines|r, allowing you to interact with the phasing swords.",
+					["provider"] = { "i", 187208 },	-- Shadow Slicing Shortsword
+					["coord"] = { 39.4, 42.6, KORTHIA },
+				}),
 				q(63731, {	-- Shattered Relics
 					["isBreadcrumb"] = true,
 					["description"] = "The item that starts this quest can be looted from any treasure chest or rare in Korthia.",
@@ -273,6 +301,16 @@ _.Zones =
 					["sourceQuests"] = { 63727 },	-- The Primus Returns
 					["provider"] = { "n", 177194 },	-- The Primus
 					["coord"] = { 63.1, 25.3, KORTHIA },
+				}),
+				q(64532, {	-- The Final Relics
+				--	TODO: unsure if reqs are these 3 quests, Tier 5 research, or both
+					["sourceQuests"] = {
+						63914,	-- Cipher of Understanding
+						63920,	-- Enigmatic Decrypting Device
+						63913,	-- Unstable Sin'dorei Explosive
+					},
+					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+					["coord"] = { 62.7, 22.5, KORTHIA },
 				}),
 				q(64438, {	-- The Fruits of Research
 					["sourceQuests"] = { 64290 },	-- Collecting Research
@@ -359,7 +397,7 @@ _.Zones =
 				}),
 
 				-- Korthia Daily
-				i(186017),	-- Korthium - TODO: item is marked WIP, itemID may change.  rewarded by some dailies but does not seem statically attached to anything specific.  acquisition/availability may be based on having completed the campaign questline to the point where you get to the Vault of Secrets
+				i(186017),	-- Korthite Crystal - rewarded by some dailies and found in some treasures, but does not seem statically attached to anything specific.  acquisition/availability may be based on having completed the campaign questline to the point where you get to the Vault of Secrets
 				q(64271, {	-- A More Civilized Way
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 178795 },	-- Nadjia the Mistblade
@@ -507,6 +545,7 @@ _.Zones =
 				--	i(186707),	-- Gold Filled Crate on 5/14.  contained ~401g
 				--	i(186708),	-- Gold Filled Paint Brush Cup on 5/18.  contained ~251g
 				--	i(186705),	-- Gold Filled Chalice (didn't do daily on this character so not sure how much it contains)
+				--	i(186688),	-- Gold Filled Wash Bucket
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 179221 },	-- Rendle
 					["isDaily"] = true,
@@ -687,6 +726,12 @@ _.Zones =
 					["provider"] = { "n", 178790 },	-- The Accuser
 					["isDaily"] = true,
 					["coord"] = { 61.8, 25.3, KORTHIA },
+				}),
+				q(64018, {	-- The Weight of Stone
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 178794 },	-- General Draven
+					["isDaily"] = true,
+					["coord"] = { 61.5, 25.2, KORTHIA },
 				}),
 				q(64104, {	-- Think of the Critters
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants

@@ -97,6 +97,18 @@ _.Zones =
 						i(184312),	-- Borr-Geth's Fiery Brimstone
 					},
 				}),
+				n(180246, {	-- Carriage Crusher
+					["description"] = "The Assault Supply Carriage starts in Korthia, moves to the northeastern bridge out of the Beastwarrens, and then finishes its supply run to the current covenant assault.\n\nWhen the carriage makes it to the bridge, the Carriage Crusher spawns.  You can hop into the carriage to heal it and yourself.",
+				--	["questID"] = 64258 and 64439, both of which also triggered on my first Traitor Balthier kill.  so currently they share a lockout and i'm not sure which quest to put where
+					["isWeekly"] = true,
+					["coord"] = { 45.5, 54.8, THE_MAW },
+					["cr"] = 180182,	-- Assault Supply Carriage
+					["g"] = {	-- TODO: does not currently grant credit, so not sure if this will permanently be a part of the achievement or if it's truly just NYI
+						crit(1, {	-- Assault Supply Carriage
+							["achievementID"] = 15107,	-- Conquering Korthia
+						}),
+					},
+				}),
 				n(171317, {	-- Conjured Death
 					["questID"] = 61106,
 					["isDaily"] = true,
@@ -203,7 +215,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 66.4, 55.4, THE_MAW },
 					["g"] = {
-						crit(5, {	-- Deomen the Vortex
+						crit(8, {	-- Deomen the Vortex
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 					},
@@ -602,7 +614,7 @@ _.Zones =
 						{ 68.8, 45.5, THE_MAW },
 					},
 					["g"] = {
-						crit(7, {	-- Traitor Balthier
+						crit(26, {	-- Traitor Balthier
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 					},
@@ -636,7 +648,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 66.7, 42.4, THE_MAW },
 					["g"] = {
-						crit(6, {	-- Ylva, Mate of Guarm
+						crit(27, {	-- Ylva, Mate of Guarm
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 						ach(14943, {	-- Guarmageddon

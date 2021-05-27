@@ -50,8 +50,10 @@ _.Zones =
 				i(187330),	-- Naaru Shard Fragment
 				i(187332),	-- Recovered Page of Voices
 				i(187323),	-- Runic Diagram
+				i(187462),	-- Scroll of Shadowlands Fables
 				i(187334),	-- Shattered Void Tablet
 				i(187331),	-- Tattered Fae Designs
+				i(187478),	-- White Razorwing Talon
 			--	Cosmetics (not sure if this should go here or under Wild Worldcracker)
 				i(187252, {	-- Ritualist's Spiked Mantle
 					["crs"] = { 180030 },	-- Opportunistic Corruptor (also dropped from *i think* a mawsworn cleaver, but not positive)
@@ -107,6 +109,7 @@ _.Zones =
 				i(186127),	-- Mawsworn Scout's Bracers
 				i(186120),	-- Mawsworn Scout's Chainmail
 				i(186126),	-- Mawsworn Scout's Cincture
+				i(186148),	-- Mawsworn Vanquisher's Spire*
 				i(186145),	-- Stygian Thorn Loop
 			}),
 		}),

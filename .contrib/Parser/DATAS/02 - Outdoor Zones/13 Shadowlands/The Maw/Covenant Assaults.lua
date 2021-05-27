@@ -386,7 +386,7 @@ _.Zones =
 							}),
 						}),
 						n(-978, {	-- The Rift
-							["description"] = "The things in this section are only accessible when you are in The Rift, a version of the Maw populated by shades, accessed by using the |cFFFFFFFFUnbalanced Riftstone|r from the |cFF349cffA Shady Place|r quest.",
+							["description"] = "The things in this section are only accessible when you are in The Rift, a version of the Maw populated by shades.\n\nIn Korthia, this phase can be accessed by using a |cFF1eff00Repaired Riftkey|r on a |cFFFFFFFFMaw Rift|r. To get there in the Maw, you can either walk to the Maw after entering a |cFFFFFFFFMaw Rift|r in Korthia, or use the |cFFFFFFFFUnbalanced Riftstone|r from the Night Fae covenant assault quest |cFF349cffA Shady Place|r.",
 							["g"] = {
 								n(ACHIEVEMENTS, {
 									ach(15043, {	-- Hoarder of Torghast
@@ -408,7 +408,7 @@ _.Zones =
 										},
 									}),
 									q(64282, {	-- Full of Surprises
-									--	["provider"] = { "n",  },	-- Ve'nari TODO get npcID, i forgot lol
+										["provider"] = { "n", 179904 },	-- Ve'nari
 										["isDaily"] = true,
 										["coord"] = { 44.7, 51.4, THE_MAW },
 									}),
@@ -419,7 +419,7 @@ _.Zones =
 										["isDaily"] = true,
 										["coord"] = { 34.7, 41.9, THE_MAW },
 										["g"] = {
-											crit(18, {	-- Blinding Shadow
+											crit(2, {	-- Blinding Shadow
 												["achievementID"] = 15107,	-- Conquering Korthia
 											}),
 										},
@@ -430,7 +430,7 @@ _.Zones =
 										["isDaily"] = true,
 										["coord"] = { 51.1, 71.1, THE_MAW },
 										["g"] = {
-											crit(11, {	-- Guard Orguluus
+											crit(12, {	-- Guard Orguluus
 												["achievementID"] = 15107,	-- Conquering Korthia
 											}),
 										},
@@ -440,7 +440,7 @@ _.Zones =
 										["isDaily"] = true,
 										["coord"] = { 28.5, 24.9, THE_MAW },
 										["g"] = {
-											crit(3, {	-- Torgllun, Lord of Shades
+											crit(24, {	-- Torgllun, Lord of Shades
 												["achievementID"] = 15107,	-- Conquering Korthia
 											}),
 											i(187139),	-- Bottled Shade Heart (TOY!)
@@ -589,20 +589,6 @@ _.Zones =
 								["g"] = {
 									crit(10, {	-- Wrath of the Party Herald
 										["achievementID"] = 15033,	-- Taking the Tremaculum
-									}),
-								},
-							}),
-						}),
-						n(RARES, {
-							n(180246, {	-- Carriage Crusher
-								["description"] = "The Assault Supply Carriage starts in Korthia, moves to the northeastern bridge out of the Beastwarrens, and then finishes its supply run to the Venthyr covenant assault.\n\nWhen the carriage makes it to the bridge, the Carriage Crusher spawns.  You can hop into the carriage to heal it and yourself.",
-							--	["questID"] = 64258 and 64439, both of which also triggered on my first Traitor Balthier kill.  so currently they share a lockout and i'm not sure which quest to put where
-								["isWeekly"] = true,
-								["coord"] = { 45.5, 54.8, THE_MAW },
-								["cr"] = 180182,	-- Assault Supply Carriage
-								["g"] = {	-- TODO: does not currently grant credit, so not sure if this will permanently be a part of the achievement or if it's truly just NYI
-									crit(8, {	-- Assault Supply Carriage [NYI]
-										["achievementID"] = 15107,	-- Conquering Korthia
 									}),
 								},
 							}),

@@ -335,50 +335,34 @@ _.Achievements =
 					crit(10),	-- Offering Box
 				}),
 				ach(15107, {	-- Conquering Korthia
-				--	TODO: visual presentation of achievement criteria does not currently match its output - 2 criteria in the middle are missing, pushing everything else 2 spaces away and making the last 2 criteria not show up at all.  check back and ensure everything is correct
-					crit(1),	-- Dominated Protector
-					crit(2),	-- Hunting the Hunter
-					crit(3),	-- Torgllun, Lord of Shades
-					crit(4),	-- Consumption
-					crit(5),	-- Deomen the Vortex
-					crit(6),	-- Ylva, Mate of Guarm
-					crit(7),	-- Traitor Balthier
-					crit(8),	-- Assault Supply Carriage [NYI]
-					crit(9),	-- Relic Breaker Krelva
-					crit(11),	-- Guard Orguluus
-					crit(12),	-- Screaming Shade
-					crit(13),	-- Silent Soulstalker
-					crit(14),	-- Deadsoul Hatcher
-					crit(16),	-- Chamber of Knowledge
-					crit(17),	-- Chamber of Wisdom
-					crit(18),	-- Blinding Shadow
-					crit(19),	-- Escaped Wilderling
-					crit(20),	-- Corpse Heap
-					crit(21),	-- Popo's Potion Patrol
-					crit(22),	-- No Stoneborn Left Behind
-					crit(23),	-- Reliwik the Defiant
-					crit(24),	-- Zelnithop
-					crit(25),	-- Kroke the Tormented
-					crit(26),	-- Pop Quiz
-				--	last 2 crit that don't load correctly lol
-				--	crit(27),	-- Towering Exterminator
-				--	crit(28),	-- Konthrogz the Obliterator
-				--	actual crit
-				--	crit(10),	-- Guard Orguluus
-				--	crit(11),	-- Screaming Shade
-				--	crit(12),	-- Silent Soulstalker
-				--	crit(13),	-- Deadsoul Hatcher
-				--	crit(14),	-- Chamber of Knowledge
-				--	crit(15),	-- Chamber of Wisdom
-				--	crit(16),	-- Blinding Shadow
-				--	crit(17),	-- Escaped Wilderling
-				--	crit(18),	-- Corpse Heap
-				--	crit(19),	-- Popo's Potion Patrol
-				--	crit(20),	-- No Stoneborn Left Behind
-				--	crit(21),	-- Zelnithop
-				--	crit(22),	-- Kroke the Tormented
-				--	crit(23),	-- Towering Exterminator
-				--	crit(24),	-- Konthrogz the Obliterator
+					crit(1),	-- Assault Supply Carriage
+					crit(2),	-- Blinding Shadow
+					crit(3),	-- Chamber of Knowledge
+					crit(4),	-- Chamber of Wisdom
+					crit(5),	-- Consumption
+					crit(6),	-- Corpse Heap
+					crit(7),	-- Deadsoul Hatcher
+					crit(8),	-- Deomen the Vortex
+					crit(9),	-- Dominated Protector
+					crit(10),	-- Escaped Wilderling
+					crit(11),	-- Fallen Charger
+					crit(12),	-- Guard Orguluus
+					crit(13),	-- Hunting the Hunter
+					crit(14),	-- Konthrogz the Obliterator
+					crit(15),	-- Kroke the Tormented
+					crit(16),	-- No Stoneborn Left Behind
+					crit(17),	-- Observer Yorik
+					crit(18),	-- Pop Quiz
+					crit(19),	-- Popo's Potion Patrol
+					crit(20),	-- Relic Breaker Krelva
+					crit(21),	-- Reliwik the Defiant
+					crit(22),	-- Screaming Shade
+					crit(23),	-- Silent Soulstalker
+					crit(24),	-- Torglluun, Lord of Shades
+					crit(25),	-- Towering Exterminator
+					crit(26),	-- Traitor Balthier
+					crit(27),	-- Ylva, Mate of Guarm
+					crit(28),	-- Zelnithop
 				}),
 			}),
 			ach(15056),		-- Friend of Bloop

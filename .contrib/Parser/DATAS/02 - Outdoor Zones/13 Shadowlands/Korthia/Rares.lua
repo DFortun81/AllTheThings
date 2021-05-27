@@ -19,7 +19,7 @@ _.Zones =
 						179768,	-- Consumption (Rare Elite version)
 					},
 					["g"] = {
-						crit(4, {	-- Consumption
+						crit(5, {	-- Consumption
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 					},
@@ -29,7 +29,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 51.9, 20.9, KORTHIA },
 					["g"] = {
-						crit(1, {	-- Dominated Protector
+						crit(9, {	-- Dominated Protector
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 					},
@@ -41,8 +41,7 @@ _.Zones =
 					["coord"] = { 33.1, 39.5, KORTHIA },
 					["cr"] = 180009,	-- Alluring Drum
 					["g"] = {
-					--	crit(17, {	-- Escaped Wilderling
-						crit(19, {	-- Escaped Wilderling
+						crit(10, {	-- Escaped Wilderling
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 						i(187278, {	-- Talon-Pierced Mawsworn Lockbox
@@ -66,8 +65,7 @@ _.Zones =
 						180057,	-- Restless Necromancer
 					},
 					["g"] = {	-- TODO: if 'lord of the corpseflies' is necrolord-only, it needs to be marked here + in mount section
-					--	crit(18, {	-- Corpse Heap
-						crit(20, {	-- Corpse Heap
+						crit(6, {	-- Corpse Heap
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 						i(186489),	-- Lord of the Corpseflies (MOUNT!)
@@ -80,11 +78,9 @@ _.Zones =
 					["coord"] = { 30.2, 54.9, KORTHIA },
 					["cr"] = 179464,	-- Devouring Tear
 					["g"] = {
-					--[[ achievement is currently fucked and does not return the correct information
-						crit(24, {	-- Konthrogz the Obliterator
+						crit(14, {	-- Konthrogz the Obliterator
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
-						--]]
 						i(187183),	-- Rampaging Mauler (MOUNT!)
 					},
 				}),
@@ -98,9 +94,10 @@ _.Zones =
 					},
 					["cr"] = 179029,	-- Tormented Demolisher
 					["g"] = {
-						crit(25, {	-- Kroke the Tormented
+						crit(15, {	-- Kroke the Tormented
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
+						i(187248),	-- Kroke's Gleaming Spaulders
 					},
 				}),
 				n(179684, {	-- Malbog
@@ -113,7 +110,7 @@ _.Zones =
 					},
 					["cr"] = 179729,	-- Caretaker Kah-Kay
 					["g"] = {
-						crit(2, {	-- Hunting the Hunter
+						crit(13, {	-- Hunting the Hunter
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 						i(186645),	-- Crimson Shardhide (MOUNT!)
@@ -125,7 +122,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 22.8, 42.6, KORTHIA },
 					["g"] = {
-						crit(9, {	-- Relic Breaker Krelva
+						crit(20, {	-- Relic Breaker Krelva
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 						i(187403),	-- Relic Breaker's Drape
@@ -137,7 +134,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 56.3, 66.2, KORTHIA },
 					["g"] = {
-						crit(23, {	-- Reliwik the Defiant
+						crit(21, {	-- Reliwik the Defiant
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 						i(186652),	-- Garnet Razorwing (MOUNT!)
@@ -150,8 +147,7 @@ _.Zones =
 					["coord"] = { 46.3, 79.7, KORTHIA },
 					["cr"] = 179974,	-- Drippy
 					["g"] = {
-					--	crit(20, {	-- No Stoneborn Left Behind
-						crit(22, {	-- No Stoneborn Left Behind
+						crit(16, {	-- No Stoneborn Left Behind
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 						i(187283, {	-- Gravewing Crystal
@@ -167,11 +163,9 @@ _.Zones =
 					["questID"] = 64245,
 					["isDaily"] = true,
 					["g"] = {
-					--[[ this crit is currently broken
-						crit(23),	-- Towering Exterminator
+						crit(25, {	-- Towering Exterminator
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
-						--]]
 						i(187242),	-- Exterminator's Crest of the Damned
 						i(187241),	-- Watchful Eye of the Damned
 					},
@@ -182,10 +176,11 @@ _.Zones =
 					["isDaily"] = true,
 					["coords"] = {
 						{ 32.5, 43.0, KORTHIA },
+						{ 43.3, 57.7, KORTHIA },	-- cave entrance
 						{ 49.0, 29.0, KORTHIA },
 					},
 					["g"] = {
-						crit(26, {	-- Pop Quiz
+						crit(18, {	-- Pop Quiz
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 						i(187264, {	-- Ve'rayn's Head
@@ -204,8 +199,7 @@ _.Zones =
 					},
 					["cr"] = 180028,	-- Popo
 					["g"] = {	-- TODO: if foresworn aquilon is kyrian-only, it needs to be marked here + in mount section
-					--	crit(19, {	-- Popo's Potion Patrol
-						crit(21, {	-- Popo's Potion Patrol
+						crit(19, {	-- Popo's Potion Patrol
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 						i(186483),	-- Foresworn Aquilon (MOUNT!)
@@ -219,7 +213,7 @@ _.Zones =
 					["coord"] = { 45.0, 35.5, KORTHIA },
 					["cost"] = { { "i", 186718, 1 } },	-- Teleporter Repair Kit
 					["g"] = {
-						crit(17, {	-- Chamber of Wisdom
+						crit(4, {	-- Chamber of Wisdom
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 						i(187104, {	-- Obelisk of Dark Tidings
@@ -236,7 +230,7 @@ _.Zones =
 					["coord"] = { 39.3, 52.4, KORTHIA },
 					["cost"] = { { "i", 186718, 1 } },	-- Teleporter Repair Kit
 					["g"] = {
-						crit(16, {	-- Chamber of Knowledge
+						crit(3, {	-- Chamber of Knowledge
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 						i(187103, {	-- Everliving Statuette
@@ -251,8 +245,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 30.2, 54.9, KORTHIA },
 					["g"] = {
-					--	crit(22, {	-- Zelnithop
-						crit(24, {	-- Zelnithop
+						crit(28, {	-- Zelnithop
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 						i(187371),	-- Velvet Gromit Handwraps

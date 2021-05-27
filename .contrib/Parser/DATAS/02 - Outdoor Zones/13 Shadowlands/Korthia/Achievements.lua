@@ -19,9 +19,11 @@ _.Zones =
 					},
 				}),
 				ach(15107, {	-- Conquering Korthia
-					crit(11),	-- Screaming Shade - korthia (44.6, 42.9) but requires a currently inaccessible phase to engage in combat
-					crit(12),	-- Silent Soulstalker
-					crit(13),	-- Deadsoul Hatcher
+					crit(7),	-- Deadsoul Hatcher
+					crit(11),	-- Fallen Charger
+					crit(17),	-- Observer Yorik
+					crit(22),	-- Screaming Shade
+					crit(23),	-- Silent Soulstalker
 				}),
 				ach(15066),		-- Reliquary Restoration
 				ach(15099, {	-- Treasures of Korthia

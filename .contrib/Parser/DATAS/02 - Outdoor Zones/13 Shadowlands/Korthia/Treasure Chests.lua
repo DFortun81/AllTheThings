@@ -67,6 +67,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 54.2, 41.2, KORTHIA },
 					["g"] = {
+						i(186989),	-- Recipe: Marrow Burst
 						i(186986),	-- Recipe: Widow Burst
 						i(187153),	-- Tasty Mawshroom
 					},
@@ -76,6 +77,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 53.7, 37.9, KORTHIA },
 					["g"] = {
+						i(186989),	-- Recipe: Marrow Burst
 						i(186986),	-- Recipe: Widow Burst
 						i(187153),	-- Tasty Mawshroom
 					},
@@ -85,6 +87,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 45.6, 34.3, KORTHIA },
 					["g"] = {
+						i(186989),	-- Recipe: Marrow Burst
 						i(186986),	-- Recipe: Widow Burst
 						i(187153),	-- Tasty Mawshroom
 					},
@@ -94,6 +97,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 39.7, 34.8, KORTHIA },
 					["g"] = {
+						i(186989),	-- Recipe: Marrow Burst
 						i(186986),	-- Recipe: Widow Burst
 						i(187153),	-- Tasty Mawshroom
 					},
@@ -103,6 +107,8 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 39.6, 30.0, KORTHIA },
 					["g"] = {
+						i(186989),	-- Recipe: Marrow Burst
+						i(186986),	-- Recipe: Widow Burst
 						i(187153),	-- Tasty Mawshroom
 					},
 				}),
@@ -243,6 +249,7 @@ _.Zones =
 						{ 38.2, 51.7, KORTHIA },	-- Pile of Bones
 						{ 39.6, 50.2, KORTHIA },	-- Pile of Bones
 						{ 45.6, 81.4, KORTHIA },	-- Relic Cache
+						{ 50.6, 67.1, KORTHIA },	-- Relic Cache
 						{ 53.9, 76.1, KORTHIA },	-- Relic Cache
 						{ 54.2, 72.3, KORTHIA },	-- Relic Cache
 						{ 54.9, 50.2, KORTHIA },	-- Relic Cache
@@ -281,6 +288,7 @@ _.Zones =
 						{ 38.2, 51.7, KORTHIA },	-- Pile of Bones
 						{ 39.6, 50.2, KORTHIA },	-- Pile of Bones
 						{ 45.6, 81.4, KORTHIA },	-- Relic Cache
+						{ 50.6, 67.1, KORTHIA },	-- Relic Cache
 						{ 53.9, 76.1, KORTHIA },	-- Relic Cache
 						{ 54.2, 72.3, KORTHIA },	-- Relic Cache
 						{ 54.9, 50.2, KORTHIA },	-- Relic Cache
@@ -319,6 +327,7 @@ _.Zones =
 						{ 38.2, 51.7, KORTHIA },	-- Pile of Bones
 						{ 39.6, 50.2, KORTHIA },	-- Pile of Bones
 						{ 45.6, 81.4, KORTHIA },	-- Relic Cache
+						{ 50.6, 67.1, KORTHIA },	-- Relic Cache
 						{ 53.9, 76.1, KORTHIA },	-- Relic Cache
 						{ 54.2, 72.3, KORTHIA },	-- Relic Cache
 						{ 54.9, 50.2, KORTHIA },	-- Relic Cache
@@ -357,6 +366,7 @@ _.Zones =
 						{ 38.2, 51.7, KORTHIA },	-- Pile of Bones
 						{ 39.6, 50.2, KORTHIA },	-- Pile of Bones
 						{ 45.6, 81.4, KORTHIA },	-- Relic Cache
+						{ 50.6, 67.1, KORTHIA },	-- Relic Cache
 						{ 53.9, 76.1, KORTHIA },	-- Relic Cache
 						{ 54.2, 72.3, KORTHIA },	-- Relic Cache
 						{ 54.9, 50.2, KORTHIA },	-- Relic Cache

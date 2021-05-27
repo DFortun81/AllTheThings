@@ -17,6 +17,9 @@ _.Zones =
 							["cost"] = { { "c", 1931, 3000 } },	-- 3,000x Catalogued Research
 						}),
 						--
+						i(187409, {	-- Cloak of the Korthian Scholar
+							["cost"] = { { "c", 1931, 500 } },	-- 500x Catalogued Research
+						}),
 						i(186470, {	-- Recipe: Crafter's Mark of the Chained Isle
 							["cost"] = { { "c", 1931, 2500 } },	-- 2,500x Catalogued Research
 						}),
@@ -28,6 +31,7 @@ _.Zones =
 							["cost"] = { { "c", 1931, 100 } },	-- 100x Catalogued Research
 						}),
 						i(186716, {	-- Research Report: Ancient Shrines
+							["questID"] = 64348,
 							["cost"] = { { "c", 1931, 1000 } },	-- 1,000x Catalogued Research
 						}),
 						i(187136, {	-- Research Report: Careful Examination
@@ -169,7 +173,7 @@ _.Zones =
 							},
 						}),
 						i(187187, {	-- Korthian Armaments
-							["description"] = "These items can also drop from War Chests awarded by Covenant Assaults, the Death's Advance War Chest, and occasionally from Korthian dailies.\n\nKorthian Armaments also have a chance to drop from Korthia treasures.",
+							["description"] = "These items can also drop from War Chests awarded by Covenant Assaults, the Death's Advance War Chest, and occasionally from Korthian dailies.\n\nKorthian Armaments also have a chance to drop from Korthia rares and treasures.",
 							["cost"] = { { "c", 1767, 1000 } },	-- 1,000x Stygia
 							["g"] = {	-- * are next to ones i have seen (there are a couple sets so not sure if both exist)
 								f(3,    {	-- Cloaks
@@ -179,12 +183,12 @@ _.Zones =
 									i(185861),	-- Korthian Caretaker's Bindings
 									i(185860),	-- Korthian Caretaker's Cinch*
 									i(185858),	-- Korthian Caretaker's Crest*
-									i(186666),	-- Korthian Caretaker's Crown
+									i(186666),	-- Korthian Caretaker's Crown*
 									i(185857),	-- Korthian Caretaker's Handwraps*
 									i(185859),	-- Korthian Caretaker's Leggings*
 									i(186670),	-- Korthian Caretaker's Mantle
 									i(186665),	-- Korthian Caretaker's Mitts*
-									i(186667),	-- Korthian Caretaker's Pantaloons
+									i(186667),	-- Korthian Caretaker's Pantaloons*
 									i(185855),	-- Korthian Caretaker's Robes
 									i(186664),	-- Korthian Caretaker's Sandals*
 									i(186668),	-- Korthian Caretaker's Sash
