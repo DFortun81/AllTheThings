@@ -1075,6 +1075,7 @@ app.L = {
 		[-595] = "Interface\\Icons\\70_inscription_deck_Hellfire_3",						-- Kill Credit 3
 		[-650] = "Interface\\Icons\\inv_misc_questionmark",									-- Quest Item
 		[-657] = "Interface\\Icons\\ability_mount_redfrostwyrm_01",							-- Hateful Gladiator: Season 5 (Medium Gear)
+		[-658] = app.asset("Expansion_TBC"),												-- Pre-Season BC
 		[-660] = "Interface\\Worldmap\\GlowSkull_64Green",									-- Aspirant PvP Gear
 		[-660] = "Interface\\Worldmap\\GlowSkull_64Blue",									-- Combatant PvP Gear
 		[-661] = "Interface\\Worldmap\\GlowSkull_64Purple",									-- Gladator PvP Gear
@@ -1841,8 +1842,9 @@ app.L = {
 
 -- PvP Header
 	-- Special Season Tags
+		[-656] = "Pre-Season",													-- Pre-Season (PvP Cata & later)
 		--[-657] = "Hateful Gladiator",											-- Listed under WOTLK PvP Seasons
-		[-658] = "Pre-Season",													-- Pre-Season (PvP BC & later)
+		[-658] = "BC Pre-Season",												-- Pre-Season (PvP BC)
 	-- PvP Set Names
 		[-659] = "Aspirant Gear",												-- Aspirant PvP Gear (WoD, BfA)
 		[-660] = "Combatant Gear",												-- Combatant PvP Gear (WoD, Legion)
