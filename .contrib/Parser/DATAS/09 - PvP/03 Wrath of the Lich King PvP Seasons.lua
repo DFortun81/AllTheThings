@@ -57,21 +57,23 @@ _.PVP =
 								{"sub", "pvp_set_ensemble", -10014, -668, -9983, 6 }, 
 								{"exclude", "itemID", 146580 },	-- Exclude itself to stop duplicating
 							},
-						}),
-						i(40779, {	-- Savage Gladiator's Dreadplate Chestpiece
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(40799, {	-- Savage Gladiator's Dreadplate Gauntlets
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(40817, {	-- Savage Gladiator's Dreadplate Helm
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(40837, {	-- Savage Gladiator's Dreadplate Legguards
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(40857, {	-- Savage Gladiator's Dreadplate Shoulders
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							["g"] = {
+								i(40779, {	-- Savage Gladiator's Dreadplate Chestpiece
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(40799, {	-- Savage Gladiator's Dreadplate Gauntlets
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(40817, {	-- Savage Gladiator's Dreadplate Helm
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(40837, {	-- Savage Gladiator's Dreadplate Legguards
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(40857, {	-- Savage Gladiator's Dreadplate Shoulders
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+							},
 						}),
 					}),
 					cl(DRUID, {
@@ -81,51 +83,53 @@ _.PVP =
 								{"sub", "pvp_set_ensemble", -10014, -668, -9983, 11 }, 
 								{"exclude", "itemID", 146579 },	-- Exclude itself to stop duplicating
 							},
-						}),
-						i(41770, {	-- Savage Gladiator's Dragonhide Gloves
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(41675, {	-- Savage Gladiator's Dragonhide Helm
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41664, {	-- Savage Gladiator's Dragonhide Legguards
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41658, {	-- Savage Gladiator's Dragonhide Robes
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41712, {	-- Savage Gladiator's Dragonhide Spaulders
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(41268, {	-- Savage Gladiator's Kodohide Gloves
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(41269, {	-- Savage Gladiator's Kodohide Helm
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41270, {	-- Savage Gladiator's Kodohide Legguards
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41272, {	-- Savage Gladiator's Kodohide Robes
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41271, {	-- Savage Gladiator's Kodohide Spaulders
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(41290, {	-- Savage Gladiator's Wyrmhide Gloves
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(41324, {	-- Savage Gladiator's Wyrmhide Helm
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41301, {	-- Savage Gladiator's Wyrmhide Legguards
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41313, {	-- Savage Gladiator's Wyrmhide Robes
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(41278, {	-- Savage Gladiator's Wyrmhide Spaulders
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							["g"] = {
+								i(41770, {	-- Savage Gladiator's Dragonhide Gloves
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41675, {	-- Savage Gladiator's Dragonhide Helm
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41664, {	-- Savage Gladiator's Dragonhide Legguards
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41658, {	-- Savage Gladiator's Dragonhide Robes
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41712, {	-- Savage Gladiator's Dragonhide Spaulders
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41268, {	-- Savage Gladiator's Kodohide Gloves
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41269, {	-- Savage Gladiator's Kodohide Helm
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41270, {	-- Savage Gladiator's Kodohide Legguards
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41272, {	-- Savage Gladiator's Kodohide Robes
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41271, {	-- Savage Gladiator's Kodohide Spaulders
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41290, {	-- Savage Gladiator's Wyrmhide Gloves
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+								i(41324, {	-- Savage Gladiator's Wyrmhide Helm
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41301, {	-- Savage Gladiator's Wyrmhide Legguards
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41313, {	-- Savage Gladiator's Wyrmhide Robes
+									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+								}),
+								i(41278, {	-- Savage Gladiator's Wyrmhide Spaulders
+									["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+								}),
+							},
 						}),
 					}),
 					cl(HUNTER, {
