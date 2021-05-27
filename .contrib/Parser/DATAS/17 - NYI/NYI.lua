@@ -19,7 +19,7 @@ _.NeverImplemented =
 		-- Dont tell the Users is actually obtainable but there is just no info
 		["description"] = "If this drops for you, please provide as much information as you can about how and where you got it.",
 	}),
-	n(-10100, {	-- Shadowlands -- Items that might get added after 9.0.5. If you are sure the item won't be added, please put it into the correct section
+	tier(9,	{	-- Shadowlands -- Items that might get added after 9.0.5. If you are sure the item won't be added, please put it into the correct section
 		-- Added in 9.1. Remove me soon!
 		i(179531),	-- Faesworn Reaper
 		i(179515),	-- Faesworn Falchion
@@ -365,6 +365,7 @@ _.NeverImplemented =
 				i(96356),	-- Robes of the Thousandfold Hells
 				i(96357),	-- Mantle of the Thousandfold Hells
 			}),
+			i(153289),	-- Eredar Priestess' Tunic
 			i(105710),	-- Lasso Bracers, Humanoid
 			i(105928),	-- Magic Bunny Hat
 			i(159190),	-- Foxhollow Bracelets
