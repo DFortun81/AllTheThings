@@ -3665,7 +3665,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		-- 	end
 		-- end
 
-		group.info = info;
+		group.tooltipInfo = info;
 		for i,item in ipairs(info) do
 			if item.color then item.a, item.r, item.g, item.b = HexToARGB(item.color); end
 		end
@@ -3675,7 +3675,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	group.working = working;
 	cache[2] = (working and 0.01) or 100000000;
 	-- if working then print("still working...")
-	-- else print("Cached Search",search,paramA,paramB,#group.info); end
+	-- else print("Cached Search",search,paramA,paramB,#group.tooltipInfo); end
 	cache[3] = group;
 
 	-- Check if finally leaving the top-level search
@@ -5108,9 +5108,9 @@ local function AttachTooltipRawSearchResults(self, group)
 			self:AddDoubleLine("Progress", group.collectionText);
 		end
 		-- If there was info text generated for this search result, then display that first.
-		if group.info then
+		if group.tooltipInfo then
 			local left, right;
-			for i,entry in ipairs(group.info) do
+			for i,entry in ipairs(group.tooltipInfo) do
 				left = entry.left;
 				right = entry.right;
 				if right then
