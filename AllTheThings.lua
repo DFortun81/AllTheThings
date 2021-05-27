@@ -3464,7 +3464,10 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				usedToBuy.text = "Currency For";
 				if not usedToBuy.g then usedToBuy.g = {}; end
 				for i,o in ipairs(costResults) do
-					MergeObject(usedToBuy.g, CreateObject(o));
+					-- Currencies need to meet the group requirements as well since the character itself needs to meet those requirements to buy it
+					if app.RecursiveGroupRequirementsFilter(o) then
+						MergeObject(usedToBuy.g, CreateObject(o));
+					end
 				end
 				MergeObject(root.g, usedToBuy);
 			end
