@@ -8,37 +8,6 @@ _.PVP =
 		n(-672, {	-- Vicious Gladiator: Season 9
 			n(-9983, {	-- Honor Gear
 				n(-319, {	-- Weapons
-					un(NEVER_IMPLEMENTED, i(64693)),	-- Bloodthirsty Gladiator's Barrier
-					un(NEVER_IMPLEMENTED, i(64694)),	-- Bloodthirsty Gladiator's Baton of Light
-					un(NEVER_IMPLEMENTED, i(64695)),	-- Bloodthirsty Gladiator's Battle Staff
-					un(NEVER_IMPLEMENTED, i(64700)),	-- Bloodthirsty Gladiator's Bonecracker
-					un(NEVER_IMPLEMENTED, i(64701)),	-- Bloodthirsty Gladiator's Bonegrinder
-					un(NEVER_IMPLEMENTED, i(64717)),	-- Bloodthirsty Gladiator's Cleaver
-					un(NEVER_IMPLEMENTED, i(64726)),	-- Bloodthirsty Gladiator's Decapitator
-					un(NEVER_IMPLEMENTED, i(64743)),	-- Bloodthirsty Gladiator's Endgame
-					un(NEVER_IMPLEMENTED, i(64744)),	-- Bloodthirsty Gladiator's Energy Staff
-					un(NEVER_IMPLEMENTED, i(64775)),	-- Bloodthirsty Gladiator's Fleshslicer
-					un(NEVER_IMPLEMENTED, i(64752)),	-- Bloodthirsty Gladiator's Gavel
-					un(NEVER_IMPLEMENTED, i(64755)),	-- Bloodthirsty Gladiator's Greatsword
-					un(NEVER_IMPLEMENTED, i(64758)),	-- Bloodthirsty Gladiator's Hacker
-					un(NEVER_IMPLEMENTED, i(64760)),	-- Bloodthirsty Gladiator's Heavy Crossbow
-					un(NEVER_IMPLEMENTED, i(64783)),	-- Bloodthirsty Gladiator's Longbow
-					un(NEVER_IMPLEMENTED, i(64810)),	-- Bloodthirsty Gladiator's Pike
-					un(NEVER_IMPLEMENTED, i(64816)),	-- Bloodthirsty Gladiator's Pummeler
-					un(NEVER_IMPLEMENTED, i(64817)),	-- Bloodthirsty Gladiator's Quickblade
-					un(NEVER_IMPLEMENTED, i(64818)),	-- Bloodthirsty Gladiator's Redoubt
-					un(NEVER_IMPLEMENTED, i(64823)),	-- Bloodthirsty Gladiator's Reprieve
-					un(NEVER_IMPLEMENTED, i(64824)),	-- Bloodthirsty Gladiator's Rifle
-					un(NEVER_IMPLEMENTED, i(64825)),	-- Bloodthirsty Gladiator's Right Render
-					un(NEVER_IMPLEMENTED, i(64826)),	-- Bloodthirsty Gladiator's Ripper
-					un(NEVER_IMPLEMENTED, i(64848)),	-- Bloodthirsty Gladiator's Shanker
-					un(NEVER_IMPLEMENTED, i(64849)),	-- Bloodthirsty Gladiator's Shield Wall
-					un(NEVER_IMPLEMENTED, i(64850)),	-- Bloodthirsty Gladiator's Shiv
-					un(NEVER_IMPLEMENTED, i(64774)),	-- Bloodthirsty Gladiator's Slasher
-					un(NEVER_IMPLEMENTED, i(64858)),	-- Bloodthirsty Gladiator's Slicer
-					un(NEVER_IMPLEMENTED, i(64859)),	-- Bloodthirsty Gladiator's Spellblade
-					un(NEVER_IMPLEMENTED, i(64860)),	-- Bloodthirsty Gladiator's Staff
-					un(NEVER_IMPLEMENTED, i(64861)),	-- Bloodthirsty Gladiator's Touch of Defeat
 				}),
 				cl(DEATHKNIGHT, {
 					i(146423, {	-- Ensemble: Bloodthirsty Gladiator's Dreadplate Armor
@@ -57,6 +26,13 @@ _.PVP =
 							{"select", "itemID", 70573 },	-- Vicious Gladiator's Girdle of Cruelty
 							{"select", "itemID", 70668 },	-- Vicious Gladiator's Warboots of Cruelty
 							{"exclude", "itemID", 146423 },	-- Exclude itself to stop duplicating 
+						},
+						["g"] = {
+							i(70558),	-- Vicious Gladiator's Dreadplate Chestpiece
+							i(70559),	-- Vicious Gladiator's Dreadplate Gauntlets
+							i(70560),	-- Vicious Gladiator's Dreadplate Helm
+							i(70561),	-- Vicious Gladiator's Dreadplate Legguards
+							i(70562),	-- Vicious Gladiator's Dreadplate Shoulders
 						},
 					}),
 					i(64735, {	-- Bloodthirsty Gladiator's Dreadplate Chestpiece
@@ -108,6 +84,29 @@ _.PVP =
 							{"select", "itemID", 70571 },	-- Vicious Gladiator's Footguards of Alacrity
 							{"select", "itemID", 70572 },	-- Vicious Gladiator's Footguards of Meditation
 							{"exclude", "itemID", 146421 },	-- Exclude itself to stop duplicating 
+						},
+						["g"] = {
+							i(70550),	-- Vicious Gladiator's Dragonhide Gloves
+							i(70551),	-- Vicious Gladiator's Dragonhide Helm
+							i(70552),	-- Vicious Gladiator's Dragonhide Legguards
+							i(70553),	-- Vicious Gladiator's Dragonhide Robes
+							i(70554),	-- Vicious Gladiator's Dragonhide Spaulders
+							i(70580),	-- Vicious Gladiator's Kodohide Gloves
+							i(70581),	-- Vicious Gladiator's Kodohide Helm
+							i(70582),	-- Vicious Gladiator's Kodohide Legguards
+							i(70583),	-- Vicious Gladiator's Kodohide Robes
+							i(70584),	-- Vicious Gladiator's Kodohide Spaulders
+							i(70671),	-- Vicious Gladiator's Wyrmhide Gloves
+							i(70672),	-- Vicious Gladiator's Wyrmhide Helm
+							i(70673),	-- Vicious Gladiator's Wyrmhide Legguards
+							i(70674),	-- Vicious Gladiator's Wyrmhide Robes
+							i(70675),	-- Vicious Gladiator's Wyrmhide Spaulders
+							i(70525),	-- Vicious Gladiator's Bindings of Meditation
+							i(70526),	-- Vicious Gladiator's Bindings of Prowess
+							i(70523),	-- Vicious Gladiator's Belt of Cruelty
+							i(70524),	-- Vicious Gladiator's Belt of Meditation
+							i(70571),	-- Vicious Gladiator's Footguards of Alacrity
+							i(70572),	-- Vicious Gladiator's Footguards of Meditation
 						},
 					}),
 					i(64727, {	-- Bloodthirsty Gladiator's Dragonhide Gloves
@@ -180,6 +179,17 @@ _.PVP =
 							{"select", "itemID", 70641 },	-- Vicious Gladiator's Sabatons of Cruelty
 							{"exclude", "itemID", 146419 },	-- Exclude itself to stop duplicating 
 						},
+						["g"] = {
+							i(70533),	-- Vicious Gladiator's Chain Armor
+							i(70534),	-- Vicious Gladiator's Chain Gauntlets
+							i(70535),	-- Vicious Gladiator's Chain Helm
+							i(70536),	-- Vicious Gladiator's Chain Leggings
+							i(70537),	-- Vicious Gladiator's Chain Spaulders
+							i(70669),	-- Vicious Gladiator's Wristguards of Accuracy
+							i(70670),	-- Vicious Gladiator's Wristguards of Alacrity
+							i(70639),	-- Vicious Gladiator's Sabatons of Alacrity
+							i(70641),	-- Vicious Gladiator's Sabatons of Cruelty
+						},
 					}),
 					i(64708, {	-- Bloodthirsty Gladiator's Chain Armor
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -214,6 +224,16 @@ _.PVP =
 							{"select", "itemID", 70545 },	-- Vicious Gladiator's Cord of Cruelty
 							{"select", "itemID", 70661 },	-- Vicious Gladiator's Treads of Cruelty
 							{"exclude", "itemID", 146437 },	-- Exclude itself to stop duplicating 
+						},
+						["g"] = {
+							i(70655),	-- Vicious Gladiator's Silk Amice
+							i(70656),	-- Vicious Gladiator's Silk Cowl
+							i(70657),	-- Vicious Gladiator's Silk Handguards
+							i(70658),	-- Vicious Gladiator's Silk Robe
+							i(70659),	-- Vicious Gladiator's Silk Trousers
+							i(70547),	-- Vicious Gladiator's Cuffs of Accuracy
+							i(70545),	-- Vicious Gladiator's Cord of Cruelty
+							i(70661),	-- Vicious Gladiator's Treads of Cruelty
 						},
 					}),
 					i(64853, {	-- Bloodthirsty Gladiator's Silk Amice
@@ -260,6 +280,24 @@ _.PVP =
 							{"select", "itemID", 70575 },	-- Vicious Gladiator's Greaves of Alacrity
 							{"select", "itemID", 70576 },	-- Vicious Gladiator's Greaves of Meditation
 							{"exclude", "itemID", 146435 },	-- Exclude itself to stop duplicating 
+						},
+						["g"] = {
+							i(70615),	-- Vicious Gladiator's Ornamented Chestguard
+							i(70616),	-- Vicious Gladiator's Ornamented Gloves
+							i(70617),	-- Vicious Gladiator's Ornamented Headcover
+							i(70618),	-- Vicious Gladiator's Ornamented Legplates
+							i(70619),	-- Vicious Gladiator's Ornamented Spaulders
+							i(70648),	-- Vicious Gladiator's Scaled Chestpiece
+							i(70649),	-- Vicious Gladiator's Scaled Gauntlets
+							i(70650),	-- Vicious Gladiator's Scaled Helm
+							i(70651),	-- Vicious Gladiator's Scaled Legguards
+							i(70652),	-- Vicious Gladiator's Scaled Shoulders
+							i(70529),	-- Vicious Gladiator's Bracers of Meditation
+							i(70530),	-- Vicious Gladiator's Bracers of Prowess
+							i(70540),	-- Vicious Gladiator's Clasp of Cruelty
+							i(70541),	-- Vicious Gladiator's Clasp of Meditation
+							i(70575),	-- Vicious Gladiator's Greaves of Alacrity
+							i(70576),	-- Vicious Gladiator's Greaves of Meditation
 						},
 					}),
 					i(64802, {	-- Bloodthirsty Gladiator's Ornamented Chestguard
@@ -315,6 +353,21 @@ _.PVP =
 							{"select", "itemID", 70546 },	-- Vicious Gladiator's Cord of Meditation
 							{"select", "itemID", 70662 },	-- Vicious Gladiator's Treads of Meditation
 							{"exclude", "itemID", 146433 },	-- Exclude itself to stop duplicating 
+						},
+						["g"] = {
+							i(70608),	-- Vicious Gladiator's Mooncloth Gloves
+							i(70609),	-- Vicious Gladiator's Mooncloth Helm
+							i(70610),	-- Vicious Gladiator's Mooncloth Leggings
+							i(70611),	-- Vicious Gladiator's mooncloth Mantle
+							i(70612),	-- Vicious Gladiator's Mooncloth Robe
+							i(70643),	-- Vicious Gladiator's Satin Gloves
+							i(70644),	-- Vicious Gladiator's Satin Hood
+							i(70645),	-- Vicious Gladiator's Satin Leggings
+							i(70646),	-- Vicious Gladiator's Satin Mantle
+							i(70647),	-- Vicious Gladiator's Satin Robe
+							i(70548),	-- Vicious Gladiator's Cuffs of Meditation
+							i(70546),	-- Vicious Gladiator's Cord of Meditation
+							i(70662),	-- Vicious Gladiator's Treads of Meditation
 						},
 					}),
 					i(64795, {	-- Bloodthirsty Gladiator's Mooncloth Gloves
@@ -372,6 +425,13 @@ _.PVP =
 							{"select", "itemID", 70528 },	-- Vicious Gladiator's Boots of Cruelty
 							{"exclude", "itemID", 146427 },	-- Exclude itself to stop duplicating 
 						},
+						["g"] = {
+							i(70585),	-- Vicious Gladiator's Leather Gloves
+							i(70586),	-- Vicious Gladiator's Leather Helm
+							i(70587),	-- Vicious Gladiator's Leather Legguards
+							i(70588),	-- Vicious Gladiator's Leather Spaulders
+							i(70589),	-- Vicious Gladiator's Leather Tunic
+						},
 					}),
 					i(64769, {	-- Bloodthirsty Gladiator's Leather Gloves
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -422,6 +482,29 @@ _.PVP =
 							{"select", "itemID", 70640 },	-- Vicious Gladiator's Sabatons of Alacrity
 							{"select", "itemID", 70642 },	-- Vicious Gladiator's Sabatons of Meditation
 							{"exclude", "itemID", 146431 },	-- Exclude itself to stop duplicating 
+						},
+						["g"] = {
+							i(70590),	-- Vicious Gladiator's Linked Armor
+							i(70591),	-- Vicious Gladiator's Linked Gauntlets
+							i(70592),	-- Vicious Gladiator's Linked Helm
+							i(70593),	-- Vicious Gladiator's Linked Leggings
+							i(70594),	-- Vicious Gladiator's Linked Spaulders
+							i(70597),	-- Vicious Gladiator's Mail Armor
+							i(70598),	-- Vicious Gladiator's Mail Gauntlets
+							i(70599),	-- Vicious Gladiator's Mail Helm
+							i(70600),	-- Vicious Gladiator's Mail Leggings
+							i(70601),	-- Vicious Gladiator's Mail Spaulders
+							i(70632),	-- Vicious Gladiator's Ringmail Armor
+							i(70633),	-- Vicious Gladiator's Ringmail Gauntlets
+							i(70634),	-- Vicious Gladiator's Ringmail Helm
+							i(70635),	-- Vicious Gladiator's Ringmail Leggings
+							i(70636),	-- Vicious Gladiator's Ringmail Spaulders
+							i(70511),	-- Vicious Gladiator's Armbands of Meditation
+							i(70512),	-- Vicious Gladiator's Armbands of Prowess
+							i(70665),	-- Vicious Gladiator's Waistguard of Cruelty
+							i(70666),	-- Vicious Gladiator's Waistguard of Meditation
+							i(70640),	-- Vicious Gladiator's Sabatons of Alacrity
+							i(70642),	-- Vicious Gladiator's Sabatons of Meditation
 						},
 					}),	
 					i(64776, {	-- Bloodthirsty Gladiator's Linked Armor
@@ -488,6 +571,16 @@ _.PVP =
 							{"select", "itemID", 70660 },	-- Vicious Gladiator's Treads of Alacrity
 							{"exclude", "itemID", 146425 },	-- Exclude itself to stop duplicating 
 						},
+						["g"] = {
+							i(70566),	-- Vicious Gladiator's Felweave Amice
+							i(70567),	-- Vicious Gladiator's Felweave Cowl
+							i(70568),	-- Vicious Gladiator's Felweave Handguards
+							i(70569),	-- Vicious Gladiator's Felweave Rainment
+							i(70570),	-- Vicious Gladiator's Felweave Trousers
+							i(70549),	-- Vicious Gladiator's Cuffs of Prowess
+							i(70544),	-- Vicious Gladiator's Cord of Accuracy
+							i(70660),	-- Vicious Gladiator's Treads of Alacrity
+						},
 					}),
 					i(64745, {	-- Bloodthirsty Gladiator's Felweave Amice
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -522,6 +615,13 @@ _.PVP =
 							{"select", "itemID", 70574 },	-- Vicious Gladiator's Girdle of Prowess
 							{"select", "itemID", 70667 },	-- Vicious Gladiator's Warboots of Alacrity
 							{"exclude", "itemID", 146429 },	-- Exclude itself to stop duplicating 
+						},
+						["g"] = {
+							i(70623),	-- Vicious Gladiator's Plate Chestpiece
+							i(70624),	-- Vicious Gladiator's Plate Gauntlets
+							i(70625),	-- Vicious Gladiator's Plate Helm
+							i(70626),	-- Vicious Gladiator's Plate Legguards
+							i(70627),	-- Vicious Gladiator's Plate Shoulders
 						},
 					}),
 					i(64811, {	-- Bloodthirsty Gladiator's Plate Chestpiece
@@ -1507,8 +1607,8 @@ _.PVP =
 				}),
 			}),
 			n(-655, {	-- Ensemble Gear (Season 10 version)
-				["description"] = "These items are available from Bloodthirsty Gladiator(Vicious Gladiator Season 9:Honor Gear) class ensembles only",
-				["g"]={
+				["description"] = "These items are only available from Bloodthirsty Gladiator class ensembles (listed under Vicious Gladiator Season 9: Honor Gear).",
+				["g"] = {
 					cl(DEATHKNIGHT, {
 						i(70558),	-- Vicious Gladiator's Dreadplate Chestpiece
 						i(70559),	-- Vicious Gladiator's Dreadplate Gauntlets
@@ -1617,7 +1717,6 @@ _.PVP =
 						un(REMOVED_FROM_GAME, i(70555)),	-- Vicious Gladiator's Drape of Diffusion
 						un(REMOVED_FROM_GAME, i(70556)),	-- Vicious Gladiator's Drape of Meditation
 						un(REMOVED_FROM_GAME, i(70557)),	-- Vicious Gladiator's Drape of Prowess
-					
 					}),
 					n(-326, {	-- Wrists
 						i(70511),	-- Vicious Gladiator's Armbands of Meditation

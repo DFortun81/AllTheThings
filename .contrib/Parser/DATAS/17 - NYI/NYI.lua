@@ -4352,6 +4352,37 @@ _.NeverImplemented =
 			i(165682),	-- Unknown
 			i(164760),	-- Illidari Warglaives (Lv100 boosted gear)
 		}),
+		i(64693),	-- Bloodthirsty Gladiator's Barrier
+		i(64694),	-- Bloodthirsty Gladiator's Baton of Light
+		i(64695),	-- Bloodthirsty Gladiator's Battle Staff
+		i(64700),	-- Bloodthirsty Gladiator's Bonecracker
+		i(64701),	-- Bloodthirsty Gladiator's Bonegrinder
+		i(64717),	-- Bloodthirsty Gladiator's Cleaver
+		i(64726),	-- Bloodthirsty Gladiator's Decapitator
+		i(64743),	-- Bloodthirsty Gladiator's Endgame
+		i(64744),	-- Bloodthirsty Gladiator's Energy Staff
+		i(64775),	-- Bloodthirsty Gladiator's Fleshslicer
+		i(64752),	-- Bloodthirsty Gladiator's Gavel
+		i(64755),	-- Bloodthirsty Gladiator's Greatsword
+		i(64758),	-- Bloodthirsty Gladiator's Hacker
+		i(64760),	-- Bloodthirsty Gladiator's Heavy Crossbow
+		i(64783),	-- Bloodthirsty Gladiator's Longbow
+		i(64810),	-- Bloodthirsty Gladiator's Pike
+		i(64816),	-- Bloodthirsty Gladiator's Pummeler
+		i(64817),	-- Bloodthirsty Gladiator's Quickblade
+		i(64818),	-- Bloodthirsty Gladiator's Redoubt
+		i(64823),	-- Bloodthirsty Gladiator's Reprieve
+		i(64824),	-- Bloodthirsty Gladiator's Rifle
+		i(64825),	-- Bloodthirsty Gladiator's Right Render
+		i(64826),	-- Bloodthirsty Gladiator's Ripper
+		i(64848),	-- Bloodthirsty Gladiator's Shanker
+		i(64849),	-- Bloodthirsty Gladiator's Shield Wall
+		i(64850),	-- Bloodthirsty Gladiator's Shiv
+		i(64774),	-- Bloodthirsty Gladiator's Slasher
+		i(64858),	-- Bloodthirsty Gladiator's Slicer
+		i(64859),	-- Bloodthirsty Gladiator's Spellblade
+		i(64860),	-- Bloodthirsty Gladiator's Staff
+		i(64861),	-- Bloodthirsty Gladiator's Touch of Defeat
 		-- Dreadful Gladiator (BLUE QUALITY) (did not make it to live)
 		i(84697),	-- Dreadful Gladiator's Fleshslicer
 		i(84722),	-- Dreadful Gladiator's Pike
