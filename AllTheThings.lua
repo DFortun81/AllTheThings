@@ -4142,7 +4142,6 @@ fieldConverters = {
 					end
 				elseif v[1] == "c" and v[2] > 0 then
 					CacheField(group, "currencyIDAsCost", v[2]);
-					CacheField(group, "currencyID", v[2]);
 				end
 			end
 		end
