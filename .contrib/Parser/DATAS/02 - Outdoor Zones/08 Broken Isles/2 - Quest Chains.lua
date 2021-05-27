@@ -111,23 +111,31 @@ _.Zones =
 							["coord"] = { 48.1, 25.6, 630 },
 							["maps"] = { 630 },	-- Azsuna
 						}),
-						q(43937),	-- Seeking Refuge
-						q(43938),	-- Focusing Our Efforts
-						q(40673),	-- Lost Knowledge
+						q(43937),	-- Seeking Refuge (Saving the Guard gives credit for this; not sure if it is obtainable on its own anymore)
+						q(43938),	-- Focusing Our Efforts (Saving the Guard gives credit for this; not sure if it is obtainable on its own anymore)
+						q(40673, {	-- Lost Knowledge
+							["sourceQuests"] = { 43527 },	-- Saving the Guard
+							["provider"] = { "n", 101083 },	-- Thalrenus Rivertree
+							["coord"] = { 37.8, 47.3, 680 },
+							["maps"] = { 680 },	-- Suramar
+						}),
 						q(43525, {	-- Vault of the Wardens: Borrowing Without Asking
 							["sourceQuests"] = { 40673 },	-- Lost Knowledge
 							["provider"] = { "n", 101083 },	-- Thalrenus Rivertree
 							["coord"] = { 37.8, 47.3, 680 },
+							["maps"] = { 680 },	-- Suramar
 						}),
 						q(40675, {	-- The Arcway: Rite of the Captain
 							["sourceQuests"] = { 40673 },	-- Lost Knowledge
 							["provider"] = { "n", 101080 },	-- Syrana Starweaver
 							["coord"] = { 37.9, 47.3, 680 },
+							["maps"] = { 680 },	-- Suramar
 						}),
 						q(43524, {	-- Court of Stars: Literary Perfection
 							["sourceQuests"] = { 40673 },	-- Lost Knowledge
 							["provider"] = { "n", 101082 },	-- Lothrius Mooncaller
 							["coord"] = { 37.9, 47.4, 680 },
+							["maps"] = { 680 },	-- Suramar
 						}),
 						q(40678, {	-- Twisted Power
 							["sourceQuests"] = { 
@@ -137,16 +145,19 @@ _.Zones =
 							},
 							["provider"] = { "n", 101080 },	-- Syrana Starweaver
 							["coord"] = { 37.9, 47.3, 680 },
+							["maps"] = { 680 },	-- Suramar
 						}),
 						q(43526, {	-- A True Test
 							["sourceQuests"] = { 40678 },	-- Twisted Power
 							["provider"] = { "n", 101080 },	-- Syrana Starweaver
 							["coord"] = { 37.9, 47.3, 680 },
+							["maps"] = { 680 },	-- Suramar
 						}),
 						q(40603, {	-- Seeking the Valkyra
 							["sourceQuests"] = { 43526 },	-- A True Test
 							["provider"] = { "n", 111826 },	-- Archmage Kalec
 							["coord"] = { 37.8, 47.4, 680 },
+							["maps"] = { 680 },	-- Suramar
 						}),
 						q(40608, {	-- The Mark
 							["sourceQuest"] = 40603,	-- Seeking the Valkyra

@@ -1244,6 +1244,7 @@ _.Zones =
 						i(33265),	-- Pendant of Ferocity
 						i(131662),	-- Crested Chain Epaulets
 					},
+					["altQuests"] = { 11147 },	-- Unleash the Raptors
 				}),
 				q(11184, {	-- [DEPRECATED]WANTED: Goreclaw the Ravenous
 					["u"] = REMOVED_FROM_GAME,

@@ -178,7 +178,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(70557)),	-- Vicious Gladiator's Drape o of Prowess
 					},
 			--]]}),
-				n(32362,  {	-- Evee Copperspring <Arena Vendor> >Season 6< Elite
+				n(32362,  {	-- Evee Copperspring <Arena Vendor> Original WOTLK S5 (ELITE?) VENDOR
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				n(40572,  {	-- Haughty Modiste <Fashion Designer>

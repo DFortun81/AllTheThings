@@ -112,6 +112,17 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 						i(28167),	-- Sha'tari Wrought Armguards
 					},
 				}),
+				q(10885, {	-- Trial of the Naaru: Strength
+					["qg"] = 18481,	-- A'dal
+					["sourceQuest"] = 10883,	-- The Tempest Key
+					["coord"] = { 54.0, 44.8, SHATTRATH_CITY },
+					["maps"] = { SHATTRATH_CITY, COILFANG_RESERVOIR_STEAMVAULT },
+					["cost"] = {
+						{ "i", 31721, 1 },	-- Kalithresh's Trident
+						{ "i", 31722, 1 },	-- Murmur's Essence
+					},
+					["lvl"] = lvlsquish(70, 30, 70),
+				}),
 				q(10177, {	-- Trouble at Auchindoun
 					["qg"] = 18893,	-- Spymistress Mehlisah Highcrown
 					["coord"] = { 50.2, 45.4, SHATTRATH_CITY },
@@ -130,9 +141,15 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 				}),
 			}),
 			n(COMMON_BOSS_DROPS, {
+				-- #if AFTER 8.0.1.27326
+				currency(1704, {	-- Spirit Shard
+					["description"] = "Spirit Shards are currency tokens dropped by bosses in the Auchindoun instances. For shards to drop the player's faction must control the five Spirit Towers in the Bone Wastes. Bosses in the Mana-Tombs and Auchenai Crypts drop one shard each; bosses in the Sethekk Halls and Shadow Labyrinth drop two each.",
+				}),
+				-- #else
 				i(28558, {	-- Spirit Shard
 					["description"] = "Spirit Shards are currency tokens dropped by bosses in the Auchindoun instances. For shards to drop the player's faction must control the five Spirit Towers in the Bone Wastes. Bosses in the Mana-Tombs and Auchenai Crypts drop one shard each; bosses in the Sethekk Halls and Shadow Labyrinth drop two each.",
 				}),
+				-- #endif
 			}),
 			n(ZONEDROPS, {
 				i(24514, {	-- First Key Fragment

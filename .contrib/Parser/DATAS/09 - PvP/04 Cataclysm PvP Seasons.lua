@@ -48,6 +48,14 @@ _.PVP =
 							{"select", "itemID", 64684 },	-- Bloodthirsty Gladiator's Armplates of Proficiency
 							{"select", "itemID", 64753 },	-- Bloodthirsty Gladiator's Girdle of Cruelty
 							{"select", "itemID", 64870 },	-- Bloodthirsty Gladiator's Warboots of Cruelty
+							{"select", "itemID", 70558 },	-- Vicious Gladiator's Dreadplate Chestpiece
+							{"select", "itemID", 70559 },	-- Vicious Gladiator's Dreadplate Gauntlets
+							{"select", "itemID", 70560 },	-- Vicious Gladiator's Dreadplate Helm
+							{"select", "itemID", 70561 },	-- Vicious Gladiator's Dreadplate Legguards
+							{"select", "itemID", 70562 },	-- Vicious Gladiator's Dreadplate Shoulders
+							{"select", "itemID", 70514 },	-- Vicious Gladiator's Armplates of Proficiency
+							{"select", "itemID", 70573 },	-- Vicious Gladiator's Girdle of Cruelty
+							{"select", "itemID", 70668 },	-- Vicious Gladiator's Warboots of Cruelty
 							{"exclude", "itemID", 146423 },	-- Exclude itself to stop duplicating 
 						},
 					}),
@@ -78,6 +86,27 @@ _.PVP =
 							{"select", "itemID", 64697 },	-- Bloodthirsty Gladiator's Belt of Meditation
 							{"select", "itemID", 64750 },	-- Bloodthirsty Gladiator's Footguards of Alacrity
 							{"select", "itemID", 64751 },	-- Bloodthirsty Gladiator's Footguards of Meditation
+							{"select", "itemID", 70550 },	-- Vicious Gladiator's Dragonhide Gloves
+							{"select", "itemID", 70551 },	-- Vicious Gladiator's Dragonhide Helm
+							{"select", "itemID", 70552 },	-- Vicious Gladiator's Dragonhide Legguards
+							{"select", "itemID", 70553 },	-- Vicious Gladiator's Dragonhide Robes
+							{"select", "itemID", 70554 },	-- Vicious Gladiator's Dragonhide Spaulders
+							{"select", "itemID", 70580 },	-- Vicious Gladiator's Kodohide Gloves
+							{"select", "itemID", 70581 },	-- Vicious Gladiator's Kodohide Helm
+							{"select", "itemID", 70582 },	-- Vicious Gladiator's Kodohide Legguards
+							{"select", "itemID", 70583 },	-- Vicious Gladiator's Kodohide Robes
+							{"select", "itemID", 70584 },	-- Vicious Gladiator's Kodohide Spaulders
+							{"select", "itemID", 70671 },	-- Vicious Gladiator's Wyrmhide Gloves
+							{"select", "itemID", 70672 },	-- Vicious Gladiator's Wyrmhide Helm
+							{"select", "itemID", 70673 },	-- Vicious Gladiator's Wyrmhide Legguards
+							{"select", "itemID", 70674 },	-- Vicious Gladiator's Wyrmhide Robes
+							{"select", "itemID", 70675 },	-- Vicious Gladiator's Wyrmhide Spaulders
+							{"select", "itemID", 70525 },	-- Vicious Gladiator's Bindings of Meditation
+							{"select", "itemID", 70526 },	-- Vicious Gladiator's Bindings of Prowess
+							{"select", "itemID", 70523 },	-- Vicious Gladiator's Belt of Cruelty
+							{"select", "itemID", 70524 },	-- Vicious Gladiator's Belt of Meditation
+							{"select", "itemID", 70571 },	-- Vicious Gladiator's Footguards of Alacrity
+							{"select", "itemID", 70572 },	-- Vicious Gladiator's Footguards of Meditation
 							{"exclude", "itemID", 146421 },	-- Exclude itself to stop duplicating 
 						},
 					}),
@@ -138,6 +167,17 @@ _.PVP =
 							{"select", "itemID", 64782 },	-- Bloodthirsty Gladiator's Links of Cruelty
 							{"select", "itemID", 64834 },	-- Bloodthirsty Gladiator's Sabatons of Alacrity
 							{"select", "itemID", 64836 },	-- Bloodthirsty Gladiator's Sabatons of Cruelty
+							{"select", "itemID", 70533 },	-- Vicious Gladiator's Chain Armor
+							{"select", "itemID", 70534 },	-- Vicious Gladiator's Chain Gauntlets
+							{"select", "itemID", 70535 },	-- Vicious Gladiator's Chain Helm
+							{"select", "itemID", 70536 },	-- Vicious Gladiator's Chain Leggings
+							{"select", "itemID", 70537 },	-- Vicious Gladiator's Chain Spaulders
+							{"select", "itemID", 70669 },	-- Vicious Gladiator's Wristguards of Accuracy
+							{"select", "itemID", 70670 },	-- Vicious Gladiator's Wristguards of Alacrity
+							{"select", "itemID", 70595 },	-- Vicious Gladiator's Links of Accuracy
+							{"select", "itemID", 70596 },	-- Vicious Gladiator's Links of Cruelty
+							{"select", "itemID", 70639 },	-- Vicious Gladiator's Sabatons of Alacrity
+							{"select", "itemID", 70641 },	-- Vicious Gladiator's Sabatons of Cruelty
 							{"exclude", "itemID", 146419 },	-- Exclude itself to stop duplicating 
 						},
 					}),
@@ -165,6 +205,14 @@ _.PVP =
 							{"select", "itemID", 64723 },	-- Bloodthirsty Gladiator's Cuffs of Accuracy	
 							{"select", "itemID", 64721 },	-- Bloodthirsty Gladiator's Cord of Cruelty
 							{"select", "itemID", 64863 },	-- Bloodthirsty Gladiator's Treads of Cruelty
+							{"select", "itemID", 70655 },	-- Vicious Gladiator's Silk Amice
+							{"select", "itemID", 70656 },	-- Vicious Gladiator's Silk Cowl
+							{"select", "itemID", 70657 },	-- Vicious Gladiator's Silk Handguards
+							{"select", "itemID", 70658 },	-- Vicious Gladiator's Silk Robe
+							{"select", "itemID", 70659 },	-- Vicious Gladiator's Silk Trousers
+							{"select", "itemID", 70547 },	-- Vicious Gladiator's Cuffs of Accuracy
+							{"select", "itemID", 70545 },	-- Vicious Gladiator's Cord of Cruelty
+							{"select", "itemID", 70661 },	-- Vicious Gladiator's Treads of Cruelty
 							{"exclude", "itemID", 146437 },	-- Exclude itself to stop duplicating 
 						},
 					}),
@@ -195,6 +243,22 @@ _.PVP =
 							{"select", "itemID", 64716 },	-- Bloodthirsty Gladiator's Clasp of Meditation
 							{"select", "itemID", 64756 },	-- Bloodthirsty Gladiator's Greaves of Alacrity
 							{"select", "itemID", 64757 },	-- Bloodthirsty Gladiator's Greaves of Meditation
+							{"select", "itemID", 70615 },	-- Vicious Gladiator's Ornamented Chestguard
+							{"select", "itemID", 70616 },	-- Vicious Gladiator's Ornamented Gloves
+							{"select", "itemID", 70617 },	-- Vicious Gladiator's Ornamented Headcover
+							{"select", "itemID", 70618 },	-- Vicious Gladiator's Ornamented Legplates
+							{"select", "itemID", 70619 },	-- Vicious Gladiator's Ornamented Spaulders
+							{"select", "itemID", 70648 },	-- Vicious Gladiator's Scaled Chestpiece
+							{"select", "itemID", 70649 },	-- Vicious Gladiator's Scaled Gauntlets
+							{"select", "itemID", 70650 },	-- Vicious Gladiator's Scaled Helm
+							{"select", "itemID", 70651 },	-- Vicious Gladiator's Scaled Legguards
+							{"select", "itemID", 70652 },	-- Vicious Gladiator's Scaled Shoulders
+							{"select", "itemID", 70529 },	-- Vicious Gladiator's Bracers of Meditation
+							{"select", "itemID", 70530 },	-- Vicious Gladiator's Bracers of Prowess
+							{"select", "itemID", 70540 },	-- Vicious Gladiator's Clasp of Cruelty
+							{"select", "itemID", 70541 },	-- Vicious Gladiator's Clasp of Meditation
+							{"select", "itemID", 70575 },	-- Vicious Gladiator's Greaves of Alacrity
+							{"select", "itemID", 70576 },	-- Vicious Gladiator's Greaves of Meditation
 							{"exclude", "itemID", 146435 },	-- Exclude itself to stop duplicating 
 						},
 					}),
@@ -237,6 +301,19 @@ _.PVP =
 							{"select", "itemID", 64724 },	-- Bloodthirsty Gladiator's Cuffs of Meditation
 							{"select", "itemID", 64722 },	-- Bloodthirsty Gladiator's Cord of Meditation
 							{"select", "itemID", 64864 },	-- Bloodthirsty Gladiator's Treads of Meditation
+							{"select", "itemID", 70608 },	-- Vicious Gladiator's Mooncloth Gloves
+							{"select", "itemID", 70609 },	-- Vicious Gladiator's Mooncloth Helm
+							{"select", "itemID", 70610 },	-- Vicious Gladiator's Mooncloth Leggings
+							{"select", "itemID", 70611 },	-- Vicious Gladiator's mooncloth Mantle
+							{"select", "itemID", 70612 },	-- Vicious Gladiator's Mooncloth Robe
+							{"select", "itemID", 70643 },	-- Vicious Gladiator's Satin Gloves
+							{"select", "itemID", 70644 },	-- Vicious Gladiator's Satin Hood
+							{"select", "itemID", 70645 },	-- Vicious Gladiator's Satin Leggings
+							{"select", "itemID", 70646 },	-- Vicious Gladiator's Satin Mantle
+							{"select", "itemID", 70647 },	-- Vicious Gladiator's Satin Robe
+							{"select", "itemID", 70548 },	-- Vicious Gladiator's Cuffs of Meditation
+							{"select", "itemID", 70546 },	-- Vicious Gladiator's Cord of Meditation
+							{"select", "itemID", 70662 },	-- Vicious Gladiator's Treads of Meditation
 							{"exclude", "itemID", 146433 },	-- Exclude itself to stop duplicating 
 						},
 					}),
@@ -282,6 +359,17 @@ _.PVP =
 							{"select", "itemID", 64866 },	-- Bloodthirsty Gladiator's Waistband of Cruelty
 							{"select", "itemID", 64702 },	-- Bloodthirsty Gladiator's Boots of Alacrity
 							{"select", "itemID", 64703 },	-- Bloodthirsty Gladiator's Boots of Cruelty
+							{"select", "itemID", 70585 },	-- Vicious Gladiator's Leather Gloves
+							{"select", "itemID", 70586 },	-- Vicious Gladiator's Leather Helm
+							{"select", "itemID", 70587 },	-- Vicious Gladiator's Leather Legguards
+							{"select", "itemID", 70588 },	-- Vicious Gladiator's Leather Spaulders
+							{"select", "itemID", 70589 },	-- Vicious Gladiator's Leather Tunic
+							{"select", "itemID", 70515 },	-- Vicious Gladiator's Armwraps of Accuracy
+							{"select", "itemID", 70516 },	-- Vicious Gladiator's Armwraps of Alacrity
+							{"select", "itemID", 70663 },	-- Vicious Gladiator's Waistband of Accuracy
+							{"select", "itemID", 70664 },	-- Vicious Gladiator's Waistband of Cruelty
+							{"select", "itemID", 70527 },	-- Vicious Gladiator's Boots of Alacrity
+							{"select", "itemID", 70528 },	-- Vicious Gladiator's Boots of Cruelty
 							{"exclude", "itemID", 146427 },	-- Exclude itself to stop duplicating 
 						},
 					}),
@@ -312,6 +400,27 @@ _.PVP =
 							{"select", "itemID", 64868 },	-- Bloodthirsty Gladiator's Waistguard of Meditation
 							{"select", "itemID", 64835 },	-- Bloodthirsty Gladiator's Sabatons of Alacrity
 							{"select", "itemID", 64837 },	-- Bloodthirsty Gladiator's Sabatons of Meditation
+							{"select", "itemID", 70590 },	-- Vicious Gladiator's Linked Armor
+							{"select", "itemID", 70591 },	-- Vicious Gladiator's Linked Gauntlets
+							{"select", "itemID", 70592 },	-- Vicious Gladiator's Linked Helm
+							{"select", "itemID", 70593 },	-- Vicious Gladiator's Linked Leggings
+							{"select", "itemID", 70594 },	-- Vicious Gladiator's Linked Spaulders
+							{"select", "itemID", 70597 },	-- Vicious Gladiator's Mail Armor
+							{"select", "itemID", 70598 },	-- Vicious Gladiator's Mail Gauntlets
+							{"select", "itemID", 70599 },	-- Vicious Gladiator's Mail Helm
+							{"select", "itemID", 70600 },	-- Vicious Gladiator's Mail Leggings
+							{"select", "itemID", 70601 },	-- Vicious Gladiator's Mail Spaulders
+							{"select", "itemID", 70632 },	-- Vicious Gladiator's Ringmail Armor
+							{"select", "itemID", 70633 },	-- Vicious Gladiator's Ringmail Gauntlets
+							{"select", "itemID", 70634 },	-- Vicious Gladiator's Ringmail Helm
+							{"select", "itemID", 70635 },	-- Vicious Gladiator's Ringmail Leggings
+							{"select", "itemID", 70636 },	-- Vicious Gladiator's Ringmail Spaulders
+							{"select", "itemID", 70511 },	-- Vicious Gladiator's Armbands of Meditation
+							{"select", "itemID", 70512 },	-- Vicious Gladiator's Armbands of Prowess
+							{"select", "itemID", 70665 },	-- Vicious Gladiator's Waistguard of Cruelty
+							{"select", "itemID", 70666 },	-- Vicious Gladiator's Waistguard of Meditation
+							{"select", "itemID", 70640 },	-- Vicious Gladiator's Sabatons of Alacrity
+							{"select", "itemID", 70642 },	-- Vicious Gladiator's Sabatons of Meditation
 							{"exclude", "itemID", 146431 },	-- Exclude itself to stop duplicating 
 						},
 					}),	
@@ -369,6 +478,14 @@ _.PVP =
 							{"select", "itemID", 64725 },	-- Bloodthirsty Gladiator's Cuffs of Prowess
 							{"select", "itemID", 64720 },	-- Bloodthirsty Gladiator's Cord of Accuracy
 							{"select", "itemID", 64862 },	-- Bloodthirsty Gladiator's Treads of Alacrity
+							{"select", "itemID", 70566 },	-- Vicious Gladiator's Felweave Amice
+							{"select", "itemID", 70567 },	-- Vicious Gladiator's Felweave Cowl
+							{"select", "itemID", 70568 },	-- Vicious Gladiator's Felweave Handguards
+							{"select", "itemID", 70569 },	-- Vicious Gladiator's Felweave Rainment
+							{"select", "itemID", 70570 },	-- Vicious Gladiator's Felweave Trousers
+							{"select", "itemID", 70549 },	-- Vicious Gladiator's Cuffs of Prowess
+							{"select", "itemID", 70544 },	-- Vicious Gladiator's Cord of Accuracy
+							{"select", "itemID", 70660 },	-- Vicious Gladiator's Treads of Alacrity
 							{"exclude", "itemID", 146425 },	-- Exclude itself to stop duplicating 
 						},
 					}),
@@ -396,6 +513,14 @@ _.PVP =
 							{"select", "itemID", 64683 },	-- Bloodthirsty Gladiator's Armplates of Alacrity
 							{"select", "itemID", 64754 },	-- Bloodthirsty Gladiator's Girdle of Prowess
 							{"select", "itemID", 64869 },	-- Bloodthirsty Gladiator's Warboots of Alacrity
+							{"select", "itemID", 70623 },	-- Vicious Gladiator's Plate Chestpiece
+							{"select", "itemID", 70624 },	-- Vicious Gladiator's Plate Gauntlets
+							{"select", "itemID", 70625 },	-- Vicious Gladiator's Plate Helm
+							{"select", "itemID", 70626 },	-- Vicious Gladiator's Plate Legguards
+							{"select", "itemID", 70627 },	-- Vicious Gladiator's Plate Shoulders
+							{"select", "itemID", 70513 },	-- Vicious Gladiator's Armplates of Alacrity
+							{"select", "itemID", 70574 },	-- Vicious Gladiator's Girdle of Prowess
+							{"select", "itemID", 70667 },	-- Vicious Gladiator's Warboots of Alacrity
 							{"exclude", "itemID", 146429 },	-- Exclude itself to stop duplicating 
 						},
 					}),
@@ -1381,210 +1506,213 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(69785)),	-- Vicious Gladiator's Symbol of Tenacity
 				}),
 			}),
-			n(-659, {	-- Aspirant (Season 10 version)
-				cl(DEATHKNIGHT, {
-					un(REMOVED_FROM_GAME, i(70558)),	-- Vicious Gladiator's Dreadplate Chestpiece
-					un(REMOVED_FROM_GAME, i(70559)),	-- Vicious Gladiator's Dreadplate Gauntlets
-					un(REMOVED_FROM_GAME, i(70560)),	-- Vicious Gladiator's Dreadplate Helm
-					un(REMOVED_FROM_GAME, i(70561)),	-- Vicious Gladiator's Dreadplate Legguards
-					un(REMOVED_FROM_GAME, i(70562)),	-- Vicious Gladiator's Dreadplate Shoulders
-				}),
-				cl(DRUID, {
-					un(REMOVED_FROM_GAME, i(70550)),	-- Vicious Gladiator's Dragonhide Gloves
-					un(REMOVED_FROM_GAME, i(70551)),	-- Vicious Gladiator's Dragonhide Helm
-					un(REMOVED_FROM_GAME, i(70552)),	-- Vicious Gladiator's Dragonhide Legguards
-					un(REMOVED_FROM_GAME, i(70553)),	-- Vicious Gladiator's Dragonhide Robes
-					un(REMOVED_FROM_GAME, i(70554)),	-- Vicious Gladiator's Dragonhide Spaulders
-					un(REMOVED_FROM_GAME, i(70580)),	-- Vicious Gladiator's Kodohide Gloves
-					un(REMOVED_FROM_GAME, i(70581)),	-- Vicious Gladiator's Kodohide Helm
-					un(REMOVED_FROM_GAME, i(70582)),	-- Vicious Gladiator's Kodohide Legguards
-					un(REMOVED_FROM_GAME, i(70583)),	-- Vicious Gladiator's Kodohide Robes
-					un(REMOVED_FROM_GAME, i(70584)),	-- Vicious Gladiator's Kodohide Spaulders
-					un(REMOVED_FROM_GAME, i(70671)),	-- Vicious Gladiator's Wyrmhide Gloves
-					un(REMOVED_FROM_GAME, i(70672)),	-- Vicious Gladiator's Wyrmhide Helm
-					un(REMOVED_FROM_GAME, i(70673)),	-- Vicious Gladiator's Wyrmhide Legguards
-					un(REMOVED_FROM_GAME, i(70674)),	-- Vicious Gladiator's Wyrmhide Robes
-					un(REMOVED_FROM_GAME, i(70675)),	-- Vicious Gladiator's Wyrmhide Spaulders
-				}),
-				cl(HUNTER, {
-					un(REMOVED_FROM_GAME, i(70533)),	-- Vicious Gladiator's Chain Armor
-					un(REMOVED_FROM_GAME, i(70534)),	-- Vicious Gladiator's Chain Gauntlets
-					un(REMOVED_FROM_GAME, i(70535)),	-- Vicious Gladiator's Chain Helm
-					un(REMOVED_FROM_GAME, i(70536)),	-- Vicious Gladiator's Chain Leggings
-					un(REMOVED_FROM_GAME, i(70537)),	-- Vicious Gladiator's Chain Spaulders
-				}),
-				cl(MAGE, {
-					un(REMOVED_FROM_GAME, i(70655)),	-- Vicious Gladiator's Silk Amice
-					un(REMOVED_FROM_GAME, i(70656)),	-- Vicious Gladiator's Silk Cowl
-					un(REMOVED_FROM_GAME, i(70657)),	-- Vicious Gladiator's Silk Handguards
-					un(REMOVED_FROM_GAME, i(70658)),	-- Vicious Gladiator's Silk Robe
-					un(REMOVED_FROM_GAME, i(70659)),	-- Vicious Gladiator's Silk Trousers
-				}),
-				cl(PALADIN, {
-					un(REMOVED_FROM_GAME, i(70615)),	-- Vicious Gladiator's Ornamented Chestguard
-					un(REMOVED_FROM_GAME, i(70616)),	-- Vicious Gladiator's Ornamented Gloves
-					un(REMOVED_FROM_GAME, i(70617)),	-- Vicious Gladiator's Ornamented Headcover
-					un(REMOVED_FROM_GAME, i(70618)),	-- Vicious Gladiator's Ornamented Legplates
-					un(REMOVED_FROM_GAME, i(70619)),	-- Vicious Gladiator's Ornamented Spaulders
-					un(REMOVED_FROM_GAME, i(70648)),	-- Vicious Gladiator's Scaled Chestpiece
-					un(REMOVED_FROM_GAME, i(70649)),	-- Vicious Gladiator's Scaled Gauntlets
-					un(REMOVED_FROM_GAME, i(70650)),	-- Vicious Gladiator's Scaled Helm
-					un(REMOVED_FROM_GAME, i(70651)),	-- Vicious Gladiator's Scaled Legguards
-					un(REMOVED_FROM_GAME, i(70652)),	-- Vicious Gladiator's Scaled Shoulders
-				}),
-				cl(PRIEST, {
-					un(REMOVED_FROM_GAME, i(70608)),	-- Vicious Gladiator's Mooncloth Gloves
-					un(REMOVED_FROM_GAME, i(70609)),	-- Vicious Gladiator's Mooncloth Helm
-					un(REMOVED_FROM_GAME, i(70610)),	-- Vicious Gladiator's Mooncloth Leggings
-					un(REMOVED_FROM_GAME, i(70611)),	-- Vicious Gladiator's mooncloth Mantle
-					un(REMOVED_FROM_GAME, i(70612)),	-- Vicious Gladiator's Mooncloth Robe
-					un(REMOVED_FROM_GAME, i(70643)),	-- Vicious Gladiator's Satin Gloves
-					un(REMOVED_FROM_GAME, i(70644)),	-- Vicious Gladiator's Satin Hood
-					un(REMOVED_FROM_GAME, i(70645)),	-- Vicious Gladiator's Satin Leggings
-					un(REMOVED_FROM_GAME, i(70646)),	-- Vicious Gladiator's Satin Mantle
-					un(REMOVED_FROM_GAME, i(70647)),	-- Vicious Gladiator's Satin Robe
-				}),
-				cl(ROGUE, {
-					un(REMOVED_FROM_GAME, i(70585)),	-- Vicious Gladiator's Leather Gloves
-					un(REMOVED_FROM_GAME, i(70586)),	-- Vicious Gladiator's Leather Helm
-					un(REMOVED_FROM_GAME, i(70587)),	-- Vicious Gladiator's Leather Legguards
-					un(REMOVED_FROM_GAME, i(70588)),	-- Vicious Gladiator's Leather Spaulders
-					un(REMOVED_FROM_GAME, i(70589)),	-- Vicious Gladiator's Leather Tunic
-				}),
-				cl(SHAMAN, {				
-					un(REMOVED_FROM_GAME, i(70590)),	-- Vicious Gladiator's Linked Armor
-					un(REMOVED_FROM_GAME, i(70591)),	-- Vicious Gladiator's Linked Gauntlets
-					un(REMOVED_FROM_GAME, i(70592)),	-- Vicious Gladiator's Linked Helm
-					un(REMOVED_FROM_GAME, i(70593)),	-- Vicious Gladiator's Linked Leggings
-					un(REMOVED_FROM_GAME, i(70594)),	-- Vicious Gladiator's Linked Spaulders
-					un(REMOVED_FROM_GAME, i(70597)),	-- Vicious Gladiator's Mail Armor
-					un(REMOVED_FROM_GAME, i(70598)),	-- Vicious Gladiator's Mail Gauntlets
-					un(REMOVED_FROM_GAME, i(70599)),	-- Vicious Gladiator's Mail Helm
-					un(REMOVED_FROM_GAME, i(70600)),	-- Vicious Gladiator's Mail Leggings
-					un(REMOVED_FROM_GAME, i(70601)),	-- Vicious Gladiator's Mail Spaulders
-					un(REMOVED_FROM_GAME, i(70632)),	-- Vicious Gladiator's Ringmail Armor
-					un(REMOVED_FROM_GAME, i(70633)),	-- Vicious Gladiator's Ringmail Gauntlets
-					un(REMOVED_FROM_GAME, i(70634)),	-- Vicious Gladiator's Ringmail Helm
-					un(REMOVED_FROM_GAME, i(70635)),	-- Vicious Gladiator's Ringmail Leggings
-					un(REMOVED_FROM_GAME, i(70636)),	-- Vicious Gladiator's Ringmail Spaulders
-				}),
-				cl(WARLOCK, {
-					un(REMOVED_FROM_GAME, i(70566)),	-- Vicious Gladiator's Felweave Amice
-					un(REMOVED_FROM_GAME, i(70567)),	-- Vicious Gladiator's Felweave Cowl
-					un(REMOVED_FROM_GAME, i(70568)),	-- Vicious Gladiator's Felweave Handguards
-					un(REMOVED_FROM_GAME, i(70569)),	-- Vicious Gladiator's Felweave Rainment
-					un(REMOVED_FROM_GAME, i(70570)),	-- Vicious Gladiator's Felweave Trousers
-				}),
-				cl(WARRIOR, {
-					un(REMOVED_FROM_GAME, i(70623)),	-- Vicious Gladiator's Plate Chestpiece
-					un(REMOVED_FROM_GAME, i(70624)),	-- Vicious Gladiator's Plate Gauntlets
-					un(REMOVED_FROM_GAME, i(70625)),	-- Vicious Gladiator's Plate Helm
-					un(REMOVED_FROM_GAME, i(70626)),	-- Vicious Gladiator's Plate Legguards
-					un(REMOVED_FROM_GAME, i(70627)),	-- Vicious Gladiator's Plate Shoulders
-				}),
-				n(-322, {	-- Back
-					un(REMOVED_FROM_GAME, i(70531)),	-- Vicious Gladiator's Cape of Cruelty
-					un(REMOVED_FROM_GAME, i(70532)),	-- Vicious Gladiator's Cape of Prowess
-					un(REMOVED_FROM_GAME, i(70542)),	-- Vicious Gladiator's Cloak of Alacrity
-					un(REMOVED_FROM_GAME, i(70543)),	-- Vicious Gladiator's Cloak of Prowess
-					un(REMOVED_FROM_GAME, i(70555)),	-- Vicious Gladiator's Drape of Diffusion
-					un(REMOVED_FROM_GAME, i(70556)),	-- Vicious Gladiator's Drape of Meditation
-					un(REMOVED_FROM_GAME, i(70557)),	-- Vicious Gladiator's Drape of Prowess
-				
-				}),
-				n(-326, {	-- Wrists
-					un(REMOVED_FROM_GAME, i(70511)),	-- Vicious Gladiator's Armbands of Meditation
-					un(REMOVED_FROM_GAME, i(70512)),	-- Vicious Gladiator's Armbands of Prowess
-					un(REMOVED_FROM_GAME, i(70513)),	-- Vicious Gladiator's Armplates of Alacrity
-					un(REMOVED_FROM_GAME, i(70514)),	-- Vicious Gladiator's Armplates of Proficiency
-					un(REMOVED_FROM_GAME, i(70515)),	-- Vicious Gladiator's Armwraps of Accuracy
-					un(REMOVED_FROM_GAME, i(70516)),	-- Vicious Gladiator's Armwraps of Alacrity
-					un(REMOVED_FROM_GAME, i(70525)),	-- Vicious Gladiator's Bindings of Meditation
-					un(REMOVED_FROM_GAME, i(70526)),	-- Vicious Gladiator's Bindings of Prowess
-					un(REMOVED_FROM_GAME, i(70529)),	-- Vicious Gladiator's Bracers of Meditation
-					un(REMOVED_FROM_GAME, i(70530)),	-- Vicious Gladiator's Bracers of Prowess
-					un(REMOVED_FROM_GAME, i(70547)),	-- Vicious Gladiator's Cuffs of Accuracy
-					un(REMOVED_FROM_GAME, i(70548)),	-- Vicious Gladiator's Cuffs of Meditation
-					un(REMOVED_FROM_GAME, i(70549)),	-- Vicious Gladiator's Cuffs of Prowess
-					un(REMOVED_FROM_GAME, i(70669)),	-- Vicious Gladiator's Wristguards of Accuracy
-					un(REMOVED_FROM_GAME, i(70670)),	-- Vicious Gladiator's Wristguards of Alacrity
-				}),
-				n(-328, {	-- Waist
-					un(REMOVED_FROM_GAME, i(70523)),	-- Vicious Gladiator's Belt of Cruelty
-					un(REMOVED_FROM_GAME, i(70524)),	-- Vicious Gladiator's Belt of Meditation
-					un(REMOVED_FROM_GAME, i(70540)),	-- Vicious Gladiator's Clasp of Cruelty
-					un(REMOVED_FROM_GAME, i(70541)),	-- Vicious Gladiator's Clasp of Meditation
-					un(REMOVED_FROM_GAME, i(70544)),	-- Vicious Gladiator's Cord of Accuracy
-					un(REMOVED_FROM_GAME, i(70545)),	-- Vicious Gladiator's Cord of Cruelty
-					un(REMOVED_FROM_GAME, i(70546)),	-- Vicious Gladiator's Cord of Meditation
-					un(REMOVED_FROM_GAME, i(70573)),	-- Vicious Gladiator's Girdle of Cruelty
-					un(REMOVED_FROM_GAME, i(70574)),	-- Vicious Gladiator's Girdle of Prowess
-					un(REMOVED_FROM_GAME, i(70595)),	-- Vicious Gladiator's Links of Accuracy
-					un(REMOVED_FROM_GAME, i(70596)),	-- Vicious Gladiator's Links of Cruelty
-					un(REMOVED_FROM_GAME, i(70663)),	-- Vicious Gladiator's Waistband of Accuracy
-					un(REMOVED_FROM_GAME, i(70664)),	-- Vicious Gladiator's Waistband of Cruelty
-					un(REMOVED_FROM_GAME, i(70665)),	-- Vicious Gladiator's Waistguard of Cruelty
-					un(REMOVED_FROM_GAME, i(70666)),	-- Vicious Gladiator's Waistguard of Meditation
-				}),
-				n(-330, {	-- Feet
-					un(REMOVED_FROM_GAME, i(70527)),	-- Vicious Gladiator's Boots of Alacrity
-					un(REMOVED_FROM_GAME, i(70528)),	-- Vicious Gladiator's Boots of Cruelty
-					un(REMOVED_FROM_GAME, i(70571)),	-- Vicious Gladiator's Footguards of Alacrity
-					un(REMOVED_FROM_GAME, i(70572)),	-- Vicious Gladiator's Footguards of Meditation
-					un(REMOVED_FROM_GAME, i(70575)),	-- Vicious Gladiator's Greaves of Alacrity
-					un(REMOVED_FROM_GAME, i(70576)),	-- Vicious Gladiator's Greaves of Meditation
-					un(REMOVED_FROM_GAME, i(70639)),	-- Vicious Gladiator's Sabatons of Alacrity
-					un(REMOVED_FROM_GAME, i(70640)),	-- Vicious Gladiator's Sabatons of Alacrity
-					un(REMOVED_FROM_GAME, i(70641)),	-- Vicious Gladiator's Sabatons of Cruelty
-					un(REMOVED_FROM_GAME, i(70642)),	-- Vicious Gladiator's Sabatons of Meditation
-					un(REMOVED_FROM_GAME, i(70660)),	-- Vicious Gladiator's Treads of Alacrity
-					un(REMOVED_FROM_GAME, i(70661)),	-- Vicious Gladiator's Treads of Cruelty
-					un(REMOVED_FROM_GAME, i(70662)),	-- Vicious Gladiator's Treads of Meditation
-					un(REMOVED_FROM_GAME, i(70667)),	-- Vicious Gladiator's Warboots of Alacrity
-					un(REMOVED_FROM_GAME, i(70668)),	-- Vicious Gladiator's Warboots of Cruelty
-				}),	
-				f(51,	{	-- Neck
-					un(REMOVED_FROM_GAME, i(70538)),	-- Vicious Gladiator's Choker of Accuracy
-					un(REMOVED_FROM_GAME, i(70539)),	-- Vicious Gladiator's Choker of Proficiency
-					un(REMOVED_FROM_GAME, i(70613)),	-- Vicious Gladiator's Necklace of Proficiency
-					un(REMOVED_FROM_GAME, i(70614)),	-- Vicious Gladiator's Necklace of Prowess
-					un(REMOVED_FROM_GAME, i(70620)),	-- Vicious Gladiator's Pendant of Alacrity
-					un(REMOVED_FROM_GAME, i(70621)),	-- Vicious Gladiator's Pendant of Diffusion
-					un(REMOVED_FROM_GAME, i(70622)),	-- Vicious Gladiator's Pendant of Meditation
-				}),
-				f(52,	{	-- Finger
-					un(REMOVED_FROM_GAME, i(70520)),	-- Vicious Gladiator's Band of Accuracy
-					un(REMOVED_FROM_GAME, i(70521)),	-- Vicious Gladiator's Band of Cruelty
-					un(REMOVED_FROM_GAME, i(70522)),	-- Vicious Gladiator's Band of Meditation
-					un(REMOVED_FROM_GAME, i(70637)),	-- Vicious Gladiator's Ring of Accuracy
-					un(REMOVED_FROM_GAME, i(70638)),	-- Vicious Gladiator's Ring of Cruelty
-					un(REMOVED_FROM_GAME, i(70653)),	-- Vicious Gladiator's Signet of Accuracy
-					un(REMOVED_FROM_GAME, i(70654)), 	-- Vicious Gladiator's Signet of Cruelty
-				}),	
-				n(-331, {	-- Held In Offhand
-					un(REMOVED_FROM_GAME, i(70628)), 	-- Vicious Gladiator's Relic of Conquest
-					un(REMOVED_FROM_GAME, i(70629)),	-- Vicious Gladiator's Relic of Dominance
-					un(REMOVED_FROM_GAME, i(70630)),	-- Vicious Gladiator's Relic of Salvation
-					un(REMOVED_FROM_GAME, i(70631)),	-- Vicious Gladiator's Relic of Triumph
-				}),
-				f(53,	{	-- Trinket
-					un(REMOVED_FROM_GAME, i(70517)),	-- Vicious Gladiator's Badge of Conquest
-					un(REMOVED_FROM_GAME, i(70518)),	-- Vicious Gladiator's Badge of Dominance
-					un(REMOVED_FROM_GAME, i(70519)),	-- Vicious Gladiator's Badge of Victory
-					un(REMOVED_FROM_GAME, i(70563)),	-- Vicious Gladiator's Emblem of Cruelty
-					un(REMOVED_FROM_GAME, i(70564)),	-- Vicious Gladiator's Emblem of Meditation
-					un(REMOVED_FROM_GAME, i(70565)),	-- Vicious Gladiator's Emblem of Tenacity
-					un(REMOVED_FROM_GAME, i(70577)),	-- Vicious Gladiator's Insignia of Conquest
-					un(REMOVED_FROM_GAME, i(70578)),	-- Vicious Gladiator's Insignia of Dominance
-					un(REMOVED_FROM_GAME, i(70579)),	-- Vicious Gladiator's Insignia of Victory
-					un(REMOVED_FROM_GAME, i(70603)),	-- Vicious Gladiator's Medallion of Cruelty (A)
-					un(REMOVED_FROM_GAME, i(70604)),	-- Vicious Gladiator's Medallion of Meditation (A)
-					un(REMOVED_FROM_GAME, i(70606)),	-- Vicious Gladiator's Medallion of Tenacity (A)
-					un(REMOVED_FROM_GAME, i(70602)),	-- Vicious Gladiator's Medallion of Cruelty (H)
-					un(REMOVED_FROM_GAME, i(70605)),	-- Vicious Gladiator's Medallion of Meditation (H)
-					un(REMOVED_FROM_GAME, i(70607)),	-- Vicious Gladiator's Medallion of Tenacity (H)
-				}),
-			}),
+			n(-655, {	-- Ensemble Gear (Season 10 version)
+				["description"] = "These items are available from Bloodthirsty Gladiator(Vicious Gladiator Season 9:Honor Gear) class ensembles only",
+				["g"]={
+					cl(DEATHKNIGHT, {
+						i(70558),	-- Vicious Gladiator's Dreadplate Chestpiece
+						i(70559),	-- Vicious Gladiator's Dreadplate Gauntlets
+						i(70560),	-- Vicious Gladiator's Dreadplate Helm
+						i(70561),	-- Vicious Gladiator's Dreadplate Legguards
+						i(70562),	-- Vicious Gladiator's Dreadplate Shoulders
+					}),
+					cl(DRUID, {
+						i(70550),	-- Vicious Gladiator's Dragonhide Gloves
+						i(70551),	-- Vicious Gladiator's Dragonhide Helm
+						i(70552),	-- Vicious Gladiator's Dragonhide Legguards
+						i(70553),	-- Vicious Gladiator's Dragonhide Robes
+						i(70554),	-- Vicious Gladiator's Dragonhide Spaulders
+						i(70580),	-- Vicious Gladiator's Kodohide Gloves
+						i(70581),	-- Vicious Gladiator's Kodohide Helm
+						i(70582),	-- Vicious Gladiator's Kodohide Legguards
+						i(70583),	-- Vicious Gladiator's Kodohide Robes
+						i(70584),	-- Vicious Gladiator's Kodohide Spaulders
+						i(70671),	-- Vicious Gladiator's Wyrmhide Gloves
+						i(70672),	-- Vicious Gladiator's Wyrmhide Helm
+						i(70673),	-- Vicious Gladiator's Wyrmhide Legguards
+						i(70674),	-- Vicious Gladiator's Wyrmhide Robes
+						i(70675),	-- Vicious Gladiator's Wyrmhide Spaulders
+					}),
+					cl(HUNTER, {
+						i(70533),	-- Vicious Gladiator's Chain Armor
+						i(70534),	-- Vicious Gladiator's Chain Gauntlets
+						i(70535),	-- Vicious Gladiator's Chain Helm
+						i(70536),	-- Vicious Gladiator's Chain Leggings
+						i(70537),	-- Vicious Gladiator's Chain Spaulders
+					}),
+					cl(MAGE, {
+						i(70655),	-- Vicious Gladiator's Silk Amice
+						i(70656),	-- Vicious Gladiator's Silk Cowl
+						i(70657),	-- Vicious Gladiator's Silk Handguards
+						i(70658),	-- Vicious Gladiator's Silk Robe
+						i(70659),	-- Vicious Gladiator's Silk Trousers
+					}),
+					cl(PALADIN, {
+						i(70615),	-- Vicious Gladiator's Ornamented Chestguard
+						i(70616),	-- Vicious Gladiator's Ornamented Gloves
+						i(70617),	-- Vicious Gladiator's Ornamented Headcover
+						i(70618),	-- Vicious Gladiator's Ornamented Legplates
+						i(70619),	-- Vicious Gladiator's Ornamented Spaulders
+						i(70648),	-- Vicious Gladiator's Scaled Chestpiece
+						i(70649),	-- Vicious Gladiator's Scaled Gauntlets
+						i(70650),	-- Vicious Gladiator's Scaled Helm
+						i(70651),	-- Vicious Gladiator's Scaled Legguards
+						i(70652),	-- Vicious Gladiator's Scaled Shoulders
+					}),
+					cl(PRIEST, {
+						i(70608),	-- Vicious Gladiator's Mooncloth Gloves
+						i(70609),	-- Vicious Gladiator's Mooncloth Helm
+						i(70610),	-- Vicious Gladiator's Mooncloth Leggings
+						i(70611),	-- Vicious Gladiator's mooncloth Mantle
+						i(70612),	-- Vicious Gladiator's Mooncloth Robe
+						i(70643),	-- Vicious Gladiator's Satin Gloves
+						i(70644),	-- Vicious Gladiator's Satin Hood
+						i(70645),	-- Vicious Gladiator's Satin Leggings
+						i(70646),	-- Vicious Gladiator's Satin Mantle
+						i(70647),	-- Vicious Gladiator's Satin Robe
+					}),
+					cl(ROGUE, {
+						i(70585),	-- Vicious Gladiator's Leather Gloves
+						i(70586),	-- Vicious Gladiator's Leather Helm
+						i(70587),	-- Vicious Gladiator's Leather Legguards
+						i(70588),	-- Vicious Gladiator's Leather Spaulders
+						i(70589),	-- Vicious Gladiator's Leather Tunic
+					}),
+					cl(SHAMAN, {				
+						i(70590),	-- Vicious Gladiator's Linked Armor
+						i(70591),	-- Vicious Gladiator's Linked Gauntlets
+						i(70592),	-- Vicious Gladiator's Linked Helm
+						i(70593),	-- Vicious Gladiator's Linked Leggings
+						i(70594),	-- Vicious Gladiator's Linked Spaulders
+						i(70597),	-- Vicious Gladiator's Mail Armor
+						i(70598),	-- Vicious Gladiator's Mail Gauntlets
+						i(70599),	-- Vicious Gladiator's Mail Helm
+						i(70600),	-- Vicious Gladiator's Mail Leggings
+						i(70601),	-- Vicious Gladiator's Mail Spaulders
+						i(70632),	-- Vicious Gladiator's Ringmail Armor
+						i(70633),	-- Vicious Gladiator's Ringmail Gauntlets
+						i(70634),	-- Vicious Gladiator's Ringmail Helm
+						i(70635),	-- Vicious Gladiator's Ringmail Leggings
+						i(70636),	-- Vicious Gladiator's Ringmail Spaulders
+					}),
+					cl(WARLOCK, {
+						i(70566),	-- Vicious Gladiator's Felweave Amice
+						i(70567),	-- Vicious Gladiator's Felweave Cowl
+						i(70568),	-- Vicious Gladiator's Felweave Handguards
+						i(70569),	-- Vicious Gladiator's Felweave Rainment
+						i(70570),	-- Vicious Gladiator's Felweave Trousers
+					}),
+					cl(WARRIOR, {
+						i(70623),	-- Vicious Gladiator's Plate Chestpiece
+						i(70624),	-- Vicious Gladiator's Plate Gauntlets
+						i(70625),	-- Vicious Gladiator's Plate Helm
+						i(70626),	-- Vicious Gladiator's Plate Legguards
+						i(70627),	-- Vicious Gladiator's Plate Shoulders
+					}),
+					n(-322, {	-- Back
+						un(REMOVED_FROM_GAME, i(70531)),	-- Vicious Gladiator's Cape of Cruelty
+						un(REMOVED_FROM_GAME, i(70532)),	-- Vicious Gladiator's Cape of Prowess
+						un(REMOVED_FROM_GAME, i(70542)),	-- Vicious Gladiator's Cloak of Alacrity
+						un(REMOVED_FROM_GAME, i(70543)),	-- Vicious Gladiator's Cloak of Prowess
+						un(REMOVED_FROM_GAME, i(70555)),	-- Vicious Gladiator's Drape of Diffusion
+						un(REMOVED_FROM_GAME, i(70556)),	-- Vicious Gladiator's Drape of Meditation
+						un(REMOVED_FROM_GAME, i(70557)),	-- Vicious Gladiator's Drape of Prowess
+					
+					}),
+					n(-326, {	-- Wrists
+						i(70511),	-- Vicious Gladiator's Armbands of Meditation
+						i(70512),	-- Vicious Gladiator's Armbands of Prowess
+						i(70513),	-- Vicious Gladiator's Armplates of Alacrity
+						i(70514),	-- Vicious Gladiator's Armplates of Proficiency
+						i(70515),	-- Vicious Gladiator's Armwraps of Accuracy
+						i(70516),	-- Vicious Gladiator's Armwraps of Alacrity
+						i(70525),	-- Vicious Gladiator's Bindings of Meditation
+						i(70526),	-- Vicious Gladiator's Bindings of Prowess
+						i(70529),	-- Vicious Gladiator's Bracers of Meditation
+						i(70530),	-- Vicious Gladiator's Bracers of Prowess
+						i(70547),	-- Vicious Gladiator's Cuffs of Accuracy
+						i(70548),	-- Vicious Gladiator's Cuffs of Meditation
+						i(70549),	-- Vicious Gladiator's Cuffs of Prowess
+						i(70669),	-- Vicious Gladiator's Wristguards of Accuracy
+						i(70670),	-- Vicious Gladiator's Wristguards of Alacrity
+					}),
+					n(-328, {	-- Waist
+						i(70523),	-- Vicious Gladiator's Belt of Cruelty
+						i(70524),	-- Vicious Gladiator's Belt of Meditation
+						i(70540),	-- Vicious Gladiator's Clasp of Cruelty
+						i(70541),	-- Vicious Gladiator's Clasp of Meditation
+						i(70544),	-- Vicious Gladiator's Cord of Accuracy
+						i(70545),	-- Vicious Gladiator's Cord of Cruelty
+						i(70546),	-- Vicious Gladiator's Cord of Meditation
+						i(70573),	-- Vicious Gladiator's Girdle of Cruelty
+						i(70574),	-- Vicious Gladiator's Girdle of Prowess
+						i(70595),	-- Vicious Gladiator's Links of Accuracy
+						i(70596),	-- Vicious Gladiator's Links of Cruelty
+						i(70663),	-- Vicious Gladiator's Waistband of Accuracy
+						i(70664),	-- Vicious Gladiator's Waistband of Cruelty
+						i(70665),	-- Vicious Gladiator's Waistguard of Cruelty
+						i(70666),	-- Vicious Gladiator's Waistguard of Meditation
+					}),
+					n(-330, {	-- Feet
+						i(70527),	-- Vicious Gladiator's Boots of Alacrity
+						i(70528),	-- Vicious Gladiator's Boots of Cruelty
+						i(70571),	-- Vicious Gladiator's Footguards of Alacrity
+						i(70572),	-- Vicious Gladiator's Footguards of Meditation
+						i(70575),	-- Vicious Gladiator's Greaves of Alacrity
+						i(70576),	-- Vicious Gladiator's Greaves of Meditation
+						i(70639),	-- Vicious Gladiator's Sabatons of Alacrity
+						i(70640),	-- Vicious Gladiator's Sabatons of Alacrity
+						i(70641),	-- Vicious Gladiator's Sabatons of Cruelty
+						i(70642),	-- Vicious Gladiator's Sabatons of Meditation
+						i(70660),	-- Vicious Gladiator's Treads of Alacrity
+						i(70661),	-- Vicious Gladiator's Treads of Cruelty
+						i(70662),	-- Vicious Gladiator's Treads of Meditation
+						i(70667),	-- Vicious Gladiator's Warboots of Alacrity
+						i(70668),	-- Vicious Gladiator's Warboots of Cruelty
+					}),	
+					f(51,	{	-- Neck
+						un(REMOVED_FROM_GAME, i(70538)),	-- Vicious Gladiator's Choker of Accuracy
+						un(REMOVED_FROM_GAME, i(70539)),	-- Vicious Gladiator's Choker of Proficiency
+						un(REMOVED_FROM_GAME, i(70613)),	-- Vicious Gladiator's Necklace of Proficiency
+						un(REMOVED_FROM_GAME, i(70614)),	-- Vicious Gladiator's Necklace of Prowess
+						un(REMOVED_FROM_GAME, i(70620)),	-- Vicious Gladiator's Pendant of Alacrity
+						un(REMOVED_FROM_GAME, i(70621)),	-- Vicious Gladiator's Pendant of Diffusion
+						un(REMOVED_FROM_GAME, i(70622)),	-- Vicious Gladiator's Pendant of Meditation
+					}),
+					f(52,	{	-- Finger
+						un(REMOVED_FROM_GAME, i(70520)),	-- Vicious Gladiator's Band of Accuracy
+						un(REMOVED_FROM_GAME, i(70521)),	-- Vicious Gladiator's Band of Cruelty
+						un(REMOVED_FROM_GAME, i(70522)),	-- Vicious Gladiator's Band of Meditation
+						un(REMOVED_FROM_GAME, i(70637)),	-- Vicious Gladiator's Ring of Accuracy
+						un(REMOVED_FROM_GAME, i(70638)),	-- Vicious Gladiator's Ring of Cruelty
+						un(REMOVED_FROM_GAME, i(70653)),	-- Vicious Gladiator's Signet of Accuracy
+						un(REMOVED_FROM_GAME, i(70654)), 	-- Vicious Gladiator's Signet of Cruelty
+					}),	
+					n(-331, {	-- Held In Offhand
+						un(REMOVED_FROM_GAME, i(70628)), 	-- Vicious Gladiator's Relic of Conquest
+						un(REMOVED_FROM_GAME, i(70629)),	-- Vicious Gladiator's Relic of Dominance
+						un(REMOVED_FROM_GAME, i(70630)),	-- Vicious Gladiator's Relic of Salvation
+						un(REMOVED_FROM_GAME, i(70631)),	-- Vicious Gladiator's Relic of Triumph
+					}),
+					f(53,	{	-- Trinket
+						un(REMOVED_FROM_GAME, i(70517)),	-- Vicious Gladiator's Badge of Conquest
+						un(REMOVED_FROM_GAME, i(70518)),	-- Vicious Gladiator's Badge of Dominance
+						un(REMOVED_FROM_GAME, i(70519)),	-- Vicious Gladiator's Badge of Victory
+						un(REMOVED_FROM_GAME, i(70563)),	-- Vicious Gladiator's Emblem of Cruelty
+						un(REMOVED_FROM_GAME, i(70564)),	-- Vicious Gladiator's Emblem of Meditation
+						un(REMOVED_FROM_GAME, i(70565)),	-- Vicious Gladiator's Emblem of Tenacity
+						un(REMOVED_FROM_GAME, i(70577)),	-- Vicious Gladiator's Insignia of Conquest
+						un(REMOVED_FROM_GAME, i(70578)),	-- Vicious Gladiator's Insignia of Dominance
+						un(REMOVED_FROM_GAME, i(70579)),	-- Vicious Gladiator's Insignia of Victory
+						un(REMOVED_FROM_GAME, i(70603)),	-- Vicious Gladiator's Medallion of Cruelty (A)
+						un(REMOVED_FROM_GAME, i(70604)),	-- Vicious Gladiator's Medallion of Meditation (A)
+						un(REMOVED_FROM_GAME, i(70606)),	-- Vicious Gladiator's Medallion of Tenacity (A)
+						un(REMOVED_FROM_GAME, i(70602)),	-- Vicious Gladiator's Medallion of Cruelty (H)
+						un(REMOVED_FROM_GAME, i(70605)),	-- Vicious Gladiator's Medallion of Meditation (H)
+						un(REMOVED_FROM_GAME, i(70607)),	-- Vicious Gladiator's Medallion of Tenacity (H)
+					}),
+				},
+			}),	
 			n(-662, {	-- Elite PvP Gear
 				n(-319, {	-- Weapons
 					un(REMOVED_FROM_GAME, i(67476)),	-- Vicious Gladiator's Barrier
@@ -1854,6 +1982,14 @@ _.PVP =
 							{"select", "itemID", 70327 },	-- Ruthless Gladiator's Armplates of Proficiency
 							{"select", "itemID", 70320 },	-- Ruthless Gladiator's Girdle of Cruelty
 							{"select", "itemID", 70321 },	-- Ruthless Gladiator's Warboots of Cruelty
+							{"select", "itemID", 72332 },	-- Ruthless Gladiator's Dreadplate Chestpiece
+							{"select", "itemID", 72333 },	-- Ruthless Gladiator's Dreadplate Gauntlets
+							{"select", "itemID", 72334 },	-- Ruthless Gladiator's Dreadplate Helm
+							{"select", "itemID", 72335 },	-- Ruthless Gladiator's Dreadplate Legguards
+							{"select", "itemID", 72336 },	-- Ruthless Gladiator's Dreadplate Shoulders
+							{"select", "itemID", 72398 },	-- Ruthless Gladiator's Armplates of Proficiency
+							{"select", "itemID", 72394 },	-- Ruthless Gladiator's Girdle of Accuracy/Cruelty
+							{"select", "itemID", 72396 },	-- Ruthless Gladiator's Warboots of Cruelty
 							{"exclude", "itemID", 146503 },	-- Exclude itself to stop duplicating 
 						},
 					}),
@@ -1884,6 +2020,27 @@ _.PVP =
 							{"select", "itemID", 70343 },	-- Ruthless Gladiator's Belt of Meditation
 							{"select", "itemID", 70358 },	-- Ruthless Gladiator's Footguards of Alacrity
 							{"select", "itemID", 70344 },	-- Ruthless Gladiator's Footguards of Meditation
+							{"select", "itemID", 72337 },	-- Ruthless Gladiator's Dragonhide Gloves
+							{"select", "itemID", 72338 },	-- Ruthless Gladiator's Dragonhide Helm
+							{"select", "itemID", 72339 },	-- Ruthless Gladiator's Dragonhide Legguards
+							{"select", "itemID", 72340 },	-- Ruthless Gladiator's Dragonhide Robes
+							{"select", "itemID", 72341 },	-- Ruthless Gladiator's Dragonhide Spaulders
+							{"select", "itemID", 72345 },	-- Ruthless Gladiator's Kodohide Gloves
+							{"select", "itemID", 72346 },	-- Ruthless Gladiator's Kodohide Helm
+							{"select", "itemID", 72347 },	-- Ruthless Gladiator's Kodohide Legguards
+							{"select", "itemID", 72348 },	-- Ruthless Gladiator's Kodohide Robes
+							{"select", "itemID", 72349 },	-- Ruthless Gladiator's Kodohide Spaulders
+							{"select", "itemID", 72353 },	-- Ruthless Gladiator's Wyrmhide Gloves
+							{"select", "itemID", 72354 },	-- Ruthless Gladiator's Wyrmhide Helm
+							{"select", "itemID", 72355 },	-- Ruthless Gladiator's Wyrmhide Legguards
+							{"select", "itemID", 72356 },	-- Ruthless Gladiator's Wyrmhide Robes
+							{"select", "itemID", 72357 },	-- Ruthless Gladiator's Wyrmhide Spaulders
+							{"select", "itemID", 72344 },	-- Ruthless Gladiator's Bindings of Meditation
+							{"select", "itemID", 72352 },	-- Ruthless Gladiator's Bindings of Prowess
+							{"select", "itemID", 72350 },	-- Ruthless Gladiator's Belt of Cruelty
+							{"select", "itemID", 72342 },	-- Ruthless Gladiator's Belt of Meditation
+							{"select", "itemID", 72351 },	-- Ruthless Gladiator's Footguards of Alacrity
+							{"select", "itemID", 72343 },	-- Ruthless Gladiator's Footguards of Meditation
 							{"exclude", "itemID", 146501 },	-- Exclude itself to stop duplicating 
 						},
 					}),
@@ -1944,6 +2101,17 @@ _.PVP =
 							{"select", "itemID", 70336 },	-- Ruthless Gladiator's Links of Cruelty
 							{"select", "itemID", 70337 },	-- Ruthless Gladiator's Sabatons of Alacrity
 							{"select", "itemID", 70335 },	-- Ruthless Gladiator's Sabatons of Cruelty
+							{"select", "itemID", 72368 },	-- Ruthless Gladiator's Chain Armor
+							{"select", "itemID", 72369 },	-- Ruthless Gladiator's Chain Gauntlets
+							{"select", "itemID", 72370 },	-- Ruthless Gladiator's Chain Helm
+							{"select", "itemID", 72371 },	-- Ruthless Gladiator's Chain Legs
+							{"select", "itemID", 72372 },	-- Ruthless Gladiator's Chain Spaulders
+							{"select", "itemID", 72367 },	-- Ruthless Gladiator's Wristguards of Accuracy
+							{"select", "itemID", 72366 },	-- Ruthless Gladiator's Wristguards of Alacrity
+							{"select", "itemID", 72363 },	-- Ruthless Gladiator's Links of Accuracy
+							{"select", "itemID", 72362 },	-- Ruthless Gladiator's Links of Cruelty
+							{"select", "itemID", 72365 },	-- Ruthless Gladiator's Sabatons of Alacrity
+							{"select", "itemID", 72364 },	-- Ruthless Gladiator's Sabatons of Cruelty
 							{"exclude", "itemID", 146499 },	-- Exclude itself to stop duplicating 
 						},
 					}),
@@ -1971,6 +2139,14 @@ _.PVP =
 							{"select", "itemID", 70365 },	-- Ruthless Gladiator's Cuffs of Prowess
 							{"select", "itemID", 70360 },	-- Ruthless Gladiator's Cord of Cruelty
 							{"select", "itemID", 70361 },	-- Ruthless Gladiator's Treads of Cruelty
+							{"select", "itemID", 72377 },	-- Ruthless Gladiator's Silk Amice
+							{"select", "itemID", 72374 },	-- Ruthless Gladiator's Silk Cowl
+							{"select", "itemID", 72373 },	-- Ruthless Gladiator's Silk Handguards
+							{"select", "itemID", 72376 },	-- Ruthless Gladiator's Silk Robe
+							{"select", "itemID", 72375 },	-- Ruthless Gladiator's Silk Trousers
+							{"select", "itemID", 72320 },	-- Ruthless Gladiator's Cuffs of Prowess
+							{"select", "itemID", 72313 },	-- Ruthless Gladiator's Cord of Cruelty
+							{"select", "itemID", 72316 },	-- Ruthless Gladiator's Treads of Cruelty
 							{"exclude", "itemID", 146517 },	-- Exclude itself to stop duplicating 
 						},
 					}),
@@ -2002,6 +2178,22 @@ _.PVP =
 							{"select", "itemID", 70332 },	-- Ruthless Gladiator's Clasp of Meditation
 							{"select", "itemID", 70324 },	-- Ruthless Gladiator's Greaves of Alacrity
 							{"select", "itemID", 70333 },	-- Ruthless Gladiator's Greaves of Meditation
+							{"select", "itemID", 72389 },	-- Ruthless Gladiator's Ornamented Chestguard
+							{"select", "itemID", 72390 },	-- Ruthless Gladiator's Ornamented Gloves
+							{"select", "itemID", 72391 },	-- Ruthless Gladiator's Ornamented Headcover
+							{"select", "itemID", 72392 },	-- Ruthless Gladiator's Ornamented Legplates
+							{"select", "itemID", 72393 },	-- Ruthless Gladiator's Ornamented Spaulders
+							{"select", "itemID", 72378 },	-- Ruthless Gladiator's Scaled Chestpiece
+							{"select", "itemID", 72379 },	-- Ruthless Gladiator's Scaled Gauntlets
+							{"select", "itemID", 72380 },	-- Ruthless Gladiator's Scaled Helm
+							{"select", "itemID", 72381 },	-- Ruthless Gladiator's Scaled Legguards
+							{"select", "itemID", 72382 },	-- Ruthless Gladiator's Scaled Shoulders
+							{"select", "itemID", 72388 },	-- Ruthless Gladiator's Bracers of Meditation
+							{"select", "itemID", 72387 },	-- Ruthless Gladiator's Bracers of Prowess
+							{"select", "itemID", 72383 },	-- Ruthless Gladiator's Clasp of Cruelty
+							{"select", "itemID", 72384 },	-- Ruthless Gladiator's Clasp of Meditation
+							{"select", "itemID", 72385 },	-- Ruthless Gladiator's Greaves of Alacrity
+							{"select", "itemID", 72386 },	-- Ruthless Gladiator's Greaves of Meditation
 							{"exclude", "itemID", 146515 },	-- Exclude itself to stop duplicating 
 						},
 					}),
@@ -2044,6 +2236,19 @@ _.PVP =
 							{"select", "itemID", 70366 },	-- Ruthless Gladiator's Cuffs of Meditation
 							{"select", "itemID", 70368 },	-- Ruthless Gladiator's Cord of Meditation
 							{"select", "itemID", 70367 },	-- Ruthless Gladiator's Treads of Meditation
+							{"select", "itemID", 72400 },	-- Ruthless Gladiator's Mooncloth Gloves
+							{"select", "itemID", 72401 },	-- Ruthless Gladiator's Mooncloth Helm
+							{"select", "itemID", 72402 },	-- Ruthless Gladiator's Mooncloth Leggings
+							{"select", "itemID", 72404 },	-- Ruthless Gladiator's Mooncloth Mantle
+							{"select", "itemID", 72403 },	-- Ruthless Gladiator's Mooncloth Robe
+							{"select", "itemID", 72405 },	-- Ruthless Gladiator's Satin Gloves
+							{"select", "itemID", 72406 },	-- Ruthless Gladiator's Satin Hood
+							{"select", "itemID", 72407 },	-- Ruthless Gladiator's Satin Leggings
+							{"select", "itemID", 72409 },	-- Ruthless Gladiator's Satin Mantle
+							{"select", "itemID", 72408 },	-- Ruthless Gladiator's Satin Robe
+							{"select", "itemID", 72321 },	-- Ruthless Gladiator's Cuffs of Meditation
+							{"select", "itemID", 72315 },	-- Ruthless Gladiator's Cord of Meditation
+							{"select", "itemID", 72318 },	-- Ruthless Gladiator's Treads of Meditation
 							{"exclude", "itemID", 146513 },	-- Exclude itself to stop duplicating 
 						},
 					}),
@@ -2089,6 +2294,17 @@ _.PVP =
 							{"select", "itemID", 70347 },	-- Ruthless Gladiator's Waistband of Cruelty
 							{"select", "itemID", 70351 },	-- Ruthless Gladiator's Boots of Alacrity
 							{"select", "itemID", 70348 },	-- Ruthless Gladiator's Boots of Cruelty
+							{"select", "itemID", 72423 },	-- Ruthless Gladiator's Leather Gloves
+							{"select", "itemID", 72424 },	-- Ruthless Gladiator's Leather Helm
+							{"select", "itemID", 72425 },	-- Ruthless Gladiator's Leather Legguards
+							{"select", "itemID", 72426 },	-- Ruthless Gladiator's Leather Spaulders
+							{"select", "itemID", 72422 },	-- Ruthless Gladiator's Leather Tunic
+							{"select", "itemID", 72421 },	-- Ruthless Gladiator's Armwraps of Accuracy
+							{"select", "itemID", 72420 },	-- Ruthless Gladiator's Armwraps of Alacrity
+							{"select", "itemID", 72417 },	-- Ruthless Gladiator's Waistband of Accuracy 
+							{"select", "itemID", 72416 },	-- Ruthless Gladiator's Waistband of Cruelty
+							{"select", "itemID", 72419 },	-- Ruthless Gladiator's Boots of Alacrity
+							{"select", "itemID", 72418 },	-- Ruthless Gladiator's Boots of Cruelty
 							{"exclude", "itemID", 146507 },	-- Exclude itself to stop duplicating 
 						},
 					}),
@@ -2119,6 +2335,27 @@ _.PVP =
 							{"select", "itemID", 70328 },	-- Ruthless Gladiator's Waistguard of Meditation
 							{"select", "itemID", 70341 },	-- Ruthless Gladiator's Sabatons of Alacrity
 							{"select", "itemID", 70329 },	-- Ruthless Gladiator's Sabatons of Meditation
+							{"select", "itemID", 72437 },	-- Ruthless Gladiator's Linked Armor
+							{"select", "itemID", 72438 },	-- Ruthless Gladiator's Linked Gauntlets
+							{"select", "itemID", 72439 },	-- Ruthless Gladiator's Linked Helm
+							{"select", "itemID", 72440 },	-- Ruthless Gladiator's Linked Leggings
+							{"select", "itemID", 72441 },	-- Ruthless Gladiator's Linked Spaulders
+							{"select", "itemID", 72443 },	-- Ruthless Gladiator's Mail Armor
+							{"select", "itemID", 72444 },	-- Ruthless Gladiator's Mail Gauntlets
+							{"select", "itemID", 72445 },	-- Ruthless Gladiator's Mail Helm
+							{"select", "itemID", 72446 },	-- Ruthless Gladiator's Mail Leggings
+							{"select", "itemID", 72447 },	-- Ruthless Gladiator's Mail Spaulders
+							{"select", "itemID", 72432 },	-- Ruthless Gladiator's Ringmail Armor
+							{"select", "itemID", 72433 },	-- Ruthless Gladiator's Ringmail Gauntlets
+							{"select", "itemID", 72434 },	-- Ruthless Gladiator's Ringmail Helm
+							{"select", "itemID", 72435 },	-- Ruthless Gladiator's Ringmail Leggings
+							{"select", "itemID", 72436 },	-- Ruthless Gladiator's Ringmail Spaulders
+							{"select", "itemID", 72431 },	-- Ruthless Gladiator's Armbands of Meditation
+							{"select", "itemID", 72430 },	-- Ruthless Gladiator's Armbands of Prowess
+							{"select", "itemID", 72442 },	-- Ruthless Gladiator's Waistguard of Cruelty
+							{"select", "itemID", 72427 },	-- Ruthless Gladiator's Waistguard of Meditation
+							{"select", "itemID", 72428 },	-- Ruthless Gladiator's Sabatons of Alacrity
+							{"select", "itemID", 72429 },	-- Ruthless Gladiator's Sabatons of Meditation
 							{"exclude", "itemID", 146511 },	-- Exclude itself to stop duplicating 
 						},
 					}),
@@ -2176,6 +2413,14 @@ _.PVP =
 							{"select", "itemID", 70363 },	-- Ruthless Gladiator's Cuffs of Accuracy
 							{"select", "itemID", 70362 },	-- Ruthless Gladiator's Cord of Accuracy
 							{"select", "itemID", 70364 },	-- Ruthless Gladiator's Treads of Alacrity
+							{"select", "itemID", 72463 },	-- Ruthless Gladiator's Felweave Amice
+							{"select", "itemID", 72460 },	-- Ruthless Gladiator's Felweave Cowl
+							{"select", "itemID", 72459 },	-- Ruthless Gladiator's Felweave Handguards
+							{"select", "itemID", 72462 },	-- Ruthless Gladiator's Felweave Raiment
+							{"select", "itemID", 72461 },	-- Ruthless Gladiator's Felweave Trousers
+							{"select", "itemID", 72319 },	-- Ruthless Gladiator's Cuffs of Accuracy
+							{"select", "itemID", 72314 },	-- Ruthless Gladiator's Cord of Accuracy
+							{"select", "itemID", 72317 },	-- Ruthless Gladiator's Treads of Alacrity
 							{"exclude", "itemID", 146505 },	-- Exclude itself to stop duplicating 
 						},
 					}),
@@ -2203,6 +2448,14 @@ _.PVP =
 							{"select", "itemID", 70322 },	-- Ruthless Gladiator's Armplates of Alacrity
 							{"select", "itemID", 70326 },	-- Ruthless Gladiator's Girdle of Prowess
 							{"select", "itemID", 70323 },	-- Ruthless Gladiator's Warboots of Alacrity
+							{"select", "itemID", 72464 },	-- Ruthless Gladiator's Plate Chestpiece
+							{"select", "itemID", 72465 },	-- Ruthless Gladiator's Plate Gauntlets
+							{"select", "itemID", 72466 },	-- Ruthless Gladiator's Plate Helm
+							{"select", "itemID", 72467 },	-- Ruthless Gladiator's Plate Legguards
+							{"select", "itemID", 72468 },	-- Ruthless Gladiator's Plate Shoulders
+							{"select", "itemID", 72399 },	-- Ruthless Gladiator's Armplates of Alacrity
+							{"select", "itemID", 72395 },	-- Ruthless Gladiator's Girdle of Prowess
+							{"select", "itemID", 72397 },	-- Ruthless Gladiator's Warboots of Alacrity
 							{"exclude", "itemID", 146509 },	-- Exclude itself to stop duplicating 
 						},
 					}),
@@ -2436,193 +2689,195 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(70413)),	-- Ruthless Gladiator's Symbol of Tenacity
 				}),
 			}),
-			n(-659, {	-- Aspirant (Season 11 version)
-				cl(DEATHKNIGHT, {
-					un(REMOVED_FROM_GAME, i(72332)),	-- Ruthless Gladiator's Dreadplate Chestpiece
-					un(REMOVED_FROM_GAME, i(72333)),	-- Ruthless Gladiator's Dreadplate Gauntlets
-					un(REMOVED_FROM_GAME, i(72334)),	-- Ruthless Gladiator's Dreadplate Helm
-					un(REMOVED_FROM_GAME, i(72335)),	-- Ruthless Gladiator's Dreadplate Legguards
-					un(REMOVED_FROM_GAME, i(72336)),	-- Ruthless Gladiator's Dreadplate Shoulders
-				}),
-				cl(DRUID, {
-					un(REMOVED_FROM_GAME, i(72337)),	-- Ruthless Gladiator's Dragonhide Gloves
-					un(REMOVED_FROM_GAME, i(72338)),	-- Ruthless Gladiator's Dragonhide Helm
-					un(REMOVED_FROM_GAME, i(72339)),	-- Ruthless Gladiator's Dragonhide Legguards
-					un(REMOVED_FROM_GAME, i(72340)),	-- Ruthless Gladiator's Dragonhide Robes
-					un(REMOVED_FROM_GAME, i(72341)),	-- Ruthless Gladiator's Dragonhide Spaulders
-					un(REMOVED_FROM_GAME, i(72345)),	-- Ruthless Gladiator's Kodohide Gloves
-					un(REMOVED_FROM_GAME, i(72346)),	-- Ruthless Gladiator's Kodohide Helm
-					un(REMOVED_FROM_GAME, i(72347)),	-- Ruthless Gladiator's Kodohide Legguards
-					un(REMOVED_FROM_GAME, i(72348)),	-- Ruthless Gladiator's Kodohide Robes
-					un(REMOVED_FROM_GAME, i(72349)),	-- Ruthless Gladiator's Kodohide Spaulders
-					un(REMOVED_FROM_GAME, i(72353)),	-- Ruthless Gladiator's Wyrmhide Gloves
-					un(REMOVED_FROM_GAME, i(72354)),	-- Ruthless Gladiator's Wyrmhide Helm
-					un(REMOVED_FROM_GAME, i(72355)),	-- Ruthless Gladiator's Wyrmhide Legguards
-					un(REMOVED_FROM_GAME, i(72356)),	-- Ruthless Gladiator's Wyrmhide Robes
-					un(REMOVED_FROM_GAME, i(72357)),	-- Ruthless Gladiator's Wyrmhide Spaulders
-				}),
-				cl(HUNTER, {
-					un(REMOVED_FROM_GAME, i(72368)),	-- Ruthless Gladiator's Chain Armor
-					un(REMOVED_FROM_GAME, i(72369)),	-- Ruthless Gladiator's Chain Gauntlets
-					un(REMOVED_FROM_GAME, i(72370)),	-- Ruthless Gladiator's Chain Helm
-					un(REMOVED_FROM_GAME, i(72371)),	-- Ruthless Gladiator's Chain Legs
-					un(REMOVED_FROM_GAME, i(72372)),	-- Ruthless Gladiator's Chain Spaulders
-				}),
-				cl(MAGE, {
-					un(REMOVED_FROM_GAME, i(72377)),	-- Ruthless Gladiator's Silk Amice
-					un(REMOVED_FROM_GAME, i(72374)),	-- Ruthless Gladiator's Silk Cowl
-					un(REMOVED_FROM_GAME, i(72373)),	-- Ruthless Gladiator's Silk Handguards
-					un(REMOVED_FROM_GAME, i(72376)),	-- Ruthless Gladiator's Silk Robe
-					un(REMOVED_FROM_GAME, i(72375)),	-- Ruthless Gladiator's Silk Trousers
-				}),
-				cl(PALADIN, {
-					un(REMOVED_FROM_GAME, i(72389)),	-- Ruthless Gladiator's Ornamented Chestguard
-					un(REMOVED_FROM_GAME, i(72390)),	-- Ruthless Gladiator's Ornamented Gloves
-					un(REMOVED_FROM_GAME, i(72391)),	-- Ruthless Gladiator's Ornamented Headcover
-					un(REMOVED_FROM_GAME, i(72392)),	-- Ruthless Gladiator's Ornamented Legplates
-					un(REMOVED_FROM_GAME, i(72393)),	-- Ruthless Gladiator's Ornamented Spaulders
-					un(REMOVED_FROM_GAME, i(72378)),	-- Ruthless Gladiator's Scaled Chestpiece
-					un(REMOVED_FROM_GAME, i(72379)),	-- Ruthless Gladiator's Scaled Gauntlets
-					un(REMOVED_FROM_GAME, i(72380)),	-- Ruthless Gladiator's Scaled Helm
-					un(REMOVED_FROM_GAME, i(72381)),	-- Ruthless Gladiator's Scaled Legguards
-					un(REMOVED_FROM_GAME, i(72382)),	-- Ruthless Gladiator's Scaled Shoulders
-				}),
-				cl(PRIEST, {
-					un(REMOVED_FROM_GAME, i(72400)),	-- Ruthless Gladiator's Mooncloth Gloves
-					un(REMOVED_FROM_GAME, i(72401)),	-- Ruthless Gladiator's Mooncloth Helm
-					un(REMOVED_FROM_GAME, i(72402)),	-- Ruthless Gladiator's Mooncloth Leggings
-					un(REMOVED_FROM_GAME, i(72404)),	-- Ruthless Gladiator's Mooncloth Mantle
-					un(REMOVED_FROM_GAME, i(72403)),	-- Ruthless Gladiator's Mooncloth Robe
-					un(REMOVED_FROM_GAME, i(72405)),	-- Ruthless Gladiator's Satin Gloves
-					un(REMOVED_FROM_GAME, i(72406)),	-- Ruthless Gladiator's Satin Hood
-					un(REMOVED_FROM_GAME, i(72407)),	-- Ruthless Gladiator's Satin Leggings
-					un(REMOVED_FROM_GAME, i(72409)),	-- Ruthless Gladiator's Satin Mantle
-					un(REMOVED_FROM_GAME, i(72408)),	-- Ruthless Gladiator's Satin Robe
-				}),
-				cl(ROGUE, {
-					un(REMOVED_FROM_GAME, i(72423)),	-- Ruthless Gladiator's Leather Gloves
-					un(REMOVED_FROM_GAME, i(72424)),	-- Ruthless Gladiator's Leather Helm
-					un(REMOVED_FROM_GAME, i(72425)),	-- Ruthless Gladiator's Leather Legguards
-					un(REMOVED_FROM_GAME, i(72426)),	-- Ruthless Gladiator's Leather Spaulders
-					un(REMOVED_FROM_GAME, i(72422)),	-- Ruthless Gladiator's Leather Tunic
-				}),
-				cl(SHAMAN, {
-					un(REMOVED_FROM_GAME, i(72437)),	-- Ruthless Gladiator's Linked Armor
-					un(REMOVED_FROM_GAME, i(72438)),	-- Ruthless Gladiator's Linked Gauntlets
-					un(REMOVED_FROM_GAME, i(72439)),	-- Ruthless Gladiator's Linked Helm
-					un(REMOVED_FROM_GAME, i(72440)),	-- Ruthless Gladiator's Linked Leggings
-					un(REMOVED_FROM_GAME, i(72441)),	-- Ruthless Gladiator's Linked Spaulders
-					un(REMOVED_FROM_GAME, i(72443)),	-- Ruthless Gladiator's Mail Armor
-					un(REMOVED_FROM_GAME, i(72444)),	-- Ruthless Gladiator's Mail Gauntlets
-					un(REMOVED_FROM_GAME, i(72445)),	-- Ruthless Gladiator's Mail Helm
-					un(REMOVED_FROM_GAME, i(72446)),	-- Ruthless Gladiator's Mail Leggings
-					un(REMOVED_FROM_GAME, i(72447)),	-- Ruthless Gladiator's Mail Spaulders
-					un(REMOVED_FROM_GAME, i(72432)),	-- Ruthless Gladiator's Ringmail Armor
-					un(REMOVED_FROM_GAME, i(72433)),	-- Ruthless Gladiator's Ringmail Gauntlets
-					un(REMOVED_FROM_GAME, i(72434)),	-- Ruthless Gladiator's Ringmail Helm
-					un(REMOVED_FROM_GAME, i(72435)),	-- Ruthless Gladiator's Ringmail Leggings
-					un(REMOVED_FROM_GAME, i(72436)),	-- Ruthless Gladiator's Ringmail Spaulders
+			n(-655, {	-- Ensemble Gear (Season 11 version)
+				["description"] = "These items are available from Ruthless Gladiator: Season 10 class ensembles only",
+				["g"] = {
+					cl(DEATHKNIGHT, {
+						i(72332),	-- Ruthless Gladiator's Dreadplate Chestpiece
+						i(72333),	-- Ruthless Gladiator's Dreadplate Gauntlets
+						i(72334),	-- Ruthless Gladiator's Dreadplate Helm
+						i(72335),	-- Ruthless Gladiator's Dreadplate Legguards
+						i(72336),	-- Ruthless Gladiator's Dreadplate Shoulders
+					}),
+					cl(DRUID, {
+						i(72337),	-- Ruthless Gladiator's Dragonhide Gloves
+						i(72338),	-- Ruthless Gladiator's Dragonhide Helm
+						i(72339),	-- Ruthless Gladiator's Dragonhide Legguards
+						i(72340),	-- Ruthless Gladiator's Dragonhide Robes
+						i(72341),	-- Ruthless Gladiator's Dragonhide Spaulders
+						i(72345),	-- Ruthless Gladiator's Kodohide Gloves
+						i(72346),	-- Ruthless Gladiator's Kodohide Helm
+						i(72347),	-- Ruthless Gladiator's Kodohide Legguards
+						i(72348),	-- Ruthless Gladiator's Kodohide Robes
+						i(72349),	-- Ruthless Gladiator's Kodohide Spaulders
+						i(72353),	-- Ruthless Gladiator's Wyrmhide Gloves
+						i(72354),	-- Ruthless Gladiator's Wyrmhide Helm
+						i(72355),	-- Ruthless Gladiator's Wyrmhide Legguards
+						i(72356),	-- Ruthless Gladiator's Wyrmhide Robes
+						i(72357),	-- Ruthless Gladiator's Wyrmhide Spaulders
+					}),
+					cl(HUNTER, {
+						i(72368),	-- Ruthless Gladiator's Chain Armor
+						i(72369),	-- Ruthless Gladiator's Chain Gauntlets
+						i(72370),	-- Ruthless Gladiator's Chain Helm
+						i(72371),	-- Ruthless Gladiator's Chain Legs
+						i(72372),	-- Ruthless Gladiator's Chain Spaulders
+					}),
+					cl(MAGE, {
+						i(72377),	-- Ruthless Gladiator's Silk Amice
+						i(72374),	-- Ruthless Gladiator's Silk Cowl
+						i(72373),	-- Ruthless Gladiator's Silk Handguards
+						i(72376),	-- Ruthless Gladiator's Silk Robe
+						i(72375),	-- Ruthless Gladiator's Silk Trousers
+					}),
+					cl(PALADIN, {
+						i(72389),	-- Ruthless Gladiator's Ornamented Chestguard
+						i(72390),	-- Ruthless Gladiator's Ornamented Gloves
+						i(72391),	-- Ruthless Gladiator's Ornamented Headcover
+						i(72392),	-- Ruthless Gladiator's Ornamented Legplates
+						i(72393),	-- Ruthless Gladiator's Ornamented Spaulders
+						i(72378),	-- Ruthless Gladiator's Scaled Chestpiece
+						i(72379),	-- Ruthless Gladiator's Scaled Gauntlets
+						i(72380),	-- Ruthless Gladiator's Scaled Helm
+						i(72381),	-- Ruthless Gladiator's Scaled Legguards
+						i(72382),	-- Ruthless Gladiator's Scaled Shoulders
+					}),
+					cl(PRIEST, {
+						i(72400),	-- Ruthless Gladiator's Mooncloth Gloves
+						i(72401),	-- Ruthless Gladiator's Mooncloth Helm
+						i(72402),	-- Ruthless Gladiator's Mooncloth Leggings
+						i(72404),	-- Ruthless Gladiator's Mooncloth Mantle
+						i(72403),	-- Ruthless Gladiator's Mooncloth Robe
+						i(72405),	-- Ruthless Gladiator's Satin Gloves
+						i(72406),	-- Ruthless Gladiator's Satin Hood
+						i(72407),	-- Ruthless Gladiator's Satin Leggings
+						i(72409),	-- Ruthless Gladiator's Satin Mantle
+						i(72408),	-- Ruthless Gladiator's Satin Robe
+					}),
+					cl(ROGUE, {
+						i(72423),	-- Ruthless Gladiator's Leather Gloves
+						i(72424),	-- Ruthless Gladiator's Leather Helm
+						i(72425),	-- Ruthless Gladiator's Leather Legguards
+						i(72426),	-- Ruthless Gladiator's Leather Spaulders
+						i(72422),	-- Ruthless Gladiator's Leather Tunic
+					}),
+					cl(SHAMAN, {
+						i(72437),	-- Ruthless Gladiator's Linked Armor
+						i(72438),	-- Ruthless Gladiator's Linked Gauntlets
+						i(72439),	-- Ruthless Gladiator's Linked Helm
+						i(72440),	-- Ruthless Gladiator's Linked Leggings
+						i(72441),	-- Ruthless Gladiator's Linked Spaulders
+						i(72443),	-- Ruthless Gladiator's Mail Armor
+						i(72444),	-- Ruthless Gladiator's Mail Gauntlets
+						i(72445),	-- Ruthless Gladiator's Mail Helm
+						i(72446),	-- Ruthless Gladiator's Mail Leggings
+						i(72447),	-- Ruthless Gladiator's Mail Spaulders
+						i(72432),	-- Ruthless Gladiator's Ringmail Armor
+						i(72433),	-- Ruthless Gladiator's Ringmail Gauntlets
+						i(72434),	-- Ruthless Gladiator's Ringmail Helm
+						i(72435),	-- Ruthless Gladiator's Ringmail Leggings
+						i(72436),	-- Ruthless Gladiator's Ringmail Spaulders
 
-				}),
-				cl(WARLOCK, {
-					un(REMOVED_FROM_GAME, i(72463)),	-- Ruthless Gladiator's Felweave Amice
-					un(REMOVED_FROM_GAME, i(72460)),	-- Ruthless Gladiator's Felweave Cowl
-					un(REMOVED_FROM_GAME, i(72459)),	-- Ruthless Gladiator's Felweave Handguards
-					un(REMOVED_FROM_GAME, i(72462)),	-- Ruthless Gladiator's Felweave Raiment
-					un(REMOVED_FROM_GAME, i(72461)),	-- Ruthless Gladiator's Felweave Trousers
-				}),
-				cl(WARRIOR, {
-					un(REMOVED_FROM_GAME, i(72464)),	-- Ruthless Gladiator's Plate Chestpiece
-					un(REMOVED_FROM_GAME, i(72465)),	-- Ruthless Gladiator's Plate Gauntlets
-					un(REMOVED_FROM_GAME, i(72466)),	-- Ruthless Gladiator's Plate Helm
-					un(REMOVED_FROM_GAME, i(72467)),	-- Ruthless Gladiator's Plate Legguards
-					un(REMOVED_FROM_GAME, i(72468)),	-- Ruthless Gladiator's Plate Shoulders
-				}),
-				n(-322, {	-- Back
-					un(REMOVED_FROM_GAME, i(72305)),	-- Ruthless Gladiator's Cape of Cruelty
-					un(REMOVED_FROM_GAME, i(72306)),	-- Ruthless Gladiator's Cape of Prowess
-					un(REMOVED_FROM_GAME, i(72451)),	-- Ruthless Gladiator's Cloak of Alacrity
-					un(REMOVED_FROM_GAME, i(72452)),	-- Ruthless Gladiator's Cloak of Prowess
-					un(REMOVED_FROM_GAME, i(72323)),	-- Ruthless Gladiator's Drape of Diffusion
-					un(REMOVED_FROM_GAME, i(72324)),	-- Ruthless Gladiator's Drape of Meditation
-					un(REMOVED_FROM_GAME, i(72322)),	-- Ruthless Gladiator's Drape of Prowess
-				}),
-				n(-326, {	-- Wrists
-					un(REMOVED_FROM_GAME, i(72431)),	-- Ruthless Gladiator's Armbands of Meditation
-					un(REMOVED_FROM_GAME, i(72430)),	-- Ruthless Gladiator's Armbands of Prowess
-					un(REMOVED_FROM_GAME, i(72399)),	-- Ruthless Gladiator's Armplates of Alacrity
-					un(REMOVED_FROM_GAME, i(72398)),	-- Ruthless Gladiator's Armplates of Proficiency
-					un(REMOVED_FROM_GAME, i(72421)),	-- Ruthless Gladiator's Armwraps of Accuracy
-					un(REMOVED_FROM_GAME, i(72420)),	-- Ruthless Gladiator's Armwraps of Alacrity
-					un(REMOVED_FROM_GAME, i(72344)),	-- Ruthless Gladiator's Bindings of Meditation
-					un(REMOVED_FROM_GAME, i(72352)),	-- Ruthless Gladiator's Bindings of Prowess
-					un(REMOVED_FROM_GAME, i(72388)),	-- Ruthless Gladiator's Bracers of Meditation
-					un(REMOVED_FROM_GAME, i(72387)),	-- Ruthless Gladiator's Bracers of Prowess
-					un(REMOVED_FROM_GAME, i(72319)),	-- Ruthless Gladiator's Cuffs of Accuracy
-					un(REMOVED_FROM_GAME, i(72321)),	-- Ruthless Gladiator's Cuffs of Meditation
-					un(REMOVED_FROM_GAME, i(72320)),	-- Ruthless Gladiator's Cuffs of Prowess
-					un(REMOVED_FROM_GAME, i(72367)),	-- Ruthless Gladiator's Wristguards of Accuracy
-					un(REMOVED_FROM_GAME, i(72366)),	-- Ruthless Gladiator's Wristguards of Alacrity
-				}),
-				n(-328, {	-- Waist
-					un(REMOVED_FROM_GAME, i(72350)),	-- Ruthless Gladiator's Belt of Cruelty
-					un(REMOVED_FROM_GAME, i(72342)),	-- Ruthless Gladiator's Belt of Meditation
-					un(REMOVED_FROM_GAME, i(72383)),	-- Ruthless Gladiator's Clasp of Cruelty
-					un(REMOVED_FROM_GAME, i(72384)),	-- Ruthless Gladiator's Clasp of Meditation
-					un(REMOVED_FROM_GAME, i(72314)),	-- Ruthless Gladiator's Cord of Accuracy
-					un(REMOVED_FROM_GAME, i(72313)),	-- Ruthless Gladiator's Cord of Cruelty
-					un(REMOVED_FROM_GAME, i(72315)),	-- Ruthless Gladiator's Cord of Meditation
-					un(REMOVED_FROM_GAME, i(72394)),	-- Ruthless Gladiator's Girdle of Accuracy/Cruelty 
-					un(REMOVED_FROM_GAME, i(72395)),	-- Ruthless Gladiator's Girdle of Prowess
-					un(REMOVED_FROM_GAME, i(72363)),	-- Ruthless Gladiator's Links of Accuracy
-					un(REMOVED_FROM_GAME, i(72362)),	-- Ruthless Gladiator's Links of Cruelty
-					un(REMOVED_FROM_GAME, i(72417)),	-- Ruthless Gladiator's Waistband of Accuracy 
-					un(REMOVED_FROM_GAME, i(72416)),	-- Ruthless Gladiator's Waistband of Cruelty
-					un(REMOVED_FROM_GAME, i(72442)),	-- Ruthless Gladiator's Waistguard of Cruelty
-					un(REMOVED_FROM_GAME, i(72427)),	-- Ruthless Gladiator's Waistguard of Meditation
-				}),
-				n(-330, {	-- Feet
-					un(REMOVED_FROM_GAME, i(72419)),	-- Ruthless Gladiator's Boots of Alacrity
-					un(REMOVED_FROM_GAME, i(72418)),	-- Ruthless Gladiator's Boots of Cruelty
-					un(REMOVED_FROM_GAME, i(72351)),	-- Ruthless Gladiator's Footguards of Alacrity
-					un(REMOVED_FROM_GAME, i(72343)),	-- Ruthless Gladiator's Footguards of Meditation
-					un(REMOVED_FROM_GAME, i(72385)),	-- Ruthless Gladiator's Greaves of Alacrity
-					un(REMOVED_FROM_GAME, i(72386)),	-- Ruthless Gladiator's Greaves of Meditation
-					un(REMOVED_FROM_GAME, i(72365)),	-- Ruthless Gladiator's Sabatons of Alacrity
-					un(REMOVED_FROM_GAME, i(72428)),	-- Ruthless Gladiator's Sabatons of Alacrity
-					un(REMOVED_FROM_GAME, i(72364)),	-- Ruthless Gladiator's Sabatons of Cruelty
-					un(REMOVED_FROM_GAME, i(72429)),	-- Ruthless Gladiator's Sabatons of Meditation
-					un(REMOVED_FROM_GAME, i(72317)),	-- Ruthless Gladiator's Treads of Alacrity
-					un(REMOVED_FROM_GAME, i(72316)),	-- Ruthless Gladiator's Treads of Cruelty
-					un(REMOVED_FROM_GAME, i(72318)),	-- Ruthless Gladiator's Treads of Meditation
-					un(REMOVED_FROM_GAME, i(72396)),	-- Ruthless Gladiator's Warboots of Cruelty
-					un(REMOVED_FROM_GAME, i(72397)),	-- Ruthless Gladiator's Warboots of Alacrity
-				}),
-				f(52,	{	-- Finger
-					un(REMOVED_FROM_GAME, i(72330)),	-- Ruthless Gladiator's Band of Accuracy
-					un(REMOVED_FROM_GAME, i(72329)),	-- Ruthless Gladiator's Band of Cruelty
-					un(REMOVED_FROM_GAME, i(72331)),	-- Ruthless Gladiator's Band of Meditation
-					un(REMOVED_FROM_GAME, i(72312)),	-- Ruthless Gladiator's Ring of Accuracy
-					un(REMOVED_FROM_GAME, i(72311)),	-- Ruthless Gladiator's Ring of Cruelty
-					un(REMOVED_FROM_GAME, i(72458)),	-- Ruthless Gladiator's Signet of Accuracy
-					un(REMOVED_FROM_GAME, i(72457)),	-- Ruthless Gladiator's Signet of Cruelty
-				}),
-				f(51,	{	-- Neck
-					un(REMOVED_FROM_GAME, i(72454)),	-- Ruthless Gladiator's Choker of Accuracy
-					un(REMOVED_FROM_GAME, i(72453)),	-- Ruthless Gladiator's Choker of Proficiency
-					un(REMOVED_FROM_GAME, i(72307)),	-- Ruthless Gladiator's Necklace of Proficiency
-					un(REMOVED_FROM_GAME, i(72308)),	-- Ruthless Gladiator's Necklace of Prowess
-					un(REMOVED_FROM_GAME, i(72325)),	-- Ruthless Gladiator's Pendant of Alacrity
-					un(REMOVED_FROM_GAME, i(72326)),	-- Ruthless Gladiator's Pendant of Diffusion
-					un(REMOVED_FROM_GAME, i(72327)),	-- Ruthless Gladiator's Pendant of Meditation
-				}),
-				n(-331, {	-- Held In Offhand
-				un(REMOVED_FROM_GAME, i(72456)),	-- Ruthless Gladiator's Relic of Conquest
-				un(REMOVED_FROM_GAME, i(72328)),	-- Ruthless Gladiator's Relic of Dominance
-				un(REMOVED_FROM_GAME, i(72358)),	-- Ruthless Gladiator's Relic of Salvation
-				un(REMOVED_FROM_GAME, i(72310)),	-- Ruthless Gladiator's Relic of Triumph
-				}),
-				f(53,	{	-- Trinket
+					}),
+					cl(WARLOCK, {
+						i(72463),	-- Ruthless Gladiator's Felweave Amice
+						i(72460),	-- Ruthless Gladiator's Felweave Cowl
+						i(72459),	-- Ruthless Gladiator's Felweave Handguards
+						i(72462),	-- Ruthless Gladiator's Felweave Raiment
+						i(72461),	-- Ruthless Gladiator's Felweave Trousers
+					}),
+					cl(WARRIOR, {
+						i(72464),	-- Ruthless Gladiator's Plate Chestpiece
+						i(72465),	-- Ruthless Gladiator's Plate Gauntlets
+						i(72466),	-- Ruthless Gladiator's Plate Helm
+						i(72467),	-- Ruthless Gladiator's Plate Legguards
+						i(72468),	-- Ruthless Gladiator's Plate Shoulders
+					}),
+					n(-322, {	-- Back
+						un(REMOVED_FROM_GAME, i(72305)),	-- Ruthless Gladiator's Cape of Cruelty
+						un(REMOVED_FROM_GAME, i(72306)),	-- Ruthless Gladiator's Cape of Prowess
+						un(REMOVED_FROM_GAME, i(72451)),	-- Ruthless Gladiator's Cloak of Alacrity
+						un(REMOVED_FROM_GAME, i(72452)),	-- Ruthless Gladiator's Cloak of Prowess
+						un(REMOVED_FROM_GAME, i(72323)),	-- Ruthless Gladiator's Drape of Diffusion
+						un(REMOVED_FROM_GAME, i(72324)),	-- Ruthless Gladiator's Drape of Meditation
+						un(REMOVED_FROM_GAME, i(72322)),	-- Ruthless Gladiator's Drape of Prowess
+					}),
+					n(-326, {	-- Wrists
+						i(72431),	-- Ruthless Gladiator's Armbands of Meditation
+						i(72430),	-- Ruthless Gladiator's Armbands of Prowess
+						i(72399),	-- Ruthless Gladiator's Armplates of Alacrity
+						i(72398),	-- Ruthless Gladiator's Armplates of Proficiency
+						i(72421),	-- Ruthless Gladiator's Armwraps of Accuracy
+						i(72420),	-- Ruthless Gladiator's Armwraps of Alacrity
+						i(72344),	-- Ruthless Gladiator's Bindings of Meditation
+						i(72352),	-- Ruthless Gladiator's Bindings of Prowess
+						i(72388),	-- Ruthless Gladiator's Bracers of Meditation
+						i(72387),	-- Ruthless Gladiator's Bracers of Prowess
+						i(72319),	-- Ruthless Gladiator's Cuffs of Accuracy
+						i(72321),	-- Ruthless Gladiator's Cuffs of Meditation
+						i(72320),	-- Ruthless Gladiator's Cuffs of Prowess
+						i(72367),	-- Ruthless Gladiator's Wristguards of Accuracy
+						i(72366),	-- Ruthless Gladiator's Wristguards of Alacrity
+					}),
+					n(-328, {	-- Waist
+						i(72350),	-- Ruthless Gladiator's Belt of Cruelty
+						i(72342),	-- Ruthless Gladiator's Belt of Meditation
+						i(72383),	-- Ruthless Gladiator's Clasp of Cruelty
+						i(72384),	-- Ruthless Gladiator's Clasp of Meditation
+						i(72314),	-- Ruthless Gladiator's Cord of Accuracy
+						i(72313),	-- Ruthless Gladiator's Cord of Cruelty
+						i(72315),	-- Ruthless Gladiator's Cord of Meditation
+						i(72394),	-- Ruthless Gladiator's Girdle of Accuracy/Cruelty 
+						i(72395),	-- Ruthless Gladiator's Girdle of Prowess
+						i(72363),	-- Ruthless Gladiator's Links of Accuracy
+						i(72362),	-- Ruthless Gladiator's Links of Cruelty
+						i(72417),	-- Ruthless Gladiator's Waistband of Accuracy 
+						i(72416),	-- Ruthless Gladiator's Waistband of Cruelty
+						i(72442),	-- Ruthless Gladiator's Waistguard of Cruelty
+						i(72427),	-- Ruthless Gladiator's Waistguard of Meditation
+					}),
+					n(-330, {	-- Feet
+						i(72419),	-- Ruthless Gladiator's Boots of Alacrity
+						i(72418),	-- Ruthless Gladiator's Boots of Cruelty
+						i(72351),	-- Ruthless Gladiator's Footguards of Alacrity
+						i(72343),	-- Ruthless Gladiator's Footguards of Meditation
+						i(72385),	-- Ruthless Gladiator's Greaves of Alacrity
+						i(72386),	-- Ruthless Gladiator's Greaves of Meditation
+						i(72365),	-- Ruthless Gladiator's Sabatons of Alacrity
+						i(72428),	-- Ruthless Gladiator's Sabatons of Alacrity
+						i(72364),	-- Ruthless Gladiator's Sabatons of Cruelty
+						i(72429),	-- Ruthless Gladiator's Sabatons of Meditation
+						i(72317),	-- Ruthless Gladiator's Treads of Alacrity
+						i(72316),	-- Ruthless Gladiator's Treads of Cruelty
+						i(72318),	-- Ruthless Gladiator's Treads of Meditation
+						i(72396),	-- Ruthless Gladiator's Warboots of Cruelty
+						i(72397),	-- Ruthless Gladiator's Warboots of Alacrity
+					}),
+					f(52,	{	-- Finger
+						un(REMOVED_FROM_GAME, i(72330)),	-- Ruthless Gladiator's Band of Accuracy
+						un(REMOVED_FROM_GAME, i(72329)),	-- Ruthless Gladiator's Band of Cruelty
+						un(REMOVED_FROM_GAME, i(72331)),	-- Ruthless Gladiator's Band of Meditation
+						un(REMOVED_FROM_GAME, i(72312)),	-- Ruthless Gladiator's Ring of Accuracy
+						un(REMOVED_FROM_GAME, i(72311)),	-- Ruthless Gladiator's Ring of Cruelty
+						un(REMOVED_FROM_GAME, i(72458)),	-- Ruthless Gladiator's Signet of Accuracy
+						un(REMOVED_FROM_GAME, i(72457)),	-- Ruthless Gladiator's Signet of Cruelty
+					}),
+					f(51,	{	-- Neck
+						un(REMOVED_FROM_GAME, i(72454)),	-- Ruthless Gladiator's Choker of Accuracy
+						un(REMOVED_FROM_GAME, i(72453)),	-- Ruthless Gladiator's Choker of Proficiency
+						un(REMOVED_FROM_GAME, i(72307)),	-- Ruthless Gladiator's Necklace of Proficiency
+						un(REMOVED_FROM_GAME, i(72308)),	-- Ruthless Gladiator's Necklace of Prowess
+						un(REMOVED_FROM_GAME, i(72325)),	-- Ruthless Gladiator's Pendant of Alacrity
+						un(REMOVED_FROM_GAME, i(72326)),	-- Ruthless Gladiator's Pendant of Diffusion
+						un(REMOVED_FROM_GAME, i(72327)),	-- Ruthless Gladiator's Pendant of Meditation
+					}),
+					n(-331, {	-- Held In Offhand
+					un(REMOVED_FROM_GAME, i(72456)),	-- Ruthless Gladiator's Relic of Conquest
+					un(REMOVED_FROM_GAME, i(72328)),	-- Ruthless Gladiator's Relic of Dominance
+					un(REMOVED_FROM_GAME, i(72358)),	-- Ruthless Gladiator's Relic of Salvation
+					un(REMOVED_FROM_GAME, i(72310)),	-- Ruthless Gladiator's Relic of Triumph
+					}),
+					f(53,	{	-- Trinket
 					un(REMOVED_FROM_GAME, i(72304)),	-- Ruthless Gladiator's Badge of Conquest
 					un(REMOVED_FROM_GAME, i(72448)),	-- Ruthless Gladiator's Badge of Dominance
 					un(REMOVED_FROM_GAME, i(72450)),	-- Ruthless Gladiator's Badge of Victory
@@ -2639,7 +2894,8 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(72415)),	-- Ruthless Gladiator's Medallion of Meditation (H)
 					un(REMOVED_FROM_GAME, i(72413)),	-- Ruthless Gladiator's Medallion of Tenacity (H)
 				}),
-			}),
+			},
+		}),
 			n(-662, {	-- Elite PvP Gear
 				n(-319, {	-- Weapons
 					un(REMOVED_FROM_GAME, i(70207)),	-- Ruthless Gladiator's Barrier
@@ -2811,7 +3067,10 @@ _.PVP =
 				n(-319, {	-- Weapons
 					i(146639, {	-- Arsenal: Cataclysmic Gladiator's Weapons
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-						["sym"] = { {"sub", "pvp_weapons_ensemble", -9979, -674, -661 }, },
+						["sym"] = { 
+							{"sub", "pvp_weapons_ensemble", -9979, -674, -661 },
+							{"exclude", "itemID", 146639 },	-- Exclude itself to stop duplicating
+						},
 					}),
 					i(73468, {	-- Cataclysmic Gladiator's Barrier
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -2910,7 +3169,13 @@ _.PVP =
 				cl(DEATHKNIGHT, {
 					i(146443, {	-- Ensemble: Cataclysmic Gladiator's Dreadplate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -674, -661, 6 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -9979, -674, -661, 6 },
+							{"select", "itemID", 73551 },	-- Cataclysmic Gladiator's Armplates of Proficiency
+							{"select", "itemID", 73555 },	-- Cataclysmic Gladiator's Girdle of Cruelty
+							{"select", "itemID", 73553 },	-- Cataclysmic Gladiator's Warboots of Cruelty
+							{"exclude", "itemID", 146443 },	-- Exclude itself to stop duplicating 
+						},
 					}),
 					i(73620, {	-- Cataclysmic Gladiator's Dreadplate Chestpiece
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -2931,7 +3196,16 @@ _.PVP =
 				cl(DRUID, {
 					i(146441, {	-- Ensemble: Cataclysmic Gladiator's Dragonhide Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -674, -661, 11 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -9979, -674, -661, 11 },
+							{"select", "itemID", 73608 },	-- Cataclysmic Gladiator's Bindings of Meditation
+							{"select", "itemID", 73600 },	-- Cataclysmic Gladiator's Bindings of Prowess
+							{"select", "itemID", 73602 },	-- Cataclysmic Gladiator's Belt of Cruelty
+							{"select", "itemID", 73610 },	-- Cataclysmic Gladiator's Belt of Meditation
+							{"select", "itemID", 73601 },	-- Cataclysmic Gladiator's Footguards of Alacrity
+							{"select", "itemID", 73609 },	-- Cataclysmic Gladiator's Footguards of Meditation
+							{"exclude", "itemID", 146441 },	-- Exclude itself to stop duplicating 
+						},
 					}),
 					i(73615, {	-- Cataclysmic Gladiator's Dragonhide Gloves
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -2982,7 +3256,16 @@ _.PVP =
 				cl(HUNTER, {
 					i(146439, {	-- Ensemble: Cataclysmic Gladiator's Chain Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -674, -661, 3 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -9979, -674, -661, 3 },
+							{"select", "itemID", 73585 },	-- Cataclysmic Gladiator's Wristguards of Accuracy
+							{"select", "itemID", 73586 },	-- Cataclysmic Gladiator's Wristguards of Alacrity
+							{"select", "itemID", 73589 },	-- Cataclysmic Gladiator's Links of Accuracy
+							{"select", "itemID", 73590 },	-- Cataclysmic Gladiator's Links of Cruelty
+							{"select", "itemID", 73587 },	-- Cataclysmic Gladiator's Sabatons of Alacrity
+							{"select", "itemID", 73588 },	-- Cataclysmic Gladiator's Sabatons of Cruelty
+							{"exclude", "itemID", 146439 },	-- Exclude itself to stop duplicating 
+						},
 					}),
 					i(73584, {	-- Cataclysmic Gladiator's Chain Armor
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -3003,7 +3286,13 @@ _.PVP =
 				cl(MAGE, {
 					i(146457, {	-- Ensemble: Cataclysmic Gladiator's Silk Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -674, -661, 8 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -9979, -674, -661, 8 },
+							{"select", "itemID", 73632 },	-- Cataclysmic Gladiator's Cuffs of Prowess
+							{"select", "itemID", 73639 },	-- Cataclysmic Gladiator's Cord of Cruelty
+							{"select", "itemID", 73636 },	-- Cataclysmic Gladiator's Treads of Cruelty
+							{"exclude", "itemID", 146457 },	-- Exclude itself to stop duplicating 
+						},
 					}),
 					i(73572, {	-- Cataclysmic Gladiator's Silk Amice
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -3024,7 +3313,16 @@ _.PVP =
 				cl(PALADIN, {
 					i(146455, {	-- Ensemble: Cataclysmic Gladiator's Scaled Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -674, -661, 2 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -9979, -674, -661, 2 },
+							{"select", "itemID", 73561 },	-- Cataclysmic Gladiator's Bracers of Meditation
+							{"select", "itemID", 73562 },	-- Cataclysmic Gladiator's Bracers of Prowess
+							{"select", "itemID", 73566 },	-- Cataclysmic Gladiator's Clasp of Cruelty
+							{"select", "itemID", 73565 },	-- Cataclysmic Gladiator's Clasp of Meditation
+							{"select", "itemID", 73564 },	-- Cataclysmic Gladiator's Greaves of Alacrity
+							{"select", "itemID", 73563 },	-- Cataclysmic Gladiator's Greaves of Meditation
+							{"exclude", "itemID", 146455 },	-- Exclude itself to stop duplicating 
+						},
 					}),
 					i(88170, {	-- Cataclysmic Gladiator's Ornamented Battlerobe
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -3063,7 +3361,13 @@ _.PVP =
 				cl(PRIEST, {
 					i(146453, {	-- Ensemble: Cataclysmic Gladiator's Satin Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -674, -661, 5 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -9979, -674, -661, 5 },
+							{"select", "itemID", 73631 },	-- Cataclysmic Gladiator's Cuffs of Meditation
+							{"select", "itemID", 73637 },	-- Cataclysmic Gladiator's Cord of Meditation
+							{"select", "itemID", 73634 },	-- Cataclysmic Gladiator's Treads of Meditation
+							{"exclude", "itemID", 146453 },	-- Exclude itself to stop duplicating 
+						},
 					}),
 					i(73549, {	-- Cataclysmic Gladiator's Mooncloth Gloves
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -3099,7 +3403,16 @@ _.PVP =
 				cl(ROGUE, {
 					i(146447, {	-- Ensemble: Cataclysmic Gladiator's Leather Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -674, -661, 4 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -9979, -674, -661, 4 },
+							{"select", "itemID", 73528 },	-- Cataclysmic Gladiator's Armwraps of Accuracy
+							{"select", "itemID", 73529 },	-- Cataclysmic Gladiator's Armwraps of Alacrity
+							{"select", "itemID", 73532 },	-- Cataclysmic Gladiator's Waistband of Accuracy
+							{"select", "itemID", 73533 },	-- Cataclysmic Gladiator's Waistband of Cruelty
+							{"select", "itemID", 73530 },	-- Cataclysmic Gladiator's Boots of Alacrity
+							{"select", "itemID", 73531 },	-- Cataclysmic Gladiator's Boots of Cruelty
+							{"exclude", "itemID", 146447 },	-- Exclude itself to stop duplicating 
+						},
 					}),
 					i(73526, {	-- Cataclysmic Gladiator's Leather Gloves
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -3120,7 +3433,16 @@ _.PVP =
 				cl(SHAMAN, {
 					i(146451, {	-- Ensemble: Cataclysmic Gladiator's Ringmail Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -674, -661, 7 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -9979, -674, -661, 7 },
+							{"select", "itemID", 73518 },	-- Cataclysmic Gladiator's Armbands of Meditation
+							{"select", "itemID", 73519 },	-- Cataclysmic Gladiator's Armbands of Prowess
+							{"select", "itemID", 73507 },	-- Cataclysmic Gladiator's Waistguard of Cruelty
+							{"select", "itemID", 73522 },	-- Cataclysmic Gladiator's Waistguard of Meditation
+							{"select", "itemID", 73521 },	-- Cataclysmic Gladiator's Sabatons of Alacrity
+							{"select", "itemID", 73520 },	-- Cataclysmic Gladiator's Sabatons of Meditation
+							{"exclude", "itemID", 146451 },	-- Exclude itself to stop duplicating 
+						},
 					}),
 					i(73512, {	-- Cataclysmic Gladiator's Linked Armor
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -3171,7 +3493,13 @@ _.PVP =
 				cl(WARLOCK, {
 					i(146445, {	-- Ensemble: Cataclysmic Gladiator's Felweave Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -674, -661, 9 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -9979, -674, -661, 9 },
+							{"select", "itemID", 73633 },	-- Cataclysmic Gladiator's Cuffs of Accuracy
+							{"select", "itemID", 73638 },	-- Cataclysmic Gladiator's Cord of Accuracy
+							{"select", "itemID", 73635 },	-- Cataclysmic Gladiator's Treads of Alacrity
+							{"exclude", "itemID", 146445 },	-- Exclude itself to stop duplicating 
+						},
 					}),
 					i(73483, {	-- Cataclysmic Gladiator's Felweave Amice
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -3192,7 +3520,13 @@ _.PVP =
 				cl(WARRIOR, {
 					i(146449, {	-- Ensemble: Cataclysmic Gladiator's Plate Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-						["sym"] = { {"sub", "pvp_set_ensemble", -9979, -674, -661, 1 }, },
+						["sym"] = { 
+							{"sub", "pvp_set_ensemble", -9979, -674, -661, 1 },
+							{"select", "itemID", 73550 },	-- Cataclysmic Gladiator's Armplates of Alacrity
+							{"select", "itemID", 73554 },	-- Cataclysmic Gladiator's Girdle of Prowess
+							{"select", "itemID", 73552 },	-- Cataclysmic Gladiator's Warboots of Alacrity
+							{"exclude", "itemID", 146449 },	-- Exclude itself to stop duplicating 
+						},
 					}),
 					i(73482, {	-- Cataclysmic Gladiator's Plate Chestpiece
 						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor

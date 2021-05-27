@@ -883,7 +883,10 @@ _.Zones =
 				q(1454,  {	-- The Karnitol Shipwreck
 					["provider"] = { "n", 5638 },	-- Kreldig Ungor
 					["coord"] = { 66.2, 9.6, 66 },
-					["sourceQuest"] = 1453,	-- Reclaimers' Business in Desolace
+					["sourceQuests"] = {
+						1453,	-- Reclaimers' Business in Desolace
+						14354,	-- Elune's Gift
+					},
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1456,  {	-- The Karnitol Shipwreck
@@ -912,6 +915,10 @@ _.Zones =
 					["sourceQuests"] = {
 						14381,	-- Cleansing Our Crevasse (A)
 						14394,	-- Death to Agogridon
+					},
+					["altQuests"] = {
+						14411,	-- Feralas Breadcrumb [PH]
+						14414,	-- Feralas Breadcrumb [PH]
 					},
 				}),
 				q(26589, {	-- The Wilds of Feralas (H)

@@ -1920,7 +1920,7 @@ _.Zones =
 					},
 				}),
 				q(40762, {	-- Zealot's Dues
-					["u"] = REMOVED_FROM_GAME,	-- Item doesn't appear to drop anymore, so marking quest as removed for now
+					-- This quest item was confirmed to drop multiple times in 9.0.5, it has not been removed from game.
 					["cr"] = 106275,	-- Commander Domitille
 					["provider"] = { "i", 136851 },	-- Commander Domitille's Helm
 					["coords"] = {

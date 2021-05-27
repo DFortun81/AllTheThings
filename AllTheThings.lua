@@ -3437,6 +3437,33 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		group = root;
 		-- print(group.g and #group.g,"Merge total");
 		-- print("Final Group",group.key,group[group.key],group.collectible,group.collected);
+		
+		-- Resolve Cost
+		if paramA == "currencyID" then
+			local costResults = app.SearchForField("currencyIDAsCost", paramB);
+			if costResults and #costResults > 0 then
+				if not root.g then root.g = {} end
+				local usedToBuy = app.CreateNPC(-2);
+				usedToBuy.text = "Currency For";
+				if not usedToBuy.g then usedToBuy.g = {}; end
+				for i,o in ipairs(costResults) do
+					MergeObject(usedToBuy.g, CreateObject(o));
+				end
+				MergeObject(root.g, usedToBuy);
+			end
+		elseif paramA == "itemID" or (paramA == "s" and group.itemID) then
+			local costResults = app.SearchForField("itemIDAsCost", group.itemID or paramB);
+			if costResults and #costResults > 0 then
+				if not root.g then root.g = {} end
+				local usedToBuy = app.CreateNPC(-2);
+				usedToBuy.text = "Currency For";
+				if not usedToBuy.g then usedToBuy.g = {}; end
+				for i,o in ipairs(costResults) do
+					MergeObject(usedToBuy.g, CreateObject(o));
+				end
+				MergeObject(root.g, usedToBuy);
+			end
+		end
 
 		-- Special cases
 		-- Don't show nested criteria of achievements
@@ -3451,7 +3478,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			group.g = noCrits;
 			-- print("achieve nocrits",#group.g)
 		end
-
+		
 		-- Append any crafted things using this group
 		app.BuildCrafted(group);
 
@@ -3935,6 +3962,7 @@ fieldCache["artifactID"] = {};
 fieldCache["azeriteEssenceID"] = {};
 fieldCache["creatureID"] = {};
 fieldCache["currencyID"] = {};
+fieldCache["currencyIDAsCost"] = {};
 fieldCache["encounterID"] = {};
 fieldCache["factionID"] = {};
 fieldCache["flightPathID"] = {};
@@ -4087,6 +4115,8 @@ fieldConverters = {
 				elseif v[1] == "i" then
 					rawget(fieldConverters, "itemID")(group, v[2], true);
 					CacheField(group, "itemIDAsCost", v[2]);
+				elseif v[1] == "c" then
+					CacheField(group, "currencyIDAsCost", v[2]);
 				elseif v[1] == "o" then
 					-- WARNING: DEV ONLY START
 					if not app.ObjectNames[v[2]] then
@@ -4141,7 +4171,7 @@ fieldConverters = {
 						CacheField(group, "itemIDAsCost", v[2]);
 					end
 				elseif v[1] == "c" and v[2] > 0 then
-					CacheField(group, "currencyID", v[2]);
+					CacheField(group, "currencyIDAsCost", v[2]);
 				end
 			end
 		end
@@ -4283,19 +4313,6 @@ local function SearchForLink(link)
 					-- Search for the Item ID. (an item without an appearance)
 					_ = (modItemID ~= itemID) and SearchForField("itemID", modItemID) or SearchForField("itemID", itemID);
 					-- print("SEARCHING FOR ITEM LINK ", link, modItemID, itemID, _ and #_);
-				end
-
-				-- Merge together the cost search results as well.
-				local searchResultsAsCost = (modItemID ~= itemID) and SearchForField("itemIDAsCost", modItemID) or SearchForField("itemIDAsCost", itemID);
-				-- print("SEARCHING FOR COST",modItemID,itemID,searchResultsAsCost and #searchResultsAsCost)
-				if searchResultsAsCost and #searchResultsAsCost > 0 then
-					if not _ then
-						_ = searchResultsAsCost;
-					else
-						for i,o in ipairs(searchResultsAsCost) do
-							table.insert(_, o);
-						end
-					end
 				end
 				return _;
 			end
@@ -6137,8 +6154,39 @@ local fields = {
 		local info = t.info;
 		return info and info.name or ("Currency #" .. t.currencyID);
 	end,
+	["collectible"] = function(t)
+		return t.collectibleAsCost;
+	end,
+	["collectibleAsCost"] = function(t)
+		if t.parent and t.parent.saved then return false; end
+		local results = app.SearchForField("currencyIDAsCost", t.currencyID);
+		if results and #results > 0 then
+			for _,ref in pairs(results) do
+				if ref.currencyID ~= t.currencyID and app.RecursiveGroupRequirementsFilter(ref) then
+					if (ref.collectible and not ref.collected) or (ref.total and ref.total > 0 and ref.total < ref.progress) then
+						return true;
+					end
+				end
+			end
+			return false;
+		elseif t.metaAfterFailure then
+			setmetatable(t, t.metaAfterFailure);
+			return false;
+		end
+	end,
+	["collectibleAsCostAfterFailure"] = app.ReturnFalse,
+	["collectedAsCostAfterFailure"] = function(t)
+
+	end,
 };
 app.BaseCurrencyClass = app.BaseObjectFields(fields);
+(function()
+local fieldsAfterFailure = RawCloneData(fields);
+fieldsAfterFailure.collectibleAsCost = fields.collectibleAsCostAfterFailure;
+fieldsAfterFailure.collectedAsCost = fields.collectedAsCostAfterFailure;
+local newMeta = app.BaseObjectFields(fieldsAfterFailure);
+fields.metaAfterFailure = function(t) return newMeta; end;
+end)();
 app.CreateCurrencyClass = function(id, t)
 	return setmetatable(constructor(id, t, "currencyID"), app.BaseCurrencyClass);
 end
@@ -7799,7 +7847,7 @@ local itemFields = {
 					app.RecursiveGroupRequirementsFilter(ref) and
 					-- don't include items which are from something the current character cannot complete
 					not GetRelativeValue(t, "altcollected") then
-					if ref.collectible or (ref.total and ref.total > 0) then
+					if (ref.collectible and not ref.collected) or (ref.total and ref.total > 0 and ref.total < ref.progress) then
 						return true;
 					end
 				end
@@ -12950,18 +12998,28 @@ RowOnEnter = function (self)
 					_ = v[1];
 					if _ == "i" then
 						_,name,_,_,_,_,_,_,_,icon = GetItemInfo(v[2]);
-						amount = "x" .. formatNumericWithCommas(v[3]);
+						amount = v[3];
+						if amount > 1 then
+							amount = formatNumericWithCommas(amount) .. "x ";
+						else
+							amount = "";
+						end
 					elseif _ == "c" then
+						amount = v[3];
 						local currencyData = C_CurrencyInfo.GetCurrencyInfo(v[2])
-						name = currencyData.name or "Unknown"
+						name = C_CurrencyInfo.GetCurrencyLink(v[2], amount) or currencyData.name or "Unknown"
 						icon = currencyData.iconFileID or nil
-						amount = "x" .. formatNumericWithCommas(v[3]);
+						if amount > 1 then
+							amount = formatNumericWithCommas(amount) .. "x ";
+						else
+							amount = "";
+						end
 					elseif _ == "g" then
 						name = "";
 						icon = nil;
-						amount = GetMoneyString(v[2])
+						amount = GetMoneyString(v[2]);
 					end
-					GameTooltip:AddDoubleLine(k == 1 and L["COST"] or " ", (icon and ("|T" .. icon .. ":0|t") or "") .. (name or "???") .. " " .. amount);
+					GameTooltip:AddDoubleLine(k == 1 and L["COST"] or " ", amount .. (icon and ("|T" .. icon .. ":0|t") or "") .. (name or "???"));
 				end
 			else
 				local amount = GetMoneyString(reference.cost)

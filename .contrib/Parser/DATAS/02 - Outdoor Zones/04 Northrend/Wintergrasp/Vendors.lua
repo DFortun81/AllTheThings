@@ -217,6 +217,15 @@ _.Zones =
 							i(51576, {	-- Titan-Forged Spaulders of Triumph
 								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 							}),
+							i(46081),	-- Titan-forged Rune of audacity
+							i(46082),	-- Titan-forged Rune of determination
+							i(46083),	-- Titan-forged Rune of accuracy
+							i(46084),	-- Titan-forged Rune of cruelty
+							i(46085),	-- Titan-forged Rune of alacrity
+							i(48999),	-- Titan-forged band of ascendancy
+							i(49000),	-- Titan-forged band of victory
+							i(51568),	-- Titan-forged pendant of ascdency
+							i(51569),	-- Titan-forged pendant of victory
 						},
 					}),
 					n(39172, {	-- Marshal Magruder <Wintergrasp Quartermaster>
@@ -425,6 +434,15 @@ _.Zones =
 							i(51576, {	-- Titan-Forged Spaulders of Triumph
 								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 							}),
+							i(46081),	-- Titan-forged Rune of audacity
+							i(46082),	-- Titan-forged Rune of determination
+							i(46083),	-- Titan-forged Rune of accuracy
+							i(46084),	-- Titan-forged Rune of cruelty
+							i(46085),	-- Titan-forged Rune of alacrity
+							i(48999),	-- Titan-forged band of ascendancy
+							i(49000),	-- Titan-forged band of victory
+							i(51568),	-- Titan-forged pendant of ascdency
+							i(51569),	-- Titan-forged pendant of victory
 						},
 					}),
 				},

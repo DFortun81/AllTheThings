@@ -24,6 +24,7 @@ _.Instances = { tier(2,	applyclassicphase(TBC_PHASE_TWO, { -- Burning Crusade
 				}),
 			}),
 			n(ZONEDROPS, {
+				i(24368),	-- Coilfang Armaments
 				i(30280, {	-- Pattern: Belt of Blasting
 					["spellID"] = 36315,	-- Belt of Blasting
 					["requireSkill"] = TAILORING,

@@ -54,18 +54,6 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 					},
 					["lvl"] = lvlsquish(61, 10, 61),
 				}),
-				q(9738, {	-- Lost in Action
-					["qg"] = 17884,	-- Watcher Jhang
-					["coord"] = { 52.3, 36.0, ZANGARMARSH },
-					["maps"] = { COILFANG_RESERVOIR_SLAVEPENS, ZANGARMARSH },
-					["timeline"] = { "removed 4.3.0.14732" },
-					["lvl"] = lvlsquish(62, 10, 62),
-					["groups"] = {
-						i(25541),	-- Cenarion Ring of Casting
-						i(28029),	-- Goldenvine Wraps
-						i(25540),	-- Dark Cloak of the Marsh
-					},
-				}),
 				q(9717, {	-- Oh, It's On!
 					["qg"] = 17857,	-- T'shu
 					["coord"] = { 19.4, 49.8, ZANGARMARSH },
