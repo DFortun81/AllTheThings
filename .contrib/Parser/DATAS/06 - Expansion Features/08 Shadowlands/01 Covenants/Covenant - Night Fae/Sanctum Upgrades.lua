@@ -538,6 +538,55 @@ _.ExpansionFeatures =
 							["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
 							["isDaily"] = true,
 						}),
+						q(62466, {	-- Go Beyond! (1)
+							-- requires tier 3 network, but there's no SQ for that
+							["sourceQuests"] = { 57583 },	-- Through the Veil
+							["provider"] = { "n", 167455 },	-- Marasmius
+							["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
+							["isDaily"] = true,
+						}),
+						q(62263, {	-- Go Beyond! (2)
+							-- requires tier 3 network, but there's no SQ for that
+							["sourceQuests"] = { 57583 },	-- Through the Veil
+							["provider"] = { "n", 167455 },	-- Marasmius
+							["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
+							["isDaily"] = true,
+						}),
+						q(62459, {	-- Go Beyond! (3)
+							-- requires tier 3 network, but there's no SQ for that
+							["sourceQuests"] = { 57583 },	-- Through the Veil
+							["provider"] = { "n", 167455 },	-- Marasmius
+							["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
+							["isDaily"] = true,
+						}),
+						q(62417, {	-- Go Beyond! (4)
+							-- requires tier 3 network, but there's no SQ for that
+							["sourceQuests"] = { 57583 },	-- Through the Veil
+							["provider"] = { "n", 167455 },	-- Marasmius
+							["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
+							["isDaily"] = true,
+						}),
+						q(60188, {	-- Go Beyond! (5)
+							-- requires tier 3 network, but there's no SQ for that
+							["sourceQuests"] = { 57583 },	-- Through the Veil
+							["provider"] = { "n", 167455 },	-- Marasmius
+							["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
+							["isDaily"] = true,
+						}),
+						q(62400, {	-- Go Beyond! (6)
+							-- requires tier 3 network, but there's no SQ for that
+							["sourceQuests"] = { 57583 },	-- Through the Veil
+							["provider"] = { "n", 167455 },	-- Marasmius
+							["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
+							["isDaily"] = true,
+						}),
+						q(62465, {	-- Go Beyond! (7)
+							-- requires tier 3 network, but there's no SQ for that
+							["sourceQuests"] = { 57583 },	-- Through the Veil
+							["provider"] = { "n", 167455 },	-- Marasmius
+							["coord"] = { 53.6, 52.7, 1819 },	-- The Ring
+							["isDaily"] = true,
+						}),
 						q(62614, {	-- Hyphae Patrol: Eventide Grove
 							["sourceQuests"] = { 57583 },	-- Through the Veil
 							["provider"] = { "n", 167455 },	-- Marasmius
