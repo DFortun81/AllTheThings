@@ -1261,7 +1261,27 @@ local function GetUnobtainableTexture(group)
 	end
 	return L["UNOBTAINABLE_ITEM_TEXTURES"][index or 1];
 end
-local function SetPortraitIcon(self, data, x)
+local function SetIndicatorIcon(self, data)
+	if data.saved then
+		if data.parent and data.parent.locks or data.repeatable then
+			self:SetTexture(app.asset("known"))
+			return true;
+		else
+			self:SetTexture(app.asset("known_green"));
+			return true;
+		end
+	else
+		local asset = app.GetIndicator(data);
+		if asset then
+			self:SetTexture(app.asset(asset));
+			return true;
+		elseif data.u then
+			self:SetTexture(GetUnobtainableTexture(data));
+			return true;
+		end
+	end
+end
+local function SetPortraitIcon(self, data)
 	self.lastData = data;
 	local displayID = GetDisplayID(data);
 	if displayID then
@@ -4837,7 +4857,7 @@ local function RefreshCollections()
 	StartCoroutine("RefreshingCollections", function()
 		while InCombatLockdown() do coroutine.yield(); end
 		app.print("Refreshing collection...");
-		app.events.QUEST_LOG_UPDATE();
+		app.RefreshQuestInfo();
 
 		-- Harvest Illusion Collections
 		local collectedIllusions = ATTAccountWideData.Illusions;
@@ -12046,7 +12066,7 @@ function app:CreateMiniListForGroup(group)
 		popout.data = group;
 		popout.data.hideText = true;
 		popout.data.visible = true;
-		popout.data.indent = 0;	-- TODO: get some extra padding for potential indicators on the top row
+		popout.data.indent = 0;
 		popout.data.total = 0;
 		popout.data.progress = 0;
 		BuildGroups(popout.data, popout.data.g);
@@ -12068,8 +12088,31 @@ function app:CreateMiniListForGroup(group)
 				oldRefresh(self, ...);
 				app.AccountWideQuests = oldQuestTracking;
 			end;
-			-- TODO: register quest log update event to refresh/soft-update the window for indicators
+			popout:SetScript("OnEvent", function(self, e, ...)
+				print("EVENT", e, ...)
+				if self:IsVisible() then
+					print("QUEST_LOG_UPDATE:questChainWindow")
+					self:Update();
+				end
+			end);
+			-- extra indent for quest chain window
+			-- popout.data.indent = 1;
 		end
+	end
+	-- showing the quest chain window, register any local event handlers
+	if showing and popout.isQuestChain then
+		-- register quest log update event to refresh/soft-update the window for indicators on quest chain windows
+		print("Registered Quest Window events")
+		self:RegisterEvent("QUEST_LOG_UPDATE");
+		self:RegisterEvent("QUEST_TURNED_IN");
+		self:RegisterEvent("QUEST_ACCEPTED");
+		self:RegisterEvent("QUEST_REMOVED");
+	elseif not showing then
+		print("Unregistered Quest Window events")
+		self:UnregisterEvent("QUEST_LOG_UPDATE");
+		self:UnregisterEvent("QUEST_TURNED_IN");
+		self:UnregisterEvent("QUEST_ACCEPTED");
+		self:UnregisterEvent("QUEST_REMOVED");
 	end
 	popout:Toggle(true);
 end
@@ -12102,7 +12145,7 @@ end
 local function AdjustRowIndent(row, indentAdjust)
 	if row.Indicator then
 		local _, _, _, x = row.Indicator:GetPoint(2);
-		row.Indicator:SetPoint("RIGHT", row, "LEFT", x - indentAdjust, 0);
+		row.Indicator:SetPoint("LEFT", row, "LEFT", x - indentAdjust, 0);
 	end
 	if row.Texture then
 		-- only ever LEFT point set
@@ -12131,7 +12174,7 @@ local function SetRowData(self, row, data)
 		-- no or bad sourceID or requested to reSource and is of a proper source-able quality
 		elseif data.reSource and (not data.q or data.q > 1) then
 			-- If it doesn't, the source ID will need to be harvested.
-			local s, dressable = GetSourceID(text) or (data.artifactID and data.s);
+			local s = GetSourceID(text) or (data.artifactID and data.s);
 			if s and s > 0 then
 				data.reSource = nil;
 				-- only save the source if it is different than what we already have
@@ -12182,9 +12225,8 @@ local function SetRowData(self, row, data)
 			data.reSource = nil;
 		-- WARNING: DEV ONLY END
 		end
-		local leftmost = row;
-		local relative = "LEFT";
-		local x = ((CalculateRowIndent(data) * 8) or 0) + 8;
+		local leftmost, relative, iconSize, rowPad = row, "LEFT", 16, 8;
+		local x = CalculateRowIndent(data) * rowPad + rowPad;
 		row.indent = x;
 		local back = CalculateRowBack(data);
 		row.ref = data;
@@ -12192,29 +12234,10 @@ local function SetRowData(self, row, data)
 			row.Background:SetAlpha(back or 0.2);
 			row.Background:Show();
 		end
-		if data.u then
-			local texture = GetUnobtainableTexture(data);
-			if texture then
-				row.Indicator:SetTexture(texture);
-				row.Indicator:SetPoint("RIGHT", leftmost, relative, x, 0);
-				row.Indicator:Show();
-			end
-		end
-		if data.saved then
-			if data.parent and data.parent.locks or data.repeatable then
-				row.Indicator:SetTexture(app.asset("known"));
-			else
-				row.Indicator:SetTexture(app.asset("known_green"));
-			end
-			row.Indicator:SetPoint("RIGHT", leftmost, relative, x, 0);
+		if SetIndicatorIcon(row.Indicator, data) then
+			row.Indicator:SetPoint("LEFT", leftmost, relative, x - iconSize, 0);
 			row.Indicator:Show();
-		else
-			local indicator = app.GetIndicator(data);
-			if indicator then
-				row.Indicator:SetTexture(app.asset(indicator));
-				row.Indicator:SetPoint("RIGHT", leftmost, relative, x, 0);
-				row.Indicator:Show();
-			end
+			row.indent = row.indent - iconSize;
 		end
 		if SetPortraitIcon(row.Texture, data) then
 			row.Texture.Background:SetPoint("TOPLEFT", row.Texture);
@@ -12223,7 +12246,7 @@ local function SetRowData(self, row, data)
 			row.Texture:Show();
 			leftmost = row.Texture;
 			relative = "RIGHT";
-			x = 4;
+			x = rowPad / 2;
 		end
 		local summary = GetProgressTextForRow(data);
 		local iconAdjust;
@@ -12287,7 +12310,7 @@ local function Refresh(self)
 	local totalRowCount = #rowData;
 	if totalRowCount > 0 then
 		-- Fill the remaining rows up to the (visible) row count.
-		local container, rowCount, totalHeight, minIndent = self.Container, 0, 0;
+		local container, rowCount, totalHeight, windowPad, minIndent = self.Container, 0, 0, 8;
 		local current = math.max(1, math.min(self.ScrollBar.CurrentValue, totalRowCount));
 
 		-- Ensure that the first row doesn't move out of position.
@@ -12315,16 +12338,30 @@ local function Refresh(self)
 		end
 
 		-- Readjust the indent of visible rows
-		if not minIndent then
-			minIndent = 0;
-		elseif minIndent > 15 then
-			minIndent = minIndent - 16;
+		-- if there's actually an indent to adjust on top row (due to possible indicator)
+		row = rawget(container.rows, 1);
+		if row.indent ~= windowPad then
+			AdjustRowIndent(row, row.indent - windowPad);
+			-- increase the window pad extra for sub-rows so they will indent slightly more than the header row with indicator
+			windowPad = windowPad + 8;
+		else
+			windowPad = windowPad + 4;
 		end
-		-- if there's actually an indent to adjust...
-		if minIndent > 0 then
+		-- local headerAdjust = 0;
+		-- if startIndent ~= 8 then
+		-- 	-- header only adjust
+		-- 	headerAdjust = startIndent - 8;
+		-- 	print("header adjust",headerAdjust)
+		-- 	row = rawget(container.rows, 1);
+		-- 	AdjustRowIndent(row, headerAdjust);
+		-- end
+		-- adjust remaining rows to align on the left
+		if minIndent and minIndent ~= windowPad then
+			-- print("minIndent",minIndent,windowPad)
+			local adjust = minIndent - windowPad;
 			for i=2,rowCount do
 				row = rawget(container.rows, i);
-				AdjustRowIndent(row, minIndent);
+				AdjustRowIndent(row, adjust);
 			end
 		end
 
