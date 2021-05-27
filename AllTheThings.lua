@@ -7351,8 +7351,10 @@ local fields = {
 	end,
 	["g"] = function(t)
 		-- unlocking the heirloom is the only thing contained in the heirloom
-		rawset(t, "g", { setmetatable({ ["heirloomUnlockID"] = t.itemID, ["u"] = t.u, ["f"] = t.f }, app.BaseHeirloomUnlocked) });
-		return rawget(t, "g");
+		if C_Heirloom_GetHeirloomMaxUpgradeLevel(t.itemID) then
+			rawset(t, "g", { setmetatable({ ["heirloomUnlockID"] = t.itemID, ["u"] = t.u, ["f"] = t.f }, app.BaseHeirloomUnlocked) });
+			return rawget(t, "g");
+		end
 	end,
 };
 app.BaseHeirloom = app.BaseObjectFields(fields);
