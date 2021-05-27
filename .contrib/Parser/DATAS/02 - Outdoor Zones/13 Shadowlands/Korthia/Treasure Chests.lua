@@ -33,6 +33,17 @@ _.Zones =
 						}),
 					},
 				}),
+				o(369204, {	-- Displaced Relic
+					["description"] = "The coordinates provided are for the start of the path to the treasure.  Walk and jump along the floating debris until you reach it.",
+				--	["questID"] = 64252,
+					["coord"] = { 47.4, 78.3, KORTHIA },
+					["g"] = {
+						crit(6, {	-- Displaced Relic
+							["achievementID"] = 15099,	-- Treasures of Korthia
+						}),
+						i(187350),	-- Displaced Relic
+					},
+				}),
 				o(369149, {	-- Forgotten Feather
 					["description"] = "Use a |cFFFFFFFFGoblin Glider|r at |cFFFFFFFF63.8, 28.9|r to access the island.",
 				--	["questID"] = 64234,
@@ -171,16 +182,25 @@ _.Zones =
 					["questID"] = 64021,
 					["isDaily"] = true,
 					["coord"] = { 58.8, 33.6, KORTHIA },
+					["g"] = {
+						i(187431),	-- Sleeping Armament
+					},
 				}),
 				o(369339, {	-- Mawsworn Cache
 					["questID"] = 64363,
 					["isDaily"] = true,
 					["coord"] = { 61.2, 57.9, KORTHIA },
+					["g"] = {
+						i(187431),	-- Sleeping Armament
+					},
 				}),
 				o(369341, {	-- Mawsworn Cache
 					["questID"] = 64364,
 					["isDaily"] = true,
 					["coord"] = { 56.4, 69.5, KORTHIA },
+					["g"] = {
+						i(187431),	-- Sleeping Armament
+					},
 				}),
 				o(369333, {	-- Nest of Unusual Materials
 					["questID"] = 64358,
@@ -249,6 +269,7 @@ _.Zones =
 						{ 38.2, 51.7, KORTHIA },	-- Pile of Bones
 						{ 39.6, 50.2, KORTHIA },	-- Pile of Bones
 						{ 45.6, 81.4, KORTHIA },	-- Relic Cache
+						{ 47.2, 76.8, KORTHIA },	-- Relic Cache
 						{ 50.6, 67.1, KORTHIA },	-- Relic Cache
 						{ 53.9, 76.1, KORTHIA },	-- Relic Cache
 						{ 54.2, 72.3, KORTHIA },	-- Relic Cache
@@ -288,6 +309,7 @@ _.Zones =
 						{ 38.2, 51.7, KORTHIA },	-- Pile of Bones
 						{ 39.6, 50.2, KORTHIA },	-- Pile of Bones
 						{ 45.6, 81.4, KORTHIA },	-- Relic Cache
+						{ 47.2, 76.8, KORTHIA },	-- Relic Cache
 						{ 50.6, 67.1, KORTHIA },	-- Relic Cache
 						{ 53.9, 76.1, KORTHIA },	-- Relic Cache
 						{ 54.2, 72.3, KORTHIA },	-- Relic Cache
@@ -327,6 +349,7 @@ _.Zones =
 						{ 38.2, 51.7, KORTHIA },	-- Pile of Bones
 						{ 39.6, 50.2, KORTHIA },	-- Pile of Bones
 						{ 45.6, 81.4, KORTHIA },	-- Relic Cache
+						{ 47.2, 76.8, KORTHIA },	-- Relic Cache
 						{ 50.6, 67.1, KORTHIA },	-- Relic Cache
 						{ 53.9, 76.1, KORTHIA },	-- Relic Cache
 						{ 54.2, 72.3, KORTHIA },	-- Relic Cache
@@ -366,6 +389,7 @@ _.Zones =
 						{ 38.2, 51.7, KORTHIA },	-- Pile of Bones
 						{ 39.6, 50.2, KORTHIA },	-- Pile of Bones
 						{ 45.6, 81.4, KORTHIA },	-- Relic Cache
+						{ 47.2, 76.8, KORTHIA },	-- Relic Cache
 						{ 50.6, 67.1, KORTHIA },	-- Relic Cache
 						{ 53.9, 76.1, KORTHIA },	-- Relic Cache
 						{ 54.2, 72.3, KORTHIA },	-- Relic Cache
@@ -414,6 +438,7 @@ _.Zones =
 							["coord"] = { 59.1, 48.7, KORTHIA },
 							["name"] = "Spectral Key #3, Seeker's Quorum Chain",
 						}),
+						i(187240),	-- Field Warden's Watchful Eye
 					},
 				}),
 			}),

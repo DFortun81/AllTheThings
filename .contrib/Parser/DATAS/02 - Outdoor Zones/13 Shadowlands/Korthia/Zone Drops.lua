@@ -49,6 +49,7 @@ _.Zones =
 				i(187335),	-- Maldraxxus Larva Shell
 				i(187330),	-- Naaru Shard Fragment
 				i(187332),	-- Recovered Page of Voices
+				i(187328),	-- Ripped Cosmology Chart
 				i(187323),	-- Runic Diagram
 				i(187462),	-- Scroll of Shadowlands Fables
 				i(187334),	-- Shattered Void Tablet

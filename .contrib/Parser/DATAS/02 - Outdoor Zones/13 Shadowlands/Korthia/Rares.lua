@@ -140,6 +140,28 @@ _.Zones =
 						i(186652),	-- Garnet Razorwing (MOUNT!)
 					},
 				}),
+				n(179608, {	-- Screaming Shade
+					["description"] = "Requires someone to enter the Rift and click the rare, at which point it will pull the player out into the normal phase of Korthia.\n\nWhen the rare has shifted into the normal Korthia phase, there is a zonewide announcement: |cFFff8040Screaming Shade breaks into Korthia from the Rift!|r",
+					["questID"] = 64263,
+					["isDaily"] = true,
+					["coord"] = { 44.6, 42.9, KORTHIA },
+					["g"] = {
+						crit(22, {	-- Screaming Shade
+							["achievementID"] = 15107,	-- Conquering Korthia
+						}),
+					},
+				}),
+				n(179911, {	-- Silent Soulstalker
+					["description"] = "Requires someone to enter the Rift and click the rare, at which point it will pull the player out into the normal phase of Korthia.\n\nWhen the rare has shifted into the normal Korthia phase, there is a zonewide announcement: |cFFff8040Silent Soulstalker breaks into Korthia from the Rift!|r",
+					["questID"] = 64284,
+					["isDaily"] = true,
+					["coord"] = { 57.5, 70.2, KORTHIA },
+					["g"] = {
+						crit(23, {	-- Silent Soulstalker
+							["achievementID"] = 15107,	-- Conquering Korthia
+						}),
+					},
+				}),
 				n(179985, {	-- Stygian Stonecrusher
 					["description"] = "Speak to Drippy, and then defend the NPCs as they repair the Broken Gatecrasher.\n\nRequires a |cFFfe040fVenthyr|r to start.",
 					["questID"] = 64313,
@@ -178,6 +200,7 @@ _.Zones =
 						{ 32.5, 43.0, KORTHIA },
 						{ 43.3, 57.7, KORTHIA },	-- cave entrance
 						{ 49.0, 29.0, KORTHIA },
+						{ 61.4, 57.8, KORTHIA },
 					},
 					["g"] = {
 						crit(18, {	-- Pop Quiz

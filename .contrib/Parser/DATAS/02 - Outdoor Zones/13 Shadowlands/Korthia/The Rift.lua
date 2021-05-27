@@ -7,7 +7,7 @@ _.Zones =
 	m(SHADOWLANDS, {
 		m(KORTHIA, {
 			n(-978, {	-- The Rift
-				["description"] = "The things in this section are only accessible when you are in The Rift, a version of the Maw populated by shades.\n\nIn Korthia, this phase can be accessed by using a |cFF1eff00Repaired Riftkey|r on a |cFFFFFFFFMaw Rift|r. To get there in the Maw, you can either walk to the Maw after entering a |cFFFFFFFFMaw Rift|r in Korthia, or use the |cFFFFFFFFUnbalanced Riftstone|r from the Night Fae covenant assault quest |cFF349cffA Shady Place|r.",
+				["description"] = "The things in this section are only accessible when you are in the Rift, a version of the Maw populated by shades.\n\nIn Korthia, this phase can be accessed by using a |cFF1eff00Repaired Riftkey|r on a |cFFFFFFFFMaw Rift|r. To get there in the Maw, you can either walk to the Maw after entering a |cFFFFFFFFMaw Rift|r in Korthia, or use the |cFFFFFFFFUnbalanced Riftstone|r from the Night Fae covenant assault quest |cFF349cffA Shady Place|r.",
 				["g"] = {
 					n(QUESTS, {
 						q(63919, {	-- Book of Binding: The Tormented Sorceror
@@ -28,6 +28,11 @@ _.Zones =
 							["coord"] = { 51.9, 52.6, KORTHIA },
 							["cr"] = 179968,	-- Enigmatic Decrypting Device
 						}),
+						q(64522, {	-- Stolen Korthian Supplies
+							["sourceQuests"] = { 64526 },	-- Mysterious Rifts
+							["provider"] = { "i", 187276 },	-- Stolen Korthian Supplies
+							["cr"] = 178757,	-- Hungering Manifestation (dropped from 1st thing i killed in the Rift)
+						}),
 						q(63913, {	-- Unstable Sin'dorei Explosive
 							["sourceQuests"] = { 64526 },	-- Mysterious Rifts
 							["provider"] = { "i", 187202 },	-- Unstable Sin'dorei Explosive
@@ -35,10 +40,22 @@ _.Zones =
 							["cr"] = 179902,	-- Unstable Sin'dorei Explosive
 						}),
 					}),
+					n(RARES, {
+						n(179914, {	-- Observer Yorik
+						--	["questID"] = ,
+							["isDaily"] = true,
+							["coord"] = { 50.2, 75.4, KORTHIA },
+							["g"] = {
+								crit(17, {	-- Observer Yorik
+									["achievementID"] = 15107,	-- Conquering Korthia
+								}),
+							},
+						}),
+					}),
 					n(TREASURES, {
 						i(187421),	-- Ashen Linament
 						i(187251),	-- Shaded Skull Shoulderguards TODO - received from 369437 but assume it's not specific to that chest
-						o(369437369437369, {	-- Riftbound Cache TODO fix objectID
+						o(369437369437, {	-- Riftbound Cache TODO fix objectID
 							["questID"] = 64470,
 							["isDaily"] = true,
 							["coord"] = { 24.8, 56.1, KORTHIA },
@@ -57,6 +74,14 @@ _.Zones =
 							["questID"] = 64471,
 							["isDaily"] = true,
 							["coord"] = { 54.8, 42.3, KORTHIA },
+						}),
+					}),
+					n(ZONEDROPS, {
+						i(187174, {	-- Shaded Judgment Stone (TOY!)
+							["crs"] = {
+								178757,	-- Hungering Manifestation
+								179832,	-- Skittering Shadow
+							},
 						}),
 					}),
 				},

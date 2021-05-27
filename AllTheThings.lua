@@ -7354,8 +7354,10 @@ local fields = {
 	end,
 	["g"] = function(t)
 		-- unlocking the heirloom is the only thing contained in the heirloom
-		rawset(t, "g", { setmetatable({ ["heirloomUnlockID"] = t.itemID, ["u"] = t.u, ["f"] = t.f }, app.BaseHeirloomUnlocked) });
-		return rawget(t, "g");
+		if C_Heirloom_GetHeirloomMaxUpgradeLevel(t.itemID) then
+			rawset(t, "g", { setmetatable({ ["heirloomUnlockID"] = t.itemID, ["u"] = t.u, ["f"] = t.f }, app.BaseHeirloomUnlocked) });
+			return rawget(t, "g");
+		end
 	end,
 };
 app.BaseHeirloom = app.BaseObjectFields(fields);
@@ -17170,7 +17172,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 end);
 
 -- WARNING: DEV ONLY START
---[[
+
 -- Uncomment this section if you need to enable Debugger:
 -- CLEU binding only happens when debugger is enabled because of how expensive it can get in large mob farms
 app:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED");

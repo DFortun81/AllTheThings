@@ -21,14 +21,9 @@ _.Zones =
 				ach(15107, {	-- Conquering Korthia
 					crit(7),	-- Deadsoul Hatcher
 					crit(11),	-- Fallen Charger
-					crit(17),	-- Observer Yorik
-					crit(22),	-- Screaming Shade
-					crit(23),	-- Silent Soulstalker
 				}),
 				ach(15066),		-- Reliquary Restoration
-				ach(15099, {	-- Treasures of Korthia
-					crit(6),	-- Displaced Relic
-				}),
+				ach(15099),	-- Treasures of Korthia
 			}),
 		}),
 	}),

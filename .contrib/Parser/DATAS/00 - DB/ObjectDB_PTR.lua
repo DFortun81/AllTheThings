@@ -2,6 +2,8 @@
 --   O B J E C T   D A T A B A S E   M O D U L E   --
 -----------------------------------------------------
 _.ObjectNames = {
+	[368208] = "Mawsworn Cache",
+	[368213] = "Mawsworn Cache",
 	[368645] = "Rift Hidden Cache",
 	[368646] = "Rift Hidden Cache",
 	[368347] = "Rift Hidden Cache",
@@ -27,6 +29,7 @@ _.ObjectNames = {
 	[369216] = "Helsworn Chest",
 	[369224] = "Jeweled Heart of Ezekiel",
 	[369225] = "Infested Vestige",
+	[369141] = "Mawsworn Cache",
 	[369183] = "Dislodged Nest",
 	[369232] = "Offering Box",
 	[369245] = "Korthian Relic Box",
@@ -44,6 +47,10 @@ _.ObjectNames = {
 	[369339] = "Mawsworn Cache",
 	[369340] = "Korthian Relic Box",
 	[369341] = "Mawsworn Cache",
+	[369437369437] = "Riftbound Cache",	-- TODO: FIX OBJECTID
+	[369437] = "Riftbound Cache",
+	[369440] = "Riftbound Cache",
+	[369439] = "Riftbound Cache",
 };
 _.ObjectIcons = {
 };

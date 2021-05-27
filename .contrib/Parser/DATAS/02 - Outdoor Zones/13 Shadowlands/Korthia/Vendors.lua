@@ -41,6 +41,7 @@ _.Zones =
 							["cost"] = { { "c", 1931, 8000 } },	-- 8,000x Catalogued Research
 						}),
 						i(187137, {	-- Research Report: Relic Finding Techniques
+							["questID"] = 64368,
 							["cost"] = { { "c", 1931, 5000 } },	-- 5,000x Catalogued Research
 						}),
 						i(187145, {	-- Treatise: Recognizing Stygia and its Uses

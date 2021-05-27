@@ -4595,7 +4595,9 @@ _.HiddenQuestTriggers =
 		q(64508),	-- hitting Renown 41 on Venthyr
 		q(64131),	-- hitting Renown 45 on Venthyr / received mount Sinfall Gravewing
 		q(64076),	-- hitting Renown 46 on Venthyr
-		q(64073),	-- Hitting Renown 47 on Venthyr
+		q(64073),	-- hitting Renown 47 on Venthyr
+		q(64134),	-- hitting Renown 50 on Venthyr
+		q(64452),	-- hitting Renown 52 on Venthyr
 		q(59744),	-- when opening the Battered Chest while on Repair and Restore
 		q(60302),	-- when channeling anima to Dominance Keep for the first time
 		-- q(61494),	-- using Building: Guardhouse
@@ -4780,12 +4782,13 @@ _.HiddenQuestTriggers =
 		q(64261),	-- Desmotaeron treasure - Jeweled Heart of Ezekiel
 		q(64244),	-- Korthia treasure - Anima Laden Egg
 		q(64241),	-- Korthia treasure - Dislodged Nest
+		q(64252),	-- Korthia treasure - Displaced Relic
 		q(64234),	-- Korthia treasure - Forgotten Feather
 		q(64222),	-- Korthia treasure - Glittering Nest Material
 		q(64264),	-- Korthia treasure - Infested Vestige
 		q(64238),	-- Korthia treasure - Lost Memento
 		q(64268),	-- Korthia treasure - Offering Box
 		q(64045),	-- The Maw repeatable treasure, Stolen Anima Vessel
-		q(64044),	-- The Maw repeatable treasure, Stolen Anima Vessel (34.2, 64.6)
+		q(64044),	-- The Maw repeatable treasure, Stolen Anima Vessel (34.2, 64.6) / (30.6, 58.4)
 	}),
 };
