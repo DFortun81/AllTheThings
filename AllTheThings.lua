@@ -3932,6 +3932,7 @@ fieldCache["artifactID"] = {};
 fieldCache["azeriteEssenceID"] = {};
 fieldCache["creatureID"] = {};
 fieldCache["currencyID"] = {};
+fieldCache["currencyIDAsCost"] = {};
 fieldCache["encounterID"] = {};
 fieldCache["factionID"] = {};
 fieldCache["flightPathID"] = {};
@@ -4084,6 +4085,8 @@ fieldConverters = {
 				elseif v[1] == "i" then
 					rawget(fieldConverters, "itemID")(group, v[2], true);
 					CacheField(group, "itemIDAsCost", v[2]);
+				elseif v[1] == "c" then
+					CacheField(group, "currencyIDAsCost", v[2]);
 				elseif v[1] == "o" then
 					-- WARNING: DEV ONLY START
 					if not app.ObjectNames[v[2]] then
@@ -4138,6 +4141,7 @@ fieldConverters = {
 						CacheField(group, "itemIDAsCost", v[2]);
 					end
 				elseif v[1] == "c" and v[2] > 0 then
+					CacheField(group, "currencyIDAsCost", v[2]);
 					CacheField(group, "currencyID", v[2]);
 				end
 			end
@@ -4320,7 +4324,18 @@ local function SearchForLink(link)
 		elseif kind == "achievementid" or kind == "achievement" then
 			return SearchForField("achievementID", id);
 		elseif kind == "currencyid" or kind == "currency" then
-			return SearchForField("currencyID", id);
+			local _ = SearchForField("currencyID", id);
+			local searchResultsAsCost = SearchForField("currencyIDAsCost", id);
+			if searchResultsAsCost and #searchResultsAsCost > 0 then
+				if not _ then
+					_ = searchResultsAsCost;
+				else
+					for i,o in ipairs(searchResultsAsCost) do
+						table.insert(_, o);
+					end
+				end
+			end
+			return _;
 		elseif kind == "spellid" or kind == "spell" or kind == "enchant" or kind == "talent" then
 			return SearchForField("spellID", id);
 		elseif kind == "speciesid" or kind == "species" or kind == "battlepet" then
@@ -6134,8 +6149,39 @@ local fields = {
 		local info = t.info;
 		return info and info.name or ("Currency #" .. t.currencyID);
 	end,
+	["collectible"] = function(t)
+		return t.collectibleAsCost;
+	end,
+	["collectibleAsCost"] = function(t)
+		if t.parent and t.parent.saved then return false; end
+		local results = app.SearchForField("currencyIDAsCost", t.currencyID);
+		if results and #results > 0 then
+			for _,ref in pairs(results) do
+				if ref.currencyID ~= t.currencyID and app.RecursiveGroupRequirementsFilter(ref) then
+					if (ref.collectible and not ref.collected) or (ref.total and ref.total > 0) then
+						return true;
+					end
+				end
+			end
+			return false;
+		elseif t.metaAfterFailure then
+			setmetatable(t, t.metaAfterFailure);
+			return false;
+		end
+	end,
+	["collectibleAsCostAfterFailure"] = app.ReturnFalse,
+	["collectedAsCostAfterFailure"] = function(t)
+
+	end,
 };
 app.BaseCurrencyClass = app.BaseObjectFields(fields);
+(function()
+local fieldsAfterFailure = RawCloneData(fields);
+fieldsAfterFailure.collectibleAsCost = fields.collectibleAsCostAfterFailure;
+fieldsAfterFailure.collectedAsCost = fields.collectedAsCostAfterFailure;
+local newMeta = app.BaseObjectFields(fieldsAfterFailure);
+fields.metaAfterFailure = function(t) return newMeta; end;
+end)();
 app.CreateCurrencyClass = function(id, t)
 	return setmetatable(constructor(id, t, "currencyID"), app.BaseCurrencyClass);
 end
