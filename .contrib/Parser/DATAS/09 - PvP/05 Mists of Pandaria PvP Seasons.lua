@@ -664,84 +664,40 @@ _.PVP =
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 							["sym"] = { {"sub", "pvp_weapons_ensemble", -10041, -675, -661 }, },
 						}),
-						i(91482, {	-- Malevolent Gladiator's Barrier
-							["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-						}),
-						i(91486, {	-- Malevolent Gladiator's Battle Staff
-							["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-						}),
-						i(91759, {	-- Malevolent Gladiator's Bonecracker
-							["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-						}),
-						i(91442, {	-- Malevolent Gladiator's Bonegrinder
-							["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-						}),
-						i(91442, {	-- Malevolent Gladiator's Bonegrinder
-							["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-						}),
-						i(91446, {	-- Malevolent Gladiator's Cleaver
-							["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-						}),
-						i(91440, {	-- Malevolent Gladiator's Decapitator
-							["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-						}),
-						i(91480, {	-- Malevolent Gladiator's Endgame
-							["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-						}),
-						i(91560, {	-- Malevolent Gladiator's Energy Staff
-							["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-						}),
-						i(91556, {	-- Malevolent Gladiator's Gavel
-							["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-						}),
-						i(91444, {	-- Malevolent Gladiator's Greatsword
-							["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-						}),
-						i(91757, {	-- Malevolent Gladiator's Hacker
-							["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-						}),
-						i(91460, {	-- Malevolent Gladiator's Longbow
-							["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-						}),
-						i(91660, {	-- Malevolent Gladiator's Pike
-							["cost"] = { { "i", 137642, 5 } }, -- 5x Mark of Honor
-						}),
-						i(91448, {	-- Malevolent Gladiator's Pummeler
-							["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-						}),
-						i(91450, {	-- Malevolent Gladiator's Quickblade
-							["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-						}),
-						i(91558, {	-- Malevolent Gladiator's Redoubt
-							["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-						}),
-						i(91749, {	-- Malevolent Gladiator's Render
-							["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-						}),
-						i(91494, {	-- Malevolent Gladiator's Reprieve
-							["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-						}),
-						i(91554, {	-- Malevolent Gladiator's Rifle
-							["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-						}),
-						i(91745, {	-- Malevolent Gladiator's Ripper
-							["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-						}),
-						i(91743, {	-- Malevolent Gladiator's Shanker
-							["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-						}),
-						i(91771, {	-- Malevolent Gladiator's Shield Wall
-							["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-						}),
-						i(91761, {	-- Malevolent Gladiator's Slicer
-							["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-						}),
-						i(91484, {	-- Malevolent Gladiator's Spellblade
-							["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-						}),
-						i(91535, {	-- Malevolent Gladiator's Staff
-							["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-						}),
+						i(84911),	-- Malevolent Gladiator's Barrier
+						i(84787),	-- Malevolent Gladiator's Battle Staff
+						i(84970),	-- Malevolent Gladiator's Bonecracker
+						i(84785),	-- Malevolent Gladiator's Bonegrinder
+						i(84965),	-- Malevolent Gladiator's Cleaver
+						i(84791),	-- Malevolent Gladiator's Decapitator
+						i(84866),	-- Malevolent Gladiator's Endgame
+						i(84788),	-- Malevolent Gladiator's Energy Staff
+						i(84893),	-- Malevolent Gladiator's Fleshslicer
+						i(84971),	-- Malevolent Gladiator's Gavel
+						i(84790),	-- Malevolent Gladiator's Greatsword
+						i(84966),	-- Malevolent Gladiator's Hacker
+						i(84896),	-- Malevolent Gladiator's Longbow
+						i(84786),	-- Malevolent Gladiator's Pike
+						i(84964),	-- Malevolent Gladiator's Pummeler
+						i(84969),	-- Malevolent Gladiator's Quickblade
+						i(84912),	-- Malevolent Gladiator's Redoubt
+						i(84963),	-- Malevolent Gladiator's Render
+						i(84867),	-- Malevolent Gladiator's Reprieve
+						i(84900),	-- Malevolent Gladiator's Rifle
+						i(84962),	-- Malevolent Gladiator's Ripper
+						i(84967),	-- Malevolent Gladiator's Shanker
+						i(84910),	-- Malevolent Gladiator's Shield Wall
+						i(84894),	-- Malevolent Gladiator's Slasher
+						i(84900),	-- Malevolent Gladiator's Slicer
+						i(84961),	-- Malevolent Gladiator's Spellblade
+						i(84789),	-- Malevolent Gladiator's Staff
+						-- Never
+						un(NEVER_IMPLEMENTED, i(84899)),	-- Malevolent Gladiator's Baton of Light
+						un(NEVER_IMPLEMENTED, i(84897)),	-- Malevolent Gladiator's Heavy Crossbow
+						un(NEVER_IMPLEMENTED, i(85118)),	-- Malevolent Gladiator's Shiv
+						un(NEVER_IMPLEMENTED, i(84895)),	-- Malevolent Gladiator's Shiv
+						un(NEVER_IMPLEMENTED, i(97846)),	-- Malevolent Gladiator's Spellblade
+						un(NEVER_IMPLEMENTED, i(84898)),	-- Malevolent Gladiator's Touch of Defeat
 					}),
 					cl(DEATHKNIGHT, {
 						i(138704, {	-- Ensemble: Malevolent Gladiator's Dreadplate Armor
@@ -1216,6 +1172,222 @@ _.PVP =
 						}),
 					}),
 					n(-322, {	-- Back
+						-- From Sha of Anger
+						i(84804),	-- Malevolent Gladiator's Cape of Cruelty
+						i(84805),	-- Malevolent Gladiator's Cape of Prowess
+						i(84807),	-- Malevolent Gladiator's Cloak of Alacrity
+						i(84806),	-- Malevolent Gladiator's Cloak of Prowess
+						i(84801),	-- Malevolent Gladiator's Drape of Cruelty
+						i(84802),	-- Malevolent Gladiator's Drape of Meditation
+						i(84803),	-- Malevolent Gladiator's Drape of Prowess
+						-- Never
+						un(NEVER_IMPLEMENTED, i(97926)),	-- Malevolent Gladiator's Drape of Prowess
+						un(NEVER_IMPLEMENTED, i(97836)),	-- Malevolent Gladiator's Drape of Prowess
+					}),
+					n(-326, {	-- Wrists
+						-- From Sha of Anger
+						i(84984),	-- Malevolent Gladiator's Armbands of Meditation
+						i(84983),	-- Malevolent Gladiator's Armbands of Prowess
+						i(84986),	-- Malevolent Gladiator's Armplates of Alacrity
+						i(84985),	-- Malevolent Gladiator's Armplates of Proficiency
+						i(84973),	-- Malevolent Gladiator's Armwraps of Accuracy
+						i(84972),	-- Malevolent Gladiator's Armwraps of Alacrity
+						i(84976),	-- Malevolent Gladiator's Bindings of Meditation
+						i(84982),	-- Malevolent Gladiator's Bindings of Prowess
+						i(84975),	-- Malevolent Gladiator's Bracers of Meditation
+						i(84974),	-- Malevolent Gladiator's Bracers of Prowess
+						i(84977),	-- Malevolent Gladiator's Cuffs of Accuracy
+						i(84979),	-- Malevolent Gladiator's Cuffs of Meditation
+						i(84978),	-- Malevolent Gladiator's Cuffs of Prowess
+						i(84981),	-- Malevolent Gladiator's Wristguards of Accuracy
+						i(84980),	-- Malevolent Gladiator's Wristguards of Alacrity
+						-- Never
+						un(NEVER_IMPLEMENTED, i(97838)),	-- Malevolent Gladiator's Cuffs of Accuracy
+						un(NEVER_IMPLEMENTED, i(97521)),	-- Malevolent Gladiator's Cuffs of Meditation
+					}),
+					n(-328, {	-- Waist
+						-- From Sha of Anger
+						i(84960),	-- Malevolent Gladiator's Cord of Accuracy
+						i(84953),	-- Malevolent Gladiator's Cord of Cruelty
+						i(84951),	-- Malevolent Gladiator's Clasp of Cruelty
+						i(84952),	-- Malevolent Gladiator's Clasp of Meditation
+						i(84955),	-- Malevolent Gladiator's Cord of Cruelty
+						i(84954),	-- Malevolent Gladiator's Cord of Cruelty
+						i(84956),	-- Malevolent Gladiator's Cord of Meditation
+						i(84949),	-- Malevolent Gladiator's Girdle of Accuracy
+						i(84950),	-- Malevolent Gladiator's Girdle of Prowess
+						i(84957),	-- Malevolent Gladiator's Links of Accuracy
+						i(84958),	-- Malevolent Gladiator's Links of Cruelty
+						i(84948),	-- Malevolent Gladiator's Waistband of Accuracy
+						i(84947),	-- Malevolent Gladiator's Waistband of Cruelty
+						i(84959),	-- Malevolent Gladiator's Waistguard of Cruelty
+						i(84946),	-- Malevolent Gladiator's Waistguard of Meditation
+						-- Never
+						un(NEVER_IMPLEMENTED, i(97930)),	-- Malevolent Gladiator's Cord of Accuracy
+						un(NEVER_IMPLEMENTED, i(97840)),	-- Malevolent Gladiator's Cord of Accuracy
+						un(NEVER_IMPLEMENTED, i(97523)),	-- Malevolent Gladiator's Cord of Cruelty
+					}),
+					n(-330, {	-- Feet
+						-- From Sha of Anger
+						i(84809),	-- Malevolent Gladiator's Boots of Alacrity
+						i(84808),	-- Malevolent Gladiator's Boots of Cruelty
+						i(84819),	-- Malevolent Gladiator's Footguards of Alacrity (Leather)
+						i(84820),	-- Malevolent Gladiator's Footguards of Alacrity (Mail)
+						i(84813),	-- Malevolent Gladiator's Footguards of Meditation (Leather)
+						i(84821),	-- Malevolent Gladiator's Footguards of Meditation (Mail)
+						i(84811),	-- Malevolent Gladiator's Greaves of Alacrity
+						i(84812),	-- Malevolent Gladiator's Greaves of Meditation
+						i(84818),	-- Malevolent Gladiator's Sabatons of Alacrity
+						i(84817),	-- Malevolent Gladiator's Sabatons of Cruelty
+						i(84815),	-- Malevolent Gladiator's Treads of Alacrity
+						i(84814),	-- Malevolent Gladiator's Treads of Cruelty
+						i(84816),	-- Malevolent Gladiator's Treads of Meditation
+						i(84822),	-- Malevolent Gladiator's Warboots of Alacrity
+						i(84810),	-- Malevolent Gladiator's Warboots of Cruelty
+						-- Never
+						un(NEVER_IMPLEMENTED, i(97526)),	-- Malevolent Gladiator's Treads of Alacrity
+						un(NEVER_IMPLEMENTED, i(97842)),	-- Malevolent Gladiator's Treads of Cruelty
+						un(NEVER_IMPLEMENTED, i(97932)),	-- Malevolent Gladiator's Treads of Cruelty
+					}),
+					n(-384,	{	-- Neck
+						-- From Sha of Anger
+						i(84892),	-- Malevolent Gladiator's Choker of Accuracy
+						i(84891),	-- Malevolent Gladiator's Choker of Proficiency
+						i(84889),	-- Malevolent Gladiator's Necklace of Proficiency
+						i(84890),	-- Malevolent Gladiator's Necklace of Prowess
+						i(84886),	-- Malevolent Gladiator's Pendant of Alacrity
+						i(84887),	-- Malevolent Gladiator's Pendant of Cruelty
+						i(84888),	-- Malevolent Gladiator's Pendant of Meditation
+						-- Never
+						un(NEVER_IMPLEMENTED, i(97924)),	-- Malevolent Gladiator's Pendant of Cruelty
+						un(NEVER_IMPLEMENTED, i(97834)),	-- Malevolent Gladiator's Pendant of Cruelty
+					}),
+					n(-385,	{	-- Finger
+						-- From Sha of Anger
+						i(84824),	-- Malevolent Gladiator's Band of Accuracy
+						i(84823),	-- Malevolent Gladiator's Band of Cruelty
+						i(84825),	-- Malevolent Gladiator's Band of Meditation
+						i(84827),	-- Malevolent Gladiator's Ring of Accuracy
+						i(84826),	-- Malevolent Gladiator's Ring of Cruelty
+						i(84829),	-- Malevolent Gladiator's Signet of Accuracy
+						i(84828),	-- Malevolent Gladiator's Signet of Cruelty
+						-- Never
+						un(NEVER_IMPLEMENTED, i(97844)),	-- Malevolent Gladiator's Band of Accuracy
+						un(NEVER_IMPLEMENTED, i(97933)),	-- Malevolent Gladiator's Band of Cruelty
+						un(NEVER_IMPLEMENTED, i(97843)),	-- Malevolent Gladiator's Band of Cruelty
+						un(NEVER_IMPLEMENTED, i(97528)),	-- Malevolent Gladiator's Band of Cruelty
+					}),
+					n(-386,	{	-- Trinket
+						un(REMOVED_FROM_GAME, i(84934)),	-- Malevolent Gladiator's Badge of Conquest
+						un(REMOVED_FROM_GAME, i(84940)),	-- Malevolent Gladiator's Badge of Dominance
+						un(REMOVED_FROM_GAME, i(84942)),	-- Malevolent Gladiator's Badge of Victory
+						un(REMOVED_FROM_GAME, i(84936)),	-- Malevolent Gladiator's Emblem of Cruelty
+						un(REMOVED_FROM_GAME, i(84939)),	-- Malevolent Gladiator's Emblem of Meditation
+						un(REMOVED_FROM_GAME, i(84938)),	-- Malevolent Gladiator's Emblem of Tenacity
+						un(REMOVED_FROM_GAME, i(84935)),	-- Malevolent Gladiator's Insignia of Conquest
+						un(REMOVED_FROM_GAME, i(84941)),	-- Malevolent Gladiator's Insignia of Dominance
+						un(REMOVED_FROM_GAME, i(84937)),	-- Malevolent Gladiator's Insignia of Victory
+						un(REMOVED_FROM_GAME, i(84943)),	-- Malevolent Gladiator's Medallion of Cruelty (A)
+						un(REMOVED_FROM_GAME, i(84932)),	-- Malevolent Gladiator's Medallion of Meditation (A)
+						un(REMOVED_FROM_GAME, i(84945)),	-- Malevolent Gladiator's Medallion of Tenacity (A)
+						un(REMOVED_FROM_GAME, i(84944)),	-- Malevolent Gladiator's Medallion of Cruelty (H)
+						un(REMOVED_FROM_GAME, i(84933)),	-- Malevolent Gladiator's Medallion of Meditation (H)
+						un(REMOVED_FROM_GAME, i(84931)),	-- Malevolent Gladiator's Medallion of Tenacity (H)
+						-- Never
+						un(NEVER_IMPLEMENTED, i(97531)),	-- Malevolent Gladiator's Badge of Dominance
+						un(NEVER_IMPLEMENTED, i(97532)),	-- Malevolent Gladiator's Badge of Dominance
+						un(NEVER_IMPLEMENTED, i(97936)),	-- Malevolent Gladiator's Badge of Dominance
+						un(NEVER_IMPLEMENTED, i(97533)),	-- Malevolent Gladiator's Medallion of Cruelty (H)
+						un(NEVER_IMPLEMENTED, i(97845)),	-- Malevolent Gladiator's Medallion of Cruelty (H)
+						un(NEVER_IMPLEMENTED, i(97935)),	-- Malevolent Gladiator's Medallion of Cruelty (H)
+					}),
+				}),
+				n(-655, {	-- Ensemble Gear (Season 13 version)
+					n(-319, {	-- Weapons
+						i(144243, {	-- Arsenal: Malevolent Gladiator's Weapons
+							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
+							["sym"] = { {"sub", "pvp_weapons_ensemble", -10041, -675, -661 }, },
+						}),
+						i(91482, {	-- Malevolent Gladiator's Barrier
+							["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+						}),
+						i(91486, {	-- Malevolent Gladiator's Battle Staff
+							["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+						}),
+						i(91759, {	-- Malevolent Gladiator's Bonecracker
+							["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+						}),
+						i(91442, {	-- Malevolent Gladiator's Bonegrinder
+							["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+						}),
+						i(91442, {	-- Malevolent Gladiator's Bonegrinder
+							["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+						}),	
+						i(91446, {	-- Malevolent Gladiator's Cleaver
+							["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+						}),
+						i(91440, {	-- Malevolent Gladiator's Decapitator
+							["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+						}),
+						i(91480, {	-- Malevolent Gladiator's Endgame
+							["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+						}),
+						i(91560, {	-- Malevolent Gladiator's Energy Staff
+							["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+						}),
+						i(91556, {	-- Malevolent Gladiator's Gavel
+							["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+						}),
+						i(91444, {	-- Malevolent Gladiator's Greatsword
+							["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+						}),
+						i(91757, {	-- Malevolent Gladiator's Hacker
+							["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+						}),
+						i(91460, {	-- Malevolent Gladiator's Longbow
+							["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+						}),
+						i(91660, {	-- Malevolent Gladiator's Pike
+							["cost"] = { { "i", 137642, 5 } }, -- 5x Mark of Honor
+						}),
+						i(91448, {	-- Malevolent Gladiator's Pummeler
+							["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+						}),
+						i(91450, {	-- Malevolent Gladiator's Quickblade
+							["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+						}),
+						i(91558, {	-- Malevolent Gladiator's Redoubt
+							["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+						}),
+						i(91749, {	-- Malevolent Gladiator's Render
+							["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+						}),
+						i(91494, {	-- Malevolent Gladiator's Reprieve
+							["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+						}),
+						i(91554, {	-- Malevolent Gladiator's Rifle
+							["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+						}),
+						i(91745, {	-- Malevolent Gladiator's Ripper
+							["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+						}),
+						i(91743, {	-- Malevolent Gladiator's Shanker
+							["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+						}),
+						i(91771, {	-- Malevolent Gladiator's Shield Wall
+							["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+						}),
+						i(91761, {	-- Malevolent Gladiator's Slicer
+							["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+						}),
+						i(91484, {	-- Malevolent Gladiator's Spellblade
+							["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+						}),
+						i(91535, {	-- Malevolent Gladiator's Staff
+							["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+						}),
+					}),
+					n(-322, {	-- Back
 						i(91453, {	-- Malevolent Gladiator's Cape of Cruelty
 							["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 						}),
@@ -1239,13 +1411,16 @@ _.PVP =
 						}),
 					}),
 					n(-326, {	-- Wrists
-						i(91474, {	-- Malevolent Gladiator's Cuffs of Accuracy
+						i(91710, {	-- Malevolent Gladiator's Armbands of Meditation
 							["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 						}),
-						i(91476, {	-- Malevolent Gladiator's Cuffs of Meditation
+						i(91709, {	-- Malevolent Gladiator's Armbands of Prowess
 							["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 						}),
-						i(91475, {	-- Malevolent Gladiator's Cuffs of Prowess
+						i(91659, {	-- Malevolent Gladiator's Armplates of Alacrity
+							["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+						}),
+						i(91658, {	-- Malevolent Gladiator's Armplates of Proficiency
 							["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 						}),
 						i(91599, {	-- Malevolent Gladiator's Armwraps of Accuracy
@@ -1260,10 +1435,19 @@ _.PVP =
 						i(91541, {	-- Malevolent Gladiator's Bindings of Prowess
 							["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 						}),
-						i(91710, {	-- Malevolent Gladiator's Armbands of Meditation
+						i(91639, {	-- Malevolent Gladiator's Bracers of Meditation
 							["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 						}),
-						i(91709, {	-- Malevolent Gladiator's Armbands of Prowess
+						i(91638, {	-- Malevolent Gladiator's Bracers of Prowess
+							["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+						}),
+						i(91474, {	-- Malevolent Gladiator's Cuffs of Accuracy
+							["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+						}),
+						i(91476, {	-- Malevolent Gladiator's Cuffs of Meditation
+							["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+						}),
+						i(91475, {	-- Malevolent Gladiator's Cuffs of Prowess
 							["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 						}),
 						i(91574, {	-- Malevolent Gladiator's Wristguards of Accuracy
@@ -1272,20 +1456,20 @@ _.PVP =
 						i(91573, {	-- Malevolent Gladiator's Wristguards of Alacrity
 							["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 						}),
-						i(91659, {	-- Malevolent Gladiator's Armplates of Alacrity
-							["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
-						}),
-						i(91658, {	-- Malevolent Gladiator's Armplates of Proficiency
-							["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
-						}),
-						i(91639, {	-- Malevolent Gladiator's Bracers of Meditation
-							["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
-						}),
-						i(91638, {	-- Malevolent Gladiator's Bracers of Prowess
-							["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
-						}),
 					}),
 					n(-328, {	-- Waist
+						i(91537, {	-- Malevolent Gladiator's Belt of Cruelty
+							["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+						}),
+						i(91520, {	-- Malevolent Gladiator's Belt of Meditation
+							["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+						}),
+						i(91630, {	-- Malevolent Gladiator's Clasp of Cruelty
+							["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+						}),
+						i(91632, {	-- Malevolent Gladiator's Clasp of Meditation
+							["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+						}),
 						i(91464, {	-- Malevolent Gladiator's Cord of Accuracy
 							["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 						}),
@@ -1295,16 +1479,10 @@ _.PVP =
 						i(91466, {	-- Malevolent Gladiator's Cord of Meditation
 							["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 						}),
-						i(91537, {	-- Malevolent Gladiator's Belt of Cruelty
+						i(91650, {	-- Malevolent Gladiator's Girdle of Accuracy
 							["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 						}),
-						i(91520, {	-- Malevolent Gladiator's Belt of Meditation
-							["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
-						}),
-						i(91688, {	-- Malevolent Gladiator's Waistband of Accuracy
-							["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
-						}),
-						i(91595, {	-- Malevolent Gladiator's Waistband of Cruelty
+						i(91652, {	-- Malevolent Gladiator's Girdle of Prowess
 							["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 						}),
 						i(91567, {	-- Malevolent Gladiator's Links of Accuracy
@@ -1313,51 +1491,42 @@ _.PVP =
 						i(91565, {	-- Malevolent Gladiator's Links of Cruelty
 							["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 						}),
+						i(91688, {	-- Malevolent Gladiator's Waistband of Accuracy
+							["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+						}),
+						i(91595, {	-- Malevolent Gladiator's Waistband of Cruelty
+							["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+						}),
 						i(91731, {	-- Malevolent Gladiator's Waistguard of Cruelty
 							["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 						}),
 						i(91703, {	-- Malevolent Gladiator's Waistguard of Meditation
 							["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 						}),
-						i(91630, {	-- Malevolent Gladiator's Clasp of Cruelty
-							["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
-						}),
-						i(91632, {	-- Malevolent Gladiator's Clasp of Meditation
-							["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
-						}),
-						i(91650, {	-- Malevolent Gladiator's Girdle of Accuracy
-							["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
-						}),
-						i(91652, {	-- Malevolent Gladiator's Girdle of Prowess
-							["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
-						}),
-					}),
+					}),	
 					n(-330, {	-- Feet
-						i(91470, {	-- Malevolent Gladiator's Treads of Alacrity
-							["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-						}),
-						i(91468, {	-- Malevolent Gladiator's Treads of Cruelty
-							["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-						}),
-						i(91472, {	-- Malevolent Gladiator's Treads of Meditation
-							["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-						}),
 						i(91597, {	-- Malevolent Gladiator's Boots of Alacrity
 							["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 						}),
 						i(91690, {	-- Malevolent Gladiator's Boots of Cruelty
 							["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 						}),
-						i(91539, {	-- Malevolent Gladiator's Footguards of Alacrity
+						i(91539, {	-- Malevolent Gladiator's Footguards of Alacrity (Leahter)
 							["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 						}),
-						i(91522, {	-- Malevolent Gladiator's Footguards of Meditation
+						i(91705, {	-- Malevolent Gladiator's Footguards of Alacrity (Mail)
 							["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 						}),
-						i(91705, {	-- Malevolent Gladiator's Footguards of Alacrity
+						i(91522, {	-- Malevolent Gladiator's Footguards of Meditation (Leather)
 							["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 						}),
-						i(91707, {	-- Malevolent Gladiator's Footguards of Meditation
+						i(91707, {	-- Malevolent Gladiator's Footguards of Meditation (Mail)
+							["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+						}),						
+						i(91634, {	-- Malevolent Gladiator's Greaves of Alacrity
+							["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+						}),
+						i(91636, {	-- Malevolent Gladiator's Greaves of Meditation
 							["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 						}),
 						i(91571, {	-- Malevolent Gladiator's Sabatons of Alacrity
@@ -1366,12 +1535,15 @@ _.PVP =
 						i(91569, {	-- Malevolent Gladiator's Sabatons of Cruelty
 							["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 						}),
-						i(91634, {	-- Malevolent Gladiator's Greaves of Alacrity
+						i(91470, {	-- Malevolent Gladiator's Treads of Alacrity
 							["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 						}),
-						i(91636, {	-- Malevolent Gladiator's Greaves of Meditation
+						i(91468, {	-- Malevolent Gladiator's Treads of Cruelty
 							["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 						}),
+						i(91472, {	-- Malevolent Gladiator's Treads of Meditation
+							["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+						}),					
 						i(91656, {	-- Malevolent Gladiator's Warboots of Alacrity
 							["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 						}),
@@ -1379,60 +1551,25 @@ _.PVP =
 							["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 						}),
 					}),
+					n(-385,	{	-- Finger
+						un(REMOVED_FROM_GAME, i(91492)),	-- Malevolent Gladiator's Band of Accuracy
+						un(REMOVED_FROM_GAME, i(91491)),	-- Malevolent Gladiator's Band of Cruelty
+						un(REMOVED_FROM_GAME, i(91493)),	-- Malevolent Gladiator's Band of Meditation
+						un(REMOVED_FROM_GAME, i(91459)),	-- Malevolent Gladiator's Ring of Accuracy
+						un(REMOVED_FROM_GAME, i(91458)),	-- Malevolent Gladiator's Ring of Cruelty
+						un(REMOVED_FROM_GAME, i(91770)),	-- Malevolent Gladiator's Signet of Accuracy
+						un(REMOVED_FROM_GAME, i(91769)),	-- Malevolent Gladiator's Signet of Cruelty
+					}),
 					n(-384,	{	-- Neck
-						-- S12 Tooltip (Available from Sha)
-						i(84892),	-- Malevolent Gladiator's Choker of Accuracy
-						i(84891),	-- Malevolent Gladiator's Choker of Proficiency
-						i(84889),	-- Malevolent Gladiator's Necklace of Proficiency
-						i(84890),	-- Malevolent Gladiator's Necklace of Prowess
-						i(84886),	-- Malevolent Gladiator's Pendant of Alacrity
-						i(84887),	-- Malevolent Gladiator's Pendant of Cruelty
-						i(84888),	-- Malevolent Gladiator's Pendant of Meditation
-						-- S13 Tooltip
+						un(REMOVED_FROM_GAME, i(91767)),	-- Malevolent Gladiator's Choker of Accuracy
+						un(REMOVED_FROM_GAME, i(91766)),	-- Malevolent Gladiator's Choker of Proficiency
 						un(REMOVED_FROM_GAME, i(91455)),	-- Malevolent Gladiator's Necklace of Proficiency
 						un(REMOVED_FROM_GAME, i(91456)),	-- Malevolent Gladiator's Necklace of Prowess
-						un(REMOVED_FROM_GAME, i(91488)),	-- Malevolent Gladiator's Pendant of Cruelty
 						un(REMOVED_FROM_GAME, i(91489)),	-- Malevolent Gladiator's Pendant of Alacrity
+						un(REMOVED_FROM_GAME, i(91488)),	-- Malevolent Gladiator's Pendant of Cruelty
 						un(REMOVED_FROM_GAME, i(91490)),	-- Malevolent Gladiator's Pendant of Meditation
-						un(REMOVED_FROM_GAME, i(91766)),	-- Malevolent Gladiator's Choker of Proficiency
-						un(REMOVED_FROM_GAME, i(91767)),	-- Malevolent Gladiator's Choker of Accuracy
-					}),
-					n(-385,	{	-- Finger
-						-- S12 Tooltip (Available from Sha)
-						i(84823),	-- Malevolent Gladiator's Band of Cruelty
-						i(84824),	-- Malevolent Gladiator's Band of Accuracy
-						i(84825),	-- Malevolent Gladiator's Band of Meditation
-						i(84826),	-- Malevolent Gladiator's Ring of Cruelty
-						i(84827),	-- Malevolent Gladiator's Ring of Accuracy
-						i(84828),	-- Malevolent Gladiator's Signet of Cruelty
-						i(84829),	-- Malevolent Gladiator's Signet of Accuracy
-						-- S13 Tooltip
-						un(REMOVED_FROM_GAME, i(91458)),	-- Malevolent Gladiator's Ring of Cruelty
-						un(REMOVED_FROM_GAME, i(91459)),	-- Malevolent Gladiator's Ring of Accuracy
-						un(REMOVED_FROM_GAME, i(91491)),	-- Malevolent Gladiator's Band of Cruelty
-						un(REMOVED_FROM_GAME, i(91492)),	-- Malevolent Gladiator's Band of Accuracy
-						un(REMOVED_FROM_GAME, i(91493)),	-- Malevolent Gladiator's Band of Meditation
-						un(REMOVED_FROM_GAME, i(91769)),	-- Malevolent Gladiator's Signet of Cruelty
-						un(REMOVED_FROM_GAME, i(91770)),	-- Malevolent Gladiator's Signet of Accuracy
 					}),
 					n(-386,	{	-- Trinket
-						-- S12 Tooltip
-						un(REMOVED_FROM_GAME, i(84934)),	-- Malevolent Gladiator's Badge of Conquest
-						un(REMOVED_FROM_GAME, i(84935)),	-- Malevolent Gladiator's Insignia of Conquest
-						un(REMOVED_FROM_GAME, i(84936)),	-- Malevolent Gladiator's Emblem of Cruelty
-						un(REMOVED_FROM_GAME, i(84937)),	-- Malevolent Gladiator's Insignia of Victory
-						un(REMOVED_FROM_GAME, i(84938)),	-- Malevolent Gladiator's Emblem of Tenacity
-						un(REMOVED_FROM_GAME, i(84939)),	-- Malevolent Gladiator's Emblem of Meditation
-						un(REMOVED_FROM_GAME, i(84940)),	-- Malevolent Gladiator's Badge of Dominance
-						un(REMOVED_FROM_GAME, i(84941)),	-- Malevolent Gladiator's Insignia of Dominance
-						un(REMOVED_FROM_GAME, i(84942)),	-- Malevolent Gladiator's Badge of Victory
-						un(REMOVED_FROM_GAME, i(84943)),	-- Malevolent Gladiator's Medallion of Cruelty (Alliance)
-						un(REMOVED_FROM_GAME, i(84932)),	-- Malevolent Gladiator's Medallion of Meditation (Alliance)
-						un(REMOVED_FROM_GAME, i(84945)),	-- Malevolent Gladiator's Medallion of Tenacity (Alliance)
-						un(REMOVED_FROM_GAME, i(84944)),	-- Malevolent Gladiator's Medallion of Cruelty (Horde)
-						un(REMOVED_FROM_GAME, i(84933)),	-- Malevolent Gladiator's Medallion of Meditation (Horde)
-						un(REMOVED_FROM_GAME, i(84931)),	-- Malevolent Gladiator's Medallion of Tenacity (Horde)
-						-- S13 Tooltip
 						un(REMOVED_FROM_GAME, i(91452)),	-- Malevolent Gladiator's Badge of Conquest
 						un(REMOVED_FROM_GAME, i(91753)),	-- Malevolent Gladiator's Badge of Dominance
 						un(REMOVED_FROM_GAME, i(91763)),	-- Malevolent Gladiator's Badge of Victory
@@ -1596,36 +1733,36 @@ _.PVP =
 						un(REMOVED_FROM_GAME, i(85077)),	-- Malevolent Gladiator's Plate Shoulders
 					}),
 					n(-328, {	-- Waist
+						un(REMOVED_FROM_GAME, i(85098)),	-- Malevolent Gladiator's Belt of Cruelty
+						un(REMOVED_FROM_GAME, i(85106)),	-- Malevolent Gladiator's Belt of Meditation
+						un(REMOVED_FROM_GAME, i(85104)),	-- Malevolent Gladiator's Clasp of Cruelty
+						un(REMOVED_FROM_GAME, i(85105)),	-- Malevolent Gladiator's Clasp of Meditation
 						un(REMOVED_FROM_GAME, i(85093)),	-- Malevolent Gladiator's Cord of Accuracy
 						un(REMOVED_FROM_GAME, i(85092)),	-- Malevolent Gladiator's Cord of Cruelty
 						un(REMOVED_FROM_GAME, i(85094)),	-- Malevolent Gladiator's Cord of Meditation
-						un(REMOVED_FROM_GAME, i(85098)),	-- Malevolent Gladiator's Belt of Cruelty
-						un(REMOVED_FROM_GAME, i(85106)),	-- Malevolent Gladiator's Belt of Meditation
-						un(REMOVED_FROM_GAME, i(85101)),	-- Malevolent Gladiator's Waistband of Accuracy
-						un(REMOVED_FROM_GAME, i(85100)),	-- Malevolent Gladiator's Waistband of Cruelty
-						un(REMOVED_FROM_GAME, i(85095)),	-- Malevolent Gladiator's Links of Accuracy
-						un(REMOVED_FROM_GAME, i(85096)),	-- Malevolent Gladiator's Links of Cruelty
-						un(REMOVED_FROM_GAME, i(85097)),	-- Malevolent Gladiator's Waistguard of Cruelty
-						un(REMOVED_FROM_GAME, i(85099)),	-- Malevolent Gladiator's Waistguard of Meditation
-						un(REMOVED_FROM_GAME, i(85104)),	-- Malevolent Gladiator's Clasp of Cruelty
-						un(REMOVED_FROM_GAME, i(85105)),	-- Malevolent Gladiator's Clasp of Meditation
 						un(REMOVED_FROM_GAME, i(85102)),	-- Malevolent Gladiator's Girdle of Accuracy
 						un(REMOVED_FROM_GAME, i(85103)),	-- Malevolent Gladiator's Girdle of Prowess
+						un(REMOVED_FROM_GAME, i(85095)),	-- Malevolent Gladiator's Links of Accuracy
+						un(REMOVED_FROM_GAME, i(85096)),	-- Malevolent Gladiator's Links of Cruelty
+						un(REMOVED_FROM_GAME, i(85101)),	-- Malevolent Gladiator's Waistband of Accuracy
+						un(REMOVED_FROM_GAME, i(85100)),	-- Malevolent Gladiator's Waistband of Cruelty
+						un(REMOVED_FROM_GAME, i(85097)),	-- Malevolent Gladiator's Waistguard of Cruelty
+						un(REMOVED_FROM_GAME, i(85099)),	-- Malevolent Gladiator's Waistguard of Meditation
 					}),
 					n(-330, {	-- Feet
+						un(REMOVED_FROM_GAME, i(85010)),	-- Malevolent Gladiator's Boots of Alacrity
+						un(REMOVED_FROM_GAME, i(85009)),	-- Malevolent Gladiator's Boots of Cruelty
+						un(REMOVED_FROM_GAME, i(84996)),	-- Malevolent Gladiator's Footguards of Alacrity (Leather)
+						un(REMOVED_FROM_GAME, i(84997)),	-- Malevolent Gladiator's Footguards of Alacrity (Mail)
+						un(REMOVED_FROM_GAME, i(85003)),	-- Malevolent Gladiator's Footguards of Meditation (Leahter)
+						un(REMOVED_FROM_GAME, i(84998)),	-- Malevolent Gladiator's Footguards of Meditation (Mail)
+						un(REMOVED_FROM_GAME, i(85001)),	-- Malevolent Gladiator's Greaves of Alacrity
+						un(REMOVED_FROM_GAME, i(85002)),	-- Malevolent Gladiator's Greaves of Meditation
+						un(REMOVED_FROM_GAME, i(85008)),	-- Malevolent Gladiator's Sabatons of Alacrity
+						un(REMOVED_FROM_GAME, i(85007)),	-- Malevolent Gladiator's Sabatons of Cruelty
 						un(REMOVED_FROM_GAME, i(85005)),	-- Malevolent Gladiator's Treads of Alacrity
 						un(REMOVED_FROM_GAME, i(85004)),	-- Malevolent Gladiator's Treads of Cruelty
 						un(REMOVED_FROM_GAME, i(85006)),	-- Malevolent Gladiator's Treads of Meditation
-						un(REMOVED_FROM_GAME, i(85010)),	-- Malevolent Gladiator's Boots of Alacrity
-						un(REMOVED_FROM_GAME, i(85009)),	-- Malevolent Gladiator's Boots of Cruelty
-						un(REMOVED_FROM_GAME, i(84996)),	-- Malevolent Gladiator's Footguards of Alacrity
-						un(REMOVED_FROM_GAME, i(85003)),	-- Malevolent Gladiator's Footguards of Meditation
-						un(REMOVED_FROM_GAME, i(84997)),	-- Malevolent Gladiator's Footguards of Alacrity
-						un(REMOVED_FROM_GAME, i(84998)),	-- Malevolent Gladiator's Footguards of Meditation
-						un(REMOVED_FROM_GAME, i(85008)),	-- Malevolent Gladiator's Sabatons of Alacrity
-						un(REMOVED_FROM_GAME, i(85007)),	-- Malevolent Gladiator's Sabatons of Cruelty
-						un(REMOVED_FROM_GAME, i(85001)),	-- Malevolent Gladiator's Greaves of Alacrity
-						un(REMOVED_FROM_GAME, i(85002)),	-- Malevolent Gladiator's Greaves of Meditation
 						un(REMOVED_FROM_GAME, i(84999)),	-- Malevolent Gladiator's Warboots of Alacrity
 						un(REMOVED_FROM_GAME, i(85000)),	-- Malevolent Gladiator's Warboots of Cruelty
 					}),
