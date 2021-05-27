@@ -764,6 +764,14 @@ _.ExpansionFeatures =
 									["provider"] = { "n", 172141 },	-- Mad Mortimer
 									["coord"] = { 59.2, 71.9, MALDRAXXUS },
 								}),
+								q(63176, {	-- Path of Ascension: Azaruux
+									["provider"] = { "n", 168485 },	-- Apolon
+									["isWeekly"] = true,
+									["coord"] = { 28.1, 41.7, 1707 },	-- Archon's Rise
+									["g"] = {
+										i(184812),	-- Apolon's Bounty
+									},
+								}),
 								q(63168, {	-- Path of Ascension: Echthra
 									["provider"] = { "n", 168485 },	-- Apolon
 									["isWeekly"] = true,
