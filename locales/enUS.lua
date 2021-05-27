@@ -99,6 +99,7 @@ app.L = {
 	["COMPLETED_YEARLY"] = "This can be completed yearly.";
 	["COMPLETED_MULTIPLE"] = "This can be repeated multiple times.";
 	["CRITERIA_FOR"] = "Criteria for";
+	["CURRENCY_FOR"] = "Currency for";
 	["LOOT_TABLE_CHANCE"] = "Loot Table Chance";
 	["BEST_BONUS_ROLL_CHANCE"] = "Best Bonus Roll Chance";
 	["BEST_PERSONAL_LOOT_CHANCE"] = "Best Personal Loot Chance";

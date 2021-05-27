@@ -3461,7 +3461,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			if costResults and #costResults > 0 then
 				if not root.g then root.g = {} end
 				local usedToBuy = app.CreateNPC(-2);
-				usedToBuy.text = "Currency For";
+				usedToBuy.text = L["CURRENCY_FOR"];
 				if not usedToBuy.g then usedToBuy.g = {}; end
 				for i,o in ipairs(costResults) do
 					-- Currencies need to meet the group requirements as well since the character itself needs to meet those requirements to buy it
@@ -3476,7 +3476,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			if costResults and #costResults > 0 then
 				if not root.g then root.g = {} end
 				local usedToBuy = app.CreateNPC(-2);
-				usedToBuy.text = "Currency For";
+				usedToBuy.text = L["CURRENCY_FOR"];
 				if not usedToBuy.g then usedToBuy.g = {}; end
 				for i,o in ipairs(costResults) do
 					MergeObject(usedToBuy.g, CreateObject(o));
