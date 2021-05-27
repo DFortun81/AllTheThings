@@ -1506,7 +1506,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(69785)),	-- Vicious Gladiator's Symbol of Tenacity
 				}),
 			}),
-			n(-659, {	-- Aspirant (Season 10 version)
+			n(-655, {	-- Ensemble Gear (Season 10 version)
 				["description"] = "These items are available from Bloodthirsty Gladiator(Vicious Gladiator Season 9:Honor Gear) class ensembles only",
 				["g"]={
 					cl(DEATHKNIGHT, {
@@ -2689,7 +2689,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(70413)),	-- Ruthless Gladiator's Symbol of Tenacity
 				}),
 			}),
-			n(-659, {	-- Aspirant (Season 11 version)
+			n(-655, {	-- Ensemble Gear (Season 11 version)
 				["description"] = "These items are available from Ruthless Gladiator: Season 10 class ensembles only",
 				["g"] = {
 					cl(DEATHKNIGHT, {
