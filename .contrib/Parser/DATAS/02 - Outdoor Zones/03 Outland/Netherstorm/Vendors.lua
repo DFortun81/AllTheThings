@@ -15,7 +15,7 @@ _.Zones =
 						i(22307),    -- Pattern: Enchanted Mageweave Pouch
 					},
 				}),
-				n(26352,  {	-- Big Zokk Torquewrench >Season 6< Elite
+				n(26352,  {	-- Big Zokk Torquewrench Original BC S4 VENDOR
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				n(54649,  {	-- Big Zokk Torquewrench <Classic Weapons>
@@ -1020,9 +1020,6 @@ _.Zones =
 						i(77787),	-- Replica Sergeant Major's Silk Cuffs
 					},
 				}),
-				n(33918, {  -- Kezzik the Striker <Veteran Arena Vendor> [Note: Yes, two NPCs with same name. One is removed]
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				n(107599, {	-- Izzee the 'Clutch' <Merciless and Veteran's Gladiator>
 					["coord"] = { 33.0, 64.2, NETHERSTORM },
 					["g"] = {
@@ -1733,6 +1730,9 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(29118)),	-- Smuggler's Ammo Pouch
 						i(29117),	-- Stormspire Vest
 					},
+				}),
+				n(33918, {  -- Kezzik the Striker <Veteran Arena Vendor> Added in patch 3.1.1.9806
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				n(54650,  {	-- Kezzik the Striker <Gladiator and General's Gladiator>
 					["coord"] = { 33.0, 64.2, NETHERSTORM },
