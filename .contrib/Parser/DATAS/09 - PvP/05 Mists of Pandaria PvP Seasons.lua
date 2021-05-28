@@ -2035,12 +2035,68 @@ _.PVP =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						n(-661, {	-- Gladiator PvP Gear
-							n(-319, {	-- Weapons	
-							
+							n(-319, {	-- Weapons
+								i(144246, {	-- Arsenal: Tyrannical Gladiator's Weapons (A)
+									["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_weapons_ensemble", -10041, -676, -9914, -661 },
+										{"select", "itemID", 99794 },	-- Tyrannical Gladiator's Barrier
+										{"select", "itemID", 99796 },	-- Tyrannical Gladiator's Battle Staff
+										{"select", "itemID", 99941 },	-- Tyrannical Gladiator's Bonecracker
+										{"select", "itemID", 99769 },	-- Tyrannical Gladiator's Cleaver
+										{"select", "itemID", 99766 },	-- Tyrannical Gladiator's Decapitator
+										{"select", "itemID", 99793 },	-- Tyrannical Gladiator's Endgame
+										{"select", "itemID", 99837 },	-- Tyrannical Gladiator's Energy Staff
+										{"select", "itemID", 99835 },	-- Tyrannical Gladiator's Gavel
+										{"select", "itemID", 99768 },	-- Tyrannical Gladiator's Greatsword
+										{"select", "itemID", 99940 },	-- Tyrannical Gladiator's Hacker
+										{"select", "itemID", 99805 },	-- Tyrannical Gladiator's Heavy Crossbow
+										{"select", "itemID", 99936 },	-- Tyrannical Gladiator's Mageblade
+										{"select", "itemID", 99770 },	-- Tyrannical Gladiator's Pummeler
+										{"select", "itemID", 99771 },	-- Tyrannical Gladiator's Quickblade
+										{"select", "itemID", 99836 },	-- Tyrannical Gladiator's Redoubt
+										{"select", "itemID", 99935 },	-- Tyrannical Gladiator's Render
+										{"select", "itemID", 99803 },	-- Tyrannical Gladiator's Reprieve
+										{"select", "itemID", 99933 },	-- Tyrannical Gladiator's Ripper
+										{"select", "itemID", 99932 },	-- Tyrannical Gladiator's Shanker
+										{"select", "itemID", 99951 },	-- Tyrannical Gladiator's Shield Wall
+										{"select", "itemID", 99942 },	-- Tyrannical Gladiator's Slicer
+										{"select", "itemID", 99795 },	-- Tyrannical Gladiator's Spellblade
+										{"select", "itemID", 99824 },	-- Tyrannical Gladiator's Staff
+										{"exclude", "itemID", 144246 },	-- Exclude itself to stop duplicating
+									},
+								}),
+								i(91129),	-- Tyrannical Gladiator's Barrier
+								--Baton of Light?
+								i(91133),	-- Tyrannical Gladiator's Battle Staff
+								i(91406),	-- Tyrannical Gladiator's Bonecracker
+								--Bonegrinder?
+								i(91093),	-- Tyrannical Gladiator's Cleaver
+								i(91087),	-- Tyrannical Gladiator's Decapitator
+								i(91127),	-- Tyrannical Gladiator's Endgame
+								i(91207),	-- Tyrannical Gladiator's Energy Staff
+								--Fleshslicer?
+								i(91203),	-- Tyrannical Gladiator's Gavel
+								i(91091),	-- Tyrannical Gladiator's Greatsword
+								i(91404),	-- Tyrannical Gladiator's Hacker
+								i(91145),	-- Tyrannical Gladiator's Heavy Crossbow
+								-- Longbow?
+								-- Pike?
+								i(91398),	-- Tyrannical Gladiator's Mageblade
+								i(91095),	-- Tyrannical Gladiator's Pummeler
+								i(91097),	-- Tyrannical Gladiator's Quickblade
+								i(91205),	-- Tyrannical Gladiator's Redoubt
+								i(91396),	-- Tyrannical Gladiator's Render
+								i(91141),	-- Tyrannical Gladiator's Reprieve
+								--Rifle?
+								i(91392),	-- Tyrannical Gladiator's Ripper
+								i(91390),	-- Tyrannical Gladiator's Shanker
+								i(91418),	-- Tyrannical Gladiator's Shield Wall
+								--Slasher?
+								i(91408),	-- Tyrannical Gladiator's Slicer
+								i(91131),	-- Tyrannical Gladiator's Spellblade
+								i(91182),	-- Tyrannical Gladiator's Staff
 							}),
-				
-						
-						
 							n(-322, {	-- Back
 								-- From Nalak
 								i(91100),	-- Tyrannical Gladiator's Cape of Cruelty
@@ -2126,30 +2182,100 @@ _.PVP =
 								i(91416),	-- Tyrannical Gladiator's Signet of Cruelty
 							}),
 							f(53,	{	-- Trinket
-								un(REMOVED_FROM_GAME, i(91099)),	-- Malevolent Gladiator's Badge of Conquest
-								un(REMOVED_FROM_GAME, i(91400)),	-- Malevolent Gladiator's Badge of Dominance
-								un(REMOVED_FROM_GAME, i(91410)),	-- Malevolent Gladiator's Badge of Victory
-								un(REMOVED_FROM_GAME, i(91209)),	-- Malevolent Gladiator's Emblem of Cruelty
-								un(REMOVED_FROM_GAME, i(91211)),	-- Malevolent Gladiator's Emblem of Meditation
-								un(REMOVED_FROM_GAME, i(91210)),	-- Malevolent Gladiator's Emblem of Tenacity
-								un(REMOVED_FROM_GAME, i(91104)),	-- Malevolent Gladiator's Insignia of Conquest
-								un(REMOVED_FROM_GAME, i(91401)),	-- Malevolent Gladiator's Insignia of Dominance
-								un(REMOVED_FROM_GAME, i(91415)),	-- Malevolent Gladiator's Insignia of Victory
-								un(REMOVED_FROM_GAME, i(94386)),	-- Malevolent Gladiator's Medallion of Cruelty (A)
-								un(REMOVED_FROM_GAME, i(94388)),	-- Malevolent Gladiator's Medallion of Meditation (A)
-								un(REMOVED_FROM_GAME, i(94361)),	-- Malevolent Gladiator's Medallion of Tenacity (A)
+								un(REMOVED_FROM_GAME, i(91099)),	-- Tyrannical Gladiator's Badge of Conquest
+								un(REMOVED_FROM_GAME, i(91400)),	-- Tyrannical Gladiator's Badge of Dominance
+								un(REMOVED_FROM_GAME, i(91410)),	-- Tyrannical Gladiator's Badge of Victory
+								un(REMOVED_FROM_GAME, i(91209)),	-- Tyrannical Gladiator's Emblem of Cruelty
+								un(REMOVED_FROM_GAME, i(91211)),	-- Tyrannical Gladiator's Emblem of Meditation
+								un(REMOVED_FROM_GAME, i(91210)),	-- Tyrannical Gladiator's Emblem of Tenacity
+								un(REMOVED_FROM_GAME, i(91104)),	-- Tyrannical Gladiator's Insignia of Conquest
+								un(REMOVED_FROM_GAME, i(91401)),	-- Tyrannical Gladiator's Insignia of Dominance
+								un(REMOVED_FROM_GAME, i(91415)),	-- Tyrannical Gladiator's Insignia of Victory
+								un(REMOVED_FROM_GAME, i(94386)),	-- Tyrannical Gladiator's Medallion of Cruelty (A)
+								un(REMOVED_FROM_GAME, i(94388)),	-- Tyrannical Gladiator's Medallion of Meditation (A)
+								un(REMOVED_FROM_GAME, i(94361)),	-- Tyrannical Gladiator's Medallion of Tenacity (A)
 								-- Never
-								un(NEVER_IMPLEMENTED, i(91329)),	-- Malevolent Gladiator's Medallion of Cruelty (A)
-								un(NEVER_IMPLEMENTED, i(91333)),	-- Malevolent Gladiator's Medallion of Meditation (A)
-								un(NEVER_IMPLEMENTED, i(91331)),	-- Malevolent Gladiator's Medallion of Tenacity (A)
-							}),
-							
+								un(NEVER_IMPLEMENTED, i(91329)),	-- Tyrannical Gladiator's Medallion of Cruelty (A)
+								un(NEVER_IMPLEMENTED, i(91333)),	-- Tyrannical Gladiator's Medallion of Meditation (A)
+								un(NEVER_IMPLEMENTED, i(91331)),	-- Tyrannical Gladiator's Medallion of Tenacity (A)
+							}),	
 						}),
 						n(-655, {	-- Ensemble Gear (Season 14 version)
-							n(-319, {	-- Weapons	
-							
+							n(-319, {	-- Weapons
+								i(99794, {	-- Tyrannical Gladiator's Barrier
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(99796, {	-- Tyrannical Gladiator's Battle Staff
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(99941, {	-- Tyrannical Gladiator's Bonecracker
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								--Bonegrinder?
+								i(99769, {	-- Tyrannical Gladiator's Cleaver
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(99766, {	-- Tyrannical Gladiator's Decapitator
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(99793, {	-- Tyrannical Gladiator's Endgame
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(99837, {	-- Tyrannical Gladiator's Energy Staff
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(99835, {	-- Tyrannical Gladiator's Gavel
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(99768, {	-- Tyrannical Gladiator's Greatsword
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(99940, {	-- Tyrannical Gladiator's Hacker
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(99805, {	-- Tyrannical Gladiator's Heavy Crossbow
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(99936, {	-- Tyrannical Gladiator's Mageblade
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								--longbow?
+								--pike?
+								i(99770, {	-- Tyrannical Gladiator's Pummeler
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(99771, {	-- Tyrannical Gladiator's Quickblade
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(99836, {	-- Tyrannical Gladiator's Redoubt
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(99935, {	-- Tyrannical Gladiator's Render
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(99803, {	-- Tyrannical Gladiator's Reprieve
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								--rifle?
+								i(99933, {	-- Tyrannical Gladiator's Ripper
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(99932, {	-- Tyrannical Gladiator's Shanker
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(99951, {	-- Tyrannical Gladiator's Shield Wall
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(99942, {	-- Tyrannical Gladiator's Slicer
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(99795, {	-- Tyrannical Gladiator's Spellblade
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(99824, {	-- Tyrannical Gladiator's Staff
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
 							}),
-							
 							n(-322, {	-- Back
 								i(99773, {	-- Tyrannical Gladiator's Cape of Cruelty
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
@@ -2333,20 +2459,19 @@ _.PVP =
 								un(REMOVED_FROM_GAME, i(99949)),	-- Tyrannical Gladiator's Signet of Cruelty
 							}),
 							f(53,	{	-- Trinket
-								un(REMOVED_FROM_GAME, i(99772)),	-- Malevolent Gladiator's Badge of Conquest
-								un(REMOVED_FROM_GAME, i(99937)),	-- Malevolent Gladiator's Badge of Dominance
-								un(REMOVED_FROM_GAME, i(99943)),	-- Malevolent Gladiator's Badge of Victory
-								un(REMOVED_FROM_GAME, i(99838)),	-- Malevolent Gladiator's Emblem of Cruelty
-								un(REMOVED_FROM_GAME, i(99840)),	-- Malevolent Gladiator's Emblem of Meditation
-								un(REMOVED_FROM_GAME, i(99839)),	-- Malevolent Gladiator's Emblem of Tenacity
-								un(REMOVED_FROM_GAME, i(99777)),	-- Malevolent Gladiator's Insignia of Conquest
-								un(REMOVED_FROM_GAME, i(99938)),	-- Malevolent Gladiator's Insignia of Dominance
-								un(REMOVED_FROM_GAME, i(99948)),	-- Malevolent Gladiator's Insignia of Victory
-								un(REMOVED_FROM_GAME, i(100056)),	-- Malevolent Gladiator's Medallion of Cruelty (A)
-								un(REMOVED_FROM_GAME, i(100058)),	-- Malevolent Gladiator's Medallion of Meditation (A)
-								un(REMOVED_FROM_GAME, i(100031)),	-- Malevolent Gladiator's Medallion of Tenacity (A)
+								un(REMOVED_FROM_GAME, i(99772)),	-- Tyrannical Gladiator's Badge of Conquest
+								un(REMOVED_FROM_GAME, i(99937)),	-- Tyrannical Gladiator's Badge of Dominance
+								un(REMOVED_FROM_GAME, i(99943)),	-- Tyrannical Gladiator's Badge of Victory
+								un(REMOVED_FROM_GAME, i(99838)),	-- Tyrannical Gladiator's Emblem of Cruelty
+								un(REMOVED_FROM_GAME, i(99840)),	-- Tyrannical Gladiator's Emblem of Meditation
+								un(REMOVED_FROM_GAME, i(99839)),	-- Tyrannical Gladiator's Emblem of Tenacity
+								un(REMOVED_FROM_GAME, i(99777)),	-- Tyrannical Gladiator's Insignia of Conquest
+								un(REMOVED_FROM_GAME, i(99938)),	-- Tyrannical Gladiator's Insignia of Dominance
+								un(REMOVED_FROM_GAME, i(99948)),	-- Tyrannical Gladiator's Insignia of Victory
+								un(REMOVED_FROM_GAME, i(100056)),	-- Tyrannical Gladiator's Medallion of Cruelty (A)
+								un(REMOVED_FROM_GAME, i(100058)),	-- Tyrannical Gladiator's Medallion of Meditation (A)
+								un(REMOVED_FROM_GAME, i(100031)),	-- Tyrannical Gladiator's Medallion of Tenacity (A)
 							}),
-				
 						}),
 					},
 				}),
@@ -2354,12 +2479,68 @@ _.PVP =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						n(-661, {	-- Gladiator PvP Gear
-							n(-319, {	-- Weapons	
-							
+							n(-319, {	-- Weapons
+								i(144245, {	-- Arsenal: Tyrannical Gladiator's Weapons
+									["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_weapons_ensemble", -10041, -676, -9913, -661 },
+										{"select", "itemID", 100171 },	-- Tyrannical Gladiator's Barrier
+										{"select", "itemID", 99974 },	-- Tyrannical Gladiator's Battle Staff
+										{"select", "itemID", 99983 },	-- Tyrannical Gladiator's Bonecracker
+										{"select", "itemID", 99973 },	-- Tyrannical Gladiator's Cleaver
+										{"select", "itemID", 99984 },	-- Tyrannical Gladiator's Decapitator
+										{"select", "itemID", 100172 },	-- Tyrannical Gladiator's Endgame
+										{"select", "itemID", 99981 },	-- Tyrannical Gladiator's Energy Staff
+										{"select", "itemID", 99963 },	-- Tyrannical Gladiator's Gavel
+										{"select", "itemID", 99972 },	-- Tyrannical Gladiator's Greatsword
+										{"select", "itemID", 99978 },	-- Tyrannical Gladiator's Hacker
+										{"select", "itemID", 99987 },	-- Tyrannical Gladiator's Heavy Crossbow
+										{"select", "itemID", 99971 },	-- Tyrannical Gladiator's Mageblade
+										{"select", "itemID", 99965 },	-- Tyrannical Gladiator's Pummeler
+										{"select", "itemID", 99986 },	-- Tyrannical Gladiator's Quickblade
+										{"select", "itemID", 100168 },	-- Tyrannical Gladiator's Redoubt
+										{"select", "itemID", 99982 },	-- Tyrannical Gladiator's Render
+										{"select", "itemID", 100169 },	-- Tyrannical Gladiator's Reprieve
+										{"select", "itemID", 99977 },	-- Tyrannical Gladiator's Ripper
+										{"select", "itemID", 99976 },	-- Tyrannical Gladiator's Shanker
+										{"select", "itemID", 100170 },	-- Tyrannical Gladiator's Shield Wall
+										{"select", "itemID", 99979 },	-- Tyrannical Gladiator's Slicer
+										{"select", "itemID", 99967 },	-- Tyrannical Gladiator's Spellblade
+										{"select", "itemID", 99968 },	-- Tyrannical Gladiator's Staff
+										{"exclude", "itemID", 144245 },	-- Exclude itself to stop duplicating
+									},
+								}),
+								i(94501),	-- Tyrannical Gladiator's Barrier
+								--Baton of Light?
+								i(94313),	-- Tyrannical Gladiator's Battle Staff
+								i(94322),	-- Tyrannical Gladiator's Bonecracker
+								--Bonegrinder?
+								i(94312),	-- Tyrannical Gladiator's Cleaver
+								i(94323),	-- Tyrannical Gladiator's Decapitator
+								i(94502),	-- Tyrannical Gladiator's Endgame
+								i(94320),	-- Tyrannical Gladiator's Energy Staff
+								--Fleshslicer?
+								i(94302),	-- Tyrannical Gladiator's Gavel
+								i(94311),	-- Tyrannical Gladiator's Greatsword
+								i(94317),	-- Tyrannical Gladiator's Hacker
+								i(94326),	-- Tyrannical Gladiator's Heavy Crossbow
+								-- Longbow?
+								-- Pike?
+								i(94310),	-- Tyrannical Gladiator's Mageblade
+								i(94304),	-- Tyrannical Gladiator's Pummeler
+								i(94325),	-- Tyrannical Gladiator's Quickblade
+								i(94498),	-- Tyrannical Gladiator's Redoubt
+								i(94321),	-- Tyrannical Gladiator's Render
+								i(94499),	-- Tyrannical Gladiator's Reprieve
+								--Rifle?
+								i(94316),	-- Tyrannical Gladiator's Ripper
+								i(94315),	-- Tyrannical Gladiator's Shanker
+								i(94500),	-- Tyrannical Gladiator's Shield Wall
+								--Slasher?
+								i(94318),	-- Tyrannical Gladiator's Slicer
+								i(94306),	-- Tyrannical Gladiator's Spellblade
+								i(94307),	-- Tyrannical Gladiator's Staff
 							}),
-							
-							
-							
 							n(-322, {	-- Back
 								-- From Nalak
 								i(94421),	-- Tyrannical Gladiator's Cape of Cruelty
@@ -2445,32 +2626,100 @@ _.PVP =
 								i(94417),	-- Tyrannical Gladiator's Signet of Cruelty
 							}),
 							f(53,	{	-- Trinket
-								un(REMOVED_FROM_GAME, i(94373)),	-- Malevolent Gladiator's Badge of Conquest
-								un(REMOVED_FROM_GAME, i(94346)),	-- Malevolent Gladiator's Badge of Dominance
-								un(REMOVED_FROM_GAME, i(94349)),	-- Malevolent Gladiator's Badge of Victory
-								un(REMOVED_FROM_GAME, i(94396)),	-- Malevolent Gladiator's Emblem of Cruelty
-								un(REMOVED_FROM_GAME, i(94329)),	-- Malevolent Gladiator's Emblem of Meditation
-								un(REMOVED_FROM_GAME, i(94422)),	-- Malevolent Gladiator's Emblem of Tenacity
-								un(REMOVED_FROM_GAME, i(94356)),	-- Malevolent Gladiator's Insignia of Conquest
-								un(REMOVED_FROM_GAME, i(94482)),	-- Malevolent Gladiator's Insignia of Dominance
-								un(REMOVED_FROM_GAME, i(94415)),	-- Malevolent Gladiator's Insignia of Victory
-								un(REMOVED_FROM_GAME, i(94454)),	-- Malevolent Gladiator's Medallion of Cruelty (H)
-								un(REMOVED_FROM_GAME, i(94338)),	-- Malevolent Gladiator's Medallion of Meditation (H)
-								un(REMOVED_FROM_GAME, i(94387)),	-- Malevolent Gladiator's Medallion of Tenacity (H)
+								un(REMOVED_FROM_GAME, i(94373)),	-- Tyrannical Gladiator's Badge of Conquest
+								un(REMOVED_FROM_GAME, i(94346)),	-- Tyrannical Gladiator's Badge of Dominance
+								un(REMOVED_FROM_GAME, i(94349)),	-- Tyrannical Gladiator's Badge of Victory
+								un(REMOVED_FROM_GAME, i(94396)),	-- Tyrannical Gladiator's Emblem of Cruelty
+								un(REMOVED_FROM_GAME, i(94329)),	-- Tyrannical Gladiator's Emblem of Meditation
+								un(REMOVED_FROM_GAME, i(94422)),	-- Tyrannical Gladiator's Emblem of Tenacity
+								un(REMOVED_FROM_GAME, i(94356)),	-- Tyrannical Gladiator's Insignia of Conquest
+								un(REMOVED_FROM_GAME, i(94482)),	-- Tyrannical Gladiator's Insignia of Dominance
+								un(REMOVED_FROM_GAME, i(94415)),	-- Tyrannical Gladiator's Insignia of Victory
+								un(REMOVED_FROM_GAME, i(94454)),	-- Tyrannical Gladiator's Medallion of Cruelty (H)
+								un(REMOVED_FROM_GAME, i(94338)),	-- Tyrannical Gladiator's Medallion of Meditation (H)
+								un(REMOVED_FROM_GAME, i(94387)),	-- Tyrannical Gladiator's Medallion of Tenacity (H)
 								-- Never
-								un(NEVER_IMPLEMENTED, i(91330)),	-- Malevolent Gladiator's Medallion of Cruelty (H)
-								un(NEVER_IMPLEMENTED, i(91334)),	-- Malevolent Gladiator's Medallion of Meditation (H)
-								un(NEVER_IMPLEMENTED, i(91332)),	-- Malevolent Gladiator's Medallion of Tenacity (H)
+								un(NEVER_IMPLEMENTED, i(91330)),	-- Tyrannical Gladiator's Medallion of Cruelty (H)
+								un(NEVER_IMPLEMENTED, i(91334)),	-- Tyrannical Gladiator's Medallion of Meditation (H)
+								un(NEVER_IMPLEMENTED, i(91332)),	-- Tyrannical Gladiator's Medallion of Tenacity (H)
 							}),
-							
-							
 						}),
 						n(-655, {	-- Ensemble Gear (Season 14 version)
-							n(-319, {	-- Weapons	
-							
+							n(-319, {	-- Weapons
+								i(100171, {	-- Tyrannical Gladiator's Barrier
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(99974, {	-- Tyrannical Gladiator's Battle Staff
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(99983, {	-- Tyrannical Gladiator's Bonecracker
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								--Bonegrinder?
+								i(99973, {	-- Tyrannical Gladiator's Cleaver
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(99984, {	-- Tyrannical Gladiator's Decapitator
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(100172, {	-- Tyrannical Gladiator's Endgame
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(99981, {	-- Tyrannical Gladiator's Energy Staff
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(99963, {	-- Tyrannical Gladiator's Gavel
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(99972, {	-- Tyrannical Gladiator's Greatsword
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(99978, {	-- Tyrannical Gladiator's Hacker
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(99987, {	-- Tyrannical Gladiator's Heavy Crossbow
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(99971, {	-- Tyrannical Gladiator's Mageblade
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								--longbow?
+								--pike?
+								i(99965, {	-- Tyrannical Gladiator's Pummeler
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(99986, {	-- Tyrannical Gladiator's Quickblade
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(100168, {	-- Tyrannical Gladiator's Redoubt
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(99982, {	-- Tyrannical Gladiator's Render
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(100169, {	-- Tyrannical Gladiator's Reprieve
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								--rifle?
+								i(99977, {	-- Tyrannical Gladiator's Ripper
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(99976, {	-- Tyrannical Gladiator's Shanker
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(100170, {	-- Tyrannical Gladiator's Shield Wall
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(99979, {	-- Tyrannical Gladiator's Slicer
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(99967, {	-- Tyrannical Gladiator's Spellblade
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(99968, {	-- Tyrannical Gladiator's Staff
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
 							}),
-							
-							
 							n(-322, {	-- Back
 								i(100091, {	-- Tyrannical Gladiator's Cape of Cruelty
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
@@ -2654,27 +2903,57 @@ _.PVP =
 								un(REMOVED_FROM_GAME, i(100087)),	-- Tyrannical Gladiator's Signet of Cruelty
 							}),
 							f(53,	{	-- Trinket
-								un(REMOVED_FROM_GAME, i(100043)),	-- Malevolent Gladiator's Badge of Conquest
-								un(REMOVED_FROM_GAME, i(100016)),	-- Malevolent Gladiator's Badge of Dominance
-								un(REMOVED_FROM_GAME, i(100019)),	-- Malevolent Gladiator's Badge of Victory
-								un(REMOVED_FROM_GAME, i(100066)),	-- Malevolent Gladiator's Emblem of Cruelty
-								un(REMOVED_FROM_GAME, i(99990)),	-- Malevolent Gladiator's Emblem of Meditation
-								un(REMOVED_FROM_GAME, i(100092)),	-- Malevolent Gladiator's Emblem of Tenacity
-								un(REMOVED_FROM_GAME, i(100026)),	-- Malevolent Gladiator's Insignia of Conquest
-								un(REMOVED_FROM_GAME, i(100152)),	-- Malevolent Gladiator's Insignia of Dominance
-								un(REMOVED_FROM_GAME, i(100085)),	-- Malevolent Gladiator's Insignia of Victory
-								un(REMOVED_FROM_GAME, i(100124)),	-- Malevolent Gladiator's Medallion of Cruelty (H)
-								un(REMOVED_FROM_GAME, i(100006)),	-- Malevolent Gladiator's Medallion of Meditation (H)
-								un(REMOVED_FROM_GAME, i(100057)),	-- Malevolent Gladiator's Medallion of Tenacity (H)
+								un(REMOVED_FROM_GAME, i(100043)),	-- Tyrannical Gladiator's Badge of Conquest
+								un(REMOVED_FROM_GAME, i(100016)),	-- Tyrannical Gladiator's Badge of Dominance
+								un(REMOVED_FROM_GAME, i(100019)),	-- Tyrannical Gladiator's Badge of Victory
+								un(REMOVED_FROM_GAME, i(100066)),	-- Tyrannical Gladiator's Emblem of Cruelty
+								un(REMOVED_FROM_GAME, i(99990)),	-- Tyrannical Gladiator's Emblem of Meditation
+								un(REMOVED_FROM_GAME, i(100092)),	-- Tyrannical Gladiator's Emblem of Tenacity
+								un(REMOVED_FROM_GAME, i(100026)),	-- Tyrannical Gladiator's Insignia of Conquest
+								un(REMOVED_FROM_GAME, i(100152)),	-- Tyrannical Gladiator's Insignia of Dominance
+								un(REMOVED_FROM_GAME, i(100085)),	-- Tyrannical Gladiator's Insignia of Victory
+								un(REMOVED_FROM_GAME, i(100124)),	-- Tyrannical Gladiator's Medallion of Cruelty (H)
+								un(REMOVED_FROM_GAME, i(100006)),	-- Tyrannical Gladiator's Medallion of Meditation (H)
+								un(REMOVED_FROM_GAME, i(100057)),	-- Tyrannical Gladiator's Medallion of Tenacity (H)
 							}),
-				
-				
 						}),
 					},
 				}),
 
 				n(-662, {	-- Elite PvP Gear
-				
+					n(-319, {	-- Weapons
+						un(REMOVED_FROM_GAME, i(91130)),	-- Tyrannical Gladiator's Barrier
+						--baton of light?
+						un(REMOVED_FROM_GAME, i(91134)),	-- Tyrannical Gladiator's Battle Staff
+						un(REMOVED_FROM_GAME, i(91407)),	-- Tyrannical Gladiator's Bonecracker
+						--Bonegrinder?
+						un(REMOVED_FROM_GAME, i(91094)),	-- Tyrannical Gladiator's Cleaver
+						un(REMOVED_FROM_GAME, i(91088)),	-- Tyrannical Gladiator's Decapitator
+						un(REMOVED_FROM_GAME, i(91128)),	-- Tyrannical Gladiator's Endgame
+						un(REMOVED_FROM_GAME, i(91208)),	-- Tyrannical Gladiator's Energy Staff
+						--fleshslicer?
+						un(REMOVED_FROM_GAME, i(91204)),	-- Tyrannical Gladiator's Gavel
+						un(REMOVED_FROM_GAME, i(91092)),	-- Tyrannical Gladiator's Greatsword
+						un(REMOVED_FROM_GAME, i(91405)),	-- Tyrannical Gladiator's Hacker
+						un(REMOVED_FROM_GAME, i(91146)),	-- Tyrannical Gladiator's Heavy Crossbow
+						un(REMOVED_FROM_GAME, i(91399)),	-- Tyrannical Gladiator's Mageblade
+						--longbow?
+						--pike?
+						un(REMOVED_FROM_GAME, i(91096)),	-- Tyrannical Gladiator's Pummeler
+						un(REMOVED_FROM_GAME, i(91098)),	-- Tyrannical Gladiator's Quickblade
+						un(REMOVED_FROM_GAME, i(91206)),	-- Tyrannical Gladiator's Redoubt
+						un(REMOVED_FROM_GAME, i(91397)),	-- Tyrannical Gladiator's Render
+						un(REMOVED_FROM_GAME, i(91142)),	-- Tyrannical Gladiator's Reprieve
+						--rifle?
+						un(REMOVED_FROM_GAME, i(91393)),	-- Tyrannical Gladiator's Ripper
+						un(REMOVED_FROM_GAME, i(91391)),	-- Tyrannical Gladiator's Shanker
+						un(REMOVED_FROM_GAME, i(91419)),	-- Tyrannical Gladiator's Shield Wall
+						--slasher?
+						un(REMOVED_FROM_GAME, i(91409)),	-- Tyrannical Gladiator's Slicer
+						un(REMOVED_FROM_GAME, i(91132)),	-- Tyrannical Gladiator's Spellblade
+						un(REMOVED_FROM_GAME, i(91183)),	-- Tyrannical Gladiator's Staff
+						--touch of defeat?
+					}),
 					n(-328, {	-- Waist
 						un(REMOVED_FROM_GAME, i(91185)),	-- Tyrannical Gladiator's Belt of Cruelty
 						un(REMOVED_FROM_GAME, i(91168)),	-- Tyrannical Gladiator's Belt of Meditation
@@ -2717,7 +2996,6 @@ _.PVP =
 						un(REMOVED_FROM_GAME, i(98162)), -- Tyrannical Gladiator's Tabard
 					}),
 				}),
-				
 			}),
 			n(-677, {	-- Grievous Gladiator: Season 14
 			}),
