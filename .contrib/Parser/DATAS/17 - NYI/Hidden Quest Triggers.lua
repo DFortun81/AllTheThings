@@ -2768,6 +2768,7 @@ _.HiddenQuestTriggers =
 		q(54297),	-- Upgrade: Zul'jan Ruins completed
 		q(53741),	-- Windfall Cavern completed
 		q(53739),	-- Wolf's Den completed
+		q(53751),	-- Grimwatt's Crash completed
 
 		--	HONEYBACK HIVE
 		q(55906),	-- triggers when pulling out Seabreeze Bumblebee or Bumbles next to Barry at 69.1, 64.2 in Stormsong Valley

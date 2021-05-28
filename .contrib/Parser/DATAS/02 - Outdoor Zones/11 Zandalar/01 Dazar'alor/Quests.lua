@@ -13,7 +13,6 @@ _.Zones =
 				-- figure out if "The Warchief's Order" and "The Warfront Looms" are breadcrumbs.  they're both auto-popup quests after you hit 120, unlock WQs, and relog.  they both direct you to go to dazar'alor and speak with an NPC to pursue nazjatar and the arathi warfront, respectively.
 
 				n(-397, {	-- Outposts
-				--	commented out SQs for the one-time-per account ones, because having SQs and altQs created a weird infinite loop that caused lua errors
 					["description"] = "Horde Outposts allow you to set up additional bases in Kul Tiras.  You can buy Scouting Reports from Ransa, the vendor next to The Banshee's Wail.  Each one will start a mission on your Mission Command Table.  After you complete the initial questline, you'll be offered additional missions to upgrade your outposts.",
 					["g"] = {
 						i(165728, {	-- Outpost Upgrade: The Great Seal
@@ -117,7 +116,6 @@ _.Zones =
 									["races"] = HORDE_ONLY,
 									["g"] = {
 										q(52313, {	-- Mission Report: Mudfisher Cove
-											["altQuests"] = { 53125 },	-- Mission Report: Into The Wicker
 											["provider"] = { "n", 138704 },	-- Mission Command Table
 											["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location
 											["races"] = HORDE_ONLY,
@@ -125,25 +123,24 @@ _.Zones =
 									},
 								}),
 								q(52314, {	-- Mudfisher Cove
-								--	["sourceQuests"] = { 52313 },	-- Mission Report: Mudfisher Cove
-									["altQuests"] = { 53125 },	-- Mission Report: Into The Wicker
+									["sourceQuests"] = { 52313 },	-- Mission Report: Mudfisher Cove
 									["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 									["coord"] = { 58.4, 62.6, 862 },
 									["races"] = HORDE_ONLY,
 								}),
 								mi(2095, {	-- Wicker Defense
-								--	["sourceQuests"] = { 52314 },	-- Mudfisher Cove
+									["sourceQuests"] = { 52314 },	-- Mudfisher Cove
 									["races"] = HORDE_ONLY,
 									["g"] = {
-										q(53125, {	-- Mission Report: Into The Wicker
+										q(53125, {	-- Mission Report: Into The Wicker (Per Character)
 											["provider"] = { "n", 138704 },	-- Mission Command Table
 											["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location
 											["races"] = HORDE_ONLY,
 										}),
 									},
 								}),
-								q(53126, {	-- The Wicker Totem
-								--	["sourceQuests"] = { 53125 },	-- Mission Report: Into The Wicker
+								q(53126, {	-- The Wicker Totem (Per Character)
+									["sourceQuests"] = { 53125 },	-- Mission Report: Into The Wicker
 									["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 									["coord"] = { 58.4, 62.6, 862 },
 									["races"] = HORDE_ONLY,
@@ -159,7 +156,6 @@ _.Zones =
 									["races"] = HORDE_ONLY,
 									["g"] = {
 										q(52221, {	-- Mission Report: Stonefist Watch
-											["altQuests"] = { 53081 },	-- Mission Report: Spare Parts
 											["provider"] = { "n", 138704 },	-- Mission Command Table
 											["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location
 											["races"] = HORDE_ONLY,
@@ -167,25 +163,24 @@ _.Zones =
 									},
 								}),
 								q(52222, {	-- Stonefist Watch
-								--	["sourceQuests"] = { 52221 },	-- Mission Report: Stonefist Watch
-									["altQuests"] = { 53081 },	-- Mission Report: Spare Parts
+									["sourceQuests"] = { 52221 },	-- Mission Report: Stonefist Watch
 									["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 									["coord"] = { 58.4, 62.6, 862 },
 									["races"] = HORDE_ONLY,
 								}),
 								mi(2092, {	-- Spare Parts
-									-- ["sourceQuests"] = { 52222 },	-- Stonefist Watch
+									["sourceQuests"] = { 52222 },	-- Stonefist Watch
 									["races"] = HORDE_ONLY,
 									["g"] = {
-										q(53081, {	-- Mission Report: Spare Parts
+										q(53081, {	-- Mission Report: Spare Parts (Per Character)
 											["provider"] = { "n", 138704 },	-- Mission Command Table
 											["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location
 											["races"] = HORDE_ONLY,
 										}),
 									},
 								}),
-								q(53082, {	-- Spare Parts
-								--	["sourceQuests"] = { 53081 },	-- Mission Report: Spare Parts
+								q(53082, {	-- Spare Parts (Per Character)
+									["sourceQuests"] = { 53081 },	-- Mission Report: Spare Parts
 									["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 									["coord"] = { 58.4, 62.6, 862 },
 									["races"] = HORDE_ONLY,
@@ -201,7 +196,6 @@ _.Zones =
 									["races"] = HORDE_ONLY,
 									["g"] = {
 										q(52776, {	-- Mission Report: Stonetusk Watch
-											["altQuests"] = { 53100 },	-- Giant Slaying
 											["provider"] = { "n", 138704 },	-- Mission Command Table
 											["races"] = HORDE_ONLY,
 											["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location
@@ -209,25 +203,24 @@ _.Zones =
 									},
 								}),
 								q(52777, {	-- Stonetusk Watch
-								--	["sourceQuests"] = { 52776 },	-- Mission Report: Stonetusk Watch
-									["altQuests"] = { 53100 },	-- Giant Slaying
+									["sourceQuests"] = { 52776 },	-- Mission Report: Stonetusk Watch
 									["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 									["coord"] = { 58.4, 62.6, 862 },
 									["races"] = HORDE_ONLY,
 								}),
 								mi(2093, {	-- Giant Slaying
-								--	["sourceQuests"] = { 52777 },	-- Stonetusk Watch
+									["sourceQuests"] = { 52777 },	-- Stonetusk Watch
 									["races"] = HORDE_ONLY,
 									["g"] = {
-										q(53100, {	-- Mission Report: Giant Slaying
+										q(53100, {	-- Mission Report: Giant Slaying (Per Character)
 											["provider"] = { "n", 138704 },	-- Mission Command Table
 											["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location
 											["races"] = HORDE_ONLY,
 										}),
 									},
 								}),
-								q(53101, {	-- Nettin' Ettin
-								--	["sourceQuests"] = { 53100 },		-- Mission Report: Giant Slaying
+								q(53101, {	-- Nettin' Ettin (Per Character)
+									["sourceQuests"] = { 53100 },		-- Mission Report: Giant Slaying
 									["provider"] = { "n", 135691 },		-- Nathanos Blightcaller
 									["coord"] = { 58.4, 62.6, 862 },
 									["races"] = HORDE_ONLY,
@@ -243,7 +236,6 @@ _.Zones =
 									["races"] = HORDE_ONLY,
 									["g"] = {
 										q(52275, {	-- Mission Report: Swiftwind Post
-											["altQuests"] = { 53102 },	-- Mission Report: Nature Calls
 											["provider"] = { "n", 138704 },	-- Mission Command Table
 											["races"] = HORDE_ONLY,
 											["coord"] = { 51.59, 99.58, 1165 },	-- The Banshee's Wail Location
@@ -251,25 +243,24 @@ _.Zones =
 									},
 								}),
 								q(52276, {	-- Swiftwind Post
-								--	["sourceQuests"] = { 52275 },	-- Mission Report: Swiftwind Post
-									["altQuests"] = { 53102 },	-- Mission Report: Nature Calls
+									["sourceQuests"] = { 52275 },	-- Mission Report: Swiftwind Post
 									["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 									["races"] = HORDE_ONLY,
 									["coord"] = { 58.44, 62.67, 862 },
 								}),
 								mi(2094, {	-- Nature Calls
-								--	["sourceQuests"] = { 52276 },	-- Swiftwind Post
+									["sourceQuests"] = { 52276 },	-- Swiftwind Post
 									["races"] = HORDE_ONLY,
 									["g"] = {
-										q(53102, {	-- Mission Report: Nature Calls
+										q(53102, {	-- Mission Report: Nature Calls (Per Character)
 											["provider"] = { "n", 138704 },	-- Mission Command Table
 											["races"] = HORDE_ONLY,
 											["coord"] = { 51.59, 99.58, 1165 },	-- The Banshee's Wail Location
 										}),
 									},
 								}),
-								q(53103, {	-- Wicker Magic
-								--	["sourceQuests"] = { 53102 },	-- Mission Report: Nature Calls
+								q(53103, {	-- Wicker Magic (Per Character)
+									["sourceQuests"] = { 53102 },	-- Mission Report: Nature Calls
 									["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 									["races"] = HORDE_ONLY,
 									["coord"] = { 58.44, 62.67, 862 },
