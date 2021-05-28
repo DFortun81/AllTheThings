@@ -1017,7 +1017,6 @@ _.HiddenQuestTriggers =
 		---   OUTLAND   ---
 		-------------------
 		--	QUESTING / LEVELING
-		q(10454),	-- Hellfire Peninsula - Flag: OFF THE RAILS. Triggered just after turning in Forward Base: Reaver's Fall as horde
 		q(11517),	-- Report to Nasuun — looks like an unused version of #11534 (triggers when you turn it in, but has no data on wowhead)
 		q(11518),	-- Sunwell Daily Portal Flag
 		q(11522),	-- Triggers with Rediscovering Your Roots (11521)

@@ -2035,10 +2035,7 @@ _.NeverImplemented =
 			i(62037), 	-- Gleaming seal of the archmagus
 			i(69891), 	-- Burnished Dark Iron Ring
 			i(103825), 	-- 5.4 Raid - Normal - Siege of Orgrimmar - Wildcard - Int Hit Ring
-			i(25988),	-- Glowing Alabaster Ring Beta only
 			i(28044),	-- Band of the Demon Stalker
-			i(25991),	-- Seamless Stone Band
-			i(25990),	-- Smooth soapstone band
 			i(33957),	-- Witches Band (unused version)
 			i(33958),	-- The Horseman's Signet Ring (unused version)
 			i(33959),	-- Ring of Ghoulish Delight (unused version)
@@ -2089,8 +2086,6 @@ _.NeverImplemented =
 			i(125349),	-- Wild Gladiator's Accolade of victory
 			i(125350),	-- Wild Gladiator's Accolade of meditation
 			i(173426),	-- Black Empire trinkets
-			i(25994),	-- rune of force (only beta)
-			i(25995),	-- Star of Sha'naar (only beta)
 			i(18355),	-- Ferras Collar
 			i(18438),	-- Sergeant's Mark
 			i(20084),	-- Hunting Net
@@ -2123,7 +2118,6 @@ _.NeverImplemented =
 			i(109378),	-- Unknown
 			i(109386),	-- Unknown
 			i(109394),	-- Unknown
-			i(25996),	-- Emblem of Perseverance
 			i(44869),	-- Frenzyheart Insignia of Fury
 			i(44870),	-- Oracle Talisman of Ablution
 			i(39819),	-- Bloodbinder's Runestone
