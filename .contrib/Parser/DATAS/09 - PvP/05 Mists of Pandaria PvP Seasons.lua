@@ -2039,7 +2039,19 @@ _.PVP =
 							
 							}),
 				
-				
+							
+							
+							
+							n(-322, {	-- Back
+								-- From Nalak
+								i(91100),	-- Tyrannical Gladiator's Cape of Cruelty
+								i(91101),	-- Tyrannical Gladiator's Cape of Prowess
+								i(91411),	-- Tyrannical Gladiator's Cloak of Alacrity
+								i(91412),	-- Tyrannical Gladiator's Cloak of Prowess
+								i(91124),	-- Tyrannical Gladiator's Drape of Cruelty
+								i(91126),	-- Tyrannical Gladiator's Drape of Meditation
+								i(91125),	-- Tyrannical Gladiator's Drape of Prowess
+							}),
 							n(-326, {	-- Wrists
 								-- From Nalak
 								i(91357),	-- Tyrannical Gladiator's Armbands of Meditation
@@ -2103,6 +2115,29 @@ _.PVP =
 							
 							}),
 							
+							n(-322, {	-- Back
+								i(99773, {	-- Tyrannical Gladiator's Cape of Cruelty
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(99774, {	-- Tyrannical Gladiator's Cape of Prowess
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(99944, {	-- Tyrannical Gladiator's Cloak of Alacrity
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(99945, {	-- Tyrannical Gladiator's Cloak of Prowess
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(99790, {	-- Tyrannical Gladiator's Drape of Cruelty
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(99792, {	-- Tyrannical Gladiator's Drape of Meditation
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(99791, {	-- Tyrannical Gladiator's Drape of Prowess
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+							}),
 							n(-326, {	-- Wrists
 								i(99915, {	-- Tyrannical Gladiator's Armbands of Meditation
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
@@ -2261,7 +2296,19 @@ _.PVP =
 							n(-319, {	-- Weapons	
 							
 							}),
-				
+							
+							
+							
+							n(-322, {	-- Back
+								-- From Nalak
+								i(94421),	-- Tyrannical Gladiator's Cape of Cruelty
+								i(94355),	-- Tyrannical Gladiator's Cape of Prowess
+								i(94485),	-- Tyrannical Gladiator's Cloak of Alacrity
+								i(94486),	-- Tyrannical Gladiator's Cloak of Prowess
+								i(94383),	-- Tyrannical Gladiator's Drape of Cruelty
+								i(94472),	-- Tyrannical Gladiator's Drape of Meditation
+								i(94488),	-- Tyrannical Gladiator's Drape of Prowess
+							}),
 							n(-326, {	-- Wrists
 								-- From Nalak
 								i(94337),	-- Tyrannical Gladiator's Armbands of Meditation
@@ -2324,7 +2371,31 @@ _.PVP =
 							n(-319, {	-- Weapons	
 							
 							}),
-				
+							
+							
+							n(-322, {	-- Back
+								i(100091, {	-- Tyrannical Gladiator's Cape of Cruelty
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(100025, {	-- Tyrannical Gladiator's Cape of Prowess
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(100155, {	-- Tyrannical Gladiator's Cloak of Alacrity
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(100156, {	-- Tyrannical Gladiator's Cloak of Prowess
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(100053, {	-- Tyrannical Gladiator's Drape of Cruelty
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(100142, {	-- Tyrannical Gladiator's Drape of Meditation
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(100158, {	-- Tyrannical Gladiator's Drape of Prowess
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+							}),
 							n(-326, {	-- Wrists
 								i(100004, {	-- Tyrannical Gladiator's Armbands of Meditation
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
@@ -2469,7 +2540,6 @@ _.PVP =
 				
 				
 						}),
-				
 					},
 				}),
 
@@ -2509,10 +2579,15 @@ _.PVP =
 						un(REMOVED_FROM_GAME, i(91304)),	-- Tyrannical Gladiator's Warboots of Alacrity
 						un(REMOVED_FROM_GAME, i(91302)),	-- Tyrannical Gladiator's Warboots of Cruelty
 					}),
+					n(-322, {	-- Back
+						-- From Nalak
+						un(REMOVED_FROM_GAME, i(98336)), -- Tyrannical Gladiator's Greatcloak
+					}),
+					n(-325, { -- Tabards
+						un(REMOVED_FROM_GAME, i(98162)), -- Tyrannical Gladiator's Tabard
+					}),
 				}),
-				n(-325, { -- Tabards
-					un(REMOVED_FROM_GAME, i(98162)), -- Tyrannical Gladiator's Tabard
-				}),
+				
 			}),
 			n(-677, {	-- Grievous Gladiator: Season 14
 			}),
