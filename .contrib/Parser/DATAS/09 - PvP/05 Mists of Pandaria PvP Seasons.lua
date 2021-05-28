@@ -4380,6 +4380,8 @@ _.PVP =
 						un(REMOVED_FROM_GAME, i(91363)),	-- Tyrannical Gladiator's Ringmail Helm
 						un(REMOVED_FROM_GAME, i(91365)),	-- Tyrannical Gladiator's Ringmail Leggings
 						un(REMOVED_FROM_GAME, i(91367)),	-- Tyrannical Gladiator's Ringmail Spaulders
+						--Never
+						un(NEVER_IMPLEMENTED, i(91799)),	-- Tyrannical Gladiator's Mail Leggings
 					}),
 					cl(WARLOCK, {
 						un(REMOVED_FROM_GAME, i(91429)),	-- Tyrannical Gladiator's Felweave Amice
