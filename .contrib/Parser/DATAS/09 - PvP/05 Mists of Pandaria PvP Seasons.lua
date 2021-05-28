@@ -848,12 +848,12 @@ _.PVP =
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = { 
 									{"sub", "pvp_set_ensemble", -10041, -675, -661, 8 },
-									{"select", "itemID", 84978 },	-- Dreadful Gladiator's Cuffs of Prowess
-									{"select", "itemID", 84954 },	-- Dreadful Gladiator's Cord of Cruelty
-									{"select", "itemID", 84814 },	-- Dreadful Gladiator's Treads of Cruelty
-									{"select", "itemID", 91475 },	-- Dreadful Gladiator's Cuffs of Prowess
-									{"select", "itemID", 91462 },	-- Dreadful Gladiator's Cord of Cruelty
-									{"select", "itemID", 91468 },	-- Dreadful Gladiator's Treads of Cruelty
+									{"select", "itemID", 84978 },	-- Malevolent Gladiator's Cuffs of Prowess
+									{"select", "itemID", 84954 },	-- Malevolent Gladiator's Cord of Cruelty
+									{"select", "itemID", 84814 },	-- Malevolent Gladiator's Treads of Cruelty
+									{"select", "itemID", 91475 },	-- Malevolent Gladiator's Cuffs of Prowess
+									{"select", "itemID", 91462 },	-- Malevolent Gladiator's Cord of Cruelty
+									{"select", "itemID", 91468 },	-- Malevolent Gladiator's Treads of Cruelty
 									{"select", "itemID", 91593 },	-- Malevolent Gladiator's Silk Amice
 									{"select", "itemID", 91587 },	-- Malevolent Gladiator's Silk Cowl
 									{"select", "itemID", 91585 },	-- Malevolent Gladiator's Silk Handguards
@@ -2099,6 +2099,61 @@ _.PVP =
 								un(NEVER_IMPLEMENTED, i(91201)),	-- Tyrannical Gladiator's Rifle
 								un(NEVER_IMPLEMENTED, i(99833)),	-- Tyrannical Gladiator's Shiv
 							}),
+							cl(DEATHKNIGHT, {
+								i(138683, {	-- Ensemble: Tyrannical Gladiator's Dreadplate Armor
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_ensemble", -10041, -676, -9914, -661, 6 },
+										{"select", "itemID", 91306 },	-- Tyrannical Gladiator's Armplates of Alacrity
+										{"select", "itemID", 91297 },	-- Tyrannical Gladiator's Girdle of Accuracy
+										{"select", "itemID", 91303 },	-- Tyrannical Gladiator's Warboots of Cruelty
+										{"select", "itemID", 99891 },	-- Tyrannical Gladiator's Armplates of Alacrity
+										{"select", "itemID", 99886 },	-- Tyrannical Gladiator's Girdle of Accuracy
+										{"select", "itemID", 99889 },	-- Tyrannical Gladiator's Warboots of Alacrity
+										{"select", "itemID", 99806 },	-- Tyrannical Gladiator's Dreadplate Chestpiece
+										{"select", "itemID", 99807 },	-- Tyrannical Gladiator's Dreadplate Gauntlets
+										{"select", "itemID", 99808 },	-- Tyrannical Gladiator's Dreadplate Helm
+										{"select", "itemID", 99809 },	-- Tyrannical Gladiator's Dreadplate Legguards
+										{"select", "itemID", 99810 },	-- Tyrannical Gladiator's Dreadplate Shoulders
+										{"exclude", "itemID", 138683 },	-- Exclude itself to stop duplicating 
+									},
+								}),
+								i(91147),	-- Tyrannical Gladiator's Dreadplate Chestpiece
+								i(91149),	-- Tyrannical Gladiator's Dreadplate Gauntlets
+								i(91151),	-- Tyrannical Gladiator's Dreadplate Helm
+								i(91153),	-- Tyrannical Gladiator's Dreadplate Legguards
+								i(91155),	-- Tyrannical Gladiator's Dreadplate Shoulders
+							}),
+							
+							
+							
+							cl(MAGE, {
+								i(138697, {	-- Ensemble: Tyrannical Gladiator's Silk Armor
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_ensemble", -10041, -676, -9914, -661, 8 },
+										{"select", "itemID", 91122 },	-- Tyrannical Gladiator's Cuffs of Prowess
+										{"select", "itemID", 91109 },	-- Tyrannical Gladiator's Cord of Cruelty
+										{"select", "itemID", 91115 },	-- Tyrannical Gladiator's Treads of Cruelty
+										{"select", "itemID", 99788 },	-- Tyrannical Gladiator's Cuffs of Prowess
+										{"select", "itemID", 99781 },	-- Tyrannical Gladiator's Cord of Cruelty
+										{"select", "itemID", 99784 },	-- Tyrannical Gladiator's Treads of Cruelty
+										{"select", "itemID", 99856 },	-- Tyrannical Gladiator's Silk Amice
+										{"select", "itemID", 99853 },	-- Tyrannical Gladiator's Silk Cowl
+										{"select", "itemID", 99852 },	-- Tyrannical Gladiator's Silk Handguards
+										{"select", "itemID", 99855 },	-- Tyrannical Gladiator's Silk Robe
+										{"select", "itemID", 99854 },	-- Tyrannical Gladiator's Silk Trousers
+										{"exclude", "itemID", 138697 },	-- Exclude itself to stop duplicating 
+									},
+								}),
+								i(91240),	-- Tyrannical Gladiator's Silk Amice
+								i(91234),	-- Tyrannical Gladiator's Silk Cowl
+								i(91232),	-- Tyrannical Gladiator's Silk Handguards
+								i(91238),	-- Tyrannical Gladiator's Silk Robe
+								i(91236),	-- Tyrannical Gladiator's Silk Trousers
+							}),
+							
+							
 							n(-322, {	-- Back
 								-- From Nalak
 								i(91100),	-- Tyrannical Gladiator's Cape of Cruelty
@@ -2282,6 +2337,46 @@ _.PVP =
 								un(NEVER_IMPLEMENTED, i(99834)),	-- Tyrannical Gladiator's Rifle
 								un(NEVER_IMPLEMENTED, i(99804)),	-- Tyrannical Gladiator's Touch of Deafeat
 							}),
+							cl(DEATHKNIGHT, {
+								i(99806, {	-- Tyrannical Gladiator's Dreadplate Chestpiece
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(99807, {	-- Tyrannical Gladiator's Dreadplate Gauntlets
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(99808, {	-- Tyrannical Gladiator's Dreadplate Helm
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(99809, {	-- Tyrannical Gladiator's Dreadplate Legguards
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(99810, {	-- Tyrannical Gladiator's Dreadplate Shoulders
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+							}),
+							
+							
+							
+							cl(MAGE, {
+								i(99856, {	-- Tyrannical Gladiator's Silk Amice
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(99853, {	-- Tyrannical Gladiator's Silk Cowl
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(99852, {	-- Tyrannical Gladiator's Silk Handguards
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(99855, {	-- Tyrannical Gladiator's Silk Robe
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(99854, {	-- Tyrannical Gladiator's Silk Trousers
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+							}),
+							
+							
+							
 							n(-322, {	-- Back
 								i(99773, {	-- Tyrannical Gladiator's Cape of Cruelty
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
@@ -2547,6 +2642,58 @@ _.PVP =
 								un(NEVER_IMPLEMENTED, i(94309)),	-- Tyrannical Gladiator's Rifle
 								un(NEVER_IMPLEMENTED, i(99962)),	-- Tyrannical Gladiator's Shiv	
 							}),
+							cl(DEATHKNIGHT, {
+								i(138684, {	-- Ensemble: Tyrannical Gladiator's Dreadplate Armor
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_ensemble", -10041, -676, -9913, -661, 6 },
+										{"select", "itemID", 94487 },	-- Tyrannical Gladiator's Armplates of Alacrity
+										{"select", "itemID", 94353 },	-- Tyrannical Gladiator's Girdle of Accuracy
+										{"select", "itemID", 94461 },	-- Tyrannical Gladiator's Warboots of Alacrity
+										{"select", "itemID", 100157 },	-- Tyrannical Gladiator's Armplates of Alacrity
+										{"select", "itemID", 100023 },	-- Tyrannical Gladiator's Girdle of Accuracy
+										{"select", "itemID", 100084 },	-- Tyrannical Gladiator's Warboots of Alacrity
+										{"select", "itemID", 100062 },	-- Tyrannical Gladiator's Dreadplate Chestpiece
+										{"select", "itemID", 100034 },	-- Tyrannical Gladiator's Dreadplate Gauntlets
+										{"select", "itemID", 100099 },	-- Tyrannical Gladiator's Dreadplate Helm
+										{"select", "itemID", 100035 },	-- Tyrannical Gladiator's Dreadplate Legguards
+										{"select", "itemID", 100036 },	-- Tyrannical Gladiator's Dreadplate Shoulders
+										{"exclude", "itemID", 138684 },	-- Exclude itself to stop duplicating 
+									},
+								}),
+								i(94392),	-- Tyrannical Gladiator's Dreadplate Chestpiece
+								i(94364),	-- Tyrannical Gladiator's Dreadplate Gauntlets
+								i(94429),	-- Tyrannical Gladiator's Dreadplate Helm
+								i(94365),	-- Tyrannical Gladiator's Dreadplate Legguards
+								i(94366),	-- Tyrannical Gladiator's Dreadplate Shoulders
+							}),
+							
+							cl(MAGE, {
+								i(138698, {	-- Ensemble: Tyrannical Gladiator's Silk Armor
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_ensemble", -10041, -676, -9913, -661, 8 },
+										{"select", "itemID", 94449 },	-- Tyrannical Gladiator's Cuffs of Prowess
+										{"select", "itemID", 94400 },	-- Tyrannical Gladiator's Cord of Cruelty
+										{"select", "itemID", 94402 },	-- Tyrannical Gladiator's Treads of Cruelty
+										{"select", "itemID", 100119 },	-- Tyrannical Gladiator's Cuffs of Prowess
+										{"select", "itemID", 100070 },	-- Tyrannical Gladiator's Cord of Cruelty
+										{"select", "itemID", 100072 },	-- Tyrannical Gladiator's Treads of Cruelty
+										{"select", "itemID", 100059 },	-- Tyrannical Gladiator's Silk Amice
+										{"select", "itemID", 100051 },	-- Tyrannical Gladiator's Silk Cowl
+										{"select", "itemID", 100121 },	-- Tyrannical Gladiator's Silk Handguards
+										{"select", "itemID", 100101 },	-- Tyrannical Gladiator's Silk Robe
+										{"select", "itemID", 100032 },	-- Tyrannical Gladiator's Silk Trousers
+										{"exclude", "itemID", 138698 },	-- Exclude itself to stop duplicating 
+									},
+								}),
+								i(94389),	-- Tyrannical Gladiator's Silk Amice
+								i(94381),	-- Tyrannical Gladiator's Silk Cowl
+								i(94451),	-- Tyrannical Gladiator's Silk Handguards
+								i(94431),	-- Tyrannical Gladiator's Silk Robe
+								i(94362),	-- Tyrannical Gladiator's Silk Trousers
+							}),
+							
 							n(-322, {	-- Back
 								-- From Nalak
 								i(94421),	-- Tyrannical Gladiator's Cape of Cruelty
@@ -2730,6 +2877,46 @@ _.PVP =
 								un(NEVER_IMPLEMENTED, i(99970)),	-- Tyrannical Gladiator's Rifle
 								un(NEVER_IMPLEMENTED, i(99966)),	-- Tyrannical Gladiator's Touch of Deafeat
 							}),
+							cl(DEATHKNIGHT, {
+								i(100062, {	-- Tyrannical Gladiator's Dreadplate Chestpiece
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(100034, {	-- Tyrannical Gladiator's Dreadplate Gauntlets
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(100099, {	-- Tyrannical Gladiator's Dreadplate Helm
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(100035, {	-- Tyrannical Gladiator's Dreadplate Legguards
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(100036, {	-- Tyrannical Gladiator's Dreadplate Shoulders
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+							}),
+							
+							
+							
+							cl(MAGE, {
+								i(100059, {	-- Tyrannical Gladiator's Silk Amice
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(100051, {	-- Tyrannical Gladiator's Silk Cowl
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(100121, {	-- Tyrannical Gladiator's Silk Handguards
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(100101, {	-- Tyrannical Gladiator's Silk Robe
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(100032, {	-- Tyrannical Gladiator's Silk Trousers
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+							}),
+							
+							
+							
 							n(-322, {	-- Back
 								i(100091, {	-- Tyrannical Gladiator's Cape of Cruelty
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
@@ -2965,6 +3152,24 @@ _.PVP =
 						--Never
 						un(NEVER_IMPLEMENTED, i(91200)),	-- Tyrannical Gladiator's Shiv
 					}),
+					cl(DEATHKNIGHT, {
+						un(REMOVED_FROM_GAME, i(91148)),	-- Tyrannical Gladiator's Dreadplate Chestpiece
+						un(REMOVED_FROM_GAME, i(91150)),	-- Tyrannical Gladiator's Dreadplate Gauntlets
+						un(REMOVED_FROM_GAME, i(91152)),	-- Tyrannical Gladiator's Dreadplate Helm
+						un(REMOVED_FROM_GAME, i(91154)),	-- Tyrannical Gladiator's Dreadplate Legguards
+						un(REMOVED_FROM_GAME, i(91156)),	-- Tyrannical Gladiator's Dreadplate Shoulders
+					}),
+				
+					cl(MAGE, {
+						un(REMOVED_FROM_GAME, i(91241)),	-- Malevolent Gladiator's Silk Amice
+						un(REMOVED_FROM_GAME, i(91235)),	-- Malevolent Gladiator's Silk Cowl
+						un(REMOVED_FROM_GAME, i(91233)),	-- Malevolent Gladiator's Silk Handguards
+						un(REMOVED_FROM_GAME, i(91239)),	-- Malevolent Gladiator's Silk Robe
+						un(REMOVED_FROM_GAME, i(91237)),	-- Malevolent Gladiator's Silk Trousers
+					}),
+				
+				
+				
 					n(-328, {	-- Waist
 						un(REMOVED_FROM_GAME, i(91185)),	-- Tyrannical Gladiator's Belt of Cruelty
 						un(REMOVED_FROM_GAME, i(91168)),	-- Tyrannical Gladiator's Belt of Meditation
