@@ -3930,7 +3930,6 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(73431)),	-- Cataclysmic Gladiator's Touch of Defeat
 				}),
 				cl(DEATHKNIGHT, {
-					un(NEVER_IMPLEMENTED, i(146463)),	-- Ensemble: Elite Cataclysmic Gladiator's Dreadplate Armor
 					un(REMOVED_FROM_GAME, i(73742)),	-- Cataclysmic Gladiator's Dreadplate Chestpiece
 					un(REMOVED_FROM_GAME, i(73741)),	-- Cataclysmic Gladiator's Dreadplate Gauntlets
 					un(REMOVED_FROM_GAME, i(73740)),	-- Cataclysmic Gladiator's Dreadplate Helm
@@ -3938,14 +3937,13 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(73738)),	-- Cataclysmic Gladiator's Dreadplate Shoulders
 				}),
 				cl(DRUID, {
-					un(NEVER_IMPLEMENTED, i(146461)),	-- Ensemble: Elite Cataclysmic Gladiator's Dragonhide Armor
 					un(REMOVED_FROM_GAME, i(73737)),	-- Cataclysmic Gladiator's Dragonhide Gloves
 					un(REMOVED_FROM_GAME, i(73736)),	-- Cataclysmic Gladiator's Dragonhide Helm
 					un(REMOVED_FROM_GAME, i(73735)),	-- Cataclysmic Gladiator's Dragonhide Legguards
 					un(REMOVED_FROM_GAME, i(73734)),	-- Cataclysmic Gladiator's Dragonhide Robe
 					un(REMOVED_FROM_GAME, i(73733)),	-- Cataclysmic Gladiator's Dragonhide Spaulders
 					un(REMOVED_FROM_GAME, i(73731)),	-- Cataclysmic Gladiator's Kodohide Gloves
-					un(REMOVED_FROM_GAME, i(73730)),	-- Cataclysmic Gladiator's Kodohide Helm
+					un(REMOVED_FROM_GAME, i(73730)),	-- Cataclysmic Gladiator's Kodohid
 					un(REMOVED_FROM_GAME, i(73729)),	-- Cataclysmic Gladiator's Kodohide Legguards
 					un(REMOVED_FROM_GAME, i(73728)),	-- Cataclysmic Gladiator's Kodohide Robe
 					un(REMOVED_FROM_GAME, i(73727)),	-- Cataclysmic Gladiator's Kodohide Spaulders
@@ -3956,7 +3954,6 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(73721)),	-- Cataclysmic Gladiator's Wyrmhide Spaulders
 				}),
 				cl(HUNTER, {
-					un(NEVER_IMPLEMENTED, i(146459)),	-- Ensemble: Elite Cataclysmic Gladiator's Chain Armor
 					un(REMOVED_FROM_GAME, i(73718)),	-- Cataclysmic Gladiator's Chain Armor
 					un(REMOVED_FROM_GAME, i(73717)),	-- Cataclysmic Gladiator's Chain Gauntlets
 					un(REMOVED_FROM_GAME, i(73716)),	-- Cataclysmic Gladiator's Chain Helm
@@ -3964,7 +3961,6 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(73714)),	-- Cataclysmic Gladiator's Chain Spaulders
 				}),
 				cl(MAGE, {
-					un(NEVER_IMPLEMENTED, i(146477)),	-- Ensemble: Elite Cataclysmic Gladiator's Silk Armor
 					un(REMOVED_FROM_GAME, i(73709)),	-- Cataclysmic Gladiator's Silk Amice
 					un(REMOVED_FROM_GAME, i(73712)),	-- Cataclysmic Gladiator's Silk Cowl
 					un(REMOVED_FROM_GAME, i(73713)),	-- Cataclysmic Gladiator's Silk Handguards
@@ -3972,7 +3968,6 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(73711)),	-- Cataclysmic Gladiator's Silk Trousers
 				}),
 				cl(PALADIN, {
-					un(NEVER_IMPLEMENTED, i(146475)),	-- Ensemble: Elite Cataclysmic Gladiator's Scaled Armor
 					un(REMOVED_FROM_GAME, i(73701)),	-- Cataclysmic Gladiator's Ornnamented Chestguard
 					un(REMOVED_FROM_GAME, i(73700)),	-- Cataclysmic Gladiator's Ornnamented Gloves
 					un(REMOVED_FROM_GAME, i(73699)),	-- Cataclysmic Gladiator's Ornnamented Headcover
@@ -3985,7 +3980,6 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(73704)),	-- Cataclysmic Gladiator's Scaled Shoulders
 				}),
 				cl(PRIEST, {
-					un(NEVER_IMPLEMENTED, i(146473)),	-- Ensemble: Elite Cataclysmic Gladiator's Satin Armor
 					un(REMOVED_FROM_GAME, i(73694)),	-- Cataclysmic Gladiator's Mooncloth Gloves
 					un(REMOVED_FROM_GAME, i(73693)),	-- Cataclysmic Gladiator's Mooncloth Helm
 					un(REMOVED_FROM_GAME, i(73692)),	-- Cataclysmic Gladiator's Mooncloth Leggings
@@ -3998,7 +3992,6 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(73686)),	-- Cataclysmic Gladiator's Satin Robe
 				}),
 				cl(ROGUE, {
-					un(NEVER_IMPLEMENTED, i(146467)),	-- Ensemble: Elite Cataclysmic Gladiator's Leather Armor
 					un(REMOVED_FROM_GAME, i(73681)),	-- Cataclysmic Gladiator's Leather Gloves
 					un(REMOVED_FROM_GAME, i(73680)),	-- Cataclysmic Gladiator's Leather Helm
 					un(REMOVED_FROM_GAME, i(73679)),	-- Cataclysmic Gladiator's Leather Legguards
@@ -4006,7 +3999,6 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(73682)),	-- Cataclysmic Gladiator's Leather Tunic
 				}),
 				cl(SHAMAN, {
-					un(NEVER_IMPLEMENTED, i(146471)),	-- Ensemble: Elite Cataclysmic Gladiator's Ringmail Armor
 					un(REMOVED_FROM_GAME, i(73670)),	-- Cataclysmic Gladiator's Linked Armor
 					un(REMOVED_FROM_GAME, i(73669)),	-- Cataclysmic Gladiator's Linked Gauntlets
 					un(REMOVED_FROM_GAME, i(73668)),	-- Cataclysmic Gladiator's Linked Helm
@@ -4024,7 +4016,6 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(73671)),	-- Cataclysmic Gladiator's Ringmail Spaulders
 				}),
 				cl(WARLOCK, {
-					un(NEVER_IMPLEMENTED, i(146465)),	-- Ensemble: Elite Cataclysmic Gladiator's Felweave Armor
 					un(REMOVED_FROM_GAME, i(73656)),	-- Cataclysmic Gladiator's Felweave Amice
 					un(REMOVED_FROM_GAME, i(73659)),	-- Cataclysmic Gladiator's Felweave Cowl
 					un(REMOVED_FROM_GAME, i(73660)),	-- Cataclysmic Gladiator's Felweave Handguards
@@ -4032,7 +4023,6 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(73658)),	-- Cataclysmic Gladiator's Felweave Trousers
 				}),
 				cl(WARRIOR, {
-					un(NEVER_IMPLEMENTED, i(146469)),	-- Ensemble: Elite Cataclysmic Gladiator's Plate Armor
 					un(REMOVED_FROM_GAME, i(73655)),	-- Cataclysmic Gladiator's Plate Chestpiece
 					un(REMOVED_FROM_GAME, i(73654)),	-- Cataclysmic Gladiator's Plate Gloves
 					un(REMOVED_FROM_GAME, i(73653)),	-- Cataclysmic Gladiator's Plate Helm

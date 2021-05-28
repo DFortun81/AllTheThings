@@ -2219,6 +2219,16 @@ _.NeverImplemented =
 		i(178488),	-- Retrieving Data
 		i(178489),	-- Retrieving Data
 		i(178673),	-- Retrieving Data
+		i(146463),	-- Ensemble: Elite Cataclysmic Gladiator's Dreadplate Armor
+		i(146461),	-- Ensemble: Elite Cataclysmic Gladiator's Dragonhide Armor
+		i(146459),	-- Ensemble: Elite Cataclysmic Gladiator's Chain Armor
+		i(146477),	-- Ensemble: Elite Cataclysmic Gladiator's Silk Armor
+		i(146475),	-- Ensemble: Elite Cataclysmic Gladiator's Scaled Armor
+		i(146473),	-- Ensemble: Elite Cataclysmic Gladiator's Satin Armor
+		i(146467),	-- Ensemble: Elite Cataclysmic Gladiator's Leather Armor
+		i(146471),	-- Ensemble: Elite Cataclysmic Gladiator's Ringmail Armor
+		i(146465),	-- Ensemble: Elite Cataclysmic Gladiator's Felweave Armor
+		i(146469),	-- Ensemble: Elite Cataclysmic Gladiator's Plate Armor
 		i(159681),	-- Set Keystone Map: Darkheart Thicket
 		i(159683),	-- Set Keystone Map: Black Rook Hold
 		i(159684),	-- Set Keystone Map: Cathedral of Eternal Night
