@@ -3839,7 +3839,7 @@ _.NeverImplemented =
 			i(109283),   	-- 6.0 QA Combat Test Hunter Bow
 			i(140717),	-- Marksman Recurve Bow
 			i(150612),	-- Marksman Recurve Bow
-			i(91089),	-- Tyrannical Gladiator's longbow a s13
+			i(91107),	-- Tyrannical Gladiator's longbow a s13
 			i(94303),	-- Tyrannical Gladiator's longbow h s13
 			i(99780),	-- Tyrannical Gladiator's longbow a s14
 			i(99964),	-- Tyrannical Gladiator's longbow h s14

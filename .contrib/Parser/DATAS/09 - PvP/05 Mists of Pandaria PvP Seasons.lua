@@ -2067,15 +2067,12 @@ _.PVP =
 									},
 								}),
 								i(91129),	-- Tyrannical Gladiator's Barrier
-								--Baton of Light?
 								i(91133),	-- Tyrannical Gladiator's Battle Staff
 								i(91406),	-- Tyrannical Gladiator's Bonecracker
-								--Bonegrinder?
 								i(91093),	-- Tyrannical Gladiator's Cleaver
 								i(91087),	-- Tyrannical Gladiator's Decapitator
 								i(91127),	-- Tyrannical Gladiator's Endgame
 								i(91207),	-- Tyrannical Gladiator's Energy Staff
-								--Fleshslicer?
 								i(91203),	-- Tyrannical Gladiator's Gavel
 								i(91091),	-- Tyrannical Gladiator's Greatsword
 								i(91404),	-- Tyrannical Gladiator's Hacker
@@ -2096,6 +2093,9 @@ _.PVP =
 								i(91408),	-- Tyrannical Gladiator's Slicer
 								i(91131),	-- Tyrannical Gladiator's Spellblade
 								i(91182),	-- Tyrannical Gladiator's Staff
+								--Never
+								un(NEVER_IMPLEMENTED, i(91089)),	-- Tyrannical Gladiator's Bonegrinder
+								un(NEVER_IMPLEMENTED, i(91394)),	-- Tyrannical Gladiator's Fleshslicer
 							}),
 							n(-322, {	-- Back
 								-- From Nalak
@@ -2211,7 +2211,6 @@ _.PVP =
 								i(99941, {	-- Tyrannical Gladiator's Bonecracker
 									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
 								}),
-								--Bonegrinder?
 								i(99769, {	-- Tyrannical Gladiator's Cleaver
 									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
 								}),
@@ -2275,6 +2274,10 @@ _.PVP =
 								i(99824, {	-- Tyrannical Gladiator's Staff
 									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
 								}),
+								--Never
+								un(NEVER_IMPLEMENTED, i(99939)),	-- Tyrannical Gladiator's Baton of Light
+								un(NEVER_IMPLEMENTED, i(99767)),	-- Tyrannical Gladiator's Bonegrinder
+								un(NEVER_IMPLEMENTED, i(99934)),	-- Tyrannical Gladiator's Fleshslicer
 							}),
 							n(-322, {	-- Back
 								i(99773, {	-- Tyrannical Gladiator's Cape of Cruelty
@@ -2511,10 +2514,8 @@ _.PVP =
 									},
 								}),
 								i(94501),	-- Tyrannical Gladiator's Barrier
-								--Baton of Light?
 								i(94313),	-- Tyrannical Gladiator's Battle Staff
 								i(94322),	-- Tyrannical Gladiator's Bonecracker
-								--Bonegrinder?
 								i(94312),	-- Tyrannical Gladiator's Cleaver
 								i(94323),	-- Tyrannical Gladiator's Decapitator
 								i(94502),	-- Tyrannical Gladiator's Endgame
@@ -2540,6 +2541,9 @@ _.PVP =
 								i(94318),	-- Tyrannical Gladiator's Slicer
 								i(94306),	-- Tyrannical Gladiator's Spellblade
 								i(94307),	-- Tyrannical Gladiator's Staff
+								--Never
+								un(NEVER_IMPLEMENTED, i(94324)),	-- Tyrannical Gladiator's Bonegrinder
+								un(NEVER_IMPLEMENTED, i(94314)),	-- Tyrannical Gladiator's Fleshslicer
 							}),
 							n(-322, {	-- Back
 								-- From Nalak
@@ -2655,7 +2659,6 @@ _.PVP =
 								i(99983, {	-- Tyrannical Gladiator's Bonecracker
 									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
 								}),
-								--Bonegrinder?
 								i(99973, {	-- Tyrannical Gladiator's Cleaver
 									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
 								}),
@@ -2719,6 +2722,10 @@ _.PVP =
 								i(99968, {	-- Tyrannical Gladiator's Staff
 									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
 								}),
+								--Never
+								un(NEVER_IMPLEMENTED, i(99969)),	-- Tyrannical Gladiator's Baton of Light
+								un(NEVER_IMPLEMENTED, i(99985)),	-- Tyrannical Gladiator's Bonegrinder
+								un(NEVER_IMPLEMENTED, i(99975)),	-- Tyrannical Gladiator's Fleshslicer
 							}),
 							n(-322, {	-- Back
 								i(100091, {	-- Tyrannical Gladiator's Cape of Cruelty
@@ -2923,15 +2930,15 @@ _.PVP =
 				n(-662, {	-- Elite PvP Gear
 					n(-319, {	-- Weapons
 						un(REMOVED_FROM_GAME, i(91130)),	-- Tyrannical Gladiator's Barrier
-						--baton of light?
+						un(REMOVED_FROM_GAME, i(91403)),	-- Tyrannical Gladiator's Baton of Light
 						un(REMOVED_FROM_GAME, i(91134)),	-- Tyrannical Gladiator's Battle Staff
 						un(REMOVED_FROM_GAME, i(91407)),	-- Tyrannical Gladiator's Bonecracker
-						--Bonegrinder?
+						un(REMOVED_FROM_GAME, i(91090)),	-- Tyrannical Gladiator's Bonegrinder
 						un(REMOVED_FROM_GAME, i(91094)),	-- Tyrannical Gladiator's Cleaver
 						un(REMOVED_FROM_GAME, i(91088)),	-- Tyrannical Gladiator's Decapitator
 						un(REMOVED_FROM_GAME, i(91128)),	-- Tyrannical Gladiator's Endgame
 						un(REMOVED_FROM_GAME, i(91208)),	-- Tyrannical Gladiator's Energy Staff
-						--fleshslicer?
+						un(REMOVED_FROM_GAME, i(91395)),	-- Tyrannical Gladiator's Fleshslicer
 						un(REMOVED_FROM_GAME, i(91204)),	-- Tyrannical Gladiator's Gavel
 						un(REMOVED_FROM_GAME, i(91092)),	-- Tyrannical Gladiator's Greatsword
 						un(REMOVED_FROM_GAME, i(91405)),	-- Tyrannical Gladiator's Hacker
