@@ -12,6 +12,22 @@ _.ExpansionFeatures =
 			},
 			["g"] = {
 				n(QUESTS, {
+					q(43424, {	-- A Hero's Weapon
+						["sourceQuests"] = { 43697 },	-- Warriors of Light
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
+						["coord"] = { 72.6, 25.8, 646 },
+					}),
+					q(43700, {	-- A Light in the Darkness
+						["sourceQuests"] = {
+							43699,	-- Defenders of the World
+							43698,	-- Lumenstone
+						},
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker
+						["coord"] = { 52.3, 78.1, 24 },
+						["maps"] = { 702 },	-- Netherlight Temple
+					}),
 					q(43934, {	-- A New Path
 						["sourceQuests"] = { 43541 },	-- United As One
 						["classes"] = { PALADIN },
@@ -53,6 +69,12 @@ _.ExpansionFeatures =
 					}),
 					q(45974, {	-- An Urgent Warning
 						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
+					}),
+					q(45890, {	-- Ancestors and Enemies
+						["sourceQuests"] = { 45143 },	-- Judgment Awaits
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 109102 },	-- Delas Moonfang
+						["coord"] = { 59.1, 32.6, 24 },
 					}),
 					q(43490, {	-- Aponi's Trail
 						["sourceQuests"] = { 43489 },	-- To Felblaze Ingress
@@ -121,8 +143,10 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(43785, {	-- Champion: Arator the Redeemer
+						["sourceQuests"] = { 43697 },	-- Warriors of Light
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 99997 },		-- Arator the Redeemer
+						["coord"] = { 71.6, 23.7, 24 },
 						["g"] = {
 							follower(758),	-- Arator the Redeemer
 						},
@@ -155,13 +179,19 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(43701, {	-- Champion: Lothraxion
+						["sourceQuests"] = { 43697 },	-- Warriors of Light
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 109105 },	-- Lothraxion <High Commander>
+						["coord"] = { 73.1, 23.5, 24 },
 						["g"] = {
 							follower(759),	-- Lothraxion
 						},
 					}),
 					q(46045, {	-- Champion: Nerus Moonfang
+						["sourceQuests"] = {
+							45149,	-- Ending the Crescent Curse
+							45148,	-- Oath Breaker
+						},
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 119545 },	-- Nerus Moonfang
 						["g"] = {
@@ -202,6 +232,13 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
 						["coord"] = { 52.3, 78.1, 24 },
 					}),
+					q(46259, {	-- Darkbinder Dilemma
+						["sourceQuests"] = { 45890 },	-- Ancestors and Enemies
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 119209 },	-- Erelyn Moonfang
+						["coord"] = { 66.8, 53.4, 641 },
+						["maps"] = { 641 },	-- Val'sharah
+					}),
 					q(43699, {	-- Defenders of the World
 						["sourceQuests"] = {
 							43492,	-- Champion: Aponi Brightmane
@@ -211,11 +248,23 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker
 						["coord"] = { 52.3, 78.1, 24 },
 					}),
+					q(45149, {	-- Ending the Crescent Curse
+						["sourceQuests"] = { 45147 },	-- Felstone Destruction
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 119545 },	-- Nerus Moonfang
+						["coord"] = { 58.9, 31.9, 24 },
+					}),
 					q(44219, {	-- Fate's Blessing
 						-- TBD: ["coord"] = {  },
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 112986 },	-- Librarian Lightmorne
 						["description"] = "Only available if you you have the |cFFFFD700Holy Purpose|r order hall upgrade.",
+					}),
+					q(45147, {	-- Felstone Destruction
+						["sourceQuests"] = { 45146 },	-- Runic Reading
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 109102 },	-- Delas Moonfang
+						["coord"] = { 59.1, 32.6, 24 },
 					}),
 					q(46151, {	-- Furthering Knowledge
 						["u"] = REMOVED_FROM_GAME,
@@ -269,12 +318,25 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
 						["coord"] = { 52.3, 78.1, 24 },
 					}),
+					q(45145, {	-- Moonfang Family Relics
+						["sourceQuests"] = { 46259 },	-- Darkbinder Dilemma
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 119209 },	-- Erelyn Moonfang
+						["coord"] = { 66.8, 53.4, 641 },
+						["maps"] = { 641 },	-- Val'sharah
+					}),
 					q(43462, {	-- Mother Ozram
 						["sourceQuests"] = { 42887 },	-- This Is Retribution
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 109384 },	-- Justicar Julia Celeste
 						["coord"] = { 30.6, 44.9, 630 },
 						["maps"] = { 630 },	-- Azsuna
+					}),
+					q(45148, {	-- Oath Breaker
+						["sourceQuests"] = { 45147 },	-- Felstone Destruction
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 119545 },	-- Nerus Moonfang
+						["coord"] = { 58.9, 31.9, 24 },
 					}),
 					q(42848, {	-- Recruiting the Troops
 						["sourceQuests"] = { 42847 },	-- Dark Storms
@@ -290,6 +352,12 @@ _.ExpansionFeatures =
 						["g"] = {
 							follower(480),	-- Lord Maxwell Tyrosus
 						},
+					}),
+					q(45146, {	-- Runic Reading
+						["sourceQuests"] = { 45145 },	-- Moonfang Family Relics
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 109102 },	-- Delas Moonfang
+						["coord"] = { 59.1, 32.6, 24 },
 					}),
 					q(42772, {	-- Sacred Ground
 						["sourceQuests"] = { 42770 },	-- Seeking Guidance
@@ -484,10 +552,14 @@ _.ExpansionFeatures =
 							}),
 						},
 					}),
-					q(43697, {	-- Warriors of the Light
+					q(43697, {	-- Warriors of Light
+						["sourceQuests"] = { 43700 },	-- A Light in the Darkness
 						["classes"] = { PALADIN },
+						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
+						["coord"] = { 72.6, 25.8, 646 },
 						["g"] = {
 							i(139690),	-- Breastplate of the Silver Hand
+							title(345),	-- Highlord %s
 						},
 					}),
 					q(38576, {	-- We Meet at Light's Hope
@@ -525,22 +597,13 @@ _.ExpansionFeatures =
 						["coord"] = { 52.3, 78.1, 24 },
 					}),
 					--[[
-					q(43424),	-- A Hero's Weapon
-					q(43700),	-- A Light in the Darkness
-					q(45890),	-- Ancestors and Enemies (also warrior?)
 					q(44220, {	-- Blessing of the Order
 						["u"] = REMOVED_FROM_GAME,
 					}),
-					q(45149),	-- Ending the Crescent Curse
-					q(45147),	-- Felstone Destruction (and warrior?)
 					q(39722),	-- Forging New Strength
 					q(42774),	-- Hope Prevails
-					q(45143),	-- Judgment Awaits
 					q(46074),	-- Leather to Legendary
-					q(45145),	-- Moonfang Family Relics
-					q(45148),	-- Oath Breaker
 					q(46070),	-- Preparations Underway
-					q(45146),	-- Runic Reading
 					q(46069),	-- Worthy of the Title
 					]]--
 				}),

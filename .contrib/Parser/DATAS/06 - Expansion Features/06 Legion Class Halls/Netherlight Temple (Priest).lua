@@ -213,12 +213,14 @@ _.ExpansionFeatures =
 						["coord"] = { 51.5, 47.6, 702 },
 					}),
 					q(46034, {	-- Champion: Aelthalyste
+						["classes"] = { PRIEST },
 						["provider"] = { "n", 120842 },	-- Aelthalyste
 						["g"] = {
 							follower(1002),	-- Champion: Akama
 						},
 					}),
 					q(43398, {	-- Champion: Alonsus Faol
+						["classes"] = { PRIEST },
 						["provider"] = { "n", 110564 },	-- Alonsus Faol <Bishop of Secrets>
 						["g"] = {
 							follower(875),	-- Alonsus Faol
@@ -348,7 +350,10 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 105917 },	-- Image of Kalec
 					}),
 					q(43402, {	-- High Priest of Netherlight
-						i(139759),	-- Chest
+						["classes"] = { PRIEST },
+						["g"] = {
+							i(139759),	-- Robes of the High Priest
+						},
 					}),
 					q(43884, {	-- Hitting the Books
 						["u"] = REMOVED_FROM_GAME,
