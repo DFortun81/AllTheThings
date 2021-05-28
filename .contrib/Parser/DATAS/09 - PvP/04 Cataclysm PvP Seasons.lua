@@ -4047,7 +4047,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(73696)),	-- Cataclysmic Gladiator's Warboots of Cruelty
 				}),
 				n(-331, {	-- Held In Offhand
-					un(REMOVED_FROM_GAME, i(74783)),	-- Cataclysmic Gladiator's Hatchet (Throw Wep)
+					un(REMOVED_FROM_GAME, i(74783)),	-- Cataclysmic Gladiator's Hatchet (Throw Weapon)
 					un(REMOVED_FROM_GAME, i(74783)),	-- Cataclysmic Gladiator's Relic of Conquest
 					un(REMOVED_FROM_GAME, i(74785)),	-- Cataclysmic Gladiator's Relic of Dominance
 					un(REMOVED_FROM_GAME, i(74784)),	-- Cataclysmic Gladiator's Relic of Salvation
