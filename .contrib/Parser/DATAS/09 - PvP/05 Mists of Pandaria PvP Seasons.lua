@@ -2044,21 +2044,38 @@ _.PVP =
 								-- From Nalak
 								i(91357),	-- Tyrannical Gladiator's Armbands of Meditation
 								i(91356),	-- Malevolent Gladiator's Armbands of Prowess
-								i(91306),	-- Malevolent Gladiator's Armplates of Alacrity
-								i(91305),	-- Malevolent Gladiator's Armplates of Proficiency
-								i(91246),	-- Malevolent Gladiator's Armwraps of Accuracy
-								i(91339),	-- Malevolent Gladiator's Armwraps of Alacrity
-								i(91171),	-- Malevolent Gladiator's Bindings of Meditation
-								i(91188),	-- Malevolent Gladiator's Bindings of Prowess
-								i(91286),	-- Malevolent Gladiator's Bracers of Meditation
-								i(91285),	-- Malevolent Gladiator's Bracers of Prowess
-								i(91121),	-- Malevolent Gladiator's Cuffs of Accuracy
-								i(91123),	-- Malevolent Gladiator's Cuffs of Meditation
-								i(91122),	-- Malevolent Gladiator's Cuffs of Prowess
-								i(91221),	-- Malevolent Gladiator's Wristguards of Accuracy
-								i(91220),	-- Malevolent Gladiator's Wristguards of Alacrity
+								i(91306),	-- Tyrannical Gladiator's Armplates of Alacrity
+								i(91305),	-- Tyrannical Gladiator's Armplates of Proficiency
+								i(91246),	-- Tyrannical Gladiator's Armwraps of Accuracy
+								i(91339),	-- Tyrannical Gladiator's Armwraps of Alacrity
+								i(91171),	-- Tyrannical Gladiator's Bindings of Meditation
+								i(91188),	-- Tyrannical Gladiator's Bindings of Prowess
+								i(91286),	-- Tyrannical Gladiator's Bracers of Meditation
+								i(91285),	-- Tyrannical Gladiator's Bracers of Prowess
+								i(91121),	-- Tyrannical Gladiator's Cuffs of Accuracy
+								i(91123),	-- Tyrannical Gladiator's Cuffs of Meditation
+								i(91122),	-- Tyrannical Gladiator's Cuffs of Prowess
+								i(91221),	-- Tyrannical Gladiator's Wristguards of Accuracy
+								i(91220),	-- Tyrannical Gladiator's Wristguards of Alacrity
 							}),
-						
+							n(-328, {	-- Waist
+								-- From Nalak
+								i(91184),	-- Tyrannical Gladiator's Belt of Cruelty
+								i(91167),	-- Tyrannical Gladiator's Belt of Meditation
+								i(91277),	-- Tyrannical Gladiator's Clasp of Cruelty
+								i(91279),	-- Tyrannical Gladiator's Clasp of Meditation
+								i(91111),	-- Tyrannical Gladiator's Cord of Accuracy
+								i(91109),	-- Tyrannical Gladiator's Cord of Cruelty
+								i(91113),	-- Tyrannical Gladiator's Cord of Meditation
+								i(91297),	-- Tyrannical Gladiator's Girdle of Accuracy
+								i(91299),	-- Tyrannical Gladiator's Girdle of Prowess
+								i(91214),	-- Tyrannical Gladiator's Links of Accuracy
+								i(91212),	-- Tyrannical Gladiator's Links of Cruelty
+								i(91335),	-- Tyrannical Gladiator's Waistband of Accuracy
+								i(91242),	-- Tyrannical Gladiator's Waistband of Cruelty
+								i(91378),	-- Tyrannical Gladiator's Waistguard of Cruelty
+								i(91350),	-- Tyrannical Gladiator's Waistguard of Meditation
+							}),
 				
 				
 				
@@ -2073,54 +2090,99 @@ _.PVP =
 							}),
 							
 							n(-326, {	-- Wrists
-								i(99915, {	-- Malevolent Gladiator's Armbands of Meditation
+								i(99915, {	-- Tyrannical Gladiator's Armbands of Meditation
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(99914, {	-- Malevolent Gladiator's Armbands of Prowess
+								i(99914, {	-- Tyrannical Gladiator's Armbands of Prowess
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(99891, {	-- Malevolent Gladiator's Armplates of Alacrity
+								i(99891, {	-- Tyrannical Gladiator's Armplates of Alacrity
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(99890, {	-- Malevolent Gladiator's Armplates of Proficiency
+								i(99890, {	-- Tyrannical Gladiator's Armplates of Proficiency
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(99859, {	-- Malevolent Gladiator's Armwraps of Accuracy
+								i(99859, {	-- Tyrannical Gladiator's Armwraps of Accuracy
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(99905, {	-- Malevolent Gladiator's Armwraps of Alacrity
+								i(99905, {	-- Tyrannical Gladiator's Armwraps of Alacrity
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(99818, {	-- Malevolent Gladiator's Bindings of Meditation
+								i(99818, {	-- Tyrannical Gladiator's Bindings of Meditation
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(99827, {	-- Malevolent Gladiator's Bindings of Prowess
+								i(99827, {	-- Tyrannical Gladiator's Bindings of Prowess
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(99880, {	-- Malevolent Gladiator's Bracers of Meditation
+								i(99880, {	-- Tyrannical Gladiator's Bracers of Meditation
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(99879, {	-- Malevolent Gladiator's Bracers of Prowess
+								i(99879, {	-- Tyrannical Gladiator's Bracers of Prowess
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(99787, {	-- Malevolent Gladiator's Cuffs of Accuracy
+								i(99787, {	-- Tyrannical Gladiator's Cuffs of Accuracy
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(99789, {	-- Malevolent Gladiator's Cuffs of Meditation
+								i(99789, {	-- Tyrannical Gladiator's Cuffs of Meditation
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(99788, {	-- Malevolent Gladiator's Cuffs of Prowess
+								i(99788, {	-- Tyrannical Gladiator's Cuffs of Prowess
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(99846, {	-- Malevolent Gladiator's Wristguards of Accuracy
+								i(99846, {	-- Tyrannical Gladiator's Wristguards of Accuracy
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(99845, {	-- Malevolent Gladiator's Wristguards of Alacrity
+								i(99845, {	-- Tyrannical Gladiator's Wristguards of Alacrity
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
 							}),	
-						
-				
+							n(-328, {	-- Waist
+								i(99825, {	-- Tyrannical Gladiator's Belt of Cruelty
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(99816, {	-- Tyrannical Gladiator's Belt of Meditation
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(99875, {	-- Tyrannical Gladiator's Clasp of Cruelty
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(99876, {	-- Tyrannical Gladiator's Clasp of Meditation
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(99782, {	-- Tyrannical Gladiator's Cord of Accuracy
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(99781, {	-- Tyrannical Gladiator's Cord of Cruelty
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(99783, {	-- Tyrannical Gladiator's Cord of Meditation
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(99886, {	-- Tyrannical Gladiator's Girdle of Accuracy
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(99887, {	-- Tyrannical Gladiator's Girdle of Prowess
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(99842, {	-- Tyrannical Gladiator's Links of Accuracy
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(99841, {	-- Tyrannical Gladiator's Links of Cruelty
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(99903, {	-- Tyrannical Gladiator's Waistband of Accuracy
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(99857, {	-- Tyrannical Gladiator's Waistband of Cruelty
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(99926, {	-- Tyrannical Gladiator's Waistguard of Cruelty
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(99911, {	-- Tyrannical Gladiator's Waistguard of Meditation
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+							}),	
 				
 				
 				
@@ -2144,28 +2206,44 @@ _.PVP =
 				
 							n(-326, {	-- Wrists
 								-- From Nalak
-								i(94337),	-- Malevolent Gladiator's Armbands of Meditation
-								i(94379),	-- Malevolent Gladiator's Armbands of Prowess
-								i(94487),	-- Malevolent Gladiator's Armplates of Alacrity
-								i(94418),	-- Malevolent Gladiator's Armplates of Proficiency
-								i(94427),	-- Malevolent Gladiator's Armwraps of Accuracy
-								i(94470),	-- Malevolent Gladiator's Armwraps of Alacrity
-								i(94407),	-- Malevolent Gladiator's Bindings of Meditation
-								i(94439),	-- Malevolent Gladiator's Bindings of Prowess
-								i(94481),	-- Malevolent Gladiator's Bracers of Meditation
-								i(94411),	-- Malevolent Gladiator's Bracers of Prowess
-								i(94403),	-- Malevolent Gladiator's Cuffs of Accuracy
-								i(94380),	-- Malevolent Gladiator's Cuffs of Meditation
-								i(94449),	-- Malevolent Gladiator's Cuffs of Prowess
-								i(94469),	-- Malevolent Gladiator's Wristguards of Accuracy
-								i(94404),	-- Malevolent Gladiator's Wristguards of Alacrity
+								i(94337),	-- Tyrannical Gladiator's Armbands of Meditation
+								i(94379),	-- Tyrannical Gladiator's Armbands of Prowess
+								i(94487),	-- Tyrannical Gladiator's Armplates of Alacrity
+								i(94418),	-- Tyrannical Gladiator's Armplates of Proficiency
+								i(94427),	-- Tyrannical Gladiator's Armwraps of Accuracy
+								i(94470),	-- Tyrannical Gladiator's Armwraps of Alacrity
+								i(94407),	-- Tyrannical Gladiator's Bindings of Meditation
+								i(94439),	-- Tyrannical Gladiator's Bindings of Prowess
+								i(94481),	-- Tyrannical Gladiator's Bracers of Meditation
+								i(94411),	-- Tyrannical Gladiator's Bracers of Prowess
+								i(94403),	-- Tyrannical Gladiator's Cuffs of Accuracy
+								i(94380),	-- Tyrannical Gladiator's Cuffs of Meditation
+								i(94449),	-- Tyrannical Gladiator's Cuffs of Prowess
+								i(94469),	-- Tyrannical Gladiator's Wristguards of Accuracy
+								i(94404),	-- Tyrannical Gladiator's Wristguards of Alacrity
+							}),
+							n(-328, {	-- Waist
+								-- From Nalak
+								i(94410),	-- Tyrannical Gladiator's Belt of Cruelty
+								i(94491),	-- Tyrannical Gladiator's Belt of Meditation
+								i(94480),	-- Tyrannical Gladiator's Clasp of Cruelty
+								i(94464),	-- Tyrannical Gladiator's Clasp of Meditation
+								i(94376),	-- Tyrannical Gladiator's Cord of Accuracy
+								i(94400),	-- Tyrannical Gladiator's Cord of Cruelty
+								i(94425),	-- Tyrannical Gladiator's Cord of Meditation
+								i(94353),	-- Tyrannical Gladiator's Girdle of Accuracy
+								i(94440),	-- Tyrannical Gladiator's Girdle of Prowess
+								i(94358),	-- Tyrannical Gladiator's Links of Accuracy
+								i(94330),	-- Tyrannical Gladiator's Links of Cruelty
+								i(94424),	-- Tyrannical Gladiator's Waistband of Accuracy
+								i(94360),	-- Tyrannical Gladiator's Waistband of Cruelty
+								i(94393),	-- Tyrannical Gladiator's Waistguard of Cruelty
+								i(94382),	-- Tyrannical Gladiator's Waistguard of Meditation
 							}),
 				
 				
 				
-				
-				
-				
+							
 				
 							
 							
@@ -2176,68 +2254,129 @@ _.PVP =
 							}),
 				
 							n(-326, {	-- Wrists
-								i(100004, {	-- Malevolent Gladiator's Armbands of Meditation
+								i(100004, {	-- Tyrannical Gladiator's Armbands of Meditation
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(100049, {	-- Malevolent Gladiator's Armbands of Prowess
+								i(100049, {	-- Tyrannical Gladiator's Armbands of Prowess
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(100157, {	-- Malevolent Gladiator's Armplates of Alacrity
+								i(100157, {	-- Tyrannical Gladiator's Armplates of Alacrity
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(100088, {	-- Malevolent Gladiator's Armplates of Proficiency
+								i(100088, {	-- Tyrannical Gladiator's Armplates of Proficiency
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(100097, {	-- Malevolent Gladiator's Armwraps of Accuracy
+								i(100097, {	-- Tyrannical Gladiator's Armwraps of Accuracy
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(100140, {	-- Malevolent Gladiator's Armwraps of Alacrity
+								i(100140, {	-- Tyrannical Gladiator's Armwraps of Alacrity
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(100077, {	-- Malevolent Gladiator's Bindings of Meditation
+								i(100077, {	-- Tyrannical Gladiator's Bindings of Meditation
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(100109, {	-- Malevolent Gladiator's Bindings of Prowess
+								i(100109, {	-- Tyrannical Gladiator's Bindings of Prowess
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(100151, {	-- Malevolent Gladiator's Bracers of Meditation
+								i(100151, {	-- Tyrannical Gladiator's Bracers of Meditation
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(100081, {	-- Malevolent Gladiator's Bracers of Prowess
+								i(100081, {	-- Tyrannical Gladiator's Bracers of Prowess
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(100073, {	-- Malevolent Gladiator's Cuffs of Accuracy
+								i(100073, {	-- Tyrannical Gladiator's Cuffs of Accuracy
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(100050, {	-- Malevolent Gladiator's Cuffs of Meditation
+								i(100050, {	-- Tyrannical Gladiator's Cuffs of Meditation
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(100119, {	-- Malevolent Gladiator's Cuffs of Prowess
+								i(100119, {	-- Tyrannical Gladiator's Cuffs of Prowess
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(100139, {	-- Malevolent Gladiator's Wristguards of Accuracy
+								i(100139, {	-- Tyrannical Gladiator's Wristguards of Accuracy
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(100074, {	-- Malevolent Gladiator's Wristguards of Alacrity
+								i(100074, {	-- Tyrannical Gladiator's Wristguards of Alacrity
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
 							}),	
+							n(-328, {	-- Waist
+								i(100080, {	-- Tyrannical Gladiator's Belt of Cruelty
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(100161, {	-- Tyrannical Gladiator's Belt of Meditation
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(100150, {	-- Tyrannical Gladiator's Clasp of Cruelty
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(100134, {	-- Tyrannical Gladiator's Clasp of Meditation
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(100046, {	-- Tyrannical Gladiator's Cord of Accuracy
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(100070, {	-- Tyrannical Gladiator's Cord of Cruelty
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(100095, {	-- Tyrannical Gladiator's Cord of Meditation
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(100023, {	-- Tyrannical Gladiator's Girdle of Accuracy
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(100110, {	-- Tyrannical Gladiator's Girdle of Prowess
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(100028, {	-- Tyrannical Gladiator's Links of Accuracy
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(99991, {	-- Tyrannical Gladiator's Links of Cruelty
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(100094, {	-- Tyrannical Gladiator's Waistband of Accuracy
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(100030, {	-- Tyrannical Gladiator's Waistband of Cruelty
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(100063, {	-- Tyrannical Gladiator's Waistguard of Cruelty
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(100052, {	-- Tyrannical Gladiator's Waistguard of Meditation
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+							}),	
+				
+				
+				
+				
 						}),
 				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
 					},
-				}),	
+				}),
+
+				n(-662, {	-- Elite PvP Gear
+				
+					n(-328, {	-- Waist
+						un(REMOVED_FROM_GAME, i(91185)),	-- Malevolent Gladiator's Belt of Cruelty
+						un(REMOVED_FROM_GAME, i(91168)),	-- Malevolent Gladiator's Belt of Meditation
+						un(REMOVED_FROM_GAME, i(91278)),	-- Malevolent Gladiator's Clasp of Cruelty
+						un(REMOVED_FROM_GAME, i(91280)),	-- Malevolent Gladiator's Clasp of Meditation
+						un(REMOVED_FROM_GAME, i(91112)),	-- Malevolent Gladiator's Cord of Accuracy
+						un(REMOVED_FROM_GAME, i(91110)),	-- Malevolent Gladiator's Cord of Cruelty
+						un(REMOVED_FROM_GAME, i(91114)),	-- Malevolent Gladiator's Cord of Meditation
+						un(REMOVED_FROM_GAME, i(91298)),	-- Malevolent Gladiator's Girdle of Accuracy
+						un(REMOVED_FROM_GAME, i(91300)),	-- Malevolent Gladiator's Girdle of Prowess
+						un(REMOVED_FROM_GAME, i(91215)),	-- Malevolent Gladiator's Links of Accuracy
+						un(REMOVED_FROM_GAME, i(91213)),	-- Malevolent Gladiator's Links of Cruelty
+						un(REMOVED_FROM_GAME, i(91336)),	-- Malevolent Gladiator's Waistband of Accuracy
+						un(REMOVED_FROM_GAME, i(91243)),	-- Malevolent Gladiator's Waistband of Cruelty
+						un(REMOVED_FROM_GAME, i(91379)),	-- Malevolent Gladiator's Waistguard of Cruelty
+						un(REMOVED_FROM_GAME, i(91351)),	-- Malevolent Gladiator's Waistguard of Meditation
+					}),
+				
+				}),
 				n(-325, { -- Tabards
 					un(REMOVED_FROM_GAME, i(98162)), -- Tyrannical Gladiator's Tabard
 				}),
