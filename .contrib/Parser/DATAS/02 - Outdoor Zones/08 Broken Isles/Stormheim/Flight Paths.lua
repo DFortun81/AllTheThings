@@ -8,42 +8,42 @@ _.Zones =
 		m(634, {	-- Stormheim
 			n(-228,   {	-- Flight Paths
 				fp(1738, {	-- Cullen's Post, Stormheim
-					["coord"] = { 44.8, 59.2 },
+					["coord"] = { 44.8, 59.2, 634 },
 				}),
 				fp(1739, {	-- Dreadwake's Landing, Stormheim
-					["coord"] = { 54.4, 73 },
+					["coord"] = { 54.4, 73, 634 },
 				}),
 				fp(1741, {	-- Forsaken Foothold, Stormheim
-					["coord"] = { 36.4, 30.6 },
+					["coord"] = { 36.4, 30.6, 634 },
 				}),
 				fp(1744, {	-- Greywatch, Stormheim
-					["coord"] = { 72, 59.8 },
+					["coord"] = { 72, 59.8, 634 },
 				}),
 				fp(1863, {	-- Hafr Fjall, Stormheim
-					["coord"] = { 55.6, 87.4 },
+					["coord"] = { 55.6, 87.4, 634 },
 				}),
 				fp(1745, {	-- Lorna's Watch, Stormheim
-					["coord"] = { 37.4, 64 },
+					["coord"] = { 37.4, 64, 634 },
 				}),
 				fp(1839, {	-- Nastrondir (Eagle)
-					["coord"] = { 45.8, 35.8 },
+					["coord"] = { 45.8, 35.8, 634 },
 					["classes"] = { HUNTER },
 				}),
 				fp(1855, {	-- Shield's Rest, Stormheim
-					["coord"] = { 89.8, 10.6 },
+					["coord"] = { 89.8, 10.6, 634 },
 				}),
 				fp(1747, {	-- Skyfire Triage Camp, Stormheim
-					["coord"] = { 33.6, 50.6 },
+					["coord"] = { 33.6, 50.6, 634 },
 				}),
 				fp(1857, {	-- Stormtorn Foothills, Stormheim
-					["coord"] = { 52, 34.6 },
+					["coord"] = { 52, 34.6, 634 },
 				}),
 				fp(1838, {	-- Thorim's Peak (Eagle)
-					["coord"] = { 38, 79.2 },
+					["coord"] = { 38, 79.2, 634 },
 					["classes"] = { HUNTER },
 				}),
 				fp(1742, {	-- Valdisdall, Stormheim
-					["coord"] = { 60.6, 50.8 },
+					["coord"] = { 60.6, 50.8, 634 },
 				}),
 			}),
 		}),
