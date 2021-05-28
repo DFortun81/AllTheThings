@@ -1352,6 +1352,8 @@ _.PVP =
 							i(91535, {	-- Malevolent Gladiator's Staff
 								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
 							}),
+							un(NEVER_IMPLEMENTED, i(91747)),	-- Malevolent Gladiator's Fleshslicer
+							un(NEVER_IMPLEMENTED, i(91751)),	-- Malevolent Gladiator's Slasher
 						}),
 						cl(DEATHKNIGHT, {
 							i(91500, {	-- Malevolent Gladiator's Dreadplate Chestpiece
@@ -2077,25 +2079,25 @@ _.PVP =
 								i(91091),	-- Tyrannical Gladiator's Greatsword
 								i(91404),	-- Tyrannical Gladiator's Hacker
 								i(91145),	-- Tyrannical Gladiator's Heavy Crossbow
-								-- Longbow?
-								-- Pike?
 								i(91398),	-- Tyrannical Gladiator's Mageblade
 								i(91095),	-- Tyrannical Gladiator's Pummeler
 								i(91097),	-- Tyrannical Gladiator's Quickblade
 								i(91205),	-- Tyrannical Gladiator's Redoubt
 								i(91396),	-- Tyrannical Gladiator's Render
 								i(91141),	-- Tyrannical Gladiator's Reprieve
-								--Rifle?
 								i(91392),	-- Tyrannical Gladiator's Ripper
 								i(91390),	-- Tyrannical Gladiator's Shanker
 								i(91418),	-- Tyrannical Gladiator's Shield Wall
-								--Slasher?
 								i(91408),	-- Tyrannical Gladiator's Slicer
 								i(91131),	-- Tyrannical Gladiator's Spellblade
 								i(91182),	-- Tyrannical Gladiator's Staff
 								--Never
 								un(NEVER_IMPLEMENTED, i(91089)),	-- Tyrannical Gladiator's Bonegrinder
 								un(NEVER_IMPLEMENTED, i(91394)),	-- Tyrannical Gladiator's Fleshslicer
+								un(NEVER_IMPLEMENTED, i(91107)),	-- Tyrannical Gladiator's Longbow
+								un(NEVER_IMPLEMENTED, i(91307)),	-- Tyrannical Gladiator's Pike
+								un(NEVER_IMPLEMENTED, i(91201)),	-- Tyrannical Gladiator's Rifle
+								un(NEVER_IMPLEMENTED, i(99833)),	-- Tyrannical Gladiator's Shiv
 							}),
 							n(-322, {	-- Back
 								-- From Nalak
@@ -2238,8 +2240,6 @@ _.PVP =
 								i(99936, {	-- Tyrannical Gladiator's Mageblade
 									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
 								}),
-								--longbow?
-								--pike?
 								i(99770, {	-- Tyrannical Gladiator's Pummeler
 									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
 								}),
@@ -2255,7 +2255,6 @@ _.PVP =
 								i(99803, {	-- Tyrannical Gladiator's Reprieve
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								--rifle?
 								i(99933, {	-- Tyrannical Gladiator's Ripper
 									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
 								}),
@@ -2278,6 +2277,10 @@ _.PVP =
 								un(NEVER_IMPLEMENTED, i(99939)),	-- Tyrannical Gladiator's Baton of Light
 								un(NEVER_IMPLEMENTED, i(99767)),	-- Tyrannical Gladiator's Bonegrinder
 								un(NEVER_IMPLEMENTED, i(99934)),	-- Tyrannical Gladiator's Fleshslicer
+								un(NEVER_IMPLEMENTED, i(99780)),	-- Tyrannical Gladiator's Longbow
+								un(NEVER_IMPLEMENTED, i(99892)),	-- Tyrannical Gladiator's Pike
+								un(NEVER_IMPLEMENTED, i(99834)),	-- Tyrannical Gladiator's Rifle
+								un(NEVER_IMPLEMENTED, i(99804)),	-- Tyrannical Gladiator's Touch of Deafeat
 							}),
 							n(-322, {	-- Back
 								i(99773, {	-- Tyrannical Gladiator's Cape of Cruelty
@@ -2520,30 +2523,29 @@ _.PVP =
 								i(94323),	-- Tyrannical Gladiator's Decapitator
 								i(94502),	-- Tyrannical Gladiator's Endgame
 								i(94320),	-- Tyrannical Gladiator's Energy Staff
-								--Fleshslicer?
 								i(94302),	-- Tyrannical Gladiator's Gavel
 								i(94311),	-- Tyrannical Gladiator's Greatsword
 								i(94317),	-- Tyrannical Gladiator's Hacker
 								i(94326),	-- Tyrannical Gladiator's Heavy Crossbow
-								-- Longbow?
-								-- Pike?
 								i(94310),	-- Tyrannical Gladiator's Mageblade
 								i(94304),	-- Tyrannical Gladiator's Pummeler
 								i(94325),	-- Tyrannical Gladiator's Quickblade
 								i(94498),	-- Tyrannical Gladiator's Redoubt
 								i(94321),	-- Tyrannical Gladiator's Render
 								i(94499),	-- Tyrannical Gladiator's Reprieve
-								--Rifle?
 								i(94316),	-- Tyrannical Gladiator's Ripper
 								i(94315),	-- Tyrannical Gladiator's Shanker
 								i(94500),	-- Tyrannical Gladiator's Shield Wall
-								--Slasher?
 								i(94318),	-- Tyrannical Gladiator's Slicer
 								i(94306),	-- Tyrannical Gladiator's Spellblade
 								i(94307),	-- Tyrannical Gladiator's Staff
 								--Never
 								un(NEVER_IMPLEMENTED, i(94324)),	-- Tyrannical Gladiator's Bonegrinder
 								un(NEVER_IMPLEMENTED, i(94314)),	-- Tyrannical Gladiator's Fleshslicer
+								un(NEVER_IMPLEMENTED, i(94303)),	-- Tyrannical Gladiator's Longbow
+								un(NEVER_IMPLEMENTED, i(94319)),	-- Tyrannical Gladiator's Pike
+								un(NEVER_IMPLEMENTED, i(94309)),	-- Tyrannical Gladiator's Rifle
+								un(NEVER_IMPLEMENTED, i(99962)),	-- Tyrannical Gladiator's Shiv	
 							}),
 							n(-322, {	-- Back
 								-- From Nalak
@@ -2686,8 +2688,6 @@ _.PVP =
 								i(99971, {	-- Tyrannical Gladiator's Mageblade
 									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
 								}),
-								--longbow?
-								--pike?
 								i(99965, {	-- Tyrannical Gladiator's Pummeler
 									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
 								}),
@@ -2703,7 +2703,6 @@ _.PVP =
 								i(100169, {	-- Tyrannical Gladiator's Reprieve
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								--rifle?
 								i(99977, {	-- Tyrannical Gladiator's Ripper
 									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
 								}),
@@ -2726,6 +2725,10 @@ _.PVP =
 								un(NEVER_IMPLEMENTED, i(99969)),	-- Tyrannical Gladiator's Baton of Light
 								un(NEVER_IMPLEMENTED, i(99985)),	-- Tyrannical Gladiator's Bonegrinder
 								un(NEVER_IMPLEMENTED, i(99975)),	-- Tyrannical Gladiator's Fleshslicer
+								un(NEVER_IMPLEMENTED, i(99964)),	-- Tyrannical Gladiator's Longbow
+								un(NEVER_IMPLEMENTED, i(99980)),	-- Tyrannical Gladiator's Pike
+								un(NEVER_IMPLEMENTED, i(99970)),	-- Tyrannical Gladiator's Rifle
+								un(NEVER_IMPLEMENTED, i(99966)),	-- Tyrannical Gladiator's Touch of Deafeat
 							}),
 							n(-322, {	-- Back
 								i(100091, {	-- Tyrannical Gladiator's Cape of Cruelty
@@ -2943,23 +2946,24 @@ _.PVP =
 						un(REMOVED_FROM_GAME, i(91092)),	-- Tyrannical Gladiator's Greatsword
 						un(REMOVED_FROM_GAME, i(91405)),	-- Tyrannical Gladiator's Hacker
 						un(REMOVED_FROM_GAME, i(91146)),	-- Tyrannical Gladiator's Heavy Crossbow
+						un(REMOVED_FROM_GAME, i(91108)),	-- Tyrannical Gladiator's Longbow
 						un(REMOVED_FROM_GAME, i(91399)),	-- Tyrannical Gladiator's Mageblade
-						--longbow?
-						--pike?
+						un(REMOVED_FROM_GAME, i(91308)),	-- Tyrannical Gladiator's Pike
 						un(REMOVED_FROM_GAME, i(91096)),	-- Tyrannical Gladiator's Pummeler
 						un(REMOVED_FROM_GAME, i(91098)),	-- Tyrannical Gladiator's Quickblade
 						un(REMOVED_FROM_GAME, i(91206)),	-- Tyrannical Gladiator's Redoubt
 						un(REMOVED_FROM_GAME, i(91397)),	-- Tyrannical Gladiator's Render
 						un(REMOVED_FROM_GAME, i(91142)),	-- Tyrannical Gladiator's Reprieve
-						--rifle?
+						un(REMOVED_FROM_GAME, i(91202)),	-- Tyrannical Gladiator's Rifle
 						un(REMOVED_FROM_GAME, i(91393)),	-- Tyrannical Gladiator's Ripper
 						un(REMOVED_FROM_GAME, i(91391)),	-- Tyrannical Gladiator's Shanker
 						un(REMOVED_FROM_GAME, i(91419)),	-- Tyrannical Gladiator's Shield Wall
-						--slasher?
 						un(REMOVED_FROM_GAME, i(91409)),	-- Tyrannical Gladiator's Slicer
 						un(REMOVED_FROM_GAME, i(91132)),	-- Tyrannical Gladiator's Spellblade
 						un(REMOVED_FROM_GAME, i(91183)),	-- Tyrannical Gladiator's Staff
-						--touch of defeat?
+						un(REMOVED_FROM_GAME, i(91144)),	-- Tyrannical Gladiator's Staff
+						--Never
+						un(NEVER_IMPLEMENTED, i(91200)),	-- Tyrannical Gladiator's Shiv
 					}),
 					n(-328, {	-- Waist
 						un(REMOVED_FROM_GAME, i(91185)),	-- Tyrannical Gladiator's Belt of Cruelty
