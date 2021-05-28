@@ -78,6 +78,7 @@ _.PetBattles =
 			}),
 			q(58455, {	-- Shadowy Showdown (A)
 				["provider"] = { "n", 147645 },	-- Tizzy Gearjolt
+				-- ["sourceQuests"] = {  },	-- TODO, this has a source quest... unknown, maybe other pet battle dungeon completion?
 				["coord"] = { 50.3, 46.9, 1161 },
 				["isBreadcrumb"] = true,
 				["races"] = ALLIANCE_ONLY,
@@ -86,6 +87,7 @@ _.PetBattles =
 			}),
 			q(58456, {	-- Shadowy Showdown (H)
 				["provider"] = { "n", 147641 },	-- Radek Fuselock
+				-- ["sourceQuests"] = {  },	-- TODO, this has a source quest... unknown, maybe other pet battle dungeon completion?
 				["coord"] = { 56.3, 30.8, 1165 },
 				["isBreadcrumb"] = true,
 				["races"] = HORDE_ONLY,
