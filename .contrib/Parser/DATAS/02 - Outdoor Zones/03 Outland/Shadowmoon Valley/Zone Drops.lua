@@ -35,6 +35,20 @@ _.Zones =
 						21059,	-- Enraged Water Spirit
 					},
 				}),
+				i(31239, {	-- Primed Key Mold
+					["coord"] = { 67.6, 36.2, SHADOWMOON_VALLEY },
+					["timeline"] = { "removed 4.0.3.14732" },
+					["cr"] = 22037,	-- Smith Gorlunk
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(68, 10, 68),
+				}),
+				i(31241, {	-- Primed Key Mold
+					["coord"] = { 67.6, 36.2, SHADOWMOON_VALLEY },
+					["timeline"] = { "removed 4.0.3.14732" },
+					["cr"] = 22037,	-- Smith Gorlunk
+					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(68, 10, 68),
+				}),
 				i(31682, {	-- Recipe: Fel Mana Potion
 					["crs"] = {
 						19796,	-- Eclipsion Archmage

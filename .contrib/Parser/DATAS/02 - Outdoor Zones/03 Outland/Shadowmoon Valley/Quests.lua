@@ -822,18 +822,6 @@ _.Zones =
 					["coord"] = { 42.1, 45.0, SHADOWMOON_VALLEY },
 					["sourceQuests"] = { 10458 },	-- Enraged Spirits of Fire and Earth
 				}),
-				q(10754, {	-- Entry Into the Citadel (removed, old BT key questline)
-					["u"] = REMOVED_FROM_GAME,
-					["crs"] = { 22037 },	-- Smith Gorlunk
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "i", 31239 },	-- Primed Key Mold
-				}),
-				q(10755, {	-- Entry Into the Citadel
-					["u"] = REMOVED_FROM_GAME,
-					["crs"] = { 22037 },	-- Smith Gorlunk
-					["races"] = HORDE_ONLY,
-					["provider"] = { "i", 31241 },	-- Primed Key Mold
-				}),
 				q(10451, {	-- Escape from Coilskar Cistern
 					["provider"] = { "n", 21027 },	-- Earthmender Wilda
 					["coord"] = { 52.1, 18.8, SHADOWMOON_VALLEY },

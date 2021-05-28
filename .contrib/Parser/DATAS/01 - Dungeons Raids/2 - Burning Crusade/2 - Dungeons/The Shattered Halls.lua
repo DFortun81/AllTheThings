@@ -33,6 +33,36 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(66, 20, 66),
 				}),
+				q(10763, {	-- Dumphry's Request
+					["qg"] = 21209,	-- Dumphry <Master Blacksmithing Trainer>
+					["sourceQuest"] = 10762,	-- Grand Master Dumphry
+					["coord"] = { 51.1, 60.3, HELLFIRE_PENINSULA },
+					["timeline"] = { "removed 4.0.3.14732" },
+					["maps"] = { HELLFIRE_PENINSULA },
+					["cost"] = {
+						{ "i", 23445, 4 },	-- Fel Iron Bar
+						{ "i", 22445, 2 },	-- Arcane Dust
+						{ "i", 22574, 4 },	-- Mote of Fire
+					},
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(68, 10, 68),
+				}),
+				q(10754, {	-- Entry Into the Citadel [Alliance]
+					["provider"] = { "i", 31239 },	-- Primed Key Mold
+					["timeline"] = { "removed 4.0.3.14732" },
+					["maps"] = { SHADOWMOON_VALLEY },
+					["cr"] = 22037,	-- Smith Gorlunk
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(68, 10, 68),
+				}),
+				q(10755, {	-- Entry Into the Citadel [Horde]
+					["provider"] = { "i", 31241 },	-- Primed Key Mold
+					["timeline"] = { "removed 4.0.3.14732" },
+					["maps"] = { SHADOWMOON_VALLEY },
+					["cr"] = 22037,	-- Smith Gorlunk
+					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(68, 10, 68),
+				}),
 				q(29650, {	-- Fel Ember
 					["qg"] = 54931,	-- Stone Guard Stok'ton
 					["timeline"] = { "added 4.3.0.14732" },
@@ -66,12 +96,72 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 					},
 					-- #endif
 				}),
+				q(10762, {	-- Grand Master Dumphry
+					["qg"] = 16819,	-- Force Commander Danath Trollbane
+					["sourceQuest"] = 10754,	-- Entry Into the Citadel [Alliance]
+					["coord"] = { 56.6, 66.7, HELLFIRE_PENINSULA },
+					["timeline"] = { "removed 4.0.3.14732" },
+					["maps"] = { HELLFIRE_PENINSULA },
+					["cost"] = {
+						{ "i", 31245, 1 },	-- Primed Key Mold
+					},
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(68, 10, 68),
+				}),
+				q(10756, {	-- Grand Master Rohok
+					["qg"] = 3230,	-- Nazgrel
+					["sourceQuest"] = 10755,	-- Entry Into the Citadel [Horde]
+					["coord"] = { 55.0, 36.0, HELLFIRE_PENINSULA },
+					["timeline"] = { "removed 4.0.3.14732" },
+					["maps"] = { HELLFIRE_PENINSULA },
+					["cost"] = {
+						{ "i", 31245, 1 },	-- Primed Key Mold
+					},
+					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(68, 10, 68),
+				}),
 				q(29651, {	-- Honor the Dying
 					["qg"] = 54932,	-- Caza'rez
 					["timeline"] = { "added 4.3.0.14732" },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(66, 20, 66),
 				}),
+				q(10764, bubbleDown({ ["timeline"] = { "removed 4.0.3.14732" } }, {	-- Hotter than Hell [Alliance]
+					["qg"] = 21209,	-- Dumphry <Master Blacksmithing Trainer>
+					["sourceQuest"] = 10763,	-- Dumphry's Request
+					["coord"] = { 51.1, 60.3, HELLFIRE_PENINSULA },
+					["maps"] = { HELLFIRE_PENINSULA },
+					["cost"] = {
+						{ "i", 31252, 1 },	-- Charred Key Mold
+					},
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(68, 10, 68),
+					["groups"] = {
+						objective(1, {	-- 0/1 Charred Key Mold
+							["provider"] = { "i", 31251 },	-- Unfired Key Mold
+							["cr"] = 18733,	-- Fel Reaver
+						}),
+						i(28395),	-- Shattered Halls Key
+					},
+				})),
+				q(10758, bubbleDown({ ["timeline"] = { "removed 4.0.3.14732" } }, {	-- Hotter than Hell [Horde]
+					["qg"] = 16583,	-- Rohok
+					["sourceQuest"] = 10757,	-- Rohok's Request
+					["coord"] = { 53.1, 38.2, HELLFIRE_PENINSULA },
+					["maps"] = { HELLFIRE_PENINSULA },
+					["cost"] = {
+						{ "i", 31252, 1 },	-- Charred Key Mold
+					},
+					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(68, 10, 68),
+					["groups"] = {
+						objective(1, {	-- 0/1 Charred Key Mold
+							["provider"] = { "i", 31251 },	-- Unfired Key Mold
+							["cr"] = 18733,	-- Fel Reaver
+						}),
+						i(28395),	-- Shattered Halls Key
+					},
+				})),
 				q(29649, {	-- How to Save a Life
 					["qg"] = 54933,	-- Advance Scout Chadwick
 					["timeline"] = { "added 4.3.0.14732" },
@@ -118,6 +208,20 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 					["maps"] = { HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(66, 20, 66),
+				}),
+				q(10757, {	-- Rohok's Request
+					["qg"] = 16583,	-- Rohok
+					["sourceQuest"] = 10756,	-- Grand Master Rohok
+					["coord"] = { 53.1, 38.2, HELLFIRE_PENINSULA },
+					["timeline"] = { "removed 4.0.3.14732" },
+					["maps"] = { HELLFIRE_PENINSULA },
+					["cost"] = {
+						{ "i", 23445, 4 },	-- Fel Iron Bar
+						{ "i", 22445, 2 },	-- Arcane Dust
+						{ "i", 22574, 4 },	-- Mote of Fire
+					},
+					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(68, 10, 68),
 				}),
 				q(10670, {	-- Tear of the Earthmother
 					["qg"] = 21465,	-- David Wayne
