@@ -14554,9 +14554,10 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 			-- print("Rebuild",self.mapID);
 			-- check if this is the same 'map' for data purposes
 			if self:IsSameMapData() then
-				self:Update();
+				self.data.mapID = self.mapID;
 				return;
 			end
+
 			local results = SearchForField("mapID", self.mapID);
 			if results then
 				-- Simplify the returned groups
@@ -14888,7 +14889,6 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 				});
 				BuildGroups(self.data, self.data.g);
 			end
-			Callback(self.Update, self);
 		end
 		local function OpenMiniList(id, show)
 			-- print("OpenMiniList",id,show);
