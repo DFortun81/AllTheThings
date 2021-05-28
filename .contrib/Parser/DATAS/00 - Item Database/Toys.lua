@@ -736,8 +736,8 @@ t(178530);	-- Wreath-A-Rang
 -----------------
 -- PATCH 9.1.0 --
 -----------------
+t(187154);	-- Ancient Korthian Runes
 t(187139);	-- Bottled Shade Heart
-t(187154);	-- Diviner's Rune Chits
 t(187113);	-- Personal Ball and Chain
 t(187140);	-- Ring of Duplicity
 t(187174);	-- Shaded Judgment Stone

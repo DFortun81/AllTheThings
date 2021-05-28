@@ -7,6 +7,7 @@ _.Zones =
 	m(SHADOWLANDS, {
 		m(ORIBOS, {
 			n(-176, {	-- Weekly Holidays
+			--	TODO: verify 'torghast treasures' cache is now what drops from all these quests and wtf it contains
 				q(62632, {	-- A Burning Path Through Time
 					["provider"] = { "n", 166307 },	-- Caretaker Kah-Toll
 					["isWeekly"] = true,
@@ -42,7 +43,8 @@ _.Zones =
 					["isWeekly"] = true,
 					["coord"] = { 64.9, 32.7, ORIBOS },
 					["g"] = {
-						i(184869),	-- Cache of Nathrian Treasures
+					--	i(184869),	-- Cache of Nathrian Treasures
+						i(186531),	-- Cache of Torghast Treasures
 					},
 				}),
 				q(62635, {	-- A Shrouded Path Through Time

@@ -268,6 +268,9 @@ _.Zones =
 					["description"] = "Requires having purchased |cFF0070ddResearch Report: Ancient Shrines|r, allowing you to interact with the phasing swords.",
 					["provider"] = { "i", 187208 },	-- Shadow Slicing Shortsword
 					["coord"] = { 39.4, 42.6, KORTHIA },
+					["g"] = {
+						i(187159),	-- Shadow Slicing Shortsword (TOY!)
+					},
 				}),
 				q(63731, {	-- Shattered Relics
 					["isBreadcrumb"] = true,

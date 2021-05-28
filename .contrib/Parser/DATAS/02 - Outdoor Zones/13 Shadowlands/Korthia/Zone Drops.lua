@@ -43,6 +43,7 @@ _.Zones =
 			--	Korthian Relics (putting here barring a better place for them)
 				i(187322),	-- Crumbling Stone Tablet
 				i(187327),	-- Encrypted Korthian Journal
+				i(187463),	-- Enigmatic Map Fragments
 				i(187325),	-- Faded Razorwing Anatomy Illustration
 				i(187324),	-- Gnawed Ancient Idol
 				i(187326),	-- Half-Completed Runeforge Pattern

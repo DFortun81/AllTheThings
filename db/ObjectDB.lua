@@ -1854,6 +1854,7 @@ select(2, ...).ObjectNames = {
 	[369340] = "Korthian Relic Box",
 	[369341] = "Mawsworn Cache",
 	[369437] = "Riftbound Cache",
+	[369438] = "Riftbound Cache",
 	[369439] = "Riftbound Cache",
 	[369440] = "Riftbound Cache",
 	[9999890] = "Corrupted Loot",
@@ -1886,7 +1887,6 @@ select(2, ...).ObjectNames = {
 	[1278968766] = "Rune",
 	[1278968767] = "Rune",
 	[1278968768] = "Rune",
-	[369437369437] = "Riftbound Cache",
 };
 select(2, ...).ObjectIcons = {
 	[31] = "Interface/Icons/INV_Mount_AllianceLionG",

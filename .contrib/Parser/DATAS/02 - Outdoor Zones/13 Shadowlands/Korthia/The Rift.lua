@@ -52,23 +52,30 @@ _.Zones =
 							},
 						}),
 					}),
-					n(TREASURES, {
+					n(TREASURES, {	-- TODO: at least some of these appear to have multiple spawnpoints, which i probably won't capture all of myself
 						i(187421),	-- Ashen Linament
 						i(187251),	-- Shaded Skull Shoulderguards TODO - received from 369437 but assume it's not specific to that chest
-						o(369437369437, {	-- Riftbound Cache TODO fix objectID
-							["questID"] = 64470,
-							["isDaily"] = true,
-							["coord"] = { 24.8, 56.1, KORTHIA },
-						}),
 						o(369437, {	-- Riftbound Cache
 							["questID"] = 64456,
 							["isDaily"] = true,
 							["coord"] = { 37.9, 35.8, KORTHIA },
 						}),
+						o(369438, {	-- Riftbound Cache
+							["description"] = "If this cache spawns in Zelnithop's cave, it is on the lowest level and the opposite side from where the rare spawns.",
+							["questID"] = 64470,
+							["isDaily"] = true,
+							["coords"] = {
+								{ 24.8, 56.1, KORTHIA },
+								{ 26.0, 55.7, KORTHIA },
+							},
+						}),
 						o(369440, {	-- Riftbound Cache
 							["questID"] = 64472,
 							["isDaily"] = true,
-							["coord"] = { 64.3, 30.3, KORTHIA },
+							["coords"] = {
+								{ 56.3, 18.4, KORTHIA },
+								{ 64.3, 30.3, KORTHIA },
+							},
 						}),
 						o(369439, {	-- Riftbound Cache
 							["questID"] = 64471,
