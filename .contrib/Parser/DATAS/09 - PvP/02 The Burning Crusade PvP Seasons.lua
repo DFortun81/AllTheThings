@@ -1130,33 +1130,33 @@ _.PVP =
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 						["sym"] = { 
 							{"sub", "pvp_weapons_ensemble", -10003, -665, -661 },
-							{"select", "itemID", 28302 },	--  Gladiator's Bonecracker
-							{"select", "itemID", 28299 },	--  Gladiator's Bonegrinder
-							{"select", "itemID", 28308 },	--  Gladiator's Cleaver
-							{"select", "itemID", 28298 },	--  Gladiator's Decapitator
-							{"select", "itemID", 28346 },	--  Gladiator's Endgame
-							{"select", "itemID", 28314 },	--  Gladiator's Fleshslicer
-							{"select", "itemID", 32450 },	--  Gladiator's Gavel
-							{"select", "itemID", 24550 },	--  Gladiator's Greatsword
-							{"select", "itemID", 28309 },	--  Gladiator's Hacker
-							{"select", "itemID", 28294 },	--  Gladiator's Heavy Crossbow
-							{"select", "itemID", 28476 },	--  Gladiator's Maul
-							{"select", "itemID", 28300 },	--  Gladiator's Painsaw
-							{"select", "itemID", 28305 },	--  Gladiator's Pummeler
-							{"select", "itemID", 28307 },	--  Gladiator's Quickblade
-							{"select", "itemID", 32452 },	--  Gladiator's Reprieve
-							{"select", "itemID", 28313 },	--  Gladiator's Ripper
-							{"select", "itemID", 32451 },	--  Gladiator's Salvation
-							{"select", "itemID", 28312 },	--  Gladiator's Shanker
-							{"select", "itemID", 28358 },	--  Gladiator's Shield Wall
-							{"select", "itemID", 28310 },	--  Gladiator's Shiv
-							{"select", "itemID", 28295 },	--  Gladiator's Slicer
-							{"select", "itemID", 28297 },	--  Gladiator's Spellblade
-							{"select", "itemID", 28320 },	--  Gladiator's Touch of Defeat
-							{"select", "itemID", 24557 },	--  Gladiator's War Staff
 							{"exclude", "itemID", 146650 },	-- Exclude itself to stop duplicating
 						 },
 						["g"] = {
+							i(28302),	--  Gladiator's Bonecracker
+							i(28299),	--  Gladiator's Bonegrinder
+							i(28308),	--  Gladiator's Cleaver
+							i(28298),	--  Gladiator's Decapitator
+							i(28346),	--  Gladiator's Endgame
+							i(28314),	--  Gladiator's Fleshslicer
+							i(32450),	--  Gladiator's Gavel
+							i(24550),	--  Gladiator's Greatsword
+							i(28309),	--  Gladiator's Hacker
+							i(28294),	--  Gladiator's Heavy Crossbow
+							i(28476),	--  Gladiator's Maul
+							i(28300),	--  Gladiator's Painsaw
+							i(28305),	--  Gladiator's Pummeler
+							i(28307),	--  Gladiator's Quickblade
+							i(32452),	--  Gladiator's Reprieve
+							i(28313),	--  Gladiator's Ripper
+							i(32451),	--  Gladiator's Salvation
+							i(28312),	--  Gladiator's Shanker
+							i(28358),	--  Gladiator's Shield Wall
+							i(28310),	--  Gladiator's Shiv
+							i(28295),	--  Gladiator's Slicer
+							i(28297),	--  Gladiator's Spellblade
+							i(28320),	--  Gladiator's Touch of Defeat
+							i(24557),	--  Gladiator's War Staff
 							i(33313, {	-- Merciless Gladiator's Barrier
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
