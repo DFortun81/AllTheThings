@@ -2125,7 +2125,24 @@ _.PVP =
 								i(91417),	-- Tyrannical Gladiator's Signet of Accuracy
 								i(91416),	-- Tyrannical Gladiator's Signet of Cruelty
 							}),
-							
+							f(53,	{	-- Trinket
+								un(REMOVED_FROM_GAME, i(91099)),	-- Malevolent Gladiator's Badge of Conquest
+								un(REMOVED_FROM_GAME, i(91400)),	-- Malevolent Gladiator's Badge of Dominance
+								un(REMOVED_FROM_GAME, i(91410)),	-- Malevolent Gladiator's Badge of Victory
+								un(REMOVED_FROM_GAME, i(91209)),	-- Malevolent Gladiator's Emblem of Cruelty
+								un(REMOVED_FROM_GAME, i(91211)),	-- Malevolent Gladiator's Emblem of Meditation
+								un(REMOVED_FROM_GAME, i(91210)),	-- Malevolent Gladiator's Emblem of Tenacity
+								un(REMOVED_FROM_GAME, i(91104)),	-- Malevolent Gladiator's Insignia of Conquest
+								un(REMOVED_FROM_GAME, i(91401)),	-- Malevolent Gladiator's Insignia of Dominance
+								un(REMOVED_FROM_GAME, i(91415)),	-- Malevolent Gladiator's Insignia of Victory
+								un(REMOVED_FROM_GAME, i(94386)),	-- Malevolent Gladiator's Medallion of Cruelty (A)
+								un(REMOVED_FROM_GAME, i(94388)),	-- Malevolent Gladiator's Medallion of Meditation (A)
+								un(REMOVED_FROM_GAME, i(94361)),	-- Malevolent Gladiator's Medallion of Tenacity (A)
+								-- Never
+								un(NEVER_IMPLEMENTED, i(91329)),	-- Malevolent Gladiator's Medallion of Cruelty (A)
+								un(NEVER_IMPLEMENTED, i(91333)),	-- Malevolent Gladiator's Medallion of Meditation (A)
+								un(NEVER_IMPLEMENTED, i(91331)),	-- Malevolent Gladiator's Medallion of Tenacity (A)
+							}),
 							
 						}),
 						n(-655, {	-- Ensemble Gear (Season 14 version)
@@ -2315,8 +2332,20 @@ _.PVP =
 								un(REMOVED_FROM_GAME, i(99950)),	-- Tyrannical Gladiator's Signet of Accuracy
 								un(REMOVED_FROM_GAME, i(99949)),	-- Tyrannical Gladiator's Signet of Cruelty
 							}),
-				
-				
+							f(53,	{	-- Trinket
+								un(REMOVED_FROM_GAME, i(99772)),	-- Malevolent Gladiator's Badge of Conquest
+								un(REMOVED_FROM_GAME, i(99937)),	-- Malevolent Gladiator's Badge of Dominance
+								un(REMOVED_FROM_GAME, i(99943)),	-- Malevolent Gladiator's Badge of Victory
+								un(REMOVED_FROM_GAME, i(99838)),	-- Malevolent Gladiator's Emblem of Cruelty
+								un(REMOVED_FROM_GAME, i(99840)),	-- Malevolent Gladiator's Emblem of Meditation
+								un(REMOVED_FROM_GAME, i(99839)),	-- Malevolent Gladiator's Emblem of Tenacity
+								un(REMOVED_FROM_GAME, i(99777)),	-- Malevolent Gladiator's Insignia of Conquest
+								un(REMOVED_FROM_GAME, i(99938)),	-- Malevolent Gladiator's Insignia of Dominance
+								un(REMOVED_FROM_GAME, i(99948)),	-- Malevolent Gladiator's Insignia of Victory
+								un(REMOVED_FROM_GAME, i(100056)),	-- Malevolent Gladiator's Medallion of Cruelty (A)
+								un(REMOVED_FROM_GAME, i(100058)),	-- Malevolent Gladiator's Medallion of Meditation (A)
+								un(REMOVED_FROM_GAME, i(100031)),	-- Malevolent Gladiator's Medallion of Tenacity (A)
+							}),
 				
 						}),
 					},
@@ -2414,6 +2443,24 @@ _.PVP =
 								i(94357),	-- Tyrannical Gladiator's Ring of Cruelty
 								i(94462),	-- Tyrannical Gladiator's Signet of Accuracy
 								i(94417),	-- Tyrannical Gladiator's Signet of Cruelty
+							}),
+							f(53,	{	-- Trinket
+								un(REMOVED_FROM_GAME, i(94373)),	-- Malevolent Gladiator's Badge of Conquest
+								un(REMOVED_FROM_GAME, i(94346)),	-- Malevolent Gladiator's Badge of Dominance
+								un(REMOVED_FROM_GAME, i(94349)),	-- Malevolent Gladiator's Badge of Victory
+								un(REMOVED_FROM_GAME, i(94396)),	-- Malevolent Gladiator's Emblem of Cruelty
+								un(REMOVED_FROM_GAME, i(94329)),	-- Malevolent Gladiator's Emblem of Meditation
+								un(REMOVED_FROM_GAME, i(94422)),	-- Malevolent Gladiator's Emblem of Tenacity
+								un(REMOVED_FROM_GAME, i(94356)),	-- Malevolent Gladiator's Insignia of Conquest
+								un(REMOVED_FROM_GAME, i(94482)),	-- Malevolent Gladiator's Insignia of Dominance
+								un(REMOVED_FROM_GAME, i(94415)),	-- Malevolent Gladiator's Insignia of Victory
+								un(REMOVED_FROM_GAME, i(94454)),	-- Malevolent Gladiator's Medallion of Cruelty (H)
+								un(REMOVED_FROM_GAME, i(94338)),	-- Malevolent Gladiator's Medallion of Meditation (H)
+								un(REMOVED_FROM_GAME, i(94387)),	-- Malevolent Gladiator's Medallion of Tenacity (H)
+								-- Never
+								un(NEVER_IMPLEMENTED, i(91330)),	-- Malevolent Gladiator's Medallion of Cruelty (H)
+								un(NEVER_IMPLEMENTED, i(91334)),	-- Malevolent Gladiator's Medallion of Meditation (H)
+								un(NEVER_IMPLEMENTED, i(91332)),	-- Malevolent Gladiator's Medallion of Tenacity (H)
 							}),
 							
 							
@@ -2605,6 +2652,20 @@ _.PVP =
 								un(REMOVED_FROM_GAME, i(100027)),	-- Tyrannical Gladiator's Ring of Cruelty
 								un(REMOVED_FROM_GAME, i(100132)),	-- Tyrannical Gladiator's Signet of Accuracy
 								un(REMOVED_FROM_GAME, i(100087)),	-- Tyrannical Gladiator's Signet of Cruelty
+							}),
+							f(53,	{	-- Trinket
+								un(REMOVED_FROM_GAME, i(100043)),	-- Malevolent Gladiator's Badge of Conquest
+								un(REMOVED_FROM_GAME, i(100016)),	-- Malevolent Gladiator's Badge of Dominance
+								un(REMOVED_FROM_GAME, i(100019)),	-- Malevolent Gladiator's Badge of Victory
+								un(REMOVED_FROM_GAME, i(100066)),	-- Malevolent Gladiator's Emblem of Cruelty
+								un(REMOVED_FROM_GAME, i(99990)),	-- Malevolent Gladiator's Emblem of Meditation
+								un(REMOVED_FROM_GAME, i(100092)),	-- Malevolent Gladiator's Emblem of Tenacity
+								un(REMOVED_FROM_GAME, i(100026)),	-- Malevolent Gladiator's Insignia of Conquest
+								un(REMOVED_FROM_GAME, i(100152)),	-- Malevolent Gladiator's Insignia of Dominance
+								un(REMOVED_FROM_GAME, i(100085)),	-- Malevolent Gladiator's Insignia of Victory
+								un(REMOVED_FROM_GAME, i(100124)),	-- Malevolent Gladiator's Medallion of Cruelty (H)
+								un(REMOVED_FROM_GAME, i(100006)),	-- Malevolent Gladiator's Medallion of Meditation (H)
+								un(REMOVED_FROM_GAME, i(100057)),	-- Malevolent Gladiator's Medallion of Tenacity (H)
 							}),
 				
 				
