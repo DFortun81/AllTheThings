@@ -2029,6 +2029,215 @@ _.PVP =
 				}),
 			}),
 			n(-676, {	-- Tyrannical Gladiator: Season 13
+				
+				
+				n(-9914, {	-- Alliance
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						n(-661, {	-- Gladiator PvP Gear
+							n(-319, {	-- Weapons	
+							
+							}),
+				
+				
+							n(-326, {	-- Wrists
+								-- From Nalak
+								i(91357),	-- Tyrannical Gladiator's Armbands of Meditation
+								i(91356),	-- Malevolent Gladiator's Armbands of Prowess
+								i(91306),	-- Malevolent Gladiator's Armplates of Alacrity
+								i(91305),	-- Malevolent Gladiator's Armplates of Proficiency
+								i(91246),	-- Malevolent Gladiator's Armwraps of Accuracy
+								i(91339),	-- Malevolent Gladiator's Armwraps of Alacrity
+								i(91171),	-- Malevolent Gladiator's Bindings of Meditation
+								i(91188),	-- Malevolent Gladiator's Bindings of Prowess
+								i(91286),	-- Malevolent Gladiator's Bracers of Meditation
+								i(91285),	-- Malevolent Gladiator's Bracers of Prowess
+								i(91121),	-- Malevolent Gladiator's Cuffs of Accuracy
+								i(91123),	-- Malevolent Gladiator's Cuffs of Meditation
+								i(91122),	-- Malevolent Gladiator's Cuffs of Prowess
+								i(91221),	-- Malevolent Gladiator's Wristguards of Accuracy
+								i(91220),	-- Malevolent Gladiator's Wristguards of Alacrity
+							}),
+						
+				
+				
+				
+				
+				
+							
+							
+						}),
+						n(-655, {	-- Ensemble Gear (Season 14 version)
+							n(-319, {	-- Weapons	
+							
+							}),
+							
+							n(-326, {	-- Wrists
+								i(99915, {	-- Malevolent Gladiator's Armbands of Meditation
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(99914, {	-- Malevolent Gladiator's Armbands of Prowess
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(99891, {	-- Malevolent Gladiator's Armplates of Alacrity
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(99890, {	-- Malevolent Gladiator's Armplates of Proficiency
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(99859, {	-- Malevolent Gladiator's Armwraps of Accuracy
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(99905, {	-- Malevolent Gladiator's Armwraps of Alacrity
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(99818, {	-- Malevolent Gladiator's Bindings of Meditation
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(99827, {	-- Malevolent Gladiator's Bindings of Prowess
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(99880, {	-- Malevolent Gladiator's Bracers of Meditation
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(99879, {	-- Malevolent Gladiator's Bracers of Prowess
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(99787, {	-- Malevolent Gladiator's Cuffs of Accuracy
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(99789, {	-- Malevolent Gladiator's Cuffs of Meditation
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(99788, {	-- Malevolent Gladiator's Cuffs of Prowess
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(99846, {	-- Malevolent Gladiator's Wristguards of Accuracy
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(99845, {	-- Malevolent Gladiator's Wristguards of Alacrity
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+							}),	
+						
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+						}),
+					},
+				}),
+				n(-9913, {	-- Horde
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						n(-661, {	-- Gladiator PvP Gear
+							n(-319, {	-- Weapons	
+							
+							}),
+				
+							n(-326, {	-- Wrists
+								-- From Nalak
+								i(94337),	-- Malevolent Gladiator's Armbands of Meditation
+								i(94379),	-- Malevolent Gladiator's Armbands of Prowess
+								i(94487),	-- Malevolent Gladiator's Armplates of Alacrity
+								i(94418),	-- Malevolent Gladiator's Armplates of Proficiency
+								i(94427),	-- Malevolent Gladiator's Armwraps of Accuracy
+								i(94470),	-- Malevolent Gladiator's Armwraps of Alacrity
+								i(94407),	-- Malevolent Gladiator's Bindings of Meditation
+								i(94439),	-- Malevolent Gladiator's Bindings of Prowess
+								i(94481),	-- Malevolent Gladiator's Bracers of Meditation
+								i(94411),	-- Malevolent Gladiator's Bracers of Prowess
+								i(94403),	-- Malevolent Gladiator's Cuffs of Accuracy
+								i(94380),	-- Malevolent Gladiator's Cuffs of Meditation
+								i(94449),	-- Malevolent Gladiator's Cuffs of Prowess
+								i(94469),	-- Malevolent Gladiator's Wristguards of Accuracy
+								i(94404),	-- Malevolent Gladiator's Wristguards of Alacrity
+							}),
+				
+				
+				
+				
+				
+				
+				
+							
+							
+						}),
+						n(-655, {	-- Ensemble Gear (Season 14 version)
+							n(-319, {	-- Weapons	
+							
+							}),
+				
+							n(-326, {	-- Wrists
+								i(100004, {	-- Malevolent Gladiator's Armbands of Meditation
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(100049, {	-- Malevolent Gladiator's Armbands of Prowess
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(100157, {	-- Malevolent Gladiator's Armplates of Alacrity
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(100088, {	-- Malevolent Gladiator's Armplates of Proficiency
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(100097, {	-- Malevolent Gladiator's Armwraps of Accuracy
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(100140, {	-- Malevolent Gladiator's Armwraps of Alacrity
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(100077, {	-- Malevolent Gladiator's Bindings of Meditation
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(100109, {	-- Malevolent Gladiator's Bindings of Prowess
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(100151, {	-- Malevolent Gladiator's Bracers of Meditation
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(100081, {	-- Malevolent Gladiator's Bracers of Prowess
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(100073, {	-- Malevolent Gladiator's Cuffs of Accuracy
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(100050, {	-- Malevolent Gladiator's Cuffs of Meditation
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(100119, {	-- Malevolent Gladiator's Cuffs of Prowess
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(100139, {	-- Malevolent Gladiator's Wristguards of Accuracy
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(100074, {	-- Malevolent Gladiator's Wristguards of Alacrity
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+							}),	
+						}),
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+					},
+				}),	
 				n(-325, { -- Tabards
 					un(REMOVED_FROM_GAME, i(98162)), -- Tyrannical Gladiator's Tabard
 				}),
