@@ -2043,7 +2043,7 @@ _.PVP =
 							n(-326, {	-- Wrists
 								-- From Nalak
 								i(91357),	-- Tyrannical Gladiator's Armbands of Meditation
-								i(91356),	-- Malevolent Gladiator's Armbands of Prowess
+								i(91356),	-- Tyrannical Gladiator's Armbands of Prowess
 								i(91306),	-- Tyrannical Gladiator's Armplates of Alacrity
 								i(91305),	-- Tyrannical Gladiator's Armplates of Proficiency
 								i(91246),	-- Tyrannical Gladiator's Armwraps of Accuracy
@@ -2076,10 +2076,24 @@ _.PVP =
 								i(91378),	-- Tyrannical Gladiator's Waistguard of Cruelty
 								i(91350),	-- Tyrannical Gladiator's Waistguard of Meditation
 							}),
-				
-				
-				
-				
+							n(-330, {	-- Feet
+								-- From Nalak
+								i(91244),	-- Tyrannical Gladiator's Boots of Alacrity
+								i(91337),	-- Tyrannical Gladiator's Boots of Cruelty
+								i(91186),	-- Tyrannical Gladiator's Footguards of Alacrity (Leather)
+								i(91352),	-- Tyrannical Gladiator's Footguards of Alacrity (Mail)
+								i(91169),	-- Tyrannical Gladiator's Footguards of Meditation (Leather)
+								i(91354),	-- Tyrannical Gladiator's Footguards of Meditation (Mail)
+								i(91281),	-- Tyrannical Gladiator's Greaves of Alacrity
+								i(91283),	-- Tyrannical Gladiator's Greaves of Meditation
+								i(91218),	-- Tyrannical Gladiator's Sabatons of Alacrity
+								i(91216),	-- Tyrannical Gladiator's Sabatons of Cruelty
+								i(91117),	-- Tyrannical Gladiator's Treads of Alacrity
+								i(91115),	-- Tyrannical Gladiator's Treads of Cruelty
+								i(91119),	-- Tyrannical Gladiator's Treads of Meditation
+								i(91303),	-- Tyrannical Gladiator's Warboots of Alacrity
+								i(91301),	-- Tyrannical Gladiator's Warboots of Cruelty
+							}),
 				
 							
 							
@@ -2183,9 +2197,53 @@ _.PVP =
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
 							}),	
-				
-				
-				
+							n(-330, {	-- Feet
+								i(99858, {	-- Tyrannical Gladiator's Boots of Alacrity
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(99904, {	-- Tyrannical Gladiator's Boots of Cruelty
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(99826, {	-- Tyrannical Gladiator's Footguards of Alacrity (Leahter)
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(99912, {	-- Tyrannical Gladiator's Footguards of Alacrity (Mail)
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(99817, {	-- Tyrannical Gladiator's Footguards of Meditation (Leather)
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(99913, {	-- Tyrannical Gladiator's Footguards of Meditation (Mail)
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),						
+								i(99877, {	-- Tyrannical Gladiator's Greaves of Alacrity
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(99878, {	-- Tyrannical Gladiator's Greaves of Meditation
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(99844, {	-- Tyrannical Gladiator's Sabatons of Alacrity
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(99843, {	-- Tyrannical Gladiator's Sabatons of Cruelty
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(99785, {	-- Tyrannical Gladiator's Treads of Alacrity
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(99784, {	-- Tyrannical Gladiator's Treads of Cruelty
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(99786, {	-- Tyrannical Gladiator's Treads of Meditation
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),					
+								i(99889, {	-- Tyrannical Gladiator's Warboots of Alacrity
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(99888, {	-- Tyrannical Gladiator's Warboots of Cruelty
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+							}),
 				
 				
 				
@@ -2240,10 +2298,24 @@ _.PVP =
 								i(94393),	-- Tyrannical Gladiator's Waistguard of Cruelty
 								i(94382),	-- Tyrannical Gladiator's Waistguard of Meditation
 							}),
-				
-				
-				
-							
+							n(-330, {	-- Feet
+								-- From Nalak
+								i(94432),	-- Tyrannical Gladiator's Boots of Alacrity
+								i(94374),	-- Tyrannical Gladiator's Boots of Cruelty
+								i(94344),	-- Tyrannical Gladiator's Footguards of Alacrity (Leather)
+								i(94378),	-- Tyrannical Gladiator's Footguards of Alacrity (Mail)
+								i(94476),	-- Tyrannical Gladiator's Footguards of Meditation (Leather)
+								i(94336),	-- Tyrannical Gladiator's Footguards of Meditation (Mail)
+								i(94351),	-- Tyrannical Gladiator's Greaves of Alacrity
+								i(94352),	-- Tyrannical Gladiator's Greaves of Meditation
+								i(94359),	-- Tyrannical Gladiator's Sabatons of Alacrity
+								i(94445),	-- Tyrannical Gladiator's Sabatons of Cruelty
+								i(94333),	-- Tyrannical Gladiator's Treads of Alacrity
+								i(94402),	-- Tyrannical Gladiator's Treads of Cruelty
+								i(94468),	-- Tyrannical Gladiator's Treads of Meditation
+								i(94461),	-- Tyrannical Gladiator's Warboots of Alacrity
+								i(94414),	-- Tyrannical Gladiator's Warboots of Cruelty
+							}),
 				
 							
 							
@@ -2347,8 +2419,53 @@ _.PVP =
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
 							}),	
-				
-				
+							n(-330, {	-- Feet
+								i(100102, {	-- Tyrannical Gladiator's Boots of Alacrity
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(100044, {	-- Tyrannical Gladiator's Boots of Cruelty
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(100014, {	-- Tyrannical Gladiator's Footguards of Alacrity (Leahter)
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(100048, {	-- Tyrannical Gladiator's Footguards of Alacrity (Mail)
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(100146, {	-- Tyrannical Gladiator's Footguards of Meditation (Leather)
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(100001, {	-- Tyrannical Gladiator's Footguards of Meditation (Mail)
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),						
+								i(100021, {	-- Tyrannical Gladiator's Greaves of Alacrity
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(100022, {	-- Tyrannical Gladiator's Greaves of Meditation
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(100029, {	-- Tyrannical Gladiator's Sabatons of Alacrity
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(100115, {	-- Tyrannical Gladiator's Sabatons of Cruelty
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(99994, {	-- Tyrannical Gladiator's Treads of Alacrity
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(100072, {	-- Tyrannical Gladiator's Treads of Cruelty
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(100138, {	-- Tyrannical Gladiator's Treads of Meditation
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),					
+								i(100131, {	-- Tyrannical Gladiator's Warboots of Alacrity
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(100084, {	-- Tyrannical Gladiator's Warboots of Cruelty
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+							}),
 				
 				
 						}),
@@ -2359,23 +2476,39 @@ _.PVP =
 				n(-662, {	-- Elite PvP Gear
 				
 					n(-328, {	-- Waist
-						un(REMOVED_FROM_GAME, i(91185)),	-- Malevolent Gladiator's Belt of Cruelty
-						un(REMOVED_FROM_GAME, i(91168)),	-- Malevolent Gladiator's Belt of Meditation
-						un(REMOVED_FROM_GAME, i(91278)),	-- Malevolent Gladiator's Clasp of Cruelty
-						un(REMOVED_FROM_GAME, i(91280)),	-- Malevolent Gladiator's Clasp of Meditation
-						un(REMOVED_FROM_GAME, i(91112)),	-- Malevolent Gladiator's Cord of Accuracy
-						un(REMOVED_FROM_GAME, i(91110)),	-- Malevolent Gladiator's Cord of Cruelty
-						un(REMOVED_FROM_GAME, i(91114)),	-- Malevolent Gladiator's Cord of Meditation
-						un(REMOVED_FROM_GAME, i(91298)),	-- Malevolent Gladiator's Girdle of Accuracy
-						un(REMOVED_FROM_GAME, i(91300)),	-- Malevolent Gladiator's Girdle of Prowess
-						un(REMOVED_FROM_GAME, i(91215)),	-- Malevolent Gladiator's Links of Accuracy
-						un(REMOVED_FROM_GAME, i(91213)),	-- Malevolent Gladiator's Links of Cruelty
-						un(REMOVED_FROM_GAME, i(91336)),	-- Malevolent Gladiator's Waistband of Accuracy
-						un(REMOVED_FROM_GAME, i(91243)),	-- Malevolent Gladiator's Waistband of Cruelty
-						un(REMOVED_FROM_GAME, i(91379)),	-- Malevolent Gladiator's Waistguard of Cruelty
-						un(REMOVED_FROM_GAME, i(91351)),	-- Malevolent Gladiator's Waistguard of Meditation
+						un(REMOVED_FROM_GAME, i(91185)),	-- Tyrannical Gladiator's Belt of Cruelty
+						un(REMOVED_FROM_GAME, i(91168)),	-- Tyrannical Gladiator's Belt of Meditation
+						un(REMOVED_FROM_GAME, i(91278)),	-- Tyrannical Gladiator's Clasp of Cruelty
+						un(REMOVED_FROM_GAME, i(91280)),	-- Tyrannical Gladiator's Clasp of Meditation
+						un(REMOVED_FROM_GAME, i(91112)),	-- Tyrannical Gladiator's Cord of Accuracy
+						un(REMOVED_FROM_GAME, i(91110)),	-- Tyrannical Gladiator's Cord of Cruelty
+						un(REMOVED_FROM_GAME, i(91114)),	-- Tyrannical Gladiator's Cord of Meditation
+						un(REMOVED_FROM_GAME, i(91298)),	-- Tyrannical Gladiator's Girdle of Accuracy
+						un(REMOVED_FROM_GAME, i(91300)),	-- Tyrannical Gladiator's Girdle of Prowess
+						un(REMOVED_FROM_GAME, i(91215)),	-- Tyrannical Gladiator's Links of Accuracy
+						un(REMOVED_FROM_GAME, i(91213)),	-- Tyrannical Gladiator's Links of Cruelty
+						un(REMOVED_FROM_GAME, i(91336)),	-- Tyrannical Gladiator's Waistband of Accuracy
+						un(REMOVED_FROM_GAME, i(91243)),	-- Tyrannical Gladiator's Waistband of Cruelty
+						un(REMOVED_FROM_GAME, i(91379)),	-- Tyrannical Gladiator's Waistguard of Cruelty
+						un(REMOVED_FROM_GAME, i(91351)),	-- Tyrannical Gladiator's Waistguard of Meditation
 					}),
-				
+					n(-330, {	-- Feet
+						un(REMOVED_FROM_GAME, i(91245)),	-- Tyrannical Gladiator's Boots of Alacrity
+						un(REMOVED_FROM_GAME, i(91338)),	-- Tyrannical Gladiator's Boots of Cruelty
+						un(REMOVED_FROM_GAME, i(91187)),	-- Tyrannical Gladiator's Footguards of Alacrity (Leather)
+						un(REMOVED_FROM_GAME, i(91353)),	-- Tyrannical Gladiator's Footguards of Alacrity (Mail)
+						un(REMOVED_FROM_GAME, i(91170)),	-- Tyrannical Gladiator's Footguards of Meditation (Leahter)
+						un(REMOVED_FROM_GAME, i(91355)),	-- Tyrannical Gladiator's Footguards of Meditation (Mail)
+						un(REMOVED_FROM_GAME, i(91282)),	-- Tyrannical Gladiator's Greaves of Alacrity
+						un(REMOVED_FROM_GAME, i(91284)),	-- Tyrannical Gladiator's Greaves of Meditation
+						un(REMOVED_FROM_GAME, i(91219)),	-- Tyrannical Gladiator's Sabatons of Alacrity
+						un(REMOVED_FROM_GAME, i(91217)),	-- Tyrannical Gladiator's Sabatons of Cruelty
+						un(REMOVED_FROM_GAME, i(91118)),	-- Tyrannical Gladiator's Treads of Alacrity
+						un(REMOVED_FROM_GAME, i(91116)),	-- Tyrannical Gladiator's Treads of Cruelty
+						un(REMOVED_FROM_GAME, i(91120)),	-- Tyrannical Gladiator's Treads of Meditation
+						un(REMOVED_FROM_GAME, i(91304)),	-- Tyrannical Gladiator's Warboots of Alacrity
+						un(REMOVED_FROM_GAME, i(91302)),	-- Tyrannical Gladiator's Warboots of Cruelty
+					}),
 				}),
 				n(-325, { -- Tabards
 					un(REMOVED_FROM_GAME, i(98162)), -- Tyrannical Gladiator's Tabard
