@@ -22,26 +22,47 @@ _.Zones =
 						["provider"] = { "n", 63596 },	-- Audrey Burnhelp
 						["coord"] = { 69.2, 25.0, 84 },
 						["races"] = ALLIANCE_ONLY,
+						["DisablePartySync"] = true,
+						["altQuests"] = {
+							-- Horde Shared Account-Wide Pet Battle Intro Quests
+							32009,	-- Varzok (Will be marked completed if any Varzok quest is completed)
+						},
 					}),
 					q(31878, {	-- Audrey Burnhep
 						["isBreadcrumb"] = true,
 						["races"] = ALLIANCE_ONLY,
 						["DisablePartySync"] = true,
+						["altQuests"] = {
+							-- Horde Shared Account-Wide Pet Battle Intro Quests
+							32009,	-- Varzok (Will be marked completed if any Varzok quest is completed)
+						},
 					}),
 					q(31879, {	-- Audrey Burnhep
 						["isBreadcrumb"] = true,
 						["races"] = ALLIANCE_ONLY,
 						["DisablePartySync"] = true,
+						["altQuests"] = {
+							-- Horde Shared Account-Wide Pet Battle Intro Quests
+							32009,	-- Varzok (Will be marked completed if any Varzok quest is completed)
+						},
 					}),
 					q(31880, {	-- Audrey Burnhep
 						["isBreadcrumb"] = true,
 						["races"] = ALLIANCE_ONLY,
 						["DisablePartySync"] = true,
+						["altQuests"] = {
+							-- Horde Shared Account-Wide Pet Battle Intro Quests
+							32009,	-- Varzok (Will be marked completed if any Varzok quest is completed)
+						},
 					}),
 					q(31881, {	-- Audrey Burnhep
 						["isBreadcrumb"] = true,
 						["races"] = ALLIANCE_ONLY,
 						["DisablePartySync"] = true,
+						["altQuests"] = {
+							-- Horde Shared Account-Wide Pet Battle Intro Quests
+							32009,	-- Varzok (Will be marked completed if any Varzok quest is completed)
+						},
 					}),
 					q(31966, {	-- Battle Pet Tamers: Cataclysm
 						["altQuests"] = { 31967 },

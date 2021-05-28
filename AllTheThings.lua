@@ -18631,8 +18631,10 @@ app.events.VARIABLES_LOADED = function()
 			{ 10378, { 39355 } }, -- Equipment Blueprint: Trained Shark Tank
 			{ 10379, { 39360 } }, -- Equipment Blueprint: True Iron Rudder
 			-- stupid pet tamer breadcrumbs that are once per account (there may be more breadcrumbs for the questline that need to be added here)
-			{ 6603, { 32008 } },	-- Taming Eastern Kingdoms / Audrey Burnhep (A)
-			{ 6602, { 32009 } },	-- Taming Kalimdor / Varzok (H)
+			-- these aren't really 'once per account' in that only a single character gets credit.
+			-- all 5 quests of the faction are marked completed account-wide, and the other 5 can never be completed on that account
+			-- { 6603, { 32008 } },	-- Taming Eastern Kingdoms / Audrey Burnhep (A)
+			-- { 6602, { 32009 } },	-- Taming Kalimdor / Varzok (H)
 		}) do
 			-- If you completed the achievement, then mark the associated quests.
 			collected = select(4, GetAchievementInfo(achievementQuests[1]));
@@ -18720,6 +18722,15 @@ app.events.VARIABLES_LOADED = function()
 				-- Mark that this Quest is a OneTimeQuest which hasn't been determined as completed by any Character yet
 				accountWideData.OneTimeQuests[questID] = false;
 			end
+		end
+
+		-- if we ever erroneously add an account-wide quest and find out it isn't (or Blizzard actually fixes it to give acocunt-wide credit)
+		-- put it here so it reverts back to being handled as a normal quest
+		for i,questID in ipairs({
+			32008,	-- Audrey Burnhep (A)
+			32009,	-- Varzok (H)
+		}) do
+			accountWideData.OneTimeQuests[questID] = nil;
 		end
 
 		app:RegisterEvent("QUEST_LOG_UPDATE");
