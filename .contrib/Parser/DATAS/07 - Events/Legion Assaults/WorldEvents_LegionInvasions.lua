@@ -9,6 +9,7 @@ _.WorldEvents =
 		["maps"] = { 641, 650, 634, 630 },
 		["groups"] = {
 			v(47063, {	-- Tracking Quest
+				["description"] = "Complete 4 Legion Invasion World Quests, then complete the Scenario in the respective zone",
 				["crs"] = {
 					118180,	-- Dread Vizier Gra'tork <Legion Commander>
 					119579,	-- Fel Commander Erixtol

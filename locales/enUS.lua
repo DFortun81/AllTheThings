@@ -99,6 +99,7 @@ app.L = {
 	["COMPLETED_YEARLY"] = "This can be completed yearly.";
 	["COMPLETED_MULTIPLE"] = "This can be repeated multiple times.";
 	["CRITERIA_FOR"] = "Criteria for";
+	["CURRENCY_FOR"] = "Currency for";
 	["LOOT_TABLE_CHANCE"] = "Loot Table Chance";
 	["BEST_BONUS_ROLL_CHANCE"] = "Best Bonus Roll Chance";
 	["BEST_PERSONAL_LOOT_CHANCE"] = "Best Personal Loot Chance";
@@ -592,8 +593,10 @@ app.L = {
 		["Classic %> "] = "",
 		["The Burning Crusade"] = "BC",
 		["Burning Crusade"] = "BC",
+		["The BC"] = "BC",										-- Fix for BC PvP season
 		["Wrath of the Lich King"] = "WotLK",
 		["Cataclysm"] = "Cata",
+		["Cataic"] = "Cataclysmic",								-- Fix for Cata last PvP Season
 		["Mists of Pandaria"] = "MoP",
 		["Warlords of Draenor"] = "WoD",
 		["Battle for Azeroth"] = "BFA",
@@ -1076,7 +1079,8 @@ app.L = {
 		[-650] = "Interface\\Icons\\inv_misc_questionmark",									-- Quest Item
 		--[-651] = "Interface\\Worldmap\\GlowSkull_64Grey",									-- Not used yet. Future PvP Icons if needed
 		--[-652] = "Interface\\Worldmap\\GlowSkull_64",										-- Not used yet. Future PvP Icons if needed
-		[-655] = 3052064, 																	-- Ensemble Gear (PvP)
+		[-655] = 1596892, 																	-- Ensemble Gear (PvP)
+		[-656] = "Interface\\Icons\\ability_mount_drake_twilight",							-- Pre-Season Ruthless (S10)
 		[-657] = "Interface\\Icons\\ability_mount_redfrostwyrm_01",							-- Hateful Gladiator: Season 5 (Medium Gear)
 		[-658] = app.asset("Expansion_TBC"),												-- Pre-Season BC
 		[-659] = "Interface\\Worldmap\\GlowSkull_64Green",									-- Aspirant PvP Gear
@@ -1851,9 +1855,9 @@ app.L = {
 -- PvP Header
 	-- Special Season Tags
 		[-655] = "Ensemble Gear", 												-- Ensemble Gear (PvP)
-		[-656] = "Pre-Season",													-- Pre-Season (PvP Cata & later)
+		--[-656] = "Pre-Season Ruthless: Season 10",							-- Listed under Cata PvP Seasons
 		--[-657] = "Hateful Gladiator",											-- Listed under WOTLK PvP Seasons
-		[-658] = "BC Pre-Season",												-- Pre-Season (PvP BC)
+		--[-658] = "BC Pre-Season",												-- Listed under BC PvP Seasons
 	-- PvP Set Names
 		[-659] = "Aspirant Gear",												-- Aspirant PvP Gear (WoD, BfA)
 		[-660] = "Combatant Gear",												-- Combatant PvP Gear (WoD, Legion)
@@ -1864,6 +1868,7 @@ app.L = {
 		[-663] = "Classic Pre-Season Gear",										-- Classic Pre-Season PvP Gear (need a icon)
 
 	-- The Burning Crusade PvP Seasons
+		[-658] = "BC Pre-Season",												-- Pre-Season (PvP BC)
 		[-664] = select(2, GetAchievementInfo(2091))..": Season 1",				-- Gladiator: Season 1
 		[-665] = select(2, GetAchievementInfo(418))..": Season 2",				-- Merciless Gladiator: Season 2
 		[-666] = select(2, GetAchievementInfo(419))..": Season 3",				-- Vengeful Gladiator: Season 3
@@ -1878,6 +1883,7 @@ app.L = {
 
 	-- Cataclysm PvP Seasons
 		[-672] = select(2, GetAchievementInfo(6002))..": Season 9",				-- Vicious Gladiator: Season 9
+		[-656] = "Pre-Season Ruthless: Season 10",								-- Pre-Season Ruthless (S10)
 		[-673] = select(2, GetAchievementInfo(6124))..": Season 10",			-- Ruthless Gladiator: Season 10
 		[-674] = select(2, GetAchievementInfo(6938))..": Season 11",			-- Cataclysmic Gladiator: Season 11
 

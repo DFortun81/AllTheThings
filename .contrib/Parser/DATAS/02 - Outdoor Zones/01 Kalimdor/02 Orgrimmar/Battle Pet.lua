@@ -177,10 +177,15 @@ _.Zones =
 
 				}),
 				q(32009, {	-- Varzok
-					["isBreadcrumb"] = true,
 					["provider"] = { "n", 63626 },	-- Varzok
 					["coord"] = { 52.6, 59.3, 85 },
 					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
+					["altQuests"] = {
+						-- Alliance Shared Account-Wide Pet Battle Intro Quests
+						32008,	-- Audrey Burnhep (Will be marked completed if any Audrey Burnhep quest is completed)
+					},
 				}),
 				--[[
 				Putting quests 31882-31885 here for now, but I'm confident each of these are offered
@@ -192,21 +197,37 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
+					["altQuests"] = {
+						-- Alliance Shared Account-Wide Pet Battle Intro Quests
+						32008,	-- Audrey Burnhep (Will be marked completed if any Audrey Burnhep quest is completed)
+					},
 				}),
 				q(31883, {	-- Varzok
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
+					["altQuests"] = {
+						-- Alliance Shared Account-Wide Pet Battle Intro Quests
+						32008,	-- Audrey Burnhep (Will be marked completed if any Audrey Burnhep quest is completed)
+					},
 				}),
 				q(31884, {	-- Varzok
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
+					["altQuests"] = {
+						-- Alliance Shared Account-Wide Pet Battle Intro Quests
+						32008,	-- Audrey Burnhep (Will be marked completed if any Audrey Burnhep quest is completed)
+					},
 				}),
 				q(31885, {	-- Varzok
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
+					["altQuests"] = {
+						-- Alliance Shared Account-Wide Pet Battle Intro Quests
+						32008,	-- Audrey Burnhep (Will be marked completed if any Audrey Burnhep quest is completed)
+					},
 				}),
 				q(32863, {	-- What We've Been Training For
 					["provider"] = { "n", 63626 },	-- Varzok

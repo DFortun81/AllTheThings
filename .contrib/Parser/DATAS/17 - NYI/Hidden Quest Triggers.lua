@@ -1017,7 +1017,6 @@ _.HiddenQuestTriggers =
 		---   OUTLAND   ---
 		-------------------
 		--	QUESTING / LEVELING
-		q(10454),	-- Hellfire Peninsula - Flag: OFF THE RAILS. Triggered just after turning in Forward Base: Reaver's Fall as horde
 		q(11517),	-- Report to Nasuun — looks like an unused version of #11534 (triggers when you turn it in, but has no data on wowhead)
 		q(11518),	-- Sunwell Daily Portal Flag
 		q(11522),	-- Triggers with Rediscovering Your Roots (11521)
@@ -2769,6 +2768,7 @@ _.HiddenQuestTriggers =
 		q(54297),	-- Upgrade: Zul'jan Ruins completed
 		q(53741),	-- Windfall Cavern completed
 		q(53739),	-- Wolf's Den completed
+		q(53751),	-- Grimwatt's Crash completed
 
 		--	HONEYBACK HIVE
 		q(55906),	-- triggers when pulling out Seabreeze Bumblebee or Bumbles next to Barry at 69.1, 64.2 in Stormsong Valley

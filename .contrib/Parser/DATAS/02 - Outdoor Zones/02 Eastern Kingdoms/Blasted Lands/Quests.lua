@@ -721,22 +721,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26163,	-- Time Is Short
 				}),
-				q(9407,  {	-- Through the Dark Portal
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 19254 },	-- Warlord Dar'toon
-					["lvl"] = 58,
-					["coord"] = { 54.4, 50.5, 17 },
-					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
-				}),
-				q(10119, {	-- Through the Dark Portal
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 16841 },	-- Watch Commander Relthorn Netherwane
-					["lvl"] = 58,
-					["coord"] = { 54.7, 50.5, 17 },
-					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,
-				}),
 				q(26163, {	-- Time is Short
 					["provider"] = { "n", 42298 },	-- Kasim Sharim
 					["coord"] = { 62.4, 25.9, 17 },

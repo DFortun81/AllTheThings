@@ -7,12 +7,7 @@ _.Zones =
 	m(619, { 	-- The Broken Isles
 		n(WORLD_QUESTS, {
 			["lvl"] = 110,
-			["g"] = {			
-				q(47063, {	-- Tracking Quest [Broken Isles Legion Invasion Scenario Completion]
-					["lvl"] = 110,
-					["description"] = "Complete 4 Legion Invasion World Quests, then complete the Scenario in the respective zone",
-					["isWorldQuest"] = true,
-				}),
+			["g"] = {
 				f(200,  {	-- Recipes
 					q(41666, {	-- Vantus Rune Work Order: Nythendra
 						["repeatable"] = true,

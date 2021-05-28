@@ -2029,10 +2029,7 @@ _.NeverImplemented =
 			i(62037), 	-- Gleaming seal of the archmagus
 			i(69891), 	-- Burnished Dark Iron Ring
 			i(103825), 	-- 5.4 Raid - Normal - Siege of Orgrimmar - Wildcard - Int Hit Ring
-			i(25988),	-- Glowing Alabaster Ring Beta only
 			i(28044),	-- Band of the Demon Stalker
-			i(25991),	-- Seamless Stone Band
-			i(25990),	-- Smooth soapstone band
 			i(33957),	-- Witches Band (unused version)
 			i(33958),	-- The Horseman's Signet Ring (unused version)
 			i(33959),	-- Ring of Ghoulish Delight (unused version)
@@ -2083,8 +2080,6 @@ _.NeverImplemented =
 			i(125349),	-- Wild Gladiator's Accolade of victory
 			i(125350),	-- Wild Gladiator's Accolade of meditation
 			i(173426),	-- Black Empire trinkets
-			i(25994),	-- rune of force (only beta)
-			i(25995),	-- Star of Sha'naar (only beta)
 			i(18355),	-- Ferras Collar
 			i(18438),	-- Sergeant's Mark
 			i(20084),	-- Hunting Net
@@ -2117,7 +2112,6 @@ _.NeverImplemented =
 			i(109378),	-- Unknown
 			i(109386),	-- Unknown
 			i(109394),	-- Unknown
-			i(25996),	-- Emblem of Perseverance
 			i(44869),	-- Frenzyheart Insignia of Fury
 			i(44870),	-- Oracle Talisman of Ablution
 			i(39819),	-- Bloodbinder's Runestone
@@ -2213,6 +2207,16 @@ _.NeverImplemented =
 		i(178488),	-- Retrieving Data
 		i(178489),	-- Retrieving Data
 		i(178673),	-- Retrieving Data
+		i(146463),	-- Ensemble: Elite Cataclysmic Gladiator's Dreadplate Armor
+		i(146461),	-- Ensemble: Elite Cataclysmic Gladiator's Dragonhide Armor
+		i(146459),	-- Ensemble: Elite Cataclysmic Gladiator's Chain Armor
+		i(146477),	-- Ensemble: Elite Cataclysmic Gladiator's Silk Armor
+		i(146475),	-- Ensemble: Elite Cataclysmic Gladiator's Scaled Armor
+		i(146473),	-- Ensemble: Elite Cataclysmic Gladiator's Satin Armor
+		i(146467),	-- Ensemble: Elite Cataclysmic Gladiator's Leather Armor
+		i(146471),	-- Ensemble: Elite Cataclysmic Gladiator's Ringmail Armor
+		i(146465),	-- Ensemble: Elite Cataclysmic Gladiator's Felweave Armor
+		i(146469),	-- Ensemble: Elite Cataclysmic Gladiator's Plate Armor
 		i(159681),	-- Set Keystone Map: Darkheart Thicket
 		i(159683),	-- Set Keystone Map: Black Rook Hold
 		i(159684),	-- Set Keystone Map: Cathedral of Eternal Night
@@ -3823,7 +3827,7 @@ _.NeverImplemented =
 			i(109283),   	-- 6.0 QA Combat Test Hunter Bow
 			i(140717),	-- Marksman Recurve Bow
 			i(150612),	-- Marksman Recurve Bow
-			i(91089),	-- Tyrannical Gladiator's longbow a s13
+			i(91107),	-- Tyrannical Gladiator's longbow a s13
 			i(94303),	-- Tyrannical Gladiator's longbow h s13
 			i(99780),	-- Tyrannical Gladiator's longbow a s14
 			i(99964),	-- Tyrannical Gladiator's longbow h s14
@@ -4346,6 +4350,37 @@ _.NeverImplemented =
 			i(165682),	-- Unknown
 			i(164760),	-- Illidari Warglaives (Lv100 boosted gear)
 		}),
+		i(64693),	-- Bloodthirsty Gladiator's Barrier
+		i(64694),	-- Bloodthirsty Gladiator's Baton of Light
+		i(64695),	-- Bloodthirsty Gladiator's Battle Staff
+		i(64700),	-- Bloodthirsty Gladiator's Bonecracker
+		i(64701),	-- Bloodthirsty Gladiator's Bonegrinder
+		i(64717),	-- Bloodthirsty Gladiator's Cleaver
+		i(64726),	-- Bloodthirsty Gladiator's Decapitator
+		i(64743),	-- Bloodthirsty Gladiator's Endgame
+		i(64744),	-- Bloodthirsty Gladiator's Energy Staff
+		i(64775),	-- Bloodthirsty Gladiator's Fleshslicer
+		i(64752),	-- Bloodthirsty Gladiator's Gavel
+		i(64755),	-- Bloodthirsty Gladiator's Greatsword
+		i(64758),	-- Bloodthirsty Gladiator's Hacker
+		i(64760),	-- Bloodthirsty Gladiator's Heavy Crossbow
+		i(64783),	-- Bloodthirsty Gladiator's Longbow
+		i(64810),	-- Bloodthirsty Gladiator's Pike
+		i(64816),	-- Bloodthirsty Gladiator's Pummeler
+		i(64817),	-- Bloodthirsty Gladiator's Quickblade
+		i(64818),	-- Bloodthirsty Gladiator's Redoubt
+		i(64823),	-- Bloodthirsty Gladiator's Reprieve
+		i(64824),	-- Bloodthirsty Gladiator's Rifle
+		i(64825),	-- Bloodthirsty Gladiator's Right Render
+		i(64826),	-- Bloodthirsty Gladiator's Ripper
+		i(64848),	-- Bloodthirsty Gladiator's Shanker
+		i(64849),	-- Bloodthirsty Gladiator's Shield Wall
+		i(64850),	-- Bloodthirsty Gladiator's Shiv
+		i(64774),	-- Bloodthirsty Gladiator's Slasher
+		i(64858),	-- Bloodthirsty Gladiator's Slicer
+		i(64859),	-- Bloodthirsty Gladiator's Spellblade
+		i(64860),	-- Bloodthirsty Gladiator's Staff
+		i(64861),	-- Bloodthirsty Gladiator's Touch of Defeat
 		-- Dreadful Gladiator (BLUE QUALITY) (did not make it to live)
 		i(84697),	-- Dreadful Gladiator's Fleshslicer
 		i(84722),	-- Dreadful Gladiator's Pike

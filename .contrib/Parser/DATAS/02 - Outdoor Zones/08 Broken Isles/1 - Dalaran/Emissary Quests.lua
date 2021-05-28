@@ -25,7 +25,10 @@ _.Zones =
 								["description"] = "During Legion, this item dropped from dungeon bosses as well as emissary chests, but since then it has only been seen in emissary chests. If you get it from a dungeon boss please let us know on the ATT discord (#unobtainables)!",
 							}),
 							i(141349, {	-- Strange Humming Crystal
+								-- This is specifically listed here since it is the end result of a quest chain started from this item
+								-- this is so the limited-availability of the emissary cache shows the final outcome
 								q(44412,  {	-- Enemies Everywhere
+									["sourceQuest"] = 44411,    -- Strange Humming Crystal
 									["provider"] = { "n", 90417 },	-- Archmage Khadgar
 									["g"] = {
 										i(141348),	-- Wondrous Wisdomball

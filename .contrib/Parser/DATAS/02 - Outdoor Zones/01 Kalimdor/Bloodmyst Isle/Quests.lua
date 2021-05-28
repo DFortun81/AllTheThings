@@ -664,9 +664,6 @@ _.Zones =
 				}),
 				q(9594, {	-- Signs of the Legion
 					["provider"] = { "i", 23900 },	-- Tzerak's Armor Plate
-					-- #if ANYCLASSIC
-					["description"] = "The event that spawns the mob to start this quest is currently bugged. Please let the ATT Discord know if you are able to complete this quest!",
-					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(10, 1, 10),
 				}),

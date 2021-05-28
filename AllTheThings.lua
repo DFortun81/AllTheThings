@@ -1264,7 +1264,27 @@ local function GetUnobtainableTexture(group)
 	end
 	return L["UNOBTAINABLE_ITEM_TEXTURES"][index or 1];
 end
-local function SetPortraitIcon(self, data, x)
+local function SetIndicatorIcon(self, data)
+	if data.saved then
+		if data.parent and data.parent.locks or data.repeatable then
+			self:SetTexture(app.asset("known"))
+			return true;
+		else
+			self:SetTexture(app.asset("known_green"));
+			return true;
+		end
+	else
+		local asset = app.GetIndicator(data);
+		if asset then
+			self:SetTexture(app.asset(asset));
+			return true;
+		elseif data.u then
+			self:SetTexture(GetUnobtainableTexture(data));
+			return true;
+		end
+	end
+end
+local function SetPortraitIcon(self, data)
 	self.lastData = data;
 	local displayID = GetDisplayID(data);
 	if displayID then
@@ -3444,19 +3464,22 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			if costResults and #costResults > 0 then
 				if not root.g then root.g = {} end
 				local usedToBuy = app.CreateNPC(-2);
-				usedToBuy.text = "Currency For";
+				usedToBuy.text = L["CURRENCY_FOR"];
 				if not usedToBuy.g then usedToBuy.g = {}; end
 				for i,o in ipairs(costResults) do
-					MergeObject(usedToBuy.g, CreateObject(o));
+					-- Currencies need to meet the group requirements as well since the character itself needs to meet those requirements to buy it
+					if app.RecursiveGroupRequirementsFilter(o) then
+						MergeObject(usedToBuy.g, CreateObject(o));
+					end
 				end
 				MergeObject(root.g, usedToBuy);
 			end
 		elseif paramA == "itemID" or (paramA == "s" and group.itemID) then
-			local costResults = app.SearchForField("itemIDAsCost", group.itemID or paramB);
+			local costResults = app.SearchForField("itemIDAsCost", group.modItemID or group.itemID or paramB);
 			if costResults and #costResults > 0 then
 				if not root.g then root.g = {} end
 				local usedToBuy = app.CreateNPC(-2);
-				usedToBuy.text = "Currency For";
+				usedToBuy.text = L["CURRENCY_FOR"];
 				if not usedToBuy.g then usedToBuy.g = {}; end
 				for i,o in ipairs(costResults) do
 					MergeObject(usedToBuy.g, CreateObject(o));
@@ -3645,7 +3668,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		-- 	end
 		-- end
 
-		group.info = info;
+		group.tooltipInfo = info;
 		for i,item in ipairs(info) do
 			if item.color then item.a, item.r, item.g, item.b = HexToARGB(item.color); end
 		end
@@ -3655,7 +3678,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	group.working = working;
 	cache[2] = (working and 0.01) or 100000000;
 	-- if working then print("still working...")
-	-- else print("Cached Search",search,paramA,paramB,#group.info); end
+	-- else print("Cached Search",search,paramA,paramB,#group.tooltipInfo); end
 	cache[3] = group;
 
 	-- Check if finally leaving the top-level search
@@ -4113,7 +4136,6 @@ fieldConverters = {
 				if v[1] == "n" then
 					rawget(fieldConverters, "creatureID")(group, v[2]);
 				elseif v[1] == "i" then
-					rawget(fieldConverters, "itemID")(group, v[2], true);
 					CacheField(group, "itemIDAsCost", v[2]);
 				elseif v[1] == "c" then
 					CacheField(group, "currencyIDAsCost", v[2]);
@@ -4840,7 +4862,7 @@ local function RefreshCollections()
 	StartCoroutine("RefreshingCollections", function()
 		while InCombatLockdown() do coroutine.yield(); end
 		app.print("Refreshing collection...");
-		app.events.QUEST_LOG_UPDATE();
+		app.RefreshQuestInfo();
 
 		-- Harvest Illusion Collections
 		local collectedIllusions = ATTAccountWideData.Illusions;
@@ -5088,9 +5110,9 @@ local function AttachTooltipRawSearchResults(self, group)
 			self:AddDoubleLine("Progress", group.collectionText);
 		end
 		-- If there was info text generated for this search result, then display that first.
-		if group.info then
+		if group.tooltipInfo then
 			local left, right;
-			for i,entry in ipairs(group.info) do
+			for i,entry in ipairs(group.tooltipInfo) do
 				left = entry.left;
 				right = entry.right;
 				if right then
@@ -6133,6 +6155,8 @@ end)();
 
 -- Currency Lib
 (function()
+local C_CurrencyInfo_GetCurrencyInfo = C_CurrencyInfo.GetCurrencyInfo;
+local C_CurrencyInfo_GetCurrencyLink = C_CurrencyInfo.GetCurrencyLink;
 local fields = {
 	["key"] = function(t)
 		return "currencyID";
@@ -6145,10 +6169,12 @@ local fields = {
 		return info and info.iconFileID;
 	end,
 	["info"] = function(t)
-		return C_CurrencyInfo.GetCurrencyInfo(t.currencyID);
+		rawset(t, "info", C_CurrencyInfo_GetCurrencyInfo(t.currencyID));
+		return rawget(t, "info");
 	end,
 	["link"] = function(t)
-		return C_CurrencyInfo.GetCurrencyLink(t.currencyID, 1);
+		rawset(t, "link", C_CurrencyInfo_GetCurrencyLink(t.currencyID, 1));
+		return rawget(t, "link");
 	end,
 	["name"] = function(t)
 		local info = t.info;
@@ -12071,8 +12097,31 @@ function app:CreateMiniListForGroup(group)
 				oldRefresh(self, ...);
 				app.AccountWideQuests = oldQuestTracking;
 			end;
-			-- TODO: register quest log update event to refresh/soft-update the window for indicators
+			popout:SetScript("OnEvent", function(self, e, ...)
+				print("EVENT", e, ...)
+				if self:IsVisible() then
+					print("QUEST_LOG_UPDATE:questChainWindow")
+					self:Update();
+				end
+			end);
+			-- extra indent for quest chain window
+			-- popout.data.indent = 1;
 		end
+	end
+	-- showing the quest chain window, register any local event handlers
+	if showing and popout.isQuestChain then
+		-- register quest log update event to refresh/soft-update the window for indicators on quest chain windows
+		-- print("Registered Quest Window events")
+		self:RegisterEvent("QUEST_LOG_UPDATE");
+		self:RegisterEvent("QUEST_TURNED_IN");
+		self:RegisterEvent("QUEST_ACCEPTED");
+		self:RegisterEvent("QUEST_REMOVED");
+	elseif not showing then
+		-- print("Unregistered Quest Window events")
+		self:UnregisterEvent("QUEST_LOG_UPDATE");
+		self:UnregisterEvent("QUEST_TURNED_IN");
+		self:UnregisterEvent("QUEST_ACCEPTED");
+		self:UnregisterEvent("QUEST_REMOVED");
 	end
 	popout:Toggle(true);
 end
@@ -12105,7 +12154,7 @@ end
 local function AdjustRowIndent(row, indentAdjust)
 	if row.Indicator then
 		local _, _, _, x = row.Indicator:GetPoint(2);
-		row.Indicator:SetPoint("RIGHT", row, "LEFT", x - indentAdjust, 0);
+		row.Indicator:SetPoint("LEFT", row, "LEFT", x - indentAdjust, 0);
 	end
 	if row.Texture then
 		-- only ever LEFT point set
@@ -12134,7 +12183,7 @@ local function SetRowData(self, row, data)
 		-- no or bad sourceID or requested to reSource and is of a proper source-able quality
 		elseif data.reSource and (not data.q or data.q > 1) then
 			-- If it doesn't, the source ID will need to be harvested.
-			local s, dressable = GetSourceID(text) or (data.artifactID and data.s);
+			local s = GetSourceID(text) or (data.artifactID and data.s);
 			if s and s > 0 then
 				data.reSource = nil;
 				-- only save the source if it is different than what we already have
@@ -12185,9 +12234,8 @@ local function SetRowData(self, row, data)
 			data.reSource = nil;
 		-- WARNING: DEV ONLY END
 		end
-		local leftmost = row;
-		local relative = "LEFT";
-		local x = ((CalculateRowIndent(data) * 8) or 0) + 8;
+		local leftmost, relative, iconSize, rowPad = row, "LEFT", 16, 8;
+		local x = CalculateRowIndent(data) * rowPad + rowPad;
 		row.indent = x;
 		local back = CalculateRowBack(data);
 		row.ref = data;
@@ -12195,29 +12243,10 @@ local function SetRowData(self, row, data)
 			row.Background:SetAlpha(back or 0.2);
 			row.Background:Show();
 		end
-		if data.u then
-			local texture = GetUnobtainableTexture(data);
-			if texture then
-				row.Indicator:SetTexture(texture);
-				row.Indicator:SetPoint("RIGHT", leftmost, relative, x, 0);
-				row.Indicator:Show();
-			end
-		end
-		if data.saved then
-			if data.parent and data.parent.locks or data.repeatable then
-				row.Indicator:SetTexture(app.asset("known"));
-			else
-				row.Indicator:SetTexture(app.asset("known_green"));
-			end
-			row.Indicator:SetPoint("RIGHT", leftmost, relative, x, 0);
+		if SetIndicatorIcon(row.Indicator, data) then
+			row.Indicator:SetPoint("LEFT", leftmost, relative, x - iconSize, 0);
 			row.Indicator:Show();
-		else
-			local indicator = app.GetIndicator(data);
-			if indicator then
-				row.Indicator:SetTexture(app.asset(indicator));
-				row.Indicator:SetPoint("RIGHT", leftmost, relative, x, 0);
-				row.Indicator:Show();
-			end
+			row.indent = row.indent - iconSize;
 		end
 		if SetPortraitIcon(row.Texture, data) then
 			row.Texture.Background:SetPoint("TOPLEFT", row.Texture);
@@ -12226,7 +12255,7 @@ local function SetRowData(self, row, data)
 			row.Texture:Show();
 			leftmost = row.Texture;
 			relative = "RIGHT";
-			x = 4;
+			x = rowPad / 2;
 		end
 		local summary = GetProgressTextForRow(data);
 		local iconAdjust;
@@ -12290,7 +12319,7 @@ local function Refresh(self)
 	local totalRowCount = #rowData;
 	if totalRowCount > 0 then
 		-- Fill the remaining rows up to the (visible) row count.
-		local container, rowCount, totalHeight, minIndent = self.Container, 0, 0;
+		local container, rowCount, totalHeight, windowPad, minIndent = self.Container, 0, 0, 8;
 		local current = math.max(1, math.min(self.ScrollBar.CurrentValue, totalRowCount));
 
 		-- Ensure that the first row doesn't move out of position.
@@ -12318,16 +12347,30 @@ local function Refresh(self)
 		end
 
 		-- Readjust the indent of visible rows
-		if not minIndent then
-			minIndent = 0;
-		elseif minIndent > 15 then
-			minIndent = minIndent - 16;
+		-- if there's actually an indent to adjust on top row (due to possible indicator)
+		row = rawget(container.rows, 1);
+		if row.indent ~= windowPad then
+			AdjustRowIndent(row, row.indent - windowPad);
+			-- increase the window pad extra for sub-rows so they will indent slightly more than the header row with indicator
+			windowPad = windowPad + 8;
+		else
+			windowPad = windowPad + 4;
 		end
-		-- if there's actually an indent to adjust...
-		if minIndent > 0 then
+		-- local headerAdjust = 0;
+		-- if startIndent ~= 8 then
+		-- 	-- header only adjust
+		-- 	headerAdjust = startIndent - 8;
+		-- 	print("header adjust",headerAdjust)
+		-- 	row = rawget(container.rows, 1);
+		-- 	AdjustRowIndent(row, headerAdjust);
+		-- end
+		-- adjust remaining rows to align on the left
+		if minIndent and minIndent ~= windowPad then
+			-- print("minIndent",minIndent,windowPad)
+			local adjust = minIndent - windowPad;
 			for i=2,rowCount do
 				row = rawget(container.rows, i);
-				AdjustRowIndent(row, minIndent);
+				AdjustRowIndent(row, adjust);
 			end
 		end
 
@@ -14578,9 +14621,10 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 			-- print("Rebuild",self.mapID);
 			-- check if this is the same 'map' for data purposes
 			if self:IsSameMapData() then
-				self:Update();
+				self.data.mapID = self.mapID;
 				return;
 			end
+
 			local results = SearchForField("mapID", self.mapID);
 			if results then
 				-- Simplify the returned groups
@@ -14912,7 +14956,6 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 				});
 				BuildGroups(self.data, self.data.g);
 			end
-			Callback(self.Update, self);
 		end
 		local function OpenMiniList(id, show)
 			-- print("OpenMiniList",id,show);
@@ -17172,7 +17215,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 end);
 
 -- WARNING: DEV ONLY START
-
+--[[
 -- Uncomment this section if you need to enable Debugger:
 -- CLEU binding only happens when debugger is enabled because of how expensive it can get in large mob farms
 app:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED");
@@ -18705,8 +18748,10 @@ app.events.VARIABLES_LOADED = function()
 			{ 10378, { 39355 } }, -- Equipment Blueprint: Trained Shark Tank
 			{ 10379, { 39360 } }, -- Equipment Blueprint: True Iron Rudder
 			-- stupid pet tamer breadcrumbs that are once per account (there may be more breadcrumbs for the questline that need to be added here)
-			{ 6603, { 32008 } },	-- Taming Eastern Kingdoms / Audrey Burnhep (A)
-			{ 6602, { 32009 } },	-- Taming Kalimdor / Varzok (H)
+			-- these aren't really 'once per account' in that only a single character gets credit.
+			-- all 5 quests of the faction are marked completed account-wide, and the other 5 can never be completed on that account
+			-- { 6603, { 32008 } },	-- Taming Eastern Kingdoms / Audrey Burnhep (A)
+			-- { 6602, { 32009 } },	-- Taming Kalimdor / Varzok (H)
 		}) do
 			-- If you completed the achievement, then mark the associated quests.
 			collected = select(4, GetAchievementInfo(achievementQuests[1]));
@@ -18748,19 +18793,34 @@ app.events.VARIABLES_LOADED = function()
 		end
 		-- Cache some collection states for misc. once-per-account quests
 		for i,questID in ipairs({
+			52478,	-- Hillcrest Pasture (Mission Completion)
 			52479,	-- Hillcrest Pasture (BFA Horde Outpost Unlock)
+			52313,	-- Mudfisher Cove (Mission Completion)
 			52314,	-- Mudfisher Cove (BFA Horde Outpost Unlock)
+			52221,	-- Stonefist Watch (Mission Completion)
 			52222,	-- Stonefist Watch (BFA Horde Outpost Unlock)
+			52776,	-- Stonetusk Watch (Mission Completion)
 			52777,	-- Stonetusk Watch (BFA Horde Outpost Unlock)
+			52275,	-- Swiftwind Post (Mission Completion)
 			52276,	-- Swiftwind Post (BFA Horde Outpost Unlock)
+			52319,	-- Windfall Cavern (Mission Completion)
 			52320,	-- Windfall Cavern (BFA Horde Outpost Unlock)
+			52005,	-- The Wolf's Den (Mission Completion)
 			52127,	-- The Wolf's Den (BFA Horde Outpost Unlock)
+			53151,	-- Wolves For The Den (Mission Completion)
+			53152,	-- Wolves For The Den (BFA Horde Outpost Upgrade)
 
+			53006,	-- Grimwatt's Crash (Mission Completion)
 			53007,	-- Grimwatt's Crash (BFA Alliance Outpost Unlock)
+			52801, -- Veiled Grotto (Mission Completion)
 			52802,	-- Veiled Grotto (BFA Alliance Outpost Unlock)
+			52962, -- Mistvine Ledge (Mission Completion)
 			52963,	-- Mistvine Ledge (BFA Alliance Outpost Unlock)
+			52851, -- Mugamba Overlook (Mission Completion)
 			52852,	-- Mugamba Overlook (BFA Alliance Outpost Unlock)
+			52886, -- Verdant Hollow (Mission Completion)
 			52888,	-- Verdant Hollow (BFA Alliance Outpost Unlock)
+			53043, -- Vulture's Nest (Mission Completion)
 			53044,	-- Vulture's Nest (BFA Alliance Outpost Unlock)
 
 			-- etc.
@@ -18779,6 +18839,15 @@ app.events.VARIABLES_LOADED = function()
 				-- Mark that this Quest is a OneTimeQuest which hasn't been determined as completed by any Character yet
 				accountWideData.OneTimeQuests[questID] = false;
 			end
+		end
+
+		-- if we ever erroneously add an account-wide quest and find out it isn't (or Blizzard actually fixes it to give acocunt-wide credit)
+		-- put it here so it reverts back to being handled as a normal quest
+		for i,questID in ipairs({
+			32008,	-- Audrey Burnhep (A)
+			32009,	-- Varzok (H)
+		}) do
+			accountWideData.OneTimeQuests[questID] = nil;
 		end
 
 		app:RegisterEvent("QUEST_LOG_UPDATE");
