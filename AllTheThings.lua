@@ -4133,7 +4133,6 @@ fieldConverters = {
 				if v[1] == "n" then
 					rawget(fieldConverters, "creatureID")(group, v[2]);
 				elseif v[1] == "i" then
-					rawget(fieldConverters, "itemID")(group, v[2], true);
 					CacheField(group, "itemIDAsCost", v[2]);
 				elseif v[1] == "c" then
 					CacheField(group, "currencyIDAsCost", v[2]);
