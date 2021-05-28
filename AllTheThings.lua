@@ -6153,6 +6153,8 @@ end)();
 
 -- Currency Lib
 (function()
+local C_CurrencyInfo_GetCurrencyInfo = C_CurrencyInfo.GetCurrencyInfo;
+local C_CurrencyInfo_GetCurrencyLink = C_CurrencyInfo.GetCurrencyLink;
 local fields = {
 	["key"] = function(t)
 		return "currencyID";
@@ -6165,10 +6167,12 @@ local fields = {
 		return info and info.iconFileID;
 	end,
 	["info"] = function(t)
-		return C_CurrencyInfo.GetCurrencyInfo(t.currencyID);
+		rawset(t, "info", C_CurrencyInfo_GetCurrencyInfo(t.currencyID));
+		return rawget(t, "info");
 	end,
 	["link"] = function(t)
-		return C_CurrencyInfo.GetCurrencyLink(t.currencyID, 1);
+		rawset(t, "link", C_CurrencyInfo_GetCurrencyLink(t.currencyID, 1));
+		return rawget(t, "link");
 	end,
 	["name"] = function(t)
 		local info = t.info;
@@ -12105,13 +12109,13 @@ function app:CreateMiniListForGroup(group)
 	-- showing the quest chain window, register any local event handlers
 	if showing and popout.isQuestChain then
 		-- register quest log update event to refresh/soft-update the window for indicators on quest chain windows
-		print("Registered Quest Window events")
+		-- print("Registered Quest Window events")
 		self:RegisterEvent("QUEST_LOG_UPDATE");
 		self:RegisterEvent("QUEST_TURNED_IN");
 		self:RegisterEvent("QUEST_ACCEPTED");
 		self:RegisterEvent("QUEST_REMOVED");
 	elseif not showing then
-		print("Unregistered Quest Window events")
+		-- print("Unregistered Quest Window events")
 		self:UnregisterEvent("QUEST_LOG_UPDATE");
 		self:UnregisterEvent("QUEST_TURNED_IN");
 		self:UnregisterEvent("QUEST_ACCEPTED");
