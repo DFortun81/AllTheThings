@@ -33,6 +33,9 @@ _.PVP =
 							i(70560),	-- Vicious Gladiator's Dreadplate Helm
 							i(70561),	-- Vicious Gladiator's Dreadplate Legguards
 							i(70562),	-- Vicious Gladiator's Dreadplate Shoulders
+							i(70514),	-- Vicious Gladiator's Armplates of Proficiency
+							i(70573),	-- Vicious Gladiator's Girdle of Cruelty
+							i(70668),	-- Vicious Gladiator's Warboots of Cruelty
 						},
 					}),
 					i(64735, {	-- Bloodthirsty Gladiator's Dreadplate Chestpiece
@@ -431,6 +434,12 @@ _.PVP =
 							i(70587),	-- Vicious Gladiator's Leather Legguards
 							i(70588),	-- Vicious Gladiator's Leather Spaulders
 							i(70589),	-- Vicious Gladiator's Leather Tunic
+							i(70515),	-- Vicious Gladiator's Armwraps of Accuracy
+							i(70516),	-- Vicious Gladiator's Armwraps of Alacrity
+							i(70663),	-- Vicious Gladiator's Waistband of Accuracy
+							i(70664),	-- Vicious Gladiator's Waistband of Cruelty
+							i(70527),	-- Vicious Gladiator's Boots of Alacrity
+							i(70528),	-- Vicious Gladiator's Boots of Cruelty
 						},
 					}),
 					i(64769, {	-- Bloodthirsty Gladiator's Leather Gloves
@@ -622,6 +631,9 @@ _.PVP =
 							i(70625),	-- Vicious Gladiator's Plate Helm
 							i(70626),	-- Vicious Gladiator's Plate Legguards
 							i(70627),	-- Vicious Gladiator's Plate Shoulders
+							i(70513),	-- Vicious Gladiator's Armplates of Alacrity
+							i(70574),	-- Vicious Gladiator's Girdle of Prowess
+							i(70667),	-- Vicious Gladiator's Warboots of Alacrity
 						},
 					}),
 					i(64811, {	-- Bloodthirsty Gladiator's Plate Chestpiece
