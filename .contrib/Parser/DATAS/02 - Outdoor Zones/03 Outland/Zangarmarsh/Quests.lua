@@ -37,7 +37,7 @@ _.Zones =
 					["groups"] = {
 						objective(1, {	-- 0/1 Ikeyen's Belongings
 							["provider"] = { "i", 24411 },	-- Ikeyen's Belongings
-							["coord"] = { 70.6, 97.9, ZANGARMARSH }
+							["coord"] = { 70.6, 97.9, ZANGARMARSH },
 						}),
 						i(25516),	-- Ikeyen's Boots
 						i(25514),	-- Ikeyen's Pauldrons
@@ -51,6 +51,12 @@ _.Zones =
 					["coord"] = { 84.4, 54.3, ZANGARMARSH },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(60, 10, 60),
+					["groups"] = {
+						objective(1, {	-- Sporewing slain
+							["coord"] = { 76.8, 46.0, ZANGARMARSH },
+							["cr"] = 18280,	-- Sporewing
+						}),
+					},
 				}),
 				q(9792,  {	-- A Message to Telaar
 					["qg"] = 18008,	-- Ikuti
@@ -194,7 +200,9 @@ _.Zones =
 						i(25518),	-- Explorer's Leggings
 						i(25517),	-- Preserver's Medallion
 						i(25519),	-- Warden's Hammer
-						i(157548),	-- Warden's Longbow
+						i(157548, {	-- Warden's Longbow
+							["timeline"] = { "added 7.3.5.25727" },
+						}),
 					},
 				}),
 				q(9708,  {	-- Familiar Fungi
@@ -325,7 +333,9 @@ _.Zones =
 					["lvl"] = lvlsquish(62, 10, 62),
 					["groups"] = {
 						i(27753),	-- Ensorcelled Marshfang Blade
-						i(157547),	-- Keen Marshfang Shanker
+						i(157547, {	-- Keen Marshfang Shanker
+							["timeline"] = { "added 7.3.5.25727" },
+						}),
 						i(27754),	-- Keen Marshfang Slicer
 						i(27756),	-- Marshfang Blade Axe
 					},
@@ -450,6 +460,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(60, 10, 60),
 					["groups"] = {
+						objective(1, {	-- 0/1 Blacksting's Stinger
+							["provider"] = { "i", 25448 },	-- Blacksting's Stinger
+							["coord"] = { 49.8, 60.1, ZANGARMARSH },
+							["cr"] = 18283,	-- Blacksting
+						}),
 						i(31788),	-- Blacksting Gloves
 						i(31786),	-- Blacksting Shoulders
 						i(31789),	-- Marshfang Boots
@@ -685,7 +700,9 @@ _.Zones =
 					["lvl"] = lvlsquish(62, 10, 62),
 					["groups"] = {
 						i(27753),	-- Ensorcelled Marshfang Blade
-						i(157547),	-- Keen Marshfang Shanker
+						i(157547, {	-- Keen Marshfang Shanker
+							["timeline"] = { "added 7.3.5.25727" },
+						}),
 						i(27754),	-- Keen Marshfang Slicer
 						i(27756),	-- Marshfang Blade Axe
 					},
@@ -821,7 +838,6 @@ _.Zones =
 	})),
 };
 
-
 -- #if AFTER TBC
 -- These quests trigger after specific events occur in the zone.
 _.HiddenQuestTriggers = {
@@ -831,6 +847,7 @@ _.HiddenQuestTriggers = {
 -- These quests never made it in.
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
+		q(9734),	-- Return to the Marsh (NYI)
 		q(9733),	-- Warning the Cenarion Circle (NYI)
 	}),
 });

@@ -2535,7 +2535,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(10090),	-- [Not Used] BETA The Legion's Plans
 		q(9510),	-- [Not Used] BETA Bristlehide Clefthoof Hides
 		q(9380),	-- [Not Used] BETA Hounded for More
-		q(9734),	-- Return to the Marsh (NYI)
 	}),
 });
 -- #endif
