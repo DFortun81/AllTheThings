@@ -3125,14 +3125,9 @@ _.Zones =
 						i(58124),	-- Wrap of the Valley Glades
 					},
 				}),
-				n(69978,  {	-- Sergeant Thunderhorn <Cataclysmic Gladiator>
-					["coord"] = { 38.8, 70.0, 85 },
+				n(26396,  {	-- Sergeant Thunderhorn Warlord Vendor Edition
 					["races"] = HORDE_ONLY,
-					["sym"] = {
-						{"sub", "pvp_gear_base", -9979, -674, -661 },	-- Cataclysmic Gladiator: Season 11 Gladiator Gear
-						{"pop"},	-- Discard the Set header and acquire the children.
-						{"exclude", "headerID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
-					},
+					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(28926)),	-- High Warlord's Quickblade
 						un(REMOVED_FROM_GAME, i(28937)),	-- High Warlord's Slicer
@@ -3154,6 +3149,15 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(28933)),	-- High Warlord's Crossbow
 						un(REMOVED_FROM_GAME, i(28935)),	-- High Warlord's War Staff
 						un(REMOVED_FROM_GAME, i(28938)),	-- High Warlord's Battletome
+					},
+				}),
+				n(69978,  {	-- Sergeant Thunderhorn <Cataclysmic Gladiator>
+					["coord"] = { 38.8, 70.0, 85 },
+					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"sub", "pvp_gear_base", -9979, -674, -661 },	-- Cataclysmic Gladiator: Season 11 Gladiator Gear
+						{"pop"},	-- Discard the Set header and acquire the children.
+						{"exclude", "headerID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
 					},
 				}),
 				n(3333,   {	-- Shankys <Fishing Supplies>

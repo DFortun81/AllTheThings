@@ -3124,7 +3124,6 @@ _.PVP =
 				-- Original Sources are: 
 				-- n40606 Knight-Lieutenant T'Maire Sydes in Stormwind (Alliance)
 				-- n54659 Blood Guard Zar'shi in Orgrimmar (Horde)
-				-- n34088 Blazzek the Biter <Exceptional Arena Weaponry> in Gadgetzan
 				n(-319, {	-- Weapons
 					un(REMOVED_FROM_GAME, i(70207)),	-- Ruthless Gladiator's Barrier
 					un(REMOVED_FROM_GAME, i(70195)),	-- Ruthless Gladiator's Baton of Light
@@ -3343,99 +3342,101 @@ _.PVP =
 							{"sub", "pvp_weapons_ensemble", -9979, -674, -661 },
 							{"exclude", "itemID", 146639 },	-- Exclude itself to stop duplicating
 						},
-					}),
-					i(73468, {	-- Cataclysmic Gladiator's Barrier
-						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-					}),
-					i(73450, {	-- Cataclysmic Gladiator's Baton of Light
-						["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-					}),
-					i(73466, {	-- Cataclysmic Gladiator's Battle Staff
-						["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-					}),
-					i(73448, {	-- Cataclysmic Gladiator's Bonecracker
-						["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-					}),
-					i(73476, {	-- Cataclysmic Gladiator's Bonegrinder
-						["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-					}),
-					i(73474, {	-- Cataclysmic Gladiator's Cleaver
-						["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-					}),
-					i(73477, {	-- Cataclysmic Gladiator's Decapitator
-						["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-					}),
-					i(73469, {	-- Cataclysmic Gladiator's Endgame
-						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-					}),
-					i(73457, {	-- Cataclysmic Gladiator's Energy Staff
-						["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-					}),
-					i(73453, {	-- Cataclysmic Gladiator's Fleshslicer
-						["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-					}),
-					i(73459, {	-- Cataclysmic Gladiator's Gavel
-						["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-					}),
-					i(73475, {	-- Cataclysmic Gladiator's Greatsword
-						["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-					}),
-					i(73449, {	-- Cataclysmic Gladiator's Hacker
-						["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-					}),
-					i(73463, {	-- Cataclysmic Gladiator's Heavy Crossbow
-						["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-					}),
-					i(73470, {	-- Cataclysmic Gladiator's Longbow
-						["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-					}),
-					i(73456, {	-- Cataclysmic Gladiator's Pike
-						["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-					}),
-					i(73473, {	-- Cataclysmic Gladiator's Pummeler
-						["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-					}),
-					i(73472, {	-- Cataclysmic Gladiator's Quickblade
-						["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-					}),
-					i(73458, {	-- Cataclysmic Gladiator's Redoubt
-						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-					}),
-					i(73465, {	-- Cataclysmic Gladiator's Reprieve
-						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-					}),
-					i(73460, {	-- Cataclysmic Gladiator's Rifle
-						["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-					}),
-					i(73452, {	-- Cataclysmic Gladiator's Right Render
-						["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-					}),
-					i(73454, {	-- Cataclysmic Gladiator's Ripper
-						["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-					}),
-					i(73455, {	-- Cataclysmic Gladiator's Shanker
-						["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-					}),
-					i(73446, {	-- Cataclysmic Gladiator's Shield Wall
-						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-					}),
-					i(73461, {	-- Cataclysmic Gladiator's Shiv
-						["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-					}),
-					i(73451, {	-- Cataclysmic Gladiator's Slasher
-						["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-					}),
-					i(73447, {	-- Cataclysmic Gladiator's Slicer
-						["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-					}),
-					i(73467, {	-- Cataclysmic Gladiator's Spellblade
-						["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-					}),
-					i(73462, {	-- Cataclysmic Gladiator's Staff
-						["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
-					}),
-					i(73464, {	-- Cataclysmic Gladiator's Touch of Defeat
-						["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						["g"] = {
+							i(73468, {	-- Cataclysmic Gladiator's Barrier
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(73450, {	-- Cataclysmic Gladiator's Baton of Light
+								["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+							}),
+							i(73466, {	-- Cataclysmic Gladiator's Battle Staff
+								["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+							}),
+							i(73448, {	-- Cataclysmic Gladiator's Bonecracker
+								["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+							}),
+							i(73476, {	-- Cataclysmic Gladiator's Bonegrinder
+								["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+							}),
+							i(73474, {	-- Cataclysmic Gladiator's Cleaver
+								["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+							}),
+							i(73477, {	-- Cataclysmic Gladiator's Decapitator
+								["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+							}),
+							i(73469, {	-- Cataclysmic Gladiator's Endgame
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(73457, {	-- Cataclysmic Gladiator's Energy Staff
+								["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+							}),
+							i(73453, {	-- Cataclysmic Gladiator's Fleshslicer
+								["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+							}),
+							i(73459, {	-- Cataclysmic Gladiator's Gavel
+								["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+							}),
+							i(73475, {	-- Cataclysmic Gladiator's Greatsword
+								["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+							}),
+							i(73449, {	-- Cataclysmic Gladiator's Hacker
+								["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+							}),
+							i(73463, {	-- Cataclysmic Gladiator's Heavy Crossbow
+								["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+							}),
+							i(73470, {	-- Cataclysmic Gladiator's Longbow
+								["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+							}),
+							i(73456, {	-- Cataclysmic Gladiator's Pike
+								["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+							}),
+							i(73473, {	-- Cataclysmic Gladiator's Pummeler
+								["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+							}),
+							i(73472, {	-- Cataclysmic Gladiator's Quickblade
+								["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+							}),
+							i(73458, {	-- Cataclysmic Gladiator's Redoubt
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(73465, {	-- Cataclysmic Gladiator's Reprieve
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(73460, {	-- Cataclysmic Gladiator's Rifle
+								["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+							}),
+							i(73452, {	-- Cataclysmic Gladiator's Right Render
+								["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+							}),
+							i(73454, {	-- Cataclysmic Gladiator's Ripper
+								["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+							}),
+							i(73455, {	-- Cataclysmic Gladiator's Shanker
+								["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+							}),
+							i(73446, {	-- Cataclysmic Gladiator's Shield Wall
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(73461, {	-- Cataclysmic Gladiator's Shiv
+								["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+							}),
+							i(73451, {	-- Cataclysmic Gladiator's Slasher
+								["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+							}),
+							i(73447, {	-- Cataclysmic Gladiator's Slicer
+								["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+							}),
+							i(73467, {	-- Cataclysmic Gladiator's Spellblade
+								["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+							}),
+							i(73462, {	-- Cataclysmic Gladiator's Staff
+								["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+							}),
+							i(73464, {	-- Cataclysmic Gladiator's Touch of Defeat
+								["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+							}),
+						},
 					}),
 				}),
 				cl(DEATHKNIGHT, {
@@ -3448,21 +3449,23 @@ _.PVP =
 							{"select", "itemID", 73553 },	-- Cataclysmic Gladiator's Warboots of Cruelty
 							{"exclude", "itemID", 146443 },	-- Exclude itself to stop duplicating 
 						},
-					}),
-					i(73620, {	-- Cataclysmic Gladiator's Dreadplate Chestpiece
-						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-					}),
-					i(73619, {	-- Cataclysmic Gladiator's Dreadplate Gauntlets
-						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-					}),
-					i(73618, {	-- Cataclysmic Gladiator's Dreadplate Helm
-						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-					}),
-					i(73617, {	-- Cataclysmic Gladiator's Dreadplate Legguards
-						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-					}),
-					i(73616, {	-- Cataclysmic Gladiator's Dreadplate Shoulders
-						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						["g"] = {
+							i(73620, {	-- Cataclysmic Gladiator's Dreadplate Chestpiece
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(73619, {	-- Cataclysmic Gladiator's Dreadplate Gauntlets
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(73618, {	-- Cataclysmic Gladiator's Dreadplate Helm
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(73617, {	-- Cataclysmic Gladiator's Dreadplate Legguards
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(73616, {	-- Cataclysmic Gladiator's Dreadplate Shoulders
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+						},
 					}),
 				}),
 				cl(DRUID, {
@@ -3478,51 +3481,53 @@ _.PVP =
 							{"select", "itemID", 73609 },	-- Cataclysmic Gladiator's Footguards of Meditation
 							{"exclude", "itemID", 146441 },	-- Exclude itself to stop duplicating 
 						},
-					}),
-					i(73615, {	-- Cataclysmic Gladiator's Dragonhide Gloves
-						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-					}),
-					i(73614, {	-- Cataclysmic Gladiator's Dragonhide Helm
-						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-					}),
-					i(73613, {	-- Cataclysmic Gladiator's Dragonhide Legguards
-						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-					}),
-					i(73612, {	-- Cataclysmic Gladiator's Dragonhide Robes
-						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-					}),
-					i(73611, {	-- Cataclysmic Gladiator's Dragonhide Spaulders
-						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-					}),
-					i(73607, {	-- Cataclysmic Gladiator's Kodohide Gloves
-						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-					}),
-					i(73606, {	-- Cataclysmic Gladiator's Kodohide Helm
-						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-					}),
-					i(73605, {	-- Cataclysmic Gladiator's Kodohide Legguards
-						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-					}),
-					i(73604, {	-- Cataclysmic Gladiator's Kodohide Robes
-						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-					}),
-					i(73603, {	-- Cataclysmic Gladiator's Kodohide Spaulders
-						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-					}),
-					i(73599, {	-- Cataclysmic Gladiator's Wyrmhide Gloves
-						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-					}),
-					i(73598, {	-- Cataclysmic Gladiator's Wyrmhide Helm
-						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-					}),
-					i(73597, {	-- Cataclysmic Gladiator's Wyrmhide Legguards
-						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-					}),
-					i(73596, {	-- Cataclysmic Gladiator's Wyrmhide Robes
-						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-					}),
-					i(73595, {	-- Cataclysmic Gladiator's Wyrmhide Spaulders
-						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						["g"] = {
+							i(73615, {	-- Cataclysmic Gladiator's Dragonhide Gloves
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(73614, {	-- Cataclysmic Gladiator's Dragonhide Helm
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(73613, {	-- Cataclysmic Gladiator's Dragonhide Legguards
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(73612, {	-- Cataclysmic Gladiator's Dragonhide Robes
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(73611, {	-- Cataclysmic Gladiator's Dragonhide Spaulders
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(73607, {	-- Cataclysmic Gladiator's Kodohide Gloves
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(73606, {	-- Cataclysmic Gladiator's Kodohide Helm
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(73605, {	-- Cataclysmic Gladiator's Kodohide Legguards
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(73604, {	-- Cataclysmic Gladiator's Kodohide Robes
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(73603, {	-- Cataclysmic Gladiator's Kodohide Spaulders
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(73599, {	-- Cataclysmic Gladiator's Wyrmhide Gloves
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(73598, {	-- Cataclysmic Gladiator's Wyrmhide Helm
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(73597, {	-- Cataclysmic Gladiator's Wyrmhide Legguards
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(73596, {	-- Cataclysmic Gladiator's Wyrmhide Robes
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(73595, {	-- Cataclysmic Gladiator's Wyrmhide Spaulders
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+						},
 					}),
 				}),
 				cl(HUNTER, {
@@ -3538,21 +3543,23 @@ _.PVP =
 							{"select", "itemID", 73588 },	-- Cataclysmic Gladiator's Sabatons of Cruelty
 							{"exclude", "itemID", 146439 },	-- Exclude itself to stop duplicating 
 						},
-					}),
-					i(73584, {	-- Cataclysmic Gladiator's Chain Armor
-						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-					}),
-					i(73583, {	-- Cataclysmic Gladiator's Chain Gauntlets
-						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-					}),
-					i(73582, {	-- Cataclysmic Gladiator's Chain Helm
-						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-					}),
-					i(73581, {	-- Cataclysmic Gladiator's Chain Leggings
-						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-					}),
-					i(73580, {	-- Cataclysmic Gladiator's Chain Spaulders
-						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						["g"] = {
+							i(73584, {	-- Cataclysmic Gladiator's Chain Armor
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(73583, {	-- Cataclysmic Gladiator's Chain Gauntlets
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(73582, {	-- Cataclysmic Gladiator's Chain Helm
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(73581, {	-- Cataclysmic Gladiator's Chain Leggings
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(73580, {	-- Cataclysmic Gladiator's Chain Spaulders
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+						},
 					}),
 				}),
 				cl(MAGE, {
@@ -3565,21 +3572,23 @@ _.PVP =
 							{"select", "itemID", 73636 },	-- Cataclysmic Gladiator's Treads of Cruelty
 							{"exclude", "itemID", 146457 },	-- Exclude itself to stop duplicating 
 						},
-					}),
-					i(73572, {	-- Cataclysmic Gladiator's Silk Amice
-						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-					}),
-					i(73575, {	-- Cataclysmic Gladiator's Silk Cowl
-						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-					}),
-					i(73576, {	-- Cataclysmic Gladiator's Silk Handguards
-						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-					}),
-					i(73573, {	-- Cataclysmic Gladiator's Silk Robe
-						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-					}),
-					i(73574, {	-- Cataclysmic Gladiator's Silk Trousers
-						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						["g"] = {
+							i(73572, {	-- Cataclysmic Gladiator's Silk Amice
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(73575, {	-- Cataclysmic Gladiator's Silk Cowl
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(73576, {	-- Cataclysmic Gladiator's Silk Handguards
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(73573, {	-- Cataclysmic Gladiator's Silk Robe
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(73574, {	-- Cataclysmic Gladiator's Silk Trousers
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+						},
 					}),
 				}),
 				cl(PALADIN, {
@@ -3595,39 +3604,41 @@ _.PVP =
 							{"select", "itemID", 73563 },	-- Cataclysmic Gladiator's Greaves of Meditation
 							{"exclude", "itemID", 146455 },	-- Exclude itself to stop duplicating 
 						},
-					}),
-					i(88170, {	-- Cataclysmic Gladiator's Ornamented Battlerobe
-						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-					}),
-					i(73560, {	-- Cataclysmic Gladiator's Ornamented Chestguard
-						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-					}),
-					i(73559, {	-- Cataclysmic Gladiator's Ornamented Gloves
-						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-					}),
-					i(73558, {	-- Cataclysmic Gladiator's Ornamented Headcover
-						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-					}),
-					i(73557, {	-- Cataclysmic Gladiator's Ornamented Legplates
-						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-					}),
-					i(73556, {	-- Cataclysmic Gladiator's Ornamented Spaulders
-						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-					}),
-					i(73571, {	-- Cataclysmic Gladiator's Scaled Chestpiece
-						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-					}),
-					i(73570, {	-- Cataclysmic Gladiator's Scaled Gauntlets
-						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-					}),
-					i(73569, {	-- Cataclysmic Gladiator's Scaled Helm
-						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-					}),
-					i(73568, {	-- Cataclysmic Gladiator's Scaled Legguards
-						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-					}),
-					i(73567, {	-- Cataclysmic Gladiator's Scaled Shoulders
-						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						["g"] = {
+							i(88170, {	-- Cataclysmic Gladiator's Ornamented Battlerobe
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(73560, {	-- Cataclysmic Gladiator's Ornamented Chestguard
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(73559, {	-- Cataclysmic Gladiator's Ornamented Gloves
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(73558, {	-- Cataclysmic Gladiator's Ornamented Headcover
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(73557, {	-- Cataclysmic Gladiator's Ornamented Legplates
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(73556, {	-- Cataclysmic Gladiator's Ornamented Spaulders
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(73571, {	-- Cataclysmic Gladiator's Scaled Chestpiece
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(73570, {	-- Cataclysmic Gladiator's Scaled Gauntlets
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(73569, {	-- Cataclysmic Gladiator's Scaled Helm
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(73568, {	-- Cataclysmic Gladiator's Scaled Legguards
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(73567, {	-- Cataclysmic Gladiator's Scaled Shoulders
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+						},
 					}),
 				}),
 				cl(PRIEST, {
@@ -3640,36 +3651,38 @@ _.PVP =
 							{"select", "itemID", 73634 },	-- Cataclysmic Gladiator's Treads of Meditation
 							{"exclude", "itemID", 146453 },	-- Exclude itself to stop duplicating 
 						},
-					}),
-					i(73549, {	-- Cataclysmic Gladiator's Mooncloth Gloves
-						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-					}),
-					i(73548, {	-- Cataclysmic Gladiator's Mooncloth Helm
-						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-					}),
-					i(73547, {	-- Cataclysmic Gladiator's Mooncloth Leggings
-						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-					}),
-					i(73545, {	-- Cataclysmic Gladiator's Mooncloth Mantle
-						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-					}),
-					i(73546, {	-- Cataclysmic Gladiator's Mooncloth Robe
-						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-					}),
-					i(73544, {	-- Cataclysmic Gladiator's Satin Gloves
-						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-					}),
-					i(73543, {	-- Cataclysmic Gladiator's Satin Hood
-						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-					}),
-					i(73542, {	-- Cataclysmic Gladiator's Satin Leggings
-						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-					}),
-					i(73540, {	-- Cataclysmic Gladiator's Satin Mantle
-						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-					}),
-					i(73541, {	-- Cataclysmic Gladiator's Satin Robe
-						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						["g"] = {
+							i(73549, {	-- Cataclysmic Gladiator's Mooncloth Gloves
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(73548, {	-- Cataclysmic Gladiator's Mooncloth Helm
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(73547, {	-- Cataclysmic Gladiator's Mooncloth Leggings
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(73545, {	-- Cataclysmic Gladiator's Mooncloth Mantle
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(73546, {	-- Cataclysmic Gladiator's Mooncloth Robe
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(73544, {	-- Cataclysmic Gladiator's Satin Gloves
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(73543, {	-- Cataclysmic Gladiator's Satin Hood
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(73542, {	-- Cataclysmic Gladiator's Satin Leggings
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(73540, {	-- Cataclysmic Gladiator's Satin Mantle
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(73541, {	-- Cataclysmic Gladiator's Satin Robe
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+						},
 					}),
 				}),
 				cl(ROGUE, {
@@ -3685,21 +3698,23 @@ _.PVP =
 							{"select", "itemID", 73531 },	-- Cataclysmic Gladiator's Boots of Cruelty
 							{"exclude", "itemID", 146447 },	-- Exclude itself to stop duplicating 
 						},
-					}),
-					i(73526, {	-- Cataclysmic Gladiator's Leather Gloves
-						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-					}),
-					i(73525, {	-- Cataclysmic Gladiator's Leather Helm
-						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-					}),
-					i(73524, {	-- Cataclysmic Gladiator's Leather Legguards
-						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-					}),
-					i(73523, {	-- Cataclysmic Gladiator's Leather Spaulders
-						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-					}),
-					i(73527, {	-- Cataclysmic Gladiator's Leather Tunic
-						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						["g"] = {
+							i(73526, {	-- Cataclysmic Gladiator's Leather Gloves
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(73525, {	-- Cataclysmic Gladiator's Leather Helm
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(73524, {	-- Cataclysmic Gladiator's Leather Legguards
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(73523, {	-- Cataclysmic Gladiator's Leather Spaulders
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(73527, {	-- Cataclysmic Gladiator's Leather Tunic
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+						},
 					}),
 				}),
 				cl(SHAMAN, {
@@ -3715,51 +3730,53 @@ _.PVP =
 							{"select", "itemID", 73520 },	-- Cataclysmic Gladiator's Sabatons of Meditation
 							{"exclude", "itemID", 146451 },	-- Exclude itself to stop duplicating 
 						},
-					}),
-					i(73512, {	-- Cataclysmic Gladiator's Linked Armor
-						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-					}),
-					i(73511, {	-- Cataclysmic Gladiator's Linked Gauntlets
-						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-					}),
-					i(73510, {	-- Cataclysmic Gladiator's Linked Helm
-						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-					}),
-					i(73509, {	-- Cataclysmic Gladiator's Linked Leggings
-						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-					}),
-					i(73508, {	-- Cataclysmic Gladiator's Linked Spaulders
-						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-					}),
-					i(73506, {	-- Cataclysmic Gladiator's Mail Armor
-						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-					}),
-					i(73505, {	-- Cataclysmic Gladiator's Mail Gauntlets
-						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-					}),
-					i(73504, {	-- Cataclysmic Gladiator's Mail Helm
-						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-					}),
-					i(73503, {	-- Cataclysmic Gladiator's Mail Leggings
-						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-					}),
-					i(73502, {	-- Cataclysmic Gladiator's Mail Spaulders
-						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-					}),
-					i(73517, {	-- Cataclysmic Gladiator's Ringmail Armor
-						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-					}),
-					i(73516, {	-- Cataclysmic Gladiator's Ringmail Gauntlets
-						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-					}),
-					i(73515, {	-- Cataclysmic Gladiator's Ringmail Helm
-						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-					}),
-					i(73514, {	-- Cataclysmic Gladiator's Ringmail Leggings
-						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-					}),
-					i(73513, {	-- Cataclysmic Gladiator's Ringmail Spaulders
-						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						["g"] = {
+							i(73512, {	-- Cataclysmic Gladiator's Linked Armor
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(73511, {	-- Cataclysmic Gladiator's Linked Gauntlets
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(73510, {	-- Cataclysmic Gladiator's Linked Helm
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(73509, {	-- Cataclysmic Gladiator's Linked Leggings
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(73508, {	-- Cataclysmic Gladiator's Linked Spaulders
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(73506, {	-- Cataclysmic Gladiator's Mail Armor
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(73505, {	-- Cataclysmic Gladiator's Mail Gauntlets
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(73504, {	-- Cataclysmic Gladiator's Mail Helm
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(73503, {	-- Cataclysmic Gladiator's Mail Leggings
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(73502, {	-- Cataclysmic Gladiator's Mail Spaulders
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(73517, {	-- Cataclysmic Gladiator's Ringmail Armor
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(73516, {	-- Cataclysmic Gladiator's Ringmail Gauntlets
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(73515, {	-- Cataclysmic Gladiator's Ringmail Helm
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(73514, {	-- Cataclysmic Gladiator's Ringmail Leggings
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(73513, {	-- Cataclysmic Gladiator's Ringmail Spaulders
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+						},
 					}),
 				}),
 				cl(WARLOCK, {
@@ -3772,21 +3789,23 @@ _.PVP =
 							{"select", "itemID", 73635 },	-- Cataclysmic Gladiator's Treads of Alacrity
 							{"exclude", "itemID", 146445 },	-- Exclude itself to stop duplicating 
 						},
-					}),
-					i(73483, {	-- Cataclysmic Gladiator's Felweave Amice
-						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-					}),
-					i(73486, {	-- Cataclysmic Gladiator's Felweave Cowl
-						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-					}),
-					i(73487, {	-- Cataclysmic Gladiator's Felweave Handguards
-						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-					}),
-					i(73484, {	-- Cataclysmic Gladiator's Felweave Raiment
-						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-					}),
-					i(73485, {	-- Cataclysmic Gladiator's Felweave Trousers
-						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						["g"] = {
+							i(73483, {	-- Cataclysmic Gladiator's Felweave Amice
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(73486, {	-- Cataclysmic Gladiator's Felweave Cowl
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(73487, {	-- Cataclysmic Gladiator's Felweave Handguards
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(73484, {	-- Cataclysmic Gladiator's Felweave Raiment
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(73485, {	-- Cataclysmic Gladiator's Felweave Trousers
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+						},
 					}),
 				}),
 				cl(WARRIOR, {
@@ -3799,21 +3818,23 @@ _.PVP =
 							{"select", "itemID", 73552 },	-- Cataclysmic Gladiator's Warboots of Alacrity
 							{"exclude", "itemID", 146449 },	-- Exclude itself to stop duplicating 
 						},
-					}),
-					i(73482, {	-- Cataclysmic Gladiator's Plate Chestpiece
-						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-					}),
-					i(73481, {	-- Cataclysmic Gladiator's Plate Gauntlets
-						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-					}),
-					i(73480, {	-- Cataclysmic Gladiator's Plate Helm
-						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-					}),
-					i(73479, {	-- Cataclysmic Gladiator's Plate Legguards
-						["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-					}),
-					i(73478, {	-- Cataclysmic Gladiator's Plate Shoulders
-						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						["g"] = {
+							i(73482, {	-- Cataclysmic Gladiator's Plate Chestpiece
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(73481, {	-- Cataclysmic Gladiator's Plate Gauntlets
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(73480, {	-- Cataclysmic Gladiator's Plate Helm
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(73479, {	-- Cataclysmic Gladiator's Plate Legguards
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(73478, {	-- Cataclysmic Gladiator's Plate Shoulders
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+						},
 					}),
 				}),
 				n(-322, {	-- Back
@@ -4031,6 +4052,9 @@ _.PVP =
 				}),
 			}),
 			n(-662, {	-- Elite PvP Gear
+				-- Original Sources are: Unknown. Presumably:
+				-- n00000 (7 different ID's exist) Captain Dirgehammer in Stormwind (Alliance)
+				-- n00000 (7 different ID's exist) Sergeant Thunderhorn in Orgrimmar (Horde)
 				n(-319, {	-- Weapons
 					un(REMOVED_FROM_GAME, i(73435)),	-- Cataclysmic Gladiator's Barrier
 					un(REMOVED_FROM_GAME, i(73417)),	-- Cataclysmic Gladiator's Baton of Light

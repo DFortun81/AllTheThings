@@ -1079,6 +1079,7 @@ app.L = {
 		[-650] = "Interface\\Icons\\inv_misc_questionmark",									-- Quest Item
 		--[-651] = "Interface\\Worldmap\\GlowSkull_64Grey",									-- Not used yet. Future PvP Icons if needed
 		--[-652] = "Interface\\Worldmap\\GlowSkull_64",										-- Not used yet. Future PvP Icons if needed
+		[-654] = "Interface\\Icons\\ability_mount_drake_twilight",							-- Pre-Season Cataclysmic (S11)
 		[-655] = 1596892, 																	-- Ensemble Gear (PvP)
 		[-656] = "Interface\\Icons\\ability_mount_drake_twilight",							-- Pre-Season Ruthless (S10)
 		[-657] = "Interface\\Icons\\ability_mount_redfrostwyrm_01",							-- Hateful Gladiator: Season 5 (Medium Gear)

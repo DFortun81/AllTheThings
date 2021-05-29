@@ -334,11 +334,9 @@ _.Zones =
 					["coord"] = { 75.0, 67.5, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"select", "headerID", -9979 },	-- Select the Cataclysm header.
-						{"pop"},	-- Discard header and acquire the children.
-						{"where", "headerID", -674 },	-- Cataclysmic Gladiator header.
-						{"pop"},	-- Discard header and acquire the children.
-						{"where", "headerID", -661 },	-- Gladiator header.
+						{"sub", "pvp_gear_base", -9979, -674, -661 },	-- Cataclysmic Gladiator: Season 11 Gladiator Gear
+						{"pop"},	-- Discard the Set header and acquire the children.
+						{"exclude", "headerID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
 					},
 				}),
 				n(49877,  {	-- Captain Lancy Revshon
