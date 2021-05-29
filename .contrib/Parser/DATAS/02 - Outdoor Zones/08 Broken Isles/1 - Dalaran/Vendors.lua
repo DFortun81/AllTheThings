@@ -1764,61 +1764,32 @@ _.Zones =
 				}),
 				n(106930, {	-- Lieutenant Surtees <Legion Gladiator>
 					["races"] = ALLIANCE_ONLY,
-					["itemID"] = 137642,	-- Mark of Honor
 					["coord"] = { 29.4, 75.6, 627 },
 					["g"] = {
-						gssh(1071, {	-- Combatant
-							["icon"] = "Interface\\Worldmap\\GlowSkull_64Purple",	-- Purple
-							["g"] = {
-					-- LEGION Season 1 & 2
-								i(146158, {	-- Ensemble: Vindictive Combatant's Satin Armor (A)
+						n(-660, {	-- Aspirant / Combatant PvP Gear
+							cl(DEATHKNIGHT, {
+								i(146164, {	-- Ensemble: Vindictive Combatant's Dreadplate Armor (A)
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 5 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 5 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 6 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 6 },	-- Season 2
+										{"exclude", "itemID", 146164 },	-- Exclude itself to stop duplicating
+									},
+									["g"] = {
+										i(135905),	-- Vindictive Combatant's Dreadcloak (A)
+										i(135817),	-- Vindictive Combatant's Dreadplate Chestpiece (A)
+										i(135819),	-- Vindictive Combatant's Dreadplate Gauntlets (A)
+										i(135823),	-- Vindictive Combatant's Dreadplate Girdle (A)
+										i(135820),	-- Vindictive Combatant's Dreadplate Helm (A)
+										i(135821),	-- Vindictive Combatant's Dreadplate Legguards (A)
+										i(135818),	-- Vindictive Combatant's Dreadplate Sabatons (A)
+										i(135822),	-- Vindictive Combatant's Dreadplate Shoulders (A)
+										i(135824),	-- Vindictive Combatant's Dreadplate Wristplates (A)
 									},
 								}),
-								i(146156, {	-- Ensemble: Vindictive Combatant's Silk Armor (A)
-									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 8 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 8 },	-- Season 2
-									},
-								}),
-								i(146160, {	-- Ensemble: Vindictive Combatant's Felweave Armor (A)
-									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 9 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 9 },	-- Season 2
-									},
-								}),
-								i(146168, {	-- Ensemble: Vindictive Combatant's Dragonhide Armor (A)
-									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 11 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 11 },	-- Season 2
-									},
-								}),
-								i(146172, {	-- Ensemble: Vindictive Combatant's Leather Armor (A)
-									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 4 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 4 },	-- Season 2
-									},
-								}),
-								i(146170, {	-- Ensemble: Vindictive Combatant's Ironskin Armor (A)
-									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 10 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 10 },	-- Season 2
-									},
-								}),
+							}),
+							cl(DEMONHUNTER, {
 								i(146264, {	-- Ensemble: Vindictive Combatant's Felskin Armor (A)
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
@@ -1826,7 +1797,41 @@ _.Zones =
 										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 12 },	-- Season 1
 										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 12 },	-- Season 2
 									},
+									["g"] = {
+										i(136893),	-- Vindictive Combatant's Demonthread Cloak (A)
+										i(136301),	-- Vindictive Combatant's Felskin Belt (A)
+										i(136295),	-- Vindictive Combatant's Felskin Boots (A)
+										i(136296),	-- Vindictive Combatant's Felskin Gloves (A)
+										i(136297),	-- Vindictive Combatant's Felskin Helm (A)
+										i(136298),	-- Vindictive Combatant's Felskin Legguards (A)
+										i(136300),	-- Vindictive Combatant's Felskin Spaulders (A)
+										i(136299),	-- Vindictive Combatant's Felskin Tunic (A)
+										i(136302),	-- Vindictive Combatant's Felskin Wristguards (A)
+									},
 								}),
+							}),
+							cl(DRUID, {
+								i(146168, {	-- Ensemble: Vindictive Combatant's Dragonhide Armor (A)
+									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = {
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 11 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 11 },	-- Season 2
+									},
+									["g"] = {
+										i(135831),	-- Vindictive Combatant's Dragonhide Belt (A)
+										i(135909),	-- Vindictive Combatant's Dragonhide Cloak (A)
+										i(135826),	-- Vindictive Combatant's Dragonhide Gloves (A)
+										i(135827),	-- Vindictive Combatant's Dragonhide Helm (A)
+										i(135828),	-- Vindictive Combatant's Dragonhide Legguards (A)
+										i(135825),	-- Vindictive Combatant's Dragonhide Moccasins (A)
+										i(135830),	-- Vindictive Combatant's Dragonhide Spaulders (A)
+										i(135829),	-- Vindictive Combatant's Dragonhide Tunic (A)
+										i(135832),	-- Vindictive Combatant's Dragonhide Wristguards (A)
+									},
+								}),
+							}),
+							cl(HUNTER, {
 								i(146154, {	-- Ensemble: Vindictive Combatant's Chain Armor (A)
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
@@ -1834,15 +1839,62 @@ _.Zones =
 										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 3 },	-- Season 1
 										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 3 },	-- Season 2
 									},
+									["g"] = {
+										i(135840),	-- Vindictive Combatant's Chain Armband (A)
+										i(135833),	-- Vindictive Combatant's Chain Armor (A)
+										i(135839),	-- Vindictive Combatant's Chain Clasp (A)
+										i(135835),	-- Vindictive Combatant's Chain Gauntlets (A)
+										i(135836),	-- Vindictive Combatant's Chain Helm (A)
+										i(135837),	-- Vindictive Combatant's Chain Leggings (A)
+										i(135838),	-- Vindictive Combatant's Chain Spaulders (A)
+										i(135834),	-- Vindictive Combatant's Chain Treads (A)
+										i(135913),	-- Vindictive Combatant's Drape of the Tracker (A)
+									},
 								}),
-								i(146152, {	-- Ensemble: Vindictive Combatant's Ringmail Armor (A)
+							}),
+							cl(MAGE, {
+								i(146156, {	-- Ensemble: Vindictive Combatant's Silk Armor (A)
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 7 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 7 },	-- Season 2
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 8 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 8 },	-- Season 2
+									},
+									["g"] = {
+										i(135846),	-- Vindictive Combatant's Silk Amice (A)
+										i(135848),	-- Vindictive Combatant's Silk Bracers (A)
+										i(135847),	-- Vindictive Combatant's Silk Cord (A)
+										i(135843),	-- Vindictive Combatant's Silk Cowl (A)
+										i(135842),	-- Vindictive Combatant's Silk Handguards (A)
+										i(135841),	-- Vindictive Combatant's Silk Treads (A)
+										i(135844),	-- Vindictive Combatant's Silk Trousers (A)
+										i(135845),	-- Vindictive Combatant's Silk Tunic (A)
+										i(135906),	-- Vindictive Combatant's Silken Shawl (A)
 									},
 								}),
+							}),
+							cl(MONK, {
+								i(146170, {	-- Ensemble: Vindictive Combatant's Ironskin Armor (A)
+									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = {
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 10 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 10 },	-- Season 2
+									},
+									["g"] = {
+										i(135855),	-- Vindictive Combatant's Ironskin Belt (A)
+										i(135910),	-- Vindictive Combatant's Ironskin Cloak (A)
+										i(135850),	-- Vindictive Combatant's Ironskin Gloves (A)
+										i(135851),	-- Vindictive Combatant's Ironskin Helm (A)
+										i(135852),	-- Vindictive Combatant's Ironskin Legguards (A)
+										i(135849),	-- Vindictive Combatant's Ironskin Slippers (A)
+										i(135853),	-- Vindictive Combatant's Ironskin Spaulders (A)
+										i(135854),	-- Vindictive Combatant's Ironskin Tunic (A)
+										i(135856),	-- Vindictive Combatant's Ironskin Wristguards (A)
+									},
+								}),
+							}),
+							cl(PALADIN, {
 								i(146166, {	-- Ensemble: Vindictive Combatant's Scaled Armor (A)
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
@@ -1850,7 +1902,104 @@ _.Zones =
 										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 2 },	-- Season 1
 										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 2 },	-- Season 2
 									},
+									["g"] = {
+										i(135914),	-- Vindictive Combatant's Greatcloak of Faith (A)
+										i(135857),	-- Vindictive Combatant's Scaled Chestpiece (A)
+										i(135859),	-- Vindictive Combatant's Scaled Gauntlets (A)
+										i(135863),	-- Vindictive Combatant's Scaled Girdle (A)
+										i(135860),	-- Vindictive Combatant's Scaled Helm (A)
+										i(135861),	-- Vindictive Combatant's Scaled Legguards (A)
+										i(135858),	-- Vindictive Combatant's Scaled Sabatons (A)
+										i(135862),	-- Vindictive Combatant's Scaled Shoulders (A)
+										i(135864),	-- Vindictive Combatant's Scaled Wristplates (A)
+									},
 								}),
+							}),
+							cl(PRIEST, {
+								i(146158, {	-- Ensemble: Vindictive Combatant's Satin Armor (A)
+									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = {
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 5 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 5 },	-- Season 2
+									},
+									["g"] = {
+										i(136867),	-- Vindictive Combatant's Drape of Piety (A)
+										i(135872),	-- Vindictive Combatant's Satin Bracers (A)
+										i(135871),	-- Vindictive Combatant's Satin Cord (A)
+										i(135866),	-- Vindictive Combatant's Satin Gloves (A)
+										i(135867),	-- Vindictive Combatant's Satin Hood (A)
+										i(135868),	-- Vindictive Combatant's Satin Leggings (A)
+										i(135870),	-- Vindictive Combatant's Satin Mantle (A)
+										i(135865),	-- Vindictive Combatant's Satin Treads (A)
+										i(135869),	-- Vindictive Combatant's Satin Tunic (A)
+									},
+								}),	
+							}),
+							cl(ROGUE, {
+								i(146172, {	-- Ensemble: Vindictive Combatant's Leather Armor (A)
+									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = {
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 4 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 4 },	-- Season 2
+									},
+									["g"] = {
+										i(135879),	-- Vindictive Combatant's Leather Belt (A)
+										i(135875),	-- Vindictive Combatant's Leather Gloves (A)
+										i(135876),	-- Vindictive Combatant's Leather Helm (A)
+										i(135877),	-- Vindictive Combatant's Leather Legguards (A)
+										i(135874),	-- Vindictive Combatant's Leather Slippers (A)
+										i(135878),	-- Vindictive Combatant's Leather Spaulders (A)
+										i(135873),	-- Vindictive Combatant's Leather Tunic (A)
+										i(135880),	-- Vindictive Combatant's Leather Wristguards (A)
+										i(136868),	-- Vindictive Combatant's Shadowcape (A)
+									},
+								}),
+							}),
+							cl(SHAMAN, {
+								i(146152, {	-- Ensemble: Vindictive Combatant's Ringmail Armor (A)
+									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = {
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 7 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 7 },	-- Season 2
+									},
+									["g"] = {
+										i(135888),	-- Vindictive Combatant's Ringmail Armband (A)
+										i(135881),	-- Vindictive Combatant's Ringmail Armor (A)
+										i(135882),	-- Vindictive Combatant's Ringmail Boots (A)
+										i(135887),	-- Vindictive Combatant's Ringmail Clasp (A)
+										i(135883),	-- Vindictive Combatant's Ringmail Gauntlets (A)
+										i(135884),	-- Vindictive Combatant's Ringmail Helm (A)
+										i(135885),	-- Vindictive Combatant's Ringmail Kilt (A)
+										i(135886),	-- Vindictive Combatant's Ringmail Spaulders (A)
+										i(136869),	-- Vindictive Combatant's Totemic Cloak (A)
+									},
+								}),
+							}),
+							cl(WARLOCK, {
+								i(146160, {	-- Ensemble: Vindictive Combatant's Felweave Armor (A)
+									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = {
+										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 9 },	-- Season 1
+										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 9 },	-- Season 2
+									},
+									["g"] = {
+										i(135894),	-- Vindictive Combatant's Felweave Amice (A)
+										i(135896),	-- Vindictive Combatant's Felweave Bracers (A)
+										i(136881),	-- Vindictive Combatant's Felweave Cloak (A)
+										i(135895),	-- Vindictive Combatant's Felweave Cord (A)
+										i(135891),	-- Vindictive Combatant's Felweave Cowl (A)
+										i(135890),	-- Vindictive Combatant's Felweave Handguards (A)
+										i(135889),	-- Vindictive Combatant's Felweave Treads (A)
+										i(135892),	-- Vindictive Combatant's Felweave Trousers (A)
+										i(135893),	-- Vindictive Combatant's Felweave Tunic (A)
+									},
+								}),
+							}),
+							cl(WARRIOR, {
 								i(146162, {	-- Ensemble: Vindictive Combatant's Plate Armor (A)
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
@@ -1858,15 +2007,23 @@ _.Zones =
 										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 1 },	-- Season 1
 										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 1 },	-- Season 2
 									},
-								}),
-								i(146164, {	-- Ensemble: Vindictive Combatant's Dreadplate Armor (A)
-									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 6 },	-- Season 1
-										{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 6 },	-- Season 2
+									["g"] = {
+										i(136887),	-- Vindictive Combatant's Cloak of Battle (A)
+										i(135897),	-- Vindictive Combatant's Plate Chestpiece (A)
+										i(135899),	-- Vindictive Combatant's Plate Gauntlets (A)
+										i(135903),	-- Vindictive Combatant's Plate Girdle (A)
+										i(135900),	-- Vindictive Combatant's Plate Helm (A)
+										i(135901),	-- Vindictive Combatant's Plate Legguards (A)
+										i(135902),	-- Vindictive Combatant's Plate Shoulders (A)
+										i(135898),	-- Vindictive Combatant's Plate Warboots (A)
+										i(135904),	-- Vindictive Combatant's Plate Wristplates (A)
 									},
 								}),
+							}),
+						}),
+						gssh(1071, {	-- Combatant
+							["icon"] = "Interface\\Worldmap\\GlowSkull_64Purple",	-- Purple
+							["g"] = {
 					-- LEGION Season 3 & 4
 								i(147688, {	-- Ensemble: Cruel Combatant's Satin Armor (A)
 									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
