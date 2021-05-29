@@ -10,6 +10,7 @@ _.PVP =
 				n(-9983, {	-- Honor Gear
 					cl(DEATHKNIGHT, {
 						i(146423, {	-- Ensemble: Bloodthirsty Gladiator's Dreadplate Armor
+							["description"] = "You will need to log out and back in to register Vicious Gladiator Season 10 Honor Gear. Its different from the normal Vicious Gladiator Season 9 Gear.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = { 
 								{"sub", "pvp_set_ensemble", -9979, -672, -9983, 6 },
@@ -1791,7 +1792,6 @@ _.PVP =
 			}),
 			n(-673, {	-- Ruthless Gladiator: Season 10
 				n(-656, {	-- Honor Gear Ruthless (S10)
-					["description"] = "These items are only available from the Bloodthirsty Gladiator class ensembles (listed under Vicious Gladiator Season 9: Honor Gear).",
 					["g"] = {
 						cl(DEATHKNIGHT, {
 							i(70558),	-- Vicious Gladiator's Dreadplate Chestpiece
@@ -2984,6 +2984,7 @@ _.PVP =
 						un(REMOVED_FROM_GAME, i(70202)),	-- Ruthless Gladiator's Pummeler
 						un(REMOVED_FROM_GAME, i(70199)),	-- Ruthless Gladiator's Quickblade
 						un(REMOVED_FROM_GAME, i(70206)),	-- Ruthless Gladiator's Redoubt
+						un(REMOVED_FROM_GAME, i(70209)),	-- Ruthless Gladiator's Reprieve
 						un(REMOVED_FROM_GAME, i(70194)),	-- Ruthless Gladiator's Rifle
 						un(REMOVED_FROM_GAME, i(70186)),	-- Ruthless Gladiator's Right Render
 						un(REMOVED_FROM_GAME, i(70187)),	-- Ruthless Gladiator's Ripper

@@ -4517,7 +4517,6 @@ _.NeverImplemented =
 		i(81320),	-- Right-Handed Invis Knuckles
 		i(84893),	-- Malevolent Gladiator's Fleshslicer
 		i(84894),	-- Malevolent Gladiator's Slasher
-		i(70209),	-- Ruthless Gladiator's Reprieve
 		i(23420),	-- Engraved Axe
 		i(23422),	-- Engraved Dagger
 		i(20522),	-- Feral Staff
