@@ -557,7 +557,7 @@ _.Zones =
 									i(124834, {	-- Wild Gladiator's Ringmail Helm (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
-									i(124835, {	-- Wild Gladiator's Ringmail Leggings (A)
+									i(139014, {	-- Wild Gladiator's Ringmail Kilt (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
 									i(124836, {	-- Wild Gladiator's Ringmail Spaulders (A)

@@ -3489,7 +3489,7 @@ _.PVP =
 									i(124834, {	-- Wild Gladiator's Ringmail Helm (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
-									i(124835, {	-- Wild Gladiator's Ringmail Leggings (A)
+									i(139014, {	-- Wild Gladiator's Ringmail Kilt (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
 									i(124836, {	-- Wild Gladiator's Ringmail Spaulders (A)
@@ -8473,6 +8473,7 @@ _.PVP =
 -- The items never made it in.
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	-- Season 2
+	i(124835),	-- Wild Gladiator's Ringmail Leggings (You get Wild Gladiator's Ringmail Kilt via Ensemble)
 	i(125045),	-- Wild Combatant's Accolade of Dominance
 	i(125047),	-- Wild Combatant's Accolade of Meditation
 	i(125044),	-- Wild Combatant's Accolade of conquest
