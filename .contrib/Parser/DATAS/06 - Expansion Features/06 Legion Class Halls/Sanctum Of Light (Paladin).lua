@@ -706,7 +706,7 @@ _.ExpansionFeatures =
 };
 
 
--- #if AFTER TBC
+-- #if AFTER LEGION
 -- These quests trigger after specific events occur in the zone.
 _.HiddenQuestTriggers = {
 	q(38229),	-- Paladin Order Hall - Triggered after recruiting Lord Maxwell Tyrosus for paladin order hall

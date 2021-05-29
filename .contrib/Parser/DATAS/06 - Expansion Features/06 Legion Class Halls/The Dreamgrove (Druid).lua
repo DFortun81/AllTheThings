@@ -1134,7 +1134,7 @@ _.ExpansionFeatures =
 };
 
 
--- #if AFTER TBC
+-- #if AFTER LEGION
 -- These quests trigger after specific events occur in the zone.
 _.HiddenQuestTriggers = {
 	q(40701),	-- Druid Order Hall - Feral Chosen (First)

@@ -684,7 +684,7 @@ _.ExpansionFeatures =
 };
 
 
--- #if AFTER TBC
+-- #if AFTER LEGION
 -- These quests trigger after specific events occur in the zone.
 _.HiddenQuestTriggers = {
 	q(39174),	-- Warrior Order Hall - Guiding Light Tutorialized - pops when you get your first artifact weapon and go back to Skyhold

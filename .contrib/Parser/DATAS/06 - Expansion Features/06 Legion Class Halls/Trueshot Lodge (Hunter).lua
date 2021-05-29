@@ -932,7 +932,7 @@ _.ExpansionFeatures =
 };
 
 
--- #if AFTER TBC
+-- #if AFTER LEGION
 -- These quests trigger after specific events occur in the zone.
 _.HiddenQuestTriggers = {
 	q(40619),	-- Hunter Order Hall - Survival Chosen

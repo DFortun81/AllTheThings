@@ -1024,7 +1024,7 @@ _.ExpansionFeatures =
 };
 
 
--- #if AFTER TBC
+-- #if AFTER LEGION
 -- These quests trigger after specific events occur in the zone.
 _.HiddenQuestTriggers = {
 	q(40842),	-- Rogue Order Hall - Kingslayers Chosen

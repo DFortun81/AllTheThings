@@ -946,10 +946,10 @@ _.ExpansionFeatures =
 };
 
 
--- #if AFTER TBC
+-- #if AFTER LEGION
 -- These quests trigger after specific events occur in the zone.
 _.HiddenQuestTriggers = {
-q(41079),	-- Mage Order Hall - Arcane chosen first
+	q(41079),	-- Mage Order Hall - Arcane chosen first
 	q(41080),	-- Mage Order Hall - Fire chosen first
 	q(41081),	-- Mage Order Hall - Frost chosen first
 	q(42727),	-- Mage Order Hall - Transition to Forge Quests (triggered after completing The Mage Hunter as first artifact weapon)

@@ -806,7 +806,7 @@ _.ExpansionFeatures =
 };
 
 
--- #if AFTER TBC
+-- #if AFTER LEGION
 -- These quests trigger after specific events occur in the zone.
 _.HiddenQuestTriggers = {
 	q(40516),	-- Monk Order Hall - The Dawning Bit (Triggered after accepting The Dawning Light)

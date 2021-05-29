@@ -761,7 +761,7 @@ _.ExpansionFeatures =
 };
 
 
--- #if AFTER TBC
+-- #if AFTER LEGION
 -- These quests trigger after specific events occur in the zone.
 _.HiddenQuestTriggers = {
 	q(38275),	-- Shaman Order Hall - Tracking Quest: Return to Firelands 1 Mission Completed
