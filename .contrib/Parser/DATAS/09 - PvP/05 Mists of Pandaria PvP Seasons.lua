@@ -4778,105 +4778,105 @@ _.PVP =
 								i(100430),	-- Grievous Gladiator's Leather Tunic
 							}),
 							cl(SHAMAN, {
-								i(138687, {	-- Ensemble: Grievous Gladiator's Ringmail Armor
+								i(138665, {	-- Ensemble: Grievous Gladiator's Ringmail Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = { 
-										{"sub", "pvp_set_ensemble", -10041, -676, -9914, -661, 7 },
-										{"select", "itemID", 91357 },	-- Grievous Gladiator's Armbands of Meditation
-										{"select", "itemID", 91356 },	-- Grievous Gladiator's Armbands of Prowess
-										{"select", "itemID", 91378 },	-- Grievous Gladiator's Waistguard of Cruelty
-										{"select", "itemID", 91350 },	-- Grievous Gladiator's Waistguard of Meditation
-										{"select", "itemID", 91352 },	-- Grievous Gladiator's Footguards of Alacrity (Mail)
-										{"select", "itemID", 91354 },	-- Grievous Gladiator's Footguards of Meditation (Mail)
-										{"select", "itemID", 99915 },	-- Grievous Gladiator's Armbands of Meditation
-										{"select", "itemID", 99914 },	-- Grievous Gladiator's Armbands of Prowess
-										{"select", "itemID", 99926 },	-- Grievous Gladiator's Waistguard of Cruelty
-										{"select", "itemID", 99911 },	-- Grievous Gladiator's Waistguard of Meditation
-										{"select", "itemID", 99912 },	-- Grievous Gladiator's Footguards of Alacrity (Mail)
-										{"select", "itemID", 99913 },	-- Grievous Gladiator's Footguards of Meditation (Mail)
-										{"select", "itemID", 99921 },	-- Grievous Gladiator's Linked Armor
-										{"select", "itemID", 99922 },	-- Grievous Gladiator's Linked Gauntlets
-										{"select", "itemID", 99923 },	-- Grievous Gladiator's Linked Helm
-										{"select", "itemID", 99924 },	-- Grievous Gladiator's Linked Leggings
-										{"select", "itemID", 99925 },	-- Grievous Gladiator's Linked Spaulders
-										{"select", "itemID", 99927 },	-- Grievous Gladiator's Mail Armor
-										{"select", "itemID", 99928 },	-- Grievous Gladiator's Mail Gauntlets
-										{"select", "itemID", 99929 },	-- Grievous Gladiator's Mail Helm
-										{"select", "itemID", 99930 },	-- Grievous Gladiator's Mail Leggings
-										{"select", "itemID", 99931 },	-- Grievous Gladiator's Mail Spaulders
-										{"select", "itemID", 99916 },	-- Grievous Gladiator's Ringmail Armor
-										{"select", "itemID", 99917 },	-- Grievous Gladiator's Ringmail Gauntlets
-										{"select", "itemID", 99918 },	-- Grievous Gladiator's Ringmail Helm
-										{"select", "itemID", 99919 },	-- Grievous Gladiator's Ringmail Leggings
-										{"select", "itemID", 99920 },	-- Grievous Gladiator's Ringmail Spaulders
-										{"exclude", "itemID", 138687 },	-- Exclude itself to stop duplicating 
+										{"sub", "pvp_set_ensemble", -10041, -677, -9914, -661, 7 },
+										{"select", "itemID", 100447 },	-- Grievous Gladiator's Armbands of Meditation
+										{"select", "itemID", 100446 },	-- Grievous Gladiator's Armbands of Prowess
+										{"select", "itemID", 100468 },	-- Grievous Gladiator's Waistguard of Cruelty
+										{"select", "itemID", 100440 },	-- Grievous Gladiator's Waistguard of Meditation
+										{"select", "itemID", 100442 },	-- Grievous Gladiator's Footguards of Alacrity (Mail)
+										{"select", "itemID", 100444 },	-- Grievous Gladiator's Footguards of Meditation (Mail)
+										{"select", "itemID", 103287 },	-- Grievous Gladiator's Armbands of Meditation
+										{"select", "itemID", 103286 },	-- Grievous Gladiator's Armbands of Prowess
+										{"select", "itemID", 103298 },	-- Grievous Gladiator's Waistguard of Cruelty
+										{"select", "itemID", 103283 },	-- Grievous Gladiator's Waistguard of Meditation
+										{"select", "itemID", 103284 },	-- Grievous Gladiator's Footguards of Alacrity (Mail)
+										{"select", "itemID", 103285 },	-- Grievous Gladiator's Footguards of Meditation (Mail)
+										{"select", "itemID", 103293 },	-- Grievous Gladiator's Linked Armor
+										{"select", "itemID", 103294 },	-- Grievous Gladiator's Linked Gauntlets
+										{"select", "itemID", 103295 },	-- Grievous Gladiator's Linked Helm
+										{"select", "itemID", 103296 },	-- Grievous Gladiator's Linked Leggings
+										{"select", "itemID", 103297 },	-- Grievous Gladiator's Linked Spaulders
+										{"select", "itemID", 103299 },	-- Grievous Gladiator's Mail Armor
+										{"select", "itemID", 103300 },	-- Grievous Gladiator's Mail Gauntlets
+										{"select", "itemID", 103301 },	-- Grievous Gladiator's Mail Helm
+										{"select", "itemID", 103302 },	-- Grievous Gladiator's Mail Leggings
+										{"select", "itemID", 103303 },	-- Grievous Gladiator's Mail Spaulders
+										{"select", "itemID", 103288 },	-- Grievous Gladiator's Ringmail Armor
+										{"select", "itemID", 103289 },	-- Grievous Gladiator's Ringmail Gauntlets
+										{"select", "itemID", 103290 },	-- Grievous Gladiator's Ringmail Helm
+										{"select", "itemID", 103291 },	-- Grievous Gladiator's Ringmail Leggings
+										{"select", "itemID", 103292 },	-- Grievous Gladiator's Ringmail Spaulders
+										{"exclude", "itemID", 138665 },	-- Exclude itself to stop duplicating 
 									},
 								}),	
-								i(91368),	-- Grievous Gladiator's Linked Armor
-								i(91370),	-- Grievous Gladiator's Linked Gauntlets
-								i(91372),	-- Grievous Gladiator's Linked Helm
-								i(91374),	-- Grievous Gladiator's Linked Leggings
-								i(91376),	-- Grievous Gladiator's Linked Spaulders
-								i(91380),	-- Grievous Gladiator's Mail Armor
-								i(91382),	-- Grievous Gladiator's Mail Gauntlets
-								i(91384),	-- Grievous Gladiator's Mail Helm
-								i(91386),	-- Grievous Gladiator's Mail Leggings
-								i(91388),	-- Grievous Gladiator's Mail Spaulders
-								i(91358),	-- Grievous Gladiator's Ringmail Armor
-								i(91360),	-- Grievous Gladiator's Ringmail Gauntlets
-								i(91362),	-- Grievous Gladiator's Ringmail Helm
-								i(91364),	-- Grievous Gladiator's Ringmail Leggings
-								i(91366),	-- Grievous Gladiator's Ringmail Spaulders
+								i(100458),	-- Grievous Gladiator's Linked Armor
+								i(100460),	-- Grievous Gladiator's Linked Gauntlets
+								i(100462),	-- Grievous Gladiator's Linked Helm
+								i(100464),	-- Grievous Gladiator's Linked Leggings
+								i(100466),	-- Grievous Gladiator's Linked Spaulders
+								i(100470),	-- Grievous Gladiator's Mail Armor
+								i(100472),	-- Grievous Gladiator's Mail Gauntlets
+								i(100474),	-- Grievous Gladiator's Mail Helm
+								i(100476),	-- Grievous Gladiator's Mail Leggings
+								i(100478),	-- Grievous Gladiator's Mail Spaulders
+								i(100448),	-- Grievous Gladiator's Ringmail Armor
+								i(100450),	-- Grievous Gladiator's Ringmail Gauntlets
+								i(100452),	-- Grievous Gladiator's Ringmail Helm
+								i(100454),	-- Grievous Gladiator's Ringmail Leggings
+								i(100456),	-- Grievous Gladiator's Ringmail Spaulders
 							}),
 							cl(WARLOCK, {
-								i(138701, {	-- Ensemble: Grievous Gladiator's Felweave Armor
+								i(138679, {	-- Ensemble: Grievous Gladiator's Felweave Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = { 
-										{"sub", "pvp_set_ensemble", -10041, -676, -9914, -661, 9 },
-										{"select", "itemID", 91121 },	-- Grievous Gladiator's Cuffs of Accuracy
-										{"select", "itemID", 91111 },	-- Grievous Gladiator's Cord of Accuracy
-										{"select", "itemID", 91117 },	-- Grievous Gladiator's Treads of Alacrity
-										{"select", "itemID", 99787 },	-- Grievous Gladiator's Cuffs of Accuracy
-										{"select", "itemID", 99782 },	-- Grievous Gladiator's Cord of Accuracy
-										{"select", "itemID", 99785 },	-- Grievous Gladiator's Treads of Alacrity
-										{"select", "itemID", 99956 },	-- Grievous Gladiator's Felweave Amice
-										{"select", "itemID", 99953 },	-- Grievous Gladiator's Felweave Cowl
-										{"select", "itemID", 99952 },	-- Grievous Gladiator's Felweave Handguards
-										{"select", "itemID", 99955 },	-- Grievous Gladiator's Felweave Raiment
-										{"select", "itemID", 99954 },	-- Grievous Gladiator's Felweave Trousers
-										{"exclude", "itemID", 138701 },	-- Exclude itself to stop duplicating 
+										{"sub", "pvp_set_ensemble", -10041, -677, -9914, -661, 9 },
+										{"select", "itemID", 100217 },	-- Grievous Gladiator's Cuffs of Accuracy
+										{"select", "itemID", 100207 },	-- Grievous Gladiator's Cord of Accuracy
+										{"select", "itemID", 100213 },	-- Grievous Gladiator's Treads of Alacrity
+										{"select", "itemID", 103160 },	-- Grievous Gladiator's Cuffs of Accuracy
+										{"select", "itemID", 103155 },	-- Grievous Gladiator's Cord of Accuracy
+										{"select", "itemID", 103158 },	-- Grievous Gladiator's Treads of Alacrity
+										{"select", "itemID", 103327 },	-- Grievous Gladiator's Felweave Amice
+										{"select", "itemID", 103324 },	-- Grievous Gladiator's Felweave Cowl
+										{"select", "itemID", 103323 },	-- Grievous Gladiator's Felweave Handguards
+										{"select", "itemID", 103326 },	-- Grievous Gladiator's Felweave Raiment
+										{"select", "itemID", 103325 },	-- Grievous Gladiator's Felweave Trousers
+										{"exclude", "itemID", 138679 },	-- Exclude itself to stop duplicating 
 									},
 								}),
-								i(91428),	-- Grievous Gladiator's Felweave Amice
-								i(91422),	-- Grievous Gladiator's Felweave Cowl
-								i(91420),	-- Grievous Gladiator's Felweave Handguards
-								i(91426),	-- Grievous Gladiator's Felweave Raiment
-								i(91424),	-- Grievous Gladiator's Felweave Trousers
+								i(100518),	-- Grievous Gladiator's Felweave Amice
+								i(100512),	-- Grievous Gladiator's Felweave Cowl
+								i(100510),	-- Grievous Gladiator's Felweave Handguards
+								i(100516),	-- Grievous Gladiator's Felweave Raiment
+								i(100514),	-- Grievous Gladiator's Felweave Trousers
 							}),
 							cl(WARRIOR, {
-								i(138681, {	-- Ensemble: Grievous Gladiator's Plate Armor
+								i(138659, {	-- Ensemble: Grievous Gladiator's Plate Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = { 
-										{"sub", "pvp_set_ensemble", -10041, -676, -9914, -661, 1 },
-										{"select", "itemID", 91305 },	-- Grievous Gladiator's Armplates of Proficiency
-										{"select", "itemID", 91299 },	-- Grievous Gladiator's Girdle of Prowess
-										{"select", "itemID", 91301 },	-- Grievous Gladiator's Warboots of Cruelty
-										{"select", "itemID", 99890 },	-- Grievous Gladiator's Armplates of Proficiency
-										{"select", "itemID", 99887 },	-- Grievous Gladiator's Girdle of Prowess
-										{"select", "itemID", 99888 },	-- Grievous Gladiator's Warboots of Cruelty
-										{"select", "itemID", 99957 },	-- Grievous Gladiator's Plate Chestpiece
-										{"select", "itemID", 99958 },	-- Grievous Gladiator's Plate Gauntlets
-										{"select", "itemID", 99959 },	-- Grievous Gladiator's Plate Helm
-										{"select", "itemID", 99960 },	-- Grievous Gladiator's Plate Legguards
-										{"select", "itemID", 99961 },	-- Grievous Gladiator's Plate Shoulders
-										{"exclude", "itemID", 138681 },	-- Exclude itself to stop duplicating 
+										{"sub", "pvp_set_ensemble", -10041, -677, -9914, -661, 1 },
+										{"select", "itemID", 100401 },	-- Grievous Gladiator's Armplates of Proficiency
+										{"select", "itemID", 100395 },	-- Grievous Gladiator's Girdle of Prowess
+										{"select", "itemID", 100397 },	-- Grievous Gladiator's Warboots of Cruelty
+										{"select", "itemID", 103262 },	-- Grievous Gladiator's Armplates of Proficiency
+										{"select", "itemID", 103259 },	-- Grievous Gladiator's Girdle of Prowess
+										{"select", "itemID", 103260 },	-- Grievous Gladiator's Warboots of Cruelty
+										{"select", "itemID", 103328 },	-- Grievous Gladiator's Plate Chestpiece
+										{"select", "itemID", 103329 },	-- Grievous Gladiator's Plate Gauntlets
+										{"select", "itemID", 103330 },	-- Grievous Gladiator's Plate Helm
+										{"select", "itemID", 103331 },	-- Grievous Gladiator's Plate Legguards
+										{"select", "itemID", 103332 },	-- Grievous Gladiator's Plate Shoulders
+										{"exclude", "itemID", 138659 },	-- Exclude itself to stop duplicating 
 									},
 								}),
-								i(91430),	-- Grievous Gladiator's Plate Chestpiece
-								i(91432),	-- Grievous Gladiator's Plate Gauntlets
-								i(91434),	-- Grievous Gladiator's Plate Helm
-								i(91436),	-- Grievous Gladiator's Plate Legguards
-								i(91438),	-- Grievous Gladiator's Plate Shoulders
+								i(100520),	-- Grievous Gladiator's Plate Chestpiece
+								i(100522),	-- Grievous Gladiator's Plate Gauntlets
+								i(100524),	-- Grievous Gladiator's Plate Helm
+								i(100526),	-- Grievous Gladiator's Plate Legguards
+								i(100528),	-- Grievous Gladiator's Plate Shoulders
 							}),
 							n(-322, {	-- Back
 								un(REMOVED_FROM_GAME, i(100196)),	-- Grievous Gladiator's Cape of Cruelty
@@ -5271,83 +5271,83 @@ _.PVP =
 								}),
 							}),
 							cl(SHAMAN, {
-								i(99921, {	-- Grievous Gladiator's Linked Armor
+								i(103293, {	-- Grievous Gladiator's Linked Armor
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(99922, {	-- Grievous Gladiator's Linked Gauntlets
+								i(103294, {	-- Grievous Gladiator's Linked Gauntlets
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(99923, {	-- Grievous Gladiator's Linked Helm
+								i(103295, {	-- Grievous Gladiator's Linked Helm
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(99924, {	-- Grievous Gladiator's Linked Leggings
+								i(103296, {	-- Grievous Gladiator's Linked Leggings
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(99925, {	-- Grievous Gladiator's Linked Spaulders
+								i(103297, {	-- Grievous Gladiator's Linked Spaulders
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(99927, {	-- Grievous Gladiator's Mail Armor
+								i(103299, {	-- Grievous Gladiator's Mail Armor
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(99928, {	-- Grievous Gladiator's Mail Gauntlets
+								i(103300, {	-- Grievous Gladiator's Mail Gauntlets
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(99929, {	-- Grievous Gladiator's Mail Helm
+								i(103301, {	-- Grievous Gladiator's Mail Helm
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(99930, {	-- Grievous Gladiator's Mail Leggings
+								i(103302, {	-- Grievous Gladiator's Mail Leggings
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(99931, {	-- Grievous Gladiator's Mail Spaulders
+								i(103303, {	-- Grievous Gladiator's Mail Spaulders
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(99916, {	-- Grievous Gladiator's Ringmail Armor
+								i(103288, {	-- Grievous Gladiator's Ringmail Armor
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(99917, {	-- Grievous Gladiator's Ringmail Gauntlets
+								i(103289, {	-- Grievous Gladiator's Ringmail Gauntlets
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(99918, {	-- Grievous Gladiator's Ringmail Helm
+								i(103290, {	-- Grievous Gladiator's Ringmail Helm
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(99919, {	-- Grievous Gladiator's Ringmail Leggings
+								i(103291, {	-- Grievous Gladiator's Ringmail Leggings
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(99920, {	-- Grievous Gladiator's Ringmail Spaulders
+								i(103292, {	-- Grievous Gladiator's Ringmail Spaulders
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
 							}),
 							cl(WARLOCK, {
-								i(99956, {	-- Grievous Gladiator's Felweave Amice
+								i(103327, {	-- Grievous Gladiator's Felweave Amice
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(99953, {	-- Grievous Gladiator's Felweave Cowl
+								i(103324, {	-- Grievous Gladiator's Felweave Cowl
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(99952, {	-- Grievous Gladiator's Felweave Handguards
+								i(103323, {	-- Grievous Gladiator's Felweave Handguards
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(99955, {	-- Grievous Gladiator's Felweave Raiment
+								i(103326, {	-- Grievous Gladiator's Felweave Raiment
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(99954, {	-- Grievous Gladiator's Felweave Trousers
+								i(103325, {	-- Grievous Gladiator's Felweave Trousers
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
 							}),
 							cl(WARRIOR, {
-								i(99957, {	-- Grievous Gladiator's Plate Chestpiece
+								i(103328, {	-- Grievous Gladiator's Plate Chestpiece
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(99958, {	-- Grievous Gladiator's Plate Gauntlets
+								i(103329, {	-- Grievous Gladiator's Plate Gauntlets
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(99959, {	-- Grievous Gladiator's Plate Helm
+								i(103330, {	-- Grievous Gladiator's Plate Helm
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(99960, {	-- Grievous Gladiator's Plate Legguards
+								i(103331, {	-- Grievous Gladiator's Plate Legguards
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(99961, {	-- Grievous Gladiator's Plate Shoulders
+								i(103332, {	-- Grievous Gladiator's Plate Shoulders
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
 							}),
@@ -5888,105 +5888,105 @@ _.PVP =
 								i(100673),	-- Grievous Gladiator's Leather Tunic
 							}),
 							cl(SHAMAN, {
-								i(138688, {	-- Ensemble: Grievous Gladiator's Ringmail Armor
+								i(138666, {	-- Ensemble: Grievous Gladiator's Ringmail Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = { 
-										{"sub", "pvp_set_ensemble", -10041, -676, -9913, -661, 7 },
-										{"select", "itemID", 94337 },	-- Grievous Gladiator's Armbands of Meditation
-										{"select", "itemID", 94379 },	-- Grievous Gladiator's Armbands of Prowess
-										{"select", "itemID", 94393 },	-- Grievous Gladiator's Waistguard of Cruelty
-										{"select", "itemID", 94382 },	-- Grievous Gladiator's Waistguard of Meditation
-										{"select", "itemID", 94378 },	-- Grievous Gladiator's Footguards of Alacrity (Mail)
-										{"select", "itemID", 94336 },	-- Grievous Gladiator's Footguards of Meditation (Mail)
-										{"select", "itemID", 100004 },	-- Grievous Gladiator's Armbands of Meditation
-										{"select", "itemID", 100049 },	-- Grievous Gladiator's Armbands of Prowess
-										{"select", "itemID", 100063 },	-- Grievous Gladiator's Waistguard of Cruelty
-										{"select", "itemID", 100052 },	-- Grievous Gladiator's Waistguard of Meditation
-										{"select", "itemID", 100048 },	-- Grievous Gladiator's Footguards of Alacrity (Mail)
-										{"select", "itemID", 100001 },	-- Grievous Gladiator's Footguards of Meditation (Mail)
-										{"select", "itemID", 100145 },	-- Grievous Gladiator's Linked Armor
-										{"select", "itemID", 100128 },	-- Grievous Gladiator's Linked Gauntlets
-										{"select", "itemID", 100100 },	-- Grievous Gladiator's Linked Helm
-										{"select", "itemID", 100164 },	-- Grievous Gladiator's Linked Leggings
-										{"select", "itemID", 100012 },	-- Grievous Gladiator's Linked Spaulders
-										{"select", "itemID", 100129 },	-- Grievous Gladiator's Mail Armor
-										{"select", "itemID", 100078 },	-- Grievous Gladiator's Mail Gauntlets
-										{"select", "itemID", 100079 },	-- Grievous Gladiator's Mail Helm
-										{"select", "itemID", 100167 },	-- Grievous Gladiator's Mail Leggings
-										{"select", "itemID", 100020 },	-- Grievous Gladiator's Mail Spaulders
-										{"select", "itemID", 100103 },	-- Grievous Gladiator's Ringmail Armor
-										{"select", "itemID", 100160 },	-- Grievous Gladiator's Ringmail Gauntlets
-										{"select", "itemID", 100104 },	-- Grievous Gladiator's Ringmail Helm
-										{"select", "itemID", 100105 },	-- Grievous Gladiator's Ringmail Leggings
-										{"select", "itemID", 100039 },	-- Grievous Gladiator's Ringmail Spaulders
-										{"exclude", "itemID", 138688 },	-- Exclude itself to stop duplicating 
+										{"sub", "pvp_set_ensemble", -10041, -677, -9913, -661, 7 },
+										{"select", "itemID", 100567 },	-- Grievous Gladiator's Armbands of Meditation
+										{"select", "itemID", 100609 },	-- Grievous Gladiator's Armbands of Prowess
+										{"select", "itemID", 100623 },	-- Grievous Gladiator's Waistguard of Cruelty
+										{"select", "itemID", 100612 },	-- Grievous Gladiator's Waistguard of Meditation
+										{"select", "itemID", 100608 },	-- Grievous Gladiator's Footguards of Alacrity (Mail)
+										{"select", "itemID", 100566 },	-- Grievous Gladiator's Footguards of Meditation (Mail)
+										{"select", "itemID", 102821 },	-- Grievous Gladiator's Armbands of Meditation
+										{"select", "itemID", 102862 },	-- Grievous Gladiator's Armbands of Prowess
+										{"select", "itemID", 102874 },	-- Grievous Gladiator's Waistguard of Cruelty
+										{"select", "itemID", 102865 },	-- Grievous Gladiator's Waistguard of Meditation
+										{"select", "itemID", 102861 },	-- Grievous Gladiator's Footguards of Alacrity (Mail)
+										{"select", "itemID", 102820 },	-- Grievous Gladiator's Footguards of Meditation (Mail)
+										{"select", "itemID", 102956 },	-- Grievous Gladiator's Linked Armor
+										{"select", "itemID", 102939 },	-- Grievous Gladiator's Linked Gauntlets
+										{"select", "itemID", 102911 },	-- Grievous Gladiator's Linked Helm
+										{"select", "itemID", 102975 },	-- Grievous Gladiator's Linked Leggings
+										{"select", "itemID", 102826 },	-- Grievous Gladiator's Linked Spaulders
+										{"select", "itemID", 102940 },	-- Grievous Gladiator's Mail Armor
+										{"select", "itemID", 102889 },	-- Grievous Gladiator's Mail Gauntlets
+										{"select", "itemID", 102890 },	-- Grievous Gladiator's Mail Helm
+										{"select", "itemID", 102978 },	-- Grievous Gladiator's Mail Leggings
+										{"select", "itemID", 102834 },	-- Grievous Gladiator's Mail Spaulders
+										{"select", "itemID", 102914 },	-- Grievous Gladiator's Ringmail Armor
+										{"select", "itemID", 102971 },	-- Grievous Gladiator's Ringmail Gauntlets
+										{"select", "itemID", 102915 },	-- Grievous Gladiator's Ringmail Helm
+										{"select", "itemID", 102916 },	-- Grievous Gladiator's Ringmail Leggings
+										{"select", "itemID", 102852 },	-- Grievous Gladiator's Ringmail Spaulders
+										{"exclude", "itemID", 138666 },	-- Exclude itself to stop duplicating 
 									},
 								}),	
-								i(94475),	-- Grievous Gladiator's Linked Armor
-								i(94458),	-- Grievous Gladiator's Linked Gauntlets
-								i(94430),	-- Grievous Gladiator's Linked Helm
-								i(94494),	-- Grievous Gladiator's Linked Leggings
-								i(94342),	-- Grievous Gladiator's Linked Spaulders
-								i(94459),	-- Grievous Gladiator's Mail Armor
-								i(94408),	-- Grievous Gladiator's Mail Gauntlets
-								i(94409),	-- Grievous Gladiator's Mail Helm
-								i(94497),	-- Grievous Gladiator's Mail Leggings
-								i(94350),	-- Grievous Gladiator's Mail Spaulders
-								i(94433),	-- Grievous Gladiator's Ringmail Armor
-								i(94490),	-- Grievous Gladiator's Ringmail Gauntlets
-								i(94434),	-- Grievous Gladiator's Ringmail Helm
-								i(94435),	-- Grievous Gladiator's Ringmail Leggings
-								i(94369),	-- Grievous Gladiator's Ringmail Spaulders
+								i(100705),	-- Grievous Gladiator's Linked Armor
+								i(100688),	-- Grievous Gladiator's Linked Gauntlets
+								i(100660),	-- Grievous Gladiator's Linked Helm
+								i(100724),	-- Grievous Gladiator's Linked Leggings
+								i(100572),	-- Grievous Gladiator's Linked Spaulders
+								i(100689),	-- Grievous Gladiator's Mail Armor
+								i(100638),	-- Grievous Gladiator's Mail Gauntlets
+								i(100639),	-- Grievous Gladiator's Mail Helm
+								i(100727),	-- Grievous Gladiator's Mail Leggings
+								i(100580),	-- Grievous Gladiator's Mail Spaulders
+								i(100663),	-- Grievous Gladiator's Ringmail Armor
+								i(100720),	-- Grievous Gladiator's Ringmail Gauntlets
+								i(100664),	-- Grievous Gladiator's Ringmail Helm
+								i(100665),	-- Grievous Gladiator's Ringmail Leggings
+								i(100599),	-- Grievous Gladiator's Ringmail Spaulders
 							}),
 							cl(WARLOCK, {
-								i(138702, {	-- Ensemble: Grievous Gladiator's Felweave Armor
+								i(143826, {	-- Ensemble: Grievous Gladiator's Felweave Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = { 
-										{"sub", "pvp_set_ensemble", -10041, -676, -9913, -661, 9 },
-										{"select", "itemID", 94403 },	-- Grievous Gladiator's Cuffs of Accuracy
-										{"select", "itemID", 94376 },	-- Grievous Gladiator's Cord of Accuracy
-										{"select", "itemID", 94333 },	-- Grievous Gladiator's Treads of Alacrity
-										{"select", "itemID", 100073 },	-- Grievous Gladiator's Cuffs of Accuracy
-										{"select", "itemID", 100046 },	-- Grievous Gladiator's Cord of Accuracy
-										{"select", "itemID", 99994 },	-- Grievous Gladiator's Treads of Alacrity
-										{"select", "itemID", 100068 },	-- Grievous Gladiator's Felweave Amice
-										{"select", "itemID", 100112 },	-- Grievous Gladiator's Felweave Cowl
-										{"select", "itemID", 100111 },	-- Grievous Gladiator's Felweave Handguards
-										{"select", "itemID", 100045 },	-- Grievous Gladiator's Felweave Raiment
-										{"select", "itemID", 100141 },	-- Grievous Gladiator's Felweave Trousers
-										{"exclude", "itemID", 138702 },	-- Exclude itself to stop duplicating 
+										{"sub", "pvp_set_ensemble", -10041, -677, -9913, -661, 9 },
+										{"select", "itemID", 100633 },	-- Grievous Gladiator's Cuffs of Accuracy
+										{"select", "itemID", 100606 },	-- Grievous Gladiator's Cord of Accuracy
+										{"select", "itemID", 100563 },	-- Grievous Gladiator's Treads of Alacrity
+										{"select", "itemID", 102884 },	-- Grievous Gladiator's Cuffs of Accuracy
+										{"select", "itemID", 102859 },	-- Grievous Gladiator's Cord of Accuracy
+										{"select", "itemID", 102817 },	-- Grievous Gladiator's Treads of Alacrity
+										{"select", "itemID", 102879 },	-- Grievous Gladiator's Felweave Amice
+										{"select", "itemID", 102923 },	-- Grievous Gladiator's Felweave Cowl
+										{"select", "itemID", 102922 },	-- Grievous Gladiator's Felweave Handguards
+										{"select", "itemID", 102858 },	-- Grievous Gladiator's Felweave Raiment
+										{"select", "itemID", 102952 },	-- Grievous Gladiator's Felweave Trousers
+										{"exclude", "itemID", 143826 },	-- Exclude itself to stop duplicating 
 									},
 								}),
-								i(94398),	-- Grievous Gladiator's Felweave Amice
-								i(94442),	-- Grievous Gladiator's Felweave Cowl
-								i(94441),	-- Grievous Gladiator's Felweave Handguards
-								i(94375),	-- Grievous Gladiator's Felweave Raiment
-								i(94471),	-- Grievous Gladiator's Felweave Trousers
+								i(100628),	-- Grievous Gladiator's Felweave Amice
+								i(100672),	-- Grievous Gladiator's Felweave Cowl
+								i(100671),	-- Grievous Gladiator's Felweave Handguards
+								i(100605),	-- Grievous Gladiator's Felweave Raiment
+								i(100701),	-- Grievous Gladiator's Felweave Trousers
 							}),
 							cl(WARRIOR, {
-								i(138682, {	-- Ensemble: Grievous Gladiator's Plate Armor
+								i(138660, {	-- Ensemble: Grievous Gladiator's Plate Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = { 
-										{"sub", "pvp_set_ensemble", -10041, -676, -9913, -661, 1 },
-										{"select", "itemID", 94418 },	-- Grievous Gladiator's Armplates of Proficiency
-										{"select", "itemID", 94440 },	-- Grievous Gladiator's Girdle of Prowess
-										{"select", "itemID", 94414 },	-- Grievous Gladiator's Warboots of Cruelty
-										{"select", "itemID", 100088 },	-- Grievous Gladiator's Armplates of Proficiency
-										{"select", "itemID", 100110 },	-- Grievous Gladiator's Girdle of Prowess
-										{"select", "itemID", 100084 },	-- Grievous Gladiator's Warboots of Cruelty
-										{"select", "itemID", 100114 },	-- Grievous Gladiator's Plate Chestpiece
-										{"select", "itemID", 99992 },	-- Grievous Gladiator's Plate Gauntlets
-										{"select", "itemID", 99993 },	-- Grievous Gladiator's Plate Helm
-										{"select", "itemID", 100118 },	-- Grievous Gladiator's Plate Legguards
-										{"select", "itemID", 100071 },	-- Grievous Gladiator's Plate Shoulders
-										{"exclude", "itemID", 138682 },	-- Exclude itself to stop duplicating 
+										{"sub", "pvp_set_ensemble", -10041, -677, -9913, -661, 1 },
+										{"select", "itemID", 100648 },	-- Grievous Gladiator's Armplates of Proficiency
+										{"select", "itemID", 100670 },	-- Grievous Gladiator's Girdle of Prowess
+										{"select", "itemID", 100644 },	-- Grievous Gladiator's Warboots of Cruelty
+										{"select", "itemID", 102899 },	-- Grievous Gladiator's Armplates of Proficiency
+										{"select", "itemID", 102921 },	-- Grievous Gladiator's Girdle of Prowess
+										{"select", "itemID", 102895 },	-- Grievous Gladiator's Warboots of Cruelty
+										{"select", "itemID", 102925 },	-- Grievous Gladiator's Plate Chestpiece
+										{"select", "itemID", 102815 },	-- Grievous Gladiator's Plate Gauntlets
+										{"select", "itemID", 102816 },	-- Grievous Gladiator's Plate Helm
+										{"select", "itemID", 102929 },	-- Grievous Gladiator's Plate Legguards
+										{"select", "itemID", 102882 },	-- Grievous Gladiator's Plate Shoulders
+										{"exclude", "itemID", 138660 },	-- Exclude itself to stop duplicating 
 									},
 								}),
-								i(94444),	-- Grievous Gladiator's Plate Chestpiece
-								i(94331),	-- Grievous Gladiator's Plate Gauntlets
-								i(94332),	-- Grievous Gladiator's Plate Helm
-								i(94448),	-- Grievous Gladiator's Plate Legguards
-								i(94401),	-- Grievous Gladiator's Plate Shoulders
+								i(100674),	-- Grievous Gladiator's Plate Chestpiece
+								i(100561),	-- Grievous Gladiator's Plate Gauntlets
+								i(100562),	-- Grievous Gladiator's Plate Helm
+								i(100678),	-- Grievous Gladiator's Plate Legguards
+								i(100631),	-- Grievous Gladiator's Plate Shoulders
 							}),
 							n(-322, {	-- Back
 								un(REMOVED_FROM_GAME, i(100651)),	-- Grievous Gladiator's Cape of Cruelty
@@ -6381,83 +6381,83 @@ _.PVP =
 								}),
 							}),
 							cl(SHAMAN, {
-								i(100145, {	-- Grievous Gladiator's Linked Armor
+								i(102956, {	-- Grievous Gladiator's Linked Armor
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(100128, {	-- Grievous Gladiator's Linked Gauntlets
+								i(102939, {	-- Grievous Gladiator's Linked Gauntlets
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(100100, {	-- Grievous Gladiator's Linked Helm
+								i(102911, {	-- Grievous Gladiator's Linked Helm
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(100164, {	-- Grievous Gladiator's Linked Leggings
+								i(102975, {	-- Grievous Gladiator's Linked Leggings
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(100012, {	-- Grievous Gladiator's Linked Spaulders
+								i(102826, {	-- Grievous Gladiator's Linked Spaulders
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(100129, {	-- Grievous Gladiator's Mail Armor
+								i(102940, {	-- Grievous Gladiator's Mail Armor
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(100078, {	-- Grievous Gladiator's Mail Gauntlets
+								i(102889, {	-- Grievous Gladiator's Mail Gauntlets
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(100079, {	-- Grievous Gladiator's Mail Helm
+								i(102890, {	-- Grievous Gladiator's Mail Helm
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(100167, {	-- Grievous Gladiator's Mail Leggings
+								i(102978, {	-- Grievous Gladiator's Mail Leggings
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(100020, {	-- Grievous Gladiator's Mail Spaulders
+								i(102834, {	-- Grievous Gladiator's Mail Spaulders
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(100103, {	-- Grievous Gladiator's Ringmail Armor
+								i(102914, {	-- Grievous Gladiator's Ringmail Armor
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(100160, {	-- Grievous Gladiator's Ringmail Gauntlets
+								i(102971, {	-- Grievous Gladiator's Ringmail Gauntlets
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(100104, {	-- Grievous Gladiator's Ringmail Helm
+								i(102915, {	-- Grievous Gladiator's Ringmail Helm
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(100105, {	-- Grievous Gladiator's Ringmail Leggings
+								i(102916, {	-- Grievous Gladiator's Ringmail Leggings
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(100039, {	-- Grievous Gladiator's Ringmail Spaulders
+								i(102852, {	-- Grievous Gladiator's Ringmail Spaulders
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
 							}),
 							cl(WARLOCK, {
-								i(100068, {	-- Grievous Gladiator's Felweave Amice
+								i(102879, {	-- Grievous Gladiator's Felweave Amice
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(100112, {	-- Grievous Gladiator's Felweave Cowl
+								i(102923, {	-- Grievous Gladiator's Felweave Cowl
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(100111, {	-- Grievous Gladiator's Felweave Handguards
+								i(102922, {	-- Grievous Gladiator's Felweave Handguards
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(100045, {	-- Grievous Gladiator's Felweave Raiment
+								i(102858, {	-- Grievous Gladiator's Felweave Raiment
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(100141, {	-- Grievous Gladiator's Felweave Trousers
+								i(102952, {	-- Grievous Gladiator's Felweave Trousers
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
 							}),
 							cl(WARRIOR, {
-								i(100114, {	-- Grievous Gladiator's Plate Chestpiece
+								i(102925, {	-- Grievous Gladiator's Plate Chestpiece
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(99992, {	-- Grievous Gladiator's Plate Gauntlets
+								i(102815, {	-- Grievous Gladiator's Plate Gauntlets
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(99993, {	-- Grievous Gladiator's Plate Helm
+								i(102816, {	-- Grievous Gladiator's Plate Helm
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(100118, {	-- Grievous Gladiator's Plate Legguards
+								i(102929, {	-- Grievous Gladiator's Plate Legguards
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(100071, {	-- Grievous Gladiator's Plate Shoulders
+								i(102882, {	-- Grievous Gladiator's Plate Shoulders
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
 							}),
@@ -6801,37 +6801,45 @@ _.PVP =
 						un(REMOVED_FROM_GAME, i(100428)),	-- Grievous Gladiator's Leather Leather Boots
 					}),
 					cl(SHAMAN, {
-						un(REMOVED_FROM_GAME, i(91369)),	-- Grievous Gladiator's Linked Armor
-						un(REMOVED_FROM_GAME, i(91371)),	-- Grievous Gladiator's Linked Gauntlets
-						un(REMOVED_FROM_GAME, i(91373)),	-- Grievous Gladiator's Linked Helm
-						un(REMOVED_FROM_GAME, i(91375)),	-- Grievous Gladiator's Linked Leggings
-						un(REMOVED_FROM_GAME, i(91377)),	-- Grievous Gladiator's Linked Spaulders
-						un(REMOVED_FROM_GAME, i(91381)),	-- Grievous Gladiator's Mail Armor
-						un(REMOVED_FROM_GAME, i(91383)),	-- Grievous Gladiator's Mail Gauntlets
-						un(REMOVED_FROM_GAME, i(91385)),	-- Grievous Gladiator's Mail Helm
-						un(REMOVED_FROM_GAME, i(91387)),	-- Grievous Gladiator's Mail Leggings
-						un(REMOVED_FROM_GAME, i(91389)),	-- Grievous Gladiator's Mail Spaulders
-						un(REMOVED_FROM_GAME, i(91359)),	-- Grievous Gladiator's Ringmail Armor
-						un(REMOVED_FROM_GAME, i(91361)),	-- Grievous Gladiator's Ringmail Gauntlets
-						un(REMOVED_FROM_GAME, i(91363)),	-- Grievous Gladiator's Ringmail Helm
-						un(REMOVED_FROM_GAME, i(91365)),	-- Grievous Gladiator's Ringmail Leggings
-						un(REMOVED_FROM_GAME, i(91367)),	-- Grievous Gladiator's Ringmail Spaulders
-						--Never
-						un(NEVER_IMPLEMENTED, i(91799)),	-- Grievous Gladiator's Mail Leggings
+						un(REMOVED_FROM_GAME, i(100459)),	-- Grievous Gladiator's Linked Armor
+						un(REMOVED_FROM_GAME, i(100461)),	-- Grievous Gladiator's Linked Gauntlets
+						un(REMOVED_FROM_GAME, i(100463)),	-- Grievous Gladiator's Linked Helm
+						un(REMOVED_FROM_GAME, i(100465)),	-- Grievous Gladiator's Linked Leggings
+						un(REMOVED_FROM_GAME, i(100467)),	-- Grievous Gladiator's Linked Spaulders
+						un(REMOVED_FROM_GAME, i(100471)),	-- Grievous Gladiator's Mail Armor
+						un(REMOVED_FROM_GAME, i(100473)),	-- Grievous Gladiator's Mail Gauntlets
+						un(REMOVED_FROM_GAME, i(100475)),	-- Grievous Gladiator's Mail Helm
+						un(REMOVED_FROM_GAME, i(100477)),	-- Grievous Gladiator's Mail Leggings
+						un(REMOVED_FROM_GAME, i(100479)),	-- Grievous Gladiator's Mail Spaulders
+						un(REMOVED_FROM_GAME, i(100449)),	-- Grievous Gladiator's Ringmail Armor
+						un(REMOVED_FROM_GAME, i(100451)),	-- Grievous Gladiator's Ringmail Gauntlets
+						un(REMOVED_FROM_GAME, i(100453)),	-- Grievous Gladiator's Ringmail Helm
+						un(REMOVED_FROM_GAME, i(100455)),	-- Grievous Gladiator's Ringmail Leggings
+						un(REMOVED_FROM_GAME, i(100457)),	-- Grievous Gladiator's Ringmail Spaulders
+						un(REMOVED_FROM_GAME, i(100311)),	-- Grievous Gladiator's Linked Waistband
+						un(REMOVED_FROM_GAME, i(100469)),	-- Grievous Gladiator's Mail Waistguard
+						un(REMOVED_FROM_GAME, i(100441)),	-- Grievous Gladiator's Ringmail Waistguard
+						un(REMOVED_FROM_GAME, i(100315)),	-- Grievous Gladiator's Linked Sabatons
+						un(REMOVED_FROM_GAME, i(100445)),	-- Grievous Gladiator's Mail Footguards
+						un(REMOVED_FROM_GAME, i(100443)),	-- Grievous Gladiator's Ringmail Footguards
 					}),
 					cl(WARLOCK, {
-						un(REMOVED_FROM_GAME, i(91429)),	-- Grievous Gladiator's Felweave Amice
-						un(REMOVED_FROM_GAME, i(91423)),	-- Grievous Gladiator's Felweave Cowl
-						un(REMOVED_FROM_GAME, i(91421)),	-- Grievous Gladiator's Felweave Handguards
-						un(REMOVED_FROM_GAME, i(91427)),	-- Grievous Gladiator's Felweave Raiment
-						un(REMOVED_FROM_GAME, i(91425)),	-- Grievous Gladiator's Felweave Trousers
+						un(REMOVED_FROM_GAME, i(100519)),	-- Grievous Gladiator's Felweave Amice
+						un(REMOVED_FROM_GAME, i(100513)),	-- Grievous Gladiator's Felweave Cowl
+						un(REMOVED_FROM_GAME, i(100511)),	-- Grievous Gladiator's Felweave Handguards
+						un(REMOVED_FROM_GAME, i(100517)),	-- Grievous Gladiator's Felweave Raiment
+						un(REMOVED_FROM_GAME, i(100515)),	-- Grievous Gladiator's Felweave Trousers
+						un(REMOVED_FROM_GAME, i(100208)),	-- Grievous Gladiator's Felweave Cord
+						un(REMOVED_FROM_GAME, i(100214)),	-- Grievous Gladiator's Felweave Treads
 					}),
 					cl(WARRIOR, {
-						un(REMOVED_FROM_GAME, i(91431)),	-- Grievous Gladiator's Plate Chestpiece
-						un(REMOVED_FROM_GAME, i(91433)),	-- Grievous Gladiator's Plate Gauntlets
-						un(REMOVED_FROM_GAME, i(91435)),	-- Grievous Gladiator's Plate Helm
-						un(REMOVED_FROM_GAME, i(91437)),	-- Grievous Gladiator's Plate Legguards
-						un(REMOVED_FROM_GAME, i(91439)),	-- Grievous Gladiator's Plate Shoulders
+						un(REMOVED_FROM_GAME, i(100521)),	-- Grievous Gladiator's Plate Chestpiece
+						un(REMOVED_FROM_GAME, i(100523)),	-- Grievous Gladiator's Plate Gauntlets
+						un(REMOVED_FROM_GAME, i(100525)),	-- Grievous Gladiator's Plate Helm
+						un(REMOVED_FROM_GAME, i(100527)),	-- Grievous Gladiator's Plate Legguards
+						un(REMOVED_FROM_GAME, i(100529)),	-- Grievous Gladiator's Plate Shoulders
+						un(REMOVED_FROM_GAME, i(100396)),	-- Grievous Gladiator's Plate Girdle
+						un(REMOVED_FROM_GAME, i(100398)),	-- Grievous Gladiator's Plate Warboots
 					}),
 					-- Further Note Waist is class specific
 					-- Further Note Feets is class specific
