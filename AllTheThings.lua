@@ -18643,6 +18643,10 @@ app.events.VARIABLES_LOADED = function()
 					-- Mark the quest as completed for the Account
 					accountWideData.Quests[questID] = 1;
 					if CompletedQuests[questID] then
+						-- Throw up a warning to report if this was already completed by another character
+						-- if accountWideData.OneTimeQuests[questID] and accountWideData.OneTimeQuests[questID] ~= app.GUID then
+						-- 	app.report("One-Time-Quest ID #" .. questID .. " was previously marked as completed, but is also completed on the current character!");
+						-- end
 						-- this once-per-account quest only counts for a specific character
 						accountWideData.OneTimeQuests[questID] = app.GUID;
 					end
@@ -18665,6 +18669,10 @@ app.events.VARIABLES_LOADED = function()
 					-- Mark the quest as completed for the Account
 					accountWideData.Quests[questID] = 1;
 					if CompletedQuests[questID] then
+						-- Throw up a warning to report if this was already completed by another character
+						-- if accountWideData.OneTimeQuests[questID] and accountWideData.OneTimeQuests[questID] ~= app.GUID then
+						-- 	app.report("One-Time-Quest ID #" .. questID .. " was previously marked as completed, but is also completed on the current character!");
+						-- end
 						-- this once-per-account quest only counts for a specific character
 						accountWideData.OneTimeQuests[questID] = app.GUID;
 					end
@@ -18711,9 +18719,9 @@ app.events.VARIABLES_LOADED = function()
 			-- If this Character has the Quest completed and it is not marked as completed for Account or not for specific Character
 			if CompletedQuests[questID] then
 				-- Throw up a warning to report if this was already completed by another character
-				if accountWideData.OneTimeQuests[questID] and accountWideData.OneTimeQuests[questID] ~= app.GUID then
-					app.report("One-Time-Quest ID #" .. questID .. " was previously marked as completed, but is also completed on the current character!");
-				end
+				-- if accountWideData.OneTimeQuests[questID] and accountWideData.OneTimeQuests[questID] ~= app.GUID then
+				-- 	app.report("One-Time-Quest ID #" .. questID .. " was previously marked as completed, but is also completed on the current character!");
+				-- end
 				-- Mark the quest as completed for the Account
 				accountWideData.Quests[questID] = 1;
 				-- Mark the character which completed the Quest
