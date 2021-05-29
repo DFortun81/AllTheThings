@@ -201,7 +201,7 @@ _.Zones =
 									},
 								}),
 								i(147691, {	-- Ensemble: Cruel Combatant's Plate Armor (H)
-									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+									["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -660, 1 },	-- Season 3
