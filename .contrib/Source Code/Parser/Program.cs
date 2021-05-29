@@ -214,7 +214,7 @@ namespace ATT
         public static int GetLineNumber(Exception ex)
         {
             var s = ex.Message.Split(':');
-            if (int.TryParse(s[1], out int line)) return line;
+            if (s.Length > 1 && int.TryParse(s[1], out int line)) return line;
             return -1;
         }
 

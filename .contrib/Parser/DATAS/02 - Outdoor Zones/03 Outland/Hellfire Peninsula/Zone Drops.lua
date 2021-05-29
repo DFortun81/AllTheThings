@@ -20,6 +20,9 @@ _.Zones =
 						{ 25.64, 75.25, HELLFIRE_PENINSULA },
 					},
 				}),
+				i(31347, {	-- Bleeding Hollow Torch
+					["cr"] = 16907,	-- Bleeding Hollow Peon
+				}),
 				i(30327, {	-- Bonechewer Blood
 					["crs"] = {
 						19701,	-- Bonechewer Evoker
@@ -28,6 +31,12 @@ _.Zones =
 						18952,	-- Bonechewer Scavenger
 					},
 					["races"] = HORDE_ONLY,
+				}),
+				i(31346, {	-- Burning Bleeding Hollow Torch
+					["coord"] = { 69, 69, HELLFIRE_PENINSULA },
+					["cost"] = {
+						{ "i", 31347, 1 },	-- Bleeding Hollow Torch
+					},
 				}),
 				i(29588, {	-- Burning Legion Missive [Alliance]
 					["cr"] = 19298,	-- Warbringer Arix'Amal
@@ -64,13 +73,6 @@ _.Zones =
 						16992,	-- Dreadtusk
 						16880,	-- Hulking Helboar
 					},
-				}),
-				i(23589, {	-- Mag'har Ancestral Beads
-					["crs"] = {
-						16847,	-- Debilitated Mag'har Grunt
-						16846,	-- Mag'har Grunt
-					},
-					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
 		}),

@@ -7,6 +7,13 @@ _.Zones =
 	m(EASTERN_KINGDOMS, {
 		m(17, {	-- Blasted Lands
 			n(VENDORS, {
+				n(3546, {	-- Bernie Heisten <Food & Drink>
+					["coord"] = { 63.5, 17.0, 17 },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(23848),	-- Nethergarde Bitter
+					},
+				}),
 				n(8178, {	-- Nina Lightbrew <Alchemy Supplies>
 					["coord"] = { 62.5, 16.0, 17 },
 					["races"] = ALLIANCE_ONLY,
