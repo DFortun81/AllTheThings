@@ -526,7 +526,6 @@ _.NeverImplemented =
 			i(23433),	-- Blood Robes
 			i(23434),	-- Robes of the Shard
 			i(25793),	-- Curate's Footwraps
-			i(25970),	-- Shalassi Oracle's Sandals (removed in beta)
 			i(26015),	-- Anchorite Neophyte's Cuffs
 			i(27720),	-- Robes of the Aldor
 			i(30287),	-- Mantle of Arcane Mastery

@@ -258,18 +258,6 @@ _.Zones =
 					["coord"] = { 71.6, 87.6, SHADOWMOON_VALLEY },
 					["description"] = "Available once you reach Friendly with Netherwing.",
 				}),
-				i(32724, {	-- Sludge-Covered Object (The Great Murkblood Revolt)
-					["crs"] = { 23286 },	-- Black Blood of Draenor
-					["coord"] = { 65.3, 89.9, SHADOWMOON_VALLEY },	-- Entrance
-					["groups"] = {
-						q(11081, {	-- The Great Murkblood Revolt
-							["provider"] = { "i", 32726 },	-- Murkblood Escape Plans
-							-- ["sourceQuests"] = {  },	-- TODO: pretty sure this has a source quest... opened like 30 sludge objects once i hit friendly. later i did a couple other quests and got the plans after 2 objects
-							["minReputation"] = { 1015, FRIENDLY },
-							["description"] = "The plans can be found inside Sludge-Covered Object, looted from Black Bloods inside the mines.  You must be at least Friendly with Netherwing to loot them.",
-						}),
-					},
-				}),
 				q(11082, {	-- Seeker of Truth
 					["provider"] = { "n", 23149 },	-- Mistress of the Mines
 					["sourceQuests"] = { 11081 },	-- The Great Murkblood Revolt
@@ -1009,9 +997,6 @@ _.Zones =
 					["coord"] = { 36.5, 55.2, SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(10815, {	-- The Journal of Val'zareq: Portends of War (NYI - never left Beta)
-					["u"] = NEVER_IMPLEMENTED,
-				}),
 				q(10677, {	-- The Second Course...
 					["provider"] = { "n", 21777 },	-- Gnomus
 					["coord"] = { 36.5, 55.2, SHADOWMOON_VALLEY },
@@ -1192,6 +1177,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 10611 },	-- The Art of Fel Reaver Maintenance
 				}),
+				q(11081, {	-- The Great Murkblood Revolt
+					["provider"] = { "i", 32726 },	-- Murkblood Escape Plans
+					-- ["sourceQuests"] = {  },	-- TODO: pretty sure this has a source quest... opened like 30 sludge objects once i hit friendly. later i did a couple other quests and got the plans after 2 objects
+					["description"] = "The plans can be found inside Sludge-Covered Object, looted from Black Bloods inside the mines.  You must be at least Friendly with Netherwing to loot them.",
+					["minReputation"] = { 1015, FRIENDLY },
+				}),
 				q(10680, {	-- The Hand of Gul'dan (A)
 					["provider"] = { "n", 21937 },	-- Earthmender Sophurus
 					["coord"] = { 36.3, 56.9, SHADOWMOON_VALLEY },
@@ -1350,6 +1341,8 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 10751 },	-- Breaching the Path
 				}),
+				-- #if AFTER MOP
+				-- Crieve note: Thinking this is gonna move to a special section in events or something.
 				q(32324, {	-- Seek the Signal
 					["sourceQuest"] = 32317,	-- Seeking the Soulstones
 					["classes"] = { WARLOCK },
@@ -1389,23 +1382,30 @@ _.Zones =
 						497,	-- The Black Temple (Temple Summit)
 					},
 				}),
-				q(32341, {	-- Demonstrate Your Power
-					["sourceQuest"] = 32325,	-- Infiltrating the Black Temple
-					["classes"] = { WARLOCK },
-					["lvl"] = 90,
-					["maps"] = {
-						490,	-- The Black Temple (Illidari Training Grounds)
-						491,	-- The Black Temple (Karabor Sewers)
-						492,	-- The Black Temple (Sanctuary of Shadows)
-						493,	-- The Black Temple (Halls of Anguish)
-						494,	-- The Black Temple (Gorefiend's Vigil)
-						495,	-- The Black Temple (Den of Mortal Delights)
-						496,	-- The Black Temple (Chamber of Command)
-						497,	-- The Black Temple (Temple Summit)
-					},
-					["u"] = NEVER_IMPLEMENTED,
-				}),
+				-- #endif
 			}),
 		}),
 	})),
 };
+
+
+-- #if AFTER TBC
+-- These quests trigger after specific events occur in the zone.
+_.HiddenQuestTriggers = {
+	
+};
+
+-- These quests never made it in.
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(10871),	-- BETA Ally of the Netherwing
+		q(10815),	-- BETA The Journal of Val'zareq: Portends of War
+		q(10872),	-- BETA Zuluhed the Whacked
+		-- #if AFTER MOP
+		q(32341, {	-- Demonstrate Your Power [Warlock Only]
+			i(93387),	-- Akama's Seal of Courage
+		}),
+		-- #endif
+	}),
+});
+-- #endif

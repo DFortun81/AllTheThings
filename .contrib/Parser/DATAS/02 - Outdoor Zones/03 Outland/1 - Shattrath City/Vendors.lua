@@ -34,7 +34,7 @@ _.Zones =
 							["f"] = 200,
 						}),
 						i(25846, {	-- Plans: Adamantite Rod
-							["u"] = NEVER_IMPLEMENTED,
+							["timeline"] = { "removed 5.0.4.10000" },
 						}),
 					},
 				}),

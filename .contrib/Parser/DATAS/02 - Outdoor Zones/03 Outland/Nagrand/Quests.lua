@@ -317,11 +317,6 @@ _.Zones =
 						i(25544),	-- Zerid's Vintage Musket
 					},
 				}),
-				q(13800, {	-- Get My Keys
-					["provider"] = { "n", 33801 },	-- Dr. Fingers
-					["sourceQuest"] = 13799,	-- Where Are My Keys?
-					["u"] = NEVER_IMPLEMENTED,
-				}),
 				q(9853,  {	-- Gurok the Usurper
 					["coord"] = { 60.0, 22.0, NAGRAND },
 					["provider"] = { "n", 18099 },	-- Gordawg <Fury of Earth>
@@ -361,9 +356,9 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(10212,  {	-- Hero of the Mag'har
-					["u"] = REMOVED_FROM_GAME,
+					["qg"] = 4949,	-- Thrall
+					["timeline"] = { "removed 4.0.1.13287" },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 4949 },	-- Thrall
 					["g"] = {
 						i(28173),	-- Mag'hari Huntsman's Leggings
 						i(28169),	-- Mag'hari Ritualist's Horns
@@ -980,10 +975,10 @@ _.Zones =
 					},
 				}),
 				q(10175,  {	-- Thrall, Son of Durotan
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 18141 },	-- Greatmother Geyah
+					["qg"] = 18141,	-- Greatmother Geyah
 					["sourceQuest"] = 10172,	-- There Is No Hope
+					["timeline"] = { "removed 4.0.1.13287" },
+					["races"] = HORDE_ONLY,
 				}),
 				q(10081, {	-- To Meet Mother Kashur
 					["provider"] = { "n", 18141 },	-- Greatmother Geyah
@@ -1076,10 +1071,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 10085,	-- A Visit With The Ancestors
 				}),
-				q(13799, {	-- Where Are My Keys?
-					["provider"] = { "n", 33801 },	-- Dr. Fingers
-					["u"] = NEVER_IMPLEMENTED,
-				}),
 				q(9854,  {	-- Windroc Mastery
 					["provider"] = { "n", 18200 },	-- Shado 'Fitz' Farstrider
 					["coord"] = { 71.6, 40.5, NAGRAND },
@@ -1107,3 +1098,19 @@ _.Zones =
 		}),
 	})),
 };
+
+
+-- #if AFTER TBC
+-- These quests trigger after specific events occur in the zone.
+_.HiddenQuestTriggers = {
+	
+};
+
+-- These quests never made it in.
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(13800),	-- Get My Keys
+		q(13799),	-- Where Are My Keys?
+	}),
+});
+-- #endif

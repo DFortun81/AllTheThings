@@ -1145,3 +1145,18 @@ _.Zones =
 		}),
 	})),
 };
+
+
+-- #if AFTER TBC
+-- These quests trigger after specific events occur in the zone.
+_.HiddenQuestTriggers = {
+	
+};
+
+-- These quests never made it in.
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		
+	}),
+});
+-- #endif

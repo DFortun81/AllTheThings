@@ -90,21 +90,6 @@ _.Zones =
 						i(32720),	-- Time-Lost Offering
 					},
 				}),
-				q(11072, {	-- Adversarial Blood (was replaced by Adversarial Blood (ID 11885)
-					["provider"] = { "n", 23306 },	-- Hazzik
-					["sourceQuest"] = 11029,	-- A Shabby Disguise
-					["coord"] = { 64.2, 66.9, TEROKKAR_FOREST },
-					["cost"] = {
-						{ "i", 32715, 1 },	-- Akkarai's Talons
-						{ "i", 32716, 1 },	-- Gezzarak's Claws
-						{ "i", 32717, 1 },	-- Karrog's Spine
-						{ "i", 32718, 1 },	-- Vakkiz's Scale
-					},
-					["u"] = REMOVED_FROM_GAME,
-					["groups"] = {
-						i(32720),	-- Time-Lost Offering
-					},
-				}),
 				q(11029, {	-- A Shabby Disguise
 					["provider"] = { "n", 23306 },	-- Hazzik
 					["sourceQuest"] = 11056,	-- Hazzik's Bargain
@@ -252,14 +237,6 @@ _.Zones =
 						i(25926),	-- Nexus-Stalker's Band
 					},
 				}),
-				q(9989,  {	-- Alien Spirits
-					["u"] = REMOVED_FROM_GAME,
-				}),
-				q(10871, {	-- Ally of the Netherwing
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 22112 },	-- Karynaku
-				}),
 				q(10913, {	-- An Improper Burial -- aa
 					["provider"] = { "n", 22446 },	-- Commander Ra'vaj
 					["coord"] = { 31.0, 76.1, TEROKKAR_FOREST },
@@ -366,9 +343,6 @@ _.Zones =
 						i(31817),	-- Dragonbone Shoulders
 						i(31818),	-- Dragonbone Talisman
 					},
-				}),
-				q(10925, {	-- Evil Draws Near (NYI - never left beta)
-					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(10228, {	-- Ezekiel
 					["provider"] = { "n", 19417 },	-- Ramdor the Mad
@@ -531,16 +505,6 @@ _.Zones =
 					["coord"] = { 57.0, 53.6, TEROKKAR_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 9994,	-- What Are These Things?
-				}),
-				q(9980,  {	-- Rescue Deirom!
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						un(NEVER_IMPLEMENTED, i(25967)),	-- Eagle Crested Pauldrons
-						un(NEVER_IMPLEMENTED, i(25968)),	-- Shalassi Sentry's Epaulets
-						un(NEVER_IMPLEMENTED, i(25969)),	-- Rapscallion's Touch
-						un(NEVER_IMPLEMENTED, i(25970)),	-- Shalassi Oracle's Sandals
-					},
 				}),
 				q(10926, {	-- Return to Sha'tari Base Camp
 					["provider"] = { "n", 22462 },	-- Vindicator Haylen
@@ -725,13 +689,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 10000,	-- An Unwelcome Presence
 				}),
-				q(10992, {	-- The Hawk's Essence
-					["u"] = REMOVED_FROM_GAME,
+				q(10992, bubbleDown({ ["timeline"] = { "removed 4.0.1.13287" } }, {	-- The Hawk's Essence
 					["classes"] = { DRUID },
 					["groups"] = {
-						un(REMOVED_FROM_GAME, i(32481)),	-- Charm of Swift Flight
+						i(32481),	-- Charm of Swift Flight
 					},
-				}),
+				})),
 				q(10896, {	-- The Infested Protectors -- aa
 					["provider"] = { "n", 22420 },	-- Lakotae
 					["coord"] = { 37.9, 51.7, TEROKKAR_FOREST },
@@ -741,7 +704,9 @@ _.Zones =
 					["coord"] = { 37.6, 50.8, TEROKKAR_FOREST },
 					["sourceQuest"] = 10880,	-- Cabal Orders
 					["groups"] = {
-						un(REMOVED_FROM_GAME, i(31730)),	-- Heirloom Signet of Convalescence
+						i(31730, {	-- Heirloom Signet of Convalescence
+							["timeline"] = { "removed 3.2.0.10000" },
+						}),
 						i(31729),	-- Heirloom Signet of Valor
 						i(31728),	-- Heirloom Signet of Willpower
 					},
@@ -761,9 +726,6 @@ _.Zones =
 					["coord"] = { 37.5, 50.8, TEROKKAR_FOREST },
 					-- TODO: verify sourceQuest. I was able to pick it up without doing Missing Friends as of 8.Dec.2019. Friendly with lower city, "Sha'tari Base Camp" quests completed
 					--["sourceQuest"] = 10852,	-- Missing Friends
-				}),
-				q(10841, {	-- The Vengeful Harbinger
-					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(10869, {	-- Thin the Flock
 					["provider"] = { "n", 18713 },	-- Lieutenant Gravelhammer
@@ -957,12 +919,95 @@ _.Zones =
 						{ 50.6, 29.2, TEROKKAR_FOREST },
 					},
 				}),
-				q(10872, {	-- Zuluhed the Whacked
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "n", 22112 },	-- Karynaku
-				}),
 			}),
 		}),
 	})),
 };
+
+
+-- #if AFTER TBC
+-- These quests trigger after specific events occur in the zone.
+_.HiddenQuestTriggers = {
+	
+};
+
+-- These quests never made it in.
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(10048),	-- A Handful of Magic Dust BETA
+		q(10049),	-- A Handful of Magic Dust BETA
+		q(9949),	-- BETA A Bird's-Eye View
+		q(9950),	-- BETA A Bird's-Eye View
+		q(9988, {	-- BETA A Dandy's Best Friend
+			i(28499),	-- Arakkoa Hunter's Supplies
+		}),
+		q(9965),	-- BETA A Show of Good Faith
+		q(9966),	-- BETA A Show of Good Faith
+		q(9989, {	-- BETA Alien Spirits
+			i(28499),	-- Arakkoa Hunter's Supplies
+		}),
+		q(10925),	-- BETA Evil Draws Near
+		q(9984),	-- BETA Host of the Hidden City
+		q(9985),	-- BETA Host of the Hidden City
+		q(9953),	-- BETA Lookout Nodak
+		q(10195, {	-- BETA Mercenary See, Mercenary Do
+			i(28499),	-- Arakkoa Hunter's Supplies
+		}),
+		q(10196, {	-- BETA More Arakkoa Feathers
+			i(28499),	-- Arakkoa Hunter's Supplies
+		}),
+		q(9975),	-- BETA Primal Magic
+		q(9976),	-- BETA Primal Magic
+		q(9952),	-- BETA Prospector Balmoral
+		q(9980,  {	-- BETA Rescue Deirom!
+			i(25967),	-- Eagle Crested Pauldrons
+			i(25968),	-- Shalassi Sentry's Epaulets
+			i(25969),	-- Rapscallion's Touch
+			i(25970),	-- Shalassi Oracle's Sandals
+		}),
+		q(9981,  {	-- BETA Rescue Deirom!
+			i(25967),	-- Eagle Crested Pauldrons
+			i(25968),	-- Shalassi Sentry's Epaulets
+			i(25969),	-- Rapscallion's Touch
+			i(25970),	-- Shalassi Oracle's Sandals
+		}),
+		q(9947, {	-- BETA Return to Rokag
+			i(25967),	-- Eagle Crested Pauldrons
+			i(25968),	-- Shalassi Sentry's Epaulets
+			i(25969),	-- Rapscallion's Touch
+			i(25970),	-- Shalassi Oracle's Sandals
+		}),
+		q(9943, {	-- BETA Return to Thander
+			i(25967),	-- Eagle Crested Pauldrons
+			i(25968),	-- Shalassi Sentry's Epaulets
+			i(25969),	-- Rapscallion's Touch
+			i(25970),	-- Shalassi Oracle's Sandals
+		}),
+		q(9958),	-- BETA Scouting the Defenses
+		q(9959),	-- BETA Scouting the Defenses
+		q(9963),	-- BETA Seeking Help from the Source
+		q(9964),	-- BETA Seeking Help from the Source
+		q(9969, {	-- BETA The Final Reagents
+			-- These quest items are available from 'Veil Shalas: Signal Fires'. :)
+			--i(25966),	-- Arakkoa Sage's Shawl
+			--i(25965),	-- Cloak of Grasping Talons
+			--i(25963),	-- Kokorek's Signet
+		}),
+		q(9974, {	-- BETA The Final Reagents
+			-- These quest items are available from 'Veil Shalas: Signal Fires'. :)
+			--i(25966),	-- Arakkoa Sage's Shawl
+			--i(25965),	-- Cloak of Grasping Talons
+			--i(25963),	-- Kokorek's Signet
+		}),
+		q(10014),	-- BETA The Firewing Point Project
+		q(10015),	-- BETA The Firewing Point Project
+		q(9929),	-- BETA The Missing Merchant
+		q(9930),	-- BETA The Missing Merchant
+		q(10029),	-- BETA The Spirits Are Calling
+		q(10841),	-- BETA The Vengeful Harbringer
+		q(9941),	-- BETA Tracking Down the Culprits
+		q(9942),	-- BETA Tracking Down the Culprits
+		q(11072),	-- OLD Adversarial Blood
+	}),
+});
+-- #endif
