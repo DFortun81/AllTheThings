@@ -6535,6 +6535,9 @@ end
 app.GetFactionStandingText = function(standingID)
 	return app.ColorizeStandingText(standingID, _G["FACTION_STANDING_LABEL" .. standingID] or UNKNOWN);
 end
+app.IsFactionExclusive = function(factionID)
+	return factionID == 934 or factionID == 932;
+end
 local cache = {};
 local function GetCached(t, field)
 	if not t[t["key"]] then return nil; end
@@ -10108,7 +10111,8 @@ function app.FilterItemClass(item)
 			and app.RequireBindingFilter(item)
 			and app.RequiredSkillFilter(item)
 			and app.ClassRequirementFilter(item)
-			and app.RaceRequirementFilter(item);
+			and app.RaceRequirementFilter(item)
+			and app.RequireFactionFilter(item);
 	end
 end
 function app.FilterItemClass_RequireClasses(item)
@@ -10171,6 +10175,18 @@ function app.FilterItemClass_RequiredSkill(item)
 	local requireSkill = item.requireSkill;
 	if requireSkill and (not item.professionID or not GetRelativeValue(item, "DontEnforceSkillRequirements") or item.b == 1) then
 		return app.GetTradeSkillCache()[requireSkill];
+	else
+		return true;
+	end
+end
+function app.FilterItemClass_RequireFaction(item)
+	if item.minReputation and app.IsFactionExclusive(item.minReputation[1]) then
+		if item.minReputation[2] >= (select(6, GetFactionInfoByID(item.minReputation[1])) or 0) then
+			--print("Filtering Out", item.key, item[item.key], item.text, item.minReputation[1], app.CreateFaction(item.minReputation[1]).text);
+			return false;
+		else
+			return true;
+		end
 	else
 		return true;
 	end
@@ -10528,6 +10544,7 @@ app.ClassRequirementFilter = app.NoFilter;
 app.RaceRequirementFilter = app.NoFilter;
 app.RequireBindingFilter = app.NoFilter;
 app.SeasonalItemFilter = app.NoFilter;
+app.RequireFactionFilter = app.FilterItemClass_RequireFaction;
 app.UnobtainableItemFilter = app.NoFilter;
 app.RequiredSkillFilter = app.NoFilter;
 app.ShowIncompleteThings = app.Filter;
