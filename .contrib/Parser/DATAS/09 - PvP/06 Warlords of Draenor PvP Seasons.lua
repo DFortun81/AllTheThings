@@ -4043,7 +4043,10 @@ _.PVP =
 									i(125492, {	-- Wild Combatant's Hacker (H)
 										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 									}),
-									i(125492, {	-- Wild Combatant's Longbow (H)
+									i(125368, {	-- Wild Combatant's Heavy Crossbow (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(125367, {	-- Wild Combatant's Longbow (H)
 										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 									}),
 									i(125370, {	-- Wild Combatant's Pike (H)
