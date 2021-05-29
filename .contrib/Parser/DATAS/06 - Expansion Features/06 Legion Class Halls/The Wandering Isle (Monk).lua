@@ -804,3 +804,38 @@ _.ExpansionFeatures =
 		}),
 	}),
 };
+
+
+-- #if AFTER TBC
+-- These quests trigger after specific events occur in the zone.
+_.HiddenQuestTriggers = {
+	q(40516),	-- Monk Order Hall - The Dawning Bit (Triggered after accepting The Dawning Light)
+	q(40638),	-- Monk Order Hall - Windwalker Chosen
+	q(40639),	-- Monk Order Hall - Mistweaver Chosen
+	q(40640),	-- Monk Order Hall - Brewmaster Chosen
+	q(40655),	-- Monk Order Hall - Li Li — hopping on kite during "Off to Adventure!"
+	q(41812),	-- Monk Order Hall - Tracking Quest: Saw Boss Cinematic — cinematic during #41732, "The Hand of Keletress"
+	q(41873),	-- Monk Order Hall - The Mead Master (obsolete or NYI version, triggers with #41038 version)
+	q(41858),	-- Monk Order Hall - No Monk Left Behind (obsolete or NYI version, triggers with #41852 version)
+	q(43065),	-- Monk Order Hall - Tracking Quest: Vrykul Scouting 1 — during "Tracking the Tideskorn"
+	q(43066),	-- Monk Order Hall - Tracking Quest: Vrykul Scouting 2 — during "Tracking the Tideskorn"
+	q(43067),	-- Monk Order Hall - Tracking Quest: Vrykul Scouting 3 — during "Tracking the Tideskorn"
+	q(43068),	-- Monk Order Hall - Tracking Quest: Vrykul Scouting 4 — during "Tracking the Tideskorn"
+	q(43069),	-- Monk Order Hall - Tracking Quest: Vrykul Scouting 5 — during "Tracking the Tideskorn"
+	q(43970),	-- Monk Order Hall - Brewmaster Chosen
+	q(43971),	-- Monk Order Hall - Windwalker Chosen
+	q(43972),	-- Monk Order Hall - Mistweaver Chosen
+	q(44427),	-- Monk Order Hall - Brewmaster Chosen
+	q(44428),	-- Monk Order Hall - Mistweaver Chosen
+	q(44429),	-- Monk Order Hall - Windwalker Chosen
+	q(44646),	-- Monk Order Hall - Tracking Quest: 7.0 Class Hall - Monk - Pacing Mission 1 - Unlocks Ch 2
+	q(46939),	-- Monk Order Hall - Monk Finale (Ban-Lu mount cutscene)
+};
+
+-- These quests never made it in.
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		
+	}),
+});
+-- #endif

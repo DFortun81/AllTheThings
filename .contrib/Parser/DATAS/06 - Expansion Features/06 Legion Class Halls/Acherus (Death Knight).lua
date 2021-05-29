@@ -558,3 +558,30 @@ _.ExpansionFeatures =
 		}),
 	}),
 };
+
+
+-- #if AFTER TBC
+-- These quests trigger after specific events occur in the zone.
+_.HiddenQuestTriggers = {
+		q(40722),	-- Death Knight Order Hall - Blood Artifact Chosen
+		q(40936),	-- Death Knight Order Hall - Convincing Revil Kost to help during 'Apocalypse' (40930)
+		q(40986),	-- Death Knight Order Hall - Completed 'The Dark Riders' (40934) / Unlocked Apocalypse DK-Unholy Artifact
+		q(40987),	-- Death Knight Order Hall - Completed 'The Call of Vengeance' (40935)
+		q(43965),	-- Death Knight Order Hall - Blood Artifact Chosen second
+		q(43966),	-- Death Knight Order Hall - Frost Artifact Chosen
+		q(44404),	-- Death Knight Order Hall - Unholy Artifact Chosen
+		q(44592),	-- Death Knight Order Hall - Mission Table - Unholy Attainment: Essence of Undeath
+		q(44593),	-- Death Knight Order Hall - Mission Table - Unholy Attainment: Essence of Fear
+		q(44594),	-- Death Knight Order Hall - Mission Table - Unholy Attainment: Essence of Shadow
+		q(44595),	-- Death Knight Order Hall - Mission Table - Unholy Attainment: Essence of Hatred
+		q(44596),	-- Death Knight Order Hall - Mission Table - Unholy Attainment: Essence of Darkness
+		q(44637),	-- Death Knight Order Hall - Track Quest: 7.0 Class Hall - Death Knight - Pacing Mission 1 (Ch 1.5) - Triggers when "Salanar the Horseman" mission is completed
+};
+
+-- These quests never made it in.
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		
+	}),
+});
+-- #endif

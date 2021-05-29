@@ -1132,3 +1132,44 @@ _.ExpansionFeatures =
 		}),
 	}),
 };
+
+
+-- #if AFTER TBC
+-- These quests trigger after specific events occur in the zone.
+_.HiddenQuestTriggers = {
+	q(40701),	-- Druid Order Hall - Feral Chosen (First)
+	q(40702),	-- Druid Order Hall - Guardian Chosen (First)
+	q(40703),	-- Druid Order Hall - Restoration Chosen (First)
+	q(40781),	-- Druid Order Hall - Balance Chosen (First)
+	q(41194),	-- Druid Order Hall - Remulos Tracker - When you enter the Dreamway the first time
+	q(41885),	-- Druid Order Hall - Naralex Kneel Seen — drinking the potion while next to Naralex during #41436, "In Deep Slumber"
+	q(42361),	-- Druid Order Hall - Tracking Quest: Chose Sylendra - Part of Defenders of the Dream (42050)
+	q(42363),	-- Druid Order Hall - Tracking Quest: Chose Mylune - Part of Defenders of the Dream (42050)
+	q(42513),	-- Druid Order Hall - Ashamane's Fall — landing and approaching RPing NPCs at the start of #42428, "The Shrine of Ashamane"
+	q(43353),	-- Druid Order Hall - Gathering the Dreamweavers: Celestine of the Harvest
+	q(43354),	-- Druid Order Hall - Gathering the Dreamweavers: Thisalee Crow
+	q(43355),	-- Druid Order Hall - Gathering the Dreamweavers: Matoclaw
+	q(43356),	-- Druid Order Hall - Gathering the Dreamweavers: Talza
+	q(43357),	-- Druid Order Hall - Gathering the Dreamweavers: Graham Silverclaw
+	q(43976),	-- Druid Order Hall - Balance Chosen (Second)
+	q(43977),	-- Druid Order Hall - Guardian Chosen (Second)
+	q(43978),	-- Druid Order Hall - Feral Chosen (Second)
+	q(43979),	-- Druid Order Hall - Resto Chosen (second)
+	q(44432),	-- Druid Order Hall - Balance Chosen (Third)
+	q(44433),	-- Druid Order Hall - Feral Chosen (Third)
+	q(44434),	-- Druid Order Hall - Guardian Chosen (Third)
+	q(44436),	-- Druid Order Hall - Resto Chosen (third)
+	q(44444),	-- Druid Order Hall - Balance Chosen (Forth)
+	q(44445),	-- Druid Order Hall - Feral Chosen (Forth)
+	q(44446),	-- Druid Order Hall - Guardian Chosen (Forth)
+	q(44447),	-- Druid Order Hall - Resto Chosen (fourth)
+	q(44642),	-- Druid Order Hall - Tracking Quest: 7.0 Class Hall - Druid - Pacing Mission 1A. Triggers when completing mission table quest (Sampling the Nightmare) for Sampling the Nightmare (42032)
+};
+
+-- These quests never made it in.
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		
+	}),
+});
+-- #endif

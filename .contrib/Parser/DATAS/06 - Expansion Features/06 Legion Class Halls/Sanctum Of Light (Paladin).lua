@@ -704,3 +704,41 @@ _.ExpansionFeatures =
 		}),
 	}),
 };
+
+
+-- #if AFTER TBC
+-- These quests trigger after specific events occur in the zone.
+_.HiddenQuestTriggers = {
+	q(38229),	-- Paladin Order Hall - Triggered after recruiting Lord Maxwell Tyrosus for paladin order hall
+	q(38713),	-- Paladin Order Hall - The Crusade Calls. Triggered with An Urgent Gathering 38710
+	q(40409),	-- Paladin Order Hall - Ashbringer Chosen (Retribution)
+	q(40410),	-- Paladin Order Hall - Silver Hand Chosen (Holy)
+	q(40411),	-- Paladin Order Hall - Truthguard Chosen (Protection)
+	q(42135),	-- Paladin Order Hall - Tracking Quest: Chose Strategy C (choice for 42919 The Scion's Legacy)
+	q(42136),	-- Paladin Order Hall - Tracking Quest: Chose Strategy A (choice for 42919 The Scion's Legacy)
+	q(42352),	-- Paladin Order Hall - Tracking Quest: Lumenstone 3
+	q(42495),	-- Paladin Order Hall - Ashbringer Chosen (Retribution)
+	q(42496),	-- Paladin Order Hall - Truthguard Chosen (Protection)
+	q(42497),	-- Paladin Order Hall - Silver Hand Chosen (Holy)
+	q(42812),	-- Paladin Order Hall - We Meet at Light's Hope. Triggered together with 42811 version
+	q(42960),	-- Paladin Order Hall - Tracking Quest: Chose Strategy B (choice for 42919 The Scion's Legacy)
+	q(42961),	-- Paladin Order Hall - Tracking Quest: Chose Strategy D (choice for 42919 The Scion's Legacy)
+	q(43578),	-- Paladin Order Hall - Looted Paladin daily mount
+	q(44064),	-- Paladin Order Hall - Silver Hand Chosen Second (Holy)
+	q(44066),	-- Paladin Order Hall - Ashbringer Chosen Second (Retribution)
+	q(44373),	-- Paladin Order Hall - Ashbringer Chosen Third (Retribution)
+	q(44426),	-- Paladin Order Hall - Talking Pair Flavor Heard. Triggered after Silver Hand Protector said "All the world's paladins united under one..." in the paladin hall
+	q(44458),	-- Paladin Order Hall - Tracking Quest: Blood of Our Enemy 1
+	q(44459),	-- Paladin Order Hall - Tracking Quest: Blood of Our Enemy 2
+	q(44460),	-- Paladin Order Hall - Tracking Quest: Blood of Our Enemy 3
+	q(44461),	-- Paladin Order Hall - Tracking Quest: Blood of Our Enemy 4
+	q(44462),	-- Paladin Order Hall - Tracking Quest: Blood of Our Enemy 5
+};
+
+-- These quests never made it in.
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		
+	}),
+});
+-- #endif

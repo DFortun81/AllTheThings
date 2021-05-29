@@ -944,3 +944,43 @@ _.ExpansionFeatures =
 		}),
 	}),
 };
+
+
+-- #if AFTER TBC
+-- These quests trigger after specific events occur in the zone.
+_.HiddenQuestTriggers = {
+q(41079),	-- Mage Order Hall - Arcane chosen first
+	q(41080),	-- Mage Order Hall - Fire chosen first
+	q(41081),	-- Mage Order Hall - Frost chosen first
+	q(42727),	-- Mage Order Hall - Transition to Forge Quests (triggered after completing The Mage Hunter as first artifact weapon)
+	q(42976),	-- Mage Order Hall - Chapter 3 tracking - completed "Three is a lucky number" and saw the Arcane Destroyer be summoned
+	q(43442),	-- Mage Order Hall - Arcane chosen second
+	q(43443),	-- Mage Order Hall - Fire chosen second
+	q(43444),	-- Mage Order Hall - Frost chosen second
+	q(44307),	-- Mage Order Hall - Arcane chosen third
+	q(44308),	-- Mage Order Hall - Fire chosen third
+	q(44309),	-- Mage Order Hall - Frost chosen third
+	q(44467),	-- Mage Order Hall - Completed the "Oculus Preparations: A Nightmarish Situation" mission
+	q(44468),	-- Mage Order Hall - Completed the "Oculus Preparations: Communication Disruption" mission
+	q(44469),	-- Mage Order Hall - Completed the "Oculus Preparations: Ley Them Down" mission
+	q(44470),	-- Mage Order Hall - Completed the "Oculus Preparations: Eternos" mission
+	q(44472),	-- Mage Order Hall - Completed the "Oculus Preparations: On The Offensive" mission
+	q(44474),	-- Mage Order Hall - Completed the "Archmage Vargoth's Travels: The Nightborne Vault" mission
+	q(44475),	-- Mage Order Hall - Completed the "Archmage Vargoth's Travels: Ruins of Nar'thalas" mission
+	q(44476),	-- Mage Order Hall - Completed the "Archmage Vargoth's Travels: The Scholars of Tel'anor" mission
+	q(44477),	-- Mage Order Hall - Completed the "Archmage Vargoth's Travels: The Forests of Ashenvale" mission
+	q(44478),	-- Mage Order Hall - Completed the "Archmage Vargoth's Travels: Best Friends Forever" mission
+	q(44645),	-- Mage Order Hall - Completed the "Ancient Magic" mission
+	q(45914),	-- Mage Order Hall - Chapter 5 tracking - Soulstone Shielded. Triggers after completing "Keep it Secret, Keep it Safe"
+	q(46768),	-- Mage Order Hall - Akazamzarak 1 week cooldown. Triggered after completing "Champion: Aethas Sunreaver"
+	q(46776),	-- Mage Order Hall - Akazamzarak 1 week cooldown. Triggered after completing "Champion: Aethas Sunreaver". Duplicate?
+	q(47234),	-- Mage Order Hall - Unlocked the order hall storyline artifact appearance from "A Hero's Weapon"
+};
+
+-- These quests never made it in.
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		
+	}),
+});
+-- #endif

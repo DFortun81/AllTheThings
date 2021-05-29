@@ -759,3 +759,35 @@ _.ExpansionFeatures =
 		}),
 	}),
 };
+
+
+-- #if AFTER TBC
+-- These quests trigger after specific events occur in the zone.
+_.HiddenQuestTriggers = {
+	q(38275),	-- Shaman Order Hall - Tracking Quest: Return to Firelands 1 Mission Completed
+	q(41116),	-- Shaman Order Hall - Looting the Maelstrom Chest containing the Lave Fountain toy from Puzzlemaster Lo
+	q(42998),	-- Shaman Order Hall - Tracking Quest: Return to Firelands 2 Mission Completed
+	q(42999),	-- Shaman Order Hall - Tracking Quest: Return to Firelands 3 Mission Completed
+	q(43000),	-- Shaman Order Hall - Tracking Quest: Return to Firelands 4 Mission Completed
+	q(43001),	-- Shaman Order Hall - Tracking Quest: Return to Firelands 5 Mission Completed
+	q(43901),	-- Shaman Order Hall - Tracking Quest: All - Troop B Enabled
+	q(43946),	-- Shaman Order Hall - Enhancement Chosen Second
+	q(41329),	-- Shaman Order Hall - Elemental Chosen First
+	q(43947),	-- Shaman Order Hall - Elemental Chosen
+	q(43948),	-- Shaman Order Hall - Restoration Chosen Third
+	q(44396),	-- Shaman Order Hall - Tracking Quest: Thunderaan's Enemies 1
+	q(44397),	-- Shaman Order Hall - Tracking Quest: Thunderaan's Enemies 2
+	q(44398),	-- Shaman Order Hall - Tracking Quest: Thunderaan's Enemies 3
+	q(44399),	-- Shaman Order Hall - Tracking Quest: Thunderaan's Enemies 4
+	q(44499),	-- Shaman Order Hall - Snowfang Tracking Quest
+	q(44653),	-- Shaman Order Hall - Tracking Quest: 7.0 Class Hall - Shaman - Pacing Mission 1
+	q(44654),	-- Shaman Order Hall - Tracking Quest: 7.0 Class Hall - Shaman - Pacing Mission 2A-5
+};
+
+-- These quests never made it in.
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		
+	}),
+});
+-- #endif

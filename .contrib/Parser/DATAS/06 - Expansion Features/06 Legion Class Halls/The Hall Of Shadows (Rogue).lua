@@ -1022,3 +1022,42 @@ _.ExpansionFeatures =
 		}),
 	}),
 };
+
+
+-- #if AFTER TBC
+-- These quests trigger after specific events occur in the zone.
+_.HiddenQuestTriggers = {
+	q(40842),	-- Rogue Order Hall - Kingslayers Chosen
+	q(40843),	-- Rogue Order Hall - Dreadblades Chosen
+	q(40844),	-- Rogue Order Hall - Fangs of the Devourer Chosen
+	q(42061),	-- Rogue Order Hall - Charge Trigger Hit - triggered after leaving the citadel during the Fangs of the Devourer scenario
+	q(43634),	-- Rogue Order Hall - looted the rogue vault
+	q(43716),	-- Rogue Order Hall - loot spawned in the vault
+	q(43719),	-- Rogue Order Hall - Rare Item One Obtained (looted the Suspicious Crate toy)
+	q(44036),	-- Rogue Order Hall - Assassination Chosen second
+	q(44037),	-- Rogue Order Hall - Combat Chosen
+	q(44038),	-- Rogue Order Hall - Subtlety Chosen second
+	q(44376),	-- Rogue Order Hall - Assassination Chosen
+	q(44377),	-- Rogue Order Hall - Combat Chosen
+	q(44378),	-- Rogue Order Hall - Subtlety Chosen third
+	q(44615),	-- Rogue Order Hall - Tracking Quest: Mission 1 (complete first of 5 missions for order hall campaign) (probably a generic tracker ID rather than specific to rogue)
+	q(44617),	-- Rogue Order Hall - Tracking Quest: Mission 2 (complete second of 5 missions for order hall campaign) (probably a generic tracker ID rather than specific to rogue)
+	q(44618),	-- Rogue Order Hall - Tracking Quest: Mission 3 (complete third of 5 missions for order hall campaign) (probably a generic tracker ID rather than specific to rogue)
+	q(44619),	-- Rogue Order Hall - Tracking Quest: Mission 4 (complete fourth of 5 missions for order hall campaign) (probably a generic tracker ID rather than specific to rogue)
+	q(44620),	-- Rogue Order Hall - Tracking Quest: Mission 5 (complete fifth of 5 missions for order hall campaign) (probably a generic tracker ID rather than specific to rogue)
+	q(44621),	-- Rogue Order Hall - Tracking Quest: Mission 1
+	q(44622),	-- Rogue Order Hall - Tracking Quest: Mission 1
+	q(44651),	-- Rogue Order Hall - Tracking Quest: 7.0 Class Hall - Rogue - Chapter 1.5 - Pacing Mission (triggers when completing the "Spy Vs Spy" mission)
+	q(44652),	-- Rogue Order Hall - Tracking Quest: 7.0 Class Hall - Rogue - Chapter 2 - Troop B Recruiter Acquisition (triggers when completing the "Convincin' Old Yancey" mission)
+	q(45447),	-- Rogue Order Hall - give a Noggenfogger coin to Marin Noggenfogger
+	q(46790),	-- Rogue Order Hall - triggered when completing A Hero's Weapon (artifact appearances after finishing class campaigh)
+	q(50804),	-- Rogue Order Hall - opened way to the order hall for the first time during "Call of The Uncrowned"
+};
+
+-- These quests never made it in.
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		
+	}),
+});
+-- #endif

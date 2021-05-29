@@ -685,3 +685,33 @@ _.ExpansionFeatures =
 		}),
 	}),
 };
+
+
+-- #if AFTER TBC
+-- These quests trigger after specific events occur in the zone.
+_.HiddenQuestTriggers = {
+	q(40514),	-- Warlock Order Hall - Revil convinced
+	q(40686),	-- Warlock Order Hall - Affliction chosen first
+	q(43982),	-- Warlock Order Hall - Demonology chosen second
+	q(44389),	-- Warlock Order Hall - Affliction chosen third
+	q(44628),	-- Warlock Order Hall - Tracking Quest: Empowering the Soul 1
+	q(44629),	-- Warlock Order Hall - Tracking Quest: Empowering the Soul 2
+	q(44630),	-- Warlock Order Hall - Tracking Quest: Empowering the Soul 3
+	q(44631),	-- Warlock Order Hall - Tracking Quest: Empowering the Soul 4
+	q(44632),	-- Warlock Order Hall - Tracking Quest: Empowering the Soul 5
+	q(44438),	-- Warlock Order Hall - Tracking Quest: New Blood 1
+	q(44439),	-- Warlock Order Hall - Tracking Quest: New Blood 2
+	q(44440),	-- Warlock Order Hall - Tracking Quest: New Blood 3
+	q(44441),	-- Warlock Order Hall - Tracking Quest: New Blood 4
+	q(44442),	-- Warlock Order Hall - Tracking Quest: New Blood 5
+	q(44655),	-- Warlock Order Hall - "Searching the Archives" mission complete
+	q(44657),	-- Warlock Order Hall - "Information at any Cost" mission complete
+};
+
+-- These quests never made it in.
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		
+	}),
+});
+-- #endif

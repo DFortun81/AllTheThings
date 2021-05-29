@@ -660,3 +660,35 @@ _.ExpansionFeatures =
 		}),
 	}),
 };
+
+
+-- #if AFTER TBC
+-- These quests trigger after specific events occur in the zone.
+_.HiddenQuestTriggers = {
+	q(40708),	-- Priest Order Hall - Holy chosen first
+	q(40709),	-- Priest Order Hall - Discipline chosen first
+	q(42072),	-- Priest Order Hall - Boros Tracker during campaign quest 41967
+	q(42328),	-- Priest Order Hall - Tracking Quest: Lumenstone 1
+	q(42329),	-- Priest Order Hall - Tracking Quest: Lumenstone 2
+	q(42330),	-- Priest Order Hall - Tracking Quest: Lumenstone 3
+	q(42331),	-- Priest Order Hall - Tracking Quest: Lumenstone 4
+	q(42332),	-- Priest Order Hall - Tracking Quest: Lumenstone 5
+	q(43507), 	-- Priest Order Hall - Looting the priest altar
+	q(43941), 	-- Priest Order Hall - Discipline chosen second
+	q(44408),	-- Priest Order Hall - Shadow chosen third
+	q(44409),	-- Priest Order Hall - Discipline chosen third
+	q(44608),	-- Priest Order Hall - Tracking Quest: Holy Ground 1 — these 5 are for the missions done during the priest class hall quest "Awakening the Light"
+	q(44609),	-- Priest Order Hall - Tracking Quest: Holy Ground 2
+	q(44610),	-- Priest Order Hall - Tracking Quest: Holy Ground 3
+	q(44611),	-- Priest Order Hall - Tracking Quest: Holy Ground 4
+	q(44612),	-- Priest Order Hall - Tracking Quest: Holy Ground 5
+	q(44650),	-- Priest Order Hall - "Relieving the Front Lines" mission
+};
+
+-- These quests never made it in.
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		
+	}),
+});
+-- #endif

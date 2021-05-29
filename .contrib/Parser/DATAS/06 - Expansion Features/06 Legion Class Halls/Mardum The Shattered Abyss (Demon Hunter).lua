@@ -1028,3 +1028,30 @@ _.ExpansionFeatures =
 		}),
 	}),
 };
+
+
+-- #if AFTER TBC
+-- These quests trigger after specific events occur in the zone.
+_.HiddenQuestTriggers = {
+	q(40817),	-- Demon Hunter Order Hall - Twinblades of the Deceiver chosen first
+	q(40818),	-- Demon Hunter Order Hall - Aldrachi Warblades chosen first
+	q(41045),	-- Demon Hunter Order Hall - Matron Moves - triggers after walking into the Fel Hammer
+	q(41129),	-- Demon Hunter Altruis - wrong answer chosen at the violet citadel during "By Any Means"
+	q(43467),	-- Demon Hunter Order Hall - Boarding the Fel Hammer - triggers when entering Mardum for the first time
+	q(44380),	-- Demon Hunter Order Hall - Havoc Chosen — Choosing Havoc Weapon Artifact (DH)
+	q(44381),	-- Demon Hunter Order Hall - Twinblades of the Deceiver chosen
+	q(44382),	-- Demon Hunter Order Hall - Vengeance Chosen — chose to pursue Vengeance artifact while on "In Pursuit of Power"
+	q(44638),	-- Demon Hunter Order Hall - Tracking Quest: 7.0 Class Hall - Demon Hunter - Chapter 1.5 - Pacing Mission — triggers when "Additional Accoutrements" is completed
+	q(44639),	-- Demon Hunter Order Hall - Tracking Quest: 7.0 Class Hall - Demon Hunter - Chapter 2 - Story Mission
+	q(44640),	-- Demon Hunter Order Hall - Tracking Quest: 7.0 Class Hall - Demon Hunter - Tutorial 1 - Spread the Word - Altruis
+	q(44641),	-- Demon Hunter Order Hall - Tracking Quest: 7.0 Class Hall - Demon Hunter - Tutorial 1 - Spread the Word - Kayn
+	q(49238),	-- Demon Hunter Order Hall - triggers immediately after completing the "Things Gaardoun Needs" mission
+};
+
+-- These quests never made it in.
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		
+	}),
+});
+-- #endif

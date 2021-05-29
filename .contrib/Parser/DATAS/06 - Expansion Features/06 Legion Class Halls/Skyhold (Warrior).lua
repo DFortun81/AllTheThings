@@ -682,3 +682,39 @@ _.ExpansionFeatures =
 		}),
 	}),
 };
+
+
+-- #if AFTER TBC
+-- These quests trigger after specific events occur in the zone.
+_.HiddenQuestTriggers = {
+	q(39174),	-- Warrior Order Hall - Guiding Light Tutorialized - pops when you get your first artifact weapon and go back to Skyhold
+	q(40580),	-- Warrior Order Hall - Protection chosen first
+	q(40581),	-- Warrior Order Hall - Fury chosen first
+	q(40582),	-- Warrior Order Hall - Arms chosen first
+	q(41359),	-- Warrior Order Hall - Highmountain Teleport learned in Thunder Totem
+	q(41360),	-- Warrior Order Hall - Stormheim Teleport learned in Valdisdall
+	q(43950),	-- Warrior Order Hall - Fury chosen second
+	q(43952),	-- Warrior Order Hall - Arms chosen second
+	q(43953),	-- Warrior Order Hall - Protection chosen second
+	q(44060),	-- Warrior Order Hall - Azsuna Teleport learned in Azurewing Repose
+	q(44061),	-- Warrior Order Hall - Val'sharah Teleport learned in Loriathil
+	q(44062),	-- Warrior Order Hall - Suramar Teleport learned in Meredil
+	q(44418),	-- Warrior Order Hall - Fury chosen third
+	q(44419),	-- Warrior Order Hall - Arms chosen third
+	q(44420),	-- Warrior Order Hall - Protection chosen third
+	q(44551),	-- Warrior Order Hall - "Investigate Felsoul Hold" mission complete
+	q(44552),	-- Warrior Order Hall - "Preparing Our Arrival" mission complete
+	q(44553),	-- Warrior Order Hall - "Last Chance" mission complete
+	q(44633),	-- Warrior Order Hall - "Aiding the Valkyra" mission complete
+	q(44634),	-- Warrior Order Hall - "Lost at Sea" mission complete
+	q(44635),	-- Warrior Order Hall - "Enslaved by Sea Giants" mission complete
+	q(44658),	-- Warrior Order Hall - "On the Trail of the Great Worm" mission complete
+};
+
+-- These quests never made it in.
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		
+	}),
+});
+-- #endif
