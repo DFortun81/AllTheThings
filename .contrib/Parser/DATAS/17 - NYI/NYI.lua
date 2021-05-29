@@ -2095,7 +2095,6 @@ _.NeverImplemented =
 			i(125351),	-- Wild Gladiator's Accolade of Endurance
 			i(125347),	-- Wild Gladiator's Accolade of conquest
 			i(125349),	-- Wild Gladiator's Accolade of victory
-			i(125350),	-- Wild Gladiator's Accolade of meditation
 			i(173426),	-- Black Empire trinkets
 			i(18355),	-- Ferras Collar
 			i(18438),	-- Sergeant's Mark
