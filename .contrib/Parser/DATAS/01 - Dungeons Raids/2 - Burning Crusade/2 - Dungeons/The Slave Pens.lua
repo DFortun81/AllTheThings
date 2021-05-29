@@ -20,8 +20,17 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 					["maps"] = { ZANGARMARSH },
 					["lvl"] = lvlsquish(62, 10, 62),
 				}),
+				q(9876,  {	-- Failed Incursion
+					["qg"] = 17841,	-- Ysiel Windsinger
+					["sourceQuest"] = 9732,	-- Return to the Marsh
+					["coord"] = { 78.4, 62.0, ZANGARMARSH },
+					["timeline"] = { "removed 4.3.0.14732" },
+					["maps"] = { ZANGARMARSH },
+					["lvl"] = lvlsquish(62, 10, 62),
+				}),
 				q(9738, {	-- Lost in Action
 					["qg"] = 17884,	-- Watcher Jhang
+					["sourceQuest"] = 9876,	-- Failed Incursion
 					["coord"] = { 52.3, 36.0, ZANGARMARSH },
 					["maps"] = { COILFANG_RESERVOIR_UNDERBOG, ZANGARMARSH },
 					["timeline"] = { "removed 4.3.0.14732" },

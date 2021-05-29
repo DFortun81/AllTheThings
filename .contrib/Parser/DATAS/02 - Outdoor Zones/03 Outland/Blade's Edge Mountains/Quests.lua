@@ -904,6 +904,14 @@ _.Zones =
 						{ "i", 31941, 1 },	-- Mark of the Nexus-King
 					},
 				}),
+				q(9795,  {	-- The Ogre Threat
+					["qg"] = 18013,	-- Shadow Hunter Denjai
+					["coord"] = { 30.6, 50.8, ZANGARMARSH },
+					["maps"] = { ZANGARMARSH },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(64, 10, 64),
+				}),
 				q(11080, {	-- The Relic's Emanation
 					["provider"] = { "n", 23233 },	-- Chu'a'lor
 					["coord"] = { 28.8, 57.4, BLADES_EDGE_MOUNTAINS },

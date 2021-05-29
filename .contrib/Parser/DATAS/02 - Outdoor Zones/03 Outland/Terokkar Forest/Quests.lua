@@ -915,15 +915,23 @@ _.Zones =
 				}),
 				q(9961,  {	-- What's Wrong at Cenarion Thicket?
 					["provider"] = { "n", 18459 },	-- Jenai Starwhisper
-					["coord"] = { 57.0, 53.6, ZANGARMARSH },
+					["coord"] = { 57.0, 53.6, TEROKKAR_FOREST },
+					["maps"] = { ZANGARMARSH },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(9960,  {	-- What's Wrong at Cenarion Thicket?
 					["provider"] = { "n", 18447 },	-- Tooki
-					["coord"] = { 50.0, 45.8, ZANGARMARSH },
+					["coord"] = { 50.0, 45.8, TEROKKAR_FOREST },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
+				}),
+				q(9957,  {	-- What's Wrong at Cenarion Thicket?
+					["qg"] = 17834,	-- Lethyn Moonfire
+					["coord"] = { 78.6, 63.0, ZANGARMARSH },
+					["maps"] = { ZANGARMARSH },
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(62, 10, 62),
 				}),
 				q(10040, {	-- Who Are They? (A)
 					["provider"] = { "n", 18715 },	-- Private Weeks

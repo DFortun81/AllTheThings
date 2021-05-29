@@ -1418,6 +1418,7 @@ _.Zones =
 					["sourceQuest"] = 10208,	-- Disrupt Their Reinforcements [Horde]
 					["coord"] = { 65.8, 43.5, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(58, 10, 58),
 					["groups"] = {
 						objective(1, {	-- Gateway Murketh Destroyed
 							["provider"] = { "i", 28038 },	-- Seaforium PU-36 Explosive Nether Modulator
