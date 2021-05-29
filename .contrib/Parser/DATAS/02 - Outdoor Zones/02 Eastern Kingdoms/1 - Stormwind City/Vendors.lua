@@ -2048,11 +2048,9 @@ _.Zones =
 					["coord"] = { 74.8, 67.6, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"select", "headerID", -9979 },	-- Select the Cataclysm header.
-						{"pop"},	-- Discard header and acquire the children.
-						{"where", "headerID", -673 },	-- Ruthless Gladiator header.
-						{"pop"},	-- Discard header and acquire the children.
-						{"where", "headerID", -661 },	-- Gladiator header.
+						{"sub", "pvp_gear_base", -9979, -672, -661 },
+						{"pop"},	-- Discard the Set header and acquire the children.
+						{"exclude", "headerID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
 					},
 				}),
 				n(4730,   {	-- Lelanai <Saber Handler>

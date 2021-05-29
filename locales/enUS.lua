@@ -1849,6 +1849,7 @@ app.L = {
 
 -- PvP Header
 	-- Special Season Tags
+		--[-654] = "Pre-Season Cataclysmic: Season 11",							-- Listed under Cata PvP Seasons
 		[-655] = "Ensemble Gear", 												-- Ensemble Gear (PvP)
 		--[-656] = "Pre-Season Ruthless: Season 10",							-- Listed under Cata PvP Seasons
 		--[-657] = "Hateful Gladiator",											-- Listed under WOTLK PvP Seasons
@@ -1880,6 +1881,7 @@ app.L = {
 		[-672] = select(2, GetAchievementInfo(6002))..": Season 9",				-- Vicious Gladiator: Season 9
 		[-656] = "Pre-Season Ruthless: Season 10",								-- Pre-Season Ruthless (S10)
 		[-673] = select(2, GetAchievementInfo(6124))..": Season 10",			-- Ruthless Gladiator: Season 10
+		[-654] = "Pre-Season Cataclysmic: Season 11",							-- Pre-Season Cataclysmic (S11)
 		[-674] = select(2, GetAchievementInfo(6938))..": Season 11",			-- Cataclysmic Gladiator: Season 11
 
 	-- Mists of Pandaria PvP Seasons

@@ -860,10 +860,772 @@ _.Zones =
 				n(69323,  {	-- Tiny Tayger <Ruthless Gladiator>
 					["itemID"] = 137642,	-- Mark of Honor
 					["coord"] = { 51.6, 28.0, 71 },
-					["sym"] = {
-						{"sub", "pvp_gear_base", -9979, -672, -661 },
-						{"pop"},	-- Discard the Set header and acquire the children.
-						{"exclude", "headerID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
+					["g"] = {
+						i(146640, {	-- Arsenal: Ruthless Gladiator's Weapons
+							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
+							["sym"] = { 
+								{"sub", "pvp_weapons_ensemble", -9979, -673, -661 },
+								{"exclude", "itemID", 146640 },	-- Exclude itself to stop duplicating
+							},
+						}),
+						i(70242, {	-- Ruthless Gladiator's Barrier
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(70235, {	-- Ruthless Gladiator's Baton of Light
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(70226, {	-- Ruthless Gladiator's Battle Staff
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(70222, {	-- Ruthless Gladiator's Bonecracker
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(70224, {	-- Ruthless Gladiator's Bonegrinder
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(70211, {	-- Ruthless Gladiator's Cleaver
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(70213, {	-- Ruthless Gladiator's Decapitator
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(70239, {	-- Ruthless Gladiator's Endgame
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(70227, {	-- Ruthless Gladiator's Energy Staff
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(70218, {	-- Ruthless Gladiator's Fleshslicer
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(70223, {	-- Ruthless Gladiator's Gavel
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(70231, {	-- Ruthless Gladiator's Greatsword
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(70212, {	-- Ruthless Gladiator's Hacker
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(70238, {	-- Ruthless Gladiator's Heavy Crossbow
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(70236, {	-- Ruthless Gladiator's Longbow
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(70225, {	-- Ruthless Gladiator's Pike
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(70221, {	-- Ruthless Gladiator's Pummeler
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(70230, {	-- Ruthless Gladiator's Quickblade
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(70243, {	-- Ruthless Gladiator's Redoubt
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(70240, {	-- Ruthless Gladiator's Reprieve
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(70237, {	-- Ruthless Gladiator's Rifle
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(70220, {	-- Ruthless Gladiator's Right Render
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(70217, {	-- Ruthless Gladiator's Ripper
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(70214, {	-- Ruthless Gladiator's Shanker
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(70241, {	-- Ruthless Gladiator's Shield Wall
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(70215, {	-- Ruthless Gladiator's Shiv
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(70219, {	-- Ruthless Gladiator's Slasher
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(70229, {	-- Ruthless Gladiator's Slicer
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(70216, {	-- Ruthless Gladiator's Spellblade
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(70228, {	-- Ruthless Gladiator's Staff
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+						i(70234, {	-- Ruthless Gladiator's Touch of Defeat
+							["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+						}),
+					}),
+					cl(DEATHKNIGHT, {
+						i(146503, {	-- Ensemble: Ruthless Gladiator's Dreadplate Armor
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = { 
+								{"sub", "pvp_set_ensemble", -9979, -673, -661, 6 },
+								{"select", "itemID", 70327 },	-- Ruthless Gladiator's Armplates of Proficiency
+								{"select", "itemID", 70320 },	-- Ruthless Gladiator's Girdle of Cruelty
+								{"select", "itemID", 70321 },	-- Ruthless Gladiator's Warboots of Cruelty
+								{"select", "itemID", 72332 },	-- Ruthless Gladiator's Dreadplate Chestpiece
+								{"select", "itemID", 72333 },	-- Ruthless Gladiator's Dreadplate Gauntlets
+								{"select", "itemID", 72334 },	-- Ruthless Gladiator's Dreadplate Helm
+								{"select", "itemID", 72335 },	-- Ruthless Gladiator's Dreadplate Legguards
+								{"select", "itemID", 72336 },	-- Ruthless Gladiator's Dreadplate Shoulders
+								{"select", "itemID", 72398 },	-- Ruthless Gladiator's Armplates of Proficiency
+								{"select", "itemID", 72394 },	-- Ruthless Gladiator's Girdle of Accuracy/Cruelty
+								{"select", "itemID", 72396 },	-- Ruthless Gladiator's Warboots of Cruelty
+								{"exclude", "itemID", 146503 },	-- Exclude itself to stop duplicating 
+							},
+						}),
+						i(70244, {	-- Ruthless Gladiator's Dreadplate Chestpiece
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(70245, {	-- Ruthless Gladiator's Dreadplate Gauntlets
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(70246, {	-- Ruthless Gladiator's Dreadplate Helm
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(70247, {	-- Ruthless Gladiator's Dreadplate Legguards
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(70248, {	-- Ruthless Gladiator's Dreadplate Shoulders
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+					}),
+					cl(DRUID, {
+						i(146501, {	-- Ensemble: Ruthless Gladiator's Dragonhide Armor
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = { 
+								{"sub", "pvp_set_ensemble", -9979, -673, -661, 11 },
+								{"select", "itemID", 70345 },	-- Ruthless Gladiator's Bindings of Meditation
+								{"select", "itemID", 70359 },	-- Ruthless Gladiator's Bindings of Prowess
+								{"select", "itemID", 70346 },	-- Ruthless Gladiator's Belt of Cruelty
+								{"select", "itemID", 70343 },	-- Ruthless Gladiator's Belt of Meditation
+								{"select", "itemID", 70358 },	-- Ruthless Gladiator's Footguards of Alacrity
+								{"select", "itemID", 70344 },	-- Ruthless Gladiator's Footguards of Meditation
+								{"select", "itemID", 72337 },	-- Ruthless Gladiator's Dragonhide Gloves
+								{"select", "itemID", 72338 },	-- Ruthless Gladiator's Dragonhide Helm
+								{"select", "itemID", 72339 },	-- Ruthless Gladiator's Dragonhide Legguards
+								{"select", "itemID", 72340 },	-- Ruthless Gladiator's Dragonhide Robes
+								{"select", "itemID", 72341 },	-- Ruthless Gladiator's Dragonhide Spaulders
+								{"select", "itemID", 72345 },	-- Ruthless Gladiator's Kodohide Gloves
+								{"select", "itemID", 72346 },	-- Ruthless Gladiator's Kodohide Helm
+								{"select", "itemID", 72347 },	-- Ruthless Gladiator's Kodohide Legguards
+								{"select", "itemID", 72348 },	-- Ruthless Gladiator's Kodohide Robes
+								{"select", "itemID", 72349 },	-- Ruthless Gladiator's Kodohide Spaulders
+								{"select", "itemID", 72353 },	-- Ruthless Gladiator's Wyrmhide Gloves
+								{"select", "itemID", 72354 },	-- Ruthless Gladiator's Wyrmhide Helm
+								{"select", "itemID", 72355 },	-- Ruthless Gladiator's Wyrmhide Legguards
+								{"select", "itemID", 72356 },	-- Ruthless Gladiator's Wyrmhide Robes
+								{"select", "itemID", 72357 },	-- Ruthless Gladiator's Wyrmhide Spaulders
+								{"select", "itemID", 72344 },	-- Ruthless Gladiator's Bindings of Meditation
+								{"select", "itemID", 72352 },	-- Ruthless Gladiator's Bindings of Prowess
+								{"select", "itemID", 72350 },	-- Ruthless Gladiator's Belt of Cruelty
+								{"select", "itemID", 72342 },	-- Ruthless Gladiator's Belt of Meditation
+								{"select", "itemID", 72351 },	-- Ruthless Gladiator's Footguards of Alacrity
+								{"select", "itemID", 72343 },	-- Ruthless Gladiator's Footguards of Meditation
+								{"exclude", "itemID", 146501 },	-- Exclude itself to stop duplicating 
+							},
+						}),
+						i(70279, {	-- Ruthless Gladiator's Dragonhide Gloves
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(70280, {	-- Ruthless Gladiator's Dragonhide Helm
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(70281, {	-- Ruthless Gladiator's Dragonhide Legguards
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(70282, {	-- Ruthless Gladiator's Dragonhide Robes
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(70283, {	-- Ruthless Gladiator's Dragonhide Spaulders
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(70284, {	-- Ruthless Gladiator's Kodohide Gloves
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(70285, {	-- Ruthless Gladiator's Kodohide Helm
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(70286, {	-- Ruthless Gladiator's Kodohide Legguards
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(70287, {	-- Ruthless Gladiator's Kodohide Robes
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(70288, {	-- Ruthless Gladiator's Kodohide Spaulders
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(70289, {	-- Ruthless Gladiator's Wyrmhide Gloves
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(70290, {	-- Ruthless Gladiator's Wyrmhide Helm
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(70291, {	-- Ruthless Gladiator's Wyrmhide Legguards
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(70292, {	-- Ruthless Gladiator's Wyrmhide Robes
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(70293, {	-- Ruthless Gladiator's Wyrmhide Spaulders
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+					}),
+					cl(HUNTER, {
+						i(146499, {	-- Ensemble: Ruthless Gladiator's Chain Armor
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = { 
+								{"sub", "pvp_set_ensemble", -9979, -673, -661, 3 },
+								{"select", "itemID", 70340 },	-- Ruthless Gladiator's Wristguards of Accuracy
+								{"select", "itemID", 70338 },	-- Ruthless Gladiator's Wristguards of Alacrity
+								{"select", "itemID", 70339 },	-- Ruthless Gladiator's Links of Accuracy
+								{"select", "itemID", 70336 },	-- Ruthless Gladiator's Links of Cruelty
+								{"select", "itemID", 70337 },	-- Ruthless Gladiator's Sabatons of Alacrity
+								{"select", "itemID", 70335 },	-- Ruthless Gladiator's Sabatons of Cruelty
+								{"select", "itemID", 72368 },	-- Ruthless Gladiator's Chain Armor
+								{"select", "itemID", 72369 },	-- Ruthless Gladiator's Chain Gauntlets
+								{"select", "itemID", 72370 },	-- Ruthless Gladiator's Chain Helm
+								{"select", "itemID", 72371 },	-- Ruthless Gladiator's Chain Legs
+								{"select", "itemID", 72372 },	-- Ruthless Gladiator's Chain Spaulders
+								{"select", "itemID", 72367 },	-- Ruthless Gladiator's Wristguards of Accuracy
+								{"select", "itemID", 72366 },	-- Ruthless Gladiator's Wristguards of Alacrity
+								{"select", "itemID", 72363 },	-- Ruthless Gladiator's Links of Accuracy
+								{"select", "itemID", 72362 },	-- Ruthless Gladiator's Links of Cruelty
+								{"select", "itemID", 72365 },	-- Ruthless Gladiator's Sabatons of Alacrity
+								{"select", "itemID", 72364 },	-- Ruthless Gladiator's Sabatons of Cruelty
+								{"exclude", "itemID", 146499 },	-- Exclude itself to stop duplicating 
+							},
+						}),
+						i(70259, {	-- Ruthless Gladiator's Chain Armor
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(70260, {	-- Ruthless Gladiator's Chain Gauntlets
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(70261, {	-- Ruthless Gladiator's Chain Helm
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(70262, {	-- Ruthless Gladiator's Chain Leggings
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(70263, {	-- Ruthless Gladiator's Chain Spaulders
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+					}),
+					cl(MAGE, {
+						i(146517, {	-- Ensemble: Ruthless Gladiator's Silk Armor
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = { 
+								{"sub", "pvp_set_ensemble", -9979, -673, -661, 8 },
+								{"select", "itemID", 70365 },	-- Ruthless Gladiator's Cuffs of Prowess
+								{"select", "itemID", 70360 },	-- Ruthless Gladiator's Cord of Cruelty
+								{"select", "itemID", 70361 },	-- Ruthless Gladiator's Treads of Cruelty
+								{"select", "itemID", 72377 },	-- Ruthless Gladiator's Silk Amice
+								{"select", "itemID", 72374 },	-- Ruthless Gladiator's Silk Cowl
+								{"select", "itemID", 72373 },	-- Ruthless Gladiator's Silk Handguards
+								{"select", "itemID", 72376 },	-- Ruthless Gladiator's Silk Robe
+								{"select", "itemID", 72375 },	-- Ruthless Gladiator's Silk Trousers
+								{"select", "itemID", 72320 },	-- Ruthless Gladiator's Cuffs of Prowess
+								{"select", "itemID", 72313 },	-- Ruthless Gladiator's Cord of Cruelty
+								{"select", "itemID", 72316 },	-- Ruthless Gladiator's Treads of Cruelty
+								{"exclude", "itemID", 146517 },	-- Exclude itself to stop duplicating 
+							},
+						}),
+						i(70303, {	-- Ruthless Gladiator's Silk Amice
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(70300, {	-- Ruthless Gladiator's Silk Cowl
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(70299, {	-- Ruthless Gladiator's Silk Handguards
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(70302, {	-- Ruthless Gladiator's Silk Robe
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(70301, {	-- Ruthless Gladiator's Silk Trousers
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+
+					}),
+					cl(PALADIN, {
+						i(146515, {	-- Ensemble: Ruthless Gladiator's Scaled Armor
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = { 
+								{"sub", "pvp_set_ensemble", -9979, -673, -661, 2 },
+								{"select", "itemID", 70334 },	-- Ruthless Gladiator's Bracers of Meditation
+								{"select", "itemID", 70325 },	-- Ruthless Gladiator's Bracers of Prowess
+								{"select", "itemID", 70319 },	-- Ruthless Gladiator's Clasp of Cruelty
+								{"select", "itemID", 70332 },	-- Ruthless Gladiator's Clasp of Meditation
+								{"select", "itemID", 70324 },	-- Ruthless Gladiator's Greaves of Alacrity
+								{"select", "itemID", 70333 },	-- Ruthless Gladiator's Greaves of Meditation
+								{"select", "itemID", 72389 },	-- Ruthless Gladiator's Ornamented Chestguard
+								{"select", "itemID", 72390 },	-- Ruthless Gladiator's Ornamented Gloves
+								{"select", "itemID", 72391 },	-- Ruthless Gladiator's Ornamented Headcover
+								{"select", "itemID", 72392 },	-- Ruthless Gladiator's Ornamented Legplates
+								{"select", "itemID", 72393 },	-- Ruthless Gladiator's Ornamented Spaulders
+								{"select", "itemID", 72378 },	-- Ruthless Gladiator's Scaled Chestpiece
+								{"select", "itemID", 72379 },	-- Ruthless Gladiator's Scaled Gauntlets
+								{"select", "itemID", 72380 },	-- Ruthless Gladiator's Scaled Helm
+								{"select", "itemID", 72381 },	-- Ruthless Gladiator's Scaled Legguards
+								{"select", "itemID", 72382 },	-- Ruthless Gladiator's Scaled Shoulders
+								{"select", "itemID", 72388 },	-- Ruthless Gladiator's Bracers of Meditation
+								{"select", "itemID", 72387 },	-- Ruthless Gladiator's Bracers of Prowess
+								{"select", "itemID", 72383 },	-- Ruthless Gladiator's Clasp of Cruelty
+								{"select", "itemID", 72384 },	-- Ruthless Gladiator's Clasp of Meditation
+								{"select", "itemID", 72385 },	-- Ruthless Gladiator's Greaves of Alacrity
+								{"select", "itemID", 72386 },	-- Ruthless Gladiator's Greaves of Meditation
+								{"exclude", "itemID", 146515 },	-- Exclude itself to stop duplicating 
+							},
+						}),
+						i(70353, {	-- Ruthless Gladiator's Ornamented Chestguard
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(70354, {	-- Ruthless Gladiator's Ornamented Gloves
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(70355, {	-- Ruthless Gladiator's Ornamented Headcover
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(70356, {	-- Ruthless Gladiator's Ornamented Legplates
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(70357, {	-- Ruthless Gladiator's Ornamented Spaulders
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(70249, {	-- Ruthless Gladiator's Scaled Chestpiece
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(70250, {	-- Ruthless Gladiator's Scaled Gauntlets
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(70251, {	-- Ruthless Gladiator's Scaled Helm
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(70252, {	-- Ruthless Gladiator's Scaled Legguards
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(70253, {	-- Ruthless Gladiator's Scaled Shoulders
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+					}),
+					cl(PRIEST, {
+						i(146513, {	-- Ensemble: Ruthless Gladiator's Satin Armor
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = { 
+								{"sub", "pvp_set_ensemble", -9979, -673, -661, 5 },
+								{"select", "itemID", 70366 },	-- Ruthless Gladiator's Cuffs of Meditation
+								{"select", "itemID", 70368 },	-- Ruthless Gladiator's Cord of Meditation
+								{"select", "itemID", 70367 },	-- Ruthless Gladiator's Treads of Meditation
+								{"select", "itemID", 72400 },	-- Ruthless Gladiator's Mooncloth Gloves
+								{"select", "itemID", 72401 },	-- Ruthless Gladiator's Mooncloth Helm
+								{"select", "itemID", 72402 },	-- Ruthless Gladiator's Mooncloth Leggings
+								{"select", "itemID", 72404 },	-- Ruthless Gladiator's Mooncloth Mantle
+								{"select", "itemID", 72403 },	-- Ruthless Gladiator's Mooncloth Robe
+								{"select", "itemID", 72405 },	-- Ruthless Gladiator's Satin Gloves
+								{"select", "itemID", 72406 },	-- Ruthless Gladiator's Satin Hood
+								{"select", "itemID", 72407 },	-- Ruthless Gladiator's Satin Leggings
+								{"select", "itemID", 72409 },	-- Ruthless Gladiator's Satin Mantle
+								{"select", "itemID", 72408 },	-- Ruthless Gladiator's Satin Robe
+								{"select", "itemID", 72321 },	-- Ruthless Gladiator's Cuffs of Meditation
+								{"select", "itemID", 72315 },	-- Ruthless Gladiator's Cord of Meditation
+								{"select", "itemID", 72318 },	-- Ruthless Gladiator's Treads of Meditation
+								{"exclude", "itemID", 146513 },	-- Exclude itself to stop duplicating 
+							},
+						}),
+						i(70304, {	-- Ruthless Gladiator's Mooncloth Gloves
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(70305, {	-- Ruthless Gladiator's Mooncloth Helm
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(70306, {	-- Ruthless Gladiator's Mooncloth Leggings
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(70307, {	-- Ruthless Gladiator's Mooncloth Robe
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(70308, {	-- Ruthless Gladiator's Mooncloth Mantle
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(70309, {	-- Ruthless Gladiator's Satin Gloves
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(70310, {	-- Ruthless Gladiator's Satin Hood
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(70311, {	-- Ruthless Gladiator's Satin Leggings
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(70312, {	-- Ruthless Gladiator's Satin Robe
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(70313, {	-- Ruthless Gladiator's Satin Mantle
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+					}),
+					cl(ROGUE, {
+						i(146507, {	-- Ensemble: Ruthless Gladiator's Leather Armor
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = { 
+								{"sub", "pvp_set_ensemble", -9979, -673, -661, 4 },
+								{"select", "itemID", 70350 },	-- Ruthless Gladiator's Armwraps of Accuracy
+								{"select", "itemID", 70352 },	-- Ruthless Gladiator's Armwraps of Alacrity
+								{"select", "itemID", 70349 },	-- Ruthless Gladiator's Waistband of Accuracy
+								{"select", "itemID", 70347 },	-- Ruthless Gladiator's Waistband of Cruelty
+								{"select", "itemID", 70351 },	-- Ruthless Gladiator's Boots of Alacrity
+								{"select", "itemID", 70348 },	-- Ruthless Gladiator's Boots of Cruelty
+								{"select", "itemID", 72423 },	-- Ruthless Gladiator's Leather Gloves
+								{"select", "itemID", 72424 },	-- Ruthless Gladiator's Leather Helm
+								{"select", "itemID", 72425 },	-- Ruthless Gladiator's Leather Legguards
+								{"select", "itemID", 72426 },	-- Ruthless Gladiator's Leather Spaulders
+								{"select", "itemID", 72422 },	-- Ruthless Gladiator's Leather Tunic
+								{"select", "itemID", 72421 },	-- Ruthless Gladiator's Armwraps of Accuracy
+								{"select", "itemID", 72420 },	-- Ruthless Gladiator's Armwraps of Alacrity
+								{"select", "itemID", 72417 },	-- Ruthless Gladiator's Waistband of Accuracy 
+								{"select", "itemID", 72416 },	-- Ruthless Gladiator's Waistband of Cruelty
+								{"select", "itemID", 72419 },	-- Ruthless Gladiator's Boots of Alacrity
+								{"select", "itemID", 72418 },	-- Ruthless Gladiator's Boots of Cruelty
+								{"exclude", "itemID", 146507 },	-- Exclude itself to stop duplicating 
+							},
+						}),
+						i(70295, {	-- Ruthless Gladiator's Leather Gloves
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(70296, {	-- Ruthless Gladiator's Leather Helm
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(70297, {	-- Ruthless Gladiator's Leather Legguards
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(70298, {	-- Ruthless Gladiator's Leather Spaulders
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(70294, {	-- Ruthless Gladiator's Leather Tunic
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+					}),
+					cl(SHAMAN, {
+						i(146511, {	-- Ensemble: Ruthless Gladiator's Ringmail Armor
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = { 
+								{"sub", "pvp_set_ensemble", -9979, -673, -661, 7 },
+								{"select", "itemID", 70330 },	-- Ruthless Gladiator's Armbands of Meditation
+								{"select", "itemID", 70342 },	-- Ruthless Gladiator's Armbands of Prowess
+								{"select", "itemID", 70331 },	-- Ruthless Gladiator's Waistguard of Cruelty
+								{"select", "itemID", 70328 },	-- Ruthless Gladiator's Waistguard of Meditation
+								{"select", "itemID", 70341 },	-- Ruthless Gladiator's Sabatons of Alacrity
+								{"select", "itemID", 70329 },	-- Ruthless Gladiator's Sabatons of Meditation
+								{"select", "itemID", 72437 },	-- Ruthless Gladiator's Linked Armor
+								{"select", "itemID", 72438 },	-- Ruthless Gladiator's Linked Gauntlets
+								{"select", "itemID", 72439 },	-- Ruthless Gladiator's Linked Helm
+								{"select", "itemID", 72440 },	-- Ruthless Gladiator's Linked Leggings
+								{"select", "itemID", 72441 },	-- Ruthless Gladiator's Linked Spaulders
+								{"select", "itemID", 72443 },	-- Ruthless Gladiator's Mail Armor
+								{"select", "itemID", 72444 },	-- Ruthless Gladiator's Mail Gauntlets
+								{"select", "itemID", 72445 },	-- Ruthless Gladiator's Mail Helm
+								{"select", "itemID", 72446 },	-- Ruthless Gladiator's Mail Leggings
+								{"select", "itemID", 72447 },	-- Ruthless Gladiator's Mail Spaulders
+								{"select", "itemID", 72432 },	-- Ruthless Gladiator's Ringmail Armor
+								{"select", "itemID", 72433 },	-- Ruthless Gladiator's Ringmail Gauntlets
+								{"select", "itemID", 72434 },	-- Ruthless Gladiator's Ringmail Helm
+								{"select", "itemID", 72435 },	-- Ruthless Gladiator's Ringmail Leggings
+								{"select", "itemID", 72436 },	-- Ruthless Gladiator's Ringmail Spaulders
+								{"select", "itemID", 72431 },	-- Ruthless Gladiator's Armbands of Meditation
+								{"select", "itemID", 72430 },	-- Ruthless Gladiator's Armbands of Prowess
+								{"select", "itemID", 72442 },	-- Ruthless Gladiator's Waistguard of Cruelty
+								{"select", "itemID", 72427 },	-- Ruthless Gladiator's Waistguard of Meditation
+								{"select", "itemID", 72428 },	-- Ruthless Gladiator's Sabatons of Alacrity
+								{"select", "itemID", 72429 },	-- Ruthless Gladiator's Sabatons of Meditation
+								{"exclude", "itemID", 146511 },	-- Exclude itself to stop duplicating 
+							},
+						}),
+						i(70269, {	-- Ruthless Gladiator's Linked Armor
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(70270, {	-- Ruthless Gladiator's Linked Gauntlets
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(70271, {	-- Ruthless Gladiator's Linked Helm
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(70272, {	-- Ruthless Gladiator's Linked Leggings
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(70273, {	-- Ruthless Gladiator's Linked Spaulders
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(70274, {	-- Ruthless Gladiator's Mail Armor
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(70275, {	-- Ruthless Gladiator's Mail Gauntlets
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(70276, {	-- Ruthless Gladiator's Mail Helm
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(70277, {	-- Ruthless Gladiator's Mail Leggings
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(70278, {	-- Ruthless Gladiator's Mail Spaulders
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(70264, {	-- Ruthless Gladiator's Ringmail Armor
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(70265, {	-- Ruthless Gladiator's Ringmail Gauntlets
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(70266, {	-- Ruthless Gladiator's Ringmail Helm
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(70267, {	-- Ruthless Gladiator's Ringmail Leggings
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(70268, {	-- Ruthless Gladiator's Ringmail Spaulders
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+					}),
+					cl(WARLOCK, {
+						i(146505, {	-- Ensemble: Ruthless Gladiator's Felweave Armor
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = { 
+								{"sub", "pvp_set_ensemble", -9979, -673, -661, 9 },
+								{"select", "itemID", 70363 },	-- Ruthless Gladiator's Cuffs of Accuracy
+								{"select", "itemID", 70362 },	-- Ruthless Gladiator's Cord of Accuracy
+								{"select", "itemID", 70364 },	-- Ruthless Gladiator's Treads of Alacrity
+								{"select", "itemID", 72463 },	-- Ruthless Gladiator's Felweave Amice
+								{"select", "itemID", 72460 },	-- Ruthless Gladiator's Felweave Cowl
+								{"select", "itemID", 72459 },	-- Ruthless Gladiator's Felweave Handguards
+								{"select", "itemID", 72462 },	-- Ruthless Gladiator's Felweave Raiment
+								{"select", "itemID", 72461 },	-- Ruthless Gladiator's Felweave Trousers
+								{"select", "itemID", 72319 },	-- Ruthless Gladiator's Cuffs of Accuracy
+								{"select", "itemID", 72314 },	-- Ruthless Gladiator's Cord of Accuracy
+								{"select", "itemID", 72317 },	-- Ruthless Gladiator's Treads of Alacrity
+								{"exclude", "itemID", 146505 },	-- Exclude itself to stop duplicating 
+							},
+						}),
+						i(70318, {	-- Ruthless Gladiator's Felweave Amice
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(70315, {	-- Ruthless Gladiator's Felweave Cowl
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(70314, {	-- Ruthless Gladiator's Felweave Handguards
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(70317, {	-- Ruthless Gladiator's Felweave Raiment
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(70316, {	-- Ruthless Gladiator's Felweave Trousers
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+					}),
+					cl(WARRIOR, {
+						i(146509, {	-- Ensemble: Ruthless Gladiator's Plate Armor
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = { 
+								{"sub", "pvp_set_ensemble", -9979, -673, -661, 1 },
+								{"select", "itemID", 70322 },	-- Ruthless Gladiator's Armplates of Alacrity
+								{"select", "itemID", 70326 },	-- Ruthless Gladiator's Girdle of Prowess
+								{"select", "itemID", 70323 },	-- Ruthless Gladiator's Warboots of Alacrity
+								{"select", "itemID", 72464 },	-- Ruthless Gladiator's Plate Chestpiece
+								{"select", "itemID", 72465 },	-- Ruthless Gladiator's Plate Gauntlets
+								{"select", "itemID", 72466 },	-- Ruthless Gladiator's Plate Helm
+								{"select", "itemID", 72467 },	-- Ruthless Gladiator's Plate Legguards
+								{"select", "itemID", 72468 },	-- Ruthless Gladiator's Plate Shoulders
+								{"select", "itemID", 72399 },	-- Ruthless Gladiator's Armplates of Alacrity
+								{"select", "itemID", 72395 },	-- Ruthless Gladiator's Girdle of Prowess
+								{"select", "itemID", 72397 },	-- Ruthless Gladiator's Warboots of Alacrity
+								{"exclude", "itemID", 146509 },	-- Exclude itself to stop duplicating 
+							},
+						}),
+						i(70254, {	-- Ruthless Gladiator's Plate Chestpiece
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(70255, {	-- Ruthless Gladiator's Plate Gauntlets
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(70256, {	-- Ruthless Gladiator's Plate Helm
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(70257, {	-- Ruthless Gladiator's Plate Legguards
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(70258, {	-- Ruthless Gladiator's Plate Shoulders
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+					}),
+					n(-322, {	-- Back
+						i(70386, {	-- Ruthless Gladiator's Cape of Cruelty
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(70385, {	-- Ruthless Gladiator's Cape of Prowess
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(70383, {	-- Ruthless Gladiator's Cloak of Alacrity
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(70384, {	-- Ruthless Gladiator's Cloak of Prowess
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(70387, {	-- Ruthless Gladiator's Drape of Diffusion
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(70388, {	-- Ruthless Gladiator's Drape of Prowess
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(70389, {	-- Ruthless Gladiator's Drape of Meditation
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+					}),
+					n(-326, {	-- Wrists
+						i(70330, {	-- Ruthless Gladiator's Armbands of Meditation
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(70342, {	-- Ruthless Gladiator's Armbands of Prowess
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(70322, {	-- Ruthless Gladiator's Armplates of Alacrity
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(70327, {	-- Ruthless Gladiator's Armplates of Proficiency
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(70350, {	-- Ruthless Gladiator's Armwraps of Accuracy
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(70352, {	-- Ruthless Gladiator's Armwraps of Alacrity
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(70345, {	-- Ruthless Gladiator's Bindings of Meditation
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(70359, {	-- Ruthless Gladiator's Bindings of Prowess
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(70334, {	-- Ruthless Gladiator's Bracers of Meditation
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(70325, {	-- Ruthless Gladiator's Bracers of Prowess
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(70363, {	-- Ruthless Gladiator's Cuffs of Accuracy
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(70366, {	-- Ruthless Gladiator's Cuffs of Meditation
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(70365, {	-- Ruthless Gladiator's Cuffs of Prowess
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(70340, {	-- Ruthless Gladiator's Wristguards of Accuracy
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(70338, {	-- Ruthless Gladiator's Wristguards of Alacrity
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+					}),
+					n(-328, {	-- Waist
+						i(70346, {	-- Ruthless Gladiator's Belt of Cruelty
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(70343, {	-- Ruthless Gladiator's Belt of Meditation
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(70319, {	-- Ruthless Gladiator's Clasp of Cruelty
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(70332, {	-- Ruthless Gladiator's Clasp of Meditation
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(70362, {	-- Ruthless Gladiator's Cord of Accuracy
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(70360, {	-- Ruthless Gladiator's Cord of Cruelty
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(70368, {	-- Ruthless Gladiator's Cord of Meditation
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(70320, {	-- Ruthless Gladiator's Girdle of Cruelty
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(70326, {	-- Ruthless Gladiator's Girdle of Prowess
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(70339, {	-- Ruthless Gladiator's Links of Accuracy
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(70336, {	-- Ruthless Gladiator's Links of Cruelty
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(70349, {	-- Ruthless Gladiator's Waistband of Accuracy
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(70347, {	-- Ruthless Gladiator's Waistband of Cruelty
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(70331, {	-- Ruthless Gladiator's Waistguard of Cruelty
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(70328, {	-- Ruthless Gladiator's Waistguard of Meditation
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+					}),
+					n(-330, {	-- Feet
+						i(70351, {	-- Ruthless Gladiator's Boots of Alacrity
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(70348, {	-- Ruthless Gladiator's Boots of Cruelty
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(70358, {	-- Ruthless Gladiator's Footguards of Alacrity
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(70344, {	-- Ruthless Gladiator's Footguards of Meditation
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(70324, {	-- Ruthless Gladiator's Greaves of Alacrity
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(70333, {	-- Ruthless Gladiator's Greaves of Meditation
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(70337, {	-- Ruthless Gladiator's Sabatons of Alacrity
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(70341, {	-- Ruthless Gladiator's Sabatons of Alacrity
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(70335, {	-- Ruthless Gladiator's Sabatons of Cruelty
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(70329, {	-- Ruthless Gladiator's Sabatons of Meditation
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(70364, {	-- Ruthless Gladiator's Treads of Alacrity
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(70361, {	-- Ruthless Gladiator's Treads of Cruelty
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(70367, {	-- Ruthless Gladiator's Treads of Meditation
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(70323, {	-- Ruthless Gladiator's Warboots of Alacrity
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(70321, {	-- Ruthless Gladiator's Warboots of Cruelty
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
 					},
 				}),
 				n(20278,  {	-- Vixton Pinchwhistle <Bloodthirsty Gladiator>

@@ -1941,6 +1941,7 @@ _.NeverImplemented =
 			i(81051),	-- Scavenger's locket
 			i(81052),	-- Scavenger's amulet
 			i(81053),	-- Scavenger's pendant
+			i(60666), 	-- Vicious Gladiator's Pendant of Conquest
 			i(108812),	-- Unknown
 			i(108818),	-- Unknown
 			i(108819),	-- Unknown
@@ -2271,6 +2272,16 @@ _.NeverImplemented =
 		i(169154),	-- ph nzoth cache
 		i(170501),	-- ph mogu cache
 		i(172381),	-- ph objective 2
+		i(146483),	-- Ensemble: Elite Ruthless Gladiator's Dreadplate Armor
+		i(146481),	-- Ensemble: Elite Ruthless Gladiator's Dragonhide Armor
+		i(146479),	-- Ensemble: Elite Ruthless Gladiator's Chain Armor
+		i(146497),	-- Ensemble: Elite Ruthless Gladiator's Silk Armor
+		i(146495),	-- Ensemble: Elite Ruthless Gladiator's Scaled Armor
+		i(146493),	-- Ensemble: Elite Ruthless Gladiator's Satin Armor
+		i(146487),	-- Ensemble: Elite Ruthless Gladiator's Leather Armor
+		i(146491),	-- Ensemble: Elite Ruthless Gladiator's Ringmail Armor
+		i(146485),	-- Ensemble: Elite Ruthless Gladiator's Felweave Armor
+		i(146489),	-- Ensemble: Elite Ruthless Gladiator's Plate Armor
 		i(169178),	-- Blueprint: TK33(DNT))
 		i(169179),	-- Blueprint: TK34(DNT))
 		i(169180),	-- Blueprint: TK35(DNT))
