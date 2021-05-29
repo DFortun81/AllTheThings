@@ -437,6 +437,12 @@ profession(FISHING, {
 		}),
 		p(163),		-- Toothy
 	}),
+	n(QUESTS, {
+		q(24431, {	-- Waterlogged Recipe
+			["repeatable"] = true,
+			["provider"] = { "i", 49667 },	-- Waterlogged Recipe
+		}),
+	}),
 	n(-319,   {	-- Weapons
 		i(44703),	-- Dark Herring
 		i(44505, {	-- Dustbringer
