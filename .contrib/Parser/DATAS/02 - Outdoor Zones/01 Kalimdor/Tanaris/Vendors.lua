@@ -1633,10 +1633,6 @@ _.Zones =
 				n(20278,  {	-- Vixton Pinchwhistle <Bloodthirsty Gladiator>
 					["itemID"] = 137642,	-- Mark of Honor
 					["coord"] = { 51.6, 28.0, 71 },
-					["sym"] = {
-						{"sub", "pvp_gear_base", -9979, -672, -9983 },
-						{"pop"},	-- Discard the Set header and acquire the children.
-					},
 					["g"] = {
 						cl(DEATHKNIGHT, {
 							i(146423, {	-- Ensemble: Bloodthirsty Gladiator's Dreadplate Armor

@@ -1629,6 +1629,9 @@ _.PVP =
 				}),
 			}),
 			n(-662, {	-- Elite PvP Gear
+				-- Original Sources are: 
+				-- n51255 Lieutenant Tristia <Glorious Conquest Quartermaster> in Stormwind (Alliance)
+				-- n46593 Doris Volanthius <Glorious Conquest Quartermaster> in Orgrimmar (Horde)
 				n(-319, {	-- Weapons
 					un(REMOVED_FROM_GAME, i(67476)),	-- Vicious Gladiator's Barrier
 					un(REMOVED_FROM_GAME, i(67464)),	-- Vicious Gladiator's Baton of Light
@@ -2993,6 +2996,10 @@ _.PVP =
 				},
 			}),
 			n(-662, {	-- Elite PvP Gear
+				-- Original Sources are: 
+				-- n40606 Knight-Lieutenant T'Maire Sydes in Stormwind (Alliance)
+				-- n54659 Blood Guard Zar'shi in Orgrimmar (Horde)
+				-- n34088 Blazzek the Biter <Exceptional Arena Weaponry> in Gadgetzan
 				n(-319, {	-- Weapons
 					un(REMOVED_FROM_GAME, i(70207)),	-- Ruthless Gladiator's Barrier
 					un(REMOVED_FROM_GAME, i(70195)),	-- Ruthless Gladiator's Baton of Light
