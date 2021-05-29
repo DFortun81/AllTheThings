@@ -1788,7 +1788,9 @@ _.PVP =
 						un(REMOVED_FROM_GAME, i(67466)), -- Vicious Gladiator's Hatchet (Throw wep) wrong label by blizz
 					}),
 				}),
-				n(-655, {	-- Ensemble Gear (Season 10 version)
+			}),
+			n(-673, {	-- Ruthless Gladiator: Season 10
+				n(-656, {	-- Honor Gear Ruthless (S10)
 					["description"] = "These items are only available from the Bloodthirsty Gladiator class ensembles (listed under Vicious Gladiator Season 9: Honor Gear).",
 					["g"] = {
 						cl(DEATHKNIGHT, {
@@ -1942,12 +1944,6 @@ _.PVP =
 							i(70667),	-- Vicious Gladiator's Warboots of Alacrity
 							i(70668),	-- Vicious Gladiator's Warboots of Cruelty
 						}),	
-					},
-				}),	
-			}),
-			n(-673, {	-- Ruthless Gladiator: Season 10
-				n(-656, {	-- Honor Gear Ruthless (S10)
-					["g"] = {
 						n(-322, {	-- Back
 							un(REMOVED_FROM_GAME, i(70531)),	-- Vicious Gladiator's Cape of Cruelty
 							un(REMOVED_FROM_GAME, i(70532)),	-- Vicious Gladiator's Cape of Prowess
@@ -3122,7 +3118,9 @@ _.PVP =
 						un(REMOVED_FROM_GAME, i(70198)),	-- Ruthless Gladiator's War Edge (Throw Wep)
 					}),
 				}),
-				n(-655, {	-- Ensemble Gear (Season 11 version)
+			}),
+			n(-674, {	-- Cataclysmic Gladiator: Season 11
+				n(-654, {	-- Honor Gear Cataclysmic (S11)
 					["description"] = "These items are only available from Ruthless Gladiator class ensembles.",
 					["g"] = {
 						cl(DEATHKNIGHT, {
@@ -3277,12 +3275,6 @@ _.PVP =
 							i(72396),	-- Ruthless Gladiator's Warboots of Cruelty
 							i(72397),	-- Ruthless Gladiator's Warboots of Alacrity
 						}),
-					},
-				}),
-			}),
-			n(-674, {	-- Cataclysmic Gladiator: Season 11
-				n(-654, {	-- Honor Gear Cataclysmic (S11)
-					["g"] = {
 						n(-322, {	-- Back
 							un(REMOVED_FROM_GAME, i(72305)),	-- Ruthless Gladiator's Cape of Cruelty
 							un(REMOVED_FROM_GAME, i(72306)),	-- Ruthless Gladiator's Cape of Prowess
