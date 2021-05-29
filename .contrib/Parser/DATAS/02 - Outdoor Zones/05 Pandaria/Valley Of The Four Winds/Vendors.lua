@@ -459,10 +459,6 @@ _.Zones =
 				n(65514, {	-- Ethan Natice (Removed Season 12 Elite Vendor)
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
-					["sym"] = {
-						{"sub", "pvp_gear_base", -10041, -675, -662 },	-- Malevolent Gladiator: Season 12 Elite
-						{"pop"},	-- Discard the Set header and acquire the children.
-					},
 				}),
 				n(69968, {	-- Ethan Natice Season 14 Elite
 					["races"] = ALLIANCE_ONLY,
@@ -1250,15 +1246,6 @@ _.Zones =
 				n(73143, {	-- Hayden Christophen <Honor Quartermaster> Old Grievous Vendor (neck, etc)
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(103148)),	-- Grievous Gladiator's Necklace of Proficiency (A)
-						un(REMOVED_FROM_GAME, i(103149)),	-- Grievous Gladiator's Necklace of Prowess (A)
-						un(REMOVED_FROM_GAME, i(103170)),	-- Grievous Gladiator's Pendant of Cruelty (A)
-						un(REMOVED_FROM_GAME, i(103171)),	-- Grievous Gladiator's Pendant of Alacrity (A)
-						un(REMOVED_FROM_GAME, i(103172)),	-- Grievous Gladiator's Pendant of Mediation (A)
-						un(REMOVED_FROM_GAME, i(103317)),	-- Grievous Gladiator's Choker of Proficiency (A)
-						un(REMOVED_FROM_GAME, i(103318)),	-- Grievous Gladiator's Choker of Accuracy
-					},
 				}),
 				n(75691, {	-- Hayden Christophen <Dreadful Gladiator>
 					["itemID"] = 137642,	-- Mark of Honor
