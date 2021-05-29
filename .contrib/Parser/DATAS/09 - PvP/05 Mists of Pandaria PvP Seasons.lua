@@ -2103,7 +2103,7 @@ _.PVP =
 										{"sub", "pvp_set_ensemble", -10041, -676, -9914, -661, 6 },
 										{"select", "itemID", 91306 },	-- Tyrannical Gladiator's Armplates of Alacrity
 										{"select", "itemID", 91297 },	-- Tyrannical Gladiator's Girdle of Accuracy
-										{"select", "itemID", 91303 },	-- Tyrannical Gladiator's Warboots of Cruelty
+										{"select", "itemID", 91303 },	-- Tyrannical Gladiator's Warboots of Alacrity
 										{"select", "itemID", 99891 },	-- Tyrannical Gladiator's Armplates of Alacrity
 										{"select", "itemID", 99886 },	-- Tyrannical Gladiator's Girdle of Accuracy
 										{"select", "itemID", 99889 },	-- Tyrannical Gladiator's Warboots of Alacrity
@@ -4510,80 +4510,80 @@ _.PVP =
 								un(NEVER_IMPLEMENTED, i(100278)),	-- Grievous Gladiator's Staff
 							}),
 							cl(DEATHKNIGHT, {
-								i(138683, {	-- Ensemble: Grievous Gladiator's Dreadplate Armor
+								i(138661, {	-- Ensemble: Grievous Gladiator's Dreadplate Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = { 
-										{"sub", "pvp_set_ensemble", -10041, -676, -9914, -661, 6 },
-										{"select", "itemID", 91306 },	-- Grievous Gladiator's Armplates of Alacrity
-										{"select", "itemID", 91297 },	-- Grievous Gladiator's Girdle of Accuracy
-										{"select", "itemID", 91303 },	-- Grievous Gladiator's Warboots of Cruelty
-										{"select", "itemID", 99891 },	-- Grievous Gladiator's Armplates of Alacrity
-										{"select", "itemID", 99886 },	-- Grievous Gladiator's Girdle of Accuracy
-										{"select", "itemID", 99889 },	-- Grievous Gladiator's Warboots of Alacrity
-										{"select", "itemID", 99806 },	-- Grievous Gladiator's Dreadplate Chestpiece
-										{"select", "itemID", 99807 },	-- Grievous Gladiator's Dreadplate Gauntlets
-										{"select", "itemID", 99808 },	-- Grievous Gladiator's Dreadplate Helm
-										{"select", "itemID", 99809 },	-- Grievous Gladiator's Dreadplate Legguards
-										{"select", "itemID", 99810 },	-- Grievous Gladiator's Dreadplate Shoulders
-										{"exclude", "itemID", 138683 },	-- Exclude itself to stop duplicating 
+										{"sub", "pvp_set_ensemble", -10041, -677, -9914, -661, 6 },
+										{"select", "itemID", 100402 },	-- Grievous Gladiator's Armplates of Alacrity
+										{"select", "itemID", 100393 },	-- Grievous Gladiator's Girdle of Accuracy
+										{"select", "itemID", 100399 },	-- Grievous Gladiator's Warboots of Alacrity
+										{"select", "itemID", 103263 },	-- Grievous Gladiator's Armplates of Alacrity
+										{"select", "itemID", 103258 },	-- Grievous Gladiator's Girdle of Accuracy
+										{"select", "itemID", 103261 },	-- Grievous Gladiator's Warboots of Alacrity
+										{"select", "itemID", 103179 },	-- Grievous Gladiator's Dreadplate Chestpiece
+										{"select", "itemID", 103180 },	-- Grievous Gladiator's Dreadplate Gauntlets
+										{"select", "itemID", 103181 },	-- Grievous Gladiator's Dreadplate Helm
+										{"select", "itemID", 103182 },	-- Grievous Gladiator's Dreadplate Legguards
+										{"select", "itemID", 103183 },	-- Grievous Gladiator's Dreadplate Shoulders
+										{"exclude", "itemID", 138661 },	-- Exclude itself to stop duplicating 
 									},
 								}),
-								i(91147),	-- Grievous Gladiator's Dreadplate Chestpiece
-								i(91149),	-- Grievous Gladiator's Dreadplate Gauntlets
-								i(91151),	-- Grievous Gladiator's Dreadplate Helm
-								i(91153),	-- Grievous Gladiator's Dreadplate Legguards
-								i(91155),	-- Grievous Gladiator's Dreadplate Shoulders
+								i(100243),	-- Grievous Gladiator's Dreadplate Chestpiece
+								i(100245),	-- Grievous Gladiator's Dreadplate Gauntlets
+								i(100247),	-- Grievous Gladiator's Dreadplate Helm
+								i(100249),	-- Grievous Gladiator's Dreadplate Legguards
+								i(100251),	-- Grievous Gladiator's Dreadplate Shoulders
 							}),
 							cl(DRUID, {
-								i(138691, {	-- Ensemble: Grievous Gladiator's Dragonhide Armor
+								i(138669, {	-- Ensemble: Grievous Gladiator's Dragonhide Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = { 
-										{"sub", "pvp_set_ensemble", -10041, -676, -9914, -661, 11 },
-										{"select", "itemID", 91171 },	-- Grievous Gladiator's Bindings of Meditation
-										{"select", "itemID", 91188 },	-- Grievous Gladiator's Bindings of Prowess
-										{"select", "itemID", 91184 },	-- Grievous Gladiator's Belt of Cruelty
-										{"select", "itemID", 91167 },	-- Grievous Gladiator's Belt of Meditation
-										{"select", "itemID", 91186 },	-- Grievous Gladiator's Footguards of Alacrity (Leather)
-										{"select", "itemID", 91169 },	-- Grievous Gladiator's Footguards of Meditation (Leather)
-										{"select", "itemID", 99818 },	-- Grievous Gladiator's Bindings of Meditation
-										{"select", "itemID", 99827 },	-- Grievous Gladiator's Bindings of Prowess
-										{"select", "itemID", 99825 },	-- Grievous Gladiator's Belt of Cruelty
-										{"select", "itemID", 99816 },	-- Grievous Gladiator's Belt of Meditation
-										{"select", "itemID", 99826 },	-- Grievous Gladiator's Footguards of Alacrity (Leather)
-										{"select", "itemID", 99817 },	-- Grievous Gladiator's Footguards of Meditation (Leather)
-										{"select", "itemID", 99811 },	-- Grievous Gladiator's Dragonhide Gloves
-										{"select", "itemID", 99812 },	-- Grievous Gladiator's Dragonhide Helm
-										{"select", "itemID", 99813 },	-- Grievous Gladiator's Dragonhide Legguards
-										{"select", "itemID", 99814 },	-- Grievous Gladiator's Dragonhide Robes
-										{"select", "itemID", 99815 },	-- Grievous Gladiator's Dragonhide Spaulders
-										{"select", "itemID", 99819 },	-- Grievous Gladiator's Kodohide Gloves
-										{"select", "itemID", 99820 },	-- Grievous Gladiator's Kodohide Helm
-										{"select", "itemID", 99821 },	-- Grievous Gladiator's Kodohide Legguards
-										{"select", "itemID", 99822 },	-- Grievous Gladiator's Kodohide Robes
-										{"select", "itemID", 99823 },	-- Grievous Gladiator's Kodohide Spaulders
-										{"select", "itemID", 99828 },	-- Grievous Gladiator's Wyrmhide Gloves
-										{"select", "itemID", 99829 },	-- Grievous Gladiator's Wyrmhide Helm
-										{"select", "itemID", 99830 },	-- Grievous Gladiator's Wyrmhide Legguards
-										{"select", "itemID", 99831 },	-- Grievous Gladiator's Wyrmhide Robes
-										{"select", "itemID", 99832 },	-- Grievous Gladiator's Wyrmhide Spaulders
-										{"exclude", "itemID", 138691 },	-- Exclude itself to stop duplicating 
+										{"sub", "pvp_set_ensemble", -10041, -677, -9914, -661, 11 },
+										{"select", "itemID", 100267 },	-- Grievous Gladiator's Bindings of Meditation
+										{"select", "itemID", 100284 },	-- Grievous Gladiator's Bindings of Prowess
+										{"select", "itemID", 100280 },	-- Grievous Gladiator's Belt of Cruelty
+										{"select", "itemID", 100263 },	-- Grievous Gladiator's Belt of Meditation
+										{"select", "itemID", 100282 },	-- Grievous Gladiator's Footguards of Alacrity (Leather)
+										{"select", "itemID", 100265 },	-- Grievous Gladiator's Footguards of Meditation (Leather)
+										{"select", "itemID", 103191 },	-- Grievous Gladiator's Bindings of Meditation
+										{"select", "itemID", 103200 },	-- Grievous Gladiator's Bindings of Prowess
+										{"select", "itemID", 103198 },	-- Grievous Gladiator's Belt of Cruelty
+										{"select", "itemID", 103189 },	-- Grievous Gladiator's Belt of Meditation
+										{"select", "itemID", 103199 },	-- Grievous Gladiator's Footguards of Alacrity (Leather)
+										{"select", "itemID", 103190 },	-- Grievous Gladiator's Footguards of Meditation (Leather)
+										{"select", "itemID", 103184 },	-- Grievous Gladiator's Dragonhide Gloves
+										{"select", "itemID", 103185 },	-- Grievous Gladiator's Dragonhide Helm
+										{"select", "itemID", 103186 },	-- Grievous Gladiator's Dragonhide Legguards
+										{"select", "itemID", 103187 },	-- Grievous Gladiator's Dragonhide Robes
+										{"select", "itemID", 103188 },	-- Grievous Gladiator's Dragonhide Spaulders
+										{"select", "itemID", 103192 },	-- Grievous Gladiator's Kodohide Gloves
+										{"select", "itemID", 103193 },	-- Grievous Gladiator's Kodohide Helm
+										{"select", "itemID", 103194 },	-- Grievous Gladiator's Kodohide Legguards
+										{"select", "itemID", 103195 },	-- Grievous Gladiator's Kodohide Robes
+										{"select", "itemID", 103196 },	-- Grievous Gladiator's Kodohide Spaulders
+										{"select", "itemID", 103201 },	-- Grievous Gladiator's Wyrmhide Gloves
+										{"select", "itemID", 103202 },	-- Grievous Gladiator's Wyrmhide Helm
+										{"select", "itemID", 103203 },	-- Grievous Gladiator's Wyrmhide Legguards
+										{"select", "itemID", 103204 },	-- Grievous Gladiator's Wyrmhide Robes
+										{"select", "itemID", 103205 },	-- Grievous Gladiator's Wyrmhide Spaulders
+										{"exclude", "itemID", 138669 },	-- Exclude itself to stop duplicating 
 									},
 								}),
-								i(91157),	-- Grievous Gladiator's Dragonhide Gloves
-								i(91159),	-- Grievous Gladiator's Dragonhide Helm
-								i(91161),	-- Grievous Gladiator's Dragonhide Legguards
-								i(91163),	-- Grievous Gladiator's Dragonhide Robes
-								i(91165),	-- Grievous Gladiator's Dragonhide Spaulders
-								i(91172),	-- Grievous Gladiator's Kodohide Gloves
-								i(91174),	-- Grievous Gladiator's Kodohide Helm
-								i(91176),	-- Grievous Gladiator's Kodohide Legguards
-								i(91178),	-- Grievous Gladiator's Kodohide Robes
-								i(91180),	-- Grievous Gladiator's Kodohide Spaulders
-								i(91189),	-- Grievous Gladiator's Wyrmhide Gloves
-								i(91191),	-- Grievous Gladiator's Wyrmhide Helm
-								i(91193),	-- Grievous Gladiator's Wyrmhide Legguards
-								i(91195),	-- Grievous Gladiator's Wyrmhide Robes
-								i(91197),	-- Grievous Gladiator's Wyrmhide Spaulders
+								i(100253),	-- Grievous Gladiator's Dragonhide Gloves
+								i(100255),	-- Grievous Gladiator's Dragonhide Helm
+								i(100257),	-- Grievous Gladiator's Dragonhide Legguards
+								i(100259),	-- Grievous Gladiator's Dragonhide Robes
+								i(100261),	-- Grievous Gladiator's Dragonhide Spaulders
+								i(100268),	-- Grievous Gladiator's Kodohide Gloves
+								i(100270),	-- Grievous Gladiator's Kodohide Helm
+								i(100272),	-- Grievous Gladiator's Kodohide Legguards
+								i(100274),	-- Grievous Gladiator's Kodohide Robes
+								i(100276),	-- Grievous Gladiator's Kodohide Spaulders
+								i(100285),	-- Grievous Gladiator's Wyrmhide Gloves
+								i(100287),	-- Grievous Gladiator's Wyrmhide Helm
+								i(100289),	-- Grievous Gladiator's Wyrmhide Legguards
+								i(100291),	-- Grievous Gladiator's Wyrmhide Robes
+								i(100293),	-- Grievous Gladiator's Wyrmhide Spaulders
 							}),
 							cl(HUNTER, {
 								i(138689, {	-- Ensemble: Grievous Gladiator's Chain Armor
@@ -5060,66 +5060,66 @@ _.PVP =
 								un(NEVER_IMPLEMENTED, i(103197)),	-- Grievous Gladiator's Staff
 							}),
 							cl(DEATHKNIGHT, {
-								i(99806, {	-- Grievous Gladiator's Dreadplate Chestpiece
+								i(103179, {	-- Grievous Gladiator's Dreadplate Chestpiece
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(99807, {	-- Grievous Gladiator's Dreadplate Gauntlets
+								i(103180, {	-- Grievous Gladiator's Dreadplate Gauntlets
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(99808, {	-- Grievous Gladiator's Dreadplate Helm
+								i(103181, {	-- Grievous Gladiator's Dreadplate Helm
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(99809, {	-- Grievous Gladiator's Dreadplate Legguards
+								i(103182, {	-- Grievous Gladiator's Dreadplate Legguards
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(99810, {	-- Grievous Gladiator's Dreadplate Shoulders
+								i(103183, {	-- Grievous Gladiator's Dreadplate Shoulders
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
 							}),
 							cl(DRUID, {
-								i(99811, {	-- Grievous Gladiator's Dragonhide Gloves
+								i(103184, {	-- Grievous Gladiator's Dragonhide Gloves
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(99812, {	-- Grievous Gladiator's Dragonhide Helm
+								i(103185, {	-- Grievous Gladiator's Dragonhide Helm
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(99813, {	-- Grievous Gladiator's Dragonhide Legguards
+								i(103186, {	-- Grievous Gladiator's Dragonhide Legguards
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(99814, {	-- Grievous Gladiator's Dragonhide Robes
+								i(103187, {	-- Grievous Gladiator's Dragonhide Robes
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(99815, {	-- Grievous Gladiator's Dragonhide Spaulders
+								i(103188, {	-- Grievous Gladiator's Dragonhide Spaulders
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(99819, {	-- Grievous Gladiator's Kodohide Gloves
+								i(103192, {	-- Grievous Gladiator's Kodohide Gloves
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(99820, {	-- Grievous Gladiator's Kodohide Helm
+								i(103193, {	-- Grievous Gladiator's Kodohide Helm
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(99821, {	-- Grievous Gladiator's Kodohide Legguards
+								i(103194, {	-- Grievous Gladiator's Kodohide Legguards
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(99822, {	-- Grievous Gladiator's Kodohide Robes
+								i(103195, {	-- Grievous Gladiator's Kodohide Robes
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(99823, {	-- Grievous Gladiator's Kodohide Spaulders
+								i(103196, {	-- Grievous Gladiator's Kodohide Spaulders
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(99828, {	-- Grievous Gladiator's Wyrmhide Gloves
+								i(103201, {	-- Grievous Gladiator's Wyrmhide Gloves
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(99829, {	-- Grievous Gladiator's Wyrmhide Helm
+								i(103202, {	-- Grievous Gladiator's Wyrmhide Helm
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(99830, {	-- Grievous Gladiator's Wyrmhide Legguards
+								i(103203, {	-- Grievous Gladiator's Wyrmhide Legguards
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(99831, {	-- Grievous Gladiator's Wyrmhide Robes
+								i(103204, {	-- Grievous Gladiator's Wyrmhide Robes
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(99832, {	-- Grievous Gladiator's Wyrmhide Spaulders
+								i(103205, {	-- Grievous Gladiator's Wyrmhide Spaulders
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
 							}),
@@ -5620,80 +5620,80 @@ _.PVP =
 									un(NEVER_IMPLEMENTED, i(100537)),	-- Grievous Gladiator's Staff
 								}),
 							cl(DEATHKNIGHT, {
-								i(138684, {	-- Ensemble: Grievous Gladiator's Dreadplate Armor
+								i(138662, {	-- Ensemble: Grievous Gladiator's Dreadplate Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = { 
-										{"sub", "pvp_set_ensemble", -10041, -676, -9913, -661, 6 },
-										{"select", "itemID", 94487 },	-- Grievous Gladiator's Armplates of Alacrity
-										{"select", "itemID", 94353 },	-- Grievous Gladiator's Girdle of Accuracy
-										{"select", "itemID", 94461 },	-- Grievous Gladiator's Warboots of Alacrity
-										{"select", "itemID", 100157 },	-- Grievous Gladiator's Armplates of Alacrity
-										{"select", "itemID", 100023 },	-- Grievous Gladiator's Girdle of Accuracy
-										{"select", "itemID", 100084 },	-- Grievous Gladiator's Warboots of Alacrity
-										{"select", "itemID", 100062 },	-- Grievous Gladiator's Dreadplate Chestpiece
-										{"select", "itemID", 100034 },	-- Grievous Gladiator's Dreadplate Gauntlets
-										{"select", "itemID", 100099 },	-- Grievous Gladiator's Dreadplate Helm
-										{"select", "itemID", 100035 },	-- Grievous Gladiator's Dreadplate Legguards
-										{"select", "itemID", 100036 },	-- Grievous Gladiator's Dreadplate Shoulders
-										{"exclude", "itemID", 138684 },	-- Exclude itself to stop duplicating 
+										{"sub", "pvp_set_ensemble", -10041, -677, -9913, -661, 6 },
+										{"select", "itemID", 100717 },	-- Grievous Gladiator's Armplates of Alacrity
+										{"select", "itemID", 100583 },	-- Grievous Gladiator's Girdle of Accuracy
+										{"select", "itemID", 100691 },	-- Grievous Gladiator's Warboots of Alacrity
+										{"select", "itemID", 102968 },	-- Grievous Gladiator's Armplates of Alacrity
+										{"select", "itemID", 102837 },	-- Grievous Gladiator's Girdle of Accuracy
+										{"select", "itemID", 102942 },	-- Grievous Gladiator's Warboots of Alacrity
+										{"select", "itemID", 102873 },	-- Grievous Gladiator's Dreadplate Chestpiece
+										{"select", "itemID", 102847 },	-- Grievous Gladiator's Dreadplate Gauntlets
+										{"select", "itemID", 102910 },	-- Grievous Gladiator's Dreadplate Helm
+										{"select", "itemID", 102848 },	-- Grievous Gladiator's Dreadplate Legguards
+										{"select", "itemID", 102849 },	-- Grievous Gladiator's Dreadplate Shoulders
+										{"exclude", "itemID", 138662 },	-- Exclude itself to stop duplicating 
 									},
 								}),
-								i(94392),	-- Grievous Gladiator's Dreadplate Chestpiece
-								i(94364),	-- Grievous Gladiator's Dreadplate Gauntlets
-								i(94429),	-- Grievous Gladiator's Dreadplate Helm
-								i(94365),	-- Grievous Gladiator's Dreadplate Legguards
-								i(94366),	-- Grievous Gladiator's Dreadplate Shoulders
+								i(100622),	-- Grievous Gladiator's Dreadplate Chestpiece
+								i(100594),	-- Grievous Gladiator's Dreadplate Gauntlets
+								i(100659),	-- Grievous Gladiator's Dreadplate Helm
+								i(100595),	-- Grievous Gladiator's Dreadplate Legguards
+								i(100596),	-- Grievous Gladiator's Dreadplate Shoulders
 							}),
 							cl(DRUID, {
-								i(138692, {	-- Ensemble: Grievous Gladiator's Dragonhide Armor
+								i(138670, {	-- Ensemble: Grievous Gladiator's Dragonhide Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = { 
-										{"sub", "pvp_set_ensemble", -10041, -676, -9913, -661, 11 },
-										{"select", "itemID", 94407 },	-- Grievous Gladiator's Bindings of Meditation
-										{"select", "itemID", 94439 },	-- Grievous Gladiator's Bindings of Prowess
-										{"select", "itemID", 94410 },	-- Grievous Gladiator's Belt of Cruelty
-										{"select", "itemID", 94491 },	-- Grievous Gladiator's Belt of Meditation
-										{"select", "itemID", 94344 },	-- Grievous Gladiator's Footguards of Alacrity (Leather)
-										{"select", "itemID", 94476 },	-- Grievous Gladiator's Footguards of Meditation (Leather)
-										{"select", "itemID", 100077 },	-- Grievous Gladiator's Bindings of Meditation
-										{"select", "itemID", 100109 },	-- Grievous Gladiator's Bindings of Prowess
-										{"select", "itemID", 100080 },	-- Grievous Gladiator's Belt of Cruelty
-										{"select", "itemID", 100161 },	-- Grievous Gladiator's Belt of Meditation
-										{"select", "itemID", 100014 },	-- Grievous Gladiator's Footguards of Alacrity (Leather)
-										{"select", "itemID", 100146 },	-- Grievous Gladiator's Footguards of Meditation (Leather)
-										{"select", "itemID", 100125 },	-- Grievous Gladiator's Dragonhide Gloves
-										{"select", "itemID", 100037 },	-- Grievous Gladiator's Dragonhide Helm
-										{"select", "itemID", 100038 },	-- Grievous Gladiator's Dragonhide Legguards
-										{"select", "itemID", 100126 },	-- Grievous Gladiator's Dragonhide Robes
-										{"select", "itemID", 100127 },	-- Grievous Gladiator's Dragonhide Spaulders
-										{"select", "itemID", 100041 },	-- Grievous Gladiator's Kodohide Gloves
-										{"select", "itemID", 100162 },	-- Grievous Gladiator's Kodohide Helm
-										{"select", "itemID", 100147 },	-- Grievous Gladiator's Kodohide Legguards
-										{"select", "itemID", 100107 },	-- Grievous Gladiator's Kodohide Robes
-										{"select", "itemID", 100042 },	-- Grievous Gladiator's Kodohide Spaulders
-										{"select", "itemID", 100082 },	-- Grievous Gladiator's Wyrmhide Gloves
-										{"select", "itemID", 100017 },	-- Grievous Gladiator's Wyrmhide Helm
-										{"select", "itemID", 100153 },	-- Grievous Gladiator's Wyrmhide Legguards
-										{"select", "itemID", 99988 },	-- Grievous Gladiator's Wyrmhide Robes
-										{"select", "itemID", 100086 },	-- Grievous Gladiator's Wyrmhide Spaulders
-										{"exclude", "itemID", 138692 },	-- Exclude itself to stop duplicating 
+										{"sub", "pvp_set_ensemble", -10041, -677, -9913, -661, 11 },
+										{"select", "itemID", 100637 },	-- Grievous Gladiator's Bindings of Meditation
+										{"select", "itemID", 100669 },	-- Grievous Gladiator's Bindings of Prowess
+										{"select", "itemID", 100640 },	-- Grievous Gladiator's Belt of Cruelty
+										{"select", "itemID", 100721 },	-- Grievous Gladiator's Belt of Meditation
+										{"select", "itemID", 100574 },	-- Grievous Gladiator's Footguards of Alacrity (Leather)
+										{"select", "itemID", 100706 },	-- Grievous Gladiator's Footguards of Meditation (Leather)
+										{"select", "itemID", 102888 },	-- Grievous Gladiator's Bindings of Meditation
+										{"select", "itemID", 102920 },	-- Grievous Gladiator's Bindings of Prowess
+										{"select", "itemID", 102891 },	-- Grievous Gladiator's Belt of Cruelty
+										{"select", "itemID", 102972 },	-- Grievous Gladiator's Belt of Meditation
+										{"select", "itemID", 102828 },	-- Grievous Gladiator's Footguards of Alacrity (Leather)
+										{"select", "itemID", 102957 },	-- Grievous Gladiator's Footguards of Meditation (Leather)
+										{"select", "itemID", 102936 },	-- Grievous Gladiator's Dragonhide Gloves
+										{"select", "itemID", 102850 },	-- Grievous Gladiator's Dragonhide Helm
+										{"select", "itemID", 102851 },	-- Grievous Gladiator's Dragonhide Legguards
+										{"select", "itemID", 102937 },	-- Grievous Gladiator's Dragonhide Robes
+										{"select", "itemID", 102938 },	-- Grievous Gladiator's Dragonhide Spaulders
+										{"select", "itemID", 102854 },	-- Grievous Gladiator's Kodohide Gloves
+										{"select", "itemID", 102973 },	-- Grievous Gladiator's Kodohide Helm
+										{"select", "itemID", 102958 },	-- Grievous Gladiator's Kodohide Legguards
+										{"select", "itemID", 102918 },	-- Grievous Gladiator's Kodohide Robes
+										{"select", "itemID", 102855 },	-- Grievous Gladiator's Kodohide Spaulders
+										{"select", "itemID", 102893 },	-- Grievous Gladiator's Wyrmhide Gloves
+										{"select", "itemID", 102831 },	-- Grievous Gladiator's Wyrmhide Helm
+										{"select", "itemID", 102964 },	-- Grievous Gladiator's Wyrmhide Legguards
+										{"select", "itemID", 102811 },	-- Grievous Gladiator's Wyrmhide Robes
+										{"select", "itemID", 102897 },	-- Grievous Gladiator's Wyrmhide Spaulders
+										{"exclude", "itemID", 138670 },	-- Exclude itself to stop duplicating 
 									},
 								}),
-								i(94455),	-- Grievous Gladiator's Dragonhide Gloves
-								i(94367),	-- Grievous Gladiator's Dragonhide Helm
-								i(94368),	-- Grievous Gladiator's Dragonhide Legguards
-								i(94456),	-- Grievous Gladiator's Dragonhide Robes
-								i(94457),	-- Grievous Gladiator's Dragonhide Spaulders
-								i(94371),	-- Grievous Gladiator's Kodohide Gloves
-								i(94492),	-- Grievous Gladiator's Kodohide Helm
-								i(94477),	-- Grievous Gladiator's Kodohide Legguards
-								i(94437),	-- Grievous Gladiator's Kodohide Robes
-								i(94372),	-- Grievous Gladiator's Kodohide Spaulders
-								i(94412),	-- Grievous Gladiator's Wyrmhide Gloves
-								i(94347),	-- Grievous Gladiator's Wyrmhide Helm
-								i(94483),	-- Grievous Gladiator's Wyrmhide Legguards
-								i(94327),	-- Grievous Gladiator's Wyrmhide Robes
-								i(94416),	-- Grievous Gladiator's Wyrmhide Spaulders
+								i(100685),	-- Grievous Gladiator's Dragonhide Gloves
+								i(100597),	-- Grievous Gladiator's Dragonhide Helm
+								i(100598),	-- Grievous Gladiator's Dragonhide Legguards
+								i(100686),	-- Grievous Gladiator's Dragonhide Robes
+								i(100687),	-- Grievous Gladiator's Dragonhide Spaulders
+								i(100601),	-- Grievous Gladiator's Kodohide Gloves
+								i(100722),	-- Grievous Gladiator's Kodohide Helm
+								i(100707),	-- Grievous Gladiator's Kodohide Legguards
+								i(100667),	-- Grievous Gladiator's Kodohide Robes
+								i(100602),	-- Grievous Gladiator's Kodohide Spaulders
+								i(100642),	-- Grievous Gladiator's Wyrmhide Gloves
+								i(100577),	-- Grievous Gladiator's Wyrmhide Helm
+								i(100713),	-- Grievous Gladiator's Wyrmhide Legguards
+								i(100557),	-- Grievous Gladiator's Wyrmhide Robes
+								i(100646),	-- Grievous Gladiator's Wyrmhide Spaulders
 							}),
 							cl(HUNTER, {
 								i(138690, {	-- Ensemble: Grievous Gladiator's Chain Armor
@@ -6170,66 +6170,66 @@ _.PVP =
 								un(NEVER_IMPLEMENTED, i(102792)),	-- Grievous Gladiator's Staff
 							}),
 							cl(DEATHKNIGHT, {
-								i(100062, {	-- Grievous Gladiator's Dreadplate Chestpiece
+								i(102873, {	-- Grievous Gladiator's Dreadplate Chestpiece
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(100034, {	-- Grievous Gladiator's Dreadplate Gauntlets
+								i(102847, {	-- Grievous Gladiator's Dreadplate Gauntlets
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(100099, {	-- Grievous Gladiator's Dreadplate Helm
+								i(102910, {	-- Grievous Gladiator's Dreadplate Helm
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(100035, {	-- Grievous Gladiator's Dreadplate Legguards
+								i(102848, {	-- Grievous Gladiator's Dreadplate Legguards
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(100036, {	-- Grievous Gladiator's Dreadplate Shoulders
+								i(102849, {	-- Grievous Gladiator's Dreadplate Shoulders
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
 							}),
 							cl(DRUID, {
-								i(100125, {	-- Grievous Gladiator's Dragonhide Gloves
+								i(102936, {	-- Grievous Gladiator's Dragonhide Gloves
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(100037, {	-- Grievous Gladiator's Dragonhide Helm
+								i(102850, {	-- Grievous Gladiator's Dragonhide Helm
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(100038, {	-- Grievous Gladiator's Dragonhide Legguards
+								i(102851, {	-- Grievous Gladiator's Dragonhide Legguards
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(100126, {	-- Grievous Gladiator's Dragonhide Robes
+								i(102937, {	-- Grievous Gladiator's Dragonhide Robes
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(100127, {	-- Grievous Gladiator's Dragonhide Spaulders
+								i(102938, {	-- Grievous Gladiator's Dragonhide Spaulders
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(100041, {	-- Grievous Gladiator's Kodohide Gloves
+								i(102854, {	-- Grievous Gladiator's Kodohide Gloves
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(100162, {	-- Grievous Gladiator's Kodohide Helm
+								i(102973, {	-- Grievous Gladiator's Kodohide Helm
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(100147, {	-- Grievous Gladiator's Kodohide Legguards
+								i(102958, {	-- Grievous Gladiator's Kodohide Legguards
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(100107, {	-- Grievous Gladiator's Kodohide Robes
+								i(102918, {	-- Grievous Gladiator's Kodohide Robes
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(100042, {	-- Grievous Gladiator's Kodohide Spaulders
+								i(102855, {	-- Grievous Gladiator's Kodohide Spaulders
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(100082, {	-- Grievous Gladiator's Wyrmhide Gloves
+								i(102893, {	-- Grievous Gladiator's Wyrmhide Gloves
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(100017, {	-- Grievous Gladiator's Wyrmhide Helm
+								i(102831, {	-- Grievous Gladiator's Wyrmhide Helm
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(100153, {	-- Grievous Gladiator's Wyrmhide Legguards
+								i(102964, {	-- Grievous Gladiator's Wyrmhide Legguards
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(99988, {	-- Grievous Gladiator's Wyrmhide Robes
+								i(102811, {	-- Grievous Gladiator's Wyrmhide Robes
 									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
 								}),
-								i(100086, {	-- Grievous Gladiator's Wyrmhide Spaulders
+								i(102897, {	-- Grievous Gladiator's Wyrmhide Spaulders
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
 							}),
@@ -6694,28 +6694,36 @@ _.PVP =
 						un(NEVER_IMPLEMENTED, i(100279)),	-- Grievous Gladiator's Staff
 					}),
 					cl(DEATHKNIGHT, {
-						un(REMOVED_FROM_GAME, i(91148)),	-- Grievous Gladiator's Dreadplate Chestpiece
-						un(REMOVED_FROM_GAME, i(91150)),	-- Grievous Gladiator's Dreadplate Gauntlets
-						un(REMOVED_FROM_GAME, i(91152)),	-- Grievous Gladiator's Dreadplate Helm
-						un(REMOVED_FROM_GAME, i(91154)),	-- Grievous Gladiator's Dreadplate Legguards
-						un(REMOVED_FROM_GAME, i(91156)),	-- Grievous Gladiator's Dreadplate Shoulders
+						un(REMOVED_FROM_GAME, i(100244)),	-- Grievous Gladiator's Dreadplate Chestpiece
+						un(REMOVED_FROM_GAME, i(100246)),	-- Grievous Gladiator's Dreadplate Gauntlets
+						un(REMOVED_FROM_GAME, i(100248)),	-- Grievous Gladiator's Dreadplate Helm
+						un(REMOVED_FROM_GAME, i(100250)),	-- Grievous Gladiator's Dreadplate Legguards
+						un(REMOVED_FROM_GAME, i(100252)),	-- Grievous Gladiator's Dreadplate Shoulders
+						un(REMOVED_FROM_GAME, i(100394)),	-- Grievous Gladiator's Dreadplate Girdle
+						un(REMOVED_FROM_GAME, i(100400)),	-- Grievous Gladiator's Dreadplate Warboots
 					}),
 					cl(DRUID, {
-						un(REMOVED_FROM_GAME, i(91158)),	-- Grievous Gladiator's Dragonhide Gloves
-						un(REMOVED_FROM_GAME, i(91160)),	-- Grievous Gladiator's Dragonhide Helm
-						un(REMOVED_FROM_GAME, i(91162)),	-- Grievous Gladiator's Dragonhide Legguards
-						un(REMOVED_FROM_GAME, i(91164)),	-- Grievous Gladiator's Dragonhide Robes
-						un(REMOVED_FROM_GAME, i(91166)),	-- Grievous Gladiator's Dragonhide Spaulders
-						un(REMOVED_FROM_GAME, i(91173)),	-- Grievous Gladiator's Kodohide Gloves
-						un(REMOVED_FROM_GAME, i(91175)),	-- Grievous Gladiator's Kodohide Helm
-						un(REMOVED_FROM_GAME, i(91177)),	-- Grievous Gladiator's Kodohide Legguards
-						un(REMOVED_FROM_GAME, i(91179)),	-- Grievous Gladiator's Kodohide Robes
-						un(REMOVED_FROM_GAME, i(91181)),	-- Grievous Gladiator's Kodohide Spaulders
-						un(REMOVED_FROM_GAME, i(91190)),	-- Grievous Gladiator's Wyrmhide Gloves
-						un(REMOVED_FROM_GAME, i(91192)),	-- Grievous Gladiator's Wyrmhide Helm
-						un(REMOVED_FROM_GAME, i(91194)),	-- Grievous Gladiator's Wyrmhide Legguards
-						un(REMOVED_FROM_GAME, i(91196)),	-- Grievous Gladiator's Wyrmhide Robes
-						un(REMOVED_FROM_GAME, i(91198)),	-- Grievous Gladiator's Wyrmhide Spaulders
+						un(REMOVED_FROM_GAME, i(100254)),	-- Grievous Gladiator's Dragonhide Gloves
+						un(REMOVED_FROM_GAME, i(100256)),	-- Grievous Gladiator's Dragonhide Helm
+						un(REMOVED_FROM_GAME, i(100258)),	-- Grievous Gladiator's Dragonhide Legguards
+						un(REMOVED_FROM_GAME, i(100260)),	-- Grievous Gladiator's Dragonhide Robes
+						un(REMOVED_FROM_GAME, i(100262)),	-- Grievous Gladiator's Dragonhide Spaulders
+						un(REMOVED_FROM_GAME, i(100269)),	-- Grievous Gladiator's Kodohide Gloves
+						un(REMOVED_FROM_GAME, i(100271)),	-- Grievous Gladiator's Kodohide Helm
+						un(REMOVED_FROM_GAME, i(100273)),	-- Grievous Gladiator's Kodohide Legguards
+						un(REMOVED_FROM_GAME, i(100275)),	-- Grievous Gladiator's Kodohide Robes
+						un(REMOVED_FROM_GAME, i(100277)),	-- Grievous Gladiator's Kodohide Spaulders
+						un(REMOVED_FROM_GAME, i(100286)),	-- Grievous Gladiator's Wyrmhide Gloves
+						un(REMOVED_FROM_GAME, i(100288)),	-- Grievous Gladiator's Wyrmhide Helm
+						un(REMOVED_FROM_GAME, i(100290)),	-- Grievous Gladiator's Wyrmhide Legguards
+						un(REMOVED_FROM_GAME, i(100292)),	-- Grievous Gladiator's Wyrmhide Robes
+						un(REMOVED_FROM_GAME, i(100294)),	-- Grievous Gladiator's Wyrmhide Spaulders
+						un(REMOVED_FROM_GAME, i(102143)),	-- Grievous Gladiator's Dragonhide Belt
+						un(REMOVED_FROM_GAME, i(100264)),	-- Grievous Gladiator's Kodohide Belt
+						un(REMOVED_FROM_GAME, i(100281)),	-- Grievous Gladiator's Wyrmhide Belt
+						un(REMOVED_FROM_GAME, i(102142)),	-- Grievous Gladiator's Dragonhide Footguards
+						un(REMOVED_FROM_GAME, i(100266)),	-- Grievous Gladiator's Kodohide Footguards
+						un(REMOVED_FROM_GAME, i(100283)),	-- Grievous Gladiator's Wyrmhide Footguards
 					}),
 					cl(HUNTER, {
 						un(REMOVED_FROM_GAME, i(91223)),	-- Grievous Gladiator's Chain Armor
