@@ -3294,6 +3294,7 @@ _.PVP =
 					}),
 					cl(MONK, {
 						i(145386),	-- Ferocious Gladiator's Ironskin Cloak (A)
+						i(145492),	-- Ferocious Gladiator's Ironskin Belt (A)
 						i(145482),	-- Ferocious Gladiator's Ironskin Gloves (A)
 						i(145484),	-- Ferocious Gladiator's Ironskin Helm (A)
 						i(145486),	-- Ferocious Gladiator's Ironskin Legguards (A)
@@ -3480,7 +3481,6 @@ _.PVP =
 					}),
 					cl(MONK, {
 						un(14, i(145738)),	-- Ferocious Gladiator's Ironskin Belt (A)
-						un(14, i(145492)),	-- Ferocious Gladiator's Ironskin Belt (A)
 						un(14, i(145632)),	-- Ferocious Gladiator's Ironskin Cloak (A)
 						un(14, i(145728)),	-- Ferocious Gladiator's Ironskin Gloves (A)
 						un(14, i(145730)),	-- Ferocious Gladiator's Ironskin Helm (A)
