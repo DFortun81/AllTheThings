@@ -1389,9 +1389,6 @@ _.PVP =
 					i(60787, {	-- Vicious Gladiator's Drape of Prowess
 						["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 					}),
-					un(NEVER_IMPLEMENTED, i(60782)),	-- Vicious Gladiator's Cloak of Conquest
-					un(NEVER_IMPLEMENTED, i(60784)),	-- Vicious Gladiator's Cloak of Dominance
-					un(NEVER_IMPLEMENTED, i(60785)),	-- Vicious Gladiator's Cloak of Dominance
 				}),
 				n(-326, {	-- Wrists
 					i(60535, {	-- Vicious Gladiator's Armbands of Meditation
@@ -1441,11 +1438,6 @@ _.PVP =
 					}),
 					un(REMOVED_FROM_GAME, i(60629)),	-- Vicious Gladiator's Cuffs of Dominance
 					un(REMOVED_FROM_GAME, i(60614)),	-- Vicious Gladiator's Cuffs of Dominance
-					un(NEVER_IMPLEMENTED, i(60585)),	-- Vicious Gladiator's Armwraps of Dominance
-					un(NEVER_IMPLEMENTED, i(60608)),	-- Vicious Gladiator's Armwraps of Dominance
-					un(NEVER_IMPLEMENTED, i(60588)),	-- Vicious Gladiator's Armwraps of Triumph
-					un(NEVER_IMPLEMENTED, i(60597)),	-- Vicious Gladiator's Armwraps of Triumph
-					un(NEVER_IMPLEMENTED, i(60598)),	-- Vicious Gladiator's Armwraps of Triumph
 					un(REMOVED_FROM_GAME, i(60507)),	-- Vicious Gladiator's Bracers of Salvation
 					un(REMOVED_FROM_GAME, i(60515)),	-- Vicious Gladiator's Bracers of Salvation
 					un(REMOVED_FROM_GAME, i(60510)),	-- Vicious Gladiator's Bracers of Triumph
@@ -1565,9 +1557,6 @@ _.PVP =
 					i(60509, {	-- Vicious Gladiator's Warboots of Cruelty
 						["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 					}),
-					un(NEVER_IMPLEMENTED, i(60584)),	-- Vicious Gladiator's Boots of Dominance
-					un(NEVER_IMPLEMENTED, i(60610)),	-- Vicious Gladiator's Boots of Dominance
-					un(NEVER_IMPLEMENTED, i(60590)),	-- Vicious Gladiator's Boots of Triumph
 					un(REMOVED_FROM_GAME, i(60596)),	-- Vicious Gladiator's Boots of Triumph
 					un(REMOVED_FROM_GAME, i(60599)),	-- Vicious Gladiator's Boots of Triumph
 					un(REMOVED_FROM_GAME, i(60506)),	-- Vicious Gladiator's Greaves of Salvation
@@ -1951,6 +1940,8 @@ _.PVP =
 					}),	
 				},
 			}),	
+		}),
+		n(-673, {	-- Ruthless Gladiator: Season 10
 			n(-656, {	-- Pre-Season Ruthless (S10)
 				["g"] = {
 					n(-322, {	-- Back
@@ -2005,8 +1996,6 @@ _.PVP =
 					}),
 				},
 			}),
-		}),
-		n(-673, {	-- Ruthless Gladiator: Season 10
 			n(-661, {	-- Gladiator PvP Gear
 				n(-319, {	-- Weapons
 					i(146640, {	-- Arsenal: Ruthless Gladiator's Weapons
@@ -2815,12 +2804,12 @@ _.PVP =
 					i(70372),	-- Ruthless Gladiator's Signet of Cruelty
 				}),
 				n(-331, {	-- Held In Offhand
-				un(REMOVED_FROM_GAME, i(70233)),	-- Ruthless Gladiator's Hatchet (Throw wep)
-				un(REMOVED_FROM_GAME, i(70408)),	-- Ruthless Gladiator's Relic of Conquest
-				un(REMOVED_FROM_GAME, i(70405)),	-- Ruthless Gladiator's Relic of Dominance
-				un(REMOVED_FROM_GAME, i(70406)),	-- Ruthless Gladiator's Relic of Salvation
-				un(REMOVED_FROM_GAME, i(70407)),	-- Ruthless Gladiator's Relic of Triumph
-				un(REMOVED_FROM_GAME, i(70232)),	-- Ruthless Gladiator's War Edge (Throw Wep)
+					un(REMOVED_FROM_GAME, i(70233)),	-- Ruthless Gladiator's Hatchet (Throw wep)
+					un(REMOVED_FROM_GAME, i(70408)),	-- Ruthless Gladiator's Relic of Conquest
+					un(REMOVED_FROM_GAME, i(70405)),	-- Ruthless Gladiator's Relic of Dominance
+					un(REMOVED_FROM_GAME, i(70406)),	-- Ruthless Gladiator's Relic of Salvation
+					un(REMOVED_FROM_GAME, i(70407)),	-- Ruthless Gladiator's Relic of Triumph
+					un(REMOVED_FROM_GAME, i(70232)),	-- Ruthless Gladiator's War Edge (Throw Wep)
 				}),
 				f(53,	{	-- Trinket
 					i(70399),	-- Ruthless Gladiator's Badge of Conquest
@@ -2949,7 +2938,7 @@ _.PVP =
 						i(72466),	-- Ruthless Gladiator's Plate Helm
 						i(72467),	-- Ruthless Gladiator's Plate Legguards
 						i(72468),	-- Ruthless Gladiator's Plate Shoulders
-		
+					}),
 					n(-326, {	-- Wrists
 						i(72431),	-- Ruthless Gladiator's Armbands of Meditation
 						i(72430),	-- Ruthless Gladiator's Armbands of Prowess
@@ -3001,8 +2990,8 @@ _.PVP =
 						i(72396),	-- Ruthless Gladiator's Warboots of Cruelty
 						i(72397),	-- Ruthless Gladiator's Warboots of Alacrity
 					}),
-				}),
-			},
+				},
+			}),
 			n(-662, {	-- Elite PvP Gear
 				n(-319, {	-- Weapons
 					un(REMOVED_FROM_GAME, i(70207)),	-- Ruthless Gladiator's Barrier
@@ -3154,10 +3143,12 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(70504)),	-- Ruthless Gladiator's Warboots of Cruelty
 				}),
 				n(-331, {	-- Held In Offhand
-				un(REMOVED_FROM_GAME, i(70197)),	-- Ruthless Gladiator's Hatchet (Throw wep)
-				un(REMOVED_FROM_GAME, i(70198)),	-- Ruthless Gladiator's War Edge (Throw Wep)
+					un(REMOVED_FROM_GAME, i(70197)),	-- Ruthless Gladiator's Hatchet (Throw wep)
+					un(REMOVED_FROM_GAME, i(70198)),	-- Ruthless Gladiator's War Edge (Throw Wep)
 				}),
 			}),
+		}),
+		n(-674, {	-- Cataclysmic Gladiator: Season 11
 			n(-654, {	-- Pre-Season Cataclysmic (S11)
 				["g"] = {
 					n(-322, {	-- Back
@@ -3168,7 +3159,8 @@ _.PVP =
 						un(REMOVED_FROM_GAME, i(72323)),	-- Ruthless Gladiator's Drape of Diffusion
 						un(REMOVED_FROM_GAME, i(72324)),	-- Ruthless Gladiator's Drape of Meditation
 						un(REMOVED_FROM_GAME, i(72322)),	-- Ruthless Gladiator's Drape of Prowess
-					}),f(52,	{	-- Finger
+					}),
+					f(52,	{	-- Finger
 						un(REMOVED_FROM_GAME, i(72330)),	-- Ruthless Gladiator's Band of Accuracy
 						un(REMOVED_FROM_GAME, i(72329)),	-- Ruthless Gladiator's Band of Cruelty
 						un(REMOVED_FROM_GAME, i(72331)),	-- Ruthless Gladiator's Band of Meditation
@@ -3187,31 +3179,30 @@ _.PVP =
 						un(REMOVED_FROM_GAME, i(72327)),	-- Ruthless Gladiator's Pendant of Meditation
 					}),
 					n(-331, {	-- Held In Offhand
-					un(REMOVED_FROM_GAME, i(72456)),	-- Ruthless Gladiator's Relic of Conquest
-					un(REMOVED_FROM_GAME, i(72328)),	-- Ruthless Gladiator's Relic of Dominance
-					un(REMOVED_FROM_GAME, i(72358)),	-- Ruthless Gladiator's Relic of Salvation
-					un(REMOVED_FROM_GAME, i(72310)),	-- Ruthless Gladiator's Relic of Triumph
+						un(REMOVED_FROM_GAME, i(72456)),	-- Ruthless Gladiator's Relic of Conquest
+						un(REMOVED_FROM_GAME, i(72328)),	-- Ruthless Gladiator's Relic of Dominance
+						un(REMOVED_FROM_GAME, i(72358)),	-- Ruthless Gladiator's Relic of Salvation
+						un(REMOVED_FROM_GAME, i(72310)),	-- Ruthless Gladiator's Relic of Triumph
 					}),
 					f(53,	{	-- Trinket
-					un(REMOVED_FROM_GAME, i(72304)),	-- Ruthless Gladiator's Badge of Conquest
-					un(REMOVED_FROM_GAME, i(72448)),	-- Ruthless Gladiator's Badge of Dominance
-					un(REMOVED_FROM_GAME, i(72450)),	-- Ruthless Gladiator's Badge of Victory
-					un(REMOVED_FROM_GAME, i(72359)),	-- Ruthless Gladiator's Emblem of Cruelty
-					un(REMOVED_FROM_GAME, i(72361)),	-- Ruthless Gladiator's Emblem of Meditation
-					un(REMOVED_FROM_GAME, i(72360)),	-- Ruthless Gladiator's Emblem of Tenacity
-					un(REMOVED_FROM_GAME, i(72309)),	-- Ruthless Gladiator's Insignia of Conquest
-					un(REMOVED_FROM_GAME, i(72449)),	-- Ruthless Gladiator's Insignia of Dominance
-					un(REMOVED_FROM_GAME, i(72455)),	-- Ruthless Gladiator's Insignia of Victory
-					un(REMOVED_FROM_GAME, i(72411)),	-- Ruthless Gladiator's Medallion of Cruelty (A)
-					un(REMOVED_FROM_GAME, i(72414)),	-- Ruthless Gladiator's Medallion of Meditation (A)
-					un(REMOVED_FROM_GAME, i(72412)),	-- Ruthless Gladiator's Medallion of Tenacity (A)
-					un(REMOVED_FROM_GAME, i(72410)),	-- Ruthless Gladiator's Medallion of Cruelty (H)
-					un(REMOVED_FROM_GAME, i(72415)),	-- Ruthless Gladiator's Medallion of Meditation (H)
-					un(REMOVED_FROM_GAME, i(72413)),	-- Ruthless Gladiator's Medallion of Tenacity (H)
+						un(REMOVED_FROM_GAME, i(72304)),	-- Ruthless Gladiator's Badge of Conquest
+						un(REMOVED_FROM_GAME, i(72448)),	-- Ruthless Gladiator's Badge of Dominance
+						un(REMOVED_FROM_GAME, i(72450)),	-- Ruthless Gladiator's Badge of Victory
+						un(REMOVED_FROM_GAME, i(72359)),	-- Ruthless Gladiator's Emblem of Cruelty
+						un(REMOVED_FROM_GAME, i(72361)),	-- Ruthless Gladiator's Emblem of Meditation
+						un(REMOVED_FROM_GAME, i(72360)),	-- Ruthless Gladiator's Emblem of Tenacity
+						un(REMOVED_FROM_GAME, i(72309)),	-- Ruthless Gladiator's Insignia of Conquest
+						un(REMOVED_FROM_GAME, i(72449)),	-- Ruthless Gladiator's Insignia of Dominance
+						un(REMOVED_FROM_GAME, i(72455)),	-- Ruthless Gladiator's Insignia of Victory
+						un(REMOVED_FROM_GAME, i(72411)),	-- Ruthless Gladiator's Medallion of Cruelty (A)
+						un(REMOVED_FROM_GAME, i(72414)),	-- Ruthless Gladiator's Medallion of Meditation (A)
+						un(REMOVED_FROM_GAME, i(72412)),	-- Ruthless Gladiator's Medallion of Tenacity (A)
+						un(REMOVED_FROM_GAME, i(72410)),	-- Ruthless Gladiator's Medallion of Cruelty (H)
+						un(REMOVED_FROM_GAME, i(72415)),	-- Ruthless Gladiator's Medallion of Meditation (H)
+						un(REMOVED_FROM_GAME, i(72413)),	-- Ruthless Gladiator's Medallion of Tenacity (H)
+					}),
 				},
 			}),
-		}),
-		n(-674, {	-- Cataclysmic Gladiator: Season 11
 			n(-661, {	-- Gladiator PvP Gear
 				n(-319, {	-- Weapons
 					i(146639, {	-- Arsenal: Cataclysmic Gladiator's Weapons

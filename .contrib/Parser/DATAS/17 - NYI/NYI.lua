@@ -751,6 +751,11 @@ _.NeverImplemented =
 			i(159175),	-- Mistfall Belt
 			i(159180),	-- Mistfall Legguards
 			i(159178),	-- Mistfall Boots
+			i(60585),	-- Vicious Gladiator's Armwraps of Dominance
+			i(60608),	-- Vicious Gladiator's Armwraps of Dominance
+			i(60588),	-- Vicious Gladiator's Armwraps of Triumph
+			i(60597),	-- Vicious Gladiator's Armwraps of Triumph
+			i(60598),	-- Vicious Gladiator's Armwraps of Triumph
 			i(166946),	-- Dread Gladiator's Leather Tunic
 			i(166947),	-- Dread Gladiator's Leather Boots
 			i(166948),	-- Dread Gladiator's Leather Gloves
@@ -1186,6 +1191,9 @@ _.NeverImplemented =
 			i(179859),	-- Ardenweald Covenant Mail Hand
 			i(179860),	-- Ardenweald Covenant Mail Feet
 			i(179861),	-- Ardenweald Covenant Mail Chest
+			i(60584),	-- Vicious Gladiator's Boots of Dominance
+			i(60610),	-- Vicious Gladiator's Boots of Dominance
+			i(60590),	-- Vicious Gladiator's Boots of Triumph
 			i(166954),	-- Dread Gladiator's Chain Armor
 			i(166955),	-- Dread Gladiator's Chain Sabatons
 			i(166956),	-- Dread Gladiator's Chain Gauntlets
@@ -1765,6 +1773,9 @@ _.NeverImplemented =
 			i(165261),	-- Unknown Cloak
 			i(134699),	-- Enveloping Drape
 			i(134609),	-- Scorching Cape
+			i(60782),	-- Vicious Gladiator's Cloak of Conquest
+			i(60784),	-- Vicious Gladiator's Cloak of Dominance
+			i(60785),	-- Vicious Gladiator's Cloak of Dominance
 			i(179615),	-- Oribos Quest Mail Cloak
 			i(179621),	-- Ardenweald Covenant Mail Cloak
 			i(179630),	-- Ardenweald Covenant Mail Cloak
