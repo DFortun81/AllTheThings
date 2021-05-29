@@ -10,7 +10,7 @@ _.PVP =
 				n(-9983, {	-- Honor Gear
 					cl(DEATHKNIGHT, {
 						i(146423, {	-- Ensemble: Bloodthirsty Gladiator's Dreadplate Armor
-							["description"] = "You will need to log out and back in to register the Vicious Gladiator |cffde1c1cSeason 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
+							["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = { 
 								{"sub", "pvp_set_ensemble", -9979, -672, -9983, 6 },
@@ -56,7 +56,7 @@ _.PVP =
 					}),
 					cl(DRUID, {
 						i(146421, {	-- Ensemble: Bloodthirsty Gladiator's Dragonhide Armor
-							["description"] = "You will need to log out and back in to register the Vicious Gladiator Season 10 Honor Items. You will not gain the Vicious Gladiator Season 9 items with the same name.",
+							["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = { 
 								{"sub", "pvp_set_ensemble", -9979, -672, -9983, 11 },
@@ -161,6 +161,7 @@ _.PVP =
 					}),
 					cl(HUNTER, {
 						i(146419, {	-- Ensemble: Bloodthirsty Gladiator's Chain Armor
+							["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = { 
 								{"sub", "pvp_set_ensemble", -9979, -672, -9983, 3 },
@@ -215,6 +216,7 @@ _.PVP =
 					}),
 					cl(MAGE, {
 						i(146437, {	-- Ensemble: Bloodthirsty Gladiator's Silk Armor
+							["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = { 
 								{"sub", "pvp_set_ensemble", -9979, -672, -9983, 8 },
@@ -260,6 +262,7 @@ _.PVP =
 					}),
 					cl(PALADIN, {
 						i(146435, {	-- Ensemble: Bloodthirsty Gladiator's Scaled Armor
+							["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = { 
 								{"sub", "pvp_set_ensemble", -9979, -672, -9983, 2 },
@@ -339,6 +342,7 @@ _.PVP =
 					}),
 					cl(PRIEST, {
 						i(146433, {	-- Ensemble: Bloodthirsty Gladiator's Satin Armor
+							["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = { 
 								{"sub", "pvp_set_ensemble", -9979, -672, -9983, 5 },
@@ -409,6 +413,7 @@ _.PVP =
 					}),
 					cl(ROGUE, {
 						i(146427, {	-- Ensemble: Bloodthirsty Gladiator's Leather Armor
+							["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = { 
 								{"sub", "pvp_set_ensemble", -9979, -672, -9983, 4 },
@@ -463,6 +468,7 @@ _.PVP =
 					}),
 					cl(SHAMAN, {
 						i(146431, {	-- Ensemble: Bloodthirsty Gladiator's Ringmail Armor
+							["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",	
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = { 
 								{"sub", "pvp_set_ensemble", -9979, -672, -9983, 7 },
@@ -567,6 +573,7 @@ _.PVP =
 					}),
 					cl(WARLOCK, {
 						i(146425, {	-- Ensemble: Bloodthirsty Gladiator's Felweave Armor
+							["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = { 
 								{"sub", "pvp_set_ensemble", -9979, -672, -9983, 9 },
@@ -612,6 +619,7 @@ _.PVP =
 					}),
 					cl(WARRIOR, {
 						i(146429, {	-- Ensemble: Bloodthirsty Gladiator's Plate Armor
+							["description"] = "You will need to log out and back in to register the Vicious Gladiator |cFF1eff00Season 10|r Honor Transmog.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator |cFF1eff00Season 9|r Transmog with the same name.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = { 
 								{"sub", "pvp_set_ensemble", -9979, -672, -9983, 1 },
@@ -2104,6 +2112,7 @@ _.PVP =
 					}),
 					cl(DEATHKNIGHT, {
 						i(146503, {	-- Ensemble: Ruthless Gladiator's Dreadplate Armor
+							["description"] = "You will need to log out and back in to register every Ruthless Gladiator Item.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = { 
 								{"sub", "pvp_set_ensemble", -9979, -673, -661, 6 },
@@ -2149,6 +2158,7 @@ _.PVP =
 					}),
 					cl(DRUID, {
 						i(146501, {	-- Ensemble: Ruthless Gladiator's Dragonhide Armor
+							["description"] = "You will need to log out and back in to register every Ruthless Gladiator Item.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = { 
 								{"sub", "pvp_set_ensemble", -9979, -673, -661, 11 },
@@ -2253,6 +2263,7 @@ _.PVP =
 					}),
 					cl(HUNTER, {
 						i(146499, {	-- Ensemble: Ruthless Gladiator's Chain Armor
+							["description"] = "You will need to log out and back in to register every Ruthless Gladiator Item.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = { 
 								{"sub", "pvp_set_ensemble", -9979, -673, -661, 3 },
@@ -2307,6 +2318,7 @@ _.PVP =
 					}),
 					cl(MAGE, {
 						i(146517, {	-- Ensemble: Ruthless Gladiator's Silk Armor
+							["description"] = "You will need to log out and back in to register every Ruthless Gladiator Item.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = { 
 								{"sub", "pvp_set_ensemble", -9979, -673, -661, 8 },
@@ -2352,6 +2364,7 @@ _.PVP =
 					}),
 					cl(PALADIN, {
 						i(146515, {	-- Ensemble: Ruthless Gladiator's Scaled Armor
+							["description"] = "You will need to log out and back in to register every Ruthless Gladiator Item.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = { 
 								{"sub", "pvp_set_ensemble", -9979, -673, -661, 2 },
@@ -2431,6 +2444,7 @@ _.PVP =
 					}),
 					cl(PRIEST, {
 						i(146513, {	-- Ensemble: Ruthless Gladiator's Satin Armor
+							["description"] = "You will need to log out and back in to register every Ruthless Gladiator Item.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = { 
 								{"sub", "pvp_set_ensemble", -9979, -673, -661, 5 },
@@ -2501,6 +2515,7 @@ _.PVP =
 					}),
 					cl(ROGUE, {
 						i(146507, {	-- Ensemble: Ruthless Gladiator's Leather Armor
+							["description"] = "You will need to log out and back in to register every Ruthless Gladiator Item.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = { 
 								{"sub", "pvp_set_ensemble", -9979, -673, -661, 4 },
@@ -2555,6 +2570,7 @@ _.PVP =
 					}),
 					cl(SHAMAN, {
 						i(146511, {	-- Ensemble: Ruthless Gladiator's Ringmail Armor
+							["description"] = "You will need to log out and back in to register every Ruthless Gladiator Item.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = { 
 								{"sub", "pvp_set_ensemble", -9979, -673, -661, 7 },
@@ -2659,6 +2675,7 @@ _.PVP =
 					}),
 					cl(WARLOCK, {
 						i(146505, {	-- Ensemble: Ruthless Gladiator's Felweave Armor
+							["description"] = "You will need to log out and back in to register every Ruthless Gladiator Item.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = { 
 								{"sub", "pvp_set_ensemble", -9979, -673, -661, 9 },
@@ -2704,6 +2721,7 @@ _.PVP =
 					}),
 					cl(WARRIOR, {
 						i(146509, {	-- Ensemble: Ruthless Gladiator's Plate Armor
+							["description"] = "You will need to log out and back in to register every Ruthless Gladiator Item.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = { 
 								{"sub", "pvp_set_ensemble", -9979, -673, -661, 1 },

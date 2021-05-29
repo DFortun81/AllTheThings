@@ -2197,7 +2197,6 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(115950)),	-- Primal Gladiator's Mageblade
 					un(REMOVED_FROM_GAME, i(115954)),	-- Primal Gladiator's Slicer
 					un(REMOVED_FROM_GAME, i(115833)),	-- Primal Gladiator's Battle Staff
-					un(REMOVED_FROM_GAME, i(115854)),	-- Primal Gladiator's Staff
 					un(REMOVED_FROM_GAME, i(115865)),	-- Primal Gladiator's Energy Staff
 					un(REMOVED_FROM_GAME, i(115821)),	-- Primal Gladiator's Pummeler
 					un(REMOVED_FROM_GAME, i(115863)),	-- Primal Gladiator's Gavel

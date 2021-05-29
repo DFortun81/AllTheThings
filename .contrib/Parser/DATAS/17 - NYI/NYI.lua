@@ -4441,6 +4441,9 @@ _.NeverImplemented =
 		--
 		i(159538),	-- Coldscale Cudgel
 		i(159498),	-- Coldscale Pistol
+		i(111076),	-- Primal Gladiator's Staff (H), none elite
+		i(115603),	-- Primal Gladiator's Staff (A), none elite
+		i(115854),	-- Primal Gladiator's Staff
 		i(159586),	-- Coralshell Blade
 		i(159559),	-- Coralshell Halberd
 		i(159513),	-- Deepwarden Fangs

@@ -1880,9 +1880,9 @@ app.L = {
 
 	-- Cataclysm PvP Seasons
 		[-672] = select(2, GetAchievementInfo(6002))..": Season 9",				-- Vicious Gladiator: Season 9
-		[-656] = "Honor Gear Ruthless",											-- Honor Gear Ruthless (S10)
+		[-656] = "Honor Gear Ruthless Season",									-- Honor Gear Ruthless (S10)
 		[-673] = select(2, GetAchievementInfo(6124))..": Season 10",			-- Ruthless Gladiator: Season 10
-		[-654] = "Honor Gear Cataclysmic",										-- Honor Gear Cataclysmic (S11)
+		[-654] = "Honor Gear Cataclysmic Season",								-- Honor Gear Cataclysmic (S11)
 		[-674] = select(2, GetAchievementInfo(6938))..": Season 11",			-- Cataclysmic Gladiator: Season 11
 
 	-- Mists of Pandaria PvP Seasons
