@@ -388,12 +388,18 @@ _.Zones =
 				q(10450, {	-- Bonechewer Blood
 					["qg"] = 21256,	-- Vurtok Axebreaker
 					["coord"] = { 55.1, 36.3, HELLFIRE_PENINSULA },
-					["cost"] = {
-						{ "i", 30327, 12 },	-- Bonechewer Blood
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(58, 10, 58),
 					["groups"] = {
+						objective(1, {	-- 0/12 Bonechewer Blood
+							["provider"] = { "i", 30327 },	-- Bonechewer Blood
+							["crs"] = {
+								19701,	-- Bonechewer Evoker
+								16876,	-- Bonechewer Mutant
+								16925,	-- Bonechewer Raider
+								18952,	-- Bonechewer Scavenger
+							},
+						}),
 						i(29919),	-- Adamantine Kite Shield
 						i(29915),	-- Desolation Rod
 						i(29914),	-- Hellfire Skiver
@@ -510,11 +516,22 @@ _.Zones =
 					["qg"] = 21133,	-- Corporal Ironridge
 					["sourceQuest"] = 10483,	-- Ill Omens
 					["coord"] = { 70.9, 63.3, HELLFIRE_PENINSULA },
-					["cost"] = {
-						{ "i", 30157, 12 },	-- Cursed Talisman
-					},
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(58, 10, 58),
+					["groups"] = {
+						objective(1, {	-- 0/12 Cursed Talisman
+							["provider"] = { "i", 30157 },	-- Cursed Talisman
+							["crs"] = {
+								16873,	-- Bleeding Hollow Dark Shaman
+								16871,	-- Bleeding Hollow Grunt
+								19422,	-- Bleeding Hollow Necrolyte
+								16907,	-- Bleeding Hollow Peon
+								19424,	-- Bleeding Hollow Tormentor
+								19457,	-- Grillok "Darkeye"
+								19442,	-- Worg Master Kruush
+							},
+						}),
+					},
 				}),
 				q(9398, {	-- Deadly Predators
 					["qg"] = 16797,	-- Scout Vanura
@@ -542,10 +559,16 @@ _.Zones =
 						10442,	-- Helping the Cenarion Post [Horde]
 					},
 					["coord"] = { 15.6, 52.0, HELLFIRE_PENINSULA },
-					["cost"] = {
-						{ "i", 23336, 6 },	-- Helboar Blood Sample
-					},
 					["lvl"] = lvlsquish(61, 10, 61),
+					["groups"] = {
+						objective(1, {	-- 0/6 Helboar Blood Sample
+							["provider"] = { "i", 23336 },	-- Helboar Blood Sample
+							["crs"] = {
+								16992,	-- Dreadtusk
+								16880,	-- Hulking Helboar
+							},
+						}),
+					},
 				}),
 				q(10916, {	-- Digging for Prayer Beads
 					["qg"] = 22430,	-- Assistant Klatu
