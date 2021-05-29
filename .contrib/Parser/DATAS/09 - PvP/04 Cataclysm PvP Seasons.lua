@@ -10,7 +10,7 @@ _.PVP =
 				n(-9983, {	-- Honor Gear
 					cl(DEATHKNIGHT, {
 						i(146423, {	-- Ensemble: Bloodthirsty Gladiator's Dreadplate Armor
-							["description"] = "You will need to log out and back in to register Vicious Gladiator Season 10 Honor Gear. Its different from the normal Vicious Gladiator Season 9 Gear.",
+							["description"] = "You will need to log out and back in to register the Vicious Gladiator Season 10 Honor Items.\n\n|cffde1c1cYou will not|r gain the Vicious Gladiator Season 9 items with the same name.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = { 
 								{"sub", "pvp_set_ensemble", -9979, -672, -9983, 6 },
@@ -56,6 +56,7 @@ _.PVP =
 					}),
 					cl(DRUID, {
 						i(146421, {	-- Ensemble: Bloodthirsty Gladiator's Dragonhide Armor
+							["description"] = "You will need to log out and back in to register the Vicious Gladiator Season 10 Honor Items. You will not gain the Vicious Gladiator Season 9 items with the same name.",
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = { 
 								{"sub", "pvp_set_ensemble", -9979, -672, -9983, 11 },
