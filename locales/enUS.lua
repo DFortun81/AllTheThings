@@ -1879,9 +1879,9 @@ app.L = {
 
 	-- Cataclysm PvP Seasons
 		[-672] = select(2, GetAchievementInfo(6002))..": Season 9",				-- Vicious Gladiator: Season 9
-		[-656] = "Pre-Season Ruthless: Season 10",								-- Pre-Season Ruthless (S10)
+		[-656] = "Pre-Season Ruthless",											-- Pre-Season Ruthless (S10)
 		[-673] = select(2, GetAchievementInfo(6124))..": Season 10",			-- Ruthless Gladiator: Season 10
-		[-654] = "Pre-Season Cataclysmic: Season 11",							-- Pre-Season Cataclysmic (S11)
+		[-654] = "Pre-Season Cataclysmic",										-- Pre-Season Cataclysmic (S11)
 		[-674] = select(2, GetAchievementInfo(6938))..": Season 11",			-- Cataclysmic Gladiator: Season 11
 
 	-- Mists of Pandaria PvP Seasons
