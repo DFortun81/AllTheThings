@@ -881,6 +881,9 @@ _.Zones =
 									i(124807, {	-- Wild Gladiator's Warboots of Prowess (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
+									i(124808, {	-- Wild Gladiator's Warboots of Victory (A)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
 									i(124695, {	-- Wild Gladiator's Treads of Cruelty (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
@@ -4136,6 +4139,9 @@ _.Zones =
 									i(125020, {	-- Wild Combatant's Bonegrinder (A)
 										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 									}),
+									i(127381, {	-- Wild Combatant's Chopper (A)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
 									i(124885, {	-- Wild Combatant's Cleaver (A)
 										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 									}),
@@ -4157,7 +4163,13 @@ _.Zones =
 									i(125015, {	-- Wild Combatant's Hacker (A)
 										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 									}),
+									i(124891, {	-- Wild Combatant's Heavy Crossbow (A)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
 									i(124890, {	-- Wild Combatant's Longbow (A)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(124930, {	-- Wild Combatant's Mageblade (A)
 										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 									}),
 									i(124893, {	-- Wild Combatant's Pike (A)

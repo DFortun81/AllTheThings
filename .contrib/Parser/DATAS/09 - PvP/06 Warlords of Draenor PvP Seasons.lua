@@ -2518,6 +2518,9 @@ _.PVP =
 									i(125020, {	-- Wild Combatant's Bonegrinder (A)
 										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 									}),
+									i(127381, {	-- Wild Combatant's Chopper (A)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
 									i(124885, {	-- Wild Combatant's Cleaver (A)
 										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 									}),
@@ -2539,7 +2542,13 @@ _.PVP =
 									i(125015, {	-- Wild Combatant's Hacker (A)
 										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 									}),
+									i(124891, {	-- Wild Combatant's Heavy Crossbow (A)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
 									i(124890, {	-- Wild Combatant's Longbow (A)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(124930, {	-- Wild Combatant's Mageblade (A)
 										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 									}),
 									i(124893, {	-- Wild Combatant's Pike (A)
@@ -3810,6 +3819,9 @@ _.PVP =
 							i(124807, {	-- Wild Gladiator's Warboots of Prowess (A)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
+							i(124808, {	-- Wild Gladiator's Warboots of Victory (A)
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
 							i(124695, {	-- Wild Gladiator's Treads of Cruelty (A)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
@@ -4022,6 +4034,9 @@ _.PVP =
 									i(125497, {	-- Wild Combatant's Bonegrinder (H)
 										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 									}),
+									i(127380, {	-- Wild Combatant's Chopper (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
 									i(125362, {	-- Wild Combatant's Cleaver (H)
 										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 									}),
@@ -4047,6 +4062,9 @@ _.PVP =
 										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 									}),
 									i(125367, {	-- Wild Combatant's Longbow (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(125407, {	-- Wild Combatant's Mageblade (H)
 										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 									}),
 									i(125370, {	-- Wild Combatant's Pike (H)

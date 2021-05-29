@@ -1771,6 +1771,9 @@ _.Zones =
 									i(125497, {	-- Wild Combatant's Bonegrinder (H)
 										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 									}),
+									i(127380, {	-- Wild Combatant's Chopper (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
 									i(125362, {	-- Wild Combatant's Cleaver (H)
 										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 									}),
@@ -1796,6 +1799,9 @@ _.Zones =
 										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 									}),
 									i(125367, {	-- Wild Combatant's Longbow (H)
+										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
+									i(125407, {	-- Wild Combatant's Mageblade (H)
 										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 									}),
 									i(125370, {	-- Wild Combatant's Pike (H)
