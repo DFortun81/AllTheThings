@@ -10,12 +10,17 @@ _.ExpansionFeatures =
 			["maps"] = { 1698 },	-- Seat of the Primus
 			["g"] = {
 				n(QUESTS, sharedData({
-						["customCollect"] = { "SL_COV_NEC", },	-- Necrolord
-						}, {
+					["customCollect"] = { "SL_COV_NEC", },	-- Necrolord
+					}, {
 					q(62835, {	-- A Call to Service
 						["sourceQuests"] = { 62834 },	-- Glorious Ambition
 						["provider"] = { "n", 175998 },	-- Elspeth Larink
 						["coord"] = { 46.7, 40.4, 1698 },	-- Seat of the Primus
+					}),
+					q(58472, {	-- A Farewell to Arms
+						["sourceQuests"] = { 58523 },	-- You're Dead To Me
+						["provider"] = { "n", 161461 },	-- The Accuser
+						["coord"] = { 73.8, 57.4, REVENDRETH },
 					}),
 					q(62833, {	-- A Hero of Great Renown
 						-- TODO: Draka offers an alternate 'skip' option with this quest... not sure what that triggers
@@ -31,10 +36,69 @@ _.ExpansionFeatures =
 							follower(1261),	-- Plague Deviser Marileth
 						},
 					}),
+					q(58504, {	-- Accusatory Missive
+						["sourceQuests"] = { 62161 },	-- Blood from a Bone
+						["description"] = "Requires Renown 17.",
+						["provider"] = { "n", 161907 },	-- Baroness Draka
+						["coord"] = { 49.8, 50.6, 1698 },	-- Seat of the Primus
+					}),
+					q(59659, {	-- Aerial Absolution
+						["sourceQuests"] = { 59653 },	-- Don't Cross Courage
+						["provider"] = { "n", 165412 },	-- Xandria <Paragon of Courage>
+						["coord"] = { 36.0, 55.3, BASTION },
+					}),
+					q(60114, {	-- Aerial Advantage
+						["sourceQuests"] = { 60050 },	-- Trouble on the Western Front
+						["provider"] = { "n", 167810 },	-- Emeni
+						["coord"] = { 28.1, 37.5, MALDRAXXUS },
+					}),
+					q(59709, {	-- Afterlife Goes On
+						["sourceQuests"] = { 59700 },	-- The Last Labor
+						["provider"] = { "n", 165412 },	-- Xandria <Paragon of Courage>
+						["coord"] = { 29.7, 53.1, BASTION },
+					}),
+					q(59921, {	-- All I Ever Will Be
+						["sourceQuests"] = { 59748 },	-- No Peace In Death
+						["provider"] = { "n", 165794 },	-- Xandria <Paragon of Courage>
+						["coord"] = { 46.5, 63.0, BASTION },
+					}),
+					q(57470, {	-- An Abominable Discovery
+						["sourceQuests"] = { 60067 },	-- Pursuit of Justice
+						["provider"] = { "n", 173308 },	-- Baroness Draka
+						["coord"] = { 31.0, 29.4, MALDRAXXUS },
+					}),
+					q(61412, {	-- An Early End
+						["sourceQuests"] = {
+							61396,	-- Dark Developments
+							60043,	-- Justice from Above
+							59916,	-- The Butchers of Bastion
+						},
+						["provider"] = { "n", 168743 },	-- Apolon
+						["coord"] = { 35.3, 25.9, MALDRAXXUS },
+					}),
 					q(62839, {	-- Anima is Strength
 						["sourceQuests"] = { 62835 },	-- A Call to Service
 						["provider"] = { "n", 158339 },	-- Sergeant Romark
 						["coord"] = { 47.7, 29.1, 1698 },	-- Seat of the Primus
+					}),
+					q(58820, {	-- Bindings of Fleshcrafting
+						["sourceQuests"] = {
+							59722,	-- Grand Theft Necropolis
+							61869,	-- Search the Place
+						},
+						["provider"] = { "n", 161907 },	-- Baroness Draka
+						["coord"] = { 49.7, 50.7, 1698 },	-- Seat of the Primus
+						["g"] = {
+							i(182275),	-- Bladesworn Conjurer's Wristwraps
+							i(182257),	-- Bladesworn Harbinger's Vambraces
+							i(182284),	-- Bladesworn Tactician's Bracers
+							i(182266),	-- Bladesworn Wraith's Armguards
+						},
+					}),
+					q(62161, {	-- Blood from a Bone
+						["sourceQuests"] = { 57636 },	-- Pride of Place
+						["provider"] = { "n", 161907 },	-- Baroness Draka
+						["coord"] = { 49.8, 50.6, 1698 },	-- Seat of the Primus
 					}),
 					q(62845, {	-- Bringing It All Together
 						["sourceQuests"] = { 62844 },	-- Return to Draka
@@ -47,10 +111,24 @@ _.ExpansionFeatures =
 							i(182263),	-- Bladesworn Wraith's Breeches
 						},
 					}),
+					q(61180, {	-- Burn Before Reading
+						["sourceQuests"] = {
+							61396,	-- Dark Developments
+							60043,	-- Justice from Above
+							59916,	-- The Butchers of Bastion
+						},
+						["provider"] = { "n", 168744 },	-- Artemede
+						["coord"] = { 35.2, 26.9, MALDRAXXUS },
+					}),
 					q(61252, {	-- Call In a Favor
 						["sourceQuests"] = { 61230 },	-- Outside Influence
 						["provider"] = { "n", 173343 },	-- Ascended Bearer
 						["coord"] = { 54.2, 16.2, MALDRAXXUS },
+					}),
+					q(60044, {	-- Charging The Blade
+						["sourceQuests"] = { 60050 },	-- Trouble on the Western Front
+						["provider"] = { "n", 166211 },	-- Alexandros Mograine
+						["coord"] = { 28.8, 38.2, MALDRAXXUS },
 					}),
 					q(59596, {	-- Collective Soul
 						["sourceQuests"] = { 62846 },	-- Sanctum Improvements
@@ -72,6 +150,60 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 61388 },	-- A Journey Made Together
 						["provider"] = { "n", 161904 },	-- Plague Deviser Marileth
 						["coord"] = { 38.8, 32.4, 1698 },	-- Seat of the Primus
+					}),
+					q(61551, {	-- Crush 'Em All
+						["sourceQuests"] = { 61548 },	-- Set Me Free
+						["provider"] = { "n", 172573 },	-- Khaliiq
+						["coord"] = { 28.5, 47.7, MALDRAXXUS },
+						["g"] = {
+							i(182268),	-- Bladesworn Conjurer's Cowl
+							i(182250),	-- Bladesworn Harbinger's Greathelm
+							i(182277),	-- Bladesworn Tactician's Faceguard
+							i(182259),	-- Bladesworn Wraith's Visage
+						}
+					}),
+					q(60112, {	-- Cut to the Bone
+						["sourceQuests"] = { 61518 },	-- Follow Me
+						["provider"] = { "n", 172574 },	-- Navigator Xennir
+						["coord"] = { 31.8, 40.2, MALDRAXXUS },
+					}),
+					q(61396, {	-- Dark Developments
+						["sourceQuests"] = { 59910 },	-- Fight and Flight
+						["provider"] = { "o", 357246 },	-- Tattered Scroll
+						["coord"] = { 33.5, 24.1, MALDRAXXUS },
+					}),
+					q(59645, {	-- Death Rains
+						["sourceQuests"] = { 59625 },	-- The Only Cure
+						["provider"] = { "n", 165591 },	-- Alexandros Mograine <The Ashbringer>
+						["coord"] = { 40.7, 55.3, BASTION },	-- if you haven't already picked up Peace by Piece / No Hesitation, No Surrender
+					}),
+					q(60510, {	-- Descended
+						["sourceQuests"] = {
+							61396,	-- Dark Developments
+							60043,	-- Justice from Above
+							59916,	-- The Butchers of Bastion
+						},
+						["provider"] = { "n", 166333 },	-- Xandria
+						["coord"] = { 35.6, 26.5, MALDRAXXUS },
+						["_drop"] = { "g" },	-- make 4 items stop showing up that are not actually rewarded by this quest
+					}),
+					q(59922, {	-- Do Not Forget
+						["sourceQuests"] = { 59921 },	-- All I Ever Will Be
+						["provider"] = { "n", 165794 },	-- Xandria <Paragon of Courage>
+						["coord"] = { 46.5, 63.0, BASTION },
+					}),
+					q(59653, {	-- Don't Cross Courage
+						["sourceQuests"] = {
+							59648,	-- Peace by Piece
+							59650,	-- No Hesitation, No Surrender
+							59645,	-- Death Rains
+						},
+						["provider"] = { "n", 165412 },	-- Xandria <Paragon of Courage>
+						["coord"] = { 38.9, 55.2, BASTION },
+					}),
+					q(58599, {	-- Drive A Dredge Between Them
+						["sourceQuests"] = { 58523 },	-- You're Dead To Me
+						["provider"] = { "n", 161474 },	-- Baroness Draka
 					}),
 					q(59555, {	-- Enemy at the Door
 						["sourceQuests"] = { 62448 },	-- Securing the House
@@ -101,15 +233,60 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 161907 },	-- Baroness Draka
 						["coord"] = { 49.7, 50.6, MALDRAXXUS },
 					}),
+					q(59910, {	-- Fight and Flight
+						["sourceQuests"] = { 61145 },	-- Take The Fight To Them
+						["provider"] = { "n", 161907 },	-- Baroness Draka
+						["coord"] = { 36.3, 36.6, MALDRAXXUS },
+					}),
+					q(61518, {	-- Follow Me
+						["sourceQuests"] = { 61485 },	-- I'll Only Say This Once
+						["provider"] = { "n", 172574 },	-- Navigator Xennir
+						["coord"] = { 31.2, 49.4, MALDRAXXUS },
+					}),
+					q(57530, {	-- Gharmal's Tower
+						["sourceQuests"] = { 57470 },	-- An Abominable Discovery
+						["provider"] = { "n", 173194 },	-- Alexandros Mograine
+						["coord"] = { 27.5, 23.9, MALDRAXXUS },
+					}),
 					q(62834, {	-- Glorious Ambition
 						["sourceQuests"] = { 62833 },	-- A Hero of Great Renown
 						["provider"] = { "n", 175998 },	-- Elspeth Larink
 						["coord"] = { 46.7, 40.4, 1698 },	-- Seat of the Primus
 					}),
+					q(59722, {	-- Grand Theft Necropolis
+						["sourceQuests"] = { 61594 },	-- This Way Out
+						["provider"] = { "n", 164679 },	-- Whisperer Vyn
+						-- coordinates vary because it's on a moving ship/necropolis
+					}),
+					q(61567, {	-- Grave Intent
+						["sourceQuests"] = { 60050 },	-- Trouble on the Western Front
+						["provider"] = { "n", 167173 },	-- Baroness Vashj
+						["coord"] = { 28.7, 37.6, MALDRAXXUS },
+					}),
+					q(61485, {	-- I'll Only Say This Once
+						["sourceQuests"] = { 57778 },	-- The Maldraxxian Job
+						["provider"] = { "n", 160518 },	-- Whisperer Vyn
+						["coord"] = { 50.7, 15.6, MALDRAXXUS },
+					}),
 					q(62840, {	-- Into the Reservoir
 						["sourceQuests"] = { 62839 },	-- Anima is Strength
 						["provider"] = { "n", 161909 },	-- Arkadia Moa
 						["coord"] = { 52.4, 38.4, 1698 },	-- Seat of the Primus
+					}),
+					q(60043, {	-- Justice from Above
+						["sourceQuests"] = { 59910 },	-- Fight and Flight
+						["provider"] = { "n", 166333 },	-- Xandria
+						["coord"] = { 35.6, 26.5, MALDRAXXUS },
+					}),
+					q(61569, {	-- Keys to the Ruin
+						["sourceQuests"] = { 61551 },	-- Crush 'Em All
+						["provider"] = { "n", 172805 },	-- Whisperer Vyn
+						["coord"] = { 30.2, 43.6, MALDRAXXUS },
+					}),
+					q(61586, {	-- Machinations of War
+						["sourceQuests"] = { 59894 },	-- The Golden Dawn
+						["provider"] = { "n", 166535 },	-- Baroness Draka
+						["coord"] = { 50.4, 70.6, MALDRAXXUS },
 					}),
 					q(63342, {	-- Necrolord Veteran
 						["description"] = "Requires Renown 7.",
@@ -129,6 +306,16 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 158604 },	-- Navigator Xennir
 						["coord"] = { 52.0, 16.9, MALDRAXXUS },
 					}),
+					q(59650, {	-- No Hesitation, No Surrender
+						["sourceQuests"] = { 59625 },	-- The Only Cure
+						["provider"] = { "n", 165412 },	-- Xandria <Paragon of Courage>
+						["coord"] = { 40.7, 55.0, BASTION },
+					}),
+					q(59748, {	-- No Peace In Death
+						["sourceQuests"] = { 59709 },	-- Afterlife Goes On
+						["provider"] = { "n", 165795 },	-- Alexandros Mograine <The Ashbringer>
+						["coord"] = { 41.6, 55.1, BASTION },
+					}),
 					q(59609, {	-- No Rest For the Dead
 						["sourceQuests"] = { 62848 },	-- Conduits, What Are They For?
 						["provider"] = { "n", 161904 },	-- Plague Deviser Marileth
@@ -147,15 +334,51 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 171875 },	-- Khaliiq <Vashj's Devoted>
 						["coord"] = { 50.0, 17.9, MALDRAXXUS },
 					}),
+					q(59648, {	-- Peace by Piece
+						["sourceQuests"] = { 59625 },	-- The Only Cure
+						["provider"] = { "n", 165412 },	-- Xandria <Paragon of Courage>
+						["coord"] = { 40.7, 55.0, BASTION },
+					}),
+					q(61246, {	-- Power of the Chosen
+						["sourceQuests"] = {
+							60114,	-- Aerial Advantage
+							60044,	-- Charging The Blade
+							61567,	-- Grave Intent
+						},
+						["provider"] = { "n", 166211 },	-- Alexandros Mograine
+						["coord"] = { 28.8, 38.2, MALDRAXXUS },
+						["_drop"] = { "g" },	-- make 4 items stop showing up that are not actually rewarded by this quest
+					}),
 					q(61359, {	-- Power of the Primus
 						["sourceQuests"] = { 59556 },	-- Welcome To Our House
 						["provider"] = { "n", 165182 },	-- Baroness Draka
 						["coord"] = { 49.7, 43.4, 1698 },	-- Seat of the Primus
 					}),
+					q(57636, {	-- Pride of Place
+						["sourceQuests"] = { 57475 },	-- The Mantle Returned
+						["provider"] = { "n", 161907 },	-- Baroness Draka
+						["coord"] = { 49.8, 50.6, 1698 },	-- Seat of the Primus
+						["g"] = {
+							i(182276),	-- Bladesworn Conjurer's Cape
+							i(182258),	-- Bladesworn Harbinger's Greatcloak
+							i(182285),	-- Bladesworn Tactician's Drape
+							i(182267),	-- Bladesworn Wraith's Cloak
+						},
+					}),
+					q(57473, {	-- Prized Possession
+						["sourceQuests"] = { 57530 },	-- Gharmal's Tower
+						["provider"] = { "n", 173194 },	-- Alexandros Mograine
+						["coord"] = { 27.3, 23.8, MALDRAXXUS },
+					}),
 					q(59265, {	-- Prying Eyes
 						["sourceQuests"] = { 58007 },	-- Eyes on the Problem
 						["provider"] = { "n", 164619 },	-- Baroness Vashj
 						["coord"] = { 50.8, 24.4, MALDRAXXUS },
+					}),
+					q(60067, {	-- Pursuit of Justice
+						["sourceQuests"] = { 60098 },	-- The End is Now
+						["provider"] = { "n", 172002 },	-- Xandria
+						["coord"] = { 31.8, 30.3, MALDRAXXUS },
 					}),
 					q(61335, {	-- Rage Against the Cage
 						["sourceQuests"] = { 61227 },	-- The Other Foot
@@ -184,6 +407,11 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 161909 },	-- Arkadia Moa <Sanctum Upgrades>
 						["coord"] = { 52.4, 38.4, 1698 },	-- Seat of the Primus
 					}),
+					q(61869, {	-- Search the Place
+						["sourceQuests"] = { 61594 },	-- This Way Out
+						["provider"] = { "n", 164679 },	-- Whisperer Vyn
+						-- coordinates vary because it's on a moving ship/necropolis
+					}),
 					q(62448, {	-- Securing the House
 						["sourceQuests"] = { 60272 },	-- The Weak Link
 						["provider"] = { "n", 161907 },	-- Baroness Draka
@@ -204,6 +432,20 @@ _.ExpansionFeatures =
 							i(182256),	-- Bladesworn Harbinger's Warbelt
 						},
 					}),
+					q(61548, {	-- Set Me Free
+						["sourceQuests"] = { 60112 },	-- Cut to the Bone
+						["provider"] = { "n", 172573 },	-- Khaliiq
+						["coord"] = { 27.2, 45.2, MALDRAXXUS },
+					}),
+					q(59678, {	-- Sustain, In Vain
+						["sourceQuests"] = { 59653 },	-- Don't Cross Courage
+						["provider"] = { "n", 165591 },	-- Alexandros Mograine <The Ashbringer>
+					}),
+					q(61145, {	-- Take The Fight To Them
+						["sourceQuests"] = { 61586 },	-- Machinations of War
+						["provider"] = { "n", 161907 },	-- Baroness Draka
+						["coord"] = { 49.7, 50.7, 1698 },	-- Seat of the Primus
+					}),
 					q(58609, {	-- Taking The Seat
 						["sourceQuests"] = {
 							57878,	-- Choosing Your Purpose [Story]
@@ -211,6 +453,24 @@ _.ExpansionFeatures =
 						},
 						["provider"] = { "n", 171821 },	-- Baroness Draka
 						["coord"] = { 42.9, 74.1, ORIBOS },
+					}),
+					q(59916, {	-- The Butchers of Bastion
+						["sourceQuests"] = { 59910 },	-- Fight and Flight
+						["provider"] = { "n", 168743 },	-- Apolon
+						["coord"] = { 35.3, 26.0, MALDRAXXUS },
+					}),
+					q(60098, {	-- The End is Now
+						["sourceQuests"] = { 61246 },	-- Power of the Chosen
+						["provider"] = { "n", 166211 },	-- Alexandros Mograine
+						["coord"] = { 28.8, 38.2, MALDRAXXUS },
+					}),
+					q(59894, {	-- The Golden Dawn
+						["sourceQuests"] = { 59922 },	-- Do Not Forget
+						["provider"] = { "n", 161988 },	-- Alexandros Mograine
+						["coord"] = { 49.0, 51.6, 1698 },	-- Seat of the Primus
+						["g"] = {
+							i(181803),	-- Bladesworn Battle Standard
+						},
 					}),
 					q(63032, {	-- The Highlord Calls
 						["sourceQuests"] = { 59609 },	-- No Rest For the Dead
@@ -221,6 +481,33 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 61323 },	-- See What You've Done
 						["provider"] = { "n", 160518 },	-- Whisperer Vyn
 						["coord"] = { 50.7, 15.5, MALDRAXXUS },
+					}),
+					q(59700, {	-- The Last Labor
+						["sourceQuests"] = { 59698 },	-- Wipe the Slate Clean
+						["provider"] = { "n", 165716 },	-- Xandria <Paragon of Courage>
+						["coord"] = { 30.0, 55.2, BASTION },
+						["g"] = {
+							i(182271),	-- Bladesworn Conjurer's Gloves
+							i(182253),	-- Bladesworn Harbinger's Crushers
+							i(182280),	-- Bladesworn Tactician's Gauntlets
+							i(182262),	-- Bladesworn Wraith's Stranglers
+						},
+					}),
+					q(57778, {	-- The Maldraxxian Job
+						["sourceQuests"] = { 62169, },	-- Eyes to the Sky
+						["provider"] = { "n", 161907 },	-- Baroness Draka
+						["coord"] = { 49.7, 50.6, 1698 },	-- Seat of the Primus
+					}),
+					q(57475, {	-- The Mantle Returned
+						["sourceQuests"] = { 57473 },	-- Prized Possession
+						["provider"] = { "n", 173194 },	-- Alexandros Mograine
+						["coord"] = { 27.3, 23.8, MALDRAXXUS },
+					}),
+					q(59625, {	-- The Only Cure
+						["sourceQuests"] = { 58820 },	-- Bindings of Fleshcrafting
+						["description"] = "Requires Renown 11.",
+						["provider"] = { "n", 161988 },	-- Alexandros Mograine
+						["coord"] = { 49.0, 51.6, 1698 },	-- Seat of the Primus
 					}),
 					q(61227, {	-- The Other Foot
 						["sourceQuests"] = {
@@ -235,6 +522,20 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 167748 },	-- Osbourne Black <Soul Warden>
 						["coord"] = { 46.5, 42.2, 1698 },	-- Seat of the Primus
 					}),
+					q(61594, {	-- This Way Out
+						["sourceQuests"] = { 61569 },	-- Keys to the Ruin
+						["provider"] = { "n", 172573 },	-- Khaliiq
+						["coord"] = { 29.6, 44.0, MALDRAXXUS },
+					}),
+					q(60050, {	-- Trouble on the Western Front
+						["sourceQuests"] = {
+							61412,	-- An Early End
+							61180,	-- Burn Before Reading
+							60510,	-- Descended
+						},
+						["provider"] = { "n", 168860 },	-- Kynthia
+						["coord"] = { 35.4, 26.5, MALDRAXXUS },
+					}),
 					q(59556, {	-- Welcome To Our House
 						["sourceQuests"] = { 58609 },	-- Taking The Seat
 						["provider"] = { "n", 158453 },	-- Baroness Draka
@@ -244,6 +545,19 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 58007 },	-- Eyes on the Problem
 						["provider"] = { "n", 164619 },	-- Baroness Vashj
 						["coord"] = { 50.8, 24.4, MALDRAXXUS },
+					}),
+					q(59698, {	-- Wipe the Slate Clean
+						["sourceQuests"] = {
+							59659,	-- Aerial Absolution
+							59678,	-- Sustain, In Vain
+						},
+						["provider"] = { "n", 165716 },	-- Xandria <Paragon of Courage>
+						["coord"] = { 30.0, 55.2, BASTION },
+					}),
+					q(58523, {	-- You're Dead To Me
+						["sourceQuests"] = { 58504 },	-- Accusatory Missive
+						["provider"] = { "n", 161461 },	-- The Accuser
+						["coord"] = { 72.0, 41.2, REVENDRETH },
 					}),
 
 
@@ -257,340 +571,13 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(63343, {	-- Necrolord Tactician
+						["description"] = "Requires Renown 22.",
 						["provider"] = { "n", 175998 },    -- Elspeth Larink
 						["coord"] = { 46.5, 40.2, 1698 },
-						["description"] = "Becomes available at Renown 22",
 					}),
 					-- TODO: may be a quest or two missing here? same screenshot in discord like 3 times with different provider/sq info >_<
 
-
-
-
-
-
-
-
-
-
-					-- Chapter 4 (Grand Theft Necropolis), requires Renown 8
-
-					q(57778, {	-- The Maldraxxian Job
-						["sourceQuests"] = { 62169, },	-- Eyes to the Sky
-						["provider"] = { "n", 161907 },	-- Baroness Draka
-						["coord"] = { 49.7, 50.6, MALDRAXXUS },
-					}),
-					q(61485, {	-- I'll Only Say This Once
-						["sourceQuests"] = { 57778 },	-- The Maldraxxian Job
-						["provider"] = { "n", 160518 },	-- Whisperer Vyn
-						["coord"] = { 50.7, 15.6, MALDRAXXUS },
-					}),
-					q(61518, {	-- Follow Me
-						["sourceQuests"] = { 61485 },	-- I'll Only Say This Once
-						["provider"] = { "n", 172574 },	-- Navigator Xennir
-						["coord"] = { 31.2, 49.4, MALDRAXXUS },
-					}),
-					q(60112, {	-- Cut to the Bone
-						["sourceQuests"] = { 61518 },	-- Follow Me
-						["provider"] = { "n", 172574 },	-- Navigator Xennir
-						["coord"] = { 31.8, 40.2, MALDRAXXUS },
-					}),
-					q(61548, {	-- Set Me Free
-						["sourceQuests"] = { 60112 },	-- Cut to the Bone
-						["provider"] = { "n", 172573 },	-- Khaliiq
-						["coord"] = { 27.2, 45.2, MALDRAXXUS },
-					}),
-					q(61551, {	-- Crush 'Em All
-						["sourceQuests"] = { 61548 },	-- Set Me Free
-						["provider"] = { "n", 172573 },	-- Khaliiq
-						["coord"] = { 28.5, 47.7, MALDRAXXUS },
-						["g"] = {
-							i(182268),	-- Bladesworn Conjurer's Cowl
-							i(182250),	-- Bladesworn Harbinger's Greathelm
-							i(182277),	-- Bladesworn Tactician's Faceguard
-							i(182259),	-- Bladesworn Wraith's Visage
-						}
-					}),
-					q(61569, {	-- Keys to the Ruin
-						["sourceQuests"] = { 61551 },	-- Crush 'Em All
-						["provider"] = { "n", 172805 },	-- Whisperer Vyn
-						["coord"] = { 30.2, 43.6, MALDRAXXUS },
-					}),
-					q(61594, {	-- This Way Out
-						["sourceQuests"] = { 61569 },	-- Keys to the Ruin
-						["provider"] = { "n", 172573 },	-- Khaliiq
-						["coord"] = { 29.6, 44.0, MALDRAXXUS },
-					}),
-					q(59722, {	-- Grand Theft Necropolis
-						["sourceQuests"] = { 61594 },	-- This Way Out
-						["provider"] = { "n", 164679 },	-- Whisperer Vyn
-						-- coordinates vary because it's on a moving ship/necropolis
-					}),
-					q(61869, {	-- Search the Place
-						["sourceQuests"] = { 61594 },	-- This Way Out
-						["provider"] = { "n", 164679 },	-- Whisperer Vyn
-						-- coordinates vary because it's on a moving ship/necropolis
-					}),
-					q(58820, {	-- Bindings of Fleshcrafting
-						["sourceQuests"] = {
-							59722,	-- Grand Theft Necropolis
-							61869,	-- Search the Place
-						},
-						["provider"] = { "n", 161907 },	-- Baroness Draka
-						["coord"] = { 49.7, 50.7, 1698 },
-						["g"] = {
-							i(182275),	-- Bladesworn Conjurer's Wristwraps
-							i(182257),	-- Bladesworn Harbinger's Vambraces
-							i(182284),	-- Bladesworn Tactician's Bracers
-							i(182266),	-- Bladesworn Wraith's Armguards
-						},
-					}),
-
-					-- Chapter 5 (Do Not Forget), requires Renown 11
-					q(59625, {	-- The Only Cure
-						["sourceQuests"] = { 58820 },	-- Bindings of Fleshcrafting
-						["provider"] = { "n", 161988 },	-- Alexandros Mograine
-						["coord"] = { 49.0, 51.6, 1698 },	-- Seat of the Primus
-						["description"] = "Becomes available with Renown 11 (and previous chapters complete)",
-					}),
-					q(59648, {	-- Peace by Piece
-						["sourceQuests"] = { 59625 },	-- The Only Cure
-						["provider"] = { "n", 165412 },	-- Xandria <Paragon of Courage>
-						["coord"] = { 40.7, 55.0, BASTION },
-					}),
-					q(59650, {	-- No Hesitation, No Surrender
-						["sourceQuests"] = { 59625 },	-- The Only Cure
-						["provider"] = { "n", 165412 },	-- Xandria <Paragon of Courage>
-						["coord"] = { 40.7, 55.0, BASTION },
-					}),
-					q(59645, {	-- Death Rains
-						["sourceQuests"] = { 59625 },	-- The Only Cure
-						["provider"] = { "n", 165591 },	-- Alexandros Mograine <The Ashbringer>
-					}),
-					q(59653, {	-- Don't Cross Courage
-						["sourceQuests"] = {
-							59648,	-- Peace by Piece
-							59650,	-- No Hesitation, No Surrender
-							59645,	-- Death Rains
-						},
-						["provider"] = { "n", 165412 },	-- Xandria <Paragon of Courage>
-						["coord"] = { 38.9, 55.2, BASTION },
-					}),
-					q(59659, {	-- Aerial Absolution
-						["sourceQuests"] = { 59653 },	-- Don't Cross Courage
-						["provider"] = { "n", 165591 },	-- Alexandros Mograine <The Ashbringer>
-					}),
-					q(59678, {	-- Sustain, In Vain
-						["sourceQuests"] = { 59653 },	-- Don't Cross Courage
-						["provider"] = { "n", 165591 },	-- Alexandros Mograine <The Ashbringer>
-					}),
-					q(59698, {	-- Wipe the Slate Clean
-						["sourceQuests"] = {
-							59659,	-- Aerial Absolution
-							59678,	-- Sustain, In Vain
-						},
-						["provider"] = { "n", 165716 },	-- Xandria <Paragon of Courage>
-						["coord"] = { 30.0, 55.2, BASTION },
-					}),
-					q(59700, {	-- The Last Labor
-						["sourceQuests"] = { 59698 },	-- Wipe the Slate Clean
-						["provider"] = { "n", 165716 },	-- Xandria <Paragon of Courage>
-						["coord"] = { 30.0, 55.2, BASTION },
-						["g"] = {
-							i(182271),	-- Bladesworn Conjurer's Gloves
-							i(182253),	-- Bladesworn Harbinger's Crushers
-							i(182280),	-- Bladesworn Tactician's Gauntlets
-							i(182262),	-- Bladesworn Wraith's Stranglers
-						},
-					}),
-					q(59709, {	-- Afterlife Goes On
-						["sourceQuests"] = { 59700 },	-- The Last Labor
-						["provider"] = { "n", 165412 },	-- Xandria <Paragon of Courage>
-						["coord"] = { 29.7, 53.1, BASTION },
-					}),
-					q(59748, {	-- No Peace In Death
-						["sourceQuests"] = { 59709 },	-- Afterlife Goes On
-						["provider"] = { "n", 165795 },	-- Alexandros Mograine <The Ashbringer>
-						["coord"] = { 41.6, 55.1, BASTION },
-					}),
-					q(59921, {	-- All I Ever Will Be
-						["sourceQuests"] = { 59748 },	-- No Peace In Death
-						["provider"] = { "n", 165794 },	-- Xandria <Paragon of Courage>
-						["coord"] = { 46.5, 63.0, BASTION },
-					}),
-					q(59922, {	-- Do Not Forget
-						["sourceQuests"] = { 59921 },	-- All I Ever Will Be
-						["provider"] = { "n", 165794 },	-- Xandria <Paragon of Courage>
-						["coord"] = { 46.5, 63.0, BASTION },
-					}),
-					q(59894, {	-- The Golden Dawn
-						["sourceQuests"] = { 59922 },	-- Do Not Forget
-						["provider"] = { "n", 161988 },	-- Alexandros Mograine
-						["coord"] = { 49.0, 51.6, 1698 },	-- Seat of the Primus
-						["g"] = {
-							i(181803),	-- Bladesworn Battle Standard
-						},
-					}),
-					q(61586, {	-- Machinations of War
-						["sourceQuests"] = { 59894 },	-- The Golden Dawn
-						["provider"] = { "n", 166535 },	-- Baroness Draka
-						["coord"] = { 50.4, 70.6, MALDRAXXUS },
-					}),
-
-					-- Chapter 6 (A Golden Dawn), requires Renown 14
-					q(61145, {	-- Take The Fight To Them
-						["sourceQuests"] = { 61586 },	-- Machinations of War
-						["provider"] = { "n", 161907 },	-- Baroness Draka
-						["coord"] = { 49.7, 50.7, 1698 },
-					}),
-					q(59910, {	-- Fight and Flight
-						["sourceQuests"] = { 61145 },	-- Take The Fight To Them
-						["provider"] = { "n", 161907 },	-- Baroness Draka
-						--["coord"] = { },
-					}),
-					q(60043, {	-- Justice from Above
-						["sourceQuests"] = { 59910 },	-- Fight and Flight
-						["provider"] = { "n", 166333 },	-- Xandria
-						["coord"] = { 35.6, 26.5, MALDRAXXUS },
-					}),
-					q(59916, {	-- The Butchers of Bastion
-						["sourceQuests"] = { 59910 },	-- Fight and Flight
-						["provider"] = { "n", 168743 },	-- Apolon
-						["coord"] = { 35.3, 26.0, MALDRAXXUS },
-					}),
-					q(61396, {	-- Dark Developments
-						["sourceQuests"] = { 59910 },	-- Fight and Flight
-						["provider"] = { "o", 357246 },	-- Tattered Scroll
-						["coord"] = { 33.5, 24.1, MALDRAXXUS },
-					}),
-					q(61180, {	-- Burn Before Reading
-						["sourceQuests"] = {
-							61396,	-- Dark Developments
-							60043,	-- Justice from Above
-							59916,	-- The Butchers of Bastion
-						},
-						["provider"] = { "n", 168744 },	-- Artemede
-						["coord"] = { 35.2, 26.9, MALDRAXXUS },
-					}),
-					q(60510, {	-- Descended
-						["sourceQuests"] = {
-							61396,	-- Dark Developments
-							60043,	-- Justice from Above
-							59916,	-- The Butchers of Bastion
-						},
-						["provider"] = { "n", 166333 },	-- Xandria
-						["coord"] = { 35.6, 26.5, MALDRAXXUS },
-						["_drop"] = { "g" },	-- make 4 items stop showing up that are not actually rewarded by this quest
-					}),
-					q(61412, {	-- An Early End
-						["sourceQuests"] = {
-							61396,	-- Dark Developments
-							60043,	-- Justice from Above
-							59916,	-- The Butchers of Bastion
-						},
-						["provider"] = { "n", 168743 },	-- Apolon
-						["coord"] = { 35.3, 25.9, MALDRAXXUS },
-					}),
-					q(60050, {	-- Trouble on the Western Front
-						["sourceQuests"] = {
-							61412,	-- An Early End
-							61180,	-- Burn Before Reading
-							60510,	-- Descended
-						},
-						["provider"] = { "n", 168860 },	-- Kynthia
-						["coord"] = { 35.4, 26.5, MALDRAXXUS },
-					}),
-					q(60044, {	-- Charging The Blade
-						["sourceQuests"] = { 60050 },	-- Trouble on the Western Front
-						["provider"] = { "n", 166211 },	-- Alexandros Mograine
-						["coord"] = { 28.8, 38.2, MALDRAXXUS },
-					}),
-					q(61567, {	-- Grave Intent
-						["sourceQuests"] = { 60050 },	-- Trouble on the Western Front
-						["provider"] = { "n", 167173 },	-- Baroness Vashj
-						["coord"] = { 28.7, 37.6, MALDRAXXUS },
-					}),
-					q(60114, {	-- Aerial Advantage
-						["sourceQuests"] = { 60050 },	-- Trouble on the Western Front
-						["provider"] = { "n", 167810 },	-- Emeni
-						["coord"] = { 28.1, 37.5, MALDRAXXUS },
-					}),
-					q(61246, {	-- Power of the Chosen
-						["sourceQuests"] = {
-							60114,	-- Aerial Advantage
-							60044,	-- Charging The Blade
-							61567,	-- Grave Intent
-						},
-						["provider"] = { "n", 166211 },	-- Alexandros Mograine
-						["coord"] = { 28.8, 38.2, MALDRAXXUS },
-						["_drop"] = { "g" },	-- make 4 items stop showing up that are not actually rewarded by this quest
-					}),
-					q(60098, {	-- The End is Now
-						["sourceQuests"] = { 61246 },	-- Power of the Chosen
-						["provider"] = { "n", 166211 },	-- Alexandros Mograine
-						["coord"] = { 28.8, 38.2, MALDRAXXUS },
-					}),
-					q(60067, {	-- Pursuit of Justice
-						["sourceQuests"] = { 60098 },	-- The End is Now
-						["provider"] = { "n", 172002 },	-- Xandria
-						["coord"] = { 31.8, 30.3, MALDRAXXUS },
-					}),
-					q(57470, {	-- An Abominable Discovery
-						["sourceQuests"] = { 60067 },	-- Pursuit of Justice
-						["provider"] = { "n", 173308 },	-- Baroness Draka
-						["coord"] = { 31.0, 29.4, MALDRAXXUS },
-					}),
-					q(57530, {	-- Gharmal's Tower
-						["sourceQuests"] = { 57470 },	-- An Abominable Discovery
-						["provider"] = { "n", 173194 },	-- Alexandros Mograine
-						["coord"] = { 27.5, 23.9, MALDRAXXUS },
-					}),
-					q(57473, {	-- Prized Possession
-						["sourceQuests"] = { 57530 },	-- Gharmal's Tower
-						["provider"] = { "n", 173194 },	-- Alexandros Mograine
-						["coord"] = { 27.3, 23.8, MALDRAXXUS },
-					}),
-					q(57475, {	-- The Mantle Returned
-						["sourceQuests"] = { 57473 },	-- Prized Possession
-						["provider"] = { "n", 173194 },	-- Alexandros Mograine
-						["coord"] = { 27.3, 23.8, MALDRAXXUS },
-					}),
-					q(57636, {	-- Pride of Place
-						["sourceQuests"] = { 57475 },	-- The Mantle Returned
-						["provider"] = { "n", 161907 },	-- Baroness Draka
-						["coord"] = { 49.8, 50.6, 1698 },
-						["g"] = {
-							i(182276),	-- Bladesworn Conjurer's Cape
-							i(182258),	-- Bladesworn Harbinger's Greatcloak
-							i(182285),	-- Bladesworn Tactician's Drape
-							i(182267),	-- Bladesworn Wraith's Cloak
-						},
-					}),
-					q(62161, {	-- Blood from a Bone
-						["sourceQuests"] = { 57636 },	-- Pride of Place
-						["provider"] = { "n", 161907 },	-- Baroness Draka
-						["coord"] = { 49.8, 50.6, 1698 },
-					}),
-
 					-- Chapter 7 (The Wages of Sin), requires Renown 17
-					q(58504, {	-- Accusatory Missive
-						["sourceQuests"] = { 62161 },	-- Blood from a Bone
-						["provider"] = { "n", 161907 },	-- Baroness Draka
-						["coord"] = { 49.8, 50.6, 1698 },
-					}),
-					q(58523, {	-- You're Dead To Me
-						["sourceQuests"] = { 58504 },	-- Accusatory Missive
-						["provider"] = { "n", 161461 },	-- The Accuser
-						["coord"] = { 72.0, 41.2, REVENDRETH },
-					}),
-					q(58472, {	-- A Farewell to Arms
-						["sourceQuests"] = { 58523 },	-- You're Dead To Me
-						["provider"] = { "n", 161461 },	-- The Accuser
-						["coord"] = { 73.8, 57.4, REVENDRETH },
-					}),
-					q(58599, {	-- Drive A Dredge Between Them
-						["sourceQuests"] = { 58523 },	-- You're Dead To Me
-						["provider"] = { "n", 161474 },	-- Baroness Draka
-					}),
 					q(58608, {	-- It's Treason, Then
 						["sourceQuests"] = {
 							58472,	-- A Farewell to Arms
@@ -801,7 +788,7 @@ _.ExpansionFeatures =
 						["coord"] = { 44.1, 26.9, 1652 },	-- Vault of Souls
 					}),
 					q(61758, {	-- Improvised Implements
-						["sourceQuests"] = { 61575 },	-- Caught in the Act
+						["sourceQuests"] = { 61757 },	-- Caught in the Act
 						-- ["provider"] = { "n",  },	-- auto-accepted
 						["coord"] = { 54.2, 67.9, 1652 },	-- Vault of Souls
 					}),
@@ -884,8 +871,14 @@ _.ExpansionFeatures =
 						["coord"] = { 46.5, 42.2, 1698 },
 						["isWeekly"] = true,
 					}),
+					
 				})),
 			},
 		}),
 	}),
+};
+
+_.HiddenQuestTriggers = {
+	q(62982),	-- triggers when searching the storeroom on "Gharmal's Tower" (#57530)
+	q(62983),	-- triggers when searching the alchemical laboratory on "Gharmal's Tower" (#57530)
 };

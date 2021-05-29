@@ -165,6 +165,7 @@ _.Zones =
 				}),
 				q(57878, {	-- Choosing Your Purpose
 					["sourceQuests"] = { 57877 },	-- The Looming Dark
+					["altQuests"] = { 62704 },	-- The Threads of Fate (can't do this version on a Skip character)
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 39.2, 69.7, ORIBOS },
 				}),
@@ -289,6 +290,7 @@ _.Zones =
 				}),
 				q(57877, {	-- The Looming Dark
 					["sourceQuests"] = { 57876 },	-- The End of the Beginning
+					["altQuests"] = { 62704 },	-- The Threads of Fate (can't do this version on a Skip character)
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 39.2, 69.7, ORIBOS },
 				}),
