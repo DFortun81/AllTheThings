@@ -3472,7 +3472,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				MergeObject(root.g, usedToBuy);
 			end
 		elseif paramA == "itemID" or (paramA == "s" and group.itemID) then
-			local costResults = app.SearchForField("itemIDAsCost", group.modItemID or group.itemID or paramB);
+			local costResults = group.modItemID and app.SearchForField("itemIDAsCost", group.modItemID) or app.SearchForField("itemIDAsCost", group.itemID or paramB);
 			if costResults and #costResults > 0 then
 				if not root.g then root.g = {} end
 				local usedToBuy = app.CreateNPC(-2);
@@ -6180,13 +6180,32 @@ local fields = {
 	["collectible"] = function(t)
 		return t.collectibleAsCost;
 	end,
+	["collected"] = function(t)
+		return t.collectedAsCost;
+	end,
+	["collectedAsCost"] = function(t)
+		local results = app.SearchForField("currencyIDAsCost", t.currencyID);
+		if results and #results > 0 then
+			for _,ref in pairs(results) do
+				if ref.currencyID ~= t.currencyID and app.RecursiveGroupRequirementsFilter(ref) then
+					if (ref.collectible and not ref.collected) or (ref.total and ref.total > 0 and ref.progress < ref.total) then
+						return false;
+					end
+				end
+			end
+			return true;
+		elseif t.metaAfterFailure then
+			setmetatable(t, t.metaAfterFailure);
+			return false;
+		end
+	end,
 	["collectibleAsCost"] = function(t)
 		if t.parent and t.parent.saved then return false; end
 		local results = app.SearchForField("currencyIDAsCost", t.currencyID);
 		if results and #results > 0 then
 			for _,ref in pairs(results) do
 				if ref.currencyID ~= t.currencyID and app.RecursiveGroupRequirementsFilter(ref) then
-					if (ref.collectible and not ref.collected) or (ref.total and ref.total > 0 and ref.total < ref.progress) then
+					if ref.collectible or (ref.total and ref.total > 0) then
 						return true;
 					end
 				end
@@ -7875,7 +7894,7 @@ local itemFields = {
 					app.RecursiveGroupRequirementsFilter(ref) and
 					-- don't include items which are from something the current character cannot complete
 					not GetRelativeValue(t, "altcollected") then
-					if (ref.collectible and not ref.collected) or (ref.total and ref.total > 0 and ref.total < ref.progress) then
+					if ref.collectible or (ref.total and ref.total > 0) then
 						return true;
 					end
 				end
@@ -7935,7 +7954,7 @@ local itemFields = {
 						-- if LOG then print("Cost Required via Collectible") end
 						return false;
 					-- Used as a cost for something which has an incomplete progress
-					elseif ref.total and ref.total > 0 and ref.total ~= ref.progress and
+					elseif ref.total and ref.total > 0 and ref.progress < ref.total and
 						-- is account or debug mode or the thing is not altcollected
 						(app.MODE_DEBUG or app.MODE_ACCOUNT or not ref.altcollected) and
 						-- is not a parent of the cost group itself
