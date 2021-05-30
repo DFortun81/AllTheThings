@@ -2340,7 +2340,7 @@ ResolveSymbolicLink = function(o)
 		local searchResults, finalized = {}, {};
 		for j,sym in ipairs(o.sym) do
 			local cmd = sym[1];
-			-- print("Resolving Symbolic Link '",cmd,"' with [",sym[2],"] & [",sym[3],"] for",o.key,o.key and o[o.key])
+			-- if app.DEBUG_PRINT then print("Resolving Symbolic Link '",cmd,"' with [",sym[2],"] & [",sym[3],"] for",o.key,o.key and o[o.key]) end
 			if cmd == "select" then
 				-- Instruction to search the full database for something.
 				local cache = app.SearchForField(sym[2], sym[3]);
@@ -2474,6 +2474,12 @@ ResolveSymbolicLink = function(o)
 					for k=#searchResults,1,-1 do
 						local s = searchResults[k];
 						if s[key] and contains(clone, s[key]) then
+							-- TEMP logic to allow Ensembles to continue working until they get fixed again...
+							if key == "itemID" and s.g and s[key] == o[key] then
+								for _,g in ipairs(s.g) do
+									tinsert(searchResults, g);
+								end
+							end
 							table.remove(searchResults, k);
 						end
 					end
@@ -2608,27 +2614,34 @@ ResolveSymbolicLink = function(o)
 					print("Could not find subroutine", sym[2]);
 				end
 			end
-			-- print("Results",searchResults and #searchResults,"from '",cmd,"' with [",sym[2],"] & [",sym[3],"]for",o.key,o.key and o[o.key])
+			if app.DEBUG_PRINT then print("Results",searchResults and #searchResults,"from '",cmd,"' with [",sym[2],"] & [",sym[3],"] for",o.key,o.key and o[o.key]) end
 		end
 
 		-- If we have any pending finalizations to make, then merge them into the finalized table. [Equivalent to a "finalize" instruction]
-		-- print("Forced Finalize",o.key,o.key and o[o.key])
 		if #searchResults > 0 then
 			for k,s in ipairs(searchResults) do
 				table.insert(finalized, s);
 			end
 		end
+		-- if app.DEBUG_PRINT then print("Forced Finalize",o.key,o.key and o[o.key],#finalized) end
+
+		-- make sure we've only grabbed a set of unique results... I can't think of any reason we'd ever want to select
+		-- multiples of the same header/item/etc.
+		local uniques = {};
+		MergeObjects(uniques, finalized);
+		finalized = uniques;
+		-- if app.DEBUG_PRINT then print("Forced Uniques",o.key,o.key and o[o.key],#finalized); app.PrintTable(finalized); end
 
 		-- If we had any finalized search results, then clone all the records and return it.
 		if #finalized > 0 then
-			-- print("Symbolic Link for", o.key,o[o.key], "contains", #finalized, "values after filtering.");
 			local cloned = {};
-			for k,s in ipairs(finalized) do
-				tinsert(cloned, CloneData(s));
+			for _,s in ipairs(finalized) do
+				tinsert(cloned, CreateObject(s));
 			end
+			-- if app.DEBUG_PRINT then print("Symbolic Link for", o.key,o.key and o[o.key], "contains", #uniques, "values after filtering.") end
 			return cloned;
 		else
-			-- print("Symbolic Link for ", o.key, " ", o[o.key], " contained no values after filtering.");
+			-- if app.DEBUG_PRINT then print("Symbolic Link for ", o.key, " ",o.key and o[o.key], " contained no values after filtering.") end
 		end
 	end
 end
@@ -2743,6 +2756,26 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 	-- 	data.progress = progress;
 	-- 	return data;
 	-- end
+end
+-- Fills & returns a group with its symlink references, along with all sub-groups recursively if specified
+-- This should only be used on a cloned group so the source group is not contaminated
+local function FillSymLinks(group, recursive)
+	-- if group.key == "itemID" and group.itemID == 138536 then app.DEBUG_PRINT = group; end
+	if recursive and group.g then
+		for _,s in ipairs(group.g) do
+			FillSymLinks(s, recursive);
+		end
+	end
+	if group.sym then
+		local groupLinks = ResolveSymbolicLink(group);
+		if groupLinks then
+			-- print("Filled Symlinks",group.key,group.key and group[group.key],#groupLinks)
+			if not group.g then group.g = groupLinks
+			else MergeObjects(group.g, groupLinks); end
+		end
+	end
+	-- if app.DEBUG_PRINT == group then app.DEBUG_PRINT = nil; end
+	return group;
 end
 local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	if not search then return nil; end
@@ -3410,35 +3443,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		end
 		-- Resolve symbolic links for the root
 		-- print("Resolve Root",root.key,root[root.key])
-		local rootResolved = ResolveSymbolicLink(root);
-		if rootResolved then
-			-- print("Root has symbolic",#rootResolved)
-			root.symbolized = true;
-			for k,o in pairs(rootResolved) do
-				o.symbolized = true;
-				MergeObject(root.g, o);
-			end
-		end
-		-- Resolve symbolic links within the Root
-		for i,o in ipairs(root.g) do
-			if not o.symbolized then
-				-- print("Resolve",o.key,o[o.key],o.sym)
-				local symbolicLink = ResolveSymbolicLink(o);
-				if symbolicLink then
-					-- print("Sub has symbolic")
-					o.symbolized = true;
-					if o.g and #o.g >= 0 then
-						for j=1,#symbolicLink,1 do
-							-- print("Merge g",symbolicLink[j].key,symbolicLink[j][symbolicLink[j].key])
-							MergeObject(o.g, symbolicLink[j]);
-						end
-					else
-						o.g = symbolicLink;
-					end
-					-- print("o.g",o.g and #o.g)
-				end
-			end
-		end
+		FillSymLinks(root, true);
 		-- Single group which matches the root, then collapse it
 		if #root.g == 1 then
 			local o = root.g[1];
@@ -4633,31 +4638,6 @@ local function PopulateQuestObject(questObject)
 			questObject.description = description;
 		else
 			questObject.description = questObject.description .. "\n\n" .. description;
-		end
-	end
-
-	-- Resolve all symbolic links
-	if questObject.g and #questObject.g > 0 then
-		for _,item in ipairs(questObject.g) do
-			local resolved = ResolveSymbolicLink(item);
-			if resolved then
-				if not item.g then
-					item.g = resolved;
-				else
-					MergeObjects(item.g, resolved);
-				end
-			end
-			if item.g then
-				for k,o in ipairs(item.g) do
-					if o.itemID == 140495 then	-- Torn Invitation
-						local searchResults = app.SearchForField("questID", 44058);	-- Volpin the Elusive
-						if searchResults and #searchResults > 0 then
-							if not o.g then o.g = {}; end
-							MergeObjects(o.g, CreateObject(searchResults));
-						end
-					end
-				end
-			end
 		end
 	end
 
@@ -9365,6 +9345,24 @@ app.TryPopulateQuestRewards = function(questObject)
 		if app.DEBUG_PRINT then print("TryPopulateQuestRewards:populated",questObject.questID) end
 		questObject.OnUpdate = nil;
 		questObject.doUpdate = true;
+
+		-- Resolve all symbolic links now that the quest contains items
+		if questObject.g and #questObject.g > 0 then
+			for _,item in ipairs(questObject.g) do
+				FillSymLinks(item);
+				if item.g then
+					for k,o in ipairs(item.g) do
+						if o.itemID == 140495 then	-- Torn Invitation
+							local searchResults = app.SearchForField("questID", 44058);	-- Volpin the Elusive
+							if searchResults and #searchResults > 0 then
+								if not o.g then o.g = {}; end
+								MergeObjects(o.g, CreateObject(searchResults));
+							end
+						end
+					end
+				end
+			end
+		end
 		BuildGroups(questObject, questObject.g);
 	-- still missing something, so do update still
 	-- elseif questObject.missingItem or questObject.missingCurr then
@@ -11771,13 +11769,7 @@ function app:CreateMiniListForGroup(group)
 		-- 	end
 		-- end
 		-- Merge any symbolic linked data into the sub-groups
-		if group.sym then
-			local resolved = ResolveSymbolicLink(group);
-			if resolved then
-				if not group.g then group.g = { resolved }
-				else MergeObjects(group.g, resolved); end
-			end
-		end
+		FillSymLinks(group, true);
 		-- Create groups showing Appearance information
 		if group.s then
 			-- popout.data = group;
@@ -14832,6 +14824,9 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 						table.insert(results.g, 1, o);
 					end
 				end
+
+				-- Expand all symlinks in the minilist for clarity
+				FillSymLinks(self.data, true);
 				
 				-- Check to see completion...
 				-- print("build groups");
@@ -16896,21 +16891,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 					_cache = SearchForField("questID", app.FactionID == Enum.FlightPathFaction.Alliance and 32900 or 32901);
 					if _cache then
 						for _,data in ipairs(_cache) do
-							data = CreateObject(data);
-							if data.g then
-								for _,entry in ipairs(data.g) do
-									local resolved = ResolveSymbolicLink(entry);
-									if resolved then
-										if entry.g then
-											MergeObjects(entry.g, resolved);
-										else
-											entry.g = resolved;
-										end
-									end
-									MergeObject(data.g, entry);
-								end
-							end
-							MergeObject(mapObject.g, data);
+							MergeObject(mapObject.g, FillSymLinks(CreateObject(data), true));
 						end
 					end
 					MergeObject(temp, mapObject);
