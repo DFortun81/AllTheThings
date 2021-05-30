@@ -48,10 +48,15 @@ _.ExpansionFeatures =
 						}),
 						i(186580,  {	-- A Tiny Sinstone
 							["description"] = "Requires Renown 56.",
+							["questID"] = 64132,
 						}),
 					}),
 				}),
 			},
 		}),
 	}),
+};
+
+_.HiddenQuestTriggers = {
+	q(64133),	-- hitting Renown 56
 };
