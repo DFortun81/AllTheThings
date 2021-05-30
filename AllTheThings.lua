@@ -12279,7 +12279,7 @@ local function SetRowData(self, row, data)
 		if SetIndicatorIcon(row.Indicator, data) then
 			row.Indicator:SetPoint("LEFT", leftmost, relative, x - iconSize, 0);
 			row.Indicator:Show();
-			row.indent = row.indent - iconSize;
+			-- row.indent = row.indent - iconSize;
 		end
 		if SetPortraitIcon(row.Texture, data) then
 			row.Texture.Background:SetPoint("TOPLEFT", row.Texture);
