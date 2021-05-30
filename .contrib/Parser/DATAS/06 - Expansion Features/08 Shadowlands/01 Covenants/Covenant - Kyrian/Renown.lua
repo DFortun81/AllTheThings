@@ -12,17 +12,17 @@ _.ExpansionFeatures =
 				1708,	-- Elysian Hold
 			},
 			["g"] = {
-				n(-902, sharedData({["customCollect"] = { "SL_COV_KYR" } },{	-- Renown - Kyrian
+				n(-902, {	-- Renown
 					["description"] = "These are rewards automatically granted by reaching a specific level of Renown.",
-					["g"] = {
-						i(180765, {	-- Eternal Phalynx of Purity
+					["g"] = bubbleDown( { ["customCollect"] = "SL_COV_KYR" }, {	-- Kyrian
+						i(180765,  {	-- Eternal Phalynx of Purity
 							["description"] = "Requires Renown 39.",
 						}),
 						title(425, {	-- Hand of the Archon
 							["description"] = "Requires Renown 40.",
 						}),
-					},
-				})),
+					}),
+				}),
 			},
 		}),
 	}),

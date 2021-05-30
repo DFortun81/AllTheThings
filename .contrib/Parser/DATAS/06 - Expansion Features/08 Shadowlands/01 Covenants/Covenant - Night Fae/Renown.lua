@@ -13,14 +13,17 @@ _.ExpansionFeatures =
 				1703,	-- Heart of the Forest (The Canopy)
 			},
 			["g"] = {
-				n(-902, sharedData({["customCollect"] = { "SL_COV_NFA" } },{	-- Renown - Night Fae
-					i(180722, {	-- Enchanted Shadeleaf Runestag (MOUNT!)
-						["description"] = "Requires 39 Renown.",
+				n(-902, {	-- Renown
+					["description"] = "These are rewards automatically granted by reaching a specific level of Renown.",
+					["g"] = bubbleDown( { ["customCollect"] = "SL_COV_NFA" }, {	-- Night Fae
+						i(180722, {	-- Enchanted Shadeleaf Runestag (MOUNT!)
+							["description"] = "Requires 39 Renown.",
+						}),
+						title(428, {	-- Winter's Envoy
+							["description"] = "Requires 40 Renown.",
+						}),
 					}),
-					title(428, {	-- Winter's Envoy
-						["description"] = "Requires 40 Renown.",
-					}),
-				})),
+				}),
 			},
 		}),
 	}),

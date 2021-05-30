@@ -22,6 +22,18 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 161461 },	-- The Accuser
 						["coord"] = { 73.8, 57.4, REVENDRETH },
 					}),
+					q(61742, {	-- A Fitting Guise
+						["sourceQuests"] = {
+							62414,	-- Burying Suspicion
+							61741,	-- Pilfered Power
+							61740,	-- Playing Favorites
+						},
+						["provider"] = { "n", 173422 },	-- Balmedar's Oculus
+					}),
+					q(61759, {	-- A Helpful Hand
+						["sourceQuests"] = { 61758 },	-- Improvised Implements
+						["coord"] = { 54.2, 67.9, 1652 },	-- Vault of Souls
+					}),
 					q(62833, {	-- A Hero of Great Renown
 						-- TODO: Draka offers an alternate 'skip' option with this quest... not sure what that triggers
 						["sourceQuests"] = { 61359 },	-- Power of the Primus
@@ -95,6 +107,10 @@ _.ExpansionFeatures =
 							i(182266),	-- Bladesworn Wraith's Armguards
 						},
 					}),
+					q(61755, {	-- Blinding the Brokers
+						["sourceQuests"] = { 61753 },	-- Explosive Schemes
+						["provider"] = { "n", 173422 },	-- Balmedar's Oculus
+					}),
 					q(62161, {	-- Blood from a Bone
 						["sourceQuests"] = { 57636 },	-- Pride of Place
 						["provider"] = { "n", 161907 },	-- Baroness Draka
@@ -120,10 +136,51 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 168744 },	-- Artemede
 						["coord"] = { 35.2, 26.9, MALDRAXXUS },
 					}),
+					q(62414, {	-- Burying Suspicion
+						["sourceQuests"] = { 61739 },	-- The Wayward Baron
+						["provider"] = { "n", 173422 },	-- Balmedar's Oculus
+						["coord"] = { 59.3, 32.9, MALDRAXXUS },
+					}),
+					q(61751, {	-- Cage Free Spores
+						["sourceQuests"] = { 61749 },	-- Necessary Ingredients
+						["provider"] = { "n", 173492 },	-- Jor'dan the Powerful
+						["coord"] = { 69.9, 32.7, MALDRAXXUS },
+					}),
 					q(61252, {	-- Call In a Favor
 						["sourceQuests"] = { 61230 },	-- Outside Influence
 						["provider"] = { "n", 173343 },	-- Ascended Bearer
 						["coord"] = { 54.2, 16.2, MALDRAXXUS },
+					}),
+					q(58833, {	-- Calling in All Favors
+						["sourceQuests"] = { 62391 },	-- Mobilize Maldraxxus
+						["description"] = "Requires Renown 20.",
+						["provider"] = { "n", 161907 },	-- Baroness Draka
+						["coord"] = { 49.6, 50.6, 1698 },	-- Seat of the Primus
+					}),
+					q(61746, {	-- Cantrip Collections
+						["sourceQuests"] = { 61745 },	-- Mistress of Tomes
+						["provider"] = { "n", 172924 },	-- Baroness Ninadar
+						["coord"] = { 66.3, 26.3, MALDRAXXUS },
+					}),
+					q(62317, {	-- Casting Doubt
+						["sourceQuests"] = { 61748 },	-- The Hall of Tomes
+						["provider"] = { "o", 358319 },	-- Sorcerer's Note
+						["coord"] = { 46.5, 31.5, 1652 },	-- Vault of Souls
+						["g"] = {
+							i(183397, {	-- Sorcerer's Blade
+							--	["questID"] = 62306,
+								["g"] = {
+									crit(4, {	-- Sorceror's Blade
+										["achievementID"] = 14763,	-- Crypt Couture
+									}),
+								},
+							}),
+						},
+					}),
+					q(61757, {	-- Caught in the Act
+						["sourceQuests"] = { 61756 },	-- Designed to Fail
+						["provider"] = { "n", 172923 },	-- Kel'Thuzad
+						["coord"] = { 44.1, 26.9, 1652 },	-- Vault of Souls
 					}),
 					q(60044, {	-- Charging The Blade
 						["sourceQuests"] = { 60050 },	-- Trouble on the Western Front
@@ -187,6 +244,14 @@ _.ExpansionFeatures =
 						["coord"] = { 35.6, 26.5, MALDRAXXUS },
 						["_drop"] = { "g" },	-- make 4 items stop showing up that are not actually rewarded by this quest
 					}),
+					q(61756, {	-- Designed to Fail
+						["sourceQuests"] = {
+							61754,	-- No Crate Unturned
+							61755,	-- Blinding the Brokers
+						},
+						["provider"] = { "n", 173172 },	-- Balmedar
+						["coord"] = { 66.2, 32.1, MALDRAXXUS },
+					}),
 					q(59922, {	-- Do Not Forget
 						["sourceQuests"] = { 59921 },	-- All I Ever Will Be
 						["provider"] = { "n", 165794 },	-- Xandria <Paragon of Courage>
@@ -213,6 +278,16 @@ _.ExpansionFeatures =
 						["g"] = {
 							i(182077),		-- War-Bred Tauralus (MOUNT!)
 						},
+					}),
+					q(61747, {	-- Errant Enchantments
+						["sourceQuests"] = { 61745 },	-- Mistress of Tomes
+						["provider"] = { "n", 172924 },	-- Baroness Ninadar
+						["coord"] = { 66.3, 26.3, MALDRAXXUS },
+					}),
+					q(61753, {	-- Explosive Schemes
+						["sourceQuests"] = { 61752 },	-- The Final Reagent
+						["provider"] = { "n", 173172 },	-- Balmedar
+						["coord"] = { 66.2, 32.1, MALDRAXXUS },
 					}),
 					q(61226, {	-- Extra Limbs
 						["sourceQuests"] = {
@@ -263,15 +338,36 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 167173 },	-- Baroness Vashj
 						["coord"] = { 28.7, 37.6, MALDRAXXUS },
 					}),
+					q(61750, {	-- Heart of the Forest
+						["sourceQuests"] = { 61749 },	-- Necessary Ingredients
+						["provider"] = { "n", 173492 },	-- Jor'dan the Powerful
+						["coord"] = { 69.9, 32.7, MALDRAXXUS },
+					}),
+					q(62388, {	-- House of Rituals
+						["sourceQuests"] = { 58624 },	-- Pauldrons of Imperium
+						["provider"] = { "n", 161907 },	-- Baroness Draka
+						["coord"] = { 49.8, 50.6, 1698 },	-- Seat of the Primus
+					}),
 					q(61485, {	-- I'll Only Say This Once
 						["sourceQuests"] = { 57778 },	-- The Maldraxxian Job
 						["provider"] = { "n", 160518 },	-- Whisperer Vyn
 						["coord"] = { 50.7, 15.6, MALDRAXXUS },
 					}),
+					q(61758, {	-- Improvised Implements
+						["sourceQuests"] = { 61757 },	-- Caught in the Act
+						["coord"] = { 54.2, 67.9, 1652 },	-- Vault of Souls
+					}),
 					q(62840, {	-- Into the Reservoir
 						["sourceQuests"] = { 62839 },	-- Anima is Strength
 						["provider"] = { "n", 161909 },	-- Arkadia Moa
 						["coord"] = { 52.4, 38.4, 1698 },	-- Seat of the Primus
+					}),
+					q(58608, {	-- It's Treason, Then
+						["sourceQuests"] = {
+							58472,	-- A Farewell to Arms
+							58599,	-- Drive A Dredge Between Them
+						},
+						["provider"] = { "n", 161474 },	-- Baroness Draka
 					}),
 					q(60043, {	-- Justice from Above
 						["sourceQuests"] = { 59910 },	-- Fight and Flight
@@ -288,6 +384,26 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 166535 },	-- Baroness Draka
 						["coord"] = { 50.4, 70.6, MALDRAXXUS },
 					}),
+					q(61745, {	-- Mistress of Tomes
+						["sourceQuests"] = { 61744 },	-- The Baron's Plan
+						["provider"] = { "n", 172923 },	-- Kel'Thuzad
+						["coord"] = { 44.0, 27.3, 1652 },	-- Vault of Souls
+					}),
+					q(62391, {	-- Mobilize Maldraxxus
+						["sourceQuests"] = { 61761 },	-- The Better Part of Valor
+						["provider"] = { "n", 161907 },	-- Baroness Draka
+						["coord"] = { 49.6, 50.6, 1698 },	-- Seat of the Primus
+					}),
+					q(61749, {	-- Necessary Ingredients
+						["sourceQuests"] = { 61748 },	-- The Hall of Tomes
+						["provider"] = { "n", 172923 },	-- Kel'Thuzad
+						["coord"] = { 43.9, 27.1, 1652 },	-- Vault of Souls
+					}),
+					q(63343, {	-- Necrolord Tactician
+						["description"] = "Requires Renown 22.",
+						["provider"] = { "n", 175998 },    -- Elspeth Larink
+						["coord"] = { 46.5, 40.2, 1698 },
+					}),
 					q(63342, {	-- Necrolord Veteran
 						["description"] = "Requires Renown 7.",
 						["provider"] = { "n", 175998 },    -- Elspeth Larink
@@ -300,6 +416,11 @@ _.ExpansionFeatures =
 						["g"] = {
 							follower(1263),	-- Emeni
 						},
+					}),
+					q(61754, {	-- No Crate Unturned
+						["sourceQuests"] = { 61753 },	-- Explosive Schemes
+						["provider"] = { "n", 173422 },	-- Balmedar's Oculus
+						["_drop"] = { "g" },	-- make items stop showing up that are not actually rewarded by this quest
 					}),
 					q(57644, {	-- No Friend Left Behind
 						["sourceQuests"] = { 61226 },	-- Extra Limbs
@@ -334,10 +455,31 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 171875 },	-- Khaliiq <Vashj's Devoted>
 						["coord"] = { 50.0, 17.9, MALDRAXXUS },
 					}),
+					q(58624, {	-- Pauldrons of Imperium
+						["sourceQuests"] = { 58608 },	-- It's Treason, Then
+						["provider"] = { "n", 161865 },	-- Baroness Draka
+						["coord"] = { 78.1, 62.2, REVENDRETH },
+						["g"] = {
+							i(182273),	-- Bladesworn Conjurer's Mantle
+							i(182255),	-- Bladesworn Harbinger's Pauldrons
+							i(182282),	-- Bladesworn Tactician's Spaulders
+							i(182264),	-- Bladesworn Wraith's Shoulders
+						},
+					}),
 					q(59648, {	-- Peace by Piece
 						["sourceQuests"] = { 59625 },	-- The Only Cure
 						["provider"] = { "n", 165412 },	-- Xandria <Paragon of Courage>
 						["coord"] = { 40.7, 55.0, BASTION },
+					}),
+					q(61741, {	-- Pilfered Power
+						["sourceQuests"] = { 61739 },	-- The Wayward Baron
+						["provider"] = { "n", 173422 },	-- Balmedar's Oculus
+						["coord"] = { 59.3, 32.9, MALDRAXXUS },
+					}),
+					q(61740, {	-- Playing Favorites
+						["sourceQuests"] = { 61739 },	-- The Wayward Baron
+						["provider"] = { "n", 173422 },	-- Balmedar's Oculus
+						["coord"] = { 59.3, 32.9, MALDRAXXUS },
 					}),
 					q(61246, {	-- Power of the Chosen
 						["sourceQuests"] = {
@@ -437,6 +579,19 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 172573 },	-- Khaliiq
 						["coord"] = { 27.2, 45.2, MALDRAXXUS },
 					}),
+					q(62406, {	-- Staff of the Primus
+						["sourceQuests"] = { 59020 },	-- The Third Fall of Kel'Thuzad
+						["provider"] = { "n", 161907 },	-- Baroness Draka
+						["coord"] = { 49.6, 50.6, 1698 },	-- Seat of the Primus
+						["g"] = {
+							i(183893, {["modID"] = 4, }),	-- Abominable Anima Spherule
+							i(183892, {["modID"] = 4, }),	-- Mystic Anima Spherule
+							i(183891, {["modID"] = 4, }),	-- Venerated Anima Spherule
+							i(183890, {["modID"] = 4, }),	-- Zenith Anima Spherule
+							i(183888, {["modID"] = 4, }),	-- Apogee Anima Bead
+							i(183889, {["modID"] = 4, }),	-- Thaumaturgic Anima Bead
+						},
+					}),
 					q(59678, {	-- Sustain, In Vain
 						["sourceQuests"] = { 59653 },	-- Don't Cross Courage
 						["provider"] = { "n", 165591 },	-- Alexandros Mograine <The Ashbringer>
@@ -454,6 +609,19 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 171821 },	-- Baroness Draka
 						["coord"] = { 42.9, 74.1, ORIBOS },
 					}),
+					q(61744, {	-- The Baron's Plan
+						["sourceQuests"] = { 61743 },	-- The Pupil Returns
+						["provider"] = { "n", 172923 },	-- Kel'Thuzad
+						["coord"] = { 50.0, 52.0, 1652 },	-- Vault of Souls
+					}),
+					q(61761, {	-- The Better Part of Valor
+						["sourceQuests"] = { 61760 },	-- The Traitor Unmasked
+						["provider"] = { "n", 173831 },	-- Balmedar
+						["coord"] = { 69.9, 27.0, MALDRAXXUS },
+						["g"] = {
+							i(183847),	-- Acolyte's Guise (TOY!)
+						},
+					}),
 					q(59916, {	-- The Butchers of Bastion
 						["sourceQuests"] = { 59910 },	-- Fight and Flight
 						["provider"] = { "n", 168743 },	-- Apolon
@@ -464,6 +632,20 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 166211 },	-- Alexandros Mograine
 						["coord"] = { 28.8, 38.2, MALDRAXXUS },
 					}),
+					q(61752, {	-- The Final Reagent
+						["sourceQuests"] = {
+							61751,	-- Cage Free Spores
+							61750,	-- Heart of the Forest
+						},
+						["provider"] = { "n", 173492 },	-- Jor'dan the Powerful
+						["coord"] = { 69.9, 32.7, MALDRAXXUS },
+						["g"] = {
+							i(182270),	-- Bladesworn Conjurer's Slippers
+							i(182252),	-- Bladesworn Harbinger's Stompers
+							i(182279),	-- Bladesworn Tactician's Sabatons
+							i(182261),	-- Bladesworn Wraith's Boots
+						},
+					}),
 					q(59894, {	-- The Golden Dawn
 						["sourceQuests"] = { 59922 },	-- Do Not Forget
 						["provider"] = { "n", 161988 },	-- Alexandros Mograine
@@ -471,6 +653,14 @@ _.ExpansionFeatures =
 						["g"] = {
 							i(181803),	-- Bladesworn Battle Standard
 						},
+					}),
+					q(61748, {	-- The Hall of Tomes
+						["sourceQuests"] = {
+							61746,	-- Cantrip Collections
+							61747,	-- Errant Enchantments
+						},
+						["provider"] = { "n", 172924 },	-- Baroness Ninadar
+						["coord"] = { 66.3, 26.3, MALDRAXXUS },
 					}),
 					q(63032, {	-- The Highlord Calls
 						["sourceQuests"] = { 59609 },	-- No Rest For the Dead
@@ -517,10 +707,41 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 164646 },	-- Baroness Vashj
 						["coord"] = { 49.9, 17.8, MALDRAXXUS },
 					}),
+					q(61743, {	-- The Pupil Returns
+						["sourceQuests"] = { 61742 },	-- A Fitting Guise
+						["provider"] = { "n", 173172 },	-- Balmedar
+						["coord"] = { 66.2, 32.1, MALDRAXXUS },
+					}),
 					q(62843, {	-- The Soul Contact
 						["sourceQuests"] = { 61397 },	-- Opportunity Strikes
 						["provider"] = { "n", 167748 },	-- Osbourne Black <Soul Warden>
 						["coord"] = { 46.5, 42.2, 1698 },	-- Seat of the Primus
+					}),
+					q(59020, {	-- The Third Fall of Kel'Thuzad
+						["sourceQuests"] = { 58833 },	-- Calling in All Favors
+						["provider"] = { "n", 174179 },	-- Baroness Draka
+						["coord"] = { 62.2, 41.0, MALDRAXXUS },
+						["maps"] = { 1689 },	-- Maldraxxus (scenario version)
+						["g"] = {
+							i(181822),	-- Armored War-Bred Tauralus (MOUNT!)
+						},
+					}),
+					q(61760, {	-- The Traitor Unmasked
+						["sourceQuests"] = { 61759 },	-- A Helpful Hand
+						["provider"] = { "n", 173172 },	-- Balmedar
+						["coord"] = { 52.5, 63.8, 1652 },	-- Vault of Souls
+						["g"] = {
+							i(182269),	-- Bladesworn Conjurer's Tunic
+							i(182251),	-- Bladesworn Harbinger's Chestguard
+							i(182278),	-- Bladesworn Tactician's Hauberk
+							i(182260),	-- Bladesworn Wraith's Jerkin
+						},
+					}),
+					q(61739, {	-- The Wayward Baron
+						["sourceQuests"] = { 62388 },	-- House of Rituals
+						["description"] = "Requires Renown 20.",
+						["provider"] = { "n", 173172 },	-- Balmedar
+						["coord"] = { 49.7, 49.8, 1698 },	-- Seat of the Primus
 					}),
 					q(61594, {	-- This Way Out
 						["sourceQuests"] = { 61569 },	-- Keys to the Ruin
@@ -559,9 +780,6 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 161461 },	-- The Accuser
 						["coord"] = { 72.0, 41.2, REVENDRETH },
 					}),
-
-
-					-- non-chapter Necrolord quests
 					q(60111, {	-- Forging a Friendship
 						["sourceQuests"] = { 62406 },	-- Staff of the Primus
 						["provider"] = { "n", 161905 },	-- Bonesmith Heirmir
@@ -570,77 +788,11 @@ _.ExpansionFeatures =
 							follower(1262),	-- Bonesmith Heirmir
 						},
 					}),
-					q(63343, {	-- Necrolord Tactician
-						["description"] = "Requires Renown 22.",
-						["provider"] = { "n", 175998 },    -- Elspeth Larink
-						["coord"] = { 46.5, 40.2, 1698 },
-					}),
-					-- TODO: may be a quest or two missing here? same screenshot in discord like 3 times with different provider/sq info >_<
-
-					-- Chapter 7 (The Wages of Sin), requires Renown 17
-					q(58608, {	-- It's Treason, Then
-						["sourceQuests"] = {
-							58472,	-- A Farewell to Arms
-							58599,	-- Drive A Dredge Between Them
-						},
-						["provider"] = { "n", 161474 },	-- Baroness Draka
-					}),
-					q(58624, {	-- Pauldrons of Imperium
-						["sourceQuests"] = { 58608 },	-- It's Treason, Then
-						["provider"] = { "n", 161865 },	-- Baroness Draka
-						["coord"] = { 78.1, 62.2, REVENDRETH },
-						["g"] = {
-							i(182273),	-- Bladesworn Conjurer's Mantle
-							i(182255),	-- Bladesworn Harbinger's Pauldrons
-							i(182282),	-- Bladesworn Tactician's Spaulders
-							i(182264),	-- Bladesworn Wraith's Shoulders
-						},
-					}),
-					q(62388, {	-- House of Rituals
-						["sourceQuests"] = { 58624 },	-- Pauldrons of Imperium
-						["provider"] = { "n", 161907 },	-- Baroness Draka
-						["coord"] = { 49.8, 50.6, 1698 },
-					}),
 
 					-- Chapter 8 (The House of Rituals), requires Renown 20
-					q(61739, {	-- The Wayward Baron
-						["description"] = "Requires Renown 20.",
-						-- ["sourceQuests"] = {  },	--
-						["provider"] = { "n", 173172 },	-- Balmedar
-						["coord"] = { 49.7, 49.8, 1698 },	-- Seat of the Primus
-					}),
-					q(61740, {	-- Playing Favorites
-						["sourceQuests"] = { 61739 },	-- The Wayward Baron
-						["provider"] = { "n", 173422 },	-- Balmedar's Oculus
-						["coord"] = { 59.3, 32.9, MALDRAXXUS },
-					}),
-					q(61741, {	-- Pilfered Power
-						["sourceQuests"] = { 61739 },	-- The Wayward Baron
-						["provider"] = { "n", 173422 },	-- Balmedar's Oculus
-						["coord"] = { 59.3, 32.9, MALDRAXXUS },
-					}),
-					q(62414, {	-- Burying Suspicion
-						["sourceQuests"] = { 61739 },	-- The Wayward Baron
-						["provider"] = { "n", 173422 },	-- Balmedar's Oculus
-						["coord"] = { 59.3, 32.9, MALDRAXXUS },
-					}),
-					q(61742, {	-- A Fitting Guise
-						["sourceQuests"] = {
-							61740,	-- Playing Favorites
-							61741,	-- Pilfered Power
-							62414,	-- Burying Suspicion
-						},
-						["provider"] = { "n", 173422 },	-- Balmedar's Oculus
-						-- ["coord"] = {  },	-- is your 'pet'
-					}),
-					q(61743, {	-- The Pupil Returns
-						["sourceQuests"] = { 61742 },	-- A Fitting Guise
-						["provider"] = { "n", 173172 },	-- Balmedar
-						["coord"] = { 66.2, 32.1, MALDRAXXUS },
-					}),
 					q(62297, {	-- A Fatal Failure
 						["sourceQuests"] = { 61742 },	-- A Fitting Guise
-						["provider"] = { "n", 174020 },	--
+						["provider"] = { "n", 174020 },	-- Captain Prateq
 						["coord"] = { 70.4, 27.7, MALDRAXXUS },
 						["g"] = {
 							i(183394, {	-- Discarded Grimoire
@@ -652,64 +804,6 @@ _.ExpansionFeatures =
 								},
 							}),
 						},
-					}),
-					q(61744, {	-- The Baron's Plan
-						["sourceQuests"] = { 61743 },	-- The Pupil Returns
-						["provider"] = { "n", 172923 },	-- Kel'Thuzad
-						["coord"] = { 50.0, 52.0, 1652 },	-- Vault of Souls
-					}),
-					q(61745, {	-- Mistress of Tomes
-						["sourceQuests"] = { 61744 },	-- The Baron's Plan
-						["provider"] = { "n", 172923 },	-- Kel'Thuzad
-						["coord"] = { 44.0, 27.3, 1652 },	-- Vault of Souls
-					}),
-					q(61746, {	-- Cantrip Collections
-						["sourceQuests"] = { 61745 },	-- Mistress of Tomes
-						["provider"] = { "n", 172924 },	-- Baroness Ninadar
-						["coord"] = { 66.3, 26.3, MALDRAXXUS },
-					}),
-					q(61747, {	-- Errant Enchantments
-						["sourceQuests"] = { 61745 },	-- Mistress of Tomes
-						["provider"] = { "n", 172924 },	-- Baroness Ninadar
-						["coord"] = { 66.3, 26.3, MALDRAXXUS },
-					}),
-					q(61748, {	-- The Hall of Tomes
-						["sourceQuests"] = {
-							61746,	-- Cantrip Collections
-							61747,	-- Errant Enchantments
-						},
-						["provider"] = { "n", 172924 },	-- Baroness Ninadar
-						["coord"] = { 66.3, 26.3, MALDRAXXUS },
-					}),
-					q(61749, {	-- Necessary Ingredients
-						["sourceQuests"] = { 61748 },	-- The Hall of Tomes
-						["provider"] = { "n", 172923 },	-- Kel'Thuzad
-						["coord"] = { 43.9, 27.1, 1652 },	-- Vault of Souls
-					}),
-					q(62317, {	-- Casting Doubt
-						["sourceQuests"] = { 61748 },	-- The Hall of Tomes
-						["provider"] = { "o", 358319 },	-- Sorcerer's Note
-						["coord"] = { 46.5, 31.5, 1652 },	-- Vault of Souls
-						["g"] = {
-							i(183397, {	-- Sorcerer's Blade
-								["questID"] = 62306,
-								["g"] = {
-									crit(4, {	-- Sorceror's Blade
-										["achievementID"] = 14763,	-- Crypt Couture
-									}),
-								},
-							}),
-						},
-					}),
-					q(61750, {	-- Heart of the Forest
-						["sourceQuests"] = { 61749 },	-- Necessary Ingredients
-						["provider"] = { "n", 173492 },	-- Jor'dan the Powerful
-						["coord"] = { 69.9, 32.7, MALDRAXXUS },
-					}),
-					q(61751, {	-- Cage Free Spores
-						["sourceQuests"] = { 61749 },	-- Necessary Ingredients
-						["provider"] = { "n", 173492 },	-- Jor'dan the Powerful
-						["coord"] = { 69.9, 32.7, MALDRAXXUS },
 					}),
 					q(62320, {	-- Regalia de Rigeuer
 						["sourceQuests"] = { 61749 },	-- Necessary Ingredients
@@ -726,48 +820,10 @@ _.ExpansionFeatures =
 							}),
 						},
 					}),
-					q(61752, {	-- The Final Reagent
-						["sourceQuests"] = {
-							61750,	-- Heart of the Forest
-							61751,	-- Cage Free Spores
-						},
-						["provider"] = { "n", 173492 },	-- Jor'dan the Powerful
-						["coord"] = { 69.9, 32.7, MALDRAXXUS },
-						["g"] = {
-							i(182270),	-- Bladesworn Conjurer's Slippers
-							i(182252),	-- Bladesworn Harbinger's Stompers
-							i(182279),	-- Bladesworn Tactician's Sabatons
-							i(182261),	-- Bladesworn Wraith's Boots
-						},
-					}),
-					q(61753, {	-- Explosive Schemes
-						["sourceQuests"] = { 61752 },	-- The Final Reagent
-						["provider"] = { "n", 173172 },	-- Balmedar
-						["coord"] = { 66.2, 32.1, MALDRAXXUS },
-					}),
-					q(61754, {	-- No Crate Unturned
-						["sourceQuests"] = { 61753 },	-- Explosive Schemes
-						["provider"] = { "n", 173422 },	-- Balmedar's Oculus
-						-- ["coord"] = {  },	-- is your 'pet'
-						["_drop"] = { "g" },	-- make items stop showing up that are not actually rewarded by this quest
-					}),
-					q(61755, {	-- Blinding the Brokers
-						["sourceQuests"] = { 61753 },	-- Explosive Schemes
-						["provider"] = { "n", 173422 },	-- Balmedar's Oculus
-						-- ["coord"] = {  },	-- is your 'pet'
-					}),
-					q(61756, {	-- Designed to Fail
-						["sourceQuests"] = {
-							61754,	-- No Crate Unturned
-							61755,	-- Blinding the Brokers
-						},
-						["provider"] = { "n", 173172 },	-- Balmedar
-						["coord"] = { 66.2, 32.1, MALDRAXXUS },
-					}),
 					q(62308, {	-- Mantle of Mastery
 						["sourceQuests"] = {
-							61754,	-- No Crate Unturned TODO: (confirm?)
-							61755,	-- Blinding the Brokers TODO: (confirm?)
+							61755,	-- Blinding the Brokers
+							61754,	-- No Crate Unturned
 						},
 						["provider"] = { "n", 172813 },	-- Ton'hamil
 						["coord"] = { 67.9, 30.6, MALDRAXXUS },
@@ -782,74 +838,8 @@ _.ExpansionFeatures =
 							}),
 						},
 					}),
-					q(61757, {	-- Caught in the Act
-						["sourceQuests"] = { 61756 },	-- Designed to Fail
-						["provider"] = { "n", 172923 },	-- Kel'Thuzad
-						["coord"] = { 44.1, 26.9, 1652 },	-- Vault of Souls
-					}),
-					q(61758, {	-- Improvised Implements
-						["sourceQuests"] = { 61757 },	-- Caught in the Act
-						-- ["provider"] = { "n",  },	-- auto-accepted
-						["coord"] = { 54.2, 67.9, 1652 },	-- Vault of Souls
-					}),
-					q(61759, {	-- A Helpful Hand
-						["sourceQuests"] = { 61758 },	-- Improvised Implements
-						-- ["provider"] = { "n",  },	-- auto-accepted
-						["coord"] = { 54.2, 67.9, 1652 },	-- Vault of Souls
-					}),
-					q(61760, {	-- The Traitor Unmasked
-						["sourceQuests"] = { 61759 },	-- A Helpful Hand
-						["provider"] = { "n", 173172 },	-- Balmedar
-						["coord"] = { 52.5, 63.8, 1652 },	-- Vault of Souls
-						["g"] = {
-							i(182269),	-- Bladesworn Conjurer's Tunic
-							i(182251),	-- Bladesworn Harbinger's Chestguard
-							i(182278),	-- Bladesworn Tactician's Hauberk
-							i(182260),	-- Bladesworn Wraith's Jerkin
-						},
-					}),
-					q(61761, {	-- The Better Part of Valor
-						["sourceQuests"] = { 61760 },	-- The Traitor Unmasked
-						["provider"] = { "n", 173831 },	-- Balmedar
-						["coord"] = { 69.9, 27.0, MALDRAXXUS },
-						["g"] = {
-							i(183847),	-- Acolyte's Guise
-						},
-					}),
-					q(62391, {	-- Mobilize Maldraxxus
-						["sourceQuests"] = { 61761 },	-- The Better Part of Valor
-						["provider"] = { "n", 161907 },	-- Baroness Draka
-						["coord"] = { 49.6, 50.6, 1698 },	-- Seat of the Primus
-					}),
 
 					-- Chapter 9 (Assault on the House of Rituals), requires Renown 22
-					q(58833, {	-- Calling in All Favors
-						["sourceQuests"] = { 62391 },	-- Mobilize Maldraxxus
-						["provider"] = { "n", 161907 },	-- Baroness Draka
-						["coord"] = { 49.6, 50.6, 1698 },	-- Seat of the Primus
-					}),
-					q(59020, {	-- The Third Fall of Kel'Thuzad
-						["sourceQuests"] = { 58833 },	-- Calling in All Favors
-						["maps"] = { 1689 },	-- Exoramas (Necrolord Renown 24 Scenario)
-						["provider"] = { "n", 174179 },	-- Baroness Draka
-						["coord"] = { 62.2, 41.0, MALDRAXXUS },
-						["g"] = {
-							i(181822),	-- Armored War-Bred Tauralus (MOUNT!)
-						},
-					}),
-					q(62406, {	-- Staff of the Primus
-						["sourceQuests"] = { 59020 },	-- The Third Fall of Kel'Thuzad
-						["provider"] = { "n", 161907 },	-- Baroness Draka
-						["coord"] = { 49.6, 50.6, 1698 },	-- Seat of the Primus
-						["g"] = {
-							i(183893, {["modID"] = 4, }),	-- Abominable Anima Spherule
-							i(183892, {["modID"] = 4, }),	-- Mystic Anima Spherule
-							i(183891, {["modID"] = 4, }),	-- Venerated Anima Spherule
-							i(183890, {["modID"] = 4, }),	-- Zenith Anima Spherule
-							i(183888, {["modID"] = 4, }),	-- Apogee Anima Bead
-							i(183889, {["modID"] = 4, }),	-- Thaumaturgic Anima Bead
-						},
-					}),
 					q(62864, {	-- Return Lost Souls (10 soul version)
 						-- ["sourceQuests"] = {  },	-- TODO
 						["description"] = "Requires Renown 15.",
@@ -879,6 +869,10 @@ _.ExpansionFeatures =
 };
 
 _.HiddenQuestTriggers = {
+--	Campaign quests
 	q(62982),	-- triggers when searching the storeroom on "Gharmal's Tower" (#57530)
 	q(62983),	-- triggers when searching the alchemical laboratory on "Gharmal's Tower" (#57530)
+
+--	Crypt Couture
+	q(62306),	-- using "Sorcerer's Blade"
 };

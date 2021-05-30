@@ -687,7 +687,7 @@ _.ExpansionFeatures =
 					}),
 					n(-905, {	-- Command Table
 						n(-906, {	-- Tier 1: Tactical Insight
-							q(62312, {    -- Adventurer: Gunn Gorgebone
+							q(62312, {	-- Adventurer: Gunn Gorgebone
 								["provider"] = { "n", 165321 },	-- Merick Feldscar
 								["coord"] = { 38.8, 48.2, 1698 },
 								["description"] = "Becomes available at Renown 12",
@@ -695,7 +695,7 @@ _.ExpansionFeatures =
 									follower(1301),	-- Gunn Gorgebone
 								},
 							}),
-							q(62314, {    -- Adventurer: Khaliiq
+							q(62314, {	-- Adventurer: Khaliiq
 								["provider"] = { "n", 165321 },	-- Merick Feldscar
 								["coord"] = { 38.8, 48.2, 1698 },
 								["description"] = "Becomes available at Renown 27",
@@ -703,7 +703,7 @@ _.ExpansionFeatures =
 									follower(1303),	-- Khaliiq
 								},
 							}),
-							q(62315, {    -- Adventurer: Plaguey
+							q(62315, {	-- Adventurer: Plaguey
 								["provider"] = { "n", 165321 },	-- Merick Feldscar
 								["coord"] = { 38.8, 48.2, 1698 },
 								["description"] = "Becomes available at Renown 33",
@@ -711,7 +711,7 @@ _.ExpansionFeatures =
 									follower(1304),	-- Plaguey
 								},
 							}),
-							q(62316, {    -- Adventurer: Rathan
+							q(62316, {	-- Adventurer: Rathan
 								["provider"] = { "n", 165321 },	-- Merick Feldscar
 								["coord"] = { 38.8, 48.2, 1698 },
 								["description"] = "Becomes available at Renown 38",
@@ -719,7 +719,7 @@ _.ExpansionFeatures =
 									follower(1305),	-- Rathan
 								},
 							}),
-							q(62313, {    -- Adventurer: Rencissa the Dynamo
+							q(62313, {	-- Adventurer: Rencissa the Dynamo
 								["provider"] = { "n", 165321 },	-- Merick Feldscar
 								["coord"] = { 38.8, 48.2, 1698 },
 								["description"] = "Becomes available at Renown 17",

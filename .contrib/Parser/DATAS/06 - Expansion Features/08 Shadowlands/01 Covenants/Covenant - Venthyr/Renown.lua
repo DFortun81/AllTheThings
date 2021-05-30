@@ -12,17 +12,20 @@ _.ExpansionFeatures =
 				1700,	-- Sinfall Depths
 			},
 			["g"] = {
-				n(-902, sharedData({["customCollect"] = { "SL_COV_VEN" } },{	-- Renown - Venthyr
-					i(182332, {	-- Gravestone Battle Gargon (MOUNT!)
-						["description"] = "Requires Renown 39.",
+				n(-902, {	-- Renown
+					["description"] = "These are rewards automatically granted by reaching a specific level of Renown.",
+					["g"] = bubbleDown( { ["customCollect"] = "SL_COV_VEN" }, {	-- Venthyr
+						i(182332, {	-- Gravestone Battle Gargon (MOUNT!)
+							["description"] = "Requires Renown 39.",
+						}),
+						title(429, {	-- Count
+							["description"] = "Requires Renown 40.",
+						}),
+						title(430, {	-- Countess
+							["description"] = "Requires Renown 40.",
+						}),
 					}),
-					title(429, {	-- Count
-						["description"] = "Requires Renown 40.",
-					}),
-					title(430, {	-- Countess
-						["description"] = "Requires Renown 40.",
-					}),
-				})),
+				}),
 			},
 		}),
 	}),
