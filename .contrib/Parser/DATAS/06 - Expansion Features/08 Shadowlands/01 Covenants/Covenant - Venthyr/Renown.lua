@@ -12,9 +12,9 @@ _.ExpansionFeatures =
 				1700,	-- Sinfall Depths
 			},
 			["g"] = {
-				n(-902, sharedData({["customCollect"] = { "SL_COV_VEN" } },{	-- Renown - Venthyr
+				n(-902, {	-- Renown
 					["description"] = "These are rewards automatically granted by reaching a specific level of Renown.",
-					["g"] = {
+					["g"] = bubbleDown( { ["customCollect"] = "SL_COV_VEN" }, {	-- Venthyr
 						i(182332,  {	-- Gravestone Battle Gargon (MOUNT!)
 							["description"] = "Requires Renown 39.",
 						}),
@@ -49,8 +49,8 @@ _.ExpansionFeatures =
 						i(186580,  {	-- A Tiny Sinstone
 							["description"] = "Requires Renown 56.",
 						}),
-					},
-				})),
+					}),
+				}),
 			},
 		}),
 	}),

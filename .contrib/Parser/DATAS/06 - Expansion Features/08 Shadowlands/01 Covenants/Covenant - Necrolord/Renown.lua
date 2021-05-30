@@ -9,9 +9,9 @@ _.ExpansionFeatures =
 			["customCollect"] = "SL_COV_NEC",	-- Necrolord
 			["maps"] = { 1698 },	-- Seat of the Primus
 			["g"] = {
-				n(-902, sharedData({["customCollect"] = { "SL_COV_NEC" } },{	-- Renown - Necrolord
+				n(-902, {	-- Renown
 					["description"] = "These are rewards automatically granted by reaching a specific level of Renown.",
-					["g"] = {
+					["g"] = bubbleDown( { ["customCollect"] = "SL_COV_NEC" }, {	-- Necrolord
 						i(181821,  {	-- Armored Plaguerot Tauralus (MOUNT!)
 							["description"] = "Requires 39 Renown.",
 						}),
@@ -44,8 +44,8 @@ _.ExpansionFeatures =
 						i(186524,  {	-- A Tiny Vial of Slime
 							["description"] = "Requires 56 Renown.",
 						}),
-					},
-				})),
+					}),
+				}),
 			},
 		}),
 	}),

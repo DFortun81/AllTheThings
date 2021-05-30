@@ -12,9 +12,9 @@ _.ExpansionFeatures =
 				1708,	-- Elysian Hold
 			},
 			["g"] = {
-				n(-902, sharedData({["customCollect"] = { "SL_COV_KYR" } },{	-- Renown - Kyrian
+				n(-902, {	-- Renown
 					["description"] = "These are rewards automatically granted by reaching a specific level of Renown.",
-					["g"] = {
+					["g"] = bubbleDown( { ["customCollect"] = "SL_COV_KYR" }, {	-- Kyrian
 						i(186482,  {	-- Elysian Aquilon (MOUNT!)
 							["description"] = "Requires Renown 45.",
 						}),
@@ -46,8 +46,8 @@ _.ExpansionFeatures =
 						i(186593,  {	-- A Tiny Pair of Wings
 							["description"] = "Requires Renown 56.",
 						}),
-					},
-				})),
+					}),
+				}),
 			},
 		}),
 	}),

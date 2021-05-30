@@ -13,9 +13,9 @@ _.ExpansionFeatures =
 				1703,	-- Heart of the Forest (The Canopy)
 			},
 			["g"] = {
-				n(-902, sharedData({["customCollect"] = { "SL_COV_NFA" } },{	-- Renown - Night Fae
+				n(-902, {	-- Renown
 					["description"] = "These are rewards automatically granted by reaching a specific level of Renown.",
-					["g"] = {
+					["g"] = bubbleDown( { ["customCollect"] = "SL_COV_NFA" }, {	-- Night Fae
 						i(186493, {	-- Ardenweald Wilderling (MOUNT!)
 							["description"] = "Requires 45 Renown.",
 						}),
@@ -42,8 +42,8 @@ _.ExpansionFeatures =
 						i(186473, {	-- A Tiny Winter Staff
 							["description"] = "Requires 56 Renown.",
 						}),
-					},
-				})),
+					}),
+				}),
 			},
 		}),
 	}),
