@@ -11,13 +11,6 @@ _.Zones =
 					["cr"] = 16906,	-- Unyielding Knight
 					["races"] = HORDE_ONLY,
 				}),
-				i(23339, {	-- Arelion's Journal
-					["coord"] = { 40.1, 37.2, HELLFIRE_PENINSULA },
-					["crs"] = {
-						16903,	-- Blistering Oozeling
-						20158,	-- Slime-Covered Corpse
-					},
-				}),
 				i(23580, {	-- Avruu's Orb
 					["cr"] = 17084,	-- Avruu
 					["coords"] = {
@@ -27,14 +20,14 @@ _.Zones =
 						{ 25.64, 75.25, HELLFIRE_PENINSULA },
 					},
 				}),
-				i(30327, {	-- Bonechewer Blood
-					["crs"] = {
-						19701,	-- Bonechewer Evoker
-						16876,	-- Bonechewer Mutant
-						16925,	-- Bonechewer Raider
-						18952,	-- Bonechewer Scavenger
+				i(31347, {	-- Bleeding Hollow Torch
+					["cr"] = 16907,	-- Bleeding Hollow Peon
+				}),
+				i(31346, {	-- Burning Bleeding Hollow Torch
+					["coord"] = { 69, 69, HELLFIRE_PENINSULA },
+					["cost"] = {
+						{ "i", 31347, 1 },	-- Bleeding Hollow Torch
 					},
-					["races"] = HORDE_ONLY,
 				}),
 				i(29588, {	-- Burning Legion Missive [Alliance]
 					["cr"] = 19298,	-- Warbringer Arix'Amal
@@ -53,13 +46,6 @@ _.Zones =
 						16857,	-- Marauding Crust Burster
 						16968,	-- Tunneler
 					},
-				}),
-				i(23589, {	-- Mag'har Ancestral Beads
-					["crs"] = {
-						16847,	-- Debilitated Mag'har Grunt
-						16846,	-- Mag'har Grunt
-					},
-					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
 		}),

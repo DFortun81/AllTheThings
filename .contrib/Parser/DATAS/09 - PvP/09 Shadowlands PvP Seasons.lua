@@ -260,7 +260,7 @@ _.PVP =
 				}),
 			}),
 			n(-662, {	-- Elite Gear
-				["g"] = bubbleDown({["modID"] = 45, --[[["u"] = 14]] }, {	-- TODO: address unobtainable filter not taking modID into account, so u=14 does not also apply to the regular pvp gear that shares the same itemID
+				["g"] = bubbleDown({["modID"] = 45, --[[["u"] = 12]] }, {	-- TODO: address unobtainable filter not taking modID into account, so u=14 does not also apply to the regular pvp gear that shares the same itemID
 					n(-319, {	-- Weapons
 						n(-939, sharedData({["customCollect"] = { "SL_COV_KYR" }},{	-- Covenant: Kyrian
 							-- These are only available to Kyrian covenant members

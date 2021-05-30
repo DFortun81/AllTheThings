@@ -2502,6 +2502,9 @@ _.PVP =
 								i(42234, {	-- Relentless Gladiator's Chopper
 									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 								}),
+								i(48444, {	-- Relentless Gladiator's Claw. Originally Elite weapon, missing tag however and made available by accident.
+									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
+									}),
 								i(42210, {	-- Relentless Gladiator's Cleaver
 									["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 								}),
@@ -3171,7 +3174,6 @@ _.PVP =
 					n(-319, {	-- Weapons
 						un(REMOVED_FROM_GAME, i(48412)),	-- Relentless Gladiator's Acute Staff
 						un(REMOVED_FROM_GAME, i(49191)),	-- Relentless Gladiator's Blade of Celerity
-						un(REMOVED_FROM_GAME, i(48444)),	-- Relentless Gladiator's Claw (wrong itemtag from blizzard)
 						un(REMOVED_FROM_GAME, i(48406)),	-- Relentless Gladiator's Claymore
 						un(REMOVED_FROM_GAME, i(48414)),	-- Relentless Gladiator's Combat Staff
 						un(REMOVED_FROM_GAME, i(48404)),	-- Relentless Gladiator's Crusher

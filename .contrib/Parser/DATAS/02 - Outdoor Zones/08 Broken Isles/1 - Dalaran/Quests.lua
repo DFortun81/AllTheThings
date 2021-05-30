@@ -450,6 +450,23 @@ _.Zones =
 					["coord"] = { 57.9, 72.6, 629 },
 					["lvl"] = 110,
 				}),
+				q(45843, {	-- Dark Omens
+					["qg"] = 116880,	-- Kor'vas Bloodthorn
+					["sourceQuest"] = 45415,	-- Between Worlds
+					["coords"] = {
+						{ 52.2, 19.6, 627 },
+						{ 85.2, 50.1, HELLFIRE_PENINSULA },
+					},
+					["maps"] = { HELLFIRE_PENINSULA },
+					["classes"] = {
+						DEATHKNIGHT,	-- Blood
+						DEMONHUNTER,	-- Vengeance
+						DRUID,			-- Guardian
+						MONK,			-- Brewmaster
+						PALADIN,		-- Protection
+						WARRIOR,		-- Protection
+					},
+				}),
 				q(42680, {	-- Deciphering the Letter
 					["sourceQuests"] = { 42678 },	-- Black Rook Hold: Into Black Rook Hold
 					["classes"] = { ROGUE },

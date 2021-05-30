@@ -754,6 +754,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 				}),
 			}),
 			d(15, {	-- Heroic
+				n(ACHIEVEMENTS, {
+					ach(14717),	-- Heroic: Castle Nathria
+				}),
 				n(QUESTS, {
 					q(62055, {	-- Castle Nathria: Getting a Head [Heroic]
 						-- TODO: verify if this is locked out/completed by higher difficulty skip
@@ -781,6 +784,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 						crit(1, {	-- Shriekwing
 							["achievementID"] = 14715,	-- Castle Nathria
 						}),
+						crit(1, {	-- Shriekwing
+							["achievementID"] = 14717,	-- Heroic: Castle Nathria
+						}),
 						ach(14293),	-- Blind as a Bat
 						i(182330),	-- Demonic Parole
 						i(182656),	-- Disturb the Peace
@@ -806,6 +812,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 					["g"] = {
 						crit(2, {	-- Huntsman Altimor
 							["achievementID"] = 14715,	-- Castle Nathria
+						}),
+						crit(2, {	-- Huntsman Altimor
+							["achievementID"] = 14717,	-- Heroic: Castle Nathria
 						}),
 						ach(14523),	-- Taking Care of Business
 						i(183470),	-- Born of the Wilds
@@ -836,6 +845,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 						crit(3, {	-- Sun King's Salvation
 							["achievementID"] = 14715,	-- Castle Nathria
 						}),
+						crit(3, {	-- Sun King's Salvation
+							["achievementID"] = 14717,	-- Heroic: Castle Nathria
+						}),
 						ach(14608),	-- Burning Bright
 						i(183893),	-- Abominable Anima Spherule
 						i(180844),	-- Brutal Vitality
@@ -862,6 +874,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 						crit(4, {	-- Artificer Xy'mox
 							["achievementID"] = 14715,	-- Castle Nathria
 						}),
+						crit(4, {	-- Artificer Xy'mox
+							["achievementID"] = 14717,	-- Heroic: Castle Nathria
+						}),
 						ach(14617),	-- Private Stock
 						i(182460),	-- Accrued Vitality
 						i(183888),	-- Apogee Anima Bead
@@ -885,6 +900,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 					["g"] = {
 						crit(5, {	-- Hungering Destroyer
 							["achievementID"] = 14715,	-- Castle Nathria
+						}),
+						crit(5, {	-- Hungering Destroyer
+							["achievementID"] = 14717,	-- Heroic: Castle Nathria
 						}),
 						ach(14376),	-- Feed the Beast
 						i(183498),	-- Cloaked in Shadows
@@ -911,6 +929,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 					["g"] = {
 						crit(6, {	-- Lady Inerva Darkvein
 							["achievementID"] = 14715,	-- Castle Nathria
+						}),
+						crit(6, {	-- Lady Inerva Darkvein
+							["achievementID"] = 14717,	-- Heroic: Castle Nathria
 						}),
 						ach(14524),	-- I Don't Know What I Expected
 						i(182336),	-- Golden Path
@@ -946,6 +967,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 						crit(7, {	-- The Council of Blood
 							["achievementID"] = 14715,	-- Castle Nathria
 						}),
+						crit(7, {	-- The Council of Blood
+							["achievementID"] = 14717,	-- Heroic: Castle Nathria
+						}),
 						ach(14619),	-- Pour Decision Making
 						i(181834),	-- Chilled Resilience
 						i(182470),	-- Demonic Momentum
@@ -977,6 +1001,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 					["g"] = {
 						crit(8, {	-- Sludgefist
 							["achievementID"] = 14715,	-- Castle Nathria
+						}),
+						crit(8, {	-- Sludgefist
+							["achievementID"] = 14717,	-- Heroic: Castle Nathria
 						}),
 						ach(14294),	-- Dirtflap's Revenge
 						i(181707),	-- Diverted Energy
@@ -1013,6 +1040,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 					["g"] = {
 						crit(9, {	-- Stone Legion Generals
 							["achievementID"] = 14715,	-- Castle Nathria
+						}),
+						crit(9, {	-- Stone Legion Generals
+							["achievementID"] = 14717,	-- Heroic: Castle Nathria
 						}),
 						ach(14525),	-- Feed Me, Seymour!
 						i(183895, {	-- Apogee Anima Bead
@@ -1061,6 +1091,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 					["g"] = {
 						crit(10, {	-- Sire Denathrius
 							["achievementID"] = 14715,	-- Castle Nathria
+						}),
+						crit(10, {	-- Sire Denathrius
+							["achievementID"] = 14717,	-- Heroic: Castle Nathria
 						}),
 						ach(14460),	-- Ahead of the Curve: Sire Denathrius
 						ach(14610),	-- Clear Conscience
@@ -1119,6 +1152,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 				}),
 			}),
 			d(16, {	-- Mythic
+				n(ACHIEVEMENTS, {
+					ach(14718),	-- Mythic: Castle Nathria
+				}),
 				n(QUESTS, {
 					q(62056, {	-- Castle Nathria: Getting a Head [Mythic]
 						["provider"] = { "n", 172653 },	-- General Draven
@@ -1141,6 +1177,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 					["g"] = {
 						crit(1, {	-- Shriekwing
 							["achievementID"] = 14715,	-- Castle Nathria
+						}),
+						crit(1, {	-- Shriekwing
+							["achievementID"] = 14717,	-- Heroic: Castle Nathria
 						}),
 						ach(14356),	-- Mythic: Shriekwing
 						ach(14293),	-- Blind as a Bat
@@ -1168,6 +1207,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 					["g"] = {
 						crit(2, {	-- Huntsman Altimor
 							["achievementID"] = 14715,	-- Castle Nathria
+						}),
+						crit(2, {	-- Huntsman Altimor
+							["achievementID"] = 14717,	-- Heroic: Castle Nathria
 						}),
 						ach(14357),	-- Mythic: Huntsman Altimor
 						ach(14523),	-- Taking Care of Business
@@ -1199,6 +1241,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 						crit(3, {	-- Sun King's Salvation
 							["achievementID"] = 14715,	-- Castle Nathria
 						}),
+						crit(3, {	-- Sun King's Salvation
+							["achievementID"] = 14717,	-- Heroic: Castle Nathria
+						}),
 						ach(14360),	-- Mythic: Sun King's Salvation
 						ach(14608),	-- Burning Bright
 						i(183893),	-- Abominable Anima Spherule
@@ -1226,6 +1271,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 						crit(4, {	-- Artificer Xy'mox
 							["achievementID"] = 14715,	-- Castle Nathria
 						}),
+						crit(4, {	-- Artificer Xy'mox
+							["achievementID"] = 14717,	-- Heroic: Castle Nathria
+						}),
 						ach(14359),	-- Mythic: Artificer Xy'mox
 						ach(14617),	-- Private Stock
 						i(182460),	-- Accrued Vitality
@@ -1250,6 +1298,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 					["g"] = {
 						crit(5, {	-- Hungering Destroyer
 							["achievementID"] = 14715,	-- Castle Nathria
+						}),
+						crit(5, {	-- Hungering Destroyer
+							["achievementID"] = 14717,	-- Heroic: Castle Nathria
 						}),
 						ach(14358),	-- Mythic: Hungering Destroyer
 						ach(14376),	-- Feed the Beast
@@ -1277,6 +1328,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 					["g"] = {
 						crit(6, {	-- Lady Inerva Darkvein
 							["achievementID"] = 14715,	-- Castle Nathria
+						}),
+						crit(6, {	-- Lady Inerva Darkvein
+							["achievementID"] = 14717,	-- Heroic: Castle Nathria
 						}),
 						ach(14361),	-- Mythic: Lady Inerva Darkvein
 						ach(14524),	-- I Don't Know What I Expected
@@ -1313,6 +1367,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 						crit(7, {	-- The Council of Blood
 							["achievementID"] = 14715,	-- Castle Nathria
 						}),
+						crit(7, {	-- The Council of Blood
+							["achievementID"] = 14717,	-- Heroic: Castle Nathria
+						}),
 						ach(14362),	-- Mythic: The Council of Blood
 						ach(14619),	-- Pour Decision Making
 						i(181834),	-- Chilled Resilience
@@ -1345,6 +1402,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 					["g"] = {
 						crit(8, {	-- Sludgefist
 							["achievementID"] = 14715,	-- Castle Nathria
+						}),
+						crit(8, {	-- Sludgefist
+							["achievementID"] = 14717,	-- Heroic: Castle Nathria
 						}),
 						ach(14363),	-- Mythic: Sludgefist
 						ach(14294),	-- Dirtflap's Revenge
@@ -1382,6 +1442,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 					["g"] = {
 						crit(9, {	-- Stone Legion Generals
 							["achievementID"] = 14715,	-- Castle Nathria
+						}),
+						crit(9, {	-- Stone Legion Generals
+							["achievementID"] = 14717,	-- Heroic: Castle Nathria
 						}),
 						ach(14364),	-- Mythic: Stone Legion Generals
 						ach(14525),	-- Feed Me, Seymour!
@@ -1431,6 +1494,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 					["g"] = {
 						crit(10, {	-- Sire Denathrius
 							["achievementID"] = 14715,	-- Castle Nathria
+						}),
+						crit(10, {	-- Sire Denathrius
+							["achievementID"] = 14717,	-- Heroic: Castle Nathria
 						}),
 						ach(14461),	-- Cutting Edge: Sire Denathrius
 						ach(14460),	-- Ahead of the Curve: Sire Denathrius

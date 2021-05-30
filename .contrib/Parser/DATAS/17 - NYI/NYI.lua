@@ -520,7 +520,6 @@ _.NeverImplemented =
 			i(23433),	-- Blood Robes
 			i(23434),	-- Robes of the Shard
 			i(25793),	-- Curate's Footwraps
-			i(25970),	-- Shalassi Oracle's Sandals (removed in beta)
 			i(26015),	-- Anchorite Neophyte's Cuffs
 			i(27720),	-- Robes of the Aldor
 			i(30287),	-- Mantle of Arcane Mastery
@@ -745,6 +744,11 @@ _.NeverImplemented =
 			i(159175),	-- Mistfall Belt
 			i(159180),	-- Mistfall Legguards
 			i(159178),	-- Mistfall Boots
+			i(60585),	-- Vicious Gladiator's Armwraps of Dominance
+			i(60608),	-- Vicious Gladiator's Armwraps of Dominance
+			i(60588),	-- Vicious Gladiator's Armwraps of Triumph
+			i(60597),	-- Vicious Gladiator's Armwraps of Triumph
+			i(60598),	-- Vicious Gladiator's Armwraps of Triumph
 			i(166946),	-- Dread Gladiator's Leather Tunic
 			i(166947),	-- Dread Gladiator's Leather Boots
 			i(166948),	-- Dread Gladiator's Leather Gloves
@@ -1180,6 +1184,9 @@ _.NeverImplemented =
 			i(179859),	-- Ardenweald Covenant Mail Hand
 			i(179860),	-- Ardenweald Covenant Mail Feet
 			i(179861),	-- Ardenweald Covenant Mail Chest
+			i(60584),	-- Vicious Gladiator's Boots of Dominance
+			i(60610),	-- Vicious Gladiator's Boots of Dominance
+			i(60590),	-- Vicious Gladiator's Boots of Triumph
 			i(166954),	-- Dread Gladiator's Chain Armor
 			i(166955),	-- Dread Gladiator's Chain Sabatons
 			i(166956),	-- Dread Gladiator's Chain Gauntlets
@@ -1759,6 +1766,9 @@ _.NeverImplemented =
 			i(165261),	-- Unknown Cloak
 			i(134699),	-- Enveloping Drape
 			i(134609),	-- Scorching Cape
+			i(60782),	-- Vicious Gladiator's Cloak of Conquest
+			i(60784),	-- Vicious Gladiator's Cloak of Dominance
+			i(60785),	-- Vicious Gladiator's Cloak of Dominance
 			i(179615),	-- Oribos Quest Mail Cloak
 			i(179621),	-- Ardenweald Covenant Mail Cloak
 			i(179630),	-- Ardenweald Covenant Mail Cloak
@@ -1935,6 +1945,7 @@ _.NeverImplemented =
 			i(81051),	-- Scavenger's locket
 			i(81052),	-- Scavenger's amulet
 			i(81053),	-- Scavenger's pendant
+			i(60666), 	-- Vicious Gladiator's Pendant of Conquest
 			i(108812),	-- Unknown
 			i(108818),	-- Unknown
 			i(108819),	-- Unknown
@@ -2265,6 +2276,16 @@ _.NeverImplemented =
 		i(169154),	-- ph nzoth cache
 		i(170501),	-- ph mogu cache
 		i(172381),	-- ph objective 2
+		i(146483),	-- Ensemble: Elite Ruthless Gladiator's Dreadplate Armor
+		i(146481),	-- Ensemble: Elite Ruthless Gladiator's Dragonhide Armor
+		i(146479),	-- Ensemble: Elite Ruthless Gladiator's Chain Armor
+		i(146497),	-- Ensemble: Elite Ruthless Gladiator's Silk Armor
+		i(146495),	-- Ensemble: Elite Ruthless Gladiator's Scaled Armor
+		i(146493),	-- Ensemble: Elite Ruthless Gladiator's Satin Armor
+		i(146487),	-- Ensemble: Elite Ruthless Gladiator's Leather Armor
+		i(146491),	-- Ensemble: Elite Ruthless Gladiator's Ringmail Armor
+		i(146485),	-- Ensemble: Elite Ruthless Gladiator's Felweave Armor
+		i(146489),	-- Ensemble: Elite Ruthless Gladiator's Plate Armor
 		i(169178),	-- Blueprint: TK33(DNT))
 		i(169179),	-- Blueprint: TK34(DNT))
 		i(169180),	-- Blueprint: TK35(DNT))
@@ -4414,6 +4435,9 @@ _.NeverImplemented =
 		--
 		i(159538),	-- Coldscale Cudgel
 		i(159498),	-- Coldscale Pistol
+		i(111076),	-- Primal Gladiator's Staff (H), none elite
+		i(115603),	-- Primal Gladiator's Staff (A), none elite
+		i(115854),	-- Primal Gladiator's Staff
 		i(159586),	-- Coralshell Blade
 		i(159559),	-- Coralshell Halberd
 		i(159513),	-- Deepwarden Fangs
@@ -4490,7 +4514,6 @@ _.NeverImplemented =
 		i(81320),	-- Right-Handed Invis Knuckles
 		i(84893),	-- Malevolent Gladiator's Fleshslicer
 		i(84894),	-- Malevolent Gladiator's Slasher
-		i(70209),	-- Ruthless Gladiator's Reprieve
 		i(23420),	-- Engraved Axe
 		i(23422),	-- Engraved Dagger
 		i(20522),	-- Feral Staff

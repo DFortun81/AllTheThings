@@ -12,11 +12,9 @@ _.Zones =
 				i(24158, {  -- Design: Khorium Band of Shadows
 					["crs"] = { 19826 },  -- Dark Conclave Shadowmancer
 				}),
-				n(19796, {	-- Eclipsion Archmage
-					i(28276, {	-- Formula: Enchant Cloak - Greater Arcane Resistance
-						["spellID"] = 0,
-						["u"] = REMOVED_FROM_GAME,
-					}),
+				i(28276, {	-- Formula: Enchant Cloak - Greater Arcane Resistance
+					["timeline"] = { "removed 5.0.4.10000" },
+					["cr"] = 19796,	-- Eclipsion Archmage
 				}),
 				i(23609, {	-- Plans: Khorium Pants
 					["crs"] = { 20878 },	-- Deathforge Guardian
@@ -34,6 +32,20 @@ _.Zones =
 						21061,	-- Enraged Fire Spirit
 						21059,	-- Enraged Water Spirit
 					},
+				}),
+				i(31239, {	-- Primed Key Mold
+					["coord"] = { 67.6, 36.2, SHADOWMOON_VALLEY },
+					["timeline"] = { "removed 4.0.3.14732" },
+					["cr"] = 22037,	-- Smith Gorlunk
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(68, 10, 68),
+				}),
+				i(31241, {	-- Primed Key Mold
+					["coord"] = { 67.6, 36.2, SHADOWMOON_VALLEY },
+					["timeline"] = { "removed 4.0.3.14732" },
+					["cr"] = 22037,	-- Smith Gorlunk
+					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(68, 10, 68),
 				}),
 				i(31682, {	-- Recipe: Fel Mana Potion
 					["crs"] = {
@@ -67,6 +79,13 @@ _.Zones =
 				}),
 				i(23806, {	-- Schematic: Hyper-Vision Goggles
 					["crs"] = { 19755 },	-- Mo'arg Weaponsmith
+				}),
+				i(32724, {	-- Sludge-Covered Object (The Great Murkblood Revolt)
+					["coord"] = { 65.3, 89.9, SHADOWMOON_VALLEY },
+					["cr"] = 23286,	-- Black Blood of Draenor
+					["groups"] = {
+						i(32726),	-- Murkblood Escape Plans
+					},
 				}),
 				o(240622, {	-- Warden's Scroll Case
 					["description"] = "Loot the Warden's Scroll Case inside the Warden's Cage (underground).",

@@ -8,6 +8,7 @@ _.Zones =
 			n(VENDORS, {
 				n(19521, {	-- Arrond <Tailoring Supplies>
 					["coord"] = { 55.8, 58.2, SHADOWMOON_VALLEY },
+					["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 					["groups"] = {
 						i(21900, { 	-- Pattern: Imbued Netherweave Robe
 							["isLimited"] = true,
@@ -78,6 +79,7 @@ _.Zones =
 				}),
 				n(19526, {	-- Dunaman <Weapons Vendor>
 					["coord"] = { 63.2, 30.6, SHADOWMOON_VALLEY },
+					["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 					["groups"] = {
 						i(30755, {	-- Mag'hari Fighting Claw
 							["isLimited"] = true,

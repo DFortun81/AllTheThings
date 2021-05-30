@@ -10,13 +10,11 @@ _.Zones =
 					["cr"] = 19581,	-- Maddix <Flight Master>
 					["coord"] = { 63.2, 30.4, SHADOWMOON_VALLEY },
 					["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
-					["OnUpdate"] = [[_.OnUpdateReputationRequired]],
 				}),
 				fp(159, {	-- Sanctum of the Stars, Shadowmoon Valley
 					["cr"] = 21766,	-- Alieshor <Flight Master>
 					["coord"] = { 56.2, 57.8, SHADOWMOON_VALLEY },
 					["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
-					["OnUpdate"] = [[_.OnUpdateReputationRequired]],
 				}),
 				fp(123, {	-- Shadowmoon Village, Shadowmoon Valley
 					["cr"] = 19317,	-- Drek'Gol <Wind Rider Master>

@@ -665,6 +665,9 @@ namespace ATT
 
                 // Tailoring Skills
                 {197, 197},	    // Tailoring [7.3.5]
+                {26801, 26801},  // Shadoweave Tailoring
+                {26797, 26797},  // Spellfire Tailoring
+                {26798, 26798},  // Mooncloth Tailoring
                 {2540, 197},	// Classic Tailoring [8.0.1]
                 {2539, 197},	// Outland Tailoring [8.0.1]
                 {2538, 197},	// Northrend Tailoring [8.0.1]

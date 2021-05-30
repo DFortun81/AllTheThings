@@ -815,9 +815,7 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(126878)),	-- Warmongering Gladiator's mageblade
 							un(REMOVED_FROM_GAME, i(126882)),	-- Warmongering Gladiator's Slicer
 							-- Staff
-							un(REMOVED_FROM_GAME, i(115603)),	-- Primal Gladiator's Staff (A), none elite
 							un(REMOVED_FROM_GAME, i(115833)),	-- Primal Gladiator's Battle Staff
-							un(REMOVED_FROM_GAME, i(115854)),	-- Primal Gladiator's Staff
 							un(REMOVED_FROM_GAME, i(115865)),	-- Primal Gladiator's Energy Staff
 							un(REMOVED_FROM_GAME, i(125647)),	-- Wild Gladiator's Battle Staff
 							un(REMOVED_FROM_GAME, i(125668)),	-- Wild Gladiator's Staff
@@ -1382,9 +1380,7 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(126878)),	-- Warmongering Gladiator's mageblade
 							un(REMOVED_FROM_GAME, i(126882)),	-- Warmongering Gladiator's Slicer
 							-- Staff
-							un(REMOVED_FROM_GAME, i(111076)),	-- Primal Gladiator's Staff (H), none elite
 							un(REMOVED_FROM_GAME, i(115833)),	-- Primal Gladiator's Battle Staff
-							un(REMOVED_FROM_GAME, i(115854)),	-- Primal Gladiator's Staff
 							un(REMOVED_FROM_GAME, i(115865)),	-- Primal Gladiator's Energy Staff
 							un(REMOVED_FROM_GAME, i(125647)),	-- Wild Gladiator's Battle Staff
 							un(REMOVED_FROM_GAME, i(125668)),	-- Wild Gladiator's Staff

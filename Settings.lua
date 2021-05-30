@@ -574,6 +574,7 @@ settings.UpdateMode = function(self, doRefresh)
 		app.ClassRequirementFilter = app.NoFilter;
 		app.RaceRequirementFilter = app.NoFilter;
 		app.RequiredSkillFilter = app.NoFilter;
+		app.RequireFactionFilter = app.NoFilter;
 
 		app.AccountWideAchievements = true;
 		app.AccountWideAzeriteEssences = true;
@@ -667,6 +668,7 @@ settings.UpdateMode = function(self, doRefresh)
 			app.ItemTypeFilter = app.NoFilter;
 			app.ClassRequirementFilter = app.NoFilter;
 			app.RequiredSkillFilter = app.NoFilter;
+			app.RequireFactionFilter = app.NoFilter;
 			app.MODE_ACCOUNT = true;
 			if self:Get("FactionMode") then
 				app.RaceRequirementFilter = app.FilterItemClass_RequireRacesCurrentFaction;
@@ -678,6 +680,7 @@ settings.UpdateMode = function(self, doRefresh)
 			app.ClassRequirementFilter = app.FilterItemClass_RequireClasses;
 			app.RaceRequirementFilter = app.FilterItemClass_RequireRaces;
 			app.RequiredSkillFilter = app.FilterItemClass_RequiredSkill;
+			app.RequireFactionFilter = app.FilterItemClass_RequireFaction;
 
 			app.MODE_ACCOUNT = nil;
 		end
