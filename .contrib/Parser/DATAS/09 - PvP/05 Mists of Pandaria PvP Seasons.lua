@@ -7360,7 +7360,219 @@ _.PVP =
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
 							}),
-
+							cl(HUNTER, {
+								i(138645, {	-- Ensemble: Prideful Gladiator's Chain Armor
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_ensemble", -9979, -678, -9914, -661, 3 },
+										{"select", "itemID", 102753 },	-- Prideful Gladiator's Wristguards of Accuracy
+										{"select", "itemID", 102688 },	-- Prideful Gladiator's Wristguards of Alacrity
+										{"select", "itemID", 102645 },	-- Prideful Gladiator's Links of Accuracy
+										{"select", "itemID", 102617 },	-- Prideful Gladiator's Links of Cruelty
+										{"select", "itemID", 102646 },	-- Prideful Gladiator's Sabatons of Alacrity
+										{"select", "itemID", 102729 },	-- Prideful Gladiator's Sabatons of Cruelty
+										{"exclude", "itemID", 138645 },	-- Exclude itself to stop duplicating 
+									},
+								}),	
+								i(102689, {	-- Prideful Gladiator's Chain Armor
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(102737, {	-- Prideful Gladiator's Chain Gauntlets
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(102690, {	-- Prideful Gladiator's Chain Helm
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(102670, {	-- Prideful Gladiator's Chain Leggings
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(102734, {	-- Prideful Gladiator's Chain Spaulders
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+							}),
+							cl(MAGE, {
+								i(138653, {	-- Ensemble: Prideful Gladiator's Silk Armor
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_ensemble", -10041, -678, -9914, -661, 8 },
+										{"select", "itemID", 102733 },	-- Prideful Gladiator's Cuffs of Prowess
+										{"select", "itemID", 102684 },	-- Prideful Gladiator's Cord of Cruelty
+										{"select", "itemID", 102686 },	-- Prideful Gladiator's Treads of Cruelty
+										{"exclude", "itemID", 138653 },	-- Exclude itself to stop duplicating 
+									},
+								}),
+								i(102673, {	-- Prideful Gladiator's Silk Amice
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(102667, {	-- Prideful Gladiator's Silk Cowl
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(102735, {	-- Prideful Gladiator's Silk Handguards
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(102715, {	-- Prideful Gladiator's Silk Robe
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(102648, {	-- Prideful Gladiator's Silk Trousers
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+							}),	
+							cl(MONK, {
+								i(138649, {	-- Ensemble: Prideful Gladiator's Ironskin Armor
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_ensemble", -10041, -678, -9914, -661, 10 },
+										{"select", "itemID", 102711 },	-- Prideful Gladiator's Armwraps of Accuracy
+										{"select", "itemID", 102647 },	-- Prideful Gladiator's Waistband of Cruelty
+										{"select", "itemID", 102716 },	-- Prideful Gladiator's Boots of Alacrity
+										{"exclude", "itemID", 138649 },	-- Exclude itself to stop duplicating 
+									},
+								}),
+								i(102627, {	-- Prideful Gladiator's Copperskin Gloves
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(102628, {	-- Prideful Gladiator's Copperskin Helm
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(102762, {	-- Prideful Gladiator's Copperskin Legguards
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(102777, {	-- Prideful Gladiator's Copperskin Spaulders
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(102763, {	-- Prideful Gladiator's Copperskin Tunic
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(102675, {	-- Prideful Gladiator's Ironskin Gloves
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(102712, {	-- Prideful Gladiator's Ironskin Helm
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(102656, {	-- Prideful Gladiator's Ironskin Legguards
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(102626, {	-- Prideful Gladiator's Ironskin Spaulders
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(102720, {	-- Prideful Gladiator's Ironskin Tunic
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+							}),
+							cl(PALADIN, {
+								i(138641, {	-- Ensemble: Prideful Gladiator's Scaled Armor
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_ensemble", -10041, -678, -9914, -661, 2 },
+										{"select", "itemID", 102765 },	-- Prideful Gladiator's Bracers of Meditation
+										{"select", "itemID", 102695 },	-- Prideful Gladiator's Bracers of Prowess
+										{"select", "itemID", 102764 },	-- Prideful Gladiator's Clasp of Cruelty
+										{"select", "itemID", 102748 },	-- Prideful Gladiator's Clasp of Meditation
+										{"select", "itemID", 102638 },	-- Prideful Gladiator's Greaves of Alacrity
+										{"select", "itemID", 102639 },	-- Prideful Gladiator's Greaves of Meditation
+										{"exclude", "itemID", 138641 },	-- Exclude itself to stop duplicating 
+									},
+								}),
+								i(102632, {	-- Prideful Gladiator's Ornamented Chestguard
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(102722, {	-- Prideful Gladiator's Ornamented Gloves
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(102635, {	-- Prideful Gladiator's Ornamented Headcover
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(102768, {	-- Prideful Gladiator's Ornamented Legplates
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(102697, {	-- Prideful Gladiator's Ornamented Spaulders
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(102747, {	-- Prideful Gladiator's Scaled Chestpiece
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(102630, {	-- Prideful Gladiator's Scaled Gauntlets
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(102779, {	-- Prideful Gladiator's Scaled Helm
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(102780, {	-- Prideful Gladiator's Scaled Legguards
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(102744, {	-- Prideful Gladiator's Scaled Shoulders
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+							}),
+							cl(PRIEST, {
+								i(138655, {	-- Ensemble: Prideful Gladiator's Satin Armor
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_ensemble", -10041, -678, -9914, -661, 5 },
+										{"select", "itemID", 102666 },	-- Prideful Gladiator's Cuffs of Meditation
+										{"select", "itemID", 102709 },	-- Prideful Gladiator's Cord of Meditation
+										{"select", "itemID", 102752 },	-- Prideful Gladiator's Treads of Meditation
+										{"exclude", "itemID", 138655 },	-- Exclude itself to stop duplicating 
+									},
+								}),
+								i(102615, {	-- Prideful Gladiator's Mooncloth Gloves
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(102703, {	-- Prideful Gladiator's Mooncloth Helm
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(102704, {	-- Prideful Gladiator's Mooncloth Leggings
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(102750, {	-- Prideful Gladiator's Mooncloth Mantle
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(102681, {	-- Prideful Gladiator's Mooncloth Robe
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(102707, {	-- Prideful Gladiator's Satin Gloves
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(102751, {	-- Prideful Gladiator's Satin Hood
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(102621, {	-- Prideful Gladiator's Satin Leggings
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(102671, {	-- Prideful Gladiator's Satin Mantle
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(102622, {	-- Prideful Gladiator's Satin Robe
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+							}),
+							cl(ROGUE, {
+								i(138651, {	-- Ensemble: Prideful Gladiator's Leather Armor
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_ensemble", -10041, -678, -9914, -661, 4 },
+										{"select", "itemID", 102754 },	-- Prideful Gladiator's Armwraps of Alacrity
+										{"select", "itemID", 102708 },	-- Prideful Gladiator's Waistband of Accuracy
+										{"select", "itemID", 102660 },	-- Prideful Gladiator's Boots of Cruelty
+										{"exclude", "itemID", 138651 },	-- Exclude itself to stop duplicating 
+									},
+								}),
+								i(102727, {	-- Prideful Gladiator's Leather Gloves
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(102731, {	-- Prideful Gladiator's Leather Helm
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(102730, {	-- Prideful Gladiator's Leather Legguards
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(102710, {	-- Prideful Gladiator's Leather Spaulders
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(102663, {	-- Prideful Gladiator's Leather Tunic
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+							}),
 							
 							n(-322, {	-- Back
 								-- From Celestials/Vendor
@@ -7751,6 +7963,220 @@ _.PVP =
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
 							}),
+							cl(HUNTER, {
+								i(138646, {	-- Ensemble: Prideful Gladiator's Chain Armor
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_ensemble", -9979, -678, -9913, -661, 3 },
+										{"select", "itemID", 103415 },	-- Prideful Gladiator's Wristguards of Accuracy
+										{"select", "itemID", 103414 },	-- Prideful Gladiator's Wristguards of Alacrity
+										{"select", "itemID", 103411 },	-- Prideful Gladiator's Links of Accuracy
+										{"select", "itemID", 103410 },	-- Prideful Gladiator's Links of Cruelty
+										{"select", "itemID", 103413 },	-- Prideful Gladiator's Sabatons of Alacrity
+										{"select", "itemID", 103412 },	-- Prideful Gladiator's Sabatons of Cruelty
+										{"exclude", "itemID", 138646 },	-- Exclude itself to stop duplicating 
+									},
+								}),	
+								i(103416, {	-- Prideful Gladiator's Chain Armor
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(103417, {	-- Prideful Gladiator's Chain Gauntlets
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(103418, {	-- Prideful Gladiator's Chain Helm
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(103419	, {	-- Prideful Gladiator's Chain Leggings
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(103420, {	-- Prideful Gladiator's Chain Spaulders
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+							}),
+							cl(MAGE, {
+								i(138654, {	-- Ensemble: Prideful Gladiator's Silk Armor
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_ensemble", -10041, -678, -9913, -661, 8 },
+										{"select", "itemID", 103358 },	-- Prideful Gladiator's Cuffs of Prowess
+										{"select", "itemID", 103351 },	-- Prideful Gladiator's Cord of Cruelty
+										{"select", "itemID", 103354 },	-- Prideful Gladiator's Treads of Cruelty
+										{"exclude", "itemID", 138654 },	-- Exclude itself to stop duplicating 
+									},
+								}),
+								i(103425, {	-- Prideful Gladiator's Silk Amice
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(103422, {	-- Prideful Gladiator's Silk Cowl
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(103421, {	-- Prideful Gladiator's Silk Handguards
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(103424, {	-- Prideful Gladiator's Silk Robe
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(103423, {	-- Prideful Gladiator's Silk Trousers
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+							}),	
+							cl(MONK, {
+								i(138650, {	-- Ensemble: Prideful Gladiator's Ironskin Armor
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_ensemble", -10041, -678, -9913, -661, 10 },
+										{"select", "itemID", 103428 },	-- Prideful Gladiator's Armwraps of Accuracy
+										{"select", "itemID", 103426 },	-- Prideful Gladiator's Waistband of Cruelty
+										{"select", "itemID", 103427 },	-- Prideful Gladiator's Boots of Alacrity
+										{"exclude", "itemID", 138650 },	-- Exclude itself to stop duplicating 
+									},
+								}),
+								i(103434, {	-- Prideful Gladiator's Copperskin Gloves
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(103435, {	-- Prideful Gladiator's Copperskin Helm
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(103436, {	-- Prideful Gladiator's Copperskin Legguards
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(103437, {	-- Prideful Gladiator's Copperskin Spaulders
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(103438, {	-- Prideful Gladiator's Copperskin Tunic
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(103429, {	-- Prideful Gladiator's Ironskin Gloves
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(103430, {	-- Prideful Gladiator's Ironskin Helm
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(103431, {	-- Prideful Gladiator's Ironskin Legguards
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(103432, {	-- Prideful Gladiator's Ironskin Spaulders
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(103433, {	-- Prideful Gladiator's Ironskin Tunic
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+							}),
+							cl(PALADIN, {
+								i(138642, {	-- Ensemble: Prideful Gladiator's Scaled Armor
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_ensemble", -10041, -678, -9913, -661, 2 },
+										{"select", "itemID", 103449 },	-- Prideful Gladiator's Bracers of Meditation
+										{"select", "itemID", 103448 },	-- Prideful Gladiator's Bracers of Prowess
+										{"select", "itemID", 103444 },	-- Prideful Gladiator's Clasp of Cruelty
+										{"select", "itemID", 103445 },	-- Prideful Gladiator's Clasp of Meditation
+										{"select", "itemID", 103446 },	-- Prideful Gladiator's Greaves of Alacrity
+										{"select", "itemID", 103447 },	-- Prideful Gladiator's Greaves of Meditation
+										{"exclude", "itemID", 138642 },	-- Exclude itself to stop duplicating 
+									},
+								}),
+								i(103450, {	-- Prideful Gladiator's Ornamented Chestguard
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(103451, {	-- Prideful Gladiator's Ornamented Gloves
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(103452, {	-- Prideful Gladiator's Ornamented Headcover
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(103453, {	-- Prideful Gladiator's Ornamented Legplates
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(103454, {	-- Prideful Gladiator's Ornamented Spaulders
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(103439, {	-- Prideful Gladiator's Scaled Chestpiece
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(103440, {	-- Prideful Gladiator's Scaled Gauntlets
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(103441, {	-- Prideful Gladiator's Scaled Helm
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(103442, {	-- Prideful Gladiator's Scaled Legguards
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(103443, {	-- Prideful Gladiator's Scaled Shoulders
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+							}),
+							cl(PRIEST, {
+								i(138656, {	-- Ensemble: Prideful Gladiator's Satin Armor
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_ensemble", -10041, -678, -9913, -661, 5 },
+										{"select", "itemID", 103359 },	-- Prideful Gladiator's Cuffs of Meditation
+										{"select", "itemID", 103353 },	-- Prideful Gladiator's Cord of Meditation
+										{"select", "itemID", 147362 },	-- Prideful Gladiator's Cord of Prowess
+										{"select", "itemID", 103356 },	-- Prideful Gladiator's Treads of Meditation
+										{"exclude", "itemID", 138656 },	-- Exclude itself to stop duplicating 
+									},
+								}),
+								i(103462, {	-- Prideful Gladiator's Mooncloth Gloves
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(103463, {	-- Prideful Gladiator's Mooncloth Helm
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(103464, {	-- Prideful Gladiator's Mooncloth Leggings
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(103466, {	-- Prideful Gladiator's Mooncloth Mantle
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(103465, {	-- Prideful Gladiator's Mooncloth Robe
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(103467, {	-- Prideful Gladiator's Satin Gloves
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(103468, {	-- Prideful Gladiator's Satin Hood
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(103469, {	-- Prideful Gladiator's Satin Leggings
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(103471, {	-- Prideful Gladiator's Satin Mantle
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(103470, {	-- Prideful Gladiator's Satin Robe
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+							}),
+							cl(ROGUE, {
+								i(138652, {	-- Ensemble: Prideful Gladiator's Leather Armor
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_set_ensemble", -10041, -678, -9913, -661, 4 },
+										{"select", "itemID", 103428 },	-- Prideful Gladiator's Armwraps of Alacrity
+										{"select", "itemID", 103472 },	-- Prideful Gladiator's Waistband of Accuracy
+										{"select", "itemID", 103473 },	-- Prideful Gladiator's Boots of Cruelty
+										{"exclude", "itemID", 138652 },	-- Exclude itself to stop duplicating 
+									},
+								}),
+								i(103476, {	-- Prideful Gladiator's Leather Gloves
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(103477, {	-- Prideful Gladiator's Leather Helm
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(103478, {	-- Prideful Gladiator's Leather Legguards
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+								i(103479, {	-- Prideful Gladiator's Leather Spaulders
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(103475, {	-- Prideful Gladiator's Leather Tunic
+									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+								}),
+							}),
 							
 							n(-322, {	-- Back
 								-- From Celestials/Vendor
@@ -7872,7 +8298,7 @@ _.PVP =
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
 								-- Vendor added in 7.2 only on horde side
-								i(147362, {	-- Prideful Gladiator's Girdle of Accuracy
+								i(147362, {	-- Prideful Gladiator's Cord of Prowess
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
 							}),
@@ -8025,6 +8451,81 @@ _.PVP =
 						un(REMOVED_FROM_GAME, i(103137)),	-- Prideful Gladiator's Dragonhide Footguards
 						un(REMOVED_FROM_GAME, i(103015)),	-- Prideful Gladiator's Kodohide Footguards
 						un(REMOVED_FROM_GAME, i(103023)),	-- Prideful Gladiator's Wyrmhide Footguards
+					}),
+					cl(HUNTER, {
+						un(REMOVED_FROM_GAME, i(103037)),	-- Prideful Gladiator's Chain Armor
+						un(REMOVED_FROM_GAME, i(103038)),	-- Prideful Gladiator's Chain Gauntlets
+						un(REMOVED_FROM_GAME, i(103039)),	-- Prideful Gladiator's Chain Helm
+						un(REMOVED_FROM_GAME, i(103040)),	-- Prideful Gladiator's Chain Leggings
+						un(REMOVED_FROM_GAME, i(103041)),	-- Prideful Gladiator's Chain Spaulders
+						un(REMOVED_FROM_GAME, i(103033)),	-- Prideful Gladiator's Chain Links
+						un(REMOVED_FROM_GAME, i(103035)),	-- Prideful Gladiator's Chain Sabatons
+					}),
+					cl(MAGE, {
+						un(REMOVED_FROM_GAME, i(103046)),	-- Prideful Gladiator's Silk Amice
+						un(REMOVED_FROM_GAME, i(103043)),	-- Prideful Gladiator's Silk Cowl
+						un(REMOVED_FROM_GAME, i(103042)),	-- Prideful Gladiator's Silk Handguards
+						un(REMOVED_FROM_GAME, i(103045)),	-- Prideful Gladiator's Silk Robe
+						un(REMOVED_FROM_GAME, i(103044)),	-- Prideful Gladiator's Silk Trousers
+						un(REMOVED_FROM_GAME, i(102991)),	-- Prideful Gladiator's Silk Cord
+						un(REMOVED_FROM_GAME, i(102994)),	-- Prideful Gladiator's Silk Treads
+					}),
+					cl(MONK, {
+						un(REMOVED_FROM_GAME, i(103054)),	-- Prideful Gladiator's Copperskin Gloves
+						un(REMOVED_FROM_GAME, i(103055)),	-- Prideful Gladiator's Copperskin Helm
+						un(REMOVED_FROM_GAME, i(103056)),	-- Prideful Gladiator's Copperskin Legguards
+						un(REMOVED_FROM_GAME, i(103057)),	-- Prideful Gladiator's Copperskin Spaulders
+						un(REMOVED_FROM_GAME, i(103058)),	-- Prideful Gladiator's Copperskin Tunic
+						un(REMOVED_FROM_GAME, i(103049)),	-- Prideful Gladiator's Ironskin Gloves
+						un(REMOVED_FROM_GAME, i(103050)),	-- Prideful Gladiator's Ironskin Helm
+						un(REMOVED_FROM_GAME, i(103051)),	-- Prideful Gladiator's Ironskin Legguards
+						un(REMOVED_FROM_GAME, i(103052)),	-- Prideful Gladiator's Ironskin Spaulders
+						un(REMOVED_FROM_GAME, i(103053)),	-- Prideful Gladiator's Ironskin Tunic
+						un(REMOVED_FROM_GAME, i(103134)),	-- Prideful Gladiator's Copperskin Waistband
+						un(REMOVED_FROM_GAME, i(103047)),	-- Prideful Gladiator's Ironskin Waistband
+						un(REMOVED_FROM_GAME, i(103133)),	-- Prideful Gladiator's Copperskin Boots
+						un(REMOVED_FROM_GAME, i(103048)),	-- Prideful Gladiator's Ironskin Boots
+					}),
+					cl(PALADIN, {
+						un(REMOVED_FROM_GAME, i(103068)),	-- Prideful Gladiator's Ornamented Chestguard
+						un(REMOVED_FROM_GAME, i(103069)),	-- Prideful Gladiator's Ornamented Gloves
+						un(REMOVED_FROM_GAME, i(103070)),	-- Prideful Gladiator's Ornamented Headcover
+						un(REMOVED_FROM_GAME, i(103071)),	-- Prideful Gladiator's Ornamented Legplates
+						un(REMOVED_FROM_GAME, i(103072)),	-- Prideful Gladiator's Ornamented Spaulders
+						un(REMOVED_FROM_GAME, i(103059)),	-- Prideful Gladiator's Scaled Chestpiece
+						un(REMOVED_FROM_GAME, i(103060)),	-- Prideful Gladiator's Scaled Gauntlets
+						un(REMOVED_FROM_GAME, i(103061)),	-- Prideful Gladiator's Scaled Helm
+						un(REMOVED_FROM_GAME, i(103062)),	-- Prideful Gladiator's Scaled Legguards
+						un(REMOVED_FROM_GAME, i(103063)),	-- Prideful Gladiator's Scaled Shoulders
+						un(REMOVED_FROM_GAME, i(103065)),	-- Prideful Gladiator's Ornamented Clasp
+						un(REMOVED_FROM_GAME, i(103064)),	-- Prideful Gladiator's Scaled Clasp
+						un(REMOVED_FROM_GAME, i(103066)),	-- Prideful Gladiator's Ornamented Greaves
+						un(REMOVED_FROM_GAME, i(103067)),	-- Prideful Gladiator's Scaled Greaves
+					}),
+					cl(PRIEST, {
+						un(REMOVED_FROM_GAME, i(103078)),	-- Prideful Gladiator's Mooncloth Gloves
+						un(REMOVED_FROM_GAME, i(103079)),	-- Prideful Gladiator's Mooncloth Helm
+						un(REMOVED_FROM_GAME, i(103080)),	-- Prideful Gladiator's Mooncloth Leggings
+						un(REMOVED_FROM_GAME, i(103082)),	-- Prideful Gladiator's Mooncloth Mantle
+						un(REMOVED_FROM_GAME, i(103081)),	-- Prideful Gladiator's Mooncloth Robe
+						un(REMOVED_FROM_GAME, i(103083)),	-- Prideful Gladiator's Satin Gloves
+						un(REMOVED_FROM_GAME, i(103084)),	-- Prideful Gladiator's Satin Hood
+						un(REMOVED_FROM_GAME, i(103085)),	-- Prideful Gladiator's Satin Leggings
+						un(REMOVED_FROM_GAME, i(103087)),	-- Prideful Gladiator's Satin Mantle
+						un(REMOVED_FROM_GAME, i(103086)),	-- Prideful Gladiator's Satin Robe
+						un(REMOVED_FROM_GAME, i(102993)),	-- Prideful Gladiator's Mooncloth Cord
+						un(REMOVED_FROM_GAME, i(103136)),	-- Prideful Gladiator's Satin Cord
+						un(REMOVED_FROM_GAME, i(102996)),	-- Prideful Gladiator's Mooncloth Treads
+						un(REMOVED_FROM_GAME, i(103135)),	-- Prideful Gladiator's Satin Treads
+					}),
+					cl(ROGUE, {
+						un(REMOVED_FROM_GAME, i(103091)),	-- Prideful Gladiator's Leather Gloves
+						un(REMOVED_FROM_GAME, i(103092)),	-- Prideful Gladiator's Leather Helm
+						un(REMOVED_FROM_GAME, i(103093)),	-- Prideful Gladiator's Leather Legguards
+						un(REMOVED_FROM_GAME, i(103094)),	-- Prideful Gladiator's Leather Spaulders
+						un(REMOVED_FROM_GAME, i(103090)),	-- Prideful Gladiator's Leather Tunic
+						un(REMOVED_FROM_GAME, i(103088)),	-- Prideful Gladiator's Leather Waistband
+						un(REMOVED_FROM_GAME, i(103089)),	-- Prideful Gladiator's Leather Leather Boots
 					}),
 					
 					n(-322, {	-- Back
