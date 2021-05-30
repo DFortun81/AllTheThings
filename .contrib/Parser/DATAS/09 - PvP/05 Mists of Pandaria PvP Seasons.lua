@@ -1314,7 +1314,7 @@ _.PVP =
 								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
 							}),
 							i(91660, {	-- Malevolent Gladiator's Pike
-								["cost"] = { { "i", 137642, 5 } }, -- 5x Mark of Honor
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
 							}),
 							i(91448, {	-- Malevolent Gladiator's Pummeler
 								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
@@ -4439,7 +4439,7 @@ _.PVP =
 					}),
 				}),
 			}),
-			n(-677, {	-- Grievous Gladiator: Season 14
+			n(-677, {	-- Grievous Gladiator: Season 14 (Class sets need double checking)
 				n(-9914, {	-- Alliance
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -6849,213 +6849,301 @@ _.PVP =
 					}),
 				}),
 			}),
-			n(-678, {	-- Prideful Gladiator: Season 15
+			n(-678, {	-- Prideful Gladiator: Season 15 (Everything needs double checking) Also look up Bonegrinder,Fleshslicer, Heavy Crossbow, Staff, Shiv, Slasher
 				n(-9914, {	-- Alliance
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						n(-661, {	-- Gladiator PvP Gear
+							n(-319, {	-- Weapons
+								i(144248, {	-- Arsenal: Prideful Gladiator's Weapons (A)
+									["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_weapons_ensemble", -10041, -678, -9914, -661 },
+										{"exclude", "itemID", 144248 },	-- Exclude itself to stop duplicating
+									},
+								}),
+								i(102785, {	-- Prideful Gladiator's Barrier
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(102596, {	-- Prideful Gladiator's Baton of Light
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(102601, {	-- Prideful Gladiator's Battle Staff
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(102609, {	-- Prideful Gladiator's Bonecracker
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(102600, {	-- Prideful Gladiator's Cleaver
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(102610, {	-- Prideful Gladiator's Decapitator
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(102786, {	-- Prideful Gladiator's Endgame
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(102607, {	-- Prideful Gladiator's Energy Staff
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(102590, {	-- Prideful Gladiator's Gavel
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(102599, {	-- Prideful Gladiator's Greatsword
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(102604, {	-- Prideful Gladiator's Hacker
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(102591, {	-- Prideful Gladiator's Longbow
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(102598, {	-- Prideful Gladiator's Mageblade
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(102606, {	-- Prideful Gladiator's Pike
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(102592, {	-- Prideful Gladiator's Pummeler
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(102612, {	-- Prideful Gladiator's Quickblade
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(102782, {	-- Prideful Gladiator's Redoubt
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(102608, {	-- Prideful Gladiator's Render
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(102783, {	-- Prideful Gladiator's Reprieve
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(102597, {	-- Prideful Gladiator's Rifle
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(102603, {	-- Prideful Gladiator's Ripper
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(102602, {	-- Prideful Gladiator's Shanker
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(102784, {	-- Prideful Gladiator's Shield Wall
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(102605, {	-- Prideful Gladiator's Slicer
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(102594, {	-- Prideful Gladiator's Spellblade
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(102593, {	-- Prideful Gladiator's Touch of Defeat
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+							}),	
+							
 							
 							n(-322, {	-- Back
 								-- From Celestials/Vendor
-								i(102705, {	-- Grievous Gladiator's Cape of Cruelty
+								i(102705, {	-- Prideful Gladiator's Cape of Cruelty
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(102642, {	-- Grievous Gladiator's Cape of Prowess
+								i(102642, {	-- Prideful Gladiator's Cape of Prowess
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(102769, {	-- Grievous Gladiator's Cloak of Alacrity
+								i(102769, {	-- Prideful Gladiator's Cloak of Alacrity
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(102770, {	-- Grievous Gladiator's Cloak of Prowess
+								i(102770, {	-- Prideful Gladiator's Cloak of Prowess
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(102669, {	-- Grievous Gladiator's Drape of Cruelty
+								i(102669, {	-- Prideful Gladiator's Drape of Cruelty
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(102756, {	-- Grievous Gladiator's Drape of Meditation
+								i(102756, {	-- Prideful Gladiator's Drape of Meditation
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(102772, {	-- Grievous Gladiator's Drape of Prowess
+								i(102772, {	-- Prideful Gladiator's Drape of Prowess
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
 							}),
 							n(-326, {	-- Wrists
 								-- From Celestials/Vendor
-								i(102624, {	-- Grievous Gladiator's Armbands of Meditation
+								i(102624, {	-- Prideful Gladiator's Armbands of Meditation
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(102665, {	-- Grievous Gladiator's Armbands of Prowess
+								i(102665, {	-- Prideful Gladiator's Armbands of Prowess
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(102771, {	-- Grievous Gladiator's Armplates of Alacrity
+								i(102771, {	-- Prideful Gladiator's Armplates of Alacrity
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(102702, {	-- Grievous Gladiator's Armplates of Proficiency
+								i(102702, {	-- Prideful Gladiator's Armplates of Proficiency
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(102711, {	-- Grievous Gladiator's Armwraps of Accuracy
+								i(102711, {	-- Prideful Gladiator's Armwraps of Accuracy
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(102754, {	-- Grievous Gladiator's Armwraps of Alacrity
+								i(102754, {	-- Prideful Gladiator's Armwraps of Alacrity
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(102691, {	-- Grievous Gladiator's Bindings of Meditation
+								i(102691, {	-- Prideful Gladiator's Bindings of Meditation
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(102723, {	-- Grievous Gladiator's Bindings of Prowess
+								i(102723, {	-- Prideful Gladiator's Bindings of Prowess
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(102765, {	-- Grievous Gladiator's Bracers of Meditation
+								i(102765, {	-- Prideful Gladiator's Bracers of Meditation
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(102695, {	-- Grievous Gladiator's Bracers of Prowess
+								i(102695, {	-- Prideful Gladiator's Bracers of Prowess
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(102687, {	-- Grievous Gladiator's Cuffs of Accuracy
+								i(102687, {	-- Prideful Gladiator's Cuffs of Accuracy
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(102666, {	-- Grievous Gladiator's Cuffs of Meditation
+								i(102666, {	-- Prideful Gladiator's Cuffs of Meditation
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(102733, {	-- Grievous Gladiator's Cuffs of Prowess
+								i(102733, {	-- Prideful Gladiator's Cuffs of Prowess
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(102753, {	-- Grievous Gladiator's Wristguards of Accuracy
+								i(102753, {	-- Prideful Gladiator's Wristguards of Accuracy
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(102688, {	-- Grievous Gladiator's Wristguards of Alacrity
+								i(102688, {	-- Prideful Gladiator's Wristguards of Alacrity
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
 							}),
 							n(-328, {	-- Waist
 								-- From Celestials/Vendor
-								i(102694, {	-- Grievous Gladiator's Belt of Cruelty
+								i(102694, {	-- Prideful Gladiator's Belt of Cruelty
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(102775, {	-- Grievous Gladiator's Belt of Meditation
+								i(102775, {	-- Prideful Gladiator's Belt of Meditation
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(102764, {	-- Grievous Gladiator's Clasp of Cruelty
+								i(102764, {	-- Prideful Gladiator's Clasp of Cruelty
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(102748, {	-- Grievous Gladiator's Clasp of Meditation
+								i(102748, {	-- Prideful Gladiator's Clasp of Meditation
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(102662, {	-- Grievous Gladiator's Cord of Accuracy
+								i(102662, {	-- Prideful Gladiator's Cord of Accuracy
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(102684, {	-- Grievous Gladiator's Cord of Cruelty
+								i(102684, {	-- Prideful Gladiator's Cord of Cruelty
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(102709, {	-- Grievous Gladiator's Cord of Meditation
+								i(102709, {	-- Prideful Gladiator's Cord of Meditation
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(102640, {	-- Grievous Gladiator's Girdle of Accuracy
+								i(102640, {	-- Prideful Gladiator's Girdle of Accuracy
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(102724, {	-- Grievous Gladiator's Girdle of Prowess
+								i(102724, {	-- Prideful Gladiator's Girdle of Prowess
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(102645, {	-- Grievous Gladiator's Links of Accuracy
+								i(102645, {	-- Prideful Gladiator's Links of Accuracy
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(102617, {	-- Grievous Gladiator's Links of Cruelty
+								i(102617, {	-- Prideful Gladiator's Links of Cruelty
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(102708, {	-- Grievous Gladiator's Waistband of Accuracy
+								i(102708, {	-- Prideful Gladiator's Waistband of Accuracy
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(102647, {	-- Grievous Gladiator's Waistband of Cruelty
+								i(102647, {	-- Prideful Gladiator's Waistband of Cruelty
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(102677, {	-- Grievous Gladiator's Waistguard of Cruelty
+								i(102677, {	-- Prideful Gladiator's Waistguard of Cruelty
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(102668, {	-- Grievous Gladiator's Waistguard of Meditation
+								i(102668, {	-- Prideful Gladiator's Waistguard of Meditation
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
 							}),
 							n(-330, {	-- Feet
 								-- From Celestials/Vendor
-								i(102716, {	-- Grievous Gladiator's Boots of Alacrity
+								i(102716, {	-- Prideful Gladiator's Boots of Alacrity
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(102660, {	-- Grievous Gladiator's Boots of Cruelty
+								i(102660, {	-- Prideful Gladiator's Boots of Cruelty
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(102631, {	-- Grievous Gladiator's Footguards of Alacrity (Leahter)
+								i(102631, {	-- Prideful Gladiator's Footguards of Alacrity (Leahter)
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(102664, {	-- Grievous Gladiator's Footguards of Alacrity (Mail)
+								i(102664, {	-- Prideful Gladiator's Footguards of Alacrity (Mail)
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(102760, {	-- Grievous Gladiator's Footguards of Meditation (Leather)
+								i(102760, {	-- Prideful Gladiator's Footguards of Meditation (Leather)
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(102623, {	-- Grievous Gladiator's Footguards of Meditation (Mail)
+								i(102623, {	-- Prideful Gladiator's Footguards of Meditation (Mail)
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),						
-								i(102638, {	-- Grievous Gladiator's Greaves of Alacrity
+								i(102638, {	-- Prideful Gladiator's Greaves of Alacrity
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(102639, {	-- Grievous Gladiator's Greaves of Meditation
+								i(102639, {	-- Prideful Gladiator's Greaves of Meditation
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(102646, {	-- Grievous Gladiator's Sabatons of Alacrity
+								i(102646, {	-- Prideful Gladiator's Sabatons of Alacrity
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(102729, {	-- Grievous Gladiator's Sabatons of Cruelty
+								i(102729, {	-- Prideful Gladiator's Sabatons of Cruelty
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(102620, {	-- Grievous Gladiator's Treads of Alacrity
+								i(102620, {	-- Prideful Gladiator's Treads of Alacrity
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(102686, {	-- Grievous Gladiator's Treads of Cruelty
+								i(102686, {	-- Prideful Gladiator's Treads of Cruelty
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(102752, {	-- Grievous Gladiator's Treads of Meditation
+								i(102752, {	-- Prideful Gladiator's Treads of Meditation
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),					
-								i(102745, {	-- Grievous Gladiator's Warboots of Alacrity
+								i(102745, {	-- Prideful Gladiator's Warboots of Alacrity
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(102698, {	-- Grievous Gladiator's Warboots of Cruelty
+								i(102698, {	-- Prideful Gladiator's Warboots of Cruelty
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
 							}),
 							f(51,	{	-- Neck
 								-- From Celestials
-								i(102641),	-- Grievous Gladiator's Choker of Accuracy
-								i(102749),	-- Grievous Gladiator's Choker of Proficiency
-								i(102678),	-- Grievous Gladiator's Necklace of Proficiency
-								i(102679),	-- Grievous Gladiator's Necklace of Prowess
-								i(102757),	-- Grievous Gladiator's Pendant of Alacrity
-								i(102773),	-- Grievous Gladiator's Pendant of Cruelty
-								i(102736),	-- Grievous Gladiator's Pendant of Meditation
+								i(102641),	-- Prideful Gladiator's Choker of Accuracy
+								i(102749),	-- Prideful Gladiator's Choker of Proficiency
+								i(102678),	-- Prideful Gladiator's Necklace of Proficiency
+								i(102679),	-- Prideful Gladiator's Necklace of Prowess
+								i(102757),	-- Prideful Gladiator's Pendant of Alacrity
+								i(102773),	-- Prideful Gladiator's Pendant of Cruelty
+								i(102736),	-- Prideful Gladiator's Pendant of Meditation
 							}),
 							f(52,	{	-- Finger
 								-- From Celestials
-								i(102649),	-- Grievous Gladiator's Band of Accuracy
-								i(102674),	-- Grievous Gladiator's Band of Cruelty
-								i(102758),	-- Grievous Gladiator's Band of Meditation
-								i(102683),	-- Grievous Gladiator's Ring of Accuracy
-								i(102644),	-- Grievous Gladiator's Ring of Cruelty
-								i(102746),	-- Grievous Gladiator's Signet of Accuracy
-								i(102701),	-- Grievous Gladiator's Signet of Cruelty
+								i(102649),	-- Prideful Gladiator's Band of Accuracy
+								i(102674),	-- Prideful Gladiator's Band of Cruelty
+								i(102758),	-- Prideful Gladiator's Band of Meditation
+								i(102683),	-- Prideful Gladiator's Ring of Accuracy
+								i(102644),	-- Prideful Gladiator's Ring of Cruelty
+								i(102746),	-- Prideful Gladiator's Signet of Accuracy
+								i(102701),	-- Prideful Gladiator's Signet of Cruelty
 							}),
 							f(53,	{	-- Trinket
-								un(REMOVED_FROM_GAME, i(102659)),	-- Grievous Gladiator's Badge of Conquest
-								un(REMOVED_FROM_GAME, i(102633)),	-- Grievous Gladiator's Badge of Dominance
-								un(REMOVED_FROM_GAME, i(102636)),	-- Grievous Gladiator's Badge of Victory
-								un(REMOVED_FROM_GAME, i(102680)),	-- Grievous Gladiator's Emblem of Cruelty
-								un(REMOVED_FROM_GAME, i(102616)),	-- Grievous Gladiator's Emblem of Meditation
-								un(REMOVED_FROM_GAME, i(102706)),	-- Grievous Gladiator's Emblem of Tenacity
-								un(REMOVED_FROM_GAME, i(102643)),	-- Grievous Gladiator's Insignia of Conquest
-								un(REMOVED_FROM_GAME, i(102766)),	-- Grievous Gladiator's Insignia of Dominance
-								un(REMOVED_FROM_GAME, i(102699)),	-- Grievous Gladiator's Insignia of Victory
-								un(REMOVED_FROM_GAME, i(102738)),	-- Grievous Gladiator's Medallion of Cruelty (A)
-								un(REMOVED_FROM_GAME, i(102625)),	-- Grievous Gladiator's Medallion of Meditation (A)
-								un(REMOVED_FROM_GAME, i(102672)),	-- Grievous Gladiator's Medallion of Tenacity (A)
+								un(REMOVED_FROM_GAME, i(102659)),	-- Prideful Gladiator's Badge of Conquest
+								un(REMOVED_FROM_GAME, i(102633)),	-- Prideful Gladiator's Badge of Dominance
+								un(REMOVED_FROM_GAME, i(102636)),	-- Prideful Gladiator's Badge of Victory
+								un(REMOVED_FROM_GAME, i(102680)),	-- Prideful Gladiator's Emblem of Cruelty
+								un(REMOVED_FROM_GAME, i(102616)),	-- Prideful Gladiator's Emblem of Meditation
+								un(REMOVED_FROM_GAME, i(102706)),	-- Prideful Gladiator's Emblem of Tenacity
+								un(REMOVED_FROM_GAME, i(102643)),	-- Prideful Gladiator's Insignia of Conquest
+								un(REMOVED_FROM_GAME, i(102766)),	-- Prideful Gladiator's Insignia of Dominance
+								un(REMOVED_FROM_GAME, i(102699)),	-- Prideful Gladiator's Insignia of Victory
+								un(REMOVED_FROM_GAME, i(102738)),	-- Prideful Gladiator's Medallion of Cruelty (A)
+								un(REMOVED_FROM_GAME, i(102625)),	-- Prideful Gladiator's Medallion of Meditation (A)
+								un(REMOVED_FROM_GAME, i(102672)),	-- Prideful Gladiator's Medallion of Tenacity (A)
 							}),
 							
 						}),
@@ -7066,220 +7154,335 @@ _.PVP =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						n(-661, {	-- Gladiator PvP Gear
-				
+							n(-319, {	-- Weapons
+								i(144250, {	-- Arsenal: Prideful Gladiator's Weapons (A)
+									["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
+									["sym"] = { 
+										{"sub", "pvp_weapons_ensemble", -10041, -678, -9914, -661 },
+										{"exclude", "itemID", 144250 },	-- Exclude itself to stop duplicating
+									},
+								}),
+								i(103364, {	-- Prideful Gladiator's Barrier
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(103507, {	-- Prideful Gladiator's Baton of Light
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(103366, {	-- Prideful Gladiator's Battle Staff
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(103509, {	-- Prideful Gladiator's Bonecracker
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(103339, {	-- Prideful Gladiator's Cleaver
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(103336, {	-- Prideful Gladiator's Decapitator
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(103363, {	-- Prideful Gladiator's Endgame
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(103406, {	-- Prideful Gladiator's Energy Staff
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(103404, {	-- Prideful Gladiator's Gavel
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(103338, {	-- Prideful Gladiator's Greatsword
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(103508, {	-- Prideful Gladiator's Hacker
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(103350, {	-- Prideful Gladiator's Longbow
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(103504, {	-- Prideful Gladiator's Mageblade
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(103461, {	-- Prideful Gladiator's Pike
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(103340, {	-- Prideful Gladiator's Pummeler
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(103341, {	-- Prideful Gladiator's Quickblade
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(103405, {	-- Prideful Gladiator's Redoubt
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(103503, {	-- Prideful Gladiator's Render
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(103373, {	-- Prideful Gladiator's Reprieve
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(103403, {	-- Prideful Gladiator's Rifle
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(103502, {	-- Prideful Gladiator's Ripper
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(103501, {	-- Prideful Gladiator's Shanker
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(103519, {	-- Prideful Gladiator's Shield Wall
+									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+								}),
+								i(103510, {	-- Prideful Gladiator's Slicer
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(103365, {	-- Prideful Gladiator's Spellblade
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+								i(103374, {	-- Prideful Gladiator's Touch of Defeat
+									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+								}),
+							}),	
+							
+							
 							n(-322, {	-- Back
 								-- From Celestials/Vendor
-								i(103343, {	-- Grievous Gladiator's Cape of Cruelty
+								i(103343, {	-- Prideful Gladiator's Cape of Cruelty
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(103344, {	-- Grievous Gladiator's Cape of Prowess
+								i(103344, {	-- Prideful Gladiator's Cape of Prowess
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(103512, {	-- Grievous Gladiator's Cloak of Alacrity
+								i(103512, {	-- Prideful Gladiator's Cloak of Alacrity
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(103513, {	-- Grievous Gladiator's Cloak of Prowess
+								i(103513, {	-- Prideful Gladiator's Cloak of Prowess
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(103360, {	-- Grievous Gladiator's Drape of Cruelty
+								i(103360, {	-- Prideful Gladiator's Drape of Cruelty
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(103362, {	-- Grievous Gladiator's Drape of Meditation
+								i(103362, {	-- Prideful Gladiator's Drape of Meditation
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(103361, {	-- Grievous Gladiator's Drape of Prowess
+								i(103361, {	-- Prideful Gladiator's Drape of Prowess
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
 							}),
 							n(-326, {	-- Wrists
 								-- From Celestials/Vendor
-								i(103484, {	-- Grievous Gladiator's Armbands of Meditation
+								i(103484, {	-- Prideful Gladiator's Armbands of Meditation
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(103483, {	-- Grievous Gladiator's Armbands of Prowess
+								i(103483, {	-- Prideful Gladiator's Armbands of Prowess
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(103460, {	-- Grievous Gladiator's Armplates of Alacrity
+								i(103460, {	-- Prideful Gladiator's Armplates of Alacrity
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(103459, {	-- Grievous Gladiator's Armplates of Proficiency
+								i(103459, {	-- Prideful Gladiator's Armplates of Proficiency
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(103428, {	-- Grievous Gladiator's Armwraps of Accuracy
+								i(103428, {	-- Prideful Gladiator's Armwraps of Accuracy
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(103474, {	-- Grievous Gladiator's Armwraps of Alacrity
+								i(103474, {	-- Prideful Gladiator's Armwraps of Alacrity
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(103388, {	-- Grievous Gladiator's Bindings of Meditation
+								i(103388, {	-- Prideful Gladiator's Bindings of Meditation
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(103397, {	-- Grievous Gladiator's Bindings of Prowess
+								i(103397, {	-- Prideful Gladiator's Bindings of Prowess
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(103449, {	-- Grievous Gladiator's Bracers of Meditation
+								i(103449, {	-- Prideful Gladiator's Bracers of Meditation
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(103448, {	-- Grievous Gladiator's Bracers of Prowess
+								i(103448, {	-- Prideful Gladiator's Bracers of Prowess
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(103357, {	-- Grievous Gladiator's Cuffs of Accuracy
+								i(103357, {	-- Prideful Gladiator's Cuffs of Accuracy
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(103359, {	-- Grievous Gladiator's Cuffs of Meditation
+								i(103359, {	-- Prideful Gladiator's Cuffs of Meditation
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(103358, {	-- Grievous Gladiator's Cuffs of Prowess
+								i(103358, {	-- Prideful Gladiator's Cuffs of Prowess
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(103415, {	-- Grievous Gladiator's Wristguards of Accuracy
+								i(103415, {	-- Prideful Gladiator's Wristguards of Accuracy
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(103414, {	-- Grievous Gladiator's Wristguards of Alacrity
+								i(103414, {	-- Prideful Gladiator's Wristguards of Alacrity
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
 							}),
 							n(-328, {	-- Waist
 								-- From Celestials/Vendor
-								i(103395, {	-- Grievous Gladiator's Belt of Cruelty
+								i(103395, {	-- Prideful Gladiator's Belt of Cruelty
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(103386, {	-- Grievous Gladiator's Belt of Meditation
+								i(103386, {	-- Prideful Gladiator's Belt of Meditation
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(103444, {	-- Grievous Gladiator's Clasp of Cruelty
+								i(103444, {	-- Prideful Gladiator's Clasp of Cruelty
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(103445, {	-- Grievous Gladiator's Clasp of Meditation
+								i(103445, {	-- Prideful Gladiator's Clasp of Meditation
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(103352, {	-- Grievous Gladiator's Cord of Accuracy
+								i(103352, {	-- Prideful Gladiator's Cord of Accuracy
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(103351, {	-- Grievous Gladiator's Cord of Cruelty
+								i(103351, {	-- Prideful Gladiator's Cord of Cruelty
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(103353, {	-- Grievous Gladiator's Cord of Meditation
+								i(103353, {	-- Prideful Gladiator's Cord of Meditation
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(147362, {	-- Grievous Gladiator's Girdle of Accuracy
+								i(147362, {	-- Prideful Gladiator's Girdle of Accuracy
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(103455, {	-- Grievous Gladiator's Girdle of Prowess
+								i(103455, {	-- Prideful Gladiator's Girdle of Prowess
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(103456, {	-- Grievous Gladiator's Links of Accuracy
+								i(103456, {	-- Prideful Gladiator's Links of Accuracy
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(103411, {	-- Grievous Gladiator's Links of Cruelty
+								i(103411, {	-- Prideful Gladiator's Links of Cruelty
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(103410, {	-- Grievous Gladiator's Waistband of Accuracy
+								i(103410, {	-- Prideful Gladiator's Waistband of Accuracy
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(103472, {	-- Grievous Gladiator's Waistband of Cruelty
+								i(103472, {	-- Prideful Gladiator's Waistband of Cruelty
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(103426, {	-- Grievous Gladiator's Waistguard of Cruelty
+								i(103426, {	-- Prideful Gladiator's Waistguard of Cruelty
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(103495, {	-- Grievous Gladiator's Waistguard of Meditation
+								i(103495, {	-- Prideful Gladiator's Waistguard of Meditation
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
 							}),
 							n(-330, {	-- Feet
 								-- From Celestials/Vendor
-								i(103427, {	-- Grievous Gladiator's Boots of Alacrity
+								i(103427, {	-- Prideful Gladiator's Boots of Alacrity
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(103473, {	-- Grievous Gladiator's Boots of Cruelty
+								i(103473, {	-- Prideful Gladiator's Boots of Cruelty
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(103396, {	-- Grievous Gladiator's Footguards of Alacrity (Leahter)
+								i(103396, {	-- Prideful Gladiator's Footguards of Alacrity (Leahter)
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(103481, {	-- Grievous Gladiator's Footguards of Alacrity (Mail)
+								i(103481, {	-- Prideful Gladiator's Footguards of Alacrity (Mail)
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(103387, {	-- Grievous Gladiator's Footguards of Meditation (Leather)
+								i(103387, {	-- Prideful Gladiator's Footguards of Meditation (Leather)
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(103482, {	-- Grievous Gladiator's Footguards of Meditation (Mail)
+								i(103482, {	-- Prideful Gladiator's Footguards of Meditation (Mail)
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),						
-								i(103446, {	-- Grievous Gladiator's Greaves of Alacrity
+								i(103446, {	-- Prideful Gladiator's Greaves of Alacrity
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(103447, {	-- Grievous Gladiator's Greaves of Meditation
+								i(103447, {	-- Prideful Gladiator's Greaves of Meditation
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(103413, {	-- Grievous Gladiator's Sabatons of Alacrity
+								i(103413, {	-- Prideful Gladiator's Sabatons of Alacrity
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(103412, {	-- Grievous Gladiator's Sabatons of Cruelty
+								i(103412, {	-- Prideful Gladiator's Sabatons of Cruelty
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(103355, {	-- Grievous Gladiator's Treads of Alacrity
+								i(103355, {	-- Prideful Gladiator's Treads of Alacrity
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(103354, {	-- Grievous Gladiator's Treads of Cruelty
+								i(103354, {	-- Prideful Gladiator's Treads of Cruelty
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(103356, {	-- Grievous Gladiator's Treads of Meditation
+								i(103356, {	-- Prideful Gladiator's Treads of Meditation
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),					
-								i(103458, {	-- Grievous Gladiator's Warboots of Alacrity
+								i(103458, {	-- Prideful Gladiator's Warboots of Alacrity
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
-								i(103457, {	-- Grievous Gladiator's Warboots of Cruelty
+								i(103457, {	-- Prideful Gladiator's Warboots of Cruelty
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
 							}),
 							f(51,	{	-- Neck
 								-- From Celestials
-								i(103515),	-- Grievous Gladiator's Choker of Accuracy
-								i(103514),	-- Grievous Gladiator's Choker of Proficiency
-								i(103345),	-- Grievous Gladiator's Necklace of Proficiency
-								i(103346),	-- Grievous Gladiator's Necklace of Prowess
-								i(103368),	-- Grievous Gladiator's Pendant of Alacrity
-								i(103367),	-- Grievous Gladiator's Pendant of Cruelty
-								i(103369),	-- Grievous Gladiator's Pendant of Meditation
+								i(103515),	-- Prideful Gladiator's Choker of Accuracy
+								i(103514),	-- Prideful Gladiator's Choker of Proficiency
+								i(103345),	-- Prideful Gladiator's Necklace of Proficiency
+								i(103346),	-- Prideful Gladiator's Necklace of Prowess
+								i(103368),	-- Prideful Gladiator's Pendant of Alacrity
+								i(103367),	-- Prideful Gladiator's Pendant of Cruelty
+								i(103369),	-- Prideful Gladiator's Pendant of Meditation
 							}),
 							f(52,	{	-- Finger
 								-- From Celestials
-								i(103371),	-- Grievous Gladiator's Band of Accuracy
-								i(103370),	-- Grievous Gladiator's Band of Cruelty
-								i(103372),	-- Grievous Gladiator's Band of Meditation
-								i(103349),	-- Grievous Gladiator's Ring of Accuracy
-								i(103348),	-- Grievous Gladiator's Ring of Cruelty
-								i(103518),	-- Grievous Gladiator's Signet of Accuracy
-								i(103517),	-- Grievous Gladiator's Signet of Cruelty
+								i(103371),	-- Prideful Gladiator's Band of Accuracy
+								i(103370),	-- Prideful Gladiator's Band of Cruelty
+								i(103372),	-- Prideful Gladiator's Band of Meditation
+								i(103349),	-- Prideful Gladiator's Ring of Accuracy
+								i(103348),	-- Prideful Gladiator's Ring of Cruelty
+								i(103518),	-- Prideful Gladiator's Signet of Accuracy
+								i(103517),	-- Prideful Gladiator's Signet of Cruelty
 							}),
 							f(53,	{	-- Trinket
-								un(REMOVED_FROM_GAME, i(103342)),	-- Grievous Gladiator's Badge of Conquest
-								un(REMOVED_FROM_GAME, i(103505)),	-- Grievous Gladiator's Badge of Dominance
-								un(REMOVED_FROM_GAME, i(103511)),	-- Grievous Gladiator's Badge of Victory
-								un(REMOVED_FROM_GAME, i(103407)),	-- Grievous Gladiator's Emblem of Cruelty
-								un(REMOVED_FROM_GAME, i(103409)),	-- Grievous Gladiator's Emblem of Meditation
-								un(REMOVED_FROM_GAME, i(103408)),	-- Grievous Gladiator's Emblem of Tenacity
-								un(REMOVED_FROM_GAME, i(103347)),	-- Grievous Gladiator's Insignia of Conquest
-								un(REMOVED_FROM_GAME, i(103506)),	-- Grievous Gladiator's Insignia of Dominance
-								un(REMOVED_FROM_GAME, i(103516)),	-- Grievous Gladiator's Insignia of Victory
-								un(REMOVED_FROM_GAME, i(103531)),	-- Grievous Gladiator's Medallion of Cruelty (H)
-								un(REMOVED_FROM_GAME, i(103532)),	-- Grievous Gladiator's Medallion of Meditation (H)
-								un(REMOVED_FROM_GAME, i(103530)),	-- Grievous Gladiator's Medallion of Tenacity (H)
+								un(REMOVED_FROM_GAME, i(103342)),	-- Prideful Gladiator's Badge of Conquest
+								un(REMOVED_FROM_GAME, i(103505)),	-- Prideful Gladiator's Badge of Dominance
+								un(REMOVED_FROM_GAME, i(103511)),	-- Prideful Gladiator's Badge of Victory
+								un(REMOVED_FROM_GAME, i(103407)),	-- Prideful Gladiator's Emblem of Cruelty
+								un(REMOVED_FROM_GAME, i(103409)),	-- Prideful Gladiator's Emblem of Meditation
+								un(REMOVED_FROM_GAME, i(103408)),	-- Prideful Gladiator's Emblem of Tenacity
+								un(REMOVED_FROM_GAME, i(103347)),	-- Prideful Gladiator's Insignia of Conquest
+								un(REMOVED_FROM_GAME, i(103506)),	-- Prideful Gladiator's Insignia of Dominance
+								un(REMOVED_FROM_GAME, i(103516)),	-- Prideful Gladiator's Insignia of Victory
+								un(REMOVED_FROM_GAME, i(103531)),	-- Prideful Gladiator's Medallion of Cruelty (H)
+								un(REMOVED_FROM_GAME, i(103532)),	-- Prideful Gladiator's Medallion of Meditation (H)
+								un(REMOVED_FROM_GAME, i(103530)),	-- Prideful Gladiator's Medallion of Tenacity (H)
 							}),
 						}),
 					},
 				}),
-				n(-662, {	--Elite PvP Gear
+				n(-662, {	--Elite PvP Gear --Enchant reminder
+					n(-319, {	-- Weapons
+						un(REMOVED_FROM_GAME, i(102998)),	-- Prideful Gladiator's Barrier
+						un(REMOVED_FROM_GAME, i(103118)),	-- Prideful Gladiator's Baton of Light
+						un(REMOVED_FROM_GAME, i(103000)),	-- Prideful Gladiator's Battle Staff
+						un(REMOVED_FROM_GAME, i(103120)),	-- Prideful Gladiator's Bonecracker
+						un(REMOVED_FROM_GAME, i(102987)),	-- Prideful Gladiator's Cleaver
+						un(REMOVED_FROM_GAME, i(102984)),	-- Prideful Gladiator's Decapitator
+						un(REMOVED_FROM_GAME, i(102997)),	-- Prideful Gladiator's Endgame
+						un(REMOVED_FROM_GAME, i(103032)),	-- Prideful Gladiator's Energy Staff
+						un(REMOVED_FROM_GAME, i(103030)),	-- Prideful Gladiator's Gavel
+						un(REMOVED_FROM_GAME, i(102986)),	-- Prideful Gladiator's Greatsword
+						un(REMOVED_FROM_GAME, i(103119)),	-- Prideful Gladiator's Hacker
+						un(REMOVED_FROM_GAME, i(102990)),	-- Prideful Gladiator's Longbow
+						un(REMOVED_FROM_GAME, i(103117)),	-- Prideful Gladiator's Mageblade
+						un(REMOVED_FROM_GAME, i(103077)),	-- Prideful Gladiator's Pike
+						un(REMOVED_FROM_GAME, i(102988)),	-- Prideful Gladiator's Pummeler
+						un(REMOVED_FROM_GAME, i(102989)),	-- Prideful Gladiator's Quickblade
+						un(REMOVED_FROM_GAME, i(103031)),	-- Prideful Gladiator's Redoubt
+						un(REMOVED_FROM_GAME, i(103116)),	-- Prideful Gladiator's Render
+						un(REMOVED_FROM_GAME, i(103001)),	-- Prideful Gladiator's Reprieve
+						un(REMOVED_FROM_GAME, i(103029)),	-- Prideful Gladiator's Rifle
+						un(REMOVED_FROM_GAME, i(103115)),	-- Prideful Gladiator's Ripper
+						un(REMOVED_FROM_GAME, i(103114)),	-- Prideful Gladiator's Shanker
+						un(REMOVED_FROM_GAME, i(103122)),	-- Prideful Gladiator's Shield Wall
+						un(REMOVED_FROM_GAME, i(103121)),	-- Prideful Gladiator's Slicer
+						un(REMOVED_FROM_GAME, i(102999)),	-- Prideful Gladiator's Spellblade
+						un(REMOVED_FROM_GAME, i(103002)),	-- Prideful Gladiator's Touch of Defeat
+					}),
 					n(-322, {	-- Back
-						un(REMOVED_FROM_GAME, i(103635)), -- Grievous Gladiator's Greatcloak
+						un(REMOVED_FROM_GAME, i(103635)), -- Prideful Gladiator's Greatcloak
 					}),
 					n(-325, { 	-- Tabards
-						un(REMOVED_FROM_GAME, i(103636)), -- Grievous Gladiator's Tabard
+						un(REMOVED_FROM_GAME, i(103636)), -- Prideful Gladiator's Tabard
 					}),
-					--Enchant reminder
 				}),
 				
 			}),
