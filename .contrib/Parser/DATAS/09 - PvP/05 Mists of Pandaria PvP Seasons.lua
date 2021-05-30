@@ -1790,7 +1790,7 @@ _.PVP =
 			}),
 			n(-676, {	-- Tyrannical Gladiator: Season 13
 				n(-653, {	-- Honor Gear Tyrannical Season
-					["description"] = "These items are available from Malevolent Gladiator: Season 12 Vendor and class ensembles but have the wrong tag.",
+					["description"] = "These items are available from Malevolent Gladiator: Season 12 Vendor.",
 					["g"] = {
 						n(-319, {	-- Weapons
 							i(91482, {	-- Malevolent Gladiator's Barrier
