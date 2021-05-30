@@ -1228,6 +1228,7 @@ _.ExpansionFeatures =
 								q(62178, {	-- Black Muck Dye
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
+									["repeatable"] = true,
 									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["cost"] = { { "i", 182702, 1 } },	-- 1x Black Muck Dye
 									-- ["repeatable"] = true,
@@ -1240,6 +1241,7 @@ _.ExpansionFeatures =
 								q(62179, {	-- Blue Muck Dye
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
+									["repeatable"] = true,
 									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["cost"] = { { "i", 182705, 1 } },	-- Vial of Blue Muck Dye
 									["g"] = {
@@ -1250,9 +1252,9 @@ _.ExpansionFeatures =
 								}),
 								q(62181, {	-- Bubbling Red Muck Dye
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
+									["repeatable"] = true,
 									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["cost"] = { { "i", 182703, 1 } },	-- 1x Bubbling Red Muck Dye
-									-- ["repeatable"] = true,
 									["g"] = {
 										crit(4, {	-- Bubbling Muck Armor Dye
 											["achievementID"] = 14683,	-- Dredger Style
@@ -1281,7 +1283,7 @@ _.ExpansionFeatures =
 								q(62180, {	-- Green Muck Dye
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
-								--	["repeatable"] = true,
+									["repeatable"] = true,
 									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["cost"] = { { "i", 182704, 1 } },	-- Green Muck Dye
 									["g"] = {
@@ -2165,4 +2167,17 @@ _.ExpansionFeatures =
 			},
 		}),
 	}),
+};
+
+_.HiddenQuestTriggers = {
+--	Dredger Butler appearance
+	q(61572),	-- Let's get your hair sorted. > A little grease and the proper Igor cut.
+	q(61571),	-- Let's get your hair sorted. > How about you grow it out full?
+	q(61570),	-- Let's get your hair sorted. > I swear you will look great in a cap.
+	q(61573),	-- Let's get your hair sorted. > Let's go wild and spikey!
+	q(61575),	-- Let's update your clothes. > How about we try the long sleeved doublet.
+	q(61574),	-- Let's update your clothes. > Why don't you try on the short sleeved doublet.
+	q(61585),	-- It's time to dye your clothes. > Let's dye them black.
+	q(61578),	-- It's time to dye your clothes. > Let's dye them green.
+	q(61576),	-- It's time to dye your clothes. > Let's dye them red.
 };
