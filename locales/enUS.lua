@@ -1079,9 +1079,10 @@ app.L = {
 		[-650] = "Interface\\Icons\\inv_misc_questionmark",									-- Quest Item
 		--[-651] = "Interface\\Worldmap\\GlowSkull_64Grey",									-- Not used yet. Future PvP Icons if needed
 		--[-652] = "Interface\\Worldmap\\GlowSkull_64",										-- Not used yet. Future PvP Icons if needed
-		[-654] = "Interface\\Icons\\ability_mount_drake_twilight",							-- Pre-Season Cataclysmic (S11)
+		[-653] = "Interface\\Icons\\inv_pandarenserpentmount_white",						-- Honor Gear Tyrannical (S13)
+		[-654] = "Interface\\Icons\\ability_mount_drake_twilight",							-- Honor Gear Cataclysmic (S11)
 		[-655] = 1596892, 																	-- Ensemble Gear (PvP)
-		[-656] = "Interface\\Icons\\ability_mount_drake_twilight",							-- Pre-Season Ruthless (S10)
+		[-656] = "Interface\\Icons\\ability_mount_drake_twilight",							-- Honor Gear Ruthless (S10)
 		[-657] = "Interface\\Icons\\ability_mount_redfrostwyrm_01",							-- Hateful Gladiator: Season 5 (Medium Gear)
 		[-658] = app.asset("Expansion_TBC"),												-- Pre-Season BC
 		[-659] = "Interface\\Worldmap\\GlowSkull_64Green",									-- Aspirant PvP Gear
@@ -1850,9 +1851,10 @@ app.L = {
 
 -- PvP Header
 	-- Special Season Tags
-		--[-654] = "Honor Gear Cataclysmic",									-- Listed under Cata PvP Seasons
+		--[-653] = "Honor Gear Tyrannical Season",								-- Listed under MoP PvP Seasons
+		--[-654] = "Honor Gear Cataclysmic Season",								-- Listed under Cata PvP Seasons
 		[-655] = "Ensemble Gear", 												-- Ensemble Gear (PvP)
-		--[-656] = "Honor Gear Ruthless",										-- Listed under Cata PvP Seasons
+		--[-656] = "Honor Gear Ruthless Season",								-- Listed under Cata PvP Seasons
 		--[-657] = "Hateful Gladiator",											-- Listed under WOTLK PvP Seasons
 		--[-658] = "BC Pre-Season",												-- Listed under BC PvP Seasons
 	-- PvP Set Names
@@ -1887,6 +1889,7 @@ app.L = {
 
 	-- Mists of Pandaria PvP Seasons
 		[-675] = select(2, GetAchievementInfo(8214))..": Season 12",			-- Malevolent Gladiator: Season 12
+		[-653] = "Honor Gear Tyrannical Season",								-- Honor Gear Tyrannical (S13)
 		[-676] = select(2, GetAchievementInfo(8791))..": Season 13",			-- Tyrannical Gladiator: Season 13
 		[-677] = select(2, GetAchievementInfo(8643)),							-- Grievous Gladiator: Season 14
 		[-678] = select(2, GetAchievementInfo(8666)),							-- Prideful Gladiator: Season 15

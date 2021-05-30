@@ -10,10 +10,6 @@ _.Zones =
 				n(65515, {	-- Acon Deathwielder (Removed Season 12 Elite Vendor)
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
-					["sym"] = {
-						{"sub", "pvp_gear_base", -10041, -675, -662 },	-- Malevolent Gladiator: Season 12 Elite
-						{"pop"},	-- Discard the Set header and acquire the children.
-					},
 				}),
 				n(75695, {	-- Acon Deathwielder
 					["itemID"] = 137642,	-- Mark of Honor
@@ -337,45 +333,996 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(103136)),	-- Elite Prideful Gladiator's satin cord
 					},
 				}),
-				n(75693, {	-- Doris Chiltonius (Season 12: Malevolent Gladiator Vendor)
+				n(75693, {	-- Doris Chiltonius Season 12: Malevolent Gladiator Vendor. Items are tagged as S13
 					["coord"] = { 35.4, 83.2, 379 },
 					["races"] = HORDE_ONLY,
-					["sym"] = {
-						{"sub", "pvp_gear_base", -10041, -675, -661 },	-- Malevolent Gladiator: Season 12
-						{"pop"},	-- Discard the Set header and acquire the children.
-						{"exclude", "headerID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
+					["g"] = {
+						n(-319, {	-- Weapons
+							i(144243, {	-- Arsenal: Malevolent Gladiator's Weapons
+								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
+								["sym"] = { 
+									{"sub", "pvp_weapons_ensemble", -10041, -675, -661 },
+									{"select", "itemID", 91482 },	-- Malevolent Gladiator's Barrier
+									{"select", "itemID", 91486 },	-- Malevolent Gladiator's Battle Staff
+									{"select", "itemID", 91759 },	-- Malevolent Gladiator's Bonecracker
+									{"select", "itemID", 91442 },	-- Malevolent Gladiator's Bonegrinder
+									{"select", "itemID", 91442 },	-- Malevolent Gladiator's Bonegrinder
+									{"select", "itemID", 91446 },	-- Malevolent Gladiator's Cleaver
+									{"select", "itemID", 91440 },	-- Malevolent Gladiator's Decapitator
+									{"select", "itemID", 91480 },	-- Malevolent Gladiator's Endgame
+									{"select", "itemID", 91560 },	-- Malevolent Gladiator's Energy Staff
+									{"select", "itemID", 91556 },	-- Malevolent Gladiator's Gavel
+									{"select", "itemID", 91444 },	-- Malevolent Gladiator's Greatsword
+									{"select", "itemID", 91757 },	-- Malevolent Gladiator's Hacker
+									{"select", "itemID", 91460 },	-- Malevolent Gladiator's Longbow
+									{"select", "itemID", 91660 },	-- Malevolent Gladiator's Pike
+									{"select", "itemID", 91448 },	-- Malevolent Gladiator's Pummeler
+									{"select", "itemID", 91450 },	-- Malevolent Gladiator's Quickblade
+									{"select", "itemID", 91558 },	-- Malevolent Gladiator's Redoubt
+									{"select", "itemID", 91749 },	-- Malevolent Gladiator's Render
+									{"select", "itemID", 91494 },	-- Malevolent Gladiator's Reprieve
+									{"select", "itemID", 91554 },	-- Malevolent Gladiator's Rifle
+									{"select", "itemID", 91745 },	-- Malevolent Gladiator's Ripper
+									{"select", "itemID", 91743 },	-- Malevolent Gladiator's Shanker
+									{"select", "itemID", 91771 },	-- Malevolent Gladiator's Shield Wall
+									{"select", "itemID", 91761 },	-- Malevolent Gladiator's Slicer
+									{"select", "itemID", 91484 },	-- Malevolent Gladiator's Spellblade
+									{"select", "itemID", 91535 },	-- Malevolent Gladiator's Staff
+									{"exclude", "itemID", 144243 },	-- Exclude itself to stop duplicating
+								},
+								["g"] = {
+									i(84911),	-- Malevolent Gladiator's Barrier
+									i(84787),	-- Malevolent Gladiator's Battle Staff
+									i(84970),	-- Malevolent Gladiator's Bonecracker
+									i(84785),	-- Malevolent Gladiator's Bonegrinder
+									i(84965),	-- Malevolent Gladiator's Cleaver
+									i(84791),	-- Malevolent Gladiator's Decapitator
+									i(84866),	-- Malevolent Gladiator's Endgame
+									i(84788),	-- Malevolent Gladiator's Energy Staff
+									i(84971),	-- Malevolent Gladiator's Gavel
+									i(84790),	-- Malevolent Gladiator's Greatsword
+									i(84966),	-- Malevolent Gladiator's Hacker
+									i(84896),	-- Malevolent Gladiator's Longbow
+									i(84786),	-- Malevolent Gladiator's Pike
+									i(84964),	-- Malevolent Gladiator's Pummeler
+									i(84969),	-- Malevolent Gladiator's Quickblade
+									i(84912),	-- Malevolent Gladiator's Redoubt
+									i(84963),	-- Malevolent Gladiator's Render
+									i(84867),	-- Malevolent Gladiator's Reprieve
+									i(84900),	-- Malevolent Gladiator's Rifle
+									i(84962),	-- Malevolent Gladiator's Ripper
+									i(84967),	-- Malevolent Gladiator's Shanker
+									i(84910),	-- Malevolent Gladiator's Shield Wall
+									i(84900),	-- Malevolent Gladiator's Slicer
+									i(84961),	-- Malevolent Gladiator's Spellblade
+									i(84789),	-- Malevolent Gladiator's Staff
+								},
+							}),
+							i(91482, {	-- Malevolent Gladiator's Barrier
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(91486, {	-- Malevolent Gladiator's Battle Staff
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(91759, {	-- Malevolent Gladiator's Bonecracker
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(91442, {	-- Malevolent Gladiator's Bonegrinder
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(91442, {	-- Malevolent Gladiator's Bonegrinder
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),	
+							i(91446, {	-- Malevolent Gladiator's Cleaver
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(91440, {	-- Malevolent Gladiator's Decapitator
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(91480, {	-- Malevolent Gladiator's Endgame
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(91560, {	-- Malevolent Gladiator's Energy Staff
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(91556, {	-- Malevolent Gladiator's Gavel
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(91444, {	-- Malevolent Gladiator's Greatsword
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(91757, {	-- Malevolent Gladiator's Hacker
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(91460, {	-- Malevolent Gladiator's Longbow
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(91660, {	-- Malevolent Gladiator's Pike
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(91448, {	-- Malevolent Gladiator's Pummeler
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(91450, {	-- Malevolent Gladiator's Quickblade
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(91558, {	-- Malevolent Gladiator's Redoubt
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(91749, {	-- Malevolent Gladiator's Render
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(91494, {	-- Malevolent Gladiator's Reprieve
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(91554, {	-- Malevolent Gladiator's Rifle
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(91745, {	-- Malevolent Gladiator's Ripper
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(91743, {	-- Malevolent Gladiator's Shanker
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(91771, {	-- Malevolent Gladiator's Shield Wall
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(91761, {	-- Malevolent Gladiator's Slicer
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(91484, {	-- Malevolent Gladiator's Spellblade
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+							i(91535, {	-- Malevolent Gladiator's Staff
+								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+							}),
+						}),
+						cl(DEATHKNIGHT, {
+							i(138704, {	-- Ensemble: Malevolent Gladiator's Dreadplate Armor
+								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+								["sym"] = { 
+									{"sub", "pvp_set_ensemble", -10041, -675, -661, 6 },
+									{"select", "itemID", 84985 },	-- Malevolent Gladiator's Armplates of Proficiency
+									{"select", "itemID", 84949 },	-- Malevolent Gladiator's Girdle of Accuracy
+									{"select", "itemID", 84810 },	-- Malevolent Gladiator's Warboots of Cruelty
+									{"select", "itemID", 91658 },	-- Malevolent Gladiator's Armplates of Proficiency
+									{"select", "itemID", 91650 },	-- Malevolent Gladiator's Girdle of Accuracy
+									{"select", "itemID", 91654 },	-- Malevolent Gladiator's Warboots of Cruelty
+									{"select", "itemID", 91500 },	-- Malevolent Gladiator's Dreadplate Chestpiece
+									{"select", "itemID", 91502 },	-- Malevolent Gladiator's Dreadplate Gauntlets
+									{"select", "itemID", 91504 },	-- Malevolent Gladiator's Dreadplate Helm
+									{"select", "itemID", 91506 },	-- Malevolent Gladiator's Dreadplate Legguards
+									{"select", "itemID", 91508 },	-- Malevolent Gladiator's Dreadplate Shoulders
+									{"exclude", "itemID", 138704 },	-- Exclude itself to stop duplicating 
+								},
+								["g"] = {
+									i(84795),	-- Malevolent Gladiator's Dreadplate Chestpiece
+									i(84835),	-- Malevolent Gladiator's Dreadplate Gauntlets
+									i(84853),	-- Malevolent Gladiator's Dreadplate Helm
+									i(84872),	-- Malevolent Gladiator's Dreadplate Legguards
+									i(84918),	-- Malevolent Gladiator's Dreadplate Shoulders
+								},
+							}),
+							i(91500, {	-- Malevolent Gladiator's Dreadplate Chestpiece
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+							i(91502, {	-- Malevolent Gladiator's Dreadplate Gauntlets
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(91504, {	-- Malevolent Gladiator's Dreadplate Helm
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+							i(91506, {	-- Malevolent Gladiator's Dreadplate Legguards
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+							i(91508, {	-- Malevolent Gladiator's Dreadplate Shoulders
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+						}),
+						cl(DRUID, {
+							i(138708, {	-- Ensemble: Malevolent Gladiator's Dragonhide Armor
+								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+								["sym"] = { 
+									{"sub", "pvp_set_ensemble", -10041, -675, -661, 11 },
+									{"select", "itemID", 84976 },	-- Malevolent Gladiator's Bindings of Meditation
+									{"select", "itemID", 84982 },	-- Malevolent Gladiator's Bindings of Prowess
+									{"select", "itemID", 84960 },	-- Malevolent Gladiator's Belt of Cruelty
+									{"select", "itemID", 84953 },	-- Malevolent Gladiator's Belt of Meditation
+									{"select", "itemID", 84819 },	-- Malevolent Gladiator's Footguards of Alacrity (Leather)
+									{"select", "itemID", 84813 },	-- Malevolent Gladiator's Footguards of Meditation (Leather)
+									{"select", "itemID", 91524 },	-- Malevolent Gladiator's Bindings of Meditation
+									{"select", "itemID", 91541 },	-- Malevolent Gladiator's Bindings of Prowess
+									{"select", "itemID", 91537 },	-- Malevolent Gladiator's Belt of Cruelty
+									{"select", "itemID", 91520 },	-- Malevolent Gladiator's Belt of Meditation
+									{"select", "itemID", 91539 },	-- Malevolent Gladiator's Footguards of Alacrity (Leather)
+									{"select", "itemID", 91522 },	-- Malevolent Gladiator's Footguards of Meditation (Leather)
+									{"select", "itemID", 91510 },	-- Malevolent Gladiator's Dragonhide Gloves
+									{"select", "itemID", 91512 },	-- Malevolent Gladiator's Dragonhide Helm
+									{"select", "itemID", 91514 },	-- Malevolent Gladiator's Dragonhide Legguards
+									{"select", "itemID", 91516 },	-- Malevolent Gladiator's Dragonhide Robes
+									{"select", "itemID", 91518 },	-- Malevolent Gladiator's Dragonhide Spaulders
+									{"select", "itemID", 91525 },	-- Malevolent Gladiator's Kodohide Gloves
+									{"select", "itemID", 91527 },	-- Malevolent Gladiator's Kodohide Helm
+									{"select", "itemID", 91529 },	-- Malevolent Gladiator's Kodohide Legguards
+									{"select", "itemID", 91531 },	-- Malevolent Gladiator's Kodohide Robes
+									{"select", "itemID", 91533 },	-- Malevolent Gladiator's Kodohide Spaulders
+									{"select", "itemID", 91542 },	-- Malevolent Gladiator's Wyrmhide Gloves
+									{"select", "itemID", 91544 },	-- Malevolent Gladiator's Wyrmhide Helm
+									{"select", "itemID", 91546 },	-- Malevolent Gladiator's Wyrmhide Legguards
+									{"select", "itemID", 91548 },	-- Malevolent Gladiator's Wyrmhide Robes
+									{"select", "itemID", 91550 },	-- Malevolent Gladiator's Wyrmhide Spaulders
+									{"exclude", "itemID", 138708 },	-- Exclude itself to stop duplicating 
+								},
+								["g"] = {
+									i(84832),	-- Malevolent Gladiator's Dragonhide Gloves
+									i(84852),	-- Malevolent Gladiator's Dragonhide Helm
+									i(84871),	-- Malevolent Gladiator's Dragonhide Legguards
+									i(84901),	-- Malevolent Gladiator's Dragonhide Robes
+									i(84916),	-- Malevolent Gladiator's Dragonhide Spaulders
+									i(84833),	-- Malevolent Gladiator's Kodohide Gloves
+									i(84850),	-- Malevolent Gladiator's Kodohide Helm
+									i(84882),	-- Malevolent Gladiator's Kodohide Legguards
+									i(84907),	-- Malevolent Gladiator's Kodohide Robes
+									i(84927),	-- Malevolent Gladiator's Kodohide Spaulders
+									i(84843),	-- Malevolent Gladiator's Wyrmhide Gloves
+									i(84861),	-- Malevolent Gladiator's Wyrmhide Helm
+									i(84880),	-- Malevolent Gladiator's Wyrmhide Legguards
+									i(84906),	-- Malevolent Gladiator's Wyrmhide Robes
+									i(84925),	-- Malevolent Gladiator's Wyrmhide Spaulders
+								},
+							}),
+							i(91510, {	-- Malevolent Gladiator's Dragonhide Gloves
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(91512, {	-- Malevolent Gladiator's Dragonhide Helm
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+							i(91514, {	-- Malevolent Gladiator's Dragonhide Legguards
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+							i(91516, {	-- Malevolent Gladiator's Dragonhide Robes
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+							i(91518, {	-- Malevolent Gladiator's Dragonhide Spaulders
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(91525, {	-- Malevolent Gladiator's Kodohide Gloves
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(91527, {	-- Malevolent Gladiator's Kodohide Helm
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+							i(91529, {	-- Malevolent Gladiator's Kodohide Legguards
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+							i(91531, {	-- Malevolent Gladiator's Kodohide Robes
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+							i(91533, {	-- Malevolent Gladiator's Kodohide Spaulders
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(91542, {	-- Malevolent Gladiator's Wyrmhide Gloves
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(91544, {	-- Malevolent Gladiator's Wyrmhide Helm
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+							i(91546, {	-- Malevolent Gladiator's Wyrmhide Legguards
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+							i(91548, {	-- Malevolent Gladiator's Wyrmhide Robes
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+							i(91550, {	-- Malevolent Gladiator's Wyrmhide Spaulders
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+						}),
+						cl(HUNTER, {
+							i(138707, {	-- Ensemble: Malevolent Gladiator's Chain Armor
+								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+								["sym"] = { 
+									{"sub", "pvp_set_ensemble", -9979, -675, -661, 3 },
+									{"select", "itemID", 84981 },	-- Malevolent Gladiator's Wristguards of Accuracy
+									{"select", "itemID", 84980 },	-- Malevolent Gladiator's Wristguards of Alacrity
+									{"select", "itemID", 84957 },	-- Malevolent Gladiator's Links of Accuracy
+									{"select", "itemID", 84958 },	-- Malevolent Gladiator's Links of Cruelty
+									{"select", "itemID", 84818 },	-- Malevolent Gladiator's Sabatons of Alacrity
+									{"select", "itemID", 84817 },	-- Malevolent Gladiator's Sabatons of Cruelty
+									{"select", "itemID", 91574 },	-- Malevolent Gladiator's Wristguards of Accuracy
+									{"select", "itemID", 91573 },	-- Malevolent Gladiator's Wristguards of Alacrity
+									{"select", "itemID", 91567 },	-- Malevolent Gladiator's Links of Accuracy
+									{"select", "itemID", 91565 },	-- Malevolent Gladiator's Links of Cruelty
+									{"select", "itemID", 91571 },	-- Malevolent Gladiator's Sabatons of Alacrity
+									{"select", "itemID", 91569 },	-- Malevolent Gladiator's Sabatons of Cruelty
+									{"select", "itemID", 91575 },	-- Malevolent Gladiator's Chain Armor
+									{"select", "itemID", 91577 },	-- Malevolent Gladiator's Chain Gauntlets
+									{"select", "itemID", 91579 },	-- Malevolent Gladiator's Chain Helm
+									{"select", "itemID", 91581 },	-- Malevolent Gladiator's Chain Leggings
+									{"select", "itemID", 91583 },	-- Malevolent Gladiator's Chain Spaulders
+									{"exclude", "itemID", 138707 },	-- Exclude itself to stop duplicating 
+								},
+								["g"] = {
+									i(84796),	-- Malevolent Gladiator's Chain Armor
+									i(84841),	-- Malevolent Gladiator's Chain Gauntlets
+									i(84858),	-- Malevolent Gladiator's Chain Helm
+									i(84874),	-- Malevolent Gladiator's Chain Leggings
+									i(84921),	-- Malevolent Gladiator's Chain Spaulders
+								},
+							}),
+							i(91575, {	-- Malevolent Gladiator's Chain Armor
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+							i(91577, {	-- Malevolent Gladiator's Chain Gauntlets
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(91579, {	-- Malevolent Gladiator's Chain Helm
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+							i(91581, {	-- Malevolent Gladiator's Chain Leggings
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+							i(91583, {	-- Malevolent Gladiator's Chain Spaulders
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+						}),
+						cl(MAGE, {
+							i(138711, {	-- Ensemble: Malevolent Gladiator's Silk Armor
+								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+								["sym"] = { 
+									{"sub", "pvp_set_ensemble", -10041, -675, -661, 8 },
+									{"select", "itemID", 84978 },	-- Malevolent Gladiator's Cuffs of Prowess
+									{"select", "itemID", 84954 },	-- Malevolent Gladiator's Cord of Cruelty
+									{"select", "itemID", 84814 },	-- Malevolent Gladiator's Treads of Cruelty
+									{"select", "itemID", 91475 },	-- Malevolent Gladiator's Cuffs of Prowess
+									{"select", "itemID", 91462 },	-- Malevolent Gladiator's Cord of Cruelty
+									{"select", "itemID", 91468 },	-- Malevolent Gladiator's Treads of Cruelty
+									{"select", "itemID", 91593 },	-- Malevolent Gladiator's Silk Amice
+									{"select", "itemID", 91587 },	-- Malevolent Gladiator's Silk Cowl
+									{"select", "itemID", 91585 },	-- Malevolent Gladiator's Silk Handguards
+									{"select", "itemID", 91591 },	-- Malevolent Gladiator's Silk Robe
+									{"select", "itemID", 91589 },	-- Malevolent Gladiator's Silk Trousers
+									{"exclude", "itemID", 138711 },	-- Exclude itself to stop duplicating 
+									{"exclude", "itemID", 97925 },	-- Malevolent Gladiator's Silk Amice
+									{"exclude", "itemID", 97835 },	-- Malevolent Gladiator's Silk Amice
+									{"exclude", "itemID", 97923 },	-- Malevolent Gladiator's Silk Cowl
+									{"exclude", "itemID", 97833 },	-- Malevolent Gladiator's Silk Cowl
+									{"exclude", "itemID", 97929 },	-- Malevolent Gladiator's Silk Handguards
+									{"exclude", "itemID", 97839 },	-- Malevolent Gladiator's Silk Handguards
+									{"exclude", "itemID", 97927 },	-- Malevolent Gladiator's Silk Robe
+									{"exclude", "itemID", 97837 },	-- Malevolent Gladiator's Silk Robe
+									{"exclude", "itemID", 97931 },	-- Malevolent Gladiator's Silk Trousers
+									{"exclude", "itemID", 97841 },	-- Malevolent Gladiator's Silk Trousers
+									
+								},
+								["g"] = {
+									i(84917),	-- Malevolent Gladiator's Silk Amice
+									i(84855),	-- Malevolent Gladiator's Silk Cowl
+									i(84837),	-- Malevolent Gladiator's Silk Handguards
+									i(84904),	-- Malevolent Gladiator's Silk Robe
+									i(84875),	-- Malevolent Gladiator's Silk Trousers
+								},
+							}),
+							i(91593, {	-- Malevolent Gladiator's Silk Amice
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(91587, {	-- Malevolent Gladiator's Silk Cowl
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+							i(91585, {	-- Malevolent Gladiator's Silk Handguards
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(91591, {	-- Malevolent Gladiator's Silk Robe
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+							i(91589, {	-- Malevolent Gladiator's Silk Trousers
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+						}),
+						cl(MONK, {
+							i(138709, {	-- Ensemble: Malevolent Gladiator's Ironskin Armor
+								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+								["sym"] = { 
+									{"sub", "pvp_set_ensemble", -10041, -675, -661, 10 },
+									{"select", "itemID", 84973 },	-- Malevolent Gladiator's Armwraps of Accuracy
+									{"select", "itemID", 84947 },	-- Malevolent Gladiator's Waistband of Cruelty
+									{"select", "itemID", 84809 },	-- Malevolent Gladiator's Boots of Alacrity
+									{"select", "itemID", 91692 },	-- Malevolent Gladiator's Armwraps of Accuracy
+									{"select", "itemID", 91595 },	-- Malevolent Gladiator's Waistband of Cruelty
+									{"select", "itemID", 91597 },	-- Malevolent Gladiator's Boots of Alacrity
+									{"select", "itemID", 91610 },	-- Malevolent Gladiator's Copperskin Gloves
+									{"select", "itemID", 91612 },	-- Malevolent Gladiator's Copperskin Helm
+									{"select", "itemID", 91614 },	-- Malevolent Gladiator's Copperskin Legguards
+									{"select", "itemID", 91616 },	-- Malevolent Gladiator's Copperskin Spaulders
+									{"select", "itemID", 91618 },	-- Malevolent Gladiator's Copperskin Tunic
+									{"select", "itemID", 91600 },	-- Malevolent Gladiator's Ironskin Gloves
+									{"select", "itemID", 91602 },	-- Malevolent Gladiator's Ironskin Helm
+									{"select", "itemID", 91604 },	-- Malevolent Gladiator's Ironskin Legguards
+									{"select", "itemID", 91606 },	-- Malevolent Gladiator's Ironskin Spaulders
+									{"select", "itemID", 91608 },	-- Malevolent Gladiator's Ironskin Tunic
+									{"exclude", "itemID", 138709 },	-- Exclude itself to stop duplicating 
+								},
+								["g"] = {
+									i(84836),	-- Malevolent Gladiator's Copperskin Gloves
+									i(84854),	-- Malevolent Gladiator's Copperskin Helm
+									i(84873),	-- Malevolent Gladiator's Copperskin Legguards
+									i(84920),	-- Malevolent Gladiator's Copperskin Spaulders
+									i(84903),	-- Malevolent Gladiator's Copperskin Tunic
+									i(84839),	-- Malevolent Gladiator's Ironskin Gloves
+									i(84857),	-- Malevolent Gladiator's Ironskin Helm
+									i(84877),	-- Malevolent Gladiator's Ironskin Legguards
+									i(84919),	-- Malevolent Gladiator's Ironskin Spaulders
+									i(84902),	-- Malevolent Gladiator's Ironskin Tunic
+								},
+							}),
+							i(91610, {	-- Malevolent Gladiator's Copperskin Gloves
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(91612, {	-- Malevolent Gladiator's Copperskin Helm
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+							i(91614, {	-- Malevolent Gladiator's Copperskin Legguards
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+							i(91616, {	-- Malevolent Gladiator's Copperskin Spaulders
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(91618, {	-- Malevolent Gladiator's Copperskin Tunic
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+							i(91600, {	-- Malevolent Gladiator's Ironskin Gloves
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(91602, {	-- Malevolent Gladiator's Ironskin Helm
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+							i(91604, {	-- Malevolent Gladiator's Ironskin Legguards
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+							i(91606, {	-- Malevolent Gladiator's Ironskin Spaulders
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(91608, {	-- Malevolent Gladiator's Ironskin Tunic
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+						}),
+						cl(PALADIN, {
+							i(138705, {	-- Ensemble: Malevolent Gladiator's Scaled Armor
+								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+								["sym"] = { 
+									{"sub", "pvp_set_ensemble", -10041, -675, -661, 2 },
+									{"select", "itemID", 84975 },	-- Malevolent Gladiator's Bracers of Meditation
+									{"select", "itemID", 84974 },	-- Malevolent Gladiator's Bracers of Prowess
+									{"select", "itemID", 84952 },	-- Malevolent Gladiator's Clasp of Cruelty
+									{"select", "itemID", 84955 },	-- Malevolent Gladiator's Clasp of Meditation
+									{"select", "itemID", 84811 },	-- Malevolent Gladiator's Greaves of Alacrity
+									{"select", "itemID", 84812 },	-- Malevolent Gladiator's Greaves of Meditation
+									{"select", "itemID", 91639 },	-- Malevolent Gladiator's Bracers of Meditation
+									{"select", "itemID", 91638 },	-- Malevolent Gladiator's Bracers of Prowess
+									{"select", "itemID", 91630 },	-- Malevolent Gladiator's Clasp of Cruelty
+									{"select", "itemID", 91632 },	-- Malevolent Gladiator's Clasp of Meditation
+									{"select", "itemID", 91634 },	-- Malevolent Gladiator's Greaves of Alacrity
+									{"select", "itemID", 91636 },	-- Malevolent Gladiator's Greaves of Meditation
+									{"select", "itemID", 91640 },	-- Malevolent Gladiator's Ornamented Chestguard
+									{"select", "itemID", 91642 },	-- Malevolent Gladiator's Ornamented Gloves
+									{"select", "itemID", 91644 },	-- Malevolent Gladiator's Ornamented Headcover
+									{"select", "itemID", 91646 },	-- Malevolent Gladiator's Ornamented Legplates
+									{"select", "itemID", 91648 },	-- Malevolent Gladiator's Ornamented Spaulders
+									{"select", "itemID", 91620 },	-- Malevolent Gladiator's Scaled Chestpiece
+									{"select", "itemID", 91622 },	-- Malevolent Gladiator's Scaled Gauntlets
+									{"select", "itemID", 91624 },	-- Malevolent Gladiator's Scaled Helm
+									{"select", "itemID", 91626 },	-- Malevolent Gladiator's Scaled Legguards
+									{"select", "itemID", 91628 },	-- Malevolent Gladiator's Scaled Shoulders
+									{"exclude", "itemID", 138705 },	-- Exclude itself to stop duplicating 
+								},
+								["g"] = {
+									i(84793),	-- Malevolent Gladiator's Ornamented Chestguard
+									i(84831),	-- Malevolent Gladiator's Ornamented Gloves
+									i(84849),	-- Malevolent Gladiator's Ornamented Headcover
+									i(84869),	-- Malevolent Gladiator's Ornamented Legplates
+									i(84914),	-- Malevolent Gladiator's Ornamented Spaulders
+									i(84794),	-- Malevolent Gladiator's Scaled Chestpiece
+									i(84834),	-- Malevolent Gladiator's Scaled Gauntlets
+									i(84851),	-- Malevolent Gladiator's Scaled Helm
+									i(84870),	-- Malevolent Gladiator's Scaled Legguards
+									i(84915),	-- Malevolent Gladiator's Scaled Shoulders
+								},
+							}),
+							i(91640, {	-- Malevolent Gladiator's Ornamented Chestguard
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+							i(91642, {	-- Malevolent Gladiator's Ornamented Gloves
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(91644, {	-- Malevolent Gladiator's Ornamented Headcover
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+							i(91646, {	-- Malevolent Gladiator's Ornamented Legplates
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+							i(91648, {	-- Malevolent Gladiator's Ornamented Spaulders
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(91620, {	-- Malevolent Gladiator's Scaled Chestpiece
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+							i(91622, {	-- Malevolent Gladiator's Scaled Gauntlets
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(91624, {	-- Malevolent Gladiator's Scaled Helm
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+							i(91626, {	-- Malevolent Gladiator's Scaled Legguards
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+							i(91628, {	-- Malevolent Gladiator's Scaled Shoulders
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+						}),
+						cl(PRIEST, {
+							i(138712, {	-- Ensemble: Malevolent Gladiator's Satin Armor
+								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+								["sym"] = { 
+									{"sub", "pvp_set_ensemble", -10041, -675, -661, 5 },
+									{"select", "itemID", 84979 },	-- Malevolent Gladiator's Cuffs of Meditation
+									{"select", "itemID", 84956 },	-- Malevolent Gladiator's Cord of Meditation
+									{"select", "itemID", 84816 },	-- Malevolent Gladiator's Treads of Meditation
+									{"select", "itemID", 91476 },	-- Malevolent Gladiator's Cuffs of Meditation
+									{"select", "itemID", 91466 },	-- Malevolent Gladiator's Cord of Meditation
+									{"select", "itemID", 91472 },	-- Malevolent Gladiator's Treads of Meditation
+									{"select", "itemID", 91662 },	-- Malevolent Gladiator's Mooncloth Gloves
+									{"select", "itemID", 91664 },	-- Malevolent Gladiator's Mooncloth Helm
+									{"select", "itemID", 91666 },	-- Malevolent Gladiator's Mooncloth Leggings
+									{"select", "itemID", 91670 },	-- Malevolent Gladiator's Mooncloth Mantle
+									{"select", "itemID", 91668 },	-- Malevolent Gladiator's Mooncloth Robe
+									{"select", "itemID", 91672 },	-- Malevolent Gladiator's Satin Gloves
+									{"select", "itemID", 91674 },	-- Malevolent Gladiator's Satin Hood
+									{"select", "itemID", 91676 },	-- Malevolent Gladiator's Satin Leggings
+									{"select", "itemID", 91680 },	-- Malevolent Gladiator's Satin Mantle
+									{"select", "itemID", 91678 },	-- Malevolent Gladiator's Satin Robe
+									{"exclude", "itemID", 138712 },	-- Exclude itself to stop duplicating 
+									{"exclude", "itemID", 97515 },	-- Malevolent Gladiator's Mooncloth Helm
+									{"exclude", "itemID", 97522 },	-- Malevolent Gladiator's Satin Gloves
+									{"exclude", "itemID", 97525 },	-- Malevolent Gladiator's Satin Leggings
+									{"exclude", "itemID", 97517 },	-- Malevolent Gladiator's Satin Mantle
+									{"exclude", "itemID", 97520 },	-- Malevolent Gladiator's Satin Robe
+								},
+								["g"] = {
+									i(84846),	-- Malevolent Gladiator's Mooncloth Gloves
+									i(84863),	-- Malevolent Gladiator's Mooncloth Helm
+									i(84883),	-- Malevolent Gladiator's Mooncloth Leggings
+									i(84928),	-- Malevolent Gladiator's Mooncloth Mantle
+									i(84908),	-- Malevolent Gladiator's Mooncloth Robe
+									i(84838),	-- Malevolent Gladiator's Satin Gloves
+									i(84864),	-- Malevolent Gladiator's Satin Hood
+									i(84884),	-- Malevolent Gladiator's Satin Leggings
+									i(84929),	-- Malevolent Gladiator's Satin Mantle
+									i(84909),	-- Malevolent Gladiator's Satin Robe
+								},
+							}),
+							i(91662, {	-- Malevolent Gladiator's Mooncloth Gloves
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(91664, {	-- Malevolent Gladiator's Mooncloth Helm
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+							i(91666, {	-- Malevolent Gladiator's Mooncloth Leggings
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+							i(91670, {	-- Malevolent Gladiator's Mooncloth Mantle
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(91668, {	-- Malevolent Gladiator's Mooncloth Robe
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+							i(91672, {	-- Malevolent Gladiator's Satin Gloves
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(91674, {	-- Malevolent Gladiator's Satin Hood
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+							i(91676, {	-- Malevolent Gladiator's Satin Leggings
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+							i(91680, {	-- Malevolent Gladiator's Satin Mantle
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(91678, {	-- Malevolent Gladiator's Satin Robe
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+						}),
+						cl(ROGUE, {
+							i(138710, {	-- Ensemble: Malevolent Gladiator's Leather Armor
+								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+								["sym"] = { 
+									{"sub", "pvp_set_ensemble", -10041, -675, -661, 4 },
+									{"select", "itemID", 84972 },	-- Malevolent Gladiator's Armwraps of Alacrity
+									{"select", "itemID", 84948 },	-- Malevolent Gladiator's Waistband of Accuracy
+									{"select", "itemID", 84808 },	-- Malevolent Gladiator's Boots of Cruelty
+									{"select", "itemID", 91692 },	-- Malevolent Gladiator's Armwraps of Alacrity
+									{"select", "itemID", 91688 },	-- Malevolent Gladiator's Waistband of Accuracy
+									{"select", "itemID", 91690 },	-- Malevolent Gladiator's Boots of Cruelty
+									{"select", "itemID", 91695 },	-- Malevolent Gladiator's Leather Gloves
+									{"select", "itemID", 91697 },	-- Malevolent Gladiator's Leather Helm
+									{"select", "itemID", 91699 },	-- Malevolent Gladiator's Leather Legguards
+									{"select", "itemID", 91701 },	-- Malevolent Gladiator's Leather Spaulders
+									{"select", "itemID", 91693 },	-- Malevolent Gladiator's Leather Tunic
+									{"exclude", "itemID", 138710 },	-- Exclude itself to stop duplicating 
+								},
+								["g"] = {
+									i(84830),	-- Malevolent Gladiator's Leather Gloves
+									i(84848),	-- Malevolent Gladiator's Leather Helm
+									i(84868),	-- Malevolent Gladiator's Leather Legguards
+									i(84913),	-- Malevolent Gladiator's Leather Spaulders
+									i(84792),	-- Malevolent Gladiator's Leather Tunic
+								},
+							}),
+							i(91695, {	-- Malevolent Gladiator's Leather Gloves
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(91697, {	-- Malevolent Gladiator's Leather Helm
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+							i(91699, {	-- Malevolent Gladiator's Leather Legguards
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+							i(91701, {	-- Malevolent Gladiator's Leather Spaulders
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(91693, {	-- Malevolent Gladiator's Leather Tunic
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+						}),
+						cl(SHAMAN, {
+							i(138706, {	-- Ensemble: Malevolent Gladiator's Ringmail Armor
+								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+								["sym"] = { 
+									{"sub", "pvp_set_ensemble", -10041, -675, -661, 7 },
+									{"select", "itemID", 84984 },	-- Malevolent Gladiator's Armbands of Meditation
+									{"select", "itemID", 84983 },	-- Malevolent Gladiator's Armbands of Prowess
+									{"select", "itemID", 84959 },	-- Malevolent Gladiator's Waistguard of Cruelty
+									{"select", "itemID", 84946 },	-- Malevolent Gladiator's Waistguard of Meditation
+									{"select", "itemID", 84820 },	-- Malevolent Gladiator's Footguards of Alacrity (Mail)
+									{"select", "itemID", 84821 },	-- Malevolent Gladiator's Footguards of Meditation (Mail)
+									{"select", "itemID", 91710 },	-- Malevolent Gladiator's Armbands of Meditation
+									{"select", "itemID", 91709 },	-- Malevolent Gladiator's Armbands of Prowess
+									{"select", "itemID", 91731 },	-- Malevolent Gladiator's Waistguard of Cruelty
+									{"select", "itemID", 91703 },	-- Malevolent Gladiator's Waistguard of Meditation
+									{"select", "itemID", 91705 },	-- Malevolent Gladiator's Footguards of Alacrity (Mail)
+									{"select", "itemID", 91707 },	-- Malevolent Gladiator's Footguards of Meditation (Mail)
+									{"select", "itemID", 91721 },	-- Malevolent Gladiator's Linked Armor
+									{"select", "itemID", 91723 },	-- Malevolent Gladiator's Linked Gauntlets
+									{"select", "itemID", 91725 },	-- Malevolent Gladiator's Linked Helm
+									{"select", "itemID", 91727 },	-- Malevolent Gladiator's Linked Leggings
+									{"select", "itemID", 91729 },	-- Malevolent Gladiator's Linked Spaulders
+									{"select", "itemID", 91733 },	-- Malevolent Gladiator's Mail Armor
+									{"select", "itemID", 91735 },	-- Malevolent Gladiator's Mail Gauntlets
+									{"select", "itemID", 91737 },	-- Malevolent Gladiator's Mail Helm
+									{"select", "itemID", 91739 },	-- Malevolent Gladiator's Mail Leggings
+									{"select", "itemID", 91741 },	-- Malevolent Gladiator's Mail Spaulders
+									{"select", "itemID", 91711 },	-- Malevolent Gladiator's Ringmail Armor
+									{"select", "itemID", 91713 },	-- Malevolent Gladiator's Ringmail Gauntlets
+									{"select", "itemID", 91715 },	-- Malevolent Gladiator's Ringmail Helm
+									{"select", "itemID", 91717 },	-- Malevolent Gladiator's Ringmail Leggings
+									{"select", "itemID", 91719 },	-- Malevolent Gladiator's Ringmail Spaulders
+									{"exclude", "itemID", 138706 },	-- Exclude itself to stop duplicating 
+								},
+								["g"] = {
+									i(84799),	-- Malevolent Gladiator's Linked Armor
+									i(84844),	-- Malevolent Gladiator's Linked Gauntlets
+									i(84862),	-- Malevolent Gladiator's Linked Helm
+									i(84881),	-- Malevolent Gladiator's Linked Leggings
+									i(84926),	-- Malevolent Gladiator's Linked Spaulders
+									i(84798),	-- Malevolent Gladiator's Mail Armor
+									i(84845),	-- Malevolent Gladiator's Mail Gauntlets
+									i(84860),	-- Malevolent Gladiator's Mail Helm
+									i(84879),	-- Malevolent Gladiator's Mail Leggings
+									i(84924),	-- Malevolent Gladiator's Mail Spaulders
+									i(84800),	-- Malevolent Gladiator's Ringmail Armor
+									i(84847),	-- Malevolent Gladiator's Ringmail Gauntlets
+									i(84865),	-- Malevolent Gladiator's Ringmail Helm
+									i(84885),	-- Malevolent Gladiator's Ringmail Leggings
+									i(84930),	-- Malevolent Gladiator's Ringmail Spaulders
+								},
+							}),
+							i(91721, {	-- Malevolent Gladiator's Linked Armor
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+							i(91723, {	-- Malevolent Gladiator's Linked Gauntlets
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(91725, {	-- Malevolent Gladiator's Linked Helm
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+							i(91727, {	-- Malevolent Gladiator's Linked Leggings
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+							i(91729, {	-- Malevolent Gladiator's Linked Spaulders
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(91733, {	-- Malevolent Gladiator's Mail Armor
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+							i(91735, {	-- Malevolent Gladiator's Mail Gauntlets
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(91737, {	-- Malevolent Gladiator's Mail Helm
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+							i(91739, {	-- Malevolent Gladiator's Mail Leggings
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+							i(91741, {	-- Malevolent Gladiator's Mail Spaulders
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(91711, {	-- Malevolent Gladiator's Ringmail Armor
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+							i(91713, {	-- Malevolent Gladiator's Ringmail Gauntlets
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(91715, {	-- Malevolent Gladiator's Ringmail Helm
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+							i(91717, {	-- Malevolent Gladiator's Ringmail Leggings
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+							i(91719, {	-- Malevolent Gladiator's Ringmail Spaulders
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+						}),
+						cl(WARLOCK, {
+							i(138713, {	-- Ensemble: Malevolent Gladiator's Felweave Armor
+								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+								["sym"] = { 
+									{"sub", "pvp_set_ensemble", -10041, -675, -661, 9 },
+									{"select", "itemID", 84977 },	-- Malevolent Gladiator's Cuffs of Accuracy
+									{"select", "itemID", 84955 },	-- Malevolent Gladiator's Cord of Accuracy
+									{"select", "itemID", 84815 },	-- Malevolent Gladiator's Treads of Alacrity
+									{"select", "itemID", 91474 },	-- Malevolent Gladiator's Cuffs of Accuracy
+									{"select", "itemID", 91464 },	-- Malevolent Gladiator's Cord of Accuracy
+									{"select", "itemID", 91470 },	-- Malevolent Gladiator's Treads of Alacrity
+									{"select", "itemID", 91781 },	-- Malevolent Gladiator's Felweave Amice
+									{"select", "itemID", 91775 },	-- Malevolent Gladiator's Felweave Cowl
+									{"select", "itemID", 91773 },	-- Malevolent Gladiator's Felweave Handguards
+									{"select", "itemID", 91779 },	-- Malevolent Gladiator's Felweave Raiment
+									{"select", "itemID", 91777 },	-- Malevolent Gladiator's Felweave Trousers
+									{"exclude", "itemID", 138713 },	-- Exclude itself to stop duplicating 
+								},
+								["g"] = {
+									i(84923),	-- Malevolent Gladiator's Felweave Amice
+									i(84859),	-- Malevolent Gladiator's Felweave Cowl
+									i(84842),	-- Malevolent Gladiator's Felweave Handguards
+									i(84905),	-- Malevolent Gladiator's Felweave Raiment
+									i(84878),	-- Malevolent Gladiator's Felweave Trousers
+								},
+							}),
+							i(91781, {	-- Malevolent Gladiator's Felweave Amice
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(91775, {	-- Malevolent Gladiator's Felweave Cowl
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+							i(91773, {	-- Malevolent Gladiator's Felweave Handguards
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(91779, {	-- Malevolent Gladiator's Felweave Raiment
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+							i(91777, {	-- Malevolent Gladiator's Felweave Trousers
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+						}),
+						cl(WARRIOR, {
+							i(138703, {	-- Ensemble: Malevolent Gladiator's Plate Armor
+								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+								["sym"] = { 
+									{"sub", "pvp_set_ensemble", -10041, -675, -661, 1 },
+									{"select", "itemID", 84985 },	-- Malevolent Gladiator's Armplates of Alacrity
+									{"select", "itemID", 84950 },	-- Malevolent Gladiator's Girdle of Prowess
+									{"select", "itemID", 84822 },	-- Malevolent Gladiator's Warboots of Alacrity
+									{"select", "itemID", 91659 },	-- Malevolent Gladiator's Armplates of Alacrity
+									{"select", "itemID", 91652 },	-- Malevolent Gladiator's Girdle of Prowess
+									{"select", "itemID", 91656 },	-- Malevolent Gladiator's Warboots of Alacrity
+									{"select", "itemID", 91783 },	-- Malevolent Gladiator's Plate Chestpiece
+									{"select", "itemID", 91785 },	-- Malevolent Gladiator's Plate Gauntlets
+									{"select", "itemID", 91787 },	-- Malevolent Gladiator's Plate Helm
+									{"select", "itemID", 91789 },	-- Malevolent Gladiator's Plate Legguards
+									{"select", "itemID", 91791 },	-- Malevolent Gladiator's Plate Shoulders
+									{"exclude", "itemID", 138703 },	-- Exclude itself to stop duplicating 
+								},
+								["g"] = {
+									i(84797),	-- Malevolent Gladiator's Plate Chestpiece
+									i(84840),	-- Malevolent Gladiator's Plate Gauntlets
+									i(84856),	-- Malevolent Gladiator's Plate Helm
+									i(84876),	-- Malevolent Gladiator's Plate Legguards
+									i(84922),	-- Malevolent Gladiator's Plate Shoulders
+								},
+							}),
+							i(91783, {	-- Malevolent Gladiator's Plate Chestpiece
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+							i(91785, {	-- Malevolent Gladiator's Plate Gauntlets
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(91787, {	-- Malevolent Gladiator's Plate Helm
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+							i(91789, {	-- Malevolent Gladiator's Plate Legguards
+								["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+							}),
+							i(91791, {	-- Malevolent Gladiator's Plate Shoulders
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+						}),
+						n(-322, {	-- Back
+							i(91453, {	-- Malevolent Gladiator's Cape of Cruelty
+								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+							}),
+							i(91454, {	-- Malevolent Gladiator's Cape of Prowess
+								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+							}),
+							i(91764, {	-- Malevolent Gladiator's Cloak of Alacrity
+								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+							}),
+							i(91765, {	-- Malevolent Gladiator's Cloak of Prowess
+								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+							}),
+							i(91477, {	-- Malevolent Gladiator's Drape of Cruelty
+								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+							}),
+							i(91479, {	-- Malevolent Gladiator's Drape of Meditation
+								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+							}),
+							i(91478, {	-- Malevolent Gladiator's Drape of Prowess
+								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+							}),
+						}),
+						n(-326, {	-- Wrists
+							i(91710, {	-- Malevolent Gladiator's Armbands of Meditation
+								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+							}),
+							i(91709, {	-- Malevolent Gladiator's Armbands of Prowess
+								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+							}),
+							i(91659, {	-- Malevolent Gladiator's Armplates of Alacrity
+								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+							}),
+							i(91658, {	-- Malevolent Gladiator's Armplates of Proficiency
+								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+							}),
+							i(91599, {	-- Malevolent Gladiator's Armwraps of Accuracy
+								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+							}),
+							i(91692, {	-- Malevolent Gladiator's Armwraps of Alacrity
+								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+							}),
+							i(91524, {	-- Malevolent Gladiator's Bindings of Meditation
+								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+							}),
+							i(91541, {	-- Malevolent Gladiator's Bindings of Prowess
+								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+							}),
+							i(91639, {	-- Malevolent Gladiator's Bracers of Meditation
+								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+							}),
+							i(91638, {	-- Malevolent Gladiator's Bracers of Prowess
+								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+							}),
+							i(91474, {	-- Malevolent Gladiator's Cuffs of Accuracy
+								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+							}),
+							i(91476, {	-- Malevolent Gladiator's Cuffs of Meditation
+								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+							}),
+							i(91475, {	-- Malevolent Gladiator's Cuffs of Prowess
+								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+							}),
+							i(91574, {	-- Malevolent Gladiator's Wristguards of Accuracy
+								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+							}),
+							i(91573, {	-- Malevolent Gladiator's Wristguards of Alacrity
+								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+							}),
+						}),
+						n(-328, {	-- Waist
+							i(91537, {	-- Malevolent Gladiator's Belt of Cruelty
+								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+							}),
+							i(91520, {	-- Malevolent Gladiator's Belt of Meditation
+								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+							}),
+							i(91630, {	-- Malevolent Gladiator's Clasp of Cruelty
+								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+							}),
+							i(91632, {	-- Malevolent Gladiator's Clasp of Meditation
+								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+							}),
+							i(91464, {	-- Malevolent Gladiator's Cord of Accuracy
+								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+							}),
+							i(91462, {	-- Malevolent Gladiator's Cord of Cruelty
+								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+							}),
+							i(91466, {	-- Malevolent Gladiator's Cord of Meditation
+								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+							}),
+							i(91650, {	-- Malevolent Gladiator's Girdle of Accuracy
+								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+							}),
+							i(91652, {	-- Malevolent Gladiator's Girdle of Prowess
+								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+							}),
+							i(91567, {	-- Malevolent Gladiator's Links of Accuracy
+								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+							}),
+							i(91565, {	-- Malevolent Gladiator's Links of Cruelty
+								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+							}),
+							i(91688, {	-- Malevolent Gladiator's Waistband of Accuracy
+								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+							}),
+							i(91595, {	-- Malevolent Gladiator's Waistband of Cruelty
+								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+							}),
+							i(91731, {	-- Malevolent Gladiator's Waistguard of Cruelty
+								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+							}),
+							i(91703, {	-- Malevolent Gladiator's Waistguard of Meditation
+								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+							}),
+						}),	
+						n(-330, {	-- Feet
+							i(91597, {	-- Malevolent Gladiator's Boots of Alacrity
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(91690, {	-- Malevolent Gladiator's Boots of Cruelty
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(91539, {	-- Malevolent Gladiator's Footguards of Alacrity (Leahter)
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(91705, {	-- Malevolent Gladiator's Footguards of Alacrity (Mail)
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(91522, {	-- Malevolent Gladiator's Footguards of Meditation (Leather)
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(91707, {	-- Malevolent Gladiator's Footguards of Meditation (Mail)
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),						
+							i(91634, {	-- Malevolent Gladiator's Greaves of Alacrity
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(91636, {	-- Malevolent Gladiator's Greaves of Meditation
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(91571, {	-- Malevolent Gladiator's Sabatons of Alacrity
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(91569, {	-- Malevolent Gladiator's Sabatons of Cruelty
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(91470, {	-- Malevolent Gladiator's Treads of Alacrity
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(91468, {	-- Malevolent Gladiator's Treads of Cruelty
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(91472, {	-- Malevolent Gladiator's Treads of Meditation
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),					
+							i(91656, {	-- Malevolent Gladiator's Warboots of Alacrity
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+							i(91654, {	-- Malevolent Gladiator's Warboots of Cruelty
+								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+							}),
+						}),
 					},
-				}),
+				}),	
 				n(65165, {	-- Doris Chiltonius (Removed Season 12 Vendor)
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
-					["g"] = { -- Didn't add the Season 12 Gear here because it is linked to the Ensembles in the PvP file
-						un(REMOVED_FROM_GAME, i(84911)),	-- Malevolent Gladiator's Barrier
-						un(REMOVED_FROM_GAME, i(84787)),	-- Malevolent Gladiator's Battle Staff
-						un(REMOVED_FROM_GAME, i(84970)),	-- Malevolent Gladiator's Bonecracker
-						un(REMOVED_FROM_GAME, i(84785)),	-- Malevolent Gladiator's Bonegrinder
-						un(REMOVED_FROM_GAME, i(84965)),	-- Malevolent Gladiator's Cleaver
-						un(REMOVED_FROM_GAME, i(84791)),	-- Malevolent Gladiator's Decapitator
-						un(REMOVED_FROM_GAME, i(84866)),	-- Malevolent Gladiator's Endgame
-						un(REMOVED_FROM_GAME, i(84788)),	-- Malevolent Gladiator's Energy Staff
-						un(REMOVED_FROM_GAME, i(84971)),	-- Malevolent Gladiator's Gavel
-						un(REMOVED_FROM_GAME, i(84790)),	-- Malevolent Gladiator's Greatsword
-						un(REMOVED_FROM_GAME, i(84966)),	-- Malevolent Gladiator's Hacker
-						un(REMOVED_FROM_GAME, i(84896)),	-- Malevolent Gladiator's Longbow
-						un(REMOVED_FROM_GAME, i(84786)),	-- Malevolent Gladiator's Pike
-						un(REMOVED_FROM_GAME, i(84964)),	-- Malevolent Gladiator's Pummeler
-						un(REMOVED_FROM_GAME, i(84969)),	-- Malevolent Gladiator's Quickblade
-						un(REMOVED_FROM_GAME, i(84912)),	-- Malevolent Gladiator's Redoubt
-						un(REMOVED_FROM_GAME, i(84963)),	-- Malevolent Gladiator's Render
-						un(REMOVED_FROM_GAME, i(84867)),	-- Malevolent Gladiator's Reprieve
-						un(REMOVED_FROM_GAME, i(84900)),	-- Malevolent Gladiator's Rifle
-						un(REMOVED_FROM_GAME, i(84962)),	-- Malevolent Gladiator's Ripper
-						un(REMOVED_FROM_GAME, i(84967)),	-- Malevolent Gladiator's Shanker
-						un(REMOVED_FROM_GAME, i(84910)),	-- Malevolent Gladiator's Shield Wall
-						un(REMOVED_FROM_GAME, i(84968)),	-- Malevolent Gladiator's Slicer
-						un(REMOVED_FROM_GAME, i(84961)),	-- Malevolent Gladiator's Spellblade
-						un(REMOVED_FROM_GAME, i(84789)),	-- Malevolent Gladiator's Staff
-					},
 				}),
 				n(69965, {	-- Doris Chiltonius <Conquest Quartermaster> Season 14 Elite
 					["races"] = HORDE_ONLY,
