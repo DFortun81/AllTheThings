@@ -22,6 +22,7 @@ _.Zones =
 						crit(5, {	-- Consumption
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
+						i(187402),	-- All-Consuming Loop
 					},
 				}),
 				n(177903, {	-- Dominated Protector
@@ -98,6 +99,7 @@ _.Zones =
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 						i(187248),	-- Kroke's Gleaming Spaulders
+						i(187250),	-- Kroke's Wingspiked Pauldrons
 					},
 				}),
 				n(179684, {	-- Malbog
