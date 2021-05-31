@@ -8658,84 +8658,86 @@ _.PVP =
 										{"sub", "pvp_weapons_ensemble", -10041, -678, -9914, -661 },
 										{"exclude", "itemID", 144248 },	-- Exclude itself to stop duplicating
 									},
-								}),
-								i(102785, {	-- Prideful Gladiator's Barrier
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(102596, {	-- Prideful Gladiator's Baton of Light
-									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-								}),
-								i(102601, {	-- Prideful Gladiator's Battle Staff
-									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-								}),
-								i(102609, {	-- Prideful Gladiator's Bonecracker
-									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-								}),
-								i(102600, {	-- Prideful Gladiator's Cleaver
-									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-								}),
-								i(102610, {	-- Prideful Gladiator's Decapitator
-									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-								}),
-								i(102786, {	-- Prideful Gladiator's Endgame
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(102607, {	-- Prideful Gladiator's Energy Staff
-									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-								}),
-								i(102590, {	-- Prideful Gladiator's Gavel
-									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-								}),
-								i(102599, {	-- Prideful Gladiator's Greatsword
-									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-								}),
-								i(102604, {	-- Prideful Gladiator's Hacker
-									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-								}),
-								i(102591, {	-- Prideful Gladiator's Longbow
-									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-								}),
-								i(102598, {	-- Prideful Gladiator's Mageblade
-									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-								}),
-								i(102606, {	-- Prideful Gladiator's Pike
-									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-								}),
-								i(102592, {	-- Prideful Gladiator's Pummeler
-									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-								}),
-								i(102612, {	-- Prideful Gladiator's Quickblade
-									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-								}),
-								i(102782, {	-- Prideful Gladiator's Redoubt
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(102608, {	-- Prideful Gladiator's Render
-									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-								}),
-								i(102783, {	-- Prideful Gladiator's Reprieve
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(102597, {	-- Prideful Gladiator's Rifle
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(102603, {	-- Prideful Gladiator's Ripper
-									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-								}),
-								i(102602, {	-- Prideful Gladiator's Shanker
-									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-								}),
-								i(102784, {	-- Prideful Gladiator's Shield Wall
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(102605, {	-- Prideful Gladiator's Slicer
-									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-								}),
-								i(102594, {	-- Prideful Gladiator's Spellblade
-									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-								}),
-								i(102593, {	-- Prideful Gladiator's Touch of Defeat
-									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+									["g"] = {
+										i(102785, {	-- Prideful Gladiator's Barrier
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(102596, {	-- Prideful Gladiator's Baton of Light
+											["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+										}),
+										i(102601, {	-- Prideful Gladiator's Battle Staff
+											["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+										}),
+										i(102609, {	-- Prideful Gladiator's Bonecracker
+											["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+										}),
+										i(102600, {	-- Prideful Gladiator's Cleaver
+											["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+										}),
+										i(102610, {	-- Prideful Gladiator's Decapitator
+											["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+										}),
+										i(102786, {	-- Prideful Gladiator's Endgame
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(102607, {	-- Prideful Gladiator's Energy Staff
+											["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+										}),
+										i(102590, {	-- Prideful Gladiator's Gavel
+											["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+										}),
+										i(102599, {	-- Prideful Gladiator's Greatsword
+											["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+										}),
+										i(102604, {	-- Prideful Gladiator's Hacker
+											["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+										}),
+										i(102591, {	-- Prideful Gladiator's Longbow
+											["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+										}),
+										i(102598, {	-- Prideful Gladiator's Mageblade
+											["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+										}),
+										i(102606, {	-- Prideful Gladiator's Pike
+											["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+										}),
+										i(102592, {	-- Prideful Gladiator's Pummeler
+											["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+										}),
+										i(102612, {	-- Prideful Gladiator's Quickblade
+											["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+										}),
+										i(102782, {	-- Prideful Gladiator's Redoubt
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(102608, {	-- Prideful Gladiator's Render
+											["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+										}),
+										i(102783, {	-- Prideful Gladiator's Reprieve
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(102597, {	-- Prideful Gladiator's Rifle
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(102603, {	-- Prideful Gladiator's Ripper
+											["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+										}),
+										i(102602, {	-- Prideful Gladiator's Shanker
+											["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+										}),
+										i(102784, {	-- Prideful Gladiator's Shield Wall
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(102605, {	-- Prideful Gladiator's Slicer
+											["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+										}),
+										i(102594, {	-- Prideful Gladiator's Spellblade
+											["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+										}),
+										i(102593, {	-- Prideful Gladiator's Touch of Defeat
+											["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+										}),
+									},
 								}),
 							}),	
 							cl(DEATHKNIGHT, {
@@ -8748,21 +8750,23 @@ _.PVP =
 										{"select", "itemID", 102745 },	-- Prideful Gladiator's Warboots of Alacrity
 										{"exclude", "itemID", 138639 },	-- Exclude itself to stop duplicating 
 									},
-								}),
-								i(102676, {	-- Prideful Gladiator's Dreadplate Chestpiece
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(102650, {	-- Prideful Gladiator's Dreadplate Gauntlets
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(102713, {	-- Prideful Gladiator's Dreadplate Helm
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(102651, {	-- Prideful Gladiator's Dreadplate Legguards
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(102652, {	-- Prideful Gladiator's Dreadplate Shoulders
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+									["g"] = {
+										i(102676, {	-- Prideful Gladiator's Dreadplate Chestpiece
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(102650, {	-- Prideful Gladiator's Dreadplate Gauntlets
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(102713, {	-- Prideful Gladiator's Dreadplate Helm
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(102651, {	-- Prideful Gladiator's Dreadplate Legguards
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(102652, {	-- Prideful Gladiator's Dreadplate Shoulders
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+									},
 								}),
 							}),
 							cl(DRUID, {
@@ -8778,51 +8782,53 @@ _.PVP =
 										{"select", "itemID", 102760 },	-- Prideful Gladiator's Footguards of Meditation (Leather)
 										{"exclude", "itemID", 138647 },	-- Exclude itself to stop duplicating 
 									},
-								}),
-								i(102739, {	-- Prideful Gladiator's Dragonhide Gloves
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(102653, {	-- Prideful Gladiator's Dragonhide Helm
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(102654, {	-- Prideful Gladiator's Dragonhide Legguards
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(102740, {	-- Prideful Gladiator's Dragonhide Robes
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(102741, {	-- Prideful Gladiator's Dragonhide Spaulders
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(102657, {	-- Prideful Gladiator's Kodohide Gloves
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(102776, {	-- Prideful Gladiator's Kodohide Helm
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(102761, {	-- Prideful Gladiator's Kodohide Legguards
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(102721, {	-- Prideful Gladiator's Kodohide Robes
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(102658, {	-- Prideful Gladiator's Kodohide Spaulders
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(102696, {	-- Prideful Gladiator's Wyrmhide Gloves
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(102634, {	-- Prideful Gladiator's Wyrmhide Helm
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(102767, {	-- Prideful Gladiator's Wyrmhide Legguards
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(102614, {	-- Prideful Gladiator's Wyrmhide Robes
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(102700, {	-- Prideful Gladiator's Wyrmhide Spaulders
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+									["g"] = {
+										i(102739, {	-- Prideful Gladiator's Dragonhide Gloves
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(102653, {	-- Prideful Gladiator's Dragonhide Helm
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(102654, {	-- Prideful Gladiator's Dragonhide Legguards
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(102740, {	-- Prideful Gladiator's Dragonhide Robes
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(102741, {	-- Prideful Gladiator's Dragonhide Spaulders
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(102657, {	-- Prideful Gladiator's Kodohide Gloves
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(102776, {	-- Prideful Gladiator's Kodohide Helm
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(102761, {	-- Prideful Gladiator's Kodohide Legguards
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(102721, {	-- Prideful Gladiator's Kodohide Robes
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(102658, {	-- Prideful Gladiator's Kodohide Spaulders
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(102696, {	-- Prideful Gladiator's Wyrmhide Gloves
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(102634, {	-- Prideful Gladiator's Wyrmhide Helm
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(102767, {	-- Prideful Gladiator's Wyrmhide Legguards
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(102614, {	-- Prideful Gladiator's Wyrmhide Robes
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(102700, {	-- Prideful Gladiator's Wyrmhide Spaulders
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+									},
 								}),
 							}),
 							cl(HUNTER, {
@@ -8838,21 +8844,23 @@ _.PVP =
 										{"select", "itemID", 102729 },	-- Prideful Gladiator's Sabatons of Cruelty
 										{"exclude", "itemID", 138645 },	-- Exclude itself to stop duplicating 
 									},
-								}),	
-								i(102689, {	-- Prideful Gladiator's Chain Armor
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(102737, {	-- Prideful Gladiator's Chain Gauntlets
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(102690, {	-- Prideful Gladiator's Chain Helm
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(102670, {	-- Prideful Gladiator's Chain Leggings
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(102734, {	-- Prideful Gladiator's Chain Spaulders
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+									["g"] = {
+										i(102689, {	-- Prideful Gladiator's Chain Armor
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(102737, {	-- Prideful Gladiator's Chain Gauntlets
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(102690, {	-- Prideful Gladiator's Chain Helm
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(102670, {	-- Prideful Gladiator's Chain Leggings
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(102734, {	-- Prideful Gladiator's Chain Spaulders
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+									},
 								}),
 							}),
 							cl(MAGE, {
@@ -8865,21 +8873,23 @@ _.PVP =
 										{"select", "itemID", 102686 },	-- Prideful Gladiator's Treads of Cruelty
 										{"exclude", "itemID", 138653 },	-- Exclude itself to stop duplicating 
 									},
-								}),
-								i(102673, {	-- Prideful Gladiator's Silk Amice
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(102667, {	-- Prideful Gladiator's Silk Cowl
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(102735, {	-- Prideful Gladiator's Silk Handguards
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(102715, {	-- Prideful Gladiator's Silk Robe
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(102648, {	-- Prideful Gladiator's Silk Trousers
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+									["g"] = {
+										i(102673, {	-- Prideful Gladiator's Silk Amice
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(102667, {	-- Prideful Gladiator's Silk Cowl
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(102735, {	-- Prideful Gladiator's Silk Handguards
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(102715, {	-- Prideful Gladiator's Silk Robe
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(102648, {	-- Prideful Gladiator's Silk Trousers
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+									},
 								}),
 							}),	
 							cl(MONK, {
@@ -8892,36 +8902,38 @@ _.PVP =
 										{"select", "itemID", 102716 },	-- Prideful Gladiator's Boots of Alacrity
 										{"exclude", "itemID", 138649 },	-- Exclude itself to stop duplicating 
 									},
-								}),
-								i(102627, {	-- Prideful Gladiator's Copperskin Gloves
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(102628, {	-- Prideful Gladiator's Copperskin Helm
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(102762, {	-- Prideful Gladiator's Copperskin Legguards
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(102777, {	-- Prideful Gladiator's Copperskin Spaulders
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(102763, {	-- Prideful Gladiator's Copperskin Tunic
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(102675, {	-- Prideful Gladiator's Ironskin Gloves
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(102712, {	-- Prideful Gladiator's Ironskin Helm
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(102656, {	-- Prideful Gladiator's Ironskin Legguards
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(102626, {	-- Prideful Gladiator's Ironskin Spaulders
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(102720, {	-- Prideful Gladiator's Ironskin Tunic
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+									["g"] = {
+										i(102627, {	-- Prideful Gladiator's Copperskin Gloves
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(102628, {	-- Prideful Gladiator's Copperskin Helm
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(102762, {	-- Prideful Gladiator's Copperskin Legguards
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(102777, {	-- Prideful Gladiator's Copperskin Spaulders
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(102763, {	-- Prideful Gladiator's Copperskin Tunic
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(102675, {	-- Prideful Gladiator's Ironskin Gloves
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(102712, {	-- Prideful Gladiator's Ironskin Helm
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(102656, {	-- Prideful Gladiator's Ironskin Legguards
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(102626, {	-- Prideful Gladiator's Ironskin Spaulders
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(102720, {	-- Prideful Gladiator's Ironskin Tunic
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+									},
 								}),
 							}),
 							cl(PALADIN, {
@@ -8937,36 +8949,38 @@ _.PVP =
 										{"select", "itemID", 102639 },	-- Prideful Gladiator's Greaves of Meditation
 										{"exclude", "itemID", 138641 },	-- Exclude itself to stop duplicating 
 									},
-								}),
-								i(102632, {	-- Prideful Gladiator's Ornamented Chestguard
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(102722, {	-- Prideful Gladiator's Ornamented Gloves
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(102635, {	-- Prideful Gladiator's Ornamented Headcover
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(102768, {	-- Prideful Gladiator's Ornamented Legplates
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(102697, {	-- Prideful Gladiator's Ornamented Spaulders
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(102747, {	-- Prideful Gladiator's Scaled Chestpiece
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(102630, {	-- Prideful Gladiator's Scaled Gauntlets
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(102779, {	-- Prideful Gladiator's Scaled Helm
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(102780, {	-- Prideful Gladiator's Scaled Legguards
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(102744, {	-- Prideful Gladiator's Scaled Shoulders
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+									["g"] = {
+										i(102632, {	-- Prideful Gladiator's Ornamented Chestguard
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(102722, {	-- Prideful Gladiator's Ornamented Gloves
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(102635, {	-- Prideful Gladiator's Ornamented Headcover
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(102768, {	-- Prideful Gladiator's Ornamented Legplates
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(102697, {	-- Prideful Gladiator's Ornamented Spaulders
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(102747, {	-- Prideful Gladiator's Scaled Chestpiece
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(102630, {	-- Prideful Gladiator's Scaled Gauntlets
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(102779, {	-- Prideful Gladiator's Scaled Helm
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(102780, {	-- Prideful Gladiator's Scaled Legguards
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(102744, {	-- Prideful Gladiator's Scaled Shoulders
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+									},
 								}),
 							}),
 							cl(PRIEST, {
@@ -8979,36 +8993,38 @@ _.PVP =
 										{"select", "itemID", 102752 },	-- Prideful Gladiator's Treads of Meditation
 										{"exclude", "itemID", 138655 },	-- Exclude itself to stop duplicating 
 									},
-								}),
-								i(102615, {	-- Prideful Gladiator's Mooncloth Gloves
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(102703, {	-- Prideful Gladiator's Mooncloth Helm
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(102704, {	-- Prideful Gladiator's Mooncloth Leggings
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(102750, {	-- Prideful Gladiator's Mooncloth Mantle
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(102681, {	-- Prideful Gladiator's Mooncloth Robe
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(102707, {	-- Prideful Gladiator's Satin Gloves
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(102751, {	-- Prideful Gladiator's Satin Hood
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(102621, {	-- Prideful Gladiator's Satin Leggings
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(102671, {	-- Prideful Gladiator's Satin Mantle
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(102622, {	-- Prideful Gladiator's Satin Robe
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+									["g"] = {
+										i(102615, {	-- Prideful Gladiator's Mooncloth Gloves
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(102703, {	-- Prideful Gladiator's Mooncloth Helm
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(102704, {	-- Prideful Gladiator's Mooncloth Leggings
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(102750, {	-- Prideful Gladiator's Mooncloth Mantle
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(102681, {	-- Prideful Gladiator's Mooncloth Robe
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(102707, {	-- Prideful Gladiator's Satin Gloves
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(102751, {	-- Prideful Gladiator's Satin Hood
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(102621, {	-- Prideful Gladiator's Satin Leggings
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(102671, {	-- Prideful Gladiator's Satin Mantle
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(102622, {	-- Prideful Gladiator's Satin Robe
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+									},
 								}),
 							}),
 							cl(ROGUE, {
@@ -9021,21 +9037,23 @@ _.PVP =
 										{"select", "itemID", 102660 },	-- Prideful Gladiator's Boots of Cruelty
 										{"exclude", "itemID", 138651 },	-- Exclude itself to stop duplicating 
 									},
-								}),
-								i(102727, {	-- Prideful Gladiator's Leather Gloves
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(102731, {	-- Prideful Gladiator's Leather Helm
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(102730, {	-- Prideful Gladiator's Leather Legguards
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(102710, {	-- Prideful Gladiator's Leather Spaulders
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(102663, {	-- Prideful Gladiator's Leather Tunic
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+									["g"] = {
+										i(102727, {	-- Prideful Gladiator's Leather Gloves
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(102731, {	-- Prideful Gladiator's Leather Helm
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(102730, {	-- Prideful Gladiator's Leather Legguards
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(102710, {	-- Prideful Gladiator's Leather Spaulders
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(102663, {	-- Prideful Gladiator's Leather Tunic
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+									},
 								}),
 							}),
 							cl(SHAMAN, {
@@ -9051,51 +9069,53 @@ _.PVP =
 										{"select", "itemID", 102623 },	-- Prideful Gladiator's Footguards of Meditation (Mail)
 										{"exclude", "itemID", 138643 },	-- Exclude itself to stop duplicating 
 									},
-								}),	
-								i(102759, {	-- Prideful Gladiator's Linked Armor
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(102742, {	-- Prideful Gladiator's Linked Gauntlets
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(102714, {	-- Prideful Gladiator's Linked Helm
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(102778, {	-- Prideful Gladiator's Linked Leggings
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(102629, {	-- Prideful Gladiator's Linked Spaulders
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(102743, {	-- Prideful Gladiator's Mail Armor
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(102692, {	-- Prideful Gladiator's Mail Gauntlets
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(102693, {	-- Prideful Gladiator's Mail Helm
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(102781, {	-- Prideful Gladiator's Mail Leggings
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(102637, {	-- Prideful Gladiator's Mail Spaulders
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(102717, {	-- Prideful Gladiator's Ringmail Armor
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(102774, {	-- Prideful Gladiator's Ringmail Gauntlets
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(102718, {	-- Prideful Gladiator's Ringmail Helm
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(102719, {	-- Prideful Gladiator's Ringmail Leggings
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(102655, {	-- Prideful Gladiator's Ringmail Spaulders
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										["g"] = {
+										i(102759, {	-- Prideful Gladiator's Linked Armor
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(102742, {	-- Prideful Gladiator's Linked Gauntlets
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(102714, {	-- Prideful Gladiator's Linked Helm
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(102778, {	-- Prideful Gladiator's Linked Leggings
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(102629, {	-- Prideful Gladiator's Linked Spaulders
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(102743, {	-- Prideful Gladiator's Mail Armor
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(102692, {	-- Prideful Gladiator's Mail Gauntlets
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(102693, {	-- Prideful Gladiator's Mail Helm
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(102781, {	-- Prideful Gladiator's Mail Leggings
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(102637, {	-- Prideful Gladiator's Mail Spaulders
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(102717, {	-- Prideful Gladiator's Ringmail Armor
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(102774, {	-- Prideful Gladiator's Ringmail Gauntlets
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(102718, {	-- Prideful Gladiator's Ringmail Helm
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(102719, {	-- Prideful Gladiator's Ringmail Leggings
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(102655, {	-- Prideful Gladiator's Ringmail Spaulders
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+									},
 								}),
 							}),
 							cl(WARLOCK, {
@@ -9108,21 +9128,23 @@ _.PVP =
 										{"select", "itemID", 102620 },	-- Prideful Gladiator's Treads of Alacrity
 										{"exclude", "itemID", 138657 },	-- Exclude itself to stop duplicating 
 									},
-								}),
-								i(102682, {	-- Prideful Gladiator's Felweave Amice
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(102726, {	-- Prideful Gladiator's Felweave Cowl
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(102725, {	-- Prideful Gladiator's Felweave Handguards
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(102661, {	-- Prideful Gladiator's Felweave Raiment
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(102755, {	-- Prideful Gladiator's Felweave Trousers
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+									["g"] = {
+										i(102682, {	-- Prideful Gladiator's Felweave Amice
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(102726, {	-- Prideful Gladiator's Felweave Cowl
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(102725, {	-- Prideful Gladiator's Felweave Handguards
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(102661, {	-- Prideful Gladiator's Felweave Raiment
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(102755, {	-- Prideful Gladiator's Felweave Trousers
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+									},
 								}),
 							}),
 							cl(WARRIOR, {
@@ -9135,21 +9157,23 @@ _.PVP =
 										{"select", "itemID", 102698 },	-- Prideful Gladiator's Warboots of Cruelty
 										{"exclude", "itemID", 138637 },	-- Exclude itself to stop duplicating 
 									},
-								}),
-								i(102728, {	-- Prideful Gladiator's Plate Chestpiece
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(102618, {	-- Prideful Gladiator's Plate Gauntlets
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(102619, {	-- Prideful Gladiator's Plate Helm
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(102732, {	-- Prideful Gladiator's Plate Legguards
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(102685, {	-- Prideful Gladiator's Plate Shoulders
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+									["g"] = {
+										i(102728, {	-- Prideful Gladiator's Plate Chestpiece
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(102618, {	-- Prideful Gladiator's Plate Gauntlets
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(102619, {	-- Prideful Gladiator's Plate Helm
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(102732, {	-- Prideful Gladiator's Plate Legguards
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(102685, {	-- Prideful Gladiator's Plate Shoulders
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+									},
 								}),
 							}),
 							n(-322, {	-- Back
@@ -9369,84 +9393,86 @@ _.PVP =
 										{"sub", "pvp_weapons_ensemble", -10041, -678, -9914, -661 },
 										{"exclude", "itemID", 144250 },	-- Exclude itself to stop duplicating
 									},
-								}),
-								i(103364, {	-- Prideful Gladiator's Barrier
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(103507, {	-- Prideful Gladiator's Baton of Light
-									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-								}),
-								i(103366, {	-- Prideful Gladiator's Battle Staff
-									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-								}),
-								i(103509, {	-- Prideful Gladiator's Bonecracker
-									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-								}),
-								i(103339, {	-- Prideful Gladiator's Cleaver
-									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-								}),
-								i(103336, {	-- Prideful Gladiator's Decapitator
-									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-								}),
-								i(103363, {	-- Prideful Gladiator's Endgame
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(103406, {	-- Prideful Gladiator's Energy Staff
-									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-								}),
-								i(103404, {	-- Prideful Gladiator's Gavel
-									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-								}),
-								i(103338, {	-- Prideful Gladiator's Greatsword
-									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-								}),
-								i(103508, {	-- Prideful Gladiator's Hacker
-									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-								}),
-								i(103350, {	-- Prideful Gladiator's Longbow
-									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-								}),
-								i(103504, {	-- Prideful Gladiator's Mageblade
-									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-								}),
-								i(103461, {	-- Prideful Gladiator's Pike
-									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-								}),
-								i(103340, {	-- Prideful Gladiator's Pummeler
-									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-								}),
-								i(103341, {	-- Prideful Gladiator's Quickblade
-									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-								}),
-								i(103405, {	-- Prideful Gladiator's Redoubt
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(103503, {	-- Prideful Gladiator's Render
-									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-								}),
-								i(103373, {	-- Prideful Gladiator's Reprieve
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(103403, {	-- Prideful Gladiator's Rifle
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(103502, {	-- Prideful Gladiator's Ripper
-									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-								}),
-								i(103501, {	-- Prideful Gladiator's Shanker
-									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-								}),
-								i(103519, {	-- Prideful Gladiator's Shield Wall
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(103510, {	-- Prideful Gladiator's Slicer
-									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-								}),
-								i(103365, {	-- Prideful Gladiator's Spellblade
-									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-								}),
-								i(103374, {	-- Prideful Gladiator's Touch of Defeat
-									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+									["g"] = {
+										i(103364, {	-- Prideful Gladiator's Barrier
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(103507, {	-- Prideful Gladiator's Baton of Light
+											["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+										}),
+										i(103366, {	-- Prideful Gladiator's Battle Staff
+											["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+										}),
+										i(103509, {	-- Prideful Gladiator's Bonecracker
+											["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+										}),
+										i(103339, {	-- Prideful Gladiator's Cleaver
+											["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+										}),
+										i(103336, {	-- Prideful Gladiator's Decapitator
+											["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+										}),
+										i(103363, {	-- Prideful Gladiator's Endgame
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(103406, {	-- Prideful Gladiator's Energy Staff
+											["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+										}),
+										i(103404, {	-- Prideful Gladiator's Gavel
+											["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+										}),
+										i(103338, {	-- Prideful Gladiator's Greatsword
+											["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+										}),
+										i(103508, {	-- Prideful Gladiator's Hacker
+											["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+										}),
+										i(103350, {	-- Prideful Gladiator's Longbow
+											["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+										}),
+										i(103504, {	-- Prideful Gladiator's Mageblade
+											["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+										}),
+										i(103461, {	-- Prideful Gladiator's Pike
+											["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+										}),
+										i(103340, {	-- Prideful Gladiator's Pummeler
+											["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+										}),
+										i(103341, {	-- Prideful Gladiator's Quickblade
+											["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+										}),
+										i(103405, {	-- Prideful Gladiator's Redoubt
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(103503, {	-- Prideful Gladiator's Render
+											["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+										}),
+										i(103373, {	-- Prideful Gladiator's Reprieve
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(103403, {	-- Prideful Gladiator's Rifle
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(103502, {	-- Prideful Gladiator's Ripper
+											["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+										}),
+										i(103501, {	-- Prideful Gladiator's Shanker
+											["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+										}),
+										i(103519, {	-- Prideful Gladiator's Shield Wall
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(103510, {	-- Prideful Gladiator's Slicer
+											["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+										}),
+										i(103365, {	-- Prideful Gladiator's Spellblade
+											["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+										}),
+										i(103374, {	-- Prideful Gladiator's Touch of Defeat
+											["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
+										}),
+									},
 								}),
 							}),	
 							cl(DEATHKNIGHT, {
@@ -9459,21 +9485,23 @@ _.PVP =
 										{"select", "itemID", 103458 },	-- Prideful Gladiator's Warboots of Alacrity
 										{"exclude", "itemID", 138640 },	-- Exclude itself to stop duplicating 
 									},
-								}),
-								i(103376, {	-- Prideful Gladiator's Dreadplate Chestpiece
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(103377, {	-- Prideful Gladiator's Dreadplate Gauntlets
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(103378, {	-- Prideful Gladiator's Dreadplate Helm
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(103379, {	-- Prideful Gladiator's Dreadplate Legguards
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(103380, {	-- Prideful Gladiator's Dreadplate Shoulders
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+									["g"] = {
+										i(103376, {	-- Prideful Gladiator's Dreadplate Chestpiece
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(103377, {	-- Prideful Gladiator's Dreadplate Gauntlets
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(103378, {	-- Prideful Gladiator's Dreadplate Helm
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(103379, {	-- Prideful Gladiator's Dreadplate Legguards
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(103380, {	-- Prideful Gladiator's Dreadplate Shoulders
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+									},
 								}),
 							}),
 							cl(DRUID, {
@@ -9489,51 +9517,53 @@ _.PVP =
 										{"select", "itemID", 103387 },	-- Prideful Gladiator's Footguards of Meditation (Leather)
 										{"exclude", "itemID", 138648 },	-- Exclude itself to stop duplicating 
 									},
-								}),
-								i(103381, {	-- Prideful Gladiator's Dragonhide Gloves
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(103382, {	-- Prideful Gladiator's Dragonhide Helm
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(103383, {	-- Prideful Gladiator's Dragonhide Legguards
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(103384, {	-- Prideful Gladiator's Dragonhide Robes
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(103385, {	-- Prideful Gladiator's Dragonhide Spaulders
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(103389, {	-- Prideful Gladiator's Kodohide Gloves
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(103390, {	-- Prideful Gladiator's Kodohide Helm
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(103391, {	-- Prideful Gladiator's Kodohide Legguards
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(103392, {	-- Prideful Gladiator's Kodohide Robes
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(103393, {	-- Prideful Gladiator's Kodohide Spaulders
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(103398, {	-- Prideful Gladiator's Wyrmhide Gloves
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(103399, {	-- Prideful Gladiator's Wyrmhide Helm
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(103400, {	-- Prideful Gladiator's Wyrmhide Legguards
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(103401, {	-- Prideful Gladiator's Wyrmhide Robes
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(103402, {	-- Prideful Gladiator's Wyrmhide Spaulders
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+									["g"] = {
+										i(103381, {	-- Prideful Gladiator's Dragonhide Gloves
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(103382, {	-- Prideful Gladiator's Dragonhide Helm
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(103383, {	-- Prideful Gladiator's Dragonhide Legguards
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(103384, {	-- Prideful Gladiator's Dragonhide Robes
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(103385, {	-- Prideful Gladiator's Dragonhide Spaulders
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(103389, {	-- Prideful Gladiator's Kodohide Gloves
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(103390, {	-- Prideful Gladiator's Kodohide Helm
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(103391, {	-- Prideful Gladiator's Kodohide Legguards
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(103392, {	-- Prideful Gladiator's Kodohide Robes
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(103393, {	-- Prideful Gladiator's Kodohide Spaulders
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(103398, {	-- Prideful Gladiator's Wyrmhide Gloves
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(103399, {	-- Prideful Gladiator's Wyrmhide Helm
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(103400, {	-- Prideful Gladiator's Wyrmhide Legguards
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(103401, {	-- Prideful Gladiator's Wyrmhide Robes
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(103402, {	-- Prideful Gladiator's Wyrmhide Spaulders
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+									},
 								}),
 							}),
 							cl(HUNTER, {
@@ -9549,21 +9579,23 @@ _.PVP =
 										{"select", "itemID", 103412 },	-- Prideful Gladiator's Sabatons of Cruelty
 										{"exclude", "itemID", 138646 },	-- Exclude itself to stop duplicating 
 									},
-								}),	
-								i(103416, {	-- Prideful Gladiator's Chain Armor
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(103417, {	-- Prideful Gladiator's Chain Gauntlets
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(103418, {	-- Prideful Gladiator's Chain Helm
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(103419	, {	-- Prideful Gladiator's Chain Leggings
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(103420, {	-- Prideful Gladiator's Chain Spaulders
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+									["g"] = {
+										i(103416, {	-- Prideful Gladiator's Chain Armor
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(103417, {	-- Prideful Gladiator's Chain Gauntlets
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(103418, {	-- Prideful Gladiator's Chain Helm
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(103419	, {	-- Prideful Gladiator's Chain Leggings
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(103420, {	-- Prideful Gladiator's Chain Spaulders
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+									},
 								}),
 							}),
 							cl(MAGE, {
@@ -9576,21 +9608,23 @@ _.PVP =
 										{"select", "itemID", 103354 },	-- Prideful Gladiator's Treads of Cruelty
 										{"exclude", "itemID", 138654 },	-- Exclude itself to stop duplicating 
 									},
-								}),
-								i(103425, {	-- Prideful Gladiator's Silk Amice
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(103422, {	-- Prideful Gladiator's Silk Cowl
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(103421, {	-- Prideful Gladiator's Silk Handguards
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(103424, {	-- Prideful Gladiator's Silk Robe
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(103423, {	-- Prideful Gladiator's Silk Trousers
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+									["g"] = {
+										i(103425, {	-- Prideful Gladiator's Silk Amice
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(103422, {	-- Prideful Gladiator's Silk Cowl
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(103421, {	-- Prideful Gladiator's Silk Handguards
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(103424, {	-- Prideful Gladiator's Silk Robe
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(103423, {	-- Prideful Gladiator's Silk Trousers
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+									},
 								}),
 							}),	
 							cl(MONK, {
@@ -9603,36 +9637,38 @@ _.PVP =
 										{"select", "itemID", 103427 },	-- Prideful Gladiator's Boots of Alacrity
 										{"exclude", "itemID", 138650 },	-- Exclude itself to stop duplicating 
 									},
-								}),
-								i(103434, {	-- Prideful Gladiator's Copperskin Gloves
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(103435, {	-- Prideful Gladiator's Copperskin Helm
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(103436, {	-- Prideful Gladiator's Copperskin Legguards
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(103437, {	-- Prideful Gladiator's Copperskin Spaulders
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(103438, {	-- Prideful Gladiator's Copperskin Tunic
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(103429, {	-- Prideful Gladiator's Ironskin Gloves
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(103430, {	-- Prideful Gladiator's Ironskin Helm
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(103431, {	-- Prideful Gladiator's Ironskin Legguards
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(103432, {	-- Prideful Gladiator's Ironskin Spaulders
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(103433, {	-- Prideful Gladiator's Ironskin Tunic
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+									["g"] = {
+										i(103434, {	-- Prideful Gladiator's Copperskin Gloves
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(103435, {	-- Prideful Gladiator's Copperskin Helm
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(103436, {	-- Prideful Gladiator's Copperskin Legguards
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(103437, {	-- Prideful Gladiator's Copperskin Spaulders
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(103438, {	-- Prideful Gladiator's Copperskin Tunic
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(103429, {	-- Prideful Gladiator's Ironskin Gloves
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(103430, {	-- Prideful Gladiator's Ironskin Helm
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(103431, {	-- Prideful Gladiator's Ironskin Legguards
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(103432, {	-- Prideful Gladiator's Ironskin Spaulders
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(103433, {	-- Prideful Gladiator's Ironskin Tunic
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+									},
 								}),
 							}),
 							cl(PALADIN, {
@@ -9648,36 +9684,38 @@ _.PVP =
 										{"select", "itemID", 103447 },	-- Prideful Gladiator's Greaves of Meditation
 										{"exclude", "itemID", 138642 },	-- Exclude itself to stop duplicating 
 									},
-								}),
-								i(103450, {	-- Prideful Gladiator's Ornamented Chestguard
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(103451, {	-- Prideful Gladiator's Ornamented Gloves
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(103452, {	-- Prideful Gladiator's Ornamented Headcover
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(103453, {	-- Prideful Gladiator's Ornamented Legplates
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(103454, {	-- Prideful Gladiator's Ornamented Spaulders
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(103439, {	-- Prideful Gladiator's Scaled Chestpiece
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(103440, {	-- Prideful Gladiator's Scaled Gauntlets
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(103441, {	-- Prideful Gladiator's Scaled Helm
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(103442, {	-- Prideful Gladiator's Scaled Legguards
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(103443, {	-- Prideful Gladiator's Scaled Shoulders
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+									["g"] = {
+										i(103450, {	-- Prideful Gladiator's Ornamented Chestguard
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(103451, {	-- Prideful Gladiator's Ornamented Gloves
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(103452, {	-- Prideful Gladiator's Ornamented Headcover
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(103453, {	-- Prideful Gladiator's Ornamented Legplates
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(103454, {	-- Prideful Gladiator's Ornamented Spaulders
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(103439, {	-- Prideful Gladiator's Scaled Chestpiece
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(103440, {	-- Prideful Gladiator's Scaled Gauntlets
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(103441, {	-- Prideful Gladiator's Scaled Helm
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(103442, {	-- Prideful Gladiator's Scaled Legguards
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(103443, {	-- Prideful Gladiator's Scaled Shoulders
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+									},
 								}),
 							}),
 							cl(PRIEST, {
@@ -9691,36 +9729,38 @@ _.PVP =
 										{"select", "itemID", 103356 },	-- Prideful Gladiator's Treads of Meditation
 										{"exclude", "itemID", 138656 },	-- Exclude itself to stop duplicating 
 									},
-								}),
-								i(103462, {	-- Prideful Gladiator's Mooncloth Gloves
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(103463, {	-- Prideful Gladiator's Mooncloth Helm
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(103464, {	-- Prideful Gladiator's Mooncloth Leggings
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(103466, {	-- Prideful Gladiator's Mooncloth Mantle
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(103465, {	-- Prideful Gladiator's Mooncloth Robe
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(103467, {	-- Prideful Gladiator's Satin Gloves
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(103468, {	-- Prideful Gladiator's Satin Hood
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(103469, {	-- Prideful Gladiator's Satin Leggings
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(103471, {	-- Prideful Gladiator's Satin Mantle
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(103470, {	-- Prideful Gladiator's Satin Robe
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+									["g"] = {
+										i(103462, {	-- Prideful Gladiator's Mooncloth Gloves
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(103463, {	-- Prideful Gladiator's Mooncloth Helm
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(103464, {	-- Prideful Gladiator's Mooncloth Leggings
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(103466, {	-- Prideful Gladiator's Mooncloth Mantle
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(103465, {	-- Prideful Gladiator's Mooncloth Robe
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(103467, {	-- Prideful Gladiator's Satin Gloves
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(103468, {	-- Prideful Gladiator's Satin Hood
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(103469, {	-- Prideful Gladiator's Satin Leggings
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(103471, {	-- Prideful Gladiator's Satin Mantle
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(103470, {	-- Prideful Gladiator's Satin Robe
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+									},
 								}),
 							}),
 							cl(ROGUE, {
@@ -9733,21 +9773,23 @@ _.PVP =
 										{"select", "itemID", 103473 },	-- Prideful Gladiator's Boots of Cruelty
 										{"exclude", "itemID", 138652 },	-- Exclude itself to stop duplicating 
 									},
-								}),
-								i(103476, {	-- Prideful Gladiator's Leather Gloves
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(103477, {	-- Prideful Gladiator's Leather Helm
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(103478, {	-- Prideful Gladiator's Leather Legguards
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(103479, {	-- Prideful Gladiator's Leather Spaulders
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(103475, {	-- Prideful Gladiator's Leather Tunic
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+									["g"] = {
+										i(103476, {	-- Prideful Gladiator's Leather Gloves
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(103477, {	-- Prideful Gladiator's Leather Helm
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(103478, {	-- Prideful Gladiator's Leather Legguards
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(103479, {	-- Prideful Gladiator's Leather Spaulders
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(103475, {	-- Prideful Gladiator's Leather Tunic
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+									},
 								}),
 							}),
 							cl(SHAMAN, {
@@ -9763,51 +9805,53 @@ _.PVP =
 										{"select", "itemID", 103482 },	-- Prideful Gladiator's Footguards of Meditation (Mail)
 										{"exclude", "itemID", 138644 },	-- Exclude itself to stop duplicating 
 									},
-								}),	
-								i(103490, {	-- Prideful Gladiator's Linked Armor
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(103491, {	-- Prideful Gladiator's Linked Gauntlets
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(103492, {	-- Prideful Gladiator's Linked Helm
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(103493, {	-- Prideful Gladiator's Linked Leggings
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(103494, {	-- Prideful Gladiator's Linked Spaulders
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(103496, {	-- Prideful Gladiator's Mail Armor
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(103497, {	-- Prideful Gladiator's Mail Gauntlets
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(103498, {	-- Prideful Gladiator's Mail Helm
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(103499, {	-- Prideful Gladiator's Mail Leggings
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(103500, {	-- Prideful Gladiator's Mail Spaulders
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(103485, {	-- Prideful Gladiator's Ringmail Armor
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(103486, {	-- Prideful Gladiator's Ringmail Gauntlets
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(103487, {	-- Prideful Gladiator's Ringmail Helm
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(103488, {	-- Prideful Gladiator's Ringmail Leggings
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(103489, {	-- Prideful Gladiator's Ringmail Spaulders
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+									["g"] = {
+										i(103490, {	-- Prideful Gladiator's Linked Armor
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(103491, {	-- Prideful Gladiator's Linked Gauntlets
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(103492, {	-- Prideful Gladiator's Linked Helm
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(103493, {	-- Prideful Gladiator's Linked Leggings
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(103494, {	-- Prideful Gladiator's Linked Spaulders
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(103496, {	-- Prideful Gladiator's Mail Armor
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(103497, {	-- Prideful Gladiator's Mail Gauntlets
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(103498, {	-- Prideful Gladiator's Mail Helm
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(103499, {	-- Prideful Gladiator's Mail Leggings
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(103500, {	-- Prideful Gladiator's Mail Spaulders
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(103485, {	-- Prideful Gladiator's Ringmail Armor
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(103486, {	-- Prideful Gladiator's Ringmail Gauntlets
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(103487, {	-- Prideful Gladiator's Ringmail Helm
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(103488, {	-- Prideful Gladiator's Ringmail Leggings
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(103489, {	-- Prideful Gladiator's Ringmail Spaulders
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+									},
 								}),
 							}),
 							cl(WARLOCK, {
@@ -9820,21 +9864,23 @@ _.PVP =
 										{"select", "itemID", 103355 },	-- Prideful Gladiator's Treads of Alacrity
 										{"exclude", "itemID", 138658 },	-- Exclude itself to stop duplicating 
 									},
-								}),
-								i(103524, {	-- Prideful Gladiator's Felweave Amice
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(103521, {	-- Prideful Gladiator's Felweave Cowl
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(103520, {	-- Prideful Gladiator's Felweave Handguards
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(103523, {	-- Prideful Gladiator's Felweave Raiment
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(103522, {	-- Prideful Gladiator's Felweave Trousers
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+									["g"] = {
+										i(103524, {	-- Prideful Gladiator's Felweave Amice
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(103521, {	-- Prideful Gladiator's Felweave Cowl
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(103520, {	-- Prideful Gladiator's Felweave Handguards
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(103523, {	-- Prideful Gladiator's Felweave Raiment
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(103522, {	-- Prideful Gladiator's Felweave Trousers
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+									},
 								}),
 							}),
 							cl(WARRIOR, {
@@ -9847,21 +9893,23 @@ _.PVP =
 										{"select", "itemID", 103457 },	-- Prideful Gladiator's Warboots of Cruelty
 										{"exclude", "itemID", 138638 },	-- Exclude itself to stop duplicating 
 									},
-								}),
-								i(103525, {	-- Prideful Gladiator's Plate Chestpiece
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(103526, {	-- Prideful Gladiator's Plate Gauntlets
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-								}),
-								i(103527, {	-- Prideful Gladiator's Plate Helm
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(103528, {	-- Prideful Gladiator's Plate Legguards
-									["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
-								}),
-								i(103529, {	-- Prideful Gladiator's Plate Shoulders
-									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+									["g"] = {
+										i(103525, {	-- Prideful Gladiator's Plate Chestpiece
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(103526, {	-- Prideful Gladiator's Plate Gauntlets
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+										i(103527, {	-- Prideful Gladiator's Plate Helm
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(103528, {	-- Prideful Gladiator's Plate Legguards
+											["cost"] = { { "i",  137642, 3 } }, -- 3x Mark of Honor
+										}),
+										i(103529, {	-- Prideful Gladiator's Plate Shoulders
+											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
+										}),
+									},
 								}),
 							}),
 							n(-322, {	-- Back
