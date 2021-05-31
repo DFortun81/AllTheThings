@@ -50,7 +50,7 @@ _.WorldEvents =
 			})),
 			n(VENDORS, bubbleDown({ ["u"] = 31, }, {
 				n(110035, {	-- Historian Jupa [Horde]
-					["coords"] = { 36.6, 74.6, 85 },
+					["coord"] = { 36.6, 74.6, 85 },
 					["races"] = HORDE_ONLY,
 					["g"] = {	-- WoW Anniversary
 						i(136925, {	-- Corgi Pup

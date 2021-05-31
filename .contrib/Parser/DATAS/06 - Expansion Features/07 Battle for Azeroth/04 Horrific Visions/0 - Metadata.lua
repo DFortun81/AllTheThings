@@ -296,7 +296,7 @@ _.ExpansionFeatures =
 						}),
 						i(174928, {	-- Rotten Apple (TOY!)
 							["description"] = "Repeatedly click the bouncing apples at the coordinates provided.  Supposedly, clicking them 100 times will guarantee that the toy is in your final chest, but any click should give you a chance if you're running short on time.",
-							["coords"] = { -- may need to add more precision to these waypoints, taken from wowhead comment
+							["coord"] = { -- may need to add more precision to these waypoints, taken from wowhead comment
 								{ 57, 55, 1470 },
 								{ 60, 58, 1470 },
 								{ 65, 62, 1470 },

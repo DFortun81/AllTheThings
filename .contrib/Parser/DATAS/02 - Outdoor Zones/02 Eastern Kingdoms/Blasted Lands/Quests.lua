@@ -35,7 +35,7 @@ _.Zones =
 				}),
 				q(35745, {	-- Attack of the Iron Horde
 					["provider"] = { "n", 82851 },	-- Thrall
-					["coords"] = { 71.8, 47.7, 17 },
+					["coord"] = { 71.8, 47.7, 17 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(118761),	-- Invader's Scarlet Seal
@@ -47,7 +47,7 @@ _.Zones =
 				}),
 				q(35460, {	-- Attack of the Iron Horde
 					["provider"] = { "n", 82270 },	-- Vindicator Maraad
-					["coords"] = { 66.6, 28.2, 17 },
+					["coord"] = { 66.6, 28.2, 17 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(118761),	-- Invader's Scarlet Seal
@@ -774,12 +774,12 @@ _.Zones =
 				q(35462, {	-- Under Siege
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 82270 },	-- Vindicator Maraad
-					["coords"] = { 66.6, 28.2, 17 },
+					["coord"] = { 66.6, 28.2, 17 },
 				}),
 				q(35746, {	-- Under Siege
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 82851 },	-- Thrall
-					["coords"] = { 71.8, 47.7, 17 },
+					["coord"] = { 71.8, 47.7, 17 },
 				}),
 				q(3627, {	-- Uniting the Shattered Amulet
 					["u"] = REMOVED_FROM_GAME,

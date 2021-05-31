@@ -297,7 +297,7 @@ _.Zones =
 					q(14273, {	-- Shady Associates
 						["provider"] = { "n", 35840 },	-- Gwen Armstead
 						["sourceQuest"] = 14099,	-- Royal Orders
-						["coords"] = { 70.79, 55.05, 202 },
+						["coord"] = { 70.79, 55.05, 202 },
 						["races"] = { WORGEN },
 						["classes"] = { WARLOCK },
 					}),

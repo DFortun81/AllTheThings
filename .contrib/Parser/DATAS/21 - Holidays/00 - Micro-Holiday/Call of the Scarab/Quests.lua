@@ -32,7 +32,7 @@ _.Holidays =
 					["lvl"] = 58,
 					["repeatable"] = true,
 					["provider"] = { "n", 117432 },	-- Senior Sergeant Kai'jin
-					["coords"] = { 33.91, 81.83, 81 },	-- Senior Sergeant Kai'jin
+					["coord"] = { 33.91, 81.83, 81 },	-- Senior Sergeant Kai'jin
 				})),
 				a(q(45732, {	-- Crocolisk Tails [A]
 					["lvl"] = 80,
@@ -44,7 +44,7 @@ _.Holidays =
 					["lvl"] = 80,
 					["repeatable"] = true,
 					["provider"] = { "n", 117432 },	-- Senior Sergeant Kai'jin
-					["coords"] = { 33.91, 81.83, 81 },	-- Senior Sergeant Kai'jin
+					["coord"] = { 33.91, 81.83, 81 },	-- Senior Sergeant Kai'jin
 				})),
 				a(q(45730, {	-- Crunchy Spider Legs [A]
 					["lvl"] = 58,
@@ -56,7 +56,7 @@ _.Holidays =
 					["lvl"] = 58,
 					["repeatable"] = true,
 					["provider"] = { "n", 117432 },	-- Senior Sergeant Kai'jin
-					["coords"] = { 33.91, 81.83, 81 },	-- Senior Sergeant Kai'jin
+					["coord"] = { 33.91, 81.83, 81 },	-- Senior Sergeant Kai'jin
 				})),
 				a(q(45735, {	-- Lean Shanks [A]
 					["lvl"] = 100,	
@@ -68,7 +68,7 @@ _.Holidays =
 					["lvl"] = 100,	
 					["repeatable"] = true,
 					["provider"] = { "n", 117432 },	-- Senior Sergeant Kai'jin
-					["coords"] = { 33.91, 81.83, 81 },	-- Senior Sergeant Kai'jin
+					["coord"] = { 33.91, 81.83, 81 },	-- Senior Sergeant Kai'jin
 				})),
 				a(q(45734, {	-- Raw Clefthoof Meat [A]
 					["lvl"] = 90,
@@ -80,7 +80,7 @@ _.Holidays =
 					["lvl"] = 90,
 					["repeatable"] = true,
 					["provider"] = { "n", 117432 },	-- Senior Sergeant Kai'jin
-					["coords"] = { 33.91, 81.83, 81 },	-- Senior Sergeant Kai'jin
+					["coord"] = { 33.91, 81.83, 81 },	-- Senior Sergeant Kai'jin
 				})),
 				a(q(45733, {	-- Raw Tiger Steaks [A]
 					["lvl"] = 80,
@@ -92,7 +92,7 @@ _.Holidays =
 					["lvl"] = 80,
 					["repeatable"] = true,
 					["provider"] = { "n", 117432 },	-- Senior Sergeant Kai'jin
-					["coords"] = { 33.91, 81.83, 81 },	-- Senior Sergeant Kai'jin
+					["coord"] = { 33.91, 81.83, 81 },	-- Senior Sergeant Kai'jin
 				})),
 				a(q(45729, {	-- Sandworm Meat [A]
 					["lvl"] = 40,
@@ -104,7 +104,7 @@ _.Holidays =
 					["lvl"] = 40,
 					["repeatable"] = true,
 					["provider"] = { "n", 117432 },	-- Senior Sergeant Kai'jin
-					["coords"] = { 33.91, 81.83, 81 },	-- Senior Sergeant Kai'jin
+					["coord"] = { 33.91, 81.83, 81 },	-- Senior Sergeant Kai'jin
 				})),
 			})),
 		},

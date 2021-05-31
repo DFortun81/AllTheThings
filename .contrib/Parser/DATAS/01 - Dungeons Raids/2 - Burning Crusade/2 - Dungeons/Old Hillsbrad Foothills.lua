@@ -7,7 +7,7 @@ local THOMAS_YANCE_GROUPS = {
 _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 	inst(251, {	-- Old Hillsbrad Foothills
 		["description"] = "Old Hillsbrad Foothills is one of the timeways accessible in the Caverns of Time. The setting is seven years before WoW's present, to when the future Warchief Thrall was a slave of Aedelas Blackmoore, master of Durnholde Keep. The questing involves helping Thrall escape. The instance area in question spans from Southshore (where familiar personalities of WoW present can be found) to Tarren Mill.",
-		["coords"] = { 26.8, 36.8, CAVERNS_OF_TIME },
+		["coord"] = { 26.8, 36.8, CAVERNS_OF_TIME },
 		["mapID"] = CAVERNS_OF_TIME_OLD_HILLSBRAD_FOOTHILLS,
 		["lvl"] = lvlsquish(63, 15, 63),
 		["groups"] = {

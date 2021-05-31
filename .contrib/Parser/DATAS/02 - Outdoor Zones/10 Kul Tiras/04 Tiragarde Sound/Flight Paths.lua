@@ -15,7 +15,7 @@ _.Zones =
 					["coord"] = { 75.8, 48.6, 895 },
 				}),
 				fp(2077, {	-- Castaway Point, Tiragarde Sound [N]
-					["coords"] = { 86.4, 80.8, 895 },
+					["coord"] = { 86.4, 80.8, 895 },
 				}),
 				fp(2104, {	-- Eastpoint Station, Tiragarde Sound (Ferry) [Alliance]
 					["coord"] = { 74.2, 44.2, 895 },
