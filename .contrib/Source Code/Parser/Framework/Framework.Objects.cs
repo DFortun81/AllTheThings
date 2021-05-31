@@ -534,6 +534,12 @@ namespace ATT
                 {978, 185},     // Way of the Steamer
                 {979, 185},     // Way of the Oven
                 {980, 185},     // Way of the Brew
+                {124694, 185},     // Way of the Grill
+                {125584, 185},     // Way of the Wok
+                {125586, 185},     // Way of the Pot
+                {125587, 185},     // Way of the Steamer
+                {125588, 185},     // Way of the Oven
+                {125589, 185},     // Way of the Brew
                 {2548, 185},	// Classic Cooking [8.0.1]
                 {2547, 185},	// Outland Cooking [8.0.1]
                 {2546, 185},	// Northrend Cooking [8.0.1]
@@ -1239,6 +1245,7 @@ namespace ATT
             {
                 // Convert the data to a list of generic objects.
                 var newList = ConvertToList(item, field, value);
+                if (newList == null) return;
 
                 // Attempt to get the old list data.
                 List<object> oldList;
@@ -1296,11 +1303,22 @@ namespace ATT
                 else
                 {
                     // Merge the new list of data into the old data and ensure there are no duplicate values.
-                    foreach (var entry in newList)
+                    try
                     {
-                        var index = Convert.ToInt64(entry);
-                        if (oldList.Contains(index)) continue;
-                        oldList.Add(index);
+                        foreach (var entry in newList)
+                        {
+                            var index = Convert.ToInt64(entry);
+                            if (oldList.Contains(index)) continue;
+                            oldList.Add(index);
+                        }
+                    }
+                    catch(Exception e)
+                    {
+                        Trace.WriteLine("WHAT IS THIS");
+                        Trace.WriteLine(field);
+                        Trace.WriteLine(MiniJSON.Json.Serialize(newList));
+                        Console.ReadLine();
+                        throw e;
                     }
                 }
 
@@ -1318,6 +1336,7 @@ namespace ATT
             {
                 // Convert the data to a list of generic objects.
                 var newList = ConvertToList(item, field, value);
+                if (newList == null) return;
 
                 // Attempt to get the old list data.
                 List<object> oldList;
@@ -1373,10 +1392,6 @@ namespace ATT
                             if (value is List<object> list)
                             {
                                 Merge(groups, list);
-                            }
-                            else if (value is Dictionary<object, object> dict)
-                            {
-                                Merge(groups, dict.Values.ToList());
                             }
                             else
                             {
@@ -1533,10 +1548,6 @@ namespace ATT
                         {
                             MergeIntegerArrayData(item, field, lvls);
                         }
-                        else if (value is Dictionary<object, object> dict)
-                        {
-                            MergeIntegerArrayData(item, field, dict.Values.ToList());
-                        }
 #if CRIEVE
                         else item[field] = Convert.ToInt64(value);
 #endif
@@ -1547,7 +1558,7 @@ namespace ATT
                     case "bonusIDs":
                         {
                             // Convert the data to a list of generic objects.
-                            var newDict = value as Dictionary<object, object>;
+                            var newDict = value as Dictionary<long, object>;
                             if (newDict == null) return;
 
                             // Attempt to get the old list data.
@@ -1564,7 +1575,7 @@ namespace ATT
                             }
 
                             // Merge the new list of data into the old data and ensure there are no duplicate values.
-                            foreach (var pair in newDict) oldDict[Convert.ToInt64(pair.Key)] = Convert.ToInt64(pair.Value);
+                            foreach (var pair in newDict) oldDict[pair.Key] = Convert.ToInt64(pair.Value);
                             break;
                         }
 
@@ -1580,27 +1591,18 @@ namespace ATT
                     case "sym":
                         {
                             // Convert the data to a list of generic objects.
-                            var newListOfLists = value as List<List<object>>;
+                            var newListOfLists = value as List<object>;
                             if (newListOfLists == null)
                             {
-                                var newList = value as List<object>;
-                                if (newList == null)
+                                Console.WriteLine("Ignoring 'sym' with improper format.");
+                                Console.WriteLine(MiniJSON.Json.Serialize(value));
+                                Console.ReadLine();
+                                foreach(var sublist in newListOfLists)
                                 {
-                                    var dict = value as Dictionary<object, object>;
-                                    if (dict == null) return;
-                                    else newList = dict.Values.ToList();
-                                }
-                                newListOfLists = new List<List<object>>();
-                                foreach (var o in newList)
-                                {
-                                    var list = o as List<object>;
-                                    if (list == null)
-                                    {
-                                        var dict = o as Dictionary<object, object>;
-                                        if (dict == null) return;
-                                        else list = dict.Values.ToList();
-                                    }
-                                    newListOfLists.Add(list);
+                                    if (sublist is List<object>) continue;
+                                    Console.WriteLine("Ignoring 'sym' with improper format.");
+                                    Console.WriteLine(MiniJSON.Json.Serialize(value));
+                                    Console.ReadLine();
                                 }
                             }
                             item[field] = newListOfLists;
@@ -1615,11 +1617,10 @@ namespace ATT
                         {
                             if (!(value is List<object> newList))
                             {
-                                if (value is Dictionary<object, object> dict)
-                                {
-                                    newList = dict.Values.ToList();
-                                }
-                                else return;
+                                Console.WriteLine($"Ignoring '{field}' with improper format.");
+                                Console.WriteLine(MiniJSON.Json.Serialize(value));
+                                Console.ReadLine();
+                                return;
                             }
                             var newRep = new List<object>();
                             foreach (var repArg in newList) newRep.Add(Convert.ToInt64(repArg));
@@ -1641,11 +1642,10 @@ namespace ATT
                             // Convert the data to a list of generic objects.
                             if (!(value is List<object> newList))
                             {
-                                if (value is Dictionary<object, object> dict)
-                                {
-                                    newList = dict.Values.ToList();
-                                }
-                                else return;
+                                Console.WriteLine("Ignoring 'coord' with improper format.");
+                                Console.WriteLine(MiniJSON.Json.Serialize(value));
+                                Console.ReadLine();
+                                return;
                             }
 
                             // Convert the input into something more usable.
@@ -1697,10 +1697,11 @@ namespace ATT
                             {
                                 foreach (var coord in newList) Merge(item, "coord", coord);
                             }
-                            else if (value is Dictionary<object, object> dict)
+                            else
                             {
-                                newList = dict.Values.ToList();
-                                foreach (var coord in newList) Merge(item, "coord", coord);
+                                Console.WriteLine("Ignoring 'coords' with improper format.");
+                                Console.WriteLine(MiniJSON.Json.Serialize(value));
+                                Console.ReadLine();
                             }
                             break;
                         }
@@ -1723,11 +1724,7 @@ namespace ATT
                     case "_quests":
                     case "_items":
                     case "_npcs":
-                        if (value is Dictionary<object, object> ids)
-                        {
-                            item[field] = ids.Values.ToList();
-                        }
-                        else if (value is List<object> idList)
+                        if (value is List<object> idList)
                         {
                             item[field] = idList;
                         }
@@ -1857,11 +1854,7 @@ namespace ATT
 
                 if (!(value is List<object> newList))
                 {
-                    if (value is Dictionary<object, object> dict)
-                    {
-                        newList = dict.Values.ToList();
-                    }
-                    else throw new InvalidDataException("Encountered '" + field + "' with invalid format: " + MiniJSON.Json.Serialize(value));
+                    throw new InvalidDataException("Encountered '" + field + "' with invalid format: " + MiniJSON.Json.Serialize(value));
                 }
                 var newProvider = new List<object>()
                 {
@@ -1876,6 +1869,7 @@ namespace ATT
                 const string field = "providers";
 
                 var mergeProviders = ConvertToList(item, field, value);
+                if (mergeProviders == null) return;
                 foreach (var mergeProvider in mergeProviders)
                 {
                     bool match = false;
@@ -1932,18 +1926,6 @@ namespace ATT
             /// </summary>
             /// <param name="item">The item dictionary to merge into.</param>
             /// <param name="data">The data to merge into the item.</param>
-            public static void Merge(Dictionary<string, object> item, Dictionary<object, object> data)
-            {
-                foreach (var pair in data) Merge(item, ATT.Export.ToString(pair.Key), pair.Value);
-            }
-
-            /// <summary>
-            /// Merge the data into the item reference.
-            /// Only a couple of fields will successfully merge into an item.
-            /// They need to be whitelisted in the Merge(item, field, value) function.
-            /// </summary>
-            /// <param name="item">The item dictionary to merge into.</param>
-            /// <param name="data">The data to merge into the item.</param>
             public static void Merge(Dictionary<string, object> item, Dictionary<string, object> data)
             {
                 // make sure we somehow do not try to merge something into itself, since that's a bit pointless
@@ -1960,33 +1942,19 @@ namespace ATT
             public static void PreMerge(Dictionary<string, object> entry, Dictionary<string, object> data)
             {
                 // sometimes existing data from harvests may be inaccurate, so may need to clean existing fields from being merged in
-                if (entry.TryGetValue("_drop", out object drops) && drops is Dictionary<object, object> dropStrs)
+                if (entry.TryGetValue("_drop", out object drops))
                 {
-                    if (dropStrs != null && dropStrs.Count > 0)
+                    if (drops is List<object> dropStrs && dropStrs.Count > 0)
                     {
-                        foreach (object dropObj in dropStrs.Values)
-                        {
-                            data.Remove(dropObj?.ToString() ?? string.Empty);
-                        }
+                        foreach (var dropObj in dropStrs) data.Remove(dropObj.ToString());
+                    }
+                    else
+                    {
+                        Console.WriteLine("Invalid format for '_drop':");
+                        Console.WriteLine(MiniJSON.Json.Serialize(drops));
+                        Console.ReadLine();
                     }
                 }
-            }
-
-            /// <summary>
-            /// Merge the data into the container.
-            /// </summary>
-            /// <param name="container">The container to merge into.</param>
-            /// <param name="data">The data to merge into the container.</param>
-            public static void Merge(List<object> container, Dictionary<object, object> data)
-            {
-                // Make sure that the data is valid.
-                if (data == null) return;
-
-                // Convert the object based on key values.
-                Dictionary<string, object> data2 = new Dictionary<string, object>();
-                foreach (var pair in data) data2[ConvertFieldName(pair.Key.ToString())] = pair.Value;
-
-                Merge(container, data2);
             }
 
             /// <summary>
@@ -2313,8 +2281,7 @@ namespace ATT
             {
                 foreach (var data in list)
                 {
-                    if (data is Dictionary<object, object> oDict) Merge(container, oDict);
-                    else if (data is Dictionary<string, object> sDict) Merge(container, sDict);
+                    if (data is Dictionary<string, object> sDict) Merge(container, sDict);
                     else
                     {
                         Trace.Write("MERGE CONFUSION: ");
@@ -2330,6 +2297,8 @@ namespace ATT
             /// <returns></returns>
             public static List<object> ConvertToList(Dictionary<string, object> item, string field, object value)
             {
+                if (value == null) return null;
+
                 List<object> list = CompressToList(value);
                 if (list != null)
                     return list;
@@ -2368,6 +2337,10 @@ namespace ATT
                     return list;
                 }
 
+                Console.Write(field);
+                Console.Write(": ");
+                Console.WriteLine(MiniJSON.Json.Serialize(value));
+
                 // no hope
                 throw new InvalidDataException("Failed parsing value '" + value?.ToString() + "' for field '" + field + "' merging into: " + MiniJSON.Json.Serialize(item));
             }
@@ -2382,14 +2355,14 @@ namespace ATT
                 if (value is List<object> newList)
                     return newList;
 
-                if (value is IDictionary<object, object> dict)
-                    return dict.Values.ToList();
-
-                if (value is ICollection<object> icoll)
-                    return icoll.ToList();
-
                 if (value is IEnumerable<object> ienum)
                     return ienum.ToList();
+
+                if (value is IDictionary<long, object> idict)
+                    return idict.Values.ToList();
+
+                if (value is IDictionary<string, object> sdict)
+                    return sdict.Values.ToList();
 
                 // something that doesn't make sense as a List
                 return null;

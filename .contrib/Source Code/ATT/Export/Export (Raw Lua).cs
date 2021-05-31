@@ -27,11 +27,8 @@ namespace ATT
             else if (data is List<object> list) ExportRawLua(builder, list, indent);
             else if (data is Dictionary<string, object> dict) ExportRawLua(builder, dict, indent);
             else if (data is string str) builder.Append('"').Append(str.Replace("\"", "\\\"")).Append('"');
-            else if (data is Dictionary<object, object> objdict) ExportRawLua(builder, objdict, indent);
-            else if (data is Dictionary<int, object> intdict) ExportRawLua(builder, intdict, indent);
             else if (data is Dictionary<long, object> longdict) ExportRawLua(builder, longdict, indent);
-            else if (data is Dictionary<int, int> intintdict) ExportRawLua(builder, intintdict, indent);
-            else if (data is Dictionary<long, int> longintdict) ExportRawLua(builder, longintdict, indent);
+            else if (data is Dictionary<long, long> longlongdict) ExportRawLua(builder, longlongdict, indent);
             else if (data is Dictionary<string, List<object>> listdict) ExportRawLua(builder, listdict, indent);
             else if (data is List<List<object>> listOLists) ExportRawLua(builder, listOLists);
             else
@@ -65,7 +62,7 @@ namespace ATT
             // Clone this and calculate most significant.
             bool hasG = false;
             VALUE g = default(VALUE);    // Look for the G Field.
-            var data2 = new Dictionary<object, object>();
+            var data2 = new Dictionary<string, object>();
             var keys = data.Keys.ToList();
             for (int i = 0, count = keys.Count; i < count; ++i)
             {
@@ -78,7 +75,7 @@ namespace ATT
                 }
             }
             keys.Sort();
-            foreach (var key in keys) data2[key] = data[key];
+            foreach (var key in keys) data2[key.ToString()] = data[key];
 
 
             // include 'name' as a comment instead of a data value since ATT does not process this field in game
@@ -143,39 +140,6 @@ namespace ATT
 
                 // Always follow each piece of data with a comma for consistency
                 builder.Append(',');
-
-                // For some fields, we want to show the name of the object in a comment next to the exported data.
-                /*
-                var key = pair.Key.ToString();
-                switch (key)
-                {
-                    case "itemID":
-                        {
-                            var item = Items.GetNull(Convert.ToInt64(pair.Value));
-                            if (item != null && item.TryGetValue("name", out object nameRef))
-                            {
-                                builder.Append("--[[").Append(nameRef).Append("]]");
-                            }
-                            continue;
-                        }
-                    case "f":
-                        {
-                            builder.Append("--[[").Append(((Objects.Filters)Convert.ToInt64(pair.Value)).ToString()).Append("]]");
-                            continue;
-                        }
-                    default: break;
-                }
-                if (objectData == null) continue;
-                if (key == objectData.ObjectType
-                    && NAMES_BY_TYPE.TryGetValue(objectData.ObjectType, out Dictionary<int, object> dict3))
-                {
-                    if (data2.TryGetValue(objectData.ObjectType, out object idObj)
-                        && dict3.TryGetValue(Convert.ToInt64(idObj), out object nameRef))
-                    {
-                        builder.Append("--[[").Append(nameRef).Append("]]");
-                    }
-                }
-                */
             }
 
             // We wanted to move this to the bottom of the hierarchy.

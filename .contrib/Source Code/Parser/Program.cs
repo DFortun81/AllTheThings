@@ -127,7 +127,7 @@ namespace ATT
                         {
                             lua.DoString("AllTheThings = {};_ = AllTheThings;");
                             lua.DoString(content = ProcessContent(File.ReadAllText(fileName)));
-                            Framework.Merge(lua, lua.GetTable("AllTheThings"));
+                            Framework.Merge(lua.GetTable("AllTheThings"));
                             break;
                         }
                         catch (Exception e)
@@ -147,6 +147,7 @@ namespace ATT
                                     ++i;
                                 }
                             }
+                            else Trace.WriteLine(e);
                             Trace.WriteLine("Press Enter once you have resolved the issue.");
                             Console.ReadLine();
                         }
@@ -162,7 +163,7 @@ namespace ATT
                     {
                         lua.DoString("AllTheThings = {};_ = AllTheThings;");
                         lua.DoString("for i,method in ipairs(POST_PROCESSING_FUNCTIONS) do method(); end");
-                        Framework.Merge(lua, lua.GetTable("AllTheThings"));
+                        Framework.Merge(lua.GetTable("AllTheThings"));
                         break;
                     }
                     catch (Exception e)

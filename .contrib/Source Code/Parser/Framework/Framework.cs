@@ -2075,29 +2075,35 @@ namespace ATT
         /// </summary>
         /// <param name="lua">The lua context.</param>
         /// <param name="table">The raw lua table.</param>
-        public static void Merge(Lua lua, LuaTable table)
+        public static void Merge(LuaTable table)
         {
             // Parse the contents of the table into a generic object.
-            var dict = Parse(lua, table);
+            var dict = ParseAsDictionary(table);
             if (dict == null) return;
 
             // Iterate through the pairs and determine what goes where.
             foreach (var pair in dict)
             {
-                var data = pair.Value as Dictionary<object, object>;
-                if (data == null) continue;
                 switch (pair.Key)
                 {
                     case "IllusionDB":
                         {
                             // The format of the Illusions DB is a list of generic objects.
                             // This means that it becomes really easy to merge into the database.
-                            foreach (var o in data.Values)
+                            if (pair.Value is List<object> illusionDB)
                             {
-                                if (o is Dictionary<object, object> entry)
+                                foreach(var o in illusionDB)
                                 {
-                                    Items.Merge(entry);
+                                    if (o is Dictionary<string, object> illusion)
+                                    {
+                                        Items.Merge(illusion);
+                                    }
                                 }
+                            }
+                            else
+                            {
+                                Console.WriteLine("IllusionDB not in the correct format!");
+                                Console.ReadLine();
                             }
                             break;
                         }
@@ -2105,44 +2111,97 @@ namespace ATT
                         {
                             // The format of the Item DB is a dictionary of item ID -> Values.
                             // This is slightly more annoying to parse, but it works okay.
-                            foreach (var o in data)
+                            if (pair.Value is Dictionary<long, object> itemDB)
                             {
-                                // KEY: Item ID, VALUE: Data (generic object field/value pairs)
-                                if (o.Value is Dictionary<object, object> entry)
+                                foreach (var itemValuePair in itemDB)
                                 {
-                                    entry["itemID"] = o.Key;
-                                    Items.Merge(entry);
+                                    if (itemValuePair.Value is Dictionary<string, object> item)
+                                    {
+                                        item["itemID"] = itemValuePair.Key;
+                                        Items.Merge(item);
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("ItemDB not in the correct format!");
+                                        Console.WriteLine(MiniJSON.Json.Serialize(itemValuePair.Value));
+                                        Console.ReadLine();
+                                    }
                                 }
+                            }
+                            else if (pair.Value is List<object> items)
+                            {
+                                foreach (var o in items)
+                                {
+                                    if (o is Dictionary<string, object> item)
+                                    {
+                                        Items.Merge(item);
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("ItemDB not in the correct format!");
+                                        Console.WriteLine(MiniJSON.Json.Serialize(o));
+                                        Console.ReadLine();
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                Console.WriteLine("ItemDB not in the correct format!");
+                                Console.ReadLine();
                             }
                             break;
                         }
                     case "Artifacts":
-                        foreach (var o in data)
                         {
-                            // KEY: ArtifactID, VALUE: Data (generic object field/value pairs)
-                            if (o.Value is Dictionary<object, object> entry)
+                            if (pair.Value is Dictionary<long, object> artifactDB)
                             {
-                                long artifactID = Convert.ToInt64(o.Key);
-                                if (!Objects.ArtifactSources.TryGetValue(artifactID, out Dictionary<string, long> artifactInfo))
-                                    Objects.ArtifactSources[artifactID] = artifactInfo = new Dictionary<string, long>();
-
-                                foreach (KeyValuePair<object, object> artifactHand in entry)
+                                foreach (var itemValuePair in artifactDB)
                                 {
-                                    artifactInfo[ATT.Export.ToString(artifactHand.Key)] = Convert.ToInt64(artifactHand.Value);
+                                    if (itemValuePair.Value is Dictionary<string, object> artifact)
+                                    {
+                                        long artifactID = itemValuePair.Key;
+                                        if (!Objects.ArtifactSources.TryGetValue(artifactID, out Dictionary<string, long> artifactInfo))
+                                            Objects.ArtifactSources[artifactID] = artifactInfo = new Dictionary<string, long>();
+
+                                        foreach (var hand in artifact)
+                                        {
+                                            artifactInfo[ATT.Export.ToString(hand.Key)] = Convert.ToInt64(hand.Value);
+                                        }
+                                    }
                                 }
                             }
+                            else if (pair.Value is List<object> artifacts)
+                            {
+                                var artifactID = 0;
+                                foreach (var o in artifacts)
+                                {
+                                    ++artifactID;
+                                    if (o is Dictionary<string, object> artifact)
+                                    {
+                                        if (!Objects.ArtifactSources.TryGetValue(artifactID, out Dictionary<string, long> artifactInfo))
+                                            Objects.ArtifactSources[artifactID] = artifactInfo = new Dictionary<string, long>();
+
+                                        foreach (var hand in artifact)
+                                        {
+                                            artifactInfo[ATT.Export.ToString(hand.Key)] = Convert.ToInt64(hand.Value);
+                                        }
+                                    }
+                                }
+                            }
+                            break;
                         }
-                        break;
                     case "CategoryIcons":
                         {
                             // The format of the Category Icons DB is a dictionary of Category ID <-> Icon pairs.
-                            // This is slightly more annoying to parse, but it works okay.
-                            foreach (var o in data)
+                            if (pair.Value is Dictionary<long, object> CategoryIcons)
                             {
-                                // KEY: Category ID, VALUE: Icon
-                                if (o.Key is long id && o.Value is string name)
+                                foreach (var categoryPair in CategoryIcons)
                                 {
-                                    CATEGORY_ICONS[id] = name;
+                                    // KEY: Category ID, VALUE: Icon
+                                    if (categoryPair.Value is string icon)
+                                    {
+                                        CATEGORY_ICONS[categoryPair.Key] = icon;
+                                    }
                                 }
                             }
                             break;
@@ -2150,13 +2209,15 @@ namespace ATT
                     case "CategoryNames":
                         {
                             // The format of the Category Names DB is a dictionary of Category ID <-> Name pairs.
-                            // This is slightly more annoying to parse, but it works okay.
-                            foreach (var o in data)
+                            if (pair.Value is Dictionary<long, object> CategoryNames)
                             {
-                                // KEY: Category ID, VALUE: Name
-                                if (o.Key is long id && o.Value is string name)
+                                foreach (var categoryPair in CategoryNames)
                                 {
-                                    CATEGORY_NAMES[id] = name;
+                                    // KEY: Category ID, VALUE: Icon
+                                    if (categoryPair.Value is string name)
+                                    {
+                                        CATEGORY_NAMES[categoryPair.Key] = name;
+                                    }
                                 }
                             }
                             break;
@@ -2164,13 +2225,15 @@ namespace ATT
                     case "ObjectIcons":
                         {
                             // The format of the Object Icons DB is a dictionary of Object ID <-> Icon pairs.
-                            // This is slightly more annoying to parse, but it works okay.
-                            foreach (var o in data)
+                            if (pair.Value is Dictionary<long, object> ObjectIcons)
                             {
-                                // KEY: Object ID, VALUE: Icon
-                                if (o.Key is long id && o.Value is string name)
+                                foreach (var categoryPair in ObjectIcons)
                                 {
-                                    OBJECT_ICONS[id] = name;
+                                    // KEY: Object ID, VALUE: Icon
+                                    if (categoryPair.Value is string name)
+                                    {
+                                        OBJECT_ICONS[categoryPair.Key] = name;
+                                    }
                                 }
                             }
                             break;
@@ -2178,13 +2241,15 @@ namespace ATT
                     case "ObjectModels":
                         {
                             // The format of the Object Models DB is a dictionary of Object ID <-> Model ID pairs.
-                            // This is slightly more annoying to parse, but it works okay.
-                            foreach (var o in data)
+                            if (pair.Value is Dictionary<long, object> ObjectModels)
                             {
-                                // KEY: Object ID, VALUE: Model ID
-                                if (o.Key is long id && o.Value is long modelID)
+                                foreach (var categoryPair in ObjectModels)
                                 {
-                                    OBJECT_MODELS[id] = modelID;
+                                    // KEY: Object ID, VALUE: Model ID
+                                    if (categoryPair.Value is long modelID)
+                                    {
+                                        OBJECT_MODELS[categoryPair.Key] = modelID;
+                                    }
                                 }
                             }
                             break;
@@ -2192,94 +2257,141 @@ namespace ATT
                     case "ObjectNames":
                         {
                             // The format of the Object Names DB is a dictionary of Object ID <-> Name pairs.
-                            // This is slightly more annoying to parse, but it works okay.
-                            foreach (var o in data)
+                            if (pair.Value is Dictionary<long, object> ObjectNames)
                             {
-                                // KEY: Object ID, VALUE: Name
-                                if (o.Key is long id && o.Value is string name)
+                                foreach (var categoryPair in ObjectNames)
                                 {
-                                    OBJECT_NAMES[id] = name;
+                                    // KEY: Object ID, VALUE: Name
+                                    if (categoryPair.Value is string name)
+                                    {
+                                        OBJECT_NAMES[categoryPair.Key] = name;
+                                    }
                                 }
                             }
                             break;
                         }
                     default:
                         {
-                            // Parse a Source DB Container
-                            var contents = data.Values;
-                            if (contents == null)
-                            {
-                                Trace.Write("Invalid Source DB Format for Container '");
-                                Trace.Write(pair.Key);
-                                Trace.WriteLine("'!");
-                                continue;
-                            }
-
                             // Get the object container for this section.
-                            Objects.Merge(Objects.Get(ATT.Export.ToString(pair.Key)), data.Values.ToList());
+                            List<object> list = null;
+                            if (pair.Value is List<object> list2)
+                            {
+                                list = list2;
+                            }
+                            else if (pair.Value is Dictionary<string, object> data)
+                            {
+                                list = data.Values.ToList();
+                            }
+                            else if (pair.Value is Dictionary<long, object> ignoredKeys)
+                            {
+                                list = ignoredKeys.Values.ToList();
+                            }
+                            if (list != null)
+                            {
+                                if (list.Any()) Objects.Merge(Objects.Get(ATT.Export.ToString(pair.Key)), list);
+                            }
+                            else
+                            {
+                                Console.Write("Invalid Container format: ");
+                                Console.WriteLine(pair.Key);
+                                Console.ReadLine();
+                                Console.WriteLine(MiniJSON.Json.Serialize(pair.Value));
+                                Console.ReadLine();
+                                throw new Exception("Invalid Container format!");
+                            }
                             break;
                         }
                 }
             }
         }
 
-        /// <summary>
-        /// Parse the lua table into a commonly formatted object container.
-        /// </summary>
-        /// <param name="lua">The lua context.</param>
-        /// <param name="table">The raw lua table.</param>
-        /// <returns>The object dictionary or null.</returns>
-        public static Dictionary<object, object> Parse(Lua lua, LuaTable table)
+        static object ParseAsObject(LuaTable table)
         {
-            // If the table is invalid, return immediately.
-            if (table == null) return null;
-
-            // A dictioonary of generic values is always used.
-            var dict = new Dictionary<object, object>();
-            foreach (var field in table.Keys)
+            if (table.Keys.Count > 0)
             {
-                var v = table[field];
-                switch (v.GetType().ToString())
+                // Determine if we're dealing with a <string,object> dictionary.
+                var keyList = new List<object>();
+                foreach (var key in table.Keys)
                 {
-                    case "NLua.LuaTable":
-                        {
-                            var t = Parse(lua, v as LuaTable);
-                            if (t != null && t.Count > 0) dict[field] = t;
-                            break;
-                        }
-                    case "System.Boolean":
-                    case "System.Double":
-                    case "System.Int32":
-                    case "System.Int64":
-                    case "System.String":
-                        {
-                            dict[field] = v;
-                            break;
-                        }
-                    case "NLua.LuaFunction":
-                        {
-                            Trace.Write(field);
-                            Trace.Write(" (");
-                            Trace.Write(v.GetType().ToString());
-                            Trace.Write("): ");
-                            Trace.WriteLine(v);
-                            Trace.WriteLine("Functions are not directly supported at this time. Please use a [[ ]] surrounded string.");
-                            Console.ReadLine();
-                            break;
-                        }
-                    default:
-                        {
-                            Trace.Write(field);
-                            Trace.Write(" (");
-                            Trace.Write(v.GetType().ToString());
-                            Trace.Write("): ");
-                            Trace.WriteLine(v);
-                            Console.ReadLine();
-                            break;
-                        }
+                    if (key.GetType().ToString() == "System.String")
+                    {
+                        if (table[key].GetType().ToString() == "NLua.LuaFunction") continue;
+                        return ParseAsDictionary(table);
+                    }
+                    keyList.Add(key);
                 }
+                keyList.Sort();
+
+                // Determine if we're dealing with a <long,object> dictionary.
+                for (int i = 1; i <= keyList.Count; ++i)
+                {
+                    var key = keyList[i - 1];
+                    if (Convert.ToInt32(key) != i) return ParseAsTable(table);
+                }
+
+                // Create an ordered list from the table.
+                var list = new List<object>();
+                foreach (var key in keyList)
+                {
+                    list.Add(ParseObject(table[key]));
+                }
+                return list;
             }
+
+            return new List<object>();
+        }
+
+        static Dictionary<long, object> ParseAsTable(LuaTable table)
+        {
+            var dict = new Dictionary<long, object>();
+            foreach (var key in table.Keys) dict[Convert.ToInt64(key)] = ParseObject(table[key]);
             return dict;
+        }
+
+        static Dictionary<string, object> ParseAsDictionary(LuaTable table)
+        {
+            var dict = new Dictionary<string, object>();
+            foreach (var key in table.Keys) dict[ConvertFieldName(key.ToString())] = ParseObject(table[key]);
+            return dict;
+        }
+
+        static object ParseObject(object data)
+        {
+            switch (data.GetType().ToString())
+            {
+                case "NLua.LuaTable":
+                    {
+                        return ParseAsObject(data as LuaTable);
+                    }
+                case "System.Boolean":
+                case "System.Double":
+                case "System.Int32":
+                case "System.Int64":
+                case "System.String":
+                    {
+                        return data;
+                    }
+                case "NLua.LuaFunction":
+                    {
+                        Trace.Write(" (");
+                        Trace.Write(data.GetType().ToString());
+                        Trace.Write("): ");
+                        Trace.WriteLine(data);
+                        Trace.WriteLine("Functions are not directly supported at this time. Please use a [[ ]] surrounded string.");
+                        Console.ReadLine();
+                        break;
+                    }
+                default:
+                    {
+                        Trace.Write(" (");
+                        Trace.Write(data.GetType().ToString());
+                        Trace.Write("): ");
+                        Trace.WriteLine(data);
+                        Console.ReadLine();
+                        break;
+                    }
+            }
+            return null;
         }
         #endregion
         #region Export (Clean)
@@ -2297,11 +2409,8 @@ namespace ATT
             else if (data is List<object> list) ExportClean(builder, list);
             else if (data is Dictionary<string, object> dict) ExportClean(builder, dict);
             else if (data is string str) builder.Append('"').Append(str.Replace("\"", "\\\"")).Append('"');
-            else if (data is Dictionary<object, object> objdict) ExportClean(builder, objdict);
-            else if (data is Dictionary<int, object> intdict) ExportClean(builder, intdict);
             else if (data is Dictionary<long, object> longdict) ExportClean(builder, longdict);
-            else if (data is Dictionary<int, int> intintdict) ExportClean(builder, intintdict);
-            else if (data is Dictionary<long, int> longintdict) ExportClean(builder, longintdict);
+            else if (data is Dictionary<long, long> longlongdict) ExportClean(builder, longlongdict);
             else if (data is Dictionary<string, List<object>> listdict) ExportClean(builder, listdict);
             else if (data is List<List<object>> listOLists) ExportClean(builder, listOLists);
             else
