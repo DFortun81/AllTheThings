@@ -503,7 +503,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(58, 10, 58),
 					["groups"] = {
-						objective(1, {	-- 0/1 Arazzius the Cruel slain 
+						objective(1, {	-- 0/1 Arazzius the Cruel slain
 							["coord"] = { 43.8, 31.6, HELLFIRE_PENINSULA },
 							["cr"] = 19191,	-- Arazzius the Cruel
 						}),
@@ -1533,7 +1533,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(58, 10, 58),
 					["groups"] = {
-						objective(1, {	-- Arazzius the Cruel slain 
+						objective(1, {	-- Arazzius the Cruel slain
 							["coord"] = { 43.8, 31.6, HELLFIRE_PENINSULA },
 							["cr"] = 19191,	-- Arazzius the Cruel
 						}),
@@ -2165,7 +2165,6 @@ _.Zones =
 						}),
 					},
 				}),
-				
 				q(10119, {	-- Through the Dark Portal [Alliance]
 					["qg"] = 16841,	-- Watch Commander Relthorn Netherwane
 					["coord"] = { 54.7, 50.5, BLASTED_LANDS },
@@ -2491,18 +2490,18 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(10147),	-- BETA Mission: Kill the Messenger
 		q(10127),	-- BETA Mission: Sever the Tie
 		q(10145),	-- BETA Mission: Sever the Tie UNUSED
-		q(10370),	-- BETA Nazgrel's Command 
+		q(10370),	-- BETA Nazgrel's Command
 		q(10131),	-- BETA Planning the Escape
 		q(10154),	-- BETA Planning the Escape
 		q(10137, {	-- BETA Provoking the Warboss
 			i(25988),	-- Glowing Alabaster Ring
 			i(25991),	-- Seamless Stone Band
-			i(25990),	-- Smooth Soapstone band
+			i(25990),	-- Smooth Soapstone Band
 		}),
 		q(10155, {	-- BETA Provoking the Warboss
 			i(25988),	-- Glowing Alabaster Ring
 			i(25991),	-- Seamless Stone Band
-			i(25990),	-- Smooth Soapstone band
+			i(25990),	-- Smooth Soapstone Band
 		}),
 		q(10398),	-- BETA Return to Honor Hold
 		q(10128),	-- BETA Saving Private Imarion

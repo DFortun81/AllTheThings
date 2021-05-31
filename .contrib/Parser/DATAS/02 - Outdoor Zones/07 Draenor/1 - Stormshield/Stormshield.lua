@@ -625,7 +625,7 @@ _.Zones =
 									i(124785, {	-- Wild Gladiator's Helm (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
-									i(124761, {	-- Wild Gladiator's Helm leather (A)
+									i(124761, {	-- Wild Gladiator's Helm (leather) (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
 									i(124814, {	-- Wild Gladiator's Plate Helmet (A)
@@ -788,7 +788,7 @@ _.Zones =
 									i(124818, {	-- Wild Gladiator's Plate Grips (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
-									i(124765, {	-- Wild Gladiator's grips (leather) (A)
+									i(124765, {	-- Wild Gladiator's Grips (leather) (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
 								}),
@@ -887,10 +887,10 @@ _.Zones =
 									i(124695, {	-- Wild Gladiator's Treads of Cruelty (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
-									i(124696, {	-- Wild Gladiator's treads of prowess (A)
+									i(124696, {	-- Wild Gladiator's Treads of Prowess (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
-									i(124697, {	-- Wild Gladiator's treads of victory (A)
+									i(124697, {	-- Wild Gladiator's Treads of Victory (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
 								}),
@@ -1503,7 +1503,7 @@ _.Zones =
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
 								}),
-							},	
+							},
 						}),
 						n(88155, {	-- Challenger Savina
 							["description"] = "You can only buy items from this vendor if you have Challenge Warlord: Gold Feat of Strength on your character.",
@@ -2221,7 +2221,7 @@ _.Zones =
 							["itemID"] = 137642,	-- Mark of Honor
 							["races"] = ALLIANCE_ONLY,	-- to hide it in Mark of Honor list
 							["coord"] = { 54.8, 18.8, 622 },
-							["g"] = { 
+							["g"] = {
 								i(116776, {	-- Pale Thorngrazer
 									["cost"] = {
 										{ "i", 137642, 100 },	-- 100x Mark of Honor
@@ -2234,7 +2234,7 @@ _.Zones =
 								n(-319, {	-- Weapons
 									i(138635, {	-- Arsenal: Warmongering Gladiator's Weapons (A)
 										["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-										["sym"] = { 
+										["sym"] = {
 											{"sub", "pvp_weapons_faction_ensemble", -9981, -681, -9914, -661 },
 											{"exclude", "itemID", 138635 },	-- Exclude itself to stop duplicating
 										},
@@ -2326,7 +2326,7 @@ _.Zones =
 									i(125844, {	-- Warmongering Gladiator's Touch of Defeat (A)
 										["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 									}),
-								}),	
+								}),
 								cl(DEATHKNIGHT, {
 									i(138493, {	-- Ensemble: Warmongering Gladiator's Dreadplate Armor (A)
 										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
@@ -2544,7 +2544,7 @@ _.Zones =
 									}),
 								}),
 								cl(SHAMAN, {
-									i(138497, {	-- Ensemble: Warmongering Gladiator's Ringmail Armor (A)	
+									i(138497, {	-- Ensemble: Warmongering Gladiator's Ringmail Armor (A)
 										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 										["sym"] = {
 											{"sub", "pvp_set_faction_ensemble", -9981, -681, -9914, -661, 7 },
@@ -3067,13 +3067,13 @@ _.Zones =
 									i(115643),	-- Primal Gladiator's Chain Spaulders
 								}),
 								cl(MAGE, {
-									i(138571, {	-- Ensemble: Primal Gladiator's silk Armor (A)
+									i(138571, {	-- Ensemble: Primal Gladiator's Silk Armor (A)
 										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 										["sym"] = {
 											{"sub", "pvp_set_faction_ensemble", -9981, -679, -9914, -661, 8 },
-											{"select", "itemID", 115627 },	-- Primal Gladiator's cuffs of Cruelty (A)
-											{"select", "itemID", 115620 },	-- Primal Gladiator's cord of Cruelty (A)
-											{"select", "itemID", 115623 },	-- Primal Gladiator's treats of Cruelty (A)
+											{"select", "itemID", 115627 },	-- Primal Gladiator's Cuffs of Cruelty (A)
+											{"select", "itemID", 115620 },	-- Primal Gladiator's Cord of Cruelty (A)
+											{"select", "itemID", 115623 },	-- Primal Gladiator's Treads of Cruelty (A)
 											{"exclude", "itemID", 138571 },	-- Exclude itself to stop duplicating
 										},
 									}),
@@ -3101,7 +3101,7 @@ _.Zones =
 									i(115695),	-- Primal Gladiator's Ironskin Tunic
 								}),
 								cl(PALADIN, {
-									i(138559, {	-- Ensemble: Primal Gladiator's scaled Armor (A)
+									i(138559, {	-- Ensemble: Primal Gladiator's Scaled Armor (A)
 										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 										["sym"] = {
 											{"sub", "pvp_set_faction_ensemble", -9981, -679, -9914, -661, 2 },
@@ -3118,13 +3118,13 @@ _.Zones =
 									i(115700),	-- Primal Gladiator's Scaled Shoulders
 								}),
 								cl(PRIEST, {
-									i(138573, {	-- Ensemble: Primal Gladiator's satin Armor (A)
+									i(138573, {	-- Ensemble: Primal Gladiator's Satin Armor (A)
 										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 										["sym"] = {
 											{"sub", "pvp_set_faction_ensemble", -9981, -679, -9914, -661, 5 },
-											{"select", "itemID", 115627 },	-- Primal Gladiator's cuffs of Cruelty (A)
-											{"select", "itemID", 115620 },	-- Primal Gladiator's cord of Cruelty (A)
-											{"select", "itemID", 115623 },	-- Primal Gladiator's treats of Cruelty (A)
+											{"select", "itemID", 115627 },	-- Primal Gladiator's Cuffs of Cruelty (A)
+											{"select", "itemID", 115620 },	-- Primal Gladiator's Cord of Cruelty (A)
+											{"select", "itemID", 115623 },	-- Primal Gladiator's Treads of Cruelty (A)
 											{"exclude", "itemID", 138573 },	-- Exclude itself to stop duplicating
 										},
 									}),
@@ -3152,7 +3152,7 @@ _.Zones =
 									i(115719),	-- Primal Gladiator's Leather Spaulders
 								}),
 								cl(SHAMAN, {
-									i(138561, {	-- Ensemble: Primal Gladiator's ringmail Armor (A)
+									i(138561, {	-- Ensemble: Primal Gladiator's Ringmail Armor (A)
 										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 										["sym"] = {
 											{"sub", "pvp_set_faction_ensemble", -9981, -679, -9914, -661, 7 },
@@ -3173,9 +3173,9 @@ _.Zones =
 										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 										["sym"] = {
 											{"sub", "pvp_set_faction_ensemble", -9981, -679, -9914, -661, 9 },
-											{"select", "itemID", 115627 },	-- Primal Gladiator's cuffs of Cruelty (A)
-											{"select", "itemID", 115620 },	-- Primal Gladiator's cord of Cruelty (A)
-											{"select", "itemID", 115623 },	-- Primal Gladiator's treats of Cruelty (A)
+											{"select", "itemID", 115627 },	-- Primal Gladiator's Cuffs of Cruelty (A)
+											{"select", "itemID", 115620 },	-- Primal Gladiator's Cord of Cruelty (A)
+											{"select", "itemID", 115623 },	-- Primal Gladiator's Treads of Cruelty (A)
 											{"exclude", "itemID", 138575 },	-- Exclude itself to stop duplicating
 										},
 									}),
@@ -3186,7 +3186,7 @@ _.Zones =
 									i(115765),	-- Primal Gladiator's Felweave Amice
 								}),
 								cl(WARRIOR, {
-									i(138555, {	-- Ensemble: Primal Gladiator's plate Armor (A)
+									i(138555, {	-- Ensemble: Primal Gladiator's Plate Armor (A)
 										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 										["sym"] = {
 											{"sub", "pvp_set_faction_ensemble", -9981, -679, -9914, -661, 1 },
@@ -3329,14 +3329,14 @@ _.Zones =
 								i(118606),	-- Technique: Darkmoon Card of Draenor
 								i(120265, {	-- Technique: Ensorcelled Tarot
 									["collectible"] = false,	-- The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)
-								}),	
+								}),
 								i(118607),	-- Technique: Etched-Blade Warstaff
 								i(118613),	-- Technique: Shadowtome
 								i(118614),	-- Technique: Volatile Crystal
 								i(118615),	-- Technique: Warmaster's Firestick
 								i(118610, {	-- Technique: Weapon Crystal
 									["collectible"] = false,	-- The item is still in game but you can't learn the recipe from it anymore (recipe removed in 9.0.1)
-								}),	
+								}),
 								un(NEVER_IMPLEMENTED, i(118608)),	-- Technique: Greater Weapon Crystal
 								un(NEVER_IMPLEMENTED, i(120266)),	-- Technique: Greater Ensorcelled Tarot
 								un(NEVER_IMPLEMENTED, i(122548)),	-- Technique: Powerful Ensorcelled Tarot
@@ -3466,7 +3466,7 @@ _.Zones =
 								n(-319, {	-- Weapons
 									i(138628, {	-- Arsenal: Warmongering Combatant's Weapons (A)
 										["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-										["sym"] = { 
+										["sym"] = {
 											{"sub", "pvp_weapons_faction_ensemble", -9981, -681, -9914, -660 },
 											{"exclude", "itemID", 138628 },	-- Exclude itself to stop duplicating
 										 },
@@ -4119,7 +4119,7 @@ _.Zones =
 								n(-319, {	-- Weapons
 									i(138630, {	-- Arsenal: Wild Combatant's Weapons (A)
 										["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-										["sym"] = { 
+										["sym"] = {
 											{"sub", "pvp_weapons_faction_ensemble", -9981, -680, -9914, -660 },
 											{"exclude", "itemID", 138630 },	-- Exclude itself to stop duplicating
 										},

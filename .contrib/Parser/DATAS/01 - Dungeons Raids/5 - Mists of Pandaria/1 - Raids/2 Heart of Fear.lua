@@ -479,7 +479,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							i(85285),	-- Firebird's Legguards
 							i(85350),	-- Firebird's Legwraps
 							i(85325),	-- Legguards of Resounding Rings
-							i(85330),	-- legplates of Resounding Rings
+							i(85330),	-- Legplates of Resounding Rings
 						}),
 						i(89245, {	-- Leggings of the Shadowy Vanquisher
 							i(85335),	-- Greaves of the Lost Catacomb

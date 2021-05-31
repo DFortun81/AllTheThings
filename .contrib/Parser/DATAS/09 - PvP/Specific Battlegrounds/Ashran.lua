@@ -812,7 +812,7 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(125764)),	-- Wild Gladiator's Mageblade
 							un(REMOVED_FROM_GAME, i(125768)),	-- Wild Gladiator's Slicer
 							un(REMOVED_FROM_GAME, i(126750)),	-- Warmongering Gladiator's Quickblade
-							un(REMOVED_FROM_GAME, i(126878)),	-- Warmongering Gladiator's mageblade
+							un(REMOVED_FROM_GAME, i(126878)),	-- Warmongering Gladiator's Mageblade
 							un(REMOVED_FROM_GAME, i(126882)),	-- Warmongering Gladiator's Slicer
 							-- Staff
 							un(REMOVED_FROM_GAME, i(115833)),	-- Primal Gladiator's Battle Staff
@@ -844,11 +844,11 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(126792)),	-- Warmongering Gladiator's Redoubt
 							un(REMOVED_FROM_GAME, i(126883)),	-- Warmongering Gladiator's Shield Wall
 							-- Wands
-							un(REMOVED_FROM_GAME, i(115835)),	-- Primal Gladiator's Touch of defeat
+							un(REMOVED_FROM_GAME, i(115835)),	-- Primal Gladiator's Touch of Defeat
 							un(REMOVED_FROM_GAME, i(115951)),	-- Primal Gladiator's Baton of Light
-							un(REMOVED_FROM_GAME, i(125649)),	-- Wild Gladiator's Touch of defeat
+							un(REMOVED_FROM_GAME, i(125649)),	-- Wild Gladiator's Touch of Defeat
 							un(REMOVED_FROM_GAME, i(125765)),	-- Wild Gladiator's Baton of Light
-							un(REMOVED_FROM_GAME, i(126763)),	-- Warmongering Gladiator's Touch of defeat
+							un(REMOVED_FROM_GAME, i(126763)),	-- Warmongering Gladiator's Touch of Defeat
 							un(REMOVED_FROM_GAME, i(126879)),	-- Warmongering Gladiator's Baton of Light
 							n(-679, {	-- Primal Gladiator: Warlords Season 1
 								cl(DEATHKNIGHT, {
@@ -857,7 +857,7 @@ _.PVP =
 									un(REMOVED_FROM_GAME, i(115906)),	-- Primal Gladiator's Dreadplate Girdle
 									un(REMOVED_FROM_GAME, i(115839)),	-- Primal Gladiator's Dreadplate Helm
 									un(REMOVED_FROM_GAME, i(115840)),	-- Primal Gladiator's Dreadplate Legguards
-									un(REMOVED_FROM_GAME, i(115841)),	-- Primal Gladiator's Dreadplate shoulders
+									un(REMOVED_FROM_GAME, i(115841)),	-- Primal Gladiator's Dreadplate Shoulders
 									un(REMOVED_FROM_GAME, i(115909)),	-- Primal Gladiator's Dreadplate Warboots
 								}),
 								cl(DRUID, {
@@ -918,20 +918,20 @@ _.PVP =
 									un(REMOVED_FROM_GAME, i(115880)),	-- Primal Gladiator's Ironskin Waistband
 								}),
 								cl(PALADIN, {
-									un(REMOVED_FROM_GAME, i(115901)),	-- Primal Gladiator's Ornamented chestguard
-									un(REMOVED_FROM_GAME, i(115898)),	-- Primal Gladiator's Ornamented clasp
+									un(REMOVED_FROM_GAME, i(115901)),	-- Primal Gladiator's Ornamented Chestguard
+									un(REMOVED_FROM_GAME, i(115898)),	-- Primal Gladiator's Ornamented Clasp
 									un(REMOVED_FROM_GAME, i(115902)),	-- Primal Gladiator's Ornamented Gloves
-									un(REMOVED_FROM_GAME, i(115899)),	-- Primal Gladiator's Ornamented greaves
+									un(REMOVED_FROM_GAME, i(115899)),	-- Primal Gladiator's Ornamented Greaves
 									un(REMOVED_FROM_GAME, i(115903)),	-- Primal Gladiator's Ornamented headcover
 									un(REMOVED_FROM_GAME, i(115904)),	-- Primal Gladiator's Ornamented legPlates
 									un(REMOVED_FROM_GAME, i(115905)),	-- Primal Gladiator's Ornamented Spaulders
 									un(REMOVED_FROM_GAME, i(115892)),	-- Primal Gladiator's Scaled Chestpiece
-									un(REMOVED_FROM_GAME, i(115897)),	-- Primal Gladiator's Scaled clasp
+									un(REMOVED_FROM_GAME, i(115897)),	-- Primal Gladiator's Scaled Clasp
 									un(REMOVED_FROM_GAME, i(115893)),	-- Primal Gladiator's Scaled Gauntlets
-									un(REMOVED_FROM_GAME, i(115900)),	-- Primal Gladiator's Scaled greaves
+									un(REMOVED_FROM_GAME, i(115900)),	-- Primal Gladiator's Scaled Greaves
 									un(REMOVED_FROM_GAME, i(115894)),	-- Primal Gladiator's Scaled Helm
 									un(REMOVED_FROM_GAME, i(115895)),	-- Primal Gladiator's Scaled Legguards
-									un(REMOVED_FROM_GAME, i(115896)),	-- Primal Gladiator's Scaled shoulders
+									un(REMOVED_FROM_GAME, i(115896)),	-- Primal Gladiator's Scaled Shoulders
 								}),
 								cl(PRIEST, {
 									un(REMOVED_FROM_GAME, i(115826)),	-- Primal Gladiator's Mooncloth Cord
@@ -996,7 +996,7 @@ _.PVP =
 									un(REMOVED_FROM_GAME, i(115907)),	-- Primal Gladiator's Plate Girdle
 									un(REMOVED_FROM_GAME, i(115963)),	-- Primal Gladiator's Plate Helm
 									un(REMOVED_FROM_GAME, i(115964)),	-- Primal Gladiator's Plate Legguards
-									un(REMOVED_FROM_GAME, i(115965)),	-- Primal Gladiator's Plate shoulders
+									un(REMOVED_FROM_GAME, i(115965)),	-- Primal Gladiator's Plate Shoulders
 									un(REMOVED_FROM_GAME, i(115908)),	-- Primal Gladiator's Plate Warboots
 								}),
 							}),
@@ -1129,13 +1129,13 @@ _.PVP =
 									un(REMOVED_FROM_GAME, i(125742)),	-- Wild Gladiator's Ringmail Waistguard
 								}),
 								cl(WARLOCK, {
-									un(REMOVED_FROM_GAME, i(125774)),	-- wild Gladiator's Felweave Amice
-									un(REMOVED_FROM_GAME, i(125639)),	-- wild Gladiator's Felweave Cord
-									un(REMOVED_FROM_GAME, i(125771)),	-- wild Gladiator's Felweave Cowl
-									un(REMOVED_FROM_GAME, i(125770)),	-- wild Gladiator's Felweave Handguards
-									un(REMOVED_FROM_GAME, i(125773)),	-- wild Gladiator's Felweave Rainment
-									un(REMOVED_FROM_GAME, i(125642)),	-- wild Gladiator's Felweave Treads
-									un(REMOVED_FROM_GAME, i(125772)),	-- wild Gladiator's Felweave Trousers
+									un(REMOVED_FROM_GAME, i(125774)),	-- Wild Gladiator's Felweave Amice
+									un(REMOVED_FROM_GAME, i(125639)),	-- Wild Gladiator's Felweave Cord
+									un(REMOVED_FROM_GAME, i(125771)),	-- Wild Gladiator's Felweave Cowl
+									un(REMOVED_FROM_GAME, i(125770)),	-- Wild Gladiator's Felweave Handguards
+									un(REMOVED_FROM_GAME, i(125773)),	-- Wild Gladiator's Felweave Rainment
+									un(REMOVED_FROM_GAME, i(125642)),	-- Wild Gladiator's Felweave Treads
+									un(REMOVED_FROM_GAME, i(125772)),	-- Wild Gladiator's Felweave Trousers
 								}),
 								cl(WARRIOR, {
 									un(REMOVED_FROM_GAME, i(125721)), -- Wild Gladiator's Plate Girdle
@@ -1377,7 +1377,7 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(125764)),	-- Wild Gladiator's Mageblade
 							un(REMOVED_FROM_GAME, i(125768)),	-- Wild Gladiator's Slicer
 							un(REMOVED_FROM_GAME, i(126750)),	-- Warmongering Gladiator's Quickblade
-							un(REMOVED_FROM_GAME, i(126878)),	-- Warmongering Gladiator's mageblade
+							un(REMOVED_FROM_GAME, i(126878)),	-- Warmongering Gladiator's Mageblade
 							un(REMOVED_FROM_GAME, i(126882)),	-- Warmongering Gladiator's Slicer
 							-- Staff
 							un(REMOVED_FROM_GAME, i(115833)),	-- Primal Gladiator's Battle Staff
@@ -1409,11 +1409,11 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(126792)),	-- Warmongering Gladiator's Redoubt
 							un(REMOVED_FROM_GAME, i(126883)),	-- Warmongering Gladiator's Shield Wall
 							-- Wands
-							un(REMOVED_FROM_GAME, i(115835)),	-- Primal Gladiator's Touch of defeat
+							un(REMOVED_FROM_GAME, i(115835)),	-- Primal Gladiator's Touch of Defeat
 							un(REMOVED_FROM_GAME, i(115951)),	-- Primal Gladiator's Baton of Light
-							un(REMOVED_FROM_GAME, i(125649)),	-- Wild Gladiator's Touch of defeat
+							un(REMOVED_FROM_GAME, i(125649)),	-- Wild Gladiator's Touch of Defeat
 							un(REMOVED_FROM_GAME, i(125765)),	-- Wild Gladiator's Baton of Light
-							un(REMOVED_FROM_GAME, i(126763)),	-- Warmongering Gladiator's Touch of defeat
+							un(REMOVED_FROM_GAME, i(126763)),	-- Warmongering Gladiator's Touch of Defeat
 							un(REMOVED_FROM_GAME, i(126879)),	-- Warmongering Gladiator's Baton of Light
 							n(-679, {	-- Primal Gladiator: Warlords Season 1
 								cl(DEATHKNIGHT, {
@@ -1422,7 +1422,7 @@ _.PVP =
 									un(REMOVED_FROM_GAME, i(115906)),	-- Primal Gladiator's Dreadplate Girdle
 									un(REMOVED_FROM_GAME, i(115839)),	-- Primal Gladiator's Dreadplate Helm
 									un(REMOVED_FROM_GAME, i(115840)),	-- Primal Gladiator's Dreadplate Legguards
-									un(REMOVED_FROM_GAME, i(115841)),	-- Primal Gladiator's Dreadplate shoulders
+									un(REMOVED_FROM_GAME, i(115841)),	-- Primal Gladiator's Dreadplate Shoulders
 									un(REMOVED_FROM_GAME, i(115909)),	-- Primal Gladiator's Dreadplate Warboots
 								}),
 								cl(DRUID, {
@@ -1483,20 +1483,20 @@ _.PVP =
 									un(REMOVED_FROM_GAME, i(115880)),	-- Primal Gladiator's Ironskin Waistband
 								}),
 								cl(PALADIN, {
-									un(REMOVED_FROM_GAME, i(115901)),	-- Primal Gladiator's Ornamented chestguard
-									un(REMOVED_FROM_GAME, i(115898)),	-- Primal Gladiator's Ornamented clasp
+									un(REMOVED_FROM_GAME, i(115901)),	-- Primal Gladiator's Ornamented Chestguard
+									un(REMOVED_FROM_GAME, i(115898)),	-- Primal Gladiator's Ornamented Clasp
 									un(REMOVED_FROM_GAME, i(115902)),	-- Primal Gladiator's Ornamented Gloves
-									un(REMOVED_FROM_GAME, i(115899)),	-- Primal Gladiator's Ornamented greaves
+									un(REMOVED_FROM_GAME, i(115899)),	-- Primal Gladiator's Ornamented Greaves
 									un(REMOVED_FROM_GAME, i(115903)),	-- Primal Gladiator's Ornamented headcover
 									un(REMOVED_FROM_GAME, i(115904)),	-- Primal Gladiator's Ornamented legPlates
 									un(REMOVED_FROM_GAME, i(115905)),	-- Primal Gladiator's Ornamented Spaulders
 									un(REMOVED_FROM_GAME, i(115892)),	-- Primal Gladiator's Scaled Chestpiece
-									un(REMOVED_FROM_GAME, i(115897)),	-- Primal Gladiator's Scaled clasp
+									un(REMOVED_FROM_GAME, i(115897)),	-- Primal Gladiator's Scaled Clasp
 									un(REMOVED_FROM_GAME, i(115893)),	-- Primal Gladiator's Scaled Gauntlets
-									un(REMOVED_FROM_GAME, i(115900)),	-- Primal Gladiator's Scaled greaves
+									un(REMOVED_FROM_GAME, i(115900)),	-- Primal Gladiator's Scaled Greaves
 									un(REMOVED_FROM_GAME, i(115894)),	-- Primal Gladiator's Scaled Helm
 									un(REMOVED_FROM_GAME, i(115895)),	-- Primal Gladiator's Scaled Legguards
-									un(REMOVED_FROM_GAME, i(115896)),	-- Primal Gladiator's Scaled shoulders
+									un(REMOVED_FROM_GAME, i(115896)),	-- Primal Gladiator's Scaled Shoulders
 								}),
 								cl(PRIEST, {
 									un(REMOVED_FROM_GAME, i(115826)),	-- Primal Gladiator's Mooncloth Cord
@@ -1561,7 +1561,7 @@ _.PVP =
 									un(REMOVED_FROM_GAME, i(115907)),	-- Primal Gladiator's Plate Girdle
 									un(REMOVED_FROM_GAME, i(115963)),	-- Primal Gladiator's Plate Helm
 									un(REMOVED_FROM_GAME, i(115964)),	-- Primal Gladiator's Plate Legguards
-									un(REMOVED_FROM_GAME, i(115965)),	-- Primal Gladiator's Plate shoulders
+									un(REMOVED_FROM_GAME, i(115965)),	-- Primal Gladiator's Plate Shoulders
 									un(REMOVED_FROM_GAME, i(115908)),	-- Primal Gladiator's Plate Warboots
 								}),
 							}),
@@ -1694,13 +1694,13 @@ _.PVP =
 									un(REMOVED_FROM_GAME, i(125742)),	-- Wild Gladiator's Ringmail Waistguard
 								}),
 								cl(WARLOCK, {
-									un(REMOVED_FROM_GAME, i(125774)),	-- wild Gladiator's Felweave Amice
-									un(REMOVED_FROM_GAME, i(125639)),	-- wild Gladiator's Felweave Cord
-									un(REMOVED_FROM_GAME, i(125771)),	-- wild Gladiator's Felweave Cowl
-									un(REMOVED_FROM_GAME, i(125770)),	-- wild Gladiator's Felweave Handguards
-									un(REMOVED_FROM_GAME, i(125773)),	-- wild Gladiator's Felweave Rainment
-									un(REMOVED_FROM_GAME, i(125642)),	-- wild Gladiator's Felweave Treads
-									un(REMOVED_FROM_GAME, i(125772)),	-- wild Gladiator's Felweave Trousers
+									un(REMOVED_FROM_GAME, i(125774)),	-- Wild Gladiator's Felweave Amice
+									un(REMOVED_FROM_GAME, i(125639)),	-- Wild Gladiator's Felweave Cord
+									un(REMOVED_FROM_GAME, i(125771)),	-- Wild Gladiator's Felweave Cowl
+									un(REMOVED_FROM_GAME, i(125770)),	-- Wild Gladiator's Felweave Handguards
+									un(REMOVED_FROM_GAME, i(125773)),	-- Wild Gladiator's Felweave Rainment
+									un(REMOVED_FROM_GAME, i(125642)),	-- Wild Gladiator's Felweave Treads
+									un(REMOVED_FROM_GAME, i(125772)),	-- Wild Gladiator's Felweave Trousers
 								}),
 								cl(WARRIOR, {
 									un(REMOVED_FROM_GAME, i(125721)), -- Wild Gladiator's Plate Girdle

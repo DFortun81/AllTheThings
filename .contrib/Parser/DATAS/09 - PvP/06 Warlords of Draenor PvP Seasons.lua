@@ -3,7 +3,7 @@
 -----------------------------------------------
 
 _.PVP =
-{	
+{
 	---- This gear is listed here to reduce the bloat.
 	---- The actual sources include:
 	---- arena win&lose, rbg win&lose, bg win&lose, arena skirmish win&lose, ashran boxes win&lose, 13 ashran quests & broken bones work orders
@@ -853,7 +853,7 @@ _.PVP =
 									{"select", "itemID", 115704 },	-- Primal Gladiator's Warboots of Cruelty (A)
 									{"exclude", "itemID", 138557 },	-- Exclude itself to stop duplicating
 								},
-								["g"] = {							
+								["g"] = {
 									i(115629, {	-- Primal Gladiator's Dreadplate Chestpiece
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -921,13 +921,13 @@ _.PVP =
 							}),
 						}),
 						cl(MAGE, {
-							i(138571, {	-- Ensemble: Primal Gladiator's silk Armor (A)
+							i(138571, {	-- Ensemble: Primal Gladiator's Silk Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
 									{"sub", "pvp_set_faction_ensemble", -9981, -679, -9914, -661, 8 },
-									{"select", "itemID", 115627 },	-- Primal Gladiator's cuffs of Cruelty (A)
-									{"select", "itemID", 115620 },	-- Primal Gladiator's cord of Cruelty (A)
-									{"select", "itemID", 115623 },	-- Primal Gladiator's treats of Cruelty (A)
+									{"select", "itemID", 115627 },	-- Primal Gladiator's Cuffs of Cruelty (A)
+									{"select", "itemID", 115620 },	-- Primal Gladiator's Cord of Cruelty (A)
+									{"select", "itemID", 115623 },	-- Primal Gladiator's Treads of Cruelty (A)
 									{"exclude", "itemID", 138571 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
@@ -959,7 +959,7 @@ _.PVP =
 							}),
 						}),
 						cl(PALADIN, {
-							i(138559, {	-- Ensemble: Primal Gladiator's scaled Armor (A)
+							i(138559, {	-- Ensemble: Primal Gladiator's Scaled Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
 									{"sub", "pvp_set_faction_ensemble", -9981, -679, -9914, -661, 2 },
@@ -978,13 +978,13 @@ _.PVP =
 							}),
 						}),
 						cl(PRIEST, {
-							i(138573, {	-- Ensemble: Primal Gladiator's satin Armor (A)
+							i(138573, {	-- Ensemble: Primal Gladiator's Satin Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
 									{"sub", "pvp_set_faction_ensemble", -9981, -679, -9914, -661, 5 },
-									{"select", "itemID", 115627 },	-- Primal Gladiator's cuffs of Cruelty (A)
-									{"select", "itemID", 115620 },	-- Primal Gladiator's cord of Cruelty (A)
-									{"select", "itemID", 115623 },	-- Primal Gladiator's treats of Cruelty (A)
+									{"select", "itemID", 115627 },	-- Primal Gladiator's Cuffs of Cruelty (A)
+									{"select", "itemID", 115620 },	-- Primal Gladiator's Cord of Cruelty (A)
+									{"select", "itemID", 115623 },	-- Primal Gladiator's Treads of Cruelty (A)
 									{"exclude", "itemID", 138573 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
@@ -1016,7 +1016,7 @@ _.PVP =
 							}),
 						}),
 						cl(SHAMAN, {
-							i(138561, {	-- Ensemble: Primal Gladiator's ringmail Armor (A)
+							i(138561, {	-- Ensemble: Primal Gladiator's Ringmail Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
 									{"sub", "pvp_set_faction_ensemble", -9981, -679, -9914, -661, 7 },
@@ -1039,9 +1039,9 @@ _.PVP =
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
 									{"sub", "pvp_set_faction_ensemble", -9981, -679, -9914, -661, 9 },
-									{"select", "itemID", 115627 },	-- Primal Gladiator's cuffs of Cruelty (A)
-									{"select", "itemID", 115620 },	-- Primal Gladiator's cord of Cruelty (A)
-									{"select", "itemID", 115623 },	-- Primal Gladiator's treats of Cruelty (A)
+									{"select", "itemID", 115627 },	-- Primal Gladiator's Cuffs of Cruelty (A)
+									{"select", "itemID", 115620 },	-- Primal Gladiator's Cord of Cruelty (A)
+									{"select", "itemID", 115623 },	-- Primal Gladiator's Treads of Cruelty (A)
 									{"exclude", "itemID", 138575 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
@@ -1054,7 +1054,7 @@ _.PVP =
 							}),
 						}),
 						cl(WARRIOR, {
-							i(138555, {	-- Ensemble: Primal Gladiator's plate Armor (A)
+							i(138555, {	-- Ensemble: Primal Gladiator's Plate Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
 									{"sub", "pvp_set_faction_ensemble", -9981, -679, -9914, -661, 1 },
@@ -1177,14 +1177,14 @@ _.PVP =
 						}),
 						n(-384,	{	-- Neck
 							un(REMOVED_FROM_GAME, i(115606)),	-- Primal Gladiator's Necklace of Cruelty
-							un(REMOVED_FROM_GAME, i(115607)),	-- Primal Gladiator's necklace of prowess
-							un(REMOVED_FROM_GAME, i(115655)),	-- Primal Gladiator's pendant of cruelty
-							un(REMOVED_FROM_GAME, i(115656)),	-- Primal Gladiator's pendant of prowess
-							un(REMOVED_FROM_GAME, i(115657)),	-- Primal Gladiator's pendant of meditation
-							un(REMOVED_FROM_GAME, i(115658)),	-- Primal Gladiator's pendant of contemplation
-							un(REMOVED_FROM_GAME, i(115734)),	-- Primal Gladiator's choker of cruelty
-							un(REMOVED_FROM_GAME, i(115735)),	-- Primal Gladiator's choker of prowess
-							un(REMOVED_FROM_GAME, i(120108)),	-- Primal Gladiator's choker of endurance
+							un(REMOVED_FROM_GAME, i(115607)),	-- Primal Gladiator's Necklace of Prowess
+							un(REMOVED_FROM_GAME, i(115655)),	-- Primal Gladiator's Pendant of Cruelty
+							un(REMOVED_FROM_GAME, i(115656)),	-- Primal Gladiator's Pendant of Prowess
+							un(REMOVED_FROM_GAME, i(115657)),	-- Primal Gladiator's Pendant of Meditation
+							un(REMOVED_FROM_GAME, i(115658)),	-- Primal Gladiator's Pendant of Contemplation
+							un(REMOVED_FROM_GAME, i(115734)),	-- Primal Gladiator's Choker of Cruelty
+							un(REMOVED_FROM_GAME, i(115735)),	-- Primal Gladiator's Choker of Prowess
+							un(REMOVED_FROM_GAME, i(120108)),	-- Primal Gladiator's Choker of Endurance
 						}),
 						n(-385,	{	-- Finger
 							un(REMOVED_FROM_GAME, i(115772)),	-- Primal Gladiator's Signet of Ruthlessness
@@ -1195,26 +1195,26 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(115664)),	-- Primal Gladiator's Band of Meditation
 							un(REMOVED_FROM_GAME, i(115663)),	-- Primal Gladiator's Band of Victory
 							un(REMOVED_FROM_GAME, i(115662)),	-- Primal Gladiator's Band of Prowess
-							un(REMOVED_FROM_GAME, i(115608)),	-- Primal Gladiator's ring of cruelty
-							un(REMOVED_FROM_GAME, i(115609)),	-- Primal Gladiator's ring of prowess
-							un(REMOVED_FROM_GAME, i(115661)),	-- Primal Gladiator's band of cruelty
-							un(REMOVED_FROM_GAME, i(120104)),	-- Primal Gladiator's signet of endurance
+							un(REMOVED_FROM_GAME, i(115608)),	-- Primal Gladiator's Ring of Cruelty
+							un(REMOVED_FROM_GAME, i(115609)),	-- Primal Gladiator's Ring of Prowess
+							un(REMOVED_FROM_GAME, i(115661)),	-- Primal Gladiator's Band of Cruelty
+							un(REMOVED_FROM_GAME, i(120104)),	-- Primal Gladiator's Signet of Endurance
 						}),
 						n(-386,	{	-- Trinket
 							un(REMOVED_FROM_GAME, i(122706)),	-- Primal Gladiator's Medallion of Adaptation
-							un(REMOVED_FROM_GAME, i(115749)),	-- Primal Gladiator's badge of conquest
-							un(REMOVED_FROM_GAME, i(115750)),	-- Primal Gladiator's insignia of conquest
-							un(REMOVED_FROM_GAME, i(115751)),	-- Primal Gladiator's emblem of cruelty
-							un(REMOVED_FROM_GAME, i(115752)),	-- Primal Gladiator's emblem of tenacity
-							un(REMOVED_FROM_GAME, i(115753)),	-- Primal Gladiator's emblem of mediation
-							un(REMOVED_FROM_GAME, i(115754)),	-- Primal Gladiator's badge of dominance
-							un(REMOVED_FROM_GAME, i(115496)),	-- Primal Gladiator's badge of adaptation
-							un(REMOVED_FROM_GAME, i(115755)),	-- Primal Gladiator's insignia of dominance
-							un(REMOVED_FROM_GAME, i(115756)),	-- Primal Gladiator's mmedallion of cruelty
-							un(REMOVED_FROM_GAME, i(115757)),	-- Primal Gladiator's medallion of tenacity
-							un(REMOVED_FROM_GAME, i(115758)),	-- Primal Gladiator's medallion of mediation
-							un(REMOVED_FROM_GAME, i(115759)),	-- Primal Gladiator's badge of victory
-							un(REMOVED_FROM_GAME, i(115760)),	-- Primal Gladiator's insignia of victory
+							un(REMOVED_FROM_GAME, i(115749)),	-- Primal Gladiator's Badge of Conquest
+							un(REMOVED_FROM_GAME, i(115750)),	-- Primal Gladiator's Insignia of Conquest
+							un(REMOVED_FROM_GAME, i(115751)),	-- Primal Gladiator's Emblem of Cruelty
+							un(REMOVED_FROM_GAME, i(115752)),	-- Primal Gladiator's Emblem of Tenacity
+							un(REMOVED_FROM_GAME, i(115753)),	-- Primal Gladiator's Emblem of Meditation
+							un(REMOVED_FROM_GAME, i(115754)),	-- Primal Gladiator's Badge of Dominance
+							un(REMOVED_FROM_GAME, i(115496)),	-- Primal Gladiator's Badge of Adaptation
+							un(REMOVED_FROM_GAME, i(115755)),	-- Primal Gladiator's Insignia of Dominance
+							un(REMOVED_FROM_GAME, i(115756)),	-- Primal Gladiator's Medallion of Cruelty
+							un(REMOVED_FROM_GAME, i(115757)),	-- Primal Gladiator's Medallion of Tenacity
+							un(REMOVED_FROM_GAME, i(115758)),	-- Primal Gladiator's Medallion of Meditation
+							un(REMOVED_FROM_GAME, i(115759)),	-- Primal Gladiator's Badge of Victory
+							un(REMOVED_FROM_GAME, i(115760)),	-- Primal Gladiator's Insignia of Victory
 						}),
 					}),
 				},
@@ -2132,44 +2132,44 @@ _.PVP =
 						}),
 						n(-384,	{	-- Neck
 							un(REMOVED_FROM_GAME, i(111079)),	-- Primal Gladiator's Necklace of Cruelty
-							un(REMOVED_FROM_GAME, i(111080)),	-- Primal Gladiator's necklace of prowess
-							un(REMOVED_FROM_GAME, i(111128)),	-- Primal Gladiator's pendant of cruelty
-							un(REMOVED_FROM_GAME, i(111129)),	-- Primal Gladiator's pendant of prowess
-							un(REMOVED_FROM_GAME, i(111130)),	-- Primal Gladiator's pendant of meditation
-							un(REMOVED_FROM_GAME, i(111131)),	-- Primal Gladiator's pendant of contemplation
-							un(REMOVED_FROM_GAME, i(111207)),	-- Primal Gladiator's choker of cruelty
-							un(REMOVED_FROM_GAME, i(111208)),	-- Primal Gladiator's choker of prowess
-							un(REMOVED_FROM_GAME, i(120107)),	-- Primal Gladiator's choker of endurance
+							un(REMOVED_FROM_GAME, i(111080)),	-- Primal Gladiator's Necklace of Prowess
+							un(REMOVED_FROM_GAME, i(111128)),	-- Primal Gladiator's Pendant of Cruelty
+							un(REMOVED_FROM_GAME, i(111129)),	-- Primal Gladiator's Pendant of Prowess
+							un(REMOVED_FROM_GAME, i(111130)),	-- Primal Gladiator's Pendant of Meditation
+							un(REMOVED_FROM_GAME, i(111131)),	-- Primal Gladiator's Pendant of Contemplation
+							un(REMOVED_FROM_GAME, i(111207)),	-- Primal Gladiator's Choker of Cruelty
+							un(REMOVED_FROM_GAME, i(111208)),	-- Primal Gladiator's Choker of Prowess
+							un(REMOVED_FROM_GAME, i(120107)),	-- Primal Gladiator's Choker of Endurance
 						}),
 						n(-385,	{	-- Finger
-							un(REMOVED_FROM_GAME, i(111081)),	-- Primal Gladiator's ring of cruelty
-							un(REMOVED_FROM_GAME, i(111082)),	-- Primal Gladiator's Ring of prowess
-							un(REMOVED_FROM_GAME, i(111134)),	-- Primal Gladiator's band of cruelty
-							un(REMOVED_FROM_GAME, i(111135)),	-- Primal Gladiator's band of prowess
-							un(REMOVED_FROM_GAME, i(111136)),	-- Primal Gladiator's band of victory
-							un(REMOVED_FROM_GAME, i(111137)),	-- Primal Gladiator's band of meditation
-							un(REMOVED_FROM_GAME, i(111138)),	-- Primal Gladiator's band of contemplation
-							un(REMOVED_FROM_GAME, i(111219)),	-- Primal Gladiator's signet of cruelty
-							un(REMOVED_FROM_GAME, i(111220)),	-- Primal Gladiator's signet of accuracy
-							un(REMOVED_FROM_GAME, i(111271)),	-- Primal Gladiator's ring of triumph
-							un(REMOVED_FROM_GAME, i(120103)),	-- Primal Gladiator's signet of endurance
+							un(REMOVED_FROM_GAME, i(111081)),	-- Primal Gladiator's Ring of Cruelty
+							un(REMOVED_FROM_GAME, i(111082)),	-- Primal Gladiator's Ring of Prowess
+							un(REMOVED_FROM_GAME, i(111134)),	-- Primal Gladiator's Band of Cruelty
+							un(REMOVED_FROM_GAME, i(111135)),	-- Primal Gladiator's Band of Prowess
+							un(REMOVED_FROM_GAME, i(111136)),	-- Primal Gladiator's Band of Victory
+							un(REMOVED_FROM_GAME, i(111137)),	-- Primal Gladiator's Band of Meditation
+							un(REMOVED_FROM_GAME, i(111138)),	-- Primal Gladiator's Band of Contemplation
+							un(REMOVED_FROM_GAME, i(111219)),	-- Primal Gladiator's Signet of Cruelty
+							un(REMOVED_FROM_GAME, i(111220)),	-- Primal Gladiator's Signet of Accuracy
+							un(REMOVED_FROM_GAME, i(111271)),	-- Primal Gladiator's Ring of Triumph
+							un(REMOVED_FROM_GAME, i(120103)),	-- Primal Gladiator's Signet of Endurance
 						}),
 						n(-386,	{	-- Trinket
-							un(REMOVED_FROM_GAME, i(111272)),	-- Primal Gladiator's signet of ruthlessness
-							un(REMOVED_FROM_GAME, i(111222)),	-- Primal Gladiator's badge of conquest
-							un(REMOVED_FROM_GAME, i(111223)),	-- Primal Gladiator's insignia of conquest
-							un(REMOVED_FROM_GAME, i(111224)),	-- Primal Gladiator's emblem of cruelty
-							un(REMOVED_FROM_GAME, i(111225)),	-- Primal Gladiator's emblem of tenacity
-							un(REMOVED_FROM_GAME, i(111226)),	-- Primal Gladiator's emblem of mediation
-							un(REMOVED_FROM_GAME, i(111227)),	-- Primal Gladiator's badge of dominance
-							un(REMOVED_FROM_GAME, i(111228)),	-- Primal Gladiator's insignia of dominance
-							un(REMOVED_FROM_GAME, i(111229)),	-- Primal Gladiator's mmedallion of cruelty
-							un(REMOVED_FROM_GAME, i(111230)),	-- Primal Gladiator's medallion of tenacity
-							un(REMOVED_FROM_GAME, i(111231)),	-- Primal Gladiator's medallion of mediation
-							un(REMOVED_FROM_GAME, i(111232)),	-- Primal Gladiator's badge of citory
-							un(REMOVED_FROM_GAME, i(111233)),	-- Primal Gladiator's insignia of victory
-							un(REMOVED_FROM_GAME, i(115495)),	-- Primal Gladiator's badge of adaptation
-							un(REMOVED_FROM_GAME, i(122707)),	-- Primal Gladiator's medalionof adaptation
+							un(REMOVED_FROM_GAME, i(111272)),	-- Primal Gladiator's Signet of Ruthlessness
+							un(REMOVED_FROM_GAME, i(111222)),	-- Primal Gladiator's Badge of Conquest
+							un(REMOVED_FROM_GAME, i(111223)),	-- Primal Gladiator's Insignia of Conquest
+							un(REMOVED_FROM_GAME, i(111224)),	-- Primal Gladiator's Emblem of Cruelty
+							un(REMOVED_FROM_GAME, i(111225)),	-- Primal Gladiator's Emblem of Tenacity
+							un(REMOVED_FROM_GAME, i(111226)),	-- Primal Gladiator's Emblem of Meditation
+							un(REMOVED_FROM_GAME, i(111227)),	-- Primal Gladiator's Badge of Dominance
+							un(REMOVED_FROM_GAME, i(111228)),	-- Primal Gladiator's Insignia of Dominance
+							un(REMOVED_FROM_GAME, i(111229)),	-- Primal Gladiator's Medallion of Cruelty
+							un(REMOVED_FROM_GAME, i(111230)),	-- Primal Gladiator's Medallion of Tenacity
+							un(REMOVED_FROM_GAME, i(111231)),	-- Primal Gladiator's Medallion of Meditation
+							un(REMOVED_FROM_GAME, i(111232)),	-- Primal Gladiator's Badge of Victory
+							un(REMOVED_FROM_GAME, i(111233)),	-- Primal Gladiator's Insignia of Victory
+							un(REMOVED_FROM_GAME, i(115495)),	-- Primal Gladiator's Badge of Adaptation
+							un(REMOVED_FROM_GAME, i(122707)),	-- Primal Gladiator's Medallion of Adaptation
 						}),
 					}),
 				},
@@ -2204,7 +2204,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(115831)),	-- Primal Gladiator's Barrier
 					un(REMOVED_FROM_GAME, i(115864)),	-- Primal Gladiator's Redoubt
 					un(REMOVED_FROM_GAME, i(115955)),	-- Primal Gladiator's Shield Wall
-					un(REMOVED_FROM_GAME, i(115835)),	-- Primal Gladiator's Touch of defeat
+					un(REMOVED_FROM_GAME, i(115835)),	-- Primal Gladiator's Touch of Defeat
 					un(REMOVED_FROM_GAME, i(115951)),	-- Primal Gladiator's Baton of Light
 				}),
 				cl(DEATHKNIGHT, {
@@ -2287,7 +2287,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(115900)),	-- Primal Gladiator's Scaled Greaves
 					un(REMOVED_FROM_GAME, i(115894)),	-- Primal Gladiator's Scaled Helm
 					un(REMOVED_FROM_GAME, i(115895)),	-- Primal Gladiator's Scaled Legguards
-					un(REMOVED_FROM_GAME, i(115896)),	-- Primal Gladiator's Scaled shoulders
+					un(REMOVED_FROM_GAME, i(115896)),	-- Primal Gladiator's Scaled Shoulders
 				}),
 				cl(PRIEST, {
 					un(REMOVED_FROM_GAME, i(115826)),	-- Primal Gladiator's Mooncloth Cord
@@ -2352,7 +2352,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(115907)),	-- Primal Gladiator's Plate Girdle
 					un(REMOVED_FROM_GAME, i(115963)),	-- Primal Gladiator's Plate Helm
 					un(REMOVED_FROM_GAME, i(115964)),	-- Primal Gladiator's Plate Legguards
-					un(REMOVED_FROM_GAME, i(115965)),	-- Primal Gladiator's Plate shoulders
+					un(REMOVED_FROM_GAME, i(115965)),	-- Primal Gladiator's Plate Shoulders
 					un(REMOVED_FROM_GAME, i(115908)),	-- Primal Gladiator's Plate Warboots
 				}),
 			}),
@@ -2664,7 +2664,7 @@ _.PVP =
 									{"select", "itemID", 124970 },	-- Wild Combatant's Footguards of Cruelty (A)
 									{"exclude", "itemID", 138547 },	-- Exclude itself to stop duplicating
 								},
-								["g"] = {																														
+								["g"] = {
 									i(124923, {	-- Wild Combatant's Chain Armor (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
@@ -3563,7 +3563,7 @@ _.PVP =
 							i(124785, {	-- Wild Gladiator's Helm (A)
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
-							i(124761, {	-- Wild Gladiator's Helm leather (A)
+							i(124761, {	-- Wild Gladiator's Helm (leather) (A)
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 							i(124814, {	-- Wild Gladiator's Plate Helmet (A)
@@ -3726,7 +3726,7 @@ _.PVP =
 							i(124818, {	-- Wild Gladiator's Plate Grips (A)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
-							i(124765, {	-- Wild Gladiator's grips (leather) (A)
+							i(124765, {	-- Wild Gladiator's Grips (leather) (A)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
@@ -3825,10 +3825,10 @@ _.PVP =
 							i(124695, {	-- Wild Gladiator's Treads of Cruelty (A)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
-							i(124696, {	-- Wild Gladiator's treads of prowess (A)
+							i(124696, {	-- Wild Gladiator's Treads of Prowess (A)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
-							i(124697, {	-- Wild Gladiator's treads of victory (A)
+							i(124697, {	-- Wild Gladiator's Treads of Victory (A)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
@@ -3866,7 +3866,7 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(124858)),	-- Wild Gladiator's Emblem of Cruelty (A)
 							un(REMOVED_FROM_GAME, i(124860)),	-- Wild Gladiator's Emblem of Meditation (A)
 							un(REMOVED_FROM_GAME, i(124859)),	-- Wild Gladiator's Emblem of Tenacity (A)
-							un(REMOVED_FROM_GAME, i(124857)),	-- Wild Gladiator's Insignia of conquest (A)
+							un(REMOVED_FROM_GAME, i(124857)),	-- Wild Gladiator's Insignia of Conquest (A)
 							un(REMOVED_FROM_GAME, i(124862)),	-- Wild Gladiator's Insignia of Dominance (A)
 							un(REMOVED_FROM_GAME, i(124868)),	-- Wild Gladiator's Insignia of Victory (A)
 							un(REMOVED_FROM_GAME, i(124863)),	-- Wild Gladiator's Medallion of Cruelty (A)
@@ -4166,7 +4166,7 @@ _.PVP =
 									}),
 									i(125399, {	-- Wild Combatant's Dragonhide Spaulders (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-									}),	
+									}),
 								},
 							}),
 						}),
@@ -5338,13 +5338,13 @@ _.PVP =
 							i(125287, {	-- Wild Gladiator's Warboots of Victory (H)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
-							i(125174, {	-- Wild Gladiator's treads of cruelty (H)
+							i(125174, {	-- Wild Gladiator's Treads of Cruelty (H)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
-							i(125175, {	-- Wild Gladiator's treads of prowess (H)
+							i(125175, {	-- Wild Gladiator's Treads of Prowess (H)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
-							i(125176, {	-- Wild Gladiator's treads of victory (H)
+							i(125176, {	-- Wild Gladiator's Treads of Victory (H)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 						}),
@@ -5425,7 +5425,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(125645)),	-- Wild Gladiator's Barrier
 					un(REMOVED_FROM_GAME, i(125678)),	-- Wild Gladiator's Redoubt
 					un(REMOVED_FROM_GAME, i(125769)),	-- Wild Gladiator's Shield Wall
-					un(REMOVED_FROM_GAME, i(125649)),	-- Wild Gladiator's Touch of defeat
+					un(REMOVED_FROM_GAME, i(125649)),	-- Wild Gladiator's Touch of Defeat
 					un(REMOVED_FROM_GAME, i(125765)),	-- Wild Gladiator's Baton of Light
 				}),
 				cl(DEATHKNIGHT, {
@@ -5466,7 +5466,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(125686)),	-- Wild Gladiator's Chain Helm
 					un(REMOVED_FROM_GAME, i(125687)),	-- Wild Gladiator's Chain Leggings
 					un(REMOVED_FROM_GAME, i(125688)),	-- Wild Gladiator's Chain Spaulders
-					un(REMOVED_FROM_GAME, i(125680)),	-- Wild Gladiator's Chain chain links
+					un(REMOVED_FROM_GAME, i(125680)),	-- Wild Gladiator's Chain Links
 					un(REMOVED_FROM_GAME, i(125682)),	-- Wild Gladiator's Chain Sabatons
 				}),
 				cl(MAGE, {
@@ -5559,13 +5559,13 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(125742)),	-- Wild Gladiator's Ringmail Waistguard
 				}),
 				cl(WARLOCK, {
-					un(REMOVED_FROM_GAME, i(125774)),	-- wild Gladiator's Felweave Amice
-					un(REMOVED_FROM_GAME, i(125639)),	-- wild Gladiator's Felweave Cord
-					un(REMOVED_FROM_GAME, i(125771)),	-- wild Gladiator's Felweave Cowl
-					un(REMOVED_FROM_GAME, i(125770)),	-- wild Gladiator's Felweave Handguards
-					un(REMOVED_FROM_GAME, i(125773)),	-- wild Gladiator's Felweave Rainment
-					un(REMOVED_FROM_GAME, i(125642)),	-- wild Gladiator's Felweave Treads
-					un(REMOVED_FROM_GAME, i(125772)),	-- wild Gladiator's Felweave Trousers
+					un(REMOVED_FROM_GAME, i(125774)),	-- Wild Gladiator's Felweave Amice
+					un(REMOVED_FROM_GAME, i(125639)),	-- Wild Gladiator's Felweave Cord
+					un(REMOVED_FROM_GAME, i(125771)),	-- Wild Gladiator's Felweave Cowl
+					un(REMOVED_FROM_GAME, i(125770)),	-- Wild Gladiator's Felweave Handguards
+					un(REMOVED_FROM_GAME, i(125773)),	-- Wild Gladiator's Felweave Rainment
+					un(REMOVED_FROM_GAME, i(125642)),	-- Wild Gladiator's Felweave Treads
+					un(REMOVED_FROM_GAME, i(125772)),	-- Wild Gladiator's Felweave Trousers
 				}),
 				cl(WARRIOR, {
 					un(REMOVED_FROM_GAME, i(125775)),	-- Wild Gladiator's Plate Chestpiece
@@ -8281,10 +8281,10 @@ _.PVP =
 				},
 			}),
 			n(-662, {	-- Elite PvP Gear
-				un(REMOVED_FROM_GAME, i(127376)),	-- Warmongering Gladiator's Greatcloak h
-				un(REMOVED_FROM_GAME, i(127371)),	-- Warmongering Gladiator's Tabard h
-				un(REMOVED_FROM_GAME, i(127377)),	-- Warmongering Gladiator's Greatcloak a
-				un(REMOVED_FROM_GAME, i(127369)),	-- Warmongering Gladiator's Tabarda
+				un(REMOVED_FROM_GAME, i(127376)),	-- Warmongering Gladiator's Greatcloak (H)
+				un(REMOVED_FROM_GAME, i(127371)),	-- Warmongering Gladiator's Tabard (H)
+				un(REMOVED_FROM_GAME, i(127377)),	-- Warmongering Gladiator's Greatcloak (A)
+				un(REMOVED_FROM_GAME, i(127369)),	-- Warmongering Gladiator's Tabard (A)
 				n(-319, {	-- Weapons
 					un(REMOVED_FROM_GAME, i(126876)),	-- Warmongering Gladiator's Ripper
 					un(REMOVED_FROM_GAME, i(126877)),	-- Warmongering Gladiator's Render
@@ -8303,7 +8303,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(126758)),	-- Warmongering Gladiator's Endgame
 					un(REMOVED_FROM_GAME, i(126762)),	-- Warmongering Gladiator's Reprieve
 					un(REMOVED_FROM_GAME, i(126750)),	-- Warmongering Gladiator's Quickblade
-					un(REMOVED_FROM_GAME, i(126878)),	-- Warmongering Gladiator's mageblade
+					un(REMOVED_FROM_GAME, i(126878)),	-- Warmongering Gladiator's Mageblade
 					un(REMOVED_FROM_GAME, i(126882)),	-- Warmongering Gladiator's Slicer
 					un(REMOVED_FROM_GAME, i(126761)),	-- Warmongering Gladiator's Battle Staff
 					un(REMOVED_FROM_GAME, i(126782)),	-- Warmongering Gladiator's Staff
@@ -8314,7 +8314,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(126759)),	-- Warmongering Gladiator's Barrier
 					un(REMOVED_FROM_GAME, i(126792)),	-- Warmongering Gladiator's Redoubt
 					un(REMOVED_FROM_GAME, i(126883)),	-- Warmongering Gladiator's Shield Wall
-					un(REMOVED_FROM_GAME, i(126763)),	-- Warmongering Gladiator's Touch of defeat
+					un(REMOVED_FROM_GAME, i(126763)),	-- Warmongering Gladiator's Touch of Defeat
 					un(REMOVED_FROM_GAME, i(126879)),	-- Warmongering Gladiator's Baton of Light
 				}),
 				cl(DEATHKNIGHT, {
@@ -8476,22 +8476,22 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	i(124835),	-- Wild Gladiator's Ringmail Leggings (You get Wild Gladiator's Ringmail Kilt via Ensemble)
 	i(125045),	-- Wild Combatant's Accolade of Dominance
 	i(125047),	-- Wild Combatant's Accolade of Meditation
-	i(125044),	-- Wild Combatant's Accolade of conquest
+	i(125044),	-- Wild Combatant's Accolade of Conquest
 	i(125046),	-- Wild Combatant's Accolade of Victory
 	i(125048),	-- Wild Combatant's Accolade of Endurance
 	i(124871),	-- Wild Gladiator's Accolade of Dominance
 	i(124874),	-- Wild Gladiator's Accolade of Endurance
-	i(124870),	-- Wild Gladiator's Accolade of conquest
-	i(124872),	-- Wild Gladiator's Accolade of victory
-	i(124873),	-- Wild Gladiator's Accolade of meditation
+	i(124870),	-- Wild Gladiator's Accolade of Conquest
+	i(124872),	-- Wild Gladiator's Accolade of Victory
+	i(124873),	-- Wild Gladiator's Accolade of Meditation
 	i(125522),	-- Wild Combatant's Accolade of Dominance
 	i(125524),	-- Wild Combatant's Accolade of Meditation
-	i(125521),	-- Wild Combatant's Accolade of conquest
+	i(125521),	-- Wild Combatant's Accolade of Conquest
 	i(125523),	-- Wild Combatant's Accolade of Victory
 	i(125525),	-- Wild Combatant's Accolade of Endurance
 	i(125348),	-- Wild Gladiator's Accolade of Dominance
 	i(125351),	-- Wild Gladiator's Accolade of Endurance
-	i(125347),	-- Wild Gladiator's Accolade of conquest
-	i(125349),	-- Wild Gladiator's Accolade of victory
-	i(125350),	-- Wild Gladiator's Accolade of meditation
+	i(125347),	-- Wild Gladiator's Accolade of Conquest
+	i(125349),	-- Wild Gladiator's Accolade of Victory
+	i(125350),	-- Wild Gladiator's Accolade of Meditation
 });

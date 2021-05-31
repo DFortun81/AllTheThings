@@ -348,7 +348,7 @@ _.PVP =
 						i(146609, {	-- Ensemble: Gladiator's Dragonhide Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", -10003, -664, -661, 11 }, 
+								{"sub", "pvp_set_ensemble", -10003, -664, -661, 11 },
 								{"select", "itemID", 28443 },	-- General's Dragonhide Belt
 								{"select", "itemID", 28444 },	-- General's Dragonhide Boots
 								{"select", "itemID", 31594 },	-- General's Kodohide Belt
@@ -415,12 +415,12 @@ _.PVP =
 					cl(HUNTER, {
 						i(146608, {	-- Ensemble: Gladiator's Chain Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_set_ensemble", -10003, -664, -661, 3 },
 								{"select", "itemID", 28450 },	-- General's Chain Girdle
 								{"select", "itemID", 28449 },	-- General's Chain Sabatons
 								{"select", "itemID", 28974 },	-- Marshal's Chain Girdle
-								{"select", "itemID", 28975 },	-- Marshal's Chain Sabatons		
+								{"select", "itemID", 28975 },	-- Marshal's Chain Sabatons
 								{"exclude", "itemID", 146608 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
@@ -445,7 +445,7 @@ _.PVP =
 					cl(MAGE, {
 						i(146617, {	-- Ensemble: Gladiator's Silk Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_set_ensemble", -10003, -664, -661, 8 },
 								{"select", "itemID", 28409 },   -- General's Silk Belt
 								{"select", "itemID", 29001 },	-- Marshal's Silk Belt
@@ -475,8 +475,8 @@ _.PVP =
 					cl(PALADIN, {
 						i(146616, {	-- Ensemble: Gladiator's Scaled Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["sym"] = { 
-								{"sub", "pvp_set_ensemble", -10003, -664, -661, 2 }, 
+							["sym"] = {
+								{"sub", "pvp_set_ensemble", -10003, -664, -661, 2 },
 								{"select", "itemID", 28641 },	-- General's Lamellar Belt
 								{"select", "itemID", 28642 },	-- General's Lamellar Greaves
 								{"select", "itemID", 32982 },	-- General's Ornamented Belt
@@ -544,7 +544,7 @@ _.PVP =
 						i(146615, {	-- Ensemble: Gladiator's Satin Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", -10003, -664, -661, 5 }, 
+								{"sub", "pvp_set_ensemble", -10003, -664, -661, 5 },
 								{"select", "itemID", 32974 },	-- General's Mooncloth Belt
 								{"select", "itemID", 32975 },	-- General's Mooncloth Slippers
 								{"select", "itemID", 147613 },	-- General's Satin Cord
@@ -592,7 +592,7 @@ _.PVP =
 						i(146612, {	-- Ensemble: Gladiator's Leather Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", -10003, -664, -661, 4 }, 
+								{"sub", "pvp_set_ensemble", -10003, -664, -661, 4 },
 								{"select", "itemID", 28423 },	-- General's Leather Belt
 								{"select", "itemID", 28422 },   -- General's Leather Boots
 								{"select", "itemID", 28986 },	-- Marshal's Leather Belt
@@ -621,8 +621,8 @@ _.PVP =
 					cl(SHAMAN, {
 						i(146614, {	-- Ensemble: Gladiator's Ringmail Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-							["sym"] = { 
-								{"sub", "pvp_set_ensemble", -10003, -664, -661, 7 }, 
+							["sym"] = {
+								{"sub", "pvp_set_ensemble", -10003, -664, -661, 7 },
 								{"select", "itemID", 28629 },	-- General's Linked Girdle
 								{"select", "itemID", 28630 },	-- General's Linked Sabatons
 								{"select", "itemID", 28639 },	-- General's Mail Girdle
@@ -697,7 +697,7 @@ _.PVP =
 								{"select", "itemID", 147616 },	-- General's Felweave Boots
 								{"select", "itemID", 147772 },  -- General's Felweave Cuffs
 								{"select", "itemID", 28980 },   -- Marshal's Dreadweave Belt
-								{"select", "itemID", 28982 },	-- Marshal's Dreadweave Stalkers						
+								{"select", "itemID", 28982 },	-- Marshal's Dreadweave Stalkers
 								{"exclude", "itemID", 146611 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
@@ -738,11 +738,11 @@ _.PVP =
 						i(146613, {	-- Ensemble: Gladiator's Plate Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", -10003, -664, -661, 1 }, 	
+								{"sub", "pvp_set_ensemble", -10003, -664, -661, 1 },
 								{"select", "itemID", 28385 },	-- General's Plate Belt
 								{"select", "itemID", 28383 },	-- General's Plate Greaves
 								{"select", "itemID", 28995 },	-- Marshal's Plate Belt
-								{"select", "itemID", 28997 },	-- Marshal's Plate Greaves												
+								{"select", "itemID", 28997 },	-- Marshal's Plate Greaves
 								{"exclude", "itemID", 146613 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
@@ -1060,7 +1060,7 @@ _.PVP =
 						i(29005, {	-- Marshal's Wyrmhide Boots
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
-					}),	
+					}),
 					n(-322, {	-- Back
 						i(28379, {	-- Sergeant's Heavy Cape (A)
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
@@ -1074,8 +1074,8 @@ _.PVP =
 						i(28377, {	-- Sergeant's Heavy Cape (H)
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 						}),
-					}),	
-					-- Orinally sold Offhand/Neck/Finger by 
+					}),
+					-- Orinally sold Offhand/Neck/Finger by
 					-- Alliance SW: n(12781,  {	-- Master Sergeant Biggins  &
 					-- Horde OG: n(12793,  {	-- Brave Stonehide
 					n(-331, {	-- Held In Offhand
@@ -1109,8 +1109,8 @@ _.PVP =
 						un(REMOVED_FROM_GAME, i(30348)), -- Medallion of the Alliance (A) (Warlock)
 						un(REMOVED_FROM_GAME, i(30350)), -- Medallion of the Alliance (A) (Warrior)
 						un(REMOVED_FROM_GAME, i(25829)), -- Talisman of the Alliance
-						
-						
+
+
 						un(REMOVED_FROM_GAME, i(28241)), -- Medallion of the Horde (H) (Druid)
 						un(REMOVED_FROM_GAME, i(28243)), -- Medallion of the Horde (H) (Hunter)
 						un(REMOVED_FROM_GAME, i(28239)), -- Medallion of the Horde (H) (Mage)
@@ -1129,7 +1129,7 @@ _.PVP =
 					n(-319, {	-- Weapons
 						i(146650, {	-- Arsenal: Merciless Gladiator's Weapons [Horde / Alliance / Tested ] { Note: Contains Gladiator/Merciless Sets }
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_weapons_ensemble", -10003, -665, -661 },
 								{"exclude", "itemID", 146650 },	-- Exclude itself to stop duplicating
 							 },
@@ -1243,7 +1243,7 @@ _.PVP =
 						i(146619, {	-- Ensemble: Merciless Gladiator's Dragonhide Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", -10003, -665, -661, 11 }, 
+								{"sub", "pvp_set_ensemble", -10003, -665, -661, 11 },
 								{"select", "itemID", 32810 },	-- Veteran's Dragonhide Bracers
 								{"select", "itemID", 32798 },	-- Veteran's Dragonhide Belt
 								{"select", "itemID", 32786 },	-- Veteran's Dragonhide Boots
@@ -1308,7 +1308,7 @@ _.PVP =
 						i(146618, {	-- Ensemble: Merciless Gladiator's Chain Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", -10003, -665, -661, 3 }, 
+								{"sub", "pvp_set_ensemble", -10003, -665, -661, 3 },
 								{"select", "itemID", 32809 },	-- Veteran's Chain Bracers
 								{"select", "itemID", 32797 },	-- Veteran's Chain Girdle
 								{"select", "itemID", 32785 },	-- Veteran's Chain Sabatons
@@ -1337,7 +1337,7 @@ _.PVP =
 						i(146627, {	-- Ensemble: Merciless Gladiator's Silk Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", -10003, -665, -661, 8 }, 
+								{"sub", "pvp_set_ensemble", -10003, -665, -661, 8 },
 								{"select", "itemID", 32820 },	-- Veteran's Silk Cuffs
 								{"select", "itemID", 32807 },	-- Veteran's Silk Belt
 								{"select", "itemID", 32795 },	-- Veteran's Silk Footguards
@@ -1366,7 +1366,7 @@ _.PVP =
 						i(146626, {	-- Ensemble: Merciless Gladiator's Scaled Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", -10003, -665, -661, 2 }, 
+								{"sub", "pvp_set_ensemble", -10003, -665, -661, 2 },
 								{"select", "itemID", 32813 },	-- Veteran's Lamellar Bracers
 								{"select", "itemID", 32801 },	-- Veteran's Lamellar Belt
 								{"select", "itemID", 32789 },	-- Veteran's Lamellar Greaves
@@ -1431,7 +1431,7 @@ _.PVP =
 						i(146625, {	-- Ensemble: Merciless Gladiator's Satin Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", -10003, -665, -661, 5 }, 
+								{"sub", "pvp_set_ensemble", -10003, -665, -661, 5 },
 								{"select", "itemID", 32980 },	-- Veteran's Mooncloth Cuffs
 								{"select", "itemID", 32979 },	-- Veteran's Mooncloth Belt
 								{"select", "itemID", 32981 },	-- Veteran's Mooncloth Slippers
@@ -1476,7 +1476,7 @@ _.PVP =
 						i(146622, {	-- Ensemble: Merciless Gladiator's Leather Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", -10003, -665, -661, 4 }, 
+								{"sub", "pvp_set_ensemble", -10003, -665, -661, 4 },
 								{"select", "itemID", 32814 },	-- Veteran's Leather Bracers
 								{"select", "itemID", 32802 },	-- Veteran's Leather Belt
 								{"select", "itemID", 32790 },	-- Veteran's Leather Boots
@@ -1508,7 +1508,7 @@ _.PVP =
 						i(146624, {	-- Ensemble: Merciless Gladiator's Ringmail Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", -10003, -665, -661, 7 }, 
+								{"sub", "pvp_set_ensemble", -10003, -665, -661, 7 },
 								{"select", "itemID", 32816 },	-- Veteran's Linked Bracers
 								{"select", "itemID", 32803 },	-- Veteran's Linked Girdle
 								{"select", "itemID", 32791 },	-- Veteran's Linked Sabatons
@@ -1573,7 +1573,7 @@ _.PVP =
 						i(146621, {	-- Ensemble: Merciless Gladiator's Felweave Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", -10003, -665, -661, 9 }, 
+								{"sub", "pvp_set_ensemble", -10003, -665, -661, 9 },
 								{"select", "itemID", 32811 },	-- Veteran's Dreadweave Cuffs
 								{"select", "itemID", 32799 },	-- Veteran's Dreadweave Belt
 								{"select", "itemID", 32787 },	-- Veteran's Dreadweave Stalkers
@@ -1617,7 +1617,7 @@ _.PVP =
 						i(146623, {	-- Ensemble: Merciless Gladiator's Plate Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", -10003, -665, -661, 1 }, 
+								{"sub", "pvp_set_ensemble", -10003, -665, -661, 1 },
 								{"select", "itemID", 32818 },	-- Veteran's Plate Bracers
 								{"select", "itemID", 32805 },	-- Veteran's Plate Bel
 								{"select", "itemID", 32793 },	-- Veteran's Plate Greaves
@@ -1794,8 +1794,8 @@ _.PVP =
 						i(32796, {	-- Veteran's Wyrmhide Boots
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
-					}),	
-					-- Orinally sold Offhand/Neck/Finger by 
+					}),
+					-- Orinally sold Offhand/Neck/Finger by
 					-- Alliance SW: n(23446,  {	-- Lieutenant Tristia --  &
 					-- Horde OG: n(24520, {	-- Doris Volanthius --
 					n(-331, {	-- Held In Offhand
@@ -1808,7 +1808,7 @@ _.PVP =
 						un(REMOVED_FROM_GAME, i(33940)), -- Merciless Gladiator's Totem of Indomitability
 						un(REMOVED_FROM_GAME, i(33952)), -- Merciless Gladiator's Totem of Survival
 						un(REMOVED_FROM_GAME, i(33078)), -- Merciless Gladiator's Totem of the Third Wind
-						un(REMOVED_FROM_GAME, i(32054)), -- Merciless Gladiator's War Edge (Throw Wep) 
+						un(REMOVED_FROM_GAME, i(32054)), -- Merciless Gladiator's War Edge (Throw Wep)
 					}),
 					f(51,	{	-- Neck
 						un(REMOVED_FROM_GAME, i(33067)), -- Veteran's Pendant of Conquest
@@ -1829,7 +1829,7 @@ _.PVP =
 					n(-319, {	-- Weapons
 						i(146649, {	-- Arsenal: Vengeful Gladiator's Weapons [ Horde / Alliance / Tested ]
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_weapons_ensemble", -10003, -666, -661 },
 								{"exclude", "itemID", 146649 },	-- Exclude itself to stop duplicating
 							 },
@@ -1949,7 +1949,7 @@ _.PVP =
 						i(146629, {	-- Ensemble: Vengeful Gladiator's Dragonhide Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", -10003, -666, -661, 11 }, 
+								{"sub", "pvp_set_ensemble", -10003, -666, -661, 11 },
 								{"select", "itemID", 33881 },	-- Vindicator's Dragonhide Bracers
 								{"select", "itemID", 33879 },	-- Vindicator's Dragonhide Belt
 								{"select", "itemID", 33880 },	-- Vindicator's Dragonhide Boots
@@ -2014,7 +2014,7 @@ _.PVP =
 						i(146628, {	-- Ensemble: Vengeful Gladiator's Chain Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", -10003, -666, -661, 3 }, 
+								{"sub", "pvp_set_ensemble", -10003, -666, -661, 3 },
 								{"select", "itemID", 33876 },	-- Vindicator's Chain Bracers
 								{"select", "itemID", 33877 },	-- Vindicator's Chain Girdle
 								{"select", "itemID", 33878 },	-- Vindicator's Chain Sabatons
@@ -2043,7 +2043,7 @@ _.PVP =
 						i(146637, {	-- Ensemble: Vengeful Gladiator's Silk Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", -10003, -666, -661, 8 }, 
+								{"sub", "pvp_set_ensemble", -10003, -666, -661, 8 },
 								{"select", "itemID", 33913 },	-- Vindicator's Silk Cuffs
 								{"select", "itemID", 33912 },	-- Vindicator's Silk Belt
 								{"select", "itemID", 33914 },	-- Vindicator's Silk Footguards
@@ -2072,7 +2072,7 @@ _.PVP =
 						i(146636, {	-- Ensemble: Vengeful Gladiator's Scaled Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", -10003, -666, -661, 2 }, 
+								{"sub", "pvp_set_ensemble", -10003, -666, -661, 2 },
 								{"select", "itemID", 33889 },	-- Vindicator's Lamellar Bracers
 								{"select", "itemID", 33888 },	-- Vindicator's Lamellar Belt
 								{"select", "itemID", 33890 },	-- Vindicator's Lamellar Greaves
@@ -2137,7 +2137,7 @@ _.PVP =
 						i(146635, {	-- Ensemble: Vengeful Gladiator's Satin Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", -10003, -666, -661, 5 }, 
+								{"sub", "pvp_set_ensemble", -10003, -666, -661, 5 },
 								{"select", "itemID", 33901 },	-- Vindicator's Mooncloth Cuffs
 								{"select", "itemID", 33900 },	-- Vindicator's Mooncloth Belt
 								{"select", "itemID", 33902 },	-- Vindicator's Mooncloth Slippers
@@ -2181,7 +2181,7 @@ _.PVP =
 						i(146632, {	-- Ensemble: Vengeful Gladiator's Leather Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", -10003, -666, -661, 4 }, 
+								{"sub", "pvp_set_ensemble", -10003, -666, -661, 4 },
 								{"select", "itemID", 33893 },	-- Vindicator's Leather Bracers
 								{"select", "itemID", 33891 },	-- Vindicator's Leather Belt
 								{"select", "itemID", 33892 },	-- Vindicator's Leather Boots
@@ -2211,7 +2211,7 @@ _.PVP =
 						i(146634, {	-- Ensemble: Vengeful Gladiator's Ringmail Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", -10003, -666, -661, 7 }, 
+								{"sub", "pvp_set_ensemble", -10003, -666, -661, 7 },
 								{"select", "itemID", 33894 },	-- Vindicator's Linked Bracers
 								{"select", "itemID", 33895 },	-- Vindicator's Linked Girdle
 								{"select", "itemID", 33896 },	-- Vindicator's Linked Sabatons
@@ -2276,7 +2276,7 @@ _.PVP =
 						i(146631, {	-- Ensemble: Vengeful Gladiator's Felweave Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", -10003, -666, -661, 9 }, 
+								{"sub", "pvp_set_ensemble", -10003, -666, -661, 9 },
 								{"select", "itemID", 33883 },	-- Vindicator's Dreadweave Cuffs
 								{"select", "itemID", 33882 },	-- Vindicator's Dreadweave Belt
 								{"select", "itemID", 33884 },	-- Vindicator's Dreadweave Stalkers
@@ -2320,7 +2320,7 @@ _.PVP =
 						i(146633, {	-- Ensemble: Vengeful Gladiator's Plate Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", -10003, -666, -661, 1 }, 
+								{"sub", "pvp_set_ensemble", -10003, -666, -661, 1 },
 								{"select", "itemID", 33813 },	-- Vindicator's Plate Bracers
 								{"select", "itemID", 33811 },	-- Vindicator's Plate Belt
 								{"select", "itemID", 33812 },	-- Vindicator's Plate Greaves
@@ -2489,7 +2489,7 @@ _.PVP =
 							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 						}),
 					}),
-					-- Orinally sold Offhand/Neck/Finger by 
+					-- Orinally sold Offhand/Neck/Finger by
 					-- Alliance SW: n(23446,  {	-- Lieutenant Tristia --  &
 					-- Horde OG: n(24520, {	-- Doris Volanthius --
 					n(-331, {	-- Held In Offhand
@@ -2532,7 +2532,7 @@ _.PVP =
 					n(-319, {	-- Weapons
 						i(146648, {	-- Arsenal: Brutal Gladiator's Weapons [ Horde / Alliance / Tested ]
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-							["sym"] = { 
+							["sym"] = {
 								{"sub", "pvp_weapons_ensemble", -10003, -667, -661 },
 								{"exclude", "itemID", 146648 },	-- Exclude itself to stop duplicating
 							 },
@@ -2661,7 +2661,7 @@ _.PVP =
 						i(146600, {	-- Ensemble: Brutal Gladiator's Dreadplate Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", -10003, -667, -661, 6 }, 
+								{"sub", "pvp_set_ensemble", -10003, -667, -661, 6 },
 								{"select", "itemID", 35176 },	-- Guardian's Plate Bracers
 								{"select", "itemID", 35161 },	-- Guardian's Plate Belt
 								{"select", "itemID", 35146 },	-- Guardian's Plate Greaves
@@ -2690,7 +2690,7 @@ _.PVP =
 						i(146599, {	-- Ensemble: Brutal Gladiator's Dragonhide Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", -10003, -667, -661, 11 }, 
+								{"sub", "pvp_set_ensemble", -10003, -667, -661, 11 },
 								{"select", "itemID", 35167 },	-- Guardian's Dragonhide Bracers
 								{"select", "itemID", 35152 },	-- Guardian's Dragonhide Belt
 								{"select", "itemID", 35137 },	-- Guardian's Dragonhide Boots
@@ -2755,7 +2755,7 @@ _.PVP =
 						i(146598, {	-- Ensemble: Brutal Gladiator's Chain Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", -10003, -667, -661, 3 }, 
+								{"sub", "pvp_set_ensemble", -10003, -667, -661, 3 },
 								{"select", "itemID", 35166 },	-- Guardian's Chain Bracers
 								{"select", "itemID", 35151 },	-- Guardian's Chain Girdle
 								{"select", "itemID", 35136 },	-- Guardian's Chain Sabatons
@@ -2784,7 +2784,7 @@ _.PVP =
 						i(146607, {	-- Ensemble: Brutal Gladiator's Silk Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", -10003, -667, -661, 8 }, 
+								{"sub", "pvp_set_ensemble", -10003, -667, -661, 8 },
 								{"select", "itemID", 35179 },	-- Guardian's Silk Cuffs
 								{"select", "itemID", 35164 },	-- Guardian's Silk Belt
 								{"select", "itemID", 35149 },	-- Guardian's Silk Footguards
@@ -2813,7 +2813,7 @@ _.PVP =
 						i(146606, {	-- Ensemble: Brutal Gladiator's Scaled Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", -10003, -667, -661, 2 }, 
+								{"sub", "pvp_set_ensemble", -10003, -667, -661, 2 },
 								{"select", "itemID", 35170 },	-- Guardian's Lamellar Bracers
 								{"select", "itemID", 35155 },	-- Guardian's Lamellar Belt
 								{"select", "itemID", 35140 },	-- Guardian's Lamellar Greaves
@@ -2878,7 +2878,7 @@ _.PVP =
 						i(146605, {	-- Ensemble: Brutal Gladiator's Satin Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", -10003, -667, -661, 5 }, 
+								{"sub", "pvp_set_ensemble", -10003, -667, -661, 5 },
 								{"select", "itemID", 35174 },	-- Guardian's Mooncloth Cuffs
 								{"select", "itemID", 35159 },	-- Guardian's Mooncloth Belt
 								{"select", "itemID", 35144 },	-- Guardian's Mooncloth Slippers
@@ -2922,7 +2922,7 @@ _.PVP =
 						i(146602, {	-- Ensemble: Brutal Gladiator's Leather Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", -10003, -667, -661, 4 }, 
+								{"sub", "pvp_set_ensemble", -10003, -667, -661, 4 },
 								{"select", "itemID", 35171 },	-- Guardian's Leather Bracers
 								{"select", "itemID", 35156 },	-- Guardian's Leather Belt
 								{"select", "itemID", 35141 },	-- Guardian's Leather Boots
@@ -2951,7 +2951,7 @@ _.PVP =
 						i(146604, {	-- Ensemble: Brutal Gladiator's Ringmail Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", -10003, -667, -661, 7 }, 
+								{"sub", "pvp_set_ensemble", -10003, -667, -661, 7 },
 								{"select", "itemID", 35172 },	-- Guardian's Linked Bracers
 								{"select", "itemID", 35157 },	-- Guardian's Linked Girdle
 								{"select", "itemID", 35142 },	-- Guardian's Linked Sabatons
@@ -3016,7 +3016,7 @@ _.PVP =
 						i(146601, {	-- Ensemble: Brutal Gladiator's Felweave Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", -10003, -667, -661, 9 }, 
+								{"sub", "pvp_set_ensemble", -10003, -667, -661, 9 },
 								{"select", "itemID", 35168 },	-- Guardian's Dreadweave Cuffs
 								{"select", "itemID", 35153 },	-- Guardian's Dreadweave Belt
 								{"select", "itemID", 35138 },	-- Guardian's Dreadweave Stalkers
@@ -3060,7 +3060,7 @@ _.PVP =
 						i(146603, {	-- Ensemble: Brutal Gladiator's Plate Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", -10003, -667, -661, 1 }, 
+								{"sub", "pvp_set_ensemble", -10003, -667, -661, 1 },
 								{"select", "itemID", 35176 },	-- Guardian's Plate Bracers
 								{"select", "itemID", 35161 },	-- Guardian's Plate Belt
 								{"select", "itemID", 35146 },	-- Guardian's Plate Greaves
@@ -3089,7 +3089,7 @@ _.PVP =
 						i(41591, {	-- Sergeant's Reinforced Cape
 							["cost"] = { { "i", 137642, 2 } },	-- 1x Mark of Honor
 						}),
-						i(41592, {	-- The gladiator's resolution
+						i(41592, {	-- The Gladiator's Resolution
 							["cost"] = { { "i", 137642, 2 } },	-- 1x Mark of Honor
 						}),
 						i(44429, {	-- Volanthius Shroud

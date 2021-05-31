@@ -840,7 +840,6 @@ _.Zones =
 								i(162937),	-- Dread Aspirant's Plate Warboots
 							},
 						}),
-					
 					--	Dread Gladiator, Battle for Azeroth Season 1
 						i(184667, {	-- Arsenal: Dread Gladiator's Weapons
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
@@ -918,7 +917,6 @@ _.Zones =
 								i(161770),	-- Dread Gladiator's Plate Vambraces
 							},
 						}),
-					
 					--	Sinister Aspirant, Battle for Azeroth Season 2
 						i(184673, {	-- Arsenal: Sinister Aspirant's Weapons
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
@@ -993,7 +991,6 @@ _.Zones =
 								i(165087),	-- Sinister Aspirant's Plate Warboots
 							},
 						}),
-					
 					--	Sinister Gladiator, Battle for Azeroth Season 2
 						i(184671, {	-- Arsenal: Sinister Gladiator's Weapons
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
@@ -1068,7 +1065,6 @@ _.Zones =
 								i(164805),	-- Sinister Gladiator's Plate Warboots
 							},
 						}),
-						
 					--	Notorious Aspirant, Battle for Azeroth Season 3
 						i(184677, {	-- Arsenal: Notorious Aspirant's Weapons
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
@@ -1146,7 +1142,6 @@ _.Zones =
 								i(167483),	-- Notorious Aspirant's Plate Warboots
 							},
 						}),
-						
 					--	Notorious Gladiator, Battle for Azeroth Season 3
 						i(184675, {	-- Arsenal: Notorious Gladiator's Weapons
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
@@ -1227,7 +1222,6 @@ _.Zones =
 								i(167260),	-- Notorious Gladiator's Plate Warboots
 							},
 						}),
-					
 					--	Corrupted Aspirant, Battle for Azeroth Season 4 (no ensembles for this yet!)
 						i(184681, {	-- Arsenal: Corrupted Aspirant's Weapons
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor

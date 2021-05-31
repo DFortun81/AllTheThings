@@ -217,7 +217,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(103021)),	-- Elite Prideful Gladiator's Staff
 						un(REMOVED_FROM_GAME, i(102987)),	-- Elite Prideful Gladiator's Cleaver
 						un(REMOVED_FROM_GAME, i(103119)),	-- Elite Prideful Gladiator's Hacker
-						un(REMOVED_FROM_GAME, i(102989)),	-- Elite Prideful Gladiator's Quick blade
+						un(REMOVED_FROM_GAME, i(102989)),	-- Elite Prideful Gladiator's Quickblade
 						un(REMOVED_FROM_GAME, i(103117)),	-- Elite Prideful Gladiator's Mageblade
 						un(REMOVED_FROM_GAME, i(103121)),	-- Elite Prideful Gladiator's Slicer
 						un(REMOVED_FROM_GAME, i(102997)),	-- Elite Prideful Gladiator's Endgame
@@ -229,14 +229,14 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(103115)),	-- Elite Prideful Gladiator's Ripper
 						un(REMOVED_FROM_GAME, i(103116)),	-- Elite Prideful Gladiator's Render
 						un(REMOVED_FROM_GAME, i(102986)),	-- Elite Prideful Gladiator's Greatsword
-						un(REMOVED_FROM_GAME, i(102998)),	-- Elite Prideful Gladiator's barrier
-						un(REMOVED_FROM_GAME, i(103031)),	-- Elite Prideful Gladiator's redoubt
-						un(REMOVED_FROM_GAME, i(103122)),	-- Elite Prideful Gladiator's shield wall
-						un(REMOVED_FROM_GAME, i(102988)),	-- Elite Prideful Gladiator's pummeler
-						un(REMOVED_FROM_GAME, i(103030)),	-- Elite Prideful Gladiator's gravel
-						un(REMOVED_FROM_GAME, i(103120)),	-- Elite Prideful Gladiator's bonecracker
+						un(REMOVED_FROM_GAME, i(102998)),	-- Elite Prideful Gladiator's Barrier
+						un(REMOVED_FROM_GAME, i(103031)),	-- Elite Prideful Gladiator's Redoubt
+						un(REMOVED_FROM_GAME, i(103122)),	-- Elite Prideful Gladiator's Shield Wall
+						un(REMOVED_FROM_GAME, i(102988)),	-- Elite Prideful Gladiator's Pummeler
+						un(REMOVED_FROM_GAME, i(103030)),	-- Elite Prideful Gladiator's Gravel
+						un(REMOVED_FROM_GAME, i(103120)),	-- Elite Prideful Gladiator's Bonecracker
 						un(REMOVED_FROM_GAME, i(103002)),	-- Elite Prideful Gladiator's Touch of Defeat
-						un(REMOVED_FROM_GAME, i(103118)),	-- Elite Prideful Gladiator's baton of light
+						un(REMOVED_FROM_GAME, i(103118)),	-- Elite Prideful Gladiator's Baton of Light
 						un(REMOVED_FROM_GAME, i(102990)),	-- Elite Prideful Gladiator's Longbow
 						un(REMOVED_FROM_GAME, i(102985)),	-- Elite Prideful Gladiator's Bonegrinder
 						un(REMOVED_FROM_GAME, i(103039)),	-- Elite Prideful Gladiator's Chain Helm
@@ -275,62 +275,62 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(103112)),	-- Elite Prideful Gladiator's Mail Leggings
 						un(REMOVED_FROM_GAME, i(103097)),	-- Elite Prideful Gladiator's Mail Footguards
 						--
-						un(REMOVED_FROM_GAME, i(103004)),	-- Elite Prideful Gladiator's dreadplate chestpiece
-						un(REMOVED_FROM_GAME, i(103005)),	-- Elite Prideful Gladiator's dreadplate gauntlets
-						un(REMOVED_FROM_GAME, i(103006)),	-- Elite Prideful Gladiator's dreadplate helm
-						un(REMOVED_FROM_GAME, i(103007)),	-- Elite Prideful Gladiator's dreadplate legguards
-						un(REMOVED_FROM_GAME, i(103008)),	-- Elite Prideful Gladiator's dreadplate shoulders
-						un(REMOVED_FROM_GAME, i(103059)),	-- Elite Prideful Gladiator's scaled chestpiece
-						un(REMOVED_FROM_GAME, i(103060)),	-- Elite Prideful Gladiator's scaled gauntlets
-						un(REMOVED_FROM_GAME, i(103061)),	-- Elite Prideful Gladiator's scaled helm
-						un(REMOVED_FROM_GAME, i(103062)),	-- Elite Prideful Gladiator's scaled legguards
-						un(REMOVED_FROM_GAME, i(103063)),	-- Elite Prideful Gladiator's scaled shoulders
-						un(REMOVED_FROM_GAME, i(103064)),	-- Elite Prideful Gladiator's scaled clasp
-						un(REMOVED_FROM_GAME, i(103065)),	-- Elite Prideful Gladiator's ornamented clasp
-						un(REMOVED_FROM_GAME, i(103066)),	-- Elite Prideful Gladiator's ornamented greaves
-						un(REMOVED_FROM_GAME, i(103067)),	-- Elite Prideful Gladiator's scaled greaves
-						un(REMOVED_FROM_GAME, i(103068)),	-- Elite Prideful Gladiator's ornamented chestguard
-						un(REMOVED_FROM_GAME, i(103069)),	-- Elite Prideful Gladiator's ornamented gloves
-						un(REMOVED_FROM_GAME, i(103070)),	-- Elite Prideful Gladiator's ornamentedheadcover
-						un(REMOVED_FROM_GAME, i(103071)),	-- Elite Prideful Gladiator's ornamented legplates
-						un(REMOVED_FROM_GAME, i(103072)),	-- Elite Prideful Gladiator's ornamented spaulders
-						un(REMOVED_FROM_GAME, i(103073)),	-- Elite Prideful Gladiator's dreadplate girdle
-						un(REMOVED_FROM_GAME, i(103074)),	-- Elite Prideful Gladiator's plate girdle
-						un(REMOVED_FROM_GAME, i(103075)),	-- Elite Prideful Gladiator's plate warboots
-						un(REMOVED_FROM_GAME, i(103076)),	-- Elite Prideful Gladiator's dreadplate warboots
-						un(REMOVED_FROM_GAME, i(103128)),	-- Elite Prideful Gladiator's plate chestpiece
-						un(REMOVED_FROM_GAME, i(103129)),	-- Elite Prideful Gladiator's plate gauntlets
-						un(REMOVED_FROM_GAME, i(103130)),	-- Elite Prideful Gladiator's plate helm
-						un(REMOVED_FROM_GAME, i(103131)),	-- Elite Prideful Gladiator's plate legguards
-						un(REMOVED_FROM_GAME, i(103132)),	-- Elite Prideful Gladiator's plate shoulders
-						un(REMOVED_FROM_GAME, i(102991)),	-- Elite Prideful Gladiator's silk cord
-						un(REMOVED_FROM_GAME, i(102992)),	-- Elite Prideful Gladiator's felweave cord
-						un(REMOVED_FROM_GAME, i(102993)),	-- Elite Prideful Gladiator's mooncloth cord
-						un(REMOVED_FROM_GAME, i(102994)),	-- Elite Prideful Gladiator's silk treads
-						un(REMOVED_FROM_GAME, i(102995)),	-- Elite Prideful Gladiator's felweave treads
-						un(REMOVED_FROM_GAME, i(102996)),	-- Elite Prideful Gladiator's mooncloth treads
-						un(REMOVED_FROM_GAME, i(103042)),	-- Elite Prideful Gladiator's silk handguards
-						un(REMOVED_FROM_GAME, i(103043)),	-- Elite Prideful Gladiator's silk cowl
-						un(REMOVED_FROM_GAME, i(103044)),	-- Elite Prideful Gladiator's silk trousers
-						un(REMOVED_FROM_GAME, i(103045)),	-- Elite Prideful Gladiator's silk robe
-						un(REMOVED_FROM_GAME, i(103046)),	-- Elite Prideful Gladiator's silk amice
-						un(REMOVED_FROM_GAME, i(103078)),	-- Elite Prideful Gladiator's mooncloth gloves
-						un(REMOVED_FROM_GAME, i(103079)),	-- Elite Prideful Gladiator's mooncloth helm
-						un(REMOVED_FROM_GAME, i(103080)),	-- Elite Prideful Gladiator's mooncloth leggings
-						un(REMOVED_FROM_GAME, i(103081)),	-- Elite Prideful Gladiator's mooncloth robe
-						un(REMOVED_FROM_GAME, i(103082)),	-- Elite Prideful Gladiator's mooncloth mantle
-						un(REMOVED_FROM_GAME, i(103083)),	-- Elite Prideful Gladiator's satin gloves
-						un(REMOVED_FROM_GAME, i(103084)),	-- Elite Prideful Gladiator's satin hood
-						un(REMOVED_FROM_GAME, i(103085)),	-- Elite Prideful Gladiator's satin leggings
-						un(REMOVED_FROM_GAME, i(103086)),	-- Elite Prideful Gladiator's satin robe
-						un(REMOVED_FROM_GAME, i(103087)),	-- Elite Prideful Gladiator's satin mantle
-						un(REMOVED_FROM_GAME, i(103123)),	-- Elite Prideful Gladiator's felweave handguards
-						un(REMOVED_FROM_GAME, i(103124)),	-- Elite Prideful Gladiator's felweave cowl
-						un(REMOVED_FROM_GAME, i(103125)),	-- Elite Prideful Gladiator's felweave trousers
-						un(REMOVED_FROM_GAME, i(103126)),	-- Elite Prideful Gladiator's felweave rainment
-						un(REMOVED_FROM_GAME, i(103127)),	-- Elite Prideful Gladiator's felweave amice
-						un(REMOVED_FROM_GAME, i(103135)),	-- Elite Prideful Gladiator's satin treads
-						un(REMOVED_FROM_GAME, i(103136)),	-- Elite Prideful Gladiator's satin cord
+						un(REMOVED_FROM_GAME, i(103004)),	-- Elite Prideful Gladiator's Dreadplate Chestpiece
+						un(REMOVED_FROM_GAME, i(103005)),	-- Elite Prideful Gladiator's Dreadplate Gauntlets
+						un(REMOVED_FROM_GAME, i(103006)),	-- Elite Prideful Gladiator's Dreadplate Helm
+						un(REMOVED_FROM_GAME, i(103007)),	-- Elite Prideful Gladiator's Dreadplate Legguards
+						un(REMOVED_FROM_GAME, i(103008)),	-- Elite Prideful Gladiator's Dreadplate Shoulders
+						un(REMOVED_FROM_GAME, i(103059)),	-- Elite Prideful Gladiator's Scaled Chestpiece
+						un(REMOVED_FROM_GAME, i(103060)),	-- Elite Prideful Gladiator's Scaled Gauntlets
+						un(REMOVED_FROM_GAME, i(103061)),	-- Elite Prideful Gladiator's Scaled Helm
+						un(REMOVED_FROM_GAME, i(103062)),	-- Elite Prideful Gladiator's Scaled Legguards
+						un(REMOVED_FROM_GAME, i(103063)),	-- Elite Prideful Gladiator's Scaled Shoulders
+						un(REMOVED_FROM_GAME, i(103064)),	-- Elite Prideful Gladiator's Scaled Clasp
+						un(REMOVED_FROM_GAME, i(103065)),	-- Elite Prideful Gladiator's Ornamented Clasp
+						un(REMOVED_FROM_GAME, i(103066)),	-- Elite Prideful Gladiator's Ornamented Greaves
+						un(REMOVED_FROM_GAME, i(103067)),	-- Elite Prideful Gladiator's Scaled Greaves
+						un(REMOVED_FROM_GAME, i(103068)),	-- Elite Prideful Gladiator's Ornamented Chestguard
+						un(REMOVED_FROM_GAME, i(103069)),	-- Elite Prideful Gladiator's Ornamented Gloves
+						un(REMOVED_FROM_GAME, i(103070)),	-- Elite Prideful Gladiator's Ornamented Headcover
+						un(REMOVED_FROM_GAME, i(103071)),	-- Elite Prideful Gladiator's Ornamented Legplates
+						un(REMOVED_FROM_GAME, i(103072)),	-- Elite Prideful Gladiator's Ornamented Spaulders
+						un(REMOVED_FROM_GAME, i(103073)),	-- Elite Prideful Gladiator's Dreadplate Girdle
+						un(REMOVED_FROM_GAME, i(103074)),	-- Elite Prideful Gladiator's Plate Girdle
+						un(REMOVED_FROM_GAME, i(103075)),	-- Elite Prideful Gladiator's Plate Warboots
+						un(REMOVED_FROM_GAME, i(103076)),	-- Elite Prideful Gladiator's Dreadplate Warboots
+						un(REMOVED_FROM_GAME, i(103128)),	-- Elite Prideful Gladiator's Plate Chestpiece
+						un(REMOVED_FROM_GAME, i(103129)),	-- Elite Prideful Gladiator's Plate Gauntlets
+						un(REMOVED_FROM_GAME, i(103130)),	-- Elite Prideful Gladiator's Plate Helm
+						un(REMOVED_FROM_GAME, i(103131)),	-- Elite Prideful Gladiator's Plate Legguards
+						un(REMOVED_FROM_GAME, i(103132)),	-- Elite Prideful Gladiator's Plate Shoulders
+						un(REMOVED_FROM_GAME, i(102991)),	-- Elite Prideful Gladiator's Silk Cord
+						un(REMOVED_FROM_GAME, i(102992)),	-- Elite Prideful Gladiator's Felweave Cord
+						un(REMOVED_FROM_GAME, i(102993)),	-- Elite Prideful Gladiator's Mooncloth Cord
+						un(REMOVED_FROM_GAME, i(102994)),	-- Elite Prideful Gladiator's Silk Treads
+						un(REMOVED_FROM_GAME, i(102995)),	-- Elite Prideful Gladiator's Felweave Treads
+						un(REMOVED_FROM_GAME, i(102996)),	-- Elite Prideful Gladiator's Mooncloth Treads
+						un(REMOVED_FROM_GAME, i(103042)),	-- Elite Prideful Gladiator's Silk Handguards
+						un(REMOVED_FROM_GAME, i(103043)),	-- Elite Prideful Gladiator's Silk Cowl
+						un(REMOVED_FROM_GAME, i(103044)),	-- Elite Prideful Gladiator's Silk Trousers
+						un(REMOVED_FROM_GAME, i(103045)),	-- Elite Prideful Gladiator's Silk Robe
+						un(REMOVED_FROM_GAME, i(103046)),	-- Elite Prideful Gladiator's Silk Amice
+						un(REMOVED_FROM_GAME, i(103078)),	-- Elite Prideful Gladiator's Mooncloth Gloves
+						un(REMOVED_FROM_GAME, i(103079)),	-- Elite Prideful Gladiator's Mooncloth Helm
+						un(REMOVED_FROM_GAME, i(103080)),	-- Elite Prideful Gladiator's Mooncloth Leggings
+						un(REMOVED_FROM_GAME, i(103081)),	-- Elite Prideful Gladiator's Mooncloth Robe
+						un(REMOVED_FROM_GAME, i(103082)),	-- Elite Prideful Gladiator's Mooncloth Mantle
+						un(REMOVED_FROM_GAME, i(103083)),	-- Elite Prideful Gladiator's Satin Gloves
+						un(REMOVED_FROM_GAME, i(103084)),	-- Elite Prideful Gladiator's Satin Hood
+						un(REMOVED_FROM_GAME, i(103085)),	-- Elite Prideful Gladiator's Satin Leggings
+						un(REMOVED_FROM_GAME, i(103086)),	-- Elite Prideful Gladiator's Satin Robe
+						un(REMOVED_FROM_GAME, i(103087)),	-- Elite Prideful Gladiator's Satin Mantle
+						un(REMOVED_FROM_GAME, i(103123)),	-- Elite Prideful Gladiator's Felweave Handguards
+						un(REMOVED_FROM_GAME, i(103124)),	-- Elite Prideful Gladiator's Felweave Cowl
+						un(REMOVED_FROM_GAME, i(103125)),	-- Elite Prideful Gladiator's Felweave Trousers
+						un(REMOVED_FROM_GAME, i(103126)),	-- Elite Prideful Gladiator's Felweave Rainment
+						un(REMOVED_FROM_GAME, i(103127)),	-- Elite Prideful Gladiator's Felweave Amice
+						un(REMOVED_FROM_GAME, i(103135)),	-- Elite Prideful Gladiator's Satin Treads
+						un(REMOVED_FROM_GAME, i(103136)),	-- Elite Prideful Gladiator's Satin Cord
 					},
 				}),
 				n(75693, {	-- Doris Chiltonius Season 12: Malevolent Gladiator Vendor. Items are tagged as S13
@@ -340,7 +340,7 @@ _.Zones =
 						n(-319, {	-- Weapons
 							i(144243, {	-- Arsenal: Malevolent Gladiator's Weapons
 								["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-								["sym"] = { 
+								["sym"] = {
 									{"sub", "pvp_weapons_ensemble", -10041, -675, -661 },
 									{"select", "itemID", 91482 },	-- Malevolent Gladiator's Barrier
 									{"select", "itemID", 91486 },	-- Malevolent Gladiator's Battle Staff
@@ -412,7 +412,7 @@ _.Zones =
 							}),
 							i(91442, {	-- Malevolent Gladiator's Bonegrinder
 								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
-							}),	
+							}),
 							i(91446, {	-- Malevolent Gladiator's Cleaver
 								["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
 							}),
@@ -480,7 +480,7 @@ _.Zones =
 						cl(DEATHKNIGHT, {
 							i(138704, {	-- Ensemble: Malevolent Gladiator's Dreadplate Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-								["sym"] = { 
+								["sym"] = {
 									{"sub", "pvp_set_ensemble", -10041, -675, -661, 6 },
 									{"select", "itemID", 84985 },	-- Malevolent Gladiator's Armplates of Proficiency
 									{"select", "itemID", 84949 },	-- Malevolent Gladiator's Girdle of Accuracy
@@ -493,7 +493,7 @@ _.Zones =
 									{"select", "itemID", 91504 },	-- Malevolent Gladiator's Dreadplate Helm
 									{"select", "itemID", 91506 },	-- Malevolent Gladiator's Dreadplate Legguards
 									{"select", "itemID", 91508 },	-- Malevolent Gladiator's Dreadplate Shoulders
-									{"exclude", "itemID", 138704 },	-- Exclude itself to stop duplicating 
+									{"exclude", "itemID", 138704 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
 									i(84795),	-- Malevolent Gladiator's Dreadplate Chestpiece
@@ -522,7 +522,7 @@ _.Zones =
 						cl(DRUID, {
 							i(138708, {	-- Ensemble: Malevolent Gladiator's Dragonhide Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-								["sym"] = { 
+								["sym"] = {
 									{"sub", "pvp_set_ensemble", -10041, -675, -661, 11 },
 									{"select", "itemID", 84976 },	-- Malevolent Gladiator's Bindings of Meditation
 									{"select", "itemID", 84982 },	-- Malevolent Gladiator's Bindings of Prowess
@@ -551,7 +551,7 @@ _.Zones =
 									{"select", "itemID", 91546 },	-- Malevolent Gladiator's Wyrmhide Legguards
 									{"select", "itemID", 91548 },	-- Malevolent Gladiator's Wyrmhide Robes
 									{"select", "itemID", 91550 },	-- Malevolent Gladiator's Wyrmhide Spaulders
-									{"exclude", "itemID", 138708 },	-- Exclude itself to stop duplicating 
+									{"exclude", "itemID", 138708 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
 									i(84832),	-- Malevolent Gladiator's Dragonhide Gloves
@@ -620,7 +620,7 @@ _.Zones =
 						cl(HUNTER, {
 							i(138707, {	-- Ensemble: Malevolent Gladiator's Chain Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-								["sym"] = { 
+								["sym"] = {
 									{"sub", "pvp_set_ensemble", -9979, -675, -661, 3 },
 									{"select", "itemID", 84981 },	-- Malevolent Gladiator's Wristguards of Accuracy
 									{"select", "itemID", 84980 },	-- Malevolent Gladiator's Wristguards of Alacrity
@@ -639,7 +639,7 @@ _.Zones =
 									{"select", "itemID", 91579 },	-- Malevolent Gladiator's Chain Helm
 									{"select", "itemID", 91581 },	-- Malevolent Gladiator's Chain Leggings
 									{"select", "itemID", 91583 },	-- Malevolent Gladiator's Chain Spaulders
-									{"exclude", "itemID", 138707 },	-- Exclude itself to stop duplicating 
+									{"exclude", "itemID", 138707 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
 									i(84796),	-- Malevolent Gladiator's Chain Armor
@@ -668,7 +668,7 @@ _.Zones =
 						cl(MAGE, {
 							i(138711, {	-- Ensemble: Malevolent Gladiator's Silk Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-								["sym"] = { 
+								["sym"] = {
 									{"sub", "pvp_set_ensemble", -10041, -675, -661, 8 },
 									{"select", "itemID", 84978 },	-- Malevolent Gladiator's Cuffs of Prowess
 									{"select", "itemID", 84954 },	-- Malevolent Gladiator's Cord of Cruelty
@@ -681,7 +681,7 @@ _.Zones =
 									{"select", "itemID", 91585 },	-- Malevolent Gladiator's Silk Handguards
 									{"select", "itemID", 91591 },	-- Malevolent Gladiator's Silk Robe
 									{"select", "itemID", 91589 },	-- Malevolent Gladiator's Silk Trousers
-									{"exclude", "itemID", 138711 },	-- Exclude itself to stop duplicating 
+									{"exclude", "itemID", 138711 },	-- Exclude itself to stop duplicating
 									{"exclude", "itemID", 97925 },	-- Malevolent Gladiator's Silk Amice
 									{"exclude", "itemID", 97835 },	-- Malevolent Gladiator's Silk Amice
 									{"exclude", "itemID", 97923 },	-- Malevolent Gladiator's Silk Cowl
@@ -692,7 +692,7 @@ _.Zones =
 									{"exclude", "itemID", 97837 },	-- Malevolent Gladiator's Silk Robe
 									{"exclude", "itemID", 97931 },	-- Malevolent Gladiator's Silk Trousers
 									{"exclude", "itemID", 97841 },	-- Malevolent Gladiator's Silk Trousers
-									
+
 								},
 								["g"] = {
 									i(84917),	-- Malevolent Gladiator's Silk Amice
@@ -721,7 +721,7 @@ _.Zones =
 						cl(MONK, {
 							i(138709, {	-- Ensemble: Malevolent Gladiator's Ironskin Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-								["sym"] = { 
+								["sym"] = {
 									{"sub", "pvp_set_ensemble", -10041, -675, -661, 10 },
 									{"select", "itemID", 84973 },	-- Malevolent Gladiator's Armwraps of Accuracy
 									{"select", "itemID", 84947 },	-- Malevolent Gladiator's Waistband of Cruelty
@@ -739,7 +739,7 @@ _.Zones =
 									{"select", "itemID", 91604 },	-- Malevolent Gladiator's Ironskin Legguards
 									{"select", "itemID", 91606 },	-- Malevolent Gladiator's Ironskin Spaulders
 									{"select", "itemID", 91608 },	-- Malevolent Gladiator's Ironskin Tunic
-									{"exclude", "itemID", 138709 },	-- Exclude itself to stop duplicating 
+									{"exclude", "itemID", 138709 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
 									i(84836),	-- Malevolent Gladiator's Copperskin Gloves
@@ -788,7 +788,7 @@ _.Zones =
 						cl(PALADIN, {
 							i(138705, {	-- Ensemble: Malevolent Gladiator's Scaled Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-								["sym"] = { 
+								["sym"] = {
 									{"sub", "pvp_set_ensemble", -10041, -675, -661, 2 },
 									{"select", "itemID", 84975 },	-- Malevolent Gladiator's Bracers of Meditation
 									{"select", "itemID", 84974 },	-- Malevolent Gladiator's Bracers of Prowess
@@ -812,7 +812,7 @@ _.Zones =
 									{"select", "itemID", 91624 },	-- Malevolent Gladiator's Scaled Helm
 									{"select", "itemID", 91626 },	-- Malevolent Gladiator's Scaled Legguards
 									{"select", "itemID", 91628 },	-- Malevolent Gladiator's Scaled Shoulders
-									{"exclude", "itemID", 138705 },	-- Exclude itself to stop duplicating 
+									{"exclude", "itemID", 138705 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
 									i(84793),	-- Malevolent Gladiator's Ornamented Chestguard
@@ -861,7 +861,7 @@ _.Zones =
 						cl(PRIEST, {
 							i(138712, {	-- Ensemble: Malevolent Gladiator's Satin Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-								["sym"] = { 
+								["sym"] = {
 									{"sub", "pvp_set_ensemble", -10041, -675, -661, 5 },
 									{"select", "itemID", 84979 },	-- Malevolent Gladiator's Cuffs of Meditation
 									{"select", "itemID", 84956 },	-- Malevolent Gladiator's Cord of Meditation
@@ -879,7 +879,7 @@ _.Zones =
 									{"select", "itemID", 91676 },	-- Malevolent Gladiator's Satin Leggings
 									{"select", "itemID", 91680 },	-- Malevolent Gladiator's Satin Mantle
 									{"select", "itemID", 91678 },	-- Malevolent Gladiator's Satin Robe
-									{"exclude", "itemID", 138712 },	-- Exclude itself to stop duplicating 
+									{"exclude", "itemID", 138712 },	-- Exclude itself to stop duplicating
 									{"exclude", "itemID", 97515 },	-- Malevolent Gladiator's Mooncloth Helm
 									{"exclude", "itemID", 97522 },	-- Malevolent Gladiator's Satin Gloves
 									{"exclude", "itemID", 97525 },	-- Malevolent Gladiator's Satin Leggings
@@ -933,7 +933,7 @@ _.Zones =
 						cl(ROGUE, {
 							i(138710, {	-- Ensemble: Malevolent Gladiator's Leather Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-								["sym"] = { 
+								["sym"] = {
 									{"sub", "pvp_set_ensemble", -10041, -675, -661, 4 },
 									{"select", "itemID", 84972 },	-- Malevolent Gladiator's Armwraps of Alacrity
 									{"select", "itemID", 84948 },	-- Malevolent Gladiator's Waistband of Accuracy
@@ -946,7 +946,7 @@ _.Zones =
 									{"select", "itemID", 91699 },	-- Malevolent Gladiator's Leather Legguards
 									{"select", "itemID", 91701 },	-- Malevolent Gladiator's Leather Spaulders
 									{"select", "itemID", 91693 },	-- Malevolent Gladiator's Leather Tunic
-									{"exclude", "itemID", 138710 },	-- Exclude itself to stop duplicating 
+									{"exclude", "itemID", 138710 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
 									i(84830),	-- Malevolent Gladiator's Leather Gloves
@@ -975,7 +975,7 @@ _.Zones =
 						cl(SHAMAN, {
 							i(138706, {	-- Ensemble: Malevolent Gladiator's Ringmail Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-								["sym"] = { 
+								["sym"] = {
 									{"sub", "pvp_set_ensemble", -10041, -675, -661, 7 },
 									{"select", "itemID", 84984 },	-- Malevolent Gladiator's Armbands of Meditation
 									{"select", "itemID", 84983 },	-- Malevolent Gladiator's Armbands of Prowess
@@ -1004,7 +1004,7 @@ _.Zones =
 									{"select", "itemID", 91715 },	-- Malevolent Gladiator's Ringmail Helm
 									{"select", "itemID", 91717 },	-- Malevolent Gladiator's Ringmail Leggings
 									{"select", "itemID", 91719 },	-- Malevolent Gladiator's Ringmail Spaulders
-									{"exclude", "itemID", 138706 },	-- Exclude itself to stop duplicating 
+									{"exclude", "itemID", 138706 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
 									i(84799),	-- Malevolent Gladiator's Linked Armor
@@ -1073,7 +1073,7 @@ _.Zones =
 						cl(WARLOCK, {
 							i(138713, {	-- Ensemble: Malevolent Gladiator's Felweave Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-								["sym"] = { 
+								["sym"] = {
 									{"sub", "pvp_set_ensemble", -10041, -675, -661, 9 },
 									{"select", "itemID", 84977 },	-- Malevolent Gladiator's Cuffs of Accuracy
 									{"select", "itemID", 84955 },	-- Malevolent Gladiator's Cord of Accuracy
@@ -1086,7 +1086,7 @@ _.Zones =
 									{"select", "itemID", 91773 },	-- Malevolent Gladiator's Felweave Handguards
 									{"select", "itemID", 91779 },	-- Malevolent Gladiator's Felweave Raiment
 									{"select", "itemID", 91777 },	-- Malevolent Gladiator's Felweave Trousers
-									{"exclude", "itemID", 138713 },	-- Exclude itself to stop duplicating 
+									{"exclude", "itemID", 138713 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
 									i(84923),	-- Malevolent Gladiator's Felweave Amice
@@ -1115,7 +1115,7 @@ _.Zones =
 						cl(WARRIOR, {
 							i(138703, {	-- Ensemble: Malevolent Gladiator's Plate Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-								["sym"] = { 
+								["sym"] = {
 									{"sub", "pvp_set_ensemble", -10041, -675, -661, 1 },
 									{"select", "itemID", 84985 },	-- Malevolent Gladiator's Armplates of Alacrity
 									{"select", "itemID", 84950 },	-- Malevolent Gladiator's Girdle of Prowess
@@ -1128,7 +1128,7 @@ _.Zones =
 									{"select", "itemID", 91787 },	-- Malevolent Gladiator's Plate Helm
 									{"select", "itemID", 91789 },	-- Malevolent Gladiator's Plate Legguards
 									{"select", "itemID", 91791 },	-- Malevolent Gladiator's Plate Shoulders
-									{"exclude", "itemID", 138703 },	-- Exclude itself to stop duplicating 
+									{"exclude", "itemID", 138703 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
 									i(84797),	-- Malevolent Gladiator's Plate Chestpiece
@@ -1270,7 +1270,7 @@ _.Zones =
 							i(91703, {	-- Malevolent Gladiator's Waistguard of Meditation
 								["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 							}),
-						}),	
+						}),
 						n(-330, {	-- Feet
 							i(91597, {	-- Malevolent Gladiator's Boots of Alacrity
 								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
@@ -1289,7 +1289,7 @@ _.Zones =
 							}),
 							i(91707, {	-- Malevolent Gladiator's Footguards of Meditation (Mail)
 								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-							}),						
+							}),
 							i(91634, {	-- Malevolent Gladiator's Greaves of Alacrity
 								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 							}),
@@ -1310,7 +1310,7 @@ _.Zones =
 							}),
 							i(91472, {	-- Malevolent Gladiator's Treads of Meditation
 								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
-							}),					
+							}),
 							i(91656, {	-- Malevolent Gladiator's Warboots of Alacrity
 								["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 							}),
@@ -1319,7 +1319,7 @@ _.Zones =
 							}),
 						}),
 					},
-				}),	
+				}),
 				n(65165, {	-- Doris Chiltonius (Removed Season 12 Vendor)
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
@@ -1534,7 +1534,7 @@ _.Zones =
 						n(-662, {	-- Elite
 							n(-319, {	-- Weapons
 								un(REMOVED_FROM_GAME, i(100184)),	-- Grievous Gladiator's Decapitator
-								un(REMOVED_FROM_GAME, i(100194)),	-- Grievous Gladiator's Quick blade
+								un(REMOVED_FROM_GAME, i(100194)),	-- Grievous Gladiator's Quickblade
 								un(REMOVED_FROM_GAME, i(100489)),	-- Grievous Gladiator's Mageblade
 								un(REMOVED_FROM_GAME, i(100499)),	-- Grievous Gladiator's Slicer
 								un(REMOVED_FROM_GAME, i(100224)),	-- Grievous Gladiator's Endgame
@@ -1760,12 +1760,12 @@ _.Zones =
 						cl(DEATHKNIGHT, {
 							i(138715, {	-- Ensemble: Dreadful Gladiator's Dreadplate Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-								["sym"] = { 
+								["sym"] = {
 									{"sub", "pvp_set_ensemble", -10041, -675, -9983, 6 },
 									{"select", "itemID", 84438 },	-- Dreadful Gladiator's Armplates of Proficiency
 									{"select", "itemID", 84434 },	-- Dreadful Gladiator's Girdle of Accuracy
 									{"select", "itemID", 84436 },	-- Dreadful Gladiator's Warboots of Cruelty
-									{"exclude", "itemID", 138715 },	-- Exclude itself to stop duplicating 
+									{"exclude", "itemID", 138715 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(84372, {	-- Dreadful Gladiator's Dreadplate Chestpiece
@@ -1787,7 +1787,7 @@ _.Zones =
 						cl(DRUID, {
 							i(138719, {	-- Ensemble: Dreadful Gladiator's Dragonhide Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-								["sym"] = { 
+								["sym"] = {
 									{"sub", "pvp_set_ensemble", -10041, -675, -9983, 11 },
 									{"select", "itemID", 84384 },	-- Dreadful Gladiator's Bindings of Meditation
 									{"select", "itemID", 84392 },	-- Dreadful Gladiator's Bindings of Prowess
@@ -1795,7 +1795,7 @@ _.Zones =
 									{"select", "itemID", 84382 },	-- Dreadful Gladiator's Belt of Meditation
 									{"select", "itemID", 84391 },	-- Dreadful Gladiator's Footguards of Alacrity (Leather)
 									{"select", "itemID", 84383 },	-- Dreadful Gladiator's Footguards of Meditation (Leather)
-									{"exclude", "itemID", 138719 },	-- Exclude itself to stop duplicating 
+									{"exclude", "itemID", 138719 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(84377, {	-- Dreadful Gladiator's Dragonhide Gloves
@@ -1847,7 +1847,7 @@ _.Zones =
 						cl(HUNTER, {
 							i(138718, {	-- Ensemble: Dreadful Gladiator's Chain Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-								["sym"] = { 
+								["sym"] = {
 									{"sub", "pvp_set_ensemble", -9979, -675, -9983, 3 },
 									{"select", "itemID", 84407 },	-- Dreadful Gladiator's Wristguards of Accuracy
 									{"select", "itemID", 84406 },	-- Dreadful Gladiator's Wristguards of Alacrity
@@ -1855,7 +1855,7 @@ _.Zones =
 									{"select", "itemID", 84402 },	-- Dreadful Gladiator's Links of Cruelty
 									{"select", "itemID", 84405 },	-- Dreadful Gladiator's Sabatons of Alacrity
 									{"select", "itemID", 84404 },	-- Dreadful Gladiator's Sabatons of Cruelty
-									{"exclude", "itemID", 138718 },	-- Exclude itself to stop duplicating 
+									{"exclude", "itemID", 138718 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(84408, {	-- Dreadful Gladiator's Chain Armor
@@ -1877,12 +1877,12 @@ _.Zones =
 						cl(MAGE, {
 							i(138722, {	-- Ensemble: Dreadful Gladiator's Silk Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-								["sym"] = { 
+								["sym"] = {
 									{"sub", "pvp_set_ensemble", -10041, -675, -9983, 8 },
 									{"select", "itemID", 84360 },	-- Dreadful Gladiator's Cuffs of Prowess
 									{"select", "itemID", 84353 },	-- Dreadful Gladiator's Cord of Cruelty
 									{"select", "itemID", 84356 },	-- Dreadful Gladiator's Treads of Cruelty
-									{"exclude", "itemID", 138722 },	-- Exclude itself to stop duplicating 
+									{"exclude", "itemID", 138722 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(84417, {	-- Dreadful Gladiator's Silk Amice
@@ -1904,12 +1904,12 @@ _.Zones =
 						cl(MONK, {
 							i(138720, {	-- Ensemble: Dreadful Gladiator's Ironskin Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-								["sym"] = { 
+								["sym"] = {
 									{"sub", "pvp_set_ensemble", -10041, -675, -9983, 10 },
 									{"select", "itemID", 84461 },	-- Dreadful Gladiator's Armwraps of Accuracy
 									{"select", "itemID", 84456 },	-- Dreadful Gladiator's Waistband of Cruelty
 									{"select", "itemID", 84459 },	-- Dreadful Gladiator's Boots of Alacrity
-									{"exclude", "itemID", 138720 },	-- Exclude itself to stop duplicating 
+									{"exclude", "itemID", 138720 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(84548, {	-- Dreadful Gladiator's Copperskin Gloves
@@ -1946,7 +1946,7 @@ _.Zones =
 						cl(PALADIN, {
 							i(138716, {	-- Ensemble: Dreadful Gladiator's Scaled Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-								["sym"] = { 
+								["sym"] = {
 									{"sub", "pvp_set_ensemble", -10041, -675, -9983, 2 },
 									{"select", "itemID", 84428 },	-- Dreadful Gladiator's Bracers of Meditation
 									{"select", "itemID", 84427 },	-- Dreadful Gladiator's Bracers of Prowess
@@ -1954,7 +1954,7 @@ _.Zones =
 									{"select", "itemID", 84424 },	-- Dreadful Gladiator's Clasp of Meditation
 									{"select", "itemID", 84425 },	-- Dreadful Gladiator's Greaves of Alacrity
 									{"select", "itemID", 84426 },	-- Dreadful Gladiator's Greaves of Meditation
-									{"exclude", "itemID", 138716 },	-- Exclude itself to stop duplicating 
+									{"exclude", "itemID", 138716 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(84429, {	-- Dreadful Gladiator's Ornamented Chestguard
@@ -1991,12 +1991,12 @@ _.Zones =
 						cl(PRIEST, {
 							i(138723, {	-- Ensemble: Dreadful Gladiator's Satin Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-								["sym"] = { 
+								["sym"] = {
 									{"sub", "pvp_set_ensemble", -10041, -675, -9983, 5 },
 									{"select", "itemID", 84361 },	-- Dreadful Gladiator's Cuffs of Meditation
 									{"select", "itemID", 84355 },	-- Dreadful Gladiator's Cord of Meditation
 									{"select", "itemID", 84358 },	-- Dreadful Gladiator's Treads of Meditation
-									{"exclude", "itemID", 138723 },	-- Exclude itself to stop duplicating 
+									{"exclude", "itemID", 138723 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(84440, {	-- Dreadful Gladiator's Mooncloth Gloves
@@ -2033,12 +2033,12 @@ _.Zones =
 						cl(ROGUE, {
 							i(138721, {	-- Ensemble: Dreadful Gladiator's Leather Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-								["sym"] = { 
+								["sym"] = {
 									{"sub", "pvp_set_ensemble", -10041, -675, -9983, 4 },
 									{"select", "itemID", 84460 },	-- Dreadful Gladiator's Armwraps of Alacrity
 									{"select", "itemID", 84457 },	-- Dreadful Gladiator's Waistband of Accuracy
 									{"select", "itemID", 84458 },	-- Dreadful Gladiator's Boots of Cruelty
-									{"exclude", "itemID", 138721 },	-- Exclude itself to stop duplicating 
+									{"exclude", "itemID", 138721 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(84463, {	-- Dreadful Gladiator's Leather Gloves
@@ -2060,7 +2060,7 @@ _.Zones =
 						cl(SHAMAN, {
 							i(138717, {	-- Ensemble: Dreadful Gladiator's Ringmail Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-								["sym"] = { 
+								["sym"] = {
 									{"sub", "pvp_set_ensemble", -10041, -675, -9983, 7 },
 									{"select", "itemID", 84471 },	-- Dreadful Gladiator's Armbands of Meditation
 									{"select", "itemID", 84470 },	-- Dreadful Gladiator's Armbands of Prowess
@@ -2068,9 +2068,9 @@ _.Zones =
 									{"select", "itemID", 84467 },	-- Dreadful Gladiator's Waistguard of Meditation
 									{"select", "itemID", 84468 },	-- Dreadful Gladiator's Footguards of Alacrity (Mail)
 									{"select", "itemID", 84469 },	-- Dreadful Gladiator's Footguards of Meditation (Mail)
-									{"exclude", "itemID", 138717 },	-- Exclude itself to stop duplicating 
+									{"exclude", "itemID", 138717 },	-- Exclude itself to stop duplicating
 								},
-							}),	
+							}),
 							i(84477, {	-- Dreadful Gladiator's Linked Armor
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
@@ -2120,12 +2120,12 @@ _.Zones =
 						cl(WARLOCK, {
 							i(138724, {	-- Ensemble: Dreadful Gladiator's Felweave Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-								["sym"] = { 
+								["sym"] = {
 									{"sub", "pvp_set_ensemble", -10041, -675, -9983, 9 },
 									{"select", "itemID", 84359 },	-- Dreadful Gladiator's Cuffs of Accuracy
 									{"select", "itemID", 84354 },	-- Dreadful Gladiator's Cord of Accuracy
 									{"select", "itemID", 84357 },	-- Dreadful Gladiator's Treads of Alacrity
-									{"exclude", "itemID", 138724 },	-- Exclude itself to stop duplicating 
+									{"exclude", "itemID", 138724 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(84503, {	-- Dreadful Gladiator's Felweave Amice
@@ -2147,12 +2147,12 @@ _.Zones =
 						cl(WARRIOR, {
 							i(138714, {	-- Ensemble: Dreadful Gladiator's Plate Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-								["sym"] = { 
+								["sym"] = {
 									{"sub", "pvp_set_ensemble", -10041, -675, -9983, 1 },
 									{"select", "itemID", 84439 },	-- Dreadful Gladiator's Armplates of Alacrity
 									{"select", "itemID", 84435 },	-- Dreadful Gladiator's Girdle of Prowess
 									{"select", "itemID", 84437 },	-- Dreadful Gladiator's Warboots of Alacrity
-									{"exclude", "itemID", 138714 },	-- Exclude itself to stop duplicating 
+									{"exclude", "itemID", 138714 },	-- Exclude itself to stop duplicating
 								},
 							}),
 							i(84504, {	-- Dreadful Gladiator's Plate Chestpiece
@@ -2170,7 +2170,7 @@ _.Zones =
 							i(84508, {	-- Dreadful Gladiator's Plate Shoulders
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
-						}),	
+						}),
 						n(-322, {	-- Back
 							i(84345, {	-- Dreadful Gladiator's Cape of Cruelty
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
@@ -2286,7 +2286,7 @@ _.Zones =
 							}),
 							i(84467, {	-- Dreadful Gladiator's Waistguard of Meditation
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-							}),	
+							}),
 						}),
 						n(-330, {	-- Feet
 							i(84459, {	-- Dreadful Gladiator's Boots of Alacrity
@@ -2384,7 +2384,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(94326)),	-- Tyrannical Gladiator's Heavy Crossbow (used 2 upgrade to elite)
 						un(REMOVED_FROM_GAME, i(91146)),	-- Tyrannical Gladiator's Heavy Crossbow
 						un(REMOVED_FROM_GAME, i(91144)),	-- Tyrannical Gladiator's  Touch of Defeat
-						un(REMOVED_FROM_GAME, i(91403)),	-- tyrannical Gladiator's baton of light
+						un(REMOVED_FROM_GAME, i(91403)),	-- Tyrannical Gladiator's Baton of Light
 						un(REMOVED_FROM_GAME, i(91213)),	-- Tyrannical Gladiator's Links of Cruelty
 						un(REMOVED_FROM_GAME, i(91215)),	-- Tyrannical Gladiator's Links of Accuracy
 						un(REMOVED_FROM_GAME, i(91217)),	-- Tyrannical Gladiator's Sabatons of Cruelty
@@ -2397,21 +2397,21 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(91251)),	-- Tyrannical Gladiator's Waistguard of Meditation
 						un(REMOVED_FROM_GAME, i(91253)),	-- Tyrannical Gladiator's Footguards of Alacrity
 						un(REMOVED_FROM_GAME, i(91255)),	-- Tyrannical Gladiator's Footguards of Meditation
-						un(REMOVED_FROM_GAME, i(91359)),	-- Tyrannical Gladiator's ringmail Armor
-						un(REMOVED_FROM_GAME, i(91361)),	-- Tyrannical Gladiator's ringmail Gauntlets
-						un(REMOVED_FROM_GAME, i(91363)),	-- Tyrannical Gladiator's ringmail Helm
-						un(REMOVED_FROM_GAME, i(91365)),	-- Tyrannical Gladiator's ringmail Legs
-						un(REMOVED_FROM_GAME, i(91367)),	-- Tyrannical Gladiator's ringmail Spaulders
-						un(REMOVED_FROM_GAME, i(91369)),	-- Tyrannical Gladiator's linked Armor
-						un(REMOVED_FROM_GAME, i(91371)),	-- Tyrannical Gladiator's linked Gauntlets
-						un(REMOVED_FROM_GAME, i(91373)),	-- Tyrannical Gladiator's linked Helm
-						un(REMOVED_FROM_GAME, i(91375)),	-- Tyrannical Gladiator's linked Legs
-						un(REMOVED_FROM_GAME, i(91377)),	-- Tyrannical Gladiator's linked Spaulders
-						un(REMOVED_FROM_GAME, i(91381)),	-- Tyrannical Gladiator's mail Armor
-						un(REMOVED_FROM_GAME, i(91383)),	-- Tyrannical Gladiator's mail Gauntlets
-						un(REMOVED_FROM_GAME, i(91385)),	-- Tyrannical Gladiator's mail Helm
-						un(REMOVED_FROM_GAME, i(91387)),	-- Tyrannical Gladiator's mail Legs
-						un(REMOVED_FROM_GAME, i(91389)),	-- Tyrannical Gladiator's mail Spaulders
+						un(REMOVED_FROM_GAME, i(91359)),	-- Tyrannical Gladiator's Ringmail Armor
+						un(REMOVED_FROM_GAME, i(91361)),	-- Tyrannical Gladiator's Ringmail Gauntlets
+						un(REMOVED_FROM_GAME, i(91363)),	-- Tyrannical Gladiator's Ringmail Helm
+						un(REMOVED_FROM_GAME, i(91365)),	-- Tyrannical Gladiator's Ringmail Legs
+						un(REMOVED_FROM_GAME, i(91367)),	-- Tyrannical Gladiator's Ringmail Spaulders
+						un(REMOVED_FROM_GAME, i(91369)),	-- Tyrannical Gladiator's Linked Armor
+						un(REMOVED_FROM_GAME, i(91371)),	-- Tyrannical Gladiator's Linked Gauntlets
+						un(REMOVED_FROM_GAME, i(91373)),	-- Tyrannical Gladiator's Linked Helm
+						un(REMOVED_FROM_GAME, i(91375)),	-- Tyrannical Gladiator's Linked Legs
+						un(REMOVED_FROM_GAME, i(91377)),	-- Tyrannical Gladiator's Linked Spaulders
+						un(REMOVED_FROM_GAME, i(91381)),	-- Tyrannical Gladiator's Mail Armor
+						un(REMOVED_FROM_GAME, i(91383)),	-- Tyrannical Gladiator's Mail Gauntlets
+						un(REMOVED_FROM_GAME, i(91385)),	-- Tyrannical Gladiator's Mail Helm
+						un(REMOVED_FROM_GAME, i(91387)),	-- Tyrannical Gladiator's Mail Legs
+						un(REMOVED_FROM_GAME, i(91389)),	-- Tyrannical Gladiator's Mail Spaulders
 						un(REMOVED_FROM_GAME, i(91379)),	-- Tyrannical Gladiator's Waistguard of Cruelty
 						un(REMOVED_FROM_GAME, i(91110)),	-- Tyrannical Gladiator's Cord of Cruelty
 						un(REMOVED_FROM_GAME, i(91112)),	-- Tyrannical Gladiator's Cord of Accuracy
@@ -2430,8 +2430,8 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(91316)),	-- Tyrannical Gladiator's Mooncloth Robe
 						un(REMOVED_FROM_GAME, i(91318)),	-- Tyrannical Gladiator's Mooncloth Mantle
 						un(REMOVED_FROM_GAME, i(91351)),	-- Tyrannical Gladiator's Waistguard of Meditation
-						un(REMOVED_FROM_GAME, i(91353)),	-- Tyrannical Gladiator's Footguards of alacrity
-						un(REMOVED_FROM_GAME, i(91355)),	-- Tyrannical Gladiator's footguards of meditation
+						un(REMOVED_FROM_GAME, i(91353)),	-- Tyrannical Gladiator's Footguards of Alacrity
+						un(REMOVED_FROM_GAME, i(91355)),	-- Tyrannical Gladiator's Footguards of Meditation
 					},
 				}),
 				n(75688, {	-- Roo Desvin

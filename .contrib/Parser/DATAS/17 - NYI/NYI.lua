@@ -210,11 +210,11 @@ _.NeverImplemented =
 				i(96264),	-- Leggings of the Chromatic Hydra
 				i(96265),	-- Robes of the Chromatic Hydra
 				i(96266),	-- Mantle of the Chromatic Hydra
-				i(88251),	-- gladiators silk amice
-				i(88252),	-- gladiators silk cowl
-				i(88253),	-- gladiators silk handguards
-				i(88254),	-- gladiators silk robe
-				i(88255),	-- gladiators silk trousers
+				i(88251),	-- Gladiator's Silk Amice
+				i(88252),	-- Gladiator's Silk Cowl
+				i(88253),	-- Gladiator's Silk Handguards
+				i(88254),	-- Gladiator's Silk Robe
+				i(88255),	-- Gladiator's Silk Trousers
 			}),
 			cl(PRIEST, {
 				i(46230),	-- Circlet of Sanctification
@@ -227,21 +227,21 @@ _.NeverImplemented =
 				i(46257),	-- Rainments of Sanctification
 				i(46258),	-- Robe of Sanctification
 				i(46259),	-- Shoulderpads of Sanctification
-				i(88241),	-- gladiators satin gloves
-				i(88242),	-- gladiators satin hood
-				i(88243),	-- gladiators satin leggings
-				i(88244),	-- gladiators satin mantle
-				i(88245),	-- gladiators satin robe
+				i(88241),	-- Gladiator's Satin Gloves
+				i(88242),	-- Gladiator's Satin Hood
+				i(88243),	-- Gladiator's Satin Leggings
+				i(88244),	-- Gladiator's Satin Mantle
+				i(88245),	-- Gladiator's Satin Robe
 				i(48745),	-- Velen's Cowl
 				i(48746),	-- Velen's Gloves
 				i(48747),	-- Velen's Leggings
 				i(48748),	-- Velen's Robe
 				i(48749),	-- Velen's Shoulderpads
-				i(88221),	-- gladiators mooncloth gloves
-				i(88222),	-- gladiators mooncloth helm
-				i(88223),	-- gladiators mooncloth leggings
-				i(88224),	-- gladiators mooncloth mantle
-				i(88225),	-- gladiators mooncloth robe
+				i(88221),	-- Gladiator's Mooncloth Gloves
+				i(88222),	-- Gladiator's Mooncloth Helm
+				i(88223),	-- Gladiator's Mooncloth Leggings
+				i(88224),	-- Gladiator's Mooncloth Mantle
+				i(88225),	-- Gladiator's Mooncloth Robe
 				i(48750),	-- Zabra's Cowl of Conquest
 				i(48751),	-- Zabra's Gloves of Conquest
 				i(48752),	-- Zabra's Leggings of Conquest
@@ -489,8 +489,8 @@ _.NeverImplemented =
 			i(32100),	-- Chancellor's Mooncloth Mitts
 			i(32101),	-- Chancellor's Mooncloth Shoulderpads
 			i(32102),	-- Chancellor's Mooncloth Vestments
-			i(166406),	-- flaskzertaurens cloth robes
-			i(166407),	-- flaskzertaurens cloth shoulders
+			i(166406),	-- Flaskzertauren's Cloth Robes
+			i(166407),	-- Flaskzertauren's Cloth Shoulders
 			i(32103),	-- Chancellor's Satin Gloves
 			i(32104),	-- Chancellor's Satin Hood
 			i(32105),	-- Chancellor's Satin Legs
@@ -501,7 +501,7 @@ _.NeverImplemented =
 			i(32110),	-- Chancellor's Silk Handguards
 			i(32111),	-- Chancellor's Silk Rainment
 			i(32112),	-- Chancellor's Silk Legs
-			i(104355),	-- Titan Rocket Boots-
+			i(104355),	-- Titan Rocket Boots
 			i(109303),	-- Unknown
 			i(109339),	-- Unknown
 			i(109340),	-- Unknown
@@ -596,26 +596,26 @@ _.NeverImplemented =
 				i(48796),	-- Runetotem's Legguards of Conquest
 				i(48797),	-- Runetotem's Raiments of Conquest
 				i(48798),	-- Runetotem's Shoulderpads of Conquest
-				i(32113),	-- Chancellor's Dragonhide gloves
-				i(32114),	-- Chancellor's Dragonhide helm
-				i(32115),	-- Chancellor's Dragonhide legguards
-				i(32116),	-- Chancellor's Dragonhide spaulders
-				i(32117),	-- Chancellor's Dragonhide tunic
-				i(32118),	-- Chancellor's kodohide gloves
-				i(32119),	-- Chancellor's kodohide helm
-				i(32120),	-- Chancellor's leather legguards
-				i(32121),	-- Chancellor's kodohide spaulders
-				i(32122),	-- Chancellor's kodohide legguards
-				i(32123),	-- Chancellor's kodohide tunic
-				i(32124),	-- Chancellor's leather gloves
-				i(32125),	-- Chancellor's leather helm
-				i(32126),	-- Chancellor's leather spaulders
-				i(32127),	-- Chancellor's leather tunic
-				i(32128),	-- Chancellor's wyrmhide glvoes
-				i(32129),	-- Chancellor's wyrmhide helm
-				i(32130),	-- Chancellor's wyrmhide legguards
-				i(32131),	-- Chancellor's wyrmhide spaulders
-				i(32132),	-- Chancellor's wyrmhide tunic
+				i(32113),	-- Chancellor's Dragonhide Gloves
+				i(32114),	-- Chancellor's Dragonhide Helm
+				i(32115),	-- Chancellor's Dragonhide Legguards
+				i(32116),	-- Chancellor's Dragonhide Spaulders
+				i(32117),	-- Chancellor's Dragonhide Tunic
+				i(32118),	-- Chancellor's Kodohide Gloves
+				i(32119),	-- Chancellor's Kodohide Helm
+				i(32120),	-- Chancellor's Leather Legguards
+				i(32121),	-- Chancellor's Kodohide Spaulders
+				i(32122),	-- Chancellor's Kodohide Legguards
+				i(32123),	-- Chancellor's Kodohide Tunic
+				i(32124),	-- Chancellor's Leather Gloves
+				i(32125),	-- Chancellor's Leather Helm
+				i(32126),	-- Chancellor's Leather Spaulders
+				i(32127),	-- Chancellor's Leather Tunic
+				i(32128),	-- Chancellor's Wyrmhide gloves
+				i(32129),	-- Chancellor's Wyrmhide Helm
+				i(32130),	-- Chancellor's Wyrmhide Legguards
+				i(32131),	-- Chancellor's Wyrmhide Spaulders
+				i(32132),	-- Chancellor's Wyrmhide Tunic
 				-- Unused T0 Replica
 				i(78068),	-- Replica Wildheart Belt
 				i(78067),	-- Replica Wildheart Boots
@@ -763,14 +763,14 @@ _.NeverImplemented =
 			i(166951),	-- Dread Gladiator's Leather Spaulders
 			i(166952),	-- Dread Gladiator's Leather Belt
 			i(166953),	-- Dread Gladiator's Leather Bindings
-			i(166915),	-- Dread Gladiator's leather tunic
-			i(166916),	-- Dread Gladiator's leather boots
-			i(166917),	-- Dread Gladiator's leather gloves
-			i(166918),	-- Dread Gladiator's leather helm
-			i(166919),	-- Dread Gladiator's leather legguards
-			i(166920),	-- Dread Gladiator's leather spaulders
-			i(166921),	-- Dread Gladiator's leather belt
-			i(166922),	-- Dread Gladiator's leather bindings
+			i(166915),	-- Dread Gladiator's Leather Tunic
+			i(166916),	-- Dread Gladiator's Leather Boots
+			i(166917),	-- Dread Gladiator's Leather Gloves
+			i(166918),	-- Dread Gladiator's Leather Helm
+			i(166919),	-- Dread Gladiator's Leather Legguards
+			i(166920),	-- Dread Gladiator's Leather Spaulders
+			i(166921),	-- Dread Gladiator's Leather Belt
+			i(166922),	-- Dread Gladiator's Leather Bindings
 			i(163436),	-- Honorbound Outrider's Faceguard
 			i(163433),	-- Honorbound Outrider's Mantle
 			i(163440),	-- Honorbound Outrider's Belt
@@ -778,9 +778,9 @@ _.NeverImplemented =
 			i(54708),	-- Ceremonial Leather Gloves
 			i(54666),	-- Ceremonial Leather Harness
 			i(37176),	-- Cavern Leather Treads
-			i(30288),	-- Cenarion wardens gloves
+			i(30288),	-- Cenarion Warden's Gloves
 			i(54698),	-- Ceremonial Leather Loincloth
-			i(166403),	-- Flaskzertauren's Leather Vest#
+			i(166403),	-- Flaskzertauren's Leather Vest
 			i(166404),	-- Flaskzertaurens Leather Tunic
 			i(5821),		-- Darkstalker Boots (Leather)
 			i(54683),	-- Dusky Leather Armor
@@ -843,43 +843,43 @@ _.NeverImplemented =
 			i(109349),	-- Unknown
 			i(20524),	-- Shadowhide Leggings (Leather)
 			i(54655),	-- Stormshroud Armor (Leather)
-			i(157693),	-- asceitcs helm
+			i(157693),	-- Ascetic's Helm
 			i(54681),	-- Thick Murloc Armor
 			i(28145),	-- Tranquillien Wraps (Leather)
 			i(54727),	-- Traveler's Boots
-			i(54543),	-- Orca tooth treads
-			i(60584),	-- Vicious Gladiator's boots of dominance
-			i(60585),	-- Vicious Gladiator's armwraps of dominance
-			i(60588),	-- Vicious Gladiator's armwraps of triump
-			i(60590),	-- Vicious Gladiator's boots of triumph
-			i(60592),	-- Vicious Gladiator's belt of triumph
-			i(60595),	-- Vicious Gladiator's belt of triumph
-			i(60596),	-- Vicious Gladiator's boots of triumph
-			i(60597),	-- Vicious Gladiator's armwraps of triumph
-			i(60598),	-- Vicious Gladiator's armwraps of triumph
-			i(60599),	-- Vicious Gladiator's boots of triumph
-			i(60600),	-- Vicious Gladiator's belt of triumph
-			i(60606),	-- Vicious Gladiator's belt of dominance
-			i(60608),	-- Vicious Gladiator's armwraps of dominance
-			i(60609),	-- Vicious Gladiator's belt of dominance
-			i(60610),	-- Vicious Gladiator's boots of dominance
-			i(54649),	-- Unknown
-			i(54650),	-- Unknown
-			i(80946),	-- peacebreaker's leather helm
-			i(80950),	-- peacebreaker's hide helm
-			i(54652),	-- Unknown
-			i(54658),	-- Unknown
-			i(54665),	-- Unknown
-			i(54689),	-- Unknown
-			i(54692),	-- Unknown
-			i(54695),	-- Unknown
-			i(54707),	-- Unknown
-			i(54716),	-- Unknown
-			i(54726),	-- Unknown
-			i(54667),	-- Unknown
+			i(54543),	-- Orca-Tooth Treads
+			i(60584),	-- Vicious Gladiator's Boots of Dominance
+			i(60585),	-- Vicious Gladiator's Armwraps of Dominance
+			i(60588),	-- Vicious Gladiator's Armwraps of Triumph
+			i(60590),	-- Vicious Gladiator's Boots of Triumph
+			i(60592),	-- Vicious Gladiator's Belt of Triumph
+			i(60595),	-- Vicious Gladiator's Belt of Triumph
+			i(60596),	-- Vicious Gladiator's Boots of Triumph
+			i(60597),	-- Vicious Gladiator's Armwraps of Triumph
+			i(60598),	-- Vicious Gladiator's Armwraps of Triumph
+			i(60599),	-- Vicious Gladiator's Boots of Triumph
+			i(60600),	-- Vicious Gladiator's Belt of Triumph
+			i(60606),	-- Vicious Gladiator's Belt of Dominance
+			i(60608),	-- Vicious Gladiator's Armwraps of Dominance
+			i(60609),	-- Vicious Gladiator's Belt of Dominance
+			i(60610),	-- Vicious Gladiator's Boots of Dominance
+			i(54649),	-- Cow King's Hide
+			i(54650),	-- Forest's Embrace
+			i(80946),	-- Peacebreaker's Leather Helm
+			i(80950),	-- Peacebreaker's Hide Helm
+			i(54652),	-- Righteous Armor
+			i(54658),	-- Lionfur Armor
+			i(54665),	-- Jessera's Fungus Lined Vest
+			i(54689),	-- Marshwarden's Tunic
+			i(54692),	-- Armor of Thero-Shan
+			i(54695),	-- Surveyor's Tunic
+			i(54707),	-- Researcher's Gloves
+			i(54716),	-- Juicy Bracers
+			i(54726),	-- Clouddrift Mantle
+			i(54667),	-- Vest of the Dragon Slayer
 			i(54731),	-- Unknown
-			i(107203),	-- Unknown
-			i(107337),	-- Unknown
+			i(107203),	-- Lasso Bracers, Powerup
+			i(107337),	-- Practice Power Bracers
 			i(107866),	-- Unknown
 			i(107871),	-- Unknown
 			i(107874),	-- Unknown
@@ -887,12 +887,12 @@ _.NeverImplemented =
 			i(107881),	-- Unknown
 			i(107884),	-- Unknown
 			i(107887),	-- Unknown
-			i(54668),	-- Unknown
-			i(54670),	-- Unknown
-			i(54671),	-- Unknown
-			i(54673),	-- Unknown
-			i(54677),	-- Unknown
-			i(54680),	-- Unknown
+			i(54668),	-- Murloc Scale Breastplate
+			i(54670),	-- Hillman's Leather Vest
+			i(54671),	-- Starsight Tunic
+			i(54673),	-- Barkshell Tunic
+			i(54677),	-- Raptorbane Armor
+			i(54680),	-- Raptor Hide Harness
 			i(41757),	-- Vest of Unyielding Companionship (was in Wrath beta)
 			i(26029),	-- Watchman's Bracers
 			i(54711),	-- Wendigo Collar
@@ -1091,30 +1091,30 @@ _.NeverImplemented =
 				i(96325),	-- Kilt of the Witch Doctor
 				i(96326),	-- Shoulderwraps of the Witch Doctor
 				-- Not added boosted Gear
-				i(122010),	-- Stormseeker vest
-				i(122012),	-- Stormseeker sabatons
-				i(122013),	-- Stormseeker grips
-				i(122014),	-- Stormseeker coowl
-				i(122027),	-- Stormseeker legigngs
-				i(122029),	-- Stormseeker spaulders
-				i(122030),	-- Stormseeker girdle
-				i(122031),	-- Stormseeker bracers
-				i(123336),	-- Stormseeker vest
-				i(123337),	-- Stormseeker sabatons
-				i(123338),	-- Stormseeker grips
-				i(123339),	-- Stormseeker cowl
-				i(123340),	-- Stormseeker leggings
-				i(123341),	-- Stormseeker spaulders
-				i(123342),	-- Stormseeker girdle
-				i(123343),	-- Stormseeker bracers
-				i(123344),	-- Stormseeker vest
-				i(123345),	-- Stormseeker sabatons
-				i(123346),	-- Stormseeker grips
-				i(123347),	-- Stormseeker cowl
-				i(123348),	-- Stormseeker legigngs
-				i(123349),	-- Stormseeker spaulders
-				i(123350),	-- Stormseeker gordöe
-				i(123351),	-- Stormseeker bracers
+				i(122010),	-- Stormseeker Vest
+				i(122012),	-- Stormseeker Sabatons
+				i(122013),	-- Stormseeker Grips
+				i(122014),	-- Stormseeker Cowl
+				i(122027),	-- Stormseeker Leggings
+				i(122029),	-- Stormseeker Spaulders
+				i(122030),	-- Stormseeker Girdle
+				i(122031),	-- Stormseeker Bracers
+				i(123336),	-- Stormseeker Vest
+				i(123337),	-- Stormseeker Sabatons
+				i(123338),	-- Stormseeker Grips
+				i(123339),	-- Stormseeker Cowl
+				i(123340),	-- Stormseeker Leggings
+				i(123341),	-- Stormseeker Spaulders
+				i(123342),	-- Stormseeker Girdle
+				i(123343),	-- Stormseeker Bracers
+				i(123344),	-- Stormseeker Vest
+				i(123345),	-- Stormseeker Sabatons
+				i(123346),	-- Stormseeker Grips
+				i(123347),	-- Stormseeker Cowl
+				i(123348),	-- Stormseeker Leggings
+				i(123349),	-- Stormseeker Spaulders
+				i(123350),	-- Stormseeker Girdle
+				i(123351),	-- Stormseeker Bracers
 			}),
 			cl(HUNTER, {
 				i(32133),	-- Chancellor's Chain Armor
@@ -1146,11 +1146,11 @@ _.NeverImplemented =
 				i(64989),	-- Gladiator's Chain Leggings
 				i(64988),	-- Gladiator's Chain Spaulders
 				i(46274),	-- Scourgestalker Headpiece
-				i(51707),	-- Ahn'kahar Blood Hunter's tunic
-				i(51708),	-- Ahn'kahar Blood Hunter's spaulders
-				i(51709),	-- Ahn'kahar Blood Hunter's legguards
-				i(51710),	-- Ahn'kahar Blood Hunter's headpiece
-				i(51711),	-- Ahn'kahar Blood Hunter's handguards
+				i(51707),	-- Ahn'kahar Blood Hunter's Tunic
+				i(51708),	-- Ahn'kahar Blood Hunter's Spaulders
+				i(51709),	-- Ahn'kahar Blood Hunter's Legguards
+				i(51710),	-- Ahn'kahar Blood Hunter's Headpiece
+				i(51711),	-- Ahn'kahar Blood Hunter's Handguards
 				i(48814),	-- Windrunner's Handguards of Conquest
 				i(48815),	-- Windrunner's Headpiece of Conquest
 				i(48816),	-- Windrunner's Legguards of Conquest
@@ -1242,29 +1242,29 @@ _.NeverImplemented =
 			i(92843),	-- Danio-Scale Legguards
 			i(92844),	-- Danio-Scale Spaulders
 			i(92845),	-- Danio-Scale Vest
-			i(154952),	-- saurscale wristgaurds
-			i(154953),	-- saurscale göpves
-			i(154954),	-- saurscale leggings
-			i(154955),	-- saurscale coif
-			i(154956),	-- saurscale boots
-			i(154957),	-- saurscale girdle
-			i(154958),	-- saurscale chestguard
-			i(154959),	-- saurscale spaulders
-			i(158484),	-- aiguille-scaler's wristguards
-			i(158485),	-- aiguille-scaler's gloves
-			i(158486),	-- aiguille-scaler's leggings
-			i(158487),	-- aiguille-scaler's coif
-			i(158488),	-- aiguille-scaler's boots
-			i(158489),	-- aiguille-scaler's girdle
-			i(158490),	-- aiguille-scaler's chestguard
-			i(158491),	-- aiguille-scaler's spaulders
-			i(93057),	-- stormshaper vest
-			i(93058),	-- stormshaper greaves
-			i(93059),	-- stormshaper gauntlets
-			i(93061),	-- stormshaper legguards
-			i(93062),	-- stormshaper spualders
-			i(93063),	-- stormshaper belt
-			i(93064),	-- stormshaper brarcers
+			i(154952),	-- Saurscale Wristguards
+			i(154953),	-- Saurscale Gloves
+			i(154954),	-- Saurscale Leggings
+			i(154955),	-- Saurscale Coif
+			i(154956),	-- Saurscale Boots
+			i(154957),	-- Saurscale Girdle
+			i(154958),	-- Saurscale Chestguard
+			i(154959),	-- Saurscale Spaulders
+			i(158484),	-- Aiguille-Scaler's Wristguards
+			i(158485),	-- Aiguille-Scaler's Gloves
+			i(158486),	-- Aiguille-Scaler's Leggings
+			i(158487),	-- Aiguille-Scaler's Coif
+			i(158488),	-- Aiguille-Scaler's Boots
+			i(158489),	-- Aiguille-Scaler's Girdle
+			i(158490),	-- Aiguille-Scaler's Chestguard
+			i(158491),	-- Aiguille-Scaler's Spaulders
+			i(93057),	-- Stormshaper Vest
+			i(93058),	-- Stormshaper Greaves
+			i(93059),	-- Stormshaper Gauntlets
+			i(93061),	-- Stormshaper Legguards
+			i(93062),	-- Stormshaper Spaulders
+			i(93063),	-- Stormshaper Belt
+			i(93064),	-- Stormshaper brarcers
 			i(109488),	-- unknown
 			i(109504),	-- unknown
 			i(109510),	-- unknown
@@ -1272,36 +1272,36 @@ _.NeverImplemented =
 			i(109541),	-- unknown
 			i(109543),	-- unknown
 			i(109548),	-- unknown
-			i(178268),	-- Sinful Aspirant's Chain tunic
-			i(178272),	-- Sinful Aspirant's Chain stompers
-			i(178277),	-- Sinful Aspirant's Chain handguards
-			i(178279),	-- Sinful Aspirant's Chain headguard
+			i(178268),	-- Sinful Aspirant's Chain Tunic
+			i(178272),	-- Sinful Aspirant's Chain Stompers
+			i(178277),	-- Sinful Aspirant's Chain Handguards
+			i(178279),	-- Sinful Aspirant's Chain Headguard
 			i(178283),	-- Sinful Aspirant's Chain Wargreaves
-			i(178288),	-- Sinful Aspirant's Chain shoulderguards
-			i(178291),	-- Sinful Aspirant's Chain clasp
-			i(178296),	-- Sinful Aspirant's Chain bracer
-			i(178308),	-- Sinful Aspirant's Chain footguards
-			i(178313),	-- Sinful Aspirant's Chain grips
-			i(178315),	-- Sinful Aspirant's Chain helmet
-			i(178319),	-- Sinful Aspirant's Chain breeches
-			i(178324),	-- Sinful Aspirant's Chain monnion
-			i(178327),	-- Sinful Aspirant's Chain buckle
-			i(178332),	-- Sinful Aspirant's Chain coils
-			i(158536),	-- saurscale wristguards
-			i(158537),	-- saurscale gloves
-			i(158538),	-- saurscale leggings
-			i(158539),	-- saurscale coif
-			i(158540),	-- saurscale boosts
-			i(158541),	-- saurscale girdle
-			i(158542),	-- saurscale chestguard
-			i(97076),	-- scalehide spures
-			i(97083),	-- spiritbound boots
-			i(97088),	-- abandoned zandalari arrowlinks
-			i(97089),	-- abandoned zandalari waterchain
-			i(163392),	-- 7th legionnaires vestments
-			i(163393),	-- 7th legionnaires raiment
-			i(163443),	-- honorbound vanguard's vestments
-			i(163450),	-- honorbound vanguard's raiment
+			i(178288),	-- Sinful Aspirant's Chain Shoulderguards
+			i(178291),	-- Sinful Aspirant's Chain Clasp
+			i(178296),	-- Sinful Aspirant's Chain Bracer
+			i(178308),	-- Sinful Aspirant's Chain Footguards
+			i(178313),	-- Sinful Aspirant's Chain Grips
+			i(178315),	-- Sinful Aspirant's Chain Helmet
+			i(178319),	-- Sinful Aspirant's Chain Breeches
+			i(178324),	-- Sinful Aspirant's Chain Monnion
+			i(178327),	-- Sinful Aspirant's Chain Buckle
+			i(178332),	-- Sinful Aspirant's Chain Coils
+			i(158536),	-- Saurscale Wristguards
+			i(158537),	-- Saurscale Gloves
+			i(158538),	-- Saurscale Leggings
+			i(158539),	-- Saurscale Coif
+			i(158540),	-- Saurscale Boots
+			i(158541),	-- Saurscale Girdle
+			i(158542),	-- Saurscale Chestguard
+			i(97076),	-- Scalehide Spurs
+			i(97083),	-- Spiritbound Boots
+			i(97088),	-- Abandoned Zandalari Arrowlinks
+			i(97089),	-- Abandoned Zandalari Waterchain
+			i(163392),	-- 7th Legionnaire's Vestments
+			i(163393),	-- 7th Legionnaire's Raiment
+			i(163443),	-- Honorbound Vanguard's Vestments
+			i(163450),	-- Honorbound Vanguard's Raiment
 			i(163396),	-- 7th Legionnaire's Skullcap
 			i(163390),	-- 7th Legionnaire's Spaulders
 			i(163402),	-- 7th Legionnaire's Chain Belt
@@ -1320,14 +1320,14 @@ _.NeverImplemented =
 			i(62720),	-- Unknown
 			i(62721),	-- Unknown
 			i(62722),	-- Unknown
-			i(153381),	-- aiguille-Scaler's wristguards
-			i(153382),	-- aiguille-Scaler's gloves
-			i(153383),	-- aiguille-Scaler's leggings
-			i(153384),	-- aiguille-Scaler's coif
-			i(153385),	-- aiguille-Scaler's boosts
-			i(153386),	-- aiguille-Scaler's girdle
-			i(153387),	-- aiguille-Scaler's chestguard
-			i(153388),	-- aiguille-Scaler's spaulders
+			i(153381),	-- Aiguille-Scaler's Wristguards
+			i(153382),	-- Aiguille-Scaler's Gloves
+			i(153383),	-- Aiguille-Scaler's Leggings
+			i(153384),	-- Aiguille-Scaler's Coif
+			i(153385),	-- Aiguille-Scaler's Boots
+			i(153386),	-- Aiguille-Scaler's Girdle
+			i(153387),	-- Aiguille-Scaler's Chestguard
+			i(153388),	-- Aiguille-Scaler's Spaulders
 			i(54551),	-- Unknown
 			i(56492),	-- Unknown
 			i(65744),	-- Unknown
@@ -1339,7 +1339,7 @@ _.NeverImplemented =
 			i(56506),	-- Unknown
 			i(56510),	-- Unknown
 			i(106166),	-- Frostwolf Ringmail Armor (Beta only, was reward from https://www.wowhead.com/quest=32985/fury-of-frostfire)
-			i(30289),	-- Cenarion warden's belt
+			i(30289),	-- Cenarion Warden's Belt
 			i(106178),	-- Rangari Initiate Wristwraps (Beta only)
 			i(68844),	-- Unknown
 			i(38527),	-- Onslaught Scaemail haubberk
@@ -1347,16 +1347,16 @@ _.NeverImplemented =
 			i(41758),	-- Blood-Bond Helm
 			i(42886),	-- Gloves of the Howling Peaks
 			i(109265),	-- Unknown
-			i(43460),	-- Giantmaim girdle
+			i(43460),	-- Giantmaim Girdle
 			i(46273),	-- Scourgestalker Handguards
-			i(46275),	-- Scourgestalker legguards
-			i(46276),	-- Scourgestalker spaulders
-			i(46277),	-- Scourgestalker tunic
+			i(46275),	-- Scourgestalker Legguards
+			i(46276),	-- Scourgestalker Spaulders
+			i(46277),	-- Scourgestalker Tunic
 			i(109270),	-- Unknown
 			i(43936),	-- Battlesurgeons Gauntlets
 			i(54549),	-- Saline-Soaked Spaulders
-			i(80987),	-- Scavenger's chain spaulders
-			i(80991),	-- Scavenger's ringmail spaulders
+			i(80987),	-- Scavenger's Chain Spaulders
+			i(80991),	-- Scavenger's Ringmail Spaulders
 			i(56485),	-- Windbound Bracers
 			i(109416),	-- Unknown
 			i(109425),	-- Unknown
@@ -1384,24 +1384,24 @@ _.NeverImplemented =
 			i(109382),	-- Unknown
 			i(109393),	-- Unknown
 			i(109396),	-- Unknown
-			i(71570),	-- Bracers of forked lightning
+			i(71570),	-- Bracers of Forked Lightning
 			i(109316),	-- Unknown
 			i(109317),	-- Unknown
 			i(109318),	-- Unknown
 			i(109350),	-- Unknown
-			i(43475),	-- Grips of the chilling revenant
+			i(43475),	-- Grips of the Chilling Revenant
 			i(109351),	-- Unknown
 			i(109352),	-- Unknown
 			i(109353),	-- Unknown
 			i(109354),	-- Unknown
-			i(114249),	-- Leafscale bracers
-			i(114252),	-- Leafscale chestguard
-			i(114257),	-- Leafscale boots
-			i(114261),	-- Leafscale gauntlets
-			i(114265),	-- Leafscale helm
-			i(114269),	-- Leafscale legguards
-			i(114273),	-- Leafscale spaulders
-			i(114277),	-- Leafscale belt
+			i(114249),	-- Leafscale Bracers
+			i(114252),	-- Leafscale Chestguard
+			i(114257),	-- Leafscale Boots
+			i(114261),	-- Leafscale Gauntlets
+			i(114265),	-- Leafscale Helm
+			i(114269),	-- Leafscale Legguards
+			i(114273),	-- Leafscale Spaulders
+			i(114277),	-- Leafscale Belt
 			i(37433),	-- Layered Scale Boots
 			i(37444),	-- Wavekeeper's Helm
 			i(13090),	-- Breastplate of the Chosen
@@ -1450,14 +1450,14 @@ _.NeverImplemented =
 				i(48894),	-- Koltira's Pauldrons of Conquest
 				i(157677),	-- Hearthbonded Helm (Hunter Future Boost Gear)
 				i(157679),	-- Hearthbonded Spaulders (Hunter Future Boost Gear)
-				i(119485),	-- Heart-Lesion chestguard
-				i(119487),	-- Heart-Lesion greaves
-				i(119488),	-- Heart-Lesion handguards
-				i(119489),	-- Heart-Lesion faceguard
-				i(119490),	-- Heart-Lesion legguards
-				i(119496),	-- Heart-Lesion shouldersguards
-				i(119497),	-- Heart-Lesion waistband
-				i(119498),	-- Heart-Lesion armguards
+				i(119485),	-- Heart-Lesion Chestguard
+				i(119487),	-- Heart-Lesion Greaves
+				i(119488),	-- Heart-Lesion Handguards
+				i(119489),	-- Heart-Lesion Faceguard
+				i(119490),	-- Heart-Lesion Legguards
+				i(119496),	-- Heart-Lesion Shoulderguards
+				i(119497),	-- Heart-Lesion Waistband
+				i(119498),	-- Heart-Lesion Armguards
 				i(157618),	-- Unholy Runeblade
 				i(157646),	-- Bloodcaked Runeblade
 				i(157658),	-- Heart-Lesion Breastplate
@@ -1571,28 +1571,28 @@ _.NeverImplemented =
 				i(48873),	-- Hellscream's Legguards of Conquest
 				i(48874),	-- Hellscream's Pauldrons of Conquest
 				i(154041),	-- Oathsworn Faceguard
-				i(46278),	-- Siegebreaker battleplate
-				i(46279),	-- Siegebreaker breastplate
-				i(46280),	-- Siegebreaker gauntlets
-				i(46281),	-- Siegebreaker greathelm
-				i(46282),	-- Siegebreaker helmet
-				i(46283),	-- Siegebreaker handguards
-				i(46284),	-- Siegebreaker legguards
-				i(46285),	-- Siegebreaker legplates
-				i(46286),	-- Siegebreaker pauldrons
-				i(46287),	-- Siegebreaker shoulderplates
-				i(48865),	-- Wyrnn's battleplate
-				i(48866),	-- Wyrnn's gaimtöets
-				i(48867),	-- Wyrnn's helmet
-				i(48868),	-- Wyrnn's legplates
-				i(48869),	-- Wyrnn's shoulderplate
-				i(48875),	-- Wyrnn's breastplate
-				i(48876),	-- Wyrnn's greathelm
-				i(48877),	-- Wyrnn's handguards
-				i(48878),	-- Wyrnn's legguards
-				i(48879),	-- Wyrnn's pauldrons
-				i(48895),	-- thassarians chestguard
-				i(48899),	-- thassarians pauldrons
+				i(46278),	-- Siegebreaker Battleplate
+				i(46279),	-- Siegebreaker Breastplate
+				i(46280),	-- Siegebreaker Gauntlets
+				i(46281),	-- Siegebreaker Greathelm
+				i(46282),	-- Siegebreaker Helmet
+				i(46283),	-- Siegebreaker Handguards
+				i(46284),	-- Siegebreaker Legguards
+				i(46285),	-- Siegebreaker Legplates
+				i(46286),	-- Siegebreaker Pauldrons
+				i(46287),	-- Siegebreaker Shoulderplates
+				i(48865),	-- Wyrnn's Battleplate
+				i(48866),	-- Wyrnn's Gauntlets
+				i(48867),	-- Wyrnn's Helmet
+				i(48868),	-- Wyrnn's Legplates
+				i(48869),	-- Wyrnn's Shoulderplates
+				i(48875),	-- Wyrnn's Breastplate
+				i(48876),	-- Wyrnn's Greathelm
+				i(48877),	-- Wyrnn's Handguards
+				i(48878),	-- Wyrnn's Legguards
+				i(48879),	-- Wyrnn's Pauldrons
+				i(48895),	-- Thassarian's Chestguard
+				i(48899),	-- Thassarian's Pauldrons
 				i(157741),	-- Warsinger's Helm
 				i(157743),	-- Warsinger's  Pauldrons
 				-- Unused T0 Replica
@@ -1653,10 +1653,10 @@ _.NeverImplemented =
 			i(59768),	-- unknown
 			i(59772),	-- unknown
 			i(65743),	-- unknown
-			i(166400),	-- flaskzertaurens plate chestguards
-			i(166401),	-- flaskzertaurens plate cuirass
-			i(166411),	-- flaskzertaurens plate shoulderguards
-			i(166412),	-- flaskzertaurens plate pauldrons
+			i(166400),	-- Flaskzertauren's Plate Chestguard
+			i(166401),	-- Flaskzertauren's Plate Cuirass
+			i(166411),	-- Flaskzertauren's Plate Shoulderguards
+			i(166412),	-- Flaskzertauren's Plate Pauldrons
 			i(27718),	-- Aldor Defender's Legplates
 			i(12106),	-- Boulderskin Breastplate
 			i(107877),	-- unknown
@@ -1719,30 +1719,30 @@ _.NeverImplemented =
 			i(37485),	-- Clam Collector Gauntlets
 			i(37510),	-- Wristguards of Edification
 			i(37511),	-- Crucible Waistguard
-			i(80952),	-- Peacebreaker's burnished headcorver
-			i(80953),	-- Peacebreaker's armored helm
-			i(80954),	-- Peacebreaker's heavy helm
+			i(80952),	-- Peacebreaker's Burnished Headcover
+			i(80953),	-- Peacebreaker's Armored Helm
+			i(80954),	-- Peacebreaker's Heavy Helm
 			i(38524),	-- Carapace of the Scarlet Commander
-			i(32163),	-- Chancellor's PlateChestpiece
+			i(32163),	-- Chancellor's Plate Chestpiece
 			i(32164),	-- Chancellor's Plate Handguards
 			i(32165),	-- Chancellor's Plate Helm
 			i(32166),	-- Chancellor's Plate Legguards
 			i(32167),	-- Chancellor's Plate Shoulders
-			i(32168),	-- Chancellor's ScaledChestpiece
+			i(32168),	-- Chancellor's Scaled Chestpiece
 			i(32169),	-- Chancellor's Scaled Handguards
 			i(32170),	-- Chancellor's Scaled Helm
-			i(32171),	-- Chancellor's Scaled shoulders
+			i(32171),	-- Chancellor's Scaled Shoulders
 			i(32172),	-- Chancellor's Scaled Spaulders
 			i(46213),	-- Aegis Battleplate
-			i(46214),	-- Aegis breastplate
-			i(46215),	-- Aegis faceguard
-			i(46216),	-- Aegis gauntlets
-			i(46217),	-- Aegis gloves
-			i(46218),	-- Aegis greaves
-			i(46219),	-- Aegis handguards
-			i(46220),	-- Aegis headpiece
-			i(46221),	-- Aegis helm
-			i(46222),	-- Aegis legguards
+			i(46214),	-- Aegis Breastplate
+			i(46215),	-- Aegis Faceguard
+			i(46216),	-- Aegis Gauntlets
+			i(46217),	-- Aegis Gloves
+			i(46218),	-- Aegis Greaves
+			i(46219),	-- Aegis Handguards
+			i(46220),	-- Aegis Headpiece
+			i(46221),	-- Aegis Helm
+			i(46222),	-- Aegis Legguards
 			i(5822),		-- Hedgeseed Gauntlets
 			i(26041),	-- Vigilant Vambraces
 			i(21587),	-- Wristguards of Castigation (never made it off test)
@@ -1912,10 +1912,10 @@ _.NeverImplemented =
 			i(142504), 	-- Hidden Tabard
 			i(134112), 	-- Hidden Shoulder
 			i(143539), 	-- Hidden Belt
-			i(168659), 	-- Hidden chestpiece
-			i(168664), 	-- Hidden boots
-			i(168665), 	-- Hidden bracers
-			i(48945),	-- Gnomish THinking Cap (Mind Amplification Disk was added for it)
+			i(168659), 	-- Hidden Chestpiece
+			i(168664), 	-- Hidden Boots
+			i(168665), 	-- Hidden Bracers
+			i(48945),	-- Gnomish Thinking Cap (Mind Amplification Disk was added for it)
 			i(158329), 	-- Hidden Gloves
 			i(116399),	-- Emerald Sunglasses
 			i(162638), 	-- Wooden Toy Helm (used from Winter Veil 2018 Toy, but its just used to attach the look to you, you actually never get the item)
@@ -1946,17 +1946,17 @@ _.NeverImplemented =
 			i(157750),	-- Pendant of Good Fortune
 			i(23058),	-- Life Channeling Necklace
 			i(28043),	-- Demon Stalker Pendant
-			i(81049),	-- Scavenger's necklace
-			i(81050),	-- Scavenger's choker
-			i(81051),	-- Scavenger's locket
-			i(81052),	-- Scavenger's amulet
-			i(81053),	-- Scavenger's pendant
+			i(81049),	-- Scavenger's Necklace
+			i(81050),	-- Scavenger's Choker
+			i(81051),	-- Scavenger's Locket
+			i(81052),	-- Scavenger's Amulet
+			i(81053),	-- Scavenger's Pendant
 			i(60666), 	-- Vicious Gladiator's Pendant of Conquest
 			i(108812),	-- Unknown
 			i(108818),	-- Unknown
 			i(108819),	-- Unknown
 			i(109267),	-- Unknown
-			i(33197),	-- Mossy necklace
+			i(33197),	-- Mossy Necklace
 			i(153484),	-- Fierce Combatant's Necklace
 			i(109293),	-- Unknown
 			i(109295),	-- Unknown
@@ -1998,25 +1998,25 @@ _.NeverImplemented =
 			i(17000),	-- Band of the Wraith
 			i(17108),	-- Mark of Deflection
 			i(173421),	-- Black Empire Signet
-			i(33097),	-- Unknown
-			i(33193),	-- Unknown
-			i(33194),	-- Unknown
-			i(33195),	-- Unknown
+			i(33097),	-- Mushroom Ring
+			i(33193),	-- Mossy Band
+			i(33194),	-- Ancient Ceremonial Band
+			i(33195),	-- Cracked Stone Band
 			i(167135),	-- Unknown
 			i(167136),	-- Unknown
-			i(33196),	-- Unknown
+			i(33196),	-- Softly-Glowing Ring
 			i(13812),	-- Ring of the Dawn
-			i(80955),	-- scavenger's loop
-			i(80956),	-- scavenger's ring
-			i(80957),	-- scavenger's band
-			i(80958),	-- scavenger's seal
-			i(80959),	-- scavenger's signet
-			i(109391),	-- unknown
+			i(80955),	-- Scavenger's Loop
+			i(80956),	-- Scavenger's Ring
+			i(80957),	-- Scavenger's Band
+			i(80958),	-- Scavenger's Seal
+			i(80959),	-- Scavenger's Signet
+			i(109391),	-- 6.0 QA Combat Test Agility DPS Ring 2
 			i(110704),	-- unknown
-			i(108813),	-- Unknown
-			i(108820),	-- Unknown
-			i(108821),	-- Unknown
-			i(109277),	-- Unknown
+			i(108813),	-- 6.0 PH Ring Agi
+			i(108820),	-- 6.0 PH Ring Str
+			i(108821),	-- 6.0 PH Ring Int
+			i(109277),	-- 7.0 QA Combat Test Ring 1
 			i(157748),	-- Simple Golden Ring
 			i(157749),	-- Ornate Silver Loop
 			i(174050),	-- Corrupted Ring - revel in violence
@@ -2297,7 +2297,7 @@ _.NeverImplemented =
 		i(78892),	-- Perfect Geode (PTR Only)
 		i(31503),	-- Unknown
 		i(107474),	-- ph6 engorged innards
-		i(103535),	-- Bulging Bag of Charms (was planned for asia store
+		i(103535),	-- Bulging Bag of Charms (was planned for asia store)
 		i(31507),	-- Unknown
 		i(36963),	-- Unknown
 		i(90568),	-- Unknown
@@ -2726,7 +2726,7 @@ _.NeverImplemented =
 			i(35555, {	-- Plans: Sunblessed Breastplate
 				["spellID"] = 0,
 			}),
-			
+
 			-- Cataclysm
 			{	-- Plans: Cold-Forged Shank
 				["itemID"] = 66095,	-- Plans: Cold-Forged Shank
@@ -3809,17 +3809,17 @@ _.NeverImplemented =
 	n(-173, {	-- Timewalking
 		-- Possible TW Gear (not in journal)
 		i(150450),	-- Nether Shadow Tunic
-		i(150448),	-- pauldrons of abyssal fury
-		i(150461),	-- praetorians legguards
-		i(150465),	-- myrmidons treads
-		i(150472),	-- grips of silent justice
-		i(150449),	-- wraps of precise flight
-		i(150457),	-- bands of the coming storm
-		i(150502),	-- touch of inspiration
-		i(150458),	-- choker of endless nightmares
-		i(150501),	-- translucent spellthread necklace
-		i(150508),	-- pendant of titans
-		i(150515),	-- nadina's pendant of purity
+		i(150448),	-- Pauldrons of Abyssal Fury
+		i(150461),	-- Praetorian's Legguards
+		i(150465),	-- Myrmidon's Treads
+		i(150472),	-- Grips of Silent Justice
+		i(150449),	-- Wraps of Precise Flight
+		i(150457),	-- Bands of the Coming Storm
+		i(150502),	-- Touch of Inspiration
+		i(150458),	-- Choker of Endless Nightmares
+		i(150501),	-- Translucent Spellthread Necklace
+		i(150508),	-- Pendant of Titans
+		i(150515),	-- Nadina's Pendant of Purity
 		i(166405),	-- Blindside (TW Vendor?)
 		i(166364),	-- Song of the Fallen (TW Vendor?)
 		i(161118),	-- Marrow Shatter (TW Vendor/Tw drop?)
@@ -3829,21 +3829,21 @@ _.NeverImplemented =
 			i(5748),	-- Centaur Longbow
 			i(108783),   	-- Unknown
 			i(167144),   	-- Unknown
-			i(154971),	-- howdah-riers bow
+			i(154971),	-- Howdah-Rider's Bow
 			i(115294),	-- Spectral Longbow
 			i(109283),   	-- 6.0 QA Combat Test Hunter Bow
 			i(140717),	-- Marksman Recurve Bow
 			i(150612),	-- Marksman Recurve Bow
-			i(91107),	-- Tyrannical Gladiator's longbow a s13
-			i(94303),	-- Tyrannical Gladiator's longbow h s13
-			i(99780),	-- Tyrannical Gladiator's longbow a s14
-			i(99964),	-- Tyrannical Gladiator's longbow h s14
+			i(91107),	-- Tyrannical Gladiator's Longbow a s13
+			i(94303),	-- Tyrannical Gladiator's Longbow h s13
+			i(99780),	-- Tyrannical Gladiator's Longbow a s14
+			i(99964),	-- Tyrannical Gladiator's Longbow h s14
 			i(158562),	-- Howdah-Rider's Bow
 			i(167141),	-- Unknown
 			i(177114),	-- [Honorbound Longbow]
 			i(177128),	-- [7th Legionnaire's Longbow]
 			i(178469),	--
-			i(64783),	-- Bloodthirsty Gladiator's Longbow(Epic BG item never made it out of beta)))
+			i(64783),	-- Bloodthirsty Gladiator's Longbow (Epic BG item never made it out of beta)))
 			i(111783),	-- Irontree Bow (Cata version 55306 is in game but this version doesn't seem to have ever existed)
 		}),
 		n(-346, {	-- Crossbows
@@ -3974,8 +3974,8 @@ _.NeverImplemented =
 			i(42523),	-- Savage Gladiator's Endgame
 			i(42529),	-- Savage Gladiator's Reprieve
 			i(42535),	-- Savage Gladiator's Grimoire
-			i(93440),	-- crafted dreadful gladiator's endgame
-			i(93450),	-- crafted dreadful gladiator's reprieve
+			i(93440),	-- Crafted Dreadful Gladiator's Endgame
+			i(93450),	-- Crafted Dreadful Gladiator's Reprieve
 			i(159941),	-- Unknown
 			i(153642),	-- Unknown
 			i(161933),	-- Unknown
@@ -4036,8 +4036,8 @@ _.NeverImplemented =
 			i(179553),	--
 			i(179554),	--
 			i(179555),	--
-			i(157629),	-- hammer of faith
-			i(163930),	-- Kovorks rattle
+			i(157629),	-- Hammer of Faith
+			i(163930),	-- Kovork's Rattle
 			i(109279),	-- Unknown
 			i(109383),	-- Unknown
 			i(109404),	-- Unknown
@@ -4051,27 +4051,27 @@ _.NeverImplemented =
 		n(-338, {	-- One-Handed Swords
 			i(134586),	-- Vanguard Hatchet
 			i(134755),	-- Covert Hatchet
-			i(140713),	-- Protectors 'axe
-			i(150608),	-- Protectors 'axe
+			i(140713),	-- Protector's Axe
+			i(150608),	-- Protector's Axe
 			i(18582),	-- The Twin Blades of Azzinoth
-			i(18583),	-- warglaves of azzinoth right
-			i(18584),	-- warglaves of azzinoth left
+			i(18583),	-- Warglaive of Azzinoth (Right)
+			i(18584),	-- Warglaive of Azzinoth (Left)
 			i(108803),	-- Unknown - was under Legion>1Handed Swords
 			i(108804),	-- Unknown - was under Legion>1Handed Swords
 			i(134562),	-- Odyns Fury
 			i(166889),	-- Unknown
 			i(134067),	-- Unknown
 			i(167143),	-- Unknown
-			i(157630),	-- Stalwart's longsword
+			i(157630),	-- Stalwart's Longsword
 			i(157647),	-- Frost-Etched Runeblade
 			i(43922),	-- Honed Lightblade
 			--i(134067),	-- Unknown
 			i(162447),	-- Marrow Render
 			i(158508),	-- Scalawag's Cutlass
-			i(158567),	-- Necropolis sentry sword
-			i(161305),	-- ashvane capatains shortsword
-			i(161308),	-- ashvane capatains quickblade
-			i(161309),	-- ashvane capatains gladius
+			i(158567),	-- Necropolis Sentry's Sword
+			i(161305),	-- Ashvane Captain's Shortsword
+			i(161308),	-- Ashvane Captain's Quickblade
+			i(161309),	-- Ashvane Captain's Gladius
 			i(93145),	-- Scavenged Pandaren Sword
 			i(64817),	-- Bloodthirsty Gladiator's Quickblade (Epic BG Item, never made it out of beta)
 			i(64858),	-- Bloodthirsty Gladiator's Slicer (Epic BG Item, never made it out of beta))
@@ -4141,10 +4141,10 @@ _.NeverImplemented =
 			i(109312),	-- Unknown
 			i(109476),	-- Unknown
 			i(109550),	-- Unknown
-			i(157653),	-- fatihful shield (Lv20 Start Gear?)
-			i(157654),	-- stalwarts bulwark (Lv20 Start Gear?)
-			i(157656),	-- raincallers shield (Lv20 Start Gear?)
-			i(157657),	-- foebreakers barrier (Lv20 Start Gear?)
+			i(157653),	-- Faithful Shield (Lv20 Start Gear?)
+			i(157654),	-- Stalwart's Bulwark (Lv20 Start Gear?)
+			i(157656),	-- Raincaller's Shield (Lv20 Start Gear?)
+			i(157657),	-- Foebreaker's Barrier (Lv20 Start Gear?)
 			i(34415),	-- Crystaline Shard Shield
 			i(54554),	-- Bejeweled Ship's Wheel
 			i(60220),	-- Unknown
@@ -4152,9 +4152,9 @@ _.NeverImplemented =
 			i(159815),	-- Unknown
 			i(165276),	-- Unknown
 			i(167140),	-- Unknown
-			i(93441),	-- crafted dreadful gladiator's barrier
-			i(93483),	-- crafted dreadful gladiator's redoubt
-			i(93614),	-- crafted dreadful gladiator's shield wall
+			i(93441),	-- Crafted Dreadful Gladiator's Barrier
+			i(93483),	-- Crafted Dreadful Gladiator's Redoubt
+			i(93614),	-- Crafted Dreadful Gladiator's Shield Wall
 		}),
 		n(-342, {	-- Staves
 			i(132474),	-- Unknown - was under Legion>Staves
@@ -4199,10 +4199,10 @@ _.NeverImplemented =
 			i(132479),	-- Unknown - was under Legion>Staves
 			i(132480),	-- Unknown - was under Legion>Staves
 			i(132481),	-- Unknown - was under Legion>Staves
-			i(140690),	-- Restorative ashwood staff
-			i(140702),	-- whispering staff of the void
-			i(150585),	-- restorative ashwood staff
-			i(150597),	-- whispering staff of the void
+			i(140690),	-- Restorative Ashwood Staff
+			i(140702),	-- whispering Staff of the void
+			i(150585),	-- restorative Ashwood Staff
+			i(150597),	-- whispering Staff of the void
 			i(132482),	-- Unknown - was under Legion>Staves
 			i(132483),	-- Unknown - was under Legion>Staves
 			i(134066),	-- Unknown - was under Legion>Staves
@@ -4325,9 +4325,9 @@ _.NeverImplemented =
 			i(109373),	-- 6.0 QA Combat Test Strength 2h Sword
 			i(122747),	-- Unknown
 			i(165274),	-- Unknown
-			i(122067),	-- inexorable greatsword
-			i(122067),	-- inexorable greatsword
-			i(129426),	-- heart-lesion greatsword
+			i(122067),	-- Inexorable Greatsword
+			i(122067),	-- Inexorable Greatsword
+			i(129426),	-- Heart-Lesion Greatsword
 		}),
 		n(-341, {	-- Wands
 			i(161924),	-- Seapriest's Wand (never addedd)
@@ -4397,17 +4397,17 @@ _.NeverImplemented =
 		i(84708),	-- Dreadful Gladiator's Shanker (blue)
 		i(84698),	-- Dreadful Gladiator's Slasher
 		i(84707),	-- Dreadful Gladiator's Decapitator
-		i(84700),	-- Dreadful Gladiator's pummeler
-		i(84719),	-- Dreadful Gladiator's bonecracker
-		i(84720),	-- Dreadful Gladiator's gavel
-		i(84701),	-- Dreadful Gladiator's cleaver
-		i(84702),	-- Dreadful Gladiator's hacker
-		i(84705),	-- Dreadful Gladiator's longbow
-		i(84706),	-- Dreadful Gladiator's rifle
-		i(84710),	-- Dreadful Gladiator's slicer
-		i(84716),	-- Dreadful Gladiator's quickblade
-		i(84717),	-- Dreadful Gladiator's greatsword
-		i(84721),	-- Dreadful Gladiator's bonegrinder
+		i(84700),	-- Dreadful Gladiator's Pummeler
+		i(84719),	-- Dreadful Gladiator's Bonecracker
+		i(84720),	-- Dreadful Gladiator's Gavel
+		i(84701),	-- Dreadful Gladiator's Cleaver
+		i(84702),	-- Dreadful Gladiator's Hacker
+		i(84705),	-- Dreadful Gladiator's Longbow
+		i(84706),	-- Dreadful Gladiator's Rifle
+		i(84710),	-- Dreadful Gladiator's Slicer
+		i(84716),	-- Dreadful Gladiator's Quickblade
+		i(84717),	-- Dreadful Gladiator's Greatsword
+		i(84721),	-- Dreadful Gladiator's Bonegrinder
 		i(84723),	-- Dreadful Gladiator's battle staff
 		i(84724),	-- Dreadful Gladiator's energy staff
 		i(84725),	-- Dreadful Gladiator's staff
@@ -4415,9 +4415,9 @@ _.NeverImplemented =
 		-- Dreadful Gladiator (EPIC QUALITY) (did not make it to live)
 		i(84711),	-- Dreadful Gladiator's endgame
 		i(84712),	-- Dreadful Gladiator's reprieve
-		i(84713),	-- Dreadful Gladiator's shield wall
-		i(84714),	-- Dreadful Gladiator's barrier
-		i(84715),	-- Dreadful Gladiator's redoubt
+		i(84713),	-- Dreadful Gladiator's Shield Wall
+		i(84714),	-- Dreadful Gladiator's Barrier
+		i(84715),	-- Dreadful Gladiator's Redoubt
 		--
 		i(159538),	-- Coldscale Cudgel
 		i(159498),	-- Coldscale Pistol

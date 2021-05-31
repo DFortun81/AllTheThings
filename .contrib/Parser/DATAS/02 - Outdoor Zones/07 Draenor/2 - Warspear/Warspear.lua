@@ -1304,13 +1304,13 @@ _.Zones =
 									i(125287, {	-- Wild Gladiator's Warboots of Victory (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
-									i(125174, {	-- Wild Gladiator's treads of cruelty (H)
+									i(125174, {	-- Wild Gladiator's Treads of Cruelty (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
-									i(125175, {	-- Wild Gladiator's treads of prowess (H)
+									i(125175, {	-- Wild Gladiator's Treads of Prowess (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
-									i(125176, {	-- Wild Gladiator's treads of victory (H)
+									i(125176, {	-- Wild Gladiator's Treads of Victory (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
 								}),

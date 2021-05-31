@@ -1392,7 +1392,7 @@ _.Zones =
 					["g"] = {
 						i(39814),	-- Slippers of the Broken Front
 						i(39881),	-- Mantle of Reanimation
-						i(39887),	-- Geist Stalker leggings
+						i(39887),	-- Geist Stalker Leggings
 						i(39888),	-- Scourgebane Pauldrons
 					},
 				}),

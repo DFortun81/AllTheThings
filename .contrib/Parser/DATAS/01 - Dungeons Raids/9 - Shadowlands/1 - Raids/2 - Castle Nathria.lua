@@ -47,7 +47,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 			}),
 			d(17, {	-- LFR
 				n(ZONEDROPS, {
-					i(183017),	-- Acolyte's Velvet bindings
+					i(183017),	-- Acolyte's Velvet Bindings
 					i(183035),	-- Ardent Sunstar Signet
 					i(182978),	-- Barkweave Wristwraps
 					i(184778),	-- Decadent Nathrian Shawl
@@ -401,7 +401,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					}),
 				}),
 				n(ZONEDROPS, {
-					i(183017),	-- Acolyte's Velvet bindings
+					i(183017),	-- Acolyte's Velvet Bindings
 					i(183035),	-- Ardent Sunstar Signet
 					i(182978),	-- Barkweave Wristwraps
 					i(184778),	-- Decadent Nathrian Shawl
@@ -767,7 +767,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					}),
 				}),
 				n(ZONEDROPS, {
-					i(183017),	-- Acolyte's Velvet bindings
+					i(183017),	-- Acolyte's Velvet Bindings
 					i(183035),	-- Ardent Sunstar Signet
 					i(182978),	-- Barkweave Wristwraps
 					i(184778),	-- Decadent Nathrian Shawl
@@ -1161,7 +1161,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					}),
 				}),
 				n(ZONEDROPS, {
-					i(183017),	-- Acolyte's Velvet bindings
+					i(183017),	-- Acolyte's Velvet Bindings
 					i(183035),	-- Ardent Sunstar Signet
 					i(182978),	-- Barkweave Wristwraps
 					i(184778),	-- Decadent Nathrian Shawl
