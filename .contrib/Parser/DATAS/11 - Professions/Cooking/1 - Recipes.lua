@@ -129,7 +129,7 @@ profession(COOKING, {
 					["recipeID"] = 347457,
 				}),
 				applyclassicphase(LEGION_PHASE_ONE, {
-					["name"] = "Extra Sugary Herb Filet",
+					["name"] = "Extra Sugary Fish Feast",
 					["timeline"] = { "added 9.0.2.36639" },
 					["recipeID"] = 347176,
 				}),
@@ -399,6 +399,7 @@ profession(COOKING, {
 			["name"] = "Holiday Cooking",
 			["categoryID"] = 58,
 			["g"] = {
+				-- #if AFTER WRATH
 				applyclassicphase(WRATH_PHASE_ONE, {	-- Bread of the Dead [Day of the Dead]
 					["name"] = "Bread of the Dead",
 					["timeline"] = { "added 3.2.2.10505" },
@@ -429,6 +430,7 @@ profession(COOKING, {
 					["u"] = PILGRIMS_BOUNTY,
 					["races"] = HORDE_ONLY,
 				}),
+				-- #endif
 				-- #if BEFORE MOP
 				{	-- Egg Nog [Winter Veil]
 					["name"] = "Egg Nog",
@@ -441,10 +443,13 @@ profession(COOKING, {
 					["recipeID"] = 21143,
 					["u"] = FEAST_OF_WINTER_VEIL,
 				},
-				{	-- Hot Apple Cider [Winter Veil]
+				-- #if AFTER TBC
+				applyclassicphase(TBC_PHASE_ONE, {	-- Hot Apple Cider [Winter Veil]
 					["recipeID"] = 45022,	-- Hot Apple Cider
 					["u"] = FEAST_OF_WINTER_VEIL,
-				},
+				}),
+				-- #endif
+				-- #if AFTER WRATH
 				applyclassicphase(WRATH_PHASE_ONE, {	-- Pumpkin Pie [A - Pilgrim's Bounty]
 					["recipeID"] = 62044,	-- Pumpkin Pie
 					["timeline"] = { "added 3.10.10505" },
@@ -481,6 +486,7 @@ profession(COOKING, {
 					["u"] = PILGRIMS_BOUNTY,
 					["races"] = HORDE_ONLY,
 				}),
+				-- #endif
 				-- #if AFTER MOP
 				{	-- Winter Veil Egg Nog [Winter Veil]
 					["recipeID"] = 21144,	-- Winter Veil Egg Nog

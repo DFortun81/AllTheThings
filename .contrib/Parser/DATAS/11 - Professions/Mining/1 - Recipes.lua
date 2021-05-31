@@ -20,10 +20,10 @@ profession(MINING, {
 			["name"] = "Smelt Dark Iron",
 			["recipeID"] = 14891
 		},
-		{
+		applyclassicphase(PHASE_THREE, {
 			["name"] = "Smelt Elementium",
 			["recipeID"] = 22967,
-		},
+		}),
 		{
 			["name"] = "Smelt Gold",
 			["recipeID"] = 3308
@@ -86,11 +86,10 @@ profession(MINING, {
 			["name"] = "Smelt Hardened Adamantite",
 			["recipeID"] = 29686,
 		},
-		{
+		applyclassicphase(TBC_PHASE_FIVE, {
 			["name"] = "Smelt Hardened Khorium",
 			["recipeID"] = 46353,
-			["u"] = TBC_PHASE_FIVE,
-		},
+		}),
 		{
 			["name"] = "Smelt Khorium",
 			["recipeID"] = 29361,
