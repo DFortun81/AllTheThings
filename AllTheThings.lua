@@ -12979,7 +12979,8 @@ local function RowOnClick(self, button)
 			if IsControlKeyDown() then
 				-- Illusions are a nasty animal that need to be displayed a special way.
 				if reference.illusionID then
-					DressUpVisual(DressUpOutfitMixin:GetSlotSourceID("MAINHANDSLOT", LE_TRANSMOG_TYPE_APPEARANCE), 16, reference.illusionID);
+					local mainHandSourceID = TransmogUtil.GetInfoForEquippedSlot(TransmogUtil.GetTransmogLocation("MAINHANDSLOT", 0, 0));
+					DressUpVisual(mainHandSourceID, 16, reference.illusionID);
 				else
 					-- If this reference has a link, then attempt to preview the appearance.
 					local link = reference.link or reference.silentLink;
