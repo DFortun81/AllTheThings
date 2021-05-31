@@ -2804,7 +2804,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	if not group then group = {}; end
 	if a then paramA = a; end
 	if b then paramB = b; end
-	-- print("Raw Search", paramA, paramB, #group);
+	-- print("Raw Search", paramA, paramB, #group, ...);
 
 	-- For Creatures and Encounters that are inside of an instance, we only want the data relevant for the instance + difficulty.
 	if paramA == "creatureID" or paramA == "encounterID" then
@@ -2895,27 +2895,15 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			end
 		end
 	elseif paramA == "achievementID" then
-		-- Don't do anything for things linked to maps.
 		local regroup = {};
 		local criteriaID = ...;
-		if app.MODE_ACCOUNT then
-			for i,j in ipairs(group) do
-				if j.criteriaID == criteriaID and app.RecursiveUnobtainableFilter(j) then
-					if j.mapID or j.parent == nil or j.parent.parent == nil then
-						tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
-					else
-						tinsert(regroup, j);
-					end
-				end
-			end
-		else
-			for i,j in ipairs(group) do
-				if j.criteriaID == criteriaID and app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
-					if j.mapID or j.parent == nil or j.parent.parent == nil then
-						tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
-					else
-						tinsert(regroup, j);
-					end
+		for i,j in ipairs(group) do
+			if j.criteriaID == criteriaID then
+				-- Don't do anything for things linked to maps/with no parents since it will show everything from the map in the tooltip...
+				if j.mapID or not j.parent or not j.parent.parent then
+					tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
+				else
+					tinsert(regroup, j);
 				end
 			end
 		end
@@ -5696,21 +5684,13 @@ local criteriaFields = {
 		return app.TryColorizeName(t, t.name);
 	end,
 	["name"] = function(t)
-		if t.itemID then
-			local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
-			if link then
-				t.text = link;
-				t.link = link;
-				t.icon = icon;
-				return link;
-			end
-		end
+		if t.link then return t.link; end
 		if t.encounterID then
 			return select(1, EJ_GetEncounterInfo(t.encounterID));
 		end
 		local m = GetAchievementNumCriteria(t.achievementID);
 		if m and t.criteriaID <= m then
-			return GetAchievementCriteriaInfo(t.achievementID,t.criteriaID, true);
+			return GetAchievementCriteriaInfo(t.achievementID, t.criteriaID, true);
 		end
 		return L["WRONG_FACTION"];
 	end,
@@ -13442,10 +13422,14 @@ RowOnEnter = function (self)
 				GameTooltip:AddDoubleLine(L["COST"], amount);
 			end
 		end
-		if reference.criteriaID and reference.achievementID then
-			GameTooltip:AddDoubleLine(L["CRITERIA_FOR"], GetAchievementLink(reference.achievementID));
+		if reference.achievementID then
+			if reference.criteriaID then
+				GameTooltip:AddDoubleLine(L["CRITERIA_FOR"], GetAchievementLink(reference.achievementID));
+				AttachTooltipSearchResults(GameTooltip, "achievementID:" .. reference.achievementID .. ":" .. reference.criteriaID, SearchForField, "achievementID", reference.achievementID, reference.criteriaID);
+			else
+				AttachTooltipSearchResults(GameTooltip, "achievementID:" .. reference.achievementID, SearchForField, "achievementID", reference.achievementID);
+			end
 		end
-		if reference.achievementID then AttachTooltipSearchResults(GameTooltip, "achievementID:" .. reference.achievementID, SearchForField, "achievementID", reference.achievementID, reference.criteriaID); end
 		if app.Settings:GetTooltipSetting("Progress") then
 			local right = (app.Settings:GetTooltipSetting("ShowIconOnly") and GetProgressTextForRow or GetProgressTextForTooltip)(reference);
 			if right and right ~= "" and right ~= "---" then
