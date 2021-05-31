@@ -166,11 +166,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_FIVE, {	-- Burning Crusade
 					["classes"] = { DRUID },
 					["f"] = 200,
 				}),
-				i(35273, {	-- Study of Advanced Smelting
-					["spellID"] = 46353,	-- Smelt Hardened Khorium
-					["requireSkill"] = MINING,
-					["f"] = 200,
-				}),
+				i(35273),	-- Study of Advanced Smelting
 				-- #if BEFORE MOP
 				i(34349, {	-- Blade of Life's Inevitability
 					["timeline"] = { "removed 5.0.4.10000" },

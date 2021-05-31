@@ -57,7 +57,7 @@ profession(MINING, {
 			["recipeID"] = 10098
 		},
 	}),
-	tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
+	applyclassicphase(TBC_PHASE_ONE, tier(2, {	-- Burning Crusade
 		{
 			["name"] = "Earth Shatter",
 			["recipeID"] = 35750,
@@ -95,7 +95,7 @@ profession(MINING, {
 			["recipeID"] = 29361,
 		}
 	})),
-	tier(3, applyclassicphase(WRATH_PHASE_ONE, {	-- Wrath of the Lich King
+	applyclassicphase(WRATH_PHASE_ONE, tier(3, {	-- Wrath of the Lich King
 		{
 			["name"] = "Smelt Cobalt",
 			["recipeID"] = 49252
@@ -113,7 +113,7 @@ profession(MINING, {
 			["recipeID"] = 55208
 		}
 	})),
-	tier(4, applyclassicphase(CATA_PHASE_ONE, {	-- Cataclysm
+	applyclassicphase(CATA_PHASE_ONE, tier(4, {	-- Cataclysm
 		{
 			["name"] = "Smelt Elementium",
 			["recipeID"] = 74530
@@ -131,7 +131,7 @@ profession(MINING, {
 			["recipeID"] = 74529
 		}
 	})),
-	tier(5, applyclassicphase(MOP_PHASE_ONE, {	-- Mists of Pandaria
+	applyclassicphase(MOP_PHASE_ONE, tier(5, {	-- Mists of Pandaria
 		{
 			["name"] = "Smelt Ghost Iron",
 			["recipeID"] = 102165
@@ -143,11 +143,11 @@ profession(MINING, {
 	})),
 	--[[
 	-- There were no new mining skills in WoD.
-	tier(6, applyclassicphase(WOD_PHASE_ONE, {	-- Warlords of Draenor
+	applyclassicphase(WOD_PHASE_ONE, tier(6, {	-- Warlords of Draenor
 		
 	})),
 	]]--
-	tier(7, applyclassicphase(LEGION_PHASE_ONE, {	-- Legion
+	applyclassicphase(LEGION_PHASE_ONE, tier(7, {	-- Legion
 		{
 			["name"] = "Empyrium Deposit",
 			["nextRecipeID"] = 247849,
@@ -293,7 +293,7 @@ profession(MINING, {
 			["recipeID"] = 184490
 		}
 	})),
-	tier(8, applyclassicphase(BFA_PHASE_ONE, {	-- Battle for Azeroth
+	applyclassicphase(BFA_PHASE_ONE, tier(8, {	-- Battle for Azeroth
 		{
 			["name"] = "Monelite Deposit",
 			["nextRecipeID"] = 253334,
@@ -408,3 +408,30 @@ profession(MINING, {
 		}
 	})),
 });
+
+-- Mining Recipes
+_.ItemDB = {};
+local itemrecipe = function(itemID, spellID, timeline, classicphase)
+	local o = { ["itemID"] = itemID };
+	if spellID and spellID > 0 then
+		o.spellID = spellID;
+	end
+	if timeline then
+		-- Ensure that the timeline is in a table format.
+		if type(timeline) == "string" then timeline = { timeline }; end
+		o.timeline = timeline;
+	end
+	if classicphase then applyclassicphase(classicphase, o); end
+	_.ItemDB[itemID] = o;
+	return o;
+end
+
+-- #if AFTER TBC
+-- TBC Recipes
+itemrecipe(35273, 46353, "added 2.4.0.7897", TBC_PHASE_FIVE);	-- Study of Advanced Smelting
+-- #endif
+
+-- #if AFTER WRATH
+-- Wrath Recipes
+itemrecipe(44956, 22967, "added 3.0.8.9464", WRATH_PHASE_ONE);	-- Goblin's Guide to Elementium
+-- #endif
