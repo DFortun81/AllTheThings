@@ -10,7 +10,13 @@ local FOREST_FROG = n(24396, { 	-- Forest Frog
 	["cost"] = {
 		{ "i", 33865, 1 },	-- Amani Hex Stick
 	},
-	["groups"] = { MOJO_PET },
+	["groups"] = {
+		MOJO_PET,
+		i(33931),	-- Amani Charm of Mighty Mojo
+		i(33930),	-- Amani Charm of the Bloodletter
+		i(33933),	-- Amani Charm of the Raging Defender
+		i(33932),	-- Amani Charm of the Witch Doctor
+	},
 });
 _.Instances = { tier(2, applylegacyclassicphase(TBC_PHASE_FOUR, {	-- Burning Crusade
 	inst(77, { 	-- Zul'Aman

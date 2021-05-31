@@ -229,7 +229,7 @@ _.Instances = { tier(1, applyclassicphase(PHASE_THREE, {	-- Classic
 				},
 			}),
 			n(14401, {	-- Master Elemental Shaper Krixix
-				-- #if BEFORE TBC
+				-- #if BEFORE WRATH
 				["description"] = "When Krixix is mind controlled, one of the abilities available to the priest will be to teach a friendly target to Smelt Elementium.",
 				["groups"] = {
 					{
@@ -238,11 +238,7 @@ _.Instances = { tier(1, applyclassicphase(PHASE_THREE, {	-- Classic
 					},
 				},
 				-- #else
-				i(44956, {	-- Goblin's Guide to Elementium
-					["timeline"] = { "added 3.0.8.10000" },
-					["recipeID"] = 22967,	-- Smelt Elementium
-					["requireSkill"] = MINING,
-				}),
+				i(44956),	-- Goblin's Guide to Elementium
 				-- #endif
 			}),
 			e(1533,  {	-- Ebonroc

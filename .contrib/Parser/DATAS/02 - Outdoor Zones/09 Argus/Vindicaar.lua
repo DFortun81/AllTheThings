@@ -177,7 +177,7 @@ _.Zones =
 						["provider"] = { "n", 125343 },		-- Vorel
 						["requireSkill"] = JEWELCRAFTING,
 						["sourceQuests"] = { 48075 },	-- A Colorful Key
-						["coords"] = { 44.45, 73.35, 831 },
+						["coord"] = { 44.45, 73.35, 831 },
 						["g"] = {
 							i(151724),	-- Design: Empyrial Cosmic Crown (Rank 1)
 							i(151727),	-- Design: Empyrial Deep Crown (Rank 1)

@@ -4,9 +4,11 @@
 
 _.ExpansionFeatures =
 {
-	tier(9, {	-- Shadowlands
-		n(-949, {	-- Covenant: Venthyr
+	-- Everything in this file must explicitly be obtainable/usable only by Venthyr characters due to bubbleDown
+	tier(9, bubbleDown({	-- Shadowlands
 			["customCollect"] = "SL_COV_VEN",	-- Venthyr
+		},{
+		n(-949, {	-- Covenant: Venthyr
 			--	TODO: quest through as Venthyr and unlock Adventures Scouting Map first instead of Mirror Network to test alternative version of "Our True Purpose"
 			-- "Our True Purpose" 59324 no longer shows as a 'valid Quest' from the server (2020-12-04), meaning likely no character has acquired it this week (2) of the expac?
 			-- But it is complete for my main, as well as 62921... /shrug
@@ -22,5 +24,5 @@ _.ExpansionFeatures =
 				}),
 			},
 		}),
-	}),
+	})),
 };

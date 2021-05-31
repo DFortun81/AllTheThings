@@ -47,7 +47,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 			}),
 			d(17, {	-- LFR
 				n(ZONEDROPS, {
-					i(183017),	-- Acolyte's Velvet bindings
+					i(183017),	-- Acolyte's Velvet Bindings
 					i(183035),	-- Ardent Sunstar Signet
 					i(182978),	-- Barkweave Wristwraps
 					i(184778),	-- Decadent Nathrian Shawl
@@ -337,9 +337,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 							["achievementID"] = 14715,	-- Castle Nathria
 						}),
 						-- TODO: obtained in Normal, assuming it drops on first kill of any difficulty
-						i(179358, {	-- Remornia
-							["questID"] = 60501,	-- Redemption for the Redeemer
-						}),
+						i(179358),	-- Remornia
 						i(183395),	-- Pommel Jewel of Remornia (PET!)
 						i(183896, {	-- Abominable Anima Spherule
 							["modID"] = 83,
@@ -401,7 +399,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					}),
 				}),
 				n(ZONEDROPS, {
-					i(183017),	-- Acolyte's Velvet bindings
+					i(183017),	-- Acolyte's Velvet Bindings
 					i(183035),	-- Ardent Sunstar Signet
 					i(182978),	-- Barkweave Wristwraps
 					i(184778),	-- Decadent Nathrian Shawl
@@ -701,9 +699,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						}),
 						ach(14610),	-- Clear Conscience
 						-- TODO: obtained in Normal, assuming it drops on first kill of any difficulty
-						i(179358, {	-- Remornia
-							["questID"] = 60501,	-- Redemption for the Redeemer
-						}),
+						i(179358),	-- Remornia
 						i(183395),	-- Pommel Jewel of Remornia (PET!)
 						i(183896, {	-- Abominable Anima Spherule
 							["modID"] = 82,
@@ -767,7 +763,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					}),
 				}),
 				n(ZONEDROPS, {
-					i(183017),	-- Acolyte's Velvet bindings
+					i(183017),	-- Acolyte's Velvet Bindings
 					i(183035),	-- Ardent Sunstar Signet
 					i(182978),	-- Barkweave Wristwraps
 					i(184778),	-- Decadent Nathrian Shawl
@@ -1098,9 +1094,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						ach(14460),	-- Ahead of the Curve: Sire Denathrius
 						ach(14610),	-- Clear Conscience
 						-- TODO: obtained in Normal, assuming it drops on first kill of any difficulty
-						i(179358, {	-- Remornia
-							["questID"] = 60501,	-- Redemption for the Redeemer
-						}),
+						i(179358),	-- Remornia
 						i(182169),	-- Veilwing Soul [Night Fae Soulshape Form]
 						i(183395),	-- Pommel Jewel of Remornia (PET!)
 						i(183896, {	-- Abominable Anima Spherule
@@ -1161,7 +1155,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					}),
 				}),
 				n(ZONEDROPS, {
-					i(183017),	-- Acolyte's Velvet bindings
+					i(183017),	-- Acolyte's Velvet Bindings
 					i(183035),	-- Ardent Sunstar Signet
 					i(182978),	-- Barkweave Wristwraps
 					i(184778),	-- Decadent Nathrian Shawl
@@ -1505,9 +1499,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						}),
 						ach(14610),	-- Clear Conscience
 						-- TODO: obtained in Normal, assuming it drops on first kill of any difficulty
-						i(179358, {	-- Remornia
-							["questID"] = 60501,	-- Redemption for the Redeemer
-						}),
+						i(179358),	-- Remornia
 						i(182169),	-- Veilwing Soul [Night Fae Soulshape Form]
 						i(183395),	-- Pommel Jewel of Remornia (PET!)
 						i(183896, {	-- Abominable Anima Spherule

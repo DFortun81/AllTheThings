@@ -20,7 +20,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							ach(5304),	-- Stay Chill
 							i(152974),	-- Breezy Essence (PET!)
 							i(63497),	-- Gale Rouser Belt
-							i(63496),	-- Lightning Well belt
+							i(63496),	-- Lightning Well Belt
 							i(63490),	-- Sky Strider Belt
 							i(63498),	-- Soul Breath Belt
 							i(63492),	-- Star Chaser Belt

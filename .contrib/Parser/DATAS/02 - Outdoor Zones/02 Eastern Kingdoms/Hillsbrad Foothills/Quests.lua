@@ -236,7 +236,7 @@ _.Zones =
 					["g"] = {
 						i(65694),	-- Clerk Whitesteed's Cloak
 						i(65672),	-- Crossbow of the Twice-Slain
-						i(65712),	-- Citizen Wilkes' ring
+						i(65712),	-- Citizen Wilkes' Ring
 					},
 				}),
 				q(28231, {	-- Do it for Twinkles

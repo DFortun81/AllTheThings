@@ -1164,38 +1164,26 @@ _.Zones =
 							["spellID"] = 0,	-- This is now available via 35248, need to delink the old plans from the recipe
 								["u"] = REMOVED_FROM_GAME,
 						}),
-						i(28964, {	-- Voidheart Robe
-							["cost"] = { { "i", 29755, 1 }, },	-- Chestguard of the Fallen Hero
+						i(28911, {	-- Greater Inscription of the Knight
+							["cost"] = { { "i", 29736, 8 }, },	-- 8x Arcane Rune
 						}),
-						i(29021, {	-- Warbringer Battle-Helm
-							["cost"] = { { "i", 29761, 1 }, },	-- Helm of the Fallen Defender
+						i(28912, {	-- Greater Inscription of the Oracle
+							["cost"] = { { "i", 29736, 8 }, },	-- 8x Arcane Rune
 						}),
-						i(29019, {	-- Warbringer Breastplate
-							["cost"] = { { "i", 29753, 1 }, },	-- Chestguard of the Fallen Defender
+						i(28909, {	-- Greater Inscription of the Orb
+							["cost"] = { { "i", 29736, 8 }, },	-- 8x Arcane Rune
 						}),
-						i(29012, {	-- Warbringer Chestguard
-							["cost"] = { { "i", 29753, 1 }, },	-- Chestguard of the Fallen Defender
+						i(28907, {	-- Inscription of the Blade
+							["cost"] = { { "i", 29736, 2 }, },	-- 2x Arcane Rune
 						}),
-						i(29020, {	-- Warbringer Gauntlets
-							["cost"] = { { "i", 29758, 1 }, },	-- Gloves of the Fallen Defender
+						i(28908, {	-- Inscription of the Knight
+							["cost"] = { { "i", 29736, 2 }, },	-- 2x Arcane Rune
 						}),
-						i(29011, {	-- Warbringer Greathelm
-							["cost"] = { { "i", 29761, 1 }, },	-- Helm of the Fallen Defender
+						i(28904, {	-- Inscription of the Oracle
+							["cost"] = { { "i", 29736, 2 }, },	-- 2x Arcane Rune
 						}),
-						i(29022, {	-- Warbringer Greaves
-							["cost"] = { { "i", 29767, 1 }, },	-- Leggings of the Fallen Defender
-						}),
-						i(29017, {	-- Warbringer Handguards
-							["cost"] = { { "i", 29758, 1 }, },	-- Gloves of the Fallen Defender
-						}),
-						i(29015, {	-- Warbringer Legguards
-							["cost"] = { { "i", 29767, 1 }, },	-- Leggings of the Fallen Defender
-						}),
-						i(29016, {	-- Warbringer Shoulderguards
-							["cost"] = { { "i", 29764, 1 }, },	-- Pauldrons of the Fallen Defender
-						}),
-						i(29023, {	-- Warbringer Shoulderplates
-							["cost"] = { { "i", 29764, 1 }, },	-- Pauldrons of the Fallen Defender
+						i(28903, {	-- Inscription of the Orb
+							["cost"] = { { "i", 29736, 2 }, },	-- 2x Arcane Rune
 						}),
 					},
 				})),

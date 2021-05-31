@@ -1187,7 +1187,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 44395 },	-- Celestine of the Harvest
 					["classes"] = { DRUID },
-					["coords"] = { 57.6, 24.8, 84 },	-- Celestine of the Harvest (Stormwind City)
+					["coord"] = { 57.6, 24.8, 84 },	-- Celestine of the Harvest (Stormwind City)
 				}),
 				q(167,   {	-- Oh Brother...
 					["provider"] = { "n", 656 },	-- Wilder Thistlenettle

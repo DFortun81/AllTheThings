@@ -500,7 +500,7 @@ _.Zones =
 						["description"] = "To access this chest, you need the |cFFFFFFFFPlaguefallen|r debuff.  You can either pick up a Plaguefallen Potion from |cFFFFFFFF58.4, 73.3|r in Plague Watch, or stand in green slime until you have 10 stacks of |cFFFFFFFFConcentrated Plague|r (living through the stacks requires significant self-healing, but picking up the potion far away from the cave gives you very little time to get there).\n\nWith the debuff, you have 2 minutes to make it to the cave at |cFFFFFFFF62.3, 76.6|r (behind Scunner's platform) and use the pipe at the back of the cave to teleported to the chest.\n\nYou MUST still have the debuff to loot the chest, so don't alt-tab after you get teleported!",
 						["objectID"] = 355886,	-- Plaguefallen Chest
 						["questID"] = 61474,
-						["coords"] = { 62.4, 76.5, MALDRAXXUS },
+						["coord"] = { 62.4, 76.5, MALDRAXXUS },
 						["lvl"] = { 60 },
 						["g"] = {
 							i(183515),	-- Iridescent Ooze (PET!)

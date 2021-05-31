@@ -354,9 +354,9 @@ namespace ATT
                         {
                             Objects.MergeIntegerArrayData(item, field, lvls);
                         }
-                        else if (value is Dictionary<object, object> dict)
+                        else if (value is long lvl)
                         {
-                            Objects.MergeIntegerArrayData(item, field, dict.Values.ToList());
+                            item[field] = Convert.ToInt64(lvl);
                         }
                         else
                         {
@@ -369,7 +369,7 @@ namespace ATT
                     case "bonusIDs":
                         {
                             // Convert the data to a list of generic objects.
-                            if (!(value is Dictionary<object, object> newDict)) return;
+                            if (!(value is Dictionary<long, object> newDict)) return;
 
                             // Attempt to get the old list data.
                             Dictionary<long, long> oldDict;
@@ -385,7 +385,7 @@ namespace ATT
                             }
 
                             // Merge the new list of data into the old data and ensure there are no duplicate values.
-                            foreach (var pair in newDict) oldDict[Convert.ToInt64(pair.Key)] = Convert.ToInt64(pair.Value);
+                            foreach (var pair in newDict) oldDict[pair.Key] = Convert.ToInt64(pair.Value);
                             break;
                         }
 
@@ -407,8 +407,10 @@ namespace ATT
                                 var newList = value as List<object>;
                                 if (newList == null)
                                 {
-                                    if (value is Dictionary<object, object> dict) newList = dict.Values.ToList();
-                                    else return;
+                                    Console.WriteLine("Incorrect format for 'sym'");
+                                    Console.WriteLine(MiniJSON.Json.Serialize(value));
+                                    Console.ReadLine();
+                                    return;
                                 }
                                 newListOfLists = new List<List<object>>();
                                 foreach (var o in newList)
@@ -416,8 +418,10 @@ namespace ATT
                                     var list = o as List<object>;
                                     if (list == null)
                                     {
-                                        if (o is Dictionary<object, object> dict) list = dict.Values.ToList();
-                                        else return;
+                                        Console.WriteLine("Incorrect format for 'sym'");
+                                        Console.WriteLine(MiniJSON.Json.Serialize(o));
+                                        Console.ReadLine();
+                                        return;
                                     }
                                     newListOfLists.Add(list);
                                 }
@@ -461,52 +465,6 @@ namespace ATT
             }
 
             /// <summary>
-            /// Merge the data into the item reference.
-            /// Only a couple of fields will successfully merge into an item.
-            /// They need to be whitelisted in the Merge(item, field, value) function.
-            /// </summary>
-            /// <param name="item">The item dictionary to merge into.</param>
-            /// <param name="data">The data to merge into the item.</param>
-            private static void Merge(Dictionary<string, object> item, Dictionary<object, object> data)
-            {
-                foreach (var pair in data) Merge(item, ATT.Export.ToString(pair.Key), pair.Value);
-            }
-
-            /// <summary>
-            /// Merge the data into the item reference.
-            /// Only a couple of fields will successfully merge into an item.
-            /// They need to be whitelisted in the Merge(item, field, value) function.
-            /// </summary>
-            /// <param name="item">The item dictionary to merge into.</param>
-            /// <param name="data">The data to merge into the item.</param>
-            private static void Merge(Dictionary<string, object> item, Dictionary<string, object> data)
-            {
-                foreach (var pair in data) Merge(item, pair.Key, pair.Value);
-            }
-
-            /// <summary>
-            /// Merge the data into the item database.
-            /// NOTE: Only data containing an itemID will merge.
-            /// </summary>
-            /// <param name="data">The data to merge into the item database.</param>
-            public static void Merge(Dictionary<object, object> data)
-            {
-                // Ignore this for Artifacts.
-                if (data.ContainsKey("artifactID")) return;
-
-                // Attempt to extract the itemID from the data table.
-                if (data.TryGetValue("itemID", out object itemIDRef) ||
-                    data.TryGetValue("itemId", out itemIDRef) ||
-                    data.TryGetValue("toyID", out itemIDRef))
-                {
-                    long itemID = Convert.ToInt64(itemIDRef);
-                    if (itemID < 1) return;
-
-                    Merge(Get(itemID), data);
-                }
-            }
-
-            /// <summary>
             /// Merge the data into the item database.
             /// NOTE: Only data containing an itemID will merge.
             /// </summary>
@@ -523,8 +481,8 @@ namespace ATT
                 {
                     long itemID = Convert.ToInt64(itemIDRef);
                     if (itemID < 1) return;
-
-                    Merge(Get(itemID), data);
+                    var item = Get(itemID);
+                    foreach (var pair in data) Merge(item, pair.Key, pair.Value);
                 }
             }
             #endregion

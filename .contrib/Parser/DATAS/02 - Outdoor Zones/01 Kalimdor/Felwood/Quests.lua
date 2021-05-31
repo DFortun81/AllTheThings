@@ -769,7 +769,10 @@ _.Zones =
 					["coord"] = { 44.2, 28.0, 77 },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,	-- for "Enemy at Our Roots"
-					["sourceQuest"] = 28264,	-- Navarax's Gambit
+					["sourceQuests"] = {
+						28264,	-- Navarax's Gambit
+						28224,	-- Rejoining the Forest
+					},
 				}),
 				q(28257, {	-- The Fall of Tichondrius
 					["provider"] = { "n", 47923 },	-- Feronas Sindweller

@@ -298,7 +298,7 @@ _.Zones =
 								["minReputation"] = { 1375, REVERED+2700 },
 								["sourceQuests"] = { 32352 },	-- A Gathering Storm
 								["provider"] = { "n", 67939 },	-- General Nazgrim
-								["coords"] = { 9.30, 51.1, 418 },
+								["coord"] = { 9.30, 51.1, 418 },
 								["races"] = HORDE_ONLY,
 							}),
 							q(32130, {	-- Good Luck, Have Fun
@@ -641,7 +641,7 @@ _.Zones =
 							q(32330, {	-- What's in the Box?
 								["sourceQuests"] = { 32329 },	-- Get My Results!
 								["provider"] = { "n", 16802 },	-- Lor'themar Theron
-								["coords"] = { 54.0, 20.4, SILVERMOON_CITY },
+								["coord"] = { 54.0, 20.4, SILVERMOON_CITY },
 								["races"] = HORDE_ONLY,
 							}),
 							q(32136, {	-- Work Order: Fuel

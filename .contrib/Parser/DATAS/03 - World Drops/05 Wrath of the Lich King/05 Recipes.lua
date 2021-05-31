@@ -9,6 +9,20 @@ _.WorldDrops =
 			prof(ALCHEMY, {
 				un(NEVER_IMPLEMENTED, i(112022)),	-- Recipe: Mighty Shadow Protection Potion
 			}),
+			prof(COOKING, {
+				i(43509, {	-- Recipe: Bad Clams
+					["description"] = "Can drop from any Northrend mob.",
+				}),
+				i(43510, {	-- Recipe: Haunted Herring
+					["description"] = "Can drop from any Northrend mob.",
+				}),
+				i(43508, {	-- Recipe: Last Week's Mammoth
+					["description"] = "Can drop from any Northrend mob.",
+				}),
+				i(43507, {	-- Recipe: Tasty Cupcake
+					["description"] = "Can drop from any Northrend mob.",
+				}),
+			}),
 			prof(ENCHANTING, {
 				i(37341, {	-- Formula: Enchant Boots - Superior Agility
 					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, formula was removed from game
@@ -32,6 +46,11 @@ _.WorldDrops =
 					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, formula was removed from game
 				}),
 			}),
+			-- #if BEFORE 8.0.1.10000
+			prof(FIRST_AID, {
+				i(39152),	-- Manual: Heavy Frostweave Bandage
+			}),
+			-- #endif
 			prof(INSCRIPTION, {
 				i(45912, {	-- Book of Glyph Mastery
 					["collectible"] = false,
@@ -67,6 +86,9 @@ _.WorldDrops =
 			}),
 			prof(TAILORING, {
 				i(43876),	-- A Guide to Northern Cloth Scavenging
+				-- #if AFTER 8.0.1.10000
+				i(39152),	-- Manual: Heavy Frostweave Bandage
+				-- #endif
 				i(42173),	-- Pattern: Blue Lumberjack Shirt
 				i(42176),	-- Pattern: Blue Workman's Shirt
 				i(42175),	-- Pattern: Green Lumberjack Shirt

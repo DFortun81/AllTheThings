@@ -279,7 +279,7 @@ _.Zones =
 				q(6322,  {	-- Michael Garrett
 					["sourceQuests"] = { 6323 },	-- Ride to the Undercity
 					["provider"] = { "n", 4556 },	-- Gordon Wendham
-					["coords"] = { 61.8, 42.0, 90 },
+					["coord"] = { 61.8, 42.0, 90 },
 					["races"] = { UNDEAD },
 				}),
 				q(28289, {	-- Moonglade Calls
@@ -331,7 +331,7 @@ _.Zones =
 				q(6324,  {	-- Return to Morris
 					["sourceQuests"] = { 6322 },	-- Michael Garrett
 					["provider"] = { "n", 4551 },	-- Michael Garrett
-					["coords"] = { 63.0, 48.2, 90 },
+					["coord"] = { 63.0, 48.2, 90 },
 					["races"] = { UNDEAD },
 				}),
 				q(1358,  {	-- Sample for Helbrim
@@ -516,7 +516,7 @@ _.Zones =
 				q(42987, {	-- The Victor's Spoils
 					["sourceQuests"] = { 42985 },	-- A Royal Audience
 					["provider"] = { "n", 109471 },	-- Lady Sylvanas Windrunner
-					["coords"] = { 57.8, 91.6, 90 },
+					["coord"] = { 57.8, 91.6, 90 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(446,   {	-- Thule Ravenclaw

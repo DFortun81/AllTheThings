@@ -1945,7 +1945,6 @@ _.Zones =
 								i(172752),	-- Corrupted Gladiator's Warglaive (A)
 							},
 						}),
-					
 					--	Ensembles
 					--	Dread Aspirant, Battle for Azeroth Season 1
 						i(180178, {	-- Ensemble: Dread Aspirant's Cloth Armor

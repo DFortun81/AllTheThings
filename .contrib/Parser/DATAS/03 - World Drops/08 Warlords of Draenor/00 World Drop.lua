@@ -17,5 +17,13 @@ _.WorldDrops =
 		i(114984),		-- Mysterious Satchel
 		i(116725),		-- Oshu'gun Ring
 		i(116173),		-- Tattered Frostwolf Shroud
+		i(111387, {		-- The Joy of Draenor Cooking
+			["collectible"] = false,
+			["description"] = "This can drop from any Warlords of Draenor mob if you don't already have it learned.",
+			["groups"] = {
+				recipe(161001),		-- Saberfish Broth
+				recipe(161002),		-- Grilled Saberfish
+			},
+		}),
 	}),
 };

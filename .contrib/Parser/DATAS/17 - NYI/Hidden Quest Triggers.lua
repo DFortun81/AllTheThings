@@ -6,7 +6,7 @@ _.HiddenQuestTriggers =
 {
 	-- Note!! Here is where we can put all the hidden quest triggers in the game that don't exactly fit anywhere.
 	-- When adding a quest trigger be sure to put a description of how it triggered
-	n(-9956, {	-- Quests
+	n(QUESTS, {	-- Quests
 		q(13807),	-- FLAG: Tournament Invitation
 
 
@@ -881,10 +881,6 @@ _.HiddenQuestTriggers =
 		q(49847),	-- Selected Pandaria at level 80 Special Duty Assignment" on horde
 		q(57668),	-- Triggering when using a portal to Orgrimmar as Horde/to Ironforge as Alliance after Dec 25th during the Feast of Winter Veil 2019
 		--- (seems to trigger only the first time you go there that day). Possibly used to determine loot eligibility?
-		q(31878),	-- seems to be some account wide version of Audrey Burnhep quest, triggers on login
-		q(31879),	-- seems to be some account wide version of Audrey Burnhep quest, triggers on login
-		q(31880),	-- seems to be some account wide version of Audrey Burnhep quest, triggers on login
-		q(31881),	-- seems to be some account wide version of Audrey Burnhep quest, triggers on login
 		q(31990),	-- seems to be some account wide version of Audrey Burnhep quest, triggers on login
 
 		-- Events/Holidays
@@ -2490,25 +2486,6 @@ _.HiddenQuestTriggers =
 		q(54326),	-- triggered when turning in #54135, "Romp in the Swamp," had WM off
 		q(55241),	-- closing the second to last rift while on #55214, "Seam Stress"
 		q(50657),	-- not sure if this is part of the Vulpera allied race questline?  i turned in #53907, picked up #53908, learned the "Nomi's Vintage" toy, refreshed (nothing), went and took the portal from the vineyard to shal'aran, and this popped.  it popped immediately when i clicked the portal
-
-		-- MISSIONS
-		q(53743),	-- Hillcrest Pasture completed
-		q(53745),	-- Mudfisher Cove completed
-		q(53740),	-- Stonefist Watch completed
-		q(53742),	-- Stonetusk Watch completed
-		q(53744),	-- Swiftwind Post completed
-		q(54304),	-- Upgrade: Arom's Stand started
-		q(54261),	-- Upgrade: Brennadam started
-		q(54283),	-- Upgrade: Castaway Point started
-		q(54226),	-- Upgrade: The Great Seal started
-		q(54294),	-- Upgrade: The Great Seal completed
-		q(54259),	-- Upgrade: Vulpera Hideaway started
-		q(54296),	-- Upgrade: Vulpera Hideaway completed
-		q(54238),	-- Upgrade: Zul'jan Ruins started
-		q(54297),	-- Upgrade: Zul'jan Ruins completed
-		q(53741),	-- Windfall Cavern completed
-		q(53739),	-- Wolf's Den completed
-		q(53751),	-- Grimwatt's Crash completed
 
 		--	HONEYBACK HIVE
 		q(55906),	-- triggers when pulling out Seabreeze Bumblebee or Bumbles next to Barry at 69.1, 64.2 in Stormsong Valley
