@@ -203,12 +203,53 @@ namespace ATT
                             builder.Append("i(").Append(id).Append(");");
                             if (item.TryGetValue("name", out object name))
                             {
-                                builder.Append("\t\t--[[").Append(name).Append("]]");
+                                builder.Append("\t-- ").Append(name);
                             }
                             builder.AppendLine();
                         }
                     }
                     File.WriteAllText(Path.Combine(filtersDirectory.FullName, $"{group.Key}.json"), builder.ToString());
+                }
+
+                // Export all recipes into their respective recipe locations
+                var recipesFolder = Path.Combine(directory, "Recipes/");
+                var recipesDirectory = Directory.CreateDirectory(recipesFolder);
+                if (filterGroups.TryGetValue(Objects.Filters.Recipe, out List<Dictionary<string, object>> allRecipes))
+                {
+                    var recipesByRequiredSkill = new Dictionary<long, List<Dictionary<string, object>>>();
+                    foreach (var recipe in allRecipes)
+                    {
+                        if (!recipe.TryGetValue("requireSkill", out long requireSkill))
+                        {
+                            requireSkill = 0;
+                        }
+
+                        if (!recipesByRequiredSkill.TryGetValue(requireSkill, out List<Dictionary<string, object>> skillRecipes))
+                        {
+                            recipesByRequiredSkill[requireSkill] = skillRecipes = new List<Dictionary<string, object>>();
+                        }
+                        skillRecipes.Add(recipe);
+                    }
+
+                    foreach (var requireSkillPair in recipesByRequiredSkill)
+                    {
+                        var builder = ATT.Export.ExportRawLua(requireSkillPair.Value);
+                        builder.AppendLine().AppendLine();
+                        foreach (var item in requireSkillPair.Value)
+                        {
+                            if (item.TryGetValue("itemID", out object id))
+                            {
+                                builder.Append("i(").Append(id).Append(");");
+                                if (item.TryGetValue("name", out object name))
+                                {
+                                    builder.Append("\t-- ").Append(name);
+                                }
+                                builder.AppendLine();
+                            }
+                        }
+                        File.WriteAllText(Path.Combine(recipesDirectory.FullName, $"{requireSkillPair.Key}.json"), builder.ToString());
+                    }
+                    
                 }
             }
             #endregion

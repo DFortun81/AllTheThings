@@ -2,14 +2,8 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 local MASTER_CHEF_GROUPS = {
-	i(27687, {	-- Recipe: Bat Bites
-		["recipeID"] = 33278,	-- Bat Bites
-		["requireSkill"] = COOKING,
-	}),
-	i(22647, {	-- Recipe: Crunchy Spider Surprise
-		["recipeID"] = 28267,	-- Crunchy Spider Surprise
-		["requireSkill"] = COOKING,
-	}),
+	i(27687),	-- Recipe: Bat Bites
+	i(22647),	-- Recipe: Crunchy Spider Surprise
 };
 local RATHIS_TOMBER_GROUPS = {};
 _.Zones =

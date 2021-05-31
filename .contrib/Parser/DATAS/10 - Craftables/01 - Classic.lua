@@ -798,6 +798,13 @@ _.Craftables = { tier(1, {	-- Classic
 			i(6643),	-- Bloated Smallfish
 			i(8366),	-- Bloated Trout
 		}),
+		-- #if AFTER TBC
+		filter(200, {	-- Recipes
+			i(34109, {	-- Weather-Beaten Journal
+				["description"] = "Can be fished from schools.",
+			}),
+		}),
+		-- #endif
 	}),
 	prof(INSCRIPTION, {
 		filter(111, {	-- Glyphs
