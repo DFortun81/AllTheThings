@@ -277,7 +277,7 @@ recipe = oldRecipe;
 
 -- First Aid Recipes
 _.ItemDB = {};
-local itemrecipe = function(itemID, spellID, timeline)
+local itemrecipe = function(itemID, spellID, timeline, classicphase)
 	local o = { ["itemID"] = itemID };
 	if spellID and spellID > 0 then
 		o.spellID = spellID;
@@ -287,6 +287,7 @@ local itemrecipe = function(itemID, spellID, timeline)
 		if type(timeline) == "string" then timeline = { timeline }; end
 		o.timeline = timeline;
 	end
+	if classicphase then applyclassicphase(classicphase, o); end
 	_.ItemDB[itemID] = o;
 	return o;
 end
@@ -299,14 +300,14 @@ itemrecipe(6454, 7935);	-- Manual: Strong Anti-Venom
 
 -- #if AFTER TBC
 -- TBC Recipes
-applyclassicphase(TBC_PHASE_ONE, itemrecipe(21993, 27033, "removed 3.1.0.9767"));	-- Manual: Heavy Netherweave Bandage
-applyclassicphase(TBC_PHASE_ONE, itemrecipe(21992, 27032, "removed 3.1.0.9767"));	-- Manual: Netherweave Bandage
-applyclassicphase(TBC_PHASE_ONE, itemrecipe(22012, 0--[[27029]], "removed 3.1.0.9767"));	-- Master First Aid - Doctor in the House
+itemrecipe(21993, 27033, "removed 3.1.0.9767", TBC_PHASE_ONE);	-- Manual: Heavy Netherweave Bandage
+itemrecipe(21992, 27032, "removed 3.1.0.9767", TBC_PHASE_ONE);	-- Manual: Netherweave Bandage
+itemrecipe(22012, 0--[[27029]], "removed 3.1.0.9767", TBC_PHASE_ONE);	-- Master First Aid - Doctor in the House
 -- #endif
 
 -- #if AFTER WRATH
 -- Wrath Recipes
-applyclassicphase(WRATH_PHASE_ONE, itemrecipe(39152, 45546));	-- Manual: Heavy Frostweave Bandage
+itemrecipe(39152, 45546, "added 3.0.1.8714", WRATH_PHASE_ONE);	-- Manual: Heavy Frostweave Bandage
 -- #endif
 
 -- These items never made it in.

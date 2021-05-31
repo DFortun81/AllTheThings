@@ -457,6 +457,7 @@ _.Craftables = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 			i(22785),	-- Felweed
 			i(22788),	-- Flame Cap
 			i(22793),	-- Mana Thistle
+			i(35229),	-- Nether Residue
 			i(22791),	-- Netherbloom
 			i(32468),	-- Netherdust Pollen
 			i(22792),	-- Nightmare Vine
@@ -804,7 +805,24 @@ _.Craftables = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 			i(23427),	-- Eternium Ore
 			i(23424),	-- Fel Iron Ore
 			i(23426),	-- Khorium Ore
+			i(35229),	-- Nether Residue
 			i(32464),	-- Nethercite Ore
+		},
+	}),
+	prof(SKINNING, {
+		["description"] = "The following items can be gathered by skinning creatures out in the world.",
+		["groups"] = {
+			i(29539),	-- Cobra Scales
+			i(25699),	-- Crystal Infused Leather
+			i(25707),	-- Fel Hide
+			i(25700),	-- Fel Scales
+			i(21887),	-- Knothide Leather
+			i(25649),	-- Knothide Leather Scraps
+			i(29548),	-- Nether Dragonscales
+			i(35229),	-- Nether Residue
+			i(32470),	-- Nethermine Flayer Hide
+			i(25708),	-- Thick Clefthoof Leather
+			i(29547),	-- Wind Scales
 		},
 	}),
 	prof(TAILORING, {
