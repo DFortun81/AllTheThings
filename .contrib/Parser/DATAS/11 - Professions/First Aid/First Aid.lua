@@ -22,31 +22,31 @@ profession(FIRST_AID, {
 		recipe(18630),	-- Heavy Runecloth Bandage
 		recipe(23787),	-- Powerful Anti-Venom
 	}),
-	tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
+	applyclassicphase(TBC_PHASE_ONE, tier(2, {	-- Burning Crusade
 		recipe(27032),	-- Nethercloth Bandage
 		recipe(27033),	-- Heavy Nethercloth Bandage
 	})),
-	tier(3, applyclassicphase(WRATH_PHASE_ONE, {	-- Wrath of the Lich King
+	applyclassicphase(WRATH_PHASE_ONE, tier(3, {	-- Wrath of the Lich King
 		recipe(45545),	-- Frostweave Bandage
 		recipe(45546),	-- Heavy Frostweave Bandage
 	})),
-	tier(4, applyclassicphase(CATA_PHASE_ONE, {	-- Cataclysm
+	applyclassicphase(CATA_PHASE_ONE, tier(4, {	-- Cataclysm
 		recipe(74556),	-- Embersilk Bandage
 		recipe(74557),	-- Heavy Embersilk Bandage
 		recipe(74558),	-- Field Bandage: Dense Embersilk
 		recipe(88893),	-- Dense Embersilk Bandage
 	})),
-	tier(5, applyclassicphase(MOP_PHASE_ONE, {	-- Mists of Pandaria
+	applyclassicphase(MOP_PHASE_ONE, tier(5, {	-- Mists of Pandaria
 		recipe(102697),	-- Windwool Bandage
 		recipe(102698),	-- Heavy Windwool Bandage
 	})),
-	tier(6, applyclassicphase(WOD_PHASE_ONE, {	-- Warlords of Draenor
+	applyclassicphase(WOD_PHASE_ONE, tier(6, {	-- Warlords of Draenor
 		recipe(172539),	-- Antiseptic Bandage
 		recipe(172541),	-- Blackwater Anti-Venom
 		recipe(172542),	-- Fire Ammonite Oil
 		recipe(172540),	-- Healing Tonic
 	})),
-	tier(7, applyclassicphase(LEGION_PHASE_ONE, {	-- Legion
+	applyclassicphase(LEGION_PHASE_ONE, tier(7, {	-- Legion
 		recipe(202853),	-- Silkweave Bandage
 		recipe(202854),	-- Silkweave Splint
 		recipe(230047),	-- Feathered Luffa
@@ -100,7 +100,7 @@ profession(FIRST_AID, {
 			["lvl"] = lvlsquish(35, 15, 35),
 			["groups"] = {
 				i(49193, {	-- Alliance Trauma Certification
-					["timeline"] = { "timeline 3.2.0.10192" },
+					["timeline"] = { "added 3.2.0.10192" },
 				}),
 			},
 		}),
@@ -123,12 +123,13 @@ profession(FIRST_AID, {
 			["lvl"] = lvlsquish(35, 15, 35),
 			["groups"] = {
 				i(49192, {	-- Horde Trauma Certification
-					["timeline"] = { "timeline 3.2.0.10192" },
+					["timeline"] = { "added 3.2.0.10192" },
 				}),
 			},
 		}),
 	}),
 	-- #endif
+	-- #if AFTER LEGION
 	un(REMOVED_FROM_GAME, ach(10599, {	-- Legion Medic (800) *
 		["groups"] = {
 			un(REMOVED_FROM_GAME, ach(131)),	-- Journeyman Medic (150)
@@ -260,39 +261,59 @@ profession(FIRST_AID, {
 			})
 		},
 	})),
-	n(-26, {	-- Drop
-		-- TODO: This stuff needs to be moved elsewhere, the profession mini list sorts things now in the hierarchy of the addon.
-		un(REMOVED_FROM_GAME, i(16084, {		-- Expert First Aid - Under Wraps
-			["collectible"] = false,
-			["description"] = "No longer required.",
-		})),
-		un(REMOVED_FROM_GAME, i(16085, {		-- Artisan First Aid - Heal Thyself
-			["collectible"] = false,
-			["description"] = "No longer required.",
-		})),
-		un(REMOVED_FROM_GAME, i(22012, {		-- Master First Aid - Doctor in the House
-			["collectible"] = false,
-			["description"] = "No longer required.",
-		})),
-		i(6454),	-- Manual: Strong Anti-Venom  -- TODO: https://www.wowhead.com/item=6454/manual-strong-anti-venom
-		un(REMOVED_FROM_GAME, i(16112, {		-- Manual: Heavy Silk Bandage
-			["description"] = "No longer required.",
-		})),
-		un(REMOVED_FROM_GAME, i(16113, {		-- Manual: Mageweave Bandage
-			["description"] = "No longer required.",
-		})),
-		un(REMOVED_FROM_GAME, i(21992, {		-- Manual: Netherweave Bandage
-			["description"] = "No longer required.",
-		})),
-		un(REMOVED_FROM_GAME, i(21993, {		-- Manual: Heavy Netherweave Bandage
-			["description"] = "No longer required.",
-		})),
-		un(REMOVED_FROM_GAME, i(39152, {		-- Manual: Heavy Frostweave Bandage
-			["description"] = "No longer required.",
-		})),
+	-- #endif
+	-- #if NOT ANYCLASSIC
+	n(VENDORS, {
+		-- TODO: Add the associated vendors.
+		i(16084),	-- Expert First Aid - Under Wraps
+		i(16112),	-- Manual: Heavy Silk Bandage
+		i(16113)	-- Manual: Mageweave Bandage
 	}),
-
+	-- #endif
 });
 
 -- Reset the pointer to the recipe function.
 recipe = oldRecipe;
+
+-- First Aid Recipes
+_.ItemDB = {};
+local itemrecipe = function(itemID, spellID, timeline)
+	local o = { ["itemID"] = itemID };
+	if spellID and spellID > 0 then
+		o.spellID = spellID;
+	end
+	if timeline then
+		-- Ensure that the timeline is in a table format.
+		if type(timeline) == "string" then timeline = { timeline }; end
+		o.timeline = timeline;
+	end
+	_.ItemDB[itemID] = o;
+	return o;
+end
+
+-- Classic Recipes
+itemrecipe(16084, 0--[[7924]], "removed 3.1.0.9767");	-- Expert First Aid - Under Wraps
+itemrecipe(16112, 7929, "removed 3.1.0.9767");	-- Manual: Heavy Silk Bandage
+itemrecipe(16113, 10840, "removed 3.1.0.9767");	-- Manual: Mageweave Bandage
+itemrecipe(6454, 7935);	-- Manual: Strong Anti-Venom
+
+-- #if AFTER TBC
+-- TBC Recipes
+applyclassicphase(TBC_PHASE_ONE, itemrecipe(21993, 27033, "removed 3.1.0.9767"));	-- Manual: Heavy Netherweave Bandage
+applyclassicphase(TBC_PHASE_ONE, itemrecipe(21992, 27032, "removed 3.1.0.9767"));	-- Manual: Netherweave Bandage
+applyclassicphase(TBC_PHASE_ONE, itemrecipe(22012, 0--[[27029]], "removed 3.1.0.9767"));	-- Master First Aid - Doctor in the House
+-- #endif
+
+-- #if AFTER WRATH
+-- Wrath Recipes
+applyclassicphase(WRATH_PHASE_ONE, itemrecipe(39152, 45546));	-- Manual: Heavy Frostweave Bandage
+-- #endif
+
+-- These items never made it in.
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	filter(200, {	-- Recipes
+		i(16085),	-- Artisan First Aid - Heal Thyself
+		i(23689),	-- Manual: Crystal Infused Bandage
+		i(23690),	-- Recipe: Crystal Flake Throat Lozenge
+	}),
+});

@@ -32,6 +32,11 @@ _.WorldDrops =
 					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, formula was removed from game
 				}),
 			}),
+			-- #if BEFORE 8.0.1.10000
+			prof(FIRST_AID, {
+				i(39152),	-- Manual: Heavy Frostweave Bandage
+			}),
+			-- #endif
 			prof(INSCRIPTION, {
 				i(45912, {	-- Book of Glyph Mastery
 					["collectible"] = false,
@@ -67,6 +72,9 @@ _.WorldDrops =
 			}),
 			prof(TAILORING, {
 				i(43876),	-- A Guide to Northern Cloth Scavenging
+				-- #if AFTER 8.0.1.10000
+				i(39152),	-- Manual: Heavy Frostweave Bandage
+				-- #endif
 				i(42173),	-- Pattern: Blue Lumberjack Shirt
 				i(42176),	-- Pattern: Blue Workman's Shirt
 				i(42175),	-- Pattern: Green Lumberjack Shirt

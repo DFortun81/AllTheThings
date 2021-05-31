@@ -7,6 +7,9 @@ _.WorldDrops =
 	tier(1, {	-- Classic
 		f(200, {	-- Recipes
 			prof(ALCHEMY, {
+				-- #if AFTER 8.0.1.10000
+				i(6454),	-- Manual: Strong Anti-Venom
+				-- #endif
 				i(3832),	-- Recipe: Elixir of Detect Lesser Invisibility
 				i(9297),	-- Recipe: Elixir of Dream Vision
 				i(3830),	-- Recipe: Elixir of Fortitude
@@ -142,6 +145,11 @@ _.WorldDrops =
 					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, schematic was removed from game
 				}),
 			}),
+			-- #if BEFORE 8.0.1.10000
+			prof(FIRST_AID, {
+				i(6454),	-- Manual: Strong Anti-Venom
+			}),
+			-- #endif
 			prof(JEWELCRAFTING, {
 				i(20976),	-- Design: Citrine Pendant of Golden Healing
 				i(21953),	-- Design: Emerald Owl
