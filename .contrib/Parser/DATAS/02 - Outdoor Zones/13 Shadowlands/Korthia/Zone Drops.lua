@@ -41,6 +41,7 @@ _.Zones =
 					},
 				}),
 			--	Korthian Relics (putting here barring a better place for them)
+				i(187465),	-- Complicated Organism Harvester
 				i(187322),	-- Crumbling Stone Tablet
 				i(187327),	-- Encrypted Korthian Journal
 				i(187463),	-- Enigmatic Map Fragments
@@ -49,6 +50,7 @@ _.Zones =
 				i(187326),	-- Half-Completed Runeforge Pattern
 				i(187335),	-- Maldraxxus Larva Shell
 				i(187330),	-- Naaru Shard Fragment
+				i(187329),	-- Old God Specimen Jar
 				i(187332),	-- Recovered Page of Voices
 				i(187328),	-- Ripped Cosmology Chart
 				i(187323),	-- Runic Diagram
@@ -56,7 +58,10 @@ _.Zones =
 				i(187334),	-- Shattered Void Tablet
 				i(187331),	-- Tattered Fae Designs
 				i(187478),	-- White Razorwing Talon
-			--	Cosmetics (not sure if this should go here or under Wild Worldcracker)
+			--	Cosmetics
+				i(187253, {	-- Maw Guard's Spiked Spaulders
+					["cr"] = 178190,	-- Mawsworn Mutilator - this was a mob specifically on the 'Let the Anima Flow' quest; i don't think this version of the Mutilators spawns outside it.  so that's probably either a bug or this will need to be added to more mobs at some point
+				}),
 				i(187252, {	-- Ritualist's Spiked Mantle
 					["crs"] = { 180030 },	-- Opportunistic Corruptor (also dropped from *i think* a mawsworn cleaver, but not positive)
 				}),

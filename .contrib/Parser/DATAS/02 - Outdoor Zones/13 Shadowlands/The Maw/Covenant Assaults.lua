@@ -548,3 +548,10 @@ _.Zones =
 		}),
 	}),
 };
+
+_.HiddenQuestTriggers = {
+--	TODO: Stolen Anima Vessels probably need to be added at some point, but i'm not really sure how they work (example: NF ones are all the fuck over, in and out of the rift, some have multiple coords, can't tell when/how they reset, etc.) so i am just throwing them here for now
+--	Kyrian
+	q(64057),	-- Stolen Anima Vessel (32.6, 43.3) - didn't get objectID
+	q(64058),	-- Stolen Anima Vessel (34.1, 35.7) - 368951
+};

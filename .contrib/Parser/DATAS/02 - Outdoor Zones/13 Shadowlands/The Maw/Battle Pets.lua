@@ -26,7 +26,7 @@ _.Zones =
 				--	["cr"] = ,	-- 
 				}),
 				pet(3124, {	-- Vile Deathroach
-				--	["cr"] = ,	-- 
+					["cr"] = 179227,	-- Vile Deathroach
 				}),
 			}),
 		}),

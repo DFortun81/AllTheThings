@@ -302,6 +302,7 @@ _.Zones =
 				}),
 				q(63612, {	-- The Chains of Command
 					["sourceQuests"] = { 63727 },	-- The Primus Returns
+					["description"] = "Requires Renown 47.",	-- on Kyrian, presume all covenants are the same
 					["provider"] = { "n", 177194 },	-- The Primus
 					["coord"] = { 63.1, 25.3, KORTHIA },
 				}),
@@ -362,6 +363,9 @@ _.Zones =
 					["sourceQuests"] = { 63725 },	-- Into the Vault
 					["provider"] = { "n", 177228 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 63.0, 25.6, KORTHIA },
+					["g"] = {
+						i(187218),	-- Tome of Origins
+					},
 				}),
 				q(63703, {	-- Vault of Secrets
 					["sourceQuests"] = { 63902 },	-- Good News, Everyone!
