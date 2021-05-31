@@ -1798,8 +1798,6 @@ _.PVP =
 						un(REMOVED_FROM_GAME, i(67466)), -- Vicious Gladiator's Hatchet (Throw wep) wrong label by blizz
 					}),
 				}),
-			}),
-			n(-673, {	-- Ruthless Gladiator: Season 10
 				n(-656, {	-- Honor Gear Ruthless (S10)
 					["g"] = {
 						cl(DEATHKNIGHT, {
@@ -2005,6 +2003,8 @@ _.PVP =
 						}),
 					},
 				}),
+			}),
+			n(-673, {	-- Ruthless Gladiator: Season 10
 				n(-661, {	-- Gladiator PvP Gear
 					n(-319, {	-- Weapons
 						i(146640, {	-- Arsenal: Ruthless Gladiator's Weapons
@@ -3138,8 +3138,6 @@ _.PVP =
 						un(REMOVED_FROM_GAME, i(70198)),	-- Ruthless Gladiator's War Edge (Throw Wep)
 					}),
 				}),
-			}),
-			n(-674, {	-- Cataclysmic Gladiator: Season 11
 				n(-654, {	-- Honor Gear Cataclysmic (S11)
 					["description"] = "These items are only available from Ruthless Gladiator class ensembles.",
 					["g"] = {
@@ -3347,6 +3345,8 @@ _.PVP =
 						}),
 					},
 				}),
+			}),
+			n(-674, {	-- Cataclysmic Gladiator: Season 11
 				n(-661, {	-- Gladiator PvP Gear
 					n(-319, {	-- Weapons
 						i(146639, {	-- Arsenal: Cataclysmic Gladiator's Weapons
