@@ -2890,10 +2890,6 @@ _.PVP =
 								un(REMOVED_FROM_GAME, i(94386)),	-- Tyrannical Gladiator's Medallion of Cruelty (A)
 								un(REMOVED_FROM_GAME, i(94388)),	-- Tyrannical Gladiator's Medallion of Meditation (A)
 								un(REMOVED_FROM_GAME, i(94361)),	-- Tyrannical Gladiator's Medallion of Tenacity (A)
-								-- Never
-								un(NEVER_IMPLEMENTED, i(91329)),	-- Tyrannical Gladiator's Medallion of Cruelty (A)
-								un(NEVER_IMPLEMENTED, i(91333)),	-- Tyrannical Gladiator's Medallion of Meditation (A)
-								un(NEVER_IMPLEMENTED, i(91331)),	-- Tyrannical Gladiator's Medallion of Tenacity (A)
 							}),	
 						}),
 						n(-655, {	-- Ensemble Gear (Season 14 version)
@@ -2967,14 +2963,6 @@ _.PVP =
 								i(99824, {	-- Tyrannical Gladiator's Staff
 									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
 								}),
-								--Never
-								un(NEVER_IMPLEMENTED, i(99939)),	-- Tyrannical Gladiator's Baton of Light
-								un(NEVER_IMPLEMENTED, i(99767)),	-- Tyrannical Gladiator's Bonegrinder
-								un(NEVER_IMPLEMENTED, i(99934)),	-- Tyrannical Gladiator's Fleshslicer
-								un(NEVER_IMPLEMENTED, i(99780)),	-- Tyrannical Gladiator's Longbow
-								un(NEVER_IMPLEMENTED, i(99892)),	-- Tyrannical Gladiator's Pike
-								un(NEVER_IMPLEMENTED, i(99834)),	-- Tyrannical Gladiator's Rifle
-								un(NEVER_IMPLEMENTED, i(99804)),	-- Tyrannical Gladiator's Touch of Deafeat
 							}),
 							cl(DEATHKNIGHT, {
 								i(99806, {	-- Tyrannical Gladiator's Dreadplate Chestpiece
@@ -3524,14 +3512,7 @@ _.PVP =
 								i(94500),	-- Tyrannical Gladiator's Shield Wall
 								i(94318),	-- Tyrannical Gladiator's Slicer
 								i(94306),	-- Tyrannical Gladiator's Spellblade
-								i(94307),	-- Tyrannical Gladiator's Staff
-								--Never
-								un(NEVER_IMPLEMENTED, i(94324)),	-- Tyrannical Gladiator's Bonegrinder
-								un(NEVER_IMPLEMENTED, i(94314)),	-- Tyrannical Gladiator's Fleshslicer
-								un(NEVER_IMPLEMENTED, i(94303)),	-- Tyrannical Gladiator's Longbow
-								un(NEVER_IMPLEMENTED, i(94319)),	-- Tyrannical Gladiator's Pike
-								un(NEVER_IMPLEMENTED, i(94309)),	-- Tyrannical Gladiator's Rifle
-								un(NEVER_IMPLEMENTED, i(99962)),	-- Tyrannical Gladiator's Shiv	
+								i(94307),	-- Tyrannical Gladiator's Staff	
 							}),
 							cl(DEATHKNIGHT, {
 								i(138684, {	-- Ensemble: Tyrannical Gladiator's Dreadplate Armor
@@ -3999,10 +3980,6 @@ _.PVP =
 								un(REMOVED_FROM_GAME, i(94454)),	-- Tyrannical Gladiator's Medallion of Cruelty (H)
 								un(REMOVED_FROM_GAME, i(94338)),	-- Tyrannical Gladiator's Medallion of Meditation (H)
 								un(REMOVED_FROM_GAME, i(94387)),	-- Tyrannical Gladiator's Medallion of Tenacity (H)
-								-- Never
-								un(NEVER_IMPLEMENTED, i(91330)),	-- Tyrannical Gladiator's Medallion of Cruelty (H)
-								un(NEVER_IMPLEMENTED, i(91334)),	-- Tyrannical Gladiator's Medallion of Meditation (H)
-								un(NEVER_IMPLEMENTED, i(91332)),	-- Tyrannical Gladiator's Medallion of Tenacity (H)
 							}),
 						}),
 						n(-655, {	-- Ensemble Gear (Season 14 version)
@@ -4076,14 +4053,6 @@ _.PVP =
 								i(99968, {	-- Tyrannical Gladiator's Staff
 									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
 								}),
-								--Never
-								un(NEVER_IMPLEMENTED, i(99969)),	-- Tyrannical Gladiator's Baton of Light
-								un(NEVER_IMPLEMENTED, i(99985)),	-- Tyrannical Gladiator's Bonegrinder
-								un(NEVER_IMPLEMENTED, i(99975)),	-- Tyrannical Gladiator's Fleshslicer
-								un(NEVER_IMPLEMENTED, i(99964)),	-- Tyrannical Gladiator's Longbow
-								un(NEVER_IMPLEMENTED, i(99980)),	-- Tyrannical Gladiator's Pike
-								un(NEVER_IMPLEMENTED, i(99970)),	-- Tyrannical Gladiator's Rifle
-								un(NEVER_IMPLEMENTED, i(99966)),	-- Tyrannical Gladiator's Touch of Deafeat
 							}),
 							cl(DEATHKNIGHT, {
 								i(100062, {	-- Tyrannical Gladiator's Dreadplate Chestpiece
@@ -4577,6 +4546,9 @@ _.PVP =
 					},
 				}),
 				n(-662, {	-- Elite PvP Gear
+					-- Original Sources are: 
+					-- n70101 Armsmaster Holinka in Valley of the Four Winds (Alliance)
+					-- n70108 Roo Desvin in Area Kun-Lai Summit (Horde)
 					n(-319, {	-- Weapons
 						un(REMOVED_FROM_GAME, i(91130)),	-- Tyrannical Gladiator's Barrier
 						un(REMOVED_FROM_GAME, i(91403)),	-- Tyrannical Gladiator's Baton of Light
@@ -4608,8 +4580,6 @@ _.PVP =
 						un(REMOVED_FROM_GAME, i(91132)),	-- Tyrannical Gladiator's Spellblade
 						un(REMOVED_FROM_GAME, i(91183)),	-- Tyrannical Gladiator's Staff
 						un(REMOVED_FROM_GAME, i(91144)),	-- Tyrannical Gladiator's Touch of Defeat
-						--Never
-						un(NEVER_IMPLEMENTED, i(91200)),	-- Tyrannical Gladiator's Shiv
 					}),
 					cl(DEATHKNIGHT, {
 						un(REMOVED_FROM_GAME, i(91148)),	-- Tyrannical Gladiator's Dreadplate Chestpiece
@@ -4708,8 +4678,6 @@ _.PVP =
 						un(REMOVED_FROM_GAME, i(91363)),	-- Tyrannical Gladiator's Ringmail Helm
 						un(REMOVED_FROM_GAME, i(91365)),	-- Tyrannical Gladiator's Ringmail Leggings
 						un(REMOVED_FROM_GAME, i(91367)),	-- Tyrannical Gladiator's Ringmail Spaulders
-						--Never
-						un(NEVER_IMPLEMENTED, i(91799)),	-- Tyrannical Gladiator's Mail Leggings
 					}),
 					cl(WARLOCK, {
 						un(REMOVED_FROM_GAME, i(91429)),	-- Tyrannical Gladiator's Felweave Amice
@@ -4832,10 +4800,6 @@ _.PVP =
 								i(100498),	-- Grievous Gladiator's Slicer
 								i(100227),	-- Grievous Gladiator's Spellblade
 								i(100239),	-- Grievous Gladiator's Touch of Defeat
-								-- Never
-								un(NEVER_IMPLEMENTED, i(100185)),	-- Grievous Gladiator's Bonegrinder
-								un(NEVER_IMPLEMENTED, i(100241)),	-- Grievous Gladiator's Heavy Crossbow
-								un(NEVER_IMPLEMENTED, i(100278)),	-- Grievous Gladiator's Staff
 							}),
 							cl(DEATHKNIGHT, {
 								i(138661, {	-- Ensemble: Grievous Gladiator's Dreadplate Armor
@@ -5382,10 +5346,6 @@ _.PVP =
 								i(103177, {	-- Grievous Gladiator's Touch of Defeat
 									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
 								}),
-								-- Never
-								un(NEVER_IMPLEMENTED, i(100554)),	-- Grievous Gladiator's Bonegrinder
-								un(NEVER_IMPLEMENTED, i(103178)),	-- Grievous Gladiator's Heavy Crossbow
-								un(NEVER_IMPLEMENTED, i(103197)),	-- Grievous Gladiator's Staff
 							}),
 							cl(DEATHKNIGHT, {
 								i(103179, {	-- Grievous Gladiator's Dreadplate Chestpiece
@@ -5942,10 +5902,6 @@ _.PVP =
 									i(100548),	-- Grievous Gladiator's Slicer
 									i(100536),	-- Grievous Gladiator's Spellblade
 									i(100535),	-- Grievous Gladiator's Touch of Defeat
-									-- Never
-									un(NEVER_IMPLEMENTED, i(103140)),	-- Grievous Gladiator's Bonegrinder
-									un(NEVER_IMPLEMENTED, i(100556)),	-- Grievous Gladiator's Heavy Crossbow
-									un(NEVER_IMPLEMENTED, i(100537)),	-- Grievous Gladiator's Staff
 								}),
 							cl(DEATHKNIGHT, {
 								i(138662, {	-- Ensemble: Grievous Gladiator's Dreadplate Armor
@@ -6492,10 +6448,6 @@ _.PVP =
 								i(102790, {	-- Grievous Gladiator's Touch of Defeat
 									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
 								}),
-								-- Never
-								un(NEVER_IMPLEMENTED, i(102808)),	-- Grievous Gladiator's Bonegrinder
-								un(NEVER_IMPLEMENTED, i(102810)),	-- Grievous Gladiator's Heavy Crossbow
-								un(NEVER_IMPLEMENTED, i(102792)),	-- Grievous Gladiator's Staff
 							}),
 							cl(DEATHKNIGHT, {
 								i(102873, {	-- Grievous Gladiator's Dreadplate Chestpiece
@@ -6989,6 +6941,9 @@ _.PVP =
 					},
 				}),
 				n(-662, {	-- Elite PvP Gear
+					-- Original Sources are: 
+					-- n00000 Unknown in Valley of the Four Winds (Alliance)
+					-- n00000 Unknown in Area Kun-Lai Summit (Horde)
 					n(-319, {	-- Weapons
 						un(REMOVED_FROM_GAME, i(100226)),	-- Grievous Gladiator's Barrier
 						un(REMOVED_FROM_GAME, i(100493)),	-- Grievous Gladiator's Baton of Light
@@ -7016,10 +6971,6 @@ _.PVP =
 						un(REMOVED_FROM_GAME, i(100499)),	-- Grievous Gladiator's Slicer
 						un(REMOVED_FROM_GAME, i(100228)),	-- Grievous Gladiator's Spellblade
 						un(REMOVED_FROM_GAME, i(100240)),	-- Grievous Gladiator's Touch of Defeat
-						-- Never
-						un(NEVER_IMPLEMENTED, i(100186)),	-- Grievous Gladiator's Bonegrinder
-						un(NEVER_IMPLEMENTED, i(100242)),	-- Grievous Gladiator's Heavy Crossbow
-						un(NEVER_IMPLEMENTED, i(100279)),	-- Grievous Gladiator's Staff
 					}),
 					cl(DEATHKNIGHT, {
 						un(REMOVED_FROM_GAME, i(100244)),	-- Grievous Gladiator's Dreadplate Chestpiece
@@ -7268,10 +7219,6 @@ _.PVP =
 								i(102593, {	-- Prideful Gladiator's Touch of Defeat
 									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
 								}),
-								-- Never
-								un(NEVER_IMPLEMENTED, i(102611)),	-- Prideful Gladiator's Bonegrinder
-								un(NEVER_IMPLEMENTED, i(102613)),	-- Prideful Gladiator's Heavy Crossbow
-								un(NEVER_IMPLEMENTED, i(102595)),	-- Prideful Gladiator's Staff
 							}),	
 							cl(DEATHKNIGHT, {
 								i(138639, {	-- Ensemble: Prideful Gladiator's Dreadplate Armor
@@ -7983,10 +7930,6 @@ _.PVP =
 								i(103374, {	-- Prideful Gladiator's Touch of Defeat
 									["cost"] = { { "i",  137642, 5 } }, -- 5x Mark of Honor
 								}),
-								-- Never
-								un(NEVER_IMPLEMENTED, i(103337)),	-- Prideful Gladiator's Bonegrinder
-								un(NEVER_IMPLEMENTED, i(103375)),	-- Prideful Gladiator's Heavy Crossbow
-								un(NEVER_IMPLEMENTED, i(103394)),	-- Prideful Gladiator's Staff
 							}),	
 							cl(DEATHKNIGHT, {
 								i(138640, {	-- Ensemble: Prideful Gladiator's Dreadplate Armor
@@ -8613,6 +8556,9 @@ _.PVP =
 					},
 				}),
 				n(-662, {	--Elite PvP Gear --Enchant reminder - Enchanter's Illusion - Glorious Tyranny Gold can maybe add? https://www.wowhead.com/item=120286/enchanters-illusion-glorious-tyranny
+					-- Original Sources are: 
+					-- n73147 Ethan Natice in Valley of the Four Winds (Alliance)
+					-- n73145 Acon Deathwielder in Area Kun-Lai Summit (Horde)
 					n(-319, {	-- Weapons
 						un(REMOVED_FROM_GAME, i(102998)),	-- Prideful Gladiator's Barrier
 						un(REMOVED_FROM_GAME, i(103118)),	-- Prideful Gladiator's Baton of Light
@@ -8640,10 +8586,6 @@ _.PVP =
 						un(REMOVED_FROM_GAME, i(103121)),	-- Prideful Gladiator's Slicer
 						un(REMOVED_FROM_GAME, i(102999)),	-- Prideful Gladiator's Spellblade
 						un(REMOVED_FROM_GAME, i(103002)),	-- Prideful Gladiator's Touch of Defeat
-						-- Never
-						un(NEVER_IMPLEMENTED, i(102985)),	-- Prideful Gladiator's Bonegrinder
-						un(NEVER_IMPLEMENTED, i(103003)),	-- Prideful Gladiator's Heavy Crossbow
-						un(NEVER_IMPLEMENTED, i(103021)),	-- Prideful Gladiator's Staff
 					}),
 					cl(DEATHKNIGHT, {
 						un(REMOVED_FROM_GAME, i(103004)),	-- Prideful Gladiator's Dreadplate Chestpiece
@@ -8888,6 +8830,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	i(97935),	-- Malevolent Gladiator's Medallion of Cruelty (H)
 	i(91747),	-- Malevolent Gladiator's Fleshslicer
 	i(91751),	-- Malevolent Gladiator's Slasher
+	-- S13
 	i(91089),	-- Tyrannical Gladiator's Bonegrinder
 	i(91394),	-- Tyrannical Gladiator's Fleshslicer
 	i(91107),	-- Tyrannical Gladiator's Longbow
@@ -8928,4 +8871,58 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	i(91307),	-- Tyrannical Gladiator's Pike
 	i(91201),	-- Tyrannical Gladiator's Rifle
 	i(99833),	-- Tyrannical Gladiator's Shiv
+	i(91329),	-- Tyrannical Gladiator's Medallion of Cruelty (A)
+	i(91333),	-- Tyrannical Gladiator's Medallion of Meditation (A)
+	i(91331),	-- Tyrannical Gladiator's Medallion of Tenacity (A)
+	i(99939),	-- Tyrannical Gladiator's Baton of Light
+	i(99767),	-- Tyrannical Gladiator's Bonegrinder
+	i(99934),	-- Tyrannical Gladiator's Fleshslicer
+	i(99780),	-- Tyrannical Gladiator's Longbow
+	i(99892),	-- Tyrannical Gladiator's Pike
+	i(99834),	-- Tyrannical Gladiator's Rifle
+	i(99804),	-- Tyrannical Gladiator's Touch of Deafeat
+	i(94324),	-- Tyrannical Gladiator's Bonegrinder
+	i(94314),	-- Tyrannical Gladiator's Fleshslicer
+	i(94303),	-- Tyrannical Gladiator's Longbow
+	i(94319),	-- Tyrannical Gladiator's Pike
+	i(94309),	-- Tyrannical Gladiator's Rifle
+	i(99962),	-- Tyrannical Gladiator's Shiv
+	i(91330),	-- Tyrannical Gladiator's Medallion of Cruelty (H)
+	i(91334),	-- Tyrannical Gladiator's Medallion of Meditation (H)
+	i(91332),	-- Tyrannical Gladiator's Medallion of Tenacity (H)
+	i(99969),	-- Tyrannical Gladiator's Baton of Light
+	i(99985),	-- Tyrannical Gladiator's Bonegrinder
+	i(99975),	-- Tyrannical Gladiator's Fleshslicer
+	i(99964),	-- Tyrannical Gladiator's Longbow
+	i(99980),	-- Tyrannical Gladiator's Pike
+	i(99970),	-- Tyrannical Gladiator's Rifle
+	i(99966),	-- Tyrannical Gladiator's Touch of Deafeat
+	i(91200),	-- Tyrannical Gladiator's Shiv
+	i(91799),	-- Tyrannical Gladiator's Mail Leggings
+	-- S14
+	i(100185),	-- Grievous Gladiator's Bonegrinder
+	i(100241),	-- Grievous Gladiator's Heavy Crossbow
+	i(100278),	-- Grievous Gladiator's Staff
+	i(100554),	-- Grievous Gladiator's Bonegrinder
+	i(103178),	-- Grievous Gladiator's Heavy Crossbow
+	i(103197),	-- Grievous Gladiator's 
+	i(103140),	-- Grievous Gladiator's Bonegrinder
+	i(100556),	-- Grievous Gladiator's Heavy Crossbow
+	i(100537),	-- Grievous Gladiator's Staff
+	i(102808),	-- Grievous Gladiator's Bonegrinder
+	i(102810),	-- Grievous Gladiator's Heavy Crossbow
+	i(102792),	-- Grievous Gladiator's Staff
+	i(100186),	-- Grievous Gladiator's Bonegrinder
+	i(100242),	-- Grievous Gladiator's Heavy Crossbow
+	i(100279),	-- Grievous Gladiator's Staff
+	-- S15
+	i(102611),	-- Prideful Gladiator's Bonegrinder
+	i(102613),	-- Prideful Gladiator's Heavy Crossbow
+	i(102595),	-- Prideful Gladiator's Staff
+	i(103337),	-- Prideful Gladiator's Bonegrinder
+	i(103375),	-- Prideful Gladiator's Heavy Crossbow
+	i(103394),	-- Prideful Gladiator's Staff
+	i(102985),	-- Prideful Gladiator's Bonegrinder
+	i(103003),	-- Prideful Gladiator's Heavy Crossbow
+	i(103021),	-- Prideful Gladiator's Staff
 });
