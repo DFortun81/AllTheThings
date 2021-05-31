@@ -2534,7 +2534,6 @@ _.Zones =
 									i(84791),	-- Malevolent Gladiator's Decapitator
 									i(84866),	-- Malevolent Gladiator's Endgame
 									i(84788),	-- Malevolent Gladiator's Energy Staff
-									i(84893),	-- Malevolent Gladiator's Fleshslicer
 									i(84971),	-- Malevolent Gladiator's Gavel
 									i(84790),	-- Malevolent Gladiator's Greatsword
 									i(84966),	-- Malevolent Gladiator's Hacker

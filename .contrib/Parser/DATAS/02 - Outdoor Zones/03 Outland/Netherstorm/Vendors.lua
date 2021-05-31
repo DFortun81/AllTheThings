@@ -3253,7 +3253,9 @@ _.Zones =
 						i(77610),	-- Replica Knight-Lieutenant's Chain Gauntlets
 						i(77609),	-- Replica Lieutenant Commander's Chain Helmet
 						i(77606),	-- Replica Knight-Lieutenant's Chain Boots
-						i(77660),	-- Replica Sergeant Major's Plate Wristguards
+						i(77660, {	-- Replica Sergeant Major's Plate Wristguards
+							["description"] = "This item has to be purchased on Alliance as there is no matching Horde Version.",
+						}),
 					},
 				}),
 				n(54648,  {	-- Leeni "Smiley" Smalls <Classic Horde Mail & Plate>

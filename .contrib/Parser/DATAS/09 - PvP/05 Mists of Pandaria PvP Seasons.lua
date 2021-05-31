@@ -5,7 +5,7 @@
 _.PVP =
 {
 	n(-10041, {	-- Mists of Pandaria
-		["g"] = {
+		["g"] = { --	["g"] = bubbleDown({["u"] = 12}, {
 			n(-675, {	-- Malevolent Gladiator: Season 12
 				n(-9983, {	-- Honor Gear
 					cl(DEATHKNIGHT, {
@@ -689,7 +689,6 @@ _.PVP =
 									i(84791),	-- Malevolent Gladiator's Decapitator
 									i(84866),	-- Malevolent Gladiator's Endgame
 									i(84788),	-- Malevolent Gladiator's Energy Staff
-									i(84893),	-- Malevolent Gladiator's Fleshslicer
 									i(84971),	-- Malevolent Gladiator's Gavel
 									i(84790),	-- Malevolent Gladiator's Greatsword
 									i(84966),	-- Malevolent Gladiator's Hacker
@@ -8837,7 +8836,7 @@ _.PVP =
 									["sym"] = { 
 										{"sub", "pvp_set_ensemble", -9979, -678, -9914, -661, 3 },
 										{"select", "itemID", 102753 },	-- Prideful Gladiator's Wristguards of Accuracy
-										{"select", "itemID", 102688 },	-- Prideful Gladiator's Wristguards of Alacrity
+										{"select", "itemID", 103217 },	-- Prideful Gladiator's Wristguards of Alacrity (World Boss has different Version)
 										{"select", "itemID", 102645 },	-- Prideful Gladiator's Links of Accuracy
 										{"select", "itemID", 102617 },	-- Prideful Gladiator's Links of Cruelty
 										{"select", "itemID", 102646 },	-- Prideful Gladiator's Sabatons of Alacrity
@@ -9244,7 +9243,10 @@ _.PVP =
 								i(102753, {	-- Prideful Gladiator's Wristguards of Accuracy
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
-								i(102688, {	-- Prideful Gladiator's Wristguards of Alacrity
+								i(102688, {	-- Prideful Gladiator's Wristguards of Alacrity (World Boss)
+									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
+								}),
+								i(103217, {	-- Prideful Gladiator's Wristguards of Alacrity (Ensemble Diff Version)
 									["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 								}),
 							}),
@@ -10309,7 +10311,7 @@ _.PVP =
 					}),
 				}),
 			}),
-		},
+		}, -- )
 	}),
 };
 
@@ -10396,6 +10398,8 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	i(97935),	-- Malevolent Gladiator's Medallion of Cruelty (H)
 	i(91747),	-- Malevolent Gladiator's Fleshslicer
 	i(91751),	-- Malevolent Gladiator's Slasher
+	i(84893),	-- Malevolent Gladiator's Fleshslicer
+	i(84968),	-- Malevolent Gladiator's Slicer
 	-- S13
 	i(91089),	-- Tyrannical Gladiator's Bonegrinder
 	i(91394),	-- Tyrannical Gladiator's Fleshslicer
