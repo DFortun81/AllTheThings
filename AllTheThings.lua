@@ -6038,6 +6038,23 @@ local classIcons = {
 	[11] = "Interface\\Icons\\ClassIcon_Druid",
 	[12] = "Interface\\Icons\\ClassIcon_DemonHunter",
 };
+local GetClassIDFromClassFile = function(classFile)
+	for i,icon in pairs(classIcons) do
+		local info = C_CreatureInfo.GetClassInfo(i);
+		if info and info.classFile == classFile then
+			return i;
+		end
+	end
+end
+app.ClassDB = setmetatable({}, { __index = function(t, className)
+	for i,_ in pairs(classIcons) do
+		local info = C_CreatureInfo.GetClassInfo(i);
+		if info and info.className == className then
+			rawset(t, className, i);
+			return i;
+		end
+	end
+end });
 local fields = {
 	["key"] = function(t)
 		return "classID";
@@ -6480,6 +6497,21 @@ local StandingByID = {
 		["threshold"] = 42000,
 	},
 };
+app.FactionNameByID = setmetatable({}, { __index = function(t, id)
+	local name = select(1, GetFactionInfoByID(id));
+	if name then
+		rawset(t, id, name);
+		rawset(app.FactionIDByName, name, id);
+		return name;
+	end
+end });
+app.FactionIDByName = setmetatable({}, { __index = function(t, name)
+	for i=1,3000,1 do
+		if app.FactionNameByID[i] == name then
+			return i;
+		end
+	end
+end });
 app.FACTION_RACES = {
 	[1] = {
 		1,	-- Human
@@ -6519,6 +6551,10 @@ app.ColorizeStandingText = function(standingID, text)
 		return Colorize(text, RGBToHex(rgb.r * 255, rgb.g * 255, rgb.b * 255));
 	end
 end
+app.GetFactionIDByName = function(name)
+	name = strtrim(name);
+	return app.FactionIDByName[name] or name;
+end
 app.GetFactionStanding = function(reputationPoints)
 	-- Total earned rep from GetFactionInfoByID is a value AWAY FROM ZERO, not a value within the standing bracket.
 	if reputationPoints then
@@ -6533,6 +6569,14 @@ app.GetFactionStanding = function(reputationPoints)
 end
 app.GetFactionStandingText = function(standingID)
 	return app.ColorizeStandingText(standingID, _G["FACTION_STANDING_LABEL" .. standingID] or UNKNOWN);
+end
+app.GetFactionStandingThresholdFromString = function(replevel)
+	replevel = strtrim(replevel);
+	for standing=1,8,1 do
+		if _G["FACTION_STANDING_LABEL" .. standing] == replevel then
+			return StandingByID[standing].threshold;
+		end
+	end
 end
 app.IsFactionExclusive = function(factionID)
 	return factionID == 934 or factionID == 932;
@@ -8086,6 +8130,247 @@ app.CreateItem = function(id, t)
 	end
 	return setmetatable(constructor(id, t, "itemID"), app.BaseItem);
 end
+
+local HarvestedItemDatabase = {};
+local itemHarvesterFields = RawCloneData(itemFields);
+itemHarvesterFields.collectible = function(t)
+	return true;
+end
+itemHarvesterFields.collected = function(t)
+	return false;
+end
+itemHarvesterFields.text = function(t)
+	local link = t.link;
+	if link then
+		local itemName, itemLink, itemQuality, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount,
+		itemEquipLoc, itemTexture, sellPrice, classID, subclassID, bindType, expacID, setID, isCraftingReagent
+			= GetItemInfo(link);
+		if itemName then
+			local spellName, spellID;
+			if class == "Recipe" or class == "Mount" then
+				spellName, spellID = GetItemSpell(t.itemID);
+				if spellName == "Learning" then spellID = nil; end	-- RIP.
+				setmetatable(t, app.BaseItemTooltipHarvester);
+			else
+				setmetatable(t, app.BaseItemTooltipHarvester);
+			end
+			local info = {
+				["name"] = itemName,
+				["itemID"] = t.itemID,
+				["equippable"] = itemEquipLoc and itemEquipLoc ~= "" and true or false,
+				["class"] = classID,
+				["subclass"] = subclassID,
+				["inventoryType"] = C_Item.GetItemInventoryTypeByID(t.itemID),
+				["b"] = bindType,
+				["q"] = itemQuality,
+				["iLvl"] = itemLevel,
+				["spellID"] = spellID,
+			};
+			if itemMinLevel and itemMinLevel > 0 then
+				info.lvl = itemMinLevel;
+			end
+			if info.inventoryType == 0 then
+				info.inventoryType = nil;
+			end
+			if info.b and info.b ~= 1 then
+				info.b = nil;
+			end
+			if info.q and info.q < 1 then
+				info.q = nil;
+			end
+			if info.iLvl and info.iLvl < 2 then
+				info.iLvl = nil;
+			end
+			t.itemType = itemType;
+			t.itemSubType = itemSubType;
+			t.info = info;
+			t.retries = nil;
+			HarvestedItemDatabase[t.itemID] = info;
+			AllTheThingsHarvestItems = HarvestedItemDatabase;
+			return link;
+		end
+	end
+	
+	t.retries = (t.retries or 0) + 1;
+	if t.retries > 30 then
+		rawset(t, "collected", true);
+	end
+end
+app.BaseItemHarvester = app.BaseObjectFields(itemHarvesterFields);
+
+local ItemHarvester = CreateFrame("GameTooltip", "ATTItemHarvester", UIParent, "GameTooltipTemplate");
+local itemTooltipHarvesterFields = RawCloneData(itemHarvesterFields);
+itemTooltipHarvesterFields.text = function(t)
+	local link = t.link;
+	if link then
+		ItemHarvester:SetOwner(UIParent,"ANCHOR_NONE")
+		ItemHarvester:SetHyperlink(link);
+		local lineCount = ItemHarvester:NumLines();
+		if ATTItemHarvesterTextLeft1:GetText() and ATTItemHarvesterTextLeft1:GetText() ~= RETRIEVING_DATA and lineCount > 0 then
+			for index=2,lineCount,1 do
+				local line = _G["ATTItemHarvesterTextLeft" .. index] or _G["ATTItemHarvesterText" .. index];
+				if line then
+					local text = line:GetText();
+					if text then
+						if string.find(text, "Classes: ") then
+							local classes = {};
+							local _,list = strsplit(":", text);
+							for i,s in ipairs({strsplit(",", list)}) do
+								table.insert(classes, app.ClassDB[strtrim(s)]);
+							end
+							if #classes > 0 then
+								t.info.classes = classes;
+							end
+						elseif string.find(text, "Races: ") then
+							local races = {};
+							local _,list = strsplit(":", text);
+							for i,s in ipairs({strsplit(",", list)}) do
+								table.insert(races, app.RaceDB[strtrim(s)]);
+							end
+							if #races > 0 then
+								t.info.races = races;
+							end
+						elseif string.find(text, " Only") then
+							local faction,list,c = strsplit(" ", text);
+							if not c then
+								faction = strtrim(faction);
+								if faction == "Alliance" then
+									t.info.races = app.FACTION_RACES[1];
+								elseif faction == "Horde" then
+									t.info.races = app.FACTION_RACES[2];
+								else
+									print("Unknown Faction", faction);
+								end
+							end
+						elseif string.find(text, "Requires") and not string.find(text, "Level") and not string.find(text, "Riding") then
+							local c = strsub(text, 1, 1);
+							if c ~= " " and c ~= "\t" and c ~= "\n" and c ~= "\r" then
+								text = strsub(strtrim(text), 9);
+								if string.find(text, "-") then
+									local faction,replevel = strsplit("-", text);
+									t.info.minReputation = { app.GetFactionIDByName(faction), app.GetFactionStandingThresholdFromString(replevel) };
+								else
+									if string.find(text, "%(") then
+										text = strsplit("(", text);
+									end
+									
+									local spellName = strtrim(text);
+									if string.find(spellName, "Outland ") then spellName = strsub(spellName, 9);
+									elseif string.find(spellName, "Northrend ") then spellName = strsub(spellName, 11);
+									elseif string.find(spellName, "Cataclysm ") then spellName = strsub(spellName, 11);
+									elseif string.find(spellName, "Pandaria ") then spellName = strsub(spellName, 10);
+									elseif string.find(spellName, "Draenor ") then spellName = strsub(spellName, 9);
+									elseif string.find(spellName, "Legion ") then spellName = strsub(spellName, 8);
+									elseif string.find(spellName, "Kul Tiran ") then spellName = strsub(spellName, 11);
+									elseif string.find(spellName, "Zandalari ") then spellName = strsub(spellName, 11);
+									elseif string.find(spellName, "Shadowlands ") then spellName = strsub(spellName, 13);
+									elseif string.find(spellName, "Classic ") then spellName = strsub(spellName, 9); end
+									if spellName == "Herbalism" then spellName = "Herb Gathering"; end
+									spellName = strtrim(spellName);
+									local spellID = app.SpellNameToSpellID[spellName];
+									if spellID then
+										local skillID = app.SpellIDToSkillID[spellID];
+										if skillID then
+											t.info.requireSkill = skillID;
+										elseif spellName == "Pick Pocket" then
+											-- Do nothing, for now.
+										elseif spellName == "Warforged Nightmare" then
+											-- Do nothing, for now.
+										else
+											print("Unknown Skill", text, "'" .. spellName .. "'");
+										end
+									elseif spellName == "Previous Rank" then
+										-- Do nothing
+									elseif spellName == "" then
+										-- Do nothing
+									elseif spellName == "Brewfest" then
+										-- Do nothing, yet.
+									elseif spellName == "Call of the Scarab" then
+										-- Do nothing, yet.
+									elseif spellName == "Children's Week" then
+										-- Do nothing, yet.
+									elseif spellName == "Darkmoon Faire" then
+										-- Do nothing, yet.
+									elseif spellName == "Day of the Dead" then
+										-- Do nothing, yet.
+									elseif spellName == "Feast of Winter Veil" then
+										-- Do nothing, yet.
+									elseif spellName == "Hallow's End" then
+										-- Do nothing, yet.
+									elseif spellName == "Love is in the Air" then
+										-- Do nothing, yet.
+									elseif spellName == "Lunar Festival" then
+										-- Do nothing, yet.
+									elseif spellName == "Midsummer Fire Festival" then
+										-- Do nothing, yet.
+									elseif spellName == "Moonkin Festival" then
+										-- Do nothing, yet.
+									elseif spellName == "Noblegarden" then
+										-- Do nothing, yet.
+									elseif spellName == "Pilgrim's Bounty" then
+										-- Do nothing, yet.
+									elseif spellName == "Un'Goro Madness" then
+										-- Do nothing, yet.
+									elseif spellName == "Thousand Boat Bash" then
+										-- Do nothing, yet.
+									elseif spellName == "Glowcap Festival" then
+										-- Do nothing, yet.
+									elseif spellName == "Battle Pet Training" then
+										-- Do nothing.
+									elseif spellName == "Lockpicking" then
+										-- Do nothing.
+									elseif spellName == "Luminous Luminaries" then
+										-- Do nothing.
+									elseif spellName == "Pick Pocket" then
+										-- Do nothing.
+									elseif spellName == "WoW's 14th Anniversary" then
+										-- Do nothing.
+									elseif spellName == "WoW's 13th Anniversary" then
+										-- Do nothing.
+									elseif spellName == "WoW's 12th Anniversary" then
+										-- Do nothing.
+									elseif spellName == "WoW's 11th Anniversary" then
+										-- Do nothing.
+									elseif spellName == "WoW's 10th Anniversary" then
+										-- Do nothing.
+									elseif spellName == "WoW's Anniversary" then
+										-- Do nothing.
+									elseif spellName == "level 1 to 29" then
+										-- Do nothing.
+									elseif spellName == "level 1 to 39" then
+										-- Do nothing.
+									elseif spellName == "level 1 to 44" then
+										-- Do nothing.
+									elseif spellName == "level 1 to 49" then
+										-- Do nothing.
+									elseif spellName == "Unknown" then
+										-- Do nothing.
+									elseif spellName == "Open" then
+										-- Do nothing.
+									elseif string.find(spellName, " specialization") then
+										-- Do nothing.
+									elseif string.find(spellName, ": ") then
+										-- Do nothing.
+									else
+										print("Unknown Spell", text, "'" .. spellName .. "'");
+									end
+								end
+							end
+						end
+					end
+				end
+			end
+			rawset(t, "text", link);
+			rawset(t, "collected", true);
+		end
+		ItemHarvester:Hide();
+		return link;
+	end
+end
+app.BaseItemTooltipHarvester = app.BaseObjectFields(itemTooltipHarvesterFields);
+app.CreateItemHarvester = function(id, t)
+	return setmetatable(constructor(id, t, "itemID"), app.BaseItemHarvester);
+end
 end)();
 
 -- Map Lib
@@ -8793,6 +9078,15 @@ app.SkillIDToSpellID = setmetatable({
 	[10656] = 10656,	-- Dragonscale Leatherworking
 	[10658] = 10658,	-- Elemental Leatherworking
 	[10660] = 10660,	-- Tribal Leatherworking
+	[26801] = 26801,	-- Shadoweave Tailoring
+	[26797] = 26797,	-- Spellfire Tailoring
+	[26798] = 26798,	-- Mooncloth Tailoring
+	[125589] = 125589,	-- Way of the Brew
+	[124694] = 124694,	-- Way of the Grill
+	[125588] = 125588,	-- Way of the Oven
+	[125586] = 125586,	-- Way of the Pot
+	[125587] = 125587,	-- Way of the Steamer
+	[125584] = 125584,	-- Way of the Wok
 }, {__index = function(t,k) end})
 app.SpellIDToSkillID = {};
 for skillID,spellID in pairs(app.SkillIDToSpellID) do
@@ -8809,6 +9103,15 @@ app.SpecializationSpellIDs = setmetatable({
 	[10656] = 2108,	-- Dragonscale Leatherworking
 	[10658] = 2108,	-- Elemental Leatherworking
 	[10660] = 2108,	-- Tribal Leatherworking
+	[26801] = 3908,	-- Shadoweave Tailoring
+	[26797] = 3908,	-- Spellfire Tailoring
+	[26798] = 3908,	-- Mooncloth Tailoring
+	[125589] = 2550,-- Way of the Brew
+	[124694] = 2550,-- Way of the Grill
+	[125588] = 2550,-- Way of the Oven
+	[125586] = 2550,-- Way of the Pot
+	[125587] = 2550,-- Way of the Steamer
+	[125584] = 2550,-- Way of the Wok
 }, {__index = function(t,k) return k; end})
 
 local fields = {
@@ -9618,6 +9921,49 @@ end)();
 
 -- Spell Lib
 (function()
+local MaxSpellRankPerSpellName = {};
+local SpellIDToSpellName = {};
+app.GetSpellName = function(spellID)
+	local spellName = rawget(SpellIDToSpellName, spellID);
+	if spellName then return spellName; end
+	spellName = GetSpellInfo(spellID);
+	if spellName and spellName ~= "" then
+		rawset(SpellIDToSpellName, spellID, spellName);
+		rawset(app.SpellNameToSpellID, spellName, spellID);
+		return spellName;
+	end
+end
+app.SpellNameToSpellID = setmetatable({}, {
+	__index = function(t, key)
+		local cache = fieldCache["spellID"];
+		for spellID,g in pairs(cache) do
+			app.GetSpellName(spellID);
+		end
+		for _,spellID in pairs(app.SkillIDToSpellID) do
+			app.GetSpellName(spellID);
+		end
+		for specID,spellID in pairs(app.SpecializationSpellIDs) do
+			app.GetSpellName(spellID);
+		end
+		local numSpellTabs, offset, lastSpellName, currentSpellRank = GetNumSpellTabs(), select(4, GetSpellTabInfo(1)), "", 1;
+		for spellTabIndex=2,numSpellTabs do
+			local numSpells = select(4, GetSpellTabInfo(spellTabIndex));
+			for spellIndex=1,numSpells do
+				local spellName, _, _, _, _, _, spellID = GetSpellInfo(offset + spellIndex, BOOKTYPE_SPELL);
+				if lastSpellName == spellName then
+					currentSpellRank = currentSpellRank + 1;
+				else
+					lastSpellName = spellName;
+					currentSpellRank = 1;
+				end
+				app.GetSpellName(spellID, currentSpellRank);
+				rawset(app.SpellNameToSpellID, spellName, spellID);
+			end
+			offset = offset + numSpells;
+		end
+		return rawget(t, key);
+	end
+});
 local fields = {
 	["key"] = function(t)
 		return "spellID";
@@ -13591,6 +13937,21 @@ function app:GetWindow(suffix, parent, onUpdate)
 				}
 			}
 		};
+		
+		local function DelayedUpdateCoroutine()
+			while window.delayRemaining > 0 do
+				coroutine.yield();
+				window.delayRemaining = window.delayRemaining - 1;
+			end
+			window:Update(true);
+		end
+		window.DelayedUpdate = function(self)
+			window.delayRemaining = 180;
+			StartCoroutine(window:GetName() .. ":DelayedUpdatePreWarm", function()
+				coroutine.yield();
+				StartCoroutine(window:GetName() .. ":DelayedUpdate", DelayedUpdateCoroutine);
+			end);
+		end
 
 		-- set whether this window lock is persistable between sessions
 		if suffix == "Prime" or suffix == "CurrentInstance" or suffix == "RaidAssistant" or suffix == "WorldQuests" then
@@ -15229,6 +15590,69 @@ app:GetWindow("ItemFilter", UIParent, function(self)
 
 		-- Update the window and all of its row data
 		if self.data.OnUpdate then self.data.OnUpdate(self.data, self); end
+		self:BaseUpdate(true);
+	end
+end);
+app:GetWindow("ItemFinder", UIParent, function(self, ...)
+	if self:IsVisible() then
+		if not self.initialized then
+			self.initialized = true;
+			local db = {};
+			db.g = {
+				{
+					['text'] = "Update Now",
+					['icon'] = app.asset("ability_monk_roll"),
+					["description"] = "Click this to update the listing. Doing so shall remove all invalid, grey, or white items.",
+					['visible'] = true,
+					['fails'] = 0,
+					['OnClick'] = function(row, button)
+						self:Update(true);
+						return true;
+					end,
+					['OnUpdate'] = app.AlwaysShowUpdate,
+				},
+			};
+			db.OnUpdate = function(t)
+				local g = t.g;
+				if g then
+					local count = #g;
+					if count > 0 then
+						for i=count,1,-1 do
+							if g[i].collected then
+								table.remove(g, i);
+								self.shouldFullRefresh = true;
+							end
+						end
+					end
+					for count=#g,100 do
+						local i = db.currentItemID - 1;
+						if i > 0 then
+							db.currentItemID = i;
+							local t = app.CreateItemHarvester(i);
+							t.parent = db;
+							tinsert(g, t);
+							self.shouldFullRefresh = true;
+						end
+					end
+					self:DelayedUpdate(true);
+					self.delayRemaining = 1;
+				end
+			end;
+			db.text = "Item Finder";
+			db.icon = app.asset("Achievement_Dungeon_GloryoftheRaider");
+			db.description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.\n\nUsing this tool will lag your WoW every 5 seconds. Not sure why - likely a bad Blizzard Database thing.";
+			db.visible = true;
+			db.expanded = true;
+			db.progress = 0;
+			db.total = 0;
+			db.back = 1;
+			db.currentItemID = 200001;
+			self.data = db;
+		end
+		self.data.progress = 0;
+		self.data.total = 0;
+		UpdateGroups(self.data, self.data.g);
+		if self.data.OnUpdate then self.data.OnUpdate(self.data); end
 		self:BaseUpdate(true);
 	end
 end);
