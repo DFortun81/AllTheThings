@@ -9,6 +9,20 @@ _.WorldDrops =
 			prof(ALCHEMY, {
 				un(NEVER_IMPLEMENTED, i(112022)),	-- Recipe: Mighty Shadow Protection Potion
 			}),
+			prof(COOKING, {
+				i(43509, {	-- Recipe: Bad Clams
+					["description"] = "Can drop from any Northrend mob.",
+				}),
+				i(43510, {	-- Recipe: Haunted Herring
+					["description"] = "Can drop from any Northrend mob.",
+				}),
+				i(43508, {	-- Recipe: Last Week's Mammoth
+					["description"] = "Can drop from any Northrend mob.",
+				}),
+				i(43507, {	-- Recipe: Tasty Cupcake
+					["description"] = "Can drop from any Northrend mob.",
+				}),
+			}),
 			prof(ENCHANTING, {
 				i(37341, {	-- Formula: Enchant Boots - Superior Agility
 					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, formula was removed from game
