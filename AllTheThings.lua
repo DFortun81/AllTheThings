@@ -5625,7 +5625,7 @@ local fields = {
 		return select(10, GetAchievementInfo(t.achievementID));
 	end,
 	["collectible"] = function(t)
-		return app.CollectibleAchievements and app.CheckCustomCollects(t);
+		return app.CollectibleAchievements;
 	end,
 	["collected"] = function(t)
 		if app.CurrentCharacter.Achievements[t.achievementID] then return 1; end
@@ -6847,7 +6847,7 @@ local fields = {
 		return (description and (description .."\n\n") or "") .. L["FLIGHT_PATHS_DESC"];
 	end,
 	["collectible"] = function(t)
-		return app.CollectibleFlightPaths and app.CheckCustomCollects(t);
+		return app.CollectibleFlightPaths;
 	end,
 	["collected"] = function(t)
 		if app.CurrentCharacter.FlightPaths[t.flightPathID] then return 1; end
@@ -9374,8 +9374,6 @@ app.CollectibleAsQuest = function(t)
 			(
 			-- must not be repeatable, unless considering repeatable quests as collectible
 			(not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"))
-			-- must match custom collectibility if set as well
-			and app.CheckCustomCollects(t)
 			-- must not be a breadcrumb unless collecting breadcrumbs and is available OR collecting breadcrumbs and in Account-mode OR in Party Sync
 			and (app.MODE_DEBUG
 				or (not t.isBreadcrumb and not t.DisablePartySync)
@@ -10465,7 +10463,8 @@ function app.FilterItemClass(item)
 			and app.RequiredSkillFilter(item)
 			and app.ClassRequirementFilter(item)
 			and app.RaceRequirementFilter(item)
-			and app.RequireFactionFilter(item);
+			and app.RequireFactionFilter(item)
+			and app.RequireCustomCollectFilter(item);
 	end
 end
 function app.FilterItemClass_RequireClasses(item)
@@ -10543,6 +10542,16 @@ function app.FilterItemClass_RequireFaction(item)
 	else
 		return true;
 	end
+end
+function app.FilterItemClass_CustomCollect(item)
+	if item.customCollect then
+		for _,c in ipairs(item.customCollect) do
+			if not app.CurrentCharacter.CustomCollects[c] then
+				return false;
+			end
+		end
+	end
+	return true;
 end
 function app.FilterItemSource(sourceInfo)
 	return sourceInfo.isCollected;
@@ -10898,6 +10907,7 @@ app.RaceRequirementFilter = app.NoFilter;
 app.RequireBindingFilter = app.NoFilter;
 app.SeasonalItemFilter = app.NoFilter;
 app.RequireFactionFilter = app.FilterItemClass_RequireFaction;
+app.RequireCustomCollectFilter = app.FilterItemClass_CustomCollect;
 app.UnobtainableItemFilter = app.NoFilter;
 app.RequiredSkillFilter = app.NoFilter;
 app.ShowIncompleteThings = app.Filter;
