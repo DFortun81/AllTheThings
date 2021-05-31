@@ -910,6 +910,7 @@ _.Zones =
 _.HiddenQuestTriggers = {
 	-- Missions
 	q(53751),	-- Grimwatt's Crash completed
+	q(53749),	-- Mistvine Ledge completed
 	q(53747),	-- Veiled Grotto completed
 	-- Outpost Upgrades
 	q(54304),	-- Upgrade: Arom's Stand started
