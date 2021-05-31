@@ -503,6 +503,10 @@ _.Zones =
 					["provider"] = { "n", 163073 },	-- Cryptkeeper Kassir
 					["coord"] = { 70.1, 56.1, REVENDRETH },
 				}),
+				q(60501, {	-- Redemption for the Redeemer
+					["description"] = "Defeat Sire Denathrius on any difficulty in Castle Nathria to start this quest.",
+					["provider"] = { "i", 179358 },	-- Remornia
+				}),
 				q(57694, {	-- Refuge of Revendreth
 					["sourceQuests"] = { 57693 },	-- Torghast, Tower of the Damned
 					["provider"] = { "n", 162688 },	-- Prince Renathal
