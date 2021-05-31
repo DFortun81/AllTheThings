@@ -415,26 +415,27 @@ _.Zones =
 					["icon"] = 1542847,
 				}),
 				n(179772, {	-- Spectral Bound Chest
-					["description"] = "Requires collecting three |cFFFFFFFFSpectral Keys|r in a specific order.",
-				--	["isDaily"] = true,	-- TODO - the keys reset daily, but i'm not actually sure if this chest does, because i have not yet personally opened it lol.  under the assumption the chest is 1-time, i commented out isDaily on the keys for ease of tracking, and attached altQuests so if the quest is permanent they won't show up once the one-time chest has been collected.  will revisit and change if necessary when i'm able to open the chest myself
+					["description"] = "Requires collecting three |cFFFFFFFFSpectral Keys|r.  Use your preferred method of daily quest tracking to see the locations of the keys.\n\n|cffde1c1cKeys 1 and 2 can be collected in any order, but the key by the chain must be clicked last!|r",
+					["isDaily"] = true,
 					["questID"] = 64247,
+					["isDaily"] = true,
 					["coord"] = { 62.1, 55.4, KORTHIA },
 					["g"] = {
 						q(64250, {	-- Spectral Key, Path of Understanding
-							["altQuests"] = { 64247 },
-						--	["isDaily"] = true,
-							["coord"] = { 61.0, 58.7, KORTHIA },
+							["description"] = "Next to the anima pool.\n\nAn alternative to this key can be found behind the building on the Path of Understanding at |cFFFFFFFF61.0, 58.7|r.",
+							["isDaily"] = true,
+							["coord"] = { 60.3, 56.5, KORTHIA },
 							["name"] = "Spectral Key #1, Path of Understanding",
 						}),
 						q(64249, {	-- Spectral Key, Seeker's Quorum Building
-							["altQuests"] = { 64247 },
-						--	["isDaily"] = true,
+							["description"] = "An alternative to this key can be found on a rock next to the Seeker's Quorum building at |cFFFFFFFF52.6, 49.7|r.",
+							["isDaily"] = true,
 							["coord"] = { 54.2, 50.6, KORTHIA },
 							["name"] = "Spectral Key #2, Seeker's Quorum Building",
 						}),
 						q(64248, {	-- Spectral Key, Seeker's Quorum Chain
-							["altQuests"] = { 64247 },
-						--	["isDaily"] = true,
+							["description"] = "|cffde1c1cMust be clicked last!|r",
+							["isDaily"] = true,
 							["coord"] = { 59.1, 48.7, KORTHIA },
 							["name"] = "Spectral Key #3, Seeker's Quorum Chain",
 						}),

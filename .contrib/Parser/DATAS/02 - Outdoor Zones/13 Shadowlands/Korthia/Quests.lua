@@ -273,6 +273,7 @@ _.Zones =
 					},
 				}),
 				q(63731, {	-- Shattered Relics
+				--	TODO: not sure if this is available any earlier than the 2nd 9.1 skip
 					["isBreadcrumb"] = true,
 					["description"] = "The item that starts this quest can be looted from any treasure chest or rare in Korthia.",
 					["provider"] = { "i", 187177 },	-- Shattered Relic

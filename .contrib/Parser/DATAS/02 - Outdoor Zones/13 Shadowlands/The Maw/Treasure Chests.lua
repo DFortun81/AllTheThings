@@ -32,14 +32,14 @@ _.Zones =
 					},
 				}),
 				o(369216, {	-- Helsworn Chest
-				--	disconnected right after i looted this, logged back in dead, don't have questID
 				--	["questID"] = 64256,
 					["coord"] = { 66.0, 48.3, THE_MAW },
 					["g"] = {
 						crit(7, {	-- Helsworn Chest
 							["achievementID"] = 15099,	-- Treasures of Korthia
 						}),
-						i(187351),	-- Stygic Cluster TODO - not sure if this is a static drop
+						i(185902),	-- Iron Maiden's Toolkit
+						i(187351),	-- Stygic Cluster
 					},
 				}),
 				o(369224, {	-- Jeweled Heart of Ezekiel

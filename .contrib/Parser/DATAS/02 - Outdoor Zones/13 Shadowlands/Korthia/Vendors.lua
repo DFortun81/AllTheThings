@@ -199,22 +199,22 @@ _.Zones =
 									i(186669),	-- Korthian Caretaker's Wraps
 								}),
 								f(5,    {	-- Leather
-									i(185866),	-- Shardclaw Hide Belt
-									i(185862),	-- Shardclaw Hide Boots
-									i(185867),	-- Shardclaw Hide Bracers
-									i(185865),	-- Shardclaw Hide Breeches
-									i(186736),	-- Shardclaw Hide Cowl
-									i(186739),	-- Shardclaw Hide Cuffs
-									i(186757),	-- Shardclaw Hide Epaulets
-									i(185863),	-- Shardclaw Hide Gloves
-									i(186735),	-- Shardclaw Hide Handlers
-									i(185864),	-- Shardclaw Hide Hood
-									i(186756),	-- Shardclaw Hide Jerkin
-									i(185885),	-- Shardclaw Hide Shoulderguards
-									i(186738),	-- Shardclaw Hide Strap
-									i(186734),	-- Shardclaw Hide Treads
-									i(186737),	-- Shardclaw Hide Trousers
-									i(185884),	-- Shardclaw Hide Vest*
+									i(185866),	-- Shardhide Belt
+									i(185862),	-- Shardhide Boots
+									i(185867),	-- Shardhide Bracers
+									i(185865),	-- Shardhide Breeches
+									i(186736),	-- Shardhide Cowl
+									i(186739),	-- Shardhide Cuffs
+									i(186757),	-- Shardhide Epaulets
+									i(185863),	-- Shardhide Gloves
+									i(186735),	-- Shardhide Handlers*
+									i(185864),	-- Shardhide Hood
+									i(186756),	-- Shardhide Jerkin
+									i(185885),	-- Shardhide Shoulderguards
+									i(186738),	-- Shardhide Strap
+									i(186734),	-- Shardhide Treads
+									i(186737),	-- Shardhide Trousers
+									i(185884),	-- Shardhide Vest*
 								}),
 								f(6,    {	-- Mail
 									i(185875),	-- Razorwing Scale Bracers

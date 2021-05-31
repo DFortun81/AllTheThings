@@ -665,6 +665,7 @@ _.Zones =
 							i(186727),	-- Seal Breaker Key
 						}),
 						i(186217),	-- Supple Helhound Leather Pants
+						i(187359),	-- Ylva's Water Dish
 					},
 				}),
 				i(182329, {	-- Domination's Calling
@@ -678,4 +679,8 @@ _.Zones =
 			}),
 		}),
 	}),
+};
+
+_.HiddenQuestTriggers = {
+	q(62683),	-- looting Feeder's Hand and Key from Ylva
 };

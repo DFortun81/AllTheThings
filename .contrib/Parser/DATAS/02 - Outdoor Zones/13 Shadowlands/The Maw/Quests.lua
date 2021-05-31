@@ -711,8 +711,8 @@ _.Zones =
 				q(63616, {	-- A Job Done Right
 					["sourceQuests"] = {
 						63615,	-- Clip Their Wings
+						63613,	-- Gates of the Damned
 						63614,	-- Weapon in Hand
-						63613,	-- What We Wish to Be
 					},
 					["provider"] = { "n", 177586 },	-- Baroness Draka
 				}),
@@ -767,6 +767,11 @@ _.Zones =
 					["coord"] = { 58.3, 83.8, 1971 },	-- Skyhold (scenario)
 					["maps"] = { 1971 },	-- Skyhold (scenario)
 				}),
+				q(63613, {	-- Gates of the Damned
+					["sourceQuests"] = { 63612 },	-- The Chains of Command
+					["provider"] = { "n", 177560 },	-- Baroness Draka
+					["coord"] = { 62.8, 66.0, THE_MAW },
+				}),
 				q(63902, {	-- Good News, Everyone!
 					["sourceQuests"] = { 63901 },	-- Focusing the Eye
 					["provider"] = { "n", 178950 },	-- Danica
@@ -781,6 +786,11 @@ _.Zones =
 					["sourceQuests"] = { 63895 },	-- Grab Bag
 					["provider"] = { "n", 179078 },	-- Projection of Ve'nari
 					["coord"] = { 61.6, 59.0, THE_MAW },
+				}),
+				q(64521, {	-- Helsworn Battle Plans
+					["sourceQuests"] = { 63612 },	-- The Chains of Command
+					["provider"] = { "i", 187275 },	-- Helsworn Battle Plans
+				--	["crs"] = {  },	-- TODO: multilooted so not sure what dropped it, something in desmotaeron as i was doing the other 3 quests after 'the chains of command'
 				}),
 				q(64014, {	-- Mawsplaining
 					["sourceQuests"] = { 63845 },	-- Wrath of Odyn
@@ -823,11 +833,6 @@ _.Zones =
 					["sourceQuests"] = { 63617 },	-- Bending Bars
 					["provider"] = { "n", 177586 },	-- Baroness Draka
 					["coord"] = { 65.2, 48.4, THE_MAW },
-				}),
-				q(63613, {	-- What We Wish to Be
-					["sourceQuests"] = { 63612 },	-- The Chains of Command
-					["provider"] = { "n", 177560 },	-- Baroness Draka
-					["coord"] = { 62.8, 66.0, THE_MAW },
 				}),
 				q(63845, {	-- Wrath of Odyn
 					["sourceQuests"] = {
