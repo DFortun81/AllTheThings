@@ -909,6 +909,7 @@ _.Zones =
 
 _.HiddenQuestTriggers = {
 	-- Missions
+	q(53746),	-- Verdant Hollow completed
 	q(53747),	-- Veiled Grotto completed
 	q(53748),	-- Mugamba Overlook completed
 	q(53749),	-- Mistvine Ledge completed

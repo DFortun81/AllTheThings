@@ -8,6 +8,7 @@ _.Zones =
 		m(627, {	-- Dalaran
 			n(FLIGHT_PATHS, {
 				fp(1774, {	-- Dalaran
+					["creatureID"] = 96813,	-- Aludane Whitecloud
 					["coord"] = { 69.8, 50.8, 627 },
 				}),
 				--[[	Point does not register and check off after taking flight from Eagle Master
