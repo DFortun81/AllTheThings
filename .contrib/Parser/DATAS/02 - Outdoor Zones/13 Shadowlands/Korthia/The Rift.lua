@@ -31,6 +31,7 @@ _.Zones =
 						q(64522, {	-- Stolen Korthian Supplies
 							["sourceQuests"] = { 64526 },	-- Mysterious Rifts
 							["provider"] = { "i", 187276 },	-- Stolen Korthian Supplies
+							["isWeekly"] = true,
 							["cr"] = 178757,	-- Hungering Manifestation (dropped from 1st thing i killed in the Rift)
 						}),
 						q(63913, {	-- Unstable Sin'dorei Explosive
@@ -80,7 +81,10 @@ _.Zones =
 						o(369439, {	-- Riftbound Cache
 							["questID"] = 64471,
 							["isDaily"] = true,
-							["coord"] = { 54.8, 42.3, KORTHIA },
+							["coords"] = {
+								{ 54.1, 54.7, KORTHIA },
+								{ 54.8, 42.3, KORTHIA },
+							},
 						}),
 					}),
 					n(ZONEDROPS, {

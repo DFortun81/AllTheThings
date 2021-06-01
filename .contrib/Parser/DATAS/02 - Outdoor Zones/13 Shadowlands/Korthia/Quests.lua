@@ -680,7 +680,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 64.6, 25.4, KORTHIA },
 				}),
-				q(63954, {	-- Sealed Lockboxes
+				q(63954, {	-- Sealed Secrets
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 178845 },	-- Ve'lonu
 					["isDaily"] = true,
@@ -715,6 +715,12 @@ _.Zones =
 					["provider"] = { "n", 178839 },	-- Dreamweaver
 					["isDaily"] = true,
 					["coord"] = { 61.4, 21.4, KORTHIA },
+				}),
+				q(64430, {	-- Spill the Tea
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 179218 },	-- Theotar
+					["isDaily"] = true,
+					["coord"] = { 61.6, 25.7, KORTHIA },
 				}),
 				q(64070, {	-- Staying Scrappy
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
