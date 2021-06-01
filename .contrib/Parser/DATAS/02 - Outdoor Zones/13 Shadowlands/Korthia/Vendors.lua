@@ -252,11 +252,17 @@ _.Zones =
 							},
 						}),
 						--
+						i(187410, {	-- Death's Advance Battlefield Drape
+							["cost"] = { { "c", 1767, 500 } },	-- 500x Stygia
+						}),
 						i(186543, {	-- Domestic Aunian (PET!)
 							["cost"] = {
 								{ "i", 163036, 50 },	-- 50x Polished Pet Charm
 								{ "c", 1767, 1500 },	-- 1,500x Stygia
 							},
+						}),
+						i(187411, {	-- Mantle of Death's Advance
+							["cost"] = { { "c", 1767, 500 } },	-- 500x Stygia
 						}),
 						i(186598, {	-- Recipe: Crafter's Mark III
 							["cost"] = { { "c", 1767, 2000 } },	-- 2,000x Stygia
@@ -264,6 +270,10 @@ _.Zones =
 						i(186453, {	-- Vault Anima Tracker
 							["questID"] = 64061,
 							["cost"] = { { "c", 1767, 1000 } },	-- 1,000x Stygia
+						}),
+						--
+						i(186724, {	-- Technique: Contract: Death's Advance
+							["cost"] = { { "c", 1767, 2500 } },	-- 2,500x Stygia
 						}),
 						--
 						i(186995, {	-- Pattern: Shrouded Hand Towel

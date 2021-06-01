@@ -535,12 +535,6 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 64.6, 25.4, KORTHIA },
 				}),
-				q(63962, {	-- Encrypted Databanks
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
-					["provider"] = { "n", 178844 },	-- Ta'nasi
-					["isDaily"] = true,
-					["coord"] = { 64.6, 25.4, KORTHIA },
-				}),
 				q(64240, {	-- Flight of the Kyrian
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 179194 },	-- Kleia
@@ -554,6 +548,7 @@ _.Zones =
 				--	i(186708),	-- Gold Filled Paint Brush Cup on 5/18.  contained ~251g
 				--	i(186705),	-- Gold Filled Chalice (didn't do daily on this character so not sure how much it contains)
 				--	i(186688),	-- Gold Filled Wash Bucket
+				--	i(186691),	-- Gold Filled Satchel
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 179221 },	-- Rendle
 					["isDaily"] = true,
@@ -607,6 +602,12 @@ _.Zones =
 					["coord"] = { 64.6, 25.4, KORTHIA },
 				}),
 				q(63959, {	-- Observational Records
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 178844 },	-- Ta'nasi
+					["isDaily"] = true,
+					["coord"] = { 64.6, 25.4, KORTHIA },
+				}),
+				q(63962, {	-- Observational Records
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 178844 },	-- Ta'nasi
 					["isDaily"] = true,

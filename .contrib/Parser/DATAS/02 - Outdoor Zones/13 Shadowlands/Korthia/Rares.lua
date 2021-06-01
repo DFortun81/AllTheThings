@@ -83,6 +83,7 @@ _.Zones =
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 						i(187183),	-- Rampaging Mauler (MOUNT!)
+						i(187378),	-- Visage of the Obliterator
 					},
 				}),
 				n(179108, {	-- Kroke the Tormented
@@ -190,6 +191,7 @@ _.Zones =
 						crit(25, {	-- Towering Exterminator
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
+						i(187035),	-- Cold Burden of the Damned
 						i(187242),	-- Exterminator's Crest of the Damned
 						i(187241),	-- Watchful Eye of the Damned
 					},

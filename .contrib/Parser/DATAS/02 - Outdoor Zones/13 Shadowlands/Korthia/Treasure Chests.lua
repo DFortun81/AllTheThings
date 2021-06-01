@@ -176,6 +176,7 @@ _.Zones =
 						crit(3, {	-- Lost Memento
 							["achievementID"] = 15099,	-- Treasures of Korthia
 						}),
+						i(187346),	-- Lost Memento
 					},
 				}),
 				o(368876, {	-- Mawsworn Cache
@@ -434,7 +435,7 @@ _.Zones =
 							["name"] = "Spectral Key #2, Seeker's Quorum Building",
 						}),
 						q(64248, {	-- Spectral Key, Seeker's Quorum Chain
-							["description"] = "|cffde1c1cMust be clicked last!|r",
+							["description"] = "|cffde1c1cMust be clicked last!|r  An alternative to this key can be found next to a leaning pillar at |cFFFFFFFF57.5, 49.3|r.",
 							["isDaily"] = true,
 							["coord"] = { 59.1, 48.7, KORTHIA },
 							["name"] = "Spectral Key #3, Seeker's Quorum Chain",

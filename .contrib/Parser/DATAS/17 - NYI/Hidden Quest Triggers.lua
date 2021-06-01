@@ -4492,8 +4492,6 @@ _.HiddenQuestTriggers =
 		q(63601),	-- this was either learning Aspiring Aspirant's ensemble or pulling a legendary out of the mailbox that i hadn't had bagspace for earlier
 		
 		-- Treasures of Korthia achievement
-		q(64256),	-- Desmotaeron treasure - Helsworn Chest
-		q(64261),	-- Desmotaeron treasure - Jeweled Heart of Ezekiel
 		q(64244),	-- Korthia treasure - Anima Laden Egg
 		q(64241),	-- Korthia treasure - Dislodged Nest
 		q(64252),	-- Korthia treasure - Displaced Relic

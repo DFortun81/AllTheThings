@@ -92,7 +92,7 @@ _.Zones =
 				i(186149),	-- Mawsworn Collector's Gavel
 				i(186113),	-- Mawsworn Darkcaster's Bindings
 				i(186112),	-- Mawsworn Darkcaster's Cinch
-				i(186110),	-- Mawsworn Darkcaster's Crest
+				i(186110),	-- Mawsworn Darkcaster's Crest*
 				i(186109),	-- Mawsworn Darkcaster's Handwraps
 				i(186142),	-- Mawsworn Darkcaster's Kris
 				i(186111),	-- Mawsworn Darkcaster's Leggings

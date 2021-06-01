@@ -32,7 +32,8 @@ _.Zones =
 					},
 				}),
 				o(369216, {	-- Helsworn Chest
-				--	["questID"] = 64256,
+					["questID"] = 64256,
+					["isDaily"] = true,
 					["coord"] = { 66.0, 48.3, THE_MAW },
 					["g"] = {
 						crit(7, {	-- Helsworn Chest
@@ -145,4 +146,8 @@ _.Zones =
 			}),
 		}),
 	}),
+};
+
+_.HiddenQuestTriggers = {
+	q(64261),	-- Desmotaeron treasure - Jeweled Heart of Ezekiel
 };
