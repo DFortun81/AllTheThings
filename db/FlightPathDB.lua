@@ -195,6 +195,23 @@ select(2, ...).FlightPathDB = {
 		["name"] = "Splintertree Post, Ashenvale",
 		["faction"] = 1,
 	}, -- [61]
+	-- Two druid-only 'flight paths' which come back as flight paths but do not have flight masters nor show up on Flight Master maps so cannot be 'collected'
+	{
+		["u"] = 1,	-- NEVER_IMPLEMENTED
+		["name"] = "Nighthaven, Moonglade",
+		["faction"] = 2,
+		["coord"] = { 44.0, 45.4, 80 },
+		["c"] = { 11, }, -- Druid
+		["description"] = "This is registered as a flight path in the game data, but does not show on any flight maps, and cannot be collected.",
+	},	-- [62]
+	{
+		["u"] = 1,	-- NEVER_IMPLEMENTED
+		["name"] = "Nighthaven, Moonglade",
+		["faction"] = 1,
+		["coord"] = { 44.2, 45.6, 80 },
+		["c"] = { 11, }, -- Druid
+		["description"] = "This is registered as a flight path in the game data, but does not show on any flight maps, and cannot be collected.",
+	},	-- [63]
 	nil, -- [64]
 	{
 		["name"] = "Talonbranch Glade, Felwood",
@@ -2590,35 +2607,9 @@ select(2, ...).FlightPathDB = {
 		["name"] = "Gao-Ran Battlefront, Townlong Steppes",
 		["faction"] = 0,
 	},
-	[2544] = {
-		["name"] = "Mistfall Village, Vale of Eternal Blossoms",
-		["faction"] = 0,
-	},
-	[2381] = {
-		["name"] = "The Mugambala, Zuldazar",
-		["faction"] = 1,
-	},
-	[2067] = {
-		["name"] = "Timberfell Outpost, Tiragarde Sound",
-		["faction"] = 1,
-	},
 	--]]
 
 	-- Never Implemented Flight Paths (in-game data says they exist but also that's a lie)
-	[62] = {
-		["u"] = 1,	-- NEVER_IMPLEMENTED
-		["name"] = "Nighthaven, Moonglade",
-		["faction"] = 2,
-		["coord"] = { 44.0, 45.4, 80 },
-		["c"] = { 11, }, -- Druid
-	},
-	[63] = {
-		["u"] = 1,	-- NEVER_IMPLEMENTED
-		["name"] = "Nighthaven, Moonglade",
-		["faction"] = 1,
-		["coord"] = { 44.2, 45.6, 80 },
-		["c"] = { 11, }, -- Druid
-	},
 	[1567] = {
 		["u"] = 1,	-- NEVER_IMPLEMENTED
 		["name"] = "Temple of Karabor, Shadowmoon Valley",

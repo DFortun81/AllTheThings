@@ -6792,12 +6792,13 @@ local C_TaxiMap_GetAllTaxiNodes = C_TaxiMap.GetAllTaxiNodes;
 app.CacheFlightPathData = function()
 	if not app.CacheFlightPathData_Ran then
 		-- app.DEBUG_PRINT = true;
-		local newNodes, foundNew, node = {};
+		local newNodes, node = {};
 		for i,mapID in ipairs(arrOfNodes) do
 			-- if mapID == 882 then app.DEBUG_PRINT = true; end
 			local allNodeData = C_TaxiMap_GetTaxiNodesForMap(mapID);
 			if allNodeData then
 				for j,nodeData in ipairs(allNodeData) do
+					-- if nodeData.nodeID == 63 then app.DEBUG_PRINT = true; end
 					-- if app.DEBUG_PRINT then app.PrintTable(nodeData) end
 					node = app.FlightPathDB[nodeData.nodeID];
 					if node then
@@ -6814,6 +6815,7 @@ app.CacheFlightPathData = function()
 								node.faction = 1;
 							end
 						end
+						-- if app.DEBUG_PRINT then app.PrintTable(node) end
 					elseif nodeData.name and true then	-- Turn this off when you're done harvesting.
 						-- if app.DEBUG_PRINT then print("*NEW* Node") end
 						node = {};
@@ -6830,8 +6832,8 @@ app.CacheFlightPathData = function()
 						-- app.PrintTable(node)
 						app.FlightPathDB[nodeData.nodeID] = node;
 						newNodes[nodeData.nodeID] = node;
-						foundNew = true;
 					end
+					-- app.DEBUG_PRINT = nil;
 				end
 			end
 			-- app.DEBUG_PRINT = nil;
@@ -6842,7 +6844,7 @@ app.CacheFlightPathData = function()
 		-- print("CacheFlightPathData Found new nodes?",foundNew)
 		-- app.PrintTable(newNodes);
 		-- app.DEBUG_PRINT = nil;
-		return foundNew;
+		return true;
 	end
 end
 local fields = {
@@ -14513,6 +14515,14 @@ function app:GetDataCache()
 		local g, db = {};
 		allData.g = g;
 
+		-- Never Implemented Flight Paths (Dynamic)
+		local flightPathsCategory_NYI = {};
+		flightPathsCategory_NYI.g = {};
+		flightPathsCategory_NYI.fps = {};
+		flightPathsCategory_NYI.expanded = false;
+		flightPathsCategory_NYI.icon = app.asset("Category_FlightPaths");
+		flightPathsCategory_NYI.text = L["FLIGHT_PATHS"];
+
 		-- Never Implemented
 		if app.Categories.NeverImplemented then
 			db = {};
@@ -14521,6 +14531,7 @@ function app:GetDataCache()
 			db.text = L["NEVER_IMPLEMENTED"];
 			db.description = L["NEVER_IMPLEMENTED_DESC"];
 			table.insert(g, db);
+			table.insert(db.g, 1, flightPathsCategory_NYI);
 		end
 
 		-- Hidden Quest Triggers
@@ -14585,17 +14596,20 @@ function app:GetDataCache()
 						for key,value in pairs(o) do rawset(fp, key, value); end
 					end
 					self.fps[i] = fp;
+					fp.g = nil;
+					fp.maps = nil;
 					if not fp.u or fp.u ~= 1 then
-						fp.g = nil;
-						fp.maps = nil;
 						fp.parent = self;
 						tinsert(self.g, fp);
+					else
+						fp.parent = flightPathsCategory_NYI;
+						tinsert(flightPathsCategory_NYI.g, fp);
 					end
 					-- Make sure the sourced FP data exists in the cache DB so it doesn't show *NEW*
 					if not app.FlightPathDB[i] then app.FlightPathDB[i] = _; end
 				end
 			end
-			-- will only run once per session and return if a new FP was found that needs to be shown in the list
+			-- will only run once per session and return true the first time it is called
 			if app.CacheFlightPathData() then
 				for i,_ in pairs(app.FlightPathDB) do
 					if not self.fps[i] then
@@ -14604,6 +14618,9 @@ function app:GetDataCache()
 						if not fp.u or fp.u ~= 1 then
 							fp.parent = self;
 							tinsert(self.g, fp);
+						else
+							fp.parent = flightPathsCategory_NYI;
+							tinsert(flightPathsCategory_NYI.g, fp);
 						end
 					end
 				end
