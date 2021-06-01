@@ -199,22 +199,22 @@ _.Zones =
 									i(186669),	-- Korthian Caretaker's Wraps
 								}),
 								f(5,    {	-- Leather
-									i(185866),	-- Shardhide Belt
-									i(185862),	-- Shardhide Boots
-									i(185867),	-- Shardhide Bracers
-									i(185865),	-- Shardhide Breeches
-									i(186736),	-- Shardhide Cowl
-									i(186739),	-- Shardhide Cuffs
-									i(186757),	-- Shardhide Epaulets
-									i(185863),	-- Shardhide Gloves
-									i(186735),	-- Shardhide Handlers*
-									i(185864),	-- Shardhide Hood
-									i(186756),	-- Shardhide Jerkin
-									i(185885),	-- Shardhide Shoulderguards
-									i(186738),	-- Shardhide Strap
-									i(186734),	-- Shardhide Treads
-									i(186737),	-- Shardhide Trousers
-									i(185884),	-- Shardhide Vest*
+									i(185866),	-- Shardhide Leather Belt
+									i(185862),	-- Shardhide Leather Boots
+									i(185867),	-- Shardhide Leather Bracers
+									i(185865),	-- Shardhide Leather Breeches
+									i(186736),	-- Shardhide Leather Cowl*
+									i(186739),	-- Shardhide Leather Cuffs
+									i(186757),	-- Shardhide Leather Epaulets
+									i(185863),	-- Shardhide Leather Gloves
+									i(186735),	-- Shardhide Leather Handlers*
+									i(185864),	-- Shardhide Leather Hood*
+									i(186756),	-- Shardhide Leather Jerkin*
+									i(185885),	-- Shardhide Leather Shoulderguards
+									i(186738),	-- Shardhide Leather Strap
+									i(186734),	-- Shardhide Leather Treads
+									i(186737),	-- Shardhide Leather Trousers
+									i(185884),	-- Shardhide Leather Vest*
 								}),
 								f(6,    {	-- Mail
 									i(185875),	-- Razorwing Scale Bracers

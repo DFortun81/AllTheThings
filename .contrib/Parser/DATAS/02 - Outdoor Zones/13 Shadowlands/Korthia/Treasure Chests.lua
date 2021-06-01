@@ -71,6 +71,7 @@ _.Zones =
 						crit(9, {	-- Infested Vestige
 							["achievementID"] = 15099,	-- Treasures of Korthia
 						}),
+						i(187354),	-- Abandoned Broker Satchel
 					},
 				}),
 				o(369327, {	-- Invasive Mawshroom
@@ -208,6 +209,10 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 41.0, 39.7, KORTHIA },
 					["g"] = {
+						i(187440, {	-- Feather-Stuffed Helm
+						--	TODO: can probably drop at least 1 helm per armor class
+							i(186736),	-- Shardhide Leather Cowl
+						}),
 						i(187008),	-- Recipe: Porous Rock Candy
 					},
 				}),
@@ -216,6 +221,9 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 42.4, 54.8, KORTHIA },
 					["g"] = {
+						i(187440, {	-- Feather-Stuffed Helm
+							i(186736),	-- Shardhide Leather Cowl
+						}),
 						i(187008),	-- Recipe: Porous Rock Candy
 					},
 				}),
@@ -225,6 +233,9 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 52.4, 43.8, KORTHIA },
 					["g"] = {
+						i(187440, {	-- Feather-Stuffed Helm
+							i(186736),	-- Shardhide Leather Cowl
+						}),
 						i(187008),	-- Recipe: Porous Rock Candy
 					},
 				}),
@@ -233,6 +244,9 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 63.7, 31.4, KORTHIA },
 					["g"] = {
+						i(187440, {	-- Feather-Stuffed Helm
+							i(186736),	-- Shardhide Leather Cowl
+						}),
 						i(187008),	-- Recipe: Porous Rock Candy
 					},
 				}),
@@ -241,6 +255,9 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 52.3, 72.7, KORTHIA },
 					["g"] = {
+						i(187440, {	-- Feather-Stuffed Helm
+							i(186736),	-- Shardhide Leather Cowl
+						}),
 						i(187008),	-- Recipe: Porous Rock Candy
 					},
 				}),
@@ -265,6 +282,7 @@ _.Zones =
 						{ 32.7, 42.0, KORTHIA },	-- Pile of Bones
 						{ 32.8, 45.3, KORTHIA },	-- Pile of Bones
 						{ 32.8, 55.1, KORTHIA },	-- Pile of Bones
+						{ 34.1, 44.0, KORTHIA },	-- Pile of Bones
 						{ 34.7, 45.8, KORTHIA },	-- Pile of Bones
 						{ 37.1, 53.7, KORTHIA },	-- Pile of Bones
 						{ 38.2, 51.7, KORTHIA },	-- Pile of Bones
@@ -289,6 +307,7 @@ _.Zones =
 						{ 45.8, 30.1, KORTHIA },	-- Shardhide Stash
 						{ 47.4, 26.2, KORTHIA },	-- Shardhide Stash
 						{ 49.1, 30.1, KORTHIA },	-- Shardhide Stash
+						{ 49.5, 26.7, KORTHIA },	-- Shardhide Stash
 						{ 49.7, 33.3, KORTHIA },	-- Shardhide Stash
 						{ 50.4, 31.1, KORTHIA },	-- Shardhide Stash
 					},

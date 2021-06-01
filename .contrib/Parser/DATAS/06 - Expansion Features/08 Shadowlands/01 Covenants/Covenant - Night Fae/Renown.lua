@@ -48,3 +48,7 @@ _.ExpansionFeatures =
 		}),
 	}),
 };
+
+_.HiddenQuestTriggers = {
+	q(64074),	-- hitting Renown 45
+};

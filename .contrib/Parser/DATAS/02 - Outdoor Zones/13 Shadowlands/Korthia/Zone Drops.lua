@@ -51,6 +51,7 @@ _.Zones =
 				i(187335),	-- Maldraxxus Larva Shell
 				i(187330),	-- Naaru Shard Fragment
 				i(187329),	-- Old God Specimen Jar
+				i(187467),	-- Perplexing Rune-Cube
 				i(187332),	-- Recovered Page of Voices
 				i(187328),	-- Ripped Cosmology Chart
 				i(187323),	-- Runic Diagram
@@ -101,7 +102,7 @@ _.Zones =
 				i(186107),	-- Mawsworn Darkcaster's Robes
 				i(186138),	-- Mawsworn Darkcaster's Shoulderpads
 				i(186108),	-- Mawsworn Darkcaster's Slippers
-				i(186150),	-- Mawsworn Darkcaster's Stave
+				i(186150),	-- Mawsworn Darkcaster's Stave*
 				i(186129),	-- Mawsworn Guard's Breastplate
 				i(186154),	-- Mawsworn Guard's Cleaver
 				i(186131),	-- Mawsworn Guard's Gauntlets

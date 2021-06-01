@@ -161,7 +161,10 @@ _.Zones =
 				}),
 				q(63722, {	-- Keepers of Korthia
 					["sourceQuests"] = { 63714 },	-- To the Vault
-					["provider"] = { "n", 177459 },	-- Protector Kah-Rev
+					["providers"] = {
+						{ "n", 177459 },	-- Protector Kah-Rev
+						{ "n", 178640 },	-- Protector Kah-Rev (pet version)
+					},
 					["coord"] = { 49.5, 65.0, KORTHIA },
 				}),
 				q(63663, {	-- Korthia, the City of Secrets
