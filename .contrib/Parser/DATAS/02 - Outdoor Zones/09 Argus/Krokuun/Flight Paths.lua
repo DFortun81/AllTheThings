@@ -9,18 +9,15 @@ _.Zones =
 			n(FLIGHT_PATHS, {
 				fp(1976, {	-- Destiny Point, Krokruun
 					["description"] = "Destiny Point, Krokruun",
-					["coord"] = { 62.7, 49.1 },
+					["coord"] = { 62.7, 49.1, 830 },
 				}),
 				fp(1928, {	-- Krokul Hovel, Krokruun
 					["description"] = "Krokul Hovel, Krokruun",
-					["coord"] = { 55.4, 67.3 },
+					["coord"] = { 55.4, 67.3, 830 },
 				}),
 				fp(1967, {	-- Shattered Fields, Krokruun
 					["description"] = "Shattered Fields, Krokruun",
-					["coord"] = { 40.3, 63.5 },
-				}),
-				fp(1944, {	-- Vindicaar, Krokruun
-					["description"] = "Vindicaar, Krokruun",
+					["coord"] = { 40.3, 63.5, 830 },
 				}),
 			}),
 		}),

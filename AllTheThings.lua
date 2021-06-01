@@ -3969,6 +3969,8 @@ local function CacheField(group, field, value)
 		rawset(fieldCache_g, value, {group});
 	end
 end
+-- This is referenced by FlightPath objects when pulling their Info from the DB
+app.CacheField = CacheField;
 -- These are the fields we store.
 fieldCache["achievementID"] = {};
 fieldCache["artifactID"] = {};
@@ -6770,42 +6772,67 @@ local arrOfNodes = {
 	422,	-- Dread Wastes (All of Pandaria)
 	525,	-- Frostfire Ridge (All of Draenor)
 	630,	-- Azsuna (All of Broken Isles)
-	882,	-- Mac'Aree (All of Argus)
+	-- Argus only returns specific Flight Points per map
+	885,	-- Antoran Wastes
+	830,	-- Krokuun
+	882,	-- Mac'Aree
+	831,	-- Upper Deck [The Vindicaar: Krokuun]
+	883,	-- Upper Deck [The Vindicaar: Mac'Aree]
+	886,	-- Upper Deck [The Vindicaar: Antoran Wastes]
+
 	862,	-- Zuldazar
 	896,	-- Drustvar
 	1355,	-- Nazjatar
 	1550,	-- The Shadowlands
 	1409,	-- Exile's Reach
 };
+local C_TaxiMap_GetTaxiNodesForMap = C_TaxiMap.GetTaxiNodesForMap;
+local C_TaxiMap_GetAllTaxiNodes = C_TaxiMap.GetAllTaxiNodes;
 app.CacheFlightPathData = function()
-	local newNodes = {};
-	for i,mapID in ipairs(arrOfNodes) do
-		local allNodeData = C_TaxiMap.GetTaxiNodesForMap(mapID);
-		if allNodeData then
-			for j,nodeData in ipairs(allNodeData) do
-				if nodeData.name then
-					local node = app.FlightPathDB[nodeData.nodeID];
-					if node then
-						node.name = nodeData.name;
-					elseif true then	-- Turn this off when you're done harvesting.
-						node = {};
-						node.name = "*NEW* " .. nodeData.name;
-						if nodeData.faction then
-							node.faction = nodeData.faction;
-						elseif nodeData.atlasName then
-							if nodeData.atlasName == "TaxiNode_Alliance" then
-								node.faction = 2;
-							elseif nodeData.atlasName == "TaxiNode_Horde" then
-								node.faction = 1;
+	if not app.CacheFlightPathData_Ran then
+		-- app.DEBUG_PRINT = true;
+		local newNodes, foundNew, node = {};
+		for i,mapID in ipairs(arrOfNodes) do
+			-- if mapID == 882 then app.DEBUG_PRINT = true; end
+			local allNodeData = C_TaxiMap_GetTaxiNodesForMap(mapID);
+			if allNodeData and allNodeData[1] then
+				for j,nodeData in ipairs(allNodeData) do
+					-- if app.DEBUG_PRINT then app.PrintTable(nodeData) end
+					if nodeData.name then
+						node = app.FlightPathDB[nodeData.nodeID];
+						if node then
+							-- if app.DEBUG_PRINT then print("DB node") end
+							if not node.name then node.name = nodeData.name; end
+						elseif true then	-- Turn this off when you're done harvesting.
+							-- if app.DEBUG_PRINT then print("*NEW* Node") end
+							node = {};
+							node.name = "*NEW* " .. nodeData.name;
+							if nodeData.faction then
+								node.faction = nodeData.faction;
+							elseif nodeData.atlasName then
+								if nodeData.atlasName == "TaxiNode_Alliance" then
+									node.faction = 2;
+								elseif nodeData.atlasName == "TaxiNode_Horde" then
+									node.faction = 1;
+								end
 							end
+							-- app.PrintTable(node)
+							app.FlightPathDB[nodeData.nodeID] = node;
+							newNodes[nodeData.nodeID] = node;
+							foundNew = true;
 						end
-						app.FlightPathDB[nodeData.nodeID] = node;
-						newNodes[nodeData.nodeID] = node;
-						SetDataMember("NewFlightPathData", newNodes);
 					end
 				end
 			end
+			-- app.DEBUG_PRINT = nil;
 		end
+		app.CacheFlightPathData_Ran = true;
+		SetDataMember("NewFlightPathData", newNodes);
+		-- return if some new flight path was found
+		-- print("CacheFlightPathData Found new nodes?",foundNew)
+		-- app.PrintTable(newNodes);
+		-- app.DEBUG_PRINT = nil;
+		return foundNew;
 	end
 end
 local fields = {
@@ -6816,8 +6843,8 @@ local fields = {
 		local info = app.FlightPathDB[t.flightPathID];
 		if info then
 			rawset(t, "info", info);
-			if info.mapID then CacheField(t, "mapID", info.mapID); end
-			if info.qg then CacheField(t, "creatureID", info.qg); end
+			if info.mapID then app.CacheField(t, "mapID", info.mapID); end
+			if info.qg then app.CacheField(t, "creatureID", info.qg); end
 			return info;
 		end
 		return {};
@@ -6908,7 +6935,7 @@ app.CreateFlightPath = function(id, t)
 	return setmetatable(constructor(id, t, "flightPathID"), app.BaseFlightPath);
 end
 app.events.TAXIMAP_OPENED = function()
-	local allNodeData = C_TaxiMap.GetAllTaxiNodes(app.GetCurrentMapID());
+	local allNodeData = C_TaxiMap_GetAllTaxiNodes(app.GetCurrentMapID());
 	if allNodeData then
 		local updates, searchResults, nodeID = {};
 		local currentCharFPs, acctFPs = app.CurrentCharacter.FlightPaths, ATTAccountWideData.FlightPaths;
@@ -14540,7 +14567,6 @@ function app:GetDataCache()
 		]]--
 		
 		-- Update Flight Path data.
-		app.CacheFlightPathData();
 		flightPathsCategory.OnUpdate = function(self)
 			for i,_ in pairs(fieldCache["flightPathID"]) do
 				if not self.fps[i] then
@@ -14555,15 +14581,22 @@ function app:GetDataCache()
 						fp.parent = self;
 						tinsert(self.g, fp);
 					end
+					-- Make sure the sourced FP data exists in the loaded DB so it doesn't show *NEW*
+					if not app.FlightPathDB[i] then
+						app.FlightPathDB[i] = _;
+					end
 				end
 			end
-			for i,_ in pairs(app.FlightPathDB) do
-				if not self.fps[i] then
-					local fp = app.CreateFlightPath(tonumber(i));
-					self.fps[i] = fp;
-					if not fp.u or fp.u ~= 1 then
-						fp.parent = self;
-						tinsert(self.g, fp);
+			-- will only run once per session and return if a new FP was found that needs to be shown in the list
+			if app.CacheFlightPathData() then
+				for i,_ in pairs(app.FlightPathDB) do
+					if not self.fps[i] then
+						local fp = app.CreateFlightPath(tonumber(i));
+						self.fps[i] = fp;
+						if not fp.u or fp.u ~= 1 then
+							fp.parent = self;
+							tinsert(self.g, fp);
+						end
 					end
 				end
 			end

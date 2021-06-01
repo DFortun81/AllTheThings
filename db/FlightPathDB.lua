@@ -2344,9 +2344,21 @@ select(2, ...).FlightPathDB = {
 		["name"] = "Zhu's Watch, Krasarang Wilds",
 		["faction"] = 0,
 	},
+	[1928] = {
+		["name"] = "Krokul Hovel, Krokuun",
+		["faction"] = 0,
+	},
+	[1967] = {
+		["name"] = "Shattered Fields, Krokuun",
+		["faction"] = 0,
+	},
 	[1975] = {
 		["name"] = "Zeb'ahari, Zuldazar",
 		["faction"] = 1,
+	},
+	[1976] = {
+		["name"] = "Destiny Point, Krokuun",
+		["faction"] = 0,
 	},
 	[247] = {
 		["name"] = "Stars' Rest, Dragonblight",
@@ -2386,6 +2398,18 @@ select(2, ...).FlightPathDB = {
 	},
 	[1982] = {
 		["name"] = "Triumvirate's End, Mac'Aree",
+		["faction"] = 0,
+	},
+	[1988] = {
+		["name"] = "Hope's Landing, Antoran Wastes",
+		["faction"] = 0,
+	},
+	[1992] = {
+		["name"] = "Light's Purchase, Antoran Wastes",
+		["faction"] = 0,
+	},
+	[1993] = {
+		["name"] = "The Veiled Den, Antoran Wastes",
 		["faction"] = 0,
 	},
 	[992] = {
@@ -2625,5 +2649,10 @@ select(2, ...).FlightPathDB = {
 		["faction"] = 2,
 		["u"] = 1,	-- NEVER_IMPLEMENTED
 		-- TODO: likely requires customCollect/sourceQuests/altQuests?
+	},
+	[2555] = {
+		["name"] = "The Maw",
+		["faction"] = 0,
+		["u"] = 1,	-- NEVER_IMPLEMENTED
 	},
 };
