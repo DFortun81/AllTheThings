@@ -80,6 +80,7 @@ local HORDE_ONLY = {
 
 -- Coroutine Helper Functions
 app.refreshing = {};
+app.EmptyTable = {};
 local function OnUpdate(self)
 	for i=#self.__stack,1,-1 do
 		-- print("Running Stack " .. i .. ":" .. self.__stack[i][2])
@@ -6795,32 +6796,41 @@ app.CacheFlightPathData = function()
 		for i,mapID in ipairs(arrOfNodes) do
 			-- if mapID == 882 then app.DEBUG_PRINT = true; end
 			local allNodeData = C_TaxiMap_GetTaxiNodesForMap(mapID);
-			if allNodeData and allNodeData[1] then
+			if allNodeData then
 				for j,nodeData in ipairs(allNodeData) do
 					-- if app.DEBUG_PRINT then app.PrintTable(nodeData) end
-					if nodeData.name then
-						node = app.FlightPathDB[nodeData.nodeID];
-						if node then
-							-- if app.DEBUG_PRINT then print("DB node") end
-							if not node.name then node.name = nodeData.name; end
-						elseif true then	-- Turn this off when you're done harvesting.
-							-- if app.DEBUG_PRINT then print("*NEW* Node") end
-							node = {};
-							node.name = "*NEW* " .. nodeData.name;
-							if nodeData.faction then
-								node.faction = nodeData.faction;
-							elseif nodeData.atlasName then
-								if nodeData.atlasName == "TaxiNode_Alliance" then
-									node.faction = 2;
-								elseif nodeData.atlasName == "TaxiNode_Horde" then
-									node.faction = 1;
-								end
+					node = app.FlightPathDB[nodeData.nodeID];
+					if node then
+						-- if app.DEBUG_PRINT then print("DB node") end
+						-- associate in-game or our own cached data with the Sourced FP
+						-- can only apply in-game data when it exists...
+						if nodeData.name then node.name = nodeData.name; end
+						if nodeData.faction then
+							node.faction = nodeData.faction;
+						elseif nodeData.atlasName then
+							if nodeData.atlasName == "TaxiNode_Alliance" then
+								node.faction = 2;
+							elseif nodeData.atlasName == "TaxiNode_Horde" then
+								node.faction = 1;
 							end
-							-- app.PrintTable(node)
-							app.FlightPathDB[nodeData.nodeID] = node;
-							newNodes[nodeData.nodeID] = node;
-							foundNew = true;
 						end
+					elseif nodeData.name and true then	-- Turn this off when you're done harvesting.
+						-- if app.DEBUG_PRINT then print("*NEW* Node") end
+						node = {};
+						node.name = "*NEW* " .. nodeData.name;
+						if nodeData.faction then
+							node.faction = nodeData.faction;
+						elseif nodeData.atlasName then
+							if nodeData.atlasName == "TaxiNode_Alliance" then
+								node.faction = 2;
+							elseif nodeData.atlasName == "TaxiNode_Horde" then
+								node.faction = 1;
+							end
+						end
+						-- app.PrintTable(node)
+						app.FlightPathDB[nodeData.nodeID] = node;
+						newNodes[nodeData.nodeID] = node;
+						foundNew = true;
 					end
 				end
 			end
@@ -6847,7 +6857,7 @@ local fields = {
 			if info.qg then app.CacheField(t, "creatureID", info.qg); end
 			return info;
 		end
-		return {};
+		return app.EmptyTable;
 	end,
 	["text"] = function(t)
 		return app.TryColorizeName(t, t.name);
@@ -14581,10 +14591,8 @@ function app:GetDataCache()
 						fp.parent = self;
 						tinsert(self.g, fp);
 					end
-					-- Make sure the sourced FP data exists in the loaded DB so it doesn't show *NEW*
-					if not app.FlightPathDB[i] then
-						app.FlightPathDB[i] = _;
-					end
+					-- Make sure the sourced FP data exists in the cache DB so it doesn't show *NEW*
+					if not app.FlightPathDB[i] then app.FlightPathDB[i] = _; end
 				end
 			end
 			-- will only run once per session and return if a new FP was found that needs to be shown in the list
