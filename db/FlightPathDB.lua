@@ -2590,6 +2590,18 @@ select(2, ...).FlightPathDB = {
 		["name"] = "Gao-Ran Battlefront, Townlong Steppes",
 		["faction"] = 0,
 	},
+	[2544] = {
+		["name"] = "Mistfall Village, Vale of Eternal Blossoms",
+		["faction"] = 0,
+	},
+	[2381] = {
+		["name"] = "The Mugambala, Zuldazar",
+		["faction"] = 1,
+	},
+	[2067] = {
+		["name"] = "Timberfell Outpost, Tiragarde Sound",
+		["faction"] = 1,
+	},
 	--]]
 
 	-- Never Implemented Flight Paths (in-game data says they exist but also that's a lie)
