@@ -9,9 +9,6 @@ _.Zones =
 				i(29960, {	-- Captured Firefly
 					["cr"] = 20197,	-- Bogflare Needler
 				}),
-				i(23981, {	-- Steam Pump Part
-					["coord"] = { 81.5, 40.2, ZANGARMARSH },
-				}),
 			}),
 		}),
 	})),

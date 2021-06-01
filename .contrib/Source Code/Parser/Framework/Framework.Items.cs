@@ -244,12 +244,16 @@ namespace ATT
                                 {
                                     builder.Append(name.ToString().Replace("\"", "\\\""));
                                 }
-                                builder.Append("\",").Append(id).Append(", ");
+                                builder.Append("\", ").Append(id).Append(", ");
                                 if (item.TryGetValue("spellID", out object spellIDRef) || item.TryGetValue("recipeID", out spellIDRef))
                                 {
                                     builder.Append(spellIDRef);
                                 }
                                 else builder.Append("UNKNOWN_SPELLID");
+                                if (item.TryGetValue("u", out object uRef))
+                                {
+                                    builder.Append(", PHASE_").Append(uRef).Append("_IDENTIFIER");
+                                }
                                 if (item.TryGetValue("timeline", out object timelineRef) && timelineRef is List<object> timeline)
                                 {
                                     if (timeline.Count > 1)
@@ -258,10 +262,6 @@ namespace ATT
                                         builder.Append(", {").Append(timelineStr.Substring(1, timelineStr.Length - 2)).Append("}");
                                     }
                                     else builder.Append(", \"").Append(timeline[0]).Append("\"");
-                                }
-                                if (item.TryGetValue("u", out object uRef))
-                                {
-                                    builder.Append(", PHASE_").Append(uRef).Append("_IDENTIFIER");
                                 }
                                 builder.AppendLine(");");
                             }
