@@ -370,6 +370,7 @@ _.Zones =
 				}),
 				q(63703, {	-- Vault of Secrets
 					["sourceQuests"] = { 63902 },	-- Good News, Everyone!
+					["description"] = "Requires Renown 44.",
 					["provider"] = { "n", 177927 },	-- Tal-Galan
 					["coord"] = { 63.0, 24.8, KORTHIA },
 				}),

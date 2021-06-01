@@ -74,6 +74,7 @@ _.Zones =
 				i(186153),	-- Foresworn Seal
 				i(186559, {	-- Grappling Gauntlet (PET!)
 					["crs"] = {	-- probably from other Mawsworn mobs
+						177292,	-- Mawsworn Mutilator
 						179305,	-- Mawsworn Steelshaper
 						177293,	-- Mawsworn Torturer
 					},
