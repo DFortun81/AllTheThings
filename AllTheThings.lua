@@ -6964,9 +6964,10 @@ app.events.TAXIMAP_OPENED = function()
 						end
 					end
 				end
-
 			end
 		end
+		-- Need to update the dynamic Flight Paths category as well
+		app.UpdateGroup(app.Categories, app.FlightPathsCategory);
 		UpdateSearchResults(updates);
 	end
 end
@@ -14616,6 +14617,7 @@ function app:GetDataCache()
 						local fp = app.CreateFlightPath(tonumber(i));
 						self.fps[i] = fp;
 						if not fp.u or fp.u ~= 1 then
+							app.print("Cached Flight Path Needs to be Sourced!",i,fp.name)
 							fp.parent = self;
 							tinsert(self.g, fp);
 						else
@@ -14630,6 +14632,8 @@ function app:GetDataCache()
 			end);
 		end;
 		flightPathsCategory:OnUpdate();
+		-- Needed for externally updating only this group when collecting a flight path since the records are not cached
+		app.FlightPathsCategory = flightPathsCategory;
 
 		-- Perform Heirloom caching/upgrade generation
 		app.CacheHeirlooms();
