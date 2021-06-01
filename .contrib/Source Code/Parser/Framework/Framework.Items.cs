@@ -203,12 +203,72 @@ namespace ATT
                             builder.Append("i(").Append(id).Append(");");
                             if (item.TryGetValue("name", out object name))
                             {
-                                builder.Append("\t\t--[[").Append(name).Append("]]");
+                                builder.Append("\t-- ").Append(name);
                             }
                             builder.AppendLine();
                         }
                     }
                     File.WriteAllText(Path.Combine(filtersDirectory.FullName, $"{group.Key}.json"), builder.ToString());
+                }
+
+                // Export all recipes into their respective recipe locations
+                var recipesFolder = Path.Combine(directory, "Recipes/");
+                var recipesDirectory = Directory.CreateDirectory(recipesFolder);
+                if (filterGroups.TryGetValue(Objects.Filters.Recipe, out List<Dictionary<string, object>> allRecipes))
+                {
+                    var recipesByRequiredSkill = new Dictionary<long, List<Dictionary<string, object>>>();
+                    foreach (var recipe in allRecipes)
+                    {
+                        if (!recipe.TryGetValue("requireSkill", out long requireSkill))
+                        {
+                            requireSkill = 0;
+                        }
+
+                        if (!recipesByRequiredSkill.TryGetValue(requireSkill, out List<Dictionary<string, object>> skillRecipes))
+                        {
+                            recipesByRequiredSkill[requireSkill] = skillRecipes = new List<Dictionary<string, object>>();
+                        }
+                        skillRecipes.Add(recipe);
+                    }
+
+                    foreach (var requireSkillPair in recipesByRequiredSkill)
+                    {
+                        var builder = ATT.Export.ExportRawLua(requireSkillPair.Value);
+                        builder.AppendLine().AppendLine();
+                        foreach (var item in requireSkillPair.Value)
+                        {
+                            if (item.TryGetValue("itemID", out object id))
+                            {
+                                builder.Append("itemrecipe(\"");
+                                if (item.TryGetValue("name", out object name))
+                                {
+                                    builder.Append(name.ToString().Replace("\"", "\\\""));
+                                }
+                                builder.Append("\", ").Append(id).Append(", ");
+                                if (item.TryGetValue("spellID", out object spellIDRef) || item.TryGetValue("recipeID", out spellIDRef))
+                                {
+                                    builder.Append(spellIDRef);
+                                }
+                                else builder.Append("UNKNOWN_SPELLID");
+                                if (item.TryGetValue("u", out object uRef))
+                                {
+                                    builder.Append(", PHASE_").Append(uRef).Append("_IDENTIFIER");
+                                }
+                                if (item.TryGetValue("timeline", out object timelineRef) && timelineRef is List<object> timeline)
+                                {
+                                    if (timeline.Count > 1)
+                                    {
+                                        var timelineStr = MiniJSON.Json.Serialize(timeline);
+                                        builder.Append(", {").Append(timelineStr.Substring(1, timelineStr.Length - 2)).Append("}");
+                                    }
+                                    else builder.Append(", \"").Append(timeline[0]).Append("\"");
+                                }
+                                builder.AppendLine(");");
+                            }
+                        }
+                        File.WriteAllText(Path.Combine(recipesDirectory.FullName, $"{requireSkillPair.Key}.json"), builder.ToString());
+                    }
+                    
                 }
             }
             #endregion

@@ -51,6 +51,11 @@ _.Zones =
 					["description"] = "Temple of the Prophet, Zuldazar",
 					["coord"] = { 49.8, 44.6, 862 },
 				}),
+				fp(2381, {	-- The Mugambala, Zuldazar [Horde]
+					["description"] = "The Mugambala, Zuldazar",
+					["creatureID"] = 148157,	-- Paku'ai Chal
+					["coord"] = { 53.3, 57.3, 862 },
+				}),
 				fp(2165, {	-- Tusk Isle, Zuldazar [Horde]
 					["description"] = "Tusk Isle, Zuldazar",
 					["coord"] = { 59.4, 78.0, 862 },

@@ -329,3 +329,15 @@ profession(20219, {	-- Gnomish Engineering
 		}),
 	}),
 });
+
+-- Gnomish Engineering Recipes
+_.ItemDB = {};
+local itemrecipe = function(itemID, spellID)
+	local o = { ["itemID"] = itemID, ["spellID"] = spellID };
+	_.ItemDB[itemID] = o;
+	return o;
+end
+
+-- Classic Recipes
+itemrecipe(18654, 23096);	-- Schematic: Gnomish Alarm-O-Bot
+itemrecipe(18661, 23129);	-- Schematic: World Enlarger

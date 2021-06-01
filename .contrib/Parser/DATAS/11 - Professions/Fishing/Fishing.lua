@@ -1,58 +1,27 @@
 -- Fishing - Skill ID 356 / Spell ID 7620
 profession(FISHING, {
 	n(-26,    {	-- Drop
-		i(34109, {	-- Weather-Beaten Journal
-			["collectible"] = false,	-- Does not track
-			["spellID"] = 0,	-- invalidate spellID, still shows up as collectible with "false" tag
-		}),
-		i(16082, {	-- Artisan Fishing - The Way of the Lure
-			["collectible"] = false,
-			["description"] = "No longer required.",
-			["u"] = REMOVED_FROM_GAME,
-		}),
-		i(16083, {	-- Expert Fishing - The Bass and You
-			["collectible"] = false,
-			["description"] = "No longer required.",
-			["u"] = REMOVED_FROM_GAME,
-		}),
-		i(27532, {	-- Master Fishing - The Art of Angling
-			["collectible"] = false,
-			["description"] = "No longer required.",
-			["u"] = REMOVED_FROM_GAME,
-		}),
-		i(46054, {	-- Journeyman Fishing - Fishing for Dummies
-			["collectible"] = false,
-			["description"] = "No longer required.",
-			["u"] = REMOVED_FROM_GAME,
-		}),
-		i(46055, {	-- Grand Master Fishing - Deep Sea Adventures
-			["collectible"] = false,
-			["description"] = "No longer required.",
-			["u"] = REMOVED_FROM_GAME,
-		}),
+		i(34109),	-- Weather-Beaten Journal
 	}),
-	n(-167,   {	-- Fishing Poles
-		["icon"] = "Interface\\Icons\\inv_fishingpole_02",
-		["g"] = {
-			i(19970),	-- Arcanite Fishing Pole
-			i(45991),	-- Bone Fishing Pole
-			i(116826, {	-- Draenic Fishing Pole
-				["races"] = ALLIANCE_ONLY,
-			}),
-			i(84661),	-- Dragon Fishing Pole
-			i(45992),	-- Jeweled Fishing Pole
-			i(44050),	-- Mastercraft Kalu'ak Fishing Pole
-			i(19022),	-- Nat Pagle's Extreme Angler FC-5000
-			i(45858),	-- Nat's Lucky Fishing Pole
-			i(84660),	-- Pandaren Fishing Pole
-			i(168804),	-- Powered Piscine Procurement Pole
-			i(116825, {	-- Savage Fishing Pole
-				["races"] = HORDE_ONLY,
-			}),
-			i(25978),	-- Seth's Graphite Fishing Pole
-			i(180136),	-- The Brokers Angle'r
-			i(120163),	-- Thruk's Fishing Rod
-		},
+	filter(57,   {	-- Fishing Poles
+		i(19970),	-- Arcanite Fishing Pole
+		i(45991),	-- Bone Fishing Pole
+		i(116826, {	-- Draenic Fishing Pole
+			["races"] = ALLIANCE_ONLY,
+		}),
+		i(84661),	-- Dragon Fishing Pole
+		i(45992),	-- Jeweled Fishing Pole
+		i(44050),	-- Mastercraft Kalu'ak Fishing Pole
+		i(19022),	-- Nat Pagle's Extreme Angler FC-5000
+		i(45858),	-- Nat's Lucky Fishing Pole
+		i(84660),	-- Pandaren Fishing Pole
+		i(168804),	-- Powered Piscine Procurement Pole
+		i(116825, {	-- Savage Fishing Pole
+			["races"] = HORDE_ONLY,
+		}),
+		i(25978),	-- Seth's Graphite Fishing Pole
+		i(180136),	-- The Brokers Angle'r
+		i(120163),	-- Thruk's Fishing Rod
 	}),
 	i(168016, {	-- Hyper-Compressed Ocean
 		["crs"] = {
@@ -392,7 +361,7 @@ profession(FISHING, {
 			},
 		}),
 	}),
-	n(-160,   {	-- Mounts
+	filter(100,   {	-- Mounts
 		i(142398, {	-- Darkwater Skate
 			["cost"] = { { "i", 124669, 500 }, },	-- 500x Darkmoon Daggermaw
 		}),
@@ -448,5 +417,45 @@ profession(FISHING, {
 		i(44505, {	-- Dustbringer
 			["description"] = "Can be caught in schools or open water in Northrend.",
 		}),
+	}),
+});
+
+-- Fishing Recipes
+_.ItemDB = {};
+local itemrecipe = function(itemID, spellID, timeline, classicphase)
+	local o = { ["itemID"] = itemID };
+	if spellID and spellID > 0 then
+		o.spellID = spellID;
+	end
+	if timeline then
+		-- Ensure that the timeline is in a table format.
+		if type(timeline) == "string" then timeline = { timeline }; end
+		o.timeline = timeline;
+	end
+	if classicphase then applyclassicphase(classicphase, o); end
+	_.ItemDB[itemID] = o;
+	return o;
+end
+
+-- Classic Recipes
+itemrecipe(16083, 0--[[7732]], "removed 3.1.0.9767");	-- Expert Fishing - The Bass and You
+itemrecipe(27532, 0--[[7732]], "removed 3.1.0.9767");	-- Master Fishing - The Art of Angling
+
+-- TBC Recipes
+-- #if ANYCLASSIC
+itemrecipe(34109, 43308, "added 2.3.0.7382", TBC_PHASE_ONE);	-- Weather-Beaten Journal
+-- #else
+-- NOTE: This will need to be checked, on Retail it doesn't show as collected.
+itemrecipe(34109, 0--[[43308]], "added 2.3.0.7382", TBC_PHASE_ONE);	-- Weather-Beaten Journal
+-- #endif
+
+-- These items never made it in.
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	filter(200, {	-- Recipes
+		i(16082),	-- Artisan Fishing - The Way of the Lure
+		-- #if AFTER CATA
+		i(46054),	-- Journeyman Fishing - Fishing for Dummies
+		i(46055),	-- Grand Master Fishing - Deep Sea Adventures
+		-- #endif
 	}),
 });

@@ -20,8 +20,9 @@ _.Zones =
 					["coord"] = { 62.6, 23.8, 896 },
 				}),
 				fp(2108, {	-- Falconhurst, Drustvar [Alliance]
-					["description"] = "Falconhurst, Drustvar",
+					["description"] = "Falconhurst, Drustvar\n\nThis flight path may be unlocked prior to completion of the nearby quest chain, but interacting with a different flight master on the same continent will be required to mark it as collected.",
 					["coord"] = { 27.0, 72.2, 896 },
+					-- ["sourceQuest"] = ,	-- TODO: this flight master does not provide flight path and has dialog about improving the town situation
 				}),
 				fp(2056, {	-- Fallhaven, Drustvar (Ferry) [Alliance]
 					["description"] = "Fallhaven, Drustvar (Ferry)",

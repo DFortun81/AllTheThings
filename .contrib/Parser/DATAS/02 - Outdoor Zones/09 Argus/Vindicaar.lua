@@ -161,6 +161,23 @@ _.Zones =
 						}),
 					}),
 				}),
+				n(FLIGHT_PATHS, {
+					fp(1994, {	-- Vindicaar, Antoran Wastes
+						["description"] = "Vindicaar, Antoran Wastes",
+						["creatureID"] = 125514,	-- Navigation Console
+						["coord"] = { 32.3, 56.4, 887 },	-- Upper Deck [The Vindicaar: Antoran Wastes]
+					}),
+					fp(1944, {	-- Vindicaar, Krokuun
+						["description"] = "Vindicaar, Krokuun",
+						["creatureID"] = 123139,	-- Navigation Console
+						["coord"] = { 42.5, 22.8, 831 },	-- Upper Deck [The Vindicaar: Krokuun]
+					}),
+					fp(1977, {	-- Vindicaar, Mac'Aree
+						["description"] = "Vindicaar, Mac'Aree",
+						["creatureID"] = 125461,	-- Navigation Console
+						["coord"] = { 62.7, 49.1, 883 },	-- Upper Deck [The Vindicaar: Mac'Aree]
+					}),
+				}),
 				n(QUESTS, {
 					q(48075, {	-- A Colorful Key
 						["provider"] = { "n", 125343 },		-- Vorel

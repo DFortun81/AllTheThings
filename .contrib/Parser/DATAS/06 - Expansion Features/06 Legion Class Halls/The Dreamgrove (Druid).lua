@@ -25,6 +25,12 @@ _.ExpansionFeatures =
 				filter(101, { 	-- Pet Battle
 					p(479),	-- Elfin Rabbit
 				}),
+				n(FLIGHT_PATHS, {
+					fp(1815, {	-- The Dreamgrove, Val'sharah
+						["creatureID"] = 107457,	-- Danise Stargazer
+						["coord"] = { 61.7, 33.9, 747 },
+					}),
+				}),
 				n(QUESTS, {
 					q(42044, {	-- A Dying Dream
 						["classes"] = { DRUID },

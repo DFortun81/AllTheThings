@@ -10,10 +10,6 @@ _.Zones =
 				fp(2589, {	-- Ardenweald, Claw's Edge
 					["coord"] = { 51.3, 71.3, ARDENWEALD },
 				}),
-				fp(2530, {	-- Ardenweald, Dreamsong Fenn
-					["coord"] = { 49.4, 59.2, ARDENWEALD },
-					["u"] = NEVER_IMPLEMENTED,
-				}),
 				fp(2584, {	-- Ardenweald, Glitterfall Basin
 					["coord"] = { 36.7, 36.7, ARDENWEALD },
 				}),
@@ -25,10 +21,6 @@ _.Zones =
 				}),
 				fp(2588, {	-- Ardenweald, Root-Home
 					["coord"] = { 35.1, 51.7, ARDENWEALD },
-				}),
-				fp(2565, {	-- Ardenweald, Starlit Overlook
-					["coord"] = { 64.9, 19.9, ARDENWEALD },
-					["u"] = NEVER_IMPLEMENTED,
 				}),
 				fp(2585, {	-- Ardenweald, Tirna Vaal
 					["coord"] = { 63.4, 37.5, ARDENWEALD },

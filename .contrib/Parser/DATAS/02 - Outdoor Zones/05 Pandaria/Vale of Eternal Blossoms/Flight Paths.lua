@@ -16,6 +16,11 @@ _.Zones =
 				fp(1058, {	-- Shrine of Two Moons, Vale of Eternal Blossoms
 					["coord"] = { 62.8, 21.6, 390 },
 				}),
+				fp(2544, {	-- Mistfall Village, Vale of Eternal Blossoms
+					["coord"] = { 38.9, 72.8, 390 },
+					["creatureID"] = 154805,	-- Ryuxi
+					-- ["sourceQuests"] = {  },	-- TODO: likely requires some 8.3 quest chain before becoming available?
+				}),
 			}),
 		}),
 	}),

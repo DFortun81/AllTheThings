@@ -179,10 +179,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(12, 1, 12),
 					["groups"] = {
-						i(22647, {	-- Recipe: Crunchy Spider Surprise
-							["requireSkill"] = COOKING,
-							["recipeID"] = 28267,
-						}),
+						i(22647),	-- Recipe: Crunchy Spider Surprise
 						i(22645),	-- Crunchy Spider Surprise
 					},
 				}),

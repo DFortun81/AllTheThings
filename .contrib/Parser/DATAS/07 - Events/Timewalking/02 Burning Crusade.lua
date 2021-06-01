@@ -254,10 +254,7 @@ _.WorldEvents =
 								i(33820, {	-- Weather-Beaten Fishing Hat
 									["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
 								}),
-								i(34109, {	-- Weather-Beaten Journal
-									["collectible"] = false,	-- Does not track
-									["spellID"] = 0,	-- invalidate spellID, still shows up as collectible with "false" tag
-								}),
+								i(34109),	-- Weather-Beaten Journal
 							},
 						}),
 						i(33844, {	-- Barrel of Fish

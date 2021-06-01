@@ -10,17 +10,8 @@ _.Zones =
 					["coord"] = { 48.0, 67.2, 80 },
 				}),
 				fp(69, {	-- Moonglade
+					["creatureID"] = 12740,	-- Faustron
 					["coord"] = { 32.2, 66.4, 80 },
-				}),
-				fp(62, {	-- Nighthaven, Moonglade
-					["collectible"] = false,
-					["classes"] = { DRUID },
-					["coord"] = { 44.0, 45.4, 80 },
-				}),
-				fp(63, {	-- Nighthaven, Moonglade
-					["collectible"] = false,
-					["classes"] = { DRUID },
-					["coord"] = { 44.2, 45.6, 80 },
 				}),
 			}),
 		}),

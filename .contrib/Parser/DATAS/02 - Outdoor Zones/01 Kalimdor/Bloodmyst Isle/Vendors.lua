@@ -10,10 +10,7 @@ _.Zones =
 					["coord"] = { 53.4, 56.6, BLOODMYST_ISLE },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(22647, {	-- Recipe: Crunchy Spider Surprise
-							["requireSkill"] = COOKING,
-							["recipeID"] = 28267,
-						}),
+						i(22647),	-- Recipe: Crunchy Spider Surprise
 					},
 				}),
 			}),

@@ -296,6 +296,7 @@ end
 itemrecipe(16084, 0--[[7924]], "removed 3.1.0.9767");	-- Expert First Aid - Under Wraps
 itemrecipe(16112, 7929, "removed 3.1.0.9767");	-- Manual: Heavy Silk Bandage
 itemrecipe(16113, 10840, "removed 3.1.0.9767");	-- Manual: Mageweave Bandage
+itemrecipe(19442, 23787);	-- Formula: Powerful Anti-Venom
 itemrecipe(6454, 7935);	-- Manual: Strong Anti-Venom
 
 -- #if AFTER TBC
@@ -314,6 +315,7 @@ itemrecipe(39152, 45546, "added 3.0.1.8714", WRATH_PHASE_ONE);	-- Manual: Heavy 
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	filter(200, {	-- Recipes
 		i(16085),	-- Artisan First Aid - Heal Thyself
+		i(8547),	-- Formula: Powerful Smelling Salts
 		i(23689),	-- Manual: Crystal Infused Bandage
 		i(23690),	-- Recipe: Crystal Flake Throat Lozenge
 	}),
