@@ -8,6 +8,35 @@ local applytraining = function(g)
 end
 
 profession(TAILORING, {
+	-- #if BEFORE 4.0.1.12984
+	applyclassicphase(TBC_PHASE_ONE, prof(26798, {	-- Mooncloth Tailoring
+		["description"] = "These items can only be crafted by Tailorings that have completed the Becoming a Mooncloth Tailor quest in Shattrath.\n\nNOTE: You may only have one of these specializations active per character.",
+		["sourceQuest"] = 10831,	-- Becoming a Mooncloth Tailor
+		["groups"] = {
+			recipe(26760),	-- Primal Mooncloth Belt
+			recipe(26762),	-- Primal Mooncloth Robe
+			recipe(26761),	-- Primal Mooncloth Shoulders
+		},
+	})),
+	applyclassicphase(TBC_PHASE_ONE, prof(26801, {	-- Shadoweave Tailoring
+		["description"] = "These items can only be crafted by Tailorings that have completed the Becoming a Shadoweave Tailor quest in Shattrath.\n\nNOTE: You may only have one of these specializations active per character.",
+		["sourceQuest"] = 10833,	-- Becoming a Shadoweave Tailor
+		["groups"] = {
+			recipe(26756),	-- Frozen Shadoweave Shoulders
+			recipe(26758),	-- Frozen Shadoweave Robe
+			recipe(26757),	-- Frozen Shadoweave Boots
+		},
+	})),
+	applyclassicphase(TBC_PHASE_ONE, prof(26797, {	-- Spellfire Tailoring
+		["description"] = "These items can only be crafted by Tailorings that have completed the Becoming a Spellfire Tailor quest in Shattrath.\n\nNOTE: You may only have one of these specializations active per character.",
+		["sourceQuest"] = 10832,	-- Becoming a Spellfire Tailor
+		["groups"] = {
+			recipe(26752),	-- Spellfire Belt
+			recipe(26753),	-- Spellfire Gloves
+			recipe(26754),	-- Spellfire Robe
+		},
+	})),
+	-- #endif
 	tier(1, {	-- Classic
 		-- #if AFTER SHADOWLANDS
 		{
@@ -1258,18 +1287,22 @@ profession(TAILORING, {
 			["name"] = "Shoulders",
 			["categoryID"] = 1004,
 			["groups"] = {
+				-- #if AFTER 4.0.1.12984
 				{
 					["name"] = "Frozen Shadoweave Shoulders",
 					["recipeID"] = 26756
 				},
+				-- #endif
 				{
 					["name"] = "Mantle of Nimble Thought",
 					["recipeID"] = 41206
 				},
+				-- #if AFTER 4.0.1.12984
 				{
 					["name"] = "Primal Mooncloth Shoulders",
 					["recipeID"] = 26761
 				},
+				-- #endif
 				{
 					["name"] = "Soulcloth Shoulders",
 					["recipeID"] = 26780
@@ -1292,10 +1325,12 @@ profession(TAILORING, {
 					["name"] = "Flameheart Vest",
 					["recipeID"] = 37884
 				},
+				-- #if AFTER 4.0.1.12984
 				{
 					["name"] = "Frozen Shadoweave Robe",
 					["recipeID"] = 26758
 				},
+				-- #endif
 				{
 					["name"] = "Imbued Netherweave Robe",
 					["recipeID"] = 26777
@@ -1312,10 +1347,12 @@ profession(TAILORING, {
 					["name"] = "Netherweave Tunic",
 					["recipeID"] = 26774
 				},
+				-- #if AFTER 4.0.1.12984
 				{
 					["name"] = "Primal Mooncloth Robe",
 					["recipeID"] = 26762
 				},
+				-- #endif
 				{
 					["name"] = "Robe of Eternal Light",
 					["recipeID"] = 46131
@@ -1324,10 +1361,12 @@ profession(TAILORING, {
 					["name"] = "Soulcloth Vest",
 					["recipeID"] = 26781
 				},
+				-- #if AFTER 4.0.1.12984
 				{
 					["name"] = "Spellfire Robe",
 					["recipeID"] = 26754
 				},
+				-- #endif
 				{
 					["name"] = "Sunfire Robe",
 					["recipeID"] = 46130
@@ -1400,18 +1439,22 @@ profession(TAILORING, {
 					["name"] = "Netherweave Belt",
 					["recipeID"] = 26765
 				},
+				-- #if AFTER 4.0.1.12984
 				{
 					["name"] = "Primal Mooncloth Belt",
 					["recipeID"] = 26760
 				},
+				-- #endif
 				{
 					["name"] = "Soulguard Girdle",
 					["recipeID"] = 40024
 				},
+				-- #if AFTER 4.0.1.12984
 				{
 					["name"] = "Spellfire Belt",
 					["recipeID"] = 26752
 				},
+				-- #endif
 				{
 					["name"] = "Unyielding Girdle",
 					["recipeID"] = 31442
@@ -1438,10 +1481,12 @@ profession(TAILORING, {
 					["name"] = "Soulcloth Gloves",
 					["recipeID"] = 26779
 				},
+				-- #if AFTER 4.0.1.12984
 				{
 					["name"] = "Spellfire Gloves",
 					["recipeID"] = 26753
 				},
+				-- #endif
 				{
 					["name"] = "Sunfire Handwraps",
 					["recipeID"] = 46128
@@ -1494,10 +1539,12 @@ profession(TAILORING, {
 					["name"] = "Boots of the Long Road",
 					["recipeID"] = 36318
 				},
+				-- #if AFTER 4.0.1.12984
 				{
 					["name"] = "Frozen Shadoweave Boots",
 					["recipeID"] = 26757
 				},
+				-- #endif
 				{
 					["name"] = "Imbued Netherweave Boots",
 					["recipeID"] = 26776
@@ -5099,6 +5146,74 @@ profession(TAILORING, {
 		},
 	})),
 	n(QUESTS, bubbleDown({ ["timeline"] = { "removed 4.0.3.10000" } }, {
+		applyclassicphase(TBC_PHASE_ONE, q(10831, {	-- Becoming a Mooncloth Tailor
+			["qg"] = 22208,	-- Nasmara Moonsong <Mooncloth Specialist>
+			["requireSkill"] = TAILORING,
+			["description"] = "Upon finishing this quest, you will become a Mooncloth Tailor.",
+			["coord"] = { 66.5, 69.3, SHATTRATH_CITY },
+			["maps"] = { SHATTRATH_CITY, ZANGARMARSH },
+			["altQuests"] = {
+				10831,	-- Becoming a Mooncloth Tailor
+				10833,	-- Becoming a Shadoweave Tailor
+				10832,	-- Becoming a Spellfire Tailor
+			},
+			["lvl"] = lvlsquish(60, 20, 60),
+			["groups"] = {
+				objective(1, {	-- 0/1 Sample of Primal Mooncloth
+					["provider"] = { "i", 31530 },	-- Sample of Primal Mooncloth
+					["coord"] = { 80, 65, ZANGARMARSH },
+					["cost"] = {
+						{ "i", 31524, 1 },	-- Square of Imbued Netherweave
+						{ "i", 31525, 1 },	-- Vial of Primal Reagents
+					},
+				}),
+				i(31522, {	-- Primal Mooncloth Supplies
+					i(31524),	-- Square of Imbued Netherweave
+					i(31525),	-- Vial of Primal Reagents
+				}),
+			},
+		})),
+		applyclassicphase(TBC_PHASE_ONE, q(10833, {	-- Becoming a Shadoweave Tailor
+			["qg"] = 22212,	-- Andrion Darkspinner <Shadoweave Specialist>
+			["requireSkill"] = TAILORING,
+			["description"] = "Upon finishing this quest, you will become a Shadoweave Tailor.",
+			["coord"] = { 66.6, 68.2, SHATTRATH_CITY },
+			["maps"] = { SHATTRATH_CITY, SHADOWMOON_VALLEY },
+			["altQuests"] = {
+				10831,	-- Becoming a Mooncloth Tailor
+				10833,	-- Becoming a Shadoweave Tailor
+				10832,	-- Becoming a Spellfire Tailor
+			},
+			["lvl"] = lvlsquish(60, 20, 60),
+			["groups"] = {
+				objective(1, {	-- Deepen Altar of Shadows Attunement
+					["provider"] = { "i", 31736 },	-- Crystal of Deep Shadows
+					["coord"] = { 58, 71, SHADOWMOON_VALLEY },
+				}),
+			},
+		})),
+		applyclassicphase(TBC_PHASE_ONE, q(10832, {	-- Becoming a Spellfire Tailor
+			["qg"] = 22213,	-- Gidge Spellweaver <Spellfire Specialist>
+			["requireSkill"] = TAILORING,
+			["description"] = "Upon finishing this quest, you will become a Spellfire Tailor.",
+			["coord"] = { 66.6, 68.4, SHATTRATH_CITY },
+			["maps"] = { SHATTRATH_CITY, NETHERSTORM },
+			["altQuests"] = {
+				10831,	-- Becoming a Mooncloth Tailor
+				10833,	-- Becoming a Shadoweave Tailor
+				10832,	-- Becoming a Spellfire Tailor
+			},
+			["lvl"] = lvlsquish(60, 20, 60),
+			["groups"] = {
+				objective(1, {	-- 0/1 Nether-wraith Essence
+					["provider"] = { "i", 31741 },	-- Nether-wraith Essence
+					["cr"] = 22408,	-- Furious Nether-wraith
+					["cost"] = {
+						{ "i", 31742, 1 },	-- Nether-wraith Beacon
+					},
+				}),
+			},
+		})),
 		q(3379, {	-- Shadoweaver
 			["qg"] = 8439,	-- Nilith Lokrav
 			["coord"] = { 41.0, 75.0, SEARING_GORGE },
@@ -5242,6 +5357,27 @@ local itemrecipe = function(name, itemID, spellID, phase, timeline)
 	return o;
 end
 
+-- Classic Recipes
+
+
+-- #if AFTER TBC
+-- TBC Recipes
+itemrecipe("Pattern: Frozen Shadoweave Shoulders", 21912, 26756, TBC_PHASE_ONE);
+itemrecipe("Pattern: Frozen Shadoweave Robe", 21913, 26758, TBC_PHASE_ONE);
+itemrecipe("Pattern: Frozen Shadoweave Boots", 21914, 26757, TBC_PHASE_ONE);
+itemrecipe("Pattern: Primal Mooncloth Belt", 21916, 26760, TBC_PHASE_ONE);
+itemrecipe("Pattern: Primal Mooncloth Robe", 21917, 26762, TBC_PHASE_ONE);
+itemrecipe("Pattern: Primal Mooncloth Shoulders", 21918, 26761, TBC_PHASE_ONE);
+itemrecipe("Pattern: Spellfire Belt", 21908, 26752, TBC_PHASE_ONE);
+itemrecipe("Pattern: Spellfire Gloves", 21909, 26753, TBC_PHASE_ONE);
+itemrecipe("Pattern: Spellfire Robe", 21910, 26754, TBC_PHASE_ONE);
+-- #endif
+
+-- #if AFTER WRATH
+-- Wrath Recipes
+
+-- #endif
+
 -- Never Implemented Recipe and Crafted Item Database
 local neverimplemented = function(thing)
 	table.insert(_.NeverImplemented, prof(TAILORING, { thing }));
@@ -5359,10 +5495,3 @@ neverimplemented(i(162430));	-- Pattern: Embroidered Deep Sea Breeches (Rank 3)
 
 -- Apply the Never Implemented flag to the Never Implemented things.
 bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, _.NeverImplemented);
-
---[[
--- TODO LIST
-un(REMOVED_FROM_GAME, recipe(26801)),  -- Shadoweave Tailoring
-un(REMOVED_FROM_GAME, recipe(26797)),  -- Spellfire Tailoring
-un(REMOVED_FROM_GAME, recipe(26798)),  -- Mooncloth Tailoring
-]]--
