@@ -239,12 +239,31 @@ namespace ATT
                         {
                             if (item.TryGetValue("itemID", out object id))
                             {
-                                builder.Append("i(").Append(id).Append(");");
+                                builder.Append("itemrecipe(\"");
                                 if (item.TryGetValue("name", out object name))
                                 {
-                                    builder.Append("\t-- ").Append(name);
+                                    builder.Append(name.ToString().Replace("\"", "\\\""));
                                 }
-                                builder.AppendLine();
+                                builder.Append("\",").Append(id).Append(", ");
+                                if (item.TryGetValue("spellID", out object spellIDRef) || item.TryGetValue("recipeID", out spellIDRef))
+                                {
+                                    builder.Append(spellIDRef);
+                                }
+                                else builder.Append("UNKNOWN_SPELLID");
+                                if (item.TryGetValue("timeline", out object timelineRef) && timelineRef is List<object> timeline)
+                                {
+                                    if (timeline.Count > 1)
+                                    {
+                                        var timelineStr = MiniJSON.Json.Serialize(timeline);
+                                        builder.Append(", {").Append(timelineStr.Substring(1, timelineStr.Length - 2)).Append("}");
+                                    }
+                                    else builder.Append(", \"").Append(timeline[0]).Append("\"");
+                                }
+                                if (item.TryGetValue("u", out object uRef))
+                                {
+                                    builder.Append(", PHASE_").Append(uRef).Append("_IDENTIFIER");
+                                }
+                                builder.AppendLine(");");
                             }
                         }
                         File.WriteAllText(Path.Combine(recipesDirectory.FullName, $"{requireSkillPair.Key}.json"), builder.ToString());

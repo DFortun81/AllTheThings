@@ -57,7 +57,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'TBC|x86'">
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>..\..\..\..\..\..\..\_classic_\Interface\AddOns\ATT-Classic\.contrib\.tools\</OutputPath>
-    <DefineConstants>TRACE;DEBUG;TBC;CRIEVE;ANYCLASSIC</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;TBC;CRIEVE;ANYCLASSIC;CLASSICBETA</DefineConstants>
     <DebugType>full</DebugType>
     <PlatformTarget>x64</PlatformTarget>
     <LangVersion>7.3</LangVersion>
