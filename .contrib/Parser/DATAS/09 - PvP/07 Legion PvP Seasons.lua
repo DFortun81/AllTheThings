@@ -46,6 +46,7 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 12 },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 12 },	-- Season 2
+								{"exclude", "itemID", 146264 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(136893),	-- Vindictive Combatant's Demonthread Cloak (A)
@@ -76,6 +77,7 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 11 },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 11 },	-- Season 2
+								{"exclude", "itemID", 146168 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(135831),	-- Vindictive Combatant's Dragonhide Belt (A)
@@ -106,6 +108,7 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 3 },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 3 },	-- Season 2
+								{"exclude", "itemID", 146154 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(135840),	-- Vindictive Combatant's Chain Armband (A)
@@ -136,6 +139,7 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 8 },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 8 },	-- Season 2
+								{"exclude", "itemID", 146156 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(135846),	-- Vindictive Combatant's Silk Amice (A)
@@ -166,6 +170,7 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 10 },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 10 },	-- Season 2
+								{"exclude", "itemID", 146170 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(135855),	-- Vindictive Combatant's Ironskin Belt (A)
@@ -196,6 +201,7 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 2 },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 2 },	-- Season 2
+								{"exclude", "itemID", 146166 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(135914),	-- Vindictive Combatant's Greatcloak of Faith (A)
@@ -226,6 +232,7 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 5 },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 5 },	-- Season 2
+								{"exclude", "itemID", 146158 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(136867),	-- Vindictive Combatant's Drape of Piety (A)
@@ -256,6 +263,7 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 4 },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 4 },	-- Season 2
+								{"exclude", "itemID", 146172 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(135879),	-- Vindictive Combatant's Leather Belt (A)
@@ -286,6 +294,7 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 7 },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 7 },	-- Season 2
+								{"exclude", "itemID", 146152 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(135888),	-- Vindictive Combatant's Ringmail Armband (A)
@@ -316,6 +325,7 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 9 },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 9 },	-- Season 2
+								{"exclude", "itemID", 146160 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(135894),	-- Vindictive Combatant's Felweave Amice (A)
@@ -346,6 +356,7 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -660, 1 },	-- Season 1
 								{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -660, 1 },	-- Season 2
+								{"exclude", "itemID", 146162 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(136887),	-- Vindictive Combatant's Cloak of Battle (A)
@@ -2165,6 +2176,7 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -660, 6 },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -660, 6 },	-- Season 4
+								{"exclude", "itemID", 147677 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(145026),	-- Cruel Combatant's Dreadcloak (A)
@@ -2195,6 +2207,7 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -660, 12 },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -660, 12 },	-- Season 4
+								{"exclude", "itemID", 147680 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(145028),	-- Cruel Combatant's Demonthread Cloak (A)
@@ -2225,6 +2238,7 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -660, 11 },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -660, 11 },	-- Season 4
+								{"exclude", "itemID", 147675 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(145094),	-- Cruel Combatant's Dragonhide Belt (A)
@@ -2255,6 +2269,7 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -660, 3 },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -660, 3 },	-- Season 4
+								{"exclude", "itemID", 147689 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(145112),	-- Cruel Combatant's Chain Armband (A)
@@ -2285,6 +2300,7 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -660, 8 },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -660, 8 },	-- Season 4
+								{"exclude", "itemID", 147696 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(145124),	-- Cruel Combatant's Silk Amice (A)
@@ -2315,6 +2331,7 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -660, 10 },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -660, 10 },	-- Season 4
+								{"exclude", "itemID", 147684 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(145142),	-- Cruel Combatant's Ironskin Belt (A)
@@ -2345,6 +2362,7 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -660, 2 },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -660, 2 },	-- Season 4
+								{"exclude", "itemID", 147693 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(145038),	-- Cruel Combatant's Greatcloak of Faith (A)
@@ -2375,6 +2393,7 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -660, 5 },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -660, 5 },	-- Season 4
+								{"exclude", "itemID", 147688 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(145040),	-- Cruel Combatant's Drape of Piety (A)
@@ -2405,6 +2424,7 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -660, 4 },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -660, 4 },	-- Season 4
+								{"exclude", "itemID", 147685 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(145202),	-- Cruel Combatant's Leather Belt (A)
@@ -2435,6 +2455,7 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -660, 7 },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -660, 7 },	-- Season 4
+								{"exclude", "itemID", 147674 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(145220),	-- Cruel Combatant's Ringmail Armband (A)
@@ -2465,6 +2486,7 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -660, 9 },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -660, 9 },	-- Season 4
+								{"exclude", "itemID", 147682 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(145250),	-- Cruel Combatant's Felweave Amice (A)
@@ -2495,6 +2517,7 @@ _.PVP =
 							["sym"] = {
 								{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -660, 1 },	-- Season 3
 								{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -660, 1 },	-- Season 4
+								{"exclude", "itemID", 147692 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(145048),	-- Cruel Combatant's Cloak of Battle (A)
@@ -4458,6 +4481,7 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -660, 6 },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -660, 6 },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -660, 6 },	-- Season 7
+								{"exclude", "itemID", 150252 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(149505),	-- Fierce Combatant's Dreadcloak (A)
@@ -4498,6 +4522,7 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -660, 12 },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -660, 12 },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -660, 12 },	-- Season 7
+								{"exclude", "itemID", 150255 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(149507),	-- Fierce Combatant's Demonthread Cloak (A)
@@ -4538,6 +4563,7 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -660, 11 },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -660, 11 },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -660, 11 },	-- Season 7
+								{"exclude", "itemID", 150250 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(149573),	-- Fierce Combatant's Dragonhide Belt (A)
@@ -4578,6 +4604,7 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -660, 3 },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -660, 3 },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -660, 3 },	-- Season 7
+								{"exclude", "itemID", 150264 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(149592),	-- Fierce Combatant's Chain Armband (A)
@@ -4618,6 +4645,7 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -660, 8 },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -660, 8 },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -660, 8 },	-- Season 7
+								{"exclude", "itemID", 150271 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(149604),	-- Fierce Combatant's Silk Amice (A)
@@ -4658,6 +4686,7 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -660, 10 },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -660, 10 },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -660, 10 },	-- Season 7
+								{"exclude", "itemID", 150259 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(149622),	-- Fierce Combatant's Ironskin Belt (A)
@@ -4698,6 +4727,7 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -660, 2 },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -660, 2 },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -660, 2 },	-- Season 7
+								{"exclude", "itemID", 150268 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(149517),	-- Fierce Combatant's Greatcloak of Faith (A)
@@ -4738,6 +4768,7 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -660, 5 },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -660, 5 },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -660, 5 },	-- Season 7
+								{"exclude", "itemID", 150263 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(149519),	-- Fierce Combatant's Drape of Piety (A)
@@ -4778,6 +4809,7 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -660, 4 },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -660, 4 },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -660, 4 },	-- Season 7
+								{"exclude", "itemID", 150260 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(149682),	-- Fierce Combatant's Leather Belt (A)
@@ -4818,6 +4850,7 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -660, 7 },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -660, 7 },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -660, 7 },	-- Season 7
+								{"exclude", "itemID", 150249 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(149700),	-- Fierce Combatant's Ringmail Armband (A)
@@ -4858,6 +4891,7 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -660, 9 },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -660, 9 },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -660, 9 },	-- Season 7
+								{"exclude", "itemID", 150257 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(149730),	-- Fierce Combatant's Felweave Amice (A)
@@ -4898,6 +4932,7 @@ _.PVP =
 								{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -660, 1 },	-- Season 5
 								{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -660, 1 },	-- Season 6
 								{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -660, 1 },	-- Season 7
+								{"exclude", "itemID", 150267 },	-- Exclude itself to stop duplicating
 							},
 							["g"] = {
 								i(149527),	-- Fierce Combatant's Cloak of Battle (A)
