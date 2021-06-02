@@ -8049,7 +8049,7 @@ local itemFields = {
 		return IsQuestFlaggedCompletedForObject(t) or t.collectedAsCost;
 	end,
 	["collectedAsTransmog"] = function(t)
-		return ATTAccountWideData.Sources[rawget(t, "s")];
+		return ATTAccountWideData.Sources[rawget(t, "s")] and (not t.collectibleAsCost or t.collectedAsCost);
 	end,
 	["savedAsQuest"] = function(t)
 		return IsQuestFlaggedCompleted(t);
