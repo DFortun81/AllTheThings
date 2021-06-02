@@ -408,136 +408,376 @@ _.PVP =
 				}),
 				n(-661, {	-- Gladiator PvP Gear
 					cl(DEATHKNIGHT, {
-						i(135679),	-- Vindictive Gladiator's Dreadcloak (A)
-						i(135591),	-- Vindictive Gladiator's Dreadplate Chestpiece (A)
-						i(135593),	-- Vindictive Gladiator's Dreadplate Gauntlets (A)
-						i(135597),	-- Vindictive Gladiator's Dreadplate Girdle (A)
-						i(135594),	-- Vindictive Gladiator's Dreadplate Helm (A)
-						i(135595),	-- Vindictive Gladiator's Dreadplate Legguards (A)
-						i(135592),	-- Vindictive Gladiator's Dreadplate Sabatons (A)
-						i(135596),	-- Vindictive Gladiator's Dreadplate Shoulders (A)
-						i(135598),	-- Vindictive Gladiator's Dreadplate Wristplates (A)
+						i(146132, {	-- Ensemble: Vindictive Gladiator's Dreadplate Armor (A)
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -661, 6 },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -661, 6 },	-- Season 2
+								{"exclude", "itemID", 146132 },	-- Exclude itself to stop duplicating
+							},
+							["g"] = {
+								i(135679),	-- Vindictive Gladiator's Dreadcloak (A)
+								i(135591),	-- Vindictive Gladiator's Dreadplate Chestpiece (A)
+								i(135593),	-- Vindictive Gladiator's Dreadplate Gauntlets (A)
+								i(135597),	-- Vindictive Gladiator's Dreadplate Girdle (A)
+								i(135594),	-- Vindictive Gladiator's Dreadplate Helm (A)
+								i(135595),	-- Vindictive Gladiator's Dreadplate Legguards (A)
+								i(135592),	-- Vindictive Gladiator's Dreadplate Sabatons (A)
+								i(135596),	-- Vindictive Gladiator's Dreadplate Shoulders (A)
+								i(135598),	-- Vindictive Gladiator's Dreadplate Wristplates (A)
+								i(142648),	-- Fearless Gladiator's Dreadcloak (A)
+								i(142560),	-- Fearless Gladiator's Dreadplate Chestpiece (A)
+								i(142562),	-- Fearless Gladiator's Dreadplate Gauntlets (A)
+								i(142566),	-- Fearless Gladiator's Dreadplate Girdle (A)
+								i(142563),	-- Fearless Gladiator's Dreadplate Helm (A)
+								i(142564),	-- Fearless Gladiator's Dreadplate Legguards (A)
+								i(142561),	-- Fearless Gladiator's Dreadplate Sabatons (A)
+								i(142565),	-- Fearless Gladiator's Dreadplate Shoulders (A)
+								i(142567),	-- Fearless Gladiator's Dreadplate Wristplates (A)
+							},
+						}),
 					}),
 					cl(DEMONHUNTER, {
-						i(136891),	-- Vindictive Gladiator's Demonthread Cloak (A)
-						i(136285),	-- Vindictive Gladiator's Felskin Belt (A)
-						i(136279),	-- Vindictive Gladiator's Felskin Boots (A)
-						i(136280),	-- Vindictive Gladiator's Felskin Gloves (A)
-						i(136281),	-- Vindictive Gladiator's Felskin Helm (A)
-						i(136282),	-- Vindictive Gladiator's Felskin Legguards (A)
-						i(136284),	-- Vindictive Gladiator's Felskin Spaulders (A)
-						i(136283),	-- Vindictive Gladiator's Felskin Tunic (A)
-						i(136286),	-- Vindictive Gladiator's Felskin Wristguards (A)
+						i(146262, {	-- Ensemble: Vindictive Gladiator's Felskin Armor (A)
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -661, 12 },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -661, 12 },	-- Season 2
+								{"exclude", "itemID", 146262 },	-- Exclude itself to stop duplicating
+							},
+							["g"] = {
+								i(136891),	-- Vindictive Gladiator's Demonthread Cloak (A)
+								i(136285),	-- Vindictive Gladiator's Felskin Belt (A)
+								i(136279),	-- Vindictive Gladiator's Felskin Boots (A)
+								i(136280),	-- Vindictive Gladiator's Felskin Gloves (A)
+								i(136281),	-- Vindictive Gladiator's Felskin Helm (A)
+								i(136282),	-- Vindictive Gladiator's Felskin Legguards (A)
+								i(136284),	-- Vindictive Gladiator's Felskin Spaulders (A)
+								i(136283),	-- Vindictive Gladiator's Felskin Tunic (A)
+								i(136286),	-- Vindictive Gladiator's Felskin Wristguards (A)
+								i(143316),	-- Fearless Gladiator's Demonthread Cloak (A)
+								i(143244),	-- Fearless Gladiator's Felskin Belt (A)
+								i(143238),	-- Fearless Gladiator's Felskin Boots (A)
+								i(143239),	-- Fearless Gladiator's Felskin Gloves (A)
+								i(143240),	-- Fearless Gladiator's Felskin Helm (A)
+								i(143241),	-- Fearless Gladiator's Felskin Legguards (A)
+								i(143243),	-- Fearless Gladiator's Felskin Spaulders (A)
+								i(143242),	-- Fearless Gladiator's Felskin Tunic (A)
+								i(143245),	-- Fearless Gladiator's Felskin Wristguards (A)
+							},
+						}),
 					}),
 					cl(DRUID, {
-						i(135605),	-- Vindictive Gladiator's Dragonhide Belt (A)
-						i(135680),	-- Vindictive Gladiator's Dragonhide Cloak (A)
-						i(135600),	-- Vindictive Gladiator's Dragonhide Gloves (A)
-						i(135601),	-- Vindictive Gladiator's Dragonhide Helm (A)
-						i(135602),	-- Vindictive Gladiator's Dragonhide Legguards (A)
-						i(135599),	-- Vindictive Gladiator's Dragonhide Moccasins (A)
-						i(135603),	-- Vindictive Gladiator's Dragonhide Robe (A)
-						i(135604),	-- Vindictive Gladiator's Dragonhide Spaulders (A)
-						i(135606),	-- Vindictive Gladiator's Dragonhide Wristguards (A)
+						i(146140, {	-- Ensemble: Vindictive Gladiator's Dragonhide Armor (A)
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -661, 11 },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -661, 11 },	-- Season 2
+								{"exclude", "itemID", 146140 },	-- Exclude itself to stop duplicating
+							},
+							["g"] = {
+								i(135605),	-- Vindictive Gladiator's Dragonhide Belt (A)
+								i(135680),	-- Vindictive Gladiator's Dragonhide Cloak (A)
+								i(135600),	-- Vindictive Gladiator's Dragonhide Gloves (A)
+								i(135601),	-- Vindictive Gladiator's Dragonhide Helm (A)
+								i(135602),	-- Vindictive Gladiator's Dragonhide Legguards (A)
+								i(135599),	-- Vindictive Gladiator's Dragonhide Moccasins (A)
+								i(135603),	-- Vindictive Gladiator's Dragonhide Robe (A)
+								i(135604),	-- Vindictive Gladiator's Dragonhide Spaulders (A)
+								i(135606),	-- Vindictive Gladiator's Dragonhide Wristguards (A)
+								i(142574),	-- Fearless Gladiator's Dragonhide Belt (H)
+								i(142649),	-- Fearless Gladiator's Dragonhide Cloak (H)
+								i(142569),	-- Fearless Gladiator's Dragonhide Gloves (H)
+								i(142570),	-- Fearless Gladiator's Dragonhide Helm (H)
+								i(142571),	-- Fearless Gladiator's Dragonhide Legguards (H)
+								i(142568),	-- Fearless Gladiator's Dragonhide Moccasins (H)
+								i(142572),	-- Fearless Gladiator's Dragonhide Robe (H)
+								i(142573),	-- Fearless Gladiator's Dragonhide Spaulders (H)
+								i(142575),	-- Fearless Gladiator's Dragonhide Wristguards (H)
+							},
+						}),
 					}),
 					cl(HUNTER, {
-						i(135614),	-- Vindictive Gladiator's Chain Armband (A)
-						i(135607),	-- Vindictive Gladiator's Chain Armor (A)
-						i(135613),	-- Vindictive Gladiator's Chain Clasp (A)
-						i(135609),	-- Vindictive Gladiator's Chain Gauntlets (A)
-						i(135610),	-- Vindictive Gladiator's Chain Helm (A)
-						i(135611),	-- Vindictive Gladiator's Chain Leggings (A)
-						i(135612),	-- Vindictive Gladiator's Chain Spaulders (A)
-						i(135608),	-- Vindictive Gladiator's Chain Treads (A)
-						i(135683),	-- Vindictive Gladiator's Drape of the Tracker (A)
+						i(146138, {	-- Ensemble: Vindictive Gladiator's Chain Armor (A)
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -661, 3 },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -661, 3 },	-- Season 2
+								{"exclude", "itemID", 146138 },	-- Exclude itself to stop duplicating
+							},
+							["g"] = {
+								i(135614),	-- Vindictive Gladiator's Chain Armband (A)
+								i(135607),	-- Vindictive Gladiator's Chain Armor (A)
+								i(135613),	-- Vindictive Gladiator's Chain Clasp (A)
+								i(135609),	-- Vindictive Gladiator's Chain Gauntlets (A)
+								i(135610),	-- Vindictive Gladiator's Chain Helm (A)
+								i(135611),	-- Vindictive Gladiator's Chain Leggings (A)
+								i(135612),	-- Vindictive Gladiator's Chain Spaulders (A)
+								i(135608),	-- Vindictive Gladiator's Chain Treads (A)
+								i(135683),	-- Vindictive Gladiator's Drape of the Tracker (A)
+								i(142583),	-- Fearless Gladiator's Chain Armband (A)
+								i(142576),	-- Fearless Gladiator's Chain Armor (A)
+								i(142582),	-- Fearless Gladiator's Chain Clasp (A)
+								i(142578),	-- Fearless Gladiator's Chain Gauntlets (A)
+								i(142579),	-- Fearless Gladiator's Chain Helm (A)
+								i(142580),	-- Fearless Gladiator's Chain Leggings (A)
+								i(142581),	-- Fearless Gladiator's Chain Spaulders (A)
+								i(142577),	-- Fearless Gladiator's Chain Treads (A)
+								i(142652),	-- Fearless Gladiator's Drape of the Tracker (A)
+							},
+						}),
 					}),
 					cl(MAGE, {
-						i(135620),	-- Vindictive Gladiator's Silk Amice (A)
-						i(135622),	-- Vindictive Gladiator's Silk Bracers (A)
-						i(135621),	-- Vindictive Gladiator's Silk Cord (A)
-						i(135617),	-- Vindictive Gladiator's Silk Cowl (A)
-						i(135616),	-- Vindictive Gladiator's Silk Handguards (A)
-						i(135619),	-- Vindictive Gladiator's Silk Robe (A)
-						i(135615),	-- Vindictive Gladiator's Silk Treads (A)
-						i(135618),	-- Vindictive Gladiator's Silk Trousers (A)
-						i(135684),	-- Vindictive Gladiator's Silken Shawl (A)
+						i(146146, {	-- Ensemble: Vindictive Gladiator's Silk Armor (A)
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -661, 8 },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -661, 8 },	-- Season 2
+								{"exclude", "itemID", 146146 },	-- Exclude itself to stop duplicating
+							},
+							["g"] = {
+								i(135620),	-- Vindictive Gladiator's Silk Amice (A)
+								i(135622),	-- Vindictive Gladiator's Silk Bracers (A)
+								i(135621),	-- Vindictive Gladiator's Silk Cord (A)
+								i(135617),	-- Vindictive Gladiator's Silk Cowl (A)
+								i(135616),	-- Vindictive Gladiator's Silk Handguards (A)
+								i(135619),	-- Vindictive Gladiator's Silk Robe (A)
+								i(135615),	-- Vindictive Gladiator's Silk Treads (A)
+								i(135618),	-- Vindictive Gladiator's Silk Trousers (A)
+								i(135684),	-- Vindictive Gladiator's Silken Shawl (A)
+								i(142589),	-- Fearless Gladiator's Silk Amice (A)
+								i(142591),	-- Fearless Gladiator's Silk Bracers (A)
+								i(142590),	-- Fearless Gladiator's Silk Cord (A)
+								i(142586),	-- Fearless Gladiator's Silk Cowl (A)
+								i(142585),	-- Fearless Gladiator's Silk Handguards (A)
+								i(142588),	-- Fearless Gladiator's Silk Robe (A)
+								i(142584),	-- Fearless Gladiator's Silk Treads (A)
+								i(142587),	-- Fearless Gladiator's Silk Trousers (A)
+								i(142653),	-- Fearless Gladiator's Silken Shawl (A)
+							},
+						}),
 					}),
 					cl(MONK, {
-						i(135629),	-- Vindictive Gladiator's Ironskin Belt (A)
-						i(135687),	-- Vindictive Gladiator's Ironskin Cloak (A)
-						i(135624),	-- Vindictive Gladiator's Ironskin Gloves (A)
-						i(135625),	-- Vindictive Gladiator's Ironskin Helm (A)
-						i(135626),	-- Vindictive Gladiator's Ironskin Legguards (A)
-						i(135623),	-- Vindictive Gladiator's Ironskin Slippers (A)
-						i(135627),	-- Vindictive Gladiator's Ironskin Spaulders (A)
-						i(135628),	-- Vindictive Gladiator's Ironskin Tunic (A)
-						i(135630),	-- Vindictive Gladiator's Ironskin Wristguards (A)
+						i(146142, {	-- Ensemble: Vindictive Gladiator's Ironskin Armor (A)
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -661, 10 },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -661, 10 },	-- Season 2
+								{"exclude", "itemID", 146142 },	-- Exclude itself to stop duplicating
+							},
+							["g"] = {
+								i(135629),	-- Vindictive Gladiator's Ironskin Belt (A)
+								i(135687),	-- Vindictive Gladiator's Ironskin Cloak (A)
+								i(135624),	-- Vindictive Gladiator's Ironskin Gloves (A)
+								i(135625),	-- Vindictive Gladiator's Ironskin Helm (A)
+								i(135626),	-- Vindictive Gladiator's Ironskin Legguards (A)
+								i(135623),	-- Vindictive Gladiator's Ironskin Slippers (A)
+								i(135627),	-- Vindictive Gladiator's Ironskin Spaulders (A)
+								i(135628),	-- Vindictive Gladiator's Ironskin Tunic (A)
+								i(135630),	-- Vindictive Gladiator's Ironskin Wristguards (A)
+								i(142598),	-- Fearless Gladiator's Ironskin Belt (A)
+								i(142656),	-- Fearless Gladiator's Ironskin Cloak (A)
+								i(142593),	-- Fearless Gladiator's Ironskin Gloves (A)
+								i(142594),	-- Fearless Gladiator's Ironskin Helm (A)
+								i(142595),	-- Fearless Gladiator's Ironskin Legguards (A)
+								i(142592),	-- Fearless Gladiator's Ironskin Slippers (A)
+								i(142596),	-- Fearless Gladiator's Ironskin Spaulders (A)
+								i(142597),	-- Fearless Gladiator's Ironskin Tunic (A)
+								i(142599),	-- Fearless Gladiator's Ironskin Wristguards (A)
+							},
+						}),
 					}),
 					cl(PALADIN, {
-						i(135688),	-- Vindictive Gladiator's Greatcloak of Faith (A)
-						i(135631),	-- Vindictive Gladiator's Scaled Battlerobe (A)
-						i(135633),	-- Vindictive Gladiator's Scaled Gauntlets (A)
-						i(135637),	-- Vindictive Gladiator's Scaled Girdle (A)
-						i(135634),	-- Vindictive Gladiator's Scaled Helm (A)
-						i(135635),	-- Vindictive Gladiator's Scaled Legguards (A)
-						i(135632),	-- Vindictive Gladiator's Scaled Sabatons (A)
-						i(135636),	-- Vindictive Gladiator's Scaled Shoulders (A)
-						i(135638),	-- Vindictive Gladiator's Scaled Wristplates (A)
+						i(146134, {	-- Ensemble: Vindictive Gladiator's Scaled Armor (A)
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -661, 2 },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -661, 2 },	-- Season 2
+								{"exclude", "itemID", 146134 },	-- Exclude itself to stop duplicating
+							},
+							["g"] = {
+								i(135688),	-- Vindictive Gladiator's Greatcloak of Faith (A)
+								i(135631),	-- Vindictive Gladiator's Scaled Battlerobe (A)
+								i(135633),	-- Vindictive Gladiator's Scaled Gauntlets (A)
+								i(135637),	-- Vindictive Gladiator's Scaled Girdle (A)
+								i(135634),	-- Vindictive Gladiator's Scaled Helm (A)
+								i(135635),	-- Vindictive Gladiator's Scaled Legguards (A)
+								i(135632),	-- Vindictive Gladiator's Scaled Sabatons (A)
+								i(135636),	-- Vindictive Gladiator's Scaled Shoulders (A)
+								i(135638),	-- Vindictive Gladiator's Scaled Wristplates (A)
+								i(142657),	-- Fearless Gladiator's Greatcloak of Faith (A)
+								i(142600),	-- Fearless Gladiator's Scaled Battlerobe (A)
+								i(142602),	-- Fearless Gladiator's Scaled Gauntlets (A)
+								i(142606),	-- Fearless Gladiator's Scaled Girdle (A)
+								i(142603),	-- Fearless Gladiator's Scaled Helm (A)
+								i(142604),	-- Fearless Gladiator's Scaled Legguards (A)
+								i(142601),	-- Fearless Gladiator's Scaled Sabatons (A)
+								i(142605),	-- Fearless Gladiator's Scaled Shoulders (A)
+								i(142607),	-- Fearless Gladiator's Scaled Wristplates (A)
+							},
+						}),
 					}),
 					cl(PRIEST, {
-						i(136861),	-- Vindictive Gladiator's Drape of Piety (A)
-						i(135646),	-- Vindictive Gladiator's Satin Bracers (A)
-						i(135645),	-- Vindictive Gladiator's Satin Cord (A)
-						i(135640),	-- Vindictive Gladiator's Satin Gloves (A)
-						i(135641),	-- Vindictive Gladiator's Satin Hood (A)
-						i(135642),	-- Vindictive Gladiator's Satin Leggings (A)
-						i(135644),	-- Vindictive Gladiator's Satin Mantle (A)
-						i(135643),	-- Vindictive Gladiator's Satin Robe (A)
-						i(135639),	-- Vindictive Gladiator's Satin Treads (A)
+						i(146148, {	-- Ensemble: Vindictive Gladiator's Satin Armor (A)
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -661, 5 },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -661, 5 },	-- Season 2
+								{"exclude", "itemID", 146148 },	-- Exclude itself to stop duplicating
+							},
+							["g"] = {
+								i(136861),	-- Vindictive Gladiator's Drape of Piety (A)
+								i(135646),	-- Vindictive Gladiator's Satin Bracers (A)
+								i(135645),	-- Vindictive Gladiator's Satin Cord (A)
+								i(135640),	-- Vindictive Gladiator's Satin Gloves (A)
+								i(135641),	-- Vindictive Gladiator's Satin Hood (A)
+								i(135642),	-- Vindictive Gladiator's Satin Leggings (A)
+								i(135644),	-- Vindictive Gladiator's Satin Mantle (A)
+								i(135643),	-- Vindictive Gladiator's Satin Robe (A)
+								i(135639),	-- Vindictive Gladiator's Satin Treads (A)
+								i(143286),	-- Fearless Gladiator's Drape of Piety (A)
+								i(142615),	-- Fearless Gladiator's Satin Bracers (A)
+								i(142614),	-- Fearless Gladiator's Satin Cord (A)
+								i(142609),	-- Fearless Gladiator's Satin Gloves (A)
+								i(142610),	-- Fearless Gladiator's Satin Hood (A)
+								i(142611),	-- Fearless Gladiator's Satin Leggings (A)
+								i(142613),	-- Fearless Gladiator's Satin Mantle (A)
+								i(142612),	-- Fearless Gladiator's Satin Robe (A)
+								i(142608),	-- Fearless Gladiator's Satin Treads (A)
+							},
+						}),
 					}),
 					cl(ROGUE, {
-						i(135653),	-- Vindictive Gladiator's Leather Belt (A)
-						i(135649),	-- Vindictive Gladiator's Leather Gloves (A)
-						i(135650),	-- Vindictive Gladiator's Leather Helm (A)
-						i(135651),	-- Vindictive Gladiator's Leather Legguards (A)
-						i(135648),	-- Vindictive Gladiator's Leather Slippers (A)
-						i(135652),	-- Vindictive Gladiator's Leather Spaulders (A)
-						i(135647),	-- Vindictive Gladiator's Leather Tunic (A)
-						i(135654),	-- Vindictive Gladiator's Leather Wristguards (A)
-						i(136862),	-- Vindictive Gladiator's Shadowcape (A)
+						i(146144, {	-- Ensemble: Vindictive Gladiator's Leather Armor (A)
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -661, 4 },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -661, 4 },	-- Season 2
+								{"exclude", "itemID", 146144 },	-- Exclude itself to stop duplicating
+							},
+							["g"] = {
+								i(135653),	-- Vindictive Gladiator's Leather Belt (A)
+								i(135649),	-- Vindictive Gladiator's Leather Gloves (A)
+								i(135650),	-- Vindictive Gladiator's Leather Helm (A)
+								i(135651),	-- Vindictive Gladiator's Leather Legguards (A)
+								i(135648),	-- Vindictive Gladiator's Leather Slippers (A)
+								i(135652),	-- Vindictive Gladiator's Leather Spaulders (A)
+								i(135647),	-- Vindictive Gladiator's Leather Tunic (A)
+								i(135654),	-- Vindictive Gladiator's Leather Wristguards (A)
+								i(136862),	-- Vindictive Gladiator's Shadowcape (A)
+								i(142622),	-- Fearless Gladiator's Leather Belt (A)
+								i(142618),	-- Fearless Gladiator's Leather Gloves (A)
+								i(142619),	-- Fearless Gladiator's Leather Helm (A)
+								i(142620),	-- Fearless Gladiator's Leather Legguards (A)
+								i(142617),	-- Fearless Gladiator's Leather Slippers (A)
+								i(142621),	-- Fearless Gladiator's Leather Spaulders (A)
+								i(142616),	-- Fearless Gladiator's Leather Tunic (A)
+								i(142623),	-- Fearless Gladiator's Leather Wristguards (A)
+								i(143287),	-- Fearless Gladiator's Shadowcape (A)
+							},
+						}),
 					}),
 					cl(SHAMAN, {
-						i(135662),	-- Vindictive Gladiator's Ringmail Armband (A)
-						i(135655),	-- Vindictive Gladiator's Ringmail Armor (A)
-						i(135656),	-- Vindictive Gladiator's Ringmail Boots (A)
-						i(135661),	-- Vindictive Gladiator's Ringmail Clasp (A)
-						i(135657),	-- Vindictive Gladiator's Ringmail Gauntlets (A)
-						i(135658),	-- Vindictive Gladiator's Ringmail Helm (A)
-						i(135659),	-- Vindictive Gladiator's Ringmail Kilt (A)
-						i(135660),	-- Vindictive Gladiator's Ringmail Spaulders (A)
-						i(136863),	-- Vindictive Gladiator's Totemic Cloak (A)
+						i(146136, {	-- Ensemble: Vindictive Gladiator's Ringmail Armor (A)
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -661, 7 },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -661, 7 },	-- Season 2
+								{"exclude", "itemID", 146136 },	-- Exclude itself to stop duplicating
+							},
+							["g"] = {
+								i(135662),	-- Vindictive Gladiator's Ringmail Armband (A)
+								i(135655),	-- Vindictive Gladiator's Ringmail Armor (A)
+								i(135656),	-- Vindictive Gladiator's Ringmail Boots (A)
+								i(135661),	-- Vindictive Gladiator's Ringmail Clasp (A)
+								i(135657),	-- Vindictive Gladiator's Ringmail Gauntlets (A)
+								i(135658),	-- Vindictive Gladiator's Ringmail Helm (A)
+								i(135659),	-- Vindictive Gladiator's Ringmail Kilt (A)
+								i(135660),	-- Vindictive Gladiator's Ringmail Spaulders (A)
+								i(136863),	-- Vindictive Gladiator's Totemic Cloak (A)
+								i(142631),	-- Fearless Gladiator's Ringmail Armband (A)
+								i(142624),	-- Fearless Gladiator's Ringmail Armor (A)
+								i(142625),	-- Fearless Gladiator's Ringmail Boots (A)
+								i(142630),	-- Fearless Gladiator's Ringmail Clasp (A)
+								i(142626),	-- Fearless Gladiator's Ringmail Gauntlets (A)
+								i(142627),	-- Fearless Gladiator's Ringmail Helm (A)
+								i(142628),	-- Fearless Gladiator's Ringmail Kilt (A)
+								i(142629),	-- Fearless Gladiator's Ringmail Spaulders (A)
+								i(143288),	-- Fearless Gladiator's Totemic Cloak (A)
+							},
+						}),
 					}),
 					cl(WARLOCK, {
-						i(135668),	-- Vindictive Gladiator's Felweave Amice (A)
-						i(135670),	-- Vindictive Gladiator's Felweave Bracers (A)
-						i(136879),	-- Vindictive Gladiator's Felweave Cloak (A)
-						i(135669),	-- Vindictive Gladiator's Felweave Cord (A)
-						i(135665),	-- Vindictive Gladiator's Felweave Cowl (A)
-						i(135664),	-- Vindictive Gladiator's Felweave Handguards (A)
-						i(135667),	-- Vindictive Gladiator's Felweave Raiment (A)
-						i(135663),	-- Vindictive Gladiator's Felweave Treads (A)
-						i(135666),	-- Vindictive Gladiator's Felweave Trousers (A)
+						i(146150, {	-- Ensemble: Vindictive Gladiator's Felweave Armor (A)
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -661, 9 },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -661, 9 },	-- Season 2
+								{"exclude", "itemID", 146150 },	-- Exclude itself to stop duplicating
+							},
+							["g"] = {
+								i(135668),	-- Vindictive Gladiator's Felweave Amice (A)
+								i(135670),	-- Vindictive Gladiator's Felweave Bracers (A)
+								i(136879),	-- Vindictive Gladiator's Felweave Cloak (A)
+								i(135669),	-- Vindictive Gladiator's Felweave Cord (A)
+								i(135665),	-- Vindictive Gladiator's Felweave Cowl (A)
+								i(135664),	-- Vindictive Gladiator's Felweave Handguards (A)
+								i(135667),	-- Vindictive Gladiator's Felweave Raiment (A)
+								i(135663),	-- Vindictive Gladiator's Felweave Treads (A)
+								i(135666),	-- Vindictive Gladiator's Felweave Trousers (A)
+								i(142637),	-- Fearless Gladiator's Felweave Amice (A)
+								i(142639),	-- Fearless Gladiator's Felweave Bracers (A)
+								i(143304),	-- Fearless Gladiator's Felweave Cloak (A)
+								i(142638),	-- Fearless Gladiator's Felweave Cord (A)
+								i(142634),	-- Fearless Gladiator's Felweave Cowl (A)
+								i(142633),	-- Fearless Gladiator's Felweave Handguards (A)
+								i(142636),	-- Fearless Gladiator's Felweave Raiment (A)
+								i(142632),	-- Fearless Gladiator's Felweave Treads (A)
+								i(142635),	-- Fearless Gladiator's Felweave Trousers (A)
+							},
+						}),
 					}),
 					cl(WARRIOR, {
-						i(136885),	-- Vindictive Gladiator's Cloak of Battle (A)
-						i(135671),	-- Vindictive Gladiator's Plate Chestpiece (A)
-						i(135673),	-- Vindictive Gladiator's Plate Gauntlets (A)
-						i(135677),	-- Vindictive Gladiator's Plate Girdle (A)
-						i(135674),	-- Vindictive Gladiator's Plate Helm (A)
-						i(135675),	-- Vindictive Gladiator's Plate Legguards (A)
-						i(135676),	-- Vindictive Gladiator's Plate Shoulders (A)
-						i(135672),	-- Vindictive Gladiator's Plate Warboots (A)
-						i(135678),	-- Vindictive Gladiator's Plate Wristplates (A)
+						i(146130, {	-- Ensemble: Vindictive Gladiator's Plate Armor (A)
+							["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -682, -9914, -661, 1 },	-- Season 1
+								{"sub", "pvp_set_faction_ensemble", -9982, -683, -9914, -661, 1 },	-- Season 2
+								{"exclude", "itemID", 146130 },	-- Exclude itself to stop duplicating
+							},
+							["g"] = {
+								i(136885),	-- Vindictive Gladiator's Cloak of Battle (A)
+								i(135671),	-- Vindictive Gladiator's Plate Chestpiece (A)
+								i(135673),	-- Vindictive Gladiator's Plate Gauntlets (A)
+								i(135677),	-- Vindictive Gladiator's Plate Girdle (A)
+								i(135674),	-- Vindictive Gladiator's Plate Helm (A)
+								i(135675),	-- Vindictive Gladiator's Plate Legguards (A)
+								i(135676),	-- Vindictive Gladiator's Plate Shoulders (A)
+								i(135672),	-- Vindictive Gladiator's Plate Warboots (A)
+								i(135678),	-- Vindictive Gladiator's Plate Wristplates (A)
+								i(143310),	-- Fearless Gladiator's Cloak of Battle (A)
+								i(142640),	-- Fearless Gladiator's Plate Chestpiece (A)
+								i(142642),	-- Fearless Gladiator's Plate Gauntlets (A)
+								i(142646),	-- Fearless Gladiator's Plate Girdle (A)
+								i(142643),	-- Fearless Gladiator's Plate Helm (A)
+								i(142644),	-- Fearless Gladiator's Plate Legguards (A)
+								i(142645),	-- Fearless Gladiator's Plate Shoulders (A)
+								i(142641),	-- Fearless Gladiator's Plate Warboots (A)
+								i(142647),	-- Fearless Gladiator's Plate Wristplates (A)
+							},
+						}),
 					}),
 					n(-384,	{	-- Neck
 						un(REMOVED_FROM_GAME, i(135681)),	-- Vindictive Gladiator's Necklace (A)
@@ -2597,136 +2837,376 @@ _.PVP =
 				}),
 				n(-661, {	-- Gladiator PvP Gear
 					cl(DEATHKNIGHT, {
-						i(144534),	-- Cruel Gladiator's Dreadcloak (A)
-						i(144558),	-- Cruel Gladiator's Dreadplate Chestpiece (A)
-						i(144562),	-- Cruel Gladiator's Dreadplate Gauntlets (A)
-						i(144570),	-- Cruel Gladiator's Dreadplate Girdle (A)
-						i(144564),	-- Cruel Gladiator's Dreadplate Helm (A)
-						i(144566),	-- Cruel Gladiator's Dreadplate Legguards (A)
-						i(144560),	-- Cruel Gladiator's Dreadplate Sabatons (A)
-						i(144568),	-- Cruel Gladiator's Dreadplate Shoulders (A)
-						i(144572),	-- Cruel Gladiator's Dreadplate Wristplates (A)
+						i(147650, {	-- Ensemble: Cruel Gladiator's Dreadplate Armor (A)
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -661, 6 },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -661, 6 },	-- Season 4
+								{"exclude", "itemID", 147650 }, -- Exclude itself to stop duplicating
+							},
+							["g"] = {
+								i(144534),	-- Cruel Gladiator's Dreadcloak (A)
+								i(144558),	-- Cruel Gladiator's Dreadplate Chestpiece (A)
+								i(144562),	-- Cruel Gladiator's Dreadplate Gauntlets (A)
+								i(144570),	-- Cruel Gladiator's Dreadplate Girdle (A)
+								i(144564),	-- Cruel Gladiator's Dreadplate Helm (A)
+								i(144566),	-- Cruel Gladiator's Dreadplate Legguards (A)
+								i(144560),	-- Cruel Gladiator's Dreadplate Sabatons (A)
+								i(144568),	-- Cruel Gladiator's Dreadplate Shoulders (A)
+								i(144572),	-- Cruel Gladiator's Dreadplate Wristplates (A)
+								i(145376),	-- Ferocious Gladiator's Dreadcloak (A)
+								i(145400),	-- Ferocious Gladiator's Dreadplate Chestpiece (A)
+								i(145404),	-- Ferocious Gladiator's Dreadplate Gauntlets (A)
+								i(145412),	-- Ferocious Gladiator's Dreadplate Girdle (A)
+								i(145406),	-- Ferocious Gladiator's Dreadplate Helm (A)
+								i(145408),	-- Ferocious Gladiator's Dreadplate Legguards (A)
+								i(145402),	-- Ferocious Gladiator's Dreadplate Sabatons (A)
+								i(145410),	-- Ferocious Gladiator's Dreadplate Shoulders (A)
+								i(145414),	-- Ferocious Gladiator's Dreadplate Wristplates (A)
+							},
+						}),
 					}),
 					cl(DEMONHUNTER, {
-						i(144536),	-- Cruel Gladiator's Demonthread Cloak (A)
-						i(144586),	-- Cruel Gladiator's Felskin Belt (A)
-						i(144576),	-- Cruel Gladiator's Felskin Boots (A)
-						i(144578),	-- Cruel Gladiator's Felskin Gloves (A)
-						i(144580),	-- Cruel Gladiator's Felskin Helm (A)
-						i(144582),	-- Cruel Gladiator's Felskin Legguards (A)
-						i(144584),	-- Cruel Gladiator's Felskin Spaulders (A)
-						i(144574),	-- Cruel Gladiator's Felskin Tunic (A)
-						i(144588),	-- Cruel Gladiator's Felskin Wristguards (A)
+						i(147651, {	-- Ensemble: Cruel Gladiator's Felskin Armor (A)
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -661, 12 },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -661, 12 },	-- Season 4
+								{"exclude", "itemID", 147651 }, -- Exclude itself to stop duplicating
+							},
+							["g"] = {
+								i(144536),	-- Cruel Gladiator's Demonthread Cloak (A)
+								i(144586),	-- Cruel Gladiator's Felskin Belt (A)
+								i(144576),	-- Cruel Gladiator's Felskin Boots (A)
+								i(144578),	-- Cruel Gladiator's Felskin Gloves (A)
+								i(144580),	-- Cruel Gladiator's Felskin Helm (A)
+								i(144582),	-- Cruel Gladiator's Felskin Legguards (A)
+								i(144584),	-- Cruel Gladiator's Felskin Spaulders (A)
+								i(144574),	-- Cruel Gladiator's Felskin Tunic (A)
+								i(144588),	-- Cruel Gladiator's Felskin Wristguards (A)
+								i(145378),	-- Ferocious Gladiator's Demonthread Cloak (A)
+								i(145428),	-- Ferocious Gladiator's Felskin Belt (A)
+								i(145418),	-- Ferocious Gladiator's Felskin Boots (A)
+								i(145420),	-- Ferocious Gladiator's Felskin Gloves (A)
+								i(145422),	-- Ferocious Gladiator's Felskin Helm (A)
+								i(145424),	-- Ferocious Gladiator's Felskin Legguards (A)
+								i(145426),	-- Ferocious Gladiator's Felskin Spaulders (A)
+								i(145416),	-- Ferocious Gladiator's Felskin Tunic (A)
+								i(145430),	-- Ferocious Gladiator's Felskin Wristguards (A)
+							},
+						}),
 					}),
 					cl(DRUID, {
-						i(144602),	-- Cruel Gladiator's Dragonhide Belt (A)
-						i(144538),	-- Cruel Gladiator's Dragonhide Cloak (A)
-						i(144594),	-- Cruel Gladiator's Dragonhide Gloves (A)
-						i(144596),	-- Cruel Gladiator's Dragonhide Helm (A)
-						i(144598),	-- Cruel Gladiator's Dragonhide Legguards (A)
-						i(144592),	-- Cruel Gladiator's Dragonhide Moccasins (A)
-						i(144590),	-- Cruel Gladiator's Dragonhide Robe (A)
-						i(144600),	-- Cruel Gladiator's Dragonhide Spaulders (A)
-						i(144604),	-- Cruel Gladiator's Dragonhide Wristguards (A)
+						i(147647, {	-- Ensemble: Cruel Gladiator's Dragonhide Armor (A)
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -661, 11 },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -661, 11 },	-- Season 4
+								{"exclude", "itemID", 147647 }, -- Exclude itself to stop duplicating
+							},
+							["g"] = {
+								i(144602),	-- Cruel Gladiator's Dragonhide Belt (A)
+								i(144538),	-- Cruel Gladiator's Dragonhide Cloak (A)
+								i(144594),	-- Cruel Gladiator's Dragonhide Gloves (A)
+								i(144596),	-- Cruel Gladiator's Dragonhide Helm (A)
+								i(144598),	-- Cruel Gladiator's Dragonhide Legguards (A)
+								i(144592),	-- Cruel Gladiator's Dragonhide Moccasins (A)
+								i(144590),	-- Cruel Gladiator's Dragonhide Robe (A)
+								i(144600),	-- Cruel Gladiator's Dragonhide Spaulders (A)
+								i(144604),	-- Cruel Gladiator's Dragonhide Wristguards (A)
+								i(145444),	-- Ferocious Gladiator's Dragonhide Belt (A)
+								i(145380),	-- Ferocious Gladiator's Dragonhide Cloak (A)
+								i(145436),	-- Ferocious Gladiator's Dragonhide Gloves (A)
+								i(145438),	-- Ferocious Gladiator's Dragonhide Helm (A)
+								i(145440),	-- Ferocious Gladiator's Dragonhide Legguards (A)
+								i(145434),	-- Ferocious Gladiator's Dragonhide Moccasins (A)
+								i(145432),	-- Ferocious Gladiator's Dragonhide Robe (A)
+								i(145442),	-- Ferocious Gladiator's Dragonhide Spaulders (A)
+								i(145446),	-- Ferocious Gladiator's Dragonhide Wristguards (A)
+							},
+						}),
 					}),
 					cl(HUNTER, {
-						i(144620),	-- Cruel Gladiator's Chain Armband (A)
-						i(144606),	-- Cruel Gladiator's Chain Armor (A)
-						i(144618),	-- Cruel Gladiator's Chain Clasp (A)
-						i(144610),	-- Cruel Gladiator's Chain Gauntlets (A)
-						i(144612),	-- Cruel Gladiator's Chain Helm (A)
-						i(144614),	-- Cruel Gladiator's Chain Leggings (A)
-						i(144616),	-- Cruel Gladiator's Chain Spaulders (A)
-						i(144608),	-- Cruel Gladiator's Chain Treads (A)
-						i(144540),	-- Cruel Gladiator's Drape of the Tracker (A)
+						i(147646, {	-- Ensemble: Cruel Gladiator's Chain Armor (A)
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -661, 3 },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -661, 3 },	-- Season 4
+								{"exclude", "itemID", 147646}, -- Exclude itself to stop duplicating
+							},
+							["g"] = {
+								i(144620),	-- Cruel Gladiator's Chain Armband (A)
+								i(144606),	-- Cruel Gladiator's Chain Armor (A)
+								i(144618),	-- Cruel Gladiator's Chain Clasp (A)
+								i(144610),	-- Cruel Gladiator's Chain Gauntlets (A)
+								i(144612),	-- Cruel Gladiator's Chain Helm (A)
+								i(144614),	-- Cruel Gladiator's Chain Leggings (A)
+								i(144616),	-- Cruel Gladiator's Chain Spaulders (A)
+								i(144608),	-- Cruel Gladiator's Chain Treads (A)
+								i(144540),	-- Cruel Gladiator's Drape of the Tracker (A)
+								i(145462),	-- Ferocious Gladiator's Chain Armband (A)
+								i(145448),	-- Ferocious Gladiator's Chain Armor (A)
+								i(145460),	-- Ferocious Gladiator's Chain Clasp (A)
+								i(145452),	-- Ferocious Gladiator's Chain Gauntlets (A)
+								i(145454),	-- Ferocious Gladiator's Chain Helm (A)
+								i(145456),	-- Ferocious Gladiator's Chain Leggings (A)
+								i(145458),	-- Ferocious Gladiator's Chain Spaulders (A)
+								i(145450),	-- Ferocious Gladiator's Chain Treads (A)
+								i(145382),	-- Ferocious Gladiator's Drape of the Tracker (A)
+							},
+						}),
 					}),
 					cl(MAGE, {
-						i(144632),	-- Cruel Gladiator's Silk Amice (A)
-						i(144636),	-- Cruel Gladiator's Silk Bracers (A)
-						i(144634),	-- Cruel Gladiator's Silk Cord (A)
-						i(144626),	-- Cruel Gladiator's Silk Cowl (A)
-						i(144624),	-- Cruel Gladiator's Silk Handguards (A)
-						i(144630),	-- Cruel Gladiator's Silk Robe (A)
-						i(144622),	-- Cruel Gladiator's Silk Treads (A)
-						i(144628),	-- Cruel Gladiator's Silk Trousers (A)
-						i(144542),	-- Cruel Gladiator's Silken Shawl (A)
+						i(147668, {	-- Ensemble: Cruel Gladiator's Silk Armor (A)
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -661, 8 },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -661, 8 },	-- Season 4
+								{"exclude", "itemID", 147668 }, -- Exclude itself to stop duplicating
+							},
+							["g"] = {
+								i(144632),	-- Cruel Gladiator's Silk Amice (A)
+								i(144636),	-- Cruel Gladiator's Silk Bracers (A)
+								i(144634),	-- Cruel Gladiator's Silk Cord (A)
+								i(144626),	-- Cruel Gladiator's Silk Cowl (A)
+								i(144624),	-- Cruel Gladiator's Silk Handguards (A)
+								i(144630),	-- Cruel Gladiator's Silk Robe (A)
+								i(144622),	-- Cruel Gladiator's Silk Treads (A)
+								i(144628),	-- Cruel Gladiator's Silk Trousers (A)
+								i(144542),	-- Cruel Gladiator's Silken Shawl (A)
+								i(145474),	-- Ferocious Gladiator's Silk Amice (A)
+								i(145478),	-- Ferocious Gladiator's Silk Bracers (A)
+								i(145476),	-- Ferocious Gladiator's Silk Cord (A)
+								i(145468),	-- Ferocious Gladiator's Silk Cowl (A)
+								i(145466),	-- Ferocious Gladiator's Silk Handguards (A)
+								i(145472),	-- Ferocious Gladiator's Silk Robe (A)
+								i(145464),	-- Ferocious Gladiator's Silk Treads (A)
+								i(145470),	-- Ferocious Gladiator's Silk Trousers (A)
+								i(145384),	-- Ferocious Gladiator's Silken Shawl (A)
+							},
+						}),
 					}),
 					cl(MONK, {
-						i(144650),	-- Cruel Gladiator's Ironskin Belt (A)
-						i(144544),	-- Cruel Gladiator's Ironskin Cloak (A)
-						i(144640),	-- Cruel Gladiator's Ironskin Gloves (A)
-						i(144642),	-- Cruel Gladiator's Ironskin Helm (A)
-						i(144644),	-- Cruel Gladiator's Ironskin Legguards (A)
-						i(144638),	-- Cruel Gladiator's Ironskin Slippers (A)
-						i(144646),	-- Cruel Gladiator's Ironskin Spaulders (A)
-						i(144648),	-- Cruel Gladiator's Ironskin Tunic (A)
-						i(144652),	-- Cruel Gladiator's Ironskin Wristguards (A)
+						i(147656, {	-- Ensemble: Cruel Gladiator's Ironskin Armor (A)
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -661, 10 },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -661, 10 },	-- Season 4
+								{"exclude", "itemID", 147656 }, -- Exclude itself to stop duplicating
+							},
+							["g"] = {
+								i(144650),	-- Cruel Gladiator's Ironskin Belt (A)
+								i(144544),	-- Cruel Gladiator's Ironskin Cloak (A)
+								i(144640),	-- Cruel Gladiator's Ironskin Gloves (A)
+								i(144642),	-- Cruel Gladiator's Ironskin Helm (A)
+								i(144644),	-- Cruel Gladiator's Ironskin Legguards (A)
+								i(144638),	-- Cruel Gladiator's Ironskin Slippers (A)
+								i(144646),	-- Cruel Gladiator's Ironskin Spaulders (A)
+								i(144648),	-- Cruel Gladiator's Ironskin Tunic (A)
+								i(144652),	-- Cruel Gladiator's Ironskin Wristguards (A)
+								i(145386),	-- Ferocious Gladiator's Ironskin Cloak (A)
+								i(145492),	-- Ferocious Gladiator's Ironskin Belt (A)
+								i(145482),	-- Ferocious Gladiator's Ironskin Gloves (A)
+								i(145484),	-- Ferocious Gladiator's Ironskin Helm (A)
+								i(145486),	-- Ferocious Gladiator's Ironskin Legguards (A)
+								i(145480),	-- Ferocious Gladiator's Ironskin Slippers (A)
+								i(145488),	-- Ferocious Gladiator's Ironskin Spaulders (A)
+								i(145490),	-- Ferocious Gladiator's Ironskin Tunic (A)
+								i(145494),	-- Ferocious Gladiator's Ironskin Wristguards (A)
+							},
+						}),
 					}),
 					cl(PALADIN, {
-						i(144546),	-- Cruel Gladiator's Greatcloak of Faith (A)
-						i(144669),	-- Cruel Gladiator's Scaled Breastplate (A)
-						i(144663),	-- Cruel Gladiator's Scaled Gauntlets (A)
-						i(144672),	-- Cruel Gladiator's Scaled Girdle (A)
-						i(144665),	-- Cruel Gladiator's Scaled Helm (A)
-						i(144667),	-- Cruel Gladiator's Scaled Legguards (A)
-						i(144661),	-- Cruel Gladiator's Scaled Sabatons (A)
-						i(144670),	-- Cruel Gladiator's Scaled Shoulders (A)
-						i(144674),	-- Cruel Gladiator's Scaled Wristplates (A)
+						i(147665, {	-- Ensemble: Cruel Gladiator's Scaled Armor (A)
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -661, 2 },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -661, 2 },	-- Season 4
+								{"exclude", "itemID", 147665 }, -- Exclude itself to stop duplicating
+							},
+							["g"] = {
+								i(144546),	-- Cruel Gladiator's Greatcloak of Faith (A)
+								i(144669),	-- Cruel Gladiator's Scaled Breastplate (A)
+								i(144663),	-- Cruel Gladiator's Scaled Gauntlets (A)
+								i(144672),	-- Cruel Gladiator's Scaled Girdle (A)
+								i(144665),	-- Cruel Gladiator's Scaled Helm (A)
+								i(144667),	-- Cruel Gladiator's Scaled Legguards (A)
+								i(144661),	-- Cruel Gladiator's Scaled Sabatons (A)
+								i(144670),	-- Cruel Gladiator's Scaled Shoulders (A)
+								i(144674),	-- Cruel Gladiator's Scaled Wristplates (A)
+								i(145388),	-- Ferocious Gladiator's Greatcloak of Faith (A)
+								i(145511),	-- Ferocious Gladiator's Scaled Breastplate (A)
+								i(145505),	-- Ferocious Gladiator's Scaled Gauntlets (A)
+								i(145514),	-- Ferocious Gladiator's Scaled Girdle (A)
+								i(145507),	-- Ferocious Gladiator's Scaled Helm (A)
+								i(145509),	-- Ferocious Gladiator's Scaled Legguards (A)
+								i(145503),	-- Ferocious Gladiator's Scaled Sabatons (A)
+								i(145512),	-- Ferocious Gladiator's Scaled Shoulders (A)
+								i(145516),	-- Ferocious Gladiator's Scaled Wristplates (A)
+							},
+						}),
 					}),
 					cl(PRIEST, {
-						i(144548),	-- Cruel Gladiator's Drape of Piety (A)
-						i(144690),	-- Cruel Gladiator's Satin Bracers (A)
-						i(144688),	-- Cruel Gladiator's Satin Cord (A)
-						i(144678),	-- Cruel Gladiator's Satin Gloves (A)
-						i(144680),	-- Cruel Gladiator's Satin Hood (A)
-						i(144682),	-- Cruel Gladiator's Satin Leggings (A)
-						i(144686),	-- Cruel Gladiator's Satin Mantle (A)
-						i(144684),	-- Cruel Gladiator's Satin Robe (A)
-						i(144676),	-- Cruel Gladiator's Satin Treads (A)
+						i(147663, {	-- Ensemble: Cruel Gladiator's Satin Armor (A)
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -661, 5 },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -661, 5 },	-- Season 4
+								{"exclude", "itemID", 147663 }, -- Exclude itself to stop duplicating
+							},
+							["g"] = {
+								i(144548),	-- Cruel Gladiator's Drape of Piety (A)
+								i(144690),	-- Cruel Gladiator's Satin Bracers (A)
+								i(144688),	-- Cruel Gladiator's Satin Cord (A)
+								i(144678),	-- Cruel Gladiator's Satin Gloves (A)
+								i(144680),	-- Cruel Gladiator's Satin Hood (A)
+								i(144682),	-- Cruel Gladiator's Satin Leggings (A)
+								i(144686),	-- Cruel Gladiator's Satin Mantle (A)
+								i(144684),	-- Cruel Gladiator's Satin Robe (A)
+								i(144676),	-- Cruel Gladiator's Satin Treads (A)
+								i(145390),	-- Ferocious Gladiator's Drape of Piety (A)
+								i(145532),	-- Ferocious Gladiator's Satin Bracers (A)
+								i(145530),	-- Ferocious Gladiator's Satin Cord (A)
+								i(145520),	-- Ferocious Gladiator's Satin Gloves (A)
+								i(145522),	-- Ferocious Gladiator's Satin Hood (A)
+								i(145524),	-- Ferocious Gladiator's Satin Leggings (A)
+								i(145528),	-- Ferocious Gladiator's Satin Mantle (A)
+								i(145526),	-- Ferocious Gladiator's Satin Robe (A)
+								i(145518),	-- Ferocious Gladiator's Satin Treads (A)
+							},
+						}),
 					}),
 					cl(ROGUE, {
-						i(144710),	-- Cruel Gladiator's Leather Belt (A)
-						i(144702),	-- Cruel Gladiator's Leather Gloves (A)
-						i(144704),	-- Cruel Gladiator's Leather Helm (A)
-						i(144706),	-- Cruel Gladiator's Leather Legguards (A)
-						i(144700),	-- Cruel Gladiator's Leather Slippers (A)
-						i(144708),	-- Cruel Gladiator's Leather Spaulders (A)
-						i(144698),	-- Cruel Gladiator's Leather Tunic (A)
-						i(144712),	-- Cruel Gladiator's Leather Wristguards (A)
-						i(144550),	-- Cruel Gladiator's Shadowcape (A)
+						i(147657, {	-- Ensemble: Cruel Gladiator's Leather Armor (A)
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -661, 4 },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -661, 4 },	-- Season 4
+								{"exclude", "itemID", 147657 }, -- Exclude itself to stop duplicating
+							},
+							["g"] = {
+								i(144710),	-- Cruel Gladiator's Leather Belt (A)
+								i(144702),	-- Cruel Gladiator's Leather Gloves (A)
+								i(144704),	-- Cruel Gladiator's Leather Helm (A)
+								i(144706),	-- Cruel Gladiator's Leather Legguards (A)
+								i(144700),	-- Cruel Gladiator's Leather Slippers (A)
+								i(144708),	-- Cruel Gladiator's Leather Spaulders (A)
+								i(144698),	-- Cruel Gladiator's Leather Tunic (A)
+								i(144712),	-- Cruel Gladiator's Leather Wristguards (A)
+								i(144550),	-- Cruel Gladiator's Shadowcape (A)
+								i(145552),	-- Ferocious Gladiator's Leather Belt (A)
+								i(145544),	-- Ferocious Gladiator's Leather Gloves (A)
+								i(145546),	-- Ferocious Gladiator's Leather Helm (A)
+								i(145548),	-- Ferocious Gladiator's Leather Legguards (A)
+								i(145542),	-- Ferocious Gladiator's Leather Slippers (A)
+								i(145550),	-- Ferocious Gladiator's Leather Spaulders (A)
+								i(145540),	-- Ferocious Gladiator's Leather Tunic (A)
+								i(145554),	-- Ferocious Gladiator's Leather Wristguards (A)
+								i(145392),	-- Ferocious Gladiator's Shadowcape (A)
+							},
+						}),
 					}),
 					cl(SHAMAN, {
-						i(144728),	-- Cruel Gladiator's Ringmail Armband (A)
-						i(144714),	-- Cruel Gladiator's Ringmail Armor (A)
-						i(144716),	-- Cruel Gladiator's Ringmail Boots (A)
-						i(144726),	-- Cruel Gladiator's Ringmail Clasp (A)
-						i(144718),	-- Cruel Gladiator's Ringmail Gauntlets (A)
-						i(144720),	-- Cruel Gladiator's Ringmail Helm (A)
-						i(144722),	-- Cruel Gladiator's Ringmail Kilt (A)
-						i(144724),	-- Cruel Gladiator's Ringmail Spaulders (A)
-						i(144552),	-- Cruel Gladiator's Totemic Cloak (A)
+						i(147661, {	-- Ensemble: Cruel Gladiator's Ringmail Armor (A)
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -661, 7 },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -661, 7 },	-- Season 4
+								{"exclude", "itemID", 147661 }, -- Exclude itself to stop duplicating
+							},
+							["g"] = {
+								i(144728),	-- Cruel Gladiator's Ringmail Armband (A)
+								i(144714),	-- Cruel Gladiator's Ringmail Armor (A)
+								i(144716),	-- Cruel Gladiator's Ringmail Boots (A)
+								i(144726),	-- Cruel Gladiator's Ringmail Clasp (A)
+								i(144718),	-- Cruel Gladiator's Ringmail Gauntlets (A)
+								i(144720),	-- Cruel Gladiator's Ringmail Helm (A)
+								i(144722),	-- Cruel Gladiator's Ringmail Kilt (A)
+								i(144724),	-- Cruel Gladiator's Ringmail Spaulders (A)
+								i(144552),	-- Cruel Gladiator's Totemic Cloak (A)
+								i(145570),	-- Ferocious Gladiator's Ringmail Armband (A)
+								i(145556),	-- Ferocious Gladiator's Ringmail Armor (A)
+								i(145558),	-- Ferocious Gladiator's Ringmail Boots (A)
+								i(145568),	-- Ferocious Gladiator's Ringmail Clasp (A)
+								i(145560),	-- Ferocious Gladiator's Ringmail Gauntlets (A)
+								i(145562),	-- Ferocious Gladiator's Ringmail Helm (A)
+								i(145564),	-- Ferocious Gladiator's Ringmail Kilt (A)
+								i(145566),	-- Ferocious Gladiator's Ringmail Spaulders (A)
+								i(145394),	-- Ferocious Gladiator's Totemic Cloak (A)
+							},
+						}),
 					}),
 					cl(WARLOCK, {
-						i(144758),	-- Cruel Gladiator's Felweave Amice (A)
-						i(144762),	-- Cruel Gladiator's Felweave Bracers (A)
-						i(144554),	-- Cruel Gladiator's Felweave Cloak (A)
-						i(144760),	-- Cruel Gladiator's Felweave Cord (A)
-						i(144752),	-- Cruel Gladiator's Felweave Cowl (A)
-						i(144750),	-- Cruel Gladiator's Felweave Handguards (A)
-						i(144756),	-- Cruel Gladiator's Felweave Raiment (A)
-						i(144748),	-- Cruel Gladiator's Felweave Treads (A)
-						i(144754),	-- Cruel Gladiator's Felweave Trousers (A)
+						i(147653, {	-- Ensemble: Cruel Gladiator's Felweave Armor (A)
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -661, 9 },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -661, 9 },	-- Season 4
+								{"exclude", "itemID", 147653 }, -- Exclude itself to stop duplicating
+							},
+							["g"] = {
+								i(144758),	-- Cruel Gladiator's Felweave Amice (A)
+								i(144762),	-- Cruel Gladiator's Felweave Bracers (A)
+								i(144554),	-- Cruel Gladiator's Felweave Cloak (A)
+								i(144760),	-- Cruel Gladiator's Felweave Cord (A)
+								i(144752),	-- Cruel Gladiator's Felweave Cowl (A)
+								i(144750),	-- Cruel Gladiator's Felweave Handguards (A)
+								i(144756),	-- Cruel Gladiator's Felweave Raiment (A)
+								i(144748),	-- Cruel Gladiator's Felweave Treads (A)
+								i(144754),	-- Cruel Gladiator's Felweave Trousers (A)
+								i(145600),	-- Ferocious Gladiator's Felweave Amice (A)
+								i(145604),	-- Ferocious Gladiator's Felweave Bracers (A)
+								i(145396),	-- Ferocious Gladiator's Felweave Cloak (A)
+								i(145602),	-- Ferocious Gladiator's Felweave Cord (A)
+								i(145594),	-- Ferocious Gladiator's Felweave Cowl (A)
+								i(145592),	-- Ferocious Gladiator's Felweave Handguards (A)
+								i(145598),	-- Ferocious Gladiator's Felweave Raiment (A)
+								i(145590),	-- Ferocious Gladiator's Felweave Treads (A)
+								i(145596),	-- Ferocious Gladiator's Felweave Trousers (A)
+							},
+						}),
 					}),
 					cl(WARRIOR, {
-						i(144556),	-- Cruel Gladiator's Cloak of Battle (A)
-						i(144764),	-- Cruel Gladiator's Plate Chestpiece (A)
-						i(144768),	-- Cruel Gladiator's Plate Gauntlets (A)
-						i(144776),	-- Cruel Gladiator's Plate Girdle (A)
-						i(144770),	-- Cruel Gladiator's Plate Helm (A)
-						i(144772),	-- Cruel Gladiator's Plate Legguards (A)
-						i(144774),	-- Cruel Gladiator's Plate Shoulders (A)
-						i(144766),	-- Cruel Gladiator's Plate Warboots (A)
-						i(144778),	-- Cruel Gladiator's Plate Wristplates (A)
+						i(147660, {	-- Ensemble: Cruel Gladiator's Plate Armor (A)
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -661, 1 },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -661, 1 },	-- Season 4
+								{"exclude", "itemID", 147660 }, -- Exclude itself to stop duplicating
+							},
+							["g"] = {
+								i(144556),	-- Cruel Gladiator's Cloak of Battle (A)
+								i(144764),	-- Cruel Gladiator's Plate Chestpiece (A)
+								i(144768),	-- Cruel Gladiator's Plate Gauntlets (A)
+								i(144776),	-- Cruel Gladiator's Plate Girdle (A)
+								i(144770),	-- Cruel Gladiator's Plate Helm (A)
+								i(144772),	-- Cruel Gladiator's Plate Legguards (A)
+								i(144774),	-- Cruel Gladiator's Plate Shoulders (A)
+								i(144766),	-- Cruel Gladiator's Plate Warboots (A)
+								i(144778),	-- Cruel Gladiator's Plate Wristplates (A)
+								i(145398),	-- Ferocious Gladiator's Cloak of Battle (A)
+								i(145606),	-- Ferocious Gladiator's Plate Chestpiece (A)
+								i(145610),	-- Ferocious Gladiator's Plate Gauntlets (A)
+								i(145618),	-- Ferocious Gladiator's Plate Girdle (A)
+								i(145612),	-- Ferocious Gladiator's Plate Helm (A)
+								i(145614),	-- Ferocious Gladiator's Plate Legguards (A)
+								i(145616),	-- Ferocious Gladiator's Plate Shoulders (A)
+								i(145608),	-- Ferocious Gladiator's Plate Warboots (A)
+								i(145620),	-- Ferocious Gladiator's Plate Wristplates (A)
+							},
+						}),
 					}),
 					n(-384,	{	-- Neck
 						un(REMOVED_FROM_GAME, i(144654)),	-- Cruel Gladiator's Necklace (A)
@@ -5021,136 +5501,496 @@ _.PVP =
 				}),
 				n(-661, {	-- Gladiator PvP Gear
 					cl(DEATHKNIGHT, {
-						i(147909),	-- Fierce Gladiator's Dreadcloak (A)
-						i(147933),	-- Fierce Gladiator's Dreadplate Chestpiece (A)
-						i(147937),	-- Fierce Gladiator's Dreadplate Gauntlets (A)
-						i(147945),	-- Fierce Gladiator's Dreadplate Girdle (A)
-						i(147939),	-- Fierce Gladiator's Dreadplate Helm (A)
-						i(147941),	-- Fierce Gladiator's Dreadplate Legguards (A)
-						i(147935),	-- Fierce Gladiator's Dreadplate Sabatons (A)
-						i(147943),	-- Fierce Gladiator's Dreadplate Shoulders (A)
-						i(147947),	-- Fierce Gladiator's Dreadplate Wristplates (A)
+						i(149483, {	-- Ensemble: Fierce Gladiator's Dreadplate Armor (A)
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -661, 6 },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -661, 6 },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -661, 6 },	-- Season 7
+								{"exclude", "itemID", 149483 }, -- Exclude itself to stop duplicating
+							},
+							["g"] = {
+								i(147909),	-- Fierce Gladiator's Dreadcloak (A)
+								i(147933),	-- Fierce Gladiator's Dreadplate Chestpiece (A)
+								i(147937),	-- Fierce Gladiator's Dreadplate Gauntlets (A)
+								i(147945),	-- Fierce Gladiator's Dreadplate Girdle (A)
+								i(147939),	-- Fierce Gladiator's Dreadplate Helm (A)
+								i(147941),	-- Fierce Gladiator's Dreadplate Legguards (A)
+								i(147935),	-- Fierce Gladiator's Dreadplate Sabatons (A)
+								i(147943),	-- Fierce Gladiator's Dreadplate Shoulders (A)
+								i(147947),	-- Fierce Gladiator's Dreadplate Wristplates (A)
+								i(148402),	-- Dominant Gladiator's Dreadcloak (A)
+								i(148426),	-- Dominant Gladiator's Dreadplate Chestpiece (A)
+								i(148430),	-- Dominant Gladiator's Dreadplate Gauntlets (A)
+								i(148438),	-- Dominant Gladiator's Dreadplate Girdle (A)
+								i(148432),	-- Dominant Gladiator's Dreadplate Helm (A)
+								i(148434),	-- Dominant Gladiator's Dreadplate Legguards (A)
+								i(148428),	-- Dominant Gladiator's Dreadplate Sabatons (A)
+								i(148436),	-- Dominant Gladiator's Dreadplate Shoulders (A)
+								i(148440),	-- Dominant Gladiator's Dreadplate Wristplates (A)
+								i(148894),	-- Demonic Gladiator's Dreadcloak (A)
+								i(148918),	-- Demonic Gladiator's Dreadplate Chestpiece (A)
+								i(148922),	-- Demonic Gladiator's Dreadplate Gauntlets (A)
+								i(148930),	-- Demonic Gladiator's Dreadplate Girdle (A)
+								i(148924),	-- Demonic Gladiator's Dreadplate Helm (A)
+								i(148926),	-- Demonic Gladiator's Dreadplate Legguards (A)
+								i(148920),	-- Demonic Gladiator's Dreadplate Sabatons (A)
+								i(148928),	-- Demonic Gladiator's Dreadplate Shoulders (A)
+								i(148932),	-- Demonic Gladiator's Dreadplate Wristplates (A)
+							},
+						}),
 					}),
 					cl(DEMONHUNTER, {
-						i(147911),	-- Fierce Gladiator's Demonthread Cloak (A)
-						i(147961),	-- Fierce Gladiator's Felskin Belt (A)
-						i(147951),	-- Fierce Gladiator's Felskin Boots (A)
-						i(147953),	-- Fierce Gladiator's Felskin Gloves (A)
-						i(147955),	-- Fierce Gladiator's Felskin Helm (A)
-						i(147957),	-- Fierce Gladiator's Felskin Legguards (A)
-						i(147959),	-- Fierce Gladiator's Felskin Spaulders (A)
-						i(147949),	-- Fierce Gladiator's Felskin Tunic (A)
-						i(147963),	-- Fierce Gladiator's Felskin Wristguards (A)
+						i(149484, {	-- Ensemble: Fierce Gladiator's Felskin Armor (A)
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -661, 12 },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -661, 12 },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -661, 12 },	-- Season 7
+								{"exclude", "itemID", 149484 }, -- Exclude itself to stop duplicating
+							},
+							["g"] = {
+								i(147911),	-- Fierce Gladiator's Demonthread Cloak (A)
+								i(147961),	-- Fierce Gladiator's Felskin Belt (A)
+								i(147951),	-- Fierce Gladiator's Felskin Boots (A)
+								i(147953),	-- Fierce Gladiator's Felskin Gloves (A)
+								i(147955),	-- Fierce Gladiator's Felskin Helm (A)
+								i(147957),	-- Fierce Gladiator's Felskin Legguards (A)
+								i(147959),	-- Fierce Gladiator's Felskin Spaulders (A)
+								i(147949),	-- Fierce Gladiator's Felskin Tunic (A)
+								i(147963),	-- Fierce Gladiator's Felskin Wristguards (A)
+								i(148404),	-- Dominant Gladiator's Demonthread Cloak (A)
+								i(148454),	-- Dominant Gladiator's Felskin Belt (A)
+								i(148444),	-- Dominant Gladiator's Felskin Boots (A)
+								i(148446),	-- Dominant Gladiator's Felskin Gloves (A)
+								i(148448),	-- Dominant Gladiator's Felskin Helm (A)
+								i(148450),	-- Dominant Gladiator's Felskin Legguards (A)
+								i(148452),	-- Dominant Gladiator's Felskin Spaulders (A)
+								i(148442),	-- Dominant Gladiator's Felskin Tunic (A)
+								i(148456),	-- Dominant Gladiator's Felskin Wristguards (A)
+								i(148896),	-- Demonic Gladiator's Demonthread Cloak (A)
+								i(148946),	-- Demonic Gladiator's Felskin Belt (A)
+								i(148936),	-- Demonic Gladiator's Felskin Boots (A)
+								i(148938),	-- Demonic Gladiator's Felskin Gloves (A)
+								i(148940),	-- Demonic Gladiator's Felskin Helm (A)
+								i(148942),	-- Demonic Gladiator's Felskin Legguards (A)
+								i(148944),	-- Demonic Gladiator's Felskin Spaulders (A)
+								i(148934),	-- Demonic Gladiator's Felskin Tunic (A)
+								i(148948),	-- Demonic Gladiator's Felskin Wristguards (A)
+							},
+						}),
 					}),
 					cl(DRUID, {
-						i(147977),	-- Fierce Gladiator's Dragonhide Belt (A)
-						i(147913),	-- Fierce Gladiator's Dragonhide Cloak (A)
-						i(147969),	-- Fierce Gladiator's Dragonhide Gloves (A)
-						i(147971),	-- Fierce Gladiator's Dragonhide Helm (A)
-						i(147973),	-- Fierce Gladiator's Dragonhide Legguards (A)
-						i(147967),	-- Fierce Gladiator's Dragonhide Moccasins (A)
-						i(147975),	-- Fierce Gladiator's Dragonhide Spaulders (A)
-						i(147965),	-- Fierce Gladiator's Dragonhide Vest (A)
-						i(147979),	-- Fierce Gladiator's Dragonhide Wristguards (A)
+						i(149480, {	-- Ensemble: Fierce Gladiator's Dragonhide Armor (A)
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -661, 11 },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -661, 11 },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -661, 11 },	-- Season 7
+								{"exclude", "itemID", 149480 }, -- Exclude itself to stop duplicating
+							},
+							["g"] = {
+								i(147977),	-- Fierce Gladiator's Dragonhide Belt (A)
+								i(147913),	-- Fierce Gladiator's Dragonhide Cloak (A)
+								i(147969),	-- Fierce Gladiator's Dragonhide Gloves (A)
+								i(147971),	-- Fierce Gladiator's Dragonhide Helm (A)
+								i(147973),	-- Fierce Gladiator's Dragonhide Legguards (A)
+								i(147967),	-- Fierce Gladiator's Dragonhide Moccasins (A)
+								i(147975),	-- Fierce Gladiator's Dragonhide Spaulders (A)
+								i(147965),	-- Fierce Gladiator's Dragonhide Vest (A)
+								i(147979),	-- Fierce Gladiator's Dragonhide Wristguards (A)
+								i(148470),	-- Dominant Gladiator's Dragonhide Belt (A)
+								i(148406),	-- Dominant Gladiator's Dragonhide Cloak (A)
+								i(148462),	-- Dominant Gladiator's Dragonhide Gloves (A)
+								i(148464),	-- Dominant Gladiator's Dragonhide Helm (A)
+								i(148466),	-- Dominant Gladiator's Dragonhide Legguards (A)
+								i(148460),	-- Dominant Gladiator's Dragonhide Moccasins (A)
+								i(148468),	-- Dominant Gladiator's Dragonhide Spaulders (A)
+								i(148458),	-- Dominant Gladiator's Dragonhide Vest (A)
+								i(148472),	-- Dominant Gladiator's Dragonhide Wristguards (A)
+								i(148962),	-- Demonic Gladiator's Dragonhide Belt (A)
+								i(148898),	-- Demonic Gladiator's Dragonhide Cloak (A)
+								i(148954),	-- Demonic Gladiator's Dragonhide Gloves (A)
+								i(148956),	-- Demonic Gladiator's Dragonhide Helm (A)
+								i(148958),	-- Demonic Gladiator's Dragonhide Legguards (A)
+								i(148952),	-- Demonic Gladiator's Dragonhide Moccasins (A)
+								i(148960),	-- Demonic Gladiator's Dragonhide Spaulders (A)
+								i(148950),	-- Demonic Gladiator's Dragonhide Vest (A)
+								i(148964),	-- Demonic Gladiator's Dragonhide Wristguards (A)
+							},
+						}),
 					}),
 					cl(HUNTER, {
-						i(147995),	-- Fierce Gladiator's Chain Armband (A)
-						i(147981),	-- Fierce Gladiator's Chain Armor (A)
-						i(147993),	-- Fierce Gladiator's Chain Clasp (A)
-						i(147985),	-- Fierce Gladiator's Chain Gauntlets (A)
-						i(147987),	-- Fierce Gladiator's Chain Helm (A)
-						i(147989),	-- Fierce Gladiator's Chain Leggings (A)
-						i(147991),	-- Fierce Gladiator's Chain Spaulders (A)
-						i(147983),	-- Fierce Gladiator's Chain Treads (A)
-						i(147915),	-- Fierce Gladiator's Drape of the Tracker (A)
+						i(149479, {	-- Ensemble: Fierce Gladiator's Chain Armor (A)
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -661, 3 },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -661, 3 },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -661, 3 },	-- Season 7
+								{"exclude", "itemID", 149479 }, -- Exclude itself to stop duplicating
+							},
+							["g"] = {
+								i(147995),	-- Fierce Gladiator's Chain Armband (A)
+								i(147981),	-- Fierce Gladiator's Chain Armor (A)
+								i(147993),	-- Fierce Gladiator's Chain Clasp (A)
+								i(147985),	-- Fierce Gladiator's Chain Gauntlets (A)
+								i(147987),	-- Fierce Gladiator's Chain Helm (A)
+								i(147989),	-- Fierce Gladiator's Chain Leggings (A)
+								i(147991),	-- Fierce Gladiator's Chain Spaulders (A)
+								i(147983),	-- Fierce Gladiator's Chain Treads (A)
+								i(147915),	-- Fierce Gladiator's Drape of the Tracker (A)
+								i(148408),	-- Dominant Gladiator's Drape of the Tracker (A)
+								i(148488),	-- Dominant Gladiator's Chain Armband (A)
+								i(148474),	-- Dominant Gladiator's Chain Armor (A)
+								i(148486),	-- Dominant Gladiator's Chain Clasp (A)
+								i(148478),	-- Dominant Gladiator's Chain Gauntlets (A)
+								i(148480),	-- Dominant Gladiator's Chain Helm (A)
+								i(148482),	-- Dominant Gladiator's Chain Leggings (A)
+								i(148484),	-- Dominant Gladiator's Chain Spaulders (A)
+								i(148476),	-- Dominant Gladiator's Chain Treads (A)
+								i(148900),	-- Demonic Gladiator's Drape of the Tracker (A)
+								i(148980),	-- Demonic Gladiator's Chain Armband (A)
+								i(148966),	-- Demonic Gladiator's Chain Armor (A)
+								i(148978),	-- Demonic Gladiator's Chain Clasp (A)
+								i(148970),	-- Demonic Gladiator's Chain Gauntlets (A)
+								i(148972),	-- Demonic Gladiator's Chain Helm (A)
+								i(148974),	-- Demonic Gladiator's Chain Leggings (A)
+								i(148976),	-- Demonic Gladiator's Chain Spaulders (A)
+								i(148968),	-- Demonic Gladiator's Chain Treads (A)
+							},
+						}),
 					}),
 					cl(MAGE, {
-						i(148007),	-- Fierce Gladiator's Silk Amice (A)
-						i(148011),	-- Fierce Gladiator's Silk Bracers (A)
-						i(148009),	-- Fierce Gladiator's Silk Cord (A)
-						i(148001),	-- Fierce Gladiator's Silk Cowl (A)
-						i(147999),	-- Fierce Gladiator's Silk Handguards (A)
-						i(147997),	-- Fierce Gladiator's Silk Treads (A)
-						i(148003),	-- Fierce Gladiator's Silk Trousers (A)
-						i(148005),	-- Fierce Gladiator's Silk Tunic (A)
-						i(147917),	-- Fierce Gladiator's Silken Shawl (A)
+						i(149501, {	-- Ensemble: Fierce Gladiator's Silk Armor (A)
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -661, 8 },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -661, 8 },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -661, 8 },	-- Season 7
+								{"exclude", "itemID", 149501 }, -- Exclude itself to stop duplicating
+							},
+							["g"] = {
+								i(148007),	-- Fierce Gladiator's Silk Amice (A)
+								i(148011),	-- Fierce Gladiator's Silk Bracers (A)
+								i(148009),	-- Fierce Gladiator's Silk Cord (A)
+								i(148001),	-- Fierce Gladiator's Silk Cowl (A)
+								i(147999),	-- Fierce Gladiator's Silk Handguards (A)
+								i(147997),	-- Fierce Gladiator's Silk Treads (A)
+								i(148003),	-- Fierce Gladiator's Silk Trousers (A)
+								i(148005),	-- Fierce Gladiator's Silk Tunic (A)
+								i(147917),	-- Fierce Gladiator's Silken Shawl (A)
+								i(148500),	-- Dominant Gladiator's Silk Amice (A)
+								i(148504),	-- Dominant Gladiator's Silk Bracers (A)
+								i(148502),	-- Dominant Gladiator's Silk Cord (A)
+								i(148494),	-- Dominant Gladiator's Silk Cowl (A)
+								i(148492),	-- Dominant Gladiator's Silk Handguards (A)
+								i(148490),	-- Dominant Gladiator's Silk Treads (A)
+								i(148496),	-- Dominant Gladiator's Silk Trousers (A)
+								i(148498),	-- Dominant Gladiator's Silk Tunic (A)
+								i(148410),	-- Dominant Gladiator's Silken Shawl (A)
+								i(148992),	-- Demonic Gladiator's Silk Amice (A)
+								i(148996),	-- Demonic Gladiator's Silk Bracers (A)
+								i(148994),	-- Demonic Gladiator's Silk Cord (A)
+								i(148986),	-- Demonic Gladiator's Silk Cowl (A)
+								i(148984),	-- Demonic Gladiator's Silk Handguards (A)
+								i(148982),	-- Demonic Gladiator's Silk Treads (A)
+								i(148988),	-- Demonic Gladiator's Silk Trousers (A)
+								i(148990),	-- Demonic Gladiator's Silk Tunic (A)
+								i(148902),	-- Demonic Gladiator's Silken Shawl (A)
+							},
+						}),
 					}),
 					cl(MONK, {
-						i(148025),	-- Fierce Gladiator's Ironskin Belt (A)
-						i(147919),	-- Fierce Gladiator's Ironskin Cloak (A)
-						i(148015),	-- Fierce Gladiator's Ironskin Gloves (A)
-						i(148017),	-- Fierce Gladiator's Ironskin Helm (A)
-						i(148019),	-- Fierce Gladiator's Ironskin Legguards (A)
-						i(148013),	-- Fierce Gladiator's Ironskin Slippers (A)
-						i(148021),	-- Fierce Gladiator's Ironskin Spaulders (A)
-						i(148023),	-- Fierce Gladiator's Ironskin Tunic (A)
-						i(148027),	-- Fierce Gladiator's Ironskin Wristguards (A)
+						i(149489, {	-- Ensemble: Fierce Gladiator's Ironskin Armor (A)
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -661, 10 },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -661, 10 },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -661, 10 },	-- Season 7
+								{"exclude", "itemID", 149489 }, -- Exclude itself to stop duplicating
+							},
+							["g"] = {
+								i(148025),	-- Fierce Gladiator's Ironskin Belt (A)
+								i(147919),	-- Fierce Gladiator's Ironskin Cloak (A)
+								i(148015),	-- Fierce Gladiator's Ironskin Gloves (A)
+								i(148017),	-- Fierce Gladiator's Ironskin Helm (A)
+								i(148019),	-- Fierce Gladiator's Ironskin Legguards (A)
+								i(148013),	-- Fierce Gladiator's Ironskin Slippers (A)
+								i(148021),	-- Fierce Gladiator's Ironskin Spaulders (A)
+								i(148023),	-- Fierce Gladiator's Ironskin Tunic (A)
+								i(148027),	-- Fierce Gladiator's Ironskin Wristguards (A)
+								i(148518),	-- Dominant Gladiator's Ironskin Belt (A)
+								i(148412),	-- Dominant Gladiator's Ironskin Cloak (A)
+								i(148508),	-- Dominant Gladiator's Ironskin Gloves (A)
+								i(148510),	-- Dominant Gladiator's Ironskin Helm (A)
+								i(148512),	-- Dominant Gladiator's Ironskin Legguards (A)
+								i(148506),	-- Dominant Gladiator's Ironskin Slippers (A)
+								i(148514),	-- Dominant Gladiator's Ironskin Spaulders (A)
+								i(148516),	-- Dominant Gladiator's Ironskin Tunic (A)
+								i(148520),	-- Dominant Gladiator's Ironskin Wristguards (A)
+								i(149010),	-- Demonic Gladiator's Ironskin Belt (A)
+								i(148904),	-- Demonic Gladiator's Ironskin Cloak (A)
+								i(149000),	-- Demonic Gladiator's Ironskin Gloves (A)
+								i(149002),	-- Demonic Gladiator's Ironskin Helm (A)
+								i(149004),	-- Demonic Gladiator's Ironskin Legguards (A)
+								i(148998),	-- Demonic Gladiator's Ironskin Slippers (A)
+								i(149006),	-- Demonic Gladiator's Ironskin Spaulders (A)
+								i(149008),	-- Demonic Gladiator's Ironskin Tunic (A)
+								i(149012),	-- Demonic Gladiator's Ironskin Wristguards (A)
+							},
+						}),
 					}),
 					cl(PALADIN, {
-						i(147921),	-- Fierce Gladiator's Greatcloak of Faith (A)
-						i(148044),	-- Fierce Gladiator's Scaled Breastplate (A)
-						i(148038),	-- Fierce Gladiator's Scaled Gauntlets (A)
-						i(148047),	-- Fierce Gladiator's Scaled Girdle (A)
-						i(148040),	-- Fierce Gladiator's Scaled Helm (A)
-						i(148042),	-- Fierce Gladiator's Scaled Legguards (A)
-						i(148036),	-- Fierce Gladiator's Scaled Sabatons (A)
-						i(148045),	-- Fierce Gladiator's Scaled Shoulders (A)
-						i(148049),	-- Fierce Gladiator's Scaled Wristplates (A)
+						i(149498, {	-- Ensemble: Fierce Gladiator's Scaled Armor (A)
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -661, 2 },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -661, 2 },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -661, 2 },	-- Season 7
+								{"exclude", "itemID", 149498 }, -- Exclude itself to stop duplicating
+							},
+							["g"] = {
+								i(147921),	-- Fierce Gladiator's Greatcloak of Faith (A)
+								i(148044),	-- Fierce Gladiator's Scaled Breastplate (A)
+								i(148038),	-- Fierce Gladiator's Scaled Gauntlets (A)
+								i(148047),	-- Fierce Gladiator's Scaled Girdle (A)
+								i(148040),	-- Fierce Gladiator's Scaled Helm (A)
+								i(148042),	-- Fierce Gladiator's Scaled Legguards (A)
+								i(148036),	-- Fierce Gladiator's Scaled Sabatons (A)
+								i(148045),	-- Fierce Gladiator's Scaled Shoulders (A)
+								i(148049),	-- Fierce Gladiator's Scaled Wristplates (A)
+								i(148414),	-- Dominant Gladiator's Greatcloak of Faith (A)
+								i(148537),	-- Dominant Gladiator's Scaled Breastplate (A)
+								i(148531),	-- Dominant Gladiator's Scaled Gauntlets (A)
+								i(148540),	-- Dominant Gladiator's Scaled Girdle (A)
+								i(148533),	-- Dominant Gladiator's Scaled Helm (A)
+								i(148535),	-- Dominant Gladiator's Scaled Legguards (A)
+								i(148529),	-- Dominant Gladiator's Scaled Sabatons (A)
+								i(148538),	-- Dominant Gladiator's Scaled Shoulders (A)
+								i(148542),	-- Dominant Gladiator's Scaled Wristplates (A)
+								i(148906),	-- Demonic Gladiator's Greatcloak of Faith (A)
+								i(149029),	-- Demonic Gladiator's Scaled Breastplate (A)
+								i(149023),	-- Demonic Gladiator's Scaled Gauntlets (A)
+								i(149032),	-- Demonic Gladiator's Scaled Girdle (A)
+								i(149025),	-- Demonic Gladiator's Scaled Helm (A)
+								i(149027),	-- Demonic Gladiator's Scaled Legguards (A)
+								i(149021),	-- Demonic Gladiator's Scaled Sabatons (A)
+								i(149030),	-- Demonic Gladiator's Scaled Shoulders (A)
+								i(149034),	-- Demonic Gladiator's Scaled Wristplates (A)
+							},
+						}),
 					}),
 					cl(PRIEST, {
-						i(147923),	-- Fierce Gladiator's Drape of Piety (A)
-						i(148065),	-- Fierce Gladiator's Satin Bracers (A)
-						i(148063),	-- Fierce Gladiator's Satin Cord (A)
-						i(148053),	-- Fierce Gladiator's Satin Gloves (A)
-						i(148055),	-- Fierce Gladiator's Satin Hood (A)
-						i(148057),	-- Fierce Gladiator's Satin Leggings (A)
-						i(148061),	-- Fierce Gladiator's Satin Mantle (A)
-						i(148059),	-- Fierce Gladiator's Satin Robe (A)
-						i(148051),	-- Fierce Gladiator's Satin Treads (A)
+						i(149496, {	-- Ensemble: Fierce Gladiator's Satin Armor (A)
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -661, 5 },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -661, 5 },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -661, 5 },	-- Season 7
+								{"exclude", "itemID", 149496 }, -- Exclude itself to stop duplicating
+							},
+							["g"] = {
+								i(147923),	-- Fierce Gladiator's Drape of Piety (A)
+								i(148065),	-- Fierce Gladiator's Satin Bracers (A)
+								i(148063),	-- Fierce Gladiator's Satin Cord (A)
+								i(148053),	-- Fierce Gladiator's Satin Gloves (A)
+								i(148055),	-- Fierce Gladiator's Satin Hood (A)
+								i(148057),	-- Fierce Gladiator's Satin Leggings (A)
+								i(148061),	-- Fierce Gladiator's Satin Mantle (A)
+								i(148059),	-- Fierce Gladiator's Satin Robe (A)
+								i(148051),	-- Fierce Gladiator's Satin Treads (A)
+								i(148416),	-- Dominant Gladiator's Drape of Piety (A)
+								i(148558),	-- Dominant Gladiator's Satin Bracers (A)
+								i(148556),	-- Dominant Gladiator's Satin Cord (A)
+								i(148546),	-- Dominant Gladiator's Satin Gloves (A)
+								i(148548),	-- Dominant Gladiator's Satin Hood (A)
+								i(148550),	-- Dominant Gladiator's Satin Leggings (A)
+								i(148554),	-- Dominant Gladiator's Satin Mantle (A)
+								i(148552),	-- Dominant Gladiator's Satin Robe (A)
+								i(148544),	-- Dominant Gladiator's Satin Treads (A)
+								i(148908),	-- Demonic Gladiator's Drape of Piety (A)
+								i(149050),	-- Demonic Gladiator's Satin Bracers (A)
+								i(149048),	-- Demonic Gladiator's Satin Cord (A)
+								i(149038),	-- Demonic Gladiator's Satin Gloves (A)
+								i(149040),	-- Demonic Gladiator's Satin Hood (A)
+								i(149042),	-- Demonic Gladiator's Satin Leggings (A)
+								i(149046),	-- Demonic Gladiator's Satin Mantle (A)
+								i(149044),	-- Demonic Gladiator's Satin Robe (A)
+								i(149036),	-- Demonic Gladiator's Satin Treads (A)
+							},
+						}),
 					}),
 					cl(ROGUE, {
-						i(148085),	-- Fierce Gladiator's Leather Belt (A)
-						i(148077),	-- Fierce Gladiator's Leather Gloves (A)
-						i(148079),	-- Fierce Gladiator's Leather Helm (A)
-						i(148081),	-- Fierce Gladiator's Leather Legguards (A)
-						i(148075),	-- Fierce Gladiator's Leather Slippers (A)
-						i(148083),	-- Fierce Gladiator's Leather Spaulders (A)
-						i(148073),	-- Fierce Gladiator's Leather Tunic (A)
-						i(148087),	-- Fierce Gladiator's Leather Wristguards (A)
-						i(147925),	-- Fierce Gladiator's Shadowcape (A)
+						i(149490, {	-- Ensemble: Fierce Gladiator's Leather Armor (A)
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -661, 4 },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -661, 4 },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -661, 4 },	-- Season 7
+								{"exclude", "itemID", 149490 }, -- Exclude itself to stop duplicating
+							},
+							["g"] = {
+								i(148085),	-- Fierce Gladiator's Leather Belt (A)
+								i(148077),	-- Fierce Gladiator's Leather Gloves (A)
+								i(148079),	-- Fierce Gladiator's Leather Helm (A)
+								i(148081),	-- Fierce Gladiator's Leather Legguards (A)
+								i(148075),	-- Fierce Gladiator's Leather Slippers (A)
+								i(148083),	-- Fierce Gladiator's Leather Spaulders (A)
+								i(148073),	-- Fierce Gladiator's Leather Tunic (A)
+								i(148087),	-- Fierce Gladiator's Leather Wristguards (A)
+								i(147925),	-- Fierce Gladiator's Shadowcape (A)
+								i(148578),	-- Dominant Gladiator's Leather Belt (A)
+								i(148570),	-- Dominant Gladiator's Leather Gloves (A)
+								i(148572),	-- Dominant Gladiator's Leather Helm (A)
+								i(148574),	-- Dominant Gladiator's Leather Legguards (A)
+								i(148568),	-- Dominant Gladiator's Leather Slippers (A)
+								i(148576),	-- Dominant Gladiator's Leather Spaulders (A)
+								i(148566),	-- Dominant Gladiator's Leather Tunic (A)
+								i(148580),	-- Dominant Gladiator's Leather Wristguards (A)
+								i(148418),	-- Dominant Gladiator's Shadowcape (A)
+								i(149070),	-- Demonic Gladiator's Leather Belt (A)
+								i(149062),	-- Demonic Gladiator's Leather Gloves (A)
+								i(149064),	-- Demonic Gladiator's Leather Helm (A)
+								i(149066),	-- Demonic Gladiator's Leather Legguards (A)
+								i(149060),	-- Demonic Gladiator's Leather Slippers (A)
+								i(149068),	-- Demonic Gladiator's Leather Spaulders (A)
+								i(149058),	-- Demonic Gladiator's Leather Tunic (A)
+								i(149072),	-- Demonic Gladiator's Leather Wristguards (A)
+								i(148910),	-- Demonic Gladiator's Shadowcape (A)
+							},
+						}),
 					}),
 					cl(SHAMAN, {
-						i(148103),	-- Fierce Gladiator's Ringmail Armband (A)
-						i(148089),	-- Fierce Gladiator's Ringmail Armor (A)
-						i(148091),	-- Fierce Gladiator's Ringmail Boots (A)
-						i(148101),	-- Fierce Gladiator's Ringmail Clasp (A)
-						i(148093),	-- Fierce Gladiator's Ringmail Gauntlets (A)
-						i(148095),	-- Fierce Gladiator's Ringmail Helm (A)
-						i(148097),	-- Fierce Gladiator's Ringmail Leggings (A)
-						i(148099),	-- Fierce Gladiator's Ringmail Spaulders (A)
-						i(147927),	-- Fierce Gladiator's Totemic Cloak (A)
+						i(149494, {	-- Ensemble: Fierce Gladiator's Ringmail Armor (A)
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -661, 7 },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -661, 7 },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -661, 7 },	-- Season 7
+								{"exclude", "itemID", 149494 }, -- Exclude itself to stop duplicating
+							},
+							["g"] = {
+								i(148103),	-- Fierce Gladiator's Ringmail Armband (A)
+								i(148089),	-- Fierce Gladiator's Ringmail Armor (A)
+								i(148091),	-- Fierce Gladiator's Ringmail Boots (A)
+								i(148101),	-- Fierce Gladiator's Ringmail Clasp (A)
+								i(148093),	-- Fierce Gladiator's Ringmail Gauntlets (A)
+								i(148095),	-- Fierce Gladiator's Ringmail Helm (A)
+								i(148097),	-- Fierce Gladiator's Ringmail Leggings (A)
+								i(148099),	-- Fierce Gladiator's Ringmail Spaulders (A)
+								i(147927),	-- Fierce Gladiator's Totemic Cloak (A)
+								i(148596),	-- Dominant Gladiator's Ringmail Armband (A)
+								i(148582),	-- Dominant Gladiator's Ringmail Armor (A)
+								i(148584),	-- Dominant Gladiator's Ringmail Boots (A)
+								i(148594),	-- Dominant Gladiator's Ringmail Clasp (A)
+								i(148586),	-- Dominant Gladiator's Ringmail Gauntlets (A)
+								i(148588),	-- Dominant Gladiator's Ringmail Helm (A)
+								i(148590),	-- Dominant Gladiator's Ringmail Leggings (A)
+								i(148592),	-- Dominant Gladiator's Ringmail Spaulders (A)
+								i(148420),	-- Dominant Gladiator's Totemic Cloak (A)
+								i(149088),	-- Demonic Gladiator's Ringmail Armband (A)
+								i(149074),	-- Demonic Gladiator's Ringmail Armor (A)
+								i(149076),	-- Demonic Gladiator's Ringmail Boots (A)
+								i(149086),	-- Demonic Gladiator's Ringmail Clasp (A)
+								i(149078),	-- Demonic Gladiator's Ringmail Gauntlets (A)
+								i(149080),	-- Demonic Gladiator's Ringmail Helm (A)
+								i(149082),	-- Demonic Gladiator's Ringmail Leggings (A)
+								i(149084),	-- Demonic Gladiator's Ringmail Spaulders (A)
+								i(148912),	-- Demonic Gladiator's Totemic Cloak (A)
+							},
+						}),
 					}),
 					cl(WARLOCK, {
-						i(148133),	-- Fierce Gladiator's Felweave Amice (A)
-						i(148137),	-- Fierce Gladiator's Felweave Bracers (A)
-						i(147929),	-- Fierce Gladiator's Felweave Cloak (A)
-						i(148135),	-- Fierce Gladiator's Felweave Cord (A)
-						i(148127),	-- Fierce Gladiator's Felweave Cowl (A)
-						i(148125),	-- Fierce Gladiator's Felweave Handguards (A)
-						i(148131),	-- Fierce Gladiator's Felweave Raiment (A)
-						i(148123),	-- Fierce Gladiator's Felweave Treads (A)
-						i(148129),	-- Fierce Gladiator's Felweave Trousers (A)
+						i(149486, {	-- Ensemble: Fierce Gladiator's Felweave Armor (A)
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -661, 9 },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -661, 9 },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -661, 9 },	-- Season 7
+								{"exclude", "itemID", 149486 }, -- Exclude itself to stop duplicating
+							},
+							["g"] = {
+								i(148133),	-- Fierce Gladiator's Felweave Amice (A)
+								i(148137),	-- Fierce Gladiator's Felweave Bracers (A)
+								i(147929),	-- Fierce Gladiator's Felweave Cloak (A)
+								i(148135),	-- Fierce Gladiator's Felweave Cord (A)
+								i(148127),	-- Fierce Gladiator's Felweave Cowl (A)
+								i(148125),	-- Fierce Gladiator's Felweave Handguards (A)
+								i(148131),	-- Fierce Gladiator's Felweave Raiment (A)
+								i(148123),	-- Fierce Gladiator's Felweave Treads (A)
+								i(148129),	-- Fierce Gladiator's Felweave Trousers (A)
+								i(148626),	-- Dominant Gladiator's Felweave Amice (A)
+								i(148630),	-- Dominant Gladiator's Felweave Bracers (A)
+								i(148422),	-- Dominant Gladiator's Felweave Cloak (A)
+								i(148628),	-- Dominant Gladiator's Felweave Cord (A)
+								i(148620),	-- Dominant Gladiator's Felweave Cowl (A)
+								i(148618),	-- Dominant Gladiator's Felweave Handguards (A)
+								i(148624),	-- Dominant Gladiator's Felweave Raiment (A)
+								i(148616),	-- Dominant Gladiator's Felweave Treads (A)
+								i(148622),	-- Dominant Gladiator's Felweave Trousers (A)
+								i(149118),	-- Demonic Gladiator's Felweave Amice
+								i(149122),	-- Demonic Gladiator's Felweave Bracers
+								i(148914),	-- Demonic Gladiator's Felweave Cloak
+								i(149120),	-- Demonic Gladiator's Felweave Cord
+								i(149112),	-- Demonic Gladiator's Felweave Cowl
+								i(149110),	-- Demonic Gladiator's Felweave Handguards
+								i(149116),	-- Demonic Gladiator's Felweave Raiment
+								i(149108),	-- Demonic Gladiator's Felweave Treads
+								i(149114),	-- Demonic Gladiator's Felweave Trousers
+							},
+						}),
 					}),
 					cl(WARRIOR, {
-						i(147931),	-- Fierce Gladiator's Cloak of Battle (A)
-						i(148139),	-- Fierce Gladiator's Plate Chestpiece (A)
-						i(148143),	-- Fierce Gladiator's Plate Gauntlets (A)
-						i(148151),	-- Fierce Gladiator's Plate Girdle (A)
-						i(148145),	-- Fierce Gladiator's Plate Helm (A)
-						i(148147),	-- Fierce Gladiator's Plate Legguards (A)
-						i(148149),	-- Fierce Gladiator's Plate Shoulders (A)
-						i(148141),	-- Fierce Gladiator's Plate Warboots (A)
-						i(148153),	-- Fierce Gladiator's Plate Wristplates (A)
+						i(149493, {	-- Ensemble: Fierce Gladiator's Plate Armor (A)
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -661, 1 },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -661, 1 },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -661, 1 },	-- Season 7
+								{"exclude", "itemID", 149493 }, -- Exclude itself to stop duplicating
+							},
+							["g"] = {
+								i(147931),	-- Fierce Gladiator's Cloak of Battle (A)
+								i(148139),	-- Fierce Gladiator's Plate Chestpiece (A)
+								i(148143),	-- Fierce Gladiator's Plate Gauntlets (A)
+								i(148151),	-- Fierce Gladiator's Plate Girdle (A)
+								i(148145),	-- Fierce Gladiator's Plate Helm (A)
+								i(148147),	-- Fierce Gladiator's Plate Legguards (A)
+								i(148149),	-- Fierce Gladiator's Plate Shoulders (A)
+								i(148141),	-- Fierce Gladiator's Plate Warboots (A)
+								i(148153),	-- Fierce Gladiator's Plate Wristplates (A)
+								i(148424),	-- Dominant Gladiator's Cloak of Battle (A)
+								i(148632),	-- Dominant Gladiator's Plate Chestpiece (A)
+								i(148636),	-- Dominant Gladiator's Plate Gauntlets (A)
+								i(148644),	-- Dominant Gladiator's Plate Girdle (A)
+								i(148638),	-- Dominant Gladiator's Plate Helm (A)
+								i(148640),	-- Dominant Gladiator's Plate Legguards (A)
+								i(148642),	-- Dominant Gladiator's Plate Shoulders (A)
+								i(148634),	-- Dominant Gladiator's Plate Warboots (A)
+								i(148646),	-- Dominant Gladiator's Plate Wristplates (A)
+								i(148916),	-- Demonic Gladiator's Cloak of Battle
+								i(149124),	-- Demonic Gladiator's Plate Chestpiece
+								i(149128),	-- Demonic Gladiator's Plate Gauntlets
+								i(149136),	-- Demonic Gladiator's Plate Girdle
+								i(149130),	-- Demonic Gladiator's Plate Helm
+								i(149132),	-- Demonic Gladiator's Plate Legguards
+								i(149134),	-- Demonic Gladiator's Plate Shoulders
+								i(149126),	-- Demonic Gladiator's Plate Warboots
+								i(149138),	-- Demonic Gladiator's Plate Wristplates
+							},
+						}),
 					}),
 					n(-384,	{	-- Neck
 						un(REMOVED_FROM_GAME, i(148029)),	-- Fierce Gladiator's Necklace (A)

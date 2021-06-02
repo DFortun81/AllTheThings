@@ -3354,14 +3354,14 @@ _.PVP =
 							}),
 						}),
 						cl(MONK, {
-							i(138515, {	-- Ensemble: Wild Gladiator's Ironskin Armor (A)
+							i(138525, {	-- Ensemble: Wild Gladiator's Ironskin Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
 									{"sub", "pvp_set_faction_ensemble", -9981, -680, -9914, -661, 10 },
 									{"select", "itemID", 124756 },	-- Wild Gladiator's Bindings of Cruelty (A)
 									{"select", "itemID", 124751 },	-- Wild Gladiator's Belt of Cruelty (A)
 									{"select", "itemID", 124753 },	-- Wild Gladiator's Boots of Cruelty (A)
-									{"exclude", "itemID", 138515 },	-- Exclude itself to stop duplicating
+									{"exclude", "itemID", 138525 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
 									i(124793, {	-- Wild Gladiator's Ironskin Gloves (A)
