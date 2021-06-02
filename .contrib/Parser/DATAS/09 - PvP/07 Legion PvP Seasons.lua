@@ -27,6 +27,15 @@ _.PVP =
 								i(135818),	-- Vindictive Combatant's Dreadplate Sabatons (A)
 								i(135822),	-- Vindictive Combatant's Dreadplate Shoulders (A)
 								i(135824),	-- Vindictive Combatant's Dreadplate Wristplates (A)
+								i(142874),	-- Fearless Combatant's Dreadcloak (A)
+								i(142786),	-- Fearless Combatant's Dreadplate Chestpiece (A)
+								i(142788),	-- Fearless Combatant's Dreadplate Gauntlets (A)
+								i(142792),	-- Fearless Combatant's Dreadplate Girdle (A)
+								i(142789),	-- Fearless Combatant's Dreadplate Helm (A)
+								i(142790),	-- Fearless Combatant's Dreadplate Legguards (A)
+								i(142787),	-- Fearless Combatant's Dreadplate Sabatons (A)
+								i(142791),	-- Fearless Combatant's Dreadplate Shoulders (A)
+								i(142793),	-- Fearless Combatant's Dreadplate Wristplates (A)
 							},
 						}),
 					}),
@@ -48,6 +57,15 @@ _.PVP =
 								i(136300),	-- Vindictive Combatant's Felskin Spaulders (A)
 								i(136299),	-- Vindictive Combatant's Felskin Tunic (A)
 								i(136302),	-- Vindictive Combatant's Felskin Wristguards (A)
+								i(143318),	-- Fearless Combatant's Demonthread Cloak (A)
+								i(143260),	-- Fearless Combatant's Felskin Belt (A)
+								i(143254),	-- Fearless Combatant's Felskin Boots (A)
+								i(143255),	-- Fearless Combatant's Felskin Gloves (A)
+								i(143256),	-- Fearless Combatant's Felskin Helm (A)
+								i(143257),	-- Fearless Combatant's Felskin Legguards (A)
+								i(143259),	-- Fearless Combatant's Felskin Spaulders (A)
+								i(143258),	-- Fearless Combatant's Felskin Tunic (A)
+								i(143261),	-- Fearless Combatant's Felskin Wristguards (A)
 							},
 						}),
 					}),
@@ -69,6 +87,15 @@ _.PVP =
 								i(135830),	-- Vindictive Combatant's Dragonhide Spaulders (A)
 								i(135829),	-- Vindictive Combatant's Dragonhide Tunic (A)
 								i(135832),	-- Vindictive Combatant's Dragonhide Wristguards (A)
+								i(142800),	-- Fearless Combatant's Dragonhide Belt (A)
+								i(142878),	-- Fearless Combatant's Dragonhide Cloak (A)
+								i(142795),	-- Fearless Combatant's Dragonhide Gloves (A)
+								i(142796),	-- Fearless Combatant's Dragonhide Helm (A)
+								i(142797),	-- Fearless Combatant's Dragonhide Legguards (A)
+								i(142794),	-- Fearless Combatant's Dragonhide Moccasins (A)
+								i(142799),	-- Fearless Combatant's Dragonhide Spaulders (A)
+								i(142798),	-- Fearless Combatant's Dragonhide Tunic (A)
+								i(142801),	-- Fearless Combatant's Dragonhide Wristguards (A)
 							},
 						}),
 					}),
@@ -90,6 +117,15 @@ _.PVP =
 								i(135838),	-- Vindictive Combatant's Chain Spaulders (A)
 								i(135834),	-- Vindictive Combatant's Chain Treads (A)
 								i(135913),	-- Vindictive Combatant's Drape of the Tracker (A)
+								i(142809),	-- Fearless Combatant's Chain Armband (A)
+								i(142802),	-- Fearless Combatant's Chain Armor (A)
+								i(142808),	-- Fearless Combatant's Chain Clasp (A)
+								i(142804),	-- Fearless Combatant's Chain Gauntlets (A)
+								i(142805),	-- Fearless Combatant's Chain Helm (A)
+								i(142806),	-- Fearless Combatant's Chain Leggings (A)
+								i(142807),	-- Fearless Combatant's Chain Spaulders (A)
+								i(142803),	-- Fearless Combatant's Chain Treads (A)
+								i(142882),	-- Fearless Combatant's Drape of the Tracker (A)
 							},
 						}),
 					}),
@@ -111,6 +147,15 @@ _.PVP =
 								i(135844),	-- Vindictive Combatant's Silk Trousers (A)
 								i(135845),	-- Vindictive Combatant's Silk Tunic (A)
 								i(135906),	-- Vindictive Combatant's Silken Shawl (A)
+								i(142815),	-- Fearless Combatant's Silk Amice (A)
+								i(142817),	-- Fearless Combatant's Silk Bracers (A)
+								i(142816),	-- Fearless Combatant's Silk Cord (A)
+								i(142812),	-- Fearless Combatant's Silk Cowl (A)
+								i(142811),	-- Fearless Combatant's Silk Handguards (A)
+								i(142814),	-- Fearless Combatant's Silk Robe (A)
+								i(142810),	-- Fearless Combatant's Silk Treads (A)
+								i(142813),	-- Fearless Combatant's Silk Trousers (A)
+								i(142875),	-- Fearless Combatant's Silken Shawl (A)
 							},
 						}),
 					}),
@@ -132,6 +177,15 @@ _.PVP =
 								i(135853),	-- Vindictive Combatant's Ironskin Spaulders (A)
 								i(135854),	-- Vindictive Combatant's Ironskin Tunic (A)
 								i(135856),	-- Vindictive Combatant's Ironskin Wristguards (A)
+								i(142824),	-- Fearless Combatant's Ironskin Belt (A)
+								i(142879),	-- Fearless Combatant's Ironskin Cloak (A)
+								i(142819),	-- Fearless Combatant's Ironskin Gloves (A)
+								i(142820),	-- Fearless Combatant's Ironskin Helm (A)
+								i(142821),	-- Fearless Combatant's Ironskin Legguards (A)
+								i(142818),	-- Fearless Combatant's Ironskin Slippers (A)
+								i(142822),	-- Fearless Combatant's Ironskin Spaulders (A)
+								i(142823),	-- Fearless Combatant's Ironskin Tunic (A)
+								i(142825),	-- Fearless Combatant's Ironskin Wristguards (A)
 							},
 						}),
 					}),
@@ -153,6 +207,15 @@ _.PVP =
 								i(135858),	-- Vindictive Combatant's Scaled Sabatons (A)
 								i(135862),	-- Vindictive Combatant's Scaled Shoulders (A)
 								i(135864),	-- Vindictive Combatant's Scaled Wristplates (A)
+								i(142883),	-- Fearless Combatant's Greatcloak of Faith (A)
+								i(142826),	-- Fearless Combatant's Scaled Chestpiece (A)
+								i(142828),	-- Fearless Combatant's Scaled Gauntlets (A)
+								i(142832),	-- Fearless Combatant's Scaled Girdle (A)
+								i(142829),	-- Fearless Combatant's Scaled Helm (A)
+								i(142830),	-- Fearless Combatant's Scaled Legguards (A)
+								i(142827),	-- Fearless Combatant's Scaled Sabatons (A)
+								i(142831),	-- Fearless Combatant's Scaled Shoulders (A)
+								i(142833),	-- Fearless Combatant's Scaled Wristplates (A)
 							},
 						}),
 					}),
@@ -174,6 +237,15 @@ _.PVP =
 								i(135870),	-- Vindictive Combatant's Satin Mantle (A)
 								i(135865),	-- Vindictive Combatant's Satin Treads (A)
 								i(135869),	-- Vindictive Combatant's Satin Tunic (A)
+								i(143292),	-- Fearless Combatant's Drape of Piety (A)
+								i(142841),	-- Fearless Combatant's Satin Bracers (A)
+								i(142840),	-- Fearless Combatant's Satin Cord (A)
+								i(142835),	-- Fearless Combatant's Satin Gloves (A)
+								i(142836),	-- Fearless Combatant's Satin Hood (A)
+								i(142837),	-- Fearless Combatant's Satin Leggings (A)
+								i(142839),	-- Fearless Combatant's Satin Mantle (A)
+								i(142838),	-- Fearless Combatant's Satin Robe (A)
+								i(142834),	-- Fearless Combatant's Satin Treads (A)
 							},
 						}),	
 					}),
@@ -195,6 +267,15 @@ _.PVP =
 								i(135873),	-- Vindictive Combatant's Leather Tunic (A)
 								i(135880),	-- Vindictive Combatant's Leather Wristguards (A)
 								i(136868),	-- Vindictive Combatant's Shadowcape (A)
+								i(142848),	-- Fearless Combatant's Leather Belt (A)
+								i(142844),	-- Fearless Combatant's Leather Gloves (A)
+								i(142845),	-- Fearless Combatant's Leather Helm (A)
+								i(142846),	-- Fearless Combatant's Leather Legguards (A)
+								i(142843),	-- Fearless Combatant's Leather Slippers (A)
+								i(142847),	-- Fearless Combatant's Leather Spaulders (A)
+								i(142842),	-- Fearless Combatant's Leather Tunic (A)
+								i(142849),	-- Fearless Combatant's Leather Wristguards (A)
+								i(143293),	-- Fearless Combatant's Shadowcape (A)
 							},
 						}),
 					}),
@@ -216,6 +297,15 @@ _.PVP =
 								i(135885),	-- Vindictive Combatant's Ringmail Kilt (A)
 								i(135886),	-- Vindictive Combatant's Ringmail Spaulders (A)
 								i(136869),	-- Vindictive Combatant's Totemic Cloak (A)
+								i(142857),	-- Fearless Combatant's Ringmail Armband (A)
+								i(142850),	-- Fearless Combatant's Ringmail Armor (A)
+								i(142851),	-- Fearless Combatant's Ringmail Boots (A)
+								i(142856),	-- Fearless Combatant's Ringmail Clasp (A)
+								i(142852),	-- Fearless Combatant's Ringmail Gauntlets (A)
+								i(142853),	-- Fearless Combatant's Ringmail Helm (A)
+								i(142854),	-- Fearless Combatant's Ringmail Kilt (A)
+								i(142855),	-- Fearless Combatant's Ringmail Spaulders (A)
+								i(143294),	-- Fearless Combatant's Totemic Cloak (A)
 							},
 						}),
 					}),
@@ -237,6 +327,15 @@ _.PVP =
 								i(135889),	-- Vindictive Combatant's Felweave Treads (A)
 								i(135892),	-- Vindictive Combatant's Felweave Trousers (A)
 								i(135893),	-- Vindictive Combatant's Felweave Tunic (A)
+								i(142863),	-- Fearless Combatant's Felweave Amice (A)
+								i(142865),	-- Fearless Combatant's Felweave Bracers (A)
+								i(143306),	-- Fearless Combatant's Felweave Cloak (A)
+								i(142864),	-- Fearless Combatant's Felweave Cord (A)
+								i(142860),	-- Fearless Combatant's Felweave Cowl (A)
+								i(142859),	-- Fearless Combatant's Felweave Handguards (A)
+								i(142862),	-- Fearless Combatant's Felweave Raiment (A)
+								i(142858),	-- Fearless Combatant's Felweave Treads (A)
+								i(142861),	-- Fearless Combatant's Felweave Trousers (A)
 							},
 						}),
 					}),
@@ -258,6 +357,15 @@ _.PVP =
 								i(135902),	-- Vindictive Combatant's Plate Shoulders (A)
 								i(135898),	-- Vindictive Combatant's Plate Warboots (A)
 								i(135904),	-- Vindictive Combatant's Plate Wristplates (A)
+								i(143312),	-- Fearless Combatant's Cloak of Battle (A)
+								i(142866),	-- Fearless Combatant's Plate Chestpiece (A)
+								i(142868),	-- Fearless Combatant's Plate Gauntlets (A)
+								i(142872),	-- Fearless Combatant's Plate Girdle (A)
+								i(142869),	-- Fearless Combatant's Plate Helm (A)
+								i(142870),	-- Fearless Combatant's Plate Legguards (A)
+								i(142871),	-- Fearless Combatant's Plate Shoulders (A)
+								i(142867),	-- Fearless Combatant's Plate Warboots (A)
+								i(142873),	-- Fearless Combatant's Plate Wristplates (A)
 							},
 						}),
 					}),
@@ -2051,136 +2159,364 @@ _.PVP =
 			n(-9914, {	-- Alliance
 				n(-660, {	-- Aspirant / Combatant PvP Gear
 					cl(DEATHKNIGHT, {
-						i(145026),	-- Cruel Combatant's Dreadcloak (A)
-						i(145050),	-- Cruel Combatant's Dreadplate Chestpiece (A)
-						i(145054),	-- Cruel Combatant's Dreadplate Gauntlets (A)
-						i(145062),	-- Cruel Combatant's Dreadplate Girdle (A)
-						i(145056),	-- Cruel Combatant's Dreadplate Helm (A)
-						i(145058),	-- Cruel Combatant's Dreadplate Legguards (A)
-						i(145052),	-- Cruel Combatant's Dreadplate Sabatons (A)
-						i(145060),	-- Cruel Combatant's Dreadplate Shoulders (A)
-						i(145064),	-- Cruel Combatant's Dreadplate Wristplates (A)
+						i(147677, {	-- Ensemble: Cruel Combatant's Dreadplate Armor (A)
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -660, 6 },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -660, 6 },	-- Season 4
+							},
+							["g"] = {
+								i(145026),	-- Cruel Combatant's Dreadcloak (A)
+								i(145050),	-- Cruel Combatant's Dreadplate Chestpiece (A)
+								i(145054),	-- Cruel Combatant's Dreadplate Gauntlets (A)
+								i(145062),	-- Cruel Combatant's Dreadplate Girdle (A)
+								i(145056),	-- Cruel Combatant's Dreadplate Helm (A)
+								i(145058),	-- Cruel Combatant's Dreadplate Legguards (A)
+								i(145052),	-- Cruel Combatant's Dreadplate Sabatons (A)
+								i(145060),	-- Cruel Combatant's Dreadplate Shoulders (A)
+								i(145064),	-- Cruel Combatant's Dreadplate Wristplates (A)
+								i(145868),	-- Ferocious Combatant's Dreadcloak (A)
+								i(145892),	-- Ferocious Combatant's Dreadplate Chestpiece (A)
+								i(145896),	-- Ferocious Combatant's Dreadplate Gauntlets (A)
+								i(145904),	-- Ferocious Combatant's Dreadplate Girdle (A)
+								i(145898),	-- Ferocious Combatant's Dreadplate Helm (A)
+								i(145900),	-- Ferocious Combatant's Dreadplate Legguards (A)
+								i(145894),	-- Ferocious Combatant's Dreadplate Sabatons (A)
+								i(145902),	-- Ferocious Combatant's Dreadplate Shoulders (A)
+								i(145906),	-- Ferocious Combatant's Dreadplate Wristplates (A)
+							},
+						}),
 					}),
 					cl(DEMONHUNTER, {
-						i(145028),	-- Cruel Combatant's Demonthread Cloak (A)
-						i(145078),	-- Cruel Combatant's Felskin Belt (A)
-						i(145068),	-- Cruel Combatant's Felskin Boots (A)
-						i(145070),	-- Cruel Combatant's Felskin Gloves (A)
-						i(145072),	-- Cruel Combatant's Felskin Helm (A)
-						i(145074),	-- Cruel Combatant's Felskin Legguards (A)
-						i(145076),	-- Cruel Combatant's Felskin Spaulders (A)
-						i(145066),	-- Cruel Combatant's Felskin Tunic (A)
-						i(145080),	-- Cruel Combatant's Felskin Wristguards (A)
+						i(147680, {	-- Ensemble: Cruel Combatant's Felskin Armor (A)
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -660, 12 },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -660, 12 },	-- Season 4
+							},
+							["g"] = {
+								i(145028),	-- Cruel Combatant's Demonthread Cloak (A)
+								i(145078),	-- Cruel Combatant's Felskin Belt (A)
+								i(145068),	-- Cruel Combatant's Felskin Boots (A)
+								i(145070),	-- Cruel Combatant's Felskin Gloves (A)
+								i(145072),	-- Cruel Combatant's Felskin Helm (A)
+								i(145074),	-- Cruel Combatant's Felskin Legguards (A)
+								i(145076),	-- Cruel Combatant's Felskin Spaulders (A)
+								i(145066),	-- Cruel Combatant's Felskin Tunic (A)
+								i(145080),	-- Cruel Combatant's Felskin Wristguards (A)
+								i(145870),	-- Ferocious Combatant's Demonthread Cloak (A)
+								i(145920),	-- Ferocious Combatant's Felskin Belt (A)
+								i(145910),	-- Ferocious Combatant's Felskin Boots (A)
+								i(145912),	-- Ferocious Combatant's Felskin Gloves (A)
+								i(145914),	-- Ferocious Combatant's Felskin Helm (A)
+								i(145916),	-- Ferocious Combatant's Felskin Legguards (A)
+								i(145918),	-- Ferocious Combatant's Felskin Spaulders (A)
+								i(145908),	-- Ferocious Combatant's Felskin Tunic (A)
+								i(145922),	-- Ferocious Combatant's Felskin Wristguards (A)
+							},
+						}),
 					}),
 					cl(DRUID, {
-						i(145094),	-- Cruel Combatant's Dragonhide Belt (A)
-						i(145030),	-- Cruel Combatant's Dragonhide Cloak (A)
-						i(145086),	-- Cruel Combatant's Dragonhide Gloves (A)
-						i(145088),	-- Cruel Combatant's Dragonhide Helm (A)
-						i(145090),	-- Cruel Combatant's Dragonhide Legguards (A)
-						i(145084),	-- Cruel Combatant's Dragonhide Moccasins (A)
-						i(145092),	-- Cruel Combatant's Dragonhide Spaulders (A)
-						i(145082),	-- Cruel Combatant's Dragonhide Tunic (A)
-						i(145096),	-- Cruel Combatant's Dragonhide Wristguards (A)
+						i(147675, {	-- Ensemble: Cruel Combatant's Dragonhide Armor (A)
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -660, 11 },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -660, 11 },	-- Season 4
+							},
+							["g"] = {
+								i(145094),	-- Cruel Combatant's Dragonhide Belt (A)
+								i(145030),	-- Cruel Combatant's Dragonhide Cloak (A)
+								i(145086),	-- Cruel Combatant's Dragonhide Gloves (A)
+								i(145088),	-- Cruel Combatant's Dragonhide Helm (A)
+								i(145090),	-- Cruel Combatant's Dragonhide Legguards (A)
+								i(145084),	-- Cruel Combatant's Dragonhide Moccasins (A)
+								i(145092),	-- Cruel Combatant's Dragonhide Spaulders (A)
+								i(145082),	-- Cruel Combatant's Dragonhide Tunic (A)
+								i(145096),	-- Cruel Combatant's Dragonhide Wristguards (A)
+								i(145936),	-- Ferocious Combatant's Dragonhide Belt (A)
+								i(145872),	-- Ferocious Combatant's Dragonhide Cloak (A)
+								i(145928),	-- Ferocious Combatant's Dragonhide Gloves (A)
+								i(145930),	-- Ferocious Combatant's Dragonhide Helm (A)
+								i(145932),	-- Ferocious Combatant's Dragonhide Legguards (A)
+								i(145926),	-- Ferocious Combatant's Dragonhide Moccasins (A)
+								i(145934),	-- Ferocious Combatant's Dragonhide Spaulders (A)
+								i(145924),	-- Ferocious Combatant's Dragonhide Tunic (A)
+								i(145938),	-- Ferocious Combatant's Dragonhide Wristguards (A)
+							},
+						}),
 					}),
 					cl(HUNTER, {
-						i(145112),	-- Cruel Combatant's Chain Armband (A)
-						i(145098),	-- Cruel Combatant's Chain Armor (A)
-						i(145110),	-- Cruel Combatant's Chain Clasp (A)
-						i(145102),	-- Cruel Combatant's Chain Gauntlets (A)
-						i(145104),	-- Cruel Combatant's Chain Helm (A)
-						i(145106),	-- Cruel Combatant's Chain Leggings (A)
-						i(145108),	-- Cruel Combatant's Chain Spaulders (A)
-						i(145100),	-- Cruel Combatant's Chain Treads (A)
-						i(145032),	-- Cruel Combatant's Drape of the Tracker (A)
+						i(147689, {	-- Ensemble: Cruel Combatant's Chain Armor (A)
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -660, 3 },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -660, 3 },	-- Season 4
+							},
+							["g"] = {
+								i(145112),	-- Cruel Combatant's Chain Armband (A)
+								i(145098),	-- Cruel Combatant's Chain Armor (A)
+								i(145110),	-- Cruel Combatant's Chain Clasp (A)
+								i(145102),	-- Cruel Combatant's Chain Gauntlets (A)
+								i(145104),	-- Cruel Combatant's Chain Helm (A)
+								i(145106),	-- Cruel Combatant's Chain Leggings (A)
+								i(145108),	-- Cruel Combatant's Chain Spaulders (A)
+								i(145100),	-- Cruel Combatant's Chain Treads (A)
+								i(145032),	-- Cruel Combatant's Drape of the Tracker
+								i(145954),	-- Ferocious Combatant's Chain Armband (A)
+								i(145940),	-- Ferocious Combatant's Chain Armor (A)
+								i(145952),	-- Ferocious Combatant's Chain Clasp (A)
+								i(145944),	-- Ferocious Combatant's Chain Gauntlets (A)
+								i(145946),	-- Ferocious Combatant's Chain Helm (A)
+								i(145948),	-- Ferocious Combatant's Chain Leggings (A)
+								i(145950),	-- Ferocious Combatant's Chain Spaulders (A)
+								i(145942),	-- Ferocious Combatant's Chain Treads (A)
+								i(145874),	-- Ferocious Combatant's Drape of the Tracker (A)
+							},
+						}),
 					}),
 					cl(MAGE, {
-						i(145124),	-- Cruel Combatant's Silk Amice (A)
-						i(145128),	-- Cruel Combatant's Silk Bracers (A)
-						i(145126),	-- Cruel Combatant's Silk Cord (A)
-						i(145118),	-- Cruel Combatant's Silk Cowl (A)
-						i(145116),	-- Cruel Combatant's Silk Handguards (A)
-						i(145122),	-- Cruel Combatant's Silk Robe (A)
-						i(145114),	-- Cruel Combatant's Silk Treads (A)
-						i(145120),	-- Cruel Combatant's Silk Trousers (A)
-						i(145034),	-- Cruel Combatant's Silken Shawl (A)
+						i(147696, {	-- Ensemble: Cruel Combatant's Silk Armor (A)
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -660, 8 },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -660, 8 },	-- Season 4
+							},
+							["g"] = {
+								i(145124),	-- Cruel Combatant's Silk Amice (A)
+								i(145128),	-- Cruel Combatant's Silk Bracers (A)
+								i(145126),	-- Cruel Combatant's Silk Cord (A)
+								i(145118),	-- Cruel Combatant's Silk Cowl (A)
+								i(145116),	-- Cruel Combatant's Silk Handguards (A)
+								i(145122),	-- Cruel Combatant's Silk Robe (A)
+								i(145114),	-- Cruel Combatant's Silk Treads (A)
+								i(145120),	-- Cruel Combatant's Silk Trousers (A)
+								i(145034),	-- Cruel Combatant's Silken Shawl (A)
+								i(145966),	-- Ferocious Combatant's Silk Amice (A)
+								i(145970),	-- Ferocious Combatant's Silk Bracers (A)
+								i(145968),	-- Ferocious Combatant's Silk Cord (A)
+								i(145960),	-- Ferocious Combatant's Silk Cowl (A)
+								i(145958),	-- Ferocious Combatant's Silk Handguards (A)
+								i(145964),	-- Ferocious Combatant's Silk Robe (A)
+								i(145956),	-- Ferocious Combatant's Silk Treads (A)
+								i(145962),	-- Ferocious Combatant's Silk Trousers (A)
+								i(145876),	-- Ferocious Combatant's Silken Shawl (A)
+							},
+						}),
 					}),
 					cl(MONK, {
-						i(145142),	-- Cruel Combatant's Ironskin Belt (A)
-						i(145036),	-- Cruel Combatant's Ironskin Cloak (A)
-						i(145132),	-- Cruel Combatant's Ironskin Gloves (A)
-						i(145134),	-- Cruel Combatant's Ironskin Helm (A)
-						i(145136),	-- Cruel Combatant's Ironskin Legguards (A)
-						i(145130),	-- Cruel Combatant's Ironskin Slippers (A)
-						i(145138),	-- Cruel Combatant's Ironskin Spaulders (A)
-						i(145140),	-- Cruel Combatant's Ironskin Tunic (A)
-						i(145144),	-- Cruel Combatant's Ironskin Wristguards (A)
+						i(147684, {	-- Ensemble: Cruel Combatant's Ironskin Armor (A)
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -660, 10 },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -660, 10 },	-- Season 4
+							},
+							["g"] = {
+								i(145142),	-- Cruel Combatant's Ironskin Belt (A)
+								i(145036),	-- Cruel Combatant's Ironskin Cloak (A)
+								i(145132),	-- Cruel Combatant's Ironskin Gloves (A)
+								i(145134),	-- Cruel Combatant's Ironskin Helm (A)
+								i(145136),	-- Cruel Combatant's Ironskin Legguards (A)
+								i(145130),	-- Cruel Combatant's Ironskin Slippers (A)
+								i(145138),	-- Cruel Combatant's Ironskin Spaulders (A)
+								i(145140),	-- Cruel Combatant's Ironskin Tunic (A)
+								i(145144),	-- Cruel Combatant's Ironskin Wristguards (A)
+								i(145984),	-- Ferocious Combatant's Ironskin Belt (A)
+								i(145878),	-- Ferocious Combatant's Ironskin Cloak (A)
+								i(145974),	-- Ferocious Combatant's Ironskin Gloves (A)
+								i(145976),	-- Ferocious Combatant's Ironskin Helm (A)
+								i(145978),	-- Ferocious Combatant's Ironskin Legguards (A)
+								i(145972),	-- Ferocious Combatant's Ironskin Slippers (A)
+								i(145980),	-- Ferocious Combatant's Ironskin Spaulders (A)
+								i(145982),	-- Ferocious Combatant's Ironskin Tunic (A)
+								i(145986),	-- Ferocious Combatant's Ironskin Wristguards (A)
+							},
+						}),
 					}),
 					cl(PALADIN, {
-						i(145038),	-- Cruel Combatant's Greatcloak of Faith (A)
-						i(145152),	-- Cruel Combatant's Scaled Chestpiece (A)
-						i(145156),	-- Cruel Combatant's Scaled Gauntlets (A)
-						i(145164),	-- Cruel Combatant's Scaled Girdle (A)
-						i(145158),	-- Cruel Combatant's Scaled Helm (A)
-						i(145160),	-- Cruel Combatant's Scaled Legguards (A)
-						i(145154),	-- Cruel Combatant's Scaled Sabatons (A)
-						i(145162),	-- Cruel Combatant's Scaled Shoulders (A)
-						i(145166),	-- Cruel Combatant's Scaled Wristplates (A)
+						i(147693, {	-- Ensemble: Cruel Combatant's Scaled Armor (A)
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -660, 2 },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -660, 2 },	-- Season 4
+							},
+							["g"] = {
+								i(145038),	-- Cruel Combatant's Greatcloak of Faith (A)
+								i(145152),	-- Cruel Combatant's Scaled Chestpiece (A)
+								i(145156),	-- Cruel Combatant's Scaled Gauntlets (A)
+								i(145164),	-- Cruel Combatant's Scaled Girdle (A)
+								i(145158),	-- Cruel Combatant's Scaled Helm (A)
+								i(145160),	-- Cruel Combatant's Scaled Legguards (A)
+								i(145154),	-- Cruel Combatant's Scaled Sabatons (A)
+								i(145162),	-- Cruel Combatant's Scaled Shoulders (A)
+								i(145166),	-- Cruel Combatant's Scaled Wristplates (A)
+								i(145880),	-- Ferocious Combatant's Greatcloak of Faith (A)
+								i(145994),	-- Ferocious Combatant's Scaled Chestpiece (A)
+								i(145998),	-- Ferocious Combatant's Scaled Gauntlets (A)
+								i(146006),	-- Ferocious Combatant's Scaled Girdle (A)
+								i(146000),	-- Ferocious Combatant's Scaled Helm (A)
+								i(146002),	-- Ferocious Combatant's Scaled Legguards (A)
+								i(145996),	-- Ferocious Combatant's Scaled Sabatons (A)
+								i(146004),	-- Ferocious Combatant's Scaled Shoulders (A)
+								i(146008),	-- Ferocious Combatant's Scaled Wristplates (A)
+							},
+						}),
 					}),
 					cl(PRIEST, {
-						i(145040),	-- Cruel Combatant's Drape of Piety (A)
-						i(145182),	-- Cruel Combatant's Satin Bracers (A)
-						i(145180),	-- Cruel Combatant's Satin Cord (A)
-						i(145170),	-- Cruel Combatant's Satin Gloves (A)
-						i(145172),	-- Cruel Combatant's Satin Hood (A)
-						i(145174),	-- Cruel Combatant's Satin Leggings (A)
-						i(145178),	-- Cruel Combatant's Satin Mantle (A)
-						i(145176),	-- Cruel Combatant's Satin Robe (A)
-						i(145168),	-- Cruel Combatant's Satin Treads (A)
+						i(147688, {	-- Ensemble: Cruel Combatant's Satin Armor (A)
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -660, 5 },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -660, 5 },	-- Season 4
+							},
+							["g"] = {
+								i(145040),	-- Cruel Combatant's Drape of Piety (A)
+								i(145182),	-- Cruel Combatant's Satin Bracers (A)
+								i(145180),	-- Cruel Combatant's Satin Cord (A)
+								i(145170),	-- Cruel Combatant's Satin Gloves (A)
+								i(145172),	-- Cruel Combatant's Satin Hood (A)
+								i(145174),	-- Cruel Combatant's Satin Leggings (A)
+								i(145178),	-- Cruel Combatant's Satin Mantle (A)
+								i(145176),	-- Cruel Combatant's Satin Robe (A)
+								i(145168),	-- Cruel Combatant's Satin Treads (A)
+								i(145882),	-- Ferocious Combatant's Drape of Piety (A)
+								i(146024),	-- Ferocious Combatant's Satin Bracers (A)
+								i(146022),	-- Ferocious Combatant's Satin Cord (A)
+								i(146012),	-- Ferocious Combatant's Satin Gloves (A)
+								i(146014),	-- Ferocious Combatant's Satin Hood (A)
+								i(146016),	-- Ferocious Combatant's Satin Leggings (A)
+								i(146020),	-- Ferocious Combatant's Satin Mantle (A)
+								i(146018),	-- Ferocious Combatant's Satin Robe (A)
+								i(146010),	-- Ferocious Combatant's Satin Treads (A)
+							},
+						}),
 					}),
 					cl(ROGUE, {
-						i(145202),	-- Cruel Combatant's Leather Belt (A)
-						i(145194),	-- Cruel Combatant's Leather Gloves (A)
-						i(145196),	-- Cruel Combatant's Leather Helm (A)
-						i(145198),	-- Cruel Combatant's Leather Legguards (A)
-						i(145192),	-- Cruel Combatant's Leather Slippers (A)
-						i(145200),	-- Cruel Combatant's Leather Spaulders (A)
-						i(145190),	-- Cruel Combatant's Leather Tunic (A)
-						i(145204),	-- Cruel Combatant's Leather Wristguards (A)
-						i(145042),	-- Cruel Combatant's Shadowcape (A)
+						i(147685, {	-- Ensemble: Cruel Combatant's Leather Armor (A)
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -660, 4 },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -660, 4 },	-- Season 4
+							},
+							["g"] = {
+								i(145202),	-- Cruel Combatant's Leather Belt (A)
+								i(145194),	-- Cruel Combatant's Leather Gloves (A)
+								i(145196),	-- Cruel Combatant's Leather Helm (A)
+								i(145198),	-- Cruel Combatant's Leather Legguards (A)
+								i(145192),	-- Cruel Combatant's Leather Slippers (A)
+								i(145200),	-- Cruel Combatant's Leather Spaulders (A)
+								i(145190),	-- Cruel Combatant's Leather Tunic (A)
+								i(145204),	-- Cruel Combatant's Leather Wristguards (A)
+								i(145042),	-- Cruel Combatant's Shadowcape (A)
+								i(146044),	-- Ferocious Combatant's Leather Belt (A)
+								i(146036),	-- Ferocious Combatant's Leather Gloves (A)
+								i(146038),	-- Ferocious Combatant's Leather Helm (A)
+								i(146040),	-- Ferocious Combatant's Leather Legguards (A)
+								i(146034),	-- Ferocious Combatant's Leather Slippers (A)
+								i(146042),	-- Ferocious Combatant's Leather Spaulders (A)
+								i(146032),	-- Ferocious Combatant's Leather Tunic (A)
+								i(146046),	-- Ferocious Combatant's Leather Wristguards (A)
+								i(145884),	-- Ferocious Combatant's Shadowcape (A)
+							},
+						}),
 					}),
 					cl(SHAMAN, {
-						i(145220),	-- Cruel Combatant's Ringmail Armband (A)
-						i(145206),	-- Cruel Combatant's Ringmail Armor (A)
-						i(145208),	-- Cruel Combatant's Ringmail Boots (A)
-						i(145218),	-- Cruel Combatant's Ringmail Clasp (A)
-						i(145210),	-- Cruel Combatant's Ringmail Gauntlets (A)
-						i(145212),	-- Cruel Combatant's Ringmail Helm (A)
-						i(145214),	-- Cruel Combatant's Ringmail Kilt (A)
-						i(145216),	-- Cruel Combatant's Ringmail Spaulders (A)
-						i(145044),	-- Cruel Combatant's Totemic Cloak (A)
+						i(147674, {	-- Ensemble: Cruel Combatant's Ringmail Armor (A)
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -660, 7 },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -660, 7 },	-- Season 4
+							},
+							["g"] = {
+								i(145220),	-- Cruel Combatant's Ringmail Armband (A)
+								i(145206),	-- Cruel Combatant's Ringmail Armor (A)
+								i(145208),	-- Cruel Combatant's Ringmail Boots (A)
+								i(145218),	-- Cruel Combatant's Ringmail Clasp (A)
+								i(145210),	-- Cruel Combatant's Ringmail Gauntlets (A)
+								i(145212),	-- Cruel Combatant's Ringmail Helm (A)
+								i(145214),	-- Cruel Combatant's Ringmail Kilt (A)
+								i(145216),	-- Cruel Combatant's Ringmail Spaulders (A)
+								i(145044),	-- Cruel Combatant's Totemic Cloak (A)
+								i(146062),	-- Ferocious Combatant's Ringmail Armband (A)
+								i(146048),	-- Ferocious Combatant's Ringmail Armor (A)
+								i(146050),	-- Ferocious Combatant's Ringmail Boots (A)
+								i(146060),	-- Ferocious Combatant's Ringmail Clasp (A)
+								i(146052),	-- Ferocious Combatant's Ringmail Gauntlets (A)
+								i(146054),	-- Ferocious Combatant's Ringmail Helm (A)
+								i(146056),	-- Ferocious Combatant's Ringmail Kilt (A)
+								i(146058),	-- Ferocious Combatant's Ringmail Spaulders (A)
+								i(145886),	-- Ferocious Combatant's Totemic Cloak (A)
+							},
+						}),
 					}),
 					cl(WARLOCK, {
-						i(145250),	-- Cruel Combatant's Felweave Amice (A)
-						i(145254),	-- Cruel Combatant's Felweave Bracers (A)
-						i(145046),	-- Cruel Combatant's Felweave Cloak (A)
-						i(145252),	-- Cruel Combatant's Felweave Cord
-						i(145244),	-- Cruel Combatant's Felweave Cowl (A)
-						i(145242),	-- Cruel Combatant's Felweave Handguards (A)
-						i(145248),	-- Cruel Combatant's Felweave Raiment (A)
-						i(145240),	-- Cruel Combatant's Felweave Treads (A)
-						i(145246),	-- Cruel Combatant's Felweave Trousers (A)
+						i(147682, {	-- Ensemble: Cruel Combatant's Felweave Armor (A)
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -660, 9 },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -660, 9 },	-- Season 4
+							},
+							["g"] = {
+								i(145250),	-- Cruel Combatant's Felweave Amice (A)
+								i(145254),	-- Cruel Combatant's Felweave Bracers (A)
+								i(145046),	-- Cruel Combatant's Felweave Cloak (A)
+								i(145252),	-- Cruel Combatant's Felweave Cord
+								i(145244),	-- Cruel Combatant's Felweave Cowl (A)
+								i(145242),	-- Cruel Combatant's Felweave Handguards (A)
+								i(145248),	-- Cruel Combatant's Felweave Raiment (A)
+								i(145240),	-- Cruel Combatant's Felweave Treads (A)
+								i(145246),	-- Cruel Combatant's Felweave Trousers (A)
+								i(146092),	-- Ferocious Combatant's Felweave Amice (A)
+								i(146096),	-- Ferocious Combatant's Felweave Bracers (A)
+								i(145888),	-- Ferocious Combatant's Felweave Cloak (A)
+								i(146094),	-- Ferocious Combatant's Felweave Cord (A)
+								i(146086),	-- Ferocious Combatant's Felweave Cowl (A)
+								i(146084),	-- Ferocious Combatant's Felweave Handguards (A)
+								i(146090),	-- Ferocious Combatant's Felweave Raiment (A)
+								i(146082),	-- Ferocious Combatant's Felweave Treads (A)
+								i(146088),	-- Ferocious Combatant's Felweave Trousers (A)
+							},
+						}),
 					}),
 					cl(WARRIOR, {
-						i(145048),	-- Cruel Combatant's Cloak of Battle (A)
-						i(145256),	-- Cruel Combatant's Plate Chestpiece (A)
-						i(145260),	-- Cruel Combatant's Plate Gauntlets (A)
-						i(145268),	-- Cruel Combatant's Plate Girdle (A)
-						i(145262),	-- Cruel Combatant's Plate Helm (A)
-						i(145264),	-- Cruel Combatant's Plate Legguards (A)
-						i(145266),	-- Cruel Combatant's Plate Shoulders (A)
-						i(145258),	-- Cruel Combatant's Plate Warboots (A)
-						i(145270),	-- Cruel Combatant's Plate Wristplates (A)
+						i(147692, {	-- Ensemble: Cruel Combatant's Plate Armor (A)
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -684, -9914, -660, 1 },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", -9982, -685, -9914, -660, 1 },	-- Season 4
+							},
+							["g"] = {
+								i(145048),	-- Cruel Combatant's Cloak of Battle (A)
+								i(145256),	-- Cruel Combatant's Plate Chestpiece (A)
+								i(145260),	-- Cruel Combatant's Plate Gauntlets (A)
+								i(145268),	-- Cruel Combatant's Plate Girdle (A)
+								i(145262),	-- Cruel Combatant's Plate Helm (A)
+								i(145264),	-- Cruel Combatant's Plate Legguards (A)
+								i(145266),	-- Cruel Combatant's Plate Shoulders (A)
+								i(145258),	-- Cruel Combatant's Plate Warboots (A)
+								i(145270),	-- Cruel Combatant's Plate Wristplates (A)
+								i(145890),	-- Ferocious Combatant's Cloak of Battle (A)
+								i(146098),	-- Ferocious Combatant's Plate Chestpiece (A)
+								i(146102),	-- Ferocious Combatant's Plate Gauntlets (A)
+								i(146110),	-- Ferocious Combatant's Plate Girdle (A)
+								i(146104),	-- Ferocious Combatant's Plate Helm (A)
+								i(146106),	-- Ferocious Combatant's Plate Legguards (A)
+								i(146108),	-- Ferocious Combatant's Plate Shoulders (A)
+								i(146100),	-- Ferocious Combatant's Plate Warboots (A)
+								i(146112),	-- Ferocious Combatant's Plate Wristplates (A)
+							},
+						}),
 					}),
 					n(-384,	{	-- Neck
 						un(REMOVED_FROM_GAME, i(145146)),	-- Cruel Combatant Necklace (A)
@@ -4115,136 +4451,484 @@ _.PVP =
 			n(-9914, {	-- Alliance
 				n(-660, {	-- Aspirant / Combatant PvP Gear
 					cl(DEATHKNIGHT, {
-						i(149505),	-- Fierce Combatant's Dreadcloak (A)
-						i(149529),	-- Fierce Combatant's Dreadplate Chestpiece (A)
-						i(149533),	-- Fierce Combatant's Dreadplate Gauntlets (A)
-						i(149541),	-- Fierce Combatant's Dreadplate Girdle (A)
-						i(149535),	-- Fierce Combatant's Dreadplate Helm (A)
-						i(149537),	-- Fierce Combatant's Dreadplate Legguards (A)
-						i(149531),	-- Fierce Combatant's Dreadplate Sabatons (A)
-						i(149539),	-- Fierce Combatant's Dreadplate Shoulders (A)
-						i(149543),	-- Fierce Combatant's Dreadplate Wristplates (A)
+						i(150252, {	-- Ensemble: Fierce Combatant's Dreadplate Armor (A)
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -660, 6 },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -660, 6 },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -660, 6 },	-- Season 7
+							},
+							["g"] = {
+								i(149505),	-- Fierce Combatant's Dreadcloak (A)
+								i(149529),	-- Fierce Combatant's Dreadplate Chestpiece (A)
+								i(149533),	-- Fierce Combatant's Dreadplate Gauntlets (A)
+								i(149541),	-- Fierce Combatant's Dreadplate Girdle (A)
+								i(149535),	-- Fierce Combatant's Dreadplate Helm (A)
+								i(149537),	-- Fierce Combatant's Dreadplate Legguards (A)
+								i(149531),	-- Fierce Combatant's Dreadplate Sabatons (A)
+								i(149539),	-- Fierce Combatant's Dreadplate Shoulders (A)
+								i(149543),	-- Fierce Combatant's Dreadplate Wristplates (A)
+								i(149756),	-- Dominant Combatant's Dreadcloak (A)
+								i(149780),	-- Dominant Combatant's Dreadplate Chestpiece (A)
+								i(149784),	-- Dominant Combatant's Dreadplate Gauntlets (A)
+								i(149792),	-- Dominant Combatant's Dreadplate Girdle (A)
+								i(149786),	-- Dominant Combatant's Dreadplate Helm (A)
+								i(149788),	-- Dominant Combatant's Dreadplate Legguards (A)
+								i(149782),	-- Dominant Combatant's Dreadplate Sabatons (A)
+								i(149790),	-- Dominant Combatant's Dreadplate Shoulders (A)
+								i(149794),	-- Dominant Combatant's Dreadplate Wristplates (A)
+								i(150002),	-- Demonic Combatant's Dreadcloak (A)
+								i(150026),	-- Demonic Combatant's Dreadplate Chestpiece (A)
+								i(150030),	-- Demonic Combatant's Dreadplate Gauntlets (A)
+								i(150038),	-- Demonic Combatant's Dreadplate Girdle (A)
+								i(150032),	-- Demonic Combatant's Dreadplate Helm (A)
+								i(150034),	-- Demonic Combatant's Dreadplate Legguards (A)
+								i(150028),	-- Demonic Combatant's Dreadplate Sabatons (A)
+								i(150036),	-- Demonic Combatant's Dreadplate Shoulders (A)
+								i(150040),	-- Demonic Combatant's Dreadplate Wristplates (A)
+							},
+						}),
 					}),
 					cl(DEMONHUNTER, {
-						i(149507),	-- Fierce Combatant's Demonthread Cloak (A)
-						i(149557),	-- Fierce Combatant's Felskin Belt (A)
-						i(149547),	-- Fierce Combatant's Felskin Boots (A)
-						i(149549),	-- Fierce Combatant's Felskin Gloves (A)
-						i(149551),	-- Fierce Combatant's Felskin Helm (A)
-						i(149553),	-- Fierce Combatant's Felskin Legguards (A)
-						i(149555),	-- Fierce Combatant's Felskin Spaulders (A)
-						i(149545),	-- Fierce Combatant's Felskin Tunic (A)
-						i(149559),	-- Fierce Combatant's Felskin Wristguards (A)
+						i(150255, {	-- Ensemble: Fierce Combatant's Felskin Armor (A)
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -660, 12 },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -660, 12 },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -660, 12 },	-- Season 7
+							},
+							["g"] = {
+								i(149507),	-- Fierce Combatant's Demonthread Cloak (A)
+								i(149557),	-- Fierce Combatant's Felskin Belt (A)
+								i(149547),	-- Fierce Combatant's Felskin Boots (A)
+								i(149549),	-- Fierce Combatant's Felskin Gloves (A)
+								i(149551),	-- Fierce Combatant's Felskin Helm (A)
+								i(149553),	-- Fierce Combatant's Felskin Legguards (A)
+								i(149555),	-- Fierce Combatant's Felskin Spaulders (A)
+								i(149545),	-- Fierce Combatant's Felskin Tunic (A)
+								i(149559),	-- Fierce Combatant's Felskin Wristguards (A)
+								i(149758),	-- Dominant Combatant's Demonthread Cloak (A)
+								i(149808),	-- Dominant Combatant's Felskin Belt (A)
+								i(149798),	-- Dominant Combatant's Felskin Boots (A)
+								i(149800),	-- Dominant Combatant's Felskin Gloves (A)
+								i(149802),	-- Dominant Combatant's Felskin Helm (A)
+								i(149804),	-- Dominant Combatant's Felskin Legguards (A)
+								i(149806),	-- Dominant Combatant's Felskin Spaulders (A)
+								i(149796),	-- Dominant Combatant's Felskin Tunic (A)
+								i(149810),	-- Dominant Combatant's Felskin Wristguards (A)
+								i(150004),	-- Demonic Combatant's Demonthread Cloak (A)
+								i(150054),	-- Demonic Combatant's Felskin Belt (A)
+								i(150044),	-- Demonic Combatant's Felskin Boots (A)
+								i(150046),	-- Demonic Combatant's Felskin Gloves (A)
+								i(150048),	-- Demonic Combatant's Felskin Helm (A)
+								i(150050),	-- Demonic Combatant's Felskin Legguards (A)
+								i(150052),	-- Demonic Combatant's Felskin Spaulders (A)
+								i(150042),	-- Demonic Combatant's Felskin Tunic (A)
+								i(150056),	-- Demonic Combatant's Felskin Wristguards (A)
+							},
+						}),
 					}),
 					cl(DRUID, {
-						i(149573),	-- Fierce Combatant's Dragonhide Belt (A)
-						i(149509),	-- Fierce Combatant's Dragonhide Cloak (A)
-						i(149565),	-- Fierce Combatant's Dragonhide Gloves (A)
-						i(149567),	-- Fierce Combatant's Dragonhide Helm (A)
-						i(149569),	-- Fierce Combatant's Dragonhide Legguards (A)
-						i(149563),	-- Fierce Combatant's Dragonhide Moccasins (A)
-						i(149571),	-- Fierce Combatant's Dragonhide Spaulders (A)
-						i(149561),	-- Fierce Combatant's Dragonhide Tunic (A)
-						i(149576),	-- Fierce Combatant's Dragonhide Wristguards (A)
+						i(150250, {	-- Ensemble: Fierce Combatant's Dragonhide Armor (A)
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -660, 11 },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -660, 11 },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -660, 11 },	-- Season 7
+							},
+							["g"] = {
+								i(149573),	-- Fierce Combatant's Dragonhide Belt (A)
+								i(149509),	-- Fierce Combatant's Dragonhide Cloak (A)
+								i(149565),	-- Fierce Combatant's Dragonhide Gloves (A)
+								i(149567),	-- Fierce Combatant's Dragonhide Helm (A)
+								i(149569),	-- Fierce Combatant's Dragonhide Legguards (A)
+								i(149563),	-- Fierce Combatant's Dragonhide Moccasins (A)
+								i(149571),	-- Fierce Combatant's Dragonhide Spaulders (A)
+								i(149561),	-- Fierce Combatant's Dragonhide Tunic (A)
+								i(149576),	-- Fierce Combatant's Dragonhide Wristguards (A)
+								i(149824),	-- Dominant Combatant's Dragonhide Belt (A)
+								i(149760),	-- Dominant Combatant's Dragonhide Cloak (A)
+								i(149816),	-- Dominant Combatant's Dragonhide Gloves (A)
+								i(149818),	-- Dominant Combatant's Dragonhide Helm (A)
+								i(149820),	-- Dominant Combatant's Dragonhide Legguards (A)
+								i(149814),	-- Dominant Combatant's Dragonhide Moccasins (A)
+								i(149822),	-- Dominant Combatant's Dragonhide Spaulders (A)
+								i(149812),	-- Dominant Combatant's Dragonhide Tunic (A)
+								i(149826),	-- Dominant Combatant's Dragonhide Wristguards (A)
+								i(150070),	-- Demonic Combatant's Dragonhide Belt (A)
+								i(150006),	-- Demonic Combatant's Dragonhide Cloak (A)
+								i(150062),	-- Demonic Combatant's Dragonhide Gloves (A)
+								i(150064),	-- Demonic Combatant's Dragonhide Helm (A)
+								i(150066),	-- Demonic Combatant's Dragonhide Legguards (A)
+								i(150060),	-- Demonic Combatant's Dragonhide Moccasins (A)
+								i(150068),	-- Demonic Combatant's Dragonhide Spaulders (A)
+								i(150058),	-- Demonic Combatant's Dragonhide Tunic (A)
+								i(150072),	-- Demonic Combatant's Dragonhide Wristguards (A)
+							},
+						}),
 					}),
 					cl(HUNTER, {
-						i(149592),	-- Fierce Combatant's Chain Armband (A)
-						i(149578),	-- Fierce Combatant's Chain Armor (A)
-						i(149590),	-- Fierce Combatant's Chain Clasp (A)
-						i(149582),	-- Fierce Combatant's Chain Gauntlets (A)
-						i(149584),	-- Fierce Combatant's Chain Helm (A)
-						i(149586),	-- Fierce Combatant's Chain Leggings (A)
-						i(149588),	-- Fierce Combatant's Chain Spaulders (A)
-						i(149580),	-- Fierce Combatant's Chain Treads (A)
-						i(149511),	-- Fierce Combatant's Drape of the Tracker (A)
+						i(150264, {	-- Ensemble: Fierce Combatant's Chain Armor (A)
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -660, 3 },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -660, 3 },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -660, 3 },	-- Season 7
+							},
+							["g"] = {
+								i(149592),	-- Fierce Combatant's Chain Armband (A)
+								i(149578),	-- Fierce Combatant's Chain Armor (A)
+								i(149590),	-- Fierce Combatant's Chain Clasp (A)
+								i(149582),	-- Fierce Combatant's Chain Gauntlets (A)
+								i(149584),	-- Fierce Combatant's Chain Helm (A)
+								i(149586),	-- Fierce Combatant's Chain Leggings (A)
+								i(149588),	-- Fierce Combatant's Chain Spaulders (A)
+								i(149580),	-- Fierce Combatant's Chain Treads (A)
+								i(149511),	-- Fierce Combatant's Drape of the Tracker (A)
+								i(149762),	-- Dominant Combatant's Drape of the Tracker (A)
+								i(149842),	-- Dominant Combatant's Chain Armband (A)
+								i(149828),	-- Dominant Combatant's Chain Armor (A)
+								i(149840),	-- Dominant Combatant's Chain Clasp (A)
+								i(149832),	-- Dominant Combatant's Chain Gauntlets (A)
+								i(149834),	-- Dominant Combatant's Chain Helm (A)
+								i(149836),	-- Dominant Combatant's Chain Leggings (A)
+								i(149838),	-- Dominant Combatant's Chain Spaulders (A)
+								i(149830),	-- Dominant Combatant's Chain Treads (A)
+								i(150088),	-- Demonic Combatant's Chain Armband (A)
+								i(150074),	-- Demonic Combatant's Chain Armor (A)
+								i(150086),	-- Demonic Combatant's Chain Clasp (A)
+								i(150078),	-- Demonic Combatant's Chain Gauntlets (A)
+								i(150080),	-- Demonic Combatant's Chain Helm (A)
+								i(150082),	-- Demonic Combatant's Chain Leggings (A)
+								i(150084),	-- Demonic Combatant's Chain Spaulders (A)
+								i(150076),	-- Demonic Combatant's Chain Treads (A)
+								i(150008),	-- Demonic Combatant's Drape of the Tracker (A)
+							},
+						}),
 					}),
 					cl(MAGE, {
-						i(149604),	-- Fierce Combatant's Silk Amice (A)
-						i(149608),	-- Fierce Combatant's Silk Bracers (A)
-						i(149606),	-- Fierce Combatant's Silk Cord (A)
-						i(149598),	-- Fierce Combatant's Silk Cowl (A)
-						i(149596),	-- Fierce Combatant's Silk Handguards (A)
-						i(149602),	-- Fierce Combatant's Silk Robe (A)
-						i(149594),	-- Fierce Combatant's Silk Treads (A)
-						i(149600),	-- Fierce Combatant's Silk Trousers (A)
-						i(149513),	-- Fierce Combatant's Silken Shawl (A)
+						i(150271, {	-- Ensemble: Fierce Combatant's Silk Armor (A)
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -660, 8 },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -660, 8 },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -660, 8 },	-- Season 7
+							},
+							["g"] = {
+								i(149604),	-- Fierce Combatant's Silk Amice (A)
+								i(149608),	-- Fierce Combatant's Silk Bracers (A)
+								i(149606),	-- Fierce Combatant's Silk Cord (A)
+								i(149598),	-- Fierce Combatant's Silk Cowl (A)
+								i(149596),	-- Fierce Combatant's Silk Handguards (A)
+								i(149602),	-- Fierce Combatant's Silk Robe (A)
+								i(149594),	-- Fierce Combatant's Silk Treads (A)
+								i(149600),	-- Fierce Combatant's Silk Trousers (A)
+								i(149513),	-- Fierce Combatant's Silken Shawl (A)
+								i(149854),	-- Dominant Combatant's Silk Amice (A)
+								i(149858),	-- Dominant Combatant's Silk Bracers (A)
+								i(149856),	-- Dominant Combatant's Silk Cord (A)
+								i(149848),	-- Dominant Combatant's Silk Cowl (A)
+								i(149846),	-- Dominant Combatant's Silk Handguards (A)
+								i(149852),	-- Dominant Combatant's Silk Robe (A)
+								i(149844),	-- Dominant Combatant's Silk Treads (A)
+								i(149850),	-- Dominant Combatant's Silk Trousers (A)
+								i(149764),	-- Dominant Combatant's Silken Shawl (A)
+								i(150100),	-- Demonic Combatant's Silk Amice (A)
+								i(150104),	-- Demonic Combatant's Silk Bracers (A)
+								i(150102),	-- Demonic Combatant's Silk Cord (A)
+								i(150094),	-- Demonic Combatant's Silk Cowl (A)
+								i(150092),	-- Demonic Combatant's Silk Handguards (A)
+								i(150098),	-- Demonic Combatant's Silk Robe (A)
+								i(150090),	-- Demonic Combatant's Silk Treads (A)
+								i(150096),	-- Demonic Combatant's Silk Trousers (A)
+								i(150010),	-- Demonic Combatant's Silken Shawl (A)
+							},
+						}),
 					}),
 					cl(MONK, {
-						i(149622),	-- Fierce Combatant's Ironskin Belt (A)
-						i(149515),	-- Fierce Combatant's Ironskin Cloak (A)
-						i(149612),	-- Fierce Combatant's Ironskin Gloves (A)
-						i(149614),	-- Fierce Combatant's Ironskin Helm (A)
-						i(149616),	-- Fierce Combatant's Ironskin Legguards (A)
-						i(149610),	-- Fierce Combatant's Ironskin Slippers (A)
-						i(149618),	-- Fierce Combatant's Ironskin Spaulders (A)
-						i(149620),	-- Fierce Combatant's Ironskin Tunic (A)
-						i(149624),	-- Fierce Combatant's Ironskin Wristguards (A)
+						i(150259, {	-- Ensemble: Fierce Combatant's Ironskin Armor (A)
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -660, 10 },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -660, 10 },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -660, 10 },	-- Season 7
+							},
+							["g"] = {
+								i(149622),	-- Fierce Combatant's Ironskin Belt (A)
+								i(149515),	-- Fierce Combatant's Ironskin Cloak (A)
+								i(149612),	-- Fierce Combatant's Ironskin Gloves (A)
+								i(149614),	-- Fierce Combatant's Ironskin Helm (A)
+								i(149616),	-- Fierce Combatant's Ironskin Legguards (A)
+								i(149610),	-- Fierce Combatant's Ironskin Slippers (A)
+								i(149618),	-- Fierce Combatant's Ironskin Spaulders (A)
+								i(149620),	-- Fierce Combatant's Ironskin Tunic (A)
+								i(149624),	-- Fierce Combatant's Ironskin Wristguards (A)
+								i(149872),	-- Dominant Combatant's Ironskin Belt (A)
+								i(149766),	-- Dominant Combatant's Ironskin Cloak (A)
+								i(149862),	-- Dominant Combatant's Ironskin Gloves (A)
+								i(149864),	-- Dominant Combatant's Ironskin Helm (A)
+								i(149866),	-- Dominant Combatant's Ironskin Legguards (A)
+								i(149860),	-- Dominant Combatant's Ironskin Slippers (A)
+								i(149868),	-- Dominant Combatant's Ironskin Spaulders (A)
+								i(149870),	-- Dominant Combatant's Ironskin Tunic (A)
+								i(149874),	-- Dominant Combatant's Ironskin Wristguards (A)
+								i(150118),	-- Demonic Combatant's Ironskin Belt (A)
+								i(150012),	-- Demonic Combatant's Ironskin Cloak (A)
+								i(150108),	-- Demonic Combatant's Ironskin Gloves (A)
+								i(150110),	-- Demonic Combatant's Ironskin Helm (A)
+								i(150112),	-- Demonic Combatant's Ironskin Legguards (A)
+								i(150106),	-- Demonic Combatant's Ironskin Slippers (A)
+								i(150114),	-- Demonic Combatant's Ironskin Spaulders (A)
+								i(150116),	-- Demonic Combatant's Ironskin Tunic (A)
+								i(150120),	-- Demonic Combatant's Ironskin Wristguards (A)
+							},
+						}),
 					}),
 					cl(PALADIN, {
-						i(149517),	-- Fierce Combatant's Greatcloak of Faith (A)
-						i(149632),	-- Fierce Combatant's Scaled Chestpiece (A)
-						i(149636),	-- Fierce Combatant's Scaled Gauntlets (A)
-						i(149644),	-- Fierce Combatant's Scaled Girdle (A)
-						i(149638),	-- Fierce Combatant's Scaled Helm (A)
-						i(149640),	-- Fierce Combatant's Scaled Legguards (A)
-						i(149634),	-- Fierce Combatant's Scaled Sabatons (A)
-						i(149642),	-- Fierce Combatant's Scaled Shoulders (A)
-						i(149646),	-- Fierce Combatant's Scaled Wristplates (A)
+						i(150268, {	-- Ensemble: Fierce Combatant's Scaled Armor (A)
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -660, 2 },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -660, 2 },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -660, 2 },	-- Season 7
+							},
+							["g"] = {
+								i(149517),	-- Fierce Combatant's Greatcloak of Faith (A)
+								i(149632),	-- Fierce Combatant's Scaled Chestpiece (A)
+								i(149636),	-- Fierce Combatant's Scaled Gauntlets (A)
+								i(149644),	-- Fierce Combatant's Scaled Girdle (A)
+								i(149638),	-- Fierce Combatant's Scaled Helm (A)
+								i(149640),	-- Fierce Combatant's Scaled Legguards (A)
+								i(149634),	-- Fierce Combatant's Scaled Sabatons (A)
+								i(149642),	-- Fierce Combatant's Scaled Shoulders (A)
+								i(149646),	-- Fierce Combatant's Scaled Wristplates (A)
+								i(149768),	-- Dominant Combatant's Greatcloak of Faith (A)
+								i(149882),	-- Dominant Combatant's Scaled Chestpiece (A)
+								i(149886),	-- Dominant Combatant's Scaled Gauntlets (A)
+								i(149894),	-- Dominant Combatant's Scaled Girdle (A)
+								i(149888),	-- Dominant Combatant's Scaled Helm (A)
+								i(149890),	-- Dominant Combatant's Scaled Legguards (A)
+								i(149884),	-- Dominant Combatant's Scaled Sabatons (A)
+								i(149892),	-- Dominant Combatant's Scaled Shoulders (A)
+								i(149896),	-- Dominant Combatant's Scaled Wristplates (A)
+								i(150014),	-- Demonic Combatant's Greatcloak of Faith (A)
+								i(150128),	-- Demonic Combatant's Scaled Chestpiece (A)
+								i(150132),	-- Demonic Combatant's Scaled Gauntlets (A)
+								i(150140),	-- Demonic Combatant's Scaled Girdle (A)
+								i(150134),	-- Demonic Combatant's Scaled Helm (A)
+								i(150136),	-- Demonic Combatant's Scaled Legguards (A)
+								i(150130),	-- Demonic Combatant's Scaled Sabatons (A)
+								i(150138),	-- Demonic Combatant's Scaled Shoulders (A)
+								i(150142),	-- Demonic Combatant's Scaled Wristplates (A)
+							},
+						}),
 					}),
 					cl(PRIEST, {
-						i(149519),	-- Fierce Combatant's Drape of Piety (A)
-						i(149662),	-- Fierce Combatant's Satin Bracers (A)
-						i(149660),	-- Fierce Combatant's Satin Cord (A)
-						i(149650),	-- Fierce Combatant's Satin Gloves (A)
-						i(149652),	-- Fierce Combatant's Satin Hood (A)
-						i(149654),	-- Fierce Combatant's Satin Leggings (A)
-						i(149658),	-- Fierce Combatant's Satin Mantle (A)
-						i(149656),	-- Fierce Combatant's Satin Robe (A)
-						i(149648),	-- Fierce Combatant's Satin Treads (A)
+						i(150263, {	-- Ensemble: Fierce Combatant's Satin Armor (A)
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -660, 5 },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -660, 5 },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -660, 5 },	-- Season 7
+							},
+							["g"] = {
+								i(149519),	-- Fierce Combatant's Drape of Piety (A)
+								i(149662),	-- Fierce Combatant's Satin Bracers (A)
+								i(149660),	-- Fierce Combatant's Satin Cord (A)
+								i(149650),	-- Fierce Combatant's Satin Gloves (A)
+								i(149652),	-- Fierce Combatant's Satin Hood (A)
+								i(149654),	-- Fierce Combatant's Satin Leggings (A)
+								i(149658),	-- Fierce Combatant's Satin Mantle (A)
+								i(149656),	-- Fierce Combatant's Satin Robe (A)
+								i(149648),	-- Fierce Combatant's Satin Treads (A)
+								i(149770),	-- Dominant Combatant's Drape of Piety (A)
+								i(149912),	-- Dominant Combatant's Satin Bracers (A)
+								i(149910),	-- Dominant Combatant's Satin Cord (A)
+								i(149900),	-- Dominant Combatant's Satin Gloves (A)
+								i(149902),	-- Dominant Combatant's Satin Hood (A)
+								i(149904),	-- Dominant Combatant's Satin Leggings (A)
+								i(149908),	-- Dominant Combatant's Satin Mantle (A)
+								i(149906),	-- Dominant Combatant's Satin Robe (A)
+								i(149898),	-- Dominant Combatant's Satin Treads (A)
+								i(150016),	-- Demonic Combatant's Drape of Piety (A)
+								i(150158),	-- Demonic Combatant's Satin Bracers (A)
+								i(150156),	-- Demonic Combatant's Satin Cord (A)
+								i(150146),	-- Demonic Combatant's Satin Gloves (A)
+								i(150148),	-- Demonic Combatant's Satin Hood (A)
+								i(150150),	-- Demonic Combatant's Satin Leggings (A)
+								i(150154),	-- Demonic Combatant's Satin Mantle (A)
+								i(150152),	-- Demonic Combatant's Satin Robe (A)
+								i(150144),	-- Demonic Combatant's Satin Treads (A)
+							},
+						}),
 					}),
 					cl(ROGUE, {
-						i(149682),	-- Fierce Combatant's Leather Belt (A)
-						i(149674),	-- Fierce Combatant's Leather Gloves (A)
-						i(149676),	-- Fierce Combatant's Leather Helm (A)
-						i(149678),	-- Fierce Combatant's Leather Legguards (A)
-						i(149672),	-- Fierce Combatant's Leather Slippers (A)
-						i(149680),	-- Fierce Combatant's Leather Spaulders (A)
-						i(149670),	-- Fierce Combatant's Leather Tunic (A)
-						i(149684),	-- Fierce Combatant's Leather Wristguards (A)
-						i(149521),	-- Fierce Combatant's Shadowcape (A)
+						i(150260, {	-- Ensemble: Fierce Combatant's Leather Armor (A)
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -660, 4 },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -660, 4 },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -660, 4 },	-- Season 7
+							},
+							["g"] = {
+								i(149682),	-- Fierce Combatant's Leather Belt (A)
+								i(149674),	-- Fierce Combatant's Leather Gloves (A)
+								i(149676),	-- Fierce Combatant's Leather Helm (A)
+								i(149678),	-- Fierce Combatant's Leather Legguards (A)
+								i(149672),	-- Fierce Combatant's Leather Slippers (A)
+								i(149680),	-- Fierce Combatant's Leather Spaulders (A)
+								i(149670),	-- Fierce Combatant's Leather Tunic (A)
+								i(149684),	-- Fierce Combatant's Leather Wristguards (A)
+								i(149521),	-- Fierce Combatant's Shadowcape (A)
+								i(149932),	-- Dominant Combatant's Leather Belt (A)
+								i(149924),	-- Dominant Combatant's Leather Gloves (A)
+								i(149926),	-- Dominant Combatant's Leather Helm (A)
+								i(149928),	-- Dominant Combatant's Leather Legguards (A)
+								i(149922),	-- Dominant Combatant's Leather Slippers (A)
+								i(149930),	-- Dominant Combatant's Leather Spaulders (A)
+								i(149920),	-- Dominant Combatant's Leather Tunic (A)
+								i(149934),	-- Dominant Combatant's Leather Wristguards (A)
+								i(149772),	-- Dominant Combatant's Shadowcape (A)
+								i(150178),	-- Demonic Combatant's Leather Belt (A)
+								i(150170),	-- Demonic Combatant's Leather Gloves (A)
+								i(150172),	-- Demonic Combatant's Leather Helm (A)
+								i(150174),	-- Demonic Combatant's Leather Legguards (A)
+								i(150168),	-- Demonic Combatant's Leather Slippers (A)
+								i(150176),	-- Demonic Combatant's Leather Spaulders (A)
+								i(150166),	-- Demonic Combatant's Leather Tunic (A)
+								i(150180),	-- Demonic Combatant's Leather Wristguards (A)
+								i(150018),	-- Demonic Combatant's Shadowcape (A)
+							},
+						}),
 					}),
 					cl(SHAMAN, {
-						i(149700),	-- Fierce Combatant's Ringmail Armband (A)
-						i(149688),	-- Fierce Combatant's Ringmail Boots (A)
-						i(149698),	-- Fierce Combatant's Ringmail Clasp (A)
-						i(149690),	-- Fierce Combatant's Ringmail Gauntlets (A)
-						i(149692),	-- Fierce Combatant's Ringmail Helm (A)
-						i(149694),	-- Fierce Combatant's Ringmail Leggings (A)
-						i(149686),	-- Fierce Combatant's Ringmail Robe (A)
-						i(149696),	-- Fierce Combatant's Ringmail Spaulders (A)
-						i(149523),	-- Fierce Combatant's Totemic Cloak (A)
+						i(150249, {	-- Ensemble: Fierce Combatant's Ringmail Armor (A)
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -660, 7 },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -660, 7 },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -660, 7 },	-- Season 7
+							},
+							["g"] = {
+								i(149700),	-- Fierce Combatant's Ringmail Armband (A)
+								i(149688),	-- Fierce Combatant's Ringmail Boots (A)
+								i(149698),	-- Fierce Combatant's Ringmail Clasp (A)
+								i(149690),	-- Fierce Combatant's Ringmail Gauntlets (A)
+								i(149692),	-- Fierce Combatant's Ringmail Helm (A)
+								i(149694),	-- Fierce Combatant's Ringmail Leggings (A)
+								i(149686),	-- Fierce Combatant's Ringmail Robe (A)
+								i(149696),	-- Fierce Combatant's Ringmail Spaulders (A)
+								i(149523),	-- Fierce Combatant's Totemic Cloak (A)
+								i(149950),	-- Dominant Combatant's Ringmail Armband (A)
+								i(149936),	-- Dominant Combatant's Ringmail Armor (A)
+								i(149938),	-- Dominant Combatant's Ringmail Boots (A)
+								i(149948),	-- Dominant Combatant's Ringmail Clasp (A)
+								i(149940),	-- Dominant Combatant's Ringmail Gauntlets (A)
+								i(149942),	-- Dominant Combatant's Ringmail Helm (A)
+								i(149944),	-- Dominant Combatant's Ringmail Leggings (A)
+								i(149946),	-- Dominant Combatant's Ringmail Spaulders (A)
+								i(149774),	-- Dominant Combatant's Totemic Cloak (A)
+								i(150196),	-- Demonic Combatant's Ringmail Armband (A)
+								i(150182),	-- Demonic Combatant's Ringmail Armor (A)
+								i(150184),	-- Demonic Combatant's Ringmail Boots (A)
+								i(150194),	-- Demonic Combatant's Ringmail Clasp (A)
+								i(150186),	-- Demonic Combatant's Ringmail Gauntlets (A)
+								i(150188),	-- Demonic Combatant's Ringmail Helm (A)
+								i(150190),	-- Demonic Combatant's Ringmail Leggings (A)
+								i(150192),	-- Demonic Combatant's Ringmail Spaulders (A)
+								i(150020),	-- Demonic Combatant's Totemic Cloak (A)
+							},
+						}),
 					}),
 					cl(WARLOCK, {
-						i(149730),	-- Fierce Combatant's Felweave Amice (A)
-						i(149734),	-- Fierce Combatant's Felweave Bracers (A)
-						i(149525),	-- Fierce Combatant's Felweave Cloak (A)
-						i(149732),	-- Fierce Combatant's Felweave Cord (A)
-						i(149724),	-- Fierce Combatant's Felweave Cowl (A)
-						i(149722),	-- Fierce Combatant's Felweave Handguards (A)
-						i(149728),	-- Fierce Combatant's Felweave Raiment (A)
-						i(149720),	-- Fierce Combatant's Felweave Treads (A)
-						i(149726),	-- Fierce Combatant's Felweave Trousers (A)
+						i(150257, {	-- Ensemble: Fierce Combatant's Felweave Armor (A)
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -660, 9 },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -660, 9 },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -660, 9 },	-- Season 7
+							},
+							["g"] = {
+								i(149730),	-- Fierce Combatant's Felweave Amice (A)
+								i(149734),	-- Fierce Combatant's Felweave Bracers (A)
+								i(149525),	-- Fierce Combatant's Felweave Cloak (A)
+								i(149732),	-- Fierce Combatant's Felweave Cord (A)
+								i(149724),	-- Fierce Combatant's Felweave Cowl (A)
+								i(149722),	-- Fierce Combatant's Felweave Handguards (A)
+								i(149728),	-- Fierce Combatant's Felweave Raiment (A)
+								i(149720),	-- Fierce Combatant's Felweave Treads (A)
+								i(149726),	-- Fierce Combatant's Felweave Trousers (A)
+								i(149980),	-- Dominant Combatant's Felweave Amice (A)
+								i(149984),	-- Dominant Combatant's Felweave Bracers (A)
+								i(149776),	-- Dominant Combatant's Felweave Cloak (A)
+								i(149982),	-- Dominant Combatant's Felweave Cord (A)
+								i(149974),	-- Dominant Combatant's Felweave Cowl (A)
+								i(149972),	-- Dominant Combatant's Felweave Handguards (A)
+								i(149978),	-- Dominant Combatant's Felweave Raiment (A)
+								i(149970),	-- Dominant Combatant's Felweave Treads (A)
+								i(149976),	-- Dominant Combatant's Felweave Trousers (A)
+								i(150226),	-- Demonic Combatant's Felweave Amice (A)
+								i(150230),	-- Demonic Combatant's Felweave Bracers (A)
+								i(150022),	-- Demonic Combatant's Felweave Cloak (A)
+								i(150228),	-- Demonic Combatant's Felweave Cord (A)
+								i(150220),	-- Demonic Combatant's Felweave Cowl (A)
+								i(150218),	-- Demonic Combatant's Felweave Handguards (A)
+								i(150224),	-- Demonic Combatant's Felweave Raiment (A)
+								i(150216),	-- Demonic Combatant's Felweave Treads (A)
+								i(150222),	-- Demonic Combatant's Felweave Trousers (A)
+							},
+						}),
 					}),
 					cl(WARRIOR, {
-						i(149527),	-- Fierce Combatant's Cloak of Battle (A)
-						i(149736),	-- Fierce Combatant's Plate Chestpiece (A)
-						i(149740),	-- Fierce Combatant's Plate Gauntlets (A)
-						i(149748),	-- Fierce Combatant's Plate Girdle (A)
-						i(149742),	-- Fierce Combatant's Plate Helm (A)
-						i(149744),	-- Fierce Combatant's Plate Legguards (A)
-						i(149746),	-- Fierce Combatant's Plate Shoulders (A)
-						i(149738),	-- Fierce Combatant's Plate Warboots (A)
-						i(149750),	-- Fierce Combatant's Plate Wristplates (A)
+						i(150267, {	-- Ensemble: Fierce Combatant's Plate Armor (A)
+							["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -660, 1 },	-- Season 5
+								{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -660, 1 },	-- Season 6
+								{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -660, 1 },	-- Season 7
+							},
+							["g"] = {
+								i(149527),	-- Fierce Combatant's Cloak of Battle (A)
+								i(149736),	-- Fierce Combatant's Plate Chestpiece (A)
+								i(149740),	-- Fierce Combatant's Plate Gauntlets (A)
+								i(149748),	-- Fierce Combatant's Plate Girdle (A)
+								i(149742),	-- Fierce Combatant's Plate Helm (A)
+								i(149744),	-- Fierce Combatant's Plate Legguards (A)
+								i(149746),	-- Fierce Combatant's Plate Shoulders (A)
+								i(149738),	-- Fierce Combatant's Plate Warboots (A)
+								i(149750),	-- Fierce Combatant's Plate Wristplates (A)
+								i(149990),	-- Dominant Combatant's Plate Gauntlets (A)
+								i(149986),	-- Dominant Combatant's Plate Chestpiece (A)
+								i(149988),	-- Dominant Combatant's Plate Warboots (A)
+								i(149992),	-- Dominant Combatant's Plate Helm (A)
+								i(149994),	-- Dominant Combatant's Plate Legguards (A)
+								i(149996),	-- Dominant Combatant's Plate Shoulders (A)
+								i(149998),	-- Dominant Combatant's Plate Girdle (A)
+								i(150000),	-- Dominant Combatant's Plate Wristplates (A)
+								i(149778),	-- Dominant Combatant's Cloak of Battle (A)
+								i(150024),	-- Demonic Combatant's Cloak of Battle (A)
+								i(150232),	-- Demonic Combatant's Plate Chestpiece (A)
+								i(150236),	-- Demonic Combatant's Plate Gauntlets (A)
+								i(150244),	-- Demonic Combatant's Plate Girdle (A)
+								i(150238),	-- Demonic Combatant's Plate Helm (A)
+								i(150240),	-- Demonic Combatant's Plate Legguards (A)
+								i(150242),	-- Demonic Combatant's Plate Shoulders (A)
+								i(150234),	-- Demonic Combatant's Plate Warboots (A)
+								i(150246),	-- Demonic Combatant's Plate Wristplates (A)
+							},
+						}),
 					}),
 					n(-384,	{	-- Neck
 						un(REMOVED_FROM_GAME, i(149626)),	-- Fierce Combatant Necklace (A)
