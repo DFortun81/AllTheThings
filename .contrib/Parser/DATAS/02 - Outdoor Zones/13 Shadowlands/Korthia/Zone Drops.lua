@@ -98,7 +98,7 @@ _.Zones =
 				i(186109),	-- Mawsworn Darkcaster's Handwraps
 				i(186142),	-- Mawsworn Darkcaster's Kris
 				i(186111),	-- Mawsworn Darkcaster's Leggings
-				i(186140),	-- Mawsworn Darkcaster's Orb
+				i(186140),	-- Mawsworn Darkcaster's Orb*
 				i(186107),	-- Mawsworn Darkcaster's Robes
 				i(186138),	-- Mawsworn Darkcaster's Shoulderpads
 				i(186108),	-- Mawsworn Darkcaster's Slippers

@@ -652,7 +652,7 @@ _.Zones =
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 						ach(14943, {	-- Guarmageddon
-							["description"] = "Kill all of Ylva and Guarm's children, and then kill the rare.",
+							["description"] = "Kill all of Ylva and Guarm's children, and then kill the rare.  You must be within range of the baby guarm when they die to get the debuff.",
 							["coords"] = {
 								{ 63.1, 42.4, THE_MAW },	-- Vanargun <Child of Guarm>
 								{ 63.1, 40.3, THE_MAW },	-- Hrodvetni <Child of Guarm>
@@ -660,9 +660,19 @@ _.Zones =
 								{ 68.4, 42.0, THE_MAW },	-- Vargir <Child of Guarm>
 								{ 67.0, 41.5, THE_MAW },	-- Girs <Child of Guarm>
 							},
+							["crs"] = {
+								177441,	-- Frekki
+								177422,	-- Girs
+								177442,	-- Hrodvetni
+								177445,	-- Vanargun
+								177443,	-- Vargir
+							},
 						}),
-						i(186970, {	-- Feeder's Hand and Key - TODO: not sure if this is used for something?  it's a green item
-							i(186727),	-- Seal Breaker Key
+						i(186970, {	-- Feeder's Hand and Key
+							["questID"] = 62683,
+							["g"] = {
+								i(186727),	-- Seal Breaker Key
+							},
 						}),
 						i(186217),	-- Supple Helhound Leather Pants
 						i(187359),	-- Ylva's Water Dish
@@ -682,5 +692,4 @@ _.Zones =
 };
 
 _.HiddenQuestTriggers = {
-	q(62683),	-- looting Feeder's Hand and Key from Ylva
 };

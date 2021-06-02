@@ -50,5 +50,6 @@ _.ExpansionFeatures =
 };
 
 _.HiddenQuestTriggers = {
-	q(64074),	-- hitting Renown 45
+	q(64074),	-- hitting Renown 45 - received mount, Ardenweald Wilderling
+	q(64397),	-- hitting Renown 48 - received i(186687), Memory of Celestial Spirits
 };

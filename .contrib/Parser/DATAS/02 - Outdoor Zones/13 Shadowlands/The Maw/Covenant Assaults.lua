@@ -41,12 +41,10 @@ _.Zones =
 						}),
 					}),
 					ach(15036, {	-- Rooting Out The Evil
-						crit(1),	-- Clean Out the Crucible
 						crit(4),	-- Snail Stomping
 						crit(5),	-- Just Don't Ask Me to Spell It
 						crit(7),	-- Needless Needlers
 						crit(8),	-- The Soul Blade
-						crit(10),	-- Heavy Handed Tactics
 					}),
 					ach(15033, {	-- Taking the Tremaculum
 						crit(4),	-- Fangcrack's Fan Club
@@ -364,12 +362,32 @@ _.Zones =
 									}),
 								},
 							}),
+							q(63968, {	-- Clean Out the Crucible
+								["provider"] = { "n", 178828 },	-- Lord Herne
+								["isWeekly"] = true,
+								["coord"] = { 22.4, 43.2, THE_MAW },
+								["g"] = {
+									crit(1, {	-- Clean Out the Crucible
+										["achievementID"] = 15036,	-- Rooting Out The Evil
+									}),
+								},
+							}),
 							q(63973, {	-- Double Dromans
 								["provider"] = { "n", 179067 },	-- Dreamweaver
 								["isWeekly"] = true,
 								["coord"] = { 22.7, 43.7, THE_MAW },
 								["g"] = {
 									crit(6, {	-- Double Dromans
+										["achievementID"] = 15036,	-- Rooting Out The Evil
+									}),
+								},
+							}),
+							q(63952, {	-- Heavy-Handed Tactics
+								["provider"] = { "n", 178745 },	-- Emeni
+								["isWeekly"] = true,
+								["coord"] = { 22.9, 42.4, THE_MAW },
+								["g"] = {
+									crit(10, {	-- Heavy Handed Tactics
 										["achievementID"] = 15036,	-- Rooting Out The Evil
 									}),
 								},
@@ -554,4 +572,7 @@ _.HiddenQuestTriggers = {
 --	Kyrian
 	q(64057),	-- Stolen Anima Vessel (32.6, 43.3) - didn't get objectID
 	q(64058),	-- Stolen Anima Vessel (34.1, 35.7) - 368951
+
+--	Night Fae
+	q(63821),	-- triggered when completing the assault (#63823)
 };

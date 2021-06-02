@@ -25,10 +25,31 @@ _.Zones =
 					-- 1. dropped from random mob in the area (i think maldraxxi defector)
 					-- 2. ylva, rare elite, inside 'feeder's hand and key,' which seems to drop on your first kill
 					-- 3. The Harrower's Key Ring, next to Kjellrun inside building at 66.9, 56.2
-					-- 4. Helgarde Supply Cache, roughly 67.3, 49.0.  chest did not glow/sparkle.  this dropped 2 keys, not sure if the 5th is used for anything
+					["questID"] = 64207,
 					["coord"] = { 66.0, 57.4, THE_MAW },
+					["cost"] = { { "i", 186727, 4 } },	-- 4x Seal Breaker Key
 					["g"] = {
+						o(369133, {	-- Domination Seal #1
+							["questID"] = 64204,
+						}),
+						o(369135, {	-- Domination Seal #2
+							["questID"] = 64205,
+						}),
+						o(369134, {	-- Domination Sealed Cage
+							["questID"] = 64206,
+						}),
+						o(369138, {	-- Domination Chest Seal
+							["questID"] = 64208,
+						}),
 						i(186607),	-- Nilganihmaht's Silver Ring
+					},
+				}),
+				o(369145, {	-- Helgarde Supply Cache
+					["description"] = "This chest does not glow or sparkle.",
+					["questID"] = 62682,
+					["coord"] = { 65.7, 61.2, THE_MAW },	-- first time i found this it was at roughly 67.3, 49.0 - unsure if it has multiple coords or was moved
+					["g"] = {
+						i(186727),	-- Seal Breaker Key
 					},
 				}),
 				o(369216, {	-- Helsworn Chest

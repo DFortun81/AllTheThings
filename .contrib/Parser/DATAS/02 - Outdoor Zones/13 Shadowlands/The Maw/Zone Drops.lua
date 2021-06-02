@@ -24,7 +24,8 @@ _.Zones =
 					},
 				}),
 				i(186727, {	-- Seal Breaker Key
-					-- TODO: add crs, i didn't see what dropped it when i first picked one up.  dropped in destmotwhateverthefuck in the maw, not korthia
+					["questID"] = 62679,
+					["cr"] = 177134,	-- Maldraxxi Defector
 				}),
 			}),
 		}),
