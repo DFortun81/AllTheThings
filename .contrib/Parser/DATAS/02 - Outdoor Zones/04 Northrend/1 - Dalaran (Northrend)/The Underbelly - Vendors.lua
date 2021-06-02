@@ -3082,7 +3082,7 @@ _.Zones =
 									["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 									["sym"] = { 
 										{"sub", "pvp_weapons_ensemble", -10014, -670, -661 },
-										{"exclude", "itemID", 146644 },	-- Exclude itself to stop duplicating
+										{"exclude", "itemID", 146643 },	-- Exclude itself to stop duplicating
 									},
 								}),
 								i(42566, {	-- Relentless Gladiator's Barrier
