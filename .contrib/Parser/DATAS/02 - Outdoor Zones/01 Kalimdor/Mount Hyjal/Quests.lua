@@ -266,7 +266,6 @@ _.Zones =
 					["isDaily"] = true,
 					["sourceQuest"] = 29101,	-- Punting Season
 					["g"] = {
-						currency(416),	-- Mark of the World Tree
 						n(52383, {	-- Nemesis <Echo of the Usurper>
 							crit(5, {	-- Infernal Ambassadors (Slay Nemesis at Ashen Lake without taking damage from Molten Fury)
 								["achievementID"] = 5869,
@@ -679,7 +678,6 @@ _.Zones =
 					["isDaily"] = true,
 					["sourceQuest"] = 29161,	-- Those Bears Up There
 					["g"] = {
-						currency(416),	-- Mark of the World Tree
 						n(52749, {	-- Pyrachnis <Beth'tilac Lieutenant>
 							crit(1, {	-- Infernal Ambassadors (Slay Pyrachnis without using the Emerald of Aessina)
 								["achievementID"] = 5869,
@@ -745,9 +743,6 @@ _.Zones =
 					["coord"] = { 27.1, 61.9, 198 },
 					["isDaily"] = true,
 					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
-					["g"] = {
-						currency(416),	-- Mark of the World Tree
-					},
 				}),
 				q(29123, {	-- Rage Against the Flames
 					["provider"] = { "n", 52669 },	-- Matoclaw
@@ -755,9 +750,6 @@ _.Zones =
 					["coord"] = { 27.1, 62.5, 198 },
 					["isDaily"] = true,
 					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
-					["g"] = {
-						currency(416),	-- Mark of the World Tree
-					},
 				}),
 				q(29127, {	-- Rage Against the Flames
 					["provider"] = { "n", 52669 },	-- Matoclaw
@@ -765,9 +757,6 @@ _.Zones =
 					["coord"] = { 27.1, 62.5, 198 },
 					["isDaily"] = true,
 					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
-					["g"] = {
-						currency(416),	-- Mark of the World Tree
-					},
 				}),
 				q(29149, {	-- Rage Against the Flames
 					["provider"] = { "n", 52669 },	-- Matoclaw
@@ -775,9 +764,6 @@ _.Zones =
 					["coord"] = { 27.1, 62.5, 198 },
 					["isDaily"] = true,
 					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
-					["g"] = {
-						currency(416),	-- Mark of the World Tree
-					},
 				}),
 				q(29163, {	-- Rage Against the Flames
 					["provider"] = { "n", 52669 },	-- Matoclaw
@@ -785,9 +771,6 @@ _.Zones =
 					["coord"] = { 27.1, 62.5, 198 },
 					["isDaily"] = true,
 					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
-					["g"] = {
-						currency(416),	-- Mark of the World Tree
-					},
 				}),
 				q(25576, {	-- Rage of the Wolf Ancient
 					["provider"] = { "n", 40837 },	-- Yargra Blackscar
@@ -1122,9 +1105,6 @@ _.Zones =
 					["coord"] = { 27.1, 61.6, 198 },
 					["isDaily"] = true,
 					["sourceQuest"] = 29201,	-- Through the Gates of Hell
-					["g"] = {
-						currency(416),	-- Mark of the World Tree
-					},
 				}),
 				q(29311, {	-- The Rest is History
 					["provider"] = { "n", 11801 },	-- Rabine Saturna
@@ -1232,9 +1212,6 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 27.1, 62.0, 198 },
 					["sourceQuest"] = 29201,	-- Through the Gates of Hell
-					["g"] = {
-						currency(416),	-- Mark of the World Tree
-					},
 				}),
 				q(25325, {	-- Through the Dream
 					["provider"] = { "n", 40139 },	-- Captain Saynna Stormrunner
