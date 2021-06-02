@@ -992,13 +992,13 @@ _.Zones =
 
 _.HiddenQuestTriggers = {
 	-- Missions
-	q(53743),	-- Hillcrest Pasture completed
-	q(53745),	-- Mudfisher Cove completed
-	q(53740),	-- Stonefist Watch completed
-	q(53742),	-- Stonetusk Watch completed
-	q(53744),	-- Swiftwind Post completed
-	q(53741),	-- Windfall Cavern completed
 	q(53739),	-- Wolf's Den completed
+	q(53740),	-- Stonefist Watch completed
+	q(53741),	-- Windfall Cavern completed
+	q(53742),	-- Stonetusk Watch completed
+	q(53743),	-- Hillcrest Pasture completed
+	q(53744),	-- Swiftwind Post completed
+	q(53745),	-- Mudfisher Cove completed
 	-- Outpost Upgrades
 	q(54226),	-- Upgrade: The Great Seal started
 	q(54294),	-- Upgrade: The Great Seal completed
