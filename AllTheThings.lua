@@ -17610,7 +17610,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 end);
 
 -- WARNING: DEV ONLY START
-
+--[[
 -- Uncomment this section if you need to enable Debugger:
 -- CLEU binding only happens when debugger is enabled because of how expensive it can get in large mob farms
 app:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED");

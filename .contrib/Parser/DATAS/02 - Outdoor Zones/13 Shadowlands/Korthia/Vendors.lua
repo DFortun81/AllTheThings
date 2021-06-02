@@ -235,6 +235,22 @@ _.Zones =
 									i(186747),	-- Razorwing Scale Wristguards
 								}),
 								f(7,    {	-- Plate
+									i(186755),	-- Vault Guardian's Binders
+									i(185877),	-- Vault Guardian's Breastplate
+									i(186754),	-- Vault Guardian's Buckle
+									i(186749),	-- Vault Guardian's Chestpiece
+									i(185879),	-- Vault Guardian's Gauntlets
+									i(185882),	-- Vault Guardian's Girdle*
+									i(186751),	-- Vault Guardian's Handguards
+									i(185876),	-- Vault Guardian's Helm
+									i(185880),	-- Vault Guardian's Legguards
+									i(186752),	-- Vault Guardian's Legplates
+									i(185881),	-- Vault Guardian's Pauldrons
+									i(185878),	-- Vault Guardian's Sabatons
+									i(186753),	-- Vault Guardian's Shoulderplates
+									i(186750),	-- Vault Guardian's Stompers
+									i(185883),	-- Vault Guardian's Vambraces
+									i(186748),	-- Vault Guardian's Visor
 								}),
 								n(-319, {	-- Weapons
 									i(186759),	-- Korthian Anima Vessel*

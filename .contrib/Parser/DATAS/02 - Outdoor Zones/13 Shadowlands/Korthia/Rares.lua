@@ -33,6 +33,7 @@ _.Zones =
 						crit(9, {	-- Dominated Protector
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
+						i(187390),	-- Dominated Protector's Helm
 					},
 				}),
 				n(180014, {	-- Escaped Wilderling
@@ -73,10 +74,9 @@ _.Zones =
 					},
 				}),
 				n(179472, {	-- Konthrogz the Obliterator
-					["description"] = "At the bottom of the cave, near Zelnithop.  A |cFFFFFFFFDevouring Tear|r spawns first - once you've defeated several waves of mobs, the rare will emerge.",
+					["description"] = "Can spawn next to other rares when they die.  Defeat the adds that emerge from the portal, and eventually the rare will appear.\n\nWhen the portal spawns, there is a zonewide announcement: |cFFff8040A massive devourer tears an opening into Korthia.|r",
 					["questID"] = 64246,
 					["isDaily"] = true,
-					["coord"] = { 30.2, 54.9, KORTHIA },
 					["cr"] = 179464,	-- Devouring Tear
 					["g"] = {
 						crit(14, {	-- Konthrogz the Obliterator
