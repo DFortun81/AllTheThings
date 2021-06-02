@@ -892,6 +892,7 @@ _.Zones =
 				q(60961, {	-- Burning Crusade: Onward to Adventure in Outland
 					["sourceQuests"] = { 60123 },	-- Burning Crusade: To Outland!
 					["description"] = "Complete the prerequisite quest, switch to another timeline, then switch back to Burning Crusade and you will get this quest.",
+					["isBreadcrumb"] = true,
 					["repeatable"] = true,
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 40.8, 79.9, 85 },
