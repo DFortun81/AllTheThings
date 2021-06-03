@@ -13,7 +13,7 @@ _.Zones =
 					["coord"] = { 65.1, 23.1, KORTHIA },
 				}),
 				q(63848, {	-- A Show of Gratitude
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 177927 },	-- Tal-Galan
 					["coord"] = { 62.7, 24.8, KORTHIA },
 				}),
@@ -287,7 +287,7 @@ _.Zones =
 				--	TODO: not sure if this is available any earlier than the 2nd 9.1 skip
 					["isBreadcrumb"] = true,
 					["description"] = "The item that starts this quest can be looted from any treasure chest or rare in Korthia.",
-					["provider"] = { "i", 187177 },	-- Shattered Relic
+					["provider"] = { "i", 187177 },	-- Researching Korthian Relics
 				}),
 				q(63911, {	-- Singing Steel Ingot
 					["sourceQuests"] = { 64506 },	-- What Must Be Found
@@ -295,7 +295,7 @@ _.Zones =
 					["coord"] = { 62.1, 56.8, KORTHIA },
 				}),
 				q(64555, {	-- Surveying Secrets
-				--	TODO: do not know SQ; this popped up randomly on 6/2 on my main.  it has the 'campaign quest' ! icon
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 177228 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 62.8, 24.9, KORTHIA },
 				}),

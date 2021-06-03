@@ -3533,6 +3533,7 @@ _.HiddenQuestTriggers =
 		-----------------
 		-- Generic SL tracking quests (cannot be placed in a single file)
 		q(64508),	-- generic Renown quest - triggers multiple times for all covenants
+		q(63220),	-- generic quest for hitting Renown 10 (any covenant) - WQ reward upgrade #1
 		q(63221),	-- generic quest for hitting Renown 19 (any covenant) - WQ reward upgrade #2
 		q(63350),	-- generic quest for hitting Renown 29 (any covenant) - WQ reward upgrade #3
 		q(64067),	-- generic quest for hitting Renown 46 (any covenant) - WQ reward upgrade #4
@@ -3579,8 +3580,7 @@ _.HiddenQuestTriggers =
 		q(61858),	-- taking the portal to Acherus during "Shadowlands: A Chilling Summons"
 		q(62686),	-- triggers when entering a zone with a 'Training' Calling active and your companion spawns (repeatable)
 		q(62713),	-- triggers when chosing to Skip the SL Storyline. Using this as the source of whether a character is a 'Skip' character
-		q(57622),	-- triggered when turning in #58609, "Taking a Seat" (idk if this is covenant-related or skip-related or something else)
-		q(63220),	-- triggered when hitting Renown 10 (all covenants appear to get the same quest trigger) - WQ reward upgrade #1
+		q(57622),	-- triggered when turning in #58609, "Taking a Seat" (idk if this is covenant-related or skip-related or something else
 		q(62744),	-- initially chose to quest through SL, then swapped to Threads of Fate
 		q(62151),	-- triggered when accepting #62275, "Bastion" for Threads of Fate
 		q(62152),	-- triggered when accepting #62278, "Maldraxxus" for Threads of Fate
@@ -4065,12 +4065,8 @@ _.HiddenQuestTriggers =
 		q(60768),	-- opening the cage to get Dal's Courier Badge on "A Stolen Stone Fiend"
 		q(62940),	-- opening the crate while on #61619, "Alchemy: Elixir of Humility"
 		-- Venthyr Covenant
-		q(62699),	-- triggered when turning in #62691, "A Calling in Revendreth"
-		q(62924),	-- triggered when turning in #62691, "A Calling in Revendreth"
 		q(62827),	-- uhhhhh i killed myself by jumping into nothingness from one of the platforms / while on FP through Oribos
-		q(59316),	-- turning in quest #62918, "Binding Power"
 		q(62950),	-- clicking "Activate" after putting "Thrill Seeker" in Nadjia's soulbind tree
-		q(59317),	-- triggered when turning in #62919, "Strengthening the Bond"
 		q(62749),	-- triggered when turning in #62921, "Our True Purpose"
 		q(63063),	-- looks like an unused version of #63056, "Sanctum Upgrade: Mirror Network"
 		q(60300),	-- appears to trigger with every anima conduit
@@ -4370,7 +4366,6 @@ _.HiddenQuestTriggers =
 		q(60507),	-- triggered shortly after picking up The Lion's Cage (picked up quest, refreshed, walked out of the cave, killed a Malice Shadow, the quest popped)
 		q(62939),	-- triggered after watching the cutscene for Stand as One / landing in Oribos
 		q(57678),	-- triggered after watching the cutscene for Stand as One / landing in Oribos (second character to go thru the scenario, didn't see this on my first)
-		q(62907),	-- triggered after collecting all stygia during "Rule 1: Have an Escape Plan" (triggers dialogue from The Jailer + the Eye of the Jailer counter...thing)
 		q(62908),	-- triggered after collecting 5 souls during "Rule 1: Have an Escape Plan"
 		q(62913),	-- triggered when turning in #60281, "Rule 4: Make a List"
 		q(63446),	-- triggered when landing in The Maw on 12/9/20

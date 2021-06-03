@@ -928,3 +928,7 @@ _.Zones =
 		}),
 	}),
 };
+
+_.HiddenQuestTriggers = {
+	q(62907),	-- triggered after collecting all stygia during "Rule 1: Have an Escape Plan" (triggers dialogue from The Jailer + the Eye of the Jailer counter...thing)
+};

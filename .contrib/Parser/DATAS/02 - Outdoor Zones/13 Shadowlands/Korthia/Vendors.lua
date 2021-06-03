@@ -259,6 +259,7 @@ _.Zones =
 									i(185888),	-- Korthian Caretaker's Orb
 									i(185900),	-- Korthian Caretaker's Rod
 									i(185900),	-- Korthian Caretaker's Stave*
+									i(186764),	-- Korthian Protector's Warhammer*
 								}),
 								f(52,   {	-- Finger
 									i(185894),	-- Attendant's Loop*

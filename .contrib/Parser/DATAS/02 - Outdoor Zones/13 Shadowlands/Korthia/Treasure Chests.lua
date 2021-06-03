@@ -191,8 +191,11 @@ _.Zones =
 				o(369339, {	-- Mawsworn Cache
 					["questID"] = 64363,
 					["isDaily"] = true,
-				--	["coord"] = { 61.2, 57.9, KORTHIA }, TODO old coords?  was always here inside the building, but as of 6/2 i found it nearby but outside.  leaving this here in case they just added add'l coords
-					["coord"] = { 62.3, 58.6, KORTHIA },
+				--	["coord"] = { 61.2, 57.9, KORTHIA }, TODO old coords?  was always here inside the building, but as of 6/2 i found it nearby but outside, next day slightly further.  leaving this here in case i need to append the old coord to the new ones
+					["coords"] = {
+						{ 58.3, 52.8, KORTHIA },
+						{ 62.3, 58.6, KORTHIA },
+					},
 					["g"] = {
 						i(187431),	-- Sleeping Armament
 					},
