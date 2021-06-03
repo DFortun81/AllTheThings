@@ -58,6 +58,14 @@ _.ExpansionFeatures =
 };
 
 _.HiddenQuestTriggers = {
+	q(62750),	-- hitting Renown 19
+	q(62751),	-- hitting Renown 35
+	q(62925),	-- hitting Renown 39
+	q(64131),	-- hitting Renown 45
+	q(64076),	-- hitting Renown 46
+	q(64381),	-- hitting Renown 48 (received Memory of Insatiable Hunger, may be specific to legendary and not level of Renown)
+	q(64134),	-- hitting Renown 50
+	q(64452),	-- hitting Renown 52
 	q(64133),	-- hitting Renown 56
 	q(64135),	-- hitting Renown 59
 	q(64375),	-- hitting Renown 60

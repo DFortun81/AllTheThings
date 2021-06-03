@@ -29,7 +29,7 @@ _.Zones =
 							["isDaily"] = true,
 							["coord"] = { 34.7, 41.9, THE_MAW },
 							["g"] = {
-								crit(2, {	-- Blinding Shadow
+								crit(1, {	-- Blinding Shadow
 									["achievementID"] = 15107,	-- Conquering Korthia
 								}),
 							},
@@ -40,7 +40,7 @@ _.Zones =
 							["isDaily"] = true,
 							["coord"] = { 51.1, 71.1, THE_MAW },
 							["g"] = {
-								crit(12, {	-- Guard Orguluus
+								crit(10, {	-- Guard Orguluus
 									["achievementID"] = 15107,	-- Conquering Korthia
 								}),
 							},
@@ -50,7 +50,7 @@ _.Zones =
 							["isDaily"] = true,
 							["coord"] = { 28.5, 24.9, THE_MAW },
 							["g"] = {
-								crit(24, {	-- Torgllun, Lord of Shades
+								crit(20, {	-- Torgllun, Lord of Shades
 									["achievementID"] = 15107,	-- Conquering Korthia
 								}),
 								i(187139),	-- Bottled Shade Heart (TOY!)

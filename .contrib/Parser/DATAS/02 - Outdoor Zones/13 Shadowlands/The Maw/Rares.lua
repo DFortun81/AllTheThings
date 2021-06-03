@@ -103,8 +103,8 @@ _.Zones =
 					["isWeekly"] = true,
 					["coord"] = { 45.5, 54.8, THE_MAW },
 					["cr"] = 180182,	-- Assault Supply Carriage
-					["g"] = {	-- TODO: does not currently grant credit, so not sure if this will permanently be a part of the achievement or if it's truly just NYI
-						crit(1, {	-- Assault Supply Carriage
+					["g"] = {
+						crit(2, {	-- Carriage Crusher
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 					},
@@ -215,7 +215,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 66.4, 55.4, THE_MAW },
 					["g"] = {
-						crit(8, {	-- Deomen the Vortex
+						crit(5, {	-- Deomen the Vortex
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 					},
@@ -614,7 +614,7 @@ _.Zones =
 						{ 68.8, 45.5, THE_MAW },
 					},
 					["g"] = {
-						crit(26, {	-- Traitor Balthier
+						crit(22, {	-- Traitor Balthier
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 					},

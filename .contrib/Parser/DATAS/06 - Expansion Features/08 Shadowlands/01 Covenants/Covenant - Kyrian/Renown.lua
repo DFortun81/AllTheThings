@@ -55,5 +55,4 @@ _.ExpansionFeatures =
 
 _.HiddenQuestTriggers = {
 	q(64138),	-- hitting Renown 45
-	q(64067),	-- hitting Renown 46
 };

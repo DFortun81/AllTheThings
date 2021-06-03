@@ -3532,10 +3532,13 @@ _.HiddenQuestTriggers =
 		-- SHADOWLANDS --
 		-----------------
 		-- Generic SL tracking quests (cannot be placed in a single file)
-		q(64508),	-- generic Renown quest - hitting Renown 41 on Venthyr, hitting 40 on Night Fae
-		q(64073),	-- generic Renown quest for hitting 47 (any covenant)
-		q(64068),	-- generic Renown quest for hitting 61 (any covenant)
-		
+		q(64508),	-- generic Renown quest - triggers multiple times for all covenants
+		q(63221),	-- generic quest for hitting Renown 19 (any covenant) - WQ reward upgrade #2
+		q(63350),	-- generic quest for hitting Renown 29 (any covenant) - WQ reward upgrade #3
+		q(64067),	-- generic quest for hitting Renown 46 (any covenant) - WQ reward upgrade #4
+		q(64073),	-- generic quest for hitting Renown 47 (any covenant)
+		q(64068),	-- generic quest for hitting Renown 61 (any covenant)
+
 		-- Exile's Reach
 		q(58418),	-- Triggers shortly after login. Possibly some kind of indicator for the account having done it at least once per faction?
 		q(54927),	-- Triggers after the cinematic. You can't move until this quest triggers
@@ -3578,8 +3581,6 @@ _.HiddenQuestTriggers =
 		q(62713),	-- triggers when chosing to Skip the SL Storyline. Using this as the source of whether a character is a 'Skip' character
 		q(57622),	-- triggered when turning in #58609, "Taking a Seat" (idk if this is covenant-related or skip-related or something else)
 		q(63220),	-- triggered when hitting Renown 10 (all covenants appear to get the same quest trigger) - WQ reward upgrade #1
-		q(63221),	-- triggered when hitting Renown 19 (all covenants appear to get the same quest trigger) - WQ reward upgrade #2
-		q(63350),	-- triggered when hitting Renown 29 (all covenants appear to get the same quest trigger) - WQ reward upgrade #3
 		q(62744),	-- initially chose to quest through SL, then swapped to Threads of Fate
 		q(62151),	-- triggered when accepting #62275, "Bastion" for Threads of Fate
 		q(62152),	-- triggered when accepting #62278, "Maldraxxus" for Threads of Fate
@@ -4308,13 +4309,6 @@ _.HiddenQuestTriggers =
 		q(61506),	-- when using 'Guest List Page' (181538)
 		-- q(61531),	-- learning the toy (The Countess's Parasol) ?? maybe?
 		q(63454),	-- triggered when turning in #62867, "Return Lost Souls" (Venthyr 10-soul weekly)
-		q(62750),	-- hitting Renown 19 on Venthyr / unlocking Deepening Bond 4% stam increase
-		q(62751),	-- hitting Renown 35 on Venthyr / unlocking Deepening Bond 6% stam increase
-		q(62925),	-- hitting Renown 39 on Venthyr / received mount Gravestone Battle Gargon
-		q(64131),	-- hitting Renown 45 on Venthyr / received mount Sinfall Gravewing
-		q(64076),	-- hitting Renown 46 on Venthyr
-		q(64134),	-- hitting Renown 50 on Venthyr
-		q(64452),	-- hitting Renown 52 on Venthyr
 		q(59744),	-- when opening the Battered Chest while on Repair and Restore
 		q(60302),	-- when channeling anima to Dominance Keep for the first time
 		-- q(61494),	-- using Building: Guardhouse
@@ -4505,4 +4499,4 @@ _.HiddenQuestTriggers =
 		q(64045),	-- The Maw repeatable treasure, Stolen Anima Vessel
 		q(64044),	-- The Maw repeatable treasure, Stolen Anima Vessel (34.2, 64.6) / (30.6, 58.4)
 	}),
-};
+};

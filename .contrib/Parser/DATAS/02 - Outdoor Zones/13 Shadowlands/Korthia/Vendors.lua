@@ -238,7 +238,7 @@ _.Zones =
 									i(186755),	-- Vault Guardian's Binders
 									i(185877),	-- Vault Guardian's Breastplate
 									i(186754),	-- Vault Guardian's Buckle
-									i(186749),	-- Vault Guardian's Chestpiece
+									i(186749),	-- Vault Guardian's Chestpiece*
 									i(185879),	-- Vault Guardian's Gauntlets
 									i(185882),	-- Vault Guardian's Girdle*
 									i(186751),	-- Vault Guardian's Handguards

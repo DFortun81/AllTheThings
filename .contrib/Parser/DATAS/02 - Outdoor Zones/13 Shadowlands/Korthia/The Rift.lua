@@ -47,7 +47,7 @@ _.Zones =
 							["isDaily"] = true,
 							["coord"] = { 50.2, 75.4, KORTHIA },
 							["g"] = {
-								crit(17, {	-- Observer Yorik
+								crit(14, {	-- Observer Yorik
 									["achievementID"] = 15107,	-- Conquering Korthia
 								}),
 							},
