@@ -409,5 +409,7 @@ i(186492, 353859);	-- Summer Wilderling
 i(186641, 347536);	-- Tamed Mauler
 i(186103, 352742);	-- Undying Darkhound
 i(186642, 351195);	-- Vengeance
+i(186178, 348770);	-- Vicious War Gorm (A)
+i(186179, 348769);	-- Vicious War Gorm (H)
 i(186000, 352441);	-- Wild Hunt Legsplitter
 i(186495, 353858);	-- Winter Wilderling
