@@ -147,7 +147,7 @@ _.Zones =
 				}),
 				q(64556, {	-- In Need of Assistance
 					["sourceQuests"] = { 64555 },	-- Surveying Secrets
-					["provider"] = { 177228 },	-- Highlord Bolvar Fordragon
+					["provider"] = { "n", 177228 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 62.8, 24.9, KORTHIA },
 					["g"] = {
 						i(187187),	-- Korthian Armaments

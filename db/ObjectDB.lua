@@ -1826,6 +1826,7 @@ select(2, ...).ObjectNames = {
 	[368876] = "Mawsworn Cache",
 	[369132] = "Domination Sealed Chest",
 	[369133] = "Domination Seal #1",
+	[369134] = "Domination Sealed Cage",
 	[369135] = "Domination Seal #2",
 	[369138] = "Domination Chest Seal",
 	[369141] = "Mawsworn Cache",
