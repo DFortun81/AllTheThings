@@ -916,6 +916,7 @@ _.HiddenQuestTriggers = {
 	q(53750),	-- Vulture's Nest completed
 	q(53751),	-- Grimwatt's Crash completed
 	-- Outpost Upgrades
+	q(54292),	-- Brennadam completed
 	q(54261),	-- Upgrade: Brennadam started
 	q(54283),	-- Upgrade: Castaway Point started
 	q(54304),	-- Upgrade: Arom's Stand started
