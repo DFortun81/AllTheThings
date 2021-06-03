@@ -2607,6 +2607,28 @@ select(2, ...).FlightPathDB = {
 		["name"] = "Gao-Ran Battlefront, Townlong Steppes",
 		["faction"] = 0,
 	},
+	-- Kyrian Travel Network Nodes
+	[2626] = {
+		["name"] = "Hero's Rest, Bastion",
+	},
+	[2630] = {
+		["name"] = "Aspirant's Rest, Bastion",
+	},
+	[2625] = {
+		["name"] = "Elysian Hold, Bastion",
+	},
+	[2631] = {
+		["name"] = "Xandaria's Vigil, Bastion",
+	},
+	[2634] = {
+		["name"] = "Seat of Eternal Hymns, Bastion",
+	},
+	[2633] = {
+		["name"] = "Temple of Purity, Bastion",
+	},
+	[2632] = {
+		["name"] = "Sagehaven, Bastion",
+	},
 	--]]
 
 	-- Never Implemented Flight Paths (in-game data says they exist but also that's a lie)

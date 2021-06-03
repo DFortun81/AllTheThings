@@ -16,7 +16,44 @@ _.ExpansionFeatures =
 			["g"] = {
 				n(FLIGHT_PATHS, {
 					fp(2528, {	-- Bastion, Elysian Hold
+						["creatureID"] = 159421,	-- Cassius
 						["coord"] = { 65.6, 17.6, BASTION },
+					}),
+					-- Travel Network Nodes
+					fp(2626, {	-- Hero's Rest, Bastion
+						["description"] = "Part of the Kyrian Rank 1 Transport Network.",
+						["creatureID"] = 171037,	-- Eternal Gateway
+						["coord"] = { 51.8, 46.8, BASTION },
+					}),
+					fp(2630, {	-- Aspirant's Rest, Bastion
+						["description"] = "Part of the Kyrian Rank 1 Transport Network.",
+						["creatureID"] = 171091,	-- Eternal Gateway
+						["coord"] = { 48.3, 72.8, BASTION },
+					}),
+					fp(2625, {	-- Elysian Hold, Bastion
+						["description"] = "Part of the Kyrian Rank 1 Transport Network.",
+						["creatureID"] = 171036,	-- Eternal Gateway
+						["coord"] = { 48.7, 61.8, 1707 },
+					}),
+					fp(2631, {	-- Xandaria's Vigil, Bastion
+						["description"] = "Part of the Kyrian Rank 1 Transport Network.",
+						["creatureID"] = 171097,	-- Eternal Gateway
+						["coord"] = { 40.7, 55.2, BASTION },
+					}),
+					fp(2634, {	-- Seat of Eternal Hymns, Bastion
+						["description"] = "Part of the Kyrian Transport Network.",
+						-- ["creatureID"] = ,	-- Eternal Gateway
+						-- ["coord"] = { , BASTION },
+					}),
+					fp(2633, {	-- Temple of Purity, Bastion
+						["description"] = "Part of the Kyrian Transport Network.",
+						-- ["creatureID"] = ,	-- Eternal Gateway
+						-- ["coord"] = { , BASTION },
+					}),
+					fp(2632, {	-- Sagehaven, Bastion
+						["description"] = "Part of the Kyrian Transport Network.",
+						-- ["creatureID"] = ,	-- Eternal Gateway
+						-- ["coord"] = { , BASTION },
 					}),
 				}),
 			},

@@ -1261,3 +1261,8 @@ _.ExpansionFeatures =
 		}),
 	}),
 };
+
+_.HiddenQuestTriggers =
+{
+	q(39412),	-- Something having to do with Naval Missions most likely (triggered with 39414)
+};

@@ -286,6 +286,11 @@ _.Zones =
 					["provider"] = { "i", 187200 },	-- Singing Steel Ingot
 					["coord"] = { 62.1, 56.8, KORTHIA },
 				}),
+				q(64555, {	-- Surveying Secrets
+				--	TODO: do not know SQ; this popped up randomly on 6/2 on my main.  it has the 'campaign quest' ! icon
+					["provider"] = { "n", 177228 },	-- Highlord Bolvar Fordragon
+					["coord"] = { 62.8, 24.9, KORTHIA },
+				}),
 				q(64193, {	-- Table of Discontent
 					["sourceQuests"] = { 63738 },	-- Establishing the Archive
 					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
