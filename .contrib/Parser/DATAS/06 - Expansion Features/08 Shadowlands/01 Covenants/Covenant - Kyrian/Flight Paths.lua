@@ -55,6 +55,16 @@ _.ExpansionFeatures =
 						-- ["creatureID"] = ,	-- Eternal Gateway
 						-- ["coord"] = { , BASTION },
 					}),
+					fp(2636, {	-- Temple of Purity, Bastion
+						["description"] = "Part of the Kyrian Transport Network.",
+						-- ["creatureID"] = ,	-- Eternal Gateway
+						-- ["coord"] = { , BASTION },
+					}),
+					fp(2635, {	-- Sagehaven, Bastion
+						["description"] = "Part of the Kyrian Transport Network.",
+						-- ["creatureID"] = ,	-- Eternal Gateway
+						-- ["coord"] = { , BASTION },
+					}),
 				}),
 			},
 		}),

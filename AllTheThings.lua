@@ -14617,7 +14617,7 @@ function app:GetDataCache()
 						local fp = app.CreateFlightPath(tonumber(i));
 						self.fps[i] = fp;
 						if not fp.u or fp.u ~= 1 then
-							app.print("Cached Flight Path Needs to be Sourced!",i,fp.name)
+							app.print("Flight Path needs Source!",i,fp.name)
 							fp.parent = self;
 							tinsert(self.g, fp);
 						else
