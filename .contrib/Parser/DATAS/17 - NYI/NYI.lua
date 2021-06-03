@@ -2187,6 +2187,34 @@ _.NeverImplemented =
 			i(168031),	-- dnt transference disc
 		}),
 		-- M+ PTR Testing
+		i(181850),	-- Set Keystone Map: Plaguefall
+		i(181852),	-- Set Keystone Map: Halls of Atonement
+		i(181854),	-- Set Keystone Map: Theater of Pain
+		i(181856),	-- Set Keystone Map: Sanguine Depths
+		i(184849),	-- Set Keystone Map: The Necrotic Wake
+		i(181851),	-- Set Keystone Map: Mists of Tirna Scithe
+		i(181853),	-- Set Keystone Map: Spires of Ascension
+		i(181855),	-- Set Keystone Map: De Other Side
+		i(159734),	-- Add Keystone Affix: Fortified
+		i(159730),	-- Add Keystone Affix: Tyrannical
+		i(159732),	-- Add Keystone Affix: Bursting
+		i(159739),	-- Add Keystone Affix: Sanguine
+		i(183948),	-- Add Keystone Affix: Spiteful
+		i(159735),	-- Add Keystone Affix: Grievous
+		i(159731),	-- Add Keystone Affix: Bolstering
+		i(159738),	-- Add Keystone Affix: Raging
+		i(183949),	-- Add Keystone Affix: Inspiring
+		i(159733),	-- Add Keystone Affix: Explosive
+		i(159736),	-- Add Keystone Affix: Necrotic
+		i(159737),	-- Add Keystone Affix: Quaking
+		i(159742),	-- Add Keystone Affix: Volcanic
+		i(183947),	-- Add Keystone Affix: Storming
+		i(187524),	-- Add Keystone Affix: Tormented
+		i(166381),	-- Set Keystone Level: 10
+		i(166379),	-- Set Keystone Level: 12
+		i(166377),	-- Set Keystone Level: 14
+		i(166381),	-- Set Keystone Level: 11
+		i(166378),	-- Set Keystone Level: 13
 		i(175181),	-- Retrieving Data
 		i(175213),	-- Retrieving Data
 		i(178302),	-- Retrieving Data
