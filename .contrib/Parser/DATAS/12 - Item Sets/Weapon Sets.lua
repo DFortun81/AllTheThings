@@ -12,45 +12,45 @@ _.GearSets =
 					-- i(146651, {	-- Arsenal: Gladiator's Weapons
 					i(146650, {	-- Arsenal: Merciless Gladiator's Weapons [Horde / Alliance / Tested ] { Note: Contains Gladiator/Merciless Sets }
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-						["sym"] = { 
+						["sym"] = {
 							{"sub", "pvp_weapons_ensemble", -10003, -665, -661 },
-							{"select", "itemID", 28302 },	--  Gladiator's Bonecracker
-							{"select", "itemID", 28299 },	--  Gladiator's Bonegrinder
-							{"select", "itemID", 28308 },	--  Gladiator's Cleaver
-							{"select", "itemID", 28298 },	--  Gladiator's Decapitator
-							{"select", "itemID", 28346 },	--  Gladiator's Endgame
-							{"select", "itemID", 28314 },	--  Gladiator's Fleshslicer
-							{"select", "itemID", 32450 },	--  Gladiator's Gav,
-							{"select", "itemID", 24550 },	--  Gladiator's Greatsword
-							{"select", "itemID", 28309 },	--  Gladiator's Hacke,
-							{"select", "itemID", 28294 },	--  Gladiator's Heavy Crossbow
-							{"select", "itemID", 28476 },	--  Gladiator's Maul
-							{"select", "itemID", 28300 },	--  Gladiator's Painsaw
-							{"select", "itemID", 28305 },	--  Gladiator's Pummeler
-							{"select", "itemID", 28307 },	--  Gladiator's Quickblade
-							{"select", "itemID", 32452 },	--  Gladiator's Reprieve
-							{"select", "itemID", 28313 },	--  Gladiator's Rippe
-							{"select", "itemID", 32451 },	--  Gladiator's Salvation
-							{"select", "itemID", 28312 },	--  Gladiator's Shanker
-							{"select", "itemID", 28358 },	--  Gladiator's Shield Wall
-							{"select", "itemID", 28310 },	--  Gladiator's Shiv
-							{"select", "itemID", 28295 },	--  Gladiator's Slicer
-							{"select", "itemID", 28297 },	--  Gladiator's Spellblade
-							{"select", "itemID", 28320 },	--  Gladiator's Touch of Defeat
-							{"select", "itemID", 24557 },	--  Gladiator's War Staff
+							{"select", "itemID", 28302 },	-- Gladiator's Bonecracker
+							{"select", "itemID", 28299 },	-- Gladiator's Bonegrinder
+							{"select", "itemID", 28308 },	-- Gladiator's Cleaver
+							{"select", "itemID", 28298 },	-- Gladiator's Decapitator
+							{"select", "itemID", 28346 },	-- Gladiator's Endgame
+							{"select", "itemID", 28314 },	-- Gladiator's Fleshslicer
+							{"select", "itemID", 32450 },	-- Gladiator's Gavel
+							{"select", "itemID", 24550 },	-- Gladiator's Greatsword
+							{"select", "itemID", 28309 },	-- Gladiator's Hacker
+							{"select", "itemID", 28294 },	-- Gladiator's Heavy Crossbow
+							{"select", "itemID", 28476 },	-- Gladiator's Maul
+							{"select", "itemID", 28300 },	-- Gladiator's Painsaw
+							{"select", "itemID", 28305 },	-- Gladiator's Pummeler
+							{"select", "itemID", 28307 },	-- Gladiator's Quickblade
+							{"select", "itemID", 32452 },	-- Gladiator's Reprieve
+							{"select", "itemID", 28313 },	-- Gladiator's Ripper
+							{"select", "itemID", 32451 },	-- Gladiator's Salvation
+							{"select", "itemID", 28312 },	-- Gladiator's Shanker
+							{"select", "itemID", 28358 },	-- Gladiator's Shield Wall
+							{"select", "itemID", 28310 },	-- Gladiator's Shiv
+							{"select", "itemID", 28295 },	-- Gladiator's Slicer
+							{"select", "itemID", 28297 },	-- Gladiator's Spellblade
+							{"select", "itemID", 28320 },	-- Gladiator's Touch of Defeat
+							{"select", "itemID", 24557 },	-- Gladiator's War Staff
 							{"exclude", "itemID", 146650 },	-- Exclude itself to stop duplicating
 						 },
 					}),
 					i(146649, {	-- Arsenal: Vengeful Gladiator's Weapons [ Horde / Alliance / Tested ]
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-						["sym"] = { 
+						["sym"] = {
 							{"sub", "pvp_weapons_ensemble", -10003, -666, -661 },
 							{"exclude", "itemID", 146649 },	-- Exclude itself to stop duplicating
 						 },
 					}),
 					i(146648, {	-- Arsenal: Brutal Gladiator's Weapons [ Horde / Alliance / Tested ]
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-						["sym"] = { 
+						["sym"] = {
 							{"sub", "pvp_weapons_ensemble", -10003, -667, -661 },
 							{"exclude", "itemID", 146648 },	-- Exclude itself to stop duplicating
 						 },
@@ -59,42 +59,42 @@ _.GearSets =
 				tier(3, {	-- Wrath of the Lich King
 					i(146647, {	-- Arsenal: Savage Gladiator's Weapons
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-						["sym"] = { 
+						["sym"] = {
 							{"sub", "pvp_weapons_ensemble", -10014, -668, -9983 },
 							{"exclude", "itemID", 146647 },	-- Exclude itself to stop duplicating
 						},
 					}),
 					i(146646, {	-- Arsenal: Hateful Gladiator's Weapons
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-						["sym"] = { 
+						["sym"] = {
 							{"sub", "pvp_weapons_ensemble", -10014, -668, -660 },
 							{"exclude", "itemID", 146646 },	-- Exclude itself to stop duplicating
 						},
 					}),
 					i(146645, {	-- Arsenal: Deadly Gladiator's Weapon
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-						["sym"] = { 
+						["sym"] = {
 							{"sub", "pvp_weapons_ensemble", -10014, -668, -661 },
 							{"exclude", "itemID", 146645 },	-- Exclude itself to stop duplicating
 						},
 					}),
 					i(146644, {	-- Arsenal: Furious Gladiator's Weapons
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-						["sym"] = { 
+						["sym"] = {
 							{"sub", "pvp_weapons_ensemble", -10014, -669, -661 },
 							{"exclude", "itemID", 146644 },	-- Exclude itself to stop duplicating
 						},
 					}),
 					i(146643, {	-- Arsenal: Relentless Gladiator's Weapons
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-						["sym"] = { 
+						["sym"] = {
 							{"sub", "pvp_weapons_ensemble", -10014, -670, -661 },
 							{"exclude", "itemID", 146644 },	-- Exclude itself to stop duplicating
 						},
 					}),
 					i(146642, {	-- Arsenal: Wrathful Gladiator's Weapons
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-						["sym"] = { 
+						["sym"] = {
 							{"sub", "pvp_weapons_ensemble", -10014, -671, -661 },
 							{"exclude", "itemID", 146642 },	-- Exclude itself to stop duplicating
 						},
@@ -471,28 +471,28 @@ _.GearSets =
 				tier(6, {	-- Warlords of Draenor
 					i(138625, {	-- Arsenal: Primal Combatant's Weapons [ Alliance / Tested ]
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-						["sym"] = { 
+						["sym"] = {
 							{"sub", "pvp_weapons_faction_ensemble", -9981, -679, -9914, -660 },
 							{"exclude", "itemID", 138625 },	-- Exclude itself to stop duplicating
 						},
 					}),
 					i(138626, {	-- Arsenal: Primal Combatant's Weapons [ Horde ]
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-						["sym"] = { 
+						["sym"] = {
 							{"sub", "pvp_weapons_faction_ensemble", -9981, -679, -9913, -660 },
 							{"exclude", "itemID", 138626 },	-- Exclude itself to stop duplicating
 						},
 					}),
 					i(138631, {	-- Arsenal: Primal Gladiator's Weapons [ Alliance ]
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-						["sym"] = { 
+						["sym"] = {
 							{"sub", "pvp_weapons_faction_ensemble", -9981, -679, -9914, -661 },
 							{"exclude", "itemID", 138631 },	-- Exclude itself to stop duplicating
 						},
 					}),
 					i(138632, {	-- Arsenal: Primal Gladiator's Weapons [ Horde / Tested ]
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-						["sym"] = { 
+						["sym"] = {
 							{"sub", "pvp_weapons_faction_ensemble", -9981, -679, -9913, -661 },
 							{"exclude", "itemID", 138632 },	-- Exclude itself to stop duplicating
 						},
@@ -503,14 +503,14 @@ _.GearSets =
 					}),
 					i(138630, {	-- Arsenal: Wild Combatant's Weapons [ Alliance ]
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-						["sym"] = { 
+						["sym"] = {
 							{"sub", "pvp_weapons_faction_ensemble", -9981, -680, -9914, -660 },
 							{"exclude", "itemID", 138631 },	-- Exclude itself to stop duplicating
 						},
 					}),
 					i(138633, {	-- Arsenal: Wild Gladiator's Weapons [ Alliance / Tested ]
 						["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-						["sym"] = { 
+						["sym"] = {
 							{"sub", "pvp_weapons_faction_ensemble", -9981, -680, -9914, -661 },
 							{"exclude", "itemID", 138633 },	-- Exclude itself to stop duplicating
 						},

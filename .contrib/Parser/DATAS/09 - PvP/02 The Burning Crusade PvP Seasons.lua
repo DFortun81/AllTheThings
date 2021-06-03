@@ -3241,45 +3241,45 @@ _.PVP =
 						}),
 					}),
 					n(-331, {	-- Held In Offhand
-						un(REMOVED_FROM_GAME, i(35019)), -- Brutal Gladiator's Idol of Resolve
-						un(REMOVED_FROM_GAME, i(35020)), -- Brutal Gladiator's Idol of Steadfastness
-						un(REMOVED_FROM_GAME, i(35021)), -- Brutal Gladiator's Idol of Tenacity
-						un(REMOVED_FROM_GAME, i(35039)), -- Brutal Gladiator's Libram of Fortitude
-						un(REMOVED_FROM_GAME, i(35040)), -- Brutal Gladiator's Libram of Justice
-						un(REMOVED_FROM_GAME, i(35041)), -- Brutal Gladiator's Libram of Vengeance
-						un(REMOVED_FROM_GAME, i(35104)), -- Brutal Gladiator's Totem of Indomitability
-						un(REMOVED_FROM_GAME, i(35105)), -- Brutal Gladiator's Totem of Survival
-						un(REMOVED_FROM_GAME, i(35106)), -- Brutal Gladiator's Totem of the Third Wind
-						un(REMOVED_FROM_GAME, i(35108)), -- Brutal Gladiator's War Edge (Throw Wep)
+						un(REMOVED_FROM_GAME, i(35019)),	-- Brutal Gladiator's Idol of Resolve
+						un(REMOVED_FROM_GAME, i(35020)),	-- Brutal Gladiator's Idol of Steadfastness
+						un(REMOVED_FROM_GAME, i(35021)),	-- Brutal Gladiator's Idol of Tenacity
+						un(REMOVED_FROM_GAME, i(35039)),	-- Brutal Gladiator's Libram of Fortitude
+						un(REMOVED_FROM_GAME, i(35040)),	-- Brutal Gladiator's Libram of Justice
+						un(REMOVED_FROM_GAME, i(35041)),	-- Brutal Gladiator's Libram of Vengeance
+						un(REMOVED_FROM_GAME, i(35104)),	-- Brutal Gladiator's Totem of Indomitability
+						un(REMOVED_FROM_GAME, i(35105)),	-- Brutal Gladiator's Totem of Survival
+						un(REMOVED_FROM_GAME, i(35106)),	-- Brutal Gladiator's Totem of the Third Wind
+						un(REMOVED_FROM_GAME, i(35108)),	-- Brutal Gladiator's War Edge (Throw Wep)
 					}),
 					f(51,	{	-- Neck
-						un(REMOVED_FROM_GAME, i(35132)), -- Guardian's Pendant of Conquest
-						un(REMOVED_FROM_GAME, i(35133)), -- Guardian's Pendant of Dominance
-						un(REMOVED_FROM_GAME, i(37929)), -- Guardian's Pendant of Reprieve
-						un(REMOVED_FROM_GAME, i(35134)), -- Guardian's Pendant of Salvation
-						un(REMOVED_FROM_GAME, i(37928)), -- Guardian's Pendant of Subjugation
-						un(REMOVED_FROM_GAME, i(35135)), -- Guardian's Pendant of Triumph
+						un(REMOVED_FROM_GAME, i(35132)),	-- Guardian's Pendant of Conquest
+						un(REMOVED_FROM_GAME, i(35133)),	-- Guardian's Pendant of Dominance
+						un(REMOVED_FROM_GAME, i(37929)),	-- Guardian's Pendant of Reprieve
+						un(REMOVED_FROM_GAME, i(35134)),	-- Guardian's Pendant of Salvation
+						un(REMOVED_FROM_GAME, i(37928)),	-- Guardian's Pendant of Subjugation
+						un(REMOVED_FROM_GAME, i(35135)),	-- Guardian's Pendant of Triumph
 					}),
 					f(52,	{	-- Finger
-						un(REMOVED_FROM_GAME, i(35129)), -- Guardian's Band of Dominance
-						un(REMOVED_FROM_GAME, i(35130)), -- Guardian's Band of Salvation
-						un(REMOVED_FROM_GAME, i(37927)), -- Guardian's Band of Subjugation
-						un(REMOVED_FROM_GAME, i(35131)), -- Guardian's Band of Triumph
+						un(REMOVED_FROM_GAME, i(35129)),	-- Guardian's Band of Dominance
+						un(REMOVED_FROM_GAME, i(35130)),	-- Guardian's Band of Salvation
+						un(REMOVED_FROM_GAME, i(37927)),	-- Guardian's Band of Subjugation
+						un(REMOVED_FROM_GAME, i(35131)),	-- Guardian's Band of Triumph
 					}),
 					f(53,	{	-- Trinket
-						un(REMOVED_FROM_GAME, i(37864)), -- (A) Medallion of the Alliance
-						un(REMOVED_FROM_GAME, i(37865)), -- (H) Medallion of the Horde
-						un(REMOVED_FROM_GAME, i(35327)), -- Battlemaster's Alacrity
-						un(REMOVED_FROM_GAME, i(41587)), -- Battlemaster's Celerity
-						un(REMOVED_FROM_GAME, i(41588)), -- Battlemaster's Aggression
+						un(REMOVED_FROM_GAME, i(37864)),	-- (A) Medallion of the Alliance
+						un(REMOVED_FROM_GAME, i(37865)),	-- (H) Medallion of the Horde
+						un(REMOVED_FROM_GAME, i(35327)),	-- Battlemaster's Alacrity
+						un(REMOVED_FROM_GAME, i(41587)),	-- Battlemaster's Celerity
+						un(REMOVED_FROM_GAME, i(41588)),	-- Battlemaster's Aggression
 						un(REMOVED_FROM_GAME, i(41589)),	-- Battlemaster's Resolve
 						un(REMOVED_FROM_GAME, i(41590)),	-- Battlemaster's Courage
 						un(REMOVED_FROM_GAME, i(37865)),	-- Medallion of the Horde (epic)
 						un(REMOVED_FROM_GAME, i(38588)),	-- Medallion of the Horde (dk)
 						un(REMOVED_FROM_GAME, i(37864)),	-- Medallion of the Alliance (epic)
 						un(REMOVED_FROM_GAME, i(38589)),	-- Medallion of the Alliance (dk)
-						un(REMOVED_FROM_GAME, i(69861)), -- (A) Medallion of the Alliance (not during bc, but for bc)
-						un(REMOVED_FROM_GAME, i(69862)), -- (H) Medallion of the Alliance (not during bc, but for bc)
+						un(REMOVED_FROM_GAME, i(69861)),	-- (A) Medallion of the Alliance (not during bc, but for bc)
+						un(REMOVED_FROM_GAME, i(69862)),	-- (H) Medallion of the Alliance (not during bc, but for bc)
 					}),
 				}),
 			}),
