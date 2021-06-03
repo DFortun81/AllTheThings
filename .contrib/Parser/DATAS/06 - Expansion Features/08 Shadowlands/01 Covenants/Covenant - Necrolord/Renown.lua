@@ -43,10 +43,25 @@ _.ExpansionFeatures =
 						}),
 						i(186524,  {	-- A Tiny Vial of Slime
 							["description"] = "Requires 56 Renown.",
+							["questID"] = 64098,
 						}),
 					}),
 				}),
 			},
 		}),
 	}),
+};
+
+_.HiddenQuestTriggers = {
+	q(62753),	-- hitting Renown 19
+	q(62754),	-- hitting Renown 35
+	q(62926),	-- hitting Renown 39
+	q(64097),	-- hitting Renown 45
+	q(64391),	-- hitting Renown 48 (may be related to specific legendary item Memory of Death's Fathom rather than the Renown level)
+	q(64100),	-- hitting Renown 50
+	q(64446),	-- hitting Renown 52
+	q(64099),	-- hitting Renown 56
+	q(64108),	-- hitting Renown 59
+	q(64373),	-- hitting Renown 60
+	q(63628),	-- learning Ensemble: Initiate's Necromantle Vestments (Renown reward)
 };

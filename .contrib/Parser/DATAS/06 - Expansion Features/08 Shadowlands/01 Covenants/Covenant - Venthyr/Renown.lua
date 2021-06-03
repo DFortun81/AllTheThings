@@ -43,9 +43,6 @@ _.ExpansionFeatures =
 								i(185063),	-- Harvester's Court Wraps
 							},
 						}),
-						i(186472,  {	-- Wisps of Memory
-							["description"] = "Requires Renown 52.",
-						}),
 						i(186580,  {	-- A Tiny Sinstone
 							["description"] = "Requires Renown 56.",
 							["questID"] = 64132,

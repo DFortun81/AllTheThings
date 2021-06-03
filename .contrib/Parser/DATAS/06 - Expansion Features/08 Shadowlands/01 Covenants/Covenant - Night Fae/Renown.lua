@@ -39,9 +39,6 @@ _.ExpansionFeatures =
 							i(184966),	-- Pure Sight Vestments
 							i(184973),	-- Pure Sight Wraps
 						}),
-						i(186472,  {	-- Wisps of Memory
-							["description"] = "Requires Renown 52.",
-						}),
 						i(186473, {	-- A Tiny Winter Staff
 							["description"] = "Requires 56 Renown.",
 							["questID"] = 64078,

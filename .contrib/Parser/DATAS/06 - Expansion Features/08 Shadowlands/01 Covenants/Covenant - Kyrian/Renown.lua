@@ -45,6 +45,7 @@ _.ExpansionFeatures =
 						}),
 						i(186593,  {	-- A Tiny Pair of Wings
 							["description"] = "Requires Renown 56.",
+							["questID"] = 64136,
 						}),
 					}),
 				}),
@@ -55,4 +56,10 @@ _.ExpansionFeatures =
 
 _.HiddenQuestTriggers = {
 	q(64138),	-- hitting Renown 45
+	q(64409),	-- hitting Renown 48 (received Memory of the Raging Vesper Vortex, possibly tied to specific legendary item and not Renown)
+	q(64145),	-- hitting Renown 50
+	q(64443),	-- hitting Renown 52
+	q(64137),	-- hitting Renown 56
+	q(64146),	-- hitting Renown 59
+	q(64372),	-- hitting Renown 60
 };

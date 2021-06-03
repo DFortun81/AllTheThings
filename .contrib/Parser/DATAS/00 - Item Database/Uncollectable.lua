@@ -5,6 +5,9 @@ local i = function(itemID)
 	return item;
 end
 
+-- 9.1 (no unsorted yet so don't know categories)
+i(186472);	-- Wisps of Memory
+
 -- Anima Items
 i(184147);	-- Agony Enrichment Device
 i(181540);	-- Animaflower Bud
