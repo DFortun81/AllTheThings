@@ -103,6 +103,14 @@ _.ExpansionFeatures =
 						}),
 					}),
 					n(-905, {	-- Command Table
+						q(64459, {	-- Adventurer: Elwyn
+							["description"] = "Requires Renown 62.",
+							["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+							["coord"] = { 44.7, 56.3, ARDENWEALD },
+							["g"] = {
+								follower(1338),	-- Elwyn
+							},
+						}),
 						q(61857, {	-- Adventurer: Groonoomcrooek
 							["description"] = "Requires Renown 38.",
 							["provider"] = { "n", 164023 },	-- Watcher Vesperbloom

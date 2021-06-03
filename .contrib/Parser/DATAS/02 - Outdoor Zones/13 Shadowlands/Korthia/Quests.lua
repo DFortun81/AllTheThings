@@ -145,6 +145,14 @@ _.Zones =
 					["provider"] = { "n", 177928 },	-- Archivist Roh-Dahl
 					["coord"] = { 39.4, 51.3, KORTHIA },
 				}),
+				q(64556, {	-- In Need of Assistance
+					["sourceQuests"] = { 64555 },	-- Surveying Secrets
+					["provider"] = { 177228 },	-- Highlord Bolvar Fordragon
+					["coord"] = { 62.8, 24.9, KORTHIA },
+					["g"] = {
+						i(187187),	-- Korthian Armaments
+					},
+				}),
 				q(63732, {	-- Interrupt the Interrogations
 					["sourceQuests"] = { 63731 },	-- Shattered Relics
 					["provider"] = { "n", 178694 },	-- Scholar Roh-Suir
@@ -433,6 +441,13 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 61.8, 25.6, KORTHIA },
 				}),
+				q(64560, {	-- Anima Reclamation
+				--	TODO - this version was picked up after picking up 'in need of assistance' - not sure if that's going to be a daily/weekly???  picked up on 6/2
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 178793 },	-- Kael'thas Sunstrider
+					["isDaily"] = true,
+					["coord"] = { 61.8, 25.6, KORTHIA },
+				}),
 				q(63934, {	-- Assail Mail
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 178802 },	-- Messenger Mnemis
@@ -622,6 +637,13 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 64.6, 25.4, KORTHIA },
 				}),
+				q(64561, {	-- Observational Records
+				--	TODO - this version was picked up after picking up 'in need of assistance' - not sure if that's going to be a daily/weekly???  picked up on 6/2
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 178844 },	-- Ta'nasi
+					["isDaily"] = true,
+					["coord"] = { 64.6, 25.4, KORTHIA },
+				}),
 				q(64103, {	-- Old Tricks Work Best
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 178808 },	-- Baroness Draka
@@ -781,7 +803,18 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 61.4, 23.2, KORTHIA },
 				}),
+				q(64562, {	-- We Need a Healer - You!
+				--	TODO - this version was picked up after picking up 'in need of assistance' - not sure if that's going to be a daily/weekly???  picked up on 6/2
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 179216 },	-- Mikanikos
+					["isDaily"] = true,
+					["coord"] = { 61.4, 23.2, KORTHIA },
+				}),
 			}),
 		}),
 	}),
+};
+
+_.HiddenQuestTriggers = {
+	q(64563),	-- triggered when turning in #64556, "In Need of Assistance"
 };

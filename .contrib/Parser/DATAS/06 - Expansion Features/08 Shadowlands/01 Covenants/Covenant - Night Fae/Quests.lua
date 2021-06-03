@@ -50,6 +50,11 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 176096 },	-- Laurel
 						["coord"] = { 34.0, 37.0, 1701 },	-- The Trunk
 					}),
+					q(64085, {	-- Night Fae Tactician #2
+						["description"] = "Requires Renown 59.",
+						["provider"] = { "n", 176096 },	-- Laurel
+						["coord"] = { 34.0, 37.0, 1701 },	-- The Trunk
+					}),
 					q(63346, {	-- Night Fae Veteran
 						["sourceQuests"] = { 62899 },	-- The Endless Forest
 						["description"] = "Requires Renown 7.",

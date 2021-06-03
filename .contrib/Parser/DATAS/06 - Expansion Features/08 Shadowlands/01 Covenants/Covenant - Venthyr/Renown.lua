@@ -59,4 +59,7 @@ _.ExpansionFeatures =
 
 _.HiddenQuestTriggers = {
 	q(64133),	-- hitting Renown 56
+	q(64135),	-- hitting Renown 59
+	q(64375),	-- hitting Renown 60
+	q(63630),	-- learning Ensemble: Harvester's Court Attire (Renown reward)
 };

@@ -508,6 +508,11 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 175772 },	-- Rahel
 						["coord"] = { 54.0, 27.2, 1699 },	-- Sinfall Reaches
 					}),
+					q(64083, {	-- Sinfall Tactician #2
+						["description"] = "Requires Renown 59.",
+						["provider"] = { "n", 175772 },	-- Rahel
+						["coord"] = { 54.0, 27.2, 1699 },	-- Sinfall Reaches
+					}),
 					q(63340, {	-- Sinfall Veteran
 					--	["sourceQuests"] = {  },	-- probably requires something between "our true purpose" and "ashes of the tower," unsure what unlocks the ability to pick up "return lost souls," which gives renown
 						["description"] = "Requires Renown 7.",

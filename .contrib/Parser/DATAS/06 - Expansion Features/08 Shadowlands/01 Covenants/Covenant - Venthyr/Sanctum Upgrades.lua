@@ -156,6 +156,14 @@ _.ExpansionFeatures =
 								follower(1254),	-- Lost Sybille
 							},
 						}),
+						q(64468, {	-- Adventurer: Madame Iza
+							["description"] = "Requires Renown 62.",
+							["provider"] = { "n", 164741 },	-- Tactician Sakaa
+							["coord"] = { 57.8, 58.6, 1699 },	-- Sinfall Reaches
+							["g"] = {
+								follower(1346),	-- Madame Iza
+							},
+						}),
 						q(61786, {	-- Adventurer: Stonehead
 						--	TODO: does this also require 58327, "Snacks for Stonehead"?  (quest text references you being friends with him)
 							["sourceQuests"] = { 58444 },	-- Return to Sinfall

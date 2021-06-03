@@ -22,6 +22,7 @@ _.ObjectNames = {
 	[369133] = "Domination Seal #1",
 	[369135] = "Domination Seal #2",
 	[369138] = "Domination Chest Seal",
+	[369134] = "Domination Sealed Cage",
 	[369144] = "The Harrower's Key Ring",
 	[369145] = "Helgarde Supply Cache",
 	[369148] = "Glittering Nest Material",

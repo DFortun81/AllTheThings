@@ -191,7 +191,8 @@ _.Zones =
 				o(369339, {	-- Mawsworn Cache
 					["questID"] = 64363,
 					["isDaily"] = true,
-					["coord"] = { 61.2, 57.9, KORTHIA },
+				--	["coord"] = { 61.2, 57.9, KORTHIA }, TODO old coords?  was always here inside the building, but as of 6/2 i found it nearby but outside.  leaving this here in case they just added add'l coords
+					["coord"] = { 62.3, 58.6, KORTHIA },
 					["g"] = {
 						i(187431),	-- Sleeping Armament
 					},
@@ -306,6 +307,7 @@ _.Zones =
 						{ 62.4, 37.5, KORTHIA },	-- Relic Cache
 						{ 45.8, 30.1, KORTHIA },	-- Shardhide Stash
 						{ 47.4, 26.2, KORTHIA },	-- Shardhide Stash
+						{ 48.1, 33.2, KORTHIA },	-- Shardhide Stash
 						{ 49.1, 30.1, KORTHIA },	-- Shardhide Stash
 						{ 49.5, 26.7, KORTHIA },	-- Shardhide Stash
 						{ 49.7, 33.3, KORTHIA },	-- Shardhide Stash
@@ -324,6 +326,7 @@ _.Zones =
 						{ 32.7, 42.0, KORTHIA },	-- Pile of Bones
 						{ 32.8, 45.3, KORTHIA },	-- Pile of Bones
 						{ 32.8, 55.1, KORTHIA },	-- Pile of Bones
+						{ 34.1, 44.0, KORTHIA },	-- Pile of Bones
 						{ 34.7, 45.8, KORTHIA },	-- Pile of Bones
 						{ 37.1, 53.7, KORTHIA },	-- Pile of Bones
 						{ 38.2, 51.7, KORTHIA },	-- Pile of Bones
@@ -347,7 +350,9 @@ _.Zones =
 						{ 62.4, 37.5, KORTHIA },	-- Relic Cache
 						{ 45.8, 30.1, KORTHIA },	-- Shardhide Stash
 						{ 47.4, 26.2, KORTHIA },	-- Shardhide Stash
+						{ 48.1, 33.2, KORTHIA },	-- Shardhide Stash
 						{ 49.1, 30.1, KORTHIA },	-- Shardhide Stash
+						{ 49.5, 26.7, KORTHIA },	-- Shardhide Stash
 						{ 49.7, 33.3, KORTHIA },	-- Shardhide Stash
 						{ 50.4, 31.1, KORTHIA },	-- Shardhide Stash
 					},
@@ -364,6 +369,7 @@ _.Zones =
 						{ 32.7, 42.0, KORTHIA },	-- Pile of Bones
 						{ 32.8, 45.3, KORTHIA },	-- Pile of Bones
 						{ 32.8, 55.1, KORTHIA },	-- Pile of Bones
+						{ 34.1, 44.0, KORTHIA },	-- Pile of Bones
 						{ 34.7, 45.8, KORTHIA },	-- Pile of Bones
 						{ 37.1, 53.7, KORTHIA },	-- Pile of Bones
 						{ 38.2, 51.7, KORTHIA },	-- Pile of Bones
@@ -387,7 +393,9 @@ _.Zones =
 						{ 62.4, 37.5, KORTHIA },	-- Relic Cache
 						{ 45.8, 30.1, KORTHIA },	-- Shardhide Stash
 						{ 47.4, 26.2, KORTHIA },	-- Shardhide Stash
+						{ 48.1, 33.2, KORTHIA },	-- Shardhide Stash
 						{ 49.1, 30.1, KORTHIA },	-- Shardhide Stash
+						{ 49.5, 26.7, KORTHIA },	-- Shardhide Stash
 						{ 49.7, 33.3, KORTHIA },	-- Shardhide Stash
 						{ 50.4, 31.1, KORTHIA },	-- Shardhide Stash
 					},
@@ -404,6 +412,7 @@ _.Zones =
 						{ 32.7, 42.0, KORTHIA },	-- Pile of Bones
 						{ 32.8, 45.3, KORTHIA },	-- Pile of Bones
 						{ 32.8, 55.1, KORTHIA },	-- Pile of Bones
+						{ 34.1, 44.0, KORTHIA },	-- Pile of Bones
 						{ 34.7, 45.8, KORTHIA },	-- Pile of Bones
 						{ 37.1, 53.7, KORTHIA },	-- Pile of Bones
 						{ 38.2, 51.7, KORTHIA },	-- Pile of Bones
@@ -427,7 +436,9 @@ _.Zones =
 						{ 62.4, 37.5, KORTHIA },	-- Relic Cache
 						{ 45.8, 30.1, KORTHIA },	-- Shardhide Stash
 						{ 47.4, 26.2, KORTHIA },	-- Shardhide Stash
+						{ 48.1, 33.2, KORTHIA },	-- Shardhide Stash
 						{ 49.1, 30.1, KORTHIA },	-- Shardhide Stash
+						{ 49.5, 26.7, KORTHIA },	-- Shardhide Stash
 						{ 49.7, 33.3, KORTHIA },	-- Shardhide Stash
 						{ 50.4, 31.1, KORTHIA },	-- Shardhide Stash
 					},

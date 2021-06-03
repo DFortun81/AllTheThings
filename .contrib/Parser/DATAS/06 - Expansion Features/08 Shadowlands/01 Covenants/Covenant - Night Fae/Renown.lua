@@ -39,8 +39,12 @@ _.ExpansionFeatures =
 							i(184966),	-- Pure Sight Vestments
 							i(184973),	-- Pure Sight Wraps
 						}),
+						i(186472,  {	-- Wisps of Memory
+							["description"] = "Requires Renown 52.",
+						}),
 						i(186473, {	-- A Tiny Winter Staff
 							["description"] = "Requires 56 Renown.",
+							["questID"] = 64078,
 						}),
 					}),
 				}),
@@ -52,4 +56,10 @@ _.ExpansionFeatures =
 _.HiddenQuestTriggers = {
 	q(64074),	-- hitting Renown 45 - received mount, Ardenweald Wilderling
 	q(64397),	-- hitting Renown 48 - received i(186687), Memory of Celestial Spirits
+	q(64081),	-- hitting Renown 50
+	q(64449),	-- hitting Renown 52
+	q(64079),	-- hitting Renown 56
+	q(64088),	-- hitting Renown 59
+	q(64374),	-- hitting Renown 60
+	q(63598),	-- learning Ensemble: Garb of Pure Spirit (Renown reward)
 };

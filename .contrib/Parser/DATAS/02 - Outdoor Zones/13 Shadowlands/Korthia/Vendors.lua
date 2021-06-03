@@ -254,6 +254,7 @@ _.Zones =
 								}),
 								n(-319, {	-- Weapons
 									i(186759),	-- Korthian Anima Vessel*
+									i(186768),	-- Korthian Attendant's Cane*
 									i(185890),	-- Korthian Caretaker's Kris*
 									i(185888),	-- Korthian Caretaker's Orb
 									i(185900),	-- Korthian Caretaker's Rod
@@ -264,6 +265,9 @@ _.Zones =
 									i(185941),	-- Korthian Scholar's Signet*
 									i(185895),	-- Lost Wayfairer's Band*
 									i(185903),	-- Soul-Seeker's Ring*
+								}),
+								f(53,   {	-- Trinkets
+									i(186156),	-- Tome of Insight
 								}),
 							},
 						}),

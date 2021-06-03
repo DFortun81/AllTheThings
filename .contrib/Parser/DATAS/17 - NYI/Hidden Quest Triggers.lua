@@ -3531,6 +3531,11 @@ _.HiddenQuestTriggers =
 		-----------------
 		-- SHADOWLANDS --
 		-----------------
+		-- Generic SL tracking quests (cannot be placed in a single file)
+		q(64508),	-- generic Renown quest - hitting Renown 41 on Venthyr, hitting 40 on Night Fae
+		q(64073),	-- generic Renown quest for hitting 47 (any covenant)
+		q(64068),	-- generic Renown quest for hitting 61 (any covenant)
+		
 		-- Exile's Reach
 		q(58418),	-- Triggers shortly after login. Possibly some kind of indicator for the account having done it at least once per faction?
 		q(54927),	-- Triggers after the cinematic. You can't move until this quest triggers
@@ -4306,10 +4311,8 @@ _.HiddenQuestTriggers =
 		q(62750),	-- hitting Renown 19 on Venthyr / unlocking Deepening Bond 4% stam increase
 		q(62751),	-- hitting Renown 35 on Venthyr / unlocking Deepening Bond 6% stam increase
 		q(62925),	-- hitting Renown 39 on Venthyr / received mount Gravestone Battle Gargon
-		q(64508),	-- hitting Renown 41 on Venthyr
 		q(64131),	-- hitting Renown 45 on Venthyr / received mount Sinfall Gravewing
 		q(64076),	-- hitting Renown 46 on Venthyr
-		q(64073),	-- hitting Renown 47 on Venthyr
 		q(64134),	-- hitting Renown 50 on Venthyr
 		q(64452),	-- hitting Renown 52 on Venthyr
 		q(59744),	-- when opening the Battered Chest while on Repair and Restore
