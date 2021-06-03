@@ -2212,6 +2212,7 @@ for key,value in pairs({
 	[251857] = "Baú do Tesouro",	-- Treasure Chest
 	[251991] = "A Égide de Aggramar",	-- The Aegis of Aggramar
 	[252107] = "Sinalizador de Telemancia Desernegizado",	-- Unpowered Telemancy Beacon
+	[252232] = "Incunábulo de Aponi",	-- Aponi's Libram
 	[252258] = "Fonte do Meridiano",	-- Leyline Feed
 	[252259] = "Fonte do Meridiano",	-- Leyline Feed
 	[252260] = "Fonte do Meridiano",	-- Leyline Feed

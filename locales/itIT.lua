@@ -2212,6 +2212,7 @@ for key,value in pairs({
 	[251857] = "Cassa del Tesoro",	-- Treasure Chest
 	[251991] = "Egida di Aggramar",	-- The Aegis of Aggramar
 	[252107] = "Segnalatore Telemantico Disattivato",	-- Unpowered Telemancy Beacon
+	[252232] = "Libram di Aponi",	-- Aponi's Libram
 	[252258] = "Fonte di Faglia",	-- Leyline Feed
 	[252259] = "Fonte di Faglia",	-- Leyline Feed
 	[252260] = "Fonte di Faglia",	-- Leyline Feed

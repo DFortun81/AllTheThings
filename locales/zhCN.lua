@@ -2264,6 +2264,7 @@ for key, value in pairs({
 	[251857] = "宝箱",	-- Treasure Chest
 	[251991] = "阿格拉玛之盾",	-- The Aegis of Aggramar
 	[252107] = "未充能的传送道标",	-- Unpowered Telemancy Beacon
+	[252232] = "奥伯妮的圣契",	-- Aponi's Libram
 	[252258] = "魔网能量",	-- Leyline Feed
 	[252259] = "魔网能量",	-- Leyline Feed
 	[252260] = "魔网能量",	-- Leyline Feed

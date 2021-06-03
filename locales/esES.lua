@@ -2212,6 +2212,7 @@ for key,value in pairs({
 	[251857] = "Arqueta",	-- Treasure Chest
 	[251991] = "Égida de Aggramar",	-- The Aegis of Aggramar
 	[252107] = "Baliza de telemancia desactivada",	-- Unpowered Telemancy Beacon
+	[252232] = "Tratado de Aponi",	-- Aponi's Libram
 	[252258] = "Suministro de línea Ley",	-- Leyline Feed
 	[252259] = "Suministro de línea Ley",	-- Leyline Feed
 	[252260] = "Suministro de línea Ley",	-- Leyline Feed

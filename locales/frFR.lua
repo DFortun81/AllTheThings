@@ -2211,6 +2211,7 @@ for key,value in pairs({
 	[251857] = "Coffre au trésor",	-- Treasure Chest
 	[251991] = "Égide d’Aggramar",	-- The Aegis of Aggramar
 	[252107] = "Balise de télémancie inactive",	-- Unpowered Telemancy Beacon
+	[252232] = "Libram d’Aponi",	-- Aponi's Libram
 	[252258] = "Alimentation tellurique",	-- Leyline Feed
 	[252259] = "Alimentation tellurique",	-- Leyline Feed
 	[252260] = "Alimentation tellurique",	-- Leyline Feed

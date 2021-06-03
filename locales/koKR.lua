@@ -2212,6 +2212,7 @@ for key,value in pairs({
 	[251857] = "보물 상자",	-- Treasure Chest
 	[251991] = "아그라마르의 아이기스",	-- The Aegis of Aggramar
 	[252107] = "동력이 끊긴 이동술 신호 장치",	-- Unpowered Telemancy Beacon
+	[252232] = "아포니의 일지",	-- Aponi's Libram
 	[252258] = "지맥 갈래",	-- Leyline Feed
 	[252259] = "지맥 갈래",	-- Leyline Feed
 	[252260] = "지맥 갈래",	-- Leyline Feed

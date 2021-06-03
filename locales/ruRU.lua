@@ -2199,6 +2199,7 @@ for key,value in pairs({
 	[251857] = "Сундук с сокровищами",	-- Treasure Chest
 	[251991] = "Эгида Агграмара",	-- The Aegis of Aggramar
 	[252107] = "Отключенный телемантический маяк",	-- Unpowered Telemancy Beacon
+	[252232] = "Рукопись Апони",	-- Aponi's Libram
 	[252258] = "Силовой канал",	-- Leyline Feed
 	[252259] = "Силовой канал",	-- Leyline Feed
 	[252260] = "Силовой канал",	-- Leyline Feed
