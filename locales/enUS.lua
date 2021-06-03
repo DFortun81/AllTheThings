@@ -1308,7 +1308,6 @@ app.L = {
 		[-3347] = "Interface\\Icons\\inv_plate_draenorlfr_c_01helm",						-- Black Tooth Grunt
 
 		[-4189] = "Interface\\Icons\\achievement_legionpvptier4",							-- Instance Item Sets, PvP
-		[-4190] = "Interface\\Icons\\ExpansionIcon_BurningCrusade",
 		[-4191] = "Interface\\Icons\\Achievement_PVP_Legion08",
 
 		[-5350] = "Interface\\Icons\\ability_bossmagistrix_timewarp1",						-- Class Trial Item Sets

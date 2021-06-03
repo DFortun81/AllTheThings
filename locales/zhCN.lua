@@ -89,6 +89,7 @@ local L = app.L;
 	L.COMPLETED_YEARLY = "这个可以每年完成.";
 	L.COMPLETED_MULTIPLE = "这个可以重复多次.";
 	L.CRITERIA_FOR = "准则";
+	--TODO: L.CURRENCY_FOR = "Currency for";
 	--TODO: L.LOOT_TABLE_CHANCE = "Loot Table Chance";
 	--TODO: L.BEST_BONUS_ROLL_CHANCE = "Best Bonus Roll Chance";
 	--TODO: L.BEST_PERSONAL_LOOT_CHANCE = "Best Personal Loot Chance";
@@ -563,6 +564,40 @@ local L = app.L;
 		L["KNOWN_ON_CHARACTER"] = "|T" .. app.asset("known") .. ":0|t |cff15abff当前角色已习得|r"
 		L["UNKNOWN_ON_CHARACTER"] = "|T" .. app.asset("unknown") .. ":0|t |cffff9333当前角色未习得|r"
 
+local a = L.ABBREVIATIONS;
+for key,value in pairs({
+	--TODO: ["Antorus, the Burning Throne"] = "Antorus",
+	--TODO: ["Expansion Pre"] = "Pre",
+	--TODO: ["Expansion Features"] = "EF",
+	--TODO: ["Dungeons & Raids"] = "D&R",
+	--TODO: ["The Burning Crusade"] = "BC",
+	--TODO: ["Burning Crusade"] = "BC",
+	--TODO: ["The BC"] = "BC",
+	--TODO: ["Wrath of the Lich King"] = "WotLK",
+	--TODO: ["Cataclysm"] = "Cata",
+	--TODO: ["Mists of Pandaria"] = "MoP",
+	--TODO: ["Warlords of Draenor"] = "WoD",
+	--TODO: ["Battle for Azeroth"] = "BFA",
+	--TODO: ["The Shadowlands"] = "SL",
+	--TODO: ["Shadowlands"] = "SL",
+	--TODO: ["Player vs Player"] = "PvP",
+	--TODO: ["Raid Finder"] = "LFR",
+	--TODO: ["Looking For Raid"] = "LFR",
+	--TODO: ["Normal"] = "N",
+	--TODO: ["Heroic"] = "H",
+	--TODO: ["Mythic"] = "M",
+	--TODO: ["Ny'alotha, the Waking City"] = "Ny'alotha",
+	--TODO: ["10 Player"] = "10M",
+	--TODO: ["10 Player (Heroic)"] = "10M (H)",
+	--TODO: ["25 Player"] = "25M",
+	--TODO: ["25 Player (Heroic)"] = "25M (H)",
+	--TODO: ["Emissary Quests"] = "Emissary",
+	--TODO: ["World Quests"] = "WQ",
+	--TODO: ["WoW Anniversary"] = "Anniversary",
+	--TODO: ["Covenant:"] = "Cov:",
+})
+do a[key] = value; end
+
 L.CUSTOM_DIFFICULTIES[-1] = "团队查找器 (5.4)";
 L.CUSTOM_DIFFICULTIES[-2] = "弹性 (5.4)";
 L.CUSTOM_DIFFICULTIES[-3] = "普通 (5.4)";
@@ -759,6 +794,8 @@ for key,value in pairs({
 		[-650] = "任务物品",											-- Quest Items
 
 	-- PvP Header
+		-- Special Season Tags
+			--TODO: [-655] = "Ensemble Gear", 						-- Ensemble Gear (PvP)
 		-- PvP Set Names
 			[-659] = "候选者套装",									-- Aspirant PvP Gear (WoD, BfA)
 			[-660] = "争斗者套装",									-- Combatant PvP Gear (WoD, Legion)
@@ -769,6 +806,7 @@ for key,value in pairs({
 			--TODO: [-663] = "Classic Pre-Season Gear",				-- Classic Pre-Season PvP Gear (need a icon)
 
 		-- The Burning Crusade PvP Seasons
+			--TODO: [-658] = "BC Pre-Season",						-- Pre-Season (PvP BC)
 			[-664] = select(2, GetAchievementInfo(2091)).."：第1赛季",	-- Gladiator: Season 1
 			[-665] = select(2, GetAchievementInfo(418)).."：第2赛季",	-- Merciless Gladiator: Season 2
 			[-666] = select(2, GetAchievementInfo(419)).."：第3赛季",	-- Vengeful Gladiator: Season 3
@@ -776,18 +814,24 @@ for key,value in pairs({
 
 		-- Wrath of the Lich-King PvP Seasons
 			[-668] = select(2, GetAchievementInfo(3336)).."第5赛季",	-- Deadly Gladiator: Season 5
+			--TODO: [-657] = "Hateful Gladiator",					-- Hateful Gladiator: Season 5 ("medium pvp gear")
 			[-669] = select(2, GetAchievementInfo(3436)).."第6赛季",	-- Furious Gladiator: Season 6
 			[-670] = select(2, GetAchievementInfo(3758)).."第7赛季",	-- Relentless Gladiator: Season 7
 			[-671] = select(2, GetAchievementInfo(4599)).."第8赛季",	-- Wrathful Gladiator: Season 8
 
 		-- Cataclysm PvP Seasons
-			[-672] = select(2, GetAchievementInfo(6002)).."第9赛季",		-- Vicious Gladiator: Season 9
+			[-672] = select(2, GetAchievementInfo(6002)).."第9赛季",	-- Vicious Gladiator: Season 9
+			--TODO: [-656] = "Honor Gear Ruthless Season",			-- Honor Gear Ruthless Season
 			[-673] = select(2, GetAchievementInfo(6124)).."第10赛季",	-- Ruthless Gladiator: Season 10
+			--TODO: [-654] = "Honor Gear Cataclysmic Season",		-- Honor Gear Cataclysmic Season
 			[-674] = select(2, GetAchievementInfo(6938)).."第11赛季",	-- Cataclysmic Gladiator: Season 11
 
 		-- Mists of Pandaria PvP Seasons
 			[-675] = select(2, GetAchievementInfo(8214)).."第12赛季",	-- Malevolent Gladiator: Season 12
+			--TODO: [-653] = "Honor Gear Tyrannical Season",		-- Honor Gear Tyrannical Season
 			[-676] = select(2, GetAchievementInfo(8791)).."第13赛季",	-- Tyrannical Gladiator: Season 13
+			--TODO: [-652] = "Honor Gear Grievous Season",			-- Honor Gear Grievous Season
+			--TODO: [-651] = "Honor Gear Prideful Season",			-- Honor Gear Prideful Season
 
 	[-799] = "不朽之责",												-- Burden of Eternity
 
@@ -800,6 +844,7 @@ for key,value in pairs({
 		[-850] = "机械化的宝箱",										-- Mechanized Chest
 		[-851] = "铁潮宝箱",											-- Irontide Chest
 
+	-- 8.2 Neck Stuff
 		[-852] = "艾泽里特精华",										-- Azerite Essences
 		[-853] = "全部角色",											-- All Roles
 		--TODO: [-854] = "DPS",										-- DPS
@@ -1013,7 +1058,6 @@ for key,value in pairs({
 	-- PvP Sets
 	-- Note: Some of these may go away once I check as I think I am localizing with gear sets, but leave for now
 		[-4189] = "PvP套装",											-- Instance Item Sets, PvP
-		[-4190] = "Burning Crusade 季前赛",							-- Burning Crusade Pre-Season
 		[-4191] = "竞技装备",										-- Tournament
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
@@ -3001,7 +3045,7 @@ for key,value in pairs({
 	{3, "|CFFFF0000此物品的获得方式已被移除，只能从黑市拍卖行获得。|r", "黑市拍卖行 (9)"}, -- There is Hope -- 9
 	{3, "|CFFFF0000此物品通过TCG卡牌获得，卡牌不再发行，但网络上、黑市拍卖行甚至交易行仍可能出现。国服也可能有积分兑换活动。|r", "TCG卡牌 (10)"}, -- There is Hope -- 10
 	{3, "|CFFFF0000此物品拾取后绑定，但是如果你有召唤首领所需的物品仍可获得。|r", "需要召唤道具 (11)"}, -- There is Hope -- 11
-	{0, "", ""}, -- 12
+	{3, "|CFFFF0000This item requires Player vs Player activities or a currency related to those activities. |r", "Requires PvP (12)"}, -- There is Hope --, ""}, -- 12
 	{1, "|CFFFF0000你的追随者等级过高，奖励此物品的任务不再刷新。|r", "绝版物资 (13)"}, -- 13
 	{3, "|CFFFF0000此物品无法购买，除非你在对应赛季的PvP评分或排名达标。|r", "PvP Elite/Gladiator (14)"}, -- 14
 	{1, "|CFFFF0000This item has a Source ID (Tempest Keep Legendaries), but can't be learned (training recipes). |r", "Training Recipes / Unlearnable (15)"}, -- 15
