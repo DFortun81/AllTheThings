@@ -527,28 +527,24 @@ local L = app.L;
 
 local a = L.ABBREVIATIONS;
 for key,value in pairs({
-	["Antorus, the Burning Throne"] = "Анторус";
+	["Анторус, Пылающий Трон"] = "Анторус";
 	["Expansion Pre"] = "Препатч";
-	["Expansion Features"] = "ОК";
-	["Dungeons & Raids"] = "П и Р";
+	["Особый контент"] = "ОК";
+	["Подземелья и рейды"] = "П и Р";
 	["Cataclysm"] = "Ката";
-	["The Shadowlands"] = "ТЗ",
-	["Shadowlands"] = "ТЗ",
+	["Темные Земли"] = "ТЗ",
 	["Player vs Player"] = "ПвП";
-	["Raid Finder"] = "ЛФР";
-	["Looking For Raid"] = "ЛФР";
-	["Normal"] = "О";
-	["Heroic"] = "Г";
-	["Mythic"] = "Э";
+	["Поиск рейда"] = "ЛФР";
+	["Обычный"] = "О";
+	["Героический"] = "Г";
+	["Эпохальный"] = "Э";
 	["Ny'alotha, the Waking City"] = "Ни'алота";
-	["10 Player"] = "10";
-	["10 Player (Heroic)"] = "10 (гер.)";
-	["25 Player"] = "25";
-	["25 Player (Heroic)"] = "25 (гер.)";
-	["Emissary Quests"] = "Посланник";
-	["World Quests"] = "ЛЗ",
-	["WoW Anniversary"] = "Годовщина";
-	["Covenant:"] = "Ков:",
+	["10 игроков"] = "10";
+	["25 игроков"] = "25";
+	["героич."] = "гер.";
+	["Локальные задания"] = "ЛЗ",
+	["годовщина World of Warcraft"] = "годовщина";
+	["Ковенант:"] = "Ков:",
 })
 do a[key] = value; end
 
