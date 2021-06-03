@@ -3203,7 +3203,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 										tinsert(info, { left = text, right = GetCollectionIcon(otherATTSource.collected)});
 									else
 										local otherSource = C_TransmogCollection_GetSourceInfo(otherSourceID);
-										if otherSource then
+										if otherSource and (otherSource.quality or 0) > 1 then
 											local link = select(2, GetItemInfo(otherSource.itemID));
 											if not link then
 												link = RETRIEVING_DATA;
