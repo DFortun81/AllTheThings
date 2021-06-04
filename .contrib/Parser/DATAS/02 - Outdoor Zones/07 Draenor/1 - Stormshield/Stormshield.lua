@@ -1053,23 +1053,21 @@ _.Zones =
 											{"select", "itemID", 115113 },	-- Primal Combatant's Warboots of Cruelty (A)
 											{"exclude", "itemID", 138613 },	-- Exclude itself to stop duplicating
 										},
-										["g"] = {
-											i(115049, {	-- Primal Combatant's Dreadplate Chestpiece (A)
-												["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-											}),
-											i(115050, {	-- Primal Combatant's Dreadplate Gauntlets (A)
-												["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-											}),
-											i(115051, {	-- Primal Combatant's Dreadplate Helm (A)
-												["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-											}),
-											i(115052, {	-- Primal Combatant's Dreadplate Legguards (A)
-												["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-											}),
-											i(115053, {	-- Primal Combatant's Dreadplate Shoulders (A)
-												["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-											}),
-										},
+									}),
+									i(115049, {	-- Primal Combatant's Dreadplate Chestpiece (A)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115050, {	-- Primal Combatant's Dreadplate Gauntlets (A)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(115051, {	-- Primal Combatant's Dreadplate Helm (A)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115052, {	-- Primal Combatant's Dreadplate Legguards (A)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115053, {	-- Primal Combatant's Dreadplate Shoulders (A)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
 								}),
 								cl(DRUID, {
@@ -1082,23 +1080,21 @@ _.Zones =
 											{"select", "itemID", 115086 },	-- Primal Combatant's Boots of Cruelty (A)
 											{"exclude", "itemID", 138617 },	-- Exclude itself to stop duplicating
 										},
-										["g"] = {
-											i(115054, {	-- Primal Combatant's Dragonhide Gloves (A)
-												["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-											}),
-											i(115055, {	-- Primal Combatant's Dragonhide Helm (A)
-												["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-											}),
-											i(115056, {	-- Primal Combatant's Dragonhide Legguards (A)
-												["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-											}),
-											i(115058, {	-- Primal Combatant's Dragonhide Spaulders (A)
-												["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-											}),
-											i(115057, {	-- Primal Combatant's Dragonhide Tunic (A)
-												["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-											}),
-										},
+									}),
+									i(115054, {	-- Primal Combatant's Dragonhide Gloves (A)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(115055, {	-- Primal Combatant's Dragonhide Helm (A)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115056, {	-- Primal Combatant's Dragonhide Legguards (A)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115058, {	-- Primal Combatant's Dragonhide Spaulders (A)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(115057, {	-- Primal Combatant's Dragonhide Tunic (A)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
 								}),
 								cl(HUNTER, {
@@ -1111,23 +1107,21 @@ _.Zones =
 											{"select", "itemID", 115097 },	-- Primal Combatant's Footguards of Cruelty (A)
 											{"exclude", "itemID", 138579 },	-- Exclude itself to stop duplicating
 										},
-										["g"] = {
-											i(115059, {	-- Primal Combatant's Chain Armor (A)
-												["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-											}),
-											i(115060, {	-- Primal Combatant's Chain Gauntlets (A)
-												["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-											}),
-											i(115061, {	-- Primal Combatant's Chain Helm (A)
-												["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-											}),
-											i(115062, {	-- Primal Combatant's Chain Leggings (A)
-												["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-											}),
-											i(115063, {	-- Primal Combatant's Chain Spaulders (A)
-												["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-											}),
-										},
+									}),
+									i(115059, {	-- Primal Combatant's Chain Armor (A)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115060, {	-- Primal Combatant's Chain Gauntlets (A)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(115061, {	-- Primal Combatant's Chain Helm (A)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115062, {	-- Primal Combatant's Chain Leggings (A)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115063, {	-- Primal Combatant's Chain Spaulders (A)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
 								}),
 								cl(MAGE, {
@@ -1140,23 +1134,21 @@ _.Zones =
 											{"select", "itemID", 115045 },	-- Primal Combatant's Treads of Cruelty (A)
 											{"exclude", "itemID", 138581 },	-- Exclude itself to stop duplicating
 										},
-										["g"] = {
-											i(115094, {	-- Primal Combatant's Silk Amice (A)
-												["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-											}),
-											i(115091, {	-- Primal Combatant's Silk Cowl (A)
-												["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-											}),
-											i(115090, {	-- Primal Combatant's Silk Handguards (A)
-												["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-											}),
-											i(115093, {	-- Primal Combatant's Silk Robe (A)
-												["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-											}),
-											i(115092, {	-- Primal Combatant's Silk Trousers (A)
-												["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-											}),
-										},
+									}),
+									i(115094, {	-- Primal Combatant's Silk Amice (A)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(115091, {	-- Primal Combatant's Silk Cowl (A)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115090, {	-- Primal Combatant's Silk Handguards (A)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(115093, {	-- Primal Combatant's Silk Robe (A)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115092, {	-- Primal Combatant's Silk Trousers (A)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
 								}),
 								cl(MONK, {
@@ -1169,23 +1161,21 @@ _.Zones =
 											{"select", "itemID", 115086 },	-- Primal Combatant's Boots of Cruelty (A)
 											{"exclude", "itemID", 138619 },	-- Exclude itself to stop duplicating
 										},
-										["g"] = {
-											i(115101, {	-- Primal Combatant's Ironskin Gloves (A)
-												["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-											}),
-											i(115102, {	-- Primal Combatant's Ironskin Helm (A)
-												["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-											}),
-											i(115103, {	-- Primal Combatant's Ironskin Legguards (A)
-												["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-											}),
-											i(115104, {	-- Primal Combatant's Ironskin Spaulders (A)
-												["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-											}),
-											i(115105, {	-- Primal Combatant's Ironskin Tunic (A)
-												["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-											}),
-										},
+									}),
+									i(115101, {	-- Primal Combatant's Ironskin Gloves (A)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(115102, {	-- Primal Combatant's Ironskin Helm (A)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115103, {	-- Primal Combatant's Ironskin Legguards (A)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115104, {	-- Primal Combatant's Ironskin Spaulders (A)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(115105, {	-- Primal Combatant's Ironskin Tunic (A)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
 								}),
 								cl(PALADIN, {
@@ -1198,23 +1188,21 @@ _.Zones =
 											{"select", "itemID", 115113 },	-- Primal Combatant's Warboots of Cruelty (A)
 											{"exclude", "itemID", 138615 },	-- Exclude itself to stop duplicating
 										},
-										["g"] = {
-											i(115106, {	-- Primal Combatant's Scaled Chestpiece (A)
-												["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-											}),
-											i(115107, {	-- Primal Combatant's Scaled Gauntlets (A)
-												["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-											}),
-											i(115108, {	-- Primal Combatant's Scaled Helm (A)
-												["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-											}),
-											i(115109, {	-- Primal Combatant's Scaled Legguards (A)
-												["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-											}),
-											i(115110, {	-- Primal Combatant's Scaled Shoulders (A)
-												["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-											}),
-										},
+									}),
+									i(115106, {	-- Primal Combatant's Scaled Chestpiece (A)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115107, {	-- Primal Combatant's Scaled Gauntlets (A)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(115108, {	-- Primal Combatant's Scaled Helm (A)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115109, {	-- Primal Combatant's Scaled Legguards (A)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115110, {	-- Primal Combatant's Scaled Shoulders (A)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
 								}),
 								cl(PRIEST, {
@@ -1227,23 +1215,21 @@ _.Zones =
 											{"select", "itemID", 115045 },	-- Primal Combatant's Treads of Cruelty (A)
 											{"exclude", "itemID", 138583 },	-- Exclude itself to stop duplicating
 										},
-										["g"] = {
-											i(115117, {	-- Primal Combatant's Satin Gloves (A)
-												["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-											}),
-											i(115118, {	-- Primal Combatant's Satin Hood (A)
-												["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-											}),
-											i(115119, {	-- Primal Combatant's Satin Leggings (A)
-												["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-											}),
-											i(115121, {	-- Primal Combatant's Satin Mantle (A)
-												["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-											}),
-											i(115120, {	-- Primal Combatant's Satin Robe (A)
-												["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-											}),
-										},
+									}),
+									i(115117, {	-- Primal Combatant's Satin Gloves (A)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(115118, {	-- Primal Combatant's Satin Hood (A)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115119, {	-- Primal Combatant's Satin Leggings (A)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115121, {	-- Primal Combatant's Satin Mantle (A)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(115120, {	-- Primal Combatant's Satin Robe (A)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
 								}),
 								cl(ROGUE, {
@@ -1256,23 +1242,21 @@ _.Zones =
 											{"select", "itemID", 115086 },	-- Primal Combatant's Boots of Cruelty (A)
 											{"exclude", "itemID", 138621 },	-- Exclude itself to stop duplicating
 										},
-										["g"] = {
-											i(115123, {	-- Primal Combatant's Leather Gloves (A)
-												["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-											}),
-											i(115124, {	-- Primal Combatant's Leather Helm (A)
-												["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-											}),
-											i(115125, {	-- Primal Combatant's Leather Legguards (A)
-												["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-											}),
-											i(115126, {	-- Primal Combatant's Leather Spaulders (A)
-												["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-											}),
-											i(115122, {	-- Primal Combatant's Leather Tunic (A)
-												["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-											}),
-										},
+									}),
+									i(115123, {	-- Primal Combatant's Leather Gloves (A)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(115124, {	-- Primal Combatant's Leather Helm (A)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115125, {	-- Primal Combatant's Leather Legguards (A)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115126, {	-- Primal Combatant's Leather Spaulders (A)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(115122, {	-- Primal Combatant's Leather Tunic (A)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
 								}),
 								cl(SHAMAN, {
@@ -1285,23 +1269,21 @@ _.Zones =
 											{"select", "itemID", 115097 },	-- Primal Combatant's Footguards of Cruelty (A)
 											{"exclude", "itemID", 138577 },	-- Exclude itself to stop duplicating
 										},
-										["g"] = {
-											i(115127, {	-- Primal Combatant's Ringmail Armor (A)
-												["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-											}),
-											i(115128, {	-- Primal Combatant's Ringmail Gauntlets (A)
-												["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-											}),
-											i(115129, {	-- Primal Combatant's Ringmail Helm (A)
-												["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-											}),
-											i(115130, {	-- Primal Combatant's Ringmail Leggings (A)
-												["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-											}),
-											i(115131, {	-- Primal Combatant's Ringmail Spaulders (A)
-												["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-											}),
-										},
+									}),
+									i(115127, {	-- Primal Combatant's Ringmail Armor (A)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115128, {	-- Primal Combatant's Ringmail Gauntlets (A)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(115129, {	-- Primal Combatant's Ringmail Helm (A)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115130, {	-- Primal Combatant's Ringmail Leggings (A)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115131, {	-- Primal Combatant's Ringmail Spaulders (A)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
 								}),
 								cl(WARLOCK, {
@@ -1314,23 +1296,21 @@ _.Zones =
 											{"select", "itemID", 115045 },	-- Primal Combatant's Treads of Cruelty (A)
 											{"exclude", "itemID", 138585 },	-- Exclude itself to stop duplicating
 										},
-										["g"] = {
-											i(115165, {	-- Primal Combatant's Felweave Amice (A)
-												["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-											}),
-											i(115162, {	-- Primal Combatant's Felweave Cowl (A)
-												["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-											}),
-											i(115161, {	-- Primal Combatant's Felweave Handguards (A)
-												["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-											}),
-											i(115164, {	-- Primal Combatant's Felweave Raiment (A)
-												["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-											}),
-											i(115163, {	-- Primal Combatant's Felweave Trousers (A)
-												["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-											}),
-										},
+									}),
+									i(115165, {	-- Primal Combatant's Felweave Amice (A)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(115162, {	-- Primal Combatant's Felweave Cowl (A)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115161, {	-- Primal Combatant's Felweave Handguards (A)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(115164, {	-- Primal Combatant's Felweave Raiment (A)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115163, {	-- Primal Combatant's Felweave Trousers (A)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 									}),
 								}),
 								cl(WARRIOR, {
@@ -1343,23 +1323,21 @@ _.Zones =
 											{"select", "itemID", 115113 },	-- Primal Combatant's Warboots of Cruelty (A)
 											{"exclude", "itemID", 138611 },	-- Exclude itself to stop duplicating
 										},
-										["g"] = {
-											i(115166, {	-- Primal Combatant's Plate Chestpiece (A)
-												["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-											}),
-											i(115167, {	-- Primal Combatant's Plate Gauntlets (A)
-												["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-											}),
-											i(115168, {	-- Primal Combatant's Plate Helm (A)
-												["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-											}),
-											i(115169, {	-- Primal Combatant's Plate Legguards (A)
-												["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-											}),
-											i(115170, {	-- Primal Combatant's Plate Shoulders (A)
-												["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-											}),
-										},
+									}),
+									i(115166, {	-- Primal Combatant's Plate Chestpiece (A)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115167, {	-- Primal Combatant's Plate Gauntlets (A)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(115168, {	-- Primal Combatant's Plate Helm (A)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115169, {	-- Primal Combatant's Plate Legguards (A)
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115170, {	-- Primal Combatant's Plate Shoulders (A)
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 									}),
 								}),
 								n(-320, {	-- Head
