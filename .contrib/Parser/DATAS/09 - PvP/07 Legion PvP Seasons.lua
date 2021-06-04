@@ -3125,7 +3125,7 @@ _.PVP =
 				}),
 			}),
 		}),
-		n(-684, {	-- Cruel Gladiator: Legion Season 3
+		n(-684, {	-- Cruel Gladiator: Legion Season 3		
 			n(-9914, {	-- Alliance
 				n(-660, {	-- Aspirant / Combatant PvP Gear
 					cl(DEATHKNIGHT, {
@@ -5303,6 +5303,10 @@ _.PVP =
 					}),
 				}),
 			}),
+			n(-662, {	-- Elite
+				un(REMOVED_FROM_GAME, i(147337)),	-- Cruel Gladiator's Tabard [Elite Rating]
+				un(REMOVED_FROM_GAME, i(147360)),	-- Cruel Gladiator's Cloak [Elite Rating]
+			}),
 		}),
 		n(-685, {	-- Ferocious Gladiator: Legion Season 4
 			n(-9914, {	-- Alliance
@@ -6366,6 +6370,10 @@ _.PVP =
 						un(REMOVED_FROM_GAME, i(145835)), -- Ferocious Gladiator's Insignia of Victory (H)
 					}),
 				}),
+			}),
+			n(-662, {	-- Elite
+				un(REMOVED_FROM_GAME, i(147339)),	-- Ferocious Gladiator's Tabard [Elite Rating]
+				un(REMOVED_FROM_GAME, i(147364)),	-- Ferocious Gladiator's Cloak [Elite Rating]
 			}),
 		}),
 		n(-686, {	-- Fierce Gladiator: Legion Season 5
@@ -9167,6 +9175,10 @@ _.PVP =
 					}),
 				}),
 			}),
+			n(-662, {	-- Elite
+				un(REMOVED_FROM_GAME, i(149443)),	-- Fierce Gladiator's Tabard [Elite Rating]
+				un(REMOVED_FROM_GAME, i(149445)),	-- Fierce Gladiator's Cloak [Elite Rating]
+			}),
 		}),
 		n(-687, {	-- Dominant Gladiator: Legion Season 6
 			n(-9914, {	-- Alliance
@@ -10295,6 +10307,10 @@ _.PVP =
 					}),
 				}),
 			}),
+			n(-662, {	-- Elite
+				un(REMOVED_FROM_GAME, i(149447)),	-- Dominant Gladiator's Tabard [Elite Rating]
+				un(REMOVED_FROM_GAME, i(149449)),	-- Dominant Gladiator's Cloak [Elite Rating]
+			}),
 		}),
 		n(-688, {	-- Demonic Gladiator: Legion Season 7
 			n(-9914, {	-- Alliance
@@ -11422,6 +11438,10 @@ _.PVP =
 						un(REMOVED_FROM_GAME, i(155744)),	-- Unflinching Grit
 					}),
 				}),
+			}),
+			n(-662, {	-- Elite
+				un(REMOVED_FROM_GAME, i(149451)),	-- Demonic Gladiator's Tabard [Elite Rating]
+				un(REMOVED_FROM_GAME, i(149453)),	-- Demonic Gladiator's Cloak [Elite Rating]
 			}),
 		}),
 	}),

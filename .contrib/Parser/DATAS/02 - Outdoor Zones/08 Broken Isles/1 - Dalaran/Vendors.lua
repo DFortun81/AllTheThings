@@ -18,6 +18,20 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["coord"] = { 56.5, 28.1, 627 },
 					["g"] = {
+						un(14, i(147778)),	-- Enchanter's Illusion - Demonic Tyranny
+						--i(139775),	-- Alliance Enthusiast
+						--i(142379),	-- Dutiful Squire
+						un(14, i(147337)),	-- Cruel Gladiator's Tabard [Elite Rating]
+						un(14, i(147360)),	-- Cruel Gladiator's Cloak [Elite Rating]
+						un(14, i(147339)),	-- Ferocious Gladiator's Tabard [Elite Rating]
+						un(14, i(147364)),	-- Ferocious Gladiator's Cloak [Elite Rating]
+						un(14, i(149443)),	-- Fierce Gladiator's Tabard [Elite Rating]
+						un(14, i(149445)),	-- Fierce Gladiator's Cloak [Elite Rating]
+						un(14, i(149447)),	-- Dominant Gladiator's Tabard [Elite Rating]
+						un(14, i(149449)),	-- Dominant Gladiator's Cloak [Elite Rating]
+						un(14, i(149451)),	-- Demonic Gladiator's Tabard [Elite Rating]
+						un(14, i(149453)),	-- Demonic Gladiator's Cloak [Elite Rating]
+						
 						n(-660, {	-- Aspirant / Combatant PvP Gear Season1+Season2
 							cl(DEATHKNIGHT, {
 								i(146165, {	-- Ensemble: Vindictive Combatant's Dreadplate Armor (H)
