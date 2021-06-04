@@ -87,6 +87,7 @@ local L = app.L;
 	L.COMPLETED_YEARLY = "Может быть выполнено ежегодно.";
 	L.COMPLETED_MULTIPLE = "Может быть выполнено несколько раз.";
 	L.CRITERIA_FOR = "Критерий для";
+	L.CURRENCY_FOR = "Валюта для";
 	L.LOOT_TABLE_CHANCE = "Общий шанс получения";
 	L.BEST_BONUS_ROLL_CHANCE = "Наилучший шанс бонусного броска";
 	L.BEST_PERSONAL_LOOT_CHANCE = "Наилучший шанс Персональной добычи";
@@ -526,28 +527,24 @@ local L = app.L;
 
 local a = L.ABBREVIATIONS;
 for key,value in pairs({
-	["Antorus, the Burning Throne"] = "Анторус";
+	["Анторус, Пылающий Трон"] = "Анторус";
 	["Expansion Pre"] = "Препатч";
-	["Expansion Features"] = "ОК";
-	["Dungeons & Raids"] = "П и Р";
+	["Особый контент"] = "ОК";
+	["Подземелья и рейды"] = "П и Р";
 	["Cataclysm"] = "Ката";
-	["The Shadowlands"] = "ТЗ",
-	["Shadowlands"] = "ТЗ",
+	["Темные Земли"] = "ТЗ",
 	["Player vs Player"] = "ПвП";
-	["Raid Finder"] = "ЛФР";
-	["Looking For Raid"] = "ЛФР";
-	["Normal"] = "О";
-	["Heroic"] = "Г";
-	["Mythic"] = "Э";
+	["Поиск рейда"] = "ЛФР";
+	["Обычный"] = "О";
+	["Героический"] = "Г";
+	["Эпохальный"] = "Э";
 	["Ny'alotha, the Waking City"] = "Ни'алота";
-	["10 Player"] = "10";
-	["10 Player (Heroic)"] = "10 (гер.)";
-	["25 Player"] = "25";
-	["25 Player (Heroic)"] = "25 (гер.)";
-	["Emissary Quests"] = "Посланник";
-	["World Quests"] = "ЛЗ",
-	["WoW Anniversary"] = "Годовщина";
-	["Covenant:"] = "Ков:",
+	["10 игроков"] = "10";
+	["25 игроков"] = "25";
+	["героич."] = "гер.";
+	["Локальные задания"] = "ЛЗ",
+	["годовщина World of Warcraft"] = "годовщина";
+	["Ковенант:"] = "Ков:",
 })
 do a[key] = value; end
 
@@ -730,6 +727,8 @@ for key,value in pairs({
 		[-650] = "Предметы для заданий",							-- Quest Items
 
 	-- PvP Header
+		-- Special Season Tags
+			[-655] = "Комплекты", 									-- Ensemble Gear (PvP)
 		-- PvP Set Names
 			[-659] = "Доспехи Претендента",							-- Aspirant PvP Gear (WoD, BfA)
 			[-660] = "Доспехи Бойца",								-- Combatant PvP Gear (WoD, Legion)
@@ -740,6 +739,7 @@ for key,value in pairs({
 			[-663] = "Классические Предсезонные Доспехи",			-- Classic Pre-Season PvP Gear (need a icon)
 
 		-- The Burning Crusade PvP Seasons
+			[-658] = "BC Предсезон",								-- Pre-Season (PvP BC)
 			[-664] = select(2, GetAchievementInfo(2091))..": Сезон 1",	-- Gladiator: Season 1
 			[-665] = select(2, GetAchievementInfo(418))..": Сезон 2",	-- Merciless Gladiator: Season 2
 			[-666] = select(2, GetAchievementInfo(419))..": Сезон 3",	-- Vengeful Gladiator: Season 3
@@ -747,18 +747,24 @@ for key,value in pairs({
 
 		-- Wrath of the Lich-King PvP Seasons
 			[-668] = select(2, GetAchievementInfo(3336))..": Сезон 5",	-- Deadly Gladiator: Season 5
+			[-657] = "Злобный гладиатор",								-- Hateful Gladiator
 			[-669] = select(2, GetAchievementInfo(3436))..": Сезон 6",	-- Furious Gladiator: Season 6
 			[-670] = select(2, GetAchievementInfo(3758))..": Сезон 7",	-- Relentless Gladiator: Season 7
 			[-671] = select(2, GetAchievementInfo(4599))..": Сезон 8",	-- Wrathful Gladiator: Season 8
 
 		-- Cataclysm PvP Seasons
 			[-672] = select(2, GetAchievementInfo(6002))..": Сезон 9",	-- Vicious Gladiator: Season 9
+			[-656] = "Доспехи Беспощадного гладиатора за очки чести",	-- Honor Gear Ruthless Season
 			[-673] = select(2, GetAchievementInfo(6124))..": Сезон 10",	-- Ruthless Gladiator: Season 10
+			[-654] = "Доспехи Гладиатора Катаклизма за очки чести",		-- Honor Gear Cataclysmic Season
 			[-674] = select(2, GetAchievementInfo(6938))..": Сезон 11",	-- Cataclysmic Gladiator: Season 11
 
 		-- Mists of Pandaria PvP Seasons
 			[-675] = select(2, GetAchievementInfo(8214))..": Сезон 12",	-- Malevolent Gladiator: Season 12
+			[-653] = "Доспехи Деспотичного гладиатора за очки чести",	-- Honor Gear Tyrannical Season
 			[-676] = select(2, GetAchievementInfo(8791))..": Сезон 13",	-- Tyrannical Gladiator: Season 13
+			[-652] = "Доспехи Бездушного гладиатора за очки чести",		-- Honor Gear Grievous Season
+			[-651] = "Доспехи Гордого гладиатора за очки чести",		-- Honor Gear Prideful Season
 
 	[-799] = "Бремя вечности",										-- Burden of Eternity
 
@@ -771,6 +777,7 @@ for key,value in pairs({
 		[-850] = "Механизированный сундук",							-- Mechanized Chest
 		[-851] = "Сейф братства Стальных Волн",						-- Irontide Chest
 
+	-- 8.2 Neck Stuff
 		[-852] = "Азеритовые сущности",								-- Azerite Essences
 		[-853] = "Все роли",										-- All Roles
 		[-854] = "Боец",											-- DPS
@@ -983,7 +990,6 @@ for key,value in pairs({
 
 	-- PvP Sets
 	-- Note: Some of these may go away once I check as I think I am localizing with gear sets, but leave for now
-		[-4190] = "Burning Crusade Предсезон",
 		[-4191] = "Турнир",
 	-- Tier/Dungeon/Event/Holiday Sets
 		-- Artifact Strings
@@ -2193,6 +2199,7 @@ for key,value in pairs({
 	[251857] = "Сундук с сокровищами",	-- Treasure Chest
 	[251991] = "Эгида Агграмара",	-- The Aegis of Aggramar
 	[252107] = "Отключенный телемантический маяк",	-- Unpowered Telemancy Beacon
+	[252232] = "Рукопись Апони",	-- Aponi's Libram
 	[252258] = "Силовой канал",	-- Leyline Feed
 	[252259] = "Силовой канал",	-- Leyline Feed
 	[252260] = "Силовой канал",	-- Leyline Feed
@@ -2973,9 +2980,9 @@ for key,value in pairs({
 		{3, "|CFFFF0000Источники для этого предмета были убраны и доступны только через Аукцион Черного Рынка.|r", "Аукцион Черного Рынка [BMAH] (9)"}, -- There is Hope -- 9
 		{3, "|CFFFF0000Предмет из карты ККИ, которую больше не печатают, но всё также можно купить онлайн, через BMAH или даже Аукцион.|r", "Коллекционная Карточная игра [TCG] (10)"}, -- There is Hope -- 10
 		{3, "|CFFFF0000Этот предмет Персональный при Получении, но может быть получен, если у Вас есть доступ к предметам, призывающим босса.|r", "Требуются Предметы для Призыва (11)"}, -- There is Hope -- 11
-		{0, "", ""}, -- 12
+		{3, "|CFFFF0000Этот предмет требует участие в ПвП или ПвП валюту. |r", "Требует ПвП (12)"}, -- There is Hope --, ""}, -- 12
 		{1, "|CFFFF0000Ваши спутники слишком высокого уровня и миссия с ящиком в награду больше не появится.|r", "Старинный ящик (13)"}, -- 13
-		{3, "|CFFFF0000Эти предметы быть приобретены, только если Вы имеете необходимый ПвП Рейтинг или были в Верхних % этого сезона.|r", "ПвП Элита / Гладиатор (14)"}, -- 14
+		{3, "|CFFFF0000Эти предметы могут быть приобретены, только если Вы имеете необходимый ПвП Рейтинг или были в Верхних % этого сезона.|r", "ПвП Элита / Гладиатор (14)"}, -- 14
 		{1, "|CFFFF0000Этот предмет имеет Source ID (Легендарные предметы Ока), но не может быть изучен (тренировочные рецепты). |r", "Тренировочные Рецепты / Неизучаемые (15)"}, -- 15
 		{0, "", ""},--16
 		{6, "|CFF00FFDEМожет требоваться действующий Лунный Фестиваль, чтобы получить данный предмет.|r", "Лунный Фестиваль (17)"},--17

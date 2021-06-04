@@ -79,6 +79,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 					-- This quest started showing up again after SL level squish
 					["qg"] = 22421,	-- Skar'this the Heretic
 					["sourceQuest"] = 10900,	-- The Mark of Vashj
+					["altQuests"] = { 10901 },	-- The Cudgel of Kar'desh (original version)
 					["maps"] = {
 						KARAZHAN,
 						GRUULS_LAIR,

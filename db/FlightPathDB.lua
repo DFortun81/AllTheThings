@@ -2629,6 +2629,12 @@ select(2, ...).FlightPathDB = {
 	[2632] = {
 		["name"] = "Sagehaven, Bastion",
 	},
+	[2636] = {
+		["name"] = "Terrace of the Collectors, Bastion",
+	},
+	[2635] = {
+		["name"] = "Temple of Humility, Bastion",
+	},
 	--]]
 
 	-- Never Implemented Flight Paths (in-game data says they exist but also that's a lie)

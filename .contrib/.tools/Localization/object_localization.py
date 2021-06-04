@@ -43,9 +43,8 @@ def get_localized_obj_name(obj_id, lang_code="en", game_flavor="retail"):
     return heading.text
 
 
-def get_todo_lines_and_og_names(lines):
+def get_todo_lines(lines):
     todo_dict = {}
-    original_obj_names = {}
     for ind, line in enumerate(lines):
         if "ObjectNames" in line:
             # print(f"Found beginning at line {ind + 2}!")
@@ -60,11 +59,9 @@ def get_todo_lines_and_og_names(lines):
                         ind += 1
                         continue
                     todo_dict[ind] = obj_id
-                    # have to get name from Wowhead cause it might be name from non retail in this line
-                    original_obj_names[ind] = get_localized_obj_name(obj_id)
                 ind += 1
             break
-    return todo_dict, original_obj_names
+    return todo_dict
 
 
 def get_localized_names(todo_dict, lang_code):
@@ -82,12 +79,12 @@ def get_localized_names(todo_dict, lang_code):
     return localized_dict
 
 
-def localize_objects(filename, lang_code):
+def localize_objects(filename, lang_code, original_obj_names={}):
     print(f"Starting {lang_code}!")
     file = open(filename)
     lines = file.readlines()
 
-    todo_dict, original_obj_names = get_todo_lines_and_og_names(lines)
+    todo_dict = get_todo_lines(lines)
 
     print(f"Names to localize: {len(todo_dict)}")
 
@@ -98,9 +95,14 @@ def localize_objects(filename, lang_code):
         if line_ind in localized_dict:
             obj_name = localized_dict[line_ind]
             obj_id = todo_dict[line_ind]
-            original_obj_name = original_obj_names[line_ind]
+            # have to get name from Wowhead cause it might be name from non retail in this line
+            if obj_id not in original_obj_names:
+                original_obj_names[obj_id] = get_localized_obj_name(obj_id)
+            original_obj_name = original_obj_names[obj_id]
             line = f'\t[{obj_id}] = "{obj_name}",\t-- {original_obj_name}\n'
         print(line, end="")  # this writes to file
+
+    return original_obj_names
 
 
 def sort_objects(filename):

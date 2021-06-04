@@ -3095,7 +3095,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 										else
 											text = "   ";
 										end
-										tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and " (*)" or ""), right = GetCollectionIcon(sourceGroup.collected)});
+										tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and " (*)" or ""), right = GetCollectionIcon(ATTAccountWideData.Sources[sourceID])});
 									end
 								else
 									local otherATTSource = app.SearchForField("s", otherSourceID);
@@ -3157,7 +3157,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 										else
 											text = "   ";
 										end
-										tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and " (*)" or ""), right = GetCollectionIcon(sourceGroup.collected)});
+										tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and " (*)" or ""), right = GetCollectionIcon(ATTAccountWideData.Sources[sourceID])});
 									end
 								else
 									local otherATTSource = app.SearchForObject("s", otherSourceID);
@@ -3207,7 +3207,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 										tinsert(info, { left = text, right = GetCollectionIcon(otherATTSource.collected)});
 									else
 										local otherSource = C_TransmogCollection_GetSourceInfo(otherSourceID);
-										if otherSource then
+										if otherSource and (otherSource.quality or 0) > 1 then
 											local link = select(2, GetItemInfo(otherSource.itemID));
 											if not link then
 												link = RETRIEVING_DATA;
@@ -14685,7 +14685,7 @@ function app:GetDataCache()
 						local fp = app.CreateFlightPath(tonumber(i));
 						self.fps[i] = fp;
 						if not fp.u or fp.u ~= 1 then
-							app.print("Cached Flight Path Needs to be Sourced!",i,fp.name)
+							app.print("Flight Path needs Source!",i,fp.name)
 							fp.parent = self;
 							tinsert(self.g, fp);
 						else
@@ -17610,7 +17610,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 end);
 
 -- WARNING: DEV ONLY START
-
+--[[
 -- Uncomment this section if you need to enable Debugger:
 -- CLEU binding only happens when debugger is enabled because of how expensive it can get in large mob farms
 app:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED");
