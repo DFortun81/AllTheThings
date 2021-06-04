@@ -923,11 +923,21 @@ _.PVP =
 									{"exclude", "itemID", 138563 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
-									i(115639),	-- Primal Gladiator's Chain Armor
-									i(115640),	-- Primal Gladiator's Chain Gauntlets
-									i(115641),	-- Primal Gladiator's Chain Helm
-									i(115642),	-- Primal Gladiator's Chain Leggings
-									i(115643),	-- Primal Gladiator's Chain Spaulders
+									i(115639, {	-- Primal Gladiator's Chain Armor
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115640, {	-- Primal Gladiator's Chain Gauntlets
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(115641, {	-- Primal Gladiator's Chain Helm
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115642, {	-- Primal Gladiator's Chain Leggings
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115643, {	-- Primal Gladiator's Chain Spaulders
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
 								},
 							}),
 						}),
@@ -942,11 +952,21 @@ _.PVP =
 									{"exclude", "itemID", 138571 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
-									i(115677),	-- Primal Gladiator's Silk Handguards
-									i(115678),	-- Primal Gladiator's Silk Cowl
-									i(115679),	-- Primal Gladiator's Silk Trousers
-									i(115680),	-- Primal Gladiator's Silk Robe
-									i(115681),	-- Primal Gladiator's Silk Amice
+									i(115677, {	-- Primal Gladiator's Silk Handguards
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(115678, {	-- Primal Gladiator's Silk Cowl
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115679, {	-- Primal Gladiator's Silk Trousers
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115680, {	-- Primal Gladiator's Silk Robe
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115681, {	-- Primal Gladiator's Silk Amice
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
 								},
 							}),
 						}),
@@ -961,11 +981,21 @@ _.PVP =
 									{"exclude", "itemID", 138567 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
-									i(115691),	-- Primal Gladiator's Ironskin Gloves
-									i(115692),	-- Primal Gladiator's Ironskin Helm
-									i(115693),	-- Primal Gladiator's Ironskin Legguards
-									i(115694),	-- Primal Gladiator's Ironskin Spaulders
-									i(115695),	-- Primal Gladiator's Ironskin Tunic
+									i(115691, {	-- Primal Gladiator's Ironskin Gloves
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(115692, {	-- Primal Gladiator's Ironskin Helm
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115693, {	-- Primal Gladiator's Ironskin Legguards
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115694, {	-- Primal Gladiator's Ironskin Spaulders
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(115695, {	-- Primal Gladiator's Ironskin Tunic
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
 								},
 							}),
 						}),
@@ -980,11 +1010,21 @@ _.PVP =
 									{"exclude", "itemID", 138559 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
-									i(115696),	-- Primal Gladiator's Scaled Chestpiece
-									i(115697),	-- Primal Gladiator's Scaled Gauntlets
-									i(115698),	-- Primal Gladiator's Scaled Helm
-									i(115699),	-- Primal Gladiator's Scaled Legguards
-									i(115700),	-- Primal Gladiator's Scaled Shoulders
+									i(115696, {	-- Primal Gladiator's Scaled Chestpiece
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115697, {	-- Primal Gladiator's Scaled Gauntlets
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(115698, {	-- Primal Gladiator's Scaled Helm
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115699, {	-- Primal Gladiator's Scaled Legguards
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115700, {	-- Primal Gladiator's Scaled Shoulders
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
 								},
 							}),
 						}),
@@ -999,11 +1039,21 @@ _.PVP =
 									{"exclude", "itemID", 138573 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
-									i(115710),	-- Primal Gladiator's Satin Gloves
-									i(115711),	-- Primal Gladiator's Satin Hood
-									i(115712),	-- Primal Gladiator's Satin Leggings
-									i(115713),	-- Primal Gladiator's Satin Robe
-									i(115714),	-- Primal Gladiator's Satin Mantle
+									i(115710, {	-- Primal Gladiator's Satin Gloves
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(115711, {	-- Primal Gladiator's Satin Hood
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115712, {	-- Primal Gladiator's Satin Leggings
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115713, {	-- Primal Gladiator's Satin Robe
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115714, {	-- Primal Gladiator's Satin Mantle
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
 								},
 							}),
 						}),
@@ -1018,11 +1068,21 @@ _.PVP =
 									{"exclude", "itemID", 138569 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
-									i(115715),	-- Primal Gladiator's Leather Tunic
-									i(115716),	-- Primal Gladiator's Leather Gloves
-									i(115717),	-- Primal Gladiator's Leather Helm
-									i(115718),	-- Primal Gladiator's Leather Legguards
-									i(115719),	-- Primal Gladiator's Leather Spaulders
+									i(115715, {	-- Primal Gladiator's Leather Tunic
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115716, {	-- Primal Gladiator's Leather Gloves
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(115717, {	-- Primal Gladiator's Leather Helm
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115718, {	-- Primal Gladiator's Leather Legguards
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115719, {	-- Primal Gladiator's Leather Spaulders
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
 								},
 							}),
 						}),
@@ -1037,11 +1097,21 @@ _.PVP =
 									{"exclude", "itemID", 138561 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
-									i(115720),	-- Primal Gladiator's Ringmail Armor
-									i(115721),	-- Primal Gladiator's Ringmail Gauntlets
-									i(115722),	-- Primal Gladiator's Ringmail Helm
-									i(115723),	-- Primal Gladiator's Ringmail Leggings
-									i(115724),	-- Primal Gladiator's Ringmail Spaulders
+									i(115720, {	-- Primal Gladiator's Ringmail Armor
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115721, {	-- Primal Gladiator's Ringmail Gauntlets
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(115722, {	-- Primal Gladiator's Ringmail Helm
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115723, {	-- Primal Gladiator's Ringmail Leggings
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115724, {	-- Primal Gladiator's Ringmail Spaulders
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
 								},
 							}),
 						}),
@@ -1056,11 +1126,21 @@ _.PVP =
 									{"exclude", "itemID", 138575 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
-									i(115761),	-- Primal Gladiator's Felweave Handguards
-									i(115762),	-- Primal Gladiator's Felweave Cowl
-									i(115763),	-- Primal Gladiator's Felweave Trousers
-									i(115764),	-- Primal Gladiator's Felweave Raiment
-									i(115765),	-- Primal Gladiator's Felweave Amice
+									i(115761, {	-- Primal Gladiator's Felweave Handguards
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(115762, {	-- Primal Gladiator's Felweave Cowl
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115763, {	-- Primal Gladiator's Felweave Trousers
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115764, {	-- Primal Gladiator's Felweave Raiment
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115765, {	-- Primal Gladiator's Felweave Amice
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
 								},
 							}),
 						}),
@@ -1075,116 +1155,296 @@ _.PVP =
 									{"exclude", "itemID", 138555 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
-									i(115766),	-- Primal Gladiator's Plate Chestpiece
-									i(115767),	-- Primal Gladiator's Plate Gauntlets
-									i(115768),	-- Primal Gladiator's Plate Helm
-									i(115769),	-- Primal Gladiator's Plate Legguards
-									i(115770),	-- Primal Gladiator's Plate Shoulders
+									i(115766, {	-- Primal Gladiator's Plate Chestpiece
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115767, {	-- Primal Gladiator's Plate Gauntlets
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
+									i(115768, {	-- Primal Gladiator's Plate Helm
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115769, {	-- Primal Gladiator's Plate Legguards
+										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+									}),
+									i(115770, {	-- Primal Gladiator's Plate Shoulders
+										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+									}),
 								},
 							}),
 						}),
 						n(-320, {	-- Head
-							i(115743),	-- Primal Gladiator's Plate Visor
-							i(115738),	-- Primal Gladiator's Plate Helmet
-							i(115790),	-- Primal Gladiator's Coif
-							i(115780),	-- Primal Gladiator's Helm
-							i(115785),	-- Primal Gladiator's Headcover
-							i(115775),	-- Primal Gladiator's Helm
-							i(115616),	-- Primal Gladiator's Cowl of Cruelty
-							i(115611),	-- Primal Gladiator's Hood of Prowess
+							i(115743, {	-- Primal Gladiator's Plate Visor
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(115738, {	-- Primal Gladiator's Plate Helmet
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(115790, {	-- Primal Gladiator's Coif
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(115780, {	-- Primal Gladiator's Helm
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(115785, {	-- Primal Gladiator's Headcover
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(115775, {	-- Primal Gladiator's Helm
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(115616, {	-- Primal Gladiator's Cowl of Cruelty
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(115611, {	-- Primal Gladiator's Hood of Prowess
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
 						}),
 						n(-321, {	-- Shoulders
-							i(115614),	-- Primal Gladiator's Amice of Prowess
-							i(115745),	-- Primal Gladiator's Plate Pauldrons
-							i(115740),	-- Primal Gladiator's Shoulderplates
-							i(115792),	-- Primal Gladiator's Pauldrons
-							i(115782),	-- Primal Gladiator's Spaulders
-							i(115787),	-- Primal Gladiator's Pauldrons
-							i(115777),	-- Primal Gladiator's Spaulders
-							i(115619),	-- Primal Gladiator's Mantle of Cruelty
+							i(115614, {	-- Primal Gladiator's Amice of Prowess
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(115745, {	-- Primal Gladiator's Plate Pauldrons
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(115740, {	-- Primal Gladiator's Shoulderplates
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(115792, {	-- Primal Gladiator's Pauldrons
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(115782, {	-- Primal Gladiator's Spaulders
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(115787, {	-- Primal Gladiator's Pauldrons
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(115777, {	-- Primal Gladiator's Spaulders
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(115619, {	-- Primal Gladiator's Mantle of Cruelty
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
 						}),
 						n(-323, {	-- Chest
-							i(115613),	-- Primal Gladiator's Robes of Prowess
-							i(115618),	-- Primal Gladiator's Raiment of Cruelty
-							i(115783),	-- Primal Gladiator's Chestguard
-							i(115773),	-- Primal Gladiator's Tunic
-							i(115778),	-- Primal Gladiator's Armor
-							i(115788),	-- Primal Gladiator's Chestguard
-							i(115736),	-- Primal Gladiator's Plate Breastplate
-							i(115741),	-- Primal Gladiator's Plate Chestguard
+							i(115613, {	-- Primal Gladiator's Robes of Prowess
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(115618, {	-- Primal Gladiator's Raiment of Cruelty
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(115783, {	-- Primal Gladiator's Chestguard
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(115773, {	-- Primal Gladiator's Tunic
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(115778, {	-- Primal Gladiator's Armor
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(115788, {	-- Primal Gladiator's Chestguard
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(115736, {	-- Primal Gladiator's Plate Breastplate
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(115741, {	-- Primal Gladiator's Plate Chestguard
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
 						}),
 						n(-327, {	-- Hands
-							i(115742),	-- Primal Gladiator's Plate Grips
-							i(115737),	-- Primal Gladiator's Plate Gloves
-							i(115789),	-- Primal Gladiator's Gloves
-							i(115779),	-- Primal Gladiator's Gauntlets
-							i(115784),	-- Primal Gladiator's Grips
-							i(115774),	-- Primal Gladiator's Gloves
-							i(115615),	-- Primal Gladiator's Handguards of Cruelty
-							i(115610),	-- Primal Gladiator's Gloves of Prowess
+							i(115742, {	-- Primal Gladiator's Plate Grips
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(115737, {	-- Primal Gladiator's Plate Gloves
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(115789, {	-- Primal Gladiator's Gloves
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(115779, {	-- Primal Gladiator's Gauntlets
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(115784, {	-- Primal Gladiator's Grips
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(115774, {	-- Primal Gladiator's Gloves
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(115615, {	-- Primal Gladiator's Handguards of Cruelty
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(115610, {	-- Primal Gladiator's Gloves of Prowess
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
 						}),
 						n(-329, {	-- Legs
-							i(115612),	-- Primal Gladiator's Leggings of Prowess
-							i(115744),	-- Primal Gladiator's Plate Leggings
-							i(115739),	-- Primal Gladiator's Legplates
-							i(115791),	-- Primal Gladiator's Leggings
-							i(115781),	-- Primal Gladiator's Leggings
-							i(115786),	-- Primal Gladiator's Leggings
-							i(115776),	-- Primal Gladiator's Legguards
-							i(115617),	-- Primal Gladiator's Trousers of Cruelty
+							i(115612, {	-- Primal Gladiator's Leggings of Prowess
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(115744, {	-- Primal Gladiator's Plate Leggings
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(115739, {	-- Primal Gladiator's Legplates
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(115791, {	-- Primal Gladiator's Leggings
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(115781, {	-- Primal Gladiator's Leggings
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(115786, {	-- Primal Gladiator's Leggings
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(115776, {	-- Primal Gladiator's Legguards
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(115617, {	-- Primal Gladiator's Trousers of Cruelty
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
 						}),
 						n(-322, {	-- Back
-							i(115651),	-- Primal Gladiator's Drape of Cruelty
-							i(115652),	-- Primal Gladiator's Drape of Prowess
-							i(115653),	-- Primal Gladiator's Drape of Meditation
-							i(115654),	-- Primal Gladiator's Drape of Contemplation
-							i(115604),	-- Primal Gladiator's Cape of Cruelty
-							i(115605),	-- Primal Gladiator's Cape of Prowess
-							i(115732),	-- Primal Gladiator's Cloak of Cruelty
-							i(115733),	-- Primal Gladiator's Cloak of Prowess
-							i(120100),	-- Primal Gladiator's Cloak of Endurance
+							i(115651, {	-- Primal Gladiator's Drape of Cruelty
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(115652, {	-- Primal Gladiator's Drape of Prowess
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(115653, {	-- Primal Gladiator's Drape of Meditation
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(115654, {	-- Primal Gladiator's Drape of Contemplation
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(115604, {	-- Primal Gladiator's Cape of Cruelty
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(115605, {	-- Primal Gladiator's Cape of Prowess
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(115732, {	-- Primal Gladiator's Cloak of Cruelty
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(115733, {	-- Primal Gladiator's Cloak of Prowess
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(120100, {	-- Primal Gladiator's Cloak of Endurance
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
 						}),
 						n(-326, {	-- Wrists
-							i(115626),	-- Primal Gladiator's Cuffs of Prowess
-							i(115627),	-- Primal Gladiator's Cuffs of Cruelty
-							i(115628),	-- Primal Gladiator's Cuffs of Victory
-							i(115707),	-- Primal Gladiator's Armplates of Cruelty
-							i(115708),	-- Primal Gladiator's Armplates of Prowess
-							i(115709),	-- Primal Gladiator's Armplates of Victory
-							i(115688),	-- Primal Gladiator's Armbands of Prowess
-							i(115689),	-- Primal Gladiator's Armbands of Cruelty
-							i(115690),	-- Primal Gladiator's Armbands of Victory
-							i(115674),	-- Primal Gladiator's Bindings of Cruelty
-							i(115675),	-- Primal Gladiator's Bindings of Prowess
-							i(115676),	-- Primal Gladiator's Bindings of Victory
+							i(115626, {	-- Primal Gladiator's Cuffs of Prowess
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(115627, {	-- Primal Gladiator's Cuffs of Cruelty
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(115628, {	-- Primal Gladiator's Cuffs of Victory
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(115707, {	-- Primal Gladiator's Armplates of Cruelty
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(115708, {	-- Primal Gladiator's Armplates of Prowess
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(115709, {	-- Primal Gladiator's Armplates of Victory
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(115688, {	-- Primal Gladiator's Armbands of Prowess
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(115689, {	-- Primal Gladiator's Armbands of Cruelty
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(115690, {	-- Primal Gladiator's Armbands of Victory
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(115674, {	-- Primal Gladiator's Bindings of Cruelty
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(115675, {	-- Primal Gladiator's Bindings of Prowess
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(115676, {	-- Primal Gladiator's Bindings of Victory
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
 						}),
 						n(-328, {	-- Waist
-							i(115682),	-- Primal Gladiator's Waistguard of Cruelty
-							i(115683),	-- Primal Gladiator's Waistguard of Prowess
-							i(115684),	-- Primal Gladiator's Waistguard of Victory
-							i(115668),	-- Primal Gladiator's Belt of Prowess
-							i(115669),	-- Primal Gladiator's Belt of Cruelty
-							i(115670),	-- Primal Gladiator's Belt of Victory
-							i(115701),	-- Primal Gladiator's Girdle of Cruelty
-							i(115702),	-- Primal Gladiator's Girdle of Prowess
-							i(115703),	-- Primal Gladiator's Girdle of Victory
-							i(115620),	-- Primal Gladiator's Cord of Cruelty
-							i(115621),	-- Primal Gladiator's Cord of Prowess
-							i(115622),	-- Primal Gladiator's Cord of Victory
+							i(115682, {	-- Primal Gladiator's Waistguard of Cruelty
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(115683, {	-- Primal Gladiator's Waistguard of Prowess
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(115684, {	-- Primal Gladiator's Waistguard of Victory
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(115668, {	-- Primal Gladiator's Belt of Prowess
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(115669, {	-- Primal Gladiator's Belt of Cruelty
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(115670, {	-- Primal Gladiator's Belt of Victory
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(115701, {	-- Primal Gladiator's Girdle of Cruelty
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(115702, {	-- Primal Gladiator's Girdle of Prowess
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(115703, {	-- Primal Gladiator's Girdle of Victory
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(115620, {	-- Primal Gladiator's Cord of Cruelty
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(115621, {	-- Primal Gladiator's Cord of Prowess
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(115622, {	-- Primal Gladiator's Cord of Victory
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
 						}),
 						n(-330, {	-- Feet
-							i(115623),	-- Primal Gladiator's Treads of Cruelty
-							i(115624),	-- Primal Gladiator's Treads of Prowess
-							i(115625),	-- Primal Gladiator's Treads of Victory
-							i(115704),	-- Primal Gladiator's Warboots of Cruelty
-							i(115705),	-- Primal Gladiator's Warboots of Prowess
-							i(115706),	-- Primal Gladiator's Warboots of Victory
-							i(115671),	-- Primal Gladiator's Boots of Cruelty
-							i(115672),	-- Primal Gladiator's Boots of Prowess
-							i(115673),	-- Primal Gladiator's Boots of Victory
-							i(115685),	-- Primal Gladiator's Footguards of Cruelty
-							i(115686),	-- Primal Gladiator's Footguards of Prowess
-							i(115687),	-- Primal Gladiator's Footguards of Victory
+							i(115623, {	-- Primal Gladiator's Treads of Cruelty
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(115624, {	-- Primal Gladiator's Treads of Prowess
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(115625, {	-- Primal Gladiator's Treads of Victory
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(115704, {	-- Primal Gladiator's Warboots of Cruelty
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(115705, {	-- Primal Gladiator's Warboots of Prowess
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(115706, {	-- Primal Gladiator's Warboots of Victory
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(115671, {	-- Primal Gladiator's Boots of Cruelty
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(115672, {	-- Primal Gladiator's Boots of Prowess
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(115673, {	-- Primal Gladiator's Boots of Victory
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(115685, {	-- Primal Gladiator's Footguards of Cruelty
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(115686, {	-- Primal Gladiator's Footguards of Prowess
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(115687, {	-- Primal Gladiator's Footguards of Victory
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
 						}),
 						n(-384,	{	-- Neck
 							un(REMOVED_FROM_GAME, i(115606)),	-- Primal Gladiator's Necklace of Cruelty
