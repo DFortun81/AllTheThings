@@ -703,7 +703,6 @@ _.PVP =
 									i(84962),	-- Malevolent Gladiator's Ripper
 									i(84967),	-- Malevolent Gladiator's Shanker
 									i(84910),	-- Malevolent Gladiator's Shield Wall
-									i(84894),	-- Malevolent Gladiator's Slasher
 									i(84900),	-- Malevolent Gladiator's Slicer
 									i(84961),	-- Malevolent Gladiator's Spellblade
 									i(84789),	-- Malevolent Gladiator's Staff
