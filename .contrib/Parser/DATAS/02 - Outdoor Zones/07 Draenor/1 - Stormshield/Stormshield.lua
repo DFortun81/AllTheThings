@@ -326,9 +326,9 @@ _.Zones =
 										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 										["sym"] = {
 											{"sub", "pvp_set_faction_ensemble", -9981, -680, -9914, -661, 6 },
-											{"select", "itemID", 124781 },	-- Wild Gladiator's Armplates of Cruelty (A)
+											{"select", "itemID", 124809 },	-- Wild Gladiator's Armplates of Cruelty (A)
 											{"select", "itemID", 124803 },	-- Wild Gladiator's Girdle of Cruelty (A)
-											{"select", "itemID", 124806 },	-- Wild Gladiator's Warboots of Cruelty (A)
+											{"select", "itemID", 124808 },	-- Wild Gladiator's Warboots of Victory (A)
 											{"exclude", "itemID", 138515 },	-- Exclude itself to stop duplicating
 										},
 									}),
@@ -353,9 +353,9 @@ _.Zones =
 										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 										["sym"] = {
 											{"sub", "pvp_set_faction_ensemble", -9981, -680, -9914, -661, 11 },
-											{"select", "itemID", 124756 },	-- Wild Gladiator's Bindings of Cruelty (A)
-											{"select", "itemID", 124751 },	-- Wild Gladiator's Belt of Cruelty (A)
-											{"select", "itemID", 124753 },	-- Wild Gladiator's Boots of Cruelty (A)
+											{"select", "itemID", 124758 },	-- Wild Gladiator's Bindings of Victory (A)
+											{"select", "itemID", 124752 },	-- Wild Gladiator's Belt of Victory (A)
+											{"select", "itemID", 124754 },	-- Wild Gladiator's Boots of Prowess (A)
 											{"exclude", "itemID", 138523 },	-- Exclude itself to stop duplicating
 										},
 									}),
@@ -381,8 +381,11 @@ _.Zones =
 										["sym"] = {
 											{"sub", "pvp_set_faction_ensemble", -9981, -680, -9914, -661, 3 },
 											{"select", "itemID", 124781 },	-- Wild Gladiator's Armbands of Cruelty (A)
+											{"select", "itemID", 124782 },	-- Wild Gladiator's Armbands of Victory (A)
+											{"select", "itemID", 124780 },	-- Wild Gladiator's Armbands of Prowess (A)
 											{"select", "itemID", 124774 },	-- Wild Gladiator's Waistguard of Cruelty (A)
-											{"select", "itemID", 124777 },	-- Wild Gladiator's Footguards of Cruelty (A)
+											{"select", "itemID", 124776 },	-- Wild Gladiator's Waistguard of Victory (A)
+											{"select", "itemID", 124778 },	-- Wild Gladiator's Footguards of Prowess (A)
 											{"exclude", "itemID", 138521 },	-- Exclude itself to stop duplicating
 										},
 									}),
@@ -407,9 +410,9 @@ _.Zones =
 										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 										["sym"] = {
 											{"sub", "pvp_set_faction_ensemble", -9981, -680, -9914, -661, 8 },
-											{"select", "itemID", 124699 },	-- Wild Gladiator's Cuffs of Cruelty (A)
+											{"select", "itemID", 124698 },	-- Wild Gladiator's Cuffs of Prowess (A)
 											{"select", "itemID", 124692 },	-- Wild Gladiator's Cord of Cruelty (A)
-											{"select", "itemID", 124695 },	-- Wild Gladiator's Treads of Cruelty (A)
+											{"select", "itemID", 124696 },	-- Wild Gladiator's Treads of Prowess (A)
 											{"exclude", "itemID", 138529 },	-- Exclude itself to stop duplicating
 										},
 									}),
@@ -435,8 +438,8 @@ _.Zones =
 										["sym"] = {
 											{"sub", "pvp_set_faction_ensemble", -9981, -680, -9914, -661, 10 },
 											{"select", "itemID", 124756 },	-- Wild Gladiator's Bindings of Cruelty (A)
-											{"select", "itemID", 124751 },	-- Wild Gladiator's Belt of Cruelty (A)
-											{"select", "itemID", 124753 },	-- Wild Gladiator's Boots of Cruelty (A)
+											{"select", "itemID", 124750 },	-- Wild Gladiator's Belt of Prowess (A)
+											{"select", "itemID", 124755 },	-- Wild Gladiator's Boots of Victory (A)
 											{"exclude", "itemID", 138525 },	-- Exclude itself to stop duplicating
 										},
 									}),
@@ -461,9 +464,9 @@ _.Zones =
 										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 										["sym"] = {
 											{"sub", "pvp_set_faction_ensemble", -9981, -680, -9914, -661, 2 },
-											{"select", "itemID", 124781 },	-- Wild Gladiator's Armplates of Cruelty (A)
-											{"select", "itemID", 124803 },	-- Wild Gladiator's Girdle of Cruelty (A)
-											{"select", "itemID", 124806 },	-- Wild Gladiator's Warboots of Cruelty (A)
+											{"select", "itemID", 124811 },	-- Wild Gladiator's Armplates of Victory (A)
+											{"select", "itemID", 124805 },	-- Wild Gladiator's Girdle of Victory (A)
+											{"select", "itemID", 124807 },	-- Wild Gladiator's Warboots of Prowess (A)
 											{"exclude", "itemID", 138517 },	-- Exclude itself to stop duplicating
 										},
 									}),
@@ -488,8 +491,8 @@ _.Zones =
 										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 										["sym"] = {
 											{"sub", "pvp_set_faction_ensemble", -9981, -680, -9914, -661, 5 },
-											{"select", "itemID", 124699 },	-- Wild Gladiator's Cuffs of Cruelty (A)
-											{"select", "itemID", 124692 },	-- Wild Gladiator's Cord of Cruelty (A)
+											{"select", "itemID", 124700 },	-- Wild Gladiator's Cuffs of Victory (A)
+											{"select", "itemID", 124694 },	-- Wild Gladiator's Cord of Victory (A)
 											{"select", "itemID", 124695 },	-- Wild Gladiator's Treads of Cruelty (A)
 											{"exclude", "itemID", 138531 },	-- Exclude itself to stop duplicating
 										},
@@ -515,7 +518,7 @@ _.Zones =
 										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 										["sym"] = {
 											{"sub", "pvp_set_faction_ensemble", -9981, -680, -9914, -661, 4 },
-											{"select", "itemID", 124756 },	-- Wild Gladiator's Bindings of Cruelty (A)
+											{"select", "itemID", 124757 },	-- Wild Gladiator's Bindings of Prowess (A)
 											{"select", "itemID", 124751 },	-- Wild Gladiator's Belt of Cruelty (A)
 											{"select", "itemID", 124753 },	-- Wild Gladiator's Boots of Cruelty (A)
 											{"exclude", "itemID", 138527 },	-- Exclude itself to stop duplicating
@@ -542,9 +545,10 @@ _.Zones =
 										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 										["sym"] = {
 											{"sub", "pvp_set_faction_ensemble", -9981, -680, -9914, -661, 7 },
-											{"select", "itemID", 124781 },	-- Wild Gladiator's Armbands of Cruelty (A)
-											{"select", "itemID", 124774 },	-- Wild Gladiator's Waistguard of Cruelty (A)
+											{"select", "itemID", 139015 },	-- Wild Gladiator's Armbands of Alacrity (A)
+											{"select", "itemID", 124775 },	-- Wild Gladiator's Waistguard of Prowess (A)
 											{"select", "itemID", 124777 },	-- Wild Gladiator's Footguards of Cruelty (A)
+											{"select", "itemID", 124779 },	-- Wild Gladiator's Footguards of Victory (A)
 											{"exclude", "itemID", 138519 },	-- Exclude itself to stop duplicating
 										},
 									}),
@@ -570,8 +574,8 @@ _.Zones =
 										["sym"] = {
 											{"sub", "pvp_set_faction_ensemble", -9981, -680, -9914, -661, 9 },
 											{"select", "itemID", 124699 },	-- Wild Gladiator's Cuffs of Cruelty (A)
-											{"select", "itemID", 124692 },	-- Wild Gladiator's Cord of Cruelty (A)
-											{"select", "itemID", 124695 },	-- Wild Gladiator's Treads of Cruelty (A)
+											{"select", "itemID", 124693 },	-- Wild Gladiator's Cord of Prowess (A)
+											{"select", "itemID", 124697 },	-- Wild Gladiator's Treads of Victory (A)
 											{"exclude", "itemID", 138533 },	-- Exclude itself to stop duplicating
 										},
 									}),
@@ -596,8 +600,8 @@ _.Zones =
 										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 										["sym"] = {
 											{"sub", "pvp_set_faction_ensemble", -9981, -680, -9914, -661, 1 },
-											{"select", "itemID", 124781 },	-- Wild Gladiator's Armplates of Cruelty (A)
-											{"select", "itemID", 124803 },	-- Wild Gladiator's Girdle of Cruelty (A)
+											{"select", "itemID", 124810 },	-- Wild Gladiator's Armplates of Prowess (A)
+											{"select", "itemID", 124804 },	-- Wild Gladiator's Girdle of Prowess (A)
 											{"select", "itemID", 124806 },	-- Wild Gladiator's Warboots of Cruelty (A)
 											{"exclude", "itemID", 138513 },	-- Exclude itself to stop duplicating
 										},
@@ -2229,7 +2233,6 @@ _.Zones =
 							},
 						}),
 						n(93914, {	-- Holly McTilla <Warmongering Gladiator>
-							["itemID"] = 137642,	-- Mark of Honor
 							["races"] = ALLIANCE_ONLY,	-- to hide it in Mark of Honor list
 							["coord"] = { 54.8, 18.8, 622 },
 							["g"] = {
@@ -2398,7 +2401,10 @@ _.Zones =
 										["sym"] = {
 											{"sub", "pvp_set_faction_ensemble", -9981, -681, -9914, -661, 3 },
 											{"select", "itemID", 125895 },	-- Warmongering Gladiator's Armbands of Cruelty (A)
+											{"select", "itemID", 125896 },	-- Warmongering Gladiator's Armbands of Victory (A)
+											{"select", "itemID", 125894 },	-- Warmongering Gladiator's Armbands of Prowess (A)
 											{"select", "itemID", 125888 },	-- Warmongering Gladiator's Waistguard of Cruelty (A)
+											{"select", "itemID", 125890 },	-- Warmongering Gladiator's Waistguard of Victory (A)
 											{"select", "itemID", 125892 },	-- Warmongering Gladiator's Footguards of Prowess (A)
 											{"exclude", "itemID", 138499 },	-- Exclude itself to stop duplicating
 										},
@@ -3731,7 +3737,7 @@ _.Zones =
 							},
 						}),
 						n(93915, {	-- Li "Crunchpaw" Tsang <Warmongering Combatant>
-							["itemID"] = 137642,	-- Mark of Honor
+							["races"] = ALLIANCE_ONLY,
 							["coord"] = { 54.8, 18.8, 622 },
 							["g"] = {
 								n(-319, {	-- Weapons
@@ -4545,9 +4551,9 @@ _.Zones =
 										["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 										["sym"] = {
 											{"sub", "pvp_set_faction_ensemble", -9981, -680, -9914, -660, 3 },
-											{"select", "itemID", 124973 },	-- Wild Combatant's Armbands of Cruelty (A)
-											{"select", "itemID", 124968 },	-- Wild Combatant's Waistguard of Cruelty (A)
-											{"select", "itemID", 124970 },	-- Wild Combatant's Footguards of Cruelty (A)
+											{"select", "itemID", 124956 },	-- Wild Combatant's Bindings of Cruelty (A)
+											{"select", "itemID", 124953 },	-- Wild Combatant's Belt of Cruelty (A)
+											{"select", "itemID", 124954 },	-- Wild Combatant's Boots of Cruelty (A)
 											{"exclude", "itemID", 138547 },	-- Exclude itself to stop duplicating
 										},
 									}),
