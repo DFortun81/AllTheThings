@@ -665,6 +665,8 @@ _.Zones =
 					["maps"] = { ARATHI_HIGHLANDS },
 					-- #if BEFORE BFA
 					["requireSkill"] = FIRST_AID,
+					-- #else
+					["requireSkill"] = TAILORING,
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["cost"] = {
