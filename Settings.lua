@@ -878,7 +878,7 @@ end);
 AccountModeCheckBox:SetATTTooltip(L["ACCOUNT_MODE_TOOLTIP"]);
 AccountModeCheckBox:SetPoint("TOPLEFT", MainOnlyModeCheckBox, "BOTTOMLEFT", -5, 4);
 
-local FactionModeCheckBox = settings:CreateCheckBox("Only Current Faction",
+local FactionModeCheckBox = settings:CreateCheckBox(L["FACTION_MODE"],
 function(self)
 	self:SetChecked(settings:Get("FactionMode"));
 	if settings:Get("DebugMode") or not settings:Get("AccountMode") then
