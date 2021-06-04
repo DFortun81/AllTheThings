@@ -11619,9 +11619,15 @@ app.RefreshCustomCollectibility = function()
 		Callback(app.RefreshCustomCollectibility);
 		return;
 	end
+
+	-- clear existing custom collects
+	wipe(app.CurrentCharacter.CustomCollects);
+
 	-- do one-time per character custom visibility check(s)
 	-- Exile's Reach (New Player Experience)
 	app.SetCustomCollectibility("NPE", function(cc)
+		-- settings override
+		if app.Settings:GetFilter("CC:NPE") then return true; end
 		-- character is not checked
 		if cc == nil then
 			-- print("first check");
@@ -11656,6 +11662,8 @@ app.RefreshCustomCollectibility = function()
 	end);
 	-- Shadowlands Skip
 	app.SetCustomCollectibility("SL_SKIP", function(cc)
+		-- settings override
+		if app.Settings:GetFilter("CC:SL_SKIP") then return true; end
 		-- character is not checked
 		if cc == nil then
 			-- print("first check of SL_SKIP");
@@ -11676,18 +11684,26 @@ app.RefreshCustomCollectibility = function()
 	-- Show all Covenants if not yet selected
 	-- Shadowlands Covenant: Kyrian
 	app.SetCustomCollectibility("SL_COV_KYR", function()
+		-- settings override
+		if app.Settings:GetFilter("CC:SL_COV_KYR") then return true; end
 		return SLCovenantId == 1 or SLCovenantId == 0;
 	end);
 	-- Shadowlands Covenant: Venthyr
 	app.SetCustomCollectibility("SL_COV_VEN", function()
+		-- settings override
+		if app.Settings:GetFilter("CC:SL_COV_VEN") then return true; end
 		return SLCovenantId == 2 or SLCovenantId == 0;
 	end);
 	-- Shadowlands Covenant: Night Fae
 	app.SetCustomCollectibility("SL_COV_NFA", function()
+		-- settings override
+		if app.Settings:GetFilter("CC:SL_COV_NFA") then return true; end
 		return SLCovenantId == 3 or SLCovenantId == 0;
 	end);
 	-- Shadowlands Covenant: Necrolord
 	app.SetCustomCollectibility("SL_COV_NEC", function()
+		-- settings override
+		if app.Settings:GetFilter("CC:SL_COV_NEC") then return true; end
 		return SLCovenantId == 4 or SLCovenantId == 0;
 	end);
 end
@@ -14667,6 +14683,9 @@ function app:RefreshData(lazy, got, manual)
 		if app.refreshDataForce then
 			app.refreshDataForce = nil;
 			app:GetDataCache();
+
+			-- Reapply custom collects
+			app.RefreshCustomCollectibility();
 
 			-- Forcibly update the windows.
 			app:UpdateWindows(true, got);

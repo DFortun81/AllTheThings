@@ -1924,20 +1924,73 @@ f.OnRefresh = function(self)
 end;
 table.insert(settings.MostRecentTab.objects, f);
 
-local LegacyFiltersLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-LegacyFiltersLabel:SetPoint("TOPRIGHT", line, "BOTTOMRIGHT", -88, -8);
-LegacyFiltersLabel:SetJustifyH("LEFT");
-LegacyFiltersLabel:SetText(L["LEGACY_FILTERS_LABEL"]);
-LegacyFiltersLabel:Show();
-table.insert(settings.MostRecentTab.objects, LegacyFiltersLabel);
+-- local LegacyFiltersLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+-- LegacyFiltersLabel:SetPoint("TOPRIGHT", line, "BOTTOMRIGHT", -150, -8);
+-- LegacyFiltersLabel:SetJustifyH("LEFT");
+-- LegacyFiltersLabel:SetText(L["LEGACY_FILTERS_LABEL"]);
+-- LegacyFiltersLabel:Show();
+-- table.insert(settings.MostRecentTab.objects, LegacyFiltersLabel);
 
-local LegacyFiltersTempLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
-LegacyFiltersTempLabel:SetPoint("TOPLEFT", LegacyFiltersLabel, "BOTTOMLEFT", 0, -8);
-LegacyFiltersTempLabel:SetPoint("TOPRIGHT", LegacyFiltersLabel, "BOTTOMRIGHT", 0, -8);
-LegacyFiltersTempLabel:SetJustifyH("LEFT");
-LegacyFiltersTempLabel:SetText(L["LEGACY_FILTERS_TEMP_LABEL"]);
-LegacyFiltersTempLabel:Show();
-table.insert(settings.MostRecentTab.objects, LegacyFiltersTempLabel);
+-- local LegacyFiltersTempLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
+-- LegacyFiltersTempLabel:SetPoint("TOPLEFT", LegacyFiltersLabel, "BOTTOMLEFT", 0, -8);
+-- LegacyFiltersTempLabel:SetPoint("TOPRIGHT", LegacyFiltersLabel, "BOTTOMRIGHT", 0, -8);
+-- LegacyFiltersTempLabel:SetJustifyH("LEFT");
+-- LegacyFiltersTempLabel:SetText(L["LEGACY_FILTERS_TEMP_LABEL"]);
+-- LegacyFiltersTempLabel:Show();
+-- table.insert(settings.MostRecentTab.objects, LegacyFiltersTempLabel);
+
+-- Custom Collect filtering
+local CustomCollectFilterLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+CustomCollectFilterLabel:SetPoint("LEFT", line, "LEFT", 250, 0);
+CustomCollectFilterLabel:SetPoint("TOP", line, "BOTTOM", 0, -8);
+CustomCollectFilterLabel:SetJustifyH("LEFT");
+CustomCollectFilterLabel:SetText(L["CUSTOM_FILTERS_LABEL"]);
+CustomCollectFilterLabel:Show();
+table.insert(settings.MostRecentTab.objects, CustomCollectFilterLabel);
+
+local CustomCollectFilterExplainLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
+CustomCollectFilterExplainLabel:SetPoint("LEFT", CustomCollectFilterLabel, "LEFT", 0, 0);
+CustomCollectFilterExplainLabel:SetPoint("RIGHT", CustomCollectFilterLabel, "LEFT", 325, 0);
+CustomCollectFilterExplainLabel:SetPoint("TOP", CustomCollectFilterLabel, "BOTTOM", 0, -8);
+CustomCollectFilterExplainLabel:SetJustifyH("LEFT");
+CustomCollectFilterExplainLabel:SetText(L["CUSTOM_FILTERS_EXPLAIN_LABEL"]);
+CustomCollectFilterExplainLabel:Show();
+table.insert(settings.MostRecentTab.objects, CustomCollectFilterExplainLabel);
+
+local customCollects, ccCheckbox = L["CUSTOM_COLLECTS_REASONS"];
+local previousCheckbox = CustomCollectFilterExplainLabel;
+local xInitalOffset, yInitialOffset, inital = -5, -6, true;
+
+for cc,ccInfo in pairs(customCollects) do
+	local filterID = "CC:" .. cc;
+	ccCheckbox = settings:CreateCheckBox(ccInfo[1],
+	function(self)
+		self:SetChecked(settings:GetFilter(filterID));
+		-- TODO: add a 'Enable/Disable All checkbox'
+		-- if not settings:GetTooltipSetting("Enabled") then
+		-- 	self:Disable();
+		-- 	self:SetAlpha(0.2);
+		-- else
+			self:Enable();
+			self:SetAlpha(1);
+		-- end
+	end,
+	function(self)
+		settings:SetFilter(filterID, self:GetChecked());
+	end);
+
+	ccCheckbox:SetATTTooltip(string.format(L["CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT"], ccInfo[1]));
+	if inital then
+		ccCheckbox:SetPoint("LEFT", previousCheckbox, "LEFT", xInitalOffset, 0);
+		ccCheckbox:SetPoint("TOP", previousCheckbox, "BOTTOM", 0, yInitialOffset);
+		inital = nil;
+	else
+		ccCheckbox:SetPoint("LEFT", previousCheckbox, "LEFT", 0, 0);
+		ccCheckbox:SetPoint("TOP", previousCheckbox, "BOTTOM", 0, 6);
+	end
+	previousCheckbox = ccCheckbox;
+end
+
 end)();
 
 ------------------------------------------

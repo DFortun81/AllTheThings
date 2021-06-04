@@ -364,8 +364,9 @@ app.L = {
 	["ALL_BUTTON_TOOLTIP"] = "Click this button to enable all equipment filters at once.";
 	["UNCHECK_ALL_BUTTON"] = "Uncheck All";
 	["UNCHECK_ALL_BUTTON_TOOLTIP"] = "Click this button to disable all equipment filters at once.";
-	["LEGACY_FILTERS_LABEL"] = "Legacy / Unobtainable Filters";
-	["LEGACY_FILTERS_TEMP_LABEL"] = "|CFFFFFFFFI'm going to completely rework how our Legacy, Unobtainable, and Seasonal filters work.\n\nComing Soon™.|r";
+	["CUSTOM_FILTERS_LABEL"] = "Automatic Filters";
+	["CUSTOM_FILTERS_EXPLAIN_LABEL"] = "|CFFFFFFFFThese filters are automatically applied based on your current character, but may be overridden by being checked, allowing you to see additional Things your character cannot currently collect.\nNone of these filters are ever enabled in Account or Debug modes regardless of the selections below.|r";
+	["CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT"] = "Enable this setting to forcibly show %s content even if it is not available to the current character.";
 
 	-- Unobtainables tab
 	["UNOBTAINABLES_TAB"] = "Unobtainables";
