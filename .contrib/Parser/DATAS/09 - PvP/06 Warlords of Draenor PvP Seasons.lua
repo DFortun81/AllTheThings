@@ -4160,8 +4160,8 @@ _.PVP =
 								["sym"] = {
 									{"sub", "pvp_set_faction_ensemble", -9981, -680, -9914, -661, 10 },
 									{"select", "itemID", 124756 },	-- Wild Gladiator's Bindings of Cruelty (A)
-									{"select", "itemID", 124751 },	-- Wild Gladiator's Belt of Cruelty (A)
-									{"select", "itemID", 124753 },	-- Wild Gladiator's Boots of Cruelty (A)
+									{"select", "itemID", 124750 },	-- Wild Gladiator's Belt of Prowess (A)
+									{"select", "itemID", 124755 },	-- Wild Gladiator's Boots of Victory (A)
 									{"exclude", "itemID", 138525 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
@@ -4188,9 +4188,9 @@ _.PVP =
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
 									{"sub", "pvp_set_faction_ensemble", -9981, -680, -9914, -661, 2 },
-									{"select", "itemID", 124781 },	-- Wild Gladiator's Armplates of Cruelty (A)
-									{"select", "itemID", 124803 },	-- Wild Gladiator's Girdle of Cruelty (A)
-									{"select", "itemID", 124806 },	-- Wild Gladiator's Warboots of Cruelty (A)
+									{"select", "itemID", 124811 },	-- Wild Gladiator's Armplates of Victory (A)
+									{"select", "itemID", 124805 },	-- Wild Gladiator's Girdle of Victory (A)
+									{"select", "itemID", 124807 },	-- Wild Gladiator's Warboots of Prowess (A)
 									{"exclude", "itemID", 138517 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
@@ -4599,7 +4599,7 @@ _.PVP =
 							i(124753, {	-- Wild Gladiator's Boots of Cruelty (A)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
-							i(124755, {	-- Wild Gladiator's Boots of Victory(A)
+							i(124755, {	-- Wild Gladiator's Boots of Victory (A)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 							i(124754, {	-- Wild Gladiator's Boots of Prowess (A)
@@ -5678,8 +5678,8 @@ _.PVP =
 								["sym"] = {
 									{"sub", "pvp_set_faction_ensemble", -9981, -680, -9913, -661, 10 },
 									{"select", "itemID", 125235 },	-- Wild Gladiator's Bindings of Cruelty (H)
-									{"select", "itemID", 125232 },	-- Wild Gladiator's Belt of Cruelty (H)
-									{"select", "itemID", 125230 },	-- Wild Gladiator's Boots of Cruelty (H)
+									{"select", "itemID", 125229 },	-- Wild Gladiator's Belt of Prowess (H)
+									{"select", "itemID", 125234 },	-- Wild Gladiator's Boots of Victory (H)
 									{"exclude", "itemID", 138526 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
@@ -5706,9 +5706,9 @@ _.PVP =
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
 									{"sub", "pvp_set_faction_ensemble", -9981, -680, -9913, -661, 2 },
-									{"select", "itemID", 125288 },	-- Wild Gladiator's Armplates of Cruelty (H)
-									{"select", "itemID", 125282 },	-- Wild Gladiator's Girdle of Cruelty (H)
-									{"select", "itemID", 125285 },	-- Wild Gladiator's Warboots of Cruelty (H)
+									{"select", "itemID", 125290 },	-- Wild Gladiator's Armplates of Victory (H)
+									{"select", "itemID", 125284 },	-- Wild Gladiator's Girdle of Victory (H)
+									{"select", "itemID", 125286 },	-- Wild Gladiator's Warboots of Prowess (H)
 									{"exclude", "itemID", 138518 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
@@ -5735,8 +5735,8 @@ _.PVP =
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
 									{"sub", "pvp_set_faction_ensemble", -9981, -680, -9913, -661, 5 },
-									{"select", "itemID", 125178 },	-- Wild Gladiator's Cuffs of Cruelty (H)
-									{"select", "itemID", 125171 },	-- Wild Gladiator's Cord of Cruelty (H)
+									{"select", "itemID", 125178 },	-- Wild Gladiator's Cuffs of Victory (H)
+									{"select", "itemID", 125171 },	-- Wild Gladiator's Cord of Victory (H)
 									{"select", "itemID", 125174 },	-- Wild Gladiator's Treads of Cruelty (H)
 									{"exclude", "itemID", 138532 },	-- Exclude itself to stop duplicating
 								},
@@ -6117,7 +6117,7 @@ _.PVP =
 							i(125232, {	-- Wild Gladiator's Boots of Cruelty (H)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
-							i(125234, {	-- Wild Gladiator's Boots of Victory(H)
+							i(125234, {	-- Wild Gladiator's Boots of Victory (H)
 								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
 							}),
 							i(125233, {	-- Wild Gladiator's Boots of Prowess (H)
@@ -6741,6 +6741,13 @@ _.PVP =
 						cl(MONK, {
 							i(138595, {	-- Ensemble: Warmongering Combatant's Ironskin Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+								["sym"] = {
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, -9914, -660, 10 },
+									{"select", "itemID", 126070 },	-- Warmongering Combatant's Bindings of Cruelty (A)
+									{"select", "itemID", 126067 },	-- Warmongering Combatant's Belt of Cruelty (A)
+									{"select", "itemID", 126068 },	-- Warmongering Combatant's Boots of Cruelty (A)
+									{"exclude", "itemID", 138595 },	-- Exclude itself to stop duplicating
+								},
 								["g"] = {
 									i(126093, {	-- Warmongering Combatant's Ironskin Gloves (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -6763,6 +6770,13 @@ _.PVP =
 						cl(PALADIN, {
 							i(138591, {	-- Ensemble: Warmongering Combatant's Scaled Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+								["sym"] = {
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, -9914, -660, 2 },
+									{"select", "itemID", 126107 },	-- Warmongering Combatant's Armplates of Cruelty (A)
+									{"select", "itemID", 126103 },	-- Warmongering Combatant's Girdle of Cruelty (A)
+									{"select", "itemID", 126105 },	-- Warmongering Combatant's Warboots of Cruelty (A)
+									{"exclude", "itemID", 138591 },	-- Exclude itself to stop duplicating
+								},
 								["g"] = {
 									i(126098, {	-- Warmongering Combatant's Scaled Chestpiece (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -7337,6 +7351,13 @@ _.PVP =
 						cl(MONK, {
 							i(138503, {	-- Ensemble: Warmongering Gladiator's Ironskin Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+								["sym"] = {
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, -9914, -661, 10 },
+									{"select", "itemID", 125870 },	-- Warmongering Gladiator's Bindings of Cruelty (A)
+									{"select", "itemID", 125864 },	-- Warmongering Gladiator's Belt of Prowess (A)
+									{"select", "itemID", 125869 },	-- Warmongering Gladiator's Boots of Victory (A)
+									{"exclude", "itemID", 138503 },	-- Exclude itself to stop duplicating
+								},
 								["g"] = {
 									i(125907, {	-- Warmongering Gladiator's Ironskin Gloves (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -7359,6 +7380,13 @@ _.PVP =
 						cl(PALADIN, {
 							i(138495, {	-- Ensemble: Warmongering Gladiator's Scaled Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+								["sym"] = {
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, -9914, -661, 2 },
+									{"select", "itemID", 125925 },	-- Warmongering Gladiator's Armplates of Victory (A)
+									{"select", "itemID", 125919 },	-- Warmongering Gladiator's Girdle of Victory (A)
+									{"select", "itemID", 125921 },	-- Warmongering Gladiator's Warboots of Prowess (A)
+									{"exclude", "itemID", 138495 },	-- Exclude itself to stop duplicating
+								},
 								["g"] = {
 									i(125912, {	-- Warmongering Gladiator's Scaled Chestpiece (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -8173,6 +8201,7 @@ _.PVP =
 									{"select", "itemID", 126547 },	-- Warmongering Combatant's Bindings of Cruelty (H)
 									{"select", "itemID", 126544 },	-- Warmongering Combatant's Belt of Cruelty (H)
 									{"select", "itemID", 126545 },	-- Warmongering Combatant's Boots of Cruelty (H)
+									{"exclude", "itemID", 138596 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
 									i(126570, {	-- Warmongering Combatant's Ironskin Gloves (H)
@@ -8201,6 +8230,7 @@ _.PVP =
 									{"select", "itemID", 126584 },	-- Warmongering Combatant's Armplates of Cruelty (H)
 									{"select", "itemID", 126580 },	-- Warmongering Combatant's Girdle of Cruelty (H)
 									{"select", "itemID", 126582 },	-- Warmongering Combatant's Warboots of Cruelty (H)
+									{"exclude", "itemID", 138592 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
 									i(126575, {	-- Warmongering Combatant's Scaled Chestpiece (H)
@@ -8806,6 +8836,13 @@ _.PVP =
 						cl(MONK, {
 							i(138504, {	-- Ensemble: Warmongering Gladiator's Ironskin Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+								["sym"] = {
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -661, 10 },
+									{"select", "itemID", 126349 },	-- Warmongering Gladiator's Bindings of Cruelty (H)
+									{"select", "itemID", 126343 },	-- Warmongering Gladiator's Belt of Prowess (H)
+									{"select", "itemID", 126348 },	-- Warmongering Gladiator's Boots of Victory (H)
+									{"exclude", "itemID", 138504 },	-- Exclude itself to stop duplicating
+								},
 								["g"] = {
 									i(126386, {	-- Warmongering Gladiator's Ironskin Gloves (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -8828,6 +8865,13 @@ _.PVP =
 						cl(PALADIN, {
 							i(138496, {	-- Ensemble: Warmongering Gladiator's Scaled Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+								["sym"] = {
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -661, 2 },
+									{"select", "itemID", 126404 },	-- Warmongering Gladiator's Armplates of Victory (H)
+									{"select", "itemID", 126398 },	-- Warmongering Gladiator's Girdle of Victory (H)
+									{"select", "itemID", 126400 },	-- Warmongering Gladiator's Warboots of Prowess (H)
+									{"exclude", "itemID", 138496 },	-- Exclude itself to stop duplicating
+								},
 								["g"] = {
 									i(126391, {	-- Warmongering Gladiator's Scaled Chestpiece (H)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
