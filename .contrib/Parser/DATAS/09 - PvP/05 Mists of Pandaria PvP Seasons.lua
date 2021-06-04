@@ -7033,7 +7033,6 @@ _.PVP =
 										i(100730),	-- Grievous Gladiator's Shield Wall
 										i(100548),	-- Grievous Gladiator's Slicer
 										i(100536),	-- Grievous Gladiator's Spellblade
-										i(100535),	-- Grievous Gladiator's Touch of Defeat
 										-- S15 Tag
 										i(102982, {	-- Grievous Gladiator's Barrier
 											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
@@ -10483,6 +10482,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	i(100186),	-- Grievous Gladiator's Bonegrinder
 	i(100242),	-- Grievous Gladiator's Heavy Crossbow
 	i(100279),	-- Grievous Gladiator's Staff
+	i(100535),	-- Grievous Gladiator's Touch of Defeat
 	-- S15
 	i(102611),	-- Prideful Gladiator's Bonegrinder
 	i(102613),	-- Prideful Gladiator's Heavy Crossbow
