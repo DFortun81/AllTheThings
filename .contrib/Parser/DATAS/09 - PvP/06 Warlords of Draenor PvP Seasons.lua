@@ -4041,9 +4041,9 @@ _.PVP =
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
 									{"sub", "pvp_set_faction_ensemble", -9981, -680, -9914, -661, 6 },
-									{"select", "itemID", 124781 },	-- Wild Gladiator's Armplates of Cruelty (A)
+									{"select", "itemID", 124809 },	-- Wild Gladiator's Armplates of Cruelty (A)
 									{"select", "itemID", 124803 },	-- Wild Gladiator's Girdle of Cruelty (A)
-									{"select", "itemID", 124806 },	-- Wild Gladiator's Warboots of Cruelty (A)
+									{"select", "itemID", 124808 },	-- Wild Gladiator's Warboots of Victory (A)
 									{"exclude", "itemID", 138515 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
@@ -4070,9 +4070,9 @@ _.PVP =
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
 									{"sub", "pvp_set_faction_ensemble", -9981, -680, -9914, -661, 11 },
-									{"select", "itemID", 124756 },	-- Wild Gladiator's Bindings of Cruelty (A)
-									{"select", "itemID", 124751 },	-- Wild Gladiator's Belt of Cruelty (A)
-									{"select", "itemID", 124753 },	-- Wild Gladiator's Boots of Cruelty (A)
+									{"select", "itemID", 124758 },	-- Wild Gladiator's Bindings of Victory (A)
+									{"select", "itemID", 124752 },	-- Wild Gladiator's Belt of Victory (A)
+									{"select", "itemID", 124754 },	-- Wild Gladiator's Boots of Prowess (A)
 									{"exclude", "itemID", 138523 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
@@ -5559,7 +5559,7 @@ _.PVP =
 									{"sub", "pvp_set_faction_ensemble", -9981, -680, -9913, -661, 6 },
 									{"select", "itemID", 125288 },	-- Wild Gladiator's Armplates of Cruelty (H)
 									{"select", "itemID", 125282 },	-- Wild Gladiator's Girdle of Cruelty (H)
-									{"select", "itemID", 125285 },	-- Wild Gladiator's Warboots of Cruelty (H)
+									{"select", "itemID", 125287 },	-- Wild Gladiator's Warboots of Victory (H)
 									{"exclude", "itemID", 138516 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
@@ -5586,9 +5586,9 @@ _.PVP =
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
 									{"sub", "pvp_set_faction_ensemble", -9981, -680, -9913, -661, 11 },
-									{"select", "itemID", 125235 },	-- Wild Gladiator's Bindings of Cruelty (H)
-									{"select", "itemID", 125230 },	-- Wild Gladiator's Belt of Cruelty (H)
-									{"select", "itemID", 125232 },	-- Wild Gladiator's Boots of Cruelty (H)
+									{"select", "itemID", 125237 },	-- Wild Gladiator's Bindings of Victory (H)
+									{"select", "itemID", 125231 },	-- Wild Gladiator's Belt of Victory (H)
+									{"select", "itemID", 125233 },	-- Wild Gladiator's Boots of Prowess (H)
 									{"exclude", "itemID", 138524 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
@@ -6619,6 +6619,13 @@ _.PVP =
 						cl(DEATHKNIGHT, {
 							i(138589, {	-- Ensemble: Warmongering Combatant's Dreadplate Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+								["sym"] = {
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, -9914, -660, 6 },
+									{"select", "itemID", 126107 },	-- Warmongering Combatant's Armplates of Cruelty (A)
+									{"select", "itemID", 126103 },	-- Warmongering Combatant's Girdle of Cruelty (A)
+									{"select", "itemID", 126105 },	-- Warmongering Combatant's Warboots of Cruelty (A)
+									{"exclude", "itemID", 138589 },	-- Exclude itself to stop duplicating
+								},
 								["g"] = {
 									i(126027, {	-- Warmongering Combatant's Dreadplate Chestpiece (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -6641,6 +6648,13 @@ _.PVP =
 						cl(DRUID, {
 							i(138593, {	-- Ensemble: Warmongering Combatant's Dragonhide Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+								["sym"] = {
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, -9914, -660, 11 },
+									{"select", "itemID", 126070 },	-- Warmongering Combatant's Bindings of Cruelty (A)
+									{"select", "itemID", 126067 },	-- Warmongering Combatant's Belt of Cruelty (A)
+									{"select", "itemID", 126068 },	-- Warmongering Combatant's Boots of Cruelty (A)
+									{"exclude", "itemID", 138593 },	-- Exclude itself to stop duplicating
+								},
 								["g"] = {
 									i(126032, {	-- Warmongering Combatant's Dragonhide Gloves (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -7185,6 +7199,13 @@ _.PVP =
 						cl(DEATHKNIGHT, {
 							i(138493, {	-- Ensemble: Warmongering Gladiator's Dreadplate Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+								["sym"] = {
+									{"sub", "pvp_set_faction_ensemble", -9981, -680, -9914, -661, 6 },
+									{"select", "itemID", 125923 },	-- Wild Gladiator's Armplates of Cruelty (A)
+									{"select", "itemID", 125917 },	-- Wild Gladiator's Girdle of Cruelty (A)
+									{"select", "itemID", 125922 },	-- Wild Gladiator's Warboots of Victory (A)
+									{"exclude", "itemID", 138493 },	-- Exclude itself to stop duplicating
+								},
 								["g"] = {
 									i(125825, {	-- Warmongering Gladiator's Dreadplate Chestpiece (A)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -7207,6 +7228,13 @@ _.PVP =
 						cl(DRUID, {
 							i(138501, {	-- Ensemble: Warmongering Gladiator's Dragonhide Armor (A)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+								["sym"] = {
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, -9914, -661, 11 },
+									{"select", "itemID", 125872 },	-- Warmongering Gladiator's Bindings of Victory (A)
+									{"select", "itemID", 125866 },	-- Warmongering Gladiator's Belt of Victory (A)
+									{"select", "itemID", 125868 },	-- Warmongering Gladiator's Boots of Prowess (A)
+									{"exclude", "itemID", 138501 },	-- Exclude itself to stop duplicating
+								},
 								["g"] = {
 									i(125830, {	-- Warmongering Gladiator's Dragonhide Gloves (A)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
@@ -7993,6 +8021,7 @@ _.PVP =
 									{"select", "itemID", 126584 },	-- Warmongering Combatant's Armplates of Cruelty (H)
 									{"select", "itemID", 126580 },	-- Warmongering Combatant's Girdle of Cruelty (H)
 									{"select", "itemID", 126582 },	-- Warmongering Combatant's Warboots of Cruelty (H)
+									{"exclude", "itemID", 138590 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
 									i(126504, {	-- Warmongering Combatant's Dreadplate Chestpiece (H)
@@ -8021,6 +8050,7 @@ _.PVP =
 									{"select", "itemID", 126547 },	-- Warmongering Combatant's Bindings of Cruelty (H)
 									{"select", "itemID", 126544 },	-- Warmongering Combatant's Belt of Cruelty (H)
 									{"select", "itemID", 126545 },	-- Warmongering Combatant's Boots of Cruelty (H)
+									{"exclude", "itemID", 138594 },	-- Exclude itself to stop duplicating
 								},
 								["g"] = {
 									i(126509, {	-- Warmongering Combatant's Dragonhide Gloves (H)
@@ -8620,6 +8650,13 @@ _.PVP =
 						cl(DEATHKNIGHT, {
 							i(138494, {	-- Ensemble: Warmongering Gladiator's Dreadplate Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+								["sym"] = {
+									{"sub", "pvp_set_faction_ensemble", -9981, -680, -9913, -661, 6 },
+									{"select", "itemID", 126402 },	-- Wild Gladiator's Armplates of Cruelty (H)
+									{"select", "itemID", 126396 },	-- Wild Gladiator's Girdle of Cruelty (H)
+									{"select", "itemID", 126401 },	-- Wild Gladiator's Warboots of Victory (H)
+									{"exclude", "itemID", 138494 },	-- Exclude itself to stop duplicating
+								},
 								["g"] = {
 									i(126306, {	-- Warmongering Gladiator's Dreadplate Helm (H)
 										["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
@@ -8642,6 +8679,13 @@ _.PVP =
 						cl(DRUID, {
 							i(138502, {	-- Ensemble: Warmongering Gladiator's Dragonhide Armor (H)
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+								["sym"] = {
+									{"sub", "pvp_set_faction_ensemble", -9981, -681, -9913, -661, 11 },
+									{"select", "itemID", 126351 },	-- Warmongering Gladiator's Bindings of Victory (H)
+									{"select", "itemID", 126345 },	-- Warmongering Gladiator's Belt of Victory (H)
+									{"select", "itemID", 126347 },	-- Warmongering Gladiator's Boots of Prowess (H)
+									{"exclude", "itemID", 138501 },	-- Exclude itself to stop duplicating
+								},
 								["g"] = {
 									i(126309, {	-- Warmongering Gladiator's Dragonhide Gloves (H)
 										["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
