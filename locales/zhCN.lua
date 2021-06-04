@@ -351,8 +351,9 @@ local L = app.L;
 		L.ALL_BUTTON_TOOLTIP = "单击此按钮一次启用所有设备过滤.";
 		L.UNCHECK_ALL_BUTTON = "取消所有";
 		L.UNCHECK_ALL_BUTTON_TOOLTIP = "单击此按钮一次禁用所有设备过滤.";
-		L.LEGACY_FILTERS_LABEL = "遗留 / 不可获得过滤";
-		L.LEGACY_FILTERS_TEMP_LABEL = "|CFFFFFFFF我将完全重新设计我们的遗留、不可获得和节日过滤的工作方式.\n\n即将推出.|r";
+		--TODO: L.CUSTOM_FILTERS_LABEL = "Automatic Filters";
+		--TODO: L.CUSTOM_FILTERS_EXPLAIN_LABEL = "|CFFFFFFFFThese filters are automatically applied based on your current character, but may be overridden by being checked, allowing you to see additional Things your character cannot currently collect.\nNone of these filters are ever enabled in Account or Debug modes regardless of the selections below.|r";
+		--TODO: L.CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "Enable this setting to forcibly show %s content even if it is not available to the current character.";
 
 	-- Unobtainables tab
 		L.UNOBTAINABLES_TAB = "不可获得";
