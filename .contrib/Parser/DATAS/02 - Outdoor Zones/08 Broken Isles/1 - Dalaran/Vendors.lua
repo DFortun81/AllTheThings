@@ -16,7 +16,6 @@ _.Zones =
 				}),
 				n(119486, {	-- Apothecary Lee <Legion Gladiator>
 					["races"] = HORDE_ONLY,
-					["itemID"] = 137642,	-- Mark of Honor
 					["coord"] = { 56.5, 28.1, 627 },
 					["g"] = {
 						n(-660, {	-- Aspirant / Combatant PvP Gear Season1+Season2
@@ -1361,106 +1360,8 @@ _.Zones =
 								}),
 							}),
 						}),
-									-- LEGION Season 5, 6, 7
-								i(149497, {	-- Ensemble: Fierce Gladiator's Satin Armor (H)
-									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -661, 5 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -661, 5 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -661, 5 },	-- Season 7
-									},
-								}),
-								i(149500, {	-- Ensemble: Fierce Gladiator's Silk Armor (H)
-									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -661, 8 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -661, 8 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -661, 8 },	-- Season 7
-									},
-								}),
-								i(149487, {	-- Ensemble: Fierce Gladiator's Felweave Armor (H)
-									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -661, 9 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -661, 9 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -661, 9 },	-- Season 7
-									},
-								}),
-								i(149481, {	-- Ensemble: Fierce Gladiator's Dragonhide Armor (H)
-									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -661, 9 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -661, 9 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -661, 9 },	-- Season 7
-									},
-								}),
-								i(149491, {	-- Ensemble: Fierce Gladiator's Leather Armor (H)
-									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -661, 4 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -661, 4 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -661, 4 },	-- Season 7
-									},
-								}),
-								i(149488, {	-- Ensemble: Fierce Gladiator's Ironskin Armor (H)
-									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -661, 10 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -661, 10 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -661, 10 },	-- Season 7
-									},
-								}),
-								i(149485, {	-- Ensemble: Fierce Gladiator's Felskin Armor (H)
-									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -661, 12 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -661, 12 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -661, 12 },	-- Season 7
-									},
-								}),
-								i(149478, {	-- Ensemble: Fierce Gladiator's Chain Armor (H)
-									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -661, 3 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -661, 3 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -661, 3 },	-- Season 7
-									},
-								}),
-								i(149495, {	-- Ensemble: Fierce Gladiator's Ringmail Armor (H)
-									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -661, 7 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -661, 7 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -661, 7 },	-- Season 7
-									},
-								}),
-								i(149499, {	-- Ensemble: Fierce Gladiator's Scaled Armor (H)
-									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -661, 2 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -661, 2 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -661, 2 },	-- Season 7
-									},
-								}),
-								i(149492, {	-- Ensemble: Fierce Gladiator's Plate Armor (H)
-									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
-									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = {
-										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -661, 1 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -661, 1 },	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -661, 1 },	-- Season 7
-									},
-								}),
+						n(-661, {	-- Gladiator PvP Gear Season5+Season6+Season7 (merged in parser, here for easier view)
+							cl(DEATHKNIGHT, {
 								i(149482, {	-- Ensemble: Fierce Gladiator's Dreadplate Armor (H)
 									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
@@ -1468,10 +1369,275 @@ _.Zones =
 										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -661, 6 },	-- Season 5
 										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -661, 6 },	-- Season 6
 										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -661, 6 },	-- Season 7
+										{"exclude", "itemID", 149482 }, -- Exclude itself to stop duplicating
+									},
+									["g"] = {
+										i(147910),	-- Fierce Gladiator's Dreadcloak (H)
+										i(147934),	-- Fierce Gladiator's Dreadplate Chestpiece (H)
+										i(147938),	-- Fierce Gladiator's Dreadplate Gauntlets (H)
+										i(147946),	-- Fierce Gladiator's Dreadplate Girdle (H)
+										i(147940),	-- Fierce Gladiator's Dreadplate Helm (H)
+										i(147942),	-- Fierce Gladiator's Dreadplate Legguards (H)
+										i(147936),	-- Fierce Gladiator's Dreadplate Sabatons (H)
+										i(147944),	-- Fierce Gladiator's Dreadplate Shoulders (H)
+										i(147948),	-- Fierce Gladiator's Dreadplate Wristplates (H)
 									},
 								}),
-						--	},
-					--	}),
+							}),
+							cl(DEMONHUNTER, {
+								i(149485, {	-- Ensemble: Fierce Gladiator's Felskin Armor (H)
+									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = {
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -661, 12 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -661, 12 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -661, 12 },	-- Season 7
+										{"exclude", "itemID", 149485 }, -- Exclude itself to stop duplicating
+									},
+									["g"] = {
+										i(147912),	-- Fierce Gladiator's Demonthread Cloak (H)
+										i(147962),	-- Fierce Gladiator's Felskin Belt (H)
+										i(147952),	-- Fierce Gladiator's Felskin Boots (H)
+										i(147954),	-- Fierce Gladiator's Felskin Gloves (H)
+										i(147956),	-- Fierce Gladiator's Felskin Helm (H)
+										i(147958),	-- Fierce Gladiator's Felskin Legguards (H)
+										i(147960),	-- Fierce Gladiator's Felskin Spaulders (H)
+										i(147950),	-- Fierce Gladiator's Felskin Tunic (H)
+										i(147964),	-- Fierce Gladiator's Felskin Wristguards (H)
+									},
+								}),
+							}),
+							cl(DRUID, {
+								i(149481, {	-- Ensemble: Fierce Gladiator's Dragonhide Armor (H)
+									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = {
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -661, 11 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -661, 11 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -661, 11 },	-- Season 7
+										{"exclude", "itemID", 149481 }, -- Exclude itself to stop duplicating
+									},
+									["g"] = {
+										i(147978),	-- Fierce Gladiator's Dragonhide Belt (H)
+										i(147914),	-- Fierce Gladiator's Dragonhide Cloak (H)
+										i(147970),	-- Fierce Gladiator's Dragonhide Gloves (H)
+										i(147972),	-- Fierce Gladiator's Dragonhide Helm (H)
+										i(147974),	-- Fierce Gladiator's Dragonhide Legguards (H)
+										i(147968),	-- Fierce Gladiator's Dragonhide Moccasins (H)
+										i(147976),	-- Fierce Gladiator's Dragonhide Spaulders (H)
+										i(147966),	-- Fierce Gladiator's Dragonhide Vest (H)
+										i(147980),	-- Fierce Gladiator's Dragonhide Wristguards (H)
+									},
+								}),
+							}),
+							cl(HUNTER, {
+								i(149478, {	-- Ensemble: Fierce Gladiator's Chain Armor (H)
+									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = {
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -661, 3 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -661, 3 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -661, 3 },	-- Season 7
+										{"exclude", "itemID", 149478 }, -- Exclude itself to stop duplicating
+									},
+									["g"] = {
+										i(147996),	-- Fierce Gladiator's Chain Armband (H)
+										i(147982),	-- Fierce Gladiator's Chain Armor (H)
+										i(147994),	-- Fierce Gladiator's Chain Clasp (H)
+										i(147986),	-- Fierce Gladiator's Chain Gauntlets (H)
+										i(147988),	-- Fierce Gladiator's Chain Helm (H)
+										i(147990),	-- Fierce Gladiator's Chain Leggings (H)
+										i(147992),	-- Fierce Gladiator's Chain Spaulders (H)
+										i(147984),	-- Fierce Gladiator's Chain Treads (H)
+										i(147916),	-- Fierce Gladiator's Drape of the Tracker (H)
+									},
+								}),
+							}),
+							cl(MAGE, {
+								i(149500, {	-- Ensemble: Fierce Gladiator's Silk Armor (H)
+									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = {
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -661, 8 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -661, 8 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -661, 8 },	-- Season 7
+										{"exclude", "itemID", 149500 }, -- Exclude itself to stop duplicating
+									},
+									["g"] = {
+										i(148008),	-- Fierce Gladiator's Silk Amice (H)
+										i(148012),	-- Fierce Gladiator's Silk Bracers (H)
+										i(148010),	-- Fierce Gladiator's Silk Cord (H)
+										i(148002),	-- Fierce Gladiator's Silk Cowl (H)
+										i(148000),	-- Fierce Gladiator's Silk Handguards (H)
+										i(147998),	-- Fierce Gladiator's Silk Treads (H)
+										i(148004),	-- Fierce Gladiator's Silk Trousers (H)
+										i(148006),	-- Fierce Gladiator's Silk Tunic (H)
+										i(147918),	-- Fierce Gladiator's Silken Shawl (H)
+									},
+								}),
+							}),
+							cl(MONK, {
+								i(149488, {	-- Ensemble: Fierce Gladiator's Ironskin Armor (H)
+									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = {
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -661, 10 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -661, 10 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -661, 10 },	-- Season 7
+										{"exclude", "itemID", 149488 }, -- Exclude itself to stop duplicating
+									},
+									["g"] = {
+										i(148026),	-- Fierce Gladiator's Ironskin Belt (H)
+										i(147920),	-- Fierce Gladiator's Ironskin Cloak (H)
+										i(148016),	-- Fierce Gladiator's Ironskin Gloves (H)
+										i(148018),	-- Fierce Gladiator's Ironskin Helm (H)
+										i(148020),	-- Fierce Gladiator's Ironskin Legguards (H)
+										i(148014),	-- Fierce Gladiator's Ironskin Slippers (H)
+										i(148022),	-- Fierce Gladiator's Ironskin Spaulders (H)
+										i(148024),	-- Fierce Gladiator's Ironskin Tunic (H)
+										i(148028),	-- Fierce Gladiator's Ironskin Wristguards (H)
+									},
+								}),
+							}),
+							cl(PALADIN, {
+								i(149499, {	-- Ensemble: Fierce Gladiator's Scaled Armor (H)
+									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = {
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -661, 2 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -661, 2 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -661, 2 },	-- Season 7
+										{"exclude", "itemID", 149499 }, -- Exclude itself to stop duplicating
+									},
+									["g"] = {
+										i(147922),	-- Fierce Gladiator's Greatcloak of Faith (H)
+										i(148035),	-- Fierce Gladiator's Scaled Breastplate (H)
+										i(148039),	-- Fierce Gladiator's Scaled Gauntlets (H)
+										i(148048),	-- Fierce Gladiator's Scaled Girdle (H)
+										i(148041),	-- Fierce Gladiator's Scaled Helm (H)
+										i(148043),	-- Fierce Gladiator's Scaled Legguards (H)
+										i(148037),	-- Fierce Gladiator's Scaled Sabatons (H)
+										i(148046),	-- Fierce Gladiator's Scaled Shoulders (H)
+										i(148050),	-- Fierce Gladiator's Scaled Wristplates (H)
+									},
+								}),
+							}),
+							cl(PRIEST, {
+								i(149497, {	-- Ensemble: Fierce Gladiator's Satin Armor (H)
+									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = {
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -661, 5 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -661, 5 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -661, 5 },	-- Season 7
+										{"exclude", "itemID", 149497 }, -- Exclude itself to stop duplicating
+									},
+									["g"] = {
+										i(147924),	-- Fierce Gladiator's Drape of Piety (H)
+										i(148066),	-- Fierce Gladiator's Satin Bracers (H)
+										i(148064),	-- Fierce Gladiator's Satin Cord (H)
+										i(148054),	-- Fierce Gladiator's Satin Gloves (H)
+										i(148056),	-- Fierce Gladiator's Satin Hood (H)
+										i(148058),	-- Fierce Gladiator's Satin Leggings (H)
+										i(148062),	-- Fierce Gladiator's Satin Mantle (H)
+										i(148060),	-- Fierce Gladiator's Satin Robe (H)
+										i(148052),	-- Fierce Gladiator's Satin Treads (H)
+									},
+								}),
+							}),
+							cl(ROGUE, {
+								i(149491, {	-- Ensemble: Fierce Gladiator's Leather Armor (H)
+									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = {
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -661, 4 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -661, 4 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -661, 4 },	-- Season 7
+										{"exclude", "itemID", 149491 }, -- Exclude itself to stop duplicating
+									},
+									["g"] = {
+										i(148086),	-- Fierce Gladiator's Leather Belt (H)
+										i(148078),	-- Fierce Gladiator's Leather Gloves (H)
+										i(148080),	-- Fierce Gladiator's Leather Helm (H)
+										i(148082),	-- Fierce Gladiator's Leather Legguards (H)
+										i(148076),	-- Fierce Gladiator's Leather Slippers (H)
+										i(148084),	-- Fierce Gladiator's Leather Spaulders (H)
+										i(148074),	-- Fierce Gladiator's Leather Tunic (H)
+										i(148088),	-- Fierce Gladiator's Leather Wristguards (H)
+										i(147926),	-- Fierce Gladiator's Shadowcape (H)
+									},
+								}),
+							}),
+							cl(SHAMAN, {
+								i(149495, {	-- Ensemble: Fierce Gladiator's Ringmail Armor (H)
+									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = {
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -661, 3 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -661, 3 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -661, 3 },	-- Season 7
+										{"exclude", "itemID", 149495 }, -- Exclude itself to stop duplicating
+									},
+									["g"] = {
+										i(148104),	-- Fierce Gladiator's Ringmail Armband (H)
+										i(148090),	-- Fierce Gladiator's Ringmail Armor (H)
+										i(148092),	-- Fierce Gladiator's Ringmail Boots (H)
+										i(148102),	-- Fierce Gladiator's Ringmail Clasp (H)
+										i(148094),	-- Fierce Gladiator's Ringmail Gauntlets (H)
+										i(148096),	-- Fierce Gladiator's Ringmail Helm (H)
+										i(148098),	-- Fierce Gladiator's Ringmail Leggings (H)
+										i(148100),	-- Fierce Gladiator's Ringmail Spaulders (H)
+										i(147928),	-- Fierce Gladiator's Totemic Cloak (H)
+									},
+								}),
+							}),
+							cl(WARLOCK, {
+								i(149487, {	-- Ensemble: Fierce Gladiator's Felweave Armor (H)
+									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = {
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -661, 9 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -661, 9 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -661, 9 },	-- Season 7
+										{"exclude", "itemID", 149487 }, -- Exclude itself to stop duplicating
+									},
+									["g"] = {
+										i(148134),	-- Fierce Gladiator's Felweave Amice (H)
+										i(148138),	-- Fierce Gladiator's Felweave Bracers (H)
+										i(147930),	-- Fierce Gladiator's Felweave Cloak (H)
+										i(148136),	-- Fierce Gladiator's Felweave Cord (H)
+										i(148128),	-- Fierce Gladiator's Felweave Cowl (H)
+										i(148126),	-- Fierce Gladiator's Felweave Handguards (H)
+										i(148132),	-- Fierce Gladiator's Felweave Raiment (H)
+										i(148124),	-- Fierce Gladiator's Felweave Treads (H)
+										i(148130),	-- Fierce Gladiator's Felweave Trousers (H)
+									},
+								}),
+							}),
+							cl(WARRIOR, {
+								i(149492, {	-- Ensemble: Fierce Gladiator's Plate Armor (H)
+									["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
+									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+									["sym"] = {
+										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9913, -661, 1 },	-- Season 5
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9913, -661, 1 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -661, 1 },	-- Season 7
+										{"exclude", "itemID", 149492 }, -- Exclude itself to stop duplicating
+									},
+									["g"] = {
+										i(147932),	-- Fierce Gladiator's Cloak of Battle (H)
+										i(148140),	-- Fierce Gladiator's Plate Chestpiece (H)
+										i(148144),	-- Fierce Gladiator's Plate Gauntlets (H)
+										i(148152),	-- Fierce Gladiator's Plate Girdle (H)
+										i(148146),	-- Fierce Gladiator's Plate Helm (H)
+										i(148148),	-- Fierce Gladiator's Plate Legguards (H)
+										i(148150),	-- Fierce Gladiator's Plate Shoulders (H)
+										i(148142),	-- Fierce Gladiator's Plate Warboots (H)
+										i(148154),	-- Fierce Gladiator's Plate Wristplates (H)
+									},
+								}),
+							}),
+						}),
 					},
 				}),
 				n(106655, {	-- Arcanomancer Vridiel <Blacksmithing Trainer>
