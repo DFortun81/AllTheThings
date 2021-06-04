@@ -1106,15 +1106,15 @@ _.Zones =
 										{"exclude", "itemID", 147649 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
-										i(142761),	-- Fearless Gladiator's Dreadcloak (H)
-										i(142673),	-- Fearless Gladiator's Dreadplate Chestpiece (H)
-										i(142675),	-- Fearless Gladiator's Dreadplate Gauntlets (H)
-										i(142679),	-- Fearless Gladiator's Dreadplate Girdle (H)
-										i(142676),	-- Fearless Gladiator's Dreadplate Helm (H)
-										i(142677),	-- Fearless Gladiator's Dreadplate Legguards (H)
-										i(142674),	-- Fearless Gladiator's Dreadplate Sabatons (H)
-										i(142678),	-- Fearless Gladiator's Dreadplate Shoulders (H)
-										i(142680),	-- Fearless Gladiator's Dreadplate Wristplates (H)
+										i(144535),	-- Cruel Gladiator's Dreadcloak (H)
+										i(144559),	-- Cruel Gladiator's Dreadplate Chestpiece (H)
+										i(144563),	-- Cruel Gladiator's Dreadplate Gauntlets (H)
+										i(144571),	-- Cruel Gladiator's Dreadplate Girdle (H)
+										i(144565),	-- Cruel Gladiator's Dreadplate Helm (H)
+										i(144567),	-- Cruel Gladiator's Dreadplate Legguards (H)
+										i(144561),	-- Cruel Gladiator's Dreadplate Sabatons (H)
+										i(144569),	-- Cruel Gladiator's Dreadplate Shoulders (H)
+										i(144573),	-- Cruel Gladiator's Dreadplate Wristplates (H)
 									},
 								}),
 							}),
@@ -1128,15 +1128,15 @@ _.Zones =
 										{"exclude", "itemID", 147652 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
-										i(143317),	-- Fearless Gladiator's Demonthread Cloak (H)
-										i(143252),	-- Fearless Gladiator's Felskin Belt (H)
-										i(143246),	-- Fearless Gladiator's Felskin Boots (H)
-										i(143247),	-- Fearless Gladiator's Felskin Gloves (H)
-										i(143248),	-- Fearless Gladiator's Felskin Helm (H)
-										i(143249),	-- Fearless Gladiator's Felskin Legguards (H)
-										i(143251),	-- Fearless Gladiator's Felskin Spaulders (H)
-										i(143250),	-- Fearless Gladiator's Felskin Tunic (H)
-										i(143253),	-- Fearless Gladiator's Felskin Wristguards (H)
+										i(144537),	-- Cruel Gladiator's Demonthread Cloak (H)
+										i(144587),	-- Cruel Gladiator's Felskin Belt (H)
+										i(144577),	-- Cruel Gladiator's Felskin Boots (H)
+										i(144579),	-- Cruel Gladiator's Felskin Gloves (H)
+										i(144581),	-- Cruel Gladiator's Felskin Helm (H)
+										i(144583),	-- Cruel Gladiator's Felskin Legguards (H)
+										i(144585),	-- Cruel Gladiator's Felskin Spaulders (H)
+										i(144575),	-- Cruel Gladiator's Felskin Tunic (H)
+										i(144589),	-- Cruel Gladiator's Felskin Wristguards (H)
 									},
 								}),
 							}),
@@ -1150,15 +1150,15 @@ _.Zones =
 										{"exclude", "itemID", 147648 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
-										i(142687),	-- Fearless Gladiator's Dragonhide Belt (H)
-										i(142765),	-- Fearless Gladiator's Dragonhide Cloak (H)
-										i(142682),	-- Fearless Gladiator's Dragonhide Gloves (H)
-										i(142683),	-- Fearless Gladiator's Dragonhide Helm (H)
-										i(142684),	-- Fearless Gladiator's Dragonhide Legguards (H)
-										i(142681),	-- Fearless Gladiator's Dragonhide Moccasins (H)
-										i(142685),	-- Fearless Gladiator's Dragonhide Robe (H)
-										i(142686),	-- Fearless Gladiator's Dragonhide Spaulders (H)
-										i(142688),	-- Fearless Gladiator's Dragonhide Wristguards (H)
+										i(144603),	-- Cruel Gladiator's Dragonhide Belt (H)
+										i(144539),	-- Cruel Gladiator's Dragonhide Cloak (H)
+										i(144595),	-- Cruel Gladiator's Dragonhide Gloves (H)
+										i(144597),	-- Cruel Gladiator's Dragonhide Helm (H)
+										i(144599),	-- Cruel Gladiator's Dragonhide Legguards (H)
+										i(144593),	-- Cruel Gladiator's Dragonhide Moccasins (H)
+										i(144591),	-- Cruel Gladiator's Dragonhide Robe (H)
+										i(144601),	-- Cruel Gladiator's Dragonhide Spaulders (H)
+										i(144605),	-- Cruel Gladiator's Dragonhide Wristguards (H)
 									},
 								}),
 							}),
@@ -1172,15 +1172,15 @@ _.Zones =
 										{"exclude", "itemID", 147645 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
-										i(142696),	-- Fearless Gladiator's Chain Armband (H)
-										i(142689),	-- Fearless Gladiator's Chain Armor (H)
-										i(142695),	-- Fearless Gladiator's Chain Clasp (H)
-										i(142691),	-- Fearless Gladiator's Chain Gauntlets (H)
-										i(142692),	-- Fearless Gladiator's Chain Helm (H)
-										i(142693),	-- Fearless Gladiator's Chain Leggings (H)
-										i(142694),	-- Fearless Gladiator's Chain Spaulders (H)
-										i(142690),	-- Fearless Gladiator's Chain Treads (H)
-										i(142769),	-- Fearless Gladiator's Drape of the Tracker (H)
+										i(144621),	-- Cruel Gladiator's Chain Armband (H)
+										i(144607),	-- Cruel Gladiator's Chain Armor (H)
+										i(144619),	-- Cruel Gladiator's Chain Clasp (H)
+										i(144611),	-- Cruel Gladiator's Chain Gauntlets (H)
+										i(144613),	-- Cruel Gladiator's Chain Helm (H)
+										i(144615),	-- Cruel Gladiator's Chain Leggings (H)
+										i(144617),	-- Cruel Gladiator's Chain Spaulders (H)
+										i(144609),	-- Cruel Gladiator's Chain Treads (H)
+										i(144541),	-- Cruel Gladiator's Drape of the Tracker (H)
 									},
 								}),
 							}),
@@ -1194,15 +1194,15 @@ _.Zones =
 										{"exclude", "itemID", 147667 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
-										i(142702),	-- Fearless Gladiator's Silk Amice (H)
-										i(142704),	-- Fearless Gladiator's Silk Bracers (H)
-										i(142703),	-- Fearless Gladiator's Silk Cord (H)
-										i(142699),	-- Fearless Gladiator's Silk Cowl (H)
-										i(142698),	-- Fearless Gladiator's Silk Handguards (H)
-										i(142701),	-- Fearless Gladiator's Silk Robe (H)
-										i(142697),	-- Fearless Gladiator's Silk Treads (H)
-										i(142700),	-- Fearless Gladiator's Silk Trousers (H)
-										i(142762),	-- Fearless Gladiator's Silken Shawl (H)
+										i(144633),	-- Cruel Gladiator's Silk Amice (H)
+										i(144637),	-- Cruel Gladiator's Silk Bracers (H)
+										i(144635),	-- Cruel Gladiator's Silk Cord (H)
+										i(144627),	-- Cruel Gladiator's Silk Cowl (H)
+										i(144625),	-- Cruel Gladiator's Silk Handguards (H)
+										i(144631),	-- Cruel Gladiator's Silk Robe (H)
+										i(144623),	-- Cruel Gladiator's Silk Treads (H)
+										i(144629),	-- Cruel Gladiator's Silk Trousers (H)
+										i(144543),	-- Cruel Gladiator's Silken Shawl (H)
 									},
 								}),
 							}),
@@ -1216,15 +1216,15 @@ _.Zones =
 										{"exclude", "itemID", 147655 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
-										i(142711),	-- Fearless Gladiator's Ironskin Belt (H)
-										i(142766),	-- Fearless Gladiator's Ironskin Cloak (H)
-										i(142706),	-- Fearless Gladiator's Ironskin Gloves (H)
-										i(142707),	-- Fearless Gladiator's Ironskin Helm (H)
-										i(142708),	-- Fearless Gladiator's Ironskin Legguards (H)
-										i(142705),	-- Fearless Gladiator's Ironskin Slippers (H)
-										i(142709),	-- Fearless Gladiator's Ironskin Spaulders (H)
-										i(142710),	-- Fearless Gladiator's Ironskin Tunic (H)
-										i(142712),	-- Fearless Gladiator's Ironskin Wristguards (H)
+										i(144651),	-- Cruel Gladiator's Ironskin Belt (H)
+										i(144545),	-- Cruel Gladiator's Ironskin Cloak (H)
+										i(144641),	-- Cruel Gladiator's Ironskin Gloves (H)
+										i(144643),	-- Cruel Gladiator's Ironskin Helm (H)
+										i(144645),	-- Cruel Gladiator's Ironskin Legguards (H)
+										i(144639),	-- Cruel Gladiator's Ironskin Slippers (H)
+										i(144647),	-- Cruel Gladiator's Ironskin Spaulders (H)
+										i(144649),	-- Cruel Gladiator's Ironskin Tunic (H)
+										i(144653),	-- Cruel Gladiator's Ironskin Wristguards (H)
 									},
 								}),
 							}),
@@ -1238,15 +1238,15 @@ _.Zones =
 										{"exclude", "itemID", 147666 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
-										i(142770),	-- Fearless Gladiator's Greatcloak of Faith (H)
-										i(142713),	-- Fearless Gladiator's Scaled Battlerobe (H)
-										i(142715),	-- Fearless Gladiator's Scaled Gauntlets (H)
-										i(142719),	-- Fearless Gladiator's Scaled Girdle (H)
-										i(142716),	-- Fearless Gladiator's Scaled Helm (H)
-										i(142717),	-- Fearless Gladiator's Scaled Legguards (H)
-										i(142714),	-- Fearless Gladiator's Scaled Sabatons (H)
-										i(142718),	-- Fearless Gladiator's Scaled Shoulders (H)
-										i(142720),	-- Fearless Gladiator's Scaled Wristplates (H)
+										i(144547),	-- Cruel Gladiator's Greatcloak of Faith (H)
+										i(144660),	-- Cruel Gladiator's Scaled Breastplate (H)
+										i(144664),	-- Cruel Gladiator's Scaled Gauntlets (H)
+										i(144673),	-- Cruel Gladiator's Scaled Girdle (H)
+										i(144666),	-- Cruel Gladiator's Scaled Helm (H)
+										i(144668),	-- Cruel Gladiator's Scaled Legguards (H)
+										i(144662),	-- Cruel Gladiator's Scaled Sabatons (H)
+										i(144671),	-- Cruel Gladiator's Scaled Shoulders (H)
+										i(144675),	-- Cruel Gladiator's Scaled Wristplates (H)
 									},
 								}),
 							}),
@@ -1260,15 +1260,15 @@ _.Zones =
 										{"exclude", "itemID", 147664 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
-										i(143289),	-- Fearless Gladiator's Drape of Piety (H)
-										i(142728),	-- Fearless Gladiator's Satin Bracers (H)
-										i(142727),	-- Fearless Gladiator's Satin Cord (H)
-										i(142722),	-- Fearless Gladiator's Satin Gloves (H)
-										i(142723),	-- Fearless Gladiator's Satin Hood (H)
-										i(142724),	-- Fearless Gladiator's Satin Leggings (H)
-										i(142726),	-- Fearless Gladiator's Satin Mantle (H)
-										i(142725),	-- Fearless Gladiator's Satin Robe (H)
-										i(142721),	-- Fearless Gladiator's Satin Treads (H)
+										i(144549),	-- Cruel Gladiator's Drape of Piety (H)
+										i(144691),	-- Cruel Gladiator's Satin Bracers (H)
+										i(144689),	-- Cruel Gladiator's Satin Cord (H)
+										i(144679),	-- Cruel Gladiator's Satin Gloves (H)
+										i(144681),	-- Cruel Gladiator's Satin Hood (H)
+										i(144683),	-- Cruel Gladiator's Satin Leggings (H)
+										i(144687),	-- Cruel Gladiator's Satin Mantle (H)
+										i(144685),	-- Cruel Gladiator's Satin Robe (H)
+										i(144677),	-- Cruel Gladiator's Satin Treads (H)
 									},
 								}),
 							}),
@@ -1282,15 +1282,15 @@ _.Zones =
 										{"exclude", "itemID", 147658 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
-										i(142735),	-- Fearless Gladiator's Leather Belt (H)
-										i(142731),	-- Fearless Gladiator's Leather Gloves (H)
-										i(142732),	-- Fearless Gladiator's Leather Helm (H)
-										i(142733),	-- Fearless Gladiator's Leather Legguards (H)
-										i(142730),	-- Fearless Gladiator's Leather Slippers (H)
-										i(142734),	-- Fearless Gladiator's Leather Spaulders (H)
-										i(142729),	-- Fearless Gladiator's Leather Tunic (H)
-										i(142736),	-- Fearless Gladiator's Leather Wristguards (H)
-										i(143290),	-- Fearless Gladiator's Shadowcape (H)
+										i(144711),	-- Cruel Gladiator's Leather Belt (H)
+										i(144703),	-- Cruel Gladiator's Leather Gloves (H)
+										i(144705),	-- Cruel Gladiator's Leather Helm (H)
+										i(144707),	-- Cruel Gladiator's Leather Legguards (H)
+										i(144701),	-- Cruel Gladiator's Leather Slippers (H)
+										i(144709),	-- Cruel Gladiator's Leather Spaulders (H)
+										i(144699),	-- Cruel Gladiator's Leather Tunic (H)
+										i(144713),	-- Cruel Gladiator's Leather Wristguards (H)
+										i(144551),	-- Cruel Gladiator's Shadowcape (H)
 									},
 								}),
 							}),
@@ -1304,15 +1304,15 @@ _.Zones =
 										{"exclude", "itemID", 147662 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
-										i(142744),	-- Fearless Gladiator's Ringmail Armband (H)
-										i(142737),	-- Fearless Gladiator's Ringmail Armor (H)
-										i(142738),	-- Fearless Gladiator's Ringmail Boots (H)
-										i(142743),	-- Fearless Gladiator's Ringmail Clasp (H)
-										i(142739),	-- Fearless Gladiator's Ringmail Gauntlets (H)
-										i(142740),	-- Fearless Gladiator's Ringmail Helm (H)
-										i(142741),	-- Fearless Gladiator's Ringmail Kilt (H)
-										i(142742),	-- Fearless Gladiator's Ringmail Spaulders (H)
-										i(143291),	-- Fearless Gladiator's Totemic Cloak (H)
+										i(144729),	-- Cruel Gladiator's Ringmail Armband (H)
+										i(144715),	-- Cruel Gladiator's Ringmail Armor (H)
+										i(144717),	-- Cruel Gladiator's Ringmail Boots (H)
+										i(144727),	-- Cruel Gladiator's Ringmail Clasp (H)
+										i(144719),	-- Cruel Gladiator's Ringmail Gauntlets (H)
+										i(144721),	-- Cruel Gladiator's Ringmail Helm (H)
+										i(144723),	-- Cruel Gladiator's Ringmail Kilt (H)
+										i(144725),	-- Cruel Gladiator's Ringmail Spaulders (H)
+										i(144553),	-- Cruel Gladiator's Totemic Cloak (H)
 									},
 								}),
 							}),
@@ -1326,15 +1326,15 @@ _.Zones =
 										{"exclude", "itemID", 147654 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
-										i(142750),	-- Fearless Gladiator's Felweave Amice (H)
-										i(142752),	-- Fearless Gladiator's Felweave Bracers (H)
-										i(143305),	-- Fearless Gladiator's Felweave Cloak (H)
-										i(142751),	-- Fearless Gladiator's Felweave Cord (H)
-										i(142747),	-- Fearless Gladiator's Felweave Cowl (H)
-										i(142746),	-- Fearless Gladiator's Felweave Handguards (H)
-										i(142749),	-- Fearless Gladiator's Felweave Raiment (H)
-										i(142745),	-- Fearless Gladiator's Felweave Treads (H)
-										i(142748),	-- Fearless Gladiator's Felweave Trousers (H)
+										i(144759),	-- Cruel Gladiator's Felweave Amice (H)
+										i(144763),	-- Cruel Gladiator's Felweave Bracers (H)
+										i(144555),	-- Cruel Gladiator's Felweave Cloak (H)
+										i(144761),	-- Cruel Gladiator's Felweave Cord (H)
+										i(144753),	-- Cruel Gladiator's Felweave Cowl (H)
+										i(144751),	-- Cruel Gladiator's Felweave Handguards (H)
+										i(144757),	-- Cruel Gladiator's Felweave Raiment (H)
+										i(144749),	-- Cruel Gladiator's Felweave Treads (H)
+										i(144755),	-- Cruel Gladiator's Felweave Trousers (H)
 									},
 								}),
 							}),
@@ -1348,15 +1348,15 @@ _.Zones =
 										{"exclude", "itemID", 147659 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
-										i(143311),	-- Fearless Gladiator's Cloak of Battle (H)
-										i(142753),	-- Fearless Gladiator's Plate Chestpiece (H)
-										i(142755),	-- Fearless Gladiator's Plate Gauntlets (H)
-										i(142759),	-- Fearless Gladiator's Plate Girdle (H)
-										i(142756),	-- Fearless Gladiator's Plate Helm (H)
-										i(142757),	-- Fearless Gladiator's Plate Legguards (H)
-										i(142758),	-- Fearless Gladiator's Plate Shoulders (H)
-										i(142754),	-- Fearless Gladiator's Plate Warboots (H)
-										i(142760),	-- Fearless Gladiator's Plate Wristplates (H)
+										i(144557),	-- Cruel Gladiator's Cloak of Battle (H)
+										i(144765),	-- Cruel Gladiator's Plate Chestpiece (H)
+										i(144769),	-- Cruel Gladiator's Plate Gauntlets (H)
+										i(144777),	-- Cruel Gladiator's Plate Girdle (H)
+										i(144771),	-- Cruel Gladiator's Plate Helm (H)
+										i(144773),	-- Cruel Gladiator's Plate Legguards (H)
+										i(144775),	-- Cruel Gladiator's Plate Shoulders (H)
+										i(144767),	-- Cruel Gladiator's Plate Warboots (H)
+										i(144779),	-- Cruel Gladiator's Plate Wristplates (H)
 									},
 								}),
 							}),
@@ -1470,8 +1470,8 @@ _.Zones =
 										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9913, -661, 6 },	-- Season 7
 									},
 								}),
-							},
-						}),
+						--	},
+					--	}),
 					},
 				}),
 				n(106655, {	-- Arcanomancer Vridiel <Blacksmithing Trainer>

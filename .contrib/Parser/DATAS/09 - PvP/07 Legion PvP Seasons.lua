@@ -5015,157 +5015,376 @@ _.PVP =
 				}),
 				n(-661, {	-- Gladiator PvP Gear
 					cl(DEATHKNIGHT, {
-						i(144535),	-- Cruel Gladiator's Dreadcloak (H)
-						i(144559),	-- Cruel Gladiator's Dreadplate Chestpiece (H)
-						i(144563),	-- Cruel Gladiator's Dreadplate Gauntlets (H)
-						i(144571),	-- Cruel Gladiator's Dreadplate Girdle (H)
-						i(144565),	-- Cruel Gladiator's Dreadplate Helm (H)
-						i(144567),	-- Cruel Gladiator's Dreadplate Legguards (H)
-						i(144561),	-- Cruel Gladiator's Dreadplate Sabatons (H)
-						i(144569),	-- Cruel Gladiator's Dreadplate Shoulders (H)
-						i(144573),	-- Cruel Gladiator's Dreadplate Wristplates (H)
+						i(147649, {	-- Ensemble: Cruel Gladiator's Dreadplate Armor (H)
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -661, 6 },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -661, 6 },	-- Season 4
+								{"exclude", "itemID", 147649 }, -- Exclude itself to stop duplicating
+							},
+							["g"] = {
+								i(144535),	-- Cruel Gladiator's Dreadcloak (H)
+								i(144559),	-- Cruel Gladiator's Dreadplate Chestpiece (H)
+								i(144563),	-- Cruel Gladiator's Dreadplate Gauntlets (H)
+								i(144571),	-- Cruel Gladiator's Dreadplate Girdle (H)
+								i(144565),	-- Cruel Gladiator's Dreadplate Helm (H)
+								i(144567),	-- Cruel Gladiator's Dreadplate Legguards (H)
+								i(144561),	-- Cruel Gladiator's Dreadplate Sabatons (H)
+								i(144569),	-- Cruel Gladiator's Dreadplate Shoulders (H)
+								i(144573),	-- Cruel Gladiator's Dreadplate Wristplates (H)
+								i(145377),	-- Ferocious Gladiator's Dreadcloak (H)
+								i(145401),	-- Ferocious Gladiator's Dreadplate Chestpiece (H)
+								i(145405),	-- Ferocious Gladiator's Dreadplate Gauntlets (H)
+								i(145413),	-- Ferocious Gladiator's Dreadplate Girdle (H)
+								i(145407),	-- Ferocious Gladiator's Dreadplate Helm (H)
+								i(145409),	-- Ferocious Gladiator's Dreadplate Legguards (H)
+								i(145403),	-- Ferocious Gladiator's Dreadplate Sabatons (H)
+								i(145411),	-- Ferocious Gladiator's Dreadplate Shoulders (H)
+								i(145415),	-- Ferocious Gladiator's Dreadplate Wristplates (H)
+							},
+						}),
 					}),
 					cl(DEMONHUNTER, {
-						i(144537),	-- Cruel Gladiator's Demonthread Cloak (H)
-						i(144587),	-- Cruel Gladiator's Felskin Belt (H)
-						i(144577),	-- Cruel Gladiator's Felskin Boots (H)
-						i(144579),	-- Cruel Gladiator's Felskin Gloves (H)
-						i(144581),	-- Cruel Gladiator's Felskin Helm (H)
-						i(144583),	-- Cruel Gladiator's Felskin Legguards (H)
-						i(144585),	-- Cruel Gladiator's Felskin Spaulders (H)
-						i(144575),	-- Cruel Gladiator's Felskin Tunic (H)
-						i(144589),	-- Cruel Gladiator's Felskin Wristguards (H)
+						i(147652, {	-- Ensemble: Cruel Gladiator's Felskin Armor (H)
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -661, 12 },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -661, 12 },	-- Season 4
+								{"exclude", "itemID", 147652 }, -- Exclude itself to stop duplicating
+							},
+							["g"] = {
+								i(144537),	-- Cruel Gladiator's Demonthread Cloak (H)
+								i(144587),	-- Cruel Gladiator's Felskin Belt (H)
+								i(144577),	-- Cruel Gladiator's Felskin Boots (H)
+								i(144579),	-- Cruel Gladiator's Felskin Gloves (H)
+								i(144581),	-- Cruel Gladiator's Felskin Helm (H)
+								i(144583),	-- Cruel Gladiator's Felskin Legguards (H)
+								i(144585),	-- Cruel Gladiator's Felskin Spaulders (H)
+								i(144575),	-- Cruel Gladiator's Felskin Tunic (H)
+								i(144589),	-- Cruel Gladiator's Felskin Wristguards (H)
+								i(145379),	-- Ferocious Gladiator's Demonthread Cloak (H)
+								i(145429),	-- Ferocious Gladiator's Felskin Belt (H)
+								i(145419),	-- Ferocious Gladiator's Felskin Boots (H)
+								i(145421),	-- Ferocious Gladiator's Felskin Gloves (H)
+								i(145423),	-- Ferocious Gladiator's Felskin Helm (H)
+								i(145425),	-- Ferocious Gladiator's Felskin Legguards (H)
+								i(145427),	-- Ferocious Gladiator's Felskin Spaulders (H)
+								i(145417),	-- Ferocious Gladiator's Felskin Tunic (H)
+								i(145431),	-- Ferocious Gladiator's Felskin Wristguards (H)
+							},
+						}),
 					}),
 					cl(DRUID, {
-						i(144603),	-- Cruel Gladiator's Dragonhide Belt (H)
-						i(144539),	-- Cruel Gladiator's Dragonhide Cloak (H)
-						i(144595),	-- Cruel Gladiator's Dragonhide Gloves (H)
-						i(144597),	-- Cruel Gladiator's Dragonhide Helm (H)
-						i(144599),	-- Cruel Gladiator's Dragonhide Legguards (H)
-						i(144593),	-- Cruel Gladiator's Dragonhide Moccasins (H)
-						i(144591),	-- Cruel Gladiator's Dragonhide Robe (H)
-						i(144601),	-- Cruel Gladiator's Dragonhide Spaulders (H)
-						i(144605),	-- Cruel Gladiator's Dragonhide Wristguards (H)
+						i(147648, {	-- Ensemble: Cruel Gladiator's Dragonhide Armor (H)
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -661, 11 },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -661, 11 },	-- Season 4
+								{"exclude", "itemID", 147648 }, -- Exclude itself to stop duplicating
+							},
+							["g"] = {
+								i(144603),	-- Cruel Gladiator's Dragonhide Belt (H)
+								i(144539),	-- Cruel Gladiator's Dragonhide Cloak (H)
+								i(144595),	-- Cruel Gladiator's Dragonhide Gloves (H)
+								i(144597),	-- Cruel Gladiator's Dragonhide Helm (H)
+								i(144599),	-- Cruel Gladiator's Dragonhide Legguards (H)
+								i(144593),	-- Cruel Gladiator's Dragonhide Moccasins (H)
+								i(144591),	-- Cruel Gladiator's Dragonhide Robe (H)
+								i(144601),	-- Cruel Gladiator's Dragonhide Spaulders (H)
+								i(144605),	-- Cruel Gladiator's Dragonhide Wristguards (H)
+								i(145445),	-- Ferocious Gladiator's Dragonhide Belt (H)
+								i(145381),	-- Ferocious Gladiator's Dragonhide Cloak (H)
+								i(145437),	-- Ferocious Gladiator's Dragonhide Gloves (H)
+								i(145439),	-- Ferocious Gladiator's Dragonhide Helm (H)
+								i(145441),	-- Ferocious Gladiator's Dragonhide Legguards (H)
+								i(145435),	-- Ferocious Gladiator's Dragonhide Moccasins (H)
+								i(145433),	-- Ferocious Gladiator's Dragonhide Robe (H)
+								i(145443),	-- Ferocious Gladiator's Dragonhide Spaulders (H)
+								i(145447),	-- Ferocious Gladiator's Dragonhide Wristguards (H)
+							},
+						}),
 					}),
 					cl(HUNTER, {
-						i(144621),	-- Cruel Gladiator's Chain Armband (H)
-						i(144607),	-- Cruel Gladiator's Chain Armor (H)
-						i(144619),	-- Cruel Gladiator's Chain Clasp (H)
-						i(144611),	-- Cruel Gladiator's Chain Gauntlets (H)
-						i(144613),	-- Cruel Gladiator's Chain Helm (H)
-						i(144615),	-- Cruel Gladiator's Chain Leggings (H)
-						i(144617),	-- Cruel Gladiator's Chain Spaulders (H)
-						i(144609),	-- Cruel Gladiator's Chain Treads (H)
-						i(144541),	-- Cruel Gladiator's Drape of the Tracker (H)
+						i(147645, {	-- Ensemble: Cruel Gladiator's Chain Armor (H)
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -661, 3 },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -661, 3 },	-- Season 4
+								{"exclude", "itemID", 147645 }, -- Exclude itself to stop duplicating
+							},
+							["g"] = {
+								i(144621),	-- Cruel Gladiator's Chain Armband (H)
+								i(144607),	-- Cruel Gladiator's Chain Armor (H)
+								i(144619),	-- Cruel Gladiator's Chain Clasp (H)
+								i(144611),	-- Cruel Gladiator's Chain Gauntlets (H)
+								i(144613),	-- Cruel Gladiator's Chain Helm (H)
+								i(144615),	-- Cruel Gladiator's Chain Leggings (H)
+								i(144617),	-- Cruel Gladiator's Chain Spaulders (H)
+								i(144609),	-- Cruel Gladiator's Chain Treads (H)
+								i(144541),	-- Cruel Gladiator's Drape of the Tracker (H)
+								i(145463),	-- Ferocious Gladiator's Chain Armband (H)
+								i(145449),	-- Ferocious Gladiator's Chain Armor (H)
+								i(145461),	-- Ferocious Gladiator's Chain Clasp (H)
+								i(145453),	-- Ferocious Gladiator's Chain Gauntlets (H)
+								i(145455),	-- Ferocious Gladiator's Chain Helm (H)
+								i(145457),	-- Ferocious Gladiator's Chain Leggings (H)
+								i(145459),	-- Ferocious Gladiator's Chain Spaulders (H)
+								i(145451),	-- Ferocious Gladiator's Chain Treads (H)
+								i(145383),	-- Ferocious Gladiator's Drape of the Tracker (H)
+							},
+						}),
 					}),
 					cl(MAGE, {
-						i(144633),	-- Cruel Gladiator's Silk Amice (H)
-						i(144637),	-- Cruel Gladiator's Silk Bracers (H)
-						i(144635),	-- Cruel Gladiator's Silk Cord (H)
-						i(144627),	-- Cruel Gladiator's Silk Cowl (H)
-						i(144625),	-- Cruel Gladiator's Silk Handguards (H)
-						i(144631),	-- Cruel Gladiator's Silk Robe (H)
-						i(144623),	-- Cruel Gladiator's Silk Treads (H)
-						i(144629),	-- Cruel Gladiator's Silk Trousers (H)
-						i(144543),	-- Cruel Gladiator's Silken Shawl (H)
+						i(147667, {	-- Ensemble: Cruel Gladiator's Silk Armor (H)
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -661, 8 },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -661, 8 },	-- Season 4
+								{"exclude", "itemID", 147667 }, -- Exclude itself to stop duplicating
+							},
+							["g"] = {
+								i(144633),	-- Cruel Gladiator's Silk Amice (H)
+								i(144637),	-- Cruel Gladiator's Silk Bracers (H)
+								i(144635),	-- Cruel Gladiator's Silk Cord (H)
+								i(144627),	-- Cruel Gladiator's Silk Cowl (H)
+								i(144625),	-- Cruel Gladiator's Silk Handguards (H)
+								i(144631),	-- Cruel Gladiator's Silk Robe (H)
+								i(144623),	-- Cruel Gladiator's Silk Treads (H)
+								i(144629),	-- Cruel Gladiator's Silk Trousers (H)
+								i(144543),	-- Cruel Gladiator's Silken Shawl (H)
+								i(145475),	-- Ferocious Gladiator's Silk Amice (H)
+								i(145479),	-- Ferocious Gladiator's Silk Bracers (H)
+								i(145477),	-- Ferocious Gladiator's Silk Cord (H)
+								i(145469),	-- Ferocious Gladiator's Silk Cowl (H)
+								i(145467),	-- Ferocious Gladiator's Silk Handguards (H)
+								i(145473),	-- Ferocious Gladiator's Silk Robe (H)
+								i(145465),	-- Ferocious Gladiator's Silk Treads (H)
+								i(145471),	-- Ferocious Gladiator's Silk Trousers (H)
+								i(145385),	-- Ferocious Gladiator's Silken Shawl (H)
+							},
+						}),
 					}),
 					cl(MONK, {
-						i(144651),	-- Cruel Gladiator's Ironskin Belt (H)
-						i(144545),	-- Cruel Gladiator's Ironskin Cloak (H)
-						i(144641),	-- Cruel Gladiator's Ironskin Gloves (H)
-						i(144643),	-- Cruel Gladiator's Ironskin Helm (H)
-						i(144645),	-- Cruel Gladiator's Ironskin Legguards (H)
-						i(144639),	-- Cruel Gladiator's Ironskin Slippers (H)
-						i(144647),	-- Cruel Gladiator's Ironskin Spaulders (H)
-						i(144649),	-- Cruel Gladiator's Ironskin Tunic (H)
-						i(144653),	-- Cruel Gladiator's Ironskin Wristguards (H)
+						i(147655, {	-- Ensemble: Cruel Gladiator's Ironskin Armor (H)
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -661, 10 },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -661, 10 },	-- Season 4
+								{"exclude", "itemID", 147655 }, -- Exclude itself to stop duplicating
+							},
+							["g"] = {
+								i(144651),	-- Cruel Gladiator's Ironskin Belt (H)
+								i(144545),	-- Cruel Gladiator's Ironskin Cloak (H)
+								i(144641),	-- Cruel Gladiator's Ironskin Gloves (H)
+								i(144643),	-- Cruel Gladiator's Ironskin Helm (H)
+								i(144645),	-- Cruel Gladiator's Ironskin Legguards (H)
+								i(144639),	-- Cruel Gladiator's Ironskin Slippers (H)
+								i(144647),	-- Cruel Gladiator's Ironskin Spaulders (H)
+								i(144649),	-- Cruel Gladiator's Ironskin Tunic (H)
+								i(144653),	-- Cruel Gladiator's Ironskin Wristguards (H)
+								i(145493),	-- Ferocious Gladiator's Ironskin Belt (H)
+								i(145387),	-- Ferocious Gladiator's Ironskin Cloak (H)
+								i(145483),	-- Ferocious Gladiator's Ironskin Gloves (H)
+								i(145485),	-- Ferocious Gladiator's Ironskin Helm (H)
+								i(145487),	-- Ferocious Gladiator's Ironskin Legguards (H)
+								i(145481),	-- Ferocious Gladiator's Ironskin Slippers (H)
+								i(145489),	-- Ferocious Gladiator's Ironskin Spaulders (H)
+								i(145491),	-- Ferocious Gladiator's Ironskin Tunic (H)
+								i(145495),	-- Ferocious Gladiator's Ironskin Wristguards (H)
+							},
+						}),
 					}),
 					cl(PALADIN, {
-						i(144547),	-- Cruel Gladiator's Greatcloak of Faith (H)
-						i(144660),	-- Cruel Gladiator's Scaled Breastplate (H)
-						i(144664),	-- Cruel Gladiator's Scaled Gauntlets (H)
-						i(144673),	-- Cruel Gladiator's Scaled Girdle (H)
-						i(144666),	-- Cruel Gladiator's Scaled Helm (H)
-						i(144668),	-- Cruel Gladiator's Scaled Legguards (H)
-						i(144662),	-- Cruel Gladiator's Scaled Sabatons (H)
-						i(144671),	-- Cruel Gladiator's Scaled Shoulders (H)
-						i(144675),	-- Cruel Gladiator's Scaled Wristplates (H)
+						i(147666, {	-- Ensemble: Cruel Gladiator's Scaled Armor (H)
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -661, 2 },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -661, 2 },	-- Season 4
+								{"exclude", "itemID", 147666 }, -- Exclude itself to stop duplicating
+							},
+							["g"] = {
+								i(144547),	-- Cruel Gladiator's Greatcloak of Faith (H)
+								i(144660),	-- Cruel Gladiator's Scaled Breastplate (H)
+								i(144664),	-- Cruel Gladiator's Scaled Gauntlets (H)
+								i(144673),	-- Cruel Gladiator's Scaled Girdle (H)
+								i(144666),	-- Cruel Gladiator's Scaled Helm (H)
+								i(144668),	-- Cruel Gladiator's Scaled Legguards (H)
+								i(144662),	-- Cruel Gladiator's Scaled Sabatons (H)
+								i(144671),	-- Cruel Gladiator's Scaled Shoulders (H)
+								i(144675),	-- Cruel Gladiator's Scaled Wristplates (H)
+								i(145389),	-- Ferocious Gladiator's Greatcloak of Faith (H)
+								i(145502),	-- Ferocious Gladiator's Scaled Breastplate (H)
+								i(145506),	-- Ferocious Gladiator's Scaled Gauntlets (H)
+								i(145515),	-- Ferocious Gladiator's Scaled Girdle (H)
+								i(145508),	-- Ferocious Gladiator's Scaled Helm (H)
+								i(145510),	-- Ferocious Gladiator's Scaled Legguards (H)
+								i(145504),	-- Ferocious Gladiator's Scaled Sabatons (H)
+								i(145513),	-- Ferocious Gladiator's Scaled Shoulders (H)
+								i(145517),	-- Ferocious Gladiator's Scaled Wristplates (H)
+							},
+						}),
 					}),
 					cl(PRIEST, {
-						i(144549),	-- Cruel Gladiator's Drape of Piety (H)
-						i(144691),	-- Cruel Gladiator's Satin Bracers (H)
-						i(144689),	-- Cruel Gladiator's Satin Cord (H)
-						i(144679),	-- Cruel Gladiator's Satin Gloves (H)
-						i(144681),	-- Cruel Gladiator's Satin Hood (H)
-						i(144683),	-- Cruel Gladiator's Satin Leggings (H)
-						i(144687),	-- Cruel Gladiator's Satin Mantle (H)
-						i(144685),	-- Cruel Gladiator's Satin Robe (H)
-						i(144677),	-- Cruel Gladiator's Satin Treads (H)
+						i(147664, {	-- Ensemble: Cruel Gladiator's Satin Armor (H)
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -661, 5 },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -661, 5 },	-- Season 4
+								{"exclude", "itemID", 147664 }, -- Exclude itself to stop duplicating
+							},
+							["g"] = {
+								i(144549),	-- Cruel Gladiator's Drape of Piety (H)
+								i(144691),	-- Cruel Gladiator's Satin Bracers (H)
+								i(144689),	-- Cruel Gladiator's Satin Cord (H)
+								i(144679),	-- Cruel Gladiator's Satin Gloves (H)
+								i(144681),	-- Cruel Gladiator's Satin Hood (H)
+								i(144683),	-- Cruel Gladiator's Satin Leggings (H)
+								i(144687),	-- Cruel Gladiator's Satin Mantle (H)
+								i(144685),	-- Cruel Gladiator's Satin Robe (H)
+								i(144677),	-- Cruel Gladiator's Satin Treads (H)
+								i(145391),	-- Ferocious Gladiator's Drape of Piety (H)
+								i(145533),	-- Ferocious Gladiator's Satin Bracers (H)
+								i(145531),	-- Ferocious Gladiator's Satin Cord (H)
+								i(145521),	-- Ferocious Gladiator's Satin Gloves (H)
+								i(145523),	-- Ferocious Gladiator's Satin Hood (H)
+								i(145525),	-- Ferocious Gladiator's Satin Leggings (H)
+								i(145529),	-- Ferocious Gladiator's Satin Mantle (H)
+								i(145527),	-- Ferocious Gladiator's Satin Robe (H)
+								i(145519),	-- Ferocious Gladiator's Satin Treads (H)
+							},
+						}),
 					}),
 					cl(ROGUE, {
-						i(144711),	-- Cruel Gladiator's Leather Belt (H)
-						i(144703),	-- Cruel Gladiator's Leather Gloves (H)
-						i(144705),	-- Cruel Gladiator's Leather Helm (H)
-						i(144707),	-- Cruel Gladiator's Leather Legguards (H)
-						i(144701),	-- Cruel Gladiator's Leather Slippers (H)
-						i(144709),	-- Cruel Gladiator's Leather Spaulders (H)
-						i(144699),	-- Cruel Gladiator's Leather Tunic (H)
-						i(144713),	-- Cruel Gladiator's Leather Wristguards (H)
-						i(144551),	-- Cruel Gladiator's Shadowcape (H)
+						i(147658, {	-- Ensemble: Cruel Gladiator's Leather Armor (H)
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -661, 4 },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -661, 4 },	-- Season 4
+								{"exclude", "itemID", 147658 }, -- Exclude itself to stop duplicating
+							},
+							["g"] = {
+								i(144711),	-- Cruel Gladiator's Leather Belt (H)
+								i(144703),	-- Cruel Gladiator's Leather Gloves (H)
+								i(144705),	-- Cruel Gladiator's Leather Helm (H)
+								i(144707),	-- Cruel Gladiator's Leather Legguards (H)
+								i(144701),	-- Cruel Gladiator's Leather Slippers (H)
+								i(144709),	-- Cruel Gladiator's Leather Spaulders (H)
+								i(144699),	-- Cruel Gladiator's Leather Tunic (H)
+								i(144713),	-- Cruel Gladiator's Leather Wristguards (H)
+								i(144551),	-- Cruel Gladiator's Shadowcape (H)
+								i(145553),	-- Ferocious Gladiator's Leather Belt (H)
+								i(145545),	-- Ferocious Gladiator's Leather Gloves (H)
+								i(145547),	-- Ferocious Gladiator's Leather Helm (H)
+								i(145549),	-- Ferocious Gladiator's Leather Legguards (H)
+								i(145543),	-- Ferocious Gladiator's Leather Slippers (H)
+								i(145551),	-- Ferocious Gladiator's Leather Spaulders (H)
+								i(145541),	-- Ferocious Gladiator's Leather Tunic (H)
+								i(145555),	-- Ferocious Gladiator's Leather Wristguards (H)
+								i(145393),	-- Ferocious Gladiator's Shadowcape (H)
+							},
+						}),
 					}),
 					cl(SHAMAN, {
-						i(144729),	-- Cruel Gladiator's Ringmail Armband (H)
-						i(144715),	-- Cruel Gladiator's Ringmail Armor (H)
-						i(144717),	-- Cruel Gladiator's Ringmail Boots (H)
-						i(144727),	-- Cruel Gladiator's Ringmail Clasp (H)
-						i(144719),	-- Cruel Gladiator's Ringmail Gauntlets (H)
-						i(144721),	-- Cruel Gladiator's Ringmail Helm (H)
-						i(144723),	-- Cruel Gladiator's Ringmail Kilt (H)
-						i(144725),	-- Cruel Gladiator's Ringmail Spaulders (H)
-						i(144553),	-- Cruel Gladiator's Totemic Cloak (H)
+						i(147662, {	-- Ensemble: Cruel Gladiator's Ringmail Armor (H)
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -661, 7 },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -661, 7 },	-- Season 4
+								{"exclude", "itemID", 147662 }, -- Exclude itself to stop duplicating
+							},
+							["g"] = {
+								i(144729),	-- Cruel Gladiator's Ringmail Armband (H)
+								i(144715),	-- Cruel Gladiator's Ringmail Armor (H)
+								i(144717),	-- Cruel Gladiator's Ringmail Boots (H)
+								i(144727),	-- Cruel Gladiator's Ringmail Clasp (H)
+								i(144719),	-- Cruel Gladiator's Ringmail Gauntlets (H)
+								i(144721),	-- Cruel Gladiator's Ringmail Helm (H)
+								i(144723),	-- Cruel Gladiator's Ringmail Kilt (H)
+								i(144725),	-- Cruel Gladiator's Ringmail Spaulders (H)
+								i(144553),	-- Cruel Gladiator's Totemic Cloak (H)
+								i(145571),	-- Ferocious Gladiator's Ringmail Armband (H)
+								i(145557),	-- Ferocious Gladiator's Ringmail Armor (H)
+								i(145559),	-- Ferocious Gladiator's Ringmail Boots (H)
+								i(145569),	-- Ferocious Gladiator's Ringmail Clasp (H)
+								i(145561),	-- Ferocious Gladiator's Ringmail Gauntlets (H)
+								i(145563),	-- Ferocious Gladiator's Ringmail Helm (H)
+								i(145565),	-- Ferocious Gladiator's Ringmail Kilt (H)
+								i(145567),	-- Ferocious Gladiator's Ringmail Spaulders (H)
+								i(145395),	-- Ferocious Gladiator's Totemic Cloak (H)
+							},
+						}),
 					}),
 					cl(WARLOCK, {
-						i(144759),	-- Cruel Gladiator's Felweave Amice (H)
-						i(144763),	-- Cruel Gladiator's Felweave Bracers (H)
-						i(144555),	-- Cruel Gladiator's Felweave Cloak (H)
-						i(144761),	-- Cruel Gladiator's Felweave Cord (H)
-						i(144753),	-- Cruel Gladiator's Felweave Cowl (H)
-						i(144751),	-- Cruel Gladiator's Felweave Handguards (H)
-						i(144757),	-- Cruel Gladiator's Felweave Raiment (H)
-						i(144749),	-- Cruel Gladiator's Felweave Treads (H)
-						i(144755),	-- Cruel Gladiator's Felweave Trousers (H)
+						i(147654, {	-- Ensemble: Cruel Gladiator's Felweave Armor (H)
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -661, 9 },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -661, 9 },	-- Season 4
+								{"exclude", "itemID", 147654 }, -- Exclude itself to stop duplicating
+							},
+							["g"] = {
+								i(144759),	-- Cruel Gladiator's Felweave Amice (H)
+								i(144763),	-- Cruel Gladiator's Felweave Bracers (H)
+								i(144555),	-- Cruel Gladiator's Felweave Cloak (H)
+								i(144761),	-- Cruel Gladiator's Felweave Cord (H)
+								i(144753),	-- Cruel Gladiator's Felweave Cowl (H)
+								i(144751),	-- Cruel Gladiator's Felweave Handguards (H)
+								i(144757),	-- Cruel Gladiator's Felweave Raiment (H)
+								i(144749),	-- Cruel Gladiator's Felweave Treads (H)
+								i(144755),	-- Cruel Gladiator's Felweave Trousers (H)
+								i(145601),	-- Ferocious Gladiator's Felweave Amice (H)
+								i(145605),	-- Ferocious Gladiator's Felweave Bracers (H)
+								i(145397),	-- Ferocious Gladiator's Felweave Cloak (H)
+								i(145603),	-- Ferocious Gladiator's Felweave Cord (H)
+								i(145595),	-- Ferocious Gladiator's Felweave Cowl (H)
+								i(145593),	-- Ferocious Gladiator's Felweave Handguards (H)
+								i(145599),	-- Ferocious Gladiator's Felweave Raiment (H)
+								i(145591),	-- Ferocious Gladiator's Felweave Treads (H)
+								i(145597),	-- Ferocious Gladiator's Felweave Trousers (H)
+							},
+						}),
 					}),
 					cl(WARRIOR, {
-						i(144557),	-- Cruel Gladiator's Cloak of Battle (H)
-						i(144765),	-- Cruel Gladiator's Plate Chestpiece (H)
-						i(144769),	-- Cruel Gladiator's Plate Gauntlets (H)
-						i(144777),	-- Cruel Gladiator's Plate Girdle (H)
-						i(144771),	-- Cruel Gladiator's Plate Helm (H)
-						i(144773),	-- Cruel Gladiator's Plate Legguards (H)
-						i(144775),	-- Cruel Gladiator's Plate Shoulders (H)
-						i(144767),	-- Cruel Gladiator's Plate Warboots (H)
-						i(144779),	-- Cruel Gladiator's Plate Wristplates (H)
-					}),
-					n(-384,	{	-- Neck
-						un(REMOVED_FROM_GAME, i(144655)),	-- Cruel Gladiator's Necklace (H)
-						un(REMOVED_FROM_GAME, i(144657)),	-- Cruel Gladiator's Pendant (H)
-						un(REMOVED_FROM_GAME, i(144659)),	-- Cruel Gladiator's Choker (H)
-					}),
-					n(-385,	{	-- Finger
-						un(REMOVED_FROM_GAME, i(144693)),	-- Cruel Gladiator's Ring (H)
-						un(REMOVED_FROM_GAME, i(144695)),	-- Cruel Gladiator's Band (H)
-						un(REMOVED_FROM_GAME, i(144697)),	-- Cruel Gladiator's Signet (H)
-					}),
-					n(-386,	{	-- Trinket
-						un(REMOVED_FROM_GAME, i(144731)),	-- Cruel Gladiator's Badge of Conquest (H)
-						un(REMOVED_FROM_GAME, i(144733)),	-- Cruel Gladiator's Accolade of Conquest (H)
-						un(REMOVED_FROM_GAME, i(144735)),	-- Cruel Gladiator's Insignia of Conquest (H)
-						un(REMOVED_FROM_GAME, i(144737)),	-- Cruel Gladiator's Badge of Dominance (H)
-						un(REMOVED_FROM_GAME, i(144739)),	-- Cruel Gladiator's Accolade of Dominance (H)
-						un(REMOVED_FROM_GAME, i(144741)),	-- Cruel Gladiator's Insignia of Dominance (H)
-						un(REMOVED_FROM_GAME, i(144743)),	-- Cruel Gladiator's Badge of Victory (H)
-						un(REMOVED_FROM_GAME, i(144745)),	-- Cruel Gladiator's Accolade of Victory (H)
-						un(REMOVED_FROM_GAME, i(144747)),	-- Cruel Gladiator's Insignia of Victory (H)
+						i(147659, {	-- Ensemble: Cruel Gladiator's Plate Armor (H)
+							["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
+							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
+							["sym"] = {
+								{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -661, 1 },	-- Season 3
+								{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -661, 1 },	-- Season 4
+								{"exclude", "itemID", 147659 }, -- Exclude itself to stop duplicating
+							},
+							["g"] = {
+								i(144557),	-- Cruel Gladiator's Cloak of Battle (H)
+								i(144765),	-- Cruel Gladiator's Plate Chestpiece (H)
+								i(144769),	-- Cruel Gladiator's Plate Gauntlets (H)
+								i(144777),	-- Cruel Gladiator's Plate Girdle (H)
+								i(144771),	-- Cruel Gladiator's Plate Helm (H)
+								i(144773),	-- Cruel Gladiator's Plate Legguards (H)
+								i(144775),	-- Cruel Gladiator's Plate Shoulders (H)
+								i(144767),	-- Cruel Gladiator's Plate Warboots (H)
+								i(144779),	-- Cruel Gladiator's Plate Wristplates (H)
+								i(145399),	-- Ferocious Gladiator's Cloak of Battle (H)
+								i(145607),	-- Ferocious Gladiator's Plate Chestpiece (H)
+								i(145611),	-- Ferocious Gladiator's Plate Gauntlets (H)
+								i(145619),	-- Ferocious Gladiator's Plate Girdle (H)
+								i(145613),	-- Ferocious Gladiator's Plate Helm (H)
+								i(145615),	-- Ferocious Gladiator's Plate Legguards (H)
+								i(145617),	-- Ferocious Gladiator's Plate Shoulders (H)
+								i(145609),	-- Ferocious Gladiator's Plate Warboots (H)
+								i(145621),	-- Ferocious Gladiator's Plate Wristplates (H)
+							},
+						}),
 					}),
 				}),
 				n(-662, {	-- Elite PvP Gear
