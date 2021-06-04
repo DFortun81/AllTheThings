@@ -13,7 +13,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26033,	-- Trol'kalar
 					["g"] = {
-						i(59194),	-- Sandals of SatisfactionO 
+						i(59194),	-- Sandals of Satisfaction
 						i(59195),	-- Bracers of Sensations
 						i(59196),	-- Alina's Gloves
 						i(59197),	-- Lordaeron-Made Breastplate

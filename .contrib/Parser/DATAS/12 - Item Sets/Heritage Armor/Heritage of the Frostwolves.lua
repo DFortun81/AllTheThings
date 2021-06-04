@@ -7,7 +7,7 @@ _.GearSets =
 	n(-254, {	-- Heritage Armor
 		gs(1682, {	-- Heritage of the Frostwolves
 			["races"] = { MAGHAR },
-			["g"] = {   
+			["g"] = {
 				q(51484, {    -- Heritage of the Mag'har
 					i(161059),	-- Frostwolf Clan Helm
 					i(161060),	-- Frostwolf Clan Pauldrons

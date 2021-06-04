@@ -186,11 +186,11 @@ _.Achievements =
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						--title(29),	-- Gladiator <Name>
-						-- Mount is listed under FoS>Mounts. 
+						-- Mount is listed under FoS>Mounts.
 						-- i(104326, {	-- Grievous Gladiator's Cloud Serpent
 					},
 				}),
-				-- Sometimes under Legacy, sometimes under FoS. 
+				-- Sometimes under Legacy, sometimes under FoS.
 				-- We put them all under FoS in ATT.
 				ach(8485, {	-- Grievous Combatant (Alliance) Mists of Pandaria Season 3/Season 14
 					["races"] = ALLIANCE_ONLY,
@@ -240,7 +240,7 @@ _.Achievements =
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						--title(29),	-- Gladiator <Name>
-						-- Mount is listed under FoS>Mounts. 
+						-- Mount is listed under FoS>Mounts.
 						-- i(104327, {	-- Prideful Gladiator's Cloud Serpent
 					},
 				}),
@@ -252,7 +252,7 @@ _.Achievements =
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				-- Sometimes under Legacy, sometimes under FoS. 
+				-- Sometimes under Legacy, sometimes under FoS.
 				-- We put them all under FoS in ATT.
 				ach(8642, {	-- Prideful Combatant (Alliance) Mists of Pandaria Season 4/Season 15
 					["races"] = ALLIANCE_ONLY,
@@ -312,7 +312,7 @@ _.Achievements =
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						--title(29),	-- Gladiator <Name>
-						-- Mount is listed under FoS>Mounts. 
+						-- Mount is listed under FoS>Mounts.
 						-- i(128277, {	-- Primal Gladiator's Felblood Gronnling
 					},
 				}),
@@ -342,7 +342,7 @@ _.Achievements =
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				-- Sometimes under Legacy, sometimes under FoS. 
+				-- Sometimes under Legacy, sometimes under FoS.
 				-- We put them all under FoS in ATT.
 				ach(9238, {	-- Primal Combatant (Alliance) Warlords of Draenor Season 1
 					["races"] = ALLIANCE_ONLY,
@@ -420,7 +420,7 @@ _.Achievements =
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						--title(29),	-- Gladiator <Name>
-						-- Mount is listed under FoS>Mounts. 
+						-- Mount is listed under FoS>Mounts.
 						--i(128281, {	-- Wild Gladiator's Felblood Gronnling
 					},
 				}),
@@ -474,7 +474,7 @@ _.Achievements =
 						--}),
 					},
 				}),
-				-- Sometimes under Legacy, sometimes under FoS. 
+				-- Sometimes under Legacy, sometimes under FoS.
 				-- We put them all under FoS in ATT.
 				ach(10093, {	-- Wild Combatant (Alliance) Warlords of Draenor Season 2
 					["races"] = ALLIANCE_ONLY,
@@ -528,7 +528,7 @@ _.Achievements =
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						--title(29),	-- Gladiator <Name>
-						-- Mount is listed under FoS>Mounts. 
+						-- Mount is listed under FoS>Mounts.
 						--i(128282, {	-- Warmongering Gladiator's Felblood Gronnling
 					},
 				}),
@@ -582,7 +582,7 @@ _.Achievements =
 						--}),
 					},
 				}),
-				-- Sometimes under Legacy, sometimes under FoS. 
+				-- Sometimes under Legacy, sometimes under FoS.
 				-- We put them all under FoS in ATT.
 				ach(10095, {	-- Warmongering Combatant (Alliance) Warlords of Draenor Season 3
 					["races"] = ALLIANCE_ONLY,
@@ -632,7 +632,7 @@ _.Achievements =
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						--title(29),			-- Gladiator <Name>
-						-- Mount is listed under FoS>Mounts. 
+						-- Mount is listed under FoS>Mounts.
 						--i(141843, {	-- Vindictive Gladiator's Storm Dragon
 					},
 				}),
@@ -678,7 +678,7 @@ _.Achievements =
 						--title(31),	-- Rival <Name>
 					},
 				}),
-				-- Sometimes under Legacy, sometimes under FoS. 
+				-- Sometimes under Legacy, sometimes under FoS.
 				-- We put them all under FoS in ATT.
 				ach(10998, {	-- Vindictive Combatant (Alliance) Legion Season 1
 					["races"] = ALLIANCE_ONLY,
@@ -727,7 +727,7 @@ _.Achievements =
 						--title(30),		-- Duelist <Name>
 					},
 				}),
-				-- Sometimes under Legacy, sometimes under FoS. 
+				-- Sometimes under Legacy, sometimes under FoS.
 				-- We put them all under FoS in ATT.
 				ach(11004, {	-- Fearless Combatant (Alliance) Legion Season 2
 					["races"] = ALLIANCE_ONLY,
@@ -752,7 +752,7 @@ _.Achievements =
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						--title(29),			-- Gladiator <Name>
-						-- Mount is listed under FoS>Mounts. 
+						-- Mount is listed under FoS>Mounts.
 						--i(141844, {	-- Fearless Gladiator's Storm Dragon
 					},
 				}),
@@ -806,7 +806,7 @@ _.Achievements =
 						--title(32),	-- Challenger <Name>
 					},
 				}),
-				-- Sometimes under Legacy, sometimes under FoS. 
+				-- Sometimes under Legacy, sometimes under FoS.
 				-- We put them all under FoS in ATT.
 				ach(11008, {	-- Cruel Combatant (Alliance) Legion Season 3
 					["races"] = ALLIANCE_ONLY,
@@ -851,7 +851,7 @@ _.Achievements =
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						--title(29),			-- Gladiator <Name>
-						-- Mount is listed under FoS>Mounts. 
+						-- Mount is listed under FoS>Mounts.
 						--i(141845, {	-- Cruel Gladiator's Storm Dragon
 					},
 				}),
@@ -925,7 +925,7 @@ _.Achievements =
 						--title(30),		-- Duelist <Name>
 					},
 				}),
-				-- Sometimes under Legacy, sometimes under FoS. 
+				-- Sometimes under Legacy, sometimes under FoS.
 				-- We put them all under FoS in ATT.
 				ach(11010, {	-- Ferocious Combatant (Alliance): Legion Season 4
 					["races"] = ALLIANCE_ONLY,
@@ -964,7 +964,7 @@ _.Achievements =
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						--title(29),			-- Gladiator <Name>
-						-- Mount is listed under FoS>Mounts. 
+						-- Mount is listed under FoS>Mounts.
 						--i(141846, {	-- Ferocious  Gladiator's Storm Dragon
 					},
 				}),
@@ -1024,7 +1024,7 @@ _.Achievements =
 						--title(30),		-- Duelist <Name>
 					},
 				}),
-				-- Sometimes under Legacy, sometimes under FoS. 
+				-- Sometimes under Legacy, sometimes under FoS.
 				-- We put them all under FoS in ATT.
 				ach(12032, {	-- Fierce  Combatant (Alliance): Legion Season 5
 					["races"] = ALLIANCE_ONLY,
@@ -1063,7 +1063,7 @@ _.Achievements =
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						--title(29),			-- Gladiator <Name>
-						-- Mount is listed under FoS>Mounts. 
+						-- Mount is listed under FoS>Mounts.
 						--i(141847, {	-- Fierce  Gladiator's Storm Dragon
 					},
 				}),
@@ -1117,7 +1117,7 @@ _.Achievements =
 						--title(313),	-- Defender of the Horde <Name>
 					},
 				}),
-				-- Sometimes under Legacy, sometimes under FoS. 
+				-- Sometimes under Legacy, sometimes under FoS.
 				-- We put them all under FoS in ATT.
 				ach(12137, {	-- Dominant Combatant (Alliance): Legion Season 6
 					["races"] = ALLIANCE_ONLY,
@@ -1162,7 +1162,7 @@ _.Achievements =
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						--title(29),			-- Gladiator <Name>
-						-- Mount is listed under FoS>Mounts. 
+						-- Mount is listed under FoS>Mounts.
 						--i(141848, {	-- Dominant Gladiator's Storm Dragon
 					},
 				}),
@@ -1216,7 +1216,7 @@ _.Achievements =
 						--title(313),	-- Defender of the Alliance <Name>
 					},
 				}),
-				-- Sometimes under Legacy, sometimes under FoS. 
+				-- Sometimes under Legacy, sometimes under FoS.
 				-- We put them all under FoS in ATT.
 				ach(12200, {	-- Demonic Combatant (Alliance): Legion Season 7
 					["races"] = ALLIANCE_ONLY,
@@ -1261,7 +1261,7 @@ _.Achievements =
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						--title(29),			-- Gladiator <Name>
-						-- Mount is listed under FoS>Mounts. 
+						-- Mount is listed under FoS>Mounts.
 						--(153493, {	-- Demonic Gladiator's Storm Dragon
 					},
 				}),
@@ -1328,7 +1328,7 @@ _.Achievements =
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						--title(29),			-- Gladiator <Name>
-						-- Mount is listed under FoS>Mounts. 
+						-- Mount is listed under FoS>Mounts.
 						--i(156879, {	-- Dread Gladiator's Proto-Drake
 						i(164573, {	-- Dread Gladiator's Tabard (A)
 							["u"] = REMOVED_FROM_GAME,
@@ -1403,7 +1403,7 @@ _.Achievements =
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						--title(29),	-- Gladiator <Name>
-						-- Mount is listed under FoS>Mounts. 
+						-- Mount is listed under FoS>Mounts.
 						--i(156880, {	-- Sinister Gladiator's Proto-Drake
 					},
 				}),
@@ -1472,7 +1472,7 @@ _.Achievements =
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						--title(29),	-- Gladiator <Name>
-						-- Mount is listed under FoS>Mounts. 
+						-- Mount is listed under FoS>Mounts.
 						--i(156881, {	-- Notorious Gladiator's Proto-Drake
 					},
 				}),
@@ -1541,7 +1541,7 @@ _.Achievements =
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						--title(29),	-- Gladiator <Name>
-						-- Mount is listed under FoS>Mounts. 
+						-- Mount is listed under FoS>Mounts.
 						--i(156884, {	-- Corrupted Gladiator's Proto-Drake
 					},
 				}),
@@ -1607,7 +1607,7 @@ _.Achievements =
 					--["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						--title(29),	-- Gladiator <Name>
-						-- Mount is listed under FoS>Mounts. 
+						-- Mount is listed under FoS>Mounts.
 						--i(183937, {	-- Sinful Gladiator's Soul Eater
 						--	["u"] = REMOVED_FROM_GAME,
 					},

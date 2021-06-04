@@ -136,14 +136,14 @@ _.Zones =
 									i(159012),	-- Ritual Flayer's Jerkin
 								},
 						}),
-						i(175337),	-- Death-Pledged Shoulderguards no azerite version 
-						i(175376),	-- Death-Pledged Hauberk no azerite version 
-						i(175336),	-- Loa Speaker's Epaulets no azerite version 
-						i(175378),	-- Loa Speaker's Vestments no azerite version 
-						i(175375),	-- Nazmani Warplate Chestpiece no azerite version 
-						i(175335),	-- Nazmani Warplate Spaulders no azerite version 
-						i(175334),	-- Ritual Flayer's Spaulders no azerite version 
-						i(175377),	-- Ritual Flayer's Jerkin no azerite version 
+						i(175337),	-- Death-Pledged Shoulderguards no azerite version
+						i(175376),	-- Death-Pledged Hauberk no azerite version
+						i(175336),	-- Loa Speaker's Epaulets no azerite version
+						i(175378),	-- Loa Speaker's Vestments no azerite version
+						i(175375),	-- Nazmani Warplate Chestpiece no azerite version
+						i(175335),	-- Nazmani Warplate Spaulders no azerite version
+						i(175334),	-- Ritual Flayer's Spaulders no azerite version
+						i(175377),	-- Ritual Flayer's Jerkin no azerite version
 					},
 				}),
 				q(49380, {	-- Bad Juju

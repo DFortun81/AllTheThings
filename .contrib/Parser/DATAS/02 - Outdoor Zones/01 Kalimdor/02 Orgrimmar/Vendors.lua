@@ -254,7 +254,7 @@ _.Zones =
 						{"exclude", "headerID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
 					},
 				}),
-				n(54659,  {	-- Blood Guard Zar'shi Original CATA S10 ELITE VENDOR 
+				n(54659,  {	-- Blood Guard Zar'shi Original CATA S10 ELITE VENDOR
 					["coord"] = { 38.2, 71.0, 85 },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,

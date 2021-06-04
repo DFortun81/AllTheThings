@@ -254,7 +254,7 @@ _.PVP =
 								i(142838),	-- Fearless Combatant's Satin Robe (A)
 								i(142834),	-- Fearless Combatant's Satin Treads (A)
 							},
-						}),	
+						}),
 					}),
 					cl(ROGUE, {
 						i(146172, {	-- Ensemble: Vindictive Combatant's Leather Armor (A)
@@ -3366,7 +3366,7 @@ _.PVP =
 				}),
 			}),
 		}),
-		n(-684, {	-- Cruel Gladiator: Legion Season 3		
+		n(-684, {	-- Cruel Gladiator: Legion Season 3
 			n(-9914, {	-- Alliance
 				n(-660, {	-- Aspirant / Combatant PvP Gear
 					cl(DEATHKNIGHT, {

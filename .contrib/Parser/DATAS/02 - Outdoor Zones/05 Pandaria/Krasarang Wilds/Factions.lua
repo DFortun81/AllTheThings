@@ -901,7 +901,7 @@ _.Zones =
 							}),
 							q(32186, {	-- Beastmaster's Quarry: The Crab
 								["sourceQuests"] = { 32166 },	-- Beastmaster's Hunt: The Crab
-								["provider"] = { "n", 67508 },	-- Colossal Viseclaw	
+								["provider"] = { "n", 67508 },	-- Colossal Viseclaw
 								["isDaily"] = true,
 								["coord"] = { 58.7, 38.7, 418 },
 								["races"] = ALLIANCE_ONLY,

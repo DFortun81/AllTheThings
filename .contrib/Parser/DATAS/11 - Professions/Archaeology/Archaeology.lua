@@ -1886,7 +1886,7 @@ profession(ARCHAEOLOGY, {
 			["g"] = {
 				{ ["currencyID"] = 754, }	-- Mantid Archaeology Fragment
 			},
-		}),	
+		}),
 		i(117387, {	-- Crate of Mogu Archaeology Fragments
 			["cost"] = { { "i", 87399, 1 } },	-- 1x  Restored Artifact
 			["g"] = {

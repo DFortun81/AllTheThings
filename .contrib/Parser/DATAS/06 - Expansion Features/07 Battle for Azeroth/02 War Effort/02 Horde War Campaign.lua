@@ -696,7 +696,7 @@ _.ExpansionFeatures =
 						q(51797, {	-- Tracking Tidesages
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 							["coord"] = { 58.4, 62.6, 862 },
-							["sourceQuests"] = { 
+							["sourceQuests"] = {
 								53066,	-- Operation: Water Wise
 								51789,	-- What Remains of Marshal M. Valentine
 							},
@@ -774,7 +774,7 @@ _.ExpansionFeatures =
 						q(52764, {	-- Journey to the Middle of Nowhere
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 							["coord"] = { 58.4, 62.6, 862 },
-							["sourceQuests"] = { 
+							["sourceQuests"] = {
 								53067,	-- Operation: Bottom Feeder
 								52122,	-- To Be Forsaken
 							},
@@ -881,7 +881,7 @@ _.ExpansionFeatures =
 						q(52183, {	-- When a Plan Comes Together
 							["provider"] = { "n", 141644 },	-- Nathanos Blightcaller
 							["coord"] = { 58.4, 62.6, 862 },
-							["sourceQuests"] = { 
+							["sourceQuests"] = {
 								53068,	-- Operation: Hook and Line
 								52978,	-- With Prince in Tow
 							},
@@ -1566,7 +1566,7 @@ _.ExpansionFeatures =
 						q(55780, {	-- Old Allies (Sylvanas Version)
 							["provider"] = { "n", 151848 },	-- Lor'themar Theron
 							["coord"] = { 48.5, 62.1, 1355 },
-							["sourceQuests"] = { 
+							["sourceQuests"] = {
 								55778,	-- Visions of Danger
 								55052,	-- Securing Warfang Hold (Sylvanas Version)
 							},

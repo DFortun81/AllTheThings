@@ -27,7 +27,7 @@ _.Zones =
 					un(REMOVED_FROM_GAME, i(97660)),	-- Malcontent's Cowl,
 					un(REMOVED_FROM_GAME, i(97745)),	-- Malcontent's Cowl,
 					un(REMOVED_FROM_GAME, i(97659)),	-- Tallgrass Guerilla's Cap
-					un(REMOVED_FROM_GAME, i(97658)),	--  Dissident's Crown 
+					un(REMOVED_FROM_GAME, i(97658)),	--  Dissident's Crown
 					un(REMOVED_FROM_GAME, i(97692)),	-- Crimson Schism Headpiece,
 					un(REMOVED_FROM_GAME, i(97750)),	-- Crimson Schism Headpiece,
 					un(REMOVED_FROM_GAME, i(97757)),	-- Crimson Schism Headpiece,
@@ -36,9 +36,9 @@ _.Zones =
 					un(REMOVED_FROM_GAME, i(97785)),	-- Secessionist's Helm,
 					un(REMOVED_FROM_GAME, i(97657)),	-- Reformationist's Crown
 					un(REMOVED_FROM_GAME, i(97655)),	-- Disowner's Cap
-					un(REMOVED_FROM_GAME, i(97625)),	-- Unbending Spirit Coif 
-					un(REMOVED_FROM_GAME, i(97774)),	-- Unbending Spirit Coif 
-					un(REMOVED_FROM_GAME, i(97653)),	-- Perjurious Mask 
+					un(REMOVED_FROM_GAME, i(97625)),	-- Unbending Spirit Coif
+					un(REMOVED_FROM_GAME, i(97774)),	-- Unbending Spirit Coif
+					un(REMOVED_FROM_GAME, i(97653)),	-- Perjurious Mask
 					un(REMOVED_FROM_GAME, i(97654)),	-- Insurrection Helm
 					un(REMOVED_FROM_GAME, i(97764)),	-- Insurrection Helm
 				})),

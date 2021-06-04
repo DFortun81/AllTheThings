@@ -20,13 +20,13 @@ _.Zones =
 									["sourceQuests"] = { 38445 },	-- The Assault Base
 								}),
 								crit(3, {	-- Bane of the Bleeding Hollow
-								--	["sourceQuests"] = {  },	-- 
+								--	["sourceQuests"] = {  },	--
 								}),
 								crit(4, {	-- Dark Ascension
-								--	["sourceQuests"] = {  },	-- 
+								--	["sourceQuests"] = {  },	--
 								}),
 								crit(6, {	-- The Cipher of Damnation
-								--	["sourceQuests"] = {  },	-- 
+								--	["sourceQuests"] = {  },	--
 								}),
 							},
 						}),
@@ -64,13 +64,13 @@ _.Zones =
 									["sourceQuests"] = { 37935 },	-- The Assault Base
 								}),
 								crit(3, {	-- Bane of the Bleeding Hollow
-								--	["sourceQuests"] = {  },	-- 
+								--	["sourceQuests"] = {  },	--
 								}),
 								crit(4, {	-- Dark Ascension
-								--	["sourceQuests"] = {  },	-- 
+								--	["sourceQuests"] = {  },	--
 								}),
 								crit(6, {	-- The Cipher of Damnation
-								--	["sourceQuests"] = {  },	-- 
+								--	["sourceQuests"] = {  },	--
 								}),
 							},
 						}),

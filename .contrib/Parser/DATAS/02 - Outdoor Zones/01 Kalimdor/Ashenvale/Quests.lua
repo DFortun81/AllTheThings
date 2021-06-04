@@ -56,7 +56,7 @@ _.Zones =
 					["provider"] = { "n", 33726 },	-- Splintertree Demolisher
 					["coord"] = { 73.3, 62.1, 63 },
 					["sourceQuest"] = 13798,	-- Rain of Destruction
-					["races"] = HORDE_ONLY,	
+					["races"] = HORDE_ONLY,
 				}),
 				q(13924, {	-- All's Well
 					["provider"] = { "n", 34358 },	-- Avrus the Redeemed
@@ -676,7 +676,7 @@ _.Zones =
 					["provider"] = { "n", 33421 },	-- Gorka
 					["coord"] = { 72.9, 80.4, 63 },
 					["sourceQuest"] = 13640,	-- Management Material
-					["races"] = HORDE_ONLY,	
+					["races"] = HORDE_ONLY,
 				}),
 				q(9536, {	-- Never Again! (H)
 					["u"] = REMOVED_FROM_GAME,

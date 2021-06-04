@@ -2683,7 +2683,6 @@ _.PVP =
 							i(111127, {	-- Primal Gladiator's Drape of Contemplation
 								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 							}),
-							
 						}),
 						n(-320, {	-- Head
 							i(111216, {	-- Primal Gladiator's Plate Visor

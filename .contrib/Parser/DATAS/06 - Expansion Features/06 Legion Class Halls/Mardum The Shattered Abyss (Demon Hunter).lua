@@ -175,7 +175,7 @@ _.ExpansionFeatures =
 						["description"] = "Requires the |cFFFFD700Fel Armaments|r order hall upgrade.",
 					}),
 					q(42653, {	-- Champion: Akama
-						["sourceQuests"] = { 
+						["sourceQuests"] = {
 							39741,	-- Into Our Ranks (Altruis)
 							42665,	-- Into Our Ranks (Kayn)
 						},
@@ -663,7 +663,7 @@ _.ExpansionFeatures =
 					}),
 					q(42802, {	-- Securing Mardum
 						["classes"] = { DEMONHUNTER },
-						["sourceQuests"] = { 
+						["sourceQuests"] = {
 							39741,	-- Into Our Ranks (Altruis)
 							42665,	-- Into Our Ranks (Kayn)
 						},
@@ -840,7 +840,7 @@ _.ExpansionFeatures =
 					}),
 					q(42131, {	-- Unexpected Visitors
 						["classes"] = { DEMONHUNTER },
-						["sourceQuests"] = { 
+						["sourceQuests"] = {
 							39741,	-- Into Our Ranks (Altruis)
 							42665,	-- Into Our Ranks (Kayn)
 						},
@@ -1051,7 +1051,7 @@ _.HiddenQuestTriggers = {
 -- These quests never made it in.
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
-		
+
 	}),
 });
 -- #endif

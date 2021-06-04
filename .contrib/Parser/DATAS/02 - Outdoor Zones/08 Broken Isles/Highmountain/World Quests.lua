@@ -823,7 +823,7 @@ _.Zones =
 				}),
 				n(-385, {	-- Finger
 					i(139103),	-- An'she's Band
-				}),	
+				}),
 				n(-384, {	-- Neck
 
 				}),

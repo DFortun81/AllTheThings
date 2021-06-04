@@ -144,7 +144,7 @@ profession(MINING, {
 	--[[
 	-- There were no new mining skills in WoD.
 	applyclassicphase(WOD_PHASE_ONE, tier(6, {	-- Warlords of Draenor
-		
+
 	})),
 	]]--
 	applyclassicphase(LEGION_PHASE_ONE, tier(7, {	-- Legion

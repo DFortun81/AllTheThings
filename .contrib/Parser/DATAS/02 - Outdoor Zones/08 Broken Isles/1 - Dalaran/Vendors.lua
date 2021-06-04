@@ -31,7 +31,7 @@ _.Zones =
 						un(14, i(149449)),	-- Dominant Gladiator's Cloak [Elite Rating]
 						un(14, i(149451)),	-- Demonic Gladiator's Tabard [Elite Rating]
 						un(14, i(149453)),	-- Demonic Gladiator's Cloak [Elite Rating]
-						
+
 						n(-660, {	-- Aspirant / Combatant PvP Gear Season1+Season2
 							cl(DEATHKNIGHT, {
 								i(146165, {	-- Ensemble: Vindictive Combatant's Dreadplate Armor (H)
@@ -2113,7 +2113,7 @@ _.Zones =
 						un(14, i(149449)),	-- Dominant Gladiator's Cloak [Elite Rating]
 						un(14, i(149451)),	-- Demonic Gladiator's Tabard [Elite Rating]
 						un(14, i(149453)),	-- Demonic Gladiator's Cloak [Elite Rating]
-						
+
 						n(-662, {	-- Elite PvP Gear Season1+Season2
 							cl(DEATHKNIGHT, {
 								un(14, i(146220, {	-- Ensemble: Elite Vindictive Gladiator's Dreadplate Armor (A)
@@ -3285,7 +3285,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 29.4, 75.6, 627 },
 					["g"] = {
-						n(-660, {	-- Aspirant / Combatant PvP Gear Season1+Season2 
+						n(-660, {	-- Aspirant / Combatant PvP Gear Season1+Season2
 							cl(DEATHKNIGHT, {
 								i(146164, {	-- Ensemble: Vindictive Combatant's Dreadplate Armor (A)
 									["description"] = "You will need to log out and back in to register Season 2 items, as well as Shift+Click to refresh for your current faction.",
@@ -3460,7 +3460,7 @@ _.Zones =
 										i(135865),	-- Vindictive Combatant's Satin Treads (A)
 										i(135869),	-- Vindictive Combatant's Satin Tunic (A)
 									},
-								}),	
+								}),
 							}),
 							cl(ROGUE, {
 								i(146172, {	-- Ensemble: Vindictive Combatant's Leather Armor (A)

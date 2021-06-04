@@ -19,7 +19,7 @@ select(2, ...).RaceDB = {
 	["Worgen"] = 22,
 	["Pandaren"] = { -- NOTE: Faction Group dictates this.
 		["Neutral"] = 24,
-		["Alliance"] = 25, 
+		["Alliance"] = 25,
 		["Horde"] = 26,
 	},
 	["Nightborne"] = 27,

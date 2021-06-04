@@ -41,7 +41,7 @@ _.Zones =
 				}),
 				i(2226, {	-- Ogremage Staff
 					["u"] = REMOVED_FROM_GAME,
-					["crs"] = { 
+					["crs"] = {
 						1251,	-- Splinter Fist Firemonger
 						891,	-- Splinter Fist Fire Weaver
 					},

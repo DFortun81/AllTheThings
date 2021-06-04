@@ -8,28 +8,28 @@ _.ExpansionFeatures =
 		m(1627, {	-- Torghast
 			n(ZONEDROPS, {
 				i(183192, {	-- Frenzied Mawrat
-					["crs"] = { 
+					["crs"] = {
 						151331,	-- Cellblock Sentinel
 						153165,	-- Custodian Thonar
 						151329,	-- Warden Skoldus
 					},
 				}),
 				i(183116, {	-- Hissing Deathroach
-					["crs"] = { 
+					["crs"] = {
 						156239,	-- Dark Ascended Corrus
 						155250,	-- Decayspeaker
 						155251,	-- Elder Longbranch
 					},
 				}),
 				i(183193, {	-- Jar of Ashes
-					["crs"] = { 
+					["crs"] = {
 						151331,	-- Cellblock Sentinel
 						153165,	-- Custodian Thonar
 						151329,	-- Warden Skoldus
 					},
 				}),
 				i(183191, {	-- Maw Crawler
-					["crs"] = { 
+					["crs"] = {
 						153165,	-- Custodian Thonar
 						155945,	-- Gherus the Chained
 						153451,	-- Kosarus the Fallen
@@ -38,7 +38,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				i(183194, {	-- Maw Stalker
-					["crs"] = { 
+					["crs"] = {
 						171422,	-- Arch-Suppressor Laguas
 						151331,	-- Cellblock Sentinel
 						169859,	-- Observer Zelgar
@@ -46,7 +46,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				i(183117, {	-- Severs
-					["crs"] = { 
+					["crs"] = {
 						171422,	-- Arch-Suppressor Laguas
 						155945,	-- Gherus the Chained
 						170418,	-- Goxul the Devourer
@@ -55,7 +55,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				i(183195, {	-- Torghast Lurker
-					["crs"] = { 
+					["crs"] = {
 						153011,	-- Binder Baritas
 						170418,	-- Goxul the Devourer
 						153382,	-- Maw of the Maw
@@ -64,7 +64,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				i(183115, {	-- Tower Deathroach
-					["crs"] = { 
+					["crs"] = {
 						156239,	-- Dark Ascended Corrus
 						155250,	-- Decayspeaker
 						155251,	-- Elder Longbranch
@@ -90,9 +90,8 @@ _.ExpansionFeatures =
 
 				-- Skodus Hall 6
 				i(183247),	-- Memory of a Stable Phantasma Lure [ALL]
-				
 				i(183230, {	-- Memory of the Apex Predator [Druid]
-					["crs"] = { 
+					["crs"] = {
 						171422,	-- Arch-Suppressor Laguas
 						155945,	-- Gherus the Chained
 						170418,	-- Goxul the Devourer

@@ -79,7 +79,7 @@ _.GearSets =
 				["coord"] = { 46.2, 49.6, 87 }, -- Ironforge
 				["races"] = { DWARF },
 				["minReputation"] = { 47, EXALTED },
-				["g"] = {   
+				["g"] = {
 					i(165931),	-- Bronzebeard Helm
 					i(165932),	-- Bronzebeard Pauldrons
 					i(165933),	-- Bronzebeard Tunic

@@ -76,7 +76,7 @@ _.WorldEvents =
 					["races"] = ALLIANCE_ONLY,
 				})),
 			})),
-			
+
 			-- Blizzconline 2021 "Celebration Collection"
 			un(BLIZZARD_BALANCE, mount(341821)),	-- Snowstorm
 			un(BLIZZARD_BALANCE, pet(3053)),	-- Moon-Touched Netherwhelp

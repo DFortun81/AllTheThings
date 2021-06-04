@@ -1762,8 +1762,8 @@ _.Zones =
 					["coord"] = { 56.26, 17.32, 84 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				
-				-- ANOTHER SET OF SILLY BREADCRUMBS, PLEASE FIX.
+
+				-- TODO: ANOTHER SET OF SILLY BREADCRUMBS, PLEASE FIX.
 				q(27266, {	-- Wulf Calls
 					["provider"] = { "n", 17122 },	-- Vord (The Exodar)
 					["coord"] = { 47.2, 88.4, THE_EXODAR },

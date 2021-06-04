@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.Zones = 
+_.Zones =
 {
 	m(KALIMDOR, {
 		m(71, {	-- Tanaris

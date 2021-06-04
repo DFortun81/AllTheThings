@@ -15,7 +15,7 @@ _.Zones =
 				fp(32, {	-- Theramore, Dustwallow Marsh
 					["coord"] = { 67.4, 51.2, 70 },
 					["races"] = ALLIANCE_ONLY,
-				}),					
+				}),
 			}),
 		}),
 	}),

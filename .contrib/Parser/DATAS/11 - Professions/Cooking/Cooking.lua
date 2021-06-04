@@ -2354,7 +2354,7 @@ profession(COOKING, {
 			}
 		}
 	})),
-	
+
 	-- #if AFTER WOD
 	n(DISCOVERY, {
 		["description"] = "These items have a chance to appear in your bag after cooking any recipe from Warlords of Draenor.",
@@ -3075,7 +3075,7 @@ local itemrecipe = function(itemID, spellID, timeline, classicphase)
 end
 
 -- Classic Recipes
---itemrecipe(, );	-- 
+--itemrecipe(, );	--
 --[[
 itemrecipe(3734, );	-- Recipe: Big Bear Steak
 itemrecipe(6325, );	-- Recipe: Brilliant Smallfish
@@ -3117,15 +3117,15 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		-- #if AFTER MOP
 		i(101631),	-- Recipe: Noodle Cart Kit [Learned from the quest directly]
 		i(101664),	-- Recipe: Deluxe Noodle Cart Kit [Learned from the quest directly]
-		
+
 		recipe(145170),	-- Grand Deluxe Noodle Cart Kit
 		i(101739),	-- Recipe: Grand Deluxe Noodle Cart Kit
 		i(101729),	-- Grand Deluxe Noodle Cart Kit
-		
+
 		recipe(145167),	-- Grand Noodle Cart Kit
 		i(101728),	-- Recipe: Grand Noodle Cart Kit
 		i(101727),	-- Grand Noodle Cart Kit
-		
+
 		recipe(145197),	-- Grand Pandaren Treasure Noodle Cart Kit
 		i(101741),	-- Recipe: Grand Pandaren Treasure Noodle Cart Kit
 		i(101740),	-- Grand Pandaren Treasure Noodle Cart Kit

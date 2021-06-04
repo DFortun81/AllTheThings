@@ -97,7 +97,6 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 					},
 					["lvl"] = lvlsquish(63, 10, 63),
 					["groups"] = {
-						
 						i(28109),	-- Essence Infused Mushroom
 						i(28108),	-- Power Infused Mushroom
 					},

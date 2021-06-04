@@ -354,7 +354,7 @@ _.ExpansionFeatures =
 						},
 						["g"] = {
 							i(128292),	-- Blades of the Fallen Prince
-							i(127009),	-- Fragment of Frostmourne 
+							i(127009),	-- Fragment of Frostmourne
 						},
 					}),
 					q(40935, {	-- The Call of Vengeance
@@ -581,7 +581,7 @@ _.HiddenQuestTriggers = {
 -- These quests never made it in.
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
-		
+
 	}),
 });
 -- #endif

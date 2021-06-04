@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(KALIMDOR, {		
+	m(KALIMDOR, {
 		m(80, {	-- Moonglade
 			n(FLIGHT_PATHS, {
 				fp(49, {	-- Moonglade

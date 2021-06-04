@@ -103,7 +103,7 @@ _.Zones =
 			i(31781),	-- Sha'tar Tabard
 			i(19506, {	-- Silverwing Battle Tabard
 				["races"] = ALLIANCE_ONLY,
-				["cost"] = { { "i", 137642, 10 } },	-- 10x Mark of Honor 
+				["cost"] = { { "i", 137642, 10 } },	-- 10x Mark of Honor
 			}),
 			i(32445),	-- Skyguard Tabard
 			i(31775, {	-- Sporeggar Tabard

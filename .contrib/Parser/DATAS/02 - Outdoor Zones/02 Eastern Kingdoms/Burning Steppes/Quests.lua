@@ -843,7 +843,7 @@ _.Zones =
 					["sourceQuests"] = {
 						28252,	-- The Kodocaller's Horn
 						28246,	-- Strategic Cuts
-					},	
+					},
 					["g"] = {
 						i(64517),	-- Helm of Serendipity
 						i(64516),	-- Improvised Breastplate

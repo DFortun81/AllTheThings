@@ -14,7 +14,7 @@ _.Zones =
 							n(-319, {	-- Weapons
 								i(146646, {	-- Arsenal: Hateful Gladiator's Weapons
 									["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_weapons_ensemble", -10014, -668, -657 },
 										{"exclude", "itemID", 146646 },	-- Exclude itself to stop duplicating
 									},
@@ -134,7 +134,7 @@ _.Zones =
 							cl(DEATHKNIGHT, {
 								i(146560, {	-- Ensemble: Hateful Gladiator's Dreadplate Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_set_ensemble", -10014, -668, -657, 6 },
 										{"select", "itemID", 147583 },	-- Hateful Gladiator's Bracers of Victory
 										{"select", "itemID", 147584 },	-- Hateful Gladiator's Girdle of Victory
@@ -161,7 +161,7 @@ _.Zones =
 							cl(DRUID, {
 								i(146559, {	-- Ensemble: Hateful Gladiator's Dragonhide Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_set_ensemble", -10014, -668, -657, 11 },
 										{"select", "itemID", 41638 },	-- Hateful Gladiator's Armwraps of Dominance
 										{"select", "itemID", 41628 },	-- Hateful Gladiator's Belt of Dominance
@@ -221,7 +221,7 @@ _.Zones =
 							cl(HUNTER, {
 								i(146558, {	-- Ensemble: Hateful Gladiator's Chain Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_set_ensemble", -10014, -668, -657, 3 },
 										{"select", "itemID", 41223 },	-- Hateful Gladiator's Wristguards of Triumph
 										{"select", "itemID", 41233 },	-- Hateful Gladiator's Waistguard of Triumph
@@ -248,7 +248,7 @@ _.Zones =
 							cl(MAGE, {
 								i(146567, {	-- Ensemble: Hateful Gladiator's Silk Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_set_ensemble", -10014, -668, -657, 8 },
 										{"select", "itemID", 41907 },	-- Hateful Gladiator's Cuffs of Dominance
 										{"select", "itemID", 41896 },	-- Hateful Gladiator's Cord of Dominance
@@ -275,14 +275,14 @@ _.Zones =
 							cl(PALADIN, {
 								i(146566, {	-- Ensemble: Hateful Gladiator's Scaled Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_set_ensemble", -10014, -668, -657, 2 },
 										{"select", "itemID", 40972 },	-- Hateful Gladiator's Bracers of Salvation
 										{"select", "itemID", 40966 },	-- Hateful Gladiator's Girdle of Salvation
 										{"select", "itemID", 40973 },	-- Hateful Gladiator's Greaves of Salvation
 										{"exclude", "itemID", 146566 },	-- Exclude itself to stop duplicating
 									},
-								}),	
+								}),
 								i(40904, {	-- Hateful Gladiator's Ornamented Chestguard
 									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 								}),
@@ -317,7 +317,7 @@ _.Zones =
 							cl(PRIEST, {
 								i(146565, {	-- Ensemble: Hateful Gladiator's Satin Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_set_ensemble", -10014, -668, -657, 5 },
 										{"select", "itemID", 41878 },	-- Hateful Gladiator's Cuffs of Salvation
 										{"select", "itemID", 41877 },	-- Hateful Gladiator's Cord of Salvation
@@ -359,7 +359,7 @@ _.Zones =
 							cl(ROGUE, {
 								i(146562, {	-- Ensemble: Hateful Gladiator's Leather Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_set_ensemble", -10014, -668, -657, 4 },
 										{"select", "itemID", 41830 },	-- Hateful Gladiator's Armwraps of Triumph
 										{"select", "itemID", 41827 },	-- Hateful Gladiator's Belt of Triumph
@@ -386,7 +386,7 @@ _.Zones =
 							cl(SHAMAN, {
 								i(146564, {	-- Ensemble: Hateful Gladiator's Ringmail Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_set_ensemble", -10014, -668, -657, 7 },
 										{"select", "itemID", 41063 },	-- Hateful Gladiator's Wristguards of Dominance
 										{"select", "itemID", 41068 },	-- Hateful Gladiator's Waistguard of Dominance
@@ -446,7 +446,7 @@ _.Zones =
 							cl(WARLOCK, {
 								i(146561, {	-- Ensemble: Hateful Gladiator's Felweave Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_set_ensemble", -10014, -668, -657, 9 },
 										{"select", "itemID", 147586 },	-- Hateful Gladiator's Cuffs of Ascendancy
 										{"select", "itemID", 147587 },	-- Hateful Gladiator's Cord of Ascendancy
@@ -473,12 +473,12 @@ _.Zones =
 							cl(WARRIOR, {
 								i(146563, {	-- Ensemble: Hateful Gladiator's Plate Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_set_ensemble", -10014, -668, -657, 1 },
 										{"select", "itemID", 40887 },	-- Hateful Gladiator's Bracers of Triumph
 										{"select", "itemID", 40877 },	-- Hateful Gladiator's Girdle of Triumph
 										{"select", "itemID", 40878 },	-- Hateful Gladiator's Greaves of Triumph
-										{"exclude", "itemID", 146563 },	-- Exclude itself to stop duplicating 
+										{"exclude", "itemID", 146563 },	-- Exclude itself to stop duplicating
 									},
 								}),
 								i(40783, {	-- Hateful Gladiator's Plate Chestpiece
@@ -662,7 +662,7 @@ _.Zones =
 							n(-319, {	-- Weapons
 								i(146645, {	-- Arsenal: Deadly Gladiator's Weapon
 									["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_weapons_ensemble", -10014, -668, -661 },
 										{"exclude", "itemID", 146645 },	-- Exclude itself to stop duplicating
 									},
@@ -782,7 +782,7 @@ _.Zones =
 							cl(DEATHKNIGHT, {
 								i(146540, {	-- Ensemble: Deadly Gladiator's Dreadplate Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_set_ensemble", -10014, -668, -661, 6 },
 										{"select", "itemID", 147589 },	-- Deadly Gladiator's Bracers of Victory
 										{"select", "itemID", 147590 },	-- Deadly Gladiator's Girdle of Victory
@@ -809,7 +809,7 @@ _.Zones =
 							cl(DRUID, {
 								i(146539, {	-- Ensemble: Deadly Gladiator's Dragonhide Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_set_ensemble", -10014, -668, -661, 11 },
 										{"select", "itemID", 41639 },	-- Deadly Gladiator's Armwraps of Dominance
 										{"select", "itemID", 41629 },	-- Deadly Gladiator's Belt of Dominance
@@ -869,7 +869,7 @@ _.Zones =
 							cl(HUNTER, {
 								i(146538, {	-- Ensemble: Deadly Gladiator's Chain Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_set_ensemble", -10014, -668, -661, 3 },
 										{"select", "itemID", 41224 },	-- Deadly Gladiator's Wristguards of Triumph
 										{"select", "itemID", 41234 },	-- Deadly Gladiator's Waistguard of Triumph
@@ -896,7 +896,7 @@ _.Zones =
 							cl(MAGE, {
 								i(146547, {	-- Ensemble: Deadly Gladiator's Silk Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_set_ensemble", -10014, -668, -661, 8 },
 										{"select", "itemID", 41908 },	-- Deadly Gladiator's Cuffs of Dominance
 										{"select", "itemID", 41897 },	-- Deadly Gladiator's Cord of Dominance
@@ -923,7 +923,7 @@ _.Zones =
 							cl(PALADIN, {
 								i(146546, {	-- Ensemble: Deadly Gladiator's Scaled Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_set_ensemble", -10014, -668, -661, 2 },
 										{"select", "itemID", 40982 },	-- Deadly Gladiator's Bracers of Salvation
 										{"select", "itemID", 40974 },	-- Deadly Gladiator's Girdle of Salvation
@@ -965,7 +965,7 @@ _.Zones =
 							cl(PRIEST, {
 								i(146545, {	-- Ensemble: Deadly Gladiator's Satin Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_set_ensemble", -10014, -668, -661, 5 },
 										{"select", "itemID", 41892 },	-- Deadly Gladiator's Cuffs of Salvation
 										{"select", "itemID", 41880 },	-- Deadly Gladiator's Cord of Salvation
@@ -1007,7 +1007,7 @@ _.Zones =
 							cl(ROGUE, {
 								i(146542, {	-- Ensemble: Deadly Gladiator's Leather Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_set_ensemble", -10014, -668, -661, 4 },
 										{"select", "itemID", 41839 },	-- Deadly Gladiator's Armwraps of Triumph
 										{"select", "itemID", 41831 },	-- Deadly Gladiator's Belt of Triumph
@@ -1034,7 +1034,7 @@ _.Zones =
 							cl(SHAMAN, {
 								i(146544, {	-- Ensemble: Deadly Gladiator's Ringmail Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_set_ensemble", -10014, -668, -661, 7 },
 										{"select", "itemID", 41064 },	-- Deadly Gladiator's Wristguards of Dominance
 										{"select", "itemID", 41069 },	-- Deadly Gladiator's Waistguard of Dominance
@@ -1044,7 +1044,7 @@ _.Zones =
 										{"select", "itemID", 41054 },	-- Deadly Gladiator's Sabatons of Salvation
 										{"exclude", "itemID", 146544 },	-- Exclude itself to stop duplicating
 									},
-								}),	
+								}),
 								i(41080, {	-- Deadly Gladiator's Linked Armor
 									["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 								}),
@@ -1094,7 +1094,7 @@ _.Zones =
 							cl(WARLOCK, {
 								i(146541, {	-- Ensemble: Deadly Gladiator's Felweave Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_set_ensemble", -10014, -668, -661, 9 },
 										{"select", "itemID", 147592 },	-- Deadly Gladiator's Cuffs of Ascendancy
 										{"select", "itemID", 147593 },	-- Deadly Gladiator's Cord of Ascendancy
@@ -1121,12 +1121,12 @@ _.Zones =
 							cl(WARRIOR, {
 								i(146543, {	-- Ensemble: Deadly Gladiator's Plate Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_set_ensemble", -10014, -668, -661, 1 },
 										{"select", "itemID", 40888 },	-- Deadly Gladiator's Bracers of Triumph
 										{"select", "itemID", 40879 },	-- Deadly Gladiator's Girdle of Triumph
 										{"select", "itemID", 40880 },	-- Deadly Gladiator's Greaves of Triumph
-										{"exclude", "itemID", 146543 },	-- Exclude itself to stop duplicating 
+										{"exclude", "itemID", 146543 },	-- Exclude itself to stop duplicating
 									},
 								}),
 								i(40786, {	-- Deadly Gladiator's Plate Chestpiece
@@ -1315,7 +1315,7 @@ _.Zones =
 							n(-319, {	-- Weapons
 								i(146644, {	-- Arsenal: Furious Gladiator's Weapons
 									["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_weapons_ensemble", -10014, -669, -661 },
 										{"exclude", "itemID", 146644 },	-- Exclude itself to stop duplicating
 									},
@@ -1433,7 +1433,7 @@ _.Zones =
 							cl(DEATHKNIGHT, {
 								i(146550, {	-- Ensemble: Furious Gladiator's Dreadplate Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_set_ensemble", -10014, -669, -661, 6 },
 										{"select", "itemID", 40889 },	-- Furious Gladiator's Bracers of Triumph
 										{"select", "itemID", 40881 },	-- Furious Gladiator's Girdle of Triumph
@@ -1460,7 +1460,7 @@ _.Zones =
 							cl(DRUID, {
 								i(146549, {	-- Ensemble: Furious Gladiator's Dragonhide Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_set_ensemble", -10014, -669, -661, 11 },
 										{"select", "itemID", 41640 },	-- Furious Gladiator's Armwraps of Dominance
 										{"select", "itemID", 41630 },	-- Furious Gladiator's Belt of Dominance
@@ -1520,7 +1520,7 @@ _.Zones =
 							cl(HUNTER, {
 								i(146548, {	-- Ensemble: Furious Gladiator's Chain Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_set_ensemble", -10014, -669, -661, 3 },
 										{"select", "itemID", 41225 },	-- Furious Gladiator's Wristguards of Triumph
 										{"select", "itemID", 41235 },	-- Furious Gladiator's Waistguard of Triumph
@@ -1547,7 +1547,7 @@ _.Zones =
 							cl(MAGE, {
 								i(146557, {	-- Ensemble: Furious Gladiator's Silk Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_set_ensemble", -10014, -669, -661, 8 },
 										{"select", "itemID", 147595 },	-- Furious Gladiator's Cuffs of Ascendancy
 										{"select", "itemID", 147596 },	-- Furious Gladiator's Cord of Ascendancy
@@ -1574,7 +1574,7 @@ _.Zones =
 							cl(PALADIN, {
 								i(146556, {	-- Ensemble: Furious Gladiator's Scaled Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_set_ensemble", -10014, -669, -661, 2 },
 										{"select", "itemID", 40983 },	-- Furious Gladiator's Bracers of Salvation
 										{"select", "itemID", 40976 },	-- Furious Gladiator's Girdle of Salvation
@@ -1616,7 +1616,7 @@ _.Zones =
 							cl(PRIEST, {
 								i(146555, {	-- Ensemble: Furious Gladiator's Satin Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_set_ensemble", -10014, -669, -661, 5 },
 										{"select", "itemID", 41893 },	-- Furious Gladiator's Cuffs of Salvation
 										{"select", "itemID", 41881 },	-- Furious Gladiator's Cord of Salvation
@@ -1658,7 +1658,7 @@ _.Zones =
 							cl(ROGUE, {
 								i(146552, {	-- Ensemble: Furious Gladiator's Leather Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_set_ensemble", -10014, -669, -661, 4 },
 										{"select", "itemID", 41840 },	-- Furious Gladiator's Armwraps of Triumph
 										{"select", "itemID", 41832 },	-- Furious Gladiator's Belt of Triumph
@@ -1685,7 +1685,7 @@ _.Zones =
 							cl(SHAMAN, {
 								i(146554, {	-- Ensemble: Furious Gladiator's Ringmail Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_set_ensemble", -10014, -669, -661, 7 },
 										{"select", "itemID", 41065 },	-- Furious Gladiator's Wristguards of Dominance
 										{"select", "itemID", 41070 },	-- Furious Gladiator's Waistguard of Dominance
@@ -1745,7 +1745,7 @@ _.Zones =
 							cl(WARLOCK, {
 								i(146551, {	-- Ensemble: Furious Gladiator's Felweave Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_set_ensemble", -10014, -669, -661, 9 },
 										{"select", "itemID", 41909 },	-- Furious Gladiator's Cuffs of Dominance
 										{"select", "itemID", 41898 },	-- Furious Gladiator's Cord of Dominance
@@ -1772,12 +1772,12 @@ _.Zones =
 							cl(WARRIOR, {
 								i(146553, {	-- Ensemble: Furious Gladiator's Plate Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_set_ensemble", -10014, -669, -661, 1 },
 										{"select", "itemID", 147598 },	-- Furious Gladiator's Bracers of Victory
 										{"select", "itemID", 147599 },	-- Furious Gladiator's Girdle of Victory
 										{"select", "itemID", 147600 },	-- Furious Gladiator's Greaves of Victory
-										{"exclude", "itemID", 146553 },	-- Exclude itself to stop duplicating 
+										{"exclude", "itemID", 146553 },	-- Exclude itself to stop duplicating
 									},
 								}),
 								i(40789, {	-- Furious Gladiator's Plate Chestpiece
@@ -2058,7 +2058,7 @@ _.Zones =
 							n(-319, {	-- Weapons
 								i(146647, {	-- Arsenal: Savage Gladiator's Weapons
 									["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_weapons_ensemble", -10014, -668, -9983 },
 										{"exclude", "itemID", 146647 },	-- Exclude itself to stop duplicating
 									},
@@ -2101,7 +2101,7 @@ _.Zones =
 								i(146580, {	-- Ensemble: Savage Gladiator's Dreadplate Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_ensemble", -10014, -668, -9983, 6 }, 
+										{"sub", "pvp_set_ensemble", -10014, -668, -9983, 6 },
 										{"exclude", "itemID", 146580 },	-- Exclude itself to stop duplicating
 									},
 								}),
@@ -2125,7 +2125,7 @@ _.Zones =
 								i(146579, {	-- Ensemble: Savage Gladiator's Dragonhide Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_ensemble", -10014, -668, -9983, 11 }, 
+										{"sub", "pvp_set_ensemble", -10014, -668, -9983, 11 },
 										{"exclude", "itemID", 146579 },	-- Exclude itself to stop duplicating
 									},
 								}),
@@ -2179,7 +2179,7 @@ _.Zones =
 								i(146578, {	-- Ensemble: Savage Gladiator's Chain Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_ensemble", -10014, -668, -9983, 3 }, 
+										{"sub", "pvp_set_ensemble", -10014, -668, -9983, 3 },
 										{"exclude", "itemID", 146578 },	-- Exclude itself to stop duplicating
 									},
 								}),
@@ -2203,7 +2203,7 @@ _.Zones =
 								i(146587, {	-- Ensemble: Savage Gladiator's Silk Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_ensemble", -10014, -668, -9983, 8 }, 
+										{"sub", "pvp_set_ensemble", -10014, -668, -9983, 8 },
 										{"exclude", "itemID", 146587 },	-- Exclude itself to stop duplicating
 									},
 								}),
@@ -2227,7 +2227,7 @@ _.Zones =
 								i(146586, {	-- Ensemble: Savage Gladiator's Scaled Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_ensemble", -10014, -668, -9983, 2 }, 
+										{"sub", "pvp_set_ensemble", -10014, -668, -9983, 2 },
 										{"exclude", "itemID", 146586 },	-- Exclude itself to stop duplicating
 									},
 								}),
@@ -2266,7 +2266,7 @@ _.Zones =
 								i(146585, {	-- Ensemble: Savage Gladiator's Satin Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_ensemble", -10014, -668, -9983, 5 }, 
+										{"sub", "pvp_set_ensemble", -10014, -668, -9983, 5 },
 										{"exclude", "itemID", 146585 },	-- Exclude itself to stop duplicating
 									},
 								}),
@@ -2305,7 +2305,7 @@ _.Zones =
 								i(146582, {	-- Ensemble: Savage Gladiator's Leather Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_ensemble", -10014, -668, -9983, 4 }, 
+										{"sub", "pvp_set_ensemble", -10014, -668, -9983, 4 },
 										{"exclude", "itemID", 146582 },	-- Exclude itself to stop duplicating
 									},
 								}),
@@ -2329,7 +2329,7 @@ _.Zones =
 								i(146584, {	-- Ensemble: Savage Gladiator's Ringmail Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_ensemble", -10014, -668, -9983, 7 }, 
+										{"sub", "pvp_set_ensemble", -10014, -668, -9983, 7 },
 										{"exclude", "itemID", 146584 },	-- Exclude itself to stop duplicating
 									},
 								}),
@@ -2383,7 +2383,7 @@ _.Zones =
 								i(146581, {	-- Ensemble: Savage Gladiator's Felweave Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_ensemble", -10014, -668, -9983, 9 }, 
+										{"sub", "pvp_set_ensemble", -10014, -668, -9983, 9 },
 										{"exclude", "itemID", 146581 },	-- Exclude itself to stop duplicating
 									},
 								}),
@@ -2407,7 +2407,7 @@ _.Zones =
 								i(146583, {	-- Ensemble: Savage Gladiator's Plate Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
-										{"sub", "pvp_set_ensemble", -10014, -668, -9983, 1 }, 
+										{"sub", "pvp_set_ensemble", -10014, -668, -9983, 1 },
 										{"exclude", "itemID", 146583 },	-- Exclude itself to stop duplicating
 									},
 								}),
@@ -2438,7 +2438,7 @@ _.Zones =
 							n(-319, {	-- Weapons
 								i(146642, {	-- Arsenal: Wrathful Gladiator's Weapons
 									["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_weapons_ensemble", -10014, -671, -661 },
 										{"exclude", "itemID", 146642 },	-- Exclude itself to stop duplicating
 									},
@@ -2564,7 +2564,7 @@ _.Zones =
 							cl(DEATHKNIGHT, {
 								i(146590, {	-- Ensemble: Wrathful Gladiator's Dreadplate Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_set_ensemble", -10014, -671, -661, 6 },
 										{"select", "itemID", 51364 },	-- Wrathful Gladiator's Bracers of Triumph
 										{"select", "itemID", 51362 },	-- Wrathful Gladiator's Girdle of Triumph
@@ -2591,7 +2591,7 @@ _.Zones =
 							cl(DRUID, {
 								i(146589, {	-- Ensemble: Wrathful Gladiator's Dragonhide Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_set_ensemble", -10014, -671, -661, 11 },
 										{"select", "itemID", 51345 },	-- Wrathful Gladiator's Armwraps of Dominance
 										{"select", "itemID", 51343 },	-- Wrathful Gladiator's Belt of Dominance
@@ -2651,7 +2651,7 @@ _.Zones =
 							cl(HUNTER, {
 								i(146588, {	-- Ensemble: Wrathful Gladiator's Chain Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_set_ensemble", -10014, -671, -661, 3 },
 										{"select", "itemID", 51352 },	-- Wrathful Gladiator's Wristguards of Triumph
 										{"select", "itemID", 51350 },	-- Wrathful Gladiator's Waistguard of Triumph
@@ -2678,7 +2678,7 @@ _.Zones =
 							cl(MAGE, {
 								i(146597, {	-- Ensemble: Wrathful Gladiator's Silk Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_set_ensemble", -10014, -671, -661, 8 },
 										{"select", "itemID", 51329 },	-- Wrathful Gladiator's Cuffs of Dominance
 										{"select", "itemID", 51327 },	-- Wrathful Gladiator's Cord of Dominance
@@ -2706,7 +2706,7 @@ _.Zones =
 							cl(PALADIN, {
 								i(146596, {	-- Ensemble: Wrathful Gladiator's Scaled Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_set_ensemble", -10014, -671, -661, 2 },
 										{"select", "itemID", 51361 },	-- Wrathful Gladiator's Bracers of Salvation
 										{"select", "itemID", 51359 },	-- Wrathful Gladiator's Girdle of Salvation
@@ -2748,7 +2748,7 @@ _.Zones =
 							cl(PRIEST, {
 								i(146595, {	-- Ensemble: Wrathful Gladiator's Satin Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_set_ensemble", -10014, -671, -661, 5 },
 										{"select", "itemID", 51367 },	-- Wrathful Gladiator's Cuffs of Salvation
 										{"select", "itemID", 51365 },	-- Wrathful Gladiator's Cord of Salvation
@@ -2791,7 +2791,7 @@ _.Zones =
 							cl(ROGUE, {
 								i(146592, {	-- Ensemble: Wrathful Gladiator's Leather Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_set_ensemble", -10014, -671, -661, 4 },
 										{"select", "itemID", 51370 },	-- Wrathful Gladiator's Armwraps of Triumph
 										{"select", "itemID", 51368 },	-- Wrathful Gladiator's Belt of Triumph
@@ -2818,7 +2818,7 @@ _.Zones =
 							cl(SHAMAN, {
 								i(146594, {	-- Ensemble: Wrathful Gladiator's Ringmail Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_set_ensemble", -10014, -671, -661, 7 },
 										{"select", "itemID", 51376 },	-- Wrathful Gladiator's Wristguards of Dominance
 										{"select", "itemID", 51374 },	-- Wrathful Gladiator's Waistguard of Dominance
@@ -2878,7 +2878,7 @@ _.Zones =
 							cl(WARLOCK, {
 								i(146591, {	-- Ensemble: Wrathful Gladiator's Felweave Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_set_ensemble", -10014, -671, -661, 9 },
 										{"select", "itemID", 147605 },	-- Wrathful Gladiator's Cuffs of Ascendancy
 										{"select", "itemID", 147606 },	-- Wrathful Gladiator's Cord of Ascendancy
@@ -2905,12 +2905,12 @@ _.Zones =
 							cl(WARRIOR, {
 								i(146593, {	-- Ensemble: Wrathful Gladiator's Plate Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_set_ensemble", -10014, -671, -661, 1 },
 										{"select", "itemID", 147607 },	-- Wrathful Gladiator's Bracers of Victory
 										{"select", "itemID", 147608 },	-- Wrathful Gladiator's Girdle of Victory
 										{"select", "itemID", 51363 },	-- Wrathful Gladiator's Greaves of Triumph
-										{"exclude", "itemID", 146593 },	-- Exclude itself to stop duplicating 
+										{"exclude", "itemID", 146593 },	-- Exclude itself to stop duplicating
 									},
 								}),
 								i(51541, {	-- Wrathful Gladiator's Plate Chestpiece
@@ -3080,7 +3080,7 @@ _.Zones =
 							n(-319, {	-- Weapons
 								i(146643, {	-- Arsenal: Relentless Gladiator's Weapons
 									["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_weapons_ensemble", -10014, -670, -661 },
 										{"exclude", "itemID", 146643 },	-- Exclude itself to stop duplicating
 									},
@@ -3206,7 +3206,7 @@ _.Zones =
 							cl(DEATHKNIGHT, {
 								i(146570, {	-- Ensemble: Relentless Gladiator's Dreadplate Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_set_ensemble", -10014, -670, -661, 6 },
 										{"select", "itemID", 40890 },	-- Relentless Gladiator's Bracers of Triumph
 										{"select", "itemID", 40883 },	-- Relentless Gladiator's Girdle of Triumph
@@ -3233,7 +3233,7 @@ _.Zones =
 							cl(DRUID, {
 								i(146569, {	-- Ensemble: Relentless Gladiator's Dragonhide Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_set_ensemble", -10014, -670, -661, 11 },
 										{"select", "itemID", 41641 },	-- Relentless Gladiator's Armwraps of Dominance
 										{"select", "itemID", 41631 },	-- Relentless Gladiator's Belt of Dominance
@@ -3293,7 +3293,7 @@ _.Zones =
 							cl(HUNTER, {
 								i(146568, {	-- Ensemble: Relentless Gladiator's Chain Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_set_ensemble", -10014, -670, -661, 3 },
 										{"select", "itemID", 41226 },	-- Relentless Gladiator's Wristguards of Triumph
 										{"select", "itemID", 41236 },	-- Relentless Gladiator's Waistguard of Triumph
@@ -3320,7 +3320,7 @@ _.Zones =
 							cl(MAGE, {
 								i(146577, {	-- Ensemble: Relentless Gladiator's Silk Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_set_ensemble", -10014, -670, -661, 8 },
 										{"select", "itemID", 41910 },	-- Relentless Gladiator's Cuffs of Dominance
 										{"select", "itemID", 41899 },	-- Relentless Gladiator's Cord of Dominance
@@ -3348,7 +3348,7 @@ _.Zones =
 							cl(PALADIN, {
 								i(146576, {	-- Ensemble: Relentless Gladiator's Scaled Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_set_ensemble", -10014, -670, -661, 2 },
 										{"select", "itemID", 40984 },	-- Relentless Gladiator's Bracers of Salvation
 										{"select", "itemID", 40978 },	-- Relentless Gladiator's Girdle of Salvation
@@ -3390,7 +3390,7 @@ _.Zones =
 							cl(PRIEST, {
 								i(146575, {	-- Ensemble: Relentless Gladiator's Satin Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_set_ensemble", -10014, -670, -661, 5 },
 										{"select", "itemID", 41894 },	-- Relentless Gladiator's Cuffs of Salvation
 										{"select", "itemID", 41882 },	-- Relentless Gladiator's Cord of Salvation
@@ -3433,7 +3433,7 @@ _.Zones =
 							cl(ROGUE, {
 								i(146572, {	-- Ensemble: Relentless Gladiator's Leather Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_set_ensemble", -10014, -670, -661, 4 },
 										{"select", "itemID", 41841 },	-- Relentless Gladiator's Armwraps of Triumph
 										{"select", "itemID", 41833 },	-- Relentless Gladiator's Belt of Triumph
@@ -3460,7 +3460,7 @@ _.Zones =
 							cl(SHAMAN, {
 								i(146574, {	-- Ensemble: Relentless Gladiator's Ringmail Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_set_ensemble", -10014, -670, -661, 7 },
 										{"select", "itemID", 41066 },	-- Relentless Gladiator's Wristguards of Dominance
 										{"select", "itemID", 41071 },	-- Relentless Gladiator's Waistguard of Dominance
@@ -3520,7 +3520,7 @@ _.Zones =
 							cl(WARLOCK, {
 								i(146571, {	-- Ensemble: Relentless Gladiator's Felweave Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_set_ensemble", -10014, -670, -661, 9 },
 										{"select", "itemID", 147602 },	-- Relentless Gladiator's Cuffs of Ascendancy
 										{"select", "itemID", 49183 },	-- Relentless Gladiator's Treads of Alacrity
@@ -3546,12 +3546,12 @@ _.Zones =
 							cl(WARRIOR, {
 								i(146573, {	-- Ensemble: Relentless Gladiator's Plate Armor
 									["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
-									["sym"] = { 
+									["sym"] = {
 										{"sub", "pvp_set_ensemble", -10014, -670, -661, 1 },
 										{"select", "itemID", 147603 },	-- Relentless Gladiator's Bracers of Victory
 										{"select", "itemID", 147604 },	-- Relentless Gladiator's Girdle of Victory
 										{"select", "itemID", 40884 },	-- Relentless Gladiator's Greaves of Triumph
-										{"exclude", "itemID", 146573 },	-- Exclude itself to stop duplicating 
+										{"exclude", "itemID", 146573 },	-- Exclude itself to stop duplicating
 									},
 								}),
 								i(40790, {	-- Relentless Gladiator's Plate Chestpiece

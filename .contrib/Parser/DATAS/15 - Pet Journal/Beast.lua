@@ -65,7 +65,7 @@ _.PetJournal =
 		p(745),				-- Crunchy Scorpion
 		p(634),				-- Crystal Spider
 		p(1809),			-- Crystalline Broodling
-		p(2780),			-- Daisy	
+		p(2780),			-- Daisy
 		p(343),				-- Darkmoon Cub
 		p(330),				-- Darkmoon Monkey
 		p(508),				-- Darkshore Cub
