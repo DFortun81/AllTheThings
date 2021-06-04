@@ -117,43 +117,43 @@ _.GearSets =
 					}),
 					i(144245, {	-- Arsenal: Tyrannical Gladiator's Weapons [ Horde / Tested ]
 						["sym"] = { 
-							{"sub", "pvp_weapons_ensemble", -10041, -676, -9914, -661 }, -- Alliance 
-							{"sub", "pvp_weapons_ensemble", -10041, -676, -9913, -661 }, -- Horde
+							{"sub", "pvp_weapons_faction_ensemble", -10041, -676, -9914, -661 }, -- Alliance 
+							{"sub", "pvp_weapons_faction_ensemble", -10041, -676, -9913, -661 }, -- Horde
 						},
 						["races"] = HORDE_ONLY,
 					}),
 					i(144246, {	-- Arsenal: Tyrannical Gladiator's Weapons [ Alliance ]
 						["sym"] = { 
-							{"sub", "pvp_weapons_ensemble", -10041, -676, -9914, -661 }, -- Alliance 
-							{"sub", "pvp_weapons_ensemble", -10041, -676, -9913, -661 }, -- Horde
+							{"sub", "pvp_weapons_faction_ensemble", -10041, -676, -9914, -661 }, -- Alliance 
+							{"sub", "pvp_weapons_faction_ensemble", -10041, -676, -9913, -661 }, -- Horde
 						},
 						["races"] = ALLIANCE_ONLY,
 					}),
 					i(144251, {	-- Arsenal: Grievous Gladiator's Weapons [ Horde / Tested ]
 						["sym"] = { 
-							{"sub", "pvp_weapons_ensemble", -10041, -677, -9914, -661 }, -- Alliance 
-							{"sub", "pvp_weapons_ensemble", -10041, -677, -9913, -661 }, -- Horde
+							{"sub", "pvp_weapons_faction_ensemble", -10041, -677, -9914, -661 }, -- Alliance 
+							{"sub", "pvp_weapons_faction_ensemble", -10041, -677, -9913, -661 }, -- Horde
 						},
 						["races"] = HORDE_ONLY,
 					}),
 					i(144252, {	-- Arsenal: Grievous Gladiator's Weapons [ Alliance ]
 						["sym"] = { 
-							{"sub", "pvp_weapons_ensemble", -10041, -677, -9914, -661 }, -- Alliance 
-							{"sub", "pvp_weapons_ensemble", -10041, -677, -9913, -661 }, -- Horde
+							{"sub", "pvp_weapons_faction_ensemble", -10041, -677, -9914, -661 }, -- Alliance 
+							{"sub", "pvp_weapons_faction_ensemble", -10041, -677, -9913, -661 }, -- Horde
 						},
 						["races"] = ALLIANCE_ONLY,
 					}),
 					i(144248, {	-- Arsenal: Prideful Gladiator's Weapons [ Alliance ]
 						["sym"] = { 
-							{"sub", "pvp_weapons_ensemble", -10041, -678, -9914, -661 }, -- Alliance 
-							{"sub", "pvp_weapons_ensemble", -10041, -678, -9913, -661 }, -- Horde
+							{"sub", "pvp_weapons_faction_ensemble", -10041, -678, -9914, -661 }, -- Alliance 
+							{"sub", "pvp_weapons_faction_ensemble", -10041, -678, -9913, -661 }, -- Horde
 						},
 						["races"] = ALLIANCE_ONLY,
 					}),
 					i(144250, {	-- Arsenal: Prideful Gladiator's Weapons [ Horde / Tested ]
 						["sym"] = { 
-							{"sub", "pvp_weapons_ensemble", -10041, -678, -9914, -661 }, -- Alliance 
-							{"sub", "pvp_weapons_ensemble", -10041, -678, -9913, -661 }, -- Horde
+							{"sub", "pvp_weapons_faction_ensemble", -10041, -678, -9914, -661 }, -- Alliance 
+							{"sub", "pvp_weapons_faction_ensemble", -10041, -678, -9913, -661 }, -- Horde
 						},
 						["races"] = HORDE_ONLY,
 					}),
