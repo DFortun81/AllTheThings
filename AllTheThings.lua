@@ -19151,6 +19151,17 @@ app.events.VARIABLES_LOADED = function()
 			52888,	-- Verdant Hollow (BFA Alliance Outpost Unlock)
 			53043, -- Vulture's Nest (Mission Completion)
 			53044,	-- Vulture's Nest (BFA Alliance Outpost Unlock)
+			
+			32009,	-- Varzok Pet Intro Quest (Alliance)
+			32008,	-- Audrey Burnhep Pet Intro Quest (Alliance)
+			31882,	-- Varzok Pet Quest#1
+			31878,	-- Audrey Burnhep Quest#1
+			31883,	-- Varzok Pet Quest#2
+			31879,	-- Audrey Burnhep Quest#2
+			31884,	-- Varzok Pet Quest#3
+			31880,	-- Audrey Burnhep Quest#3
+			31885,	-- Varzok Pet Quest#4
+			31881,	-- Audrey Burnhep Quest#4
 
 			-- etc.
 		}) do
