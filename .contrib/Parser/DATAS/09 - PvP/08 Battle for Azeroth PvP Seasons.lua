@@ -1497,7 +1497,6 @@ _.PVP =
 					i(172711),	-- Corrupted Gladiator's Plate Breastplate (A)
 					i(172621),	-- Corrupted Gladiator's Plate Chestguard (A)
 					i(172557),	-- Corrupted Gladiator's Plate Chestpiece (A)
-					i(172719),	-- Corrupted Gladiator's Plate Chestplate (A)
 					i(172643),	-- Corrupted Gladiator's Plate Clasp (A)
 					i(172565),	-- Corrupted Gladiator's Plate Gauntlets (A)
 					i(172579),	-- Corrupted Gladiator's Plate Girdle (A)
@@ -1511,18 +1510,15 @@ _.PVP =
 					i(172576),	-- Corrupted Gladiator's Plate Pauldrons (A)
 					i(172735),	-- Corrupted Gladiator's Plate Shoulderguards (A)
 					i(172640),	-- Corrupted Gladiator's Plate Shoulders (A)
-					i(172694),	-- Corrupted Gladiator's Plate Skullguard (A)
 					i(172727),	-- Corrupted Gladiator's Plate Spaulders (A)
 					i(172648),	-- Corrupted Gladiator's Plate Vambraces (A)
 					i(172560),	-- Corrupted Gladiator's Plate Warboots (A)
 					i(172678),	-- Corrupted Gladiator's Plate Warhelm (A)
-					i(172743),	-- Corrupted Gladiator's Shoulderplates (A)
 					i(172554),	-- Corrupted Gladiator's Plate Armguards (H)
 					i(172701),	-- Corrupted Gladiator's Plate Armor (H)
 					i(172709),	-- Corrupted Gladiator's Plate Breastplate (H)
 					i(172612),	-- Corrupted Gladiator's Plate Chestguard (H)
 					i(172548),	-- Corrupted Gladiator's Plate Chestpiece (H)
-					i(172717),	-- Corrupted Gladiator's Plate Chestplate (H)
 					i(172617),	-- Corrupted Gladiator's Plate Clasp (H)
 					i(172550),	-- Corrupted Gladiator's Plate Gauntlets (H)
 					i(172553),	-- Corrupted Gladiator's Plate Girdle (H)
@@ -1536,12 +1532,11 @@ _.PVP =
 					i(172552),	-- Corrupted Gladiator's Plate Pauldrons (H)
 					i(172733),	-- Corrupted Gladiator's Plate Shoulderguards (H)
 					i(172616),	-- Corrupted Gladiator's Plate Shoulders (H)
-					i(172693),	-- Corrupted Gladiator's Plate Skullguard (H)
+	
 					i(172725),	-- Corrupted Gladiator's Plate Spaulders (H)
 					i(172618),	-- Corrupted Gladiator's Plate Vambraces (H)
 					i(172549),	-- Corrupted Gladiator's Plate Warboots (H)
 					i(172677),	-- Corrupted Gladiator's Plate Warhelm (H)
-					i(172741),	-- Corrupted Gladiator's Shoulderplates (H)
 				}),
 				-- Only via the Duelist Achievement obtainable.
 				--[[n(-322, {	-- Back
@@ -1623,6 +1618,10 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	i(172716),	-- Corrupted Gladiator's Chain Vest (H)
 	i(172692),	-- Corrupted Gladiator's Chain Skullcover (H)
 	i(172740),	-- Corrupted Gladiator's Chain Epaulets (H)
-	
-	
+	i(172719),	-- Corrupted Gladiator's Plate Chestplate (A)
+	i(172694),	-- Corrupted Gladiator's Plate Skullguard (A)
+	i(172743),	-- Corrupted Gladiator's Shoulderplates (A)
+	i(172741),	-- Corrupted Gladiator's Shoulderplates (H)
+	i(172693),	-- Corrupted Gladiator's Plate Skullguard (H)
+	i(172717),	-- Corrupted Gladiator's Plate Chestplate (H)
 });
