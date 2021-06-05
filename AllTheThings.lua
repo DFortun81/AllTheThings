@@ -5396,6 +5396,8 @@ end
 
 -- Tooltip Hooks
 (function()
+	local C_CurrencyInfo_GetCurrencyListInfo = C_CurrencyInfo.GetCurrencyListInfo;
+	local C_CurrencyInfo_GetCurrencyInfo = C_CurrencyInfo.GetCurrencyInfo;
 	--[[
 	for name,func in pairs(getmetatable(GameTooltip).__index) do
 		print(name);
@@ -5410,7 +5412,7 @@ end
 	]]--
 	local GameTooltip_SetCurrencyByID = GameTooltip.SetCurrencyByID;
 	GameTooltip.SetCurrencyByID = function(self, currencyID, count)
-		-- print("set currency tooltip");
+		-- print("set currency tooltip", currencyID, count)
 		-- Make sure to call to base functionality
 		GameTooltip_SetCurrencyByID(self, currencyID, count);
 		if CanAttachTooltips() then
@@ -5421,23 +5423,25 @@ end
 	end
 	local GameTooltip_SetCurrencyToken = GameTooltip.SetCurrencyToken;
 	GameTooltip.SetCurrencyToken = function(self, tokenID)
-		-- print("set currency token");
+		-- print("set currency token", tokenID)
 		-- this only runs once per tooltip show
 		-- Make sure to call to base functionality
 		GameTooltip_SetCurrencyToken(self, tokenID);
 		if CanAttachTooltips() then
 			-- Determine what kind of list data this is. (Blizzard is whack and using this API call for headers too...)
-			local info = C_CurrencyInfo.GetCurrencyListInfo(tokenID);
+			local info = C_CurrencyInfo_GetCurrencyListInfo(tokenID);
 			local name, isHeader = info.name, info.isHeader;
 			-- print(tokenID, name, isHeader);
+			-- app.PrintTable(info)
 			if not isHeader then
 				-- Determine which currencyID is the one that we're dealing with.
+				-- TODO: also need to check 'currencyIDAsCost'
 				local cache = SearchForFieldContainer("currencyID");
 				if cache then
 					-- We only care about currencies in the addon at the moment.
-					for currencyID, _ in pairs(cache) do
+					for currencyID,_ in pairs(cache) do
 						-- Compare the name of the currency vs the name of the token
-						local currencyInfo = C_CurrencyInfo.GetCurrencyInfo(currencyID)
+						local currencyInfo = C_CurrencyInfo_GetCurrencyInfo(currencyID);
 						if currencyInfo and currencyInfo.name == name then
 							-- self.shownThing = { "currencyID", currencyID };
 							-- make sure tooltip refreshes
@@ -5445,7 +5449,25 @@ end
 							AttachTooltipSearchResults(self, "currencyID:" .. currencyID, SearchForField, "currencyID", currencyID);
 							if app.Settings:GetTooltipSetting("currencyID") then self:AddDoubleLine(L["CURRENCY_ID"], tostring(currencyID)); end
 							self:Show();
-							break;
+							return;
+						end
+					end
+				end
+				-- move on to currencyIDAsCost
+				cache = SearchForFieldContainer("currencyIDAsCost");
+				if cache then
+					-- We only care about currencies in the addon at the moment.
+					for currencyID,_ in pairs(cache) do
+						-- Compare the name of the currency vs the name of the token
+						local currencyInfo = C_CurrencyInfo_GetCurrencyInfo(currencyID);
+						if currencyInfo and currencyInfo.name == name then
+							-- self.shownThing = { "currencyID", currencyID };
+							-- make sure tooltip refreshes
+							self.AllTheThingsProcessing = nil;
+							AttachTooltipSearchResults(self, "currencyID:" .. currencyID, SearchForField, "currencyID", currencyID);
+							if app.Settings:GetTooltipSetting("currencyID") then self:AddDoubleLine(L["CURRENCY_ID"], tostring(currencyID)); end
+							self:Show();
+						return;
 						end
 					end
 				end
