@@ -304,7 +304,7 @@ profession(COOKING, {
 					["name"] = "Rockscale Cod",
 					["recipeID"] = 7828
 				},
-				applyclassicphase(PHASE_ONE_DIRE_MAUL, {
+				applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["name"] = "Runn Tum Tuber Surprise",
 					["recipeID"] = 22761,
 				}),
@@ -611,6 +611,11 @@ profession(COOKING, {
 		{
 			["name"] = "Spicy Hot Talbuk",
 			["recipeID"] = 43765
+		},
+		{
+			["name"] = "Sporeling Snack",
+			["timeline"] = { "removed 4.2.0.10000" },
+			["recipeID"] = 33285
 		},
 		{
 			["name"] = "Stewed Trout",
@@ -2354,7 +2359,7 @@ profession(COOKING, {
 			}
 		}
 	})),
-
+	
 	-- #if AFTER WOD
 	n(DISCOVERY, {
 		["description"] = "These items have a chance to appear in your bag after cooking any recipe from Warlords of Draenor.",
@@ -2800,29 +2805,25 @@ profession(COOKING, {
 			},
 			["lvl"] = 40,
 		}),
-		q(11380, {	-- Manalicious
+		applyclassicphase(TBC_PHASE_ONE, q(11380, {	-- Manalicious
 			["qg"] = 24393,	-- The Rokk <Master of Cooking>
-			["coords"] = {
-				{ 61.6, 16.6, SHATTRATH_CITY },
-				{ 48, 54, NETHERSTORM },
-			},
+			["coord"] = { 61.6, 16.6, SHATTRATH_CITY },
 			["maps"] = { SHATTRATH_CITY, NETHERSTORM },
-			["cost"] = {
-				{ "i", 33849, 15 },	-- Mana Berry
-			},
+			["requireSkill"] = COOKING,
 			["isDaily"] = true,
-			-- #if ANYCLASSIC
-			["u"] = TBC_PHASE_ONE,
-			-- #endif
 			["lvl"] = 70,
 			["groups"] = {
+				objective(1, {	-- 0/15 Mana Berry
+					["provider"] = { "i", 33849 },	-- Mana Berry
+					["coord"] = { 48, 54, NETHERSTORM },
+				}),
 				crit(3, {	-- Manalicious
 					["achievementID"] = 906,	-- Kickin' It Up a Notch
 				}),
 				i(33844),	-- Barrel of Fish
 				i(33857),	-- Crate of Meat
 			},
-		}),
+		})),
 		q(4161, {	-- Recipe of the Kaldorei
 			["qg"] = 6286,	-- Zarrin
 			["requireSkill"] = COOKING,
@@ -2839,37 +2840,31 @@ profession(COOKING, {
 				}),
 			},
 		}),
-		q(11377, {	-- Revenge is Tasty
+		applyclassicphase(TBC_PHASE_ONE, q(11377, {	-- Revenge is Tasty
 			["qg"] = 24393,	-- The Rokk <Master of Cooking>
 			["coord"] = { 61.6, 16.6, SHATTRATH_CITY },
 			["maps"] = { SHATTRATH_CITY, TEROKKAR_FOREST },
-			["cost"] = {
-				{ "i", 33839, 1 },	-- Kaliri Stew
-			},
+			["requireSkill"] = COOKING,
 			["isDaily"] = true,
-			-- #if ANYCLASSIC
-			["u"] = TBC_PHASE_ONE,
-			-- #endif
 			["lvl"] = 70,
 			["groups"] = {
-				crit(1, {	-- Revenge is Tasty
-					["achievementID"] = 906,	-- Kickin' It Up a Notch
-				}),
-				i(33837, {	-- Cooking Pot
+				objective(1, {	-- 0/1 Kaliri Stew
+					["provider"] = { "i", 33839 },	-- Kaliri Stew
 					["coord"] = { 68.4, 79.0, TEROKKAR_FOREST },
 					["cr"] = 23051,	-- Monstrous Kaliri
 					["cost"] = {
+						{ "i", 33837, 1 },	-- Cooking Pot
 						{ "i", 27659, 3 },	-- Warp Burger
 						{ "i", 33838, 1 },	-- Giant Kaliri Wing
 					},
-					["groups"] = {
-						i(33839),	-- Kaliri Stew
-					},
+				}),
+				crit(1, {	-- Revenge is Tasty
+					["achievementID"] = 906,	-- Kickin' It Up a Notch
 				}),
 				i(33844),	-- Barrel of Fish
 				i(33857),	-- Crate of Meat
 			},
-		}),
+		})),
 		q(8313, {	-- Sharing the Knowledge
 			["provider"] = { "o", 180503 },	-- Sandy Cookbook
 			["sourceQuest"] = 8307,	-- Desert Recipe
@@ -2926,66 +2921,54 @@ profession(COOKING, {
 				i(3729),	-- Soothing Turtle Bisque
 			},
 		}),
-		q(11381, {	-- Soup for the Soul
+		applyclassicphase(TBC_PHASE_ONE, q(11381, {	-- Soup for the Soul
 			["qg"] = 24393,	-- The Rokk <Master of Cooking>
 			["coord"] = { 61.6, 16.6, SHATTRATH_CITY },
 			["maps"] = { SHATTRATH_CITY, NAGRAND },
-			["cost"] = {
-				{ "i", 33850, 1 },	-- Spiritual Soup
-			},
+			["requireSkill"] = COOKING,
 			["isDaily"] = true,
-			-- #if ANYCLASSIC
-			["u"] = TBC_PHASE_ONE,
-			-- #endif
 			["lvl"] = 70,
 			["groups"] = {
+				objective(1, {	-- 0/1 Spiritual Soup
+					["provider"] = { "i", 33850 },	-- Spiritual Soup
+					["coord"] = { 25.81, 59.40, NAGRAND },
+					["cost"] = {
+						{ "i", 33851, 1 },	-- Cooking Pot
+						{ "i", 27658, 4 },	-- Roasted Clefthoof
+					},
+				}),
 				crit(4, {	-- Soup for the Soul
 					["achievementID"] = 906,	-- Kickin' It Up a Notch
 				}),
-				i(33851, {	-- Cooking Pot
-					["coord"] = { 26, 58, NAGRAND },
-					["cost"] = {
-						{ "i", 27658, 4 },	-- Roasted Clefthoof
-					},
-					["groups"] = {
-						i(33850),	-- Spiritual Soup
-					},
-				}),
 				i(33844),	-- Barrel of Fish
 				i(33857),	-- Crate of Meat
 			},
-		}),
-		q(11379, {	-- Super Hot Stew
+		})),
+		applyclassicphase(TBC_PHASE_ONE, q(11379, {	-- Super Hot Stew
 			["qg"] = 24393,	-- The Rokk <Master of Cooking>
 			["coord"] = { 61.6, 16.6, SHATTRATH_CITY },
 			["maps"] = { SHATTRATH_CITY, BLADES_EDGE_MOUNTAINS },
-			["cost"] = {
-				{ "i", 33848, 1 },	-- Demon Broiled Surprise
-			},
+			["requireSkill"] = COOKING,
 			["isDaily"] = true,
-			-- #if ANYCLASSIC
-			["u"] = TBC_PHASE_ONE,
-			-- #endif
 			["lvl"] = 70,
 			["groups"] = {
-				crit(2, {	-- Super Hot Stew
-					["achievementID"] = 906,	-- Kickin' It Up a Notch
-				}),
-				i(33852, {	-- Cooking Pot
+				objective(1, {	-- 0/1 Demon Broiled Surprise
+					["provider"] = { "i", 33848 },	-- Demon Broiled Surprise
 					["coord"] = { 28.0, 82.2, BLADES_EDGE_MOUNTAINS },
 					["cr"] = 19973,	-- Abyssal Flamebringer
 					["cost"] = {
+						{ "i", 33852, 1 },	-- Cooking Pot
 						{ "i", 31672, 2 },	-- Mok'Nathal Shortribs
 						{ "i", 31673, 1 },	-- Crunchy Serpent
 					},
-					["groups"] = {
-						i(33848),	-- Demon Broiled Surprise
-					},
+				}),
+				crit(2, {	-- Super Hot Stew
+					["achievementID"] = 906,	-- Kickin' It Up a Notch
 				}),
 				i(33844),	-- Barrel of Fish
 				i(33857),	-- Crate of Meat
 			},
-		}),
+		})),
 		q(6611, {	-- To Gadgetzan You Go!
 			["qg"] = 3399,	-- Zamja
 			-- #if AFTER CATA
@@ -3001,27 +2984,31 @@ profession(COOKING, {
 		}),
 	}),
 	-- #if AFTER TBC
-	n(REWARDS, {
-		i(33844, {	-- Barrel of Fish
-			i(33869),	-- Recipe: Broiled Bloodfin
-			-- #if AFTER WRATH
-			i(34834),	-- Recipe: Captain Rumsey's Lager
-			-- #endif
-			i(33925),	-- Recipe: Delicious Chocolate Cake
-			i(33875),	-- Recipe: Kibler's Bits
-			i(33870),	-- Recipe: Skullfish Soup
-			i(33871),	-- Recipe: Stormchops
-		}),
-		i(33857, {	-- Crate of Meat
-			-- #if AFTER WRATH
-			i(34834),	-- Recipe: Captain Rumsey's Lager
-			-- #endif
-			i(33925),	-- Recipe: Delicious Chocolate Cake
-			i(33875),	-- Recipe: Kibler's Bits
-			i(33873),	-- Recipe: Spicy Hot Talbuk
-			i(33871),	-- Recipe: Stormchops
-		}),
-	}),
+	n(REWARDS, applyclassicphase(TBC_PHASE_ONE, {
+		["maps"] = { SHATTRATH_CITY },
+		["requireSkill"] = COOKING,
+		["groups"]= {
+			i(33844, {	-- Barrel of Fish
+				i(33869),	-- Recipe: Broiled Bloodfin
+				i(34834, {	-- Recipe: Captain Rumsey's Lager
+					-- #if ANYCLASSIC
+					["description"] = "This was originally not available as a drop within the crate or barrel until Patch 2.3.3. I'm not sure if it's available or not, please let the ATT Discord know if you get it in TBC Classic!",
+					-- #endif
+				}),
+				i(33925),	-- Recipe: Delicious Chocolate Cake
+				i(33875),	-- Recipe: Kibler's Bits
+				i(33870),	-- Recipe: Skullfish Soup
+				i(33871),	-- Recipe: Stormchops
+			}),
+			i(33857, {	-- Crate of Meat
+				i(34834),	-- Recipe: Captain Rumsey's Lager
+				i(33925),	-- Recipe: Delicious Chocolate Cake
+				i(33875),	-- Recipe: Kibler's Bits
+				i(33873),	-- Recipe: Spicy Hot Talbuk
+				i(33871),	-- Recipe: Stormchops
+			}),
+		},
+	})),
 	-- #endif
 	-- #if NOT ANYCLASSIC
 	filter(200, { 	-- Recipes
@@ -3029,19 +3016,10 @@ profession(COOKING, {
 			un(REMOVED_FROM_GAME, i(16072, {	-- Expert Cookbook
 				["spellID"] = 0,	-- replacing the spellID that is automatically pulled from the itemDB, which shows this item as "unknown" when it's not collectible
 			})),
-			un(REMOVED_FROM_GAME, i(16073, {	-- Artisan Cookbook
-				["spellID"] = 0,	-- replacing the spellID that is automatically pulled from the itemDB, which shows this item as "unknown" when it's not collectible
-			})),
 			un(REMOVED_FROM_GAME, i(27736, {	-- Master Cookbook
 				["spellID"] = 0,	-- replacing the spellID that is automatically pulled from the itemDB, which shows this item as "unknown" when it's not collectible
 			})),
-			un(REMOVED_FROM_GAME, i(6891)),	-- Recipe: Herb Baked Egg
 			un(REMOVED_FROM_GAME, i(5485)),	-- Recipe: Fillet of Frenzy
-			{
-				["itemID"] = 7678,	-- Recipe: Thistle Tea (Removed from Game!)
-				["spellID"] = 9513,	-- Thistle Tea
-				["u"] = REMOVED_FROM_GAME,
-			},
 			un(REMOVED_FROM_GAME, i(5489)),	-- Recipe: Lean Venison
 			un(REMOVED_FROM_GAME, i(12227)),	-- Recipe: Lean Wolf Steak
 			un(REMOVED_FROM_GAME, i(3736)),	-- Recipe: Tasty Lion Steak
@@ -3057,48 +3035,179 @@ profession(COOKING, {
 	-- #endif
 });
 
--- Cooking Recipes
+-- Cooking Item Database
 _.ItemDB = {};
-local itemrecipe = function(itemID, spellID, timeline, classicphase)
-	local o = { ["itemID"] = itemID };
-	if spellID and spellID > 0 then
-		o.spellID = spellID;
+
+-- Recipe Cache (for Validation)
+local recipeCache, recipeCacheU = {}, {};
+local function cacheRecipes(g)
+	if g and type(g) == "table" then
+		if g.groups then cacheRecipes(g.groups); end
+		if g.g then cacheRecipes(g.g); end
+		local spellID = g.spellID or g.recipeID;
+		if spellID then
+			recipeCache[spellID] = true; 
+			if g.u then recipeCacheU[spellID] = g.u; end
+		end
+		for i,o in ipairs(g) do
+			cacheRecipes(o);
+		end
+	end
+end
+cacheRecipes(_.Professions);
+
+-- Item Recipe Database
+local itemrecipe = function(name, itemID, spellID, phase, timeline)
+	local o = { ["itemID"] = itemID, ["spellID"] = spellID };
+	if type(phase) == "string" then
+		timeline = phase;
+		phase = nil;
 	end
 	if timeline then
 		-- Ensure that the timeline is in a table format.
 		if type(timeline) == "string" then timeline = { timeline }; end
-		o.timeline = timeline;
+		if type(timeline) == "table" then o.timeline = timeline; end
 	end
-	if classicphase then applyclassicphase(classicphase, o); end
-	_.ItemDB[itemID] = o;
+	if name then
+		-- Ensure that the name is in a string format.
+		if type(name) == "table" then
+			-- #if AFTER CATA
+			name = name[2];
+			-- #else
+			name = name[1];
+			-- #endif
+		end
+		o.name = name;
+	end
+	_.ItemDB[itemID] = phase and type(phase) ~= "boolean" and applyclassicphase(phase, o) or o;
+	
+	-- Ensure that this recipe's spellID exists in the profession database.
+	if recipeCache and (type(timeline) ~= "boolean" and type(phase) ~= "boolean") then
+		if recipeCache[o.spellID] then
+			-- Grab the phase from the cache.
+			local u = recipeCacheU[o.spellID];
+			if u then
+				if o.u ~= u then
+					print("ITEM RECIPE MISSING U: ", name, o.spellID, u, o.u);
+					o.u = u;
+				end
+			elseif o.u ~= u then
+				print("RECIPE MISSING U: ", name, o.spellID, o.u);
+			end
+		else
+			print("MISSING RECIPE", name, o.spellID);
+		end
+	end
 	return o;
 end
 
 -- Classic Recipes
---itemrecipe(, );	--
---[[
-itemrecipe(3734, );	-- Recipe: Big Bear Steak
-itemrecipe(6325, );	-- Recipe: Brilliant Smallfish
-itemrecipe(6330, );	-- Recipe: Bristle Whisker Catfish
-itemrecipe(5489, );,	-- Recipe: Lean Venison
-itemrecipe(6328, );	-- Recipe: Longjaw Mud Snapper
-itemrecipe(17062, );	-- Recipe: Mithril Head Trout
-itemrecipe(6368, );	-- Recipe: Rainbow Fin Albacore
-itemrecipe(6369, );	-- Recipe: Rockscale Cod
-itemrecipe(18267, );	-- Recipe: Runn Tum Tuber Surprise
-itemrecipe(21219, );	-- Recipe: Sagefish Delight
-itemrecipe(21099, );	-- Recipe: Smoked Sagefish
-]]
+itemrecipe("Recipe: Westfall Stew", 728, 2543);
+itemrecipe("Recipe: Goretusk Liver Pie", 2697, 2542);
+itemrecipe("Recipe: Cooked Crab Claw", 2698, 2545);
+itemrecipe("Recipe: Redridge Goulash", 2699, 2547);
+itemrecipe("Recipe: Succulent Pork Ribs", 2700, 2548);
+itemrecipe("Recipe: Seasoned Wolf Kabob", 2701, 2549);
+itemrecipe("Recipe: Beer Basted Boar Ribs", 2889, 2795);
+itemrecipe("Recipe: Crocolisk Steak", 3678, 3370);
+itemrecipe("Recipe: Blood Sausage", 3679, 3371);
+itemrecipe("Recipe: Murloc Fin Soup", 3680, 3372);
+itemrecipe("Recipe: Crocolisk Gumbo", 3681, 3373);
+itemrecipe("Recipe: Curiously Tasty Omelet", 3682, 3376);
+itemrecipe("Recipe: Gooey Spider Cake", 3683, 3377);
+itemrecipe("Recipe: Big Bear Steak", 3734, 3397);
+itemrecipe("Recipe: Hot Lion Chops", 3735, 3398);
+itemrecipe("Recipe: Tasty Lion Steak", 3736, 3399);
+itemrecipe("Recipe: Soothing Turtle Bisque", 3737, 3400, "removed 4.0.3.2000");
+itemrecipe("Recipe: Barbecued Buzzard Wing", 4609, 4094);
+itemrecipe("Recipe: Kaldorei Spider Kabob", 5482, 6412, "removed 4.0.3.2000");
+itemrecipe("Recipe: Scorpid Surprise", 5483, 6413);
+itemrecipe("Recipe: Roasted Kodo Meat", 5484, 6414);
+itemrecipe("Recipe: Fillet of Frenzy", 5485, 6415);
+itemrecipe("Recipe: Strider Stew", 5486, 6416);
+itemrecipe("Recipe: Dig Rat Stew", 5487, 6417, "removed 4.3.0.2000");
+itemrecipe("Recipe: Crispy Lizard Tail", 5488, 6418);
+itemrecipe("Recipe: Lean Venison", 5489, 6419);
+itemrecipe("Recipe: Clam Chowder", 5528, 6501);
+itemrecipe("Recipe: Giant Clam Scorcho", 6039, 7213);
+itemrecipe("Recipe: Brilliant Smallfish", 6325, 7751);
+itemrecipe("Recipe: Slitherskin Mackerel", 6326, 7752);
+itemrecipe("Recipe: Longjaw Mud Snapper", 6328, 7753);
+itemrecipe("Recipe: Loch Frenzy Delight", 6329, 7754);
+itemrecipe("Recipe: Bristle Whisker Catfish", 6330, 7755);
+itemrecipe("Recipe: Rainbow Fin Albacore", 6368, 7827);
+itemrecipe("Recipe: Rockscale Cod", 6369, 7828);
+itemrecipe("Recipe: Savory Deviate Delight", 6661, 8238);
+itemrecipe("Recipe: Smoked Bear Meat", 6892, 8607);
+itemrecipe("Recipe: Crispy Bat Wing", 12226, 15935);
+itemrecipe("Recipe: Lean Wolf Steak", 12227, 15853);
+itemrecipe("Recipe: Roast Raptor", 12228, 15855);
+itemrecipe("Recipe: Hot Wolf Ribs", 12229, 15856);
+itemrecipe("Recipe: Jungle Stew", 12231, 15861);
+itemrecipe("Recipe: Carrion Surprise", 12232, 15863);
+itemrecipe("Recipe: Mystery Stew", 12233, 15865);
+itemrecipe("Recipe: Dragonbreath Chili", 12239, 15906);
+itemrecipe("Recipe: Heavy Kodo Stew", 12240, 15910);
+itemrecipe("Recipe: Spotted Yellowtail", 13939, 18238);
+itemrecipe("Recipe: Cooked Glossy Mightfish", 13940, 18239);
+itemrecipe("Recipe: Filet of Redgill", 13941, 18241);
+itemrecipe("Recipe: Grilled Squid", 13942, 18240);
+itemrecipe("Recipe: Hot Smoked Bass", 13943, 18242);
+itemrecipe("Recipe: Nightfin Soup", 13945, 18243);
+itemrecipe("Recipe: Poached Sunscale Salmon", 13946, 18244);
+itemrecipe("Recipe: Lobster Stew", 13947, 18245);
+itemrecipe("Recipe: Mightfish Steak", 13948, 18246);
+itemrecipe("Recipe: Baked Salmon", 13949, 18247);
+itemrecipe("Recipe: Monster Omelet", 16110, 15933);
+itemrecipe("Recipe: Spiced Chili Crab", 16111, 15915);
+itemrecipe("Recipe: Undermine Clam Chowder", 16767, 20626);
+itemrecipe("Recipe: Mithril Head Trout", 17062, 20916);
+un(FEAST_OF_WINTER_VEIL, itemrecipe("Recipe: Gingerbread Cookie", 17200, 21143, nil, true));
+un(FEAST_OF_WINTER_VEIL, itemrecipe("Recipe: Egg Nog", 17201, 21144, nil, true));
+itemrecipe("Recipe: Tender Wolf Steak", 18046, 22480);
+itemrecipe("Recipe: Thistle Tea", 18160, 9513);
+itemrecipe("Recipe: Smoked Sagefish", 21099, 25704);
+itemrecipe("Recipe: Sagefish Delight", 21219, 25954);
+itemrecipe("Recipe: Runn Tum Tuber Surprise", 18267, 22761, PHASE_ONE_DIREMAUL);
+itemrecipe("Recipe: Heavy Crocolisk Stew", 20075, 24418);
+itemrecipe("Recipe: Dirge's Kickin' Chimaerok Chops", 21025, 25659, PHASE_FIVE);
+itemrecipe("Expert Cookbook", 16072, 0--[[3413]], nil, true);
 
 -- #if AFTER TBC
 -- TBC Recipes
-itemrecipe(27687, 33278, "added 2.0.1.6180", TBC_PHASE_ONE);	-- Recipe: Bat Bites
-itemrecipe(22647, 28267, "added 2.0.1.6180", TBC_PHASE_ONE);	-- Recipe: Crunchy Spider Surprise
-itemrecipe(27686, 33277, "added 2.0.1.6180", TBC_PHASE_ONE);	-- Recipe: Roasted Moongraze Tenderloin
+itemrecipe("Recipe: Bat Bites", 27687, 33278, TBC_PHASE_ONE, "added 2.0.1.6180");
+itemrecipe("Recipe: Charred Bear Kabobs", 35564, 46684, TBC_PHASE_ONE, "removed 4.1.0.10000");
+itemrecipe("Recipe: Crunchy Spider Surprise", 22647, 28267, TBC_PHASE_ONE, "added 2.0.1.6180");
+itemrecipe("Recipe: Juicy Bear Burger", 35566, 46688, TBC_PHASE_ONE, "removed 4.1.0.10000");
+itemrecipe("Recipe: Lynx Steak", 27685, 33276, TBC_PHASE_ONE, "added 2.0.1.6180");
+itemrecipe("Recipe: Roasted Moongraze Tenderloin", 27686, 33277, TBC_PHASE_ONE, "added 2.0.1.6180");
+itemrecipe("Recipe: Sporeling Snack", 27689, 33285, TBC_PHASE_ONE, "removed 4.2.0.10000");
+un(FEAST_OF_WINTER_VEIL, itemrecipe("Recipe: Hot Apple Cider", 34413, 45022, true, "added 2.3.0.7501"));
 
---[[
-
-]]--
+itemrecipe("Recipe: Buzzard Bites", 27684, 33279, TBC_PHASE_ONE);
+itemrecipe("Recipe: Ravager Dog", 27688, 33284, TBC_PHASE_ONE);
+itemrecipe("Recipe: Blackened Basilisk", 27690, 33286, TBC_PHASE_ONE);
+itemrecipe("Recipe: Roasted Clefthoof", 27691, 33287, TBC_PHASE_ONE);
+itemrecipe("Recipe: Warp Burger", 27692, 33288, TBC_PHASE_ONE);
+itemrecipe("Recipe: Talbuk Steak", 27693, 33289, TBC_PHASE_ONE);
+itemrecipe("Recipe: Blackened Trout", 27694, 33290, TBC_PHASE_ONE);
+itemrecipe("Recipe: Feltail Delight", 27695, 33291, TBC_PHASE_ONE);
+itemrecipe("Recipe: Blackened Sporefish", 27696, 33292, TBC_PHASE_ONE);
+itemrecipe("Recipe: Grilled Mudfish", 27697, 33293, TBC_PHASE_ONE);
+itemrecipe("Recipe: Poached Bluefish", 27698, 33294, TBC_PHASE_ONE);
+itemrecipe("Recipe: Golden Fish Sticks", 27699, 33295, TBC_PHASE_ONE);
+itemrecipe("Recipe: Spicy Crawdad", 27700, 33296, TBC_PHASE_ONE);
+itemrecipe("Recipe: Clam Bar", 30156, 36210, TBC_PHASE_ONE);
+itemrecipe("Recipe: Crunchy Serpent", 31674, 38868, TBC_PHASE_ONE);
+itemrecipe("Recipe: Mok'Nathal Shortribs", 31675, 38867, TBC_PHASE_ONE);
+itemrecipe("Recipe: Broiled Bloodfin", 33869, 43761, TBC_PHASE_ONE);
+itemrecipe("Recipe: Skullfish Soup", 33870, 43707, TBC_PHASE_ONE);
+itemrecipe("Recipe: Stormchops", 33871, 43758, TBC_PHASE_ONE);
+itemrecipe("Recipe: Spicy Hot Talbuk", 33873, 43765, TBC_PHASE_ONE);
+itemrecipe("Recipe: Kibler's Bits", 33875, 43772, TBC_PHASE_ONE);
+itemrecipe("Recipe: Delicious Chocolate Cake", 33925, 43779, TBC_PHASE_ONE);
+itemrecipe("Recipe: Captain Rumsey's Lager", 34834, 45695, TBC_PHASE_ONE);
+itemrecipe("Master Cookbook", 27736, 0--[[33359]], TBC_PHASE_ONE, true);
 -- #endif
 
 -- #if AFTER WRATH
@@ -3107,8 +3216,14 @@ itemrecipe(27686, 33277, "added 2.0.1.6180", TBC_PHASE_ONE);	-- Recipe: Roasted 
 -- #endif
 
 -- These items never made it in.
+recipeCache = nil;	-- Invalidate the cache.
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	filter(200, {	-- Recipe
+		itemrecipe("Recipe: Herb Baked Egg", 6891, 8604),	-- this is taught by trainer when you learn cooking; recipe item was never in game
+		itemrecipe("Deprecated Recipe: Kodo Skin Bag", 4997),
+		itemrecipe("Recipe: Thistle Tea", 7678, 9513),
+		itemrecipe("Artisan Cookbook", 16073, 19887),
+		
 		-- #if AFTER WRATH
 		i(34126),	-- Recipe: Shoveltusk Soup
 		i(39692),	-- Recipe: Succulent Orca Stew
@@ -3117,15 +3232,15 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		-- #if AFTER MOP
 		i(101631),	-- Recipe: Noodle Cart Kit [Learned from the quest directly]
 		i(101664),	-- Recipe: Deluxe Noodle Cart Kit [Learned from the quest directly]
-
+		
 		recipe(145170),	-- Grand Deluxe Noodle Cart Kit
 		i(101739),	-- Recipe: Grand Deluxe Noodle Cart Kit
 		i(101729),	-- Grand Deluxe Noodle Cart Kit
-
+		
 		recipe(145167),	-- Grand Noodle Cart Kit
 		i(101728),	-- Recipe: Grand Noodle Cart Kit
 		i(101727),	-- Grand Noodle Cart Kit
-
+		
 		recipe(145197),	-- Grand Pandaren Treasure Noodle Cart Kit
 		i(101741),	-- Recipe: Grand Pandaren Treasure Noodle Cart Kit
 		i(101740),	-- Grand Pandaren Treasure Noodle Cart Kit
