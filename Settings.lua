@@ -1941,7 +1941,7 @@ table.insert(settings.MostRecentTab.objects, f);
 
 -- Custom Collect filtering
 local CustomCollectFilterLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-CustomCollectFilterLabel:SetPoint("LEFT", line, "LEFT", 250, 0);
+CustomCollectFilterLabel:SetPoint("LEFT", line, "LEFT", 275, 0);
 CustomCollectFilterLabel:SetPoint("TOP", line, "BOTTOM", 0, -8);
 CustomCollectFilterLabel:SetJustifyH("LEFT");
 CustomCollectFilterLabel:SetText(L["CUSTOM_FILTERS_LABEL"]);
