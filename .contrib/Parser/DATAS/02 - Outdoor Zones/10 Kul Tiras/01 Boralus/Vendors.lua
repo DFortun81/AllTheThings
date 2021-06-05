@@ -1874,7 +1874,6 @@ _.Zones =
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 							["g"] = {
 								i(169720),	-- Notorious Gladiator's Bonegrinder
-								i(169725),	-- Notorious Gladiator's Bonegrinder
 								i(169712),	-- Notorious Gladiator's Chopper
 								i(171160),	-- Notorious Gladiator's Claw
 								i(169730),	-- Notorious Gladiator's Cutter

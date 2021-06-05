@@ -1146,7 +1146,6 @@ _.Zones =
 						i(184675, {	-- Arsenal: Notorious Gladiator's Weapons
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 							["g"] = {
-								i(169724),	-- Notorious Gladiator's Bonegrinder
 								i(169721),	-- Notorious Gladiator's Bonegrinder
 								i(169704),	-- Notorious Gladiator's Chopper
 								i(171161),	-- Notorious Gladiator's Claw

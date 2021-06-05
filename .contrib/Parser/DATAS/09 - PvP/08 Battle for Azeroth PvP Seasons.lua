@@ -481,7 +481,6 @@ _.PVP =
 				n(-319, {	-- Weapons
 					i(165041),	-- Sinister Gladiator's Bonecracker (A)
 					i(166479),	-- Sinister Gladiator's Greatsword (A)
-					un(NEVER_IMPLEMENTED, i(165036)),	-- Sinister Gladiator's Halberd (A) (either NYI or removed)
 					i(165043),	-- Sinister Gladiator's Longbow (A)
 					i(165042),	-- Sinister Gladiator's Mageblade (A)
 					i(165037),	-- Sinister Gladiator's Pike (A)
@@ -507,9 +506,7 @@ _.PVP =
 				}),
 				n(-43,  {	-- Cloth
 					un(REMOVED_FROM_GAME, i(164897)),	-- Sinister Gladiator's Silk Amice (A)
-					un(REMOVED_FROM_GAME, i(166634)),	-- Sinister Gladiator's Silk Armor (A)
 					un(REMOVED_FROM_GAME, i(164903)),	-- Sinister Gladiator's Silk Bracers (A)
-					un(REMOVED_FROM_GAME, i(166611)),	-- Sinister Gladiator's Silk Cap (A)
 					un(REMOVED_FROM_GAME, i(166626)),	-- Sinister Gladiator's Silk Chestwrap (A)
 					i(164836),	-- Sinister Gladiator's Silk Cord (A)
 					un(REMOVED_FROM_GAME, i(166603)),	-- Sinister Gladiator's Silk Cover (A)
@@ -525,16 +522,13 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(164876)),	-- Sinister Gladiator's Silk Raiment (A)
 					i(164812),	-- Sinister Gladiator's Silk Robe (A)
 					un(REMOVED_FROM_GAME, i(164900)),	-- Sinister Gladiator's Silk Sash (A)
-					un(REMOVED_FROM_GAME, i(166660)),	-- Sinister Gladiator's Silk Shoulderguards (A)
 					un(REMOVED_FROM_GAME, i(166652)),	-- Sinister Gladiator's Silk Shoulderpads (A)
 					un(REMOVED_FROM_GAME, i(164881)),	-- Sinister Gladiator's Silk Slippers (A)
 					i(164817),	-- Sinister Gladiator's Silk Treads (A)
 					un(REMOVED_FROM_GAME, i(164892)),	-- Sinister Gladiator's Silk Trousers (A)
 					un(REMOVED_FROM_GAME, i(166618)),	-- Sinister Gladiator's Silk Vestments (A)
-					un(REMOVED_FROM_GAME, i(164848)),	-- Sinister Gladiator's Silk Amice (H)
-					un(REMOVED_FROM_GAME, i(166630)),	-- Sinister Gladiator's Silk Armor (H)
-					un(REMOVED_FROM_GAME, i(164849)),	-- Sinister Gladiator's Silk Bracers (H)
-					un(REMOVED_FROM_GAME, i(166606)),	-- Sinister Gladiator's Silk Cap (H)
+					un(REMOVED_FROM_GAME, i(164848)),	-- Sinister Gladiator's Si
+					un(REMOVED_FROM_GAME, i(164849)),	-- Sinister Gladiator's Silk
 					un(REMOVED_FROM_GAME, i(166622)),	-- Sinister Gladiator's Silk Chestwrap (H)
 					i(164786),	-- Sinister Gladiator's Silk Cord (H)
 					un(REMOVED_FROM_GAME, i(166598)),	-- Sinister Gladiator's Silk Cover (H)
@@ -549,8 +543,7 @@ _.PVP =
 					i(164784),	-- Sinister Gladiator's Silk Mantle (H)
 					un(REMOVED_FROM_GAME, i(164843)),	-- Sinister Gladiator's Silk Raiment (H)
 					i(164779),	-- Sinister Gladiator's Silk Robe (H)
-					un(REMOVED_FROM_GAME, i(164850)),	-- Sinister Gladiator's Silk Sash (H)
-					un(REMOVED_FROM_GAME, i(166654)),	-- Sinister Gladiator's Silk Shoulderguards (H)
+					un(REMOVED_FROM_GAME, i(164850)),	-- Sinister Gladiator's S
 					un(REMOVED_FROM_GAME, i(166646)),	-- Sinister Gladiator's Silk Shoulderpads (H)
 					un(REMOVED_FROM_GAME, i(164844)),	-- Sinister Gladiator's Silk Slippers (H)
 					i(164780),	-- Sinister Gladiator's Silk Treads (H)
@@ -566,9 +559,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(166629)),	-- Sinister Gladiator's Leather Chestguard (A)
 					un(REMOVED_FROM_GAME, i(164883)),	-- Sinister Gladiator's Leather Footguards (A)
 					i(164820),	-- Sinister Gladiator's Leather Gloves (A)
-					un(REMOVED_FROM_GAME, i(164884)),	-- Sinister Gladiator's Leather Handguards (A)
-					un(REMOVED_FROM_GAME, i(166637)),	-- Sinister Gladiator's Leather Harness (A)
-					un(REMOVED_FROM_GAME, i(166613)),	-- Sinister Gladiator's Leather Headpiece (A)
+					un(REMOVED_FROM_GAME, i(164884)),	-- Sinister Gladiator's Leather Handguar
 					i(164826),	-- Sinister Gladiator's Leather Helm (A)
 					un(REMOVED_FROM_GAME, i(164890)),	-- Sinister Gladiator's Leather Hood (A)
 					un(REMOVED_FROM_GAME, i(166621)),	-- Sinister Gladiator's Leather Jerkin (A)
@@ -576,8 +567,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(164895)),	-- Sinister Gladiator's Leather Mantle (A)
 					un(REMOVED_FROM_GAME, i(164894)),	-- Sinister Gladiator's Leather Pants (A)
 					un(REMOVED_FROM_GAME, i(166650)),	-- Sinister Gladiator's Leather Pauldrons (A)
-					un(REMOVED_FROM_GAME, i(166642)),	-- Sinister Gladiator's Leather Shoulderguards (A)
-					un(REMOVED_FROM_GAME, i(166658)),	-- Sinister Gladiator's Leather Shoulderpads (A)
+					un(REMOVED_FROM_GAME, i(166642)),	-- Sinister Gladiator's Leather Shoulderguar
 					un(REMOVED_FROM_GAME, i(166605)),	-- Sinister Gladiator's Leather Skullguard (A)
 					i(164831),	-- Sinister Gladiator's Leather Spaulders (A)
 					i(164815),	-- Sinister Gladiator's Leather Tunic (A)
@@ -591,9 +581,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(166623)),	-- Sinister Gladiator's Leather Chestguard (H)
 					un(REMOVED_FROM_GAME, i(164852)),	-- Sinister Gladiator's Leather Footguards (H)
 					i(164789),	-- Sinister Gladiator's Leather Gloves (H)
-					un(REMOVED_FROM_GAME, i(164853)),	-- Sinister Gladiator's Leather Handguards (H)
-					un(REMOVED_FROM_GAME, i(166631)),	-- Sinister Gladiator's Leather Harness (H)
-					un(REMOVED_FROM_GAME, i(166607)),	-- Sinister Gladiator's Leather Headpiece (H)
+					un(REMOVED_FROM_GAME, i(164853)),	-- Sinister Gladiator's Leather Handguar
 					i(164790),	-- Sinister Gladiator's Leather Helm (H)
 					un(REMOVED_FROM_GAME, i(164854)),	-- Sinister Gladiator's Leather Hood (H)
 					un(REMOVED_FROM_GAME, i(166615)),	-- Sinister Gladiator's Leather Jerkin (H)
@@ -601,8 +589,7 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(164856)),	-- Sinister Gladiator's Leather Mantle (H)
 					un(REMOVED_FROM_GAME, i(164855)),	-- Sinister Gladiator's Leather Pants (H)
 					un(REMOVED_FROM_GAME, i(166647)),	-- Sinister Gladiator's Leather Pauldrons (H)
-					un(REMOVED_FROM_GAME, i(166639)),	-- Sinister Gladiator's Leather Shoulderguards (H)
-					un(REMOVED_FROM_GAME, i(166655)),	-- Sinister Gladiator's Leather Shoulderpads (H)
+					un(REMOVED_FROM_GAME, i(166639)),	-- Sinister Gladiator's Leather Shoulderguar
 					un(REMOVED_FROM_GAME, i(166599)),	-- Sinister Gladiator's Leather Skullguard (H)
 					i(164792),	-- Sinister Gladiator's Leather Spaulders (H)
 					i(164787),	-- Sinister Gladiator's Leather Tunic (H)
@@ -661,7 +648,6 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(166627)),	-- Sinister Gladiator's Plate Breastplate (A)
 					un(REMOVED_FROM_GAME, i(164877)),	-- Sinister Gladiator's Plate Chestguard (A)
 					i(164813),	-- Sinister Gladiator's Plate Chestpiece (A)
-					un(REMOVED_FROM_GAME, i(166635)),	-- Sinister Gladiator's Plate Chestplate (A)
 					un(REMOVED_FROM_GAME, i(164899)),	-- Sinister Gladiator's Plate Clasp (A)
 					i(164821),	-- Sinister Gladiator's Plate Gauntlets (A)
 					i(164835),	-- Sinister Gladiator's Plate Girdle (A)
@@ -674,9 +660,7 @@ _.PVP =
 					i(164827),	-- Sinister Gladiator's Plate Legguards (A)
 					i(164832),	-- Sinister Gladiator's Plate Pauldrons (A)
 					un(REMOVED_FROM_GAME, i(166651)),	-- Sinister Gladiator's Plate Shoulderguards (A)
-					un(REMOVED_FROM_GAME, i(166659)),	-- Sinister Gladiator's Shoulderplates (A)
 					un(REMOVED_FROM_GAME, i(164896)),	-- Sinister Gladiator's Plate Shoulders (A)
-					un(REMOVED_FROM_GAME, i(166610)),	-- Sinister Gladiator's Plate Skullguard (A)
 					un(REMOVED_FROM_GAME, i(166643)),	-- Sinister Gladiator's Plate Spaulders (A)
 					un(REMOVED_FROM_GAME, i(164904)),	-- Sinister Gladiator's Plate Vambraces (A)
 					i(164816),	-- Sinister Gladiator's Plate Warboots (A)
@@ -686,7 +670,6 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(166625)),	-- Sinister Gladiator's Plate Breastplate (H)
 					un(REMOVED_FROM_GAME, i(164868)),	-- Sinister Gladiator's Plate Chestguard (H)
 					i(164804),	-- Sinister Gladiator's Plate Chestpiece (H)
-					un(REMOVED_FROM_GAME, i(166633)),	-- Sinister Gladiator's Plate Chestplate (H)
 					un(REMOVED_FROM_GAME, i(164873)),	-- Sinister Gladiator's Plate Clasp (H)
 					i(164806),	-- Sinister Gladiator's Plate Gauntlets (H)
 					i(164809),	-- Sinister Gladiator's Plate Girdle (H)
@@ -699,9 +682,7 @@ _.PVP =
 					i(164807),	-- Sinister Gladiator's Plate Legguards (H)
 					i(164808),	-- Sinister Gladiator's Plate Pauldrons (H)
 					un(REMOVED_FROM_GAME, i(166649)),	-- Sinister Gladiator's Plate Shoulderguards (H)
-					un(REMOVED_FROM_GAME, i(166657)),	-- Sinister Gladiator's Shoulderplates (H)
 					un(REMOVED_FROM_GAME, i(164872)),	-- Sinister Gladiator's Plate Shoulders (H)
-					un(REMOVED_FROM_GAME, i(166609)),	-- Sinister Gladiator's Plate Skullguard (H)
 					un(REMOVED_FROM_GAME, i(166641)),	-- Sinister Gladiator's Plate Spaulders (H)
 					un(REMOVED_FROM_GAME, i(164874)),	-- Sinister Gladiator's Plate Vambraces (H)
 					i(164805),	-- Sinister Gladiator's Plate Warboots (H)
@@ -886,7 +867,6 @@ _.PVP =
 			n(-661, {	-- Gladiator PvP Gear
 				n(-319, {	-- Weapons
 					i(169720),	-- Notorious Gladiator's Bonegrinder (A)
-					i(169725),	-- Notorious Gladiator's Bonegrinder (A)
 					i(169712),	-- Notorious Gladiator's Chopper (A)
 					i(171160),	-- Notorious Gladiator's Claw (A)
 					i(169730),	-- Notorious Gladiator's Cutter (A)
@@ -903,7 +883,6 @@ _.PVP =
 					i(171155),	-- Notorious Gladiator's Staff (A)
 					i(169718),	-- Notorious Gladiator's Wand (A)
 					i(169710),	-- Notorious Gladiator's Warglaive (A)
-					i(169724),	-- Notorious Gladiator's Bonegrinder (H)
 					i(169721),	-- Notorious Gladiator's Bonegrinder (H)
 					i(169704),	-- Notorious Gladiator's Chopper (H)
 					i(171161),	-- Notorious Gladiator's Claw (H)
@@ -1587,6 +1566,25 @@ _.PVP =
 -- The items never made it in.
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	-- Season 2
+	i(165036),	-- Sinister Gladiator's Halberd (A)
+	i(166634),	-- Sinister Gladiator's Silk Armor (A)
+	i(166660),	-- Sinister Gladiator's Silk Shoulderguards (A)
+	i(166611),	-- Sinister Gladiator's Silk Cap (A)
+	i(166630),	-- Sinister Gladiator's Silk Armor (H)
+	i(166654),	-- Sinister Gladiator's Silk Shoulderguards (H)
+	i(166606),	-- Sinister Gladiator's Silk Cap (H)
+	i(166637),	-- Sinister Gladiator's Leather Harness (A)
+	i(166613),	-- Sinister Gladiator's Leather Headpiece (A)
+	i(166658),	-- Sinister Gladiator's Leather Shoulderpads (A)
+	i(166631),	-- Sinister Gladiator's Leather Harness (H)
+	i(166607),	-- Sinister Gladiator's Leather Headpiece (H)
+	i(166655),	-- Sinister Gladiator's Leather Shoulderpads (H)
+	i(166635),	-- Sinister Gladiator's Plate Chestplate (A)
+	i(166659),	-- Sinister Gladiator's Shoulderplates (A)
+	i(166610),	-- Sinister Gladiator's Plate Skullguard (A)
+	i(166633),	-- Sinister Gladiator's Plate Chestplate (H)
+	i(166657),	-- Sinister Gladiator's Shoulderplates (H)
+	i(166609),	-- Sinister Gladiator's Plate Skullguard (H)
 	i(166661),	-- Sinister Gladiator's Chain Epaulets (A)
 	i(166612),	-- Sinister Gladiator's Chain Skullcover (A)
 	i(166636),	-- Sinister Gladiator's Chain Vest (A)
@@ -1596,6 +1594,8 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	
 	
 	-- Season 3
+	i(169725),	-- Notorious Gladiator's Bonegrinder (A)
+	i(169724),	-- Notorious Gladiator's Bonegrinder
 	i(167291),	-- Notorious Gladiator's Silk Cord (A)
 	i(167241),	-- Notorious Gladiator's Silk Cord (H)
 	
