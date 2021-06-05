@@ -194,6 +194,7 @@ _.Zones =
 				--	["coord"] = { 61.2, 57.9, KORTHIA }, TODO old coords?  was always here inside the building, but as of 6/2 i found it nearby but outside, next day slightly further.  leaving this here in case i need to append the old coord to the new ones
 					["coords"] = {
 						{ 58.3, 52.8, KORTHIA },
+						{ 61.1, 51.6, KORTHIA },
 						{ 62.3, 58.6, KORTHIA },
 					},
 					["g"] = {
@@ -215,6 +216,7 @@ _.Zones =
 					["g"] = {
 						i(187440, {	-- Feather-Stuffed Helm
 						--	TODO: can probably drop at least 1 helm per armor class
+							i(186666),	-- Korthian Caretaker's Crown
 							i(186736),	-- Shardhide Leather Cowl
 						}),
 						i(187008),	-- Recipe: Porous Rock Candy
@@ -226,6 +228,7 @@ _.Zones =
 					["coord"] = { 42.4, 54.8, KORTHIA },
 					["g"] = {
 						i(187440, {	-- Feather-Stuffed Helm
+							i(186666),	-- Korthian Caretaker's Crown
 							i(186736),	-- Shardhide Leather Cowl
 						}),
 						i(187008),	-- Recipe: Porous Rock Candy
@@ -238,6 +241,7 @@ _.Zones =
 					["coord"] = { 52.4, 43.8, KORTHIA },
 					["g"] = {
 						i(187440, {	-- Feather-Stuffed Helm
+							i(186666),	-- Korthian Caretaker's Crown
 							i(186736),	-- Shardhide Leather Cowl
 						}),
 						i(187008),	-- Recipe: Porous Rock Candy
@@ -249,6 +253,7 @@ _.Zones =
 					["coord"] = { 63.7, 31.4, KORTHIA },
 					["g"] = {
 						i(187440, {	-- Feather-Stuffed Helm
+							i(186666),	-- Korthian Caretaker's Crown
 							i(186736),	-- Shardhide Leather Cowl
 						}),
 						i(187008),	-- Recipe: Porous Rock Candy
@@ -260,6 +265,7 @@ _.Zones =
 					["coord"] = { 52.3, 72.7, KORTHIA },
 					["g"] = {
 						i(187440, {	-- Feather-Stuffed Helm
+							i(186666),	-- Korthian Caretaker's Crown
 							i(186736),	-- Shardhide Leather Cowl
 						}),
 						i(187008),	-- Recipe: Porous Rock Candy
@@ -283,6 +289,7 @@ _.Zones =
 						{ 27.2, 48.3, KORTHIA },	-- Pile of Bones
 						{ 28.2, 50.7, KORTHIA },	-- Pile of Bones
 						{ 29.3, 47.1, KORTHIA },	-- Pile of Bones
+						{ 30.9, 45.7, KORTHIA },	-- Pile of Bones
 						{ 32.7, 42.0, KORTHIA },	-- Pile of Bones
 						{ 32.8, 45.3, KORTHIA },	-- Pile of Bones
 						{ 32.8, 55.1, KORTHIA },	-- Pile of Bones
@@ -315,6 +322,7 @@ _.Zones =
 						{ 49.5, 26.7, KORTHIA },	-- Shardhide Stash
 						{ 49.7, 33.3, KORTHIA },	-- Shardhide Stash
 						{ 50.4, 31.1, KORTHIA },	-- Shardhide Stash
+						{ 51.3, 29.7, KORTHIA },	-- Shardhide Stash
 					},
 					["name"] = "Shared Treasure #1",
 					["icon"] = 1542847,
@@ -326,6 +334,7 @@ _.Zones =
 						{ 27.2, 48.3, KORTHIA },	-- Pile of Bones
 						{ 28.2, 50.7, KORTHIA },	-- Pile of Bones
 						{ 29.3, 47.1, KORTHIA },	-- Pile of Bones
+						{ 30.9, 45.7, KORTHIA },	-- Pile of Bones
 						{ 32.7, 42.0, KORTHIA },	-- Pile of Bones
 						{ 32.8, 45.3, KORTHIA },	-- Pile of Bones
 						{ 32.8, 55.1, KORTHIA },	-- Pile of Bones
@@ -358,6 +367,7 @@ _.Zones =
 						{ 49.5, 26.7, KORTHIA },	-- Shardhide Stash
 						{ 49.7, 33.3, KORTHIA },	-- Shardhide Stash
 						{ 50.4, 31.1, KORTHIA },	-- Shardhide Stash
+						{ 51.3, 29.7, KORTHIA },	-- Shardhide Stash
 					},
 					["name"] = "Shared Treasure #2",
 					["icon"] = 1542847,
@@ -369,6 +379,7 @@ _.Zones =
 						{ 27.2, 48.3, KORTHIA },	-- Pile of Bones
 						{ 28.2, 50.7, KORTHIA },	-- Pile of Bones
 						{ 29.3, 47.1, KORTHIA },	-- Pile of Bones
+						{ 30.9, 45.7, KORTHIA },	-- Pile of Bones
 						{ 32.7, 42.0, KORTHIA },	-- Pile of Bones
 						{ 32.8, 45.3, KORTHIA },	-- Pile of Bones
 						{ 32.8, 55.1, KORTHIA },	-- Pile of Bones
@@ -401,6 +412,7 @@ _.Zones =
 						{ 49.5, 26.7, KORTHIA },	-- Shardhide Stash
 						{ 49.7, 33.3, KORTHIA },	-- Shardhide Stash
 						{ 50.4, 31.1, KORTHIA },	-- Shardhide Stash
+						{ 51.3, 29.7, KORTHIA },	-- Shardhide Stash
 					},
 					["name"] = "Shared Treasure #3",
 					["icon"] = 1542847,
@@ -412,6 +424,7 @@ _.Zones =
 						{ 27.2, 48.3, KORTHIA },	-- Pile of Bones
 						{ 28.2, 50.7, KORTHIA },	-- Pile of Bones
 						{ 29.3, 47.1, KORTHIA },	-- Pile of Bones
+						{ 30.9, 45.7, KORTHIA },	-- Pile of Bones
 						{ 32.7, 42.0, KORTHIA },	-- Pile of Bones
 						{ 32.8, 45.3, KORTHIA },	-- Pile of Bones
 						{ 32.8, 55.1, KORTHIA },	-- Pile of Bones
@@ -444,6 +457,7 @@ _.Zones =
 						{ 49.5, 26.7, KORTHIA },	-- Shardhide Stash
 						{ 49.7, 33.3, KORTHIA },	-- Shardhide Stash
 						{ 50.4, 31.1, KORTHIA },	-- Shardhide Stash
+						{ 51.3, 29.7, KORTHIA },	-- Shardhide Stash
 					},
 					["name"] = "Shared Treasure #4",
 					["icon"] = 1542847,

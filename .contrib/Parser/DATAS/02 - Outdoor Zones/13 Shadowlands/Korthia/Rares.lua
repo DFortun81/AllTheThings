@@ -120,7 +120,7 @@ _.Zones =
 					},
 				}),
 				n(179931, {	-- Relic Breaker Krelva
-					["description"] = "Use the grapple points to access the rare and chase her as she evades you.",
+					["description"] = "Use the grapple points to access the rare and chase her as she evades you.\n\nWhen the rare has been pulled, there is a zonewide announcement: |cFFff4040Relic Breaker Krelva yells: Not now, fool!  I am searching for something...|r",
 					["questID"] = 64291,
 					["isDaily"] = true,
 					["coord"] = { 22.8, 42.6, KORTHIA },
@@ -180,6 +180,10 @@ _.Zones =
 							["g"] = {	-- TODO: cannot test whether or not this mount is venthyr-specific because it doesn't show up in the mount journal.
 								i(186479),	-- Masterwork Gravewing (MOUNT!)
 							},
+						}),
+						i(187428, {	-- Legend of the Animaswell
+							["customCollect"] = "SL_COV_VEN",	-- Venthyr-only
+							["questID"] = 64553,	-- Legend of the Animaswell
 						}),
 					},
 				}),

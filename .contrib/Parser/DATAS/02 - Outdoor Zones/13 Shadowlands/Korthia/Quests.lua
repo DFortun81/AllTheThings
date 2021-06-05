@@ -145,6 +145,11 @@ _.Zones =
 					["provider"] = { "n", 177928 },	-- Archivist Roh-Dahl
 					["coord"] = { 39.4, 51.3, KORTHIA },
 				}),
+				q(64557, {	-- In Darkness, Found
+				--	["sourceQuests"] = {  },	-- 
+					["provider"] = { "n", 178845 },	-- Xy'lony
+					["coord"] = { 64.5, 25.4, KORTHIA },
+				}),
 				q(64556, {	-- In Need of Assistance
 					["sourceQuests"] = { 64555 },	-- Surveying Secrets
 					["provider"] = { "n", 177228 },	-- Highlord Bolvar Fordragon

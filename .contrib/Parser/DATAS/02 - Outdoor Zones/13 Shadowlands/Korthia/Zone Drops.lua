@@ -41,7 +41,9 @@ _.Zones =
 					},
 				}),
 			--	Korthian Relics (putting here barring a better place for them)
+				i(187311),	-- Azgoth's Tattered Maps
 				i(187465),	-- Complicated Organism Harvester
+				i(187333),	-- Core of an Unknown Titan
 				i(187322),	-- Crumbling Stone Tablet
 				i(187327),	-- Encrypted Korthian Journal
 				i(187463),	-- Enigmatic Map Fragments
@@ -90,7 +92,7 @@ _.Zones =
 				i(186116),	-- Mawsworn Assassin's Hood
 				i(186137),	-- Mawsworn Assassin's Shoulderguards
 				i(186136),	-- Mawsworn Assassin's Vest
-				i(186147),	-- Mawsworn Battle Hammer
+				i(186147),	-- Mawsworn Battle Hammer*
 				i(186149),	-- Mawsworn Collector's Gavel
 				i(186113),	-- Mawsworn Darkcaster's Bindings
 				i(186112),	-- Mawsworn Darkcaster's Cinch
@@ -104,17 +106,17 @@ _.Zones =
 				i(186108),	-- Mawsworn Darkcaster's Slippers
 				i(186150),	-- Mawsworn Darkcaster's Stave*
 				i(186129),	-- Mawsworn Guard's Breastplate
-				i(186154),	-- Mawsworn Guard's Cleaver
+				i(186154),	-- Mawsworn Guard's Cleaver*
 				i(186131),	-- Mawsworn Guard's Gauntlets
 				i(186134),	-- Mawsworn Guard's Girdle
-				i(186128),	-- Mawsworn Guard's Helm
+				i(186128),	-- Mawsworn Guard's Helm*
 				i(186132),	-- Mawsworn Guard's Legguards
 				i(186133),	-- Mawsworn Guard's Pauldrons
 				i(186130),	-- Mawsworn Guard's Sabatons
 				i(186135),	-- Mawsworn Guard's Vambraces
 				i(186139),	-- Mawsworn Javeliner's Targe
 				i(186152),	-- Mawsworn Lieutenant's Cloak
-				i(186144),	-- Mawsworn Reaver's Greataxe
+				i(186144),	-- Mawsworn Reaver's Greataxe*
 				i(186127),	-- Mawsworn Scout's Bracers
 				i(186120),	-- Mawsworn Scout's Chainmail
 				i(186126),	-- Mawsworn Scout's Cincture
@@ -123,4 +125,12 @@ _.Zones =
 			}),
 		}),
 	}),
+};
+
+_.HiddenQuestTriggers = {
+	q(64534),	-- triggered when looting Korthian Relic - i(187311), "Azgoth's Tattered Maps"
+	q(64341),	-- looted 20 Relic Fragments from some shardhides (177354 - Shardhide Dominator x2, 177352 - Shardhide Mauler x1, looted all 3 at once)
+	q(64342),	-- looted 14 Relic Fragments from some shardhide around 48.7, 29.3
+	q(64343),	-- looted 9 Relic Fragments from a mob around 51.6, 52.6
+	q(64344),	-- looted 7 Relic Fragments from a Ravenous Gorger, npcID 177245
 };

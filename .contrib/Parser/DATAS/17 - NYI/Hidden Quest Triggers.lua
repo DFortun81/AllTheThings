@@ -4472,10 +4472,6 @@ _.HiddenQuestTriggers =
 		q(64280),	-- looting a Lost Razorwing Egg
 		q(64281),	-- looting a second Lost Razorwing Egg
 		q(64376),	-- tracking quest that automatically accepted when i flew in to Korthia on 5/11/21 - supposedly related to the Darkmaul mount
-		q(64341),	-- looted 20 Relic Fragments from some shardhides (177354 - Shardhide Dominator x2, 177352 - Shardhide Mauler x1, looted all 3 at once)
-		q(64342),	-- looted 14 Relic Fragments from some shardhide around 48.7, 29.3
-		q(64343),	-- looted 9 Relic Fragments from a mob around 51.6, 52.6
-		q(64344),	-- looted 7 Relic Fragments from a Ravenous Gorger, npcID 177245
 		q(64262),	-- triggered when turning in #64007, "Charge of the Covenants"
 		q(64536),	-- looting Maldraxxus Larva Shell (300 Catalogued Research)
 		q(63601),	-- this was either learning Aspiring Aspirant's ensemble or pulling a legendary out of the mailbox that i hadn't had bagspace for earlier
