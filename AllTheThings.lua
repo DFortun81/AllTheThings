@@ -16600,11 +16600,7 @@ app:GetWindow("Random", UIParent, function(self)
 				-- Call to our method and build a list to draw from
 				local method = app.GetDataMember("RandomSearchFilter", "Instance");
 				if method then
-					local localizedMethod = method
-					if localizedMethod ~= "AllTheThings" then
-						localizedMethod = L[localizedMethod:upper()];
-					end
-					rerollOption.text = L["REROLL_2"] .. localizedMethod;
+					rerollOption.text = L["REROLL_2"] .. (method ~= "AllTheThings" and L[method:upper()] or method);
 					method = "Select" .. method;
 					local temp = self[method]() or {};
 					local totalWeight = 0;
@@ -16645,11 +16641,8 @@ app:GetWindow("Random", UIParent, function(self)
 			for i,o in ipairs(self.data.options) do
 				tinsert(self.data.g, o);
 			end
-			local localizedMethod = app.GetDataMember("RandomSearchFilter", "Instance");
-			if localizedMethod ~= "AllTheThings" then
-				localizedMethod = L[localizedMethod:upper()];
-			end
-			rerollOption.text = L["REROLL_2"] .. localizedMethod;
+			local method = app.GetDataMember("RandomSearchFilter", "Instance");
+			rerollOption.text = L["REROLL_2"] .. (method ~= "AllTheThings" and L[method:upper()] or method);
 		end
 
 		-- Update the window and all of its row data
@@ -16657,7 +16650,6 @@ app:GetWindow("Random", UIParent, function(self)
 		self.data.total = 0;
 		self.data.indent = 0;
 		BuildGroups(self.data, self.data.g);
-		UpdateGroups(self.data, self.data.g);
 		self:BaseUpdate(true);
 	end
 end);
