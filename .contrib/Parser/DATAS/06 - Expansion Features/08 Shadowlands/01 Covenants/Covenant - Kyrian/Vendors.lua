@@ -1036,10 +1036,10 @@ _.ExpansionFeatures =
 							i(177872, {	-- Archon's Guiding Glaive
 								["modID"] = 83,
 								["cost"] = {
-									{ "i", 183896.04, 1 },	-- LFR Abominable Anima Spherule - 194
-									{ "i", 183897.04, 1 },	-- LFR Mystic Anima Spherule - 194
-									{ "i", 183898.04, 1 },	-- LFR Venerated Anima Spherule - 194
-									{ "i", 183899.04, 1 },	-- LFR Zenith Anima Spherule - 194
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
 								},
 							}),
 							i(184272, {	-- Ascended Gladius of Glory
@@ -1066,10 +1066,10 @@ _.ExpansionFeatures =
 							i(184270, {	-- Disciple's Peacebound Poniard
 								["modID"] = 83,
 								["cost"] = {
-									{ "i", 183896.04, 1 },	-- LFR Abominable Anima Spherule - 194
-									{ "i", 183897.04, 1 },	-- LFR Mystic Anima Spherule - 194
-									{ "i", 183898.04, 1 },	-- LFR Venerated Anima Spherule - 194
-									{ "i", 183899.04, 1 },	-- LFR Zenith Anima Spherule - 194
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
 								},
 							}),
 							i(174298, {	-- Dutiful Disciple's Cleaver
@@ -1089,10 +1089,10 @@ _.ExpansionFeatures =
 							i(177865, {	-- Faithful Sidearm
 								["modID"] = 83,
 								["cost"] = {
-									{ "i", 183896.04, 1 },	-- LFR Abominable Anima Spherule - 194
-									{ "i", 183897.04, 1 },	-- LFR Mystic Anima Spherule - 194
-									{ "i", 183898.04, 1 },	-- LFR Venerated Anima Spherule - 194
-									{ "i", 183899.04, 1 },	-- LFR Zenith Anima Spherule - 194
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
 								},
 							}),
 							i(175251, {	-- Forked Blade of Fortitude
@@ -1114,10 +1114,10 @@ _.ExpansionFeatures =
 							i(174302, {	-- Labrys of the Loyal Larion
 								["modID"] = 83,
 								["cost"] = {
-									{ "i", 183896.04, 1 },	-- LFR Abominable Anima Spherule - 194
-									{ "i", 183897.04, 1 },	-- LFR Mystic Anima Spherule - 194
-									{ "i", 183898.04, 1 },	-- LFR Venerated Anima Spherule - 194
-									{ "i", 183899.04, 1 },	-- LFR Zenith Anima Spherule - 194
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
 								},
 							}),
 							i(175279, {	-- Lost Soul Xiphos
@@ -1147,19 +1147,19 @@ _.ExpansionFeatures =
 							i(180315, {	-- Polemarch's Scepter of Faith
 								["modID"] = 83,
 								["cost"] = {
-									{ "i", 183896.04, 1 },	-- LFR Abominable Anima Spherule - 194
-									{ "i", 183897.04, 1 },	-- LFR Mystic Anima Spherule - 194
-									{ "i", 183898.04, 1 },	-- LFR Venerated Anima Spherule - 194
-									{ "i", 183899.04, 1 },	-- LFR Zenith Anima Spherule - 194
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
 								},
 							}),
 							i(184243, {	-- Praetorian Wingblade
 								["modID"] = 83,
 								["cost"] = {
-									{ "i", 183896.04, 1 },	-- LFR Abominable Anima Spherule - 194
-									{ "i", 183897.04, 1 },	-- LFR Mystic Anima Spherule - 194
-									{ "i", 183898.04, 1 },	-- LFR Venerated Anima Spherule - 194
-									{ "i", 183899.04, 1 },	-- LFR Zenith Anima Spherule - 194
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
 								},
 							}),
 							i(184273, {	-- Puremind Piercer
@@ -1173,10 +1173,10 @@ _.ExpansionFeatures =
 							i(184274, {	-- Reaver of Renewed Resolve
 								["modID"] = 83,
 								["cost"] = {
-									{ "i", 183896.04, 1 },	-- LFR Abominable Anima Spherule - 194
-									{ "i", 183897.04, 1 },	-- LFR Mystic Anima Spherule - 194
-									{ "i", 183898.04, 1 },	-- LFR Venerated Anima Spherule - 194
-									{ "i", 183899.04, 1 },	-- LFR Zenith Anima Spherule - 194
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
 								},
 							}),
 							i(184275, {	-- Sacred Sparrer's Edge
@@ -1190,28 +1190,28 @@ _.ExpansionFeatures =
 							i(177860, {	-- Silvered Recurve of Reconciliation
 								["modID"] = 83,
 								["cost"] = {
-									{ "i", 183896.04, 1 },	-- LFR Abominable Anima Spherule - 194
-									{ "i", 183897.04, 1 },	-- LFR Mystic Anima Spherule - 194
-									{ "i", 183898.04, 1 },	-- LFR Venerated Anima Spherule - 194
-									{ "i", 183899.04, 1 },	-- LFR Zenith Anima Spherule - 194
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
 								},
 							}),
 							i(177849, {	-- Soulbearer's Blade of Salvation
 								["modID"] = 83,
 								["cost"] = {
-									{ "i", 183896.04, 1 },	-- LFR Abominable Anima Spherule - 194
-									{ "i", 183897.04, 1 },	-- LFR Mystic Anima Spherule - 194
-									{ "i", 183898.04, 1 },	-- LFR Venerated Anima Spherule - 194
-									{ "i", 183899.04, 1 },	-- LFR Zenith Anima Spherule - 194
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
 								},
 							}),
 							i(177855, {	-- Spellblade of Antiquity
 								["modID"] = 83,
 								["cost"] = {
-									{ "i", 183896.04, 1 },	-- LFR Abominable Anima Spherule - 194
-									{ "i", 183897.04, 1 },	-- LFR Mystic Anima Spherule - 194
-									{ "i", 183898.04, 1 },	-- LFR Venerated Anima Spherule - 194
-									{ "i", 183899.04, 1 },	-- LFR Zenith Anima Spherule - 194
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
 								},
 							}),
 							i(178973, {	-- Symphonic Chimekeeper
@@ -1240,10 +1240,10 @@ _.ExpansionFeatures =
 							i(178975, {	-- Vesiphone's Vesper of Reflection
 								["modID"] = 83,
 								["cost"] = {
-									{ "i", 183896.04, 1 },	-- LFR Abominable Anima Spherule - 194
-									{ "i", 183897.04, 1 },	-- LFR Mystic Anima Spherule - 194
-									{ "i", 183898.04, 1 },	-- LFR Venerated Anima Spherule - 194
-									{ "i", 183899.04, 1 },	-- LFR Zenith Anima Spherule - 194
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
 								},
 							}),
 							i(184236, {	-- Warglaive of Devoted Might
@@ -1257,10 +1257,10 @@ _.ExpansionFeatures =
 							i(184271, {	-- Xandria's Kopis of Courage
 								["modID"] = 83,
 								["cost"] = {
-									{ "i", 183896.04, 1 },	-- LFR Abominable Anima Spherule - 194
-									{ "i", 183897.04, 1 },	-- LFR Mystic Anima Spherule - 194
-									{ "i", 183898.04, 1 },	-- LFR Venerated Anima Spherule - 194
-									{ "i", 183899.04, 1 },	-- LFR Zenith Anima Spherule - 194
+									{ "i", 183896.83, 1 },	-- LFR Abominable Anima Spherule - 194
+									{ "i", 183897.83, 1 },	-- LFR Mystic Anima Spherule - 194
+									{ "i", 183898.83, 1 },	-- LFR Venerated Anima Spherule - 194
+									{ "i", 183899.83, 1 },	-- LFR Zenith Anima Spherule - 194
 								},
 							}),
 						}),
