@@ -1857,7 +1857,7 @@ CreateObject = function(t)
 			t = setmetatable({}, { __index = t });
 		end
 		-- if app.DEBUG_PRINT then print("CreateObject key/value",t.key,t[t.key]); end
-		
+
 		-- if g, then replace each objects in all sub groups with an object version of the table
 		if t.g then
 			-- if app.DEBUG_PRINT then print("CreateObject for sub-groups of",t.key,t[t.key]); end
@@ -3448,7 +3448,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		group = root;
 		-- print(group.g and #group.g,"Merge total");
 		-- print("Final Group",group.key,group[group.key],group.collectible,group.collected);
-		
+
 		-- Resolve Cost
 		if paramA == "currencyID" then
 			local costResults = app.SearchForField("currencyIDAsCost", paramB);
@@ -3492,7 +3492,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			group.g = noCrits;
 			-- print("achieve nocrits",#group.g)
 		end
-		
+
 		-- Append any crafted things using this group
 		app.BuildCrafted(group);
 
@@ -4702,7 +4702,7 @@ local function RefreshSavesCallback()
 		AfterCombatCallback(RefreshSavesCallback);
 		return;
 	end
-	
+
 	-- While the player is still waiting for information, wait.
 	if saves and saves < 1 and app.refreshingSaves > 0 then
 		app.refreshingSaves = app.refreshingSaves - 1;
@@ -7526,13 +7526,13 @@ app.CacheHeirlooms = function()
 				if upgrades then
 					SetDataSubMember("HeirloomUpgradeLevels", itemID, upgrades);
 					isWeapon = heirloom.isWeapon;
-					
+
 					local heirloomHeader;
 					for i=1,upgrades,1 do
 						-- Create a non-collectible version of the heirloom item itself to hold the upgrade within the token
 						heirloomHeader = CloneData(heirloom);
 						heirloomHeader.collectible = false;
-						-- put the upgrade object into the header heirloom object					
+						-- put the upgrade object into the header heirloom object
 						heirloomHeader.g = { setmetatable({ ["level"] = i, ["heirloomLevelID"] = itemID, ["u"] = heirloom.u, ["f"] = heirloom.f }, app.BaseHeirloomLevel) };
 
 						-- add the header into the appropriate upgrade token
@@ -7546,7 +7546,7 @@ app.CacheHeirlooms = function()
 			end
 		end
 	end
-	
+
 	-- build groups for each upgrade token
 	-- and copy the set of upgrades into the cached versions of the upgrade tokens so they therefore exist in the main list
 	-- where the sources of the upgrade tokens exist
@@ -7937,7 +7937,7 @@ local itemFields = {
 			rawset(t, "modItemID", t.itemID + (t.modID / 100));
 		else
 			rawset(t, "modItemID", t.itemID);
-		end		
+		end
 		return rawget(t, "modItemID");
 	end,
 	["trackableAsQuest"] = app.ReturnTrue,
@@ -8239,7 +8239,7 @@ itemHarvesterFields.text = function(t)
 			return link;
 		end
 	end
-	
+
 	t.retries = (t.retries or 0) + 1;
 	if t.retries > 30 then
 		rawset(t, "collected", true);
@@ -8631,7 +8631,7 @@ local RefreshMounts = function(newMountID)
 	-- Think learning multiple mounts at once or multiple mounts without leaving combat
 	-- would fail to update all the mounts, so probably just best to check all mounts if this is triggered
 	-- plus it's not laggy now to do that so it should be fine
-	
+
 	-- if newMountID then
 	-- 	local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(newMountID);
 	-- 	if spellID and isCollected then
@@ -8812,7 +8812,7 @@ local npcFields = {
 	["creatureID"] = function(t)	-- TODO: Do something about this, it's silly.
 		return t.npcID;
 	end,
-	
+
 	["iconAsDefault"] = function(t)
 		return (t.parent and t.parent.headerID == -2 and "Interface\\Icons\\INV_Misc_Coin_01")
 			or app.DifficultyIcons[GetRelativeValue(t, "difficultyID") or 1];
@@ -8976,7 +8976,7 @@ local objectFields = {
 	["model"] = function(t)
 		return app.ObjectModels[t.objectID];
 	end,
-	
+
 	["nameAsAchievement"] = function(t)
 		return NPCNameFromID[t.npcID] or select(2, GetAchievementInfo(t.achievementID));
 	end,
@@ -9356,7 +9356,7 @@ local questFields = {
 	-- Questionable Fields... TODO: Investigate if necessary.
 	["altcollected"] = function(t)
 		-- local LOG = t.questID == 8753 and t.questID;
-		-- if LOG then print(LOG,"checking altCollected") end		
+		-- if LOG then print(LOG,"checking altCollected") end
 		-- determine if an altQuest is considered completed for this quest for this character
 		if t.altQuests then
 			for i,questID in ipairs(t.altQuests) do
@@ -9442,7 +9442,7 @@ app.CollectibleAsQuest = function(t)
 			-- must not be a breadcrumb unless collecting breadcrumbs and is available OR collecting breadcrumbs and in Account-mode OR in Party Sync
 			and (app.MODE_DEBUG
 				or (not t.isBreadcrumb and not t.DisablePartySync)
-				or (app.CollectibleBreadcrumbs and 
+				or (app.CollectibleBreadcrumbs and
 					(app.MODE_ACCOUNT
 					or (app.IsInPartySync and not t.DisablePartySync)
 					or not t.breadcrumbLockedBy)))
@@ -9538,7 +9538,7 @@ app.TryPopulateQuestRewards = function(questObject)
 									MergeObject(item.g, CloneData(data));
 								end
 							end
-							
+
 							-- at least one reward exists, so clear the missing data
 							questObject.missingItem = 0;
 							-- don't let cached groups pollute potentially inaccurate raw Data
@@ -9566,7 +9566,7 @@ app.TryPopulateQuestRewards = function(questObject)
 				currencyID = select(4, GetQuestLogRewardCurrencyInfo(j, questObject.questID));
 				if currencyID then
 					-- if app.DEBUG_PRINT then print("TryPopulateQuestRewards_currencies:found",questObject.questID,currencyID,questObject.missingCurr) end
-					
+
 					currencyID = tonumber(currencyID);
 					local item = { ["currencyID"] = currencyID, ["expanded"] = false, };
 					_cache = SearchForField("currencyID", currencyID);
@@ -13909,7 +13909,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 				}
 			}
 		};
-		
+
 		local function DelayedUpdateCoroutine()
 			while window.delayRemaining > 0 do
 				coroutine.yield();
@@ -14079,7 +14079,7 @@ function app:GetDataCache()
 			db.headerID = -3;
 			table.insert(g, db);
 		end
-		
+
 		-- Factions (Dynamic)
 		--[[
 		-- TODO: Not right now, we have a section already. Refactor that section and use this instead.
@@ -14091,7 +14091,7 @@ function app:GetDataCache()
 		factionsCategory.text = L["FACTIONS"];
 		table.insert(g, factionsCategory);
 		]]--
-		
+
 		-- Flight Paths (Dynamic)
 		local flightPathsCategory = {};
 		flightPathsCategory.g = {};
@@ -14598,7 +14598,7 @@ function app:GetDataCache()
 		BuildGroups(allData, allData.g);
 		app:GetWindow("Unsorted").data = allData;
 		CacheFields(allData);
-		
+
 		-- Update Faction data.
 		--[[
 		-- TODO: Make a dynamic Factions section. It works, but we have one already, so we don't need it.
@@ -14628,7 +14628,7 @@ function app:GetDataCache()
 		end
 		factionsCategory:OnUpdate();
 		]]--
-		
+
 		-- Update Flight Path data.
 		flightPathsCategory.OnUpdate = function(self)
 			for i,_ in pairs(fieldCache["flightPathID"]) do
@@ -15159,7 +15159,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 					self.data.instanceID and app.BaseInstance
 					or self.data.classID and app.BaseCharacterClass
 					or self.data.achID and app.BaseMapWithAchievementID or app.BaseMap);
-				
+
 				-- sort only the top layer of groups if not in an instance, force visible so sort goes through
 				-- print(GetInstanceInfo());
 				-- sort by name if not in an instance
@@ -15167,7 +15167,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 					self.data.visible = true;
 					SortGroup(self.data, "name", nil, false);
 				end
-					
+
 				-- Move all "isRaid" entries to the top of the list.
 				if results.g then
 					local top = {};
@@ -15185,7 +15185,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 
 				-- Expand all symlinks in the minilist for clarity
 				FillSymLinks(self.data, true);
-				
+
 				-- Check to see completion...
 				-- print("build groups");
 				BuildGroups(self.data, self.data.g);
@@ -16601,7 +16601,7 @@ app:GetWindow("Random", UIParent, function(self)
 				local method = app.GetDataMember("RandomSearchFilter", "Instance");
 				if method then
 					rerollOption.text = L["REROLL_2"] .. method;
-					method = L["SELECT"] .. method;
+					method = "Select" .. method;
 					local temp = self[method]() or {};
 					local totalWeight = 0;
 					for i,o in ipairs(temp) do
@@ -18709,15 +18709,15 @@ app.events.VARIABLES_LOADED = function()
 		AllTheThingsAD = { };
 		_G["AllTheThingsAD"] = AllTheThingsAD;
 	end
-	
+
 	-- Cache the Localized Category Data
 	AllTheThingsAD.LocalizedCategoryNames = setmetatable(AllTheThingsAD.LocalizedCategoryNames or {}, { __index = app.CategoryNames });
 	app.CategoryNames = nil;
-	
+
 	-- Cache the Localized Flight Path Data
 	--AllTheThingsAD.LocalizedFlightPathDB = setmetatable(AllTheThingsAD.LocalizedFlightPathDB or {}, { __index = app.FlightPathDB });
 	--app.FlightPathDB = nil;	-- TODO: Deprecate this.
-	
+
 	-- Cache information about the player.
 	local class, classID = UnitClassBase("player");
 	local raceName, race, raceID = UnitRace("player");
@@ -18745,7 +18745,7 @@ app.events.VARIABLES_LOADED = function()
 		-- Neutral Pandaren or... something else. Scourge? Neat.
 		app.FactionID = 0;
 	end
-	
+
 	LibStub:GetLibrary("LibDataBroker-1.1"):NewDataObject(L["TITLE"], {
 		type = "launcher",
 		icon = app.asset("logo_32x32"),
@@ -18800,7 +18800,7 @@ app.events.VARIABLES_LOADED = function()
 			end
 		end
 	end
-	
+
 	-- Convert over the deprecated AzeriteEssenceRanksPerCharacter table.
 	local azeriteEssenceRanksPerCharacter = GetDataMember("AzeriteEssenceRanksPerCharacter");
 	if azeriteEssenceRanksPerCharacter then
@@ -19237,7 +19237,7 @@ app.events.VARIABLES_LOADED = function()
 		-- even though RefreshData starts a coroutine, this failed to get set one time when called after the coroutine started...
 		app.IsReady = true;
 		-- print("ATT is Ready!");
-		
+
 		RefreshSaves();
 
 		if needRefresh then

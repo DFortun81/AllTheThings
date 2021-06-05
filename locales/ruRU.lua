@@ -178,7 +178,6 @@ local L = app.L;
 	L.CHANGE_SEARCH_FILTER = "Изменение Фильтра для Поиска";
 	L.CHANGE_SEARCH_FILTER_DESC = "Нажмите, чтобы изменить фильтр для поиска.";
 	L.REROLL_2 = "Повторный бросок: ";
-	L.SELECT = "Выбор";
 	L.NOTHING_TO_SELECT_FROM = "Не из чего делать случайный выбор.";
 	L.NO_SEARCH_METHOD = "Не выбран метод для поиска.";
 	L.PROFESSION_LIST = "Список Профессий";

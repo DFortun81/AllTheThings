@@ -190,7 +190,6 @@ app.L = {
 	["CHANGE_SEARCH_FILTER"] = "Change Search Filter";
 	["CHANGE_SEARCH_FILTER_DESC"] = "Click this to change your search filter.";
 	["REROLL_2"] = "Reroll: ";
-	["SELECT"] = "Select";
 	["NOTHING_TO_SELECT_FROM"] = "There was nothing to randomly select from.";
 	["NO_SEARCH_METHOD"] = "No search method specified.";
 	["PROFESSION_LIST"] = "Profession List";

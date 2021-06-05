@@ -180,7 +180,6 @@ local L = app.L;
 	L.CHANGE_SEARCH_FILTER = "更改搜索过滤";
 	L.CHANGE_SEARCH_FILTER_DESC = "单击此按钮可更改搜索过滤.";
 	--TODO: L.REROLL_2 = "Reroll: ";
-	L.SELECT = "选择";
 	L.NOTHING_TO_SELECT_FROM = "没有什么可以随意选择的.";
 	L.NO_SEARCH_METHOD = "未指定搜索方法.";
 	L.PROFESSION_LIST = "专业列表";
