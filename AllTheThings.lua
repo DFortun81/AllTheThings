@@ -19152,6 +19152,11 @@ app.events.VARIABLES_LOADED = function()
 			53043, -- Vulture's Nest (Mission Completion)
 			53044,	-- Vulture's Nest (BFA Alliance Outpost Unlock)
 
+		--	Shard Labor
+			61229,	-- forging the Crystal Mallet of the Heralds
+			61191,	-- ringing the Vesper of the Silver Wind
+			61183,	-- looting the Gift of the Silver Wind
+
 			-- etc.
 		}) do
 			-- If this Character has the Quest completed and it is not marked as completed for Account or not for specific Character
