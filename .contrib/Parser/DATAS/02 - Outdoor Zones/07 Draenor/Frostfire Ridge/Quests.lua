@@ -1101,6 +1101,8 @@ _.Zones =
 					["provider"] = { "o", 224306 },	-- Broken Chains
 				}),
 				q(37291, {	-- Thunderlord Invasion
+					["description"] = "This cannot be acquired with a Level 3 Garrison.",
+					["isBreadcrumb"] = true,
 					["maps"] = { 590 },	-- Garrison
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 36567,	-- Bigger is Better
