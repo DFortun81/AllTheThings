@@ -7,7 +7,7 @@ _.GearSets =
 	n(-254, {	-- Heritage Armor
 		gs(1742, {	-- Heritage of the Zandalari
 			["races"] = { ZANDALARI },
-			["g"] = {   
+			["g"] = {
 				q(53721, {    -- Heritage of the Zandalari
 					i(164993),    -- Zandalari Mask
 					i(164994),    -- Zandalari Pauldrons

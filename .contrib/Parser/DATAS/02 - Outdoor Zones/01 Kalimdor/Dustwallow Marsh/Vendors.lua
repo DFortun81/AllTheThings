@@ -87,7 +87,7 @@ _.Zones =
 				n(4879,  {	-- Ogg'marr <Butcher>
 					["coord"] = { 36.6, 31.0, 70 },
 					["races"] = HORDE_ONLY,
-					["g"] = { 
+					["g"] = {
 						i(12232),	-- Recipe: Carrion Surprise
 						i(12239),	-- Recipe: Dragonbreath Chili
 						i(20075),	-- Recipe: Heavy Crocolisk Stew

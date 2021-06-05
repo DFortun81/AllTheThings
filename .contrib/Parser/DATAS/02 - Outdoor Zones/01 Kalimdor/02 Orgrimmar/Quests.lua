@@ -1814,10 +1814,10 @@ _.Zones =
 					["lvl"] = lvlsquish(50, 20, 50),
 				}),
 				-- #endif
-				
-				
-				
-				-- THE GREAT SOMEONE ELSE DEAL WITH THIS MESS I DONT HAVE TIME SECTION
+
+
+
+				-- TODO: THE GREAT SOMEONE ELSE DEAL WITH THIS MESS I DONT HAVE TIME SECTION
 				-- These were taken from elsewhere, they are breadcrumb quests. Please use the maps tech to link them, NOT DUPLICATE THEM.
 				q(28299, {	-- Meet with Kranosh
 					["isBreadcrumb"] = true,
@@ -1841,7 +1841,6 @@ _.Zones =
 					["coord"] = { 86.0, 15.6, 90 },	-- Kaal Soulreaper (Undercity)
 					["races"] = HORDE_ONLY,
 				}),
-				
 				q(28303, {	-- Meet with Master Pyreanor
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 43795 },	-- Aponi Brightmane
@@ -1864,7 +1863,6 @@ _.Zones =
 					["coord"] = { 57.8, 90.2, 90 },	-- Champion Cyssa Dawnrose (Undercity)
 					["races"] = { BLOODELF },
 				}),
-				
 				q(28297, {	-- Meet with Ormak Grimshot
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 3039 },	-- Holt Thunderhorn
@@ -1887,7 +1885,6 @@ _.Zones =
 					["coord"] = { 49.6, 29.0, 90 },	-- Apolos (Undercity)
 					["races"] = HORDE_ONLY,
 				}),
-				
 				q(28301, {	-- Meet with Terga Earthbreaker
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 51639 },	-- Kador Cloudsong
@@ -1903,7 +1900,6 @@ _.Zones =
 					["classes"] = { SHAMAN },
 					["lvl"] = 50,
 				}),
-				
 				q(28300, {	-- Meet with Ureda / Meet with Feenix Arcshine
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 3047 },	-- Archmage Shymm
@@ -1926,7 +1922,6 @@ _.Zones =
 					["coord"] = { 85.2, 14.2, 90 },	-- Kaelystia Hatebringer (Undercity)
 					["races"] = HORDE_ONLY,
 				}),
-				
 				q(27298, {	-- Seek Out Master Pyreanor
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 43795 },	-- Aponi Brightmane
@@ -1949,7 +1944,6 @@ _.Zones =
 					["coord"] = { 57.8, 90.2, 90 },	-- Champion Cyssa Dawnrose (Undercity)
 					["races"] = { BLOODELF },
 				}),
-				
 				q(27280, {	-- The Earthbreaker Calls
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 51639 },	-- Kador Cloudsong
@@ -1965,7 +1959,6 @@ _.Zones =
 					["classes"] = { SHAMAN },
 					["lvl"] = 20,
 				}),
-				
 				q(27279, {	-- The Shattered Hand
 					["provider"] = { "n", 16684 },	-- Zelanis
 					["coord"] = { 79.4, 52.0, SILVERMOON_CITY },
@@ -1981,7 +1974,6 @@ _.Zones =
 					["coord"] = { 84.6, 73.2, 90 },	-- Gregory Charles (Undercity)
 					["races"] = HORDE_ONLY,
 				}),
-				
 				q(28302, {	-- Meet with Sunwalker Atohmo
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 43795 },	-- Aponi Brightmane
@@ -1998,9 +1990,9 @@ _.Zones =
 				}),
 				-- END SECTION OF INSANITY, CRIEVE WILL COME BACK FOR YOU LATER. TOUCH AT YOUR OWN PERIL, IT IS MADNESS.
 				-- That said, feel free to ask how I want this done and how I did the other ones. - Crieve
-				
-				
-				
+
+
+
 				q(28296, {	-- Meetup with the Caravan
 					["sourceQuests"] = { 28293 },	-- That's No Pyramid!
 					["isBreadcrumb"] = true,

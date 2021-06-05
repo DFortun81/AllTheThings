@@ -59,13 +59,13 @@ _.Holidays =
 					["coord"] = { 33.91, 81.83, 81 },	-- Senior Sergeant Kai'jin
 				})),
 				a(q(45735, {	-- Lean Shanks [A]
-					["lvl"] = 100,	
+					["lvl"] = 100,
 					["repeatable"] = true,
 					["provider"] = { "n", 117434 },	-- Master Sergeant Fizzlebolt
 					["coord"] = { 34.01, 80.47, 81 },	-- Master Sergeant Fizzlebolt
 				})),
 				h(q(45643, {	-- Lean Shanks [H]
-					["lvl"] = 100,	
+					["lvl"] = 100,
 					["repeatable"] = true,
 					["provider"] = { "n", 117432 },	-- Senior Sergeant Kai'jin
 					["coord"] = { 33.91, 81.83, 81 },	-- Senior Sergeant Kai'jin

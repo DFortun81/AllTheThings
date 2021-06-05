@@ -242,7 +242,7 @@ _.WorldEvents =
 								{ "c", 1166, 1000 },	-- 1,000x Timewarped Badge
 								{ "i", 33226, 450 },	-- 450x   Tricky Treat
 							},
-							["sym"] = { { "select", "itemID", 167731 } },	-- Fake select for whatever is cached for itself	
+							["sym"] = { { "select", "itemID", 167731 } },	-- Fake select for whatever is cached for itself
 						}),
 						i(167732, {	-- Battle-Hardened Heirloom Scabbard
 							["cost"] = {

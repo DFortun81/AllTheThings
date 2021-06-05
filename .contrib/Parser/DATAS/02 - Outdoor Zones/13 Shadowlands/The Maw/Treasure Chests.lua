@@ -48,7 +48,9 @@ _.Zones =
 					["description"] = "This chest does not glow or sparkle.",
 					["questID"] = 62682,
 					["coords"] = {
-						{ 65.7, 61.2, THE_MAW },	-- first time i found this it was at roughly 67.3, 49.0 - unsure if it has multiple coords or was moved
+						{ 65.7, 61.2, THE_MAW },
+						
+						{ 67.7, 53.1, THE_MAW },
 						{ 68.2, 48.1, THE_MAW },
 					},
 					["g"] = {

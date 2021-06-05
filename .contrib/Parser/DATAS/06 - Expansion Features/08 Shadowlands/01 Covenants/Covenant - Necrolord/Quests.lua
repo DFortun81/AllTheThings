@@ -866,7 +866,6 @@ _.ExpansionFeatures =
 						["coord"] = { 46.5, 42.2, 1698 },
 						["isWeekly"] = true,
 					}),
-					
 				})),
 			},
 		}),

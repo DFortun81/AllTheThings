@@ -323,7 +323,7 @@ _.Zones =
 					["provider"] = { "n", 33284 },	-- Truun
 					["coord"] = { 42.2, 15.2, 10 },
 					["sourceQuest"] = 13621,	-- Gorat's Vengeance
-					["races"] = HORDE_ONLY,	
+					["races"] = HORDE_ONLY,
 				}),
 				q(13969, {	-- Grol'dom's Missing Kodo
 					["provider"] = { "n", 5907 },	-- Kranal Fiss

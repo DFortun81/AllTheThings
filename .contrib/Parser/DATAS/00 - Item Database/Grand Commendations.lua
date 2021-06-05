@@ -251,60 +251,60 @@ i(146939, 1894);	-- Wardens Insignia [The Wardens]
 		i(168825, 2395);	-- Rich Jelly (+80)
 		i(168828, 2395);	-- Royal Jelly (+160)
 		i(168822, 2395);	-- Thin Jelly (+20)
-	
+
 	-- Rajani
 		i(173375, 2415);	-- Rajani Insignia (+250, BoP)
 		i(173374, 2415);	-- Rajani Insignia (+250, BoA)
-		
+
 	-- Rustbolt Resistance
 		i(173736, 2391);	-- Layered Information Kernel of E-steam (+250, Rustbolt Resistance)
 		i(174521, 2391);	-- Transferable Kernel of E-steam (+250, Rustbolt Resistance)
-	
+
 	-- Nazjatar
 		i(173948, 2373);	-- Glittering Abyssal Conch (Unshackled)
 		i(173947, 2400);	-- Glittering Abyssal Conch (Waveblade Ankoan)
 		i(174523, 2373);	-- Waveswept Abyssal Conch (Unshackled)
 		i(174522, 2400);	-- Waveswept Abyssal Conch (Waveblade Ankoan)
-	
+
 	-- For the rest of these, the first line is the quest item and the second line is the BoA token awarded by the quest.
 	-- Currently commenting out the quest item from this file and leave just the token in, because that's the part that actually gives reputation.  These used to be a simple quest item > starts quest > quest gives reputation exchange, and the token rewards were added in 8.3.
-	
+
 	-- 7th Legion
 	--	i(163617, 2159);	-- Rusted Alliance Insignia
 		i(174507, 2159);	-- Fallen Soldier's Insignia (A)
-	
+
 	-- Champions of Azeroth
 	--	i(163217, 2164);	-- Azeroth's Tear
 		i(174502, 2164);	-- Tear of Azeroth
-	
+
 	-- Honorbound
 	--	i(163621, 2157);	-- Rusted Horde Insignia
 		i(174508, 2157);	-- Fallen Soldier's Insignia (H)
-	
+
 	-- Order of Embers
 	--	i(163614, 2161);	-- Exotic Spices
 		i(174503, 2161);	-- Exotically Spiced Carrot
-	
+
 	-- Proudmoore Admiralty
 	--	i(163616, 2160);	-- Dented Coin
 		i(174504, 2160);	-- Proudmoore War Copper
-	
+
 	-- Storm's Wake
 	--	i(163615, 2162);	-- Lost Sea Scroll
 		i(174505, 2162);	-- Tide-Speaker's Tome
-	
+
 	-- Talanji's Expedition
 	--	i(163619, 2156);	-- Golden Beetle
 		i(174506, 2156);	-- Golden Insect Wings
-	
+
 	-- Tortollan Seekers
 	--	i(166501, 2163);	-- Soggy Page
 		i(174519, 2163);	-- Verdant Hills of Chokingvine - Page 17
-	
+
 	-- Voldunai
 	--	i(163618, 2158);	-- Shimmering Shell
 		i(174501, 2158);	-- Ornate Voldunai Jewelry
-	
+
 	-- Zandalari Empire
 	--	i(163620, 2103);	-- Island Flotsam
 		i(174518, 2103);	-- Jani Figurine

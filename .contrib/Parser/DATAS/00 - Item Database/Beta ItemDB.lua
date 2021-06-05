@@ -522,7 +522,7 @@
 
 -- -- Spears
 -- -- i(XXX, 30);	-- Item
-						
+
 -- -- Guns
 -- i(178735, 31);	-- Blight Belcher
 -- i(177637, 31);	-- Sinfall Arquebus
@@ -559,7 +559,7 @@
 -- i(175739, 51);	-- Reclaimed Maldraxxi Choker
 -- i(175741, 51);	-- Gormgris Gorget
 -- i(175737, 51);	-- Samu's Inkwell Pendant
--- i(178827, 51);	-- Sin Stained Pendant			
+-- i(178827, 51);	-- Sin Stained Pendant
 -- i(178707, 51);	-- Trailspinner Pendant
 -- i(180115, 51);	-- Azure-Venom Choker
 -- i(183040, 51);	-- Charm of Eternal Winter

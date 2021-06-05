@@ -520,5 +520,5 @@ _.ExpansionFeatures =
 				},
 			}),
 		}),
-	}),	
+	}),
 };

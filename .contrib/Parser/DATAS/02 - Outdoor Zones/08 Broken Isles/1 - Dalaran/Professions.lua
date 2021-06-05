@@ -10,7 +10,7 @@ local STARFISH_ON_A_STRING = 138962;		-- Starfish on a String
 local TINY_LITTLE_GRABBING_APPARATUS = 138963;	-- Tiny Little Grabbing Apparatus
 local WISH_CRYSTAL = 138960;				-- Wish Crystal
 local ALL_LURES = {
-	ALCHEMICAL_BONDING_AGENT,	
+	ALCHEMICAL_BONDING_AGENT,
 	AURIPHAGIC_SARDINE,
 	GLOB_OF_REALLY_STICKY_GLUE,
 	HYPERMAGNETIC_LURE,
@@ -50,7 +50,7 @@ Queen Azshara's Royal Seal
 Senegos' Ancient Coin
 Spiritwalker Ebonhorn's Coin
 ]]
--- AURIPHAGIC_SARDINE 
+-- AURIPHAGIC_SARDINE
 --[[
 Blingtron's Botcoin
 First Arcanist Thalyssra's Coin
@@ -115,7 +115,7 @@ Illidan's Coin
 Jace Darkweaver's Coin
 Jarod Shadowsong's Coin
 Nathanos Blightcaller's Coin
-Genn Greymane's Coin 
+Genn Greymane's Coin
 ]]
 -- WISH_CRYSTAL
 --[[

@@ -58,7 +58,6 @@ _.Zones =
 						{ "i", 102285, 1 },	-- Timeless Cloth Boots
 					},
 				}),
-				
 				i(101901, {	-- Cloudscorcher Cowl
 					["cost"] = {
 						{ "i", 103982, 1 },	-- Burden of Eternity
@@ -107,7 +106,7 @@ _.Zones =
 						{ "i", 102285, 1 },	-- Timeless Cloth Boots
 					},
 				}),
-				
+
 				-- Leather
 				i(101953, {	-- Cranefeather Hood
 					["cost"] = {
@@ -157,7 +156,6 @@ _.Zones =
 						{ "i", 102278, 1 },	-- Timeless Leather Boots
 					},
 				}),
-				
 				i(101874, {	-- Fire-Chanter Hood
 					["cost"] = {
 						{ "i", 103982, 1 },	-- Burden of Eternity
@@ -206,7 +204,7 @@ _.Zones =
 						{ "i", 102278, 1 },	-- Timeless Leather Boots
 					},
 				}),
-				
+
 				-- Mail
 				i(101931, {	-- Crimsonscale Helm
 					["cost"] = {
@@ -256,7 +254,6 @@ _.Zones =
 						{ "i", 102271, 1 },	-- Timeless Mail Boots
 					},
 				}),
-				
 				i(101923, {	-- Ordon Legend-Keeper Helm
 					["cost"] = {
 						{ "i", 103982, 1 },	-- Burden of Eternity
@@ -305,7 +302,7 @@ _.Zones =
 						{ "i", 102271, 1 },	-- Timeless Mail Boots
 					},
 				}),
-				
+
 				-- Plate
 				i(101882, {	-- Cliffbreaker Helm
 					["cost"] = {
@@ -355,7 +352,6 @@ _.Zones =
 						{ "i", 102264, 1 },	-- Timeless Plate Boot
 					},
 				}),
-				
 				i(101942, {	-- Elder Tortoiseshell Helm
 					["cost"] = {
 						{ "i", 103982, 1 },	-- Burden of Eternity
@@ -404,7 +400,6 @@ _.Zones =
 						{ "i", 102264, 1 },	-- Timeless Plate Boot
 					},
 				}),
-				
 				i(101911, {	-- Everbright Helm
 					["cost"] = {
 						{ "i", 103982, 1 },	-- Burden of Eternity
@@ -453,7 +448,7 @@ _.Zones =
 						{ "i", 102264, 1 },	-- Timeless Plate Boot
 					},
 				}),
-				
+
 				-- Cloaks
 				i(101889, {	-- Amaranthine Cloak
 					["cost"] = {
@@ -485,7 +480,7 @@ _.Zones =
 						{ "i", 102318, 1 },	-- Timeless Cloak
 					},
 				}),
-				
+
 				-- Necklaces
 				i(101894, {	-- Amaranthine Necklace
 					["cost"] = {
@@ -517,7 +512,7 @@ _.Zones =
 						{ "i", 104345, 1 },	-- Timeless Lavalliere
 					},
 				}),
-				
+
 				-- Rings
 				i(101898, {	-- Amaranthine Signet
 					["cost"] = {

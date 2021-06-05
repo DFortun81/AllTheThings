@@ -130,7 +130,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 40225 },	-- A Ring Reforged
 						["classes"] = { SHAMAN },
 						["coord"] = { 29.0, 69.1, 726 },
-						["provider"] = { "n", 96528 },	-- Farseer Nobundo					
+						["provider"] = { "n", 96528 },	-- Farseer Nobundo
 					}),
 					q(43002, {	-- Blessed Blade of the Windseeker
 						["sourceQuests"] = { 42977 },	-- Servant of the Windseeker
@@ -599,7 +599,7 @@ _.ExpansionFeatures =
 						["providers"] = {
 							{ "n", 96528 },	-- Farseer Nobundo
 							{ "n", 106316 }	-- Farseer Nobundo
-						},	
+						},
 					}),
 					q(41770, {	-- The Skies Above
 						["sourceQuests"] = { 43002 },	-- Blessed Blade of the Windseeker
@@ -620,7 +620,6 @@ _.ExpansionFeatures =
 						},
 						["classes"] = { SHAMAN },
 						["provider"] = { "n", 106001 },	-- Muln Earthfury
-						
 						["maps"] = { 207, 209 },	-- Deepholm
 					}),
 					q(39771, {	-- The Voice of Thunder (awards The Fist of Ra-Den elemental artifact)
@@ -787,7 +786,7 @@ _.HiddenQuestTriggers = {
 -- These quests never made it in.
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
-		
+
 	}),
 });
 -- #endif

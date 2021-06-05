@@ -1209,6 +1209,8 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					-- #if BEFORE BFA
 					["requireSkill"] = FIRST_AID,
+					-- #else
+					["requireSkill"] = TAILORING,
 					-- #endif
 					["cost"] = {
 						{ "i", 16991, 1 },	-- Triage Bandage

@@ -843,7 +843,7 @@ _.Zones =
 				}),
 				n(-385, {	-- Finger
 					i(139065),	-- Dreamwalker's Band
-				}),	
+				}),
 				n(-384, {	-- Neck
 					i(121284),	-- Nightmare Pendant
 				}),

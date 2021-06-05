@@ -187,20 +187,20 @@ _.Mounts =
 		i(186482, {	-- Elysian Aquilon
 			["customCollect"] = "SL_COV_KYR",	-- Kyrian covenant only
 		}),
-		i(180724, {	-- Enchanted Winterborn Runestag
-			["cost"] = { { "c", 1813, 5000 } },
-		}),
 		i(180722),	-- Enchanted Shadeleaf Runestag
+		i(180724),	-- Enchanted Winterborn Runestag
 		i(8588),	-- Emerald Raptor
 		i(161774, {	-- Expedition Bloodswarmer
 			["races"] = HORDE_ONLY,
 		}),
-		i(180768),	-- Eternal Phalynx of Humility
+		i(180768, {	-- Eternal Phalynx of Humility
+			["customCollect"] = "SL_COV_KYR",	-- Kyrian
+		}),
 		i(180767, {	-- Eternal Phalynx of Loyalty
-			["cost"] = { { "c", 1813, 2500 } },
+			["customCollect"] = "SL_COV_KYR",	-- Kyrian
 		}),
 		i(180765, {	-- Eternal Phalynx of Purity
-			["customCollect"] = "SL_COV_KYR",	-- Kyrian covenant only
+			["customCollect"] = "SL_COV_KYR",	-- Kyrian
 		}),
 		i(45590),	-- Exodar Elekk
 		i(45597),	-- Forsaken Warhorse

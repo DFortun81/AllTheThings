@@ -7,7 +7,7 @@ _.GearSets =
 	n(-254, {	-- Heritage Armor
 		gs(1680, {	-- Heritage of the Warsong
 			["races"] = { MAGHAR },
-			["g"] = {   
+			["g"] = {
 				q(51484, {    -- Heritage of the Warsong
 					i(160992),    -- Warsong Clan Helm
 					i(160993),    -- Warsong Clan Pauldrons

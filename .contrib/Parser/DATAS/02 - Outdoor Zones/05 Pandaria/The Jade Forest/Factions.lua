@@ -11,7 +11,6 @@ _.Zones =
 					["description"] = "Gain reputation with this faction by training a cloud serpent hatchling, and eventually you will earn either an Azure, Golden, or Jade Cloud Serpent mount.  More rewards are unlocked by reaching Revered and Exalted with the faction, including a toy, more mounts, and Jewelcrafting designs.\n\nThe quest chain begins with |cFFefc400Wild Things|r.\n\n",
 					["icon"] = "Interface\\Icons\\achievement_faction_serpentriders",
 					["g"] = {
-					
 					--	TODO:
 						-- verify if the following dailies exist independent of completion of other dailies:
 							-- Pooped (31716), got credit for this + the 31704 version of "Pooped" when completing 30150, "Sweet as Honey" *** MUST STILL HAVE A HATCHLING ***

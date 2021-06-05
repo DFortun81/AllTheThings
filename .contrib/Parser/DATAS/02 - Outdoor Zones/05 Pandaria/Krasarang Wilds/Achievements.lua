@@ -129,7 +129,7 @@ _.Zones =
 					},
 				}),
 				ach(6754, {	-- The Dark Heart of the Mogu
-					crit(2, {	-- The Lost Dynasty 
+					crit(2, {	-- The Lost Dynasty
 						["coord"] = { 52.96, 27.42, 418 },
 					}),
 				}),

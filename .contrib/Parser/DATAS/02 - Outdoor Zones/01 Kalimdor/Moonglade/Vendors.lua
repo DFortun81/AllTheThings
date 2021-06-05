@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(KALIMDOR, {		
+	m(KALIMDOR, {
 		m(80, {	-- Moonglade
 			n(VENDORS, {
 				n(12023, {	-- Darnall <Tailoring Supplies>

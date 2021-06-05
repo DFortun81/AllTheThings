@@ -138,7 +138,7 @@ _.Zones =
 							["maps"] = { 680 },	-- Suramar
 						}),
 						q(40678, {	-- Twisted Power
-							["sourceQuests"] = { 
+							["sourceQuests"] = {
 								43524,	-- Court of Stars: Literary Perfection
 								40675,	-- The Arcway: Rite of the Captain
 								43525,	-- Vault of the Wardens: Borrowing Without Asking
@@ -365,7 +365,7 @@ _.Zones =
 							["maps"] = { 627 },	-- Dalaran
 						}),
 						q(44004, {	-- Bringer of the Light
-							["sourceQuests"] = { 
+							["sourceQuests"] = {
 								44009,	-- A Falling Star (non-Paladin version)
 								44257,	-- A Falling Star (Paladin version)
 							},

@@ -270,6 +270,7 @@ app.L = {
 	["MAIN_ONLY_MODE_TOOLTIP"] = "Turn this setting on if you additionally want ATT to *pretend* that you've earned all shared appearances not locked by a different race or class.\n\nAs an example, if you have collected a Hunter-Only Tier Piece from ICC and there is a shared appearance from the raid without class/race restrictions, ATT will *pretend* that you've earned that source of the appearance as well.\n\nNOTE: Switching to a different race/class will incorrectly report that you've earned appearance sources that you haven't collected for that new chararacter when unlocked in this way.";
 	["ACCOUNT_MODE"] = "|Cff00ab00Account Mode|r (All)";
 	["ACCOUNT_MODE_TOOLTIP"] = "Turn this setting on if you want to track all of the Things for all of your characters regardless of class and race filters.\n\nUnobtainable filters still apply.";
+	["FACTION_MODE"] = "Only Current Faction";
 	["FACTION_MODE_TOOLTIP"] = "Turn this setting on if you want to see Account Mode data only for races and classes of your current faction.";
 	["PRECISION_SLIDER"] = "Level of Precision for Percentage";
 	["PRECISION_SLIDER_TOOLTIP"] = 'Use this to customize your desired level of precision in percentage calculations.\n\nDefault: 2';
@@ -364,8 +365,9 @@ app.L = {
 	["ALL_BUTTON_TOOLTIP"] = "Click this button to enable all equipment filters at once.";
 	["UNCHECK_ALL_BUTTON"] = "Uncheck All";
 	["UNCHECK_ALL_BUTTON_TOOLTIP"] = "Click this button to disable all equipment filters at once.";
-	["LEGACY_FILTERS_LABEL"] = "Legacy / Unobtainable Filters";
-	["LEGACY_FILTERS_TEMP_LABEL"] = "|CFFFFFFFFI'm going to completely rework how our Legacy, Unobtainable, and Seasonal filters work.\n\nComing Soon™.|r";
+	["CUSTOM_FILTERS_LABEL"] = "Automatic Filters";
+	["CUSTOM_FILTERS_EXPLAIN_LABEL"] = "|CFFFFFFFFThese filters are automatically applied based on your current character, but may be overridden by being checked, allowing you to see additional Things your character cannot currently collect.\nNone of these filters are ever enabled in Account or Debug modes regardless of the selections below.|r";
+	["CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT"] = "Enable this setting to forcibly show %s content even if it is not available to the current character.";
 
 	-- Unobtainables tab
 	["UNOBTAINABLES_TAB"] = "Unobtainables";
@@ -435,7 +437,6 @@ app.L = {
 	["FOR_UNSORTED_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see Source Locations which have not been fully sourced into the database.";
 	["WITH_WRAPPING_CHECKBOX"] = "Allow Source Wrapping",
 	["WITH_WRAPPING_CHECKBOX_TOOLTIP"] = "Enable this option to allow the Source lines to wrap within the tooltip.\nThis will ensure that the tooltips do not grow wider than necessary, but will unfortunately make the Source information harder to read in many situations.",
-	["MISC_LABEL"] = "Miscellaneous";
 	["SHOW_REMAINING_CHECKBOX"] = "Show Remaining Things";
 	["SHOW_REMAINING_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the number of items remaining instead of the progress over total.";
 	["PERCENTAGES_CHECKBOX"] = "Show Percentage Completion";
@@ -485,8 +486,8 @@ app.L = {
 
 	-- About tab
 	["ABOUT"] = "About";
-	["ABOUT_1"] = " |CFFFFFFFFis a collection tracking addon that shows you where and how to get everything in the game! We have a large community of users on our Discord (link at the bottom) where you can ask questions, submit suggestions as well as report bugs or missing items. If you find something collectible or a quest that isn't documented, you can tell us on the Discord, or for the more technical savvy, we have a Git that you may contribute directly to.\n\nWhile we do strive for completion, there's a lot of stuff getting added into the game each patch, so if we're missing something, please understand that we're a small team trying to keep up with changes as well as collect things ourselves. :D\n\nFeel free to ask me questions when I'm streaming and I'll try my best to answer it, even if it's not directly related to ATT (general WoW addon programming as well).\n\n- |r|Cffff8000Crieve|CFFFFFFFF\n\nPS: Check out All The Things Classic!\n\nYes, I intend to play Classic WoW, but between working full time and developing the two versions of the addon, there won't be a lot of time for raiding.\n\nNo, ATT is not the addon that places icons on your bag icons. That's CanIMogIt and Caerdon Wardrobe!\n\nWebsite for comparing Collections coming Soon™.|r";
-	["ABOUT_2"] = "Additional Contributors: |CFFFFFFFF(in order of joining the team)\nDaktar, Lucetia, Slumber, Gold, Avella, Aiue, Dead Serious, Oiche, Oxlotus, Eiltherune, Blueyleader, Iyanden, Pr3vention, BigBlaris, Talonzor, Heallie, Eckhardt, Boohyaka, Sadidorf, Sanctuari, Molkree, Runawaynow and the rest of the ALL THE THINGS Discord!\n\nSpecial Shoutout to AmiYuy (CanIMogIt) and Caerdon (Caerdon Wardrobe).|r  ";
+	["ABOUT_1"] = " |CFFFFFFFFis a collection tracking addon that shows you where and how to get everything in the game! We have a large community of users on our Discord (link at the bottom) where you can ask questions, submit suggestions as well as report bugs or missing items. If you find something collectible or a quest that isn't documented, you can tell us on the Discord, or for the more technical savvy, we have a Git that you may contribute directly to.\n\nWhile we do strive for completion, there's a lot of stuff getting added into the game each patch, so if we're missing something, please understand that we're a small team trying to keep up with changes as well as collect things ourselves. :D\n\nFeel free to ask me questions when I'm streaming and I'll try my best to answer it, even if it's not directly related to ATT (general WoW addon programming as well).\n\n- |r|Cffff8000Crieve|CFFFFFFFF\n\nPS: Check out All The Things Classic and TBC Classic!\n\nYes, I intend to play Classic WoW, but between working full time and developing the two versions of the addon, there won't be a lot of time for raiding.\n\nNo, ATT is not the addon that places icons on your bag icons. That's CanIMogIt and Caerdon Wardrobe!\n\nFor online collection comparing check out DataForAzeroth.com from shoogen!|r";
+	["ABOUT_2"] = "Additional Contributors: |CFFFFFFFF(in no particular order)\nDaktar, Lucetia, Slumber, Gold, Avella, Aiue, Dead Serious, Oiche, Oxlotus, Eiltherune, Blueyleader, Iyanden, Pr3vention, BigBlaris, Talonzor, Mogwai, Heallie, Eckhardt, Boohyaka, Sadidorf, Sanctuari, Molkree, Runawaynow and the rest of the ALL THE THINGS Discord!\n\nSpecial Shoutout to AmiYuy (CanIMogIt) and Caerdon (Caerdon Wardrobe).|r  ";
 	["ABOUT_3"] = "\n|CFFFFFFFFYou should absolutely download their addons to get the collection icons on items in your bags!|r";
 
 	-- Binding Localizations
@@ -2497,7 +2498,7 @@ app.L = {
 		{3, "|CFFFF0000The source of this item has been removed and is only available with the Black Market Auction House.|r", "Black Market AH [BMAH] (9)"}, -- There is Hope -- 9
 		{3, "|CFFFF0000Item from TCG card is no longer in print, but still purchaseable online, sometimes BMAH, and possibly AH.|r", "Trading Card  Game [TCG] (10)"}, -- There is Hope -- 10
 		{3, "|CFFFF0000This item is Bind on Pickup but can be obtained if you have access to the items to summon the boss.|r", "Requires Summoning Items (11)"}, -- There is Hope -- 11
-		{3, "|CFFFF0000This item requires Player vs Player activities or a currency related to those activities. |r", "Requires PvP (12)"}, -- There is Hope --, ""}, -- 12
+		{3, "|CFFFF0000This item or achievement requires Player vs Player activities or a currency related to those activities. |r", "Requires PvP (12)"}, -- There is Hope --, ""}, -- 12
 		{1, "|CFFFF0000Your followers are too high and the mission for the cache will no longer spawn.|r", "Legacy Cache (13)"}, -- 13
 		{3, "|CFFFF0000These items can't be purchased unless you have the required PvP Rating or were in the Top % of that season.|r", "PvP Elite/Gladiator (14)"}, -- 14
 		{1, "|CFFFF0000This item has a Source ID (for example, Tempest Keep Legendaries), but can't be learned (training recipes). |r", "Training Recipes / Unlearnable (15)"}, -- 15

@@ -2,7 +2,7 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 
-_.Holidays = 
+_.Holidays =
 {
 	holiday(235474, {	-- Midsummer Fire Festival
 		n(-139, {	-- Bosses

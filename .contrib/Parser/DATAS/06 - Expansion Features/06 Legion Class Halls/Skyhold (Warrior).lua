@@ -714,7 +714,7 @@ _.HiddenQuestTriggers = {
 -- These quests never made it in.
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
-		
+
 	}),
 });
 -- #endif

@@ -798,7 +798,7 @@ _.Instances = { tier(1, applyclassicphase(PHASE_FIVE, {	-- Classic
 							-- #endif
 						},
 					})),
-					
+
 					-- Enchants
 					i(20729),	-- Formula: Enchant Gloves - Fire Power
 					i(20728),	-- Formula: Enchant Gloves - Frost Power

@@ -254,6 +254,7 @@ local L = app.L;
 		--TODO: L.MAIN_ONLY_MODE_TOOLTIP = "Turn this setting on if you additionally want ATT to *pretend* that you've earned all shared appearances not locked by a different race or class.\n\nAs an example, if you have collected a Hunter-Only Tier Piece from ICC and there is a shared appearance from the raid without class/race restrictions, ATT will *pretend* that you've earned that source of the appearance as well.\n\nNOTE: Switching to a different race/class will incorrectly report that you've earned appearance sources that you haven't collected for that new chararacter when unlocked in this way.";
 		--TODO: L.ACCOUNT_MODE = "|Cff00ab00Account Mode|r (All)";
 		--TODO: L.ACCOUNT_MODE_TOOLTIP = "Turn this setting on if you want to track all of the Things for all of your characters regardless of class and race filters.\n\nUnobtainable filters still apply.";
+		--TODO: L.FACTION_MODE = "Only Current Faction";
 		--TODO: L.FACTION_MODE_TOOLTIP = "Turn this setting on if you want to see Account Mode data only for races and classes of your current faction.";
 		--TODO: L.PRECISION_SLIDER = "Level of Precision for Percentage";
 		--TODO: L.PRECISION_SLIDER_TOOLTIP = 'Use this to customize your desired level of precision in percentage calculations.\n\nDefault: 2';
@@ -348,8 +349,9 @@ local L = app.L;
 		--TODO: L.ALL_BUTTON_TOOLTIP = "Click this button to enable all equipment filters at once.";
 		--TODO: L.UNCHECK_ALL_BUTTON = "Uncheck All";
 		--TODO: L.UNCHECK_ALL_BUTTON_TOOLTIP = "Click this button to disable all equipment filters at once.";
-		--TODO: L.LEGACY_FILTERS_LABEL = "Legacy / Unobtainable Filters";
-		--TODO: L.LEGACY_FILTERS_TEMP_LABEL = "|CFFFFFFFFI'm going to completely rework how our Legacy, Unobtainable, and Seasonal filters work.\n\nComing Soon™.|r";
+		--TODO: L.CUSTOM_FILTERS_LABEL = "Automatic Filters";
+		--TODO: L.CUSTOM_FILTERS_EXPLAIN_LABEL = "|CFFFFFFFFThese filters are automatically applied based on your current character, but may be overridden by being checked, allowing you to see additional Things your character cannot currently collect.\nNone of these filters are ever enabled in Account or Debug modes regardless of the selections below.|r";
+		--TODO: L.CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "Enable this setting to forcibly show %s content even if it is not available to the current character.";
 
 	-- Unobtainables tab
 		--TODO: L.UNOBTAINABLES_TAB = "Unobtainables";
@@ -469,8 +471,8 @@ local L = app.L;
 
 	-- About tab
 		--TODO: L.ABOUT = "About";
-		--TODO: L.ABOUT_1 = " |CFFFFFFFFis a collection tracking addon that shows you where and how to get everything in the game! We have a large community of users on our Discord (link at the bottom) where you can ask questions, submit suggestions as well as report bugs or missing items. If you find something collectible or a quest that isn't documented, you can tell us on the Discord, or for the more technical savvy, we have a Git that you may contribute directly to.\n\nWhile we do strive for completion, there's a lot of stuff getting added into the game each patch, so if we're missing something, please understand that we're a small team trying to keep up with changes as well as collect things ourselves. :D\n\nFeel free to ask me questions when I'm streaming and I'll try my best to answer it, even if it's not directly related to ATT (general WoW addon programming as well).\n\n- |r|Cffff8000Crieve|CFFFFFFFF\n\nPS: Check out All The Things Classic!\n\nYes, I intend to play Classic WoW, but between working full time and developing the two versions of the addon, there won't be a lot of time for raiding.\n\nNo, ATT is not the addon that places icons on your bag icons. That's CanIMogIt and Caerdon Wardrobe!\n\nWebsite for comparing Collections coming Soon™.|r";
-		--TODO: L.ABOUT_2 = "Additional Contributors: |CFFFFFFFF(in order of joining the team)\nDaktar, Lucetia, Slumber, Gold, Avella, Aiue, Dead Serious, Oiche, Oxlotus, Eiltherune, Blueyleader, Iyanden, Pr3vention, BigBlaris, Talonzor, Heallie, Eckhardt, Boohyaka, Sadidorf, Sanctuari, Molkree, Runawaynow and the rest of the ALL THE THINGS Discord!\n\nSpecial Shoutout to AmiYuy (CanIMogIt) and Caerdon (Caerdon Wardrobe).|r  ";
+		--TODO: L.ABOUT_1 = " |CFFFFFFFFis a collection tracking addon that shows you where and how to get everything in the game! We have a large community of users on our Discord (link at the bottom) where you can ask questions, submit suggestions as well as report bugs or missing items. If you find something collectible or a quest that isn't documented, you can tell us on the Discord, or for the more technical savvy, we have a Git that you may contribute directly to.\n\nWhile we do strive for completion, there's a lot of stuff getting added into the game each patch, so if we're missing something, please understand that we're a small team trying to keep up with changes as well as collect things ourselves. :D\n\nFeel free to ask me questions when I'm streaming and I'll try my best to answer it, even if it's not directly related to ATT (general WoW addon programming as well).\n\n- |r|Cffff8000Crieve|CFFFFFFFF\n\nPS: Check out All The Things Classic and TBC Classic!\n\nYes, I intend to play Classic WoW, but between working full time and developing the two versions of the addon, there won't be a lot of time for raiding.\n\nNo, ATT is not the addon that places icons on your bag icons. That's CanIMogIt and Caerdon Wardrobe!\n\nFor online collection comparing check out DataForAzeroth.com from shoogen!|r";
+		--TODO: L.ABOUT_2 = "Additional Contributors: |CFFFFFFFF(in no particular order)\nDaktar, Lucetia, Slumber, Gold, Avella, Aiue, Dead Serious, Oiche, Oxlotus, Eiltherune, Blueyleader, Iyanden, Pr3vention, BigBlaris, Talonzor, Mogwai, Heallie, Eckhardt, Boohyaka, Sadidorf, Sanctuari, Molkree, Runawaynow and the rest of the ALL THE THINGS Discord!\n\nSpecial Shoutout to AmiYuy (CanIMogIt) and Caerdon (Caerdon Wardrobe).|r  ";
 		--TODO: L.ABOUT_3 = "\n|CFFFFFFFFYou should absolutely download their addons to get the collection icons on items in your bags!|r";
 
 	-- Binding Localizations

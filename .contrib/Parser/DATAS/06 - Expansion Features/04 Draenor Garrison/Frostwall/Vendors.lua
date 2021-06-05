@@ -2,7 +2,6 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-	
 WOD_REMOVED_RECIPE_STR = "In 9.0.1, Blizzard made this recipe unlearnable but the item still appears on the vendor even though it has no use and is no longer collectible.";
 
 _.ExpansionFeatures =

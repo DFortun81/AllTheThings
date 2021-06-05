@@ -897,7 +897,7 @@ _.Zones =
 					["modelScale"] = 3,
 					["g"] = {
 						i(168946, {	-- Bundle of Recyclable Parts
-							["cost"] = { 
+							["cost"] = {
 								{ "i", 168217, 30 },	-- 30x Hardened Springs
 								{ "i", 168216, 10 },	-- 10x Tempered Plating
 								{ "i", 168215, 5 },	-- 5x Machined Gear Assembly

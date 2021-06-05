@@ -90,7 +90,7 @@ _.ExpansionFeatures =
 						["maps"] = { 634 },	-- Stormheim
 					}),
 					q(42656, {	-- Azure Weaponry
-						["sourceQuests"] = { 
+						["sourceQuests"] = {
 							42654,	-- Darkheart Thicket: Nightmare Oak
 							42655,	-- Ore Under the Sea
 						},
@@ -136,7 +136,7 @@ _.ExpansionFeatures =
 						["coord"] = { 43.4, 26.4, 739 },
 					}),
 					q(42414, {	-- Champion: Addie Fizzlebog
-						["sourceQuests"] = { 
+						["sourceQuests"] = {
 							42403,	-- Highmountain Hunters
 							40228,	-- Scout It Out
 						},
@@ -168,7 +168,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(42413, {	-- Champion: Hemet Nesingwary
-						["sourceQuests"] = { 
+						["sourceQuests"] = {
 							42403,	-- Highmountain Hunters
 							40228,	-- Scout It Out
 						},
@@ -339,7 +339,7 @@ _.ExpansionFeatures =
 						["maps"] = { 627 },	-- Dalaran
 					}),
 					q(42659, {	-- In Defense of Dalaran
-						["sourceQuests"] = { 
+						["sourceQuests"] = {
 							44680,	-- Leading by Example
 							42133,	-- Same Day Delivery
 						},
@@ -562,7 +562,7 @@ _.ExpansionFeatures =
 						["coord"] = { 42.9, 46.9, 739 },
 					}),
 					q(46235, {	-- Secured Surroundings
-						["sourceQuests"] = { 
+						["sourceQuests"] = {
 							46060,	-- Salvation
 							45557,	-- Unnatural Consequences
 						},
@@ -725,7 +725,7 @@ _.ExpansionFeatures =
 						["coord"] = { 41.6, 74.8, 739 },
 					}),
 					q(42388, {	-- Urgent Summons
-						["sourceQuests"] = { 
+						["sourceQuests"] = {
 							42387,	-- Assassin Entrapment
 							42386,	-- Rising Troubles
 						},
@@ -964,7 +964,7 @@ _.HiddenQuestTriggers = {
 -- These quests never made it in.
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
-		
+
 	}),
 });
 -- #endif

@@ -369,7 +369,7 @@ _.ExpansionFeatures =
 						["classes"] = { PRIEST },
 						["coord"] = { 51.5, 47.7, 702 },
 						["provider"] = { "n", 110564 },	-- Alonsus Faol
-					}),	
+					}),
 					q(43392, {	-- Into the Void
 						["sourceQuest"] = 43391,	-- Secrets of the Void
 						["classes"] = { PRIEST },
@@ -688,7 +688,7 @@ _.HiddenQuestTriggers = {
 -- These quests never made it in.
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
-		
+
 	}),
 });
 -- #endif

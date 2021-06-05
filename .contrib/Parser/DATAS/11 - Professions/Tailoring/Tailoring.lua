@@ -5312,7 +5312,7 @@ _.ItemDB = {};
 
 -- Recipe Cache (for Validation)
 local recipeCache = {
-	
+
 };
 local function cacheRecipes(g)
 	if g and type(g) == "table" then
@@ -5351,7 +5351,7 @@ local itemrecipe = function(name, itemID, spellID, phase, timeline)
 		o.name = name;
 	end
 	_.ItemDB[itemID] = phase and applyclassicphase(phase, o) or o;
-	
+
 	-- Ensure that this recipe's spellID exists in the profession database.
 	if recipeCache and not recipeCache[o.spellID] then print("MISSING RECIPE", name, o.spellID); end
 	return o;
@@ -5386,8 +5386,8 @@ _.NeverImplemented = {};
 recipeCache = nil;	-- Disable the cache validation.
 --[[
 neverimplemented(itemrecipe("Pattern: ", , ));
-neverimplemented(recipe());	-- 
-neverimplemented(i());	-- 
+neverimplemented(recipe());	--
+neverimplemented(i());	--
 ]]
 
 -- Recipes that were created with the launch of the game, but never implemented. :(

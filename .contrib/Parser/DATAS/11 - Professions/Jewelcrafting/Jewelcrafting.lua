@@ -5416,7 +5416,7 @@ local itemrecipe = function(name, itemID, spellID, spellIDAfterCata, timeline)
 		o.name = name;
 	end
 	_.ItemDB[itemID] = applyclassicphase(TBC_PHASE_ONE, o);
-	
+
 	-- Ensure that this recipe's spellID exists in the profession database.
 	if recipeCache and not recipeCache[o.spellID] then print("MISSING RECIPE", name, o.spellID); end
 	return o;
@@ -5641,7 +5641,7 @@ i(31870, {	-- Design: Great Golden Draenite [Before 4.0.1] / Design: Rigid Azure
 	},
 }),
 i(31873, {	-- Design: Veiled Shadow Draenite
-	
+
 }),
 
 i(24165),	-- Design: Blazing Eternium Band

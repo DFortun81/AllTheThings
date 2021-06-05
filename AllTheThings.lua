@@ -3835,6 +3835,7 @@ app.BuildCost = function(group)
 				["text"] = L["COST"],
 				["description"] = L["COST_DESC"],
 				["icon"] = "Interface\\Icons\\INV_Misc_Coin_02",
+				["OnUpdate"] = app.AlwaysShowUpdate,
 				["g"] = { },
 			};
 		local costItem;
@@ -3842,15 +3843,21 @@ app.BuildCost = function(group)
 			-- print("Cost",c[1],c[2],c[3]);
 			costItem = nil;
 			if c[1] == "c" then
-				costItem = app.SearchForObjectClone("currencyID", c[2]) or app.CreateCurrencyClass(c[2]);
+				costItem = app.SearchForObject("currencyID", c[2]) or app.CreateCurrencyClass(c[2]);
 			elseif c[1] == "i" then
-				costItem = app.SearchForObjectClone("itemID", c[2]) or app.CreateItem(c[2]);
+				costItem = app.SearchForObject("itemID", c[2]) or app.CreateItem(c[2]);
 			end
 			if costItem then
-				-- costItem.total = c[3];
+				costItem = CloneData(costItem);
 				costItem.g = nil;
-				costItem.visible = true;
-				costItem.collectible = true;
+				costItem.collectible = false;
+				-- if c[3] then
+				-- 	costItem.total = c[3];
+				-- 	if group.collected then
+				-- 		costItem.progress = c[3];
+				-- 	end
+				-- end
+				costItem.OnUpdate = app.AlwaysShowUpdate;
 				MergeObject(costGroup.g, costItem);
 			end
 		end
@@ -4289,10 +4296,6 @@ app.SearchForObject = function(field, id)
 			end
 		end
 	end
-end
--- This method performs the SearchForObject logic and returns a cloned instance of the resulting group
-app.SearchForObjectClone = function(field, id)
-	return CloneData(app.SearchForObject(field, id));
 end
 
 -- Item Information Lib
@@ -5397,6 +5400,8 @@ end
 
 -- Tooltip Hooks
 (function()
+	local C_CurrencyInfo_GetCurrencyListInfo = C_CurrencyInfo.GetCurrencyListInfo;
+	local C_CurrencyInfo_GetCurrencyInfo = C_CurrencyInfo.GetCurrencyInfo;
 	--[[
 	for name,func in pairs(getmetatable(GameTooltip).__index) do
 		print(name);
@@ -5411,7 +5416,7 @@ end
 	]]--
 	local GameTooltip_SetCurrencyByID = GameTooltip.SetCurrencyByID;
 	GameTooltip.SetCurrencyByID = function(self, currencyID, count)
-		-- print("set currency tooltip");
+		-- print("set currency tooltip", currencyID, count)
 		-- Make sure to call to base functionality
 		GameTooltip_SetCurrencyByID(self, currencyID, count);
 		if CanAttachTooltips() then
@@ -5422,23 +5427,25 @@ end
 	end
 	local GameTooltip_SetCurrencyToken = GameTooltip.SetCurrencyToken;
 	GameTooltip.SetCurrencyToken = function(self, tokenID)
-		-- print("set currency token");
+		-- print("set currency token", tokenID)
 		-- this only runs once per tooltip show
 		-- Make sure to call to base functionality
 		GameTooltip_SetCurrencyToken(self, tokenID);
 		if CanAttachTooltips() then
 			-- Determine what kind of list data this is. (Blizzard is whack and using this API call for headers too...)
-			local info = C_CurrencyInfo.GetCurrencyListInfo(tokenID);
+			local info = C_CurrencyInfo_GetCurrencyListInfo(tokenID);
 			local name, isHeader = info.name, info.isHeader;
 			-- print(tokenID, name, isHeader);
+			-- app.PrintTable(info)
 			if not isHeader then
 				-- Determine which currencyID is the one that we're dealing with.
+				-- TODO: also need to check 'currencyIDAsCost'
 				local cache = SearchForFieldContainer("currencyID");
 				if cache then
 					-- We only care about currencies in the addon at the moment.
-					for currencyID, _ in pairs(cache) do
+					for currencyID,_ in pairs(cache) do
 						-- Compare the name of the currency vs the name of the token
-						local currencyInfo = C_CurrencyInfo.GetCurrencyInfo(currencyID)
+						local currencyInfo = C_CurrencyInfo_GetCurrencyInfo(currencyID);
 						if currencyInfo and currencyInfo.name == name then
 							-- self.shownThing = { "currencyID", currencyID };
 							-- make sure tooltip refreshes
@@ -5446,7 +5453,25 @@ end
 							AttachTooltipSearchResults(self, "currencyID:" .. currencyID, SearchForField, "currencyID", currencyID);
 							if app.Settings:GetTooltipSetting("currencyID") then self:AddDoubleLine(L["CURRENCY_ID"], tostring(currencyID)); end
 							self:Show();
-							break;
+							return;
+						end
+					end
+				end
+				-- move on to currencyIDAsCost
+				cache = SearchForFieldContainer("currencyIDAsCost");
+				if cache then
+					-- We only care about currencies in the addon at the moment.
+					for currencyID,_ in pairs(cache) do
+						-- Compare the name of the currency vs the name of the token
+						local currencyInfo = C_CurrencyInfo_GetCurrencyInfo(currencyID);
+						if currencyInfo and currencyInfo.name == name then
+							-- self.shownThing = { "currencyID", currencyID };
+							-- make sure tooltip refreshes
+							self.AllTheThingsProcessing = nil;
+							AttachTooltipSearchResults(self, "currencyID:" .. currencyID, SearchForField, "currencyID", currencyID);
+							if app.Settings:GetTooltipSetting("currencyID") then self:AddDoubleLine(L["CURRENCY_ID"], tostring(currencyID)); end
+							self:Show();
+						return;
 						end
 					end
 				end
@@ -11623,9 +11648,15 @@ app.RefreshCustomCollectibility = function()
 		Callback(app.RefreshCustomCollectibility);
 		return;
 	end
+
+	-- clear existing custom collects
+	wipe(app.CurrentCharacter.CustomCollects);
+
 	-- do one-time per character custom visibility check(s)
 	-- Exile's Reach (New Player Experience)
 	app.SetCustomCollectibility("NPE", function(cc)
+		-- settings override
+		if app.Settings:GetFilter("CC:NPE") then return true; end
 		-- character is not checked
 		if cc == nil then
 			-- print("first check");
@@ -11660,6 +11691,8 @@ app.RefreshCustomCollectibility = function()
 	end);
 	-- Shadowlands Skip
 	app.SetCustomCollectibility("SL_SKIP", function(cc)
+		-- settings override
+		if app.Settings:GetFilter("CC:SL_SKIP") then return true; end
 		-- character is not checked
 		if cc == nil then
 			-- print("first check of SL_SKIP");
@@ -11680,18 +11713,26 @@ app.RefreshCustomCollectibility = function()
 	-- Show all Covenants if not yet selected
 	-- Shadowlands Covenant: Kyrian
 	app.SetCustomCollectibility("SL_COV_KYR", function()
+		-- settings override
+		if app.Settings:GetFilter("CC:SL_COV_KYR") then return true; end
 		return SLCovenantId == 1 or SLCovenantId == 0;
 	end);
 	-- Shadowlands Covenant: Venthyr
 	app.SetCustomCollectibility("SL_COV_VEN", function()
+		-- settings override
+		if app.Settings:GetFilter("CC:SL_COV_VEN") then return true; end
 		return SLCovenantId == 2 or SLCovenantId == 0;
 	end);
 	-- Shadowlands Covenant: Night Fae
 	app.SetCustomCollectibility("SL_COV_NFA", function()
+		-- settings override
+		if app.Settings:GetFilter("CC:SL_COV_NFA") then return true; end
 		return SLCovenantId == 3 or SLCovenantId == 0;
 	end);
 	-- Shadowlands Covenant: Necrolord
 	app.SetCustomCollectibility("SL_COV_NEC", function()
+		-- settings override
+		if app.Settings:GetFilter("CC:SL_COV_NEC") then return true; end
 		return SLCovenantId == 4 or SLCovenantId == 0;
 	end);
 end
@@ -12078,7 +12119,7 @@ function app:CreateMiniListForGroup(group)
 							tinsert(g, attSearch);
 						else
 							local otherSourceInfo = C_TransmogCollection_GetSourceInfo(otherSourceID);
-							if otherSourceInfo then
+							if otherSourceInfo and (otherSourceInfo.quality or 0) > 1 then
 								local newItem = app.CreateItemSource(otherSourceID, otherSourceInfo.itemID);
 								if otherSourceInfo.isCollected then
 									ATTAccountWideData.Sources[otherSourceID] = 1;
@@ -12157,7 +12198,7 @@ function app:CreateMiniListForGroup(group)
 							tinsert(g, attSearch);
 						else
 							local otherSourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
-							if otherSourceInfo then
+							if otherSourceInfo and (otherSourceInfo.quality or 0) > 1 then
 								local newItem = app.CreateItemSource(sourceID, otherSourceInfo.itemID);
 								if otherSourceInfo.isCollected then
 									ATTAccountWideData.Sources[sourceID] = 1;
@@ -12195,8 +12236,6 @@ function app:CreateMiniListForGroup(group)
 			-- end
 			-- Create a copy of the root group
 			local root = CreateObject(group);
-			-- clean out the sub-groups of the root since it will be listed elsewhere in the popout
-			root.g = nil;
 			root.collectible = not root.repeatable;
 			local g = { root };
 			popout.isQuestChain = true;
@@ -12224,6 +12263,8 @@ function app:CreateMiniListForGroup(group)
 			-- Show Quest Prereqs
 			local gTop;
 			if app.Settings:GetTooltipSetting("QuestChain:Nested") then
+				-- clean out the sub-groups of the root since it will be listed at the top of the popout
+				root.g = nil;
 				gTop = NestSourceQuests(root).g or {};
 			elseif root.sourceQuests then
 				local sourceQuests, sourceQuest, subSourceQuests, prereqs = root.sourceQuests;
@@ -14735,6 +14776,9 @@ function app:RefreshData(lazy, got, manual)
 		if app.refreshDataForce then
 			app.refreshDataForce = nil;
 			app:GetDataCache();
+
+			-- Reapply custom collects
+			app.RefreshCustomCollectibility();
 
 			-- Forcibly update the windows.
 			app:UpdateWindows(true, got);
