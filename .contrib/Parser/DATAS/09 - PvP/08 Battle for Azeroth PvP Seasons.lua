@@ -1587,8 +1587,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	i(166632),	-- Sinister Gladiator's Chain Vest (H)
 	i(166608),	-- Sinister Gladiator's Chain Skullcover (H
 	i(166656),	-- Sinister Gladiator's Chain Epaulets (H)
-	
-	
+
 	-- Season 3
 	i(167522),	-- Notorious Aspirant's Shield Wall (A)
 	i(167521),	-- Notorious Aspirant's Shield Wall (H)
@@ -1596,7 +1595,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	i(169724),	-- Notorious Gladiator's Bonegrinder
 	i(167291),	-- Notorious Gladiator's Silk Cord (A)
 	i(167241),	-- Notorious Gladiator's Silk Cord (H)
-	
+
 	-- Season 4
 	i(172718),	-- Corrupted Gladiator's Silk Armor (A)
 	i(172695),	-- Corrupted Gladiator's Silk Cap (A)
