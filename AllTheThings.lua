@@ -8074,7 +8074,12 @@ local itemFields = {
 		return IsQuestFlaggedCompletedForObject(t) or t.collectedAsCost;
 	end,
 	["collectedAsTransmog"] = function(t)
-		return ATTAccountWideData.Sources[rawget(t, "s")] and (not t.collectibleAsCost or t.collectedAsCost);
+		-- item has no cost use, or cost has been fulfilled
+		if not t.collectibleAsCost or t.collectedAsCost then
+			return ATTAccountWideData.Sources[rawget(t, "s")];
+		end
+		-- item is still required to be obtained/collected
+		return false;
 	end,
 	["savedAsQuest"] = function(t)
 		return IsQuestFlaggedCompleted(t);
