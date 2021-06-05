@@ -113,7 +113,36 @@ _.GearSets =
 				}),
 				tier(5, {	-- Mists of Pandaria
 					i(144243, {	-- Arsenal: Malevolent Gladiator's Weapons [ Horde / Alliance / Tested ]
-						["sym"] = { {"sub", "pvp_weapons_ensemble", -10041, -675, -661 }, },
+						["sym"] = {
+							{"sub", "pvp_weapons_ensemble", -10041, -675, -661 },
+							{"exclude", "itemID", 84911 },	-- Malevolent Gladiator's Barrier
+							{"exclude", "itemID", 84787 },	-- Malevolent Gladiator's Battle Staff
+							{"exclude", "itemID", 84970 },	-- Malevolent Gladiator's Bonecracker
+							{"exclude", "itemID", 84785 },	-- Malevolent Gladiator's Bonegrinder
+							{"exclude", "itemID", 84965 },	-- Malevolent Gladiator's Cleaver
+							{"exclude", "itemID", 84791 },	-- Malevolent Gladiator's Decapitator
+							{"exclude", "itemID", 84866 },	-- Malevolent Gladiator's Endgame
+							{"exclude", "itemID", 84788 },	-- Malevolent Gladiator's Energy Staff
+							{"exclude", "itemID", 84971 },	-- Malevolent Gladiator's Gavel
+							{"exclude", "itemID", 84790 },	-- Malevolent Gladiator's Greatsword
+							{"exclude", "itemID", 84966 },	-- Malevolent Gladiator's Hacker
+							{"exclude", "itemID", 84896 },	-- Malevolent Gladiator's Longbow
+							{"exclude", "itemID", 84786 },	-- Malevolent Gladiator's Pike
+							{"exclude", "itemID", 84964 },	-- Malevolent Gladiator's Pummeler
+							{"exclude", "itemID", 84969 },	-- Malevolent Gladiator's Quickblade
+							{"exclude", "itemID", 84912 },	-- Malevolent Gladiator's Redoubt
+							{"exclude", "itemID", 84963 },	-- Malevolent Gladiator's Render
+							{"exclude", "itemID", 84867 },	-- Malevolent Gladiator's Reprieve
+							{"exclude", "itemID", 84900 },	-- Malevolent Gladiator's Rifle
+							{"exclude", "itemID", 84962 },	-- Malevolent Gladiator's Ripper
+							{"exclude", "itemID", 84967 },	-- Malevolent Gladiator's Shanker
+							{"exclude", "itemID", 84910 },	-- Malevolent Gladiator's Shield Wall
+							{"exclude", "itemID", 84900 },	-- Malevolent Gladiator's Slicer
+							{"exclude", "itemID", 84961 },	-- Malevolent Gladiator's Spellblade
+							{"exclude", "itemID", 84789 },	-- Malevolent Gladiator's Staff
+							{"exclude", "itemID", 84894 },	-- Malevolent Gladiator's Slasher
+							{"exclude", "itemID", 144243 },	-- Exclude itself to stop duplicating
+						},
 					}),
 					i(144245, {	-- Arsenal: Tyrannical Gladiator's Weapons [ Horde / Tested ]
 						["sym"] = {
