@@ -716,7 +716,6 @@ _.HiddenQuestTriggers = {
 	q(40411),	-- Paladin Order Hall - Truthguard Chosen (Protection)
 	q(42135),	-- Paladin Order Hall - Tracking Quest: Chose Strategy C (choice for 42919 The Scion's Legacy)
 	q(42136),	-- Paladin Order Hall - Tracking Quest: Chose Strategy A (choice for 42919 The Scion's Legacy)
-	q(42352),	-- Paladin Order Hall - Tracking Quest: Lumenstone 3
 	q(42495),	-- Paladin Order Hall - Ashbringer Chosen (Retribution)
 	q(42496),	-- Paladin Order Hall - Truthguard Chosen (Protection)
 	q(42497),	-- Paladin Order Hall - Silver Hand Chosen (Holy)
@@ -733,6 +732,12 @@ _.HiddenQuestTriggers = {
 	q(44460),	-- Paladin Order Hall - Tracking Quest: Blood of Our Enemy 3
 	q(44461),	-- Paladin Order Hall - Tracking Quest: Blood of Our Enemy 4
 	q(44462),	-- Paladin Order Hall - Tracking Quest: Blood of Our Enemy 5
+	q(43696),	-- Paladin Order Hall - Tracking Quest: Lumenstone 1
+	q(42980),	-- Paladin Order Hall - Tracking Quest: Lumenstone 2
+	q(42352),	-- Paladin Order Hall - Tracking Quest: Lumenstone 3
+	q(42353),	-- Paladin Order Hall - Tracking Quest: Lumenstone 4
+	q(42354),	-- Paladin Order Hall - Tracking Quest: Lumenstone 5
+	q(46767),	-- Paladin Order Hall - Maximillian 1 Week Cooldown (triggered after turning in Champion: Nerus Moonfang (46045))
 };
 
 -- These quests never made it in.
