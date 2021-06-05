@@ -19177,11 +19177,36 @@ app.events.VARIABLES_LOADED = function()
 
 		-- if we ever erroneously add an account-wide quest and find out it isn't (or Blizzard actually fixes it to give acocunt-wide credit)
 		-- put it here so it reverts back to being handled as a normal quest
-		for i,questID in ipairs({
+		for _,questID in ipairs({
 			32008,	-- Audrey Burnhep (A)
 			32009,	-- Varzok (H)
 		}) do
 			accountWideData.OneTimeQuests[questID] = nil;
+		end
+
+		local anyComplete;
+		-- Check for fixing Blizzard's incompetence in consistency for shared account-wide quest eligibility which is only granted to some of the shared account-wide quests
+		for i,questGroup in ipairs({
+			{ 32008, 32009, 31878, 31879, 31880, 31881, 31882, 31883, 31884, 31885, },	-- Pet Battle Intro quests
+		}) do
+			for _,questID in ipairs(questGroup) do
+				-- If this Character has the Quest completed
+				if CompletedQuests[questID] then
+					-- Mark the quest as completed for the Account
+					accountWideData.Quests[questID] = 1;
+					anyComplete = true;
+				end
+			end
+			-- if any of the quest group is considered complete, then the rest need to be 'considered' complete as well since they can never be actually completed on the account
+			if anyComplete then
+				for _,questID in ipairs(questGroup) do
+					-- Mark the quest completion since it's not 'really' completed
+					if not accountWideData.Quests[questID] then
+						accountWideData.Quests[questID] = 2;
+					end
+				end
+			end
+			anyComplete = nil;
 		end
 
 		app:RegisterEvent("QUEST_LOG_UPDATE");
