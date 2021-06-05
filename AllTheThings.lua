@@ -8074,7 +8074,12 @@ local itemFields = {
 		return IsQuestFlaggedCompletedForObject(t) or t.collectedAsCost;
 	end,
 	["collectedAsTransmog"] = function(t)
-		return ATTAccountWideData.Sources[rawget(t, "s")] and (not t.collectibleAsCost or t.collectedAsCost);
+		-- item has no cost use, or cost has been fulfilled
+		if not t.collectibleAsCost or t.collectedAsCost then
+			return ATTAccountWideData.Sources[rawget(t, "s")];
+		end
+		-- item is still required to be obtained/collected
+		return false;
 	end,
 	["savedAsQuest"] = function(t)
 		return IsQuestFlaggedCompleted(t);
@@ -14830,7 +14835,6 @@ app:GetWindow("Bounty", UIParent, function(self, force, got)
 		self.data.total = 0;
 		self.data.back = 1;
 		self.data.indent = 0;
-		UpdateGroups(self.data, self.data.g);
 		self.data.visible = true;
 		self:BaseUpdate(true, got);
 	end
@@ -14904,7 +14908,6 @@ app:GetWindow("CosmicInfuser", UIParent, function(self)
 		self.data.indent = 0;
 		self.data.back = 1;
 		BuildGroups(self.data, self.data.g);
-		UpdateGroups(self.data, self.data.g);
 		self:BaseUpdate(true);
 	end
 end);
@@ -15522,7 +15525,6 @@ app:GetWindow("ItemFilter", UIParent, function(self)
 						data.indent = 0;
 						data.visible = true;
 						BuildGroups(data, data.g);
-						app.UpdateGroups(data, data.g);
 						if not data.expanded then
 							data.expanded = true;
 							ExpandGroupsRecursively(data, true);
@@ -15535,7 +15537,6 @@ app:GetWindow("ItemFilter", UIParent, function(self)
 					data.progress = 0;
 					data.total = 0;
 					BuildGroups(data, data.g);
-					UpdateGroups(data, data.g);
 					self:BaseUpdate(true);
 					app.VisibilityFilter = visibilityFilter;
 				end,
@@ -15587,7 +15588,8 @@ app:GetWindow("ItemFilter", UIParent, function(self)
 
 		-- Update the window and all of its row data
 		if self.data.OnUpdate then self.data.OnUpdate(self.data, self); end
-		self:BaseUpdate(true);
+		-- soft update since collection content isn't changing within the window normally
+		self:BaseUpdate();
 	end
 end);
 app:GetWindow("ItemFinder", UIParent, function(self, ...)
