@@ -721,6 +721,7 @@ _.Zones =
 						63619,	-- Forsworn and Forgotten
 						63618,	-- What Maldraxxus Does Best
 					},
+					["provider"] = { "n", 177586 },	-- Baroness Draka
 				}),
 				q(63867, {	-- Anger Management
 					["sourceQuests"] = { 64014 },	-- Mawsplaining

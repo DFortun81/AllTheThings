@@ -83,7 +83,7 @@ _.Zones =
 					},
 				}),
 				i(186151),	-- Mawsworn Assasin's Twinblade
-				i(186143),	-- Mawsworn Assassin's Backstabber
+				i(186143),	-- Mawsworn Assassin's Backstabber*
 				i(186118),	-- Mawsworn Assassin's Belt
 				i(186114),	-- Mawsworn Assassin's Boots
 				i(186119),	-- Mawsworn Assassin's Bracers
@@ -105,7 +105,7 @@ _.Zones =
 				i(186138),	-- Mawsworn Darkcaster's Shoulderpads
 				i(186108),	-- Mawsworn Darkcaster's Slippers
 				i(186150),	-- Mawsworn Darkcaster's Stave*
-				i(186129),	-- Mawsworn Guard's Breastplate
+				i(186129),	-- Mawsworn Guard's Breastplate*
 				i(186154),	-- Mawsworn Guard's Cleaver*
 				i(186131),	-- Mawsworn Guard's Gauntlets
 				i(186134),	-- Mawsworn Guard's Girdle

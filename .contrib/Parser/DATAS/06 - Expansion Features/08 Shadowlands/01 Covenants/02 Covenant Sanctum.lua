@@ -238,6 +238,14 @@ _.ExpansionFeatures =
 						}),
 					},
 				}),
+				n(QUESTS, {
+					q(63728, {	-- Hunting Amid Houses
+					--	TODO - not sure if this is non-NF or Venthyr-only.  will verify on Kyrian/Necrolord
+						["sourceQuests"] = { 63672 },	-- A Cry From the Heart
+						["provider"] = { "n", 177434 },	-- Ysera
+						["coord"] = { 47.8, 53.5, ARDENWEALD },
+					}),
+				}),
 			},
 		}),
 	}),

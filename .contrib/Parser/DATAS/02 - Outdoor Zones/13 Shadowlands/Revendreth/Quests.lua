@@ -892,12 +892,6 @@ _.Zones =
 				}),
 				-------------------------------------------------
 				
-				q(63672, {	-- A Cry From the Heart
-				--	TODO: 'nyi medallion of wrath' is still not fully implemented, but w/e that quest winds up being may eventually be the true SQ.  until then, the previous quest is enough to continue the venthyr campaign
-					["sourceQuests"] = { 63654 },	-- The Nathrezim
-					["provider"] = { "n", 177919 },	-- Urgent Message from Ardenweald
-					["coord"] = { 63.4, 24.6, KORTHIA },
-				}),
 				q(63592, {	-- A New Path
 				--	currently takes place on a 'nil' map, may need another mapID added via ["maps"] later
 				--	TODO: grants "a new path" criteria of "chains of domination" achievement, add to whichever zone these quests wind up being in
@@ -930,7 +924,10 @@ _.Zones =
 				}),
 				q(63681, {	-- Back to The Heart
 					["sourceQuests"] = { 63680 },	-- Out On the Edge
-					["provider"] = { "n", 177962 },	-- Lady Moonberry
+					["providers"] = {
+						{ "n", 177962 },	-- Lady Moonberry <Court of Night>
+						{ "n", 177964 },	-- Lady Moonberry <Inconspicuous Stone Fiend>
+					},
 					["coord"] = { 34.0, 9.65, REVENDRETH },
 				}),
 				q(63585, {	-- Blind Loyalty
@@ -949,19 +946,16 @@ _.Zones =
 					["coord"] = { 66.5, 16.5, 1707 },	-- Elysian Hold, Archon's Rise
 				}),
 				q(63646, {	-- Convoy of the Covenants
-				--	TODO: i somehow got distracted and did not add a provider/coords for this quest lol
-				--	is this part of the questline Venthyr-only?  like maybe after 'Victory in Our Name' does the questline diverge into covenant-specific campaign quests?
 					["sourceQuests"] = { 63644 },	-- Dread Tidings
+					["provider"] = { "n", 168898 },	-- Prince Renathal
+					["coord"] = { 22.9, 43.7, REVENDRETH },
 				}),
 				q(63651, {	-- Cryptograms
-				--	TODO: if this questline isn't Venthyr-only there may be another version of this quest for non-Venthyr players, as it starts in Sinfall
-				--	move to sinfall @ live
 					["sourceQuests"] = { 63650 },	-- De-Infiltration
 					["provider"] = { "n", 178260 },	-- The Stonewright
 					["coord"] = { 54.6, 40.3, 1699 },	-- Sinfall Reaches
 				}),
 				q(63650, {	-- De-Infiltration
-				--	TODO: if this questline isn't Venthyr-only there may be another version of this quest for non-Venthyr players, as it takes you to Sinfall
 					["sourceQuests"] = {
 						63648,	-- Nal'ragas
 						63649,	-- Spy vs Spy
@@ -979,11 +973,6 @@ _.Zones =
 					["provider"] = { "n", 177116 },	-- Polemarch Adrestes
 					["coord"] = { 39.9, 20.0, BASTION },
 				}),
-				q(63728, {	-- Hunting Amid Houses
-					["sourceQuests"] = { 63672 },	-- A Cry From the Heart
-					["provider"] = { "n", 177434 },	-- Ysera
-					["coord"] = { 47.8, 53.5, ARDENWEALD },
-				}),
 				q(64092, {	-- Hunting Huln
 					["sourceQuests"] = { 63679 },	-- Magical Mystery Tour!
 					["provider"] = { "n", 177962 },	-- Lady Moonberry
@@ -995,7 +984,7 @@ _.Zones =
 					["coord"] = { 40.1, 20.3, BASTION },
 				}),
 				q(64437, {	-- Inform the Primus
-					["sourceQuests"] = { 63592 },	-- A New Path
+					["sourceQuests"] = { 63683 },	-- Winter's Sigil
 					["provider"] = { "n", 177434 },	-- Ysera
 					["coord"] = { 47.8, 53.6, 1701 },	-- Heart of the Forest
 				}),
@@ -1051,8 +1040,6 @@ _.Zones =
 					["coord"] = { 40.1, 20.0, BASTION },
 				}),
 				q(63652, {	-- The "Unwelcome" Guests
-				--	TODO: if this questline isn't Venthyr-only there may be another version of this quest for non-Venthyr players, as it starts in Sinfall
-				--	move to sinfall @ live
 					["sourceQuests"] = { 63650 },	-- De-Infiltration
 					["provider"] = { "n", 158653 },	-- Prince Renathal
 					["coord"] = { 51.3, 38.1, 1699 },	-- Sinfall Reaches
@@ -1078,6 +1065,12 @@ _.Zones =
 						1969,	-- TG108_Floor
 					},
 				}),
+				q(63645, {	-- The Dawnkeep Prisoner
+				--	i think this is only for characters who haven't already killed Denathrius, so will have to find a way to check it off for characters who aren't eligible
+					["sourceQuests"] = { 63644 },	-- Dread Tidings
+					["provider"] = { "n", 168898 },	-- Prince Renathal
+					["coord"] = { 22.9, 43.7, REVENDRETH },
+				}),
 				q(63656, {	-- The Meaning of Wrath
 					["sourceQuests"] = { 63654 },	-- The Nathrezim
 					["provider"] = { "n", 179978 },	-- The Accuser
@@ -1090,8 +1083,6 @@ _.Zones =
 				}),
 				q(63653, {	-- The Power of a Crown
 					["sourceQuests"] = {
-					--	TODO: if this questline isn't Venthyr-only there may be another version of this quest for non-Venthyr players, as it starts in Sinfall
-					--	move to sinfall @ live
 						63651,	-- Cryptograms
 						63652,	-- The "Unwelcome Guests",
 					},

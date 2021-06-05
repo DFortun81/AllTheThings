@@ -7,6 +7,11 @@ _.Zones =
 	m(SHADOWLANDS, {
 		m(KORTHIA, {
 			n(QUESTS, {
+				q(63672, {	-- A Cry From the Heart
+					["sourceQuests"] = { 63656 },	-- The Meaning of Wrath
+					["provider"] = { "n", 177919 },	-- Urgent Message from Ardenweald
+					["coord"] = { 63.4, 24.6, KORTHIA },
+				}),
 				q(63755, {	-- A Matter of Urgency
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 177155 },	-- Pathscribe Roh-Vess

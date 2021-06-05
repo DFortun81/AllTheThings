@@ -16,6 +16,11 @@ _.ExpansionFeatures =
 				n(QUESTS, sharedData({
 					["customCollect"] = { "SL_COV_NFA", },	-- Night Fae
 					}, {
+					q(63673, {	-- Hunting Amid Houses
+						["sourceQuests"] = { 63672 },	-- A Cry From the Heart
+						["provider"] = { "n", 160262 },	-- Ysera
+						["coord"] = { 44.3, 38.8, 1701 },	-- The Trunk
+					}),
 					-- These quests are not part of the covenant questline chapters, but are Night Fae only
 					q(61058, {	-- Bound in Dreams
 						-- SQ needs confirmation, but this is when i saw the quest pop up.  this happened at Renown 16 for me, even though the soulbind only requires Renown 9 and i had been back to the sanctum many times since hitting that level

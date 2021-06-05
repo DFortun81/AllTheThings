@@ -37,6 +37,7 @@ _.Zones =
 					},
 				}),
 				n(180014, {	-- Escaped Wilderling
+				--	64572 triggered when killing it for the first time since reset on Slumbering, unsure if this is NF-specific, weekly, daily, or what it indicates...
 					["description"] = "Requires a |cFFA330C9Night Fae|r to start.",
 					["questID"] = 64320,
 					["isDaily"] = true,
@@ -53,6 +54,11 @@ _.Zones =
 							--	i(187246),	-- Death-Enveloped Pauldrons (not sure about this one, a stranger said they got it from the cache)
 								i(187395),	-- Reinforced Stygian Spaulders
 							},
+						}),
+						i(187423, {	-- Legend of the Animaswell
+							["customCollect"] = "SL_COV_NFA",	-- Night Fae
+							["isWeekly"] = true,
+							["questID"] = 64549,	-- Legend of the Animaswell
 						}),
 					},
 				}),
@@ -183,6 +189,7 @@ _.Zones =
 						}),
 						i(187428, {	-- Legend of the Animaswell
 							["customCollect"] = "SL_COV_VEN",	-- Venthyr-only
+							["isWeekly"] = true,
 							["questID"] = 64553,	-- Legend of the Animaswell
 						}),
 					},
