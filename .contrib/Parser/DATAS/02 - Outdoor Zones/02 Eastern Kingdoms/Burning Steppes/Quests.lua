@@ -202,6 +202,7 @@ _.Zones =
 					["coord"] = { 72.9, 65.2, 36 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 207304 },	-- Adventure Board
+					["lvl"] = 20,
 					["isBreadcrumb"] = true,
 				}),
 				q(28069, {	-- Adventurers Wanted: Blackrock Depths
@@ -209,8 +210,7 @@ _.Zones =
 					["coord"] = { 17.0, 51.7, 36 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 207303 },	-- Adventure Board
-					["description"] = "Only available between level 47 and 56.",
-					["lvl"] = 47,
+					["lvl"] = 20,
 					["isBreadcrumb"] = true,
 				}),
 				q(28320, {	-- Assault on Dreadmaul Rock
