@@ -2894,6 +2894,7 @@ _.HiddenQuestTriggers =
 		q(51945),	-- Stormsong Valley repeatable random chest
 		q(51946),	-- Stormsong Valley repeatable random chest
 		q(52989),	-- Stormsong Valley repeatable random chest
+		q(53652),	-- Reported as "Alliance BfA: Opened a chest in Stormsong Valley and got this"
 		-- Various
 		q(51695),	-- Horde WarCampaign - "Reclaiming What's Ours" (ID 51696) using the horn to reclaim the Foothold
 		q(55626),	-- first kill of yellow Sabertron
