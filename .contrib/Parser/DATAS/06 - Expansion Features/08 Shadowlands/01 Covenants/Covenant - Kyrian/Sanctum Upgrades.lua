@@ -879,9 +879,11 @@ _.ExpansionFeatures =
 									["coord"] = { 31.6, 48.0, 1707 },
 									["g"] = {
 										i(180768, {	-- Eternal Phalynx of Humility
+											["customCollect"] = "SL_COV_KYR",	-- Kyrian
 											["cost"] = { { "c", 1813, 2500 } },	-- 2,500x Reservoir Anima
 										}),
 										i(180767, {	-- Eternal Phalynx of Loyalty
+											["customCollect"] = "SL_COV_KYR",	-- Kyrian
 											["cost"] = { { "c", 1813, 2500 } },	-- 2,500x Reservoir Anima
 										}),
 										i(181300, {	-- Gruesome Flayedwing
