@@ -321,12 +321,6 @@ _.Zones =
 					},
 					["coord"] = { 44.6, 63.2, 646 },
 				}),
-				q(46333, {	-- Livin' on the Ledge
-					["sourceQuests"] = { 46246 },	-- Strike Them Down
-					["provider"] = { "n", 118316 },	-- Illidari Enforcer
-					["classes"] = { DEMONHUNTER },
-					["coord"] = { 44.0, 62.7, 646 },
-				}),
 				q(47112, {	-- Lost Souls
 					["sourceQuests"] = { 47097 },	-- A Walk to Remember
 					["provider"] = { "n", 121226 },	-- Anduin Wrynn
@@ -354,32 +348,10 @@ _.Zones =
 					["provider"] = { "n", 116302 },	-- Archmage Khadgar
 					["coord"] = { 44.6, 63.1, 646 },
 				}),
-				q(46725, {	-- Power Outage
-					["sourceQuests"] = { 45385 },	-- We Must be Prepared!
-					["provider"] = { "n", 117709 },	-- Lady S'theno
-					["classes"] = { DEMONHUNTER },
-					["coord"] = { 52.1, 21.3, 646 },
-				}),
 				q(46769, {	-- Relieved of Their Valuables
 					["sourceQuests"] = { 46252 },	-- Intolerable Infestation
 					["provider"] = { "n", 44.6, 63.1, 646 },
 					["coord"] = { 44.6, 63.1, 646 },
-				}),
-				q(45764, {	-- Restoring Equilibrium
-					["sourceQuests"] = { 45385 },	-- We Must be Prepared!
-					["provider"] = { "n", 117709 },	-- Lady S'theno
-					["classes"] = { DEMONHUNTER },
-					["coord"] = { 52.1, 21.3, 646 },
-				}),
-				q(46266, {	-- Return of the Slayer
-					["sourceQuests"] = {
-						46725,	-- Power Outage
-						45764,	-- Restoring Equilibrium
-						45798,	-- War'zuul the Provoker
-					},
-					["provider"] = { "n", 117709 },	-- Lady S'theno
-					["classes"] = { DEMONHUNTER },
-					["coord"] = { 52.1, 21.3, 646 },
 				}),
 				q(45192, {	-- Runes of Rending
 					["sourceQuests"] = { 45190 },	-- Where it's Thinnest
@@ -504,12 +476,6 @@ _.Zones =
 					["provider"] = { "n", 120118 },	-- Heidirk the Scalekeeper
 					["coord"] = { 70.6, 47.5, 646 },
 				}),
-				q(45798, {	-- War'zuul the Provoker
-					["sourceQuests"] = { 45385 },	-- We Must be Prepared!
-					["provider"] = { "n", 117709 },	-- Lady S'theno
-					["classes"] = { DEMONHUNTER },
-					["coord"] = { 52.1, 21.3, 646 },
-				}),
 				q(46511, {	-- We're Treasure Hunters
 					["sourceQuests"] = { 46510 },	-- Ship Graveyard
 					["provider"] = { "n", 119886 },	-- Excavator Karla
@@ -614,7 +580,6 @@ _.Zones =
 				q(46499),	-- Spiders, Huh?
 				q(43265),	-- Spread the Word
 				q(45025),	-- Stealing the Source of Power
-				q(43899),	-- Steeds of the Damned
 				q(46145),	-- Sterile Surroundings
 				q(45459),	-- Storming the Legion
 				q(45554),	-- Taking Control
