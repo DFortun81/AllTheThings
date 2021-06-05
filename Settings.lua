@@ -1802,7 +1802,7 @@ end
 
 -- Weird Boys
 yoffset = -4;
-local miscWeaponTypes = { 50, 57, 34, 35, 27 }
+local miscWeaponTypes = { 11, 57, 34, 35, 27 }
 for i,filterID in ipairs(miscWeaponTypes) do
 	local filter = settings:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick);
 	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
@@ -1813,7 +1813,7 @@ end
 
 -- Secondary Armor Classes
 last, xoffset, yoffset = ItemFiltersLabel, 120, -4;
-local miscWeaponTypes2 = { 11, 2, 3, 10, 9, 33, 32, 31 }
+local miscWeaponTypes2 = { 2, 3, 10, 9, 32, 33, 31 }
 for i,filterID in ipairs(miscWeaponTypes2) do
 	local filter = settings:CreateCheckBox(itemFilterNames[filterID], ItemFilterOnRefresh, ItemFilterOnClick);
 	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", xoffset, yoffset);
