@@ -3831,6 +3831,7 @@ app.BuildCost = function(group)
 				["text"] = L["COST"],
 				["description"] = L["COST_DESC"],
 				["icon"] = "Interface\\Icons\\INV_Misc_Coin_02",
+				["OnUpdate"] = app.AlwaysShowUpdate,
 				["g"] = { },
 			};
 		local costItem;
@@ -3838,15 +3839,21 @@ app.BuildCost = function(group)
 			-- print("Cost",c[1],c[2],c[3]);
 			costItem = nil;
 			if c[1] == "c" then
-				costItem = app.SearchForObjectClone("currencyID", c[2]) or app.CreateCurrencyClass(c[2]);
+				costItem = app.SearchForObject("currencyID", c[2]) or app.CreateCurrencyClass(c[2]);
 			elseif c[1] == "i" then
-				costItem = app.SearchForObjectClone("itemID", c[2]) or app.CreateItem(c[2]);
+				costItem = app.SearchForObject("itemID", c[2]) or app.CreateItem(c[2]);
 			end
 			if costItem then
-				-- costItem.total = c[3];
+				costItem = CloneData(costItem);
 				costItem.g = nil;
-				costItem.visible = true;
-				costItem.collectible = true;
+				costItem.collectible = false;
+				-- if c[3] then
+				-- 	costItem.total = c[3];
+				-- 	if group.collected then
+				-- 		costItem.progress = c[3];
+				-- 	end
+				-- end
+				costItem.OnUpdate = app.AlwaysShowUpdate;
 				MergeObject(costGroup.g, costItem);
 			end
 		end
@@ -4285,10 +4292,6 @@ app.SearchForObject = function(field, id)
 			end
 		end
 	end
-end
--- This method performs the SearchForObject logic and returns a cloned instance of the resulting group
-app.SearchForObjectClone = function(field, id)
-	return CloneData(app.SearchForObject(field, id));
 end
 
 -- Item Information Lib
@@ -12090,7 +12093,7 @@ function app:CreateMiniListForGroup(group)
 							tinsert(g, attSearch);
 						else
 							local otherSourceInfo = C_TransmogCollection_GetSourceInfo(otherSourceID);
-							if otherSourceInfo then
+							if otherSourceInfo and (otherSourceInfo.quality or 0) > 1 then
 								local newItem = app.CreateItemSource(otherSourceID, otherSourceInfo.itemID);
 								if otherSourceInfo.isCollected then
 									ATTAccountWideData.Sources[otherSourceID] = 1;
@@ -12169,7 +12172,7 @@ function app:CreateMiniListForGroup(group)
 							tinsert(g, attSearch);
 						else
 							local otherSourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
-							if otherSourceInfo then
+							if otherSourceInfo and (otherSourceInfo.quality or 0) > 1 then
 								local newItem = app.CreateItemSource(sourceID, otherSourceInfo.itemID);
 								if otherSourceInfo.isCollected then
 									ATTAccountWideData.Sources[sourceID] = 1;
@@ -12207,8 +12210,6 @@ function app:CreateMiniListForGroup(group)
 			-- end
 			-- Create a copy of the root group
 			local root = CreateObject(group);
-			-- clean out the sub-groups of the root since it will be listed elsewhere in the popout
-			root.g = nil;
 			root.collectible = not root.repeatable;
 			local g = { root };
 			popout.isQuestChain = true;
@@ -12236,6 +12237,8 @@ function app:CreateMiniListForGroup(group)
 			-- Show Quest Prereqs
 			local gTop;
 			if app.Settings:GetTooltipSetting("QuestChain:Nested") then
+				-- clean out the sub-groups of the root since it will be listed at the top of the popout
+				root.g = nil;
 				gTop = NestSourceQuests(root).g or {};
 			elseif root.sourceQuests then
 				local sourceQuests, sourceQuest, subSourceQuests, prereqs = root.sourceQuests;
