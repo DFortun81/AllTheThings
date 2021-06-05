@@ -2004,45 +2004,68 @@ _.Zones =
 						}),
 					--	Dread Gladiator, Battle for Azeroth Season 1
 						i(184419, {	-- Ensemble: Dread Gladiator's Cloth Armor (purchased on priest)
-						-- purchased on priest.  didn't learn cord, cuffs, gloves, hood, leggings, mantle, robe, or treads.  not sure if these alternate item types are learned by mage/lock, but you can only purchase the ensemble once per account so i can't test. :\
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["g"] = {
 								i(163729),	-- Dread Gladiator's Shawl
-								i(161731),	-- Dread Gladiator's Silk Amice
-								i(161737),	-- Dread Gladiator's Silk Bracers
-								i(161722),	-- Dread Gladiator's Silk Cowl
-								i(161720),	-- Dread Gladiator's Silk Handguards
-								i(161710),	-- Dread Gladiator's Silk Raiment
-								i(161657),	-- Dread Gladiator's Silk Sash
-								i(161715),	-- Dread Gladiator's Silk Slippers
-								i(161726),	-- Dread Gladiator's Silk Trousers
+								i(161731),	-- Dread Gladiator's Silk Amice (A)
+								i(161737),	-- Dread Gladiator's Silk Bracers (A)
+								i(161625),	-- Dread Gladiator's Silk Cord (A)
+								i(161722),	-- Dread Gladiator's Silk Cowl (A)
+								i(161628),	-- Dread Gladiator's Silk Cuffs (A)
+								i(161611),	-- Dread Gladiator's Silk Gloves (A)
+								i(161720),	-- Dread Gladiator's Silk Handguards (A)
+								i(161613),	-- Dread Gladiator's Silk Hood (A)
+								i(161617),	-- Dread Gladiator's Silk Leggings (A)
+								i(161622),	-- Dread Gladiator's Silk Mantle (A)
+								i(161710),	-- Dread Gladiator's Silk Raiment (A)
+								i(161601),	-- Dread Gladiator's Silk Robe (A)
+								i(161657),	-- Dread Gladiator's Silk Sash (A)
+								i(161715),	-- Dread Gladiator's Silk Slippers (A)
+								i(161606),	-- Dread Gladiator's Silk Treads (A)
+								i(161726),	-- Dread Gladiator's Silk Trousers (A)
 							},
 						}),
 						i(184421, {	-- Ensemble: Dread Gladiator's Leather Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["g"] = {
 								i(163730),	-- Dread Gladiator's Greatcloak
-								i(161740),	-- Dread Gladiator's Leather Armwraps
-								i(161717),	-- Dread Gladiator's Leather Footguards
-								i(161718),	-- Dread Gladiator's Leather Handguards
-								i(161724),	-- Dread Gladiator's Leather Hood
-								i(161729),	-- Dread Gladiator's Leather Mantle
-								i(161728),	-- Dread Gladiator's Leather Pants
-								i(161713),	-- Dread Gladiator's Leather Vest
-								i(161736),	-- Dread Gladiator's Leather Waistband
+								i(161740),	-- Dread Gladiator's Leather Armwraps (A)
+								i(161627),	-- Dread Gladiator's Leather Belt (A)
+								i(161631),	-- Dread Gladiator's Leather Bindings (A)
+								i(161608),	-- Dread Gladiator's Leather Boots (A)
+								i(161717),	-- Dread Gladiator's Leather Footguards (A)
+								i(161609),	-- Dread Gladiator's Leather Gloves (A)
+								i(161718),	-- Dread Gladiator's Leather Handguards (A)
+								i(161615),	-- Dread Gladiator's Leather Helm (A)
+								i(161724),	-- Dread Gladiator's Leather Hood (A)
+								i(161619),	-- Dread Gladiator's Leather Legguards (A)
+								i(161729),	-- Dread Gladiator's Leather Mantle (A)
+								i(161728),	-- Dread Gladiator's Leather Pants (A)
+								i(161620),	-- Dread Gladiator's Leather Spaulders (A)
+								i(161604),	-- Dread Gladiator's Leather Tunic (A)
+								i(161713),	-- Dread Gladiator's Leather Vest (A)
+								i(161736),	-- Dread Gladiator's Leather Waistband (A)
 							},
 						}),
 						i(184423, {	-- Ensemble: Dread Gladiator's Mail Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["g"] = {
-								i(161712),	-- Dread Gladiator's Chain Chestguard
-								i(161735),	-- Dread Gladiator's Chain Clasp
-								i(161716),	-- Dread Gladiator's Chain Footguards
-								i(161721),	-- Dread Gladiator's Chain Handguards
-								i(161723),	-- Dread Gladiator's Chain Headpiece
-								i(161727),	-- Dread Gladiator's Chain Legguards
-								i(161732),	-- Dread Gladiator's Chain Shoulderguards
-								i(161739),	-- Dread Gladiator's Chain Wristguards
+								i(161630),	-- Dread Gladiator's Chain Armbands (A)
+								i(161603),	-- Dread Gladiator's Chain Armor (A)
+								i(161712),	-- Dread Gladiator's Chain Chestguard (A)
+								i(161735),	-- Dread Gladiator's Chain Clasp (A)
+								i(161716),	-- Dread Gladiator's Chain Footguards (A)
+								i(161612),	-- Dread Gladiator's Chain Gauntlets (A)
+								i(161721),	-- Dread Gladiator's Chain Handguards (A)
+								i(161723),	-- Dread Gladiator's Chain Headpiece (A)
+								i(161614),	-- Dread Gladiator's Chain Helm (A)
+								i(161618),	-- Dread Gladiator's Chain Leggings (A)
+								i(161727),	-- Dread Gladiator's Chain Legguards (A)
+								i(161607),	-- Dread Gladiator's Chain Sabatons (A)
+								i(161732),	-- Dread Gladiator's Chain Shoulderguards (A)
+								i(161623),	-- Dread Gladiator's Chain Spaulders (A)
+								i(161626),	-- Dread Gladiator's Chain Waistguard (A)
+								i(161739),	-- Dread Gladiator's Chain Wristguards (A)
 								i(163731),	-- Dread Gladiator's Drape
 							},
 						}),
@@ -2050,14 +2073,22 @@ _.Zones =
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["g"] = {
 								i(163732),	-- Dread Gladiator's Cape
-								i(161711),	-- Dread Gladiator's Plate Chestguard
-								i(161733),	-- Dread Gladiator's Plate Clasp
-								i(161719),	-- Dread Gladiator's Plate Gloves
-								i(161714),	-- Dread Gladiator's Plate Greaves
-								i(161709),	-- Dread Gladiator's Plate Headcover
-								i(161725),	-- Dread Gladiator's Plate Leg Armor
-								i(161730),	-- Dread Gladiator's Plate Shoulders
-								i(161738),	-- Dread Gladiator's Plate Vambraces
+								i(161629),	-- Dread Gladiator's Plate Armguards (A)
+								i(161711),	-- Dread Gladiator's Plate Chestguard (A)
+								i(161602),	-- Dread Gladiator's Plate Chestpiece (A)
+								i(161733),	-- Dread Gladiator's Plate Clasp (A)
+								i(161610),	-- Dread Gladiator's Plate Gauntlets (A)
+								i(161624),	-- Dread Gladiator's Plate Girdle (A)
+								i(161719),	-- Dread Gladiator's Plate Gloves (A)
+								i(161714),	-- Dread Gladiator's Plate Greaves (A)
+								i(161709),	-- Dread Gladiator's Plate Headcover (A)
+								i(161600),	-- Dread Gladiator's Plate Helm (A)
+								i(161725),	-- Dread Gladiator's Plate Leg Armor (A)
+								i(161616),	-- Dread Gladiator's Plate Legguards (A)
+								i(161621),	-- Dread Gladiator's Plate Pauldrons (A)
+								i(161730),	-- Dread Gladiator's Plate Shoulders (A)
+								i(161738),	-- Dread Gladiator's Plate Vambraces (A)
+								i(161605),	-- Dread Gladiator's Plate Warboots (A)
 							},
 						}),
 					--	Sinister Aspirant, Battle for Azeroth Season 2
@@ -2122,41 +2153,83 @@ _.Zones =
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["g"] = {
 								i(165048),	-- Sinister Gladiator's Shawl
-								i(164836),	-- Sinister Gladiator's Silk Cord
-								i(164839),	-- Sinister Gladiator's Silk Cuffs
-								i(164822),	-- Sinister Gladiator's Silk Gloves
-								i(164824),	-- Sinister Gladiator's Silk Hood
-								i(164828),	-- Sinister Gladiator's Silk Leggings
-								i(164833),	-- Sinister Gladiator's Silk Mantle
-								i(164812),	-- Sinister Gladiator's Silk Robe
-								i(164817),	-- Sinister Gladiator's Silk Treads
+								i(164897),	-- Sinister Gladiator's Silk Amice (A)
+								i(164903),	-- Sinister Gladiator's Silk Bracers (A)
+								i(166626),	-- Sinister Gladiator's Silk Chestwrap (A)
+								i(164836),	-- Sinister Gladiator's Silk Cord (A)
+								i(166603),	-- Sinister Gladiator's Silk Cover (A)
+								i(164888),	-- Sinister Gladiator's Silk Cowl (A)
+								i(164839),	-- Sinister Gladiator's Silk Cuffs (A)
+								i(166644),	-- Sinister Gladiator's Silk Epaulets (A)
+								i(164822),	-- Sinister Gladiator's Silk Gloves (A)
+								i(164886),	-- Sinister Gladiator's Silk Handguards (A)
+								i(166595),	-- Sinister Gladiator's Silk Helm (A)
+								i(164824),	-- Sinister Gladiator's Silk Hood (A)
+								i(164828),	-- Sinister Gladiator's Silk Leggings (A)
+								i(164833),	-- Sinister Gladiator's Silk Mantle (A)
+								i(164876),	-- Sinister Gladiator's Silk Raiment (A)
+								i(164812),	-- Sinister Gladiator's Silk Robe (A)
+								i(164900),	-- Sinister Gladiator's Silk Sash (A)
+								i(166652),	-- Sinister Gladiator's Silk Shoulderpads (A)
+								i(164881),	-- Sinister Gladiator's Silk Slippers (A)
+								i(164817),	-- Sinister Gladiator's Silk Treads (A)
+								i(164892),	-- Sinister Gladiator's Silk Trousers (A)
+								i(166618),	-- Sinister Gladiator's Silk Vestments (A)
 							},
 						}),
 						i(184429, {	-- Ensemble: Sinister Gladiator's Leather Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["g"] = {
 								i(165049),	-- Sinister Gladiator's Greatcloak
-								i(164838),	-- Sinister Gladiator's Leather Belt
-								i(164842),	-- Sinister Gladiator's Leather Bindings
-								i(164819),	-- Sinister Gladiator's Leather Boots
-								i(164820),	-- Sinister Gladiator's Leather Gloves
-								i(164826),	-- Sinister Gladiator's Leather Helm
-								i(164830),	-- Sinister Gladiator's Leather Legguards
-								i(164831),	-- Sinister Gladiator's Leather Spaulders
-								i(164815),	-- Sinister Gladiator's Leather Tunic
+								i(164906),	-- Sinister Gladiator's Leather Armwraps (A)
+								i(164838),	-- Sinister Gladiator's Leather Belt (A)
+								i(164842),	-- Sinister Gladiator's Leather Bindings (A)
+								i(164819),	-- Sinister Gladiator's Leather Boots (A)
+								i(166597),	-- Sinister Gladiator's Leather Cap (A)
+								i(166629),	-- Sinister Gladiator's Leather Chestguard (A)
+								i(164883),	-- Sinister Gladiator's Leather Footguards (A)
+								i(164820),	-- Sinister Gladiator's Leather Gloves (A)
+								i(164884),	-- Sinister Gladiator's Leather Handguar
+								i(164826),	-- Sinister Gladiator's Leather Helm (A)
+								i(164890),	-- Sinister Gladiator's Leather Hood (A)
+								i(166621),	-- Sinister Gladiator's Leather Jerkin (A)
+								i(164830),	-- Sinister Gladiator's Leather Legguards (A)
+								i(164895),	-- Sinister Gladiator's Leather Mantle (A)
+								i(164894),	-- Sinister Gladiator's Leather Pants (A)
+								i(166650),	-- Sinister Gladiator's Leather Pauldrons (A)
+								i(166642),	-- Sinister Gladiator's Leather Shoulderguar
+								i(166605),	-- Sinister Gladiator's Leather Skullguard (A)
+								i(164831),	-- Sinister Gladiator's Leather Spaulders (A)
+								i(164815),	-- Sinister Gladiator's Leather Tunic (A)
+								i(164879),	-- Sinister Gladiator's Leather Vest (A)
+								i(164902),	-- Sinister Gladiator's Leather Waistband (A)
 							},
 						}),
 						i(184431, {	-- Ensemble: Sinister Gladiator's Mail Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["g"] = {
-								i(164841),	-- Sinister Gladiator's Chain Armbands
-								i(164814),	-- Sinister Gladiator's Chain Armor
-								i(164823),	-- Sinister Gladiator's Chain Gauntlets
-								i(164825),	-- Sinister Gladiator's Chain Helm
-								i(164829),	-- Sinister Gladiator's Chain Leggings
-								i(164818),	-- Sinister Gladiator's Chain Sabatons
-								i(164834),	-- Sinister Gladiator's Chain Spaulders
-								i(164837),	-- Sinister Gladiator's Chain Waistguard
+								i(164841),	-- Sinister Gladiator's Chain Armbands (A)
+								i(164814),	-- Sinister Gladiator's Chain Armor (A)
+								i(164878),	-- Sinister Gladiator's Chain Chestguard (A)
+								i(164901),	-- Sinister Gladiator's Chain Clasp (A)
+								i(166596),	-- Sinister Gladiator's Chain Coif (A)
+								i(164882),	-- Sinister Gladiator's Chain Footguards (A)
+								i(164823),	-- Sinister Gladiator's Chain Gauntlets (A)
+								i(164887),	-- Sinister Gladiator's Chain Handguards (A)
+								i(166620),	-- Sinister Gladiator's Chain Hauberk (A)
+								i(166604),	-- Sinister Gladiator's Chain Headgear (A)
+								i(164889),	-- Sinister Gladiator's Chain Headpiece (A)
+								i(164825),	-- Sinister Gladiator's Chain Helm (A)
+								i(164829),	-- Sinister Gladiator's Chain Leggings (A)
+								i(164893),	-- Sinister Gladiator's Chain Legguards (A)
+								i(166628),	-- Sinister Gladiator's Chainmail (A)
+								i(166653),	-- Sinister Gladiator's Chain Mantle (A)
+								i(166645),	-- Sinister Gladiator's Chain Pauldrons (A)
+								i(164818),	-- Sinister Gladiator's Chain Sabatons (A)
+								i(164898),	-- Sinister Gladiator's Chain Shoulderguards (A)
+								i(164834),	-- Sinister Gladiator's Chain Spaulders (A)
+								i(164837),	-- Sinister Gladiator's Chain Waistguard (A)
+								i(164905),	-- Sinister Gladiator's Chain Wristguards (A)
 								i(165050),	-- Sinister Gladiator's Drape
 							},
 						}),
@@ -2164,14 +2237,28 @@ _.Zones =
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["g"] = {
 								i(165051),	-- Sinister Gladiator's Cape
-								i(164840),	-- Sinister Gladiator's Plate Armguards
-								i(164813),	-- Sinister Gladiator's Plate Chestpiece
-								i(164821),	-- Sinister Gladiator's Plate Gauntlets
-								i(164835),	-- Sinister Gladiator's Plate Girdle
-								i(164811),	-- Sinister Gladiator's Plate Helm
-								i(164827),	-- Sinister Gladiator's Plate Legguards
-								i(164832),	-- Sinister Gladiator's Plate Pauldrons
-								i(164816),	-- Sinister Gladiator's Plate Warboots
+								i(164840),	-- Sinister Gladiator's Plate Armguards (A)
+								i(166619),	-- Sinister Gladiator's Plate Armor (A)
+								i(166627),	-- Sinister Gladiator's Plate Breastplate (A)
+								i(164877),	-- Sinister Gladiator's Plate Chestguard (A)
+								i(164813),	-- Sinister Gladiator's Plate Chestpiece (A)
+								i(164899),	-- Sinister Gladiator's Plate Clasp (A)
+								i(164821),	-- Sinister Gladiator's Plate Gauntlets (A)
+								i(164835),	-- Sinister Gladiator's Plate Girdle (A)
+								i(164885),	-- Sinister Gladiator's Plate Gloves (A)
+								i(166602),	-- Sinister Gladiator's Plate Greathelm (A)
+								i(164880),	-- Sinister Gladiator's Plate Greaves (A)
+								i(164875),	-- Sinister Gladiator's Plate Headcover (A)
+								i(164811),	-- Sinister Gladiator's Plate Helm (A)
+								i(164891),	-- Sinister Gladiator's Plate Leg Armor (A)
+								i(164827),	-- Sinister Gladiator's Plate Legguards (A)
+								i(164832),	-- Sinister Gladiator's Plate Pauldrons (A)
+								i(166651),	-- Sinister Gladiator's Plate Shoulderguards (A)
+								i(164896),	-- Sinister Gladiator's Plate Shoulders (A)
+								i(166643),	-- Sinister Gladiator's Plate Spaulders (A)
+								i(164904),	-- Sinister Gladiator's Plate Vambraces (A)
+								i(164816),	-- Sinister Gladiator's Plate Warboots (A)
+								i(166594),	-- Sinister Gladiator's Plate Warhelm (A)
 							},
 						}),
 					--	Notorious Aspirant, Battle for Azeroth Season 3
@@ -2236,41 +2323,91 @@ _.Zones =
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["g"] = {
 								i(167370),	-- Notorious Gladiator's Shawl
-								i(167291),	-- Notorious Gladiator's Silk Cord
-								i(167294),	-- Notorious Gladiator's Silk Cuffs
-								i(167277),	-- Notorious Gladiator's Silk Gloves
-								i(167279),	-- Notorious Gladiator's Silk Hood
-								i(167283),	-- Notorious Gladiator's Silk Leggings
-								i(167288),	-- Notorious Gladiator's Silk Mantle
-								i(167267),	-- Notorious Gladiator's Silk Robe
-								i(167272),	-- Notorious Gladiator's Silk Treads
+								i(167352),	-- Notorious Gladiator's Silk Amice (A)
+								i(167429),	-- Notorious Gladiator's Silk Armor (A)
+								i(167358),	-- Notorious Gladiator's Silk Bracers (A)
+								i(167406),	-- Notorious Gladiator's Silk Cap (A)
+								i(167421),	-- Notorious Gladiator's Silk Chestwrap (A)
+								i(167398),	-- Notorious Gladiator's Silk Cover (A)
+								i(167343),	-- Notorious Gladiator's Silk Cowl (A)
+								i(167294),	-- Notorious Gladiator's Silk Cuffs (A)
+								i(167439),	-- Notorious Gladiator's Silk Epaulets (A)
+								i(167277),	-- Notorious Gladiator's Silk Gloves (A)
+								i(167341),	-- Notorious Gladiator's Silk Handguards (A)
+								i(167390),	-- Notorious Gladiator's Silk Helm (A)
+								i(167279),	-- Notorious Gladiator's Silk Hood (A)
+								i(167283),	-- Notorious Gladiator's Silk Leggings (A)
+								i(167288),	-- Notorious Gladiator's Silk Mantle (A)
+								i(167331),	-- Notorious Gladiator's Silk Raiment (A)
+								i(167267),	-- Notorious Gladiator's Silk Robe (A)
+								i(167355),	-- Notorious Gladiator's Silk Sash (A)
+								i(167455),	-- Notorious Gladiator's Silk Shoulderguards (A)
+								i(167447),	-- Notorious Gladiator's Silk Shoulderpads (A)
+								i(167336),	-- Notorious Gladiator's Silk Slippers (A)
+								i(167272),	-- Notorious Gladiator's Silk Treads (A)
+								i(167347),	-- Notorious Gladiator's Silk Trousers (A)
+								i(167413),	-- Notorious Gladiator's Silk Vestments (A)
 							},
 						}),
 						i(184438, {	-- Ensemble: Notorious Gladiator's Leather Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["g"] = {
 								i(167371),	-- Notorious Gladiator's Greatcloak
-								i(167293),	-- Notorious Gladiator's Leather Belt
-								i(167297),	-- Notorious Gladiator's Leather Bindings
-								i(167274),	-- Notorious Gladiator's Leather Boots
-								i(167275),	-- Notorious Gladiator's Leather Gloves
-								i(167281),	-- Notorious Gladiator's Leather Helm
-								i(167285),	-- Notorious Gladiator's Leather Legguards
-								i(167286),	-- Notorious Gladiator's Leather Spaulders
-								i(167270),	-- Notorious Gladiator's Leather Tunic
+								i(167361),	-- Notorious Gladiator's Leather Armwraps (A)
+								i(167293),	-- Notorious Gladiator's Leather Belt (A)
+								i(167297),	-- Notorious Gladiator's Leather Bindings (A)
+								i(167274),	-- Notorious Gladiator's Leather Boots (A)
+								i(167392),	-- Notorious Gladiator's Leather Cap (A)
+								i(167424),	-- Notorious Gladiator's Leather Chestguard (A)
+								i(167338),	-- Notorious Gladiator's Leather Footguards (A)
+								i(167275),	-- Notorious Gladiator's Leather Gloves (A)
+								i(167339),	-- Notorious Gladiator's Leather Handguards (A)
+								i(167432),	-- Notorious Gladiator's Leather Harness (A)
+								i(167408),	-- Notorious Gladiator's Leather Headpiece (A)
+								i(167281),	-- Notorious Gladiator's Leather Helm (A)
+								i(167345),	-- Notorious Gladiator's Leather Hood (A)
+								i(167416),	-- Notorious Gladiator's Leather Jerkin (A)
+								i(167285),	-- Notorious Gladiator's Leather Legguards (A)
+								i(167350),	-- Notorious Gladiator's Leather Mantle (A)
+								i(167349),	-- Notorious Gladiator's Leather Pants (A)
+								i(167445),	-- Notorious Gladiator's Leather Pauldrons (A)
+								i(167437),	-- Notorious Gladiator's Leather Shoulderguards (A)
+								i(167453),	-- Notorious Gladiator's Leather Shoulderpads (A)
+								i(167400),	-- Notorious Gladiator's Leather Skullguard (A)
+								i(167286),	-- Notorious Gladiator's Leather Spaulders (A)
+								i(167270),	-- Notorious Gladiator's Leather Tunic (A)
+								i(167334),	-- Notorious Gladiator's Leather Vest (A)
+								i(167357),	-- Notorious Gladiator's Leather Waistband (A)
 							},
 						}),
 						i(184440, {	-- Ensemble: Notorious Gladiator's Mail Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["g"] = {
-								i(167296),	-- Notorious Gladiator's Chain Armbands
-								i(167269),	-- Notorious Gladiator's Chain Armor
-								i(167278),	-- Notorious Gladiator's Chain Gauntlets
-								i(167280),	-- Notorious Gladiator's Chain Helm
-								i(167284),	-- Notorious Gladiator's Chain Leggings
-								i(167273),	-- Notorious Gladiator's Chain Sabatons
-								i(167289),	-- Notorious Gladiator's Chain Spaulders
-								i(167292),	-- Notorious Gladiator's Chain Waistguard
+								i(167296),	-- Notorious Gladiator's Chain Armbands (A)
+								i(167269),	-- Notorious Gladiator's Chain Armor (A)
+								i(167333),	-- Notorious Gladiator's Chain Chestguard (A)
+								i(167356),	-- Notorious Gladiator's Chain Clasp (A)
+								i(167391),	-- Notorious Gladiator's Chain Coif (A)
+								i(167456),	-- Notorious Gladiator's Chain Epaulets (A)
+								i(167337),	-- Notorious Gladiator's Chain Footguards (A)
+								i(167278),	-- Notorious Gladiator's Chain Gauntlets (A)
+								i(167342),	-- Notorious Gladiator's Chain Handguards (A)
+								i(167415),	-- Notorious Gladiator's Chain Hauberk (A)
+								i(167399),	-- Notorious Gladiator's Chain Headgear (A)
+								i(167344),	-- Notorious Gladiator's Chain Headpiece (A)
+								i(167280),	-- Notorious Gladiator's Chain Helm (A)
+								i(167284),	-- Notorious Gladiator's Chain Leggings (A)
+								i(167348),	-- Notorious Gladiator's Chain Legguards (A)
+								i(167448),	-- Notorious Gladiator's Chain Mantle (A)
+								i(167440),	-- Notorious Gladiator's Chain Pauldrons (A)
+								i(167273),	-- Notorious Gladiator's Chain Sabatons (A)
+								i(167353),	-- Notorious Gladiator's Chain Shoulderguards (A)
+								i(167407),	-- Notorious Gladiator's Chain Skullcover (A)
+								i(167289),	-- Notorious Gladiator's Chain Spaulders (A)
+								i(167431),	-- Notorious Gladiator's Chain Vest (A)
+								i(167292),	-- Notorious Gladiator's Chain Waistguard (A)
+								i(167360),	-- Notorious Gladiator's Chain Wristguards (A)
+								i(167423),	-- Notorious Gladiator's Chainmail (A)
 								i(167372),	-- Notorious Gladiator's Drape
 							},
 						}),
@@ -2278,57 +2415,86 @@ _.Zones =
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["g"] = {
 								i(167373),	-- Notorious Gladiator's Cape
-								i(167295),	-- Notorious Gladiator's Plate Armguards
-								i(167268),	-- Notorious Gladiator's Plate Chestpiece
-								i(167276),	-- Notorious Gladiator's Plate Gauntlets
-								i(167290),	-- Notorious Gladiator's Plate Girdle
-								i(167266),	-- Notorious Gladiator's Plate Helm
-								i(167282),	-- Notorious Gladiator's Plate Legguards
-								i(167287),	-- Notorious Gladiator's Plate Pauldrons
-								i(167271),	-- Notorious Gladiator's Plate Warboots
+								i(167295),	-- Notorious Gladiator's Plate Armguards (A)
+								i(167414),	-- Notorious Gladiator's Plate Armor (A)
+								i(167422),	-- Notorious Gladiator's Plate Breastplate (A)
+								i(167332),	-- Notorious Gladiator's Plate Chestguard (A)
+								i(167268),	-- Notorious Gladiator's Plate Chestpiece (A)
+								i(167430),	-- Notorious Gladiator's Plate Chestplate (A)
+								i(167354),	-- Notorious Gladiator's Plate Clasp (A)
+								i(167276),	-- Notorious Gladiator's Plate Gauntlets (A)
+								i(167290),	-- Notorious Gladiator's Plate Girdle (A)
+								i(167340),	-- Notorious Gladiator's Plate Gloves (A)
+								i(167397),	-- Notorious Gladiator's Plate Greathelm (A)
+								i(167335),	-- Notorious Gladiator's Plate Greaves (A)
+								i(167330),	-- Notorious Gladiator's Plate Headcover (A)
+								i(167266),	-- Notorious Gladiator's Plate Helm (A)
+								i(167346),	-- Notorious Gladiator's Plate Leg Armor (A)
+								i(167282),	-- Notorious Gladiator's Plate Legguards (A)
+								i(167287),	-- Notorious Gladiator's Plate Pauldrons (A)
+								i(167446),	-- Notorious Gladiator's Plate Shoulderguards (A)
+								i(167351),	-- Notorious Gladiator's Plate Shoulders (A)
+								i(167405),	-- Notorious Gladiator's Plate Skullguard (A)
+								i(167438),	-- Notorious Gladiator's Plate Spaulders (A)
+								i(167359),	-- Notorious Gladiator's Plate Vambraces (A)
+								i(167271),	-- Notorious Gladiator's Plate Warboots (A)
+								i(167389),	-- Notorious Gladiator's Plate Warhelm (A)
+								i(167454),	-- Notorious Gladiator's Shoulderplates (A)
 							},
 						}),
 					--	Corrupted Gladiator, Battle for Azeroth Season 4
 						i(180203, {	-- Ensemble: Corrupted Gladiator's Cloth Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["g"] = {
+								i(172641),	-- Corrupted Gladiator's Silk Amice (A)
+								i(172647),	-- Corrupted Gladiator's Silk Bracers (A)
+								i(172710),	-- Corrupted Gladiator's Silk Chestwrap (A)
 								i(172580),	-- Corrupted Gladiator's Silk Cord (A)
+								i(172687),	-- Corrupted Gladiator's Silk Cover (A)
+								i(172632),	-- Corrupted Gladiator's Silk Cowl (A)
 								i(172583),	-- Corrupted Gladiator's Silk Cuffs (A)
+								i(172728),	-- Corrupted Gladiator's Silk Epaulets (A)
 								i(172566),	-- Corrupted Gladiator's Silk Gloves (A)
+								i(172630),	-- Corrupted Gladiator's Silk Handguards (A)
+								i(172679),	-- Corrupted Gladiator's Silk Helm (A)
 								i(172568),	-- Corrupted Gladiator's Silk Hood (A)
 								i(172572),	-- Corrupted Gladiator's Silk Leggings (A)
 								i(172577),	-- Corrupted Gladiator's Silk Mantle (A)
+								i(172620),	-- Corrupted Gladiator's Silk Raiment (A)
 								i(172556),	-- Corrupted Gladiator's Silk Robe (A)
+								i(172644),	-- Corrupted Gladiator's Silk Sash (A)
+								i(172736),	-- Corrupted Gladiator's Silk Shoulderpads (A)
+								i(172625),	-- Corrupted Gladiator's Silk Slippers (A)
 								i(172561),	-- Corrupted Gladiator's Silk Treads (A)
-								i(172530),	-- Corrupted Gladiator's Silk Cord (H)
-								i(172529),	-- Corrupted Gladiator's Silk Cuffs (H)
-								i(172525),	-- Corrupted Gladiator's Silk Gloves (H)
-								i(172526),	-- Corrupted Gladiator's Silk Hood (H)
-								i(172527),	-- Corrupted Gladiator's Silk Leggings (H)
-								i(172528),	-- Corrupted Gladiator's Silk Mantle (H)
-								i(172523),	-- Corrupted Gladiator's Silk Robe (H)
-								i(172524),	-- Corrupted Gladiator's Silk Treads (H)
+								i(172636),	-- Corrupted Gladiator's Silk Trousers (A)
+								i(172702),	-- Corrupted Gladiator's Silk Vestments (A)
 							},
 						}),
 						i(180204, {	-- Ensemble: Corrupted Gladiator's Leather Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["g"] = {
+								i(172650),	-- Corrupted Gladiator's Leather Armwraps (A)
 								i(172582),	-- Corrupted Gladiator's Leather Belt (A)
 								i(172586),	-- Corrupted Gladiator's Leather Bindings (A)
 								i(172563),	-- Corrupted Gladiator's Leather Boots (A)
+								i(172681),	-- Corrupted Gladiator's Leather Cap (A)
+								i(172713),	-- Corrupted Gladiator's Leather Chestguard (A)
+								i(172627),	-- Corrupted Gladiator's Leather Footguards (A)
 								i(172564),	-- Corrupted Gladiator's Leather Gloves (A)
+								i(172628),	-- Corrupted Gladiator's Leather Handguards (A)
 								i(172570),	-- Corrupted Gladiator's Leather Helm (A)
+								i(172634),	-- Corrupted Gladiator's Leather Hood (A)
+								i(172705),	-- Corrupted Gladiator's Leather Jerkin (A)
 								i(172574),	-- Corrupted Gladiator's Leather Legguards (A)
+								i(172639),	-- Corrupted Gladiator's Leather Mantle (A)
+								i(172638),	-- Corrupted Gladiator's Leather Pants (A)
+								i(172734),	-- Corrupted Gladiator's Leather Pauldrons (A)
+								i(172726),	-- Corrupted Gladiator's Leather Shoulderguards (A)
+								i(172689),	-- Corrupted Gladiator's Leather Skullguard (A)
 								i(172575),	-- Corrupted Gladiator's Leather Spaulders (A)
 								i(172559),	-- Corrupted Gladiator's Leather Tunic (A)
-								i(172537),	-- Corrupted Gladiator's Leather Belt (H)
-								i(172538),	-- Corrupted Gladiator's Leather Bindings (H)
-								i(172532),	-- Corrupted Gladiator's Leather Boots (H)
-								i(172533),	-- Corrupted Gladiator's Leather Gloves (H)
-								i(172534),	-- Corrupted Gladiator's Leather Helm (H)
-								i(172535),	-- Corrupted Gladiator's Leather Legguards (H)
-								i(172536),	-- Corrupted Gladiator's Leather Spaulders (H)
-								i(172531),	-- Corrupted Gladiator's Leather Tunic (H)
+								i(172623),	-- Corrupted Gladiator's Leather Vest (A)
+								i(172646),	-- Corrupted Gladiator's Leather Waistband (A)
 							},
 						}),
 						i(180205, {	-- Ensemble: Corrupted Gladiator's Mail Armor
@@ -2336,41 +2502,53 @@ _.Zones =
 							["g"] = {
 								i(172585),	-- Corrupted Gladiator's Chain Armbands (A)
 								i(172558),	-- Corrupted Gladiator's Chain Armor (A)
+								i(172622),	-- Corrupted Gladiator's Chain Chestguard (A)
+								i(172645),	-- Corrupted Gladiator's Chain Clasp (A)
+								i(172680),	-- Corrupted Gladiator's Chain Coif (A)
+								i(172626),	-- Corrupted Gladiator's Chain Footguards (A)
 								i(172567),	-- Corrupted Gladiator's Chain Gauntlets (A)
+								i(172631),	-- Corrupted Gladiator's Chain Handguards (A)
+								i(172704),	-- Corrupted Gladiator's Chain Hauberk (A)
+								i(172688),	-- Corrupted Gladiator's Chain Headgear (A)
+								i(172633),	-- Corrupted Gladiator's Chain Headpiece (A)
 								i(172569),	-- Corrupted Gladiator's Chain Helm (A)
 								i(172573),	-- Corrupted Gladiator's Chain Leggings (A)
+								i(172637),	-- Corrupted Gladiator's Chain Legguards (A)
+								i(172737),	-- Corrupted Gladiator's Chain Mantle (A)
+								i(172729),	-- Corrupted Gladiator's Chain Pauldrons (A)
 								i(172562),	-- Corrupted Gladiator's Chain Sabatons (A)
+								i(172642),	-- Corrupted Gladiator's Chain Shoulderguards (A)
 								i(172578),	-- Corrupted Gladiator's Chain Spaulders (A)
 								i(172581),	-- Corrupted Gladiator's Chain Waistguard (A)
-								i(172546),	-- Corrupted Gladiator's Chain Armbands (H)
-								i(172539),	-- Corrupted Gladiator's Chain Armor (H)
-								i(172541),	-- Corrupted Gladiator's Chain Gauntlets (H)
-								i(172542),	-- Corrupted Gladiator's Chain Helm (H)
-								i(172543),	-- Corrupted Gladiator's Chain Leggings (H)
-								i(172540),	-- Corrupted Gladiator's Chain Sabatons (H)
-								i(172544),	-- Corrupted Gladiator's Chain Spaulders (H)
-								i(172545),	-- Corrupted Gladiator's Chain Waistguard (H)
+								i(172649),	-- Corrupted Gladiator's Chain Wristguards (A)
+								i(172712),	-- Corrupted Gladiator's Chainmail (A)
 							},
 						}),
 						i(180206, {	-- Ensemble: Corrupted Gladiator's Plate Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["g"] = {
 								i(172584),	-- Corrupted Gladiator's Plate Armguards (A)
+								i(172703),	-- Corrupted Gladiator's Plate Armor (A)
+								i(172711),	-- Corrupted Gladiator's Plate Breastplate (A)
+								i(172621),	-- Corrupted Gladiator's Plate Chestguard (A)
 								i(172557),	-- Corrupted Gladiator's Plate Chestpiece (A)
+								i(172643),	-- Corrupted Gladiator's Plate Clasp (A)
 								i(172565),	-- Corrupted Gladiator's Plate Gauntlets (A)
 								i(172579),	-- Corrupted Gladiator's Plate Girdle (A)
+								i(172629),	-- Corrupted Gladiator's Plate Gloves (A)
+								i(172686),	-- Corrupted Gladiator's Plate Greathelm (A)
+								i(172624),	-- Corrupted Gladiator's Plate Greaves (A)
+								i(172619),	-- Corrupted Gladiator's Plate Headcover (A)
 								i(172555),	-- Corrupted Gladiator's Plate Helm (A)
+								i(172635),	-- Corrupted Gladiator's Plate Leg Armor (A)
 								i(172571),	-- Corrupted Gladiator's Plate Legguards (A)
 								i(172576),	-- Corrupted Gladiator's Plate Pauldrons (A)
+								i(172735),	-- Corrupted Gladiator's Plate Shoulderguards (A)
+								i(172640),	-- Corrupted Gladiator's Plate Shoulders (A)
+								i(172727),	-- Corrupted Gladiator's Plate Spaulders (A)
+								i(172648),	-- Corrupted Gladiator's Plate Vambraces (A)
 								i(172560),	-- Corrupted Gladiator's Plate Warboots (A)
-								i(172554),	-- Corrupted Gladiator's Plate Armguards (H)
-								i(172548),	-- Corrupted Gladiator's Plate Chestpiece (H)
-								i(172550),	-- Corrupted Gladiator's Plate Gauntlets (H)
-								i(172553),	-- Corrupted Gladiator's Plate Girdle (H)
-								i(172547),	-- Corrupted Gladiator's Plate Helm (H)
-								i(172551),	-- Corrupted Gladiator's Plate Legguards (H)
-								i(172552),	-- Corrupted Gladiator's Plate Pauldrons (H)
-								i(172549),	-- Corrupted Gladiator's Plate Warboots (H)
+								i(172678),	-- Corrupted Gladiator's Plate Warhelm (A)
 							},
 						}),
 						i(168920, {	-- Azerite-Encrusted Timequartz (Rank 1)

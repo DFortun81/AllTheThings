@@ -484,6 +484,7 @@ i(162109);	-- [Storm Silver Spurs]
 i(162110);	-- [Disenchanting Rod]
 i(162111);	-- [Monelite Fish Finder]
 i(162111);	-- [Kaleidoscopic Lens]
+i(163826);	-- Raider's Supply Cache
 
 -- Bfa Quest Items
 i(169473);	-- Dormant Scale of the Blue Aspect
