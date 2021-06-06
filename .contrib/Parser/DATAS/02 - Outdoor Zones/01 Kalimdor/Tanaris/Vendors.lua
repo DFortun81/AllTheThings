@@ -792,6 +792,7 @@ _.Zones =
 				}),
 				n(69322,  {	-- Capps Carlin <Cataclysmic Gladiator>
 					["coord"] = { 51.6, 28.0, 71 },
+					["itemID"] = 137642,	-- Mark of Honor
 					["g"] = {
 						n(-319, {	-- Weapons
 							i(146639, {	-- Arsenal: Cataclysmic Gladiator's Weapons

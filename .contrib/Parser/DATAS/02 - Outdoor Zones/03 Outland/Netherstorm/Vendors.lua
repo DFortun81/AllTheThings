@@ -66,6 +66,7 @@ _.Zones =
 				}),
 				n(107619, {	-- Blaze Magmaburn <Brutal and Guardian Gladiator>
 					["coord"] = { 33.2, 64.0, NETHERSTORM },
+					["itemID"] = 137642,	-- Mark of Honor
 					["g"] = {
 						n(-319, {	-- Weapons
 							i(146648, {	-- Arsenal: Brutal Gladiator's Weapons [ Horde / Alliance / Tested ]
@@ -1022,6 +1023,7 @@ _.Zones =
 				}),
 				n(107599, {	-- Izzee the 'Clutch' <Merciless and Veteran's Gladiator>
 					["coord"] = { 33.0, 64.2, NETHERSTORM },
+					["itemID"] = 137642,	-- Mark of Honor
 					["g"] = {
 						n(-319, {	-- Weapons
 							i(146650, {	-- Arsenal: Merciless Gladiator's Weapons [Horde / Alliance / Tested ] { Note: Contains Gladiator/Merciless Sets }
@@ -1736,6 +1738,7 @@ _.Zones =
 				}),
 				n(54650,  {	-- Kezzik the Striker <Gladiator and General's Gladiator>
 					["coord"] = { 33.0, 64.2, NETHERSTORM },
+					["itemID"] = 137642,	-- Mark of Honor
 					["g"] = {
 						n(-319, {	-- Weapons
 							-- -- Never added, combined with Season 2
@@ -2530,6 +2533,7 @@ _.Zones =
 				}),
 				n(107610, {	-- Kitzie Crankshot <Vengeful and Vindicator's Gladiator>
 					["coord"] = { 33.0, 64.2, NETHERSTORM },
+					["itemID"] = 137642,	-- Mark of Honor
 					["g"] = {
 						n(-319, {	-- Weapons
 							i(146649, {	-- Arsenal: Vengeful Gladiator's Weapons [ Horde / Alliance / Tested ]

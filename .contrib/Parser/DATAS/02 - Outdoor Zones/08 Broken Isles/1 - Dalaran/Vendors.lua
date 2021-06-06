@@ -16,6 +16,7 @@ _.Zones =
 				}),
 				n(119486, {	-- Apothecary Lee <Legion Gladiator>
 					["races"] = HORDE_ONLY,
+					["itemID"] = 137642,	-- Mark of Honor
 					["coord"] = { 56.5, 28.1, 627 },
 					["g"] = {
 						un(14, i(147778)),	-- Enchanter's Illusion - Demonic Tyranny
@@ -3283,6 +3284,7 @@ _.Zones =
 				}),
 				n(106930, {	-- Lieutenant Surtees <Legion Gladiator>
 					["races"] = ALLIANCE_ONLY,
+					["itemID"] = 137642,	-- Mark of Honor
 					["coord"] = { 29.4, 75.6, 627 },
 					["g"] = {
 						n(-660, {	-- Aspirant / Combatant PvP Gear Season1+Season2

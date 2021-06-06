@@ -10,6 +10,7 @@ _.Zones =
 				n(VENDORS, {
 					n(30885, {	-- Blazik Fireclaw <Hateful Gladiator>
 						["coord"] = { 59.5, 57.9, 126 },
+						["itemID"] = 137642,	-- Mark of Honor
 						["g"] = {
 							n(-319, {	-- Weapons
 								i(146646, {	-- Arsenal: Hateful Gladiator's Weapons
@@ -658,6 +659,7 @@ _.Zones =
 					}),
 					n(69321, {	-- Herwin Steampop <Deadly Gladiator>
 						["coord"] = { 59.4, 57.8, 126 },
+						["itemID"] = 137642,	-- Mark of Honor
 						["g"] = {
 							n(-319, {	-- Weapons
 								i(146645, {	-- Arsenal: Deadly Gladiator's Weapon
@@ -1311,6 +1313,7 @@ _.Zones =
 					}),
 					n(69318, { 	-- Kylo Kelwin <Furious Gladiator>
 						["coord"] = { 59.0, 57.6, 126 },
+						["itemID"] = 137642,	-- Mark of Honor
 						["g"] = {
 							n(-319, {	-- Weapons
 								i(146644, {	-- Arsenal: Furious Gladiator's Weapons
@@ -2054,6 +2057,7 @@ _.Zones =
 					}),
 					n(40212, { 	-- Trapjaw Rix <Savage Gladiator>
 						["coord"] = { 59.3, 57.3, 126 },
+						["itemID"] = 137642,	-- Mark of Honor
 						["g"] = {
 							n(-319, {	-- Weapons
 								i(146647, {	-- Arsenal: Savage Gladiator's Weapons
@@ -2434,6 +2438,7 @@ _.Zones =
 					}),
 					n(69971, { 	-- Xazi Smolderpipe <Wrathful Gladiator>
 						["coord"] = { 58.5, 58.3, 126 },
+						["itemID"] = 137642,	-- Mark of Honor
 						["g"] = {
 							n(-319, {	-- Weapons
 								i(146642, {	-- Arsenal: Wrathful Gladiator's Weapons
@@ -3076,6 +3081,7 @@ _.Zones =
 					}),
 					n(69973, { 	-- Zom Bocom <Relentless Gladiator>
 						["coord"] = { 59.0, 58.8, 126 },
+						["itemID"] = 137642,	-- Mark of Honor
 						["g"] = {
 							n(-319, {	-- Weapons
 								i(146643, {	-- Arsenal: Relentless Gladiator's Weapons

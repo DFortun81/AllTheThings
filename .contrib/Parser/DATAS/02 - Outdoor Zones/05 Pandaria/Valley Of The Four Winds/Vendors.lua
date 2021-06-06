@@ -31,6 +31,7 @@ _.Zones =
 				n(75694, {	-- Armsmaster Holinka <Tyrannical Gladiator>
 					["coord"] = { 12.0, 34.0, 376 },
 					["races"] = ALLIANCE_ONLY,
+					["itemID"] = 137642,	-- Mark of Honor
 					["g"] = {
 						n(-319, {	-- Weapons
 							i(144246, {	-- Arsenal: Tyrannical Gladiator's Weapons (A)
@@ -986,6 +987,7 @@ _.Zones =
 				n(75692, {	-- Ethan Natice <Grievous Gladiator>
 					["coord"] = { 12.0, 34.2, 376 },
 					["races"] = ALLIANCE_ONLY,
+					["itemID"] = 137642,	-- Mark of Honor
 					["g"] = {
 						n(-319, {	-- Weapons
 							i(144252, {	-- Arsenal: Grievous Gladiator's Weapons (A)
@@ -1873,6 +1875,7 @@ _.Zones =
 				n(75691, {	-- Hayden Christophen <Dreadful Gladiator>
 					["coord"] = { 12.2, 34.2, 376 },
 					["races"] = ALLIANCE_ONLY,
+					["itemID"] = 137642,	-- Mark of Honor
 					["g"] = {
 						cl(DEATHKNIGHT, {
 							i(138715, {	-- Ensemble: Dreadful Gladiator's Dreadplate Armor
@@ -2491,6 +2494,7 @@ _.Zones =
 				n(75689, {	-- Lucan Malory Season 12: Malevolent Gladiator Vendor. Items are tagged as Season 13
 					["coord"] = { 12.2, 34.2, 376 },
 					["races"] = ALLIANCE_ONLY,
+					["itemID"] = 137642,	-- Mark of Honor
 					["g"] = {
 						n(-319, {	-- Weapons
 							i(144243, {	-- Arsenal: Malevolent Gladiator's Weapons
@@ -3561,6 +3565,7 @@ _.Zones =
 				n(78456, {	-- Starlight Sinclair <Prideful Gladiator>
 					["coord"] = { 12.0, 34.0, 376 },
 					["races"] = ALLIANCE_ONLY,
+					["itemID"] = 137642,	-- Mark of Honor
 					["g"] = {
 						n(-319, {	-- Weapons
 							i(144248, {	-- Arsenal: Prideful Gladiator's Weapons (A)
