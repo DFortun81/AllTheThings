@@ -2011,6 +2011,8 @@ _.HiddenQuestTriggers =
 		q(43559),	-- Triggers when turning in Bindings of the Windlord (43558) just prior to getting outlaw rogue hidden appearance
 		q(43671),	-- Hidden Appearance Unlocked (Outlaw Rogue "Emanation of the Winds")
 		q(43661),	-- Hidden Appearance Unlocked (Brewmaster Monk "Legend of the Monkey King")
+		q(43648),	-- Hidden Appearance Unlocked (Unholy DK "The Bonereaper's Hook")
+		q(43650),	-- Hidden Appearance Unlocked (Vengeance DH "Bulwark of the Iron Warden")
 
 		--	Professions
 		--	Archaeology
@@ -2892,6 +2894,7 @@ _.HiddenQuestTriggers =
 		q(51945),	-- Stormsong Valley repeatable random chest
 		q(51946),	-- Stormsong Valley repeatable random chest
 		q(52989),	-- Stormsong Valley repeatable random chest
+		q(53652),	-- Reported as "Alliance BfA: Opened a chest in Stormsong Valley and got this"
 		-- Various
 		q(51695),	-- Horde WarCampaign - "Reclaiming What's Ours" (ID 51696) using the horn to reclaim the Foothold
 		q(55626),	-- first kill of yellow Sabertron

@@ -228,6 +228,9 @@ _.ExpansionFeatures =
 					crit(5),	-- Mort'regar
 					crit(6),	-- The Upper Reaches
 				}),
+				ach(15076, {	-- The Box of Many Things
+					["sourceQuests"] = { 64216 },	-- Tower Knowledge
+				}),
 				ach(14754, {	-- The Forgotten One
 					["sourceQuests"] = { 60272 },	-- The Weak Link
 				}),

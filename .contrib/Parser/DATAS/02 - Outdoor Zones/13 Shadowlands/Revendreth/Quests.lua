@@ -899,16 +899,6 @@ _.Zones =
 					["provider"] = { "n", 168517 },	-- Polemarch Kalisthene
 					["coord"] = { 64.0, 19.1, 1707 },	-- Elysian Hold, Archon's Rise
 				}),
-				q(63579, {	-- A Paladin's Soul
-					["sourceQuests"] = { 63683 },	-- Winter's Sigil
-					["provider"] = { "n", 179356 },	-- Thenios
-					["coord"] = { 62.9, 25.3, KORTHIA },
-					["maps"] = {	-- TODO: not sure if these are strictly scenario maps or if they are additions to Torghast overall.  adding them in the order i went through the floors for the quest
-						1968,	-- TG107_Floor
-						1967,	-- TG106_Floor
-						1969,	-- TG108_Floor
-					},
-				}),
 				q(63584, {	-- A Triumphant Return
 					["sourceQuests"] = { 63590 },	-- The Vesper Rings
 					["provider"] = { "n", 177116 },	-- Polemarch Adrestes
@@ -1034,11 +1024,6 @@ _.Zones =
 					["provider"] = { "n", 177637 },	-- Baroness Vashj
 					["coord"] = { 36.0, 22.4, REVENDRETH },
 				}),
-				q(63581, {	-- Step Into the Light
-					["sourceQuests"] = { 63580 },	-- Wounded Memories
-					["provider"] = { "n", 154629 },	-- Thenios
-					["coord"] = { 40.1, 20.0, BASTION },
-				}),
 				q(63652, {	-- The "Unwelcome" Guests
 					["sourceQuests"] = { 63650 },	-- De-Infiltration
 					["provider"] = { "n", 158653 },	-- Prince Renathal
@@ -1053,17 +1038,6 @@ _.Zones =
 					["sourceQuests"] = { 63728 },	-- Hunting Amid Houses
 					["provider"] = { "n", 177471 },	-- Huln Highmountain
 					["coord"] = { 42.8, 25.2, MALDRAXXUS },
-				}),
-				q(64210, {	-- The Box of Many Things
-				--	TODO: picked up in torghast scenario while on "a paladin's soul" - unsure if this is venthyr-only
-					["sourceQuests"] = { 63579 },	-- A Paladin's Soul (must be on quest)
-					["provider"] = { "n", 179598 },	-- Ve'nish
-					["coord"] = { 42.9, 68.2, 1967 },	-- TG106_Floor (scenario)
-					["maps"] = {	-- TODO: not sure if these are strictly scenario maps or if they are additions to Torghast overall.  adding them in the order i went through the floors for the quest
-						1968,	-- TG107_Floor
-						1967,	-- TG106_Floor
-						1969,	-- TG108_Floor
-					},
 				}),
 				q(63645, {	-- The Dawnkeep Prisoner
 				--	i think this is only for characters who haven't already killed Denathrius, so will have to find a way to check it off for characters who aren't eligible
@@ -1108,21 +1082,10 @@ _.Zones =
 					["provider"] = { "n", 177116 },	-- Polemarch Adrestes
 					["coord"] = { 20.6, 22.8, BASTION },
 				}),
-				q(64216, {	-- Tower Knowledge
-				--	TODO: also not sure if this torghast-related quest is venthyr-only
-					["sourceQuests"] = { 64210 },	-- The Box of Many Things
-					["provider"] = { "n", 164937 },	-- Runecarver
-					["coord"] = { 50.3, 60.4, 1912 },	-- The Runecarver's Oubliette
-				}),
 				q(63683, {	-- Winter's Sigil
 					["sourceQuests"] = { 63682 },	-- The Power of Elune
 					["provider"] = { "n", 178669 },	-- Winter Queen
 					["coord"] = { 45.2, 65.1, ARDENWEALD },
-				}),
-				q(63580, {	-- Wounded Memories
-					["sourceQuests"] = { 63579 },	-- A Paladin's Soul
-					["provider"] = { "n", 177116 },	-- Polemarch Adrestes
-					["coord"] = { 39.9, 20.0, BASTION },
 				}),
 				q(63677, {	-- You Can Only Die
 					["sourceQuests"] = { 63674 },	-- By Your Leave

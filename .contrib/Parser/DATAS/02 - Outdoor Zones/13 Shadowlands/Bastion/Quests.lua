@@ -965,6 +965,16 @@ _.Zones =
 					["provider"] = { "n", 158890 },	-- Bounty Hunter Ta'oku
 					["coord"] = { 32.5, 32.4, BASTION },
 				}),
+				q(63581, {	-- Step Into the Light
+					["sourceQuests"] = { 63580 },	-- Wounded Memories
+					["provider"] = { "n", 154629 },	-- Thenios
+					["coord"] = { 40.1, 20.0, BASTION },
+				}),
+				q(63580, {	-- Wounded Memories
+					["sourceQuests"] = { 63579 },	-- A Paladin's Soul
+					["provider"] = { "n", 177116 },	-- Polemarch Adrestes
+					["coord"] = { 39.9, 20.0, BASTION },
+				}),
 			}),
 		}),
 	}),

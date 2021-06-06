@@ -1525,10 +1525,11 @@ local IsQuestFlaggedCompletedForObject = function(t)
 	if IsQuestFlaggedCompleted(questID) then
 		return 1;
 	end
+	local acctMode = app.MODE_ACCOUNT or app.MODE_DEBUG;
 	-- account-mode: any character is viable to complete the quest, so alt quest completion shouldn't count for this quest
 	-- this quest cannot be obtained if any altQuest is completed on this character and not tracking as account mode
 	-- If the quest has an altQuest which was completed on this character, return shared completed
-	if not app.MODE_ACCOUNT and t.altcollected then
+	if not acctMode and t.altcollected then
 		return 2;
 	end
 	-- If the quest is repeatable, then check other things to determine if it has ever been completed
@@ -1538,7 +1539,7 @@ local IsQuestFlaggedCompletedForObject = function(t)
 		end
 		-- can an alt quest of a repeatable quest be permanent?
 		-- if not considering account-mode, consider the quest completed once if any altquest was also completed
-		if not app.MODE_ACCOUNT and t.altQuests and #t.altQuests > 0 then
+		if not acctMode and t.altQuests then
 			-- If the quest has an altQuest which was completed on this character, return shared completed
 			for i,altQuestID in ipairs(t.altQuests) do
 				-- any altQuest completed on this character, return shared completion
@@ -1555,7 +1556,7 @@ local IsQuestFlaggedCompletedForObject = function(t)
 				return 1;
 			end
 			-- if not considering account-mode tracking, consider the quest completed once if any altquest was also completed
-			if not app.MODE_ACCOUNT and t.altQuests and #t.altQuests > 0 then
+			if not acctMode and t.altQuests then
 				-- If the quest has an altQuest which was completed on this character, return shared completed
 				local isCollected;
 				for i,altQuestID in ipairs(t.altQuests) do
@@ -1582,7 +1583,7 @@ local IsQuestFlaggedCompletedForObject = function(t)
 			end
 
 			-- only consider altquest completion if not on account-mode
-			if wqt_local and not app.MODE_ACCOUNT and t.altQuests and #t.altQuests > 0 then
+			if wqt_local and not acctMode and t.altQuests then
 				local isCollected;
 				for i,altQuestID in ipairs(t.altQuests) do
 					-- any altQuest completed on this character, return shared completion
@@ -1860,7 +1861,7 @@ CreateObject = function(t)
 			t = setmetatable({}, { __index = t });
 		end
 		-- if app.DEBUG_PRINT then print("CreateObject key/value",t.key,t[t.key]); end
-		
+
 		-- if g, then replace each objects in all sub groups with an object version of the table
 		if t.g then
 			-- if app.DEBUG_PRINT then print("CreateObject for sub-groups of",t.key,t[t.key]); end
@@ -3483,6 +3484,36 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			end
 		end
 
+		-- Resolve Cost
+		if paramA == "currencyID" then
+			local costResults = app.SearchForField("currencyIDAsCost", paramB);
+			if costResults and #costResults > 0 then
+				if not root.g then root.g = {} end
+				local usedToBuy = app.CreateNPC(-2);
+				usedToBuy.text = L["CURRENCY_FOR"];
+				if not usedToBuy.g then usedToBuy.g = {}; end
+				for i,o in ipairs(costResults) do
+					-- Currencies need to meet the group requirements as well since the character itself needs to meet those requirements to buy it
+					if app.RecursiveGroupRequirementsFilter(o) then
+						MergeObject(usedToBuy.g, CreateObject(o));
+					end
+				end
+				MergeObject(root.g, usedToBuy);
+			end
+		elseif paramA == "itemID" or (paramA == "s" and group.itemID) then
+			local costResults = group.modItemID and app.SearchForField("itemIDAsCost", group.modItemID) or app.SearchForField("itemIDAsCost", group.itemID or paramB);
+			if costResults and #costResults > 0 then
+				if not root.g then root.g = {} end
+				local usedToBuy = app.CreateNPC(-2);
+				usedToBuy.text = L["CURRENCY_FOR"];
+				if not usedToBuy.g then usedToBuy.g = {}; end
+				for i,o in ipairs(costResults) do
+					MergeObject(usedToBuy.g, CreateObject(o));
+				end
+				MergeObject(root.g, usedToBuy);
+			end
+		end
+
 		-- Special cases
 		-- Don't show nested criteria of achievements
 		if group.g and group.key == "achievementID" then
@@ -4706,7 +4737,7 @@ local function RefreshSavesCallback()
 		AfterCombatCallback(RefreshSavesCallback);
 		return;
 	end
-	
+
 	-- While the player is still waiting for information, wait.
 	if saves and saves < 1 and app.refreshingSaves > 0 then
 		app.refreshingSaves = app.refreshingSaves - 1;
@@ -7530,13 +7561,13 @@ app.CacheHeirlooms = function()
 				if upgrades then
 					SetDataSubMember("HeirloomUpgradeLevels", itemID, upgrades);
 					isWeapon = heirloom.isWeapon;
-					
+
 					local heirloomHeader;
 					for i=1,upgrades,1 do
 						-- Create a non-collectible version of the heirloom item itself to hold the upgrade within the token
 						heirloomHeader = CloneData(heirloom);
 						heirloomHeader.collectible = false;
-						-- put the upgrade object into the header heirloom object					
+						-- put the upgrade object into the header heirloom object
 						heirloomHeader.g = { setmetatable({ ["level"] = i, ["heirloomLevelID"] = itemID, ["u"] = heirloom.u, ["f"] = heirloom.f }, app.BaseHeirloomLevel) };
 
 						-- add the header into the appropriate upgrade token
@@ -7550,7 +7581,7 @@ app.CacheHeirlooms = function()
 			end
 		end
 	end
-	
+
 	-- build groups for each upgrade token
 	-- and copy the set of upgrades into the cached versions of the upgrade tokens so they therefore exist in the main list
 	-- where the sources of the upgrade tokens exist
@@ -7941,7 +7972,7 @@ local itemFields = {
 			rawset(t, "modItemID", t.itemID + (t.modID / 100));
 		else
 			rawset(t, "modItemID", t.itemID);
-		end		
+		end
 		return rawget(t, "modItemID");
 	end,
 	["trackableAsQuest"] = app.ReturnTrue,
@@ -8078,7 +8109,13 @@ local itemFields = {
 		return IsQuestFlaggedCompletedForObject(t) or t.collectedAsCost;
 	end,
 	["collectedAsTransmog"] = function(t)
-		return ATTAccountWideData.Sources[rawget(t, "s")] and (not t.collectibleAsCost or t.collectedAsCost);
+		-- item has no cost use, or cost has been fulfilled
+		-- TODO: find a way to make this lag less... the time it takes to calculate this on account/debug is insane for whatever reason
+		if not t.collectibleAsCost or t.collectedAsCost then
+			return ATTAccountWideData.Sources[rawget(t, "s")];
+		end
+		-- item is still required to be obtained/collected
+		return false;
 	end,
 	["savedAsQuest"] = function(t)
 		return IsQuestFlaggedCompleted(t);
@@ -8243,7 +8280,7 @@ itemHarvesterFields.text = function(t)
 			return link;
 		end
 	end
-	
+
 	t.retries = (t.retries or 0) + 1;
 	if t.retries > 30 then
 		rawset(t, "collected", true);
@@ -8635,7 +8672,7 @@ local RefreshMounts = function(newMountID)
 	-- Think learning multiple mounts at once or multiple mounts without leaving combat
 	-- would fail to update all the mounts, so probably just best to check all mounts if this is triggered
 	-- plus it's not laggy now to do that so it should be fine
-	
+
 	-- if newMountID then
 	-- 	local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(newMountID);
 	-- 	if spellID and isCollected then
@@ -8816,7 +8853,7 @@ local npcFields = {
 	["creatureID"] = function(t)	-- TODO: Do something about this, it's silly.
 		return t.npcID;
 	end,
-	
+
 	["iconAsDefault"] = function(t)
 		return (t.parent and t.parent.headerID == -2 and "Interface\\Icons\\INV_Misc_Coin_01")
 			or app.DifficultyIcons[GetRelativeValue(t, "difficultyID") or 1];
@@ -8980,7 +9017,7 @@ local objectFields = {
 	["model"] = function(t)
 		return app.ObjectModels[t.objectID];
 	end,
-	
+
 	["nameAsAchievement"] = function(t)
 		return NPCNameFromID[t.npcID] or select(2, GetAchievementInfo(t.achievementID));
 	end,
@@ -9360,7 +9397,7 @@ local questFields = {
 	-- Questionable Fields... TODO: Investigate if necessary.
 	["altcollected"] = function(t)
 		-- local LOG = t.questID == 8753 and t.questID;
-		-- if LOG then print(LOG,"checking altCollected") end		
+		-- if LOG then print(LOG,"checking altCollected") end
 		-- determine if an altQuest is considered completed for this quest for this character
 		if t.altQuests then
 			for i,questID in ipairs(t.altQuests) do
@@ -9446,7 +9483,7 @@ app.CollectibleAsQuest = function(t)
 			-- must not be a breadcrumb unless collecting breadcrumbs and is available OR collecting breadcrumbs and in Account-mode OR in Party Sync
 			and (app.MODE_DEBUG
 				or (not t.isBreadcrumb and not t.DisablePartySync)
-				or (app.CollectibleBreadcrumbs and 
+				or (app.CollectibleBreadcrumbs and
 					(app.MODE_ACCOUNT
 					or (app.IsInPartySync and not t.DisablePartySync)
 					or not t.breadcrumbLockedBy)))
@@ -9542,7 +9579,7 @@ app.TryPopulateQuestRewards = function(questObject)
 									MergeObject(item.g, CloneData(data));
 								end
 							end
-							
+
 							-- at least one reward exists, so clear the missing data
 							questObject.missingItem = 0;
 							-- don't let cached groups pollute potentially inaccurate raw Data
@@ -9570,7 +9607,7 @@ app.TryPopulateQuestRewards = function(questObject)
 				currencyID = select(4, GetQuestLogRewardCurrencyInfo(j, questObject.questID));
 				if currencyID then
 					-- if app.DEBUG_PRINT then print("TryPopulateQuestRewards_currencies:found",questObject.questID,currencyID,questObject.missingCurr) end
-					
+
 					currencyID = tonumber(currencyID);
 					local item = { ["currencyID"] = currencyID, ["expanded"] = false, };
 					_cache = SearchForField("currencyID", currencyID);
@@ -13929,6 +13966,21 @@ function app:GetWindow(suffix, parent, onUpdate)
 			end);
 		end
 
+		local function DelayedUpdateCoroutine()
+			while window.delayRemaining > 0 do
+				coroutine.yield();
+				window.delayRemaining = window.delayRemaining - 1;
+			end
+			window:Update(true);
+		end
+		window.DelayedUpdate = function(self)
+			window.delayRemaining = 180;
+			StartCoroutine(window:GetName() .. ":DelayedUpdatePreWarm", function()
+				coroutine.yield();
+				StartCoroutine(window:GetName() .. ":DelayedUpdate", DelayedUpdateCoroutine);
+			end);
+		end
+
 		-- set whether this window lock is persistable between sessions
 		if suffix == "Prime" or suffix == "CurrentInstance" or suffix == "RaidAssistant" or suffix == "WorldQuests" then
 			window.lockPersistable = true;
@@ -14083,7 +14135,7 @@ function app:GetDataCache()
 			db.headerID = -3;
 			table.insert(g, db);
 		end
-		
+
 		-- Factions (Dynamic)
 		--[[
 		-- TODO: Not right now, we have a section already. Refactor that section and use this instead.
@@ -14095,7 +14147,7 @@ function app:GetDataCache()
 		factionsCategory.text = L["FACTIONS"];
 		table.insert(g, factionsCategory);
 		]]--
-		
+
 		-- Flight Paths (Dynamic)
 		local flightPathsCategory = {};
 		flightPathsCategory.g = {};
@@ -14666,7 +14718,7 @@ function app:GetDataCache()
 		BuildGroups(allData, allData.g);
 		app:GetWindow("Unsorted").data = allData;
 		CacheFields(allData);
-		
+
 		-- Update Faction data.
 		--[[
 		-- TODO: Make a dynamic Factions section. It works, but we have one already, so we don't need it.
@@ -14696,7 +14748,7 @@ function app:GetDataCache()
 		end
 		factionsCategory:OnUpdate();
 		]]--
-		
+
 		-- Update Flight Path data.
 		flightPathsCategory.OnUpdate = function(self)
 			for i,_ in pairs(fieldCache["flightPathID"]) do
@@ -14899,7 +14951,6 @@ app:GetWindow("Bounty", UIParent, function(self, force, got)
 		self.data.total = 0;
 		self.data.back = 1;
 		self.data.indent = 0;
-		UpdateGroups(self.data, self.data.g);
 		self.data.visible = true;
 		self:BaseUpdate(true, got);
 	end
@@ -14973,7 +15024,6 @@ app:GetWindow("CosmicInfuser", UIParent, function(self)
 		self.data.indent = 0;
 		self.data.back = 1;
 		BuildGroups(self.data, self.data.g);
-		UpdateGroups(self.data, self.data.g);
 		self:BaseUpdate(true);
 	end
 end);
@@ -15228,7 +15278,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 					self.data.instanceID and app.BaseInstance
 					or self.data.classID and app.BaseCharacterClass
 					or self.data.achID and app.BaseMapWithAchievementID or app.BaseMap);
-				
+
 				-- sort only the top layer of groups if not in an instance, force visible so sort goes through
 				-- print(GetInstanceInfo());
 				-- sort by name if not in an instance
@@ -15236,7 +15286,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 					self.data.visible = true;
 					SortGroup(self.data, "name", nil, false);
 				end
-					
+
 				-- Move all "isRaid" entries to the top of the list.
 				if results.g then
 					local top = {};
@@ -15254,7 +15304,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 
 				-- Expand all symlinks in the minilist for clarity
 				FillSymLinks(self.data, true);
-				
+
 				-- Check to see completion...
 				-- print("build groups");
 				BuildGroups(self.data, self.data.g);
@@ -15593,7 +15643,6 @@ app:GetWindow("ItemFilter", UIParent, function(self)
 						data.indent = 0;
 						data.visible = true;
 						BuildGroups(data, data.g);
-						app.UpdateGroups(data, data.g);
 						if not data.expanded then
 							data.expanded = true;
 							ExpandGroupsRecursively(data, true);
@@ -15606,7 +15655,6 @@ app:GetWindow("ItemFilter", UIParent, function(self)
 					data.progress = 0;
 					data.total = 0;
 					BuildGroups(data, data.g);
-					UpdateGroups(data, data.g);
 					self:BaseUpdate(true);
 					app.VisibilityFilter = visibilityFilter;
 				end,
@@ -15658,6 +15706,70 @@ app:GetWindow("ItemFilter", UIParent, function(self)
 
 		-- Update the window and all of its row data
 		if self.data.OnUpdate then self.data.OnUpdate(self.data, self); end
+		-- soft update since collection content isn't changing within the window normally
+		self:BaseUpdate();
+	end
+end);
+app:GetWindow("ItemFinder", UIParent, function(self, ...)
+	if self:IsVisible() then
+		if not self.initialized then
+			self.initialized = true;
+			local db = {};
+			db.g = {
+				{
+					['text'] = "Update Now",
+					['icon'] = app.asset("ability_monk_roll"),
+					["description"] = "Click this to update the listing. Doing so shall remove all invalid, grey, or white items.",
+					['visible'] = true,
+					['fails'] = 0,
+					['OnClick'] = function(row, button)
+						self:Update(true);
+						return true;
+					end,
+					['OnUpdate'] = app.AlwaysShowUpdate,
+				},
+			};
+			db.OnUpdate = function(t)
+				local g = t.g;
+				if g then
+					local count = #g;
+					if count > 0 then
+						for i=count,1,-1 do
+							if g[i].collected then
+								table.remove(g, i);
+								self.shouldFullRefresh = true;
+							end
+						end
+					end
+					for count=#g,100 do
+						local i = db.currentItemID - 1;
+						if i > 0 then
+							db.currentItemID = i;
+							local t = app.CreateItemHarvester(i);
+							t.parent = db;
+							tinsert(g, t);
+							self.shouldFullRefresh = true;
+						end
+					end
+					self:DelayedUpdate(true);
+					self.delayRemaining = 1;
+				end
+			end;
+			db.text = "Item Finder";
+			db.icon = app.asset("Achievement_Dungeon_GloryoftheRaider");
+			db.description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.\n\nUsing this tool will lag your WoW every 5 seconds. Not sure why - likely a bad Blizzard Database thing.";
+			db.visible = true;
+			db.expanded = true;
+			db.progress = 0;
+			db.total = 0;
+			db.back = 1;
+			db.currentItemID = 200001;
+			self.data = db;
+		end
+		self.data.progress = 0;
+		self.data.total = 0;
+		UpdateGroups(self.data, self.data.g);
+		if self.data.OnUpdate then self.data.OnUpdate(self.data); end
 		self:BaseUpdate(true);
 	end
 end);
@@ -16671,8 +16783,8 @@ app:GetWindow("Random", UIParent, function(self)
 				-- Call to our method and build a list to draw from
 				local method = app.GetDataMember("RandomSearchFilter", "Instance");
 				if method then
-					rerollOption.text = L["REROLL_2"] .. method;
-					method = L["SELECT"] .. method;
+					rerollOption.text = L["REROLL_2"] .. (method ~= "AllTheThings" and L[method:upper()] or method);
+					method = "Select" .. method;
 					local temp = self[method]() or {};
 					local totalWeight = 0;
 					for i,o in ipairs(temp) do
@@ -16712,7 +16824,8 @@ app:GetWindow("Random", UIParent, function(self)
 			for i,o in ipairs(self.data.options) do
 				tinsert(self.data.g, o);
 			end
-			rerollOption.text = L["REROLL_2"] .. app.GetDataMember("RandomSearchFilter", "Instance");
+			local method = app.GetDataMember("RandomSearchFilter", "Instance");
+			rerollOption.text = L["REROLL_2"] .. (method ~= "AllTheThings" and L[method:upper()] or method);
 		end
 
 		-- Update the window and all of its row data
@@ -16720,7 +16833,6 @@ app:GetWindow("Random", UIParent, function(self)
 		self.data.total = 0;
 		self.data.indent = 0;
 		BuildGroups(self.data, self.data.g);
-		UpdateGroups(self.data, self.data.g);
 		self:BaseUpdate(true);
 	end
 end);
@@ -18780,15 +18892,15 @@ app.events.VARIABLES_LOADED = function()
 		AllTheThingsAD = { };
 		_G["AllTheThingsAD"] = AllTheThingsAD;
 	end
-	
+
 	-- Cache the Localized Category Data
 	AllTheThingsAD.LocalizedCategoryNames = setmetatable(AllTheThingsAD.LocalizedCategoryNames or {}, { __index = app.CategoryNames });
 	app.CategoryNames = nil;
-	
+
 	-- Cache the Localized Flight Path Data
 	--AllTheThingsAD.LocalizedFlightPathDB = setmetatable(AllTheThingsAD.LocalizedFlightPathDB or {}, { __index = app.FlightPathDB });
 	--app.FlightPathDB = nil;	-- TODO: Deprecate this.
-	
+
 	-- Cache information about the player.
 	local class, classID = UnitClassBase("player");
 	local raceName, race, raceID = UnitRace("player");
@@ -18816,7 +18928,7 @@ app.events.VARIABLES_LOADED = function()
 		-- Neutral Pandaren or... something else. Scourge? Neat.
 		app.FactionID = 0;
 	end
-	
+
 	LibStub:GetLibrary("LibDataBroker-1.1"):NewDataObject(L["TITLE"], {
 		type = "launcher",
 		icon = app.asset("logo_32x32"),
@@ -18871,7 +18983,7 @@ app.events.VARIABLES_LOADED = function()
 			end
 		end
 	end
-	
+
 	-- Convert over the deprecated AzeriteEssenceRanksPerCharacter table.
 	local azeriteEssenceRanksPerCharacter = GetDataMember("AzeriteEssenceRanksPerCharacter");
 	if azeriteEssenceRanksPerCharacter then
@@ -19270,6 +19382,11 @@ app.events.VARIABLES_LOADED = function()
 			53043, -- Vulture's Nest (Mission Completion)
 			53044,	-- Vulture's Nest (BFA Alliance Outpost Unlock)
 
+		--	Shard Labor
+			61229,	-- forging the Crystal Mallet of the Heralds
+			61191,	-- ringing the Vesper of the Silver Wind
+			61183,	-- looting the Gift of the Silver Wind
+
 			-- etc.
 		}) do
 			-- If this Character has the Quest completed and it is not marked as completed for Account or not for specific Character
@@ -19290,11 +19407,36 @@ app.events.VARIABLES_LOADED = function()
 
 		-- if we ever erroneously add an account-wide quest and find out it isn't (or Blizzard actually fixes it to give acocunt-wide credit)
 		-- put it here so it reverts back to being handled as a normal quest
-		for i,questID in ipairs({
+		for _,questID in ipairs({
 			32008,	-- Audrey Burnhep (A)
 			32009,	-- Varzok (H)
 		}) do
 			accountWideData.OneTimeQuests[questID] = nil;
+		end
+
+		local anyComplete;
+		-- Check for fixing Blizzard's incompetence in consistency for shared account-wide quest eligibility which is only granted to some of the shared account-wide quests
+		for i,questGroup in ipairs({
+			{ 32008, 32009, 31878, 31879, 31880, 31881, 31882, 31883, 31884, 31885, },	-- Pet Battle Intro quests
+		}) do
+			for _,questID in ipairs(questGroup) do
+				-- If this Character has the Quest completed
+				if CompletedQuests[questID] then
+					-- Mark the quest as completed for the Account
+					accountWideData.Quests[questID] = 1;
+					anyComplete = true;
+				end
+			end
+			-- if any of the quest group is considered complete, then the rest need to be 'considered' complete as well since they can never be actually completed on the account
+			if anyComplete then
+				for _,questID in ipairs(questGroup) do
+					-- Mark the quest completion since it's not 'really' completed
+					if not accountWideData.Quests[questID] then
+						accountWideData.Quests[questID] = 2;
+					end
+				end
+			end
+			anyComplete = nil;
 		end
 
 		app:RegisterEvent("QUEST_LOG_UPDATE");
@@ -19325,7 +19467,7 @@ app.events.VARIABLES_LOADED = function()
 		-- even though RefreshData starts a coroutine, this failed to get set one time when called after the coroutine started...
 		app.IsReady = true;
 		-- print("ATT is Ready!");
-		
+
 		RefreshSaves();
 
 		if needRefresh then

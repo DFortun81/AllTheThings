@@ -570,6 +570,11 @@ _.HiddenQuestTriggers = {
 		q(43965),	-- Death Knight Order Hall - Blood Artifact Chosen second
 		q(43966),	-- Death Knight Order Hall - Frost Artifact Chosen
 		q(44404),	-- Death Knight Order Hall - Unholy Artifact Chosen
+		q(44587),	-- Death Knight Order Hall - Tracking Quest: Fallen Steeds A
+		q(44588),	-- Death Knight Order Hall - Tracking Quest: Fallen Steeds B
+		q(44589),	-- Death Knight Order Hall - Tracking Quest: Fallen Steeds C
+		q(44590),	-- Death Knight Order Hall - Tracking Quest: Fallen Steeds D
+		q(44591),	-- Death Knight Order Hall - Tracking Quest: Fallen Steeds E
 		q(44592),	-- Death Knight Order Hall - Mission Table - Unholy Attainment: Essence of Undeath
 		q(44593),	-- Death Knight Order Hall - Mission Table - Unholy Attainment: Essence of Fear
 		q(44594),	-- Death Knight Order Hall - Mission Table - Unholy Attainment: Essence of Shadow

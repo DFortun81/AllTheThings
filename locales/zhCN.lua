@@ -180,7 +180,6 @@ local L = app.L;
 	L.CHANGE_SEARCH_FILTER = "更改搜索过滤";
 	L.CHANGE_SEARCH_FILTER_DESC = "单击此按钮可更改搜索过滤.";
 	--TODO: L.REROLL_2 = "Reroll: ";
-	L.SELECT = "选择";
 	L.NOTHING_TO_SELECT_FROM = "没有什么可以随意选择的.";
 	L.NO_SEARCH_METHOD = "未指定搜索方法.";
 	L.PROFESSION_LIST = "专业列表";
@@ -3048,7 +3047,7 @@ for key,value in pairs({
 	{3, "|CFFFF0000此物品的获得方式已被移除，只能从黑市拍卖行获得。|r", "黑市拍卖行 (9)"}, -- There is Hope -- 9
 	{3, "|CFFFF0000此物品通过TCG卡牌获得，卡牌不再发行，但网络上、黑市拍卖行甚至交易行仍可能出现。国服也可能有积分兑换活动。|r", "TCG卡牌 (10)"}, -- There is Hope -- 10
 	{3, "|CFFFF0000此物品拾取后绑定，但是如果你有召唤首领所需的物品仍可获得。|r", "需要召唤道具 (11)"}, -- There is Hope -- 11
-	{3, "|CFFFF0000This item requires Player vs Player activities or a currency related to those activities. |r", "Requires PvP (12)"}, -- There is Hope --, ""}, -- 12
+	{3, "|CFFFF0000This item or achievement requires Player vs Player activities or a currency related to those activities. |r", "Requires PvP (12)"}, -- There is Hope --, ""}, -- 12
 	{1, "|CFFFF0000你的追随者等级过高，奖励此物品的任务不再刷新。|r", "绝版物资 (13)"}, -- 13
 	{3, "|CFFFF0000此物品无法购买，除非你在对应赛季的PvP评分或排名达标。|r", "PvP Elite/Gladiator (14)"}, -- 14
 	{1, "|CFFFF0000This item has a Source ID (Tempest Keep Legendaries), but can't be learned (training recipes). |r", "Training Recipes / Unlearnable (15)"}, -- 15

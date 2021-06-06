@@ -454,6 +454,9 @@ _.ExpansionFeatures =
 						["coord"] = { 58.5, 56.4, 720 },
 						["lvl"] = 103,
 					}),
+					q(45994, {	-- Investigate the Broken Shore
+						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
+					}),
 					q(42754, {	-- Jump-Capable
 						["classes"] = { DEMONHUNTER },
 						["sourceQuests"] = {
@@ -487,6 +490,13 @@ _.ExpansionFeatures =
 						},
 						["coord"] = { 58.3, 51.5, 721 },
 						["lvl"] = 103,
+					}),
+					q(46333, {	-- Livin' on the Ledge
+						["sourceQuests"] = { 46246 },	-- Strike Them Down
+						["provider"] = { "n", 118316 },	-- Illidari Enforcer
+						["classes"] = { DEMONHUNTER },
+						["coord"] = { 44.0, 62.7, 646 },
+						["maps"] = { 646 },	-- Broken Shore
 					}),
 					q(42681, {	-- Loramus, Is That You?
 						["classes"] = { DEMONHUNTER },
@@ -558,12 +568,37 @@ _.ExpansionFeatures =
 						["maps"] = { 719 },	-- Mardum, the Shattered Abyss
 						["lvl"] = 110,
 					}),
+					q(46725, {	-- Power Outage
+						["sourceQuests"] = { 45385 },	-- We Must be Prepared!
+						["provider"] = { "n", 117709 },	-- Lady S'theno
+						["classes"] = { DEMONHUNTER },
+						["coord"] = { 52.1, 21.3, 646 },
+						["maps"] = { 646 },	-- Broken Shore
+					}),
 					q(42669, {	-- Preparations for Invasion
 						["classes"] = { DEMONHUNTER },
 						["sourceQuests"] = { 42776 },	-- Two Worthies
 						["provider"] = { "n", 98648 },	-- Allari the Souleater
 						["coord"] = { 62.3, 58.8, 721 },
 						["lvl"] = 110,
+					}),
+					q(45764, {	-- Restoring Equilibrium
+						["sourceQuests"] = { 45385 },	-- We Must be Prepared!
+						["provider"] = { "n", 117709 },	-- Lady S'theno
+						["classes"] = { DEMONHUNTER },
+						["coord"] = { 52.1, 21.3, 646 },
+						["maps"] = { 646 },	-- Broken Shore
+					}),
+					q(46266, {	-- Return of the Slayer
+						["sourceQuests"] = {
+							46725,	-- Power Outage
+							45764,	-- Restoring Equilibrium
+							45798,	-- War'zuul the Provoker
+						},
+						["provider"] = { "n", 117709 },	-- Lady S'theno
+						["classes"] = { DEMONHUNTER },
+						["coord"] = { 52.1, 21.3, 646 },
+						["maps"] = { 646 },	-- Broken Shore
 					}),
 					q(41806, {	-- Return to Jace
 						["maps"] = { 627 },
@@ -883,6 +918,13 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 99247 },	-- Kayn Sunfury
 						["sourceQuests"] = { 41807 },	-- Establishing a Connection
 					}),
+					q(45798, {	-- War'zuul the Provoker
+						["sourceQuests"] = { 45385 },	-- We Must be Prepared!
+						["provider"] = { "n", 117709 },	-- Lady S'theno
+						["classes"] = { DEMONHUNTER },
+						["coord"] = { 52.1, 21.3, 646 },
+						["maps"] = { 646 },	-- Broken Shore
+					}),
 					q(45385, {	-- We Must be Prepared!
 						["classes"] = { DEMONHUNTER },
 						["sourceQuests"] = { 45339 },	-- Defense of the Fel Hammer
@@ -914,16 +956,8 @@ _.ExpansionFeatures =
 
 					-- unconfirmed/unsourced
 					q(41064),	-- Cursed Forge of the Nathrezim
-					q(45994, {	-- Investigate the Broken Shore
-						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
-					}),
-					q(46333),	-- Livin' on the Ledge
 					q(41096),	-- Time is of the Essence
 					q(44224),	-- Unleashing our Wrath
-					q(43557, {	-- Assault on Violet Hold: Into the Violet Hold
-						["races"] = ALLIANCE_ONLY,
-						["u"] = REMOVED_FROM_GAME,
-					}),
 				}),
 				n(VENDORS, {
 					n(116621, {	-- Demissya Gladestrider <Illidari Provisioner's Assistant>
@@ -977,7 +1011,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					n(112407, {	-- Falara Nightsong <Illidari Provisioner>
-						["description"] = "|c808080FAIn order to purchase the toy|r |c00FF96AFTiny Set of Warglaives|r|c808080FA, you must have completed the class mount quest|r |cFFFFD700To Fel and Black|r|c808080FA.\n|c808080FAOnce completed you have to unlock all 52 traits on either spec to be able purchase it.|r",
+						["description"] = "|c808080FAIn order to purchase the toy|r |c00FF96AFTiny Set of Warglaives|r|c808080FA, you must have completed the class mount quest|r |cFFFFD700To Fel and Back|r|c808080FA.\n|c808080FAOnce completed you have to unlock all 52 traits on either spec to be able purchase it.|r",
 						["coord"] = { 57.8, 43.5, 720 },
 						["g"] = {
 							i(147537, {	-- A Tiny Set of Warglaives (TOY!)
