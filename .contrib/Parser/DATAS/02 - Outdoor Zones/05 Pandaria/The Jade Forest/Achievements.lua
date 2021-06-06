@@ -32,6 +32,7 @@ _.Zones =
 				ach(7290),	-- How To Strain Your Dragon
 				ach(7291),	-- In a Trail of Smoke
 				ach(7284),	-- Is Another Man's Treasure
+				ach(7381),  -- Restore Balance
 				ach(7997),	-- Riches of Pandaria
 				ach(7289),	-- Shadow Hopper
 				ach(6754, {	-- The Dark Heart of the Mogu
