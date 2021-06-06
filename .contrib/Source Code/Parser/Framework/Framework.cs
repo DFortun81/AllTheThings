@@ -724,7 +724,7 @@ namespace ATT
 
             // clean up any metadata tags
             List<string> keys = data.Keys.ToList();
-            for (int i = 1; i < data.Count; i++)
+            for (int i = 0; i < data.Count; i++)
             {
                 if (keys[i].StartsWith("_"))
                     data.Remove(keys[i]);
