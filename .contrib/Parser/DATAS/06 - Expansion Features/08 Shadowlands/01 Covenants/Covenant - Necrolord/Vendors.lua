@@ -950,7 +950,9 @@ _.ExpansionFeatures =
 							{ 50.68, 71.38, MALDRAXXUS },
 							{ 52.5, 41.2, 1698 },	-- Seat of the Primus
 						},
-						["g"] = {
+						["g"] = sharedData(
+							{ ["customCollect"] = "SL_COV_NEC", }	-- Necrolord
+							, {
 							i(181815, {	-- Armored Bonehoof Tauralus (MOUNT)
 								["cost"] = {
 									{ "c", 1813, 5000 },
@@ -1277,7 +1279,7 @@ _.ExpansionFeatures =
 									{ "c", 1885, 50 },
 								},
 							}),
-						},
+						}),
 					}),
 					n(175312, {	-- Taiya Tacere <Heroic Nathrian Warsmith>
 						["coord"] = { 61.2, 47.4, 1698 },
