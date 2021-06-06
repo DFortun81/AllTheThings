@@ -725,7 +725,7 @@ _.Zones =
 					["provider"] = { "n", 22278 },	-- High Priest Orglum
 					["coord"] = { 37.5, 50.8, TEROKKAR_FOREST },
 					-- TODO: verify sourceQuest. I was able to pick it up without doing Missing Friends as of 8.Dec.2019. Friendly with lower city, "Sha'tari Base Camp" quests completed
-					--["sourceQuest"] = 10852,	-- Missing Friends
+					["sourceQuest"] = 10852,	-- Missing Friends
 				}),
 				q(10869, {	-- Thin the Flock
 					["provider"] = { "n", 18713 },	-- Lieutenant Gravelhammer
