@@ -242,7 +242,7 @@ _.Zones =
 									i(185879),	-- Vault Guardian's Gauntlets
 									i(185882),	-- Vault Guardian's Girdle*
 									i(186751),	-- Vault Guardian's Handguards
-									i(185876),	-- Vault Guardian's Helm
+									i(185876),	-- Vault Guardian's Helm*
 									i(185880),	-- Vault Guardian's Legguards
 									i(186752),	-- Vault Guardian's Legplates
 									i(185881),	-- Vault Guardian's Pauldrons

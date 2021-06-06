@@ -892,18 +892,6 @@ _.Zones =
 				}),
 				-------------------------------------------------
 				
-				q(63592, {	-- A New Path
-				--	currently takes place on a 'nil' map, may need another mapID added via ["maps"] later
-				--	TODO: grants "a new path" criteria of "chains of domination" achievement, add to whichever zone these quests wind up being in
-					["sourceQuests"] = { 63584 },	-- A Triumphant Return
-					["provider"] = { "n", 168517 },	-- Polemarch Kalisthene
-					["coord"] = { 64.0, 19.1, 1707 },	-- Elysian Hold, Archon's Rise
-				}),
-				q(63584, {	-- A Triumphant Return
-					["sourceQuests"] = { 63590 },	-- The Vesper Rings
-					["provider"] = { "n", 177116 },	-- Polemarch Adrestes
-					["coord"] = { 20.6, 22.8, BASTION },
-				}),
 				q(63678, {	-- Akarek Avenged
 					["sourceQuests"] = {
 						63677,	-- You Can Only Die
@@ -920,20 +908,10 @@ _.Zones =
 					},
 					["coord"] = { 34.0, 9.65, REVENDRETH },
 				}),
-				q(63585, {	-- Blind Loyalty
-					["sourceQuests"] = { 63583 },	-- I Intend to Live Forever
-					["provider"] = { "n", 177116 },	-- Polemarch Adrestes
-					["coord"] = { 39.9, 20.0, BASTION },
-				}),
 				q(63674, {	-- By Your Leave
 					["sourceQuests"] = { 63990 },	-- The Blade in the Night
 					["provider"] = { "n", 177435 },	-- Khaliiq
 					["coord"] = { 42.1, 23.2, MALDRAXXUS },
-				}),
-				q(63586, {	-- Compassion in Devotion
-					["sourceQuests"] = { 63585 },	-- Blind Loyalty
-					["provider"] = { "n", 160037 },	-- Polemarch Adrestes
-					["coord"] = { 66.5, 16.5, 1707 },	-- Elysian Hold, Archon's Rise
 				}),
 				q(63646, {	-- Convoy of the Covenants
 					["sourceQuests"] = { 63644 },	-- Dread Tidings
@@ -953,25 +931,10 @@ _.Zones =
 					["provider"] = { "n", 177644 },	-- Prince Renathal
 					["coord"] = { 25.0, 27.9, REVENDRETH },
 				}),
-				q(63589, {	-- Directing Dedication
-					["sourceQuests"] = { 63586 },	-- Compassion in Devotion
-					["provider"] = { "n", 177116 },	-- Polemarch Adrestes
-					["coord"] = { 24.3, 30.2, BASTION },
-				}),
-				q(63582, {	-- He Was My Student
-					["sourceQuests"] = { 63581 },	-- Step Into the Light
-					["provider"] = { "n", 177116 },	-- Polemarch Adrestes
-					["coord"] = { 39.9, 20.0, BASTION },
-				}),
 				q(64092, {	-- Hunting Huln
 					["sourceQuests"] = { 63679 },	-- Magical Mystery Tour!
 					["provider"] = { "n", 177962 },	-- Lady Moonberry
 					["coord"] = { 25.3, 29.0, REVENDRETH },
-				}),
-				q(63583, {	-- I Intend to Live Forever
-					["sourceQuests"] = { 63582 },	-- He Was My Student
-					["provider"] = { "n", 177112 },	-- Uther
-					["coord"] = { 40.1, 20.3, BASTION },
 				}),
 				q(64437, {	-- Inform the Primus
 					["sourceQuests"] = { 63683 },	-- Winter's Sigil
@@ -1003,16 +966,6 @@ _.Zones =
 					["sourceQuests"] = { 64090 },	-- The Big Squeeze
 					["provider"] = { "n", 177967 },	-- Lady Moonberry
 					["coord"] = { 35.6, 22.6, REVENDRETH },
-				}),
-				q(63588, {	-- Rebuilding Faith
-					["sourceQuests"] = { 63586 },	-- Compassion in Devotion
-					["provider"] = { "n", 177300 },	-- Fallen Disciple Nikolon
-					["coord"] = { 24.4, 30.1, BASTION },
-				}),
-				q(63587, {	-- Reclaimable Anima
-					["sourceQuests"] = { 63586 },	-- Compassion in Devotion
-					["provider"] = { "n", 177123 },	-- Kleia
-					["coord"] = { 24.2, 30.0, BASTION },
 				}),
 				q(64042, {	-- Rituals of Night
 					["sourceQuests"] = { 63681 },	-- Back to The Heart
@@ -1072,15 +1025,6 @@ _.Zones =
 					["sourceQuests"] = { 63646 },	-- Convoy of the Covenants
 					["provider"] = { "n", 165866 },	-- The Stonewright
 					["coord"] = { 34.3, 22.0, REVENDRETH },
-				}),
-				q(63590, {	-- The Vesper Rings
-					["sourceQuests"] = {
-						63589,	-- Directing Dedication
-						63588,	-- Rebuilding Faith
-						63587,	-- Reclaimable Anima
-					},
-					["provider"] = { "n", 177116 },	-- Polemarch Adrestes
-					["coord"] = { 20.6, 22.8, BASTION },
 				}),
 				q(63683, {	-- Winter's Sigil
 					["sourceQuests"] = { 63682 },	-- The Power of Elune

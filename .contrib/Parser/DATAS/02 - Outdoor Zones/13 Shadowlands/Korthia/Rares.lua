@@ -6,7 +6,7 @@ _.Zones =
 	m(SHADOWLANDS, {
 		m(KORTHIA, {
 			n(RARES, {
-			--	TODO: visual presentation of achievement criteria does not currently match its output - 2 criteria in the middle are missing, pushing everything else 2 spaces away and making the last 2 criteria not show up at all.  check back and ensure everything is correct
+			--	TODO: note about covenant rare mounts (Escaped Wilderling, Fleshwing, Stygian Stonecrusher, & Wild Worldcracker): SS mount is currently bugged so not sure if it can be summoned by any covenant, but EW mount can be - not sure if this is similar to harika/valfir mounts or if this is a PTR bug
 				i(187216),	-- Soultwining Crescent
 				n(179769, {	-- Consumption
 				--	triggered 64280 and 64281 on my first kill, on subsequent days it's no longer 'rare,' and no quests pop, and it's also not lootable and doesn't grant achievement credit.  probably bugged but i'm not sure which quest to attach
@@ -37,7 +37,6 @@ _.Zones =
 					},
 				}),
 				n(180014, {	-- Escaped Wilderling
-				--	64572 triggered when killing it for the first time since reset on Slumbering, unsure if this is NF-specific, weekly, daily, or what it indicates...
 					["description"] = "Requires a |cFFA330C9Night Fae|r to start.",
 					["questID"] = 64320,
 					["isDaily"] = true,
@@ -47,10 +46,15 @@ _.Zones =
 						crit(7, {	-- Escaped Wilderling
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
+						i(187281, {	-- Wilderling Saddle
+							["questID"] = 64528,	-- Wilderling Saddle
+							["g"] = {
+								i(186492),	-- Summer Wilderling (MOUNT!)
+							},
+						}),
 						i(187278, {	-- Talon-Pierced Mawsworn Lockbox
 						--	["description"] = "Can contain items from the Korthian sets.",	-- actually not sure about this, i've just gotten 1 specific item so far that doesn't seem to be part of the sets
 							["g"] = {	-- TODO: commented mount because i haven't received it and it isn't explicitly listed as coming from the rare in the journal like the others.  if it is NF-only it needs to be marked here + in the mount section
-							--	i(186492),	-- Summer Wilderling (MOUNT!)
 							--	i(187246),	-- Death-Enveloped Pauldrons (not sure about this one, a stranger said they got it from the cache)
 								i(187395),	-- Reinforced Stygian Spaulders
 							},
@@ -292,4 +296,8 @@ _.Zones =
 			}),
 		}),
 	}),
+};
+
+_.HiddenQuestTriggers = {
+	q(64572),	-- i think this is a daily lockout for receiving a Soultwining Crescent from a rare
 };

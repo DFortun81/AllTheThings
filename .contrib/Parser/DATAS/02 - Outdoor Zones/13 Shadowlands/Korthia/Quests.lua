@@ -593,6 +593,7 @@ _.Zones =
 				--	i(186705),	-- Gold Filled Chalice (didn't do daily on this character so not sure how much it contains)
 				--	i(186688),	-- Gold Filled Wash Bucket
 				--	i(186691),	-- Gold Filled Satchel
+				--	i(186706),	-- Gold Filled Hat
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 179221 },	-- Rendle
 					["isDaily"] = true,

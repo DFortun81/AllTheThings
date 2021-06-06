@@ -312,6 +312,7 @@ _.Zones =
 						{ 58.8, 33.6, KORTHIA },	-- Relic Cache
 						{ 59.8, 35.9, KORTHIA },	-- Relic Cache
 						{ 60.3, 39.0, KORTHIA },	-- Relic Cache
+						{ 60.8, 35.0, KORTHIA },	-- Relic Cache
 						{ 61.0, 32.9, KORTHIA },	-- Relic Cache
 						{ 61.4, 38.1, KORTHIA },	-- Relic Cache
 						{ 62.4, 37.5, KORTHIA },	-- Relic Cache
@@ -357,6 +358,7 @@ _.Zones =
 						{ 58.8, 33.6, KORTHIA },	-- Relic Cache
 						{ 59.8, 35.9, KORTHIA },	-- Relic Cache
 						{ 60.3, 39.0, KORTHIA },	-- Relic Cache
+						{ 60.8, 35.0, KORTHIA },	-- Relic Cache
 						{ 61.0, 32.9, KORTHIA },	-- Relic Cache
 						{ 61.4, 38.1, KORTHIA },	-- Relic Cache
 						{ 62.4, 37.5, KORTHIA },	-- Relic Cache
@@ -402,6 +404,7 @@ _.Zones =
 						{ 58.8, 33.6, KORTHIA },	-- Relic Cache
 						{ 59.8, 35.9, KORTHIA },	-- Relic Cache
 						{ 60.3, 39.0, KORTHIA },	-- Relic Cache
+						{ 60.8, 35.0, KORTHIA },	-- Relic Cache
 						{ 61.0, 32.9, KORTHIA },	-- Relic Cache
 						{ 61.4, 38.1, KORTHIA },	-- Relic Cache
 						{ 62.4, 37.5, KORTHIA },	-- Relic Cache
@@ -447,6 +450,7 @@ _.Zones =
 						{ 58.8, 33.6, KORTHIA },	-- Relic Cache
 						{ 59.8, 35.9, KORTHIA },	-- Relic Cache
 						{ 60.3, 39.0, KORTHIA },	-- Relic Cache
+						{ 60.8, 35.0, KORTHIA },	-- Relic Cache
 						{ 61.0, 32.9, KORTHIA },	-- Relic Cache
 						{ 61.4, 38.1, KORTHIA },	-- Relic Cache
 						{ 62.4, 37.5, KORTHIA },	-- Relic Cache

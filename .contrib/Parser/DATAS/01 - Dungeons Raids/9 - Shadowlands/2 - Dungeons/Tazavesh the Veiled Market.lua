@@ -4,13 +4,13 @@
 
 _.Instances = { tier(9, {	-- Shadowlands
 	inst(1194, {	-- Tazavesh, the Veiled Market
-	--	TODO: add entrance coord/maps - presumably eventually there will be achievements to add here as well
-	--	["coord"] = {  },
-		["maps"] = {
+		["coord"] = { 88.9, 44.3, 2016 },
+		["maps"] = {	-- TODO: assign maps their proper names
 			1989,	-- The Veiled Market
-		--	,	-- The Menagerie
-		--	,	-- The Mail Room
-		--	,	-- The Speak Easy
+			2016,	-- Tazavesh, the Veiled Market
+			1990,	-- The Menagerie
+			1991,	-- The Mail Room
+			1992,	-- The Speak Easy
 		--	,	-- Stormheim
 		--	,	-- Aggramar's Vault
 		--	,	-- Boralus
@@ -21,6 +21,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 			--	TODO: add fp to fpdb, add coords when (presumably) this gets its own map and isn't just on the main SL 1550
 			filter(101, {	-- Battle Pets
 			--	there are some caged Child of Jani at the entrance of the dungeon (npcID 143198), haven't been through the dungeon to know if these pets are found independently outside of secondary pets in those encounters
+			--	^ looks like this has changed - there are still caged animals at the entrance, but they aren't battle pets
 				pet(3108, {	-- Curious Purrkin
 				--	["cr"] = ,	-- 
 				}),
@@ -36,22 +37,49 @@ _.Instances = { tier(9, {	-- Shadowlands
 			}),
 			n(FLIGHT_PATHS, {
 				fp(2703, {	-- 9.1, Tazavesh (Broker Dungeon)
-				--	["coord"] = { , ,  },	-- 
+					["coord"] = { 91.9, 41.9, 2016 },
+					["cr"] = 178796,	-- Ta'rellano
 				}),
 			}),
 			n(QUESTS, {
 				q(63986, {	-- Tazavesh: Raiders of the Lost Artifact
 					["sourceQuests"] = { 63985 },	-- The Veiled Market
 					["provider"] = { "n", 178908 },	-- Al'dalil
-				--	["coord"] = { , ,  },	-- TODO when this (presumably) gets its own map and isn't just on the main SL 1550
+					["coord"] = { 86.7, 48.3, 2016 },
 				}),
+			}),
+			n(VENDORS, {
+				["description"] = "All these vendors can be found just inside the entrance to the dungeon.",
+				["g"] = {
+					n(180130, {	-- Antique Vendor
+						i(187179),	-- Glow Sticks
+					}),
+					n(180114, {	-- Fruit Vendor
+						i(187171),	-- Organic Melon
+					}),
+					n(180117, {	-- Meat Vendor
+						i(187173),	-- Wriggling Tentacle
+					}),
+					n(180129, {	-- Toy Vendor
+						i(104324),	-- Foot Ball (TOY!)
+						i(187178),	-- Sc'ootie's Favorite Plushie
+					}),
+				},
 			}),
 			d(23, {	-- Mythic
 				["difficulties"] = { 8, 23 },
 				["g"] = {
 					e(2437, {	-- Zo'phex the Sentinel
-					--	["crs"] = {  },	-- 
+						["cr"] = 175616,	-- Zo'phex
 						["g"] = {
+							ach(15109, {	-- Will it Blend?
+								["cost"] = {
+									{ "i", 187179, 1 },	-- Glow Sticks
+									{ "i", 187171, 1 },	-- Organic Melon
+									{ "i", 187178, 1 },	-- Sc'ootie's Favorite Plushie
+									{ "i", 187173, 1 },	-- Wriggling Tentacle
+								},
+							}),
 							i(183468),	-- Born Anew
 							i(183498),	-- Cloaked in Shadows
 							i(182110),	-- Crippling Hex
@@ -68,7 +96,11 @@ _.Instances = { tier(9, {	-- Shadowlands
 						},
 					}),
 					e(2454, {	-- The Menagerie
-					--	["crs"] = {  },	-- 
+						["crs"] = {
+							176555,	-- Achillite
+							176556,	-- Alcruux
+							176705,	-- Venza Goldfuse
+						},
 						["g"] = {
 							i(184587),	-- Ambuscade
 							i(181512),	-- Dizzying Tumble
@@ -86,8 +118,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 						},
 					}),
 					e(2436, {	-- Mailroom Mayhem
-					--	["crs"] = {  },	-- 
+						["cr"] = 175646,	-- P.O.S.T Master
 						["g"] = {
+							ach(15106),	-- Quality Control
 							i(182584),	-- Cheetah's Vigor
 							i(181837),	-- Clear Mind
 							i(182461),	-- Echoing Blessings
@@ -107,6 +140,12 @@ _.Instances = { tier(9, {	-- Shadowlands
 					e(2452, {	-- Au'myza's Oasis
 					--	["crs"] = {  },	-- 
 						["g"] = {
+							i(182460),	-- Accrued Vitality
+							i(183470),	-- Born of the Wilds
+							i(182656),	-- Disturb the Peace
+							i(181508),	-- Fortifying Ingredients
+							i(182106),	-- Refreshing Waters
+							i(181464),	-- Winter's Protection
 							i(185783),	-- Yasahm the Riftbreaker
 							i(185812),	-- Acoustically Alluring Censer
 							i(185842),	-- Ornately Engraved Amplifier
@@ -119,6 +158,12 @@ _.Instances = { tier(9, {	-- Shadowlands
 					e(2451, {	-- So'azmi
 					--	["crs"] = {  },	-- 
 						["g"] = {
+							i(181707),	-- Diverted Energy
+							i(182449),	-- Resolute Barrier
+							i(182605),	-- Tactical Retreat
+							i(181826),	-- Translucent Image
+							i(182132),	-- Unending Grip
+							i(182318),	-- Viscous Ink
 							i(185778),	-- First Fist of the So Cartel
 							i(185843),	-- Duplicating Drape
 							i(185782),	-- Robes of Midnight Bargains
@@ -131,6 +176,13 @@ _.Instances = { tier(9, {	-- Shadowlands
 					e(2448, {	-- Hylbrande
 					--	["crs"] = {  },	-- 
 						["g"] = {
+							ach(15179),	-- This is Fine
+							i(182105),	-- Astral Projection
+							i(180943),	-- Cacophonous Roar
+							i(182336),	-- Golden Path
+							i(181373),	-- Harm Denial
+							i(183501),	-- Rushed Setup
+							i(183467),	-- Tireless Pursuit
 							i(185810),	-- Skyreaver, Greataxe of the Keepers
 							i(185779),	-- Spire of Expurgation
 							i(185805),	-- Hyldebrande's Retrofitted Shoulderguards
@@ -143,6 +195,12 @@ _.Instances = { tier(9, {	-- Shadowlands
 					e(2449, {	-- Timecap'n Hooktail
 					--	["crs"] = {  },	-- 
 						["g"] = {
+							i(181498),	-- Grounding Surge
+							i(181975),	-- Hardened Bones
+							i(183502),	-- Prepared for All
+							i(182469),	-- Rejuvenating Wind
+							i(182466),	-- Shade of Terror
+							i(180842),	-- Stalwart Guardian
 							i(185823),	-- Fatebreaker, Destroyer of Futures
 							i(185841),	-- Timetwister Tulwar
 							i(185795),	-- Cowl of Branching Fate
@@ -155,6 +213,15 @@ _.Instances = { tier(9, {	-- Shadowlands
 					e(2455, {	-- So'leah
 					--	["crs"] = {  },	-- 
 						["g"] = {
+							ach(15178),	-- Fake It 'Til You Make It
+							ach(15177),	-- Tazavesh, the Veiled Market
+							i(181838),	-- Charitable Soul
+							i(182304),	-- Divine Call
+							i(182316),	-- Fel Defender
+							i(183466),	-- Innate Resolve
+							i(181510),	-- Lingering Numbness
+							i(182480),	-- Reversal of Fortune
+							i(182109),	-- Totemic Surge
 							i(185822),	-- Staff of Fractured Spacetime
 							i(185819),	-- Event Horizon's Edge
 							i(185785),	-- Embrace of the Relicbinder

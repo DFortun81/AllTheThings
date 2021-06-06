@@ -10,6 +10,7 @@ _.Achievements =
 			ach(14295),	-- Bountiful Harvest
 			ach(14374),	-- Couple's Therapy
 			ach(14323),	-- ExSPEARiential
+			ach(15178),	-- Fake It 'Til You Make It
 			ach(14607),	-- Fresh Meat!
 			ach(14347),	-- Full Gores Meal
 			ach(14296),	-- Going Viral
@@ -54,6 +55,7 @@ _.Achievements =
 			}),
 			ach(14352),	-- Nobody Puts Denathrius in a Corner
 			ach(14567),	-- Picking Up the Pieces
+			ach(15106),	-- Quality Control
 			ach(14285),	-- Ready for Raiding VII
 			ach(14286),	-- Residue Evil
 			ach(14292),	-- Riding with my Slimes
@@ -67,12 +69,15 @@ _.Achievements =
 				crit(6),	-- Sixth Toy
 			}),
 			ach(14320),	-- Surgeon's Supplies
+			ach(15177),	-- Tazavesh, the Veiled Market
 			ach(14606),	-- Thinking with...
+			ach(15179),	-- This is Fine
 			ach(14297, {	-- Three Choose One
 				crit(1),	-- Paceran the Virulent
 				crit(2),	-- Sathel the Accursed
 				crit(3),	-- Dessia the Decapitator
 			}),
+			ach(15109),	-- Will it Blend?
 		}),
 	}),
 };

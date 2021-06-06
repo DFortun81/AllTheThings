@@ -20,16 +20,6 @@ _.Zones =
 								crit(2),	-- Kearnen the Blade
 								crit(3),	-- Winslow Swan
 							}),
-							ach(15042, {	-- Tea for the Troubled
-								crit(1),	-- Simone
-								crit(2),	-- Laurent
-								crit(3),	-- CryptKeeper Kassir
-								crit(4),	-- The Countess
-								crit(5),	-- Temel
-								crit(6),	-- Lost Sybille
-								crit(7),	-- Vulca
-								crit(8),	-- Watchmaster Boromod
-							}),
 							ach(15044, {	-- Krrprripripkraak's Heroes
 								crit(1),	-- Elder Gwenna
 								crit(2),	-- Foreman Thorodir
@@ -48,7 +38,6 @@ _.Zones =
 					}),
 					ach(15033, {	-- Taking the Tremaculum
 						crit(4),	-- Fangcrack's Fan Club
-						crit(5),	-- A Tea for Every Occasion
 						crit(7),	-- If Even One is Worthy
 						crit(8),	-- They Grow Up So Quickly
 					}),
@@ -491,6 +480,50 @@ _.Zones =
 					["coord"] = { 29.9, 17.1, THE_MAW },
 					["g"] = {
 						n(QUESTS, {
+							q(63837, {	-- A Tea for Every Occasion
+								["provider"] = { "n", 178178 },	-- Theotar
+								["isWeekly"] = true,
+								["coord"] = { 29.6, 17.9, THE_MAW },
+								["g"] = {
+									crit(5, {	-- A Tea for Every Occasion
+										["achievementID"] = 15034,	-- Wings Against the Flames
+									}),
+									ach(15042, {	-- Tea for the Troubled
+										crit(1, {	-- Simone
+										--	["coord"] = { , , THE_MAW },
+										--	["cr"] = ,	-- 
+										}),
+										crit(2, {	-- Laurent
+										--	["coord"] = { , , THE_MAW },
+										--	["cr"] = ,	-- 
+										}),
+										crit(3, {	-- Archivist Fane
+										--	["coord"] = { , , THE_MAW },
+										--	["cr"] = ,	-- 
+										}),
+										crit(4, {	-- The Countess
+											["coord"] = { 24.8, 17.4, THE_MAW },
+											["cr"] = 179473,	-- The Countess
+										}),
+										crit(5, {	-- Kael'thas Sunstrider
+											["coord"] = { 27.0, 18.5, THE_MAW },
+											["cr"] = 179475,	-- Kael'thas Sunstrider
+										}),
+										crit(6, {	-- Lost Sybille
+										--	["coord"] = { , , THE_MAW },
+										--	["cr"] = ,	-- 
+										}),
+										crit(7, {	-- Vulca
+										--	["coord"] = { , , THE_MAW },
+										--	["cr"] = ,	-- 
+										}),
+										crit(8, {	-- Iven
+											["coord"] = { 32.7, 14.8, THE_MAW },
+											["cr"] = 179478,	-- Iven
+										}),
+									}),
+								},
+							}),
 							q(63838, {	-- Duelist's Challenge
 								["provider"] = { "n", 178105 },	-- Nadjia the Mistblade
 								["isWeekly"] = true,
