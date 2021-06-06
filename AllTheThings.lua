@@ -1522,10 +1522,11 @@ local IsQuestFlaggedCompletedForObject = function(t)
 	if IsQuestFlaggedCompleted(questID) then
 		return 1;
 	end
+	local acctMode = app.MODE_ACCOUNT or app.MODE_DEBUG;
 	-- account-mode: any character is viable to complete the quest, so alt quest completion shouldn't count for this quest
 	-- this quest cannot be obtained if any altQuest is completed on this character and not tracking as account mode
 	-- If the quest has an altQuest which was completed on this character, return shared completed
-	if not app.MODE_ACCOUNT and t.altcollected then
+	if not acctMode and t.altcollected then
 		return 2;
 	end
 	-- If the quest is repeatable, then check other things to determine if it has ever been completed
@@ -1535,7 +1536,7 @@ local IsQuestFlaggedCompletedForObject = function(t)
 		end
 		-- can an alt quest of a repeatable quest be permanent?
 		-- if not considering account-mode, consider the quest completed once if any altquest was also completed
-		if not app.MODE_ACCOUNT and t.altQuests and #t.altQuests > 0 then
+		if not acctMode and t.altQuests then
 			-- If the quest has an altQuest which was completed on this character, return shared completed
 			for i,altQuestID in ipairs(t.altQuests) do
 				-- any altQuest completed on this character, return shared completion
@@ -1552,7 +1553,7 @@ local IsQuestFlaggedCompletedForObject = function(t)
 				return 1;
 			end
 			-- if not considering account-mode tracking, consider the quest completed once if any altquest was also completed
-			if not app.MODE_ACCOUNT and t.altQuests and #t.altQuests > 0 then
+			if not acctMode and t.altQuests then
 				-- If the quest has an altQuest which was completed on this character, return shared completed
 				local isCollected;
 				for i,altQuestID in ipairs(t.altQuests) do
@@ -1579,7 +1580,7 @@ local IsQuestFlaggedCompletedForObject = function(t)
 			end
 
 			-- only consider altquest completion if not on account-mode
-			if wqt_local and not app.MODE_ACCOUNT and t.altQuests and #t.altQuests > 0 then
+			if wqt_local and not acctMode and t.altQuests then
 				local isCollected;
 				for i,altQuestID in ipairs(t.altQuests) do
 					-- any altQuest completed on this character, return shared completion
