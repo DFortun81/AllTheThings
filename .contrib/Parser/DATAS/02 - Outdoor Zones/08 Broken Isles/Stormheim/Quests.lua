@@ -372,12 +372,6 @@ _.Zones =
 					["coord"] = { 36.7, 31.0, 634 },
 					["sourceQuests"] = { 38362 },	-- A Grim Trophy
 				}),
-				q(44783, {	-- From Bones They Rise
-					["provider"] = { "n", 116737 },	-- Minerva Ravensorrow
-					["coord"] = { 51.3, 84.3, 648 },
-					["classes"] = { DEATHKNIGHT },
-					["sourceQuest"] = 44775, -- The Peak of Bones
-				}),
 				q(40568, {	-- Fury of the Storm
 					["providers"] = {
 						{ "n", 91249 },	-- Vethir
@@ -778,14 +772,6 @@ _.Zones =
 						i(132788),	-- Yotnar's Turmoil
 					},
 				}),
-				q(44787, {	-- The Bonemother
-					["provider"] = { "n", 116737 },	-- Minerva Ravensorrow
-					["classes"] = { DEATHKNIGHT },
-					["sourceQuests"] = {
-						44783, -- From Bones They Rise
-						46305, -- Thorim's Flame
-					},
-				}),
 				q(42431, {	-- The Brood of Nithogg (Bonus Objective)
 					["coord"] = { 45.2, 36.8, 634 },
 				}),
@@ -896,12 +882,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["coord"] = { 37.8, 21.6, 634 },
 					["provider"] = { "n", 91158 },	-- Nathanos Blightcaller
-				}),
-				q(46305, {	-- Thorim's Flame
-					["provider"] = { "n", 116737 },	-- Minerva Ravensorrow
-					["coord"] = { 51.3, 84.3, 648 },
-					["classes"] = { DEATHKNIGHT },
-					["sourceQuest"] = 44775, -- The Peak of Bones
 				}),
 				q(39059, {	-- To Catch a Banshee
 					["sourceQuests"] = { 39855 },	-- Paid in Lifeblood

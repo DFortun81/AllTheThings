@@ -2013,6 +2013,7 @@ _.HiddenQuestTriggers =
 		q(43661),	-- Hidden Appearance Unlocked (Brewmaster Monk "Legend of the Monkey King")
 		q(43648),	-- Hidden Appearance Unlocked (Unholy DK "The Bonereaper's Hook")
 		q(43650),	-- Hidden Appearance Unlocked (Vengeance DH "Bulwark of the Iron Warden")
+		q(43656),	-- Hidden Appearance Unlocked (Marks Hunter "Syriel Crescentfall's Notes: Ravenguard")
 
 		--	Professions
 		--	Archaeology

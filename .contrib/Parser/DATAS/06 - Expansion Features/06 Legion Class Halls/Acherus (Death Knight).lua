@@ -43,10 +43,7 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 93491 }, -- Lord Thorval
 						["coord"] = { 63.1, 69.4, 647 },
 						["classes"] = { DEATHKNIGHT },
-						["sourceQuests"] = {
-							43573, -- Advancing the War Effort
-							43928, -- Aggregates of Anguish
-						},
+						["sourceQuest"] = 43573, -- Advancing the War Effort
 					}),
 					q(44401, {	-- A Weapon For Every Occasion
 						["provider"] = { "n", 109788 }, -- Duke Lankral
@@ -75,6 +72,7 @@ _.ExpansionFeatures =
 					q(46719, {	-- Amal'thazad's Message
 						["provider"] = { "n", 117573 }, -- Dread Commander Thalanor
 						["coord"] = { 43.4, 62.7, 646 },	-- Broken Shore
+						["maps"] = { 646 },	-- Broken Shore
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 46246, -- Strike Them Down
 					}),
@@ -92,13 +90,13 @@ _.ExpansionFeatures =
 					q(43962, {	-- Blades of Destiny
 						["provider"] = { "n", 109788 }, -- Duke Lankral
 						["classes"] = { DEATHKNIGHT },
-						["sourceQuest"] = 40715, -- A Pact of Necessity
+						["sourceQuest"] = 40715,	-- A Pact of Necessity
 					}),
 					q(44247, {	-- Champion: Amal'thazad
-						["provider"] = { "n", 93555 }, -- Amal'thazad
+						["provider"] = { "n", 93555 },	-- Amal'thazad
 						["coord"] = { 58.1, 31.1, 647 },
 						["classes"] = { DEATHKNIGHT },
-						["sourceQuest"] = 44282, -- Eye of Azshara: The Frozen Soul
+						["sourceQuest"] = 44282,	-- Eye of Azshara: The Frozen Soul
 						["g"] = {
 							follower(854),	-- Amal'thazad
 						},
@@ -107,7 +105,7 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 113695 },	-- Highlord Darion Mograine
 						["coord"] = { 27.0, 28.9, 648 },
 						["classes"] = { DEATHKNIGHT },
-						["sourceQuest"] = 43686, -- The Fourth Horseman
+						["sourceQuest"] = 43686,	-- The Fourth Horseman
 						["g"] = {
 							follower(855),	-- Highlord Darion Mograine
 						},
@@ -116,7 +114,7 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 113481 },	-- High Inquisitor Whitemane
 						["coord"] = { 44.8, 72.9, 647 },
 						["classes"] = { DEATHKNIGHT },
-						["sourceQuest"] = 42824, -- The Zealot Rises
+						["sourceQuest"] = 42824,	-- The Zealot Rises
 						["g"] = {
 							follower(839),	-- High Inquisitor Whitemane
 						},
@@ -125,7 +123,7 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 93453 },		-- Koltira Deathweaver
 						["coord"] = { 66.3, 64.6, 647 },
 						["classes"] = { DEATHKNIGHT },
-						["sourceQuest"] = 42708, -- A Personal Request
+						["sourceQuest"] = 42708,	-- A Personal Request
 						["g"] = {
 							follower(599),	-- Koltira Deathweaver
 						},
@@ -134,7 +132,7 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 95900 },		-- Minerva Ravensorrow
 						["coord"] = { 25.6, 34.2, 647 },
 						["classes"] = { DEATHKNIGHT },
-						["sourceQuest"] = 45103, -- We Ride!
+						["sourceQuest"] = 45103,	-- We Ride!
 						["g"] = {
 							follower(1003),	-- Minerva Ravensorrow
 						},
@@ -155,7 +153,7 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 108975 }, -- Rottgut [Spawns next to Lord Thorval after completing the listed source quest.]
 						["coord"] = { 64.1, 69.5, 647 },
 						["classes"] = { DEATHKNIGHT },
-						["sourceQuest"] = 44286, -- Vault of the Wardens: A Masterpiece of Flesh
+						["sourceQuest"] = 44286,	-- Vault of the Wardens: A Masterpiece of Flesh
 						["g"] = {
 							i(139680),		-- Deathlord's Bracers
 							follower(853),	-- Rottgut
@@ -182,11 +180,11 @@ _.ExpansionFeatures =
 							follower(838),	-- Thoras Trollbane
 						},
 					}),
-					q(43571, {	-- Darkheart Thicket: The Nightmare Lash
+					q(43572, {	-- Darkheart Thicket: The Nightmare Lash
 						["provider"] = { "n", 111480 }, -- Salanar the Horseman
 						["coord"] = { 36.2, 56.1, 647 },
 						["classes"] = { DEATHKNIGHT },
-						["sourceQuest"] = 43899, -- Steeds of the Damned
+						["sourceQuest"] = 42708, -- A Personal Request
 					}),
 					q(40932, {	-- Disturbing the Past
 						["provider"] = { "n", 100729 },	-- Revil Kost
@@ -214,6 +212,13 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 40930,	-- Apocalypse
 						["maps"] = { 47 },	-- Duskwood
 					}),
+					q(44783, {	-- From Bones They Rise
+						["provider"] = { "n", 116737 },	-- Minerva Ravensorrow
+						["coord"] = { 51.3, 84.3, 634 },
+						["maps"] = { 634 },	-- Stormheim
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 44775, -- The Peak of Bones
+					}),
 					q(46720, {	-- Frozen Memories
 						["provider"] = { "n", 93555 },	-- Amal'thazadd
 						["coord"] = { 58.1, 31.1, 647 },
@@ -225,6 +230,13 @@ _.ExpansionFeatures =
 						["coord"] = { 49.7, 51.3, 648 },
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 45103, -- We Ride!
+					}),
+					q(45398, {	-- Harnessing Power
+						["provider"] = { "n", 119539 },	-- Minerva Ravensorrow
+						["coord"] = { 47.8, 19.2, 823 },
+						["maps"] = { 823 },	-- Pit of Saron
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 45240, -- Making Preparations
 					}),
 					q(43877, {	-- Hitting the Books
 						["u"] = REMOVED_FROM_GAME,
@@ -252,13 +264,13 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 113695 },	-- Highlord Darion Mograine
 						["coord"] = { 27.0, 28.9, 648 },
 						["classes"] = { DEATHKNIGHT },
-						["sourceQuest"] = 46734, -- Assault on Broken Shore
+						["sourceQuest"] = 47137, -- Champions of Legionfall (must be in log)
 					}),
 					q(43574, {	-- Maw of Souls: Maul of the Dead
 						["provider"] = { "n", 111480 }, -- Salanar the Horseman
 						["coord"] = { 36.2, 56.1, 647 },
 						["classes"] = { DEATHKNIGHT },
-						["sourceQuest"] = 44286, -- Vault of the Wardens: A Masterpiece of Flesh
+						["sourceQuest"] = 43573, -- Advancing the War Effort
 					}),
 					q(43571, {	-- Neltharion's Lair: Braid of the Underking
 						["provider"] = { "n", 111480 }, -- Salanar the Horseman
@@ -284,6 +296,12 @@ _.ExpansionFeatures =
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 40715, -- A Pact of Necessity
 					}),
+					q(42821, {	-- Raising an Army
+						["provider"] = { "n", 109221 }, -- Thassarian
+						["maps"] = { 804, 805 },	-- Scarlet Monastery: Death Knight Campaign
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 42818, -- The Scarlet Assault
+					}),
 					q(43266, {	-- Recruiting the Troops
 						["provider"] = { "n", 93568 }, -- Siouxsie the Banshee
 						["coord"] = { 49.7, 51.3, 648 },
@@ -295,6 +313,16 @@ _.ExpansionFeatures =
 						["coord"] = { 51.6, 50.0, 647 },
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 39799, -- Our Next Move
+					}),
+					q(45331, {	-- Return to Acherus
+						["provider"] = { "n", 119539 },	-- Minerva Ravensorrow
+						["coord"] = { 47.8, 19.2, 823 },
+						["maps"] = { 823 },	-- Pit of Saron
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuests"] = {
+							45398, -- Harnessing Power
+							45399, -- Severing the Sveldrek
+						},
 					}),
 					q(43264, {	-- Rise, Champions
 						["provider"] = { "n", 93437 }, -- Highlord Darion Mograine
@@ -310,6 +338,13 @@ _.ExpansionFeatures =
 						["coord"] = { 49.7, 51.3, 648 },
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 43267, -- Troops in the Field
+					}),
+					q(45399, {	-- Severing the Sveldrek
+						["provider"] = { "n", 119539 },	-- Minerva Ravensorrow
+						["coord"] = { 47.8, 19.2, 823 },
+						["maps"] = { 823 },	-- Pit of Saron
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 45240, -- Making Preparations
 					}),
 					q(43265, {	-- Spread the Word
 						["provider"] = { "n", 93568 }, -- Siouxsie the Banshee
@@ -344,6 +379,15 @@ _.ExpansionFeatures =
 						["coord"] = { 49.7, 51.3, 648 },
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 43267, -- Troops in the Field
+					}),
+					q(44787, {	-- The Bonemother
+						["provider"] = { "n", 116737 },	-- Minerva Ravensorrow
+						["classes"] = { DEATHKNIGHT },
+						["maps"] = { 634 },	-- Stormheim
+						["sourceQuests"] = {
+							44783, -- From Bones They Rise
+							46305, -- Thorim's Flame
+						},
 					}),
 					q(38990, {	-- The Call of Icecrown [Frost]
 						["classes"] = { DEATHKNIGHT },
@@ -419,16 +463,45 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(42818, {	-- The Scarlet Assault
-						["provider"] = { "n", 93658 }, -- Highlord Darion Mograine
+						["provider"] = { "n", 93437 }, -- Highlord Darion Mograine
 						["coord"] = { 51.6, 50.0, 647 },
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 43899, -- Steeds of the Damned
+					}),
+					q(42823, {	-- The Scarlet Commander
+						["provider"] = { "n", 109221 }, -- Thassarian
+						["maps"] = { 804, 805 },	-- Scarlet Monastery: Death Knight Campaign
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuests"] = {
+							42821, -- Raising an Army
+							42882, -- The Scarlet Massacre
+						},
+					}),
+					q(42882, {	-- The Scarlet Massacre
+						["provider"] = { "n", 109221 }, -- Thassarian
+						["coord"] = { 72.0, 48.0, 804 },
+						["maps"] = { 804, 805 },	-- Scarlet Monastery: Death Knight Campaign
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 42818,	-- The Scarlet Assault
+					}),
+					q(42824, {	-- The Zealot Rises
+						["provider"] = { "n", 109221 }, -- Thassarian
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 42823,	-- The Scarlet Commander
+						["maps"] = { 804, 805 },	-- Scarlet Monastery: Death Knight Campaign
+					}),
+					q(46305, {	-- Thorim's Flame
+						["provider"] = { "n", 116737 },	-- Minerva Ravensorrow
+						["coord"] = { 51.3, 84.3, 634 },
+						["maps"] = { 634 },	-- Stormheim
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 44775,	-- The Peak of Bones
 					}),
 					q(43267, {	-- Troops in the Field
 						["provider"] = { "n", 93568 }, -- Siouxsie the Banshee
 						["coord"] = { 49.7, 51.3, 648 },
 						["classes"] = { DEATHKNIGHT },
-						["sourceQuest"] = 43266, -- Recruiting the Troops
+						["sourceQuest"] = 43266,	-- Recruiting the Troops
 					}),
 					q(46940, {	-- Using Lost Knowledge
 						["u"] = REMOVED_FROM_GAME,
@@ -437,7 +510,14 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 93491 }, -- Lord Thorval
 						["coord"] = { 63.1, 69.4, 647 },
 						["classes"] = { DEATHKNIGHT },
-						["sourceQuest"] = 42824, -- The Zealot Rises
+						["sourceQuest"] = 42824,	-- The Zealot Rises
+					}),
+					q(45103, {	-- We Ride!
+						["provider"] = { "n", 116128 },	-- Highlord Darion Mograine
+						["coord"] = { 51.6, 21.8, 646 },
+						["maps"] = { 646 },	-- Broken Shore
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 45243,	-- On Daumyr's Wings
 					}),
 				}),
 				--[[
