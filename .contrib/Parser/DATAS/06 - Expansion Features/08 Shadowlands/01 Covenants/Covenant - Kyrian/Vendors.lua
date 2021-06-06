@@ -15,7 +15,9 @@ _.ExpansionFeatures =
 				n(VENDORS, {
 					n(174937, {	-- Adjutant Galos <Renown Quartermaster>
 						["coord"] = { 63.3, 30.6, 1708 },
-						["g"] = {
+						["g"] = sharedData(
+							{ ["customCollect"] = "SL_COV_KYR", }	-- Kyrian
+							, {
 							i(180762, {	-- Phalynx of Humility (MOUNT!)
 								["cost"] = {
 									{ "c", 1813, 5000 },
@@ -349,7 +351,7 @@ _.ExpansionFeatures =
 									{ "c", 1885, 40 },
 								},
 							}),
-						},
+						}),
 					}),
 					n(175521, {	-- Alisius <Normal Nathrian Weaponsmith>
 						["coord"] = { 56.1, 84.5, 1707 },	-- Archon's Rise

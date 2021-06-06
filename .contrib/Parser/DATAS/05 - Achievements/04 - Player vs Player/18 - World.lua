@@ -25,7 +25,8 @@ _.Achievements =
 			ach(12605, {	-- Conqueror of Azeroth (A)
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					title(377),		-- , Conqueror of Azeroth (A) / (H)
+					i(163577),	-- Conquerer's Scythemaw
+					title(377),	-- %s, Conqueror of Azeroth
 					ach(12573, {	-- Band of Brothers
 						crit(1),		-- Honorable Kill
 						crit(2),		-- Loot Player Bounty
@@ -45,7 +46,8 @@ _.Achievements =
 			ach(12604, {	-- Conqueror of Azeroth (H)
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					title(377),		-- , Conqueror of Azeroth (A) / (H)
+					i(163577),	-- Conquerer's Scythemaw
+					title(377),	-- %s, Conqueror of Azeroth
 					ach(12573, {	-- Band of Brothers
 						crit(1),		-- Honorable Kill
 						crit(2),		-- Loot Player Bounty

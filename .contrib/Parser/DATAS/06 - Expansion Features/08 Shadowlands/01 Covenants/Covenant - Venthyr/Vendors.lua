@@ -18,7 +18,9 @@ _.ExpansionFeatures =
 				n(VENDORS, {
 					n(174710, {	-- Chachi the Artiste <Renown Quartermaster>
 						["coord"] = { 54.0, 25.6, 1699 },
-						["g"] = {
+						["g"] = sharedData(
+							{ ["customCollect"] = "SL_COV_VEN", }	-- Venthyr
+							, {
 							i(184665, {	-- Chronicle of Lost Memories
 								["cost"] = { { "c", 1885, 35 } },		-- 35x Grateful Offering
 							}),
@@ -362,7 +364,7 @@ _.ExpansionFeatures =
 									{ "c", 1885, 15 },		-- 15x Grateful Offering
 								},
 							}),
-						},
+						}),
 					}),
 					n(175406, {	-- Gregor the Pallidblade <Sinfall Quartermaster>
 						["coord"] = { 70.6, 27.3, 1700 },	-- Sinfall Depths
