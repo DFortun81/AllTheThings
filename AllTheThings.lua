@@ -8076,6 +8076,7 @@ local itemFields = {
 	end,
 	["collectedAsTransmog"] = function(t)
 		-- item has no cost use, or cost has been fulfilled
+		-- TODO: find a way to make this lag less... the time it takes to calculate this on account/debug is insane for whatever reason
 		if not t.collectibleAsCost or t.collectedAsCost then
 			return ATTAccountWideData.Sources[rawget(t, "s")];
 		end
