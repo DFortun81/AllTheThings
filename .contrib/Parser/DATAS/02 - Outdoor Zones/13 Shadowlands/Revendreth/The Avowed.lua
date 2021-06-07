@@ -273,15 +273,14 @@ _.Zones =
 									i(184218, {	-- Vulgarity Arbiter
 										["cost"] = { { "c", 1816, 1000 } },
 									}),
-									n(-949, {	-- Covenant: Venthyr
-										-- These are only available to Venthyr covenant members
+									n(-949, sharedData({["customCollect"] = { "SL_COV_VEN" }},{	-- Covenant: Venthyr
 										i(180940, {	-- Ebony Crypt Keeper's Mantle
 											["cost"] = { { "c", 1816, 500 } },
 										}),
 										i(182954, {	-- Inquisition Gargon
 											["cost"] = { { "c", 1816, 2000 } },
 										}),
-									}),
+									})),
 								},
 							}),
 							n(159088, {	-- Bored Dredger

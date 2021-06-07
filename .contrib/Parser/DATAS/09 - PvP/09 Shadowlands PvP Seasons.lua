@@ -192,7 +192,6 @@ _.PVP =
 				}),
 				n(-319, {	-- Weapons
 					n(-939, sharedData({["customCollect"] = { "SL_COV_KYR" }},{	-- Covenant: Kyrian
-						-- These are only available to Kyrian covenant members
 						i(177851),	-- Sinful Gladiator's Ceremonial Sword
 						i(177866),	-- Sinful Gladiator's Chalice
 						i(184549),	-- Sinful Gladiator's Dory
@@ -209,7 +208,6 @@ _.PVP =
 						i(184547),	-- Sinful Gladiator's Xiphos
 					})),
 					n(-920, sharedData({["customCollect"] = { "SL_COV_NEC" }},{	-- Covenant: Necrolord
-						-- These are only available to Necrolord covenant members
 						-- TODO: this covenant only has 12 items listed, venthyr+kyrian have 14.  do they just have 2 fewer?
 						i(183446),	-- Sinful Gladiator's Cleaver
 						i(183439),	-- Sinful Gladiator's Crystal
@@ -225,7 +223,6 @@ _.PVP =
 						i(183441),	-- Sinful Gladiator's Warglaive
 					})),
 					n(-929, sharedData({["customCollect"] = { "SL_COV_NFA" }},{	-- Covenant: Night Fae
-						-- These are only available to Night Fae covenant members
 						-- TODO: this covenant only has 12 items listed, venthyr+kyrian have 14.  do they just have 2 fewer?
 						i(179543),	-- Sinful Gladiator's Bludgeon
 						i(179609),	-- Sinful Gladiator's Bulwark
@@ -241,7 +238,6 @@ _.PVP =
 						i(180081),	-- Sinful Gladiator's Warbow
 					})),
 					n(-949, sharedData({["customCollect"] = { "SL_COV_VEN" }},{	-- Covenant: Venthyr
-						-- These are only available to Venthyr covenant members
 						i(182406),	-- Sinful Gladiator's Battlestave
 						i(182402),	-- Sinful Gladiator's Crusaderblade
 						i(182403),	-- Sinful Gladiator's Gargoyle Claw
@@ -263,7 +259,6 @@ _.PVP =
 				["g"] = bubbleDown({["modID"] = 45, --[[["u"] = 12]] }, {	-- TODO: address unobtainable filter not taking modID into account, so u=14 does not also apply to the regular pvp gear that shares the same itemID
 					n(-319, {	-- Weapons
 						n(-939, sharedData({["customCollect"] = { "SL_COV_KYR" }},{	-- Covenant: Kyrian
-							-- These are only available to Kyrian covenant members
 							i(177851),	-- Sinful Gladiator's Ceremonial Sword
 						--	i(177866),	-- Sinful Gladiator's Chalice (Not ingame // Shared with Normal Pvp Gear // Gold 16.04.2021)
 							i(184549),	-- Sinful Gladiator's Dory
@@ -280,7 +275,6 @@ _.PVP =
 							i(184547),	-- Sinful Gladiator's Xiphos
 						})),
 						n(-920, sharedData({["customCollect"] = { "SL_COV_NEC" }},{	-- Covenant: Necrolord
-							-- These are only available to Necrolord covenant members
 							-- TODO: this covenant only has 12 items listed, venthyr+kyrian have 14.  do they just have 2 fewer?
 							i(183446),	-- Sinful Gladiator's Cleaver
 							i(183439),	-- Sinful Gladiator's Crystal
@@ -296,7 +290,6 @@ _.PVP =
 							i(183441),	-- Sinful Gladiator's Warglaive
 						})),
 						n(-929, sharedData({["customCollect"] = { "SL_COV_NFA" }},{	-- Covenant: Night Fae
-							-- These are only available to Night Fae covenant members
 							-- TODO: this covenant only has 12 items listed, venthyr+kyrian have 14.  do they just have 2 fewer?
 							i(179543),	-- Sinful Gladiator's Bludgeon
 							i(179609),	-- Sinful Gladiator's Bulwark
@@ -312,7 +305,6 @@ _.PVP =
 							i(180081),	-- Sinful Gladiator's Warbow
 						})),
 						n(-949, sharedData({["customCollect"] = { "SL_COV_VEN" }},{	-- Covenant: Venthyr
-							-- These are only available to Venthyr covenant members
 							i(182406),	-- Sinful Gladiator's Battlestave
 							i(182402),	-- Sinful Gladiator's Crusaderblade
 							i(182403),	-- Sinful Gladiator's Gargoyle Claw

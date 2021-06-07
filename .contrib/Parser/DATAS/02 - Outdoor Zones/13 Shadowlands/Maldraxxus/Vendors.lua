@@ -78,15 +78,14 @@ _.Zones =
 						i(184742),	-- Rattling Bonefists
 						i(184736),	-- Robe of the March Warden
 						i(184745),	-- Tunic of the March Warden
-						n(-920, {	-- Covenant: Necrolord
-							-- These are only available to Necrolord covenant members
+						n(-920, sharedData({["customCollect"] = { "SL_COV_NEC" }},{	-- Covenant: Necrolord
 							i(181807, {	-- Barbarous Osteowings
 								["cost"] = 5000000, -- 500g
 							}),
 							i(181808, {	-- Death Fetish
 								["cost"] = 5000000, -- 500g
 							}),
-						}),
+						})),
 					},
 				}),
 				n(169964, {	-- One-Eyed Joby <Unusual Wares>
