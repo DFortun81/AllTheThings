@@ -598,7 +598,7 @@ _.Zones =
 							["cost"] = { { "i", 78184, 1 }, },	-- Chest of the Corrupted Conqueror
 						}),
 						i(78726, {	-- Breastplate of Radiant Glory
-							["cost"] = { { "i", 78726, 1 }, },	-- Chest of the Corrupted Conqueror
+							["cost"] = { { "i", 78184, 1 }, },	-- Chest of the Corrupted Conqueror
 						}),
 						i(77091),	-- Cameo of Terrible Memories
 						i(78827, {	-- Chestguard of Radiant Glory
