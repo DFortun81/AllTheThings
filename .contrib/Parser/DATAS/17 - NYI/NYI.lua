@@ -616,6 +616,21 @@ _.NeverImplemented =
 				i(32130),	-- Chancellor's Wyrmhide Legguards
 				i(32131),	-- Chancellor's Wyrmhide Spaulders
 				i(32132),	-- Chancellor's Wyrmhide Tunic
+				i(45350),	-- Nightsong Cover
+				i(46260),	-- Nightsong Handgrips
+				i(46261),	-- Nightsong Handguards
+				i(46262),	-- Nightsong Headguard
+				i(46263),	-- Nightsong Headpiece
+				i(46264),	-- Nightsong Leggings
+				i(46265),	-- Nightsong Legguards
+				i(46266),	-- Nightsong Mantle
+				i(46267),	-- Nightsong Raiments
+				i(46268),	-- Nightsong Robe
+				i(46269),	-- Nightsong Shoulderpads
+				i(46270),	-- Nightsong Spaulders
+				i(46271),	-- Nightsong Trousers
+				i(46272),	-- Nightsong Vestments
+				i(46309),	-- Nightsong Gloves
 				-- Unused T0 Replica
 				i(78068),	-- Replica Wildheart Belt
 				i(78067),	-- Replica Wildheart Boots
