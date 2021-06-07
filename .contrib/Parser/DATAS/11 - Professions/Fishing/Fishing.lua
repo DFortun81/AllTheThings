@@ -1,7 +1,9 @@
 -- Fishing - Skill ID 356 / Spell ID 7620
 profession(FISHING, {
 	n(-26,    {	-- Drop
-		i(34109),	-- Weather-Beaten Journal
+		i(34109, {	-- Weather-Beaten Journal
+			["_drop"] = { "spellID", "recipeID" },
+		}),
 	}),
 	filter(57,   {	-- Fishing Poles
 		i(19970),	-- Arcanite Fishing Pole
@@ -445,7 +447,7 @@ itemrecipe(27532, 0--[[7732]], "removed 3.1.0.9767");	-- Master Fishing - The Ar
 -- #if ANYCLASSIC
 itemrecipe(34109, 43308, "added 2.3.0.7382", TBC_PHASE_ONE);	-- Weather-Beaten Journal
 -- #else
--- NOTE: This will need to be checked, on Retail it doesn't show as collected.
+-- This spellID is not collectible in Retail
 itemrecipe(34109, 0--[[43308]], "added 2.3.0.7382", TBC_PHASE_ONE);	-- Weather-Beaten Journal
 -- #endif
 
