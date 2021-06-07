@@ -217,15 +217,20 @@ _.Zones =
 							i(51576, {	-- Titan-Forged Spaulders of Triumph
 								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 							}),
-							i(46081),	-- Titan-Forged Rune of Audacity
-							i(46082),	-- Titan-Forged Rune of Determination
-							i(46083),	-- Titan-Forged Rune of Accuracy
-							i(46084),	-- Titan-Forged Rune of Cruelty
-							i(46085),	-- Titan-Forged Rune of Alacrity
-							i(48999),	-- Titan-Forged Band of Ascendancy
-							i(49000),	-- Titan-Forged Band of Victory
-							i(51568),	-- Titan-Forged Pendant of Ascendancy
-							i(51569),	-- Titan-Forged Pendant of Victory
+							un(REMOVED_FROM_GAME, i(46081)),	-- Titan-Forged Rune of Audacity
+							un(REMOVED_FROM_GAME, i(46082)),	-- Titan-Forged Rune of Determination
+							un(REMOVED_FROM_GAME, i(46083)),	-- Titan-Forged Rune of Accuracy
+							un(REMOVED_FROM_GAME, i(46084)),	-- Titan-Forged Rune of Cruelty
+							un(REMOVED_FROM_GAME, i(46085)),	-- Titan-Forged Rune of Alacrity
+							un(REMOVED_FROM_GAME, i(48999)),	-- Titan-Forged Band of Ascendancy
+							un(REMOVED_FROM_GAME, i(49000)),	-- Titan-Forged Band of Victory
+							un(REMOVED_FROM_GAME, i(51568)),	-- Titan-Forged Pendant of Ascendancy
+							un(REMOVED_FROM_GAME, i(51569)),	-- Titan-Forged Pendant of Victory
+							un(REMOVED_FROM_GAME, i(44912)),	-- Flow of Knowledge
+							un(REMOVED_FROM_GAME, i(44914)),	-- Anvil of Titans
+							un(REMOVED_FROM_GAME, i(46086)),	-- Platinum Disks of Battle
+							un(REMOVED_FROM_GAME, i(46087)),	-- Platinum Disks of Sorcery
+							un(REMOVED_FROM_GAME, i(46088)),	-- Platinum Disks of Swiftness
 						}),
 					}),
 					n(39172, {	-- Marshal Magruder <Wintergrasp Quartermaster>
@@ -434,15 +439,20 @@ _.Zones =
 							i(51576, {	-- Titan-Forged Spaulders of Triumph
 								["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 							}),
-							i(46081),	-- Titan-Forged Rune of Audacity
-							i(46082),	-- Titan-Forged Rune of Determination
-							i(46083),	-- Titan-Forged Rune of Accuracy
-							i(46084),	-- Titan-Forged Rune of Cruelty
-							i(46085),	-- Titan-Forged Rune of Alacrity
-							i(48999),	-- Titan-Forged Band of Ascendancy
-							i(49000),	-- Titan-Forged Band of Victory
-							i(51568),	-- Titan-Forged Pendant of Ascendancy
-							i(51569),	-- Titan-Forged Pendant of Victory
+							un(REMOVED_FROM_GAME, i(46081)),	-- Titan-Forged Rune of Audacity
+							un(REMOVED_FROM_GAME, i(46082)),	-- Titan-Forged Rune of Determination
+							un(REMOVED_FROM_GAME, i(46083)),	-- Titan-Forged Rune of Accuracy
+							un(REMOVED_FROM_GAME, i(46084)),	-- Titan-Forged Rune of Cruelty
+							un(REMOVED_FROM_GAME, i(46085)),	-- Titan-Forged Rune of Alacrity
+							un(REMOVED_FROM_GAME, i(48999)),	-- Titan-Forged Band of Ascendancy
+							un(REMOVED_FROM_GAME, i(49000)),	-- Titan-Forged Band of Victory
+							un(REMOVED_FROM_GAME, i(51568)),	-- Titan-Forged Pendant of Ascendancy
+							un(REMOVED_FROM_GAME, i(51569)),	-- Titan-Forged Pendant of Victory
+							un(REMOVED_FROM_GAME, i(44912)),	-- Flow of Knowledge
+							un(REMOVED_FROM_GAME, i(44914)),	-- Anvil of Titans
+							un(REMOVED_FROM_GAME, i(46086)),	-- Platinum Disks of Battle
+							un(REMOVED_FROM_GAME, i(46087)),	-- Platinum Disks of Sorcery
+							un(REMOVED_FROM_GAME, i(46088)),	-- Platinum Disks of Swiftness
 						}),
 					}),
 					n(31101, {	-- Hoodoo Master Fu'jin
