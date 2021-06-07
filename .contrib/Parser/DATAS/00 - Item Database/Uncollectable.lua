@@ -106,6 +106,7 @@ i(181616);	-- A Treatise on the Great Battles of Lordaeron
 i(33930);	-- Amani Charm of the Bloodletter
 i(33931);	-- Amani Charm of Mighty Mojo
 i(33932);	-- Amani Charm of the Witch Doctor
+i(33933);	-- Amani Charm of the Raging Defender
 i(139786);	-- Ancient Mana Crystal
 i(103644);	-- Blessed Bandage
 i(23123);	-- Blessed Wizard Oil

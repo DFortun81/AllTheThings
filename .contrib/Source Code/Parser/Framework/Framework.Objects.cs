@@ -462,7 +462,7 @@ namespace ATT
                 foreach (Tuple<string, long> recipeInfo in skillRecipes)
                 {
                     // perfect recipe - item match!
-                    if (recipeItemName.Contains(recipeInfo.Item1))
+                    if (recipeItemName.Contains(": " + recipeInfo.Item1))
                     {
                         recipeID = recipeInfo.Item2;
                         return true;

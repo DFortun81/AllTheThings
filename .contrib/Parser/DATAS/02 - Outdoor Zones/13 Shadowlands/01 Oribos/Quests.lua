@@ -572,6 +572,7 @@ _.Zones =
 						i(179562),	-- Duskwarder Branch
 						i(179517),	-- Duskwarder Censor
 						i(181433),	-- Duskwarder Gavel
+						i(179500),	-- Duskwarder Knife
 						i(179537),	-- Duskwarder Maul
 						i(179513),	-- Duskwarder Scimitar
 						i(179532),	-- Duskwarder Scythe
@@ -596,6 +597,7 @@ _.Zones =
 						i(181637),	-- Lifepath Hammer
 						i(181636),	-- Memoria Spellblade
 						i(181631),	-- Requiem Chime
+						i(181633),	-- Waylight Blade
 						i(181629),	-- Waylight Defender
 						-- TODO: more rewards
 					},
