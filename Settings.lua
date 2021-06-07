@@ -699,7 +699,6 @@ settings.UpdateMode = function(self, doRefresh)
 
 		app.MODE_DEBUG = nil;
 	end
-	-- TODO: use this wherever Debug/Account mean the same to the logic...
 	app.MODE_DEBUG_OR_ACCOUNT = app.MODE_DEBUG or app.MODE_ACCOUNT;
 	if self:Get("Show:CompletedGroups") then
 		app.GroupVisibilityFilter = app.NoFilter;

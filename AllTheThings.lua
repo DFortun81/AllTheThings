@@ -1522,11 +1522,10 @@ local IsQuestFlaggedCompletedForObject = function(t)
 	if IsQuestFlaggedCompleted(questID) then
 		return 1;
 	end
-	local acctMode = app.MODE_ACCOUNT or app.MODE_DEBUG;
 	-- account-mode: any character is viable to complete the quest, so alt quest completion shouldn't count for this quest
 	-- this quest cannot be obtained if any altQuest is completed on this character and not tracking as account mode
 	-- If the quest has an altQuest which was completed on this character, return shared completed
-	if not acctMode and t.altcollected then
+	if not app.MODE_DEBUG_OR_ACCOUNT and t.altcollected then
 		return 2;
 	end
 	-- If the quest is repeatable, then check other things to determine if it has ever been completed
@@ -1536,7 +1535,7 @@ local IsQuestFlaggedCompletedForObject = function(t)
 		end
 		-- can an alt quest of a repeatable quest be permanent?
 		-- if not considering account-mode, consider the quest completed once if any altquest was also completed
-		if not acctMode and t.altQuests then
+		if not app.MODE_DEBUG_OR_ACCOUNT and t.altQuests then
 			-- If the quest has an altQuest which was completed on this character, return shared completed
 			for i,altQuestID in ipairs(t.altQuests) do
 				-- any altQuest completed on this character, return shared completion
@@ -1553,7 +1552,7 @@ local IsQuestFlaggedCompletedForObject = function(t)
 				return 1;
 			end
 			-- if not considering account-mode tracking, consider the quest completed once if any altquest was also completed
-			if not acctMode and t.altQuests then
+			if not app.MODE_DEBUG_OR_ACCOUNT and t.altQuests then
 				-- If the quest has an altQuest which was completed on this character, return shared completed
 				local isCollected;
 				for i,altQuestID in ipairs(t.altQuests) do
@@ -1580,7 +1579,7 @@ local IsQuestFlaggedCompletedForObject = function(t)
 			end
 
 			-- only consider altquest completion if not on account-mode
-			if wqt_local and not acctMode and t.altQuests then
+			if wqt_local and not app.MODE_DEBUG_OR_ACCOUNT and t.altQuests then
 				local isCollected;
 				for i,altQuestID in ipairs(t.altQuests) do
 					-- any altQuest completed on this character, return shared completion
@@ -6759,7 +6758,7 @@ end
 app.OnUpdateReputationRequired = function(t)
 	-- The only non-regular update processing this group should have
 	-- is if the User is not in Deubg/Account and should not see it due to the reputation requirement not being met
-	if not app.MODE_DEBUG and not app.MODE_ACCOUNT and t.minReputation and (select(6, GetFactionInfoByID(t.minReputation[1])) or 0) < t.minReputation[2] then
+	if not app.MODE_DEBUG_OR_ACCOUNT and t.minReputation and (select(6, GetFactionInfoByID(t.minReputation[1])) or 0) < t.minReputation[2] then
 		t.visible = false;
 		return true;
 	end
@@ -6917,7 +6916,7 @@ local fields = {
 	["collected"] = function(t)
 		if app.CurrentCharacter.FlightPaths[t.flightPathID] then return 1; end
 		if app.AccountWideFlightPaths and ATTAccountWideData.FlightPaths[t.flightPathID] then return 2; end
-		if app.MODE_ACCOUNT or app.MODE_DEBUG then return false; end
+		if app.MODE_DEBUG_OR_ACCOUNT then return false; end
 		if t.altQuests then
 			for i,questID in ipairs(t.altQuests) do
 				if IsQuestFlaggedCompleted(questID) then
@@ -7949,7 +7948,7 @@ local itemFields = {
 		return app.CollectibleAchievements or t.collectibleAsCost;
 	end,
 	["collectibleAsCost"] = function(t)
-		if not (app.MODE_DEBUG or app.MODE_ACCOUNT) and t.parent and t.parent.saved then return false; end
+		if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved then return false; end
 		if not t.costCollectibles then
 			local results, id;-- = rawget(t, "collectibleResults");
 			-- if results then
@@ -7978,7 +7977,7 @@ local itemFields = {
 						if not t.costCollectibles then t.costCollectibles = { ref }
 						else tinsert(t.costCollectibles, ref); end
 						-- account or debug, skip filter/exclusion logic
-						if (app.MODE_DEBUG or app.MODE_ACCOUNT) or
+						if app.MODE_DEBUG_OR_ACCOUNT or
 							-- otherwise don't include items which are from something the current character cannot complete
 							(not GetRelativeValue(t, "altcollected") and app.RecursiveGroupRequirementsFilter(ref)) then
 							-- Used as a cost for something which is collectible itself
@@ -7998,7 +7997,7 @@ local itemFields = {
 		else
 			for _,ref in pairs(t.costCollectibles) do
 				-- account or debug, skip filter/exclusion logic
-				if (app.MODE_DEBUG or app.MODE_ACCOUNT) or
+				if app.MODE_DEBUG_OR_ACCOUNT or
 					-- otherwise don't include items which are from something the current character cannot complete
 					(not GetRelativeValue(t, "altcollected") and app.RecursiveGroupRequirementsFilter(ref)) then
 					-- Used as a cost for something which is collectible itself
@@ -8034,7 +8033,7 @@ local itemFields = {
 		-- local LOG = t.s;
 		for _,ref in pairs(t.costCollectibles) do
 			-- account or debug, skip filter/exclusion logic
-			if (app.MODE_DEBUG or app.MODE_ACCOUNT) or
+			if app.MODE_DEBUG_OR_ACCOUNT or
 				-- otherwise don't include items which are from something the current character cannot complete
 				(not GetRelativeValue(t, "altcollected") and app.RecursiveGroupRequirementsFilter(ref)) then
 				-- Used as a cost for something which is collectible itself and not collected
@@ -8090,7 +8089,7 @@ local itemFields = {
 		-- 			-- Used as a cost for something which has an incomplete progress
 		-- 			elseif ref.total and ref.total > 0 and ref.progress < ref.total and
 		-- 				-- is account or debug mode or the thing is not altcollected
-		-- 				(app.MODE_DEBUG or app.MODE_ACCOUNT or not ref.altcollected) and
+		-- 				(app.MODE_DEBUG_OR_ACCOUNT or not ref.altcollected) and
 		-- 				-- is not a parent of the cost group itself
 		-- 				not GetRelativeField(t, "parent", ref) then
 		-- 				-- if LOG then print("Cost Required via Total/Prog") end
@@ -11697,7 +11696,7 @@ end
 -- determines whether an object may be considered collectible for the current character based on the 'customCollect' value(s)
 app.CheckCustomCollects = function(t)
 	-- no customCollect, or Account/Debug mode then disregard
-	if app.MODE_DEBUG or app.MODE_ACCOUNT or not t.customCollect then return true; end
+	if app.MODE_DEBUG_OR_ACCOUNT or not t.customCollect then return true; end
 	for _,c in ipairs(t.customCollect) do
 		if not app.CurrentCharacter.CustomCollects[c] then
 			return false;
