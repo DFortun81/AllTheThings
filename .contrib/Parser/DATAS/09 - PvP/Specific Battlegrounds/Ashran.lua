@@ -10,7 +10,7 @@ _.PVP =
 			["description"] = "Ashran is a 40v40 epic battleground found in eastern Draenor.",
 			["maps"] = { 588 },	-- Ashran
 			["lvl"] = { 25 },
-			["g"] = {
+			["g"] = bubbleDown({["u"] = 12}, {
 				n(ACHIEVEMENTS, {
 					ach(9102),	-- Ashran Victory
 					ach(9104, {	-- Bounty Hunter (A)
@@ -1887,7 +1887,7 @@ _.PVP =
 				i(128216, {	-- Dented Ashmaul Strongbox A S3
 					["u"] = REMOVED_FROM_GAME,
 				}),
-			},
+			}),
 		}),
 	}),
 };

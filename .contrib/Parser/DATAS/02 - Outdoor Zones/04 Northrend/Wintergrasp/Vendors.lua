@@ -13,7 +13,7 @@ _.Zones =
 						["itemID"] = 137642,	-- Mark of Honor
 						["coord"] = { 51.8, 17.4, 123 },
 						["races"] = HORDE_ONLY,
-						["g"] = {
+						["g"] = bubbleDown({["u"] = 12}, {
 							i(48974),	-- Titan-Forged Armwraps of Dominance
 							i(48975),	-- Titan-Forged Armwraps of Salvation
 							i(48976),	-- Titan-Forged Armwraps of Triumph
@@ -84,13 +84,13 @@ _.Zones =
 							i(44076),	-- Swift Starflare Diamond
 							i(44078),	-- Tireless Starflare Diamond
 							i(44089),	-- Trenchant Earthshatter Diamond
-						},
+						}),
 					}),
 					n(32294, {	-- Knight Dameron <Wintergrasp Quartermaster>
 						["coord"] = { 51.6, 17.6, 123 },
 						["itemID"] = 137642,	-- Mark of Honor
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["g"] = bubbleDown({["u"] = 12}, {
 							i(43956, {	-- Reins of the Black War Mammoth
 								["cost"] = { { "i", 137642, 15 }, },	-- 15x Mark of Honor
 								["g"] = {
@@ -226,13 +226,13 @@ _.Zones =
 							i(49000),	-- Titan-Forged Band of Victory
 							i(51568),	-- Titan-Forged Pendant of Ascendancy
 							i(51569),	-- Titan-Forged Pendant of Victory
-						},
+						}),
 					}),
 					n(39172, {	-- Marshal Magruder <Wintergrasp Quartermaster>
 						["itemID"] = 137642,	-- Mark of Honor
 						["coord"] = { 51.6, 17.6, 123 },
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["g"] = bubbleDown({["u"] = 12}, {
 							i(48974),	-- Titan-Forged Armwraps of Dominance
 							i(48975),	-- Titan-Forged Armwraps of Salvation
 							i(48976),	-- Titan-Forged Armwraps of Triumph
@@ -265,13 +265,13 @@ _.Zones =
 							i(48981),	-- Titan-Forged Wristguards of Salvation
 							i(48982),	-- Titan-Forged Wristguards of Triumph
 							i(48982),	-- Titan-Forged Wristguards of Triumph
-						},
+						}),
 					}),
 					n(30489, {	-- Morgan Day <Jewelcrafter>
 						["itemID"] = 137642,	-- Mark of Honor
 						["coord"] = { 48.8, 17.6, 123 },
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["g"] = bubbleDown({["u"] = 12}, {
 							i(41742),	-- Design: Enigmatic Skyflare Diamond
 							i(41743),	-- Design: Forlorn Skyflare Diamond
 							i(41744),	-- Design: Impassive Skyflare Diamond
@@ -301,13 +301,13 @@ _.Zones =
 							i(44076),	-- Swift Starflare Diamond
 							i(44078),	-- Tireless Starflare Diamond
 							i(44089),	-- Trenchant Earthshatter Diamond
-						},
+						}),
 					}),
 					n(32296, {	-- Stone Guard Mukar <Wintergrasp Quartermaster>
 						["coord"] = { 51.6, 17.6, 123 },
 						["itemID"] = 137642,	-- Mark of Honor
 						["races"] = HORDE_ONLY,
-						["g"] = {
+						["g"] = bubbleDown({["u"] = 12}, {
 							i(44077, {	-- Reins of the Black War Mammoth
 								["cost"] = { { "i", 137642, 15 }, },	-- 15x Mark of Honor
 								["g"] = {
@@ -443,7 +443,7 @@ _.Zones =
 							i(49000),	-- Titan-Forged Band of Victory
 							i(51568),	-- Titan-Forged Pendant of Ascendancy
 							i(51569),	-- Titan-Forged Pendant of Victory
-						},
+						}),
 					}),
 				},
 			}),

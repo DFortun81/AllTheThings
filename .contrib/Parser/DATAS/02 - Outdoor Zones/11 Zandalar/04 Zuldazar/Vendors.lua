@@ -121,7 +121,7 @@ _.Zones =
 				n(161590, {	-- Jinxy Blastwheel <Profession Liason>
 					["coord"] = { 52.7, 58.2, 862 },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["g"] = bubbleDown({["u"] = 12}, {
 						i(171153, {	-- Formula: Uncanny Combatant's Sorcerous Scepter (Rank 2)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
@@ -320,7 +320,7 @@ _.Zones =
 						i(171058, {	-- Technique: Uncanny Combatant's Etched Vessel (Rank 3)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-					},
+					}),
 				}),
 				n(136219, {	-- Mona <Butterflies>
 					["coord"] = { 71.6, 29.4, 862 },
@@ -349,7 +349,7 @@ _.Zones =
 				n(142552, {	-- Ozgrom Ragefang <Profession Liason>
 					["races"] = HORDE_ONLY,
 					["coord"] = { 52.6, 58.2, 862 },
-					["g"] = {
+					["g"] = bubbleDown({["u"] = 12}, {
 						i(162439, {	-- Pattern: Honorable Combatant's Satin Belt (Rank 2)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
@@ -752,16 +752,13 @@ _.Zones =
 						i(165305, {	-- Schematic: Sinister Combatant's Stormsteel Destroyer (Rank 3)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-					},
+					}),
 				}),
 				n(143555, {	-- Xander Silberman
 					["coord"] = { 51.6, 58.2, 862 },
 					["itemID"] = 137642,	-- Mark of Honor
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						-- TODO
-						-- PVP Gear
-						-- Ensembles
 					--	Dread Aspirant, Battle for Azeroth Season 1
 						i(184669, {	-- Arsenal: Dread Aspirant's Weapons
 							["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor

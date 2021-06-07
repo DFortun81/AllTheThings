@@ -5,7 +5,7 @@
 _.PVP =
 {
 	n(-10014, {	-- Wrath of the Lich King
-	--	["g"] = bubbleDown({["u"] = 12}, {
+		["g"] = bubbleDown({["u"] = 12}, {
 			n(-668, {	-- Deadly Gladiator: Season 5
 				n(-9983, {	-- Honor Gear // Savage Gladiator
 					n(-319, {	-- Weapons
@@ -3929,6 +3929,6 @@ _.PVP =
 					}),
 				}),
 			}),
-	--	}),
+		}),
 	}),
 };

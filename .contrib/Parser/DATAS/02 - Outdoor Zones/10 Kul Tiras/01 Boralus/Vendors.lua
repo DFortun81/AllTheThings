@@ -10,7 +10,7 @@ _.Zones =
 				n(161565, {	-- Bragni <Profession Liason>
 					["coord"] = { 56.3, 27.2, 1161 },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["g"] = bubbleDown({["u"] = 12}, {
 						i(171153, {	-- Formula: Uncanny Combatant's Sorcerous Scepter (Rank 2)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
@@ -209,7 +209,7 @@ _.Zones =
 						i(171058, {	-- Technique: Uncanny Combatant's Etched Vessel (Rank 3)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-					},
+					}),
 				}),
 				n(148922, {	-- Captain Klarisa
 					["coord"] = { 66.0, 32.2, 1161 },
@@ -1348,7 +1348,7 @@ _.Zones =
 				n(142564, {	-- Leedan Gustaf <Profession Liason> [NOTE: PvP Craftable Recipes]
 					["coord"] = { 56.0, 26.8, 1161 },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["g"] = bubbleDown({["u"] = 12}, {
 						i(162439, {	-- Pattern: Honorable Combatant's Satin Belt (Rank 2)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
@@ -1751,7 +1751,7 @@ _.Zones =
 						i(165305, {	-- Schematic: Sinister Combatant's Stormsteel Destroyer (Rank 3)
 							["cost"] = { { "i", 137642, 4 }, },	-- 4x Mark of Honor
 						}),
-					},
+					}),
 				}),
 				n(145838, {	-- Marshal Frazer
 					["coord"] = { 56.4, 26.9, 1161 },

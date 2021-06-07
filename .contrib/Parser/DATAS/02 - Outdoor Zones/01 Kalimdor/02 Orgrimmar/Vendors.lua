@@ -320,7 +320,7 @@ _.Zones =
 				n(73151,  {	-- Deathguard Netharian <Combatant Mount Quartermaster>
 					["races"] = HORDE_ONLY,
 					["coord"] = { 41.8, 73.0, 85 },
-					["g"] = {
+					["g"] = bubbleDown({["u"] = 12}, {
 						i(70910, {	-- Horn of the Vicious War Wolf Mount
 							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
 						}),
@@ -351,7 +351,7 @@ _.Zones =
 						i(140348, {	-- Vicious Warstrider Mount
 							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
 						}),
-					},
+					}),
 				}),
 				n(69333,  {	-- Disciple Jusi <Huojin Quartermaster>
 					["races"] = HORDE_ONLY,

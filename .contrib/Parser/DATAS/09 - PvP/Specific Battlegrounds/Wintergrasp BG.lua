@@ -8,7 +8,7 @@ _.PVP =
 		m(1334, {	-- Wintergrasp
 			["achievementID"] = 1752,	--  Master of Wintergrasp
 			--	["description"] =
-			["g"] = {
+			["g"] = bubbleDown({["u"] = 12}, {
 				n(ACHIEVEMENTS, {
 					ach(1752, {	-- Master of Wintergrasp
 						ach(1737, {	-- Destruction Derby (A)
@@ -76,7 +76,7 @@ _.PVP =
 						["races"] = HORDE_ONLY,
 					}),
 				}),
-			},
+			}),
 		}),
 	}),
 };

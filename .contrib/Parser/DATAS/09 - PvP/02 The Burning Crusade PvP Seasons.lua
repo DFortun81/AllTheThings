@@ -5,7 +5,7 @@
 _.PVP =
 {
 	n(-10003, {	-- The Burning Crusade
-	--	["g"] = bubbleDown({["u"] = 12}, {
+		["g"] = bubbleDown({["u"] = 12}, {
 			n(-658, { -- Pre-Season (PvP BC & later)
 				["description"] = "These items were available during Burning Crusade as Level 70 Pre-Season 1 rewards in Netherstorm. They cannot be transmogged, not even if you were a High Warlord or Grand Marshall. Replica items were introduced in their place.",
 				["u"] = REMOVED_FROM_GAME,
@@ -3283,6 +3283,6 @@ _.PVP =
 					}),
 				}),
 			}),
-	--	}),
+		}),
 	}),
 };

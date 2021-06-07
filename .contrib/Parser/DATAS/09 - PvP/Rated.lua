@@ -6,7 +6,7 @@ _.PVP =
 {
 	n(-240, {	-- Rated
 		["icon"] = "Interface\\Icons\\Achievement_BG_KillXEnemies_GeneralsRoom",
-		["g"] = {
+		["g"] = bubbleDown({["u"] = 12}, {
 			filter(200, bubbleDown(	-- Recipes
 			{
 				["u"] = REMOVED_FROM_GAME,
@@ -35,6 +35,6 @@ _.PVP =
 			}),
 			i(165717),	-- Steel Strong Box, 2v2/3v3/RBG sometimes on Lose, contains only BFA Mats - Ally
 			i(165718),	-- Steel Strong Box, 2v2/3v3/RBG sometimes on Lose, contains only BFA Mats - Horde
-		},
+		}),
 	}),
 };

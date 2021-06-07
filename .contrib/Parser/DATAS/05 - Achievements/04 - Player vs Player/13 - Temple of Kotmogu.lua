@@ -13,30 +13,32 @@ TODO:
 _.Achievements =
 {
 	n(-9958, {	-- Player vs Player
-		n(-9993, {	-- Temple of Kotmogu
-			["maps"] = { 417 },
-			["g"] = {
-				ach(6981, {	-- Master of Temple of Kotmogu
-					ach(6882, {	-- Temple of Kotmogu Veteran
-						ach(6740),	-- Temple of Kotmogu Victory
+		["g"] = bubbleDown({["u"] = 12}, {
+			n(-9993, {	-- Temple of Kotmogu
+				["maps"] = { 417 },
+				["g"] = {
+					ach(6981, {	-- Master of Temple of Kotmogu
+						ach(6882, {	-- Temple of Kotmogu Veteran
+							ach(6740),	-- Temple of Kotmogu Victory
+						}),
+						ach(6947, {	-- Four Square
+							crit(1),	-- Cyan Orb
+							crit(2),	-- Purple Orb
+							crit(3),	-- Green Orb
+							crit(4),	-- Orange Orb
+						}),
+						ach(6950),	-- Powerball
+						ach(6970),	-- Blackout
+						ach(6973),	-- Can't Stop Won't Stop
+						ach(6971),	-- I've Got the Power
+						ach(6972),	-- What is Best in Life?
+						ach(6980, {	-- Temple of Kotmogu All-Star
+							crit(1),	-- Kill four Orb carriers.
+							crit(2),	-- Four Orbs Controlled
+						}),
 					}),
-					ach(6947, {	-- Four Square
-						crit(1),	-- Cyan Orb
-						crit(2),	-- Purple Orb
-						crit(3),	-- Green Orb
-						crit(4),	-- Orange Orb
-					}),
-					ach(6950),	-- Powerball
-					ach(6970),	-- Blackout
-					ach(6973),	-- Can't Stop Won't Stop
-					ach(6971),	-- I've Got the Power
-					ach(6972),	-- What is Best in Life?
-					ach(6980, {	-- Temple of Kotmogu All-Star
-						crit(1),	-- Kill four Orb carriers.
-						crit(2),	-- Four Orbs Controlled
-					}),
-				}),
-			},
+				},
+			}),
 		}),
 	}),
 };

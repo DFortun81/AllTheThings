@@ -2731,7 +2731,7 @@ _.Zones =
 				n(73190,  {	-- Necrolord Sipe
 					["coord"] = { 76.8, 65.6, 84 },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["g"] = bubbleDown({["u"] = 12}, {
 						i(70909, {	-- Reins of the Vicious War Steed
 							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
 						}),
@@ -2762,7 +2762,7 @@ _.Zones =
 						i(143648, {	-- Vicious War Turtle
 							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
 						}),
-					},
+					}),
 				}),
 				n(65068,  {	-- Old Whitenose
 					["coord"] = { 67.8, 18.4, 84 },
