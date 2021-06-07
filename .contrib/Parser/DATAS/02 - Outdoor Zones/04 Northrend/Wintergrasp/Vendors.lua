@@ -445,6 +445,22 @@ _.Zones =
 							i(51569),	-- Titan-Forged Pendant of Victory
 						}),
 					}),
+					n(31101, {	-- Hoodoo Master Fu'jin
+						["coord"] = { 51.6, 21.0, 123 },
+						["races"] = HORDE_ONLY,
+						["g"] = {
+							i(44067),	-- Inscription of Triumph
+							i(44068),	-- Inscription of Dominance
+						},
+					}),
+					n(31051, {	-- Sorceress Kaylana
+						["coord"] = { 48.4, 21.08, 123 },
+						["races"] = ALLIANCE_ONLY,
+						["g"] = {
+							i(44067),	-- Inscription of Triumph
+							i(44068),	-- Inscription of Dominance
+						},
+					}),	
 				},
 			}),
 		}),

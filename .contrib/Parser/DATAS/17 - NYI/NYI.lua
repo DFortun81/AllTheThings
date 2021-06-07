@@ -2162,6 +2162,13 @@ _.NeverImplemented =
 			i(92746),	-- Portable Refrigerator
 			i(38307),	-- Crafty's Bottomless Inscription Bag
 		}),
+		f(55, {		-- Consumables
+			i(44871),	-- Greater Inscription of the Axe
+			i(44872),	-- Greater Inscription of the Crag
+			i(44873),	-- Greater Inscription of the Pinnacle
+			i(44874),	-- Greater Inscription of the Storm
+			i(45705),	-- Argent Tournament Invitation
+		}),
 		n(-650, {	-- Quest Item
 			i(157772),	-- A Royal Concern
 			i(157775),	-- A Royal Concern
@@ -3533,6 +3540,7 @@ _.NeverImplemented =
 				["spellID"] = 0,	-- Schematic wasn't implemented, spell is a reward from a quest now
 				["u"] = NEVER_IMPLEMENTED,
 			},
+				i(37589),	-- Hyper-Powered Mote Extractor (Retrieving)
 		}),
 		prof(ENCHANTING, {
 			i(84582),	-- Formula: Enchant Weapon - Windsong (never added version)
