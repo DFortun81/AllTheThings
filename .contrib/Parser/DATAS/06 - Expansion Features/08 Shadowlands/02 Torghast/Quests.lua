@@ -125,7 +125,7 @@ _.ExpansionFeatures =
 				}),
 				q(61319, {	-- Champion: Hala [Kyrian]
 					["customCollect"] = "SL_COV_KYR",	-- Kyrian
-					-- ["sourceQuests"] = { },	-- TODO
+					["sourceQuests"] = { 61348 },	-- Hala's Sword
 					["provider"] = { "n", 172037 },	-- Hala
 					["g"] = {
 						follower(1267),	-- Hala
@@ -133,7 +133,7 @@ _.ExpansionFeatures =
 				}),
 				q(61321, {	-- Champion: Ispiron [Kyrian]
 					["customCollect"] = "SL_COV_KYR",	-- Kyrian
-					-- ["sourceQuests"] = { },	-- TODO
+					["sourceQuests"] = { 61395 },	-- Spare Parts
 					["provider"] = { "n", 172154 },	-- Ispiron
 					["g"] = {
 						follower(1269),	-- Ispiron
@@ -205,7 +205,7 @@ _.ExpansionFeatures =
 				}),
 				q(61959, {	-- Champion: Talethi [Necrolord]
 					["customCollect"] = "SL_COV_NEC",	-- Necrolord
-					-- ["sourceQuests"] = { },	-- TODO
+					["sourceQuests"] = { 62226 },	-- Talethi's Desire
 					["provider"] = { "n", 173399 },	-- Talethi
 					["g"] = {
 						follower(1307),	-- Talethi
@@ -221,7 +221,7 @@ _.ExpansionFeatures =
 				}),
 				q(61317, {	-- Champion: Teliah [Kyrian]
 					["customCollect"] = "SL_COV_KYR",	-- Kyrian
-					-- ["sourceQuests"] = { },	-- TODO
+					["sourceQuests"] = { 61330 },	-- Teliah's Stolen Spear
 					["provider"] = { "n", 172006 },	-- Teliah
 					["g"] = {
 						follower(1221),	-- Teliah
@@ -310,6 +310,11 @@ _.ExpansionFeatures =
 					["repeatable"] = true,
 					["provider"] = { "n", 152418 },	-- Gallath
 				}),
+				q(61348, {	-- Hala's Sword
+					["sourceQuests"] = { 60136 },	-- Into Torghast
+					["repeatable"] = true,
+					["provider"] = { "n", 172039 },	-- Hala
+				}),
 				q(59777, {	-- Help Calix find Amethia
 					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["repeatable"] = true,
@@ -338,23 +343,23 @@ _.ExpansionFeatures =
 				q(61248, {	-- Kaletar's Freedom
 					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["repeatable"] = true,
-				--	["provider"] = { "n", TODO },	-- Kaletar
+					["provider"] = { "n", 171898 },	-- Kaletar
 				}),
 				q(61429, {	-- Karynmwylyann's Roots
 					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["repeatable"] = true,
-					-- ["provider"] = { "n", TODO },	-- Karynmwylyann
+					["provider"] = { "n", 172260 },	-- Karynmwylyann
 					-- Fracture Chambers 4 / 2
 				}),
 				q(61322, {	-- Kythekios' Memory Stone
 					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["repeatable"] = true,
-					-- ["provider"] = { "n", TODO },	-- Kythekios
+					["provider"] = { "n", 171996 },	-- Kythekios
 				}),
 				q(61431, {	-- Lloth'wellyn's Breakthrough
 					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["repeatable"] = true,
-					-- ["provider"] = { "n", TODO },	-- Lloth'wellyn
+					["provider"] = { "n", 172263 },	-- Lloth'wellyn
 				}),
 				q(60573, {	-- Meatball's Revenge
 					["sourceQuests"] = { 60136 },	-- Into Torghast
@@ -391,22 +396,25 @@ _.ExpansionFeatures =
 					["repeatable"] = true,
 					["provider"] = { "n", 157406 },	-- Renavyth
 				}),
+				q(61395, {	-- Stonehuck's Sinstone
+					["sourceQuests"] = { 60136 },	-- Spare Parts
+					["repeatable"] = true,
+					["provider"] = { "n", 172157 },	-- Ispiron
+				}),
 				q(61234, {	-- Stonehuck's Sinstone
 					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["repeatable"] = true,
 					["provider"] = { "n", 171879 },	-- Stonehuck
 				}),
 				q(62226, {	-- Talethi's Desire
-				--	TODO: add provider.  there are multiple Talethi NPCs on wowhead and none are specifically tied to Torghast so i'm not sure which one to use
 					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["repeatable"] = true,
-				--	["provider"] = { "n",  },	-- Talethi
+					["provider"] = { "n", 173748 },	-- Talethi
 				}),
 				q(61330, {	-- Teliah's Stolen Spear
-				--	TODO: add provider.  there are multiple Teliah NPCs on wowhead and none are specifically tied to Torghast so i'm not sure which one to use
 					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["repeatable"] = true,
-				--	["provider"] = { "n",  },	-- Teliah
+					["provider"] = { "n", 172007 },	-- Teliah
 				}),
 				q(62993, {	-- The Riddle of Death
 					["sourceQuests"] = { 60136 },	-- Into Torghast
