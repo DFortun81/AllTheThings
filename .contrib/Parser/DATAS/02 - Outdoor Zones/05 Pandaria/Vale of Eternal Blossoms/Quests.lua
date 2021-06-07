@@ -218,11 +218,13 @@ _.Zones =
 					["provider"] = { "n", 61962 },	-- Lorewalker Cho
 				}),
 				q(31386, {    -- The Shado-Pan Offensive (A)
+					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 64030 },    -- Lao Lang
 					["coord"] = { 84.4, 61.6, 390 },    -- Vale of Eternal Blossoms
 				}),
 				q(31388, {    -- The Shado-Pan Offensive (H)
+					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 64002 },    -- Sang-Bo
 					["coord"] = { 63.0, 21.2, 390 },    -- Vale of Eternal Blossoms

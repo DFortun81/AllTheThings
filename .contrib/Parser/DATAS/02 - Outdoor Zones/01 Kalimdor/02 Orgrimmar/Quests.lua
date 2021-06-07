@@ -2318,6 +2318,7 @@ _.Zones =
 					},
 				}),
 				q(29440, {	-- The Call of the World-Shaman
+					["isBreadcrumb"] = true,
 					["provider"] = { "n", 45244 },	-- Farseer Krogar
 					["coord"] = { 50.4, 38.2, 85 },
 					["races"] = HORDE_ONLY,
