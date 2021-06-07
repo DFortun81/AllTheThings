@@ -7949,35 +7949,69 @@ local itemFields = {
 		return app.CollectibleAchievements or t.collectibleAsCost;
 	end,
 	["collectibleAsCost"] = function(t)
-		if t.parent and t.parent.saved then return false; end
-		local id, results;
-		-- Search by modItemID if possible for accuracy
-		if t.modItemID and t.modItemID ~= t.itemID then
-			id = t.modItemID;
-			results = app.SearchForField("itemIDAsCost", id);
-		end
-		-- If no results, search by plain itemID
-		if not results and t.itemID then
-			id = t.itemID;
-			results = app.SearchForField("itemIDAsCost", id);
-		end
-		if results and #results > 0 then
-			for _,ref in pairs(results) do
-				-- different itemID, OR same itemID with different modID is allowed
-				if (ref.itemID ~= id or (ref.modItemID and ref.modItemID ~= t.modItemID)) and
-					app.RecursiveGroupRequirementsFilter(ref) and
-					-- don't include items which are from something the current character cannot complete
-					not GetRelativeValue(t, "altcollected") then
-					if ref.collectible or (ref.total and ref.total > 0) then
+		if not (app.MODE_DEBUG or app.MODE_ACCOUNT) and t.parent and t.parent.saved then return false; end
+		if not t.costCollectibles then
+			local results, id;-- = rawget(t, "collectibleResults");
+			-- if results then
+			-- 	print("Existing collectibleAsCost Results",t.key,t[t.key],#results)
+			-- end
+			-- Search by modItemID if possible for accuracy
+			if t.modItemID and t.modItemID ~= t.itemID then
+				id = t.modItemID;
+				results = app.SearchForField("itemIDAsCost", id);
+				-- rawset(t, "collectibleResults", results);
+			end
+			-- If no results, search by plain itemID
+			if not results and t.itemID then
+				id = t.itemID;
+				results = app.SearchForField("itemIDAsCost", id);
+				-- rawset(t, "collectibleResults", results);
+			end
+			if results and #results > 0 then
+				local filteredCost;
+				for _,ref in pairs(results) do
+					-- different itemID, OR same itemID with different modID is allowed
+					if (ref.itemID ~= id or (ref.modItemID and ref.modItemID ~= t.modItemID)) and
+						-- is not a parent of the cost group itself
+						not GetRelativeField(t, "parent", ref) then
+						-- track this item as a cost collectible
+						if not t.costCollectibles then t.costCollectibles = { ref }
+						else tinsert(t.costCollectibles, ref); end
+						-- account or debug, skip filter/exclusion logic
+						if (app.MODE_DEBUG or app.MODE_ACCOUNT) or
+							-- otherwise don't include items which are from something the current character cannot complete
+							(not GetRelativeValue(t, "altcollected") and app.RecursiveGroupRequirementsFilter(ref)) then
+							-- Used as a cost for something which is collectible itself
+							if ref.collectible then
+								filteredCost = true;
+							-- Used as a cost for something which has a total
+							elseif ref.total and ref.total > 0 then
+								filteredCost = true;
+							end
+						end
+					end
+				end
+				return filteredCost;
+			elseif t.metaAfterFailure then
+				setmetatable(t, t.metaAfterFailure);
+			end
+		else
+			for _,ref in pairs(t.costCollectibles) do
+				-- account or debug, skip filter/exclusion logic
+				if (app.MODE_DEBUG or app.MODE_ACCOUNT) or
+					-- otherwise don't include items which are from something the current character cannot complete
+					(not GetRelativeValue(t, "altcollected") and app.RecursiveGroupRequirementsFilter(ref)) then
+					-- Used as a cost for something which is collectible itself
+					if ref.collectible then
+						return true;
+					-- Used as a cost for something which has a total
+					elseif ref.total and ref.total > 0 then
 						return true;
 					end
 				end
 			end
-			return false;
-		elseif t.metaAfterFailure then
-			setmetatable(t, t.metaAfterFailure);
-			return false;
 		end
+		return false;
 	end,
 	["collectibleAsCostAfterFailure"] = app.ReturnFalse,
 	["collectibleAsFaction"] = function(t)
@@ -7996,50 +8030,76 @@ local itemFields = {
 		return t.collectedAsCost;
 	end,
 	["collectedAsCost"] = function(t)
-		-- local LOG = t.itemID == 76402 and t.itemID;
-		-- if LOG then print("Logging Costs for",LOG) end
-		local id, results;
-		-- Search by modItemID if possible for accuracy
-		if t.modItemID and t.modItemID ~= t.itemID then
-			id = t.modItemID;
-			results = app.SearchForField("itemIDAsCost", id);
-		end
-		-- If no results, search by plain itemID
-		if not results and t.itemID then
-			id = t.itemID;
-			results = app.SearchForField("itemIDAsCost", id);
-		end
-		if results and #results > 0 then
-			-- if LOG then print("Found Cost Results",#results) end
-			for _,ref in pairs(results) do
-				-- TODO: why is this so weird
-				-- ensure this result has updated itself prior to determining if a cost is required for it
-				-- if ref.parent then app.UpdateGroup(ref.parent, ref); end
-				-- if LOG then print("Cost Result",ref.key,ref[ref.key]) end
-				-- if LOG then print("-- Info: total",ref.total,"prog",ref.progress,"altcollected",ref.altcollected,"collectible",ref.collectible,"collected",ref.collected) end
-				-- different itemID, OR same itemID with different modID is allowed
-				if (ref.itemID ~= id or (ref.modItemID and ref.modItemID ~= t.modItemID)) and app.RecursiveGroupRequirementsFilter(ref) then
-					-- TODO: maybe use this instead eventually
-					-- if not app.IsComplete(ref) then
-					-- 	return false;
-					-- end
-					-- Used as a cost for something which is collectible itself and not collected
-					if ref.collectible and not ref.collected then
-						-- if LOG then print("Cost Required via Collectible") end
-						return false;
-					-- Used as a cost for something which has an incomplete progress
-					elseif ref.total and ref.total > 0 and ref.progress < ref.total and
-						-- is account or debug mode or the thing is not altcollected
-						(app.MODE_DEBUG or app.MODE_ACCOUNT or not ref.altcollected) and
-						-- is not a parent of the cost group itself
-						not GetRelativeField(t, "parent", ref) then
-						-- if LOG then print("Cost Required via Total/Prog") end
-						return false;
-					end
+		if not t.costCollectibles then return; end
+		-- local LOG = t.s;
+		for _,ref in pairs(t.costCollectibles) do
+			-- account or debug, skip filter/exclusion logic
+			if (app.MODE_DEBUG or app.MODE_ACCOUNT) or
+				-- otherwise don't include items which are from something the current character cannot complete
+				(not GetRelativeValue(t, "altcollected") and app.RecursiveGroupRequirementsFilter(ref)) then
+				-- Used as a cost for something which is collectible itself and not collected
+				-- if LOG then print("check collectible/collected",LOG,ref.key,ref[ref.key]) end
+				if ref.collectible and not ref.collected then
+					-- if LOG then print("Cost Required via Collectible") end
+					return false;
+				-- Used as a cost for something which has an incomplete progress
+				elseif ref.total and ref.total > 0 and ref.progress < ref.total then
+					-- if LOG then print("Cost Required via Total/Prog") end
+					return false;
 				end
 			end
-			return true;
 		end
+		return true;
+
+
+		-- -- local LOG = t.itemID == 23247 and t.itemID;
+		-- -- if LOG then print("Logging Costs for",LOG) end
+		-- local results, id;-- = rawget(t, "collectibleResults");
+		-- -- if results then
+		-- -- 	print("Existing collectedAsCost Results",t.key,t[t.key],#results)
+		-- -- end
+		-- -- Search by modItemID if possible for accuracy
+		-- if not results and t.modItemID and t.modItemID ~= t.itemID then
+		-- 	id = t.modItemID;
+		-- 	results = app.SearchForField("itemIDAsCost", id);
+		-- end
+		-- -- If no results, search by plain itemID
+		-- if not results and t.itemID then
+		-- 	id = t.itemID;
+		-- 	results = app.SearchForField("itemIDAsCost", id);
+		-- end
+		-- if results and #results > 0 then
+		-- 	-- if LOG then print("Found Cost Results",#results) end
+		-- 	for _,ref in pairs(results) do
+		-- 		-- TODO: why is this so weird
+		-- 		-- ensure this result has updated itself prior to determining if a cost is required for it
+		-- 		-- if ref.parent then app.UpdateGroup(ref.parent, ref); end
+		-- 		-- if LOG then print("Cost Result",ref.key,ref[ref.key]) end
+		-- 		-- if LOG then print("-- Info: total",ref.total,"prog",ref.progress,"altcollected",ref.altcollected,"collectible",ref.collectible,"collected",ref.collected) end
+		-- 		-- different itemID, OR same itemID with different modID is allowed
+		-- 		if (ref.itemID ~= id or (ref.modItemID and ref.modItemID ~= t.modItemID)) and app.RecursiveGroupRequirementsFilter(ref) then
+		-- 			-- TODO: maybe use this instead eventually
+		-- 			-- if not app.IsComplete(ref) then
+		-- 			-- 	return false;
+		-- 			-- end
+		-- 			-- Used as a cost for something which is collectible itself and not collected
+		-- 			-- print("check collectible/collected")
+		-- 			if ref.collectible and not ref.collected then
+		-- 				-- if LOG then print("Cost Required via Collectible") end
+		-- 				return false;
+		-- 			-- Used as a cost for something which has an incomplete progress
+		-- 			elseif ref.total and ref.total > 0 and ref.progress < ref.total and
+		-- 				-- is account or debug mode or the thing is not altcollected
+		-- 				(app.MODE_DEBUG or app.MODE_ACCOUNT or not ref.altcollected) and
+		-- 				-- is not a parent of the cost group itself
+		-- 				not GetRelativeField(t, "parent", ref) then
+		-- 				-- if LOG then print("Cost Required via Total/Prog") end
+		-- 				return false;
+		-- 			end
+		-- 		end
+		-- 	end
+		-- 	return true;
+		-- end
 	end,
 	["collectedAsCostAfterFailure"] = function(t)
 
