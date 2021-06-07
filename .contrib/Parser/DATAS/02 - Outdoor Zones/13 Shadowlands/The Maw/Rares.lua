@@ -107,6 +107,7 @@ _.Zones =
 						crit(2, {	-- Carriage Crusher
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
+						i(187370),	-- Carriage Crusher's Padded Slippers
 					},
 				}),
 				n(171317, {	-- Conjured Death

@@ -54,6 +54,11 @@ _.ExpansionFeatures =
 						159190,	-- Synod
 					},
 				}),
+				i(187041, {	-- Shoulders of Unbreakable Demise
+					["crs"] = {
+						155250,	-- Decayspeaker
+					},
+				}),
 				i(183195, {	-- Torghast Lurker
 					["crs"] = {
 						153011,	-- Binder Baritas
@@ -68,6 +73,16 @@ _.ExpansionFeatures =
 						156239,	-- Dark Ascended Corrus
 						155250,	-- Decayspeaker
 						155251,	-- Elder Longbranch
+					},
+				}),
+				i(187031, {	-- Towering Mantle of the Maw
+					["crs"] = {
+						169859,	-- Observer Zelgar <The Third Eye>
+					},
+				}),
+				i(187040, {	-- Twin-Scythe Spaulders
+					["crs"] = {
+					--	no drop data yet, just reported by players
 					},
 				}),
 

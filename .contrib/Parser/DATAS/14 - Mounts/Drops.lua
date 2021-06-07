@@ -101,9 +101,7 @@ _.Mounts =
 		i(180581, {	-- Hopecrusher Gargon
 			["customCollect"] = "SL_COV_VEN",	-- Venthyr covenant drop only
 		}),
-		i(180461, {	-- Horrid Dredwing
-			["customCollect"] = "SL_COV_VEN",	-- Venthyr covenant drop only
-		}),
+		i(180461),	-- Horrid Dredwing
 		i(184161),	-- Infested Necroray
 		i(50818),	-- Invincible
 		i(116660),	-- Ironhoof Destroyer

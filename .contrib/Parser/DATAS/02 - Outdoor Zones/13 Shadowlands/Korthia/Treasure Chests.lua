@@ -79,6 +79,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 54.2, 41.2, KORTHIA },
 					["g"] = {
+						i(186990),	-- Recipe: Blossom Burst
 						i(186989),	-- Recipe: Marrow Burst
 						i(186986),	-- Recipe: Widow Burst
 						i(187153),	-- Tasty Mawshroom
@@ -89,6 +90,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 53.7, 37.9, KORTHIA },
 					["g"] = {
+						i(186990),	-- Recipe: Blossom Burst
 						i(186989),	-- Recipe: Marrow Burst
 						i(186986),	-- Recipe: Widow Burst
 						i(187153),	-- Tasty Mawshroom
@@ -99,6 +101,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 45.6, 34.3, KORTHIA },
 					["g"] = {
+						i(186990),	-- Recipe: Blossom Burst
 						i(186989),	-- Recipe: Marrow Burst
 						i(186986),	-- Recipe: Widow Burst
 						i(187153),	-- Tasty Mawshroom
@@ -109,6 +112,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 39.7, 34.8, KORTHIA },
 					["g"] = {
+						i(186990),	-- Recipe: Blossom Burst
 						i(186989),	-- Recipe: Marrow Burst
 						i(186986),	-- Recipe: Widow Burst
 						i(187153),	-- Tasty Mawshroom
@@ -119,6 +123,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 39.6, 30.0, KORTHIA },
 					["g"] = {
+						i(186990),	-- Recipe: Blossom Burst
 						i(186989),	-- Recipe: Marrow Burst
 						i(186986),	-- Recipe: Widow Burst
 						i(187153),	-- Tasty Mawshroom
@@ -204,7 +209,11 @@ _.Zones =
 				o(369341, {	-- Mawsworn Cache
 					["questID"] = 64364,
 					["isDaily"] = true,
-					["coord"] = { 56.4, 69.5, KORTHIA },
+					["coords"] = {
+						{ 47.7, 74.3, KORTHIA },
+						{ 54.0, 72.8, KORTHIA },
+						{ 56.4, 69.5, KORTHIA },
+					},
 					["g"] = {
 						i(187431),	-- Sleeping Armament
 					},
@@ -219,6 +228,7 @@ _.Zones =
 							i(186666),	-- Korthian Caretaker's Crown
 							i(186736),	-- Shardhide Leather Cowl
 						}),
+						i(187442),	-- Scholar's Ancient Pack
 						i(187008),	-- Recipe: Porous Rock Candy
 					},
 				}),
@@ -231,6 +241,7 @@ _.Zones =
 							i(186666),	-- Korthian Caretaker's Crown
 							i(186736),	-- Shardhide Leather Cowl
 						}),
+						i(187442),	-- Scholar's Ancient Pack
 						i(187008),	-- Recipe: Porous Rock Candy
 					},
 				}),
@@ -244,6 +255,7 @@ _.Zones =
 							i(186666),	-- Korthian Caretaker's Crown
 							i(186736),	-- Shardhide Leather Cowl
 						}),
+						i(187442),	-- Scholar's Ancient Pack
 						i(187008),	-- Recipe: Porous Rock Candy
 					},
 				}),
@@ -256,6 +268,7 @@ _.Zones =
 							i(186666),	-- Korthian Caretaker's Crown
 							i(186736),	-- Shardhide Leather Cowl
 						}),
+						i(187442),	-- Scholar's Ancient Pack
 						i(187008),	-- Recipe: Porous Rock Candy
 					},
 				}),
@@ -268,6 +281,7 @@ _.Zones =
 							i(186666),	-- Korthian Caretaker's Crown
 							i(186736),	-- Shardhide Leather Cowl
 						}),
+						i(187442),	-- Scholar's Ancient Pack
 						i(187008),	-- Recipe: Porous Rock Candy
 					},
 				}),
@@ -492,6 +506,7 @@ _.Zones =
 							["name"] = "Spectral Key #3, Seeker's Quorum Chain",
 						}),
 						i(187240),	-- Field Warden's Watchful Eye
+						i(187023),	-- Instructor's Mantle
 					},
 				}),
 			}),

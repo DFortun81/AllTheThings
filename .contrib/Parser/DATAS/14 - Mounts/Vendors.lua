@@ -288,11 +288,9 @@ _.Mounts =
 		i(13334),	-- Green Skeletal Warhorse
 		i(25476),	-- Green Wind Rider
 		i(87788),	-- Grey Riding Yak
-		i(181300),	-- Gruesome Flayedwing		-- no cost due each covenant offering this mount in different ways
+		i(181300),	-- Gruesome Flayedwing
 		i(87774),	-- Heavenly Golden Cloud Serpent
-		i(180461, {	-- Horrid Dredwing
-			["customCollect"] = "SL_COV_VEN",	-- Venthyr covenant only
-		}),
+		i(180461),	-- Horrid Dredwing
 		i(142228, {	-- Huntmaster's Dire Wolfhawk (Hunter)
 			["classes"] = { HUNTER },
 		}),

@@ -50,7 +50,7 @@ _.Zones =
 							["isDaily"] = true,
 							["coord"] = { 28.5, 24.9, THE_MAW },
 							["g"] = {
-								crit(20, {	-- Torgllun, Lord of Shades
+								crit(20, {	-- Torglluun, Lord of Shades
 									["achievementID"] = 15107,	-- Conquering Korthia
 								}),
 								i(187139),	-- Bottled Shade Heart (TOY!)

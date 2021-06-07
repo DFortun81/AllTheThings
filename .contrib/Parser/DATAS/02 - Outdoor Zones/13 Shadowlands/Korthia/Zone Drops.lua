@@ -48,6 +48,7 @@ _.Zones =
 				i(187327),	-- Encrypted Korthian Journal
 				i(187463),	-- Enigmatic Map Fragments
 				i(187325),	-- Faded Razorwing Anatomy Illustration
+				i(187336),	-- Forbidden Weapon Schematics
 				i(187324),	-- Gnawed Ancient Idol
 				i(187326),	-- Half-Completed Runeforge Pattern
 				i(187335),	-- Maldraxxus Larva Shell
@@ -69,11 +70,6 @@ _.Zones =
 					["crs"] = { 180030 },	-- Opportunistic Corruptor (also dropped from *i think* a mawsworn cleaver, but not positive)
 				}),
 			--	Greens
-				i(186123),	-- Foresworn Scout's Coif
-				i(186124),	-- Foresworn Scout's Greaves
-				i(186122),	-- Foresworn Scout's Grips
-				i(186125),	-- Foresworn Scout's Shoulderguards
-				i(186121),	-- Foresworn Scout's Striders
 				i(186153),	-- Foresworn Seal
 				i(186559, {	-- Grappling Gauntlet (PET!)
 					["crs"] = {	-- probably from other Mawsworn mobs
@@ -90,7 +86,7 @@ _.Zones =
 				i(186117),	-- Mawsworn Assassin's Breeches
 				i(186115),	-- Mawsworn Assassin's Gloves
 				i(186116),	-- Mawsworn Assassin's Hood
-				i(186137),	-- Mawsworn Assassin's Shoulderguards
+				i(186137),	-- Mawsworn Assassin's Shoulderpads
 				i(186136),	-- Mawsworn Assassin's Vest
 				i(186147),	-- Mawsworn Battle Hammer*
 				i(186149),	-- Mawsworn Collector's Gavel
@@ -120,6 +116,11 @@ _.Zones =
 				i(186127),	-- Mawsworn Scout's Bracers
 				i(186120),	-- Mawsworn Scout's Chainmail
 				i(186126),	-- Mawsworn Scout's Cincture
+				i(186123),	-- Mawsworn Scout's Coif
+				i(186124),	-- Mawsworn Scout's Greaves*
+				i(186122),	-- Mawsworn Scout's Grips
+				i(186125),	-- Mawsworn Scout's Shoulderguards
+				i(186121),	-- Mawsworn Scout's Striders
 				i(186148),	-- Mawsworn Vanquisher's Spire*
 				i(186145),	-- Stygian Thorn Loop
 			}),

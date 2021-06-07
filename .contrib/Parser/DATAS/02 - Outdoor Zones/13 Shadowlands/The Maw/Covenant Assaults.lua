@@ -490,16 +490,16 @@ _.Zones =
 									}),
 									ach(15042, {	-- Tea for the Troubled
 										crit(1, {	-- Simone
-										--	["coord"] = { , , THE_MAW },
-										--	["cr"] = ,	-- 
+											["coord"] = { 26.7, 14.6, THE_MAW },
+											["cr"] = 179465,	-- Simone
 										}),
 										crit(2, {	-- Laurent
-										--	["coord"] = { , , THE_MAW },
-										--	["cr"] = ,	-- 
+											["coord"] = { 31.6, 14.2, THE_MAW },
+											["cr"] = 179466,	-- Laurent
 										}),
 										crit(3, {	-- Archivist Fane
-										--	["coord"] = { , , THE_MAW },
-										--	["cr"] = ,	-- 
+											["coord"] = { 26.6, 20.0, THE_MAW },
+											["cr"] = 179471,	-- Archivist Fane
 										}),
 										crit(4, {	-- The Countess
 											["coord"] = { 24.8, 17.4, THE_MAW },

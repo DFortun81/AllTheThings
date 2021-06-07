@@ -7,10 +7,11 @@ _.Zones =
 		m(KORTHIA, {
 			n(RARES, {
 			--	TODO: note about covenant rare mounts (Escaped Wilderling, Fleshwing, Stygian Stonecrusher, & Wild Worldcracker): SS mount is currently bugged so not sure if it can be summoned by any covenant, but EW mount can be - not sure if this is similar to harika/valfir mounts or if this is a PTR bug
+			--	if it is similar to harika/valfir (mounts can be used by anyone but only looted by their respective covenant), the quests themselves need to be tagged as such so they do not show in the list for players tracking quests
 				i(187216),	-- Soultwining Crescent
 				n(179769, {	-- Consumption
 				--	triggered 64280 and 64281 on my first kill, on subsequent days it's no longer 'rare,' and no quests pop, and it's also not lootable and doesn't grant achievement credit.  probably bugged but i'm not sure which quest to attach
-				--	^ 64243 pops now but it still doesn't grant achievement credit, so not sure if this will change
+				--	^ 64243 pops now but it still doesn't grant achievement credit, so not sure if this will change / not sure what happened to previous 2 quests!
 					["questID"] = 64243,
 					["isDaily"] = true,
 					["coord"] = { 51.1, 41.7, KORTHIA },
@@ -23,6 +24,8 @@ _.Zones =
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 						i(187402),	-- All-Consuming Loop
+						i(187246),	-- Death-Enveloped Pauldrons
+						i(187247),	-- Death-Enveloped Shoulder Spikes
 					},
 				}),
 				n(177903, {	-- Dominated Protector
@@ -81,6 +84,11 @@ _.Zones =
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 						i(186489),	-- Lord of the Corpseflies (MOUNT!)
+						i(187424, {	-- Legend of the Animaswell
+							["customCollect"] = "SL_COV_NEC",	-- Necrolord
+							["isWeekly"] = true,
+							["questID"] = 64551,
+						}),
 					},
 				}),
 				n(179472, {	-- Konthrogz the Obliterator
@@ -245,6 +253,11 @@ _.Zones =
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 						i(186483),	-- Foresworn Aquilon (MOUNT!)
+						i(187426, {	-- Legend of the Animaswell
+							["customCollect"] = "SL_COV_KYR",	-- Kyrian
+							["isWeekly"] = true,
+							["questID"] = 64552,	-- Legend of the Animaswell
+						}),
 						i(187176),	-- Vesper of Harmony (TOY!)
 					},
 				}),
@@ -263,6 +276,7 @@ _.Zones =
 							["sourceQuests"] = { 64519 },	-- Lost Vaults
 							["questID"] = 63918,	-- Obelisk of Dark Tidings
 						}),
+						i(187387),	-- Pauldrons of the Unknown Beyond
 					},
 				}),
 				n(179802, {	-- Yarxhov the Pillager
@@ -299,5 +313,5 @@ _.Zones =
 };
 
 _.HiddenQuestTriggers = {
-	q(64572),	-- i think this is a daily lockout for receiving a Soultwining Crescent from a rare
+	q(64572),	-- i think this is a daily lockout for receiving a Soultwining Crescent from a rare (also triggers on treasures)
 };
