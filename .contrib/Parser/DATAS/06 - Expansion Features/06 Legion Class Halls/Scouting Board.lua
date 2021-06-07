@@ -185,7 +185,7 @@ _.ExpansionFeatures =
 					}),
 					mission(1505, {	-- A Good Dust Up
 						q(45172, {	-- To Battle!
-							["u"] = REMOVED_FROM_GAME,
+							-- This is not removed from game; confirmed again in 9.0.5. You get it on the mission table one time per character after gearing up your followers a bit (its an 850 mission).
 							["provider"] = { "i", 143328 },	-- Battle Report
 							["g"] = {
 								 i(143606, {	-- Satchel of Battlefield Spoils
@@ -208,6 +208,7 @@ _.ExpansionFeatures =
 					}),
 					mission(1503, {	-- Council of War
                         q(45162, {	-- We Brought the Hammer
+							["u"] = REMOVED_FROM_GAME,	-- until Brawler's Guild comes back someday
                             ["provider"] = { "i", 142553 },	-- Tuft of Dwarvish Beard
                         }),
                     }),
@@ -218,7 +219,8 @@ _.ExpansionFeatures =
 						i(129165),	-- Barnacle-Encrusted Gem
 					}),
 					mission(1513, {	-- I've Got A Strange Feeling About This
-                        q(45312, {	-- You beat the Ball of Meat
+                        q(45312, {	-- You Beat the Ball of Meat
+							["u"] = REMOVED_FROM_GAME,	-- until Brawler's Guild comes back someday
                             ["provider"] = { "i", 143590 },	-- Hunk of Meatball
                             ["g"] = {
 								follower(986),	-- Meatball
@@ -227,6 +229,7 @@ _.ExpansionFeatures =
                     }),
 					mission(1504, {	-- It's Clean Up Time
                         q(45163, {	-- Clearing Up
+							["u"] = REMOVED_FROM_GAME,	-- until Brawler's Guild comes back someday
                             ["provider"] = { "i", 142554 },	-- Broken Handle
                         }),
                     }),
@@ -235,6 +238,7 @@ _.ExpansionFeatures =
 					}),
 					mission(1512, {	-- Master of Shadows
                         q(45304, {	-- Attacking the Darkness
+							["u"] = REMOVED_FROM_GAME,	-- until Brawler's Guild comes back someday
                             ["provider"] = { "i", 143561 },	-- Exhausted Shadow Candle
                         }),
                     }),
@@ -273,6 +277,7 @@ _.ExpansionFeatures =
 					}),
 					mission(1502, {	-- There is no Brawlers Guild
 						q(45111, {	-- Everyone Loves a Good Fight
+							["u"] = REMOVED_FROM_GAME,	-- until Brawler's Guild comes back someday
 							["provider"] = { "i", 142522 },	-- Rude Letter
 						}),
 					}),
@@ -307,9 +312,9 @@ _.ExpansionFeatures =
 					un(REMOVED_FROM_GAME, i(143478)),	-- Arena Invitation
 					i(143328),	-- Battle Report
 					un(REMOVED_FROM_GAME, i(143329)),	-- Dire Summons
-					un(REMOVED_FROM_GAME, i(143479)),	-- Frayed Banner
-					i(142522),	-- Rude Letter
 					i(140362),	-- Dust from the Shadowlands
+					un(REMOVED_FROM_GAME, i(143479)),	-- Frayed Banner
+					un(REMOVED_FROM_GAME, i(142522)),	-- Rude Letter (removed until Brawler's Guild comes back someday)
 					-- Dungeons
 					un(REMOVED_FROM_GAME, i(139471)),	-- Black Rook Missive -> Black Rook Hold: The Lord of Black Rook Hold -> Black Rook Hold
 					un(REMOVED_FROM_GAME, i(139476)),	-- Broken Dragon Scale -> Neltharion's Lair: Into Neltharion's Lair -> Neltharion's Lair
