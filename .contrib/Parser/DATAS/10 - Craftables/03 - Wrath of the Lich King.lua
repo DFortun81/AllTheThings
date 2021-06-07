@@ -13,6 +13,12 @@ _.Craftables =
 			}),
 		}),
 		prof(BLACKSMITHING, {
+			f(55, {		-- Consumables
+				i(41611),	-- Eternal Belt Buckle
+				i(41976),	-- Titanium Weapon Chain
+				i(42500),	-- Titanium Shield Spike
+				i(44936),	-- Titanium Plating
+			}),
 			filter(20, {	-- Daggers
 				i(41183),	-- Saronite Ambusher
 				i(41184),	-- Saronite Shiv
@@ -203,6 +209,10 @@ _.Craftables =
 				i(40768),	-- MOLL-E*
 				i(48933),	-- Wormhole Generator: Northrend*
 			}),
+			f(55, {		-- Consumables
+				i(41146),	-- Sun Scope
+				i(41167),	-- Heartseeker Scope
+			}),
 			n(-319, {	-- Weapons
 				-- Guns
 				i(41168),	-- Armor Plated Combat Shotgun*
@@ -346,6 +356,14 @@ _.Craftables =
 				i(44446),			-- Pack of Endless Pockets
 				un(REMOVED_FROM_GAME, i(44447)),	-- Dragonscale Ammo Pouch
 				un(REMOVED_FROM_GAME, i(44448)),	-- Nerubian Reinforced Quiver
+			}),
+			f(55, {		-- Consumables
+				i(38371),	-- Jormungar Leg Armor
+				i(38372),	-- Nerubian Leg Armor
+				i(38376),	-- Heavy Borean Armor Kit
+				i(38373), 	-- Frosthide Leg Armor
+				i(38374), 	-- Icescale Leg Armor
+				i(44963), 	-- Earthen Leg Armor
 			}),
 			n(-322, { 	-- Cloak
 				i(38441),	-- Cloak of Harsh Winds
@@ -501,6 +519,12 @@ _.Craftables =
 				i(41600),	-- Glacial Bag
 				i(41598),	-- Mysterious Bag
 			}),
+			f(55, {		-- Consumables
+				i(41601),	-- Shining Spellthread
+				i(41602),	-- Brilliant Spellthread
+				i(41603),	-- Azure Spellthread
+				i(41604),	-- Sapphire Spellthread
+			}),
 			n(-323, {	-- Chest
 				i(41554),	-- Black Duskweave Robe
 				i(41549),	-- Duskweave Robe
@@ -605,3 +629,8 @@ _.Craftables =
 		}),
 	}),
 };
+-- The items never made it in.
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	-- Leatherworking
+	i(38378)	-- Wyrmscale Leg Armor
+});
