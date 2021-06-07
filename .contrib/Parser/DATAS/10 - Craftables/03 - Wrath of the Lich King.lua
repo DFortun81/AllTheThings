@@ -356,7 +356,7 @@ _.Craftables =
 				i(44446),			-- Pack of Endless Pockets
 				un(REMOVED_FROM_GAME, i(44447)),	-- Dragonscale Ammo Pouch
 				un(REMOVED_FROM_GAME, i(44448)),	-- Nerubian Reinforced Quiver
-			}),
+			}),	
 			f(55, {		-- Consumables
 				i(38371),	-- Jormungar Leg Armor
 				i(38372),	-- Nerubian Leg Armor
