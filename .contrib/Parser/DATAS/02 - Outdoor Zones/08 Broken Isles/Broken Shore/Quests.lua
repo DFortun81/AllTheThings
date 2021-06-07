@@ -481,12 +481,6 @@ _.Zones =
 					["provider"] = { "n", 119886 },	-- Excavator Karla
 					["coord"] = { 39.6, 71.7, 646 },
 				}),
-				q(45103, {	-- We Ride!
-					["provider"] = { "n", 116128 },	-- Highlord Darion Mograine
-					["coord"] = { 51.6, 21.8, 646 },
-					["classes"] = { DEATHKNIGHT },
-					["sourceQuest"] = 45243,		-- On Daumyr's Wings
-				}),
 				q(53778, {	-- Where He Fell
 					["provider"] = { "n", 145965 },	-- Spirit of Vol'jin
 					["lvl"] = 120,
@@ -503,21 +497,14 @@ _.Zones =
 
 			-- TODO: unconfirmed or old af data that needs to be re-confirmed anyway
 				--[[
-				q(45343),	-- A Curious Contagion
-				q(42708),	-- A Personal Request
 				q(44401),	-- A Weapon For Every Occasion
 				q(45342),	-- Administering Aid
 				q(45816),	-- Choose Order Hall to Support
 				q(45350),	-- Countering the Contagion
 				q(45347),	-- Crafting a Cure
-				q(43572),	-- Darkheart Thicket: The Nightmare Lash
-				q(45825),	-- Death Knight
 				q(42680),	-- Deciphering the Letter
-				q(45828),	-- Demon Hunter
 				q(46103),	-- Dread Infiltrators
 				q(42911),	-- Drowned Mana
-				q(45829),	-- Druid
-				q(44282),	-- Eye of Azshara: The Frozen Soul
 				q(41924),	-- Fangs of the Devourer
 				q(47040),	-- Fate Sealed
 				q(45574),	-- Fel Ingredients
@@ -525,36 +512,25 @@ _.Zones =
 				q(47119),	-- Free The Tormented
 				q(47121),	-- Free The Tormented
 				q(47120),	-- Free The Tormented
-				q(45182, {	-- Frost: The Twisted Twin
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(47045),	-- Further Progress
 				q(46125),	-- Furthering Knowledge
 				q(46320),	-- Hope For a Cure
-				q(45831),	-- Hunter
 				q(40136),	-- Immaculate Stonehide Leather
 				q(40151),	-- Immaculate Stormscale
 				q(39757),	-- Keeping Your Edge
 				q(44082),	-- Knights of the Ebon Blade
 				q(46688),	-- Leather of the Ancients
 				q(38804),	-- Lyrelle
-				q(45817),	-- Mage
 				q(46694),	-- Mail of the Ancients
 				q(45240),	-- Making Preparations
 				q(46353),	-- Master Who?
-				q(43253),	-- Maw of Souls: Ancient Vrykul Legends
-				q(43574),	-- Maw of Souls: Maul of the Dead
 				q(45345),	-- Mischievous Sprites
-				q(45827),	-- Monk
 				q(42730),	-- Noggenfogger's Reasonable Request
-				q(45243),	-- On Daumyr's Wings
 				q(38802),	-- Ondri's Still-Beating Heart
 				q(47017),	-- Only the Best
 				q(39799),	-- Our Next Move
-				q(45824),	-- Paladin
 				q(46802),	-- Paragon of the Legionfall Armies
 				q(39832),	-- Plans and Preparations
-				q(45823),	-- Priest
 				q(43266),	-- Recruiting the Troops
 				q(40419),	-- Rescue Mission
 				q(44889),	-- Resource Management
@@ -562,20 +538,13 @@ _.Zones =
 				q(38792),	-- Rethu's Lesson
 				q(38794),	-- Rethu's Sacrifice
 				q(46267),	-- Return of the Battlelord
-				q(42449),	-- Return of the Four Horsemen
 				q(45331),	-- Return to Acherus
 				q(38803),	-- Rin'thissa
 				q(43264),	-- Rise, Champions
-				q(45815),	-- Rogue
 				q(45348),	-- Safekeeping
-				q(43539),	-- Salanar the Horseman
 				q(41993),	-- Salvation From On High
 				q(45344),	-- Sampling the Source
 				q(47067),	-- Seeking Lost Knowledge
-				q(47042, {	-- Shadow: The Twisted Twin
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(45830),	-- Shaman
 				q(45346),	-- Shambling Specimens
 				q(46499),	-- Spiders, Huh?
 				q(43265),	-- Spread the Word
@@ -584,8 +553,6 @@ _.Zones =
 				q(45459),	-- Storming the Legion
 				q(45554),	-- Taking Control
 				q(46317),	-- Talon's Call
-				q(43268),	-- Tech It Up A Notch
-				q(44787),	-- The Bonemother
 				q(46777),	-- The Bounties of Legionfall
 				q(47127),	-- The Deceiver
 				q(47126),	-- The Deceiver
@@ -597,14 +564,12 @@ _.Zones =
 				q(47124),	-- The Fallen Avatar
 				q(45028),	-- The Fate of Kanrethad
 				q(42484),	-- The Firstborn Rises
-				q(43686),	-- The Fourth Horseman
 				q(42537),	-- The King Rises
 				q(46666),	-- The Motherlode
 				q(44775),	-- The Peak of Bones
 				q(46674),	-- The Preservation of Nature
 				q(43249),	-- The Raven's Eye
 				q(42533),	-- The Ruined Kingdom
-				q(42818),	-- The Scarlet Assault
 				q(41919),	-- The Shadows Reveal
 				q(45788),	-- The Speaker Awaits
 				q(42824),	-- The Zealot Rises
@@ -615,10 +580,7 @@ _.Zones =
 				q(41922),	-- Traitor!
 				q(43267),	-- Troops in the Field
 				q(44234),	-- Unleashing our Wrath
-				q(45826),	-- Warlock
-				q(45822),	-- Warrior
 				q(45385),	-- We Must be Prepared!
-				q(45103),	-- We Ride!
 				q(46256),	-- X Treasures Found, 1 Challenge Attempted
 				q(46255),	-- X Unstable Portals Disrupted, 1 World Boss Defeated
 			}),

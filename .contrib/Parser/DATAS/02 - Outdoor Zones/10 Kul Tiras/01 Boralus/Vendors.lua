@@ -1764,6 +1764,7 @@ _.Zones =
 				n(143560, {	-- Marshal Gabriel
 					["coord"] = { 56.2, 25.7, 1161 },
 					["races"] = ALLIANCE_ONLY,
+					["itemID"] = 137642,	-- Mark of Honor
 					["g"] = {
 					--	Arsenals
 					--	Dread Aspirant, Battle for Azeroth Season 1

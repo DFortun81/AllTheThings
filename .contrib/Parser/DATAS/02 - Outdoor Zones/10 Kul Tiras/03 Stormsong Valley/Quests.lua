@@ -1317,7 +1317,7 @@ _.Zones =
 					},
 				}),
 				q(53045, {	-- Surveying the Wharf
-					--	may be a breadcrumb.  if it is, its follow-up ("Deadliest Catch: Reel Big Fish") has an unknown SQ, possibly "From the Depths"
+					["isBreadcrumb"] = true,
 					["sourceQuests"] = { 49831 },	-- From the Depths
 					["provider"] = { "n", 131001 },	-- Lieutenant Harris
 					["coord"] = { 34.7, 47.5, 942 },

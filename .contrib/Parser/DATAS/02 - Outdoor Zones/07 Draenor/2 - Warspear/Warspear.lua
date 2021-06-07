@@ -210,6 +210,7 @@ _.Zones =
 						}),
 						n(88569, {	-- Blood Guard Axelash <Primal Gladiator>
 							["coord"] = { 48.5, 57.6, 624 },
+							["itemID"] = 137642,	-- Mark of Honor
 							["g"] = {
 								n(-319, {	-- Weapons
 									i(138632, {	-- Arsenal: Primal Gladiator's Weapons
@@ -1092,6 +1093,7 @@ _.Zones =
 						}),
 						n(93909, {	-- Cladd Dawnstrider <Wild Gladiator>
 							["coord"] = { 49.3, 56.7, 624 },
+							["itemID"] = 137642,	-- Mark of Honor
 							["g"] = {
 								n(-319, {	-- Weapons
 									i(138634, {	-- Arsenal: Wild Gladiator's Weapons (H)
@@ -2206,6 +2208,7 @@ _.Zones =
 						}),
 						n(93908, {	-- Fobbly Kickfix <Wild Combatant>
 							["coord"] = { 49.1, 56.4, 624 },
+							["itemID"] = 137642,	-- Mark of Honor
 							["g"] = {
 								n(-319, {	-- Weapons
 									i(138629, {	-- Arsenal: Wild Combatant's Weapons (H)
@@ -2935,6 +2938,7 @@ _.Zones =
 						}),
 						n(93917, {	-- Malukah Lightsong <Warmongering Gladiator>
 							["races"] = HORDE_ONLY,	-- to hide it in Mark of Honor list
+							["itemID"] = 137642,	-- Mark of Honor
 							["coord"] = { 48.9, 57.3, 624 },
 							["g"] = {
 								n(-319, {	-- Weapons
@@ -3843,6 +3847,7 @@ _.Zones =
 						}),
 						n(87774, {	-- Stone Guard Brokefist <Primal Combatant>
 							["coord"] = { 48.3, 57.5, 624 },
+							["itemID"] = 137642,	-- Mark of Honor
 							["g"] = {
 								n(-319, {	-- Weapons
 									i(138626, {	-- Arsenal: Primal Combatant's Weapons (H)
@@ -4332,6 +4337,7 @@ _.Zones =
 						}),
 						n(93916, {	-- Tae'loxe Soulshrivel <Warmongering Combatant>
 							["coord"] = { 49.2, 57.1, 624 },
+							["itemID"] = 137642,	-- Mark of Honor
 							["g"] = {
 								n(-319, {	-- Weapons
 									i(138627, {	-- Arsenal: Warmongering Combatant's Weapons (H)

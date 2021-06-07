@@ -1944,16 +1944,31 @@ namespace ATT
                 // sometimes existing data from harvests may be inaccurate, so may need to clean existing fields from being merged in
                 if (entry.TryGetValue("_drop", out object drops))
                 {
-                    if (drops is List<object> dropStrs && dropStrs.Count > 0)
+                    PerformDrops(data, drops);
+                }
+            }
+
+            /// <summary>
+            /// Takes the value of the "_drops" key and applies it to the given data
+            /// </summary>
+            /// <param name="data"></param>
+            /// <param name="drops"></param>
+            public static void PerformDrops(Dictionary<string, object> data, object drops)
+            {
+                if (drops is List<object> dropStrs && dropStrs.Count > 0)
+                {
+                    foreach (var dropObj in dropStrs)
                     {
-                        foreach (var dropObj in dropStrs) data.Remove(dropObj.ToString());
+                        data.Remove(dropObj.ToString());
+                        //if (data.Remove(dropObj.ToString()))
+                            //Trace.WriteLine("Removed key: " + dropObj.ToString() + " from: " + MiniJSON.Json.Serialize(data));
                     }
-                    else
-                    {
-                        Console.WriteLine("Invalid format for '_drop':");
-                        Console.WriteLine(MiniJSON.Json.Serialize(drops));
-                        Console.ReadLine();
-                    }
+                }
+                else
+                {
+                    Console.WriteLine("Invalid format for '_drop':");
+                    Console.WriteLine(MiniJSON.Json.Serialize(drops));
+                    Console.ReadLine();
                 }
             }
 

@@ -26,35 +26,9 @@ _.Instances = { tier(1, {	-- Classic
 						}),
 					},
 				}),
-				q(42821, {	-- Raising an Army
-					["provider"] = { "n", 109221 }, -- Thassarian
-					["coord"] = { 72.0, 48.0, 804 },
-					["classes"] = { DEATHKNIGHT },
-					["sourceQuest"] = 42818, -- The Scarlet Assault
-				}),
 				q(26996, {	-- Right Under Their Noses
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 44800 },	-- Dominic
-				}),
-				q(42823, {	-- The Scarlet Commander
-					["provider"] = { "n", 109221 }, -- Thassarian
-					["classes"] = { DEATHKNIGHT },
-					["sourceQuests"] = {
-						42821, -- Raising an Army
-						42882, -- The Scarlet Massacre
-					},
-				}),
-				q(42882, {	-- The Scarlet Massacre
-					["provider"] = { "n", 109221 }, -- Thassarian
-					["coord"] = { 72.0, 48.0, 804 },
-					["classes"] = { DEATHKNIGHT },
-					["sourceQuest"] = 42818, -- The Scarlet Assault
-				}),
-				q(42824, {	-- The Zealot Rises
-					["provider"] = { "n", 109221 }, -- Thassarian
-					["classes"] = { DEATHKNIGHT },
-					["sourceQuest"] = 42823, -- The Scarlet Commander
-					["maps"] = { 805 },
 				}),
 				q(31514, {	-- Unto Dust Thou Shalt Return
 					["provider"] = { "n", 64854 },	-- Blade of the Anointed

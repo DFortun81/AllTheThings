@@ -128,6 +128,9 @@ _.ExpansionFeatures =
 							},
 						}),
 					}),
+					q(45343, {	-- A Curious Contagion
+						["classes"] = { PRIEST },
+					}),
 					q(41627, {	-- A Forgotten Enemy
 						["sourceQuests"] = { 41626 },	-- A New Threat
 						["classes"] = { PRIEST },

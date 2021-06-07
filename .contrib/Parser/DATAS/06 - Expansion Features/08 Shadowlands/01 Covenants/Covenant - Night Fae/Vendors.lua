@@ -268,11 +268,13 @@ _.ExpansionFeatures =
 					}),
 					n(174914, {	-- Elwyn <Renown Quartermaster>
 						["coord"] = { 60.2, 33.2, 1701 },	-- Heart of the Forest
-						["g"] = {
+						["g"] = sharedData(
+							{ ["customCollect"] = "SL_COV_NFA", }	-- Night Fae
+							, {
 							i(186494, {	-- Autumnal Wilderling (MOUNT!)
 								["cost"] = { { "c", 1813, 7500 } },	-- 7,500x Reservoir Anima
 							}),
-							i(180722, {	-- Enchanted Shadeleaf Runestag (MOUNT!)
+							i(180722, {	-- Enchanted Shadeleaf Runestag (MOUNT)
 								["cost"] = {
 									{ "c", 1813, 100 },	-- 100x Reservoir Anima
 									{ "c", 1885, 40 },	-- 40x Grateful Offering
@@ -632,10 +634,9 @@ _.ExpansionFeatures =
 									{ "c", 1885, 50 },		-- 50x Grateful Offering
 								},
 							}),
-						},
+						}),
 					}),
 					n(175415, {	-- Harkoth <Heroic Nathrian Weaponsmith>
-						-- TODO: Fill in "cost". Currently it's acting really weird in that the currency displays the itemid of the last item previously hovered over.
 						["coord"] = { 49.4, 54.4, 1702 },
 						["g"] = bubbleDown({
 							["customCollect"] = "SL_COV_NFA",	-- Night Fae Covenant

@@ -329,6 +329,7 @@ _.GearSets =
 				["lvl"] = 110,
 			}),
 			i(184303, {	-- Arsenal: Stitchmasters' Weapons
+				["customCollect"] = { "SL_COV_NEC" },	-- Necrolord
 				["g"] = {
 					i(184079),	-- Abominable Bulwark of Marz
 					i(184082),	-- Atticus's Anima Absolver
@@ -345,6 +346,7 @@ _.GearSets =
 				},
 			}),
 			i(184118, {	-- Arsenal: Winterborn Weapons
+				["customCollect"] = { "SL_COV_NFA" },	-- Night Fae
 				["g"] = {
 					i(180075),	-- Winterborn Bow
 					i(179496),	-- Winterborn Fang

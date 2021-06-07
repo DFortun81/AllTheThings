@@ -756,6 +756,7 @@ _.Zones =
 				}),
 				n(143555, {	-- Xander Silberman
 					["coord"] = { 51.6, 58.2, 862 },
+					["itemID"] = 137642,	-- Mark of Honor
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						-- TODO

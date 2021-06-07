@@ -30,27 +30,6 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					["provider"] = { "n", 38189 },	-- Lady Sylvanas Windrunner <Banshee Queen>
 					["races"] = HORDE_ONLY,
 				}),
-				q(45331, {	-- Return to Acherus
-					["provider"] = { "n", 119539 },	-- Minerva Ravensorrow
-					["coord"] = { 47.8, 19.2, 823 },
-					["classes"] = { DEATHKNIGHT },
-					["sourceQuests"] = {
-						45398, -- Harnessing Power
-						45399, -- Severing the Sveldrek
-					},
-				}),
-				q(45398, {	-- Harnessing Power
-					["provider"] = { "n", 119539 },	-- Minerva Ravensorrow
-					["coord"] = { 47.8, 19.2, 823 },
-					["classes"] = { DEATHKNIGHT },
-					["sourceQuest"] = 45240, -- Making Preparations
-				}),
-				q(45399, {	-- Severing the Sveldrek
-					["provider"] = { "n", 119539 },	-- Minerva Ravensorrow
-					["coord"] = { 47.8, 19.2, 823 },
-					["classes"] = { DEATHKNIGHT },
-					["sourceQuest"] = 45240, -- Making Preparations
-				}),
 				q(24498, {	-- The Path to the Citadel
 					["sourceQuest"] = 24683,	-- The Pit of Saron
 					["provider"] = { "n", 36993 },	-- Lady Jaina Proudmoore

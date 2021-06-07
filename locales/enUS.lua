@@ -1931,6 +1931,7 @@ app.L = {
 
 
 
+
 		[-799] = "Burden of Eternity",											-- Burden of Eternity
 
 	-- Secret Header [Maybe need to change the numbers again when I need more space for PvP -- sadidorf]
