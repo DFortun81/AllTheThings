@@ -98,8 +98,8 @@ _.Instances = { tier(1, applylegacyclassicphase(PHASE_FIVE, {	-- Classic
 				q(8927, {	-- Just Compensation [HORDE]
 					["qg"] = 16012,	-- Mokvar
 					["sourceQuest"] = 8978,	-- Return to Mokvar
-					["coord"] = { 35.0, 38.3, ORGRIMMAR, BLACKROCK_SPIRE, SCHOLOMANCE, STRATHOLME },
-					["maps"] = { ORGRIMMAR },
+					["coord"] = { 35.0, 38.3, ORGRIMMAR },
+					["maps"] = { ORGRIMMAR, BLACKROCK_SPIRE, SCHOLOMANCE, STRATHOLME },
 					["cost"] = {
 						{ "i", 16716, 1 },	-- Wildheart Belt
 						{ "i", 16717, 1 },	-- Wildheart Gloves
@@ -1198,8 +1198,8 @@ _.Instances = { tier(1, applylegacyclassicphase(PHASE_FIVE, {	-- Classic
 				q(8959, {	-- Anthion's Parting Words [ALLIANCE]
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
-					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS, BLACKROCK_SPIRE, SCHOLOMANCE, STRATHOLME },
-					["maps"] = { EASTERN_PLAGUELANDS },
+					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS, BLACKROCK_SPIRE, SCHOLOMANCE, STRATHOLME  },
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {

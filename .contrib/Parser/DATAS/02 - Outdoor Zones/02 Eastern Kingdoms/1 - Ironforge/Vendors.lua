@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(87, {	-- Ironforge
+		m(IRONFORGE, {	-- Ironforge
 			n(VENDORS, {
 				n(5128,  {	-- Bombus Finespindle <Leatherworking Supplies>
 					["coord"] = { 40.2, 33.4, 87 },

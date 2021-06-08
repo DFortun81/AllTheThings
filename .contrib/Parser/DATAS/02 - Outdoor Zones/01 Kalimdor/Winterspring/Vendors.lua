@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(83, {	-- Winterspring
+		m(WINTERSPRING, {	-- Winterspring
 			n(VENDORS, {
 				n(50129, {	-- Daleohm <Blacksmithing Supplies>
 					["coord"] = { 58.0, 63.8, 83 },

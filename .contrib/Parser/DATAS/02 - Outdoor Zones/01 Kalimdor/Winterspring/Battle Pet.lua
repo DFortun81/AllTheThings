@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(83, {	-- Winterspring
+		m(WINTERSPRING, {	-- Winterspring
 			filter(101, {	-- Pet Battle
 				p(487, {	-- Alpine Chipmunk
 					["crs"] = { 62189 },	-- Alpine Chipmunk
