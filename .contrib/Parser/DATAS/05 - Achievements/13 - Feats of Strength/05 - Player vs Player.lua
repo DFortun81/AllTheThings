@@ -1571,21 +1571,21 @@ _.Achievements =
 			n(-693, {	-- Sinful Gladiator: Shadowlands Season 1
 				ach(14686, {	-- Challenger: Shadowlands Season 1
 					--["u"] = REMOVED_FROM_GAME,
-					["u"] = 12,
+					["u"] = PLAYER_VS_PLAYER,
 					["g"] = {
 						--title(32),	-- Challenger <Name>
 					},
 				}),
 				ach(14685, {	-- Combatant: Shadowlands Season 1
 					--["u"] = REMOVED_FROM_GAME,
-					["u"] = 12,
+					["u"] = PLAYER_VS_PLAYER,
 					["g"] = {
 						title(78),	-- Combatant <Name>
 					},
 				}),
 				ach(14688, {	-- Duelist: Shadowlands Season 1
 					--["u"] = REMOVED_FROM_GAME,
-					["u"] = 12,
+					["u"] = PLAYER_VS_PLAYER,
 					["g"] = {
 						--title(30),	-- Duelist <Name>
 						-- Note!! Currently we can not list this due to having no item.
@@ -1600,17 +1600,17 @@ _.Achievements =
 				}),
 				ach(14691, {	-- Elite: Shadowlands Season 1
 					--["u"] = REMOVED_FROM_GAME,
-					["u"] = 12,
+					["u"] = PLAYER_VS_PLAYER,
 					["g"] = {
 						i(180431, {	-- Sinful Gladiator's Tabard
 						--	["u"] = REMOVED_FROM_GAME,
-						["u"] = 12,
+						["u"] = PLAYER_VS_PLAYER,
 						}),
 					},
 				}),
 				ach(14689, {	-- Gladiator: Shadowlands Season 1
 					--["u"] = REMOVED_FROM_GAME,
-					["u"] = 12,
+					["u"] = PLAYER_VS_PLAYER,
 					["g"] = {
 						--title(29),	-- Gladiator <Name>
 						-- Mount is listed under FoS>Mounts.
@@ -1620,24 +1620,24 @@ _.Achievements =
 				}),
 				ach(14692, {	-- Hero of the Alliance: Sinful
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 12,
+					["u"] = PLAYER_VS_PLAYER,
 					--["u"] = REMOVED_FROM_GAME,
 				}),
 				ach(14693, {	-- Hero of the Horde: Sinful
 					["races"] = HORDE_ONLY,
-					["u"] = 12,
+					["u"] = PLAYER_VS_PLAYER,
 					--["u"] = REMOVED_FROM_GAME,
 				}),
 				ach(14687, {	-- Rival: Shadowlands Season 1
 					--["u"] = REMOVED_FROM_GAME,
-					["u"] = 12,
+					["u"] = PLAYER_VS_PLAYER,
 					["g"] = {
 						--title(31),	-- Rival <Name>
 					},
 				}),
 				ach(14690, {	-- Sinful Gladiator: Shadowlands Season 1
 					--["u"] = REMOVED_FROM_GAME,
-					["u"] = 12,
+					["u"] = PLAYER_VS_PLAYER,
 					["g"] = {
 						title(434, {	-- Sinful Gladiator <Name>
 							--["u"] = REMOVED_FROM_GAME,
@@ -1672,23 +1672,23 @@ _.Achievements =
 			}),
 			ach(12568, {							-- The Alliance Slayer
 				["races"] = HORDE_ONLY,
-				["u"] = 12,							
+				["u"] = PLAYER_VS_PLAYER,
 			}),
 			ach(12567, {							-- The Horde Slayer
 				["races"] = ALLIANCE_ONLY,
-				["u"] = 12,							
+				["u"] = PLAYER_VS_PLAYER,
 			}),
 			ach(9725, {								-- The Last of Us
-				["u"] = 12,							
+				["u"] = PLAYER_VS_PLAYER,
 				["g"] = {
 					title(302, {						-- Lord of War (Gender specific title, must log in with both genders to recieve both titles)
-						["u"] = 12,	
+						["u"] = PLAYER_VS_PLAYER,
 						["description"] = "Earned with a male character. Female version can be obtained by swapping your gender at the barber.",
 					}),
 				},
 				["g"] = {
 					title(303, {						-- Lady of War (Gender specific title, must log in with both genders to recieve both titles)
-						["u"] = 12,	
+						["u"] = PLAYER_VS_PLAYER,
 						["description"] = "Earned with a female character. Male version can be obtained by swapping your gender at the barber.",
 					}),
 				},

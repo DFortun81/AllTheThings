@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(113, {	-- Northrend
 		m(123, {	-- Wintergrasp
-			["g"] = bubbleDown({["u"] = 12}, {
+			["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
 				n(ACHIEVEMENTS, {
 					ach(1752, {	-- Master of Wintergrasp
 						ach(2080),	-- Black War Mammoth

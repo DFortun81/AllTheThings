@@ -1877,7 +1877,7 @@ _.Zones =
 				n(12784,  {	-- Lieutenant Jackspring <Legacy Weapon Quartermaster>
 					["coord"] = { 75.2, 67.2, 84 },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = bubbleDown({["u"] = 12}, {
+					["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
 						i(18825, {	-- Grand Marshal's Aegis
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
@@ -1946,7 +1946,7 @@ _.Zones =
 				n(12783,  {	-- Lieutenant Karter
 					["coord"] = { 76.2, 65.6, 84 },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = bubbleDown({["u"] = 12}, {
+					["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
 						i(29465, {	-- Black Battlestrider Mount
 							["cost"] = { { "i", 137642, 15 }, },	-- 15x Mark of Honor
 						}),
@@ -2731,7 +2731,7 @@ _.Zones =
 				n(73190,  {	-- Necrolord Sipe
 					["coord"] = { 76.8, 65.6, 84 },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = bubbleDown({["u"] = 12}, {
+					["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
 						i(70909, {	-- Reins of the Vicious War Steed
 							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
 						}),
@@ -2847,7 +2847,7 @@ _.Zones =
 					["itemID"] = 137642,	-- Mark of Honor
 					["coord"] = { 75.4, 67.0, 84 },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = bubbleDown({["u"] = 12}, {
+					["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
 						-- Head
 						i(16465, {	-- Field Marshal's Chain Helm
 							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor

@@ -5,7 +5,7 @@
 _.PVP =
 {
 	n(-9983, {	-- Honor
-		["g"] = bubbleDown({["u"] = 12}, {
+		["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
 			ach(12893, {	-- Honor Level 5
 				i(142380, {	-- Dutiful Gruntling
 					["races"] = HORDE_ONLY,

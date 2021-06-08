@@ -61,7 +61,7 @@ _.Zones =
 				n(19772, {	-- Spirit Sage Gartok
 					["coord"] = { 49.8, 46.6, TEROKKAR_FOREST },
 					["races"] = HORDE_ONLY,
-					["groups"] = bubbleDown({["u"] = 12}, {
+					["groups"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
 						i(28553, {	-- Band of the Exorcist
 							["cost"] = { { "c", 1704, 50 }, },	-- 50x Spirit Shard
 						}),
@@ -106,7 +106,7 @@ _.Zones =
 				n(19773, {	-- Spirit Sage Zran
 					["coord"] = { 56.0, 53.6, TEROKKAR_FOREST },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = bubbleDown({["u"] = 12}, {
+					["groups"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
 						i(28553, {	-- Band of the Exorcist
 							["cost"] = { { "c", 1704, 50 }, },	-- 50x Spirit Shard
 						}),

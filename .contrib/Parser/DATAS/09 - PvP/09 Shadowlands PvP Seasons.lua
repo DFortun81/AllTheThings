@@ -5,7 +5,7 @@
 _.PVP =
 {
 	n(-10100, {	-- Shadowlands
-		["g"] = bubbleDown({["u"] = 12}, {
+		["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
 			n(-693, {	-- Sinful Gladiator: Shadowlands Season 1
 				n(-659, {	-- Aspirant Gear
 					n(-43,  {	-- Cloth
@@ -257,7 +257,7 @@ _.PVP =
 					}),
 				}),
 				n(-662, {	-- Elite Gear
-					["g"] = bubbleDown({["modID"] = 45, --[[["u"] = 12]] }, {	-- TODO: address unobtainable filter not taking modID into account, so u=14 does not also apply to the regular pvp gear that shares the same itemID
+					["g"] = bubbleDown({["modID"] = 45, --[[["u"] = PLAYER_VS_PLAYER]] }, {	-- TODO: address unobtainable filter not taking modID into account, so u=14 does not also apply to the regular pvp gear that shares the same itemID
 						n(-319, {	-- Weapons
 							n(-939, sharedData({["customCollect"] = { "SL_COV_KYR" }},{	-- Covenant: Kyrian
 								i(177851),	-- Sinful Gladiator's Ceremonial Sword

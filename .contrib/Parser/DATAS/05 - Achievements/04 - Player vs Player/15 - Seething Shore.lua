@@ -13,7 +13,7 @@ TODO:
 _.Achievements =
 {
 	n(-9958, {	-- Player vs Player
-		["g"] = bubbleDown({["u"] = 12}, {
+		["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
 			n(-10001, {	-- Seething Shore
 				["maps"] = {
 					907,	-- Seething Shore

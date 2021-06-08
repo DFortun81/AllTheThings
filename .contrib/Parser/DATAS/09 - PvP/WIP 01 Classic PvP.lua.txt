@@ -5,7 +5,7 @@
 _.PVP =
 {
 	n(-10002, {	-- Classic
-		["g"] = bubbleDown({["u"] = 12}, {
+		["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
 			["races"] = ALLIANCE_ONLY,
 				["g"] = {
 					i(77718),	-- Replica Field Marshal's Plate Shoulderguards

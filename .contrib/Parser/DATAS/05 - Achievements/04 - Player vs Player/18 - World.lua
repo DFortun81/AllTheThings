@@ -5,7 +5,7 @@
 _.Achievements =
 {
 	n(-9958, {	-- Player vs Player
-		["g"] = bubbleDown({["u"] = 12}, {
+		["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
 			n(-10058, {	-- World
 				ach(13429, {	-- Azerfighter
 					["_quests"] = {

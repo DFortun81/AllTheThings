@@ -320,7 +320,7 @@ _.Zones =
 				n(73151,  {	-- Deathguard Netharian <Combatant Mount Quartermaster>
 					["races"] = HORDE_ONLY,
 					["coord"] = { 41.8, 73.0, 85 },
-					["g"] = bubbleDown({["u"] = 12}, {
+					["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
 						i(70910, {	-- Horn of the Vicious War Wolf Mount
 							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
 						}),
@@ -423,7 +423,7 @@ _.Zones =
 				n(12795,  {	-- First Sergeant Hola'mahi <Legacy Armor Quartermaster>
 					["races"] = HORDE_ONLY,
 					["coord"] = { 38.2, 72.6, 85 },
-					["g"] = bubbleDown({["u"] = 12}, {
+					["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
 						i(28377), 	-- Sergeant's Heavy Cloak
 						i(28378), 	-- Sergeant's Heavy Cape
 						i(16486), 	-- First Sergeant's Silk Cuffs
@@ -2412,7 +2412,7 @@ _.Zones =
 					["coord"] = { 41.8, 72.6, 85 },
 					["itemID"] = 137642,	-- Mark of Honor
 					["races"] = HORDE_ONLY,
-					["g"] = bubbleDown({["u"] = 12}, {
+					["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
 						i(29466),	-- Black War Kodo
 						un(REMOVED_FROM_GAME, i(18247)),	-- Black War Kodo. Pre 2.0 Version
 						i(29469),	-- Horn of the Black War Wolf
@@ -3288,7 +3288,7 @@ _.Zones =
 				n(12794,  {	-- Stone Guard Zarg <Legacy Weapon Quartermaster>
 					["coord"] = { 38.6, 72.8, 85 },
 					["races"] = HORDE_ONLY,
-					["g"] = bubbleDown({["u"] = 12}, {
+					["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
 						i(18831, {	-- High Warlord's Battle Axe
 							["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
 						}),

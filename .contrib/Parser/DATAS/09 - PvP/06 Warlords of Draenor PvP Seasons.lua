@@ -10,7 +10,7 @@ _.PVP =
 	---- for a total of 22 sources or a total of around
 	---- 10000 Items.
 	n(-9981, {	-- Draenor
-		["g"] = bubbleDown({["u"] = 12}, {
+		["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
 			n(-679, {	-- Primal Gladiator: Warlords Season 1
 				un(REMOVED_FROM_GAME, i(111600)),	-- Bronze Strongbox
 				un(REMOVED_FROM_GAME, i(111599)),	-- Silver Strongbox

@@ -103,7 +103,7 @@ _.Zones =
 				n(18267, {	-- Battlecryer Blackeye
 					["coord"] = { 55.9, 39.2, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
-					["groups"] = bubbleDown({["u"] = 12}, {
+					["groups"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
 						i(27832, {	-- Band of the Victor
 							["cost"] = { { "i", 24581, 15 }, },	-- 15x Mark of Thrallmar
 						}),
@@ -445,7 +445,7 @@ _.Zones =
 				n(18266, {	-- Warrant Officer Tracy Proudwell
 					["coord"] = { 56.4, 62.8, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = bubbleDown({["u"] = 12}, {
+					["groups"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
 						i(27833, {	-- Band of the Victor
 							["cost"] = { { "i", 24579, 15 }, },	-- 15x Mark of Honor Hold
 						}),

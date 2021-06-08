@@ -612,7 +612,7 @@ _.ExpansionFeatures =
 				["maps"] =  { 773 },	-- Tol Barad (used in "An Eye for a Scepter" Warlock artifact scenario
 				["g"] = {
 					n(ACHIEVEMENTS, {	-- pvp map
-						["g"] = bubbleDown({["u"] = 12}, {
+						["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
 							ach(5718, {	-- Just Another Day in Tol Barad (A)
 								["collectible"] = false,
 								["races"] = ALLIANCE_ONLY,
@@ -678,7 +678,7 @@ _.ExpansionFeatures =
 						}),
 					}),
 					n(QUESTS, {
-						["g"] = bubbleDown({["u"] = 12}, {
+						["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
 							q(28122, {	-- A Huge Problem
 								["lvl"] = 85,
 								["isDaily"] = true,

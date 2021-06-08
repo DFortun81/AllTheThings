@@ -5,7 +5,7 @@
 _.PVP =
 {
 	n(-242, {	-- Unrated
-		["g"] = bubbleDown({["u"] = 12}, {
+		["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
 			i(126919, {	-- Champion's Strongbox [Alliance]
 				["u"] = REMOVED_FROM_GAME,
 			}),

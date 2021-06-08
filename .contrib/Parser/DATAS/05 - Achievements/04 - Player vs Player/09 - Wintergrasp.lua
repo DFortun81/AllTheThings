@@ -5,7 +5,7 @@
 _.Achievements =
 {
 	n(-9958, {	-- Player vs Player
-		["g"] = bubbleDown({["u"] = 12}, {
+		["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
 			n(-9995, {	-- Wintergrasp
 				ach(1752, {	-- Master of Wintergrasp
 					ach(1722),	-- Archavon the Stone Watcher [10 Man]

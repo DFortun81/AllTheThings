@@ -13,7 +13,7 @@ TODO:
 _.Achievements =
 {
 	n(-9958, {	-- Player vs Player
-		["g"] = bubbleDown({["u"] = 12}, {
+		["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
 			n(-9988, {	-- Isle of Conquest
 				["maps"] = { 169 },	-- Isle of Conquest (normal BG)
 				["g"] = {

@@ -5,7 +5,7 @@
 _.PVP =
 {
 	n(-10041, {	-- Mists of Pandaria
-		["g"] = bubbleDown({["u"] = 12}, {
+		["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
 			n(-675, {	-- Malevolent Gladiator: Season 12
 				n(-9983, {	-- Honor Gear
 					cl(DEATHKNIGHT, {

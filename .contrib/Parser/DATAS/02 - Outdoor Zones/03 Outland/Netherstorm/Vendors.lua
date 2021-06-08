@@ -18,7 +18,7 @@ _.Zones =
 				n(54649,  {	-- Big Zokk Torquewrench <Classic Weapons>
 					["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.|r",
 					["coord"] = { 33.2, 64.0, NETHERSTORM },
-					["g"] = bubbleDown({["u"] = 12}, {
+					["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
 						a(i(77549)),	-- Replica Grand Marshal's Demolisher
 						a(i(77550)),	-- Replica Grand Marshal's Swiftblade
 						a(i(77551)),	-- Replica Grand Marshal's Dirk
@@ -913,7 +913,7 @@ _.Zones =
 				n(40209,  {	-- Grex Brainboiler <Classic Alliance Cloth & Leather>
 					["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase. |r",
 					["coord"] = { 33.0, 64.0, NETHERSTORM },
-					["g"] = bubbleDown({["u"] = 12}, {
+					["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
 						i(77670),	-- Replica Field Marshal's Dragonhide Breastplate
 						i(77692),	-- Replica Field Marshal's Satin Mantle
 						i(77710),	-- Replica Field Marshal's Coronal

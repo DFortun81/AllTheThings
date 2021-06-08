@@ -10,7 +10,7 @@ _.PVP =
 			["description"] = "Ashran is a 40v40 epic battleground found in eastern Draenor.",
 			["maps"] = { 588 },	-- Ashran
 			["lvl"] = { 25 },
-			["g"] = bubbleDown({["u"] = 12}, {
+			["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
 				n(ACHIEVEMENTS, {
 					ach(9102),	-- Ashran Victory
 					ach(9104, {	-- Bounty Hunter (A)

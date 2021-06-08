@@ -5,7 +5,7 @@
 _.PVP =
 {
 	n(-10052, {	-- Battle for Azeroth
-		["g"] = bubbleDown({["u"] = 12}, {
+		["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
 			n(-689, {	-- Dread Gladiator: Battle for Azeroth Season 1
 				n(-659, {	-- Aspirant PvP Gear
 					n(-319, {	-- Weapons

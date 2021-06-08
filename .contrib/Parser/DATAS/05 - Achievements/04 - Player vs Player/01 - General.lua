@@ -13,7 +13,7 @@ TODO:
 _.Achievements =
 {
 	n(-9958, {	-- Player vs Player
-		["g"] = bubbleDown({["u"] = 12}, {
+		["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
 			n(-9955, {	-- General
 				ach(5363, {	-- 250000 Honorable Kills
 					title(184),		-- the Bloodthirsty
