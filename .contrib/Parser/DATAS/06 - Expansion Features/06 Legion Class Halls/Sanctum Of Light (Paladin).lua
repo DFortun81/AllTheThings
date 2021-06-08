@@ -12,11 +12,36 @@ _.ExpansionFeatures =
 			},
 			["g"] = {
 				n(QUESTS, {
+					q(46083, {	-- A Few Things First
+						["sourceQuests"] = { 46071 },	-- The Hammer of Dalaran
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 92183 },	-- Alard Schmied
+						["coord"] = { 45.0, 29.6, 627 },
+						["maps"] = { 627 },	-- Dalaran
+						["cost"] = { 
+							{ "i", 123918, 25 },	-- Leystone Ore x25
+							{ "i", 147768, 1 },		-- Suramarian Sapphire
+						},
+					}),
+					q(45645, {	-- A Fool's Errand
+						["sourceQuests"] = { 45644 },	-- Oh Doloria, My Sweet Doloria
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 117438 },	-- Doloria
+						["coord"] = { 48.2, 41.0, 627 },
+						["maps"] = { 627 },	-- Dalaran
+					}),
 					q(43424, {	-- A Hero's Weapon
 						["sourceQuests"] = { 43697 },	-- Warriors of Light
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
 						["coord"] = { 72.6, 25.8, 646 },
+					}),
+					q(45566, {	-- A Knight's Belongings
+						["sourceQuests"] = { 45565 },	-- Further Training
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 117226 },	-- Maximillian of Northshire
+						["coord"] = { 55.8, 16.2, 650 },
+						["maps"] = { 650 },	-- Highmountain
 					}),
 					q(43700, {	-- A Light in the Darkness
 						["sourceQuests"] = {
@@ -95,6 +120,9 @@ _.ExpansionFeatures =
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker
 						["coord"] = { 52.3, 78.1, 24 },
+					}),
+					q(44220, {	-- Blessing of the Order
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(43488, {	-- Blood of Our Enemy
 						["sourceQuests"] = { 43486 },	-- Cracking the Codex
@@ -266,8 +294,19 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 109102 },	-- Delas Moonfang
 						["coord"] = { 59.1, 32.6, 24 },
 					}),
+					q(39722, {	-- Forging New Strength
+						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(45565, {	-- Further Training
+						["sourceQuests"] = { 45562 },	-- Kneel and Be Squired!
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 117226 },	-- Maximillian of Northshire
+						["coord"] = { 55.8, 16.2, 650 },
+						["maps"] = { 650 },	-- Highmountain
+					}),
 					q(46151, {	-- Furthering Knowledge
 						["u"] = REMOVED_FROM_GAME,
+						["classes"] = { PALADIN },
 					}),
 					q(42844, {	-- Growing Power
 						["classes"] = { PALADIN },
@@ -294,8 +333,22 @@ _.ExpansionFeatures =
 						["coord"] = { 51.3, 79.0, 22 },
 						["maps"] = { 22 },	-- Western Plaguelands
 					}),
+					q(45562, {	-- Kneel and Be Squired!
+						["sourceQuests"] = { 45561 },	-- Seek Me Out
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 117226 },	-- Maximillian of Northshire
+						["coord"] = { 55.8, 16.2, 650 },
+						["maps"] = { 650 },	-- Highmountain
+					}),
 					q(46132, {	-- Knowledge is Power
 						["u"] = REMOVED_FROM_GAME,
+					}),
+					q(46074, {	-- Leather to Legendary
+						["sourceQuests"] = { 46083 },	-- A Few Things First
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 92183 },	-- Alard Schmied
+						["coord"] = { 45.0, 29.6, 627 },
+						["maps"] = { 627 },	-- Dalaran
 					}),
 					q(38933, {	-- Logistical Matters
 						["sourceQuests"] = { 38566 },	-- A United Force
@@ -332,11 +385,32 @@ _.ExpansionFeatures =
 						["coord"] = { 30.6, 44.9, 630 },
 						["maps"] = { 630 },	-- Azsuna
 					}),
+					q(45567, {	-- My Kingdom for a Horse
+						["sourceQuests"] = { 45566 },	-- A Knight's Belongings
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 117226 },	-- Maximillian of Northshire
+						["coord"] = { 55.8, 16.2, 650 },
+						["maps"] = { 650 },	-- Highmountain
+					}),
 					q(45148, {	-- Oath Breaker
 						["sourceQuests"] = { 45147 },	-- Felstone Destruction
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 119545 },	-- Nerus Moonfang
 						["coord"] = { 58.9, 31.9, 24 },
+					}),
+					q(45644, {	-- Oh Doloria, My Sweet Doloria
+						["sourceQuests"] = { 45568 },	-- They Stole Excaliberto!
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 118009 },	-- Maximillian of Northshire
+						["coord"] = { 55.8, 16.2, 650 },
+						["maps"] = { 650 },	-- Highmountain
+					}),
+					q(46070, {	-- Preparations Underway
+						["sourceQuests"] = { 46069 },	-- Worthy of the Title
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
+						["coord"] = { 52.3, 78.1, 24 },
+						["cost"] = { { "i", 131746, 1 } },	-- Stonehide Leather Barding
 					}),
 					q(42848, {	-- Recruiting the Troops
 						["sourceQuests"] = { 42847 },	-- Dark Storms
@@ -365,6 +439,10 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 108777 },	-- High Priest Thel'danis
 						["coord"] = { 51.4, 79.0, 22 },
 						["maps"] = { 22 },	-- Western Plaguelands
+					}),
+					q(45561, {	-- Seek Me Out
+						["sourceQuests"] = { },	-- TBD
+						["classes"] = { PALADIN },
 					}),
 					q(42000, {	-- Seeker of Truth
 						["sourceQuests"] = { 40408 },	-- Weapons of Legend
@@ -395,9 +473,12 @@ _.ExpansionFeatures =
 						["coord"] = { 52.3, 78.1, 24 },
 					}),
 					q(45770, {	-- Stirring in the Shadows
+						["sourceQuests"] = { 46074 },	-- Leather to Legendary
 						["classes"] = { PALADIN },
+						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
+						["coord"] = { 52.3, 78.1, 24 },
 						["g"] = {
-							i(143502),	-- Highlord's Golden Charge
+							i(143502),	-- Highlord's Golden Charger
 						},
 					}),
 					q(42850, {	-- Tech It Up a Notch
@@ -439,6 +520,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 46070 },	-- Preparations Underway
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker
+						["coord"] = { 52.3, 78.1, 24 },
 					}),
 					q(42966, {	-- The Highlord's Command
 						["sourceQuests"] = { 42919 },	-- The Scion's Legacy
@@ -489,6 +571,13 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 106337 },	-- Travard
 						["coord"] = { 72.0, 49.3, 627 },
 						["maps"] = { 627 },	-- Dalaran
+					}),
+					q(45568, {	-- They Stole Excaliberto!
+						["sourceQuests"] = { 45567 },	-- My Kingdom for a Horse
+						["classes"] = { PALADIN },
+						["provider"] = { "n", 117226 },	-- Maximillian of Northshire
+						["coord"] = { 55.8, 16.2, 650 },
+						["maps"] = { 650 },	-- Highmountain
 					}),
 					q(42887, {	-- This Is Retribution
 						["sourceQuests"] = { 42886 },	-- To Faronaar
@@ -585,10 +674,20 @@ _.ExpansionFeatures =
 						["coord"] = { 74.8, 48.2, 627 },
 					}),
 					q(45813, {	-- Where Art Thou, My Sweet
+						["sourceQuests"] = { 45645 },	-- A Fool's Errand
+						["classes"] = { PALADIN },
 						["provider"] = { "n", 118088 },	-- Maximillian of Northshire <Knight-Errant>
+						["maps"] = { 627 },	-- Dalaran
 						["g"] = {
 							follower(1001),	-- Maximillian of Northshire
 						},
+					}),
+					q(46069, {	-- Worthy of the Title
+						["sourceQuests"] = { 46246 },	-- Strike Them Down
+						["provider"] = { "n", 118376 },	-- Champion Cyssa Dawnrose
+						["classes"] = { PALADIN },
+						["coord"] = { 43.8, 63.0, 646 },
+						["maps"] = { 646 },	-- Broken Shore
 					}),
 					q(42849, {	-- Wrath and Justice
 						["sourceQuests"] = { 42848 },	-- Recruiting the Troops
@@ -596,16 +695,6 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 90250 },	-- Lord Grayson Shadowbreaker <Mission Specialist>
 						["coord"] = { 52.3, 78.1, 24 },
 					}),
-					--[[
-					q(44220, {	-- Blessing of the Order
-						["u"] = REMOVED_FROM_GAME,
-					}),
-					q(39722),	-- Forging New Strength
-					q(42774),	-- Hope Prevails
-					q(46074),	-- Leather to Legendary
-					q(46070),	-- Preparations Underway
-					q(46069),	-- Worthy of the Title
-					]]--
 				}),
 				n(93787, {	-- Scouting Map
 					["g"] = {

@@ -363,6 +363,7 @@ _.ExpansionFeatures =
 					}),
 					q(46154, {	-- Furthering Knowledge
 						["u"] = REMOVED_FROM_GAME,
+						["classes"] = { DRUID },
 					}),
 					q(42037, {	-- Gathering the Dreamweavers
 						["classes"] = { DRUID },

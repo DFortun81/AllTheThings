@@ -990,7 +990,6 @@ _.Zones =
 				q(44312),	-- Burning Plate of the Worldbreaker Denied
 				q(41042),	-- Champion Chomper
 				q(43960),	-- Cinderwing
-				q(45350),	-- Countering the Contagion
 				q(42699),	-- Coura, Master of Arcana
 				q(39994),	-- Crab Rider Grmlrml
 				q(41241),	-- Cursed Queenfish Needed

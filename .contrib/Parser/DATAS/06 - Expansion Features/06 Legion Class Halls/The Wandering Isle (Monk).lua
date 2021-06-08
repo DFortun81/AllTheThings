@@ -223,6 +223,7 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 117305 },	-- Brewmaster Almai
 						["classes"] = { MONK },
 						["coord"] = { 53.6, 53.3, 646 },	-- Broken Shore
+						["maps"] = { 646 },	-- Broken Shore
 					}),
 					q(41910, {	-- Freya's Spring
 						["sourceQuests"] = { 41039 },	-- Stolen Knowledge
@@ -244,6 +245,7 @@ _.ExpansionFeatures =
 					}),
 					q(46157, {	-- Furthering Knowledge
 						["u"] = REMOVED_FROM_GAME,
+						["classes"] = { MONK },
 					}),
 					q(42186, {	-- Growing Power
 						["isBreadcrumb"] = true,
@@ -282,6 +284,7 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 117305 },	-- Brewer Almai
 						["classes"] = { MONK },
 						["coord"] = { 53.6, 53.4, 646 },	-- Broken Shore
+						["maps"] = { 646 }	-- Broken Shore
 					}),
 					q(32442, {	-- Impending Danger
 						["sourceQuests"] = {
@@ -726,7 +729,6 @@ _.ExpansionFeatures =
 					--[[
 					q(46024),	-- An Urgent Warning
 					q(44239),	-- Echo of a Celestial
-					q(46320),	-- Hope For a Cure
 					q(44238),	-- Meditations on Fate
 					q(40698),	-- Purity of Form
 					--]]

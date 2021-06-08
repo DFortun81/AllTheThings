@@ -85,12 +85,23 @@ _.ExpansionFeatures =
 						["classes"] = { DEATHKNIGHT },
 					}),
 					q(44217, {	-- Armor Fit For A Deathlord
-						i(139676),	-- Head
+						["provider"] = { "n", 93550 }, -- Quartermaster Ozorg
+						["coord"] = { 44.2, 37.5, 647 },
+						["classes"] = { DEATHKNIGHT },
+						["g"] = {
+							i(139676),	-- Deathlord's Helm
+						},
 					}),
 					q(43962, {	-- Blades of Destiny
 						["provider"] = { "n", 109788 }, -- Duke Lankral
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 40715,	-- A Pact of Necessity
+					}),
+					q(44231, {	-- Champion Armaments
+						["provider"] = { "n", 110410 },	-- Dread Collector Bane
+						["coord"] = { 51.7, 32.4, 647 },
+						["classes"] = { DEATHKNIGHT },
+						["description"] = "Only available if you you have the |cFFFFD700Brothers in Arms|r order hall upgrade.",
 					}),
 					q(44247, {	-- Champion: Amal'thazad
 						["provider"] = { "n", 93555 },	-- Amal'thazad
@@ -230,6 +241,10 @@ _.ExpansionFeatures =
 						["coord"] = { 49.7, 51.3, 648 },
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 45103, -- We Ride!
+					}),
+					q(46125, {	-- Furthering Knowledge
+						["u"] = REMOVED_FROM_GAME,
+						["classes"] = { DEATHKNIGHT },
 					}),
 					q(45398, {	-- Harnessing Power
 						["provider"] = { "n", 119539 },	-- Minerva Ravensorrow

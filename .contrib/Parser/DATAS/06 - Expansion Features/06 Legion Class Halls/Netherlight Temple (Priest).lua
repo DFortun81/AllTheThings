@@ -129,6 +129,7 @@ _.ExpansionFeatures =
 						}),
 					}),
 					q(45343, {	-- A Curious Contagion
+						-- TBD: fill in other fields
 						["classes"] = { PRIEST },
 					}),
 					q(41627, {	-- A Forgotten Enemy
@@ -145,6 +146,7 @@ _.ExpansionFeatures =
 						["coord"] = { 28.6, 49.9, 627 },	-- Dalaran
 					}),
 					q(43420, {	-- A Hero's Weapon
+						-- TBD: fill in other fields
 						["classes"] = { PRIEST },
 					}),
 					q(40706, {	-- A Legend You Can Hold
@@ -171,6 +173,10 @@ _.ExpansionFeatures =
 						["classes"] = { PRIEST },
 						["provider"] = { "n", 102655 },	-- Alonsus Faol
 						["coord"] = { 48.9, 49.1, 702 },
+					}),
+					q(45342, {	-- Administering Aid
+						-- TBD: fill in other fields
+						["classes"] = { PRIEST },
 					}),
 					q(43797, {	-- Aiding the Conclave
 						["sourceQuests"] = { 43397 } ,	-- United As One
@@ -293,8 +299,17 @@ _.ExpansionFeatures =
 							follower(870),	-- Zabra Hexx
 						},
 					}),
-					q(44229, { -- Champion Armaments
-						["description"] = "Requires researching the Order Advancement for Armaments of Light.",
+					q(44229, {	-- Champion Armaments
+						-- TBD: fill in other fields
+						["description"] = "Only available if you you have the |cFFFFD700Armaments of Light|r order hall upgrade.",
+						["classes"] = { PRIEST },
+					}),
+					q(45350, {	-- Countering the Contagion
+						-- TBD: fill in other fields
+						["classes"] = { PRIEST },
+					}),
+					q(45347, {	-- Crafting a Cure
+						-- TBD: fill in other fields
 						["classes"] = { PRIEST },
 					}),
 					q(43394, {	-- Crossing Legion Lines
@@ -340,6 +355,10 @@ _.ExpansionFeatures =
 						["classes"] = { PRIEST },
 						["provider"] = { "n", 110564 },	-- Alonsus Faol
 						["coord"] = { 50.9, 46.8, 702 },
+					}),
+					q(46152, {	-- Furthering Knowledge
+						["classes"] = { PRIEST },
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(43377, {	-- Halls of Valor: The Light Within
 						["sourceQuests"] = { 43379 },	-- Velen's Vision
@@ -398,6 +417,10 @@ _.ExpansionFeatures =
 						["classes"] = { PRIEST },
 						["provider"] = { "n", 109776 },	-- Moira Thaurissan
 						["coord"] = { 51.5, 45.9, 702 },
+					}),
+					q(45345, {	-- Mischievous Sprites
+						-- TBD: fill in other fields
+						["classes"] = { PRIEST },
 					}),
 					q(43374, {	-- Murloc Mind Control
 						["sourceQuests"] = { 43372 },	-- The Best and Brightest
@@ -487,11 +510,19 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 110564 },	-- Alonsus Faol
 						["coord"] = { 50.9, 46.8, 702 },
 					}),
+					q(45348, {	-- Safekeeping
+						-- TBD: fill in other fields
+						["classes"] = { PRIEST },
+					}),
 					q(41993, {	-- Salvation From On High
 						["sourceQuests"] = { 41967 },	-- Out of the Darkness
 						["classes"] = { PRIEST },
 						["provider"] = { "n", 105684 },	-- Alora
 						["coord"] = { 34.0, 33.9, 646 },	-- Broken Shore
+					}),
+					q(45344, {	-- Sampling the Source
+						-- TBD: fill in other fields
+						["classes"] = { PRIEST },
 					}),
 					q(43387, {	-- Scarlet Redemption
 						["sourceQuests"] = { 43386 },	-- Onslaught Envoy
@@ -504,6 +535,10 @@ _.ExpansionFeatures =
 						["classes"] = { PRIEST },
 						["provider"] = { "n", 111041 },	-- Micah Belford
 						["coord"] = { 24.2, 37.8, 47 },
+					}),
+					q(45346, {	-- Shambling Specimens
+						-- TBD: fill in other fields
+						["classes"] = { PRIEST },
 					}),
 					q(43273, {	-- Spread the Word
 						["sourceQuests"] = { 43270 },	-- Rise, Champions (must be on this quest)

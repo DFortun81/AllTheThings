@@ -11,12 +11,6 @@ _.Zones =
 					["provider"] = { "o", 268478 },	-- Battered Trinket
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(46208, {	-- A Godly Invitation
-					["coord"] = { 43.6, 63.1, 646 },
-					["classes"] = { WARRIOR },
-					["provider"] = { "n", 119527 },	-- Valarjar Warsinger
-					["sourceQuest"] = 46246,	-- Strike Them Down
-				}),
 				q(47097, {	-- A Walk to Remember
 					["sourceQuests"] = { 47202 },	-- A Personal Message
 					["provider"] = { "n", 121224 },	-- Anduin Wrynn
@@ -104,11 +98,6 @@ _.Zones =
 					["repeatable"] = true,
 					["provider"] = { "n", 120183 },	-- Commander Chambers
 					["sourceQuest"] = 46774,	-- The Nether Disruptor
-				}),
-				q(46791, {	-- Carried On the Wind
-					["classes"] = { SHAMAN },
-					["provider"] = { "n", 117888 },	-- Orono
-					["sourceQuests"] = { 46246 },	-- Strike Them Down
 				}),
 				q(46244, {	-- Cathedral of Eternal Night: Altar of the Aegis
 					["sourceQuests"] = { 46286 },	-- Legionfall Supplies
@@ -214,6 +203,16 @@ _.Zones =
 					["coord"] = { 44.7, 63.2, 646 },
 					["classes"] = { ROGUE },
 					["provider"] = { "n", 116302 },	-- Archmage Khadgar
+				}),
+				q(47040, {	-- Fate Sealed
+					["repeatable"] = true,
+					["provider"] = { "n", 121137 },	-- Maggie "Slither" Masterson
+					["coord"] = { 41.2, 64.4, 646 },
+				}),
+				q(47045, {	-- Further Progress
+					["repeatable"] = true,
+					["provider"] = { "n", 121137 },	-- Maggie "Slither" Masterson
+					["coord"] = { 41.2, 64.4, 646 },
 				}),
 				q(46501, {	-- Grave Robbin'
 					["sourceQuests"] = { 46499 },	-- Spiders, Huh?
@@ -471,6 +470,11 @@ _.Zones =
 					["provider"] = { "n", 119886 },	-- Excavator Karla
 					["coord"] = { 39.6, 71.7, 646 },
 				}),
+				q(47054, {	-- Touched By Fate
+					["repeatable"] = true,
+					["provider"] = { "n", 121137 },	-- Maggie "Slither" Masterson
+					["coord"] = { 41.2, 64.4, 646 },
+				}),
 				q(46845, {	-- Vengeance Point
 					["sourceQuests"] = { 46832 },	-- Aalgen Point
 					["provider"] = { "n", 120118 },	-- Heidirk the Scalekeeper
@@ -488,43 +492,14 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 53776 },	-- To the Broken Shore
 				}),
-				q(46069, {	-- Worthy of the Title
-					["sourceQuests"] = { 46246 },	-- Strike Them Down
-					["provider"] = { "n", 118376 },	-- Champion Cyssa Dawnrose
-					["classes"] = { PALADIN },
-					["coord"] = { 43.8, 63.0, 646 },
-				}),
 
 			-- TODO: unconfirmed or old af data that needs to be re-confirmed anyway
 				--[[
-				q(44401),	-- A Weapon For Every Occasion
-				q(45342),	-- Administering Aid
-				q(45816),	-- Choose Order Hall to Support
-				q(45350),	-- Countering the Contagion
-				q(45347),	-- Crafting a Cure
-				q(42680),	-- Deciphering the Letter
-				q(46103),	-- Dread Infiltrators
-				q(42911),	-- Drowned Mana
-				q(41924),	-- Fangs of the Devourer
-				q(47040),	-- Fate Sealed
-				q(45574),	-- Fel Ingredients
-				q(47118),	-- Free The Tormented
-				q(47119),	-- Free The Tormented
-				q(47121),	-- Free The Tormented
-				q(47120),	-- Free The Tormented
-				q(47045),	-- Further Progress
-				q(46125),	-- Furthering Knowledge
-				q(46320),	-- Hope For a Cure
-				q(40136),	-- Immaculate Stonehide Leather
-				q(40151),	-- Immaculate Stormscale
-				q(39757),	-- Keeping Your Edge
-				q(44082),	-- Knights of the Ebon Blade
 				q(46688),	-- Leather of the Ancients
 				q(38804),	-- Lyrelle
 				q(46694),	-- Mail of the Ancients
 				q(45240),	-- Making Preparations
 				q(46353),	-- Master Who?
-				q(45345),	-- Mischievous Sprites
 				q(42730),	-- Noggenfogger's Reasonable Request
 				q(38802),	-- Ondri's Still-Beating Heart
 				q(47017),	-- Only the Best
@@ -541,11 +516,8 @@ _.Zones =
 				q(45331),	-- Return to Acherus
 				q(38803),	-- Rin'thissa
 				q(43264),	-- Rise, Champions
-				q(45348),	-- Safekeeping
 				q(41993),	-- Salvation From On High
-				q(45344),	-- Sampling the Source
 				q(47067),	-- Seeking Lost Knowledge
-				q(45346),	-- Shambling Specimens
 				q(46499),	-- Spiders, Huh?
 				q(43265),	-- Spread the Word
 				q(45025),	-- Stealing the Source of Power
@@ -554,14 +526,6 @@ _.Zones =
 				q(45554),	-- Taking Control
 				q(46317),	-- Talon's Call
 				q(46777),	-- The Bounties of Legionfall
-				q(47127),	-- The Deceiver
-				q(47126),	-- The Deceiver
-				q(47129),	-- The Deceiver
-				q(47128),	-- The Deceiver
-				q(47122),	-- The Fallen Avatar
-				q(47123),	-- The Fallen Avatar
-				q(47125),	-- The Fallen Avatar
-				q(47124),	-- The Fallen Avatar
 				q(45028),	-- The Fate of Kanrethad
 				q(42484),	-- The Firstborn Rises
 				q(42537),	-- The King Rises
@@ -576,7 +540,6 @@ _.Zones =
 				q(42684),	-- Throwing SI:7 Off the Trail
 				q(45349),	-- To the Broken Shore
 				q(46675),	-- To Track a Demon
-				q(47054),	-- Touched By Fate
 				q(41922),	-- Traitor!
 				q(43267),	-- Troops in the Field
 				q(44234),	-- Unleashing our Wrath

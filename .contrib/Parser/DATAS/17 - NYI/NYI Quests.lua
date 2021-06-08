@@ -77,6 +77,7 @@ _.NeverImplemented =
 				--i(37586), -- Handful of Treats
 			},
 		}),
+		q(45816),	-- Choose Order Hall to Support
 		q(31806, {	-- Test Quest
 			["description"] = "Area: |cFFf09f26The Jade Forest|r",
 			["_drop"] = { "g" },	-- all MoP fish are pulled from the API into the rewards for this quest, causing them to show an "Unsorted" source

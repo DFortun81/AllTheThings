@@ -89,15 +89,6 @@ _.Zones =
 						{ "n", 119531 },	-- Muninn
 					},
 				}),
-				q(46083, {	-- A Few Things First
-					["sourceQuests"] = { 46071 },	-- The Hammer of Dalaran
-					["classes"] = { PALADIN },
-					["provider"] = { "n", 92183 },	-- Alard Schmied
-				}),
-				q(45645, {	-- A Fool's Errand
-					["classes"] = { PALADIN },
-					["provider"] = { "n", 117438 },	-- Doloria
-				}),
 				q(45865, {	-- A Gift From the Six
 					["sourceQuests"] = { 46177 },	-- A Portal Away
 					["classes"] = {
@@ -467,15 +458,6 @@ _.Zones =
 						WARRIOR,		-- Protection
 					},
 				}),
-				q(42680, {	-- Deciphering the Letter
-					["sourceQuests"] = { 42678 },	-- Black Rook Hold: Into Black Rook Hold
-					["classes"] = { ROGUE },
-					["provider"] = { "n", 98102 },	-- Valeera Sanguinar
-					["g"] = {
-						i(139746),	-- Wristbands of the Uncrowned
-					},
-				}),
-			--	q(47079)	-- Delivering Lost Knowledge -- removed?
 				q(47049, {	-- Demonology: Fate of the Tideskorn
 					["sourceQuests"] = {
 						44821,	-- In Dire Need
@@ -577,16 +559,6 @@ _.Zones =
 						{ "n", 115465 },	-- Archmage Modera
 					},
 					["coord"] = { 28.5, 48.9, 627 },
-				}),
-				q(43100, {	-- Finding the Scepter
-					["sourceQuests"] = {
-						40684,	-- The Tome of Blighted Implements (if this artifact is picked first)
-						43984,	-- The Tome Opens Again (if this artifact is chosen second)
-						44089,	-- A Greater Arsenal (if this artifact is picked last)
-					},
-					["classes"] = { WARLOCK },
-					["coord"] = { 56.3, 65.0, 628 },
-					["provider"] = { "n", 101097 },	-- Calydus
 				}),
 				q(47055, {	-- Fire: The Folly of Levia Laurence
 					["sourceQuests"] = {
@@ -736,10 +708,6 @@ _.Zones =
 					},
 					["coord"] = { 28.5, 48.9, 627 },
 				}),
-				q(42774, {	-- Hope Prevails
-					["classes"] = { PALADIN },
-					["provider"] = { "n", 108776 },	-- Lord Maxwell Tyrosus
-				}),
 				q(44821, {	-- In Dire Need
 					["sourceQuests"] = { 44782 },	-- Away From Prying Eyes
 					["provider"] = { "n", 115465 },	-- Archmage Modera
@@ -794,11 +762,6 @@ _.Zones =
 					["provider"] = { "n", 90431 },	-- Archmage Ansirem Runeweaver
 					["coord"] = { 28.5, 49.5, 627 },
 					["u"] = REMOVED_FROM_GAME,	-- Mage Tower quest
-				}),
-				q(46074, {	-- Leather to Legendary
-					["sourceQuests"] = { 46083 },	-- A Few Things First
-					["classes"] = { PALADIN },
-					["provider"] = { "n", 92183 },	-- Alard Schmied
 				}),
 				q(42168, {	-- Looking into the Darkness
 					["sourceQuests"] = {
@@ -887,11 +850,6 @@ _.Zones =
 					["sourceQuests"] = { 43249 },	-- The Raven's Eye
 					["classes"] = { ROGUE },
 					["provider"] = { "n", 98102 },	-- Valeera Sanguinar
-				}),
-				q(45644, {	-- Oh Doloria, My Sweet Doloria
-					["sourceQuests"] = { 45568 },	-- They Stole Excaliberto!
-					["classes"] = { PALADIN },
-					["provider"] = { "n", 118009 },	-- Maximillian of Northshire
 				}),
 				q(47058, {	-- Outlaw: The Folly of Levia Laurence
 					["sourceQuests"] = {
@@ -1373,13 +1331,6 @@ _.Zones =
 					["classes"] = { HUNTER },
 					["provider"] = { "n", 102478 },	-- Emmarel Shadewarden
 				}),
-				q(45813, {	-- Where Art Thou, My Sweet
-					["classes"] = { PALADIN },
-					["provider"] = { "n", 118088 },	-- Maximillian of Northshire
-					["g"] = {
-						sp(234259),	-- Follower: Maximillian of Northshire
-					},
-				}),
 				q(43469, {	-- Where In the World is Mathias?
 					["sourceQuests"] = { 43470 },	-- Pruning the Garden
 					["classes"] = { ROGUE },
@@ -1434,7 +1385,6 @@ _.Zones =
 				q(42189),	-- Fire Mage - Flavor Event 01
 				q(42192),	-- Fire Mage - Flavor Event 02
 				q(42212),	-- Fire Mage - Flavor Event 03
-				q(46148),	-- Furthering Knowledge
 				q(41263),	-- Oh! So Powerful!
 				q(46273),	-- The Giver of Quests
 				q(47793),	-- The Spoiled Sample

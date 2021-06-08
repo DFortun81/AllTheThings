@@ -336,7 +336,10 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(42680, {	-- Deciphering the Letter
+						["maps"] = { 627 },	-- Dalaran
 						["classes"] = { ROGUE },
+						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
+						["sourceQuests"] = { 42678 },	-- Black Rook Hold: Into Black Rook Hold
 						["g"] = {
 							i(139746),	-- Wristbands of the Uncrowned
 						},
@@ -427,6 +430,10 @@ _.ExpansionFeatures =
 							46058,	-- Champion: Lilian Voss
 							46059,	-- Champion: Tess Greymane
 						},
+					}),
+					q(46148, {	-- Furthering Knowledge
+						["u"] = REMOVED_FROM_GAME,
+						["classes"] = { ROGUE },
 					}),
 					q(46089, {	-- Hiding in Plain Sight (A)
 						["races"] = ALLIANCE_ONLY,

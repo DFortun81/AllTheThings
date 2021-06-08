@@ -161,6 +161,12 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 114274 },	-- Mackay Firebeard
 						["isBreadcrumb"] = true,
 					}),
+					q(46791, {	-- Carried On the Wind
+						["classes"] = { SHAMAN },
+						["provider"] = { "n", 117888 },	-- Orono
+						["sourceQuests"] = { 46246 },	-- Strike Them Down
+						["maps"] = { 646 },	-- Broken Shore
+					}),
 					q(41747, {	-- Champion: Avalanchion
 						["sourceQuests"] = { 41900 },	-- A Promise of Earth
 						["classes"] = { SHAMAN },
@@ -298,6 +304,10 @@ _.ExpansionFeatures =
 						["lvl"] = 110,
 						["provider"] = { "n", 96746 },	-- Advisor Sevel
 						["sourceQuests"] = { 46057 },	-- Champion: Magatha Grimtotem
+					}),
+					q(46158, {	-- Furthering Knowledge
+						["u"] = REMOVED_FROM_GAME,
+						["classes"] = { SHAMAN },
 					}),
 					q(46792, {	-- Gathering of the Storms
 						["classes"] = { SHAMAN },

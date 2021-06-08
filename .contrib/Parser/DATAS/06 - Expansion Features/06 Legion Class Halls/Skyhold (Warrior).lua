@@ -91,6 +91,13 @@ _.ExpansionFeatures =
 							45834,	-- Stolen Souls
 						},
 					}),
+					q(46208, {	-- A Godly Invitation
+						["maps"] = { 646 },	-- Broken Shore
+						["coord"] = { 43.6, 63.1, 646 },
+						["classes"] = { WARRIOR },
+						["provider"] = { "n", 119527 },	-- Valarjar Warsinger
+						["sourceQuest"] = 46246,	-- Strike Them Down
+					}),
 					q(43425, {	-- A Hero's Weapon
 						["coord"] = { 58.3, 84.6, 695 },
 						["classes"] = { WARRIOR },

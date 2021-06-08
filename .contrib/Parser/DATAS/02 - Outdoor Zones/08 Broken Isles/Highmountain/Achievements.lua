@@ -6,34 +6,7 @@ _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(650, {	-- Highmountain
-			n(ACHIEVEMENTS,   {
-				ach(10994, {	-- A Glorious Campaign
-					cl(PALADIN, {
-						["classes"] = { PALADIN },
-						["g"] = {
-							q(45561),	-- Seek Me Out
-							q(45562),	-- Kneel and Be Squired!
-							q(45565),	-- Further Training
-							q(45566),	-- A Knight's Belongings
-							q(45567),	-- My Kingdom for a Horse
-							q(45568),	-- They Stole Excaliberto!
-							q(45644),	-- Oh Doloria, My Sweet Doloria
-							q(45645),	-- A Fool's Errand
-						},
-					}),
-					cl(PRIEST, {
-						["classes"] = { PRIEST },
-						["g"] = {
-							q(45343),	-- A Curious Contagion
-							q(45344),	-- Sampling the Source
-							q(45346),	-- Shambling Specimens
-							q(45345),	-- Mischievous Sprites
-							q(45347),	-- Crafting a Cure
-							q(45348),	-- Safekeeping
-							q(45342),	-- Administering Aid
-						},
-					}),
-				}),
+			n(ACHIEVEMENTS, {
 				ach(10059, {	-- Ain't No Mountain High Enough
 					crit(1, {	-- The Rivermane Tribe
 						["sourceQuests"] = { 39487 },	-- Crystal Fury
@@ -61,9 +34,9 @@ _.Zones =
 					["description"] = "You need 5 people jumping on the drum on the lower floor of Thunder Totem. CANNOT be completed while you are on 'Assault on Thunder Totem'."
 				}),
 				ach(9696,  {	-- Family Familiar
-				["collectible"] = false,
-				["filterID"] = 101,	-- Battle Pet
-				["groups"] = {
+					["collectible"] = false,
+					["filterID"] = 101,	-- Battle Pet
+					["groups"] = {
 						ach(9686, {	-- Aquatic Acquiescence
 							["collectible"] = false,
 							["filterID"] = 101,	-- Battle Pet

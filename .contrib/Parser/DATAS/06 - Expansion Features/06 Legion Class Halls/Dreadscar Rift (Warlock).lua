@@ -305,6 +305,7 @@ _.ExpansionFeatures =
 					}),
 					q(46150, {	-- Furthering Knowledge
 						["u"] = REMOVED_FROM_GAME,
+						["classes"] = { WARLOCK },
 					}),
 					q(44254, {	-- Gazing Into Oblivion
 						["sourceQuest"] = 40823,	-- Rebuilding the Council
