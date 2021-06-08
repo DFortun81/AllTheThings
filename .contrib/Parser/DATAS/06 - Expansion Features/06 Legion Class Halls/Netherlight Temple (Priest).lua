@@ -565,6 +565,12 @@ _.ExpansionFeatures =
 						["coord"] = { 48.2, 48.2, 702 },
 						["provider"] = { "n", 110557 },	-- Prophet Velen
 					}),
+					q(44230, {	-- The Fates Bless Us
+						["classes"] = { PRIEST },
+						["provider"] = { "n", 110819 },	-- Truth
+						["coord"] = { 58.6, 29.9, 702 },
+						["description"] = "Only available if you you have the |cFFFFD700Blessed Seals|r order hall upgrade.",
+					}),
 					q(40938, {	-- The Light and the Void
 						["sourceQuests"] = { 40710 },	-- Blade in Twilight
 						["classes"] = { PRIEST },

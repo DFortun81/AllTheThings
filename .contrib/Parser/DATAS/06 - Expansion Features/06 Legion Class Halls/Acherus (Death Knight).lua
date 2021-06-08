@@ -98,9 +98,9 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 40715,	-- A Pact of Necessity
 					}),
 					q(44231, {	-- Champion Armaments
-						["provider"] = { "n", 110410 },	-- Dread Collector Bane
-						["coord"] = { 51.7, 32.4, 647 },
 						["classes"] = { DEATHKNIGHT },
+						["provider"] = { "n", 110434 },	-- Dead Collector Bane
+						["coord"] = { 51.3, 29.9, 24 },
 						["description"] = "Only available if you you have the |cFFFFD700Brothers in Arms|r order hall upgrade.",
 					}),
 					q(44247, {	-- Champion: Amal'thazad

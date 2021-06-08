@@ -283,9 +283,9 @@ _.ExpansionFeatures =
 						["coord"] = { 58.9, 31.9, 24 },
 					}),
 					q(44219, {	-- Fate's Blessing
-						-- TBD: ["coord"] = {  },
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 112986 },	-- Librarian Lightmorne
+						["coord"] = { 48.9, 76.2, 24 },
 						["description"] = "Only available if you you have the |cFFFFD700Holy Purpose|r order hall upgrade.",
 					}),
 					q(45147, {	-- Felstone Destruction

@@ -15,6 +15,10 @@ _.ExpansionFeatures =
 								["provider"] = { "n", 77359 },	-- Auria Irondreamer
 								["races"] = ALLIANCE_ONLY,
 							}),
+							q(37569, {	-- Your First Blacksmithing Work Order
+								["provider"] = { "n", 79867 },	-- Orgek Ironhand
+								["races"] = HORDE_ONLY, 	-- triggers when turning in 'your first blacksmithing work order' quests
+							}),
 							q(37564, {	-- Your First Blacksmithing Work Order
 								["_drop"] = { "g" },	-- drop Truesteel Ingot
 								["u"] = REMOVED_FROM_GAME,	-- triggers when turning in 'your first blacksmithing work order' quests
