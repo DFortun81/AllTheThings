@@ -579,6 +579,7 @@ _.ExpansionFeatures =
 												}),
 											}),
 											i(180955),	-- Stonewing Halberd
+											i(180603),	-- Violet Dredwing Pup
 										},
 									}),
 									o(356741, {	-- The Countess' Extravagant Tribute
