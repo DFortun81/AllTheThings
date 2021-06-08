@@ -5307,7 +5307,6 @@ for i,o in ipairs({
 }) do table.insert(TIME_LOST_TRADER_GROUPS, o); end
 
 -- Tailoring Item Database
-local REMOVED_WITH_CATA = "removed 4.0.1.10000";
 _.ItemDB = {};
 
 -- Recipe Cache (for Validation)
