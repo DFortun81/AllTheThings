@@ -7,14 +7,16 @@ _.Zones =
 		m(SHADOWMOON_VALLEY, {
 			n(QUESTS, {
 				q(10807, {	-- The Ashtongue Broken
-					["provider"] = { "n", 21953 },	-- Varen the Reclaimer
+					["qg"] = 21953,	-- Varen the Reclaimer
+					["sourceQuest"] = 10552,	-- Allegiance to the Scryers
+					["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 					["coord"] = { 54.7, 58.1, SHADOWMOON_VALLEY },
-					["sourceQuests"] = { 10552 },	-- Allegiance to the Scryers
 				}),
 				q(10817, {	-- The Great Retribution
-					["provider"] = { "n", 21953 },	-- Varen the Reclaimer
+					["qg"] = 21953,	-- Varen the Reclaimer
+					["sourceQuest"] = 10807,	-- The Ashtongue Broken
+					["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 					["coord"] = { 54.7, 58.1, SHADOWMOON_VALLEY },
-					["sourceQuests"] = { 10807 },	-- The Ashtongue Broken
 					["groups"] = {
 						i(30940),	-- Aged Leather Bindings
 						i(30961),	-- Ash-Covered Helm
@@ -26,21 +28,25 @@ _.Zones =
 					["provider"] = { "n", 21954 },	-- Larissa Sunstrike
 					["coord"] = { 55.7, 58.1, SHADOWMOON_VALLEY },
 					["sourceQuests"] = { 10552 },	-- Allegiance to the Scryers
+					["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 				}),
 				q(10688, {	-- A Necessary Distraction
 					["provider"] = { "n", 21954 },	-- Larissa Sunstrike
 					["coord"] = { 55.7, 58.1, SHADOWMOON_VALLEY },
 					["sourceQuests"] = { 10687 },	-- Karabor Training Grounds
+					["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 				}),
 				q(10689, {	-- Altruis
 					["provider"] = { "n", 21954 },	-- Larissa Sunstrike
 					["coord"] = { 55.7, 58.1, SHADOWMOON_VALLEY },
 					["sourceQuests"] = { 10688 },	-- A Necessary Distraction
+					["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 				}),
 				q(10692, {	-- Varedis Must Be Stopped
 					["provider"] = { "n", 21954 },	-- Larissa Sunstrike
 					["coord"] = { 55.7, 58.1, SHADOWMOON_VALLEY },
 					["sourceQuests"] = { 10691 },	-- Return to the Scryers
+					["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 					["groups"] = {
 						i(31013),	-- Ceremonial Kris
 						i(30933),	-- Hauberk of Karabor
@@ -54,111 +60,87 @@ _.Zones =
 					["provider"] = { "n", 21955 },	-- Arcanist Thelis
 					["coord"] = { 56.2, 59.6, SHADOWMOON_VALLEY },
 					["sourceQuests"] = { 10552 },	-- Allegiance to the Scryers
+					["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 				}),
 				q(10684, {	-- Oronu the Elder
 					["provider"] = { "n", 21955 },	-- Arcanist Thelis
 					["coord"] = { 56.2, 59.6, SHADOWMOON_VALLEY },
 					["sourceQuests"] = { 10683 },	-- Tablets of Baa'ri
+					["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 				}),
 				q(10685, {	-- The Ashtongue Corruptors
 					["provider"] = { "n", 21955 },	-- Arcanist Thelis
 					["coord"] = { 56.2, 59.6, SHADOWMOON_VALLEY },
 					["sourceQuests"] = { 10684 },	-- Oronu the Elder
+					["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 				}),
 				q(10686, {	-- The Warden's Cage
 					["provider"] = { "n", 21955 },	-- Arcanist Thelis
 					["coord"] = { 56.2, 59.6, SHADOWMOON_VALLEY },
 					["sourceQuests"] = { 10685 },	-- The Ashtongue Corruptors
-				}),
-				q(10622, {	-- Proof of Allegiance
-					["provider"] = { "n", 21826 },	-- Sanoru
-					["coord"] = { 57.3, 49.5, SHADOWMOON_VALLEY },
-					["sourceQuests"] = {
-						10575,	-- The Warden's Cage (Aldor)
-						10686,	-- The Warden's Cage (Scryer)
-					},
-				}),
-				q(10628, {	-- Akama
-					["provider"] = { "n", 21826 },	-- Sanoru
-					["coord"] = { 57.3, 49.5, SHADOWMOON_VALLEY },
-					["sourceQuests"] = { 10622 },	-- Proof of Allegiance
-				}),
-				q(10707, {	-- The Ata'mal Terrace
-					["provider"] = { "n", 21770 },	-- Akama
-					["coord"] = { 58.1, 48.1, SHADOWMOON_VALLEY },
-					["sourceQuests"] = { 10706 },	-- A Mysterious Portent
-				}),
-				q(11052, {	-- Akama's Promise (awarded "Akama's Promise" criteria)
-					["provider"] = { "n", 21700 },	-- Akama
-					["coord"] = { 58.1, 48.1, SHADOWMOON_VALLEY },
-					["sourceQuests"] = { 10707 },	-- The Ata'mal Terrace
-					["groups"] = {
-						i(30932),	-- Akama's Sash
-						i(30999),	-- Ashtongue Blade
-						i(31000),	-- Bloodwarder's Rifle
-						i(30943),	-- Verdant Gloves
-						i(30984),	-- Spellbreaker's Buckler
-						i(31417),	-- Staff of the Ashtongue Deathsworn
-					},
+					["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 				}),
 				q(10824, {	-- Sunfury Signets
 					["provider"] = { "n", 22211 },	-- Battlemage Vyara
 					["coord"] = { 56.2, 58.7, SHADOWMOON_VALLEY },
 					["sourceQuests"] = { 10552 },	-- Allegiance to the Scryers
+					["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 				}),
 				q(10823, {	-- More Sunfury Signets
 					["provider"] = { "n", 22211 },	-- Battlemage Vyara
 					["coord"] = { 56.2, 58.7, SHADOWMOON_VALLEY },
 					["repeatable"] = true,
 					["sourceQuests"] = { 10824, 10656 },	-- Sunfury Signets (in SMV OR in Shattrath)
+					["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 				}),
 				q(10822, {	-- Single Sunfury Signet
 					["provider"] = { "n", 22211 },	-- Battlemage Vyara
 					["coord"] = { 56.2, 58.7, SHADOWMOON_VALLEY },
 					["repeatable"] = true,
 					["sourceQuests"] = { 10824, 10656 },	-- Sunfury Signets (in SMV OR in Shattrath)
+					["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 				}),
-				q(10804, {	-- Kindness
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(10804, {	-- Kindness
 					["provider"] = { "n", 22113 },	-- Mordenai
 					["coord"] = { 59.3, 58.7, SHADOWMOON_VALLEY },
-				}),
-				q(10811, {	-- Seek Out Neltharaku
+				})),
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(10811, {	-- Seek Out Neltharaku
 					["provider"] = { "n", 22113 },	-- Mordenai
 					["sourceQuests"] = { 10804 },	-- Kindness
 					["coord"] = { 59.3, 58.7, SHADOWMOON_VALLEY },
-				}),
-				q(10814, {	-- Neltharaku's Tale
+				})),
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(10814, {	-- Neltharaku's Tale
 					["provider"] = { "n", 21657 },	-- Neltharaku
 					["sourceQuests"] = { 10811 },	-- Seek Out Neltharaku
 					["coord"] = { 61.9, 60.0, SHADOWMOON_VALLEY },
-				}),
-				q(10836, {	-- Infiltrating Dragonmaw Fortress
+				})),
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(10836, {	-- Infiltrating Dragonmaw Fortress
 					["provider"] = { "n", 21657 },	-- Neltharaku
 					["sourceQuests"] = { 10814 },	-- Neltharaku's Tale
 					["coord"] = { 61.9, 60.0, SHADOWMOON_VALLEY },
-				}),
-				q(10837, {	-- To Netherwing Ledge!
+				})),
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(10837, {	-- To Netherwing Ledge!
 					["provider"] = { "n", 21657 },	-- Neltharaku
 					["sourceQuests"] = { 10836 },	-- Infiltrating Dragonmaw Fortress
 					["coord"] = { 61.9, 60.0, SHADOWMOON_VALLEY },
-				}),
-				q(10854, {	-- The Force of Neltharaku
+				})),
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(10854, {	-- The Force of Neltharaku
 					["provider"] = { "n", 21657 },	-- Neltharaku
 					["sourceQuests"] = { 10837 },	-- To Netherwing Ledge!
 					["coord"] = { 61.9, 60.0, SHADOWMOON_VALLEY },
-				}),
-				q(10858, {	-- Karynaku
+				})),
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(10858, {	-- Karynaku
 					["provider"] = { "n", 21657 },	-- Neltharaku
 					["sourceQuests"] = { 10854 },	-- The Force of Neltharaku
 					["coord"] = { 61.9, 60.0, SHADOWMOON_VALLEY },
-				}),
-				q(10866, {	-- Zuluhed the Whacked
+				})),
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(10866, {	-- Zuluhed the Whacked
 					["provider"] = { "n", 22112 },	-- Karynaku
 					["sourceQuests"] = { 10858 },	-- Karynaku
 					["coord"] = { 69.8, 61.4, SHADOWMOON_VALLEY },
 					["_drop"] = { "races" },	-- stop this from being marked as horde only when it is not horde only
-				}),
-				q(10870, {	-- Ally of the Netherwing
+				})),
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(10870, {	-- Ally of the Netherwing
 					["provider"] = { "n", 22112 },	-- Karynaku
 					["sourceQuests"] = { 10866 },	-- Zuluhed the Whacked
 					["coord"] = { 69.8, 61.4, SHADOWMOON_VALLEY },
@@ -170,75 +152,75 @@ _.Zones =
 						i(31494),	-- Netherwing Sorceror's Charm
 						i(31493),	-- Netherwing Spiritualist's Charm
 					},
-				}),
-				q(11012, {	-- Blood Oath of the Netherwing
+				})),
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11012, {	-- Blood Oath of the Netherwing
 					["provider"] = { "n", 22113 },	-- Mordenai
 					["sourceQuests"] = { 10870 },	-- Ally of the Netherwing
 					["coord"] = { 59.3, 58.7, SHADOWMOON_VALLEY },
-				}),
-				q(11013, {	-- In Service of the Illidari
+				})),
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11013, {	-- In Service of the Illidari
 					["provider"] = { "n", 22113 },	-- Mordenai
 					["sourceQuests"] = { 11012 },	-- Blood Oath of the Netherwing
 					["coord"] = { 59.3, 58.7, SHADOWMOON_VALLEY },
-				}),
-				q(11014, {	-- Enter the Taskmaster
+				})),
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11014, {	-- Enter the Taskmaster
 					["provider"] = { "n", 23139 },	-- Overlord Mor'ghor
 					["sourceQuests"] = { 11013 },	-- In Service of the Illidari
 					["coord"] = { 66.2, 85.6, SHADOWMOON_VALLEY },
-				}),
-				q(11015, {	-- Netherwing Crystals
+				})),
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11015, {	-- Netherwing Crystals
 					["provider"] = { "n", 23140 },	-- Taskmaster Varkule Dragonbreath
 					["sourceQuests"] = { 11014 },	-- Enter the Taskmaster
 					["isDaily"] = true,
-				}),
-				q(11018, {	-- Nethercite Ore
+				})),
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11018, {	-- Nethercite Ore
 					["provider"] = { "n", 23140 },	-- Taskmaster Varkule Dragonbreath
 					["sourceQuests"] = { 11014 },	-- Enter the Taskmaster
 					["isDaily"] = true,
 					["requireSkill"] = MINING,
-				}),
-				q(11016, {	-- Nethermine Flayer Hide
+				})),
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11016, {	-- Nethermine Flayer Hide
 					["provider"] = { "n", 23140 },	-- Taskmaster Varkule Dragonbreath
 					["sourceQuests"] = { 11014 },	-- Enter the Taskmaster
 					["isDaily"] = true,
 					["requireSkill"] = SKINNING,
-				}),
-				q(11017, {	-- Netherdust Pollen
+				})),
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11017, {	-- Netherdust Pollen
 					["provider"] = { "n", 23140 },	-- Taskmaster Varkule Dragonbreath
 					["sourceQuests"] = { 11014 },	-- Enter the Taskmaster
 					["isDaily"] = true,
 					["requireSkill"] = HERBALISM,
-				}),
-				q(11019, {	-- Your Friend On The Inside
+				})),
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11019, {	-- Your Friend On The Inside
 					["provider"] = { "n", 23141 },	-- Yarzill the Merc
 					["sourceQuests"] = { 11013 },	-- In Service of the Illidari
 					["coord"] = { 65.9, 86.4, SHADOWMOON_VALLEY },
-				}),
-				q(11049, {	-- The Great Netherwing Egg Hunt
+				})),
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11049, {	-- The Great Netherwing Egg Hunt
 					["provider"] = { "n", 23141 },	-- Yarzill the Merc
 					["sourceQuests"] = { 11019 },	-- Your Friend on the Inside
 					["repeatable"] = true,
 					["coord"] = { 65.9, 86.4, SHADOWMOON_VALLEY },
-				}),
-				q(11050, {	-- Accepting All Eggs
+				})),
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11050, {	-- Accepting All Eggs
 					["provider"] = { "n", 23141 },	-- Yarzill the Merc
 					["sourceQuests"] = { 11049 },	-- The Great Netherwing Egg Hunt
 					["repeatable"] = true,
 					["coord"] = { 65.9, 86.4, SHADOWMOON_VALLEY },
-				}),
-				q(11020, {	-- A Slow Death
+				})),
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11020, {	-- A Slow Death
 					["provider"] = { "n", 23141 },	-- Yarzill the Merc
 					["sourceQuests"] = { 11019 },	-- Your Friend on the Inside
 					["isDaily"] = true,
 					["coord"] = { 65.9, 86.4, SHADOWMOON_VALLEY },
-				}),
-				q(11035, {	-- The Not-So-Friendly Skies...
+				})),
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11035, {	-- The Not-So-Friendly Skies...
 					["provider"] = { "n", 23141 },	-- Yarzill the Merc
 					["sourceQuests"] = { 11019 },	-- Your Friend on the Inside
 					["isDaily"] = true,
 					["coord"] = { 65.9, 86.4, SHADOWMOON_VALLEY },
-				}),
-				q(11041, {	-- A Job Unfinished...
+				})),
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11041, {	-- A Job Unfinished...
 					["provider"] = { "i", 32621 },	-- Partially Digested Hand
 					-- TODO: confirm source, but as it requires Neutral with Netherwing, this is the quest that sets you to Neutral
 					["sourceQuests"] = { 10870 },	-- Ally of the Netherwing
@@ -251,93 +233,93 @@ _.Zones =
 						i(32865),	-- Drake Tamer's Gloves
 						i(32868),	-- Skybreaker's Mantle
 					},
-				}),
-				q(11083, {	-- Crazed and Confused
+				})),
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11083, {	-- Crazed and Confused
 					["provider"] = { "n", 23166 },	-- Ronag the Slave Driver
 					["sourceQuests"] = { 11075 },	-- The Netherwing Mines
 					["coord"] = { 71.6, 87.6, SHADOWMOON_VALLEY },
 					["description"] = "Available once you reach Friendly with Netherwing.",
-				}),
-				q(11082, {	-- Seeker of Truth
+				})),
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11082, {	-- Seeker of Truth
 					["provider"] = { "n", 23149 },	-- Mistress of the Mines
 					["sourceQuests"] = { 11081 },	-- The Great Murkblood Revolt
 					["coord"] = { 63.0, 87.8, SHADOWMOON_VALLEY },
-				}),
-				q(11075, {	-- The Netherwing Mines
+				})),
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11075, {	-- The Netherwing Mines
 					["provider"] = { "n", 23140 },	-- Taskmaster Varkule Dragonbreath
 					["sourceQuests"] = { 11053 },	-- Rise, Overseer!
 					["coord"] = { 66.0, 86.4, SHADOWMOON_VALLEY },
 					["description"] = "Available once you reach Friendly with Netherwing.",
-				}),
-				q(11076, {	-- Picking Up The Pieces...
+				})),
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11076, {	-- Picking Up The Pieces...
 					["provider"] = { "n", 23149 },	-- Mistress of the Mines
 					["sourceQuests"] = { 11075 },	-- The Netherwing Mines
 					["coord"] = { 63.0, 87.8, SHADOWMOON_VALLEY },
 					["isDaily"] = true,
-				}),
-				q(11077, {	-- Dragons are the Least of Our Problems
+				})),
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11077, {	-- Dragons are the Least of Our Problems
 					["provider"] = { "n", 23376 },	-- Dragonmaw Foreman
 					["sourceQuests"] = { 11075 },	-- The Netherwing Mines
 					["coord"] = { 63.4, 87.4, SHADOWMOON_VALLEY },
 					["isDaily"] = true,
 					["description"] = "Available once you reach Friendly with Netherwing.",
-				}),
-				q(11054, {	-- Overseeing and You: Making the Right Choices
+				})),
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11054, {	-- Overseeing and You: Making the Right Choices
 					["provider"] = { "n", 23291 },	-- Chief Overseer Mudlump
 					["sourceQuests"] = { 11053 },	-- Rise, Overseer!
 					["coord"] = { 66.8, 86.0, SHADOWMOON_VALLEY },
 					["description"] = "Available once you reach Friendly with Netherwing.",
-				}),
-				q(11055, {	-- The Booterang: A Cure For The Common Worthless Peon
+				})),
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11055, {	-- The Booterang: A Cure For The Common Worthless Peon
 					["provider"] = { "n", 23291 },	-- Chief Overseer Mudlump
 					["sourceQuests"] = { 11054 },	-- Overseeing and You: Making the Right Choices
 					["coord"] = { 66.8, 86.0, SHADOWMOON_VALLEY },
 					["isDaily"] = true,
-				}),
-				q(11063, {	-- Earning Your Wings
+				})),
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11063, {	-- Earning Your Wings
 					["provider"] = { "n", 22433 } ,	-- Ja'y Nosliw
 					["sourceQuests"] = { 11084 },	-- Stand Tall, Captain!
 					["coord"] = { 65.9, 87.2, SHADOWMOON_VALLEY },
-				}),
-				q(11064, {	-- Dragonmaw Race: The Ballad of Oldie McOld
+				})),
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11064, {	-- Dragonmaw Race: The Ballad of Oldie McOld
 					["provider"] = { "n", 23340 } ,	-- Murg "Oldie" Muckjaw
 					["sourceQuests"] = { 11063 },	-- Earning Your Wings
 					["coord"] = { 65.2, 85.7, SHADOWMOON_VALLEY },
-				}),
-				q(11067, {	-- Dragonmaw Race: Trope the Filth-Belcher
+				})),
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11067, {	-- Dragonmaw Race: Trope the Filth-Belcher
 					["provider"] = { "n", 23342 } ,	-- Trope the Filth-Belcher
 					["sourceQuests"] = { 11064 },	-- Dragonmaw Race: The Ballad of Oldie McOld
 					["coord"] = { 65.2, 85.5, SHADOWMOON_VALLEY },
-				}),
-				q(11068, {	-- Dragonmaw Race: Corlok the Vet
+				})),
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11068, {	-- Dragonmaw Race: Corlok the Vet
 					["provider"] = { "n", 23344 } ,	-- Corlok the Vet
 					["sourceQuests"] = { 11067 },	-- Dragonmaw Race: Trope the Filth-Belcher
 					["coord"] = { 65.2, 85.2, SHADOWMOON_VALLEY },
-				}),
-				q(11069, {	-- Dragonmaw Race: Wing Commander Ichman
+				})),
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11069, {	-- Dragonmaw Race: Wing Commander Ichman
 					["provider"] = { "n", 23345 } ,	-- Wing Commander Ichman
 					["sourceQuests"] = { 11068 },	-- Dragonmaw Race: Corlok the Vet
 					["coord"] = { 65.2, 85.1, SHADOWMOON_VALLEY },
-				}),
-				q(11070, {	-- Dragonmaw Race: Wing Commander Mulverick
+				})),
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11070, {	-- Dragonmaw Race: Wing Commander Mulverick
 					["provider"] = { "n", 23346 } ,	-- Wing Commander Mulverick
 					["sourceQuests"] = { 11069 },	-- Dragonmaw Race: Wing Commander Ichman
 					["coord"] = { 65.2, 84.9, SHADOWMOON_VALLEY },
-				}),
-				q(11071, {	-- Dragonmaw Race: Captain Skyshatter
+				})),
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11071, {	-- Dragonmaw Race: Captain Skyshatter
 					["provider"] = { "n", 23348 } ,	-- Captain Skyshatter
 					["sourceQuests"] = { 11070 },	-- Dragonmaw Race: Wing Commander Mulverick
 					["coord"] = { 65.5, 85.3, SHADOWMOON_VALLEY },
 					["groups"] = {
 						i(32863),	-- Skybreaker Whip
 					},
-				}),
-				q(11089, {	-- The Soul Cannon of Reth'hedron
+				})),
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11089, {	-- The Soul Cannon of Reth'hedron
 					["provider"] = { "n", 23427 },	-- Illidari Lord Balthas
 					["sourceQuests"] = { 11084 },	-- Stand Tall, Captain!
 					["coord"] = { 66.2, 85.6, SHADOWMOON_VALLEY },
-				}),
-				q(11090, {	-- Subdue the Subduer
+				})),
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11090, {	-- Subdue the Subduer
 					["provider"] = { "n", 23427 },	-- Illidari Lord Balthas
 					["sourceQuests"] = { 11089 },	-- The Soul Cannon of Reth'hedron
 					["coord"] = { 66.2, 85.6, SHADOWMOON_VALLEY },
@@ -347,36 +329,36 @@ _.Zones =
 						i(32872),	-- Illidari Rod of Discipline
 						i(32870),	-- Legguards of Contemplation
 					},
-				}),
-				q(11086, {	-- Disrupting the Twilight Portal
+				})),
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11086, {	-- Disrupting the Twilight Portal
 					["sourceQuests"] = { 11084 },	-- Stand Tall, Captain!
 					["isDaily"] = true,
-				}),
-				q(11099, {	-- Kill Them All! (Aldor)
+				})),
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11099, {	-- Kill Them All! (Aldor)
 					["provider"] = { "n", 23139 },	-- Overlord Mor'ghor
 					["coord"] = { 66.2, 85.6, SHADOWMOON_VALLEY },
 					["minReputation"] = { 1015, REVERED },	-- TODO: maybe eventually a way to show multiple rep requirements...
 					["description"] = "You must be Revered with Netherwing and Friendly with the Aldor to receive this quest.",
-				}),
-				q(11100, {	-- Commander Arcus
+				})),
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11100, {	-- Commander Arcus
 					["provider"] = { "n", 21402 },	-- Anchorite Ceyla
 					["sourceQuests"] = { 11099 },	-- Kill Them All! (Aldor)
 					["coord"] = { 62.4, 28.4, SHADOWMOON_VALLEY },
 					["description"] = "For players aligned with the Aldor.",
-				}),
-				q(11094, {	-- Kill Them All! (Scryers)
+				})),
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11094, {	-- Kill Them All! (Scryers)
 					["provider"] = { "n", 23139 },	-- Overlord Mor'ghor
 					["coord"] = { 66.2, 85.6, SHADOWMOON_VALLEY },
 					["minReputation"] = { 1015, REVERED },	-- TODO: maybe eventually a way to show multiple rep requirements...
 					["description"] = "You must be Revered with Netherwing and Friendly with the Scryers to receive this quest.",
-				}),
-				q(11095, {	-- Commander Hobb
+				})),
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11095, {	-- Commander Hobb
 					["provider"] = { "n", 21955 },	-- Arcanist Thelis
 					["sourceQuests"] = { 11094 },	-- Kill Them All! (Scryers)
 					["coord"] = { 56.2, 59.6, SHADOWMOON_VALLEY },
 					["description"] = "For players aligned with the Scryers.",
-				}),
-				q(11053, {	-- Rise, Overseer!
+				})),
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11053, {	-- Rise, Overseer!
 					["provider"] = { "n", 23140 },	-- Taskmaster Varkule Dragonbreath
 					["sourceQuests"] = { 11014 },	-- Enter the Taskmaster
 					["coord"] = { 66.0, 86.4, SHADOWMOON_VALLEY },
@@ -384,8 +366,8 @@ _.Zones =
 					["groups"] = {
 						i(32694),	-- Overseer's Badge
 					},
-				}),
-				q(11084, {	-- Stand Tall, Captain!
+				})),
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11084, {	-- Stand Tall, Captain!
 					["provider"] = { "n", 23140 },	-- Taskmaster Varkule Dragonbreath
 					["sourceQuests"] = { 11053 },	-- Rise, Overseer!
 					["coord"] = { 66.0, 86.4, SHADOWMOON_VALLEY },
@@ -393,8 +375,8 @@ _.Zones =
 					["groups"] = {
 						i(32695),	-- Captain's Badge
 					},
-				}),
-				q(11092, {	-- Hail, Commander!
+				})),
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11092, {	-- Hail, Commander!
 					["provider"] = { "n", 23140 },	-- Taskmaster Varkule Dragonbreath
 					["sourceQuests"] = { 11084 },	-- Stand Tall, Captain!
 					["coord"] = { 66.0, 86.4, SHADOWMOON_VALLEY },
@@ -402,39 +384,41 @@ _.Zones =
 					["groups"] = {
 						i(32864),	-- Commander's Badge
 					},
-				}),
-				q(11101, {	-- The Deadliest Trap Ever Laid
+				})),
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11101, {	-- The Deadliest Trap Ever Laid
 					-- ["provider"] = { "n",  },	--
 					-- ["sourceQuests"] = {  },	--
 					-- ["coord"] = { , SHADOWMOON_VALLEY },
 					["isDaily"] = true,
 					["description"] = "For players aligned with the Aldor.",
-				}),
-				q(11097, {	-- The Deadliest Trap Ever Laid
+				})),
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11097, {	-- The Deadliest Trap Ever Laid
 					-- ["provider"] = { "n",  },	--
 					-- ["sourceQuests"] = {  },	--
 					-- ["coord"] = { , SHADOWMOON_VALLEY },
 					["isDaily"] = true,
 					["description"] = "For players aligned with the Scryers.",
-				}),
-				q(11107, {	-- Bow to the Highlord
+				})),
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11107, {	-- Bow to the Highlord
 					["provider"] = { "n", 23140 },	-- Taskmaster Varkule Dragonbreath
 					["sourceQuests"] = { 11092 },	-- Hail, Commander!
 					["coord"] = { 66.0, 86.4, SHADOWMOON_VALLEY },
 					["minReputation"] = { 1015, EXALTED },
-				}),
-				q(11108, {	-- Lord Illidan Stormrage
+				})),
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11108, {	-- Lord Illidan Stormrage
 					["provider"] = { "n", 23139 },	-- Overlord Mor'ghor
 					["sourceQuests"] = { 11107 },	-- Bow to the Highlord
 					["coord"] = { 66.2, 85.6, SHADOWMOON_VALLEY },
-				}),
+				})),
 				q(10619, {	-- The Ashtongue Tribe
 					["provider"] = { "n", 21822 },	-- Vindicator Aluumen
 					["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
+					["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 				}),
 				q(10816, {	-- Reclaiming Holy Ground
 					["provider"] = { "n", 21822 },	-- Vindicator Aluumen
 					["sourceQuests"] = { 10619 },	-- The Ashtongue Tribe
+					["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 					["groups"] = {
 						i(30940),	-- Aged Leather Bindings
 						i(30961),	-- Ash-Covered Helm
@@ -445,18 +429,22 @@ _.Zones =
 				q(10587, {	-- Karabor Training Grounds
 					["provider"] = { "n", 21860 },	-- Exarch Onaala
 					["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
+					["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 				}),
 				q(10637, {	-- A Necessary Distraction
 					["provider"] = { "n", 21860 },	-- Exarch Onaala
 					["sourceQuests"] = { 10587 },	-- Karabor Training Grounds
+					["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 				}),
 				q(10640, {	-- Altruis
 					["provider"] = { "n", 21860 },	-- Exarch Onaala
 					["sourceQuests"] = { 10637 },	-- A Necessary Distraction
+					["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 				}),
 				q(10651, {	-- Varedis Must Be Stopped (awarded "Borrowed Power" criteria)
 					["provider"] = { "n", 21860 },	-- Exarch Onaala
 					["sourceQuests"] = { 10650 },  	-- Return to the Aldor
+					["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 					["groups"] = {
 						i(31013),	-- Ceremonial Kris
 						i(30933),	-- Hauberk of Karabor
@@ -469,21 +457,26 @@ _.Zones =
 				q(10568, {	-- Tablets of Baa'ri
 					["provider"] = { "n", 21402 },	-- Anchorite Ceyla
 					["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
+					["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 				}),
 				q(10571, {	-- Oronu the Elder
 					["provider"] = { "n", 21402 },	-- Anchorite Ceyla
 					["sourceQuests"] = { 10568 },	-- Tablets of Baa'ri
+					["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 				}),
 				q(10574, {	-- The Ashtongue Corruptors
 					["provider"] = { "n", 21402 },	-- Anchorite Ceyla
 					["sourceQuests"] = { 10571 },	-- Oronu the Elder
+					["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 				}),
 				q(10575, {	-- The Warden's Cage
 					["provider"] = { "n", 21402 },	-- Anchorite Ceyla
 					["sourceQuests"] = { 10574 },	-- The Ashtongue Corruptors
+					["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 				}),
 				q(10622, {	-- Proof of Allegiance
 					["provider"] = { "n", 21826 },	-- Sanoru
+					["coord"] = { 57.3, 49.5, SHADOWMOON_VALLEY },
 					["sourceQuests"] = {
 						10575,	-- The Warden's Cage (Aldor)
 						10686,	-- The Warden's Cage (Scryer)
@@ -491,15 +484,18 @@ _.Zones =
 				}),
 				q(10628, {	-- Akama
 					["provider"] = { "n", 21826 },	-- Sanoru
+					["coord"] = { 57.3, 49.5, SHADOWMOON_VALLEY },
 					["sourceQuests"] = { 10622 },	-- Proof of Allegiance
 				}),
 				q(10707, {	-- The Ata'mal Terrace
 					["provider"] = { "n", 21770 },	-- Akama
+					["coord"] = { 58.1, 48.1, SHADOWMOON_VALLEY },
 					["sourceQuests"] = { 10706 },	-- A Mysterious Portent
 				}),
 				q(10708, {	-- Akama's Promise (awarded "Akama's Promise" criteria)
 					["provider"] = { "n", 21700 },	-- Akama
 					["sourceQuests"] = { 10707 },	-- The Ata'mal Terrace
+					["coord"] = { 58.1, 48.1, SHADOWMOON_VALLEY },
 					["groups"] = {
 						i(30932),	-- Akama's Sash
 						i(30999),	-- Ashtongue Blade
@@ -526,7 +522,7 @@ _.Zones =
 					["repeatable"] = true,
 					["sourceQuests"] = { 10826 },	-- Marks of Sargeras
 				}),
-				q(10985, {	-- A Distraction for Akama (legacy version)
+				applyclassicphase(TBC_PHASE_THREE, q(10985, {	-- A Distraction for Akama (legacy version)
 					["provider"] = { "n", 18528 },	-- Xi'ri
 					["coord"] = { 65.2, 44.0, SHADOWMOON_VALLEY },
 					["sourceQuests"] = { 10949 },	-- Entry Into the Black Temple
@@ -534,8 +530,8 @@ _.Zones =
 					["groups"] = {
 						i(32649),	-- Medallion of Karabor
 					},
-				}),
-				q(13429, {	-- A Distraction for Akama
+				})),
+				applyclassicphase(TBC_PHASE_THREE, q(13429, {	-- A Distraction for Akama
 					["altQuests"] = { 10985 },	-- A Distraction for Akama (legacy version)
 					["sourceQuests"] = { 10949 },	-- Entry Into the Black Temple
 					["provider"] = { "n", 18528 },	-- Xi'ri
@@ -543,7 +539,7 @@ _.Zones =
 					["groups"] = {
 						i(32649),	-- Medallion of Karabor
 					},
-				}),
+				})),
 				q(10642, {	-- A Ghost in the Machine
 					["provider"] = { "n", 21774 },	-- Zorus the Judicator
 					["races"] = ALLIANCE_ONLY,
@@ -952,19 +948,19 @@ _.Zones =
 					["coord"] = { 36.2, 57.0, SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(10946, {	-- Ruse of the Ashtongue
+				applyclassicphase(TBC_PHASE_THREE, q(10946, {	-- Ruse of the Ashtongue
 					["sourceQuests"] = { 10944 },	-- The Secret Compromised
 					["provider"] = { "n", 21700 },	-- Akama
 					["coord"] = { 58.0, 48.2, SHADOWMOON_VALLEY },
-				}),
-				q(10958, {	-- Seek Out the Ashtongue
+				})),
+				applyclassicphase(TBC_PHASE_THREE, q(10958, {	-- Seek Out the Ashtongue
 					["provider"] = { "n", 18528 },	-- Xi'ri
 					["coord"] = { 65.2, 44.0, SHADOWMOON_VALLEY },
 					["sourceQuests"] = {
 						10985,	-- A Distraction for Akama (Alliance)
 						13429,	-- A Distraction for Akama (Horde)
 					},
-				}),
+				})),
 				q(10572, {	-- Setting Up the Bomb (A)
 					["provider"] = { "n", 21357 },	-- Wing Commander Nuainn
 					["coord"] = { 39.5, 53.7, SHADOWMOON_VALLEY },
@@ -1177,12 +1173,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 10611 },	-- The Art of Fel Reaver Maintenance
 				}),
-				q(11081, {	-- The Great Murkblood Revolt
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11081, {	-- The Great Murkblood Revolt
 					["provider"] = { "i", 32726 },	-- Murkblood Escape Plans
 					-- ["sourceQuests"] = {  },	-- TODO: pretty sure this has a source quest... opened like 30 sludge objects once i hit friendly. later i did a couple other quests and got the plans after 2 objects
 					["description"] = "The plans can be found inside Sludge-Covered Object, looted from Black Bloods inside the mines.  You must be at least Friendly with Netherwing to loot them.",
 					["minReputation"] = { 1015, FRIENDLY },
-				}),
+				})),
 				q(10680, {	-- The Hand of Gul'dan (A)
 					["provider"] = { "n", 21937 },	-- Earthmender Sophurus
 					["coord"] = { 36.3, 56.9, SHADOWMOON_VALLEY },
@@ -1206,11 +1202,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 10627 },	-- Capture the Weapons
 				}),
-				q(10948, {	-- The Hostage Soul
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(10948, {	-- The Hostage Soul
 					["provider"] = { "n", 21700 },	-- Akama
 					["coord"] = { 58.1, 48.2, SHADOWMOON_VALLEY },
 					["sourceQuests"] = { 10947 },	-- An Artifact From the Past
-				}),
+				})),
 				q(10793, { 	-- The Journal of Val'zareq: Portends of War
 					["provider"] = { "n", 21979 },	-- Val'zareq the Conqueror
 					["itemID"] = 31345,	-- The Journal of Val'zareq
@@ -1406,6 +1402,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(93387),	-- Akama's Seal of Courage
 		}),
 		-- #endif
+		q(11052),	-- OLD Akama's Promise (awarded "Akama's Promise" criteria)
 	}),
 });
 -- #endif

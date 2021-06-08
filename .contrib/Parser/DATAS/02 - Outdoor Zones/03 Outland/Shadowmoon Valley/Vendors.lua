@@ -53,7 +53,7 @@ _.Zones =
 						i(25532),	-- Swift Yellow Wind Rider Mount
 					},
 				}),
-				n(23489, {	-- Drake Dealer Hurlunk
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, n(23489, {	-- Drake Dealer Hurlunk
 					["sourceQuests"] = {
 						11109,	-- Jorus the Cobalt Netherwing Drake
 						11110,	-- Malfas the Purple Netherwing Drake
@@ -62,9 +62,9 @@ _.Zones =
 						11113,	-- Voranaku the Violet Netherwing Drake
 						11114,	-- Zoya the Veridian Netherwing Drake
 					},
-					["minReputation"] = { 1015, EXALTED },
-					["description"] = "To access this vendor, you must reach Exalted with the Netherwing, complete the quest 'Bow to the Highlord, Lord Illidan Stormrage' and claim one of the six drakes in Shattrath.|r",
 					["coord"] = { 65.6, 85.9, SHADOWMOON_VALLEY },
+					["minReputation"] = { 1015, EXALTED },	-- Netherwing, Exalted.
+					["description"] = "To access this vendor, you must reach Exalted with the Netherwing, complete the quest 'Bow to the Highlord, Lord Illidan Stormrage' and claim one of the six drakes in Shattrath.",
 					["groups"] = {
 						i(32858),	-- Reins of the Azure Netherwing Drake Mount
 						i(32859),	-- Reins of the Cobalt Netherwing Drake Mount
@@ -73,7 +73,7 @@ _.Zones =
 						i(32861),	-- Reins of the Veridian Netherwing Drake Mount
 						i(32862),	-- Reins of the Violet Netherwing Drake Mount
 					},
-				}),
+				})),
 				n(19526, {	-- Dunaman <Weapons Vendor>
 					["coord"] = { 63.2, 30.6, SHADOWMOON_VALLEY },
 					["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
