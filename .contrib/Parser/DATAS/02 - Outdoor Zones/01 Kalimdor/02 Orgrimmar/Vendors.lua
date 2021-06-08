@@ -2412,7 +2412,7 @@ _.Zones =
 					["coord"] = { 41.8, 72.6, 85 },
 					["itemID"] = 137642,	-- Mark of Honor
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["g"] = bubbleDown({["u"] = 12}, {
 						i(29466),	-- Black War Kodo
 						un(REMOVED_FROM_GAME, i(18247)),	-- Black War Kodo. Pre 2.0 Version
 						i(29469),	-- Horn of the Black War Wolf
@@ -2422,7 +2422,7 @@ _.Zones =
 						i(29472),	-- Whistle of the Black War Raptor
 						un(REMOVED_FROM_GAME, i(18246)),	-- Whistle of the Black War Raptor. Pre 2.0 Version
 						i(34129),	-- Swift Warstrider
-					},
+					}),
 				}),
 				n(52033,  {	-- Rogoc <Bloodthirsty Gladiator>
 					["coord"] = { 37.8, 71.6, 85 },

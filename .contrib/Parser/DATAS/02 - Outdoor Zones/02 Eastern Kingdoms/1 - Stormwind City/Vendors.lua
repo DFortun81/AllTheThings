@@ -1946,7 +1946,7 @@ _.Zones =
 				n(12783,  {	-- Lieutenant Karter
 					["coord"] = { 76.2, 65.6, 84 },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["g"] = bubbleDown({["u"] = 12}, {
 						i(29465, {	-- Black Battlestrider Mount
 							["cost"] = { { "i", 137642, 15 }, },	-- 15x Mark of Honor
 						}),
@@ -1966,7 +1966,7 @@ _.Zones =
 							["cost"] = { { "i", 137642, 15 }, },	-- 15x Mark of Honor
 						}),
 						un(REMOVED_FROM_GAME, i(18242)),	-- Reins of the Black War Tiger. Pre 2.0 Version
-					},
+					}),
 				}),
 				n(23446,  {	-- Lieutenant Tristia -- BC Vendor for Trinkets
 					-- The NPC ID got reused many times. This is the BC Version, items listed under PvP>BC
