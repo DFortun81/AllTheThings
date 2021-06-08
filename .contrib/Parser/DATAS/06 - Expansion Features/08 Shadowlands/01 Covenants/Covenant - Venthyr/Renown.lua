@@ -19,10 +19,10 @@ _.ExpansionFeatures =
 							["description"] = "Requires Renown 39.",
 						}),
 						title(429, {	-- Count
-							["description"] = "Requires Renown 40.",
+							["description"] = "Requires Renown 40. Earned with a male character. You can also receive the title by changing your gender at the barber shop after obtaining the Countess title, however it will display as not earned on external websites.",
 						}),
 						title(430, {	-- Countess
-							["description"] = "Requires Renown 40.",
+							["description"] = "Requires Renown 40. Earned with a female character. You can also receive the title by changing your gender at the barber shop after obtaining the Count title, however it will display as not earned on external websites.",
 						}),
 					}),
 				}),
