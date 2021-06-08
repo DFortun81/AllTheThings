@@ -26,6 +26,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 					["coord"] = { 78.4, 62.0, ZANGARMARSH },
 					["timeline"] = { "removed 4.3.0.14732" },
 					["maps"] = { ZANGARMARSH },
+					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(62, 10, 62),
 				}),
 				q(9738, {	-- Lost in Action
