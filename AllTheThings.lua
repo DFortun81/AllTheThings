@@ -3593,9 +3593,10 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						-- convert maps to a MapID
 						if field == "maps" then
 							field = "mapID";
+							-- app.PrintTable(id);
 							id = id[1];
 						end
-						local locationGroup = app.SearchForObject(field, id) or (field == "mapID" and C_Map_GetMapInfo(id));
+						local locationGroup = app.SearchForObject(field, id) or (id and field == "mapID" and C_Map_GetMapInfo(id));
 						local locationName = locationGroup and (locationGroup.name or locationGroup.text);
 						-- print("contains info",group.itemID,field,id,nestedMapGroup,nestedMapName)
 						if locationName then
@@ -3606,6 +3607,8 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							else
 								right = locationName .. " " .. right;
 							end
+						-- else
+							-- print("No Location name for item",group.itemID,id,field)
 						end
 					end
 					tinsert(info, { left = item.prefix .. left, right = right });
