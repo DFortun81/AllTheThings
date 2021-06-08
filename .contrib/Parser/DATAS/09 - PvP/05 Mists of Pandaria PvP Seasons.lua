@@ -6036,12 +6036,13 @@ _.PVP =
 										i(100409),	-- Grievous Gladiator's Mooncloth Leggings
 										i(100413),	-- Grievous Gladiator's Mooncloth Mantle
 										i(100411),	-- Grievous Gladiator's Mooncloth Robe
-										i(100415),	-- Grievous Gladiator's Satin Gloves
-										i(100417),	-- Grievous Gladiator's Satin Hood
-										i(100419),	-- Grievous Gladiator's Satin Leggings
-										i(100423),	-- Grievous Gladiator's Satin Mantle
-										i(100421),	-- Grievous Gladiator's Satin Robe
-										--
+										i(100209),	-- Grievous Gladiator's Cord of Meditation	-- Priest Only
+										i(100415),	-- Grievous Gladiator's Satin Gloves 	-- Did not get via ally ensemble
+										i(100417),	-- Grievous Gladiator's Satin Hood		-- Did not get via ally ensemble
+										i(100419),	-- Grievous Gladiator's Satin Leggings	-- Did not get via ally ensemble
+										i(100423),	-- Grievous Gladiator's Satin Mantle	-- Did not get via ally ensemble
+										i(100421),	-- Grievous Gladiator's Satin Robe		-- Did not get via ally ensemble
+										-- S15
 										i(103265, {	-- Grievous Gladiator's Mooncloth Gloves
 											["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 										}),
@@ -6337,7 +6338,7 @@ _.PVP =
 								i(100375),	-- Grievous Gladiator's Clasp of Meditation
 								i(100207),	-- Grievous Gladiator's Cord of Accuracy
 								i(100205),	-- Grievous Gladiator's Cord of Cruelty
-								i(100209),	-- Grievous Gladiator's Cord of Meditation
+								i(100209),	-- Grievous Gladiator's Cord of Meditation	-- Priest Only
 								i(100393),	-- Grievous Gladiator's Girdle of Accuracy
 								i(100395),	-- Grievous Gladiator's Girdle of Prowess
 								i(100310),	-- Grievous Gladiator's Links of Accuracy
