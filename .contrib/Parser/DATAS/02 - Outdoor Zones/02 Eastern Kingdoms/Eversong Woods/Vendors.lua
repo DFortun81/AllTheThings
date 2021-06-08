@@ -32,10 +32,7 @@ _.Zones =
 					["coord"] = { 49.0, 47.0, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(27685, {	-- Recipe: Lynx Steak
-							["recipeID"] = 33276,	-- Lynx Steak
-							["requireSkill"] = COOKING,
-						}),
+						i(27685),	-- Recipe: Lynx Steak
 					},
 				}),
 				n(50484, {	-- Magistrix Nizara <Silvermoon City Quartermaster>

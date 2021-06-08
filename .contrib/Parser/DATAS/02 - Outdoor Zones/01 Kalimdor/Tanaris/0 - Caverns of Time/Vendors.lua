@@ -1,16 +1,15 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
-_.Zones =
+_.Zones = 
 {
 	m(KALIMDOR, {
-		m(71, {	-- Tanaris
-			m(CAVERNS_OF_TIME, {
+		m(TANARIS, {
+			m(CAVERNS_OF_TIME, applyclassicphase(TBC_PHASE_ONE, {
 				n(VENDORS, {
-					n(21643,  {	-- Alurmi <Keepers of Time Quartermaster>
+					n(21643, {	-- Alurmi <Keepers of Time Quartermaster>
 						["coord"] = { 40.0, 77.2, 74 },
-						["g"] = {
+						["groups"] = {
 							i(29183),	-- Bindings of the Timewalker
 							i(29185),	-- Continuum Blade
 							i(35402),	-- Crusader's Ornamented Chestplate
@@ -19,6 +18,9 @@ _.Zones =
 							i(35328),	-- Dreadweave Gloves
 							i(35346),	-- Evoker's Silk Raiment
 							i(31777),	-- Keepers of Time Tabard
+							i(30635, {	-- Key of Time
+								["timeline"] = { "removed 4.2.0.10000" },
+							}),
 							i(35363),	-- Kodohide Legguards
 							i(35334),	-- Mooncloth Legguards
 							i(35369),	-- Opportunist's Leather Spaulders
@@ -39,13 +41,18 @@ _.Zones =
 							i(33158),	-- Design: Stone of Blades
 							i(28272),	-- Formula: Enchant Gloves - Major Spellpower
 							i(33152),	-- Formula: Enchant Gloves - Superior Agility
+							i(22536),	-- Formula: Enchant Ring - Spellpower
 							i(29713),	-- Pattern: Drums of Panic
+							-- #if ANYCLASSIC
+							i(185925),	-- Pattern: Greater Drums of Panic
+							-- #endif
 							i(31355),	-- Recipe: Flask of Supreme Power
 						},
 					}),
 					n(155944, {	-- Otela <Time-Lost Baubles>
 						["coord"] = { 42.4, 71.6, 74 },
-						["g"] = {
+						["timeline"] = { "added 8.2.0.30918" },
+						["groups"] = {
 							i(170739, {	-- Sunswarmed Sand
 								["cost"] = { { "c", 1166, 10 }, },		-- 10x Timewarped Badge
 							}),
@@ -55,7 +62,7 @@ _.Zones =
 						},
 					}),
 				}),
-			}),
+			})),
 		}),
 	}),
 };
