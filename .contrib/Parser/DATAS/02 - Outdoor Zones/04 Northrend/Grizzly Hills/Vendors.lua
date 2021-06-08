@@ -12,7 +12,7 @@ _.Zones =
 					n(27760, {	-- "Grizzly" D. Adams <Venture Coin Vendor>
 						["coord"] = { 13.8, 86.4, 116 },
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
+						["g"] = bubbleDown({["u"] = 12}, {
 							i(38358, {	-- Arcane Revitalizer
 								["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
 							}),
@@ -31,7 +31,7 @@ _.Zones =
 							i(38353, {	-- Venture Bay Buccaneer's Cape
 								["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
 							}),
-						},
+						}),
 					}),
 					n(26868, {	-- Provisioner Lorkran <General Goods>
 						["coord"] = { 22.6, 66.0, 116 },
@@ -44,7 +44,7 @@ _.Zones =
 					n(27730, {	-- Purkom <Venture Coin Vendor>
 						["coord"] = { 13.8, 86.2, 116 },
 						["races"] = HORDE_ONLY,
-						["g"] = {
+						["g"] = bubbleDown({["u"] = 12}, {
 							i(38358, {	-- Arcane Revitalizer
 								["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
 							}),
@@ -63,7 +63,7 @@ _.Zones =
 							i(38353, {	-- Venture Bay Buccaneer's Cape
 								["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
 							}),
-						},
+						}),
 					}),
 					n(91632, {	-- Remington Brode <Traveling Lumberjack>
 						["description"] = "Patrols all over Grizzly Hills. When you find him select\n \"<Breathe deeply.>\",\n \"I'm looking for a song...\",\n \"A song about the wilderness.\",\n and \"Yes!\"",

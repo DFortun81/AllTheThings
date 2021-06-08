@@ -612,279 +612,283 @@ _.ExpansionFeatures =
 				["maps"] =  { 773 },	-- Tol Barad (used in "An Eye for a Scepter" Warlock artifact scenario
 				["g"] = {
 					n(ACHIEVEMENTS, {	-- pvp map
-						ach(5718, {	-- Just Another Day in Tol Barad (A)
-							["collectible"] = false,
-							["races"] = ALLIANCE_ONLY,
-							["g"] = {
-								crit(22),	-- Clearing the Depths
-								crit(23),	-- The Imprisoned Archmage
-								crit(24),	-- Learning From The Past
-								crit(25),	-- D-Block
-								crit(26),	-- Svarnos
-								crit(27),	-- Cursed Shackles
-								crit(28),	-- Prison Revolt
-								crit(29),	-- The Warden
-								crit(30),	-- Food From Below
-								crit(31),	-- A Huge Problem
-								crit(32),	-- Swamp Bait
-								crit(33),	-- The Leftovers
-							},
-						}),
-						ach(5719, {	-- Just Another Day in Tol Barad (H)
-							["collectible"] = false,
-							["races"] = HORDE_ONLY,
-							["g"] = {
-								crit(22),	-- Clearing the Depths
-								crit(23),	-- The Imprisoned Archmage
-								crit(24),	-- Learning From The Past
-								crit(25),	-- D-Block
-								crit(26),	-- Svarnos
-								crit(27),	-- Cursed Shackles
-								crit(28),	-- Prison Revolt
-								crit(29),	-- The Warden
-								crit(30),	-- Food From Below
-								crit(31),	-- A Huge Problem
-								crit(32),	-- Swamp Bait
-								crit(33),	-- The Leftovers
-							},
-						}),
-						ach(5489, {	-- Master of Tol Barad (A)
-							["collectible"] = false,
-							["races"] = ALLIANCE_ONLY,
-							["g"] = {
-								ach(5417, {	-- Tol Barad Veteran
-									["races"] = ALLIANCE_ONLY,
-								}),
-								ach(5415),	-- Tower Plower
-								ach(5488),	-- Towers of Power
-								ach(5487),	-- Tol Barad Saboteur
-								ach(5486),	-- Tol Barad All-Star
-							},
-						}),
-						ach(5490, {	-- Master of Tol Barad (H)
-							["collectible"] = false,
-							["races"] = HORDE_ONLY,
-							["g"] = {
-								ach(5418, {	-- Tol Barad Veteran
-									["races"] = HORDE_ONLY,
-								}),
-								ach(5415),	-- Tower Plower
-								ach(5488),	-- Towers of Power
-								ach(5487),	-- Tol Barad Saboteur
-								ach(5486),	-- Tol Barad All-Star
-							},
+						["g"] = bubbleDown({["u"] = 12}, {
+							ach(5718, {	-- Just Another Day in Tol Barad (A)
+								["collectible"] = false,
+								["races"] = ALLIANCE_ONLY,
+								["g"] = {
+									crit(22),	-- Clearing the Depths
+									crit(23),	-- The Imprisoned Archmage
+									crit(24),	-- Learning From The Past
+									crit(25),	-- D-Block
+									crit(26),	-- Svarnos
+									crit(27),	-- Cursed Shackles
+									crit(28),	-- Prison Revolt
+									crit(29),	-- The Warden
+									crit(30),	-- Food From Below
+									crit(31),	-- A Huge Problem
+									crit(32),	-- Swamp Bait
+									crit(33),	-- The Leftovers
+								},
+							}),
+							ach(5719, {	-- Just Another Day in Tol Barad (H)
+								["collectible"] = false,
+								["races"] = HORDE_ONLY,
+								["g"] = {
+									crit(22),	-- Clearing the Depths
+									crit(23),	-- The Imprisoned Archmage
+									crit(24),	-- Learning From The Past
+									crit(25),	-- D-Block
+									crit(26),	-- Svarnos
+									crit(27),	-- Cursed Shackles
+									crit(28),	-- Prison Revolt
+									crit(29),	-- The Warden
+									crit(30),	-- Food From Below
+									crit(31),	-- A Huge Problem
+									crit(32),	-- Swamp Bait
+									crit(33),	-- The Leftovers
+								},
+							}),
+							ach(5489, {	-- Master of Tol Barad (A)
+								["collectible"] = false,
+								["races"] = ALLIANCE_ONLY,
+								["g"] = {
+									ach(5417, {	-- Tol Barad Veteran
+										["races"] = ALLIANCE_ONLY,
+									}),
+									ach(5415),	-- Tower Plower
+									ach(5488),	-- Towers of Power
+									ach(5487),	-- Tol Barad Saboteur
+									ach(5486),	-- Tol Barad All-Star
+								},
+							}),
+							ach(5490, {	-- Master of Tol Barad (H)
+								["collectible"] = false,
+								["races"] = HORDE_ONLY,
+								["g"] = {
+									ach(5418, {	-- Tol Barad Veteran
+										["races"] = HORDE_ONLY,
+									}),
+									ach(5415),	-- Tower Plower
+									ach(5488),	-- Towers of Power
+									ach(5487),	-- Tol Barad Saboteur
+									ach(5486),	-- Tol Barad All-Star
+								},
+							}),
 						}),
 					}),
 					n(QUESTS, {
-						q(28122, {	-- A Huge Problem
-							["lvl"] = 85,
-							["isDaily"] = true,
-							["races"] = ALLIANCE_ONLY,
-							["timeline"] = {
-								"added 4.0.1.12984",
-							},
-						}),
-						q(28657, {	-- A Huge Problem
-							["lvl"] = 85,
-							["isDaily"] = true,
-							["races"] = HORDE_ONLY,
-							["timeline"] = {
-								"added 4.0.3.13277",
-							},
-						}),
-						q(28117, {	-- Clearing the Depths
-							["lvl"] = 85,
-							["isDaily"] = true,
-							["races"] = ALLIANCE_ONLY,
-							["timeline"] = {
-								"added 4.0.1.12984",
-							},
-						}),
-						q(28660, {	-- Clearing the Depths
-							["lvl"] = 85,
-							["isDaily"] = true,
-							["races"] = HORDE_ONLY,
-							["timeline"] = {
-								"added 4.0.3.13277",
-							},
-						}),
-						q(28665, {	-- Cursed Shackles
-							["lvl"] = 85,
-							["isDaily"] = true,
-							["races"] = HORDE_ONLY,
-							["timeline"] = {
-								"added 8.0.1.27101",
-							},
-						}),
-						q(28186, {	-- Cursed Shackles
-							["lvl"] = 85,
-							["isDaily"] = true,
-							["races"] = ALLIANCE_ONLY,
-							["timeline"] = {
-								"added 4.0.1.12984",
-							},
-						}),
-						q(28165, {	-- D-Block
-							["lvl"] = 85,
-							["isDaily"] = true,
-							["races"] = ALLIANCE_ONLY,
-							["timeline"] = {
-								"added 4.0.1.12984",
-							},
-						}),
-						q(28663, {	-- D-Block
-							["lvl"] = 85,
-							["isDaily"] = true,
-							["races"] = HORDE_ONLY,
-							["timeline"] = {
-								"added 4.0.3.13277",
-							},
-						}),
-						q(28670, {	-- Food From Below
-							["lvl"] = 85,
-							["isDaily"] = true,
-							["races"] = HORDE_ONLY,
-							["timeline"] = {
-								"added 8.0.1.27101",
-							},
-						}),
-						q(28232, {	-- Food From Below
-							["lvl"] = 85,
-							["isDaily"] = true,
-							["races"] = ALLIANCE_ONLY,
-							["timeline"] = {
-								"added 4.0.1.12984",
-							},
-						}),
-						q(28662, {	-- Learning From The Past
-							["lvl"] = 85,
-							["isDaily"] = true,
-							["races"] = HORDE_ONLY,
-							["timeline"] = {
-								"added 4.0.3.13277",
-							},
-						}),
-						q(28120, {	-- Learning From The Past
-							["lvl"] = 85,
-							["isDaily"] = true,
-							["races"] = ALLIANCE_ONLY,
-							["timeline"] = {
-								"added 4.0.1.12984",
-							},
-						}),
-						q(28188, {	-- Prison Revolt
-							["lvl"] = 85,
-							["isDaily"] = true,
-							["races"] = ALLIANCE_ONLY,
-							["timeline"] = {
-								"added 4.0.1.12984",
-							},
-						}),
-						q(28668, {	-- Prison Revolt
-							["lvl"] = 85,
-							["isDaily"] = true,
-							["races"] = HORDE_ONLY,
-							["timeline"] = {
-								"added 4.0.3.13277",
-							},
-						}),
-						q(28185, {	-- Svarnos
-							["lvl"] = 85,
-							["isDaily"] = true,
-							["races"] = ALLIANCE_ONLY,
-							["timeline"] = {
-								"added 4.0.1.12984",
-							},
-						}),
-						q(28664, {	-- Svarnos
-							["lvl"] = 85,
-							["isDaily"] = true,
-							["races"] = HORDE_ONLY,
-							["timeline"] = {
-								"added 8.0.1.27101",
-							},
-						}),
-						q(28658, {	-- Swamp Bait
-							["lvl"] = 85,
-							["isDaily"] = true,
-							["races"] = HORDE_ONLY,
-							["timeline"] = {
-								"added 8.0.1.27101",
-							},
-						}),
-						q(28162, {	-- Swamp Bait
-							["lvl"] = 85,
-							["isDaily"] = true,
-							["races"] = ALLIANCE_ONLY,
-							["timeline"] = {
-								"added 8.0.1.27101",
-							},
-						}),
-						q(28661, {	-- The Imprisoned Archmage
-							["lvl"] = 85,
-							["isDaily"] = true,
-							["races"] = HORDE_ONLY,
-							["timeline"] = {
-								"added 8.0.1.27101",
-							},
-						}),
-						q(28118, {	-- The Imprisoned Archmage
-							["lvl"] = 85,
-							["isDaily"] = true,
-							["races"] = ALLIANCE_ONLY,
-							["timeline"] = {
-								"added 4.0.1.12984",
-							},
-						}),
-						q(28163, {	-- The Leftovers
-							["lvl"] = 85,
-							["isDaily"] = true,
-							["races"] = ALLIANCE_ONLY,
-							["timeline"] = {
-								"added 4.0.1.12984",
-							},
-						}),
-						q(28659, {	-- The Leftovers
-							["lvl"] = 85,
-							["isDaily"] = true,
-							["races"] = HORDE_ONLY,
-							["timeline"] = {
-								"added 4.0.3.13277",
-							},
-						}),
-						q(28223, {	-- The Warden
-							["lvl"] = 85,
-							["isDaily"] = true,
-							["races"] = ALLIANCE_ONLY,
-							["timeline"] = {
-								"added 4.0.1.12984",
-							},
-						}),
-						q(28669, {	-- The Warden
-							["lvl"] = 85,
-							["isDaily"] = true,
-							["races"] = HORDE_ONLY,
-							["timeline"] = {
-								"added 8.0.1.27101",
-							},
-						}),
-						q(28882, {	-- Victory in Tol Barad
-							["lvl"] = 90,
-							["isWeekly"] = true,
-							["races"] = ALLIANCE_ONLY,
-							["provider"] = { "n", 51288 },	-- Major Marsden
-							["timeline"] = {
-								"added 4.0.3.13277",
-							},
-						}),
-						q(28884, {	-- Victory in Tol Barad
-							["lvl"] = 90,
-							["isWeekly"] = true,
-							["races"] = HORDE_ONLY,
-							["provider"] = { "n", 51287 },	-- Colonel Karzag
-							["timeline"] = {
-								"added 4.0.3.13277",
-							},
+						["g"] = bubbleDown({["u"] = 12}, {
+							q(28122, {	-- A Huge Problem
+								["lvl"] = 85,
+								["isDaily"] = true,
+								["races"] = ALLIANCE_ONLY,
+								["timeline"] = {
+									"added 4.0.1.12984",
+								},
+							}),
+							q(28657, {	-- A Huge Problem
+								["lvl"] = 85,
+								["isDaily"] = true,
+								["races"] = HORDE_ONLY,
+								["timeline"] = {
+									"added 4.0.3.13277",
+								},
+							}),
+							q(28117, {	-- Clearing the Depths
+								["lvl"] = 85,
+								["isDaily"] = true,
+								["races"] = ALLIANCE_ONLY,
+								["timeline"] = {
+									"added 4.0.1.12984",
+								},
+							}),
+							q(28660, {	-- Clearing the Depths
+								["lvl"] = 85,
+								["isDaily"] = true,
+								["races"] = HORDE_ONLY,
+								["timeline"] = {
+									"added 4.0.3.13277",
+								},
+							}),
+							q(28665, {	-- Cursed Shackles
+								["lvl"] = 85,
+								["isDaily"] = true,
+								["races"] = HORDE_ONLY,
+								["timeline"] = {
+									"added 8.0.1.27101",
+								},
+							}),
+							q(28186, {	-- Cursed Shackles
+								["lvl"] = 85,
+								["isDaily"] = true,
+								["races"] = ALLIANCE_ONLY,
+								["timeline"] = {
+									"added 4.0.1.12984",
+								},
+							}),
+							q(28165, {	-- D-Block
+								["lvl"] = 85,
+								["isDaily"] = true,
+								["races"] = ALLIANCE_ONLY,
+								["timeline"] = {
+									"added 4.0.1.12984",
+								},
+							}),
+							q(28663, {	-- D-Block
+								["lvl"] = 85,
+								["isDaily"] = true,
+								["races"] = HORDE_ONLY,
+								["timeline"] = {
+									"added 4.0.3.13277",
+								},
+							}),
+							q(28670, {	-- Food From Below
+								["lvl"] = 85,
+								["isDaily"] = true,
+								["races"] = HORDE_ONLY,
+								["timeline"] = {
+									"added 8.0.1.27101",
+								},
+							}),
+							q(28232, {	-- Food From Below
+								["lvl"] = 85,
+								["isDaily"] = true,
+								["races"] = ALLIANCE_ONLY,
+								["timeline"] = {
+									"added 4.0.1.12984",
+								},
+							}),
+							q(28662, {	-- Learning From The Past
+								["lvl"] = 85,
+								["isDaily"] = true,
+								["races"] = HORDE_ONLY,
+								["timeline"] = {
+									"added 4.0.3.13277",
+								},
+							}),
+							q(28120, {	-- Learning From The Past
+								["lvl"] = 85,
+								["isDaily"] = true,
+								["races"] = ALLIANCE_ONLY,
+								["timeline"] = {
+									"added 4.0.1.12984",
+								},
+							}),
+							q(28188, {	-- Prison Revolt
+								["lvl"] = 85,
+								["isDaily"] = true,
+								["races"] = ALLIANCE_ONLY,
+								["timeline"] = {
+									"added 4.0.1.12984",
+								},
+							}),
+							q(28668, {	-- Prison Revolt
+								["lvl"] = 85,
+								["isDaily"] = true,
+								["races"] = HORDE_ONLY,
+								["timeline"] = {
+									"added 4.0.3.13277",
+								},
+							}),
+							q(28185, {	-- Svarnos
+								["lvl"] = 85,
+								["isDaily"] = true,
+								["races"] = ALLIANCE_ONLY,
+								["timeline"] = {
+									"added 4.0.1.12984",
+								},
+							}),
+							q(28664, {	-- Svarnos
+								["lvl"] = 85,
+								["isDaily"] = true,
+								["races"] = HORDE_ONLY,
+								["timeline"] = {
+									"added 8.0.1.27101",
+								},
+							}),
+							q(28658, {	-- Swamp Bait
+								["lvl"] = 85,
+								["isDaily"] = true,
+								["races"] = HORDE_ONLY,
+								["timeline"] = {
+									"added 8.0.1.27101",
+								},
+							}),
+							q(28162, {	-- Swamp Bait
+								["lvl"] = 85,
+								["isDaily"] = true,
+								["races"] = ALLIANCE_ONLY,
+								["timeline"] = {
+									"added 8.0.1.27101",
+								},
+							}),
+							q(28661, {	-- The Imprisoned Archmage
+								["lvl"] = 85,
+								["isDaily"] = true,
+								["races"] = HORDE_ONLY,
+								["timeline"] = {
+									"added 8.0.1.27101",
+								},
+							}),
+							q(28118, {	-- The Imprisoned Archmage
+								["lvl"] = 85,
+								["isDaily"] = true,
+								["races"] = ALLIANCE_ONLY,
+								["timeline"] = {
+									"added 4.0.1.12984",
+								},
+							}),
+							q(28163, {	-- The Leftovers
+								["lvl"] = 85,
+								["isDaily"] = true,
+								["races"] = ALLIANCE_ONLY,
+								["timeline"] = {
+									"added 4.0.1.12984",
+								},
+							}),
+							q(28659, {	-- The Leftovers
+								["lvl"] = 85,
+								["isDaily"] = true,
+								["races"] = HORDE_ONLY,
+								["timeline"] = {
+									"added 4.0.3.13277",
+								},
+							}),
+							q(28223, {	-- The Warden
+								["lvl"] = 85,
+								["isDaily"] = true,
+								["races"] = ALLIANCE_ONLY,
+								["timeline"] = {
+									"added 4.0.1.12984",
+								},
+							}),
+							q(28669, {	-- The Warden
+								["lvl"] = 85,
+								["isDaily"] = true,
+								["races"] = HORDE_ONLY,
+								["timeline"] = {
+									"added 8.0.1.27101",
+								},
+							}),
+							q(28882, {	-- Victory in Tol Barad
+								["lvl"] = 90,
+								["isWeekly"] = true,
+								["races"] = ALLIANCE_ONLY,
+								["provider"] = { "n", 51288 },	-- Major Marsden
+								["timeline"] = {
+									"added 4.0.3.13277",
+								},
+							}),
+							q(28884, {	-- Victory in Tol Barad
+								["lvl"] = 90,
+								["isWeekly"] = true,
+								["races"] = HORDE_ONLY,
+								["provider"] = { "n", 51287 },	-- Colonel Karzag
+								["timeline"] = {
+									"added 4.0.3.13277",
+								},
+							}),
 						}),
 					}),
 					n(-38, {	-- Profession

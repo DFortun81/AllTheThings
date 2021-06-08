@@ -21,7 +21,7 @@ _.Zones =
 				n(54649,  {	-- Big Zokk Torquewrench <Classic Weapons>
 					["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.|r",
 					["coord"] = { 33.2, 64.0, NETHERSTORM },
-					["g"] = {
+					["g"] = bubbleDown({["u"] = 12}, {
 						a(i(77549)),	-- Replica Grand Marshal's Demolisher
 						a(i(77550)),	-- Replica Grand Marshal's Swiftblade
 						a(i(77551)),	-- Replica Grand Marshal's Dirk
@@ -62,7 +62,7 @@ _.Zones =
 						h(i(77592)),	-- Replica High Warlord's Tome of Mending
 						h(i(77593)),	-- Replica High Warlord's Tome of Destruction
 						h(i(77597)),	-- Replica High Warlord's Shield Wall
-					},
+					}),
 				}),
 				n(107619, {	-- Blaze Magmaburn <Brutal and Guardian Gladiator>
 					["coord"] = { 33.2, 64.0, NETHERSTORM },
@@ -919,7 +919,7 @@ _.Zones =
 				n(40209,  {	-- Grex Brainboiler <Classic Alliance Cloth & Leather>
 					["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase. |r",
 					["coord"] = { 33.0, 64.0, NETHERSTORM },
-					["g"] = {
+					["g"] = bubbleDown({["u"] = 12}, {
 						i(77670),	-- Replica Field Marshal's Dragonhide Breastplate
 						i(77692),	-- Replica Field Marshal's Satin Mantle
 						i(77710),	-- Replica Field Marshal's Coronal
@@ -1019,7 +1019,7 @@ _.Zones =
 						i(77605),	-- Replica Sergeant Major's Dragonhide Armsplints
 						i(77640),	-- Replica Sergeant Major's Leather Armsplints
 						i(77787),	-- Replica Sergeant Major's Silk Cuffs
-					},
+					}),
 				}),
 				n(107599, {	-- Izzee the 'Clutch' <Merciless and Veteran's Gladiator>
 					["coord"] = { 33.0, 64.2, NETHERSTORM },

@@ -1571,18 +1571,21 @@ _.Achievements =
 			n(-693, {	-- Sinful Gladiator: Shadowlands Season 1
 				ach(14686, {	-- Challenger: Shadowlands Season 1
 					--["u"] = REMOVED_FROM_GAME,
+					["u"] = 12,
 					["g"] = {
 						--title(32),	-- Challenger <Name>
 					},
 				}),
 				ach(14685, {	-- Combatant: Shadowlands Season 1
 					--["u"] = REMOVED_FROM_GAME,
+					["u"] = 12,
 					["g"] = {
 						title(78),	-- Combatant <Name>
 					},
 				}),
 				ach(14688, {	-- Duelist: Shadowlands Season 1
 					--["u"] = REMOVED_FROM_GAME,
+					["u"] = 12,
 					["g"] = {
 						--title(30),	-- Duelist <Name>
 						-- Note!! Currently we can not list this due to having no item.
@@ -1597,14 +1600,17 @@ _.Achievements =
 				}),
 				ach(14691, {	-- Elite: Shadowlands Season 1
 					--["u"] = REMOVED_FROM_GAME,
+					["u"] = 12,
 					["g"] = {
 						i(180431, {	-- Sinful Gladiator's Tabard
 						--	["u"] = REMOVED_FROM_GAME,
+						["u"] = 12,
 						}),
 					},
 				}),
 				ach(14689, {	-- Gladiator: Shadowlands Season 1
 					--["u"] = REMOVED_FROM_GAME,
+					["u"] = 12,
 					["g"] = {
 						--title(29),	-- Gladiator <Name>
 						-- Mount is listed under FoS>Mounts.
@@ -1614,20 +1620,24 @@ _.Achievements =
 				}),
 				ach(14692, {	-- Hero of the Alliance: Sinful
 					["races"] = ALLIANCE_ONLY,
+					["u"] = 12,
 					--["u"] = REMOVED_FROM_GAME,
 				}),
 				ach(14693, {	-- Hero of the Horde: Sinful
 					["races"] = HORDE_ONLY,
+					["u"] = 12,
 					--["u"] = REMOVED_FROM_GAME,
 				}),
 				ach(14687, {	-- Rival: Shadowlands Season 1
 					--["u"] = REMOVED_FROM_GAME,
+					["u"] = 12,
 					["g"] = {
 						--title(31),	-- Rival <Name>
 					},
 				}),
 				ach(14690, {	-- Sinful Gladiator: Shadowlands Season 1
 					--["u"] = REMOVED_FROM_GAME,
+					["u"] = 12,
 					["g"] = {
 						title(434, {	-- Sinful Gladiator <Name>
 							--["u"] = REMOVED_FROM_GAME,
@@ -1653,15 +1663,27 @@ _.Achievements =
 					crit(2),							-- General Lizzie Heartbane
 					crit(3),						-- Marshal Lyrdrea Daybreaker
 			}))),
-			(ach(12568)),							-- The Alliance Slayer
-			a(ach(12567)),							-- The Horde Slayer
+			ach(14191, {							-- Servant of N'Zoth
+				["races"] = HORDE_ONLY,
+				["u"] = 2,							-- REMOVED in 9.0.1
+				un(2, title(414)),					-- <Name>, Servant of N'Zoth
+			}),
+			ach(12568, {							-- The Alliance Slayer
+				["races"] = HORDE_ONLY,
+				["u"] = 12,							
+			}),
+			ach(12567, {							-- The Horde Slayer
+				["races"] = ALLIANCE_ONLY,
+				["u"] = 12,							
+			}),
 			ach(9725, {								-- The Last of Us
-				title(302, {						-- Lord of War (Gender specific title, must log in with both genders to recieve both titles)
-					["description"] = "Must earn with a male character.",
-				}),
-				title(303, {						-- Lady of War (Gender specific title, must log in with both genders to recieve both titles)
-					["description"] = "Must earn with a female character.",
-				}),
+				["u"] = 12,							
+				un(12, title(302, {						-- Lord of War (Gender specific title, must log in with both genders to recieve both titles)
+					["description"] = "Earned with a male character. Female version can be obtained by swapping your gender at the barber.",
+				})),
+				un(12, title(303, {						-- Lady of War (Gender specific title, must log in with both genders to recieve both titles)
+					["description"] = "Earned with a female character. Male version can be obtained by swapping your gender at the barber.",
+				})),
 			}),
 			un(REMOVED_FROM_GAME, ach(8392, {		-- Tournament Glory 2013
 				un(REMOVED_FROM_GAME, title(128)),		-- Vanquisher
