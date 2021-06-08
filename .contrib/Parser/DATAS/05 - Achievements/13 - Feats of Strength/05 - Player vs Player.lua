@@ -1666,7 +1666,9 @@ _.Achievements =
 			ach(14191, {							-- Servant of N'Zoth
 				["races"] = HORDE_ONLY,
 				["u"] = 2,							-- REMOVED in 9.0.1
-				un(2, title(414)),					-- <Name>, Servant of N'Zoth
+				["g"] = {
+					un(2, title(414)),					-- <Name>, Servant of N'Zoth
+				},
 			}),
 			ach(12568, {							-- The Alliance Slayer
 				["races"] = HORDE_ONLY,
@@ -1678,12 +1680,18 @@ _.Achievements =
 			}),
 			ach(9725, {								-- The Last of Us
 				["u"] = 12,							
-				un(12, title(302, {						-- Lord of War (Gender specific title, must log in with both genders to recieve both titles)
-					["description"] = "Earned with a male character. Female version can be obtained by swapping your gender at the barber.",
-				})),
-				un(12, title(303, {						-- Lady of War (Gender specific title, must log in with both genders to recieve both titles)
-					["description"] = "Earned with a female character. Male version can be obtained by swapping your gender at the barber.",
-				})),
+				["g"] = {
+					title(302, {						-- Lord of War (Gender specific title, must log in with both genders to recieve both titles)
+						["u"] = 12,	
+						["description"] = "Earned with a male character. Female version can be obtained by swapping your gender at the barber.",
+					}),
+				},
+				["g"] = {
+					title(303, {						-- Lady of War (Gender specific title, must log in with both genders to recieve both titles)
+						["u"] = 12,	
+						["description"] = "Earned with a female character. Male version can be obtained by swapping your gender at the barber.",
+					}),
+				},
 			}),
 			un(REMOVED_FROM_GAME, ach(8392, {		-- Tournament Glory 2013
 				un(REMOVED_FROM_GAME, title(128)),		-- Vanquisher
