@@ -1247,10 +1247,11 @@ end
 app.GetSourceID = GetSourceID;
 app.MaximumItemInfoRetries = 400;
 local function GetUnobtainableTexture(group)
+	if not group.u then return; end
 	-- old reasons are set to 0, so use 1 instead
 	-- if unobtainable stuff changes again, this logic may need to adjust
-	local obtainType = group.u or 1;
-	local index = math.max(L["UNOBTAINABLE_ITEM_REASONS"][obtainType][1],1);
+	local obtainType = group.u;
+	local index = L["UNOBTAINABLE_ITEM_REASONS"][obtainType][1];
 	if group.itemID or group.spellID then
 		-- not NYI
 		if obtainType > 1 and
@@ -1260,7 +1261,7 @@ local function GetUnobtainableTexture(group)
 			index = 3;
 		end
 	end
-	return L["UNOBTAINABLE_ITEM_TEXTURES"][index or 1];
+	return L["UNOBTAINABLE_ITEM_TEXTURES"][index or 0];
 end
 local function SetIndicatorIcon(self, data)
 	if data.saved then
@@ -1277,8 +1278,11 @@ local function SetIndicatorIcon(self, data)
 			self:SetTexture(app.asset(asset));
 			return true;
 		elseif data.u then
-			self:SetTexture(GetUnobtainableTexture(data));
-			return true;
+			local unobTexture = GetUnobtainableTexture(data);
+			if unobTexture then
+				self:SetTexture(unobTexture);
+				return true;
+			end
 		end
 	end
 end
@@ -2704,7 +2708,10 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 				local o = { prefix = indent, group = group, right = right };
 				-- i wanted an icon to show "have you done this non-collectible thing which may contain collectible things?" but it looks bad
 				-- if not group.collectible and group.trackable then o.right = GetCompletionIcon(group.saved) .. o.right; end
-				if group.u then o.prefix = string.sub(o.prefix, 4) .. "|T" .. GetUnobtainableTexture(group) .. ":0|t "; end
+				local unobTexture = GetUnobtainableTexture(group);
+				if unobTexture then
+					o.prefix = string.sub(o.prefix, 4) .. "|T" .. unobTexture .. ":0|t ";
+				end
 				tinsert(entries, o);
 
 				-- Only go down one more level.
@@ -3298,7 +3305,12 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						text = string.gsub(text, source, replacement);
 					end
 					if j.u then
-						tinsert(unfiltered, text .. " |T" .. GetUnobtainableTexture(j) .. ":0|t");
+						local unobTexture = GetUnobtainableTexture(j);
+						if unobTexture then
+							tinsert(unfiltered, text .. " |T" .. unobTexture .. ":0|t");
+						else
+							tinsert(unfiltered, text);
+						end
 					elseif not app.RecursiveClassAndRaceFilter(j.parent) then
 						tinsert(unfiltered, text .. " |TInterface\\FriendsFrame\\StatusIcon-Away:0|t");
 					elseif not app.RecursiveUnobtainableFilter(j.parent) then
@@ -18799,9 +18811,10 @@ app.events.VARIABLES_LOADED = function()
 	app.RaceID = raceID;
 	app.RaceIndex = raceIndex;
 	local name, realm = UnitName("player");
-	local _, id = GetClassInfo(classID);
+	local className = GetClassInfo(classID);
 	app.GUID = UnitGUID("player");
-	app.Me = "|c" .. RAID_CLASS_COLORS[id].colorStr .. name .. "-" .. (realm or GetRealmName()) .. "|r";
+	app.Me = "|c" .. RAID_CLASS_COLORS[class].colorStr .. name .. "-" .. (realm or GetRealmName()) .. "|r";
+	app.ClassName = "|c" .. RAID_CLASS_COLORS[class].colorStr .. className .. "|r";
 	app.Faction = UnitFactionGroup("player");
 	if app.Faction == "Horde" then
 		app.FactionID = Enum.FlightPathFaction.Horde;
