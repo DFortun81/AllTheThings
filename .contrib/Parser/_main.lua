@@ -691,36 +691,39 @@ icon = function(path)
 end
 
 -- Classic / Retail Helper Functions
+-- #if ANYCLASSIC
 isanyclassic = function(modifier, data)
-	-- #if ANYCLASSIC
 	return modifier(data);
-	-- #else
-	return data;
-	-- #endif
 end
 applyclassicphase = function(phase, data)
-	-- #if ANYCLASSIC
 	return bubbleDown({ ["u"] = phase }, data);
-	-- #else
-	return data;
-	-- #endif
 end
 applylegacyclassicphase = function(phase, data)
-	-- #if ANYCLASSIC
 	return bubbleDown({ ["u"] = phase }, data);
-	-- #else
-	return bubbleDown({ ["u"] = REMOVED_FROM_GAME }, data);
-	-- #endif
 end
 lvlsquish = function(originalLvl, shadowlandsLvl, retailLvl)
-	-- #if ANYCLASSIC
 	return originalLvl;
-	-- #elseif AFTER SHADOWLANDS
-	return shadowlandsLvl;
-	-- #else
-	return retailLvl or originalLvl;
-	-- #endif
 end
+-- #else
+isanyclassic = function(modifier, data)
+	return data;
+end
+applyclassicphase = function(phase, data)
+	return data;
+end
+applylegacyclassicphase = function(phase, data)
+	return bubbleDown({ ["u"] = REMOVED_FROM_GAME }, data);
+end
+-- #if AFTER SHADOWLANDS
+lvlsquish = function(originalLvl, shadowlandsLvl, retailLvl)
+	return shadowlandsLvl;
+end
+-- #else
+lvlsquish = function(originalLvl, shadowlandsLvl, retailLvl)
+	return retailLvl or originalLvl;
+end
+-- #endif
+-- #endif
 
 -- SHORTCUTS for Object Class Types
 artifact = function(id, t)								-- Create an ARTIFACT Object
@@ -880,13 +883,15 @@ end
 mi = function(id, t)									-- Create a MISSION Object (Alternative)
 	return struct("missionID", id, t);
 end
+-- #if BEFORE WRATH
 mount = function(id, t)									-- Create a MOUNT Object, which is just a spellID with a filter.
-	-- #if BEFORE WRATH
 	return struct("spellID", id, t);
-	-- #else
-	return struct("mountID", id, t);
-	-- #endif
 end
+-- #else
+mount = function(id, t)									-- Create a MOUNT Object, which is just a spellID with a filter.
+	return struct("mountID", id, t);
+end
+-- #endif
 npc = function(id, t)									-- Create an NPC Object (negative indicates that it is custom)
 	return struct("npcID", id, t);
 end
