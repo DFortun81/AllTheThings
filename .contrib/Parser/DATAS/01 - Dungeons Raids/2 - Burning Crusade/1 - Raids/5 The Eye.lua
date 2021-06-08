@@ -75,11 +75,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_TWO, {	-- Burning Crusade
 					19622,	-- Kael'thas Sunstrider
 				},
 				["g"] = {
-					i(30280, {	-- Pattern: Belt of Blasting
-						["spellID"] = 36315,	-- Belt of Blasting
-						["requireSkill"] = TAILORING,
-						["f"] = 200,	-- Recipe
-					}),
+					i(30280),	-- Pattern: Belt of Blasting
 					i(30302, {	-- Pattern: Belt of Deep Shadow
 						["spellID"] = 36351,	-- Belt of Deep Shadow
 						["requireSkill"] = LEATHERWORKING,
@@ -95,16 +91,8 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_TWO, {	-- Burning Crusade
 						["requireSkill"] = LEATHERWORKING,
 						["f"] = 200,	-- Recipe
 					}),
-					i(30281, {	-- Pattern: Belt of the Long Road
-						["spellID"] = 36316,	-- Belt of the Long Road
-						["requireSkill"] = TAILORING,
-						["f"] = 200,	-- Recipe
-					}),
-					i(30282, {	-- Pattern: Boots of Blasting
-						["spellID"] = 36317,	-- Boots of Blasting
-						["requireSkill"] = TAILORING,
-						["f"] = 200,	-- Recipe
-					}),
+					i(30281),	-- Pattern: Belt of the Long Road
+					i(30282),	-- Pattern: Boots of Blasting
 					i(30305, {	-- Pattern: Boots of Natural Grace
 						["spellID"] = 36355,	-- Boots of Natural Grace
 						["requireSkill"] = LEATHERWORKING,
@@ -115,11 +103,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_TWO, {	-- Burning Crusade
 						["requireSkill"] = LEATHERWORKING,
 						["f"] = 200,	-- Recipe
 					}),
-					i(30283, {	-- Pattern: Boots of the Long Road
-						["spellID"] = 36318,	-- Boots of the Long Road
-						["requireSkill"] = TAILORING,
-						["f"] = 200,	-- Recipe
-					}),
+					i(30283),	-- Pattern: Boots of the Long Road
 					i(30306, {	-- Pattern: Boots of Utter Darkness
 						["spellID"] = 36357,	-- Boots of Utter Darkness
 						["requireSkill"] = LEATHERWORKING,
@@ -135,26 +119,10 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_TWO, {	-- Burning Crusade
 						["requireSkill"] = LEATHERWORKING,
 						["f"] = 200,	-- Recipe
 					}),
-					i(30321, {	-- Plans: Belt of the Guardian
-						["spellID"] = 36389,	-- Belt of the Guardian
-						["requireSkill"] = BLACKSMITHING,
-						["f"] = 200,	-- Recipe
-					}),
-					i(30323, {	-- Plans: Boots of the Protector
-						["spellID"] = 36391,	-- Boots of the Protector
-						["requireSkill"] = BLACKSMITHING,
-						["f"] = 200,	-- Recipe
-					}),
-					i(30322, {	-- Plans: Red Belt of Battle
-						["spellID"] = 36390,	-- Red Belt of Battle
-						["requireSkill"] = BLACKSMITHING,
-						["f"] = 200,	-- Recipe
-					}),
-					i(30324, {	-- Plans: Red Havoc Boots
-						["spellID"] = 36392,	-- Red Havoc Boots
-						["requireSkill"] = BLACKSMITHING,
-						["f"] = 200,	-- Recipe
-					}),
+					i(30321),	-- Plans: Belt of the Guardian
+					i(30323),	-- Plans: Boots of the Protector
+					i(30322),	-- Plans: Red Belt of Battle
+					i(30324),	-- Plans: Red Havoc Boots
 					i(30026),	-- Bands of the Celestial Archer
 					i(30029),	-- Bark-Gloves of Ancient Wisdom
 					i(30020),	-- Fire-Cord of the Magus

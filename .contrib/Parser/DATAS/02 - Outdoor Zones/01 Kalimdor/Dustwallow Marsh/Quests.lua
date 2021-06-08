@@ -829,7 +829,7 @@ _.Zones =
 					["maps"] = {
 						84,	-- Stormwind
 						85,	-- Orgrimmar
-						87, -- Ironforge
+						IRONFORGE,
 						90,	-- Undercity
 					},
 					["providers"] = {

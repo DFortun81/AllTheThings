@@ -29,6 +29,11 @@ _.Craftables =
 			}),
 		}),
 		prof(BLACKSMITHING, {
+			f(55, {		-- Consumables
+				i(55054), 	-- Ebonsteel Belt Buckle
+				i(55055),	-- Elementium Shield Spike
+				i(55057),	-- Pyrium Weapon Chain
+			}),
 			filter(20, {	-- Daggers
 				i(70155),	-- Brainsplinter
 				i(55044),	-- Cold-Forged Shank
@@ -196,6 +201,11 @@ _.Craftables =
 			}),
 		}),
 		prof(ENGINEERING, {
+			f(55, {		-- Consumables
+				i(59594),	-- Gnomish X-Ray Scope
+				i(60223),	-- High-Powered Bolt Gun
+				i(70139),	-- Flintlocke's Woodchucker
+			}),
 			n(-318, {	-- Armour
 				-- Head
 				i(59455),	-- Agile Bio-Optic Killshades*
@@ -359,6 +369,11 @@ _.Craftables =
 				i(70136),			-- Royal Scribe's Satchel
 				i(70137),			-- Triple-Reinforced Mining Bag
 			}),
+			f(55, {		-- Consumables
+				i(56502),	-- Scorched Leg Armor
+				i(56503),	-- Twilight Leg Armor
+				i(56517),	-- Heavy Savage Armor Kit
+			}),
 			n(-322, { 	-- Cloak
 				un(REMOVED_FROM_GAME, i(70068)),	-- Bloodthirsty Fur Cloak
 				un(REMOVED_FROM_GAME, i(70069)),	-- Bloodthirsty Hide Cloak
@@ -520,6 +535,10 @@ _.Craftables =
 				i(70138),	-- Luxurious Silk Gem Bag
 				i(54445),	-- Otherworldly Bag
 			}),
+			f(55, {		-- Consumables
+				i(54447),	-- Enchanted Spellthread
+				i(54449),	-- Ghostly Spellthread
+			}),	
 			n(-323, {		-- Chest
 				un(REMOVED_FROM_GAME, i(70060)),	-- Bloodthirsty Embersilk Robe
 				un(REMOVED_FROM_GAME, i(70058)),	-- Bloodthirsty Fireweave Robe

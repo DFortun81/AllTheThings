@@ -220,7 +220,12 @@ _.Zones =
 				q(9729,  {	-- Fhwoor Smash!
 					["qg"] = 17877,	-- Fhwoor
 					["coord"] = { 19.8, 50.8, ZANGARMARSH },
+					-- #if BEFORE CATA
+					-- Not really sure when this changed. It's only available after Exalted in TBC Classic.
+					["minReputation"] = { 970, EXALTED },	-- Sporeggar, Exalted.
+					-- #else
 					["minReputation"] = { 970, FRIENDLY },	-- Sporeggar, Friendly.
+					-- #endif
 					["lvl"] = lvlsquish(63, 10, 63),
 					["groups"] = {
 						i(25537),	-- Hewing Axe of the Marsh

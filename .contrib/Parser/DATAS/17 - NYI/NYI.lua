@@ -610,6 +610,21 @@ _.NeverImplemented =
 				i(32130),	-- Chancellor's Wyrmhide Legguards
 				i(32131),	-- Chancellor's Wyrmhide Spaulders
 				i(32132),	-- Chancellor's Wyrmhide Tunic
+				i(45350),	-- Nightsong Cover
+				i(46260),	-- Nightsong Handgrips
+				i(46261),	-- Nightsong Handguards
+				i(46262),	-- Nightsong Headguard
+				i(46263),	-- Nightsong Headpiece
+				i(46264),	-- Nightsong Leggings
+				i(46265),	-- Nightsong Legguards
+				i(46266),	-- Nightsong Mantle
+				i(46267),	-- Nightsong Raiments
+				i(46268),	-- Nightsong Robe
+				i(46269),	-- Nightsong Shoulderpads
+				i(46270),	-- Nightsong Spaulders
+				i(46271),	-- Nightsong Trousers
+				i(46272),	-- Nightsong Vestments
+				i(46309),	-- Nightsong Gloves
 				-- Unused T0 Replica
 				i(78068),	-- Replica Wildheart Belt
 				i(78067),	-- Replica Wildheart Boots
@@ -2176,6 +2191,13 @@ _.NeverImplemented =
 			i(92746),	-- Portable Refrigerator
 			i(38307),	-- Crafty's Bottomless Inscription Bag
 		}),
+		f(55, {		-- Consumables
+			i(44871),	-- Greater Inscription of the Axe
+			i(44872),	-- Greater Inscription of the Crag
+			i(44873),	-- Greater Inscription of the Pinnacle
+			i(44874),	-- Greater Inscription of the Storm
+			i(45705),	-- Argent Tournament Invitation
+		}),
 		n(-650, {	-- Quest Item
 			i(157772),	-- A Royal Concern
 			i(157775),	-- A Royal Concern
@@ -3554,6 +3576,7 @@ _.NeverImplemented =
 				["spellID"] = 0,	-- Schematic wasn't implemented, spell is a reward from a quest now
 				["u"] = NEVER_IMPLEMENTED,
 			},
+				i(37589),	-- Hyper-Powered Mote Extractor (Retrieving)
 		}),
 		prof(ENCHANTING, {
 			i(84582),	-- Formula: Enchant Weapon - Windsong (never added version)

@@ -13,22 +13,24 @@ TODO:
 _.Achievements =
 {
 	n(-9958, {	-- Player vs Player
-		n(-9994, {	-- Deepwind Gorge
-			["maps"] = {
-				519,	-- Deepwind Gorge (old)
-				1576,	-- Deepwind Gorge (revamped)
-			},
-			["g"] = {
-				ach(14175, {	-- Master of Deepwind Gorge
-					ach(8331),	-- Deepwind Gorge Victory
-					ach(8332),	-- Deepwind Gorge Veteran
-					ach(8333),	-- Deepwind Gorge Perfection
-					ach(14187),	-- Cruisin' for a Brewsin'
-					ach(14186),	-- Market Dominance
-					ach(14188),	-- Well Gorged
-					title(229),	-- Gorgeous
-				}),
-			},
+		["g"] = bubbleDown({["u"] = 12}, {
+			n(-9994, {	-- Deepwind Gorge
+				["maps"] = {
+					519,	-- Deepwind Gorge (old)
+					1576,	-- Deepwind Gorge (revamped)
+				},
+				["g"] = {
+					ach(14175, {	-- Master of Deepwind Gorge
+						ach(8331),	-- Deepwind Gorge Victory
+						ach(8332),	-- Deepwind Gorge Veteran
+						ach(8333),	-- Deepwind Gorge Perfection
+						ach(14187),	-- Cruisin' for a Brewsin'
+						ach(14186),	-- Market Dominance
+						ach(14188),	-- Well Gorged
+						title(229),	-- Gorgeous
+					}),
+				},
+			}),
 		}),
 	}),
 };

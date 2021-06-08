@@ -316,6 +316,8 @@ _.Instances = { tier(2, applylegacyclassicphase(TBC_PHASE_FOUR, {	-- Burning Cru
 AMANI_HEX_STICK.u = nil;
 EXECUTIONER_RECIPE.u = nil;
 FOREST_FROG.u = nil;
+-- also clean up the children
+for _,item in pairs(FOREST_FROG.groups) do item.u = nil; end
 MOJO_PET.u = nil;
 -- #else
 -- We don't want to apply a phase ID for this in this raid, that will be done elsewhere.

@@ -1,13 +1,12 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
-_.Zones =
+_.Zones = 
 {
 	m(KALIMDOR, {
-		m(71, {	-- Tanaris
+		m(TANARIS, {
 			m(CAVERNS_OF_TIME, {
-				n(QUESTS, {
+				n(QUESTS, applyclassicphase(TBC_PHASE_ONE, {
 					q(13432, {	-- The Vials of Eternity
 						["providers"] = {
 							{ "n", 19935 },	-- Soridormi
@@ -25,7 +24,7 @@ _.Zones =
 						},
 						["lvl"] = 70,
 					}),
-				}),
+				})),
 			}),
 		}),
 	}),

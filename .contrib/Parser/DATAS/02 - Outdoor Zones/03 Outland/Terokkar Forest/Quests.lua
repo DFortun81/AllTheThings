@@ -6,14 +6,14 @@ _.Zones =
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(TEROKKAR_FOREST, {
 			n(QUESTS, {
-				q(11665,  {  -- Crocolisks in the City
+				q(11665, {  -- Crocolisks in the City
 					["provider"] = { "n", 25580 },	-- Old Man Barlo
 					["coord"] = { 38.6, 12.8, TEROKKAR_FOREST },
 					["description"] = "One of five random fishing daily quests. The other four do not drop minipets.",
 					["isDaily"] = true,
 					["requireSkill"] = FISHING,
 					["g"] = {
-						i(35348,  { -- Bag of Fishing Treasures
+						i(35348, { -- Bag of Fishing Treasures
 							i(35350),	-- Chuck's Bucket
 							i(33818),	-- Muckbreath's Bucket
 							i(35349),	-- Snarly's Bucket
@@ -32,7 +32,7 @@ _.Zones =
 					["isDaily"] = true,
 					["requireSkill"] = FISHING,
 					["g"] = {
-						i(34863,  {  -- Bag of Fishing Treasures
+						i(34863, {  -- Bag of Fishing Treasures
 							i(33820),  -- Weather-Beaten Fishing Hat
 						}),
 						crit(3, {	-- Felblood Fillet
@@ -46,7 +46,7 @@ _.Zones =
 					["isDaily"] = true,
 					["requireSkill"] = FISHING,
 					["g"] = {
-						i(34863,  {  -- Bag of Fishing Treasures
+						i(34863, {  -- Bag of Fishing Treasures
 							i(33820),  -- Weather-Beaten Fishing Hat
 						}),
 						crit(5, {	-- Shrimpin' Ain't Easy
@@ -60,7 +60,7 @@ _.Zones =
 					["isDaily"] = true,
 					["requireSkill"] = FISHING,
 					["g"] = {
-						i(34863,  {  -- Bag of Fishing Treasures
+						i(34863, {  -- Bag of Fishing Treasures
 							i(33820),  -- Weather-Beaten Fishing Hat
 						}),
 						crit(4, {	-- The One That Got Away
@@ -74,7 +74,7 @@ _.Zones =
 					["isDaily"] = true,
 					["requireSkill"] = FISHING,
 					["g"] = {
-						i(34863,  {  -- Bag of Fishing Treasures
+						i(34863, {  -- Bag of Fishing Treasures
 							i(33820),  -- Weather-Beaten Fishing Hat
 						}),
 						crit(2, {	-- Bait Bandits
@@ -82,15 +82,15 @@ _.Zones =
 						}),
 					},
 				}),
-				q(11885, {	-- Adversarial Blood
+				applyclassicphase(TBC_PHASE_THREE_SKYGUARD, q(11885, {	-- Adversarial Blood
 					["provider"] = { "n", 23306 },	-- Hazzik
 					["sourceQuest"] = 11029,	-- A Shabby Disguise
 					["coord"] = { 64.2, 66.9, TEROKKAR_FOREST },
 					["groups"] = {
 						i(32720),	-- Time-Lost Offering
 					},
-				}),
-				q(11029, {	-- A Shabby Disguise
+				})),
+				applyclassicphase(TBC_PHASE_THREE_SKYGUARD, q(11029, {	-- A Shabby Disguise
 					["provider"] = { "n", 23306 },	-- Hazzik
 					["sourceQuest"] = 11056,	-- Hazzik's Bargain
 					["coord"] = { 64.2, 66.9, TEROKKAR_FOREST },
@@ -104,23 +104,23 @@ _.Zones =
 							["coord"] = { 67.0, 79.6, TEROKKAR_FOREST },
 						}),
 					},
-				}),
-				q(11024, {	-- An Ally in Lower City
+				})),
+				applyclassicphase(TBC_PHASE_THREE_SKYGUARD, q(11024, {	-- An Ally in Lower City
 					["provider"] = { "n", 23038 },	-- Sky Commander Adaris
 					["sourceQuest"] = 11021,	-- Ishaal's Almanac
 					["coord"] = { 64.1, 66.9, TEROKKAR_FOREST },
-				}),
-				q(11028, {	-- Countdown to Doom
+				})),
+				applyclassicphase(TBC_PHASE_THREE_SKYGUARD, q(11028, {	-- Countdown to Doom
 					["provider"] = { "n", 22292 },	-- Rilak the Redeemed
 					["sourceQuest"] = 11024,	-- An Ally in Lower City
 					["coord"] = { 52.6, 21.0, SHATTRATH_CITY },
-				}),
-				q(11085, {	-- Escape from Skettis
+				})),
+				applyclassicphase(TBC_PHASE_THREE_SKYGUARD, q(11085, {	-- Escape from Skettis
 					["provider"] = { "n", 23383 },	-- Skyguard Prisoner
 					["coord"] = { 75, 86.2, TEROKKAR_FOREST },
 					["isDaily"] = true,
-				}),
-				q(11008, {	-- Fires Over Skettis
+				})),
+				applyclassicphase(TBC_PHASE_THREE_SKYGUARD, q(11008, {	-- Fires Over Skettis
 					["provider"] = { "n", 23048 },	-- Sky Sergeant Doryn
 					["sourceQuest"] = 11098,	-- To Skettis!
 					["coord"] = { 64.5, 66.7, TEROKKAR_FOREST },
@@ -131,8 +131,8 @@ _.Zones =
 					["groups"] = {
 						ach(1275),	-- Bombs Away
 					},
-				}),
-				q(11056, {	-- Hazzik's Bargain
+				})),
+				applyclassicphase(TBC_PHASE_THREE_SKYGUARD, q(11056, {	-- Hazzik's Bargain
 					["provider"] = { "n", 23306 },	-- Hazzik
 					["sourceQuest"] = 11028,	-- Countdown to Doom
 					["coord"] = { 64.2, 66.9, TEROKKAR_FOREST },
@@ -145,8 +145,8 @@ _.Zones =
 							["coord"] = { 74.8, 80.1, TEROKKAR_FOREST },
 						}),
 					},
-				}),
-				q(11093, {	-- Hungry Nether Rays
+				})),
+				applyclassicphase(TBC_PHASE_THREE_SKYGUARD, q(11093, {	-- Hungry Nether Rays
 					["provider"] = { "n", 23415 },	-- Skyguard Handler Deesak
 					["coord"] = { 63.6, 65.8, TEROKKAR_FOREST },
 					["cost"] = {
@@ -156,13 +156,13 @@ _.Zones =
 						i(28103),	-- Adept's Elixir
 						i(22831),	-- Elixir of Major Agility
 					},
-				}),
-				q(11021, {	-- Ishaal's Almanac
+				})),
+				applyclassicphase(TBC_PHASE_THREE_SKYGUARD, q(11021, {	-- Ishaal's Almanac
 					["provider"] = { "i", 32523 },	-- Ishaal's Almanac
 					["coord"] = { 69.2, 78.2, TEROKKAR_FOREST },
 					["cr"] = 23066,	-- Talonpriest Ishaal
-				}),
-				q(11006, {	-- More Shadow Dust
+				})),
+				applyclassicphase(TBC_PHASE_THREE_SKYGUARD, q(11006, {	-- More Shadow Dust
 					["provider"] = { "n", 23042 },	-- Severin <Skyguard Medic>
 					["sourceQuest"] = 11004,	-- World of Shadows
 					["coord"] = { 64.1, 66.9, TEROKKAR_FOREST },
@@ -173,13 +173,13 @@ _.Zones =
 					["groups"] = {
 						i(32446),	-- Elixir of Shadows
 					},
-				}),
-				q(11005, {	-- Secrets of the Talonpriests
+				})),
+				applyclassicphase(TBC_PHASE_THREE_SKYGUARD, q(11005, {	-- Secrets of the Talonpriests
 					["provider"] = { "n", 23038 },	-- Sky Commander Adaris
 					["sourceQuest"] = 11004,	-- World of Shadows
 					["coord"] = { 64.1, 66.9, TEROKKAR_FOREST },
-				}),
-				q(11074, {	-- Tokens of the Descendants
+				})),
+				applyclassicphase(TBC_PHASE_THREE_SKYGUARD, q(11074, {	-- Tokens of the Descendants
 					["provider"] = { "n", 23306 },	-- Hazzik
 					["sourceQuest"] = 11885,	-- Adversarial Blood
 					["coord"] = { 64.2, 66.9, TEROKKAR_FOREST },
@@ -193,8 +193,8 @@ _.Zones =
 					["groups"] = {
 						i(32720),	-- Time-Lost Offering
 					},
-				}),
-				q(11073, {  -- Terokk's Downfall
+				})),
+				applyclassicphase(TBC_PHASE_THREE_SKYGUARD, q(11073, {  -- Terokk's Downfall
 					["provider"] = { "n", 23038 },	-- Sky Commander Adaris
 					["sourceQuest"] = 11885,	-- Adversarial Blood
 					["coord"] = { 64.1, 66.9, TEROKKAR_FOREST },
@@ -209,8 +209,8 @@ _.Zones =
 						i(32830),	-- Severin's Cane
 						i(32829),	-- Windcharger's Lance
 					},
-				}),
-				q(11004, {	-- World of Shadows
+				})),
+				applyclassicphase(TBC_PHASE_THREE_SKYGUARD, q(11004, {	-- World of Shadows
 					["provider"] = { "n", 23042 },	-- Severin <Skyguard Medic>
 					["coord"] = { 64.1, 66.9, TEROKKAR_FOREST },
 					["cost"] = {
@@ -219,7 +219,7 @@ _.Zones =
 					["groups"] = {
 						i(32446),	-- Elixir of Shadows
 					},
-				}),
+				})),
 				q(10914, {	-- A Hero Is Needed
 					["provider"] = { "n", 22446 },	-- Commander Ra'vaj
 					["coord"] = { 31.0, 76.1, TEROKKAR_FOREST },
@@ -264,13 +264,13 @@ _.Zones =
 					["coord"] = { 48.9, 44.6, TEROKKAR_FOREST },
 					["races"] = HORDE_ONLY,
 				}),
-				q(9996,  {	-- Attack on Firewing Point (A)
+				q(9996, {	-- Attack on Firewing Point (A)
 					["provider"] = { "n", 21006 },	-- Lieutenant Meridian
 					["coord"] = { 69.6, 44.6, TEROKKAR_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 10444,	-- Report to the Allerian Post
 				}),
-				q(9997,  {	-- Attack on Firewing Point (H)
+				q(9997, {	-- Attack on Firewing Point (H)
 					["provider"] = { "n", 21007 },	-- Sergeant Chawni
 					["coord"] = { 63.2, 42.3, TEROKKAR_FOREST },
 					["races"] = HORDE_ONLY,
@@ -280,7 +280,7 @@ _.Zones =
 					["provider"] = { "n", 22370 },	-- Mekeda
 					["coord"] = { 37.6, 50.8, TEROKKAR_FOREST },
 				}),
-				q(9978,  {	-- By Any Means Necessary
+				q(9978, {	-- By Any Means Necessary
 					["provider"] = { "n", 18446 },	-- Earthbinder Tavgren
 					["coord"] = { 44.3, 26.3, TEROKKAR_FOREST },
 					["sourceQuests"] = {
@@ -296,7 +296,7 @@ _.Zones =
 						21907,	-- Cabal Initiate
 					},
 				}),
-				q(9971,  {	-- Clues in the Thicket
+				q(9971, {	-- Clues in the Thicket
 					["provider"] = { "n", 18446 },	-- Earthbinder Tavgren
 					["coord"] = { 44.3, 26.3, TEROKKAR_FOREST },
 				}),
@@ -380,13 +380,13 @@ _.Zones =
 					["provider"] = { "n", 19697 },	-- Ha'lei
 					["coord"] = { 35.0, 65.0, TEROKKAR_FOREST },
 				}),
-				q(9990,  {	-- Investigate Tuurem
+				q(9990, {	-- Investigate Tuurem
 					["provider"] = { "n", 18484 },	-- Wind Trader Lathrai
 					["maps"] = { SHATTRATH_CITY },
 					["coord"] = { 72.2, 30.7, SHATTRATH_CITY },
 					["sourceQuest"] = 10112,	-- A Personal Favor
 				}),
-				q(9951,  {	-- It's Watching You! -- aa
+				q(9951, {	-- It's Watching You! -- aa
 					["provider"] = { "n", 18424 },	-- Warden Treelos
 					["coords"] = {
 						{ 43.4, 22.4, TEROKKAR_FOREST },
@@ -469,7 +469,7 @@ _.Zones =
 					["provider"] = { "n", 22365 },	-- Ethan
 					["coord"] = { 37.7, 51.3, TEROKKAR_FOREST },
 				}),
-				q(9993,  {	-- Olemba Seed Oil
+				q(9993, {	-- Olemba Seed Oil
 					["provider"] = { "n", 18385 },	-- Rakoria
 					["coord"] = { 50.1, 44.9, TEROKKAR_FOREST },
 					["races"] = HORDE_ONLY,
@@ -478,7 +478,7 @@ _.Zones =
 						9796,	-- News from Zangarmarsh
 					},
 				}),
-				q(9992,  {	-- Olemba Seeds
+				q(9992, {	-- Olemba Seeds
 					["provider"] = { "n", 18390 },	-- Ros'eleth
 					["coord"] = { 57.4, 55.4, TEROKKAR_FOREST },
 					["races"] = ALLIANCE_ONLY,
@@ -564,7 +564,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
-				q(9968,  {	-- Strange Energy
+				q(9968, {	-- Strange Energy
 					["provider"] = { "n", 18446 },	-- Earthbinder Tavgren
 					["coord"] = { 44.3, 26.3, TEROKKAR_FOREST },
 					["sourceQuests"] = {
@@ -575,12 +575,12 @@ _.Zones =
 						39188,	-- Hero's Call: Terokkar Forest!
 					},
 				}),
-				q(9986,  {	-- Stymying the Arakkoa (A)
+				q(9986, {	-- Stymying the Arakkoa (A)
 					["provider"] = { "n", 18389 },	-- Thander
 					["coord"] = { 57.8, 54.2, TEROKKAR_FOREST },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(9987,  {	-- Stymying the Arakkoa (H)
+				q(9987, {	-- Stymying the Arakkoa (H)
 					["provider"] = { "n", 18386 },	-- Rokag
 					["coord"] = { 49.0, 44.6, TEROKKAR_FOREST },
 					["races"] = HORDE_ONLY,
@@ -768,7 +768,7 @@ _.Zones =
 						i(25936),	-- Terokkar Tablet of Vim
 					},
 				}),
-				q(9998,  {	-- Unruly Neighbors
+				q(9998, {	-- Unruly Neighbors
 					["provider"] = { "n", 18387 },	-- Bertelm
 					["coord"] = { 58.2, 54.8, TEROKKAR_FOREST },
 					["races"] = ALLIANCE_ONLY,
@@ -853,13 +853,13 @@ _.Zones =
 						i(25975),	-- Wolf Hunter's Guise
 					},
 				}),
-				q(9994,  {	-- What Are These Things? (A)
+				q(9994, {	-- What Are These Things? (A)
 					["provider"] = { "n", 18446 },	-- Earthbinder Tavgren
 					["coord"] = { 44.3, 26.3, TEROKKAR_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 9990,	-- Investigate Tuurem
 				}),
-				q(9995,  {	-- What Are These Things? (H)
+				q(9995, {	-- What Are These Things? (H)
 					["provider"] = { "n", 18446 },	-- Earthbinder Tavgren
 					["coord"] = { 44.3, 26.3, TEROKKAR_FOREST },
 					["races"] = HORDE_ONLY,
@@ -875,20 +875,20 @@ _.Zones =
 						i(25971),	-- Stout Oak Longbow
 					},
 				}),
-				q(9961,  {	-- What's Wrong at Cenarion Thicket?
+				q(9961, {	-- What's Wrong at Cenarion Thicket?
 					["provider"] = { "n", 18459 },	-- Jenai Starwhisper
 					["coord"] = { 57.0, 53.6, TEROKKAR_FOREST },
 					["maps"] = { ZANGARMARSH },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
-				q(9960,  {	-- What's Wrong at Cenarion Thicket?
+				q(9960, {	-- What's Wrong at Cenarion Thicket?
 					["provider"] = { "n", 18447 },	-- Tooki
 					["coord"] = { 50.0, 45.8, TEROKKAR_FOREST },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
-				q(9957,  {	-- What's Wrong at Cenarion Thicket?
+				q(9957, {	-- What's Wrong at Cenarion Thicket?
 					["qg"] = 17834,	-- Lethyn Moonfire
 					["coord"] = { 78.6, 63.0, ZANGARMARSH },
 					["maps"] = { ZANGARMARSH },
@@ -907,7 +907,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 10039,	-- Speak with Scout Neftis
 				}),
-				q(9979,  {	-- Wind Trader Lathrai
+				q(9979, {	-- Wind Trader Lathrai
 					["provider"] = { "n", 18482 },	-- Empoor
 					["sourceQuest"] = 9978,	-- By Any Means Necessary
 					["coords"] = {
@@ -959,13 +959,13 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(9975),	-- BETA Primal Magic
 		q(9976),	-- BETA Primal Magic
 		q(9952),	-- BETA Prospector Balmoral
-		q(9980,  {	-- BETA Rescue Deirom!
+		q(9980, {	-- BETA Rescue Deirom!
 			i(25967),	-- Eagle Crested Pauldrons
 			i(25968),	-- Shalassi Sentry's Epaulets
 			i(25969),	-- Rapscallion's Touch
 			i(25970),	-- Shalassi Oracle's Sandals
 		}),
-		q(9981,  {	-- BETA Rescue Deirom!
+		q(9981, {	-- BETA Rescue Deirom!
 			i(25967),	-- Eagle Crested Pauldrons
 			i(25968),	-- Shalassi Sentry's Epaulets
 			i(25969),	-- Rapscallion's Touch

@@ -54,6 +54,14 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 					},
 					["lvl"] = lvlsquish(61, 10, 61),
 				}),
+				q(29571, {	-- Defending the Wilds
+					["qg"] = 18074,	-- Elementalist Morgh <The Earthen Ring>
+					["coord"] = { 60.6, 22.4, NAGRAND },
+					["timeline"] = { "added 4.3.0.14732" },
+					["maps"] = { NAGRAND },
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(63, 10, 63),
+				}),
 				q(9717, {	-- Oh, It's On!
 					["qg"] = 17857,	-- T'shu
 					["coord"] = { 19.4, 49.8, ZANGARMARSH },

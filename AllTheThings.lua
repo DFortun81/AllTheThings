@@ -1529,7 +1529,7 @@ local IsQuestFlaggedCompletedForObject = function(t)
 	-- account-mode: any character is viable to complete the quest, so alt quest completion shouldn't count for this quest
 	-- this quest cannot be obtained if any altQuest is completed on this character and not tracking as account mode
 	-- If the quest has an altQuest which was completed on this character, return shared completed
-	if not acctMode and t.altcollected then
+	if not app.MODE_DEBUG_OR_ACCOUNT and t.altcollected then
 		return 2;
 	end
 	-- If the quest is repeatable, then check other things to determine if it has ever been completed
@@ -1539,7 +1539,7 @@ local IsQuestFlaggedCompletedForObject = function(t)
 		end
 		-- can an alt quest of a repeatable quest be permanent?
 		-- if not considering account-mode, consider the quest completed once if any altquest was also completed
-		if not acctMode and t.altQuests then
+		if not app.MODE_DEBUG_OR_ACCOUNT and t.altQuests then
 			-- If the quest has an altQuest which was completed on this character, return shared completed
 			for i,altQuestID in ipairs(t.altQuests) do
 				-- any altQuest completed on this character, return shared completion
@@ -1556,7 +1556,7 @@ local IsQuestFlaggedCompletedForObject = function(t)
 				return 1;
 			end
 			-- if not considering account-mode tracking, consider the quest completed once if any altquest was also completed
-			if not acctMode and t.altQuests then
+			if not app.MODE_DEBUG_OR_ACCOUNT and t.altQuests then
 				-- If the quest has an altQuest which was completed on this character, return shared completed
 				local isCollected;
 				for i,altQuestID in ipairs(t.altQuests) do
@@ -1583,7 +1583,7 @@ local IsQuestFlaggedCompletedForObject = function(t)
 			end
 
 			-- only consider altquest completion if not on account-mode
-			if wqt_local and not acctMode and t.altQuests then
+			if wqt_local and not app.MODE_DEBUG_OR_ACCOUNT and t.altQuests then
 				local isCollected;
 				for i,altQuestID in ipairs(t.altQuests) do
 					-- any altQuest completed on this character, return shared completion
@@ -3628,9 +3628,10 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						-- convert maps to a MapID
 						if field == "maps" then
 							field = "mapID";
+							-- app.PrintTable(id);
 							id = id[1];
 						end
-						local locationGroup = app.SearchForObject(field, id) or (field == "mapID" and C_Map_GetMapInfo(id));
+						local locationGroup = app.SearchForObject(field, id) or (id and field == "mapID" and C_Map_GetMapInfo(id));
 						local locationName = locationGroup and (locationGroup.name or locationGroup.text);
 						-- print("contains info",group.itemID,field,id,nestedMapGroup,nestedMapName)
 						if locationName then
@@ -3641,6 +3642,8 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							else
 								right = locationName .. " " .. right;
 							end
+						-- else
+							-- print("No Location name for item",group.itemID,id,field)
 						end
 					end
 					tinsert(info, { left = item.prefix .. left, right = right });
@@ -6793,7 +6796,7 @@ end
 app.OnUpdateReputationRequired = function(t)
 	-- The only non-regular update processing this group should have
 	-- is if the User is not in Deubg/Account and should not see it due to the reputation requirement not being met
-	if not app.MODE_DEBUG and not app.MODE_ACCOUNT and t.minReputation and (select(6, GetFactionInfoByID(t.minReputation[1])) or 0) < t.minReputation[2] then
+	if not app.MODE_DEBUG_OR_ACCOUNT and t.minReputation and (select(6, GetFactionInfoByID(t.minReputation[1])) or 0) < t.minReputation[2] then
 		t.visible = false;
 		return true;
 	end
@@ -6951,7 +6954,7 @@ local fields = {
 	["collected"] = function(t)
 		if app.CurrentCharacter.FlightPaths[t.flightPathID] then return 1; end
 		if app.AccountWideFlightPaths and ATTAccountWideData.FlightPaths[t.flightPathID] then return 2; end
-		if app.MODE_ACCOUNT or app.MODE_DEBUG then return false; end
+		if app.MODE_DEBUG_OR_ACCOUNT then return false; end
 		if t.altQuests then
 			for i,questID in ipairs(t.altQuests) do
 				if IsQuestFlaggedCompleted(questID) then
@@ -7983,35 +7986,69 @@ local itemFields = {
 		return app.CollectibleAchievements or t.collectibleAsCost;
 	end,
 	["collectibleAsCost"] = function(t)
-		if t.parent and t.parent.saved then return false; end
-		local id, results;
-		-- Search by modItemID if possible for accuracy
-		if t.modItemID and t.modItemID ~= t.itemID then
-			id = t.modItemID;
-			results = app.SearchForField("itemIDAsCost", id);
-		end
-		-- If no results, search by plain itemID
-		if not results and t.itemID then
-			id = t.itemID;
-			results = app.SearchForField("itemIDAsCost", id);
-		end
-		if results and #results > 0 then
-			for _,ref in pairs(results) do
-				-- different itemID, OR same itemID with different modID is allowed
-				if (ref.itemID ~= id or (ref.modItemID and ref.modItemID ~= t.modItemID)) and
-					app.RecursiveGroupRequirementsFilter(ref) and
-					-- don't include items which are from something the current character cannot complete
-					not GetRelativeValue(t, "altcollected") then
-					if (ref.collectible and not ref.collected) or (ref.total and ref.total > 0 and ref.total < ref.progress) then
+		if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved then return false; end
+		if not t.costCollectibles then
+			local results, id;-- = rawget(t, "collectibleResults");
+			-- if results then
+			-- 	print("Existing collectibleAsCost Results",t.key,t[t.key],#results)
+			-- end
+			-- Search by modItemID if possible for accuracy
+			if t.modItemID and t.modItemID ~= t.itemID then
+				id = t.modItemID;
+				results = app.SearchForField("itemIDAsCost", id);
+				-- rawset(t, "collectibleResults", results);
+			end
+			-- If no results, search by plain itemID
+			if not results and t.itemID then
+				id = t.itemID;
+				results = app.SearchForField("itemIDAsCost", id);
+				-- rawset(t, "collectibleResults", results);
+			end
+			if results and #results > 0 then
+				local filteredCost;
+				for _,ref in pairs(results) do
+					-- different itemID, OR same itemID with different modID is allowed
+					if (ref.itemID ~= id or (ref.modItemID and ref.modItemID ~= t.modItemID)) and
+						-- is not a parent of the cost group itself
+						not GetRelativeField(t, "parent", ref) then
+						-- track this item as a cost collectible
+						if not t.costCollectibles then t.costCollectibles = { ref }
+						else tinsert(t.costCollectibles, ref); end
+						-- account or debug, skip filter/exclusion logic
+						if app.MODE_DEBUG_OR_ACCOUNT or
+							-- otherwise don't include items which are from something the current character cannot complete
+							(not GetRelativeValue(t, "altcollected") and app.RecursiveGroupRequirementsFilter(ref)) then
+							-- Used as a cost for something which is collectible itself
+							if ref.collectible then
+								filteredCost = true;
+							-- Used as a cost for something which has a total
+							elseif ref.total and ref.total > 0 then
+								filteredCost = true;
+							end
+						end
+					end
+				end
+				return filteredCost;
+			elseif t.metaAfterFailure then
+				setmetatable(t, t.metaAfterFailure);
+			end
+		else
+			for _,ref in pairs(t.costCollectibles) do
+				-- account or debug, skip filter/exclusion logic
+				if app.MODE_DEBUG_OR_ACCOUNT or
+					-- otherwise don't include items which are from something the current character cannot complete
+					(not GetRelativeValue(t, "altcollected") and app.RecursiveGroupRequirementsFilter(ref)) then
+					-- Used as a cost for something which is collectible itself
+					if ref.collectible then
+						return true;
+					-- Used as a cost for something which has a total
+					elseif ref.total and ref.total > 0 then
 						return true;
 					end
 				end
 			end
-			return false;
-		elseif t.metaAfterFailure then
-			setmetatable(t, t.metaAfterFailure);
-			return false;
 		end
+		return false;
 	end,
 	["collectibleAsCostAfterFailure"] = app.ReturnFalse,
 	["collectibleAsFaction"] = function(t)
@@ -8030,50 +8067,76 @@ local itemFields = {
 		return t.collectedAsCost;
 	end,
 	["collectedAsCost"] = function(t)
-		-- local LOG = t.itemID == 76402 and t.itemID;
-		-- if LOG then print("Logging Costs for",LOG) end
-		local id, results;
-		-- Search by modItemID if possible for accuracy
-		if t.modItemID and t.modItemID ~= t.itemID then
-			id = t.modItemID;
-			results = app.SearchForField("itemIDAsCost", id);
-		end
-		-- If no results, search by plain itemID
-		if not results and t.itemID then
-			id = t.itemID;
-			results = app.SearchForField("itemIDAsCost", id);
-		end
-		if results and #results > 0 then
-			-- if LOG then print("Found Cost Results",#results) end
-			for _,ref in pairs(results) do
-				-- TODO: why is this so weird
-				-- ensure this result has updated itself prior to determining if a cost is required for it
-				-- if ref.parent then app.UpdateGroup(ref.parent, ref); end
-				-- if LOG then print("Cost Result",ref.key,ref[ref.key]) end
-				-- if LOG then print("-- Info: total",ref.total,"prog",ref.progress,"altcollected",ref.altcollected,"collectible",ref.collectible,"collected",ref.collected) end
-				-- different itemID, OR same itemID with different modID is allowed
-				if (ref.itemID ~= id or (ref.modItemID and ref.modItemID ~= t.modItemID)) and app.RecursiveGroupRequirementsFilter(ref) then
-					-- TODO: maybe use this instead eventually
-					-- if not app.IsComplete(ref) then
-					-- 	return false;
-					-- end
-					-- Used as a cost for something which is collectible itself and not collected
-					if ref.collectible and not ref.collected then
-						-- if LOG then print("Cost Required via Collectible") end
-						return false;
-					-- Used as a cost for something which has an incomplete progress
-					elseif ref.total and ref.total > 0 and ref.progress < ref.total and
-						-- is account or debug mode or the thing is not altcollected
-						(app.MODE_DEBUG or app.MODE_ACCOUNT or not ref.altcollected) and
-						-- is not a parent of the cost group itself
-						not GetRelativeField(t, "parent", ref) then
-						-- if LOG then print("Cost Required via Total/Prog") end
-						return false;
-					end
+		if not t.costCollectibles then return; end
+		-- local LOG = t.s;
+		for _,ref in pairs(t.costCollectibles) do
+			-- account or debug, skip filter/exclusion logic
+			if app.MODE_DEBUG_OR_ACCOUNT or
+				-- otherwise don't include items which are from something the current character cannot complete
+				(not GetRelativeValue(t, "altcollected") and app.RecursiveGroupRequirementsFilter(ref)) then
+				-- Used as a cost for something which is collectible itself and not collected
+				-- if LOG then print("check collectible/collected",LOG,ref.key,ref[ref.key]) end
+				if ref.collectible and not ref.collected then
+					-- if LOG then print("Cost Required via Collectible") end
+					return false;
+				-- Used as a cost for something which has an incomplete progress
+				elseif ref.total and ref.total > 0 and ref.progress < ref.total then
+					-- if LOG then print("Cost Required via Total/Prog") end
+					return false;
 				end
 			end
-			return true;
 		end
+		return true;
+
+
+		-- -- local LOG = t.itemID == 23247 and t.itemID;
+		-- -- if LOG then print("Logging Costs for",LOG) end
+		-- local results, id;-- = rawget(t, "collectibleResults");
+		-- -- if results then
+		-- -- 	print("Existing collectedAsCost Results",t.key,t[t.key],#results)
+		-- -- end
+		-- -- Search by modItemID if possible for accuracy
+		-- if not results and t.modItemID and t.modItemID ~= t.itemID then
+		-- 	id = t.modItemID;
+		-- 	results = app.SearchForField("itemIDAsCost", id);
+		-- end
+		-- -- If no results, search by plain itemID
+		-- if not results and t.itemID then
+		-- 	id = t.itemID;
+		-- 	results = app.SearchForField("itemIDAsCost", id);
+		-- end
+		-- if results and #results > 0 then
+		-- 	-- if LOG then print("Found Cost Results",#results) end
+		-- 	for _,ref in pairs(results) do
+		-- 		-- TODO: why is this so weird
+		-- 		-- ensure this result has updated itself prior to determining if a cost is required for it
+		-- 		-- if ref.parent then app.UpdateGroup(ref.parent, ref); end
+		-- 		-- if LOG then print("Cost Result",ref.key,ref[ref.key]) end
+		-- 		-- if LOG then print("-- Info: total",ref.total,"prog",ref.progress,"altcollected",ref.altcollected,"collectible",ref.collectible,"collected",ref.collected) end
+		-- 		-- different itemID, OR same itemID with different modID is allowed
+		-- 		if (ref.itemID ~= id or (ref.modItemID and ref.modItemID ~= t.modItemID)) and app.RecursiveGroupRequirementsFilter(ref) then
+		-- 			-- TODO: maybe use this instead eventually
+		-- 			-- if not app.IsComplete(ref) then
+		-- 			-- 	return false;
+		-- 			-- end
+		-- 			-- Used as a cost for something which is collectible itself and not collected
+		-- 			-- print("check collectible/collected")
+		-- 			if ref.collectible and not ref.collected then
+		-- 				-- if LOG then print("Cost Required via Collectible") end
+		-- 				return false;
+		-- 			-- Used as a cost for something which has an incomplete progress
+		-- 			elseif ref.total and ref.total > 0 and ref.progress < ref.total and
+		-- 				-- is account or debug mode or the thing is not altcollected
+		-- 				(app.MODE_DEBUG_OR_ACCOUNT or not ref.altcollected) and
+		-- 				-- is not a parent of the cost group itself
+		-- 				not GetRelativeField(t, "parent", ref) then
+		-- 				-- if LOG then print("Cost Required via Total/Prog") end
+		-- 				return false;
+		-- 			end
+		-- 		end
+		-- 	end
+		-- 	return true;
+		-- end
 	end,
 	["collectedAsCostAfterFailure"] = function(t)
 
@@ -11671,7 +11734,7 @@ end
 -- determines whether an object may be considered collectible for the current character based on the 'customCollect' value(s)
 app.CheckCustomCollects = function(t)
 	-- no customCollect, or Account/Debug mode then disregard
-	if app.MODE_DEBUG or app.MODE_ACCOUNT or not t.customCollect then return true; end
+	if app.MODE_DEBUG_OR_ACCOUNT or not t.customCollect then return true; end
 	for _,c in ipairs(t.customCollect) do
 		if not app.CurrentCharacter.CustomCollects[c] then
 			return false;

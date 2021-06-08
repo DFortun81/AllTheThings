@@ -5,7 +5,7 @@
 _.PVP =
 {
 	n(-9979, {	-- Cataclysm
-	--	["g"] = bubbleDown({["u"] = 12}, {
+		["g"] = bubbleDown({["u"] = 12}, {
 			n(-672, {	-- Vicious Gladiator: Season 9
 				n(-9983, {	-- Honor Gear
 					cl(DEATHKNIGHT, {
@@ -4226,6 +4226,6 @@ _.PVP =
 					}),
 				}),
 			}),
-	--	}),
+		}),
 	}),
 };

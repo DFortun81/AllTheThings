@@ -67,6 +67,9 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, ach(887, {	-- Merciless Nether Drake
 				un(REMOVED_FROM_GAME, i(34092)),	-- Merciless Nether Drake
 			})),
+			un(REMOVED_FROM_GAME, ach(13632, {	-- Notoroious Gladiator's Proto-Drake
+				un(REMOVED_FROM_GAME, i(156881)),	-- Notoroious Gladiator's Proto-Drake
+			})),
 			un(REMOVED_FROM_GAME, ach(879)),	-- Old School Ride
 			un(REMOVED_FROM_GAME, ach(8707, {	-- Prideful Gladiator's Cloud Serpent
 				un(REMOVED_FROM_GAME, i(104327)),	-- Prideful Gladiator's Cloud Serpent
@@ -88,6 +91,9 @@ _.Achievements =
 			ach(14816, {	-- Sinful Gladiator's Soul Eater
 				i(183937),	-- Sinful Gladiator's Soul Eater
 			}),
+			un(REMOVED_FROM_GAME, ach(13202, {	-- Sinister Gladiator's Proto-Drake
+				un(REMOVED_FROM_GAME, i(156880)),	-- Sinister Gladiator's Proto-Drake
+			})),
 			un(REMOVED_FROM_GAME, ach(886, {	-- Swift Nether Drake
 				un(REMOVED_FROM_GAME, i(30609)),	-- Swift Nether Drake
 			})),

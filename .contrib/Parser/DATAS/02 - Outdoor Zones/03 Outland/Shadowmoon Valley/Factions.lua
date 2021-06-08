@@ -6,7 +6,7 @@ _.Zones =
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(SHADOWMOON_VALLEY, {
 			n(FACTIONS, {
-				faction(1015),	-- Netherwing
+				applyclassicphase(TBC_PHASE_THREE_NETHERWING, faction(1015)),	-- Netherwing
 			}),
 		}),
 	})),

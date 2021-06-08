@@ -1396,6 +1396,7 @@ _.Zones =
 					},
 				}),
 				q(29439, {	-- The Call of the World-Shaman
+					["isBreadcrumb"] = true,
 					["provider"] = { "n", 45226 },	-- Naraat the Earthspeaker
 					["coord"] = { 74.4, 18.8, 84 },
 					["races"] = ALLIANCE_ONLY,

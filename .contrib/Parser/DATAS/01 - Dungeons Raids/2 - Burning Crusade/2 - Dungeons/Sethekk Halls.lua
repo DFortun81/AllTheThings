@@ -135,6 +135,9 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 					["timeline"] = { "added 4.3.0.14942" },
 					["cr"] = 19428,	-- Cobalt Serpent
 				}),
+				i(29669, {	-- Pattern: Shadow Armor Kit
+					["cr"] = 18320,	-- Time-Lost Shadowmage
+				}),
 				i(25731, {	-- Pattern: Stylin' Crimson Hat
 					["cr"] = 18322,	-- Sethekk Ravenguard
 				}),

@@ -598,7 +598,7 @@ _.Zones =
 							["cost"] = { { "i", 78184, 1 }, },	-- Chest of the Corrupted Conqueror
 						}),
 						i(78726, {	-- Breastplate of Radiant Glory
-							["cost"] = { { "i", 78726, 1 }, },	-- Chest of the Corrupted Conqueror
+							["cost"] = { { "i", 78184, 1 }, },	-- Chest of the Corrupted Conqueror
 						}),
 						i(77091),	-- Cameo of Terrible Memories
 						i(78827, {	-- Chestguard of Radiant Glory
@@ -1877,7 +1877,7 @@ _.Zones =
 				n(12784,  {	-- Lieutenant Jackspring <Legacy Weapon Quartermaster>
 					["coord"] = { 75.2, 67.2, 84 },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["g"] = bubbleDown({["u"] = 12}, {
 						i(18825, {	-- Grand Marshal's Aegis
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
@@ -1941,12 +1941,12 @@ _.Zones =
 						i(23454, {	-- Grand Marshal's Warhammer
 							["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
 						}),
-					},
+					}),
 				}),
 				n(12783,  {	-- Lieutenant Karter
 					["coord"] = { 76.2, 65.6, 84 },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["g"] = bubbleDown({["u"] = 12}, {
 						i(29465, {	-- Black Battlestrider Mount
 							["cost"] = { { "i", 137642, 15 }, },	-- 15x Mark of Honor
 						}),
@@ -1966,7 +1966,7 @@ _.Zones =
 							["cost"] = { { "i", 137642, 15 }, },	-- 15x Mark of Honor
 						}),
 						un(REMOVED_FROM_GAME, i(18242)),	-- Reins of the Black War Tiger. Pre 2.0 Version
-					},
+					}),
 				}),
 				n(23446,  {	-- Lieutenant Tristia -- BC Vendor for Trinkets
 					-- The NPC ID got reused many times. This is the BC Version, items listed under PvP>BC
@@ -2731,7 +2731,7 @@ _.Zones =
 				n(73190,  {	-- Necrolord Sipe
 					["coord"] = { 76.8, 65.6, 84 },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["g"] = bubbleDown({["u"] = 12}, {
 						i(70909, {	-- Reins of the Vicious War Steed
 							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
 						}),
@@ -2762,7 +2762,7 @@ _.Zones =
 						i(143648, {	-- Vicious War Turtle
 							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
 						}),
-					},
+					}),
 				}),
 				n(65068,  {	-- Old Whitenose
 					["coord"] = { 67.8, 18.4, 84 },
@@ -2847,7 +2847,7 @@ _.Zones =
 					["itemID"] = 137642,	-- Mark of Honor
 					["coord"] = { 75.4, 67.0, 84 },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["g"] = bubbleDown({["u"] = 12}, {
 						-- Head
 						i(16465, {	-- Field Marshal's Chain Helm
 							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
@@ -3225,7 +3225,7 @@ _.Zones =
 						i(16437, {	-- Marshal's Silk Footwraps
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-					},
+					}),
 				}),
 				n(8665,   {	-- Shylenai
 					["description"] = "Appears in Stormwind after War of Thorns.",

@@ -204,6 +204,15 @@ settings.Initialize = function(self)
 	setmetatable(AllTheThingsSettingsPerCharacter.Filters, FilterSettingsBase);
 	FilterSettingsBase.__index = app.Presets[app.Class] or app.Presets.ALL;
 
+	-- force re-enable of optional filters which become not optional
+	-- (any filterID's here must be 'true' in all class presets)
+	local reEnableFilters = { 50 };
+	for _,filterID in ipairs(reEnableFilters) do
+		if not AllTheThingsSettingsPerCharacter.Filters[filterID] then
+			AllTheThingsSettingsPerCharacter.Filters[filterID] = nil;
+		end
+	end
+
 	self.ContainsSlider:SetValue(self:GetTooltipSetting("ContainsCount") or 25);
 	self.LocationsSlider:SetValue(self:GetTooltipSetting("Locations") or 5);
 	self.MainListScaleSlider:SetValue(self:GetTooltipSetting("MainListScale"));
@@ -690,6 +699,7 @@ settings.UpdateMode = function(self, doRefresh)
 
 		app.MODE_DEBUG = nil;
 	end
+	app.MODE_DEBUG_OR_ACCOUNT = app.MODE_DEBUG or app.MODE_ACCOUNT;
 	if self:Get("Show:CompletedGroups") then
 		app.GroupVisibilityFilter = app.NoFilter;
 	else

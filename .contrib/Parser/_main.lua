@@ -7,6 +7,7 @@ HATED, HOSTILE, UNFRIENDLY, NEUTRAL, FRIENDLY, HONORED, REVERED, EXALTED = -4200
 
 -- Map Constants for quick and easy replacement when we can get mapIDs on live!
 -- NOTE: All of these must be changed!
+-- These are accurate for Retail, and of course most are completely different in Classic because Blizzard
 -- Raids (Classic)
 BLACKWING_LAIR = 287;
 MOLTEN_CORE = 232;
@@ -15,6 +16,13 @@ ONYXIAS_LAIR = 248;
 RUINS_OF_AHNQIRAJ = 247;
 TEMPLE_OF_AHNQIRAJ = 320;
 ZULGURUB = 337;
+
+-- Dungeons (Classic)
+BLACKROCK_DEPTHS = 242;
+BLACKROCK_SPIRE = 616;
+DIRE_MAUL = 69;
+SCHOLOMANCE = 476;
+STRATHOLME = 317;
 
 -- Raids (TBC)
 KARAZHAN = 350;
@@ -52,22 +60,58 @@ STRANGLETHORN_VALE = nil;	-- 1434 Classic
 KALIMDOR = 12;	-- Confirmed!
 ASHENVALE = 63;	-- Confirmed!
 AZSHARA = 76;	-- Confirmed!
+BLACKFATHOM_DEEPS = 221;
+BLACKFATHOM_DEEPS_LEVEL2 = 222;
+BLACKFATHOM_DEEPS_LEVEL3 = 223;
 CAVERNS_OF_TIME = 75;	-- Confirmed!
+DARKSHORE = 62;
 DUSTWALLOW_MARSH = 70;	-- Confirmed!
+FELWOOD = 77;
 FERALAS = 69;	-- Confirmed!
+MOONGLADE = 80;
+NORTHERN_BARRENS = 10;
 ORGRIMMAR = 85;	-- Confirmed!
 SILITHUS = 81;	-- Confirmed!
+SOUTHERN_BARRENS = 199;
+TANARIS = 71;
+TELDRASSIL = 57;
+THE_BARRENS = NORTHERN_BARRENS;
+THUNDER_BLUFF = 88;
+UNGORO_CRATER = 78;
+WINTERSPRING = 83;
 
 -- Eastern Kingdoms
+ALTERAC_MOUNTAINS = 1416;	-- Confirmed!
+ARATHI_HIGHLANDS = 14;
+BADLANDS = 15;
 BLACKROCK_MOUNTAIN = 33;
 BLACKROCK_MOUNTAIN_LEVEL2 = 34;
 BLACKROCK_MOUNTAIN_LEVEL3 = 35;
 BLASTED_LANDS = 17;	-- Confirmed!
-EASTERN_KINGDOMS = 13;	-- Confirmed!
-ALTERAC_MOUNTAINS = 1416;	-- Confirmed!
+BURNING_STEPPES = 36;
 DEADWIND_PASS = 42;	-- Confirmed!
+DUN_MOROGH = 27;
 DUSKWOOD = 47;	-- Confirmed!
+EASTERN_KINGDOMS = 13;	-- Confirmed!
+EASTERN_PLAGUELANDS = 23;
+HILLSBRAD_FOOTHILLS = 25;
+IRONFORGE = 87;
+LOCH_MODAN = 48;
+RUINS_OF_GILNEAS = 217;
+SEARING_GORGE = 32;
+SHADOWFANG_KEEP = 310;
+SHADOWFANG_KEEP_LEVEL2 = 311;
+SHADOWFANG_KEEP_LEVEL3 = 312;
+SHADOWFANG_KEEP_LEVEL4 = 313;
+SHADOWFANG_KEEP_LEVEL5 = 314;
+SHADOWFANG_KEEP_LEVEL6 = 315;
+SHADOWFANG_KEEP_LEVEL7 = 316;
+STORMWIND_CITY = 84;
 THE_HINTERLANDS = 26;	-- Confirmed!
+TIRISFAL_GLADES = 18;
+TWILIGHT_HIGHLANDS = 241;
+UNDERCITY = 90;
+WESTERN_PLAGUELANDS = 22;
 
 -- Outland & TBC Additions
 OUTLAND = 101;	-- Confirmed!
@@ -266,8 +310,65 @@ TAILORING = 197;
 NEVER_IMPLEMENTED = 1;
 REMOVED_FROM_GAME = 2;
 BLIZZARD_BALANCE = 35;
+HOLIDAY_DAY_OF_THE_DEAD = 27;
+HOLIDAY_FEAST_OF_WINTER_VEIL = 29;
 HOLIDAY_LOVEINTHEAIR = 18;
 HOLIDAY_NOBLEGARDEN = 19;
+HOLIDAY_PILGRIMS_BOUNTY = 28;
+
+-- Classic Phases
+PHASE_ONE = 11;
+PHASE_ONE_DIREMAUL = 1101;
+PHASE_TWO = 12;
+PHASE_THREE = 13;
+PHASE_FOUR = 14;
+PHASE_FIVE = 15;
+PHASE_FIVE_WAR_EFFORT = 1501;
+PHASE_FIVE_GONG = 1502;
+PHASE_FIVE_WAR = 1503;
+PHASE_FIVE_CATCH_UP = 1504;
+PHASE_SIX = 16;
+PHASE_SIX_SCOURGE_INVASION = 1601;
+PHASE_SIX_SILITHYST = 1602;
+PHASE_SIX_CLASSICERA = 1603;
+
+-- TBC Classic Phases
+TBC_PHASE_ONE = 17;
+TBC_PHASE_ONE_DARKPORTAL = 1701;
+TBC_PHASE_TWO = 18;
+TBC_PHASE_THREE = 19;
+TBC_PHASE_THREE_NETHERWING = 1901;
+TBC_PHASE_THREE_SKYGUARD = 1902;
+TBC_PHASE_FOUR = 20;
+TBC_PHASE_FIVE = 21;
+TBC_PHASE_SIX = 22;
+
+-- Wrath Classic Phases
+WRATH_PHASE_ONE = 30;
+WRATH_PHASE_TWO = 31;
+WRATH_PHASE_THREE = 32;
+WRATH_PHASE_FOUR = 33;
+WRATH_PHASE_FIVE = 34;
+WRATH_PHASE_SIX = 35;
+
+-- NOTE: Reason for this is to show when stuff is going away eventually.
+-- Cataclysm Classic Phases
+CATA_PHASE_ONE = 40;
+
+-- Mists of Pandaria Classic Phases
+MOP_PHASE_ONE = 50;
+
+-- Warlords of Draenor Classic Phases
+WOD_PHASE_ONE = 60;
+
+-- Legion Classic Phases
+LEGION_PHASE_ONE = 70;
+
+-- Battle for Azeroth Phases
+BFA_PHASE_ONE = 80;
+
+-- Shadowlands Phases
+SHADOWLANDS_PHASE_ONE = 90;
 
 ItemClassInfo = {
 	{
@@ -692,36 +793,39 @@ icon = function(path)
 end
 
 -- Classic / Retail Helper Functions
+-- #if ANYCLASSIC
 isanyclassic = function(modifier, data)
-	-- #if ANYCLASSIC
 	return modifier(data);
-	-- #else
-	return data;
-	-- #endif
 end
 applyclassicphase = function(phase, data)
-	-- #if ANYCLASSIC
 	return bubbleDown({ ["u"] = phase }, data);
-	-- #else
-	return data;
-	-- #endif
 end
 applylegacyclassicphase = function(phase, data)
-	-- #if ANYCLASSIC
 	return bubbleDown({ ["u"] = phase }, data);
-	-- #else
-	return bubbleDown({ ["u"] = REMOVED_FROM_GAME }, data);
-	-- #endif
 end
 lvlsquish = function(originalLvl, shadowlandsLvl, retailLvl)
-	-- #if ANYCLASSIC
 	return originalLvl;
-	-- #elseif AFTER SHADOWLANDS
-	return shadowlandsLvl;
-	-- #else
-	return retailLvl or originalLvl;
-	-- #endif
 end
+-- #else
+isanyclassic = function(modifier, data)
+	return data;
+end
+applyclassicphase = function(phase, data)
+	return data;
+end
+applylegacyclassicphase = function(phase, data)
+	return bubbleDown({ ["u"] = REMOVED_FROM_GAME }, data);
+end
+-- #if AFTER SHADOWLANDS
+lvlsquish = function(originalLvl, shadowlandsLvl, retailLvl)
+	return shadowlandsLvl;
+end
+-- #else
+lvlsquish = function(originalLvl, shadowlandsLvl, retailLvl)
+	return retailLvl or originalLvl;
+end
+-- #endif
+-- #endif
 
 -- SHORTCUTS for Object Class Types
 artifact = function(id, t)								-- Create an ARTIFACT Object
@@ -881,13 +985,15 @@ end
 mi = function(id, t)									-- Create a MISSION Object (Alternative)
 	return struct("missionID", id, t);
 end
+-- #if BEFORE WRATH
 mount = function(id, t)									-- Create a MOUNT Object, which is just a spellID with a filter.
-	-- #if BEFORE WRATH
 	return struct("spellID", id, t);
-	-- #else
-	return struct("mountID", id, t);
-	-- #endif
 end
+-- #else
+mount = function(id, t)									-- Create a MOUNT Object, which is just a spellID with a filter.
+	return struct("mountID", id, t);
+end
+-- #endif
 npc = function(id, t)									-- Create an NPC Object (negative indicates that it is custom)
 	return struct("npcID", id, t);
 end

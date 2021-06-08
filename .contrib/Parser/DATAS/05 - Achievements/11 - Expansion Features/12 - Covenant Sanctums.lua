@@ -52,8 +52,7 @@ _.Achievements =
 				ach(14836),		-- Unwavering Bond
 				ach(14637),		-- Your Covenant's Flavor
 			}),
-			n(-939, {	-- Covenant: Kyrian
-				-- These are only available to Kyrian covenant members
+			n(-939, bubbleDown({["customCollect"] = { "SL_COV_KYR" }},{	-- Covenant: Kyrian
 				ach(14853),	-- All The Colors of the Painbow
 				ach(14860),	-- Bare Necessities
 				ach(14851),	-- Bastion of Protection
@@ -136,9 +135,8 @@ _.Achievements =
 					ach(14348),	-- The Path Towards Ascension 20
 					ach(14349),	-- The Path Towards Ascension 24
 				}),
-			}),
-			n(-920, {	-- Covenant: Necrolord
-				-- These are only available to Necrolord covenant members
+			})),
+			n(-920, bubbleDown({["customCollect"] = { "SL_COV_NEC" }},{	-- Covenant: Necrolord
 				ach(14833, {	-- Fashion Abomination
 					crit(1),	-- Chef Hat
 					crit(2),	-- Dapper Top Hat
@@ -271,9 +269,8 @@ _.Achievements =
 					}),
 					ach(14753),	-- It's a Wrap
 				}),
-			}),
-			n(-929, {	-- Covenant: Night Fae
-				-- These are only available to Night Fae covenant members
+			})),
+			n(-929, bubbleDown({["customCollect"] = { "SL_COV_NFA" }},{	-- Covenant: Night Fae
 				ach(14789),	-- All Spirits Great and Small
 				ach(14676),	-- Divine Spirit Savior
 				ach(14780),	-- Meditation Master
@@ -283,9 +280,8 @@ _.Achievements =
 				ach(14675),	-- Spirit Talker
 				ach(14677),	-- Spiritual Observations
 				ach(14670),	-- That's the Spirit
-			}),
-			n(-949, {	-- Covenant: Venthyr
-				-- These are only available to Venthyr covenant members
+			})),
+			n(-949, bubbleDown({["customCollect"] = { "SL_COV_VEN" }},{	-- Covenant: Venthyr
 				ach(14749, {	-- Rendle's Big Day
 					crit(1),	-- Crown of the Righteous
 					crit(2),	-- Fae Revel Masque
@@ -410,7 +406,7 @@ _.Achievements =
 					}),
 					ach(14683),	-- Dredger Style
 				}),
-			}),
+			})),
 		}),
 	}),
 };

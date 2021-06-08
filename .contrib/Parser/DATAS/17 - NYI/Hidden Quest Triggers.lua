@@ -4177,6 +4177,8 @@ _.HiddenQuestTriggers =
 		q(62522),	-- Ember Court End - (Choofa:Elated / Grandmaster Vole:Elated / Hunt-Captain Korayn:Elated)
 		q(62489),	-- Ember Court End - (Kleia&Pelagos / Mikanikos / Alexandros / Sika, all elated - Mikanikos only one i hadn't done before.  also got We Happy Few, so possibly one of these is related to that) - next week's automatic assigned pickups were Choofa, Droman Aliothe, Rendle and Cudgelface, and Lady Moonberry
 		q(62505),	-- ""
+		q(62487),	-- Ember Court End - Baroness/H-C K/Choofa/Stonehead Elated
+		q(62503),	-- Ember Court End - Baroness/H-C K/Choofa/Stonehead Elated
 		q(62529),	-- ""
 		q(62488),	-- Ember Court End - (Lady Moonberry / Rendle&Cudgelface as first-time guests, Elated and Very Happy respectively, had Casual maxed)
 		q(62494),	-- ""

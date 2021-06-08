@@ -1390,7 +1390,6 @@ _.Zones =
 						}),
 					--	Shadowlands S1 (removed)
 						n(-939, sharedData({["customCollect"] = { "SL_COV_KYR" }},{	-- Covenant: Kyrian
-							-- These are only available to Kyrian covenant members
 							i(177851, {	-- Sinful Gladiator's Ceremonial Sword
 								["cost"] = { { "c", 1602, 1350 } },
 								["u"] = REMOVED_FROM_GAME,
@@ -1449,7 +1448,6 @@ _.Zones =
 							}),
 						})),
 						n(-920, sharedData({["customCollect"] = { "SL_COV_NEC" }},{	-- Covenant: Necrolord
-							-- These are only available to Necrolord covenant members
 							i(183446, {	-- Sinful Gladiator's Cleaver
 								["cost"] = { { "c", 1602, 1800 } },
 								["u"] = REMOVED_FROM_GAME,
@@ -1500,7 +1498,6 @@ _.Zones =
 							}),
 						})),
 						n(-929, sharedData({["customCollect"] = { "SL_COV_NFA" }},{	-- Covenant: Night Fae
-							-- These are only available to Night Fae covenant members
 							i(179543, {	-- Sinful Gladiator's Bludgeon
 								["cost"] = { { "c", 1602, 1800 } },
 								["u"] = REMOVED_FROM_GAME,
@@ -1551,7 +1548,6 @@ _.Zones =
 							}),
 						})),
 						n(-949, sharedData({["customCollect"] = { "SL_COV_VEN" }},{	-- Covenant: Venthyr
-							-- These are only available to Venthyr covenant members
 							i(182406, {	-- Sinful Gladiator's Battlestave
 								["cost"] = { { "c", 1602, 1800 } },
 								["u"] = REMOVED_FROM_GAME,

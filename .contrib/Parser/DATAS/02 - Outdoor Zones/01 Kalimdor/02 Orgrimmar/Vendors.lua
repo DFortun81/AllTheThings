@@ -320,7 +320,7 @@ _.Zones =
 				n(73151,  {	-- Deathguard Netharian <Combatant Mount Quartermaster>
 					["races"] = HORDE_ONLY,
 					["coord"] = { 41.8, 73.0, 85 },
-					["g"] = {
+					["g"] = bubbleDown({["u"] = 12}, {
 						i(70910, {	-- Horn of the Vicious War Wolf Mount
 							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
 						}),
@@ -351,7 +351,7 @@ _.Zones =
 						i(140348, {	-- Vicious Warstrider Mount
 							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
 						}),
-					},
+					}),
 				}),
 				n(69333,  {	-- Disciple Jusi <Huojin Quartermaster>
 					["races"] = HORDE_ONLY,
@@ -430,7 +430,7 @@ _.Zones =
 				n(12795,  {	-- First Sergeant Hola'mahi <Legacy Armor Quartermaster>
 					["races"] = HORDE_ONLY,
 					["coord"] = { 38.2, 72.6, 85 },
-					["g"] = {
+					["g"] = bubbleDown({["u"] = 12}, {
 						i(28377), 	-- Sergeant's Heavy Cloak
 						i(28378), 	-- Sergeant's Heavy Cape
 						i(16486), 	-- First Sergeant's Silk Cuffs
@@ -555,7 +555,7 @@ _.Zones =
 						i(18436), 	-- First Sergeant's Dragonhide Armguards
 						i(18437), 	-- First Sergeant's Silk Cuffs
 						i(18427), 	-- Sergeant's Cloak
-					},
+					}),
 				}),
 				n(50323,  {	-- Frizzo Villamar <Bilgewater Cartel Quartermaster>
 					["coord"] = { 50.0, 58.6, 85 },
@@ -1323,7 +1323,7 @@ _.Zones =
 							["cost"] = { { "i", 78184, 1 }, },	-- Chest of the Corrupted Conqueror
 						}),
 						i(78726, {	-- Breastplate of Radiant Glory
-							["cost"] = { { "i", 78726, 1 }, },	-- Chest of the Corrupted Conqueror
+							["cost"] = { { "i", 78184, 1 }, },	-- Chest of the Corrupted Conqueror
 						}),
 						i(77091),	-- Cameo of Terrible Memories
 						i(78827, {	-- Chestguard of Radiant Glory
@@ -2419,7 +2419,7 @@ _.Zones =
 					["coord"] = { 41.8, 72.6, 85 },
 					["itemID"] = 137642,	-- Mark of Honor
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["g"] = bubbleDown({["u"] = 12}, {
 						i(29466),	-- Black War Kodo
 						un(REMOVED_FROM_GAME, i(18247)),	-- Black War Kodo. Pre 2.0 Version
 						i(29469),	-- Horn of the Black War Wolf
@@ -2429,7 +2429,7 @@ _.Zones =
 						i(29472),	-- Whistle of the Black War Raptor
 						un(REMOVED_FROM_GAME, i(18246)),	-- Whistle of the Black War Raptor. Pre 2.0 Version
 						i(34129),	-- Swift Warstrider
-					},
+					}),
 				}),
 				n(52033,  {	-- Rogoc <Bloodthirsty Gladiator>
 					["coord"] = { 37.8, 71.6, 85 },
@@ -3295,7 +3295,7 @@ _.Zones =
 				n(12794,  {	-- Stone Guard Zarg <Legacy Weapon Quartermaster>
 					["coord"] = { 38.6, 72.8, 85 },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["g"] = bubbleDown({["u"] = 12}, {
 						i(18831, {	-- High Warlord's Battle Axe
 							["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
 						}),
@@ -3360,7 +3360,7 @@ _.Zones =
 							["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
 						}),
 						un(REMOVED_FROM_GAME, i(90819)),	-- High Warlord's Razor
-					},
+					}),
 				}),
 				n(46708,  {	-- Suja <Cooking Supplies>
 					["coord"] = { 56.6, 61.2, 85 },

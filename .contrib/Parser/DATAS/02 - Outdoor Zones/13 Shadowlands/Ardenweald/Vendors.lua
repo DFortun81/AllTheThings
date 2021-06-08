@@ -96,8 +96,7 @@ _.Zones =
 						i(175069, {	-- Theater Ticket
 							["cost"] = 2000,	-- 2 silver
 						}),
-						n(-929, {	-- Covenant: Night Fae
-							-- These are only available to Night Fae covenant members
+						n(-929, sharedData({["customCollect"] = { "SL_COV_NFA" }},{	-- Covenant: Night Fae
 							i(182662, {	-- Leafadore
 								["cost"] = { { "i", 163036, 250 } },
 							}),
@@ -107,7 +106,7 @@ _.Zones =
 							i(181304, {	-- Winterwoven Branches
 								["cost"] = { { "c", 1813, 3500 } },
 							}),
-						}),
+						})),
 					},
 				}),
 			}),

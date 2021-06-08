@@ -1,6 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+local ASARNAN_MALIJ_GROUPS = {};
 _.Zones =
 {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
@@ -8,20 +9,16 @@ _.Zones =
 			n(VENDORS, {
 				n(19540,  {	-- Asarnan <Enchanting Trainer>
 					["coord"] = { 44.2, 33.6, NETHERSTORM },
-					["g"] = {
-						i(20753),    -- Formula: Lesser Wizard Oil
-						i(20752),    -- Formula: Minor Mana Oil
-						i(20758),    -- Formula: Minor Wizard Oil
-						i(22307),    -- Pattern: Enchanted Mageweave Pouch
-					},
+					["g"] = ASARNAN_MALIJ_GROUPS,
 				}),
+				-- #if NOT ANYCLASSIC
 				n(26352,  {	-- Big Zokk Torquewrench Original BC S4 VENDOR
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				n(54649,  {	-- Big Zokk Torquewrench <Classic Weapons>
 					["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.|r",
 					["coord"] = { 33.2, 64.0, NETHERSTORM },
-					["g"] = {
+					["g"] = bubbleDown({["u"] = 12}, {
 						a(i(77549)),	-- Replica Grand Marshal's Demolisher
 						a(i(77550)),	-- Replica Grand Marshal's Swiftblade
 						a(i(77551)),	-- Replica Grand Marshal's Dirk
@@ -62,7 +59,7 @@ _.Zones =
 						h(i(77592)),	-- Replica High Warlord's Tome of Mending
 						h(i(77593)),	-- Replica High Warlord's Tome of Destruction
 						h(i(77597)),	-- Replica High Warlord's Shield Wall
-					},
+					}),
 				}),
 				n(34094, {	-- Grex Brainboiler <Veteran Arena Vendor> [Note: Yes, two NPCs with same name. One is removed]
 					["u"] = REMOVED_FROM_GAME,
@@ -890,6 +887,7 @@ _.Zones =
 						}),
 					},
 				}),
+				-- #endif
 				n(19536,  {	-- Dealer Jadyan <Exotic Weapons>
 					["coord"] = { 44.0, 36.6, NETHERSTORM },
 					["g"] = {
@@ -916,12 +914,7 @@ _.Zones =
 				}),
 				n(19537,  {	-- Dealer Malij <Enchanting Supplies>
 					["coord"] = { 44.2, 34.0, NETHERSTORM },
-					["g"] = {
-						i(20753),    -- Formula: Lesser Wizard Oil
-						i(20752),    -- Formula: Minor Mana Oil
-						i(20758),    -- Formula: Minor Wizard Oil
-						i(22307),    -- Pattern: Enchanted Mageweave Pouch
-					},
+					["g"] = ASARNAN_MALIJ_GROUPS,
 				}),
 				n(20980,  {	-- Dealer Rashaad <Exotic Creatures>
 					["coord"] = { 43.4, 35.2, NETHERSTORM },
@@ -936,6 +929,7 @@ _.Zones =
 						i(10393),	-- Undercity Cockroach (PET!)
 					},
 				}),
+				-- #if NOT ANYCLASSIC
 				n(34089, {	-- Grex Brainboiler <Veteran Arena Vendor> Original WOTLK S6 ELITE VENDOR
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
@@ -1050,7 +1044,7 @@ _.Zones =
 				n(40209,  {	-- Grex Brainboiler <Classic Alliance Cloth & Leather>
 					["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase. |r",
 					["coord"] = { 33.0, 64.0, NETHERSTORM },
-					["g"] = {
+					["g"] = bubbleDown({["u"] = 12}, {
 						i(77670),	-- Replica Field Marshal's Dragonhide Breastplate
 						i(77692),	-- Replica Field Marshal's Satin Mantle
 						i(77710),	-- Replica Field Marshal's Coronal
@@ -1150,7 +1144,7 @@ _.Zones =
 						i(77605),	-- Replica Sergeant Major's Dragonhide Armsplints
 						i(77640),	-- Replica Sergeant Major's Leather Armsplints
 						i(77787),	-- Replica Sergeant Major's Silk Cuffs
-					},
+					}),
 				}),
 				n(33918, {  -- Kezzik the Striker <Veteran Arena Vendor> [Note: Yes, two NPCs with same name. One is removed]
 					["u"] = REMOVED_FROM_GAME,
@@ -1810,6 +1804,7 @@ _.Zones =
 						}),
 					},
 				}),
+				-- #endif
 				n(21493,  {	-- Kablamm Farflinger <Transportation Engineer>
 					["requireSkill"] = 20222,	-- Goblin Engineering
 					["description"] = "Goblin Engineers can speak to Kablamm to learn the recipe.",
@@ -1843,10 +1838,6 @@ _.Zones =
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(23155),	-- Design: Sparkling Azure Moonstone
-						i(23153, {	-- Design: Sparkling Azure Moonstone
-							["spellID"] = 0,	-- This is now available via 23155, need to delink the old plans from the recipe
-							["u"] = REMOVED_FROM_GAME,
-						}),
 						i(23150),	-- Design: Subtle Golden Draenite
 						i(25908),	-- Design: Swift Skyfire Diamond
 						i(28274),	-- Formula: Enchant Cloak - PvP Power
@@ -1862,11 +1853,14 @@ _.Zones =
 						i(25733), 	-- Pattern: Fel Leather Boots
 						i(25732), 	-- Pattern: Fel Leather Gloves
 						i(25734), 	-- Pattern: Fel Leather Leggings
-						i(23874),	-- Schematic: Elemental Seaforium Charge
-						un(REMOVED_FROM_GAME, i(29118)),	-- Smuggler's Ammo Pouch
+						applyclassicphase(TBC_PHASE_THREE, i(23874)),	-- Schematic: Elemental Seaforium Charge
+						i(29118, {	-- Smuggler's Ammo Pouch
+							["timeline"] = { "removed 4.0.1.12941" },
+						}),
 						i(29117),	-- Stormspire Vest
 					},
 				}),
+				-- #if NOT ANYCLASSIC
 				n(33918, {  -- Kezzik the Striker <Veteran Arena Vendor> Added in patch 3.1.1.9806
 					["u"] = REMOVED_FROM_GAME,
 				}),
@@ -3581,6 +3575,7 @@ _.Zones =
 						i(77822), 	-- Replica First Sergeant's Leather Armguards
 					},
 				}),
+				-- #3endif
 				n(20112,  {	-- Wind Trader Tuluman <Weapon Merchant>
 					["coord"] = { 34.6, 37.8, NETHERSTORM },
 					["g"] = {
@@ -3596,3 +3591,12 @@ _.Zones =
 		}),
 	})),
 };
+
+-- Add in the items that aren't locked by phase.
+local COMMON_ENCHANTING_RECIPES = {
+	i(20753),	-- Formula: Lesser Wizard Oil
+	i(20752),	-- Formula: Minor Mana Oil
+	i(20758),	-- Formula: Minor Wizard Oil
+	i(22307),	-- Pattern: Enchanted Mageweave Pouch
+};
+appendGroups(COMMON_ENCHANTING_RECIPES, ASARNAN_MALIJ_GROUPS);
