@@ -36,10 +36,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(23807, {	-- Schematic: Adamantite Scope
-							["spellID"] = 30329,	-- Adamantite Scope
-							["requireSkill"] = ENGINEERING,
 							["isLimited"] = true,
-							["f"] = 200,
 						}),
 					},
 				}),
@@ -106,22 +103,13 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(23596, {	-- Plans: Adamantite Breastplate
-							["spellID"] = 29606,	-- Adamantite Breastplate
-							["requireSkill"] = BLACKSMITHING,
 							["isLimited"] = true,
-							["f"] = 200,
 						}),
 						i(23594, {	-- Plans: Adamantite Plate Bracers
-							["spellID"] = 29603,	-- Adamantite Plate Bracers
-							["requireSkill"] = BLACKSMITHING,
 							["isLimited"] = true,
-							["f"] = 200,
 						}),
 						i(23595, {	-- Plans: Adamantite Plate Gloves
-							["spellID"] = 29605,	-- Adamantite Plate Gloves
-							["requireSkill"] = BLACKSMITHING,
 							["isLimited"] = true,
-							["f"] = 200,
 						}),
 					},
 				}),
@@ -129,17 +117,9 @@ _.Zones =
 					["coord"] = { 36.8, 55.0, SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(25847, {	-- Plans: Eternium Rod
-							["spellID"] = 32657,	-- Eternium Rod
-							["requireSkill"] = BLACKSMITHING,
-							["timeline"] = { "removed 5.0.4.10000" },
-							["f"] = 200,
-						}),
+						i(25847),	-- Plans: Eternium Rod
 						i(23638, {	-- Plans: Lesser Ward of Shielding
-							["spellID"] = 29728,	-- Lesser Ward of Shielding
-							["requireSkill"] = BLACKSMITHING,
 							["isLimited"] = true,
-							["f"] = 200,
 						}),
 					},
 				}),
