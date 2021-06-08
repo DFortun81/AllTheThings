@@ -5,7 +5,7 @@
 -- TODO: split into separate faction achievs?
 _.Achievements =
 {
-	n(-9968, {	-- Legacy		NOTE: MOST WILL NEED THE un(2) TAG
+	n(-9968, {	-- Legacy
 		n(-9958, {	-- Player vs Player
 			un(REMOVED_FROM_GAME, ach(11468)),		-- Alive for Five
 			un(REMOVED_FROM_GAME, ach(2191)),		-- Ancient Courtyard Protector

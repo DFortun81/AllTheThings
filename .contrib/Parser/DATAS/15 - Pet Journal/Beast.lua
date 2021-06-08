@@ -119,7 +119,7 @@ _.PetJournal =
 		p(2089),			-- Infernal Pyreclaw
 		p(2852),			-- Jade Defender
 		p(2795),			-- Jenafur
-		un(29, p(2622)),	-- Jingles
+		un(HOLIDAY_FEAST_OF_WINTER_VEIL, p(2622)),	-- Jingles
 		p(699),				-- Jumping Spider
 		p(678),				-- Jungle Grub
 		p(438),				-- King Snake

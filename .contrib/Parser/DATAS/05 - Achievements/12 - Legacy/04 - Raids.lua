@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	n(-9968, {	-- Legacy		NOTE: MOST WILL NEED THE un(2) TAG
+	n(-9968, {	-- Legacy
 		n(-10044, {	-- Raids
 			un(REMOVED_FROM_GAME, ach(2919)),	-- A Quick Shave (10 player)
 			un(REMOVED_FROM_GAME, ach(4080, {	-- A Tribute to Dedicated Insanity

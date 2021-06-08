@@ -7,11 +7,11 @@ _.Achievements =
 	n(-9962, {	-- World Events
 		n(-10022, {	-- Pilgrim's Bounty
 			ach(3579, {	-- "FOOD FIGHT!"
-				["u"] = 28,	-- Pilgrim's Bounty Filter
+				["u"] = HOLIDAY_PILGRIMS_BOUNTY,
 			}),
 			ach(3576, {	-- Now We're Cookin' (A)
 				["races"] = ALLIANCE_ONLY,
-				["u"] = 28,	-- Pilgrim's Bounty Filter
+				["u"] = HOLIDAY_PILGRIMS_BOUNTY,
 				["g"] = {
 					crit(1),	-- Candied Sweet Potato
 					crit(2),	-- Cranberry Chutney
@@ -22,7 +22,7 @@ _.Achievements =
 			}),
 			ach(3577, {	-- Now We're Cookin' (H)
 				["races"] = HORDE_ONLY,
-				["u"] = 28,	-- Pilgrim's Bounty Filter
+				["u"] = HOLIDAY_PILGRIMS_BOUNTY,
 				["g"] = {
 					crit(1),	-- Candied Sweet Potato
 					crit(2),	-- Cranberry Chutney
@@ -33,7 +33,7 @@ _.Achievements =
 			}),
 			ach(3556, {	-- Pilgrim's Paunch (A)
 				["races"] = ALLIANCE_ONLY,
-				["u"] = 28,	-- Pilgrim's Bounty Filter
+				["u"] = HOLIDAY_PILGRIMS_BOUNTY,
 				["g"] = {
 					crit(1),	-- Darnassus
 					crit(2),	-- The Exodar
@@ -43,7 +43,7 @@ _.Achievements =
 			}),
 			ach(3557, {	-- Pilgrim's Paunch (H)
 				["races"] = HORDE_ONLY,
-				["u"] = 28,	-- Pilgrim's Bounty Filter
+				["u"] = HOLIDAY_PILGRIMS_BOUNTY,
 				["g"] = {
 					crit(1),	-- Orgrimmar
 					crit(2),	-- Silvermoon City
@@ -53,7 +53,7 @@ _.Achievements =
 			}),
 			ach(3580, {	-- Pilgrim's Peril (A)
 				["races"] = ALLIANCE_ONLY,
-				["u"] = 28,	-- Pilgrim's Bounty Filter
+				["u"] = HOLIDAY_PILGRIMS_BOUNTY,
 				["g"] = {
 					crit(1),	-- Darnassus
 					crit(2),	-- The Exodar
@@ -63,7 +63,7 @@ _.Achievements =
 			}),
 			ach(3581, {	-- Pilgrim's Peril (H)
 				["races"] = HORDE_ONLY,
-				["u"] = 28,	-- Pilgrim's Bounty Filter
+				["u"] = HOLIDAY_PILGRIMS_BOUNTY,
 				["g"] = {
 					crit(1),	-- Orgrimmar
 					crit(2),	-- Silvermoon City
@@ -73,7 +73,7 @@ _.Achievements =
 			}),
 			ach(3596, {	-- Pilgrim's Progress (A)
 				["races"] = ALLIANCE_ONLY,
-				["u"] = 28,	-- Pilgrim's Bounty Filter
+				["u"] = HOLIDAY_PILGRIMS_BOUNTY,
 				["g"] = {
 					crit(1),	-- Can't Get Enough Turkey
 					crit(2),	-- Don't Forget The Stuffing!
@@ -84,7 +84,7 @@ _.Achievements =
 			}),
 			ach(3597, {	-- Pilgrim's Progress (H)
 				["races"] = HORDE_ONLY,
-				["u"] = 28,	-- Pilgrim's Bounty Filter
+				["u"] = HOLIDAY_PILGRIMS_BOUNTY,
 				["g"] = {
 					crit(1),	-- Can't Get Enough Turkey
 					crit(2),	-- Don't Forget The Stuffing!
@@ -101,13 +101,13 @@ _.Achievements =
 				crit(5),	-- Spice Bread Stuffing
 			}),
 			ach(3582, {	-- Terokkar Turkey Time
-				["u"] = 28,	-- Pilgrim's Bounty Filter
+				["u"] = HOLIDAY_PILGRIMS_BOUNTY,
 			}),
 			ach(3578, {	-- The Turkinator
-				["u"] = 28,	-- Pilgrim's Bounty Filter
+				["u"] = HOLIDAY_PILGRIMS_BOUNTY,
 			}),
 			ach(3559, {	-- Tukey Lackey
-				["u"] = 28,	-- Pilgrim's Bounty Filter
+				["u"] = HOLIDAY_PILGRIMS_BOUNTY,
 				["g"] = {
 					crit(1),	-- Blood Elf Rogue
 					crit(2),	-- Dwarf Rogue

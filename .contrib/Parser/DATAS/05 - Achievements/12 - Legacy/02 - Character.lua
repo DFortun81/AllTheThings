@@ -4,7 +4,7 @@
 
 _.Achievements =
 {
-	n(-9968, {	-- Legacy		NOTE: MOST WILL NEED THE un(2) TAG
+	n(-9968, {	-- Legacy
 		n(-10051, {	-- Character
 			un(REMOVED_FROM_GAME, ach(10765, {	-- Brokenly Epic (ilvl 840)
 				un(REMOVED_FROM_GAME, ach(9708)),	-- Savagely Epic (ilvl 640)

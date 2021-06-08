@@ -1665,9 +1665,9 @@ _.Achievements =
 			}))),
 			ach(14191, {							-- Servant of N'Zoth
 				["races"] = HORDE_ONLY,
-				["u"] = 2,							-- REMOVED in 9.0.1
+				["u"] = REMOVED_FROM_GAME,			-- REMOVED in 9.0.1
 				["g"] = {
-					un(2, title(414)),					-- <Name>, Servant of N'Zoth
+					un(REMOVED_FROM_GAME, title(414)),	-- <Name>, Servant of N'Zoth
 				},
 			}),
 			ach(12568, {							-- The Alliance Slayer

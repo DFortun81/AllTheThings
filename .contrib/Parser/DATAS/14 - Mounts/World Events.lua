@@ -16,7 +16,7 @@ _.Mounts =
 		un(26, i(37012)),	-- Headless Horseman's Mount
 		i(133543),			-- Infinite Timereaver
 		i(129922),			-- Ironbound Wraithcharger
-		un(29, i(128671)),	-- Minion of Grumpus
+		un(HOLIDAY_FEAST_OF_WINTER_VEIL, i(128671)),	-- Minion of Grumpus
 		un(31, i(172012)),	-- Obsidian Worldbreaker
 		un(31, i(172022, {	-- Stormpike Battle Ram
 			["races"] = ALLIANCE_ONLY,

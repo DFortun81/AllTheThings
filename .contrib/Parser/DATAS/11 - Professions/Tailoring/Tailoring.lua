@@ -453,7 +453,7 @@ profession(TAILORING, {
 					["timeline"] = { "added 2.3.0.7382" },
 					["recipeID"] = 44950,
 					-- #if NOT ANYCLASSIC
-					["u"] = 29,
+					["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL,
 					-- #endif
 				}),
 				{
@@ -494,7 +494,7 @@ profession(TAILORING, {
 					["timeline"] = { "added 2.3.0.7382" },
 					["recipeID"] = 44958,
 					-- #if NOT ANYCLASSIC
-					["u"] = 29,
+					["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL,
 					-- #endif
 				}),
 				{
@@ -1036,7 +1036,7 @@ profession(TAILORING, {
 					["name"] = "Green Holiday Shirt",
 					["recipeID"] = 21945,
 					-- #if NOT ANYCLASSIC
-					["u"] = 29,
+					["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL,
 					-- #endif
 				},
 				{

@@ -2,12 +2,12 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 
-_.Holidays = bubbleDown({["u"] = 29},
+_.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 {
 	holiday(235485, {	-- Feast of Winter Veil
 		n(ACHIEVEMENTS, {
 			ach(1691,  {	-- Merrymaker
-				un(29, title(102)),	-- Merrymaker
+				un(HOLIDAY_FEAST_OF_WINTER_VEIL, title(102)),	-- Merrymaker
 				ach(277),	-- 'Tis the Season
 				ach(1690),	-- A Frosty Shake
 				ach(1686, {	-- Bros. Before Ho Ho Ho's (A)

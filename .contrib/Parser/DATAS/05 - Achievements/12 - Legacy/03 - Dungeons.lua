@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	n(-9968, {	-- Legacy		NOTE: MOST WILL NEED THE un(2) TAG
+	n(-9968, {	-- Legacy
 		n(-10043, {	-- Dungeons
 			un(REMOVED_FROM_GAME, ach(8882, {	-- Auchindoun: Gold
 				un(REMOVED_FROM_GAME, ach(8881)),		-- Auchindoun: Silver

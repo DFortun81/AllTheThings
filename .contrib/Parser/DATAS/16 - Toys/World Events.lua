@@ -114,7 +114,7 @@ _.Toys =
 		}),
 		n(-59, {    -- Day of the Dead
 			["achievementID"] = 3456,	-- Dead Man's Party
-			["u"] = 27,
+			["u"] = HOLIDAY_DAY_OF_THE_DEAD,
 			["g"] = {
 				i(116856),	-- "Blooming Rose" Contender's Costume
 				i(116888),	-- "Night Demon" Contender's Costume
@@ -125,7 +125,7 @@ _.Toys =
 		}),
 		n(-61, {    -- Feast of Winter Veil
 			["achievementID"] = 1691,	-- Merrymaker
-			["u"] = 29,
+			["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL,
 			["g"] = {
 				i(54343), 	-- Blue Crashin' Thrashin' Racer Controller
 				i(172223),	-- Crashin' Thrashin' Battleship [A]
@@ -234,9 +234,9 @@ _.Toys =
 		}),
 		n(-60, {    -- Pilgrim's Bounty
 			["achievementID"] = 3478,	-- Pilgrim
-			["u"] = 28,
+			["u"] = HOLIDAY_PILGRIMS_BOUNTY,
 			["g"] = {
-				un(28, i(116400)), 	-- Silver-Plated Turkey Shooter
+				un(HOLIDAY_PILGRIMS_BOUNTY, i(116400)), 	-- Silver-Plated Turkey Shooter
 			},
 		}),
 		n(-55, {    -- Pirates' Day
