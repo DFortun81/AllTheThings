@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(WINTERSPRING, {	-- Winterspring
+		m(WINTERSPRING, {
 			n(QUESTS, {
 				q(28782, {	-- A Bird of Legend (granted automatically. Coords are relative to player position)
 					["sourceQuest"] = 28745,	-- Screechy Keen

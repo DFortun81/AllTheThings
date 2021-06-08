@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(WINTERSPRING, {	-- Winterspring
+		m(WINTERSPRING, {
 			n(ZONEDROPS, {
 				i(34535),	-- Azure Whelpling
 				i(16223, {	-- Formula: Enchant Weapon - Icy Chill

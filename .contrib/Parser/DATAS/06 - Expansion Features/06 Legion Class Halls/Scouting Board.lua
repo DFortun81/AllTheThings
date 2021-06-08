@@ -207,11 +207,11 @@ _.ExpansionFeatures =
 						}),
 					}),
 					mission(1503, {	-- Council of War
-                        q(45162, {	-- We Brought the Hammer
+						q(45162, {	-- We Brought the Hammer
 							["u"] = REMOVED_FROM_GAME,	-- until Brawler's Guild comes back someday
-                            ["provider"] = { "i", 142553 },	-- Tuft of Dwarvish Beard
-                        }),
-                    }),
+							["provider"] = { "i", 142553 },	-- Tuft of Dwarvish Beard
+						}),
+					}),
 					mission(1387, {	-- Friends, Not Food
 						i(140316),	-- Firebat Pup
 					}),
@@ -219,29 +219,29 @@ _.ExpansionFeatures =
 						i(129165),	-- Barnacle-Encrusted Gem
 					}),
 					mission(1513, {	-- I've Got A Strange Feeling About This
-                        q(45312, {	-- You Beat the Ball of Meat
+						q(45312, {	-- You Beat the Ball of Meat
 							["u"] = REMOVED_FROM_GAME,	-- until Brawler's Guild comes back someday
-                            ["provider"] = { "i", 143590 },	-- Hunk of Meatball
-                            ["g"] = {
+							["provider"] = { "i", 143590 },	-- Hunk of Meatball
+							["g"] = {
 								follower(986),	-- Meatball
-                            },
-                        }),
-                    }),
+							},
+						}),
+					}),
 					mission(1504, {	-- It's Clean Up Time
-                        q(45163, {	-- Clearing Up
+						q(45163, {	-- Clearing Up
 							["u"] = REMOVED_FROM_GAME,	-- until Brawler's Guild comes back someday
-                            ["provider"] = { "i", 142554 },	-- Broken Handle
-                        }),
-                    }),
+							["provider"] = { "i", 142554 },	-- Broken Handle
+						}),
+					}),
 					mission(1386, {	-- It's so FLUFFY!
 						i(140320),	-- Corgnelius
 					}),
 					mission(1512, {	-- Master of Shadows
-                        q(45304, {	-- Attacking the Darkness
+						q(45304, {	-- Attacking the Darkness
 							["u"] = REMOVED_FROM_GAME,	-- until Brawler's Guild comes back someday
-                            ["provider"] = { "i", 143561 },	-- Exhausted Shadow Candle
-                        }),
-                    }),
+							["provider"] = { "i", 143561 },	-- Exhausted Shadow Candle
+						}),
+					}),
 					mission(1506, {	-- Once More Into the Fray
 						q(45173, {	-- Desperate Times
 							["provider"] = { "i", 143329 },	-- Dire Summons

@@ -3555,7 +3555,7 @@ _.NeverImplemented =
 				["spellID"] = 0,	-- Schematic wasn't implemented, spell is a reward from a quest now
 				["u"] = NEVER_IMPLEMENTED,
 			},
-				i(37589),	-- Hyper-Powered Mote Extractor (Retrieving)
+			i(37589),	-- Hyper-Powered Mote Extractor (Retrieving)
 		}),
 		prof(ENCHANTING, {
 			i(84582),	-- Formula: Enchant Weapon - Windsong (never added version)
