@@ -573,6 +573,22 @@ local TIER_FIVE_GROUPS = applyclassicphase(TBC_PHASE_TWO, {
 		}),
 	}),
 });
+local MADAME_RUBY_GROUPS = {
+	i(28282, {	-- Formula: Enchant Shield - Major Stamina
+		["isLimited"] = true,
+	}),
+	i(22565, {	-- Formula: Large Prismatic Shard
+		["isLimited"] = true,
+	}),
+	i(25849),	-- Formula: Runed Eternium Rod
+	i(22562, {	-- Formula: Superior Mana Oil
+		["isLimited"] = true,
+	}),
+	i(22563, {	-- Formula: Superior Wizard Oil
+		["isLimited"] = true,
+	}),
+};
+local ZURII_YURIAL_GROUPS = {};
 _.Zones =
 {
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
@@ -583,35 +599,19 @@ _.Zones =
 					["minReputation"] = { 1011, NEUTRAL },	-- Lower City, Neutral.
 					["groups"] = {
 						i(23591, {	-- Plans: Adamantite Cleaver
-							["spellID"] = 29568,	-- Adamantite Cleaver
-							["requireSkill"] = BLACKSMITHING,
 							["isLimited"] = true,
-							["f"] = 200,
 						}),
 						i(23592, {	-- Plans: Adamantite Dagger
-							["spellID"] = 29569,	-- Adamantite Dagger
-							["requireSkill"] = BLACKSMITHING,
 							["isLimited"] = true,
-							["f"] = 200,
 						}),
 						i(23590, {	-- Plans: Adamantite Maul
-							["spellID"] = 29566,	-- Adamantite Maul
-							["requireSkill"] = BLACKSMITHING,
 							["isLimited"] = true,
-							["f"] = 200,
 						}),
 						i(23593, {	-- Plans: Adamantite Rapier
-							["spellID"] = 29571,	-- Adamantite Rapier
-							["requireSkill"] = BLACKSMITHING,
 							["isLimited"] = true,
-							["f"] = 200,
 						}),
 						i(25846, {	-- Plans: Adamantite Rod
-							["spellID"] = 32656,	-- Adamantite Rod
-							["timeline"] = { "removed 5.0.4.10000" },
-							["requireSkill"] = BLACKSMITHING,
 							["isLimited"] = true,
-							["f"] = 200,
 						}),
 					},
 				}),
@@ -643,6 +643,7 @@ _.Zones =
 						i(35345),	-- Evoker's Silk Handguards
 						i(28273),	-- Formula: Enchant Gloves - Major Healing
 						i(33153),	-- Formula: Enchant Gloves - Threat
+						i(22537),	-- Formula: Enchant Ring - Healing Power
 						i(28281),	-- Formula: Enchant Weapon - Major Healing
 						i(29175),	-- Gavel of Pure Light
 						i(35362),	-- Kodohide Helm
@@ -659,6 +660,9 @@ _.Zones =
 						i(35395),	-- Seer's Ringmail Shoulderpads
 						i(31781),	-- Sha'tar Tabard
 						i(35380),	-- Stalker's Chain Spaulders
+						i(30634, {	-- Warpforged Key
+							["timeline"] = { "removed 4.2.0.10000" },
+						}),
 						i(35375),	-- Wyrmhide Robe
 						i(29179),	-- Xi'ri's Gift
 					},
@@ -788,38 +792,17 @@ _.Zones =
 					["coord"] = { 66.2, 68.8, SHATTRATH_CITY },
 					["minReputation"] = { 1011, NEUTRAL },	-- Lower City, Neutral.
 					["groups"] = {
-						i(21892, {	-- Pattern: Bolt of Imbued Netherweave
-							["spellID"] = 26747,	-- Bolt of Imbued Netherweave
-							["requireSkill"] = TAILORING,
-							["f"] = 200,
-						}),
-						i(21893, {	-- Pattern: Imbued Netherweave Bag
-							["spellID"] = 26749,	-- Imbued Netherweave Bag
-							["requireSkill"] = TAILORING,
-							["f"] = 200,
-						}),
-						i(21896, {	-- Pattern: Netherweave Robe
-							["spellID"] = 26773,	-- Netherweave Robe
-							["requireSkill"] = TAILORING,
-							["f"] = 200,
-						}),
-						i(21897, {	-- Pattern: Netherweave Tunic
-							["spellID"] = 26774,	-- Netherweave Tunic
-							["requireSkill"] = TAILORING,
-							["f"] = 200,
-						}),
+						i(21892),	-- Pattern: Bolt of Imbued Netherweave
+						i(21893),	-- Pattern: Imbued Netherweave Bag
+						i(21896),	-- Pattern: Netherweave Robe
+						i(21897),	-- Pattern: Netherweave Tunic
 					},
 				}),
 				n(33633, {	-- Enchantress Andiala <Enchanting Trainer>
 					["coord"] = { 56.2, 74.4, SHATTRATH_CITY },
 					["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 					["timeline"] = { "added 3.1.0.9767" },
-					["groups"] = {
-						i(20753),	-- Formula: Lesser Wizard Oil
-						i(20752),	-- Formula: Minor Mana Oil
-						i(20758),	-- Formula: Minor Wizard Oil
-						i(22307),	-- Pattern: Enchanted Mageweave Pouch
-					},
+					["groups"] = ZURII_YURIAL_GROUPS,
 				}),
 				n(18525, {	-- G'eras
 					["coord"] = { 50.8, 42.4, SHATTRATH_CITY },
@@ -1050,50 +1033,13 @@ _.Zones =
 				n(19663, {	-- Madame Ruby <Enchanting Supplies>
 					["coord"] = { 63.6, 70.0, SHATTRATH_CITY },
 					["minReputation"] = { 1011, NEUTRAL },	-- Lower City, Neutral.
-					["groups"] = {
-						i(28282, {	-- Formula: Enchant Shield - Major Stamina
-							["isLimited"] = true,
-						}),
-						i(22565, {	-- Formula: Large Prismatic Shard
-							["spellID"] = 28022,	-- Large Prismatic Shard
-							["requireSkill"] = ENCHANTING,
-							["timeline"] = { "added 2.0.1.6180" },
-							-- #if ANYCLASSIC
-							["u"] = TBC_PHASE_ONE,
-							-- #endif
-							["isLimited"] = true,
-							["f"] = 200,
-						}),
-						i(20753),	-- Formula: Lesser Wizard Oil
-						i(20752),	-- Formula: Minor Mana Oil
-						i(20758),	-- Formula: Minor Wizard Oil
-						i(22562, {	-- Formula: Superior Mana Oil
-							["spellID"] = 28016,	-- Superior Mana Oil
-							["requireSkill"] = ENCHANTING,
-							["timeline"] = { "added 2.0.1.6180" },
-							-- #if ANYCLASSIC
-							["u"] = TBC_PHASE_ONE,
-							-- #endif
-							["isLimited"] = true,
-							["f"] = 200,
-						}),
-						i(22563, {	-- Formula: Superior Wizard Oil
-							["spellID"] = 28019,	-- Superior Wizard Oil
-							["requireSkill"] = ENCHANTING,
-							["timeline"] = { "added 2.0.1.6180" },
-							-- #if ANYCLASSIC
-							["u"] = TBC_PHASE_ONE,
-							-- #endif
-							["isLimited"] = true,
-							["f"] = 200,
-						}),
-						i(22307),	-- Pattern: Enchanted Mageweave Pouch
-					},
+					["groups"] = MADAME_RUBY_GROUPS,
 				}),
 				n(21655, {	-- Nakodu <Lower City Quartermaster>
 					["coord" ] = { 62.6, 69.0, SHATTRATH_CITY },
 					["minReputation"] = { 1011, NEUTRAL },	-- Lower City, Neutral.
 					["groups"] = {
+						i(30633),	-- Auchenai Key
 						i(35405),	-- Crusader's Ornamented Leggings
 						i(35412),	-- Crusader's Scaled Chestpiece
 						i(33157),	-- Design: Falling Star
@@ -1104,6 +1050,7 @@ _.Zones =
 						i(35331),	-- Dreadweave Mantle
 						i(35344),	-- Evoker's Silk Cowl
 						i(33148),	-- Formula: Enchant Cloak - Dodge
+						i(22538),	-- Formula: Enchant Ring - Stats
 						i(30832),	-- Gavel of Unearthed Secrets
 						i(35361),	-- Kodohide Gloves
 						i(30836),	-- Leggings of the Skettis Exile
@@ -1112,6 +1059,7 @@ _.Zones =
 						i(35335),	-- Mooncloth Mitts
 						i(35370),	-- Opportunist's Leather Tunic
 						i(30833),	-- Pattern: Cloak of Arcane Evasion
+						i(34200),	-- Pattern: Quiver of a Thousand Feathers
 						i(22910),	-- Recipe: Elixir of Major Shadow Power
 						i(30835),	-- Salvager's Hauberk
 						i(35340),	-- Satin Leggings
@@ -1357,10 +1305,7 @@ _.Zones =
 					["minReputation"] = { 1011, NEUTRAL },	-- Lower City, Neutral.
 					["groups"] = {
 						i(23574, {	-- Recipe: Transmute Primal Might
-							["spellID"] = 29688,	-- Transmute Primal Might
-							["requireSkill"] = ALCHEMY,
 							["isLimited"] = true,
-							["f"] = 200,
 						}),
 					},
 				}),
@@ -1378,20 +1323,10 @@ _.Zones =
 					["minReputation"] = { 1011, NEUTRAL },	-- Lower City, Neutral.
 					["groups"] = {
 						i(23799, {	-- Schematic: Adamantite Rifle
-							["spellID"] = 30313,	-- Adamantite Rifle
-							["requireSkill"] = ENGINEERING,
 							["isLimited"] = true,
-							["f"] = 200,
 						}),
 						i(32381, {	-- Schematic: Fused Wiring
-							["spellID"] = 39895,	-- Fused Wiring
-							["requireSkill"] = ENGINEERING,
 							["isLimited"] = true,
-							-- #if AFTER MOP
-							["u"] = REMOVED_FROM_GAME,
-							-- #else
-							["u"] = TBC_PHASE_ONE,
-							-- #endif
 						}),
 					},
 				}),
@@ -1403,49 +1338,39 @@ _.Zones =
 				n(18484, {	-- Wind Trader Lathrai
 					["coord"] = { 72.6, 31.6, SHATTRATH_CITY },
 					["groups"] = {
-						i(23815, {	-- Schematic: Adamantite Shell Machine
-							["spellID"] = 30347,	-- Adamantite Shell Machine
-							["timeline"] = { "removed 4.0.1.10000" },
-							["requireSkill"] = ENGINEERING,
+						applyclassicphase(TBC_PHASE_THREE, i(23815, {	-- Schematic: Adamantite Shell Machine
 							["isLimited"] = true,
-							["f"] = 200,
-						}),
+						})),
 						i(23816, {	-- Schematic: Fel Iron Toolbox
-							["spellID"] = 30348,	-- Fel Iron Toolbox
-							["requireSkill"] = ENGINEERING,
 							["isLimited"] = true,
-							["f"] = 200,
 						}),
 						i(23811, {	-- Schematic: White Smoke Flare
-							["spellID"] = 30341,	-- White Smoke Flare
-							["requireSkill"] = ENGINEERING,
 							["isLimited"] = true,
-							["f"] = 200,
 						}),
 					},
 				}),
 				n(19234, {	-- Yurial Soulwater <Enchanting Supplies>
 					["coord"] = { 44.6, 96.8, SHATTRATH_CITY },
 					["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
-					["groups"] = {
-						i(20753),	-- Formula: Lesser Wizard Oil
-						i(20752),	-- Formula: Minor Mana Oil
-						i(20758),	-- Formula: Minor Wizard Oil
-						i(22307),	-- Pattern: Enchanted Mageweave Pouch
-					},
+					["groups"] = ZURII_YURIAL_GROUPS,
 				}),
 				n(33676, {	-- Zurii <Enchanting Trainer>
 					["coord"] = { 36.4, 44.6, SHATTRATH_CITY },
 					["timeline"] = { "added 3.1.0.9767" },
 					["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
-					["groups"] = {
-						i(20753),	-- Formula: Lesser Wizard Oil
-						i(20752),	-- Formula: Minor Mana Oil
-						i(20758),	-- Formula: Minor Wizard Oil
-						i(22307),	-- Pattern: Enchanted Mageweave Pouch
-					},
+					["groups"] = ZURII_YURIAL_GROUPS,
 				}),
 			}),
 		}),
 	})),
 };
+
+-- Add in the items that aren't locked by phase.
+local COMMON_ENCHANTING_RECIPES = {
+	i(20753),	-- Formula: Lesser Wizard Oil
+	i(20752),	-- Formula: Minor Mana Oil
+	i(20758),	-- Formula: Minor Wizard Oil
+	i(22307),	-- Pattern: Enchanted Mageweave Pouch
+};
+appendGroups(COMMON_ENCHANTING_RECIPES, ZURII_YURIAL_GROUPS);
+appendGroups(COMMON_ENCHANTING_RECIPES, MADAME_RUBY_GROUPS);

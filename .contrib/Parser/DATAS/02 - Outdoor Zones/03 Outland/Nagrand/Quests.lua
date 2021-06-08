@@ -248,10 +248,6 @@ _.Zones =
 					["coord"] = { 77.2, 34.8, SHATTRATH_CITY },
 					["sourceQuest"] = 10004,	-- Patience and Understanding
 				}),
-				q(29571, {	-- Defending the Wilds
-					["provider"] = { "n", 18074 },	-- Elementalist Morgh <The Earthen Ring>
-					["coord"] = { 60.6, 22.4, NAGRAND },
-				}),
 				q(10108, {	-- Diplomatic Measures (A)
 					["provider"] = { "n", 18223 },	-- Mo'mor the Breaker
 					["coord"] = { 54.6, 72.2, NAGRAND },

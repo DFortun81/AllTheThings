@@ -394,6 +394,7 @@ _.Zones =
 					["requireSkill"] = BLACKSMITHING,
 					["coord"] = { 64.1, 71.5, SHATTRATH_CITY },
 					["provider"] = { "n", 115546 },	-- Lunelli
+					["timeline"] = { "timeline 7.0.3.21655" },
 					["g"] = {
 						i(142279),	-- Plans: Windforged Rapier
 						i(142283),	-- Plans: Skyforged Great Axe
@@ -439,6 +440,7 @@ _.Zones =
 					["requireSkill"] = BLACKSMITHING,
 					["coord"] = { 64.1, 71.5, SHATTRATH_CITY },
 					["provider"] = { "n", 115546 },	-- Lunelli
+					["timeline"] = { "added 7.0.3.21655" },
 					["g"] = {
 						i(142284),	-- Plans: Stoneforged Claymore
 						i(142287),	-- Plans: Great Earthforged Hammer
