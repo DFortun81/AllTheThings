@@ -132,6 +132,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 						i(29299),	-- Band of Eternity
 					},
 				}),
+				
 				q(11106, {	-- Defender No More
 					["qg"] = 19935,	-- Soridormi
 					["sourceQuests"] = {
@@ -234,6 +235,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 						i(29295),	-- Band of Eternity
 					},
 				}),
+				
 				q(11104, {	-- Restorer No More
 					["qg"] = 19935,	-- Soridormi
 					["sourceQuests"] = {
@@ -336,6 +338,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 						i(29306),	-- Band of Eternity
 					},
 				}),
+				
 				q(11103, {	-- Sage No More
 					["qg"] = 19935,	-- Soridormi
 					["sourceQuests"] = {
@@ -556,7 +559,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 						i(30977, {	-- Onslaught Greaves
 							["cost"] = { { "i", 31100, 1 } },	-- Leggings of the Forgotten Protector
 						}),
-
+						
 						-- Tank
 						i(30974, {	-- Onslaught Greathelm
 							["cost"] = { { "i", 31095, 1 } },	-- Helm of the Forgotten Protector
@@ -591,7 +594,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 						i(30993, {	-- Lightbringer Greaves
 							["cost"] = { { "i", 31098, 1 } },	-- Leggings of the Forgotten Conqueror
 						}),
-
+						
 						-- Tank
 						i(30987, {	-- Lightbringer Faceguard
 							["cost"] = { { "i", 31097, 1 } },	-- Helm of the Forgotten Conqueror
@@ -608,7 +611,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 						i(30995, {	-- Lightbringer Legguards
 							["cost"] = { { "i", 31098, 1 } },	-- Leggings of the Forgotten Conqueror
 						}),
-
+						
 						-- Healer
 						i(30988, {	-- Lightbringer Greathelm
 							["cost"] = { { "i", 31097, 1 } },	-- Helm of the Forgotten Conqueror
@@ -677,7 +680,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 						i(31067, {	-- Leggings of Absolution
 							["cost"] = { { "i", 31098, 1 } },	-- Leggings of the Forgotten Conqueror
 						}),
-
+						
 						-- Healer
 						i(31063, {	-- Cowl of Absolution
 							["cost"] = { { "i", 31097, 1 } },	-- Helm of the Forgotten Conqueror
@@ -712,7 +715,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 						i(31020, {	-- Skyshatter Legguards
 							["cost"] = { { "i", 31100, 1 } },	-- Leggings of the Forgotten Protector
 						}),
-
+						
 						-- Enhancement
 						i(31015, {	-- Skyshatter Cover
 							["cost"] = { { "i", 31095, 1 } },	-- Helm of the Forgotten Protector
@@ -729,7 +732,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 						i(31021, {	-- Skyshatter Pants
 							["cost"] = { { "i", 31100, 1 } },	-- Leggings of the Forgotten Protector
 						}),
-
+						
 						-- Restoration
 						i(31012, {	-- Skyshatter Helmet
 							["cost"] = { { "i", 31095, 1 } },	-- Helm of the Forgotten Protector
@@ -798,7 +801,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 						i(31046, {	-- Thunderheart Pants
 							["cost"] = { { "i", 31099, 1 } },	-- Leggings of the Forgotten Vanquisher
 						}),
-
+						
 						-- Feral
 						i(31039, {	-- Thunderheart Cover
 							["cost"] = { { "i", 31096, 1 } },	-- Helm of the Forgotten Vanquisher
@@ -815,7 +818,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 						i(31044, {	-- Thunderheart Leggings
 							["cost"] = { { "i", 31099, 1 } },	-- Leggings of the Forgotten Vanquisher
 						}),
-
+						
 						-- Restoration
 						i(31037, {	-- Thunderheart Helmet
 							["cost"] = { { "i", 31096, 1 } },	-- Helm of the Forgotten Vanquisher
@@ -882,36 +885,20 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 						["requireSkill"] = LEATHERWORKING,
 						["f"] = 200,
 					}),
-					i(32755, {	-- Pattern: Mantle of Nimble Thought
-						["spellID"] = 41206,	-- Mantle of Nimble Thought
-						["requireSkill"] = TAILORING,
-						["f"] = 200,
-					}),
+					i(32755),	-- Pattern: Mantle of Nimble Thought
 					i(32745, {	-- Pattern: Shoulderpads of Renewed Life
 						["spellID"] = 41157,	-- Shoulderpads of Renewed Life
 						["requireSkill"] = LEATHERWORKING,
 						["f"] = 200,
 					}),
-					i(32752, {	-- Pattern: Swiftheal Wraps
-						["spellID"] = 41207,	-- Swiftheal Wraps
-						["requireSkill"] = TAILORING,
-						["f"] = 200,
-					}),
+					i(32752),	-- Pattern: Swiftheal Wraps
 					i(32746, {	-- Pattern: Swiftstrike Bracers
 						["spellID"] = 41158,	-- Swiftstrike Bracers
 						["requireSkill"] = LEATHERWORKING,
 						["f"] = 200,
 					}),
-					i(32736, {	-- Plans: Swiftsteel Bracers
-						["spellID"] = 41132,	-- Swiftsteel Bracers
-						["requireSkill"] = BLACKSMITHING,
-						["f"] = 200,
-					}),
-					i(32739, {	-- Plans: Dawnsteel Shoulders
-						["spellID"] = 41135,	-- Dawnsteel Shoulders
-						["requireSkill"] = BLACKSMITHING,
-						["f"] = 200,
-					}),
+					i(32736),	-- Plans: Swiftsteel Bracers
+					i(32739),	-- Plans: Dawnsteel Shoulders
 					i(32609),	-- Boots of the Divine Light
 					i(32592),	-- Chestguard of Relentless Storms
 					i(32591),	-- Choker of Serrated Blades
