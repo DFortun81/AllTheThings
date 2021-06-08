@@ -310,7 +310,9 @@ _.Zones =
 						}),
 					},
 				}),
-				ach(14511),		-- Tour of Duty: Ardenweald
+				ach(14511, {		-- Tour of Duty: Ardenweald
+					["u"] = 12,		-- PvP
+				}),
 				ach(14313, {	-- Treasures of Ardenweald
 					crit(1, {	-- Aerto's Body
 						["questID"] = 61072,
