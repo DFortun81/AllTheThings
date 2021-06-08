@@ -10,7 +10,7 @@ _.Zones =
 					["description"] = "This vendor is only accessible when the Alliance controls Halaa.",
 					["coord"] = { 42.8, 42.6, NAGRAND },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
+					["groups"] = bubbleDown({["u"] = 12}, {	
 						i(24208, {	-- Design: Mystic Dawnstone
 							["isLimited"] = true,
 						}),
@@ -37,7 +37,7 @@ _.Zones =
 								{ "i", 26044, 20 },		-- 20x Halaa Research Token
 							},
 						}),
-					},
+					}),
 				}),
 				n(19017, {	-- Borto <Trade Supplies>
 					["coord"] = { 53.2, 71.8, NAGRAND },
