@@ -68,7 +68,6 @@ _.Mounts =
 		}),
 		i(140500),	-- Mechanized Lumber Extractor
 		i(156487),	-- Nightborne Manasaber (Horde)
-		i(156881),	-- Notoroious Gladiator's Proto-Drake
 		i(182596),	-- Rampart Screecher
 		i(161215),	-- Reins of the Obsidian Krolusk
 		i(89785),	-- Pandaren Kite (Alliance)
@@ -89,7 +88,6 @@ _.Mounts =
 		i(44160),	-- Red Proto-Drake
 		i(45802),	-- Rusted Proto-Drake
 		i(183937),	-- Sinful Gladiator's Soul Eater
-		un(REMOVED_FROM_GAME, i(156880)),	-- Sinister Gladiator's Proto-Drake
 		i(182717),	-- Sintouched Deathwalker
 		i(169194),	-- Snapback Scuttler
 		i(128706),	-- Soaring Skyterror
