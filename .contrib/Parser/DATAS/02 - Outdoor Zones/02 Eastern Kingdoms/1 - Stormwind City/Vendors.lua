@@ -1877,7 +1877,7 @@ _.Zones =
 				n(12784,  {	-- Lieutenant Jackspring <Legacy Weapon Quartermaster>
 					["coord"] = { 75.2, 67.2, 84 },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["g"] = bubbleDown({["u"] = 12}, {
 						i(18825, {	-- Grand Marshal's Aegis
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
@@ -1941,7 +1941,7 @@ _.Zones =
 						i(23454, {	-- Grand Marshal's Warhammer
 							["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
 						}),
-					},
+					}),
 				}),
 				n(12783,  {	-- Lieutenant Karter
 					["coord"] = { 76.2, 65.6, 84 },
@@ -2847,7 +2847,7 @@ _.Zones =
 					["itemID"] = 137642,	-- Mark of Honor
 					["coord"] = { 75.4, 67.0, 84 },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["g"] = bubbleDown({["u"] = 12}, {
 						-- Head
 						i(16465, {	-- Field Marshal's Chain Helm
 							["cost"] = { { "i", 137642, 3 }, },	-- 3x Mark of Honor
@@ -3225,7 +3225,7 @@ _.Zones =
 						i(16437, {	-- Marshal's Silk Footwraps
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
-					},
+					}),
 				}),
 				n(8665,   {	-- Shylenai
 					["description"] = "Appears in Stormwind after War of Thorns.",

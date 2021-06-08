@@ -423,7 +423,7 @@ _.Zones =
 				n(12795,  {	-- First Sergeant Hola'mahi <Legacy Armor Quartermaster>
 					["races"] = HORDE_ONLY,
 					["coord"] = { 38.2, 72.6, 85 },
-					["g"] = {
+					["g"] = bubbleDown({["u"] = 12}, {
 						i(28377), 	-- Sergeant's Heavy Cloak
 						i(28378), 	-- Sergeant's Heavy Cape
 						i(16486), 	-- First Sergeant's Silk Cuffs
@@ -548,7 +548,7 @@ _.Zones =
 						i(18436), 	-- First Sergeant's Dragonhide Armguards
 						i(18437), 	-- First Sergeant's Silk Cuffs
 						i(18427), 	-- Sergeant's Cloak
-					},
+					}),
 				}),
 				n(50323,  {	-- Frizzo Villamar <Bilgewater Cartel Quartermaster>
 					["coord"] = { 50.0, 58.6, 85 },
@@ -3288,7 +3288,7 @@ _.Zones =
 				n(12794,  {	-- Stone Guard Zarg <Legacy Weapon Quartermaster>
 					["coord"] = { 38.6, 72.8, 85 },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["g"] = bubbleDown({["u"] = 12}, {
 						i(18831, {	-- High Warlord's Battle Axe
 							["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
 						}),
@@ -3353,7 +3353,7 @@ _.Zones =
 							["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
 						}),
 						un(REMOVED_FROM_GAME, i(90819)),	-- High Warlord's Razor
-					},
+					}),
 				}),
 				n(46708,  {	-- Suja <Cooking Supplies>
 					["coord"] = { 56.6, 61.2, 85 },
