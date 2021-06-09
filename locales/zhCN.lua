@@ -315,6 +315,8 @@ local L = app.L;
 		L.FILTER_THINGS_BY_LEVEL_CHECKBOX_TOOLTIP = "如果只想查看当前级别角色可用的事物, 请启用此设置.\n\n注意: 这对新战网特别有用.";
 		L.HIDE_BOE_CHECKBOX = "隐藏BoE/BoA物品";
 		L.HIDE_BOE_CHECKBOX_TOOLTIP = "如果要隐藏BoE/BoA物品, 请启用此设置.\n\n当你尝试为角色完成经典旧世并且不想专门用于可以在小号或拍卖行上放置的物品时, 此设置非常有用.\n\n即: 不要因为毁灭之锤而扰乱你的思绪.";
+		--TODO: L.HIDE_PVP_CHECKBOX = "Hide PvP Content";
+		--TODO: L.HIDE_PVP_CHECKBOX_TOOLTIP = "Enable this setting if you want to hide any content which 'may' require Player vs. Player interactions within the game.";
 		L.IGNORE_FILTERS_FOR_BOES_CHECKBOX = "忽略BoE/BoA的筛选";
 		L.IGNORE_FILTERS_FOR_BOES_CHECKBOX_TOOLTIP = "如果要忽略BOEBoE/BoA物品的装备、武器、种族、等级或职业要求, 请启用此设置.\n\n如果你正试图通过拍卖行扫描收集你的物品, 此模式可能对你有用.";
 		L.EXPAND_DIFFICULTY_CHECKBOX = "展开当前难度";
@@ -3047,7 +3049,7 @@ for key,value in pairs({
 	{3, "|CFFFF0000此物品的获得方式已被移除，只能从黑市拍卖行获得。|r", "黑市拍卖行 (9)"}, -- There is Hope -- 9
 	{3, "|CFFFF0000此物品通过TCG卡牌获得，卡牌不再发行，但网络上、黑市拍卖行甚至交易行仍可能出现。国服也可能有积分兑换活动。|r", "TCG卡牌 (10)"}, -- There is Hope -- 10
 	{3, "|CFFFF0000此物品拾取后绑定，但是如果你有召唤首领所需的物品仍可获得。|r", "需要召唤道具 (11)"}, -- There is Hope -- 11
-	{3, "|CFF00FFDEThis item or achievement requires Player vs Player activities or a currency related to those activities. |r", "Requires PvP (12)"}, -- There is Hope --, ""}, -- 12
+	{0, "|CFF00FFDEThis item or achievement requires Player vs Player activities or a currency related to those activities. |r", "Requires PvP (12)"}, -- There is Hope --, ""}, -- 12
 	{1, "|CFFFF0000你的追随者等级过高，奖励此物品的任务不再刷新。|r", "绝版物资 (13)"}, -- 13
 	{3, "|CFFFF0000此物品无法购买，除非你在对应赛季的PvP评分或排名达标。|r", "PvP Elite/Gladiator (14)"}, -- 14
 	{1, "|CFFFF0000This item has a Source ID (Tempest Keep Legendaries), but can't be learned (training recipes). |r", "Training Recipes / Unlearnable (15)"}, -- 15
