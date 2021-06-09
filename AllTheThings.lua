@@ -2361,6 +2361,8 @@ subroutines = {
 			{"exclude", "itemID", 20752},	-- Formula: Minor Mana Oil
 			{"exclude", "itemID", 20758},	-- Formula: Minor Wizard Oil
 			{"exclude", "itemID", 22307},	-- Pattern: Enchanted Mageweave Pouch
+			-- Marith Lazuria <Jewelcrafting Supplies> Cataclysm Jewelcrafting
+			-- Shazdar <Sous Chef> Cataclysm Cooking
 		}
 	end,
 };

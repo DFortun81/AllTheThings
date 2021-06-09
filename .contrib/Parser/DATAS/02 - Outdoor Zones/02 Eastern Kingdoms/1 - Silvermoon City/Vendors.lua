@@ -73,7 +73,10 @@ _.Zones =
 				n(16624, {	-- Gelanthis <Jewelcrafting Supplies>
 					["coord"] = { 90.8, 73.6, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_JEWELCRAFTING_RECIPES, {
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 50482}, -- Marith Lazuria <Jewelcrafting Supplies>
+					},
+					["groups"] = {
 						i(20854, {	-- Design: Amulet of the Moon
 							["isLimited"] = true,
 						}),
@@ -86,7 +89,7 @@ _.Zones =
 						i(20975, {	-- Design: The Jade Eye
 							["isLimited"] = true,
 						}),
-					}),
+					},
 				}),
 				n(16635, {	-- Lyna <Enchanting Supplies>
 					["coord"] = { 70.0, 24.6, SILVERMOON_CITY },

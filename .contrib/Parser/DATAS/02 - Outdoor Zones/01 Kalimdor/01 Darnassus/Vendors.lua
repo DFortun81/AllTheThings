@@ -36,94 +36,10 @@ _.Zones =
 				n(4223,  {	-- Fyldan <Cooking Supplies>
 					["coord"] = { 49.6, 36.6, 89 },
 					["races"] = ALLIANCE_ONLY,
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 49737}, -- Shazdar <Sous Chef>
+					},
 					["g"] = {
-						i(65426, {	-- Recipe: Baked Rockfish
-							["cost"] = { { "c", 81, 3 } },	-- 3x Epicurean's Award
-						}),
-						i(65427, {	-- Recipe: Basilisk Liverdog
-							["cost"] = { { "c", 81, 3 } },	-- 3x Epicurean's Award
-						}),
-						i(65429, {	-- Recipe: Beer-Basted Crocolisk
-							["cost"] = { { "c", 81, 3 } },	-- 3x Epicurean's Award
-						}),
-						i(65424, {	-- Recipe: Blackbelly Sushi
-							["cost"] = { { "c", 81, 3 } },	-- 3x Epicurean's Award
-						}),
-						i(65411, {	-- Recipe: Broiled Mountain Trout
-							["cost"] = { { "c", 81, 3 } },	-- 3x Epicurean's Award
-						}),
-						i(65431, {	-- Recipe: Chocolate Cookie
-							["cost"] = { { "c", 81, 3 } },	-- 3x Epicurean's Award
-						}),
-						i(65430, {	-- Recipe: Crocolisk Au Gratin
-							["cost"] = { { "c", 81, 3 } },	-- 3x Epicurean's Award
-						}),
-						i(65422, {	-- Recipe: Delicious Sagefish Tail
-							["cost"] = { { "c", 81, 3 } },	-- 3x Epicurean's Award
-						}),
-						i(65408, {	-- Recipe: Feathered Lure
-							["cost"] = { { "c", 81, 3 } },	-- 3x Epicurean's Award
-						}),
-						i(65423, {	-- Recipe: Fish Fry
-							["cost"] = { { "c", 81, 3 } },	-- 3x Epicurean's Award
-						}),
-						i(65432, {	-- Recipe: Fortune Cookie
-							["cost"] = { { "c", 81, 5 } },	-- 5x Epicurean's Award
-						}),
-						i(65428, {	-- Recipe: Grilled Dragon
-							["cost"] = { { "c", 81, 3 } },	-- 3x Epicurean's Award
-						}),
-						i(65418, {	-- Recipe: Hearty Seafood Soup
-							["cost"] = { { "c", 81, 3 } },	-- 3x Epicurean's Award
-						}),
-						i(65415, {	-- Recipe: Highland Spirits
-							["cost"] = { { "c", 81, 3 } },	-- 3x Epicurean's Award
-						}),
-						i(65407, {	-- Recipe: Lavascale Fillet
-							["cost"] = { { "c", 81, 3 } },	-- 3x Epicurean's Award
-						}),
-						i(65409, {	-- Recipe: Lavascale Minestrone
-							["cost"] = { { "c", 81, 3 } },	-- 3x Epicurean's Award
-						}),
-						i(65412, {	-- Recipe: Lightly Fried Lurker
-							["cost"] = { { "c", 81, 3 } },	-- 3x Epicurean's Award
-						}),
-						i(65416, {	-- Recipe: Lurker Lunch
-							["cost"] = { { "c", 81, 3 } },	-- 3x Epicurean's Award
-						}),
-						i(65420, {	-- Recipe: Mushroom Sauce Mudfish
-							["cost"] = { { "c", 81, 3 } },	-- 3x Epicurean's Award
-						}),
-						i(65417, {	-- Recipe: Pickled Guppy
-							["cost"] = { { "c", 81, 3 } },	-- 3x Epicurean's Award
-						}),
-						i(65410, {	-- Recipe: Salted Eye
-							["cost"] = { { "c", 81, 3 } },	-- 3x Epicurean's Award
-						}),
-						i(68688, {	-- Recipe: Scalding Murglesnout
-							["cost"] = { { "c", 81, 3 } },	-- 3x Epicurean's Award
-						}),
-						i(65413, {	-- Recipe: Seasoned Crab
-							["cost"] = { { "c", 81, 3 } },	-- 3x Epicurean's Award
-						}),
-						i(65421, {	-- Recipe: Severed Sagefish Head
-							["cost"] = { { "c", 81, 3 } },	-- 3x Epicurean's Award
-						}),
-						i(65425, {	-- Recipe: Skewered Eel
-							["cost"] = { { "c", 81, 3 } },	-- 3x Epicurean's Award
-						}),
-						i(65433, {	-- Recipe: South Island Iced Tea
-							["cost"] = { { "c", 81, 5 } },	-- 5x Epicurean's Award
-						}),
-						i(65414, {	-- Recipe: Starfire Espresso
-							["cost"] = { { "c", 81, 3 } },	-- 3x Epicurean's Award
-						}),
-						i(65419, {	-- Recipe: Tender Baked Turtle
-							["cost"] = { { "c", 81, 3 } },	-- 3x Epicurean's Award
-						}),
-						i(65406, {	-- Recipe: Whitecrest Gumbo
-							["cost"] = { { "c", 81, 3 } },	-- 3x Epicurean's Award
-						}),
 						i(21219),	-- Recipe: Sagefish Delight
 						i(21099),	-- Recipe: Smoked Sagefish
 					},
@@ -242,7 +158,9 @@ _.Zones =
 				n(52644, {	-- Tarien Silverdew <Jewelcrafting Supplies>
 					["coord"] = { 54.6, 29.8, 89 },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_JEWELCRAFTING_RECIPES, {}),
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 50482}, -- Marith Lazuria <Jewelcrafting Supplies>
+					},
 				}),
 				n(4235,  {	-- Turian <Thrown Weapons Merchant>
 					["coord"] = { 59.6, 67.4, 89 },

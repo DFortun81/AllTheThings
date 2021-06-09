@@ -1680,7 +1680,9 @@ _.Zones =
 				n(50480,  {	-- Isabel Jones
 					["coord"] = { 63.8, 61.3, 84 },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_JEWELCRAFTING_RECIPES, {}),
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 50482}, -- Marith Lazuria <Jewelcrafting Supplies>
+					},
 				}),
 				n(1318,   {	-- Jessara Cordell
 					["coord"] = { 53.0, 74.2, 84 },
