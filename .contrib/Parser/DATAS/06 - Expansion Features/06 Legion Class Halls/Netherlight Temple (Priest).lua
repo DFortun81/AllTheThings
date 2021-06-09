@@ -221,6 +221,12 @@ _.ExpansionFeatures =
 						},
 						["coord"] = { 51.5, 47.6, 702 },
 					}),
+					q(44306, {	-- The Fates Bless Us
+						["classes"] = { PRIEST },
+						["provider"] = { "n", 111773 },	-- Sister Oriel
+						["coord"] = { 61.6, 45.6, 702 },
+						["description"] = "Only available if you you have the |cFFFFD700Tithe|r order hall upgrade.",
+					}),
 					q(46034, {	-- Champion: Aelthalyste
 						["classes"] = { PRIEST },
 						["provider"] = { "n", 120842 },	-- Aelthalyste
