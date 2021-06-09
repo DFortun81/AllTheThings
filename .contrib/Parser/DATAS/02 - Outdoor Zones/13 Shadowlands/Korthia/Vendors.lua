@@ -10,8 +10,15 @@ _.Zones =
 				n(178257, {	-- Archivist Roh-Suir
 					["coord"] = { 61.6, 21.7, KORTHIA },
 					["g"] = {
+						i(186648, {	-- Soaring Razorwing (MOUNT!)
+							["cost"] = { { "c", 1931, 5000 } },	-- 5,000x Stygia
+						}),
+						--
 						i(187134, {	-- Alloy-Warping Facetor
 							["cost"] = { { "c", 1931, 5000 } },	-- 5,000x Catalogued Research
+						}),
+						i(187535, {	-- Attendant Scholar's Waistcord
+							["cost"] = { { "c", 1931, 4000 } },	-- 4,000x Catalogued Research
 						}),
 						i(187148, {	-- Death-Bound Shard
 							["cost"] = { { "c", 1931, 3000 } },	-- 3,000x Catalogued Research
@@ -76,11 +83,11 @@ _.Zones =
 						i(186647, {	-- Amber Shardhide (MOUNT!)
 							["cost"] = { { "c", 1767, 5000 } },	-- 5,000x Stygia
 						}),
-						i(186480, {	-- Battle-Hardened Aquilon
+						i(186480, {	-- Battle-Hardened Aquilon (MOUNT!)
 							["customCollect"] = "SL_COV_KYR",	-- Kyrian-only
 							["cost"] = { { "c", 1767, 1000 } },	-- 1,000x Stygia
 						}),
-						i(186490, {	-- Battlefield Swarmer
+						i(186490, {	-- Battlefield Swarmer (MOUNT!)
 							["customCollect"] = "SL_COV_NEC",	-- Necrolord-only
 							["cost"] = { { "c", 1767, 1000 } },	-- 1,000x Stygia
 						}),
@@ -88,91 +95,11 @@ _.Zones =
 							["customCollect"] = "SL_COV_VEN",	-- Venthyr-only
 							["cost"] = { { "c", 1767, 1000 } },	-- 1,000x Stygia
 						}),
-						i(186648, {	-- Soaring Razorwing (MOUNT!)
-							["cost"] = { { "c", 1767, 7500 } },	-- 7,500x Stygia
-						}),
 						i(186495, {	-- Winter Wilderling (MOUNT!)
 							["customCollect"] = "SL_COV_NFA",	-- Night Fae-only
 							["cost"] = { { "c", 1767, 1000 } },	-- 1,000x Stygia
 						}),
 						--
-						i(186997, {	-- Death's Advance Tabard
-							["cost"] = { { "c", 1767, 3000 } },	-- 3,000x Stygia
-						}),
-						i(186517, {	-- Ensemble: Battlefield Messenger's Regalia
-							["customCollect"] = "SL_COV_KYR",	-- Kyrian-only
-							["cost"] = { { "c", 1767, 6000 } },	-- 6,000x Stygia
-							["g"] = {
-								i(184982),	-- Battlefield Messenger's Drape
-								i(184977),	-- Battlefield Messenger's Handwraps
-								i(184978),	-- Battlefield Messenger's Hood
-								i(184979),	-- Battlefield Messenger's Leggings
-								i(185010),	-- Battlefield Messenger's Robes
-								i(184980),	-- Battlefield Messenger's Sash
-								i(184976),	-- Battlefield Messenger's Slippers
-								i(184975),	-- Battlefield Messenger's Vestments
-								i(184981),	-- Battlefield Messenger's Wraps
-							},
-						}),
-						i(186504, {	-- Ensemble: Frontline Necromancer's Vestments
-							["customCollect"] = "SL_COV_NEC",	-- Necrolord-only
-							["cost"] = { { "c", 1767, 6000 } },	-- 6,000x Stygia
-							["g"] = {
-								i(185046),	-- Frontline Necromancer's Drape
-								i(185040),	-- Frontline Necromancer's Handwraps
-								i(185041),	-- Frontline Necromancer's Hood
-								i(185042),	-- Frontline Necromancer's Leggings
-								i(185043),	-- Frontline Necromancer's Mantle
-								i(185044),	-- Frontline Necromancer's Sash
-								i(185039),	-- Frontline Necromancer's Slippers
-								i(185038),	-- Frontline Necromancer's Vestments
-								i(185045),	-- Frontline Necromancer's Wraps
-							},
-						}),
-						i(186499, {	-- Ensemble: Garb of Fall's Promise
-							["customCollect"] = "SL_COV_NFA",	-- Night Fae-only
-							["cost"] = { { "c", 1767, 6000 } },	-- 6,000x Stygia
-							["g"] = {
-								i(184965),	-- Drape of Fall's Promise
-								i(184959),	-- Handwraps of Fall's Promise
-								i(184960),	-- Hood of Fall's Promise
-								i(184961),	-- Leggings of Fall's Promise
-								i(184962),	-- Mantle of Fall's Promise
-								i(184963),	-- Sash of Fall's Promise
-								i(184958),	-- Slippers of Fall's Promise
-								i(184957),	-- Vestments of Fall's Promise
-								i(184964),	-- Wraps of Fall's Promise
-							},
-						}),
-						i(186511, {	-- Ensemble: Renathal's Battlefield Attire
-							["customCollect"] = "SL_COV_VEN",	-- Venthyr-only
-							["cost"] = { { "c", 1767, 6000 } },	-- 6,000x Stygia
-							["g"] = {
-								i(185072),	-- Renathal's Battlefield Drape
-								i(185067),	-- Renathal's Battlefield Handwraps
-								i(185068),	-- Renathal's Battlefield Hood
-								i(185069),	-- Renathal's Battlefield Leggings
-								i(185070),	-- Renathal's Battlefield Sash
-								i(185066),	-- Renathal's Battlefield Slippers
-								i(185065),	-- Renathal's Battlefield Vestments
-								i(185071),	-- Renathal's Battlefield Wraps
-							},
-						}),
-						i(186512, {	-- Ensemble: Renathal's Field Inquisitor's Vestments
-							["customCollect"] = "SL_COV_VEN",	-- Venthyr-only
-							["cost"] = { { "c", 1767, 6000 } },	-- 6,000x Stygia
-							["g"] = {
-								i(185098),	-- Renathal's Field Inquisitor's Cloak
-								i(185104),	-- Renathal's Field Inquisitor's Handwraps
-								i(185103),	-- Renathal's Field Inquisitor's Hood
-								i(185102),	-- Renathal's Field Inquisitor's Leggings
-								i(185101),	-- Renathal's Field Inquisitor's Mantle
-								i(185106),	-- Renathal's Field Inquisitor's Robes
-								i(185100),	-- Renathal's Field Inquisitor's Sash
-								i(185105),	-- Renathal's Field Inquisitor's Slippers
-								i(185099),	-- Renathal's Field Inquisitor's Wraps
-							},
-						}),
 						i(187187, {	-- Korthian Armaments
 							["description"] = "These items can also drop from War Chests awarded by Covenant Assaults, the Death's Advance War Chest, and occasionally from Korthian dailies.\n\nKorthian Armaments also have a chance to drop from Korthia rares and treasures.",
 							["cost"] = { { "c", 1767, 1000 } },	-- 1,000x Stygia
@@ -181,7 +108,7 @@ _.Zones =
 									i(185905),	-- Vault Guardian's Drape*
 								}),
 								f(4,    {	-- Cloth
-									i(185861),	-- Korthian Caretaker's Bindings
+									i(185861),	-- Korthian Caretaker's Bindings*
 									i(185860),	-- Korthian Caretaker's Cinch*
 									i(185858),	-- Korthian Caretaker's Crest*
 									i(186666),	-- Korthian Caretaker's Crown*
@@ -260,6 +187,11 @@ _.Zones =
 									i(185900),	-- Korthian Caretaker's Rod
 									i(185900),	-- Korthian Caretaker's Stave*
 									i(186764),	-- Korthian Protector's Warhammer*
+									i(185944),	-- Vault Guardian's Cleaver*
+									i(185896),	-- Vault Guardian's Cudgel
+									i(186763),	-- Vault Guardian's Decapitator
+									i(185887),	-- Vault Guardian's Targe
+									i(186769),	-- Vault Guardian's Warglaive
 								}),
 								f(52,   {	-- Finger
 									i(185894),	-- Attendant's Loop*
@@ -270,6 +202,87 @@ _.Zones =
 								f(53,   {	-- Trinkets
 									i(186156),	-- Tome of Insight
 								}),
+							},
+						}),
+						--
+						i(187540, {	-- Cincture of Enveloping Death
+							["cost"] = { { "c", 1767, 2000 } },	-- 2,000x Stygia
+						}),
+						i(186997, {	-- Death's Advance Tabard
+							["cost"] = { { "c", 1767, 3000 } },	-- 3,000x Stygia
+						}),
+						i(186517, {	-- Ensemble: Battlefield Messenger's Regalia
+							["customCollect"] = "SL_COV_KYR",	-- Kyrian-only
+							["cost"] = { { "c", 1767, 6000 } },	-- 6,000x Stygia
+							["g"] = {
+								i(184982),	-- Battlefield Messenger's Drape
+								i(184977),	-- Battlefield Messenger's Handwraps
+								i(184978),	-- Battlefield Messenger's Hood
+								i(184979),	-- Battlefield Messenger's Leggings
+								i(185010),	-- Battlefield Messenger's Robes
+								i(184980),	-- Battlefield Messenger's Sash
+								i(184976),	-- Battlefield Messenger's Slippers
+								i(184975),	-- Battlefield Messenger's Vestments
+								i(184981),	-- Battlefield Messenger's Wraps
+							},
+						}),
+						i(186504, {	-- Ensemble: Frontline Necromancer's Vestments
+							["customCollect"] = "SL_COV_NEC",	-- Necrolord-only
+							["cost"] = { { "c", 1767, 6000 } },	-- 6,000x Stygia
+							["g"] = {
+								i(185046),	-- Frontline Necromancer's Drape
+								i(185040),	-- Frontline Necromancer's Handwraps
+								i(185041),	-- Frontline Necromancer's Hood
+								i(185042),	-- Frontline Necromancer's Leggings
+								i(185043),	-- Frontline Necromancer's Mantle
+								i(185044),	-- Frontline Necromancer's Sash
+								i(185039),	-- Frontline Necromancer's Slippers
+								i(185038),	-- Frontline Necromancer's Vestments
+								i(185045),	-- Frontline Necromancer's Wraps
+							},
+						}),
+						i(186499, {	-- Ensemble: Garb of Fall's Promise
+							["customCollect"] = "SL_COV_NFA",	-- Night Fae-only
+							["cost"] = { { "c", 1767, 6000 } },	-- 6,000x Stygia
+							["g"] = {
+								i(184965),	-- Drape of Fall's Promise
+								i(184959),	-- Handwraps of Fall's Promise
+								i(184960),	-- Hood of Fall's Promise
+								i(184961),	-- Leggings of Fall's Promise
+								i(184962),	-- Mantle of Fall's Promise
+								i(184963),	-- Sash of Fall's Promise
+								i(184958),	-- Slippers of Fall's Promise
+								i(184957),	-- Vestments of Fall's Promise
+								i(184964),	-- Wraps of Fall's Promise
+							},
+						}),
+						i(186511, {	-- Ensemble: Renathal's Battlefield Attire
+							["customCollect"] = "SL_COV_VEN",	-- Venthyr-only
+							["cost"] = { { "c", 1767, 6000 } },	-- 6,000x Stygia
+							["g"] = {
+								i(185072),	-- Renathal's Battlefield Drape
+								i(185067),	-- Renathal's Battlefield Handwraps
+								i(185068),	-- Renathal's Battlefield Hood
+								i(185069),	-- Renathal's Battlefield Leggings
+								i(185070),	-- Renathal's Battlefield Sash
+								i(185066),	-- Renathal's Battlefield Slippers
+								i(185065),	-- Renathal's Battlefield Vestments
+								i(185071),	-- Renathal's Battlefield Wraps
+							},
+						}),
+						i(186512, {	-- Ensemble: Renathal's Field Inquisitor's Vestments
+							["customCollect"] = "SL_COV_VEN",	-- Venthyr-only
+							["cost"] = { { "c", 1767, 6000 } },	-- 6,000x Stygia
+							["g"] = {
+								i(185098),	-- Renathal's Field Inquisitor's Cloak
+								i(185104),	-- Renathal's Field Inquisitor's Handwraps
+								i(185103),	-- Renathal's Field Inquisitor's Hood
+								i(185102),	-- Renathal's Field Inquisitor's Leggings
+								i(185101),	-- Renathal's Field Inquisitor's Mantle
+								i(185106),	-- Renathal's Field Inquisitor's Robes
+								i(185100),	-- Renathal's Field Inquisitor's Sash
+								i(185105),	-- Renathal's Field Inquisitor's Slippers
+								i(185099),	-- Renathal's Field Inquisitor's Wraps
 							},
 						}),
 						--

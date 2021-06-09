@@ -24,6 +24,7 @@ _.Zones =
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 						i(187402),	-- All-Consuming Loop
+						i(187245),	-- Death-Enveloped Spires - dropped from Rare Elite version, not sure if that matters (other 2 are reported drops)
 						i(187246),	-- Death-Enveloped Pauldrons
 						i(187247),	-- Death-Enveloped Shoulder Spikes
 					},
@@ -89,6 +90,7 @@ _.Zones =
 							["isWeekly"] = true,
 							["questID"] = 64551,
 						}),
+						i(187372),	-- Miasma Filtering Headpiece
 					},
 				}),
 				n(179472, {	-- Konthrogz the Obliterator
@@ -216,6 +218,7 @@ _.Zones =
 						}),
 						i(187035),	-- Cold Burden of the Damned
 						i(187242),	-- Exterminator's Crest of the Damned
+						i(187373),	-- Soul-Enveloping Leggings
 						i(187241),	-- Watchful Eye of the Damned
 					},
 				}),
@@ -293,6 +296,7 @@ _.Zones =
 							["sourceQuests"] = { 64506 },	-- What Must Be Found
 							["questID"] = 63917,	-- Everliving Statuette
 						}),
+						i(187391),	-- Yarxhov's Rib-Cage
 					},
 				}),
 				n(177336, {	-- Zelnithop

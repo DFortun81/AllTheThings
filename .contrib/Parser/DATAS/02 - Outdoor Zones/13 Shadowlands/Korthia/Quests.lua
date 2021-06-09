@@ -319,14 +319,6 @@ _.Zones =
 					["provider"] = { "n", 177228 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 62.8, 24.9, KORTHIA },
 				}),
-				q(64193, {	-- Table of Discontent
-					["sourceQuests"] = { 63738 },	-- Establishing the Archive
-					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
-					["coord"] = { 62.7, 22.5, KORTHIA },
-					["g"] = {
-						i(186470),	-- Recipe: Crafter's Mark of the Chained Isle
-					},
-				}),
 				q(63860, {	-- Talisman of the Eternal Scholar
 					["sourceQuests"] = { 64506 },	-- What Must Be Found
 					["provider"] = { "i", 185914 },	-- Damaged Talisman
@@ -838,4 +830,14 @@ _.Zones =
 
 _.HiddenQuestTriggers = {
 	q(64563),	-- triggered when turning in #64556, "In Need of Assistance"
+};
+
+_NeverImplemented = {
+	q(64193, {	-- DEPRECATED: Table of Discontent
+		["sourceQuests"] = { 63738 },	-- Establishing the Archive
+		["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+		["coord"] = { 62.7, 22.5, KORTHIA },
+		["_drop"] = { "g" },	-- drop original quest reward, which now comes from another source
+		["u"] = NEVER_IMPLEMENTED,
+	}),
 };

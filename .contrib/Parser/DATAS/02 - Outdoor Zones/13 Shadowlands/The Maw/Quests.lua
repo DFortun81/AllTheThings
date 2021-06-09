@@ -153,6 +153,7 @@ _.Zones =
 									}),
 									i(186218),	-- Fire-Tempered Armor Cinch (probably CBD, but looted from Zul'gath)
 									i(185972, {	-- Tormentor's Cache
+										i(186977),	-- Beastcaller's Skull Crescent
 										i(185756),	-- Warped Phantasma (TODO: add rep item if this makes it to live)
 									}),
 								},
@@ -819,6 +820,12 @@ _.Zones =
 					["provider"] = { "n", 177726 },	-- Odyn
 					["coord"] = { 58.3, 83.8, 1971 },	-- Skyhold (scenario)
 					["maps"] = { 1971 },	-- Skyhold (scenario)
+				}),
+				q(64541, {	-- The Cost of Death
+				--	not flagged daily/weekly in API - you trade 800 Stygia to Ve'nari in return for 1,000 reputation with her.  TODO: verify this is a one-time quest.  quest text makes it seem like it will be repeatable in one way or another
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.8, 41.7, THE_MAW },
+					["cost"] = { { "c", 1767, 800 } },	-- 800x Stygia
 				}),
 				q(63622, {	-- Victory in Our Name
 					["sourceQuests"] = { 63620 },	-- A Traitor's Due

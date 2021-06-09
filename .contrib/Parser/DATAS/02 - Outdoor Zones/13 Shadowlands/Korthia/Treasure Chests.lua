@@ -80,6 +80,7 @@ _.Zones =
 					["coord"] = { 54.2, 41.2, KORTHIA },
 					["g"] = {
 						i(186990),	-- Recipe: Blossom Burst
+						i(186988),	-- Recipe: Glory Burst
 						i(186989),	-- Recipe: Marrow Burst
 						i(186986),	-- Recipe: Widow Burst
 						i(187153),	-- Tasty Mawshroom
@@ -91,6 +92,7 @@ _.Zones =
 					["coord"] = { 53.7, 37.9, KORTHIA },
 					["g"] = {
 						i(186990),	-- Recipe: Blossom Burst
+						i(186988),	-- Recipe: Glory Burst
 						i(186989),	-- Recipe: Marrow Burst
 						i(186986),	-- Recipe: Widow Burst
 						i(187153),	-- Tasty Mawshroom
@@ -102,6 +104,7 @@ _.Zones =
 					["coord"] = { 45.6, 34.3, KORTHIA },
 					["g"] = {
 						i(186990),	-- Recipe: Blossom Burst
+						i(186988),	-- Recipe: Glory Burst
 						i(186989),	-- Recipe: Marrow Burst
 						i(186986),	-- Recipe: Widow Burst
 						i(187153),	-- Tasty Mawshroom
@@ -113,6 +116,7 @@ _.Zones =
 					["coord"] = { 39.7, 34.8, KORTHIA },
 					["g"] = {
 						i(186990),	-- Recipe: Blossom Burst
+						i(186988),	-- Recipe: Glory Burst
 						i(186989),	-- Recipe: Marrow Burst
 						i(186986),	-- Recipe: Widow Burst
 						i(187153),	-- Tasty Mawshroom
@@ -124,6 +128,7 @@ _.Zones =
 					["coord"] = { 39.6, 30.0, KORTHIA },
 					["g"] = {
 						i(186990),	-- Recipe: Blossom Burst
+						i(186988),	-- Recipe: Glory Burst
 						i(186989),	-- Recipe: Marrow Burst
 						i(186986),	-- Recipe: Widow Burst
 						i(187153),	-- Tasty Mawshroom
@@ -198,6 +203,7 @@ _.Zones =
 					["isDaily"] = true,
 				--	["coord"] = { 61.2, 57.9, KORTHIA }, TODO old coords?  was always here inside the building, but as of 6/2 i found it nearby but outside, next day slightly further.  leaving this here in case i need to append the old coord to the new ones
 					["coords"] = {
+						{ 56.8, 56.1, KORTHIA },
 						{ 58.3, 52.8, KORTHIA },
 						{ 61.1, 51.6, KORTHIA },
 						{ 62.3, 58.6, KORTHIA },
@@ -312,6 +318,7 @@ _.Zones =
 						{ 37.1, 53.7, KORTHIA },	-- Pile of Bones
 						{ 38.2, 51.7, KORTHIA },	-- Pile of Bones
 						{ 39.6, 50.2, KORTHIA },	-- Pile of Bones
+						{ 41.0, 50.5, KORTHIA },	-- Pile of Bones
 						{ 45.6, 81.4, KORTHIA },	-- Relic Cache
 						{ 47.2, 76.8, KORTHIA },	-- Relic Cache
 						{ 50.6, 67.1, KORTHIA },	-- Relic Cache
@@ -358,6 +365,7 @@ _.Zones =
 						{ 37.1, 53.7, KORTHIA },	-- Pile of Bones
 						{ 38.2, 51.7, KORTHIA },	-- Pile of Bones
 						{ 39.6, 50.2, KORTHIA },	-- Pile of Bones
+						{ 41.0, 50.5, KORTHIA },	-- Pile of Bones
 						{ 45.6, 81.4, KORTHIA },	-- Relic Cache
 						{ 47.2, 76.8, KORTHIA },	-- Relic Cache
 						{ 50.6, 67.1, KORTHIA },	-- Relic Cache
@@ -404,6 +412,7 @@ _.Zones =
 						{ 37.1, 53.7, KORTHIA },	-- Pile of Bones
 						{ 38.2, 51.7, KORTHIA },	-- Pile of Bones
 						{ 39.6, 50.2, KORTHIA },	-- Pile of Bones
+						{ 41.0, 50.5, KORTHIA },	-- Pile of Bones
 						{ 45.6, 81.4, KORTHIA },	-- Relic Cache
 						{ 47.2, 76.8, KORTHIA },	-- Relic Cache
 						{ 50.6, 67.1, KORTHIA },	-- Relic Cache
@@ -450,6 +459,7 @@ _.Zones =
 						{ 37.1, 53.7, KORTHIA },	-- Pile of Bones
 						{ 38.2, 51.7, KORTHIA },	-- Pile of Bones
 						{ 39.6, 50.2, KORTHIA },	-- Pile of Bones
+						{ 41.0, 50.5, KORTHIA },	-- Pile of Bones
 						{ 45.6, 81.4, KORTHIA },	-- Relic Cache
 						{ 47.2, 76.8, KORTHIA },	-- Relic Cache
 						{ 50.6, 67.1, KORTHIA },	-- Relic Cache
