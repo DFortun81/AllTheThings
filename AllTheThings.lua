@@ -17275,6 +17275,38 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 					self.retry = true;
 				end
 			end
+			self.BuildMapAndChildren = function(self, mapObject, includeAll, includePermanent, includeQuests)
+				if not mapObject.mapID then return; end
+
+				-- print("Build Map",mapObject.mapID,mapObject.text);
+
+				-- Merge Tasks for Zone
+				self:MergeTasks(mapObject, includeAll, includePermanent, includeQuests);
+
+				-- Merge Storylines for Zone
+				self:MergeStorylines(mapObject, includeAll, includePermanent, includeQuests);
+
+				-- look for quests on map child maps as well
+				local mapChildInfos = C_Map.GetMapChildrenInfo(mapObject.mapID, 3, false);
+				if mapChildInfos then
+					for i,mapInfo in ipairs(mapChildInfos) do
+						-- start fetching the data while other stuff is setup
+						C_QuestLine.RequestQuestLinesForMap(mapInfo.mapID);
+						local subMapObject = app.CreateMapWithStyle(mapInfo.mapID);
+
+						-- Merge Tasks for Zone
+						self:MergeTasks(subMapObject, includeAll, includePermanent, includeQuests);
+
+						-- Merge Storylines for Zone
+						self:MergeStorylines(subMapObject, includeAll, includePermanent, includeQuests);
+						
+						-- Build children of this map as well
+						self:BuildMapAndChildren(subMapObject, includeAll, includePermanent, includeQuests);
+
+						MergeObject(mapObject.g, subMapObject);
+					end
+				end
+			end
 			self.Rebuild = function(self, no)
 				-- Already filled with data and nothing needing to retry, just give it a forced update pass since data for quests should now populate dynamically
 				if not self.retry and #self.data.g > 1 then
@@ -17296,16 +17328,13 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 				-- Acquire all of the world quests
 				for _,pair in ipairs(worldMapIDs) do
 					local mapID = pair[1];
-					-- print("WQ.WorldMapIDs." .. tostring(mapID))
+					-- print("WQ.WorldMapIDs." , mapID)
 					-- start fetching the data while other stuff is setup
 					C_QuestLine.RequestQuestLinesForMap(mapID);
 					local mapObject = app.CreateMapWithStyle(mapID);
 
-					-- Merge Tasks for Zone
-					self:MergeTasks(mapObject, includeAll, includePermanent, includeQuests);
-
-					-- Merge Storylines for Zone
-					self:MergeStorylines(mapObject, includeAll, includePermanent, includeQuests);
+					-- Build top-level maps all the way down
+					self:BuildMapAndChildren(mapObject, includeAll, includePermanent, includeQuests);
 
 					-- Invasions
 					local mapIDPOIPairs = pair[2];
@@ -17344,24 +17373,6 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 								local subMapObject = app.CreateMapWithStyle(arr[1]);
 								MergeObject(mapObject.g, subMapObject);
 							end
-						end
-					end
-
-					-- look for quests on 'Zone' map child maps as well
-					local mapChildInfos = C_Map.GetMapChildrenInfo(mapID, 3, false);
-					if mapChildInfos then
-						for i,mapInfo in ipairs(mapChildInfos) do
-							-- start fetching the data while other stuff is setup
-							C_QuestLine.RequestQuestLinesForMap(mapInfo.mapID);
-							local subMapObject = app.CreateMapWithStyle(mapInfo.mapID);
-
-							-- Merge Tasks for Zone
-							self:MergeTasks(subMapObject, includeAll, includePermanent, includeQuests);
-
-							-- Merge Storylines for Zone
-							self:MergeStorylines(subMapObject, includeAll, includePermanent, includeQuests);
-
-							MergeObject(mapObject.g, subMapObject);
 						end
 					end
 
@@ -17551,10 +17562,10 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 				end
 
 				-- if self.retry then
-				-- 	-- print("Missing API quest data on this World Quest refresh");
-				-- 	-- TODO: try turning this into a C_Timer callback to auto-refresh after a second?
-				-- 	self.retry = nil;
-				-- 	return true;
+					-- print("Missing API quest data on this World Quest refresh");
+					-- TODO: try turning this into a C_Timer callback to auto-refresh after a second?
+					-- self.retry = nil;
+					-- return true;
 				-- end
 
 				-- Put a 'Clear World Quests' click at the bottom
