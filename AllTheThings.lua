@@ -12320,11 +12320,16 @@ function app:CreateMiniListForGroup(group)
 			-- end;
 		end
 		if showing and ((group.key == "questID" and group.questID) or group.sourceQuests) then
-			-- This is a quest object. Let's show prereqs and breadcrumbs.
-			-- This causes a popout insertion into the Main list when a popout group has a parent (in Main list) with the same questID (#714)
-			-- if group.questID ~= nil and group.parent and group.parent.questID == group.questID then
-			-- 	group = group.parent;
-			-- end
+			-- if the group was created from a popout and thus contains its own pre-req quests already, then clean out direct quest entries from the group
+			if group.g then
+				local noQuests = {};
+				for _,g in pairs(group.g) do
+					if g.key ~= "questID" then
+						tinsert(noQuests, g);
+					end
+				end
+				group.g = noQuests;
+			end
 			-- Create a copy of the root group
 			local root = CreateObject(group);
 			root.collectible = not root.repeatable;
@@ -12531,14 +12536,12 @@ function app:CreateMiniListForGroup(group)
 				app.AccountWideQuests = oldQuestTracking;
 			end;
 			popout:SetScript("OnEvent", function(self, e, ...)
-				print("EVENT", e, ...)
+				-- print("EVENT", e, ...)
 				if self:IsVisible() then
-					print("QUEST_LOG_UPDATE:questChainWindow")
+					-- print("QUEST_LOG_UPDATE:questChainWindow")
 					self:Update();
 				end
 			end);
-			-- extra indent for quest chain window
-			-- popout.data.indent = 1;
 		end
 	end
 	-- showing the quest chain window, register any local event handlers
