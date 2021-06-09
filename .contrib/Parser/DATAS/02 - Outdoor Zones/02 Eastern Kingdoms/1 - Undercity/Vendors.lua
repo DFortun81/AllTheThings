@@ -395,14 +395,17 @@ _.Zones =
 				n(4589,  {	-- Joseph Moore <Leatherworking Supplies>
 					["coord"] = { 70.6, 59.6, 90 },
 					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_LEATHERWORKING_RECIPES, {
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 3366}, -- Tamar <Leatherworking Supplies>
+					},
+					["groups"] = {
 						i(18949, {	-- Pattern: Barbaric Bracers
 							["isLimited"] = true,
 						}),
 						i(7451, {	-- Pattern: Green Whelp Bracers
 							["isLimited"] = true,
 						}),
-					}),
+					},
 				}),
 				n(4558,  {	-- Lauren Newcomb <Light Armor Merchant>
 					["coord"] = { 63.8, 38.0, 90 },
@@ -559,12 +562,15 @@ _.Zones =
 				n(4617,  {	-- Thaddeus Webb <Enchanting Supplies>
 					["coord"] = { 62.0, 60.8, 90 },
 					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_ENCHANTING_RECIPES, {
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 3346}, -- Kithas <Enchanting Supplies>
+					},
+					["groups"] = {
 						i(20753),	-- Formula: Lesser Wizard Oil
 						i(20752),	-- Formula: Minor Mana Oil
 						i(20758),	-- Formula: Minor Wizard Oil
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
-					}),
+					},
 				}),
 			}),
 		}),

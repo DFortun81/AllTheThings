@@ -91,7 +91,20 @@ _.Zones =
 				n(16635, {	-- Lyna <Enchanting Supplies>
 					["coord"] = { 70.0, 24.6, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_ENCHANTING_RECIPES, LYNA_GROUPS),
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 3346}, -- Kithas <Enchanting Supplies>
+					},
+					["groups"] = {
+						i(22565, {	-- Formula: Large Prismatic Shard
+							["isLimited"] = true,
+						}),
+						i(22562, {	-- Formula: Superior Mana Oil
+							["isLimited"] = true,
+						}),
+						i(22563, {	-- Formula: Superior Wizard Oil
+							["isLimited"] = true,
+						}),
+					},
 				}),
 				n(16641, {	-- Melaris <Alchemy Supplies>
 					["coord"] = { 67.0, 19.2, SILVERMOON_CITY },
@@ -162,7 +175,10 @@ _.Zones =
 				n(16689, {	-- Zaralda <Leatherworking Supplies>
 					["coord"] = { 84.6, 78.8, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_LEATHERWORKING_RECIPES, {
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 3366}, -- Tamar <Leatherworking Supplies>
+					},
+					["groups"] = {
 						i(25726, {	-- Pattern: Comfortable Insoles
 							["spellID"] = 32482,	-- Comfortable Insoles
 							["requireSkill"] = LEATHERWORKING,
@@ -176,7 +192,7 @@ _.Zones =
 							["isLimited"] = true,
 							["f"] = 200,
 						}),
-					}),
+					},
 				}),
 				n(16623, {	-- Zyandrel <Cloth Armor Merchant>
 					["coord"] = { 64.8, 48.6, SILVERMOON_CITY },

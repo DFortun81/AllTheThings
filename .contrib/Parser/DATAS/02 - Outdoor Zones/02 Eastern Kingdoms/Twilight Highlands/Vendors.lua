@@ -10,7 +10,9 @@ _.Zones =
 				n(50146, {	-- Agatian Fallanos <Shard Trader>
 					["coord"] = { 76.8, 49.4, 241 },
 					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_ENCHANTING_RECIPES, {}),
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 3346}, -- Kithas <Enchanting Supplies>
+					},
 				}),
 				n(50433, {	-- Aristaleon Sunweaver <Cloth Trader>
 					["coord"] = { 75.3, 50.0, 241 },
@@ -83,7 +85,9 @@ _.Zones =
 				n(50381, {	-- Misty Merriweather <Hide & Leather Trader>
 					["coord"] = { 78.6, 76.2, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_LEATHERWORKING_RECIPES, {}),
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 3366}, -- Tamar <Leatherworking Supplies>
+					},
 				}),
 				n(50386, {	-- Sal Ferraga <Cloth Trader>
 					["coord"] = { 78.6, 76.8, 241 },
@@ -95,12 +99,16 @@ _.Zones =
 				n(50134, {	-- Senthii <Shard Trader>
 					["coord"] = { 78.6, 77.0, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_ENCHANTING_RECIPES, {}),
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 3346}, -- Kithas <Enchanting Supplies>
+					},
 				}),
 				n(50172, {	-- Threm Blackscalp <Hide & Leather Trader>
 					["coord"] = { 75.2, 50.0, 241 },
 					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_LEATHERWORKING_RECIPES, {}),
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 3366}, -- Tamar <Leatherworking Supplies>
+					},
 				}),
 			}),
 		}),

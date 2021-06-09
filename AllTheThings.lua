@@ -2353,6 +2353,14 @@ subroutines = {
 			{"exclude", "itemID", 5772},	-- Pattern: Red Woolen Bag
 			-- Sumi <Blacksmithing Supplies> Cataclysm Blacksmithing
 			{"exclude", "itemID", 12162},	-- Plans: Hardened Iron Shortsword
+			-- Tamar <Leatherworking Supplies> Cataclysm Leatherworking
+			{"exclude", "itemID", 18731},	-- Pattern: Heavy Leather Ball
+			-- Kithas <Enchanting Supplies> Cataclysm Enchanting
+			{"exclude", "itemID", 6349},	-- Formula: Enchant 2H Weapon - Lesser Intellect
+			{"exclude", "itemID", 20753},	-- Formula: Lesser Wizard Oil
+			{"exclude", "itemID", 20752},	-- Formula: Minor Mana Oil
+			{"exclude", "itemID", 20758},	-- Formula: Minor Wizard Oil
+			{"exclude", "itemID", 22307},	-- Pattern: Enchanted Mageweave Pouch
 		}
 	end,
 };

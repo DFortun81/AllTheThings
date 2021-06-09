@@ -72,7 +72,20 @@ _.Zones =
 				n(16722, {	-- Egomis <Enchanting Supplies>
 					["coord"] = { 39.9, 40.2, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_ENCHANTING_RECIPES, EGOMIS_GROUPS),
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 3346}, -- Kithas <Enchanting Supplies>
+					},
+					["groups"] = {
+						i(22565, {	-- Formula: Large Prismatic Shard
+							["isLimited"] = true,
+						}),
+						i(22562, {	-- Formula: Superior Mana Oil
+							["isLimited"] = true,
+						}),
+						i(22563, {	-- Formula: Superior Wizard Oil
+							["isLimited"] = true,
+						}),
+					},
 				}),
 				n(16657, {	-- Feera <Engineering Supplies>
 					["coord"] = { 53.6, 90.8, THE_EXODAR },
@@ -100,7 +113,10 @@ _.Zones =
 				n(16748, {	-- Haferet <Leatherworking Supplies>
 					["coord"] = { 66.6, 73.7, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_LEATHERWORKING_RECIPES, {
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 3366}, -- Tamar <Leatherworking Supplies>
+					},
+					["groups"] = {
 						i(25726, {	-- Pattern: Comfortable Insoles
 							["spellID"] = 32482,	-- Comfortable Insoles
 							["requireSkill"] = LEATHERWORKING,
@@ -114,7 +130,7 @@ _.Zones =
 							["isLimited"] = true,
 							["f"] = 200,
 						}),
-					}),
+					},
 				}),
 				n(50306, {	-- Kadu <Exodar Quartermaster>
 					["coord"] = { 54.8, 36.8, THE_EXODAR },

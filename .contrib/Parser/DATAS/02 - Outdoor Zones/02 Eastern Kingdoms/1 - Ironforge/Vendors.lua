@@ -10,11 +10,14 @@ _.Zones =
 				n(5128,  {	-- Bombus Finespindle <Leatherworking Supplies>
 					["coord"] = { 40.2, 33.4, 87 },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_LEATHERWORKING_RECIPES, {
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 3366}, -- Tamar <Leatherworking Supplies>
+					},
+					["groups"] = {
 						i(18731, {	-- Pattern: Heavy Leather Ball
 							["isLimited"] = true,
 						}),
-					}),
+					},
 				}),
 				n(5163,  {	-- Burbik Gearspanner <Trade Supplies>
 					["coord"] = { 46.6, 28.6, 87 },
@@ -577,7 +580,10 @@ _.Zones =
 				n(5158,  {	-- Tilli Thistlefuzz <Enchanting Supplies>
 					["coord"] = { 61.0, 45.6, 87 },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_ENCHANTING_RECIPES, {
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 3346}, -- Kithas <Enchanting Supplies>
+					},
+					["groups"] = {
 						i(6349, {	-- Formula: Enchant 2H Weapon - Lesser Intellect
 							["isLimited"] = true,
 						}),
@@ -585,7 +591,7 @@ _.Zones =
 						i(20752),	-- Formula: Minor Mana Oil
 						i(20758),	-- Formula: Minor Wizard Oil
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
-					}),
+					},
 				}),
 			}),
 		}),
