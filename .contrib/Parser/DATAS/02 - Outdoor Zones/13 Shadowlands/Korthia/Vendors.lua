@@ -177,7 +177,7 @@ _.Zones =
 									i(186753),	-- Vault Guardian's Shoulderplates
 									i(186750),	-- Vault Guardian's Stompers
 									i(185883),	-- Vault Guardian's Vambraces
-									i(186748),	-- Vault Guardian's Visor
+									i(186748),	-- Vault Guardian's Visor*
 								}),
 								n(-319, {	-- Weapons
 									i(186759),	-- Korthian Anima Vessel*

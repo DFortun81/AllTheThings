@@ -242,6 +242,7 @@ _.Zones =
 						crit(23, {	-- Ve'rayn
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
+						i(187404),	-- Cartel Ve Amulet
 						i(187264, {	-- Ve'rayn's Head
 							["questID"] = 64513,	-- Ve'rayn's Head
 						}),
