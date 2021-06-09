@@ -2326,6 +2326,9 @@ _.Zones =
 				n(133239, {	-- Leyweaver Aurielle
 					["coord"] = { 38.2, 86.8, 85 },
 					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"sub", "common_cata_recipes", 3364},
+						},
 					["g"] = {
 						i(6270, {	-- Pattern: Blue Linen Vest
 							["isLimited"] = true,
@@ -2344,10 +2347,14 @@ _.Zones =
 						}),
 					},
 				}),
-				n(45558,  {	-- Lizna Goldweaver <Tailoring Supplies>
+				n(45558,  {	-- Lizna Goldweaver <Tailoring Supplies> (removed 7.3.5? when embassy took over)
 					["coord"] = { 41.0, 79.8, 85 },
 					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_TAILORING_RECIPES, {
+					["u"] = REMOVED_FROM_GAME,
+					["sym"] = {
+						{"sub", "common_cata_recipes", 3364},
+						},
+					["groups"] = {
 						i(6270, {	-- Pattern: Blue Linen Vest
 							["isLimited"] = true,
 						}),
@@ -2363,7 +2370,7 @@ _.Zones =
 						i(5772, {	-- Pattern: Red Woolen Bag
 							["isLimited"] = true,
 						}),
-					}),
+					},
 				}),
 				n(50482,  {	-- Marith Lazuria <Jewelcrafting Supplies>
 					["coord"] = { 72.4, 34.6, 85 },
