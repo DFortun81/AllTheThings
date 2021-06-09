@@ -181,7 +181,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 				inst(559, {	-- Upper Blackrock Spire
 					n(79912, {	-- Commander Tharbek
 						un(HOLIDAY_FEAST_OF_WINTER_VEIL, ig(21524, {	-- Red Winter Hat
-							["maps"] = { 616, 617, 618 },
+							["maps"] = { BLACKROCK_SPIRE, 617, 618 },
 						})),
 					}),
 				}),

@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(69, {	-- Feralas
+		m(FERALAS, {
 			n(ZONEDROPS, {
 				i(11474, {	-- Sprite Darter Egg (PET!)
 					["crs"] = {

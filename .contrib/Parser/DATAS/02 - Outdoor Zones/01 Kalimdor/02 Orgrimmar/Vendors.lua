@@ -2328,7 +2328,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sym"] = {
 						{"sub", "common_cata_recipes", 3364},
-						},
+					},
 					["g"] = {
 						i(6270, {	-- Pattern: Blue Linen Vest
 							["isLimited"] = true,
@@ -2353,7 +2353,7 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 					["sym"] = {
 						{"sub", "common_cata_recipes", 3364},
-						},
+					},
 					["groups"] = {
 						i(6270, {	-- Pattern: Blue Linen Vest
 							["isLimited"] = true,

@@ -560,12 +560,12 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { 77 },	-- Felwood
 										}),
 										crit(12, {	-- Feralas, Dreamer's Rest
-											["coord"] = { 51.1, 17.8, 69 },
-											["maps"] = { 69 },	-- Feralas
+											["coord"] = { 51.1, 17.8, FERALAS },
+											["maps"] = { FERALAS },
 										}),
 										crit(13, {	-- Feralas, Feathermoon Stronghold
-											["coord"] = { 46.3, 45.2, 69 },
-											["maps"] = { 69 },	-- Feralas
+											["coord"] = { 46.3, 45.2, FERALAS },
+											["maps"] = { FERALAS },
 										}),
 										crit(14, {	-- Northern Barrens, Ratchet
 											["coord"] = { 67.3, 74.7, 10 },
@@ -673,16 +673,16 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { 77 },	-- Felwood
 										}),
 										crit(12, {	-- Feralas, Camp Ataya
-											["coord"] = { 41.4, 15.6, 69 },
-											["maps"] = { 69 },	-- Feralas
+											["coord"] = { 41.4, 15.6, FERALAS },
+											["maps"] = { FERALAS },
 										}),
 										crit(13, {	-- Feralas, Camp Mojache
-											["coord"] = { 74.8, 45.1, 69 },
-											["maps"] = { 69 },	-- Feralas
+											["coord"] = { 74.8, 45.1, FERALAS },
+											["maps"] = { FERALAS },
 										}),
 										crit(14, {	-- Feralas, Stonemaul Hold
-											["coord"] = { 52.0, 47.7, 69 },
-											["maps"] = { 69 },	-- Feralas
+											["coord"] = { 52.0, 47.7, FERALAS },
+											["maps"] = { FERALAS },
 										}),
 										crit(15, {	-- Mulgore, Bloodhoof Village
 											["coord"] = { 46.8, 60.4, 7 },

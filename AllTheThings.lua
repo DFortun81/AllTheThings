@@ -2342,15 +2342,15 @@ subroutines = {
 	-- Common Cataclysm Recipes
 	["common_cata_recipes"] = function(npcID)
 		return {
-			{"select", "creatureID", npcID},		-- Main Vendor
+			{"select", "creatureID", npcID},	-- Main Vendor
 			{"pop"},	-- Remove Main Vendor and push his children into the processing queue.
 			{"is", "itemID"},	-- Only Items
 			-- Tailoring
-			{"exclude", "itemID", 6270}, -- Pattern: Blue Linen Vest
-			{"exclude", "itemID", 6274}, -- Pattern: Blue Overalls
-			{"exclude", "itemID", 10314}, -- Pattern: Lavender Mageweave Shirt
-			{"exclude", "itemID", 10317}, -- Pattern: Pink Mageweave Shirt
-			{"exclude", "itemID", 5772}, -- Pattern: Red Woolen Bag
+			{"exclude", "itemID", 6270},	-- Pattern: Blue Linen Vest
+			{"exclude", "itemID", 6274},	-- Pattern: Blue Overalls
+			{"exclude", "itemID", 10314},	-- Pattern: Lavender Mageweave Shirt
+			{"exclude", "itemID", 10317},	-- Pattern: Pink Mageweave Shirt
+			{"exclude", "itemID", 5772},	-- Pattern: Red Woolen Bag
 		}
 	end,
 };
@@ -17302,7 +17302,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 
 						-- Merge Storylines for Zone
 						self:MergeStorylines(subMapObject, includeAll, includePermanent, includeQuests);
-						
+
 						-- Build children of this map as well
 						self:BuildMapAndChildren(subMapObject, includeAll, includePermanent, includeQuests);
 

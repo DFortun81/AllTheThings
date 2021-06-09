@@ -23,7 +23,7 @@ _.Holidays =
 						},
 						["maps"] = {	-- AQ40 Maps
 							319,	-- The Hive Undergrounds
-							320,	-- The Temple Gates
+							TEMPLE_OF_AHNQIRAJ,	-- The Temple Gates
 							321,	-- Vault of C'Thun
 						},
 					})),
@@ -34,7 +34,7 @@ _.Holidays =
 						},
 						["maps"] = {	-- AQ40 Maps
 							319,	-- The Hive Undergrounds
-							320,	-- The Temple Gates
+							TEMPLE_OF_AHNQIRAJ,	-- The Temple Gates
 							321,	-- Vault of C'Thun
 						},
 					})),
@@ -44,7 +44,7 @@ _.Holidays =
 							{ 58.93, 14.26, 327 },	-- Ruins of Ahn'Qiraj, Ahn Qiraj: The Fallen Kingdom
 						},
 						["maps"] = {
-							247,	-- Ruins of Ahn'Qiraj
+							RUINS_OF_AHNQIRAJ,
 						},
 					})),
 					h(q(45651, {	-- The Ruins of Ahn'Qiraj: Ossirian [H]
@@ -53,7 +53,7 @@ _.Holidays =
 							{ 58.93, 14.26, 327 },	-- Ruins of Ahn'Qiraj, Ahn Qiraj: The Fallen Kingdom
 						},
 						["maps"] = {
-							247,	-- Ruins of Ahn'Qiraj
+							RUINS_OF_AHNQIRAJ,
 						},
 					})),
 					a(q(45739, {	-- Lesser Wind Stones [A]

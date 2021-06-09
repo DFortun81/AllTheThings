@@ -20,7 +20,7 @@ _.Secrets =
 									{ 55.0, 84.5, 35 },	-- Entrance by MC
 									{ 39.0, 18.3, 35 },	-- BRD Entrance
 									{ 49.8, 60.9, 243 },	-- Inside Instance
-									{ 49.8, 31.6, 242 },	-- Inside Instance
+									{ 49.8, 31.6, BLACKROCK_DEPTHS },	-- Inside Instance
 								},
 							}),
 						},
@@ -36,7 +36,7 @@ _.Secrets =
 								["repeatable"] = true,
 								["collectible"] = false,
 								["coords"] = {
-									{ 62.5, 24.9, 69 },	-- Dire Maul North entrance
+									{ 62.5, 24.9, FERALAS },	-- Dire Maul North entrance
 									{ 28.5, 55.0, 235 },	-- Inside instance
 								}
 							}),

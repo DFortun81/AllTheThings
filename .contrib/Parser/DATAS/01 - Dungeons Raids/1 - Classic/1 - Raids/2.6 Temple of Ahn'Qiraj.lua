@@ -7,7 +7,7 @@ _.Instances = { tier(1, {	-- Classic
 		["coord"] = { 46.76, 7.53, 327 },	-- Temple of Ahn'Qiraj, Ahn Qiraj: The Fallen Kingdom
 		["maps"] = {
 			319,	-- The Hive Undergrounds
-			320,	-- The Temple Gates
+			TEMPLE_OF_AHNQIRAJ,	-- The Temple Gates
 			321,	-- Vault of C'Thun
 		},
 		["isRaid"] = true,

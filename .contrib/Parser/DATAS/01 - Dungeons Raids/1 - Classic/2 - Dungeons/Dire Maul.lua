@@ -5,7 +5,7 @@
 _.Instances = { tier(1, {	-- Classic
 	inst(230, { 	-- Dire Maul
 		["lvl"] = 31,
-		["mapID"] = 234,
+		["mapID"] = DIRE_MAUL,
 		["g"] = {
 			ach(644),	-- King of Dire Maul
 			n(-12, {	-- Warpwood Quarter [East - Demon]
@@ -14,7 +14,7 @@ _.Instances = { tier(1, {	-- Classic
 					239,	-- Warpwood Quarter
 					240,	-- The Shrine of Eldretharr
 				},
-				["coord"] = { 64.83, 30.24, 69 },	-- Dire Maul [East], Feralas
+				["coord"] = { 64.83, 30.24, FERALAS },	-- Dire Maul [East]
 				["g"] = {
 					n(QUESTS, {
 						q(27104, {	-- Alzzin the Wildshaper
@@ -198,7 +198,7 @@ _.Instances = { tier(1, {	-- Classic
 				["maps"] = {
 					235,	-- Gordok Commons
 				},
-				["coord"] = { 62.48, 24.48, 69 },	-- Dire Maul [North], Feralas
+				["coord"] = { 62.48, 24.48, FERALAS },	-- Dire Maul [North]
 				["g"] = {
 					n(QUESTS, {
 						o(179485, {	-- A Broken Trap
@@ -485,7 +485,7 @@ _.Instances = { tier(1, {	-- Classic
 					237,	-- Court of the Highborne
 					238,	-- Prison of Immol'Thar
 				},
-				["coord"] = { 60.32, 30.17, 69 },	-- Dire Maul [West], Feralas
+				["coord"] = { 60.32, 30.17, FERALAS },	-- Dire Maul [West]
 				["description"] = "This is the instance on the left side.",
 				["g"] = {
 					n(QUESTS, {

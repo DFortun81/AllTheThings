@@ -737,15 +737,15 @@ _.Zones =
 						q(41394, {	-- Service with a Smile
 							["sourceQuests"] = { 41367 },	-- Priority Delivery
 							["provider"] = { "n", 52562 },	-- Johnny Awesome
-							["coord"] = { 68.6, 73.1, 69 },
-							["maps"] = { 69 },	-- Feralas
+							["coord"] = { 68.6, 73.1, FERALAS },
+							["maps"] = { FERALAS },
 							["lvl"] = 98,
 						}),
 						q(41395, {	-- Due Reward
 							["sourceQuests"] = { 41394 },	-- Service with a Smile
 							["provider"] = { "n", 52562 },	-- Johnny Awesome
-							["coord"] = { 68.6, 73.1, 69 },
-							["maps"] = { 69 },	-- Feralas
+							["coord"] = { 68.6, 73.1, FERALAS },
+							["maps"] = { FERALAS },
 							["lvl"] = 98,
 						}),
 						q(50247, {	-- The Mail Must Flow

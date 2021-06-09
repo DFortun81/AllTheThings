@@ -265,10 +265,10 @@ _.WorldEvents =
 						["questID"] = 47463,
 						["isDaily"] = true,
 						["maps"] = {
-							69,	-- Feralas
+							FERALAS,
 						},
 						["coords"] = {
-							{ 50.93, 11.91, 69 },
+							{ 50.93, 11.91, FERALAS },
 						},
 						["g"] = {
 							i(150429),	-- Emerald Dragonfang
