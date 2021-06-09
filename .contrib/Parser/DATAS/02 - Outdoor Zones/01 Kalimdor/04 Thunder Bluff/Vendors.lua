@@ -78,7 +78,10 @@ _.Zones =
 				n(3005, {	-- Mahu <Tailoring Supplies>
 					["coord"] = { 43.83, 45.12, 88 },
 					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_TAILORING_RECIPES, {
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 3364}, -- Borya <Tailoring Supplies>
+					},
+					["groups"] = {
 						i(10311, {	-- Pattern: Orange Martial Shirt
 							["isLimited"] = true,
 						}),
@@ -91,7 +94,7 @@ _.Zones =
 						i(10325, {	-- Pattern: White Wedding Dress
 							["isLimited"] = true,
 						}),
-					}),
+					},
 				}),
 				n(3008, {	-- Mak <Leatherworking Supplies>
 					["coord"] = { 42.08, 43.46, 88 },
@@ -410,7 +413,9 @@ _.Zones =
 				n(2999, {	-- Taur Stonehoof <Blacksmithing Supplies>
 					["coord"] = { 39.81, 55.68, 88 },
 					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_BLACKSMITHING_RECIPES, {}),
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 3356}, -- Sumi <Blacksmithing Supplies>
+					},
 				}),
 			}),
 		}),

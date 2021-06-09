@@ -426,7 +426,10 @@ _.Zones =
 				n(4577,  {	-- Millie Gregorian <Tailoring Supplies>
 					["coord"] = { 70.6, 30.2, 90 },
 					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_TAILORING_RECIPES, {
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 3364}, -- Borya <Tailoring Supplies>
+					},
+					["groups"] = {
 						i(6275, {	-- Pattern: Greater Adept's Robe
 							["isLimited"] = true,
 						}),
@@ -442,7 +445,7 @@ _.Zones =
 						i(10321, {	-- Pattern: Tuxedo Shirt
 							["isLimited"] = true,
 						}),
-					}),
+					},
 				}),
 				n(4553,  {	-- Ronald Burch <Cooking Supplies>
 					["coord"] = { 62.3, 43.1, 90 },
@@ -544,7 +547,9 @@ _.Zones =
 				n(4597,  {	-- Samuel Van Brunt <Blacksmithing Supplies>
 					["coord"] = { 61.4, 30.1, 90 },
 					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_BLACKSMITHING_RECIPES, {}),
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 3356}, -- Sumi <Blacksmithing Supplies>
+					},
 				}),
 				n(52588, {	-- Sara Lanner <Jewelcrafting Supplies>
 					["coord"] = { 56.2, 36.6, 90 },

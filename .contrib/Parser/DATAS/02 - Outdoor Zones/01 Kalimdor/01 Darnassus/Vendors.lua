@@ -18,7 +18,10 @@ _.Zones =
 				n(4168,  {	-- Elynna <Tailoring Supplies>
 					["coord"] = { 60.4, 36.8, 89 },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_TAILORING_RECIPES, {
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 3364}, -- Borya <Tailoring Supplies>
+					},
+					["groups"] = {
 						i(6272, {	-- Pattern: Blue Linen Robe
 							["isLimited"] = true,
 						}),
@@ -28,7 +31,7 @@ _.Zones =
 						i(10311, {	-- Pattern: Orange Martial Shirt
 							["isLimited"] = true,
 						}),
-					}),
+					},
 				}),
 				n(4223,  {	-- Fyldan <Cooking Supplies>
 					["coord"] = { 49.6, 36.6, 89 },
@@ -152,11 +155,14 @@ _.Zones =
 				n(52641, {	-- Layna Karner <Blacksmithing Supplies>
 					["coord"] = { 56.6, 52.6, 89 },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_BLACKSMITHING_RECIPES, {
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 3356}, -- Sumi <Blacksmithing Supplies>
+					},
+					["groups"] = {
 						i(12162, {	-- Plans: Hardened Iron Shortsword
 							["isLimited"] = true,
 						}),
-					}),
+					},
 				}),
 				n(4730,  {	-- Lelanai <Saber Handler>
 					["coord"] = { 42.6, 32.8, 89 },

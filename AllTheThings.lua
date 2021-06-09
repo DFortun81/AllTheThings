@@ -2339,18 +2339,20 @@ subroutines = {
 			{ "postprocess" },
 		};
 	end,
-	-- Common Cataclysm Recipes
-	["common_cata_recipes"] = function(npcID)
+	-- Common Northrend/Cataclysm Recipes Vendor
+	["common_recipes_vendor"] = function(npcID)
 		return {
 			{"select", "creatureID", npcID},	-- Main Vendor
 			{"pop"},	-- Remove Main Vendor and push his children into the processing queue.
 			{"is", "itemID"},	-- Only Items
-			-- Tailoring
+			-- Borya <Tailoring Supplies> Cataclysm Tailoring 
 			{"exclude", "itemID", 6270},	-- Pattern: Blue Linen Vest
 			{"exclude", "itemID", 6274},	-- Pattern: Blue Overalls
 			{"exclude", "itemID", 10314},	-- Pattern: Lavender Mageweave Shirt
 			{"exclude", "itemID", 10317},	-- Pattern: Pink Mageweave Shirt
 			{"exclude", "itemID", 5772},	-- Pattern: Red Woolen Bag
+			-- Sumi <Blacksmithing Supplies> Cataclysm Blacksmithing
+			{"exclude", "itemID", 12162},	-- Plans: Hardened Iron Shortsword
 		}
 	end,
 };

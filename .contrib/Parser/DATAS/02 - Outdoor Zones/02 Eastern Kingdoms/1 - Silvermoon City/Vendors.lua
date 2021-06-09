@@ -37,19 +37,25 @@ _.Zones =
 				n(16638, {	-- Deynna <Tailoring Supplies>
 					["coord"] = { 56.0, 51.8, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_TAILORING_RECIPES, {
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 3364}, -- Borya <Tailoring Supplies>
+					},
+					["groups"] = {
 						i(21892),	-- Pattern: Bolt of Imbued Netherweave
 						i(21894, {	-- Pattern: Bolt of Soulcloth
 							["isLimited"] = true,
 						}),
 						i(21896),	-- Pattern: Netherweave Robe
 						i(21897),	-- Pattern: Netherweave Tunic
-					}),
+					},
 				}),
 				n(16670, {	-- Eriden <Blacksmithing Supplies>
 					["coord"] = { 80.6, 37.0, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_BLACKSMITHING_RECIPES, {
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 3356}, -- Sumi <Blacksmithing Supplies>
+					},
+					["groups"] = {
 						i(23591, {	-- Plans: Adamantite Cleaver
 							["isLimited"] = true,
 						}),
@@ -62,7 +68,7 @@ _.Zones =
 						i(23593, {	-- Plans: Adamantite Rapier
 							["isLimited"] = true,
 						}),
-					}),
+					},
 				}),
 				n(16624, {	-- Gelanthis <Jewelcrafting Supplies>
 					["coord"] = { 90.8, 73.6, SILVERMOON_CITY },

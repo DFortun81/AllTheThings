@@ -517,7 +517,9 @@ _.Zones =
 				n(5154,  {	-- Poranna Snowbraid <Tailoring Supplies>
 					["coord"] = { 43.8, 29.6, 87 },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_TAILORING_RECIPES, {}),
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 3364}, -- Borya <Tailoring Supplies>
+					},
 				}),
 				n(5108,  {	-- Raena Flinthammer <Light Armor Merchant>
 					["coord"] = { 32.6, 58.0, 87 },
@@ -568,7 +570,9 @@ _.Zones =
 				n(4259,  {	-- Thurgrum Deepforge <Blacksmithing Supplies>
 					["coord"] = { 51.8, 41.2, 87 },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_BLACKSMITHING_RECIPES, {}),
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 3356}, -- Sumi <Blacksmithing Supplies>
+					},
 				}),
 				n(5158,  {	-- Tilli Thistlefuzz <Enchanting Supplies>
 					["coord"] = { 61.0, 45.6, 87 },

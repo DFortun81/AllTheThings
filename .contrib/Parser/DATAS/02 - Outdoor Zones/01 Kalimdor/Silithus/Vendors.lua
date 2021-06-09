@@ -33,11 +33,14 @@ _.Zones =
 				n(132139, {	-- Hagras Wartaker <Blacksmith> (Silithus)
 					["coord"] = { 66.2, 55.2, 81 },
 					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_BLACKSMITHING_RECIPES, {
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 3356}, -- Sumi <Blacksmithing Supplies>
+					},
+					["groups"] = {
 						i(12162, {	-- Plans: Hardened Iron Shortsword
 							["isLimited"] = true,
 						}),
-					}),
+					},
 				}),
 				n(15419,  {	-- Kania <Enchanting Supplies>
 					["coord"] = { 55.6, 37.2, 81 },

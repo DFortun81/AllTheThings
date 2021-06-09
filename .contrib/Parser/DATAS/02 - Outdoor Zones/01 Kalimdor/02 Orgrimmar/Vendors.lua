@@ -2327,7 +2327,7 @@ _.Zones =
 					["coord"] = { 38.2, 86.8, 85 },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
-						{"sub", "common_cata_recipes", 3364},
+						{"sub", "common_recipes_vendor", 3364}, -- Borya <Tailoring Supplies>
 					},
 					["g"] = {
 						i(6270, {	-- Pattern: Blue Linen Vest
@@ -2352,7 +2352,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["sym"] = {
-						{"sub", "common_cata_recipes", 3364},
+						{"sub", "common_recipes_vendor", 3364}, -- Borya <Tailoring Supplies>
 					},
 					["groups"] = {
 						i(6270, {	-- Pattern: Blue Linen Vest
@@ -2409,11 +2409,14 @@ _.Zones =
 				n(46359,  {	-- Punra <Blacksmithing Supplies>
 					["coord"] = { 45.0, 77.6, 85 },
 					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_BLACKSMITHING_RECIPES, {
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 3356}, -- Sumi <Blacksmithing Supplies>
+					},
+					["groups"] = {
 						i(12162, {	-- Plans: Hardened Iron Shortsword
 							["isLimited"] = true,
 						}),
-					}),
+					},
 				}),
 				n(12796,  {	-- Raider Bork <War Mount Quartermaster>
 					["coord"] = { 41.8, 72.6, 85 },
@@ -3704,11 +3707,14 @@ _.Zones =
 				n(45549,  {	-- Zido Helmbreaker <Blacksmithing Supplies>
 					["coord"] = { 36.2, 83.2, 85 },
 					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_BLACKSMITHING_RECIPES, {
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 3356}, -- Sumi <Blacksmithing Supplies>
+					},
+					["groups"] = {
 						i(12162, {	-- Plans: Hardened Iron Shortsword
 							["isLimited"] = true,
 						}),
-					}),
+					},
 				}),
 			}),
 		}),

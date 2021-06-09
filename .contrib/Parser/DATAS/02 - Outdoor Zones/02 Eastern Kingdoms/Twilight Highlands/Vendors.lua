@@ -15,7 +15,9 @@ _.Zones =
 				n(50433, {	-- Aristaleon Sunweaver <Cloth Trader>
 					["coord"] = { 75.3, 50.0, 241 },
 					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_TAILORING_RECIPES, {}),
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 3364}, -- Borya <Tailoring Supplies>
+					},
 				}),
 				n(49605, {	-- Brian Terrel <Bowyer>
 					["coord"] = { 43.8, 57.8, 241 },
@@ -29,7 +31,9 @@ _.Zones =
 				n(50382, {	-- Brundall Chiselgut <Metal Trader>
 					["coord"] = { 79.0, 76.6, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_BLACKSMITHING_RECIPES, {}),
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 3356}, -- Sumi <Blacksmithing Supplies>
+					},
 				}),
 				n(49386, {	-- Craw MacGraw <Wildhammer Clan Quartermaster>
 					["coord"] = { 48.6, 30.6, 241 },
@@ -72,7 +76,9 @@ _.Zones =
 				n(50375, {	-- Kuldar Steeltooth <Metal Trader>
 					["coord"] = { 77.2, 53.0, 241 },
 					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_BLACKSMITHING_RECIPES, {}),
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 3356}, -- Sumi <Blacksmithing Supplies>
+					},
 				}),
 				n(50381, {	-- Misty Merriweather <Hide & Leather Trader>
 					["coord"] = { 78.6, 76.2, 241 },
@@ -82,7 +88,9 @@ _.Zones =
 				n(50386, {	-- Sal Ferraga <Cloth Trader>
 					["coord"] = { 78.6, 76.8, 241 },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_TAILORING_RECIPES, {}),
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 3364}, -- Borya <Tailoring Supplies>
+					},
 				}),
 				n(50134, {	-- Senthii <Shard Trader>
 					["coord"] = { 78.6, 77.0, 241 },

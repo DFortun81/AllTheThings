@@ -1798,11 +1798,14 @@ _.Zones =
 				n(5512,   {	-- Kaita Deepforge
 					["coord"] = { 63.2, 37.6, 84 },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_BLACKSMITHING_RECIPES, {
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 3356}, -- Sumi <Blacksmithing Supplies>
+					},
+					["groups"] = {
 						i(12162, {	-- Plans: Hardened Iron Shortsword
 							["isLimited"] = true,
 						}),
-					}),
+					},
 				}),
 				n(43694,  {	-- Katie Stokx
 					["coord"] = { 77.0, 67.8, 84 },

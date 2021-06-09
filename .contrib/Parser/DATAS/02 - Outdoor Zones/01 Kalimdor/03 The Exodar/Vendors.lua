@@ -33,7 +33,10 @@ _.Zones =
 				n(16713, {	-- Arras <Blacksmithing Supplies>
 					["coord"] = { 61.3, 89.3, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_BLACKSMITHING_RECIPES, {
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 3356}, -- Sumi <Blacksmithing Supplies>
+					},
+					["groups"] = {
 						i(23591, {	-- Plans: Adamantite Cleaver
 							["isLimited"] = true,
 						}),
@@ -46,7 +49,7 @@ _.Zones =
 						i(23593, {	-- Plans: Adamantite Rapier
 							["isLimited"] = true,
 						}),
-					}),
+					},
 				}),
 				n(17512, {	-- Arred <Jewelcrafting Supplies>
 					["coord"] = { 45.5, 25.3, THE_EXODAR },
@@ -128,14 +131,17 @@ _.Zones =
 				n(16767, {	-- Neii <Tailoring Supplies>
 					["coord"] = { 64.7, 68.5, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_TAILORING_RECIPES, {
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 3364}, -- Borya <Tailoring Supplies>
+					},
+					["groups"] = {
 						i(21892),	-- Pattern: Bolt of Imbued Netherweave
 						i(21894, {	-- Pattern: Bolt of Soulcloth
 							["isLimited"] = true,
 						}),
 						i(21896),	-- Pattern: Netherweave Robe
 						i(21897),	-- Pattern: Netherweave Tunic
-					}),
+					},
 				}),
 				n(16718, {	-- Phea <Cooking Supplies>
 					["coord"] = { 54.4, 26.3, THE_EXODAR },
