@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(IRONFORGE, {	-- Ironforge
+		m(IRONFORGE, {
 			n(QUESTS, {
 				q(38396, {	-- A Curious Oddity
 					["sourceQuests"] = { 38394 },	-- Completionism

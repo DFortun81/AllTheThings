@@ -11,8 +11,6 @@ _.Zones =
 				q(40235),	-- Abrogator Arbitrator
 				q(38462),	-- Breaching the Barrier
 				q(38223),	-- Dark Ascension
-				q(38270),	-- Finding the Killer
-				q(38271),	-- Following the Bloody Path
 				q(38267, {	-- Friends Above
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -26,15 +24,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(38421, {	-- Garrison Campaign: Onslaught at Auchindoun
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(38415, {	-- Garrison Campaign: Onslaught at Auchindoun
-					["races"] = HORDE_ONLY,
-				}),
-				q(38453, {	-- Garrison Campaign: The Bane of the Bleeding Hollow
-					["races"] = HORDE_ONLY,
-				}),
-				q(38560, {	-- Garrison Campaign: The Bane of the Bleeding Hollow
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(38561, {	-- Garrison Campaign: The Warlock
@@ -51,8 +40,6 @@ _.Zones =
 				q(39395),	-- Oronok's Offer
 				q(38273),	-- Spirits of the Bleeding Hollow
 				q(34366),	-- Tanaan 01: Front of the Portal
-				q(38272),	-- The Bleeding Hollow
-				q(38274),	-- The Eye of Kilrogg
 				q(40237),	-- Work Work Stoppage
 				q(38989, {	-- Your Orders, General?
 					["races"] = HORDE_ONLY,
@@ -216,6 +203,11 @@ _.Zones =
 					},
 				}),
 				q(38045, {	-- Bleeding the Bleeding Hollow
+					["sourceQuest"] = 38453,
+					["coord"] = { 61.5, 45.9, 534 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(38045, {	-- Bleeding the Bleeding Hollow
 					["coord"] = { 58.5, 60.4, 534 },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -305,10 +297,30 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
+				q(38270, {	-- Finding the Killer
+					["sourceQuests"] = { 38453, 38560 },
+					["provider"] = { "n", 91299 },	-- Ariok
+					["coord"] = { 27, 44.4, 534 },
+				}),
+				q(38271, {	-- Following the Bloody Path
+					["sourceQuest"] = 38270,
+					["provider"] = { "n", 91348 },	-- Ariok
+					["coord"] = { 27, 44.4, 534 },
+				}),
 				q(38415, {	-- Garrison Campaign: Onslaught at Auchindoun
 					["provider"] = { "n", 90481 },	-- Draka
 					["coord"] = { 61.4, 45.7, 534 },
 					["races"] = HORDE_ONLY,
+				}),
+				q(38453, {	-- Garrison Campaign: The Bane of the Bleeding Hollow
+					["provider"] = { "n", 90481 },	-- Draka
+					["coord"] = { 61.4, 45.7, 534 },
+					["races"] = HORDE_ONLY,
+				}),
+				q(38560, {	-- Garrison Campaign: The Bane of the Bleeding Hollow
+					["provider"] = { "n", 90481 },	-- Exarch Yrel
+					["coord"] = { 58.4, 60.2, 534 },
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(39514, {	-- Harnessing Their Power
 					["provider"] = { "n", 96014 },	-- Shadow Hunter Denjai
@@ -437,6 +449,11 @@ _.Zones =
 				q(38577, {	-- The Battle for the West
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 37935,	-- The Assault Base
+				}),
+				q(38272, {	-- The Bleeding Hollow
+					["sourceQuest"] = 38271,
+					["provider"] = { "n", 91421 },	-- Ariok
+					["coord"] = { 32.5, 37.5, 534 },
 				}),
 				q(39394, {	-- The Cipher of Damnation
 					["provider"] = { "n", 92120 },	-- Oronok Torn-heart

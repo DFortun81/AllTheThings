@@ -5,7 +5,7 @@
 _.PVP =
 {
 	n(-10058, {	-- World
-		["g"] = bubbleDown({["u"] = 12}, {
+		["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
 			n(QUESTS, {
 				q(58274, {	-- Servant of N'Zoth
 					["races"] = ALLIANCE_ONLY,

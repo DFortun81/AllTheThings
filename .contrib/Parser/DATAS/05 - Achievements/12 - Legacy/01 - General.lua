@@ -12,7 +12,7 @@ TODO:
 
 _.Achievements =
 {
-	n(-9968, {	-- Legacy		NOTE: MOST WILL NEED THE un(2) TAG
+	n(-9968, {	-- Legacy
 		n(-9955, {	-- General
 			un(REMOVED_FROM_GAME, ach(2921)),		-- A Quick Shave (25 player)
 			un(REMOVED_FROM_GAME, a(ach(8030))),	-- A Test of Valor (Alliance)

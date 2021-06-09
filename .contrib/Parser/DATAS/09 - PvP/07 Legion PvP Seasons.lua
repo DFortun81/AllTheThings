@@ -5,7 +5,7 @@
 _.PVP =
 {
 	n(-9982, {	-- Legion
-		["g"] = bubbleDown({["u"] = 12}, {
+		["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
 			n(-682, {	-- Vindictive Gladiator: Legion Season 1
 				n(-9914, {	-- Alliance
 					n(-660, {	-- Aspirant / Combatant PvP Gear

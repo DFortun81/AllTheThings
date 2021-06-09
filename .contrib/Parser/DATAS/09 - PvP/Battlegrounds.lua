@@ -5,7 +5,7 @@
 _.PVP =
 {
 	n(-304, {	-- Battlegrounds
-		["g"] = bubbleDown({["u"] = 12}, {
+		["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
 			f(55, {	-- Consumables
 				["description"] = "These are commonly sold by PVP Vendors and can also be acquired from reward crates.",
 				["g"] = {

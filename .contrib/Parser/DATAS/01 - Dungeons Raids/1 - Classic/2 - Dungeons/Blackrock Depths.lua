@@ -5,7 +5,7 @@
 _.Instances = { tier(1, {	-- Classic
 	inst(228, { 	-- Blackrock Depths
 		["lvl"] = 42,
-		["mapID"] = 242,
+		["mapID"] = BLACKROCK_DEPTHS,
 		["maps"] = { 243 },
 		["coord"] = { 39.06, 18.12, 35 },	-- Blackrock Depths, Blackrock Mountain [Blackrock Depths]
 		["g"] = {

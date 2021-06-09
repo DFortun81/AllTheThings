@@ -75,6 +75,12 @@ _.ExpansionFeatures =
 							i(139730),	-- Bracers of the Dreamgrove
 						},
 					}),
+					q(40643, {	-- A Summons From Moonglade
+						["sourceQuests"] = { 44663 },	-- In the Blink of an Eye
+						["provider"] = { "n", 101061 },  -- Archdruid Hamuul Runetotem
+						["coord"] = { 57.8, 45.8, 627 },
+						["classes"] = { DRUID },
+					}),
 					q(42439, {	-- Aid for the Ashen
 						["sourceQuests"] = { 42428 },	-- The Shrine of Ashamane
 						["provider"] = { "n", 107392 },	-- Delandros Shimmermoon
@@ -363,6 +369,7 @@ _.ExpansionFeatures =
 					}),
 					q(46154, {	-- Furthering Knowledge
 						["u"] = REMOVED_FROM_GAME,
+						["classes"] = { DRUID },
 					}),
 					q(42037, {	-- Gathering the Dreamweavers
 						["classes"] = { DRUID },
@@ -832,7 +839,7 @@ _.ExpansionFeatures =
 						},
 						["coord"] = { 43.5, 58.3, 646 },
 						["sourceQuests"] = { 46674 },	-- The Preservation of Nature
-						["maps"] = { 646 },
+						["maps"] = { 646 },	-- Broken Shore
 					}),
 					q(42035, {	-- Tracking the Enemy
 						["classes"] = { DRUID },
@@ -895,7 +902,7 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 118105 },	-- Grovewarden Proudhorn
 							["coord"] = { 43.6, 63.6, 646 },
 							["sourceQuests"] = { 46246 },	-- Strike Them Down
-							["maps"] = { 646 },
+							["maps"] = { 646 },	-- Broken Shore
 						}),
 						q(46318, {	-- Defense of Aviana
 							["provider"] = { "n", 106299 },	-- Thisalee Crow
@@ -1050,27 +1057,27 @@ _.ExpansionFeatures =
 									["description"] = "If this quest has a checkmark next to it, then that means the stone is active.",
 									["icon"] = "Interface\\Icons\\achievement_zone_feralas",
 									["coords"] = {
-										{ 48.0, 6.0, 69 },
-										{ 48.0, 10.0, 69 },
-										{ 49.5, 4.4, 69 },
-										{ 49.0, 11.0, 69 },
-										{ 49.4, 12.0, 69 },
-										{ 50.8, 4.4, 69 },
-										{ 50.0, 11.0, 69 },
-										{ 50.0, 15.0, 69 },
-										{ 50.1, 15.9, 69 },
-										{ 51.5, 5.3, 69 },
-										{ 51.0, 10.0, 69 },
-										{ 51.3, 15.5, 69 },
-										{ 52.0, 6.0, 69 },
-										{ 52.0, 10.0, 69 },
-										{ 52.8, 15.4, 69 },
-										{ 53.8, 14.9, 69 },
-										{ 54.0, 6.0, 69 },
-										{ 54.0, 7.8, 69 },
-										{ 54.3, 10.3, 69 },
-										{ 54.0, 12.9, 69 },
-										{ 54.0, 15.0, 69 },
+										{ 48.0, 6.0, FERALAS },
+										{ 48.0, 10.0, FERALAS },
+										{ 49.5, 4.4, FERALAS },
+										{ 49.0, 11.0, FERALAS },
+										{ 49.4, 12.0, FERALAS },
+										{ 50.8, 4.4, FERALAS },
+										{ 50.0, 11.0, FERALAS },
+										{ 50.0, 15.0, FERALAS },
+										{ 50.1, 15.9, FERALAS },
+										{ 51.5, 5.3, FERALAS },
+										{ 51.0, 10.0, FERALAS },
+										{ 51.3, 15.5, FERALAS },
+										{ 52.0, 6.0, FERALAS },
+										{ 52.0, 10.0, FERALAS },
+										{ 52.8, 15.4, FERALAS },
+										{ 53.8, 14.9, FERALAS },
+										{ 54.0, 6.0, FERALAS },
+										{ 54.0, 7.8, FERALAS },
+										{ 54.3, 10.3, FERALAS },
+										{ 54.0, 12.9, FERALAS },
+										{ 54.0, 15.0, FERALAS },
 									},
 									["sourceQuests"] = { 44326 },	-- Daily Dreamway Event Roll
 								}),

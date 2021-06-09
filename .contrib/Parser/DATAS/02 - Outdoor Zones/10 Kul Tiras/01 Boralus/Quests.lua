@@ -918,6 +918,7 @@ _.HiddenQuestTriggers = {
 	-- Outpost Upgrades
 	q(54292),	-- Brennadam completed
 	q(54261),	-- Upgrade: Brennadam started
+	q(54296),	-- Castaway Point completed
 	q(54283),	-- Upgrade: Castaway Point started
 	q(54304),	-- Upgrade: Arom's Stand started
 };

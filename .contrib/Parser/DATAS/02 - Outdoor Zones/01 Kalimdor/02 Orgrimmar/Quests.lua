@@ -2615,6 +2615,12 @@ _.Zones =
 					["coord"] = { 39.4, 79.6, 85 },
 					["races"] = HORDE_ONLY,
 				}),
+				q(60968, {	-- Warlords of Draenor: Onward to Adventure in Draenor
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
+					["coord"] = { 40.8, 79.9, 85 },
+					["races"] = HORDE_ONLY,
+				}),
 				q(28466, {	-- Weapons of Darkness
 					["sourceQuests"] = { 28302 },	-- Meet with Sunwalker Atohmo
 					["provider"] = { "n", 44725 },	-- Sunwalker Atohmo

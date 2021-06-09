@@ -2,7 +2,7 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 
-_.Holidays = bubbleDown({ ["u"] = 27 },	-- Day of the Dead Filter
+_.Holidays = bubbleDown({ ["u"] = HOLIDAY_DAY_OF_THE_DEAD },
 {
 	holiday(307365, {	-- Day of the Dead
 		n(QUESTS, {

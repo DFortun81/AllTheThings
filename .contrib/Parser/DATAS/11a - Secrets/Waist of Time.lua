@@ -19,7 +19,7 @@ _.Secrets =
 			47,
 			51,
 			66,
-			69,
+			FERALAS,
 			SHADOWMOON_VALLEY,
 			BLADES_EDGE_MOUNTAINS,
 			TEROKKAR_FOREST,
@@ -193,7 +193,7 @@ _.Secrets =
 				["questID"] = 52915,
 				["sourceQuests"] = { 52914 },
 				["description"] = "Feralas\n\nMiddle of the remains and table, sticking out of the ground.\n\nThe Ashed Torch reads:\n\n\"<Something is written here.>\n\n...a daft tormenter's fog.\"",
-				["coord"] = { 60.8, 67.8, 69 },	-- Ashed Torch
+				["coord"] = { 60.8, 67.8, FERALAS },	-- Ashed Torch
 			}),
 			o(294312, { 	-- Grimmy's List of Friends
 				["model"] = 305392,

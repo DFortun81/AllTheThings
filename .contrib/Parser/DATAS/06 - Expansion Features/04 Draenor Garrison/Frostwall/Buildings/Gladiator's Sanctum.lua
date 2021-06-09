@@ -9,7 +9,7 @@ _.ExpansionFeatures =
 			n(-99, {	-- Buildings
 				garrisonBuilding(161, {	-- Gladiator's Sanctum (rank 1: 159, rank 2: 160, rank 3: 161)
 					["races"] = HORDE_ONLY,
-					["g"] = bubbleDown({["u"] = 12}, {
+					["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
 						n(ACHIEVEMENTS, {
 							ach(9495, {		-- The Bone Collector
 								["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",

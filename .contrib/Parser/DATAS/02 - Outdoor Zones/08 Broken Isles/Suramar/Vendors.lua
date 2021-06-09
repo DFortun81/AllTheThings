@@ -307,6 +307,17 @@ _.Zones =
 						}),
 					},
 				}),
+				n(109562, {	-- Sundries Merchant
+					["coord"] = { 50.0, 77.3, 680 },
+					["g"] = {
+						i(147768, {	-- Suramarian Sapphire
+							["classes"] = { PALADIN },
+							["cost"] = {
+								{ "c", 1155, 500 },	-- 500x Ancient Mana
+							},
+						}),
+					},
+				}),
 				n(92265,  {	-- Urael <Nal'ryssa's Minion>
 					["coord"] = { 30.0, 53.2, 680 },
 					["g"] = {

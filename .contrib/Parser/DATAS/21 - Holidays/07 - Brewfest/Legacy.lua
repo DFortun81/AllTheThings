@@ -68,7 +68,7 @@ _.Holidays =
 						["provider"] = { "n", 26719 },	-- Brewfest Spy
 						["sourceQuests"] = { 11442, },	-- Save Brewfest!
 						["isDaily"] = true,
-						["maps"] = { 242, },	-- Blackrock Depths
+						["maps"] = { BLACKROCK_DEPTHS, },
 					}),
 					q(12193, {	-- Say, There Wouldn't Happen to be a Souvenir This Year, Would There? (A)
 						["providers"] = {

@@ -347,7 +347,7 @@ _.Craftables =
 		}),
 		prof(LEATHERWORKING, {
 			n(-349, { 	-- Cosmetic
-				un(29, i(151791)),	-- Winter Boots
+				un(HOLIDAY_FEAST_OF_WINTER_VEIL, i(151791)),	-- Winter Boots
 			}),
 			n(-44, { 	-- Leather
 				i(128890),	-- Dreadleather Belt

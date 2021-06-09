@@ -10,7 +10,7 @@ _.Zones =
 					["description"] = "This vendor is only accessible when the Alliance controls Halaa.",
 					["coord"] = { 42.8, 42.6, NAGRAND },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = bubbleDown({["u"] = 12}, {	
+					["groups"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
 						i(24208, {	-- Design: Mystic Dawnstone
 							["isLimited"] = true,
 						}),

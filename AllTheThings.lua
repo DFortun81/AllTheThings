@@ -1250,10 +1250,11 @@ end
 app.GetSourceID = GetSourceID;
 app.MaximumItemInfoRetries = 400;
 local function GetUnobtainableTexture(group)
+	if not group.u then return; end
 	-- old reasons are set to 0, so use 1 instead
 	-- if unobtainable stuff changes again, this logic may need to adjust
-	local obtainType = group.u or 1;
-	local index = math.max(L["UNOBTAINABLE_ITEM_REASONS"][obtainType][1],1);
+	local obtainType = group.u;
+	local index = L["UNOBTAINABLE_ITEM_REASONS"][obtainType][1];
 	if group.itemID or group.spellID then
 		-- not NYI
 		if obtainType > 1 and
@@ -1263,7 +1264,7 @@ local function GetUnobtainableTexture(group)
 			index = 3;
 		end
 	end
-	return L["UNOBTAINABLE_ITEM_TEXTURES"][index or 1];
+	return L["UNOBTAINABLE_ITEM_TEXTURES"][index or 0];
 end
 local function SetIndicatorIcon(self, data)
 	if data.saved then
@@ -1280,8 +1281,11 @@ local function SetIndicatorIcon(self, data)
 			self:SetTexture(app.asset(asset));
 			return true;
 		elseif data.u then
-			self:SetTexture(GetUnobtainableTexture(data));
-			return true;
+			local unobTexture = GetUnobtainableTexture(data);
+			if unobTexture then
+				self:SetTexture(unobTexture);
+				return true;
+			end
 		end
 	end
 end
@@ -2339,6 +2343,20 @@ subroutines = {
 			{ "postprocess" },
 		};
 	end,
+	-- Common Cataclysm Recipes
+	["common_cata_recipes"] = function(npcID)
+		return {
+			{"select", "creatureID", npcID},	-- Main Vendor
+			{"pop"},	-- Remove Main Vendor and push his children into the processing queue.
+			{"is", "itemID"},	-- Only Items
+			-- Tailoring
+			{"exclude", "itemID", 6270},	-- Pattern: Blue Linen Vest
+			{"exclude", "itemID", 6274},	-- Pattern: Blue Overalls
+			{"exclude", "itemID", 10314},	-- Pattern: Lavender Mageweave Shirt
+			{"exclude", "itemID", 10317},	-- Pattern: Pink Mageweave Shirt
+			{"exclude", "itemID", 5772},	-- Pattern: Red Woolen Bag
+		}
+	end,
 };
 ResolveSymbolicLink = function(o)
 	if o and o.sym then
@@ -2709,7 +2727,10 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 				local o = { prefix = indent, group = group, right = right };
 				-- i wanted an icon to show "have you done this non-collectible thing which may contain collectible things?" but it looks bad
 				-- if not group.collectible and group.trackable then o.right = GetCompletionIcon(group.saved) .. o.right; end
-				if group.u then o.prefix = string.sub(o.prefix, 4) .. "|T" .. GetUnobtainableTexture(group) .. ":0|t "; end
+				local unobTexture = GetUnobtainableTexture(group);
+				if unobTexture then
+					o.prefix = string.sub(o.prefix, 4) .. "|T" .. unobTexture .. ":0|t ";
+				end
 				tinsert(entries, o);
 
 				-- Only go down one more level.
@@ -3303,7 +3324,12 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						text = string.gsub(text, source, replacement);
 					end
 					if j.u then
-						tinsert(unfiltered, text .. " |T" .. GetUnobtainableTexture(j) .. ":0|t");
+						local unobTexture = GetUnobtainableTexture(j);
+						if unobTexture then
+							tinsert(unfiltered, text .. " |T" .. unobTexture .. ":0|t");
+						else
+							tinsert(unfiltered, text);
+						end
 					elseif not app.RecursiveClassAndRaceFilter(j.parent) then
 						tinsert(unfiltered, text .. " |TInterface\\FriendsFrame\\StatusIcon-Away:0|t");
 					elseif not app.RecursiveUnobtainableFilter(j.parent) then
@@ -12329,11 +12355,16 @@ function app:CreateMiniListForGroup(group)
 			-- end;
 		end
 		if showing and ((group.key == "questID" and group.questID) or group.sourceQuests) then
-			-- This is a quest object. Let's show prereqs and breadcrumbs.
-			-- This causes a popout insertion into the Main list when a popout group has a parent (in Main list) with the same questID (#714)
-			-- if group.questID ~= nil and group.parent and group.parent.questID == group.questID then
-			-- 	group = group.parent;
-			-- end
+			-- if the group was created from a popout and thus contains its own pre-req quests already, then clean out direct quest entries from the group
+			if group.g then
+				local noQuests = {};
+				for _,g in pairs(group.g) do
+					if g.key ~= "questID" then
+						tinsert(noQuests, g);
+					end
+				end
+				group.g = noQuests;
+			end
 			-- Create a copy of the root group
 			local root = CreateObject(group);
 			root.collectible = not root.repeatable;
@@ -12540,14 +12571,12 @@ function app:CreateMiniListForGroup(group)
 				app.AccountWideQuests = oldQuestTracking;
 			end;
 			popout:SetScript("OnEvent", function(self, e, ...)
-				print("EVENT", e, ...)
+				-- print("EVENT", e, ...)
 				if self:IsVisible() then
-					print("QUEST_LOG_UPDATE:questChainWindow")
+					-- print("QUEST_LOG_UPDATE:questChainWindow")
 					self:Update();
 				end
 			end);
-			-- extra indent for quest chain window
-			-- popout.data.indent = 1;
 		end
 	end
 	-- showing the quest chain window, register any local event handlers
@@ -17429,6 +17458,38 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 					self.retry = true;
 				end
 			end
+			self.BuildMapAndChildren = function(self, mapObject, includeAll, includePermanent, includeQuests)
+				if not mapObject.mapID then return; end
+
+				-- print("Build Map",mapObject.mapID,mapObject.text);
+
+				-- Merge Tasks for Zone
+				self:MergeTasks(mapObject, includeAll, includePermanent, includeQuests);
+
+				-- Merge Storylines for Zone
+				self:MergeStorylines(mapObject, includeAll, includePermanent, includeQuests);
+
+				-- look for quests on map child maps as well
+				local mapChildInfos = C_Map.GetMapChildrenInfo(mapObject.mapID, 3, false);
+				if mapChildInfos then
+					for i,mapInfo in ipairs(mapChildInfos) do
+						-- start fetching the data while other stuff is setup
+						C_QuestLine.RequestQuestLinesForMap(mapInfo.mapID);
+						local subMapObject = app.CreateMapWithStyle(mapInfo.mapID);
+
+						-- Merge Tasks for Zone
+						self:MergeTasks(subMapObject, includeAll, includePermanent, includeQuests);
+
+						-- Merge Storylines for Zone
+						self:MergeStorylines(subMapObject, includeAll, includePermanent, includeQuests);
+
+						-- Build children of this map as well
+						self:BuildMapAndChildren(subMapObject, includeAll, includePermanent, includeQuests);
+
+						MergeObject(mapObject.g, subMapObject);
+					end
+				end
+			end
 			self.Rebuild = function(self, no)
 				-- Already filled with data and nothing needing to retry, just give it a forced update pass since data for quests should now populate dynamically
 				if not self.retry and #self.data.g > 1 then
@@ -17450,16 +17511,13 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 				-- Acquire all of the world quests
 				for _,pair in ipairs(worldMapIDs) do
 					local mapID = pair[1];
-					-- print("WQ.WorldMapIDs." .. tostring(mapID))
+					-- print("WQ.WorldMapIDs." , mapID)
 					-- start fetching the data while other stuff is setup
 					C_QuestLine.RequestQuestLinesForMap(mapID);
 					local mapObject = app.CreateMapWithStyle(mapID);
 
-					-- Merge Tasks for Zone
-					self:MergeTasks(mapObject, includeAll, includePermanent, includeQuests);
-
-					-- Merge Storylines for Zone
-					self:MergeStorylines(mapObject, includeAll, includePermanent, includeQuests);
+					-- Build top-level maps all the way down
+					self:BuildMapAndChildren(mapObject, includeAll, includePermanent, includeQuests);
 
 					-- Invasions
 					local mapIDPOIPairs = pair[2];
@@ -17498,24 +17556,6 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 								local subMapObject = app.CreateMapWithStyle(arr[1]);
 								MergeObject(mapObject.g, subMapObject);
 							end
-						end
-					end
-
-					-- look for quests on 'Zone' map child maps as well
-					local mapChildInfos = C_Map.GetMapChildrenInfo(mapID, 3, false);
-					if mapChildInfos then
-						for i,mapInfo in ipairs(mapChildInfos) do
-							-- start fetching the data while other stuff is setup
-							C_QuestLine.RequestQuestLinesForMap(mapInfo.mapID);
-							local subMapObject = app.CreateMapWithStyle(mapInfo.mapID);
-
-							-- Merge Tasks for Zone
-							self:MergeTasks(subMapObject, includeAll, includePermanent, includeQuests);
-
-							-- Merge Storylines for Zone
-							self:MergeStorylines(subMapObject, includeAll, includePermanent, includeQuests);
-
-							MergeObject(mapObject.g, subMapObject);
 						end
 					end
 
@@ -17705,10 +17745,10 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 				end
 
 				-- if self.retry then
-				-- 	-- print("Missing API quest data on this World Quest refresh");
-				-- 	-- TODO: try turning this into a C_Timer callback to auto-refresh after a second?
-				-- 	self.retry = nil;
-				-- 	return true;
+					-- print("Missing API quest data on this World Quest refresh");
+					-- TODO: try turning this into a C_Timer callback to auto-refresh after a second?
+					-- self.retry = nil;
+					-- return true;
 				-- end
 
 				-- Put a 'Clear World Quests' click at the bottom
@@ -18979,9 +19019,10 @@ app.events.VARIABLES_LOADED = function()
 	app.RaceID = raceID;
 	app.RaceIndex = raceIndex;
 	local name, realm = UnitName("player");
-	local _, id = GetClassInfo(classID);
+	local className = GetClassInfo(classID);
 	app.GUID = UnitGUID("player");
-	app.Me = "|c" .. RAID_CLASS_COLORS[id].colorStr .. name .. "-" .. (realm or GetRealmName()) .. "|r";
+	app.Me = "|c" .. RAID_CLASS_COLORS[class].colorStr .. name .. "-" .. (realm or GetRealmName()) .. "|r";
+	app.ClassName = "|c" .. RAID_CLASS_COLORS[class].colorStr .. className .. "|r";
 	app.Faction = UnitFactionGroup("player");
 	if app.Faction == "Horde" then
 		app.FactionID = Enum.FlightPathFaction.Horde;

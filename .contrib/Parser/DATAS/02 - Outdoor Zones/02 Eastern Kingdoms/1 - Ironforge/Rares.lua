@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(IRONFORGE, {	-- Ironforge
+		m(IRONFORGE, {
 			n(RARES, {
 				n(51596, {	-- Wildhammer Fact Checker
 					["coord"] = { 38.6, 54.8, 87 },

@@ -2,7 +2,7 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 
-_.Holidays = bubbleDown({["u"] = 28},
+_.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 {
 	holiday(235466, {	-- Pilgrim's Bounty
 		n(VENDORS, {
@@ -19,19 +19,19 @@ _.Holidays = bubbleDown({["u"] = 28},
 				},
 				["g"] = {
 					i(46806, {	-- Recipe: Candied Sweet Potato
-						["u"] = 28,
+						["u"] = HOLIDAY_PILGRIMS_BOUNTY,
 					}),
 					i(46805, {	-- Recipe: Cranberry Chutney
-						["u"] = 28,
+						["u"] = HOLIDAY_PILGRIMS_BOUNTY,
 					}),
 					i(46804, {	-- Recipe: Pumpkin Pie
-						["u"] = 28,
+						["u"] = HOLIDAY_PILGRIMS_BOUNTY,
 					}),
 					i(46807, {	-- Recipe: Slow-Roasted Turkey
-						["u"] = 28,
+						["u"] = HOLIDAY_PILGRIMS_BOUNTY,
 					}),
 					i(46803, {	-- Recipe: Spice Bread Stuffing
-						["u"] = 28,
+						["u"] = HOLIDAY_PILGRIMS_BOUNTY,
 					}),
 				},
 			}),
@@ -48,19 +48,19 @@ _.Holidays = bubbleDown({["u"] = 28},
 				},
 				["g"] = {
 					i(44859, {	-- Recipe: Candied Sweet Potato
-						["u"] = 28,
+						["u"] = HOLIDAY_PILGRIMS_BOUNTY,
 					}),
 					i(44858, {	-- Recipe: Cranberry Chutney
-						["u"] = 28,
+						["u"] = HOLIDAY_PILGRIMS_BOUNTY,
 					}),
 					i(44862, {	-- Recipe: Pumpkin Pie
-						["u"] = 28,
+						["u"] = HOLIDAY_PILGRIMS_BOUNTY,
 					}),
 					i(44861, {	-- Recipe: Slow-Roasted Turkey
-						["u"] = 28,
+						["u"] = HOLIDAY_PILGRIMS_BOUNTY,
 					}),
 					i(44860, {	-- Recipe: Spice Bread Stuffing
-						["u"] = 28,
+						["u"] = HOLIDAY_PILGRIMS_BOUNTY,
 					}),
 				},
 			}),

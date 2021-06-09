@@ -763,45 +763,45 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(28996, {	-- Candy Bucket — Feralas, Camp Ataya, Horde
 				["isYearly"] = true,
-				["coord"] = { 41.4, 15.6, 69 },
+				["coord"] = { 41.4, 15.6, FERALAS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 69 },	-- Feralas
+				["maps"] = { FERALAS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12386, {	-- Candy Bucket — Feralas, Camp Mojache, Horde
 				["isYearly"] = true,
-				["coord"] = { 74.8, 45.1, 69 },
+				["coord"] = { 74.8, 45.1, FERALAS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 69 },	-- Feralas
+				["maps"] = { FERALAS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(28952, {	-- Candy Bucket — Feralas, Dreamer's Rest, Alliance
 				["isYearly"] = true,
-				["coord"] = { 51.1, 17.8, 69 },
+				["coord"] = { 51.1, 17.8, FERALAS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 69 },	-- Feralas
+				["maps"] = { FERALAS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12350, {	-- Candy Bucket — Feralas, Feathermoon Stronghold, Alliance
 				["isYearly"] = true,
-				["coord"] = { 46.3, 45.2, 69 },
+				["coord"] = { 46.3, 45.2, FERALAS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 69 },	-- Feralas
+				["maps"] = { FERALAS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(28998, {	-- Candy Bucket — Feralas, Stonemaul Hold, Horde
 				["isYearly"] = true,
-				["coord"] = { 52.0, 47.7, 69 },
+				["coord"] = { 52.0, 47.7, FERALAS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 69 },	-- Feralas
+				["maps"] = { FERALAS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},

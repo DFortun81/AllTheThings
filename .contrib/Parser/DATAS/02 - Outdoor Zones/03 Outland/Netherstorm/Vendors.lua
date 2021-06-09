@@ -18,7 +18,7 @@ _.Zones =
 				n(54649,  {	-- Big Zokk Torquewrench <Classic Weapons>
 					["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.|r",
 					["coord"] = { 33.2, 64.0, NETHERSTORM },
-					["g"] = bubbleDown({["u"] = 12}, {
+					["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
 						a(i(77549)),	-- Replica Grand Marshal's Demolisher
 						a(i(77550)),	-- Replica Grand Marshal's Swiftblade
 						a(i(77551)),	-- Replica Grand Marshal's Dirk
@@ -60,40 +60,6 @@ _.Zones =
 						h(i(77593)),	-- Replica High Warlord's Tome of Destruction
 						h(i(77597)),	-- Replica High Warlord's Shield Wall
 					}),
-				}),
-				n(34094, {	-- Grex Brainboiler <Veteran Arena Vendor> [Note: Yes, two NPCs with same name. One is removed]
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(51534)),	-- Wrathful Gladiator's Tabard [Elite Rating]
-						un(REMOVED_FROM_GAME, i(51403)),	-- Wrathful Gladiator's Acute Staff [Elite Rating]
-						un(REMOVED_FROM_GAME, i(51398)),	-- Wrathful Gladiator's Blade of Celerity [Elite Rating]
-						un(REMOVED_FROM_GAME, i(51393)),	-- Wrathful Gladiator's Claymore [Elite Rating]
-						un(REMOVED_FROM_GAME, i(51401)),	-- Wrathful Gladiator's Combat Staff [Elite Rating]
-						un(REMOVED_FROM_GAME, i(51391)),	-- Wrathful Gladiator's Crusher [Elite Rating]
-						un(REMOVED_FROM_GAME, i(51440)),	-- Wrathful Gladiator's Dicer [Elite Rating]
-						un(REMOVED_FROM_GAME, i(51442)),	-- Wrathful Gladiator's Dirk [Elite Rating]
-						un(REMOVED_FROM_GAME, i(51528)),	-- Wrathful Gladiator's Eviscerator [Elite Rating]
-						un(REMOVED_FROM_GAME, i(51524)),	-- Wrathful Gladiator's Grasp [Elite Rating]
-						un(REMOVED_FROM_GAME, i(51432)),	-- Wrathful Gladiator's Greatstaff [Elite Rating]
-						un(REMOVED_FROM_GAME, i(51481)),	-- Wrathful Gladiator's Halberd [Elite Rating]
-						un(REMOVED_FROM_GAME, i(51516)),	-- Wrathful Gladiator's Handaxe [Elite Rating]
-						un(REMOVED_FROM_GAME, i(51529)),	-- Wrathful Gladiator's Left Claw [Elite Rating]
-						un(REMOVED_FROM_GAME, i(51444)),	-- Wrathful Gladiator's Left Razor [Elite Rating]
-						un(REMOVED_FROM_GAME, i(51457)),	-- Wrathful Gladiator's Light Staff [Elite Rating]
-						un(REMOVED_FROM_GAME, i(51522)),	-- Wrathful Gladiator's Longblade [Elite Rating]
-						un(REMOVED_FROM_GAME, i(51399)),	-- Wrathful Gladiator's Mageblade [Elite Rating]
-						un(REMOVED_FROM_GAME, i(51446)),	-- Wrathful Gladiator's Punisher [Elite Rating]
-						un(REMOVED_FROM_GAME, i(51395)),	-- Wrathful Gladiator's Recurve [Elite Rating]
-						un(REMOVED_FROM_GAME, i(51412)),	-- Wrathful Gladiator's Repeater [Elite Rating]
-						un(REMOVED_FROM_GAME, i(51454)),	-- Wrathful Gladiator's Salvation [Elite Rating]
-						un(REMOVED_FROM_GAME, i(51450)),	-- Wrathful Gladiator's Shotgun [Elite Rating]
-						un(REMOVED_FROM_GAME, i(51405)),	-- Wrathful Gladiator's Skirmish Staff [Elite Rating]
-						un(REMOVED_FROM_GAME, i(51518)),	-- Wrathful Gladiator's Spike [Elite Rating]
-						un(REMOVED_FROM_GAME, i(51526)),	-- Wrathful Gladiator's Splitter [Elite Rating]
-						un(REMOVED_FROM_GAME, i(51389)),	-- Wrathful Gladiator's Sunderer [Elite Rating]
-						un(REMOVED_FROM_GAME, i(51448)),	-- Wrathful Gladiator's Swiftblade [Elite Rating]
-						un(REMOVED_FROM_GAME, i(51520)),	-- Wrathful Gladiator's Truncheon [Elite Rating]
-					},
 				}),
 				n(33918, {  -- Kezzik the Striker <Veteran Arena Vendor> [Note: Yes, two NPCs with same name. One is removed]
 					["u"] = REMOVED_FROM_GAME,
@@ -1044,7 +1010,7 @@ _.Zones =
 				n(40209,  {	-- Grex Brainboiler <Classic Alliance Cloth & Leather>
 					["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase. |r",
 					["coord"] = { 33.0, 64.0, NETHERSTORM },
-					["g"] = bubbleDown({["u"] = 12}, {
+					["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
 						i(77670),	-- Replica Field Marshal's Dragonhide Breastplate
 						i(77692),	-- Replica Field Marshal's Satin Mantle
 						i(77710),	-- Replica Field Marshal's Coronal

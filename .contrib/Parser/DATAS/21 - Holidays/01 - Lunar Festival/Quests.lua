@@ -543,8 +543,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8679,  {	-- Grimtotem the Elder
 				["provider"] = { "n", 15581 },	-- Elder Grimtotem
 				["isYearly"] = true,
-				["coord"] = { 76.7, 37.8, 69 },
-				["maps"] = { 69 },	-- Feralas
+				["coord"] = { 76.7, 37.8, FERALAS },
+				["maps"] = { FERALAS },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(10, {	-- Elder Grimtotem in Feralas
@@ -567,8 +567,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8685,  {	-- Mistwalker the Elder
 				["provider"] = { "n", 15587 },	-- Elder Mistwalker
 				["isYearly"] = true,
-				["coord"] = { 62.5, 30.9, 69 },
-				["maps"] = { 69 },	-- Feralas
+				["coord"] = { 62.5, 30.9, FERALAS },
+				["maps"] = { FERALAS },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(11, {	-- Elder Mistwalker in Dire Maul
@@ -1078,7 +1078,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["coord"] = { 21.1, 38.5, 36 },	-- entrance to Blackrock Mountain
 				["maps"] = {
 					36,		-- Burning Steppes
-					242,	-- Blackrock Depths
+					BLACKROCK_DEPTHS,
 				},
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {

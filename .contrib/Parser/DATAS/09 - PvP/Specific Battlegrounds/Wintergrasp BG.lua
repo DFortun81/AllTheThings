@@ -8,7 +8,7 @@ _.PVP =
 		m(1334, {	-- Wintergrasp
 			["achievementID"] = 1752,	--  Master of Wintergrasp
 			--	["description"] =
-			["g"] = bubbleDown({["u"] = 12}, {
+			["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
 				n(ACHIEVEMENTS, {
 					ach(1752, {	-- Master of Wintergrasp
 						ach(1737, {	-- Destruction Derby (A)

@@ -6,7 +6,7 @@ _.PVP =
 {
 	n(-240, {	-- Rated
 		["icon"] = "Interface\\Icons\\Achievement_BG_KillXEnemies_GeneralsRoom",
-		["g"] = bubbleDown({["u"] = 12}, {
+		["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
 			filter(200, bubbleDown(	-- Recipes
 			{
 				["u"] = REMOVED_FROM_GAME,

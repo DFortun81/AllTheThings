@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(WINTERSPRING, {	-- Winterspring
+		m(WINTERSPRING, {
 			n(FACTIONS, {
 				faction(576, {	-- Timbermaw Hold
 					["crs"] = { 11558 },	-- Kernda

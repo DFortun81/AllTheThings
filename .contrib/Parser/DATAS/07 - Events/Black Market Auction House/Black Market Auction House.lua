@@ -37,8 +37,8 @@ _.WorldEvents =
 		["g"] = {
 			filter(103, {	-- Illusions
 				un(21, i(138838)),	-- Illusion: Deathfrost
-				un(29, i(118572)), 	-- Illusion: Flame of Ragnaros
-				un(29, i(128649)),	-- Illusion: Winter's Grasp
+				un(HOLIDAY_FEAST_OF_WINTER_VEIL, i(118572)), 	-- Illusion: Flame of Ragnaros
+				un(HOLIDAY_FEAST_OF_WINTER_VEIL, i(128649)),	-- Illusion: Winter's Grasp
 			}),
 			n(-160, {	-- Mounts
 				i(143643),	-- Abyss Worm

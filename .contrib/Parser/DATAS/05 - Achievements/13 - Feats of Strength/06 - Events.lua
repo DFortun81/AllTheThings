@@ -6,13 +6,13 @@ _.Achievements =
 {
 	n(-9969, {	-- Feats of Strength
 		n(-10047, {	-- Events
-			un(29, ach(12850)),		-- At Least You're Being Careful
+			un(HOLIDAY_FEAST_OF_WINTER_VEIL, ach(12850)),		-- At Least You're Being Careful
 			un(REMOVED_FROM_GAME, ach(1293)),		-- Blue Brewfest Stein
 			un(REMOVED_FROM_GAME, ach(9550)),		-- Boldly, You Sought the Power of Ragnaros
 			un(REMOVED_FROM_GAME, ach(10751)),		-- Brr... It's Cold in Here
 			un(REMOVED_FROM_GAME, ach(1705)),		-- Clockwork Rocket Bot
 			un(REMOVED_FROM_GAME, ach(1636)),		-- Competitor's Tabard
-			un(29, ach(13927)),		-- Crashin' Splashin'
+			un(HOLIDAY_FEAST_OF_WINTER_VEIL, ach(13927)),		-- Crashin' Splashin'
 			un(REMOVED_FROM_GAME, ach(10337)),		-- Crashin' Thrashin' Flamer
 			un(REMOVED_FROM_GAME, ach(8698)),		-- Crashin' Thrashin' Flyer
 			un(REMOVED_FROM_GAME, ach(1706)),		-- Crashin' Thrashin' Racer

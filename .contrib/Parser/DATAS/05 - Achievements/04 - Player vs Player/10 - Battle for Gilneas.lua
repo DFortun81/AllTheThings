@@ -13,7 +13,7 @@ TODO:
 _.Achievements =
 {
 	n(-9958, {	-- Player vs Player
-		["g"] = bubbleDown({["u"] = 12}, {
+		["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
 			n(-9990, {	-- Battle for Gilneas
 				["maps"] = { 275 },	-- Battle for Gilneas
 				["g"] = {

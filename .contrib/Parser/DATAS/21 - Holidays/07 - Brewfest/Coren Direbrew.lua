@@ -8,7 +8,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 		n(23872, { 	-- Coren Direbrew
 			["description"] = "You can loot the keg once a day per character by queueing for the encounter in the Dungeon Finder.",
 			["maps"] = {
-				242,	-- Blackrock Depths
+				BLACKROCK_DEPTHS,
 				243,	-- Blackrock Depths
 			},
 			["g"] = {

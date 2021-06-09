@@ -1632,6 +1632,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
+				q(60969, {	-- Warlords of Draenor: Onward to Adventure in Draenor
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
+					["coord"] = { 56.26, 17.32, 84 },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(28405, {	-- Weapons of Darkness
 					["sourceQuests"] = { 28268 },	-- Meet with Lord Grayson Shadowbreaker
 					["provider"] = { "n", 928 },	-- Lord Grayson Shadowbreaker

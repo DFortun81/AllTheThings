@@ -61,7 +61,7 @@ profession(ALCHEMY, {
 					["g"] = {
 						{
 							["recipeID"] = 21923,--[[Elixir of Frost Power]]
-							["u"] = 29,
+							["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL,
 						},
 						{
 							["recipeID"] = 17571,--[[Elixir of the Mongoose]]

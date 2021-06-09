@@ -210,7 +210,6 @@ _.Zones =
 					["coord"] = { 17.0, 51.7, 36 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 207303 },	-- Adventure Board
-					["lvl"] = 20,
 					["isBreadcrumb"] = true,
 				}),
 				q(28320, {	-- Assault on Dreadmaul Rock

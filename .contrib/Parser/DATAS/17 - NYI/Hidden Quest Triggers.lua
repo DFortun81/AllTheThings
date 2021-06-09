@@ -1585,7 +1585,9 @@ _.HiddenQuestTriggers =
 		q(34112), 	-- Talador - Vignette: Guy 1 Found,	-- triggers breaking a deathweb cocoon in Deathweb Hollow (A)
 		q(34114), 	-- Talador - Vignette: Four Friends Found,	-- triggers when all 4 citizens are freed from deathweb cocoons, making the Deathweb Toxin Vial treasure lootable (A)
 		q(34115),	-- Talador - Vignette: Four Friends Found,	-- triggers when all 4 citizens are freed from deathweb cocoons, making the Deathweb Toxin Vial treasure lootable
+		q(34110),	-- Talador - Vignette: Girl 1 Found,	-- triggers breaking a a deathweb cocoon in Deathweb Hollow
 		q(34116),	-- Talador - Vignette: Girl 1 Found,	-- triggers breaking a a deathweb cocoon in Deathweb Hollow
+		q(34111),	-- Talador - Vignette: Girl 2 Found,	-- triggers breaking a a deathweb cocoon in Deathweb Hollow
 		q(34117),	-- Talador - Vignette: Girl 2 Found,	-- triggers breaking a a deathweb cocoon in Deathweb Hollow
 		q(34118),	-- Talador - Vignette: Guy 1 Found,	-- triggers breaking a a deathweb cocoon in Deathweb Hollow
 		q(34119),	-- Talador - Vignette: Guy 2 Found,	-- triggers breaking a a deathweb cocoon in Deathweb Hollow
@@ -1628,6 +1630,9 @@ _.HiddenQuestTriggers =
 		q(37967),	-- Max-level Choice Tracker: Tanaan 6.2 - Temple of Sha'naar
 		q(38021),	-- Max-level Choice Tracker: Tanaan 6.2 - Temple of Sha'naar
 		q(38437),	-- Max-level Choice Tracker: Tanaan 6.2 - The Fel Forge
+		q(38438),	-- Max-level Choice Tracker: Tanaan 6.2 - The Fel Forge
+		q(38041),	-- Max-level Choice Tracker: Tanaan 6.2 - Zeth'Gol
+		q(38042),	-- Max-level Choice Tracker: Tanaan 6.2 - Zeth'Gol
 
 		--	DUNGEONS & RAIDS
 		q(35960),	-- Auchindoun Reward Quest
@@ -1731,6 +1736,7 @@ _.HiddenQuestTriggers =
 		q(36534),	-- Garrison Max-level Choice Tracker: (GROUP) Talador Shattrath City, West (When picking up Assault on the Heart of Shattrath on Horde character)
 		q(36547),	-- Garrison Max-level Choice Tracker: (GROUP) Talador Shattrath City, West (When picking up Assault on the Heart of Shattrath on Horde character)
 		q(36663),	-- Garrison Max-level Choice Tracker: ANY CHOICE MADE (When picking up Assault on the Heart of Shattrath on Horde character)
+		q(36664),	-- Garrison Max-level Choice Tracker: ANY CHOICE MADE (When picking up Assault on the Heart of Shattrath on Alliance character)
 		q(36807),	-- Assault on the Heart of Shattrath (When completing the criteria for Assault on the Hearth of Shattrath on Horde character)
 		q(36537),	-- Garrison Max-level Choice Tracker: Spires Shadowmoon Cliffs
 		q(36558),	-- Garrison Max-level Choice Tracker: Spires Shadowmoon Cliffs
@@ -1742,6 +1748,16 @@ _.HiddenQuestTriggers =
 		q(36555),	-- Garrison Max-level Choice Tracker: Shadowmoon Darktide Roost
 		q(36533),	-- Garrison Max-level Choice Tracker: Gorgrond Primal Forest
 		q(36552),	-- Garrison Max-level Choice Tracker: Gorgrond Primal Forest
+		q(36531),	-- Garrison Max-level Choice Tracker: Shadowmoon Sanctum of Othaar
+		q(36556),	-- Garrison Max-level Choice Tracker: Shadowmoon Sanctum of Othaar
+		q(36539),	-- Garrison Max-level Choice Tracker: Spires Mushroom Swamp
+		q(36557),	-- Garrison Max-level Choice Tracker: Spires Mushroom Swamp
+		q(36540),	-- Garrison Max-level Choice Tracker: Nagrand Broken Precipice
+		q(36553),	-- Garrison Max-level Choice Tracker: Nagrand Broken Precipice
+		q(36541),	-- Garrison Max-level Choice Tracker: Nagrand Mok'gol Watchpost
+		q(36554),	-- Garrison Max-level Choice Tracker: Nagrand Mok'gol Watchpost
+		q(37634),	-- Assault on Darktide Roost (Removed from game, Horde)
+		q(36821),	-- Assault on the Gorian Proving Grounds (Removed from game, Horde)
 
 		-- GARRISON COMMAND TABLE
 		q(39413),
@@ -1929,6 +1945,8 @@ _.HiddenQuestTriggers =
 		q(46835),	-- Whispers of a Frightened World Tracking, while doing quest 46206
 		q(43659),	-- Mage - learned the Felo'melorn appearance from The Stars' Design (maybe put this on the appearance item?)
 		q(42189),	-- Fire Mage - Flavor Event 01. Showed Arcanomancer Vridiel in Dalaran the newly acquired Felo'melorne
+		q(42192),	-- Fire Mage - Flavor Event 02
+		q(42212),	-- Fire Mage - Flavor Event 03
 		q(40340),	-- Alard Schmied Greeting Seen. "Well, I'll be... the Ashbringer. ...' in Dalaran
 		q(39607),	-- God-King Scene (Vault) — when turning in #39590, "Ahead of the Game"
 		q(38420),	-- triggered when turning in #38624, "Cry Thunder!"
@@ -1945,11 +1963,13 @@ _.HiddenQuestTriggers =
 			},
 		}),
 		q(42646),	-- triggered after getting Extra Thick Mojo in Durotar when on the Legion intro quest To Be Prepared
+		q(42647),	-- triggered after getting Extra Thick Mojo in Durotar when on the Legion intro quest To Be Prepared
+		q(42648),	-- triggered after getting Extra Thick Mojo in Durotar when on the Legion intro quest To Be Prepared
 
 		-- Artifact Power questlines
-		q(45851),	-- triggered after bm hunter artifact power questline
-		q(45852),	-- triggered after resto shaman / holy pal artifact power questlines
-		q(41263),	-- triggered after unholy dk artifact power questline
+		q(45851),	-- Dual Boss Trait Complete - triggered after bm hunter artifact power questline
+		q(45852),	-- Healer Trait Complete - triggered after resto shaman / holy pal artifact power questlines
+		q(41263),	-- Oh! So Powerful! - triggered after unholy dk artifact power questline
 
 		-- Balance of Power questline
 		q(43511),	-- Kalec Arrives — triggered when turning in "The Power Within" at Azurewing Repose (starting Balance of Power)
@@ -2211,6 +2231,7 @@ _.HiddenQuestTriggers =
 		q(44879),	-- Highmountain - WQ rare: Snowfeather Matriarch
 		q(44880),	-- Stormheim - WQ rare: Direbeak Matriarch
 		q(45507),	-- Stormheim - WQ rare: Fjorlag
+		q(42721),	-- Vignette: Unused (Stormheim - Urgev the Flaye)
 		q(45478),	-- Suramar - WQ rare: Achronos
 		q(45504),	-- Suramar - WQ rare: Alteria
 		q(45475),	-- Suramar - WQ rare: Auditor Esiel

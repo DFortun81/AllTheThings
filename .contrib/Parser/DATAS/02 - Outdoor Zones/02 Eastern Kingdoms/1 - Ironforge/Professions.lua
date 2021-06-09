@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(IRONFORGE, {	-- Ironforge
+		m(IRONFORGE, {
 			n(-38, {	-- Profession
 				prof(ALCHEMY, {
 					n(QUESTS, {

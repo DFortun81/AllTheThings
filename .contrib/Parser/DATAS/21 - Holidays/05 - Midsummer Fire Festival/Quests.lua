@@ -180,10 +180,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11773, {	-- Desecrate this Fire! — Feralas
 				["isYearly"] = true,
 				["provider"] = { "o", 187961 },	-- Horde Bonfire
-				["coord"] = { 72.5, 47.6, 69 },
+				["coord"] = { 72.5, 47.6, FERALAS },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
-				["maps"] = { 69 },	-- Feralas
+				["maps"] = { FERALAS },
 			}),
 			q(44583, {	-- Desecrate this Fire! — Frostfire Ridge
 				["isYearly"] = true,
@@ -622,10 +622,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11746, {	-- Desecrate this Fire! — Feralas
 				["isYearly"] = true,
 				["provider"] = { "o", 187929 },	-- Alliance Bonfire
-				["coord"] = { 46.6, 43.8, 69 },
+				["coord"] = { 46.6, 43.8, FERALAS },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-				["maps"] = { 69 },	-- Feralas
+				["maps"] = { FERALAS },
 			}),
 			q(13445, {	-- Desecrate this Fire! — Grizzly Hills
 				["isYearly"] = true,
@@ -1051,9 +1051,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11817, {	-- Honor the Flame — Feralas
 				["provider"] = { "n", 25899 },	-- Feralas Flame Warden
 				["isYearly"] = true,
-				["coord"] = { 47.0, 44.0, 69 },
+				["coord"] = { 47.0, 44.0, FERALAS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 69 },	-- Feralas
+				["maps"] = { FERALAS },
 			}),
 			q(13489, {	-- Honor the Flame — Grizzly Hills
 				["provider"] = { "n", 32805 },	-- Grizzly Hills Flame Warden
@@ -1417,9 +1417,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11849, {	-- Honor the Flame — Feralas
 				["provider"] = { "n", 25932 },	-- Feralas Flame Keeper
 				["isYearly"] = true,
-				["coord"] = { 72.4, 47.8, 69 },
+				["coord"] = { 72.4, 47.8, FERALAS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 69 },	-- Feralas
+				["maps"] = { FERALAS },
 			}),
 			q(44580, {	-- Honor the Flame — Frostfire Ridge
 				["provider"] = { "n", 114499 },	-- Frostfire Ridge Flame Keeper

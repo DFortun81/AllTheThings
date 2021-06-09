@@ -5,7 +5,7 @@
 _.Instances = { tier(4, {	-- Cataclysm
 	inst(76, {	-- Zul'Gurub
 		["maps"] = {
-			337,	-- Zul'Gurub
+			ZULGURUB,
 		},
 		["coord"] = { 72.0, 32.9, 50 },	-- Zul'Gurub, Northern Stranglethorn
 		["g"] = {

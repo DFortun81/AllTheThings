@@ -532,15 +532,6 @@ _.Zones =
 						28749,	-- The Battle for Andorhal (War-Mage Erallier, STV)
 					},
 				}),
-				q(42770, {	-- Seeking Guidance
-					["providers"] = {
-						{ "n", 90259 },	-- Lord Maxwell Tyrosus
-						{ "n", 90369 },	-- Lord Maxwell Tyrosus
-					},
-					["lvl"] = 98,
-					["classes"] = { PALADIN },
---						["sourceQuests"] = {  },	--
-				}),
 				q(5465, {	-- Soulbound Keepsake
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11036 },	-- Leonid Barthalomew the Revered

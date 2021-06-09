@@ -501,6 +501,7 @@ _.ExpansionFeatures =
 					}),
 					q(46156, {	-- Furthering Knowledge
 						["u"] = REMOVED_FROM_GAME,
+						["classes"] = { MAGE },
 					}),
 					q(42175, {	-- Growing Power
 						["lvl"] = 101,
