@@ -219,6 +219,7 @@ _.Zones =
 						{ 47.7, 74.3, KORTHIA },
 						{ 54.0, 72.8, KORTHIA },
 						{ 56.4, 69.5, KORTHIA },
+						{ 56.5, 74.7, KORTHIA },
 					},
 					["g"] = {
 						i(187431),	-- Sleeping Armament

@@ -10,8 +10,7 @@ _.Zones =
 			--	if it is similar to harika/valfir (mounts can be used by anyone but only looted by their respective covenant), the quests themselves need to be tagged as such so they do not show in the list for players tracking quests
 				i(187216),	-- Soultwining Crescent
 				n(179769, {	-- Consumption
-				--	triggered 64280 and 64281 on my first kill, on subsequent days it's no longer 'rare,' and no quests pop, and it's also not lootable and doesn't grant achievement credit.  probably bugged but i'm not sure which quest to attach
-				--	^ 64243 pops now but it still doesn't grant achievement credit, so not sure if this will change / not sure what happened to previous 2 quests!
+					["description"] = "Only gives daily kill and achievement credit when it is in Rare or Rare Elite form.\n\nWhen it spawns, there is a zonewide announcement: |cFFf73f3fMawsworn Ruiner yells: Soon it shall feed off the Maw Walkers!|r",
 					["questID"] = 64243,
 					["isDaily"] = true,
 					["coord"] = { 51.1, 41.7, KORTHIA },
@@ -20,6 +19,8 @@ _.Zones =
 						179768,	-- Consumption (Rare Elite version)
 					},
 					["g"] = {
+					--	triggered 64280 and 64281 on my first kill, on subsequent days it's no longer 'rare,' and no quests pop, and it's also not lootable and doesn't grant achievement credit.  probably bugged but i'm not sure which quest to attach
+					--	^ 64243 pops now instead / not sure what happened to previous 2 quests!
 						crit(3, {	-- Consumption
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
@@ -41,7 +42,7 @@ _.Zones =
 					},
 				}),
 				n(180014, {	-- Escaped Wilderling
-					["description"] = "Requires a |cFFA330C9Night Fae|r to start.",
+					["description"] = "Requires a |cFFA330C9Night Fae|r to start.\n\nWhen it spawns, there is a zonewide announcement: |cFFff8040Escaped Wilderling roars defiantly in the distance.|r",
 					["questID"] = 64320,
 					["isDaily"] = true,
 					["coord"] = { 33.1, 39.5, KORTHIA },
@@ -71,7 +72,7 @@ _.Zones =
 					},
 				}),
 				n(180042, {	-- Fleshwing
-					["description"] = "Help Cadaverous, Dregs, and Lurik burn necromancers' corpses until they summon the rare.\n\nRequires a |cFF40bf40Necrolord|r to start.",
+					["description"] = "Help Cadaverous, Dregs, and Lurik burn necromancers' corpses until they summon the rare.\n\nRequires a |cFF40bf40Necrolord|r to start.  When the event begins, there is a zonewide announcement: |cFFf73f3fCadaverous yells: Search every crevice for the necromancers' corpses!|r",
 					["questID"] = 64349,
 					["isDaily"] = true,
 					["coord"] = { 59.7, 43.3, KORTHIA },
@@ -103,6 +104,8 @@ _.Zones =
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 						i(187183),	-- Rampaging Mauler (MOUNT!)
+						i(187384),	-- Konthrogz's Scaled Handguards
+						i(187397),	-- Vambraces of the In-Between
 						i(187378),	-- Visage of the Obliterator
 					},
 				}),
@@ -137,6 +140,7 @@ _.Zones =
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 						i(186645),	-- Crimson Shardhide (MOUNT!)
+						i(187377),	-- Malbog's Paws
 					},
 				}),
 				n(179931, {	-- Relic Breaker Krelva
@@ -186,7 +190,7 @@ _.Zones =
 					},
 				}),
 				n(179985, {	-- Stygian Stonecrusher
-					["description"] = "Speak to Drippy, and then defend the NPCs as they repair the Broken Gatecrasher.\n\nRequires a |cFFfe040fVenthyr|r to start.",
+					["description"] = "Speak to Drippy, and then defend the NPCs as they repair the Broken Gatecrasher.\n\nRequires a |cFFfe040fVenthyr|r to start.  When the event begins, there is a zonewide announcement: |cFFf73f3fDrippy yells: For Sinfall!|r",
 					["questID"] = 64313,
 					["isDaily"] = true,
 					["coord"] = { 46.3, 79.7, KORTHIA },
@@ -218,8 +222,10 @@ _.Zones =
 						}),
 						i(187035),	-- Cold Burden of the Damned
 						i(187242),	-- Exterminator's Crest of the Damned
-						i(187373),	-- Soul-Enveloping Leggings
 						i(187241),	-- Watchful Eye of the Damned
+						--
+						i(187376),	-- Mawsworn Lieutenant's Treads
+						i(187373),	-- Soul-Enveloping Leggings
 					},
 				}),
 				n(180162, {	-- Ve'rayn
@@ -243,7 +249,7 @@ _.Zones =
 					},
 				}),
 				n(180032, {	-- Wild Worldcracker
-					["description"] = "Escort Popo as she helps all her friends, and eventually she will summon the rare.  She patrols from east to west.\n\nRequires a |cFF516bfeKyrian|r to start.",
+					["description"] = "Escort Popo as she helps all her friends, and eventually she will summon the rare.  She patrols from east to west.\n\nRequires a |cFF516bfeKyrian|r to start.  When the event begins, there is a zonewide announcement: |cFFf73f3fPopo yells: Help is on the way, friends!|r",
 					["questID"] = 64338,
 					["isDaily"] = true,
 					["coords"] = {
@@ -265,7 +271,7 @@ _.Zones =
 					},
 				}),
 				n(179859, {	-- Xyraxz the Unknowable
-					["description"] = "Requires someone with Tier 3 Archivist's Codex reputation to repair the teleportation pad.",
+					["description"] = "Requires someone with Tier 3 Archivist's Codex reputation to repair the teleportation pad.\n\nOnce repaired, there is a zonewide announcement: |cFFff8040[Name] has repaired the ancient teleporter to the Chamber of Wisdom!|r",
 					["questID"] = 64278,
 					["isDaily"] = true,
 					["coord"] = { 45.0, 35.5, KORTHIA },
@@ -283,7 +289,7 @@ _.Zones =
 					},
 				}),
 				n(179802, {	-- Yarxhov the Pillager
-					["description"] = "Requires someone with Tier 3 Archivist's Codex reputation to repair the teleportation pad.",
+					["description"] = "Requires someone with Tier 3 Archivist's Codex reputation to repair the teleportation pad.\n\nOnce repaired, there is a zonewide announcement: |cFFff8040[Name] has repaired the ancient teleporter to the Chamber of Knowledge!|r",
 					["questID"] = 64257,
 					["isDaily"] = true,
 					["coord"] = { 39.3, 52.4, KORTHIA },
@@ -296,6 +302,7 @@ _.Zones =
 							["sourceQuests"] = { 64506 },	-- What Must Be Found
 							["questID"] = 63917,	-- Everliving Statuette
 						}),
+						i(187366),	-- Fallen Vault Guardian's Spire
 						i(187391),	-- Yarxhov's Rib-Cage
 					},
 				}),

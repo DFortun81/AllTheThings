@@ -714,7 +714,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 61.3, 21.3, KORTHIA },
 				}),
-				q(63777, {	-- Sealed Lockboxes
+				q(63777, {	-- Sealed Secrets
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 178845 },	-- Ve'lonu
 					["isDaily"] = true,

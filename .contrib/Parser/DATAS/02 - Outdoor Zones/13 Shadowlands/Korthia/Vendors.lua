@@ -138,7 +138,7 @@ _.Zones =
 									i(185864),	-- Shardhide Leather Hood*
 									i(186756),	-- Shardhide Leather Jerkin*
 									i(185885),	-- Shardhide Leather Shoulderguards
-									i(186738),	-- Shardhide Leather Strap
+									i(186738),	-- Shardhide Leather Strap*
 									i(186734),	-- Shardhide Leather Treads
 									i(186737),	-- Shardhide Leather Trousers
 									i(185884),	-- Shardhide Leather Vest*
