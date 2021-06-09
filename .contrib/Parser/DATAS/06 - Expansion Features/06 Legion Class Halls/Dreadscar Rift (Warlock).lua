@@ -75,10 +75,10 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 101097 },	-- Calydus
 					}),
 					q(44099, {	-- A Mutual Friend
-						--["sourceQuests"] = {  },	--
+						["sourceQuests"] = { 40823 },	-- Rebuilding the Council
 						["classes"] = { WARLOCK },
-						--["coord"] = { , , 717 },
-						--["provider"] = { "n",  },	--
+						["provider"] = { "n", 112693 },	-- Black Harvest Acolyte
+						["maps"] = { 628 },	-- Dalaran, Broken Isles
 					}),
 					q(43153, {	-- An Eye for a Scepter
 						["sourceQuest"] = 43100,	-- Finding the Scepter
@@ -368,6 +368,15 @@ _.ExpansionFeatures =
 						["coord"] = { 54.1, 34.9, 717 },
 						["provider"] = { "n", 104732 },	-- Kira Iresoul
 					}),
+					q(42168, {	-- Looking into the Darkness
+						["sourceQuests"] = {
+							40611,	-- The Fate of Deadwind
+							42128,	-- Ritual Reagents
+						},
+						["classes"] = { WARLOCK },
+						["coord"] = { 54.0, 47.0, 627 },
+						["provider"] = { "n", 106610 },	-- Calydus
+					}),
 					q(41769, {	-- Mad Ernie the Alchemist
 						["sourceQuests"] = { 41768 },	-- Soul Beacon
 						["classes"] = { WARLOCK },
@@ -382,6 +391,12 @@ _.ExpansionFeatures =
 						["classes"] = { WARLOCK },
 						["coord"] = { 54.0, 36.2, 717 },
 						["provider"] = { "n", 105102 },	-- Ritssyn Flamescowl
+					}),
+					q(40821, {	-- Power Overwhelming
+						["u"] = REMOVED_FROM_GAME,
+						["sourceQuests"] = { 40731 },	-- The Heart of the Dreadscar
+						["classes"] = { WARLOCK },
+						["provider"] = { "n", 101097 },	-- Calydus
 					}),
 					q(40823, {	-- Rebuilding the Council
 						["sourceQuests"] = { 40731 },	-- The Heart of the Dreadscar
@@ -512,6 +527,13 @@ _.ExpansionFeatures =
 						["coord"] = { 35.3, 38.5, 717 },
 						["provider"] = { "n", 119166 },	-- Mor'zul Bloodbringer
 					}),
+					q(40729, {	-- The New Blood
+						["sourceQuests"] = { 40716 },	-- The Sixth
+						["classes"] = { WARLOCK },
+						["coord"] = { 57.3, 60.8, 628 },	-- Dalaran Underbelly
+						["provider"] = { "n", 101456 },	-- Ritssyn Flamescowl
+						["maps"] = { 628 },	-- Dalaran, Broken Isles
+					}),
 					q(40824, {	-- The Path of the Dreadscar
 						["sourceQuests"] = { 40823 },	-- Rebuilding the Council
 						["classes"] = { WARLOCK },
@@ -529,6 +551,19 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 101282 },	-- Revil Kost
 						["altQuests"] = { 41156 },	-- The Power Possessed
 						["maps"] = { 46 },
+					}),
+					q(40716, {	-- The Sixth
+						["sourceQuests"] = { 44663 },	-- In the Blink of an Eye
+						["classes"] = { WARLOCK },
+						["provider"] = { "n", 103506 },	-- Ritssyn Flamescowl
+						["maps"] = { 628 },	-- Dalaran, Broken Isles
+					}),
+					q(40684, {	-- The Tome of Blighted Implements
+						["sourceQuests"] = { 40729 },	-- The New Blood
+						["classes"] = { WARLOCK },
+						["coord"] = { 56.3, 65.0, 628 },
+						["provider"] = { "n", 101097 },	-- Calydus
+						["maps"] = { 628 },	-- Dalaran, Broken Isles
 					}),
 					q(43984, {	-- The Tome Opens Again
 						["sourceQuests"] = { 44099 },	-- A Mutual Friend

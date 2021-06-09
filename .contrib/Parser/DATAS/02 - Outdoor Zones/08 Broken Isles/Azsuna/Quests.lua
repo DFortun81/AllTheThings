@@ -828,8 +828,6 @@ _.Zones =
 				q(39934),	-- Our New Allies
 				q(40056),	-- Our New Allies
 				q(41161),	-- Out of the Frying Pan
-				q(46794),	-- Paragon of the Court
-				q(46800),	-- Paragon of the Wardens
 				q(39906),	-- Prepping For Battle
 				q(45795),	-- Presence of Power
 				q(37728),	-- Presentation is Everything
@@ -837,9 +835,6 @@ _.Zones =
 				q(41159),	-- Process of Elimination
 				q(41771),	-- Recharging the Blade
 				q(43523),	-- Repaid Debt
-				q(38791),	-- Rethu's Horn
-				q(38792),	-- Rethu's Lesson
-				q(38794),	-- Rethu's Sacrifice
 				q(38803),	-- Rin'thissa
 				q(38947),	-- Runic Catgut
 				q(43527),	-- Saving the Guard
@@ -851,7 +846,6 @@ _.Zones =
 				q(41176),	-- Sifting Through the Rubble
 				q(38949),	-- So You Think You Can Sew
 				q(45175),	-- Soul Prism of the Illidari
-				q(45025),	-- Stealing the Source of Power
 				q(40131),	-- Stonehide Leather Sample
 				q(40141),	-- Stormscale Sample
 				q(41288),	-- Supplies Needed: Aethril
@@ -860,7 +854,6 @@ _.Zones =
 				q(43518),	-- Tempering Darkness
 				q(41163),	-- The Apocalypse Bringer
 				q(43520),	-- The Emerald Nightmare: In Nightmares
-				q(45028),	-- The Fate of Kanrethad
 				q(38963),	-- The Final Lesson?
 				q(45174),	-- The Hunt for Illidan Stormrage
 				q(41185),	-- The Keys to Success

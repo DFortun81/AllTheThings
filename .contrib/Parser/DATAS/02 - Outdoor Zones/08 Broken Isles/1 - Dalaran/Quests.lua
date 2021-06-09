@@ -175,17 +175,6 @@ _.Zones =
 					["provider"] = { "n", 90418 },	-- Archmage Modera
 					["coord"] = { 28.5, 48.9, 627 },
 				}),
-				q(44099, {	-- A Mutual Friend
-					["sourceQuests"] = { 40823 },	-- Rebuilding the Council
-					["classes"] = { WARLOCK },
-					["lvl"] = 101,
-					["provider"] = { "n", 112693 },	-- Black Harvest Acolyte
-				}),
-				q(40715, {	-- A Pact of Necessity
-					["sourceQuests"] = { 40714 },	-- The Call to War
-					["classes"] = { DEATHKNIGHT },
-					["provider"] = { "n", 101441 },	-- Duke Lankral
-				}),
 				q(38035, {	-- A Royal Summons
 					["provider"] = { "n", 96644 },	-- Sky Admiral Rogers
 					["coord"] = { 29.2, 47.2, 627 },
@@ -195,24 +184,17 @@ _.Zones =
 					},
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(44252, {	-- A Sheath For Every Blade
-					["classes"] = { ROGUE },
-					["provider"] = { "n", 105986 },	-- Kelsey Steelspark
-				}),
-				q(42866, {	-- A Sign From The Sky
-					["classes"] = { PALADIN },
-					["provider"] = { "n", 90259 },	-- Lord Maxwell Tyrosus
-				}),
-				q(40643, {	-- A Summons From Moonglade
-					["sourceQuests"] = { 44663 },	-- In the Blink of an Eye
-					["provider"] = { "n", 101061 },  -- Archdruid Hamuul Runetotem
-					["coord"] = { 57.8, 45.8, 627 },
-					["classes"] = { DRUID },
-				}),
 				q(50318, {	-- A Timely Summons from Northrend
 					["provider"] = { "n", 111246 },	-- Archmage Timear
 					["coord"] = { 63.8, 55.2, 627 },
 					["isWeekly"] = true,
+				}),
+				q(49472, {	-- A Titanic Effort
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(49473, {	-- A Titanic Effort
+					["u"] = REMOVED_FROM_GAME,
+					["repeatable"] = true,
 				}),
 				q(47041, {	-- Affliction: The Twisted Twin
 					["sourceQuests"] = {
@@ -383,13 +365,6 @@ _.Zones =
 					},
 					["coord"] = { 28.5, 49.5, 627 },
 				}),
-				q(44550, {	-- Called to Acherus
-					["provider"] = { "n", 114282 }, -- Dread Commander Thalanor
-					["coord"] = { 58.5, 45.2, 627 },	-- Anywhere in Dalaran really, but nice to have a specific coord
-					["classes"] = { DEATHKNIGHT },
-					["sourceQuests"] = { 42484 }, -- The Firstborn Rises
-					["isBreadcrumb"] = true,
-				}),
 				q(48021, {	-- Chromie
 					["providers"] = {
 						{ "n", 90417 },	-- Archmage Khadgar
@@ -408,10 +383,6 @@ _.Zones =
 					},
 					["provider"] = { "n", 116880 },	-- Kor'vas Bloodthorn
 					["coord"] = { 52.0, 19.6, 627 },
-				}),
-				q(43486, {	-- Cracking the Codex
-					["classes"] = { PALADIN },
-					["provider"] = { "n", 90251 },	-- Aponi Brightmane
 				}),
 				q(45239, {	-- Cubic Coalescing
 					["sourceQuests"] = { 45238 },	-- Return to Karazhan: Cubic Cynosure
@@ -680,10 +651,6 @@ _.Zones =
 					["classes"] = { DEMONHUNTER },
 					["lvl"] = 110,
 				}),
-				q(47607, {	-- High Fash-Djinn
-					["classes"] = { ROGUE },
-					["provider"] = { "n", 123087 },	-- Al'Abas
-				}),
 				q(47006, {	-- Holy: The Bradensbrook Investigation
 					["sourceQuests"] = {
 						44821,	-- In Dire Need
@@ -763,15 +730,6 @@ _.Zones =
 					["coord"] = { 28.5, 49.5, 627 },
 					["u"] = REMOVED_FROM_GAME,	-- Mage Tower quest
 				}),
-				q(42168, {	-- Looking into the Darkness
-					["sourceQuests"] = {
-						40611,	-- The Fate of Deadwind
-						42128,	-- Ritual Reagents
-					},
-					["classes"] = { WARLOCK },
-					["coord"] = { 54.0, 47.0, 627 },
-					["provider"] = { "n", 106610 },	-- Calydus
-				}),
 				q(39986, {	-- Magic Message
 					["sourceQuests"] = {
 						39985,	-- Khadgar's Discovery
@@ -842,15 +800,6 @@ _.Zones =
 					["coord"] = { 28.5, 48.9, 627 },
 					["u"] = REMOVED_FROM_GAME,	-- Mage Tower quest
 				}),
-				q(40384, {	-- Needs of the Hunters
-					["classes"] = { HUNTER },
-					["provider"] = { "n", 100786 },	-- Snowfeather
-				}),
-				q(43250, {	-- Off to Court
-					["sourceQuests"] = { 43249 },	-- The Raven's Eye
-					["classes"] = { ROGUE },
-					["provider"] = { "n", 98102 },	-- Valeera Sanguinar
-				}),
 				q(47058, {	-- Outlaw: The Folly of Levia Laurence
 					["sourceQuests"] = {
 						44821,	-- In Dire Need
@@ -863,11 +812,6 @@ _.Zones =
 					},
 					["coord"] = { 28.5, 48.9, 627 },
 				}),
-				q(40821, {	-- Power Overwhelming
-					["sourceQuests"] = { 40731 },	-- The Heart of the Dreadscar
-					["classes"] = { WARLOCK },
-					["provider"] = { "n", 101097 },	-- Calydus
-				}),
 				q(44545, {	-- Pressing the Assault
 					["isBreadcrumb"] = true,
 					["description"] = "This quest is automatically offered after you find your first Pillar of Creation.",
@@ -878,11 +822,6 @@ _.Zones =
 					["provider"] = { "n", 114719 },	-- Trader Caelen
 					["coord"] = { 42.3, 27.0, 627 },
 					["lvl"] = 110,
-				}),
-				q(44100, {	-- Proper Introductions
-					["classes"] = { PRIEST },	-- Priest
-					["lvl"] = 101,
-					["provider"] = { "n", 112695 },	-- Hooded Priest
 				}),
 				q(47022, {	-- Protection: Aid of the Illidari
 					["sourceQuests"] = {
@@ -907,10 +846,6 @@ _.Zones =
 						{ "n", 115466 },	-- Archmage Ansirem Runeweaver
 					},
 					["coord"] = { 28.5, 49.5, 627 },
-				}),
-				q(43470, {	-- Pruning the Garden
-					["classes"] = { ROGUE },
-					["provider"] = { "n", 98100 },	-- Taoshi
 				}),
 				q(45910, {	-- Raest's Gift
 					["sourceQuests"] = { 46127 },	-- Thwarting the Twins
@@ -957,20 +892,6 @@ _.Zones =
 				q(45238, {	-- Return to Karazhan: Cubic Cynosure
 					["sourceQuests"] = { 45160 },	-- Cubic Currents
 					["provider"] = { "n", 93538 },	-- Dariness the Learned
-				}),
-				q(42608, {	-- Rise, Champions
-					["classes"] = { WARLOCK },
-					["provider"] = { "n", 101097 },	-- Calydus
-				}),
-				q(42128, {	-- Ritual Reagents
-					["sourceQuests"] = {
-						40684,	-- The Tome of Blighted Implements (if this artifact is picked first)
-						43984,	-- The Tome Opens Again (if this artifact is chosen second)
-						44089,	-- A Greater Arsenal (if this artifact is picked last)
-					},
-					["classes"] = { WARLOCK },
-					["coord"] = { 56.3, 65.0, 628 },
-					["provider"] = { "n", 101097 },	-- Calydus
 				}),
 				q(47864, {	-- Sealing Fate: Additional Marks of Honor
 					["isWeekly"] = true,
@@ -1029,13 +950,6 @@ _.Zones =
 					},
 					["lvl"] = 110,
 				}),
-				q(42770, {	-- Seeking Guidance
-					["classes"] = { PALADIN },
-					["providers"] = {
-						{ "n", 90259 },	-- Lord Maxwell Tyrosus
-						{ "n", 90369 },	-- Lord Maxwell Tyrosus
-					},
-				}),
 				q(47042, {	-- Shadow: The Twisted Twin
 					["sourceQuests"] = {
 						44821,	-- In Dire Need
@@ -1089,24 +1003,14 @@ _.Zones =
 					["coord"] = { 52.7, 59.2, 629 },
 					["lvl"] = 110,
 				}),
-				q(42593, {	-- The Arcane Way
-					["classes"] = { DEMONHUNTER },
-					["provider"] = { "n", 98632 },	-- Matron Mother Malevolence
-				}),
 				q(44172, {	-- The Arena Calls
 					["isWeekly"] = true,
 					["provider"] = { "n", 111246 },	-- Archmage Timear
 				}),
-				q(40714, {	-- The Call To War
-					["description"] = "Automatically given to you when you arrive in Dalaran.",
-					["classes"] = { DEATHKNIGHT },
+				q(49474, {	-- The Cursed Shard
+					["provider"] = { "i", 154880 },	-- Cursed Shard
+					["isBreadcrumb"] = true,
 				}),
-				i(154880, {	-- Cursed Shard
-					q(49474, {	-- The Cursed Shard
-						["isBreadcrumb"] = true,
-					}),
-				}),
-			--	q(42005),	-- The End of the Saga -- starts in Howling Fjord
 				q(45420, {	-- The Eye of Aman'Thul
 					["sourceQuests"] = { 45417 },	-- The Nighthold: Lord of the Shadow Council
 					["provider"] = { "n", 106522 },	-- Archmage Khadgar
@@ -1137,10 +1041,6 @@ _.Zones =
 				q(47835, {	-- The Hand of Fate (H)
 					["u"] = REMOVED_FROM_GAME, -- old version that used to be automatically provided
 				}),
-				q(41415, {	-- The Hunter's Call
-					["classes"] = { HUNTER },
-					["provider"] = { "n", 102478 },	-- Emmarel Shadewarden
-				}),
 				q(45902, {	-- The Imp Mother's Gift
 					["sourceQuests"] = { 46065 },	-- An Impossible Foe
 					["classes"] = {
@@ -1158,39 +1058,8 @@ _.Zones =
 				q(39733, {	-- The Lone Mountain -- granted by order hall scouting map
 					["isBreadcrumb"] = true,
 				}),
-				q(42231, {	-- The Mysterious Paladin
-					["classes"] = { PALADIN },
-					["providers"] = {
-						{ "n", 90259 },	-- Lord Maxwell Tyrosus
-						{ "n", 90369 },	-- Lord Maxwell Tyrosus
-					},
-				}),
-				q(40729, {	-- The New Blood
-					["sourceQuests"] = { 40716 },	-- The Sixth
-					["classes"] = { WARLOCK },
-					["coord"] = { 57.3, 60.8, 628 },	-- Dalaran Underbelly
-					["provider"] = { "n", 101456 },	-- Ritssyn Flamescowl
-				}),
-				q(43249, {	-- The Raven's Eye
-					["sourceQuests"] = { 43253 },	-- Maw of Souls: Ancient Vrykul Legends
-					["classes"] = { ROGUE },
-					["provider"] = { "n", 98102 },	-- Valeera Sanguinar
-				}),
-				q(38376, {	-- The Search for the Highlord
-					["classes"] = { PALADIN },
-					["provider"] = { "n", 90369 },	-- Lord Maxwell Tyrosus
-				}),
-				q(40716, {	-- The Sixth
-					["sourceQuests"] = { 44663 },	-- In the Blink of an Eye
-					["classes"] = { WARLOCK },
-					["provider"] = { "n", 103506 },	-- Ritssyn Flamescowl
-				}),
-				q(40684, {	-- The Tome of Blighted Implements
-					["sourceQuests"] = { 40729 },	-- The New Blood
-					["classes"] = { WARLOCK },
-					["coord"] = { 56.3, 65.0, 628 },
-					["lvl"] = 98,
-					["provider"] = { "n", 101097 },	-- Calydus
+				q(47793, {	-- The Spoiled Sample
+					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(44174, {	-- The Very Best
 					["u"] = REMOVED_FROM_GAME,
@@ -1221,11 +1090,6 @@ _.Zones =
 				q(44175, {	-- The World Awaits
 					["isWeekly"] = true,
 					["provider"] = { "n", 111246 },	-- Archmage Timear
-				}),
-				q(43479, {	-- The World is Not Enough
-					["sourceQuests"] = { 43470 },	-- Pruning the Garden
-					["classes"] = { ROGUE },
-					["provider"] = { "n", 98100 },	-- Taoshi
 				}),
 				q(43331, {	-- Time to Collect
 					["sourceQuests"] = { 42483 },	-- Put It All on Red
@@ -1271,16 +1135,6 @@ _.Zones =
 					["provider"] = { "n", 91172 },	-- Archmage Khadgar
 					["isBreadcrumb"] = true,
 				}),
-				q(40495, {	-- Ulthalesh, the Deadwind Harvester
-					["sourceQuests"] = {
-						40684,	-- The Tome of Blighted Implements (if this artifact is picked first)
-						43984,	-- The Tome Opens Again (if this artifact is chosen second)
-						44089,	-- A Greater Arsenal (if this artifact is picked last)
-					},
-					["classes"] = { WARLOCK },
-					["coord"] = { 56.3, 65.0, 628 },
-					["provider"] = { "n", 101097 },	-- Calydus
-				}),
 				q(47057, {	-- Unholy: The Folly of Levia Laurence
 					["sourceQuests"] = {
 						44821,	-- In Dire Need
@@ -1310,6 +1164,15 @@ _.Zones =
 						}),
 					},
 				}),
+				q(47790, {	-- Unsettled Power
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(47791, {	-- Unsettled Power
+					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(44115, {	-- Welcome to Legion!
+					["u"] = REMOVED_FROM_GAME,
+				}),
 				q(46314, {	-- Vengeance: Seeking Kor'vas
 					["sourceQuests"] = {
 						47030,  -- Legion Threat: Dalaran Infiltration
@@ -1322,19 +1185,6 @@ _.Zones =
 					["coord"] = { 28.5, 49.5, 627 },
 					["classes"] = { DEMONHUNTER },
 					["lvl"] = 110,
-				}),
-				q(40618, {	-- Weapons of Legend
-					["sourceQuests"] = {
-						40384,	-- Needs of the Hunters
-						41415,	-- The Hunter's Call
-					},
-					["classes"] = { HUNTER },
-					["provider"] = { "n", 102478 },	-- Emmarel Shadewarden
-				}),
-				q(43469, {	-- Where In the World is Mathias?
-					["sourceQuests"] = { 43470 },	-- Pruning the Garden
-					["classes"] = { ROGUE },
-					["provider"] = { "n", 98100 },	-- Taoshi
 				}),
 				q(45190, {	-- Where it's Thinnest
 					["sourceQuests"] = { 45188 },	-- The Wisdom of the Council
@@ -1373,25 +1223,6 @@ _.Zones =
 					["provider"] = { "n", 105081 },	-- Archmage Kalec
 					["u"] = REMOVED_FROM_GAME,
 				}),
---[[
-				The following quests have been removed from the game:
-				q(49472)	-- A Titanic Effort
-				q(49473)	-- A Titanic Effort
-				q(41006),	-- Assassinate That Guy
-				q(41408),	-- Battle: Pandaren Cuisine - Elling Trias
-				q(41405),	-- Battle: Pandaren Cuisine - Sungshin Ironpaw
-				q(41406),	-- Battle: Pandaren Cuisine - Torg Slowflame
-				q(41400),	-- Battle: Pandaren Cuisine!
-				q(42189),	-- Fire Mage - Flavor Event 01
-				q(42192),	-- Fire Mage - Flavor Event 02
-				q(42212),	-- Fire Mage - Flavor Event 03
-				q(41263),	-- Oh! So Powerful!
-				q(46273),	-- The Giver of Quests
-				q(47793),	-- The Spoiled Sample
-				q(47790),	-- Unsettled Power
-				q(47791),	-- Unsettled Power
-				q(44115),	-- Welcome to Legion!
-]]--
 			}),
 		}),
 	}),

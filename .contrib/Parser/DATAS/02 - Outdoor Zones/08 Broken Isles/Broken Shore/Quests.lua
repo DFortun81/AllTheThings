@@ -342,6 +342,11 @@ _.Zones =
 						WARLOCK,	-- Affliction
 					},
 				}),
+				q(47017, {	-- Only the Best
+					["u"] = REMOVED_FROM_GAME,
+					["provider"] = { "n", 121081 },	-- Merris Townsend
+					["coord"] = { 43.6, 64.0, 646 },
+				}),
 				q(46253, {	-- Pillars of Creation
 					["sourceQuests"] = { 46734 },	-- Assault on Broken Shore
 					["provider"] = { "n", 116302 },	-- Archmage Khadgar
@@ -492,62 +497,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 53776 },	-- To the Broken Shore
 				}),
-
-			-- TODO: unconfirmed or old af data that needs to be re-confirmed anyway
-				--[[
-				q(46688),	-- Leather of the Ancients
-				q(38804),	-- Lyrelle
-				q(46694),	-- Mail of the Ancients
-				q(45240),	-- Making Preparations
-				q(46353),	-- Master Who?
-				q(42730),	-- Noggenfogger's Reasonable Request
-				q(38802),	-- Ondri's Still-Beating Heart
-				q(47017),	-- Only the Best
-				q(39799),	-- Our Next Move
-				q(46802),	-- Paragon of the Legionfall Armies
-				q(39832),	-- Plans and Preparations
-				q(43266),	-- Recruiting the Troops
-				q(40419),	-- Rescue Mission
-				q(44889),	-- Resource Management
-				q(38793),	-- Rethu's Experience
-				q(38792),	-- Rethu's Lesson
-				q(38794),	-- Rethu's Sacrifice
-				q(46267),	-- Return of the Battlelord
-				q(45331),	-- Return to Acherus
-				q(38803),	-- Rin'thissa
-				q(43264),	-- Rise, Champions
-				q(41993),	-- Salvation From On High
-				q(47067),	-- Seeking Lost Knowledge
-				q(46499),	-- Spiders, Huh?
-				q(43265),	-- Spread the Word
-				q(45025),	-- Stealing the Source of Power
-				q(46145),	-- Sterile Surroundings
-				q(45459),	-- Storming the Legion
-				q(45554),	-- Taking Control
-				q(46317),	-- Talon's Call
-				q(46777),	-- The Bounties of Legionfall
-				q(45028),	-- The Fate of Kanrethad
-				q(42484),	-- The Firstborn Rises
-				q(42537),	-- The King Rises
-				q(46666),	-- The Motherlode
-				q(44775),	-- The Peak of Bones
-				q(46674),	-- The Preservation of Nature
-				q(43249),	-- The Raven's Eye
-				q(42533),	-- The Ruined Kingdom
-				q(41919),	-- The Shadows Reveal
-				q(45788),	-- The Speaker Awaits
-				q(42824),	-- The Zealot Rises
-				q(42684),	-- Throwing SI:7 Off the Trail
-				q(45349),	-- To the Broken Shore
-				q(46675),	-- To Track a Demon
-				q(41922),	-- Traitor!
-				q(43267),	-- Troops in the Field
-				q(44234),	-- Unleashing our Wrath
-				q(45385),	-- We Must be Prepared!
-				q(46256),	-- X Treasures Found, 1 Challenge Attempted
-				q(46255),	-- X Unstable Portals Disrupted, 1 World Boss Defeated
-			}),
-			--]]
 			}),
 		}),
 	}),

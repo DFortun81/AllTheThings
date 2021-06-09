@@ -1029,17 +1029,8 @@ _.Zones =
 				q(39533),	-- Nogginclobber Arena
 				q(39435),	-- Oubdob da Smasher
 				q(42381),	-- Ox'iloth
-				q(46796),	-- Paragon of Highmountain
 				q(42700),	-- Quin'el, Master of Chillwind
 				q(41540),	-- Rendezvous with the Courier
-				q(38793),	-- Rethu's Experience
-				q(38791),	-- Rethu's Horn
-				q(38789),	-- Rethu's Journal
-				q(38792),	-- Rethu's Lesson
-				q(38790),	-- Rethu's Pick
-				q(38794),	-- Rethu's Sacrifice
-				q(38803),	-- Rin'thissa
-				q(42519),	-- Rise, Champions
 				q(41837),	-- Rockaway Bully
 				q(42384),	-- Scouting Reports
 				q(40133),	-- Scrap of Pants
@@ -1050,7 +1041,6 @@ _.Zones =
 				q(39465),	-- Skywhisker Taskmaster
 				q(40175),	-- Sleeping Bear
 				q(40681),	-- Snarf
-				q(46145),	-- Sterile Surroundings
 				q(40141),	-- Stormscale Sample
 				q(46743),	-- Supplies From Highmountain
 				q(41187),	-- Surveying Student
@@ -1066,7 +1056,6 @@ _.Zones =
 				q(41192),	-- The Right Path
 				q(42401),	-- The Scent of Magic
 				q(44055),	-- They Have A Pitlord
-				q(45349),	-- To the Broken Shore
 				q(42110),	-- To the Summit!
 				q(44035),	-- Torrentius
 				q(47065),	-- Tracking Quest

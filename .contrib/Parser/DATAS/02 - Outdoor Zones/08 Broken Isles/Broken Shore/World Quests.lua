@@ -89,6 +89,7 @@ _.Zones =
 				}),
 				q(44846, {	-- Clearing the Path
 					["lvl"] = { 45 },
+					["classes"] = exclude(PALADIN, ALL_CLASSES),
 					["isWorldQuest"] = true,
 				}),
 				q(45178, {	-- Contagion Containment
@@ -163,6 +164,10 @@ _.Zones =
 				q(46212, {	-- Get Them Up
 					["lvl"] = { 45 },
 					["isWorldQuest"] = true,
+				}),
+				q(40390, {	-- Hallowed Ground
+					["isWorldQuest"] = true,
+					["classes"] = { PALADIN },
 				}),
 				q(45985, {	-- Hellish Scavengers
 					["lvl"] = { 45 },

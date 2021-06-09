@@ -33,6 +33,11 @@ _.ExpansionFeatures =
 							spell(219663), -- Heroic Weapons (Artifact Appearances)
 						},
 					}),
+					q(40715, {	-- A Pact of Necessity
+						["sourceQuests"] = { 40714 },	-- The Call to War
+						["classes"] = { DEATHKNIGHT },
+						["provider"] = { "n", 101441 },	-- Duke Lankral
+					}),
 					q(42708, {	-- A Personal Request
 						["provider"] = { "n", 93456 }, -- Thassarian
 						["coord"] = { 56.0, 30.7, 648 },
@@ -96,6 +101,13 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 109788 }, -- Duke Lankral
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 40715,	-- A Pact of Necessity
+					}),
+					q(44550, {	-- Called to Acherus
+						["isBreadcrumb"] = true,
+						["provider"] = { "n", 114282 }, -- Dread Commander Thalanor
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuests"] = { 42484 }, -- The Firstborn Rises
+						["maps"] = { 627 },	-- Dalaran
 					}),
 					q(44231, {	-- Champion Armaments
 						["provider"] = { "n", 110410 },	-- Dread Collector Bane
@@ -197,6 +209,13 @@ _.ExpansionFeatures =
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 42708, -- A Personal Request
 					}),
+					q(42535, {	-- Death... and Decay
+						["provider"] = { "n", 107806 },	-- Prince Galen Trollbane
+						["coord"] = { 19.4, 67.3, 14 },
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 42533, -- The Ruined Kingdom
+						["maps"] = { 14 },	-- Arathi Highlands
+					}),
 					q(40932, {	-- Disturbing the Past
 						["provider"] = { "n", 100729 },	-- Revil Kost
 						["coord"] = { 52.3, 34.5, 42 },
@@ -263,7 +282,7 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 97111 }, -- Illanna Dreadmoore
 						["coord"] = { 49.6, 52.6, 647 },
 						["classes"] = { DEATHKNIGHT },
-						["sourceQuest"] = 40715, -- A Pact of Necessity
+						["sourceQuest"] = 40715,	-- A Pact of Necessity
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(44082, {	-- Knights of the Ebon Blade
@@ -305,11 +324,18 @@ _.ExpansionFeatures =
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 39832, -- Plans and Preparations
 					}),
+					q(42534, {	-- Our Oldest Enemies
+						["provider"] = { "n", 107806 },	-- Prince Galen Trollbane
+						["coord"] = { 19.4, 67.3, 14 },
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 42533, -- The Ruined Kingdom
+						["maps"] = { 14 },	-- Arathi Highlands
+					}),
 					q(39832, {	-- Plans and Preparations
 						["provider"] = { "n", 93437 }, -- Highlord Darion Mograine
 						["coord"] = { 51.6, 50.0, 647 },
 						["classes"] = { DEATHKNIGHT },
-						["sourceQuest"] = 40715, -- A Pact of Necessity
+						["sourceQuest"] = 40715,	-- A Pact of Necessity
 					}),
 					q(42821, {	-- Raising an Army
 						["provider"] = { "n", 109221 }, -- Thassarian
@@ -323,7 +349,17 @@ _.ExpansionFeatures =
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 43265, -- Spread the Word
 					}),
-					q(42449, {	-- Return of the Four Horseman
+					q(42536, {	-- Regicide
+						["provider"] = { "n", 108042 },	-- Thassarian
+						["coord"] = { 19.6, 67.0, 14 },
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuests"] = {
+							42535, -- Death... and Decay
+							42534, -- Our Oldest Enemies
+						},
+						["maps"] = { 14 },	-- Arathi Highlands
+					}),
+					q(42449, {	-- Return of the Four Horsemen
 						["provider"] = { "n", 93658 }, -- Highlord Darion Mograine
 						["coord"] = { 51.6, 50.0, 647 },
 						["classes"] = { DEATHKNIGHT },
@@ -423,6 +459,11 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 40934, -- The Dark Riders
 						["maps"] = { 42 },	-- Deadwind Pass
 					}),
+					q(40714, {	-- The Call To War
+						["description"] = "Automatically given to you when you arrive in Dalaran.",
+						["classes"] = { DEATHKNIGHT },
+						["maps"] = { 627 },	-- Dalaran
+					}),
 					q(40934, {	-- The Dark Riders
 						["provider"] = { "n", 100812 },	-- Revil Kost
 						["coord"] = { 49.4, 74.6, 42 },
@@ -443,6 +484,13 @@ _.ExpansionFeatures =
 							i(128402), -- Maw of the Damned
 						},
 					}),
+					q(42484, {	-- The Firstborn Rises
+						["provider"] = { "n", 107554 },	-- Thassarian
+						["coord"] = { 47.3, 17.7, 1 },
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 42449, -- Return of the Four Horsemen
+						["maps"] = { 1 },	-- Durotar
+					}),
 					q(43686, {	-- The Fourth Horseman
 						["provider"] = { "n", 93437 }, -- Highlord Darion Mograine
 						["coord"] = { 51.6, 50.0, 647 },
@@ -452,6 +500,13 @@ _.ExpansionFeatures =
 							title(328),	-- Deathlord
 							i(139673), 	-- Deathlord's Chestguard
 						},
+					}),
+					q(42537, {	-- The King Rises
+						["provider"] = { "n", 108042 },	-- Thassarian
+						["coord"] = { 23.4, 61.4, 14 },
+						["classes"] = { DEATHKNIGHT },
+						["sourceQuest"] = 42536, -- Regicide
+						["maps"] = { 14 },	-- Arathi Highlands
 					}),
 					q(46813, {	-- The Lost Glacier
 						["provider"] = { "n", 121752 },	-- Slimy
@@ -518,8 +573,13 @@ _.ExpansionFeatures =
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 43266,	-- Recruiting the Troops
 					}),
+					q(44234, {	-- Unleashing our Wrath
+						["u"] = REMOVED_FROM_GAME,
+						["classes"] = { DEATHKNIGHT },
+					}),
 					q(46940, {	-- Using Lost Knowledge
 						["u"] = REMOVED_FROM_GAME,
+						["classes"] = { DEATHKNIGHT },
 					}),
 					q(44286, {	-- Vault of the Wardens: A Masterpiece of Flesh
 						["provider"] = { "n", 93491 }, -- Lord Thorval

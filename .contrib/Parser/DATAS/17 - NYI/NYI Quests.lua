@@ -19,6 +19,11 @@ _.NeverImplemented =
 		q(11179, {	-- [Temporarily Deprecated Awaiting a New Mob]Finlay Is Gutless
 			["u"] = NEVER_IMPLEMENTED,	-- can't find a history of a non-"temporarily deprecated" version of this quest
 		}),
+		q(41006),	-- Assassinate That Guy
+		q(41408),	-- Battle: Pandaren Cuisine - Elling Trias
+		q(41405),	-- Battle: Pandaren Cuisine - Sungshin Ironpaw
+		q(41406),	-- Battle: Pandaren Cuisine - Torg Slowflame
+		q(41400),	-- Battle: Pandaren Cuisine!
 		q(8489),	-- BETA An Intact Converter [Eversong Woods]
 		q(8478),	-- BETA Choose Your Weapon [Eversong Woods]
 		q(9357),	-- BETA Report to Aeldon Sunbrand [Eversong Woods]
@@ -83,6 +88,9 @@ _.NeverImplemented =
 			["_drop"] = { "g" },	-- all MoP fish are pulled from the API into the rewards for this quest, causing them to show an "Unsorted" source
 			["u"] = NEVER_IMPLEMENTED,
 		}),
+		q(46273),	-- The Giver of Quests
+		q(46256),	-- X Treasures Found, 1 Challenge Attempted
+		q(46255),	-- X Unstable Portals Disrupted, 1 World Boss Defeated
 	}),
 };
 

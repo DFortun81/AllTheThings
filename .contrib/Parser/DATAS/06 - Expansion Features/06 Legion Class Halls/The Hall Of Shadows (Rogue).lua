@@ -592,6 +592,11 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
 						["sourceQuest"] = 44181,	-- Champion: Fleet Admiral Tethys
 					}),
+					q(43250, {	-- Off to Court
+						["sourceQuests"] = { 43249 },	-- The Raven's Eye
+						["classes"] = { ROGUE },
+						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
+					}),
 					q(44215, {	-- One More Thing...
 						["coord"] = { 41.3, 78.1, 626 },
 						["classes"] = { ROGUE },
@@ -612,6 +617,10 @@ _.ExpansionFeatures =
 						["classes"] = { ROGUE },
 						["provider"] = { "o", 250671 },	-- Notes on the Veiled Hand
 						["sourceQuest"] = 42539,	-- Cloak and Dagger
+					}),
+					q(43470, {	-- Pruning the Garden
+						["classes"] = { ROGUE },
+						["provider"] = { "n", 98100 },	-- Taoshi
 					}),
 					q(43007, {	-- Return to the Chamber of Shadows
 						["lvl"] = 101,
@@ -745,6 +754,11 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["sourceQuest"] = 47137,	-- Champions of Legionfall (have to be on this quest to get The Pirate's Bay)
 					}),
+					q(43249, {	-- The Raven's Eye
+						["classes"] = { ROGUE },
+						["provider"] = { "n", 98102 },	-- Valeera Sanguinar
+						["sourceQuests"] = { 43253 },	-- Maw of Souls: Ancient Vrykul Legends
+					}),
 					q(43013, {	-- The School of Roguery
 						["coord"] = { 37.7, 44.9, 626 },
 						["classes"] = { ROGUE },
@@ -783,6 +797,11 @@ _.ExpansionFeatures =
 							i(128869),	-- The Kingslayers (Sorrow)
 							i(128870),	-- The Kingslayers (Anguish)
 						},
+					}),
+					q(43479, {	-- The World is Not Enough
+						["sourceQuests"] = { 43470 },	-- Pruning the Garden
+						["classes"] = { ROGUE },
+						["provider"] = { "n", 98100 },	-- Taoshi
 					}),
 					q(45628, {	-- This Time, Leave a Trail (A)
 						["maps"] = { 646 },	-- Broken Shore
@@ -853,6 +872,11 @@ _.ExpansionFeatures =
 						--TBD: ["provider"] = { "n", xxxxx },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 46322,	-- The Pirate's Bay
+					}),
+					q(43469, {	-- Where In the World is Mathias?
+						["sourceQuests"] = { 43470 },	-- Pruning the Garden
+						["classes"] = { ROGUE },
+						["provider"] = { "n", 98100 },	-- Taoshi
 					}),
 					q(44195, {	-- Workorders for Armaments
 						["classes"] = { ROGUE },

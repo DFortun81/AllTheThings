@@ -410,6 +410,10 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 107973 },	-- Emmarel Shadewarden
 						["coord"] = { 43.4, 26.4, 739 },
 					}),
+					q(40384, {	-- Needs of the Hunters
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 100786 },	-- Snowfeather
+					}),
 					q(42185, {	-- Never Hunt Alone
 						["sourceQuests"] = { 42158 },	-- The Creator's Workshop
 						["classes"] = { HUNTER },
@@ -631,7 +635,9 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 103023 },	-- Tactician Tinderfell
 						["coord"] = { 42.9, 46.9, 739 },
 					}),
-					q(40959),	-- The Campaign Begins
+					q(40959, {	-- The Campaign Begins
+						["classes"] = { HUNTER },
+					}),
 					q(42158, {	-- The Creator's Workshop
 						["sourceQuests"] = { 41574 },	-- Stolen Thunder
 						["classes"] = { HUNTER },
@@ -643,6 +649,10 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 104382 },	-- Apata Highmountain
 						["coord"] = { 71.0, 50.0, 627 },
 						["maps"] = { 627 },	-- Dalaran
+					}),
+					q(41415, {	-- The Hunter's Call
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 102478 },	-- Emmarel Shadewarden
 					}),
 					q(43182, {	-- The Missing Vessel
 						["sourceQuests"] = { 42405 },	-- Informing Our Allies
@@ -735,7 +745,18 @@ _.ExpansionFeatures =
 						["maps"] = { 641 },	-- Val'sharah
 					}),
 					q(44233, {	-- Walk This Way
-						i(139710),	-- Mask of the Unseen Path
+						["classes"] = { HUNTER },
+						["g"] = {
+							i(139710),	-- Mask of the Unseen Path
+						},
+					}),
+					q(40618, {	-- Weapons of Legend
+						["sourceQuests"] = {
+							40384,	-- Needs of the Hunters
+							41415,	-- The Hunter's Call
+						},
+						["classes"] = { HUNTER },
+						["provider"] = { "n", 102478 },	-- Emmarel Shadewarden
 					}),
 
 					-- Hunter Hati Reborn Questline (BfA)

@@ -72,6 +72,7 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 117305 },	-- Brewer Almai
 						["classes"] = { MONK },
 						["coord"] = { 53.6, 53.3, 646 },	-- Broken Shore
+						["maps"] = { 646 },	-- Broken Shore
 					}),
 					q(41911, {	-- Amaranthine Hops
 						["sourceQuests"] = { 41039 },	-- Stolen Knowledge
@@ -358,6 +359,7 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 118214 },	-- Yiska
 						["classes"] = { MONK },
 						["coord"] = { 44.9, 62.0, 646 },	-- Broken Shore
+						["maps"] = { 646 },	-- Broken Shore
 					}),
 					q(44238, {	-- Meditations on Fate
 						["provider"] = { "n", 110817 },	-- Yushi

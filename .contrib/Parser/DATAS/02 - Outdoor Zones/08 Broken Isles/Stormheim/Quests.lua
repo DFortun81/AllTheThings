@@ -1150,9 +1150,7 @@ _.Zones =
 				q(43898),	-- Preparing to Move
 				q(41159),	-- Process of Elimination
 				q(42399),	-- Ready to Work
-				q(38794),	-- Rethu's Sacrifice
 				q(47052),	-- Retribution: Fate of the Tideskorn
-				q(38803),	-- Rin'thissa
 				q(40603),	-- Seeking the Valkyra
 				q(40146),	-- Seymour and Agnes
 				q(40404),	-- Show Legion Portal
@@ -1167,7 +1165,6 @@ _.Zones =
 				q(46002),	-- The Legion Assault - Viewed
 				q(40608),	-- The Mark
 				q(38685),	-- The Nameless King
-				q(44775),	-- The Peak of Bones
 				q(41168),	-- The Purple Hills of Mac'Aree
 				q(41170),	-- The Relic Renewed
 				q(45406),	-- The Storm's Fury

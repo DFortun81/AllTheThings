@@ -75,6 +75,12 @@ _.ExpansionFeatures =
 							i(139730),	-- Bracers of the Dreamgrove
 						},
 					}),
+					q(40643, {	-- A Summons From Moonglade
+						["sourceQuests"] = { 44663 },	-- In the Blink of an Eye
+						["provider"] = { "n", 101061 },  -- Archdruid Hamuul Runetotem
+						["coord"] = { 57.8, 45.8, 627 },
+						["classes"] = { DRUID },
+					}),
 					q(42439, {	-- Aid for the Ashen
 						["sourceQuests"] = { 42428 },	-- The Shrine of Ashamane
 						["provider"] = { "n", 107392 },	-- Delandros Shimmermoon
@@ -833,7 +839,7 @@ _.ExpansionFeatures =
 						},
 						["coord"] = { 43.5, 58.3, 646 },
 						["sourceQuests"] = { 46674 },	-- The Preservation of Nature
-						["maps"] = { 646 },
+						["maps"] = { 646 },	-- Broken Shore
 					}),
 					q(42035, {	-- Tracking the Enemy
 						["classes"] = { DRUID },
@@ -896,7 +902,7 @@ _.ExpansionFeatures =
 							["provider"] = { "n", 118105 },	-- Grovewarden Proudhorn
 							["coord"] = { 43.6, 63.6, 646 },
 							["sourceQuests"] = { 46246 },	-- Strike Them Down
-							["maps"] = { 646 },
+							["maps"] = { 646 },	-- Broken Shore
 						}),
 						q(46318, {	-- Defense of Aviana
 							["provider"] = { "n", 106299 },	-- Thisalee Crow

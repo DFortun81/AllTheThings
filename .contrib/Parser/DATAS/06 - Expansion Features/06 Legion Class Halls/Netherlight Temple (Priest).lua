@@ -467,6 +467,10 @@ _.ExpansionFeatures =
 						["coord"] = { 58.5, 37.2, 630 },
 						["provider"] = { "n", 112487 },	-- Yalia Sagewhisper
 					}),
+					q(44100, {	-- Proper Introductions
+						["classes"] = { PRIEST },	-- Priest
+						["provider"] = { "n", 112695 },	-- Hooded Priest
+					}),
 					q(43851, {	-- Recruiting More Troops
 						["sourceQuests"] = { 43379 },	-- Velen's Vision
 						["classes"] = { PRIEST },
@@ -519,6 +523,7 @@ _.ExpansionFeatures =
 						["classes"] = { PRIEST },
 						["provider"] = { "n", 105684 },	-- Alora
 						["coord"] = { 34.0, 33.9, 646 },	-- Broken Shore
+						["maps"] = { 646 },	-- Broken Shore
 					}),
 					q(45344, {	-- Sampling the Source
 						-- TBD: fill in other fields
@@ -552,6 +557,10 @@ _.ExpansionFeatures =
 						["classes"] = { PRIEST },
 						["provider"] = { "n", 110564 },	-- Alonsus Faol
 						["coord"] = { 50.9, 46.8, 702 },
+					}),
+					q(46145, {	-- Sterile Surroundings
+						-- TBD: fill in other fields
+						["classes"] = { PRIEST },
 					}),
 					q(43277, {	-- Tech It Up A Notch
 						["sourceQuests"] = { 43276 },	-- Troops in the Field
@@ -596,6 +605,11 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 105917 },	-- Image of Kalec
 						["maps"] = { 736 },	-- The Nexus Vault
 					}),
+					q(45788, {	-- The Speaker Awaits
+						["sourceQuests"] = { 46246 } ,	-- Strike Them Down
+						["classes"] = { PRIEST },
+						["maps"] = { 646 },	-- Broken Shore
+					}),
 					q(45789, {	-- The Sunken Vault
 						["classes"] = { PRIEST },
 						["lvl"] = 110,
@@ -614,6 +628,10 @@ _.ExpansionFeatures =
 						["classes"] = { PRIEST },
 						["provider"] = { "n", 101314 },	-- Alonsus Faol
 						["coord"] = { 78.9, 41.0, 18},
+					}),
+					q(45349, {	-- To the Broken Shore
+						-- TBD: fill in other fields
+						["classes"] = { PRIEST },
 					}),
 					q(43276, {	-- Troops in the Field
 						["sourceQuests"] = { 43275 },	-- Recruiting the Troops
