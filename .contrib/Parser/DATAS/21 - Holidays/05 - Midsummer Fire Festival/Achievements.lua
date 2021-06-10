@@ -113,7 +113,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 									crit(1,  {	-- Ashenvale
 										["coord"] = { 13.0, 47.0, 56 },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 63 },	-- Ashenvale
+										["maps"] = { ASHENVALE },
 									}),
 									crit(2,  {	-- Azuremyst Isle
 										["coord"] = { 44.0, 53.0, AZUREMYST_ISLE },
@@ -381,14 +381,14 @@ _.Holidays = bubbleDown({["u"] = 21},
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									crit(1,  {	-- Ashenvale
-										["coord"] = { 51.6, 66.8, 63 },
+										["coord"] = { 51.6, 66.8, ASHENVALE },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 63 },	-- Ashenvale
+										["maps"] = { ASHENVALE },
 									}),
 									crit(2,  {	-- Azshara
-										["coord"] = { 60.4, 53.5, 76 },
+										["coord"] = { 60.4, 53.5, AZSHARA },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 76 },	-- Azshara
+										["maps"] = { AZSHARA },
 									}),
 									crit(3,  {	-- Desolace
 										["coord"] = { 26.1, 77.4, 66 },
@@ -807,14 +807,14 @@ _.Holidays = bubbleDown({["u"] = 21},
 								["races"] = HORDE_ONLY,
 								["g"] = {
 									crit(1,  {	-- Ashenvale
-										["coord"] = { 51.4, 66.1, 63 },
+										["coord"] = { 51.4, 66.1, ASHENVALE },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 63 },	-- Ashenvale
+										["maps"] = { ASHENVALE },
 									}),
 									crit(2,  {	-- Azshara
-										["coord"] = { 60.8, 53.5, 76 },
+										["coord"] = { 60.8, 53.5, AZSHARA },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 76 },	-- Azshara
+										["maps"] = { AZSHARA },
 									}),
 									crit(3,  {	-- Desolace
 										["coord"] = { 26.1, 76.9, 66 },
@@ -1087,9 +1087,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 								["races"] = HORDE_ONLY,
 								["g"] = {
 									crit(1,  {	-- Ashenvale
-										["coord"] = { 86.7, 41.4, 63 },
+										["coord"] = { 86.7, 41.4, ASHENVALE },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 63 },	-- Ashenvale
+										["maps"] = { ASHENVALE },
 									}),
 									crit(2,  {	-- Azuremyst Isle
 										["coord"] = { 44.7, 52.5, AZUREMYST_ISLE },

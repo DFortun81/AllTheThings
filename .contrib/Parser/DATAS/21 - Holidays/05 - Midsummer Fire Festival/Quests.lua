@@ -61,8 +61,8 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["sourceQuests"] = { 11886, },	-- Unusual Activity
 				["description"] = "Use your Totemic Beacon while in Zoram Strand to summon the questgiver.  Coordinates are approximate.",
 				["provider"] = { "n", 25324 },		 -- Earthen Ring Guide
-				["coord"] = { 10.2, 15.3, 63 },
-				["maps"] = { 63, },	-- Ashenvale
+				["coord"] = { 10.2, 15.3, ASHENVALE },
+				["maps"] = { ASHENVALE },
 			}),
 		--	ALLIANCE "DESECRATE THIS FIRE!" QUESTS START HERE.
 			q(11764, {	-- Desecrate this Fire! — Arathi Highlands
@@ -76,18 +76,18 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11765, {	-- Desecrate this Fire! — Ashenvale
 				["isYearly"] = true,
 				["provider"] = { "o", 187948 },	-- Horde Bonfire
-				["coord"] = { 51.6, 66.8, 63 },
+				["coord"] = { 51.6, 66.8, ASHENVALE },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
-				["maps"] = { 63 },	-- Ashenvale
+				["maps"] = { ASHENVALE },
 			}),
 			q(28919, {	-- Desecrate this Fire! — Azshara
 				["isYearly"] = true,
 				["provider"] = { "o", 207991 },	-- Horde Bonfire
-				["coord"] = { 60.4, 53.5, 76 },
+				["coord"] = { 60.4, 53.5, AZSHARA },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
-				["maps"] = { 76 },	-- Azshara
+				["maps"] = { AZSHARA },
 			}),
 			q(11766, {	-- Desecrate this Fire! — Badlands
 				["isYearly"] = true,
@@ -486,10 +486,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11734, {	-- Desecrate this Fire! — Ashenvale
 				["isYearly"] = true,
 				["provider"] = { "o", 187916 },	-- Alliance Bonfire
-				["coord"] = { 86.7, 41.4, 63 },
+				["coord"] = { 86.7, 41.4, ASHENVALE },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-				["maps"] = { 63 },	-- Ashenvale
+				["maps"] = { ASHENVALE },
 			}),
 			q(11735, {	-- Desecrate this Fire! — Azuremyst Isle
 				["isYearly"] = true,
@@ -925,9 +925,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11805, {	-- Honor the Flame — Ashenvale
 				["provider"] = { "n", 25883 },	-- Ashenvale Flame Warden
 				["isYearly"] = true,
-				["coord"] = { 87.0, 42.0, 63 },
+				["coord"] = { 87.0, 42.0, ASHENVALE },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 63 },	-- Ashenvale
+				["maps"] = { ASHENVALE },
 			}),
 			q(11806, {	-- Honor the Flame — Azuremyst Isle
 				["provider"] = { "n", 25888 },	-- Azuremyst Isle Flame Warden
@@ -1319,16 +1319,16 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11841, {	-- Honor the Flame — Ashenvale
 				["provider"] = { "n", 25884 },	-- Ashenvale Flame Keeper
 				["isYearly"] = true,
-				["coord"] = { 51.4, 66.1, 63 },
+				["coord"] = { 51.4, 66.1, ASHENVALE },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 63 },	-- Ashenvale
+				["maps"] = { ASHENVALE },
 			}),
 			q(28923, {	-- Honor the Flame — Azshara
 				["provider"] = { "n", 51575 },	-- Azshara Flame Keeper
 				["isYearly"] = true,
-				["coord"] = { 60.8, 53.5, 76 },
+				["coord"] = { 60.8, 53.5, AZSHARA },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 76 },	-- Azshara
+				["maps"] = { AZSHARA },
 			}),
 			q(11842, {	-- Honor the Flame — Badlands
 				["provider"] = { "n", 25925 },	-- Badlands Flame Keeper
@@ -1814,17 +1814,17 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(29092, {	-- Inform the Elder (A)
 				["sourceQuests"] = { 11891 },	-- An Innocent Disguise
 				["description"] = "Use your Totemic Beacon while in Zoram Strand to summon the questgiver.  Coordinates are approximate.",
-				["coord"] = { 9.40, 13.2, 63 },	-- Ashenvale
+				["coord"] = { 9.40, 13.2, ASHENVALE },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 63 },	-- Ashenvale
+				["maps"] = { ASHENVALE },
 			}),
 			q(12012, {	-- Inform the Elder (H)
 				["sourceQuests"] = { 11891 },	-- An Innocent Disguise
 				["description"] = "Use your Totemic Beacon while in Zoram Strand to summon the questgiver.  Coordinates are approximate.",
 				["provider"] = { "n", 25324 },	-- Earthen Ring Guide
-				["coord"] = { 15.6, 20.2, 63 },
+				["coord"] = { 15.6, 20.2, ASHENVALE },
 				["races"] = HORDE_ONLY,	-- listed as "both" on wowhead, but this is the version i picked up on Horde, and i got 29092 on Alliance.
-				["maps"] = { 63 },	-- Ashenvale
+				["maps"] = { ASHENVALE },
 			}),
 			q(11924, {	-- More Torch Catching (A)
 				["sourceQuests"] = { 11657 },	-- Torch Catching (A)
@@ -1919,7 +1919,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					56,		-- Wetlands
 					57,		-- Teldrassil
 					62,		-- Darkshore
-					63,		-- Ashenvale
+					ASHENVALE,
 					65,		-- Stonetalon Mountains
 					66,		-- Desolace
 					70,		-- Dustwallow Marsh
@@ -1953,9 +1953,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 					7,		-- Mulgore
 					10,		-- Northern Barrens
 					18,		-- Tirisfal Glades
-					63,		-- Ashenvale
+					ASHENVALE,
 					71,		-- Tanaris
-					76,		-- Azshara
+					AZSHARA,
 					78,		-- Un'goro Crater
 					83,		-- Winterspring
 					EVERSONG_WOODS,

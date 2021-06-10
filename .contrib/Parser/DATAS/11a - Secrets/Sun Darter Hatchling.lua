@@ -155,7 +155,7 @@ _.Secrets =
 			o(9999909, {	-- Step 2: Cavern of Consumption
 				["description"] = "|cFFFFFFFFSTEP 2:|r Once you have gathered all of the consumables go to Caverns of Consumption on the North coast of Winterspring, and travel through the cavern to the fire barrier.\n\n***Before you continue, make sure you have 10-15 mins to finish the remaining steps***",
 				["coords"] = {
-					{ 57.2, 14.0, 12 },	-- Cave Entrance
+					{ 57.2, 14.0, KALIMDOR },	-- Cave Entrance
 				},
 			}),
 			o(9999910, {	-- Step 3: Fire Barrier

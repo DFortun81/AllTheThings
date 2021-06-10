@@ -5,7 +5,7 @@
 _.Instances = { tier(1, {	-- Classic
 	inst(246, { 	-- Scholomance
 		["lvl"] = 33,
-		["mapID"] = 476,
+		["mapID"] = SCHOLOMANCE,
 		["maps"] = { 477, 478, 479 },
 		["coord"] = { 69.07, 72.96, 22 },	-- Scholomance, Western Plaguelands
 		["g"] = {

@@ -516,8 +516,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 									["races"] = ALLIANCE_ONLY,
 									["g"] = {
 										crit(1,  {	-- Ashenvale, Astranaar
-											["coord"] = { 37.0, 49.3, 63 },
-											["maps"] = { 63 },	-- Ashenvale
+											["coord"] = { 37.0, 49.3, ASHENVALE },
+											["maps"] = { ASHENVALE },
 										}),
 										crit(2,  {	-- Azuremyst Isle, Azure Watch
 											["coord"] = { 48.5, 49.1, AZUREMYST_ISLE },
@@ -629,24 +629,24 @@ _.Holidays = bubbleDown({["u"] = 26},
 									["races"] = HORDE_ONLY,
 									["g"] = {
 										crit(1,  {	-- Ashenvale, Hellscream's Watch
-											["coord"] = { 38.6, 42.4, 63 },
-											["maps"] = { 63 },	-- Ashenvale
+											["coord"] = { 38.6, 42.4, ASHENVALE },
+											["maps"] = { ASHENVALE },
 										}),
 										crit(2,  {	-- Ashenvale, Silverwind Refuge
-											["coord"] = { 50.2, 67.2, 63 },
-											["maps"] = { 63 },	-- Ashenvale
+											["coord"] = { 50.2, 67.2, ASHENVALE },
+											["maps"] = { ASHENVALE },
 										}),
 										crit(3,  {	-- Ashenvale, Splintertree Post
-											["coord"] = { 73.9, 60.7, 63 },
-											["maps"] = { 63 },	-- Ashenvale
+											["coord"] = { 73.9, 60.7, ASHENVALE },
+											["maps"] = { ASHENVALE },
 										}),
 										crit(4,  {	-- Ashenvale, Zoram'gar Outpost
-											["coord"] = { 13.0, 34.1, 63 },
-											["maps"] = { 63 },	-- Ashenvale
+											["coord"] = { 13.0, 34.1, ASHENVALE },
+											["maps"] = { ASHENVALE },
 										}),
 										crit(5,  {	-- Azshara, Bilgewater Harbor
-											["coord"] = { 57.1, 50.2, 76 },
-											["maps"] = { 76 },	-- Azshara
+											["coord"] = { 57.1, 50.2, AZSHARA },
+											["maps"] = { AZSHARA },
 										}),
 										crit(6,  {	-- Desolace, Karnum's Glade
 											["coord"] = { 56.8, 50.0, 66 },

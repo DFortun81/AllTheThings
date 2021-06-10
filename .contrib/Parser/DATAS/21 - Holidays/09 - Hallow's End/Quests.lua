@@ -197,54 +197,54 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12345, {	-- Candy Bucket — Ashenvale, Astranaar, Alliance
 				["isYearly"] = true,
-				["coord"] = { 37.0, 49.3, 63 },
+				["coord"] = { 37.0, 49.3, ASHENVALE },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 63 },	-- Ashenvale
+				["maps"] = { ASHENVALE },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(28958, {	-- Candy Bucket — Ashenvale, Hellscream's Watch, Horde
 				["isYearly"] = true,
-				["coord"] = { 38.6, 42.4, 63 },
+				["coord"] = { 38.6, 42.4, ASHENVALE },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 63 },	-- Ashenvale
+				["maps"] = { ASHENVALE },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(28953, {	-- Candy Bucket — Ashenvale, Silverwind Refuge, Horde
 				["isYearly"] = true,
-				["coord"] = { 50.2, 67.2, 63 },
+				["coord"] = { 50.2, 67.2, ASHENVALE },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 63 },	-- Ashenvale
+				["maps"] = { ASHENVALE },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12377, {	-- Candy Bucket — Ashenvale, Splintertree Post, Horde
 				["isYearly"] = true,
-				["coord"] = { 73.9, 60.7, 63 },
+				["coord"] = { 73.9, 60.7, ASHENVALE },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 63 },	-- Ashenvale
+				["maps"] = { ASHENVALE },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(28989, {	-- Candy Bucket — Ashenvale, Zoram'gar Outpost, Horde
 				["isYearly"] = true,
-				["coord"] = { 13.0, 34.1, 63 },
+				["coord"] = { 13.0, 34.1, ASHENVALE },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 63 },	-- Ashenvale
+				["maps"] = { ASHENVALE },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(28992, {	-- Candy Bucket — Azshara, Bilgewater Harbor, Horde
 				["isYearly"] = true,
-				["coord"] = { 57.1, 50.2, 76 },
+				["coord"] = { 57.1, 50.2, AZSHARA },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 76 },	-- Azshara
+				["maps"] = { AZSHARA },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},

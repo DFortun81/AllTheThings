@@ -5,8 +5,8 @@
 _.Instances = { tier(1, {	-- Classic
 	inst(227, { 	-- Blackfathom Deeps
 		["lvl"] = 15,
-		["maps"] = { 221, 222, 223 },
-		["coord"] =	{ 16.53, 11.01, 63 },	-- Blackfathom Deeps, Ashenvale
+		["maps"] = { BLACKFATHOM_DEEPS, BLACKFATHOM_DEEPS_LEVEL2, BLACKFATHOM_DEEPS_LEVEL3 },
+		["coord"] =	{ 16.53, 11.01, ASHENVALE },
 		["groups"] = {
 			n(QUESTS, {
 				q(6922, {	-- Baron Aquanis

@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(63, {	-- Ashenvale
+		m(ASHENVALE, {
 			filter(101, {	-- Pet Battle
 				p(478, {	-- Forest Moth
 					["crs"] = { 62177 },	-- Forest Moth
@@ -33,14 +33,14 @@ _.Zones =
 				}),
 				q(31854, {	-- Analynn
 					["provider"] = { "n", 66136 },	-- Analynn
-					["coord"] = { 20.2, 29.5, 63 },
+					["coord"] = { 20.2, 29.5, ASHENVALE },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["sourceQuests"] = { 31814 },	-- Analynn
 				}),
 				q(31815, {	-- Zonya the Sadist
 					["provider"] = { "n", 66136 },	-- Analynn
-					["coord"] = { 20.2, 29.5, 63 },
+					["coord"] = { 20.2, 29.5, ASHENVALE },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 31814 },	-- Analynn
 					["g"] = {

@@ -206,7 +206,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				i(163476, {	-- Elemental Core
-					["coord"] = { 92.7, 42.0, 76 },	-- Verify Coords/npcid
+					["coord"] = { 92.7, 42.0, AZSHARA },	-- Verify Coords/npcid
 					["g"] = {
 						q(53169, {	-- Elemental Core
 							["provider"] = { "n", 13278 },	-- Duke Hydraxis

@@ -66,7 +66,7 @@ _.Zones =
 								11348,	-- The Rune of Command
 							},
 						}),
-						crit(12, {	--Alpha Worg
+						crit(12, {	-- Alpha Worg
 							["sourceQuest"] = 11326,	-- Alpha Worg
 						}),
 					},

@@ -2369,7 +2369,7 @@ subroutines = {
 			{"select", "creatureID", npcID},	-- Main Vendor
 			{"pop"},	-- Remove Main Vendor and push his children into the processing queue.
 			{"is", "itemID"},	-- Only Items
-			-- Borya <Tailoring Supplies> Cataclysm Tailoring 
+			-- Borya <Tailoring Supplies> Cataclysm Tailoring
 			{"exclude", "itemID", 6270},	-- Pattern: Blue Linen Vest
 			{"exclude", "itemID", 6274},	-- Pattern: Blue Overalls
 			{"exclude", "itemID", 10314},	-- Pattern: Lavender Mageweave Shirt
@@ -19266,24 +19266,24 @@ app.events.VARIABLES_LOADED = function()
 
 			53006,	-- Grimwatt's Crash (Mission Completion)
 			53007,	-- Grimwatt's Crash (BFA Alliance Outpost Unlock)
-			52801, -- Veiled Grotto (Mission Completion)
+			52801,	-- Veiled Grotto (Mission Completion)
 			52802,	-- Veiled Grotto (BFA Alliance Outpost Unlock)
-			52962, -- Mistvine Ledge (Mission Completion)
+			52962,	-- Mistvine Ledge (Mission Completion)
 			52963,	-- Mistvine Ledge (BFA Alliance Outpost Unlock)
-			52851, -- Mugamba Overlook (Mission Completion)
+			52851,	-- Mugamba Overlook (Mission Completion)
 			52852,	-- Mugamba Overlook (BFA Alliance Outpost Unlock)
-			52886, -- Verdant Hollow (Mission Completion)
+			52886,	-- Verdant Hollow (Mission Completion)
 			52888,	-- Verdant Hollow (BFA Alliance Outpost Unlock)
-			53043, -- Vulture's Nest (Mission Completion)
+			53043,	-- Vulture's Nest (Mission Completion)
 			53044,	-- Vulture's Nest (BFA Alliance Outpost Unlock)
-			
-			53063, 	-- a-mission-of-unity (BFA Alliance WQ Unlock)
-			53064, 	-- a-mission-of-unity (BFA Horde WQ Unlock)
-			53061, 	-- the-azerite-advantage (BFA Alliance Island Unlock)
-			53062,  -- the-azerite-advantage (BFA Horde Island Unlock)
-			53055, 	-- Pushing Our Influence (BFA Horde PreQ for 1st Foothold)
+
+			53063,	-- A Mission of Unity (BFA Alliance WQ Unlock)
+			53064,	-- A Mission of Unity (BFA Horde WQ Unlock)
+			53061,	-- The Azerite Advantage (BFA Alliance Island Unlock)
+			53062,	-- The Azerite Advantage (BFA Horde Island Unlock)
+			53055,	-- Pushing Our Influence (BFA Horde PreQ for 1st Foothold)
 			53056,	-- Pushing Our Influence (BFA Alliance PreQ for 1st Foothold)
-			
+
 		--	Shard Labor
 			61229,	-- forging the Crystal Mallet of the Heralds
 			61191,	-- ringing the Vesper of the Silver Wind

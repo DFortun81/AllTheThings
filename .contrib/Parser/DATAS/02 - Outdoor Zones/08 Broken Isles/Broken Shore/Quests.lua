@@ -354,7 +354,7 @@ _.Zones =
 				}),
 				q(46769, {	-- Relieved of Their Valuables
 					["sourceQuests"] = { 46252 },	-- Intolerable Infestation
-					["provider"] = { "n", 44.6, 63.1, 646 },
+					["provider"] = { "n", 116302 },	-- Archmage Khadgar
 					["coord"] = { 44.6, 63.1, 646 },
 				}),
 				q(45192, {	-- Runes of Rending

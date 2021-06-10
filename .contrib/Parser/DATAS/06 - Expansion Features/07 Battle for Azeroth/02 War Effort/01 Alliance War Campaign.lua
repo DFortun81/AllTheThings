@@ -778,7 +778,7 @@ _.ExpansionFeatures =
 						}),
 						q(52259, {	-- I Take No Pleasure In This
 							["provider"] = { "n", 140740 },	-- Magister Umbric
-							["coord"] = { 21.5, 52.3, 76 },	-- Azshara
+							["coord"] = { 21.5, 52.3, AZSHARA },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 52247 },	-- Chasing Gallywix
 						}),
@@ -1455,13 +1455,13 @@ _.ExpansionFeatures =
 						q(53989, {	-- Hope
 							["sourceQuests"] = { 53988 },	-- Shores of Fate
 							["provider"] = { "n", 146374 },	-- Shandris Feathermoon
-							["coord"] = { 11.5, 17.6, 63 },
+							["coord"] = { 11.5, 17.6, ASHENVALE },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(54041, {	-- No Survivors
 							["sourceQuests"] = { 53988 },	-- Shores of Fate
 							["provider"] = { "n", 146375 },	-- Sira Moonwarden
-							["coord"] = { 11.4, 17.8, 63 },
+							["coord"] = { 11.4, 17.8, ASHENVALE },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(53990, {	-- In Darkest Night

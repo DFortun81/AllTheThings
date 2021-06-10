@@ -640,8 +640,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8725,  {	-- Riversong the Elder
 				["provider"] = { "n", 15605 },	-- Elder Riversong
 				["isYearly"] = true,
-				["coord"] = { 35.5, 48.9, 63 },
-				["maps"] = { 63 },	-- Ashenvale
+				["coord"] = { 35.5, 48.9, ASHENVALE },
+				["maps"] = { ASHENVALE },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(9, {	-- Elder Riversong in Astranaar
@@ -664,8 +664,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8720,  {	-- Skygleam the Elder
 				["provider"] = { "n", 15600 },	-- Elder Skygleam
 				["isYearly"] = true,
-				["coord"] = { 64.7, 79.3, 76 },
-				["maps"] = { 76 },	-- Azshara
+				["coord"] = { 64.7, 79.3, AZSHARA },
+				["maps"] = { AZSHARA },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(2, {	-- Elder Skygleam in Azshara
@@ -1014,7 +1014,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["coord"] = { 27.7, 11.6, 23 },	-- Stratholme entrance
 				["maps"] = {
 					23,		-- Eastern Plaguelands
-					317,	-- Stratholme
+					STRATHOLME,
 				},
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {

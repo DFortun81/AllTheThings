@@ -134,10 +134,10 @@ _.WorldEvents =
 						["questID"] = 47462,
 						["isDaily"] = true,
 						["maps"] = {
-							76,	-- Azshara
+							AZSHARA,
 						},
 						["coords"] = {
-							{ 48.76, 83.82, 76 },
+							{ 48.76, 83.82, AZSHARA },
 						},
 						["g"] = {
 							i(150424),	-- Cold Snap
@@ -237,10 +237,10 @@ _.WorldEvents =
 						["questID"] = 47463,
 						["isDaily"] = true,
 						["maps"] = {
-							63,	-- Ashenvale
+							ASHENVALE,
 						},
 						["coords"] = {
-							{ 93.8, 40.8, 63 },
+							{ 93.8, 40.8, ASHENVALE },
 						},
 						["g"] = {
 							i(150429),	-- Emerald Dragonfang

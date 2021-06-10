@@ -8,7 +8,7 @@ _.Holidays =
 		n(-139, {	-- Bosses
 			n(25740, {	-- Ahune
 				["description"] = "You can loot one satchel per character per day by queueing for 'The Frost Lord Ahune' via the Dungeon Finder.",
-				["maps"] = { 265 },	-- The Slave Pens
+				["maps"] = { COILFANG_RESERVOIR_SLAVE_PENS },
 				["u"] = 21,	-- Midsummer Fire Festival
 				["g"] = {
 					ach(263),	-- Ice the Frost Lord

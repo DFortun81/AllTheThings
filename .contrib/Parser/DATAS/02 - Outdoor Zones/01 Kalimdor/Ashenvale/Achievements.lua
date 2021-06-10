@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(63, {	-- Ashenvale
+		m(ASHENVALE, {
 			n(ACHIEVEMENTS, {
 				ach(4925, {	-- Ashenvale Quests
 					["races"] = ALLIANCE_ONLY,

@@ -10,7 +10,7 @@ _.Instances = { tier(1, {	-- Classic
 			n(-388, {	-- Main Gate
 				["description"] = "Stratholme is divided into two sides.\n\nThis side is commonly referred to as the \"Live\" or \"Scarlet\" side, which the Scarlet Crusade has taken over.",
 				["maps"] = {
-					317,	-- Stratholme Living Side
+					STRATHOLME,	-- Living Side
 					827,	-- Paladin: Legion Class Mount Map
 				},
 				["coord"] = { 27.66, 11.64, 23 },	-- Stratholme [Main Gate], Eastern Plaguelands

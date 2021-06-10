@@ -14,7 +14,7 @@ _.WorldEvents =
 					n(QUESTS, {
 						-- Attaching the quests to each zone that is involved in the "War of the Thorns" Campaign.  Excluding Undercity, Stomrwind and Northern Barrens due to only one quest taking place in these zones and it's not relevant to link for just the one.
 						["maps"] = {
-							63,	-- Ashenvale
+							ASHENVALE,
 							89,	-- Darnassus
 							62,	-- Darkshore
 						},

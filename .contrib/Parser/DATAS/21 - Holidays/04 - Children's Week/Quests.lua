@@ -1226,11 +1226,9 @@ _.Holidays =
 						["sourceQuests"] = {
 							172,	-- Children's Week
 						},
-						["coords"] = {
-							{ 50.71, 73.94, 76 },	-- Redhound Two-Seater
-						},
+						["coord"] = { 50.71, 73.94, AZSHARA },	-- Redhound Two-Seater
 						["maps"] = {
-							76,	-- Azshara
+							AZSHARA,
 							85,	-- Orgrimmar
 							86,	-- Orgrimmar: The Drag
 						},
