@@ -18,7 +18,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 		},
 		["coords"] = {
 			{ 64.7, 49.9, 71 },	-- entrance to CoT, Tanaris
-			{ 61.9, 27.2, 75 },	-- actual raid entrance
+			{ 61.9, 27.2, CAVERNS_OF_TIME },	-- actual raid entrance
 		},
 		["groups"] = {
 			n(-10066, {	-- Legendary Questline
@@ -30,7 +30,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 				["maps"] = {
 					25,	-- Hillsbrad Foothills (maybe needs specific rogue building id)
 					74,	-- Tanaris: Caverns of Time Entrance
-					75,	-- Tanaris: Caverns of Time
+					CAVERNS_OF_TIME,	-- Tanaris: Caverns of Time
 					84,	-- Stormwind City
 					85,	-- Orgrimmar
 					86,	-- Orgrimmar: The Drag

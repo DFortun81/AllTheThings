@@ -139,8 +139,8 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				["questID"] = 54895,	-- Ivus the Decayed (WQ)
 				["isRaid"] = true,
 				["races"] = ALLIANCE_ONLY,
-				["coord"] = { 41.47, 35.97, 62 },
-				["maps"] = { 62 },	-- Darkshore
+				["coord"] = { 41.47, 35.97, DARKSHORE },
+				["maps"] = { DARKSHORE },
 				["lvl"] = { 50 },
 				["cr"] = 148295,	-- Ivus the Decayed
 				["g"] = bubbleDown({["modID"] = 3}, {
@@ -163,8 +163,8 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				["questID"] = 54896,	-- Ivus the Forest Lord (WQ)
 				["isRaid"] = true,
 				["races"] = HORDE_ONLY,
-				["coord"] = { 41.4, 35.9, 62 },
-				["maps"] = { 62 },	-- Darkshore
+				["coord"] = { 41.4, 35.9, DARKSHORE },
+				["maps"] = { DARKSHORE },
 				["lvl"] = { 50 },
 				["cr"] = 144946,	-- Ivus the Forest Lord
 				["g"] = bubbleDown({["modID"] = 3}, {

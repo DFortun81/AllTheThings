@@ -689,8 +689,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["description"] = "In order to view this Elder, visit Zidormi at 48.8, 24.4 to see Darkshore before the battle.",
 				["provider"] = { "n", 15601 },	-- Elder Starweave
 				["isYearly"] = true,
-				["coord"] = { 49.5, 18.9, 62 },
-				["maps"] = { 62 },	-- Darkshore
+				["coord"] = { 49.5, 18.9, DARKSHORE },
+				["maps"] = { DARKSHORE },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(7, {	-- Elder Starweave in Lor'danel

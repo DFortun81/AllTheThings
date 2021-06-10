@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(62, {	-- Darkshore
+		m(DARKSHORE, {
 			n(ACHIEVEMENTS, {
 				ach(4928, {	-- Darkshore Quests
 					["races"] = ALLIANCE_ONLY,

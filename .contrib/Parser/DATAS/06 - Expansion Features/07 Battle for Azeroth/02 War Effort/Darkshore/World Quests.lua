@@ -6,7 +6,7 @@ _.ExpansionFeatures =
 {
 	tier(8, {	-- Battle for Azeroth
 		n(-10057, {	-- War Effort
-			m(62, {	-- Darkshore
+			m(DARKSHORE, {
 				n(-34,  {	-- World Quests
 					q(54669, {	-- A Dangerous Combination(A)
 						["isWorldQuest"] = true,

@@ -528,8 +528,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { BLOODMYST_ISLE },
 										}),
 										crit(4,  {	-- Darkshore, Lor'danel
-											["coord"] = { 50.8, 18.8, 62 },
-											["maps"] = { 62 },	-- Darkshore
+											["coord"] = { 50.8, 18.8, DARKSHORE },
+											["maps"] = { DARKSHORE },	-- Darkshore
 										}),
 										crit(5,  {	-- Darnassus, Craftsmen's Terrace
 											["coord"] = { 62.2, 33.0, 89 },

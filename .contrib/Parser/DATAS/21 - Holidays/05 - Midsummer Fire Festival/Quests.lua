@@ -558,10 +558,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11740, {	-- Desecrate this Fire! — Darkshore
 				["isYearly"] = true,
 				["provider"] = { "o", 187923 },	-- Alliance Bonfire
-				["coord"] = { 49.0, 22.5, 62 },
+				["coord"] = { 49.0, 22.5, DARKSHORE },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-				["maps"] = { 62 },	-- Darkshore
+				["maps"] = { DARKSHORE },
 			}),
 			q(11741, {	-- Desecrate this Fire! — Desolace
 				["isYearly"] = true,
@@ -988,9 +988,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11811, {	-- Honor the Flame — Darkshore
 				["provider"] = { "n", 25893 },	-- Darkshore Flame Warden
 				["isYearly"] = true,
-				["coord"] = { 49.0, 23.0, 62 },
+				["coord"] = { 49.0, 23.0, DARKSHORE },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 62 },	-- Darkshore
+				["maps"] = { DARKSHORE },
 			}),
 			q(29036, {	-- Honor the Flame — Deepholm
 				["provider"] = { "n", 51698 },	-- Deepholm Flame Guardian
@@ -1918,7 +1918,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					52,		-- Westfall
 					56,		-- Wetlands
 					57,		-- Teldrassil
-					62,		-- Darkshore
+					DARKSHORE,
 					ASHENVALE,
 					65,		-- Stonetalon Mountains
 					66,		-- Desolace

@@ -509,9 +509,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(28951, {	-- Candy Bucket — Darkshore, Lor'danel, Alliance
 				["isYearly"] = true,
-				["coord"] = { 50.8, 18.8, 62 },
+				["coord"] = { 50.8, 18.8, DARKSHORE },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 62 },	-- Darkshore
+				["maps"] = { DARKSHORE },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},

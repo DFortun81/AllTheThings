@@ -16,7 +16,7 @@ _.WorldEvents =
 						["maps"] = {
 							ASHENVALE,
 							89,	-- Darnassus
-							62,	-- Darkshore
+							DARKSHORE,
 						},
 						["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME, ["lvl"] = 110}, {	-- [Note: Do not adjust ordering.]
 							-- ALLIANCE PART I
@@ -331,7 +331,7 @@ _.WorldEvents =
 						}),
 					}),
 					n(WORLD_QUESTS, {
-						["maps"] = { 62 },	-- Darkshore; Let's attach the map to this zone since all the WQ's are here.
+						["maps"] = { DARKSHORE },	-- Let's attach the map to this zone since all the WQ's are here.
 						["g"] = {
 							n(QUESTS, {
 								["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME, ["lvl"] = 110}, {
