@@ -1077,7 +1077,8 @@ _.HiddenQuestTriggers = {
 	q(44619),	-- Rogue Order Hall - Tracking Quest: Mission 4 (complete fourth of 5 missions for order hall campaign) (probably a generic tracker ID rather than specific to rogue)
 	q(44620),	-- Rogue Order Hall - Tracking Quest: Mission 5 (complete fifth of 5 missions for order hall campaign) (probably a generic tracker ID rather than specific to rogue)
 	q(44621),	-- Rogue Order Hall - Tracking Quest: Mission 1
-	q(44622),	-- Rogue Order Hall - Tracking Quest: Mission 1
+	q(44622),	-- Rogue Order Hall - Tracking Quest: Mission 2
+	q(44623),	-- Rogue Order Hall - Tracking Quest: Mission 3
 	q(44651),	-- Rogue Order Hall - Tracking Quest: 7.0 Class Hall - Rogue - Chapter 1.5 - Pacing Mission (triggers when completing the "Spy Vs Spy" mission)
 	q(44652),	-- Rogue Order Hall - Tracking Quest: 7.0 Class Hall - Rogue - Chapter 2 - Troop B Recruiter Acquisition (triggers when completing the "Convincin' Old Yancey" mission)
 	q(45447),	-- Rogue Order Hall - give a Noggenfogger coin to Marin Noggenfogger
