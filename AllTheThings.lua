@@ -158,6 +158,30 @@ local function Callback(method, ...)
 		C_Timer.After(0, newCallback);
 	end
 end
+-- Triggers a timer callback method to run after the provided number of seconds with the provided params; the method can only be set to run once per delay
+local function DelayedCallback(method, delaySec, ...)
+	if not app.__callbacks then
+		app.__callbacks = {};
+	end
+	if not app.__callbacks[method] then
+		app.__callbacks[method] = ... and {...} or true;
+		-- print("DelayedCallback:",method, ...)
+		local newCallback = function()
+			local args = app.__callbacks[method];
+			app.__callbacks[method] = nil;
+			-- callback with args/void
+			if args ~= true then
+				-- print("DelayedCallback/args Running",method, unpack(args))
+				method(unpack(args));
+			else
+				-- print("DelayedCallback/void Running",method)
+				method();
+			end
+			-- print("DelayedCallback Done",method)
+		end;
+		C_Timer.After(math.max(0, delaySec or 0), newCallback);
+	end
+end
 -- Triggers a timer callback method to run on the next game frame or following combat if in combat currently with the provided params; the method can only be set to run once per frame
 local function AfterCombatCallback(method, ...)
 	if not InCombatLockdown() then Callback(method, ...); return; end
@@ -8290,13 +8314,10 @@ app.CreateItem = function(id, t)
 end
 
 local HarvestedItemDatabase = {};
+local C_Item_GetItemInventoryTypeByID = C_Item.GetItemInventoryTypeByID;
 local itemHarvesterFields = RawCloneData(itemFields);
-itemHarvesterFields.collectible = function(t)
-	return true;
-end
-itemHarvesterFields.collected = function(t)
-	return false;
-end
+itemHarvesterFields.collectible = app.ReturnTrue;
+itemHarvesterFields.collected = app.ReturnFalse;
 itemHarvesterFields.text = function(t)
 	local link = t.link;
 	if link then
@@ -8305,20 +8326,20 @@ itemHarvesterFields.text = function(t)
 			= GetItemInfo(link);
 		if itemName then
 			local spellName, spellID;
-			if class == "Recipe" or class == "Mount" then
+			-- Recipe or Mount, grab the spellID if possible
+			if classID == LE_ITEM_CLASS_RECIPE or (classID == LE_ITEM_CLASS_MISCELLANEOUS and subclassID == LE_ITEM_MISCELLANEOUS_MOUNT) then
 				spellName, spellID = GetItemSpell(t.itemID);
+				-- print("Recipe/Mount",classID,subclassID,spellName,spellID);
 				if spellName == "Learning" then spellID = nil; end	-- RIP.
-				setmetatable(t, app.BaseItemTooltipHarvester);
-			else
-				setmetatable(t, app.BaseItemTooltipHarvester);
 			end
+			setmetatable(t, app.BaseItemTooltipHarvester);
 			local info = {
 				["name"] = itemName,
 				["itemID"] = t.itemID,
 				["equippable"] = itemEquipLoc and itemEquipLoc ~= "" and true or false,
 				["class"] = classID,
 				["subclass"] = subclassID,
-				["inventoryType"] = C_Item.GetItemInventoryTypeByID(t.itemID),
+				["inventoryType"] = C_Item_GetItemInventoryTypeByID(t.itemID),
 				["b"] = bindType,
 				["q"] = itemQuality,
 				["iLvl"] = itemLevel,
@@ -14022,21 +14043,6 @@ function app:GetWindow(suffix, parent, onUpdate)
 			}
 		};
 
-		local function DelayedUpdateCoroutine()
-			while window.delayRemaining > 0 do
-				coroutine.yield();
-				window.delayRemaining = window.delayRemaining - 1;
-			end
-			window:Update(true);
-		end
-		window.DelayedUpdate = function(self)
-			window.delayRemaining = 180;
-			StartCoroutine(window:GetName() .. ":DelayedUpdatePreWarm", function()
-				coroutine.yield();
-				StartCoroutine(window:GetName() .. ":DelayedUpdate", DelayedUpdateCoroutine);
-			end);
-		end
-
 		-- set whether this window lock is persistable between sessions
 		if suffix == "Prime" or suffix == "CurrentInstance" or suffix == "RaidAssistant" or suffix == "WorldQuests" then
 			window.lockPersistable = true;
@@ -15703,69 +15709,7 @@ app:GetWindow("ItemFinder", UIParent, function(self, ...)
 	if self:IsVisible() then
 		if not self.initialized then
 			self.initialized = true;
-			local db = {};
-			db.g = {
-				{
-					['text'] = "Update Now",
-					['icon'] = app.asset("ability_monk_roll"),
-					["description"] = "Click this to update the listing. Doing so shall remove all invalid, grey, or white items.",
-					['visible'] = true,
-					['fails'] = 0,
-					['OnClick'] = function(row, button)
-						self:Update(true);
-						return true;
-					end,
-					['OnUpdate'] = app.AlwaysShowUpdate,
-				},
-			};
-			db.OnUpdate = function(t)
-				local g = t.g;
-				if g then
-					local count = #g;
-					if count > 0 then
-						for i=count,1,-1 do
-							if g[i].collected then
-								table.remove(g, i);
-								self.shouldFullRefresh = true;
-							end
-						end
-					end
-					for count=#g,100 do
-						local i = db.currentItemID - 1;
-						if i > 0 then
-							db.currentItemID = i;
-							local t = app.CreateItemHarvester(i);
-							t.parent = db;
-							tinsert(g, t);
-							self.shouldFullRefresh = true;
-						end
-					end
-					self:DelayedUpdate(true);
-					self.delayRemaining = 1;
-				end
-			end;
-			db.text = "Item Finder";
-			db.icon = app.asset("Achievement_Dungeon_GloryoftheRaider");
-			db.description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.\n\nUsing this tool will lag your WoW every 5 seconds. Not sure why - likely a bad Blizzard Database thing.";
-			db.visible = true;
-			db.expanded = true;
-			db.progress = 0;
-			db.total = 0;
-			db.back = 1;
-			db.currentItemID = 200001;
-			self.data = db;
-		end
-		self.data.progress = 0;
-		self.data.total = 0;
-		UpdateGroups(self.data, self.data.g);
-		if self.data.OnUpdate then self.data.OnUpdate(self.data); end
-		self:BaseUpdate(true);
-	end
-end);
-app:GetWindow("SourceFinder", UIParent, function(self)
-	if self:IsVisible() then
-		if not self.initialized then
-			self.initialized = true;
+			self.shouldFullRefresh = true;
 			local db = {};
 			db.g = {
 				{
@@ -15779,6 +15723,66 @@ app:GetWindow("SourceFinder", UIParent, function(self)
 						return true;
 					end,
 					['OnUpdate'] = app.AlwaysShowUpdate,
+				},
+			};
+			db.OnUpdate = function(t)
+				local g = t.g;
+				if g and #g > 0 then
+					local count = #g;
+					if count > 0 then
+						for i=count,1,-1 do
+							if g[i].collected then
+								table.remove(g, i);
+							end
+						end
+					end
+					for count=#g,100 do
+						local i = db.currentItemID - 1;
+						if i > 0 then
+							db.currentItemID = i;
+							local t = app.CreateItemHarvester(i);
+							t.parent = db;
+							tinsert(g, t);
+						end
+					end
+					db.text = string.format("Item Finder [%d]", db.currentItemID);
+					DelayedCallback(self.Update, 0.25, self, true);
+					-- /run AllTheThings:GetWindow("ItemFinder"):Toggle()
+				end
+			end;
+			db.icon = "Interface\\Icons\\Achievement_Dungeon_GloryoftheRaider";
+			db.description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.\n\nUsing this tool will lag your WoW every 5 seconds. Not sure why - likely a bad Blizzard Database thing.";
+			db.visible = true;
+			db.expanded = true;
+			db.progress = 0;
+			db.total = 0;
+			db.back = 1;
+			db.currentItemID = 200001;
+			self.data = db;
+		end
+		self.data.progress = 0;
+		self.data.total = 0;
+		if self.data.OnUpdate then self.data.OnUpdate(self.data); end
+		self:BaseUpdate(true);
+	end
+end);
+app:GetWindow("SourceFinder", UIParent, function(self)
+	if self:IsVisible() then
+		if not self.initialized then
+			self.initialized = true;
+			local db = {};
+			db.g = {
+				{
+					["text"] = "Update Now",
+					["icon"] = "Interface\\Icons\\ability_monk_roll",
+					["description"] = "Click this to update the listing. Doing so shall remove all invalid, grey, or white items.",
+					["visible"] = true,
+					["fails"] = 0,
+					["OnClick"] = function(row, button)
+						self:Update(true);
+						return true;
+					end,
+					["OnUpdate"] = app.AlwaysShowUpdate,
 				},
 			};
 			db.OnUpdate = function(db)
