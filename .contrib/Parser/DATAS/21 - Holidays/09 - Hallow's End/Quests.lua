@@ -746,17 +746,17 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(28995, {	-- Candy Bucket — Felwood, Talonbranch Glade, Alliance
 				["isYearly"] = true,
-				["coord"] = { 61.8, 26.7, 77 },
+				["coord"] = { 61.8, 26.7, FELWOOD },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 77 },	-- Felwood
+				["maps"] = { FELWOOD },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(28994, {	-- Candy Bucket — Felwood, Whisperwind Grove, neutral
 				["isYearly"] = true,
-				["coord"] = { 44.6, 28.9, 77 },
-				["maps"] = { 77 },	-- Felwood
+				["coord"] = { 44.6, 28.9, FELWOOD },
+				["maps"] = { FELWOOD },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},

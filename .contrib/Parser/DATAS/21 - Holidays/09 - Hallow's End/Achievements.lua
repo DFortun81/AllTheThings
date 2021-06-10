@@ -552,12 +552,12 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { THE_EXODAR },
 										}),
 										crit(10, {	-- Felwood - Talonbranch Glade
-											["coord"] = { 61.8, 26.7, 77 },
-											["maps"] = { 77 },	-- Felwood
+											["coord"] = { 61.8, 26.7, FELWOOD },
+											["maps"] = { FELWOOD },
 										}),
 										crit(11, {	-- Felwood - Whisperwind Grove
-											["coord"] = { 44.6, 28.9, 77 },
-											["maps"] = { 77 },	-- Felwood
+											["coord"] = { 44.6, 28.9, FELWOOD },
+											["maps"] = { FELWOOD },
 										}),
 										crit(12, {	-- Feralas, Dreamer's Rest
 											["coord"] = { 51.1, 17.8, FERALAS },
@@ -669,8 +669,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { DUSTWALLOW_MARSH },
 										}),
 										crit(11, {	-- Felwood, Whisperwind Grove
-											["coord"] = { 44.6, 28.9, 77 },
-											["maps"] = { 77 },	-- Felwood
+											["coord"] = { 44.6, 28.9, FELWOOD },
+											["maps"] = { FELWOOD },
 										}),
 										crit(12, {	-- Feralas, Camp Ataya
 											["coord"] = { 41.4, 15.6, FERALAS },

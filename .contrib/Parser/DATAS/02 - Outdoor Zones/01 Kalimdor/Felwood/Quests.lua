@@ -4,17 +4,17 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(77, {	-- Felwood
+		m(FELWOOD, {
 			n(QUESTS, {
 				q(28340, {	-- A Bomb Deal
 					["provider"] = { "n", 48333 },	-- Foreman Pikwik
-					["coord"] = { 54.6, 18.3, 77 },
+					["coord"] = { 54.6, 18.3, FELWOOD },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 28380,	-- Pikwik in Peril
 				}),
 				q(28218, {	-- A Destiny of Flame and Sorrow
 					["provider"] = { "n", 47923 },	-- Feronas Sindweller
-					["coord"] = { 45.5, 20.1, 77 },
+					["coord"] = { 45.5, 20.1, FELWOOD },
 					["sourceQuest"] = 28217,	-- Wanted: The Demon Hunter
 				}),
 				q(5242,  {	-- A Final Blow
@@ -28,7 +28,7 @@ _.Zones =
 				}),
 				q(28334, {	-- A Flare Fight
 					["provider"] = { "n", 48127 },	-- Darla Drilldozer
-					["coord"] = { 56.3, 8.1, 77 },
+					["coord"] = { 56.3, 8.1, FELWOOD },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 28372,	-- Back in Business
 				}),
@@ -39,7 +39,7 @@ _.Zones =
 				}),
 				q(28207, {	-- A Slimy Situation
 					["provider"] = { "n", 47696 },	-- Kelnir Leafsong
-					["coord"] = { 41.2, 49.9, 77 },
+					["coord"] = { 41.2, 49.9, FELWOOD },
 					["sourceQuest"] = 28305,	-- The Fate of Bloodvenom Post
 				}),
 				q(5202, {	-- A Strange Red Key
@@ -56,11 +56,11 @@ _.Zones =
 				}),
 				q(28100, {	-- A Talking Totem
 					["provider"] = { "n", 11554 },	-- Grazle
-					["coord"] = { 51.4, 80.4, 77 },
+					["coord"] = { 51.4, 80.4, FELWOOD },
 				}),
 				q(28150, {	-- An Arcane Ally
 					["provider"] = { "n", 10923 },	-- Tenell Leafrunner
-					["coord"] = { 51.1, 80.4, 77 },
+					["coord"] = { 51.1, 80.4, FELWOOD },
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = {
 						28148,	-- Culling the Corrupted
@@ -84,7 +84,7 @@ _.Zones =
 				}),
 				q(28372, {	-- Back to Business
 					["provider"] = { "n", 48469 },	-- Fez Hobnob
-					["coord"] = { 44.2, 27.9, 77 },
+					["coord"] = { 44.2, 27.9, FELWOOD },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = {
@@ -94,7 +94,7 @@ _.Zones =
 				}),
 				q(28388, {	-- Bloody Wages
 					["provider"] = { "n", 48493 },	-- Alton Redding
-					["coord"] = { 56.8, 18.4, 77 },
+					["coord"] = { 56.8, 18.4, FELWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						28386,	-- Borrowed Bombs
@@ -103,7 +103,7 @@ _.Zones =
 				}),
 				q(28386, {	-- Borrowed Bombs
 					["provider"] = { "n", 48493 },	-- Alton Redding
-					["coord"] = { 56.8, 18.4, 77 },
+					["coord"] = { 56.8, 18.4, FELWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 28337,	-- The Shredders of Irontree
 					["g"] = {
@@ -115,7 +115,7 @@ _.Zones =
 				}),
 				q(28113, {	-- Break the Unbreakable
 					["provider"] = { "n", 47341 },	-- Arcanist Delaris
-					["coord"] = { 41.9, 72.0, 77 },
+					["coord"] = { 41.9, 72.0, FELWOOD },
 					["sourceQuest"] = 28044,	-- Touch the Untouchable
 					["g"] = {
 						i(65277),	-- Delaris' Gloves
@@ -126,7 +126,7 @@ _.Zones =
 				}),
 				q(28387, {	-- Burnout
 					["provider"] = { "n", 48493 },	-- Alton Redding
-					["coord"] = { 56.8, 18.4, 77 },
+					["coord"] = { 56.8, 18.4, FELWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						28386,	-- Borrowed Bombs
@@ -135,7 +135,7 @@ _.Zones =
 				}),
 				q(28219, {	-- Buzzers for Baby
 					["provider"] = { "n", 48032 },	-- Seedling Protector
-					["coord"] = { 48.6, 25.1, 77 },
+					["coord"] = { 48.6, 25.1, FELWOOD },
 					["sourceQuest"] = 28229,	-- Nature and Nurture
 				}),
 				q(4102, {	-- Cleansing Felwood
@@ -145,12 +145,12 @@ _.Zones =
 				}),
 				q(28214, {	-- Cleanup at Bloodvenom Post
 					["provider"] = { "n", 47692 },	-- Altsoba Ragetotem
-					["coord"] = { 41.2, 49.9, 77 },
+					["coord"] = { 41.2, 49.9, FELWOOD },
 					["sourceQuest"] = 28208,	-- Winna's Kitten
 				}),
 				q(28341, {	-- Collecting Corruption
 					["provider"] = { "n", 48339 },	-- Elessa Starbreeze
-					["coord"] = { 43.9, 27.8, 77 },
+					["coord"] = { 43.9, 27.8, FELWOOD },
 				}),
 				q(4119,  {	-- Corrupted Night Dragon
 					["u"] = REMOVED_FROM_GAME,
@@ -200,12 +200,12 @@ _.Zones =
 				}),
 				q(28116, {	-- Crying Violet
 					["provider"] = { "n", 10922 },	-- Greta Mosshoof
-					["coord"] = { 43.9, 61.8, 77 },
+					["coord"] = { 43.9, 61.8, FELWOOD },
 					["sourceQuest"] = 28152,	-- Jaedenar Awaits
 				}),
 				q(28148, {	-- Culling the Corrupted
 					["provider"] = { "n", 10921 },	-- Taronn Redfeather
-					["coord"] = { 50.9, 80.1, 77 },
+					["coord"] = { 50.9, 80.1, FELWOOD },
 					["g"] = {
 						i(65275),	-- Angerclaw Leggings
 						i(65295),	-- Felpaw Boots
@@ -214,7 +214,7 @@ _.Zones =
 					},
 				}),
 				q(27995, {	-- Dance for Ruumbo!
-					["coord"] = { 51.4, 83.7, 77 },
+					["coord"] = { 51.4, 83.7, FELWOOD },
 					["provider"] = { "o", 206585 },	-- Totem of Ruumbo
 					["sourceQuests"] = {
 						27989,	-- Ruumbo Demands Honey
@@ -237,7 +237,7 @@ _.Zones =
 				}),
 				q(28338, {	-- Deadwood of the North
 					["provider"] = { "n", 15395 },	-- Nafien
-					["coord"] = { 64.0, 10.3, 77 },
+					["coord"] = { 64.0, 10.3, FELWOOD },
 					["sourceQuests"] = {
 						28392,	-- The Timbermaw Tribe
 						28373,	-- Timbermaw Hold
@@ -249,7 +249,7 @@ _.Zones =
 				}),
 				q(28261, {	-- Deceivers In Our Midst
 					["provider"] = { "n", 47923 },	-- Feronas Sindweller
-					["coord"] = { 45.5, 20.1, 77 },
+					["coord"] = { 45.5, 20.1, FELWOOD },
 					["sourceQuest"] = 28257,	-- The Fall of Tichondrius
 				}),
 				q(8460,  {	-- [DEPRECATED]Timbermaw Ally
@@ -262,7 +262,7 @@ _.Zones =
 				}),
 				q(28366, {	-- Disarming Bears
 					["provider"] = { "n", 15395 },	-- Nafien
-					["coord"] = { 64.0, 10.3, 77 },
+					["coord"] = { 64.0, 10.3, FELWOOD },
 					["sourceQuest"] = 28392,	-- The Timbermaw Tribe
 					["g"] = {
 						i(65343),	-- Timbermaw Breastplate
@@ -273,7 +273,7 @@ _.Zones =
 				}),
 				q(28000, {	-- Do the Imp-Possible
 					["provider"] = { "n", 47341 },	-- Arcanist Delaris
-					["coord"] = { 41.9, 72.0, 77 },
+					["coord"] = { 41.9, 72.0, FELWOOD },
 					["sourceQuests"] = {
 						28150,	-- An Arcane Ally
 						28148,	-- Culling the Corrupted
@@ -288,7 +288,7 @@ _.Zones =
 				}),
 				q(28126, {	-- Dousing the Flames of Protection
 					["provider"] = { "n", 51664 },	-- Andalar Shadevale
-					["coord"] = { 36.3, 58.2, 77 },
+					["coord"] = { 36.3, 58.2, FELWOOD },
 					["sourceQuest"] = 28119,	-- Purity from Corruption
 					["g"] = {
 						i(65281),	-- Belt of the Lost Barrow
@@ -302,7 +302,7 @@ _.Zones =
 				}),
 				q(28382, {	-- Enemy at our Roots
 					["provider"] = { "n", 47931 },	-- Denmother Ulrica
-					["coord"] = { 61.8, 26.6, 77 },
+					["coord"] = { 61.8, 26.6, FELWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 28381,	-- The Denmother
 					["g"] = {
@@ -314,15 +314,15 @@ _.Zones =
 				}),
 				q(28342, {	-- Fel To Pieces
 					["provider"] = { "n", 48339 },	-- Elessa Starbreeze
-					["coord"] = { 43.9, 27.8, 77 },
+					["coord"] = { 43.9, 27.8, FELWOOD },
 				}),
 				q(28102, {	-- Fight the Power
 					["provider"] = { "n", 9116 },	-- Eridan Bluewind
-					["coord"] = { 42.0, 71.7, 77 },
+					["coord"] = { 42.0, 71.7, FELWOOD },
 					["sourceQuest"] = 28044,	-- Touch the Untouchable
 				}),
 				q(28368, {	-- Fire in the Hole!
-					["coord"] = { 60.4, 22.2, 77 },
+					["coord"] = { 60.4, 22.2, FELWOOD },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 207104 },	-- Master Control Pump
 					["sourceQuest"] = 28335,	-- Turn It Off! Turn It Off!
@@ -338,7 +338,7 @@ _.Zones =
 				}),
 				q(28121, {	-- Forces of Jaedenar
 					["provider"] = { "n", 11019 },	-- Jessir Moonbow
-					["coord"] = { 44.0, 61.9, 77 },
+					["coord"] = { 44.0, 61.9, FELWOOD },
 				}),
 				q(4906,  {	-- Further Corruption
 					["u"] = REMOVED_FROM_GAME,
@@ -365,7 +365,7 @@ _.Zones =
 				}),
 				q(28213, {	-- Hazzard Disposal
 					["provider"] = { "n", 47696 },	-- Kelnir Leafsong
-					["coord"] = { 41.2, 49.9, 77 },
+					["coord"] = { 41.2, 49.9, FELWOOD },
 					["sourceQuest"] = 28208,	-- Winna's Kitten
 					["g"] = {
 						i(65283),	-- Flowery Mantle
@@ -376,14 +376,14 @@ _.Zones =
 				}),
 				q(28358, {	-- Hunting the Damned
 					["provider"] = { "n", 48349 },	-- Hurak Wildhorn
-					["coord"] = { 44.0, 27.8, 77 },
+					["coord"] = { 44.0, 27.8, FELWOOD },
 				}),
 				q(29028, {	-- Into Jaedenar
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(28384, {	-- Into the Clearing
 					["provider"] = { "n", 47931 },	-- Denmother Ulrica
-					["coord"] = { 61.8, 26.6, 77 },
+					["coord"] = { 61.8, 26.6, FELWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						28382,	-- Enemy at our Roots
@@ -392,7 +392,7 @@ _.Zones =
 				}),
 				q(28339, {	-- Is Your Oil Running?
 					["provider"] = { "n", 48127 },	-- Darla Drilldozer
-					["coord"] = { 56.3, 8.1, 77 },
+					["coord"] = { 56.3, 8.1, FELWOOD },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						28357,	-- Take it to the Tree
@@ -401,7 +401,7 @@ _.Zones =
 				}),
 				q(28333, {	-- It's Time to Oil Up
 					["provider"] = { "n", 48127 },	-- Darla Drilldozer
-					["coord"] = { 56.3, 8.1, 77 },
+					["coord"] = { 56.3, 8.1, FELWOOD },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(65344),	-- Overworked Shoulders
@@ -412,7 +412,7 @@ _.Zones =
 				}),
 				q(28152, {	-- Jaedenar Awaits
 					["provider"] = { "n", 9116 },	-- Eridan Bluewind
-					["coord"] = { 42.0, 71.7, 77 },
+					["coord"] = { 42.0, 71.7, FELWOOD },
 					["isBreadcrumb"] = true,
 					["sourceQuest"] = 28113,	-- Break the Unbreakable
 				}),
@@ -438,12 +438,12 @@ _.Zones =
 				}),
 				q(28229, {	-- Nature and Nurture
 					["provider"] = { "n", 48126 },	-- Isural Forestsworn
-					["coord"] = { 43.9, 28.1, 77 },
+					["coord"] = { 43.9, 28.1, FELWOOD },
 					["sourceQuest"] = 28374,	-- Weeding the Lawn
 				}),
 				q(28264, {	-- Navarax's Gambit
 					["provider"] = { "n", 47923 },	-- Feronas Sindweller
-					["coord"] = { 45.5, 20.1, 77 },
+					["coord"] = { 45.5, 20.1, FELWOOD },
 					["sourceQuest"] = 28261,	-- Deceivers In Our Midst
 					["g"] = {
 						i(65285),	-- Selura's Cloak
@@ -453,13 +453,13 @@ _.Zones =
 				}),
 				q(28385, {	-- Oil and Irony
 					["provider"] = { "n", 48493 },	-- Alton Redding
-					["coord"] = { 56.8, 18.4, 77 },
+					["coord"] = { 56.8, 18.4, FELWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 28337,	-- The Shredders of Irontree
 				}),
 				q(28288, {	-- Open Their Eyes
 					["provider"] = { "n", 47341 },	-- Arcanist Delaris
-					["coord"] = { 41.9, 72.0, 77 },
+					["coord"] = { 41.9, 72.0, FELWOOD },
 					["sourceQuest"] = 28113,	-- Break the Unbreakable
 					["g"] = {
 						i(65278),	-- Gold Pot Gloves
@@ -470,7 +470,7 @@ _.Zones =
 				}),
 				q(28380, {	-- Pikwik in Peril
 					["provider"] = { "n", 48127 },	-- Darla Drilldozer
-					["coord"] = { 56.3, 8.1, 77 },
+					["coord"] = { 56.3, 8.1, FELWOOD },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						28339,	-- Is Your Oil Running?
@@ -479,7 +479,7 @@ _.Zones =
 				}),
 				q(28119, {	-- Purity From Corruption
 					["provider"] = { "n", 51664 },	-- Andalar Shadevale
-					["coord"] = { 36.3, 58.2, 77 },
+					["coord"] = { 36.3, 58.2, FELWOOD },
 					["sourceQuests"] = { 28116 },	-- Crying Violet
 				}),
 				q(28228, {	-- Rejoining the Forest
@@ -493,7 +493,7 @@ _.Zones =
 				}),
 				q(28389, {	-- Report to the Denmother
 					["provider"] = { "n", 48493 },	-- Alton Redding
-					["coord"] = { 56.8, 18.4, 77 },
+					["coord"] = { 56.8, 18.4, FELWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						28388,	-- Bloody Wages
@@ -517,16 +517,16 @@ _.Zones =
 				}),
 				q(28360, {	-- Running Their Course
 					["provider"] = { "n", 48459 },	-- Tender Puregrove
-					["coord"] = { 43.3, 30.4, 77 },
+					["coord"] = { 43.3, 30.4, FELWOOD },
 					["sourceQuest"] = 28306,	-- Whisperwind Grove
 				}),
 				q(27989, {	-- Ruumbo Demands Honey
-					["coord"] = { 51.4, 83.7, 77 },
+					["coord"] = { 51.4, 83.7, FELWOOD },
 					["provider"] = { "o", 206585 },	-- Totem of Ruumbo
 					["sourceQuest"] = 28100,	-- A Talking Totem
 				}),
 				q(27994, {	-- Ruumbo Demands Justice
-					["coord"] = { 51.4, 83.7, 77 },
+					["coord"] = { 51.4, 83.7, FELWOOD },
 					["provider"] = { "o", 206585 },	-- Totem of Ruumbo
 					["sourceQuest"] = 28100,	-- A Talking Totem
 				}),
@@ -652,7 +652,7 @@ _.Zones =
 				}),
 				q(28049, {	-- See the Invisible
 					["provider"] = { "n", 47366 },	-- Impsy
-					["coord"] = { 41.8, 71.9, 77 },
+					["coord"] = { 41.8, 71.9, FELWOOD },
 					["sourceQuest"] = 28000,	-- Do the Imp-Possible
 					["g"] = {
 						i(65276),	-- Gloves of Constellas
@@ -662,7 +662,7 @@ _.Zones =
 					},
 				}),
 				q(28220, {	-- Seeking Soil
-					["coord"] = { 48.6, 25.1, 77 },
+					["coord"] = { 48.6, 25.1, FELWOOD },
 					["sourceQuest"] = 28229,	-- Nature and Nurture
 				}),
 				q(5158, {	-- Seeking Spiritual Aid
@@ -686,7 +686,7 @@ _.Zones =
 				}),
 				q(28336, {	-- Slap and Cap
 					["provider"] = { "n", 48127 },	-- Darla Drilldozer
-					["coord"] = { 56.3, 8.1, 77 },
+					["coord"] = { 56.3, 8.1, FELWOOD },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						28357,	-- Take it to the Tree
@@ -711,15 +711,15 @@ _.Zones =
 				}),
 				q(28361, {	-- Squirrely Clean
 					["provider"] = { "n", 48459 },	-- Tender Puregrove
-					["coord"] = { 43.3, 30.4, 77 },
+					["coord"] = { 43.3, 30.4, FELWOOD },
 				}),
 				q(28362, {	-- Stupid Drizle!
 					["provider"] = { "n", 48461 },	-- Ferli
-					["coord"] = { 64.1, 10.3, 77 },
+					["coord"] = { 64.1, 10.3, FELWOOD },
 				}),
 				q(28357, {	-- Take it to the Tree
 					["provider"] = { "n", 48127 },	-- Darla Drilldozer
-					["coord"] = { 56.3, 8.1, 77 },
+					["coord"] = { 56.3, 8.1, FELWOOD },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						28334,	-- A Flare Fight
@@ -733,7 +733,7 @@ _.Zones =
 				}),
 				q(28364, {	-- The Chieftain's Key
 					["provider"] = { "n", 47556 },	-- Drizle
-					["coord"] = { 60.5, 9.5, 77 },
+					["coord"] = { 60.5, 9.5, FELWOOD },
 					["sourceQuest"] = 28362,	-- Stupid Drizle!
 					["g"] = {
 						i(65293),	-- Leggings of Mischief
@@ -743,7 +743,7 @@ _.Zones =
 				}),
 				q(28359, {	-- The Core of Kroshius
 					["provider"] = { "n", 48349 },	-- Hurak Wildhorn
-					["coord"] = { 44.0, 27.8, 77 },
+					["coord"] = { 44.0, 27.8, FELWOOD },
 					["g"] = {
 						i(65288),	-- Shadow Curse Hood
 						i(65307),	-- Whisperwind Armbands
@@ -753,7 +753,7 @@ _.Zones =
 				}),
 				q(27997, {	-- The Corruption of the Jadefire
 					["provider"] = { "n", 10923 },	-- Tenell Leafrunner
-					["coord"] = { 51.1, 80.4, 77 },
+					["coord"] = { 51.1, 80.4, FELWOOD },
 					["sourceQuests"] = {
 						28543,	-- Hero's Call: Felwood!
 						28542,	-- Warchief's Command: Felwood!
@@ -761,12 +761,12 @@ _.Zones =
 				}),
 				q(28129, {	-- The Demon Prince
 					["provider"] = { "n", 51664 },	-- Andalar Shadevale
-					["coord"] = { 36.3, 58.2, 77 },
+					["coord"] = { 36.3, 58.2, FELWOOD },
 					["sourceQuest"] = 28119,	-- Purity from Corruption
 				}),
 				q(28381, {	-- The Denmother
 					["provider"] = { "n", 48491 },	-- James Hallow
-					["coord"] = { 44.2, 28.0, 77 },
+					["coord"] = { 44.2, 28.0, FELWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,	-- for "Enemy at Our Roots"
 					["sourceQuests"] = {
@@ -776,7 +776,7 @@ _.Zones =
 				}),
 				q(28257, {	-- The Fall of Tichondrius
 					["provider"] = { "n", 47923 },	-- Feronas Sindweller
-					["coord"] = { 45.5, 20.1, 77 },
+					["coord"] = { 45.5, 20.1, FELWOOD },
 					["sourceQuest"] = 28256,	-- The Skull of Gul'dan
 					["g"] = {
 						i(65284),	-- Imposter's Mask
@@ -786,7 +786,7 @@ _.Zones =
 				}),
 				q(28305, {	-- The Fate of Bloodvenom Post
 					["provider"] = { "n", 47617 },	-- Farlus Wildheart
-					["coord"] = { 44.1, 61.8, 77 },
+					["coord"] = { 44.1, 61.8, FELWOOD },
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = {
 						28126,	-- Dousing the Flames of Protection
@@ -796,7 +796,7 @@ _.Zones =
 				}),
 				q(28128, {	-- The Inner Circle
 					["provider"] = { "n", 51664 },	-- Andalar Shadevale
-					["coord"] = { 36.3, 58.2, 77 },
+					["coord"] = { 36.3, 58.2, FELWOOD },
 					["sourceQuest"] = 28119,	-- Purity From Corruption
 					["g"] = {
 						i(65280),	-- Shadow Hold Mace
@@ -823,19 +823,19 @@ _.Zones =
 				q(28479, {	-- The Ruins of Kel'theril	-- breadcrumb?
 					["provider"] = { "n", 10920 },	-- Kelek Skykeeper
 					["coords"] = {
-						{ 51.2, 80.3, 77, 77 },
-						{ 46.8, 53.8, 83, 77 },
+						{ 51.2, 80.3, FELWOOD },
+						{ 46.8, 53.8, 83 },
 					},
 				}),
 				q(28337, {	-- The Shredders of Irontree
 					["provider"] = { "n", 48493 },	-- Alton Redding
-					["coord"] = { 56.8, 18.4, 77 },
+					["coord"] = { 56.8, 18.4, FELWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 28384,	-- Into the Clearing
 				}),
 				q(28256, {	-- The Skull of Gul'dan
 					["provider"] = { "n", 47923 },	-- Feronas Sindweller
-					["coord"] = { 45.5, 20.1, 77 },
+					["coord"] = { 45.5, 20.1, FELWOOD },
 					["sourceQuest"] = 28218,	-- A Destiny of Flame and Shadow
 				}),
 				q(4120, {	-- The Strength of Corruption
@@ -845,11 +845,11 @@ _.Zones =
 				}),
 				q(28190, {	-- The Tainted Ooze
 					["provider"] = { "n", 47692 },	-- Altsoba Ragetotem
-					["coord"] = { 41.2, 49.9, 77 },
+					["coord"] = { 41.2, 49.9, FELWOOD },
 				}),
 				q(28392, {	-- The Timbermaw Tribe
 					["provider"] = { "n", 47931 },	-- Denmother Ulrica
-					["coord"] = { 61.8, 26.6, 77 },
+					["coord"] = { 61.8, 26.6, FELWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["sourceQuest"] = 28389,	-- Report to the Denmother
@@ -863,19 +863,19 @@ _.Zones =
 				}),
 				q(28373, {	-- Timbermaw Hold
 					["provider"] = { "n", 48127 },	-- Darla Drilldozer
-					["coord"] = { 56.3, 8.1, 77 },
+					["coord"] = { 56.3, 8.1, FELWOOD },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["sourceQuest"] = 28368,	-- Fire in the Hole!
 				}),
 				q(28044, {	-- Touch the Untouchable
 					["provider"] = { "n", 47366 },	-- Impsy
-					["coord"] = { 41.8, 71.9, 77 },
+					["coord"] = { 41.8, 71.9, FELWOOD },
 					["sourceQuest"] = 28049,	-- See the Invisible
 				}),
 				q(28335, {	-- Turn It Off! Turn It Off!
 					["provider"] = { "n", 48333 },	-- Foreman Pikwik
-					["coord"] = { 54.6, 18.3, 77 },
+					["coord"] = { 54.6, 18.3, FELWOOD },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 28380,	-- Pikwik in Peril
 				}),
@@ -888,12 +888,12 @@ _.Zones =
 				}),
 				q(28217, {	-- Wanted: The Demon Hunter
 					["provider"] = { "n", 47843 },	-- Huntress Selura
-					["coord"] = { 43.4, 28.1, 77 },
+					["coord"] = { 43.4, 28.1, FELWOOD },
 					["sourceQuest"] = 28374,	-- Weeding the Lawn
 				}),
 				q(28374, {	-- Weeding the Lawn
 					["provider"] = { "n", 48459 },	-- Tender Puregrove
-					["coord"] = { 43.3, 30.3, 77 },
+					["coord"] = { 43.3, 30.3, FELWOOD },
 					["sourceQuests"] = {
 						28360,	-- Running Their Course
 						28361,	-- Squirrely Clean
@@ -913,7 +913,7 @@ _.Zones =
 				}),
 				q(28306, {	-- Whisperwind Grove
 					["provider"] = { "n", 47696 },	-- Kelnir Leafsong
-					["coord"] = { 41.2, 49.9, 77 },
+					["coord"] = { 41.2, 49.9, FELWOOD },
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = {
 						28214,	-- Cleanup at Bloodvenom Post
@@ -939,7 +939,7 @@ _.Zones =
 				}),
 				q(28208, {	-- Winna's Kitten
 					["provider"] = { "n", 47696 },	-- Kelnir Leafsong
-					["coord"] = { 41.2, 49.9, 77 },
+					["coord"] = { 41.2, 49.9, FELWOOD },
 					["sourceQuests"] = {
 						28207,	-- A Slimy Situation
 						28190,	-- The Tainted Ooze
@@ -947,13 +947,13 @@ _.Zones =
 				}),
 				q(28768, {	-- Winterspring!
 					["provider"] = { "n", 15395 },	-- Nafien
-					["coord"] = { 64, 10.4, 77 },
+					["coord"] = { 64, 10.4, FELWOOD },
 					["isBreadcrumb"] = true,
 					--["description"] = "Only available between level 15 and XX.", TODO: before level squish it was available from level 15 till level 60, now min is 15 but max is unknown
 				}),
 				q(28370, {	-- Wisp-napping
 					["provider"] = { "n", 48127 },	-- Darla Drilldozer
-					["coord"] = { 56.3, 8.1, 77 },
+					["coord"] = { 56.3, 8.1, FELWOOD },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						28334,	-- A Flare Fight
@@ -962,7 +962,7 @@ _.Zones =
 				}),
 				q(28383, {	-- Wisps of the Woods
 					["provider"] = { "n", 48492 },	-- Lyros Swiftwind
-					["coord"] = { 61.8, 26.6, 77 },
+					["coord"] = { 61.8, 26.6, FELWOOD },
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),

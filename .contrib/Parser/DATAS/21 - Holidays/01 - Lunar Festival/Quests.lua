@@ -603,8 +603,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8723,  {	-- Nightwind the Elder
 				["provider"] = { "n", 15603 },	-- Elder Nightwind
 				["isYearly"] = true,
-				["coord"] = { 38.4, 52.8, 77 },
-				["maps"] = { 77 },	-- Felwood
+				["coord"] = { 38.4, 52.8, FELWOOD },
+				["maps"] = { FELWOOD },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(12, {	-- Elder Nightwind in Felwood

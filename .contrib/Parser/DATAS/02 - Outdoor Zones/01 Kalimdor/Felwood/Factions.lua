@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(77, {	-- Felwood
+		m(FELWOOD, {
 			n(FACTIONS, {
 				faction(576, {	-- Timbermaw Hold
 					["crs"] = { 11558 },	-- Kernda
@@ -21,13 +21,13 @@ _.Zones =
 							}),
 							q(28396, {	-- Feathers for Grazle
 								["provider"] = { "n", 11554 },	-- Grazle
-								["coord"] = { 51.4, 80.4, 77 },
+								["coord"] = { 51.4, 80.4, FELWOOD },
 								["repeatable"] = true,
 								["sourceQuest"] = 27995,	-- Dance for Ruumbo!
 							}),
 							q(28395, {	-- Feathers for Nafien
 								["provider"] = { "n", 15395 },	-- Nafien
-								["coord"] = { 64.0, 10.3, 77 },
+								["coord"] = { 64.0, 10.3, FELWOOD },
 								["repeatable"] = true,
 								["sourceQuests"] = {
 									28338,	-- Deadwood of the North
@@ -37,7 +37,7 @@ _.Zones =
 							q(6031, {	-- Runecloth
 								["minReputation"] = { 576, FRIENDLY },
 								["provider"] = { "n", 11557 },	-- Meilosh
-								["coord"] = { 64.8, 5.2, 77 },
+								["coord"] = { 64.8, 5.2, FELWOOD },
 								["g"] = {
 									i(15822),	-- Shadowskin Spaulders
 									i(15823),	-- Bricksteel Gauntlets
@@ -46,7 +46,7 @@ _.Zones =
 							q(6032, {	-- Sacred Cloth
 								["minReputation"] = { 576, FRIENDLY },
 								["provider"] = { "n", 11557 },	-- Meilosh
-								["coord"] = { 64.8, 5.2, 77 },
+								["coord"] = { 64.8, 5.2, FELWOOD },
 								["requireSkill"] = TAILORING,
 								["g"] = {
 									recipe(19435),	-- Mooncloth Boots
@@ -54,7 +54,7 @@ _.Zones =
 							}),
 							q(28521, {	-- Speak to Salfa
 								["provider"] = { "n", 15395 },	-- Nafien
-								["coord"] = { 64.0, 10.4, 77 },
+								["coord"] = { 64.0, 10.4, FELWOOD },
 								["isBreadcrumb"] = true,
 								["sourceQuests"] = {
 									28338,	-- Deadwood of the North
@@ -65,7 +65,7 @@ _.Zones =
 							q(8481, {	-- The Root of All Evil
 								["minReputation"] = { 576, EXALTED },
 								["provider"] = { "n", 11555 },	-- Gorn One Eye
-								["coord"] = { 64.4, 5.1, 77 },
+								["coord"] = { 64.4, 5.1, FELWOOD },
 								["g"] = {
 									i(21326),	-- Defender of the Timbermaw
 								},
@@ -73,14 +73,14 @@ _.Zones =
 						}),
 						n(VENDORS, {
 							n(11555, {	-- Gorn One Eye
-								["coord"] = { 64.4, 5.1, 77 },
+								["coord"] = { 64.4, 5.1, FELWOOD },
 								["g"] = {
 									i(16768),	-- Furbolg Medicine Pouch
 									i(16769),	-- Furbolg Medicine Totem
 								},
 							}),
 							n(11557, {	-- Meilosh
-								["coord"] = { 64.8, 5.2, 77 },
+								["coord"] = { 64.8, 5.2, FELWOOD },
 								["g"] = {
 									i(22392),	-- Formula: Enchant 2H Weapon - Agility
 									i(19445),	-- Formula: Enchant Weapon - Agility
