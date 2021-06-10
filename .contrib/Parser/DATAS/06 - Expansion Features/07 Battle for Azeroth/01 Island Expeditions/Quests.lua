@@ -195,7 +195,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				i(163485, {	-- Druidic Fur
-					["coord"] = { 52.6, 40.6, 80 },
+					["coord"] = { 52.6, 40.6, MOONGLADE },
 					["g"] = {
 						q(53181, {	-- Druidic Fur
 							["provider"] = { "n", 12042 },	-- Loganaar <Druid Trainer>
@@ -308,7 +308,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				i(163486, {	-- Strangling Root
-					["coord"] = { 36.2, 41.8, 80 },
+					["coord"] = { 36.2, 41.8, MOONGLADE },
 					["g"] = {
 						q(53182, {	-- Strangling Root
 							["provider"] = { "n", 11832 },	-- Keeper Remulos

@@ -7,7 +7,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 	holiday(235471, {	-- Lunar Festival
 		n(VENDORS, {
 			n(15909, {	-- Fariel Starsong <Coin of Ancestry Collector>
-				["coord"] = { 53.7, 35.4, 80 },
+				["coord"] = { 53.7, 35.4, MOONGLADE },
 				["g"] = {
 					un(REMOVED_FROM_GAME, i(21722)),	-- Pattern: Festival Dress (old version)
 					un(17, i(44916, {	-- Pattern: Festival Dress
@@ -111,7 +111,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				},
 			}),
 			n(15864, {	-- Valadar Starsong <Coin of Ancestry Collector>
-				["coord"] = { 53.6, 35.4, 80 },
+				["coord"] = { 53.6, 35.4, MOONGLADE },
 				["g"] = {
 					un(17, i(74611, {	-- Festival Lantern
 						["cost"] = { { "i", 21100, 50 } },	-- 50x Coin of Ancestry

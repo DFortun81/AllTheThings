@@ -10,7 +10,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["sourceQuests"] = { 56842 },	-- Lunar Preservation
 				["description"] = "To pick up this quest, you must have collected the |cFF1eff00Crown of Courage|r transmog.",
 				["provider"] = { "n", 155759 },	-- Myrael Lunarbloom
-				["coord"] = { 53.1, 36.0, 80 },
+				["coord"] = { 53.1, 36.0, MOONGLADE },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					un(17, i(170205)),	-- Crown of Boundless Courage
@@ -20,7 +20,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["sourceQuests"] = { 56842 },	-- Lunar Preservation
 				["description"] = "To pick up this quest, you must have collected the |cFF1eff00Crown of Dark Blossoms|r transmog.",
 				["provider"] = { "n", 155759 },	-- Myrael Lunarbloom
-				["coord"] = { 53.1, 36.0, 80 },
+				["coord"] = { 53.1, 36.0, MOONGLADE },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					un(17, i(170207)),	-- Crown of Eternal Memorial
@@ -30,7 +30,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["sourceQuests"] = { 56842 },	-- Lunar Preservation
 				["description"] = "To pick up this quest, you must have collected the |cFF1eff00Crown of Good Fortune|r transmog.",
 				["provider"] = { "n", 155759 },	-- Myrael Lunarbloom
-				["coord"] = { 53.1, 36.0, 80 },
+				["coord"] = { 53.1, 36.0, MOONGLADE },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					un(17, i(169208)),	-- Crown of Everlasting Fortune
@@ -40,7 +40,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["sourceQuests"] = { 56842 },	-- Lunar Preservation
 				["description"] = "To pick up this quest, you must have collected the |cFF1eff00Crown of Prosperity|r transmog.",
 				["provider"] = { "n", 155759 },	-- Myrael Lunarbloom
-				["coord"] = { 53.1, 36.0, 80 },
+				["coord"] = { 53.1, 36.0, MOONGLADE },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					un(17, i(170206)),	-- Crown of Infinite Prosperity
@@ -50,7 +50,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["sourceQuests"] = { 8883 },	-- Valadar Starsong
 				["provider"] = { "n", 15864 },	-- Valadar Starsong <Coin of Ancestry Collector>
 				["isYearly"] = true,
-				["coord"] = { 53.6, 35.4, 80 },
+				["coord"] = { 53.6, 35.4, MOONGLADE },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					un(17, i(21540)),	-- Elune's Lantern
@@ -91,7 +91,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 			}),
 			q(56842, {	-- Lunar Preservation
 				["provider"] = { "n", 155759 },	-- Myrael Lunarbloom
-				["coord"] = { 53.1, 36.0, 80 },
+				["coord"] = { 53.1, 36.0, MOONGLADE },
 			}),
 			q(8870,  {	-- The Lunar Festival (A)
 				["isBreadcrumb"] = true,

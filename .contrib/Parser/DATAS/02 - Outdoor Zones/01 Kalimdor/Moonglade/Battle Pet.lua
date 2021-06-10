@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(80, {	-- Moonglade
+		m(MOONGLADE, {
 			filter(101, {	-- Pet Battle
 				p(478, {	-- Forest Moth
 					["crs"] = { 62177 },	-- Forest Moth
@@ -20,7 +20,7 @@ _.Zones =
 				}),
 				q(31908, {	-- Elena Flutterfly
 					["provider"] = { "n", 66412 },	-- Elena Flutterfly
-					["coord"] = { 46.0, 60.4, 80 },
+					["coord"] = { 46.0, 60.4, MOONGLADE },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),

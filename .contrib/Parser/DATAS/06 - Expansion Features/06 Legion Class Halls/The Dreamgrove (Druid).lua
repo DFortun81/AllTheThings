@@ -143,8 +143,8 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 40643 },	-- A Summons From Moonglade
 						["provider"] = { "n", 101064 },	-- Archdruid Hamuul Runetotem
 						["classes"] = { DRUID },
-						["coord"] = { 56.2, 32.0, 80 },
-						["maps"] = { 80 },	-- Moonglade
+						["coord"] = { 56.2, 32.0, MOONGLADE },
+						["maps"] = { MOONGLADE },
 					}),
 					q(43368, {	-- Champion: Brightwing
 						["classes"] = { DRUID },
@@ -316,7 +316,7 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 101195 },	-- Rensar Greathoof
 						["coord"] = { 44.7, 52.0, 747 },
 						["sourceQuests"] = { 42049 },	-- Powering the Portal
-						["maps"] = { 80 },	-- Moonglade
+						["maps"] = { MOONGLADE },
 					}),
 					q(44235, {	-- Essence of Fate
 						["provider"] = { "n", 110810 },	-- Almenis
@@ -456,13 +456,13 @@ _.ExpansionFeatures =
 					}),
 					q(45498, {	-- Let Sleeping Dogs Lie
 						["classes"] = { DRUID },
-						["coord"] = { 68.0, 54.8, 80 },
+						["coord"] = { 68.0, 54.8, MOONGLADE },
 						["sourceQuests"] = { 44921 },	-- Lone Wolf
 						["providers"] = {
 							{ "n", 120032 },	-- Thisalee Crow
 							{ "n", 120041 },	-- Druid of the Talon
 						},
-						["maps"] = { 80 },	-- Moonglade
+						["maps"] = { MOONGLADE },
 					}),
 					q(44921, {	-- Lone Wolf
 						["classes"] = { DRUID },
@@ -513,9 +513,9 @@ _.ExpansionFeatures =
 					q(45426, {	-- Nature's Advance
 						["classes"] = { DRUID },
 						["provider"] = { "n", 115750 },	-- Goldrinn <Ancient>
-						["coord"] = { 68.1, 55.3, 80 },
+						["coord"] = { 68.1, 55.3, MOONGLADE },
 						["sourceQuests"] = { 46924 },	-- The Wolf's Tale
-						["maps"] = { 80 },
+						["maps"] = { MOONGLADE },
 					}),
 					q(46676, {	-- Nature's Touch
 						["classes"]= { DRUID },
@@ -619,13 +619,13 @@ _.ExpansionFeatures =
 					}),
 					q(45528, {	-- The Befouled Barrows
 						["classes"] = { DRUID },
-						["coord"] = { 68.0, 54.8, 80 },
+						["coord"] = { 68.0, 54.8, MOONGLADE },
 						["sourceQuests"] = { 44921 },	-- Lone Wolf
 						["providers"] = {
 							{ "n", 120032 },	-- Thisalee Crow
 							{ "n", 120041 },	-- Druid of the Talon
 						},
-						["maps"] = { 80 },	-- Moonglade
+						["maps"] = { MOONGLADE },
 					}),
 					q(40900, {	-- The Burden Borne
 						["sourceQuests"] = { 40838 },	-- The Dark Riders
@@ -681,8 +681,8 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 41106 },	-- Call of the Wilds
 						["provider"] = { "n", 101064 },	-- Archdruid Hamuul Runetotem
 						["classes"] = { DRUID },
-						["coord"] = { 56.2, 32.0, 80 },
-						["maps"] = { 80 },	-- Moonglade
+						["coord"] = { 56.2, 32.0, MOONGLADE },
+						["maps"] = { MOONGLADE },
 					}),
 					q(42432, {	-- The Emerald Nightmare: The Emerald Nightmare
 						["classes"] = { DRUID },
@@ -816,14 +816,14 @@ _.ExpansionFeatures =
 							45498,	-- Let Sleeping Dogs Lie
 							45528,	-- The Befouled Barrows
 						},
-						["maps"] = { 80 },
+						["maps"] = { MOONGLADE },
 					}),
 					q(40645, {	-- To The Dreamgrove
 						["sourceQuests"] = { 40644 },	-- The Dreamway
 						["provider"] = { "n", 103875 },	-- Malfurion Stormrage
 						["classes"] = { DRUID },
-						["coord"] = { 66.8, 60.4, 80 },
-						["maps"] = { 80 },	-- Moonglade
+						["coord"] = { 66.8, 60.4, MOONGLADE },
+						["maps"] = { MOONGLADE },
 					}),
 					q(41782, {	-- To The Hills
 						["classes"] = { DRUID },

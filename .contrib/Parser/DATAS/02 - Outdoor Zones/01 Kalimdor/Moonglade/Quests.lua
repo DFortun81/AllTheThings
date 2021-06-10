@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(80, {	-- Moonglade
+		m(MOONGLADE, {
 			n(QUESTS, {
 				q(5527,  {	-- A Reliquary of Purity
 					["u"] = REMOVED_FROM_GAME,
@@ -53,8 +53,7 @@ _.Zones =
 				}),
 				q(25316, {	-- As Hyjal Burns
 					["provider"] = { "n", 39865 },	-- Emissary Windsong
-					["lvl"] = 80,
-					["coord"] = { 45.4, 44.6, 80 },
+					["coord"] = { 45.4, 44.6, MOONGLADE },
 					["sourceQuests"] = {
 						49855,	-- Disaster at Mount Hyjal
 						27726,	-- Hero's Call: Mount Hyjal!
@@ -79,7 +78,7 @@ _.Zones =
 				}),
 				q(47430, {	-- Moonkin Monitoring (HOLIDAY/WORLD EVENT: Moonkin Festival)
 					["provider"] = { "n", 122134 },	-- Makkaw <Moonkin Festival>
-					["coord"] = { 45.4, 62.0, 80 },
+					["coord"] = { 45.4, 62.0, MOONGLADE },
 					["collectible"] = false,
 					["description"] = "This quest is only available during the Moonkin Festival event, on 12 November each year. The title granted by completing this quest is temporary.",
 					["g"] = {
@@ -101,7 +100,7 @@ _.Zones =
 					["sourceQuests"] = { 28289 },	-- Moonglade Calls
 					["provider"] = { "n", 12042 },	-- Loganaar
 					["lvl"] = 47,
-					["coord"] = { 52.4, 40.4, 80 },
+					["coord"] = { 52.4, 40.4, MOONGLADE },
 					["classes"] = { DRUID },
 					["g"] = {
 						i(65638),	-- Headdress of the Green Circle
@@ -110,7 +109,7 @@ _.Zones =
 				}),
 				q(27356, {	-- The Circle's Future
 					["provider"] = { "n", 12042 },	-- Loganaar
-					["coord"] = { 52.4, 40.4, 80 },
+					["coord"] = { 52.4, 40.4, MOONGLADE },
 					["sourceQuest"] = 27273,	-- An Invitation from Moonglade
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { DRUID },
@@ -122,7 +121,7 @@ _.Zones =
 				}),
 				q(27404, {	-- The Circle's Future
 					["provider"] = { "n", 12042 },	-- Loganaar
-					["coord"] = { 52.4, 40.4, 80 },
+					["coord"] = { 52.4, 40.4, MOONGLADE },
 					["sourceQuest"] = 27283,	-- A Journey to Moonglade
 					["races"] = HORDE_ONLY,
 					["classes"] = { DRUID },
@@ -135,7 +134,7 @@ _.Zones =
 				q(29303, {	-- Tragedy and Family
 					["provider"] = { "n", 11801 },	-- Rabine Saturna
 					["lvl"] = 85,
-					["coord"] = { 51.6, 44.8, 80 },
+					["coord"] = { 51.6, 44.8, MOONGLADE },
 					["sourceQuest"] = 29302,	-- Unlocking the Secrets Within
 				}),
 				q(6845,  {	-- Uncovering Past Secrets
@@ -154,7 +153,7 @@ _.Zones =
 				q(29302, {	-- Unlocking the Secrets Within
 					["provider"] = { "n", 11801 },	-- Rabine Saturna
 					["lvl"] = 85,
-					["coord"] = { 51.6, 44.8, 80 },
+					["coord"] = { 51.6, 44.8, MOONGLADE },
 					["sourceQuest"] = 29298,	-- A Smoke-Stained Locket
 				}),
 				q(1124,  {	-- Wasteland

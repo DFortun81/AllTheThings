@@ -4,10 +4,10 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(80, {	-- Moonglade
+		m(MOONGLADE, {
 			n(VENDORS, {
 				n(12023, {	-- Darnall <Tailoring Supplies>
-					["coord"] = { 51.6, 33.2, 80 },
+					["coord"] = { 51.6, 33.2, MOONGLADE },
 					["g"] = {
 						i(14488, {	-- Pattern: Runecloth Boots
 							["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, recipe was removed from game
@@ -15,7 +15,7 @@ _.Zones =
 					},
 				}),
 				n(12023, {	-- Kharedon <Light Armor Merchant>
-					["coord"] = { 56.6, 29.8, 80 },
+					["coord"] = { 56.6, 29.8, MOONGLADE },
 					["g"] = {
 						i(12254, {	-- Well Oiled Cloak
 							["isLimited"] = true,
@@ -23,7 +23,7 @@ _.Zones =
 					},
 				}),
 				n(12022, {	-- Lorelae Wintersong <Trade Supplies>
-					["coord"] = { 48.31, 40.20, 80 },
+					["coord"] = { 48.31, 40.20, MOONGLADE },
 					["g"] = {
 						i(16224, {	-- Formula: Enchant Cloak - Superior Defense
 							["isLimited"] = true,
@@ -51,7 +51,7 @@ _.Zones =
 					},
 				}),
 				n(12029, {	-- Narianna <Bowyer>
-					["coord"] = { 53.2, 42.6, 80 },
+					["coord"] = { 53.2, 42.6, MOONGLADE },
 					["g"] = {
 						i(11308, {	-- Sylvan Shortbow
 							["isLimited"] = true,

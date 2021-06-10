@@ -5,6 +5,6 @@
 _.Holidays = bubbleDown({["u"] = 17},
 {
 	holiday(235471, {	-- Lunar Festival
-		["maps"] = { 80 },	-- Moonglade
+		["maps"] = { MOONGLADE },
 	}),
 });
