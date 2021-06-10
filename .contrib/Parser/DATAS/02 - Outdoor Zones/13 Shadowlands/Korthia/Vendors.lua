@@ -52,12 +52,14 @@ _.Zones =
 							["cost"] = { { "c", 1931, 5000 } },	-- 5,000x Catalogued Research
 						}),
 						i(187145, {	-- Treatise: Recognizing Stygia and its Uses
+							["questID"] = 64307,
 							["cost"] = { { "c", 1931, 2000 } },	-- 2,000x Catalogued Research
 						}),
 						i(186721, {	-- Treatise: Relics Abound in the Shadowlands
 							["cost"] = { { "c", 1931, 2000 } },	-- 2,000x Catalogued Research
 						}),
 						i(186722, {	-- Treatise: The Study of Anima and Harnessing Every Drop
+							["questID"] = 64027,
 							["cost"] = { { "c", 1931, 2000 } },	-- 2,000x Catalogued Research
 						}),
 						--

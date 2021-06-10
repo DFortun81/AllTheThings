@@ -498,23 +498,35 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 62.1, 55.4, KORTHIA },
 					["g"] = {
-						q(64250, {	-- Spectral Key, Path of Understanding
-							["description"] = "Next to the anima pool.\n\nAn alternative to this key can be found behind the building on the Path of Understanding at |cFFFFFFFF61.0, 58.7|r.",
+						q(64250, {	-- Spectral Key, near Path of Understanding Building
+							["description"] = "Either behind the building, next to the building hidden in a bush, or next to the anima pool.",
 							["isDaily"] = true,
-							["coord"] = { 60.3, 56.5, KORTHIA },
-							["name"] = "Spectral Key #1, Path of Understanding",
+							["coords"] = {
+								{ 60.3, 56.5, KORTHIA },	-- next to the anima pool
+								{ 61.0, 58.7, KORTHIA },	-- behind the building
+								{ 62.1, 57.7, KORTHIA },	-- hidden in a bush between two trees
+							},
+							["name"] = "Spectral Key #1, Path of Understanding Building",
 						}),
-						q(64249, {	-- Spectral Key, Seeker's Quorum Building
-							["description"] = "An alternative to this key can be found on a rock next to the Seeker's Quorum building at |cFFFFFFFF52.6, 49.7|r.",
+						q(64249, {	-- Spectral Key, near Seeker's Quorum Building
+							["description"] = "Either inside the building, on a flat rock next to the building, or next to a large bush.",
 							["isDaily"] = true,
-							["coord"] = { 54.2, 50.6, KORTHIA },
+							["coords"] = {
+								{ 50.5, 53.7, KORTHIA },	-- next to a large bush
+								{ 52.6, 49.7, KORTHIA },	-- next to the building on top of a flat rock
+								{ 54.2, 50.6, KORTHIA },	-- inside the building
+							},
 							["name"] = "Spectral Key #2, Seeker's Quorum Building",
 						}),
-						q(64248, {	-- Spectral Key, Seeker's Quorum Chain
-							["description"] = "|cffde1c1cMust be clicked last!|r  An alternative to this key can be found next to a leaning pillar at |cFFFFFFFF57.5, 49.3|r.",
+						q(64248, {	-- Spectral Key, near Seeker's Quorum Chain
+							["description"] = "|cffde1c1cMust be clicked last!|r  Either on the north side of the chain, next to a leaning pillar, or next to a cage between two packs of mawrats.",
 							["isDaily"] = true,
-							["coord"] = { 59.1, 48.7, KORTHIA },
-							["name"] = "Spectral Key #3, Seeker's Quorum Chain",
+							["coords"] = {
+								{ 57.5, 49.3, KORTHIA },	-- next to a leaning pillar
+								{ 59.1, 48.7, KORTHIA },	-- north side of the chain
+								{ 62.8, 51.4, KORTHIA },	-- next to a cage, between two packs of mawrats
+							},
+							["name"] = "Spectral Key #3, near Seeker's Quorum Chain",
 						}),
 						i(187240),	-- Field Warden's Watchful Eye
 						i(187023),	-- Instructor's Mantle
