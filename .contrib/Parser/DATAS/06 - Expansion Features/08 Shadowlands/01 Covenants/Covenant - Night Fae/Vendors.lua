@@ -1021,7 +1021,6 @@ _.ExpansionFeatures =
 						-- TODO: ["coord"] = { },
 						["g"] = {
 							i(184111, {	-- Ensemble: Conservator's Guise
-								["questID"] = 61909,
 								["cost"] = { { "c", 1813, 12500 } },
 								["classes"] = { HUNTER, SHAMAN },
 								["g"] = {
@@ -1038,7 +1037,6 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(184112, {	-- Ensemble: Conservator's Raiment
-								["questID"] = 61910,
 								["cost"] = { { "c", 1813, 12500 } },
 								["classes"] = { DRUID, ROGUE, MONK, DEMONHUNTER },
 								["g"] = {
@@ -1054,7 +1052,6 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(184113, {	-- Ensemble: Conservator's Regalia
-								["questID"] = 61911,
 								["cost"] = { { "c", 1813, 12500 } },
 								["classes"] = { PRIEST, MAGE, WARLOCK },
 								["g"] = {
@@ -1070,7 +1067,6 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(184110, {	-- Ensemble: Conservator's Warbark
-								["questID"] = 61908,
 								["cost"] = { { "c", 1813, 12500 } },
 								["classes"] = { PALADIN, WARRIOR, DEATHKNIGHT },
 								["g"] = {
@@ -1327,7 +1323,6 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(184116, {	-- Ensemble: Winterborn Guise
-								["questID"] = 61913,
 								["cost"] = {
 									{ "c", 1813, 25000 },
 									{ "c", 1885, 5 },
@@ -1347,7 +1342,6 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(184115, {	-- Ensemble: Winterborn Raiment
-								["questID"] = 61914,
 								["cost"] = {
 									{ "c", 1813, 25000 },
 									{ "c", 1885, 5 },
@@ -1367,7 +1361,6 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(184114, {	-- Ensemble: Winterborn Regalia
-								["questID"] = 61915,
 								["cost"] = {
 									{ "c", 1813, 25000 },
 									{ "c", 1885, 5 },
@@ -1386,7 +1379,6 @@ _.ExpansionFeatures =
 								},
 							}),
 							i(184117, {	-- Ensemble: Winterborn Warbark
-								["questID"] = 61912,
 								["cost"] = {
 									{ "c", 1813, 25000 },
 									{ "c", 1885, 5 },
