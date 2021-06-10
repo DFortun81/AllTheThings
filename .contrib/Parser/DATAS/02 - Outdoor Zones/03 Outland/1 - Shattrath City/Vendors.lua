@@ -994,7 +994,9 @@ _.Zones =
 				n(19065, {	-- Inessera <Jewelcrafting Supplies Vendor>
 					["coord"] = { 35.6, 19.8, SHATTRATH_CITY },
 					["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
-					["groups"] = COMMON_WRATH_JEWELCRAFTING_RECIPES,
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 28701}, -- Timothy Jones <Jewelcrafting Trainer>
+					},
 				}),
 				-- #endif
 				n(19195, {	-- Jim Saltit <Cooking Supplies>
@@ -1014,7 +1016,9 @@ _.Zones =
 				n(33637, {	-- Kirembri Silvermane <Jewelcrafting Trainer>
 					["coord"] = { 58.6, 75.2, SHATTRATH_CITY },
 					["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
-					["groups"] = COMMON_WRATH_JEWELCRAFTING_RECIPES,
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 28701}, -- Timothy Jones <Jewelcrafting Trainer>
+					},
 				}),
 				-- #endif
 				n(115546, {	-- Lunelli <Keeper of Lost Recipes>
@@ -1088,7 +1092,9 @@ _.Zones =
 				n(33680, {	-- Nemiha <Jewelcrafting Trainer>
 					["coord"] = { 36.2, 47.0, SHATTRATH_CITY },
 					["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
-					["groups"] = COMMON_WRATH_JEWELCRAFTING_RECIPES,
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 28701}, -- Timothy Jones <Jewelcrafting Trainer>
+					},
 				}),
 				-- #endif
 				applyclassicphase(TBC_PHASE_FIVE, n(27666, {	-- Ontuvo <Jewelcrafting Supplies>

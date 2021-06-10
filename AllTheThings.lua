@@ -2363,6 +2363,8 @@ subroutines = {
 			{"exclude", "itemID", 22307},	-- Pattern: Enchanted Mageweave Pouch
 			-- Marith Lazuria <Jewelcrafting Supplies> Cataclysm Jewelcrafting
 			-- Shazdar <Sous Chef> Cataclysm Cooking
+			-- Tiffany Cartier <Jewelcrafting Supplies> Northrend Jewelcrafting
+			-- Timothy Jones <Jewelcrafting Trainer> Northrend Jewelcrafting
 		}
 	end,
 };
