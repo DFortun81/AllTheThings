@@ -4192,6 +4192,8 @@ _.PVP =
 						}),
 					}),
 					n(-662, {	-- Elite PvP Gear
+						un(REMOVED_FROM_GAME, i(147337)),	-- Cruel Gladiator's Tabard [Elite Rating]
+						un(REMOVED_FROM_GAME, i(147360)),	-- Cruel Gladiator's Cloak [Elite Rating]
 						cl(DEATHKNIGHT, {
 							un(14, i(147625, {	-- Ensemble: Elite Cruel Gladiator's Dreadplate Armor (A)
 								["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
@@ -5390,6 +5392,8 @@ _.PVP =
 						}),
 					}),
 					n(-662, {	-- Elite PvP Gear
+						un(REMOVED_FROM_GAME, i(147336)),	-- Cruel Gladiator's Tabard [Elite Rating] h
+						un(REMOVED_FROM_GAME, i(147357)),	-- Cruel Gladiator's Cloak [Elite Rating] h
 						cl(DEATHKNIGHT, {
 							i(147626, {	-- Ensemble: Elite Cruel Gladiator's Dreadplate Armor (H)
 								["description"] = "You will need to log out and back in to register Season 4 items, as well as Shift+Click to refresh for your current faction.",
@@ -5785,10 +5789,6 @@ _.PVP =
 						}),
 					}),
 				}),
-				n(-90, {	-- Elite
-					un(REMOVED_FROM_GAME, i(147337)),	-- Cruel Gladiator's Tabard [Elite Rating]
-					un(REMOVED_FROM_GAME, i(147360)),	-- Cruel Gladiator's Cloak [Elite Rating]
-				}),
 			}),
 			n(-685, {	-- Ferocious Gladiator: Legion Season 4
 				n(-9914, {	-- Alliance
@@ -6167,6 +6167,8 @@ _.PVP =
 						}),
 					}),
 					n(-662, {	-- Elite PvP Gear
+						un(REMOVED_FROM_GAME, i(147339)),	-- Ferocious Gladiator's Tabard [Elite Rating]
+						un(REMOVED_FROM_GAME, i(147364)),	-- Ferocious Gladiator's Cloak [Elite Rating]
 						cl(DEATHKNIGHT, {
 							un(14, i(145622)),	-- Ferocious Gladiator's Dreadcloak (A)
 							un(14, i(145646)),	-- Ferocious Gladiator's Dreadplate Chestpiece (A)
@@ -6698,6 +6700,8 @@ _.PVP =
 						}),
 					}),
 					n(-662, {	-- Elite PvP Gear
+						un(REMOVED_FROM_GAME, i(147338)),	-- Ferocious Gladiator's Tabard [Elite Rating]
+						un(REMOVED_FROM_GAME, i(147363)),	-- Ferocious Gladiator's Cloak [Elite Rating]
 						cl(DEATHKNIGHT, {
 							un(14, i(145623)),	-- Ferocious Gladiator's Dreadcloak (H)
 							un(14, i(145647)),	-- Ferocious Gladiator's Dreadplate Chestpiece (H)
@@ -6852,10 +6856,6 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(145835)), -- Ferocious Gladiator's Insignia of Victory (H)
 						}),
 					}),
-				}),
-				n(-90, {	-- Elite
-					un(REMOVED_FROM_GAME, i(147339)),	-- Ferocious Gladiator's Tabard [Elite Rating]
-					un(REMOVED_FROM_GAME, i(147364)),	-- Ferocious Gladiator's Cloak [Elite Rating]
 				}),
 			}),
 			n(-686, {	-- Fierce Gladiator: Legion Season 5
@@ -7923,6 +7923,8 @@ _.PVP =
 						}),
 					}),
 					n(-662, {	-- Elite PvP Gear
+						un(REMOVED_FROM_GAME, i(149443)),	-- Fierce Gladiator's Tabard [Elite Rating]
+						un(REMOVED_FROM_GAME, i(149445)),	-- Fierce Gladiator's Cloak [Elite Rating]
 						cl(DEATHKNIGHT, {
 							un(14, i(149458, {	-- Ensemble: Elite Fierce Gladiator's Dreadplate Armor (A)
 								["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
@@ -9502,6 +9504,8 @@ _.PVP =
 						}),
 					}),
 					n(-662, {	-- Elite PvP Gear
+						un(REMOVED_FROM_GAME, i(149442)),	-- Fierce Gladiator's Tabard [Elite Rating]
+						un(REMOVED_FROM_GAME, i(149444)),	-- Fierce Gladiator's Cloak [Elite Rating]
 						cl(DEATHKNIGHT, {
 							i(149459, {	-- Ensemble: Elite Fierce Gladiator's Dreadplate Armor (H)
 								["description"] = "You will need to log out and back in to register Season 6 & 7 items, as well as Shift+Click to refresh for your current faction.",
@@ -10017,10 +10021,6 @@ _.PVP =
 						}),
 					}),
 				}),
-				n(-90, {	-- Elite
-					un(REMOVED_FROM_GAME, i(149443)),	-- Fierce Gladiator's Tabard [Elite Rating]
-					un(REMOVED_FROM_GAME, i(149445)),	-- Fierce Gladiator's Cloak [Elite Rating]
-				}),
 			}),
 			n(-687, {	-- Dominant Gladiator: Legion Season 6
 				n(-9914, {	-- Alliance
@@ -10399,6 +10399,8 @@ _.PVP =
 						}),
 					}),
 					n(-662, {	-- Elite PvP Gear
+						un(REMOVED_FROM_GAME, i(149447)),	-- Dominant Gladiator's Tabard [Elite Rating]
+						un(REMOVED_FROM_GAME, i(149449)),	-- Dominant Gladiator's Cloak [Elite Rating]
 						cl(DEATHKNIGHT, {
 							un(14, i(148648)),	-- Dominant Gladiator's Dreadcloak (A)
 							un(14, i(148672)),	-- Dominant Gladiator's Dreadplate Chestpiece (A)
@@ -10962,6 +10964,8 @@ _.PVP =
 						}),
 					}),
 					n(-662, {	-- Elite PvP Gear
+						un(REMOVED_FROM_GAME, i(149446)),	-- Dominant Gladiator's Tabard [Elite Rating]
+						un(REMOVED_FROM_GAME, i(149448)),	-- Dominant Gladiator's Cloak [Elite Rating]
 						cl(DEATHKNIGHT, {
 							un(14, i(148649)),	-- Dominant Gladiator's Dreadcloak (H)
 							un(14, i(148673)),	-- Dominant Gladiator's Dreadplate Chestpiece (H)
@@ -11148,10 +11152,6 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(155714)),	-- Unflinching Grit
 						}),
 					}),
-				}),
-				n(-90, {	-- Elite
-					un(REMOVED_FROM_GAME, i(149447)),	-- Dominant Gladiator's Tabard [Elite Rating]
-					un(REMOVED_FROM_GAME, i(149449)),	-- Dominant Gladiator's Cloak [Elite Rating]
 				}),
 			}),
 			n(-688, {	-- Demonic Gladiator: Legion Season 7
@@ -11531,6 +11531,8 @@ _.PVP =
 						}),
 					}),
 					n(-662, {	-- Elite PvP Gear
+						un(REMOVED_FROM_GAME, i(149451)),	-- Demonic Gladiator's Tabard [Elite Rating]
+						un(REMOVED_FROM_GAME, i(149453)),	-- Demonic Gladiator's Cloak [Elite Rating]
 						cl(DEATHKNIGHT, {
 							un(14, i(149140)),	-- Demonic Gladiator's Dreadcloak
 							un(14, i(149164)),	-- Demonic Gladiator's Dreadplate Chestpiece
@@ -12094,6 +12096,8 @@ _.PVP =
 						}),
 					}),
 					n(-662, {	-- Elite PvP Gear
+						un(REMOVED_FROM_GAME, i(149450)),	-- Demonic Gladiator's Tabard [Elite Rating] h
+						un(REMOVED_FROM_GAME, i(149452)),	-- Demonic Gladiator's Cloak [Elite Rating] h
 						cl(DEATHKNIGHT, {
 							un(14, i(149141)),	-- Demonic Gladiator's Dreadcloak
 							un(14, i(149165)),	-- Demonic Gladiator's Dreadplate Chestpiece
@@ -12280,10 +12284,6 @@ _.PVP =
 							un(REMOVED_FROM_GAME, i(155744)),	-- Unflinching Grit
 						}),
 					}),
-				}),
-				n(-90, {	-- Elite
-					un(REMOVED_FROM_GAME, i(149451)),	-- Demonic Gladiator's Tabard [Elite Rating]
-					un(REMOVED_FROM_GAME, i(149453)),	-- Demonic Gladiator's Cloak [Elite Rating]
 				}),
 			}),
 		}),

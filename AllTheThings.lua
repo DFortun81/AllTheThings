@@ -19276,7 +19276,14 @@ app.events.VARIABLES_LOADED = function()
 			52888,	-- Verdant Hollow (BFA Alliance Outpost Unlock)
 			53043, -- Vulture's Nest (Mission Completion)
 			53044,	-- Vulture's Nest (BFA Alliance Outpost Unlock)
-
+			
+			53063, 	-- a-mission-of-unity (BFA Alliance WQ Unlock)
+			53064, 	-- a-mission-of-unity (BFA Horde WQ Unlock)
+			53061, 	-- the-azerite-advantage (BFA Alliance Island Unlock)
+			53062,  -- the-azerite-advantage (BFA Horde Island Unlock)
+			53055, 	-- Pushing Our Influence (BFA Horde PreQ for 1st Foothold)
+			53056,	-- Pushing Our Influence (BFA Alliance PreQ for 1st Foothold)
+			
 		--	Shard Labor
 			61229,	-- forging the Crystal Mallet of the Heralds
 			61191,	-- ringing the Vesper of the Silver Wind
