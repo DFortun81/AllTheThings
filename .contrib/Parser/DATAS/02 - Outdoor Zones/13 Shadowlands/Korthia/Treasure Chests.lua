@@ -495,7 +495,6 @@ _.Zones =
 					["description"] = "Requires collecting three |cFFFFFFFFSpectral Keys|r.  Use your preferred method of daily quest tracking to see the locations of the keys.\n\n|cffde1c1cKeys 1 and 2 can be collected in any order, but the key by the chain must be clicked last!|r",
 					["isDaily"] = true,
 					["questID"] = 64247,
-					["isDaily"] = true,
 					["coord"] = { 62.1, 55.4, KORTHIA },
 					["g"] = {
 						q(64250, {	-- Spectral Key, near Path of Understanding Building
