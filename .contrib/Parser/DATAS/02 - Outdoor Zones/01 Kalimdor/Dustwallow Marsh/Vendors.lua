@@ -4,10 +4,10 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(70, {	-- Dustwallow Marsh
+		m(DUSTWALLOW_MARSH, {
 			n(VENDORS, {
 				n(4894,  {	-- Craig Nollward <Cooking Trainer>
-					["coord"] = { 66.8, 45.2, 70 },
+					["coord"] = { 66.8, 45.2, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(21219),	-- Recipe: Sagefish Delight
@@ -15,7 +15,7 @@ _.Zones =
 					},
 				}),
 				n(6567,  {	-- Ghok'kah <Tailoring Supplies>
-					["coord"] = { 35.2, 30.8, 70 },
+					["coord"] = { 35.2, 30.8, DUSTWALLOW_MARSH },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(4355, { 	-- Pattern: Icy Cloak
@@ -24,7 +24,7 @@ _.Zones =
 					},
 				}),
 				n(4885,  {	-- Gregor MacVince <Horse Breeder>
-					["coord"] = { 65.2, 51.4, 70 },
+					["coord"] = { 65.2, 51.4, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(18777),	-- Swift Brown Steed
@@ -36,7 +36,7 @@ _.Zones =
 					},
 				}),
 				n(4886,  {	-- Hans Weston <Armorer & Weaponsmith>
-					["coord"] = { 64.6, 50.4, 70 },
+					["coord"] = { 64.6, 50.4, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(12248, {	-- Daring Dirk
@@ -48,7 +48,7 @@ _.Zones =
 					},
 				}),
 				n(4897,  {	-- Helenia Olden <Trade Supplies>
-					["coord"] = { 66.4, 51.4, 70 },
+					["coord"] = { 66.4, 51.4, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(21941, {	-- Design: Black Pearl Panther
@@ -66,7 +66,7 @@ _.Zones =
 					},
 				}),
 				n(4892,  {	-- Jensen Farran <Hunter Trainer & Bowyer>
-					["coord"] = { 67.8, 49.8, 70 },
+					["coord"] = { 67.8, 49.8, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(11305, {	-- Dense Shortbow
@@ -75,7 +75,7 @@ _.Zones =
 					},
 				}),
 				n(53410, {	-- Lissah Spellwick <Enchanting Trainer & Supplies>
-					["coord"] = { 66.0, 49.6, 70 },
+					["coord"] = { 66.0, 49.6, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(20753),	-- Formula: Lesser Wizard Oil
@@ -85,7 +85,7 @@ _.Zones =
 					},
 				}),
 				n(4879,  {	-- Ogg'marr <Butcher>
-					["coord"] = { 36.6, 31.0, 70 },
+					["coord"] = { 36.6, 31.0, DUSTWALLOW_MARSH },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(12232),	-- Recipe: Carrion Surprise
@@ -95,7 +95,7 @@ _.Zones =
 					},
 				}),
 				n(4890,  {	-- Piter Verance <Weaponsmith & Armorer>
-					["coord"] = { 67.4, 47.8, 70 },
+					["coord"] = { 67.4, 47.8, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(4817, {	-- Blessed Claymore
@@ -126,7 +126,7 @@ _.Zones =
 				}),
 				n(63546, {	-- Zidormi
 					["description"] = "Vendor only sells to those who completed the level 85 version of the Theramore's Fall Scenario.",
-					["coord"] = { 55.8, 49.6, 70 },
+					["coord"] = { 55.8, 49.6, DUSTWALLOW_MARSH },
 					["g"] = {
 						i(89196, {	-- Theramore Tabard
 							["races"] = ALLIANCE_ONLY,
@@ -137,7 +137,7 @@ _.Zones =
 					},
 				}),
 				n(4884,  {	-- Zulrg <Weaponsmith>
-					["coord"] = { 36.2, 31.6, 70 },
+					["coord"] = { 36.2, 31.6, DUSTWALLOW_MARSH },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(12251, {	-- Big Stick

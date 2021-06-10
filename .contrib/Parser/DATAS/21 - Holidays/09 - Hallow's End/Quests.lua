@@ -676,26 +676,26 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12383, {	-- Candy Bucket — Dustwallow Marsh, Brackenwall Village, Horde
 				["isYearly"] = true,
-				["coord"] = { 36.8, 32.4, 70 },
+				["coord"] = { 36.8, 32.4, DUSTWALLOW_MARSH },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 70 },	-- Dustwallow Marsh
+				["maps"] = { DUSTWALLOW_MARSH },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12398, {	-- Candy Bucket — Dustwallow Marsh, Mudsprocket, neutral
 				["isYearly"] = true,
-				["coord"] = { 41.0, 73.0, 70 },
-				["maps"] = { 70 },	-- Dustwallow Marsh
+				["coord"] = { 41.0, 73.0, DUSTWALLOW_MARSH },
+				["maps"] = { DUSTWALLOW_MARSH },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12349, {	-- Candy Bucket — Dustwallow Marsh, Theramore, Alliance
 				["isYearly"] = true,
-				["coord"] = { 66.6, 45.3, 70 },
+				["coord"] = { 66.6, 45.3, DUSTWALLOW_MARSH },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 70 },	-- Dustwallow Marsh
+				["maps"] = { DUSTWALLOW_MARSH },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},

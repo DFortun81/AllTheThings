@@ -136,9 +136,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { 66 },	-- Desolace
 									}),
 									crit(6,  {	-- Dustwallow Marsh
-										["coord"] = { 62.0, 40.0, 70 },
+										["coord"] = { 62.0, 40.0, DUSTWALLOW_MARSH },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 70 },	-- Dustwallow Marsh
+										["maps"] = { DUSTWALLOW_MARSH },
 									}),
 									crit(7,  {	-- Feralas
 										["coord"] = { 47.0, 44.0, FERALAS },
@@ -401,9 +401,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { 1 },	-- Durotar
 									}),
 									crit(5,  {	-- Dustwallow Marsh
-										["coord"] = { 33.2, 30.8, 70 },
+										["coord"] = { 33.2, 30.8, DUSTWALLOW_MARSH },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 70 },	-- Dustwallow Marsh
+										["maps"] = { DUSTWALLOW_MARSH },
 									}),
 									crit(6,  {	-- Feralas
 										["coord"] = { 72.5, 47.6, FERALAS },
@@ -827,9 +827,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { 1 },	-- Durotar
 									}),
 									crit(5,  {	-- Dustwallow Marsh
-										["coord"] = { 33.0, 30.0, 70 },
+										["coord"] = { 33.0, 30.0, DUSTWALLOW_MARSH },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 70 },	-- Dustwallow Marsh
+										["maps"] = { DUSTWALLOW_MARSH },
 									}),
 									crit(6,  {	-- Feralas
 										["coord"] = { 72.4, 47.8, FERALAS },
@@ -1112,9 +1112,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { 66 },	-- Desolace
 									}),
 									crit(6,  {	-- Dustwallow Marsh
-										["coord"] = { 62.1, 40.3, 70 },
+										["coord"] = { 62.1, 40.3, DUSTWALLOW_MARSH },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 70 },	-- Dustwallow Marsh
+										["maps"] = { DUSTWALLOW_MARSH },
 									}),
 									crit(7,  {	-- Feralas
 										["coord"] = { 46.6, 43.8, FERALAS },

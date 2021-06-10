@@ -164,10 +164,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11771, {	-- Desecrate this Fire! — Dustwallow Marsh
 				["isYearly"] = true,
 				["provider"] = { "o", 187959 },	-- Horde Bonfire
-				["coord"] = { 33.2, 30.8, 70 },
+				["coord"] = { 33.2, 30.8, DUSTWALLOW_MARSH },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
-				["maps"] = { 70 },	-- Dustwallow Marsh
+				["maps"] = { DUSTWALLOW_MARSH },
 			}),
 			q(11772, {	-- Desecrate this Fire! — Eversong Woods
 				["isYearly"] = true,
@@ -606,10 +606,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11744, {	-- Desecrate this Fire! — Dustwallow Marsh
 				["isYearly"] = true,
 				["provider"] = { "o", 187927 },	-- Alliance Bonfire
-				["coord"] = { 62.1, 40.3, 70 },
+				["coord"] = { 62.1, 40.3, DUSTWALLOW_MARSH },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-				["maps"] = { 70 },	-- Dustwallow Marsh
+				["maps"] = { DUSTWALLOW_MARSH },
 			}),
 			q(11745, {	-- Desecrate this Fire! — Elwynn Forest
 				["isYearly"] = true,
@@ -1037,9 +1037,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11815, {	-- Honor the Flame — Dustwallow Marsh
 				["provider"] = { "n", 25897 },	-- Dustwallow Marsh Flame Warden
 				["isYearly"] = true,
-				["coord"] = { 62.0, 40.0, 70 },
+				["coord"] = { 62.0, 40.0, DUSTWALLOW_MARSH },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 70 },	-- Dustwallow Marsh
+				["maps"] = { DUSTWALLOW_MARSH },
 			}),
 			q(11816, {	-- Honor the Flame — Elwynn Forest
 				["provider"] = { "n", 25898 },	-- Elwynn Forest Flame Warden
@@ -1403,9 +1403,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11847, {	-- Honor the Flame — Dustwallow Marsh
 				["provider"] = { "n", 25930 },	-- Dustwallow Marsh Flame Keeper
 				["isYearly"] = true,
-				["coord"] = { 33.0, 30.0, 70 },
+				["coord"] = { 33.0, 30.0, DUSTWALLOW_MARSH },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 70 },	-- Dustwallow Marsh
+				["maps"] = { DUSTWALLOW_MARSH },
 			}),
 			q(11848, {	-- Honor the Flame — Eversong Woods
 				["provider"] = { "n", 25931 },	-- Eversong Woods Flame Keeper
@@ -1922,7 +1922,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					ASHENVALE,
 					65,		-- Stonetalon Mountains
 					66,		-- Desolace
-					70,		-- Dustwallow Marsh
+					DUSTWALLOW_MARSH,
 					71,		-- Tanaris
 					83,		-- Winterspring
 					AZUREMYST_ISLE,

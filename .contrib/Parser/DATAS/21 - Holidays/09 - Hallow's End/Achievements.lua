@@ -544,8 +544,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { 66 },	-- Desolace
 										}),
 										crit(8,  {	-- Dustwallow Marsh, Mudsprocket
-											["coord"] = { 41.0, 73.0, 70 },
-											["maps"] = { 70 },	-- Dustwallow Marsh
+											["coord"] = { 41.0, 73.0, DUSTWALLOW_MARSH },
+											["maps"] = { DUSTWALLOW_MARSH },
 										}),
 										crit(9,  {	-- Exodar, Seat of the Naaru
 											["coord"] = { 59.3, 19.2, THE_EXODAR },
@@ -661,12 +661,12 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { 1 },	-- Durotar
 										}),
 										crit(9,  {	-- Dustwallow Marsh, Brackenwall Village
-											["coord"] = { 36.8, 32.4, 70 },
-											["maps"] = { 70 },	-- Dustwallow Marsh
+											["coord"] = { 36.8, 32.4, DUSTWALLOW_MARSH },
+											["maps"] = { DUSTWALLOW_MARSH },
 										}),
 										crit(10, {	-- Dustwallow Marsh, Mudsprocket
-											["coord"] = { 41.0, 73.0, 70 },
-											["maps"] = { 70 },	-- Dustwallow Marsh
+											["coord"] = { 41.0, 73.0, DUSTWALLOW_MARSH },
+											["maps"] = { DUSTWALLOW_MARSH },
 										}),
 										crit(11, {	-- Felwood, Whisperwind Grove
 											["coord"] = { 44.6, 28.9, 77 },

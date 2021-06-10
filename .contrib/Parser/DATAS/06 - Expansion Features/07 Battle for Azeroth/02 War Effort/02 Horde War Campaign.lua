@@ -1464,16 +1464,16 @@ _.ExpansionFeatures =
 						}),
 						q(54999, {	-- Under False Colors
 							["provider"] = { "n", 150311 },	-- Thomas Zelling
-							["coord"] = { 76.3, 42.7, 70 },
+							["coord"] = { 76.3, 42.7, DUSTWALLOW_MARSH },
 							["sourceQuest"] = 54960,	-- A Bitter Reunion
 							["altQuests"] = { 55034 },	-- Under False Colors
 							["races"] = HORDE_ONLY,
 							["lvl"] = 120,
-							["maps"] = { 70 },	-- Dustwallow Marsh
+							["maps"] = { DUSTWALLOW_MARSH },
 						}),
 						q(55034, {	-- Under False Colors (Sylvanas Version)
 							["provider"] = { "n", 150311 },	-- Thomas Zelling
-							["coord"] = { 76.3, 42.7, 70 },
+							["coord"] = { 76.3, 42.7, DUSTWALLOW_MARSH },
 							["sourceQuests"] = {
 								54960,	-- A Bitter Reunion
 								54961,	-- Righting Wrongs (Sylvanas Version)
@@ -1481,7 +1481,7 @@ _.ExpansionFeatures =
 							["altQuests"] = { 54999 },	-- Under False Colors
 							["races"] = HORDE_ONLY,
 							["lvl"] = 120,
-							["maps"] = { 70 },	-- Dustwallow Marsh
+							["maps"] = { DUSTWALLOW_MARSH },
 						}),
 						-- The Warfang Event (Baine's imprisoning)
 						q(55047, {	-- Securing Warfang Hold
