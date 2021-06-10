@@ -268,10 +268,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11783, {	-- Desecrate this Fire! — Northern Barrens
 				["isYearly"] = true,
 				["provider"] = { "o", 187971 },	-- Horde Bonfire
-				["coord"] = { 49.9, 54.2, 10 },
+				["coord"] = { 49.9, 54.2, NORTHERN_BARRENS },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
-				["maps"] = { 10 },	-- Northern Barrens
+				["maps"] = { NORTHERN_BARRENS },
 			}),
 			q(28911, {	-- Desecrate this Fire! — Northern Stranglethorn
 				["isYearly"] = true,
@@ -1501,9 +1501,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11859, {	-- Honor the Flame — Northern Barrens
 				["provider"] = { "n", 25943 },	-- The Northern Barrens Flame Keeper
 				["isYearly"] = true,
-				["coord"] = { 50.0, 55.0, 10 },
+				["coord"] = { 50.0, 55.0, NORTHERN_BARRENS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 10 },	-- Northern Barrens
+				["maps"] = { NORTHERN_BARRENS },
 			}),
 			q(28924, {	-- Honor the Flame — Northern Stranglethorn
 				["provider"] = { "n", 51582 },	-- Northern Stranglethorn Vale Flame Keeper
@@ -1951,7 +1951,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["maps"] = {
 					1,		-- Durotar
 					7,		-- Mulgore
-					10,		-- Northern Barrens
+					NORTHERN_BARRENS,
 					18,		-- Tirisfal Glades
 					ASHENVALE,
 					71,		-- Tanaris
@@ -2223,7 +2223,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["isYearly"] = true,
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = {
-					10,		-- Northern Barrens
+					NORTHERN_BARRENS,
 					71,		-- Tanaris
 					83,		-- Winterspring
 					84,		-- Stormwind City
@@ -2248,7 +2248,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["isYearly"] = true,
 				["races"] = HORDE_ONLY,
 				["maps"] = {
-					10,		-- Northern Barrens
+					NORTHERN_BARRENS,
 					71,		-- Tanaris
 					83,		-- Winterspring
 					85,		-- Orgrimmar

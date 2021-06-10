@@ -79,18 +79,18 @@ _.Holidays = bubbleDown({["u"] = 26},
 				},
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = {
-					10,  -- Northern Barrens
-					71,  -- Tanaris
-					83,  -- Winterspring
-					87,  -- Ironforge
-					84,  -- Stormwind City
-					89,  -- Darnassus
+					NORTHERN_BARRENS,
+					71,		-- Tanaris
+					83,		-- Winterspring
+					87,		-- Ironforge
+					84,		-- Stormwind City
+					89,		-- Darnassus
 					THE_EXODAR,
 					NETHERSTORM,
 					SHATTRATH_CITY,
-					120, -- The Storm Peaks
-					210, -- The Cape of Stranglethorn
-					125, -- Dalaran: Northrend
+					120,	-- The Storm Peaks
+					210,	-- The Cape of Stranglethorn
+					125,	-- Dalaran: Northrend
 				},
 				["isBreadcrumb"] = true,
 			}),
@@ -105,18 +105,18 @@ _.Holidays = bubbleDown({["u"] = 26},
 				},
 				["races"] = HORDE_ONLY,
 				["maps"] = {
-					10,  -- Northern Barrens
-					71,  -- Tanaris
-					83,  -- Winterspring
-					85,  -- Orgrimmar
-					88,  -- Thunder Bluff
-					90,  -- Undercity
+					NORTHERN_BARRENS,
+					71,		-- Tanaris
+					83,		-- Winterspring
+					85,		-- Orgrimmar
+					88,		-- Thunder Bluff
+					90,		-- Undercity
 					EVERSONG_WOODS,
 					NETHERSTORM,
 					SHATTRATH_CITY,
-					120, -- The Storm Peaks
-					210, -- The Cape of Stranglethorn
-					125, -- Dalaran: Northrend
+					120,	-- The Storm Peaks
+					210,	-- The Cape of Stranglethorn
+					125,	-- Dalaran: Northrend
 				},
 				["isBreadcrumb"] = true,
 			}),
@@ -1259,35 +1259,35 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12374, {	-- Candy Bucket — Northern Barrens, Crossroads, Horde
 				["isYearly"] = true,
-				["coord"] = { 49.5, 58.0, 10 },
+				["coord"] = { 49.5, 58.0, NORTHERN_BARRENS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 10 },	-- Northern Barrens
+				["maps"] = { NORTHERN_BARRENS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(29002, {	-- Candy Bucket — Northern Barrens, Grol'dom Farm, Horde
 				["isYearly"] = true,
-				["coord"] = { 56.3, 40.1, 10 },
+				["coord"] = { 56.3, 40.1, NORTHERN_BARRENS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 10 },	-- Northern Barrens
+				["maps"] = { NORTHERN_BARRENS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(29003, {	-- Candy Bucket — Northern Barrens, Nozzlepot's Outpost, Horde
 				["isYearly"] = true,
-				["coord"] = { 62.5, 16.6, 10 },
+				["coord"] = { 62.5, 16.6, NORTHERN_BARRENS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 10 },	-- Northern Barrens
+				["maps"] = { NORTHERN_BARRENS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12396, {	-- Candy Bucket — Northern Barrens, Ratchet, neutral
 				["isYearly"] = true,
-				["coord"] = { 67.3, 74.7, 10 },
-				["maps"] = { 10 },	-- Northern Barrens
+				["coord"] = { 67.3, 74.7, NORTHERN_BARRENS },
+				["maps"] = { NORTHERN_BARRENS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -2081,18 +2081,18 @@ _.Holidays = bubbleDown({["u"] = 26},
 				},
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = {
-					10,  -- Northern Barrens
-					71,  -- Tanaris
-					83,  -- Winterspring
-					87,  -- Ironforge
-					84,  -- Stormwind City
-					89,  -- Darnassus
+					NORTHERN_BARRENS,
+					71,		-- Tanaris
+					83,		-- Winterspring
+					87,		-- Ironforge
+					84,		-- Stormwind City
+					89,		-- Darnassus
 					THE_EXODAR,
 					NETHERSTORM,
 					SHATTRATH_CITY,
-					120, -- The Storm Peaks
-					210, -- The Cape of Stranglethorn
-					125, -- Dalaran: Northrend
+					120,	-- The Storm Peaks
+					210,	-- The Cape of Stranglethorn
+					125,	-- Dalaran: Northrend
 				},
 				["isBreadcrumb"] = true
 			}),
@@ -2272,18 +2272,18 @@ _.Holidays = bubbleDown({["u"] = 26},
 				},
 				["races"] = HORDE_ONLY,
 				["maps"] = {
-					10,  -- Northern Barrens
-					71,  -- Tanaris
-					83,  -- Winterspring
-					85,  -- Orgrimmar
-					88,  -- Thunder Bluff
-					90,  -- Undercity
+					NORTHERN_BARRENS,
+					71,		-- Tanaris
+					83,		-- Winterspring
+					85,		-- Orgrimmar
+					88,		-- Thunder Bluff
+					90,		-- Undercity
 					EVERSONG_WOODS,
 					NETHERSTORM,
 					SHATTRATH_CITY,
-					120, -- The Storm Peaks
-					210, -- The Cape of Stranglethorn
-					125, -- Dalaran: Northrend
+					120,	-- The Storm Peaks
+					210,	-- The Cape of Stranglethorn
+					125,	-- Dalaran: Northrend
 				},
 				["isBreadcrumb"] = true
 			}),

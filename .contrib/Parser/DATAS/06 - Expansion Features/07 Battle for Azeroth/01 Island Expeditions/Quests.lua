@@ -331,8 +331,8 @@ _.ExpansionFeatures =
 				}),
 				i(163479, {	-- Venture Co. Business Plan
 					["coords"] = {
-						{ 50.2, 59.2, 10 },
-						{ 66.8, 72.6, 10 },
+						{ 50.2, 59.2, NORTHERN_BARRENS },
+						{ 66.8, 72.6, NORTHERN_BARRENS },
 					},
 					["g"] = {
 						q(53172, {	-- Venture Co. Business Plan

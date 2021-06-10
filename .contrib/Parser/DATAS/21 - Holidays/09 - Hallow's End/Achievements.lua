@@ -568,8 +568,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { FERALAS },
 										}),
 										crit(14, {	-- Northern Barrens, Ratchet
-											["coord"] = { 67.3, 74.7, 10 },
-											["maps"] = { 10 },	-- Northern Barrens
+											["coord"] = { 67.3, 74.7, NORTHERN_BARRENS },
+											["maps"] = { NORTHERN_BARRENS },
 										}),
 										crit(15, {	-- Silithus, Cenarion Hold
 											["coord"] = { 55.5, 36.7, 81 },
@@ -689,20 +689,20 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { 7 },	-- Mulgore
 										}),
 										crit(16, {	-- Northern Barrens, The Crossroads
-											["coord"] = { 49.5, 58.0, 10 },
-											["maps"] = { 10 },	-- Northern Barrens
+											["coord"] = { 49.5, 58.0, NORTHERN_BARRENS },
+											["maps"] = { NORTHERN_BARRENS },
 										}),
 										crit(17, {	-- Northern Barrens, Grol'dom Farm
-											["coord"] = { 56.3, 40.1, 10 },
-											["maps"] = { 10 },	-- Northern Barrens
+											["coord"] = { 56.3, 40.1, NORTHERN_BARRENS },
+											["maps"] = { NORTHERN_BARRENS },
 										}),
 										crit(18, {	-- Northern Barrens, Nozzlepot's Outpost
-											["coord"] = { 62.5, 16.6, 10 },
-											["maps"] = { 10 },	-- Northern Barrens
+											["coord"] = { 62.5, 16.6, NORTHERN_BARRENS },
+											["maps"] = { NORTHERN_BARRENS },
 										}),
 										crit(19, {	-- Northern Barrens, Ratchet
-											["coord"] = { 67.3, 74.7, 10 },
-											["maps"] = { 10 },	-- Northern Barrens
+											["coord"] = { 67.3, 74.7, NORTHERN_BARRENS },
+											["maps"] = { NORTHERN_BARRENS },
 										}),
 										crit(20, {	-- Orgrimmar, Valley of Strength
 											["coord"] = { 53.8, 78.8, 85 },

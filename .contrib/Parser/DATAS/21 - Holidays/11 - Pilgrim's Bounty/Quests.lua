@@ -17,7 +17,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 					{ "n", 20102 },	-- Goblin Commoner
 				},
 				["maps"] = {
-					10,		-- Northern Barrens
+					NORTHERN_BARRENS,
 					37,		-- Elwynn Forest
 					71,		-- Tanaris
 					83,		-- Winterspring
@@ -186,7 +186,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 				["isYearly"] = true,
 				["races"] = HORDE_ONLY,
 				["maps"] = {
-					10,		-- Northern Barrens
+					NORTHERN_BARRENS,
 					71,		-- Tanaris
 					83,		-- Winterspring
 					85,		-- Orgrimmar

@@ -66,9 +66,9 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 					{ 32.29, 64.81, NETHERSTORM },	-- Goblin
 					{ 32.92, 66.71, NETHERSTORM },	-- Goblin
 					{ 33.83, 64.11, NETHERSTORM },	-- Goblin
-					{ 67.53, 74.19, 10 },	-- Northern Barrens [Goblin]
-					{ 68.18, 71.37, 10 },	-- Northern Barrens [Goblin]
-					{ 69.06, 70.69, 10 },	-- Northern Barrens [Goblin]
+					{ 67.53, 74.19, NORTHERN_BARRENS },	-- Goblin
+					{ 68.18, 71.37, NORTHERN_BARRENS },	-- Goblin
+					{ 69.06, 70.69, NORTHERN_BARRENS },	-- Goblin
 					{ 49.11, 31.48, SHATTRATH_CITY },	-- Goblin
 					{ 53.09, 50.95, SHATTRATH_CITY },	-- Goblin
 					{ 54.87, 38.59, SHATTRATH_CITY },	-- Goblin
@@ -100,7 +100,7 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 					89,		-- Darnassus
 					87,		-- Ironforge
 					NETHERSTORM,
-					10,		-- Northern Barrens
+					NORTHERN_BARRENS,
 					SHATTRATH_CITY,
 					71,		-- Tanaris
 					210,	-- The Cape of Stranglethorn
@@ -127,9 +127,9 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 					{ 32.29, 64.81, NETHERSTORM },	-- Goblin
 					{ 32.92, 66.71, NETHERSTORM },	-- Goblin
 					{ 33.83, 64.11, NETHERSTORM },	-- Goblin
-					{ 67.53, 74.19, 10 },	-- Northern Barrens [Goblin]
-					{ 68.18, 71.37, 10 },	-- Northern Barrens [Goblin]
-					{ 69.06, 70.69, 10 },	-- Northern Barrens [Goblin]
+					{ 67.53, 74.19, NORTHERN_BARRENS },	-- Goblin
+					{ 68.18, 71.37, NORTHERN_BARRENS },	-- Goblin
+					{ 69.06, 70.69, NORTHERN_BARRENS },	-- Goblin
 					{ 32.27, 65.71, 85 },	-- Orgrimmar [Troll]
 					{ 39.59, 78.04, 85 },	-- Orgrimmar [Troll]
 					{ 40.18, 49.03, 85 },	-- Orgrimmar [Tauren]
@@ -168,7 +168,7 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 					125,	-- Dalaran: Northrend
 					126,	-- Dalaran: Northrend
 					NETHERSTORM,
-					10,		-- Northern Barrens
+					NORTHERN_BARRENS,
 					85,		-- Orgrimmar
 					86,		-- Orgrimmar
 					SHATTRATH_CITY,

@@ -97,8 +97,8 @@ _.WorldEvents =
 					}),
 					q(60759, {	-- Damned Intruders (H)
 						["u"] = REMOVED_FROM_GAME,
-						["maps"] = { 10 },	-- Northern Barrens
-						["coord"] = { 49.5, 59.4, 10 },
+						["maps"] = { NORTHERN_BARRENS },
+						["coord"] = { 49.5, 59.4, NORTHERN_BARRENS },
 						["provider"] = { "n", 170084 },	-- Lieutenant Althera
 						["sourceQuest"] = 60725,	-- Field Reports (H)
 						["lvl"] = { 50 },
@@ -113,8 +113,8 @@ _.WorldEvents =
 					}),
 					q(60761, {	-- Return of the Scourge (H)
 						["u"] = REMOVED_FROM_GAME,
-						["maps"] = { 10 },	-- Northern Barrens
-						["coord"] = { 49.4, 59.3, 10 },
+						["maps"] = { NORTHERN_BARRENS },
+						["coord"] = { 49.4, 59.3, NORTHERN_BARRENS },
 						["provider"] = { "n", 170084 },	-- Lieutenant Althera
 						["sourceQuest"] = 60759,	-- Damned Intruders (H)
 						["lvl"] = { 50 },

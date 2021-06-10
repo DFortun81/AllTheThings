@@ -416,9 +416,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { 7 },	-- Mulgore
 									}),
 									crit(8,  {	-- Northern Barrens
-										["coord"] = { 49.9, 54.2, 10 },
+										["coord"] = { 49.9, 54.2, NORTHERN_BARRENS },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 10 },	-- Northern Barrens
+										["maps"] = { NORTHERN_BARRENS },
 									}),
 									crit(9,  {	-- Silithus
 										["coord"] = { 50.8, 41.8, 81 },
@@ -842,9 +842,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { 7 },	-- Mulgore
 									}),
 									crit(8,  {	-- Northern Barrens
-										["coord"] = { 50.0, 55.0, 10 },
+										["coord"] = { 50.0, 55.0, NORTHERN_BARRENS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 10 },	-- Northern Barrens
+										["maps"] = { NORTHERN_BARRENS },
 									}),
 									crit(9,  {	-- Silithus
 										["coord"] = { 50.9, 41.3, 81 },

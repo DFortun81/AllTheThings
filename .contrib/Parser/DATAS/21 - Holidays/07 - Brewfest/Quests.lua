@@ -213,7 +213,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 					["races"] = HORDE_ONLY,
 					["maps"] = {
 						1,	-- Durotar
-						10,	-- Northern Barrens
+						NORTHERN_BARRENS,
 						71,	-- Tanaris
 						83,	-- Winterspring
 						85,	-- Orgrimmar

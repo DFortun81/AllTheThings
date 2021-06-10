@@ -579,8 +579,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8717,  {	-- Moonwarden the Elder
 				["provider"] = { "n", 15597 },	-- Elder Moonwarden
 				["isYearly"] = true,
-				["coord"] = { 48.5, 59.2, 10 },
-				["maps"] = { 10 },	-- Northern Barrens
+				["coord"] = { 48.5, 59.2, NORTHERN_BARRENS },
+				["maps"] = { NORTHERN_BARRENS },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(3, {	-- Elder Moonwarden in The Crossroads
@@ -725,8 +725,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8680,  {	-- Windtotem the Elder
 				["provider"] = { "n", 15582 },	-- Elder Windtotem
 				["isYearly"] = true,
-				["coord"] = { 68.4, 69.9, 10 },
-				["maps"] = { 10 },	-- Northern Barrens
+				["coord"] = { 68.4, 69.9, NORTHERN_BARRENS },
+				["maps"] = { NORTHERN_BARRENS },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(5, {	-- Elder Windtotem in Ratchet

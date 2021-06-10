@@ -4,10 +4,10 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(10, {	-- Northern Barrens
+		m(NORTHERN_BARRENS, {
 			n(VENDORS, {
 				n(3495,	{	-- Gagsprocket <Engineering Supplies>
-					["coord"] = { 68.4, 69.2, 10 },
+					["coord"] = { 68.4, 69.2, NORTHERN_BARRENS },
 					["g"] = {
 						i(18648, {	-- Schematic: Green Firework
 							["isLimited"] = true,
@@ -18,7 +18,7 @@ _.Zones =
 					},
 				}),
 				n(3493, {	-- Grazlix <Armorer & Shieldcrafter>
-					["coord"] = { 67.6, 72.8, 10 },
+					["coord"] = { 67.6, 72.8, NORTHERN_BARRENS },
 					["g"] = {
 						i(4799, {	-- Antiquated Cloak
 							["isLimited"] = true,
@@ -47,7 +47,7 @@ _.Zones =
 					},
 				}),
 				n(3486, {	-- Halija Whitestrider <Clothier>
-					["coord"] = { 50.0, 61.4, 10 },
+					["coord"] = { 50.0, 61.4, NORTHERN_BARRENS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(16059),	-- Common Brown Shirt
@@ -74,7 +74,7 @@ _.Zones =
 					},
 				}),
 				n(3490, {	-- Hula'mahi <Reagents, Herbs & Poison Supplies>
-					["coord"] = { 48.6, 58.4, 10 },
+					["coord"] = { 48.6, 58.4, NORTHERN_BARRENS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(6053, {	-- Recipe: Holy Protection Potion
@@ -83,7 +83,7 @@ _.Zones =
 					},
 				}),
 				n(3497, {	-- Kilxx <Fisherman>
-					["coord"] = { 68.6, 72.6, 10 },
+					["coord"] = { 68.6, 72.6, NORTHERN_BARRENS },
 					["g"] = {
 						i(6330),	-- Recipe: Bristle Whisker Catfish
 						i(6368),	-- Recipe: Rainbow Fin Albacore
@@ -92,8 +92,8 @@ _.Zones =
 				n(3658, {	-- Lizzarik <Weapon Dealer>
 					["description"] = "Travels on the road between Ratchet and The Crossroads.",
 					["coords"] = {
-						{ 66.8, 72.6, 10 },
-						{ 50.2, 59.2, 10 },
+						{ 66.8, 72.6, NORTHERN_BARRENS },
+						{ 50.2, 59.2, NORTHERN_BARRENS },
 					},
 					["g"] = {
 						i(4765, {	-- Enamelled Broadsword
@@ -111,7 +111,7 @@ _.Zones =
 					},
 				}),
 				n(3479, {	-- Nargal Deatheye <Weaponsmith>
-					["coord"] = { 48.2, 56.6, 10 },
+					["coord"] = { 48.2, 56.6, NORTHERN_BARRENS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(4765, {	-- Enamelled Broadsword
@@ -123,7 +123,7 @@ _.Zones =
 					},
 				}),
 				n(3499, {	-- Ranik <Trade Supplies>
-					["coord"] = { 67.0, 73.4, 10 },
+					["coord"] = { 67.0, 73.4, NORTHERN_BARRENS },
 					["g"] = {
 						i(20855, {	-- Design: Wicked Moonstone Ring
 							["isLimited"] = true,
@@ -140,7 +140,7 @@ _.Zones =
 					},
 				}),
 				n(8307, {	-- Tarban Hearthgrain <Baker>
-					["coord"] = { 55.0, 61.6, 10 },
+					["coord"] = { 55.0, 61.6, NORTHERN_BARRENS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(21219),	-- Recipe: Sagefish Delight
@@ -148,7 +148,7 @@ _.Zones =
 					},
 				}),
 				n(3482, {	-- Tari'qa <Trade Supplies>
-					["coord"] = { 49.0, 58.2, 10 },
+					["coord"] = { 49.0, 58.2, NORTHERN_BARRENS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(5488),	-- Recipe: Crispy Lizard Tail
@@ -156,7 +156,7 @@ _.Zones =
 					},
 				}),
 				n(3488, {	-- Uthrok <Bowyer & Gunsmith>
-					["coord"] = { 48.0, 56.4, 10 },
+					["coord"] = { 48.0, 56.4, NORTHERN_BARRENS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(11304, {	-- Fine Longbow
@@ -165,7 +165,7 @@ _.Zones =
 					},
 				}),
 				n(3492, {	-- Vexspindle <Cloth & Leather Armor Merchant>
-					["coord"] = { 67.4, 72.8, 10 },
+					["coord"] = { 67.4, 72.8, NORTHERN_BARRENS },
 					["g"] = {
 						i(4795, {	-- Bear Bracers
 							["isLimited"] = true,
@@ -179,7 +179,7 @@ _.Zones =
 					},
 				}),
 				n(3682, {	-- Vrang Wildgore <Weaponsmith & Armorcrafter>
-					["coord"] = { 35.0, 26.8, 10 },
+					["coord"] = { 35.0, 26.8, NORTHERN_BARRENS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(4799, {	-- Antiquated Cloak
@@ -212,7 +212,7 @@ _.Zones =
 					},
 				}),
 				n(3485, {	-- Wrahk <Tailoring Supplies>
-					["coord"] = { 50.0, 61.0, 10 },
+					["coord"] = { 50.0, 61.0, NORTHERN_BARRENS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(6272, {	-- Pattern: Blue Linen Robe
@@ -227,7 +227,7 @@ _.Zones =
 					},
 				}),
 				n(3489, {	-- Zargh <Butcher>
-					["coord"] = { 50.6, 57.8, 10 },
+					["coord"] = { 50.6, 57.8, NORTHERN_BARRENS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(3735), 	-- Recipe: Hot Lion Chops

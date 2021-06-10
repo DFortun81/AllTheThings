@@ -7,7 +7,7 @@ _.PVP =
 	n(-304, {	-- Battlegrounds
 		m(92 , {	-- Warsong Gulch
 			["maps"] = {
-				10,		-- Northern Barrens
+				NORTHERN_BARRENS,
 				ASHENVALE,
 				859,	-- Warsong Gulch
 				1339,	-- Warsong Gulch
@@ -249,19 +249,19 @@ _.PVP =
 						n(QUESTS, {
 							q(7866,  {	-- Outrider Basic Care Package
 								["provider"] = { "n", 14754 },	-- Kelm Hargunth
-								["coord"] = { 40.2, 20.0, 10 },
+								["coord"] = { 40.2, 20.0, NORTHERN_BARRENS },
 								["races"] = HORDE_ONLY,
 								["minReputation"] = { 889, FRIENDLY },
 							}),
 							q(7867,  {	-- Outrider Standard Care Package
 								["provider"] = { "n", 14754 },	-- Kelm Hargunth
-								["coord"] = { 40.2, 20.0, 10 },
+								["coord"] = { 40.2, 20.0, NORTHERN_BARRENS },
 								["races"] = HORDE_ONLY,
 								["minReputation"] = { 889, HONORED },
 							}),
 							q(7868,  {	-- Outrider Advanced Care Package
 								["provider"] = { "n", 14754 },	-- Kelm Hargunth
-								["coord"] = { 40.2, 20.0, 10 },
+								["coord"] = { 40.2, 20.0, NORTHERN_BARRENS },
 								["races"] = HORDE_ONLY,
 								["minReputation"] = { 889, REVERED },
 							}),
