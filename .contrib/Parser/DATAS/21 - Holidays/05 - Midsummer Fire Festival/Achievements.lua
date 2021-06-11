@@ -151,9 +151,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { SILITHUS },
 									}),
 									crit(9,  {	-- Southern Barrens
-										["coord"] = { 48.0, 72.0, 199 },
+										["coord"] = { 48.0, 72.0, SOUTHERN_BARRENS },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 199 },	-- Southern Barrens
+										["maps"] = { SOUTHERN_BARRENS },
 									}),
 									crit(10, {	-- Stonetalon Mountains
 										["coord"] = { 49.0, 51.0, 65 },
@@ -426,9 +426,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { SILITHUS },
 									}),
 									crit(10, {	-- Southern Barrens
-										["coord"] = { 40.7, 67.2, 199 },
+										["coord"] = { 40.7, 67.2, SOUTHERN_BARRENS },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 199 },	-- Southern Barrens
+										["maps"] = { SOUTHERN_BARRENS },
 									}),
 									crit(11, {	-- Stonetalon Mountains
 										["coord"] = { 53.0, 62.4, 65 },
@@ -852,9 +852,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { SILITHUS },
 									}),
 									crit(10, {	-- Southern Barrens
-										["coord"] = { 41.0, 68.0, 199 },
+										["coord"] = { 41.0, 68.0, SOUTHERN_BARRENS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 199 },	-- Southern Barrens
+										["maps"] = { SOUTHERN_BARRENS },
 									}),
 									crit(11, {	-- Stonetalon Mountains
 										["coord"] = { 52.9, 62.5, 65 },
@@ -1127,9 +1127,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { SILITHUS },
 									}),
 									crit(9,  {	-- Southern Barrens
-										["coord"] = { 48.2, 72.4, 199 },
+										["coord"] = { 48.2, 72.4, SOUTHERN_BARRENS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 199 },	-- Southern Barrens
+										["maps"] = { SOUTHERN_BARRENS },
 									}),
 									crit(10, {	-- Stonetalon Mountains
 										["coord"] = { 49.6, 51.1, 65 },

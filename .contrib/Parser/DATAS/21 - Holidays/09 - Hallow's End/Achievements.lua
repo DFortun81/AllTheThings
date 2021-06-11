@@ -576,16 +576,16 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { SILITHUS },
 										}),
 										crit(16, {	-- Southern Barrens, Fort Triumph
-											["coord"] = { 49.1, 68.5, 199 },
-											["maps"] = { 199 },	-- Southern Barrens
+											["coord"] = { 49.1, 68.5, SOUTHERN_BARRENS },
+											["maps"] = { SOUTHERN_BARRENS },
 										}),
 										crit(17, {	-- Southern Barrens, Honor's Stand
-											["coord"] = { 39.0, 11.0, 199 },
-											["maps"] = { 199 },	-- Southern Barrens
+											["coord"] = { 39.0, 11.0, SOUTHERN_BARRENS },
+											["maps"] = { SOUTHERN_BARRENS },
 										}),
 										crit(18, {	-- Southern Barrens, Northwatch Hold
-											["coord"] = { 65.6, 46.6, 199 },
-											["maps"] = { 199 },	-- Southern Barrens
+											["coord"] = { 65.6, 46.6, SOUTHERN_BARRENS },
+											["maps"] = { SOUTHERN_BARRENS },
 										}),
 										crit(19, {	-- Stonetalon Mountains, Farwatcher's Glen
 											["coord"] = { 31.5, 60.7, 65 },
@@ -713,12 +713,12 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { SILITHUS },
 										}),
 										crit(22, {	-- Southern Barrens, Desolation Hold
-											["coord"] = { 40.7, 69.3, 199 },
-											["maps"] = { 199 },	-- Southern Barrens
+											["coord"] = { 40.7, 69.3, SOUTHERN_BARRENS },
+											["maps"] = { SOUTHERN_BARRENS },
 										}),
 										crit(23, {	-- Southern Barrens, Hunter's Hill
-											["coord"] = { 39.3, 20.1, 199 },
-											["maps"] = { 199 },	-- Southern Barrens
+											["coord"] = { 39.3, 20.1, SOUTHERN_BARRENS },
+											["maps"] = { SOUTHERN_BARRENS },
 										}),
 										crit(24, {	-- Stonetalon Mountains, Krom'gar Fortress
 											["coord"] = { 66.5, 64.2, 65 },

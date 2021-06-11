@@ -47,10 +47,10 @@ _.Zones =
 						}),
 						q(53600, {	-- Honor's Stand
 							["name"] = "Honor's Stand",
-							["coord"] = { 39.11, 09.31, 199 },
+							["coord"] = { 39.11, 09.31, SOUTHERN_BARRENS },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-							["maps"] = { 199 },	-- Southern Barrens
+							["maps"] = { SOUTHERN_BARRENS },
 						}),
 						q(53601, {	-- Sulfuron Spire
 							["name"] = "Sulfuron Spire",

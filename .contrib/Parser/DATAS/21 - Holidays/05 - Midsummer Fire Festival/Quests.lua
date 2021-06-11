@@ -316,10 +316,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(28914, {	-- Desecrate this Fire! — Southern Barrens
 				["isYearly"] = true,
 				["provider"] = { "o", 207986 },	-- Horde Bonfire
-				["coord"] = { 40.7, 67.2, 199 },
+				["coord"] = { 40.7, 67.2, SOUTHERN_BARRENS },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
-				["maps"] = { 199 },	-- Southern Barrens
+				["maps"] = { SOUTHERN_BARRENS },
 			}),
 			q(11780, {	-- Desecrate this Fire! — Stonetalon Mountains
 				["isYearly"] = true,
@@ -726,10 +726,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(28913, {	-- Desecrate this Fire! — Southern Barrens
 				["isYearly"] = true,
 				["provider"] = { "o", 207985 },	-- Alliance Bonfire
-				["coord"] = { 48.2, 72.4, 199 },
+				["coord"] = { 48.2, 72.4, SOUTHERN_BARRENS },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-				["maps"] = { 199 },	-- Southern Barrens
+				["maps"] = { SOUTHERN_BARRENS },
 			}),
 			q(28915, {	-- Desecrate this Fire! — Stonetalon Mountains
 				["isYearly"] = true,
@@ -1149,9 +1149,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(28926, {	-- Honor the Flame — Southern Barrens
 				["provider"] = { "n", 51586 },	-- Southern Barrens Flame Warden
 				["isYearly"] = true,
-				["coord"] = { 48.0, 72.0, 199 },
+				["coord"] = { 48.0, 72.0, SOUTHERN_BARRENS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 199 },	-- Southern Barrens
+				["maps"] = { SOUTHERN_BARRENS },
 			}),
 			q(28928, {	-- Honor the Flame — Stonetalon Mountains
 				["provider"] = { "n", 51588 },	-- Stonetalon Mountains Flame Warden
@@ -1543,9 +1543,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(28927, {	-- Honor the Flame — Southern Barrens
 				["provider"] = { "n", 51587 },	-- The Southern Barrens Flame Keeper
 				["isYearly"] = true,
-				["coord"] = { 41.0, 68.0, 199 },
+				["coord"] = { 41.0, 68.0, SOUTHERN_BARRENS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 199 },	-- Southern Barrens
+				["maps"] = { SOUTHERN_BARRENS },
 			}),
 			q(11856, {	-- Honor the Flame — Stonetalon Mountains
 				["provider"] = { "n", 25940 },	-- Stonetalon Flame Keeper
@@ -1939,7 +1939,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					120,	-- The Storm Peaks
 					121,	-- Zul'Drak
 					127,	-- Crystalsong Forest
-					199,	-- Southern Barrens
+					SOUTHERN_BARRENS,
 					210,	-- The Cape of Stranglethorn
 					241,	-- Twilight Highlands
 					249,	-- Uldum

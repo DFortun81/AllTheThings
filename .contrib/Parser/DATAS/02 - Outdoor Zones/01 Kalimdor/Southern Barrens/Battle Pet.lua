@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(199, {	-- Southern Barrens
+		m(SOUTHERN_BARRENS, {
 			filter(101, {	-- Pet Battle
 				p(635, {	-- Adder
 					["crs"] = { 61325 },	-- Adder
@@ -29,12 +29,12 @@ _.Zones =
 				}),
 				q(31918, {	-- A Tamer's Homecoming
 					["provider"] = { "n", 66422 },	-- Cassandra Kaboom
-					["coord"] = { 39.5, 79.1, 199 },
+					["coord"] = { 39.5, 79.1, SOUTHERN_BARRENS },
 					["races"] = HORDE_ONLY,
 				}),
 				q(31904, {	-- Cassandra Kaboom
 					["provider"] = { "n", 66422 },	-- Cassandra Kaboom
-					["coord"] = { 39.5, 79.1, 199 },
+					["coord"] = { 39.5, 79.1, SOUTHERN_BARRENS },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),

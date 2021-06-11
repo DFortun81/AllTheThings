@@ -1430,45 +1430,45 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(29005, {	-- Candy Bucket — Southern Barrens, Desolation Hold, Horde
 				["isYearly"] = true,
-				["coord"] = { 40.7, 69.3, 199 },
+				["coord"] = { 40.7, 69.3, SOUTHERN_BARRENS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 199 },	-- Southern Barrens
+				["maps"] = { SOUTHERN_BARRENS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(29008, {	-- Candy Bucket — Southern Barrens, Fort Triumph, Alliance
 				["isYearly"] = true,
-				["coord"] = { 49.1, 68.5, 199 },
+				["coord"] = { 49.1, 68.5, SOUTHERN_BARRENS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 199 },	-- Southern Barrens
+				["maps"] = { SOUTHERN_BARRENS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(29006, {	-- Candy Bucket — Southern Barrens, Honor's Stand, Alliance
 				["isYearly"] = true,
-				["coord"] = { 39.0, 11.0, 199 },
+				["coord"] = { 39.0, 11.0, SOUTHERN_BARRENS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 199 },	-- Southern Barrens
+				["maps"] = { SOUTHERN_BARRENS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(29004, {	-- Candy Bucket — Southern Barrens, Hunter's Hill, Horde
 				["isYearly"] = true,
-				["coord"] = { 39.3, 20.1, 199 },
+				["coord"] = { 39.3, 20.1, SOUTHERN_BARRENS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 199 },	-- Southern Barrens
+				["maps"] = { SOUTHERN_BARRENS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(29007, {	-- Candy Bucket — Southern Barrens, Northwatch Hold, Alliance
 				["isYearly"] = true,
-				["coord"] = { 65.6, 46.6, 199 },
+				["coord"] = { 65.6, 46.6, SOUTHERN_BARRENS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 199 },	-- Southern Barrens
+				["maps"] = { SOUTHERN_BARRENS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},

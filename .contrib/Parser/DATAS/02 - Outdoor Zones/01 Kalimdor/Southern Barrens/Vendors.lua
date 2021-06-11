@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(199, {	-- Southern Barrens
+		m(SOUTHERN_BARRENS, {
 			n(VENDORS, {
 				n(44283, {	-- Camran <Mail Armor>
-					["coord"] = { 67.4, 48.2, 199 },
+					["coord"] = { 67.4, 48.2, SOUTHERN_BARRENS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(4799, {	-- Antiquated Cloak

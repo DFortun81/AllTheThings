@@ -555,8 +555,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8686,  {	-- High Mountain the Elder
 				["provider"] = { "n", 15588 },	-- Elder High Mountain
 				["isYearly"] = true,
-				["coord"] = { 41.6, 47.4, 199 },
-				["maps"] = { 199 },	-- Southern Barrens
+				["coord"] = { 41.6, 47.4, SOUTHERN_BARRENS },
+				["maps"] = { SOUTHERN_BARRENS },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(4, {	-- Elder High Mountain in Vendetta Point
