@@ -395,7 +395,9 @@ _.Zones =
 						}),
 					},
 				}),
-				ach(12576),		-- Tour of Duty: Vol'dun
+				ach(12576, {		-- Tour of Duty: Vol'dun
+					["u"] = PLAYER_VS_PLAYER,
+				}),
 				ach(12849, {	-- Treasures of Vol'dun
 					crit(1,  {	-- Ashvane Spoils
 						["description"] = "Hop into the mine cart to pick up the chest at the end of the tracks.",
