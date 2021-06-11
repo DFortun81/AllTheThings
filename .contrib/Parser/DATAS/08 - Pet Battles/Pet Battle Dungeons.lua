@@ -333,12 +333,12 @@ _.PetBattles =
 	}),
 	q(45539, {	-- Pet Battle Challenge: Wailing Caverns
 		["provider"] = { "n", 116781 },	-- Muyani
-		["coord"] = { 38.8, 68.2, 10 },
+		["coord"] = { 38.8, 68.2, NORTHERN_BARRENS },
 		["sourceQuest"] = 45423,	-- Wailing Critters
 		["isWeekly"] = true,
 		["lvl"] = 110,
 		["maps"] = {
-			10,		-- Northern Barrens
+			NORTHERN_BARRENS,
 			825,	-- Pet Dungeon
 		},
 		["g"] = {
@@ -359,7 +359,7 @@ _.PetBattles =
 			}),
 			q(45423, {	-- Wailing Critters
 				["provider"] = { "n", 116781 },	-- Muyani
-				["coord"] = { 38.8, 68.2, 10 },
+				["coord"] = { 38.8, 68.2, NORTHERN_BARRENS },
 				["sourceQuest"] = 45540,	-- A Call from the Caverns
 				["lvl"] = 110,
 				["g"] = {

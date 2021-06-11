@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(76, {	-- Azshara
+		m(AZSHARA, {
 			filter(101, {	-- Pet Battle
 				p(378, {	-- Rabbit
 					["crs"] = { 61080 },	-- Rabbit

@@ -113,7 +113,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 									crit(1,  {	-- Ashenvale
 										["coord"] = { 13.0, 47.0, 56 },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 63 },	-- Ashenvale
+										["maps"] = { ASHENVALE },
 									}),
 									crit(2,  {	-- Azuremyst Isle
 										["coord"] = { 44.0, 53.0, AZUREMYST_ISLE },
@@ -126,9 +126,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { BLOODMYST_ISLE },
 									}),
 									crit(4,  {	-- Darkshore
-										["coord"] = { 49.0, 23.0, 62 },
+										["coord"] = { 49.0, 23.0, DARKSHORE },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 62 },	-- Darkshore
+										["maps"] = { DARKSHORE },
 									}),
 									crit(5,  {	-- Desolace
 										["coord"] = { 65.0, 17.0, 66 },
@@ -136,9 +136,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { 66 },	-- Desolace
 									}),
 									crit(6,  {	-- Dustwallow Marsh
-										["coord"] = { 62.0, 40.0, 70 },
+										["coord"] = { 62.0, 40.0, DUSTWALLOW_MARSH },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 70 },	-- Dustwallow Marsh
+										["maps"] = { DUSTWALLOW_MARSH },
 									}),
 									crit(7,  {	-- Feralas
 										["coord"] = { 47.0, 44.0, FERALAS },
@@ -146,14 +146,14 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { FERALAS },
 									}),
 									crit(8,  {	-- Silithus
-										["coord"] = { 60.0, 33.0, 81 },
+										["coord"] = { 60.0, 33.0, SILITHUS },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 81 },	-- Silithus
+										["maps"] = { SILITHUS },
 									}),
 									crit(9,  {	-- Southern Barrens
-										["coord"] = { 48.0, 72.0, 199 },
+										["coord"] = { 48.0, 72.0, SOUTHERN_BARRENS },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 199 },	-- Southern Barrens
+										["maps"] = { SOUTHERN_BARRENS },
 									}),
 									crit(10, {	-- Stonetalon Mountains
 										["coord"] = { 49.0, 51.0, 65 },
@@ -381,14 +381,14 @@ _.Holidays = bubbleDown({["u"] = 21},
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									crit(1,  {	-- Ashenvale
-										["coord"] = { 51.6, 66.8, 63 },
+										["coord"] = { 51.6, 66.8, ASHENVALE },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 63 },	-- Ashenvale
+										["maps"] = { ASHENVALE },
 									}),
 									crit(2,  {	-- Azshara
-										["coord"] = { 60.4, 53.5, 76 },
+										["coord"] = { 60.4, 53.5, AZSHARA },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 76 },	-- Azshara
+										["maps"] = { AZSHARA },
 									}),
 									crit(3,  {	-- Desolace
 										["coord"] = { 26.1, 77.4, 66 },
@@ -401,9 +401,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { 1 },	-- Durotar
 									}),
 									crit(5,  {	-- Dustwallow Marsh
-										["coord"] = { 33.2, 30.8, 70 },
+										["coord"] = { 33.2, 30.8, DUSTWALLOW_MARSH },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 70 },	-- Dustwallow Marsh
+										["maps"] = { DUSTWALLOW_MARSH },
 									}),
 									crit(6,  {	-- Feralas
 										["coord"] = { 72.5, 47.6, FERALAS },
@@ -416,19 +416,19 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { 7 },	-- Mulgore
 									}),
 									crit(8,  {	-- Northern Barrens
-										["coord"] = { 49.9, 54.2, 10 },
+										["coord"] = { 49.9, 54.2, NORTHERN_BARRENS },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 10 },	-- Northern Barrens
+										["maps"] = { NORTHERN_BARRENS },
 									}),
 									crit(9,  {	-- Silithus
-										["coord"] = { 50.8, 41.8, 81 },
+										["coord"] = { 50.8, 41.8, SILITHUS },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 81 },	-- Silithus
+										["maps"] = { SILITHUS },
 									}),
 									crit(10, {	-- Southern Barrens
-										["coord"] = { 40.7, 67.2, 199 },
+										["coord"] = { 40.7, 67.2, SOUTHERN_BARRENS },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 199 },	-- Southern Barrens
+										["maps"] = { SOUTHERN_BARRENS },
 									}),
 									crit(11, {	-- Stonetalon Mountains
 										["coord"] = { 53.0, 62.4, 65 },
@@ -807,14 +807,14 @@ _.Holidays = bubbleDown({["u"] = 21},
 								["races"] = HORDE_ONLY,
 								["g"] = {
 									crit(1,  {	-- Ashenvale
-										["coord"] = { 51.4, 66.1, 63 },
+										["coord"] = { 51.4, 66.1, ASHENVALE },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 63 },	-- Ashenvale
+										["maps"] = { ASHENVALE },
 									}),
 									crit(2,  {	-- Azshara
-										["coord"] = { 60.8, 53.5, 76 },
+										["coord"] = { 60.8, 53.5, AZSHARA },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 76 },	-- Azshara
+										["maps"] = { AZSHARA },
 									}),
 									crit(3,  {	-- Desolace
 										["coord"] = { 26.1, 76.9, 66 },
@@ -827,9 +827,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { 1 },	-- Durotar
 									}),
 									crit(5,  {	-- Dustwallow Marsh
-										["coord"] = { 33.0, 30.0, 70 },
+										["coord"] = { 33.0, 30.0, DUSTWALLOW_MARSH },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 70 },	-- Dustwallow Marsh
+										["maps"] = { DUSTWALLOW_MARSH },
 									}),
 									crit(6,  {	-- Feralas
 										["coord"] = { 72.4, 47.8, FERALAS },
@@ -842,19 +842,19 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { 7 },	-- Mulgore
 									}),
 									crit(8,  {	-- Northern Barrens
-										["coord"] = { 50.0, 55.0, 10 },
+										["coord"] = { 50.0, 55.0, NORTHERN_BARRENS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 10 },	-- Northern Barrens
+										["maps"] = { NORTHERN_BARRENS },
 									}),
 									crit(9,  {	-- Silithus
-										["coord"] = { 50.9, 41.3, 81 },
+										["coord"] = { 50.9, 41.3, SILITHUS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 81 },	-- Silithus
+										["maps"] = { SILITHUS },
 									}),
 									crit(10, {	-- Southern Barrens
-										["coord"] = { 41.0, 68.0, 199 },
+										["coord"] = { 41.0, 68.0, SOUTHERN_BARRENS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 199 },	-- Southern Barrens
+										["maps"] = { SOUTHERN_BARRENS },
 									}),
 									crit(11, {	-- Stonetalon Mountains
 										["coord"] = { 52.9, 62.5, 65 },
@@ -1087,9 +1087,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 								["races"] = HORDE_ONLY,
 								["g"] = {
 									crit(1,  {	-- Ashenvale
-										["coord"] = { 86.7, 41.4, 63 },
+										["coord"] = { 86.7, 41.4, ASHENVALE },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 63 },	-- Ashenvale
+										["maps"] = { ASHENVALE },
 									}),
 									crit(2,  {	-- Azuremyst Isle
 										["coord"] = { 44.7, 52.5, AZUREMYST_ISLE },
@@ -1102,9 +1102,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { BLOODMYST_ISLE },
 									}),
 									crit(4,  {	-- Darkshore
-										["coord"] = { 49.0, 22.5, 62 },
+										["coord"] = { 49.0, 22.5, DARKSHORE },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 62 },	-- Darkshore
+										["maps"] = { DARKSHORE },
 									}),
 									crit(5,  {	-- Desolace
 										["coord"] = { 65.8, 17.0, 66 },
@@ -1112,9 +1112,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { 66 },	-- Desolace
 									}),
 									crit(6,  {	-- Dustwallow Marsh
-										["coord"] = { 62.1, 40.3, 70 },
+										["coord"] = { 62.1, 40.3, DUSTWALLOW_MARSH },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 70 },	-- Dustwallow Marsh
+										["maps"] = { DUSTWALLOW_MARSH },
 									}),
 									crit(7,  {	-- Feralas
 										["coord"] = { 46.6, 43.8, FERALAS },
@@ -1122,14 +1122,14 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { FERALAS },
 									}),
 									crit(8,  {	-- Silithus
-										["coord"] = { 60.5, 33.4, 81 },
+										["coord"] = { 60.5, 33.4, SILITHUS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 81 },	-- Silithus
+										["maps"] = { SILITHUS },
 									}),
 									crit(9,  {	-- Southern Barrens
-										["coord"] = { 48.2, 72.4, 199 },
+										["coord"] = { 48.2, 72.4, SOUTHERN_BARRENS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 199 },	-- Southern Barrens
+										["maps"] = { SOUTHERN_BARRENS },
 									}),
 									crit(10, {	-- Stonetalon Mountains
 										["coord"] = { 49.6, 51.1, 65 },

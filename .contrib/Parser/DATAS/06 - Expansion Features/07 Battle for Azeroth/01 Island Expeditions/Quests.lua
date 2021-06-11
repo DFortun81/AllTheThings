@@ -195,7 +195,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				i(163485, {	-- Druidic Fur
-					["coord"] = { 52.6, 40.6, 80 },
+					["coord"] = { 52.6, 40.6, MOONGLADE },
 					["g"] = {
 						q(53181, {	-- Druidic Fur
 							["provider"] = { "n", 12042 },	-- Loganaar <Druid Trainer>
@@ -206,7 +206,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				i(163476, {	-- Elemental Core
-					["coord"] = { 92.7, 42.0, 76 },	-- Verify Coords/npcid
+					["coord"] = { 92.7, 42.0, AZSHARA },	-- Verify Coords/npcid
 					["g"] = {
 						q(53169, {	-- Elemental Core
 							["provider"] = { "n", 13278 },	-- Duke Hydraxis
@@ -308,7 +308,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				i(163486, {	-- Strangling Root
-					["coord"] = { 36.2, 41.8, 80 },
+					["coord"] = { 36.2, 41.8, MOONGLADE },
 					["g"] = {
 						q(53182, {	-- Strangling Root
 							["provider"] = { "n", 11832 },	-- Keeper Remulos
@@ -331,8 +331,8 @@ _.ExpansionFeatures =
 				}),
 				i(163479, {	-- Venture Co. Business Plan
 					["coords"] = {
-						{ 50.2, 59.2, 10 },
-						{ 66.8, 72.6, 10 },
+						{ 50.2, 59.2, NORTHERN_BARRENS },
+						{ 66.8, 72.6, NORTHERN_BARRENS },
 					},
 					["g"] = {
 						q(53172, {	-- Venture Co. Business Plan
@@ -369,7 +369,7 @@ _.ExpansionFeatures =
 				}),
 				i(163487, {	-- Wriggling Mass
 					["description"] = "Can be turned in at old or new Silithus.",
-					["coord"] = { 40.0, 76.6, 81 },
+					["coord"] = { 40.0, 76.6, SILITHUS },
 					["g"] = {
 						q(53183, {	-- Wriggling Mass
 							["provider"] = { "n", 132886 },	-- Twilight Hermit
@@ -382,7 +382,7 @@ _.ExpansionFeatures =
 				-- Rep Items
 				i(163217, {	-- Azeroth's Tear [Both]
 					["description"] = "|CFFFF0000Turn in to Magni Bronzebeard in Silithus for Champions of Azeroth rep.|r",
-					["coord"] = { 42.2, 44.2, 81 },
+					["coord"] = { 42.2, 44.2, SILITHUS },
 					["g"] = {
 						q(53112, {	-- Azeroth's Tear
 							["repeatable"] = true,
@@ -480,7 +480,7 @@ _.ExpansionFeatures =
 				}),
 				i(163621, {	-- Rusted Horde Insignia
 					["description"] = "|CFFFF0000Turn in to Ransa Greyfeather in Zuldazar for Honorbound rep.|r",
-					["coord"] = { 58, 62.6, 862 },
+					["coord"] = { 58.0, 62.6, 862 },
 					["g"] = {
 						q(53116, {	-- Rusted Horde Insignia
 							["repeatable"] = true,

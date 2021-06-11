@@ -37,19 +37,25 @@ _.Zones =
 				n(16638, {	-- Deynna <Tailoring Supplies>
 					["coord"] = { 56.0, 51.8, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_TAILORING_RECIPES, {
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 3364}, -- Borya <Tailoring Supplies>
+					},
+					["groups"] = {
 						i(21892),	-- Pattern: Bolt of Imbued Netherweave
 						i(21894, {	-- Pattern: Bolt of Soulcloth
 							["isLimited"] = true,
 						}),
 						i(21896),	-- Pattern: Netherweave Robe
 						i(21897),	-- Pattern: Netherweave Tunic
-					}),
+					},
 				}),
 				n(16670, {	-- Eriden <Blacksmithing Supplies>
 					["coord"] = { 80.6, 37.0, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_BLACKSMITHING_RECIPES, {
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 3356}, -- Sumi <Blacksmithing Supplies>
+					},
+					["groups"] = {
 						i(23591, {	-- Plans: Adamantite Cleaver
 							["isLimited"] = true,
 						}),
@@ -62,12 +68,15 @@ _.Zones =
 						i(23593, {	-- Plans: Adamantite Rapier
 							["isLimited"] = true,
 						}),
-					}),
+					},
 				}),
 				n(16624, {	-- Gelanthis <Jewelcrafting Supplies>
 					["coord"] = { 90.8, 73.6, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_JEWELCRAFTING_RECIPES, {
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 50482}, -- Marith Lazuria <Jewelcrafting Supplies>
+					},
+					["groups"] = {
 						i(20854, {	-- Design: Amulet of the Moon
 							["isLimited"] = true,
 						}),
@@ -80,12 +89,25 @@ _.Zones =
 						i(20975, {	-- Design: The Jade Eye
 							["isLimited"] = true,
 						}),
-					}),
+					},
 				}),
 				n(16635, {	-- Lyna <Enchanting Supplies>
 					["coord"] = { 70.0, 24.6, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_ENCHANTING_RECIPES, LYNA_GROUPS),
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 3346}, -- Kithas <Enchanting Supplies>
+					},
+					["groups"] = {
+						i(22565, {	-- Formula: Large Prismatic Shard
+							["isLimited"] = true,
+						}),
+						i(22562, {	-- Formula: Superior Mana Oil
+							["isLimited"] = true,
+						}),
+						i(22563, {	-- Formula: Superior Wizard Oil
+							["isLimited"] = true,
+						}),
+					},
 				}),
 				n(16641, {	-- Melaris <Alchemy Supplies>
 					["coord"] = { 67.0, 19.2, SILVERMOON_CITY },
@@ -156,7 +178,10 @@ _.Zones =
 				n(16689, {	-- Zaralda <Leatherworking Supplies>
 					["coord"] = { 84.6, 78.8, SILVERMOON_CITY },
 					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_LEATHERWORKING_RECIPES, {
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 3366}, -- Tamar <Leatherworking Supplies>
+					},
+					["groups"] = {
 						i(25726, {	-- Pattern: Comfortable Insoles
 							["spellID"] = 32482,	-- Comfortable Insoles
 							["requireSkill"] = LEATHERWORKING,
@@ -170,7 +195,7 @@ _.Zones =
 							["isLimited"] = true,
 							["f"] = 200,
 						}),
-					}),
+					},
 				}),
 				n(16623, {	-- Zyandrel <Cloth Armor Merchant>
 					["coord"] = { 64.8, 48.6, SILVERMOON_CITY },

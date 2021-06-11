@@ -6,7 +6,7 @@ _.ExpansionFeatures =
 {
 	tier(8, {	-- Battle for Azeroth
 		n(-10057, {	-- War Effort
-			m(62, {	-- Darkshore
+			m(DARKSHORE, {
 				n(QUESTS, {
 					q(54050, {	-- Aftermath
 						["provider"] = { "n", 146601 },	-- Sira Moonwarden
@@ -32,12 +32,12 @@ _.ExpansionFeatures =
 					q(54878, {	-- Buzzkill (A)
 						["provider"] = { "n", 149631 },	-- Wizbang Cranktoggle
 						["lvl"] = 120,
-						["coord"] = { 46.3, 35.1, 62 },
+						["coord"] = { 46.3, 35.1, DARKSHORE },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(54845, {	-- Bullkill (H)
 						["lvl"] = 120,
-						["coord"] = { 46.4, 35.0, 62 },
+						["coord"] = { 46.4, 35.0, DARKSHORE },
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 149412 },	-- Zarvik Blastwix
 					}),
@@ -59,26 +59,26 @@ _.ExpansionFeatures =
 					q(54875, {	-- Remaining Threats (Alliance)
 						["provider"] = { "n", 149623 },	-- Commander Lorna Crowley
 						["lvl"] = 120,
-						["coord"] = { 46.8, 35.4, 62 },
+						["coord"] = { 46.8, 35.4, DARKSHORE },
 						["races"] = ALLIANCE_ONLY,
 						["isWeekly"] = true,
 					}),
 					q(54843, {	-- Remaining Threats (Horde)
 						["provider"] = { "n", 149410 },	-- Deathstalker Commander Belmont
 						["lvl"] = 120,
-						["coord"] = { 46.9, 35.5, 62 },
+						["coord"] = { 46.9, 35.5, DARKSHORE },
 						["races"] = HORDE_ONLY,
 						["isWeekly"] = true,
 					}),
 					q(54876, {	-- Tapping the Breach (A)
 						["provider"] = { "n", 149624 },	-- Thisalee Crow
 						["lvl"] = 120,
-						["coord"] = { 46.4, 36.6, 62 },
+						["coord"] = { 46.4, 36.6, DARKSHORE },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(54844, {	-- Tapping the Breach (H)
 						["lvl"] = 120,
-						["coord"] = { 47.8, 36.2, 62 },
+						["coord"] = { 47.8, 36.2, DARKSHORE },
 						["races"] = HORDE_ONLY,
 						["provider"] = { "n", 149411 },	-- Dark Ranger Velonara
 					}),

@@ -21,14 +21,14 @@ _.ExpansionFeatures =
 								629,		-- Aegwynn's Gallery (Dalaran)
 								115,		-- New Hearthglen in Northrend
 								435,		-- Scarlet Halls
-								476,		-- Scholomance
+								SCHOLOMANCE,
 								477,		-- Scholomance
 								478,		-- Scholomance
 								479,		-- Scholomance
 								634,		-- Stormheim
 								680,		-- Suramar
 								431, 432,	-- Scarlet Halls
-								350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366,	-- Karazhan
+								KARAZHAN, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366,	-- Karazhan
 							},
 							["g"] = {
 								q(44342, {	-- Volume VI
@@ -70,7 +70,7 @@ _.ExpansionFeatures =
 									["provider"] = { "n", 58633 },	-- Instructor Chillheart
 									["coords"] = {
 										{ 69.0, 72.9, 22 },		-- Scholomance entrance
-										{ 58.8, 84.0, 476 },	--	Actual volume inside the dungeon
+										{ 58.8, 84.0, SCHOLOMANCE },	--	Actual volume inside the dungeon
 									},
 								}),
 								q(44345, {	-- Volume VII

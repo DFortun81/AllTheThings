@@ -64,7 +64,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 							}),
 							crit(3, {	-- Brother Karman in Theramore
 								["description"] = "If Theramore is phased, talk to Zidormi to the west of the city.",
-								["coord"] = { 67.40, 47.41, 70 },
+								["coord"] = { 67.40, 47.41, DUSTWALLOW_MARSH },
 							}),
 							crit(4, {	-- Brother Kristoff in Stormwind
 								["coord"] = { 55.04, 54.20, 84 },

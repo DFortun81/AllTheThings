@@ -4,11 +4,11 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(62, {	-- Darkshore
+		m(DARKSHORE, {
 			n(QUESTS, {
 				q(13554, {	-- A Cure In The Dark
 					["model"] = 197760,
-					["coord"] = { 54.1, 29.2, 62 },
+					["coord"] = { 54.1, 29.2, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 194122 },	-- Buzzbox 723
 					["sourceQuest"] = 13528,	-- Buzzbox 723
@@ -20,7 +20,7 @@ _.Zones =
 				}),
 				q(13564, {	-- A Lost Companion
 					["provider"] = { "n", 32960 },	-- Volcor
-					["coord"] = { 50.9, 18.0, 62 },
+					["coord"] = { 50.9, 18.0, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						13554,	-- A Cure In The Dark
@@ -37,7 +37,7 @@ _.Zones =
 				}),
 				q(13563, {	-- A Love Eternal
 					["provider"] = { "n", 32959 },	-- Cerellean Whiteclaw
-					["coord"] = { 50.8, 17.8, 62 },
+					["coord"] = { 50.8, 17.8, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13529,	-- The Corruption's Source
 					["g"] = {
@@ -48,7 +48,7 @@ _.Zones =
 				}),
 				q(13910, {	-- A New Home
 					["provider"] = { "n", 34340 },	-- Archaeologist Groff
-					["coord"] = { 37.6, 82.8, 62 },
+					["coord"] = { 37.6, 82.8, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13909,	-- Got Some Flotsam?
 					["g"] = {
@@ -58,7 +58,7 @@ _.Zones =
 				}),
 				q(13537, {	-- A Taste for Grouper
 					["provider"] = { "n", 33175 },	-- Johnathan Staats
-					["coord"] = { 52.3, 17.9, 62 },
+					["coord"] = { 52.3, 17.9, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["requireSkill"] = FISHING,
 					["sourceQuests"] = {
@@ -68,14 +68,14 @@ _.Zones =
 				}),
 				q(13831, {	-- A Troubling Prescription
 					["model"] = 200767,
-					["coord"] = { 57.4, 33.7, 62 },
+					["coord"] = { 57.4, 33.7, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 194714 },	-- Disgusting Workbench
 					["sourceQuest"] = 13528,	-- Buzzbox 723
 				}),
 				q(13542, {	-- Against the Wind
 					["provider"] = { "n", 3694 },	-- Sentinel Selarin
-					["coord"] = { 42.5, 45.1, 62 },
+					["coord"] = { 42.5, 45.1, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(52593),	-- Becalmed Bracers
@@ -85,7 +85,7 @@ _.Zones =
 				}),
 				q(13560, {	-- An Ocean Not So Deep
 					["provider"] = { "n", 32979 },	-- Gorbold Steelhand
-					["coord"] = { 51.0, 19.1, 62 },
+					["coord"] = { 51.0, 19.1, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13569,	-- The Ritual Bond
 					["g"] = {
@@ -95,13 +95,13 @@ _.Zones =
 				}),
 				q(13925, {	-- An Ounce of Prevention
 					["provider"] = { "n", 34301 },	-- Kathrena Winterwisp
-					["coord"] = { 45.1, 74.6, 62 },
+					["coord"] = { 45.1, 74.6, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13882,	-- The Seeds of Life
 				}),
 				q(13578, {	-- Aroom's Farewell
 					["provider"] = { "n", 33119 },	-- Aroom
-					["coord"] = { 45.5, 48.4, 62 },
+					["coord"] = { 45.5, 48.4, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13577,	-- The Last Wildkin
 					["g"] = {
@@ -112,7 +112,7 @@ _.Zones =
 				}),
 				q(26408, {	-- Ashes in Ashenvale
 					["provider"] = { "n", 34402 },	-- Balren of the Claw
-					["coord"] = { 45.3, 75.1, 62 },
+					["coord"] = { 45.3, 75.1, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["sourceQuest"] = 13897,	-- The Battle for Darkshore
@@ -138,20 +138,20 @@ _.Zones =
 				q(53129, {	-- Bloodied Sentinel's Glaive (Horde)
 					["lvl"] = 120,
 					["model"] = 1118879,
-					["coord"] = { 45.2, 17.9, 62 },
+					["coord"] = { 45.2, 17.9, DARKSHORE },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 296536 },	-- Bloodied Sentinel's Glaive
 				}),
 				q(53130, {	-- Bloodied Sentinel's Glaive (Alliance)
 					["lvl"] = 120,
 					["model"] = 1118879,
-					["coord"] = { 45.2, 17.9, 62 },
+					["coord"] = { 45.2, 17.9, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 296536 },	-- Bloodied Sentinel's Glaive
 				}),
 				q(13521, {	-- Buzzbox 413
 					["provider"] = { "n", 32977 },	-- Wizbang Cranktoggle
-					["coord"] = { 51.1, 19.6, 62 },
+					["coord"] = { 51.1, 19.6, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						13518,	-- The Last Wave of Survivors
@@ -160,13 +160,13 @@ _.Zones =
 				}),
 				q(13528, {	-- Buzzbox 723
 					["provider"] = { "n", 32977 },	-- Wizbang Cranktoggle
-					["coord"] = { 51.1, 19.6, 62 },
+					["coord"] = { 51.1, 19.6, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13527,	-- No Accounting for Taste
 				}),
 				q(13558, {	-- Call Down the Thunder
 					["provider"] = { "n", 6887 },	-- Yalda
-					["coord"] = { 39.0, 43.2, 62 },
+					["coord"] = { 39.0, 43.2, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13547,	-- Coaxing the Spirits
 					["g"] = {
@@ -177,7 +177,7 @@ _.Zones =
 				}),
 				q(13584, {	-- Calming the Earth
 					["provider"] = { "n", 33112 },	-- Selenn
-					["coord"] = { 44.4, 56.7, 62 },
+					["coord"] = { 44.4, 56.7, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13579,	-- Protector of Ameth'aran
 					["g"] = {
@@ -195,18 +195,18 @@ _.Zones =
 				}),
 				q(13545, {	-- Cleansing the Afflicted
 					["provider"] = { "n", 32967 },	-- Elder Brolg
-					["coord"] = { 43.5, 81.0, 62 },
+					["coord"] = { 43.5, 81.0, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13544,	-- The Bear's Blessing
 				}),
 				q(13547, {	-- Coaxing the Spirits
 					["provider"] = { "n", 6887 },	-- Yalda
-					["coord"] = { 39.0, 43.2, 62 },
+					["coord"] = { 39.0, 43.2, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13881, {	-- Consumed
 					["provider"] = { "n", 34301 },	-- Kathrena Winterwisp
-					["coord"] = { 45.1, 74.6, 62 },
+					["coord"] = { 45.1, 74.6, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(6124,  {	-- Curing the Sick
@@ -220,7 +220,7 @@ _.Zones =
 				}),
 				q(13507, {	-- Denying Manpower
 					["provider"] = { "n", 32965 },	-- Sentinel Tysha Moonblade
-					["coord"] = { 58.8, 19.4, 62 },
+					["coord"] = { 58.8, 19.4, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						13504,	-- Shatterspear Laborers
@@ -245,13 +245,13 @@ _.Zones =
 				}),
 				q(13582, {	-- Elune's Fire
 					["provider"] = { "n", 33119 },	-- Aroom
-					["coord"] = { 45.5, 48.4, 62 },
+					["coord"] = { 45.5, 48.4, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13578,	-- Aroom's Farewell
 				}),
 				q(13515, {	-- Ending the Threat
 					["provider"] = { "n", 33178 },	-- Huntress Sandrya Moonfall
-					["coord"] = { 72.2, 19.1, 62 },
+					["coord"] = { 72.2, 19.1, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13590,	-- The Front Line
 				}),
@@ -290,19 +290,19 @@ _.Zones =
 				}),
 				q(13909, {	-- Got Some Flotsam?
 					["provider"] = { "n", 34340 },	-- Archaeologist Groff
-					["coord"] = { 37.6, 82.8, 62 },
+					["coord"] = { 37.6, 82.8, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13907,	-- Sweeping Clean the Ruins
 				}),
 				q(13599, {	-- Grimclaw's Return
 					["provider"] = { "n", 33048 },	-- Keeper Karithus
-					["coord"] = { 42.9, 39.0, 62 },
+					["coord"] = { 42.9, 39.0, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13569,	-- The Ritual Bond
 				}),
 				q(13601, {	-- In Aid of the Refugees
 					["provider"] = { "n", 32912 },	-- Sentinel Lendra
-					["coord"] = { 50.3, 20.3, 62 },
+					["coord"] = { 50.3, 20.3, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13596,	-- Twilight Plans
 				}),
@@ -311,13 +311,13 @@ _.Zones =
 				}),
 				q(13885, {	-- In Defense of Darkshore
 					["provider"] = { "n", 34301 },	-- Kathrena Winterwisp
-					["coord"] = { 45.1, 74.6, 62 },
+					["coord"] = { 45.1, 74.6, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13925,	-- An Ounce of Prevention
 				}),
 				q(13572, {	-- Jadefire Braziers
 					["provider"] = { "n", 32968 },	-- Gren Tornfur
-					["coord"] = { 43.5, 81.0, 62 },
+					["coord"] = { 43.5, 81.0, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13544,	-- The Bear's Blessing
 					["g"] = {
@@ -328,18 +328,18 @@ _.Zones =
 				}),
 				q(13892, {	-- Leave No Tracks
 					["provider"] = { "n", 34402 },	-- Balren of the Claw
-					["coord"] = { 45.3, 75.1, 62 },
+					["coord"] = { 45.3, 75.1, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13940, {	-- Leaving the Dream
 					["provider"] = { "n", 33166 },	-- Thessera
-					["coord"] = { 49.1, 56.9, 62 },
+					["coord"] = { 49.1, 56.9, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13587,	-- The Waking Nightmare
 				}),
 				q(13573, {	-- Malfurion's Return
 					["provider"] = { "n", 32987 },	-- Corvine Moonrise
-					["coord"] = { 42.6, 45.1, 62 },
+					["coord"] = { 42.6, 45.1, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(951,   {	-- Mathystra Relics
@@ -353,13 +353,13 @@ _.Zones =
 				}),
 				q(13902, {	-- Mounting the Offensive
 					["provider"] = { "n", 33091 },	-- Malfurion Stormrage
-					["coord"] = { 43.6, 53.4, 62 },
+					["coord"] = { 43.6, 53.4, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13588,	-- The Eye of All Storms
 				}),
 				q(13576, {	-- Mutual Aid
 					["provider"] = { "n", 33117 },	-- Elder Brownpaw
-					["coord"] = { 40.9, 56.4, 62 },
+					["coord"] = { 40.9, 56.4, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13575,	-- The Land is in Their Blood
 					["g"] = {
@@ -369,20 +369,20 @@ _.Zones =
 				}),
 				q(13953, {	-- Naga In Our Midst
 					["provider"] = { "n", 34498 },	-- Darkscale Assassin
-					["coord"] = { 45.5, 71.6, 62 },
+					["coord"] = { 45.5, 71.6, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13895,	-- The Slumbering Ancients
 				}),
 				q(13527, {	-- No Accounting for Taste
 					["model"] = 197760,
-					["coord"] = { 53.2, 19.6, 62 },
+					["coord"] = { 53.2, 19.6, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 194105 },	-- Buzzbox 413
 					["sourceQuest"] = 13521,	-- Buzzbox 413
 				}),
 				q(13513, {	-- On the Brink
 					["provider"] = { "n", 32966 },	-- Balthule Shadowstrike
-					["coord"] = { 58.8, 19.5, 62 },
+					["coord"] = { 58.8, 19.5, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						13507,	-- Denying Manpower
@@ -391,18 +391,18 @@ _.Zones =
 				}),
 				q(13511, {	-- One Bitter Wish
 					["provider"] = { "n", 33055 },	-- Alanndarian Nightsong
-					["coord"] = { 63.7, 5.9, 62 },
+					["coord"] = { 63.7, 5.9, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13508,	-- Swift Response
 				}),
 				q(5713,  {	-- One Shot. One Kill.
 					["provider"] = { "n", 11711 },	-- Sentinel Aynasha
-					["coord"] = { 47.7, 88.9, 62 },
+					["coord"] = { 47.7, 88.9, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13523, {	-- Power Over the Tides
 					["provider"] = { "n", 32932 },	-- Moon Priestess Tharill
-					["coord"] = { 44.5, 30.7, 62 },
+					["coord"] = { 44.5, 30.7, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(55127),	-- Tharill's Blessing
@@ -412,7 +412,7 @@ _.Zones =
 				}),
 				q(13579, {	-- Protector of Ameth'Aran
 					["provider"] = { "n", 33091 },	-- Malfurion Stormrage
-					["coord"] = { 43.6, 53.4, 62 },
+					["coord"] = { 43.6, 53.4, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13506, {	-- Reason to Worry
@@ -423,7 +423,7 @@ _.Zones =
 				}),
 				q(13570, {	-- Remembrance of Auberdine
 					["provider"] = { "n", 32959 },	-- Cerellean Whiteclaw
-					["coord"] = { 50.1, 19.5, 62 },
+					["coord"] = { 50.1, 19.5, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13591,	-- Disturbing Connections
 					["g"] = {
@@ -436,13 +436,13 @@ _.Zones =
 				}),
 				q(13505, {	-- Remnants of the Highborne
 					["provider"] = { "n", 32966 },	-- Balthule Shadowstrike
-					["coord"] = { 58.8, 19.5, 62 },
+					["coord"] = { 58.8, 19.5, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13589,	-- The Shatterspear Invaders
 				}),
 				q(26759, {	-- Return to Nessa
 					["provider"] = { "n", 4200 },	-- Laird
-					["coord"] = { 36.8, 44.2, 62 },
+					["coord"] = { 36.8, 44.2, DARKSHORE },
 					["sourceQuest"] = 26758,	-- Flight to Auberdine
 					["races"] = { NIGHTELF },
 					["lvl"] = 10,
@@ -450,7 +450,7 @@ _.Zones =
 				}),
 				q(13566, {	-- Ritual Materials
 					["provider"] = { "n", 33048 },	-- Keeper Karithus
-					["coord"] = { 42.9, 39.0, 62 },
+					["coord"] = { 42.9, 39.0, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13564,	-- A Lost Companion
 				}),
@@ -461,24 +461,24 @@ _.Zones =
 				}),
 				q(13504, {	-- Shatterspear Laborers
 					["provider"] = { "n", 32965 },	-- Sentinel Tysha Moonblade
-					["coord"] = { 58.8, 19.4, 62 },
+					["coord"] = { 58.8, 19.4, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13589,	-- The Shatterspear Invaders
 				}),
 				q(13561, {	-- Solace for the Highborne
 					["provider"] = { "n", 33177 },	-- Arya Autumnlight
-					["coord"] = { 46.8, 33.2, 62 },
+					["coord"] = { 46.8, 33.2, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13893, {	-- Soggoth and Kronn
 					["provider"] = { "n", 34340 },	-- Archaeologist Groff
-					["coord"] = { 37.6, 82.8, 62 },
+					["coord"] = { 37.6, 82.8, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13896,	-- Unearthed Knowledge
 				}),
 				q(13580, {	-- Soothing the Elements
 					["provider"] = { "n", 33117 },	-- Elder Brownpaw
-					["coord"] = { 40.9, 56.4, 62 },
+					["coord"] = { 40.9, 56.4, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13576,	-- Mutual Aid
 					["g"] = {
@@ -530,13 +530,13 @@ _.Zones =
 					},
 				}),
 				q(13948, {	-- Stepping Up Surveillance
-					["coord"] = { 40.5, 84.2, 62 },
+					["coord"] = { 40.5, 84.2, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13892,	-- Leave No Tracks
 				}),
 				q(13512, {	-- Strategic Strikes
 					["provider"] = { "n", 32963 },	-- Lieutenant Morra Starbreeze
-					["coord"] = { 58.9, 19.4, 62 },
+					["coord"] = { 58.9, 19.4, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						13507,	-- Denying Manpower
@@ -548,23 +548,23 @@ _.Zones =
 				}),
 				q(13912, {	-- Swamped Secrets
 					["provider"] = { "n", 34342 },	-- Jr. Archaeologist Ferd
-					["coord"] = { 37.7, 82.9, 62 },
+					["coord"] = { 37.7, 82.9, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13907, {	-- Sweeping Clean the Ruins
 					["provider"] = { "n", 34340 },	-- Archaeologist Groff
-					["coord"] = { 37.6, 82.8, 62 },
+					["coord"] = { 37.6, 82.8, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13508, {	-- Swift Response
 					["provider"] = { "n", 32963 },	-- Lieutenant Morra Starbreeze
-					["coord"] = { 58.9, 19.4, 62 },
+					["coord"] = { 58.9, 19.4, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13506,	-- Reason to Worry
 				}),
 				q(13585, {	-- Sworn to Protect
 					["provider"] = { "n", 33112 },	-- Selenn
-					["coord"] = { 44.4, 56.7, 62 },
+					["coord"] = { 44.4, 56.7, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13584,	-- Calming the Earth
 				}),
@@ -598,7 +598,7 @@ _.Zones =
 				}),
 				q(13911, {	-- The Absent-Minded Prospector
 					["provider"] = { "n", 34343 },	-- Prospector Remtravel
-					["coord"] = { 37.6, 82.9, 62 },
+					["coord"] = { 37.6, 82.9, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(52592),	-- Woolgathering Gloves
@@ -609,7 +609,7 @@ _.Zones =
 				}),
 				q(13514, {	-- The Ancients' Ire
 					["provider"] = { "n", 33176 },	-- Kerlonian Evershade
-					["coord"] = { 69.0, 19.2, 62 },
+					["coord"] = { 69.0, 19.2, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						13513,	-- On the Brink
@@ -618,7 +618,7 @@ _.Zones =
 				}),
 				q(13897, {	-- The Battle for Darkshore
 					["provider"] = { "n", 34422 },	-- Malfurion Stormrage
-					["coord"] = { 32.7, 84.2, 62 },
+					["coord"] = { 32.7, 84.2, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "If you don't pick this quest up promptly after the event ends, Malfurion will despawn and you will have to repeat the event to get the quest.",
 					["sourceQuest"] = 13900,	-- The Offering to Azshara
@@ -630,13 +630,13 @@ _.Zones =
 				}),
 				q(13544, {	-- The Bear's Blessing
 					["provider"] = { "n", 32967 },	-- Elder Brolg
-					["coord"] = { 43.5, 81.0, 62 },
+					["coord"] = { 43.5, 81.0, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13526,	-- The Bear's Paw
 				}),
 				q(13526, {	-- The Bear's Paw
 					["provider"] = { "n", 32967 },	-- Elder Brolg
-					["coord"] = { 43.5, 81.0, 62 },
+					["coord"] = { 43.5, 81.0, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13525,	-- What's Happening to the Blackwood Furbolg?
 				}),
@@ -652,13 +652,13 @@ _.Zones =
 				}),
 				q(13581, {	-- The Blackwood Pledge
 					["provider"] = { "n", 33117 },	-- Elder Brownpaw
-					["coord"] = { 40.9, 56.4, 62 },
+					["coord"] = { 40.9, 56.4, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13580,	-- Soothing the Elements
 				}),
 				q(13520, {	-- The Boon of the Seas
 					["provider"] = { "n", 32972 },	-- Serendia Oakwhisper
-					["coord"] = { 51.8, 18.0, 62 },
+					["coord"] = { 51.8, 18.0, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						13518,	-- The Last Wave of Survivors
@@ -671,7 +671,7 @@ _.Zones =
 				}),
 				q(13529, {	-- The Corruption's Source
 					["provider"] = { "n", 32978 },	-- Tharnarium Treetender
-					["coord"] = { 56.7, 30.0, 62 },
+					["coord"] = { 56.7, 30.0, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13528,	-- Buzzbox 723
 					["g"] = {
@@ -683,13 +683,13 @@ _.Zones =
 				}),
 				q(13899, {	-- The Darkscale Warlord
 					["provider"] = { "n", 34402 },	-- Balren of the Claw
-					["coord"] = { 45.3, 75.1, 62 },
+					["coord"] = { 45.3, 75.1, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13953,	-- Naga in Our Midst
 				}),
 				q(13546, {	-- The Defiler
 					["provider"] = { "n", 32967 },	-- Elder Brolg
-					["coord"] = { 43.5, 81.0, 62 },
+					["coord"] = { 43.5, 81.0, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13545,	-- Cleansing the Afflicted
 					["g"] = {
@@ -701,7 +701,7 @@ _.Zones =
 				}),
 				q(13891, {	-- The Devourer of Darkshore
 					["provider"] = { "n", 34301 },	-- Kathrena Winterwisp
-					["coord"] = { 45.1, 74.6, 62 },
+					["coord"] = { 45.1, 74.6, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13885,	-- In Defense of Darkshore
 					["g"] = {
@@ -713,7 +713,7 @@ _.Zones =
 				}),
 				q(13586, {	-- The Emerald Dream
 					["provider"] = { "n", 33091 },	-- Malfurion Stormrage
-					["coord"] = { 43.6, 53.4, 62 },
+					["coord"] = { 43.6, 53.4, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						13585,	-- Sworn to Protect
@@ -723,7 +723,7 @@ _.Zones =
 				}),
 				q(13588, {	-- The Eye of All Storms
 					["provider"] = { "n", 33091 },	-- Malfurion Stormrage
-					["coord"] = { 43.6, 53.4, 62 },
+					["coord"] = { 43.6, 53.4, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13940,	-- Leaving the Dream
 					["g"] = {
@@ -733,7 +733,7 @@ _.Zones =
 				}),
 				q(13562, {	-- The Final Flame of Bashal'Aran
 					["provider"] = { "n", 32971 },	-- Ranger Glynda Nal'Shea
-					["coord"] = { 50.2, 19.6, 62 },
+					["coord"] = { 50.2, 19.6, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13529,	-- The Corruption's Source
 				}),
@@ -749,7 +749,7 @@ _.Zones =
 				}),
 				q(13590, {	-- The Front Line
 					["provider"] = { "n", 32963 },	-- Lieutenant Morra Starbreeze
-					["coord"] = { 58.9, 19.4, 62 },
+					["coord"] = { 58.9, 19.4, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						13513,	-- On the Brink
@@ -758,12 +758,12 @@ _.Zones =
 				}),
 				q(13575, {	-- The Land Is in Their Blood
 					["provider"] = { "n", 33091 },	-- Malfurion Stormrage
-					["coord"] = { 43.6, 53.4, 62 },
+					["coord"] = { 43.6, 53.4, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13605, {	-- The Last Refugee
 					["provider"] = { "n", 33232 },	-- Archaeologist Hollee
-					["coord"] = { 38.5, 42.4, 62 },
+					["coord"] = { 38.5, 42.4, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(52586),	-- Archaeologist's Dungarees
@@ -774,7 +774,7 @@ _.Zones =
 				}),
 				q(13518, {	-- The Last Wave of Survivors
 					["provider"] = { "n", 32973 },	-- Dentaria Silverglade
-					["coord"] = { 51.7, 18.0, 62 },
+					["coord"] = { 51.7, 18.0, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						28490,	-- Hero's Call: Darkshore!
@@ -784,12 +784,12 @@ _.Zones =
 				}),
 				q(13577, {	-- The Last Wildkin
 					["provider"] = { "n", 33091 },	-- Malfurion Stormrage
-					["coord"] = { 43.6, 53.4, 62 },
+					["coord"] = { 43.6, 53.4, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13844, {	-- The Looting of Althalaxx
 					["provider"] = { "n", 34041 },	-- Mathas Wildwood
-					["coord"] = { 59.1, 19.6, 62 },
+					["coord"] = { 59.1, 19.6, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						13507,	-- Denying Manpower
@@ -804,7 +804,7 @@ _.Zones =
 				}),
 				q(13900, {	-- The Offering to Azshara
 					["provider"] = { "n", 34423 },	-- Warlord Wrathspine
-					["coord"] = { 32.2, 85.4, 62 },
+					["coord"] = { 32.2, 85.4, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13899,	-- The Darkscale Warlord
 					["g"] = {
@@ -817,7 +817,7 @@ _.Zones =
 				}),
 				q(13569, {	-- The Ritual Bond
 					["provider"] = { "n", 33048 },	-- Keeper Karithus
-					["coord"] = { 42.9, 39.0, 62 },
+					["coord"] = { 42.9, 39.0, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						13566,	-- Ritual Materials
@@ -833,7 +833,7 @@ _.Zones =
 				}),
 				q(13882, {	-- The Seeds of Life
 					["provider"] = { "n", 34301 },	-- Kathrena Winterwisp
-					["coord"] = { 45.1, 74.6, 62 },
+					["coord"] = { 45.1, 74.6, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13881,	-- Consumed
 					["g"] = {
@@ -844,7 +844,7 @@ _.Zones =
 				}),
 				q(13589, {	-- The Shatterspear Invaders
 					["provider"] = { "n", 32971 },	-- Ranger Glynda Nal'Shea
-					["coord"] = { 50.3, 19.7, 62 },
+					["coord"] = { 50.3, 19.7, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13569,	-- The Ritual Bond
 				}),
@@ -860,13 +860,13 @@ _.Zones =
 				}),
 				q(13895, {	-- The Slumbering Ancients
 					["provider"] = { "n", 33072 },	-- Onu
-					["coord"] = { 45.4, 74.8, 62 },
+					["coord"] = { 45.4, 74.8, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13893,	-- Soggoth and Kronn
 				}),
 				q(13898, {	-- The Tides Turn Against Us
 					["provider"] = { "n", 34403 },	-- Felros
-					["coord"] = { 45.3, 75.1, 62 },
+					["coord"] = { 45.3, 75.1, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13953,	-- Naga in Our Midst
 					["g"] = {
@@ -877,7 +877,7 @@ _.Zones =
 				}),
 				q(13918, {	-- The Titans' Terminal
 					["provider"] = { "n", 34342 },	-- Jr. Archaeologist Ferd
-					["coord"] = { 37.7, 82.9, 62 },
+					["coord"] = { 37.7, 82.9, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13912,	-- Swamped Secrets
 					["g"] = {
@@ -905,7 +905,7 @@ _.Zones =
 				}),
 				q(13519, {	-- The Twilight's Hammer
 					["provider"] = { "n", 32912 },	-- Sentinel Lendra
-					["coord"] = { 50.3, 20.3, 62 },
+					["coord"] = { 50.3, 20.3, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13591,	-- Disturbing Connections
 					["g"] = {
@@ -916,7 +916,7 @@ _.Zones =
 				}),
 				q(13587, {	-- The Waking Nightmare
 					["provider"] = { "n", 33166 },	-- Thessera
-					["coord"] = { 49.2, 56.9, 62 },
+					["coord"] = { 49.2, 56.9, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13586,	-- The Emerald Dream
 					["g"] = {
@@ -926,18 +926,18 @@ _.Zones =
 				}),
 				q(13583, {	-- The Wildkin's Oath
 					["provider"] = { "n", 33119 },	-- Aroom
-					["coord"] = { 45.5, 48.4, 62 },
+					["coord"] = { 45.5, 48.4, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13582,	-- Elune's Fire
 				}),
 				q(13522, {	-- Threat from the Water
 					["provider"] = { "n", 32971 },	-- Ranger Glynda Nal'Shea
-					["coord"] = { 50.2, 19.7, 62 },
+					["coord"] = { 50.2, 19.7, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13543, {	-- Three Hammers to Break
 					["provider"] = { "n", 32987 },	-- Corvine Moonrise
-					["coord"] = { 42.6, 45.1, 62 },
+					["coord"] = { 42.6, 45.1, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(13510, {	-- Timely Arrival
@@ -952,7 +952,7 @@ _.Zones =
 				}),
 				q(13565, {	-- Twice Removed
 					["provider"] = { "n", 33126 },	-- Seraphine
-					["coord"] = { 42.9, 38.9, 62 },
+					["coord"] = { 42.9, 38.9, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13564,	-- A Lost Companion
 					["g"] = {
@@ -963,19 +963,19 @@ _.Zones =
 				}),
 				q(13596, {	-- Twilight Plans
 					["provider"] = { "n", 32912 },	-- Sentinel Lendra
-					["coord"] = { 50.3, 20.3, 62 },
+					["coord"] = { 50.3, 20.3, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13591,	-- Disturbing Connections
 				}),
 				q(13896, {	-- Unearthed Knowledge
 					["provider"] = { "n", 34404 },	-- Larien
-					["coord"] = { 45.3, 75.0, 62 },
+					["coord"] = { 45.3, 75.0, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13948,	-- Stepping Up Surveillance
 				}),
 				q(13598, {	-- Unsavory Remedies
 					["provider"] = { "n", 33048 },	-- Keeper Karithus
-					["coord"] = { 42.9, 39.0, 62 },
+					["coord"] = { 42.9, 39.0, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13564,	-- A Lost Companion
 				}),
@@ -991,7 +991,7 @@ _.Zones =
 				}),
 				q(13509, {	-- War Supplies
 					["provider"] = { "n", 32963 },	-- Lieutenant Morra Starbreeze
-					["coord"] = { 58.9, 19.4, 62 },
+					["coord"] = { 58.9, 19.4, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						13504,	-- Shatterspear Laborers
@@ -1008,13 +1008,13 @@ _.Zones =
 				}),
 				q(13525, {	-- What's Happening to the Blackwood Furbolg?
 					["provider"] = { "n", 33250 },	-- Foriel Broadleaf
-					["coord"] = { 45.1, 75.1, 62 },
+					["coord"] = { 45.1, 75.1, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,	-- for "The Bear's Paw"
 				}),
 				q(28529, {	-- Writings of the Void
 					["crs"] = { 48764 },	-- Telarius Voidstrider
-					["coord"] = { 52.4, 32.0, 62 },
+					["coord"] = { 52.4, 32.0, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "i", 64450 },	-- Writings of the Dark Herald
 					["description"] = "Jump into the whirlpool.",

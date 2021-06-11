@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(81, {	-- Silithus
+		m(SILITHUS, {
 			m(CHAMBER_OF_HEART, {
 				["achievementID"] = 12918,	-- Have a Heart
 				["description"] = "The Chamber of Heart is a titan chamber at the heart of the world. It is accessed via the Titan Translocator in Silithus. Like the Hall of Communion, it is possible here to communicate with Azeroth, the world-soul of the planet. Magni brings a hero here at Azeroth's request to obtain the [Heart of Azeroth], a necklace that can gather the  [Azerite] - the planet's lifeblood - necessary to heal Azeroth's wounds. The seal on the chamber protects Azeroth's world-soul.",
@@ -42,12 +42,12 @@ _.Zones =
 					n(-169, {	-- Emissary Quests
 						q(50562, {	-- Champions of Azeroth
 							["isDaily"] = true,
-							["coord"] = { 42.22, 44.27, 81 },
+							["coord"] = { 42.22, 44.27, SILITHUS },
 							["lvl"] = { 50 },
 						}),
 						q(54453, {	-- Supplies from Magni
 							["repeatable"] = true,
-							["coord"] = { 42.22, 44.27, 81 },
+							["coord"] = { 42.22, 44.27, SILITHUS },
 							["lvl"] = { 50 },
 							["g"] = {
 								i(166298, {	-- Champions of Azeroth Supplies
@@ -752,7 +752,7 @@ _.Zones =
 					}),
 					n(VENDORS, {
 						n(130216, {	-- Magni Bronzebeard
-							["coord"] = { 42.2, 44.2, 81 },
+							["coord"] = { 42.2, 44.2, SILITHUS },
 							["g"] = {
 								i(161555, {	-- Azerothian Champion's Crown
 									["cost"] = 22500000,	-- 2,250g

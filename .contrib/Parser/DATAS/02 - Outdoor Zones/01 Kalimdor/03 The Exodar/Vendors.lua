@@ -37,7 +37,10 @@ _.Zones =
 				n(16713, {	-- Arras <Blacksmithing Supplies>
 					["coord"] = { 61.3, 89.3, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_BLACKSMITHING_RECIPES, {
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 3356}, -- Sumi <Blacksmithing Supplies>
+					},
+					["groups"] = {
 						i(23591, {	-- Plans: Adamantite Cleaver
 							["spellID"] = 29568,	-- Adamantite Cleaver
 							["requireSkill"] = BLACKSMITHING,
@@ -62,12 +65,15 @@ _.Zones =
 							["isLimited"] = true,
 							["f"] = 200,
 						}),
-					}),
+					},
 				}),
 				n(17512, {	-- Arred <Jewelcrafting Supplies>
 					["coord"] = { 45.5, 25.3, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_JEWELCRAFTING_RECIPES, {
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 50482}, -- Marith Lazuria <Jewelcrafting Supplies>
+					},
+					["groups"] = {
 						i(20854, {	-- Design: Amulet of the Moon
 							["spellID"] = 25339,	-- Amulet of the Moon
 							["requireSkill"] = JEWELCRAFTING,
@@ -108,12 +114,25 @@ _.Zones =
 							["isLimited"] = true,
 							["f"] = 200,
 						}),
-					}),
+					},
 				}),
 				n(16722, {	-- Egomis <Enchanting Supplies>
 					["coord"] = { 39.9, 40.2, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_ENCHANTING_RECIPES, EGOMIS_GROUPS),
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 3346}, -- Kithas <Enchanting Supplies>
+					},
+					["groups"] = {
+						i(22565, {	-- Formula: Large Prismatic Shard
+							["isLimited"] = true,
+						}),
+						i(22562, {	-- Formula: Superior Mana Oil
+							["isLimited"] = true,
+						}),
+						i(22563, {	-- Formula: Superior Wizard Oil
+							["isLimited"] = true,
+						}),
+					},
 				}),
 				n(16657, {	-- Feera <Engineering Supplies>
 					["coord"] = { 53.6, 90.8, THE_EXODAR },
@@ -144,7 +163,10 @@ _.Zones =
 				n(16748, {	-- Haferet <Leatherworking Supplies>
 					["coord"] = { 66.6, 73.7, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_LEATHERWORKING_RECIPES, {
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 3366}, -- Tamar <Leatherworking Supplies>
+					},
+					["groups"] = {
 						i(25726, {	-- Pattern: Comfortable Insoles
 							["spellID"] = 32482,	-- Comfortable Insoles
 							["requireSkill"] = LEATHERWORKING,
@@ -158,7 +180,7 @@ _.Zones =
 							["isLimited"] = true,
 							["f"] = 200,
 						}),
-					}),
+					},
 				}),
 				n(50306, {	-- Kadu <Exodar Quartermaster>
 					["coord"] = { 54.8, 36.8, THE_EXODAR },
@@ -175,7 +197,10 @@ _.Zones =
 				n(16767, {	-- Neii <Tailoring Supplies>
 					["coord"] = { 64.7, 68.5, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_TAILORING_RECIPES, {
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 3364}, -- Borya <Tailoring Supplies>
+					},
+					["groups"] = {
 						i(21892),	-- Pattern: Bolt of Imbued Netherweave
 						i(21894, {	-- Pattern: Bolt of Soulcloth
 							["spellID"] = 26750,	-- Bolt of Soulcloth
@@ -185,7 +210,7 @@ _.Zones =
 						}),
 						i(21896),	-- Pattern: Netherweave Robe
 						i(21897),	-- Pattern: Netherweave Tunic
-					}),
+					},
 				}),
 				n(16718, {	-- Phea <Cooking Supplies>
 					["coord"] = { 54.4, 26.3, THE_EXODAR },

@@ -11,7 +11,7 @@ _.Zones =
 		["maps"] = {
 			125,	-- Dalaran: Northrend
 			627,	-- Dalaran: Broken Isles
-			85,		-- Orgrimmar
+			ORGRIMMAR,
 			THE_EXODAR,
 			SILVERMOON_CITY,
 			SHATTRATH_CITY,
@@ -24,10 +24,10 @@ _.Zones =
 		["coords"] = {
 			{ 51.07, 54.91, 125 },	-- Elizabeth Ross [Dalaran: Northrend]
 			{ 50.55, 55.14, 627 },	-- Elizabeth Ross [Dalaran: Broken Isles]
-			{ 47.62, 74.74, 85 },	-- Garyl [Orgrimmar]
-			{ 53.71, 68.53, THE_EXODAR },	-- Issca [The Exodar]
-			{ 78.64, 84.73, SILVERMOON_CITY },	-- Kredis [Silvermoon City]
-			{ 59.01, 46.58, SHATTRATH_CITY },	-- Linsa [Shattrath City]
+			{ 47.62, 74.74, ORGRIMMAR },	-- Garyl
+			{ 53.71, 68.53, THE_EXODAR },	-- Issca
+			{ 78.64, 84.73, SILVERMOON_CITY },	-- Kredis
+			{ 59.01, 46.58, SHATTRATH_CITY },	-- Linsa
 			{ 36.45, 85.32, 87 },	-- Lyesa Steelbrow [Ironforge]
 			{ 69.33, 44.82, 90 },	-- Merill Pleasance [Undercity]
 			{ 64.06, 77.41, 84 },	-- Rebecca Laughlin [Stormwind City]

@@ -13,7 +13,7 @@ _.Zones =
 				}),
 				fp(1992, {	-- Light's Purchase
 					["description"] = "Light's Purchase",
-					["coord"] = { 72.6, 76, 885 },
+					["coord"] = { 72.6, 76.0, 885 },
 				}),
 				fp(1993, {	-- The Veiled Den, Antoran Wastes
 					["description"] = "The Veiled Den, Antoran Wastes",

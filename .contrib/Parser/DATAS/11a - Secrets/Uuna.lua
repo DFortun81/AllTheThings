@@ -54,7 +54,7 @@ _.Secrets =
 				["sourceQuests"] = { 50102 },	-- Step 5: Bright Lights
 				["description"] = "Take Uuna to the moonlight by Ashenvale's Lake Falathim.",
 				["name"] = "Step 6: Wanna be Friends?",
-				["coord"] = { 18.9, 41.6, 63 },
+				["coord"] = { 18.9, 41.6, ASHENVALE },
 				["icon"] = "Interface\\Icons\\inv_misc_toy_02",
 			}),
 			q(50104, {	-- Step 7: Finding Nuu

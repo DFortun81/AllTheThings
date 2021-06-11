@@ -7,8 +7,8 @@ _.GearSets =
 	n(-254, {	-- Heritage Armor
 		gs(1977, {	-- Heritage of Kezan
 			q(57043, {	-- Old Friends, New Opportunities
-				["maps"] = { 85 },	-- Orgrimmar
-				["coord"] = { 39.5, 80.2, 85 },
+				["maps"] = { ORGRIMMAR },
+				["coord"] = { 39.5, 80.2, ORGRIMMAR },
 				["races"] = { GOBLIN },
 				["provider"] = { "n", 156358 },	-- Izzy
 				["minReputation"] = { 1133, EXALTED },

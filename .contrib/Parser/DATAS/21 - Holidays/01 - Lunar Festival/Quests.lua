@@ -10,7 +10,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["sourceQuests"] = { 56842 },	-- Lunar Preservation
 				["description"] = "To pick up this quest, you must have collected the |cFF1eff00Crown of Courage|r transmog.",
 				["provider"] = { "n", 155759 },	-- Myrael Lunarbloom
-				["coord"] = { 53.1, 36.0, 80 },
+				["coord"] = { 53.1, 36.0, MOONGLADE },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					un(17, i(170205)),	-- Crown of Boundless Courage
@@ -20,7 +20,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["sourceQuests"] = { 56842 },	-- Lunar Preservation
 				["description"] = "To pick up this quest, you must have collected the |cFF1eff00Crown of Dark Blossoms|r transmog.",
 				["provider"] = { "n", 155759 },	-- Myrael Lunarbloom
-				["coord"] = { 53.1, 36.0, 80 },
+				["coord"] = { 53.1, 36.0, MOONGLADE },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					un(17, i(170207)),	-- Crown of Eternal Memorial
@@ -30,7 +30,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["sourceQuests"] = { 56842 },	-- Lunar Preservation
 				["description"] = "To pick up this quest, you must have collected the |cFF1eff00Crown of Good Fortune|r transmog.",
 				["provider"] = { "n", 155759 },	-- Myrael Lunarbloom
-				["coord"] = { 53.1, 36.0, 80 },
+				["coord"] = { 53.1, 36.0, MOONGLADE },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					un(17, i(169208)),	-- Crown of Everlasting Fortune
@@ -40,7 +40,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["sourceQuests"] = { 56842 },	-- Lunar Preservation
 				["description"] = "To pick up this quest, you must have collected the |cFF1eff00Crown of Prosperity|r transmog.",
 				["provider"] = { "n", 155759 },	-- Myrael Lunarbloom
-				["coord"] = { 53.1, 36.0, 80 },
+				["coord"] = { 53.1, 36.0, MOONGLADE },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					un(17, i(170206)),	-- Crown of Infinite Prosperity
@@ -50,7 +50,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["sourceQuests"] = { 8883 },	-- Valadar Starsong
 				["provider"] = { "n", 15864 },	-- Valadar Starsong <Coin of Ancestry Collector>
 				["isYearly"] = true,
-				["coord"] = { 53.6, 35.4, 80 },
+				["coord"] = { 53.6, 35.4, MOONGLADE },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					un(17, i(21540)),	-- Elune's Lantern
@@ -75,7 +75,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 					37,	-- Elwynn Forest
 					90,	-- Undercity
 					87,	-- Ironforge
-					85,	-- Orgrimmar
+					ORGRIMMAR,
 					88,	-- Thunder Bluff
 					89,	-- Darnassus
 					SILVERMOON_CITY,
@@ -91,7 +91,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 			}),
 			q(56842, {	-- Lunar Preservation
 				["provider"] = { "n", 155759 },	-- Myrael Lunarbloom
-				["coord"] = { 53.1, 36.0, 80 },
+				["coord"] = { 53.1, 36.0, MOONGLADE },
 			}),
 			q(8870,  {	-- The Lunar Festival (A)
 				["isBreadcrumb"] = true,
@@ -122,7 +122,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["provider"] = { "n", 15891 },	-- Lunar Festival Herald
 				["isYearly"] = true,
 				["races"] = HORDE_ONLY,
-				["maps"] = { 85 },	-- Orgrimmar
+				["maps"] = { ORGRIMMAR },
 				["u"] = 17,	-- Lunar Festival
 			}),
 			q(8874,  {	-- The Lunar Festival (H)
@@ -150,7 +150,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 					37,	-- Elwynn Forest
 					90,	-- Undercity
 					87,	-- Ironforge
-					85,	-- Orgrimmar
+					ORGRIMMAR,
 					88,	-- Thunder Bluff
 					89,	-- Darnassus
 					SILVERMOON_CITY,
@@ -495,8 +495,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["description"] = "In order to view this Elder, visit Zidormi at 78.9, 21.9 to see Silithus before the Wound in the World.",
 				["provider"] = { "n", 15599 },	-- Elder Bladesing
 				["isYearly"] = true,
-				["coord"] = { 53.0, 35.4, 81 },
-				["maps"] = { 81 },	-- Silithus
+				["coord"] = { 53.0, 35.4, SILITHUS },
+				["maps"] = { SILITHUS },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(21, {	-- Elder Bladesing in Cenarion Hold
@@ -555,8 +555,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8686,  {	-- High Mountain the Elder
 				["provider"] = { "n", 15588 },	-- Elder High Mountain
 				["isYearly"] = true,
-				["coord"] = { 41.6, 47.4, 199 },
-				["maps"] = { 199 },	-- Southern Barrens
+				["coord"] = { 41.6, 47.4, SOUTHERN_BARRENS },
+				["maps"] = { SOUTHERN_BARRENS },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(4, {	-- Elder High Mountain in Vendetta Point
@@ -579,8 +579,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8717,  {	-- Moonwarden the Elder
 				["provider"] = { "n", 15597 },	-- Elder Moonwarden
 				["isYearly"] = true,
-				["coord"] = { 48.5, 59.2, 10 },
-				["maps"] = { 10 },	-- Northern Barrens
+				["coord"] = { 48.5, 59.2, NORTHERN_BARRENS },
+				["maps"] = { NORTHERN_BARRENS },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(3, {	-- Elder Moonwarden in The Crossroads
@@ -603,8 +603,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8723,  {	-- Nightwind the Elder
 				["provider"] = { "n", 15603 },	-- Elder Nightwind
 				["isYearly"] = true,
-				["coord"] = { 38.4, 52.8, 77 },
-				["maps"] = { 77 },	-- Felwood
+				["coord"] = { 38.4, 52.8, FELWOOD },
+				["maps"] = { FELWOOD },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(12, {	-- Elder Nightwind in Felwood
@@ -616,8 +616,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["description"] = "In order to view this Elder, visit Zidormi at 78.9, 21.9 to see Silithus before the Wound in the World.",
 				["provider"] = { "n", 15570 },	-- Elder Primestone
 				["isYearly"] = true,
-				["coord"] = { 30.8, 13.3, 81 },
-				["maps"] = { 81 },	-- Silithus
+				["coord"] = { 30.8, 13.3, SILITHUS },
+				["maps"] = { SILITHUS },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(20, {	-- Elder Primestone in Silithus
@@ -640,8 +640,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8725,  {	-- Riversong the Elder
 				["provider"] = { "n", 15605 },	-- Elder Riversong
 				["isYearly"] = true,
-				["coord"] = { 35.5, 48.9, 63 },
-				["maps"] = { 63 },	-- Ashenvale
+				["coord"] = { 35.5, 48.9, ASHENVALE },
+				["maps"] = { ASHENVALE },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(9, {	-- Elder Riversong in Astranaar
@@ -664,8 +664,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8720,  {	-- Skygleam the Elder
 				["provider"] = { "n", 15600 },	-- Elder Skygleam
 				["isYearly"] = true,
-				["coord"] = { 64.7, 79.3, 76 },
-				["maps"] = { 76 },	-- Azshara
+				["coord"] = { 64.7, 79.3, AZSHARA },
+				["maps"] = { AZSHARA },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(2, {	-- Elder Skygleam in Azshara
@@ -689,8 +689,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["description"] = "In order to view this Elder, visit Zidormi at 48.8, 24.4 to see Darkshore before the battle.",
 				["provider"] = { "n", 15601 },	-- Elder Starweave
 				["isYearly"] = true,
-				["coord"] = { 49.5, 18.9, 62 },
-				["maps"] = { 62 },	-- Darkshore
+				["coord"] = { 49.5, 18.9, DARKSHORE },
+				["maps"] = { DARKSHORE },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(7, {	-- Elder Starweave in Lor'danel
@@ -725,8 +725,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8680,  {	-- Windtotem the Elder
 				["provider"] = { "n", 15582 },	-- Elder Windtotem
 				["isYearly"] = true,
-				["coord"] = { 68.4, 69.9, 10 },
-				["maps"] = { 10 },	-- Northern Barrens
+				["coord"] = { 68.4, 69.9, NORTHERN_BARRENS },
+				["maps"] = { NORTHERN_BARRENS },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(5, {	-- Elder Windtotem in Ratchet
@@ -1014,7 +1014,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["coord"] = { 27.7, 11.6, 23 },	-- Stratholme entrance
 				["maps"] = {
 					23,		-- Eastern Plaguelands
-					317,	-- Stratholme
+					STRATHOLME,
 				},
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
@@ -1217,8 +1217,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["description"] = "The Elder is on the central upper platform in Orgrimmar near the flight master.",
 				["provider"] = { "n", 15579 },	-- Elder Darkhorn
 				["isYearly"] = true,
-				["coord"] = { 52.1, 59.8, 85 },
-				["maps"] = { 85 },	-- Orgrimmar
+				["coord"] = { 52.1, 59.8, ORGRIMMAR },
+				["maps"] = { ORGRIMMAR },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(1, {	-- Elder Darkhorn in Orgrimmar

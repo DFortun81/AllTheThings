@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(81, {	-- Silithus
+		m(SILITHUS, {
 			n(-93, {	-- Silithus (The Wound)
 				["lvl"] = 110,
 				["g"] = {
@@ -18,7 +18,7 @@ _.Zones =
 							-- This was removed during BfA in 8.2 but is now appearing again for characters leveling up during Shadowlands
 							["sourceQuests"] = { 53406 },	-- The Chamber of Heart
 							["description"] = "Once you complete 'The Chamber of Heart' in Silithus, you can pick this quest up from Magni, or it will be automatically offered when you return to your capital city.",
-							["coord"] = { 42.1, 44.3, 81 },	-- Silithus
+							["coord"] = { 42.1, 44.3, SILITHUS },
 							["provider"] = { "n", 130216 },	-- Magni Bronzebeard
 						}),
 						q(50373, {	-- A Recent Arrival
@@ -31,7 +31,7 @@ _.Zones =
 								50358,	-- Desert Research
 								50372,	-- Desert Research
 							},
-							["coord"] = { 29.6, 69.6, 81 },
+							["coord"] = { 29.6, 69.6, SILITHUS },
 						}),
 						q(50372, {	-- Desert Research
 							["sourceQuests"] = {
@@ -94,7 +94,7 @@ _.Zones =
 						q(53406, {	-- The Chamber of Heart (third HoA upgrade)
 							["sourceQuests"] = { 53405 },	-- Unlocking the Heart's Potential
 							["description"] = "This quest awards +15 item levels for your Heart of Azeroth.  You can pick it up once one of your characters reaches Revered with Champions of Azeroth.",
-							["coord"] = { 42.1, 44.3, 81 },	-- Silithus
+							["coord"] = { 42.1, 44.3, SILITHUS },
 							["lvl"] = 120,
 							["provider"] = { "n", 130216 },	-- Magni Bronzebeard
 							["u"] = REMOVED_FROM_GAME,	-- Retired with the implementation of 8.2
@@ -105,14 +105,14 @@ _.Zones =
 								53028,	-- A Dying World
 							},
 							["provider"] = { "n", 130216 },	-- Magni Bronzebeard
-							["coord"] = { 42.2, 44.2, 81 },
+							["coord"] = { 42.2, 44.2, SILITHUS },
 							["g"] = {
 								i(158075),	-- Heart of Azeroth
 							},
 						}),
 						q(50973, {	-- The Heart's Power (first HoA upgrade)
 							["description"] = "This quest awards +15 item levels for your Heart of Azeroth.  You can pick it up once one of your characters reaches Friendly with Champions of Azeroth.",
-							["coord"] = { 42.1, 44.3, 81 },	-- Silithus
+							["coord"] = { 42.1, 44.3, SILITHUS },
 							["lvl"] = 120,
 							["provider"] = { "n", 130216 },	-- Magni Bronzebeard
 							["u"] = REMOVED_FROM_GAME,	-- Retired with the implementation of 8.2
@@ -178,7 +178,7 @@ _.Zones =
 						q(53405, {	-- Unlocking the Heart's Potential (second HoA upgrade)
 							["description"] = "This quest awards +15 item levels for your Heart of Azeroth.  You can pick it up once one of your characters reaches Honored with Champions of Azeroth.",
 							["sourceQuests"] = { 50973 },	-- The Heart's Power
-							["coord"] = { 42.1, 44.3, 81 },	-- Silithus
+							["coord"] = { 42.1, 44.3, SILITHUS },
 							["lvl"] = 120,
 							["provider"] = { "n", 130216 },	-- Magni Bronzebeard
 							["u"] = REMOVED_FROM_GAME,	-- Retired with the implementation of 8.2
@@ -187,7 +187,7 @@ _.Zones =
 					n(RARES, {
 						n(132591, {	-- Ogmot the Mad
 							["questID"] = 50334,
-							["coord"] = { 28.9, 74.6, 81 },
+							["coord"] = { 28.9, 74.6, SILITHUS },
 							["g"] = {
 								i(156852),	-- Ogmot's Dream Journal
 							},
@@ -195,7 +195,7 @@ _.Zones =
 						n(132578, {	-- Qroshekx
 							["questID"] = 50255,
 							["isDaily"] = true,
-							["coord"] = { 59.3, 11.4, 81 },
+							["coord"] = { 59.3, 11.4, SILITHUS },
 							["g"] = {
 								i(156851),	-- Silithid Mini-Tank
 							},
@@ -203,7 +203,7 @@ _.Zones =
 						n(132580, {	-- Ssinkrix
 							["questID"] = 50223,
 							["isDaily"] = true,
-							["coord"] = { 54.5, 79.8, 81 },
+							["coord"] = { 54.5, 79.8, SILITHUS },
 							["g"] = {
 								i(156851),	-- Silithid Mini-Tank
 							},
@@ -211,7 +211,7 @@ _.Zones =
 						n(132584, {	-- Xaarshej
 							["questID"] = 50224,
 							["isDaily"] = true,
-							["coord"] = { 29.5, 35.0, 81 },
+							["coord"] = { 29.5, 35.0, SILITHUS },
 							["g"] = {
 								i(156851),	-- Silithid Mini-Tank
 							},

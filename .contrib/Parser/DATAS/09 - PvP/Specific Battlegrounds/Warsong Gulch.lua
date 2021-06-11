@@ -7,8 +7,8 @@ _.PVP =
 	n(-304, {	-- Battlegrounds
 		m(92 , {	-- Warsong Gulch
 			["maps"] = {
-				10,		-- Northern Barrens
-				63,		-- Ashenvale
+				NORTHERN_BARRENS,
+				ASHENVALE,
 				859,	-- Warsong Gulch
 				1339,	-- Warsong Gulch
 			},
@@ -23,7 +23,7 @@ _.PVP =
 						q(7865,  {	-- Sentinel Advanced Care Package
 							["provider"] = { "n", 14753 },	-- Illiyana Moonblaze
 							["lvl"] = 45,
-							["coord"] = { 61.5, 83.9, 63 },
+							["coord"] = { 61.5, 83.9, ASHENVALE },
 							["races"] = ALLIANCE_ONLY,
 							["minReputation"] = { 890, FRIENDLY },
 						}),
@@ -31,7 +31,7 @@ _.PVP =
 							["u"] = REMOVED_FROM_GAME,
 							["provider"] = { "n", 14753 },	-- Illiyana Moonblaze
 							["lvl"] = 25,
-							["coord"] = { 61.5, 83.9, 63 },
+							["coord"] = { 61.5, 83.9, ASHENVALE },
 							["races"] = ALLIANCE_ONLY,
 							["minReputation"] = { 890, FRIENDLY },
 						}),
@@ -39,14 +39,14 @@ _.PVP =
 							["u"] = REMOVED_FROM_GAME,
 							["provider"] = { "n", 14753 },	-- Illiyana Moonblaze
 							["lvl"] = 35,
-							["coord"] = { 61.5, 83.9, 63 },
+							["coord"] = { 61.5, 83.9, ASHENVALE },
 							["races"] = ALLIANCE_ONLY,
 							["minReputation"] = { 890, FRIENDLY },
 						}),
 						n(14753, {	-- Illiyana Moonblaze <Silverwing Supply Officer>
 							["itemID"] = 137642,	-- Mark of Honor
 							["races"] = ALLIANCE_ONLY,	-- to hide it in Mark of Honor list
-							["coord"] = { 61.6, 83.8, 63 },
+							["coord"] = { 61.6, 83.8, ASHENVALE },
 							["g"] = {
 								i(19595, {	-- Dryad's Wrist Bindings
 									["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
@@ -249,19 +249,19 @@ _.PVP =
 						n(QUESTS, {
 							q(7866,  {	-- Outrider Basic Care Package
 								["provider"] = { "n", 14754 },	-- Kelm Hargunth
-								["coord"] = { 40.2, 20.0, 10 },
+								["coord"] = { 40.2, 20.0, NORTHERN_BARRENS },
 								["races"] = HORDE_ONLY,
 								["minReputation"] = { 889, FRIENDLY },
 							}),
 							q(7867,  {	-- Outrider Standard Care Package
 								["provider"] = { "n", 14754 },	-- Kelm Hargunth
-								["coord"] = { 40.2, 20.0, 10 },
+								["coord"] = { 40.2, 20.0, NORTHERN_BARRENS },
 								["races"] = HORDE_ONLY,
 								["minReputation"] = { 889, HONORED },
 							}),
 							q(7868,  {	-- Outrider Advanced Care Package
 								["provider"] = { "n", 14754 },	-- Kelm Hargunth
-								["coord"] = { 40.2, 20.0, 10 },
+								["coord"] = { 40.2, 20.0, NORTHERN_BARRENS },
 								["races"] = HORDE_ONLY,
 								["minReputation"] = { 889, REVERED },
 							}),

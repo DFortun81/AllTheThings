@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(81, {	-- Silithus
+		m(SILITHUS, {
 			n(ACHIEVEMENTS, {
 				ach(4934, {	-- Silithus Quests
 					crit(1, {	-- Twilight's Run

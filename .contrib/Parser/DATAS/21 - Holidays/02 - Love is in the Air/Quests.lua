@@ -14,7 +14,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 				["coords"] = {
 					{ 45.0, 57.4, 89 },	-- Darnassus
 					{ 33.8, 66.6, 87 },	-- Ironforge
-					{ 52.8, 77.0, 85 },	-- Orgrimmar
+					{ 52.8, 77.0, ORGRIMMAR },
 					{ 64.2, 67.2, SILVERMOON_CITY },
 					{ 62.2, 75.2, 84 },	-- Stormwind
 					{ 74.0, 56.2, THE_EXODAR },
@@ -36,8 +36,8 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 					{ "n", 38328 },	-- Roka
 				},
 				["coords"] = {
-					{ 50.0, 65.0, 85 },	-- Detective Snap Snagglebolt
-					{ 57.6, 61.0, 85 },	-- Roka
+					{ 50.0, 65.0, ORGRIMMAR },	-- Detective Snap Snagglebolt
+					{ 57.6, 61.0, ORGRIMMAR },	-- Roka
 				},
 			}),
 			q(24609, {	-- A Gift for a Lord of Ironforge
@@ -49,7 +49,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 			q(24612, {	-- A Gift for High Overlord Saurfang
 				["provider"] = { "n", 37887 },	-- Kwee Q. Peddlefeet
 				["isDaily"] = true,
-				["coord"] = { 52.8, 76.8, 85 },	-- Orgrimmar
+				["coord"] = { 52.8, 76.8, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 			}),
 			q(24613, {	-- A Gift for the Banshee Queen
@@ -94,7 +94,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 				["coords"] = {
 					{ 45.0, 57.4, 89 },	-- Darnassus
 					{ 33.8, 66.6, 87 },	-- Ironforge
-					{ 52.8, 77.0, 85 },	-- Orgrimmar
+					{ 52.8, 77.0, ORGRIMMAR },
 					{ 64.2, 67.2, SILVERMOON_CITY },
 					{ 62.2, 75.2, 84 },	-- Stormwind
 					{ 74.0, 56.2, THE_EXODAR },
@@ -112,7 +112,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 				["coords"] = {
 					{ 45.0, 57.4, 89 },	-- Darnassus
 					{ 33.8, 66.6, 87 },	-- Ironforge
-					{ 52.8, 77.0, 85 },	-- Orgrimmar
+					{ 52.8, 77.0, ORGRIMMAR },
 					{ 64.2, 67.2, SILVERMOON_CITY },
 					{ 62.2, 75.2, 84 },	-- Stormwind
 					{ 74.0, 56.2, THE_EXODAR },
@@ -194,69 +194,69 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 				["sourceQuests"] = { 24576 },	-- A Friendly Chat... (H)
 				["provider"] = { "n", 37172 },	-- Detective Snap Snagglebolt
 				["isDaily"] = true,
-				["coord"] = { 50.0, 65.0, 85 },	-- Orgrimmar
+				["coord"] = { 50.0, 65.0, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 			}),
 			q(24638, {	-- Crushing the Crown
 				["provider"] = { "n", 37172 },	-- Detective Snap Snagglebolt
 				["isDaily"] = true,
-				["coord"] = { 50.0, 65.0, 85 },	-- Orgrimmar
+				["coord"] = { 50.0, 65.0, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(24645, {	-- Crushing the Crown
 				["provider"] = { "n", 37172 },	-- Detective Snap Snagglebolt
 				["isDaily"] = true,
-				["coord"] = { 50.0, 65.0, 85 },	-- Orgrimmar
+				["coord"] = { 50.0, 65.0, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(24647, {	-- Crushing the Crown
 				["provider"] = { "n", 37172 },	-- Detective Snap Snagglebolt
 				["isDaily"] = true,
-				["coord"] = { 50.0, 65.0, 85 },	-- Orgrimmar
+				["coord"] = { 50.0, 65.0, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(24648, {	-- Crushing the Crown
 				["provider"] = { "n", 37172 },	-- Detective Snap Snagglebolt
 				["isDaily"] = true,
-				["coord"] = { 50.0, 65.0, 85 },	-- Orgrimmar
+				["coord"] = { 50.0, 65.0, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(24649, {	-- Crushing the Crown
 				["provider"] = { "n", 37172 },	-- Detective Snap Snagglebolt
 				["isDaily"] = true,
-				["coord"] = { 50.0, 65.0, 85 },	-- Orgrimmar
+				["coord"] = { 50.0, 65.0, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(24650, {	-- Crushing the Crown
 				["provider"] = { "n", 37172 },	-- Detective Snap Snagglebolt
 				["isDaily"] = true,
-				["coord"] = { 50.0, 65.0, 85 },	-- Orgrimmar
+				["coord"] = { 50.0, 65.0, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(24651, {	-- Crushing the Crown
 				["provider"] = { "n", 37172 },	-- Detective Snap Snagglebolt
 				["isDaily"] = true,
-				["coord"] = { 50.0, 65.0, 85 },	-- Orgrimmar
+				["coord"] = { 50.0, 65.0, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(24652, {	-- Crushing the Crown
 				["provider"] = { "n", 37172 },	-- Detective Snap Snagglebolt
 				["isDaily"] = true,
-				["coord"] = { 50.0, 65.0, 85 },	-- Orgrimmar
+				["coord"] = { 50.0, 65.0, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(28935, {	-- Crushing the Crown
 				["provider"] = { "n", 37172 },	-- Detective Snap Snagglebolt
 				["isDaily"] = true,
-				["coord"] = { 50.0, 65.0, 85 },	-- Orgrimmar
+				["coord"] = { 50.0, 65.0, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 			}),
@@ -319,7 +319,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 			q(24851, {	-- Hot On The Trail (H)
 				["sourceQuests"] = { 24850 },	-- Snivel's Sweetheart
 				["provider"] = { "n", 38328 },	-- Roka
-				["coord"] = { 57.6, 61.0, 85 },	-- Orgrimmar
+				["coord"] = { 57.6, 61.0, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 			}),
 			q(24792, {	-- Man on the Inside (A)
@@ -333,7 +333,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 				["sourceQuests"] = { 24576 },	-- A Friendly Chat... (H)
 				["provider"] = { "n", 38066 },	-- Inspector Snip Snagglebolt
 				["races"] = HORDE_ONLY,
-				["maps"] = { 85 },	-- Orgrimmar
+				["maps"] = { ORGRIMMAR },
 				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(9025,  {	-- Morgan's Discovery
@@ -349,13 +349,13 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 			q(24541, {	-- Pilfering Perfume (H)
 				["sourceQuests"] = { 24536 },	-- Something Stinks (H)
 				["provider"] = { "n", 37172 },	-- Detective Snap Snagglebolt
-				["coord"] = { 50.0, 65.0, 85 },	-- Orgrimmar
+				["coord"] = { 50.0, 65.0, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 			}),
 			q(24850, {	-- Snivel's Sweetheart
 				["sourceQuests"] = { 24541 },	-- Pilfering Perfume (H)
 				["provider"] = { "n", 37172 },	-- Detective Snap Snagglebolt
-				["coord"] = { 50.0, 65.0, 85 },	-- Orgrimmar
+				["coord"] = { 50.0, 65.0, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 			}),
 			q(24745, {	-- Something is in the Air (and it Ain't Love) (A)
@@ -377,7 +377,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 			q(24536, {	-- Something Stinks (H)
 				["sourceQuests"] = { 24805 },	-- Uncommon Scents (H)
 				["provider"] = { "n", 37172 },	-- Detective Snap Snagglebolt
-				["coord"] = { 50.0, 65.0, 85 },	-- Orgrimmar
+				["coord"] = { 50.0, 65.0, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
 			}),
 			q(9028,  {	-- The Source Revealed (A)

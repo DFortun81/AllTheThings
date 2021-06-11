@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(63, {	-- Ashenvale
+		m(ASHENVALE, {
 			n(ZONEDROPS, {
 				i(78343),	-- Formula: Enchant Gloves - Herbalism
 				i(2567, {	-- Evocator's Blade

@@ -57,10 +57,10 @@ _.Zones =
 					},
 					["races"] = ALLIANCE_ONLY,
 				}),
-				i(23733, {	-- Ritual Torch
-					["cr"] = 17189,	-- Crazed Wildkin
-					["races"] = ALLIANCE_ONLY,
-				}),
+--				i(23733, {	-- Ritual Torch
+--					["cr"] = 17189,	-- Crazed Wildkin
+--					["races"] = ALLIANCE_ONLY,
+--				}),
 				i(23685, {	-- Root Trapper Vine
 					["cr"] = 17196,	-- Root Trapper
 					["races"] = ALLIANCE_ONLY,

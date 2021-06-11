@@ -11,7 +11,7 @@ _.Secrets =
 				["description"] = "|cFFFFFFFFStep 1:|r Go to |cFFFFFFFF17.4, 49.3|r in Ashenvale. Speak with |cFFFFD700Amara Lunastar|r and follow her dialogue about her cat.\n",
 				["provider"] = { "n", 159799 },	-- Amara Lunastar
 				["name"] = "|cFFFFFFFFStep 1:|r Speak to Amara",
-				["coord"] = { 17.4, 49.3, 63 },	-- Ashenvale
+				["coord"] = { 17.4, 49.3, ASHENVALE },
 			}),
 			o(339211, {	-- Step 2: Empty Dish
 				["description"] = "|cFFFFFFFFStep 2:|r Go inside the house at |cFFFFFFFF44.2, 53.0|r in Elwynn Forest to find the |cFFFFD700Empty Dish|r.\n",

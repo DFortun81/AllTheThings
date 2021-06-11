@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(85, {	-- Orgrimmar
+		m(ORGRIMMAR, {
 			n(ACHIEVEMENTS, {
 			}),
 		}),

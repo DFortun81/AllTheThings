@@ -805,11 +805,11 @@ _.ExpansionFeatures =
 					}),
 					q(54918, {	-- Spark of Imagination
 						["provider"] = { "n", 150391 },	-- Image of Mimiron
-						["coord"] = { 39.3, 71.7, 81 },
+						["coord"] = { 39.3, 71.7, SILITHUS },
 						["sourceQuest"] = 54917,	-- Paid in Blood
 						["classes"] = { HUNTER },
 						["lvl"] = 120,
-						["maps"] = { 81 },	-- Silithus
+						["maps"] = { SILITHUS },
 					}),
 					q(54919, {	-- Bonds of Thunder
 						["provider"] = { "n", 151061 },	-- Mimiron

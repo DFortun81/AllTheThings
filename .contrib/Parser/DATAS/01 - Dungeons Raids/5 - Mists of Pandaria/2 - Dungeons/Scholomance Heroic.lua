@@ -5,7 +5,7 @@
 _.Instances = { tier(5, {	-- Mists of Pandaria
 	inst(246, { 	-- Scholomance
 		["coord"] = { 69.07, 72.96, 22 },	-- Scholomance, Western Plaguelands
-		["maps"] = { 476, 477, 478, 479 },
+		["maps"] = { SCHOLOMANCE, 477, 478, 479 },
 		["g"] = {
 			d(2, {		-- Heroic
 				["lvl"] = 90,

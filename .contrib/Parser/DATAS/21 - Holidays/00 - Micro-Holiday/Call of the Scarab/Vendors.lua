@@ -14,7 +14,7 @@ _.Holidays =
 					{	-- Field Marshal Snowfall
 						["npcID"] = 117435,		-- Field Marshal Snowfall
 						["coords"] = {
-							{ 34.06, 80.43, 81 },
+							{ 34.06, 80.43, SILITHUS },
 						},
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
@@ -122,7 +122,7 @@ _.Holidays =
 						["npcID"] = 117433,		-- Warlord Gorchuk
 						--["itemID"] = 143865,	-- Abyssal Crest
 						["coords"] = {
-							{ 33.96, 81.91, 81 },
+							{ 33.96, 81.91, SILITHUS },
 						},
 						["races"] = HORDE_ONLY,
 						["g"] = {

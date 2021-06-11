@@ -79,14 +79,14 @@ _.Holidays =
 			}),
 			n(26124, {	-- Midsummer Merchant (Horde Vendor)
 				["coords"] = {
-					{ 47.8, 37.4, 85 },		-- Orgrimmar
+					{ 47.8, 37.4, ORGRIMMAR },
 					{ 19.8, 24.6, 88 },		-- Thunder Bluff
 					{ 67.8, 11.2, 90 },		-- Undercity
 					{ 70.6, 44.0, SILVERMOON_CITY },
 				},
 				["races"] = HORDE_ONLY,
 				["maps"] = {
-					85,		-- Orgrimmar
+					ORGRIMMAR,
 					88,		-- Thunder Bluff
 					90,		-- Undercity
 					SILVERMOON_CITY,

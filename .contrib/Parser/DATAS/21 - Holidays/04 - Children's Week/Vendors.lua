@@ -15,23 +15,23 @@ _.Holidays =
 						["npcID"] = 52809,	-- Blax Bottlerocket <Toys and Novelties>
 						["races"] = HORDE_ONLY,
 						["coords"] = {
-							{ 57.13, 51.12, 85 },	-- Blax Bottlerocket Path [Orgrimmar]
-							{ 57.24, 52.54, 85 },	-- Blax Bottlerocket Path [Orgrimmar]
-							{ 57.87, 54.21, 85 },	-- Blax Bottlerocket Path [Orgrimmar]
-							{ 58.08, 51.11, 85 },	-- Blax Bottlerocket Path [Orgrimmar]
-							{ 58.29, 62.41, 85 },	-- Blax Bottlerocket Path [Orgrimmar]
-							{ 58.34, 62.93, 85 },	-- Blax Bottlerocket Path [Orgrimmar]
-							{ 58.48, 55.55, 85 },	-- Blax Bottlerocket Path [Orgrimmar]
-							{ 58.67, 62.27, 85 },	-- Blax Bottlerocket Path [Orgrimmar]
-							{ 58.78, 53.61, 85 },	-- Blax Bottlerocket Path [Orgrimmar]
-							{ 58.79, 50.93, 85 },	-- Blax Bottlerocket Path [Orgrimmar]
-							{ 58.81, 57.61, 85 },	-- Blax Bottlerocket Path [Orgrimmar]
-							{ 58.85, 58.67, 85 },	-- Blax Bottlerocket Path [Orgrimmar]
-							{ 58.86, 60.16, 85 },	-- Blax Bottlerocket Path [Orgrimmar]
-							{ 59.32, 51.86, 85 },	-- Blax Bottlerocket Path [Orgrimmar]
+							{ 57.13, 51.12, ORGRIMMAR },	-- Blax Bottlerocket Path
+							{ 57.24, 52.54, ORGRIMMAR },	-- Blax Bottlerocket Path
+							{ 57.87, 54.21, ORGRIMMAR },	-- Blax Bottlerocket Path
+							{ 58.08, 51.11, ORGRIMMAR },	-- Blax Bottlerocket Path
+							{ 58.29, 62.41, ORGRIMMAR },	-- Blax Bottlerocket Path
+							{ 58.34, 62.93, ORGRIMMAR },	-- Blax Bottlerocket Path
+							{ 58.48, 55.55, ORGRIMMAR },	-- Blax Bottlerocket Path
+							{ 58.67, 62.27, ORGRIMMAR },	-- Blax Bottlerocket Path
+							{ 58.78, 53.61, ORGRIMMAR },	-- Blax Bottlerocket Path
+							{ 58.79, 50.93, ORGRIMMAR },	-- Blax Bottlerocket Path
+							{ 58.81, 57.61, ORGRIMMAR },	-- Blax Bottlerocket Path
+							{ 58.85, 58.67, ORGRIMMAR },	-- Blax Bottlerocket Path
+							{ 58.86, 60.16, ORGRIMMAR },	-- Blax Bottlerocket Path
+							{ 59.32, 51.86, ORGRIMMAR },	-- Blax Bottlerocket Path
 						},
 						["maps"] = {
-							85,	-- Orgrimmar
+							ORGRIMMAR,
 							86,	-- Ogrimmar: The Drag
 						},
 						["g"] = {

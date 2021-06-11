@@ -402,14 +402,17 @@ _.Zones =
 				n(4589,  {	-- Joseph Moore <Leatherworking Supplies>
 					["coord"] = { 70.6, 59.6, 90 },
 					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_LEATHERWORKING_RECIPES, {
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 3366}, -- Tamar <Leatherworking Supplies>
+					},
+					["groups"] = {
 						i(18949, {	-- Pattern: Barbaric Bracers
 							["isLimited"] = true,
 						}),
 						i(7451, {	-- Pattern: Green Whelp Bracers
 							["isLimited"] = true,
 						}),
-					}),
+					},
 				}),
 				n(4558,  {	-- Lauren Newcomb <Light Armor Merchant>
 					["coord"] = { 63.8, 38.0, 90 },
@@ -433,7 +436,10 @@ _.Zones =
 				n(4577,  {	-- Millie Gregorian <Tailoring Supplies>
 					["coord"] = { 70.6, 30.2, 90 },
 					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_TAILORING_RECIPES, {
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 3364}, -- Borya <Tailoring Supplies>
+					},
+					["groups"] = {
 						i(6275, {	-- Pattern: Greater Adept's Robe
 							["isLimited"] = true,
 						}),
@@ -449,124 +455,47 @@ _.Zones =
 						i(10321, {	-- Pattern: Tuxedo Shirt
 							["isLimited"] = true,
 						}),
-					}),
+					},
 				}),
 				n(4553,  {	-- Ronald Burch <Cooking Supplies>
 					["coord"] = { 62.3, 43.1, 90 },
 					["races"] = HORDE_ONLY,
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 49737}, -- Shazdar <Sous Chef>
+					},
 					["g"] = {
-						i(65426, {	-- Recipe: Baked Rockfish
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(65427, {	-- Recipe: Basilisk Liverdog
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(65429, {	-- Recipe: Beer-Basted Crocolisk
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(65424, {	-- Recipe: Blackbelly Sushi
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
 						i(6330),	-- Recipe: Bristle Whisker Catfish
-						i(65411, {	-- Recipe: Broiled Mountain Trout
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(65431, {	-- Recipe: Chocolate Cookie
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(65430, {	-- Recipe: Crocolisk Au Gratin
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(65422, {	-- Recipe: Delicious Sagefish Tail
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(65408, {	-- Recipe: Feathered Lure
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(65423, {	-- Recipe: Fish Fry
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(65432, {	-- Recipe: Fortune Cookie
-							["cost"] = { { "c", 81, 5 }, },	-- 5x Epicurean's Award
-						}),
-						i(65428, {	-- Recipe: Grilled Dragon
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(65418, {	-- Recipe: Hearty Seafood Soup
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(65415, {	-- Recipe: Highland Spirits
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(65407, {	-- Recipe: Lavascale Fillet
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(65409, {	-- Recipe: Lavascale Minestrone
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(65412, {	-- Recipe: Lightly Fried Lurker
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(65416, {	-- Recipe: Lurker Lunch
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(65420, {	-- Recipe: Mushroom Sauce Mudfish
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(65417, {	-- Recipe: Pickled Guppy
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
 						i(6368),	-- Recipe: Rainbow Fin Albacore
 						i(21219),	-- Recipe: Sagefish Delight
-						i(65410, {	-- Recipe: Salted Eye
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(68688, {	-- Recipe: Scalding Murglesnout
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(65413, {	-- Recipe: Seasoned Crab
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(65421, {	-- Recipe: Severed Sagefish Head
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(65425, {	-- Recipe: Skewered Eel
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
 						i(21099),	-- Recipe: Smoked Sagefish
-						i(65433, {	-- Recipe: South Island Iced Tea
-							["cost"] = { { "c", 81, 5 }, },	-- 5x Epicurean's Award
-						}),
-						i(65414, {	-- Recipe: Starfire Espresso
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(65419, {	-- Recipe: Tender Baked Turtle
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
-						i(65406, {	-- Recipe: Whitecrest Gumbo
-							["cost"] = { { "c", 81, 3 }, },	-- 3x Epicurean's Award
-						}),
 					},
 				}),
 				n(4597,  {	-- Samuel Van Brunt <Blacksmithing Supplies>
 					["coord"] = { 61.4, 30.1, 90 },
 					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_BLACKSMITHING_RECIPES, {}),
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 3356}, -- Sumi <Blacksmithing Supplies>
+					},
 				}),
 				n(52588, {	-- Sara Lanner <Jewelcrafting Supplies>
 					["coord"] = { 56.2, 36.6, 90 },
 					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_JEWELCRAFTING_RECIPES, {}),
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 50482}, -- Marith Lazuria <Jewelcrafting Supplies>
+					},
 				}),
 				n(4617,  {	-- Thaddeus Webb <Enchanting Supplies>
 					["coord"] = { 62.0, 60.8, 90 },
 					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_ENCHANTING_RECIPES, {
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 3346}, -- Kithas <Enchanting Supplies>
+					},
+					["groups"] = {
 						i(20753),	-- Formula: Lesser Wizard Oil
 						i(20752),	-- Formula: Minor Mana Oil
 						i(20758),	-- Formula: Minor Wizard Oil
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
-					}),
+					},
 				}),
 			}),
 		}),

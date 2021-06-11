@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(10, {	-- Northern Barrens
+		m(NORTHERN_BARRENS, {
 			n(ZONEDROPS, {
 				i(5107, {	-- Deckhand's Shirt
 					["crs"] = {

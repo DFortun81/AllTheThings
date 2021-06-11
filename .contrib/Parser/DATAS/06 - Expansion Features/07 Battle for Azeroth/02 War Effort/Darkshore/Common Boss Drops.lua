@@ -6,7 +6,7 @@ _.ExpansionFeatures =
 {
 	tier(8, {	-- Battle for Azeroth
 		n(-10057, {	-- War Effort
-			m(62, {	-- Darkshore
+			m(DARKSHORE, {
 				n(COMMON_BOSS_DROPS, {
 					["description"] = "These can drop off any rare or world boss in the zone.",
 					["crs"] = {

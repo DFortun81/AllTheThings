@@ -22,7 +22,7 @@ _.WorldEvents =
 				n(101759, {	-- Kiatke <Timewalking Vendor>
 					["maps"] = {
 						84,	-- Stormwind City
-						85,	-- Orgrimmar
+						ORGRIMMAR,
 					},
 					["g"] = {
 					-- Commendations!!

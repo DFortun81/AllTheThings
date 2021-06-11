@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(81, {	-- Silithus
+		m(SILITHUS, {
 			n(VENDORS, {
 				n(15293,  {	-- Aendel Windspear
-					["coord"] = { 64.6, 45.8, 81 },
+					["coord"] = { 64.6, 45.8, SILITHUS },
 					["g"] = {
 						i(22769),	-- Pattern: Bramblewood Belt
 						i(22770),	-- Pattern: Bramblewood Boots
@@ -23,7 +23,7 @@ _.Zones =
 					},
 				}),
 				n(15174,  {	-- Calandrath <Innkeeper>
-					["coord"] = { 55.4, 36.6, 81 },
+					["coord"] = { 55.4, 36.6, SILITHUS },
 					["g"] = {
 						i(13496, {	-- Recipe: Greater Nature Protection Potion
 							["isLimited"] = true,
@@ -31,16 +31,19 @@ _.Zones =
 					},
 				}),
 				n(132139, {	-- Hagras Wartaker <Blacksmith> (Silithus)
-					["coord"] = { 66.2, 55.2, 81 },
+					["coord"] = { 66.2, 55.2, SILITHUS },
 					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_BLACKSMITHING_RECIPES, {
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 3356}, -- Sumi <Blacksmithing Supplies>
+					},
+					["groups"] = {
 						i(12162, {	-- Plans: Hardened Iron Shortsword
 							["isLimited"] = true,
 						}),
-					}),
+					},
 				}),
 				n(15419,  {	-- Kania <Enchanting Supplies>
-					["coord"] = { 55.6, 37.2, 81 },
+					["coord"] = { 55.6, 37.2, SILITHUS },
 					["g"] = {
 						i(20754),	-- Formula: Lesser Mana Oil
 						i(20753),	-- Formula: Lesser Wizard Oil
@@ -52,7 +55,7 @@ _.Zones =
 					},
 				}),
 				n(15179,  {	-- Mishta <Trade Supplies>
-					["coord"] = { 53.8, 34.4, 81 },
+					["coord"] = { 53.8, 34.4, SILITHUS },
 					["g"] = {
 						i(21952, { 	-- Design: Emerald Crown of Destruction
 							["isLimited"] = true,
@@ -66,7 +69,7 @@ _.Zones =
 					},
 				}),
 				n(15176,  {	-- Vargus <Blacksmith>
-					["coord"] = { 55.0, 36.5, 81 },
+					["coord"] = { 55.0, 36.5, SILITHUS },
 					["g"] = {
 						i(22766),	-- Plans: Ironvine Breastplate
 						i(22767),	-- Plans: Ironvine Gloves
@@ -76,7 +79,7 @@ _.Zones =
 					},
 				}),
 				n(12956,  {	-- Zannok Hidepiercer <Leatherworking Supplies>
-					["coord"] = { 81.2, 18.6, 81 },
+					["coord"] = { 81.2, 18.6, SILITHUS },
 					["g"] = {
 						i(15724, {	-- Pattern: Heavy Scorpid Bracers
 							["isLimited"] = true,

@@ -516,8 +516,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 									["races"] = ALLIANCE_ONLY,
 									["g"] = {
 										crit(1,  {	-- Ashenvale, Astranaar
-											["coord"] = { 37.0, 49.3, 63 },
-											["maps"] = { 63 },	-- Ashenvale
+											["coord"] = { 37.0, 49.3, ASHENVALE },
+											["maps"] = { ASHENVALE },
 										}),
 										crit(2,  {	-- Azuremyst Isle, Azure Watch
 											["coord"] = { 48.5, 49.1, AZUREMYST_ISLE },
@@ -528,8 +528,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { BLOODMYST_ISLE },
 										}),
 										crit(4,  {	-- Darkshore, Lor'danel
-											["coord"] = { 50.8, 18.8, 62 },
-											["maps"] = { 62 },	-- Darkshore
+											["coord"] = { 50.8, 18.8, DARKSHORE },
+											["maps"] = { DARKSHORE },	-- Darkshore
 										}),
 										crit(5,  {	-- Darnassus, Craftsmen's Terrace
 											["coord"] = { 62.2, 33.0, 89 },
@@ -544,20 +544,20 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { 66 },	-- Desolace
 										}),
 										crit(8,  {	-- Dustwallow Marsh, Mudsprocket
-											["coord"] = { 41.0, 73.0, 70 },
-											["maps"] = { 70 },	-- Dustwallow Marsh
+											["coord"] = { 41.0, 73.0, DUSTWALLOW_MARSH },
+											["maps"] = { DUSTWALLOW_MARSH },
 										}),
 										crit(9,  {	-- Exodar, Seat of the Naaru
 											["coord"] = { 59.3, 19.2, THE_EXODAR },
 											["maps"] = { THE_EXODAR },
 										}),
 										crit(10, {	-- Felwood - Talonbranch Glade
-											["coord"] = { 61.8, 26.7, 77 },
-											["maps"] = { 77 },	-- Felwood
+											["coord"] = { 61.8, 26.7, FELWOOD },
+											["maps"] = { FELWOOD },
 										}),
 										crit(11, {	-- Felwood - Whisperwind Grove
-											["coord"] = { 44.6, 28.9, 77 },
-											["maps"] = { 77 },	-- Felwood
+											["coord"] = { 44.6, 28.9, FELWOOD },
+											["maps"] = { FELWOOD },
 										}),
 										crit(12, {	-- Feralas, Dreamer's Rest
 											["coord"] = { 51.1, 17.8, FERALAS },
@@ -568,24 +568,24 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { FERALAS },
 										}),
 										crit(14, {	-- Northern Barrens, Ratchet
-											["coord"] = { 67.3, 74.7, 10 },
-											["maps"] = { 10 },	-- Northern Barrens
+											["coord"] = { 67.3, 74.7, NORTHERN_BARRENS },
+											["maps"] = { NORTHERN_BARRENS },
 										}),
 										crit(15, {	-- Silithus, Cenarion Hold
-											["coord"] = { 55.5, 36.7, 81 },
-											["maps"] = { 81 },	-- Silithus
+											["coord"] = { 55.5, 36.7, SILITHUS },
+											["maps"] = { SILITHUS },
 										}),
 										crit(16, {	-- Southern Barrens, Fort Triumph
-											["coord"] = { 49.1, 68.5, 199 },
-											["maps"] = { 199 },	-- Southern Barrens
+											["coord"] = { 49.1, 68.5, SOUTHERN_BARRENS },
+											["maps"] = { SOUTHERN_BARRENS },
 										}),
 										crit(17, {	-- Southern Barrens, Honor's Stand
-											["coord"] = { 39.0, 11.0, 199 },
-											["maps"] = { 199 },	-- Southern Barrens
+											["coord"] = { 39.0, 11.0, SOUTHERN_BARRENS },
+											["maps"] = { SOUTHERN_BARRENS },
 										}),
 										crit(18, {	-- Southern Barrens, Northwatch Hold
-											["coord"] = { 65.6, 46.6, 199 },
-											["maps"] = { 199 },	-- Southern Barrens
+											["coord"] = { 65.6, 46.6, SOUTHERN_BARRENS },
+											["maps"] = { SOUTHERN_BARRENS },
 										}),
 										crit(19, {	-- Stonetalon Mountains, Farwatcher's Glen
 											["coord"] = { 31.5, 60.7, 65 },
@@ -629,24 +629,24 @@ _.Holidays = bubbleDown({["u"] = 26},
 									["races"] = HORDE_ONLY,
 									["g"] = {
 										crit(1,  {	-- Ashenvale, Hellscream's Watch
-											["coord"] = { 38.6, 42.4, 63 },
-											["maps"] = { 63 },	-- Ashenvale
+											["coord"] = { 38.6, 42.4, ASHENVALE },
+											["maps"] = { ASHENVALE },
 										}),
 										crit(2,  {	-- Ashenvale, Silverwind Refuge
-											["coord"] = { 50.2, 67.2, 63 },
-											["maps"] = { 63 },	-- Ashenvale
+											["coord"] = { 50.2, 67.2, ASHENVALE },
+											["maps"] = { ASHENVALE },
 										}),
 										crit(3,  {	-- Ashenvale, Splintertree Post
-											["coord"] = { 73.9, 60.7, 63 },
-											["maps"] = { 63 },	-- Ashenvale
+											["coord"] = { 73.9, 60.7, ASHENVALE },
+											["maps"] = { ASHENVALE },
 										}),
 										crit(4,  {	-- Ashenvale, Zoram'gar Outpost
-											["coord"] = { 13.0, 34.1, 63 },
-											["maps"] = { 63 },	-- Ashenvale
+											["coord"] = { 13.0, 34.1, ASHENVALE },
+											["maps"] = { ASHENVALE },
 										}),
 										crit(5,  {	-- Azshara, Bilgewater Harbor
-											["coord"] = { 57.1, 50.2, 76 },
-											["maps"] = { 76 },	-- Azshara
+											["coord"] = { 57.1, 50.2, AZSHARA },
+											["maps"] = { AZSHARA },
 										}),
 										crit(6,  {	-- Desolace, Karnum's Glade
 											["coord"] = { 56.8, 50.0, 66 },
@@ -661,16 +661,16 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { 1 },	-- Durotar
 										}),
 										crit(9,  {	-- Dustwallow Marsh, Brackenwall Village
-											["coord"] = { 36.8, 32.4, 70 },
-											["maps"] = { 70 },	-- Dustwallow Marsh
+											["coord"] = { 36.8, 32.4, DUSTWALLOW_MARSH },
+											["maps"] = { DUSTWALLOW_MARSH },
 										}),
 										crit(10, {	-- Dustwallow Marsh, Mudsprocket
-											["coord"] = { 41.0, 73.0, 70 },
-											["maps"] = { 70 },	-- Dustwallow Marsh
+											["coord"] = { 41.0, 73.0, DUSTWALLOW_MARSH },
+											["maps"] = { DUSTWALLOW_MARSH },
 										}),
 										crit(11, {	-- Felwood, Whisperwind Grove
-											["coord"] = { 44.6, 28.9, 77 },
-											["maps"] = { 77 },	-- Felwood
+											["coord"] = { 44.6, 28.9, FELWOOD },
+											["maps"] = { FELWOOD },
 										}),
 										crit(12, {	-- Feralas, Camp Ataya
 											["coord"] = { 41.4, 15.6, FERALAS },
@@ -689,36 +689,36 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { 7 },	-- Mulgore
 										}),
 										crit(16, {	-- Northern Barrens, The Crossroads
-											["coord"] = { 49.5, 58.0, 10 },
-											["maps"] = { 10 },	-- Northern Barrens
+											["coord"] = { 49.5, 58.0, NORTHERN_BARRENS },
+											["maps"] = { NORTHERN_BARRENS },
 										}),
 										crit(17, {	-- Northern Barrens, Grol'dom Farm
-											["coord"] = { 56.3, 40.1, 10 },
-											["maps"] = { 10 },	-- Northern Barrens
+											["coord"] = { 56.3, 40.1, NORTHERN_BARRENS },
+											["maps"] = { NORTHERN_BARRENS },
 										}),
 										crit(18, {	-- Northern Barrens, Nozzlepot's Outpost
-											["coord"] = { 62.5, 16.6, 10 },
-											["maps"] = { 10 },	-- Northern Barrens
+											["coord"] = { 62.5, 16.6, NORTHERN_BARRENS },
+											["maps"] = { NORTHERN_BARRENS },
 										}),
 										crit(19, {	-- Northern Barrens, Ratchet
-											["coord"] = { 67.3, 74.7, 10 },
-											["maps"] = { 10 },	-- Northern Barrens
+											["coord"] = { 67.3, 74.7, NORTHERN_BARRENS },
+											["maps"] = { NORTHERN_BARRENS },
 										}),
 										crit(20, {	-- Orgrimmar, Valley of Strength
-											["coord"] = { 53.8, 78.8, 85 },
-											["maps"] = { 85 },	-- Orgrimmar
+											["coord"] = { 53.8, 78.8, ORGRIMMAR },
+											["maps"] = { ORGRIMMAR },
 										}),
 										crit(21, {	-- Silithus, Cenarion Hold
-											["coord"] = { 55.5, 36.7, 81 },
-											["maps"] = { 81 },	-- Silithus
+											["coord"] = { 55.5, 36.7, SILITHUS },
+											["maps"] = { SILITHUS },
 										}),
 										crit(22, {	-- Southern Barrens, Desolation Hold
-											["coord"] = { 40.7, 69.3, 199 },
-											["maps"] = { 199 },	-- Southern Barrens
+											["coord"] = { 40.7, 69.3, SOUTHERN_BARRENS },
+											["maps"] = { SOUTHERN_BARRENS },
 										}),
 										crit(23, {	-- Southern Barrens, Hunter's Hill
-											["coord"] = { 39.3, 20.1, 199 },
-											["maps"] = { 199 },	-- Southern Barrens
+											["coord"] = { 39.3, 20.1, SOUTHERN_BARRENS },
+											["maps"] = { SOUTHERN_BARRENS },
 										}),
 										crit(24, {	-- Stonetalon Mountains, Krom'gar Fortress
 											["coord"] = { 66.5, 64.2, 65 },

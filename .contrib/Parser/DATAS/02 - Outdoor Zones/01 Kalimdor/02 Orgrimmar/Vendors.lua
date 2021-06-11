@@ -5,16 +5,16 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(85, {	-- Orgrimmar
+		m(ORGRIMMAR, {
 			n(VENDORS, {
 				n(149806, {	-- A. Shady
-					["coord"] = { 76.7, 35.6, 85 },
+					["coord"] = { 76.7, 35.6, ORGRIMMAR },
 					["g"] = {
 						i(166805),	-- Blood-Soaked Invitation (QI)
 					},
 				}),
 				n(175050, {	-- Aneka Melae
-					["coord"] = { 37.5, 71.4, 85 },
+					["coord"] = { 37.5, 71.4, ORGRIMMAR },
 					["g"] = {
 						n(-659, {	-- Aspirant PvP Gear
 							n(-319, {	-- Weapons
@@ -219,11 +219,11 @@ _.Zones =
 				}),
 				n(52809,  {	-- Blax Bottlerocket <Toys and Novelties>
 					["coords"] = {
-						{ 58.2, 62.6, 85 },
-						{ 58.8, 61.2, 85 },
-						{ 58.6, 57.8, 85 },
-						{ 58.6, 55.2, 85 },
-						{ 57.8, 51.0, 85 },
+						{ 58.2, 62.6, ORGRIMMAR },
+						{ 58.8, 61.2, ORGRIMMAR },
+						{ 58.6, 57.8, ORGRIMMAR },
+						{ 58.6, 55.2, ORGRIMMAR },
+						{ 57.8, 51.0, ORGRIMMAR },
 					},
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -246,7 +246,7 @@ _.Zones =
 					},
 				}),
 				n(69977,  {	-- Blood Guard Zar'shi <Ruthless Gladiator>
-					["coord"] = { 38.6, 70.0, 85 },
+					["coord"] = { 38.6, 70.0, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
 						{"sub", "pvp_gear_base", -9979, -672, -661 },
@@ -255,14 +255,14 @@ _.Zones =
 					},
 				}),
 				n(54659,  {	-- Blood Guard Zar'shi Original CATA S10 ELITE VENDOR
-					["coord"] = { 38.2, 71.0, 85 },
+					["coord"] = { 38.2, 71.0, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 					},
 				}),
 				n(3364,   {	-- Borya <Tailoring Supplies>
-					["coord"] = { 60.6, 58.6, 85 },
+					["coord"] = { 60.6, 58.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = appendGroups(COMMON_CATACLYSM_TAILORING_RECIPES, {
 						i(6270, {	-- Pattern: Blue Linen Vest
@@ -283,7 +283,7 @@ _.Zones =
 					}),
 				}),
 				n(12793,  {	-- Brave Stonehide <Accessories Quartermaster>
-					["coord"] = { 38.2, 72.6, 85 },
+					["coord"] = { 38.2, 72.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(15199, {	-- Stone Guard's Herald
@@ -307,7 +307,7 @@ _.Zones =
 					},
 				}),
 				n(50477,  {	-- Champion Uru'zin <Darkspear Quartermaster>
-					["coord"] = { 49.9, 58.1, 85 },
+					["coord"] = { 49.9, 58.1, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(45582),	-- Darkspear Tabard
@@ -319,7 +319,7 @@ _.Zones =
 				}),
 				n(73151,  {	-- Deathguard Netharian <Combatant Mount Quartermaster>
 					["races"] = HORDE_ONLY,
-					["coord"] = { 41.8, 73.0, 85 },
+					["coord"] = { 41.8, 73.0, ORGRIMMAR },
 					["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
 						i(70910, {	-- Horn of the Vicious War Wolf Mount
 							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
@@ -355,7 +355,7 @@ _.Zones =
 				}),
 				n(69333,  {	-- Disciple Jusi <Huojin Quartermaster>
 					["races"] = HORDE_ONLY,
-					["coord"] = { 68., 40.2, 85 },
+					["coord"] = { 68.6, 40.2, ORGRIMMAR },
 					["g"] = {
 						i(83080),	-- Huojin Tabard
 						i(92070),	-- Houjin Satchel
@@ -363,19 +363,19 @@ _.Zones =
 				}),
 				n(24520, {	-- Doris Volanthius <Armor Quartermaster> -- BC Vendor for Trinkets
 					-- The NPC ID got reused many times. This is the BC Version, items listed under PvP>BC
-					["coord"] = { 38.8, 69.8, 85 },
+					["coord"] = { 38.8, 69.8, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 					},
 				}),
 				n(46593,  {	-- Doris Volanthius Original CATA S9 ELITE VENDOR Horde
-					["coord"] = { 38.8, 69.8, 85 },
+					["coord"] = { 38.8, 69.8, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				n(54657,  {	-- Doris Volanthius <Vicious Gladiator>
-					["coord"] = { 38.8, 69.8, 85 },
+					["coord"] = { 38.8, 69.8, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
 						{"sub", "pvp_gear_base", -9979, -672, -661 },	-- Vicious Gladiator: Season 9 Gladiator Gear
@@ -386,7 +386,7 @@ _.Zones =
 				}),
 				n(44918,  {	-- Drakma <Wind Rider Keeper>
 					["races"] = HORDE_ONLY,
-					["coord"] = { 48.0, 58.6, 85 },
+					["coord"] = { 48.0, 58.6, ORGRIMMAR },
 					["g"] = {
 						i(25477),	-- Swift Red Wind Rider Mount
 						i(25531),	-- Swift Green Wind Rider Mount
@@ -400,8 +400,8 @@ _.Zones =
 				n(3367,   {	-- Felika <Trade Supplies>
 					["description"] = "This NPC walks between the Valley of Wisdom and Valley of Strength on the right path.",
 					["coords"] = {
-						{ 48.4, 47.8, 85 },
-						{ 52.6, 64.6, 85 },
+						{ 48.4, 47.8, ORGRIMMAR },
+						{ 52.6, 64.6, ORGRIMMAR },
 					},
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -420,7 +420,7 @@ _.Zones =
 					},
 				}),
 				n(133261, {	-- Feng Su <Cooking Trainer>
-					["coord"] = { 41.0, 79.4, 85 },
+					["coord"] = { 41.0, 79.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(21219),	-- Recipe: Sagefish Delight
@@ -429,7 +429,7 @@ _.Zones =
 				}),
 				n(12795,  {	-- First Sergeant Hola'mahi <Legacy Armor Quartermaster>
 					["races"] = HORDE_ONLY,
-					["coord"] = { 38.2, 72.6, 85 },
+					["coord"] = { 38.2, 72.6, ORGRIMMAR },
 					["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
 						i(28377), 	-- Sergeant's Heavy Cloak
 						i(28378), 	-- Sergeant's Heavy Cape
@@ -558,7 +558,7 @@ _.Zones =
 					}),
 				}),
 				n(50323,  {	-- Frizzo Villamar <Bilgewater Cartel Quartermaster>
-					["coord"] = { 50.0, 58.6, 85 },
+					["coord"] = { 50.0, 58.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(64884),	-- Bilgewater Cartel Tabard
@@ -570,7 +570,7 @@ _.Zones =
 				}),
 				n(52036,  {	-- Galra <Honor Heirlooms>
 					["itemID"] = 137642,	-- Mark of Honor
-					["coord"] = { 38.0, 70.8, 85 },
+					["coord"] = { 38.0, 70.8, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(122375, {	-- Aged Paundrons of The Five Thunders
@@ -647,7 +647,7 @@ _.Zones =
 				}),
 				n(46555,  {	-- Gunra <Justice Quartermaster>
 					["races"] = HORDE_ONLY,
-					["coord"] = { 48.4, 71.6, 85 },
+					["coord"] = { 48.4, 71.6, ORGRIMMAR },
 					["g"] = {
 						i(71213),	-- Amulet of Burning Brilliance
 						i(71281),	-- Balespider's Handwraps
@@ -1235,7 +1235,7 @@ _.Zones =
 					},
 				}),
 				n(3316,   {	-- Handor <Cloth & Leather Armor Merchant>
-					["coord"] = { 60.8, 54.0, 85 },
+					["coord"] = { 60.8, 54.0, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(12256, {	-- Cindercloth Leggings
@@ -1244,7 +1244,7 @@ _.Zones =
 					},
 				}),
 				n(46556,  {	-- Jamus'Vaz <Valor Quartermaster>
-					["coord"] = { 48.6, 71.4, 85 },
+					["coord"] = { 48.6, 71.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(77162),	-- Arrowflick Gauntlets
@@ -2181,7 +2181,7 @@ _.Zones =
 					},
 				}),
 				n(3322,   {	-- Kaja <Bow & Rifle Vendor>
-					["coord"] = { 40.8, 49.6, 85 },
+					["coord"] = { 40.8, 49.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(11303, {	-- Fine Shortbow
@@ -2196,7 +2196,7 @@ _.Zones =
 					},
 				}),
 				n(48510,  {	-- Kall Worthaton <Trike Dealer>
-					["coord"] = { 36.2, 86.6, 85 },
+					["coord"] = { 36.2, 86.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(62462),	-- Goblin Turbo-Trike Key Mount
@@ -2204,7 +2204,7 @@ _.Zones =
 					},
 				}),
 				n(45551,  {	-- Karizi Porkpatty <Cooking Supplies>
-					["coord"] = { 39.0, 85.6, 85 },
+					["coord"] = { 39.0, 85.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(21219),	-- Recipe: Sagefish Delight
@@ -2212,7 +2212,7 @@ _.Zones =
 					},
 				}),
 				n(3346,   {	-- Kithas <Enchanting Supplies>
-					["coord"] = { 53.2, 48.8, 85 },
+					["coord"] = { 53.2, 48.8, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = appendGroups(COMMON_CATACLYSM_ENCHANTING_RECIPES, {
 						i(6349, {	-- Formula: Enchant 2H Weapon - Lesser Intellect
@@ -2225,7 +2225,7 @@ _.Zones =
 					}),
 				}),
 				n(3348,   {	-- Kor'geld <Alchemy Supplies>
-					["coord"] = { 55.6, 45.4, 85 },
+					["coord"] = { 55.6, 45.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(13478, {	-- Recipe: Elixir of Superior Defense
@@ -2331,10 +2331,10 @@ _.Zones =
 					},
 				}),
 				n(133239, {	-- Leyweaver Aurielle
-					["coord"] = { 38.2, 86.8, 85 },
+					["coord"] = { 38.2, 86.8, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
-						{"sub", "common_cata_recipes", 3364},
+						{"sub", "common_recipes_vendor", 3364}, -- Borya <Tailoring Supplies>
 					},
 					["g"] = {
 						i(6270, {	-- Pattern: Blue Linen Vest
@@ -2355,11 +2355,11 @@ _.Zones =
 					},
 				}),
 				n(45558,  {	-- Lizna Goldweaver <Tailoring Supplies> (removed 7.3.5? when embassy took over)
-					["coord"] = { 41.0, 79.8, 85 },
+					["coord"] = { 41.0, 79.8, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["sym"] = {
-						{"sub", "common_cata_recipes", 3364},
+						{"sub", "common_recipes_vendor", 3364}, -- Borya <Tailoring Supplies>
 					},
 					["groups"] = {
 						i(6270, {	-- Pattern: Blue Linen Vest
@@ -2380,19 +2380,19 @@ _.Zones =
 					},
 				}),
 				n(50482,  {	-- Marith Lazuria <Jewelcrafting Supplies>
-					["coord"] = { 72.4, 34.6, 85 },
+					["coord"] = { 72.4, 34.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = appendGroups(COMMON_CATACLYSM_JEWELCRAFTING_RECIPES, {}),
 				}),
 				n(46716,  {	-- Nerog <Inscription Trainer>
-					["coord"] = { 55.2, 55.8, 85 },
+					["coord"] = { 55.2, 55.8, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(140565),	-- Technique: Songs of the Horde
 					},
 				}),
 				n(3362,   {	-- Ogunaro Wolfrunner <Kennel Master>
-				["coord"] = { 61.6, 35.6, 85 },
+				["coord"] = { 61.6, 35.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(18796),	-- Horn of the Swift Brown Wolf
@@ -2405,7 +2405,7 @@ _.Zones =
 					},
 				}),
 				n(3317,   {	-- Ollanus <Cloth Armor Merchant>
-					["coord"] = { 60.6, 58.6, 85 },
+					["coord"] = { 60.6, 58.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(3428),	-- Common Gray Shirt
@@ -2414,16 +2414,19 @@ _.Zones =
 					},
 				}),
 				n(46359,  {	-- Punra <Blacksmithing Supplies>
-					["coord"] = { 45.0, 77.6, 85 },
+					["coord"] = { 45.0, 77.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_BLACKSMITHING_RECIPES, {
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 3356}, -- Sumi <Blacksmithing Supplies>
+					},
+					["groups"] = {
 						i(12162, {	-- Plans: Hardened Iron Shortsword
 							["isLimited"] = true,
 						}),
-					}),
+					},
 				}),
 				n(12796,  {	-- Raider Bork <War Mount Quartermaster>
-					["coord"] = { 41.8, 72.6, 85 },
+					["coord"] = { 41.8, 72.6, ORGRIMMAR },
 					["itemID"] = 137642,	-- Mark of Honor
 					["races"] = HORDE_ONLY,
 					["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
@@ -2439,7 +2442,7 @@ _.Zones =
 					}),
 				}),
 				n(52033,  {	-- Rogoc <Bloodthirsty Gladiator>
-					["coord"] = { 37.8, 71.6, 85 },
+					["coord"] = { 37.8, 71.6, ORGRIMMAR },
 					["itemID"] = 137642,	-- Mark of Honor
 					["races"] = HORDE_ONLY,
 					["sym"] = {
@@ -2448,7 +2451,7 @@ _.Zones =
 					},
 				}),
 				n(58155,  {	-- Rugok <Legacy Justice Quartermaster>
-					["coord"] = { 48.2, 71.6, 85 },
+					["coord"] = { 48.2, 71.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(57931),	-- Amulet of Dull Dreaming
@@ -3166,7 +3169,7 @@ _.Zones =
 					},
 				}),
 				n(69978,  {	-- Sergeant Thunderhorn <Cataclysmic Gladiator>
-					["coord"] = { 38.8, 70.0, 85 },
+					["coord"] = { 38.8, 70.0, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
 						{"sub", "pvp_gear_base", -9979, -674, -661 },	-- Cataclysmic Gladiator: Season 11 Gladiator Gear
@@ -3175,7 +3178,7 @@ _.Zones =
 					},
 				}),
 				n(3333,   {	-- Shankys <Fishing Supplies>
-					["coord"] = { 66.6, 41.6, 85 },
+					["coord"] = { 66.6, 41.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(17062),	-- Recipe: Mithril Head Trout
@@ -3184,7 +3187,7 @@ _.Zones =
 					},
 				}),
 				n(49737,  {	-- Shazdar <Sous Chef>
-					["coord"] = { 56.8, 62.6, 85 },
+					["coord"] = { 56.8, 62.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(65426, {	-- Recipe: Baked Rockfish
@@ -3277,7 +3280,7 @@ _.Zones =
 					},
 				}),
 				n(3413,   {	-- Sovik
-					["coord"] = { 56.0, 56.0, 85 },
+					["coord"] = { 56.0, 56.0, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(18647, {	-- Schematic: Red Firework
@@ -3289,7 +3292,7 @@ _.Zones =
 					},
 				}),
 				n(50488,  {	-- Stone Guard Nargol <Orgrimmar Quartermaster>
-					["coord"] = { 50.4, 58.4, 85 },
+					["coord"] = { 50.4, 58.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(45581),	-- Orgrimmar Tabard
@@ -3300,7 +3303,7 @@ _.Zones =
 					},
 				}),
 				n(12794,  {	-- Stone Guard Zarg <Legacy Weapon Quartermaster>
-					["coord"] = { 38.6, 72.8, 85 },
+					["coord"] = { 38.6, 72.8, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
 						i(18831, {	-- High Warlord's Battle Axe
@@ -3370,7 +3373,7 @@ _.Zones =
 					}),
 				}),
 				n(46708,  {	-- Suja <Cooking Supplies>
-					["coord"] = { 56.6, 61.2, 85 },
+					["coord"] = { 56.6, 61.2, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(21219),	-- Recipe: Sagefish Delight
@@ -3378,7 +3381,7 @@ _.Zones =
 					},
 				}),
 				n(3356,   {	-- Sumi <Blacksmithing Supplies>
-					["coord"] = { 75.8, 35.2, 85 },
+					["coord"] = { 75.8, 35.2, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = appendGroups(COMMON_CATACLYSM_BLACKSMITHING_RECIPES, {
 						i(12162, {	-- Plans: Hardened Iron Shortsword
@@ -3387,7 +3390,7 @@ _.Zones =
 					}),
 				}),
 				n(3366,   {	-- Tamar <Leatherworking Supplies>
-					["coord"] = { 60.6, 54.4, 85 },
+					["coord"] = { 60.6, 54.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = appendGroups(COMMON_CATACLYSM_LEATHERWORKING_RECIPES, {
 						i(18731, {	-- Pattern: Heavy Leather Ball
@@ -3396,7 +3399,7 @@ _.Zones =
 					}),
 				}),
 				n(57922,  {	-- Taryssa Lazuria <Jewelcrafting Supplies>
-					["coord"] = { 72.4, 34.6, 85 },
+					["coord"] = { 72.4, 34.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(71928, {	-- Design: Accurate Shadow Spinel
@@ -3603,7 +3606,7 @@ _.Zones =
 					},
 				}),
 				n(133127, {	-- Thaluriel <Engineering Supplies>
-					["coord"] = { 36.8, 84.6, 85 },
+					["coord"] = { 36.8, 84.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(18647, {	-- Schematic: Red Firework
@@ -3615,7 +3618,7 @@ _.Zones =
 					},
 				}),
 				n(3315,   {	-- Tor'phan <Cloth & Leather Armor Merchant>
-					["coord"] = { 60.8, 59.6, 85 },
+					["coord"] = { 60.8, 59.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(12255, {	-- Pale Leggings
@@ -3624,7 +3627,7 @@ _.Zones =
 					},
 				}),
 				n(66022,  {	-- Turtlemaster Odai <Dragon Turtle Breeder>
-					["coord"] = { 69.8, 41.0, 85 },
+					["coord"] = { 69.8, 41.0, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(91008, { 	-- Black Dragon Turtle (Panda)
@@ -3679,7 +3682,7 @@ _.Zones =
 					},
 				}),
 				n(45546,  {	-- Vizna Bangwrench <Engineering Supplies>
-					["coord"] = { 36.6, 86.8, 85 },
+					["coord"] = { 36.6, 86.8, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(18647, {	-- Schematic: Red Firework
@@ -3692,7 +3695,7 @@ _.Zones =
 				}),
 				n(8404,   {	-- Xan'tish <Snake Vendor>
 					["description"] = "This NPC walks around in a circle in the Valley of Spirits.",
-					["coord"] = { 34.0, 67.6, 85 },
+					["coord"] = { 34.0, 67.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(10360),	-- Black Kingsnake
@@ -3702,20 +3705,23 @@ _.Zones =
 				}),
 				n(3400,   {	-- Xen'to <Cooking Supplies>
 					["races"] = HORDE_ONLY,
-					["coord"] = { 32.6, 68.6, 85 },
+					["coord"] = { 32.6, 68.6, ORGRIMMAR },
 					["g"] = {
 						i(21219),	-- Recipe: Sagefish Delight
 						i(21099),	-- Recipe: Smoked Sagefish
 					},
 				}),
 				n(45549,  {	-- Zido Helmbreaker <Blacksmithing Supplies>
-					["coord"] = { 36.2, 83.2, 85 },
+					["coord"] = { 36.2, 83.2, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
-					["groups"] = appendGroups(COMMON_CATACLYSM_BLACKSMITHING_RECIPES, {
+					["sym"] = {
+						{"sub", "common_recipes_vendor", 3356}, -- Sumi <Blacksmithing Supplies>
+					},
+					["groups"] = {
 						i(12162, {	-- Plans: Hardened Iron Shortsword
 							["isLimited"] = true,
 						}),
-					}),
+					},
 				}),
 			}),
 		}),

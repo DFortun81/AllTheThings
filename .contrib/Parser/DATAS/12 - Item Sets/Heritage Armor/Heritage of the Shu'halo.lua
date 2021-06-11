@@ -8,11 +8,11 @@ _.GearSets =
 		gs(1829, {	-- Heritage of the Shu'halo
 			q(54759, {	-- When Spririts Whisper
 				["provider"] = { "n", 149088 },	-- Spiritwalker Isahi
-				["coord"] = { 39.1, 79.0, 85 },
+				["coord"] = { 39.1, 79.0, ORGRIMMAR },
 				["sourceQuest"] = 55779,	-- Stay of Execution (after the Baine Rescue Scenario)
 				["races"] = { TAUREN },
 				["minReputation"] = { 81, EXALTED },
-				["maps"] = { 85 },	-- Orgrimmar
+				["maps"] = { ORGRIMMAR },
 			}),
 			q(54760, {	-- The Spiritwalkers
 				["provider"] = { "n", 36648 },	-- Baine Bloodhoof <High Chieftain>

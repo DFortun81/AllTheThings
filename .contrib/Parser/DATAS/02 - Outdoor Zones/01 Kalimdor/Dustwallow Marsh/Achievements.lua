@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(70, {	-- Dustwallow Marsh
+		m(DUSTWALLOW_MARSH, {
 			n(ACHIEVEMENTS, {
 				ach(4929, {	-- Dustwallow Marsh Quests (Alliance)
 					["races"] = ALLIANCE_ONLY,

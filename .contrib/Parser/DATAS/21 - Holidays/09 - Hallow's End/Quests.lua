@@ -79,18 +79,18 @@ _.Holidays = bubbleDown({["u"] = 26},
 				},
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = {
-					10,  -- Northern Barrens
-					71,  -- Tanaris
-					83,  -- Winterspring
-					87,  -- Ironforge
-					84,  -- Stormwind City
-					89,  -- Darnassus
+					NORTHERN_BARRENS,
+					71,		-- Tanaris
+					83,		-- Winterspring
+					87,		-- Ironforge
+					84,		-- Stormwind City
+					89,		-- Darnassus
 					THE_EXODAR,
 					NETHERSTORM,
 					SHATTRATH_CITY,
-					120, -- The Storm Peaks
-					210, -- The Cape of Stranglethorn
-					125, -- Dalaran: Northrend
+					120,	-- The Storm Peaks
+					210,	-- The Cape of Stranglethorn
+					125,	-- Dalaran: Northrend
 				},
 				["isBreadcrumb"] = true,
 			}),
@@ -105,18 +105,18 @@ _.Holidays = bubbleDown({["u"] = 26},
 				},
 				["races"] = HORDE_ONLY,
 				["maps"] = {
-					10,  -- Northern Barrens
-					71,  -- Tanaris
-					83,  -- Winterspring
-					85,  -- Orgrimmar
-					88,  -- Thunder Bluff
-					90,  -- Undercity
+					NORTHERN_BARRENS,
+					71,		-- Tanaris
+					83,		-- Winterspring
+					ORGRIMMAR,
+					88,		-- Thunder Bluff
+					90,		-- Undercity
 					EVERSONG_WOODS,
 					NETHERSTORM,
 					SHATTRATH_CITY,
-					120, -- The Storm Peaks
-					210, -- The Cape of Stranglethorn
-					125, -- Dalaran: Northrend
+					120,	-- The Storm Peaks
+					210,	-- The Cape of Stranglethorn
+					125,	-- Dalaran: Northrend
 				},
 				["isBreadcrumb"] = true,
 			}),
@@ -197,54 +197,54 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12345, {	-- Candy Bucket — Ashenvale, Astranaar, Alliance
 				["isYearly"] = true,
-				["coord"] = { 37.0, 49.3, 63 },
+				["coord"] = { 37.0, 49.3, ASHENVALE },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 63 },	-- Ashenvale
+				["maps"] = { ASHENVALE },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(28958, {	-- Candy Bucket — Ashenvale, Hellscream's Watch, Horde
 				["isYearly"] = true,
-				["coord"] = { 38.6, 42.4, 63 },
+				["coord"] = { 38.6, 42.4, ASHENVALE },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 63 },	-- Ashenvale
+				["maps"] = { ASHENVALE },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(28953, {	-- Candy Bucket — Ashenvale, Silverwind Refuge, Horde
 				["isYearly"] = true,
-				["coord"] = { 50.2, 67.2, 63 },
+				["coord"] = { 50.2, 67.2, ASHENVALE },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 63 },	-- Ashenvale
+				["maps"] = { ASHENVALE },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12377, {	-- Candy Bucket — Ashenvale, Splintertree Post, Horde
 				["isYearly"] = true,
-				["coord"] = { 73.9, 60.7, 63 },
+				["coord"] = { 73.9, 60.7, ASHENVALE },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 63 },	-- Ashenvale
+				["maps"] = { ASHENVALE },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(28989, {	-- Candy Bucket — Ashenvale, Zoram'gar Outpost, Horde
 				["isYearly"] = true,
-				["coord"] = { 13.0, 34.1, 63 },
+				["coord"] = { 13.0, 34.1, ASHENVALE },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 63 },	-- Ashenvale
+				["maps"] = { ASHENVALE },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(28992, {	-- Candy Bucket — Azshara, Bilgewater Harbor, Horde
 				["isYearly"] = true,
-				["coord"] = { 57.1, 50.2, 76 },
+				["coord"] = { 57.1, 50.2, AZSHARA },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 76 },	-- Azshara
+				["maps"] = { AZSHARA },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -509,9 +509,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(28951, {	-- Candy Bucket — Darkshore, Lor'danel, Alliance
 				["isYearly"] = true,
-				["coord"] = { 50.8, 18.8, 62 },
+				["coord"] = { 50.8, 18.8, DARKSHORE },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 62 },	-- Darkshore
+				["maps"] = { DARKSHORE },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -676,26 +676,26 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12383, {	-- Candy Bucket — Dustwallow Marsh, Brackenwall Village, Horde
 				["isYearly"] = true,
-				["coord"] = { 36.8, 32.4, 70 },
+				["coord"] = { 36.8, 32.4, DUSTWALLOW_MARSH },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 70 },	-- Dustwallow Marsh
+				["maps"] = { DUSTWALLOW_MARSH },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12398, {	-- Candy Bucket — Dustwallow Marsh, Mudsprocket, neutral
 				["isYearly"] = true,
-				["coord"] = { 41.0, 73.0, 70 },
-				["maps"] = { 70 },	-- Dustwallow Marsh
+				["coord"] = { 41.0, 73.0, DUSTWALLOW_MARSH },
+				["maps"] = { DUSTWALLOW_MARSH },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12349, {	-- Candy Bucket — Dustwallow Marsh, Theramore, Alliance
 				["isYearly"] = true,
-				["coord"] = { 66.6, 45.3, 70 },
+				["coord"] = { 66.6, 45.3, DUSTWALLOW_MARSH },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 70 },	-- Dustwallow Marsh
+				["maps"] = { DUSTWALLOW_MARSH },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -746,17 +746,17 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(28995, {	-- Candy Bucket — Felwood, Talonbranch Glade, Alliance
 				["isYearly"] = true,
-				["coord"] = { 61.8, 26.7, 77 },
+				["coord"] = { 61.8, 26.7, FELWOOD },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 77 },	-- Felwood
+				["maps"] = { FELWOOD },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(28994, {	-- Candy Bucket — Felwood, Whisperwind Grove, neutral
 				["isYearly"] = true,
-				["coord"] = { 44.6, 28.9, 77 },
-				["maps"] = { 77 },	-- Felwood
+				["coord"] = { 44.6, 28.9, FELWOOD },
+				["maps"] = { FELWOOD },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -1259,35 +1259,35 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12374, {	-- Candy Bucket — Northern Barrens, Crossroads, Horde
 				["isYearly"] = true,
-				["coord"] = { 49.5, 58.0, 10 },
+				["coord"] = { 49.5, 58.0, NORTHERN_BARRENS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 10 },	-- Northern Barrens
+				["maps"] = { NORTHERN_BARRENS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(29002, {	-- Candy Bucket — Northern Barrens, Grol'dom Farm, Horde
 				["isYearly"] = true,
-				["coord"] = { 56.3, 40.1, 10 },
+				["coord"] = { 56.3, 40.1, NORTHERN_BARRENS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 10 },	-- Northern Barrens
+				["maps"] = { NORTHERN_BARRENS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(29003, {	-- Candy Bucket — Northern Barrens, Nozzlepot's Outpost, Horde
 				["isYearly"] = true,
-				["coord"] = { 62.5, 16.6, 10 },
+				["coord"] = { 62.5, 16.6, NORTHERN_BARRENS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 10 },	-- Northern Barrens
+				["maps"] = { NORTHERN_BARRENS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12396, {	-- Candy Bucket — Northern Barrens, Ratchet, neutral
 				["isYearly"] = true,
-				["coord"] = { 67.3, 74.7, 10 },
-				["maps"] = { 10 },	-- Northern Barrens
+				["coord"] = { 67.3, 74.7, NORTHERN_BARRENS },
+				["maps"] = { NORTHERN_BARRENS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -1312,9 +1312,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12366, {	-- Candy Bucket — Orgrimmar, Valley of Strength, Horde
 				["isYearly"] = true,
-				["coord"] = { 53.8, 78.8, 85 },
+				["coord"] = { 53.8, 78.8, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 85 },	-- Orgrimmar
+				["maps"] = { ORGRIMMAR },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -1422,53 +1422,53 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12401, {	-- Candy Bucket — Silithus, Cenarion Hold, neutral
 				["isYearly"] = true,
-				["coord"] = { 55.5, 36.7, 81 },
-				["maps"] = { 81 },	-- Silithus
+				["coord"] = { 55.5, 36.7, SILITHUS },
+				["maps"] = { SILITHUS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(29005, {	-- Candy Bucket — Southern Barrens, Desolation Hold, Horde
 				["isYearly"] = true,
-				["coord"] = { 40.7, 69.3, 199 },
+				["coord"] = { 40.7, 69.3, SOUTHERN_BARRENS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 199 },	-- Southern Barrens
+				["maps"] = { SOUTHERN_BARRENS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(29008, {	-- Candy Bucket — Southern Barrens, Fort Triumph, Alliance
 				["isYearly"] = true,
-				["coord"] = { 49.1, 68.5, 199 },
+				["coord"] = { 49.1, 68.5, SOUTHERN_BARRENS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 199 },	-- Southern Barrens
+				["maps"] = { SOUTHERN_BARRENS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(29006, {	-- Candy Bucket — Southern Barrens, Honor's Stand, Alliance
 				["isYearly"] = true,
-				["coord"] = { 39.0, 11.0, 199 },
+				["coord"] = { 39.0, 11.0, SOUTHERN_BARRENS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 199 },	-- Southern Barrens
+				["maps"] = { SOUTHERN_BARRENS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(29004, {	-- Candy Bucket — Southern Barrens, Hunter's Hill, Horde
 				["isYearly"] = true,
-				["coord"] = { 39.3, 20.1, 199 },
+				["coord"] = { 39.3, 20.1, SOUTHERN_BARRENS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 199 },	-- Southern Barrens
+				["maps"] = { SOUTHERN_BARRENS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(29007, {	-- Candy Bucket — Southern Barrens, Northwatch Hold, Alliance
 				["isYearly"] = true,
-				["coord"] = { 65.6, 46.6, 199 },
+				["coord"] = { 65.6, 46.6, SOUTHERN_BARRENS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 199 },	-- Southern Barrens
+				["maps"] = { SOUTHERN_BARRENS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -2081,18 +2081,18 @@ _.Holidays = bubbleDown({["u"] = 26},
 				},
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = {
-					10,  -- Northern Barrens
-					71,  -- Tanaris
-					83,  -- Winterspring
-					87,  -- Ironforge
-					84,  -- Stormwind City
-					89,  -- Darnassus
+					NORTHERN_BARRENS,
+					71,		-- Tanaris
+					83,		-- Winterspring
+					87,		-- Ironforge
+					84,		-- Stormwind City
+					89,		-- Darnassus
 					THE_EXODAR,
 					NETHERSTORM,
 					SHATTRATH_CITY,
-					120, -- The Storm Peaks
-					210, -- The Cape of Stranglethorn
-					125, -- Dalaran: Northrend
+					120,	-- The Storm Peaks
+					210,	-- The Cape of Stranglethorn
+					125,	-- Dalaran: Northrend
 				},
 				["isBreadcrumb"] = true
 			}),
@@ -2132,7 +2132,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["sourceQuests"] = { 29415 },	-- Missing Heirlooms (Horde)
 				["provider"] = { "n", 54142 },	-- Hired Courier
 				["races"] = HORDE_ONLY,
-				["maps"] = { 85 },	-- Orgrimmar
+				["maps"] = { ORGRIMMAR },
 			}),
 			q(11440, {	-- Fire Brigade Practice (Azuremyst Isle)
 				["sourceQuests"] = { 11356 },	-- Costumed Orphan Matron
@@ -2206,7 +2206,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["repeatable"] = true,
 				["provider"] = { "n", 6929 },	-- Innkeeper Gryshka
 				["races"] = HORDE_ONLY,
-				["maps"] = { 85 },	-- Orgrimmar
+				["maps"] = { ORGRIMMAR },
 			}),
 			q(39720, {	-- Foul Fertilizer
 				["provider"] = { "n", 96705 },	-- Orukan
@@ -2259,7 +2259,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["repeatable"] = true,
 				["provider"] = { "n", 11814 },	-- Kali Remik
 				["races"] = HORDE_ONLY,
-				["maps"] = { 85 },	-- Orgrimmar
+				["maps"] = { ORGRIMMAR },
 			}),
 			q(11357, {	-- Masked Orphan Matron
 				["providers"] = {
@@ -2272,18 +2272,18 @@ _.Holidays = bubbleDown({["u"] = 26},
 				},
 				["races"] = HORDE_ONLY,
 				["maps"] = {
-					10,  -- Northern Barrens
-					71,  -- Tanaris
-					83,  -- Winterspring
-					85,  -- Orgrimmar
-					88,  -- Thunder Bluff
-					90,  -- Undercity
+					NORTHERN_BARRENS,
+					71,		-- Tanaris
+					83,		-- Winterspring
+					ORGRIMMAR,
+					88,		-- Thunder Bluff
+					90,		-- Undercity
 					EVERSONG_WOODS,
 					NETHERSTORM,
 					SHATTRATH_CITY,
-					120, -- The Storm Peaks
-					210, -- The Cape of Stranglethorn
-					125, -- Dalaran: Northrend
+					120,	-- The Storm Peaks
+					210,	-- The Cape of Stranglethorn
+					125,	-- Dalaran: Northrend
 				},
 				["isBreadcrumb"] = true
 			}),
@@ -2297,7 +2297,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["sourceQuests"] = { 29431 },	-- A Friend in Need (Horde)
 				["provider"] = { "n", 54141 },	-- Edgar Goodwin
 				["races"] = HORDE_ONLY,
-				["maps"] = { 85 },	-- Orgrimmar
+				["maps"] = { ORGRIMMAR },
 			}),
 			q(39719, {	-- Mutiny on the Boneship
 				["provider"] = { "n", 96705 },	-- Orukan
@@ -2322,7 +2322,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["sourceQuests"] = { 29416 },	-- Fencing the Goods (Horde)
 				["provider"] = { "n", 44866 },	-- Auctioneer Drezmit
 				["races"] = HORDE_ONLY,
-				["maps"] = { 85 },	-- Orgrimmar
+				["maps"] = { ORGRIMMAR },
 			}),
 			q(39716, {	-- Smashing Squashlings
 				["provider"] = { "n", 96705 },	-- Orukan
@@ -2451,7 +2451,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["sourceQuests"] = { 29425 },	-- Shopping Around (Horde)
 				["provider"] = { "n", 54146 },	-- Delian Sunshade
 				["races"] = HORDE_ONLY,
-				["maps"] = { 85 },	-- Orgrimmar
+				["maps"] = { ORGRIMMAR },
 			}),
 			q(29403, {	-- The Collector's Agent (Alliance)
 				["sourceQuests"] = { 29402 },	-- Taking Precautions (Alliance)
@@ -2463,7 +2463,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["sourceQuests"] = { 29426 },	-- Taking Precautions (HORDE)
 				["provider"] = { "n", 54146 },	-- Delian Sunshade
 				["races"] = HORDE_ONLY,
-				["maps"] = { 85 },	-- Orgrimmar
+				["maps"] = { ORGRIMMAR },
 			}),
 			q(29413, {	-- The Creepy Crate (Alliance)
 				["sourceQuests"] = { 29411 },	-- What Now? (Alliance)
@@ -2478,7 +2478,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["sourceQuests"] = { 29428 },	-- What Now? (Horde)
 				["provider"] = { "o", 209095 },	-- Edgar's Crate
 				["races"] = HORDE_ONLY,
-				["maps"] = { 85 },	-- Orgrimmar
+				["maps"] = { ORGRIMMAR },
 				["g"] = {
 					i(71076),	-- Creepy Crate (Pet)
 				},
@@ -2571,7 +2571,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["sourceQuests"] = { 29427 },	-- The Collector's Agent (Horde)
 				["provider"] = { "o", 209094 },	-- Stolen Crate
 				["races"] = HORDE_ONLY,
-				["maps"] = { 85 },	-- Orgrimmar
+				["maps"] = { ORGRIMMAR },
 			}),
 		}),
 	}),

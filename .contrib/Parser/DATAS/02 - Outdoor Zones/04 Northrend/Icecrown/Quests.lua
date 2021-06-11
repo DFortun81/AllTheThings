@@ -660,13 +660,13 @@ _.Zones =
 				}),
 				q(13074, {	-- Hope Within the Emerald Nightmare
 					["lvl"] = 67,
-					["maps"] = { 80 },	-- Moonglade
-					["coord"] = { 36.2, 41.8, 80 },
+					["maps"] = { MOONGLADE },
+					["coord"] = { 36.2, 41.8, MOONGLADE },
 					["provider"] = { "n", 11832 },	-- Keeper Remulos
 					["sourceQuest"] = 13073,	-- The Keeper's Favor
 				}),
 				q(13080, {	-- Hope Yet Remains
-					["coord"] = { 79.8, 30.8, 80 },
+					["coord"] = { 79.8, 30.8, MOONGLADE },
 					["provider"] = { "n", 30562 },	-- Crusader Bridenbrad
 					["sourceQuest"] = 13079,	-- The Boon of Alexstrasza
 				}),
@@ -892,7 +892,7 @@ _.Zones =
 					},
 				}),
 				q(13083, {	-- Light Within the Darkness
-					["coord"] = { 79.7, 30.8, 80 },
+					["coord"] = { 79.7, 30.8, MOONGLADE },
 					["provider"] = { "o", 192833 },	-- Bridenbrad's Possessions
 					["sourceQuest"] = 13082,	-- The Boon of A'day
 					["g"] = {
@@ -1452,7 +1452,7 @@ _.Zones =
 				}),
 				q(13082, {	-- The Boon of A'dal
 					["maps"] = { SHATTRATH_CITY },
-					["coord"] = { 53.9, 44.7, 80 },
+					["coord"] = { 53.9, 44.7, MOONGLADE },
 					["provider"] = { "n", 18481 },	-- A'dal
 					["sourceQuest"] = 13081,	-- The Will of the Naaru
 				}),
@@ -1464,8 +1464,8 @@ _.Zones =
 				}),
 				q(13075, {	-- The Boon of Remulos
 					["lvl"] = 67,
-					["maps"] = { 80 },	-- Moonglade
-					["coord"] = { 36.2, 41.8, 80 },
+					["maps"] = { MOONGLADE },
+					["coord"] = { 36.2, 41.8, MOONGLADE },
 					["provider"] = { "n", 11832 },	-- Keeper Remulos
 					["sourceQuest"] = 13074,	-- Hope Within the Emerald Nightmare
 				}),
@@ -1744,7 +1744,7 @@ _.Zones =
 					},
 				}),
 				q(13077, {	-- The Touch of an Aspect
-					["coord"] = { 79.7, 71.7, 80 },
+					["coord"] = { 79.7, 71.7, MOONGLADE },
 					["provider"] = { "n", 31044 },	-- Highlord Tirion Fordring
 					["sourceQuest"] = 13076,	-- Time Yet Remains
 				}),
@@ -1760,7 +1760,7 @@ _.Zones =
 					},
 				}),
 				q(13081, {	-- The Will of the Naaru
-					["coord"] = { 79.7, 71.7, 80 },
+					["coord"] = { 79.7, 71.7, MOONGLADE },
 					["provider"] = { "n", 31044 },	-- Highlord Tirion Fordring
 					["sourceQuest"] = 13080,	-- Hope Yet Remains
 				}),
@@ -1810,7 +1810,7 @@ _.Zones =
 					},
 				}),
 				q(13076, {	-- Time Yet Remains
-					["coord"] = { 79.8, 30.8, 80 },
+					["coord"] = { 79.8, 30.8, MOONGLADE },
 					["provider"] = { "n", 30562 },	-- Crusader Bridenbrad
 					["sourceQuest"] = 13075,	-- The Boon of Remulos
 				}),

@@ -989,23 +989,20 @@ _.ExpansionFeatures =
 							["coord"] = { 58.4, 62.6, 862 },
 							["sourceQuest"] = 52192,	-- The Aid of the Tides
 							["races"] = HORDE_ONLY,
-							["lvl"] = 120,
 						}),
 						-- Tides of Vengeance
 						q(53850, {	-- Our War Continues
 							["provider"] = { "n", 134711 },	-- Lady Sylvanas Windrunner
-							["coord"] = { 48.4, 71.4, 85 },
+							["coord"] = { 48.4, 71.4, ORGRIMMAR },
 							["sourceQuest"] = 53003,	-- A Cycle of Hatred
 							["races"] = HORDE_ONLY,
-							["lvl"] = 120,
-							["maps"] = { 85 },	-- Orgrimmar
+							["maps"] = { ORGRIMMAR },
 						}),
 						q(53851, {	-- Our War Continues
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 							["coord"] = { 58.4, 62.6, 862 },
 							["sourceQuest"] = 53003,	-- A Cycle of Hatred
 							["races"] = HORDE_ONLY,
-							["lvl"] = 120,
 						}),
 						q(53852, {	-- Azerite Denied
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
@@ -1464,16 +1461,16 @@ _.ExpansionFeatures =
 						}),
 						q(54999, {	-- Under False Colors
 							["provider"] = { "n", 150311 },	-- Thomas Zelling
-							["coord"] = { 76.3, 42.7, 70 },
+							["coord"] = { 76.3, 42.7, DUSTWALLOW_MARSH },
 							["sourceQuest"] = 54960,	-- A Bitter Reunion
 							["altQuests"] = { 55034 },	-- Under False Colors
 							["races"] = HORDE_ONLY,
 							["lvl"] = 120,
-							["maps"] = { 70 },	-- Dustwallow Marsh
+							["maps"] = { DUSTWALLOW_MARSH },
 						}),
 						q(55034, {	-- Under False Colors (Sylvanas Version)
 							["provider"] = { "n", 150311 },	-- Thomas Zelling
-							["coord"] = { 76.3, 42.7, 70 },
+							["coord"] = { 76.3, 42.7, DUSTWALLOW_MARSH },
 							["sourceQuests"] = {
 								54960,	-- A Bitter Reunion
 								54961,	-- Righting Wrongs (Sylvanas Version)
@@ -1481,7 +1478,7 @@ _.ExpansionFeatures =
 							["altQuests"] = { 54999 },	-- Under False Colors
 							["races"] = HORDE_ONLY,
 							["lvl"] = 120,
-							["maps"] = { 70 },	-- Dustwallow Marsh
+							["maps"] = { DUSTWALLOW_MARSH },
 						}),
 						-- The Warfang Event (Baine's imprisoning)
 						q(55047, {	-- Securing Warfang Hold
@@ -1581,9 +1578,8 @@ _.ExpansionFeatures =
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 55781,	-- Old Allies
 							["altQuests"] = { 55782 },	-- Stay of Execution
-							["lvl"] = 120,
 							["maps"] = {
-								85,	-- Orgrimmar
+								ORGRIMMAR,
 								1479,	-- Baine Rescue (Scenario)
 							},
 						}),
@@ -1593,9 +1589,8 @@ _.ExpansionFeatures =
 							["races"] = HORDE_ONLY,
 							["sourceQuest"] = 55780,	-- Old Allies (Sylvanas Version)
 							["altQuests"] = { 55779 },	-- Stay of Execution
-							["lvl"] = 120,
 							["maps"] = {
-								85,	-- Orgrimmar
+								ORGRIMMAR,
 								1479,	-- Baine Rescue (Scenario)
 							},
 						}),
@@ -1697,24 +1692,22 @@ _.ExpansionFeatures =
 						q(54097, {	-- The Dark Lady Calls
 							["provider"] = { "n", 146013 },	-- Dark Ranger Alina
 							["coord"] = { 58.4, 62.7, 862 },
-						--	["sourceQuest"] = 53981,	-- The Day is Won		-- need to be confirmed
+							--["sourceQuest"] = 53981,	-- The Day is Won		-- need to be confirmed
 							["races"] = HORDE_ONLY,
 						}),
 						q(54099, {	-- The High Overlord
 							["provider"] = { "n", 146654 },	-- Lady Sylvanas Windrunner
-							["coord"] = { 48.3, 71.2, 85 },
+							["coord"] = { 48.3, 71.2, ORGRIMMAR },
 							["sourceQuest"] = 54097,	-- The Dark Lady Calls
 							["races"] = HORDE_ONLY,
-							["lvl"] = 120,
-							["maps"] = { 85 },	-- Orgrimmar
+							["maps"] = { ORGRIMMAR },
 						}),
 						q(54100, {	-- A Way Out
 							["provider"] = { "n", 146654 },	-- Lady Sylvanas Windrunner
-							["coord"] = { 48.3, 71.0, 85 },
+							["coord"] = { 48.3, 71.0, ORGRIMMAR },
 							["sourceQuest"] = 54099,	-- The High Overlord
 							["races"] = HORDE_ONLY,
-							["lvl"] = 120,
-							["maps"] = { 85 },	-- Orgrimmar
+							["maps"] = { ORGRIMMAR },
 						}),
 						q(54101, {	-- On Track
 							["provider"] = { "n", 146010 },	-- Dark Ranger Lyana

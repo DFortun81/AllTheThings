@@ -198,6 +198,13 @@ _.Zones =
 					["cost"] = {
 						{ "i", 23733, 1 },	-- Ritual Torch
 					},
+					["groups"] = {
+						objective(1, {	-- 0/1 Ritual Torch
+							["provider"] = { "i", 23733 },	-- Ritual Torch
+							["cr"] = 17189,	-- Crazed Wildkin
+							["races"] = ALLIANCE_ONLY,
+						}),
+					},
 					["classes"] = { SHAMAN },
 					["races"] = { DRAENEI },
 					["lvl"] = lvlsquish(10, 1, 10),

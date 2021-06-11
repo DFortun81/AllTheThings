@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(76, {	-- Azshara
+		m(AZSHARA, {
 			n(ACHIEVEMENTS, {
 				ach(4927, {	-- Azshara Quests
 					["races"] = HORDE_ONLY,

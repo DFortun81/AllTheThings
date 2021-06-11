@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(70, {	-- Dustwallow Marsh
+		m(DUSTWALLOW_MARSH, {
 			filter(101, {	-- Pet Battle
 				p(398, {	-- Black Rat
 					["crs"] = { 61257 },	-- Black Rat
@@ -27,7 +27,7 @@ _.Zones =
 				}),
 				q(31905, {	-- Grazzle the Great
 					["provider"] = { "n", 66436 },	-- Grazzle the Great
-					["coord"] = { 53.8, 74.8, 70 },
+					["coord"] = { 53.8, 74.8, DUSTWALLOW_MARSH },
 					["isDaily"] = true,
 				}),
 			}),

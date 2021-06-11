@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(76, {	-- Azshara
+		m(AZSHARA, {
 			n(ZONEDROPS, {
 				i(16219, {	-- Formula: Enchant Gloves - Greater Agility
 					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, formula was removed from game
