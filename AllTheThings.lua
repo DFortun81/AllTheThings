@@ -19276,14 +19276,7 @@ app.events.VARIABLES_LOADED = function()
 			52888,	-- Verdant Hollow (BFA Alliance Outpost Unlock)
 			53043,	-- Vulture's Nest (Mission Completion)
 			53044,	-- Vulture's Nest (BFA Alliance Outpost Unlock)
-
-			53063,	-- A Mission of Unity (BFA Alliance WQ Unlock)
-			53064,	-- A Mission of Unity (BFA Horde WQ Unlock)
-			53061,	-- The Azerite Advantage (BFA Alliance Island Unlock)
-			53062,	-- The Azerite Advantage (BFA Horde Island Unlock)
-			53055,	-- Pushing Our Influence (BFA Horde PreQ for 1st Foothold)
-			53056,	-- Pushing Our Influence (BFA Alliance PreQ for 1st Foothold)
-
+			
 		--	Shard Labor
 			61229,	-- forging the Crystal Mallet of the Heralds
 			61191,	-- ringing the Vesper of the Silver Wind
@@ -19307,7 +19300,7 @@ app.events.VARIABLES_LOADED = function()
 			end
 		end
 
-		-- if we ever erroneously add an account-wide quest and find out it isn't (or Blizzard actually fixes it to give acocunt-wide credit)
+		-- if we ever erroneously add an account-wide quest and find out it isn't (or Blizzard actually fixes it to give account-wide credit)
 		-- put it here so it reverts back to being handled as a normal quest
 		for _,questID in ipairs({
 			32008,	-- Audrey Burnhep (A)
@@ -19320,6 +19313,18 @@ app.events.VARIABLES_LOADED = function()
 		-- Check for fixing Blizzard's incompetence in consistency for shared account-wide quest eligibility which is only granted to some of the shared account-wide quests
 		for i,questGroup in ipairs({
 			{ 32008, 32009, 31878, 31879, 31880, 31881, 31882, 31883, 31884, 31885, },	-- Pet Battle Intro quests
+			{			
+				53063, 	-- a-mission-of-unity (BFA Alliance WQ Unlock)
+				53064, 	-- a-mission-of-unity (BFA Horde WQ Unlock)
+			},
+			{
+				53061, 	-- the-azerite-advantage (BFA Alliance Island Unlock)
+				53062,  -- the-azerite-advantage (BFA Horde Island Unlock)
+			},
+			{
+				53055, 	-- Pushing Our Influence (BFA Horde PreQ for 1st Foothold)
+				53056,	-- Pushing Our Influence (BFA Alliance PreQ for 1st Foothold)
+			},
 		}) do
 			for _,questID in ipairs(questGroup) do
 				-- If this Character has the Quest completed
