@@ -1632,9 +1632,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12331, {	-- Candy Bucket — Teldrassil, Dolanaar, Alliance
 				["isYearly"] = true,
-				["coord"] = { 55.4, 52.3, 57 },
+				["coord"] = { 55.4, 52.3, TELDRASSIL },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 57 },	-- Teldrassil
+				["maps"] = { TELDRASSIL },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},

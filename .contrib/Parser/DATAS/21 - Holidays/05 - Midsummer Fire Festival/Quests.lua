@@ -782,10 +782,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11753, {	-- Desecrate this Fire! — Teldrassil
 				["isYearly"] = true,
 				["provider"] = { "o", 187936 },	-- Alliance Bonfire
-				["coord"] = { 54.7, 52.7, 57 },
+				["coord"] = { 54.7, 52.7, TELDRASSIL },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-				["maps"] = { 57 },	-- Teldrassil
+				["maps"] = { TELDRASSIL },
 			}),
 			q(11754, {	-- Desecrate this Fire! — Terokkar Forest
 				["isYearly"] = true,
@@ -1198,9 +1198,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11824, {	-- Honor the Flame — Teldrassil
 				["provider"] = { "n", 25906 },	-- The Teldrassil Flame Warden
 				["isYearly"] = true,
-				["coord"] = { 54.8, 52.9, 57 },
+				["coord"] = { 54.8, 52.9, TELDRASSIL },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 57 },	-- Teldrassil
+				["maps"] = { TELDRASSIL },
 			}),
 			q(11825, {	-- Honor the Flame — Terokkar Forest
 				["provider"] = { "n", 25907 },	-- Terokkar Forest Flame Warden
@@ -1917,7 +1917,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					51,		-- Swamp of Sorrows
 					52,		-- Westfall
 					56,		-- Wetlands
-					57,		-- Teldrassil
+					TELDRASSIL,
 					DARKSHORE,
 					ASHENVALE,
 					65,		-- Stonetalon Mountains

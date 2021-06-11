@@ -166,9 +166,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { TANARIS },
 									}),
 									crit(12, {	-- Teldrassil
-										["coord"] = { 54.8, 52.9, 57 },
+										["coord"] = { 54.8, 52.9, TELDRASSIL },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 57 },	-- Teldrassil
+										["maps"] = { TELDRASSIL },
 									}),
 									crit(13, {	-- Un'goro Crater
 										["coord"] = { 60.0, 63.0, 78 },
@@ -1142,9 +1142,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { TANARIS },
 									}),
 									crit(12, {	-- Teldrassil
-										["coord"] = { 54.7, 52.7, 57 },
+										["coord"] = { 54.7, 52.7, TELDRASSIL },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 57 },	-- Teldrassil
+										["maps"] = { TELDRASSIL },
 									}),
 									crit(13, {	-- Un'Goro Crater
 										["coord"] = { 60.0, 62.9, 78 },

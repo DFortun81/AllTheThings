@@ -612,8 +612,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { TANARIS },
 										}),
 										crit(25, {	-- Teldrassil, Dolanaar
-											["coord"] = { 55.4, 52.3, 57 },
-											["maps"] = { 57 },	-- Teldrassil
+											["coord"] = { 55.4, 52.3, TELDRASSIL },
+											["maps"] = { TELDRASSIL },
 										}),
 										crit(26, {	-- Un'Goro Crater, Marshal's Stand
 											["coord"] = { 55.2, 62.1, 78 },

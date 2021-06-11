@@ -482,8 +482,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["description"] = "In order to view this Elder, visit Zidormi at 48.8, 24.4 in Darkshore to be able to visit the past version of Teldrassil.  The Elder is on the left side of the Cenarion Enclave.",
 				["provider"] = { "n", 15595 },	-- Elder Bladeleaf
 				["isYearly"] = true,
-				["coord"] = { 56.8, 53.1, 57 },
-				["maps"] = { 57 },	-- Teldrassil
+				["coord"] = { 56.8, 53.1, TELDRASSIL },
+				["maps"] = { TELDRASSIL },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(6, {	-- Elder Bladeleaf in Dolanaar

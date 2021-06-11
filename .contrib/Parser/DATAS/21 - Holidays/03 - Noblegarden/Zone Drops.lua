@@ -12,7 +12,7 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 					18,	-- Tirisfal Glades
 					27,	-- Dun Morogh
 					37,	-- Elwynn Forest
-					57,	-- Teldrassil
+					TELDRASSIL,
 					EVERSONG_WOODS,
 					AZUREMYST_ISLE,
 				},

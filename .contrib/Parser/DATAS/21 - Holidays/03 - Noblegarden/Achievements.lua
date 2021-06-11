@@ -44,7 +44,7 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 							["maps"] = { AZUREMYST_ISLE },
 						}),
 						crit(2, {	-- Dolanaar
-							["maps"] = { 57 },	-- Teldrassil
+							["maps"] = { TELDRASSIL },
 						}),
 						crit(3, {	-- Goldshire
 							["maps"] = { 37 },	-- Elwynn Forest

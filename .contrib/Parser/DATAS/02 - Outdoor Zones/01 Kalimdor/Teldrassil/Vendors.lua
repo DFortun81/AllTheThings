@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(57, {	-- Teldrassil
+		m(TELDRASSIL, {
 			n(VENDORS, {
 				n(44030, {	-- Draelan <Enchanting Supplies>
-					["coord"] = { 39.0, 30.0, 57 },
+					["coord"] = { 39.0, 30.0, TELDRASSIL },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(20753),	-- Formula: Lesser Wizard Oil
@@ -18,7 +18,7 @@ _.Zones =
 					},
 				}),
 				n(10118, {	-- Nessa Shadowsong <Fishing Supplies>
-					["coord"] = { 54.0, 90.0, 57 },
+					["coord"] = { 54.0, 90.0, TELDRASSIL },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(6368),	-- Recipe: Rainbow Fin Albacore
@@ -26,7 +26,7 @@ _.Zones =
 					},
 				}),
 				n(4265, {	-- Nyoma <Cooking Supplies>
-					["coord"] = { 56.6, 53.6, 57 },
+					["coord"] = { 56.6, 53.6, TELDRASSIL },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(6325),	-- Recipe: Brilliant Smallfish

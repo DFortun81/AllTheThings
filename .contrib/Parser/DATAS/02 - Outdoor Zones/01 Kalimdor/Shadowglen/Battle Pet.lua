@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(57, {	-- Teldrassil
+		m(TELDRASSIL, {
 			m(460, {	-- Shadowglen
 				filter(101, {	-- Pet Battle
 					p(507, {	-- Crested Owl
