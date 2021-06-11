@@ -528,6 +528,7 @@ local L = app.L;
 		L.INCOMPLETE = "|T" .. app.asset("incomplete") .. ":0|t |cff15abffНе Выполнено|r";	-- Acquired the colors and icon from CanIMogIt.
 		L.KNOWN_ON_CHARACTER = "|T" .. app.asset("known") .. ":0|t |cff15abffИзвестно на текущем персонаже|r";
 		L.UNKNOWN_ON_CHARACTER = "|T" .. app.asset("unknown") .. ":0|t |cffff9333Неизвестно на текущем персонаже|r";
+		L.COST_TEXT = "|T" .. app.asset("star") .. ":0|t |cffffff00Валюта|r";
 
 local a = L.ABBREVIATIONS;
 for key,value in pairs({
