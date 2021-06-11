@@ -1809,8 +1809,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(29018, {	-- Candy Bucket — Un'Goro Crater, Marshal's Stand, neutral
 				["isYearly"] = true,
-				["coord"] = { 55.2, 62.1, 78 },
-				["maps"] = { 78 },	-- Un'Goro Crater
+				["coord"] = { 55.2, 62.1, UNGORO_CRATER },
+				["maps"] = { UNGORO_CRATER },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},

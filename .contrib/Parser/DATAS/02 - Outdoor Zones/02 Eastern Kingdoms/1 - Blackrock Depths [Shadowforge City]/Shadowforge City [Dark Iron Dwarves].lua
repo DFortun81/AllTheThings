@@ -40,10 +40,10 @@ _.Zones =
 					["g"] = {
 						q(53591, {	-- Fire Plume Ridge
 							["name"] = "Fire Plume Ridge",
-							["coord"] = { 52.89, 55.76, 78 },
+							["coord"] = { 52.89, 55.76, UNGORO_CRATER },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-							["maps"] = { 78 },	-- Un'goro Crater
+							["maps"] = { UNGORO_CRATER },
 						}),
 						q(53600, {	-- Honor's Stand
 							["name"] = "Honor's Stand",

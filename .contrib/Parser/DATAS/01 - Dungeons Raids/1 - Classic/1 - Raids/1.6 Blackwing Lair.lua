@@ -26,7 +26,7 @@ _.Instances = { tier(1, applyclassicphase(PHASE_THREE, {	-- Classic
 				q(7782, {	-- The Lord of Blackrock
 					-- #if BEFORE CATA
 					["qg"] = 1748,	-- Highlord Bolvar Fordragon
-					["coord"] = { 78, 18, STORMWIND_CITY },
+					["coord"] = { 78.0, 18.0, STORMWIND_CITY },
 					-- #else
 					-- #if AFTER LEGION
 					["qg"] = 107574,	-- Anduin Wrynn

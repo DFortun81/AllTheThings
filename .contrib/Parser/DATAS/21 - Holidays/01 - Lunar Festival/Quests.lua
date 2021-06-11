@@ -713,8 +713,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8681,  {	-- Thunderhorn the Elder
 				["provider"] = { "n", 15583 },	-- Elder Thunderhorn
 				["isYearly"] = true,
-				["coord"] = { 50.3, 76.2, 78 },
-				["maps"] = { 78 },	-- Un'Goro Crater
+				["coord"] = { 50.3, 76.2, UNGORO_CRATER },
+				["maps"] = { UNGORO_CRATER },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(17, {	-- Elder Thunderhorn in Un'goro

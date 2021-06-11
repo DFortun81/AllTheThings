@@ -960,10 +960,10 @@ _.Holidays =
 						["coords"] = {
 							{ 40.01, 82.05, 119 },	-- Waygate Entrance
 							{ 40.66, 84.18, 119 },	-- Waygate Entrance
-							{ 47.56, 09.17, 78 },	-- The Etymidian
+							{ 47.56, 09.17, UNGORO_CRATER },	-- The Etymidian
 						},
 						["maps"] = {
-							78,		-- Un'Goro Crater
+							UNGORO_CRATER,
 							119,	-- Sholazar Basin
 							125,	-- Dalaran (Northrend)
 						},

@@ -616,8 +616,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { TELDRASSIL },
 										}),
 										crit(26, {	-- Un'Goro Crater, Marshal's Stand
-											["coord"] = { 55.2, 62.1, 78 },
-											["maps"] = { 78 },	-- Un'Goro Crater
+											["coord"] = { 55.2, 62.1, UNGORO_CRATER },
+											["maps"] = { UNGORO_CRATER },
 										}),
 										crit(27, {	-- Winterspring, Everlook
 											["coord"] = { 59.8, 51.2, 83 },
@@ -741,8 +741,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { THUNDER_BLUFF },
 										}),
 										crit(29, {	-- Un'Goro Crater, Marshal's Stand
-											["coord"] = { 55.2, 62.1, 78 },
-											["maps"] = { 78 },	-- Un'Goro Crater
+											["coord"] = { 55.2, 62.1, UNGORO_CRATER },
+											["maps"] = { UNGORO_CRATER },
 										}),
 										crit(30, {	-- Winterspring, Everlook
 											["coord"] = { 59.8, 51.2, 83 },

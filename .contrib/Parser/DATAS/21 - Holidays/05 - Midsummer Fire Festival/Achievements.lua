@@ -171,9 +171,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { TELDRASSIL },
 									}),
 									crit(13, {	-- Un'goro Crater
-										["coord"] = { 60.0, 63.0, 78 },
+										["coord"] = { 60.0, 63.0, UNGORO_CRATER },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 78 },	-- Un'goro Crater
+										["maps"] = { UNGORO_CRATER },
 									}),
 									crit(14, {	-- Winterspring
 										["coord"] = { 62.0, 35.0, 83 },
@@ -441,9 +441,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { TANARIS },
 									}),
 									crit(13, {	-- Un'Goro Crater
-										["coord"] = { 56.3, 65.8, 78 },
+										["coord"] = { 56.3, 65.8, UNGORO_CRATER },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 78 },	-- Un'Goro Crater
+										["maps"] = { UNGORO_CRATER },
 									}),
 									crit(14, {	-- Winterspring
 										["coord"] = { 58.2, 47.3, 83 },
@@ -867,9 +867,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { TANARIS },
 									}),
 									crit(13, {	-- Un'goro Crater
-										["coord"] = { 56.0, 66.0, 78 },
+										["coord"] = { 56.0, 66.0, UNGORO_CRATER },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 78 },	-- Un'goro Crater
+										["maps"] = { UNGORO_CRATER },
 									}),
 									crit(14, {	-- Winterspring
 										["coord"] = { 58.1, 47.5, 83 },
@@ -1147,9 +1147,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { TELDRASSIL },
 									}),
 									crit(13, {	-- Un'Goro Crater
-										["coord"] = { 60.0, 62.9, 78 },
+										["coord"] = { 60.0, 62.9, UNGORO_CRATER },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 78 },	-- Un'Goro Crater
+										["maps"] = { UNGORO_CRATER },
 									}),
 									crit(14, {	-- Winterspring
 										["coord"] = { 61.3, 47.1, 83 },

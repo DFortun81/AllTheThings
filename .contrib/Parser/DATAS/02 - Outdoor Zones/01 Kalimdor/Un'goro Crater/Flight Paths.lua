@@ -5,13 +5,13 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(78, {	-- Un'Goro Crater
+		m(UNGORO_CRATER, {
 			n(FLIGHT_PATHS, {
 				fp(79, {	-- Marshal's Stand, Un'Goro Crater
-					["coord"] = { 56, 64, 78 },
+					["coord"] = { 56, 64, UNGORO_CRATER },
 				}),
 				fp(386, {	-- Mossy Pile, Un'Goro Crater
-					["coord"] = { 44, 40.2, 78 },
+					["coord"] = { 44, 40.2, UNGORO_CRATER },
 				}),
 			}),
 		}),

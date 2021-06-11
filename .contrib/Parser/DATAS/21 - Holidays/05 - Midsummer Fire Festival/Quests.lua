@@ -412,10 +412,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(28920, {	-- Desecrate this Fire! — Un'Goro Crater
 				["isYearly"] = true,
 				["provider"] = { "o", 207992 },	-- Horde Bonfire
-				["coord"] = { 56.3, 65.8, 78 },
+				["coord"] = { 56.3, 65.8, UNGORO_CRATER },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
-				["maps"] = { 78 },	-- Un'Goro Crater
+				["maps"] = { UNGORO_CRATER },
 			}),
 			q(32496, {	-- Desecrate this Fire! — Vale of Eternal Blossoms
 				["isYearly"] = true,
@@ -838,10 +838,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(28921, {	-- Desecrate this Fire! — Un'Goro Crater
 				["isYearly"] = true,
 				["provider"] = { "o", 207993 },	-- Alliance Bonfire
-				["coord"] = { 60.0, 62.9, 78 },
+				["coord"] = { 60.0, 62.9, UNGORO_CRATER },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-				["maps"] = { 78 },	-- Un'Goro Crater
+				["maps"] = { UNGORO_CRATER },
 			}),
 			q(32503, {	-- Desecrate this Fire! — Vale of Eternal Blossoms
 				["isYearly"] = true,
@@ -1247,9 +1247,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(28932, {	-- Honor the Flame — Un'goro Crater
 				["provider"] = { "n", 51606 },	-- Un'Goro Crater Flame Warden
 				["isYearly"] = true,
-				["coord"] = { 60.0, 63.0, 78 },
+				["coord"] = { 60.0, 63.0, UNGORO_CRATER },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 78 },	-- Un'goro Crater
+				["maps"] = { UNGORO_CRATER },
 			}),
 			q(32510, {	-- Honor the Flame — Vale of Eternal Blossoms
 				["provider"] = { "n", 69572 },	-- Vale of Eternal Blossoms Flame Warden
@@ -1627,9 +1627,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(28933, {	-- Honor the Flame — Un'goro Crater
 				["provider"] = { "n", 51607 },	-- Un'Goro Flame Keeper
 				["isYearly"] = true,
-				["coord"] = { 56.0, 66.0, 78 },
+				["coord"] = { 56.0, 66.0, UNGORO_CRATER },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 78 },	-- Un'goro Crater
+				["maps"] = { UNGORO_CRATER },
 			}),
 			q(32509, {	-- Honor the Flame — Vale of Eternal Blossoms
 				["provider"] = { "n", 69551 },	-- Vale of Eternal Blossoms Flame Keeper
@@ -1956,7 +1956,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					ASHENVALE,
 					TANARIS,
 					AZSHARA,
-					78,		-- Un'goro Crater
+					UNGORO_CRATER,
 					83,		-- Winterspring
 					EVERSONG_WOODS,
 					HELLFIRE_PENINSULA,
