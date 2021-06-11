@@ -632,12 +632,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(9, 1, 9),
 				}),
-				q(9282, {	-- The Farstrider Enclave [TODO: Check this is actually a breadcrumb or not.]
+				q(9282, {	-- The Farstrider Enclave
 					["qg"] = 16239,	-- Magister Kaendris
 					["sourceQuest"] = 9151,	-- The Sanctum of the Sun
 					["coord"] = { 55.0, 48.8, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(15, 1, 15),
 				}),
 				q(9327, {	-- The Forsaken [Blood Elf Only]
@@ -705,11 +704,10 @@ _.Zones =
 						}),
 					},
 				}),
-				q(9151, {	-- The Sanctum of the Sun [TODO: Check this is actually a breadcrumb or not and if it has a source quest.]
+				q(9151, {	-- The Sanctum of the Sun [TODO: could have a sourceQuest]
 					["qg"] = 16199,	-- Magister Darenis
 					["coord"] = { 46.0, 31.9, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(17, 1, 17),
 				}),
 				q(9167, {	-- The Traitor's Destruction
