@@ -2726,20 +2726,20 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 		-- check groups outwards to ensure that the group can be displayed in the contains under the current filters
 		if app.GroupRequirementsFilter(group) and app.GroupFilter(group) then
 			-- print("display")
-			local right = nil;
+			local right;
 			if group.total and (group.total > 1 or (not group.collectible and group.total > 0)) then
 				-- total = total + group.total;
 				-- progress = progress + (group.progress or 0);
 				if app.GroupVisibilityFilter(group) then
-					right = GetProgressColorText(group.progress, group.total);
+					right = true;
 				-- the group itself may be a trackable thing
 				elseif group.trackable then
 					if group.saved then
 						if app.CollectedItemVisibilityFilter(group) then
-							right = L["COMPLETE_ICON"];
+							right = true;
 						end
 					elseif app.ShowIncompleteThings(group) then
-						right = L["INCOMPLETE_ICON"];
+						right = true;
 					end
 				elseif group.visible then
 					right = group.count and (group.count .. "x") or "---";
@@ -2750,22 +2750,26 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 					if group.collected then
 						-- progress = progress + 1;
 						if app.CollectedItemVisibilityFilter(group) then
-							right = GetCollectionIcon(group.collected);
+							right = true;
 						end
 					else
-						right = L["NOT_COLLECTED_ICON"];
+						right = true;
 					end
 				elseif group.trackable then
 					if group.saved then
 						if app.CollectedItemVisibilityFilter(group) then
-							right = L["COMPLETE_ICON"];
+							right = true;
 						end
 					elseif app.ShowIncompleteThings(group) then
-						right = L["INCOMPLETE_ICON"];
+						right = true;
 					end
 				elseif group.visible then
 					right = group.count and (group.count .. "x") or "---";
 				end
+			end
+
+			if right == true then
+				right = GetProgressTextForRow(group);
 			end
 
 			-- If there's progress to display, then let's summarize a bit better.
@@ -6263,12 +6267,12 @@ local fields = {
 		local info = t.info;
 		return info and info.name or ("Currency #" .. t.currencyID);
 	end,
-	["collectible"] = function(t)
-		return t.collectibleAsCost;
-	end,
-	["collected"] = function(t)
-		return t.collectedAsCost;
-	end,
+	-- ["collectible"] = function(t)
+	-- 	return t.collectibleAsCost;
+	-- end,
+	-- ["collected"] = function(t)
+	-- 	return t.collectedAsCost;
+	-- end,
 	["collectedAsCost"] = function(t)
 		local results = app.SearchForField("currencyIDAsCost", t.currencyID);
 		if results and #results > 0 then
@@ -6305,6 +6309,12 @@ local fields = {
 	["collectibleAsCostAfterFailure"] = app.ReturnFalse,
 	["collectedAsCostAfterFailure"] = function(t)
 
+	end,
+	["costTotal"] = function(t)
+		return t.collectibleAsCost and 1 or 0;
+	end,
+	["costProgress"] = function(t)
+		return t.collectedAsCost and 1 or 0;
 	end,
 };
 app.BaseCurrencyClass = app.BaseObjectFields(fields);
