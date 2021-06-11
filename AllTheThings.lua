@@ -11262,10 +11262,11 @@ UpdateGroups = function(parent, g, defaultVis)
 end
 ]]--
 UpdateGroup = function(parent, group, window)
-	-- local LOG = group.key == "questID" and group[group.key] == 8623 and (group.key .. ":" .. group[group.key]);
-	-- if LOG then app.DEBUG_LOG = LOG; end
-	-- if LOG or app.DEBUG_LOG then print(group.key,group.key and group[group.key],"Updating",group._Updated,app._Updated,"t/p/v",group.total,group.progress,group.visible) end
-
+	-- local shouldLog = group.key == "questID" and group[group.key] == 62691 and 62691;
+	-- if not app.DEBUG_LOG and shouldLog then
+	-- 	app.DEBUG_LOG = shouldLog;
+	-- end
+	
 	-- -- Only update a group ONCE per update cycle...
 	-- if not group._Updated or group._Updated ~= app._Updated then
 	-- 	if LOG then print("First Update") end
@@ -11284,111 +11285,132 @@ UpdateGroup = function(parent, group, window)
 
 	-- Determine if this user can enter the instance or acquire the item.
 	-- If the 'can equip' filter says true
-	if app.GroupRequirementsFilter(group) and app.GroupFilter(group) then
-		-- if app.GroupFilter(group) then
-		-- Set total/progress for this object using it's cost information if any
-		group.total = group.costTotal or 0;
-		group.progress = group.costProgress or 0;
+	if app.GroupRequirementsFilter(group) then
+		if app.GroupFilter(group) then
+			-- Set total/progress for this object using it's cost information if any
+			group.total = group.costTotal or 0;
+			group.progress = group.costProgress or 0;
 
-		-- If this item is collectible, then mark it as such.
-		if group.collectible then
-			-- An item is a special case where it may have both an appearance and a set of items
-			group.progress = group.progress + (group.collected and 1 or 0);
-			group.total = group.total + 1;
-		-- else
-		-- 	-- Default to 0 for both
-		-- 	group.progress = 0;
-		-- 	group.total = 0;
-		end
+			-- if app.DEBUG_LOG then print("UpdateGroup.Initial",group.key,group.key and group[group.key],group.progress,group.total) end
 
-		-- Check if this is a group
-		if group.g then
+			-- If this item is collectible, then mark it as such.
+			if group.collectible then
+				-- An item is a special case where it may have both an appearance and a set of items
+				group.progress = group.progress + (group.collected and 1 or 0);
+				group.total = group.total + 1;
+				-- if app.DEBUG_LOG then print("UpdateGroup.Collectible",group.progress,group.total) end
+			-- else
+			-- 	-- Default to 0 for both
+			-- 	group.progress = 0;
+			-- 	group.total = 0;
+			end
 
-			-- if LOG or app.DEBUG_LOG then print(group.key,group.key and group[group.key],"Has g","t/p",group.total,group.progress) end
+			-- Check if this is a group
+			if group.g then
+				-- if app.DEBUG_LOG then print("UpdateGroup.g",group.progress,group.total) end
 
-			-- TODO: ideally the recursive update would be outside of the top group, and we only need to process the top group
-			-- if everything inside is hidden, otherwise it would obviously need to be shown.
-			-- BUT things have not been designed in this way entirely... plenty of things are 'visible' even though they are Within
-			-- otherwise filtered groups... maybe that's good...?
+				-- if LOG or app.DEBUG_LOG then print(group.key,group.key and group[group.key],"Has g","t/p",group.total,group.progress) end
 
-			-- If the 'can equip' filter says true
-			-- if app.GroupFilter(group) then
+				-- TODO: ideally the recursive update would be outside of the top group, and we only need to process the top group
+				-- if everything inside is hidden, otherwise it would obviously need to be shown.
+				-- BUT things have not been designed in this way entirely... plenty of things are 'visible' even though they are Within
+				-- otherwise filtered groups... maybe that's good...?
+
+				-- If the 'can equip' filter says true
+				-- if app.GroupFilter(group) then
 
 
-			-- -- If this item is collectible, then mark it as such.
-			-- if group.collectible then
-			-- 	-- An item is a special case where it may have both an appearance and a set of items
-			-- 	group.progress = group.progress + (group.collected and 1 or 0);
-			-- 	group.total = group.total + 1;
-			-- -- else
-			-- -- 	-- Default to 0 for both
-			-- -- 	group.progress = 0;
-			-- -- 	group.total = 0;
-			-- end
+				-- -- If this item is collectible, then mark it as such.
+				-- if group.collectible then
+				-- 	-- An item is a special case where it may have both an appearance and a set of items
+				-- 	group.progress = group.progress + (group.collected and 1 or 0);
+				-- 	group.total = group.total + 1;
+				-- -- else
+				-- -- 	-- Default to 0 for both
+				-- -- 	group.progress = 0;
+				-- -- 	group.total = 0;
+				-- end
 
-			-- Update the subgroups recursively...
-			visible = UpdateGroups(group, group.g, window);
+				-- Update the subgroups recursively...
+				UpdateGroups(group, group.g, window);
+				-- if app.DEBUG_LOG then print("UpdateGroup.g.Updated",group.progress,group.total) end
 
-			-- if LOG or app.DEBUG_LOG then print(group.key,group.key and group[group.key],"After g","t/p",group.total,group.progress) end
+				-- if LOG or app.DEBUG_LOG then print(group.key,group.key and group[group.key],"After g","t/p",group.total,group.progress) end
 
-			-- Increment the parent group's totals.
-			-- parent.total = (parent.total or 0) + group.total;
-			-- parent.progress = (parent.progress or 0) + group.progress;
+				-- Increment the parent group's totals.
+				-- parent.total = (parent.total or 0) + group.total;
+				-- parent.progress = (parent.progress or 0) + group.progress;
 
-			-- If nothing to show inside the group, then check if the group itself should be shown
-			if not visible then
+				-- If this group is forced to be shown due to contained groups being shown without being collectible
+				if group.forceShow then
+					-- if app.DEBUG_LOG then print("UpdateGroup.g.forceShow",group.progress,group.total) end
+					visible = true;
+					group.forceShow = nil;
+				-- If this group contains Things, show based on visibility filter
+				elseif group.total > 0 and app.GroupVisibilityFilter(group) then
+					-- if app.DEBUG_LOG then print("UpdateGroup.g.total",group.progress,group.total) end
+					visible = true;
 				-- If this group is trackable, then we should show it.
-				if group.total > 0 and app.GroupVisibilityFilter(group) then
-					visible = true;
 				elseif app.ShowIncompleteThings(group) and not group.saved then
+					-- if app.DEBUG_LOG then print("UpdateGroup.g.trackable",group.progress,group.total) end
 					visible = true;
+					parent.forceShow = true;
 				-- elseif group.itemID and app.CollectibleLoot and group.f then
 				-- 	visible = true;
 				end
-			end
-			-- end
-		else
-			-- If the 'can equip' filter says true
-			-- if app.GroupFilter(group) then
+				-- end
+			else
+				-- If the 'can equip' filter says true
+				-- if app.GroupFilter(group) then
 
-			if group.collectible or group.total > 0 then
-				-- Increment the parent group's totals.
-				-- group.total = group.total + 1;
+				if group.total > 0 then
+					-- if app.DEBUG_LOG then print("UpdateGroup.total",group.progress,group.total) end
+					-- Increment the parent group's totals.
+					-- group.total = group.total + 1;
 
-				-- If we've collected the item, use the "Show Collected Items" filter.
-				if group.collected then
-					-- group.progress = group.progress + 1;
-					if app.CollectedItemVisibilityFilter(group) then
+					-- If we've collected the item, use the "Show Collected Items" filter.
+					if group.total == group.progress then
+						-- if app.DEBUG_LOG then print("UpdateGroup.complete",group.progress,group.total) end
+						-- group.progress = group.progress + 1;
+						if app.CollectedItemVisibilityFilter(group) then
+							-- if app.DEBUG_LOG then print("UpdateGroup.showcomplete",group.progress,group.total) end
+							visible = true;
+						end
+					else
 						visible = true;
 					end
-				else
-					visible = true;
+				elseif group.trackable then
+					-- if app.DEBUG_LOG then print("UpdateGroup.trackable",group.progress,group.total) end
+					-- If this group is trackable, then we should show it.
+					if app.ShowIncompleteThings(group) and not group.saved then
+						-- if app.DEBUG_LOG then print("UpdateGroup.trackable.visible",group.progress,group.total) end
+						visible = true;
+						parent.forceShow = true;
+					end
+				-- elseif group.itemID and app.CollectibleLoot and group.f then
+				-- 	visible = true;
 				end
-			elseif group.trackable then
-				-- If this group is trackable, then we should show it.
-				if app.ShowIncompleteThings(group) and not group.saved then
-					visible = true;
-				end
-			-- elseif group.itemID and app.CollectibleLoot and group.f then
-			-- 	visible = true;
+
+				--- Increment parent total/progress
+				-- parent.total = (parent.total or 0) + group.total;
+				-- parent.progress = (parent.progress or 0) + group.progress;
+				-- end
 			end
 
-			--- Increment parent total/progress
-			-- parent.total = (parent.total or 0) + group.total;
-			-- parent.progress = (parent.progress or 0) + group.progress;
-			-- end
+			-- Increment the parent group's totals
+			parent.total = (parent.total or 0) + group.total;
+			parent.progress = (parent.progress or 0) + group.progress;
 		end
-
-		-- Increment the parent group's totals
-		parent.total = (parent.total or 0) + group.total;
-		parent.progress = (parent.progress or 0) + group.progress;
-		-- end
 	end
 
 	-- Set the visibility
 	group.visible = visible;
 	-- if LOG or app.DEBUG_LOG then print(group.key,group.key and group[group.key],"Update Complete","t/p/v",group.total,group.progress,group.visible) end
 	-- if LOG then app.DEBUG_LOG = nil; end
+	-- if shouldLog then
+	-- 	print("---")
+	-- 	app.DEBUG_LOG = nil;
+	-- end
 	return visible;
 end
 UpdateGroups = function(parent, g, window)
