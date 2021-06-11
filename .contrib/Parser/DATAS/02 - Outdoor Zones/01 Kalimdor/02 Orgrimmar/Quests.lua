@@ -892,7 +892,6 @@ _.Zones =
 				q(60961, {	-- Burning Crusade: Onward to Adventure in Outland
 					["sourceQuests"] = { 60123 },	-- Burning Crusade: To Outland!
 					["description"] = "Complete the prerequisite quest, switch to another timeline, then switch back to Burning Crusade and you will get this quest.",
-					["isBreadcrumb"] = true,
 					["repeatable"] = true,
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
@@ -933,7 +932,6 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(60887, {	-- Cataclysm: Onward to Adventure in Kalimdor
-					["isBreadcrumb"] = true,
 					["repeatable"] = true,
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
@@ -1525,7 +1523,6 @@ _.Zones =
 					["races"] = { PANDAREN_HORDE },
 				}),
 				q(60970, {	-- Legion: Onward to Adventure in the Broken Isles
-					["isBreadcrumb"] = true,
 					["repeatable"] = true,
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
@@ -2616,7 +2613,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(60968, {	-- Warlords of Draenor: Onward to Adventure in Draenor
-					["isBreadcrumb"] = true,
+					["repeatable"] = true,
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 40.8, 79.9, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
