@@ -11289,7 +11289,7 @@ UpdateGroup = function(parent, group, window)
 		if app.GroupFilter(group) then
 			-- Set total/progress for this object using it's cost information if any
 			group.total = group.costTotal or 0;
-			group.progress = group.costProgress or 0;
+			group.progress = group.total > 0 and group.costProgress or 0
 
 			-- if app.DEBUG_LOG then print("UpdateGroup.Initial",group.key,group.key and group[group.key],group.progress,group.total) end
 
