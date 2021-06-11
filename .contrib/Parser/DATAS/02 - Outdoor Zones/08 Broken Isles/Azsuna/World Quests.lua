@@ -866,6 +866,7 @@ _.Zones =
 					i(136750),	-- Vault Guardian's Talisman
 				}),
 				n(-387,  {	-- Relics
+					i(141280),	-- Demonic Shackles
 					i(141273),	-- Echo of Eons
 					i(143702),	-- Eternity of Wisdom
 					i(141274),	-- Frozen Ley Scar

@@ -307,6 +307,10 @@ _.ExpansionFeatures =
 						["coord"] = { 59.4, 50.5, 720 },
 						["lvl"] = 103,
 					}),
+					q(41064, {	-- Cursed Forge of the Nathrezim
+						["classes"] = { DEMONHUNTER },
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					q(42732, {	-- Deadlier Warglaives
 						["classes"] = { DEMONHUNTER },
 						["sourceQuests"] = { 44694 },	-- One Battle at a Time
@@ -831,7 +835,13 @@ _.ExpansionFeatures =
 						["coord"] = { 59.3, 57.6, 720 },
 						["lvl"] = 101,
 					}),
-					q(41067, {	-- Time is of the Essence
+					q(41096, {	-- Time is of the Essence (Altruis)
+						["sourceQuests"] = { 41066 },	-- The Hunter's Gaze
+						["provider"] = { "n", 95238 },	-- Allari the Souleater
+						["classes"] = { DEMONHUNTER },
+						["coord"] = { 58.8, 51.2, 721 },
+					}),
+					q(41067, {	-- Time is of the Essence (Kayn)
 						["sourceQuests"] = { 41066 },	-- The Hunter's Gaze
 						["provider"] = { "n", 95238 },	-- Allari the Souleater
 						["classes"] = { DEMONHUNTER },
@@ -887,6 +897,10 @@ _.ExpansionFeatures =
 								["achievementID"] = 10461,	-- Fighting with Style: Classic
 							}),
 						},
+					}),
+					q(44224, {	-- Unleashing our Wrath
+						["classes"] = { DEMONHUNTER },
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					q(46940, {	-- Using Lost Knowledge
 						["classes"] = { DEMONHUNTER },
@@ -950,14 +964,6 @@ _.ExpansionFeatures =
 							i(139718),	-- Helm of the Shattered Abyss
 						},
 					}),
-
-
-
-
-					-- unconfirmed/unsourced
-					q(41064),	-- Cursed Forge of the Nathrezim
-					q(41096),	-- Time is of the Essence
-					q(44224),	-- Unleashing our Wrath
 				}),
 				n(VENDORS, {
 					n(116621, {	-- Demissya Gladestrider <Illidari Provisioner's Assistant>

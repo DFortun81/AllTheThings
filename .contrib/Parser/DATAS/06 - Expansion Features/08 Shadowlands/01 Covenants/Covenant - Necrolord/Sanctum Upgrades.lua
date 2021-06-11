@@ -676,6 +676,16 @@ _.ExpansionFeatures =
 							}),
 						}),
 						n(-917, {	-- Tier 2: Streaming Threads
+							q(62364, {	-- Dire Learning
+								["isDaily"] = true,
+								["provider"] = { "n", 167603 },	-- Fixer Bixie
+								["coord"] = { 49.0, 36.0, MALDRAXXUS },
+							}),
+							q(58260, {	-- Queens and Future Kings
+								["isDaily"] = true,
+								["provider"] = { "n", 167603 },	-- Fixer Bixie
+								["coord"] = { 49.0, 36.0, MALDRAXXUS },
+							}),
 						}),
 						n(-918, {	-- Tier 3: Flowing Power
 							q(58454, {	-- Spoiling For A Fight

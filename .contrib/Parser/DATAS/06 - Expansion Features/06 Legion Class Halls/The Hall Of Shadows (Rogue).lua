@@ -879,6 +879,7 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 98100 },	-- Taoshi
 					}),
 					q(44195, {	-- Workorders for Armaments
+						["coord"] = { 75.1, 56.4, 626 },
 						["classes"] = { ROGUE },
 						["provider"] = { "n", 110348 },	-- Mal
 						["description"] = "Only available if you you have the |cFFFFD700Weapons Smuggler|r order hall upgrade.",

@@ -227,7 +227,7 @@ _.ExpansionFeatures =
 						["coord"] = { 44.7, 4.4, 118 },	-- Icecrown
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 46720, -- Frozen Memories
-						["maps"] = { 860 },
+						["maps"] = { 118 },	-- Icecrown
 					}),
 					q(44282, {	-- Eye of Azshara: The Frozen Soul
 						["provider"] = { "n", 93555 }, -- Amal'thazad
@@ -513,6 +513,7 @@ _.ExpansionFeatures =
 						["coord"] = { 54.7, 28.2, 648 },
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 46812, -- Draconic Secrets
+						["maps"] = { 871 },	-- The Lost Glacier (scenario map)
 						["g"] = {
 							i(142231),	-- Decaying Reins of the Vilebrood Vanquisher
 						},
@@ -696,6 +697,7 @@ _.ExpansionFeatures =
 					}),
 					n(121752, {	-- Slimy
 						["sourceQuest"] = 46813,	-- The Lost Glacier
+						["coord"] = { 54.8, 28.9, 648 },
 						["g"] = {
 							i(147539, {	-- Bloodbrood Whelpling (PET!)
 								["cost"] = { { "c", 1220, 1000 }, },	-- 1,000x Order Resources
