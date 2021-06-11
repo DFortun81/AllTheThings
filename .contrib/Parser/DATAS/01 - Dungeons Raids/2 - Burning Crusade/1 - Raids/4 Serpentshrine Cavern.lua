@@ -162,10 +162,10 @@ _.Instances = { tier(2,	applyclassicphase(TBC_PHASE_TWO, { -- Burning Crusade
 				["creatureID"] = 21215,
 				["groups"] = {
 					i(30239, {	-- Gloves of the Vanquished Champion
-						["classes"] = { DRUID, PRIEST, WARRIOR },
+						["classes"] = { PALADIN, ROGUE, SHAMAN },
 					}),
 					i(30240, {	-- Gloves of the Vanquished Defender
-						["classes"] = { PALADIN, ROGUE, SHAMAN },
+						["classes"] = { DRUID, PRIEST, WARRIOR },
 					}),
 					i(30241, {	-- Gloves of the Vanquished Hero
 						["classes"] = { HUNTER, MAGE, WARLOCK },
@@ -182,10 +182,10 @@ _.Instances = { tier(2,	applyclassicphase(TBC_PHASE_TWO, { -- Burning Crusade
 				["creatureID"] = 21214,
 				["groups"] = {
 					i(30245, {	-- Leggings of the Vanquished Champion
-						["classes"] = { DRUID, PRIEST, WARRIOR },
+						["classes"] = { PALADIN, ROGUE, SHAMAN },
 					}),
 					i(30246, {	-- Leggings of the Vanquished Defender
-						["classes"] = { PALADIN, ROGUE, SHAMAN },
+						["classes"] = { DRUID, PRIEST, WARRIOR },
 					}),
 					i(30247, {	-- Leggings of the Vanquished Hero
 						["classes"] = { HUNTER, MAGE, WARLOCK },
