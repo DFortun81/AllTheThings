@@ -19209,7 +19209,12 @@ app.events.VARIABLES_LOADED = function()
 	-- Check to see if we have a leftover ItemDB cache
 	GetDataMember("HeirloomUpgradeLevels", {});
 	GetDataMember("SeasonalFilters", {});
-	GetDataMember("UnobtainableItemFilters", {});
+	local unobtainablesAllowed = GetDataMember("UnobtainableItemFilters", {});
+
+	-- default state filter for 12 (PvP filter)
+	if unobtainablesAllowed[12] == nil then
+		unobtainablesAllowed[12] = true;
+	end
 
 	-- Clean up settings
 	local oldsettings = {};
