@@ -1589,13 +1589,11 @@ _.Achievements =
 					["g"] = {
 						--title(30),	-- Duelist <Name>
 						-- Note!! Currently we can not list this due to having no item.
-						--[[ Illusion: Dreadflame // Dreadflame Illusion
-						i(172671, {	-- Corrupted Gladiator's Cloak (A)
-							["u"] = REMOVED_FROM_GAME,
+						-- Illusion: Dreadflame // Dreadflame Illusion
+						i(180424, {	-- Sinful Gladiator's Prestigious Cloak
+						--	["u"] = REMOVED_FROM_GAME,
+							["u"] = PLAYER_VS_PLAYER,
 						}),
-						i(172670, {	-- Corrupted Gladiator's Cloak (H)
-							["u"] = REMOVED_FROM_GAME,
-						}),--]]
 					},
 				}),
 				ach(14691, {	-- Elite: Shadowlands Season 1
