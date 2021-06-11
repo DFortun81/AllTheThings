@@ -5,11 +5,11 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(14, {	-- Arathi Highlands
+		m(ARATHI_HIGHLANDS, {
 			n(QUESTS, {
 				q(26081, {	-- Alina's Reward
 					["provider"] = { "n", 41944 },	-- Galen Trollbane
-					["coord"] = { 12.9, 36.1, 14 },
+					["coord"] = { 12.9, 36.1, ARATHI_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26033,	-- Trol'kalar
 					["g"] = {
@@ -23,7 +23,7 @@ _.Zones =
 				}),
 				q(26038, {	-- Attack on the Tower
 					["provider"] = { "n", 41983 },	-- Apprentice Kryten
-					["coord"] = { 13.0, 69.2, 14 },
+					["coord"] = { 13.0, 69.2, ARATHI_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26037,	-- Trelane's Defenses
 					["g"] = {
@@ -41,7 +41,7 @@ _.Zones =
 					["sourceQuest"] = 651,	-- Stones of Binding
 				}),
 				q(26042, {	-- Breaking the Keystone
-					["coord"] = { 30.0, 59.0, 14 },
+					["coord"] = { 30.0, 59.0, ARATHI_HIGHLANDS },
 					["provider"] = { "o", 2702 },	-- Stone of Inner Binding
 					["sourceQuest"] = 26041,	-- Stones of Binding
 				}),
@@ -68,7 +68,7 @@ _.Zones =
 				}),
 				q(26027, {	-- Call to Arms
 					["provider"] = { "n", 41966 },	-- Deathstalker Maudria
-					["coord"] = { 13.3, 33.9, 14 },
+					["coord"] = { 13.3, 33.9, ARATHI_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26053,	-- Clearing the Highlands
 					["g"] = {
@@ -82,7 +82,7 @@ _.Zones =
 				}),
 				q(26053, {	-- Clearing the Highlands
 					["provider"] = { "n", 41966 },	-- Deathstalker Maudria
-					["coord"] = { 13.3, 34.3, 14 },
+					["coord"] = { 13.3, 34.3, ARATHI_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 				}),
 				q(8115,  {	-- Control Five Bases (pvp)
@@ -97,7 +97,7 @@ _.Zones =
 				}),
 				q(26429, {	-- Crush the Witherbark
 					["provider"] = { "n", 2771 },	-- Drum Fel
-					["coord"] = { 69.0, 34.8, 14 },
+					["coord"] = { 69.0, 34.8, ARATHI_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26912,	-- The Princess Unleashed (TODO: verify. Didn't see this until after killing Myzrael)
 				}),
@@ -114,7 +114,7 @@ _.Zones =
 				}),
 				q(26628, {	-- Death From Below
 					["provider"] = { "n", 2610 },	-- Shakes O'Breen
-					["coord"] = { 25.9, 83.8, 14 },
+					["coord"] = { 25.9, 83.8, ARATHI_HIGHLANDS },
 					["sourceQuest"] = 26052,	-- Speak to Shakes
 					["g"] = {
 						i(59212),	-- O'Breen's Dress Robes
@@ -139,7 +139,7 @@ _.Zones =
 				}),
 				q(26055, {	-- Drowned Sorrows
 					["provider"] = { "n", 2769 },	-- Captain Steelgut
-					["coord"] = { 27.7, 83.2, 14 },
+					["coord"] = { 27.7, 83.2, ARATHI_HIGHLANDS },
 					["g"] = {
 						i(59205),	-- Folly's Spar
 						i(59206),	-- Steelgut Vest
@@ -149,12 +149,12 @@ _.Zones =
 				}),
 				q(26022, {	-- First Blood
 					["provider"] = { "n", 41949 },	-- Dark Ranger Alina
-					["coord"] = { 13.3, 35.9, 14 },
+					["coord"] = { 13.3, 35.9, ARATHI_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26117, {	-- For Southshore
 					["provider"] = { "n", 2712 },	-- Quae
-					["coord"] = { 54.8, 55.3, 14 },
+					["coord"] = { 54.8, 55.3, ARATHI_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26116,	-- Kinelory Strikes
 					["g"] = {
@@ -181,7 +181,7 @@ _.Zones =
 				}),
 				q(26050, {	-- Goggle Boggle
 					["provider"] = { "n", 2768 },	-- Professor Phizzlethorpe
-					["coord"] = { 27.5, 83.0, 14 },
+					["coord"] = { 27.5, 83.0, ARATHI_HIGHLANDS },
 				}),
 				q(701,   {	-- Guile of the Raptor
 					["u"] = REMOVED_FROM_GAME,
@@ -203,7 +203,7 @@ _.Zones =
 				}),
 				q(26108, {	-- Guile of the Raptor
 					["provider"] = { "n", 42130 },	-- Gor'mul
-					["coord"] = { 67.7, 34.7, 14 },
+					["coord"] = { 67.7, 34.7, ARATHI_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26107,	-- Raising Spirits
 					["g"] = {
@@ -221,13 +221,13 @@ _.Zones =
 				}),
 				q(26084, {	-- Hammerfall
 					["provider"] = { "n", 41949 },	-- Dark Ranger Alina
-					["coord"] = { 13.3, 35.9, 14 },
+					["coord"] = { 13.3, 35.9, ARATHI_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26081,	-- Alina's Reward
 				}),
 				q(26083, {	-- Hello Lolo
 					["provider"] = { "n", 42088 },	-- Goutgut
-					["coord"] = { 12.8, 34.0, 14 },
+					["coord"] = { 12.8, 34.0, ARATHI_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26081,	-- Alina's Reward
 				}),
@@ -241,7 +241,7 @@ _.Zones =
 				}),
 				q(26943, {	-- Home Sweet Gnome
 					["provider"] = { "n", 2789 },	-- Skuerto
-					["coord"] = { 40.3, 49.1, 14 },
+					["coord"] = { 40.3, 49.1, ARATHI_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["altQuests"] = { 26944 },	-- Exploring Gnomeregan
 					["isBreadcrumb"] = true,
@@ -266,13 +266,13 @@ _.Zones =
 				-- #endif
 				q(26110, {	-- Just Like Old Times
 					["provider"] = { "n", 2712 },	-- Quae
-					["coord"] = { 54.8, 55.3, 14 },
+					["coord"] = { 54.8, 55.3, ARATHI_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26113,	-- Quae and Kinelory
 				}),
 				q(26116, {	-- Kinelory Strikes
 					["provider"] = { "n", 2713 },	-- Kinelory
-					["coord"] = { 54.8, 55.4, 14 },
+					["coord"] = { 54.8, 55.4, ARATHI_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26114,	-- Quae Trusts You
 				}),
@@ -301,20 +301,20 @@ _.Zones =
 					["sourceQuest"] = 652,	-- Breaking the Keystone
 				}),
 				q(26346, {	-- Myzrael's Tale (A)
-					["coord"] = { 30.0, 58.9, 14 },
+					["coord"] = { 30.0, 58.9, ARATHI_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 2702 },	-- Stone of Inner Binding
 					["sourceQuest"] = 26042,	-- Breaking the Keystone
 				}),
 				q(26911, {	-- Myzrael's Tale (H)
-					["coord"] = { 30.0, 58.9, 14 },
+					["coord"] = { 30.0, 58.9, ARATHI_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 2702 },	-- Stone of Inner Binding
 					["sourceQuest"] = 26042,	-- Breaking the Keystone
 				}),
 				q(26093, {	-- Northfold Manor
 					["provider"] = { "n", 2700 },	-- Captain Nials
-					["coord"] = { 39.9, 48.8, 14 },
+					["coord"] = { 39.9, 48.8, ARATHI_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						28573,	-- Hero's Call: Arathi Highlands!
@@ -323,12 +323,12 @@ _.Zones =
 				}),
 				q(26113, {	-- Quae and Kinelory
 					["provider"] = { "n", 2608 },	-- Commander Amaren
-					["coord"] = { 39.6, 47.9, 14 },
+					["coord"] = { 39.6, 47.9, ARATHI_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26114, {	-- Quae Trusts You
 					["provider"] = { "n", 2712 },	-- Quae
-					["coord"] = { 54.8, 55.3, 14 },
+					["coord"] = { 54.8, 55.3, ARATHI_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26110,	-- Just Like Old Times
 				}),
@@ -352,18 +352,18 @@ _.Zones =
 				}),
 				q(26107, {	-- Raising Spirits
 					["provider"] = { "n", 42130 },	-- Gor'mul
-					["coord"] = { 67.7, 34.7, 14 },
+					["coord"] = { 67.7, 34.7, ARATHI_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26430, {	-- Revantusk Village
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 2771 },	-- Drum Fel
-					["coord"] = { 69.0, 34.8, 14 },
+					["coord"] = { 69.0, 34.8, ARATHI_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26336, {	-- Shakes O'Breen
 					["provider"] = { "n", 2789 },	-- Skuerto
-					["coord"] = { 40.3, 49.1, 14 },
+					["coord"] = { 40.3, 49.1, ARATHI_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(643,   {	-- Sigil of Arathor
@@ -374,7 +374,7 @@ _.Zones =
 				}),
 				q(26032, {	-- Sigil of Arathor
 					["provider"] = { "n", 41944 },	-- Galen Trollbane
-					["coord"] = { 12.9, 36.1, 14 },
+					["coord"] = { 12.9, 36.1, ARATHI_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26031,	-- Sigil of Thoradin
 				}),
@@ -386,7 +386,7 @@ _.Zones =
 				}),
 				q(26030, {	-- Sigil of Strom
 					["provider"] = { "n", 41944 },	-- Galen Trollbane
-					["coord"] = { 12.9, 36.1, 14 },
+					["coord"] = { 12.9, 36.1, ARATHI_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26023,	-- The Forsaken Trollbane
 				}),
@@ -398,7 +398,7 @@ _.Zones =
 				}),
 				q(26031, {	-- Sigil of Thoradin
 					["provider"] = { "n", 41944 },	-- Galen Trollbane
-					["coord"] = { 12.9, 36.1, 14 },
+					["coord"] = { 12.9, 36.1, ARATHI_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26030,	-- Sigil of Strom
 				}),
@@ -410,7 +410,7 @@ _.Zones =
 				}),
 				q(26052, {	-- Speak to Shakes
 					["provider"] = { "n", 2774 },	-- Doctor Draxlegauge
-					["coord"] = { 27.5, 82.9, 14 },
+					["coord"] = { 27.5, 82.9, ARATHI_HIGHLANDS },
 					["sourceQuest"] = 26051,	-- Sunken Treasure
 				}),
 				q(651,   {	-- Stones of Binding
@@ -419,7 +419,7 @@ _.Zones =
 					["sourceQuest"] = 642,	-- The Princess Trapped
 				}),
 				q(26041, {	-- Stones of Binding
-					["coord"] = { 79.8, 31.6, 14 },
+					["coord"] = { 79.8, 31.6, ARATHI_HIGHLANDS },
 					["provider"] = { "o", 2701 },	-- Iridescent Shards
 					["sourceQuests"] = { 26039 },	-- The Princess Trapped
 				}),
@@ -432,7 +432,7 @@ _.Zones =
 				}),
 				q(26095, {	-- Stromgarde Badges
 					["provider"] = { "n", 2700 },	-- Captain Nials
-					["coord"] = { 39.9, 48.8, 14 },
+					["coord"] = { 39.9, 48.8, ARATHI_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26093,	-- Northfold Manner
 					["g"] = {
@@ -471,7 +471,7 @@ _.Zones =
 				}),
 				q(26051, {	-- Sunken Treasure
 					["provider"] = { "n", 2774 },	-- Doctor Draxlegauge
-					["coord"] = { 27.5, 82.9, 14 },
+					["coord"] = { 27.5, 82.9, ARATHI_HIGHLANDS },
 					["sourceQuest"] = 26050,	-- Goggle Boggle
 					["g"] = {
 						i(59199),	-- Bottom Waders
@@ -508,7 +508,7 @@ _.Zones =
 				}),
 				q(26023, {	-- The Forsaken Trollbane
 					["provider"] = { "n", 41949 },	-- Dark Ranger Alina
-					["coord"] = { 13.3, 35.9, 14 },
+					["coord"] = { 13.3, 35.9, ARATHI_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26022,	-- First Blood
 				}),
@@ -517,13 +517,13 @@ _.Zones =
 					["provider"] = { "o", 138492 },	-- Shards of Myzrael
 				}),
 				q(26039, {	-- The Princess Trapped
-					["coord"] = { 57.2, 34.5, 14 },
+					["coord"] = { 57.2, 34.5, ARATHI_HIGHLANDS },
 					["provider"] = { "o", 138492 },	-- Shards of Myzrael
 					["sourceQuests"] = { 26341, 26909 },	-- The Stone Shards (A/H versions)
 				}),
 				q(26049, {	-- The Princess Unleashed (A)
 					["provider"] = { "n", 2789 },	-- Skuerto
-					["coord"] = { 40.3, 49.1, 14 },
+					["coord"] = { 40.3, 49.1, ARATHI_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26346,	-- Myzrael's Tale
 					["g"] = {
@@ -536,7 +536,7 @@ _.Zones =
 				}),
 				q(26912, {	-- The Princess Unleashed (H)
 					["provider"] = { "n", 2787 },	-- Zaruk
-					["coord"] = { 69.6, 36.5, 14 },
+					["coord"] = { 69.6, 36.5, ARATHI_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26911,	-- Myzrael's Tale
 					["g"] = {
@@ -557,7 +557,7 @@ _.Zones =
 				}),
 				q(26029, {	-- The Real Threat
 					["provider"] = { "n", 41966 },	-- Deathstalker Maudria
-					["coord"] = { 13.3, 33.9, 14 },
+					["coord"] = { 13.3, 33.9, ARATHI_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26027,	-- Call to Arms
 					["g"] = {
@@ -570,19 +570,19 @@ _.Zones =
 				}),
 				q(26341, {	-- The Stone Shards
 					["provider"] = { "n", 2789 },	-- Skuerto
-					["coord"] = { 40.3, 49.1, 14 },
+					["coord"] = { 40.3, 49.1, ARATHI_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(26909, {	-- The Stone Shards
 					["provider"] = { "n", 2787 },	-- Zaruk
-					["coord"] = { 69.6, 36.5, 14 },
+					["coord"] = { 69.6, 36.5, ARATHI_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(26025, {	-- The Traitor Orc
 					["provider"] = { "n", 41949 },	-- Dark Ranger Alina
-					["coord"] = { 13.3, 35.9, 14 },
+					["coord"] = { 13.3, 35.9, ARATHI_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26022,	-- First Blood
 					["g"] = {
@@ -605,7 +605,7 @@ _.Zones =
 				}),
 				q(26428, {	-- To Steal From Thieves
 					["provider"] = { "n", 4486 },	-- Genavie Callow
-					["coord"] = { 13.7, 33.9, 14 },
+					["coord"] = { 13.7, 33.9, ARATHI_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(59158),	-- Craig's Steel
@@ -618,7 +618,7 @@ _.Zones =
 				}),
 				q(26037, {	-- Trelane's Defenses
 					["provider"] = { "n", 2789 },	-- Skuerto
-					["coord"] = { 40.3, 49.1, 14 },
+					["coord"] = { 40.3, 49.1, ARATHI_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26036,	-- Wand Over Fist
 				}),
@@ -667,13 +667,13 @@ _.Zones =
 				}),
 				q(26033, {	-- Trol'kalar
 					["provider"] = { "n", 41944 },	-- Galen Trollbane
-					["coord"] = { 12.9, 36.1, 14 },
+					["coord"] = { 12.9, 36.1, ARATHI_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26032,	-- Sigil of Arathor
 				}),
 				q(26036, {	-- Wand over Fist
 					["provider"] = { "n", 2789 },	-- Skuerto
-					["coord"] = { 40.3, 49.1, 14 },
+					["coord"] = { 40.3, 49.1, ARATHI_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26035,	-- Worth Its Weight in Gold
 				}),
@@ -685,7 +685,7 @@ _.Zones =
 					},
 				}),
 				q(26024, {	-- Wanted! Marez Cowl
-					["coord"] = { 40.1, 49.0, 14 },
+					["coord"] = { 40.1, 49.0, ARATHI_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 2713 },	-- Wanted Board
 					["g"] = {
@@ -705,7 +705,7 @@ _.Zones =
 					},
 				}),
 				q(26079, {	-- Wanted! Otto and Falconcrest
-					["coord"] = { 40.1, 49.0, 14 },
+					["coord"] = { 40.1, 49.0, ARATHI_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 2713 },	-- Wanted Board
 					["g"] = {
@@ -719,7 +719,7 @@ _.Zones =
 				}),
 				q(26035, {	-- Worth Its Weight in Gold
 					["provider"] = { "n", 2789 },	-- Skuerto
-					["coord"] = { 40.3, 49.1, 14 },
+					["coord"] = { 40.3, 49.1, ARATHI_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),

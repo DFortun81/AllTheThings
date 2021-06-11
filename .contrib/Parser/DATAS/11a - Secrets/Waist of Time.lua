@@ -7,7 +7,7 @@ _.Secrets =
 	n(-806, { 	-- Waist of Time
 		["description"] = "***Quest tracking enabled is required to see all the steps.***\n\nYou will need uncommon quality Windwool Hood, Deathsilk Shoulders, Netherweave Tunic, Frostwoven Leggings, as well as Proximo's Rudius, Rough Wooden Staff, Punctured Pelt, and Formula: Enchant Ring - Striking later on in the secret. It is recommended that you have flying and the Ever-Shifting Mirror toy for ease of travel between Draenor and Outland.",
 		["maps"] = {
-			14,
+			ARATHI_HIGHLANDS,
 			15,
 			17,
 			23,
@@ -202,8 +202,8 @@ _.Secrets =
 				["sourceQuests"] = { 52915 },
 				["description"] = "Head to the past version of Arathi Highlands, and click on the note on the table inside Grimmy's house.\n\nGrimmy's List of Friends reads:\n\n\"List of My Friends?\nFirst is SN, you always smelled so good\nSecond is TM, you smelled like burning\nwood\nThird is FD, though you smelled like fel\nLast is OM, I hated that fishy smell\"",
 				["coords"] = {
-					{ 38.2, 90.1, 14 },	-- Zidormi
-					{ 85.4, 73.6, 14 },	-- Grimmy's List of Friends
+					{ 38.2, 90.1, ARATHI_HIGHLANDS },	-- Zidormi
+					{ 85.4, 73.6, ARATHI_HIGHLANDS },	-- Grimmy's List of Friends
 				},
 			}),
 			q(52917, { 	-- Grimmy Dialogue
@@ -211,14 +211,14 @@ _.Secrets =
 				["provider"] = { "n", 138578 },	-- Grimmy
 				["sourceQuests"] = { 52916 },
 				["description"] = "Equip the Windwool Hood, Deathsilk Shoulders, Netherweave Tunic, and Frostwoven Leggings, and talk to Grimmy.  Select his dialogue \"It's me, your friend. Got any secrets to tell me about?\"",
-			--	["coord"] = { 85.3, 73.6, 14 },	-- Grimmy Dialogue
+				--["coord"] = { 85.3, 73.6, ARATHI_HIGHLANDS },	-- Grimmy Dialogue
 			}),
 			o(294314, { 	-- Grimmy's List of Enemies
 				["model"] = 305391,
 				["questID"] = 52918,
 				["sourceQuests"] = { 52917 },
 				["description"] = "After selecting the Grimmy dialogue, a note appears on his bedstand.  Click it.  Grimmy's List of Enemies reads:\n\n\"You flaunted your virility, and red was\nnever to my liking\nThough I wanted to slap you, I always\nfound you striking.\n\nYou Always though you knew what was\nbest, but not everyone likes greens,\nThough I waved your way, I pictured\nyour shredded hide in my dreams.\n??\nYour bread was bad, you diseased lout,\nit made me sick.\nI woudl cheerily beat you with a stick.\n??\nLast you, I'm not eve going to think of\na rhyme for you, Mugs.\nI will dance on your grave, you were\nuniquely terrible.\"\n\nGo to each of the following NPCs with Proximo's Rudius, Rough Wooden Staff, Punctured Pelt, and Formula: Enchant Ring - Striking, and emote to them.",
-			--	["coord"] = { 85.2, 73.7, 14 },	-- Grimmy's List of Enemies
+				--["coord"] = { 85.2, 73.7, ARATHI_HIGHLANDS },	-- Grimmy's List of Enemies
 			}),
 			n(47121, { 	-- Aquinastrasz <Vermillion Redoubt Flight Master>
 				["questID"] = 52822,
@@ -248,7 +248,7 @@ _.Secrets =
 				["questID"] = 52919,
 				["sourceQuests"] = { 52826, 52824, 52823, 52822, },
 				["description"] = "Return to Grimmy and select his new dialogue\n\n\"I've sent some messages to your enemies, now about those secrets...\"",
-				["coord"] = { 85.3, 73.6, 14 },	-- Grimmy Dialogue
+				["coord"] = { 85.3, 73.6, ARATHI_HIGHLANDS },	-- Grimmy Dialogue
 			}),
 			o(294315, { 	-- Grimmy's Favorite Recipe
 				["model"] = 936411,
@@ -256,7 +256,7 @@ _.Secrets =
 				["questID"] = 52920,
 				["sourceQuests"] = { 52919 },
 				["description"] = "After selecting Grimmy's dialogue, a new note appears by the fireplace.  Click it.  Grimmy's Favorite Recipe reads:\n\n\"A pinch of turmeric and a pound of salt,\nif it comes out poorly it's your own\nfault.\n\nPay attention to the broth, and stir,stir,\nstir!\nThen add a big handful of boar fur.\n\nLast you need a little sour,\nget the kick with a little gunpowder!\"",
-			--	["coord"] = { 85.3, 74.0, 14 },	-- Grimmy's Favorite Recipe
+				--["coord"] = { 85.3, 74.0, ARATHI_HIGHLANDS },	-- Grimmy's Favorite Recipe
 			}),
 			o(294335, { 	-- Rotten Potato
 				["model"] = 2020463,
@@ -264,14 +264,14 @@ _.Secrets =
 				["questID"] = 52921,
 				["sourceQuests"] = { 52920 },
 				["description"] = "Go outside and find the Rotten Potato.  You will need to get exactly 144 stacks of Rotten Potato by clicking the potato.  After getting 144 stacks of the buff, go back and talk to Grimmy and select his new dialogue option\"How do I smell?\"\n\nGrimmy's new dialogue says:\n\n\"Oh, my, just like my mother used to after she made her famous pie.\n\nVery well, I will show you...my life's work!\n\nIt's in the chest out back, and it's all yours!\n\nI hope it was worth it!\"",
-				["coord"] = { 88.4, 69.2, 14 },	-- Rotten Potato
+				["coord"] = { 88.4, 69.2, ARATHI_HIGHLANDS },	-- Rotten Potato
 			}),
 			o(294703, { 	-- Grimmy's Rusty Lockbox
 				["model"] = 196989,
 				["questID"] = 52922,
 				["sourceQuests"] = { 52921 },
 				["description"] = "After asking Grimmy how you smell, go outside behind and above his house, and on the hill will be Grimmy's Rusty Lockbox waiting for you to open it.",
-				["coord"] = { 85.1, 73.3, 14 },	-- Grimmy's Rusty Lockbox
+				["coord"] = { 85.1, 73.3, ARATHI_HIGHLANDS },	-- Grimmy's Rusty Lockbox
 				["g"] = {
 					i(162690),	-- Waist of Time
 				},

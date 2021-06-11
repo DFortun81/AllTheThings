@@ -211,10 +211,10 @@ _.ExpansionFeatures =
 					}),
 					q(42535, {	-- Death... and Decay
 						["provider"] = { "n", 107806 },	-- Prince Galen Trollbane
-						["coord"] = { 19.4, 67.3, 14 },
+						["coord"] = { 19.4, 67.3, ARATHI_HIGHLANDS },
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 42533, -- The Ruined Kingdom
-						["maps"] = { 14 },	-- Arathi Highlands
+						["maps"] = { ARATHI_HIGHLANDS },
 					}),
 					q(40932, {	-- Disturbing the Past
 						["provider"] = { "n", 100729 },	-- Revil Kost
@@ -326,10 +326,10 @@ _.ExpansionFeatures =
 					}),
 					q(42534, {	-- Our Oldest Enemies
 						["provider"] = { "n", 107806 },	-- Prince Galen Trollbane
-						["coord"] = { 19.4, 67.3, 14 },
+						["coord"] = { 19.4, 67.3, ARATHI_HIGHLANDS },
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 42533, -- The Ruined Kingdom
-						["maps"] = { 14 },	-- Arathi Highlands
+						["maps"] = { ARATHI_HIGHLANDS },
 					}),
 					q(39832, {	-- Plans and Preparations
 						["provider"] = { "n", 93437 }, -- Highlord Darion Mograine
@@ -351,13 +351,13 @@ _.ExpansionFeatures =
 					}),
 					q(42536, {	-- Regicide
 						["provider"] = { "n", 108042 },	-- Thassarian
-						["coord"] = { 19.6, 67.0, 14 },
+						["coord"] = { 19.6, 67.0, ARATHI_HIGHLANDS },
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuests"] = {
 							42535, -- Death... and Decay
 							42534, -- Our Oldest Enemies
 						},
-						["maps"] = { 14 },	-- Arathi Highlands
+						["maps"] = { ARATHI_HIGHLANDS },
 					}),
 					q(42449, {	-- Return of the Four Horsemen
 						["provider"] = { "n", 93658 }, -- Highlord Darion Mograine
@@ -503,10 +503,10 @@ _.ExpansionFeatures =
 					}),
 					q(42537, {	-- The King Rises
 						["provider"] = { "n", 108042 },	-- Thassarian
-						["coord"] = { 23.4, 61.4, 14 },
+						["coord"] = { 23.4, 61.4, ARATHI_HIGHLANDS },
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 42536, -- Regicide
-						["maps"] = { 14 },	-- Arathi Highlands
+						["maps"] = { ARATHI_HIGHLANDS },
 					}),
 					q(46813, {	-- The Lost Glacier
 						["provider"] = { "n", 121752 },	-- Slimy

@@ -179,18 +179,18 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12380, {	-- Candy Bucket — Arathi Highlands, Hammerfall, Horde
 				["isYearly"] = true,
-				["coord"] = { 69.0, 33.4, 14 },
+				["coord"] = { 69.0, 33.4, ARATHI_HIGHLANDS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 14 },	-- Arathi Highlands
+				["maps"] = { ARATHI_HIGHLANDS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(28954, {	-- Candy Bucket — Arathi Highlands, Refuge Point, Alliance
 				["isYearly"] = true,
-				["coord"] = { 40.1, 49, 14 },
+				["coord"] = { 40.1, 49, ARATHI_HIGHLANDS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 14 },	-- Arathi Highlands
+				["maps"] = { ARATHI_HIGHLANDS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},

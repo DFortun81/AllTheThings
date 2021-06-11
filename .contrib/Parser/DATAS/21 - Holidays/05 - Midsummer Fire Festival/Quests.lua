@@ -68,10 +68,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11764, {	-- Desecrate this Fire! — Arathi Highlands
 				["isYearly"] = true,
 				["provider"] = { "o", 187947 },	-- Horde Bonfire
-				["coord"] = { 69.0, 43.1, 14 },
+				["coord"] = { 69.0, 43.1, ARATHI_HIGHLANDS },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
-				["maps"] = { 14 },	-- Arathi Highlands
+				["maps"] = { ARATHI_HIGHLANDS },
 			}),
 			q(11765, {	-- Desecrate this Fire! — Ashenvale
 				["isYearly"] = true,
@@ -478,10 +478,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11732, {	-- Desecrate this Fire! — Arathi Highlands
 				["isYearly"] = true,
 				["provider"] = { "o", 187914 },	-- Alliance Bonfire (this isn't linked to the quest on wowhead, but it's the Alliance Bonfire listed in this zone)
-				["coord"] = { 44.8, 46.1, 14 },
+				["coord"] = { 44.8, 46.1, ARATHI_HIGHLANDS },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-				["maps"] = { 14 },	-- Arathi Highlands
+				["maps"] = { ARATHI_HIGHLANDS },
 			}),
 			q(11734, {	-- Desecrate this Fire! — Ashenvale
 				["isYearly"] = true,
@@ -918,9 +918,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11804, {	-- Honor the Flame — Arathi Highlands
 				["provider"] = { "n", 25887 },	-- Arathi Flame Warden
 				["isYearly"] = true,
-				["coord"] = { 44.3, 45.8, 14 },
+				["coord"] = { 44.3, 45.8, ARATHI_HIGHLANDS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 14 },	-- Arathi Highlands
+				["maps"] = { ARATHI_HIGHLANDS },
 			}),
 			q(11805, {	-- Honor the Flame — Ashenvale
 				["provider"] = { "n", 25883 },	-- Ashenvale Flame Warden
@@ -1312,9 +1312,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11840, {	-- Honor the Flame — Arathi Highlands
 				["provider"] = { "n", 25923 },	-- Arathi Flame Keeper
 				["isYearly"] = true,
-				["coord"] = { 69.4, 42.6, 14 },
+				["coord"] = { 69.4, 42.6, ARATHI_HIGHLANDS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 14 },	-- Arathi Highlands
+				["maps"] = { ARATHI_HIGHLANDS },
 			}),
 			q(11841, {	-- Honor the Flame — Ashenvale
 				["provider"] = { "n", 25884 },	-- Ashenvale Flame Keeper
@@ -1902,7 +1902,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["provider"] = { "n", 25962 },	-- Fire Eater
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = {
-					14,		-- Arathi Highlands
+					ARATHI_HIGHLANDS,
 					15,		-- Badlands
 					17,		-- Blasted Lands
 					22,		-- Western Plaguelands

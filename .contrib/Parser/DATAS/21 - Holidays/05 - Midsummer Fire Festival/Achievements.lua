@@ -26,9 +26,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									crit(1,  {	-- Arathi Highlands
-										["coord"] = { 44.3, 45.8, 14 },
+										["coord"] = { 44.3, 45.8, ARATHI_HIGHLANDS },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 14 },	-- Arathi Highlands
+										["maps"] = { ARATHI_HIGHLANDS },
 									}),
 									crit(2,  {	-- Badlands
 										["coord"] = { 18.9, 56.1, 15 },
@@ -306,9 +306,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									crit(1,  {	-- Arathi Highlands
-										["coord"] = { 69.0, 43.1, 14 },
+										["coord"] = { 69.0, 43.1, ARATHI_HIGHLANDS },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 14 },	-- Arathi Highlands
+										["maps"] = { ARATHI_HIGHLANDS },
 									}),
 									crit(2,  {	-- Badlands
 										["coord"] = { 24.1, 37.3, 15 },
@@ -732,9 +732,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 								["races"] = HORDE_ONLY,
 								["g"] = {
 									crit(1,  {	-- Arathi Highlands
-										["coord"] = { 69.4, 42.6, 14 },
+										["coord"] = { 69.4, 42.6, ARATHI_HIGHLANDS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 14 },	-- Arathi Highlands
+										["maps"] = { ARATHI_HIGHLANDS },
 									}),
 									crit(2,  {	-- Badlands
 										["coord"] = { 23.1, 37.4, 15 },
@@ -1002,9 +1002,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 								["races"] = HORDE_ONLY,
 								["g"] = {
 									crit(1,  {	-- Arathi Highlands
-										["coord"] = { 44.8, 46.1, 14 },
+										["coord"] = { 44.8, 46.1, ARATHI_HIGHLANDS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 14 },	-- Arathi Highlands
+										["maps"] = { ARATHI_HIGHLANDS },
 									}),
 									crit(2,  {	-- Badlands
 										["coord"] = { 18.5, 56.1, 15 },

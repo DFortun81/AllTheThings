@@ -7,7 +7,7 @@ _.PVP =
 	n(-304, {	-- Battlegrounds
 		m(93 , {	-- Arathi Basin
 			["maps"] = {
-				14,		-- Arathi Highlands
+				ARATHI_HIGHLANDS,
 				837,	-- Arathi Basin
 				844,	-- Arathi Basin
 				1383,	-- Arathi Basin
@@ -61,7 +61,7 @@ _.PVP =
 							n(15126, {	-- Rutherford Twing
 								["itemID"] = 137642,	-- Mark of Honor
 								["races"] = HORDE_ONLY,	-- to hide it in Mark of Honor list
-								["coord"] = { 68.4, 30.6, 14 },
+								["coord"] = { 68.4, 30.6, ARATHI_HIGHLANDS },
 								["g"] = {
 									i(20176),	-- Defiler's Epaulets
 									i(20163),	-- Defiler's Cloth Girdle
@@ -236,7 +236,7 @@ _.PVP =
 							n(15127, {	-- Samuel Hawke
 								["itemID"] = 137642,	-- Mark of Honor
 								["races"] = ALLIANCE_ONLY,	-- to hide it in Mark of Honor list
-								["coord"] = { 40.2, 46.4, 14 },
+								["coord"] = { 40.2, 46.4, ARATHI_HIGHLANDS },
 								["g"] = {
 									i(20061),	-- Highlander's Epaulets
 									i(20047),	-- Highlander's Cloth Girdle

@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(14, {	-- Arathi Highlands
+		m(ARATHI_HIGHLANDS, {
 			["description"] = "Arathi Highlands is located in southeastern Lordaeron. Players can queue for Arathi Basin via Refuge Pointe and Hammerfall. Main attractions are the ancient kingdom of Stromgarde and the architectural Dwarven wonder, Thandol Span.",
 			["achievementID"] = 761,
 		}),

@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(14, {	-- Arathi Highlands
+		m(ARATHI_HIGHLANDS, {
 			n(VENDORS, {
 				n(2816, {	-- Androd Fadran <Leatherworking Supplies>
-					["coord"] = { 39.2, 48.2, 14 },
+					["coord"] = { 39.2, 48.2, ARATHI_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(13288, {	-- Pattern: Raptor Hide Belt
@@ -17,7 +17,7 @@ _.Zones =
 					},
 				}),
 				n(3180, {	-- Dark Iron Entrepreneur <Speciality Goods>
-					["coord"] = { 42.6, 90.6, 14 },
+					["coord"] = { 42.6, 90.6, ARATHI_HIGHLANDS },
 					["g"] = {
 						i(4824, {	-- Blurred Axe
 							["isLimited"] = true,
@@ -47,7 +47,7 @@ _.Zones =
 					},
 				}),
 				n(2812, {	-- Drovnar Strongbrew <Alchemy Supplies>
-					["coord"] = { 40.6, 48.2, 14 },
+					["coord"] = { 40.6, 48.2, ARATHI_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(6056, {	-- Recipe: Frost Protection Potion
@@ -56,7 +56,7 @@ _.Zones =
 					},
 				}),
 				n(2810, {	-- Hammon Karwn <Superior Tradesman>
-					["coord"] = { 40.4, 48.8, 14 },
+					["coord"] = { 40.4, 48.8, ARATHI_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(21942, {	-- Design: Ruby Crown of Restoration
@@ -69,7 +69,7 @@ _.Zones =
 					},
 				}),
 				n(1471, {	-- Jannos Ironwill <Superior Macecrafter>
-					["coord"] = { 40.8, 48.0, 14 },
+					["coord"] = { 40.8, 48.0, ARATHI_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(10858, {	-- Plans: Solid Iron Maul
@@ -78,7 +78,7 @@ _.Zones =
 					},
 				}),
 				n(6574, {	-- Jun'ha <Tailoring Supplies>
-					["coord"] = { 67.8, 37.4, 14 },
+					["coord"] = { 67.8, 37.4, ARATHI_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(7089, { 	-- Pattern: Azure Silk Cloak
@@ -87,7 +87,7 @@ _.Zones =
 					},
 				}),
 				n(2821, {	-- Keena <Trade Goods>
-					["coord"] = { 69.2, 33.6, 14 },
+					["coord"] = { 69.2, 33.6, ARATHI_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(21942, {	-- Design: Ruby Crown of Restoration
@@ -105,7 +105,7 @@ _.Zones =
 					},
 				}),
 				n(9555, {	-- Mu'uta <Bowyer>
-					["coord"] = { 67.6, 34.2, 14 },
+					["coord"] = { 67.6, 34.2, ARATHI_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(11305, {	-- Dense Shortbow
@@ -114,14 +114,14 @@ _.Zones =
 					},
 				}),
 				n(2814, {	-- Narj Deepslice <Butcher>
-					["coord"] = { 39.6, 48.8, 14 },
+					["coord"] = { 39.6, 48.8, ARATHI_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(4609),	-- Recipe: Barbecued Buzzard Wing
 					},
 				}),
 				n(2819, {	-- Tunkk <Leatherworking Supplies>
-					["coord"] = { 70.0, 35.4, 14 },
+					["coord"] = { 70.0, 35.4, ARATHI_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(13287, { 	-- Pattern: Raptor Hide Harness

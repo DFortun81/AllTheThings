@@ -298,8 +298,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 									["races"] = ALLIANCE_ONLY,
 									["g"] = {
 										crit(1,  {	-- Arathi Highlands, Refuge Point
-											["coord"] = { 40.1, 49.0, 14 },
-											["maps"] = { 14 },	-- Arathi Highlands
+											["coord"] = { 40.1, 49.0, ARATHI_HIGHLANDS },
+											["maps"] = { ARATHI_HIGHLANDS },
 										}),
 										crit(2,  {	-- Badlands, Dragon's Mouth
 											["coord"] = { 20.9, 56.2, 15 },
@@ -407,8 +407,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 									["races"] = HORDE_ONLY,
 									["g"] = {
 										crit(1,  {	-- Arathi Highlands, Hammerfall
-											["coord"] = { 69.0, 33.4, 14 },
-											["maps"] = { 14 },	-- Arathi Highlands
+											["coord"] = { 69.0, 33.4, ARATHI_HIGHLANDS },
+											["maps"] = { ARATHI_HIGHLANDS },
 										}),
 										crit(2,  {	-- Badlands, Fuselight
 											["coord"] = { 65.9, 35.8, 15 },
