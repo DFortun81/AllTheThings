@@ -9,7 +9,7 @@ _.Instances = { tier(1, {	-- Classic
 		["maps"] = { 231 },
 		["coords"] = {
 			{ 36.63, 29.42, 16 },	-- Uldaman [Front], Uldaman [Badlands]
-			{ 60.68, 37.43, 15 },	-- Uldaman [Side], Badlands
+			{ 60.68, 37.43, BADLANDS },	-- Uldaman [Side]
 		},
 		["groups"] = {
 			n(QUESTS, {

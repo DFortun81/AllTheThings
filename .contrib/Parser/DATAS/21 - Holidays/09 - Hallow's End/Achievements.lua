@@ -302,12 +302,12 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { ARATHI_HIGHLANDS },
 										}),
 										crit(2,  {	-- Badlands, Dragon's Mouth
-											["coord"] = { 20.9, 56.2, 15 },
-											["maps"] = { 15 },	-- Badlands
+											["coord"] = { 20.9, 56.2, BADLANDS },
+											["maps"] = { BADLANDS },
 										}),
 										crit(3,  {	-- Badlands, Fuselight
-											["coord"] = { 65.9, 35.8, 15 },
-											["maps"] = { 15 },	-- Badlands
+											["coord"] = { 65.9, 35.8, BADLANDS },
+											["maps"] = { BADLANDS },
 										}),
 										crit(4,  {	-- Blasted Lands, Nethergarde Keep
 											["coord"] = { 60.7, 14.2, 17 },
@@ -411,12 +411,12 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { ARATHI_HIGHLANDS },
 										}),
 										crit(2,  {	-- Badlands, Fuselight
-											["coord"] = { 65.9, 35.8, 15 },
-											["maps"] = { 15 },	-- Badlands
+											["coord"] = { 65.9, 35.8, BADLANDS },
+											["maps"] = { BADLANDS },
 										}),
 										crit(3,  {	-- Badlands, New Kargath
-											["coord"] = { 18.3, 42.8, 15 },
-											["maps"] = { 15 },	-- Badlands
+											["coord"] = { 18.3, 42.8, BADLANDS },
+											["maps"] = { BADLANDS },
 										}),
 										crit(4,  {	-- Blasted Lands, Dreadmaul Hold
 											["coord"] = { 40.5, 11.4, 17 },

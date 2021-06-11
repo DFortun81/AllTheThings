@@ -18,7 +18,7 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 				}),
 				ach(2436, {	-- Desert Rose
 					crit(1, {	-- The Badlands
-						["maps"] = { 15 },	-- The Badlands
+						["maps"] = { BADLANDS },
 					}),
 					crit(2, {	-- Desolace
 						["maps"] = { 66 },	-- Desolace

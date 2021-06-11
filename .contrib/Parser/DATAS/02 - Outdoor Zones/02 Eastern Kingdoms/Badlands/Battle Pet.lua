@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(15, {	-- Badlands
+		m(BADLANDS, {
 			filter(101, {	-- Pet Battle
 				p(406, {	-- Beetle
 					["crs"] = { 61319 },

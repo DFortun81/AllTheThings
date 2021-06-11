@@ -260,26 +260,26 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(28956, {	-- Candy Bucket — Badlands, Dragon's Mouth, Alliance
 				["isYearly"] = true,
-				["coord"] = { 20.9, 56.2, 15 },
+				["coord"] = { 20.9, 56.2, BADLANDS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 15 },	-- Badlands
+				["maps"] = { BADLANDS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(28955, {	-- Candy Bucket — Badlands, Fuselight, neutral
 				["isYearly"] = true,
-				["coord"] = { 65.9, 35.8, 15 },
-				["maps"] = { 15 },	-- Badlands
+				["coord"] = { 65.9, 35.8, BADLANDS },
+				["maps"] = { BADLANDS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12385, {	-- Candy Bucket — Badlands, Kargath, Horde (removed)
 				["isYearly"] = true,
-				["coord"] = { 2.8, 46.0, 15 },
+				["coord"] = { 2.8, 46.0, BADLANDS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 15 },	-- Badlands
+				["maps"] = { BADLANDS },
 				["u"] = REMOVED_FROM_GAME,	-- Kargath was destroyed during Cataclysm
 				["g"] = {
 					i(37586), -- Handful of Treats
@@ -287,9 +287,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(28957, {	-- Candy Bucket — Badlands, New Kargath, Horde
 				["isYearly"] = true,
-				["coord"] = { 18.3, 42.8, 15 },
+				["coord"] = { 18.3, 42.8, BADLANDS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 15 },	-- Badlands
+				["maps"] = { BADLANDS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},

@@ -8,7 +8,7 @@ _.Secrets =
 		["description"] = "***Quest tracking enabled is required to see all the steps.***\n\nYou will need uncommon quality Windwool Hood, Deathsilk Shoulders, Netherweave Tunic, Frostwoven Leggings, as well as Proximo's Rudius, Rough Wooden Staff, Punctured Pelt, and Formula: Enchant Ring - Striking later on in the secret. It is recommended that you have flying and the Ever-Shifting Mirror toy for ease of travel between Draenor and Outland.",
 		["maps"] = {
 			ARATHI_HIGHLANDS,
-			15,
+			BADLANDS,
 			17,
 			23,
 			25,
@@ -147,7 +147,7 @@ _.Secrets =
 				["questID"] = 52909,
 				["sourceQuests"] = { 52908 },
 				["description"] = "Badlands\n\nInside the larger building, on the table, next to the roasted boar.\n\nThe Spoiled Apple reads:\n\n\"<Something is written here.>\n\nLeave Nets, Often\"",
-				["coord"] = { 90.1, 37.9, 15 },	-- Spoiled Apple
+				["coord"] = { 90.1, 37.9, BADLANDS },	-- Spoiled Apple
 			}),
 			o(294110, { 	-- Broken Tooth
 				["model"] = 442505,

@@ -92,10 +92,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11766, {	-- Desecrate this Fire! — Badlands
 				["isYearly"] = true,
 				["provider"] = { "o", 187559 },	-- Horde Bonfire
-				["coord"] = { 24.1, 37.3, 15 },
+				["coord"] = { 24.1, 37.3, BADLANDS },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
-				["maps"] = { 15 },	-- Badlands
+				["maps"] = { BADLANDS },
 			}),
 			q(11767, {	-- Desecrate this Fire! — Blade's Edge Mountains
 				["isYearly"] = true,
@@ -502,10 +502,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(28912, {	-- Desecrate this Fire! — Badlands
 				["isYearly"] = true,
 				["provider"] = { "o", 207984 },	-- Alliance Bonfire
-				["coord"] = { 18.5, 56.1, 15 },
+				["coord"] = { 18.5, 56.1, BADLANDS },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-				["maps"] = { 15 },	-- Badlands
+				["maps"] = { BADLANDS },
 			}),
 			q(11736, {	-- Desecrate this Fire! — Blade's Edge Mountains
 				["isYearly"] = true,
@@ -939,9 +939,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(28925, {	-- Honor the Flame — Badlands
 				["provider"] = { "n", 51585 },	-- Badlands Flame Warden
 				["isYearly"] = true,
-				["coord"] = { 18.9, 56.1, 15 },
+				["coord"] = { 18.9, 56.1, BADLANDS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 15 },	-- Badlands
+				["maps"] = { BADLANDS },
 			}),
 			q(11807, {	-- Honor the Flame — Blade's Edge Mountains
 				["provider"] = { "n", 25889 },	-- Blade's Edge Flame Warden
@@ -1333,9 +1333,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11842, {	-- Honor the Flame — Badlands
 				["provider"] = { "n", 25925 },	-- Badlands Flame Keeper
 				["isYearly"] = true,
-				["coord"] = { 23.1, 37.4, 15 },
+				["coord"] = { 23.1, 37.4, BADLANDS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 15 },	-- Badlands
+				["maps"] = { BADLANDS },
 			}),
 			q(11843, {	-- Honor the Flame — Blade's Edge Mountains
 				["provider"] = { "n", 25926 },	-- Blade's Edge Flame Keeper
@@ -1903,7 +1903,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = {
 					ARATHI_HIGHLANDS,
-					15,		-- Badlands
+					BADLANDS,
 					17,		-- Blasted Lands
 					22,		-- Western Plaguelands
 					26,		-- The Hinterlands
