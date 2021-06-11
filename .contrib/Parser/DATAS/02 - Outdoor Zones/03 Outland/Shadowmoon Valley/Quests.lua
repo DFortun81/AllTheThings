@@ -509,18 +509,21 @@ _.Zones =
 					["provider"] = { "n", 22214 },	-- Harbinger Saronen
 					["coord"] = { 62.2, 29.8, SHADOWMOON_VALLEY },
 					["sourceQuests"] = { 10551 },	-- Allegiance to the Aldor
+					["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 				}),
 				q(10828, {	-- Single Mark of Sargeras
 					["provider"] = { "n", 22214 },	-- Harbinger Saronen
 					["coord"] = { 62.2, 29.8, SHADOWMOON_VALLEY },
 					["repeatable"] = true,
 					["sourceQuests"] = { 10826 },	-- Marks of Sargeras
+					["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 				}),
 				q(10827, {	-- More Marks of Sargeras
 					["provider"] = { "n", 22214 },	-- Harbinger Saronen
 					["coord"] = { 62.2, 29.8, SHADOWMOON_VALLEY },
 					["repeatable"] = true,
 					["sourceQuests"] = { 10826 },	-- Marks of Sargeras
+					["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 				}),
 				applyclassicphase(TBC_PHASE_THREE, q(10985, {	-- A Distraction for Akama (legacy version)
 					["provider"] = { "n", 18528 },	-- Xi'ri
