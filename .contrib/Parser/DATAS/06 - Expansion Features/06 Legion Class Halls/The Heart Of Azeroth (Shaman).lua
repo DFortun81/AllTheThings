@@ -136,7 +136,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 42977 },	-- Servant of the Windseeker
 						["classes"] = { SHAMAN },
 						["provider"] = { "n", 14347 },	-- Highlord Demitrian
-						["coord"] = { 29.6, 10.6, 81 },
+						["coord"] = { 29.6, 10.6, SILITHUS },
 						["g"] = {
 							i(139000),	-- Damaged Thunderfury
 						},

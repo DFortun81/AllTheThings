@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(81, {	-- Silithus
+		m(SILITHUS, {
 			n(RARES, {
 				n(50737, {	-- Acroniss
-					["coord"] = { 73.6, 16.0, 81 },
+					["coord"] = { 73.6, 16.0, SILITHUS },
 				}),
 				n(15211, { 	-- Azure Templar
 					["description"] = "The Azure Templar is a level 60 named water elemental summoned in Silithus from a Lesser Wind Stone. The summoning ritual requires a Twilight Trappings set. To guarantee that the specific Abyssal Templar is summoned, an Object of Beckoning can be used.",
@@ -29,7 +29,7 @@ _.Zones =
 					},
 				}),
 				n(50746, {	-- Bornix the Burrower
-					["coord"] = { 63.0, 89.0, 81 },
+					["coord"] = { 63.0, 89.0, SILITHUS },
 				}),
 				n(15209, { 	-- Crimson Templar
 					["description"] = "The Crimson Templar is a level 60 fire elemental summoned in Silithus from a Lesser Wind Stone. The summoning ritual requires a Twilight Trappings set. To guarantee that the specific Abyssal Templar is summoned, an Object of Beckoning can be used.",
@@ -50,22 +50,22 @@ _.Zones =
 					},
 				}),
 				n(50897, {	-- Ffexk the Dunestalker
-					["coord"] = { 32.1, 53.8, 81 },
+					["coord"] = { 32.1, 53.8, SILITHUS },
 				}),
 				n(14472, {	-- Gretheer
 					["coords"] = {
-						{ 36.2, 39.6, 81 },
-						{ 45.2, 51.4, 81 },
-						{ 52.2, 55.2, 81 },
-						{ 64.2, 58.2, 81 },
+						{ 36.2, 39.6, SILITHUS },
+						{ 45.2, 51.4, SILITHUS },
+						{ 52.2, 55.2, SILITHUS },
+						{ 64.2, 58.2, SILITHUS },
 					},
 				}),
 				n(14477, {	-- Grubthor
 					["coords"] = {
-						{ 34.6, 72.8, 81 },
-						{ 49.2, 72.6, 81 },
-						{ 41.2, 64.8, 81 },
-						{ 50.0, 62.8, 81 },
+						{ 34.6, 72.8, SILITHUS },
+						{ 49.2, 72.6, SILITHUS },
+						{ 41.2, 64.8, SILITHUS },
+						{ 50.0, 62.8, SILITHUS },
 					},
 				}),
 				n(15204, {	-- High Marshal Whirlaxis
@@ -88,37 +88,37 @@ _.Zones =
 				}),
 				n(14478, {	-- Huricanian
 					["coords"] = {
-						{ 33.8, 14.6, 81 },
-						{ 36.2, 17.8, 81 },
-						{ 36.8, 21.0, 81 },
-						{ 36.8, 23.6, 81 },
-						{ 33.2, 26.4, 81 },
-						{ 30.8, 26.2, 81 },
-						{ 30.2, 24.2, 81 },
-						{ 29.4, 19.2, 81 },
+						{ 33.8, 14.6, SILITHUS },
+						{ 36.2, 17.8, SILITHUS },
+						{ 36.8, 21.0, SILITHUS },
+						{ 36.8, 23.6, SILITHUS },
+						{ 33.2, 26.4, SILITHUS },
+						{ 30.8, 26.2, SILITHUS },
+						{ 30.2, 24.2, SILITHUS },
+						{ 29.4, 19.2, SILITHUS },
 					},
 				}),
 				n(50370, {	-- Karapax
-					["coord"] = { 57.5, 14.8, 81 },
+					["coord"] = { 57.5, 14.8, SILITHUS },
 				}),
 				n(14476, {	-- Krellack
 					["coords"] = {
-						{ 62.4, 18.6, 81 },
-						{ 67.6, 28.8, 81 },
-						{ 69.8, 37.4, 81 },
-						{ 64.8, 39.4, 81 },
+						{ 62.4, 18.6, SILITHUS },
+						{ 67.6, 28.8, SILITHUS },
+						{ 69.8, 37.4, SILITHUS },
+						{ 64.8, 39.4, SILITHUS },
 					},
 				}),
 				n(14473, {	-- Lapress
 					["coords"] = {
-						{ 58.6, 66.8, 81 },
-						{ 55.4, 71.0, 81 },
-						{ 57.6, 76.0, 81 },
-						{ 60.8, 68.8, 81 },
-						{ 61.6, 66.0, 81 },
-						{ 63.0, 73.4, 81 },
-						{ 65.6, 75.2, 81 },
-						{ 63.6, 82.0, 81 },
+						{ 58.6, 66.8, SILITHUS },
+						{ 55.4, 71.0, SILITHUS },
+						{ 57.6, 76.0, SILITHUS },
+						{ 60.8, 68.8, SILITHUS },
+						{ 61.6, 66.0, SILITHUS },
+						{ 63.0, 73.4, SILITHUS },
+						{ 65.6, 75.2, SILITHUS },
+						{ 63.6, 82.0, SILITHUS },
 					},
 				}),
 				n(15305, {	-- Lord Skwol <Abyssal High Council>
@@ -130,10 +130,10 @@ _.Zones =
 					},
 				}),
 				n(50745, {	-- Losaj
-					["coord"] = { 42.6, 56.6, 81 },
+					["coord"] = { 42.6, 56.6, SILITHUS },
 				}),
 				n(50743, {	-- Manax
-					["coord"] = { 67.5, 66.6, 81 },
+					["coord"] = { 67.5, 66.6, SILITHUS },
 				}),
 				n(15203, {	-- Prince Skaldrenox <Abyssal High Council>
 					["u"] = REMOVED_FROM_GAME,
@@ -144,20 +144,20 @@ _.Zones =
 					},
 				}),
 				n(50742, {	-- Qem
-					["coord"] = { 44.0, 17.2, 81 },
+					["coord"] = { 44.0, 17.2, SILITHUS },
 				}),
 				n(50744, {	-- Qu'rik
-					["coord"] = { 54.6, 26.6, 81 },
+					["coord"] = { 54.6, 26.6, SILITHUS },
 				}),
 				n(14475, {	-- Rex Ashil
 					["coords"] = {
-						{ 51.0, 23.0, 81 },
-						{ 52.0, 24.8, 81 },
-						{ 51.6, 26.6, 81 },
+						{ 51.0, 23.0, SILITHUS },
+						{ 52.0, 24.8, SILITHUS },
+						{ 51.6, 26.6, SILITHUS },
 					},
 				}),
 				n(14471, {	-- Setis
-					["coord"] = { 36.0, 82.8, 81 },
+					["coord"] = { 36.0, 82.8, SILITHUS },
 				}),
 				n(15206, { 	-- The Duke of Cynders
 					["description"] = "The Duke of Cynders does not appear normally in the standard plane of existence but must be summoned. There are two ways of summoning the Duke:\n 1. Acquire a set of Twilight Trappings and a  [Twilight Cultist Medallion of Station]. This will make you appear to be a middle-ranked leader of the Twilight's Hammer. Travel to a Wind stone and use it to summon a Duke. You have a 1 in 4 chance of summoning the Duke of Cynders.\n 2. Turn in Encrypted Twilight Texts to Hermit Ortell. He will then mail you a random item. If you get a Scroll: Create Signet of Beckoning (Fire), you can combine that with a  [Dark Rune] and 5  [Firebloom] to create a  [Signet of Beckoning: Fire]. This signet can be used to specifically summon the Duke of Cynders.",
@@ -205,20 +205,20 @@ _.Zones =
 					},
 				}),
 				n(51004, {	-- Toxx
-					["coord"] = { 42.8, 18.2, 81 },
+					["coord"] = { 42.8, 18.2, SILITHUS },
 				}),
 				n(14479, {	-- Twilight Lord Everun
 					["coords"] = {
-						{ 44.2, 40.2, 81 },
-						{ 45.2, 42.6, 81 },
-						{ 33.0, 30.0, 81 },
-						{ 35.0, 30.8, 81 },
+						{ 44.2, 40.2, SILITHUS },
+						{ 45.2, 42.6, SILITHUS },
+						{ 33.0, 30.0, SILITHUS },
+						{ 35.0, 30.8, SILITHUS },
 					},
 				}),
 				n(14474, {	-- Zora
 					["coords"] = {
-						{ 33.8, 53.4, 81 },
-						{ 32.0, 55.8, 81 },
+						{ 33.8, 53.4, SILITHUS },
+						{ 32.0, 55.8, SILITHUS },
 					},
 				}),
 			}),

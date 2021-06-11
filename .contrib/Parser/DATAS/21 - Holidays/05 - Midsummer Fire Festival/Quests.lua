@@ -300,10 +300,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11800, {	-- Desecrate this Fire! — Silithus
 				["isYearly"] = true,
 				["provider"] = { "o", 187950 },	-- Horde Bonfire
-				["coord"] = { 50.8, 41.8, 81 },
+				["coord"] = { 50.8, 41.8, SILITHUS },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
-				["maps"] = { 81 },	-- Silithus
+				["maps"] = { SILITHUS },
 			}),
 			q(11580, {	-- Desecrate this Fire! — Silverpine Forest
 				["isYearly"] = true,
@@ -718,10 +718,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11760, {	-- Desecrate this Fire! — Silithus
 				["isYearly"] = true,
 				["provider"] = { "o", 187943 },	-- Alliance Bonfire
-				["coord"] = { 60.5, 33.4, 81 },
+				["coord"] = { 60.5, 33.4, SILITHUS },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-				["maps"] = { 81 },	-- Silithus
+				["maps"] = { SILITHUS },
 			}),
 			q(28913, {	-- Desecrate this Fire! — Southern Barrens
 				["isYearly"] = true,
@@ -1142,9 +1142,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11831, {	-- Honor the Flame — Silithus
 				["provider"] = { "n", 25914 },	-- Silithus Flame Warden
 				["isYearly"] = true,
-				["coord"] = { 60.0, 33.0, 81 },
+				["coord"] = { 60.0, 33.0, SILITHUS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 81 },	-- Silithus
+				["maps"] = { SILITHUS },
 			}),
 			q(28926, {	-- Honor the Flame — Southern Barrens
 				["provider"] = { "n", 51586 },	-- Southern Barrens Flame Warden
@@ -1529,9 +1529,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11836, {	-- Honor the Flame — Silithus
 				["provider"] = { "n", 25919 },	-- Silithus Flame Keeper
 				["isYearly"] = true,
-				["coord"] = { 50.9, 41.3, 81 },
+				["coord"] = { 50.9, 41.3, SILITHUS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 81 },	-- Silithus
+				["maps"] = { SILITHUS },
 			}),
 			q(11584, {	-- Honor the Flame — Silverpine Forest
 				["provider"] = { "n", 25939 },	-- Silverpine Forest Flame Keeper

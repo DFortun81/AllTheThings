@@ -495,8 +495,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["description"] = "In order to view this Elder, visit Zidormi at 78.9, 21.9 to see Silithus before the Wound in the World.",
 				["provider"] = { "n", 15599 },	-- Elder Bladesing
 				["isYearly"] = true,
-				["coord"] = { 53.0, 35.4, 81 },
-				["maps"] = { 81 },	-- Silithus
+				["coord"] = { 53.0, 35.4, SILITHUS },
+				["maps"] = { SILITHUS },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(21, {	-- Elder Bladesing in Cenarion Hold
@@ -616,8 +616,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["description"] = "In order to view this Elder, visit Zidormi at 78.9, 21.9 to see Silithus before the Wound in the World.",
 				["provider"] = { "n", 15570 },	-- Elder Primestone
 				["isYearly"] = true,
-				["coord"] = { 30.8, 13.3, 81 },
-				["maps"] = { 81 },	-- Silithus
+				["coord"] = { 30.8, 13.3, SILITHUS },
+				["maps"] = { SILITHUS },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(20, {	-- Elder Primestone in Silithus

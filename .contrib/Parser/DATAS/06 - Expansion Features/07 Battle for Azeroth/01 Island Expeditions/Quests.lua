@@ -369,7 +369,7 @@ _.ExpansionFeatures =
 				}),
 				i(163487, {	-- Wriggling Mass
 					["description"] = "Can be turned in at old or new Silithus.",
-					["coord"] = { 40.0, 76.6, 81 },
+					["coord"] = { 40.0, 76.6, SILITHUS },
 					["g"] = {
 						q(53183, {	-- Wriggling Mass
 							["provider"] = { "n", 132886 },	-- Twilight Hermit
@@ -382,7 +382,7 @@ _.ExpansionFeatures =
 				-- Rep Items
 				i(163217, {	-- Azeroth's Tear [Both]
 					["description"] = "|CFFFF0000Turn in to Magni Bronzebeard in Silithus for Champions of Azeroth rep.|r",
-					["coord"] = { 42.2, 44.2, 81 },
+					["coord"] = { 42.2, 44.2, SILITHUS },
 					["g"] = {
 						q(53112, {	-- Azeroth's Tear
 							["repeatable"] = true,

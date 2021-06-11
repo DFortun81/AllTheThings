@@ -572,8 +572,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { NORTHERN_BARRENS },
 										}),
 										crit(15, {	-- Silithus, Cenarion Hold
-											["coord"] = { 55.5, 36.7, 81 },
-											["maps"] = { 81 },	-- Silithus
+											["coord"] = { 55.5, 36.7, SILITHUS },
+											["maps"] = { SILITHUS },
 										}),
 										crit(16, {	-- Southern Barrens, Fort Triumph
 											["coord"] = { 49.1, 68.5, 199 },
@@ -709,8 +709,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { ORGRIMMAR },
 										}),
 										crit(21, {	-- Silithus, Cenarion Hold
-											["coord"] = { 55.5, 36.7, 81 },
-											["maps"] = { 81 },	-- Silithus
+											["coord"] = { 55.5, 36.7, SILITHUS },
+											["maps"] = { SILITHUS },
 										}),
 										crit(22, {	-- Southern Barrens, Desolation Hold
 											["coord"] = { 40.7, 69.3, 199 },

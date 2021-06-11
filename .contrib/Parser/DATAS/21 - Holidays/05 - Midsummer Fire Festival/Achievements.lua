@@ -146,9 +146,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { FERALAS },
 									}),
 									crit(8,  {	-- Silithus
-										["coord"] = { 60.0, 33.0, 81 },
+										["coord"] = { 60.0, 33.0, SILITHUS },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 81 },	-- Silithus
+										["maps"] = { SILITHUS },
 									}),
 									crit(9,  {	-- Southern Barrens
 										["coord"] = { 48.0, 72.0, 199 },
@@ -421,9 +421,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { NORTHERN_BARRENS },
 									}),
 									crit(9,  {	-- Silithus
-										["coord"] = { 50.8, 41.8, 81 },
+										["coord"] = { 50.8, 41.8, SILITHUS },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 81 },	-- Silithus
+										["maps"] = { SILITHUS },
 									}),
 									crit(10, {	-- Southern Barrens
 										["coord"] = { 40.7, 67.2, 199 },
@@ -847,9 +847,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { NORTHERN_BARRENS },
 									}),
 									crit(9,  {	-- Silithus
-										["coord"] = { 50.9, 41.3, 81 },
+										["coord"] = { 50.9, 41.3, SILITHUS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 81 },	-- Silithus
+										["maps"] = { SILITHUS },
 									}),
 									crit(10, {	-- Southern Barrens
 										["coord"] = { 41.0, 68.0, 199 },
@@ -1122,9 +1122,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { FERALAS },
 									}),
 									crit(8,  {	-- Silithus
-										["coord"] = { 60.5, 33.4, 81 },
+										["coord"] = { 60.5, 33.4, SILITHUS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 81 },	-- Silithus
+										["maps"] = { SILITHUS },
 									}),
 									crit(9,  {	-- Southern Barrens
 										["coord"] = { 48.2, 72.4, 199 },

@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(81, {	-- Silithus
+		m(SILITHUS, {
 			n(QUESTS, {
 				q(9248,  {	-- A Humble Offering
 					["u"] = REMOVED_FROM_GAME,
@@ -16,7 +16,7 @@ _.Zones =
 				}),
 				q(8287,  {	-- A Terrible Purpose
 					["provider"] = { "n", 15194 },	-- Hermit Ortell
-					["coord"] = { 68.6, 63.0, 81 },
+					["coord"] = { 68.6, 63.0, SILITHUS },
 					["sourceQuest"] = 8279,	-- The Twilight Lexicon
 					["g"] = {
 						i(20645),	-- Nature's Whisper (arrives in mail)
@@ -157,12 +157,12 @@ _.Zones =
 				}),
 				q(8310,  {	-- Breaking the Code
 					["provider"] = { "n", 15171 },	-- Frankal Stonebridge
-					["coord"] = { 46.0, 79.4, 81 },
+					["coord"] = { 46.0, 79.4, SILITHUS },
 					["sourceQuest"] = 8304,	-- Dearest Natalia
 				}),
 				q(28865, {	-- Call of the Warmatron
 					["provider"] = { "n", 50587 },	-- Okril'on Mage
-					["coord"] = { 53.2, 33.4, 81 },
+					["coord"] = { 53.2, 33.4, SILITHUS },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -182,11 +182,11 @@ _.Zones =
 				}),
 				q(8277,  {	-- Deadly Desert Venom
 					["provider"] = { "n", 15189 },	-- Beetix Ficklespragg
-					["coord"] = { 55.2, 36.3, 81 },
+					["coord"] = { 55.2, 36.3, SILITHUS },
 				}),
 				q(8304,  {	-- Dearest Natalia
 					["provider"] = { "n", 15181 },	-- Commander Mar'alith
-					["coord"] = { 53.2, 32.5, 81 },
+					["coord"] = { 53.2, 32.5, SILITHUS },
 					["sourceQuest"] = 8321,	-- Vyral the Vile
 				}),
 				q(8332,  {	-- Dukes of the COuncil
@@ -196,12 +196,12 @@ _.Zones =
 				q(8319,  {	-- Encrypted Twilight Texts
 					["provider"] = { "n", 15306 },		-- Bor Wildmane
 					["repeatable"] = true,
-					["coord"] = { 53.15, 35.12, 81 },
+					["coord"] = { 53.15, 35.12, SILITHUS },
 					["sourceQuest"] = 8318,	-- Secret Communication
 				}),
 				q(8309,  {	-- Glyph Chasing
 					["provider"] = { "n", 15170 },	-- Rutgar Glyphshaper
-					["coord"] = { 46.4, 79.0, 81 },
+					["coord"] = { 46.4, 79.0, SILITHUS },
 					["sourceQuest"] = 8304,	-- Dearest Natalia
 				}),
 				q(8343,  {	-- Goldleaf's Discovery
@@ -213,7 +213,7 @@ _.Zones =
 					["sourceQuest"] = 1125,	-- The Spirits of Southwind
 				}),
 				q(8306,  {	-- Into The Maw of Madness
-					["coord"] = { 53.2, 32.5, 81 },
+					["coord"] = { 53.2, 32.5, SILITHUS },
 					["sourceQuest"] = 8304,	-- Dearest Natalia
 					["g"] = {
 						i(20724),	-- Corrupted Blackwood Staff
@@ -228,18 +228,18 @@ _.Zones =
 				}),
 				q(28867, {	-- Nethergarde Needs You!
 					["provider"] = { "n", 50588 },	-- Nethergarde Mage
-					["coord"] = { 53.4, 33.4, 81 },
+					["coord"] = { 53.4, 33.4, SILITHUS },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(8278,  {	-- Noggle's Last Hope
 					["provider"] = { "n", 15189 },	-- Beetix Ficklespragg
-					["coord"] = { 55.3, 36.3, 81 },
+					["coord"] = { 55.3, 36.3, SILITHUS },
 					["sourceQuest"] = 8277,	-- Deadly Desert Venom
 				}),
 				q(8282,  {	-- Noggle's Lost Satchel
 					["provider"] = { "n", 15190 },	-- Noggle Ficklespragg
-					["coord"] = { 55.2, 36.1, 81 },
+					["coord"] = { 55.2, 36.1, SILITHUS },
 					["sourceQuest"] = 8278,	-- Noggle's Last Hope
 				}),
 				q(8288,  {	-- Only One May Rise
@@ -248,13 +248,13 @@ _.Zones =
 				}),
 				q(9416,  {	-- Report to General Kirika
 					["provider"] = { "n", 17081 },	-- Scout Bloodfist
-					["coord"] = { 53.0, 34.6, 81 },
+					["coord"] = { 53.0, 34.6, SILITHUS },
 					["races"] = HORDE_ONLY,
 				}),
 				q(9415,  {	-- Report to Marshal Bluewall
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 17082 },	-- Rifleman Torrig
-					["coord"] = { 54.5, 32.9, 81 },
+					["coord"] = { 54.5, 32.9, SILITHUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(8352,  {	-- Scepter of the Council
@@ -275,7 +275,7 @@ _.Zones =
 				}),
 				q(8318,  {	-- Secret Communication
 					["provider"] = { "n", 15306 },		-- Bor Wildmane
-					["coord"] = { 53.15, 35.12, 81 },
+					["coord"] = { 53.15, 35.12, SILITHUS },
 				}),
 				q(8857,  {	-- Secrets of the Colossus - Ashi - Was only possible during the 10 hours of AQ opening
 					["u"] = REMOVED_FROM_GAME,
@@ -300,7 +300,7 @@ _.Zones =
 				}),
 				q(8280,  {	-- Securing the Supply Lines
 					["provider"] = { "n", 15191 },	-- Windcaller Proudhorn
-					["coord"] = { 54.9, 36.0, 81 },
+					["coord"] = { 54.9, 36.0, SILITHUS },
 					["sourceQuests"] = {
 						28528,	-- Hero's Call: Silithus!
 						28859,	-- The Dunes of Silithus
@@ -332,13 +332,13 @@ _.Zones =
 				}),
 				q(8281,  {	-- Stepping Up Security
 					["provider"] = { "n", 15191 },	-- Windcaller Proudhorn
-					["coord"] = { 54.8, 36.0, 81 },
+					["coord"] = { 54.8, 36.0, SILITHUS },
 					["sourceQuest"] = 8280,	-- Securing the Suppy Lines
 				}),
 				q(8324,  {	-- Still Believing
 					["provider"] = { "n", 15194 },	-- Hermit Ortell
 					["repeatable"] = true,
-					["coord"] = { 68.66, 63.03, 81 },
+					["coord"] = { 68.66, 63.03, SILITHUS },
 					["sourceQuest"] = 8323,	-- True Believers
 					["description"] = "Decoded True Believer Clippings will arrive in your mailbox approximately 12 hours after this quest is turned in.",
 					["g"] = {
@@ -478,7 +478,7 @@ _.Zones =
 				}),
 				q(8285,  {	-- The Deserter
 					["provider"] = { "n", 15183 },	-- Geologist Larksbane
-					["coord"] = { 53.6, 35.3, 81 },
+					["coord"] = { 53.6, 35.3, SILITHUS },
 					["sourceQuest"] = 8284,	-- The Twilight Mystery
 				}),
 				q(8302,  {	-- The Hand of the Righteous (until Neutral)
@@ -515,22 +515,22 @@ _.Zones =
 				}),
 				q(8279,  {	-- The Twilight Lexicon
 					["provider"] = { "n", 15194 },	-- Hermit Ortell
-					["coord"] = { 68.6, 63.0, 81 },
+					["coord"] = { 68.6, 63.0, SILITHUS },
 					["sourceQuest"] = 8285,	-- The Deserter
 				}),
 				q(8284,  {	-- The Twilight Mystery
 					["provider"] = { "n", 15183 },	-- Geologist Larksbane
-					["coord"] = { 53.6, 35.3, 81 },
+					["coord"] = { 53.6, 35.3, SILITHUS },
 					["sourceQuest"] = 8321,	-- Vyral the Vile
 				}),
 				q(8323,  {	-- True Believers
 					["provider"] = { "n", 15194 },	-- Hermit Ortell
-					["coord"] = { 68.7, 63.0, 81 },
+					["coord"] = { 68.7, 63.0, SILITHUS },
 					["sourceQuest"] = 8279,	-- The Twilight Lexicon
 				}),
 				q(8320,  {	-- Twilight Geolords
 					["provider"] = { "n", 15270 },	-- Huum Wildmane
-					["coord"] = { 53.2, 35.1, 81 },
+					["coord"] = { 53.2, 35.1, SILITHUS },
 				}),
 				q(6844,  {	-- Umber, Archivist
 					["u"] = REMOVED_FROM_GAME,
@@ -539,7 +539,7 @@ _.Zones =
 				}),
 				q(8314,  {	-- Unraveling the Mystery
 					["provider"] = { "n", 15170 },	-- Rutgar Glyphshaper
-					["coord"] = { 46.4, 79.0, 81 },
+					["coord"] = { 46.4, 79.0, SILITHUS },
 					["sourceQuests"] = {
 						8310,	-- Breaking the Code
 						8309,	-- Glyph Chasing
@@ -565,7 +565,7 @@ _.Zones =
 				}),
 				q(8321,  {	-- Vyral the Vile
 					["provider"] = { "n", 15270 },	-- Huum Wildmane
-					["coord"] = { 53.2, 35.1, 81 },
+					["coord"] = { 53.2, 35.1, SILITHUS },
 					["sourceQuest"] = 8320,	-- Twilight Geolords
 					["g"] = {
 						i(20650),	-- Desert Wind Gauntlets
@@ -573,7 +573,7 @@ _.Zones =
 					},
 				}),
 				q(8283,  {	-- Wanted - Deathclasp, Terror of the Sands
-					["coord"] = { 55.0, 35.9, 81 },
+					["coord"] = { 55.0, 35.9, SILITHUS },
 					["provider"] = { "o", 180448 },	-- Wanted Poster: Deathclasp
 					["g"] = {
 						i(20646),	-- Sandstrider's Mark

@@ -59,73 +59,73 @@ _.Holidays =
 					a(q(45739, {	-- Lesser Wind Stones [A]
 						["lvl"] = 40,
 						["coords"] = {
-							{ 22.43, 41.09, 81 },	-- Twilight Base Camp
-							{ 26.89, 75.59, 81 },	-- Twilight Outpost
-							{ 33.59, 31.45, 81 },	-- Twilight Post
+							{ 22.43, 41.09, SILITHUS },	-- Twilight Base Camp
+							{ 26.89, 75.59, SILITHUS },	-- Twilight Outpost
+							{ 33.59, 31.45, SILITHUS },	-- Twilight Post
 						},
 					})),
 					h(q(45656, {	-- Lesser Wind Stones [H]
 						["lvl"] = 40,
 						["coords"] = {
-							{ 22.43, 41.09, 81 },	-- Twilight Base Camp
-							{ 26.89, 75.59, 81 },	-- Twilight Outpost
-							{ 33.59, 31.45, 81 },	-- Twilight Post
+							{ 22.43, 41.09, SILITHUS },	-- Twilight Base Camp
+							{ 26.89, 75.59, SILITHUS },	-- Twilight Outpost
+							{ 33.59, 31.45, SILITHUS },	-- Twilight Post
 						},
 					})),
 					a(q(45740, {	-- Silithyst [A]
 						["lvl"] = 40,
 						["coords"] = {
-							{ 39.04, 46.86, 81 },	-- Alliance Collector
-							{ 54.86, 63.41, 81 },	-- Horde Collector
+							{ 39.04, 46.86, SILITHUS },	-- Alliance Collector
+							{ 54.86, 63.41, SILITHUS },	-- Horde Collector
 						},
 					})),
 					h(q(45657, {	-- Silithyst [H]
 						["lvl"] = 40,
 						["coords"] = {
-							{ 39.04, 46.86, 81 },	-- Alliance Collector
-							{ 54.86, 63.41, 81 },	-- Horde Collector
+							{ 39.04, 46.86, SILITHUS },	-- Alliance Collector
+							{ 54.86, 63.41, SILITHUS },	-- Horde Collector
 						},
 					})),
 					a(q(45738, {	-- The Colossus of Ashi [A]
 						["provider"] = { "n", 117491 },	-- Colossus of Ashi
 						["lvl"] = 40,
 						["coords"] = {
-							{ 47.33, 22.16, 81 },	-- Hive'Ashi
+							{ 47.33, 22.16, SILITHUS },	-- Hive'Ashi
 						},
 					})),
 					h(q(45655, {	-- The Colossus of Ashi [H]
 						["provider"] = { "n", 117491 },	-- Colossus of Ashi
 						["lvl"] = 40,
 						["coords"] = {
-							{ 47.33, 22.16, 81 },	-- Hive'Ashi
+							{ 47.33, 22.16, SILITHUS },	-- Hive'Ashi
 						},
 					})),
 					a(q(45741, {	-- The Colossus of Regal [A]
 						["provider"] = { "n", 117490 },	-- Colossus of Regal
 						["lvl"] = 40,
 						["coords"] = {
-							{ 55.61, 71.94, 81 },	-- Hive'Regal
+							{ 55.61, 71.94, SILITHUS },	-- Hive'Regal
 						},
 					})),
 					h(q(45674, {	-- The Colossus of Regal [H]
 						["provider"] = { "n", 117490 },	-- Colossus of Regal
 						["lvl"] = 40,
 						["coords"] = {
-							{ 55.61, 71.94, 81 },	-- Hive'Regal
+							{ 55.61, 71.94, SILITHUS },	-- Hive'Regal
 						},
 					})),
 					a(q(45742, {	-- The Colossus of Zora [A]
 						["provider"] = { "n", 117489 },	-- Colossus of Zora
 						["lvl"] = 40,
 						["coords"] = {
-							{ 33.28, 52.18, 81 },	-- Hive'Zora
+							{ 33.28, 52.18, SILITHUS },	-- Hive'Zora
 						},
 					})),
 					h(q(45675, {	-- The Colossus of Zora [H]
 						["provider"] = { "n", 117489 },	-- Colossus of Zora
 						["lvl"] = 40,
 						["coords"] = {
-							{ 33.28, 52.18, 81 },	-- Hive'Zora
+							{ 33.28, 52.18, SILITHUS },	-- Hive'Zora
 						},
 					})),
 				}),

@@ -1422,8 +1422,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12401, {	-- Candy Bucket — Silithus, Cenarion Hold, neutral
 				["isYearly"] = true,
-				["coord"] = { 55.5, 36.7, 81 },
-				["maps"] = { 81 },	-- Silithus
+				["coord"] = { 55.5, 36.7, SILITHUS },
+				["maps"] = { SILITHUS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},

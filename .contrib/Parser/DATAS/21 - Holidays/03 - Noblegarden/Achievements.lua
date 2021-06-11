@@ -24,7 +24,7 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 						["maps"] = { 66 },	-- Desolace
 					}),
 					crit(3, {	-- Silithus
-						["maps"] = { 81 },	-- Silithius
+						["maps"] = { SILITHUS },
 					}),
 					crit(4, {	-- Tanaris
 						["maps"] = { 71 },	-- Tanaris

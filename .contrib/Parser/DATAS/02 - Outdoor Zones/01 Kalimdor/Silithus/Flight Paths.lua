@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(81, {	-- Silithus
+		m(SILITHUS, {
 			n(FLIGHT_PATHS, {
 				fp(72),	-- Cenarion Hold, Silithus [Horde]
 				fp(73),	-- Cenarion Hold, Silithus [Alliance]
