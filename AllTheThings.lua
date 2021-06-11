@@ -1051,6 +1051,13 @@ local function GetCompletionText(state)
 end
 local function GetProgressTextForRow(data)
 	if data.total and (data.total > 1 or (data.total > 0 and not data.collectible)) then
+		-- groups which are specifically shown by being a Cost for another Thing should just show an Icon instead of their 'fake' progress/total
+		local costTotal = data.costTotal;
+		if costTotal and
+			data.total - data.progress > 0 and
+			(data.total - data.progress) == (costTotal - data.costProgress) then
+			return L["COST_ICON"];
+		end
 		return GetProgressColorText(data.progress or 0, data.total);
 	elseif data.collectible then
 		return GetCollectionIcon(data.collected);
@@ -1060,6 +1067,13 @@ local function GetProgressTextForRow(data)
 end
 local function GetProgressTextForTooltip(data)
 	if data.total and (data.total > 1 or (data.total > 0 and not data.collectible)) then
+		-- groups which are specifically shown by being a Cost for another Thing should just show an Icon instead of their 'fake' progress/total
+		local costTotal = data.costTotal;
+		if costTotal and
+			data.total - data.progress > 0 and
+			(data.total - data.progress) == (costTotal - data.costProgress) then
+			return L["COST_TEXT"];
+		end
 		return GetProgressColorText(data.progress or 0, data.total);
 	elseif data.collectible then
 		return GetCollectionText(data.collected);
@@ -9977,7 +9991,7 @@ local fields = {
 		end
 		return select(3, GetSpellInfo(t.spellID))
 			or (t.requireSkill and select(3, GetSpellInfo(t.requireSkill)))
-			or 136125;	-- Spell_shadow_brainwash
+			or 134939;	-- Inv_scroll_03
 	end,
 	["link"] = function(t)
 		if t.itemID then
