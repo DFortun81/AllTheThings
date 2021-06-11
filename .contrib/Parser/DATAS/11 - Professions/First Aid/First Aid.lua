@@ -75,7 +75,7 @@ profession(FIRST_AID, {
 			["coord"] = { 36.9, 87.5, ORGRIMMAR },
 			-- #else
 			["qg"] = 3373,	-- Arnok
-			["coord"] = { 34, 84.6, ORGRIMMAR },
+			["coord"] = { 34.0, 84.6, ORGRIMMAR },
 			-- #endif
 			["maps"] = { ORGRIMMAR },
 			-- #if BEFORE BFA

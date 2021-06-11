@@ -1673,8 +1673,8 @@ _.ExpansionFeatures =
 							},
 						}),
 						q(57152, {	-- Most Loyal (Sylvanas Version)
-						--	["provider"] = { "n", 155789 },	-- Lor'themar Theron
-						--	["coord"] = { 34.9, 60.1, 1535 },
+							--["provider"] = { "n", 155789 },	-- Lor'themar Theron
+							--["coord"] = { 34.9, 60.1, 1535 },
 							["sourceQuests"] = {
 								57094,	-- The Price of Victory
 								55782,	-- Stay of Execution (Sylvanas Version)

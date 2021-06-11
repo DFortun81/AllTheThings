@@ -7,7 +7,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 		["lvl"] = 77,
 		["mapID"] = 283,
 		["maps"] = { 284 },
-		["coord"] = { 71.77, 52.98, 34 },	-- Blackrock Caverns, Blackrock Caverns
+		["coord"] = { 71.77, 52.98, BLACKROCK_MOUNTAIN_LEVEL2 },
 		["groups"] = {
 			n(QUESTS, {
 				q(28741, { -- Ascendant Lord Obsidius

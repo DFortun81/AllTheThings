@@ -73,10 +73,10 @@ _.Zones =
 						}),
 						q(53587, {	-- Blackrock Depths
 							["name"] = "Blackrock Depths",
-							["coord"] = { 33.4, 24.7, 35 },
+							["coord"] = { 33.4, 24.7, BLACKROCK_MOUNTAIN_LEVEL3 },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-							["maps"] = { 35 },	-- Blackrock Mountain
+							["maps"] = { BLACKROCK_MOUNTAIN_LEVEL3 },
 						}),
 						q( 53594, {	-- Nethergarde Keep
 							["name"] = "Nethergarde Keep",

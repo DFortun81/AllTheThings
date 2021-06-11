@@ -6,7 +6,7 @@ _.Instances = { tier(1, {	-- Classic
 	inst(229, {	-- Lower Blackrock Spire
 		["lvl"] = 50,
 		["maps"] = { 250, 251, 252, 253, 254, 255 },
-		["coord"] = { 80.46, 40.65, 33 },	-- Lower Blackrock Spire, Blackrock Mountain [Blackrock Spire]
+		["coord"] = { 80.46, 40.65, BLACKROCK_MOUNTAIN },
 		["groups"] = {
 			n(QUESTS, {
 				q(4982, {	-- Bijou's Belongings

@@ -251,7 +251,7 @@ _.Zones =
 					["lvl"] = lvlsquish(16, 1, 16),
 					["groups"] = {
 						i(24318, {	-- Water Sample Flask
-							["coord"] = { 34, 33, BLOODMYST_ISLE },
+							["coord"] = { 34.0, 33.0, BLOODMYST_ISLE },
 							["groups"] = {
 								i(24317),	-- Bloodmyst Water Sample
 							},

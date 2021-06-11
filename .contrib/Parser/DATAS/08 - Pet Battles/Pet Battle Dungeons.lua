@@ -64,12 +64,12 @@ _.PetBattles =
 	}),
 	q(58458, {	-- Pet Battle Challenge: Blackrock Depths
 		["provider"] = { "n", 161782 },	-- Burt Macklyn
-		["coord"] = { 33.1, 23.1, 35 },
+		["coord"] = { 33.1, 23.1, BLACKROCK_MOUNTAIN_LEVEL3 },
 		["sourceQuest"] = 58457,	-- Shadows of Blackrock
 		["isWeekly"] = true,
 		["lvl"] = 120,
 		["maps"] = {
-			35,	-- The Blackrock
+			BLACKROCK_MOUNTAIN_LEVEL3,
 			1578,	-- Pet Dungeon
 		},
 		["g"] = {
@@ -96,7 +96,7 @@ _.PetBattles =
 			}),
 			q(58457, {	-- Shadows of Blackrock
 				["provider"] = { "n", 161782 },	-- Burt Macklyn
-				["coord"] = { 33.1, 23.1, 35 },
+				["coord"] = { 33.1, 23.1, BLACKROCK_MOUNTAIN_LEVEL3 },
 				["sourceQuests"] = {
 					58455,	-- Shadowy Showdown (A)
 					58456,	-- Shadowy Showdown (H)
@@ -115,7 +115,7 @@ _.PetBattles =
 				},
 			}),
 			n(161782, {	-- Burt Macklyn
-				["coord"] = { 33.1, 23.1, 35 },
+				["coord"] = { 33.1, 23.1, BLACKROCK_MOUNTAIN_LEVEL3 },
 				["g"] = {
 					i(174829, {	-- Tinyclaw
 						["cost"] = { { "i", 174360, 2 }, },	-- 2x Shadowy Gem

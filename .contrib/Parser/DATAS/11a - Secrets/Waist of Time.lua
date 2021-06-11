@@ -12,7 +12,7 @@ _.Secrets =
 			17,
 			23,
 			25,
-			33,
+			BLACKROCK_MOUNTAIN,
 			36,
 			37,
 			42,
@@ -123,7 +123,7 @@ _.Secrets =
 				["description"] = "Blackrock Mountain\n\nRoom next to LBRS entrance, next to the fire.\n\nThe Dead Fish says:\n\n\"<Something is written here.>\n\nNecropolis Expos!\"",
 				["coords"] = {
 					{ 21.0, 38.2, 36 },	-- Entrance
-					{ 77.9, 44.3, 33 },	-- Dead Fish
+					{ 77.9, 44.3, BLACKROCK_MOUNTAIN },	-- Dead Fish
 				},
 			}),
 			o(294107, { 	-- Scratched Board
