@@ -110,7 +110,7 @@ _.Zones =
 					},
 				}),
 				n(179108, {	-- Kroke the Tormented
-					["description"] = "Kill |cFF883325Tormented Demolishers|r for a chance to spawn Kroke.\n\nIf the two on the surface are not up, there is a third Demolisher inside the cave in the bottom-left room.",
+					["description"] = "Kill |cFF883325Tormented Demolishers|r for a chance to spawn Kroke.\n\nIf the two on the surface are not up, there is a third Demolisher inside the cave in the bottom-left room.\n\nWhen it spawns, there is a zonewide announcement: |cFFff8040Kroke the Tormented roars triumphantly.|r",
 					["questID"] = 64428,
 					["isDaily"] = true,
 					["coords"] = {
@@ -124,6 +124,7 @@ _.Zones =
 						}),
 						i(187248),	-- Kroke's Gleaming Spaulders
 						i(187250),	-- Kroke's Wingspiked Pauldrons
+						i(187394),	-- Tormented Giant's Legplates
 					},
 				}),
 				n(179684, {	-- Malbog

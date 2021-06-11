@@ -772,13 +772,15 @@ _.PVP =
 				}),
 			--]]
 			}),
-		}),
-		f(100,  {	-- Mounts
-			i(186178, {	-- Vicious War Gorm (A)
-				["races"] = ALLIANCE_ONLY,
-			}),
-			i(186179, {	-- Vicious War Gorm (H)
-				["races"] = HORDE_ONLY,
+			f(100,  {	-- Mounts
+				["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
+					i(186178, {	-- Vicious War Gorm (A)
+						["races"] = ALLIANCE_ONLY,
+					}),
+					i(186179, {	-- Vicious War Gorm (H)
+						["races"] = HORDE_ONLY,
+					}),
+				}),
 			}),
 		}),
 	}),

@@ -9,6 +9,7 @@ _.Zones =
 			["achievementID"] = 15053,	-- Explore Korthia
 		--	["description"] = "",
 			["maps"] = {
+				2007,	-- Gromit Hollow
 				2006,	-- Korthia - Caverns of Contemplation
 			},
 		}),

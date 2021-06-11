@@ -131,7 +131,7 @@ _.Zones =
 									i(185866),	-- Shardhide Leather Belt
 									i(185862),	-- Shardhide Leather Boots
 									i(185867),	-- Shardhide Leather Bracers
-									i(185865),	-- Shardhide Leather Breeches
+									i(185865),	-- Shardhide Leather Breeches*
 									i(186736),	-- Shardhide Leather Cowl*
 									i(186739),	-- Shardhide Leather Cuffs
 									i(186757),	-- Shardhide Leather Epaulets
@@ -153,7 +153,7 @@ _.Zones =
 									i(185871),	-- Razorwing Scale Coif
 									i(186742),	-- Razorwing Scale Fists*
 									i(186741),	-- Razorwing Scale Footguards
-									i(185872),	-- Razorwing Scale Greaves
+									i(185872),	-- Razorwing Scale Greaves*
 									i(185870),	-- Razorwing Scale Grips
 									i(186740),	-- Razorwing Scale Harness
 									i(186743),	-- Razorwing Scale Hood
@@ -172,7 +172,7 @@ _.Zones =
 									i(185882),	-- Vault Guardian's Girdle*
 									i(186751),	-- Vault Guardian's Handguards
 									i(185876),	-- Vault Guardian's Helm*
-									i(185880),	-- Vault Guardian's Legguards
+									i(185880),	-- Vault Guardian's Legguards*
 									i(186752),	-- Vault Guardian's Legplates
 									i(185881),	-- Vault Guardian's Pauldrons
 									i(185878),	-- Vault Guardian's Sabatons
@@ -310,10 +310,6 @@ _.Zones =
 						--
 						i(186724, {	-- Technique: Contract: Death's Advance
 							["cost"] = { { "c", 1767, 2500 } },	-- 2,500x Stygia
-						}),
-						--
-						i(186995, {	-- Pattern: Shrouded Hand Towel
-							["cost"] = { { "c", 1767, 300 } },	-- 300x Stygia
 						}),
 					},
 				}),

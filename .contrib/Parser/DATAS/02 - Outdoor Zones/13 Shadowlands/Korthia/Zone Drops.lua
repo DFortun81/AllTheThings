@@ -51,6 +51,7 @@ _.Zones =
 				i(187336),	-- Forbidden Weapon Schematics
 				i(187324),	-- Gnawed Ancient Idol
 				i(187326),	-- Half-Completed Runeforge Pattern
+				i(187466),	-- Korthian Cypher Book
 				i(187335),	-- Maldraxxus Larva Shell
 				i(187330),	-- Naaru Shard Fragment
 				i(187329),	-- Old God Specimen Jar
@@ -123,6 +124,12 @@ _.Zones =
 				i(186121),	-- Mawsworn Scout's Striders
 				i(186148),	-- Mawsworn Vanquisher's Spire*
 				i(186145),	-- Stygian Thorn Loop
+				--
+				i(186995, {	-- Pattern: Shrouded Hand Towel
+					["crs"] = {	-- probably drops from many more (or any mawsworn); this is a mob specific to the Wild Worldcracker event
+						180030,	-- Opportunistic Corruptor
+					},
+				}),
 			}),
 		}),
 	}),

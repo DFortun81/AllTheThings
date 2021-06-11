@@ -1223,6 +1223,7 @@ app.L = {
 		[-975] = 3536187,																	-- Humility
 		[-976] = 4076799,																	-- Korthian Sets
 		[-978] = 651097,																	-- The Rift
+		[-980] = 133650,																	-- Shared Treasures
 		[-1000] = "Interface\\Icons\\achievement_transmog_collections",						-- Sets
 		[-1001] = "Interface\\Icons\\Racial_Dwarf_FindTreasure",							-- The Black Vault
 		[-2200] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
@@ -1985,6 +1986,7 @@ app.L = {
 		[-977] = "Maelie the Wanderer",											-- Maelie the Wanderer
 		[-978] = select(1, GetSpellInfo(354778)),								-- The Rift
 		[-979] = "Broker Ve'ken & Broker Ve'nott",								-- Broker Ve'ken & Broker Ve'nott
+		[-980] = "Shared Treasures",											-- Shared Treasures
 
 	-- SL Maldraxxus/Necrolord
 		[-920] = "Covenant: Necrolord",											-- Covenant: Necrolord

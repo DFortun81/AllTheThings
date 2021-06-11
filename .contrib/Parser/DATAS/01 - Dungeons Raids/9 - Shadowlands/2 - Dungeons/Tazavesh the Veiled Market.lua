@@ -11,28 +11,26 @@ _.Instances = { tier(9, {	-- Shadowlands
 			1990,	-- The Menagerie
 			1991,	-- The Mail Room
 			1992,	-- The Speak Easy
-		--	,	-- Stormheim
-		--	,	-- Aggramar's Vault
+			1995,	-- Stormheim
+			1997,	-- Aggramar's Vault
 		--	,	-- Boralus
 		--	,	-- The Upper City
 		},
 		["lvl"] = { 60 },
 		["g"] = {
-			--	TODO: add fp to fpdb, add coords when (presumably) this gets its own map and isn't just on the main SL 1550
+			--	TODO: add fp to fpdb / verify FP's name
 			filter(101, {	-- Battle Pets
-			--	there are some caged Child of Jani at the entrance of the dungeon (npcID 143198), haven't been through the dungeon to know if these pets are found independently outside of secondary pets in those encounters
-			--	^ looks like this has changed - there are still caged animals at the entrance, but they aren't battle pets
 				pet(3108, {	-- Curious Purrkin
-				--	["cr"] = ,	-- 
+					["cr"] = 179164,	-- Curious Purrkin
 				}),
 				pet(3111, {	-- Damp Skrat
-				--	["cr"] = ,	-- 
+					["cr"] = 179167,	-- Damp Skrat
 				}),
 				pet(3112, {	-- Scavenging Skrat
-				--	["cr"] = ,	-- 
+					["cr"] = 179168,	-- Scavenging Skrat
 				}),
 				pet(3109, {	-- Silver Purrkin
-				--	["cr"] = ,	-- 
+					["cr"] = 179165,	-- Silver Purrkin
 				}),
 			}),
 			n(FLIGHT_PATHS, {
@@ -138,7 +136,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						},
 					}),
 					e(2452, {	-- Au'myza's Oasis
-					--	["crs"] = {  },	-- 
+						["crs"] = { 176563 },	-- Zo'gron
 						["g"] = {
 							i(182460),	-- Accrued Vitality
 							i(183470),	-- Born of the Wilds
@@ -156,7 +154,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						},
 					}),
 					e(2451, {	-- So'azmi
-					--	["crs"] = {  },	-- 
+						["crs"] = { 175806 },	-- So'azmi
 						["g"] = {
 							i(181707),	-- Diverted Energy
 							i(182449),	-- Resolute Barrier
@@ -174,7 +172,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						},
 					}),
 					e(2448, {	-- Hylbrande
-					--	["crs"] = {  },	-- 
+						["crs"] = { 175663 },	-- Hylbrande
 						["g"] = {
 							ach(15179),	-- This is Fine
 							i(182105),	-- Astral Projection
