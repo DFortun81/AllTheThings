@@ -190,7 +190,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 					TANARIS,
 					83,		-- Winterspring
 					ORGRIMMAR,
-					88,		-- Thunder Bluff
+					THUNDER_BLUFF,
 					90,		-- Undercity
 					EVERSONG_WOODS,
 					NETHERSTORM,
@@ -233,7 +233,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 			}),
 			q(14043, {	-- Candied Sweet Potatoes (Horde)
 				["provider"] = { "n", 34678 },	-- Dokin Farplain
-				["maps"] = { 88, },	-- Thunder Bluff
+				["maps"] = { THUNDER_BLUFF },
 				["sourceQuests"] = { 14041, },	-- Cranberry Chutney (Horde)
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
@@ -293,7 +293,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 				["provider"] = { "n", 34713 },	-- Mahara Goldwheat
 				["isDaily"] = true,
 				["races"] = HORDE_ONLY,
-				["maps"] = { 88 },	-- Thunder Bluff
+				["maps"] = { THUNDER_BLUFF },
 				["g"] = {
 					i(46723),	-- Pilgrim's Hat
 					i(46800),	-- Pilgrim's Attire

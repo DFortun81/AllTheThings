@@ -173,7 +173,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 			}),
 			q(7021,  {	-- Great-father Winter is Here!
 				["provider"] = { "n", 13431 },	-- Whulwert Copperpinch
-				["maps"] = { 88 },	-- Thunder Bluff
+				["maps"] = { THUNDER_BLUFF },
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
 			}),
@@ -206,7 +206,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 				["provider"] = { "n", 15732 },	-- Wonderform Operator
 				["coord"] = { 50.1, 61.8, ORGRIMMAR },	-- closest pick-up to turn-in
 				["races"] = HORDE_ONLY,
-				["maps"] = { 88 },	-- Thunder Bluff
+				["maps"] = { THUNDER_BLUFF },
 				["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL,
 			}),
 			q(7061,  {	-- The Feast of Winter Veil (Horde)

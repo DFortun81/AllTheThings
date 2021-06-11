@@ -1414,7 +1414,7 @@ _.Holidays =
 							7,	-- Mulgore
 							ORGRIMMAR,
 							86,	-- Orgrimmar: The Drag
-							88,	-- Thunder Bluff
+							THUNDER_BLUFF,
 						},
 						["races"] = HORDE_ONLY,
 						["isYearly"] = true,

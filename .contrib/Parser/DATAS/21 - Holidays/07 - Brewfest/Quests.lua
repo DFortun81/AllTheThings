@@ -217,7 +217,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 						TANARIS,
 						83,	-- Winterspring
 						ORGRIMMAR,
-						88,	-- Thunder Bluff
+						THUNDER_BLUFF,
 						90,	-- Undercity
 						EVERSONG_WOODS,
 						NETHERSTORM,

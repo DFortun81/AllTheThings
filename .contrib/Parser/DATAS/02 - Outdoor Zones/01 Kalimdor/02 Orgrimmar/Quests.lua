@@ -26,19 +26,19 @@ _.Zones =
 									q(48067, {	-- Shadow Over Thunder Bluff
 										["sourceQuests"] = { 48066 },	-- A Feast for Our Kin
 										["provider"] = { "n", 129914 },	-- Baine Bloodhoof <High Chieftain>
-										["coord"] = { 61.2, 51.8, 88 },
+										["coord"] = { 61.2, 51.8, THUNDER_BLUFF },
 										["races"] = HORDE_ONLY,
 									}),
 									q(49756, {	-- Dark Forces
 										["sourceQuests"] = { 48067 },	-- Shadow Over Thunder Bluff
 										["provider"] = { "n", 130773 },	-- Baine Bloodhoof <High Chieftain>
-										["coord"] = { 61.2, 51.8, 88 },
+										["coord"] = { 61.2, 51.8, THUNDER_BLUFF },
 										["races"] = HORDE_ONLY,
 									}),
 									q(48079, {	-- Return to Highmountain
 										["sourceQuests"] = { 49756 },	-- Dark Forces
 										["provider"] = { "n", 130773 },	-- Baine Bloodhoof <High Chieftain>
-										["coord"] = { 61.2, 51.8, 88 },
+										["coord"] = { 61.2, 51.8, THUNDER_BLUFF },
 										["races"] = HORDE_ONLY,
 									}),
 									q(41884, {	-- Dark Tales
@@ -1823,7 +1823,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 43881 },	-- Delano Morisett
 					["classes"] = { WARLOCK },
-					["coord"] = { 25.2, 14.4, 88 },	-- Delano Morisett (Thunder Bluff)
+					["coord"] = { 25.2, 14.4, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 				}),
 				q(28299, {	-- Meet with Kranosh
@@ -1845,7 +1845,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 43795 },	-- Aponi Brightmane
 					["classes"] = { PALADIN },
-					["coord"] = { 63.2, 79.8, 88 },	-- Aponi Brightmane (Thunder Bluff)
+					["coord"] = { 63.2, 79.8, THUNDER_BLUFF },
 					["races"] = { BLOODELF },
 				}),
 				q(28303, {	-- Meet with Master Pyreanor
@@ -1867,7 +1867,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 3039 },	-- Holt Thunderhorn
 					["classes"] = { HUNTER },
-					["coord"] = { 57.4, 89.2, 88 },	-- Holt Thunderhorn (Thunder Bluff)
+					["coord"] = { 57.4, 89.2, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 				}),
 				q(28297, {	-- Meet with Ormak Grimshot
@@ -1889,7 +1889,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 51639 },	-- Kador Cloudsong
 					["classes"] = { SHAMAN },
-					["coord"] = { 22.2, 19.0, 88 },	-- Kador Cloudsong (Thunder Bluff)
+					["coord"] = { 22.2, 19.0, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 				}),
 				q(28301, {	-- Meet with Terga Earthbreaker
@@ -1904,7 +1904,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 3047 },	-- Archmage Shymm
 					["classes"] = { MAGE },
-					["coord"] = { 22.6, 15.0, 88 },	-- Archmage Shymm (Thunder Bluff)
+					["coord"] = { 22.6, 15.0, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 				}),
 				q(28300, {	-- Meet with Ureda / Meet with Feenix Arcshine
@@ -1926,7 +1926,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 43795 },	-- Aponi Brightmane
 					["classes"] = { PALADIN },
-					["coord"] = { 63.2, 79.8, 88 },	-- Aponi Brightmane (Thunder Bluff)
+					["coord"] = { 63.2, 79.8, THUNDER_BLUFF },
 					["races"] = { BLOODELF },
 				}),
 				q(27298, {	-- Seek Out Master Pyreanor
@@ -1948,7 +1948,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 51639 },	-- Kador Cloudsong
 					["classes"] = { SHAMAN },
-					["coord"] = { 22.2, 19.0, 88 },	-- Kador Cloudsong (Thunder Bluff)
+					["coord"] = { 22.2, 19.0, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27280, {	-- The Earthbreaker Calls
@@ -1978,7 +1978,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 43795 },	-- Aponi Brightmane
 					["classes"] = { PALADIN },
-					["coord"] = { 63.2, 79.8, 88 },	-- Aponi Brightmane (Thunder Bluff)
+					["coord"] = { 63.2, 79.8, THUNDER_BLUFF },
 					["races"] = { TAUREN },
 				}),
 				q(28302, {	-- Meet with Sunwalker Atohmo

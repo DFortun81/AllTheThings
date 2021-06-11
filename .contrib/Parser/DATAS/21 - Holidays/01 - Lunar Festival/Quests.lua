@@ -76,7 +76,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 					90,	-- Undercity
 					87,	-- Ironforge
 					ORGRIMMAR,
-					88,	-- Thunder Bluff
+					THUNDER_BLUFF,
 					89,	-- Darnassus
 					SILVERMOON_CITY,
 					THE_EXODAR,
@@ -138,7 +138,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["provider"] = { "n", 15891 },	-- Lunar Festival Herald
 				["isYearly"] = true,
 				["races"] = HORDE_ONLY,
-				["maps"] = { 88 },	-- Thunder Bluff
+				["maps"] = { THUNDER_BLUFF },
 				["u"] = 17,	-- Lunar Festival
 			}),
 			q(8883,  {	-- Valadar Starsong
@@ -151,7 +151,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 					90,	-- Undercity
 					87,	-- Ironforge
 					ORGRIMMAR,
-					88,	-- Thunder Bluff
+					THUNDER_BLUFF,
 					89,	-- Darnassus
 					SILVERMOON_CITY,
 					THE_EXODAR,
@@ -1230,8 +1230,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["description"] = "The Elder is located on the northern edge of the Elder Rise.",
 				["provider"] = { "n", 15580 },	-- Elder Wheathoof
 				["isYearly"] = true,
-				["coord"] = { 72.8, 22.8, 88 },
-				["maps"] = { 88 },	-- Thunder Bluff
+				["coord"] = { 72.8, 22.8, THUNDER_BLUFF },
+				["maps"] = { THUNDER_BLUFF },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(2, {	-- Elder Wheathoof in Thunder Bluff

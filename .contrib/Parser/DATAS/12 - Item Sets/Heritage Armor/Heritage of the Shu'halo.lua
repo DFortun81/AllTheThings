@@ -16,11 +16,11 @@ _.GearSets =
 			}),
 			q(54760, {	-- The Spiritwalkers
 				["provider"] = { "n", 36648 },	-- Baine Bloodhoof <High Chieftain>
-				["coord"] = { 60.3, 51.7, 88 },
+				["coord"] = { 60.3, 51.7, THUNDER_BLUFF },
 				["sourceQuest"] = 54759,	-- When Spririts Whisper
 				["races"] = { TAUREN },
 				["minReputation"] = { 81, EXALTED },
-				["maps"] = { 88 },	-- Thunder Bluff
+				["maps"] = { THUNDER_BLUFF },
 			}),
 			q(54761, {	-- Spirit Guide
 				["provider"] = { "n", 149084 },	-- Spiritwalker Ussoh
@@ -56,19 +56,19 @@ _.GearSets =
 			}),
 			q(54766, {	-- Answer the Call
 				["provider"] = { "n", 36648 },	-- Baine Bloodhoof <High Chieftain>
-				["coord"] = { 58.3, 51.8, 88 },
+				["coord"] = { 58.3, 51.8, THUNDER_BLUFF },
 				["sourceQuest"] = 54764,	-- Storm in Bloodhoof
 				["races"] = { TAUREN },
 				["minReputation"] = { 81, EXALTED },
-				["maps"] = { 88 },	-- Thunder Bluff
+				["maps"] = { THUNDER_BLUFF },
 			}),
 			q(54765, {	-- Thank Your Guide
 				["provider"] = { "n", 36648 },	-- Baine Bloodhoof <High Chieftain>
-				["coord"] = { 60.3, 51.7, 88 },
+				["coord"] = { 60.3, 51.7, THUNDER_BLUFF },
 				["sourceQuest"] = 54766,	-- Answer the Call
 				["races"] = { TAUREN },
 				["minReputation"] = { 81, EXALTED },
-				["maps"] = { 88 },	-- Thunder Bluff
+				["maps"] = { THUNDER_BLUFF },
 				["g"] = {
 					i(168298),	-- Ancestral Chieftain's Armor
 					i(168297),	-- Ancestral Chieftain's Grasps

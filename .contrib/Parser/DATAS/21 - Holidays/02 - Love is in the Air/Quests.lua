@@ -18,7 +18,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 					{ 64.2, 67.2, SILVERMOON_CITY },
 					{ 62.2, 75.2, 84 },	-- Stormwind
 					{ 74.0, 56.2, THE_EXODAR },
-					{ 43.6, 53.4, 88 },	-- Thunder Bluff
+					{ 43.6, 53.4, THUNDER_BLUFF },
 					{ 66.0, 38.4, 90 },	-- Undercity
 				},
 			}),
@@ -61,7 +61,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 			q(24614, {	-- A Gift for the High Chieftain
 				["provider"] = { "n", 37887 },	-- Kwee Q. Peddlefeet
 				["isDaily"] = true,
-				["coord"] = { 44.0, 52.8, 88 },	-- Thunder Bluff
+				["coord"] = { 44.0, 52.8, THUNDER_BLUFF },
 				["races"] = HORDE_ONLY,
 			}),
 			q(24610, {	-- A Gift for the High Priestess of Elune
@@ -98,7 +98,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 					{ 64.2, 67.2, SILVERMOON_CITY },
 					{ 62.2, 75.2, 84 },	-- Stormwind
 					{ 74.0, 56.2, THE_EXODAR },
-					{ 43.6, 53.4, 88 },	-- Thunder Bluff
+					{ 43.6, 53.4, THUNDER_BLUFF },
 					{ 66.0, 38.4, 90 },	-- Undercity
 				},
 			}),
@@ -116,7 +116,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 					{ 64.2, 67.2, SILVERMOON_CITY },
 					{ 62.2, 75.2, 84 },	-- Stormwind
 					{ 74.0, 56.2, THE_EXODAR },
-					{ 43.6, 53.4, 88 },	-- Thunder Bluff
+					{ 43.6, 53.4, THUNDER_BLUFF },
 					{ 66.0, 38.4, 90 },	-- Undercity
 				},
 			}),
@@ -419,7 +419,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 				["provider"] = { "n", 38295 },	-- Junior Detective
 				["coords"] = {
 					{ 64.2, 70.0, SILVERMOON_CITY },
-					{ 42.2, 55.75, 88 },	-- Thunder Bluff
+					{ 42.2, 55.75, THUNDER_BLUFF },
 					{ 64.6, 37.4, 90 },	-- Undercity
 				},
 				["races"] = HORDE_ONLY,

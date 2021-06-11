@@ -737,8 +737,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { TANARIS },
 										}),
 										crit(28, {	-- Thunder Bluff, Lower Rise
-											["coord"] = { 45.7, 64.5, 88 },
-											["maps"] = { 88 },	-- Thunder Bluff
+											["coord"] = { 45.7, 64.5, THUNDER_BLUFF },
+											["maps"] = { THUNDER_BLUFF },
 										}),
 										crit(29, {	-- Un'Goro Crater, Marshal's Stand
 											["coord"] = { 55.2, 62.1, 78 },

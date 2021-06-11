@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(88, {	-- Thunder Bluff
+		m(THUNDER_BLUFF, {
 			n(VENDORS, {
 				n(50483, {	-- Brave Tuho <Thunder Bluff Quartermaster>
-					["coord"] = { 47.05, 50.23, 88 },
+					["coord"] = { 47.05, 50.23, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(45584),	-- Thunder Bluff Tabard
@@ -19,7 +19,7 @@ _.Zones =
 					},
 				}),
 				n(3019, {	-- Delgo Ragetotem <Axe Merchant>
-					["coord"] = { 54.08, 57.22, 88 },
+					["coord"] = { 54.08, 57.22, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(12249, {	-- Merciless Axe
@@ -28,14 +28,14 @@ _.Zones =
 					},
 				}),
 				n(8401, {	-- Halpa <Prairie Dog Vendor>
-					["coord"] = { 61.98, 58.39, 88 },
+					["coord"] = { 61.98, 58.39, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(10394),	-- Prairie Dog Whistle (PET!)
 					},
 				}),
 				n(8358, {	-- Hewa <Cloth Armor Merchant>
-					["coord"] = { 45.59, 56.65, 88 },
+					["coord"] = { 45.59, 56.65, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(16059),	-- Common Brown Shirt
@@ -44,7 +44,7 @@ _.Zones =
 					},
 				}),
 				n(3015, {	-- Kuna Thunderhorn <Bowyer & Fletching Goods>
-					["coord"] = { 46.99, 45.67, 88 },
+					["coord"] = { 46.99, 45.67, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(11303, {	-- Fine Shortbow
@@ -59,14 +59,14 @@ _.Zones =
 					},
 				}),
 				n(3002, {	-- Kurm Stonehoof <Mining Supplies>
-					["coord"] = { 34.35, 56.58, 88 },
+					["coord"] = { 34.35, 56.58, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(30746),	-- Mining Sack
 					},
 				}),
 				n(8362, {	-- Kuruk
-					["coord"] = { 38.95, 64.71, 88 },
+					["coord"] = { 38.95, 64.71, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(4498),	-- Brown Leather Satchel
@@ -76,7 +76,7 @@ _.Zones =
 					},
 				}),
 				n(3005, {	-- Mahu <Tailoring Supplies>
-					["coord"] = { 43.83, 45.12, 88 },
+					["coord"] = { 43.83, 45.12, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 3364}, -- Borya <Tailoring Supplies>
@@ -97,14 +97,14 @@ _.Zones =
 					},
 				}),
 				n(3008, {	-- Mak <Leatherworking Supplies>
-					["coord"] = { 42.08, 43.46, 88 },
+					["coord"] = { 42.08, 43.46, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 3366}, -- Tamar <Leatherworking Supplies>
 					},
 				}),
 				n(3027, {	-- Naal Mistrunner <Cooking Supplies>
-					["coord"] = { 50.92, 52.52, 88 },
+					["coord"] = { 50.92, 52.52, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 49737}, -- Shazdar <Sous Chef>
@@ -117,7 +117,7 @@ _.Zones =
 					},
 				}),
 				n(3012, {	-- Nata Dawnstrider <Enchanting Supplies>
-					["coord"] = { 44.91, 37.66, 88 },
+					["coord"] = { 44.91, 37.66, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 3346}, -- Kithas <Enchanting Supplies>
@@ -136,14 +136,14 @@ _.Zones =
 					},
 				}),
 				n(52658, {	-- Paku Cloudchaser <Jewelcrafting Supplies>
-					["coord"] = { 34.75, 53.45, 88 },
+					["coord"] = { 34.75, 53.45, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 50482}, -- Marith Lazuria <Jewelcrafting Supplies>
 					},
 				}),
 				n(8364, {	-- Pakwa <Bag Vendor>
-					["coord"] = { 39.31, 64.28, 88 },
+					["coord"] = { 39.31, 64.28, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(4498),	-- Brown Leather Satchel
@@ -158,7 +158,7 @@ _.Zones =
 					},
 				}),
 				n(52655, {	-- Palehoof's Big Bag of Parts
-					["coord"] = { 36.22, 60.21, 88 },
+					["coord"] = { 36.22, 60.21, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(18647, {	-- Schematic: Red Firework
@@ -170,7 +170,7 @@ _.Zones =
 					},
 				}),
 				n(3029, {	-- Sewa Mistrunner <Fishing Supplies>
-					["coord"] = { 55.79, 46.96, 88 },
+					["coord"] = { 55.79, 46.96, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(6325),	-- Recipe: Brilliant Smallfish
@@ -178,7 +178,7 @@ _.Zones =
 					},
 				}),
 				n(8363, {	-- Shadi Mistrunner <Trade Supplies>
-					["coord"] = { 40.33, 63.38, 88 },
+					["coord"] = { 40.33, 63.38, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						-- #if AFTER TBC
@@ -189,7 +189,7 @@ _.Zones =
 					},
 				}),
 				n(3016, {	-- Tand <Basket Weaver>
-					["coord"] = { 49.06, 34.16, 88 },
+					["coord"] = { 49.06, 34.16, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(4498),	-- Brown Leather Satchel
@@ -198,7 +198,7 @@ _.Zones =
 					},
 				}),
 				n(2999, {	-- Taur Stonehoof <Blacksmithing Supplies>
-					["coord"] = { 39.81, 55.68, 88 },
+					["coord"] = { 39.81, 55.68, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 3356}, -- Sumi <Blacksmithing Supplies>

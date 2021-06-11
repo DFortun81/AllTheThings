@@ -109,7 +109,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 					TANARIS,
 					83,		-- Winterspring
 					ORGRIMMAR,
-					88,		-- Thunder Bluff
+					THUNDER_BLUFF,
 					90,		-- Undercity
 					EVERSONG_WOODS,
 					NETHERSTORM,
@@ -1677,9 +1677,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12367, {	-- Candy Bucket — Thunder Bluff, Lower Rise, Horde
 				["isYearly"] = true,
-				["coord"] = { 45.7, 64.5, 88 },
+				["coord"] = { 45.7, 64.5, THUNDER_BLUFF },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 88 },	-- Thunder Bluff
+				["maps"] = { THUNDER_BLUFF },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -2120,7 +2120,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["repeatable"] = true,
 				["provider"] = { "n", 6746 },	-- Innkeeper Pala
 				["races"] = HORDE_ONLY,
-				["maps"] = { 88 },	-- Thunder Bluff
+				["maps"] = { THUNDER_BLUFF },
 			}),
 			q(29398, {	-- Fencing the Goods (Alliance)
 				["sourceQuests"] = { 29392 },	-- Missing Heirlooms (Alliance)
@@ -2276,7 +2276,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 					TANARIS,
 					83,		-- Winterspring
 					ORGRIMMAR,
-					88,		-- Thunder Bluff
+					THUNDER_BLUFF,
 					90,		-- Undercity
 					EVERSONG_WOODS,
 					NETHERSTORM,

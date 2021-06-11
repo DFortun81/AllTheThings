@@ -153,8 +153,8 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_DAY_OF_THE_DEAD },
 				["provider"] = { "n", 34480 },	-- Cheerful Tauren Spirit
 				["isYearly"] = true,
 				["races"] = { TAUREN, HIGHMOUNTAIN },
-				["coord"] = { 56.8, 17.6, 88 },
-				["maps"] = { 88 },	-- Thunder Bluff
+				["coord"] = { 56.8, 17.6, THUNDER_BLUFF },
+				["maps"] = { THUNDER_BLUFF },
 				["g"] = {
 					i(46831),	-- Macabre Marionette (PET!)
 				},
