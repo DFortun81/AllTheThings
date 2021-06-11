@@ -8,10 +8,10 @@ _.GearSets =
 		gs(1804, { 	-- Heritage of the Sin'dorei
 			q(53791, {	-- The Pride of the Sin'dorei
 				["provider"] = { "n", 146939 },	-- Ambassador Dawnsworn
-				["coord"] = { 39.2, 79.0, 85 },
+				["coord"] = { 39.2, 79.0, ORGRIMMAR },
 				["races"] = { BLOODELF },
 				["minReputation"] = { 911, EXALTED },
-				["maps"] = { 85 },	-- Orgrimmar
+				["maps"] = { ORGRIMMAR },
 			}),
 			q(53734, {	-- Walk Among Ghosts
 				["provider"] = { "n", 16802 },	-- Lor'themar Theron

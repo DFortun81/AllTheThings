@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(85, {	-- Orgrimmar
+		m(ORGRIMMAR, {
 			filter(101, {	-- Pet Battle
 				p(467, {	-- Dung Beetle
 					["crs"] = { 62115 },	-- Dung Beetle
@@ -23,7 +23,7 @@ _.Zones =
 					["crs"] = { 61367 },	-- Water Snake
 				}),
 				n(63086, {	-- Matty
-					["coord"] = { 36.8, 77.1, 85 },
+					["coord"] = { 36.8, 77.1, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.|r",
 					["g"] = {
@@ -48,7 +48,7 @@ _.Zones =
 					},
 				}),
 				n(63626, {	-- Varzok
-					["coord"] = { 52.6, 59.3, 85 },
+					["coord"] = { 52.6, 59.3, ORGRIMMAR },
 					["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.|r",
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -75,7 +75,7 @@ _.Zones =
 				q(31967, {	-- Battle Pet Tamers: Cataclysm
 					["altQuests"] = { 31966 },
 					["provider"] = { "n", 63626 },	-- Varzok
-					["coord"] = { 52.6, 59.3, 85 },
+					["coord"] = { 52.6, 59.3, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(89125),	-- Sack of Pet Supplies
@@ -84,7 +84,7 @@ _.Zones =
 				q(31903, {	-- Battle Pet Tamers: Eastern Kingdoms
 					["altQuests"] = { 31902 },	-- Battle Pet Tamers: Eastern Kingdoms (Alliance version, since only one can be completed per account and Blizz doesn't check it off, apparently)
 					["provider"] = { "n", 63626 },	-- Varzok
-					["coord"] = { 52.6, 59.3, 85 },
+					["coord"] = { 52.6, 59.3, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(89125),	-- Sack of Pet Supplies
@@ -93,7 +93,7 @@ _.Zones =
 				q(31891, {	-- Battle Pet Tamers: Kalimdor
 					["altQuests"] = { 31889 },
 					["provider"] = { "n", 63626 },	-- Varzok
-					["coord"] = { 52.6, 59.3, 85 },
+					["coord"] = { 52.6, 59.3, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(89125),	-- Sack of Pet Supplies
@@ -102,7 +102,7 @@ _.Zones =
 				q(31929, {	-- Battle Pet Tamers: Northrend
 					["altQuests"] = { 31927 },
 					["provider"] = { "n", 63626 },	-- Varzok
-					["coord"] = { 52.6, 59.3, 85 },
+					["coord"] = { 52.6, 59.3, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(89125),	-- Sack of Pet Supplies
@@ -111,7 +111,7 @@ _.Zones =
 				q(31921, {	-- Battle Pet Tamers: Outland
 					["altQuests"] = { 31919 },
 					["provider"] = { "n", 63626 },	-- Varzok
-					["coord"] = { 52.6, 59.3, 85 },
+					["coord"] = { 52.6, 59.3, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(89125),	-- Sack of Pet Supplies
@@ -120,7 +120,7 @@ _.Zones =
 				q(31952, {	-- Battle Pet Tamers: Pandaria
 					["altQuests"] = { 31930 },
 					["provider"] = { "n", 63626 },	-- Varzok
-					["coord"] = { 52.6, 59.3, 85 },
+					["coord"] = { 52.6, 59.3, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(89125),	-- Sack of Pet Supplies
@@ -128,57 +128,57 @@ _.Zones =
 				}),
 				q(31590, {	-- Got one!
 					["provider"] = { "n", 63626 },	-- Varzok
-					["coord"] = { 52.6, 59.3, 85 },
+					["coord"] = { 52.6, 59.3, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 31827 },	-- Level Up!
 				}),
 				q(31587, {	-- Got one!
 					["provider"] = { "n", 63086 },	-- Matty
-					["coord"] = { 36.8, 77.4, 85 },
+					["coord"] = { 36.8, 77.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 31828 },	-- Level Up!
 				}),
 				q(31588, {	-- Learning the Ropes
 					["provider"] = { "n", 63626 },	-- Varzok
-					["coord"] = { 52.6, 59.3, 85 },
+					["coord"] = { 52.6, 59.3, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["description"] = "This quest is part of a chain initiated by learning Battle Pet Training.",
 				}),
 				q(31585, {	-- Learning the Ropes
 					["provider"] = { "n", 63086 },	-- Matty
-					["coord"] = { 36.8, 77.4, 85 },
+					["coord"] = { 36.8, 77.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["description"] = "This quest is part of a chain initiated by learning Battle Pet Training.",
 				}),
 				q(31827, {	-- Level Up!
 					["provider"] = { "n", 63626 },	-- Varzok
-					["coord"] = { 52.6, 59.3, 85 },
+					["coord"] = { 52.6, 59.3, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 31589 },	-- On The Mend
 				}),
 				q(31828, {	-- Level Up!
 					["provider"] = { "n", 63086 },	-- Matty
-					["coord"] = { 36.8, 77.4, 85 },
+					["coord"] = { 36.8, 77.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 31586 },	-- On The Mend
 				}),
 				q(31589, {	-- On The Mend
 					["provider"] = { "n", 63626 },	-- Varzok
-					["coord"] = { 52.6, 59.3, 85 },
+					["coord"] = { 52.6, 59.3, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 31588 },	-- Learning the Ropes
 
 				}),
 				q(31586, {	-- On The Mend
 					["provider"] = { "n", 63086 },	-- Matty
-					["coord"] = { 36.8, 77.4, 85 },
+					["coord"] = { 36.8, 77.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 31585 },	-- Learning the Ropes
 
 				}),
 				q(32009, {	-- Varzok
 					["provider"] = { "n", 63626 },	-- Varzok
-					["coord"] = { 52.6, 59.3, 85 },
+					["coord"] = { 52.6, 59.3, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
@@ -231,7 +231,7 @@ _.Zones =
 				}),
 				q(32863, {	-- What We've Been Training For
 					["provider"] = { "n", 63626 },	-- Varzok
-					["coord"] = { 52.6, 59.3, 85 },
+					["coord"] = { 52.6, 59.3, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["g"] = {
@@ -240,7 +240,7 @@ _.Zones =
 				}),
 				q(31812, {	-- Zunta, The Pet Tramer
 					["provider"] = { "n", 63626 },	-- Varzok
-					["coord"] = { 52.6, 59.3, 85 },
+					["coord"] = { 52.6, 59.3, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						32009, 31882, 31883, 31884, 31885,	-- Varzok (all breadcrumbs)

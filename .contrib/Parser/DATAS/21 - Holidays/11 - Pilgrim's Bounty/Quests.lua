@@ -189,7 +189,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 					NORTHERN_BARRENS,
 					71,		-- Tanaris
 					83,		-- Winterspring
-					85,		-- Orgrimmar
+					ORGRIMMAR,
 					88,		-- Thunder Bluff
 					90,		-- Undercity
 					EVERSONG_WOODS,

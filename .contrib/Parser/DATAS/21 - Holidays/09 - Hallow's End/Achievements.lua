@@ -705,8 +705,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { NORTHERN_BARRENS },
 										}),
 										crit(20, {	-- Orgrimmar, Valley of Strength
-											["coord"] = { 53.8, 78.8, 85 },
-											["maps"] = { 85 },	-- Orgrimmar
+											["coord"] = { 53.8, 78.8, ORGRIMMAR },
+											["maps"] = { ORGRIMMAR },
 										}),
 										crit(21, {	-- Silithus, Cenarion Hold
 											["coord"] = { 55.5, 36.7, 81 },

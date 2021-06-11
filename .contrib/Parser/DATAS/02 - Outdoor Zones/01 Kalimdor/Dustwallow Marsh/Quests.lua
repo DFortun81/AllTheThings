@@ -828,7 +828,7 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 					["maps"] = {
 						84,	-- Stormwind
-						85,	-- Orgrimmar
+						ORGRIMMAR,
 						IRONFORGE,
 						90,	-- Undercity
 					},

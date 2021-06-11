@@ -11,7 +11,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 				["questID"] = 58901,
 				["coords"] = {
 					{ 33.9, 68.1, 87 },	-- Ironforge
-					{ 52.9, 77.4, 85 },	-- Orgrimmar
+					{ 52.9, 77.4, ORGRIMMAR },
 				},
 			}),
 			-- ALLIANCE QUESTS --
@@ -204,7 +204,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 			q(8861,  {	-- New Year Celebrations! (H)
 				["description"] = "This quest is only available on December 31, and can be done once per character (not each year). Quest can be obtained from Wonderform Operator in any major city.",
 				["provider"] = { "n", 15732 },	-- Wonderform Operator
-				["coord"] = { 50.1, 61.8, 85 },	-- Orgrimmar (closest pick-up to turn-in)
+				["coord"] = { 50.1, 61.8, ORGRIMMAR },	-- closest pick-up to turn-in
 				["races"] = HORDE_ONLY,
 				["maps"] = { 88 },	-- Thunder Bluff
 				["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL,

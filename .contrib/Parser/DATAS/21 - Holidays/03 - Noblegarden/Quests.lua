@@ -130,12 +130,12 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 					{ 67.53, 74.19, NORTHERN_BARRENS },	-- Goblin
 					{ 68.18, 71.37, NORTHERN_BARRENS },	-- Goblin
 					{ 69.06, 70.69, NORTHERN_BARRENS },	-- Goblin
-					{ 32.27, 65.71, 85 },	-- Orgrimmar [Troll]
-					{ 39.59, 78.04, 85 },	-- Orgrimmar [Troll]
-					{ 40.18, 49.03, 85 },	-- Orgrimmar [Tauren]
-					{ 49.08, 61.54, 85 },	-- Orgrimmar [Troll]
-					{ 51.55, 75.19, 85 },	-- Orgrimmar [Orc]
-					{ 69.93, 49.45, 85 },	-- Orgrimmar [Orc]
+					{ 32.27, 65.71, ORGRIMMAR },	-- Troll
+					{ 39.59, 78.04, ORGRIMMAR },	-- Troll
+					{ 40.18, 49.03, ORGRIMMAR },	-- Tauren
+					{ 49.08, 61.54, ORGRIMMAR },	-- Troll
+					{ 51.55, 75.19, ORGRIMMAR },	-- Orc
+					{ 69.93, 49.45, ORGRIMMAR },	-- Orc
 					{ 49.11, 31.48, SHATTRATH_CITY },	-- Goblin
 					{ 53.09, 50.95, SHATTRATH_CITY },	-- Goblin
 					{ 54.87, 38.59, SHATTRATH_CITY },	-- Goblin
@@ -169,7 +169,7 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 					126,	-- Dalaran: Northrend
 					NETHERSTORM,
 					NORTHERN_BARRENS,
-					85,		-- Orgrimmar
+					ORGRIMMAR,
 					86,		-- Orgrimmar
 					SHATTRATH_CITY,
 					SILVERMOON_CITY,

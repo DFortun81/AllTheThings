@@ -21,7 +21,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					74, 	-- Tanaris: Caverns of Time Entrance
 					CAVERNS_OF_TIME,
 					84,		-- Stormwind City
-					85,		-- Orgrimmar
+					ORGRIMMAR,
 					86,		-- Orgrimmar: The Drag
 					129,	-- The Nexus
 					198,	-- Mount Hyjal

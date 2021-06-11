@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(85, {	-- Orgrimmar
+		m(ORGRIMMAR, {
 			n(QUESTS, {
 				gsh(1522, {	-- Allied Races
 					["icon"] = "Interface\\Icons\\FactionChange",
@@ -14,13 +14,13 @@ _.Zones =
 								{ "n", 126065 },	-- Lady Sylvanas Windrunner
 								{ "n", 133523 },	-- Ji Firepaw
 							},
-							["coord"] = { 37.8, 81.0, 85 },
+							["coord"] = { 37.8, 81.0, ORGRIMMAR },
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								n(-209, {	-- Highmountain Tauren
 									q(48066, {	-- A Feast for Our Kin
 										["provider"] = { "n", 125285 },	-- Baine Bloodhoof <High Chieftain>
-										["coord"] = { 38.0, 81.0, 85 },
+										["coord"] = { 38.0, 81.0, ORGRIMMAR },
 										["races"] = HORDE_ONLY,
 									}),
 									q(48067, {	-- Shadow Over Thunder Bluff
@@ -138,14 +138,14 @@ _.Zones =
 									q(50319, {	-- Stranger in a Strange Land
 										["sourceQuests"] = { 49773 },	-- For the Horde
 										["provider"] = { "n", 133407 },	-- Ambassador Blackguard
-										["coord"] = { 39.4, 79.2, 85 },
+										["coord"] = { 39.4, 79.2, ORGRIMMAR },
 										["races"] = { HIGHMOUNTAIN },
 									}),
 								}),
 								n(-210, {	-- Nightborne
 									q(49973, {	-- Thalyssra's Estate
 										["provider"] = { "n", 133523 },	-- Ji Firepaw
-										["coord"] = { 37.8, 81.1, 85 },
+										["coord"] = { 37.8, 81.1, ORGRIMMAR },
 										["races"] = HORDE_ONLY,
 									}),
 									q(49613, {	-- Silvermoon City
@@ -182,14 +182,14 @@ _.Zones =
 									q(50303, {	-- Stranger in a Strange Land
 										["sourceQuests"] = { 49933 },	-- For the Horde
 										["provider"] = { "n", 133407 },	-- Ambassador Blackguard
-										["coord"] = { 39.4, 79.2, 85 },
+										["coord"] = { 39.4, 79.2, ORGRIMMAR },
 										["races"] = { NIGHTBORNE },
 									}),
 								}),
 								n(-245, {	-- Mag'har Orc
 									q(53466, {	-- Vision of Time
 										["provider"] = { "n", 126066 },	-- Eitrigg
-										["coord"] = { 37.8, 80.6, 85 },
+										["coord"] = { 37.8, 80.6, ORGRIMMAR },
 										["races"] = HORDE_ONLY,
 									}),
 									q(53467, {	-- Caverns of Time
@@ -255,7 +255,7 @@ _.Zones =
 									-- Mag'har Orc Starter Quest
 									q(51485, {	-- For the Horde
 										["provider"] = { "n", 143845 },	--  Overlord Geya'rah
-										["coord"] = { 70.6, 44.6, 85 },
+										["coord"] = { 70.6, 44.6, ORGRIMMAR },
 										["races"] = { MAGHAR },
 										["g"] = {
 											i(161328),	-- Tabard of the Mag'har Clans
@@ -265,14 +265,14 @@ _.Zones =
 									q(53502, {	-- Stranger in a Strange Land
 										["sourceQuests"] = { 51485 },	-- For the Horde
 										["provider"] = { "n", 133407 },	-- Ambassador Blackguard
-										["coord"] = { 39.4, 79.2, 85 },
+										["coord"] = { 39.4, 79.2, ORGRIMMAR },
 										["races"] = { MAGHAR },
 									}),
 								}),
 								n(-251, {	-- Zandalari
 									q(53831, {	-- A Royal Occasion
 										["provider"] = { "n", 133519 },	-- Rokhan
-										["coord"] = { 38.2, 81.4, 85 },
+										["coord"] = { 38.2, 81.4, ORGRIMMAR },
 										["races"] = HORDE_ONLY,
 									}),
 									q(53823, {	-- A Queen's Entourage
@@ -400,7 +400,7 @@ _.Zones =
 									q(55138, {	-- Stranger in a Strange Land
 										["sourceQuests"] = { 55137 },	-- For the Horde
 										["provider"] = { "n", 133407 },	-- Ambassador Blackguard
-										["coord"] = { 39.4, 79.2, 85 },
+										["coord"] = { 39.4, 79.2, ORGRIMMAR },
 										["races"] = { ZANDALARI },
 									}),
 								}),
@@ -408,22 +408,22 @@ _.Zones =
 									q(53870, {	-- Guests at Grommash Hold
 										["description"] = "Must be exalted with |cFFFFD700Voldunai|r and complete the |cFFFFD700Secrets in the Sands|r achievement.",
 										["provider"] = { "n", 133523 },	-- Ji Firepaw
-										["coord"] = { 37.7, 81.1, 85 },
+										["coord"] = { 37.7, 81.1, ORGRIMMAR },
 									}),
 									q(53889, {	-- A Declaration of Intent
 										["sourceQuests"] = { 53870 },	-- Guests at Grommash Hold
 										["provider"] = { "n", 145416 },	-- Kiro
-										["coord"] = { 48.8, 72.7, 85 },
+										["coord"] = { 48.8, 72.7, ORGRIMMAR },
 									}),
 									q(53890, {	-- New Allies, New Problems
 										["sourceQuests"] = { 53889 },	-- A Declaration of Intent
 										["provider"] = { "n", 145416 },	-- Kiro
-										["coord"] = { 48.8, 72.7, 85 },
+										["coord"] = { 48.8, 72.7, ORGRIMMAR },
 									}),
 									q(53891, {	-- No Problem Too Small
 										["sourceQuests"] = { 53890 },	-- New Allies, New Problems
 										["provider"] = { "n", 145416 },	-- Kiro
-										["coord"] = { 48.8, 72.7, 85 },
+										["coord"] = { 48.8, 72.7, ORGRIMMAR },
 									}),
 									q(53892, {	-- Where Are the Workers?
 										["sourceQuests"] = { 53891 },	-- No Problem Too Small
@@ -481,7 +481,7 @@ _.Zones =
 									q(53899, {	-- On the Outskirts
 										["sourceQuests"] = { 54026 },	-- Job's Done
 										["provider"] = { "n", 145416 },	-- Kiro
-										["coord"] = { 49.0, 73.6, 85 },
+										["coord"] = { 49.0, 73.6, ORGRIMMAR },
 										["races"] = HORDE_ONLY,
 									}),
 									q(58087, {	-- Destroying the Source
@@ -526,7 +526,7 @@ _.Zones =
 									q(53903, {	-- Meet with Meerah
 										["sourceQuests"] = { 54027 },	-- Threat Contained
 										["provider"] = { "n", 145416 },	-- Kiro
-										["coord"] = { 49.0, 73.6, 85 },
+										["coord"] = { 49.0, 73.6, ORGRIMMAR },
 									}),
 									q(53904, {	-- The Vintner's Assistants
 										["sourceQuests"] = { 53903 },	-- Meet with Meerah
@@ -576,7 +576,7 @@ _.Zones =
 									q(57448, {	-- New Allies Among Us
 										["sourceQuests"] = { 53908 },	-- Awaiting Our Arrival
 										["provider"] = { "n", 145424 },	-- Baine Bloodhoof
-										["coord"] = { 48.2, 71.0, 85 },
+										["coord"] = { 48.2, 71.0, ORGRIMMAR },
 										["g"] = {
 											ach(13206),	-- Allied Races: Vulpera
 										},
@@ -584,7 +584,7 @@ _.Zones =
 									-- Vulpera starter quests
 									q(58122, {	-- For the Horde
 										["provider"] = { "n", 160452 },	-- Nilsa
-										["coord"] = { 64.6, 46.5, 85 },
+										["coord"] = { 64.6, 46.5, ORGRIMMAR },
 										["races"] = { VULPERA },
 										["g"] = {
 											i(174069),	-- Tabard of the Vulpera
@@ -593,7 +593,7 @@ _.Zones =
 									q(58124, {	-- Stranger in a Strange Land
 										["sourceQuests"] = { 58122 },	-- For the Horde
 										["provider"] = { "n", 133407 },	-- Ambassador Blackguard
-										["coord"] = { 39.3, 79.5, 85 },
+										["coord"] = { 39.3, 79.5, ORGRIMMAR },
 										["races"] = { VULPERA },
 									}),
 								}),
@@ -602,7 +602,7 @@ _.Zones =
 										{ "n", 126065 },	-- Lady Sylvanas Windrunner
 										{ "n", 133523 },	-- Ji Firepaw
 									},
-									["coord"] = { 37.8, 81.0, 85 },
+									["coord"] = { 37.8, 81.0, ORGRIMMAR },
 									["races"] = HORDE_ONLY,
 								}),
 								q(50254, {	-- A Second Ally For the Cause
@@ -610,7 +610,7 @@ _.Zones =
 										{ "n", 126065 },	-- Lady Sylvanas Windrunner
 										{ "n", 133523 },	-- Ji Firepaw
 									},
-									["coord"] = { 37.8, 81.0, 85 },
+									["coord"] = { 37.8, 81.0, ORGRIMMAR },
 									["races"] = HORDE_ONLY,
 									["u"] = REMOVED_FROM_GAME,
 								}),
@@ -693,8 +693,8 @@ _.Zones =
 					},
 					["classes"] = { DRUID },
 					["coords"] = {
-						{ 44.8, 51.6, 85 },	-- Shalla Whiteleaf (Orgrimmar)
-						{ 35.0, 67.6, 85 },	-- Sesebi (Orgrimmar)
+						{ 44.8, 51.6, ORGRIMMAR },	-- Shalla Whiteleaf
+						{ 35.0, 67.6, ORGRIMMAR },	-- Sesebi
 					},
 					["races"] = HORDE_ONLY,
 				}),
@@ -722,7 +722,7 @@ _.Zones =
 				q(50341, {	-- A Recent Discovery
 					["sourceQuests"] = { 49977 },	-- Summons to Orgrimmar
 					["provider"] = { "n", 132254 },	-- Nathanos Blightcaller
-					["coord"] = { 49.8, 75.6, 85 },
+					["coord"] = { 49.8, 75.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
@@ -750,14 +750,14 @@ _.Zones =
 					["sourceQuests"] = { 32307 },	-- Reader for the Dead Tongue
 					["provider"] = { "n", 88705 },	-- Kranosh
 					["classes"] = { WARLOCK },
-					["coord"] = { 53.8, 35.8, 85 },
+					["coord"] = { 53.8, 35.8, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27403, {	-- A True Sunwalker
 					["sourceQuests"] = { 27304 },	-- Follow the Sun
 					["provider"] = { "n", 44725 },	-- Sunwalker Atohmo
 					["classes"] = { PALADIN },
-					["coord"] = { 45.2, 53.6, 85 },
+					["coord"] = { 45.2, 53.6, ORGRIMMAR },
 					["races"] = { TAUREN },
 					["g"] = {
 						i(65472),	-- Mace of the Sunwalker
@@ -768,7 +768,7 @@ _.Zones =
 				q(62568, {	-- Adventurers Wanted: Chromie's Call
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 168431 },	-- Warlord Breka Grimaxe
-					["coord"] = { 48.3, 71.4, 85 },
+					["coord"] = { 48.3, 71.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(809,   {	-- Ak'Zeloth
@@ -780,7 +780,7 @@ _.Zones =
 				q(25264, {	-- Ak'Zeloth
 					["sourceQuests"] = { 25263 },	-- Arnak Fireblade
 					["provider"] = { "n", 3216 },	-- Arnak Fireblade
-					["coord"] = { 58.5, 53.6, 85 },
+					["coord"] = { 58.5, 53.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(31853, {	-- All Aboard!
@@ -791,19 +791,19 @@ _.Zones =
 						49538,	-- Warchief's Command: Jade Forest!
 					},
 					["provider"] = { "n", 54870 },	-- General Nazgrim
-					["coord"] = { 48.6, 70.8, 85 },
+					["coord"] = { 48.6, 70.8, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(1431,  {	-- Alliance Relations
 					["provider"] = { "n", 5639 },	-- Craven Drok
-					["coord"] = { 52.4, 44.6, 85 },
+					["coord"] = { 52.4, 44.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(1432,  {	-- Alliance Relations
 					["sourceQuests"] = { 1431 },	-- Alliance Relations
 					["provider"] = { "n", 5640 },	-- Keldran
-					["coord"] = { 22.2, 53.8, 85 },
+					["coord"] = { 22.2, 53.8, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
@@ -833,7 +833,7 @@ _.Zones =
 					["customCollect"] = "NPE",	-- New Player Experience
 					["sourceQuests"] = { 60359 },	-- Home Is Where the Hearth Is
 					["provider"] = { "n", 168771 },	-- Shuja Grimaxe
-					["coord"] = { 70.9, 49.6, 85 },
+					["coord"] = { 70.9, 49.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(936,   {	-- Assisting Arch Druid Runetotem
@@ -844,19 +844,19 @@ _.Zones =
 				q(40976, {	-- Audience with the Warchief
 					["provider"] = { "n", 97296 },	-- Archmage Khadgar
 					["classes"] = { DEMONHUNTER },
-					["coord"] = { 52.6, 88.2, 85 },
+					["coord"] = { 52.6, 88.2, ORGRIMMAR },
 					["races"] = { BLOODELF },
 				}),
 				q(60361, {	-- Battle for Azeroth: Mission Statement (Shadowlands version)
 					["sourceQuests"] = { 60360 },	-- An Urgent Meeting
 					["altQuests"] = { 51443 },	-- Mission Statement
 					["provider"] = { "n", 168431 },	-- Warlord Breka Grimaxe
-					["coord"] = { 48.3, 71.4, 85 },
+					["coord"] = { 48.3, 71.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(3504,  {	-- Betrayed
 					["provider"] = { "n", 4485 },	-- Belgrom Rockmaul
-					["coord"] = { 75.0, 34.0, 85 },
+					["coord"] = { 75.0, 34.0, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
@@ -864,7 +864,7 @@ _.Zones =
 					["sourceQuests"] = { 27279 },	-- The Shattered Hand
 					["provider"] = { "n", 47233 },	-- Gordul
 					["classes"] = { ROGUE },
-					["coord"] = { 32.9, 65.8, 85 },
+					["coord"] = { 32.9, 65.8, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(65487),	-- Blade of the Shattered Hand
@@ -872,7 +872,7 @@ _.Zones =
 				}),
 				q(29401, {	-- Blown Away
 					["provider"] = { "n", 54004 },	-- Jaga
-					["coord"] = { 48.1, 46.8, 85 },
+					["coord"] = { 48.1, 46.8, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(72045),	-- Horde Balloon
@@ -880,7 +880,7 @@ _.Zones =
 				}),
 				q(4300,  {	-- Bone-Bladed Weapons
 					["provider"] = { "n", 8659 },	-- Jes'rimon
-					["coord"] = { 55.6, 34.2, 85 },
+					["coord"] = { 55.6, 34.2, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
@@ -895,25 +895,25 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["repeatable"] = true,
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
-					["coord"] = { 40.8, 79.9, 85 },
+					["coord"] = { 40.8, 79.9, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(60123, {	-- Burning Crusade: To Outland!
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
-					["coord"] = { 40.8, 79.9, 85 },
+					["coord"] = { 40.8, 79.9, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(29219, {	-- Bwemba's Spirit
 					["sourceQuests"] = { 29157 },	-- The Zandalari Menace
 					["provider"] = { "n", 53081 },	-- Bwemba
-					["coord"] = { 32.6, 68.6, 85 },
+					["coord"] = { 32.6, 68.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(4511,  {	-- Calm Before the Storm
 					["sourceQuests"] = { 4509 },	-- Calm Before the Storm
 					["provider"] = { "n", 7010 },	-- Zilzibin Drumlore
-					["coord"] = { 55.2, 55.8, 85 },
+					["coord"] = { 55.2, 55.8, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
@@ -936,14 +936,14 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["repeatable"] = true,
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
-					["coord"] = { 40.8, 79.9, 85 },
+					["coord"] = { 40.8, 79.9, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(32468, {	-- Crystal Clarity
 					["sourceQuests"] = { 32471 },	-- Light Camera Action
 					["collectible"] = false,
 					["provider"] = { "n", 16926 },	-- Vivica Starshot
-					["coord"] = { 34.5, 70.8, 85 },
+					["coord"] = { 34.5, 70.8, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(122661),	-- S.E.L.F.I.E. Lens Upgrade Kit
@@ -979,19 +979,19 @@ _.Zones =
 					["sourceQuests"] = { 28805 },	-- The Eye of the Storm
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 45244 },	-- Farseer Krogar
-					["coord"] = { 50.4, 38.2, 85 },
+					["coord"] = { 50.4, 38.2, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(6385,  {	-- Doras the Wind Rider Master
 					["sourceQuests"] = { 6384 },	-- Ride to Orgrimmar
 					["provider"] = { "n", 6929 },	-- Innkeeper Gryshka
-					["coord"] = { 53.5, 78.7, 85 },
+					["coord"] = { 53.5, 78.7, ORGRIMMAR },
 					["races"] = { ORC, TROLL, MAGHAR },
 				}),
 				q(13842, {	-- Dread Head Redemption
 					["sourceQuests"] = { 13841 },	-- All Apologies
 					["provider"] = { "n", 3144 },	-- Eitrigg
-					["coord"] = { 49.2, 72.3, 85 },
+					["coord"] = { 49.2, 72.3, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(56708)),	-- Bow of Ire (old version)
@@ -1008,20 +1008,20 @@ _.Zones =
 				}),
 				q(31034, {	-- Enemies Below
 					["provider"] = { "n", 14720 },	-- High Overlord Saurfang
-					["coord"] = { 48.6, 71.0, 85 },
+					["coord"] = { 48.6, 71.0, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(60344, {	-- Finding Your Way (H)
 					["customCollect"] = "NPE",	-- New Player Experience
 					["sourceQuests"] = { 60343 },	-- Welcome to Orgrimmar
 					["provider"] = { "n", 168441 },	-- Cork Fizzlepop
-					["coord"] = { 51.9, 85.4, 85 },
+					["coord"] = { 51.9, 85.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26804, {	-- Flight to Razor Hill
 					["sourceQuests"] = { 26803 },	-- Missing Reports
 					["provider"] = { "n", 3310 },	-- Doras
-					["coord"] = { 49.4, 59.2, 85 },
+					["coord"] = { 49.4, 59.2, ORGRIMMAR },
 					["races"] = { GOBLIN },
 				}),
 				q(8367,  {	-- For Great Honor
@@ -1132,7 +1132,7 @@ _.Zones =
 				q(5730,  {	-- Hidden Enemies
 					["sourceQuests"] = { 5729 },	-- Hidden Enemies
 					["provider"] = { "n", 3216 },	-- Neeru Fireblade
-					["coord"] = { 50.0, 60.0, 85 },
+					["coord"] = { 50.0, 60.0, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
@@ -1166,7 +1166,7 @@ _.Zones =
 					-- figure out which of these is correct (if either) and adjust description accordingly
 				--	["description"] = "This quest is automatically offered to Horde players upon reaching level 110.",
 					["provider"] = { "n", 14720 },	-- High Overlord Saurfang
-					["coord"] = { 48.6, 71.0, 85 },
+					["coord"] = { 48.6, 71.0, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(163528),	-- Deathguard's Gladius
@@ -1198,13 +1198,13 @@ _.Zones =
 						40605,	-- Keep Your Friends Close
 					},
 					["provider"] = { "n", 95234 },	-- Elthyn Da'rai
-					["coord"] = { 52.6, 56.2, 85 },
+					["coord"] = { 52.6, 56.2, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(3563,  {	-- Jes'rimon's Payment to Jediga
 					["sourceQuests"] = { 3541 },	-- Delivery to Jes'rimon
 					["provider"] = { "n", 8659 },	-- Jes'rimon
-					["coord"] = { 55.5, 34.1, 85 },
+					["coord"] = { 55.5, 34.1, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
@@ -1528,14 +1528,14 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["repeatable"] = true,
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
-					["coord"] = { 40.8, 79.9, 85 },
+					["coord"] = { 40.8, 79.9, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(60345, {	-- License to Ride
 					["customCollect"] = "NPE",	-- New Player Experience
 					["sourceQuests"] = { 60344 },	-- Finding Your Way (H)
 					["provider"] = { "n", 168540 },	-- Rohaka Tuskmaul
-					["coord"] = { 61.5, 32.9, 85 },
+					["coord"] = { 61.5, 32.9, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(13331),	-- Red Skeletal Horse
@@ -1543,7 +1543,7 @@ _.Zones =
 				}),
 				q(32471, {	-- Light Camera Action
 					["provider"] = { "n", 16926 },	-- Vivica Starshot
-					["coord"] = { 34.5, 70.8, 85 },
+					["coord"] = { 34.5, 70.8, ORGRIMMAR },
 					["collectible"] = false,
 					["races"] = HORDE_ONLY,
 					["cost"] = {
@@ -1566,13 +1566,13 @@ _.Zones =
 				q(26293, {	-- Machines of War
 					["sourceQuests"] = { 28717 },	-- Warchief's Command: Twilight Highlands!
 					["provider"] = { "n", 14720 },	-- High Overlord Saurfang
-					["coord"] = { 48.6, 71.0, 85 },
+					["coord"] = { 48.6, 71.0, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(4494,  {	-- March of the Silithid
 					["sourceQuests"] = { 32 },	-- Rise of the Silithid
 					["provider"] = { "n", 7010 },	-- Zilzibin Drumlore
-					["coord"] = { 55.2, 55.8, 85 },
+					["coord"] = { 55.2, 55.8, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
@@ -1602,7 +1602,7 @@ _.Zones =
 				q(7667,  {	-- Material Assistance
 					["provider"] = { "n", 13417 },	-- Sagorne Creststrider
 					["classes"] = { SHAMAN },
-					["coord"] = { 39.2, 48.4, 85 },
+					["coord"] = { 39.2, 48.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
@@ -1997,7 +1997,7 @@ _.Zones =
 					["sourceQuests"] = { 28293 },	-- That's No Pyramid!
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 47571 },	-- Belloc Brightblade
-					["coord"] = { 48.9, 91.4, 85 },
+					["coord"] = { 48.9, 91.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(51443, {	-- Mission Statement (BfA version)
@@ -2013,27 +2013,27 @@ _.Zones =
 						{ "n", 49750 },	-- Warchief's Herald
 					},
 					["coords"] = {
-						{ 48.9, 91.4, 85 },	-- Nathanos Blightcaller
-						{ 49.4, 76.6, 85 },	-- Warchief's Herald
+						{ 48.9, 91.4, ORGRIMMAR },	-- Nathanos Blightcaller
+						{ 49.4, 76.6, ORGRIMMAR },	-- Warchief's Herald
 					},
 					["races"] = HORDE_ONLY,
 				}),
 				q(26803, {	-- Missing Reports
 					["provider"] = { "n", 3144 },	-- Eitrigg
-					["coord"] = { 48.6, 71.0, 85 },
+					["coord"] = { 48.6, 71.0, ORGRIMMAR },
 					["races"] = { GOBLIN },
 				}),
 				q(60126, {	-- Mists of Pandaria: To Pandaria!
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
-					["coord"] = { 40.8, 79.9, 85 },
+					["coord"] = { 40.8, 79.9, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(28289, {	-- Moonglade Calls
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 44978 },	-- Sesebi
 					["classes"] = { DRUID },
-					["coord"] = { 35.0, 67.6, 85 },	-- Sesebi (Orgrimmar)
+					["coord"] = { 35.0, 67.6, ORGRIMMAR },	-- Sesebi
 				}),
 				q(2283,  {	-- Necklace Recovery
 					["provider"] = { "n", 6986 },	-- Dran Droffers
@@ -2049,7 +2049,7 @@ _.Zones =
 				q(2950,  {	-- Nogg's Ring Redo
 					["sourceQuests"] = { 2949 },	-- Return of the Ring
 					["provider"] = { "n", 3412 },	-- Nogg
-					["coord"] = { 56.7, 57.0, 85 },
+					["coord"] = { 56.7, 57.0, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(9588),	-- Nogg's Gold Ring
@@ -2059,25 +2059,25 @@ _.Zones =
 					["sourceQuests"] = { 26416 },	-- Well, Come to the Jungle
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 43062 },	-- Bort
-					["coord"] = { 51.2, 56.2, 85 },
+					["coord"] = { 51.2, 56.2, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26642, {	-- Preserving the Barrens
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 35068 },	-- Gotura Fourwinds
-					["coord"] = { 47.6, 71.3, 85 },
+					["coord"] = { 47.6, 71.3, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(44092, {	-- Protect the Home Front
 					["provider"] = { "n", 95234 },	-- Elthyn Da'rai
-					["coord"] = { 52.6, 56.2, 85 },
+					["coord"] = { 52.6, 56.2, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(32307, {	-- Reader for the Dead Tongue
 					["isBreadcrumb"] = true,
-					["provider"] = { "n", 88705 },	-- Kranosh (Orgrimmar)
-					["coord"] = { 53.8, 35.8, 85 },	-- Kranosh (Orgrimmar)
+					["provider"] = { "n", 88705 },	-- Kranosh
+					["coord"] = { 53.8, 35.8, ORGRIMMAR },	-- Kranosh
 					["classes"] = { WARLOCK },
 				}),
 				q(1361,  {	-- Regthar Deathgate
@@ -2087,19 +2087,19 @@ _.Zones =
 				}),
 				q(25275, {	-- Report to the Labor Captain
 					["provider"] = { "n", 3144 },	-- Eitrigg
-					["coord"] = { 48.6, 71.0, 85 },
+					["coord"] = { 48.6, 71.0, ORGRIMMAR },
 					["races"] = { GOBLIN },
 				}),
 				q(6386,  {	-- Return to Razor Hill
 					["sourceQuests"] = { 6385 },	-- Doras the Wind Rider Master
 					["provider"] = { "n", 3310 },	-- Doras
-					["coord"] = { 49.5, 59.2, 85 },
+					["coord"] = { 49.5, 59.2, ORGRIMMAR },
 					["races"] = { ORC, TROLL },
 				}),
 				q(26840, {	-- Return to the Highlands
 					["sourceQuests"] = { 26830 },	-- Traitor's Bait
 					["provider"] = { "n", 3144 },	-- Eitrigg
-					["coord"] = { 48.6, 71.0, 85 },
+					["coord"] = { 48.6, 71.0, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(3122,  {	-- Return to Witch Doctor Uzer'i
@@ -2121,7 +2121,7 @@ _.Zones =
 				}),
 				q(3924,  {	-- Samophlange Manual
 					["provider"] = { "n", 9317 },	-- Rilli Greasygob
-					["coord"] = { 56.8, 56.4, 85 },
+					["coord"] = { 56.8, 56.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
@@ -2133,7 +2133,7 @@ _.Zones =
 					["sourceQuests"] = { 26294 },	-- Weapons of Mass Dysfunction
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 14720 },	-- High Overlord Saurfang
-					["coord"] = { 48.6, 71.0, 85 },
+					["coord"] = { 48.6, 71.0, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
 				-- #if BEFORE SHADOWLANDS
@@ -2190,13 +2190,13 @@ _.Zones =
 					["sourceQuests"] = { 32309 },	-- A Tale of Six Masters
 					["provider"] = { "n", 88705 },	-- Kranosh
 					["classes"] = { WARLOCK },
-					["coord"] = { 53.8, 35.8, 85 },
+					["coord"] = { 53.8, 35.8, ORGRIMMAR },
 				}),
 				q(28465, {	-- Slaves of the Firelord
 					["sourceQuests"] = { 28301 },	-- Meet with Terga Earthbreaker
 					["provider"] = { "n", 72939 },	-- Terga Earthbreaker
 					["classes"] = { SHAMAN },
-					["coord"] = { 39.0, 47.4, 85 },
+					["coord"] = { 39.0, 47.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(65643),	-- Mask of the Speaker
@@ -2211,7 +2211,7 @@ _.Zones =
 				q(1823,  {	-- Speak with Ruga
 					["provider"] = { "n", 3354 },	-- Sorek
 					["classes"] = { WARRIOR },
-					["coord"] = { 80.0, 32.2, 85 },
+					["coord"] = { 80.0, 32.2, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
@@ -2229,7 +2229,7 @@ _.Zones =
 					["sourceQuests"] = { 28299 },	-- Meet with Kranosh
 					["provider"] = { "n", 88705 },	-- Kranosh
 					["classes"] = { WARLOCK },
-					["coord"] = { 49.0, 55.2, 85 },
+					["coord"] = { 49.0, 55.2, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(65627),	-- Horns of the Left Hand Path
@@ -2272,7 +2272,7 @@ _.Zones =
 					["sourceQuests"] = { 27280 },	-- The Earthbreaker Calls
 					["provider"] = { "n", 3344 },	-- Kardris Dreamseeker
 					["classes"] = { SHAMAN },
-					["coord"] = { 39.0, 47.4, 85 },
+					["coord"] = { 39.0, 47.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(65490),	-- Battleaxe of the Speaker
@@ -2283,7 +2283,7 @@ _.Zones =
 					["sourceQuests"] = { 27298 },	-- Seek Out Master Pyreanor
 					["provider"] = { "n", 23128 },	-- Master Pyreanor
 					["classes"] = { PALADIN },
-					["coord"] = { 49.2, 71.2, 85 },
+					["coord"] = { 49.2, 71.2, ORGRIMMAR },
 					["races"] = { BLOODELF },
 					["g"] = {
 						i(65469),	-- Morningstar of the Order
@@ -2303,8 +2303,8 @@ _.Zones =
 						{ "n", 140176 },	-- Nathanos Blightcaller
 					},
 					["coords"] = {
-						{ 48.5, 70.7, 85 },
-						{ 49.0, 91.6, 85 },
+						{ 48.5, 70.7, ORGRIMMAR },
+						{ 49.0, 91.6, ORGRIMMAR },
 					},
 					["races"] = HORDE_ONLY,
 				}),
@@ -2320,13 +2320,13 @@ _.Zones =
 				q(29440, {	-- The Call of the World-Shaman
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 45244 },	-- Farseer Krogar
-					["coord"] = { 50.4, 38.2, 85 },
+					["coord"] = { 50.4, 38.2, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27437, {	-- The Dark Cleric's Bidding
 					["qg"] = 45339,	-- Dark Cleric Cecille
 					["sourceQuest"] = 27334,	-- Dark Cleric Cecille (Cata+) / Journey to Orgrimmar (SL+)
-					["coord"] = { 48.2, 72.8, 85 },
+					["coord"] = { 48.2, 72.8, ORGRIMMAR },
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
 					["g"] = {
@@ -2345,7 +2345,7 @@ _.Zones =
 				}),
 				q(7926,  {	-- The Darkmoon Faire
 					["provider"] = { "n", 55382 },	-- Darkmoon Faire Mystic Mage
-					["coord"] = { 48.0, 62.0, 85 },
+					["coord"] = { 48.0, 62.0, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						currency(515),	-- Darkmoon Prize Ticket
@@ -2359,20 +2359,20 @@ _.Zones =
 				}),
 				q(30094, {	-- The End Time
 					["provider"] = { "n", 52382 },	-- Ziradormi
-					["coord"] = { 48.8, 70.4, 85 },
+					["coord"] = { 48.8, 70.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(28805, {	-- The Eye of the Storm
 					["sourceQuests"] = { 28790 },	-- A Personal Summons
 					["provider"] = { "n", 45244 },	-- Farseer Krogar
-					["coord"] = { 50.4, 38.2, 85 },
+					["coord"] = { 50.4, 38.2, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(28461, {	-- The Golem Lord's Creations
 					["sourceQuests"] = { 28297 },	-- Meet with Ormak Grimshot
 					["provider"] = { "n", 3352 },	-- Ormak Grimshot
 					["classes"] = { HUNTER },
-					["coord"] = { 63.8, 32.8, 85 },
+					["coord"] = { 63.8, 32.8, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(65628),	-- Helm of the Great Hunter
@@ -2392,13 +2392,13 @@ _.Zones =
 				}),
 				q(31013, {	-- The Horde Way
 					["provider"] = { "n", 39605 },	-- Garrosh Hellscream
-					["coord"] = { 48.2, 70.6, 85 },
+					["coord"] = { 48.2, 70.6, ORGRIMMAR },
 					["races"] = { PANDAREN_HORDE },
 				}),
 				q(53779, {	-- The Lies of a Loa
 					["sourceQuests"] = { 53777 },	-- Where He Died
 					["provider"] = { "n", 146630 },
-					["coord"] = { 48.4, 71.4, 85 },
+					["coord"] = { 48.4, 71.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27203, {	-- The Maelstrom
@@ -2408,7 +2408,7 @@ _.Zones =
 						27722, -- Warchief's Command: Deepholm!
 					},
 					["provider"] = { "n", 45244 },	-- Farseer Krogar
-					["coord"] = { 50.4, 38.2, 85 },
+					["coord"] = { 50.4, 38.2, ORGRIMMAR },
 				}),
 				q(1018,  {	-- The New Frontier
 					["provider"] = { "n", 10880 },	-- Warcaller Gorlach
@@ -2421,8 +2421,8 @@ _.Zones =
 					-- ["provider"] = { "n", 47246 },	-- Ureda
 					["provider"] = { "n", 168626 },	-- Feenix Arcshine
 					["classes"] = { MAGE },
-					-- ["coord"] = { 48.4, 62.6, 85 },	-- Ureda / Org
-					["coord"] = { 74.6, 43.5, 85 },	-- Feenix Arcshine / Org
+					-- ["coord"] = { 48.4, 62.6, ORGRIMMAR },	-- Ureda
+					["coord"] = { 74.6, 43.5, ORGRIMMAR },	-- Feenix Arcshine
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(65626),	-- Hood of the Arcane Path
@@ -2463,7 +2463,7 @@ _.Zones =
 				q(1858,  {	-- The Shattered Hand
 					["provider"] = { "n", 6446 },	-- Therzok
 					["classes"] = { ROGUE },
-					["coord"] = { 33.4, 65.2, 85 },
+					["coord"] = { 33.4, 65.2, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
@@ -2488,7 +2488,7 @@ _.Zones =
 				q(50769, {	-- The Stormwind Extraction
 					["sourceQuests"] = { 51443 },	-- Mission Statement
 					["provider"] = { "n", 135205 },	-- Nathanos Blightcaller
-					["coord"] = { 54.4, 78.4, 85 },
+					["coord"] = { 54.4, 78.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(1146,  {	-- The Swarm Grows
@@ -2499,14 +2499,14 @@ _.Zones =
 				}),
 				q(29220, {	-- To Bambala
 					["provider"] = { "n", 52234 },	-- Bwemba
-					["coord"] = { 32.6, 68.2, 85 },
+					["coord"] = { 32.6, 68.2, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(28816, {	-- To the Depths
 					["sourceQuests"] = { 28805 },	-- The Eye of the Storm
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 45244 },	-- Farseer Krogar
-					["coord"] = { 50.4, 38.2, 85 },
+					["coord"] = { 50.4, 38.2, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27402, {	-- Token of Power
@@ -2522,7 +2522,7 @@ _.Zones =
 				q(26830, {	-- Traitor's Bait
 					["sourceQuests"] = { 26798 },	-- Saurfang Will be Pleased
 					["provider"] = { "n", 3144 },	-- Eitrigg
-					["coord"] = { 76.8, 37.4, 85 },
+					["coord"] = { 76.8, 37.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(63916),	-- Belt of Mystical Betrayal
@@ -2537,7 +2537,7 @@ _.Zones =
 					["requireSkill"] = BLACKSMITHING,
 					["sourceQuests"] = { 2752 },	-- On Iron Pauldrons
 					["provider"] = { "n", 7790 },	-- Orokk Omosh
-					["coord"] = { 76.8, 37.4, 85 },
+					["coord"] = { 76.8, 37.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(7981),	-- Plans: Barbaric Iron Boots
@@ -2596,7 +2596,7 @@ _.Zones =
 				q(26311, {	-- Unfamiliar Waters
 					["sourceQuests"] = { 28909 },	-- Sauranok Will Paint the Way
 					["provider"] = { "n", 42637 },	-- Sauranok the Mystic
-					["coord"] = { 48.0, 71.0, 85 },
+					["coord"] = { 48.0, 71.0, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(63922),	-- Awestruck Bracers
@@ -2612,20 +2612,20 @@ _.Zones =
 				q(58673, {	-- Warchief of the Horde
 					["sourceQuests"] = { 58672 },	-- A Gathering of Champions
 					["provider"] = { "n", 162190 },	-- Valeera Sanguinar
-					["coord"] = { 39.4, 79.6, 85 },
+					["coord"] = { 39.4, 79.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(60968, {	-- Warlords of Draenor: Onward to Adventure in Draenor
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
-					["coord"] = { 40.8, 79.9, 85 },
+					["coord"] = { 40.8, 79.9, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(28466, {	-- Weapons of Darkness
 					["sourceQuests"] = { 28302 },	-- Meet with Sunwalker Atohmo
 					["provider"] = { "n", 44725 },	-- Sunwalker Atohmo
 					["classes"] = { PALADIN },
-					["coord"] = { 45.2, 53.4, 85 },
+					["coord"] = { 45.2, 53.4, ORGRIMMAR },
 					["races"] = { TAUREN },
 					["g"] = {
 						i(65631),	-- Helm of the Sunwalker
@@ -2637,7 +2637,7 @@ _.Zones =
 					["sourceQuests"] = { 28303 },	-- Meet with Master Pyreanor
 					["provider"] = { "n", 23128 },	-- Master Pyreanor
 					["classes"] = { PALADIN },
-					["coord"] = { 49.2, 71.2, 85 },
+					["coord"] = { 49.2, 71.2, ORGRIMMAR },
 					["races"] = { BLOODELF },
 					["g"] = {
 						i(65632),	-- Helm of the Order
@@ -2650,7 +2650,7 @@ _.Zones =
 					["customCollect"] = "NPE",	-- New Player Experience
 					["sourceQuests"] = { 59985 },	-- An End to Beginnings (H)
 					["provider"] = { "n", 168431 },	-- Warlord Breka Grimaxe
-					["coord"] = { 52.5, 88.0, 85 },
+					["coord"] = { 52.5, 88.0, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(60346, {	-- What's Your Specialty? (Druid)
@@ -2658,7 +2658,7 @@ _.Zones =
 					["sourceQuests"] = { 60345 },	-- License to Ride
 					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
 					["classes"] = { DRUID },
-					["coord"] = { 61.5, 33.0, 85 },
+					["coord"] = { 61.5, 33.0, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(60347, {	-- What's Your Specialty? (Hunter)
@@ -2666,7 +2666,7 @@ _.Zones =
 					["sourceQuests"] = { 60345 },	-- License to Ride
 					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
 					["classes"] = { HUNTER },
-					["coord"] = { 61.5, 33.0, 85 },
+					["coord"] = { 61.5, 33.0, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(60348, {	-- What's Your Specialty? (Mage)
@@ -2674,7 +2674,7 @@ _.Zones =
 					["sourceQuests"] = { 60345 },	-- License to Ride
 					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
 					["classes"] = { MAGE },
-					["coord"] = { 61.5, 33.0, 85 },
+					["coord"] = { 61.5, 33.0, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(60349, {	-- What's Your Specialty? (Monk)
@@ -2682,7 +2682,7 @@ _.Zones =
 					["sourceQuests"] = { 60345 },	-- License to Ride
 					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
 					["classes"] = { MONK },
-					["coord"] = { 61.5, 33.0, 85 },
+					["coord"] = { 61.5, 33.0, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(60350, {	-- What's Your Specialty? (Paladin)
@@ -2690,7 +2690,7 @@ _.Zones =
 					["sourceQuests"] = { 60345 },	-- License to Ride
 					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
 					["classes"] = { PALADIN },
-					["coord"] = { 61.5, 33.0, 85 },
+					["coord"] = { 61.5, 33.0, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(60351, {	-- What's Your Specialty? (Priest)
@@ -2698,7 +2698,7 @@ _.Zones =
 					["sourceQuests"] = { 60345 },	-- License to Ride
 					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
 					["classes"] = { PRIEST },
-					["coord"] = { 61.5, 33.0, 85 },
+					["coord"] = { 61.5, 33.0, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(60352, {	-- What's Your Specialty? (Rogue)
@@ -2706,7 +2706,7 @@ _.Zones =
 					["sourceQuests"] = { 60345 },	-- License to Ride
 					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
 					["classes"] = { ROGUE },
-					["coord"] = { 61.5, 33.0, 85 },
+					["coord"] = { 61.5, 33.0, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(60353, {	-- What's Your Specialty? (Shaman)
@@ -2714,7 +2714,7 @@ _.Zones =
 					["sourceQuests"] = { 60345 },	-- License to Ride
 					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
 					["classes"] = { SHAMAN },
-					["coord"] = { 61.5, 33.0, 85 },
+					["coord"] = { 61.5, 33.0, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(60355, {	-- What's Your Specialty? (Warlock)
@@ -2722,7 +2722,7 @@ _.Zones =
 					["sourceQuests"] = { 60345 },	-- License to Ride
 					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
 					["classes"] = { WARLOCK },
-					["coord"] = { 61.5, 33.0, 85 },
+					["coord"] = { 61.5, 33.0, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(60357, {	-- What's Your Specialty? (Warrior)
@@ -2730,25 +2730,25 @@ _.Zones =
 					["sourceQuests"] = { 60345 },	-- License to Ride
 					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
 					["classes"] = { WARRIOR },
-					["coord"] = { 61.5, 33.0, 85 },
+					["coord"] = { 61.5, 33.0, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26324, {	-- Where Is My Warfleet?
 					["sourceQuests"] = { 26311 },	-- Unfamiliar Waters
 					["provider"] = { "n", 14720 },	-- High Overlord Saurfang
-					["coord"] = { 48.6, 71.0, 85 },
+					["coord"] = { 48.6, 71.0, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49982, {	-- Witness to the Wound
 					["sourceQuests"] = { 50341 },	-- A Recent Discovery
 					["provider"] = { "n", 132254 },	-- Nathanos Blightcaller
-					["coord"] = { 49.8, 75.6, 85 },
+					["coord"] = { 49.8, 75.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(7660,  {	-- Wolf Swapping - Arctic Wolf
 					["provider"] = { "n", 3362 },	-- Ogunaro Wolfrunner
-					["coord"] = { 61.0, 35.2, 85 },
+					["coord"] = { 61.0, 35.2, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
@@ -2759,7 +2759,7 @@ _.Zones =
 				}),
 				q(7661,  {	-- Wolf Swapping - Red Wolf
 					["provider"] = { "n", 3362 },	-- Ogunaro Wolfrunner
-					["coord"] = { 61.0, 35.2, 85 },
+					["coord"] = { 61.0, 35.2, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
@@ -2772,13 +2772,13 @@ _.Zones =
 					["sourceQuests"] = { 60097 },	-- Wrath of the Lich King: To Northrend!
 					["description"] = "Complete the prerequisite quest, switch to another timeline, then switch back to Wrath of the Lich King and you will get this quest.",
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
-					["coord"] = { 40.8, 79.9, 85 },
+					["coord"] = { 40.8, 79.9, ORGRIMMAR },
 					["repeatable"] = true,
 				}),
 				q(60097, {	-- Wrath of the Lich King: To Northrend!
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
-					["coord"] = { 40.8, 79.9, 85 },
+					["coord"] = { 40.8, 79.9, ORGRIMMAR },
 				}),
 				-- #if BEFORE WOD
 				q(27282, {	-- Zevrost's Behest (Cata+) / Kranosh's Behest (WOD+) / Kazak's Behest (SL+)

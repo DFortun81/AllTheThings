@@ -7,7 +7,7 @@ _.WorldEvents =
 	n(-5363, {	-- 14th Anniversary
 		["icon"] = "Interface\\Icons\\inv_misc_celebrationcake_01",
 		["maps"] = {
-			85,	-- Orgrimmar
+			ORGRIMMAR,
 			86,	-- Orgrimmar: Cleft of Shadows
 			13,	-- Stormwind City
 		},
@@ -33,7 +33,7 @@ _.WorldEvents =
 					["provider"] = { "n", 110035 },		-- Historian Jupa
 					["isDaily"] = true,
 					["coords"] = {
-						{ 36.6, 74.6, 85 },
+						{ 36.6, 74.6, ORGRIMMAR },
 					},
 					["races"] = HORDE_ONLY,
 					-- Note!! See Master List of quiz answers at the end of 12th anniversary in a better format
@@ -53,7 +53,7 @@ _.WorldEvents =
 					["provider"] = { "n", 110035 },		-- Historian Jupa
 					["isDaily"] = true,
 					["coords"] = {
-						{ 36.6, 74.6, 85 },
+						{ 36.6, 74.6, ORGRIMMAR },
 					},
 					["sourceQuests"] = {
 						47462,	-- Azuregos
@@ -80,7 +80,7 @@ _.WorldEvents =
 			})),
 			n(VENDORS, bubbleDown({ ["u"] = 31, }, {
 				n(110035, {	-- Historian Jupa [Horde]
-					["coord"] = { 36.6, 74.6, 85 },
+					["coord"] = { 36.6, 74.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(158149, {	-- Overtuned Corgi Goggles

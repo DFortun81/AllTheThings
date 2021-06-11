@@ -16,7 +16,7 @@ _.Zones =
 					["provider"] = { "n", 6566 },	-- Estelle Gendry
 					["coords"] = {
 						{ 78.2, 75.6, 90 },
-						{ 56.8, 89.8, 85 },
+						{ 56.8, 89.8, ORGRIMMAR },
 					},
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -111,7 +111,7 @@ _.Zones =
 					["provider"] = { "n", 6566 },	-- Estelle Gendry
 					["coords"] = {
 						{ 78.2, 75.6, 90 },
-						{ 56.8, 89.8, 85 },
+						{ 56.8, 89.8, ORGRIMMAR },
 					},
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -293,7 +293,7 @@ _.Zones =
 					["provider"] = { "n", 6566 },	-- Estelle Gendry
 					["coords"] = {
 						{ 78.2, 75.6, 90 },
-						{ 56.8, 89.8, 85 },
+						{ 56.8, 89.8, ORGRIMMAR },
 					},
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -497,7 +497,7 @@ _.Zones =
 					["provider"] = { "n", 6566 },	-- Estelle Gendry
 					["coords"] = {
 						{ 78.2, 75.6, 90 },
-						{ 56.8, 89.8, 85 },
+						{ 56.8, 89.8, ORGRIMMAR },
 					},
 					["races"] = HORDE_ONLY,
 					["g"] = {

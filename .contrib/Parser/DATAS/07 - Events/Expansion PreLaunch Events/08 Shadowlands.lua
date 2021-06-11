@@ -14,7 +14,7 @@ _.WorldEvents =
 						["sourceQuests"] = { 60871, 60869 },	-- With Hope in Hand (A, H)
 						["maps"] = {
 							118,	-- Icecrown (achievement pops in your capital, but all the SQs are in Icecrown so it's probably helpful to see it there
-							85,		-- Orgrimmar
+							ORGRIMMAR,
 							84,		-- Stormwind
 						},
 					}),
@@ -35,7 +35,7 @@ _.WorldEvents =
 						["u"] = NEVER_IMPLEMENTED,
 					}),
 					q(62595, {	-- The Safety of Others (H)
-						["maps"] = { 85 },
+						["maps"] = { ORGRIMMAR },
 						["lvl"] = { 50 },
 						["u"] = NEVER_IMPLEMENTED,
 					}),
@@ -49,8 +49,8 @@ _.WorldEvents =
 					}),
 					q(60669, {	-- Cause for Distraction (H)
 						["u"] = REMOVED_FROM_GAME,
-						["maps"] = { 85 },	-- Orgrimmar
-						["coord"] = { 49.2, 73.7, 85 },
+						["maps"] = { ORGRIMMAR },
+						["coord"] = { 49.2, 73.7, ORGRIMMAR },
 						["provider"] = { "n", 169928 },	-- Lor'themar Theron
 						["sourceQuest"] = 60115,	-- An Urgent Request (H)
 						["lvl"] = { 50 },
@@ -65,8 +65,8 @@ _.WorldEvents =
 					}),
 					q(60670, {	-- Return of the Crusade (H)
 						["u"] = REMOVED_FROM_GAME,
-						["maps"] = { 85 },	-- Orgrimmar
-						["coord"] = { 49.2, 73.7, 85 },
+						["maps"] = { ORGRIMMAR },
+						["coord"] = { 49.2, 73.7, ORGRIMMAR },
 						["provider"] = { "n", 169928 },	-- Lor'themar Theron
 						["sourceQuest"] = 60669,	-- Cause for Distraction (H)
 						["lvl"] = { 50 },
@@ -81,8 +81,8 @@ _.WorldEvents =
 					}),
 					q(60725, {	-- Field Reports (H)
 						["u"] = REMOVED_FROM_GAME,
-						["maps"] = { 85 },	-- Orgrimmar
-						["coord"] = { 52.9, 77.3, 85 },
+						["maps"] = { ORGRIMMAR },
+						["coord"] = { 52.9, 77.3, ORGRIMMAR },
 						["provider"] = { "n", 169878 },	-- Commander Throgg
 						["sourceQuest"] = 60670,	-- Return of the Crusade (H)
 						["lvl"] = { 50 },
@@ -129,8 +129,8 @@ _.WorldEvents =
 					}),
 					q(61488, {	-- The Banshee's Champion (H)
 						["u"] = REMOVED_FROM_GAME,
-						["maps"] = { 85 },	-- Orgrimmar
-						["coord"] = { 53.0, 77.0, 85 },
+						["maps"] = { ORGRIMMAR },
+						["coord"] = { 53.0, 77.0, ORGRIMMAR },
 						["provider"] = { "n", 172514 },	-- Light's Hope Messenger
 						["sourceQuest"] = 60761,	-- Return of the Scourge (H)
 						["lvl"] = { 50 },
@@ -145,8 +145,8 @@ _.WorldEvents =
 					}),
 					q(60727, {	-- A Message from Icecrown (H)
 						["u"] = REMOVED_FROM_GAME,
-						["maps"] = { 85 },	-- Orgrimmar
-						["coord"] = { 52.9, 77.2, 85 },
+						["maps"] = { ORGRIMMAR },
+						["coord"] = { 52.9, 77.2, ORGRIMMAR },
 						["provider"] = { "n", 169878 },	-- Commander Throgg
 						["sourceQuest"] = 60761,	-- Return of the Scourge (H)
 						["lvl"] = { 50 },
@@ -287,8 +287,8 @@ _.WorldEvents =
 					q(62163, {	-- A Message from the Justicar (H)
 						["u"] = REMOVED_FROM_GAME,
 						["isBreadcrumb"] = true,
-						["maps"] = { 85 },	-- Orgrimmar
-						["coord"] = { 52.9, 77.3, 85 },
+						["maps"] = { ORGRIMMAR },
+						["coord"] = { 52.9, 77.3, ORGRIMMAR },
 						["provider"] = { "n", 169878 },	-- Commander Throgg
 						["sourceQuest"] = 60827,	-- Advancing the Effort
 						["lvl"] = { 50 },
@@ -297,7 +297,7 @@ _.WorldEvents =
 					q(61114, {	-- A Hunger for Flesh (H)
 						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "i", 180719 },	-- Partially Digested Leather
-						["maps"] = { 85 },	-- Orgrimmar
+						["maps"] = { ORGRIMMAR },
 						["crs"] = {
 							174621,	-- Bloodthirsty Ghoul
 							171447,	-- Infectious Zombie
@@ -794,11 +794,9 @@ _.WorldEvents =
 					["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME}, {
 						-- Big list of items from multiple vendors.. feels messy doing it like this
 						n(165840, {	-- Quartermaster Lungren
-							["coord"] = { 53.1, 76.9, 85 },
+							["coord"] = { 53.1, 76.9, ORGRIMMAR },
 							["races"] = HORDE_ONLY,
-							["maps"] = {
-								85,	-- Orgrimmar
-							},
+							["maps"] = { ORGRIMMAR },
 							["g"] = bubbleDown({["cost"] = { { "c", 1754, 15 } }}, {
 								i(183552, {	-- Argent Conscript's Drape
 									["classes"] = { MAGE, PRIEST, WARLOCK },

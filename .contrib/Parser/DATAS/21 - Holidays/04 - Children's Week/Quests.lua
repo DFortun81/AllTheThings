@@ -212,11 +212,9 @@ _.Holidays =
 							29190,	-- Let's Go Fly a Kite
 							29191,	-- You Scream, I Scream...
 						},
-						["coords"] = {
-							{ 57.93, 57.63, 85 },	-- Orphan Matron Battlewail
-						},
+						["coord"] = { 57.93, 57.63, ORGRIMMAR },	-- Orphan Matron Battlewail
 						["maps"] = {
-							85,	-- Orgrimmar
+							ORGRIMMAR,
 							86,	-- Orgrimmar: The Drag
 						},
 						["races"] = HORDE_ONLY,
@@ -696,11 +694,9 @@ _.Holidays =
 						["u"] = 20,			-- Children's Week Filter
 						["provider"] = { "n", 51989 },		-- Orphan Matron Battlewall
 						["description"] = "If you are missing this quest resummon your Orc child to pick it up.",
-						["coords"] = {
-							{ 57.93, 57.63, 85 },	-- Orphan Matron Battlewail
-						},
+						["coord"] = { 57.93, 57.63, ORGRIMMAR },	-- Orphan Matron Battlewail
 						["maps"] = {
-							85,	-- Orgrimmar
+							ORGRIMMAR,
 							86,	-- Orgrimmar: The Drag
 						},
 						["races"] = HORDE_ONLY,
@@ -867,23 +863,23 @@ _.Holidays =
 							29176,	-- The Fallen Chieftain
 						},
 						["coords"] = {
-							{ 57.13, 51.12, 85 },	-- Blax Bottlerocket Path
-							{ 57.24, 52.54, 85 },	-- Blax Bottlerocket Path
-							{ 57.87, 54.21, 85 },	-- Blax Bottlerocket Path
-							{ 58.08, 51.11, 85 },	-- Blax Bottlerocket Path
-							{ 58.29, 62.41, 85 },	-- Blax Bottlerocket Path
-							{ 58.34, 62.93, 85 },	-- Blax Bottlerocket Path
-							{ 58.48, 55.55, 85 },	-- Blax Bottlerocket Path
-							{ 58.67, 62.27, 85 },	-- Blax Bottlerocket Path
-							{ 58.78, 53.61, 85 },	-- Blax Bottlerocket Path
-							{ 58.79, 50.93, 85 },	-- Blax Bottlerocket Path
-							{ 58.81, 57.61, 85 },	-- Blax Bottlerocket Path
-							{ 58.85, 58.67, 85 },	-- Blax Bottlerocket Path
-							{ 58.86, 60.16, 85 },	-- Blax Bottlerocket Path
-							{ 59.32, 51.86, 85 },	-- Blax Bottlerocket Path
+							{ 57.13, 51.12, ORGRIMMAR },	-- Blax Bottlerocket Path
+							{ 57.24, 52.54, ORGRIMMAR },	-- Blax Bottlerocket Path
+							{ 57.87, 54.21, ORGRIMMAR },	-- Blax Bottlerocket Path
+							{ 58.08, 51.11, ORGRIMMAR },	-- Blax Bottlerocket Path
+							{ 58.29, 62.41, ORGRIMMAR },	-- Blax Bottlerocket Path
+							{ 58.34, 62.93, ORGRIMMAR },	-- Blax Bottlerocket Path
+							{ 58.48, 55.55, ORGRIMMAR },	-- Blax Bottlerocket Path
+							{ 58.67, 62.27, ORGRIMMAR },	-- Blax Bottlerocket Path
+							{ 58.78, 53.61, ORGRIMMAR },	-- Blax Bottlerocket Path
+							{ 58.79, 50.93, ORGRIMMAR },	-- Blax Bottlerocket Path
+							{ 58.81, 57.61, ORGRIMMAR },	-- Blax Bottlerocket Path
+							{ 58.85, 58.67, ORGRIMMAR },	-- Blax Bottlerocket Path
+							{ 58.86, 60.16, ORGRIMMAR },	-- Blax Bottlerocket Path
+							{ 59.32, 51.86, ORGRIMMAR },	-- Blax Bottlerocket Path
 						},
 						["maps"] = {
-							85,	-- Orgrimmar
+							ORGRIMMAR,	-- Orgrimmar
 							86,	-- Orgrimmar: The Drag
 						},
 						["races"] = HORDE_ONLY,
@@ -1229,7 +1225,7 @@ _.Holidays =
 						["coord"] = { 50.71, 73.94, AZSHARA },	-- Redhound Two-Seater
 						["maps"] = {
 							AZSHARA,
-							85,	-- Orgrimmar
+							ORGRIMMAR,
 							86,	-- Orgrimmar: The Drag
 						},
 						["races"] = HORDE_ONLY,
@@ -1265,11 +1261,9 @@ _.Holidays =
 						["sourceQuests"] = {
 							172,	-- Children's Week
 						},
-						["coords"] = {
-							{ 39.68, 78.68, 85 },	-- Orgimmar Embassy
-						},
+						["coord"] = { 39.68, 78.68, ORGRIMMAR },	-- Orgimmar Embassy
 						["maps"] = {
-							85,	-- Orgrimmar
+							ORGRIMMAR,	-- Orgrimmar
 							86,	-- Orgrimmar: The Drag
 						},
 						["races"] = HORDE_ONLY,
@@ -1284,7 +1278,7 @@ _.Holidays =
 							172,	-- Children's Week
 						},
 						["maps"] = {
-							85,	-- Orgrimmar
+							ORGRIMMAR,
 							86,	-- Orgrimmar: The Drag
 							90,	-- Undercity
 						},
@@ -1418,7 +1412,7 @@ _.Holidays =
 						},
 						["maps"] = {
 							7,	-- Mulgore
-							85,	-- Orgrimmar
+							ORGRIMMAR,
 							86,	-- Orgrimmar: The Drag
 							88,	-- Thunder Bluff
 						},
@@ -1690,11 +1684,9 @@ _.Holidays =
 						["crs"] = {
 							52818,	-- Snixx Quickfreeze
 						},
-						["coords"] = {
-							{ 36.28, 86.97, 85 },	-- Snixx Quickfreeze
-						},
+						["coord"] = { 36.28, 86.97, ORGRIMMAR },	-- Snixx Quickfreeze
 						["maps"] = {
-							85,	-- Orgrimmar
+							ORGRIMMAR,
 							86,	-- Orgrimmar: The Drag
 						},
 						["races"] = HORDE_ONLY,

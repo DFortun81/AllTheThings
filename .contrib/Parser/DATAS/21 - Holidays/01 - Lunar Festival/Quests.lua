@@ -75,7 +75,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 					37,	-- Elwynn Forest
 					90,	-- Undercity
 					87,	-- Ironforge
-					85,	-- Orgrimmar
+					ORGRIMMAR,
 					88,	-- Thunder Bluff
 					89,	-- Darnassus
 					SILVERMOON_CITY,
@@ -122,7 +122,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["provider"] = { "n", 15891 },	-- Lunar Festival Herald
 				["isYearly"] = true,
 				["races"] = HORDE_ONLY,
-				["maps"] = { 85 },	-- Orgrimmar
+				["maps"] = { ORGRIMMAR },
 				["u"] = 17,	-- Lunar Festival
 			}),
 			q(8874,  {	-- The Lunar Festival (H)
@@ -150,7 +150,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 					37,	-- Elwynn Forest
 					90,	-- Undercity
 					87,	-- Ironforge
-					85,	-- Orgrimmar
+					ORGRIMMAR,
 					88,	-- Thunder Bluff
 					89,	-- Darnassus
 					SILVERMOON_CITY,
@@ -1217,8 +1217,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["description"] = "The Elder is on the central upper platform in Orgrimmar near the flight master.",
 				["provider"] = { "n", 15579 },	-- Elder Darkhorn
 				["isYearly"] = true,
-				["coord"] = { 52.1, 59.8, 85 },
-				["maps"] = { 85 },	-- Orgrimmar
+				["coord"] = { 52.1, 59.8, ORGRIMMAR },
+				["maps"] = { ORGRIMMAR },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(1, {	-- Elder Darkhorn in Orgrimmar

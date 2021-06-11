@@ -6,7 +6,7 @@ _.Holidays =
 {
 	holiday(2827082, {	-- Free T-Shirt Day
 		["maps"] = {
-			85,	-- Orgrimmar
+			ORGRIMMAR,
 			84,	-- Stormwind
 		},
 		["u"] = 22,	-- Micro-Holiday Filter

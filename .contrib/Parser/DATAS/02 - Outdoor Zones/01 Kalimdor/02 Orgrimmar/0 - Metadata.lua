@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(85, {	-- Orgrimmar
+		m(ORGRIMMAR, {
 			["description"] = "Orgrimmar is the capital city of the Horde, with large settlements of trolls, orcs, tauren, and goblins.",
 			["icon"] = "Interface\\Icons\\Inv_misc_tournaments_symbol_orc",
 			["isRaid"] = true,

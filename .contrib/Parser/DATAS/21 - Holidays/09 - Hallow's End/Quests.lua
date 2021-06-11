@@ -108,7 +108,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 					NORTHERN_BARRENS,
 					71,		-- Tanaris
 					83,		-- Winterspring
-					85,		-- Orgrimmar
+					ORGRIMMAR,
 					88,		-- Thunder Bluff
 					90,		-- Undercity
 					EVERSONG_WOODS,
@@ -1312,9 +1312,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12366, {	-- Candy Bucket — Orgrimmar, Valley of Strength, Horde
 				["isYearly"] = true,
-				["coord"] = { 53.8, 78.8, 85 },
+				["coord"] = { 53.8, 78.8, ORGRIMMAR },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 85 },	-- Orgrimmar
+				["maps"] = { ORGRIMMAR },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -2132,7 +2132,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["sourceQuests"] = { 29415 },	-- Missing Heirlooms (Horde)
 				["provider"] = { "n", 54142 },	-- Hired Courier
 				["races"] = HORDE_ONLY,
-				["maps"] = { 85 },	-- Orgrimmar
+				["maps"] = { ORGRIMMAR },
 			}),
 			q(11440, {	-- Fire Brigade Practice (Azuremyst Isle)
 				["sourceQuests"] = { 11356 },	-- Costumed Orphan Matron
@@ -2206,7 +2206,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["repeatable"] = true,
 				["provider"] = { "n", 6929 },	-- Innkeeper Gryshka
 				["races"] = HORDE_ONLY,
-				["maps"] = { 85 },	-- Orgrimmar
+				["maps"] = { ORGRIMMAR },
 			}),
 			q(39720, {	-- Foul Fertilizer
 				["provider"] = { "n", 96705 },	-- Orukan
@@ -2259,7 +2259,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["repeatable"] = true,
 				["provider"] = { "n", 11814 },	-- Kali Remik
 				["races"] = HORDE_ONLY,
-				["maps"] = { 85 },	-- Orgrimmar
+				["maps"] = { ORGRIMMAR },
 			}),
 			q(11357, {	-- Masked Orphan Matron
 				["providers"] = {
@@ -2275,7 +2275,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 					NORTHERN_BARRENS,
 					71,		-- Tanaris
 					83,		-- Winterspring
-					85,		-- Orgrimmar
+					ORGRIMMAR,
 					88,		-- Thunder Bluff
 					90,		-- Undercity
 					EVERSONG_WOODS,
@@ -2297,7 +2297,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["sourceQuests"] = { 29431 },	-- A Friend in Need (Horde)
 				["provider"] = { "n", 54141 },	-- Edgar Goodwin
 				["races"] = HORDE_ONLY,
-				["maps"] = { 85 },	-- Orgrimmar
+				["maps"] = { ORGRIMMAR },
 			}),
 			q(39719, {	-- Mutiny on the Boneship
 				["provider"] = { "n", 96705 },	-- Orukan
@@ -2322,7 +2322,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["sourceQuests"] = { 29416 },	-- Fencing the Goods (Horde)
 				["provider"] = { "n", 44866 },	-- Auctioneer Drezmit
 				["races"] = HORDE_ONLY,
-				["maps"] = { 85 },	-- Orgrimmar
+				["maps"] = { ORGRIMMAR },
 			}),
 			q(39716, {	-- Smashing Squashlings
 				["provider"] = { "n", 96705 },	-- Orukan
@@ -2451,7 +2451,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["sourceQuests"] = { 29425 },	-- Shopping Around (Horde)
 				["provider"] = { "n", 54146 },	-- Delian Sunshade
 				["races"] = HORDE_ONLY,
-				["maps"] = { 85 },	-- Orgrimmar
+				["maps"] = { ORGRIMMAR },
 			}),
 			q(29403, {	-- The Collector's Agent (Alliance)
 				["sourceQuests"] = { 29402 },	-- Taking Precautions (Alliance)
@@ -2463,7 +2463,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["sourceQuests"] = { 29426 },	-- Taking Precautions (HORDE)
 				["provider"] = { "n", 54146 },	-- Delian Sunshade
 				["races"] = HORDE_ONLY,
-				["maps"] = { 85 },	-- Orgrimmar
+				["maps"] = { ORGRIMMAR },
 			}),
 			q(29413, {	-- The Creepy Crate (Alliance)
 				["sourceQuests"] = { 29411 },	-- What Now? (Alliance)
@@ -2478,7 +2478,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["sourceQuests"] = { 29428 },	-- What Now? (Horde)
 				["provider"] = { "o", 209095 },	-- Edgar's Crate
 				["races"] = HORDE_ONLY,
-				["maps"] = { 85 },	-- Orgrimmar
+				["maps"] = { ORGRIMMAR },
 				["g"] = {
 					i(71076),	-- Creepy Crate (Pet)
 				},
@@ -2571,7 +2571,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["sourceQuests"] = { 29427 },	-- The Collector's Agent (Horde)
 				["provider"] = { "o", 209094 },	-- Stolen Crate
 				["races"] = HORDE_ONLY,
-				["maps"] = { 85 },	-- Orgrimmar
+				["maps"] = { ORGRIMMAR },
 			}),
 		}),
 	}),

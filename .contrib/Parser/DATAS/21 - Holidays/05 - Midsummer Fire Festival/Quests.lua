@@ -45,7 +45,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["isYearly"] = true,
 				["races"] = HORDE_ONLY,
 				["maps"] = {
-					85,		-- Orgrimmar
+					ORGRIMMAR,
 					88,		-- Thunder Bluff
 					90,		-- Undercity
 					SILVERMOON_CITY,
@@ -1777,7 +1777,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["provider"] = { "n", 16818 },	-- Festival Talespinner
 				["isYearly"] = true,
 				["coords"] = {
-					{ 47.8, 38.4, 85 },		-- Orgrimmar
+					{ 47.8, 38.4, ORGRIMMAR },
 					{ 21.4, 27.8, 88 },		-- Thunder Bluff
 					{ 67.4, 8.00, 90 },		-- Undercity
 					{ 70.0, 42.8, SILVERMOON_CITY },
@@ -1785,7 +1785,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				},
 				["races"] = HORDE_ONLY,
 				["maps"] = {
-					85,		-- Orgrimmar
+					ORGRIMMAR,
 					88,		-- Thunder Bluff
 					90,		-- Undercity
 					SILVERMOON_CITY,
@@ -1849,14 +1849,14 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["provider"] = { "n", 26113 },	-- Master Flame Eater
 				["isDaily"] = true,
 				["coords"] = {
-					{ 46.6, 37.2, 85 },		-- Orgrimmar
+					{ 46.6, 37.2, ORGRIMMAR },
 					{ 21.2, 26.2, 88 },		-- Thunder Bluff
 					{ 68.6, 8.00, 90 },		-- Undercity
 					{ 69.6, 42.4, SILVERMOON_CITY },
 				},
 				["races"] = HORDE_ONLY,
 				["maps"] = {
-					85,		-- Orgrimmar
+					ORGRIMMAR,
 					88,		-- Thunder Bluff
 					90,		-- Undercity
 					SILVERMOON_CITY,
@@ -1885,14 +1885,14 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["provider"] = { "n", 26113 },	-- Master Flame Eater
 				["isDaily"] = true,
 				["coords"] = {
-					{ 46.6, 37.2, 85 },		-- Orgrimmar
+					{ 46.6, 37.2, ORGRIMMAR },
 					{ 21.2, 26.2, 88 },		-- Thunder Bluff
 					{ 68.6, 8.00, 90 },		-- Undercity
 					{ 69.6, 42.4, SILVERMOON_CITY },
 				},
 				["races"] = HORDE_ONLY,
 				["maps"] = {
-					85,		-- Orgrimmar
+					ORGRIMMAR,
 					88,		-- Thunder Bluff
 					90,		-- Undercity
 					SILVERMOON_CITY,
@@ -1987,7 +1987,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(9331,  {	-- Stealing Ironforge's Flame
 				["isYearly"] = true,
 				["provider"] = { "o", 181333 },	-- Flame of Ironforge
-			--	["itemID"] = 23183,	-- Flame of Ironforge
+				--["itemID"] = 23183,	-- Flame of Ironforge
 				["coord"] = { 65.2, 24.7, 87 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_flameshock",
@@ -1996,16 +1996,16 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(9324,  {	-- Stealing Orgrimmar's Flame
 				["isYearly"] = true,
 				["provider"] = { "o", 181336 },	-- Flame of Orgrimmar
-			--	["itemID"] = 23179,	-- Flame of Orgrimmar
-				["coord"] = { 46.5, 37.6, 85 },
+				--["itemID"] = 23179,	-- Flame of Orgrimmar
+				["coord"] = { 46.5, 37.6, ORGRIMMAR },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_flameshock",
-				["maps"] = { 85 },	-- Orgrimmar
+				["maps"] = { ORGRIMMAR },
 			}),
 			q(9330,  {	-- Stealing Stormwind's Flame
 				["isYearly"] = true,
 				["provider"] = { "o", 181332 },	-- Flame of
-			--	["itemID"] = 23182,	-- Flame of Stormwind
+				--["itemID"] = 23182,	-- Flame of Stormwind
 				["coord"] = { 49.8, 72.9, 84 },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_flameshock",
@@ -2014,7 +2014,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(9325,  {	-- Stealing Thunder Bluff's Flame
 				["isYearly"] = true,
 				["provider"] = { "o", 181337 },	-- Flame of
-			--	["itemID"] = 23180,	-- Flame of Thunder Bluff
+				--["itemID"] = 23180,	-- Flame of Thunder Bluff
 				["coord"] = { 21.9, 27.3, 88 },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_flameshock",
@@ -2032,7 +2032,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11935, {	-- Stealing Silvermoon's Flame
 				["isYearly"] = true,
 				["provider"] = { "o", 188129 },	-- Flame of
-			--	["itemID"] = 35568,	-- Flame of Silvermoon
+				--["itemID"] = 35568,	-- Flame of Silvermoon
 				["coord"] = { 69.7, 42.7, SILVERMOON_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_flameshock",
@@ -2044,7 +2044,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["isDaily"] = true,
 				["coords"] = {
 					{ 49.4, 72.0, 84 },		-- Stormwind City
-					{ 47.2, 37.6, 85 },		-- Orgrimmar
+					{ 47.2, 37.6, ORGRIMMAR },
 					{ 64.8, 27.4, 87 },		-- Ironforge
 					{ 21.4, 24.4, 88 },		-- Thunder Bluff
 					{ 62.2, 49.2, 89 },		-- Darnassus
@@ -2055,7 +2055,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				},
 				["maps"] = {
 					84,		-- Stormwind City
-					85,		-- Orgrimmar
+					ORGRIMMAR,
 					87,		-- Ironforge
 					88,		-- Thunder Bluff
 					89,		-- Darnassus
@@ -2071,7 +2071,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["isDaily"] = true,
 				["coords"] = {
 					{ 49.4, 72.0, 84 },		-- Stormwind City
-					{ 47.2, 37.6, 85 },		-- Orgrimmar
+					{ 47.2, 37.6, ORGRIMMAR },
 					{ 64.8, 27.4, 87 },		-- Ironforge
 					{ 21.4, 24.4, 88 },		-- Thunder Bluff
 					{ 62.2, 49.2, 89 },		-- Darnassus
@@ -2082,7 +2082,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				},
 				["maps"] = {
 					84,		-- Stormwind City
-					85,		-- Orgrimmar
+					ORGRIMMAR,
 					87,		-- Ironforge
 					88,		-- Thunder Bluff
 					89,		-- Darnassus
@@ -2098,7 +2098,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["isDaily"] = true,
 				["coords"] = {
 					{ 49.4, 72.0, 84 },		-- Stormwind City
-					{ 47.2, 37.6, 85 },		-- Orgrimmar
+					{ 47.2, 37.6, ORGRIMMAR },
 					{ 64.8, 27.4, 87 },		-- Ironforge
 					{ 21.4, 24.4, 88 },		-- Thunder Bluff
 					{ 62.2, 49.2, 89 },		-- Darnassus
@@ -2109,7 +2109,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				},
 				["maps"] = {
 					84,		-- Stormwind City
-					85,		-- Orgrimmar
+					ORGRIMMAR,
 					87,		-- Ironforge
 					88,		-- Thunder Bluff
 					89,		-- Darnassus
@@ -2125,7 +2125,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["isDaily"] = true,
 				["coords"] = {
 					{ 49.4, 72.0, 84 },		-- Stormwind City
-					{ 47.2, 37.6, 85 },		-- Orgrimmar
+					{ 47.2, 37.6, ORGRIMMAR },
 					{ 64.8, 27.4, 87 },		-- Ironforge
 					{ 21.4, 24.4, 88 },		-- Thunder Bluff
 					{ 62.2, 49.2, 89 },		-- Darnassus
@@ -2136,7 +2136,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				},
 				["maps"] = {
 					84,		-- Stormwind City
-					85,		-- Orgrimmar
+					ORGRIMMAR,
 					87,		-- Ironforge
 					88,		-- Thunder Bluff
 					89,		-- Darnassus
@@ -2152,7 +2152,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["isDaily"] = true,
 				["coords"] = {
 					{ 49.4, 72.0, 84 },		-- Stormwind City
-					{ 47.2, 37.6, 85 },		-- Orgrimmar
+					{ 47.2, 37.6, ORGRIMMAR },
 					{ 64.8, 27.4, 87 },		-- Ironforge
 					{ 21.4, 24.4, 88 },		-- Thunder Bluff
 					{ 62.2, 49.2, 89 },		-- Darnassus
@@ -2163,7 +2163,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				},
 				["maps"] = {
 					84,		-- Stormwind City
-					85,		-- Orgrimmar
+					ORGRIMMAR,
 					87,		-- Ironforge
 					88,		-- Thunder Bluff
 					89,		-- Darnassus
@@ -2179,7 +2179,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["isDaily"] = true,
 				["coords"] = {
 					{ 49.4, 72.0, 84 },		-- Stormwind City
-					{ 47.2, 37.6, 85 },		-- Orgrimmar
+					{ 47.2, 37.6, ORGRIMMAR },
 					{ 64.8, 27.4, 87 },		-- Ironforge
 					{ 21.4, 24.4, 88 },		-- Thunder Bluff
 					{ 62.2, 49.2, 89 },		-- Darnassus
@@ -2190,7 +2190,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				},
 				["maps"] = {
 					84,		-- Stormwind City
-					85,		-- Orgrimmar
+					ORGRIMMAR,
 					87,		-- Ironforge
 					88,		-- Thunder Bluff
 					89,		-- Darnassus
@@ -2251,7 +2251,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					NORTHERN_BARRENS,
 					71,		-- Tanaris
 					83,		-- Winterspring
-					85,		-- Orgrimmar
+					ORGRIMMAR,
 					88,		-- Thunder Bluff
 					90,		-- Undercity
 					EVERSONG_WOODS,
@@ -2284,14 +2284,14 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["sourceQuests"] = { 11922 },	-- Torch Tossing
 				["provider"] = { "n", 26113 },	-- Master Flame Eater
 				["coords"] = {
-					{ 46.6, 37.2, 85 },		-- Orgrimmar
+					{ 46.6, 37.2, ORGRIMMAR },
 					{ 21.2, 26.2, 88 },		-- Thunder Bluff
 					{ 68.6, 8.00, 90 },		-- Undercity
 					{ 69.6, 42.4, SILVERMOON_CITY },
 				},
 				["races"] = HORDE_ONLY,
 				["maps"] = {
-					85,		-- Orgrimmar
+					ORGRIMMAR,
 					88,		-- Thunder Bluff
 					90,		-- Undercity
 					SILVERMOON_CITY,
@@ -2316,14 +2316,14 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11922, {	-- Torch Tossing (H)
 				["provider"] = { "n", 26113 },	-- Master Flame Eater
 				["coords"] = {
-					{ 46.6, 37.2, 85 },		-- Orgrimmar
+					{ 46.6, 37.2, ORGRIMMAR },
 					{ 21.2, 26.2, 88 },		-- Thunder Bluff
 					{ 68.6, 8.00, 90 },		-- Undercity
 					{ 69.6, 42.4, SILVERMOON_CITY },
 				},
 				["races"] = HORDE_ONLY,
 				["maps"] = {
-					85,		-- Orgrimmar
+					ORGRIMMAR,
 					88,		-- Thunder Bluff
 					90,		-- Undercity
 					SILVERMOON_CITY,
@@ -2333,7 +2333,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["provider"] = { "n", 26221 },	-- Earthen Ring Elder
 				["coords"] = {
 					{ 49.4, 72.0, 84 },		-- Stormwind City
-					{ 47.2, 37.6, 85 },		-- Orgrimmar
+					{ 47.2, 37.6, ORGRIMMAR },
 					{ 64.8, 27.4, 87 },		-- Ironforge
 					{ 21.4, 24.4, 88 },		-- Thunder Bluff
 					{ 62.2, 49.2, 89 },		-- Darnassus
@@ -2344,7 +2344,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				},
 				["maps"] = {
 					84,		-- Stormwind City
-					85,		-- Orgrimmar
+					ORGRIMMAR,
 					87,		-- Ironforge
 					88,		-- Thunder Bluff
 					89,		-- Darnassus
