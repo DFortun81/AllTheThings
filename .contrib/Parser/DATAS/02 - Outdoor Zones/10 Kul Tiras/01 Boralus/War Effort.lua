@@ -634,9 +634,9 @@ _.Zones =
 							},
 						}),
 						q(53175, {	-- The Warfront Looms
-							["lvl"] = 120,
 							["races"] = ALLIANCE_ONLY,
 							["isBreadcrumb"] = true,
+							["DisablePartySync"] = true,
 						}),
 						q(53194, {	-- To The Front
 							["provider"] = { "n", 142721 },		-- Ralston Karn

@@ -507,7 +507,7 @@ _.ExpansionFeatures =
 						q(52451, {	-- Uniting Zandalar		(Also grants credit for the two Alliance Quests "Uniting Kul Tiras" (ID 51918 & ID 52450))
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 							["coord"] = { 58.4, 62.6, 1163 },
-							["description"] = "This version of the quest is offered to 120 alts that share an account with a character that already completed the original 'Uniting Zandalar'.	All characters get credit for both quests.",
+							["description"] = "This version of the quest is offered to alts that share an account with a character that already completed the original 'Uniting Zandalar'. All characters get credit for both quests.",
 							["races"] = HORDE_ONLY,
 							["lvl"] = 120,
 							["g"] = {

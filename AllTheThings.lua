@@ -19400,6 +19400,9 @@ app.events.VARIABLES_LOADED = function()
 			53055,	-- Pushing Our Influence (BFA Horde PreQ for 1st Foothold)
 			53056,	-- Pushing Our Influence (BFA Alliance PreQ for 1st Foothold)
 			
+			53207,	-- The Warfront Looms (BFA Horde Warfront Breadcrumb)
+			53175,	-- The Warfront Looms (BFA Alliance Warfront Breadcrumb)
+			
 			-- Shard Labor
 			61229,	-- forging the Crystal Mallet of the Heralds
 			61191,	-- ringing the Vesper of the Silver Wind
@@ -19447,6 +19450,10 @@ app.events.VARIABLES_LOADED = function()
 			{
 				53055, 	-- Pushing Our Influence (BFA Horde PreQ for 1st Foothold)
 				53056,	-- Pushing Our Influence (BFA Alliance PreQ for 1st Foothold)
+			},
+			{
+				53207,	-- The Warfront Looms (BFA Horde Warfront Breadcrumb)
+				53175,	-- The Warfront Looms (BFA Alliance Warfront Breadcrumb)
 			},
 		}) do
 			for _,questID in ipairs(questGroup) do

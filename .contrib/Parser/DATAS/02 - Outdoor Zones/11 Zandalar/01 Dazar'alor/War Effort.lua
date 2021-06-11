@@ -648,6 +648,8 @@ _.Zones =
 							["provider"] = { "n", 138949 },	-- Throk <Recruitment Officer>
 							["coord"] = { 52.97, 94.35, 1165 },
 							["sourceQuests"] = { 52451 },	-- Uniting Zandalar
+							["isBreadcrumb"] = true,
+							["DisablePartySync"] = true,
 							["description"] = "Automatically granted upon completing Uniting Zandalar to unlock World Quests.  If it doesn't pop up, relog.  I had to relog twice to receive this quest.",
 							["races"] = HORDE_ONLY,
 						}),
