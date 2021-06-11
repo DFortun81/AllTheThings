@@ -97,6 +97,7 @@ _.Zones =
 						o(369296, {	-- Shardhide Stash
 							["coords"] = {
 								{ 45.8, 30.1, KORTHIA },	-- Shardhide Stash
+								{ 46.7, 30.6, KORTHIA },	-- Shardhide Stash
 								{ 47.4, 26.2, KORTHIA },	-- Shardhide Stash
 								{ 48.1, 33.2, KORTHIA },	-- Shardhide Stash
 								{ 49.1, 30.1, KORTHIA },	-- Shardhide Stash

@@ -9,7 +9,7 @@ _.Zones =
 			n(RARES, {
 				n(COMMON_BOSS_DROPS, {
 					i(184395, {	-- Fallen Adventurer's Cache
-						["description"] = "Drops from numerous rares, elites, and named mobs in The Maw.",
+						["description"] = "Drops from numerous rares, elites, and named mobs in The Maw and Korthia.",
 						["crs"] = {
 							169102,	-- Agonix
 							170301,	-- Apholeias, Herald of Loss
@@ -34,6 +34,9 @@ _.Zones =
 							156203,	-- Stygian Incinerator
 							170302,	-- Talaporas, Herald of Pain
 							172862,	-- Yero the Skittish
+						--	Korthia
+							179931,	-- Relic Breaker Krelva
+							179985,	-- Stygian Stonecrusher
 						},
 						["g"] = {
 							i(183409),	-- Decaying Mawrat
