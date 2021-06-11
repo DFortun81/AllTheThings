@@ -20,7 +20,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 					NORTHERN_BARRENS,
 					37,		-- Elwynn Forest
 					TANARIS,
-					83,		-- Winterspring
+					WINTERSPRING,
 					84,		-- Stormwind City
 					87,		-- Ironforge
 					89,		-- Darnassus
@@ -188,7 +188,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 				["maps"] = {
 					NORTHERN_BARRENS,
 					TANARIS,
-					83,		-- Winterspring
+					WINTERSPRING,
 					ORGRIMMAR,
 					THUNDER_BLUFF,
 					90,		-- Undercity

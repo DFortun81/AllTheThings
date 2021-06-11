@@ -81,7 +81,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["maps"] = {
 					NORTHERN_BARRENS,
 					TANARIS,
-					83,		-- Winterspring
+					WINTERSPRING,
 					87,		-- Ironforge
 					84,		-- Stormwind City
 					89,		-- Darnassus
@@ -107,7 +107,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["maps"] = {
 					NORTHERN_BARRENS,
 					TANARIS,
-					83,		-- Winterspring
+					WINTERSPRING,
 					ORGRIMMAR,
 					THUNDER_BLUFF,
 					90,		-- Undercity
@@ -1965,8 +1965,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12400, {	-- Candy Bucket — Winterspring, Everlook, neutral
 				["isYearly"] = true,
-				["coord"] = { 59.8, 51.2, 83 },
-				["maps"] = { 83 },	-- Winterspring
+				["coord"] = { 59.8, 51.2, WINTERSPRING },
+				["maps"] = { WINTERSPRING },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -2083,7 +2083,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["maps"] = {
 					NORTHERN_BARRENS,
 					TANARIS,
-					83,		-- Winterspring
+					WINTERSPRING,
 					87,		-- Ironforge
 					84,		-- Stormwind City
 					89,		-- Darnassus
@@ -2274,7 +2274,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["maps"] = {
 					NORTHERN_BARRENS,
 					TANARIS,
-					83,		-- Winterspring
+					WINTERSPRING,
 					ORGRIMMAR,
 					THUNDER_BLUFF,
 					90,		-- Undercity

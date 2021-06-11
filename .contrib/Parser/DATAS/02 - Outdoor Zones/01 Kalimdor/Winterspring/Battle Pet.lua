@@ -35,14 +35,14 @@ _.Zones =
 				}),
 				q(31897, {	-- Grand Master Trixxy
 					["provider"] = { "n", 66466 },	-- Grand Master Trixxy
-					["coord"] = { 65.6, 64.5, 83 },
+					["coord"] = { 65.6, 64.5, WINTERSPRING },
 					["groups"] = {
 						i(89125),	-- Sack of Pet Supplies
 					},
 				}),
 				q(31909, {	-- Grand Master Trixxy
 					["provider"] = { "n", 66466 },	-- Grand Master Trixxy
-					["coord"] = { 65.6, 64.5, 83 },
+					["coord"] = { 65.6, 64.5, WINTERSPRING },
 					["isDaily"] = true,
 					["groups"] = {
 						i(89125),	-- Sack of Pet Supplies
@@ -50,14 +50,14 @@ _.Zones =
 				}),
 				q(31977, {	-- The Returning Champion
 					["provider"] = { "n", 66466 },	-- Stone Cold Trixxy
-					["coord"] = { 65.6, 64.4, 83 },
+					["coord"] = { 65.6, 64.4, WINTERSPRING },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["altQuests"] = { 31980 },	-- The Returning Champion (Deadwind Pass)
 				}),
 				q(31975, {	-- The Returning Champion
 					["provider"] = { "n", 66466 },	-- Stone Cold Trixxy
-					["coord"] = { 65.6, 64.4, 83 },
+					["coord"] = { 65.6, 64.4, WINTERSPRING },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["altQuests"] = { 31976 },	-- The Returning Champion (Deadwind Pass)

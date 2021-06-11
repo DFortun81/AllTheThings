@@ -444,10 +444,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11803, {	-- Desecrate this Fire! — Winterspring
 				["isYearly"] = true,
 				["provider"] = { "o", 187953 },	-- Horde Bonfire
-				["coord"] = { 58.2, 47.3, 83 },
+				["coord"] = { 58.2, 47.3, WINTERSPRING },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
-				["maps"] = { 83 },	-- Winterspring
+				["maps"] = { WINTERSPRING },
 			}),
 			q(11787, {	-- Desecrate this Fire! — Zangarmarsh
 				["isYearly"] = true,
@@ -878,10 +878,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11763, {	-- Desecrate this Fire! — Winterspring
 				["isYearly"] = true,
 				["provider"] = { "o", 187946 },	-- Alliance Bonfire
-				["coord"] = { 61.3, 47.1, 83 },
+				["coord"] = { 61.3, 47.1, WINTERSPRING },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-				["maps"] = { 83 },	-- Winterspring
+				["maps"] = { WINTERSPRING },
 			}),
 			q(11758, {	-- Desecrate this Fire! — Zangarmarsh
 				["isYearly"] = true,
@@ -1289,9 +1289,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11834, {	-- Honor the Flame — Winterspring
 				["provider"] = { "n", 25917 },	-- Winterspring Flame Warden
 				["isYearly"] = true,
-				["coord"] = { 62.0, 35.0, 83 },
+				["coord"] = { 62.0, 35.0, WINTERSPRING },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 83 },	-- Winterspring
+				["maps"] = { WINTERSPRING },
 			}),
 			q(11829, {	-- Honor the Flame — Zangarmarsh
 				["provider"] = { "n", 25912 },	-- Zangarmarsh Flame Warden
@@ -1662,9 +1662,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11839, {	-- Honor the Flame — Winterspring
 				["provider"] = { "n", 25922 },	-- Winterspring Flame Keeper
 				["isYearly"] = true,
-				["coord"] = { 58.1, 47.5, 83 },
+				["coord"] = { 58.1, 47.5, WINTERSPRING },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 83 },	-- Winterspring
+				["maps"] = { WINTERSPRING },
 			}),
 			q(11863, {	-- Honor the Flame — Zangarmarsh
 				["provider"] = { "n", 25947 },	-- Zangarmarsh Flame Keeper
@@ -1924,7 +1924,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					66,		-- Desolace
 					DUSTWALLOW_MARSH,
 					TANARIS,
-					83,		-- Winterspring
+					WINTERSPRING,
 					AZUREMYST_ISLE,
 					HELLFIRE_PENINSULA,
 					ZANGARMARSH,
@@ -1957,7 +1957,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					TANARIS,
 					AZSHARA,
 					UNGORO_CRATER,
-					83,		-- Winterspring
+					WINTERSPRING,
 					EVERSONG_WOODS,
 					HELLFIRE_PENINSULA,
 					ZANGARMARSH,
@@ -2225,7 +2225,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["maps"] = {
 					NORTHERN_BARRENS,
 					TANARIS,
-					83,		-- Winterspring
+					WINTERSPRING,
 					84,		-- Stormwind City
 					87,		-- Ironforge
 					89,		-- Darnassus
@@ -2250,7 +2250,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["maps"] = {
 					NORTHERN_BARRENS,
 					TANARIS,
-					83,		-- Winterspring
+					WINTERSPRING,
 					ORGRIMMAR,
 					THUNDER_BLUFF,
 					90,		-- Undercity

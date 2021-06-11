@@ -620,8 +620,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { UNGORO_CRATER },
 										}),
 										crit(27, {	-- Winterspring, Everlook
-											["coord"] = { 59.8, 51.2, 83 },
-											["maps"] = { 83 },	-- Winterspring
+											["coord"] = { 59.8, 51.2, WINTERSPRING },
+											["maps"] = { WINTERSPRING },
 										}),
 									},
 								}),
@@ -745,8 +745,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { UNGORO_CRATER },
 										}),
 										crit(30, {	-- Winterspring, Everlook
-											["coord"] = { 59.8, 51.2, 83 },
-											["maps"] = { 83 },	-- Winterspring
+											["coord"] = { 59.8, 51.2, WINTERSPRING },
+											["maps"] = { WINTERSPRING },
 										}),
 									},
 								}),

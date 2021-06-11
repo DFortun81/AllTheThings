@@ -519,8 +519,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8726,  {	-- Brightspear the Elder
 				["provider"] = { "n", 15606 },	-- Elder Brightspear
 				["isYearly"] = true,
-				["coord"] = { 53.2, 56.7, 83 },
-				["maps"] = { 83 },	-- Winterspring
+				["coord"] = { 53.2, 56.7, WINTERSPRING },
+				["maps"] = { WINTERSPRING },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(18, {	-- Elder Brightspear in Winterspring
@@ -701,8 +701,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8672,  {	-- Stonespire the Elder
 				["provider"] = { "n", 15574 },	-- Elder Stonespire
 				["isYearly"] = true,
-				["coord"] = { 59.9, 49.9, 83 },
-				["maps"] = { 83 },	-- Winterspring
+				["coord"] = { 59.9, 49.9, WINTERSPRING },
+				["maps"] = { WINTERSPRING },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(19, {	-- Elder Stonespire in Everlook

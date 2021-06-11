@@ -61,7 +61,7 @@ _.Achievements =
 				crit(4,  {	-- Blingtron 4000 (Celestial Tournament)
 					["coord"] = { 34.8, 59.6, 554 },
 				}),
-				crit(5,  {	-- Bloodknight Antari (Shadowmoon Valley, Outland)
+				crit(5,  {	-- Bloodknight Antari (Outland)
 					["coord"] = { 30.6, 41.8, SHADOWMOON_VALLEY },
 				}),
 				crit(6,  {	-- Bordin Steadyfist (Deepholm)
@@ -121,16 +121,16 @@ _.Achievements =
 				crit(24, {	-- Mo'ruk (Krasarang Wilds)
 					["coord"] = { 65.0, 42.7, 418 },
 				}),
-				crit(25, {	-- Morulu The Elder (Shattrath City)
+				crit(25, {	-- Morulu The Elder
 					["coord"] = { 59.0, 70.0, SHATTRATH_CITY },
 				}),
-				crit(26, {	-- Narrok (Nagrand, Outland)
+				crit(26, {	-- Narrok (Outland)
 					["coord"] = { 61.0, 49.4, NAGRAND },
 				}),
 				crit(27, {	-- Nearly Headless Jacob (Crystalsong Forest)
 					["coord"] = { 50.2, 59.0, 127 },
 				}),
-				crit(28, {	-- Nicki Tinytech (Hellfire Peninsula)
+				crit(28, {	-- Nicki Tinytech
 					["coord"] = { 64.4, 49.2, HELLFIRE_PENINSULA },
 				}),
 				crit(29, {	-- Obalis (Uldum)
@@ -139,7 +139,7 @@ _.Achievements =
 				crit(30, {	-- Okrut Dragonwaste (Dragonblight)
 					["coord"] = { 59.0, 77.0, 115 },
 				}),
-				crit(31, {	-- Ras'an (Zangarmarsh)
+				crit(31, {	-- Ras'an
 					["coord"] = { 17.2, 50.6, ZANGARMARSH },
 				}),
 				crit(32, {	-- Seeker Zusshi (Townlong Steppes)
@@ -148,8 +148,8 @@ _.Achievements =
 				crit(33, {	-- Shademaster Kiryn (Celestial Tournament)
 					["coord"] = { 37.8, 57.2, 554 },
 				}),
-				crit(34, {	-- Stone Cold Trixxy (Winterspring)
-					["coord"] = { 65.6, 64.6, 83 },
+				crit(34, {	-- Stone Cold Trixxy
+					["coord"] = { 65.6, 64.6, WINTERSPRING },
 				}),
 				crit(35, {	-- Sully "The Pickle" McLeary (Celestial Tournament)
 					["coord"] = { 37.8, 57.2, 554 },

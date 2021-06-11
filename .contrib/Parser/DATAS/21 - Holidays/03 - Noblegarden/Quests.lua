@@ -89,10 +89,10 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 					{ 41.68, 74.18, 210 },	-- The Cape of Stranglethorn [Goblin]
 					{ 51.87, 42.59, THE_EXODAR },	-- Draenei
 					{ 40.77, 84.45, 120 },	-- The Storm Peaks [Goblin]
-					{ 58.75, 48.42, 83 },	-- Winterspring [Goblin]
-					{ 59.77, 49.67, 83 },	-- Winterspring [Goblin]
-					{ 59.91, 50.89, 83 },	-- Winterspring [Goblin]
-					{ 61.06, 48.84, 83 },	-- Winterspring [Goblin]
+					{ 58.75, 48.42, WINTERSPRING },	-- Goblin
+					{ 59.77, 49.67, WINTERSPRING },	-- Goblin
+					{ 59.91, 50.89, WINTERSPRING },	-- Goblin
+					{ 61.06, 48.84, WINTERSPRING },	-- Goblin
 				},
 				["maps"] = {
 					125,	-- Dalaran: Northrend
@@ -106,7 +106,7 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 					210,	-- The Cape of Stranglethorn
 					THE_EXODAR,
 					120,	-- The Storm Peaks
-					83,		-- Winterspring
+					WINTERSPRING,
 				},
 			}),
 			q(13483, {	--	Spring Gathers [Horde]
@@ -159,10 +159,10 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 					{ 40.82, 56.05, THUNDER_BLUFF },	-- Tauren
 					{ 63.22, 47.55, 90 },	-- Undercity [Forsaken]
 					{ 67.75, 39.25, 90 },	-- Undercity [Forsaken]
-					{ 58.75, 48.42, 83 },	-- Winterspring [Goblin]
-					{ 59.77, 49.67, 83 },	-- Winterspring [Goblin]
-					{ 59.91, 50.89, 83 },	-- Winterspring [Goblin]
-					{ 61.06, 48.84, 83 },	-- Winterspring [Goblin]
+					{ 58.75, 48.42, WINTERSPRING },	-- Goblin
+					{ 59.77, 49.67, WINTERSPRING },	-- Goblin
+					{ 59.91, 50.89, WINTERSPRING },	-- Goblin
+					{ 61.06, 48.84, WINTERSPRING },	-- Goblin
 				},
 				["maps"] = {
 					125,	-- Dalaran: Northrend
@@ -178,7 +178,7 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 					120,	-- The Storm Peaks
 					THUNDER_BLUFF,
 					90,		-- Undercity
-					83,		-- Winterspring
+					WINTERSPRING,
 				},
 			}),
 			q(13480, {	--	The Great Egg Hunt [Alliance]
