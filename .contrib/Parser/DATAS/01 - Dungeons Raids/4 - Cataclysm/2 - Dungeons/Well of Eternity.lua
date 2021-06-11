@@ -8,7 +8,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 		["mapID"] = 398,
 		["coords"] = {
 			{ 22.9, 64.4, CAVERNS_OF_TIME },	-- dungeon entrance
-			{ 64.7, 49.9, 71 },	-- entrance to CoT, Tanaris
+			{ 64.7, 49.9, TANARIS },	-- entrance to CoT
 		},
 		["g"] = {
 			n(QUESTS, {

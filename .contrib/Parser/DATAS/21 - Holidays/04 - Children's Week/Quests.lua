@@ -1576,11 +1576,7 @@ _.Holidays =
 							{ 39.94, 77.39, CAVERNS_OF_TIME },	-- Toy Dragon
 							{ 64.76, 50.01, CAVERNS_OF_TIME },	-- Caverns of Time Entrance
 						},
-						["maps"] = {
-							71,		-- Tanaris
-							CAVERNS_OF_TIME,
-							SHATTRATH_CITY,
-						},
+						["maps"] = {TANARIS, CAVERNS_OF_TIME, SHATTRATH_CITY },
 						["races"] = ALLIANCE_ONLY,
 						["isYearly"] = true,
 					},
@@ -1599,11 +1595,7 @@ _.Holidays =
 							{ 39.94, 77.39, CAVERNS_OF_TIME },	-- Toy Dragon
 							{ 64.76, 50.01, CAVERNS_OF_TIME },	-- Caverns of Time Entrance
 						},
-						["maps"] = {
-							71,		-- Tanaris
-							CAVERNS_OF_TIME,
-							SHATTRATH_CITY,
-						},
+						["maps"] = { TANARIS, CAVERNS_OF_TIME, SHATTRATH_CITY },
 						["races"] = HORDE_ONLY,
 						["isYearly"] = true,
 					},

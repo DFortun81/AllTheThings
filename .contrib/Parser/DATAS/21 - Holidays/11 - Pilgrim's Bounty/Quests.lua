@@ -19,7 +19,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 				["maps"] = {
 					NORTHERN_BARRENS,
 					37,		-- Elwynn Forest
-					71,		-- Tanaris
+					TANARIS,
 					83,		-- Winterspring
 					84,		-- Stormwind City
 					87,		-- Ironforge
@@ -187,7 +187,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 				["races"] = HORDE_ONLY,
 				["maps"] = {
 					NORTHERN_BARRENS,
-					71,		-- Tanaris
+					TANARIS,
 					83,		-- Winterspring
 					ORGRIMMAR,
 					88,		-- Thunder Bluff

@@ -104,7 +104,7 @@ _.Secrets =
 						["description"] = "Qty:20\n\nPurchase from Sprinkle Noggenfogger in Tanaris.",
 						["g"] = {
 							n(98844, {	-- Sprinkle Noggenfogger
-								["coord"] = { 51.2, 29.8, 71 },
+								["coord"] = { 51.2, 29.8, TANARIS },
 							}),
 						},
 					}),

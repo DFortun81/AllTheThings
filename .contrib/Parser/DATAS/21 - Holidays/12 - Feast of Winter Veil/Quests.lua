@@ -159,7 +159,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 				["maps"] = {
 					125,	-- Dalaran (Northrend) (couldn't find it in Legion)
 					27,		-- Dun Morogh
-					71,		-- Gadgetzan
+					TANARIS,	-- Gadgetzan
 					84,		-- Stormwind
 				},
 				["races"] = ALLIANCE_ONLY,
@@ -314,7 +314,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 				["maps"] = {
 					125,	-- Dalaran (Northrend) (couldn't find it in Legion)
 					27,		-- Dun Morogh
-					71,		-- Gadgetzan
+					TANARIS,	-- Gadgetzan
 					84,		-- Stormwind
 				},
 				["races"] = HORDE_ONLY,

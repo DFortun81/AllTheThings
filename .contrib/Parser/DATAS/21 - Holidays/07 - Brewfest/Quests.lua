@@ -214,7 +214,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 					["maps"] = {
 						1,	-- Durotar
 						NORTHERN_BARRENS,
-						71,	-- Tanaris
+						TANARIS,
 						83,	-- Winterspring
 						ORGRIMMAR,
 						88,	-- Thunder Bluff

@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(71, {	-- Tanaris
+		m(TANARIS, {
 			n(ACHIEVEMENTS, {
 				ach(4935, {	-- Tanaris Quests
 					crit(1, {	-- Southsea Pirates

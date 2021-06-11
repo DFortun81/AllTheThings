@@ -80,10 +80,10 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 					{ 63.77, 32.04, 84 },	-- Stormwind City [Human]
 					{ 66.96, 72.52, 84 },	-- Stormwind City [Human]
 					{ 73.88, 55.88, 84 },	-- Stormwind City [Human]
-					{ 50.92, 30.09, 71 },	-- Tanaris [Goblin]
-					{ 51.51, 26.68, 71 },	-- Tanaris [Goblin]
-					{ 51.99, 29.36, 71 },	-- Tanaris [Goblin]
-					{ 52.24, 28.56, 71 },	-- Tanaris [Goblin]
+					{ 50.92, 30.09, TANARIS },	-- Goblin
+					{ 51.51, 26.68, TANARIS },	-- Goblin
+					{ 51.99, 29.36, TANARIS },	-- Goblin
+					{ 52.24, 28.56, TANARIS },	-- Goblin
 					{ 40.53, 73.11, 210 },	-- The Cape of Stranglethorn [Goblin]
 					{ 40.54, 68.28, 210 },	-- The Cape of Stranglethorn [Goblin]
 					{ 41.68, 74.18, 210 },	-- The Cape of Stranglethorn [Goblin]
@@ -102,7 +102,7 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 					NETHERSTORM,
 					NORTHERN_BARRENS,
 					SHATTRATH_CITY,
-					71,		-- Tanaris
+					TANARIS,
 					210,	-- The Cape of Stranglethorn
 					THE_EXODAR,
 					120,	-- The Storm Peaks
@@ -148,10 +148,10 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 					{ 78.01, 57.53, SILVERMOON_CITY },	-- Blood Elf
 					{ 89.57, 49.01, SILVERMOON_CITY },	-- Blood Elf
 					{ 90.27, 57.51, SILVERMOON_CITY },	-- Blood Elf
-					{ 50.92, 30.09, 71 },	-- Tanaris [Goblin]
-					{ 51.51, 26.68, 71 },	-- Tanaris [Goblin]
-					{ 51.99, 29.36, 71 },	-- Tanaris [Goblin]
-					{ 52.24, 28.56, 71 },	-- Tanaris [Goblin]
+					{ 50.92, 30.09, TANARIS },	-- Goblin
+					{ 51.51, 26.68, TANARIS },	-- Goblin
+					{ 51.99, 29.36, TANARIS },	-- Goblin
+					{ 52.24, 28.56, TANARIS },	-- Goblin
 					{ 40.53, 73.11, 210 },	-- The Cape of Stranglethorn [Goblin]
 					{ 40.54, 68.28, 210 },	-- The Cape of Stranglethorn [Goblin]
 					{ 41.68, 74.18, 210 },	-- The Cape of Stranglethorn [Goblin]
@@ -173,7 +173,7 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 					86,		-- Orgrimmar
 					SHATTRATH_CITY,
 					SILVERMOON_CITY,
-					71,		-- Tanaris
+					TANARIS,
 					210,	-- The Cape of Stranglethorn
 					120,	-- The Storm Peaks
 					88,		-- Thunder Bluff

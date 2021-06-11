@@ -359,7 +359,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				i(163488, {	-- Weathered Pamphlet
-					["coord"] = { 52.0, 30.0, 71 },
+					["coord"] = { 52.0, 30.0, TANARIS },
 					["g"] = {
 						q(53184, {	-- Weathered Pamphlet
 							["provider"] = { "n", 132832 },	-- Jordle Flangebender

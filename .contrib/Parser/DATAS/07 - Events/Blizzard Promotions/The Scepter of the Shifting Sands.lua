@@ -86,7 +86,7 @@ _.WorldEvents =
 				q(8578, {	-- Scrying Goggles? No Problem!
 					["sourceQuest"] = 8577,	-- Stewvul, Ex-B.F.F.
 					["provider"] = { "o", 180642 },	-- Inconspicuous Crate
-					["coord"] = { 65.2, 18.6, 71 },	-- Tanaris
+					["coord"] = { 65.2, 18.6, TANARIS },
 					["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu
 					["u"] = REMOVED_FROM_GAME,
 					["lvl"] = 60,

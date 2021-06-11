@@ -161,9 +161,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { 65 },	-- Stonetalon Mountains
 									}),
 									crit(11, {	-- Tanaris
-										["coord"] = { 52.0, 29.0, 71 },
+										["coord"] = { 52.0, 29.0, TANARIS },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 71 },	-- Tanaris
+										["maps"] = { TANARIS },
 									}),
 									crit(12, {	-- Teldrassil
 										["coord"] = { 54.8, 52.9, 57 },
@@ -436,9 +436,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { 65 },	-- Stonetalon Mountains
 									}),
 									crit(12, {	-- Tanaris
-										["coord"] = { 49.8, 28.2, 71 },
+										["coord"] = { 49.8, 28.2, TANARIS },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 71 },	-- Tanaris
+										["maps"] = { TANARIS },
 									}),
 									crit(13, {	-- Un'Goro Crater
 										["coord"] = { 56.3, 65.8, 78 },
@@ -862,9 +862,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { 65 },	-- Stonetalon Mountains
 									}),
 									crit(12, {	-- Tanaris
-										["coord"] = { 49.8, 27.9, 71 },
+										["coord"] = { 49.8, 27.9, TANARIS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 71 },	-- Tanaris
+										["maps"] = { TANARIS },
 									}),
 									crit(13, {	-- Un'goro Crater
 										["coord"] = { 56.0, 66.0, 78 },
@@ -1137,9 +1137,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { 65 },	-- Stonetalon Mountains
 									}),
 									crit(11, {	-- Tanaris
-										["coord"] = { 52.7, 30.0, 71 },
+										["coord"] = { 52.7, 30.0, TANARIS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 71 },	-- Tanaris
+										["maps"] = { TANARIS },
 									}),
 									crit(12, {	-- Teldrassil
 										["coord"] = { 54.7, 52.7, 57 },

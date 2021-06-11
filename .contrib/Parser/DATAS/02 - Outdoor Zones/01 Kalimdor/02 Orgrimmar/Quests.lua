@@ -201,7 +201,7 @@ _.Zones =
 									q(53354, {	-- Echo of Gul'dan
 										["sourceQuests"] = { 53467 },	-- Caverns of Time
 										["provider"] = { "n", 15192 },	-- Anachronos
-										["coord"] = { 63.0, 57.2, 71 },
+										["coord"] = { 63.0, 57.2, TANARIS },
 										["races"] = HORDE_ONLY,
 									}),
 									q(53353, {	-- Echo of Warlord Zaela

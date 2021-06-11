@@ -80,7 +80,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = {
 					NORTHERN_BARRENS,
-					71,		-- Tanaris
+					TANARIS,
 					83,		-- Winterspring
 					87,		-- Ironforge
 					84,		-- Stormwind City
@@ -106,7 +106,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["races"] = HORDE_ONLY,
 				["maps"] = {
 					NORTHERN_BARRENS,
-					71,		-- Tanaris
+					TANARIS,
 					83,		-- Winterspring
 					ORGRIMMAR,
 					88,		-- Thunder Bluff
@@ -1616,16 +1616,16 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(29014, {	-- Candy Bucket — Tanaris, Bootlegger Outpost, neutral
 				["isYearly"] = true,
-				["coord"] = { 55.7, 60.9, 71 },
-				["maps"] = { 71 },	-- Tanaris
+				["coord"] = { 55.7, 60.9, TANARIS },
+				["maps"] = { TANARIS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12399, {	-- Candy Bucket — Tanaris, Gadgetzan, neutral
 				["isYearly"] = true,
-				["coord"] = { 52.6, 27.1, 71 },
-				["maps"] = { 71 },	-- Tanaris
+				["coord"] = { 52.6, 27.1, TANARIS },
+				["maps"] = { TANARIS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -2082,7 +2082,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = {
 					NORTHERN_BARRENS,
-					71,		-- Tanaris
+					TANARIS,
 					83,		-- Winterspring
 					87,		-- Ironforge
 					84,		-- Stormwind City
@@ -2273,7 +2273,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["races"] = HORDE_ONLY,
 				["maps"] = {
 					NORTHERN_BARRENS,
-					71,		-- Tanaris
+					TANARIS,
 					83,		-- Winterspring
 					ORGRIMMAR,
 					88,		-- Thunder Bluff

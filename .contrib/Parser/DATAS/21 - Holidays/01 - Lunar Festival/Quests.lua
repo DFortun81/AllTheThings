@@ -531,8 +531,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8684,  {	-- Dreamseer the Elder
 				["provider"] = { "n", 15586 },	-- Elder Dreamseer
 				["isYearly"] = true,
-				["coord"] = { 51.3, 28.8, 71 },
-				["maps"] = { 71 },	-- Tanaris
+				["coord"] = { 51.3, 28.8, TANARIS },
+				["maps"] = { TANARIS },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(16, {	-- Elder Dreamseer in Gadgetzan
@@ -628,8 +628,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8671,  {	-- Ragetotem the Elder
 				["provider"] = { "n", 15573 },	-- Elder Ragetotem
 				["isYearly"] = true,
-				["coord"] = { 37.2, 79.0, 71 },
-				["maps"] = { 71 },	-- Tanaris
+				["coord"] = { 37.2, 79.0, TANARIS },
+				["maps"] = { TANARIS },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(15, {	-- Elder Ragetotem in Tanaris
@@ -1171,9 +1171,9 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["description"] = "The Elder is on the right side of Gahz'rilla's room.",
 				["provider"] = { "n", 15578 },	-- Elder Wildmane
 				["isYearly"] = true,
-				["coord"] = { 39.2, 21.3, 71 },	-- Zul'Farrak entrance
+				["coord"] = { 39.2, 21.3, TANARIS },	-- Zul'Farrak entrance
 				["maps"] = {
-					71,		-- Tanaris
+					TANARIS,
 					219,	-- Zul'Farrak
 				},
 				["u"] = 17,	-- Lunar Festival

@@ -17,7 +17,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 				["isRaid"] = true,
 				["lvl"] = 85,
 				["maps"] = {
-					71,		-- Tanaris
+					TANARIS,
 					74, 	-- Tanaris: Caverns of Time Entrance
 					CAVERNS_OF_TIME,
 					84,		-- Stormwind City

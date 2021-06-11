@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(71, {	-- Tanaris
+		m(TANARIS, {
 			n(ZONEDROPS, {
 				i(71714),	-- Formula: Enchant Cloak - Lesser Agility
 				un(REMOVED_FROM_GAME, i(11206)),	-- Formula: Enchant Cloak - Lesser Agility (legacy version, removed from game)

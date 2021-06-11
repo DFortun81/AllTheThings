@@ -356,10 +356,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11802, {	-- Desecrate this Fire! — Tanaris
 				["isYearly"] = true,
 				["provider"] = { "o", 187952 },	-- Horde Bonfire
-				["coord"] = { 49.8, 28.2, 71 },
+				["coord"] = { 49.8, 28.2, TANARIS },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
-				["maps"] = { 71 },	-- Tanaris
+				["maps"] = { TANARIS },
 			}),
 			q(11782, {	-- Desecrate this Fire! — Terokkar Forest
 				["isYearly"] = true,
@@ -774,10 +774,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11762, {	-- Desecrate this Fire! — Tanaris
 				["isYearly"] = true,
 				["provider"] = { "o", 187945 },	-- Alliance Bonfire
-				["coord"] = { 52.7, 30.0, 71 },
+				["coord"] = { 52.7, 30.0, TANARIS },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-				["maps"] = { 71 },	-- Tanaris
+				["maps"] = { TANARIS },
 			}),
 			q(11753, {	-- Desecrate this Fire! — Teldrassil
 				["isYearly"] = true,
@@ -1191,9 +1191,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11833, {	-- Honor the Flame — Tanaris
 				["provider"] = { "n", 25916 },	-- Tanaris Flame Warden
 				["isYearly"] = true,
-				["coord"] = { 52.0, 29.0, 71 },
+				["coord"] = { 52.0, 29.0, TANARIS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 71 },	-- Tanaris
+				["maps"] = { TANARIS },
 			}),
 			q(11824, {	-- Honor the Flame — Teldrassil
 				["provider"] = { "n", 25906 },	-- The Teldrassil Flame Warden
@@ -1578,9 +1578,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11838, {	-- Honor the Flame — Tanaris
 				["provider"] = { "n", 25921 },	-- Tanaris Flame Keeper
 				["isYearly"] = true,
-				["coord"] = { 49.8, 27.9, 71 },
+				["coord"] = { 49.8, 27.9, TANARIS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 71 },	-- Tanaris
+				["maps"] = { TANARIS },
 			}),
 			q(11858, {	-- Honor the Flame — Terokkar Forest
 				["provider"] = { "n", 25942 },	-- Terokkar Forest Flame Keeper
@@ -1923,7 +1923,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					65,		-- Stonetalon Mountains
 					66,		-- Desolace
 					DUSTWALLOW_MARSH,
-					71,		-- Tanaris
+					TANARIS,
 					83,		-- Winterspring
 					AZUREMYST_ISLE,
 					HELLFIRE_PENINSULA,
@@ -1954,7 +1954,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					NORTHERN_BARRENS,
 					18,		-- Tirisfal Glades
 					ASHENVALE,
-					71,		-- Tanaris
+					TANARIS,
 					AZSHARA,
 					78,		-- Un'goro Crater
 					83,		-- Winterspring
@@ -2224,7 +2224,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = {
 					NORTHERN_BARRENS,
-					71,		-- Tanaris
+					TANARIS,
 					83,		-- Winterspring
 					84,		-- Stormwind City
 					87,		-- Ironforge
@@ -2249,7 +2249,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["races"] = HORDE_ONLY,
 				["maps"] = {
 					NORTHERN_BARRENS,
-					71,		-- Tanaris
+					TANARIS,
 					83,		-- Winterspring
 					ORGRIMMAR,
 					88,		-- Thunder Bluff

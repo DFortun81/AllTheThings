@@ -604,12 +604,12 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { 65 },	-- Stonetalon Mountains
 										}),
 										crit(23, {	-- Tanaris, Bootlegger Outpost
-											["coord"] = { 55.7, 60.9, 71 },
-											["maps"] = { 71 },	-- Tanaris
+											["coord"] = { 55.7, 60.9, TANARIS },
+											["maps"] = { TANARIS },
 										}),
 										crit(24, {	-- Tanaris, Gadgetzan
-											["coord"] = { 52.6, 27.1, 71 },
-											["maps"] = { 71 },	-- Tanaris
+											["coord"] = { 52.6, 27.1, TANARIS },
+											["maps"] = { TANARIS },
 										}),
 										crit(25, {	-- Teldrassil, Dolanaar
 											["coord"] = { 55.4, 52.3, 57 },
@@ -729,12 +729,12 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { 65 },	-- Stonetalon Mountains
 										}),
 										crit(26, {	-- Tanaris, Bootlegger Outpost
-											["coord"] = { 55.7, 60.9, 71 },
-											["maps"] = { 71 },	-- Tanaris
+											["coord"] = { 55.7, 60.9, TANARIS },
+											["maps"] = { TANARIS },
 										}),
 										crit(27, {	-- Tanaris, Gadgetzan
-											["coord"] = { 52.6, 27.1, 71 },
-											["maps"] = { 71 },	-- Tanaris
+											["coord"] = { 52.6, 27.1, TANARIS },
+											["maps"] = { TANARIS },
 										}),
 										crit(28, {	-- Thunder Bluff, Lower Rise
 											["coord"] = { 45.7, 64.5, 88 },
