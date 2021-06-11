@@ -45,11 +45,13 @@ _.ExpansionFeatures =
 				q(53061, {	-- The Azerite Advantage (A)
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
 					["altQuests"] = { 51994 },	-- Unlock the ability to go on Island Expeditions in search of Azerite
 				}),
 				q(53062, {	-- The Azerite Advantage (H)
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
+					["DisablePartySync"] = true,
 					["altQuests"] = { 51994 },	-- Unlock the ability to go on Island Expeditions in search of Azerite
 				}),
 				q(53436, { 	-- Azerite for the Alliance

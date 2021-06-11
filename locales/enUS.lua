@@ -216,6 +216,7 @@ app.L = {
 	["ARTIFACT_CACHE_OUT_OF_DATE"] = "Artifact Cache is out-of-date/inaccurate and will be re-cached when logging onto each character!";
 	["QUEST_LOOP"] = "Likely just broke out of an infinite source quest loop.";
 	["QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT"] = "Quest '%s' [%d] will prevent collection of Breadcrumb Quest [%d]";
+	["QUEST_OBJECTIVE_INVALID"] = "Invalid Quest Objective";
 
 	-- Item Filter Window
 	["ITEM_FILTER_TEXT"] = "Item Filters";

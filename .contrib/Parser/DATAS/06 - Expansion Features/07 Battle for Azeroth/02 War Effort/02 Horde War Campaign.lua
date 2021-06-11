@@ -181,6 +181,7 @@ _.ExpansionFeatures =
 						q(53056, {	-- Pushing Our Influence
 							["description"] = "Automatically starts when you finish your second Foothold in Kul Tiras.",
 							["isBreadcrumb"] = true,
+							["DisablePartySync"] = true,
 							["races"] = HORDE_ONLY,
 							["lvl"] = 118,
 						}),
@@ -480,6 +481,7 @@ _.ExpansionFeatures =
 								51984,	-- Return to Zuldazar (Tiragarde Foothold)
 							},
 							["isBreadcrumb"] = true,
+							["DisablePartySync"] = true,
 							["races"] = HORDE_ONLY,
 							["lvl"] = 120,
 						}),
