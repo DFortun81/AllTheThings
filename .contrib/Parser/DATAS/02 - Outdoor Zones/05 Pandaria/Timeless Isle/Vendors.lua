@@ -287,7 +287,7 @@ _.Zones =
 				}),
 				n(73307, {	-- Speaker Gulan <Emissary of Ordos>
 					["coord"] = { 74.9, 44.9, 554 },
-					["g"] = {
+					["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
 						currency(789, {	-- Bloody Coin
 							["description"] = "Earn Bloody Coins by transforming into an Emissary of Ordos and participating in PvP.",
 							["g"] = {
@@ -317,7 +317,7 @@ _.Zones =
 						i(103637, {	-- Vengeful Porcupette (PET!)
 							["cost"] = { { "c", 789, 100 } },	-- 100x Bloody Coin
 						}),
-					},
+					}),
 				}),
 				n(73293, {	-- Whizzig
 					["description"] = "This vendor is rare and is not always available.",
