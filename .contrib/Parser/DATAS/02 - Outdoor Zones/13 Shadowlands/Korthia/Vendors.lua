@@ -188,7 +188,7 @@ _.Zones =
 									i(185899),	-- Korthian Archivist's Gavel
 									i(186761),	-- Korthian Attendant's Blade
 									i(186768),	-- Korthian Attendant's Cane*
-									i(186767),	-- Korthian Attendant's Scepter
+									i(186767),	-- Korthian Attendant's Scepter*
 									i(185890),	-- Korthian Caretaker's Kris*
 									i(185888),	-- Korthian Caretaker's Orb
 									i(185900),	-- Korthian Caretaker's Rod
@@ -327,4 +327,12 @@ _.Zones =
 			}),
 		}),
 	}),
+};
+
+_.HiddenQuestTriggers = {
+--	q(),	-- learning Ensemble: Battlefield Messenger's Regalia
+--	q(),	-- learning Ensemble: Frontline Necromancer's Vestments
+--	q(),	-- learning Ensemble: Garb of Fall's Promise
+--	q(),	-- learning Ensemble: Renathal's Battlefield Attire
+	q(63635),	-- learning Ensemble: Renathal's Field Inquisitor's Vestments
 };

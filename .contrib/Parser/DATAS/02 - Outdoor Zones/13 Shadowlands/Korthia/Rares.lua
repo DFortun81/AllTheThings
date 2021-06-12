@@ -263,7 +263,12 @@ _.Zones =
 						crit(24, {	-- Wild Worldcracker
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
-						i(186483),	-- Foresworn Aquilon (MOUNT!)
+						i(187282, {	-- Intact Aquilon Core
+							["questID"] = 64529,
+							["g"] = {
+								i(186483),	-- Foresworn Aquilon (MOUNT!)
+							},
+						}),
 						i(187426, {	-- Legend of the Animaswell
 							["customCollect"] = "SL_COV_KYR",	-- Kyrian
 							["isWeekly"] = true,
