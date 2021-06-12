@@ -1910,6 +1910,7 @@ _.Zones =
 							i(137042),	-- Tearstone of Elune
 							i(151636),	-- Soul of the Archdruid
 							i(144258),	-- Velen's Future Sight
+							i(151802),	-- Fury of Nature
 						}),
 						i(147304, {	-- Pocket Keystone to Abandoned World [Warlock]
 							i(132394),	-- Hood of Eternal Disdain
