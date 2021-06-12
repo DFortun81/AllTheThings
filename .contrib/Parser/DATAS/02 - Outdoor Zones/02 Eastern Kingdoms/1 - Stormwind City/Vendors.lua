@@ -2743,8 +2743,18 @@ _.Zones =
 						i(102514, {	-- Reins of the Vicious Warsaber
 							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
 						}),
+						i(165019, {	-- Vicious Black Warsaber (A)
+							["cost"] = { { "i", 103533, 1 }, },
+							-- Remove [u] with 9.1
+							["u"] = REMOVED_FROM_GAME,
+						}),
 						i(140353, {	-- Vicious Gilnean Warhorse
 							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
+						}),
+						i(163122, {	-- Vicious War Basilisk (A)
+							["cost"] = { { "i", 103533, 1 }, },
+							-- Remove [u] with 9.1
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(142234, {	-- Vicious War Bear
 							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
@@ -2763,6 +2773,16 @@ _.Zones =
 						}),
 						i(116777, {	-- Vicious War Ram
 							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
+						}),
+						i(163123, {	-- Vicious War Riverbeast (A)
+							["cost"] = { { "i", 103533, 1 }, },
+							-- Remove [u] with 9.1
+							["u"] = REMOVED_FROM_GAME,
+						}),
+						i(173714, {	-- Vicious White Warsaber (A)
+							["cost"] = { { "i", 103533, 1 }, },
+							-- Remove [u] with 9.1
+							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(143648, {	-- Vicious War Turtle
 							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle

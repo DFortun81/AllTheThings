@@ -349,11 +349,9 @@ _.PVP =
 				filter(100, {	-- Mounts
 					i(163123, {	-- Vicious War Riverbeast (A)
 						["races"] = ALLIANCE_ONLY,
-						["u"] = REMOVED_FROM_GAME,
 					}),
 					i(163124, {	-- Vicious War Clefthoof (H)
 						["races"] = HORDE_ONLY,
-						["u"] = REMOVED_FROM_GAME,
 					}),
 				}),
 			}),
@@ -728,11 +726,9 @@ _.PVP =
 				filter(100, {	-- Mounts
 					i(165019, {	-- Vicious Black Warsaber (A)
 						["races"] = ALLIANCE_ONLY,
-						["u"] = REMOVED_FROM_GAME,
 					}),
 					i(165020, {	-- Vicious Black Bonesteed (H)
 						["races"] = HORDE_ONLY,
-						["u"] = REMOVED_FROM_GAME,
 					}),
 				}),
 			}),
@@ -1145,11 +1141,9 @@ _.PVP =
 				filter(100, {	-- Mounts
 					i(163122, {	-- Vicious War Basilisk (A)
 						["races"] = ALLIANCE_ONLY,
-						["u"] = REMOVED_FROM_GAME,
 					}),
 					i(163121, {	-- Vicious War Basilisk (H)
 						["races"] = HORDE_ONLY,
-						["u"] = REMOVED_FROM_GAME,
 					}),
 				}),
 			}),
