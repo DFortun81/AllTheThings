@@ -320,7 +320,7 @@ _.Zones =
 				n(73151,  {	-- Deathguard Netharian <Combatant Mount Quartermaster>
 					["races"] = HORDE_ONLY,
 					["coord"] = { 41.8, 73.0, ORGRIMMAR },
-					["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
+					["g"] = pvp({
 						i(70910, {	-- Horn of the Vicious War Wolf Mount
 							["cost"] = { { "i", 103533, 1 }, },	-- Vicious Saddle
 						}),

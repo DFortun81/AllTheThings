@@ -3134,6 +3134,12 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					tinsert(info, { left = L["UNOBTAINABLE_ITEM_REASONS"][sourceGroup.u][2] });
 				end
 
+				-- PvP filter text
+				-- TODO: probably re-design this once it's no longer considered an unobtainable filter completely
+				if sourceGroup.pvp then
+					tinsert(info, { left = L["UNOBTAINABLE_ITEM_REASONS"][12][2] });
+				end
+
 				-- Acquire the SourceID if it hadn't been determined yet.
 				if not sourceID and sourceGroup.link then
 					sourceID = GetSourceID(sourceGroup.link) or sourceGroup.s;
@@ -10615,7 +10621,8 @@ function app.FilterItemClass(item)
 			and app.ClassRequirementFilter(item)
 			and app.RaceRequirementFilter(item)
 			and app.RequireFactionFilter(item)
-			and app.RequireCustomCollectFilter(item);
+			and app.RequireCustomCollectFilter(item)
+			and app.PvPFilter(item);
 	end
 end
 function app.FilterItemClass_RequireClasses(item)
@@ -10669,6 +10676,13 @@ function app.FilterItemClass_UnobtainableItem(item)
 end
 function app.FilterItemClass_RequireBinding(item)
 	if item.b and (item.b == 2 or item.b == 3) then
+		return false;
+	else
+		return true;
+	end
+end
+function app.FilterItemClass_PvP(item)
+	if item.pvp then
 		return false;
 	else
 		return true;
@@ -11056,6 +11070,7 @@ app.CollectedItemVisibilityFilter = app.NoFilter;
 app.ClassRequirementFilter = app.NoFilter;
 app.RaceRequirementFilter = app.NoFilter;
 app.RequireBindingFilter = app.NoFilter;
+app.PvPFilter = app.NoFilter;
 app.SeasonalItemFilter = app.NoFilter;
 app.RequireFactionFilter = app.FilterItemClass_RequireFaction;
 app.RequireCustomCollectFilter = app.FilterItemClass_CustomCollect;

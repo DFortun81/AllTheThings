@@ -1011,6 +1011,9 @@ profession = function(skillID, t)						-- Create a PROFESSION Container. (NOTE: 
 	_.Professions = { bubbleDown({ ["requireSkill"] = skillID }, p) };
 	return p;
 end
+pvp = function(t)										-- Flag all nested content as requiring PvP gameplay
+	return bubbleDown({["pvp"] = true,}, t);
+end
 pvprank = function(id, t)								-- Create a PVP Rank Object.
 	return struct("pvpRankID", id, t);
 end
