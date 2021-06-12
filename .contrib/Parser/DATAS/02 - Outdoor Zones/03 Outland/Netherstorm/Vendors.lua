@@ -3441,7 +3441,7 @@ _.Zones =
 						i(77822), 	-- Replica First Sergeant's Leather Armguards
 					}),
 				}),
-				-- #3endif
+				-- #endif
 				n(20112,  {	-- Wind Trader Tuluman <Weapon Merchant>
 					["coord"] = { 34.6, 37.8, NETHERSTORM },
 					["g"] = {
