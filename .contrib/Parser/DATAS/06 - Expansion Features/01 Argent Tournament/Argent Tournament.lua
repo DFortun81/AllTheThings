@@ -1883,11 +1883,12 @@ _.ExpansionFeatures =
 						i(47712),	-- Shoulders of the Fateful Accord
 						i(48724),	-- Talisman of Resurgence
 					},
-					-- We have a different Vendor with the same PvP Items in Dalaran listed. Both of them sell the Furious Gladiator Items for Gold. For sake of numbers we use Symlink on the 2nd NPC
+					-- We have a different Vendor with the same PvP Items in Dalaran listed. Both of them sell the Furious Gladiator Items for Gold. 
+					-- For sake of numbers we use Symlink on the 2nd NPC. First NPC under Outdoor>Northrend>Dalaran>Factions
 					["sym"] = {
 						{"sub", "pvp_gear_base", -10014, -669, -661 },	-- Furious Gladiator: Season 6 Gladiator Gear
 						{"pop"},	-- Discard the Set header and acquire the children.
-						{"exclude", "headerID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
+						{"exclude", "headerID", -319, -322, -326, -328, -330, -384, -385, -386 },	-- Exclude Weapon, Back, Wrist, Waist, Feet Neck, Finger and Trinkets
 					},
 				}),
 				n(35579, {	-- Aspirant Forudir <Triumphant Armor Vendor>
@@ -2919,11 +2920,12 @@ _.ExpansionFeatures =
 						i(47706),	-- Shoulders of the Groundbreaker
 						i(48724),	-- Talisman of Resurgence
 					},
-					-- We have a different Vendor with the same PvP Items in Dalaran listed. Both of them sell the Furious Gladiator Items for Gold. For sake of numbers we use Symlink on the 2nd NPC
+					-- We have a different Vendor with the same PvP Items in Dalaran listed. Both of them sell the Furious Gladiator Items for Gold. 
+					-- For sake of numbers we use Symlink on the 2nd NPC. First NPC under Outdoor>Northrend>Dalaran>Factions
 					["sym"] = {
 						{"sub", "pvp_gear_base", -10014, -669, -661 },	-- Furious Gladiator: Season 6 Gladiator Gear
 						{"pop"},	-- Discard the Set header and acquire the children.
-						{"exclude", "headerID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
+						{"exclude", "headerID", -319, -322, -326, -328, -330, -384, -385, -386 },	-- Exclude Weapon, Back, Wrist, Waist, Feet Neck, Finger and Trinkets
 					},
 				}),
 				n(33595, {	-- Mera Mistrunner <Cooking Supplies>
