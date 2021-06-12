@@ -19470,6 +19470,14 @@ app.events.VARIABLES_LOADED = function()
 				53207,	-- The Warfront Looms (BFA Horde Warfront Breadcrumb)
 				53175,	-- The Warfront Looms (BFA Alliance Warfront Breadcrumb)
 			},
+			{
+				31977 ,	-- The Returning Champion (Horde Winterspring Pass Pet Battle Quest)
+				31975 ,	-- The Returning Champion (Alliance Winterspring Pass Pet Battle Quest)
+			},
+			{
+				31980 ,	-- The Returning Champion (Horde Deadwind Pass Pet Battle Quest)
+				31976 ,	-- The Returning Champion (Alliance Deadwind Pass Pet Battle Quest)
+			},
 		}) do
 			for _,questID in ipairs(questGroup) do
 				-- If this Character has the Quest completed

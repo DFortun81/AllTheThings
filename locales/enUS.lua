@@ -1097,7 +1097,7 @@ app.L = {
 		[-660] = "Interface\\Worldmap\\GlowSkull_64Blue",									-- Combatant PvP Gear
 		[-661] = "Interface\\Worldmap\\GlowSkull_64Purple",									-- Gladator PvP Gear
 		[-662] = "Interface\\Worldmap\\GlowSkull_64Red",									-- Elite PvP Gear
-		--[-663] = "Interface\\Icons\\",													-- Classic Pre-Season PvP Gear (Placeholder)
+		[-663] = 463450,																	-- Classic Honor System
 		[-664] = "Interface\\Icons\\achievement_featsofstrength_gladiator_01",				-- Gladiator: Season 1
 		[-665] = "Interface\\Icons\\achievement_featsofstrength_gladiator_01",				-- Merciless Gladiator: Season 2
 		[-666] = "Interface\\Icons\\achievement_featsofstrength_gladiator_02",				-- Vengeful Gladiator: Season 3
@@ -1873,7 +1873,7 @@ app.L = {
 		[-662] = "Elite Gear",													-- Elite PvP Gear
 
 	-- Classic PvP Seasons
-		[-663] = "Classic Pre-Season Gear",										-- Classic Pre-Season PvP Gear (need a icon)
+		[-663] = "Classic Honor System",										-- Classic Honor System
 
 	-- The Burning Crusade PvP Seasons
 		[-658] = "BC Pre-Season",												-- Pre-Season (PvP BC)

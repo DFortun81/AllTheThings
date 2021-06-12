@@ -58,6 +58,7 @@ _.PVP =
 							}),
 						}),
 						n(VENDORS, {
+							--[[ -- Listed under Classic PvP & Arathi Outdoor
 							n(15126, {	-- Rutherford Twing
 								["itemID"] = 137642,	-- Mark of Honor
 								["races"] = HORDE_ONLY,	-- to hide it in Mark of Honor list
@@ -188,6 +189,7 @@ _.PVP =
 									}),
 								},
 							}),
+							--]]
 						}),
 					},
 				}),
@@ -233,6 +235,7 @@ _.PVP =
 							}),
 						}),
 						n(VENDORS, {
+							--[[ -- Listed under Classic PvP & Arathi Outdoor
 							n(15127, {	-- Samuel Hawke
 								["itemID"] = 137642,	-- Mark of Honor
 								["races"] = ALLIANCE_ONLY,	-- to hide it in Mark of Honor list
@@ -311,6 +314,7 @@ _.PVP =
 									i(21119),	-- Talisman of Arathor
 								},
 							}),
+							--]]
 						}),
 					},
 				}),

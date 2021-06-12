@@ -3177,7 +3177,7 @@ _.Zones =
 				n(23396,  {	-- Krixel Pinchwhistle <Classic Alliance Mail & Plate>
 					["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.|r",
 					["coord"] = { 33.0, 64.0, NETHERSTORM },
-					["g"] = {
+					["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
 						i(77718),	-- Replica Field Marshal's Plate Shoulderguards
 						i(77673),	-- Replica Field Marshal's Chain Spaulders
 						i(77714),	-- Replica Field Marshal's Plate Armor
@@ -3254,12 +3254,12 @@ _.Zones =
 						i(77660, {	-- Replica Sergeant Major's Plate Wristguards
 							["description"] = "This item has to be purchased on Alliance as there is no matching Horde Version.",
 						}),
-					},
+					}),
 				}),
 				n(54648,  {	-- Leeni "Smiley" Smalls <Classic Horde Mail & Plate>
 					["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.|r",
 					["coord"] = { 33.0, 64.0, NETHERSTORM },
-					["g"] = {
+					["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
 						i(77897),	-- Replica Warlord's Lamellar Pauldrons
 						i(77880),	-- Replica Warlord's Chain Shoulders
 						i(77923),	-- Replica Warlord's Plate Shoulders
@@ -3332,12 +3332,12 @@ _.Zones =
 						i(77835),	-- Replica First Sergeant's Mail Wristguards
 						i(77754),	-- Replica Champion's Chain Pauldrons
 						i(77825),	-- Replica Legionnaire's Mail Leggings
-					},
+					}),
 				}),
 				n(58152,  {	-- Tini Smalls <Classic Horde Cloth & Leather>
 					["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.|r",
 					["coord"] = { 33.0, 64.2, NETHERSTORM },
-					["g"] = {
+					["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
 						i(77900),	-- Replica Warlord's Satin Cowl
 						i(77874),	-- Replica Warlord's Dragonhide Helmet
 						i(77919),	-- Replica Warlord's Dreadweave Robe
@@ -3439,7 +3439,7 @@ _.Zones =
 						i(77753),	-- Replica First Sergeant's Dragonhide Armguards
 						i(77788),	-- Replica First Sergeant's Silk Cuffs
 						i(77822), 	-- Replica First Sergeant's Leather Armguards
-					},
+					}),
 				}),
 				-- #3endif
 				n(20112,  {	-- Wind Trader Tuluman <Weapon Merchant>
