@@ -82,6 +82,201 @@ _.Zones =
 						}),
 					},
 				}),
+				n(14754, {	-- Kelm Hargunth <Warsong Supply Officer>
+					["itemID"] = 137642,	-- Mark of Honor
+					["races"] = HORDE_ONLY,	-- to hide it in Mark of Honor list
+					["coord"] = { 40.2, 20.0, 1307 },
+					["g"] = {
+						i(19595, {	-- Dryad's Wrist Bindings
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(19596, {	-- Dryad's Wrist Bindings
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(19597, {	-- Dryad's Wrist Bindings
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(22747, {	-- Outrider's Silk Leggings
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(19587, {	-- Forest Stalker's Bracers
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(19589, {	-- Forest Stalker's Bracers
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(19590, {	-- Forest Stalker's Bracers
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(22740, {	-- Outrider's Leather Pants
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(22741, {	-- Outrider's Lizardhide Pants
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(19582, {	-- Windtalker's Wristguards
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(19583, {	-- Windtalker's Wristguards
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(19584, {	-- Windtalker's Wristguards
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(22673, {	-- Outrider's Chain Leggings
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(22676, {	-- Outrider's Mail Leggings
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(19578, {	-- Berserker Bracers
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(19580, {	-- Berserker Bracers
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(19581, {	-- Berserker Bracers
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(30498),	-- Outrider's Lamellar Legguards
+						i(22651),	-- Outrider's Plate Legguards
+						i(19526, {	-- Battle Healer's Cloak
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(19527, {	-- Battle Healer's Cloak
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(19528, {	-- Battle Healer's Cloak
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(19529, {	-- Battle Healer's Cloak
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(20427, {	-- Battle Healer's Cloak
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(19566, {	-- Advisor's Gnarled Staff
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(19567, {	-- Advisor's Gnarled Staff
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(19568, {	-- Advisor's Gnarled Staff
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(19569, {	-- Advisor's Gnarled Staff
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(20425, {	-- Advisor's Gnarled Staff
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(19550, {	-- Legionnaire's Sword
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(19551, {	-- Legionnaire's Sword
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(19552, {	-- Legionnaire's Sword
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(19553, {	-- Legionnaire's Sword
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(20430, {	-- Legionnaire's Sword
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(19542, {	-- Scout's Blade
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(19543, {	-- Scout's Blade
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(19544, {	-- Scout's Blade
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(19545, {	-- Scout's Blade
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(20441, {	-- Scout's Blade
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(19558, {	-- Outrider's Bow
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(19559, {	-- Outrider's Bow
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(19560, {	-- Outrider's Bow
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(19561, {	-- Outrider's Bow
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(20437, {	-- Outrider's Bow
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(19505, {	-- Warsong Battle Tabard
+							["cost"] = { { "i", 137642, 10 } },	-- 10x Mark of Honor
+						}),
+						i(19534, {	-- Scout's Medallion
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(19535, {	-- Scout's Medallion
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(19536, {	-- Scout's Medallion
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(19537, {	-- Scout's Medallion
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(20442, {	-- Scout's Medallion
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(19518, {	-- Advisor's Ring
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(19519, {	-- Advisor's Ring
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(19520, {	-- Advisor's Ring
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(19521, {	-- Advisor's Ring
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(20426, {	-- Advisor's Ring
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(19510, {	-- Legionnaire's Band
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(19511, {	-- Legionnaire's Band
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(19512, {	-- Legionnaire's Band
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(19513, {	-- Legionnaire's Band
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(20429, {	-- Legionnaire's Band
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(21567, {	-- Rune of Duty
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(21568, {	-- Rune of Duty
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(21565, {	-- Rune of Perfection
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(21566, {	-- Rune of Perfection
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+					},
+				}),
 				n(3497, {	-- Kilxx <Fisherman>
 					["coord"] = { 68.6, 72.6, NORTHERN_BARRENS },
 					["g"] = {
