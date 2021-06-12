@@ -597,9 +597,8 @@ _.PVP =
 									}),
 								},
 							}),
-							n(13217, {	-- Thanthaldis Snowgleam <Stormpike Supply Officer>
+							n(13216, {	-- Gaelden Hammersmith <Stormpike Supply Officer>
 								["itemID"] = 137642,	-- Mark of Honor
-								["crs"] = { 13216 },	-- Gaelden Hammersmith <Stormpike Supply Officer>
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									i(19030, {	-- Stormpike Battle Charger Mount

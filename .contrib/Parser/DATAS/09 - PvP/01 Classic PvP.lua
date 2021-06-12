@@ -6,6 +6,388 @@ _.PVP =
 {
 	n(-10002, {	-- Classic
 		["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
+			m(91 , {	-- Alterac Valley
+				["achievementID"] = 218,	-- Alterac Valley Victory
+				["g"] = {
+					faction(729, {	-- Frostwolf Clan
+						["races"] = HORDE_ONLY,
+						["icon"] = "Interface\\Icons\\inv_jewelry_frostwolftrinket_05",
+						["g"] = {
+							i(19029, {	-- Horn of the Frostwolf Howler Mount
+								["cost"] = { { "i", 137642, 15 } },	-- 15x Mark of Honor
+							}),
+							i(19031, {	-- Frostwolf Battle Tabard
+								["cost"] = { { "i", 137642, 10 } },	-- 10x Mark of Honor
+							}),
+							i(19046, {	-- Frostwolf Battle Standard
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19103, {	-- Frostbite
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(19099, {	-- Glacial Blade
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(19312, {	-- Lei of the Lifegiver
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(19321, {	-- The Immovable Object
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(19324, {	-- The Lobotomizer
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(19323, {	-- The Unstoppable Force
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(19315, {	-- Therazane's Torch
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(19308, {	-- Tome of Arcane Domination
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(19311, {	-- Tome of Fiery Arcana
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(19309, {	-- Tome of Shadow Force
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(19310, {	-- Tome of the Ice Lord
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(19101, {	-- Whiteout Staff
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(19096, {	-- Frostwolf Advisor's Pendant
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19095, {	-- Frostwolf Legionnaire's Pendant
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19085, {	-- Frostwolf Advisor's Cloak
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19083, {	-- Frostwolf Legionnaire's Cloak
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19090, {	-- Frostwolf Cloth Belt
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19089, {	-- Frostwolf Leather Belt
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19088, {	-- Frostwolf Mail Belt
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19087, {	-- Frostwolf Plate Belt
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19325, {	-- Don Julio's Band
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(21563, {	-- Don Rodrigo's Band
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							un(REMOVED_FROM_GAME, i(19320)),	-- Gnoll Skin Bandolier
+							un(REMOVED_FROM_GAME, i(19319)),	-- Harpy Hide Quiver
+						},
+					}),
+					faction(730, {	-- Stormpike Guards
+						["races"] = ALLIANCE_ONLY,
+						["icon"] = "Interface\\Icons\\inv_jewelry_stormpiketrinket_05",
+						["g"] = {
+							i(19030, {	-- Stormpike Battle Charger Mount
+								["cost"] = { { "i", 137642, 15 } },	-- 15x Mark of Honor
+							}),
+							i(19032, {	-- Stormpike Battle Tabard
+								["cost"] = { { "i", 137642, 10 } },	-- 10x Mark of Honor
+							}),
+							i(19045, {	-- Stormpike Battle Standard
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19102, {	-- Crackling Staff
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(19100, {	-- Electrified Dagger
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(19312, {	-- Lei of the Lifegiver
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(19104, {	-- Stormstrike Hammer
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(19321, {	-- The Immovable Object
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(19324, {	-- The Lobotomizer
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(19323, {	-- The Unstoppable Force
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(19315, {	-- Therazane's Torch
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(19308, {	-- Tome of Arcane Domination
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(19311, {	-- Tome of Fiery Arcana
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(19309, {	-- Tome of Shadow Force
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(19310, {	-- Tome of the Ice Lord
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(19098, {	-- Stormpike Sage's Pendant
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19097, {	-- Stormpike Soldier's Pendant
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19086, {	-- Stormpike Sage's Cloak
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19084, {	-- Stormpike Soldier's Cloak
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19094, {	-- Stormpike Cloth Girdle
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19093, {	-- Stormpike Leather Girdle
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19092, {	-- Stormpike Mail Girgle
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19091, {	-- Stormpike Plate Girdle
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19325, {	-- Don Julio's Band
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(21563, {	-- Don Rodrigo's Band
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+						},
+					}),
+				},
+			}),
+			m(93 , {	-- Arathi Basin
+				["achievementID"] = 154,	-- Arathi Basin Victory
+				["g"] = {
+					-- Arathi Basin Horde
+					faction(510, {	-- The Defilers
+						["races"] = HORDE_ONLY,
+						["icon"] = "Interface\\Icons\\spell_shadow_psychichorrors",
+						["g"] = {
+							i(20176),	-- Defiler's Epaulets
+							i(20163),	-- Defiler's Cloth Girdle
+							i(20164),	-- Defiler's Cloth Girdle
+							i(20165),	-- Defiler's Cloth Girdle
+							i(20166),	-- Defiler's Cloth Girdle
+							i(20159),	-- Defiler's Cloth Boots
+							i(20160),	-- Defiler's Cloth Boots
+							i(20161),	-- Defiler's Cloth Boots
+							i(20162),	-- Defiler's Cloth Boots
+							i(20194),	-- Defiler's Leather Shoulders
+							i(20190),	-- Defiler's Leather Girdle
+							i(20191),	-- Defiler's Leather Girdle
+							i(20192),	-- Defiler's Leather Girdle
+							i(20193),	-- Defiler's Leather Girdle
+							i(20186),	-- Defiler's Leather Boots
+							i(20187),	-- Defiler's Leather Boots
+							i(20188),	-- Defiler's Leather Boots
+							i(20189),	-- Defiler's Leather Boots
+							i(20175),	-- Defiler's Lizardhide Shoulders
+							i(20171),	-- Defiler's Lizardhide Girdle
+							i(20172),	-- Defiler's Lizardhide Girdle
+							i(20173),	-- Defiler's Lizardhide Girdle
+							i(20174),	-- Defiler's Lizardhide Girdle
+							i(20167),	-- Defiler's Lizardhide Boots
+							i(20168),	-- Defiler's Lizardhide Boots
+							i(20169),	-- Defiler's Lizardhide Boots
+							i(20170),	-- Defiler's Lizardhide Boots
+							i(20158),	-- Defiler's Chain Pauldrons
+							i(20150),	-- Defiler's Chain Girdle
+							i(20151),	-- Defiler's Chain Girdle
+							i(20152),	-- Defiler's Chain Girdle
+							i(20153),	-- Defiler's Chain Girdle
+							i(20154),	-- Defiler's Chain Greaves
+							i(20155),	-- Defiler's Chain Greaves
+							i(20156),	-- Defiler's Chain Greaves
+							i(20157),	-- Defiler's Chain Greaves
+							i(20203),	-- Defiler's Mail Pauldrons
+							i(20195),	-- Defiler's Mail Girdle
+							i(20196),	-- Defiler's Mail Girdle
+							i(20197),	-- Defiler's Mail Girdle
+							i(20198),	-- Defiler's Mail Girdle
+							i(20199),	-- Defiler's Mail Greaves
+							i(20200),	-- Defiler's Mail Greaves
+							i(20201),	-- Defiler's Mail Greaves
+							i(20202),	-- Defiler's Mail Greaves
+							i(20184, {	-- Defiler's Lamellar Spaulders
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(20177, {	-- Defiler's Lamellar Girdle
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(20178, {	-- Defiler's Lamellar Girdle
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(20179, {	-- Defiler's Lamellar Girdle
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(20180, {	-- Defiler's Lamellar Girdle
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(20181, {	-- Defiler's Lamellar Greaves
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(20182, {	-- Defiler's Lamellar Greaves
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(20183, {	-- Defiler's Lamellar Greaves
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(20185, {	-- Defiler's Lamellar Greaves
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(20212, {	-- Defiler's Plate Spaulders
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(20204, {	-- Defiler's Plate Girdle
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(20205, {	-- Defiler's Plate Girdle
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(20206, {	-- Defiler's Plate Girdle
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(20207, {	-- Defiler's Plate Girdle
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(20208, {	-- Defiler's Plate Greaves
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(20209, {	-- Defiler's Plate Greaves
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(20210, {	-- Defiler's Plate Greaves
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(20211, { 	-- Defiler's Plate Greaves
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(20220, {	-- Ironbark Staff
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(20214, {	-- Mindfang
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(20131, {	-- Battle Tabard of the Defilers
+								["cost"] = { { "i", 137642, 10 } },	-- 10x Mark of Honor
+							}),
+							i(20068, {	-- Deathguard's Cloak
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(20072, {	-- Defiler's Talisman
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(21115, {	-- Defiler's Talisman
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(21116, {	-- Defiler's Talisman
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(21120, {	-- Defiler's Talisman
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+						},
+					}),
+					-- Arathi Basin Alliance
+					faction(509, {	-- The League of Arathor
+						["races"] = ALLIANCE_ONLY,
+						["icon"] = "Interface\\Icons\\ability_warrior_rallyingcry",
+						["g"] = {
+							i(20061),	-- Highlander's Epaulets
+							i(20047),	-- Highlander's Cloth Girdle
+							i(20097),	-- Highlander's Cloth Girdle
+							i(20098),	-- Highlander's Cloth Girdle
+							i(20099),	-- Highlander's Cloth Girdle
+							i(20054),	-- Highlander's Cloth Boots
+							i(20094),	-- Highlander's Cloth Boots
+							i(20095),	-- Highlander's Cloth Boots
+							i(20096),	-- Highlander's Cloth Boots
+							i(20059),	-- Highlander's Leather Shoulders
+							i(20045),	-- Highlander's Leather Girdle
+							i(20115),	-- Highlander's Leather Girdle
+							i(20116),	-- Highlander's Leather Girdle
+							i(20117),	-- Highlander's Leather Girdle
+							i(20052),	-- Highlander's Leather Boots
+							i(20112),	-- Highlander's Leather Boots
+							i(20113),	-- Highlander's Leather Boots
+							i(20114),	-- Highlander's Leather Boots
+							i(20060),	-- Highlander's Lizardhide Shoulders
+							i(20046),	-- Highlander's Lizardhide Girdle
+							i(20103),	-- Highlander's Lizardhide Girdle
+							i(20104),	-- Highlander's Lizardhide Girdle
+							i(20105),	-- Highlander's Lizardhide Girdle
+							i(20053),	-- Highlander's Lizardhide Boots
+							i(20100),	-- Highlander's Lizardhide Boots
+							i(20101),	-- Highlander's Lizardhide Boots
+							i(20102),	-- Highlander's Lizardhide Boots
+							i(20055),	-- Highlander's Chain Pauldrons
+							i(20043),	-- Highlander's Chain Girdle
+							i(20088),	-- Highlander's Chain Girdle
+							i(20089),	-- Highlander's Chain Girdle
+							i(20090),	-- Highlander's Chain Girdle
+							i(20050),	-- Highlander's Chain Greaves
+							i(20091),	-- Highlander's Chain Greaves
+							i(20092),	-- Highlander's Chain Greaves
+							i(20093),	-- Highlander's Chain Greaves
+							i(20056),	-- Highlander's Mail Pauldrons
+							i(20044),	-- Highlander's Mail Girdle
+							i(20118),	-- Highlander's Mail Girdle
+							i(20119),	-- Highlander's Mail Girdle
+							i(20120),	-- Highlander's Mail Girdle
+							i(20051),	-- Highlander's Mail Greaves
+							i(20121),	-- Highlander's Mail Greaves
+							i(20122),	-- Highlander's Mail Greaves
+							i(20123),	-- Highlander's Mail Greaves
+							i(20057),	-- Highlander's Plate Spaulders
+							i(20041),	-- Highlander's Plate Girdle
+							i(20124),	-- Highlander's Plate Girdle
+							i(20125),	-- Highlander's Plate Girdle
+							i(20126),	-- Highlander's Plate Girdle
+							i(20048),	-- Highlander's Plate Greaves
+							i(20127),	-- Highlander's Plate Greaves
+							i(20128),	-- Highlander's Plate Greaves
+							i(20129),	-- Highlander's Plate Greaves
+							i(20058),	-- Highlander's Lamellar Spaulers
+							i(20042),	-- Highlander's Lamellar Girdle
+							i(20106),	-- Highlander's Lamellar Girdle
+							i(20107),	-- Highlander's Lamellar Girdle
+							i(20108),	-- Highlander's Lamellar Girdle
+							i(20049),	-- Highlander's Lamellar Greaves
+							i(20109),	-- Highlander's Lamellar Greaves
+							i(20110),	-- Highlander's Lamellar Greaves
+							i(20111),	-- Highlander's Lamellar Greaves
+							i(20069),	-- Ironbark Staff
+							i(20070),	-- Sageclaw
+							i(20132),	-- Arathor Battle Tabard
+							i(20073),	-- Cloak of the Honor Guard
+							i(20071),	-- Talisman of Arathor
+							i(21117),	-- Talisman of Arathor
+							i(21118),	-- Talisman of Arathor
+							i(21119),	-- Talisman of Arathor
+						},
+					}),
+				},
+			}),
 			n(-663, {	-- Classic Alliance Honor System
 				["description"] = "These items require the Legionnaire/Knight-Captain rank from Classic/Rated Battlegrounds or higher to purchase.|r",
 				["g"] = {
@@ -375,605 +757,398 @@ _.PVP =
 					}),
 				},
 			}),
-			m(93 , {	-- Arathi Basin
-				-- Arathi Basin Horde
-				faction(510, {	-- The Defilers
-					["races"] = HORDE_ONLY,
-					["icon"] = "Interface\\Icons\\spell_shadow_psychichorrors",
-					["g"] = {
-						i(20176),	-- Defiler's Epaulets
-						i(20163),	-- Defiler's Cloth Girdle
-						i(20164),	-- Defiler's Cloth Girdle
-						i(20165),	-- Defiler's Cloth Girdle
-						i(20166),	-- Defiler's Cloth Girdle
-						i(20159),	-- Defiler's Cloth Boots
-						i(20160),	-- Defiler's Cloth Boots
-						i(20161),	-- Defiler's Cloth Boots
-						i(20162),	-- Defiler's Cloth Boots
-						i(20194),	-- Defiler's Leather Shoulders
-						i(20190),	-- Defiler's Leather Girdle
-						i(20191),	-- Defiler's Leather Girdle
-						i(20192),	-- Defiler's Leather Girdle
-						i(20193),	-- Defiler's Leather Girdle
-						i(20186),	-- Defiler's Leather Boots
-						i(20187),	-- Defiler's Leather Boots
-						i(20188),	-- Defiler's Leather Boots
-						i(20189),	-- Defiler's Leather Boots
-						i(20175),	-- Defiler's Lizardhide Shoulders
-						i(20171),	-- Defiler's Lizardhide Girdle
-						i(20172),	-- Defiler's Lizardhide Girdle
-						i(20173),	-- Defiler's Lizardhide Girdle
-						i(20174),	-- Defiler's Lizardhide Girdle
-						i(20167),	-- Defiler's Lizardhide Boots
-						i(20168),	-- Defiler's Lizardhide Boots
-						i(20169),	-- Defiler's Lizardhide Boots
-						i(20170),	-- Defiler's Lizardhide Boots
-						i(20158),	-- Defiler's Chain Pauldrons
-						i(20150),	-- Defiler's Chain Girdle
-						i(20151),	-- Defiler's Chain Girdle
-						i(20152),	-- Defiler's Chain Girdle
-						i(20153),	-- Defiler's Chain Girdle
-						i(20154),	-- Defiler's Chain Greaves
-						i(20155),	-- Defiler's Chain Greaves
-						i(20156),	-- Defiler's Chain Greaves
-						i(20157),	-- Defiler's Chain Greaves
-						i(20203),	-- Defiler's Mail Pauldrons
-						i(20195),	-- Defiler's Mail Girdle
-						i(20196),	-- Defiler's Mail Girdle
-						i(20197),	-- Defiler's Mail Girdle
-						i(20198),	-- Defiler's Mail Girdle
-						i(20199),	-- Defiler's Mail Greaves
-						i(20200),	-- Defiler's Mail Greaves
-						i(20201),	-- Defiler's Mail Greaves
-						i(20202),	-- Defiler's Mail Greaves
-						i(20184, {	-- Defiler's Lamellar Spaulders
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(20177, {	-- Defiler's Lamellar Girdle
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(20178, {	-- Defiler's Lamellar Girdle
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(20179, {	-- Defiler's Lamellar Girdle
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(20180, {	-- Defiler's Lamellar Girdle
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(20181, {	-- Defiler's Lamellar Greaves
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(20182, {	-- Defiler's Lamellar Greaves
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(20183, {	-- Defiler's Lamellar Greaves
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(20185, {	-- Defiler's Lamellar Greaves
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(20212, {	-- Defiler's Plate Spaulders
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(20204, {	-- Defiler's Plate Girdle
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(20205, {	-- Defiler's Plate Girdle
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(20206, {	-- Defiler's Plate Girdle
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(20207, {	-- Defiler's Plate Girdle
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(20208, {	-- Defiler's Plate Greaves
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(20209, {	-- Defiler's Plate Greaves
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(20210, {	-- Defiler's Plate Greaves
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(20211, { 	-- Defiler's Plate Greaves
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(20220, {	-- Ironbark Staff
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(20214, {	-- Mindfang
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(20131, {	-- Battle Tabard of the Defilers
-							["cost"] = { { "i", 137642, 10 } },	-- 10x Mark of Honor
-						}),
-						i(20068, {	-- Deathguard's Cloak
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(20072, {	-- Defiler's Talisman
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(21115, {	-- Defiler's Talisman
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(21116, {	-- Defiler's Talisman
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(21120, {	-- Defiler's Talisman
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-					},
-				}),
-				-- Arathi Basin Alliance
-				faction(509, {	-- The League of Arathor
-					["races"] = ALLIANCE_ONLY,
-					["icon"] = "Interface\\Icons\\ability_warrior_rallyingcry",
-					["g"] = {
-						i(20061),	-- Highlander's Epaulets
-						i(20047),	-- Highlander's Cloth Girdle
-						i(20097),	-- Highlander's Cloth Girdle
-						i(20098),	-- Highlander's Cloth Girdle
-						i(20099),	-- Highlander's Cloth Girdle
-						i(20054),	-- Highlander's Cloth Boots
-						i(20094),	-- Highlander's Cloth Boots
-						i(20095),	-- Highlander's Cloth Boots
-						i(20096),	-- Highlander's Cloth Boots
-						i(20059),	-- Highlander's Leather Shoulders
-						i(20045),	-- Highlander's Leather Girdle
-						i(20115),	-- Highlander's Leather Girdle
-						i(20116),	-- Highlander's Leather Girdle
-						i(20117),	-- Highlander's Leather Girdle
-						i(20052),	-- Highlander's Leather Boots
-						i(20112),	-- Highlander's Leather Boots
-						i(20113),	-- Highlander's Leather Boots
-						i(20114),	-- Highlander's Leather Boots
-						i(20060),	-- Highlander's Lizardhide Shoulders
-						i(20046),	-- Highlander's Lizardhide Girdle
-						i(20103),	-- Highlander's Lizardhide Girdle
-						i(20104),	-- Highlander's Lizardhide Girdle
-						i(20105),	-- Highlander's Lizardhide Girdle
-						i(20053),	-- Highlander's Lizardhide Boots
-						i(20100),	-- Highlander's Lizardhide Boots
-						i(20101),	-- Highlander's Lizardhide Boots
-						i(20102),	-- Highlander's Lizardhide Boots
-						i(20055),	-- Highlander's Chain Pauldrons
-						i(20043),	-- Highlander's Chain Girdle
-						i(20088),	-- Highlander's Chain Girdle
-						i(20089),	-- Highlander's Chain Girdle
-						i(20090),	-- Highlander's Chain Girdle
-						i(20050),	-- Highlander's Chain Greaves
-						i(20091),	-- Highlander's Chain Greaves
-						i(20092),	-- Highlander's Chain Greaves
-						i(20093),	-- Highlander's Chain Greaves
-						i(20056),	-- Highlander's Mail Pauldrons
-						i(20044),	-- Highlander's Mail Girdle
-						i(20118),	-- Highlander's Mail Girdle
-						i(20119),	-- Highlander's Mail Girdle
-						i(20120),	-- Highlander's Mail Girdle
-						i(20051),	-- Highlander's Mail Greaves
-						i(20121),	-- Highlander's Mail Greaves
-						i(20122),	-- Highlander's Mail Greaves
-						i(20123),	-- Highlander's Mail Greaves
-						i(20057),	-- Highlander's Plate Spaulders
-						i(20041),	-- Highlander's Plate Girdle
-						i(20124),	-- Highlander's Plate Girdle
-						i(20125),	-- Highlander's Plate Girdle
-						i(20126),	-- Highlander's Plate Girdle
-						i(20048),	-- Highlander's Plate Greaves
-						i(20127),	-- Highlander's Plate Greaves
-						i(20128),	-- Highlander's Plate Greaves
-						i(20129),	-- Highlander's Plate Greaves
-						i(20058),	-- Highlander's Lamellar Spaulers
-						i(20042),	-- Highlander's Lamellar Girdle
-						i(20106),	-- Highlander's Lamellar Girdle
-						i(20107),	-- Highlander's Lamellar Girdle
-						i(20108),	-- Highlander's Lamellar Girdle
-						i(20049),	-- Highlander's Lamellar Greaves
-						i(20109),	-- Highlander's Lamellar Greaves
-						i(20110),	-- Highlander's Lamellar Greaves
-						i(20111),	-- Highlander's Lamellar Greaves
-						i(20069),	-- Ironbark Staff
-						i(20070),	-- Sageclaw
-						i(20132),	-- Arathor Battle Tabard
-						i(20073),	-- Cloak of the Honor Guard
-						i(20071),	-- Talisman of Arathor
-						i(21117),	-- Talisman of Arathor
-						i(21118),	-- Talisman of Arathor
-						i(21119),	-- Talisman of Arathor
-					},
-				}),
-			}),
 			m(92 , {	-- Warsong Gulch
-				faction(890, {	-- Silverwing Sentinels
-					["races"] = ALLIANCE_ONLY,
-					["icon"] = "Interface\\Icons\\ability_racial_shadowmeld",
-					["g"] = {
-						i(19595, {	-- Dryad's Wrist Bindings
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(19596, {	-- Dryad's Wrist Bindings
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(19597, {	-- Dryad's Wrist Bindings
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(22752, {	-- Sentinel's Silk Leggings
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(19587, {	-- Forest Stalker's Bracers
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(19589, {	-- Forest Stalker's Bracers
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(19590, {	-- Forest Stalker's Bracers
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(22749, {	-- Sentinel's Leather Pants
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(22750, {	-- Sentinel's Lizardhide Pants
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(19582, {	-- Windtalker's Wristguards
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(19583, {	-- Windtalker's Wristguards
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(19584, {	-- Windtalker's Wristguards
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(22748, {	-- Sentinel's Chain Leggings
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(30497, {	-- Sentinel's Mail Leggings
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(19578, {	-- Berserker Bracers
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(19580, {	-- Berserker Bracers
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(19581, {	-- Berserker Bracers
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(22753),	-- Sentinel's Lamellar Legguards
-						i(22672),	-- Sentinel's Plate Legguards
-						i(19530, {	-- Caretaker's Cape
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(19531, {	-- Caretaker's Cape
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(19532, {	-- Caretaker's Cape
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(19533, {	-- Caretaker's Cape
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(20428, {	-- Caretaker's Cape
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(19570, {	-- Lorekeeper's Staff
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(19571, {	-- Lorekeeper's Staff
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(19572, {	-- Lorekeeper's Staff
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(19573, {	-- Lorekeeper's Staff
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(20434, {	-- Lorekeeper's Staff
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(19554, {	-- Protector's Sword
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(19555, {	-- Protector's Sword
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(19556, {	-- Protector's Sword
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(19557, {	-- Protector's Sword
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(20440, {	-- Protector's Sword
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(20443, {	-- Sentinel's Blade
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(19546, {	-- Sentinel's Blade
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(19547, {	-- Sentinel's Blade
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(19548, {	-- Sentinel's Blade
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(19549, {	-- Sentinel's Blade
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(19562, {	-- Outrunner's Bow
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(19563, {	-- Outrunner's Bow
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(19564, {	-- Outrunner's Bow
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(19565, {	-- Outrunner's Bow
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(20438, {	-- Outrunner's Bow
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(19506, {	-- Silverwing Battle Tabard
-							["cost"] = { { "i", 137642, 10 } },	-- 10x Mark of Honor
-						}),
-						i(19538, {	-- Sentinel's Medallion
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(19539, {	-- Sentinel's Medallion
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(19540, {	-- Sentinel's Medallion
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(19541, {	-- Sentinel's Medallion
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(20444, {	-- Sentinel's Medallion
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(19522, {	-- Lorekeeper's Ring
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(19523, {	-- Lorekeeper's Ring
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(19524, {	-- Lorekeeper's Ring
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(19525, {	-- Lorekeeper's Ring
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(20431, {	-- Lorekeeper's Ring
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(19514, {	-- Protector's Band
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(19516, {	-- Protector's Band
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(19515, {	-- Protector's Band
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(19517, {	-- Protector's Band
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(20439, {	-- Protector's Band
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(21567, {	-- Rune of Duty
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(21568, {	-- Rune of Duty
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(21565, {	-- Rune of Perfection
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(21566, {	-- Rune of Perfection
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-					},
-				}),
-				faction(889, {	-- Warsong Outriders
-					["races"] = HORDE_ONLY,
-					["icon"] = "Interface\\Icons\\ability_warrior_warcry",
-					["g"] = {
-						i(19595, {	-- Dryad's Wrist Bindings
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(19596, {	-- Dryad's Wrist Bindings
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(19597, {	-- Dryad's Wrist Bindings
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(22747, {	-- Outrider's Silk Leggings
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(19587, {	-- Forest Stalker's Bracers
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(19589, {	-- Forest Stalker's Bracers
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(19590, {	-- Forest Stalker's Bracers
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(22740, {	-- Outrider's Leather Pants
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(22741, {	-- Outrider's Lizardhide Pants
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(19582, {	-- Windtalker's Wristguards
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(19583, {	-- Windtalker's Wristguards
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(19584, {	-- Windtalker's Wristguards
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(22673, {	-- Outrider's Chain Leggings
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(22676, {	-- Outrider's Mail Leggings
-							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
-						}),
-						i(19578, {	-- Berserker Bracers
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(19580, {	-- Berserker Bracers
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(19581, {	-- Berserker Bracers
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(30498),	-- Outrider's Lamellar Legguards
-						i(22651),	-- Outrider's Plate Legguards
-						i(19526, {	-- Battle Healer's Cloak
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(19527, {	-- Battle Healer's Cloak
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(19528, {	-- Battle Healer's Cloak
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(19529, {	-- Battle Healer's Cloak
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(20427, {	-- Battle Healer's Cloak
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(19566, {	-- Advisor's Gnarled Staff
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(19567, {	-- Advisor's Gnarled Staff
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(19568, {	-- Advisor's Gnarled Staff
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(19569, {	-- Advisor's Gnarled Staff
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(20425, {	-- Advisor's Gnarled Staff
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(19550, {	-- Legionnaire's Sword
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(19551, {	-- Legionnaire's Sword
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(19552, {	-- Legionnaire's Sword
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(19553, {	-- Legionnaire's Sword
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(20430, {	-- Legionnaire's Sword
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(19542, {	-- Scout's Blade
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(19543, {	-- Scout's Blade
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(19544, {	-- Scout's Blade
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(19545, {	-- Scout's Blade
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(20441, {	-- Scout's Blade
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(19558, {	-- Outrider's Bow
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(19559, {	-- Outrider's Bow
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(19560, {	-- Outrider's Bow
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(19561, {	-- Outrider's Bow
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(20437, {	-- Outrider's Bow
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
-						}),
-						i(19505, {	-- Warsong Battle Tabard
-							["cost"] = { { "i", 137642, 10 } },	-- 10x Mark of Honor
-						}),
-						i(19534, {	-- Scout's Medallion
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(19535, {	-- Scout's Medallion
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(19536, {	-- Scout's Medallion
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(19537, {	-- Scout's Medallion
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(20442, {	-- Scout's Medallion
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(19518, {	-- Advisor's Ring
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(19519, {	-- Advisor's Ring
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(19520, {	-- Advisor's Ring
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(19521, {	-- Advisor's Ring
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(20426, {	-- Advisor's Ring
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(19510, {	-- Legionnaire's Band
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(19511, {	-- Legionnaire's Band
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(19512, {	-- Legionnaire's Band
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(19513, {	-- Legionnaire's Band
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(20429, {	-- Legionnaire's Band
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(21567, {	-- Rune of Duty
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(21568, {	-- Rune of Duty
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(21565, {	-- Rune of Perfection
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-						i(21566, {	-- Rune of Perfection
-							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
-						}),
-					},
-				}),
+				["achievementID"] = 166,	-- Warsong Gulch Victory
+				["g"] = {
+					faction(890, {	-- Silverwing Sentinels
+						["races"] = ALLIANCE_ONLY,
+						["icon"] = "Interface\\Icons\\ability_racial_shadowmeld",
+						["g"] = {
+							i(19595, {	-- Dryad's Wrist Bindings
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19596, {	-- Dryad's Wrist Bindings
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19597, {	-- Dryad's Wrist Bindings
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(22752, {	-- Sentinel's Silk Leggings
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(19587, {	-- Forest Stalker's Bracers
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19589, {	-- Forest Stalker's Bracers
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19590, {	-- Forest Stalker's Bracers
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(22749, {	-- Sentinel's Leather Pants
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(22750, {	-- Sentinel's Lizardhide Pants
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(19582, {	-- Windtalker's Wristguards
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19583, {	-- Windtalker's Wristguards
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19584, {	-- Windtalker's Wristguards
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(22748, {	-- Sentinel's Chain Leggings
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(30497, {	-- Sentinel's Mail Leggings
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(19578, {	-- Berserker Bracers
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19580, {	-- Berserker Bracers
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19581, {	-- Berserker Bracers
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(22753),	-- Sentinel's Lamellar Legguards
+							i(22672),	-- Sentinel's Plate Legguards
+							i(19530, {	-- Caretaker's Cape
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19531, {	-- Caretaker's Cape
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19532, {	-- Caretaker's Cape
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19533, {	-- Caretaker's Cape
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(20428, {	-- Caretaker's Cape
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19570, {	-- Lorekeeper's Staff
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(19571, {	-- Lorekeeper's Staff
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(19572, {	-- Lorekeeper's Staff
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(19573, {	-- Lorekeeper's Staff
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(20434, {	-- Lorekeeper's Staff
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(19554, {	-- Protector's Sword
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(19555, {	-- Protector's Sword
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(19556, {	-- Protector's Sword
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(19557, {	-- Protector's Sword
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(20440, {	-- Protector's Sword
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(20443, {	-- Sentinel's Blade
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(19546, {	-- Sentinel's Blade
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(19547, {	-- Sentinel's Blade
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(19548, {	-- Sentinel's Blade
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(19549, {	-- Sentinel's Blade
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(19562, {	-- Outrunner's Bow
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(19563, {	-- Outrunner's Bow
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(19564, {	-- Outrunner's Bow
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(19565, {	-- Outrunner's Bow
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(20438, {	-- Outrunner's Bow
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(19506, {	-- Silverwing Battle Tabard
+								["cost"] = { { "i", 137642, 10 } },	-- 10x Mark of Honor
+							}),
+							i(19538, {	-- Sentinel's Medallion
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19539, {	-- Sentinel's Medallion
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19540, {	-- Sentinel's Medallion
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19541, {	-- Sentinel's Medallion
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(20444, {	-- Sentinel's Medallion
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19522, {	-- Lorekeeper's Ring
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19523, {	-- Lorekeeper's Ring
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19524, {	-- Lorekeeper's Ring
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19525, {	-- Lorekeeper's Ring
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(20431, {	-- Lorekeeper's Ring
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19514, {	-- Protector's Band
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19516, {	-- Protector's Band
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19515, {	-- Protector's Band
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19517, {	-- Protector's Band
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(20439, {	-- Protector's Band
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(21567, {	-- Rune of Duty
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(21568, {	-- Rune of Duty
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(21565, {	-- Rune of Perfection
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(21566, {	-- Rune of Perfection
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+						},
+					}),
+					faction(889, {	-- Warsong Outriders
+						["races"] = HORDE_ONLY,
+						["icon"] = "Interface\\Icons\\ability_warrior_warcry",
+						["g"] = {
+							i(19595, {	-- Dryad's Wrist Bindings
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19596, {	-- Dryad's Wrist Bindings
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19597, {	-- Dryad's Wrist Bindings
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(22747, {	-- Outrider's Silk Leggings
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(19587, {	-- Forest Stalker's Bracers
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19589, {	-- Forest Stalker's Bracers
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19590, {	-- Forest Stalker's Bracers
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(22740, {	-- Outrider's Leather Pants
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(22741, {	-- Outrider's Lizardhide Pants
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(19582, {	-- Windtalker's Wristguards
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19583, {	-- Windtalker's Wristguards
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19584, {	-- Windtalker's Wristguards
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(22673, {	-- Outrider's Chain Leggings
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(22676, {	-- Outrider's Mail Leggings
+								["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+							}),
+							i(19578, {	-- Berserker Bracers
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19580, {	-- Berserker Bracers
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19581, {	-- Berserker Bracers
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(30498),	-- Outrider's Lamellar Legguards
+							i(22651),	-- Outrider's Plate Legguards
+							i(19526, {	-- Battle Healer's Cloak
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19527, {	-- Battle Healer's Cloak
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19528, {	-- Battle Healer's Cloak
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19529, {	-- Battle Healer's Cloak
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(20427, {	-- Battle Healer's Cloak
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19566, {	-- Advisor's Gnarled Staff
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(19567, {	-- Advisor's Gnarled Staff
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(19568, {	-- Advisor's Gnarled Staff
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(19569, {	-- Advisor's Gnarled Staff
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(20425, {	-- Advisor's Gnarled Staff
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(19550, {	-- Legionnaire's Sword
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(19551, {	-- Legionnaire's Sword
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(19552, {	-- Legionnaire's Sword
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(19553, {	-- Legionnaire's Sword
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(20430, {	-- Legionnaire's Sword
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(19542, {	-- Scout's Blade
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(19543, {	-- Scout's Blade
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(19544, {	-- Scout's Blade
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(19545, {	-- Scout's Blade
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(20441, {	-- Scout's Blade
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(19558, {	-- Outrider's Bow
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(19559, {	-- Outrider's Bow
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(19560, {	-- Outrider's Bow
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(19561, {	-- Outrider's Bow
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(20437, {	-- Outrider's Bow
+								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+							}),
+							i(19505, {	-- Warsong Battle Tabard
+								["cost"] = { { "i", 137642, 10 } },	-- 10x Mark of Honor
+							}),
+							i(19534, {	-- Scout's Medallion
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19535, {	-- Scout's Medallion
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19536, {	-- Scout's Medallion
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19537, {	-- Scout's Medallion
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(20442, {	-- Scout's Medallion
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19518, {	-- Advisor's Ring
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19519, {	-- Advisor's Ring
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19520, {	-- Advisor's Ring
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19521, {	-- Advisor's Ring
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(20426, {	-- Advisor's Ring
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19510, {	-- Legionnaire's Band
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19511, {	-- Legionnaire's Band
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19512, {	-- Legionnaire's Band
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(19513, {	-- Legionnaire's Band
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(20429, {	-- Legionnaire's Band
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(21567, {	-- Rune of Duty
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(21568, {	-- Rune of Duty
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(21565, {	-- Rune of Perfection
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+							i(21566, {	-- Rune of Perfection
+								["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+							}),
+						},
+					}),
+				},
 			}),
 		}),
 	}),
