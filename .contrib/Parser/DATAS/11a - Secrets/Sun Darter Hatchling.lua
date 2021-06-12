@@ -17,8 +17,8 @@ _.Secrets =
 							n(144128, {	-- Dark Iron Brewer
 								["coords"] = {
 									{ 21.0, 38.3, 36 },	-- Blackrock Mountain
-									{ 55.0, 84.5, 35 },	-- Entrance by MC
-									{ 39.0, 18.3, 35 },	-- BRD Entrance
+									{ 55.0, 84.5, BLACKROCK_MOUNTAIN_LEVEL3 },	-- Entrance by MC
+									{ 39.0, 18.3, BLACKROCK_MOUNTAIN_LEVEL3 },	-- BRD Entrance
 									{ 49.8, 60.9, 243 },	-- Inside Instance
 									{ 49.8, 31.6, BLACKROCK_DEPTHS },	-- Inside Instance
 								},
@@ -104,7 +104,7 @@ _.Secrets =
 						["description"] = "Qty:20\n\nPurchase from Sprinkle Noggenfogger in Tanaris.",
 						["g"] = {
 							n(98844, {	-- Sprinkle Noggenfogger
-								["coord"] = { 51.2, 29.8, 71 },
+								["coord"] = { 51.2, 29.8, TANARIS },
 							}),
 						},
 					}),

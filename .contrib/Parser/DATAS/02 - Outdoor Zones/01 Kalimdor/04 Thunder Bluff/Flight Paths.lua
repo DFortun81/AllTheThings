@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(88, {	-- Thunder Bluff
+		m(THUNDER_BLUFF, {
 			n(FLIGHT_PATHS, {
 				fp(22, {	-- Thunder Bluff, Mulgore
-					["coord"] = { 47.06, 49.59, 88 },
+					["coord"] = { 47.06, 49.59, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 				}),
 			}),

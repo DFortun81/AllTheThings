@@ -298,16 +298,16 @@ _.Holidays = bubbleDown({["u"] = 26},
 									["races"] = ALLIANCE_ONLY,
 									["g"] = {
 										crit(1,  {	-- Arathi Highlands, Refuge Point
-											["coord"] = { 40.1, 49.0, 14 },
-											["maps"] = { 14 },	-- Arathi Highlands
+											["coord"] = { 40.1, 49.0, ARATHI_HIGHLANDS },
+											["maps"] = { ARATHI_HIGHLANDS },
 										}),
 										crit(2,  {	-- Badlands, Dragon's Mouth
-											["coord"] = { 20.9, 56.2, 15 },
-											["maps"] = { 15 },	-- Badlands
+											["coord"] = { 20.9, 56.2, BADLANDS },
+											["maps"] = { BADLANDS },
 										}),
 										crit(3,  {	-- Badlands, Fuselight
-											["coord"] = { 65.9, 35.8, 15 },
-											["maps"] = { 15 },	-- Badlands
+											["coord"] = { 65.9, 35.8, BADLANDS },
+											["maps"] = { BADLANDS },
 										}),
 										crit(4,  {	-- Blasted Lands, Nethergarde Keep
 											["coord"] = { 60.7, 14.2, 17 },
@@ -407,16 +407,16 @@ _.Holidays = bubbleDown({["u"] = 26},
 									["races"] = HORDE_ONLY,
 									["g"] = {
 										crit(1,  {	-- Arathi Highlands, Hammerfall
-											["coord"] = { 69.0, 33.4, 14 },
-											["maps"] = { 14 },	-- Arathi Highlands
+											["coord"] = { 69.0, 33.4, ARATHI_HIGHLANDS },
+											["maps"] = { ARATHI_HIGHLANDS },
 										}),
 										crit(2,  {	-- Badlands, Fuselight
-											["coord"] = { 65.9, 35.8, 15 },
-											["maps"] = { 15 },	-- Badlands
+											["coord"] = { 65.9, 35.8, BADLANDS },
+											["maps"] = { BADLANDS },
 										}),
 										crit(3,  {	-- Badlands, New Kargath
-											["coord"] = { 18.3, 42.8, 15 },
-											["maps"] = { 15 },	-- Badlands
+											["coord"] = { 18.3, 42.8, BADLANDS },
+											["maps"] = { BADLANDS },
 										}),
 										crit(4,  {	-- Blasted Lands, Dreadmaul Hold
 											["coord"] = { 40.5, 11.4, 17 },
@@ -604,24 +604,24 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { 65 },	-- Stonetalon Mountains
 										}),
 										crit(23, {	-- Tanaris, Bootlegger Outpost
-											["coord"] = { 55.7, 60.9, 71 },
-											["maps"] = { 71 },	-- Tanaris
+											["coord"] = { 55.7, 60.9, TANARIS },
+											["maps"] = { TANARIS },
 										}),
 										crit(24, {	-- Tanaris, Gadgetzan
-											["coord"] = { 52.6, 27.1, 71 },
-											["maps"] = { 71 },	-- Tanaris
+											["coord"] = { 52.6, 27.1, TANARIS },
+											["maps"] = { TANARIS },
 										}),
 										crit(25, {	-- Teldrassil, Dolanaar
-											["coord"] = { 55.4, 52.3, 57 },
-											["maps"] = { 57 },	-- Teldrassil
+											["coord"] = { 55.4, 52.3, TELDRASSIL },
+											["maps"] = { TELDRASSIL },
 										}),
 										crit(26, {	-- Un'Goro Crater, Marshal's Stand
-											["coord"] = { 55.2, 62.1, 78 },
-											["maps"] = { 78 },	-- Un'Goro Crater
+											["coord"] = { 55.2, 62.1, UNGORO_CRATER },
+											["maps"] = { UNGORO_CRATER },
 										}),
 										crit(27, {	-- Winterspring, Everlook
-											["coord"] = { 59.8, 51.2, 83 },
-											["maps"] = { 83 },	-- Winterspring
+											["coord"] = { 59.8, 51.2, WINTERSPRING },
+											["maps"] = { WINTERSPRING },
 										}),
 									},
 								}),
@@ -729,24 +729,24 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { 65 },	-- Stonetalon Mountains
 										}),
 										crit(26, {	-- Tanaris, Bootlegger Outpost
-											["coord"] = { 55.7, 60.9, 71 },
-											["maps"] = { 71 },	-- Tanaris
+											["coord"] = { 55.7, 60.9, TANARIS },
+											["maps"] = { TANARIS },
 										}),
 										crit(27, {	-- Tanaris, Gadgetzan
-											["coord"] = { 52.6, 27.1, 71 },
-											["maps"] = { 71 },	-- Tanaris
+											["coord"] = { 52.6, 27.1, TANARIS },
+											["maps"] = { TANARIS },
 										}),
 										crit(28, {	-- Thunder Bluff, Lower Rise
-											["coord"] = { 45.7, 64.5, 88 },
-											["maps"] = { 88 },	-- Thunder Bluff
+											["coord"] = { 45.7, 64.5, THUNDER_BLUFF },
+											["maps"] = { THUNDER_BLUFF },
 										}),
 										crit(29, {	-- Un'Goro Crater, Marshal's Stand
-											["coord"] = { 55.2, 62.1, 78 },
-											["maps"] = { 78 },	-- Un'Goro Crater
+											["coord"] = { 55.2, 62.1, UNGORO_CRATER },
+											["maps"] = { UNGORO_CRATER },
 										}),
 										crit(30, {	-- Winterspring, Everlook
-											["coord"] = { 59.8, 51.2, 83 },
-											["maps"] = { 83 },	-- Winterspring
+											["coord"] = { 59.8, 51.2, WINTERSPRING },
+											["maps"] = { WINTERSPRING },
 										}),
 									},
 								}),

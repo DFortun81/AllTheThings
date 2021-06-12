@@ -627,7 +627,6 @@ _.Zones =
 					["u"] = NEVER_IMPLEMENTED,
 				}),
 				q(60891, {	-- Cataclysm: Onward to Adventure in the Eastern Kingdoms
-					["isBreadcrumb"] = true,
 					["repeatable"] = true,
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.2, 17.3, 84 },
@@ -895,7 +894,6 @@ _.Zones =
 					["races"] = { PANDAREN_ALLIANCE },
 				}),
 				q(60971, {	-- Legion: Onward to Adventure in the Broken Isles
-					["isBreadcrumb"] = true,
 					["repeatable"] = true,
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.2, 17.3, 84 },
@@ -1633,7 +1631,7 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(60969, {	-- Warlords of Draenor: Onward to Adventure in Draenor
-					["isBreadcrumb"] = true,
+					["repeatable"] = true,
 					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
 					["coord"] = { 56.26, 17.32, 84 },
 					["races"] = ALLIANCE_ONLY,

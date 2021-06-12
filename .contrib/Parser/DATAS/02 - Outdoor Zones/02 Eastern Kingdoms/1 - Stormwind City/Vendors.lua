@@ -1852,7 +1852,7 @@ _.Zones =
 					["coord"] = { 74.8, 67.6, 84 },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
-						{"sub", "pvp_gear_base", -9979, -672, -661 },
+						{"sub", "pvp_gear_base", -9979, -673, -661 },
 						{"pop"},	-- Discard the Set header and acquire the children.
 						{"exclude", "headerID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
 					},

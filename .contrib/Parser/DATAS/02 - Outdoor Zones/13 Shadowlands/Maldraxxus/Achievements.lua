@@ -389,7 +389,9 @@ _.Zones =
 						}),
 					},
 				}),
-				ach(14513),		-- Tour of Duty: Maldraxxus
+				ach(14513, {		-- Tour of Duty: Maldraxxus
+					["u"] = PLAYER_VS_PLAYER,
+				}),
 				ach(14312, {	-- Treasures of Maldraxxus
 					crit(1, {	-- Ornate Bone Shield
 						["objectID"] = 347444,	-- Ornate Bone Shield

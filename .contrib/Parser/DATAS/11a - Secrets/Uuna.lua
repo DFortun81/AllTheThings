@@ -9,7 +9,7 @@ _.Secrets =
 		["modelScale"] = 1.1,
 		--["modelID"] = 80456,
 		["maps"] = {
-			33,
+			BLACKROCK_MOUNTAIN,
 			36,
 			SHATTRATH_CITY,
 			115,
@@ -145,7 +145,7 @@ _.Secrets =
 						["sourceQuests"] = { 50145 },	-- Step 6: Kun-Lai Summit
 						["name"] = "Step 7: Blackrock Mountain",
 						["coords"] = {
-							{ 37.5, 67.4, 33 },	-- Inside Blackrock Mountain
+							{ 37.5, 67.4, BLACKROCK_MOUNTAIN },
 							{ 21.1, 38.4, 36 },	-- Burning Steppes
 						},
 						["icon"] = "Interface\\Icons\\inv_misc_toy_02",

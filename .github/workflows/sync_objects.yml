@@ -27,7 +27,9 @@ jobs:
 
       - name: Sync objects
         working-directory: .contrib/.tools/Localization
-        run: python sync_objects.py
+        run: |
+          python sync_objects.py
+          git add --all
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3

@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(14, {	-- Arathi Highlands
+		m(ARATHI_HIGHLANDS, {
 			n(ZONEDROPS, {
 				i(5624,  {	-- Circlet of the Order
 					["crs"] = { 2584 },	-- Stromgarde Defender

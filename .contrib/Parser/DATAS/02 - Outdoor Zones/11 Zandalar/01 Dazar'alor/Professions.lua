@@ -445,7 +445,7 @@ _.Zones =
 					}),
 					q(55218, {	-- Sheza's Prized Leather
 						["provider"] = { "n", 3037 },	-- Sheza Wildmane
-						["coord"] = { 69.7, 26.7, 88 },
+						["coord"] = { 69.7, 26.7, THUNDER_BLUFF },
 						["sourceQuest"] = 55217,	-- Repaying the Life Debt
 						["requireSkill"] = LEATHERWORKING,
 						["races"] = HORDE_ONLY,

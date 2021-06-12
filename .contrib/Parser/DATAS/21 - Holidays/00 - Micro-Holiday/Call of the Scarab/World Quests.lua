@@ -2,6 +2,7 @@
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
 
+-- TODO: format
 _.Holidays =
 {
 	{	-- Call of the Scarab

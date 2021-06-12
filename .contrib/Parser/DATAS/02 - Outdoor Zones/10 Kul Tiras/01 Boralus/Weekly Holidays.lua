@@ -6,7 +6,9 @@ _.Zones =
 {
 	m(876, { 	-- Kul'Tiras
 		m(1161, {	-- Boralus
-			n(-176, {	-- Weekly Holidays
+			n(-176, sharedData({	-- Weekly Holidays
+				["u"] = REMOVED_FROM_GAME,
+			}, {
 				q(53032, {	-- A Burning Path Through Time (BC Timewalking)
 					["providers"] = {
 						{ "n", 144384 },	-- Chronicler Shoopa
@@ -138,7 +140,6 @@ _.Zones =
 				q(53037, {	-- Emissary of War (Mythic dungeons)
 					["provider"] = { "n", 144383 },	-- Chronicler Toopa
 					["coord"] = { 74.11, 14.19, 1161 },
-					["races"] = ALLIANCE_ONLY,
 					["isWeekly"] = true,
 					["g"] = {
 						i(164257, {	-- Cache of Uldir Treasures (Heroic Quality)
@@ -179,7 +180,6 @@ _.Zones =
 				q(53039, {	-- The Arena Calls
 					["provider"] = { "n", 144383 },	-- Chronicler Toopa
 					["coord"] = { 74.11, 14.19, 1161 },
-					["races"] = ALLIANCE_ONLY,
 					["isWeekly"] = true,
 					["g"] = {
 						i(164261),	-- Steel Strongbox
@@ -188,16 +188,14 @@ _.Zones =
 				q(53038, {	-- The Very Best (pet battles)
 					["provider"] = { "n", 144383 },	-- Chronicler Toopa
 					["coord"] = { 74.11, 14.19, 1161 },
-					["races"] = ALLIANCE_ONLY,
 					["isWeekly"] = true,
 				}),
 				q(53030, {	-- The World Awaits
 					["provider"] = { "n", 144383 },	-- Chronicler Toopa
 					["coord"] = { 74.11, 14.19, 1161 },
-					["races"] = ALLIANCE_ONLY,
 					["isWeekly"] = true,
 				}),
-			}),
+			})),
 		}),
 	}),
 };

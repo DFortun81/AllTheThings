@@ -430,7 +430,9 @@ _.Zones =
 						}),
 					},
 				}),
-				ach(12574),		-- Tour of Duty: Nazmir
+				ach(12574, {		-- Tour of Duty: Nazmir
+					["u"] = PLAYER_VS_PLAYER,
+				}),
 				ach(12771, {	-- Treasures of Nazmir
 					crit(1,  {	-- Lucky Horace's Lucky Chest
 						["objectID"] = 279253,	-- Lucky Horace's Lucky Chest

@@ -117,8 +117,8 @@ _.Holidays =
 					},
 				}),
 				n(150905, {	-- Shirtsi Clothpatch
-					["coord"] = { 59.6, 50.3, 83 },
-					["maps"] = { 83 },	-- Winterspring
+					["coord"] = { 59.6, 50.3, WINTERSPRING },
+					["maps"] = { WINTERSPRING },
 					["u"] = 22,
 					["g"] = {
 						un(22, i(167229)),	-- Shirtsi's Cloth Shirt

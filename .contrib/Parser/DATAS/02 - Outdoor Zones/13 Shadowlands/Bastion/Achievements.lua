@@ -687,7 +687,9 @@ _.Zones =
 						}),
 					},
 				}),
-				ach(14514),		-- Tour of Duty: Bastion
+				ach(14514, {		-- Tour of Duty: Bastion
+					["u"] = PLAYER_VS_PLAYER,
+				}),
 				ach(14768, {	-- What is that Melody?
 					crit(1, {		-- Hymn of Purity
 						["description"] = "Triangular stacks of bundled scrolls, often found on tables and benches.  The coordinates given are not exhaustive; this scroll can spawn throughout the Temple of Purity.  Part of this temple is full of elite mobs.",

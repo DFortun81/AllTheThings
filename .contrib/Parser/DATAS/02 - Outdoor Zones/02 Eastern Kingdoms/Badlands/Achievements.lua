@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(15, {	-- Badlands
+		m(BADLANDS, {
 			n(ACHIEVEMENTS, {
 				ach(5444),	-- Ready, Set, Goat!
 				ach(4900, {	-- Badlands Quests

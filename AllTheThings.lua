@@ -1051,6 +1051,13 @@ local function GetCompletionText(state)
 end
 local function GetProgressTextForRow(data)
 	if data.total and (data.total > 1 or (data.total > 0 and not data.collectible)) then
+		-- groups which are specifically shown by being a Cost for another Thing should just show an Icon instead of their 'fake' progress/total
+		local costTotal = data.costTotal;
+		if costTotal and
+			data.total - data.progress > 0 and
+			(data.total - data.progress) == (costTotal - data.costProgress) then
+			return L["COST_ICON"];
+		end
 		return GetProgressColorText(data.progress or 0, data.total);
 	elseif data.collectible then
 		return GetCollectionIcon(data.collected);
@@ -1060,6 +1067,13 @@ local function GetProgressTextForRow(data)
 end
 local function GetProgressTextForTooltip(data)
 	if data.total and (data.total > 1 or (data.total > 0 and not data.collectible)) then
+		-- groups which are specifically shown by being a Cost for another Thing should just show an Icon instead of their 'fake' progress/total
+		local costTotal = data.costTotal;
+		if costTotal and
+			data.total - data.progress > 0 and
+			(data.total - data.progress) == (costTotal - data.costProgress) then
+			return L["COST_TEXT"];
+		end
 		return GetProgressColorText(data.progress or 0, data.total);
 	elseif data.collectible then
 		return GetCollectionText(data.collected);
@@ -2717,20 +2731,20 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 		-- check groups outwards to ensure that the group can be displayed in the contains under the current filters
 		if app.GroupRequirementsFilter(group) and app.GroupFilter(group) then
 			-- print("display")
-			local right = nil;
+			local right;
 			if group.total and (group.total > 1 or (not group.collectible and group.total > 0)) then
 				-- total = total + group.total;
 				-- progress = progress + (group.progress or 0);
 				if app.GroupVisibilityFilter(group) then
-					right = GetProgressColorText(group.progress, group.total);
+					right = true;
 				-- the group itself may be a trackable thing
 				elseif group.trackable then
 					if group.saved then
 						if app.CollectedItemVisibilityFilter(group) then
-							right = L["COMPLETE_ICON"];
+							right = true;
 						end
 					elseif app.ShowIncompleteThings(group) then
-						right = L["INCOMPLETE_ICON"];
+						right = true;
 					end
 				elseif group.visible then
 					right = group.count and (group.count .. "x") or "---";
@@ -2741,22 +2755,26 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 					if group.collected then
 						-- progress = progress + 1;
 						if app.CollectedItemVisibilityFilter(group) then
-							right = GetCollectionIcon(group.collected);
+							right = true;
 						end
 					else
-						right = L["NOT_COLLECTED_ICON"];
+						right = true;
 					end
 				elseif group.trackable then
 					if group.saved then
 						if app.CollectedItemVisibilityFilter(group) then
-							right = L["COMPLETE_ICON"];
+							right = true;
 						end
 					elseif app.ShowIncompleteThings(group) then
-						right = L["INCOMPLETE_ICON"];
+						right = true;
 					end
 				elseif group.visible then
 					right = group.count and (group.count .. "x") or "---";
 				end
+			end
+
+			if right == true then
+				right = GetProgressTextForRow(group);
 			end
 
 			-- If there's progress to display, then let's summarize a bit better.
@@ -6284,12 +6302,12 @@ local fields = {
 		local info = t.info;
 		return info and info.name or ("Currency #" .. t.currencyID);
 	end,
-	["collectible"] = function(t)
-		return t.collectibleAsCost;
-	end,
-	["collected"] = function(t)
-		return t.collectedAsCost;
-	end,
+	-- ["collectible"] = function(t)
+	-- 	return t.collectibleAsCost;
+	-- end,
+	-- ["collected"] = function(t)
+	-- 	return t.collectedAsCost;
+	-- end,
 	["collectedAsCost"] = function(t)
 		local results = app.SearchForField("currencyIDAsCost", t.currencyID);
 		if results and #results > 0 then
@@ -6326,6 +6344,12 @@ local fields = {
 	["collectibleAsCostAfterFailure"] = app.ReturnFalse,
 	["collectedAsCostAfterFailure"] = function(t)
 
+	end,
+	["costTotal"] = function(t)
+		return t.collectibleAsCost and 1 or 0;
+	end,
+	["costProgress"] = function(t)
+		return t.collectedAsCost and 1 or 0;
 	end,
 };
 app.BaseCurrencyClass = app.BaseObjectFields(fields);
@@ -8043,11 +8067,11 @@ local itemFields = {
 		return rawget(t, "modItemID");
 	end,
 	["trackableAsQuest"] = app.ReturnTrue,
-	["collectible"] = function(t)
-		return t.collectibleAsCost;
-	end,
+	-- ["collectible"] = function(t)
+	-- 	return t.collectibleAsCost;
+	-- end,
 	["collectibleAsAchievement"] = function(t)
-		return app.CollectibleAchievements or t.collectibleAsCost;
+		return app.CollectibleAchievements;
 	end,
 	["collectibleAsCost"] = function(t)
 		if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved then return false; end
@@ -8114,9 +8138,12 @@ local itemFields = {
 		end
 		return false;
 	end,
+	["costsCount"] = function(t)
+		if t.costCollectibles then return #t.costCollectibles; end
+	end,
 	["collectibleAsCostAfterFailure"] = app.ReturnFalse,
 	["collectibleAsFaction"] = function(t)
-		return app.CollectibleReputations or t.collectibleAsCost;
+		return app.CollectibleReputations;
 	end,
 	["collectibleAsFactionOrQuest"] = function(t)
 		return app.CollectibleReputations or t.collectibleAsQuest;
@@ -8125,11 +8152,11 @@ local itemFields = {
 		return app.CollectibleTransmog;
 	end,
 	["collectibleAsQuest"] = function(t)
-		return app.CollectibleAsQuest(t) or t.collectibleAsCost;
+		return app.CollectibleAsQuest(t);
 	end,
-	["collected"] = function(t)
-		return t.collectedAsCost;
-	end,
+	-- ["collected"] = function(t)
+	-- 	return t.collectedAsCost;
+	-- end,
 	["collectedAsCost"] = function(t)
 		if not t.costCollectibles then return; end
 		-- local LOG = t.s;
@@ -8206,7 +8233,7 @@ local itemFields = {
 
 	end,
 	["collectedAsFaction"] = function(t)
-		return t.collectedAsFactionOnly or t.collectedAsCost;
+		return t.collectedAsFactionOnly;
 	end,
 	["collectedAsFactionOnly"] = function(t)
 		if t.factionID then
@@ -8233,19 +8260,26 @@ local itemFields = {
 		return t.collectedAsFactionOnly or t.collectedAsQuest;
 	end,
 	["collectedAsQuest"] = function(t)
-		return IsQuestFlaggedCompletedForObject(t) or t.collectedAsCost;
+		return IsQuestFlaggedCompletedForObject(t);
 	end,
 	["collectedAsTransmog"] = function(t)
-		-- item has no cost use, or cost has been fulfilled
-		-- TODO: find a way to make this lag less... the time it takes to calculate this on account/debug is insane for whatever reason
-		if not t.collectibleAsCost or t.collectedAsCost then
-			return ATTAccountWideData.Sources[rawget(t, "s")];
-		end
-		-- item is still required to be obtained/collected
-		return false;
+		return ATTAccountWideData.Sources[rawget(t, "s")];
+		-- -- item has no cost use, or cost has been fulfilled
+		-- -- TODO: find a way to make this lag less... the time it takes to calculate this on account/debug is insane for whatever reason
+		-- if not t.collectibleAsCost or t.collectedAsCost then
+		-- 	return ATTAccountWideData.Sources[rawget(t, "s")];
+		-- end
+		-- -- item is still required to be obtained/collected
+		-- return false;
 	end,
 	["savedAsQuest"] = function(t)
 		return IsQuestFlaggedCompleted(t);
+	end,
+	["costTotal"] = function(t)
+		return t.collectibleAsCost and 1 or 0;
+	end,
+	["costProgress"] = function(t)
+		return t.collectedAsCost and 1 or 0;
 	end,
 };
 app.BaseItem = app.BaseObjectFields(itemFields);
@@ -9407,10 +9441,11 @@ end)();
 
 -- Quest Lib
 (function()
+local C_QuestLog_GetQuestObjectives = C_QuestLog.GetQuestObjectives;
 local C_QuestLog_IsOnQuest = C_QuestLog.IsOnQuest;
-local C_QuestLog_ReadyForTurnIn = C_QuestLog.ReadyForTurnIn;
 local C_QuestLog_IsQuestReplayable = C_QuestLog.IsQuestReplayable;
 local C_QuestLog_IsQuestReplayedRecently = C_QuestLog.IsQuestReplayedRecently;
+local C_QuestLog_ReadyForTurnIn = C_QuestLog.ReadyForTurnIn;
 local questFields = {
 	["key"] = function(t)
 		return "questID";
@@ -9420,6 +9455,17 @@ local questFields = {
 	end,
 	["name"] = function(t)
 		return QuestTitleFromID[t.questID];
+	end,
+	["objectiveInfo"] = function(t)
+		local questID = t.questID;
+		if questID then
+			local objectives = C_QuestLog_GetQuestObjectives(questID);
+			if objectives then
+				rawset(t, "objectiveInfo", objectives);
+				return objectives;
+			end
+		end
+		rawset(t, "objectiveInfo", app.EmptyTable)
 	end,
 	["description"] = function(t)
 		-- Provide a fall-back description as to collectibility of a Quest due to granting reputation
@@ -9817,18 +9863,23 @@ local fields = {
 		return app.TryColorizeName(t, t.name);
 	end,
 	["name"] = function(t)
-		local questID = t.questID;
-		if questID then
-			local objectives = C_QuestLog.GetQuestObjectives(questID);
-			if objectives then
-				local objective = objectives[t.objectiveID];
-				if objective then
-					return objective.text;
-				end
-			end
-			return RETRIEVING_DATA;
+		local objInfo = t.parent.objectiveInfo;
+		if objInfo then
+			local objective = objInfo[t.objectiveID];
+			if objective then return objective.text; end
 		end
-		return "INVALID: Must be relative to a Quest Object.";
+		-- local questID = t.questID;
+		-- if questID then
+		-- 	local objectives = C_QuestLog_GetQuestObjectives(questID);
+		-- 	if objectives then
+		-- 		local objective = objectives[t.objectiveID];
+		-- 		if objective then
+		-- 			return objective.text;
+		-- 		end
+		-- 	end
+		-- 	return RETRIEVING_DATA;
+		-- end
+		return L["QUEST_OBJECTIVE_INVALID"];
 	end,
 	["icon"] = function(t)
 		if t.providers then
@@ -9879,7 +9930,9 @@ local fields = {
 	["repeatable"] = function(t)
 		return t.parent.repeatable;
 	end,
-	["collectible"] = app.ReturnFalse,
+	["collectible"] = function(t)
+		return t.questID and C_QuestLog_IsOnQuest(t.questID);
+	end,
 	["trackable"] = app.ReturnTrue,
 	["collected"] = function(t)
 		-- If the parent is collected, return immediately.
@@ -9887,32 +9940,46 @@ local fields = {
 		if collected then return collected; end
 
 		-- Check to see if the objective was completed.
-		local questID = t.questID;
-		if questID then
-			local objectives = C_QuestLog.GetQuestObjectives(questID);
-			if objectives then
-				local objective = objectives[t.objectiveID];
-				if objective then
-					return objective.finished and 1;
-				end
-			end
+		local objInfo = t.parent.objectiveInfo;
+		if objInfo then
+			local objective = objInfo[t.objectiveID];
+			if objective then return objective.finished and 1; end
+		-- else
+		-- 	print("objective.collected Not nested under Quest?",t.questID,t.objectiveID,t.parent.key,t.parent[t.parent.key])
 		end
+		-- local questID = t.questID;
+		-- if questID then
+		-- 	local objectives = C_QuestLog_GetQuestObjectives(questID);
+		-- 	if objectives then
+		-- 		local objective = objectives[t.objectiveID];
+		-- 		if objective then
+		-- 			return objective.finished and 1;
+		-- 		end
+		-- 	end
+		-- end
 	end,
 	["saved"] = function(t)
 		-- If the parent is saved, return immediately.
 		if t.parent.saved then return true; end
 
 		-- Check to see if the objective was completed.
-		local questID = t.questID;
-		if questID then
-			local objectives = C_QuestLog.GetQuestObjectives(questID);
-			if objectives then
-				local objective = objectives[t.objectiveID];
-				if objective then
-					return objective.finished and 1;
-				end
-			end
+		local objInfo = t.parent.objectiveInfo;
+		if objInfo then
+			local objective = objInfo[t.objectiveID];
+			if objective then return objective.finished and 1; end
+		-- else
+		-- 	print("objective.saved Not nested under Quest?",t.questID,t.objectiveID,t.parent.key,t.parent[t.parent.key])
 		end
+		-- local questID = t.questID;
+		-- if questID then
+		-- 	local objectives = C_QuestLog_GetQuestObjectives(questID);
+		-- 	if objectives then
+		-- 		local objective = objectives[t.objectiveID];
+		-- 		if objective then
+		-- 			return objective.finished and 1;
+		-- 		end
+		-- 	end
+		-- end
 	end,
 };
 app.BaseQuestObjective = app.BaseObjectFields(fields);
@@ -9967,7 +10034,9 @@ local fields = {
 				return link;
 			end
 		end
-		return select(3, GetSpellInfo(t.spellID)) or (t.requireSkill and select(3, GetSpellInfo(t.requireSkill)));
+		return select(3, GetSpellInfo(t.spellID))
+			or (t.requireSkill and select(3, GetSpellInfo(t.requireSkill)))
+			or 134939;	-- Inv_scroll_03
 	end,
 	["link"] = function(t)
 		if t.itemID then
@@ -10076,7 +10145,8 @@ local fields = {
 		return t.link;
 	end,
 	["icon"] = function(t)
-		return select(3, GetSpellInfo(t.spellID));
+		return select(3, GetSpellInfo(t.spellID))
+			or 136243;	-- Trade_engineering
 	end,
 	["link"] = function(t)
 		if t.itemID and t.filterID ~= 200 and t.f ~= 200 then
@@ -10649,7 +10719,7 @@ function app.FilterItemClass_RequiredSkill(item)
 end
 function app.FilterItemClass_RequireFaction(item)
 	if item.minReputation and app.IsFactionExclusive(item.minReputation[1]) then
-		if item.minReputation[2] >= (select(6, GetFactionInfoByID(item.minReputation[1])) or 0) then
+		if item.minReputation[2] > (select(6, GetFactionInfoByID(item.minReputation[1])) or 0) then
 			--print("Filtering Out", item.key, item[item.key], item.text, item.minReputation[1], app.CreateFaction(item.minReputation[1]).text);
 			return false;
 		else
@@ -11251,10 +11321,11 @@ UpdateGroups = function(parent, g, defaultVis)
 end
 ]]--
 UpdateGroup = function(parent, group, window)
-	-- local LOG = group.key == "questID" and group[group.key] == 8623 and (group.key .. ":" .. group[group.key]);
-	-- if LOG then app.DEBUG_LOG = LOG; end
-	-- if LOG or app.DEBUG_LOG then print(group.key,group.key and group[group.key],"Updating",group._Updated,app._Updated,"t/p/v",group.total,group.progress,group.visible) end
-
+	-- local shouldLog = group.key == "questID" and group[group.key] == 62691 and 62691;
+	-- if not app.DEBUG_LOG and shouldLog then
+	-- 	app.DEBUG_LOG = shouldLog;
+	-- end
+	
 	-- -- Only update a group ONCE per update cycle...
 	-- if not group._Updated or group._Updated ~= app._Updated then
 	-- 	if LOG then print("First Update") end
@@ -11272,75 +11343,122 @@ UpdateGroup = function(parent, group, window)
 	local visible = app.MODE_DEBUG;
 
 	-- Determine if this user can enter the instance or acquire the item.
+	-- If the 'can equip' filter says true
 	if app.GroupRequirementsFilter(group) then
-		-- Check if this is a group
-		if group.g then
+		if app.GroupFilter(group) then
+			-- Set total/progress for this object using it's cost information if any
+			group.total = group.costTotal or 0;
+			group.progress = group.total > 0 and group.costProgress or 0
+
+			-- if app.DEBUG_LOG then print("UpdateGroup.Initial",group.key,group.key and group[group.key],group.progress,group.total) end
+
 			-- If this item is collectible, then mark it as such.
 			if group.collectible then
 				-- An item is a special case where it may have both an appearance and a set of items
-				group.progress = group.collected and 1 or 0;
-				group.total = 1;
-			else
-				-- Default to 0 for both
-				group.progress = 0;
-				group.total = 0;
+				group.progress = group.progress + (group.collected and 1 or 0);
+				group.total = group.total + 1;
+				-- if app.DEBUG_LOG then print("UpdateGroup.Collectible",group.progress,group.total) end
+			-- else
+			-- 	-- Default to 0 for both
+			-- 	group.progress = 0;
+			-- 	group.total = 0;
 			end
 
-			-- if LOG or app.DEBUG_LOG then print(group.key,group.key and group[group.key],"Has g","t/p",group.total,group.progress) end
+			-- Check if this is a group
+			if group.g then
+				-- if app.DEBUG_LOG then print("UpdateGroup.g",group.progress,group.total) end
 
-			-- TODO: ideally the recursive update would be outside of the top group, and we only need to process the top group
-			-- if everything inside is hidden, otherwise it would obviously need to be shown.
-			-- BUT things have not been designed in this way entirely... plenty of things are 'visible' even though they are Within
-			-- otherwise filtered groups... maybe that's good...?
+				-- if LOG or app.DEBUG_LOG then print(group.key,group.key and group[group.key],"Has g","t/p",group.total,group.progress) end
 
-			-- If the 'can equip' filter says true
-			if app.GroupFilter(group) then
+				-- TODO: ideally the recursive update would be outside of the top group, and we only need to process the top group
+				-- if everything inside is hidden, otherwise it would obviously need to be shown.
+				-- BUT things have not been designed in this way entirely... plenty of things are 'visible' even though they are Within
+				-- otherwise filtered groups... maybe that's good...?
+
+				-- If the 'can equip' filter says true
+				-- if app.GroupFilter(group) then
+
+
+				-- -- If this item is collectible, then mark it as such.
+				-- if group.collectible then
+				-- 	-- An item is a special case where it may have both an appearance and a set of items
+				-- 	group.progress = group.progress + (group.collected and 1 or 0);
+				-- 	group.total = group.total + 1;
+				-- -- else
+				-- -- 	-- Default to 0 for both
+				-- -- 	group.progress = 0;
+				-- -- 	group.total = 0;
+				-- end
 
 				-- Update the subgroups recursively...
-				visible = UpdateGroups(group, group.g, window);
+				UpdateGroups(group, group.g, window);
+				-- if app.DEBUG_LOG then print("UpdateGroup.g.Updated",group.progress,group.total) end
 
 				-- if LOG or app.DEBUG_LOG then print(group.key,group.key and group[group.key],"After g","t/p",group.total,group.progress) end
 
 				-- Increment the parent group's totals.
-				parent.total = (parent.total or 0) + group.total;
-				parent.progress = (parent.progress or 0) + group.progress;
+				-- parent.total = (parent.total or 0) + group.total;
+				-- parent.progress = (parent.progress or 0) + group.progress;
 
+				-- If this group is forced to be shown due to contained groups being shown without being collectible
+				if group.forceShow then
+					-- if app.DEBUG_LOG then print("UpdateGroup.g.forceShow",group.progress,group.total) end
+					visible = true;
+					group.forceShow = nil;
+				-- If this group contains Things, show based on visibility filter
+				elseif group.total > 0 and app.GroupVisibilityFilter(group) then
+					-- if app.DEBUG_LOG then print("UpdateGroup.g.total",group.progress,group.total) end
+					visible = true;
 				-- If this group is trackable, then we should show it.
-				if group.total > 0 and app.GroupVisibilityFilter(group) then
-					visible = true;
 				elseif app.ShowIncompleteThings(group) and not group.saved then
+					-- if app.DEBUG_LOG then print("UpdateGroup.g.trackable",group.progress,group.total) end
 					visible = true;
+					parent.forceShow = true;
 				-- elseif group.itemID and app.CollectibleLoot and group.f then
 				-- 	visible = true;
 				end
-			end
-		else
-			-- If the 'can equip' filter says true
-			if app.GroupFilter(group) then
-				if group.collectible then
+				-- end
+			else
+				-- If the 'can equip' filter says true
+				-- if app.GroupFilter(group) then
+
+				if group.total > 0 then
+					-- if app.DEBUG_LOG then print("UpdateGroup.total",group.progress,group.total) end
 					-- Increment the parent group's totals.
-					parent.total = (parent.total or 0) + 1;
+					-- group.total = group.total + 1;
 
 					-- If we've collected the item, use the "Show Collected Items" filter.
-					if group.collected then
-						parent.progress = (parent.progress or 0) + 1;
+					if group.total == group.progress then
+						-- if app.DEBUG_LOG then print("UpdateGroup.complete",group.progress,group.total) end
+						-- group.progress = group.progress + 1;
 						if app.CollectedItemVisibilityFilter(group) then
+							-- if app.DEBUG_LOG then print("UpdateGroup.showcomplete",group.progress,group.total) end
 							visible = true;
 						end
 					else
 						visible = true;
 					end
 				elseif group.trackable then
+					-- if app.DEBUG_LOG then print("UpdateGroup.trackable",group.progress,group.total) end
 					-- If this group is trackable, then we should show it.
 					if app.ShowIncompleteThings(group) and not group.saved then
+						-- if app.DEBUG_LOG then print("UpdateGroup.trackable.visible",group.progress,group.total) end
 						visible = true;
+						parent.forceShow = true;
 					end
 				-- elseif group.itemID and app.CollectibleLoot and group.f then
 				-- 	visible = true;
 				end
-			else
-				visible = false;
+
+				--- Increment parent total/progress
+				-- parent.total = (parent.total or 0) + group.total;
+				-- parent.progress = (parent.progress or 0) + group.progress;
+				-- end
 			end
+
+			-- Increment the parent group's totals
+			parent.total = (parent.total or 0) + group.total;
+			parent.progress = (parent.progress or 0) + group.progress;
 		end
 	end
 
@@ -11348,6 +11466,10 @@ UpdateGroup = function(parent, group, window)
 	group.visible = visible;
 	-- if LOG or app.DEBUG_LOG then print(group.key,group.key and group[group.key],"Update Complete","t/p/v",group.total,group.progress,group.visible) end
 	-- if LOG then app.DEBUG_LOG = nil; end
+	-- if shouldLog then
+	-- 	print("---")
+	-- 	app.DEBUG_LOG = nil;
+	-- end
 	return visible;
 end
 UpdateGroups = function(parent, g, window)
@@ -19276,7 +19398,12 @@ app.events.VARIABLES_LOADED = function()
 	-- Check to see if we have a leftover ItemDB cache
 	GetDataMember("HeirloomUpgradeLevels", {});
 	GetDataMember("SeasonalFilters", {});
-	GetDataMember("UnobtainableItemFilters", {});
+	local unobtainablesAllowed = GetDataMember("UnobtainableItemFilters", {});
+
+	-- default state filter for 12 (PvP filter)
+	if unobtainablesAllowed[12] == nil then
+		unobtainablesAllowed[12] = true;
+	end
 
 	-- Clean up settings
 	local oldsettings = {};
@@ -19426,6 +19553,7 @@ app.events.VARIABLES_LOADED = function()
 		end
 		-- Cache some collection states for misc. once-per-account quests
 		for i,questID in ipairs({
+			-- BFA Mission/Outpost Quests which trigger locking Account-Wide HQTs
 			52478,	-- Hillcrest Pasture (Mission Completion)
 			52479,	-- Hillcrest Pasture (BFA Horde Outpost Unlock)
 			52313,	-- Mudfisher Cove (Mission Completion)
@@ -19455,15 +19583,21 @@ app.events.VARIABLES_LOADED = function()
 			52888,	-- Verdant Hollow (BFA Alliance Outpost Unlock)
 			53043,	-- Vulture's Nest (Mission Completion)
 			53044,	-- Vulture's Nest (BFA Alliance Outpost Unlock)
-
+			
+			-- These are BOTH once-per-account (single character) completion & shared account-wide lockout groups (likely due to locking Account-Wide HQTs)
 			53063,	-- A Mission of Unity (BFA Alliance WQ Unlock)
 			53064,	-- A Mission of Unity (BFA Horde WQ Unlock)
-			53061,	-- The Azerite Advantage (BFA Alliance Island Unlock)
-			53062,	-- The Azerite Advantage (BFA Horde Island Unlock)
+
+			53061,	-- The Azerite Advantage (BFA Alliance Island Unlock / AWHQT 51994)
+			53062,	-- The Azerite Advantage (BFA Horde Island Unlock / AWHQT 51994)
+
 			53055,	-- Pushing Our Influence (BFA Horde PreQ for 1st Foothold)
 			53056,	-- Pushing Our Influence (BFA Alliance PreQ for 1st Foothold)
-
-		--	Shard Labor
+			
+			53207,	-- The Warfront Looms (BFA Horde Warfront Breadcrumb)
+			53175,	-- The Warfront Looms (BFA Alliance Warfront Breadcrumb)
+			
+			-- Shard Labor
 			61229,	-- forging the Crystal Mallet of the Heralds
 			61191,	-- ringing the Vesper of the Silver Wind
 			61183,	-- looting the Gift of the Silver Wind
@@ -19486,7 +19620,7 @@ app.events.VARIABLES_LOADED = function()
 			end
 		end
 
-		-- if we ever erroneously add an account-wide quest and find out it isn't (or Blizzard actually fixes it to give acocunt-wide credit)
+		-- if we ever erroneously add an account-wide quest and find out it isn't (or Blizzard actually fixes it to give account-wide credit)
 		-- put it here so it reverts back to being handled as a normal quest
 		for _,questID in ipairs({
 			32008,	-- Audrey Burnhep (A)
@@ -19499,6 +19633,22 @@ app.events.VARIABLES_LOADED = function()
 		-- Check for fixing Blizzard's incompetence in consistency for shared account-wide quest eligibility which is only granted to some of the shared account-wide quests
 		for i,questGroup in ipairs({
 			{ 32008, 32009, 31878, 31879, 31880, 31881, 31882, 31883, 31884, 31885, },	-- Pet Battle Intro quests
+			{
+				53063, 	-- A Mission of Unity (BFA Alliance WQ Unlock)
+				53064, 	-- A Mission of Unity (BFA Horde WQ Unlock)
+			},
+			{
+				53061, 	-- The Azerite Advantage (BFA Alliance Island Unlock / AWHQT 51994)
+				53062,  -- The Azerite Advantage (BFA Horde Island Unlock / AWHQT 51994)
+			},
+			{
+				53055, 	-- Pushing Our Influence (BFA Horde PreQ for 1st Foothold)
+				53056,	-- Pushing Our Influence (BFA Alliance PreQ for 1st Foothold)
+			},
+			{
+				53207,	-- The Warfront Looms (BFA Horde Warfront Breadcrumb)
+				53175,	-- The Warfront Looms (BFA Alliance Warfront Breadcrumb)
+			},
 		}) do
 			for _,questID in ipairs(questGroup) do
 				-- If this Character has the Quest completed
@@ -19508,7 +19658,7 @@ app.events.VARIABLES_LOADED = function()
 					anyComplete = true;
 				end
 			end
-			-- if any of the quest group is considered complete, then the rest need to be 'considered' complete as well since they can never be actually completed on the account
+			-- if any of the quest group is considered complete, then the rest need to be considered 'complete' as well since they can never be actually completed on the account
 			if anyComplete then
 				for _,questID in ipairs(questGroup) do
 					-- Mark the quest completion since it's not 'really' completed

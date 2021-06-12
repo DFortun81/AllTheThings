@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(57, {	-- Teldrassil
+		m(TELDRASSIL, {
 			filter(101, {	-- Pet Battle
 				p(507, {	-- Crested Owl
 					["crs"] = { 62242 },	-- Crested Owl
@@ -26,7 +26,7 @@ _.Zones =
 					["crs"] = { 61071 },	-- Small Frog
 				}),
 				n(63070, {	-- Valeena
-					["coord"] = { 55.2, 51.2, 57 },
+					["coord"] = { 55.2, 51.2, TELDRASSIL },
 					["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.|r",
 					["g"] = {
 						p(138, {	-- Blue Moth
@@ -51,25 +51,25 @@ _.Zones =
 				}),
 				q(31555, {	-- Got one!
 					["provider"] = { "n", 63070 },	-- Valeena
-					["coord"] = { 55.2, 51.2, 57 },
+					["coord"] = { 55.2, 51.2, TELDRASSIL },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 31826,	-- Level Up!
 				}),
 				q(31552, {	-- Learning the Ropes
 					["provider"] = { "n", 63070 },	-- Valeena
-					["coord"] = { 55.2, 51.2, 57 },
+					["coord"] = { 55.2, 51.2, TELDRASSIL },
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "This quest is part of a chain initiated by learning Battle Pet Training."
 				}),
 				q(31826, {	-- Level Up!
 					["provider"] = { "n", 63070 },	-- Valeena
-					["coord"] = { 55.2, 51.2, 57 },
+					["coord"] = { 55.2, 51.2, TELDRASSIL },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 31553,	-- On The Mend
 				}),
 				q(31553, {	-- On The Mend
 					["provider"] = { "n", 63070 },	-- Valeena
-					["coord"] = { 55.2, 51.2, 57 },
+					["coord"] = { 55.2, 51.2, TELDRASSIL },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 31552,	-- Learning the Ropes
 				}),

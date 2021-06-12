@@ -16,7 +16,7 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_DAY_OF_THE_DEAD },
 					{ 47.2, 17.8, 1 },		-- Durotar
 					{ 47.7, 49.7, EVERSONG_WOODS },
 					{ 46.6, 25.8, 84 },		-- Stormwind City
-					{ 56.4, 18.4, 88 },		-- Thunder Bluff
+					{ 56.4, 18.4, THUNDER_BLUFF },
 					{ 39.9, 21.8, TEROKKAR_FOREST },
 					{ 62.2, 67.4, 18 },		-- Tirisfal Glades
 				},
@@ -29,7 +29,7 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_DAY_OF_THE_DEAD },
 					1,		-- Durotar [Org]
 					EVERSONG_WOODS,
 					84,		-- Stormwind City
-					88,		-- Thunder Bluff
+					THUNDER_BLUFF,
 					TEROKKAR_FOREST,
 					18,		-- Tirisfal Glades [UC]
 				},

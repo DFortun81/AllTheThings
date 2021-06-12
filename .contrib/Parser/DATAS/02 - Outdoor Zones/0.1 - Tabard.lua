@@ -19,7 +19,7 @@ _.Zones =
 			90,		-- Undercity
 			84,		-- Stormwind City
 			89,		-- Darnassus
-			88,		-- Thunder Bluff
+			THUNDER_BLUFF,
 		},
 		["coords"] = {
 			{ 51.07, 54.91, 125 },	-- Elizabeth Ross [Dalaran: Northrend]
@@ -32,7 +32,7 @@ _.Zones =
 			{ 69.33, 44.82, 90 },	-- Merill Pleasance [Undercity]
 			{ 64.06, 77.41, 84 },	-- Rebecca Laughlin [Stormwind City]
 			{ 64.58, 38.09, 89 },	-- Shalumon [Darnassus]
-			{ 54.08, 57.22, 88 },	-- Thrumn [Thunder Bluff]
+			{ 54.08, 57.22, THUNDER_BLUFF },	-- Thrumn
 		},
 		["crs"] = {
 			28776,	-- Elizabeth Ross [Dalaran: Northrend]

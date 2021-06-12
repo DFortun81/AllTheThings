@@ -6,7 +6,7 @@ _.ExpansionFeatures =
 {
 	tier(8, {	-- Battle for Azeroth
 		n(-10057, {	-- War Effort
-			m(14, {		-- Arathi Highlands
+			m(ARATHI_HIGHLANDS, {
 				n(COMMON_BOSS_DROPS, {
 					["description"] = "These items can drop off any rare in the zone and in the warfront.",
 					["modID"] = 5,	-- This will inherently apply to all items within.

@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(15, {	-- Badlands
+		m(BADLANDS, {
 			n(ZONEDROPS, {
 				i(10822, {	-- Dark Whelpling (PET!)
 					["crs"] = {

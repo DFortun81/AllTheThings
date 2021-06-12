@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(88, {	-- Thunder Bluff
+		m(THUNDER_BLUFF, {
 			n(QUESTS, {
 				q(7822,  {	-- A Donation of Mageweave
 					["provider"] = { "n", 14728 },	-- Rumstag Proudstrider
@@ -29,7 +29,7 @@ _.Zones =
 				q(2968,  {	-- A Future Task
 					["sourceQuests"] = { 2967 },	-- Return to Thunder Bluff
 					["provider"] = { "n", 3978 },	-- Sage Truthseeker
-					["coord"] = { 34.4, 46.9, 88 },
+					["coord"] = { 34.4, 46.9, THUNDER_BLUFF },
 					["timeline"] = { "removed 4.0.3.10000" },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -51,12 +51,12 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 3034 },	-- Sheal Runetotem
 					["classes"] = { DRUID },
-					["coord"] = { 77.0, 27.4, 88 },	-- Sheal Runetotem (Thunder Bluff)
+					["coord"] = { 77.0, 27.4, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 				}),
 				q(1102,  {	-- A Vengeful Fate
 					["provider"] = { "n", 4451 },	-- Auld Stonespire
-					["coord"] = { 36.2, 59.8 , 88 },
+					["coord"] = { 36.2, 59.8 , THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
@@ -67,7 +67,7 @@ _.Zones =
 				}),
 				q(5088,  {	-- Arikara
 					["provider"] = { "n", 4046 },	-- Magatha Grimtotem
-					["coord"] = { 69.9, 30.9, 88 },
+					["coord"] = { 69.9, 30.9, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
@@ -85,7 +85,7 @@ _.Zones =
 					["sourceQuests"] = { 1844 },	-- Chimaeric Horn
 					["provider"] = { "n", 6410 },	-- Orm Stonehoof
 					["classes"] = { WARRIOR },
-					["coord"] = { 38.9, 56.0, 88 },
+					["coord"] = { 38.9, 56.0, THUNDER_BLUFF },
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(7130)),	-- Brutal Helm
@@ -95,12 +95,12 @@ _.Zones =
 					["sourceQuests"] = { 1840 },	-- Orm Stonehoof and the Brutal Helm
 					["provider"] = { "n", 6410 },	-- Orm Stonehoof
 					["classes"] = { WARRIOR },
-					["coord"] = { 38.9, 56.0, 88 },
+					["coord"] = { 38.9, 56.0, THUNDER_BLUFF },
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(1049,  {	-- Compendium of the Fallen
 					["provider"] = { "n", 3978 },	-- Sage Truthseeker
-					["coord"] = { 34.6, 47.4, 88 },
+					["coord"] = { 34.6, 47.4, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
@@ -111,7 +111,7 @@ _.Zones =
 				}),
 				q(1205,  {	-- Deadmire
 					["provider"] = { "n", 3441 },	-- Melor Stonehoof
-					["coord"] = { 61.2, 80.6, 88 },
+					["coord"] = { 61.2, 80.6, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26866, {	-- Enemies Below
@@ -121,12 +121,12 @@ _.Zones =
 				}),
 				q(31036, {	-- Enemies Below
 					["provider"] = { "n", 36648 },	-- Baine Bloodhoof <High Chieftain>
-					["coord"] = { 60.3, 51.7, 88 },
+					["coord"] = { 60.3, 51.7, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 				}),
 				q(1136,  {	-- Frostmaw
 					["provider"] = { "n", 3441 },	-- Melor Stonehoof
-					["coord"] = { 61.2, 80.6, 88 },
+					["coord"] = { 61.2, 80.6, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
@@ -137,7 +137,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 43795 },	-- Aponi Brightmane
 					["classes"] = { PALADIN },
-					["coord"] = { 63.2, 79.8, 88 },	-- Aponi Brightmane (Thunder Bluff)
+					["coord"] = { 63.2, 79.8, THUNDER_BLUFF },
 					["races"] = { TAUREN },
 				}),
 				q(1064,  {	-- Forsaken Aid
@@ -149,7 +149,7 @@ _.Zones =
 				q(768,   {	-- Gathering Leather
 					["requireSkill"] = SKINNING,
 					["provider"] = { "n", 3050 },    -- Veren Tallstrider
-					["coord"] = { 44.0, 44.6, 88 },
+					["coord"] = { 44.0, 44.6, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 				}),
 				q(1065,  {	-- Journey to Tarren Mill
@@ -161,7 +161,7 @@ _.Zones =
 				q(769,   {	-- Kodo Hide Bag
 					["requireSkill"] = LEATHERWORKING,
 					["provider"] = { "n", 3050 },	-- Veren Tallstrider
-					["coord"] = { 44.0, 44.6, 88 },
+					["coord"] = { 44.0, 44.6, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(5083),	-- Pattern: Kodo Hide Bag
@@ -169,7 +169,7 @@ _.Zones =
 				}),
 				q(914,   {	-- Leaders of the Fang
 					["provider"] = { "n", 5770 },	-- Nara Wildmane
-					["coord"] = { 75.8, 30.8, 88 },
+					["coord"] = { 75.8, 30.8, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
@@ -188,7 +188,7 @@ _.Zones =
 				q(3562,  {	-- Magatha's Payment to Jediga
 					["sourceQuests"] = { 3518 },	-- Delivery to Magatha
 					["provider"] = { "n", 4046 },	-- Magatha Grimtotem
-					["coord"] = { 69.9, 30.9, 88 },
+					["coord"] = { 69.9, 30.9, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
@@ -196,7 +196,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 3034 },	-- Sheal Runetotem
 					["classes"] = { DRUID },
-					["coord"] = { 77.0, 27.4, 88 },	-- Sheal Runetotem (Thunder Bluff)
+					["coord"] = { 77.0, 27.4, THUNDER_BLUFF },
 				}),
 				q(3782,  {	-- Morrowgrain Research
 					["sourceQuests"] = { 3761 },	-- Un'Goro Soil
@@ -218,7 +218,7 @@ _.Zones =
 				q(2965,  {	-- Portents of Uldum
 					["sourceQuests"] = { 2440 },	-- The Platinum Discs
 					["provider"] = { "n", 3978 },	-- Sage Truthseeker
-					["coord"] = { 34.8, 47.8, 88 },
+					["coord"] = { 34.8, 47.8, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
@@ -231,7 +231,7 @@ _.Zones =
 				q(27292, {	-- Return to Krog
 					["sourceQuests"] = { 27258 },	-- The Black Shield
 					["provider"] = { "n", 4943 },	-- Mosarn
-					["coord"] = { 54.1, 80.7, 88 },
+					["coord"] = { 54.1, 80.7, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(33267),	-- Fleshripper
@@ -242,12 +242,12 @@ _.Zones =
 				q(6364,  {	-- Return to Varg
 					["sourceQuests"] = { 6363 },	-- Tal the Wind Rider Master
 					["provider"] = { "n", 2995 },	-- Tal
-					["coord"] = { 46.8, 50.0, 88 },
+					["coord"] = { 46.8, 50.0, THUNDER_BLUFF },
 					["races"] = { TAUREN },
 				}),
 				q(776,   {	-- Rites of the Earthmother
 					["provider"] = { "n", 3057 },	-- Cairne Bloodhoof
-					["coord"] = { 60.3, 51.7, 88 },
+					["coord"] = { 60.3, 51.7, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
@@ -262,13 +262,13 @@ _.Zones =
 				q(2966,  {	-- Seeing What Happens
 					["sourceQuests"] = { 2965 },	-- Portents of Uldum
 					["provider"] = { "n", 5770 },	-- Nara Wildmane
-					["coord"] = { 75.6, 31.6, 88 },
+					["coord"] = { 75.6, 31.6, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(962,   {	-- Serpentbloom
 					["provider"] = { "n", 3419 },	-- Apothecary Zamah
-					["coord"] = { 22.6, 20.2, 88 },
+					["coord"] = { 22.6, 20.2, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
@@ -284,7 +284,7 @@ _.Zones =
 				q(6363,  {	-- Tal the Wind Rider Master
 					["sourceQuests"] = { 6362 },	-- Ride to Thunder Bluff
 					["provider"] = { "n", 8359 },	-- Ahanu
-					["coord"] = { 45.5, 55.8, 88 },
+					["coord"] = { 45.5, 55.8, THUNDER_BLUFF },
 					["races"] = { TAUREN },
 				}),
 				q(5723,  {	-- Testing an Enemy's Strength
@@ -311,7 +311,7 @@ _.Zones =
 				q(2440,  {	-- The Platinum Discs
 					["sourceQuests"] = { 2280 },	-- The Platinum Discs
 					["provider"] = { "n", 3978 },	-- Sage Truthseeker
-					["coord"] = { 34.8, 47.8, 88 },
+					["coord"] = { 34.8, 47.8, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
@@ -339,12 +339,12 @@ _.Zones =
 				}),
 				q(264,   {	-- Until Death Do Us Part
 					["provider"] = { "n", 5543 },	-- Clarice Foster
-					["coord"] = { 28.4, 25.5, 88 },
+					["coord"] = { 28.4, 25.5, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 				}),
 				q(26397, {	-- Walk With The Earth Mother
 					["provider"] = { "n", 36648 },	-- Baine Bloodhoof <High Chieftain>
-					["coord"] = { 60.3, 51.7, 88 },
+					["coord"] = { 60.3, 51.7, THUNDER_BLUFF },
 					["races"] = { TAUREN },
 				}),
 				q(26398, {	-- Walk With The Earth Mother
@@ -354,7 +354,7 @@ _.Zones =
 				q(24540, {	-- War Dance
 					["sourceQuests"] = { 24550 },	-- Journey into Thunder Bluff
 					["provider"] = { "n", 36648 },	-- Baine Bloodhoof
-					["coord"] = { 60.3, 51.7, 88 },
+					["coord"] = { 60.3, 51.7, THUNDER_BLUFF },
 					["races"] = { TAUREN },
 					["g"] = {
 						i(57241),	-- Dreamwalking Staff

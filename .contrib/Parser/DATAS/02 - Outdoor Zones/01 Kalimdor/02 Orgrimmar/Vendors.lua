@@ -249,7 +249,7 @@ _.Zones =
 					["coord"] = { 38.6, 70.0, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
-						{"sub", "pvp_gear_base", -9979, -672, -661 },
+						{"sub", "pvp_gear_base", -9979, -673, -661 },
 						{"pop"},	-- Discard the Set header and acquire the children.
 						{"exclude", "headerID", -384, -385, -386 },	-- Exclude Neck, Finger and Trinkets
 					},

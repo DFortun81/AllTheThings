@@ -48,7 +48,7 @@ _.Zones =
 								["sym"] = {
 									{ "select", "headerID", -10057 },	-- War Effort
 									{ "pop" },	-- Discard the War Effort Header and acquire the children.
-									{ "where", "mapID", 14 },	-- Arathi Highlands
+									{ "where", "mapID", ARATHI_HIGHLANDS },
 									{ "pop" },	-- Discard the Map Header and acquire the children.
 									{ "where", "headerID", COMMON_BOSS_DROPS },	-- Select the Common Boss Drop Header.
 									{ "pop" },	-- Discard the Common Boss Drop Header and acquire the children.

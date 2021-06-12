@@ -26,14 +26,14 @@ _.Holidays = bubbleDown({["u"] = 21},
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									crit(1,  {	-- Arathi Highlands
-										["coord"] = { 44.3, 45.8, 14 },
+										["coord"] = { 44.3, 45.8, ARATHI_HIGHLANDS },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 14 },	-- Arathi Highlands
+										["maps"] = { ARATHI_HIGHLANDS },
 									}),
 									crit(2,  {	-- Badlands
-										["coord"] = { 18.9, 56.1, 15 },
+										["coord"] = { 18.9, 56.1, BADLANDS },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 15 },	-- Badlands
+										["maps"] = { BADLANDS },
 									}),
 									crit(3,  {	-- Blasted Lands
 										["coord"] = { 55.5, 15.0, 17 },
@@ -161,24 +161,24 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { 65 },	-- Stonetalon Mountains
 									}),
 									crit(11, {	-- Tanaris
-										["coord"] = { 52.0, 29.0, 71 },
+										["coord"] = { 52.0, 29.0, TANARIS },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 71 },	-- Tanaris
+										["maps"] = { TANARIS },
 									}),
 									crit(12, {	-- Teldrassil
-										["coord"] = { 54.8, 52.9, 57 },
+										["coord"] = { 54.8, 52.9, TELDRASSIL },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 57 },	-- Teldrassil
+										["maps"] = { TELDRASSIL },
 									}),
 									crit(13, {	-- Un'goro Crater
-										["coord"] = { 60.0, 63.0, 78 },
+										["coord"] = { 60.0, 63.0, UNGORO_CRATER },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 78 },	-- Un'goro Crater
+										["maps"] = { UNGORO_CRATER },
 									}),
 									crit(14, {	-- Winterspring
-										["coord"] = { 62.0, 35.0, 83 },
+										["coord"] = { 62.0, 35.0, WINTERSPRING },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 83 },	-- Winterspring
+										["maps"] = { WINTERSPRING },
 									}),
 								},
 							}),
@@ -306,14 +306,14 @@ _.Holidays = bubbleDown({["u"] = 21},
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									crit(1,  {	-- Arathi Highlands
-										["coord"] = { 69.0, 43.1, 14 },
+										["coord"] = { 69.0, 43.1, ARATHI_HIGHLANDS },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 14 },	-- Arathi Highlands
+										["maps"] = { ARATHI_HIGHLANDS },
 									}),
 									crit(2,  {	-- Badlands
-										["coord"] = { 24.1, 37.3, 15 },
+										["coord"] = { 24.1, 37.3, BADLANDS },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 15 },	-- Badlands
+										["maps"] = { BADLANDS },
 									}),
 									crit(3,  {	-- Blasted Lands
 										["coord"] = { 46.3, 14.4, 17 },
@@ -436,19 +436,19 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { 65 },	-- Stonetalon Mountains
 									}),
 									crit(12, {	-- Tanaris
-										["coord"] = { 49.8, 28.2, 71 },
+										["coord"] = { 49.8, 28.2, TANARIS },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 71 },	-- Tanaris
+										["maps"] = { TANARIS },
 									}),
 									crit(13, {	-- Un'Goro Crater
-										["coord"] = { 56.3, 65.8, 78 },
+										["coord"] = { 56.3, 65.8, UNGORO_CRATER },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 78 },	-- Un'Goro Crater
+										["maps"] = { UNGORO_CRATER },
 									}),
 									crit(14, {	-- Winterspring
-										["coord"] = { 58.2, 47.3, 83 },
+										["coord"] = { 58.2, 47.3, WINTERSPRING },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 83 },	-- Winterspring
+										["maps"] = { WINTERSPRING },
 									}),
 								},
 							}),
@@ -732,14 +732,14 @@ _.Holidays = bubbleDown({["u"] = 21},
 								["races"] = HORDE_ONLY,
 								["g"] = {
 									crit(1,  {	-- Arathi Highlands
-										["coord"] = { 69.4, 42.6, 14 },
+										["coord"] = { 69.4, 42.6, ARATHI_HIGHLANDS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 14 },	-- Arathi Highlands
+										["maps"] = { ARATHI_HIGHLANDS },
 									}),
 									crit(2,  {	-- Badlands
-										["coord"] = { 23.1, 37.4, 15 },
+										["coord"] = { 23.1, 37.4, BADLANDS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 15 },	-- Badlands
+										["maps"] = { BADLANDS },
 									}),
 									crit(3,  {	-- Blasted Lands
 										["coord"] = { 46.2, 13.8, 17 },
@@ -862,19 +862,19 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { 65 },	-- Stonetalon Mountains
 									}),
 									crit(12, {	-- Tanaris
-										["coord"] = { 49.8, 27.9, 71 },
+										["coord"] = { 49.8, 27.9, TANARIS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 71 },	-- Tanaris
+										["maps"] = { TANARIS },
 									}),
 									crit(13, {	-- Un'goro Crater
-										["coord"] = { 56.0, 66.0, 78 },
+										["coord"] = { 56.0, 66.0, UNGORO_CRATER },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 78 },	-- Un'goro Crater
+										["maps"] = { UNGORO_CRATER },
 									}),
 									crit(14, {	-- Winterspring
-										["coord"] = { 58.1, 47.5, 83 },
+										["coord"] = { 58.1, 47.5, WINTERSPRING },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 83 },	-- Winterspring
+										["maps"] = { WINTERSPRING },
 									}),
 								},
 							}),
@@ -1002,14 +1002,14 @@ _.Holidays = bubbleDown({["u"] = 21},
 								["races"] = HORDE_ONLY,
 								["g"] = {
 									crit(1,  {	-- Arathi Highlands
-										["coord"] = { 44.8, 46.1, 14 },
+										["coord"] = { 44.8, 46.1, ARATHI_HIGHLANDS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 14 },	-- Arathi Highlands
+										["maps"] = { ARATHI_HIGHLANDS },
 									}),
 									crit(2,  {	-- Badlands
-										["coord"] = { 18.5, 56.1, 15 },
+										["coord"] = { 18.5, 56.1, BADLANDS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 15 },	-- Badlands
+										["maps"] = { BADLANDS },
 									}),
 									crit(3,  {	-- Blasted Lands
 										["coord"] = { 55.2, 15.3, 17 },
@@ -1137,24 +1137,24 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { 65 },	-- Stonetalon Mountains
 									}),
 									crit(11, {	-- Tanaris
-										["coord"] = { 52.7, 30.0, 71 },
+										["coord"] = { 52.7, 30.0, TANARIS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 71 },	-- Tanaris
+										["maps"] = { TANARIS },
 									}),
 									crit(12, {	-- Teldrassil
-										["coord"] = { 54.7, 52.7, 57 },
+										["coord"] = { 54.7, 52.7, TELDRASSIL },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 57 },	-- Teldrassil
+										["maps"] = { TELDRASSIL },
 									}),
 									crit(13, {	-- Un'Goro Crater
-										["coord"] = { 60.0, 62.9, 78 },
+										["coord"] = { 60.0, 62.9, UNGORO_CRATER },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 78 },	-- Un'Goro Crater
+										["maps"] = { UNGORO_CRATER },
 									}),
 									crit(14, {	-- Winterspring
-										["coord"] = { 61.3, 47.1, 83 },
+										["coord"] = { 61.3, 47.1, WINTERSPRING },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 83 },	-- Winterspring
+										["maps"] = { WINTERSPRING },
 									}),
 								},
 							}),

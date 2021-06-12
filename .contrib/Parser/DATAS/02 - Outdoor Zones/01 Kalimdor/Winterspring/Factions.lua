@@ -13,7 +13,7 @@ _.Zones =
 					["g"] = {
 						q(28614, {	-- Bearzerker
 							["provider"] = { "n", 48722 },	-- Burndl
-							["coord"] = { 65.3, 46.1, 83 },
+							["coord"] = { 65.3, 46.1, WINTERSPRING },
 							["g"] = {
 								i(67216),	-- Firewater Amulet
 								i(67166),	-- Belt of Bloating
@@ -23,22 +23,22 @@ _.Zones =
 						}),
 						q(28524, {	-- Delivery for Donova
 							["provider"] = { "n", 11556 },	-- Salfa
-							["coord"] = { 21.0, 46.1, 83 },
+							["coord"] = { 21.0, 46.1, WINTERSPRING },
 							["isBreadcrumb"] = true,
 						}),
 						q(28523, {	-- More Beads for Salfa
 							["provider"] = { "n", 11556 },	-- Salfa
-							["coord"] = { 21.0, 46.1, 83 },
+							["coord"] = { 21.0, 46.1, WINTERSPRING },
 							["repeatable"] = true,
 							["sourceQuest"] = 28522,	-- Winterfall Activity
 						}),
 						q(28615, {	-- Turning the Earth
 							["provider"] = { "n", 48723 },	-- Tanrir
-							["coord"] = { 65.3, 46.2, 83 },
+							["coord"] = { 65.3, 46.2, WINTERSPRING },
 						}),
 						q(28522, {	-- Winterfall Activity
 							["provider"] = { "n", 11556 },	-- Salfa
-							["coord"] = { 21.0, 46.1, 83 },
+							["coord"] = { 21.0, 46.1, WINTERSPRING },
 							["sourceQuest"] = 28521,	-- Speak to Salfa
 							["g"] = {
 								i(21318),	-- Earth Warder's Gloves
@@ -70,7 +70,7 @@ _.Zones =
 						}),
 						q(29032, {	-- Get Them While They're Young
 							["provider"] = { "n", 10618 },	-- Rivern Frostwind
-							["coord"] = { 46.6, 17.6, 83 },
+							["coord"] = { 46.6, 17.6, WINTERSPRING },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(29038, {	-- Hunting Practice

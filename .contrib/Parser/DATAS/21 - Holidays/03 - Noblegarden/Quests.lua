@@ -11,14 +11,14 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 				["provider"] = { "n", 32836 },	-- Noblegarden Vendor
 				["coords"] = {
 					{ 49.01, 51.19, AZUREMYST_ISLE },	-- Azure Watch, Azuremyst Isle
-					{ 55.72, 51.31, 57 },	-- Dolanaar, Teldrassil
+					{ 55.72, 51.31, TELDRASSIL },	-- Dolanaar
 					{ 43.03, 65.32, 37 },	-- Goldshire, Elwynn Forest
 					{ 54.11, 50.81, 27 },	-- Kharanos, Dun Morogh
 				},
 				["maps"] = {
 					27,	-- Dun Morogh
 					37,	-- Elwynn Forest
-					57,	-- Teldrassil
+					TELDRASSIL,
 					AZUREMYST_ISLE,
 				},
 				["g"] = {
@@ -80,19 +80,19 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 					{ 63.77, 32.04, 84 },	-- Stormwind City [Human]
 					{ 66.96, 72.52, 84 },	-- Stormwind City [Human]
 					{ 73.88, 55.88, 84 },	-- Stormwind City [Human]
-					{ 50.92, 30.09, 71 },	-- Tanaris [Goblin]
-					{ 51.51, 26.68, 71 },	-- Tanaris [Goblin]
-					{ 51.99, 29.36, 71 },	-- Tanaris [Goblin]
-					{ 52.24, 28.56, 71 },	-- Tanaris [Goblin]
+					{ 50.92, 30.09, TANARIS },	-- Goblin
+					{ 51.51, 26.68, TANARIS },	-- Goblin
+					{ 51.99, 29.36, TANARIS },	-- Goblin
+					{ 52.24, 28.56, TANARIS },	-- Goblin
 					{ 40.53, 73.11, 210 },	-- The Cape of Stranglethorn [Goblin]
 					{ 40.54, 68.28, 210 },	-- The Cape of Stranglethorn [Goblin]
 					{ 41.68, 74.18, 210 },	-- The Cape of Stranglethorn [Goblin]
 					{ 51.87, 42.59, THE_EXODAR },	-- Draenei
 					{ 40.77, 84.45, 120 },	-- The Storm Peaks [Goblin]
-					{ 58.75, 48.42, 83 },	-- Winterspring [Goblin]
-					{ 59.77, 49.67, 83 },	-- Winterspring [Goblin]
-					{ 59.91, 50.89, 83 },	-- Winterspring [Goblin]
-					{ 61.06, 48.84, 83 },	-- Winterspring [Goblin]
+					{ 58.75, 48.42, WINTERSPRING },	-- Goblin
+					{ 59.77, 49.67, WINTERSPRING },	-- Goblin
+					{ 59.91, 50.89, WINTERSPRING },	-- Goblin
+					{ 61.06, 48.84, WINTERSPRING },	-- Goblin
 				},
 				["maps"] = {
 					125,	-- Dalaran: Northrend
@@ -102,11 +102,11 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 					NETHERSTORM,
 					NORTHERN_BARRENS,
 					SHATTRATH_CITY,
-					71,		-- Tanaris
+					TANARIS,
 					210,	-- The Cape of Stranglethorn
 					THE_EXODAR,
 					120,	-- The Storm Peaks
-					83,		-- Winterspring
+					WINTERSPRING,
 				},
 			}),
 			q(13483, {	--	Spring Gathers [Horde]
@@ -148,21 +148,21 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 					{ 78.01, 57.53, SILVERMOON_CITY },	-- Blood Elf
 					{ 89.57, 49.01, SILVERMOON_CITY },	-- Blood Elf
 					{ 90.27, 57.51, SILVERMOON_CITY },	-- Blood Elf
-					{ 50.92, 30.09, 71 },	-- Tanaris [Goblin]
-					{ 51.51, 26.68, 71 },	-- Tanaris [Goblin]
-					{ 51.99, 29.36, 71 },	-- Tanaris [Goblin]
-					{ 52.24, 28.56, 71 },	-- Tanaris [Goblin]
+					{ 50.92, 30.09, TANARIS },	-- Goblin
+					{ 51.51, 26.68, TANARIS },	-- Goblin
+					{ 51.99, 29.36, TANARIS },	-- Goblin
+					{ 52.24, 28.56, TANARIS },	-- Goblin
 					{ 40.53, 73.11, 210 },	-- The Cape of Stranglethorn [Goblin]
 					{ 40.54, 68.28, 210 },	-- The Cape of Stranglethorn [Goblin]
 					{ 41.68, 74.18, 210 },	-- The Cape of Stranglethorn [Goblin]
 					{ 40.77, 84.45, 120 },	-- The Storm Peaks [Goblin]
-					{ 40.82, 56.05, 88 },	-- Thunder Bluff [Tauren]
+					{ 40.82, 56.05, THUNDER_BLUFF },	-- Tauren
 					{ 63.22, 47.55, 90 },	-- Undercity [Forsaken]
 					{ 67.75, 39.25, 90 },	-- Undercity [Forsaken]
-					{ 58.75, 48.42, 83 },	-- Winterspring [Goblin]
-					{ 59.77, 49.67, 83 },	-- Winterspring [Goblin]
-					{ 59.91, 50.89, 83 },	-- Winterspring [Goblin]
-					{ 61.06, 48.84, 83 },	-- Winterspring [Goblin]
+					{ 58.75, 48.42, WINTERSPRING },	-- Goblin
+					{ 59.77, 49.67, WINTERSPRING },	-- Goblin
+					{ 59.91, 50.89, WINTERSPRING },	-- Goblin
+					{ 61.06, 48.84, WINTERSPRING },	-- Goblin
 				},
 				["maps"] = {
 					125,	-- Dalaran: Northrend
@@ -173,12 +173,12 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 					86,		-- Orgrimmar
 					SHATTRATH_CITY,
 					SILVERMOON_CITY,
-					71,		-- Tanaris
+					TANARIS,
 					210,	-- The Cape of Stranglethorn
 					120,	-- The Storm Peaks
-					88,		-- Thunder Bluff
+					THUNDER_BLUFF,
 					90,		-- Undercity
-					83,		-- Winterspring
+					WINTERSPRING,
 				},
 			}),
 			q(13480, {	--	The Great Egg Hunt [Alliance]
@@ -187,14 +187,14 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 				["provider"] = { "n", 32799 },	-- Spring Collector
 				["coords"] = {
 					{ 49.07, 51.25, AZUREMYST_ISLE },	-- Azure Watch, Azuremyst Isle
-					{ 55.59, 51.36, 57 },	-- Dolanaar, Teldrassil
+					{ 55.59, 51.36, TELDRASSIL },	-- Dolanaar
 					{ 42.98, 65.40, 37 },	-- Goldshire, Elwynn Forest
 					{ 53.99, 50.70, 27 },	-- Kharanos, Dun Morogh
 				},
 				["maps"] = {
 					27,	-- Dun Morogh
 					37,	-- Elwynn Forest
-					57,	-- Teldrassil
+					TELDRASSIL,
 					AZUREMYST_ISLE,
 				},
 				["g"] = {

@@ -43,8 +43,8 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				["questID"] = 52847,	-- Doom's Howl (WQ)
 				["isRaid"] = true,
 				["races"] = ALLIANCE_ONLY,
-				["coord"] = { 37.8, 40.2, 14 },
-				["maps"] = { 14 },	-- Arathi Highlands
+				["coord"] = { 37.8, 40.2, ARATHI_HIGHLANDS },
+				["maps"] = { ARATHI_HIGHLANDS },
 				["cr"] = 138122,	-- Doom's Howl
 				["g"] = bubbleDown({["modID"] = 3}, {
 					i(163195),	-- Schematic: Makeshift Azerite Detector (confirmed drop by Crieve on stream 11.23.18)
@@ -242,8 +242,8 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				["questID"] = 52848,	-- The Lion's Roar (WQ)
 				["isRaid"] = true,
 				["races"] = HORDE_ONLY,
-				["coord"] = { 35.5, 38.9, 14 },
-				["maps"] = { 14 },	-- Arathi Highlands
+				["coord"] = { 35.5, 38.9, ARATHI_HIGHLANDS },
+				["maps"] = { ARATHI_HIGHLANDS },
 				["cr"] = 137374,	-- The Lion's Roar
 				["g"] = bubbleDown({["modID"] = 3}, {
 					i(163829),	-- Toy War Machine

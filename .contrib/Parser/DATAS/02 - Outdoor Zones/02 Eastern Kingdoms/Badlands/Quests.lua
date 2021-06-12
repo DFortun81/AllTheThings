@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(15, {	-- Badlands
+		m(BADLANDS, {
 			n(QUESTS, {
 				q(719,   {	-- A Dwarf and His Tools
 					["u"] = REMOVED_FROM_GAME,
@@ -16,12 +16,12 @@ _.Zones =
 				}),
 				q(27823, {	-- A Dwarf's Got Needs
 					["provider"] = { "n", 2860 },	-- Sigrun Ironhew
-					["coord"] = { 49.4, 37.0, 15 },
+					["coord"] = { 49.4, 37.0, BADLANDS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27764, {	-- A Strange Request
 					["provider"] = { "n", 46652 },	-- Dolph Blastus
-					["coord"] = { 65.0, 38.3, 15 },
+					["coord"] = { 65.0, 38.3, BADLANDS },
 					["sourceQuests"] = { 27774 },	-- Easily Swayed
 					["g"] = {
 						i(63159),	-- Parcel Bearer's Breastplate
@@ -35,7 +35,7 @@ _.Zones =
 				}),
 				q(27792, {	-- All's Fair in Love, War, and Archaeology
 					["provider"] = { "n", 46760 },	-- Lead Prospector Durdin
-					["coord"] = { 49.2, 36.9, 15 },
+					["coord"] = { 49.2, 36.9, BADLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27791 },	-- Dustwind Dig
 					["g"] = {
@@ -50,13 +50,13 @@ _.Zones =
 						{ "n", 47011 },	-- Amakkar
 						{ "n", 47021 },	-- Amakkar
 					},
-					["coord"] = { 18.8, 42.9, 15 },
+					["coord"] = { 18.8, 42.9, BADLANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27890 },	-- The Bad Dogs
 				}),
 				q(27793, {	-- Ancient Protectors (A)
 					["provider"] = { "n", 46760 },	-- Lead Prospector Durdin
-					["coord"] = { 49.2, 36.9, 15 },
+					["coord"] = { 49.2, 36.9, BADLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						27709,	-- The Sentinel's Game
@@ -65,7 +65,7 @@ _.Zones =
 				}),
 				q(27887, {	-- Ancient Protectors (H)
 					["provider"] = { "n", 46757 },	-- High Examiner Tae'thelan Bloodwatcher
-					["coord"] = { 52.0, 51.2, 15 },
+					["coord"] = { 52.0, 51.2, BADLANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						27886,	-- The Sentinel's Game
@@ -77,7 +77,7 @@ _.Zones =
 						{ "n", 46853 },	-- Baelog
 						{ "n", 46856 },	-- Baelog
 					},
-					["coord"] = { 20.6, 56.1, 15 },
+					["coord"] = { 20.6, 56.1, BADLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27827 },	-- The Swift, the Fierce, and the Stout
 				}),
@@ -90,7 +90,7 @@ _.Zones =
 				}),
 				q(27881, {	-- Bloodwatcher Point
 					["provider"] = { "n", 46664 },	-- Dr. Hieronymus Blam
-					["coord"] = { 46.8, 56.2, 15 },
+					["coord"] = { 46.8, 56.2, BADLANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27789 },	-- Troggish Troubles
 				}),
@@ -133,7 +133,7 @@ _.Zones =
 					["sourceQuest"] = 2339,	-- Find the Gems and Power Source
 				}),
 				q(27930, {	-- Devastation
-					["coord"] = { 15.9, 33.2, 15 },
+					["coord"] = { 15.9, 33.2, BADLANDS },
 					["description"] = "If you abandon this quest, leave the area then return to the cave.",
 					["sourceQuests"] = { 27858, 27898 },	-- Rheastrasza's Gift (A, H)
 				}),
@@ -149,8 +149,8 @@ _.Zones =
 						{ "n", 46660 },	-- Aidan Summerwind (H)
 					},
 					["coords"] = {
-						{ 20.8, 55.7, 15 },	-- Alliance
-						{ 18.4, 41.5, 15 },	-- Horde
+						{ 20.8, 55.7, BADLANDS },	-- Alliance
+						{ 18.4, 41.5, BADLANDS },	-- Horde
 					},
 				}),
 				q(3821, {	-- Dreadmaul Rock
@@ -160,13 +160,13 @@ _.Zones =
 				}),
 				q(27791, {	-- Dustwind Dig
 					["provider"] = { "n", 46664 },	-- Dr. Hieronymus Blam
-					["coord"] = { 46.8, 56.2, 15 },
+					["coord"] = { 46.8, 56.2, BADLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27789 },	-- Troggish Troubles
 				}),
 				q(27774, {	-- Easily Swayed
 					["provider"] = { "n", 46652 },	-- Dolph Blastus
-					["coord"] = { 65.0, 38.3, 15 },
+					["coord"] = { 65.0, 38.3, BADLANDS },
 					["sourceQuests"] = { 27763 },	-- To Fuselight Proper
 				}),
 				q(27828, {	-- Eric, the Utility Dwarf
@@ -174,7 +174,7 @@ _.Zones =
 						{ "n", 46852 },	-- Eric "The Swift"
 						{ "n", 46855 },	-- Eric "The Swift"
 					},
-					["coord"] = { 20.5, 56.0, 15 },
+					["coord"] = { 20.5, 56.0, BADLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27827 },	-- The Swift, the Fierce, and the Stout
 				}),
@@ -186,12 +186,12 @@ _.Zones =
 				}),
 				q(27765, {	-- First Sample: Wild Eggs
 					["provider"] = { "n", 46654 },	-- Rhea
-					["coord"] = { 66.3, 55.4, 15 },
+					["coord"] = { 66.3, 55.4, BADLANDS },
 					["sourceQuests"] = { 27764 },	-- A Strange Request
 				}),
 				q(27878, {	-- Forcible Acquisition
 					["provider"] = { "n", 46758 },	-- Aoren Sunglow
-					["coord"] = { 52.1, 51.5, 15 },
+					["coord"] = { 52.1, 51.5, BADLANDS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(63173),	-- Ironhew Cloak
@@ -206,7 +206,7 @@ _.Zones =
 						{ "n", 47013 },	-- Gargal
 						{ "n", 47022 },	-- Gargal
 					},
-					["coord"] = { 18.9, 42.8, 15 },
+					["coord"] = { 18.9, 42.8, BADLANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27890 },	-- The Bad Dogs
 				}),
@@ -222,7 +222,7 @@ _.Zones =
 				}),
 				q(27833, {	-- Half-Ton Holdouts
 					["provider"] = { "n", 46972 },	-- Terrance Storm
-					["coord"] = { 20.8, 57.3, 15 },
+					["coord"] = { 20.8, 57.3, BADLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(63199),	-- Storm's Bow
@@ -234,7 +234,7 @@ _.Zones =
 				}),
 				q(27880, {	-- Half-Ton Holdouts
 					["provider"] = { "n", 1068 },	-- Gorn
-					["coord"] = { 17.6, 43.9, 15 },
+					["coord"] = { 17.6, 43.9, BADLANDS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(63204),	-- Bow of Kargath
@@ -251,18 +251,18 @@ _.Zones =
 				}),
 				q(27826, {	-- Into the Dragon's Mouth
 					["provider"] = { "n", 46664 },	-- Dr. Hieronymus Blam
-					["coord"] = { 46.8, 56.2, 15 },
+					["coord"] = { 46.8, 56.2, BADLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27794 },	-- Return to Blam
 				}),
 				q(27776, {	-- It's Goat Time, Baby
 					["provider"] = { "n", 46653 },	-- Garyanne Fleezlebop
-					["coord"] = { 64.2, 38.1, 15 },
+					["coord"] = { 64.2, 38.1, BADLANDS },
 					["sourceQuests"] = { 27775 },	-- When the Going Gets Tough, Cheat
 				}),
 				q(27882, {	-- It's Not About History, It's About Power
 					["provider"] = { "n", 46757 },	-- High Examiner Tae'thelan Bloodwatcher
-					["coord"] = { 52.0, 51.2, 15 },
+					["coord"] = { 52.0, 51.2, BADLANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27881 },	-- Bloodwatcher Point
 					["g"] = {
@@ -277,7 +277,7 @@ _.Zones =
 						{ "n", 47018 },	-- Jurrix Whitemane
 						{ "n", 47024 },	-- Jurrix Whitemane
 					},
-					["coord"] = { 18.8, 42.7, 15 },
+					["coord"] = { 18.8, 42.7, BADLANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27890 },	-- The Bad Dogs
 				}),
@@ -293,7 +293,7 @@ _.Zones =
 				}),
 				q(27770, {	-- Lifting the Veil
 					["provider"] = { "n", 46654 },	-- Rhea
-					["coord"] = { 66.3, 55.4, 15 },
+					["coord"] = { 66.3, 55.4, BADLANDS },
 					["sourceQuests"] = {
 						27765,	-- First Sample: Wild Eggs
 						27766,	-- Second Sample: Whelps
@@ -337,7 +337,7 @@ _.Zones =
 				}),
 				q(27889, {	-- New Kargath
 					["provider"] = { "n", 46664 },	-- Dr. Hieronymus Blam
-					["coord"] = { 46.8, 56.2, 15 },
+					["coord"] = { 46.8, 56.2, BADLANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27888 },	-- Return to Blam
 				}),
@@ -346,7 +346,7 @@ _.Zones =
 						{ "n", 46854 },
 						{ "n", 46857 },	-- Olaf
 					},
-					["coord"] = { 20.5, 56.3, 15 },
+					["coord"] = { 20.5, 56.3, BADLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27827 },	-- The Swift, the Fierce, and the Stout
 				}),
@@ -383,7 +383,7 @@ _.Zones =
 					},
 				}),
 				q(27794, {	-- Return to Blam (A)
-					["coord"] = { 50.2, 53.2, 15 },
+					["coord"] = { 50.2, 53.2, BADLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 206374 },	-- Trove of the Watchers
 					["sourceQuests"] = { 27912 },	-- The Titans' Trove
@@ -395,7 +395,7 @@ _.Zones =
 					},
 				}),
 				q(27888, {	-- Return to Blam (H)
-					["coord"] = { 50.2, 53.2, 15 },
+					["coord"] = { 50.2, 53.2, BADLANDS },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 206374 },	-- Trove of the Watchers
 					["sourceQuests"] = { 27913 },	-- The Titans' Trove
@@ -407,18 +407,18 @@ _.Zones =
 				}),
 				q(27769, {	-- Rhea Revealed
 					["provider"] = { "n", 46654 },	-- Rhea
-					["coord"] = { 66.3, 55.4, 15 },
+					["coord"] = { 66.3, 55.4, BADLANDS },
 					["sourceQuests"] = { 27771 },	-- Third Sample: Implanted Eggs
 				}),
 				q(27858, {	-- Rheastrasza's Gift (A)
 					["provider"] = { "n", 46654 },	-- Rhea
-					["coord"] = { 15.9, 33.3, 15 },
+					["coord"] = { 15.9, 33.3, BADLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27832 },	-- The Hidden Clutch
 				}),
 				q(27898, {	-- Rheastrasza's Gift (H)
 					["provider"] = { "n", 46654 },	-- Rhea
-					["coord"] = { 15.9, 33.3, 15 },
+					["coord"] = { 15.9, 33.3, BADLANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27897 },	-- The Hidden Clutch
 				}),
@@ -432,12 +432,12 @@ _.Zones =
 				}),
 				q(27766, {	-- Second Sample: Whelps
 					["provider"] = { "n", 46654 },	-- Rhea
-					["coord"] = { 66.3, 55.4, 15 },
+					["coord"] = { 66.3, 55.4, BADLANDS },
 					["sourceQuests"] = { 27764 },	-- A Strange Request
 				}),
 				q(709,   {	-- Solution to Doom
 					["provider"] = { "n", 2785 },	-- Theldurin the Lost
-					["coord"] = { 51.6, 76.6, 15 },
+					["coord"] = { 51.6, 76.6, BADLANDS },
 					["lvl"] = 30,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
@@ -466,33 +466,33 @@ _.Zones =
 				}),
 				q(27825, {	-- Survival of the Fattest
 					["provider"] = { "n", 46930 },	-- Victoria Delen
-					["coord"] = { 20.8, 55.7, 15 },
+					["coord"] = { 20.8, 55.7, BADLANDS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27879, {	-- Survival of the Fattest
 					["provider"] = { "n", 46660 },	-- Aidan Summerwind
-					["coord"] = { 18.4, 41.5, 15 },
+					["coord"] = { 18.4, 41.5, BADLANDS },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27890, {	-- The Bad Dogs
 					["provider"] = { "n", 46654 },	-- Rhea
-					["coord"] = { 18.1, 42.5, 15 },
+					["coord"] = { 18.1, 42.5, BADLANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27889 },	-- New Kargath
 				}),
 				q(27713, {	-- The Day that Deathwing Came
 					["provider"] = { "n", 2785 },	-- Theldurin the Lost
-					["coord"] = { 26.2, 62.2, 15 },
+					["coord"] = { 26.2, 62.2, BADLANDS },
 					["sourceQuests"] = { 27927 },	-- Down to the Scar
 				}),
 				q(27714, {	-- The Day that Deathwing Came: The Real Story
 					["provider"] = { "n", 2920 },	-- Lucien Tosselwrench
-					["coord"] = { 26.2, 62.5, 15 },
+					["coord"] = { 26.2, 62.5, BADLANDS },
 					["sourceQuests"] = { 27713 },	-- The Day that Deathwing Came
 				}),
 				q(27715, {	-- The Day that Deathwing Came: What Really Happened
 					["provider"] = { "n", 4618 },	-- Martek the Exiled
-					["coord"] = { 26.1, 62.4, 15 },
+					["coord"] = { 26.1, 62.4, BADLANDS },
 					["sourceQuests"] = { 27714 },	-- The Day that Deathwing Came: The Real Story
 					["g"] = {
 						i(63193),	-- Theldurin's Fist
@@ -504,7 +504,7 @@ _.Zones =
 				}),
 				q(27859, {	-- The Egg Lives On
 					["provider"] = { "n", 46664 },	-- Dr. Hieronymus Blam
-					["coord"] = { 18.0, 30.5, 15 },
+					["coord"] = { 18.0, 30.5, BADLANDS },
 					["sourceQuests"] = { 27930 },	-- Devastation
 					["g"] = {
 						i(63194),	-- Rhea's Last Egg
@@ -512,7 +512,7 @@ _.Zones =
 				}),
 				q(27824, {	-- The Good Stuff
 					["provider"] = { "n", 2860 },	-- Sigrun Ironhew
-					["coord"] = { 49.4, 36.9, 15 },
+					["coord"] = { 49.4, 36.9, BADLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27823 },	-- A Dwarf's Got Needs
 					["g"] = {
@@ -525,13 +525,13 @@ _.Zones =
 				}),
 				q(27832, {	-- The Hidden Clutch (A)
 					["provider"] = { "n", 46654 },	-- Rhea
-					["coord"] = { 21.1, 57.7, 15 },
+					["coord"] = { 21.1, 57.7, BADLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27831 },	-- The Sorrow and the Fury
 				}),
 				q(27897, {	-- The Hidden Clutch (H)
 					["provider"] = { "n", 46654 },	-- Rhea
-					["coord"] = { 18.1, 42.5, 15 },
+					["coord"] = { 18.1, 42.5, BADLANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27896 },	-- The Sorrow and the Fury
 				}),
@@ -557,7 +557,7 @@ _.Zones =
 				}),
 				q(27877, {	-- The Morons' League
 					["provider"] = { "n", 46759 },	-- Lidia Sunglow
-					["coord"] = { 52.2, 51.6, 15 },
+					["coord"] = { 52.2, 51.6, BADLANDS },
 					["races"] = HORDE_ONLY,
 				}),
 				q(4724,  {	-- The Pack Mistress
@@ -582,85 +582,85 @@ _.Zones =
 					},
 				}),
 				q(27709, {	-- The Sentinel's Game (A)
-					["coord"] = { 47.9, 50.9, 15 },
+					["coord"] = { 47.9, 50.9, BADLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 206336 },	-- Marble Slab
 					["sourceQuests"] = { 27797 },	-- The Sentinel's Pawn
 				}),
 				q(27886, {	-- The Sentinel's Game (H)
-					["coord"] = { 47.9, 50.9, 15 },
+					["coord"] = { 47.9, 50.9, BADLANDS },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 206336 },	-- Marble Slab
 					["sourceQuests"] = { 27884 },	-- The Sentinel's Pawn
 				}),
 				q(27797, {	-- The Sentinel's Pawn (A)
 					["provider"] = { "n", 46760 },	-- Lead Prospector Durdin
-					["coord"] = { 49.2, 36.9, 15 },
+					["coord"] = { 49.2, 36.9, BADLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27792 },	-- All's Fair in Love, War, and Archaeology
 				}),
 				q(27884, {	-- The Sentinel's Pawn (H)
 					["provider"] = { "n", 46757 },	-- High Examiner Tae'thelan Bloodwatcher
-					["coord"] = { 52.0, 51.2, 15 },
+					["coord"] = { 52.0, 51.2, BADLANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27882 },	-- It's Not About History, It's About Power
 				}),
 				q(27831, {	-- The Sorrow and the Fury (A)
 					["provider"] = { "n", 46654 },	-- Rhea
-					["coord"] = { 21.1, 57.7, 15 },
+					["coord"] = { 21.1, 57.7, BADLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27830 },	-- Their Hunt Continues
 				}),
 				q(27896, {	-- The Sorrow and the Fury (H)
 					["provider"] = { "n", 46654 },	-- Rhea
-					["coord"] = { 18.1, 42.5, 15 },
+					["coord"] = { 18.1, 42.5, BADLANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27895 },	-- Their Hunt Continues
 				}),
 				q(27827, {	-- The Swift, the Fierce, and the Stout
 					["provider"] = { "n", 46654 },	-- Rhea
-					["coord"] = { 21.1, 57.7, 15 },
+					["coord"] = { 21.1, 57.7, BADLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27826 },	-- Into the Dragon's Mouth
 				}),
 				q(27912, {	-- The Titans' Trove (A)
 					["provider"] = { "n", 46760 },	-- Lead Prospector Durdin
-					["coord"] = { 49.2, 36.9, 15 },
+					["coord"] = { 49.2, 36.9, BADLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27793 },	-- Ancient Protectors
 				}),
 				q(27913, {	-- The Titans' Trove (H)
 					["provider"] = { "n", 46757 },	-- High Examiner Tae'thelan Bloodwatcher
-					["coord"] = { 52.0, 51.2, 15 },
+					["coord"] = { 52.0, 51.2, BADLANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27887 },	-- Ancient Protectors
 				}),
 				q(27772, {	-- The Venerable Doctor Blam
 					["provider"] = { "n", 46655 },	-- Rheastrasza
-					["coord"] = { 66.4, 55.5, 15 },
+					["coord"] = { 66.4, 55.5, BADLANDS },
 					["sourceQuests"] = { 27769 },	-- Rhea Revealed
 				}),
 				q(27693, {	-- The Warden's Game (A)
-					["coord"] = { 50.2, 54.2, 15 },
+					["coord"] = { 50.2, 54.2, BADLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 206335 },	-- Stone Slab
 					["sourceQuests"] = { 27796 },	-- The Warden's Pawn
 				}),
 				q(27885, {	-- The Warden's Game (H)
-					["coord"] = { 50.2, 54.2, 15 },
+					["coord"] = { 50.2, 54.2, BADLANDS },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 206335 },	-- Stone Slab
 					["sourceQuests"] = { 27883 },	-- The Warden's Pawn
 				}),
 				q(27796, {	-- The Warden's Pawn (A)
 					["provider"] = { "n", 46760 },	-- Lead Prospector Durdin
-					["coord"] = { 49.2, 36.9, 15 },
+					["coord"] = { 49.2, 36.9, BADLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27792 },	-- All's Fair in Love, War, and Archaeology
 				}),
 				q(27883, {	-- The Warden's Pawn (H)
 					["provider"] = { "n", 46757 },	-- High Examiner Tae'thelan Bloodwatcher
-					["coord"] = { 52.0, 51.2, 15 },
+					["coord"] = { 52.0, 51.2, BADLANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27882 },	-- It's Not About History, It's About Power
 				}),
@@ -672,9 +672,9 @@ _.Zones =
 						{ "n", 46857 },	-- Olaf
 					},
 					["coords"] = {
-						{ 20.6, 56.1, 15 },
-						{ 20.5, 56.0, 15 },
-						{ 20.5, 56.3, 15 },
+						{ 20.6, 56.1, BADLANDS },
+						{ 20.5, 56.0, BADLANDS },
+						{ 20.5, 56.3, BADLANDS },
 					},
 					["sourceQuests"] = {
 						27834,	-- Baelog, the Glass Cannon
@@ -690,9 +690,9 @@ _.Zones =
 						{ "n", 47024 },	-- Jurrix Whitemane
 					},
 					["coords"] = {
-						{ 18.8, 42.9, 15 },
-						{ 18.9, 42.8, 15 },
-						{ 18.8, 42.7, 15 },
+						{ 18.8, 42.9, BADLANDS },
+						{ 18.9, 42.8, BADLANDS },
+						{ 18.8, 42.7, BADLANDS },
 					},
 					["sourceQuests"] = {
 						27891,	-- Amakkar, Jack of All Trades
@@ -702,19 +702,19 @@ _.Zones =
 				}),
 				q(27830, {	-- Their Hunt Continues (A)
 					["provider"] = { "n", 46654 },	-- Rhea
-					["coord"] = { 21.1, 57.7, 15 },
+					["coord"] = { 21.1, 57.7, BADLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27829 },	-- The Wrath of a Dragonflight
 				}),
 				q(27895, {	-- Their Hunt Continues (H)
 					["provider"] = { "n", 46654 },	-- Rhea
-					["coord"] = { 18.1, 42.5, 15 },
+					["coord"] = { 18.1, 42.5, BADLANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27894 },	-- The Wrath of a Dragonflight
 				}),
 				q(27771, {	-- Third Sample: Implanted Eggs
 					["provider"] = { "n", 46654 },	-- Rhea
-					["coord"] = { 66.3, 55.4, 15 },
+					["coord"] = { 66.3, 55.4, BADLANDS },
 					["sourceQuests"] = { 27770 },	-- Lifting the Veil
 					["g"] = {
 						i(63163),	-- Strong Arm Mace
@@ -746,7 +746,7 @@ _.Zones =
 				}),
 				q(27763, {	-- To Fuselight Proper
 					["provider"] = { "n", 46650 },	-- Eddie Flofizzle
-					["coord"] = { 92.6, 38.9, 15 },
+					["coord"] = { 92.6, 38.9, BADLANDS },
 					["isBreadcrumb"] = true,	-- for "Easily Swayed"
 					["sourceQuests"] = { 27762 },	-- Fuselight Ho!
 				}),
@@ -757,13 +757,13 @@ _.Zones =
 						{ "n", 46660 },	-- Aidan Summerwind (H)
 					},
 					["coords"] = {
-						{ 20.8, 55.7, 15 },	-- Alliance
-						{ 18.4, 41.5, 15 },	-- Horde
+						{ 20.8, 55.7, BADLANDS },	-- Alliance
+						{ 18.4, 41.5, BADLANDS },	-- Horde
 					},
 				}),
 				q(727,   {	-- To Ironforge for Yagyin's Digest
 					["provider"] = { "n", 2785 },	-- Theldurin the Lost
-					["coord"] = { 51.6, 76.6, 15 },
+					["coord"] = { 51.6, 76.6, BADLANDS },
 					["sourceQuest"] = 709,	-- Solution to Doom
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
@@ -771,7 +771,7 @@ _.Zones =
 				}),
 				q(728,   {	-- To the Undercity for Yagyin's Digest
 					["provider"] = { "n", 2785 },	-- Theldurin the Lost
-					["coord"] = { 51.6, 76.6, 15 },
+					["coord"] = { 51.6, 76.6, BADLANDS },
 					["sourceQuest"] = 709,	-- Solution to Doom
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
@@ -795,7 +795,7 @@ _.Zones =
 				}),
 				q(27789, {	-- Troggish Troubles
 					["provider"] = { "n", 46664 },	-- Dr. Hieronymus Blam
-					["coord"] = { 46.8, 56.2, 15 },
+					["coord"] = { 46.8, 56.2, BADLANDS },
 					["sourceQuests"] = { 27772 },	-- The Venerable Doctor Blam
 					["g"] = {
 						i(63182),	-- Anti-Trogg Shield
@@ -821,7 +821,7 @@ _.Zones =
 				}),
 				q(27775, {	-- When the Going Gets Tough, Cheat
 					["provider"] = { "n", 46653 },	-- Garyanne Fleezlebop
-					["coord"] = { 64.2, 38.1, 15 },
+					["coord"] = { 64.2, 38.1, BADLANDS },
 					["g"] = {
 						i(63155),   -- Goat Horn Band
 						i(63154),	-- Fuselight Chainmail

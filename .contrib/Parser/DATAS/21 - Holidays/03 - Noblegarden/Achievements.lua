@@ -18,7 +18,7 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 				}),
 				ach(2436, {	-- Desert Rose
 					crit(1, {	-- The Badlands
-						["maps"] = { 15 },	-- The Badlands
+						["maps"] = { BADLANDS },
 					}),
 					crit(2, {	-- Desolace
 						["maps"] = { 66 },	-- Desolace
@@ -27,7 +27,7 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 						["maps"] = { SILITHUS },
 					}),
 					crit(4, {	-- Tanaris
-						["maps"] = { 71 },	-- Tanaris
+						["maps"] = { TANARIS },
 					}),
 					crit(5, {	-- Thousand Needles
 						["maps"] = { 64 },	-- Thousand Needles
@@ -44,7 +44,7 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 							["maps"] = { AZUREMYST_ISLE },
 						}),
 						crit(2, {	-- Dolanaar
-							["maps"] = { 57 },	-- Teldrassil
+							["maps"] = { TELDRASSIL },
 						}),
 						crit(3, {	-- Goldshire
 							["maps"] = { 37 },	-- Elwynn Forest

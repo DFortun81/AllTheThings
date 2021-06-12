@@ -9,7 +9,7 @@ _.Instances = { tier(1, {	-- Classic
 		["lvl"] = 55,
 		["mapID"] = BLACKROCK_SPIRE,
 		["maps"] = { 617, 618 },
-		["coord"] = { 78.94, 33.62, 33 },	-- Blackrock Spire, Eastern Kingdoms
+		["coord"] = { 78.94, 33.62, BLACKROCK_MOUNTAIN },
 		["g"] = {
 			n(-40, {	-- Legacy
 				un(REMOVED_FROM_GAME, ach(2188)),	-- Leeeeeeeeeeeeeroy!

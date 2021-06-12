@@ -1624,8 +1624,8 @@ _.PVP =
 						un(REMOVED_FROM_GAME, i(61035)),	-- Vicious Gladiator's Badge of Dominance
 						un(REMOVED_FROM_GAME, i(61034)),	-- Vicious Gladiator's Badge of Victory
 						un(REMOVED_FROM_GAME, i(61030)),	-- Vicious Gladiator's Emblem of Proficiency
-						un(REMOVED_FROM_GAME, i(61045)),	-- Vicious Gladiator's Insignia of Dominance
-						un(REMOVED_FROM_GAME, i(61046)),	-- Vicious Gladiator's Insignia of Victory
+						i(61045),	-- Vicious Gladiator's Insignia of Dominance
+						i(61046),	-- Vicious Gladiator's Insignia of Victory
 						un(REMOVED_FROM_GAME, i(69781)),	-- Vicious Gladiator's Mark of Cruelty
 						un(REMOVED_FROM_GAME, i(69783)),	-- Vicious Gladiator's Mark of Meditation
 						un(REMOVED_FROM_GAME, i(69782)),	-- Vicious Gladiator's Mark of Tenacity

@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(71, {	-- Tanaris
+		m(TANARIS, {
 			n(VENDORS, {
 				n(5594,   {	-- Alchemist Pestlezugg <Alchemy Supplies>
-					["coord"] = { 50.8, 28.0, 71 },
+					["coord"] = { 50.8, 28.0, TANARIS },
 					["g"] = {
 						i(6057, {	-- Recipe: Nature Protection Potion
 							["isLimited"] = true,
@@ -137,7 +137,7 @@ _.Zones =
 				}),
 				n(40216,  {	-- Blazzek the Biter <Vicious Gladiator>
 					["itemID"] = 137642,	-- Mark of Honor
-					["coord"] = { 51.6, 28.0, 71 },
+					["coord"] = { 51.6, 28.0, TANARIS },
 					["g"] = {
 						n(-319, {	-- Weapons
 							i(146641, {	--  Arsenal: Vicious Gladiator's Weapons
@@ -783,7 +783,7 @@ _.Zones =
 					},
 				}),
 				n(8131,	  {	-- Blizrik Buckshot <Gunsmith>
-					["coord"] = { 50.6, 28.6, 71 },
+					["coord"] = { 50.6, 28.6, TANARIS },
 					["g"] = {
 						i(18650, {	-- Schematic: EZ-Thro Dynamite II
 							["isLimited"] = true,
@@ -791,7 +791,7 @@ _.Zones =
 					},
 				}),
 				n(69322,  {	-- Capps Carlin <Cataclysmic Gladiator>
-					["coord"] = { 51.6, 28.0, 71 },
+					["coord"] = { 51.6, 28.0, TANARIS },
 					["itemID"] = 137642,	-- Mark of Honor
 					["g"] = {
 						n(-319, {	-- Weapons
@@ -1441,7 +1441,7 @@ _.Zones =
 					},
 				}),
 				n(40589,  {	-- Dirge Quikcleave <Butcher>
-					["coord"] = { 52.6, 29.0, 71 },
+					["coord"] = { 52.6, 29.0, TANARIS },
 					["g"] = {
 						i(18046),	-- Recipe: Tender Wolf Steak
 					},
@@ -1453,7 +1453,7 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				n(40572,  {	-- Haughty Modiste <Fashion Designer>
-					["coord"] = { 50.6, 28.6, 71 },
+					["coord"] = { 50.6, 28.6, TANARIS },
 					["g"] = {
 						i(37915, {	-- Pattern: Dress Shoes
 							["isLimited"] = true,
@@ -1463,7 +1463,7 @@ _.Zones =
 					},
 				}),
 				n(5411,   {	-- Krinkle Goodsteel <Blacksmithing Supplies>
-					["coord"] = { 51.2, 30.2, 71 },
+					["coord"] = { 51.2, 30.2, TANARIS },
 					["g"] = {
 						i(6047, {	-- Plans: Golden Scale Coif
 							["isLimited"] = true,
@@ -1471,13 +1471,13 @@ _.Zones =
 					},
 				}),
 				n(7733,   {	-- Innkeeper Fizzgrimble <Innkeeper>
-					["coord"] = { 52.6, 27.0, 71 },
+					["coord"] = { 52.6, 27.0, TANARIS },
 					["g"] = {
 						i(18046),	-- Recipe: Tender Wolf Steak
 					},
 				}),
 				n(106940, {	-- Innkeeper Fizzgrimble <Innkeeper>
-					["coord"] = { 52.6, 27.0, 71 },
+					["coord"] = { 52.6, 27.0, TANARIS },
 					["g"] = {
 						i(18046),	-- Recipe: Tender Wolf Steak
 					},
@@ -1485,14 +1485,14 @@ _.Zones =
 				n(14743,  {	-- Jhordy Lapforge <Engineer>
 					["requireSkill"] = 20219,	-- Gnomish Engineering
 					["description"] = "Gnomish Engineers can speak to Jhordy to learn the recipe.",
-					["coord"] = { 52.2, 27.8, 71 },
+					["coord"] = { 52.2, 27.8, TANARIS },
 					["g"] = {
 						recipe(23489),	-- Ultrasafe Transporter - Gadgetzan
 					},
 				}),
 				n(69323,  {	-- Tiny Tayger <Ruthless Gladiator>
 					["itemID"] = 137642,	-- Mark of Honor
-					["coord"] = { 51.6, 28.0, 71 },
+					["coord"] = { 51.6, 28.0, TANARIS },
 					["g"] = {
 						n(-319, {	-- Weapons
 							i(146640, {	-- Arsenal: Ruthless Gladiator's Weapons
@@ -2265,7 +2265,7 @@ _.Zones =
 				}),
 				n(20278,  {	-- Vixton Pinchwhistle <Bloodthirsty Gladiator>
 					["itemID"] = 137642,	-- Mark of Honor
-					["coord"] = { 51.6, 28.0, 71 },
+					["coord"] = { 51.6, 28.0, TANARIS },
 					["g"] = {
 						cl(DEATHKNIGHT, {
 							i(146423, {	-- Ensemble: Bloodthirsty Gladiator's Dreadplate Armor
@@ -2934,7 +2934,7 @@ _.Zones =
 					},
 				}),
 				n(6568,   {	-- Vizzklick <Tailoring Supplies>
-					["coord"] = { 50.6, 28.6, 71 },
+					["coord"] = { 50.6, 28.6, TANARIS },
 					["g"] = {
 						i(7088, { 	-- Pattern: Crimson Silk Robe
 							["isLimited"] = true,

@@ -6,11 +6,10 @@ _.ExpansionFeatures =
 {
 	tier(8, {	-- Battle for Azeroth
 		n(-10057, {	-- War Effort
-			{	-- Arathi Highlands
-				["mapID"] = 14,	-- Arathi Highlands
-				["lvl"] = 120,
+			m(ARATHI_HIGHLANDS, {
+				["lvl"] = { 50 },
 				["description"] = "Located in the Arathi Highlands, Stromgarde is one of the key locations in the struggle for controlling of the Eastern Kingdoms. For the Alliance, Stromgarde sits in a critical defensive position. Following the battle for Lordaeron, the Horde threat still looms over the continent and holding Stromgarde will be key if you hope to keep the Horde's aggression at bay.\n\nFor the Horde, securing Stromgarde would set the stage for an assault on the heart of the Eastern Kingdoms and serve as a launching point for a campaign against the worgen of the kingdom of Gilneas. This location is also key in the defense of the blood elven capital, Silvermoon City, in the north.",
-			},
+			}),
 		}),
 	}),
 };

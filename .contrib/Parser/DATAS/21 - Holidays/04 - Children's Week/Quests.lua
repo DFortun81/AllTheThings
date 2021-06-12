@@ -960,10 +960,10 @@ _.Holidays =
 						["coords"] = {
 							{ 40.01, 82.05, 119 },	-- Waygate Entrance
 							{ 40.66, 84.18, 119 },	-- Waygate Entrance
-							{ 47.56, 09.17, 78 },	-- The Etymidian
+							{ 47.56, 09.17, UNGORO_CRATER },	-- The Etymidian
 						},
 						["maps"] = {
-							78,		-- Un'Goro Crater
+							UNGORO_CRATER,
 							119,	-- Sholazar Basin
 							125,	-- Dalaran (Northrend)
 						},
@@ -1414,7 +1414,7 @@ _.Holidays =
 							7,	-- Mulgore
 							ORGRIMMAR,
 							86,	-- Orgrimmar: The Drag
-							88,	-- Thunder Bluff
+							THUNDER_BLUFF,
 						},
 						["races"] = HORDE_ONLY,
 						["isYearly"] = true,
@@ -1576,11 +1576,7 @@ _.Holidays =
 							{ 39.94, 77.39, CAVERNS_OF_TIME },	-- Toy Dragon
 							{ 64.76, 50.01, CAVERNS_OF_TIME },	-- Caverns of Time Entrance
 						},
-						["maps"] = {
-							71,		-- Tanaris
-							CAVERNS_OF_TIME,
-							SHATTRATH_CITY,
-						},
+						["maps"] = {TANARIS, CAVERNS_OF_TIME, SHATTRATH_CITY },
 						["races"] = ALLIANCE_ONLY,
 						["isYearly"] = true,
 					},
@@ -1599,11 +1595,7 @@ _.Holidays =
 							{ 39.94, 77.39, CAVERNS_OF_TIME },	-- Toy Dragon
 							{ 64.76, 50.01, CAVERNS_OF_TIME },	-- Caverns of Time Entrance
 						},
-						["maps"] = {
-							71,		-- Tanaris
-							CAVERNS_OF_TIME,
-							SHATTRATH_CITY,
-						},
+						["maps"] = { TANARIS, CAVERNS_OF_TIME, SHATTRATH_CITY },
 						["races"] = HORDE_ONLY,
 						["isYearly"] = true,
 					},

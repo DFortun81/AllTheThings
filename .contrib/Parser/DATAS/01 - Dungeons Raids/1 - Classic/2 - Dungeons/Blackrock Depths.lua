@@ -7,7 +7,7 @@ _.Instances = { tier(1, {	-- Classic
 		["lvl"] = 42,
 		["mapID"] = BLACKROCK_DEPTHS,
 		["maps"] = { 243 },
-		["coord"] = { 39.06, 18.12, 35 },	-- Blackrock Depths, Blackrock Mountain [Blackrock Depths]
+		["coord"] = { 39.06, 18.12, BLACKROCK_MOUNTAIN_LEVEL3 },
 		["g"] = {
 			n(QUESTS, {
 				n(-75, {	-- Detention Block

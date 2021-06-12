@@ -17,7 +17,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 			414,
 		},
 		["coords"] = {
-			{ 64.7, 49.9, 71 },	-- entrance to CoT, Tanaris
+			{ 64.7, 49.9, TANARIS },	-- entrance to CoT
 			{ 61.9, 27.2, CAVERNS_OF_TIME },	-- actual raid entrance
 		},
 		["groups"] = {

@@ -6,7 +6,7 @@ _.Instances = { tier(1, {	-- Classic
 	inst(241, { 	-- Zul'Farrak
 		["lvl"] = 39,
 		["mapID"] = 219,
-		["coord"] = { 39.21, 21.29, 71 },	-- Zul'Farrak, Tanaris
+		["coord"] = { 39.21, 21.29, TANARIS },
 		["g"] = {
 			n(QUESTS, {
 				q(27070, {	-- A Fool's Errand

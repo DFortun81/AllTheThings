@@ -6,13 +6,13 @@ _.ExpansionFeatures =
 {
 	tier(8, {	-- Battle for Azeroth
 		n(-10057, {	-- War Effort
-			m(14, {	-- Arathi Highlands
+			m(ARATHI_HIGHLANDS, {
 				n(RARES, {
 					n(142709, {	-- Beastrider Kama
 						["allianceQuestID"] = 53083,	-- Beastrider Kama [Alliance]
 						["hordeQuestID"] = 53504,	-- Beastrider Kama [Horde]
 						["isWeekly"] = true,
-						["coord"] = { 65.3, 70.6, 14 },
+						["coord"] = { 65.3, 70.6, ARATHI_HIGHLANDS },
 						["g"] = {
 							i(163644),	-- Swift Albino Raptor
 						},
@@ -21,7 +21,7 @@ _.ExpansionFeatures =
 						["allianceQuestID"] = 53013,	-- Branchlord Aldrus [Alliance]
 						["hordeQuestID"] = 53505,	-- Branchlord Aldrus [Horde]
 						["isWeekly"] = true,
-						["coord"] = { 22.9, 22.2, 14 },
+						["coord"] = { 22.9, 22.2, ARATHI_HIGHLANDS },
 						["g"] = {	-- Aldrusian Sproutling
 							i(163650),	-- Aldrusian Sproutling
 						},
@@ -30,7 +30,7 @@ _.ExpansionFeatures =
 						["allianceQuestID"] = 53017,	-- Burning Goliath [Alliance]
 						["hordeQuestID"] = 53506,	-- Burning Goliath [Horde]
 						["isWeekly"] = true,
-						["coord"] = { 30.6, 44.7, 14 },
+						["coord"] = { 30.6, 44.7, ARATHI_HIGHLANDS },
 						["g"] = {
 							i(163691),	-- Burning Essence
 						},
@@ -39,7 +39,7 @@ _.ExpansionFeatures =
 						["allianceQuestID"] = 53018,	-- Cresting Goliath [Alliance]
 						["hordeQuestID"] = 53531,	-- Cresting Goliath [Horde]
 						["isWeekly"] = true,
-						["coord"] = { 61.8, 31.2, 14 },
+						["coord"] = { 61.8, 31.2, ARATHI_HIGHLANDS },
 						["g"] = {
 							i(163700),	-- Cresting Essence
 						},
@@ -50,8 +50,8 @@ _.ExpansionFeatures =
 						["description"] = "Spawns at the northern point when Alliance-controlled and the southern point when Horde-controlled.",
 						["isWeekly"] = true,
 						["coords"] = {
-							{ 50.4, 61.2, 14 },	-- Horde-controlled
-							{ 50.7, 36.5, 14 },	-- Alliance-controlled
+							{ 50.4, 61.2, ARATHI_HIGHLANDS },	-- Horde-controlled
+							{ 50.7, 36.5, ARATHI_HIGHLANDS },	-- Alliance-controlled
 						},
 						["g"] = {
 							i(163652),	-- Tiny Grimoire
@@ -61,7 +61,7 @@ _.ExpansionFeatures =
 						["questID"] = 53085,	-- Doomrider Helgrim
 						["races"] = ALLIANCE_ONLY,
 						["isWeekly"] = true,
-						["coord"] = { 53.8, 58.2, 14 },
+						["coord"] = { 53.8, 58.2, ARATHI_HIGHLANDS },
 						["description"] = "Only shows up when Alliance-controlled.",
 						["g"] = {
 							i(163579),	-- Highland Mustang
@@ -71,7 +71,7 @@ _.ExpansionFeatures =
 						["allianceQuestID"] = 53059,	-- Echo of Myzrael [Alliance]
 						["hordeQuestID"] = 53508,	-- Echo of Myzrael [Horde]
 						["isWeekly"] = true,
-						["coord"] = { 57.0, 34.6, 14 },
+						["coord"] = { 57.0, 34.6, ARATHI_HIGHLANDS },
 						["g"] = {
 							i(163677),	-- Teeny Tiny Orb
 						},
@@ -81,7 +81,7 @@ _.ExpansionFeatures =
 						["hordeQuestID"] = 53509,	-- Foulbelly [Horde]
 						["description"] = "Spawns at the back of the cave.",
 						["isWeekly"] = true,
-						["coord"] = { 28.6, 45.6, 14 },	-- Cave Entrance
+						["coord"] = { 28.6, 45.6, ARATHI_HIGHLANDS },	-- Cave Entrance
 						["g"] = {
 							i(163735),	-- Foulbelly
 						},
@@ -91,8 +91,8 @@ _.ExpansionFeatures =
 						["hordeQuestID"] = 53510,	-- Fozruk [Horde]
 						["isWeekly"] = true,
 						["coords"] = {
-							{ 59.4, 27.5, 14 },	-- Top
-							{ 54.0, 55.4, 14 },	-- Bottom
+							{ 59.4, 27.5, ARATHI_HIGHLANDS },	-- Top
+							{ 54.0, 55.4, ARATHI_HIGHLANDS },	-- Bottom
 						},
 						["g"] = {
 							i(163711),	-- Shard of Fozruk
@@ -103,7 +103,7 @@ _.ExpansionFeatures =
 						["hordeQuestID"] = 53511,	-- Geomancer Flintdagger [Horde]
 						["description"] = "Spawns at the back of the cave.",
 						["isWeekly"] = true,
-						["coord"] = { 78.1, 36.7, 14 },
+						["coord"] = { 78.1, 36.7, ARATHI_HIGHLANDS },
 						["g"] = {
 							i(163713),	-- Brazier Cap
 						},
@@ -114,8 +114,8 @@ _.ExpansionFeatures =
 						["description"] = "Spawns at the northern point when Alliance-controlled and the southern point when Horde-controlled.",
 						["isWeekly"] = true,
 						["coords"] = {
-							{ 19.5, 60.9, 14 },	-- Horde-controlled
-							{ 26.7, 32.6, 14 },	-- Alliance-controlled
+							{ 19.5, 60.9, ARATHI_HIGHLANDS },	-- Horde-controlled
+							{ 26.7, 32.6, ARATHI_HIGHLANDS },	-- Alliance-controlled
 						},
 						["g"] = {
 							i(163736),	-- Spectral Visage
@@ -124,7 +124,7 @@ _.ExpansionFeatures =
 					n(142739, {	-- Knight-Captaian Aldrin
 						["questID"] = 53088,	-- Knight-Captaian Aldrin
 						["isWeekly"] = true,
-						["coord"] = { 49.0, 40.0, 14 },
+						["coord"] = { 49.0, 40.0, ARATHI_HIGHLANDS },
 						["races"] = HORDE_ONLY,
 						["description"] = "Only shows up when Horde-controlled.",
 						["g"] = {
@@ -136,7 +136,7 @@ _.ExpansionFeatures =
 						["hordeQuestID"] = 53513,	-- Kor'gresh Coldrage [Horde]
 						["description"] = "Spawns at the back of the cave.",
 						["isWeekly"] = true,
-						["coord"] = { 48.2, 79.8, 14 },
+						["coord"] = { 48.2, 79.8, ARATHI_HIGHLANDS },
 						["g"] = {
 							i(163744),	-- Coldrage's Cooler
 						},
@@ -146,7 +146,7 @@ _.ExpansionFeatures =
 						["hordeQuestID"] = 53514,	-- Kovork [Horde]
 						["description"] = "Spawns at the front of the cave.",
 						["isWeekly"] = true,
-						["coord"] = { 28.6, 45.6, 14 },	-- Cave Entrance
+						["coord"] = { 28.6, 45.6, ARATHI_HIGHLANDS },	-- Cave Entrance
 						["g"] = {
 							i(163750),	-- Kovork Kostume
 						},
@@ -156,7 +156,7 @@ _.ExpansionFeatures =
 						["hordeQuestID"] = 53515,	-- Man-Hunter Rog [Horde]
 						["isWeekly"] = true,
 						["crs"] = { 142717 },	-- SQUAAWK!
-						["coord"] = { 51.8, 75.1, 14 },
+						["coord"] = { 51.8, 75.1, ARATHI_HIGHLANDS },
 						["g"] = {
 							i(163712),	-- Mana-Warped Egg
 						},
@@ -165,7 +165,7 @@ _.ExpansionFeatures =
 						["allianceQuestID"] = 53057,	-- Molok the Crusher [Alliance]
 						["hordeQuestID"] = 53516,	-- Molok the Crusher [Horde]
 						["isWeekly"] = true,
-						["coord"] = { 47.6, 77.9, 14 },
+						["coord"] = { 47.6, 77.9, ARATHI_HIGHLANDS },
 						["g"] = {
 							i(163775),	-- Molok Morion
 						},
@@ -174,7 +174,7 @@ _.ExpansionFeatures =
 						["allianceQuestID"] = 53091,	-- Nimar the Slayer [Alliance]
 						["hordeQuestID"] = 53517,	-- Nimar the Slayer [Horde]
 						["isWeekly"] = true,
-						["coord"] = { 67.5, 61.0, 14 },
+						["coord"] = { 67.5, 61.0, ARATHI_HIGHLANDS },
 						["g"] = {
 							i(163706),	-- Witherbark Direwing
 						},
@@ -185,8 +185,8 @@ _.ExpansionFeatures =
 						["description"] = "Spawns at the back of the northern cave for Alliance and the southern cave for Horde.",
 						["isWeekly"] = true,
 						["coords"] = {
-							{ 33.7, 36.7, 14 },	-- Horde-controlled
-							{ 27.4, 55.8, 14 },	-- Alliance-controlled
+							{ 33.7, 36.7, ARATHI_HIGHLANDS },	-- Horde-controlled
+							{ 27.4, 55.8, ARATHI_HIGHLANDS },	-- Alliance-controlled
 						},
 						["g"] = {
 							i(163646),	-- Lil' Donkey
@@ -196,7 +196,7 @@ _.ExpansionFeatures =
 						["allianceQuestID"] = 53020,	-- Plaguefeather [Alliance]
 						["hordeQuestID"] = 53519,	-- Plaguefeather [Horde]
 						["isWeekly"] = true,
-						["coord"] = { 36.4, 62.8, 14 },
+						["coord"] = { 36.4, 62.8, ARATHI_HIGHLANDS },
 						["g"] = {
 							i(163690),	-- Plague Egg
 						},
@@ -207,8 +207,8 @@ _.ExpansionFeatures =
 						["description"] = "Spawns at the northern point when Alliance-controlled and the southern point when Horde-controlled.",
 						["isWeekly"] = true,
 						["coords"] = {
-							{ 11.9, 52.1, 14 },	-- Horde-controlled
-							{ 18.5, 27.8, 14 },	-- Alliance-controlled
+							{ 11.9, 52.1, ARATHI_HIGHLANDS },	-- Horde-controlled
+							{ 18.5, 27.8, ARATHI_HIGHLANDS },	-- Alliance-controlled
 						},
 						["g"] = {
 							i(163689),	-- Angry Egg
@@ -218,7 +218,7 @@ _.ExpansionFeatures =
 						["allianceQuestID"] = 53021,	-- Rumbling Goliath [Alliance]
 						["hordeQuestID"] = 53523,	-- Rumbling Goliath [Horde]
 						["isWeekly"] = true,
-						["coord"] = { 29.7, 60.0, 14 },
+						["coord"] = { 29.7, 60.0, ARATHI_HIGHLANDS },
 						["g"] = {
 							i(163701),	-- Rumbling Essence
 						},
@@ -227,7 +227,7 @@ _.ExpansionFeatures =
 						["allianceQuestID"] = 53092,	-- Ruul Onestone [Alliance]
 						["hordeQuestID"] = 53524,	-- Ruul Onestone [Horde]
 						["isWeekly"] = true,
-						["coord"] = { 42.8, 56.4, 14 },
+						["coord"] = { 42.8, 56.4, ARATHI_HIGHLANDS },
 						["g"] = {
 							i(163741),	-- Magic Fun Rock
 						},
@@ -238,8 +238,8 @@ _.ExpansionFeatures =
 						["description"] = "Spawns at the northern point when Alliance-controlled and the southern point when Horde-controlled.",
 						["isWeekly"] = true,
 						["coords"] = {
-							{ 50.4, 57.6, 14 },	-- Horde-controlled
-							{ 51.1, 39.9, 14 },	-- Alliance-controlled
+							{ 50.4, 57.6, ARATHI_HIGHLANDS },	-- Horde-controlled
+							{ 51.1, 39.9, ARATHI_HIGHLANDS },	-- Alliance-controlled
 						},
 						["g"] = {
 							i(163738),	-- Syndicate Mask
@@ -249,7 +249,7 @@ _.ExpansionFeatures =
 						["allianceQuestID"] = 53022,	-- Skullripper [Alliance]
 						["hordeQuestID"] = 53526,	-- Skullripper [Horde]
 						["isWeekly"] = true,
-						["coord"] = { 56.8, 45.1, 14 },
+						["coord"] = { 56.8, 45.1, ARATHI_HIGHLANDS },
 						["g"] = {
 							i(163645),	-- Skullripper
 						},
@@ -258,7 +258,7 @@ _.ExpansionFeatures =
 						["allianceQuestID"] = 53023,	-- Thundering Goliath [Alliance]
 						["hordeQuestID"] = 53527,	-- Thundering Goliath [Horde]
 						["isWeekly"] = true,
-						["coord"] = { 46.3, 52.0, 14 },
+						["coord"] = { 46.3, 52.0, ARATHI_HIGHLANDS },
 						["g"] = {
 							i(163698),	-- Thundering Essence
 						},
@@ -267,7 +267,7 @@ _.ExpansionFeatures =
 						["allianceQuestID"] = 53024,	-- Venomarus [Alliance]
 						["hordeQuestID"] = 53528,	-- Venomarus [Horde]
 						["isWeekly"] = true,
-						["coord"] = { 56.7, 54.1, 14 },
+						["coord"] = { 56.7, 54.1, ARATHI_HIGHLANDS },
 						["g"] = {
 							i(163648),	-- Fuzzy Creepling
 						},
@@ -276,7 +276,7 @@ _.ExpansionFeatures =
 						["allianceQuestID"] = 53015,	-- Yogursa [Alliance]
 						["hordeQuestID"] = 53529,	-- Yogursa [Horde]
 						["isWeekly"] = true,
-						["coord"] = { 14.0, 36.9, 14 },
+						["coord"] = { 14.0, 36.9, ARATHI_HIGHLANDS },
 						["g"] = {
 							i(163684),	-- Scabby
 						},
@@ -286,7 +286,7 @@ _.ExpansionFeatures =
 						["hordeQuestID"] = 53530,	-- Zalas Witherbark <Warband Leader> [Horde]
 						["description"] = "Spawns in the middle of the cave.",
 						["isWeekly"] = true,
-						["coord"] = { 63.2, 77.6, 14 },
+						["coord"] = { 63.2, 77.6, ARATHI_HIGHLANDS },
 						["g"] = {
 							i(163745),	-- Witherbark Gong
 						},

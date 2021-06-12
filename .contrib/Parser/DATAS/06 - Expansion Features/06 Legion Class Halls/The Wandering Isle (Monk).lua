@@ -53,7 +53,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 41911 },	-- Amaranthine Hops
 						["provider"] = { "n", 102820 },	-- Chen Stormstout
 						["classes"] = { MONK },
-						["coord"] = { 55.2, 57, 709 },	-- The Wandering Isle
+						["coord"] = { 55.2, 57.0, 709 },	-- The Wandering Isle
 					}),
 					q(40793, {	-- A Matter of Planning
 						["description"] = "Offered after you collect your first artifact weapon.",

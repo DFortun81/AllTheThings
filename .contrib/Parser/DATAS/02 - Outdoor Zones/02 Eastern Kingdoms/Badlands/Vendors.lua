@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(15, {	-- Badlands
+		m(BADLANDS, {
 			n(VENDORS, {
 				n(49918, {	-- Buckslappy <Engineering Supply Specialist>
-					["coord"] = { 91.0, 38.4, 15 },
+					["coord"] = { 91.0, 38.4, BADLANDS },
 					["g"] = {
 						i(18649, {	-- Schematic: Blue Firework
 							["isLimited"] = true,
@@ -25,7 +25,7 @@ _.Zones =
 					},
 				}),
 				n(48060, {	-- "Chef" Overheat <Cooking Supplies>
-					["coord"] = { 65.0, 38.8, 15 },
+					["coord"] = { 65.0, 38.8, BADLANDS },
 					["g"] = {
 						i(21219),	-- Recipe: Sagefish Delight
 						i(21099),	-- Recipe: Smoked Sagefish

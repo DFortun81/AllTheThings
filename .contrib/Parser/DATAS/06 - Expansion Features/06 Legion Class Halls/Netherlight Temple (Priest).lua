@@ -195,6 +195,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 43374 },	-- Murloc Mind Control (must pick up for this quest to be available)
 						["classes"] = { PRIEST },
 						["coord"] = { 58.5, 37.2, 630 },
+						["maps"] = { 630 },	-- Azsuna
 						["provider"] = { "n", 110686 },	-- Zabra Hexx
 					}),
 					n(46028, {	-- An Urgent Warning
@@ -291,6 +292,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 43376 },	-- Problem Salver
 						["classes"] = { PRIEST },
 						["coord"] = { 47.1, 43.9, 630 },
+						["maps"] = { 630 },	-- Azsuna
 						["provider"] = { "n", 110687 },	-- Yalia Sagewhisper
 						["g"] = {
 							follower(871),	-- Yalia Sagewhisper
@@ -300,6 +302,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 43376 },	-- Problem Salver
 						["classes"] = { PRIEST },
 						["coord"] = { 47.1, 43.9, 630 },
+						["maps"] = { 630 },	-- Azsuna
 						["provider"] = { "n", 110686 },	-- Zabra Hexx
 						["g"] = {
 							follower(870),	-- Zabra Hexx
@@ -344,6 +347,7 @@ _.ExpansionFeatures =
 						["classes"] = { PRIEST },
 						["provider"] = { "n", 110687 },	-- Yalia Sagewhisper
 						["coord"] = { 47.1, 43.9, 630 },
+						["maps"] = { 630 },	-- Azsuna
 					}),
 					q(41628, {	-- Eyes of the Dragon
 						["sourceQuests"] = { 41626 } ,	-- A Forgotten Enemy
@@ -432,6 +436,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 43372 },	-- The Best and Brightest
 						["classes"] = { PRIEST },
 						["coord"] = { 58.5, 37.2, 630 },
+						["maps"] = { 630 },	-- Azsuna
 						["provider"] = { "n", 110686 },	-- Zabra Hexx
 					}),
 					q(43386, {	-- Onslaught Envoy
@@ -471,6 +476,7 @@ _.ExpansionFeatures =
 						},
 						["classes"] = { PRIEST },
 						["coord"] = { 58.5, 37.2, 630 },
+						["maps"] = { 630 },	-- Azsuna
 						["provider"] = { "n", 112487 },	-- Yalia Sagewhisper
 					}),
 					q(44100, {	-- Proper Introductions

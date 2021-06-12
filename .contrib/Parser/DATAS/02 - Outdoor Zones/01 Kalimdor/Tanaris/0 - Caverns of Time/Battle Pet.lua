@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(71, {	-- Tanaris
+		m(TANARIS, {
 			m(CAVERNS_OF_TIME, {
 				filter(101, {	-- Pet Battle
 					p(1161, {	-- Infinite Whelpling

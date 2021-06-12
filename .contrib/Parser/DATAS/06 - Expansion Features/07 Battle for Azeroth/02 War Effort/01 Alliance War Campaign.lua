@@ -242,6 +242,12 @@ _.ExpansionFeatures =
 								-- last Zuldazar quest
 							},
 						}),
+						q(53055, {	-- Pushing Our Influence
+							["description"] = "Automatically starts when you finish your second Foothold in Zandalar.",
+							["isBreadcrumb"] = true,
+							["DisablePartySync"] = true,
+							["races"] = ALLIANCE_ONLY,
+						}),
 						q(52443, {	-- The Final Foothold
 							["provider"] = { "n", 135612 },	-- Halford Wyrmbane
 							["coord"] = { 69.4, 27.0, 1161 },	-- Boralus
@@ -515,6 +521,17 @@ _.ExpansionFeatures =
 							-- I did this foothold third and received a Glowing Azerite Crystal (250 Azerite) as my reward.
 						}),
 					--	ALL 3 FOOTHOLDS END Here
+						q(53063, {	-- A Mission of Unity
+							["provider"] = { "n", 135612 },	-- Halford Wyrmbane
+							["sourceQuests"] = {
+								51967,	-- Return to Boralus (Nazmir Foothold)
+								51968,	-- Return to Boralus (Zuldazar Valley Foothold)
+								51969,	-- Return to Boralus (Vol'dun Foothold)
+							},
+							["isBreadcrumb"] = true,
+							["DisablePartySync"] = true,
+							["races"] = ALLIANCE_ONLY,
+						}),
 						q(51918, {	-- Uniting Kul Tiras - completed once per account
 							["sourceQuests"] = { 52654 },	-- The War Campaign
 							["altQuests"] = { 52450 },	-- Uniting Kul Tiras

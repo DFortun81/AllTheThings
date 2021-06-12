@@ -5188,7 +5188,7 @@ profession(TAILORING, {
 			["groups"] = {
 				objective(1, {	-- Deepen Altar of Shadows Attunement
 					["provider"] = { "i", 31736 },	-- Crystal of Deep Shadows
-					["coord"] = { 58, 71, SHADOWMOON_VALLEY },
+					["coord"] = { 58.0, 71.0, SHADOWMOON_VALLEY },
 				}),
 			},
 		})),

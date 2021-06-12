@@ -13,7 +13,7 @@ _.Factions =
 			{ 52.5, 54.9, 125 },	-- Mirla Silverblaze [Dalaran: Northrend]
 			{ 53.6, 69.6, THE_EXODAR },	-- Nuri
 			{ 70.2, 14.7, 1161 },	-- Perry Charlton [Boralus]
-			{ 37.1, 63.3, 88 },		-- Randah Songhorn [Thunder Bluff]
+			{ 37.1, 63.3, THUNDER_BLUFF },		-- Randah Songhorn
 			{ 58.7, 46.4, SHATTRATH_CITY },	-- Riha
 			{ 64.1, 77.0, 84 },		-- Shay Pressler [Stormwind]
 			{ 36.3, 85.7, 87 },		-- Steeg Haskell [Ironforge]
@@ -31,7 +31,7 @@ _.Factions =
 			SHATTRATH_CITY,
 			SILVERMOON_CITY,
 			84,		-- Stormwind
-			88,		-- Thunder Bluff
+			THUNDER_BLUFF,
 			90,		-- Undercity
 		},
 		["crs"] = {

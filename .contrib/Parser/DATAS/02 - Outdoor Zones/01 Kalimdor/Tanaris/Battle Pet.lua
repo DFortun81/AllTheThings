@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(71, {	-- Tanaris
+		m(TANARIS, {
 			filter(101, {	-- Pet Battle
 				p(484, {	-- Desert Spider
 					["crs"] = { 62186 },	-- Desert Spider

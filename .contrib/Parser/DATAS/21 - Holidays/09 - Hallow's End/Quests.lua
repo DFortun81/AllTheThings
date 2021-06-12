@@ -80,8 +80,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = {
 					NORTHERN_BARRENS,
-					71,		-- Tanaris
-					83,		-- Winterspring
+					TANARIS,
+					WINTERSPRING,
 					87,		-- Ironforge
 					84,		-- Stormwind City
 					89,		-- Darnassus
@@ -106,10 +106,10 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["races"] = HORDE_ONLY,
 				["maps"] = {
 					NORTHERN_BARRENS,
-					71,		-- Tanaris
-					83,		-- Winterspring
+					TANARIS,
+					WINTERSPRING,
 					ORGRIMMAR,
-					88,		-- Thunder Bluff
+					THUNDER_BLUFF,
 					90,		-- Undercity
 					EVERSONG_WOODS,
 					NETHERSTORM,
@@ -179,18 +179,18 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12380, {	-- Candy Bucket — Arathi Highlands, Hammerfall, Horde
 				["isYearly"] = true,
-				["coord"] = { 69.0, 33.4, 14 },
+				["coord"] = { 69.0, 33.4, ARATHI_HIGHLANDS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 14 },	-- Arathi Highlands
+				["maps"] = { ARATHI_HIGHLANDS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(28954, {	-- Candy Bucket — Arathi Highlands, Refuge Point, Alliance
 				["isYearly"] = true,
-				["coord"] = { 40.1, 49, 14 },
+				["coord"] = { 40.1, 49, ARATHI_HIGHLANDS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 14 },	-- Arathi Highlands
+				["maps"] = { ARATHI_HIGHLANDS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -260,26 +260,26 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(28956, {	-- Candy Bucket — Badlands, Dragon's Mouth, Alliance
 				["isYearly"] = true,
-				["coord"] = { 20.9, 56.2, 15 },
+				["coord"] = { 20.9, 56.2, BADLANDS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 15 },	-- Badlands
+				["maps"] = { BADLANDS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(28955, {	-- Candy Bucket — Badlands, Fuselight, neutral
 				["isYearly"] = true,
-				["coord"] = { 65.9, 35.8, 15 },
-				["maps"] = { 15 },	-- Badlands
+				["coord"] = { 65.9, 35.8, BADLANDS },
+				["maps"] = { BADLANDS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12385, {	-- Candy Bucket — Badlands, Kargath, Horde (removed)
 				["isYearly"] = true,
-				["coord"] = { 2.8, 46.0, 15 },
+				["coord"] = { 2.8, 46.0, BADLANDS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 15 },	-- Badlands
+				["maps"] = { BADLANDS },
 				["u"] = REMOVED_FROM_GAME,	-- Kargath was destroyed during Cataclysm
 				["g"] = {
 					i(37586), -- Handful of Treats
@@ -287,9 +287,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(28957, {	-- Candy Bucket — Badlands, New Kargath, Horde
 				["isYearly"] = true,
-				["coord"] = { 18.3, 42.8, 15 },
+				["coord"] = { 18.3, 42.8, BADLANDS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 15 },	-- Badlands
+				["maps"] = { BADLANDS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -1616,25 +1616,25 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(29014, {	-- Candy Bucket — Tanaris, Bootlegger Outpost, neutral
 				["isYearly"] = true,
-				["coord"] = { 55.7, 60.9, 71 },
-				["maps"] = { 71 },	-- Tanaris
+				["coord"] = { 55.7, 60.9, TANARIS },
+				["maps"] = { TANARIS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12399, {	-- Candy Bucket — Tanaris, Gadgetzan, neutral
 				["isYearly"] = true,
-				["coord"] = { 52.6, 27.1, 71 },
-				["maps"] = { 71 },	-- Tanaris
+				["coord"] = { 52.6, 27.1, TANARIS },
+				["maps"] = { TANARIS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12331, {	-- Candy Bucket — Teldrassil, Dolanaar, Alliance
 				["isYearly"] = true,
-				["coord"] = { 55.4, 52.3, 57 },
+				["coord"] = { 55.4, 52.3, TELDRASSIL },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 57 },	-- Teldrassil
+				["maps"] = { TELDRASSIL },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -1677,9 +1677,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12367, {	-- Candy Bucket — Thunder Bluff, Lower Rise, Horde
 				["isYearly"] = true,
-				["coord"] = { 45.7, 64.5, 88 },
+				["coord"] = { 45.7, 64.5, THUNDER_BLUFF },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 88 },	-- Thunder Bluff
+				["maps"] = { THUNDER_BLUFF },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -1809,8 +1809,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(29018, {	-- Candy Bucket — Un'Goro Crater, Marshal's Stand, neutral
 				["isYearly"] = true,
-				["coord"] = { 55.2, 62.1, 78 },
-				["maps"] = { 78 },	-- Un'Goro Crater
+				["coord"] = { 55.2, 62.1, UNGORO_CRATER },
+				["maps"] = { UNGORO_CRATER },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -1965,8 +1965,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12400, {	-- Candy Bucket — Winterspring, Everlook, neutral
 				["isYearly"] = true,
-				["coord"] = { 59.8, 51.2, 83 },
-				["maps"] = { 83 },	-- Winterspring
+				["coord"] = { 59.8, 51.2, WINTERSPRING },
+				["maps"] = { WINTERSPRING },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -2082,8 +2082,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = {
 					NORTHERN_BARRENS,
-					71,		-- Tanaris
-					83,		-- Winterspring
+					TANARIS,
+					WINTERSPRING,
 					87,		-- Ironforge
 					84,		-- Stormwind City
 					89,		-- Darnassus
@@ -2120,7 +2120,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["repeatable"] = true,
 				["provider"] = { "n", 6746 },	-- Innkeeper Pala
 				["races"] = HORDE_ONLY,
-				["maps"] = { 88 },	-- Thunder Bluff
+				["maps"] = { THUNDER_BLUFF },
 			}),
 			q(29398, {	-- Fencing the Goods (Alliance)
 				["sourceQuests"] = { 29392 },	-- Missing Heirlooms (Alliance)
@@ -2273,10 +2273,10 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["races"] = HORDE_ONLY,
 				["maps"] = {
 					NORTHERN_BARRENS,
-					71,		-- Tanaris
-					83,		-- Winterspring
+					TANARIS,
+					WINTERSPRING,
 					ORGRIMMAR,
-					88,		-- Thunder Bluff
+					THUNDER_BLUFF,
 					90,		-- Undercity
 					EVERSONG_WOODS,
 					NETHERSTORM,

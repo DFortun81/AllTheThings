@@ -824,7 +824,7 @@ _.Zones =
 					["provider"] = { "n", 10920 },	-- Kelek Skykeeper
 					["coords"] = {
 						{ 51.2, 80.3, FELWOOD },
-						{ 46.8, 53.8, 83 },
+						{ 46.8, 53.8, WINTERSPRING },
 					},
 				}),
 				q(28337, {	-- The Shredders of Irontree

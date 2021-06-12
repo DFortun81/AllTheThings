@@ -472,7 +472,7 @@ _.Zones =
 							q(32327, {	-- The Darnassus Mission
 								["sourceQuests"] = { 32326 },	-- Insertion
 								["provider"] = { "n", 68077 },	-- Fanlyr Silverthorn
-								["coord"] = { 40.0, 50.4, 57 },
+								["coord"] = { 40.0, 50.4, TELDRASSIL },
 								["races"] = HORDE_ONLY,
 							}),
 							q(32392, {	-- The Divine Bell
@@ -602,7 +602,7 @@ _.Zones =
 							q(32328, {	-- Victorious Return
 								["sourceQuests"] = { 32327 },	-- The Darnassus Mission
 								["provider"] = { "n", 68077 },	-- Fanlyr Silverthorn
-								["coord"] = { 40.0, 50.4, 57 },
+								["coord"] = { 40.0, 50.4, TELDRASSIL },
 								["races"] = HORDE_ONLY,
 							}),
 							q(32404, {	-- Violence in the Arena
@@ -1030,7 +1030,7 @@ _.Zones =
 							q(32416, {	-- Jaina's Resolution
 								["sourceQuests"] = { 32460 },	-- Tracking the Thieves
 								["provider"] = { "n", 68651 },	-- Lady Jaina Proudmoore
-								["coord"] = { 40.0, 50.4, 57 },
+								["coord"] = { 40.0, 50.4, TELDRASSIL },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(32109, {	-- Lion's Landing

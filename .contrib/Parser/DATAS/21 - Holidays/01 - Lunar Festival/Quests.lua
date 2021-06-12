@@ -76,7 +76,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 					90,	-- Undercity
 					87,	-- Ironforge
 					ORGRIMMAR,
-					88,	-- Thunder Bluff
+					THUNDER_BLUFF,
 					89,	-- Darnassus
 					SILVERMOON_CITY,
 					THE_EXODAR,
@@ -138,7 +138,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["provider"] = { "n", 15891 },	-- Lunar Festival Herald
 				["isYearly"] = true,
 				["races"] = HORDE_ONLY,
-				["maps"] = { 88 },	-- Thunder Bluff
+				["maps"] = { THUNDER_BLUFF },
 				["u"] = 17,	-- Lunar Festival
 			}),
 			q(8883,  {	-- Valadar Starsong
@@ -151,7 +151,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 					90,	-- Undercity
 					87,	-- Ironforge
 					ORGRIMMAR,
-					88,	-- Thunder Bluff
+					THUNDER_BLUFF,
 					89,	-- Darnassus
 					SILVERMOON_CITY,
 					THE_EXODAR,
@@ -482,8 +482,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["description"] = "In order to view this Elder, visit Zidormi at 48.8, 24.4 in Darkshore to be able to visit the past version of Teldrassil.  The Elder is on the left side of the Cenarion Enclave.",
 				["provider"] = { "n", 15595 },	-- Elder Bladeleaf
 				["isYearly"] = true,
-				["coord"] = { 56.8, 53.1, 57 },
-				["maps"] = { 57 },	-- Teldrassil
+				["coord"] = { 56.8, 53.1, TELDRASSIL },
+				["maps"] = { TELDRASSIL },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(6, {	-- Elder Bladeleaf in Dolanaar
@@ -519,8 +519,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8726,  {	-- Brightspear the Elder
 				["provider"] = { "n", 15606 },	-- Elder Brightspear
 				["isYearly"] = true,
-				["coord"] = { 53.2, 56.7, 83 },
-				["maps"] = { 83 },	-- Winterspring
+				["coord"] = { 53.2, 56.7, WINTERSPRING },
+				["maps"] = { WINTERSPRING },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(18, {	-- Elder Brightspear in Winterspring
@@ -531,8 +531,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8684,  {	-- Dreamseer the Elder
 				["provider"] = { "n", 15586 },	-- Elder Dreamseer
 				["isYearly"] = true,
-				["coord"] = { 51.3, 28.8, 71 },
-				["maps"] = { 71 },	-- Tanaris
+				["coord"] = { 51.3, 28.8, TANARIS },
+				["maps"] = { TANARIS },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(16, {	-- Elder Dreamseer in Gadgetzan
@@ -628,8 +628,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8671,  {	-- Ragetotem the Elder
 				["provider"] = { "n", 15573 },	-- Elder Ragetotem
 				["isYearly"] = true,
-				["coord"] = { 37.2, 79.0, 71 },
-				["maps"] = { 71 },	-- Tanaris
+				["coord"] = { 37.2, 79.0, TANARIS },
+				["maps"] = { TANARIS },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(15, {	-- Elder Ragetotem in Tanaris
@@ -701,8 +701,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8672,  {	-- Stonespire the Elder
 				["provider"] = { "n", 15574 },	-- Elder Stonespire
 				["isYearly"] = true,
-				["coord"] = { 59.9, 49.9, 83 },
-				["maps"] = { 83 },	-- Winterspring
+				["coord"] = { 59.9, 49.9, WINTERSPRING },
+				["maps"] = { WINTERSPRING },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(19, {	-- Elder Stonespire in Everlook
@@ -713,8 +713,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8681,  {	-- Thunderhorn the Elder
 				["provider"] = { "n", 15583 },	-- Elder Thunderhorn
 				["isYearly"] = true,
-				["coord"] = { 50.3, 76.2, 78 },
-				["maps"] = { 78 },	-- Un'Goro Crater
+				["coord"] = { 50.3, 76.2, UNGORO_CRATER },
+				["maps"] = { UNGORO_CRATER },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(17, {	-- Elder Thunderhorn in Un'goro
@@ -1171,9 +1171,9 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["description"] = "The Elder is on the right side of Gahz'rilla's room.",
 				["provider"] = { "n", 15578 },	-- Elder Wildmane
 				["isYearly"] = true,
-				["coord"] = { 39.2, 21.3, 71 },	-- Zul'Farrak entrance
+				["coord"] = { 39.2, 21.3, TANARIS },	-- Zul'Farrak entrance
 				["maps"] = {
-					71,		-- Tanaris
+					TANARIS,
 					219,	-- Zul'Farrak
 				},
 				["u"] = 17,	-- Lunar Festival
@@ -1230,8 +1230,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["description"] = "The Elder is located on the northern edge of the Elder Rise.",
 				["provider"] = { "n", 15580 },	-- Elder Wheathoof
 				["isYearly"] = true,
-				["coord"] = { 72.8, 22.8, 88 },
-				["maps"] = { 88 },	-- Thunder Bluff
+				["coord"] = { 72.8, 22.8, THUNDER_BLUFF },
+				["maps"] = { THUNDER_BLUFF },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(2, {	-- Elder Wheathoof in Thunder Bluff
