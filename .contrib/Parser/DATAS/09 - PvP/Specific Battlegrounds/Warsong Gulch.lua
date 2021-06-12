@@ -43,6 +43,7 @@ _.PVP =
 							["races"] = ALLIANCE_ONLY,
 							["minReputation"] = { 890, FRIENDLY },
 						}),
+						--[[
 						n(14753, {	-- Illiyana Moonblaze <Silverwing Supply Officer>
 							["itemID"] = 137642,	-- Mark of Honor
 							["races"] = ALLIANCE_ONLY,	-- to hide it in Mark of Honor list
@@ -238,6 +239,7 @@ _.PVP =
 								}),
 							},
 						}),
+						--]]
 					},
 				}),
 				faction(889, {	-- Warsong Outriders
@@ -266,6 +268,7 @@ _.PVP =
 								["minReputation"] = { 889, REVERED },
 							}),
 						}),
+						--[[
 						n(14754, {	-- Kelm Hargunth <Warsong Supply Officer>
 							["itemID"] = 137642,	-- Mark of Honor
 							["races"] = HORDE_ONLY,	-- to hide it in Mark of Honor list
@@ -461,6 +464,7 @@ _.PVP =
 								}),
 							},
 						}),
+						--]]
 					},
 				}),
 			}),
