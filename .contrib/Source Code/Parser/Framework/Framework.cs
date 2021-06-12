@@ -63,16 +63,16 @@ namespace ATT
         public static readonly Dictionary<string, int[]> FIRST_EXPANSION_PATCH = new Dictionary<string, int[]>
         {
             // Key-Value Pair   // Classic Release Version
-            { "UNKNOWN", new int[] { 0, 0, 0, 0 } },   // Unknown, invalid data.
-            { "CLASSIC", new int[] { 1, 0, 0, 22248 } },
-            { "TBC", new int[] { 2, 0, 1, 22248 } },
-            { "WRATH", new int[] { 3, 0, 2, 22248 } },
-            { "CATA", new int[] { 4, 0, 1, 22248 } },
-            { "MOP", new int[] { 5, 0, 4, 22248 } },
-            { "WOD", new int[] { 6, 0, 2, 22248 } },
-            { "LEGION", new int[] { 7, 0, 3, 22248 } },
-            { "BFA", new int[] { 8, 3, 7, 22248 } },
-            { "SHADOWLANDS", new int[] { 9, 1, 0, 22248 } },
+            { "UNKNOWN", new int[] { 0, 0, 0, 0 } },        // Unknown, invalid data.
+            { "CLASSIC", new int[] { 1, 0, 0, 22248 } },    // NOTE: Values for WoW-Classic
+            { "TBC", new int[] { 2, 0, 1, 22248 } },        // NOTE: Values for TBC-Classic
+            { "WRATH", new int[] { 3, 0, 2, 9056 } },
+            { "CATA", new int[] { 4, 0, 1, 13164 } },
+            { "MOP", new int[] { 5, 0, 4, 16015 } },
+            { "WOD", new int[] { 6, 0, 2, 18764 } },
+            { "LEGION", new int[] { 7, 0, 1, 20740 } },
+            { "BFA", new int[] { 8, 0, 1, 27026 } },
+            { "SHADOWLANDS", new int[] { 9, 0, 1, 36216 } },
         };
 
         /// <summary>
@@ -83,16 +83,16 @@ namespace ATT
         public static readonly Dictionary<string, int[]> LAST_EXPANSION_PATCH = new Dictionary<string, int[]>
         {
             // Key-Value Pair   // Classic Release Version
-            { "UNKNOWN", new int[] { 0, 0, 0, 22248 } },   // Unknown, invalid data.
-            { "CLASSIC", new int[] { 1, 13, 7, 22248 } },
-            { "TBC", new int[] { 2, 5, 4, 22248 } },
-            { "WRATH", new int[] { 3, 3, 5, 22248 } },
-            { "CATA", new int[] { 4, 3, 4, 22248 } },
-            { "MOP", new int[] { 5, 4, 8, 22248 } },
-            { "WOD", new int[] { 6, 2, 4, 22248 } },
-            { "LEGION", new int[] { 7, 3, 5, 22248 } },
-            { "BFA", new int[] { 8, 3, 7, 22248 } },
-            { "SHADOWLANDS", new int[] { 9, 1, 0, 22248 } },
+            { "UNKNOWN", new int[] { 0, 0, 0, 22248 } },    // Unknown, invalid data.
+            { "CLASSIC", new int[] { 1, 13, 7, 22248 } },   // NOTE: Values for WoW-Classic
+            { "TBC", new int[] { 2, 5, 4, 22248 } },        // NOTE: Values for TBC-Classic
+            { "WRATH", new int[] { 3, 3, 5, 12340 } },
+            { "CATA", new int[] { 4, 3, 4, 15595 } },
+            { "MOP", new int[] { 5, 4, 8, 18224 } },
+            { "WOD", new int[] { 6, 2, 4, 21345 } },
+            { "LEGION", new int[] { 7, 3, 5, 26365 } },
+            { "BFA", new int[] { 8, 3, 7, 35249 } },
+            { "SHADOWLANDS", new int[] { 9, 1, 0, 37862 } },
         };
 
         public static readonly string CURRENT_RELEASE_PHASE_NAME =
