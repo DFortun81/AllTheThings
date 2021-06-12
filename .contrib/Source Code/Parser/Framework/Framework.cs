@@ -92,7 +92,7 @@ namespace ATT
             { "WOD", new int[] { 6, 2, 4, 21345 } },
             { "LEGION", new int[] { 7, 3, 5, 26365 } },
             { "BFA", new int[] { 8, 3, 7, 35249 } },
-            { "SHADOWLANDS", new int[] { 9, 1, 0, 37862 } },
+            { "SHADOWLANDS", new int[] { 9, 0, 5, 37862 } },
         };
 
         public static readonly string CURRENT_RELEASE_PHASE_NAME =
@@ -1999,6 +1999,7 @@ namespace ATT
                 case "professionID":
                 case "provider":
                 case "providers":
+                case "pvp":
                 case "qg":
                 case "qgs":
                 case "r": // horde/alliance faction

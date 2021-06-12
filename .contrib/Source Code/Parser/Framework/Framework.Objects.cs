@@ -1174,6 +1174,7 @@ namespace ATT
                         case "isYearly":
                         case "isWorldQuest":
                         case "repeatable":
+                        case "pvp":
                         case "factionID":
                         case "requireSkill":
                         case "followerID":
@@ -1405,6 +1406,7 @@ namespace ATT
                     case "collectible":
                     case "equippable":
                     case "repeatable":
+                    case "pvp":
                     case "isBreadcrumb":
                     case "DisablePartySync":
                     case "isLimited":
