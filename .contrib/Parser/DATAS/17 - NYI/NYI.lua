@@ -581,21 +581,6 @@ _.NeverImplemented =
 		n(-44, {	-- Leather
 			cl(DRUID, {
 				i(77751),	-- Replicate Knight Captains Dragonhide Chestpiece
-				i(48769),	-- Runetotem's Handguards of Conquest
-				i(48770),	-- Runetotem's Headpiece of Conquest
-				i(48771),	-- Runetotem's Leggings of Conquest
-				i(48772),	-- Runetotem's Robe of Conquest
-				i(48773),	-- Runetotem's Spaulders of Conquest
-				i(48781),	-- Runetotem's Cover of Conquest
-				i(48782),	-- Runetotem's Gloves of Conquest
-				i(48783),	-- Runetotem's Mantle of Conquest
-				i(48784),	-- Runetotem's Trousers of Conquest
-				i(48785),	-- Runetotem's Vestments of Conquest
-				i(48794),	-- Runetotem's Handgrips of Conquest
-				i(48795),	-- Runetotem's Headguard of Conquest
-				i(48796),	-- Runetotem's Legguards of Conquest
-				i(48797),	-- Runetotem's Raiments of Conquest
-				i(48798),	-- Runetotem's Shoulderpads of Conquest
 				i(32113),	-- Chancellor's Dragonhide Gloves
 				i(32114),	-- Chancellor's Dragonhide Helm
 				i(32115),	-- Chancellor's Dragonhide Legguards
@@ -616,6 +601,38 @@ _.NeverImplemented =
 				i(32130),	-- Chancellor's Wyrmhide Legguards
 				i(32131),	-- Chancellor's Wyrmhide Spaulders
 				i(32132),	-- Chancellor's Wyrmhide Tunic
+				-- T9 "Replica" added in cata
+				i(48769),	-- Runetotem's Handguards of Conquest
+				i(48770),	-- Runetotem's Headpiece of Conquest
+				i(48771),	-- Runetotem's Leggings of Conquest
+				i(48772),	-- Runetotem's Robe of Conquest
+				i(48773),	-- Runetotem's Spaulders of Conquest
+				i(48781),	-- Runetotem's Cover of Conquest
+				i(48782),	-- Runetotem's Gloves of Conquest
+				i(48783),	-- Runetotem's Mantle of Conquest
+				i(48784),	-- Runetotem's Trousers of Conquest
+				i(48785),	-- Runetotem's Vestments of Conquest
+				i(48794),	-- Runetotem's Handgrips of Conquest
+				i(48795),	-- Runetotem's Headguard of Conquest
+				i(48796),	-- Runetotem's Legguards of Conquest
+				i(48797),	-- Runetotem's Raiments of Conquest
+				i(48798),	-- Runetotem's Shoulderpads of Conquest
+				i(48774),	-- Malfurion's Handguards
+				i(48775),	-- Malfurion's Headpiece
+				i(48776),	-- Malfurion's Leggings
+				i(48777),	-- Malfurion's Robe
+				i(48778),	-- Malfurion's Spaulders
+				i(48786),	-- Malfurion's Cover
+				i(48787),	-- Malfurion's Gloves
+				i(48788),	-- Malfurion's Mantle
+				i(48789),	-- Malfurion's Trousers
+				i(48790),	-- Malfurion's Vestments
+				i(48799),	-- Malfurion's Handgrips
+				i(48800),	-- Malfurion's Headguard
+				i(48801),	-- Malfurion's Legguards
+				i(48802),	-- Malfurion's Raiments
+				i(48803),	-- Malfurion's Shoulderpads
+				-- T8 "Replica" added in cata
 				i(45350),	-- Nightsong Cover
 				i(46260),	-- Nightsong Handgrips
 				i(46261),	-- Nightsong Handguards
@@ -631,6 +648,22 @@ _.NeverImplemented =
 				i(46271),	-- Nightsong Trousers
 				i(46272),	-- Nightsong Vestments
 				i(46309),	-- Nightsong Gloves
+				-- T10 "Replica" added in cata
+				i(51692),	-- Lasherweave Pauldrons
+				i(51693),	-- Lasherweave Legplates
+				i(51694),	-- Lasherweave Helmet
+				i(51695),	-- Lasherweave Gauntlets
+				i(51696),	-- Lasherweave Robes
+				i(51697),	-- Lasherweave Raiment
+				i(51698),	-- Lasherweave Handgrips
+				i(51699),	-- Lasherweave Headguard
+				i(51700),	-- Lasherweave Legguards
+				i(51701),	-- Lasherweave Shoulderpads
+				i(51702),	-- Lasherweave Vestment
+				i(51703),	-- Lasherweave Gloves
+				i(51704),	-- Lasherweave Cover
+				i(51705),	-- Lasherweave Trousers
+				i(51706),	-- Lasherweave Mantle
 				-- Unused T0 Replica
 				i(78068),	-- Replica Wildheart Belt
 				i(78067),	-- Replica Wildheart Boots
@@ -683,17 +716,18 @@ _.NeverImplemented =
 				i(96226),	-- Shoulderguards of the Haunted Forest
 			}),
 			cl(ROGUE, {
-				i(48804),	-- Garona's Breastplate of Conquest
-				i(48805),	-- Garona's Gauntlets of Conquest
-				i(48806),	-- Garona's Helmet of Conquest
-				i(48807),	-- Garona's Legplates of Conquest
-				i(48808),	-- Garona's Pauldrons of Conquest
 				i(7950),		-- Armor of Thero-Shan
 				i(7948),		-- Girdle of Thero-Shan
 				i(7952),		-- Boots of Thero-Shan
 				i(7951),		-- Hands of Thero-Shan
 				i(7953),		-- Mask of Thero-Shan
 				i(7949),		-- Leggings of Thero-Shan
+				-- T9 "Replica" added in cata
+				i(48804),	-- Garona's Breastplate of Conquest
+				i(48805),	-- Garona's Gauntlets of Conquest
+				i(48806),	-- Garona's Helmet of Conquest
+				i(48807),	-- Garona's Legplates of Conquest
+				i(48808),	-- Garona's Pauldrons of Conquest
 				-- Possible Unused Level 120/Lv 120 Classtrial
 				i(150600),	-- Outlaw's Cutlass
 				i(157637),	-- Swaggering Cutlass
@@ -719,6 +753,24 @@ _.NeverImplemented =
 				i(97055),	-- Nine-Tailed Spaulders
 				-- Transmog set item that never became available
 				i(130327),	-- Artful Britches
+				-- T8 "Replica" added in cata
+				i(46288),	-- Terrorblade Breastplate
+				i(46289),	-- Terrorblade Gauntlets
+				i(46290),	-- Terrorblade Helmet
+				i(46291),	-- Terrorblade Legplates
+				i(46292),	-- Terrorblade Pauldrons
+				-- T9 "Replica" added in cata
+				i(48809),	-- VanCleef's Breastplate
+				i(48810),	-- VanCleef's Gauntlets
+				i(48811),	-- VanCleef's Helmet
+				i(48812),	-- VanCleef's Legplates
+				i(48813),	-- VanCleef's Pauldrons
+				-- T10 "Replica" added in cata
+				i(51742),	-- Shadowblade Gauntlets
+				i(51743),	-- Shadowblade Breastplate
+				i(51744),	-- Shadowblade Legplates
+				i(51745),	-- Shadowblade Helmet
+				i(51746),	-- Shadowblade Pauldrons
 			}),
 			cl(MONK, {
 				-- T15 Thunderforged & Heroic Thunderforged (Throne of Thunder)
