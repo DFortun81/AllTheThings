@@ -267,9 +267,7 @@ _.Zones =
 						}),
 					},
 				}),
-				ach(12578, {		-- Tour of Duty: Stormsong Valley
-					["u"] = PLAYER_VS_PLAYER,
-				}),
+				pvp(ach(12578)),	-- Tour of Duty: Stormsong Valley
 				ach(12853, {	-- Treasures of Stormsong
 					o(293350, {	-- Carved Wooden Chest
 						["questID"] = 52429,

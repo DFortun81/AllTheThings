@@ -443,7 +443,7 @@ _.Zones =
 				n(12795,  {	-- First Sergeant Hola'mahi <Legacy Armor Quartermaster>
 					["races"] = HORDE_ONLY,
 					["coord"] = { 38.2, 72.6, ORGRIMMAR },
-					["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
+					["g"] = pvp({
 						i(28377), 	-- Sergeant's Heavy Cloak
 						i(28378), 	-- Sergeant's Heavy Cape
 						i(16486), 	-- First Sergeant's Silk Cuffs
@@ -2442,7 +2442,7 @@ _.Zones =
 					["coord"] = { 41.8, 72.6, ORGRIMMAR },
 					["itemID"] = 137642,	-- Mark of Honor
 					["races"] = HORDE_ONLY,
-					["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
+					["g"] = pvp({
 						i(29466),	-- Black War Kodo
 						un(REMOVED_FROM_GAME, i(18247)),	-- Black War Kodo. Pre 2.0 Version
 						i(29469),	-- Horn of the Black War Wolf
@@ -3318,7 +3318,7 @@ _.Zones =
 				n(12794,  {	-- Stone Guard Zarg <Legacy Weapon Quartermaster>
 					["coord"] = { 38.6, 72.8, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
-					["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
+					["g"] = pvp({
 						i(18831, {	-- High Warlord's Battle Axe
 							["cost"] = { { "i", 137642, 5 }, },	-- 5x Mark of Honor
 						}),

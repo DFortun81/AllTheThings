@@ -4,7 +4,7 @@
 
 _.PVP =
 {
-	n(-10002, bubbleDown({["u"] = PLAYER_VS_PLAYER}, {	-- Classic
+	pvp(n(-10002, {	-- Classic
 		m(91 , {	-- Alterac Valley
 			["achievementID"] = 218,	-- Alterac Valley Victory
 			["g"] = {

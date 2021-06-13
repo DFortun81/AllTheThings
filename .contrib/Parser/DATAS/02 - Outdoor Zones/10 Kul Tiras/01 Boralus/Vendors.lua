@@ -10,7 +10,7 @@ _.Zones =
 				n(161565, {	-- Bragni <Profession Liason>
 					["coord"] = { 56.3, 27.2, 1161 },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
+					["g"] = pvp({
 						i(171153, {	-- Formula: Uncanny Combatant's Sorcerous Scepter (Rank 2)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
@@ -1348,7 +1348,7 @@ _.Zones =
 				n(142564, {	-- Leedan Gustaf <Profession Liason> [NOTE: PvP Craftable Recipes]
 					["coord"] = { 56.0, 26.8, 1161 },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
+					["g"] = pvp({
 						i(162439, {	-- Pattern: Honorable Combatant's Satin Belt (Rank 2)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),

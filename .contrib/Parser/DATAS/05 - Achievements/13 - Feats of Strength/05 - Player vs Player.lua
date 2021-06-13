@@ -7,7 +7,7 @@ _.Achievements =
 	-- Titles such as Challenger, Rival, Duelist & Gladiator are listed once under PvP>Arena achievements.
 	-- Exception: Combatant (Listed 5 times)
 	n(-9969, {	-- Feats of Strength
-		n(-9958, {	-- Player vs Player
+		pvp(n(-9958, {	-- Player vs Player
 			n(-665, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Merciless Gladiator: Burning Crusade Season 2
 				ach(418, {	-- Merciless Gladiator: Burning Crusade Season 2
 					title(37),	-- Merciless Gladiator <Name>
@@ -664,66 +664,28 @@ _.Achievements =
 				}),
 			})),
 			n(-693, {	-- Sinful Gladiator: Shadowlands Season 1
-				ach(14686, {	-- Challenger: Shadowlands Season 1
-					--["u"] = REMOVED_FROM_GAME,
-					["u"] = PLAYER_VS_PLAYER,
-				}),
+				ach(14686),	-- Challenger: Shadowlands Season 1
 				ach(14685, {	-- Combatant: Shadowlands Season 1
-					--["u"] = REMOVED_FROM_GAME,
-					["u"] = PLAYER_VS_PLAYER,
-					["g"] = {
-						title(78),	-- Combatant <Name>
-					},
+					title(78),	-- Combatant <Name>
 				}),
 				ach(14688, {	-- Duelist: Shadowlands Season 1
-					--["u"] = REMOVED_FROM_GAME,
-					["u"] = PLAYER_VS_PLAYER,
-					["g"] = {
-						-- Note!! Currently we can not list this due to having no item.
-						-- Illusion: Dreadflame // Dreadflame Illusion
-						i(180424, {	-- Sinful Gladiator's Prestigious Cloak
-							--["u"] = REMOVED_FROM_GAME,
-							["u"] = PLAYER_VS_PLAYER,
-						}),
-					},
+					-- Note!! Currently we can not list this due to having no item.
+					-- Illusion: Dreadflame // Dreadflame Illusion
+					i(180424),	-- Sinful Gladiator's Prestigious Cloak
 				}),
 				ach(14691, {	-- Elite: Shadowlands Season 1
-					--["u"] = REMOVED_FROM_GAME,
-					["u"] = PLAYER_VS_PLAYER,
-					["g"] = {
-						i(180431, {	-- Sinful Gladiator's Tabard
-							--["u"] = REMOVED_FROM_GAME,
-							["u"] = PLAYER_VS_PLAYER,
-						}),
-					},
+					i(180431),	-- Sinful Gladiator's Tabard
 				}),
-				ach(14689, {	-- Gladiator: Shadowlands Season 1
-					--["u"] = REMOVED_FROM_GAME,
-					["u"] = PLAYER_VS_PLAYER,
-					-- Mount is listed under FoS>Mounts.
-				}),
+				ach(14689),	-- Gladiator: Shadowlands Season 1	-- Mount is listed under FoS>Mounts.
 				ach(14692, {	-- Hero of the Alliance: Sinful
 					["races"] = ALLIANCE_ONLY,
-					["u"] = PLAYER_VS_PLAYER,
-					--["u"] = REMOVED_FROM_GAME,
 				}),
 				ach(14693, {	-- Hero of the Horde: Sinful
 					["races"] = HORDE_ONLY,
-					["u"] = PLAYER_VS_PLAYER,
-					--["u"] = REMOVED_FROM_GAME,
 				}),
-				ach(14687, {	-- Rival: Shadowlands Season 1
-					--["u"] = REMOVED_FROM_GAME,
-					["u"] = PLAYER_VS_PLAYER,
-				}),
+				ach(14687),	-- Rival: Shadowlands Season 1
 				ach(14690, {	-- Sinful Gladiator: Shadowlands Season 1
-					--["u"] = REMOVED_FROM_GAME,
-					["u"] = PLAYER_VS_PLAYER,
-					["g"] = {
-						title(434, {	-- Sinful Gladiator <Name>
-							--["u"] = REMOVED_FROM_GAME,
-						}),
-					},
+					title(434),	-- Sinful Gladiator <Name>
 				}),
 			}),
 			un(REMOVED_FROM_GAME, ach(1161, {		-- High Five: 2200
@@ -752,29 +714,22 @@ _.Achievements =
 			}),
 			ach(12568, {							-- The Alliance Slayer
 				["races"] = HORDE_ONLY,
-				["u"] = PLAYER_VS_PLAYER,
 			}),
 			ach(12567, {							-- The Horde Slayer
 				["races"] = ALLIANCE_ONLY,
-				["u"] = PLAYER_VS_PLAYER,
 			}),
 			ach(9725, {								-- The Last of Us
-				["u"] = PLAYER_VS_PLAYER,
-				["g"] = {
-					title(302, {						-- Lord of War (Gender specific title, must log in with both genders to recieve both titles)
-						["u"] = PLAYER_VS_PLAYER,
-						["description"] = "Earned with a male character. Female version can be obtained by swapping your gender at the barber.",
-					}),
-					title(303, {						-- Lady of War (Gender specific title, must log in with both genders to recieve both titles)
-						["u"] = PLAYER_VS_PLAYER,
-						["description"] = "Earned with a female character. Male version can be obtained by swapping your gender at the barber.",
-					}),
-				},
+				title(302, {						-- Lord of War (Gender specific title, must log in with both genders to recieve both titles)
+					["description"] = "Earned with a male character. Female version can be obtained by swapping your gender at the barber.",
+				}),
+				title(303, {						-- Lady of War (Gender specific title, must log in with both genders to recieve both titles)
+					["description"] = "Earned with a female character. Male version can be obtained by swapping your gender at the barber.",
+				}),
 			}),
 			un(REMOVED_FROM_GAME, ach(8392, {		-- Tournament Glory 2013
 				un(REMOVED_FROM_GAME, title(128)),		-- Vanquisher
 			})),
 			un(REMOVED_FROM_GAME, ach(8391)),		-- Tournament Participation 2013
-		}),
+		})),
 	}),
 };

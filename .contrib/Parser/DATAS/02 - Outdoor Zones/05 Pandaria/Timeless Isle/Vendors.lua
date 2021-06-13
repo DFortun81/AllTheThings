@@ -287,7 +287,7 @@ _.Zones =
 				}),
 				n(73307, {	-- Speaker Gulan <Emissary of Ordos>
 					["coord"] = { 74.9, 44.9, 554 },
-					["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
+					["g"] = pvp({
 						currency(789, {	-- Bloody Coin
 							["description"] = "Earn Bloody Coins by transforming into an Emissary of Ordos and participating in PvP.",
 							["g"] = {

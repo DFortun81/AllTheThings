@@ -5,142 +5,140 @@
 -- TODO: reformat this file
 _.Achievements =
 {
-	n(-9958, {	-- Player vs Player
-		["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
-			n(-9997, {	-- Ashran
-				ach(9102),	-- Ashran Victory
-				ach(9104, {	-- Bounty Hunter (A)
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						crit(1),	-- Pandaren Hide
-						crit(2),	-- Blood Elf Ear
-						crit(3),	-- Tauren Hoof
-						crit(4),	-- Orc Tooth
-						crit(5),	-- Troll Feet
-						crit(6),	-- Forsaken Brains
-						crit(7),	-- Goblin Nose
-					},
-				}),
-				ach(9103, {	-- Bounty Hunter (H)
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						crit(1),	-- Pandaren Hide
-						crit(2),	-- Worgen Snout
-						crit(3),	-- Severed Night Elf Head
-						crit(4),	-- Dwarf Spine
-						crit(5),	-- Tuft of Gnome Hair
-						crit(6),	-- Human Bone Chip
-						crit(7),	-- Draenei Tail
-					},
-				}),
-				ach(9222),	-- Divide and Conquer
-				ach(9228, {	-- Down Goes Van Rook (A)
-					["races"] = ALLIANCE_ONLY,
-				}),
-				ach(9220, {	-- Grand Theft, 3rd Degree
-					ach(9219),	-- Grand Theft, 2nd Degree
-					ach(9218),	-- Grand Theft, 1st Degree
-				}),
-				ach(9216, {	-- High-value Targets
-					crit(1),	-- Elder Darkweaver Kath
-					crit(2),	-- Ancient Inferno
-					crit(3),	-- Panthora
-					crit(4),	-- Mandragoraster
-					crit(5),	-- Titarus
-					crit(6),	-- Brickhouse
-					crit(7),	-- Korthall Soulgorger
-					crit(8),	-- Oraggro
-					crit(9),	-- Goregore
-				}),
-				ach(9106),	-- Just for Me
-				ach(9408, {	-- Operation Counterattack (A)
-					["races"] = ALLIANCE_ONLY,
-				}),
-				ach(9217, {	-- Operation Counterattack (H)
-					["races"] = HORDE_ONLY,
-				}),
-				ach(9256, {	-- Rescue Operation (A)
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						crit(1),	-- Kommandant Jobby Kurzsicht
-						crit(2),	-- Marschall Andrea DeSousa
-						crit(3),	-- Feldmarschall Kerwin
-					},
-				}),
-				ach(9257, {	-- Rescue Operation (H)
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						crit(1),	-- Warlord Jugan
-						crit(2),	-- General Lizzie Heartbane
-						crit(3),	-- Marshal Lyrdrea Daybreaker
-					},
-				}),
-				ach(9225, {	-- Take Them Out (A)
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						crit(1),	-- Captain Hoodrych
-						crit(2),	-- Elementalist Novo
-						crit(3),	-- Elliott Van Rook
-						crit(4),	-- Jared V. Hellstrike
-						crit(5),	-- Kaz Endsky
-						crit(6),	-- Lord Mes
-						crit(7),	-- Mindbender Talbadar
-						crit(8),	-- Mor'riz
-						crit(9),	-- Necrolord Azael
-						crit(10),	-- Soulbrewer Nadagast
-						crit(11),	-- Razor Guerra
-						crit(12),	-- Rifthunter Yoske
-						crit(13),	-- Vanguard Samuelle
-					},
-				}),
-				ach(9224, {	-- Take Them Out (H)
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						crit(1),	-- Alune Windmane
-						crit(2),	-- Anne Otther
-						crit(3),	-- Avenger Turley
-						crit(4),	-- Chani Malflame
-						crit(5),	-- Hildie Hackerguard
-						crit(6),	-- Jackson Bajheera
-						crit(7),	-- John Swifty
-						crit(8),	-- Malda Brewbelly
-						crit(9),	-- Mathias Zunn
-						crit(10),	-- Shani Freezewind
-						crit(11),	-- Taylor Dewland
-						crit(12),	-- Tosan Galaxyfist
-					},
-				}),
-				ach(9714, {	-- Thy Kingdom Come (A)
-					["races"] = ALLIANCE_ONLY,
-				}),
-				ach(9715, {	-- Thy Kingdom Come (H)
-					["races"] = HORDE_ONLY,
-				}),
-				ach(9105, {	-- Tour of Duty
-					crit(1),	-- Molten Quarry
-					crit(2),	-- Brute's Rise
-					crit(3),	-- Ashmaul Burial Grounds
-					crit(4),	-- Amphitheater of Annihilation
-				}),
-				ach(9473, {		-- Vol'jin's Spear
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						title(285, {	-- , Spear of Vol'jin
-							["races"] = HORDE_ONLY,
-							["u"] = REMOVED_FROM_GAME,
-						}),
-					},
-				}),
-				ach(9474, {		-- Wrynn's Vanguard
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						title(286, {	-- , Sword of Wrynn
-							["races"] = ALLIANCE_ONLY,
-							["u"] = REMOVED_FROM_GAME,
-						}),
-					},
-				}),
+	pvp(n(-9958, {	-- Player vs Player
+		n(-9997, {	-- Ashran
+			ach(9102),	-- Ashran Victory
+			ach(9104, {	-- Bounty Hunter (A)
+				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					crit(1),	-- Pandaren Hide
+					crit(2),	-- Blood Elf Ear
+					crit(3),	-- Tauren Hoof
+					crit(4),	-- Orc Tooth
+					crit(5),	-- Troll Feet
+					crit(6),	-- Forsaken Brains
+					crit(7),	-- Goblin Nose
+				},
+			}),
+			ach(9103, {	-- Bounty Hunter (H)
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					crit(1),	-- Pandaren Hide
+					crit(2),	-- Worgen Snout
+					crit(3),	-- Severed Night Elf Head
+					crit(4),	-- Dwarf Spine
+					crit(5),	-- Tuft of Gnome Hair
+					crit(6),	-- Human Bone Chip
+					crit(7),	-- Draenei Tail
+				},
+			}),
+			ach(9222),	-- Divide and Conquer
+			ach(9228, {	-- Down Goes Van Rook (A)
+				["races"] = ALLIANCE_ONLY,
+			}),
+			ach(9220, {	-- Grand Theft, 3rd Degree
+				ach(9219),	-- Grand Theft, 2nd Degree
+				ach(9218),	-- Grand Theft, 1st Degree
+			}),
+			ach(9216, {	-- High-value Targets
+				crit(1),	-- Elder Darkweaver Kath
+				crit(2),	-- Ancient Inferno
+				crit(3),	-- Panthora
+				crit(4),	-- Mandragoraster
+				crit(5),	-- Titarus
+				crit(6),	-- Brickhouse
+				crit(7),	-- Korthall Soulgorger
+				crit(8),	-- Oraggro
+				crit(9),	-- Goregore
+			}),
+			ach(9106),	-- Just for Me
+			ach(9408, {	-- Operation Counterattack (A)
+				["races"] = ALLIANCE_ONLY,
+			}),
+			ach(9217, {	-- Operation Counterattack (H)
+				["races"] = HORDE_ONLY,
+			}),
+			ach(9256, {	-- Rescue Operation (A)
+				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					crit(1),	-- Kommandant Jobby Kurzsicht
+					crit(2),	-- Marschall Andrea DeSousa
+					crit(3),	-- Feldmarschall Kerwin
+				},
+			}),
+			ach(9257, {	-- Rescue Operation (H)
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					crit(1),	-- Warlord Jugan
+					crit(2),	-- General Lizzie Heartbane
+					crit(3),	-- Marshal Lyrdrea Daybreaker
+				},
+			}),
+			ach(9225, {	-- Take Them Out (A)
+				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					crit(1),	-- Captain Hoodrych
+					crit(2),	-- Elementalist Novo
+					crit(3),	-- Elliott Van Rook
+					crit(4),	-- Jared V. Hellstrike
+					crit(5),	-- Kaz Endsky
+					crit(6),	-- Lord Mes
+					crit(7),	-- Mindbender Talbadar
+					crit(8),	-- Mor'riz
+					crit(9),	-- Necrolord Azael
+					crit(10),	-- Soulbrewer Nadagast
+					crit(11),	-- Razor Guerra
+					crit(12),	-- Rifthunter Yoske
+					crit(13),	-- Vanguard Samuelle
+				},
+			}),
+			ach(9224, {	-- Take Them Out (H)
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					crit(1),	-- Alune Windmane
+					crit(2),	-- Anne Otther
+					crit(3),	-- Avenger Turley
+					crit(4),	-- Chani Malflame
+					crit(5),	-- Hildie Hackerguard
+					crit(6),	-- Jackson Bajheera
+					crit(7),	-- John Swifty
+					crit(8),	-- Malda Brewbelly
+					crit(9),	-- Mathias Zunn
+					crit(10),	-- Shani Freezewind
+					crit(11),	-- Taylor Dewland
+					crit(12),	-- Tosan Galaxyfist
+				},
+			}),
+			ach(9714, {	-- Thy Kingdom Come (A)
+				["races"] = ALLIANCE_ONLY,
+			}),
+			ach(9715, {	-- Thy Kingdom Come (H)
+				["races"] = HORDE_ONLY,
+			}),
+			ach(9105, {	-- Tour of Duty
+				crit(1),	-- Molten Quarry
+				crit(2),	-- Brute's Rise
+				crit(3),	-- Ashmaul Burial Grounds
+				crit(4),	-- Amphitheater of Annihilation
+			}),
+			ach(9473, {		-- Vol'jin's Spear
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					title(285, {	-- , Spear of Vol'jin
+						["races"] = HORDE_ONLY,
+						["u"] = REMOVED_FROM_GAME,
+					}),
+				},
+			}),
+			ach(9474, {		-- Wrynn's Vanguard
+				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					title(286, {	-- , Sword of Wrynn
+						["races"] = ALLIANCE_ONLY,
+						["u"] = REMOVED_FROM_GAME,
+					}),
+				},
 			}),
 		}),
-	}),
+	})),
 };

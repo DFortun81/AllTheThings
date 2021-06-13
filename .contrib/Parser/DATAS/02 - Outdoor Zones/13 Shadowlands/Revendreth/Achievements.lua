@@ -302,9 +302,7 @@ _.Zones =
 						}),
 					},
 				}),
-				ach(14512, {		-- Tour of Duty: Revendreth
-					["u"] = PLAYER_VS_PLAYER,
-				}),
+				pvp(ach(14512)),	-- Tour of Duty: Revendreth
 				ach(14314, {	-- Treasures of Revendreth
 					crit(1, {	-- Lost Quill
 						["description"] = "Take the |cFFFFFFFF[Forbidden Ink]|r from the library at |cFFFFFFFF37.6, 68.7|r and give it to the Lost Quill.",

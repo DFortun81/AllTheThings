@@ -432,9 +432,7 @@ _.Zones =
 						}),
 					},
 				}),
-				ach(12575, {		-- Tour of Duty: Zuldazar
-					["u"] = PLAYER_VS_PLAYER,
-				}),
+				pvp(ach(12575)),	-- Tour of Duty: Zuldazar
 				ach(12851, {	-- Treasures of Zuldazar
 					["collectible"] = false,
 					["g"] = {

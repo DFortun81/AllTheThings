@@ -73,9 +73,7 @@ _.Zones =
 					}),
 				},
 			}),
-			ach(13569, {		-- Tour of Duty: Nazjatar
-				["u"] = PLAYER_VS_PLAYER,
-			}),
+			pvp(ach(13569)),	-- Tour of Duty: Nazjatar
 			ach(13638, {	-- Undersea Usurper
 				i(169194),		-- Snapback Scuttler
 				title(405),		-- of the Deeps

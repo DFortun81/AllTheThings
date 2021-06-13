@@ -18,7 +18,7 @@ _.Zones =
 				n(54649,  {	-- Big Zokk Torquewrench <Classic Weapons>
 					["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.|r",
 					["coord"] = { 33.2, 64.0, NETHERSTORM },
-					["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
+					["g"] = pvp({
 						a(i(77549)),	-- Replica Grand Marshal's Demolisher
 						a(i(77550)),	-- Replica Grand Marshal's Swiftblade
 						a(i(77551)),	-- Replica Grand Marshal's Dirk
@@ -913,7 +913,7 @@ _.Zones =
 				n(40209,  {	-- Grex Brainboiler <Classic Alliance Cloth & Leather>
 					["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase. |r",
 					["coord"] = { 33.0, 64.0, NETHERSTORM },
-					["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
+					["g"] = pvp({
 						i(77670),	-- Replica Field Marshal's Dragonhide Breastplate
 						i(77692),	-- Replica Field Marshal's Satin Mantle
 						i(77710),	-- Replica Field Marshal's Coronal
@@ -3177,7 +3177,7 @@ _.Zones =
 				n(23396,  {	-- Krixel Pinchwhistle <Classic Alliance Mail & Plate>
 					["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.|r",
 					["coord"] = { 33.0, 64.0, NETHERSTORM },
-					["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
+					["g"] = pvp({
 						i(77718),	-- Replica Field Marshal's Plate Shoulderguards
 						i(77673),	-- Replica Field Marshal's Chain Spaulders
 						i(77714),	-- Replica Field Marshal's Plate Armor
@@ -3259,7 +3259,7 @@ _.Zones =
 				n(54648,  {	-- Leeni "Smiley" Smalls <Classic Horde Mail & Plate>
 					["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.|r",
 					["coord"] = { 33.0, 64.0, NETHERSTORM },
-					["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
+					["g"] = pvp({
 						i(77897),	-- Replica Warlord's Lamellar Pauldrons
 						i(77880),	-- Replica Warlord's Chain Shoulders
 						i(77923),	-- Replica Warlord's Plate Shoulders
@@ -3337,7 +3337,7 @@ _.Zones =
 				n(58152,  {	-- Tini Smalls <Classic Horde Cloth & Leather>
 					["description"] = "Items on this vendor require Legionnaire/Knight-Captain rank or higher to purchase.|r",
 					["coord"] = { 33.0, 64.2, NETHERSTORM },
-					["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
+					["g"] = pvp({
 						i(77900),	-- Replica Warlord's Satin Cowl
 						i(77874),	-- Replica Warlord's Dragonhide Helmet
 						i(77919),	-- Replica Warlord's Dreadweave Robe
