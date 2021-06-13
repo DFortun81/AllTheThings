@@ -145,7 +145,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 								i(60246),	-- Firelord's Mantle
 							}),
 							i(152972),	-- Twilight Summoning Portal (PET!)
-							i(175159, {	-- Sinister Shadows
+							i(175159, {	-- Sinister Shadows (Bag of Tricks addition)
 								["races"] = { VULPERA },	-- TODO: figure out if there's a way to track its collection status
 							}),
 							i(59330),	-- Shalug'doom, the Axe of Unmaking
@@ -292,7 +292,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 								i(65213)	-- Firelord's Mantle
 							}),
 							i(152972),	-- Twilight Summoning Portal (PET!)
-							i(175159, {	-- Sinister Shadows
+							i(175159, {	-- Sinister Shadows (Bag of Tricks addition)
 								["races"] = { VULPERA },	-- TODO: figure out if there's a way to track its collection status
 							}),
 							i(65145),	-- Shalug'doom, the Axe of Unmaking

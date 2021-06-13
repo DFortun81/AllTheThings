@@ -3418,6 +3418,7 @@ _.HiddenQuestTriggers =
 		q(59062),	-- choosing Spike as the name for your Aqir Hatchling
 		q(59059),	-- chose "Yu'gaz" as the name for your Aqir Hatchling
 		q(59132),	-- probably "Unwavering Resolve" achievement (upgrade cloak to rank 15)
+		q(59030),	-- Vulpera learning Flames of Fury (175158) for Bag of Tricks
 
 		-- Horrific Visions
 		-- Orgrimmar

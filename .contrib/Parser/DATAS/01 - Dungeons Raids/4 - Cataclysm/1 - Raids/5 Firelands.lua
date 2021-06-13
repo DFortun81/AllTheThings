@@ -551,8 +551,13 @@ _.Instances = { tier(4, {	-- Cataclysm
 								i(71060),	-- Elementium Deathplate Helmet
 							}),
 							i(69224),	-- Smoldering Egg of Millagazor (MOUNT!)
-							i(175158, {	-- Flames of Fury
-								["races"] = { VULPERA },	-- TODO: figure out if there's a way to track its collection status
+							i(175158, {	-- Flames of Fury (Bag of Tricks addition)
+								["races"] = { VULPERA },
+								["questID"] = 59029,
+								["timeline"] = { 
+									"created 8.3.0.33115",
+									"added 8.3.0.33115"
+								},
 							}),
 							i(71798),	-- Sho'ravon, Greatstaff of Annihilation
 							i(71352),	-- Sulfuras, the Extinguished Hand
@@ -956,8 +961,13 @@ _.Instances = { tier(4, {	-- Cataclysm
 								i(71483),	-- Elementium Deathplate Faceguard
 							}),
 							i(69224),	-- Smoldering Egg of Millagazor (MOUNT!)
-							i(175158, {	-- Flames of Fury
-								["races"] = { VULPERA },	-- TODO: figure out if there's a way to track its collection status
+							i(175158, {	-- Flames of Fury (Bag of Tricks addition)
+								["races"] = { VULPERA },
+								["questID"] = 59029,
+								["timeline"] = { 
+									"created 8.3.0.33115",
+									"added 8.3.0.33115"
+								},
 							}),
 							i(71797),	-- Sho'ravon, Greatstaff of Annihilation
 							i(70723),	-- Sulfuras, the Extinguished Hand
