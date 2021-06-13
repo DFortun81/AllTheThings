@@ -7,10 +7,14 @@ _.Zones =
 		m(BLADES_EDGE_MOUNTAINS, {
 			n(QUESTS, {
 				q(10713, {	-- ...and a Time for Action
-					["provider"] = { "n", 22007 },	-- Tree Warden Chawn
-					["coord"] = { 62.0, 39.5, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 22007,	-- Tree Warden Chawn
 					["sourceQuest"] = 10682,	-- A Time for Negotiation...
+					["coord"] = { 62.0, 39.5, BLADES_EDGE_MOUNTAINS },
+					["lvl"] = lvlsquish(65, 20, 65),
 					["groups"] = {
+						objective(1, {	-- 0/10 Wyrmcult Hewer
+							["cr"] = 21810,	-- Wyrmcult Hewer
+						}),
 						i(31516),	-- Bracers of the Weald
 						i(31521),	-- Expedition Defender's Shoulders
 						i(31510),	-- Hewing Gloves
@@ -18,13 +22,24 @@ _.Zones =
 					},
 				}),
 				q(10721, {	-- A Boaring Time for Grulloc
-					["provider"] = { "n", 21984 },	-- Rexxar
-					["coord"] = { 51.8, 58.3, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 21984,	-- Rexxar
 					["sourceQuest"] = 10720,	-- The Smallest Creatures
+					["coord"] = { 51.8, 58.3, BLADES_EDGE_MOUNTAINS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
+					["groups"] = {
+						objective(1, {	-- 0/1 Grulloc's Sack
+							["provider"] = { "i", 31349 },	-- Grulloc's Sack
+							["coord"] = { 60.6, 48.6, BLADES_EDGE_MOUNTAINS },
+							["cost"] = {
+								{ "i", 31350, 1 },	-- Huffer's Whistle (Provided)
+							},
+							["cr"] = 20216,	-- Grulloc
+						}),
+					},
 				}),
-				q(11060, {	-- A Crystalforged Darkrune
-					["provider"] = { "n", 23300 },	-- Gahk
+				applyclassicphase(TBC_PHASE_THREE_OGRILA, q(11060, {	-- A Crystalforged Darkrune
+					["qg"] = 23300,	-- Gahk
 					["coord"] = { 28.4, 58, BLADES_EDGE_MOUNTAINS },
 					["minReputation"] = { 1038, HONORED },	-- Ogri'la, Honored.
 					["isDaily"] = true,
@@ -35,6 +50,7 @@ _.Zones =
 					["cost"] = {
 						{ "i", 32643, 1 },	-- Darkrune
 					},
+					["lvl"] = lvlsquish(70, 20, 70),
 					["groups"] = {
 						i(32602, {	-- Crystalforged Darkrune
 							["timeline"] = {
@@ -43,13 +59,24 @@ _.Zones =
 							},
 						}),
 					},
-				}),
+				})),
 				q(10544, {	-- A Curse Upon Both of Your Clans!
-					["provider"] = { "n", 21349 },	-- T'chali the Witch Doctor
-					["coord"] = { 45.0, 72.2, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 21349,	-- T'chali the Witch Doctor
 					["sourceQuest"] = 10543,	-- Grimnok and Korgaah, I Am For You!
+					["coord"] = { 45.0, 72.2, BLADES_EDGE_MOUNTAINS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 					["groups"] = {
+						objective(1, {	-- 0/5 Bladespire Hold building cursed
+							["provider"] = { "i", 30479 },	-- Wicked Strong Fetish (Provided)
+							["coord"] = { 42, 47, BLADES_EDGE_MOUNTAINS },
+							["cr"] = 21446,	-- Bladespire Evil Spirit
+						}),
+						objective(2, {	-- 0/2 Bloodmaul Outpost building cursed
+							["provider"] = { "i", 30479 },	-- Wicked Strong Fetish (Provided)
+							["coord"] = { 47.0, 77.8, BLADES_EDGE_MOUNTAINS },
+							["cr"] = 21452,	-- Bloodmaul Evil Spirit
+						}),
 						i(31472),	-- Hexxer's Belt
 						i(31473),	-- Ogre Defiler's Handguards
 						i(31470),	-- Witch Doctor's Beads
@@ -57,135 +84,169 @@ _.Zones =
 					},
 				}),
 				q(10795, {	-- A Date with Dorgok
-					["provider"] = { "n", 22149 },	-- Commander Haephus Stonewall
+					["qg"] = 22149,	-- Commander Haephus Stonewall
 					["coord"] = { 62.0, 38.0, BLADES_EDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
+					["groups"] = {
+						objective(1, {	-- Dorgok slain
+							["coord"] = { 55.1, 24.0, BLADES_EDGE_MOUNTAINS },
+							["cr"] = 20753,	-- Dorgok
+						}),
+					},
 				}),
 				q(10506, {	-- A Dire Situation
-					["provider"] = { "n", 21066 },	-- Rina Moonspring
+					["qg"] = 21066,	-- Rina Moonspring
 					["coord"] = { 36.2, 67.2, BLADES_EDGE_MOUNTAINS },
 					["sourceQuest"] = 10457,	-- Protecting Our Own
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
-				q(11061, {	-- A Father's Duty
-					["provider"] = { "n", 23316 },	-- Torkus
+				applyclassicphase(TBC_PHASE_THREE_OGRILA, q(11061, {	-- A Father's Duty
+					["qg"] = 23316,	-- Torkus
 					["sourceQuest"] = 11030,	-- Our Boy Wants To Be A Skyguard Ranger
 					["coord"] = { 28.4, 57.6, BLADES_EDGE_MOUNTAINS },
 					["cost"] = {
 						{ "i", 32601, 1 },	-- Unstable Flask of the Sorcerer
 					},
-				}),
-				q(11079, {	-- A Fel Whip For Gahk
-					["provider"] = { "n", 23300 },	-- Gahk
-					["coord"] = { 28.5, 58.1, BLADES_EDGE_MOUNTAINS },
+					["lvl"] = lvlsquish(70, 20, 70),
+				})),
+				applyclassicphase(TBC_PHASE_THREE_OGRILA, q(11079, {	-- A Fel Whip For Gahk
+					["qg"] = 23300,	-- Gahk
 					["sourceQuest"] = 11061,	-- A Father's Duty
-				}),
-				q(11091, {	-- A Special Thank You
-					["provider"] = { "n", 23233 },	-- Chu'a'lor
-					["coord"] = { 28.8, 57.4, BLADES_EDGE_MOUNTAINS },
+					["coord"] = { 28.5, 58.1, BLADES_EDGE_MOUNTAINS },
+					["lvl"] = lvlsquish(70, 20, 70),
+				})),
+				applyclassicphase(TBC_PHASE_THREE_OGRILA, q(11091, {	-- A Special Thank You
+					["qg"] = 23233,	-- Chu'a'lor
 					["sourceQuest"] = 11059,	-- Guardian of the Monument
-					["minReputation"] = { 1038, FRIENDLY },	-- Ogri'la
-				}),
-				q(10682, {	-- A Time for Negotiation...
-					["provider"] = { "n", 22007 },	-- Tree Warden Chawn
-					["coord"] = { 62.0, 39.5, BLADES_EDGE_MOUNTAINS },
-				}),
-				q(11058, {	-- An Apexis Relic
-					["provider"] = { "n", 23233 },	-- Chu'a'lor
 					["coord"] = { 28.8, 57.4, BLADES_EDGE_MOUNTAINS },
+					["minReputation"] = { 1038, FRIENDLY },	-- Ogri'la, Friendly.
+					["lvl"] = lvlsquish(70, 20, 70),
+				})),
+				q(10682, {	-- A Time for Negotiation...
+					["qg"] = 22007,	-- Tree Warden Chawn
+					["coord"] = { 62.0, 39.5, BLADES_EDGE_MOUNTAINS },
+					["lvl"] = lvlsquish(65, 20, 65),
+					["groups"] = {
+						objective(1, {	-- Negotiations with Overseer Nuaar complete
+							["cr"] = 21981,	-- Overseer Nuaar
+						}),
+					},
+				}),
+				applyclassicphase(TBC_PHASE_THREE_OGRILA, q(11058, {	-- An Apexis Relic
+					["qg"] = 23233,	-- Chu'a'lor
 					["sourceQuest"] = 11025,	-- The Crystals
-				}),
-				q(11119, {	-- Assault on Bash'ir Landing!
-					["provider"] = { "n", 23334 },	-- Sky Commander Keller
-					["coord"] = { 60.8, 69.1, BLADES_EDGE_MOUNTAINS },
+					["coord"] = { 28.8, 57.4, BLADES_EDGE_MOUNTAINS },
+					["lvl"] = lvlsquish(70, 20, 70),
+				})),
+				applyclassicphase(TBC_PHASE_THREE_OGRILA, q(11119, {	-- Assault on Bash'ir Landing!
+					["qg"] = 23334,	-- Sky Commander Keller
 					["sourceQuest"] = 11010,	-- Bombing Run
-				}),
-				q(11051, {	-- Banish More Demons
-					["provider"] = { "n", 23253 },	-- Kronk
+					["coord"] = { 60.8, 69.1, BLADES_EDGE_MOUNTAINS },
+					["lvl"] = lvlsquish(70, 20, 70),
+				})),
+				applyclassicphase(TBC_PHASE_THREE_OGRILA, q(11051, {	-- Banish More Demons
+					["qg"] = 23253,	-- Kronk
 					["sourceQuest"] = 11026,	-- Banish the Demons
 					["coord"] = { 28.8, 57.8, BLADES_EDGE_MOUNTAINS },
-					["minReputation"] = { 1038, HONORED },	-- Ogri'la
+					["minReputation"] = { 1038, HONORED },	-- Ogri'la, Honored.
 					["cost"] = {
 						{ "i", 32696, 1 },	-- Banishing Crystal
 					},
 					["isDaily"] = true,
+					["lvl"] = lvlsquish(70, 20, 70),
 					["groups"] = {
 						i(32569),	-- Apexis Shard
 						i(32777),	-- Kronk's Grab Bag
 					},
-				}),
-				q(11026, {	-- Banish the Demons
-					["provider"] = { "n", 23253 },	-- Kronk
+				})),
+				applyclassicphase(TBC_PHASE_THREE_OGRILA, q(11026, {	-- Banish the Demons
+					["qg"] = 23253,	-- Kronk
 					["coord"] = { 28.8, 57.8, BLADES_EDGE_MOUNTAINS },
-					["minReputation"] = { 1038, HONORED },	-- Ogri'la
+					["minReputation"] = { 1038, HONORED },	-- Ogri'la, Honored.
 					["cost"] = {
 						{ "i", 32696, 1 },	-- Banishing Crystal
 					},
+					["lvl"] = lvlsquish(70, 20, 70),
 					["groups"] = {
 						i(32569),	-- Apexis Shard
 						i(32777),	-- Kronk's Grab Bag
 					},
-				}),
+				})),
 				q(10783, {	-- Baron Sablemane
-					["provider"] = { "n", 21984 },	-- Rexxar
-					["coord"] = { 51.8, 58.3, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 21984,	-- Rexxar
 					["sourceQuest"] = 10714,	-- On Spirit's Wings
+					["coord"] = { 51.8, 58.3, BLADES_EDGE_MOUNTAINS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10749, {	-- Baron Sablemane's Poison
-					["provider"] = { "n", 22103 },	-- Baron Sablemane
-					["coord"] = { 53.3, 41.2, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 22103,	-- Baron Sablemane
 					["sourceQuest"] = 10715,	-- Into the Churning Gulch
+					["coord"] = { 53.3, 41.2, BLADES_EDGE_MOUNTAINS },
+					["cost"] = {
+						{ "i", 31135, 1 },	-- Baron Sablemane's Poison
+					},
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10818, {	-- Baron Sablemane Has Requested Your Presence
-					["provider"] = { "n", 22149 },	-- Commander Haephus Stonewall
-					["coord"] = { 62.0, 38.0, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 22149,	-- Commander Haephus Stonewall
 					["sourceQuest"] = 10802,	-- Gorgrom the Dragon-Eater
+					["coord"] = { 62.0, 38.0, BLADES_EDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10545, {	-- Bladespire Kegger
-					["provider"] = { "n", 21349 },	-- T'chali the Witch Doctor
-					["coord"] = { 45.0, 72.2, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 21349,	-- T'chali the Witch Doctor
 					["sourceQuest"] = 10542,	-- They Stole Me Hookah and Me Brews!
+					["coord"] = { 45.0, 72.2, BLADES_EDGE_MOUNTAINS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
-				q(11102, {	-- Bombing Run (druid)
-					["coord"] = { 27.6, 52.9, BLADES_EDGE_MOUNTAINS },
-					["classes"] = { DRUID },
-					["provider"] = { "n", 23120 },	-- Sky Sergeant Vanderlip
-					["sourceQuest"] = 11062,	-- The Skyguard Outpost
-				}),
-				q(11010, {	-- Bombing Run (all others)
-					["provider"] = { "n", 23120 },	-- Sky Sergeant Vanderlip
-					["coord"] = { 27.6, 52.9, BLADES_EDGE_MOUNTAINS },
-					["classes"] = exclude(DRUID, ALL_CLASSES),
-					["sourceQuest"] = 11062,	-- The Skyguard Outpost
-				}),
-				q(11023, {	-- Bomb Them Again!
-					["provider"] = { "n", 23120 },	-- Sky Sergeant Vanderlip
-					["coord"] = { 27.6, 52.9, BLADES_EDGE_MOUNTAINS },
+				applyclassicphase(TBC_PHASE_THREE_SKYGUARD, q(11023, {	-- Bomb Them Again!
+					["qg"] = 23120,	-- Sky Sergeant Vanderlip
 					["sourceQuest"] = 11010,	-- Bombing Run
+					["coord"] = { 27.6, 52.9, BLADES_EDGE_MOUNTAINS },
 					["isDaily"] = true,
+					["lvl"] = lvlsquish(70, 20, 70),
 					["groups"] = {
 						ach(1276),	-- Blade's Edge Bomberman
 					},
-				}),
+				})),
+				applyclassicphase(TBC_PHASE_THREE_SKYGUARD, q(11102, {	-- Bombing Run (druid)
+					["qg"] = 23120,	-- Sky Sergeant Vanderlip
+					["sourceQuest"] = 11062,	-- The Skyguard Outpost
+					["coord"] = { 27.6, 52.9, BLADES_EDGE_MOUNTAINS },
+					["classes"] = { DRUID },
+					["lvl"] = lvlsquish(70, 20, 70),
+				})),
+				applyclassicphase(TBC_PHASE_THREE_SKYGUARD, q(11010, {	-- Bombing Run (all others)
+					["qg"] = 23120,	-- Sky Sergeant Vanderlip
+					["sourceQuest"] = 11062,	-- The Skyguard Outpost
+					["coord"] = { 27.6, 52.9, BLADES_EDGE_MOUNTAINS },
+					["classes"] = exclude(DRUID, ALL_CLASSES),
+					["lvl"] = lvlsquish(70, 20, 70),
+				})),
 				q(11043, {	-- Building a Better Gryphon
-					["provider"] = { "n", 21107 },	-- Rip Pedalslam
+					["qg"] = 21107,	-- Rip Pedalslam
 					["coord"] = { 61.2, 70.4, BLADES_EDGE_MOUNTAINS },
-					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(67, 20, 67),
 				}),
 				q(10567, {	-- Creating the Pendant
-					["provider"] = { "n", 21782 },	-- Timeon
+					["qg"] = 21782,	-- Timeon
 					["coord"] = { 62.2, 39.1, BLADES_EDGE_MOUNTAINS },
+					["lvl"] = lvlsquish(66, 20, 66),
 				}),
 				q(10784, {	-- Crush the Bloodmaul Camp
-					["provider"] = { "n", 21147 },	-- Tor'chunk Twoclaws
-					["coord"] = { 51.9, 58.4, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 21147,	-- Tor'chunk Twoclaws
 					["sourceQuest"] = 10749,	-- Baron Sablemane's Poison
+					["coord"] = { 51.9, 58.4, BLADES_EDGE_MOUNTAINS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 					["groups"] = {
 						i(31539),	-- Chaintwine Cinch
 						i(31537),	-- Darktread Boots
@@ -194,9 +255,10 @@ _.Zones =
 					},
 				}),
 				q(10796, {	-- Crush the Bloodmaul Camp!
-					["provider"] = { "n", 22150 },	-- Lieutenant Fairweather
+					["qg"] = 22150,	-- Lieutenant Fairweather
 					["coord"] = { 62.0, 37.9, BLADES_EDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 					["groups"] = {
 						i(31539),	-- Chaintwine Cinch
 						i(31537),	-- Darktread Boots
@@ -205,22 +267,25 @@ _.Zones =
 					},
 				}),
 				q(10608, {	-- Crystal Clear
-					["provider"] = { "n", 21755 },	-- Nickwinkle the Metro-Gnome
+					["qg"] = 21755,	-- Nickwinkle the Metro-Gnome
 					["coord"] = { 60.2, 68.9, BLADES_EDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10753, {	-- Culling the Wild
-					["provider"] = { "n", 22133 },	-- Faradrella
+					["qg"] = 22133,	-- Faradrella
 					["coord"] = { 62.6, 38.3, BLADES_EDGE_MOUNTAINS },
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10632, {	-- Cutting Your Teeth
-					["provider"] = { "n", 21118 },	-- Razak Ironsides
+					["qg"] = 21118,	-- Razak Ironsides
 					["coords"] = {
 						{ 60.0, 69.3, BLADES_EDGE_MOUNTAINS },
 						{ 59.8, 68.3, BLADES_EDGE_MOUNTAINS },
 						{ 60.0, 67.8, BLADES_EDGE_MOUNTAINS },
 					},
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 					["groups"] = {
 						i(31447),	-- Vibro Dagger
 						i(157549),	-- Vibro Knuckles
@@ -231,43 +296,51 @@ _.Zones =
 				q(10810, {	-- Damaged Mask
 					["provider"] = { "i", 31384 },	-- Damaged Mask
 					["sourceQuest"] = 10753,	-- Culling the Wild
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10910, {	-- Death's Door
-					["provider"] = { "n", 22127 },	-- Wildlord Antelarion
-					["coord"] = { 62.6, 40.2, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 22127,	-- Wildlord Antelarion
 					["sourceQuest"] = 10821,	-- You're Fired!
+					["coord"] = { 62.6, 40.2, BLADES_EDGE_MOUNTAINS },
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10820, {	-- Deceive thy Enemy
-					["coord"] = { 73.23, 40.1, BLADES_EDGE_MOUNTAINS },
-					["model"] = 192342,
 					["provider"] = { "o", 185165 },	-- Legion Communicator
 					["sourceQuest"] = 10819,	-- Felsworn Gas Mask
+					["coord"] = { 73.23, 40.1, BLADES_EDGE_MOUNTAINS },
+					["model"] = 192342,
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10719, {	-- Did You Get The Note?
 					["provider"] = { "i", 31120 },	-- Meeting Note
 					["sourceQuest"] = 10682,	-- A Time for Negotiation...
-					["description"]	= "You have to accept or complete the quest '...and a Time for Action' to receive the item."
+					["description"]	= "You have to accept or complete the quest '...and a Time for Action' to receive the item.",
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10487, {	-- Dust from the Drakes
-					["provider"] = { "n", 21117 },	-- Gor'drek
-					["coord"] = { 52.4, 57.9, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 21117,	-- Gor'drek
 					["sourceQuest"] = 10486,	-- The Encroaching Wilderness
+					["coord"] = { 52.4, 57.9, BLADES_EDGE_MOUNTAINS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10997, {	-- Even Gronn Have Standards
-					["provider"] = { "n", 22941 },	-- Mog'dorg the Wizened
-					["coord"] = { 55.5, 44.8, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 22941,	-- Mog'dorg the Wizened
 					["sourceQuests"] = {
 						10983,	-- Mog'dorg the Wizened
 						10989,	-- Mog'dorg the Wizened
 						11057,	-- The Trouble Below
 					},
 					["description"]	= "This quest has three possible breadcrumb quests. Completing one will give you credit for the other, but if you're interested in completing as many breadcrumbs as possible then you should start this quest chain by picking up 'Speak with the Ogre' in the middle of Shattrath City.",
+					["coord"] = { 55.5, 44.8, BLADES_EDGE_MOUNTAINS },
+					["maps"] = { TEROKKAR_FOREST },
+					["lvl"] = lvlsquish(70, 20, 70),
 				}),
 				q(10830, {	-- Exorcising the Trees
-					["provider"] = { "n", 22215 },	-- Treebole
-					["coord"] = { 37.2, 22.2, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 22215,	-- Treebole
 					["sourceQuest"] = 10829,	-- Treebole Must Know
+					["coord"] = { 37.2, 22.2, BLADES_EDGE_MOUNTAINS },
+					["lvl"] = lvlsquish(66, 20, 66),
 					["groups"] = {
 						i(31527),	-- Leafbeard Ring
 						i(31526),	-- Raven's Wood Exorciser's Band
@@ -275,18 +348,29 @@ _.Zones =
 						i(31523),	-- Treebole's Hoop
 					},
 				}),
+				applyclassicphase(TBC_PHASE_THREE_SWIFTFLIGHTFORM, q(10986, {	-- Eyes in the Sky
+					["qg"] = 22924,	-- Arthorn Windsong
+					["sourceQuest"] = 10980,	-- The Book of the Raven
+					["coord"] = { 61.5, 38.3, BLADES_EDGE_MOUNTAINS },
+					["timeline"] = { "removed 4.0.1" },
+					["maps"] = { NAGRAND },
+					["classes"] = { DRUID },
+					["lvl"] = 70,
+				})),
 				q(10797, {	-- Favor of the Gronn
-					["crs"] = { 20753 },	-- Dorgok
-					["coord"] = { 55.0, 24.2, BLADES_EDGE_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "i", 31363 },	-- Gorgrom's Favor
+					["coord"] = { 55.0, 24.2, BLADES_EDGE_MOUNTAINS },
 					["description"]	= "You have to accept or complete the quest 'A Date with Dorgok' to receive the item.",
+					["races"] = ALLIANCE_ONLY,
+					["cr"] = 20753,	-- Dorgok
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10489, {	-- Felling an Ancient Tree
-					["coord"] = { 51.9, 57.8, BLADES_EDGE_MOUNTAINS },
-					["model"] = 191094,
-					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 184660 },	-- Wanted Poster
+					["coord"] = { 51.9, 57.8, BLADES_EDGE_MOUNTAINS },
+					["races"] = HORDE_ONLY,
+					["model"] = 191094,
+					["lvl"] = lvlsquish(65, 20, 65),
 					["groups"] = {
 						i(31486),	-- Bear-Strength Harness
 						i(31488),	-- Boots of the Ancient-Killer
@@ -295,24 +379,28 @@ _.Zones =
 					},
 				}),
 				q(10819, {	-- Felsworn Gas Mask
-					["provider"] = { "n", 22127 },	-- Wildlord Antelarion
-					["coord"] = { 62.6, 40.2, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 22127,	-- Wildlord Antelarion
 					["sourceQuest"] = 10812,	-- Mystery Mask
+					["coord"] = { 62.6, 40.2, BLADES_EDGE_MOUNTAINS },
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10911, {	-- Fire At Will!
-					["provider"] = { "n", 22423 },	-- Evergrove Druid
+					["qg"] = 22423,	-- Evergrove Druid
 					["sourceQuest"] = 10904,	-- Harvesting the Fel Ammunition
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10581, {	-- Follow the Breadcrumbs
-					["provider"] = { "n", 21690 },	-- R-3D0
-					["coord"] = { 55.0, 72.8, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 21690,	-- R-3D0
 					["sourceQuest"] = 10580,	-- Where Did Those Darn Gnomes Go?
+					["coord"] = { 55.0, 72.8, BLADES_EDGE_MOUNTAINS },
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10771, {	-- From the Ashes
-					["provider"] = { "n", 22053 },	-- Mosswood the Ancient
+					["qg"] = 22053,	-- Mosswood the Ancient
 					["coord"] = { 61.2, 38.5, BLADES_EDGE_MOUNTAINS },
+					["lvl"] = lvlsquish(65, 20, 65),
 					["groups"] = {
 						i(31415),	-- Iron Oak Shield
 						i(31416),	-- Scorch Wood Bow
@@ -320,16 +408,18 @@ _.Zones =
 					},
 				}),
 				q(10859, {	-- Gather the Orbs
-					["provider"] = { "n", 22312 },	-- Spiritcaller Dohgar
-					["coord"] = { 74.9, 60.5, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 22312,	-- Spiritcaller Dohgar
 					["sourceQuest"] = 10853,	-- Spirit Calling
+					["coord"] = { 74.9, 60.5, BLADES_EDGE_MOUNTAINS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10594, {	-- Gauging the Resonant Frequency
-					["provider"] = { "n", 21755 },	-- Nickwinkle the Metro-Gnome
-					["coord"] = { 60.2, 68.9, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 21755,	-- Nickwinkle the Metro-Gnome
 					["sourceQuest"] = 10608,	-- Crystal Clear
+					["coord"] = { 60.2, 68.9, BLADES_EDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 					["groups"] = {
 						i(31445),	-- Last Year's "In" Belt
 						i(31442),	-- Metro's Slimming Legs
@@ -338,22 +428,25 @@ _.Zones =
 					},
 				}),
 				q(10512, {	-- Getting the Bladespire Tanked
-					["provider"] = { "n", 21151 },	-- Borgrim Stouthammer
-					["coord"] = { 37.4, 64.6, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 21151,	-- Borgrim Stouthammer
 					["sourceQuest"] = 10511,	-- Strange Brew
+					["coord"] = { 37.4, 64.6, BLADES_EDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10800, {	-- Goodnight, Gronn
-					["provider"] = { "n", 22103 },	-- Baron Sablemane
-					["coord"] = { 53.2, 41.0, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 22103,	-- Baron Sablemane
 					["sourceQuest"] = 10799,	-- Into the Churning Gulch
+					["coord"] = { 53.2, 41.0, BLADES_EDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10802, {	-- Gorgrom the Dragon-Eater (A)
-					["provider"] = { "n", 22149 },	-- Commander Haephus Stonewall
-					["coord"] = { 62.0, 38.0, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 22149,	-- Commander Haephus Stonewall
 					["sourceQuest"] = 10801,	-- It's a Trap!
+					["coord"] = { 62.0, 38.0, BLADES_EDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 					["groups"] = {
 						i(31542),	-- Fanged Axe
 						i(31541),	-- Whistling Sword
@@ -361,10 +454,11 @@ _.Zones =
 					},
 				}),
 				q(10723, {	-- Gorgrom the Dragon-Eater (H)
-					["provider"] = { "n", 21984 },	-- Rexxar
-					["coord"] = { 51.8, 58.3, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 21984,	-- Rexxar
 					["sourceQuest"] = 10785,	-- It's a Trap!
+					["coord"] = { 51.8, 58.3, BLADES_EDGE_MOUNTAINS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 					["groups"] = {
 						i(31542),	-- Fanged Axe
 						i(31541),	-- Whistling Sword
@@ -372,67 +466,101 @@ _.Zones =
 					},
 				}),
 				q(10517, {	-- Gorr'Dim, Your Time Has Come...
-					["provider"] = { "n", 21277 },	-- Vindicator Vuuleen
-					["coord"] = { 44.0, 51.8, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 21277,	-- Vindicator Vuuleen
 					["sourceQuest"] = 10516,	-- The Trappings of a Vindicator
+					["coord"] = { 44.0, 51.8, BLADES_EDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10998, {	-- Grim(oire) Business
-					["provider"] = { "n", 22941 },	-- Mog'dorg the Wizened
-					["coord"] = { 55.5, 44.8, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 22941,	-- Mog'dorg the Wizened
 					["sourceQuests"] = {
 						10997,	-- Even Gronn Have Standards
 						10995,	-- Grulloc Has Two Skulls
 						10996,	-- Maggoc's Treasure Chest
 					},
+					["coord"] = { 55.5, 44.8, BLADES_EDGE_MOUNTAINS },
+					["lvl"] = lvlsquish(70, 20, 70),
 				}),
 				q(10543, {	-- Grimnok and Korgaah, I Am For You!
-					["provider"] = { "n", 21349 },	-- T'chali the Witch Doctor
-					["coord"] = { 45.0, 72.2, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 21349,	-- T'chali the Witch Doctor
 					["sourceQuest"] = 10545,	-- Bladespire Kegger
+					["coord"] = { 45.0, 72.2, BLADES_EDGE_MOUNTAINS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10995, {	-- Grulloc Has Two Skulls
-					["provider"] = { "n", 22941 },	-- Mog'dorg the Wizened
-					["coord"] = { 55.5, 44.8, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 22941,	-- Mog'dorg the Wizened
 					["sourceQuests"] = {
 						10983,	-- Mog'dorg the Wizened
 						10989,	-- Mog'dorg the Wizened
 						11057,	-- The Trouble Below
 					},
 					["description"]	= "This quest has three possible breadcrumb quests. Completing one will give you credit for the other, but if you're interested in completing as many breadcrumbs as possible then you should start this quest chain by picking up 'Speak with the Ogre' in the middle of Shattrath City.",
+					["coord"] = { 55.5, 44.8, BLADES_EDGE_MOUNTAINS },
+					["lvl"] = lvlsquish(70, 20, 70),
 				}),
-				q(11059, {	-- Guardian of the Monument
-					["provider"] = { "n", 23233 },	-- Chu'a'lor
-					["coord"] = { 28.8, 57.4, BLADES_EDGE_MOUNTAINS },
+				applyclassicphase(TBC_PHASE_THREE_OGRILA, q(11059, {	-- Guardian of the Monument
+					["qg"] = 23233,	-- Chu'a'lor
 					["sourceQuest"] = 11025,	-- The Crystals
-				}),
+					["coord"] = { 28.8, 57.4, BLADES_EDGE_MOUNTAINS },
+					["lvl"] = lvlsquish(70, 20, 70),
+				})),
 				q(10904, {	-- Harvesting the Fel Ammunition
-					["provider"] = { "n", 22423 },	-- Evergrove Druid
+					["qg"] = 22423,	-- Evergrove Druid
 					["sourceQuest"] = 10910,	-- Death's Door
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10865, {	-- Inform Leoroxx!
-					["provider"] = { "n", 22312 },	-- Spiritcaller Dohgar
-					["coord"] = { 74.9, 60.5, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 22312,	-- Spiritcaller Dohgar
 					["sourceQuest"] = 10859,	-- Gather the Orbs
+					["coord"] = { 74.9, 60.5, BLADES_EDGE_MOUNTAINS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10799, {	-- Into the Churning Gulch (A)
-					["provider"] = { "n", 22103 },	-- Baron Sablemane
-					["coord"] = { 53.2, 41.0, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 22103,	-- Baron Sablemane
 					["sourceQuest"] = 10798,	-- Pay the Baron a Visit
+					["coord"] = { 53.2, 41.0, BLADES_EDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
+					["groups"] = {
+						objective(1, {	-- 0/7 Crust Burster Venom Gland
+							["provider"] = { "i", 31132 },	-- Crust Burster Venom Gland
+							["crs"] = {
+								21849,	-- Bone Crawler
+								22466,	-- Bone Sifter
+								21380,	-- Greater Crust Burster
+								21381,	-- Young Crust Burster
+							},
+						}),
+						i(31535),	-- Bloodboil Poison
+					},
 				}),
 				q(10715, {	-- Into the Churning Gulch (H)
-					["provider"] = { "n", 22103 },	-- Baron Sablemane
-					["coord"] = { 53.3, 41.2, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 22103,	-- Baron Sablemane
 					["sourceQuest"] = 10783,	-- Baron Sablemane
+					["coord"] = { 53.3, 41.2, BLADES_EDGE_MOUNTAINS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
+					["groups"] = {
+						objective(1, {	-- 0/7 Crust Burster Venom Gland
+							["provider"] = { "i", 31132 },	-- Crust Burster Venom Gland
+							["crs"] = {
+								21849,	-- Bone Crawler
+								22466,	-- Bone Sifter
+								21380,	-- Greater Crust Burster
+								21381,	-- Young Crust Burster
+							},
+						}),
+						i(31535),	-- Bloodboil Poison
+					},
 				}),
 				q(10510, {	-- Into the Draenethyst Mine
-					["provider"] = { "n", 21197 },	-- Bronwyn Stouthammer
+					["qg"] = 21197,	-- Bronwyn Stouthammer
 					["coord"] = { 37.4, 65.0, BLADES_EDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 					["groups"] = {
 						i(31431),	-- All-Weather Armguards
 						i(31432),	-- Explorer's Boots
@@ -441,72 +569,84 @@ _.Zones =
 					},
 				}),
 				q(11000, {	-- Into the Soulgrinder
-					["provider"] = { "n", 22941 },	-- Mog'dorg the Wizened
-					["coord"] = { 55.5, 44.8, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 22941,	-- Mog'dorg the Wizened
 					["sourceQuest"] = 10998,	-- Grim(oire) Business
+					["coord"] = { 55.5, 44.8, BLADES_EDGE_MOUNTAINS },
+					["lvl"] = lvlsquish(70, 20, 70),
 				}),
 				q(10801, {	-- It's a Trap! (A)
-					["provider"] = { "n", 22103 },	-- Baron Sablemane
-					["coord"] = { 53.2, 41.0, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 22103,	-- Baron Sablemane
 					["sourceQuest"] = 10800,	-- Goodnight, Gronn
+					["coord"] = { 53.2, 41.0, BLADES_EDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10785, {	-- It's a Trap! (H)
-					["provider"] = { "n", 22103 },	-- Baron Sablemane
-					["coord"] = { 53.3, 41.2, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 22103,	-- Baron Sablemane
 					["sourceQuest"] = 10721,	-- A Boaring Time for Grulloc
+					["coord"] = { 53.3, 41.2, BLADES_EDGE_MOUNTAINS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10927, {	-- Killing the Crawlers (A)
-					["provider"] = { "n", 22488 },	-- Sentinel Moonwhisper
+					["qg"] = 22488,	-- Sentinel Moonwhisper
 					["coord"] = { 32.2, 91.1, BLADES_EDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10928, {	-- Killing the Crawlers (H)
-					["provider"] = { "n", 22489 },	-- Grunt Grahk
+					["qg"] = 22489,	-- Grunt Grahk
 					["coord"] = { 53.0, 96.2, BLADES_EDGE_MOUNTAINS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10770, {	-- Little Embers
-					["provider"] = { "n", 22053 },	-- Mosswood the Ancient
+					["qg"] = 22053,	-- Mosswood the Ancient
 					["coord"] = { 61.2, 38.5, BLADES_EDGE_MOUNTAINS },
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10893, {	-- Longtail is the Lynchpin
-					["provider"] = { "n", 22386 },	-- Watcher Moonshade
-					["coord"] = { 50.2, 36.0, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 22386,	-- Watcher Moonshade
 					["sourceQuest"] = 10894,	-- Wyrmskull Watcher
+					["coord"] = { 50.2, 36.0, BLADES_EDGE_MOUNTAINS },
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10996, {	-- Maggoc's Treasure Chest
-					["provider"] = { "n", 22941 },	-- Mog'dorg the Wizened
-					["coord"] = { 55.5, 44.8, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 22941,	-- Mog'dorg the Wizened
 					["sourceQuests"] = {
 						10983,	-- Mog'dorg the Wizened
 						10989,	-- Mog'dorg the Wizened
 						11057,	-- The Trouble Below
 					},
 					["description"]	= "This quest has three possible breadcrumb quests. Completing one will give you credit for the other, but if you're interested in completing as many breadcrumbs as possible then you should start this quest chain by picking up 'Speak with the Ogre' in the middle of Shattrath City.",
+					["coord"] = { 55.5, 44.8, BLADES_EDGE_MOUNTAINS },
+					["lvl"] = lvlsquish(70, 20, 70),
 				}),
 				q(10555, {	-- Malaise
-					["provider"] = { "n", 21469 },	-- Daranelle
+					["qg"] = 21469,	-- Daranelle
 					["coord"] = { 37.0, 65.6, BLADES_EDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10456, {	-- Marauding Wolves
-					["provider"] = { "n", 21066 },	-- Rina Moonspring
-					["coord"] = { 36.2, 67.2, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 21066,	-- Rina Moonspring
 					["sourceQuest"] = 10455,	-- The Encroaching Wilderness
+					["coord"] = { 36.2, 67.2, BLADES_EDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10805, {	-- Massacre at Gruul's Lair
-					["provider"] = { "n", 22103 },	-- Baron Sablemane
-					["coord"] = { 53.2, 41.0, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 22103,	-- Baron Sablemane
 					["sourceQuest"] = 10818,	-- Baron Sablemane Has Requested Your Presence
+					["coord"] = { 53.2, 41.0, BLADES_EDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10748, {	-- Maxnar Must Die!
-					["provider"] = { "n", 22007 },	-- Tree Warden Chawn
-					["coord"] = { 62.0, 39.5, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 22007,	-- Tree Warden Chawn
 					["sourceQuest"] = 10722,	-- Meeting at the Blackwing Coven
+					["coord"] = { 62.0, 39.5, BLADES_EDGE_MOUNTAINS },
+					["lvl"] = lvlsquish(65, 20, 65),
 					["groups"] = {
 						i(31520),	-- Blackwing Helm
 						i(31511),	-- Chest of the Wyrmcult
@@ -515,83 +655,104 @@ _.Zones =
 					},
 				}),
 				q(10722, {	-- Meeting at the Blackwing Coven
-					["provider"] = { "n", 22386 },	-- Watcher Moonshade
-					["coord"] = { 50.2, 36.0, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 22386,	-- Watcher Moonshade
 					["sourceQuest"] = 10893,	-- Longtail is the Lynchpin
+					["coord"] = { 50.2, 36.0, BLADES_EDGE_MOUNTAINS },
+					["lvl"] = lvlsquish(65, 20, 65),
+				}),
+				q(10983, {	-- Mog'dorg the Wizened
+					["qg"] = 22940,	-- Grok
+					["sourceQuest"] = 10984,	-- Speak with the Ogre
+					["coord"] = { 65.0, 68.4, SHATTRATH_CITY },
+					["maps"] = { SHATTRATH_CITY },
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(70, 20, 70),
 				}),
 				q(10989, {	-- Mog'dorg the Wizened
-					["provider"] = { "n", 22995 },	-- Chort
+					["qg"] = 22995,	-- Chort
 					["coord"] = { 55.4, 45.2, BLADES_EDGE_MOUNTAINS },
 					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(70, 20, 70),
 				}),
 				q(10860, {	-- Mok'Nathal Treats
-					["provider"] = { "n", 21088 },	-- Matron Varah
+					["qg"] = 21088,	-- Matron Varah
 					["coord"] = { 76.1, 60.3, BLADES_EDGE_MOUNTAINS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 					["groups"] = {
 						i(31674),	-- Recipe: Crunchy Serpent
 						i(31675),	-- Recipe: Mok'Nathal Shortribs
 					},
 				}),
 				q(10671, {	-- More than a Pound of Flesh
-					["provider"] = { "n", 21824 },	-- Dizzy Dina
-					["coord"] = { 60.4, 68.8, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 21824,	-- Dizzy Dina
 					["sourceQuest"] = 10620,	-- Ridgespine Menace
+					["coord"] = { 60.4, 68.8, BLADES_EDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10812, {	-- Mystery Mask
-					["provider"] = { "n", 22020 },	-- O'Mally Zapnabber
-					["coord"] = { 62.6, 40.2, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 22020,	-- O'Mally Zapnabber
 					["sourceQuest"] = 10810,	-- Damaged Mask
+					["coord"] = { 62.6, 40.2, BLADES_EDGE_MOUNTAINS },
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(11009, {	-- Ogre Heaven
-					["provider"] = { "n", 22941 },	-- Mog'dorg the Wizened
-					["coord"] = { 55.5, 44.8, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 22941,	-- Mog'dorg the Wizened
 					["sourceQuests"] = {
 						11000,	-- Into the Soulgrinder
 						11022,	-- Speak with Mog'dorg
 					},
+					["coord"] = { 55.5, 44.8, BLADES_EDGE_MOUNTAINS },
+					["lvl"] = lvlsquish(70, 20, 70),
 				}),
 				q(10714, {	-- On Spirit's Wings
-					["provider"] = { "n", 21984 },	-- Rexxar
-					["coord"] = { 51.8, 58.3, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 21984,	-- Rexxar
 					["sourceQuest"] = 10709,	-- Reunion
+					["coord"] = { 51.8, 58.3, BLADES_EDGE_MOUNTAINS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
-				q(11030, {	-- Our Boy Wants To Be A Skyguard Ranger
-					["provider"] = { "n", 23316 },	-- Torkus
-					["coord"] = { 28.4, 57.6, BLADES_EDGE_MOUNTAINS },
+				applyclassicphase(TBC_PHASE_THREE_OGRILA, q(11030, {	-- Our Boy Wants To Be A Skyguard Ranger
+					["qg"] = 23316,	-- Torkus
 					["sourceQuest"] = 11025,	-- The Crystals
-				}),
+					["coord"] = { 28.4, 57.6, BLADES_EDGE_MOUNTAINS },
+					["lvl"] = lvlsquish(70, 20, 70),
+				})),
 				q(11036, {	-- Out of This World Produce!
-					["provider"] = { "n", 19471 },	-- Old Orok
+					["qg"] = 19471,	-- Old Orok
 					["coord"] = { 53.2, 54.4, BLADES_EDGE_MOUNTAINS },
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(67, 20, 67),
 				}),
 				q(11040, {	-- Parts for the Rocket-Chief
-					["provider"] = { "n", 21112 },	-- Bossi Pentapiston
+					["qg"] = 21112,	-- Bossi Pentapiston
 					["coord"] = { 60.8, 69.1, BLADES_EDGE_MOUNTAINS },
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(67, 20, 67),
 				}),
 				q(10798, {	-- Pay the Baron a Visit
-					["provider"] = { "n", 22149 },	-- Commander Haephus Stonewall
-					["coord"] = { 62.0, 38.0, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 22149,	-- Commander Haephus Stonewall
 					["sourceQuest"] = 10795,	-- Favor of the Gronn
+					["coord"] = { 62.0, 38.0, BLADES_EDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10584, {	-- Picking Up Some Power Converters
-					["provider"] = { "n", 21691 },	-- Toshley
-					["coord"] = { 60.5, 69.0, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 21691,	-- Toshley
 					["sourceQuest"] = 10581,	-- Follow the Breadcrumbs
+					["coord"] = { 60.5, 69.0, BLADES_EDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10518, {	-- Planting the Banner
-					["provider"] = { "n", 21277 },	-- Vindicator Vuuleen
-					["coord"] = { 44.0, 51.8, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 21277,	-- Vindicator Vuuleen
 					["sourceQuest"] = 10517,	-- Gorr'Dim, Your Time Has Come...
+					["coord"] = { 44.0, 51.8, BLADES_EDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 					["groups"] = {
 						i(31435),	-- Gurn's Horned Helmet
 						i(31434),	-- Ogre Assassin's Britches
@@ -600,21 +761,24 @@ _.Zones =
 					},
 				}),
 				q(10717, {	-- Poaching from Poachers
-					["provider"] = { "n", 21983 },	-- Samia Inkling
-					["coord"] = { 61.9, 39.5, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 21983,	-- Samia Inkling
 					["sourceQuest"] = 10682,	-- A Time for Negotiation...
+					["coord"] = { 61.9, 39.5, BLADES_EDGE_MOUNTAINS },
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10724, {	-- Prisoner of the Bladespire
-					["provider"] = { "n", 21984 },	-- Rexxar
-					["coord"] = { 51.8, 58.3, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 21984,	-- Rexxar
 					["sourceQuest"] = 10723,	-- Gorgrom the Dragon-Eater
+					["coord"] = { 51.8, 58.3, BLADES_EDGE_MOUNTAINS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10457, {	-- Protecting Our Own (A)
-					["provider"] = { "n", 21066 },	-- Rina Moonspring
-					["coord"] = { 36.2, 67.2, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 21066,	-- Rina Moonspring
 					["sourceQuest"] = 10456,	-- Marauding Wolves
+					["coord"] = { 36.2, 67.2, BLADES_EDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 					["groups"] = {
 						i(31419),	-- Living Grove Shoulderpads
 						i(31420),	-- Protector's Boots
@@ -623,10 +787,11 @@ _.Zones =
 					},
 				}),
 				q(10488, {	-- Protecting Our Own (H)
-					["provider"] = { "n", 21117 },	-- Gor'drek
-					["coord"] = { 52.4, 57.9, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 21117,	-- Gor'drek
 					["sourceQuest"] = 10487,	-- Dust from the Drakes
+					["coord"] = { 52.4, 57.9, BLADES_EDGE_MOUNTAINS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 					["groups"] = {
 						i(31482),	-- Dire Wolf Handler Gloves
 						i(31483),	-- Gor'drek's Pauldrons
@@ -635,28 +800,43 @@ _.Zones =
 					},
 				}),
 				q(10975, {	-- Purging the Chambers of Bash'ir
-					["provider"] = { "n", 22919 },	-- Image of Commander Ameer
-					["coord"] = { 52.8, 15.0, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 22919,	-- Image of Commander Ameer
 					["sourceQuest"] = 10974,	-- Stasis Chambers of Bash'ir
+					["coord"] = { 52.8, 15.0, BLADES_EDGE_MOUNTAINS },
 					["cost"] = {
 						{ "i", 29460, 5 },	-- Ethereum Prison Key
 					},
 					["repeatable"] = true,
+					["lvl"] = lvlsquish(70, 20, 70),
 					["groups"] = {
 						i(29750),	-- Ethereum Stasis Chamber Key
 					},
 				}),
+				applyclassicphase(TBC_PHASE_THREE_SWIFTFLIGHTFORM, q(10993, {	-- Return to Cenarion Refuge
+					["qg"] = 22924,	-- Arthorn Windsong
+					["sourceQuest"] = 10992,	-- The Hawk's Essence
+					["coord"] = { 61.5, 38.3, BLADES_EDGE_MOUNTAINS },
+					["timeline"] = { "removed 4.0.1" },
+					["maps"] = { ZANGARMARSH },
+					["classes"] = { DRUID },
+					["cost"] = {
+						{ "i", 32359, 1 },	-- Arthorn's Package (Provided)
+					},
+					["lvl"] = 70,
+				})),
 				q(10709, {	-- Reunion
-					["provider"] = { "n", 22004 },	-- Leoroxx
-					["coord"] = { 75,3, 60.9, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 22004,	-- Leoroxx
 					["sourceQuest"] = 10614,	-- Whispers on the Wind
+					["coord"] = { 75,3, 60.9, BLADES_EDGE_MOUNTAINS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10657, { 	-- Ride the Lightning
-					["provider"] = { "n", 21691 },	-- Toshley
-					["coord"] = { 60.5, 69.0, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 21691,	-- Toshley
 					["sourceQuest"] = 10584,	-- Picking Up Some Power Converters
+					["coord"] = { 60.5, 69.0, BLADES_EDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 					["groups"] = {
 						i(31453),	-- Charged Footwear
 						i(31452),	-- Energized Wristwraps
@@ -665,31 +845,35 @@ _.Zones =
 					},
 				}),
 				q(10620, {	-- Ridgespine Menace
-					["provider"] = { "n", 21824 },	-- Dizzy Dina
+					["qg"] = 21824,	-- Dizzy Dina
 					["coord"] = { 60.4, 68.8, BLADES_EDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10615, {	-- Ruuan Weald
-					["provider"] = { "n", 21496 },	-- Dertrok
-					["coord"] = { 75.1, 62.1, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 21496,	-- Dertrok
 					["sourceQuest"] = 10566,	-- Trial and Error
+					["coord"] = { 75.1, 62.1, BLADES_EDGE_MOUNTAINS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(64, 20, 64),
 				}),
 				q(10556, {	-- Scratches
-					["sourceQuest"] = 10555,	-- Malaise
-					["model"] = 198020,
 					["provider"] = { "o", 184825 },	-- Lashh'an Tome
-					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 10555,	-- Malaise
 					["coords"] = {
 						{ 34.3, 77.4, BLADES_EDGE_MOUNTAINS },
 						{ 35.4, 79.0, BLADES_EDGE_MOUNTAINS },
 					},
+					["races"] = ALLIANCE_ONLY,
+					["model"] = 198020,
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10675, {	-- Show Them Gnome Mercy!
-					["provider"] = { "n", 21691 },	-- Toshley
-					["coord"] = { 60.5, 69.0, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 21691,	-- Toshley
 					["sourceQuest"] = 10674,	-- Trapping The Light Fantastic
+					["coord"] = { 60.5, 69.0, BLADES_EDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 					["groups"] = {
 						i(31456),	-- Gnomish Casting Boots
 						i(30690), 	-- Power Converter (Toy !)
@@ -699,11 +883,12 @@ _.Zones =
 					},
 				}),
 				q(10806, {	-- Showdown (A)
-					["provider"] = { "n", 22103 },	-- Baron Sablemane
-					["coord"] = { 53.2, 41.0, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 22103,	-- Baron Sablemane
 					["sourceQuest"] = 10805,	-- Massacre at Gruul's Lair
+					["coord"] = { 53.2, 41.0, BLADES_EDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] ={
+					["lvl"] = lvlsquish(65, 20, 65),
+					["groups"] = {
 						i(31548),	-- Blackened Chestplate
 						i(31544),	-- Clefthoof Hide Leggings
 						i(31549),	-- Leonine Breastplate
@@ -713,10 +898,11 @@ _.Zones =
 					},
 				}),
 				q(10742, {	-- Showdown (H)
-					["provider"] = { "n", 21984 },	-- Rexxar
-					["coord"] = { 51.8, 58.3, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 21984,	-- Rexxar
 					["sourceQuest"] = 10724,	-- Prisoner of the Bladespire
+					["coord"] = { 51.8, 58.3, BLADES_EDGE_MOUNTAINS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 					["groups"] = {
 						i(31548),	-- Blackened Chestplate
 						i(31544),	-- Clefthoof Hide Leggings
@@ -727,33 +913,38 @@ _.Zones =
 					},
 				}),
 				q(10617, {	-- Silkwing Cocoons
-					["provider"] = { "n", 21895 },	-- Taerek
+					["qg"] = 21895,	-- Taerek
 					["coord"] = { 75.9, 61.4, BLADES_EDGE_MOUNTAINS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(64, 20, 64),
 				}),
 				q(10843, {	-- Since Time Forgotten...
-					["provider"] = { "n", 22004 },	-- Leoroxx
-					["coord"] = { 75,3, 60.9, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 22004,	-- Leoroxx
 					["sourceQuest"] = 10846,	-- Understanding the Mok'Nathal
+					["coord"] = { 75,3, 60.9, BLADES_EDGE_MOUNTAINS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10803, {	-- Slaughter at Boulder'mok (A)
-					["provider"] = { "n", 22150 },	-- Lieutenant Fairweather
-					["coord"] = { 62.0, 37.9, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 22150,	-- Lieutenant Fairweather
 					["sourceQuest"] = 10801,	-- It's a Trap!
+					["coord"] = { 62.0, 37.9, BLADES_EDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10786, {	-- Slaughter at Boulder'mok (H)
-					["provider"] = { "n", 21147 },	-- Tor'chunk Twoclaws
-					["coord"] = { 51.9, 58.4, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 21147,	-- Tor'chunk Twoclaws
 					["sourceQuest"] = 10721,	-- A Boaring Time for Grulloc
+					["coord"] = { 51.9, 58.4, BLADES_EDGE_MOUNTAINS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10845, {	-- Slay the Brood Mother
-					["provider"] = { "n", 22004 },	-- Leoroxx
-					["coord"] = { 75,3, 60.9, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 22004,	-- Leoroxx
 					["sourceQuest"] = 10843,	-- Since Time Forgotten...
+					["coord"] = { 75,3, 60.9, BLADES_EDGE_MOUNTAINS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 					["groups"] = {
 						i(31685),	-- Brood Mother Leggings
 						i(31683),	-- Dreadwing Skin Belt
@@ -762,17 +953,19 @@ _.Zones =
 					},
 				}),
 				q(11022, {	-- Speak with Mog'dorg
-					["provider"] = { "n", 23053 },	-- Bladespire Supplicant
-					["coord"] = { 56.2, 48.0, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 23053,	-- Bladespire Supplicant
 					["sourceQuest"] = 11000,	-- Into the Soulgrinder
+					["coord"] = { 56.2, 48.0, BLADES_EDGE_MOUNTAINS },
 					["races"] = { NIGHTELF },
 					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(70, 20, 70),
 				}),
 				q(10853, {	-- Spirit Calling
-					["provider"] = { "n", 22312 },	-- Spiritcaller Dohgar
-					["coord"] = { 74.9, 60.5, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 22312,	-- Spiritcaller Dohgar
 					["sourceQuest"] = 10851,	-- The Totems of My Enemy
+					["coord"] = { 74.9, 60.5, BLADES_EDGE_MOUNTAINS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 					["groups"] = {
 						i(31712),	-- Mok'Nathal Champion's Shoulderguards
 						i(31711),	-- Nether-Empowered Footgear
@@ -781,47 +974,54 @@ _.Zones =
 					},
 				}),
 				q(10511, {	-- Strange Brew
-					["provider"] = { "n", 21151 },	-- Borgrim Stouthammer
+					["qg"] = 21151,	-- Borgrim Stouthammer
 					["coord"] = { 37.4, 64.6, BLADES_EDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10711, {	-- Test Flight: Razaan's Landing
-					["provider"] = { "n", 21460 },	-- Tally Zapnabber
-					["coord"] = { 60.3, 68.4, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 21460,	-- Tally Zapnabber
 					["sourceQuest"] = 10710,	-- Test Flight: The Singing Ridge
+					["coord"] = { 60.3, 68.4, BLADES_EDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(64, 20, 64),
 				}),
 				q(10712, {	-- Test Flight: Ruuan Weald
-					["provider"] = { "n", 21460 },	-- Tally Zapnabber
-					["coord"] = { 60.3, 68.4, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 21460,	-- Tally Zapnabber
 					["sourceQuests"] = {
 						10675,	-- Show Them Gnome Mercy!
 						10711,	-- Test Flight: Razaan's Landing
 					},
+					["coord"] = { 60.3, 68.4, BLADES_EDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(62, 20, 62),
 				}),
 				q(10710, {	-- Test Flight: The Singing Ridge
-					["provider"] = { "n", 21460 },	-- Tally Zapnabber
-					["coord"] = { 60.3, 68.4, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 21460,	-- Tally Zapnabber
 					["sourceQuest"] = 10557,	-- Test Flight: The Zephyrium Capacitorium
+					["coord"] = { 60.3, 68.4, BLADES_EDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(62, 20, 62),
 				}),
 				q(10557, {	-- Test Flight: The Zephyrium Capacitorium
-					["provider"] = { "n", 21460 },	-- Tally Zapnabber
+					["qg"] = 21460,	-- Tally Zapnabber
 					["coord"] = { 60.3, 68.4, BLADES_EDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(62, 20, 62),
 				}),
 				q(11047, {	-- The Apprentice's Request
-					["provider"] = { "n", 23280 },	-- Agadai
+					["qg"] = 23280,	-- Agadai
 					["coord"] = { 52.0, 54.4, NAGRAND },
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10504, {	-- The Bladespire Ogres
-					["provider"] = { "n", 21158 },	-- Commander Skyshadow
-					["coord"] = { 36.5, 66.4, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 21158,	-- Commander Skyshadow
 					["sourceQuest"] = 10502,	-- The Bloodmaul Ogres
+					["coord"] = { 36.5, 66.4, BLADES_EDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 					["groups"] = {
 						i(31426),	-- Agile Mountain Bracers
 						i(31428),	-- Commander Skyshadow's Gloves
@@ -830,20 +1030,23 @@ _.Zones =
 					},
 				}),
 				q(10503, {	-- The Bladespire Threat
-					["provider"] = { "n", 21147 },	-- Tor'chunk Twoclaws
+					["qg"] = 21147,	-- Tor'chunk Twoclaws
 					["coord"] = { 51.8,58.4, BLADES_EDGE_MOUNTAINS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10502, {	-- The Bloodmaul Ogres (A)
-					["provider"] = { "n", 21158 },	-- Commander Skyshadow
+					["qg"] = 21158,	-- Commander Skyshadow
 					["coord"] = { 36.5, 66.4, BLADES_EDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10505, {	-- The Bloodmaul Ogres (H)
-					["provider"] = { "n", 21147 },	-- Tor'chunk Twoclaws
-					["coord"] = { 51.8,58.4, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 21147,	-- Tor'chunk Twoclaws
 					["sourceQuest"] = 10503,	-- The Bladespire Threat
+					["coord"] = { 51.8,58.4, BLADES_EDGE_MOUNTAINS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 					["groups"] = {
 						i(31480),	-- Ogre Beater's Belt
 						i(31477),	-- Red Hands of the Thunderlord
@@ -851,15 +1054,28 @@ _.Zones =
 						i(31478),	-- Rugged Mountain Bracers
 					},
 				}),
-				q(11025, {	-- The Crystals
-					["provider"] = { "n", 23233 },	-- Chu'a'lor
+				applyclassicphase(TBC_PHASE_THREE_SWIFTFLIGHTFORM, q(10980, {	-- The Book of the Raven
+					["qg"] = 22924,	-- Arthorn Windsong
+					["sourceQuest"] = 10979,	-- To the Evergrove
+					["coord"] = { 61.5, 38.3, BLADES_EDGE_MOUNTAINS },
+					["timeline"] = { "removed 4.0.1" },
+					["classes"] = { DRUID },
+					["cost"] = {
+						{ "i", 32244, 1 },	-- Seer's Stone (Provided)
+					},
+					["lvl"] = 70,
+				})),
+				applyclassicphase(TBC_PHASE_THREE_OGRILA, q(11025, {	-- The Crystals
+					["qg"] = 23233,	-- Chu'a'lor
 					["coord"] = { 28.8, 57.4, BLADES_EDGE_MOUNTAINS },
-				}),
+					["lvl"] = lvlsquish(70, 20, 70),
+				})),
 				q(10690, {	-- The Den Mother
-					["model"] = 199473,
+					["provider"] = { "o", 185035 },	-- Wanted Poster
 					["coord"] = { 36.6, 67.3, BLADES_EDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "o", 185035 },	-- Wanted Poster
+					["model"] = 199473,
+					["lvl"] = lvlsquish(65, 20, 65),
 					["groups"] = {
 						i(31424),	-- Arcane Wand of Sylvanaar
 						i(31422),	-- Heavy Elven Dirk
@@ -867,26 +1083,54 @@ _.Zones =
 					},
 				}),
 				q(10455, {	-- The Encroaching Wilderness (A)
-					["provider"] = { "n", 21066 },	-- Rina Moonspring
-					["coord"] = { 36.2, 67.2, BLADES_EDGE_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 21066,	-- Rina Moonspring
 					["sourceQuests"] = {
 						39199,	-- Hero's Call: Blade's Edge Mountains!
 						9794,	-- No Time for Curiosity
 					},
+					["coord"] = { 36.2, 67.2, BLADES_EDGE_MOUNTAINS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10486, {	-- The Encroaching Wilderness (H)
-					["provider"] = { "n", 21117 },	-- Gor'drek
-					["coord"] = { 52.4, 57.9, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 21117,	-- Gor'drek
 					["sourceQuests"] = {
 						39198,	-- Warchief's Command: Blade's Edge Mountains!
 						9795,	-- The Ogre Threat
 					},
+					["coord"] = { 52.4, 57.9, BLADES_EDGE_MOUNTAINS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
+				applyclassicphase(TBC_PHASE_THREE_SWIFTFLIGHTFORM, q(10991, {	-- The Falcon's Essence
+					["qg"] = 22924,	-- Arthorn Windsong
+					["sourceQuest"] = 10990,	-- The Eagle's Essence
+					["coord"] = { 61.5, 38.3, BLADES_EDGE_MOUNTAINS },
+					["timeline"] = { "removed 4.0.1" },
+					["maps"] = { TEROKKAR_FOREST },
+					["classes"] = { DRUID },
+					["cost"] = {
+						{ "i", 32657, 1 },	-- Arthorn's Sparrowhawk Whistle (Provided)
+						{ "i", 32357, 1 },	-- Essence of the Falcon
+					},
+					["lvl"] = 70,
+				})),
+				applyclassicphase(TBC_PHASE_THREE_SWIFTFLIGHTFORM, q(10992, {	-- The Hawk's Essence
+					["qg"] = 22924,	-- Arthorn Windsong
+					["sourceQuest"] = 10991,	-- The Falcon's Essence
+					["coord"] = { 61.5, 38.3, BLADES_EDGE_MOUNTAINS },
+					["maps"] = { TEROKKAR_FOREST },
+					["classes"] = { DRUID },
+					["cost"] = {
+						{ "i", 32657, 1 },	-- Arthorn's Sparrowhawk Whistle (Provided)
+						{ "i", 32356, 1 },	-- Essence of the Hawk
+					},
+					["lvl"] = 70,
+				})),
 				q(10912, {	-- The Hound-Master
-					["provider"] = { "n", 22423 },	-- Evergrove Druid
+					["qg"] = 22423,	-- Evergrove Druid
 					["sourceQuest"] = 10911,	-- Fire At Will!
+					["lvl"] = lvlsquish(65, 20, 65),
 					["groups"] = {
 						i(31693),	-- Natasha's Arcane Filament
 						i(31696),	-- Natasha's Battle Chain
@@ -897,12 +1141,13 @@ _.Zones =
 					},
 				}),
 				q(10976, {	-- The Mark of the Nexus-King
-					["provider"] = { "n", 22919 },	-- Image of Commander Ameer
-					["coord"] = { 52.8, 15.0, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 22919,	-- Image of Commander Ameer
 					["sourceQuest"] = 10975,	-- Purging the Chambers of Bash'ir
+					["coord"] = { 52.8, 15.0, BLADES_EDGE_MOUNTAINS },
 					["cost"] = {
 						{ "i", 31941, 1 },	-- Mark of the Nexus-King
 					},
+					["lvl"] = lvlsquish(70, 20, 70),
 				}),
 				q(9795,  {	-- The Ogre Threat
 					["qg"] = 18013,	-- Shadow Hunter Denjai
@@ -912,44 +1157,68 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(64, 10, 64),
 				}),
-				q(11080, {	-- The Relic's Emanation
-					["provider"] = { "n", 23233 },	-- Chu'a'lor
-					["coord"] = { 28.8, 57.4, BLADES_EDGE_MOUNTAINS },
+				applyclassicphase(TBC_PHASE_THREE_OGRILA, q(11080, {	-- The Relic's Emanation
+					["qg"] = 23233,	-- Chu'a'lor
 					["sourceQuest"] = 11058,	-- An Apexis Relic
+					["coord"] = { 28.8, 57.4, BLADES_EDGE_MOUNTAINS },
 					["isDaily"] = true,
-				}),
-				q(11062, {	-- The Skyguard Outpost
-					["provider"] = { "n", 23233 },	-- Chu'a'lor
-					["coord"] = { 28.4, 57.6, BLADES_EDGE_MOUNTAINS },
+					["lvl"] = lvlsquish(70, 20, 70),
+				})),
+				applyclassicphase(TBC_PHASE_THREE_SKYGUARD, q(11062, {	-- The Skyguard Outpost
+					["qg"] = 23233,	-- Chu'a'lor
 					["sourceQuest"] = 11030,	-- Our Boy Wants To Be A Skyguard Ranger
-				}),
+					["coord"] = { 28.4, 57.6, BLADES_EDGE_MOUNTAINS },
+					["lvl"] = lvlsquish(70, 20, 70),
+				})),
 				q(10720, {	-- The Smallest Creatures
-					["provider"] = { "n", 21984 },	-- Rexxar
-					["coord"] = { 51.8, 58.3, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 21984,	-- Rexxar
 					["sourceQuest"] = 10749,	-- Baron Sablemane's Poison
+					["coords"] = {
+						{ 51.8, 58.3, BLADES_EDGE_MOUNTAINS },	-- Rexxar
+						{ 56.5, 29.3, BLADES_EDGE_MOUNTAINS },	-- Marmot Cave
+					},
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
+					["groups"] = {
+						objective(1, {	-- Poison the keg of Green Spot Grog
+							["provider"] = { "n", 22480 },	-- Marmot
+							["coord"] = { 55, 25, BLADES_EDGE_MOUNTAINS },
+						}),
+						objective(2, {	-- Poison the keg of Ripe Moonshine
+							["provider"] = { "n", 22480 },	-- Marmot
+							["coord"] = { 55, 28, BLADES_EDGE_MOUNTAINS },
+						}),
+						objective(3, {	-- Poison the keg of Fermented Seed Beer
+							["provider"] = { "n", 22480 },	-- Marmot
+							["coord"] = { 55, 23, BLADES_EDGE_MOUNTAINS },
+						}),
+					},
 				}),
 				q(10618, {	-- The Softest Wings
-					["provider"] = { "n", 21896 },	-- Silmara
+					["qg"] = 21896,	-- Silmara
 					["coord"] = { 75.8, 61.5, BLADES_EDGE_MOUNTAINS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(64, 20, 64),
 				}),
 				q(10718, {	-- The Spirits Have Voices
-					["provider"] = { "n", 21950 },	-- Garm Wolfbrother
-					["coord"] = { 52.7, 59.0, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 21950,	-- Garm Wolfbrother
 					["sourceQuest"] = 10526,	-- The Thunderspike
+					["coord"] = { 52.7, 59.0, BLADES_EDGE_MOUNTAINS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10565, {	-- The Stones of Vekh'nir
-					["provider"] = { "n", 21496 },	-- Dertrok
+					["qg"] = 21496,	-- Dertrok
 					["coord"] = { 75.1, 62.1, BLADES_EDGE_MOUNTAINS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(64, 20, 64),
 				}),
 				q(10526, {	-- The Thunderspike
-					["provider"] = { "n", 21311 },	-- Rokgah Bloodgrip
-					["coord"] = { 52.8, 59.0, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 21311,	-- Rokgah Bloodgrip
 					["sourceQuest"] = 10525,	-- Vision Guide
+					["coord"] = { 52.8, 59.0, BLADES_EDGE_MOUNTAINS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 					["groups"] = {
 						i(31476),	-- Slow Death Dirk
 						i(31475),	-- Thunderlord Scalpel
@@ -957,24 +1226,28 @@ _.Zones =
 					},
 				}),
 				q(10851, {	-- The Totems of My Enemy
-					["provider"] = { "n", 22312 },	-- Spiritcaller Dohgar
-					["coord"] = { 74.9, 60.5, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 22312,	-- Spiritcaller Dohgar
 					["sourceQuest"] = 10846,	-- Understanding the Mok'Nathal
+					["coord"] = { 74.9, 60.5, BLADES_EDGE_MOUNTAINS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10516, {	-- The Trappings of a Vindicator
-					["provider"] = { "n", 21277 },	-- Vindicator Vuuleen
-					["coord"] = { 44.0, 51.8, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 21277,	-- Vindicator Vuuleen
 					["sourceQuest"] = 10504,	-- The Bladespire Ogres
+					["coord"] = { 44.0, 51.8, BLADES_EDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
-				q(11057, {	-- The Trouble Below
-					["provider"] = { "n", 23233 },	-- Chu'a'lor
+				applyclassicphase(TBC_PHASE_THREE_OGRILA, q(11057, {	-- The Trouble Below
+					["qg"] = 23233,	-- Chu'a'lor
 					["coord"] = { 28.8, 57.4, BLADES_EDGE_MOUNTAINS },
 					["isBreadcrumb"] = true,
-				}),
+					["lvl"] = lvlsquish(70, 20, 70),
+				})),
 				q(10825, {	-- The Truth Unorbed
 					["provider"] = { "i", 31489 },	-- Orb of the Grishna
+					["lvl"] = lvlsquish(66, 20, 66),
 					["crs"] = {
 						19990,	-- Grishna Scorncrow
 						19989,	-- Grishna Harbinger
@@ -982,10 +1255,11 @@ _.Zones =
 					},
 				}),
 				q(10867, {	-- There Can Be Only One Response
-					["provider"] = { "n", 22004 },	-- Leoroxx
-					["coord"] = { 75,3, 60.9, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 22004,	-- Leoroxx
 					["sourceQuest"] = 10865,	-- Inform Leoroxx!
+					["coord"] = { 75,3, 60.9, BLADES_EDGE_MOUNTAINS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 					["groups"] = {
 						i(31690),	-- Belt of the Soul Saver
 						i(31689),	-- Mok'Nathal Hero's Pantaloons
@@ -994,20 +1268,22 @@ _.Zones =
 					},
 				}),
 				q(10542, {	-- They Stole Me Hookah and Me Brews!
-					["provider"] = { "n", 21349 },	-- T'chali the Witch Doctor
+					["qg"] = 21349,	-- T'chali the Witch Doctor
 					["coord"] = { 45.0, 72.2, BLADES_EDGE_MOUNTAINS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10524, {	-- Thunderlord Clan Artifacts
-					["races"] = HORDE_ONLY,
 					["provider"] = { "i", 30431 },	-- Thunderlord Clan Artifact
+					["races"] = HORDE_ONLY,
 					["crs"] = {
 						19995,	-- Bladespire Brute
 						19998,	-- Bladespire Shaman
 					},
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
-				q(11078, {	-- To Rule The Skies
-					["provider"] = { "n", 23334 },	-- Sky Commander Keller
+				applyclassicphase(TBC_PHASE_THREE_SKYGUARD, q(11078, {	-- To Rule The Skies
+					["qg"] = 23334,	-- Sky Commander Keller
 					["sourceQuests"] = {
 						11010,	-- Bombing Run
 						11065,	-- Wrangle Some Aether Rays!
@@ -1016,40 +1292,47 @@ _.Zones =
 					["cost"] = {
 						{ "i", 32732, 1 },	-- 	Dragon Teeth
 					},
-				}),
+					["lvl"] = lvlsquish(70, 20, 70),
+				})),
 				q(10674, {	-- Trapping the Light Fantastic
-					["provider"] = { "n", 21691 },	-- Toshley
-					["coord"] = { 60.5, 69.0, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 21691,	-- Toshley
 					["sourceQuest"] = 10657, 	-- Ride the Lightning
+					["coord"] = { 60.5, 69.0, BLADES_EDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10829, {	-- Treebole Must Know
-					["provider"] = { "n", 22007 },	-- Tree Warden Chawn
-					["coord"] = { 62.0, 39.5, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 22007,	-- Tree Warden Chawn
 					["sourceQuest"] = 10825,	-- The Truth Unorbed
+					["coord"] = { 62.0, 39.5, BLADES_EDGE_MOUNTAINS },
+					["lvl"] = lvlsquish(66, 20, 66),
 				}),
 				q(10566, {	-- Trial and Error
-					["provider"] = { "n", 21496 },	-- Dertrok
-					["coord"] = { 75.1, 62.1, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 21496,	-- Dertrok
 					["sourceQuest"] = 10565,	-- The Stones of Vekh'nir
+					["coord"] = { 75.1, 62.1, BLADES_EDGE_MOUNTAINS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(64, 20, 64),
 				}),
 				q(10846, {	-- Understanding the Mok'Nathal
-					["provider"] = { "n", 22004 },	-- Leoroxx
-					["coord"] = { 75,3, 60.9, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 22004,	-- Leoroxx
 					["sourceQuest"] = 10565,	-- The Stones of Vekh'nir
+					["coord"] = { 75,3, 60.9, BLADES_EDGE_MOUNTAINS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10525, {	-- Vision Guide
-					["provider"] = { "n", 21311 },	-- Rokgah Bloodgrip
-					["coord"] = { 52.8, 59.0, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 21311,	-- Rokgah Bloodgrip
 					["sourceQuest"] = 10524,	-- Thunderlord Clan Artifacts
+					["coord"] = { 52.8, 59.0, BLADES_EDGE_MOUNTAINS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10609, {	-- What Came First, the Drake or the Egg?
-					["provider"] = { "n", 21110 },	-- Fizit "Doc" Clocktock
+					["qg"] = 21110,	-- Fizit "Doc" Clocktock
 					["coord"] = { 61.0, 68.1, BLADES_EDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 					["groups"] = {
 						i(31441),	-- Clocktock's Jumpers
 						i(31440),	-- Devolved Drake Girdle
@@ -1058,9 +1341,10 @@ _.Zones =
 					},
 				}),
 				q(10747, {	-- Whelps of the Wyrmcult
-					["provider"] = { "n", 21983 },	-- Samia Inkling
-					["coord"] = { 61.9, 39.5, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 21983,	-- Samia Inkling
 					["sourceQuest"] = 10717,	-- Poaching from Poachers
+					["coord"] = { 61.9, 39.5, BLADES_EDGE_MOUNTAINS },
+					["lvl"] = lvlsquish(65, 20, 65),
 					["groups"] = {
 						i(31513),	-- Blackwhelp Belt
 						i(31519),	-- Inkling's Leggings
@@ -1069,15 +1353,17 @@ _.Zones =
 					},
 				}),
 				q(10580, {	-- Where Did Those Darn Gnomes Go?
-					["provider"] = { "n", 21158 },	-- Commander Skyshadow
+					["qg"] = 21158,	-- Commander Skyshadow
 					["coord"] = { 36.5, 66.4, BLADES_EDGE_MOUNTAINS },
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10607, {	-- Whispers of the Raven God
-					["provider"] = { "n", 21782 },	-- Timeon
-					["coord"] = { 62.2, 39.1, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 21782,	-- Timeon
 					["sourceQuest"] = 10567,	-- Creating the Pendant
+					["coord"] = { 62.2, 39.1, BLADES_EDGE_MOUNTAINS },
+					["lvl"] = lvlsquish(65, 20, 65),
 					["groups"] = {
 						i(31533),	-- Diluvian Spaulders
 						i(31532),	-- Supple Leather Boots
@@ -1086,32 +1372,37 @@ _.Zones =
 					},
 				}),
 				q(10614, {	-- Whispers on the Wind
-					["provider"] = { "n", 21984 },	-- Rexxar
-					["coord"] = { 51.8, 58.3, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 21984,	-- Rexxar
 					["sourceQuest"] = 10718,	-- The Spirits Have Voices
+					["coord"] = { 51.8, 58.3, BLADES_EDGE_MOUNTAINS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
-				q(11066, {	-- Wrangle More Aether Rays!
-					["provider"] = { "n", 23335 },	-- Skyguard Khatie
-					["coord"] = { 28.0, 51.5, BLADES_EDGE_MOUNTAINS },
+				applyclassicphase(TBC_PHASE_THREE_SKYGUARD, q(11066, {	-- Wrangle More Aether Rays!
+					["qg"] = 23335,	-- Skyguard Khatie
 					["sourceQuest"] = 11065,	-- Wrangle Some Aether Rays!
-					["isDaily"] = true,
-				}),
-				q(11065, {	-- Wrangle Some Aether Rays!
-					["provider"] = { "n", 23335 },	-- Skyguard Khatie
 					["coord"] = { 28.0, 51.5, BLADES_EDGE_MOUNTAINS },
+					["isDaily"] = true,
+					["lvl"] = lvlsquish(70, 20, 70),
+				})),
+				applyclassicphase(TBC_PHASE_THREE_SKYGUARD, q(11065, {	-- Wrangle Some Aether Rays!
+					["qg"] = 23335,	-- Skyguard Khatie
 					["sourceQuest"] = 11010,	-- Bombing Run
-				}),
+					["coord"] = { 28.0, 51.5, BLADES_EDGE_MOUNTAINS },
+					["lvl"] = lvlsquish(70, 20, 70),
+				})),
 				q(10894, {	-- Wyrmskull Watcher
-					["provider"] = { "n", 22007 },	-- Tree Warden Chawn
-					["coord"] = { 62.0, 39.5, BLADES_EDGE_MOUNTAINS },
+					["qg"] = 22007,	-- Tree Warden Chawn
 					["sourceQuest"] = 10719,	-- Did You Get The Note?
+					["coord"] = { 62.0, 39.5, BLADES_EDGE_MOUNTAINS },
+					["lvl"] = lvlsquish(65, 20, 65),
 				}),
 				q(10821, {	-- You're Fired!
-					["coord"] = { 73.23, 40.1, BLADES_EDGE_MOUNTAINS },
-					["model"] = 192342,
 					["provider"] = { "o", 185165 },	-- Legion Communicator
 					["sourceQuest"] = 10820,	-- Deceive thy Enemy
+					["coord"] = { 73.23, 40.1, BLADES_EDGE_MOUNTAINS },
+					["model"] = 192342,
+					["lvl"] = lvlsquish(65, 20, 65),
 					["groups"] = {
 						i(31793),	-- Ruuan Weald Wristguards
 						i(31792),	-- Evergrove Ranger's Cloak
@@ -1119,8 +1410,8 @@ _.Zones =
 						i(31791),	-- Wildlord's Band
 					},
 				}),
-				q(11027, {	-- Yous Have Da Darkrune?
-					["provider"] = { "n", 23300 },	-- Gahk
+				applyclassicphase(TBC_PHASE_THREE_OGRILA, q(11027, {	-- Yous Have Da Darkrune?
+					["qg"] = 23300,	-- Gahk
 					["sourceQuest"] = 11060,	-- A Crystalforged Darkrune
 					["coord"] = { 28.4, 58, BLADES_EDGE_MOUNTAINS },
 					["minReputation"] = { 1038, HONORED },	-- Ogri'la, Honored.
@@ -1132,6 +1423,7 @@ _.Zones =
 					["cost"] = {
 						{ "i", 32643, 1 },	-- Darkrune
 					},
+					["lvl"] = lvlsquish(70, 20, 70),
 					["groups"] = {
 						i(32602, {	-- Crystalforged Darkrune
 							["timeline"] = {
@@ -1140,7 +1432,7 @@ _.Zones =
 							},
 						}),
 					},
-				}),
+				})),
 			}),
 		}),
 	})),

@@ -6,7 +6,7 @@ _.Zones =
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(BLADES_EDGE_MOUNTAINS, {
 			n(FACTIONS, {
-				faction(1038),	-- Ogri'la
+				applyclassicphase(TBC_PHASE_THREE_OGRILA, faction(1038)),	-- Ogri'la
 			}),
 		}),
 	})),
