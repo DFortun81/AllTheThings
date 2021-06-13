@@ -741,7 +741,7 @@ for key,value in pairs({
 			[-662] = "Элитные доспехи",								-- Elite PvP Gear
 
 		-- Classic PvP Seasons
-			[-663] = "Классические Предсезонные Доспехи",			-- Classic Pre-Season PvP Gear (need a icon)
+			[-663] = "Система Чести Классика",						-- Classic Honor System
 
 		-- The Burning Crusade PvP Seasons
 			[-658] = "BC Предсезон",								-- Pre-Season (PvP BC)
