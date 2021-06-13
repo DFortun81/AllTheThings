@@ -12536,51 +12536,55 @@ function app:CreateMiniListForGroup(group)
 				gTop = NestSourceQuests(root).g or {};
 			elseif root.sourceQuests then
 				local sourceQuests, sourceQuest, subSourceQuests, prereqs = root.sourceQuests;
+				local addedQuests = {};
 				while sourceQuests and #sourceQuests > 0 do
 					subSourceQuests = {}; prereqs = {};
 					for i,sourceQuestID in ipairs(sourceQuests) do
-						local qs = sourceQuestID < 1 and SearchForField("creatureID", math.abs(sourceQuestID)) or SearchForField("questID", sourceQuestID);
-						if qs and #qs > 0 then
-							local i, sq = #qs;
-							while not sq and i > 0 do
-								if qs[i].questID == sourceQuestID then sq = qs[i]; end
-								i = i - 1;
-							end
-							-- just throw every sourceQuest into groups since it's specific questID?
-							-- continue to force collectible though even without quest tracking since it's a temp window
-							-- only reason to include altQuests in search was because of A/H questID usage, which is now cleaned up for quest objects
-							local found = nil;
-							if sq and sq.questID then
-								if sq.parent and sq.parent.questID == sq.questID then
-									sq = sq.parent;
+						if not addedQuests[sourceQuestID] then
+							addedQuests[sourceQuestID] = true;
+							local qs = sourceQuestID < 1 and SearchForField("creatureID", math.abs(sourceQuestID)) or SearchForField("questID", sourceQuestID);
+							if qs and #qs > 0 then
+								local i, sq = #qs;
+								while not sq and i > 0 do
+									if qs[i].questID == sourceQuestID then sq = qs[i]; end
+									i = i - 1;
 								end
-								found = sq;
-							end
-							if found and not found.isBreadcrumb then
-								sourceQuest = CloneData(found);
-								sourceQuest.collectible = true;
-								sourceQuest.visible = true;
-								sourceQuest.hideText = true;
-								if found.sourceQuests and #found.sourceQuests > 0 and
-									(not found.saved or app.CollectedItemVisibilityFilter(sourceQuest)) then
-									-- Mark the sub source quest IDs as marked (as the same sub quest might point to 1 source quest ID)
-									for j, subsourceQuests in ipairs(found.sourceQuests) do
-										subSourceQuests[subsourceQuests] = true;
+								-- just throw every sourceQuest into groups since it's specific questID?
+								-- continue to force collectible though even without quest tracking since it's a temp window
+								-- only reason to include altQuests in search was because of A/H questID usage, which is now cleaned up for quest objects
+								local found = nil;
+								if sq and sq.questID then
+									if sq.parent and sq.parent.questID == sq.questID then
+										sq = sq.parent;
 									end
+									found = sq;
 								end
+								if found and not found.isBreadcrumb then
+									sourceQuest = CloneData(found);
+									sourceQuest.collectible = true;
+									sourceQuest.visible = true;
+									sourceQuest.hideText = true;
+									if found.sourceQuests and #found.sourceQuests > 0 and
+										(not found.saved or app.CollectedItemVisibilityFilter(sourceQuest)) then
+										-- Mark the sub source quest IDs as marked (as the same sub quest might point to 1 source quest ID)
+										for j, subsourceQuests in ipairs(found.sourceQuests) do
+											subSourceQuests[subsourceQuests] = true;
+										end
+									end
+								else
+									sourceQuest = nil;
+								end
+							elseif sourceQuestID > 0 then
+								-- Create a Quest Object.
+								sourceQuest = app.CreateQuest(sourceQuestID, { ['visible'] = true, ['collectible'] = true, ['hideText'] = true });
 							else
-								sourceQuest = nil;
+								-- Create a NPC Object.
+								sourceQuest = app.CreateNPC(math.abs(sourceQuestID), { ['visible'] = true, ['hideText'] = true });
 							end
-						elseif sourceQuestID > 0 then
-							-- Create a Quest Object.
-							sourceQuest = app.CreateQuest(sourceQuestID, { ['visible'] = true, ['collectible'] = true, ['hideText'] = true });
-						else
-							-- Create a NPC Object.
-							sourceQuest = app.CreateNPC(math.abs(sourceQuestID), { ['visible'] = true, ['hideText'] = true });
-						end
 
-						-- If the quest was valid, attach it.
-						if sourceQuest then tinsert(prereqs, sourceQuest); end
+							-- If the quest was valid, attach it.
+							if sourceQuest then tinsert(prereqs, sourceQuest); end
+						end
 					end
 
 					-- Convert the subSourceQuests table into an array
@@ -12589,6 +12593,9 @@ function app:CreateMiniListForGroup(group)
 						for sourceQuestID,i in pairs(subSourceQuests) do
 							tinsert(sourceQuests, tonumber(sourceQuestID));
 						end
+						-- print("Shifted pre-reqs down & next sq layer",#prereqs)
+						-- app.PrintTable(sourceQuests)
+						-- print("---")
 						tinsert(prereqs, {
 							["text"] = L["UPON_COMPLETION"],
 							["description"] = L["UPON_COMPLETION_DESC"],
@@ -12605,7 +12612,6 @@ function app:CreateMiniListForGroup(group)
 				-- Clean up the recursive hierarchy. (this removed duplicates)
 				sourceQuests = {};
 				prereqs = g;
-				local orig = g;
 				while prereqs and #prereqs > 0 do
 					for i=#prereqs,1,-1 do
 						local o = prereqs[i];
@@ -12623,11 +12629,9 @@ function app:CreateMiniListForGroup(group)
 					if #prereqs > 1 then
 						prereqs = prereqs[#prereqs];
 						if prereqs then prereqs = prereqs.g; end
-						orig = prereqs;
 					else
 						prereqs = prereqs[#prereqs];
 						if prereqs then prereqs = prereqs.g; end
-						orig[#orig].g = prereqs;
 					end
 				end
 
