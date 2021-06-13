@@ -8244,7 +8244,7 @@ local itemFields = {
 		-- return false;
 	end,
 	["savedAsQuest"] = function(t)
-		return IsQuestFlaggedCompleted(t);
+		return IsQuestFlaggedCompleted(t.questID);
 	end,
 	["costTotal"] = function(t)
 		return t.collectibleAsCost and 1 or 0;
