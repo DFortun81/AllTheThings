@@ -10,26 +10,6 @@ _.Zones =
 				["icon"] = "Interface\\Icons\\Spell_Arcane_TeleportSilvermoon",
 				["groups"] = {
 					n(QUESTS, {
-						-- #if AFTER WOD
-						q(37440, {	-- A Fistful of Slivers
-							["qg"] = 15296,	-- Arcanist Ithanas
-							["sourceQuest"] = 8326,	-- Unfortunate Measures
-							["altQuests"] = { 8336 },	-- A Fistful of Slivers (original)
-							-- #if AFTER MOP
-							["coord"] = { 61.8, 39.4, SUNSTRIDER_ISLE },
-							-- #else
-							["coord"] = { 38.3, 19.1, EVERSONG_WOODS },
-							-- #endif
-							["cost"] = {
-								{ "i", 20482, 6 },	-- Arcane Sliver
-							},
-							["races"] = { BLOODELF },
-							["lvl"] = lvlsquish(2, 1, 2),
-							["groups"] = {
-								i(20991),	-- Daylight Cloak
-							},
-						}),
-						-- #else
 						q(8336, {	-- A Fistful of Slivers
 							["qg"] = 15296,	-- Arcanist Ithanas
 							["sourceQuest"] = 8326,	-- Unfortunate Measures
@@ -38,16 +18,41 @@ _.Zones =
 							-- #else
 							["coord"] = { 38.3, 19.1, EVERSONG_WOODS },
 							-- #endif
-							["cost"] = {
-								{ "i", 20482, 6 },	-- Arcane Sliver
-							},
 							["races"] = { BLOODELF },
+							["timeline"] = { "added 1.12.1.10772", "removed 6.0.2.18816" },
 							["lvl"] = lvlsquish(2, 1, 2),
 							["groups"] = {
+								objective(1, {
+									["cost"] = {
+										{ "i", 20482, 6 },	-- Arcane Sliver
+									},
+								}),
 								i(20991),	-- Daylight Cloak
 							},
 						}),
-						-- #endif
+						q(37440, {	-- A Fistful of Slivers
+							["qg"] = 15296,	-- Arcanist Ithanas
+							["sourceQuest"] = 8326,	-- Unfortunate Measures
+							-- #if AFTER WOD
+							["altQuests"] = { 8336 },	-- A Fistful of Slivers (original)
+							-- #endif
+							-- #if AFTER MOP
+							["coord"] = { 61.8, 39.4, SUNSTRIDER_ISLE },
+							-- #else
+							["coord"] = { 38.3, 19.1, EVERSONG_WOODS },
+							-- #endif
+							["races"] = { BLOODELF },
+							["timeline"] = { "added 6.0.2.18816" },
+							["lvl"] = lvlsquish(2, 1, 2),
+							["groups"] = {
+								objective(1, {
+									["cost"] = {
+										{ "i", 20482, 6 },	-- Arcane Sliver
+									},
+								}),
+								i(20991),	-- Daylight Cloak
+							},
+						}),
 						q(8334, {	-- Aggression
 							["qg"] = 15281,	-- Lanthan Perilon
 							["sourceQuest"] = 8327,	-- Report to Lanthan Perilon
@@ -361,57 +366,6 @@ _.Zones =
 							["lvl"] = lvlsquish(2, 1, 2),
 							-- #endif
 						}),
-						-- #if AFTER WOD
-						q(37443, {	-- Solanian's Belongings
-							["qg"] = 15295,	-- Well Watcher Solanian
-							["sourceQuest"] = 8326,	-- Unfortunate Measures
-							["altQuests"] = { 8330 },	-- Solanian's Belongings (original)
-							-- #if AFTER LEGION
-							["coord"] = { 64.0, 42.6, SUNSTRIDER_ISLE },
-							-- #else
-							["coord"] = { 38.8, 19.4, EVERSONG_WOODS },
-							-- #endif
-							["cost"] = {
-								{ "i", 20470, 1 },	-- Solanian's Scrying Orb
-								{ "i", 20471, 1 },	-- Scroll of Scourge Magic
-								{ "i", 20472, 1 },	-- Solanian's Journal
-							},
-							["races"] = { BLOODELF },
-							["lvl"] = lvlsquish(2, 1, 2),
-							["groups"] = {
-								objective(1, {	-- Solanian's Scrying Orb
-									["provider"] = { "i", 20470 },	-- Solanian's Scrying Orb
-									-- #if AFTER LEGION
-									["coord"] = { 52.1, 69.4, SUNSTRIDER_ISLE },
-									-- #else
-									["coord"] = { 35.1, 28.9, EVERSONG_WOODS },
-									-- #endif
-								}),
-								objective(2, {	-- Scroll of Scourge Magic
-									["provider"] = { "i", 20471 },	-- Scroll of Scourge Magic
-									-- #if AFTER LEGION
-									["coord"] = { 40.4, 50.2, SUNSTRIDER_ISLE },
-									-- #else
-									["coord"] = { 31.4, 22.8, EVERSONG_WOODS },
-									-- #endif
-								}),
-								objective(3, {	-- Solanian's Journal
-									["provider"] = { "i", 20472 },	-- Solanian's Journal
-									-- #if AFTER LEGION
-									["coord"] = { 59.9, 57.1, SUNSTRIDER_ISLE },
-									-- #else
-									["coord"] = { 37.7, 24.8, EVERSONG_WOODS },
-									-- #endif
-								}),
-								i(20474),	-- Sunstrider Book Satchel
-								-- #if AFTER LEGION
-								i(131235),	-- Sunspire Cinch
-								-- #endif
-								i(20996),	-- Sunspire Cord
-								i(20995),	-- Well Watcher Gloves
-							},
-						}),
-						-- #else
 						q(8330, {	-- Solanian's Belongings
 							["qg"] = 15295,	-- Well Watcher Solanian
 							["sourceQuests"] = {
@@ -430,12 +384,8 @@ _.Zones =
 							-- #else
 							["coord"] = { 38.8, 19.4, EVERSONG_WOODS },
 							-- #endif
-							["cost"] = {
-								{ "i", 20470, 1 },	-- Solanian's Scrying Orb
-								{ "i", 20471, 1 },	-- Scroll of Scourge Magic
-								{ "i", 20472, 1 },	-- Solanian's Journal
-							},
 							["races"] = { BLOODELF },
+							["timeline"] = { "added 1.12.1.10772", "removed 6.0.2.18816" },
 							["lvl"] = lvlsquish(2, 1, 2),
 							["groups"] = {
 								objective(1, {	-- Solanian's Scrying Orb
@@ -470,7 +420,53 @@ _.Zones =
 								i(20995),	-- Well Watcher Gloves
 							},
 						}),
-						-- #endif
+						q(37443, {	-- Solanian's Belongings
+							["qg"] = 15295,	-- Well Watcher Solanian
+							["sourceQuest"] = 8326,	-- Unfortunate Measures
+							-- #if AFTER WOD
+							["altQuests"] = { 8330 },	-- Solanian's Belongings (original)
+							-- #endif
+							-- #if AFTER LEGION
+							["coord"] = { 64.0, 42.6, SUNSTRIDER_ISLE },
+							-- #else
+							["coord"] = { 38.8, 19.4, EVERSONG_WOODS },
+							-- #endif
+							["races"] = { BLOODELF },
+							["timeline"] = { "added 6.0.2.18816" },
+							["lvl"] = lvlsquish(2, 1, 2),
+							["groups"] = {
+								objective(1, {	-- Solanian's Scrying Orb
+									["provider"] = { "i", 20470 },	-- Solanian's Scrying Orb
+									-- #if AFTER LEGION
+									["coord"] = { 52.1, 69.4, SUNSTRIDER_ISLE },
+									-- #else
+									["coord"] = { 35.1, 28.9, EVERSONG_WOODS },
+									-- #endif
+								}),
+								objective(2, {	-- Scroll of Scourge Magic
+									["provider"] = { "i", 20471 },	-- Scroll of Scourge Magic
+									-- #if AFTER LEGION
+									["coord"] = { 40.4, 50.2, SUNSTRIDER_ISLE },
+									-- #else
+									["coord"] = { 31.4, 22.8, EVERSONG_WOODS },
+									-- #endif
+								}),
+								objective(3, {	-- Solanian's Journal
+									["provider"] = { "i", 20472 },	-- Solanian's Journal
+									-- #if AFTER LEGION
+									["coord"] = { 59.9, 57.1, SUNSTRIDER_ISLE },
+									-- #else
+									["coord"] = { 37.7, 24.8, EVERSONG_WOODS },
+									-- #endif
+								}),
+								i(20474),	-- Sunstrider Book Satchel
+								-- #if AFTER LEGION
+								i(131235),	-- Sunspire Cinch
+								-- #endif
+								i(20996),	-- Sunspire Cord
+								i(20995),	-- Well Watcher Gloves
+							},
+						}),
 						-- #if AFTER CATA
 						q(10070, {	-- Steady Shot (Cata+) / Well Watcher Solanian (TBC)
 							["qg"] = 15513,	-- Ranger Sallina <Hunter Trainer>
@@ -491,20 +487,6 @@ _.Zones =
 							["races"] = { BLOODELF },
 							["lvl"] = lvlsquish(1, 1, 1),
 						}),
-						-- #if AFTER WOD
-						q(37442, {	-- The Shrine of Dath'Remar
-							["qg"] = 15295,	-- Well Watcher Solanian
-							["sourceQuest"] = 8326,	-- Unfortunate Measures
-							["altQuests"] = { 8345 },	-- The Shrine of Dath'Remar (original)
-							-- #if AFTER LEGION
-							["coord"] = { 64.0, 42.6, SUNSTRIDER_ISLE },
-							-- #else
-							["coord"] = { 38.8, 19.4, EVERSONG_WOODS },
-							-- #endif
-							["races"] = { BLOODELF },
-							["lvl"] = lvlsquish(2, 1, 2),
-						}),
-						-- #else
 						q(8345, {	-- The Shrine of Dath'Remar
 							["qg"] = 15295,	-- Well Watcher Solanian
 							-- #if AFTER LEGION
@@ -513,23 +495,24 @@ _.Zones =
 							["coord"] = { 38.8, 19.4, EVERSONG_WOODS },
 							-- #endif
 							["races"] = { BLOODELF },
+							["timeline"] = { "added 1.12.1.10772", "removed 6.0.2.18816" },
 							["lvl"] = lvlsquish(2, 1, 2),
 						}),
-						-- #endif
-						-- #if AFTER WOD
-						q(37439, {	-- Thirst Unending
-							["qg"] = 15297,	-- Arcanist Helion
+						q(37442, {	-- The Shrine of Dath'Remar
+							["qg"] = 15295,	-- Well Watcher Solanian
 							["sourceQuest"] = 8326,	-- Unfortunate Measures
-							["altQuests"] = { 8346 },	-- Thirst Unending (original)
+							-- #if AFTER WOD
+							["altQuests"] = { 8345 },	-- The Shrine of Dath'Remar (original)
+							-- #endif
 							-- #if AFTER LEGION
-							["coord"] = { 58.6, 38.8, SUNSTRIDER_ISLE },
+							["coord"] = { 64.0, 42.6, SUNSTRIDER_ISLE },
 							-- #else
-							["coord"] = { 37.2, 19, EVERSONG_WOODS },
+							["coord"] = { 38.8, 19.4, EVERSONG_WOODS },
 							-- #endif
 							["races"] = { BLOODELF },
+							["timeline"] = { "added 6.0.2.18816" },
 							["lvl"] = lvlsquish(2, 1, 2),
 						}),
-						-- #else
 						q(8346, {	-- Thirst Unending
 							["qg"] = 15297,	-- Arcanist Helion
 							["sourceQuest"] = 8326,	-- Unfortunate Measures
@@ -539,6 +522,7 @@ _.Zones =
 							["coord"] = { 37.2, 19, EVERSONG_WOODS },
 							-- #endif
 							["races"] = { BLOODELF },
+							["timeline"] = { "added 1.12.1.10772", "removed 6.0.2.18816" },
 							["lvl"] = lvlsquish(2, 1, 2),
 							["groups"] = {
 								i(20999),	-- Green Chain Gauntlets
@@ -549,7 +533,29 @@ _.Zones =
 								i(21000),	-- Vigorous Bracers
 							},
 						}),
-						-- #endif
+						q(37439, {	-- Thirst Unending
+							["qg"] = 15297,	-- Arcanist Helion
+							["sourceQuest"] = 8326,	-- Unfortunate Measures
+							-- #if AFTER WOD
+							["altQuests"] = { 8346 },	-- Thirst Unending (original)
+							-- #endif
+							-- #if AFTER LEGION
+							["coord"] = { 58.6, 38.8, SUNSTRIDER_ISLE },
+							-- #else
+							["coord"] = { 37.2, 19, EVERSONG_WOODS },
+							-- #endif
+							["races"] = { BLOODELF },
+							["timeline"] = { "added 6.0.2.18816" },
+							["lvl"] = lvlsquish(2, 1, 2),
+							["groups"] = {
+								i(20999),	-- Green Chain Gauntlets
+								-- #if AFTER LEGION
+								i(131236),	-- Gleaming Chain Bindings
+								-- #endif
+								i(21001),	-- Striding Pants
+								i(21000),	-- Vigorous Bracers
+							},
+						}),
 						q(8326, {	-- Unfortunate Measures
 							["qg"] = 15278,	-- Magistrix Erona
 							["sourceQuest"] = 8325,	-- Reclaiming Sunstrider Isle
