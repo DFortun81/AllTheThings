@@ -354,6 +354,7 @@ namespace ATT
                     case "isToy":
                     case "ignoreBonus":
                     case "ignoreSource":
+                    case "pvp":
                         {
                             item[field] = Convert.ToBoolean(value);
                             break;
@@ -593,6 +594,7 @@ namespace ATT
                     case "altAchievements":
                     case "altQuests":
                     case "repeatable":
+                    case "pvp":
                     case "isLimited":
                     case "isWeekly":
                     case "isDaily":

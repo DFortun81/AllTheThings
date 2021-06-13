@@ -1551,9 +1551,11 @@ _.PVP =
 				filter(100, {	-- Mounts
 					i(173714, {	-- Vicious White Warsaber (A)
 						["races"] = ALLIANCE_ONLY,
+						["u"] = REMOVED_FROM_GAME,
 					}),
 					i(173713, {	-- Vicious White Bonesteed (H)
 						["races"] = HORDE_ONLY,
+						["u"] = REMOVED_FROM_GAME,
 					}),
 				}),
 			}),

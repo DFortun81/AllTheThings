@@ -293,7 +293,7 @@ settings.GetModeString = function(self)
 			-- Hiding BoE's
 			(not self:Get("Filter:BoEs") and self:Get("Hide:BoEs")) or
 			-- Hiding PvP
-			(app.GetDataMember("FilterUnobtainableItems") and not app.GetDataMember("UnobtainableItemFilters")[12])
+			self:Get("Hide:PvP")
 			then
 				-- don't add insane :)
 			else
@@ -333,7 +333,7 @@ settings.GetShortModeString = function(self)
 			-- Hiding BoE's
 			(not self:Get("Filter:BoEs") and self:Get("Hide:BoEs")) or
 			-- Hiding PvP
-			(app.GetDataMember("FilterUnobtainableItems") and not app.GetDataMember("UnobtainableItemFilters")[12])
+			self:Get("Hide:PvP")
 			then
 				-- don't add insane :)
 			else
@@ -746,6 +746,11 @@ settings.UpdateMode = function(self, doRefresh)
 		app.RequireBindingFilter = app.FilterItemClass_RequireBinding;
 	else
 		app.RequireBindingFilter = app.NoFilter;
+	end
+	if self:Get("Hide:PvP") then
+		app.PvPFilter = app.FilterItemClass_PvP;
+	else
+		app.PvPFilter = app.NoFilter;
 	end
 	app:UnregisterEvent("PLAYER_LEVEL_UP");
 	if self:Get("Filter:ByLevel") and not self:Get("DebugMode") then
@@ -1708,8 +1713,8 @@ IgnoreFiltersForBoEsCheckBox:SetPoint("TOPLEFT", HideBoEItemsCheckBox, "BOTTOMLE
 
 local HidePvPItemsCheckBox = settings:CreateCheckBox(L["HIDE_PVP_CHECKBOX"],
 function(self)
-	self:SetChecked(not app.GetDataMember("UnobtainableItemFilters")[12]);
-	if not app.GetDataMember("FilterUnobtainableItems") then
+	self:SetChecked(settings:Get("Hide:PvP"));
+	if settings:Get("DebugMode") then
 		self:Disable();
 		self:SetAlpha(0.2);
 	else
@@ -1718,11 +1723,13 @@ function(self)
 	end
 end,
 function(self)
+	settings:Set("Hide:PvP", self:GetChecked());
+	-- Remove once replacing PvP flags in data
 	local val = app.GetDataMember("UnobtainableItemFilters");
 	val[12] = not self:GetChecked();
 	app.SetDataMember("UnobtainableItemFilters", val);
-	settings:Refresh();
-	app:RefreshData(nil,nil,true);
+
+	settings:UpdateMode(1);
 end);
 HidePvPItemsCheckBox:SetATTTooltip(L["HIDE_PVP_CHECKBOX_TOOLTIP"]);
 HidePvPItemsCheckBox:SetPoint("TOPLEFT", IgnoreFiltersForBoEsCheckBox, "BOTTOMLEFT", 0, 4);

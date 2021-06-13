@@ -1602,7 +1602,7 @@ _.Achievements =
 					["g"] = {
 						i(180431, {	-- Sinful Gladiator's Tabard
 						--	["u"] = REMOVED_FROM_GAME,
-						["u"] = PLAYER_VS_PLAYER,
+							["u"] = PLAYER_VS_PLAYER,
 						}),
 					},
 				}),

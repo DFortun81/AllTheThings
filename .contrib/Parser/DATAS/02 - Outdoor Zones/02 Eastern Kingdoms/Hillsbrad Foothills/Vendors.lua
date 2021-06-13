@@ -40,6 +40,87 @@ _.Zones =
 						i(21099),	-- Recipe: Smoked Sagefish
 					},
 				}),
+				n(13217, {	-- Thanthaldis Snowgleam <Stormpike Supply Officer>
+					["itemID"] = 137642,	-- Mark of Honor
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(19030, {	-- Stormpike Battle Charger Mount
+							["cost"] = { { "i", 137642, 15 } },	-- 15x Mark of Honor
+						}),
+						i(19032, {	-- Stormpike Battle Tabard
+							["cost"] = { { "i", 137642, 10 } },	-- 10x Mark of Honor
+						}),
+						i(19045, {	-- Stormpike Battle Standard
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(19102, {	-- Crackling Staff
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(19100, {	-- Electrified Dagger
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(19312, {	-- Lei of the Lifegiver
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(19104, {	-- Stormstrike Hammer
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(19321, {	-- The Immovable Object
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(19324, {	-- The Lobotomizer
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(19323, {	-- The Unstoppable Force
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(19315, {	-- Therazane's Torch
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(19308, {	-- Tome of Arcane Domination
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(19311, {	-- Tome of Fiery Arcana
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(19309, {	-- Tome of Shadow Force
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(19310, {	-- Tome of the Ice Lord
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(19098, {	-- Stormpike Sage's Pendant
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(19097, {	-- Stormpike Soldier's Pendant
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(19086, {	-- Stormpike Sage's Cloak
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(19084, {	-- Stormpike Soldier's Cloak
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(19094, {	-- Stormpike Cloth Girdle
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(19093, {	-- Stormpike Leather Girdle
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(19092, {	-- Stormpike Mail Girgle
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(19091, {	-- Stormpike Plate Girdle
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(19325, {	-- Don Julio's Band
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(21563, {	-- Don Rodrigo's Band
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+					},
+				}),
 				n(2698,  {	-- George Candarte <Leatherworking Supplies>
 					["coord"] = { 76.6, 58.6, 25 },
 					["races"] = HORDE_ONLY,
@@ -59,6 +140,90 @@ _.Zones =
 						i(4818, {	-- Executioner's Sword
 							["isLimited"] = true,
 						}),
+					},
+				}),
+				n(13219, {	-- Jorek Ironside
+					["itemID"] = 137642,	-- Mark of Honor
+					["coord"] = { 58.1, 33.6, 25 },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(19029, {	-- Horn of the Frostwolf Howler Mount
+							["cost"] = { { "i", 137642, 15 } },	-- 15x Mark of Honor
+						}),
+						i(19031, {	-- Frostwolf Battle Tabard
+							["cost"] = { { "i", 137642, 10 } },	-- 10x Mark of Honor
+						}),
+						i(19046, {	-- Frostwolf Battle Standard
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(19103, {	-- Frostbite
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(19099, {	-- Glacial Blade
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(19312, {	-- Lei of the Lifegiver
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(19321, {	-- The Immovable Object
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(19324, {	-- The Lobotomizer
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(19323, {	-- The Unstoppable Force
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(19315, {	-- Therazane's Torch
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(19308, {	-- Tome of Arcane Domination
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(19311, {	-- Tome of Fiery Arcana
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(19309, {	-- Tome of Shadow Force
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(19310, {	-- Tome of the Ice Lord
+							["cost"] = { { "i", 137642, 2 } },	-- 2x Mark of Honor
+						}),
+						i(19101, {	-- Whiteout Staff
+							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
+						}),
+						i(19096, {	-- Frostwolf Advisor's Pendant
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(19095, {	-- Frostwolf Legionnaire's Pendant
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(19085, {	-- Frostwolf Advisor's Cloak
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(19083, {	-- Frostwolf Legionnaire's Cloak
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(19090, {	-- Frostwolf Cloth Belt
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(19089, {	-- Frostwolf Leather Belt
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(19088, {	-- Frostwolf Mail Belt
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(19087, {	-- Frostwolf Plate Belt
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(19325, {	-- Don Julio's Band
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						i(21563, {	-- Don Rodrigo's Band
+							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
+						}),
+						un(REMOVED_FROM_GAME, i(19320)),	-- Gnoll Skin Bandolier
+						un(REMOVED_FROM_GAME, i(19319)),	-- Harpy Hide Quiver
 					},
 				}),
 				n(3536,  {	-- Kris Legace <Freewheeling Tradeswoman>

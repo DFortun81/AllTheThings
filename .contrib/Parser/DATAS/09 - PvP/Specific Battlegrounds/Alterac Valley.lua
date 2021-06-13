@@ -228,7 +228,7 @@ _.PVP =
 							}),
 						}),
 						n(VENDORS, {
-							n(13219, {	-- Jorek Ironside
+							n(13218, {	-- Grunnda Wolfheart
 								["itemID"] = 137642,	-- Mark of Honor
 								["coord"] = { 58.1, 33.6, 25 },
 								["races"] = HORDE_ONLY,
@@ -597,9 +597,8 @@ _.PVP =
 									}),
 								},
 							}),
-							n(13217, {	-- Thanthaldis Snowgleam <Stormpike Supply Officer>
+							n(13216, {	-- Gaelden Hammersmith <Stormpike Supply Officer>
 								["itemID"] = 137642,	-- Mark of Honor
-								["crs"] = { 13216 },	-- Gaelden Hammersmith <Stormpike Supply Officer>
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									i(19030, {	-- Stormpike Battle Charger Mount
