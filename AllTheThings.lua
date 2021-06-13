@@ -13536,6 +13536,11 @@ RowOnEnter = function (self)
 			elseif reference.u then
 				GameTooltip:AddLine(L["UNOBTAINABLE_ITEM_REASONS"][reference.u][2], 1, 1, 1, 1, true);
 			end
+			-- PvP filter text
+			if reference.pvp then
+				-- TODO: probably re-design this once it's no longer considered an unobtainable filter completely
+				GameTooltip:AddLine(L["UNOBTAINABLE_ITEM_REASONS"][12][2], 1, 1, 1, 1, true);
+			end
 		end
 		if reference.speciesID then
 			local progress, total = C_PetJournal.GetNumCollectedInfo(reference.speciesID);
