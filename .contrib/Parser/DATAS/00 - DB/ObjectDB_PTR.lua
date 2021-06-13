@@ -2,8 +2,12 @@
 --   O B J E C T   D A T A B A S E   M O D U L E   --
 -----------------------------------------------------
 _.ObjectNames = {
+	[368205] = "Mawsworn Cache",
+	[368206] = "Mawsworn Cache",
+	[368207] = "Mawsworn Cache",
 	[368208] = "Mawsworn Cache",
 	[368213] = "Mawsworn Cache",
+	[368214] = "Mawsworn Cache",
 	[368645] = "Rift Hidden Cache",
 	[368646] = "Rift Hidden Cache",
 	[368347] = "Rift Hidden Cache",

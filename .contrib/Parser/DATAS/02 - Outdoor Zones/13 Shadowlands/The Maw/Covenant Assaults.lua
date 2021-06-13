@@ -178,7 +178,10 @@ _.Zones =
 					["coord"] = { 33.8, 54.8, THE_MAW },
 					["g"] = {
 						n(ACHIEVEMENTS, {
-							ach(15039),	-- Up For Grabs
+							ach(15039, {	-- Up For Grabs
+								["description"] = "There are a few Mawsworn Caches that are accessible just via grappling, but this achievement is much easier to complete when using the Overcharged Centurion from the |cFF349cffPutting A Plan Together|r quest.\n\nUse the Centurion's |cFFFFFFFFPurestep Ascension|r ability to scale walls and get to the Mawsworn Caches.",
+								["cr"] = 177092,	-- Overcharged Centurion
+							}),
 						}),
 						n(QUESTS, {
 							q(63774, {	-- An Embarrassment Of Corpses
@@ -316,10 +319,36 @@ _.Zones =
 							o(369141, {	-- Mawsworn Cache
 								["questID"] = 64209,
 								["isDaily"] = true,
-								["coord"] = { 27.7, 61.6, THE_MAW },
+								["coords"] = {
+									{ 27.7, 61.6, THE_MAW },
+									{ 35.1, 69.7, THE_MAW },
+								},
 								["g"] = {
 									i(186600),	-- Quartered Ancient Ring
 								},
+							}),
+							o(368205, {	-- Mawsworn Cache
+								["questID"] = 63815,
+								["isDaily"] = true,
+								["coord"] = { 30.3, 55.8, THE_MAW },
+								["g"] = {
+									i(186573, {	-- Defense Map
+										["questID"] = 63594,	-- Clearing the Walls
+										["g"] = {
+											i(186601),	-- Quartered Ancient Ring
+										},
+									}),
+								},
+							}),
+							o(368206, {	-- Mawsworn Cache
+								["questID"] = 63816,
+								["isDaily"] = true,
+								["coord"] = { 30.1, 64.9, THE_MAW },
+							}),
+							o(368207, {	-- Mawsworn Cache
+								["questID"] = 63817,
+								["isDaily"] = true,
+								["coord"] = { 34.1, 61.6, THE_MAW },
 							}),
 							o(368208, {	-- Mawsworn Cache
 								["questID"] = 63818,
@@ -330,6 +359,11 @@ _.Zones =
 								["questID"] = 63825,
 								["isDaily"] = true,
 								["coord"] = { 32.8, 65.0, THE_MAW },
+							}),
+							o(368214, {	-- Mawsworn Cache
+								["questID"] = 63826,
+								["isDaily"] = true,
+								["coord"] = { 32.0, 56.3, THE_MAW },
 							}),
 						}),
 					},

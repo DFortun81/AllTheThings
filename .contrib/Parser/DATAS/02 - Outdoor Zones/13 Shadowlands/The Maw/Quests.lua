@@ -79,6 +79,7 @@ _.Zones =
 						["isWeekly"] = true,
 					}),
 					n(-913,  {	-- Tormentors of Torghast
+						["description"] = "You can only get the cache once a week, but you can continue to participate in the events for achievement credit and |cFF0070ddBahmeht Chain Links|r.",
 						["isWeekly"] = true,
 						["questID"] = 63854,
 						["g"] = {

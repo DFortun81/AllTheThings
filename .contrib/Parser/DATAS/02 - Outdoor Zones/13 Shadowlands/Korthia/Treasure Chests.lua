@@ -13,120 +13,6 @@ _.Zones =
 				i(185962, {	-- Rune Chit
 					["sourceQuests"] = { 64506 },	-- What Must Be Found
 				}),
-				n(-980, {	-- Shared Treasures
-					["description"] = "Pile of Bones, Relic Cache, and Shardhide Stash all share a series of daily questIDs.",
-					["g"] = {
-						o(369297, {	-- Pile of Bones
-							["coords"] = {
-								{ 27.2, 48.3, KORTHIA },	-- Pile of Bones
-								{ 28.2, 50.7, KORTHIA },	-- Pile of Bones
-								{ 29.3, 47.1, KORTHIA },	-- Pile of Bones
-								{ 30.9, 45.7, KORTHIA },	-- Pile of Bones
-								{ 32.7, 42.0, KORTHIA },	-- Pile of Bones
-								{ 32.8, 45.3, KORTHIA },	-- Pile of Bones
-								{ 32.8, 55.1, KORTHIA },	-- Pile of Bones
-								{ 34.1, 44.0, KORTHIA },	-- Pile of Bones
-								{ 34.5, 56.8, KORTHIA },	-- Pile of Bones
-								{ 34.7, 45.8, KORTHIA },	-- Pile of Bones
-								{ 37.1, 53.7, KORTHIA },	-- Pile of Bones
-								{ 38.2, 51.7, KORTHIA },	-- Pile of Bones
-								{ 39.6, 50.2, KORTHIA },	-- Pile of Bones
-								{ 41.0, 50.5, KORTHIA },	-- Pile of Bones
-							},
-							["g"] = {
-								q(64316, {	-- 1st Loot
-									["isDaily"] = true,
-									["name"] = "1st Loot",
-								}),
-								q(64317, {	-- 2nd Loot
-									["isDaily"] = true,
-									["name"] = "2nd Loot",
-								}),
-								q(64318, {	-- 3rd Loot
-									["isDaily"] = true,
-									["name"] = "3rd Loot",
-								}),
-								q(64309, {	-- 4th Loot
-									["isDaily"] = true,
-									["name"] = "4th Loot",
-								}),
-								i(187007),	-- Recipe: Bonemeal Bread
-							},
-						}),
-						o(369292, {	-- Relic Cache
-							["coords"] = {
-								{ 44.4, 77.3, KORTHIA },	-- Relic Cache
-								{ 45.6, 81.4, KORTHIA },	-- Relic Cache
-								{ 47.2, 76.8, KORTHIA },	-- Relic Cache
-								{ 50.6, 67.1, KORTHIA },	-- Relic Cache
-								{ 53.9, 76.1, KORTHIA },	-- Relic Cache
-								{ 54.2, 72.3, KORTHIA },	-- Relic Cache
-								{ 54.9, 50.2, KORTHIA },	-- Relic Cache
-								{ 55.3, 65.1, KORTHIA },	-- Relic Cache
-								{ 55.8, 37.3, KORTHIA },	-- Relic Cache
-								{ 56.3, 67.6, KORTHIA },	-- Relic Cache
-								{ 56.8, 38.8, KORTHIA },	-- Relic Cache
-								{ 57.3, 34.9, KORTHIA },	-- Relic Cache
-								{ 58.8, 33.6, KORTHIA },	-- Relic Cache
-								{ 59.8, 35.9, KORTHIA },	-- Relic Cache
-								{ 60.3, 39.0, KORTHIA },	-- Relic Cache
-								{ 60.8, 35.0, KORTHIA },	-- Relic Cache
-								{ 61.0, 32.9, KORTHIA },	-- Relic Cache
-								{ 61.4, 38.1, KORTHIA },	-- Relic Cache
-								{ 62.4, 37.5, KORTHIA },	-- Relic Cache
-							},
-							["g"] = {
-								q(64316, {	-- 1st Loot
-									["isDaily"] = true,
-									["name"] = "1st Loot",
-								}),
-								q(64317, {	-- 2nd Loot
-									["isDaily"] = true,
-									["name"] = "2nd Loot",
-								}),
-								q(64318, {	-- 3rd Loot
-									["isDaily"] = true,
-									["name"] = "3rd Loot",
-								}),
-								q(64309, {	-- 4th Loot
-									["isDaily"] = true,
-									["name"] = "4th Loot",
-								}),
-							},
-						}),
-						o(369296, {	-- Shardhide Stash
-							["coords"] = {
-								{ 45.8, 30.1, KORTHIA },	-- Shardhide Stash
-								{ 46.7, 30.6, KORTHIA },	-- Shardhide Stash
-								{ 47.4, 26.2, KORTHIA },	-- Shardhide Stash
-								{ 48.1, 33.2, KORTHIA },	-- Shardhide Stash
-								{ 49.1, 30.1, KORTHIA },	-- Shardhide Stash
-								{ 49.5, 26.7, KORTHIA },	-- Shardhide Stash
-								{ 49.7, 33.3, KORTHIA },	-- Shardhide Stash
-								{ 50.4, 31.1, KORTHIA },	-- Shardhide Stash
-								{ 51.3, 29.7, KORTHIA },	-- Shardhide Stash
-							},
-							["g"] = {
-								q(64316, {	-- 1st Loot
-									["isDaily"] = true,
-									["name"] = "1st Loot",
-								}),
-								q(64317, {	-- 2nd Loot
-									["isDaily"] = true,
-									["name"] = "2nd Loot",
-								}),
-								q(64318, {	-- 3rd Loot
-									["isDaily"] = true,
-									["name"] = "3rd Loot",
-								}),
-								q(64309, {	-- 4th Loot
-									["isDaily"] = true,
-									["name"] = "4th Loot",
-								}),
-							},
-						}),
-					},
-				}),
 				o(369194, {	-- Anima Laden Egg
 					["description"] = "In a tree.",
 				--	["questID"] = 64244,
@@ -422,9 +308,9 @@ _.Zones =
 						}),
 					},
 				}),
-				--[[
-				q(64316,  {	-- Shared Treasure #1
-					["description"] = "Korthia has treasures that share a set of daily quests.  Looting a specific object does not lock you out for the day - they are repeatable until you have collected all the daily quests.\n\nThe treasures' names are |cFFFFFFFFPile of Bones|r, |cFFFFFFFFRelic Cache|r, and |cFFFFFFFFShardhide Stash|r.  These treasures do not show up on the minimap.",
+				o(369297, {	-- Pile of Bones
+					["description"] = "Piles of Bones, Relic Caches, and Shardhide Stashes all share a series of 5 daily quests.\n\nThe daily lockout is ONLY for receiving Relic Fragments - you can still loot the treasures after the final quest is collected for the day; you just won't receive any fragments.",
+					["questID"] = 64565,
 					["isDaily"] = true,
 					["coords"] = {
 						{ 27.2, 48.3, KORTHIA },	-- Pile of Bones
@@ -441,6 +327,16 @@ _.Zones =
 						{ 38.2, 51.7, KORTHIA },	-- Pile of Bones
 						{ 39.6, 50.2, KORTHIA },	-- Pile of Bones
 						{ 41.0, 50.5, KORTHIA },	-- Pile of Bones
+					},
+					["g"] = {
+						i(187007),	-- Recipe: Bonemeal Bread
+					},
+				}),
+				o(369292, {	-- Relic Cache
+					["description"] = "Piles of Bones, Relic Caches, and Shardhide Stashes all share a series of 5 daily quests.\n\nThe daily lockout is ONLY for receiving Relic Fragments - you can still loot the treasures after the final quest is collected for the day; you just won't receive any fragments.",
+					["questID"] = 64565,
+					["isDaily"] = true,
+					["coords"] = {
 						{ 44.4, 77.3, KORTHIA },	-- Relic Cache
 						{ 45.6, 81.4, KORTHIA },	-- Relic Cache
 						{ 47.2, 76.8, KORTHIA },	-- Relic Cache
@@ -460,56 +356,15 @@ _.Zones =
 						{ 61.0, 32.9, KORTHIA },	-- Relic Cache
 						{ 61.4, 38.1, KORTHIA },	-- Relic Cache
 						{ 62.4, 37.5, KORTHIA },	-- Relic Cache
-						{ 45.8, 30.1, KORTHIA },	-- Shardhide Stash
-						{ 47.4, 26.2, KORTHIA },	-- Shardhide Stash
-						{ 48.1, 33.2, KORTHIA },	-- Shardhide Stash
-						{ 49.1, 30.1, KORTHIA },	-- Shardhide Stash
-						{ 49.5, 26.7, KORTHIA },	-- Shardhide Stash
-						{ 49.7, 33.3, KORTHIA },	-- Shardhide Stash
-						{ 50.4, 31.1, KORTHIA },	-- Shardhide Stash
-						{ 51.3, 29.7, KORTHIA },	-- Shardhide Stash
 					},
-					["name"] = "Shared Treasure #1",
-					["icon"] = 1542847,
 				}),
-				q(64317,  {	-- Shared Treasure #2
-					["description"] = "Korthia has treasures that share a set of daily quests.  Looting a specific object does not lock you out for the day - they are repeatable until you have collected all the daily quests.\n\nThe treasures' names are |cFFFFFFFFPile of Bones|r, |cFFFFFFFFRelic Cache|r, and |cFFFFFFFFShardhide Stash|r.  These treasures do not show up on the minimap.",
+				o(369296, {	-- Shardhide Stash
+					["description"] = "Piles of Bones, Relic Caches, and Shardhide Stashes all share a series of 5 daily quests.\n\nThe daily lockout is ONLY for receiving Relic Fragments - you can still loot the treasures after the final quest is collected for the day; you just won't receive any fragments.",
+					["questID"] = 64565,
 					["isDaily"] = true,
 					["coords"] = {
-						{ 27.2, 48.3, KORTHIA },	-- Pile of Bones
-						{ 28.2, 50.7, KORTHIA },	-- Pile of Bones
-						{ 29.3, 47.1, KORTHIA },	-- Pile of Bones
-						{ 30.9, 45.7, KORTHIA },	-- Pile of Bones
-						{ 32.7, 42.0, KORTHIA },	-- Pile of Bones
-						{ 32.8, 45.3, KORTHIA },	-- Pile of Bones
-						{ 32.8, 55.1, KORTHIA },	-- Pile of Bones
-						{ 34.1, 44.0, KORTHIA },	-- Pile of Bones
-						{ 34.5, 56.8, KORTHIA },	-- Pile of Bones
-						{ 34.7, 45.8, KORTHIA },	-- Pile of Bones
-						{ 37.1, 53.7, KORTHIA },	-- Pile of Bones
-						{ 38.2, 51.7, KORTHIA },	-- Pile of Bones
-						{ 39.6, 50.2, KORTHIA },	-- Pile of Bones
-						{ 41.0, 50.5, KORTHIA },	-- Pile of Bones
-						{ 44.4, 77.3, KORTHIA },	-- Relic Cache
-						{ 45.6, 81.4, KORTHIA },	-- Relic Cache
-						{ 47.2, 76.8, KORTHIA },	-- Relic Cache
-						{ 50.6, 67.1, KORTHIA },	-- Relic Cache
-						{ 53.9, 76.1, KORTHIA },	-- Relic Cache
-						{ 54.2, 72.3, KORTHIA },	-- Relic Cache
-						{ 54.9, 50.2, KORTHIA },	-- Relic Cache
-						{ 55.3, 65.1, KORTHIA },	-- Relic Cache
-						{ 55.8, 37.3, KORTHIA },	-- Relic Cache
-						{ 56.3, 67.6, KORTHIA },	-- Relic Cache
-						{ 56.8, 38.8, KORTHIA },	-- Relic Cache
-						{ 57.3, 34.9, KORTHIA },	-- Relic Cache
-						{ 58.8, 33.6, KORTHIA },	-- Relic Cache
-						{ 59.8, 35.9, KORTHIA },	-- Relic Cache
-						{ 60.3, 39.0, KORTHIA },	-- Relic Cache
-						{ 60.8, 35.0, KORTHIA },	-- Relic Cache
-						{ 61.0, 32.9, KORTHIA },	-- Relic Cache
-						{ 61.4, 38.1, KORTHIA },	-- Relic Cache
-						{ 62.4, 37.5, KORTHIA },	-- Relic Cache
 						{ 45.8, 30.1, KORTHIA },	-- Shardhide Stash
+						{ 46.7, 30.6, KORTHIA },	-- Shardhide Stash
 						{ 47.4, 26.2, KORTHIA },	-- Shardhide Stash
 						{ 48.1, 33.2, KORTHIA },	-- Shardhide Stash
 						{ 49.1, 30.1, KORTHIA },	-- Shardhide Stash
@@ -517,109 +372,9 @@ _.Zones =
 						{ 49.7, 33.3, KORTHIA },	-- Shardhide Stash
 						{ 50.4, 31.1, KORTHIA },	-- Shardhide Stash
 						{ 51.3, 29.7, KORTHIA },	-- Shardhide Stash
+						{ 52.3, 27.0, KORTHIA },	-- Shardhide Stash
 					},
-					["name"] = "Shared Treasure #2",
-					["icon"] = 1542847,
 				}),
-				q(64318,  {	-- Shared Treasure #3
-					["description"] = "Korthia has treasures that share a set of daily quests.  Looting a specific object does not lock you out for the day - they are repeatable until you have collected all the daily quests.\n\nThe treasures' names are |cFFFFFFFFPile of Bones|r, |cFFFFFFFFRelic Cache|r, and |cFFFFFFFFShardhide Stash|r.  These treasures do not show up on the minimap.",
-					["isDaily"] = true,
-					["coords"] = {
-						{ 27.2, 48.3, KORTHIA },	-- Pile of Bones
-						{ 28.2, 50.7, KORTHIA },	-- Pile of Bones
-						{ 29.3, 47.1, KORTHIA },	-- Pile of Bones
-						{ 30.9, 45.7, KORTHIA },	-- Pile of Bones
-						{ 32.7, 42.0, KORTHIA },	-- Pile of Bones
-						{ 32.8, 45.3, KORTHIA },	-- Pile of Bones
-						{ 32.8, 55.1, KORTHIA },	-- Pile of Bones
-						{ 34.1, 44.0, KORTHIA },	-- Pile of Bones
-						{ 34.5, 56.8, KORTHIA },	-- Pile of Bones
-						{ 34.7, 45.8, KORTHIA },	-- Pile of Bones
-						{ 37.1, 53.7, KORTHIA },	-- Pile of Bones
-						{ 38.2, 51.7, KORTHIA },	-- Pile of Bones
-						{ 39.6, 50.2, KORTHIA },	-- Pile of Bones
-						{ 41.0, 50.5, KORTHIA },	-- Pile of Bones
-						{ 44.4, 77.3, KORTHIA },	-- Relic Cache
-						{ 45.6, 81.4, KORTHIA },	-- Relic Cache
-						{ 47.2, 76.8, KORTHIA },	-- Relic Cache
-						{ 50.6, 67.1, KORTHIA },	-- Relic Cache
-						{ 53.9, 76.1, KORTHIA },	-- Relic Cache
-						{ 54.2, 72.3, KORTHIA },	-- Relic Cache
-						{ 54.9, 50.2, KORTHIA },	-- Relic Cache
-						{ 55.3, 65.1, KORTHIA },	-- Relic Cache
-						{ 55.8, 37.3, KORTHIA },	-- Relic Cache
-						{ 56.3, 67.6, KORTHIA },	-- Relic Cache
-						{ 56.8, 38.8, KORTHIA },	-- Relic Cache
-						{ 57.3, 34.9, KORTHIA },	-- Relic Cache
-						{ 58.8, 33.6, KORTHIA },	-- Relic Cache
-						{ 59.8, 35.9, KORTHIA },	-- Relic Cache
-						{ 60.3, 39.0, KORTHIA },	-- Relic Cache
-						{ 60.8, 35.0, KORTHIA },	-- Relic Cache
-						{ 61.0, 32.9, KORTHIA },	-- Relic Cache
-						{ 61.4, 38.1, KORTHIA },	-- Relic Cache
-						{ 62.4, 37.5, KORTHIA },	-- Relic Cache
-						{ 45.8, 30.1, KORTHIA },	-- Shardhide Stash
-						{ 47.4, 26.2, KORTHIA },	-- Shardhide Stash
-						{ 48.1, 33.2, KORTHIA },	-- Shardhide Stash
-						{ 49.1, 30.1, KORTHIA },	-- Shardhide Stash
-						{ 49.5, 26.7, KORTHIA },	-- Shardhide Stash
-						{ 49.7, 33.3, KORTHIA },	-- Shardhide Stash
-						{ 50.4, 31.1, KORTHIA },	-- Shardhide Stash
-						{ 51.3, 29.7, KORTHIA },	-- Shardhide Stash
-					},
-					["name"] = "Shared Treasure #3",
-					["icon"] = 1542847,
-				}),
-				q(64309,  {	-- Shared Treasure #4
-					["description"] = "Korthia has treasures that share a set of daily quests.  Looting a specific object does not lock you out for the day - they are repeatable until you have collected all the daily quests.\n\nThe treasures' names are |cFFFFFFFFPile of Bones|r, |cFFFFFFFFRelic Cache|r, and |cFFFFFFFFShardhide Stash|r.  These treasures do not show up on the minimap.",
-					["isDaily"] = true,
-					["coords"] = {
-						{ 27.2, 48.3, KORTHIA },	-- Pile of Bones
-						{ 28.2, 50.7, KORTHIA },	-- Pile of Bones
-						{ 29.3, 47.1, KORTHIA },	-- Pile of Bones
-						{ 30.9, 45.7, KORTHIA },	-- Pile of Bones
-						{ 32.7, 42.0, KORTHIA },	-- Pile of Bones
-						{ 32.8, 45.3, KORTHIA },	-- Pile of Bones
-						{ 32.8, 55.1, KORTHIA },	-- Pile of Bones
-						{ 34.1, 44.0, KORTHIA },	-- Pile of Bones
-						{ 34.5, 56.8, KORTHIA },	-- Pile of Bones
-						{ 34.7, 45.8, KORTHIA },	-- Pile of Bones
-						{ 37.1, 53.7, KORTHIA },	-- Pile of Bones
-						{ 38.2, 51.7, KORTHIA },	-- Pile of Bones
-						{ 39.6, 50.2, KORTHIA },	-- Pile of Bones
-						{ 41.0, 50.5, KORTHIA },	-- Pile of Bones
-						{ 44.4, 77.3, KORTHIA },	-- Relic Cache
-						{ 45.6, 81.4, KORTHIA },	-- Relic Cache
-						{ 47.2, 76.8, KORTHIA },	-- Relic Cache
-						{ 50.6, 67.1, KORTHIA },	-- Relic Cache
-						{ 53.9, 76.1, KORTHIA },	-- Relic Cache
-						{ 54.2, 72.3, KORTHIA },	-- Relic Cache
-						{ 54.9, 50.2, KORTHIA },	-- Relic Cache
-						{ 55.3, 65.1, KORTHIA },	-- Relic Cache
-						{ 55.8, 37.3, KORTHIA },	-- Relic Cache
-						{ 56.3, 67.6, KORTHIA },	-- Relic Cache
-						{ 56.8, 38.8, KORTHIA },	-- Relic Cache
-						{ 57.3, 34.9, KORTHIA },	-- Relic Cache
-						{ 58.8, 33.6, KORTHIA },	-- Relic Cache
-						{ 59.8, 35.9, KORTHIA },	-- Relic Cache
-						{ 60.3, 39.0, KORTHIA },	-- Relic Cache
-						{ 60.8, 35.0, KORTHIA },	-- Relic Cache
-						{ 61.0, 32.9, KORTHIA },	-- Relic Cache
-						{ 61.4, 38.1, KORTHIA },	-- Relic Cache
-						{ 62.4, 37.5, KORTHIA },	-- Relic Cache
-						{ 45.8, 30.1, KORTHIA },	-- Shardhide Stash
-						{ 47.4, 26.2, KORTHIA },	-- Shardhide Stash
-						{ 48.1, 33.2, KORTHIA },	-- Shardhide Stash
-						{ 49.1, 30.1, KORTHIA },	-- Shardhide Stash
-						{ 49.5, 26.7, KORTHIA },	-- Shardhide Stash
-						{ 49.7, 33.3, KORTHIA },	-- Shardhide Stash
-						{ 50.4, 31.1, KORTHIA },	-- Shardhide Stash
-						{ 51.3, 29.7, KORTHIA },	-- Shardhide Stash
-					},
-					["name"] = "Shared Treasure #4",
-					["icon"] = 1542847,
-				}),
-				--]]
 				n(179772, {	-- Spectral Bound Chest
 					["description"] = "Requires collecting three |cFFFFFFFFSpectral Keys|r.  Use your preferred method of daily quest tracking to see the locations of the keys.\n\n|cffde1c1cKeys 1 and 2 can be collected in any order, but the key by the chain must be clicked last!|r",
 					["isDaily"] = true,
@@ -663,4 +418,11 @@ _.Zones =
 			}),
 		}),
 	}),
+};
+
+_.HiddenQuestTriggers = {
+	q(64316),	-- 1st loot of shared treasure in Korthia (Pile of Bones, Relic Cache, Shardhide Stash)
+	q(64317),	-- 2nd loot of shared treasure in Korthia (Pile of Bones, Relic Cache, Shardhide Stash)
+	q(64318),	-- 3rd loot of shared treasure in Korthia (Pile of Bones, Relic Cache, Shardhide Stash)
+	q(64564),	-- 4th loot of shared treasure in Korthia (Pile of Bones, Relic Cache, Shardhide Stash) - this # loot used to be 64309, but they changed it at some point on PTR
 };
