@@ -1,1165 +1,1075 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
-_.Instances = { tier(1, {	-- Classic
-	inst(744, { 	-- Temple of Ahn'Qiraj
+-- #if AFTER TBC
+local ANACHRONOS_COORD = { 41.6, 49.8, CAVERNS_OF_TIME };
+-- #else
+local ANACHRONOS_COORD = { 65, 50, TANARIS },
+-- #endif
+_.Instances = { tier(1, applyclassicphase(PHASE_FIVE, {	-- Classic
+	inst(744, {	-- Temple of Ahn'Qiraj
+		["description"] = "Dark whispers ride on the winds of Silithus desert. An old god stirs in his wretched lair and the entire world shall soon be the target of his wrath.\n\nAfter thousands of years of slumber, the old god, C'thun has awakened and is quickly regenerating his power. Once he has reached full potential nothing will be able to stop him. The dragons that so humbly sacrificed themselves so long ago to imprison C'thun are weakened or enslaved in the temple, so the charge of protecting the land falls to other heroes.\n\nHeroes must enter Temple of Ahn'Qiraj, challenge C'thun's most wicked servants, and slay a god. The road will not be easy and it is wrought with peril at every turn. Will the heroes turn back now or face C'thun in his mighty lair and put an end to him once and for all?",
 		["coord"] = { 46.76, 7.53, 327 },	-- Temple of Ahn'Qiraj, Ahn Qiraj: The Fallen Kingdom
 		["maps"] = {
-			319,	-- The Hive Undergrounds
 			TEMPLE_OF_AHNQIRAJ,	-- The Temple Gates
+			319,	-- The Hive Undergrounds
 			321,	-- Vault of C'Thun
 		},
 		["isRaid"] = true,
-		["sharedLockout"] = 1,
 		["lvl"] = 50,
-		["g"] = {
-			-- Legacy War Effort Quests
+		["groups"] = {
+			n(FACTIONS, {
+				faction(910, {	-- Brood of Nozdormu
+					["icon"] = "Interface\\Icons\\INV_Misc_Head_Dragon_Bronze",
+					["maps"] = { CAVERNS_OF_TIME },
+				}),
+			}),
 			n(QUESTS, {
-				q(8580, {	-- The Horde Needs Firebloom!
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-				}),
-				q(8607, {	-- The Horde Needs Mageweave Bandages!
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-				}),
-				q(8609, {	-- The Horde Needs Runecloth Bandages!
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-				}),
-				q(8604, {	-- The Horde Needs Wool Bandages!
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-				}),
-				q(8792, {	-- [DEPRECATED]The Horde Needs Your Help!
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-				}),
-				q(8793, {	-- [DEPRECATED]The Horde Needs Your Help!
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-				}),
-				q(8794, {	-- [DEPRECATED]The Horde Needs Your Help!
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-				}),
-			}),
-			faction(910, { 	-- Brood of Nozdormu
-				["icon"] = "Interface\\Icons\\INV_Misc_Head_Dragon_Bronze",
-				["g"] = {
-					n(QUESTS, {
-						cl(DRUID, bubbleDown({ ["classes"] = { DRUID } }, {
-							q(8667, {	-- Genesis Helm
-								["qg"] = 15502,	-- Andorgos
-								["minReputation"] = { 910, FRIENDLY },	-- Brood of Nozdormu, Friendly.
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 20930, 1 },	-- Vek'lor's Diadem
-									{ "i", 20879, 2 },	-- Idol of Life
-									{ "i", 20859, 5 },	-- Gold Scarab
-									{ "i", 20863, 5 },	-- Clay Scarab
-								},
-								["g"] = {
-									i(21353),	-- Genesis Helm
-								},
-							}),
-							q(8669, {	-- Genesis Shoulderpads
-								["qg"] = 15502,	-- Andorgos
-								["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral.
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 20932, 1 },	-- Qiraji Bindings of Dominance
-									{ "i", 20881, 2 },	-- Idol of Strife
-									{ "i", 20859, 5 },	-- Gold Scarab
-									{ "i", 20864, 5 },	-- Bone Scarab
-								},
-								["g"] = {
-									i(21354),	-- Genesis Shoulderpads
-								},
-							}),
-							q(8666, {	-- Genesis Vest
-								["qg"] = 15504,	-- Vethsera
-								["minReputation"] = { 910, HONORED },	-- Brood of Nozdormu, Honored.
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 20933, 1 },	-- Husk of the Old God
-									{ "i", 20878, 2 },	-- Idol of Rebirth
-									{ "i", 20861, 5 },	-- Bronze Scarab
-									{ "i", 20865, 5 },	-- Ivory Scarab
-								},
-								["g"] = {
-									i(21357),	-- Genesis Vest
-								},
-							}),
-							q(8668, {	-- Genesis Trousers
-								["qg"] = 15503,	-- Kandrostrasz
-								["minReputation"] = { 910, FRIENDLY },	-- Brood of Nozdormu, Friendly.
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 20931, 1 },	-- Skin of the Great Sandworm
-									{ "i", 20882, 2 },	-- Idol of War
-									{ "i", 20858, 5 },	-- Stone Scarab
-									{ "i", 20862, 5 },	-- Crystal Scarab
-								},
-								["g"] = {
-									i(21356),	-- Genesis Trousers
-								},
-							}),
-							q(8665, {	-- Genesis Boots
-								["qg"] = 15503,	-- Kandrostrasz
-								["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral.
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 20932, 1 },	-- Qiraji Bindings of Dominance
-									{ "i", 20878, 2 },	-- Idol of Rebirth
-									{ "i", 20858, 5 },	-- Stone Scarab
-									{ "i", 20860, 5 },	-- Silver Scarab
-								},
-								["g"] = {
-									i(21355),	-- Genesis Boots
-								},
-							}),
-						})),
-						cl(HUNTER, bubbleDown({ ["classes"] = { HUNTER } }, {
-							q(8657, {	-- Striker's Diadem
-								["qg"] = 15502,	-- Andorgos
-								["minReputation"] = { 910, FRIENDLY },	-- Brood of Nozdormu, Friendly.
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 20930, 1 },	-- Vek'lor's Diadem
-									{ "i", 20881, 2 },	-- Idol of Strife
-									{ "i", 20861, 5 },	-- Bronze Scarab
-									{ "i", 20865, 5 },	-- Ivory Scarab
-								},
-								["g"] = {
-									i(21366),	-- Striker's Diadem
-								},
-							}),
-							q(8659, {	-- Striker's Pauldrons
-								["qg"] = 15502,	-- Andorgos
-								["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral.
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 20928, 1 },	-- Qiraji Bindings of Command
-									{ "i", 20882, 2 },	-- Idol of War
-									{ "i", 20862, 5 },	-- Crystal Scarab
-									{ "i", 20865, 5 },	-- Ivory Scarab
-								},
-								["g"] = {
-									i(21367),	-- Striker's Pauldrons
-								},
-							}),
-							q(8656, {	-- Striker's Hauberk
-								["qg"] = 15504,	-- Vethsera
-								["minReputation"] = { 910, HONORED },	-- Brood of Nozdormu, Honored.
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 20929, 1 },	-- Carapace of the Old God
-									{ "i", 20879, 2 },	-- Idol of Life
-									{ "i", 20859, 5 },	-- Gold Scarab
-									{ "i", 20863, 5 },	-- Clay Scarab
-								},
-								["g"] = {
-									i(21370),	-- Striker's Hauberk
-								},
-							}),
-							q(8658, {	-- Striker's Leggings
-								["qg"] = 15503,	-- Kandrostrasz
-								["minReputation"] = { 910, FRIENDLY },	-- Brood of Nozdormu, Friendly.
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 20931, 1 },	-- Skin of the Great Sandworm
-									{ "i", 20874, 2 },	-- Idol of the Sun
-									{ "i", 20860, 5 },	-- Silver Scarab
-									{ "i", 20864, 5 },	-- Bone Scarab
-								},
-								["g"] = {
-									i(21368),	-- Striker's Leggings
-								},
-							}),
-							q(8626, {	-- Striker's Footguards
-								["qg"] = 15503,	-- Kandrostrasz
-								["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral.
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 20928, 1 },	-- Qiraji Bindings of Command
-									{ "i", 20879, 2 },	-- Idol of Life
-									{ "i", 20858, 5 },	-- Stone Scarab
-									{ "i", 20864, 5 },	-- Bone Scarab
-								},
-								["g"] = {
-									i(21365),	-- Striker's Footguards
-								},
-							}),
-						})),
-						cl(MAGE, bubbleDown({ ["classes"] = { MAGE } }, {
-							q(8632, {	-- Enigma Circlet
-								["qg"] = 15502,	-- Andorgos
-								["minReputation"] = { 910, FRIENDLY },	-- Brood of Nozdormu, Friendly.
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 20926, 1 },	-- Vek'nilash's Circlet
-									{ "i", 20875, 2 },	-- Idol of Night
-									{ "i", 20861, 5 },	-- Bronze Scarab
-									{ "i", 20865, 5 },	-- Ivory Scarab
-								},
-								["g"] = {
-									i(21347),	-- Enigma Circlet
-								},
-							}),
-							q(8625, {	-- Enigma Shoulderpads
-								["qg"] = 15502,	-- Andorgos
-								["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral.
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 20932, 1 },	-- Qiraji Bindings of Dominance
-									{ "i", 20876, 2 },	-- Idol of Death
-									{ "i", 20858, 5 },	-- Stone Scarab
-									{ "i", 20861, 5 },	-- Bronze Scarab
-								},
-								["g"] = {
-									i(21345),	-- Enigma Shoulderpads
-								},
-							}),
-							q(8633, {	-- Enigma Robes
-								["qg"] = 15504,	-- Vethsera
-								["minReputation"] = { 910, HONORED },	-- Brood of Nozdormu, Honored.
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 20933, 1 },	-- Husk of the Old God
-									{ "i", 20874, 2 },	-- Idol of the Sun
-									{ "i", 20859, 5 },	-- Gold Scarab
-									{ "i", 20863, 5 },	-- Clay Scarab
-								},
-								["g"] = {
-									i(21343),	-- Enigma Robes
-								},
-							}),
-							q(8631, {	-- Enigma Leggings
-								["qg"] = 15503,	-- Kandrostrasz
-								["minReputation"] = { 910, FRIENDLY },	-- Brood of Nozdormu, Friendly.
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 20927, 1 },	-- Ouro's Intact Hide
-									{ "i", 20877, 2 },	-- Idol of the Sage
-									{ "i", 20860, 5 },	-- Silver Scarab
-									{ "i", 20864, 5 },	-- Bone Scarab
-								},
-								["g"] = {
-									i(21346),	-- Enigma Leggings
-								},
-							}),
-							q(8634, {	-- Enigma Boots
-								["qg"] = 15503,	-- Kandrostrasz
-								["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral.
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 20932, 1 },	-- Qiraji Bindings of Dominance
-									{ "i", 20874, 2 },	-- Idol of the Sun
-									{ "i", 20860, 5 },	-- Silver Scarab
-									{ "i", 20862, 5 },	-- Crystal Scarab
-								},
-								["g"] = {
-									i(21344),	-- Enigma Boots
-								},
-							}),
-						})),
-						cl(PALADIN, bubbleDown({ ["classes"] = { PALADIN } }, {
-							q(8628, {	-- Avenger's Crown
-								["qg"] = 15502,	-- Andorgos
-								["minReputation"] = { 910, FRIENDLY },	-- Brood of Nozdormu, Friendly.
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 20930, 1 },	-- Vek'lor's Diadem
-									{ "i", 20878, 2 },	-- Idol of Rebirth
-									{ "i", 20858, 5 },	-- Stone Scarab
-									{ "i", 20862, 5 },	-- Crystal Scarab
-								},
-								["g"] = {
-									i(21387),	-- Avenger's Crown
-								},
-							}),
-							q(8630, {	-- Avenger's Pauldrons
-								["qg"] = 15502,	-- Andorgos
-								["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral.
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 20932, 1 },	-- Qiraji Bindings of Dominance
-									{ "i", 20879, 2 },	-- Idol of Life
-									{ "i", 20859, 5 },	-- Gold Scarab
-									{ "i", 20862, 5 },	-- Crystal Scarab
-								},
-								["g"] = {
-									i(21391),	-- Avenger's Pauldrons
-								},
-							}),
-							q(8627, {	-- Avenger's Breastplate
-								["qg"] = 15504,	-- Vethsera
-								["minReputation"] = { 910, HONORED },	-- Brood of Nozdormu, Honored.
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 20929, 1 },	-- Carapace of the Old God
-									{ "i", 20877, 2 },	-- Idol of the Sage
-									{ "i", 20860, 5 },	-- Silver Scarab
-									{ "i", 20864, 5 },	-- Bone Scarab
-								},
-								["g"] = {
-									i(21389),	-- Avenger's Breastplate
-								},
-							}),
-							q(8629, {	-- Avenger's Legguards
-								["qg"] = 15503,	-- Kandrostrasz
-								["minReputation"] = { 910, FRIENDLY },	-- Brood of Nozdormu, Friendly.
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 20931, 1 },	-- Skin of the Great Sandworm
-									{ "i", 20881, 2 },	-- Idol of Strife
-									{ "i", 20865, 5 },	-- Ivory Scarab
-									{ "i", 20861, 5 },	-- Bronze Scarab
-								},
-								["g"] = {
-									i(21390),	-- Avenger's Legguards
-								},
-							}),
-							q(8655, {	-- Avenger's Greaves
-								["qg"] = 15503,	-- Kandrostrasz
-								["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral.
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 20932, 1 },	-- Qiraji Bindings of Dominance
-									{ "i", 20877, 2 },	-- Idol of the Sage
-									{ "i", 20861, 5 },	-- Bronze Scarab
-									{ "i", 20863, 5 },	-- Clay Scarab
-								},
-								["g"] = {
-									i(21388),	-- Avenger's Greaves
-								},
-							}),
-						})),
-						cl(PRIEST, bubbleDown({ ["classes"] = { PRIEST } }, {
-							q(8592, {	-- Tiara of the Oracle
-								["qg"] = 15502,	-- Andorgos
-								["minReputation"] = { 910, FRIENDLY },	-- Brood of Nozdormu, Friendly.
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 20926, 1 },	-- Vek'nilash's Circlet
-									{ "i", 20877, 2 },	-- Idol of the Sage
-									{ "i", 20860, 5 },	-- Silver Scarab
-									{ "i", 20864, 5 },	-- Bone Scarab
-								},
-								["g"] = {
-									i(21348),	-- Tiara of the Oracle
-								},
-							}),
-							q(8594, {	-- Mantle of the Oracle
-								["qg"] = 15502,	-- Andorgos
-								["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral.
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 20928, 1 },	-- Qiraji Bindings of Command
-									{ "i", 20878, 2 },	-- Idol of Rebirth
-									{ "i", 20860, 5 },	-- Silver Scarab
-									{ "i", 20865, 5 },	-- Ivory Scarab
-								},
-								["g"] = {
-									i(21350),	-- Mantle of the Oracle
-								},
-							}),
-							q(8603, {	-- Vestments of the Oracle
-								["qg"] = 15504,	-- Vethsera
-								["minReputation"] = { 910, HONORED },	-- Brood of Nozdormu, Honored.
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 20933, 1 },	-- Husk of the Old God
-									{ "i", 20876, 2 },	-- Idol of Death
-									{ "i", 20858, 5 },	-- Stone Scarab
-									{ "i", 20862, 5 },	-- Crystal Scarab
-								},
-								["g"] = {
-									i(21351),	-- Vestments of the Oracle
-								},
-							}),
-							q(8593, {	-- Trousers of the Oracle
-								["qg"] = 15503,	-- Kandrostrasz
-								["minReputation"] = { 910, FRIENDLY },	-- Brood of Nozdormu, Friendly.
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 20927, 1 },	-- Ouro's Intact Hide
-									{ "i", 20879, 2 },	-- Idol of Life
-									{ "i", 20859, 5 },	-- Gold Scarab
-									{ "i", 20863, 5 },	-- Clay Scarab
-								},
-								["g"] = {
-									i(21352),	-- Trousers of the Oracle
-								},
-							}),
-							q(8596, {	-- Footwraps of the Oracle
-								["qg"] = 15503,	-- Kandrostrasz
-								["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral.
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 20928, 1 },	-- Qiraji Bindings of Command
-									{ "i", 20876, 2 },	-- Idol of Death
-									{ "i", 20861, 5 },	-- Bronze Scarab
-									{ "i", 20859, 5 },	-- Gold Scarab
-								},
-								["g"] = {
-									i(21349),	-- Footwraps of the Oracle
-								},
-							}),
-						})),
-						cl(ROGUE, bubbleDown({ ["classes"] = { ROGUE } }, {
-							q(8639, {	-- Deathdealer's Helm
-								["qg"] = 15502,	-- Andorgos
-								["minReputation"] = { 910, FRIENDLY },	-- Brood of Nozdormu, Friendly.
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 20930, 1 },	-- Vek'lor's Diadem
-									{ "i", 20882, 2 },	-- Idol of War
-									{ "i", 20863, 5 },	-- Clay Scarab
-									{ "i", 20859, 5 },	-- Gold Scarab
-								},
-								["g"] = {
-									i(21360),	-- Deathdealer's Helm
-								},
-							}),
-							q(8641, {	-- Deathdealer's Spaulders
-								["qg"] = 15502,	-- Andorgos
-								["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral.
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 20928, 1 },	-- Qiraji Bindings of Command
-									{ "i", 20874, 2 },	-- Idol of the Sun
-									{ "i", 20860, 5 },	-- Silver Scarab
-									{ "i", 20863, 5 },	-- Clay Scarab
-								},
-								["g"] = {
-									i(21361),	-- Deathdealer's Spaulders
-								},
-							}),
-							q(8638, {	-- Deathdealer's Vest
-								["qg"] = 15504,	-- Vethsera
-								["minReputation"] = { 910, HONORED },	-- Brood of Nozdormu, Honored.
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 20929, 1 },	-- Carapace of the Old God
-									{ "i", 20881, 2 },	-- Idol of Strife
-									{ "i", 20861, 5 },	-- Bronze Scarab
-									{ "i", 20865, 5 },	-- Ivory Scarab
-								},
-								["g"] = {
-									i(21364),	-- Deathdealer's Vest
-								},
-							}),
-							q(8640, {	-- Deathdealer's Leggings
-								["qg"] = 15503,	-- Kandrostrasz
-								["minReputation"] = { 910, FRIENDLY },	-- Brood of Nozdormu, Friendly.
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 20927, 1 },	-- Ouro's Intact Hide
-									{ "i", 20875, 2 },	-- Idol of Night
-									{ "i", 20858, 5 },	-- Stone Scarab
-									{ "i", 20862, 5 },	-- Crystal Scarab
-								},
-								["g"] = {
-									i(21362),	-- Deathdealer's Leggings
-								},
-							}),
-							q(8637, {	-- Deathdealer's Boots
-								["qg"] = 15503,	-- Kandrostrasz
-								["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral.
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 20928, 1 },	-- Qiraji Bindings of Command
-									{ "i", 20881, 2 },	-- Idol of Strife
-									{ "i", 20862, 5 },	-- Crystal Scarab
-									{ "i", 20864, 5 },	-- Bone Scarab
-								},
-								["g"] = {
-									i(21359),	-- Deathdealer's Boots
-								},
-							}),
-						})),
-						cl(SHAMAN, bubbleDown({ ["classes"] = { SHAMAN } }, {
-							q(8623, {	-- Stormcaller's Diadem
-								["qg"] = 15502,	-- Andorgos
-								["minReputation"] = { 910, FRIENDLY },	-- Brood of Nozdormu, Friendly.
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 20930, 1 },	-- Vek'lor's Diadem
-									{ "i", 20878, 2 },	-- Idol of Rebirth
-									{ "i", 20858, 5 },	-- Stone Scarab
-									{ "i", 20862, 5 },	-- Crystal Scarab
-								},
-								["g"] = {
-									i(21372),	-- Stormcaller's Diadem
-								},
-							}),
-							q(8602, {	-- Stormcaller's Pauldrons
-								["qg"] = 15502,	-- Andorgos
-								["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral.
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 20932, 1 },	-- Qiraji Bindings of Dominance
-									{ "i", 20879, 2 },	-- Idol of Life
-									{ "i", 20859, 5 },	-- Gold Scarab
-									{ "i", 20862, 5 },	-- Crystal Scarab
-								},
-								["g"] = {
-									i(21376),	-- Stormcaller's Pauldrons
-								},
-							}),
-							q(8622, {	-- Stormcaller's Hauberk
-								["qg"] = 15504,	-- Vethsera
-								["minReputation"] = { 910, HONORED },	-- Brood of Nozdormu, Honored.
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 20929, 1 },	-- Carapace of the Old God
-									{ "i", 20877, 2 },	-- Idol of the Sage
-									{ "i", 20860, 5 },	-- Silver Scarab
-									{ "i", 20864, 5 },	-- Bone Scarab
-								},
-								["g"] = {
-									i(21374),	-- Stormcaller's Hauberk
-								},
-							}),
-							q(8624, {	-- Stormcaller's Leggings
-								["qg"] = 15503,	-- Kandrostrasz
-								["minReputation"] = { 910, FRIENDLY },	-- Brood of Nozdormu, Friendly.
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 20931, 1 },	-- Skin of the Great Sandworm
-									{ "i", 20881, 2 },	-- Idol of Strife
-									{ "i", 20865, 5 },	-- Ivory Scarab
-									{ "i", 20861, 5 },	-- Bronze Scarab
-								},
-								["g"] = {
-									i(21375),	-- Stormcaller's Leggings
-								},
-							}),
-							q(8621, {	-- Stormcaller's Footguards
-								["qg"] = 15503,	-- Kandrostrasz
-								["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral.
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 20932, 1 },	-- Qiraji Bindings of Dominance
-									{ "i", 20877, 2 },	-- Idol of the Sage
-									{ "i", 20861, 5 },	-- Bronze Scarab
-									{ "i", 20863, 5 },	-- Clay Scarab
-								},
-								["g"] = {
-									i(21373),	-- Stormcaller's Footguards
-								},
-							}),
-						})),
-						cl(WARLOCK, bubbleDown({ ["classes"] = { WARLOCK } }, {
-							q(8662, {	-- Doomcaller's Circlet
-								["qg"] = 15502,	-- Andorgos
-								["minReputation"] = { 910, FRIENDLY },	-- Brood of Nozdormu, Friendly.
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 20926, 1 },	-- Vek'nilash's Circlet
-									{ "i", 20876, 2 },	-- Idol of Death
-									{ "i", 20860, 5 },	-- Silver Scarab
-									{ "i", 20864, 5 },	-- Bone Scarab
-								},
-								["g"] = {
-									i(21337),	-- Doomcaller's Circlet
-								},
-							}),
-							q(8664, {	-- Doomcaller's Mantle
-								["qg"] = 15502,	-- Andorgos
-								["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral.
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 20932, 1 },	-- Qiraji Bindings of Dominance
-									{ "i", 20877, 2 },	-- Idol of the Sage
-									{ "i", 20861, 5 },	-- Bronze Scarab
-									{ "i", 20864, 5 },	-- Bone Scarab
-								},
-								["g"] = {
-									i(21335),	-- Doomcaller's Mantle
-								},
-							}),
-							q(8661, {	-- Doomcaller's Robes
-								["qg"] = 15504,	-- Vethsera
-								["minReputation"] = { 910, HONORED },	-- Brood of Nozdormu, Honored.
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 20933, 1 },	-- Husk of the Old God
-									{ "i", 20875, 2 },	-- Idol of Night
-									{ "i", 20862, 5 },	-- Crystal Scarab
-									{ "i", 20858, 5 },	-- Stone Scarab
-								},
-								["g"] = {
-									i(21334),	-- Doomcaller's Robes
-								},
-							}),
-							q(8663, {	-- Doomcaller's Trousers
-								["qg"] = 15503,	-- Kandrostrasz
-								["minReputation"] = { 910, FRIENDLY },	-- Brood of Nozdormu, Friendly.
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 20931, 1 },	-- Skin of the Great Sandworm
-									{ "i", 20878, 2 },	-- Idol of Rebirth
-									{ "i", 20859, 5 },	-- Gold Scarab
-									{ "i", 20863, 5 },	-- Clay Scarab
-								},
-								["g"] = {
-									i(21336),	-- Doomcaller's Trousers
-								},
-							}),
-							q(8660, {	-- Doomcaller's Footwraps
-								["qg"] = 15503,	-- Kandrostrasz
-								["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral.
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 20932, 1 },	-- Qiraji Bindings of Dominance
-									{ "i", 20875, 2 },	-- Idol of Night
-									{ "i", 20863, 5 },	-- Clay Scarab
-									{ "i", 20865, 5 },	-- Ivory Scarab
-								},
-								["g"] = {
-									i(21338),	-- Doomcaller's Footwraps
-								},
-							}),
-						})),
-						cl(WARRIOR, bubbleDown({ ["classes"] = { WARRIOR } }, {
-							q(8561, {	-- Conqueror's Crown
-								["qg"] = 15502,	-- Andorgos
-								["minReputation"] = { 910, FRIENDLY },	-- Brood of Nozdormu, Friendly.
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 20926, 1 },	-- Vek'nilash's Circlet
-									{ "i", 20874, 2 },	-- Idol of the Sun
-									{ "i", 20862, 5 },	-- Crystal Scarab
-									{ "i", 20858, 5 },	-- Stone Scarab
-								},
-								["g"] = {
-									i(21329),	-- Conqueror's Crown
-								},
-							}),
-							q(8544, {	-- Conqueror's Spaulders
-								["qg"] = 15502,	-- Andorgos
-								["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral.
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 20928, 1 },	-- Qiraji Bindings of Command
-									{ "i", 20875, 2 },	-- Idol of Night
-									{ "i", 20863, 5 },	-- Clay Scarab
-									{ "i", 20858, 5 },	-- Stone Scarab
-								},
-								["g"] = {
-									i(21330),	-- Conqueror's Spaulders
-								},
-							}),
-							q(8562, {	-- Conqueror's Breastplate
-								["qg"] = 15504,	-- Vethsera
-								["minReputation"] = { 910, HONORED },	-- Brood of Nozdormu, Honored.
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 20929, 1 },	-- Carapace of the Old God
-									{ "i", 20882, 2 },	-- Idol of War
-									{ "i", 20860, 5 },	-- Silver Scarab
-									{ "i", 20864, 5 },	-- Bone Scarab
-								},
-								["g"] = {
-									i(21331),	-- Conqueror's Breastplate
-								},
-							}),
-							q(8560, {	-- Conqueror's Legguards
-								["qg"] = 15503,	-- Kandrostrasz
-								["minReputation"] = { 910, FRIENDLY },	-- Brood of Nozdormu, Friendly.
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 20927, 1 },	-- Ouro's Intact Hide
-									{ "i", 20876, 2 },	-- Idol of Death
-									{ "i", 20861, 5 },	-- Bronze Scarab
-									{ "i", 20865, 5 },	-- Ivory Scarab
-								},
-								["g"] = {
-									i(21332),	-- Conqueror's Legguards
-								},
-							}),
-							q(8559, {	-- Conqueror's Greaves
-								["qg"] = 15503,	-- Kandrostrasz
-								["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral.
-								["repeatable"] = true,
-								["cost"] = {
-									{ "i", 20928, 1 },	-- Qiraji Bindings of Command
-									{ "i", 20882, 2 },	-- Idol of War
-									{ "i", 20865, 5 },	-- Ivory Scarab
-									{ "i", 20859, 5 },	-- Gold Scarab
-								},
-								["g"] = {
-									i(21333),	-- Conqueror's Greaves
-								},
-							}),
-						})),
-						q(8801, {	-- C'Thun's Legacy
-							["provider"] = { "i", 21221 },	-- Eye of C'Thun
-						}),
-						q(8789, {	-- Imperial Qiraji Armaments
-							["qg"] = 15380,		-- Arygos
-							["repeatable"] = true,
-							["cost"] = {
-								{ "i", 21232, 1 },	-- Imperial Qiraji Armaments
-								{ "i", 18562, 3 },	-- Elementium Ore
-							},
-							["g"] = {
-								i(21242),	-- Blessed Qiraji War Axe
-								i(21272),	-- Blessed Qiraji Musket
-								i(21244),	-- Blessed Qiraji Pugio
-								i(21269),	-- Blessed Qiraji Bulwark
-							},
-						}),
-						q(8790, {	-- Imperial Qiraji Regalia
-							["qg"] = 15378,		-- Quest Giver: Merithra of the Dream
-							["repeatable"] = true,
-							["cost"] = {
-								{ "i", 21237, 1 },	-- Imperial Qiraji Regalia
-								{ "i", 18562, 3 },	-- Elementium Ore
-							},
-							["g"] = {
-								i(21273),	-- Blessed Qiraji Acolyte Staff
-								i(21275),	-- Blessed Qiraji Augur Staff
-								i(21268),	-- Blessed Qiraji War Hammer
-							},
-						}),
-						q(8579, {	-- Mortal Champions
-							["qg"] = 15503,	-- Kandrostrasz
-							["cost"] = {
-								{ "i", 21229, 1 },	-- Qiraji Lord's Insignia
-							},
-						}),
-						q(8595, {	-- Mortal Champions
-							["qg"] = 15503,	-- Kandrostrasz
-							["sourceQuest"] = 8579,	-- Mortal Champions
-							["repeatable"] = true,
-							["cost"] = {
-								{ "i", 21229, 1 },	-- Qiraji Lord's Insignia
-							},
-						}),
-						q(8784, {	-- Secrets of the Qiraji
-							["qg"] = 15503,	-- Kandrostrasz
-							["repeatable"] = true,
-							["cost"] = {
-								{ "i", 21230, 1 },	-- Ancient Qiraji Artifact
-							},
-						}),
-						q(8766, {	-- The Changing of Paths - Conqueror No More
-							["qg"] = 15192,	-- Anachronos
-							["sourceQuest"] = 8756,	-- The Qiraji Conqueror
-							["minReputation"] = { 910, EXALTED },	-- Brood of Nozdormu, Exalted.
-							["coord"] = { 41.6, 49.8, CAVERNS_OF_TIME },
-							["maps"] = { CAVERNS_OF_TIME },
-							["repeatable"] = true,
-							["cost"] = {
-								{ "i", 21205, 1 },	-- Signet Ring of the Bronze Dragonflight
-								{ "i", 20864, 15 },	-- Bone Scarab
-								{ "i", 20865, 15 },	-- Ivory Scarab
-								{ "i", 20858, 15 },	-- Stone Scarab
-							},
-							["lvl"] = 60,
-							["g"] = {
-								i(21200),	-- Signet Ring of the Bronze Dragonflight
-								i(21210),	-- Signet Ring of the Bronze Dragonflight
-							},
-						}),
-						q(8765, {	-- The Changing of Paths - Invoker No More
-							["qg"] = 15192,	-- Anachronos
-							["sourceQuest"] = 8761,	-- The Grand Invoker
-							["minReputation"] = { 910, EXALTED },	-- Brood of Nozdormu, Exalted.
-							["coord"] = { 41.6, 49.8, CAVERNS_OF_TIME },
-							["maps"] = { CAVERNS_OF_TIME },
-							["repeatable"] = true,
-							["cost"] = {
-								{ "i", 21210, 1 },	-- Signet Ring of the Bronze Dragonflight
-								{ "i", 20861, 15 },	-- Bronze Scarab
-								{ "i", 20862, 15 },	-- Crystal Scarab
-								{ "i", 20863, 15 },	-- Clay Scarab
-							},
-							["lvl"] = 60,
-							["g"] = {
-								i(21200),	-- Signet Ring of the Bronze Dragonflight
-								i(21205),	-- Signet Ring of the Bronze Dragonflight
-							},
-						}),
-						q(8764, {	-- The Changing of Paths - Protector No More
-							["qg"] = 15192,	-- Anachronos
-							["sourceQuest"] = 8751,	-- The Protector of Kalimdor
-							["minReputation"] = { 910, EXALTED },	-- Brood of Nozdormu, Exalted.
-							["coord"] = { 41.6, 49.8, CAVERNS_OF_TIME },
-							["maps"] = { CAVERNS_OF_TIME },
-							["repeatable"] = true,
-							["cost"] = {
-								{ "i", 21200, 1 },	-- Signet Ring of the Bronze Dragonflight
-								{ "i", 20858, 15 },	-- Stone Scarab
-								{ "i", 20859, 15 },	-- Gold Scarab
-								{ "i", 20860, 15 },	-- Silver Scarab
-							},
-							["lvl"] = 60,
-							["g"] = {
-								i(21210),	-- Signet Ring of the Bronze Dragonflight
-								i(21205),	-- Signet Ring of the Bronze Dragonflight
-							},
-						}),
-						q(8761, {	-- The Grand Invoker
-							["qg"] = 15192,	-- Anachronos
-							["sourceQuest"] = 8760,	-- The Path of the Invoker (4/4)
-							["minReputation"] = { 910, EXALTED },	-- Brood of Nozdormu, Exalted.
-							["coord"] = { 41.6, 49.8, CAVERNS_OF_TIME },
-							["maps"] = { CAVERNS_OF_TIME },
-							["altQuests"] = {
-								8756,	-- The Qiraji Conqueror
-								8751,	-- The Protector of Kalimdor
-							},
-							["cost"] = {
-								{ "i", 21209, 1 },	-- Signet Ring of the Bronze Dragonflight
-							},
-							["lvl"] = 60,
-							["g"] = {
-								i(21210),	-- Signet Ring of the Bronze Dragonflight
-							},
-						}),
-						q(8752, {	-- The Path of the Conqueror (1/4)
-							["qg"] = 15192,	-- Anachronos
-							["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral.
-							["coord"] = { 41.6, 49.8, CAVERNS_OF_TIME },
-							["maps"] = { CAVERNS_OF_TIME },
-							["altQuests"] = {
-								8757,	-- The Path of the Invoker (1/4)
-								8747,	-- The Path of the Protector (1/4)
-							},
-							["lvl"] = 60,
-							["g"] = {
-								i(21201),	-- Signet Ring of the Bronze Dragonflight
-							},
-						}),
-						q(8753, {	-- The Path of the Conqueror (2/4)
-							["qg"] = 15192,	-- Anachronos
-							["sourceQuest"] = 8752,	-- The Path of the Conqueror (1/4)
-							["minReputation"] = { 910, FRIENDLY },	-- Brood of Nozdormu, Friendly.
-							["coord"] = { 41.6, 49.8, CAVERNS_OF_TIME },
-							["maps"] = { CAVERNS_OF_TIME },
-							["altQuests"] = {
-								8758,	-- The Path of the Invoker (2/4)
-								8748,	-- The Path of the Protector (2/4)
-							},
-							["cost"] = {
-								{ "i", 21201, 1 },	-- Signet Ring of the Bronze Dragonflight
-							},
-							["lvl"] = 60,
-							["g"] = {
-								i(21202),	-- Signet Ring of the Bronze Dragonflight
-							},
-						}),
-						q(8754, {	-- The Path of the Conqueror (3/4)
-							["qg"] = 15192,	-- Anachronos
-							["sourceQuest"] = 8753,	-- The Path of the Conqueror (2/4)
-							["minReputation"] = { 910, HONORED },	-- Brood of Nozdormu, Honored.
-							["coord"] = { 41.6, 49.8, CAVERNS_OF_TIME },
-							["maps"] = { CAVERNS_OF_TIME },
-							["altQuests"] = {
-								8759,	-- The Path of the Invoker (3/4)
-								8749,	-- The Path of the Protector (3/4)
-							},
-							["cost"] = {
-								{ "i", 21202, 1 },	-- Signet Ring of the Bronze Dragonflight
-							},
-							["lvl"] = 60,
-							["g"] = {
-								i(21203),	-- Signet Ring of the Bronze Dragonflight
-							},
-						}),
-						q(8755, {	-- The Path of the Conqueror (4/4)
-							["qg"] = 15192,	-- Anachronos
-							["sourceQuest"] = 8754,	-- The Path of the Conqueror (3/4)
-							["minReputation"] = { 910, REVERED },	-- Brood of Nozdormu, Revered.
-							["coord"] = { 41.6, 49.8, CAVERNS_OF_TIME },
-							["maps"] = { CAVERNS_OF_TIME },
-							["altQuests"] = {
-								8760,	-- The Path of the Invoker (4/4)
-								8750,	-- The Path of the Protector (4/4)
-							},
-							["cost"] = {
-								{ "i", 21203, 1 },	-- Signet Ring of the Bronze Dragonflight
-							},
-							["lvl"] = 60,
-							["g"] = {
-								i(21204),	-- Signet Ring of the Bronze Dragonflight
-							},
-						}),
-						q(8757, {	-- The Path of the Invoker (1/4)
-							["qg"] = 15192,	-- Anachronos
-							["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral.
-							["coord"] = { 41.6, 49.8, CAVERNS_OF_TIME },
-							["maps"] = { CAVERNS_OF_TIME },
-							["altQuests"] = {
-								8752,	-- The Path of the Conqueror (1/4)
-								8747,	-- The Path of the Protector (1/4)
-							},
-							["lvl"] = 60,
-							["g"] = {
-								i(21206),	-- Signet Ring of the Bronze Dragonflight
-							},
-						}),
-						q(8758, {	-- The Path of the Invoker (2/4)
-							["qg"] = 15192,	-- Anachronos
-							["sourceQuest"] = 8757,	-- The Path of the Invoker (1/4)
-							["minReputation"] = { 910, FRIENDLY },	-- Brood of Nozdormu, Friendly.
-							["coord"] = { 41.6, 49.8, CAVERNS_OF_TIME },
-							["maps"] = { CAVERNS_OF_TIME },
-							["altQuests"] = {
-								8753,	-- The Path of the Conqueror (2/4)
-								8748,	-- The Path of the Protector (2/4)
-							},
-							["cost"] = {
-								{ "i", 21206, 1 },	-- Signet Ring of the Bronze Dragonflight
-							},
-							["lvl"] = 60,
-							["g"] = {
-								i(21207),	-- Signet Ring of the Bronze Dragonflight
-							},
-						}),
-						q(8759, {	-- The Path of the Invoker (3/4)
-							["qg"] = 15192,	-- Anachronos
-							["sourceQuest"] = 8758,	-- The Path of the Invoker (2/4)
-							["minReputation"] = { 910, HONORED },	-- Brood of Nozdormu, Honored.
-							["coord"] = { 41.6, 49.8, CAVERNS_OF_TIME },
-							["maps"] = { CAVERNS_OF_TIME },
-							["altQuests"] = {
-								8754,	-- The Path of the Conqueror (3/4)
-								8749,	-- The Path of the Protector (3/4)
-							},
-							["cost"] = {
-								{ "i", 21207, 1 },	-- Signet Ring of the Bronze Dragonflight
-							},
-							["lvl"] = 60,
-							["g"] = {
-								i(21208),	-- Signet Ring of the Bronze Dragonflight
-							},
-						}),
-						q(8760, {	-- The Path of the Invoker (4/4)
-							["qg"] = 15192,	-- Anachronos
-							["sourceQuest"] = 8759,	-- The Path of the Invoker (3/4)
-							["minReputation"] = { 910, REVERED },	-- Brood of Nozdormu, Revered.
-							["coord"] = { 41.6, 49.8, CAVERNS_OF_TIME },
-							["maps"] = { CAVERNS_OF_TIME },
-							["altQuests"] = {
-								8755,	-- The Path of the Conqueror (4/4)
-								8750,	-- The Path of the Protector (4/4)
-							},
-							["cost"] = {
-								{ "i", 21208, 1 },	-- Signet Ring of the Bronze Dragonflight
-							},
-							["lvl"] = 60,
-							["g"] = {
-								i(21209),	-- Signet Ring of the Bronze Dragonflight
-							},
-						}),
-						q(8747, {	-- The Path of the Protector (1/4)
-							["qg"] = 15192,	-- Anachronos
-							["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral.
-							["coord"] = { 41.6, 49.8, CAVERNS_OF_TIME },
-							["maps"] = { CAVERNS_OF_TIME },
-							["altQuests"] = {
-								8752,	-- The Path of the Conqueror (1/4)
-								8757,	-- The Path of the Invoker (1/4)
-							},
-							["lvl"] = 60,
-							["g"] = {
-								i(21196),	-- Signet Ring of the Bronze Dragonflight
-							},
-						}),
-						q(8748, {	-- The Path of the Protector (2/4)
-							["qg"] = 15192,	-- Anachronos
-							["sourceQuest"] = 8747,	-- The Path of the Protector (1/4)
-							["minReputation"] = { 910, FRIENDLY },	-- Brood of Nozdormu, Friendly.
-							["coord"] = { 41.6, 49.8, CAVERNS_OF_TIME },
-							["maps"] = { CAVERNS_OF_TIME },
-							["altQuests"] = {
-								8753,	-- The Path of the Conqueror (2/4)
-								8758,	-- The Path of the Invoker (2/4)
-							},
-							["cost"] = {
-								{ "i", 21196, 1 },	-- Signet Ring of the Bronze Dragonflight
-							},
-							["lvl"] = 60,
-							["g"] = {
-								i(21197),	-- Signet Ring of the Bronze Dragonflight
-							},
-						}),
-						q(8749, {	-- The Path of the Protector (3/4)
-							["qg"] = 15192,	-- Anachronos
-							["sourceQuest"] = 8748,	-- The Path of the Protector (2/4)
-							["minReputation"] = { 910, HONORED },	-- Brood of Nozdormu, Honored.
-							["coord"] = { 41.6, 49.8, CAVERNS_OF_TIME },
-							["maps"] = { CAVERNS_OF_TIME },
-							["altQuests"] = {
-								8754,	-- The Path of the Conqueror (3/4)
-								8759,	-- The Path of the Invoker (3/4)
-							},
-							["cost"] = {
-								{ "i", 21197, 1 },	-- Signet Ring of the Bronze Dragonflight
-							},
-							["lvl"] = 60,
-							["g"] = {
-								i(21198),	-- Signet Ring of the Bronze Dragonflight
-							},
-						}),
-						q(8750, {	-- The Path of the Protector (4/4)
-							["qg"] = 15192,	-- Anachronos
-							["sourceQuest"] = 8749,	-- The Path of the Protector (3/4)
-							["minReputation"] = { 910, REVERED },	-- Brood of Nozdormu, Revered.
-							["coord"] = { 41.6, 49.8, CAVERNS_OF_TIME },
-							["maps"] = { CAVERNS_OF_TIME },
-							["altQuests"] = {
-								8755,	-- The Path of the Conqueror (4/4)
-								8760,	-- The Path of the Invoker (4/4)
-							},
-							["cost"] = {
-								{ "i", 21198, 1 },	-- Signet Ring of the Bronze Dragonflight
-							},
-							["lvl"] = 60,
-							["g"] = {
-								i(21199),	-- Signet Ring of the Bronze Dragonflight
-							},
-						}),
-						q(8751, {	-- The Protector of Kalimdor
-							["qg"] = 15192,	-- Anachronos
-							["sourceQuest"] = 8750,	-- The Path of the Protector (4/4)
-							["minReputation"] = { 910, EXALTED },	-- Brood of Nozdormu, Exalted.
-							["coord"] = { 41.6, 49.8, CAVERNS_OF_TIME },
-							["maps"] = { CAVERNS_OF_TIME },
-							["altQuests"] = {
-								8761,	-- The Grand Invoker
-								8756,	-- The Qiraji Conqueror
-							},
-							["cost"] = {
-								{ "i", 21199, 1 },	-- Signet Ring of the Bronze Dragonflight
-							},
-							["lvl"] = 60,
-							["g"] = {
-								i(21200),	-- Signet Ring of the Bronze Dragonflight
-							},
-						}),
-						q(8756, {	-- The Qiraji Conqueror
-							["qg"] = 15192,	-- Anachronos
-							["sourceQuest"] = 8755,	-- The Path of the Conqueror (4/4)
-							["minReputation"] = { 910, EXALTED },	-- Brood of Nozdormu, Exalted.
-							["coord"] = { 41.6, 49.8, CAVERNS_OF_TIME },
-							["maps"] = { CAVERNS_OF_TIME },
-							["altQuests"] = {
-								8761,	-- The Grand Invoker
-								8751,	-- The Protector of Kalimdor
-							},
-							["cost"] = {
-								{ "i", 21203, 1 },	-- Signet Ring of the Bronze Dragonflight
-							},
-							["lvl"] = 60,
-							["g"] = {
-								i(21205),	-- Signet Ring of the Bronze Dragonflight
-							},
-						}),
-						q(8802, {	-- The Savior of Kalimdor
-							["qg"] = 15379,	-- Caelestrasz
-							["sourceQuest"] = 8801,	-- C'Thun's Legacy
-							["g"] = {
-								i(21712),	-- Amulet of the Fallen God
-								i(21710),	-- Cloak of the Fallen God
-								i(21709),	-- Ring of the Fallen God
-							},
-						}),
+				cl(DRUID, bubbleDown({ ["classes"] = { DRUID } }, {
+					q(8667, {	-- Genesis Helm
+						["qg"] = 15502,	-- Andorgos
+						["minReputation"] = { 910, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 20930, 1 },	-- Vek'lor's Diadem
+							{ "i", 20879, 2 },	-- Idol of Life
+							{ "i", 20859, 5 },	-- Gold Scarab
+							{ "i", 20863, 5 },	-- Clay Scarab
+						},
+						["groups"] = {
+							i(21353),	-- Genesis Helm
+						},
 					}),
-				},
+					q(8669, {	-- Genesis Shoulderpads
+						["qg"] = 15502,	-- Andorgos
+						["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 20932, 1 },	-- Qiraji Bindings of Dominance
+							{ "i", 20881, 2 },	-- Idol of Strife
+							{ "i", 20859, 5 },	-- Gold Scarab
+							{ "i", 20864, 5 },	-- Bone Scarab
+						},
+						["groups"] = {
+							i(21354),	-- Genesis Shoulderpads
+						},
+					}),
+					q(8666, {	-- Genesis Vest
+						["qg"] = 15504,	-- Vethsera
+						["minReputation"] = { 910, HONORED },	-- Brood of Nozdormu, Honored.
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 20933, 1 },	-- Husk of the Old God
+							{ "i", 20878, 2 },	-- Idol of Rebirth
+							{ "i", 20861, 5 },	-- Bronze Scarab
+							{ "i", 20865, 5 },	-- Ivory Scarab
+						},
+						["groups"] = {
+							i(21357),	-- Genesis Vest
+						},
+					}),
+					q(8668, {	-- Genesis Trousers
+						["qg"] = 15503,	-- Kandrostrasz
+						["minReputation"] = { 910, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 20931, 1 },	-- Skin of the Great Sandworm
+							{ "i", 20882, 2 },	-- Idol of War
+							{ "i", 20858, 5 },	-- Stone Scarab
+							{ "i", 20862, 5 },	-- Crystal Scarab
+						},
+						["groups"] = {
+							i(21356),	-- Genesis Trousers
+						},
+					}),
+					q(8665, {	-- Genesis Boots
+						["qg"] = 15503,	-- Kandrostrasz
+						["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 20932, 1 },	-- Qiraji Bindings of Dominance
+							{ "i", 20878, 2 },	-- Idol of Rebirth
+							{ "i", 20858, 5 },	-- Stone Scarab
+							{ "i", 20860, 5 },	-- Silver Scarab
+						},
+						["groups"] = {
+							i(21355),	-- Genesis Boots
+						},
+					}),
+				})),
+				cl(HUNTER, bubbleDown({ ["classes"] = { HUNTER } }, {
+					q(8657, {	-- Striker's Diadem
+						["qg"] = 15502,	-- Andorgos
+						["minReputation"] = { 910, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 20930, 1 },	-- Vek'lor's Diadem
+							{ "i", 20881, 2 },	-- Idol of Strife
+							{ "i", 20861, 5 },	-- Bronze Scarab
+							{ "i", 20865, 5 },	-- Ivory Scarab
+						},
+						["groups"] = {
+							i(21366),	-- Striker's Diadem
+						},
+					}),
+					q(8659, {	-- Striker's Pauldrons
+						["qg"] = 15502,	-- Andorgos
+						["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 20928, 1 },	-- Qiraji Bindings of Command
+							{ "i", 20882, 2 },	-- Idol of War
+							{ "i", 20862, 5 },	-- Crystal Scarab
+							{ "i", 20865, 5 },	-- Ivory Scarab
+						},
+						["groups"] = {
+							i(21367),	-- Striker's Pauldrons
+						},
+					}),
+					q(8656, {	-- Striker's Hauberk
+						["qg"] = 15504,	-- Vethsera
+						["minReputation"] = { 910, HONORED },	-- Brood of Nozdormu, Honored.
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 20929, 1 },	-- Carapace of the Old God
+							{ "i", 20879, 2 },	-- Idol of Life
+							{ "i", 20859, 5 },	-- Gold Scarab
+							{ "i", 20863, 5 },	-- Clay Scarab
+						},
+						["groups"] = {
+							i(21370),	-- Striker's Hauberk
+						},
+					}),
+					q(8658, {	-- Striker's Leggings
+						["qg"] = 15503,	-- Kandrostrasz
+						["minReputation"] = { 910, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 20931, 1 },	-- Skin of the Great Sandworm
+							{ "i", 20874, 2 },	-- Idol of the Sun
+							{ "i", 20860, 5 },	-- Silver Scarab
+							{ "i", 20864, 5 },	-- Bone Scarab
+						},
+						["groups"] = {
+							i(21368),	-- Striker's Leggings
+						},
+					}),
+					q(8626, {	-- Striker's Footguards
+						["qg"] = 15503,	-- Kandrostrasz
+						["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 20928, 1 },	-- Qiraji Bindings of Command
+							{ "i", 20879, 2 },	-- Idol of Life
+							{ "i", 20858, 5 },	-- Stone Scarab
+							{ "i", 20864, 5 },	-- Bone Scarab
+						},
+						["groups"] = {
+							i(21365),	-- Striker's Footguards
+						},
+					}),
+				})),
+				cl(MAGE, bubbleDown({ ["classes"] = { MAGE } }, {
+					q(8632, {	-- Enigma Circlet
+						["qg"] = 15502,	-- Andorgos
+						["minReputation"] = { 910, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 20926, 1 },	-- Vek'nilash's Circlet
+							{ "i", 20875, 2 },	-- Idol of Night
+							{ "i", 20861, 5 },	-- Bronze Scarab
+							{ "i", 20865, 5 },	-- Ivory Scarab
+						},
+						["groups"] = {
+							i(21347),	-- Enigma Circlet
+						},
+					}),
+					q(8625, {	-- Enigma Shoulderpads
+						["qg"] = 15502,	-- Andorgos
+						["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 20932, 1 },	-- Qiraji Bindings of Dominance
+							{ "i", 20876, 2 },	-- Idol of Death
+							{ "i", 20858, 5 },	-- Stone Scarab
+							{ "i", 20861, 5 },	-- Bronze Scarab
+						},
+						["groups"] = {
+							i(21345),	-- Enigma Shoulderpads
+						},
+					}),
+					q(8633, {	-- Enigma Robes
+						["qg"] = 15504,	-- Vethsera
+						["minReputation"] = { 910, HONORED },	-- Brood of Nozdormu, Honored.
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 20933, 1 },	-- Husk of the Old God
+							{ "i", 20874, 2 },	-- Idol of the Sun
+							{ "i", 20859, 5 },	-- Gold Scarab
+							{ "i", 20863, 5 },	-- Clay Scarab
+						},
+						["groups"] = {
+							i(21343),	-- Enigma Robes
+						},
+					}),
+					q(8631, {	-- Enigma Leggings
+						["qg"] = 15503,	-- Kandrostrasz
+						["minReputation"] = { 910, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 20927, 1 },	-- Ouro's Intact Hide
+							{ "i", 20877, 2 },	-- Idol of the Sage
+							{ "i", 20860, 5 },	-- Silver Scarab
+							{ "i", 20864, 5 },	-- Bone Scarab
+						},
+						["groups"] = {
+							i(21346),	-- Enigma Leggings
+						},
+					}),
+					q(8634, {	-- Enigma Boots
+						["qg"] = 15503,	-- Kandrostrasz
+						["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 20932, 1 },	-- Qiraji Bindings of Dominance
+							{ "i", 20874, 2 },	-- Idol of the Sun
+							{ "i", 20860, 5 },	-- Silver Scarab
+							{ "i", 20862, 5 },	-- Crystal Scarab
+						},
+						["groups"] = {
+							i(21344),	-- Enigma Boots
+						},
+					}),
+				})),
+				cl(PALADIN, bubbleDown({ ["classes"] = { PALADIN } }, {
+					q(8628, {	-- Avenger's Crown
+						["qg"] = 15502,	-- Andorgos
+						["minReputation"] = { 910, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 20930, 1 },	-- Vek'lor's Diadem
+							{ "i", 20878, 2 },	-- Idol of Rebirth
+							{ "i", 20858, 5 },	-- Stone Scarab
+							{ "i", 20862, 5 },	-- Crystal Scarab
+						},
+						["groups"] = {
+							i(21387),	-- Avenger's Crown
+						},
+					}),
+					q(8630, {	-- Avenger's Pauldrons
+						["qg"] = 15502,	-- Andorgos
+						["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 20932, 1 },	-- Qiraji Bindings of Dominance
+							{ "i", 20879, 2 },	-- Idol of Life
+							{ "i", 20859, 5 },	-- Gold Scarab
+							{ "i", 20862, 5 },	-- Crystal Scarab
+						},
+						["groups"] = {
+							i(21391),	-- Avenger's Pauldrons
+						},
+					}),
+					q(8627, {	-- Avenger's Breastplate
+						["qg"] = 15504,	-- Vethsera
+						["minReputation"] = { 910, HONORED },	-- Brood of Nozdormu, Honored.
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 20929, 1 },	-- Carapace of the Old God
+							{ "i", 20877, 2 },	-- Idol of the Sage
+							{ "i", 20860, 5 },	-- Silver Scarab
+							{ "i", 20864, 5 },	-- Bone Scarab
+						},
+						["groups"] = {
+							i(21389),	-- Avenger's Breastplate
+						},
+					}),
+					q(8629, {	-- Avenger's Legguards
+						["qg"] = 15503,	-- Kandrostrasz
+						["minReputation"] = { 910, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 20931, 1 },	-- Skin of the Great Sandworm
+							{ "i", 20881, 2 },	-- Idol of Strife
+							{ "i", 20865, 5 },	-- Ivory Scarab
+							{ "i", 20861, 5 },	-- Bronze Scarab
+						},
+						["groups"] = {
+							i(21390),	-- Avenger's Legguards
+						},
+					}),
+					q(8655, {	-- Avenger's Greaves
+						["qg"] = 15503,	-- Kandrostrasz
+						["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 20932, 1 },	-- Qiraji Bindings of Dominance
+							{ "i", 20877, 2 },	-- Idol of the Sage
+							{ "i", 20861, 5 },	-- Bronze Scarab
+							{ "i", 20863, 5 },	-- Clay Scarab
+						},
+						["groups"] = {
+							i(21388),	-- Avenger's Greaves
+						},
+					}),
+				})),
+				cl(PRIEST, bubbleDown({ ["classes"] = { PRIEST } }, {
+					q(8592, {	-- Tiara of the Oracle
+						["qg"] = 15502,	-- Andorgos
+						["minReputation"] = { 910, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 20926, 1 },	-- Vek'nilash's Circlet
+							{ "i", 20877, 2 },	-- Idol of the Sage
+							{ "i", 20860, 5 },	-- Silver Scarab
+							{ "i", 20864, 5 },	-- Bone Scarab
+						},
+						["groups"] = {
+							i(21348),	-- Tiara of the Oracle
+						},
+					}),
+					q(8594, {	-- Mantle of the Oracle
+						["qg"] = 15502,	-- Andorgos
+						["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 20928, 1 },	-- Qiraji Bindings of Command
+							{ "i", 20878, 2 },	-- Idol of Rebirth
+							{ "i", 20860, 5 },	-- Silver Scarab
+							{ "i", 20865, 5 },	-- Ivory Scarab
+						},
+						["groups"] = {
+							i(21350),	-- Mantle of the Oracle
+						},
+					}),
+					q(8603, {	-- Vestments of the Oracle
+						["qg"] = 15504,	-- Vethsera
+						["minReputation"] = { 910, HONORED },	-- Brood of Nozdormu, Honored.
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 20933, 1 },	-- Husk of the Old God
+							{ "i", 20876, 2 },	-- Idol of Death
+							{ "i", 20858, 5 },	-- Stone Scarab
+							{ "i", 20862, 5 },	-- Crystal Scarab
+						},
+						["groups"] = {
+							i(21351),	-- Vestments of the Oracle
+						},
+					}),
+					q(8593, {	-- Trousers of the Oracle
+						["qg"] = 15503,	-- Kandrostrasz
+						["minReputation"] = { 910, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 20927, 1 },	-- Ouro's Intact Hide
+							{ "i", 20879, 2 },	-- Idol of Life
+							{ "i", 20859, 5 },	-- Gold Scarab
+							{ "i", 20863, 5 },	-- Clay Scarab
+						},
+						["groups"] = {
+							i(21352),	-- Trousers of the Oracle
+						},
+					}),
+					q(8596, {	-- Footwraps of the Oracle
+						["qg"] = 15503,	-- Kandrostrasz
+						["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 20928, 1 },	-- Qiraji Bindings of Command
+							{ "i", 20876, 2 },	-- Idol of Death
+							{ "i", 20861, 5 },	-- Bronze Scarab
+							{ "i", 20859, 5 },	-- Gold Scarab
+						},
+						["groups"] = {
+							i(21349),	-- Footwraps of the Oracle
+						},
+					}),
+				})),
+				cl(ROGUE, bubbleDown({ ["classes"] = { ROGUE } }, {
+					q(8639, {	-- Deathdealer's Helm
+						["qg"] = 15502,	-- Andorgos
+						["minReputation"] = { 910, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 20930, 1 },	-- Vek'lor's Diadem
+							{ "i", 20882, 2 },	-- Idol of War
+							{ "i", 20863, 5 },	-- Clay Scarab
+							{ "i", 20859, 5 },	-- Gold Scarab
+						},
+						["groups"] = {
+							i(21360),	-- Deathdealer's Helm
+						},
+					}),
+					q(8641, {	-- Deathdealer's Spaulders
+						["qg"] = 15502,	-- Andorgos
+						["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 20928, 1 },	-- Qiraji Bindings of Command
+							{ "i", 20874, 2 },	-- Idol of the Sun
+							{ "i", 20860, 5 },	-- Silver Scarab
+							{ "i", 20863, 5 },	-- Clay Scarab
+						},
+						["groups"] = {
+							i(21361),	-- Deathdealer's Spaulders
+						},
+					}),
+					q(8638, {	-- Deathdealer's Vest
+						["qg"] = 15504,	-- Vethsera
+						["minReputation"] = { 910, HONORED },	-- Brood of Nozdormu, Honored.
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 20929, 1 },	-- Carapace of the Old God
+							{ "i", 20881, 2 },	-- Idol of Strife
+							{ "i", 20861, 5 },	-- Bronze Scarab
+							{ "i", 20865, 5 },	-- Ivory Scarab
+						},
+						["groups"] = {
+							i(21364),	-- Deathdealer's Vest
+						},
+					}),
+					q(8640, {	-- Deathdealer's Leggings
+						["qg"] = 15503,	-- Kandrostrasz
+						["minReputation"] = { 910, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 20927, 1 },	-- Ouro's Intact Hide
+							{ "i", 20875, 2 },	-- Idol of Night
+							{ "i", 20858, 5 },	-- Stone Scarab
+							{ "i", 20862, 5 },	-- Crystal Scarab
+						},
+						["groups"] = {
+							i(21362),	-- Deathdealer's Leggings
+						},
+					}),
+					q(8637, {	-- Deathdealer's Boots
+						["qg"] = 15503,	-- Kandrostrasz
+						["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 20928, 1 },	-- Qiraji Bindings of Command
+							{ "i", 20881, 2 },	-- Idol of Strife
+							{ "i", 20862, 5 },	-- Crystal Scarab
+							{ "i", 20864, 5 },	-- Bone Scarab
+						},
+						["groups"] = {
+							i(21359),	-- Deathdealer's Boots
+						},
+					}),
+				})),
+				cl(SHAMAN, bubbleDown({ ["classes"] = { SHAMAN } }, {
+					q(8623, {	-- Stormcaller's Diadem
+						["qg"] = 15502,	-- Andorgos
+						["minReputation"] = { 910, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 20930, 1 },	-- Vek'lor's Diadem
+							{ "i", 20878, 2 },	-- Idol of Rebirth
+							{ "i", 20858, 5 },	-- Stone Scarab
+							{ "i", 20862, 5 },	-- Crystal Scarab
+						},
+						["groups"] = {
+							i(21372),	-- Stormcaller's Diadem
+						},
+					}),
+					q(8602, {	-- Stormcaller's Pauldrons
+						["qg"] = 15502,	-- Andorgos
+						["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 20932, 1 },	-- Qiraji Bindings of Dominance
+							{ "i", 20879, 2 },	-- Idol of Life
+							{ "i", 20859, 5 },	-- Gold Scarab
+							{ "i", 20862, 5 },	-- Crystal Scarab
+						},
+						["groups"] = {
+							i(21376),	-- Stormcaller's Pauldrons
+						},
+					}),
+					q(8622, {	-- Stormcaller's Hauberk
+						["qg"] = 15504,	-- Vethsera
+						["minReputation"] = { 910, HONORED },	-- Brood of Nozdormu, Honored.
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 20929, 1 },	-- Carapace of the Old God
+							{ "i", 20877, 2 },	-- Idol of the Sage
+							{ "i", 20860, 5 },	-- Silver Scarab
+							{ "i", 20864, 5 },	-- Bone Scarab
+						},
+						["groups"] = {
+							i(21374),	-- Stormcaller's Hauberk
+						},
+					}),
+					q(8624, {	-- Stormcaller's Leggings
+						["qg"] = 15503,	-- Kandrostrasz
+						["minReputation"] = { 910, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 20931, 1 },	-- Skin of the Great Sandworm
+							{ "i", 20881, 2 },	-- Idol of Strife
+							{ "i", 20865, 5 },	-- Ivory Scarab
+							{ "i", 20861, 5 },	-- Bronze Scarab
+						},
+						["groups"] = {
+							i(21375),	-- Stormcaller's Leggings
+						},
+					}),
+					q(8621, {	-- Stormcaller's Footguards
+						["qg"] = 15503,	-- Kandrostrasz
+						["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 20932, 1 },	-- Qiraji Bindings of Dominance
+							{ "i", 20877, 2 },	-- Idol of the Sage
+							{ "i", 20861, 5 },	-- Bronze Scarab
+							{ "i", 20863, 5 },	-- Clay Scarab
+						},
+						["groups"] = {
+							i(21373),	-- Stormcaller's Footguards
+						},
+					}),
+				})),
+				cl(WARLOCK, bubbleDown({ ["classes"] = { WARLOCK } }, {
+					q(8662, {	-- Doomcaller's Circlet
+						["qg"] = 15502,	-- Andorgos
+						["minReputation"] = { 910, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 20926, 1 },	-- Vek'nilash's Circlet
+							{ "i", 20876, 2 },	-- Idol of Death
+							{ "i", 20860, 5 },	-- Silver Scarab
+							{ "i", 20864, 5 },	-- Bone Scarab
+						},
+						["groups"] = {
+							i(21337),	-- Doomcaller's Circlet
+						},
+					}),
+					q(8664, {	-- Doomcaller's Mantle
+						["qg"] = 15502,	-- Andorgos
+						["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 20932, 1 },	-- Qiraji Bindings of Dominance
+							{ "i", 20877, 2 },	-- Idol of the Sage
+							{ "i", 20861, 5 },	-- Bronze Scarab
+							{ "i", 20864, 5 },	-- Bone Scarab
+						},
+						["groups"] = {
+							i(21335),	-- Doomcaller's Mantle
+						},
+					}),
+					q(8661, {	-- Doomcaller's Robes
+						["qg"] = 15504,	-- Vethsera
+						["minReputation"] = { 910, HONORED },	-- Brood of Nozdormu, Honored.
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 20933, 1 },	-- Husk of the Old God
+							{ "i", 20875, 2 },	-- Idol of Night
+							{ "i", 20862, 5 },	-- Crystal Scarab
+							{ "i", 20858, 5 },	-- Stone Scarab
+						},
+						["groups"] = {
+							i(21334),	-- Doomcaller's Robes
+						},
+					}),
+					q(8663, {	-- Doomcaller's Trousers
+						["qg"] = 15503,	-- Kandrostrasz
+						["minReputation"] = { 910, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 20931, 1 },	-- Skin of the Great Sandworm
+							{ "i", 20878, 2 },	-- Idol of Rebirth
+							{ "i", 20859, 5 },	-- Gold Scarab
+							{ "i", 20863, 5 },	-- Clay Scarab
+						},
+						["groups"] = {
+							i(21336),	-- Doomcaller's Trousers
+						},
+					}),
+					q(8660, {	-- Doomcaller's Footwraps
+						["qg"] = 15503,	-- Kandrostrasz
+						["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 20932, 1 },	-- Qiraji Bindings of Dominance
+							{ "i", 20875, 2 },	-- Idol of Night
+							{ "i", 20863, 5 },	-- Clay Scarab
+							{ "i", 20865, 5 },	-- Ivory Scarab
+						},
+						["groups"] = {
+							i(21338),	-- Doomcaller's Footwraps
+						},
+					}),
+				})),
+				cl(WARRIOR, bubbleDown({ ["classes"] = { WARRIOR } }, {
+					q(8561, {	-- Conqueror's Crown
+						["qg"] = 15502,	-- Andorgos
+						["minReputation"] = { 910, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 20926, 1 },	-- Vek'nilash's Circlet
+							{ "i", 20874, 2 },	-- Idol of the Sun
+							{ "i", 20862, 5 },	-- Crystal Scarab
+							{ "i", 20858, 5 },	-- Stone Scarab
+						},
+						["groups"] = {
+							i(21329),	-- Conqueror's Crown
+						},
+					}),
+					q(8544, {	-- Conqueror's Spaulders
+						["qg"] = 15502,	-- Andorgos
+						["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 20928, 1 },	-- Qiraji Bindings of Command
+							{ "i", 20875, 2 },	-- Idol of Night
+							{ "i", 20863, 5 },	-- Clay Scarab
+							{ "i", 20858, 5 },	-- Stone Scarab
+						},
+						["groups"] = {
+							i(21330),	-- Conqueror's Spaulders
+						},
+					}),
+					q(8562, {	-- Conqueror's Breastplate
+						["qg"] = 15504,	-- Vethsera
+						["minReputation"] = { 910, HONORED },	-- Brood of Nozdormu, Honored.
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 20929, 1 },	-- Carapace of the Old God
+							{ "i", 20882, 2 },	-- Idol of War
+							{ "i", 20860, 5 },	-- Silver Scarab
+							{ "i", 20864, 5 },	-- Bone Scarab
+						},
+						["groups"] = {
+							i(21331),	-- Conqueror's Breastplate
+						},
+					}),
+					q(8560, {	-- Conqueror's Legguards
+						["qg"] = 15503,	-- Kandrostrasz
+						["minReputation"] = { 910, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 20927, 1 },	-- Ouro's Intact Hide
+							{ "i", 20876, 2 },	-- Idol of Death
+							{ "i", 20861, 5 },	-- Bronze Scarab
+							{ "i", 20865, 5 },	-- Ivory Scarab
+						},
+						["groups"] = {
+							i(21332),	-- Conqueror's Legguards
+						},
+					}),
+					q(8559, {	-- Conqueror's Greaves
+						["qg"] = 15503,	-- Kandrostrasz
+						["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 20928, 1 },	-- Qiraji Bindings of Command
+							{ "i", 20882, 2 },	-- Idol of War
+							{ "i", 20865, 5 },	-- Ivory Scarab
+							{ "i", 20859, 5 },	-- Gold Scarab
+						},
+						["groups"] = {
+							i(21333),	-- Conqueror's Greaves
+						},
+					}),
+				})),
+				q(8801, {	-- C'Thun's Legacy
+					["provider"] = { "i", 21221 },	-- Eye of C'Thun
+				}),
+				q(8789, {	-- Imperial Qiraji Armaments
+					["qg"] = 15380,		-- Arygos
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 21232, 1 },	-- Imperial Qiraji Armaments
+						{ "i", 18562, 3 },	-- Elementium Ore
+					},
+					["groups"] = {
+						i(21242),	-- Blessed Qiraji War Axe
+						i(21272),	-- Blessed Qiraji Musket
+						i(21244),	-- Blessed Qiraji Pugio
+						i(21269),	-- Blessed Qiraji Bulwark
+					},
+				}),
+				q(8790, {	-- Imperial Qiraji Regalia
+					["qg"] = 15378,		-- Quest Giver: Merithra of the Dream
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 21237, 1 },	-- Imperial Qiraji Regalia
+						{ "i", 18562, 3 },	-- Elementium Ore
+					},
+					["groups"] = {
+						i(21273),	-- Blessed Qiraji Acolyte Staff
+						i(21275),	-- Blessed Qiraji Augur Staff
+						i(21268),	-- Blessed Qiraji War Hammer
+					},
+				}),
+				q(8579, {	-- Mortal Champions
+					["qg"] = 15503,	-- Kandrostrasz
+					["cost"] = {
+						{ "i", 21229, 1 },	-- Qiraji Lord's Insignia
+					},
+				}),
+				q(8595, {	-- Mortal Champions
+					["qg"] = 15503,	-- Kandrostrasz
+					["sourceQuest"] = 8579,	-- Mortal Champions
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 21229, 1 },	-- Qiraji Lord's Insignia
+					},
+				}),
+				q(8784, {	-- Secrets of the Qiraji
+					["qg"] = 15503,	-- Kandrostrasz
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 21230, 1 },	-- Ancient Qiraji Artifact
+					},
+				}),
+				q(8766, {	-- The Changing of Paths - Conqueror No More
+					["qg"] = 15192,	-- Anachronos
+					["sourceQuest"] = 8756,	-- The Qiraji Conqueror
+					["minReputation"] = { 910, EXALTED },	-- Brood of Nozdormu, Exalted.
+					["coord"] = ANACHRONOS_COORD,
+					["maps"] = { CAVERNS_OF_TIME },
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 21205, 1 },	-- Signet Ring of the Bronze Dragonflight
+						{ "i", 20864, 15 },	-- Bone Scarab
+						{ "i", 20865, 15 },	-- Ivory Scarab
+						{ "i", 20858, 15 },	-- Stone Scarab
+					},
+					["lvl"] = 60,
+					["groups"] = {
+						i(21200),	-- Signet Ring of the Bronze Dragonflight
+						i(21210),	-- Signet Ring of the Bronze Dragonflight
+					},
+				}),
+				q(8765, {	-- The Changing of Paths - Invoker No More
+					["qg"] = 15192,	-- Anachronos
+					["sourceQuest"] = 8761,	-- The Grand Invoker
+					["minReputation"] = { 910, EXALTED },	-- Brood of Nozdormu, Exalted.
+					["coord"] = ANACHRONOS_COORD,
+					["maps"] = { CAVERNS_OF_TIME },
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 21210, 1 },	-- Signet Ring of the Bronze Dragonflight
+						{ "i", 20861, 15 },	-- Bronze Scarab
+						{ "i", 20862, 15 },	-- Crystal Scarab
+						{ "i", 20863, 15 },	-- Clay Scarab
+					},
+					["lvl"] = 60,
+					["groups"] = {
+						i(21200),	-- Signet Ring of the Bronze Dragonflight
+						i(21205),	-- Signet Ring of the Bronze Dragonflight
+					},
+				}),
+				q(8764, {	-- The Changing of Paths - Protector No More
+					["qg"] = 15192,	-- Anachronos
+					["sourceQuest"] = 8751,	-- The Protector of Kalimdor
+					["minReputation"] = { 910, EXALTED },	-- Brood of Nozdormu, Exalted.
+					["coord"] = ANACHRONOS_COORD,
+					["maps"] = { CAVERNS_OF_TIME },
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 21200, 1 },	-- Signet Ring of the Bronze Dragonflight
+						{ "i", 20858, 15 },	-- Stone Scarab
+						{ "i", 20859, 15 },	-- Gold Scarab
+						{ "i", 20860, 15 },	-- Silver Scarab
+					},
+					["lvl"] = 60,
+					["groups"] = {
+						i(21210),	-- Signet Ring of the Bronze Dragonflight
+						i(21205),	-- Signet Ring of the Bronze Dragonflight
+					},
+				}),
+				q(8761, {	-- The Grand Invoker
+					["qg"] = 15192,	-- Anachronos
+					["sourceQuest"] = 8760,	-- The Path of the Invoker (4/4)
+					["minReputation"] = { 910, EXALTED },	-- Brood of Nozdormu, Exalted.
+					["coord"] = ANACHRONOS_COORD,
+					["maps"] = { CAVERNS_OF_TIME },
+					["altQuests"] = {
+						8756,	-- The Qiraji Conqueror
+						8751,	-- The Protector of Kalimdor
+					},
+					["lvl"] = 60,
+					["groups"] = {
+						objective(1, {	-- 0/1 Signet Ring of the Bronze Dragonflight
+							["provider"] = { "i", 21209 },	-- Signet Ring of the Bronze Dragonflight
+						}),
+						i(21210),	-- Signet Ring of the Bronze Dragonflight
+					},
+				}),
+				q(8752, {	-- The Path of the Conqueror (1/4)
+					["qg"] = 15192,	-- Anachronos
+					["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+					["coord"] = ANACHRONOS_COORD,
+					["maps"] = { CAVERNS_OF_TIME },
+					["altQuests"] = {
+						8757,	-- The Path of the Invoker (1/4)
+						8747,	-- The Path of the Protector (1/4)
+					},
+					["lvl"] = 60,
+					["groups"] = {
+						i(21201),	-- Signet Ring of the Bronze Dragonflight
+					},
+				}),
+				q(8753, {	-- The Path of the Conqueror (2/4)
+					["qg"] = 15192,	-- Anachronos
+					["sourceQuest"] = 8752,	-- The Path of the Conqueror (1/4)
+					["minReputation"] = { 910, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+					["coord"] = ANACHRONOS_COORD,
+					["maps"] = { CAVERNS_OF_TIME },
+					["altQuests"] = {
+						8758,	-- The Path of the Invoker (2/4)
+						8748,	-- The Path of the Protector (2/4)
+					},
+					["lvl"] = 60,
+					["groups"] = {
+						objective(1, {	-- 0/1 Signet Ring of the Bronze Dragonflight
+							["provider"] = { "i", 21201 },	-- Signet Ring of the Bronze Dragonflight
+						}),
+						i(21202),	-- Signet Ring of the Bronze Dragonflight
+					},
+				}),
+				q(8754, {	-- The Path of the Conqueror (3/4)
+					["qg"] = 15192,	-- Anachronos
+					["sourceQuest"] = 8753,	-- The Path of the Conqueror (2/4)
+					["minReputation"] = { 910, HONORED },	-- Brood of Nozdormu, Honored.
+					["coord"] = ANACHRONOS_COORD,
+					["maps"] = { CAVERNS_OF_TIME },
+					["altQuests"] = {
+						8759,	-- The Path of the Invoker (3/4)
+						8749,	-- The Path of the Protector (3/4)
+					},
+					["lvl"] = 60,
+					["groups"] = {
+						objective(1, {	-- 0/1 Signet Ring of the Bronze Dragonflight
+							["provider"] = { "i", 21202 },	-- Signet Ring of the Bronze Dragonflight
+						}),
+						i(21203),	-- Signet Ring of the Bronze Dragonflight
+					},
+				}),
+				q(8755, {	-- The Path of the Conqueror (4/4)
+					["qg"] = 15192,	-- Anachronos
+					["sourceQuest"] = 8754,	-- The Path of the Conqueror (3/4)
+					["minReputation"] = { 910, REVERED },	-- Brood of Nozdormu, Revered.
+					["coord"] = ANACHRONOS_COORD,
+					["maps"] = { CAVERNS_OF_TIME },
+					["altQuests"] = {
+						8760,	-- The Path of the Invoker (4/4)
+						8750,	-- The Path of the Protector (4/4)
+					},
+					["lvl"] = 60,
+					["groups"] = {
+						objective(1, {	-- 0/1 Signet Ring of the Bronze Dragonflight
+							["provider"] = { "i", 21203 },	-- Signet Ring of the Bronze Dragonflight
+						}),
+						i(21204),	-- Signet Ring of the Bronze Dragonflight
+					},
+				}),
+				q(8757, {	-- The Path of the Invoker (1/4)
+					["qg"] = 15192,	-- Anachronos
+					["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+					["coord"] = ANACHRONOS_COORD,
+					["maps"] = { CAVERNS_OF_TIME },
+					["altQuests"] = {
+						8752,	-- The Path of the Conqueror (1/4)
+						8747,	-- The Path of the Protector (1/4)
+					},
+					["lvl"] = 60,
+					["groups"] = {
+						i(21206),	-- Signet Ring of the Bronze Dragonflight
+					},
+				}),
+				q(8758, {	-- The Path of the Invoker (2/4)
+					["qg"] = 15192,	-- Anachronos
+					["sourceQuest"] = 8757,	-- The Path of the Invoker (1/4)
+					["minReputation"] = { 910, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+					["coord"] = ANACHRONOS_COORD,
+					["maps"] = { CAVERNS_OF_TIME },
+					["altQuests"] = {
+						8753,	-- The Path of the Conqueror (2/4)
+						8748,	-- The Path of the Protector (2/4)
+					},
+					["lvl"] = 60,
+					["groups"] = {
+						objective(1, {	-- 0/1 Signet Ring of the Bronze Dragonflight
+							["provider"] = { "i", 21206 },	-- Signet Ring of the Bronze Dragonflight
+						}),
+						i(21207),	-- Signet Ring of the Bronze Dragonflight
+					},
+				}),
+				q(8759, {	-- The Path of the Invoker (3/4)
+					["qg"] = 15192,	-- Anachronos
+					["sourceQuest"] = 8758,	-- The Path of the Invoker (2/4)
+					["minReputation"] = { 910, HONORED },	-- Brood of Nozdormu, Honored.
+					["coord"] = ANACHRONOS_COORD,
+					["maps"] = { CAVERNS_OF_TIME },
+					["altQuests"] = {
+						8754,	-- The Path of the Conqueror (3/4)
+						8749,	-- The Path of the Protector (3/4)
+					},
+					["lvl"] = 60,
+					["groups"] = {
+						objective(1, {	-- 0/1 Signet Ring of the Bronze Dragonflight
+							["provider"] = { "i", 21207 },	-- Signet Ring of the Bronze Dragonflight
+						}),
+						i(21208),	-- Signet Ring of the Bronze Dragonflight
+					},
+				}),
+				q(8760, {	-- The Path of the Invoker (4/4)
+					["qg"] = 15192,	-- Anachronos
+					["sourceQuest"] = 8759,	-- The Path of the Invoker (3/4)
+					["minReputation"] = { 910, REVERED },	-- Brood of Nozdormu, Revered.
+					["coord"] = ANACHRONOS_COORD,
+					["maps"] = { CAVERNS_OF_TIME },
+					["altQuests"] = {
+						8755,	-- The Path of the Conqueror (4/4)
+						8750,	-- The Path of the Protector (4/4)
+					},
+					["lvl"] = 60,
+					["groups"] = {
+						objective(1, {	-- 0/1 Signet Ring of the Bronze Dragonflight
+							["provider"] = { "i", 21208 },	-- Signet Ring of the Bronze Dragonflight
+						}),
+						i(21209),	-- Signet Ring of the Bronze Dragonflight
+					},
+				}),
+				q(8747, {	-- The Path of the Protector (1/4)
+					["qg"] = 15192,	-- Anachronos
+					["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral.
+					["coord"] = ANACHRONOS_COORD,
+					["maps"] = { CAVERNS_OF_TIME },
+					["altQuests"] = {
+						8752,	-- The Path of the Conqueror (1/4)
+						8757,	-- The Path of the Invoker (1/4)
+					},
+					["lvl"] = 60,
+					["groups"] = {
+						i(21196),	-- Signet Ring of the Bronze Dragonflight
+					},
+				}),
+				q(8748, {	-- The Path of the Protector (2/4)
+					["qg"] = 15192,	-- Anachronos
+					["sourceQuest"] = 8747,	-- The Path of the Protector (1/4)
+					["minReputation"] = { 910, FRIENDLY },	-- Brood of Nozdormu, Friendly.
+					["coord"] = ANACHRONOS_COORD,
+					["maps"] = { CAVERNS_OF_TIME },
+					["altQuests"] = {
+						8753,	-- The Path of the Conqueror (2/4)
+						8758,	-- The Path of the Invoker (2/4)
+					},
+					["lvl"] = 60,
+					["groups"] = {
+						objective(1, {	-- 0/1 Signet Ring of the Bronze Dragonflight
+							["provider"] = { "i", 21196 },	-- Signet Ring of the Bronze Dragonflight
+						}),
+						i(21197),	-- Signet Ring of the Bronze Dragonflight
+					},
+				}),
+				q(8749, {	-- The Path of the Protector (3/4)
+					["qg"] = 15192,	-- Anachronos
+					["sourceQuest"] = 8748,	-- The Path of the Protector (2/4)
+					["minReputation"] = { 910, HONORED },	-- Brood of Nozdormu, Honored.
+					["coord"] = ANACHRONOS_COORD,
+					["maps"] = { CAVERNS_OF_TIME },
+					["altQuests"] = {
+						8754,	-- The Path of the Conqueror (3/4)
+						8759,	-- The Path of the Invoker (3/4)
+					},
+					["lvl"] = 60,
+					["groups"] = {
+						objective(1, {	-- 0/1 Signet Ring of the Bronze Dragonflight
+							["provider"] = { "i", 21197 },	-- Signet Ring of the Bronze Dragonflight
+						}),
+						i(21198),	-- Signet Ring of the Bronze Dragonflight
+					},
+				}),
+				q(8750, {	-- The Path of the Protector (4/4)
+					["qg"] = 15192,	-- Anachronos
+					["sourceQuest"] = 8749,	-- The Path of the Protector (3/4)
+					["minReputation"] = { 910, REVERED },	-- Brood of Nozdormu, Revered.
+					["coord"] = ANACHRONOS_COORD,
+					["maps"] = { CAVERNS_OF_TIME },
+					["altQuests"] = {
+						8755,	-- The Path of the Conqueror (4/4)
+						8760,	-- The Path of the Invoker (4/4)
+					},
+					["lvl"] = 60,
+					["groups"] = {
+						objective(1, {	-- 0/1 Signet Ring of the Bronze Dragonflight
+							["provider"] = { "i", 21198 },	-- Signet Ring of the Bronze Dragonflight
+						}),
+						i(21199),	-- Signet Ring of the Bronze Dragonflight
+					},
+				}),
+				q(8751, {	-- The Protector of Kalimdor
+					["qg"] = 15192,	-- Anachronos
+					["sourceQuest"] = 8750,	-- The Path of the Protector (4/4)
+					["minReputation"] = { 910, EXALTED },	-- Brood of Nozdormu, Exalted.
+					["coord"] = ANACHRONOS_COORD,
+					["maps"] = { CAVERNS_OF_TIME },
+					["altQuests"] = {
+						8761,	-- The Grand Invoker
+						8756,	-- The Qiraji Conqueror
+					},
+					["lvl"] = 60,
+					["groups"] = {
+						objective(1, {	-- 0/1 Signet Ring of the Bronze Dragonflight
+							["provider"] = { "i", 21199 },	-- Signet Ring of the Bronze Dragonflight
+						}),
+						i(21200),	-- Signet Ring of the Bronze Dragonflight
+					},
+				}),
+				q(8756, {	-- The Qiraji Conqueror
+					["qg"] = 15192,	-- Anachronos
+					["sourceQuest"] = 8755,	-- The Path of the Conqueror (4/4)
+					["minReputation"] = { 910, EXALTED },	-- Brood of Nozdormu, Exalted.
+					["coord"] = ANACHRONOS_COORD,
+					["maps"] = { CAVERNS_OF_TIME },
+					["altQuests"] = {
+						8761,	-- The Grand Invoker
+						8751,	-- The Protector of Kalimdor
+					},
+					["lvl"] = 60,
+					["groups"] = {
+						objective(1, {	-- 0/1 Signet Ring of the Bronze Dragonflight
+							["provider"] = { "i", 21203 },	-- Signet Ring of the Bronze Dragonflight
+						}),
+						i(21205),	-- Signet Ring of the Bronze Dragonflight
+					},
+				}),
+				q(8802, {	-- The Savior of Kalimdor
+					["provider"] = { "i", 21221 },	-- Eye of C'Thun
+					["sourceQuest"] = 8801,	-- C'Thun's Legacy
+					["groups"] = {
+						i(21712),	-- Amulet of the Fallen God
+						i(21710),	-- Cloak of the Fallen God
+						i(21709),	-- Ring of the Fallen God
+					},
+				}),
 			}),
-			n(COMMON_BOSS_DROPS, {
-				filter(200, {	-- Recipes
-					["crs"] = {
-						15516,	-- Battleguard Sartura
-						15510,	-- Fankriss the Unyielding
-						15511,	-- Lord Kri
-						15517,	-- Ouro
-						15509,	-- Princess Huhuran
-						15543,	-- Princess Yauj
-						15263,	-- The Prophet Skeram
-						15544,	-- Vem
-						15299,	-- Viscidus
-					},
-					["g"] = {
-						i(20736),	-- Formula: Enchant Cloak - Dodge
-						i(20734),	-- Formula: Enchant Cloak - Stealth
-						i(20729),	-- Formula: Enchant Gloves - Fire Power
-						i(20728),	-- Formula: Enchant Gloves - Frost Power
-						i(20730),	-- Formula: Enchant Gloves - Healing Power
-						i(20727),	-- Formula: Enchant Gloves - Shadow Power
-						i(20731),	-- Formula: Enchant Gloves - Superior Agility
-					},
-				}),
-				i(21232, {	-- Imperial Qiraji Armaments
-					["crs"] = {
-						15510,	-- Fankriss the Unyielding
-						15516,	-- Battleguard Sartura
-						15509,	-- Princess Huhuran
-						15275,	-- Emperor Vek'nilash
-						15276,	-- Emperor Vek'lor
-						15544,	-- Vem
-						15511,	-- Lord Kri
-						15517,	-- Ouro
-						15543,	-- Princess Yauj
-						15299,	-- Viscidus
-					},
-				}),
-				i(21237, {	-- Imperial Qiraji Regalia
-					["crs"] = {
-						15510,	-- Fankriss the Unyielding
-						15516,	-- Battleguard Sartura
-						15509,	-- Princess Huhuran
-						15275,	-- Emperor Vek'nilash
-						15276,	-- Emperor Vek'lor
-						15544,	-- Vem
-						15511,	-- Lord Kri
-						15517,	-- Ouro
-						15543,	-- Princess Yauj
-						15299,	-- Viscidus
-					},
-				}),
-				i(76402, {	-- Greater Scarab Coffer Key
-					["timeline"] = {
-						"added 4.3.0.15005"
-					},
-					["crs"] = {
-						15516,	-- Battleguard Sartura
-						15727,	-- C'Thun
-						15276,	-- Emperor Vek'lor
-						15275,	-- Emperor Vek'nilash
-						15510,	-- Fankriss the Unyielding
-						15511,	-- Lord Kri
-						15517,	-- Ouro
-						15509,	-- Princess Huhuran
-						15543,	-- Princess Yauj
-						15263,	-- The Prophet Skeram
-						15544,	-- Vem
-						15299,	-- Viscidus
-					},
-				}),
-				i(21229, {	-- Qiraji Lord's Insignia
-					["crs"] = {
-						15516,	-- Battleguard Sartura
-						15276,	-- Emperor Vek'lor
-						15275,	-- Emperor Vek'nilash
-						15510,	-- Fankriss the Unyielding
-						15511,	-- Lord Kri
-						15517,	-- Ouro
-						15509,	-- Princess Huhuran
-						15543,	-- Princess Yauj
-						15263,	-- The Prophet Skeram
-						15544,	-- Vem
-						15299,	-- Viscidus
-					},
-				}),
+			filter(200, {	-- Recipes
+				["crs"] = {
+					15516,	-- Battleguard Sartura
+					15510,	-- Fankriss the Unyielding
+					15511,	-- Lord Kri
+					15517,	-- Ouro
+					15509,	-- Princess Huhuran
+					15543,	-- Princess Yauj
+					15263,	-- The Prophet Skeram
+					15544,	-- Vem
+					15299,	-- Viscidus
+				},
+				["groups"] = {
+					i(20736),	-- Formula: Enchant Cloak - Dodge
+					i(20734),	-- Formula: Enchant Cloak - Stealth
+					i(20729),	-- Formula: Enchant Gloves - Fire Power
+					i(20728),	-- Formula: Enchant Gloves - Frost Power
+					i(20730),	-- Formula: Enchant Gloves - Healing Power
+					i(20727),	-- Formula: Enchant Gloves - Shadow Power
+					i(20731),	-- Formula: Enchant Gloves - Superior Agility
+				},
 			}),
 			n(ZONEDROPS, {
 				i(21218),	-- Blue Qiraji Resonating Crystal
@@ -1289,17 +1199,77 @@ _.Instances = { tier(1, {	-- Classic
 						"deleted 4.2.2.28211"
 					},
 				}),
-				i(21156, {	-- Scarab Bag
-					["description"] = "Contains a couple of random scarabs.",
+			}),
+			n(COMMON_BOSS_DROPS, {
+				i(21232, {	-- Imperial Qiraji Armaments
+					["crs"] = {
+						15510,	-- Fankriss the Unyielding
+						15516,	-- Battleguard Sartura
+						15509,	-- Princess Huhuran
+						15275,	-- Emperor Vek'nilash
+						15276,	-- Emperor Vek'lor
+						15544,	-- Vem
+						15511,	-- Lord Kri
+						15517,	-- Ouro
+						15543,	-- Princess Yauj
+						15299,	-- Viscidus
+					},
+				}),
+				i(21237, {	-- Imperial Qiraji Regalia
+					["crs"] = {
+						15510,	-- Fankriss the Unyielding
+						15516,	-- Battleguard Sartura
+						15509,	-- Princess Huhuran
+						15275,	-- Emperor Vek'nilash
+						15276,	-- Emperor Vek'lor
+						15544,	-- Vem
+						15511,	-- Lord Kri
+						15517,	-- Ouro
+						15543,	-- Princess Yauj
+						15299,	-- Viscidus
+					},
+				}),
+				applyclassicphase(CATA_PHASE_ONE, i(76402, {	-- Greater Scarab Coffer Key
+					["timeline"] = {
+						"added 4.3.0.15005"
+					},
+					["crs"] = {
+						15516,	-- Battleguard Sartura
+						15727,	-- C'Thun
+						15276,	-- Emperor Vek'lor
+						15275,	-- Emperor Vek'nilash
+						15510,	-- Fankriss the Unyielding
+						15511,	-- Lord Kri
+						15517,	-- Ouro
+						15509,	-- Princess Huhuran
+						15543,	-- Princess Yauj
+						15263,	-- The Prophet Skeram
+						15544,	-- Vem
+						15299,	-- Viscidus
+					},
+				})),
+				i(21229, {	-- Qiraji Lord's Insignia
+					["crs"] = {
+						15516,	-- Battleguard Sartura
+						15276,	-- Emperor Vek'lor
+						15275,	-- Emperor Vek'nilash
+						15510,	-- Fankriss the Unyielding
+						15511,	-- Lord Kri
+						15517,	-- Ouro
+						15509,	-- Princess Huhuran
+						15543,	-- Princess Yauj
+						15263,	-- The Prophet Skeram
+						15544,	-- Vem
+						15299,	-- Viscidus
+					},
 				}),
 			}),
 			o(180690, {	-- Large Scarab Coffer
 				["cost"] = {
-					{ "i", 21762, 1 },	-- Greater Scarab Coffer Key [pre-4.3]
-					{ "i", 76402, 1 },	-- Greater Scarab Coffer Key [4.3]
+					{ "i", 21762, 1, PHASE_ONE },	-- Greater Scarab Coffer Key [pre-4.3]
+					{ "i", 76402, 1, CATA_PHASE_ONE },	-- Greater Scarab Coffer Key [4.3]
 				},
-				["g"] = {
-					i(21156),	-- Scarab Bag
+				["groups"] = {
 					i(20876),	-- Idol of Death
 					i(20879),	-- Idol of Life
 					i(20875),	-- Idol of Night
@@ -1308,13 +1278,15 @@ _.Instances = { tier(1, {	-- Classic
 					i(20877),	-- Idol of the Sage
 					i(20874),	-- Idol of the Sun
 					i(20882),	-- Idol of War
+					i(21156, {	-- Scarab Bag
+						["description"] = "Contains a couple of random scarabs.",
+					}),
 				},
 			}),
 			e(1543, {	-- The Prophet Skeram
 				["creatureID"] = 15263,
-				["g"] = {
+				["groups"] = {
 					i(22222),	-- Plans: Thick Obisidan Breastplate
-					i(93041),	-- Jewel of Maddening Whispers (Pet)
 					i(21703),	-- Hammer of Ji'zhi
 					i(21128),	-- Staff of the Qiraji Prophets
 					i(21702),	-- Amulet of Foul Warding
@@ -1328,19 +1300,41 @@ _.Instances = { tier(1, {	-- Classic
 					i(21704),	-- Boots of the Redeemed Prophecy
 					i(21706),	-- Boots of the Unwavering Will
 					i(21707),	-- Ring of Swarming Thought
+					applyclassicphase(MOP_PHASE_ONE, i(93041, {	-- Jewel of Maddening Whispers (Pet)
+						["timeline"] = {
+							"added 5.1.0.16309",
+						},
+					})),
 				},
 			}),
+			-- #if AFTER LEGION
 			e(1547, {	-- Silithid Royalty
 				["description"] = "This can be a fairly -buggy- encounter if you don't do it right. Kill 1 boss at a time and allow it to get consumed. Then kill the next one and allow it to also get consumed. The last boss you leave alive determines the loot that can drop.",
-				["g"] = {
-					n(COMMON_BOSS_DROPS, {
+				["groups"] = {
+			-- #endif
+					n(	-- Silithid Royalty
+					-- #if ANYCLASSIC
+					-20,
+					-- #else
+					COMMON_BOSS_DROPS,
+					-- #endif
+					{
+						-- #if ANYCLASSIC
+						["description"] = "This can be a fairly -buggy- encounter if you don't do it right. Kill 1 boss at a time and allow it to get consumed. Then kill the next one and allow it to also get consumed. The last boss you leave alive determines the loot that can drop. These items can drop from killing the Silithid Royalty bosses regardless of order. For the other items, refer to their individual listings.",
+						["providers"] = {
+							{ "n", 15511 },	-- Lord Kri
+							{ "n", 15543 },	-- Princess Yauj
+							{ "n", 15544 },	-- Vem
+						},
+						-- #else
 						["description"] = "These items can drop from killing the Silithid Royalty bosses regardless of order. For the other items, refer to their individual listings.",
 						["crs"] = {
 							15511,	-- Lord Kri
 							15543,	-- Princess Yauj
 							15544,	-- Vem
 						},
-						["g"] = {
+						-- #endif
+						["groups"] = {
 							i(21693),	-- Guise of the Devourer
 							i(21694),	-- Ternary Mantle
 							i(21697),	-- Cape of the Trinity
@@ -1351,7 +1345,7 @@ _.Instances = { tier(1, {	-- Classic
 					}),
 					n(15511, {	-- Lord Kri
 						["description"] = "Killing this boss last can drop the following items.",
-						["g"] = {
+						["groups"] = {
 							i(21603),	-- Wand of Qiraji Nobility
 							i(21680),	-- Vest of Swift Execution
 							i(21681),	-- Ring of the Devoured
@@ -1360,7 +1354,7 @@ _.Instances = { tier(1, {	-- Classic
 					}),
 					n(15543, {	-- Princess Yauj
 						["description"] = "Killing this boss last can drop the following items.",
-						["g"] = {
+						["groups"] = {
 							i(21683),	-- Mantle of the Desert Crusade
 							i(21684),	-- Mantle of the Desert's Fury
 							i(21686),	-- Mantle of Phrenic Power
@@ -1370,18 +1364,20 @@ _.Instances = { tier(1, {	-- Classic
 					}),
 					n(15544, {	-- Vem
 						["description"] = "Killing this boss last can drop the following items.",
-						["g"] = {
+						["groups"] = {
 							i(21690),	-- Angelista's Charm
 							i(21689),	-- Gloves of Ebru
 							i(21691),	-- Ooze-Ridden Gauntlets
 							i(21688),	-- Boots of the Fallen Hero
 						},
 					}),
+			-- #if AFTER LEGION
 				},
 			}),
+			-- #endif
 			e(1544, {	-- Battleguard Sartura
 				["creatureID"] = 15516,
-				["g"] = {
+				["groups"] = {
 					i(21673),	-- Silithid Claw
 					i(21666),	-- Sartura's Might
 					i(21669),	-- Creeping Vine Helm
@@ -1399,7 +1395,7 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			e(1545, {	-- Fankriss the Unyielding
 				["creatureID"] = 15510,
-				["g"] = {
+				["groups"] = {
 					i(21635),	-- Barb of the Sand Reaver
 					i(21650),	-- Ancient Qiraji Ripper
 					i(21664),	-- Barbed Choker
@@ -1411,13 +1407,22 @@ _.Instances = { tier(1, {	-- Classic
 					i(21651),	-- Scaled Sand Reaver Leggings
 					i(21645),	-- Hive Tunneler's Boots
 					i(21647),	-- Fetish of the Sand Reaver
+					i(22402, {	-- Libram of Grace
+						["timeline"] = { "removed 5.0.4.10000" },
+					}),
+					i(22396, {	-- Totem of Life
+						["timeline"] = { "removed 5.0.4.10000" },
+					}),
 				},
 			}),
 			e(1548, {	-- Viscidus
+				-- #if BEFORE CATA
+				["description"] = "This boss requires 200 frost hits to freeze. Once frozen, you need 75 melee hits to shatter him. Equipping barov peasant caller trinket and using it after boss freezes will help to do this.",
+				-- #else
 				["description"] = "This boss requires 20 frost hits to freeze. Once frozen, you need 30 melee hits to shatter him. Equipping the Crate of Kidnapped Puppies or Barov Peasant Caller and using it after the boss freezes will help.",
+				-- #endif
 				["creatureID"] = 15299,
-				["g"] = {
-					i(93039),	-- Viscidus Globule (Pet)
+				["groups"] = {
 					i(20928),	-- Qiraji Bindings of Command
 					i(20932),	-- Qiraji Bindings of Dominance
 					i(21622),	-- Sharpened Silithid Femur
@@ -1426,11 +1431,19 @@ _.Instances = { tier(1, {	-- Classic
 					i(21626),	-- Slime-Coated Leggings
 					i(21677),	-- Ring of Qiraji Fury
 					i(21625),	-- Scarab Brooch
+					i(22399, {	-- Idol of Health
+						["timeline"] = { "removed 5.0.4.10000" },
+					}),
+					applyclassicphase(MOP_PHASE_ONE, i(93039, {	-- Viscidus Globule (Pet)
+						["timeline"] = {
+							"added 5.1.0.16309",
+						},
+					})),
 				},
 			}),
 			e(1546, {	-- Princess Huhuran
 				["creatureID"] = 15509,
-				["g"] = {
+				["groups"] = {
 					i(20928),	-- Qiraji Bindings of Command
 					i(20932),	-- Qiraji Bindings of Dominance
 					i(21616),	-- Huhuran's Stinger
@@ -1441,10 +1454,11 @@ _.Instances = { tier(1, {	-- Classic
 					i(21620),	-- Ring of the Martyr
 				},
 			}),
+			-- #if AFTER LEGION
 			e(1549, {	-- The Twin Emperors
+			-- #endif
 				n(15276, {	-- Emperor Vek'lor
 					i(20735),	-- Formula: Enchant Cloak - Subtlety
-					i(93040),	-- Anubisath Idol
 					i(20930),	-- Vek'lor's Diadem
 					i(21597),	-- Royal Scepter of Vek'lor
 					i(21602),	-- Qiraji Execution Bracers
@@ -1452,6 +1466,11 @@ _.Instances = { tier(1, {	-- Classic
 					i(21598),	-- Royal Qiraji Belt
 					i(21600),	-- Boots of Epiphany
 					i(21601),	-- Ring of Emperor Vek'lor
+					applyclassicphase(MOP_PHASE_ONE, i(93040, {	-- Anubisath Idol (Pet)
+						["timeline"] = {
+							"added 5.1.0.16309",
+						},
+					})),
 				}),
 				n(15275, {	-- Emperor Vek'nilash
 					i(20726),	-- Formula: Enchant Gloves - Threat
@@ -1464,10 +1483,12 @@ _.Instances = { tier(1, {	-- Classic
 					i(21607),	-- Grasp of the Fallen Emperor
 					i(21609),	-- Regenerating Belt of Vek'nilash
 				}),
+			-- #if AFTER LEGION
 			}),
-			e(1550, { 	-- Ouro
+			-- #endif
+			e(1550, {	-- Ouro
 				["creatureID"] = 15517,
-				["g"] = {
+				["groups"] = {
 					i(20927),	-- Ouro's Intact Hide
 					i(20931),	-- Skin of the Great Sandworm
 					i(23557),	-- Larvae of the Great Worm
@@ -1478,14 +1499,15 @@ _.Instances = { tier(1, {	-- Classic
 					i(23558),	-- The Burrower's Shell
 				},
 			}),
-			e(1551, { 	-- C'Thun
+			e(1551, {	-- C'Thun
 				["creatureID"] = 15727,
-				["g"] = {
+				["groups"] = {
 					ach(687),	-- Temple of Ahn'Qiraj
-					{
-						["itemID"] = 21221,	-- Eye of C'Thun
-						["questID"] = 8801,	-- C'Thun's Legacy
-					},
+					i(21221),	-- Eye of C'Thun
+					applyclassicphase(PHASE_SIX, {
+						["itemID"] = 22734,	-- Base of Atiesh
+						["classes"] = { PRIEST, MAGE, WARLOCK, DRUID },
+					}),
 					i(20929),	-- Carapace of the Old God
 					i(20933),	-- Husk of the Old God
 					i(21134),	-- Dark Edge of Insanity
@@ -1505,4 +1527,4 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 		},
 	}),
-})};
+}))};
