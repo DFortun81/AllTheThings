@@ -396,9 +396,9 @@ _.Zones =
 					["sourceQuests"] = { 59770 },	-- Stand as One
 				}),
 				q(63771, {	-- Fate's Reminder
-				--	no coords, automatically offered
+					["description"] = "Will be automatically offered to a character who choses NOT to Skip the Campaign in Shadowlands.",
 					["sourceQuests"] = { 62704 },	-- The Threads of Fate
-					["isBreadcrumb"] = true,	-- optional quest reminding you that you can switch to being a skip character at any time - turning in the quest does not activate skip, it just points you to the NPC that does
+					["isBreadcrumb"] = true,
 				}),
 				q(62716, {	-- Re-Introductions
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
