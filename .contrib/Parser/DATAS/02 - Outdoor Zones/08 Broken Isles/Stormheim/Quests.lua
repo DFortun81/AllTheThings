@@ -392,8 +392,8 @@ _.Zones =
 				}),
 				q(40072, {	-- Halls of Valor: Securing the Aegis
 					["sourceQuests"] = { 40005 },	-- Stormheim's Salvation
-					["coord"] = { 70.2, 69.1, 634 },
 					["provider"] = { "n", 97988 },	-- Havi
+					["coord"] = { 70.2, 69.1, 634 },
 				}),
 				q(38974, {	-- Halls of Valor: The Right Question
 					["provider"] = { "n", 93977 },	-- Leyweaver Tellumi
@@ -1178,4 +1178,8 @@ _.Zones =
 			}),
 		}),
 	}),
+};
+
+_.HiddenQuestTriggers = {
+	q(43350),	-- triggered when turning in #40072, "Halls of Valor: Securing the Aegis"
 };
