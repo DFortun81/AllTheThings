@@ -65,10 +65,10 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 						10473,  -- Restorer's Covenant
 						10472,  -- Sage's Covenant
 					},
-					["cost"] = {
-						{ "i", 29300, 1 },	-- Band of Eternity
-					},
 					["groups"] = {
+						objective(1, {	-- 0/1 Band of Eternity
+							["provider"] = { "i", 29300 },	-- Band of Eternity
+						}),
 						i(29301),	-- Band of the Eternal Champion
 					},
 				}),
@@ -86,10 +86,10 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 						10469,  -- Restorer's Oath
 						10468,  -- Sage's Oath
 					},
-					["cost"] = {
-						{ "i", 29299, 1 },	-- Band of Eternity
-					},
 					["groups"] = {
+						objective(1, {	-- 0/1 Band of Eternity
+							["provider"] = { "i", 29299 },	-- Band of Eternity
+						}),
 						i(29300),	-- Band of Eternity
 					},
 				}),
@@ -125,10 +125,10 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 						10465,  -- Restorer's Vow
 						10464,  -- Sage's Vow
 					},
-					["cost"] = {
-						{ "i", 29298, 1 },	-- Band of Eternity
-					},
 					["groups"] = {
+						objective(1, {	-- 0/1 Band of Eternity
+							["provider"] = { "i", 29298 },	-- Band of Eternity
+						}),
 						i(29299),	-- Band of Eternity
 					},
 				}),
@@ -168,10 +168,10 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 						10473,  -- Restorer's Covenant
 						10472,  -- Sage's Covenant
 					},
-					["cost"] = {
-						{ "i", 29296, 1 },	-- Band of Eternity
-					},
 					["groups"] = {
+						objective(1, {	-- 0/1 Band of Eternity
+							["provider"] = { "i", 29296 },	-- Band of Eternity
+						}),
 						i(29297),	-- Band of the Eternal Defender
 					},
 				}),
@@ -189,10 +189,10 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 						10469,  -- Restorer's Oath
 						10468,  -- Sage's Oath
 					},
-					["cost"] = {
-						{ "i", 29295, 1 },	-- Band of Eternity
-					},
 					["groups"] = {
+						objective(1, {	-- 0/1 Band of Eternity
+							["provider"] = { "i", 29295 },	-- Band of Eternity
+						}),
 						i(29296),	-- Band of Eternity
 					},
 				}),
@@ -228,10 +228,10 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 						10465,  -- Restorer's Vow
 						10464,  -- Sage's Vow
 					},
-					["cost"] = {
-						{ "i", 29294, 1 },	-- Band of Eternity
-					},
 					["groups"] = {
+						objective(1, {	-- 0/1 Band of Eternity
+							["provider"] = { "i", 29294 },	-- Band of Eternity
+						}),
 						i(29295),	-- Band of Eternity
 					},
 				}),
@@ -271,10 +271,10 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 						--10473,  -- Restorer's Covenant
 						10472,  -- Sage's Covenant
 					},
-					["cost"] = {
-						{ "i", 29308, 1 },	-- Band of Eternity
-					},
 					["groups"] = {
+						objective(1, {	-- 0/1 Band of Eternity
+							["provider"] = { "i", 29308 },	-- Band of Eternity
+						}),
 						i(29309),	-- Band of the Eternal Restorer
 					},
 				}),
@@ -292,10 +292,10 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 						--10469,  -- Restorer's Oath
 						10468,  -- Sage's Oath
 					},
-					["cost"] = {
-						{ "i", 29306, 1 },	-- Band of Eternity
-					},
 					["groups"] = {
+						objective(1, {	-- 0/1 Band of Eternity
+							["provider"] = { "i", 29306 },	-- Band of Eternity
+						}),
 						i(29308),	-- Band of Eternity
 					},
 				}),
@@ -331,10 +331,10 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 						--10465,  -- Restorer's Vow
 						10464,  -- Sage's Vow
 					},
-					["cost"] = {
-						{ "i", 29307, 1 },	-- Band of Eternity
-					},
 					["groups"] = {
+						objective(1, {	-- 0/1 Band of Eternity
+							["provider"] = { "i", 29307 },	-- Band of Eternity
+						}),
 						i(29306),	-- Band of Eternity
 					},
 				}),
@@ -374,10 +374,10 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 						10473,  -- Restorer's Covenant
 						--10472,  -- Sage's Covenant
 					},
-					["cost"] = {
-						{ "i", 29304, 1 },	-- Band of Eternity
-					},
 					["groups"] = {
+						objective(1, {	-- 0/1 Band of Eternity
+							["provider"] = { "i", 29304 },	-- Band of Eternity
+						}),
 						i(29305),	-- Band of the Eternal Sage
 					},
 				}),
@@ -395,10 +395,10 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 						10469,  -- Restorer's Oath
 						--10468,  -- Sage's Oath
 					},
-					["cost"] = {
-						{ "i", 29303, 1 },	-- Band of Eternity
-					},
 					["groups"] = {
+						objective(1, {	-- 0/1 Band of Eternity
+							["provider"] = { "i", 29303 },	-- Band of Eternity
+						}),
 						i(29304),	-- Band of Eternity
 					},
 				}),
@@ -434,10 +434,10 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 						10465,  -- Restorer's Vow
 						--10464,  -- Sage's Vow
 					},
-					["cost"] = {
-						{ "i", 29302, 1 },	-- Band of Eternity
-					},
 					["groups"] = {
+						objective(1, {	-- 0/1 Band of Eternity
+							["provider"] = { "i", 29302 },	-- Band of Eternity
+						}),
 						i(29303),	-- Band of Eternity
 					},
 				}),
