@@ -150,11 +150,11 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 						10741,	-- Distinguished Service [Protector]
 						10739,	-- Distinguished Service [Restorer]
 					},
-					["cost"] = {
-						{ "i", 29281, 1 },	-- Violet Signet
-					},
 					["lvl"] = 70,
 					["groups"] = {
+						objective(1, {	-- 0/1 Violet Signet
+							["provider"] = { "i", 29281 },	-- Violet Signet
+						}),
 						i(29282),	-- Violet Signet
 					},
 				}),
@@ -170,11 +170,11 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 						10741,	-- Distinguished Service [Protector]
 						10739,	-- Distinguished Service [Restorer]
 					},
-					["cost"] = {
-						{ "i", 29285, 1 },	-- Violet Signet
-					},
 					["lvl"] = 70,
 					["groups"] = {
+						objective(1, {	-- 0/1 Violet Signet
+							["provider"] = { "i", 29285 },	-- Violet Signet
+						}),
 						i(29286),	-- Violet Signet
 					},
 				}),
@@ -190,11 +190,11 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 						--10741,	-- Distinguished Service [Protector]
 						10739,	-- Distinguished Service [Restorer]
 					},
-					["cost"] = {
-						{ "i", 29277, 1 },	-- Violet Signet
-					},
 					["lvl"] = 70,
 					["groups"] = {
+						objective(1, {	-- 0/1 Violet Signet
+							["provider"] = { "i", 29277 },	-- Violet Signet
+						}),
 						i(29278),	-- Violet Signet
 					},
 				}),
@@ -210,11 +210,11 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 						10741,	-- Distinguished Service [Protector]
 						--10739,	-- Distinguished Service [Restorer]
 					},
-					["cost"] = {
-						{ "i", 29289, 1 },	-- Violet Signet
-					},
 					["lvl"] = 70,
 					["groups"] = {
+						objective(1, {	-- 0/1 Violet Signet
+							["provider"] = { "i", 29289 },	-- Violet Signet
+						}),
 						i(29291),	-- Violet Signet
 					},
 				}),
@@ -230,11 +230,11 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 						10736,	-- Down the Violet Path [Protector]
 						10734,	-- Down the Violet Path [Restorer]
 					},
-					["cost"] = {
-						{ "i", 29280, 1 },	-- Violet Signet
-					},
 					["lvl"] = 70,
 					["groups"] = {
+						objective(1, {	-- 0/1 Violet Signet
+							["provider"] = { "i", 29280 },	-- Violet Signet
+						}),
 						i(29281),	-- Violet Signet
 					},
 				}),
@@ -250,11 +250,11 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 						10736,	-- Down the Violet Path [Protector]
 						10734,	-- Down the Violet Path [Restorer]
 					},
-					["cost"] = {
-						{ "i", 29284, 1 },	-- Violet Signet
-					},
 					["lvl"] = 70,
 					["groups"] = {
+						objective(1, {	-- 0/1 Violet Signet
+							["provider"] = { "i", 29284 },	-- Violet Signet
+						}),
 						i(29285),	-- Violet Signet
 					},
 				}),
@@ -270,11 +270,11 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 						--10736,	-- Down the Violet Path [Protector]
 						10734,	-- Down the Violet Path [Restorer]
 					},
-					["cost"] = {
-						{ "i", 29276, 1 },	-- Violet Signet
-					},
 					["lvl"] = 70,
 					["groups"] = {
+						objective(1, {	-- 0/1 Violet Signet
+							["provider"] = { "i", 29276 },	-- Violet Signet
+						}),
 						i(29277),	-- Violet Signet
 					},
 				}),
@@ -290,11 +290,11 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 						10736,	-- Down the Violet Path [Protector]
 						--10734,	-- Down the Violet Path [Restorer]
 					},
-					["cost"] = {
-						{ "i", 29288, 1 },	-- Violet Signet
-					},
 					["lvl"] = 70,
 					["groups"] = {
+						objective(1, {	-- 0/1 Violet Signet
+							["provider"] = { "i", 29288 },	-- Violet Signet
+						}),
 						i(29289),	-- Violet Signet
 					},
 				}),
@@ -310,11 +310,11 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 						10728,	-- Eminence Among the Violet Eye [Protector]
 						10726,	-- Eminence Among the Violet Eye [Restorer]
 					},
-					["cost"] = {
-						{ "i", 29282, 1 },	-- Violet Signet
-					},
 					["lvl"] = 70,
 					["groups"] = {
+						objective(1, {	-- 0/1 Violet Signet
+							["provider"] = { "i", 29282 },	-- Violet Signet
+						}),
 						i(29283),	-- Violet Signet of the Master Assassin
 					},
 				}),
@@ -330,11 +330,11 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 						10728,	-- Eminence Among the Violet Eye [Protector]
 						10726,	-- Eminence Among the Violet Eye [Restorer]
 					},
-					["cost"] = {
-						{ "i", 29286, 1 },	-- Violet Signet
-					},
 					["lvl"] = 70,
 					["groups"] = {
+						objective(1, {	-- 0/1 Violet Signet
+							["provider"] = { "i", 29286 },	-- Violet Signet
+						}),
 						i(29287),	-- Violet Signet of the Archmage
 					},
 				}),
@@ -350,11 +350,11 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 						--10728,	-- Eminence Among the Violet Eye [Protector]
 						10726,	-- Eminence Among the Violet Eye [Restorer]
 					},
-					["cost"] = {
-						{ "i", 29278, 1 },	-- Violet Signet
-					},
 					["lvl"] = 70,
 					["groups"] = {
+						objective(1, {	-- 0/1 Violet Signet
+							["provider"] = { "i", 29278 },	-- Violet Signet
+						}),
 						i(29279),	-- Violet Signet of the Great Protector
 					},
 				}),
@@ -370,11 +370,11 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 						10728,	-- Eminence Among the Violet Eye [Protector]
 						--10726,	-- Eminence Among the Violet Eye [Restorer]
 					},
-					["cost"] = {
-						{ "i", 29291, 1 },	-- Violet Signet
-					},
 					["lvl"] = 70,
 					["groups"] = {
+						objective(1, {	-- 0/1 Violet Signet
+							["provider"] = { "i", 29291 },	-- Violet Signet
+						}),
 						i(29290),	-- Violet Signet of the Grand Restorer
 					},
 				}),
