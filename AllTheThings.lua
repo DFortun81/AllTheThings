@@ -1533,10 +1533,12 @@ local PrintQuestInfo = function(questID, new, info)
 				questID = questID .. " [HQT]";
 			end
 		end
-		if new then
-			print("Quest accepted: #" .. questID .. (info or ""));
+		if new == true then
+			print("Quest accepted #" .. questID .. (info or ""));
+		elseif new == false then
+			print("Quest unflagged #" .. questID .. (info or ""));
 		else
-			print("Completed Quest #" .. questID .. (info or ""));
+			print("Quest completed #" .. questID .. (info or ""));
 		end
 	end
 end
@@ -1548,6 +1550,10 @@ local CompletedQuests = setmetatable({}, {__newindex = function (t, key, value)
 		ATTAccountWideData.Quests[key] = 1;
 		app.CurrentCharacter.Quests[key] = 1;
 		PrintQuestInfo(key);
+	elseif value == false then
+		-- no need to actually set the key in the table since it's been marked as incomplete
+		-- and this meta function only triggers on NEW key assignments
+		PrintQuestInfo(key, false);
 	end
 end});
 -- returns nil if nil provided, otherwise true/false based on the specific quest being completed by the current character
@@ -9961,9 +9967,17 @@ app:RegisterEvent("QUEST_SESSION_JOINED");
 end)();
 
 local function QueryCompletedQuests()
-	local t = CompletedQuests;
+	local t, freshCompletes = CompletedQuests, {};
 	for _,v in pairs(C_QuestLog_GetAllCompletedQuestIDs()) do
 		t[v] = true;
+		freshCompletes[v] = true;
+	end
+	-- check for 'unflagged' questIDs (this seems to basically not impact lag at all... i hope)
+	for q,_ in pairs(t) do
+		if not freshCompletes[q] then
+			t[q] = nil;		-- delete the key
+			t[q] = false;	-- trigger the metatable function
+		end
 	end
 end
 local function RefreshQuestCompletionState(questID)
@@ -11305,7 +11319,7 @@ UpdateGroup = function(parent, group, window)
 	-- if not app.DEBUG_LOG and shouldLog then
 	-- 	app.DEBUG_LOG = shouldLog;
 	-- end
-	
+
 	-- -- Only update a group ONCE per update cycle...
 	-- if not group._Updated or group._Updated ~= app._Updated then
 	-- 	if LOG then print("First Update") end
@@ -19428,7 +19442,7 @@ app.events.VARIABLES_LOADED = function()
 			52888,	-- Verdant Hollow (BFA Alliance Outpost Unlock)
 			53043,	-- Vulture's Nest (Mission Completion)
 			53044,	-- Vulture's Nest (BFA Alliance Outpost Unlock)
-			
+
 			-- These are BOTH once-per-account (single character) completion & shared account-wide lockout groups (likely due to locking Account-Wide HQTs)
 			53063,	-- A Mission of Unity (BFA Alliance WQ Unlock)
 			53064,	-- A Mission of Unity (BFA Horde WQ Unlock)
@@ -19438,10 +19452,10 @@ app.events.VARIABLES_LOADED = function()
 
 			53055,	-- Pushing Our Influence (BFA Horde PreQ for 1st Foothold)
 			53056,	-- Pushing Our Influence (BFA Alliance PreQ for 1st Foothold)
-			
+
 			53207,	-- The Warfront Looms (BFA Horde Warfront Breadcrumb)
 			53175,	-- The Warfront Looms (BFA Alliance Warfront Breadcrumb)
-			
+
 			-- Shard Labor
 			61229,	-- forging the Crystal Mallet of the Heralds
 			61191,	-- ringing the Vesper of the Silver Wind

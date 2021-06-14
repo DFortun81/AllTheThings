@@ -1774,8 +1774,8 @@ _.HiddenQuestTriggers =
 		q(37460),	-- Gorgrond - Short-Supply Reward (Drov the Ruiner killed)
 		q(37672),	-- Short-Supply Reward (Rukhmar bonus roll)
 		q(37675),	-- Tarlna the Ageless bonus roll
-		q(39434),	-- Short-Supply Reward
-		q(39375),	-- Short-Supply Reward
+		q(39434),	-- Short-Supply Reward / First Rare killed in Tanaan
+		q(39375),	-- Short-Supply Reward / Suspiciously Glowing Chest in Tanaan
 		q(39376),	-- Short-Supply Reward
 		q(39377),	-- Short-Supply Reward
 		q(39378),	-- Short-Supply Reward
