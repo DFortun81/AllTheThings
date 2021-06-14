@@ -1109,5 +1109,5 @@ _.Zones =
 };
 _.HiddenQuestTriggers = {
 --	Druid
-	q(42078),	-- Ysondre's Seal. If you are druid and done the quest 25398 Sealing the Dream you can reopen the Ferals portal.
+	q(42078),	-- Ysondre's Seal. If you are druid and done the quest 25398 Sealing the Dream you can reopen the Feralas portal.
 };
