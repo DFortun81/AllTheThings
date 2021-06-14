@@ -911,6 +911,7 @@ app.L = {
 		[-149] = "Interface\\Icons\\ClassIcon_Paladin",										-- Paladin
 		[-150] = "Interface\\Icons\\ClassIcon_Hunter",										-- Hunter
 		[-152] = "Interface\\Icons\\achievement_zone_draenor_01",							-- Garrison Campaign
+		[-153] = 1103070,																	-- Work Orders (Inv_icon_mission_complete_order)
 	--	[-155] = 236566,																	-- Level 48 (old Level 110)
 		[-155] = 236566,																	-- Level 50 (old Level 120)
 		[-160] = app.asset("Category_Mounts"),												-- Mounts
