@@ -914,6 +914,13 @@ app.report = function(...)
 	app.print(app.Version .. L["PLEASE_REPORT_MESSAGE"]);
 end
 
+-- Screenshot
+function app:TakeScreenShot()
+	if app.Settings:GetTooltipSetting("Screenshot") then
+		Screenshot();
+	end
+end
+
 -- audio lib
 local lastPlayedFanfare;
 function app:PlayCompleteSound()
@@ -10259,6 +10266,7 @@ app.events.NEW_PET_ADDED = function(petID)
 		rawset(collectedSpecies, speciesID, 1);
 		UpdateSearchResults(SearchForField("speciesID", speciesID));
 		app:PlayFanfare();
+		app:TakeScreenShot();
 		wipe(searchCache);
 	end
 end
@@ -17181,6 +17189,7 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 						app:RefreshData(true, true);
 						if not previousState or not app.Settings:Get("AccountWide:Recipes") then
 							app:PlayFanfare();
+							app:TakeScreenShot();
 						end
 						wipe(searchCache);
 					end
@@ -19707,6 +19716,7 @@ app.events.HEIRLOOMS_UPDATED = function(itemID, kind, ...)
 	if itemID then
 		app:RefreshData(false, true);
 		app:PlayFanfare();
+		app:TakeScreenShot();
 		wipe(searchCache);
 
 		if app.Settings:GetTooltipSetting("Report:Collected") then
@@ -19836,6 +19846,7 @@ app.events.TOYS_UPDATED = function(itemID, new)
 		--[[]]-- uncomment to test
 		app:RefreshData(false, true);
 		app:PlayFanfare();
+		app:TakeScreenShot();
 		--]]
 		wipe(searchCache);
 
@@ -19856,6 +19867,7 @@ app.events.TRANSMOG_COLLECTION_SOURCE_ADDED = function(sourceID)
 			ATTAccountWideData.Sources[sourceID] = 1;
 			app.ActiveItemCollectionHelper(sourceID, oldState);
 			app:PlayFanfare();
+			app:TakeScreenShot();
 			wipe(searchCache);
 			SendSocialMessage("S\t" .. sourceID .. "\t" .. oldState .. "\t1");
 		end
