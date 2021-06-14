@@ -122,6 +122,16 @@ _.Zones =
 								i(7978),	-- Plans: Barbaric Iron Shoulders
 							},
 						}),
+						q(2753, {	-- Trampled Under Foot
+							["requireSkill"] = BLACKSMITHING,
+							["sourceQuests"] = { 2752 },	-- On Iron Pauldrons
+							["provider"] = { "n", 7790 },	-- Orokk Omosh
+							["coord"] = { 76.8, 37.4, ORGRIMMAR },
+							["races"] = HORDE_ONLY,
+							["g"] = {
+								i(7981),	-- Plans: Barbaric Iron Boots
+							},
+						}),
 					}),
 				}),
 				prof(COOKING, {

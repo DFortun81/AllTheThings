@@ -2530,16 +2530,6 @@ _.Zones =
 						i(63917),	-- Truthbreaker Shield [Not listed, but awards on completing quest]
 					},
 				}),
-				q(2753,  {	-- Trampled Under Foot
-					["requireSkill"] = BLACKSMITHING,
-					["sourceQuests"] = { 2752 },	-- On Iron Pauldrons
-					["provider"] = { "n", 7790 },	-- Orokk Omosh
-					["coord"] = { 76.8, 37.4, ORGRIMMAR },
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(7981),	-- Plans: Barbaric Iron Boots
-					},
-				}),
 				q(28475, {	-- Twilight Scheming
 					["qg"] = 45337,	-- Tyelis
 					["sourceQuest"] = 28307,	-- Meet with Tyelis (Cata+) / Journey to Orgrimmar [Blood Elf] (SL+)

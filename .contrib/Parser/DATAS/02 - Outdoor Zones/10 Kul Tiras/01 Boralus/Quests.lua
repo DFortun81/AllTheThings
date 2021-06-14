@@ -736,7 +736,7 @@ _.Zones =
 				}),
 				q(50972, {	-- Proudmoore's Parley
 					["sourceQuests"] = { 50790 },	-- Hot Pursuit
-					["provider"] = { "n", 135259 },	-- Taelia
+					["provider"] = { "n", 121144 },	-- Katherine Proudmoore <Lord Admiral of Kul Tiras>
 					["coord"] = { 48.2, 80.7, 1161 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {

@@ -874,4 +874,6 @@ _.HiddenQuestTriggers = {
 
 --	Crypt Couture
 	q(62306),	-- using "Sorcerer's Blade"
+--	Unknown
+	q(60773),	-- Renown 30/Channeling anima
 };
