@@ -8844,6 +8844,7 @@ local RefreshMounts = function(newMountID)
 
 	if newSpellIDResults then
 		UpdateSearchResults(newSpellIDResults);
+		app:TakeScreenShot();
 		app:PlayRareFindSound();
 	end
 end
