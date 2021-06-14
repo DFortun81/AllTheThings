@@ -30,6 +30,7 @@ _.Zones =
 				}),
 				fp(1621, {	-- Vol'mar, Tanaan Jungle
 					["coord"] = { 60.4, 46.4, 534 },
+					["creatureID"] = 90550,	-- Gargash the Diver
 				}),
 			}),
 		}),
