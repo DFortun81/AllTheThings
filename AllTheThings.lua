@@ -19758,7 +19758,7 @@ app.events.QUEST_ACCEPTED = function(questID)
 				end
 			end
 		end
-		PrintQuestInfo(questID, 1, freq);
+		PrintQuestInfo(questID, true, freq);
 		-- Check if this quest is a nextQuest of a non-collected breadcrumb if breadcrumbs are being tracked
 		if app.Settings:Get("Thing:QuestBreadcrumbs") then
 			local nextQuests = app.SearchForField("nextQuests", questID);
