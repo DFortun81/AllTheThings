@@ -37,7 +37,11 @@ _.PVP =
 							}),
 							q(7124,  {	-- Capture a Mine (H)
 								["races"] = HORDE_ONLY,
-								["u"] = REMOVED_FROM_GAME,	-- inaccessible since 15th Anniversary event
+								["timeline"] = {
+									"added 1.11.1.10772",
+									"removed 8.0.1.25902", -- inaccessible since 15th Anniversary event
+									"added 9.0.1", 
+								}, -- timeline may be incorrect
 							}),
 							q(5893,  {	-- Coldtooth Supplies (H)
 								["provider"] = { "n", 12097 }, -- Frostwolf Quartermaster
@@ -75,7 +79,11 @@ _.PVP =
 							}),
 							q(7302,  {	-- Fallen Sky Lords
 								["races"] = HORDE_ONLY,
-								["u"] = REMOVED_FROM_GAME,
+								["timeline"] = {
+									"added 1.11.1.10772",
+									"removed 2.3.0",
+									"added 9.0.1",
+								}, -- timeline may be incorrect
 							}),
 							q(7361,  {	-- Favor Amongst the Darkspear
 								["races"] = HORDE_ONLY,

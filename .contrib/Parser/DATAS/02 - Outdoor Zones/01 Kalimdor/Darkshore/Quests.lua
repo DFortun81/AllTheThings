@@ -502,7 +502,7 @@ _.Zones =
 					},
 				}),
 				q(13567, {	-- Spirit of the Stag
-					["provider"] = { "n", 33048 },	-- Great Stag Spirit
+					["provider"] = { "n", 33133 },	-- Great Stag Spirit
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "Stag gives 10% movement speed.",
 					["altQuests"] = {
