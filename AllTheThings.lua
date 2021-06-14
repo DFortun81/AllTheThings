@@ -913,7 +913,12 @@ app.report = function(...)
 	end
 	app.print(app.Version .. L["PLEASE_REPORT_MESSAGE"]);
 end
-
+-- Screenshot
+function app:TakeScreenShot()
+	if app.Settings:GetTooltipSetting("Screenshot") then
+		Screenshot();
+	end
+end
 -- audio lib
 local lastPlayedFanfare;
 function app:PlayCompleteSound()
@@ -1533,12 +1538,10 @@ local PrintQuestInfo = function(questID, new, info)
 				questID = questID .. " [HQT]";
 			end
 		end
-		if new == true then
-			print("Quest accepted #" .. questID .. (info or ""));
-		elseif new == false then
-			print("Quest unflagged #" .. questID .. (info or ""));
+		if new then
+			print("Quest accepted: #" .. questID .. (info or ""));
 		else
-			print("Quest completed #" .. questID .. (info or ""));
+			print("Completed Quest #" .. questID .. (info or ""));
 		end
 	end
 end
@@ -1550,10 +1553,6 @@ local CompletedQuests = setmetatable({}, {__newindex = function (t, key, value)
 		ATTAccountWideData.Quests[key] = 1;
 		app.CurrentCharacter.Quests[key] = 1;
 		PrintQuestInfo(key);
-	elseif value == false then
-		-- no need to actually set the key in the table since it's been marked as incomplete
-		-- and this meta function only triggers on NEW key assignments
-		PrintQuestInfo(key, false);
 	end
 end});
 -- returns nil if nil provided, otherwise true/false based on the specific quest being completed by the current character
@@ -9967,17 +9966,9 @@ app:RegisterEvent("QUEST_SESSION_JOINED");
 end)();
 
 local function QueryCompletedQuests()
-	local t, freshCompletes = CompletedQuests, {};
+	local t = CompletedQuests;
 	for _,v in pairs(C_QuestLog_GetAllCompletedQuestIDs()) do
 		t[v] = true;
-		freshCompletes[v] = true;
-	end
-	-- check for 'unflagged' questIDs (this seems to basically not impact lag at all... i hope)
-	for q,_ in pairs(t) do
-		if not freshCompletes[q] then
-			t[q] = nil;		-- delete the key
-			t[q] = false;	-- trigger the metatable function
-		end
 	end
 end
 local function RefreshQuestCompletionState(questID)
@@ -10259,6 +10250,7 @@ app.events.NEW_PET_ADDED = function(petID)
 		rawset(collectedSpecies, speciesID, 1);
 		UpdateSearchResults(SearchForField("speciesID", speciesID));
 		app:PlayFanfare();
+		app:TakeScreenShot();
 		wipe(searchCache);
 	end
 end
@@ -11525,8 +11517,7 @@ function app.CompletionistItemCollectionHelper(sourceID, oldState)
 			local firstMatch = searchResults[1];
 			print(format(L["ITEM_ID_ADDED"], firstMatch.text or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), firstMatch.itemID));
 		end
-
-		-- Attempt to cleanly refresh the data.
+			-- Attempt to cleanly refresh the data.
 		local fresh = false;
 
 		-- Mark all results as marked. This prevents a double +1 on parents.
@@ -11575,6 +11566,7 @@ function app.CompletionistItemCollectionHelper(sourceID, oldState)
 			else
 				print(format(L["ITEM_ID_ADDED_MISSING"], "|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r", "???"));
 			end
+
 		end
 	end
 end
@@ -11651,7 +11643,7 @@ function app.UniqueModeItemCollectionHelperBase(sourceID, oldState, filter)
 					end
 				end
 			end
-
+		end
 			-- Show the collection message.
 			if app.Settings:GetTooltipSetting("Report:Collected") then
 				local firstMatch = searchResults[1];
@@ -11669,12 +11661,11 @@ function app.UniqueModeItemCollectionHelperBase(sourceID, oldState, filter)
 				print(format(L[#unlockedSourceIDs > 0 and "ITEM_ID_ADDED_SHARED_MISSING" or "ITEM_ID_ADDED_MISSING"],
 					link or name or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), sourceInfo.itemID, #unlockedSourceIDs));
 			end
-		end
 
+		end
 		-- If the data is fresh, don't force a refresh.
 		app:RefreshData(fresh, true);
 	end
-end
 function app.UniqueModeItemCollectionHelper(sourceID, oldState)
 	return app.UniqueModeItemCollectionHelperBase(sourceID, oldState, app.FilterItemSourceUnique);
 end
@@ -11692,7 +11683,6 @@ function app.CompletionistItemRemovalHelper(sourceID, oldState)
 			local firstMatch = searchResults[1];
 			print(format(L["ITEM_ID_ADDED"], firstMatch.text or ("|cffff80ff|Htransmogappearance:" .. sourceID .. "|h[Source " .. sourceID .. "]|h|r"), firstMatch.itemID));
 		end
-
 		-- Attempt to cleanly refresh the data.
 		local fresh = false;
 		for i,result in ipairs(searchResults) do
@@ -13549,11 +13539,6 @@ RowOnEnter = function (self)
 				AttachTooltipSearchResults(GameTooltip, "speciesID:" .. reference.speciesID, SearchForField, "speciesID", reference.speciesID);
 			elseif reference.u then
 				GameTooltip:AddLine(L["UNOBTAINABLE_ITEM_REASONS"][reference.u][2], 1, 1, 1, 1, true);
-			end
-			-- PvP filter text
-			if reference.pvp then
-				-- TODO: probably re-design this once it's no longer considered an unobtainable filter completely
-				GameTooltip:AddLine(L["UNOBTAINABLE_ITEM_REASONS"][12][2], 1, 1, 1, 1, true);
 			end
 		end
 		if reference.speciesID then
@@ -17181,6 +17166,7 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 						app:RefreshData(true, true);
 						if not previousState or not app.Settings:Get("AccountWide:Recipes") then
 							app:PlayFanfare();
+							app:TakeScreenShot();
 						end
 						wipe(searchCache);
 					end
@@ -19707,6 +19693,7 @@ app.events.HEIRLOOMS_UPDATED = function(itemID, kind, ...)
 	if itemID then
 		app:RefreshData(false, true);
 		app:PlayFanfare();
+		app:TakeScreenShot();
 		wipe(searchCache);
 
 		if app.Settings:GetTooltipSetting("Report:Collected") then
@@ -19836,6 +19823,7 @@ app.events.TOYS_UPDATED = function(itemID, new)
 		--[[]]-- uncomment to test
 		app:RefreshData(false, true);
 		app:PlayFanfare();
+		app:TakeScreenShot();
 		--]]
 		wipe(searchCache);
 
@@ -19856,6 +19844,7 @@ app.events.TRANSMOG_COLLECTION_SOURCE_ADDED = function(sourceID)
 			ATTAccountWideData.Sources[sourceID] = 1;
 			app.ActiveItemCollectionHelper(sourceID, oldState);
 			app:PlayFanfare();
+			app:TakeScreenShot();
 			wipe(searchCache);
 			SendSocialMessage("S\t" .. sourceID .. "\t" .. oldState .. "\t1");
 		end
