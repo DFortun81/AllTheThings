@@ -132,7 +132,6 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 						i(29299),	-- Band of Eternity
 					},
 				}),
-				
 				q(11106, {	-- Defender No More
 					["qg"] = 19935,	-- Soridormi
 					["sourceQuests"] = {
@@ -235,7 +234,6 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 						i(29295),	-- Band of Eternity
 					},
 				}),
-				
 				q(11104, {	-- Restorer No More
 					["qg"] = 19935,	-- Soridormi
 					["sourceQuests"] = {
@@ -338,7 +336,6 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 						i(29306),	-- Band of Eternity
 					},
 				}),
-				
 				q(11103, {	-- Sage No More
 					["qg"] = 19935,	-- Soridormi
 					["sourceQuests"] = {
@@ -559,7 +556,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 						i(30977, {	-- Onslaught Greaves
 							["cost"] = { { "i", 31100, 1 } },	-- Leggings of the Forgotten Protector
 						}),
-						
+
 						-- Tank
 						i(30974, {	-- Onslaught Greathelm
 							["cost"] = { { "i", 31095, 1 } },	-- Helm of the Forgotten Protector
@@ -594,7 +591,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 						i(30993, {	-- Lightbringer Greaves
 							["cost"] = { { "i", 31098, 1 } },	-- Leggings of the Forgotten Conqueror
 						}),
-						
+
 						-- Tank
 						i(30987, {	-- Lightbringer Faceguard
 							["cost"] = { { "i", 31097, 1 } },	-- Helm of the Forgotten Conqueror
@@ -611,7 +608,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 						i(30995, {	-- Lightbringer Legguards
 							["cost"] = { { "i", 31098, 1 } },	-- Leggings of the Forgotten Conqueror
 						}),
-						
+
 						-- Healer
 						i(30988, {	-- Lightbringer Greathelm
 							["cost"] = { { "i", 31097, 1 } },	-- Helm of the Forgotten Conqueror
@@ -680,7 +677,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 						i(31067, {	-- Leggings of Absolution
 							["cost"] = { { "i", 31098, 1 } },	-- Leggings of the Forgotten Conqueror
 						}),
-						
+
 						-- Healer
 						i(31063, {	-- Cowl of Absolution
 							["cost"] = { { "i", 31097, 1 } },	-- Helm of the Forgotten Conqueror
@@ -715,7 +712,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 						i(31020, {	-- Skyshatter Legguards
 							["cost"] = { { "i", 31100, 1 } },	-- Leggings of the Forgotten Protector
 						}),
-						
+
 						-- Enhancement
 						i(31015, {	-- Skyshatter Cover
 							["cost"] = { { "i", 31095, 1 } },	-- Helm of the Forgotten Protector
@@ -732,7 +729,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 						i(31021, {	-- Skyshatter Pants
 							["cost"] = { { "i", 31100, 1 } },	-- Leggings of the Forgotten Protector
 						}),
-						
+
 						-- Restoration
 						i(31012, {	-- Skyshatter Helmet
 							["cost"] = { { "i", 31095, 1 } },	-- Helm of the Forgotten Protector
@@ -801,7 +798,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 						i(31046, {	-- Thunderheart Pants
 							["cost"] = { { "i", 31099, 1 } },	-- Leggings of the Forgotten Vanquisher
 						}),
-						
+
 						-- Feral
 						i(31039, {	-- Thunderheart Cover
 							["cost"] = { { "i", 31096, 1 } },	-- Helm of the Forgotten Vanquisher
@@ -818,7 +815,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 						i(31044, {	-- Thunderheart Leggings
 							["cost"] = { { "i", 31099, 1 } },	-- Leggings of the Forgotten Vanquisher
 						}),
-						
+
 						-- Restoration
 						i(31037, {	-- Thunderheart Helmet
 							["cost"] = { { "i", 31096, 1 } },	-- Helm of the Forgotten Vanquisher
@@ -934,10 +931,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 				["creatureID"] = 17808,
 				["groups"] = {
 					i(122111, {	-- Smelly Gravestone (PET!)
-						["timeline"] = {
-							"created 6.1.0.19445",
-							"added 6.1.0.19445"
-						},
+						["timeline"] = { "added 6.1.0.19445" },
 					}),
 					i(30881),	-- Blade of Infamy
 					i(30883),	-- Pillar of Ferocity
@@ -974,10 +968,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 				["creatureID"] = 17842,
 				["groups"] = {
 					i(122105, {	-- Grotesque Statue (PET!)
-						["timeline"] = {
-							"created 6.1.0.19445",
-							"added 6.1.0.19445"
-						},
+						["timeline"] = { "added 6.1.0.19445" },
 					}),
 					i(31092, {	-- Gloves of the Forgotten Conqueror
 						["classes"] = { PALADIN, PRIEST, WARLOCK },
@@ -1001,10 +992,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 				["groups"] = {
 					ach(695),	-- The Battle for Mount Hyjal
 					i(122112, {	-- Hyjal Wisp (PET!)
-						["timeline"] = {
-							"created 6.1.0.19445",
-							"added 6.1.0.19445"
-						},
+						["timeline"] = { "added 6.1.0.19445" },
 					}),
 					i(31097, {	-- Helm of the Forgotten Conqueror
 						["classes"] = { PALADIN, PRIEST, WARLOCK },
