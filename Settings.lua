@@ -131,6 +131,7 @@ local TooltipSettingsBase = {
 		["Auto:ProfessionList"] = true,
 		["Auto:AH"] = true,
 		["Celebrate"] = true,
+		["Screenshot"] = false,
 		["Channel"] = "master",
 		["ClassRequirements"] = true,
 		["Descriptions"] = true,
@@ -3330,6 +3331,15 @@ end);
 WarnRemovedThingsCheckBox:SetATTTooltip(L["WARN_REMOVED_CHECKBOX_TOOLTIP"]);
 WarnRemovedThingsCheckBox:SetPoint("TOPLEFT", CelebrateCollectedThingsCheckBox, "BOTTOMLEFT", 0, 4);
 
+local ScreenshotCollectedThingsCheckBox = settings:CreateCheckBox(L["SCREENSHOT_COLLECTED_CHECKBOX"],
+	function(self)
+		self:SetChecked(settings:GetTooltipSetting("Screenshot"));
+	end,
+	function(self)
+		settings:SetTooltipSetting("Screenshot", self:GetChecked());
+	end);
+ScreenshotCollectedThingsCheckBox:SetATTTooltip(L["SCREENSHOT_COLLECTED_CHECKBOX_TOOLTIP"]);
+ScreenshotCollectedThingsCheckBox:SetPoint("TOPLEFT", WarnRemovedThingsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local DebuggingLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 DebuggingLabel:SetPoint("TOPRIGHT", line, "BOTTOMRIGHT", -210, -8);
