@@ -1826,6 +1826,7 @@ end
 local function GetHash(t)
 	return t.hash or CreateHash(t);
 end
+app.GetHash = GetHash;
 -- The base logic for turning a Table of data into an 'object' that provides dynamic information concerning the type of object which was identified
 -- based on the priority of possible key values
 CreateObject = function(t)
@@ -2871,21 +2872,45 @@ end
 -- Fills & returns a group with its 'cost' references, along with all sub-groups recursively if specified
 -- This should only be used on a cloned group so the source group is not contaminated
 -- The 'cost' tag will be removed afterward so as to not double the tooltip info for the item
+-- app._PurchaseTracking = nil;
 local function FillPurchases(group, recursive)
+	return group;
+
+	-- While in theory this is neat, it turns out the logic needs to be more complicated due to places where Thing A is a cost to Quest A
+	-- which reward Thing B which is a cost to Quest B which rewards Thing A ... etc. like AQ ring quests etc.
+
+	--[[
+	-- local cleanUp;
+	-- if not app._PurchaseTracking then
+	-- 	app._PurchaseTracking = {};
+	-- 	cleanUp = true;
+	-- end
+	-- local trackingKey = app.GetHash(group);
 	-- if group.key == "itemID" and group.itemID == 105867 then app.DEBUG_PRINT = group; end
 	-- group has cost collectibles or is collectible as cost (to thus generate cost collectibles)
-	if group.costCollectibles or group.collectibleAsCost then
-		if not group.g then group.g = CloneData(group.costCollectibles)
-		else MergeObjects(group.g, CloneData(group.costCollectibles)); end
-	end
-	-- do recursion after potentially creating sub-groups
-	if recursive and group.g then
-		for _,s in ipairs(group.g) do
-			FillPurchases(s, recursive);
+	-- if not app._PurchaseTracking[trackingKey] then
+	-- 	app._PurchaseTracking[trackingKey] = true;
+		print("FillPurchases",app.GetHash(group),recursive)
+		if group.costCollectibles or group.collectibleAsCost then
+			if not group.g then group.g = {}; end
+			MergeObjects(group.g, CloneData(group.costCollectibles));
 		end
-	end
+		print("#group.g",group.g and #group.g)
+		-- do recursion after potentially creating new sub-groups
+		if recursive and group.g then
+			local level = (recursive == true and 3) or (recursive > 1 and recursive - 1) or nil;
+			print("Next level",level)
+			for _,s in ipairs(group.g) do
+				FillPurchases(s, level);
+			end
+		end
+	-- end
 	-- if app.DEBUG_PRINT == group then app.DEBUG_PRINT = nil; end
+	-- if cleanUp then
+	-- 	app._PurchaseTracking = nil;
+	-- end
 	return group;
+	--]]
 end
 local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	if not search then return nil; end
@@ -12331,9 +12356,14 @@ function app:CreateMiniListForGroup(group)
 		if not group.g and (group.itemID or group.currencyID) then
 			local cmd = group.link or group.key .. ":" .. group[group.key];
 			group = GetCachedSearchResults(cmd, SearchForLink, cmd);
+			-- clone/search initially so as to not let popout operations modify the source data
+			group = CloneData(group);
+		else
+			-- clone/search initially so as to not let popout operations modify the source data
+			group = CloneData(group);
+			-- Merge any purchasable things into the sub-groups
+			FillPurchases(group, true);
 		end
-		-- clone/search initially so as to not let popout operations modify the source data
-		group = CloneData(group);
 		-- This logic allows for nested searches of groups within a popout to be returned as the root search which resets the parent
 		-- if not group.isBaseSearchResult then
 		-- 	-- make a search for this group if it is an item/currency and not already a container for things
@@ -12359,8 +12389,6 @@ function app:CreateMiniListForGroup(group)
 		-- end
 		-- Merge any symbolic linked data into the sub-groups
 		FillSymLinks(group, true);
-		-- Merge any purchasable things into the sub-groups
-		FillPurchases(group, true);
 		-- Create groups showing Appearance information
 		if group.s then
 			-- popout.data = group;
