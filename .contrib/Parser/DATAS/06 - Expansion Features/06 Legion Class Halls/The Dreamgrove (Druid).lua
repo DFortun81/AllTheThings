@@ -47,8 +47,8 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 40784 },	-- Its Rightful Place
 						["provider"] = { "n", 101651 },	-- Belysra Starbreeze
 						["classes"] = { DRUID },
-						["coord"] = { 48.8, 34.2, 47 },
-						["maps"] = { 47 },	-- Duskwood
+						["coord"] = { 48.8, 34.2, DUSKWOOD },
+						["maps"] = { DUSKWOOD },
 					}),
 					q(42586, {	-- A Glade Defense
 						["sourceQuests"] = { 42585 },	-- Recruiting the Troops
@@ -357,8 +357,8 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 40785 },	-- A Foe in the Dark
 						["provider"] = { "n", 100323 },	-- Revil Kost
 						["classes"] = { DRUID },
-						["coord"] = { 77.4, 36.3, 47 },
-						["maps"] = { 47 },	-- Duskwood
+						["coord"] = { 77.4, 36.3, DUSKWOOD },
+						["maps"] = { DUSKWOOD },
 					}),
 					q(46786, {	-- Further Advancement
 						["classes"] = { DRUID },
@@ -441,8 +441,8 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 40783 },	-- The Scythe of Elune
 						["provider"] = { "n", 101656 },	-- Valorn Stillbough
 						["classes"] = { DRUID },
-						["coord"] = { 48.9, 34.3, 47 },
-						["maps"] = { 47 },	-- Duskwood
+						["coord"] = { 48.9, 34.3, DUSKWOOD },
+						["maps"] = { DUSKWOOD },
 					}),
 					q(41449, {	-- Join the Dreamer
 						["sourceQuests"] = { 41422 },	-- Necessary Preparations
@@ -1031,22 +1031,22 @@ _.ExpansionFeatures =
 									["description"] = "If this quest has a checkmark next to it, then that means the stone is active.",
 									["icon"] = "Interface\\Icons\\achievement_zone_duskwood",
 									["coords"] = {
-										{ 42.0, 38.0, 47 },
-										{ 43.0, 38.0, 47 },
-										{ 43.7, 41.9, 47 },
-										{ 44.0, 35.0, 47 },
-										{ 45.0, 36.0, 47 },
-										{ 45.0, 45.0, 47 },
-										{ 46.0, 36.5, 47 },
-										{ 47.3, 35.9, 47 },
-										{ 48.6, 31.7, 47 },
-										{ 48.0, 44.0, 47 },
-										{ 48.9, 38.7, 47 },
-										{ 50.0, 41.0, 47 },
-										{ 50.7, 44.9, 47 },
-										{ 50.8, 45.0, 47 },
-										{ 51.0, 41.0, 47 },
-										{ 51.0, 43.0, 47 },
+										{ 42.0, 38.0, DUSKWOOD },
+										{ 43.0, 38.0, DUSKWOOD },
+										{ 43.7, 41.9, DUSKWOOD },
+										{ 44.0, 35.0, DUSKWOOD },
+										{ 45.0, 36.0, DUSKWOOD },
+										{ 45.0, 45.0, DUSKWOOD },
+										{ 46.0, 36.5, DUSKWOOD },
+										{ 47.3, 35.9, DUSKWOOD },
+										{ 48.6, 31.7, DUSKWOOD },
+										{ 48.0, 44.0, DUSKWOOD },
+										{ 48.9, 38.7, DUSKWOOD },
+										{ 50.0, 41.0, DUSKWOOD },
+										{ 50.7, 44.9, DUSKWOOD },
+										{ 50.8, 45.0, DUSKWOOD },
+										{ 51.0, 41.0, DUSKWOOD },
+										{ 51.0, 43.0, DUSKWOOD },
 									},
 									["sourceQuests"] = { 44326 },	-- Daily Dreamway Event Roll
 								}),

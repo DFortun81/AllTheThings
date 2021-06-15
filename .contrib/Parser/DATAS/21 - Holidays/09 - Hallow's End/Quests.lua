@@ -667,9 +667,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12344, {	-- Candy Bucket — Duskwood, Darkshire, Alliance
 				["isYearly"] = true,
-				["coord"] = { 73.9, 44.4, 47 },
+				["coord"] = { 73.9, 44.4, DUSKWOOD },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 47 },	-- Duskwood
+				["maps"] = { DUSKWOOD },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},

@@ -89,8 +89,8 @@ _.WorldEvents =
 					}),
 					q(60766, {	-- Damned Intruders (A)
 						["u"] = REMOVED_FROM_GAME,
-						["maps"] = { 47 },	-- Duskwood
-						["coord"] = { 73.50, 47.20, 47 },
+						["maps"] = { DUSKWOOD },
+						["coord"] = { 73.50, 47.20, DUSKWOOD },
 						["provider"] = { "n", 166184 },	-- Lieutenant Vernon
 						["sourceQuest"] = 59876,	-- Field Reports (A)
 						["lvl"] = { 50 },
@@ -105,8 +105,8 @@ _.WorldEvents =
 					}),
 					q(60767, {	-- Return of the Scourge (A)
 						["u"] = REMOVED_FROM_GAME,
-						["maps"] = { 47 },	-- Duskwood
-						["coord"] = { 73.50, 47.20, 47 },
+						["maps"] = { DUSKWOOD },
+						["coord"] = { 73.50, 47.20, DUSKWOOD },
 						["provider"] = { "n", 166184 },	-- Lieutenant Vernon
 						["sourceQuest"] = 60766,	-- Damned Intruders (A)
 						["lvl"] = { 50 },

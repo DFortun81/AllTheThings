@@ -157,12 +157,8 @@ _.WorldEvents =
 						["isRaid"] = true,
 						["questID"] = 47463,
 						["isDaily"] = true,
-						["maps"] = {
-							47,	-- Duskwood
-						},
-						["coords"] = {
-							{ 46.54, 39.73, 47 },
-						},
+						["maps"] = { DUSKWOOD },
+						["coord"] = { 46.54, 39.73, DUSKWOOD },
 						["g"] = {
 							i(150429),	-- Emerald Dragonfang
 							i(150412),	-- Hammer of Bestial Fury

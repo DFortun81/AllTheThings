@@ -326,8 +326,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { DUN_MOROGH },
 										}),
 										crit(8,  {	-- Duskwood, Darkshire
-											["coord"] = { 73.9, 44.4, 47 },
-											["maps"] = { 47 },	-- Duskwood
+											["coord"] = { 73.9, 44.4, DUSKWOOD },
+											["maps"] = { DUSKWOOD },
 										}),
 										crit(9,  {	-- Eastern Plaguelands, Light's Hope Chapel
 											["coord"] = { 75.6, 52.4, 23 },

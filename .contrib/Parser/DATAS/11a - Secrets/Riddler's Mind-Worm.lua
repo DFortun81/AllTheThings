@@ -19,7 +19,7 @@ _.Secrets =
 			o(209270, {	-- Step 2: Page 78
 				["model"] = 305393,
 				["questID"] = 47207,
-				["coord"] = { 49.2, 34.0, 47 },
+				["coord"] = { 49.2, 34.0, DUSKWOOD },
 				["sourceQuest"] = 45470,	-- Step 1: Page 9
 				["description"] = "|cFFFFFFFFStep 2:|r This step will take us to |cFFFFD700Duskwood|r.  Head to |cFFFFFFFF49.25, 34.01|r.  |cFFFFD700Page 78|r is found on the table beside the moonwell. Click this to continue.  The page reads...\n\n|cFFFFFFFF...first of the lords to fall...|r",
 				["isWeekly"] = true,

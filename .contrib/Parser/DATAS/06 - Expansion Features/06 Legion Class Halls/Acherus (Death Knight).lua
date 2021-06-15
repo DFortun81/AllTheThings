@@ -237,10 +237,10 @@ _.ExpansionFeatures =
 					}),
 					q(40931, {	-- Following the Curse
 						["provider"] = { "n", 100323 },	-- Revil Kost
-						["coord"] = { 77.4, 36.2, 47 },
+						["coord"] = { 77.4, 36.2, DUSKWOOD },
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 40930,	-- Apocalypse
-						["maps"] = { 47 },	-- Duskwood
+						["maps"] = { DUSKWOOD },
 					}),
 					q(44783, {	-- From Bones They Rise
 						["provider"] = { "n", 116737 },	-- Minerva Ravensorrow

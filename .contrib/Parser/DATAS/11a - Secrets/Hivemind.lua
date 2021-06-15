@@ -10,7 +10,7 @@ _.Secrets =
 		["modelScale"] = 1.1,
 		--["modelID"] = ,
 		["maps"] = {
-			47,
+			DUSKWOOD,
 			64,
 			114,
 			118,
@@ -57,7 +57,7 @@ _.Secrets =
 							o(280837, {	-- Letter 3: Karazhan (Old)
 								["model"] = 1661948,
 								["questID"] = 40404,
-								["coord"] = { 47.4, 75.0, 47 },	-- Karazhan
+								["coord"] = { 47.4, 75.0, DUSKWOOD },	-- Karazhan
 								["sourceQuest"] = 40314, 	-- Leter 2: Prepfoot Compound, Highmountain
 								["description"] = "|cFFFFFFFFLetter 3:|r Go to |cFFFFD700Karazhan (Old)|r in |cFFFFD700Duskwood|r. The third letter is located in |cFFFFD700Medivh's Chambers|r, located after the Chess Event, in the staircase leading to Prince Malchezaar. The letter is on the chair Medivh used to write his scrolls and spells, literally the seat of the guardian. Click it. The letter reads...\n\n|cFFFFFFFFI sat Dumbfounded, watching As the most Subtle Rat reached for the cheese a third time in under an hour.|r\n"
 							}),

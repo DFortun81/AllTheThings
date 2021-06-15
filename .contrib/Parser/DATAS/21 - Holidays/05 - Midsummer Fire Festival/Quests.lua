@@ -598,10 +598,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11743, {	-- Desecrate this Fire! — Duskwood
 				["isYearly"] = true,
 				["provider"] = { "o", 187926 },	-- Alliance Bonfire
-				["coord"] = { 73.2, 54.9, 47 },
+				["coord"] = { 73.2, 54.9, DUSKWOOD },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-				["maps"] = { 47 },	-- Duskwood
+				["maps"] = { DUSKWOOD },
 			}),
 			q(11744, {	-- Desecrate this Fire! — Dustwallow Marsh
 				["isYearly"] = true,
@@ -1030,9 +1030,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11814, {	-- Honor the Flame — Duskwood
 				["provider"] = { "n", 25896 },	-- Duskwood Flame Warden
 				["isYearly"] = true,
-				["coord"] = { 73.8, 54.7, 47 },
+				["coord"] = { 73.8, 54.7, DUSKWOOD },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 47 },	-- Duskwood
+				["maps"] = { DUSKWOOD },
 			}),
 			q(11815, {	-- Honor the Flame — Dustwallow Marsh
 				["provider"] = { "n", 25897 },	-- Dustwallow Marsh Flame Warden
@@ -1910,7 +1910,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					DUN_MOROGH,
 					BURNING_STEPPES,
 					37,		-- Elwynn Forest
-					47,		-- Duskwood
+					DUSKWOOD,
 					48,		-- Loch Modan
 					49,		-- Redridge Mountains
 					50,		-- Northern Stranglethorn

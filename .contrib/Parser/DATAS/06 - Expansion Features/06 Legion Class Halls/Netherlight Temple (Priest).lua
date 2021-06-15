@@ -274,7 +274,7 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 43392,	-- Into the Void
 						["classes"] = { PRIEST },
 						["provider"] = { "n", 110684 },	-- Natalie Seline
-						["coord"] = { 24.2, 37.8, 47 },
+						["coord"] = { 24.2, 37.8, DUSKWOOD },
 						["g"] = {
 							follower(874),	-- Natalie Seline
 						},
@@ -406,7 +406,7 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 43391,	-- Secrets of the Void
 						["classes"] = { PRIEST },
 						["provider"] = { "n", 111041 },	-- Micah Belford
-						["coord"] = { 24.4, 37.8, 47 },
+						["coord"] = { 24.4, 37.8, DUSKWOOD },
 					}),
 					q(46029, {	-- Investigate the Broken Shore
 						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
@@ -517,7 +517,7 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 43392,	-- Into the Void
 						["classes"] = { PRIEST },
 						["provider"] = { "n", 110684 },	-- Natalie Seline
-						["coord"] = { 24.2, 37.8, 47 },
+						["coord"] = { 24.2, 37.8, DUSKWOOD },
 					}),
 					q(43925, {	-- Runescale Koi
 						["repeatable"] = true,
@@ -551,7 +551,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 43390 },	-- Forgotten Shadows
 						["classes"] = { PRIEST },
 						["provider"] = { "n", 111041 },	-- Micah Belford
-						["coord"] = { 24.2, 37.8, 47 },
+						["coord"] = { 24.2, 37.8, DUSKWOOD },
 					}),
 					q(45346, {	-- Shambling Specimens
 						-- TBD: fill in other fields

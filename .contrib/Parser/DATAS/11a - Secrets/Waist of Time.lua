@@ -16,7 +16,7 @@ _.Secrets =
 			BURNING_STEPPES,
 			37,
 			DEADWIND_PASS,
-			47,
+			DUSKWOOD,
 			51,
 			66,
 			FERALAS,
@@ -132,7 +132,7 @@ _.Secrets =
 				["questID"] = 52907,
 				["sourceQuests"] = { 52906 },
 				["description"] = "Duskwood\n\nUnderneath the large plank.\n\nThe Scratched Board reads:\n\n\"<Something is written here.>\n\nThe net saves.\"",
-				["coord"] = { 52.0, 62.4, 47 },	-- Scratched Board
+				["coord"] = { 52.0, 62.4, DUSKWOOD },	-- Scratched Board
 			}),
 			o(294108, { 	-- Lost Ring
 				["model"] = 242730,

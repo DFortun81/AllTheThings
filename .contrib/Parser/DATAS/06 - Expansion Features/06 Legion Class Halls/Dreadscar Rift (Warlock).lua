@@ -293,9 +293,9 @@ _.ExpansionFeatures =
 					q(40588, {	-- Following the Curse
 						["sourceQuest"] = 40495,	-- Ulthalesh, the Deadwind Harvester
 						["classes"] = { WARLOCK },
-						["coord"] = { 77.4, 36.1, 47 },
+						["coord"] = { 77.4, 36.1, DUSKWOOD },
 						["provider"] = { "n", 100323 },	-- Revil Kost
-						["maps"] = { 47 }	-- Duskwood
+						["maps"] = { DUSKWOOD },
 					}),
 					q(46784, {	-- Further Advancement
 						["sourceQuest"] = 46047,	-- Champion: Kanrethad Ebonlocke

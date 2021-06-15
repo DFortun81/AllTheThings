@@ -51,9 +51,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { DUN_MOROGH },
 									}),
 									crit(6,  {	-- Duskwood
-										["coord"] = { 73.8, 54.7, 47 },
+										["coord"] = { 73.8, 54.7, DUSKWOOD },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 47 },	-- Duskwood
+										["maps"] = { DUSKWOOD },
 									}),
 									crit(7,  {	-- Elwynn Forest
 										["coord"] = { 43.5, 62.7, 37 },
@@ -1027,9 +1027,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { DUN_MOROGH },
 									}),
 									crit(6,  {	-- Duskwood
-										["coord"] = { 73.2, 54.9, 47 },
+										["coord"] = { 73.2, 54.9, DUSKWOOD },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 47 },	-- Duskwood
+										["maps"] = { DUSKWOOD },
 									}),
 									crit(7,  {	-- Elwynn Forest
 										["coord"] = { 43.2, 63.0, 37 },
