@@ -4,7 +4,7 @@
 
 _.Instances = { tier(7, {	-- Legion
 	inst(860, {	-- Return to Karazhan
-		["coord"] = { 46.7, 70.1, 42 },
+		["coord"] = { 46.7, 70.1, DEADWIND_PASS },
 		["maps"] = {
 			815, 816, 817, 818, 819, 820, 821, 822,	-- Upper
 			809, 810, 811, 812, 813, 814,	-- Lower

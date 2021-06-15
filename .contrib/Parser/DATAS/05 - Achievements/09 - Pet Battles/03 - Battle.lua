@@ -112,8 +112,8 @@ _.Achievements =
 				crit(21, {	-- Lorewalker Cho (Celestial Tournament)
 					["coord"] = { 34.8, 59.6, 554 },
 				}),
-				crit(22, {	-- Lydia Accoste (Deadwind Pass)
-					["coord"] = { 40.2, 76.6, 42 },
+				crit(22, {	-- Lydia Accoste
+					["coord"] = { 40.2, 76.6, DEADWIND_PASS },
 				}),
 				crit(23, {	-- Major Payne (Icecrown)
 					["coord"] = { 77.4, 19.6, 118 },

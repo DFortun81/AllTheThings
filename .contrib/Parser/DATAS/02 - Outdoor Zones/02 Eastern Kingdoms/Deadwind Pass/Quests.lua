@@ -32,23 +32,23 @@ _.Zones =
 ]]--
 				q(44684, {	-- Corruption Runs Deep
 					["provider"] = { "n", 114631 },	-- Archmage Karlain
-					["coord"] = { 46.9, 75.3, 42 },
+					["coord"] = { 46.9, 75.3, DEADWIND_PASS },
 				}),
 				q(44764, {	-- Demon in Disguise
 					["provider"] = { "n", 114631 },	-- Archmage Karlain <Kirin Tor>
 					["lvl"] = 110,
-					["coord"] = { 46.9, 75.3, 42 },
+					["coord"] = { 46.9, 75.3, DEADWIND_PASS },
 					["sourceQuest"] = 44686,	-- Thought Collection
 				}),
 				q(44557, {	-- Finite Numbers
 					["provider"] = { "n", 114310 },	-- Archmage Khadgar
 					["lvl"] = 110,
-					["coord"] = { 47.0, 75.2, 42 },
+					["coord"] = { 47.0, 75.2, DEADWIND_PASS },
 				}),
 				q(44734, {	-- Fragments of the Past
 					["provider"] = { "n", 114310 },	-- Archmage Khadgar
 					["lvl"] = 110,
-					["coord"] = { 47.0, 75.2, 42 },
+					["coord"] = { 47.0, 75.2, DEADWIND_PASS },
 					["sourceQuest"] = 44733,	-- The Power of Corruption
 					["g"] = {
 						i(142460),	-- Violet Seal of the Archmage
@@ -62,7 +62,7 @@ _.Zones =
 				q(44683, {	-- Holding the Lines
 					["provider"] = { "n", 114310 },	-- Archmage Khadgar
 					["lvl"] = 110,
-					["coord"] = { 47.0, 75.2, 42 },
+					["coord"] = { 47.0, 75.2, DEADWIND_PASS },
 				}),
 --[[
 				q(45296, {	-- No Bones About It
@@ -73,7 +73,7 @@ _.Zones =
 				q(44685, {	-- Reclaiming the Ramparts
 					["provider"] = { "n", 114310 },	-- Archmage Khadgar
 					["lvl"] = 110,
-					["coord"] = { 47.0, 75.2, 42 },
+					["coord"] = { 47.0, 75.2, DEADWIND_PASS },
 					["sourceQuests"] = {
 						44684,	-- Corruption Runs Deep
 						44557,	-- Finite Numbers
@@ -86,20 +86,20 @@ _.Zones =
 						44735,	-- Return to Karazhan: In the Eye of the Beholder
 					},
 					["provider"] = { "n", 18255 },	-- Mage Darius
-					["coord"] = { 47.3, 75.0, 42 },
+					["coord"] = { 47.3, 75.0, DEADWIND_PASS },
 					["lvl"] = 110,
 				}),
 				q(45295, {	-- Return to Karazhan: Clearing Out the Cobwebs
 					["sourceQuest"] = 45294,	-- Return to Karazhan: High Stress Hiatus
 					["provider"] = { "n", 18255 },	-- Mage Darius
-					["coord"] = { 47.3, 75.0, 42 },
+					["coord"] = { 47.3, 75.0, DEADWIND_PASS },
 					["lvl"] = 110,
 				}),
 				q(45294, {	-- Return to Karazhan: High Stress Hiatus
 					["sourceQuest"] = 45293,	-- Return to Karazhan: New Shoes
 					["provider"] = { "n", 18255 },	-- Mage Darius
 					["lvl"] = 110,
-					["coord"] = { 47.3, 75.0, 42 },
+					["coord"] = { 47.3, 75.0, DEADWIND_PASS },
 					["g"] = {
 						i(142468),	-- Violet Seal of the Archmage
 					},
@@ -112,7 +112,7 @@ _.Zones =
 				q(45292, {	-- Return to Karazhan: Rebooting the Cleaner
 					["sourceQuest"] = 45291,	-- Return to Karazhan: Book Wyrms
 					["provider"] = { "n", 18255 },	-- Mage Darius
-					["coord"] = { 47.3, 75.0, 42 },
+					["coord"] = { 47.3, 75.0, DEADWIND_PASS },
 					["lvl"] = 110,
 					["g"] = {
 						i(142461),	-- Violet Seal of the Archmage
@@ -121,7 +121,7 @@ _.Zones =
 				q(44735, {	-- Return to Karazhan: In the Eye of the Beholder
 					["sourceQuest"] = 44733,	-- The Power of Corruption
 					["provider"] = { "n", 114310 },	-- Archmage Khadgar
-					["coord"] = { 47.3, 75.0, 42 },
+					["coord"] = { 47.3, 75.0, DEADWIND_PASS },
 					["lvl"] = 110,
 				}),
 --[[´
@@ -132,7 +132,7 @@ _.Zones =
 				q(44686, {	-- Thought Collection
 					["provider"] = { "n", 114631 },	-- Archmage Karlain <Kirin Tor>
 					["lvl"] = 110,
-					["coord"] = { 46.9, 75.3, 42 },
+					["coord"] = { 46.9, 75.3, DEADWIND_PASS },
 					["sourceQuests"] = {
 						44684,	-- Corruption Runs Deep
 						44557,	-- Finite Numbers
@@ -142,13 +142,13 @@ _.Zones =
 				q(44733, {	-- The Power of Corruption
 					["provider"] = { "n", 114310 },	-- Archmage Khadgar
 					["lvl"] = 110,
-					["coord"] = { 46.9, 75.2, 42 },
+					["coord"] = { 46.9, 75.2, DEADWIND_PASS },
 					["sourceQuest"] = 44764,	-- Demon in Disguise
 				}),
 				q(44154, {	-- The Rite of the Executioner
 					["provider"] = { "o", 254007 },	-- Executioner's Altar
 					["classes"] = { WARLOCK },
-					["coord"] = { 38.7, 73.9, 42 },
+					["coord"] = { 38.7, 73.9, DEADWIND_PASS },
 					["sourceQuest"] = 44083,	-- The Grimoire of the First Necrolyte
 				}),
 				q(44487, {	-- Waterlogged Tome

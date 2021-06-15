@@ -19,10 +19,10 @@ _.ExpansionFeatures =
 				n(QUESTS, {
 					q(40933, {	-- A Grisly Task
 						["provider"] = { "n", 100729 },	-- Revil Kost
-						["coord"] = { 52.3, 34.5, 42 },
+						["coord"] = { 52.3, 34.5, DEADWIND_PASS },
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 40932,	-- Disturbing the Past
-						["maps"] = { 42 },	-- Deadwind Pass
+						["maps"] = { DEADWIND_PASS },
 					}),
 					q(43407, {	-- A Hero's Weapon
 						["provider"] = { "n", 93437 }, -- Highlord Darion Mograine
@@ -218,10 +218,10 @@ _.ExpansionFeatures =
 					}),
 					q(40932, {	-- Disturbing the Past
 						["provider"] = { "n", 100729 },	-- Revil Kost
-						["coord"] = { 52.3, 34.5, 42 },
+						["coord"] = { 52.3, 34.5, DEADWIND_PASS },
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 40931,	-- Following the Curse
-						["maps"] = { 42 },	-- Deadwind Pass
+						["maps"] = { DEADWIND_PASS },
 					}),
 					q(46812, {	-- Draconic Secrets
 						["coord"] = { 44.7, 4.4, 118 },	-- Icecrown
@@ -454,10 +454,10 @@ _.ExpansionFeatures =
 					}),
 					q(40935, {	-- The Call of Vengeance
 						["provider"] = { "n", 101282 },	-- Revil Kost
-						["coord"] = { 68.4, 27.0, 42 },
+						["coord"] = { 68.4, 27.0, DEADWIND_PASS },
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 40934, -- The Dark Riders
-						["maps"] = { 42 },	-- Deadwind Pass
+						["maps"] = { DEADWIND_PASS },
 					}),
 					q(40714, {	-- The Call To War
 						["description"] = "Automatically given to you when you arrive in Dalaran.",
@@ -466,10 +466,10 @@ _.ExpansionFeatures =
 					}),
 					q(40934, {	-- The Dark Riders
 						["provider"] = { "n", 100812 },	-- Revil Kost
-						["coord"] = { 49.4, 74.6, 42 },
+						["coord"] = { 49.4, 74.6, DEADWIND_PASS },
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 40933, -- A Grisly Task
-						["maps"] = { 42 },	-- Deadwind Pass
+						["maps"] = { DEADWIND_PASS },
 						["g"] = {
 							i(128403), -- Apocalypse (Artifact)
 						},

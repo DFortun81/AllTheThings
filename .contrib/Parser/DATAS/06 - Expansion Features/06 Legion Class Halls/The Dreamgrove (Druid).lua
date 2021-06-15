@@ -294,8 +294,8 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 40834 },	-- Following the Curse
 						["provider"] = { "n", 100729 },	-- Revil Kost
 						["classes"] = { DRUID },
-						["coord"] = { 52.4, 34.4, 42 },
-						["maps"] = { 42 },	-- Deadwind Pass
+						["coord"] = { 52.4, 34.4, DEADWIND_PASS },
+						["maps"] = { DEADWIND_PASS },
 					}),
 					q(40654, {	-- Druids of the Claw
 						["classes"] = { DRUID },
@@ -645,8 +645,8 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 40837 },	-- The Deadwind Hunt
 						["provider"] = { "n", 100812 },	-- Revil Kost
 						["classes"] = { DRUID },
-						["coord"] = { 46.9, 69.5, 42 },
-						["maps"] = { 42 },	-- Deadwind Pass
+						["coord"] = { 46.9, 69.5, DEADWIND_PASS },
+						["maps"] = { DEADWIND_PASS },
 						["g"] = {
 							i(128858, {	-- Scythe of Elune
 								artifact(244),	-- Standard Appearance
@@ -657,8 +657,8 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 40835 },	-- Disturbing the Past
 						["provider"] = { "n", 100729 },	-- Revil Kost
 						["classes"] = { DRUID },
-						["coord"] = { 52.4, 34.4, 42 },
-						["maps"] = { 42 },	-- Deadwind Pass
+						["coord"] = { 52.4, 34.4, DEADWIND_PASS },
+						["maps"] = { DEADWIND_PASS },
 					}),
 					q(42055, {	-- The Demi-God's Return
 						["classes"] = { DRUID },

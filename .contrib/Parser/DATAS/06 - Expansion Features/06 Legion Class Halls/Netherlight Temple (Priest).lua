@@ -108,7 +108,7 @@ _.ExpansionFeatures =
 									["description"] = "After the Curator, jump down to the right and head straight into the first nook. There is a tapestry on the wall and 3 bookshelves below. Volume 11 is on the bottom of the left-hand bookshelf.",
 									["provider"] = { "n", 15691 },	-- The Curator
 									["coords"] = {
-										{ 46.9, 74.8, 42 },	-- Karazhan entrance
+										{ 46.9, 74.8, DEADWIND_PASS },	-- Karazhan entrance
 										{ 36.8, 37.9, 358 },
 									},
 								}),

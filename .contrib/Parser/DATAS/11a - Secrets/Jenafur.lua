@@ -28,7 +28,7 @@ _.Secrets =
 					{ "n", 160373 },	-- Meaty Morsel
 					{ "n", 160372 },	-- Slathered Rib
 				},
-				["coord"] = { 46.7, 70.1, 42 },	-- Deadwind Pass, Return to Karazhan entrance
+				["coord"] = { 46.7, 70.1, DEADWIND_PASS },	-- Return to Karazhan entrance
 				["name"] = "|cFFFFFFFFStep 3:|r Amara's Wish",
 				["g"] = {
 					n(160374, {	-- Fishy Bits (2)

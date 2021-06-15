@@ -15,7 +15,7 @@ _.Secrets =
 			BLACKROCK_MOUNTAIN,
 			BURNING_STEPPES,
 			37,
-			42,
+			DEADWIND_PASS,
 			47,
 			51,
 			66,
@@ -113,7 +113,7 @@ _.Secrets =
 				["questID"] = 52905,
 				["sourceQuests"] = { 52904 },
 				["description"] = "Deadwind Pass\n\nInside the old church, near the table.\n\nThe Old Book reads:\n\n\"<Something is written here.>\n\n...A Stage Deception\"",
-				["coord"] = { 41.2, 78.9, 42 },	-- Old Book
+				["coord"] = { 41.2, 78.9, DEADWIND_PASS },	-- Old Book
 			}),
 			o(294106, { 	-- Dead Fish
 				["model"] = 189087,
