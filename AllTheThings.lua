@@ -1830,6 +1830,7 @@ end
 local function GetHash(t)
 	return t.hash or CreateHash(t);
 end
+app.GetHash = GetHash;
 -- The base logic for turning a Table of data into an 'object' that provides dynamic information concerning the type of object which was identified
 -- based on the priority of possible key values
 CreateObject = function(t)
@@ -2872,6 +2873,49 @@ local function FillSymLinks(group, recursive)
 	end
 	-- if app.DEBUG_PRINT == group then app.DEBUG_PRINT = nil; end
 	return group;
+end
+-- Fills & returns a group with its 'cost' references, along with all sub-groups recursively if specified
+-- This should only be used on a cloned group so the source group is not contaminated
+-- The 'cost' tag will be removed afterward so as to not double the tooltip info for the item
+-- app._PurchaseTracking = nil;
+local function FillPurchases(group, recursive)
+	return group;
+
+	-- While in theory this is neat, it turns out the logic needs to be more complicated due to places where Thing A is a cost to Quest A
+	-- which reward Thing B which is a cost to Quest B which rewards Thing A ... etc. like AQ ring quests etc.
+
+	--[[
+	-- local cleanUp;
+	-- if not app._PurchaseTracking then
+	-- 	app._PurchaseTracking = {};
+	-- 	cleanUp = true;
+	-- end
+	-- local trackingKey = app.GetHash(group);
+	-- if group.key == "itemID" and group.itemID == 105867 then app.DEBUG_PRINT = group; end
+	-- group has cost collectibles or is collectible as cost (to thus generate cost collectibles)
+	-- if not app._PurchaseTracking[trackingKey] then
+	-- 	app._PurchaseTracking[trackingKey] = true;
+		print("FillPurchases",app.GetHash(group),recursive)
+		if group.costCollectibles or group.collectibleAsCost then
+			if not group.g then group.g = {}; end
+			MergeObjects(group.g, CloneData(group.costCollectibles));
+		end
+		print("#group.g",group.g and #group.g)
+		-- do recursion after potentially creating new sub-groups
+		if recursive and group.g then
+			local level = (recursive == true and 3) or (recursive > 1 and recursive - 1) or nil;
+			print("Next level",level)
+			for _,s in ipairs(group.g) do
+				FillPurchases(s, level);
+			end
+		end
+	-- end
+	-- if app.DEBUG_PRINT == group then app.DEBUG_PRINT = nil; end
+	-- if cleanUp then
+	-- 	app._PurchaseTracking = nil;
+	-- end
+	return group;
+	--]]
 end
 local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	if not search then return nil; end
@@ -8120,7 +8164,7 @@ local itemFields = {
 						not GetRelativeField(t, "parent", ref) then
 						-- track this item as a cost collectible
 						if not t.costCollectibles then t.costCollectibles = { ref }
-						else tinsert(t.costCollectibles, ref); end
+						else MergeObject(t.costCollectibles, ref); end
 						-- account or debug, skip filter/exclusion logic
 						if app.MODE_DEBUG_OR_ACCOUNT or
 							-- otherwise don't include items which are from something the current character cannot complete
@@ -8670,6 +8714,8 @@ app.GetCurrentMapID = function()
 			end
 		end
 		-- print("Current UI Map ID: ", uiMapID);
+		-- if entering an instance, clear the search Cache so that proper difficulty tooltips are re-generated
+		if IsInInstance() then wipe(searchCache); end
 		app.CurrentMapID = uiMapID;
 	end
 	return uiMapID;
@@ -9888,17 +9934,6 @@ local fields = {
 			local objective = objInfo[t.objectiveID];
 			if objective then return objective.text; end
 		end
-		-- local questID = t.questID;
-		-- if questID then
-		-- 	local objectives = C_QuestLog_GetQuestObjectives(questID);
-		-- 	if objectives then
-		-- 		local objective = objectives[t.objectiveID];
-		-- 		if objective then
-		-- 			return objective.text;
-		-- 		end
-		-- 	end
-		-- 	return RETRIEVING_DATA;
-		-- end
 		return L["QUEST_OBJECTIVE_INVALID"];
 	end,
 	["icon"] = function(t)
@@ -9964,19 +9999,7 @@ local fields = {
 		if objInfo then
 			local objective = objInfo[t.objectiveID];
 			if objective then return objective.finished and 1; end
-		-- else
-		-- 	print("objective.collected Not nested under Quest?",t.questID,t.objectiveID,t.parent.key,t.parent[t.parent.key])
 		end
-		-- local questID = t.questID;
-		-- if questID then
-		-- 	local objectives = C_QuestLog_GetQuestObjectives(questID);
-		-- 	if objectives then
-		-- 		local objective = objectives[t.objectiveID];
-		-- 		if objective then
-		-- 			return objective.finished and 1;
-		-- 		end
-		-- 	end
-		-- end
 	end,
 	["saved"] = function(t)
 		-- If the parent is saved, return immediately.
@@ -9987,19 +10010,7 @@ local fields = {
 		if objInfo then
 			local objective = objInfo[t.objectiveID];
 			if objective then return objective.finished and 1; end
-		-- else
-		-- 	print("objective.saved Not nested under Quest?",t.questID,t.objectiveID,t.parent.key,t.parent[t.parent.key])
 		end
-		-- local questID = t.questID;
-		-- if questID then
-		-- 	local objectives = C_QuestLog_GetQuestObjectives(questID);
-		-- 	if objectives then
-		-- 		local objective = objectives[t.objectiveID];
-		-- 		if objective then
-		-- 			return objective.finished and 1;
-		-- 		end
-		-- 	end
-		-- end
 	end,
 };
 app.BaseQuestObjective = app.BaseObjectFields(fields);
@@ -12380,9 +12391,14 @@ function app:CreateMiniListForGroup(group)
 		if not group.g and (group.itemID or group.currencyID) then
 			local cmd = group.link or group.key .. ":" .. group[group.key];
 			group = GetCachedSearchResults(cmd, SearchForLink, cmd);
+			-- clone/search initially so as to not let popout operations modify the source data
+			group = CloneData(group);
+		else
+			-- clone/search initially so as to not let popout operations modify the source data
+			group = CloneData(group);
+			-- Merge any purchasable things into the sub-groups
+			FillPurchases(group, true);
 		end
-		-- clone/search initially so as to not let popout operations modify the source data
-		group = CloneData(group);
 		-- This logic allows for nested searches of groups within a popout to be returned as the root search which resets the parent
 		-- if not group.isBaseSearchResult then
 		-- 	-- make a search for this group if it is an item/currency and not already a container for things
@@ -19649,6 +19665,18 @@ app.events.VARIABLES_LOADED = function()
 			61229,	-- forging the Crystal Mallet of the Heralds
 			61191,	-- ringing the Vesper of the Silver Wind
 			61183,	-- looting the Gift of the Silver Wind
+			
+			-- Ve'Nari Items (Acc Wide Bonus (Hiddenquest?) but quests are not accwide)
+			63193,	-- bangle of seniority
+			63523,	-- Broker Traversam Enhancer
+			63183, 	-- Extradimensional Pockets
+			63201,	-- Loupe of Unusual Charm
+			61144,	-- Possibility Matrix
+			63200,	-- Rang Insignia: Acquisitionist
+			63204,	-- Ritual Prism of Fortune
+			63202,	-- Vessel of Unfortunate Spirits
+			
+			
 
 			-- etc.
 		}) do
@@ -19900,16 +19928,16 @@ app.events.UPDATE_INSTANCE_INFO = function()
 	RefreshSaves();
 end
 app.events.HEIRLOOMS_UPDATED = function(itemID, kind, ...)
-	-- print("HEIRLOOMS_UPDATED")
+	-- print("HEIRLOOMS_UPDATED",itemID,kind)
 	app.RefreshQuestInfo();
 	if itemID then
-		app:RefreshData(false, true);
+		UpdateSearchResults(SearchForField("itemID", itemID));
 		app:PlayFanfare();
 		app:TakeScreenShot();
 		wipe(searchCache);
 
 		if app.Settings:GetTooltipSetting("Report:Collected") then
-			local name, link = GetItemInfo(itemID);
+			local _, link = GetItemInfo(itemID);
 			if link then print(format(L["ITEM_ID_ADDED_RANK"], link, itemID, (select(5, C_Heirloom.GetHeirloomInfo(itemID)) or 1))); end
 		end
 	end
