@@ -2868,6 +2868,25 @@ local function FillSymLinks(group, recursive)
 	-- if app.DEBUG_PRINT == group then app.DEBUG_PRINT = nil; end
 	return group;
 end
+-- Fills & returns a group with its 'cost' references, along with all sub-groups recursively if specified
+-- This should only be used on a cloned group so the source group is not contaminated
+-- The 'cost' tag will be removed afterward so as to not double the tooltip info for the item
+local function FillPurchases(group, recursive)
+	-- if group.key == "itemID" and group.itemID == 105867 then app.DEBUG_PRINT = group; end
+	-- group has cost collectibles or is collectible as cost (to thus generate cost collectibles)
+	if group.costCollectibles or group.collectibleAsCost then
+		if not group.g then group.g = CloneData(group.costCollectibles)
+		else MergeObjects(group.g, CloneData(group.costCollectibles)); end
+	end
+	-- do recursion after potentially creating sub-groups
+	if recursive and group.g then
+		for _,s in ipairs(group.g) do
+			FillPurchases(s, recursive);
+		end
+	end
+	-- if app.DEBUG_PRINT == group then app.DEBUG_PRINT = nil; end
+	return group;
+end
 local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	if not search then return nil; end
 	local now = time();
@@ -9855,17 +9874,6 @@ local fields = {
 			local objective = objInfo[t.objectiveID];
 			if objective then return objective.text; end
 		end
-		-- local questID = t.questID;
-		-- if questID then
-		-- 	local objectives = C_QuestLog_GetQuestObjectives(questID);
-		-- 	if objectives then
-		-- 		local objective = objectives[t.objectiveID];
-		-- 		if objective then
-		-- 			return objective.text;
-		-- 		end
-		-- 	end
-		-- 	return RETRIEVING_DATA;
-		-- end
 		return L["QUEST_OBJECTIVE_INVALID"];
 	end,
 	["icon"] = function(t)
@@ -9931,19 +9939,7 @@ local fields = {
 		if objInfo then
 			local objective = objInfo[t.objectiveID];
 			if objective then return objective.finished and 1; end
-		-- else
-		-- 	print("objective.collected Not nested under Quest?",t.questID,t.objectiveID,t.parent.key,t.parent[t.parent.key])
 		end
-		-- local questID = t.questID;
-		-- if questID then
-		-- 	local objectives = C_QuestLog_GetQuestObjectives(questID);
-		-- 	if objectives then
-		-- 		local objective = objectives[t.objectiveID];
-		-- 		if objective then
-		-- 			return objective.finished and 1;
-		-- 		end
-		-- 	end
-		-- end
 	end,
 	["saved"] = function(t)
 		-- If the parent is saved, return immediately.
@@ -9954,19 +9950,7 @@ local fields = {
 		if objInfo then
 			local objective = objInfo[t.objectiveID];
 			if objective then return objective.finished and 1; end
-		-- else
-		-- 	print("objective.saved Not nested under Quest?",t.questID,t.objectiveID,t.parent.key,t.parent[t.parent.key])
 		end
-		-- local questID = t.questID;
-		-- if questID then
-		-- 	local objectives = C_QuestLog_GetQuestObjectives(questID);
-		-- 	if objectives then
-		-- 		local objective = objectives[t.objectiveID];
-		-- 		if objective then
-		-- 			return objective.finished and 1;
-		-- 		end
-		-- 	end
-		-- end
 	end,
 };
 app.BaseQuestObjective = app.BaseObjectFields(fields);
@@ -12375,6 +12359,8 @@ function app:CreateMiniListForGroup(group)
 		-- end
 		-- Merge any symbolic linked data into the sub-groups
 		FillSymLinks(group, true);
+		-- Merge any purchasable things into the sub-groups
+		FillPurchases(group, true);
 		-- Create groups showing Appearance information
 		if group.s then
 			-- popout.data = group;
