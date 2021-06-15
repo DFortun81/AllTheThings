@@ -15615,6 +15615,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 		self:RegisterEvent("SCENARIO_UPDATE");
 		self:RegisterEvent("ZONE_CHANGED_INDOORS");
 		self:RegisterEvent("ZONE_CHANGED_NEW_AREA");
+		self:RegisterEvent("ZONE_CHANGED");
 	end
 	if self:IsVisible() then
 		-- Update the window and all of its row data
@@ -16432,6 +16433,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 			self:RegisterEvent("ACTIVE_TALENT_GROUP_CHANGED");
 			self:RegisterEvent("CHAT_MSG_SYSTEM");
 			self:RegisterEvent("SCENARIO_UPDATE");
+			self:RegisterEvent("ZONE_CHANGED");
 			self:RegisterEvent("ZONE_CHANGED_NEW_AREA");
 			self:RegisterEvent("GROUP_ROSTER_UPDATE");
 		end
