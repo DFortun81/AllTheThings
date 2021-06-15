@@ -8104,7 +8104,7 @@ local itemFields = {
 						not GetRelativeField(t, "parent", ref) then
 						-- track this item as a cost collectible
 						if not t.costCollectibles then t.costCollectibles = { ref }
-						else tinsert(t.costCollectibles, ref); end
+						else MergeObject(t.costCollectibles, ref); end
 						-- account or debug, skip filter/exclusion logic
 						if app.MODE_DEBUG_OR_ACCOUNT or
 							-- otherwise don't include items which are from something the current character cannot complete
