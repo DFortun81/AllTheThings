@@ -131,6 +131,9 @@ _.ExpansionFeatures =
 								["coord"] = { 29.7, 10.6, 539 },
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuest"] = 39082,	-- Let's Get To Work
+								["g"] = {
+									i(127268),	-- Ship Blueprint: Transport
+								},
 							}),
 							q(39276, {	-- Strange Tools
 								["provider"] = { "n", 94429 },	-- Solog Roark

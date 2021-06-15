@@ -13,7 +13,7 @@ _.Zones =
 						["itemID"] = 137642,	-- Mark of Honor
 						["coord"] = { 51.8, 17.4, 123 },
 						["races"] = HORDE_ONLY,
-						["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
+						["g"] = pvp({
 							i(48974),	-- Titan-Forged Armwraps of Dominance
 							i(48975),	-- Titan-Forged Armwraps of Salvation
 							i(48976),	-- Titan-Forged Armwraps of Triumph
@@ -90,7 +90,7 @@ _.Zones =
 						["coord"] = { 51.6, 17.6, 123 },
 						["itemID"] = 137642,	-- Mark of Honor
 						["races"] = ALLIANCE_ONLY,
-						["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
+						["g"] = pvp({
 							i(43956, {	-- Reins of the Black War Mammoth
 								["cost"] = { { "i", 137642, 15 }, },	-- 15x Mark of Honor
 								["g"] = {
@@ -237,7 +237,7 @@ _.Zones =
 						["itemID"] = 137642,	-- Mark of Honor
 						["coord"] = { 51.6, 17.6, 123 },
 						["races"] = ALLIANCE_ONLY,
-						["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
+						["g"] = pvp({
 							i(48974),	-- Titan-Forged Armwraps of Dominance
 							i(48975),	-- Titan-Forged Armwraps of Salvation
 							i(48976),	-- Titan-Forged Armwraps of Triumph
@@ -276,7 +276,7 @@ _.Zones =
 						["itemID"] = 137642,	-- Mark of Honor
 						["coord"] = { 48.8, 17.6, 123 },
 						["races"] = ALLIANCE_ONLY,
-						["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
+						["g"] = pvp({
 							i(41742),	-- Design: Enigmatic Skyflare Diamond
 							i(41743),	-- Design: Forlorn Skyflare Diamond
 							i(41744),	-- Design: Impassive Skyflare Diamond
@@ -312,7 +312,7 @@ _.Zones =
 						["coord"] = { 51.6, 17.6, 123 },
 						["itemID"] = 137642,	-- Mark of Honor
 						["races"] = HORDE_ONLY,
-						["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
+						["g"] = pvp({
 							i(44077, {	-- Reins of the Black War Mammoth
 								["cost"] = { { "i", 137642, 15 }, },	-- 15x Mark of Honor
 								["g"] = {

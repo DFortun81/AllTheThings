@@ -18,6 +18,7 @@ _.WorldDrops =
 			}),
 			f(51,   {	-- Neck
 				i(82225),	-- Bejeweled Amulet
+				i(87473),	-- Necklace of the Eternal Watch
 				i(90583),	-- Don Guerrero's Glorious Choker
 				i(82060),	-- Gemmed Amulet
 				i(82170),	-- Grummle Amulet

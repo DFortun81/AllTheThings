@@ -9,7 +9,7 @@ _.Secrets =
 		["maps"] = {
 			ARATHI_HIGHLANDS,
 			BADLANDS,
-			17,
+			BLASTED_LANDS,
 			23,
 			25,
 			BLACKROCK_MOUNTAIN,
@@ -154,7 +154,7 @@ _.Secrets =
 				["questID"] = 52910,
 				["sourceQuests"] = { 52909 },
 				["description"] = "Blasted Lands\n\nBase of the statue, near a candle.  The tooth is present in both the past and present.\n\nThe Broken tooth reads:\n\n\"<Something is written here.>\n\nBrash remains.\"",
-				["coord"] = { 36.8, 27.6, 17 },	-- Broken Tooth
+				["coord"] = { 36.8, 27.6, BLASTED_LANDS },	-- Broken Tooth
 			}),
 			o(294111, { 	-- Worn Helm
 				["model"] = 197882,

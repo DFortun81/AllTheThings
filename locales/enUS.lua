@@ -485,6 +485,8 @@ app.L = {
 	["CELEBRATE_COLLECTED_CHECKBOX_TOOLTIP"] = "Enable this option if you want to hear a celebratory 'fanfare' sound effect when you obtain a new Thing.\n\nThis feature can greatly help keep you motivated.";
 	["WARN_REMOVED_CHECKBOX"] = "Removed Things Trigger a Warning";
 	["WARN_REMOVED_CHECKBOX_TOOLTIP"] = "Enable this option if you want to hear a warning sound effect when you accidentally sell back or trade an item that granted you an appearance that would cause you to lose that appearance from your collection.\n\nThis can be extremely helpful if you vendor an item with a purchase timer. The addon will tell you that you've made a mistake.";
+	["SCREENSHOT_COLLECTED_CHECKBOX"] = "Collected Things Trigger a Screenshot";
+	["SCREENSHOT_COLLECTED_CHECKBOX_TOOLTIP"] = "Enable this option if you want to take a screenshot for every Thing you collect.";
 
 	-- About tab
 	["ABOUT"] = "About";
@@ -908,6 +910,7 @@ app.L = {
 		[-149] = "Interface\\Icons\\ClassIcon_Paladin",										-- Paladin
 		[-150] = "Interface\\Icons\\ClassIcon_Hunter",										-- Hunter
 		[-152] = "Interface\\Icons\\achievement_zone_draenor_01",							-- Garrison Campaign
+		[-153] = 1103070,																	-- Work Orders (Inv_icon_mission_complete_order)
 	--	[-155] = 236566,																	-- Level 48 (old Level 110)
 		[-155] = 236566,																	-- Level 50 (old Level 120)
 		[-160] = app.asset("Category_Mounts"),												-- Mounts

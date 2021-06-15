@@ -149,9 +149,7 @@ _.Zones =
 					crit(9),	-- Solarsprocket Barbel
 					crit(10),	-- Tasty Steelfin
 				}),
-				ach(13570, {		-- Tour of Duty: Mechagon
-					["u"] = PLAYER_VS_PLAYER,
-				}),
+				pvp(ach(13570)),	-- Tour of Duty: Mechagon
 			}),
 		}),
 	}),

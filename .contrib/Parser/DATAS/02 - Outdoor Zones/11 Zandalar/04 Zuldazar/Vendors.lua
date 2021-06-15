@@ -121,7 +121,7 @@ _.Zones =
 				n(161590, {	-- Jinxy Blastwheel <Profession Liason>
 					["coord"] = { 52.7, 58.2, 862 },
 					["races"] = HORDE_ONLY,
-					["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
+					["g"] = pvp({
 						i(171153, {	-- Formula: Uncanny Combatant's Sorcerous Scepter (Rank 2)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),
@@ -349,7 +349,7 @@ _.Zones =
 				n(142552, {	-- Ozgrom Ragefang <Profession Liason>
 					["races"] = HORDE_ONLY,
 					["coord"] = { 52.6, 58.2, 862 },
-					["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
+					["g"] = pvp({
 						i(162439, {	-- Pattern: Honorable Combatant's Satin Belt (Rank 2)
 							["cost"] = { { "i", 137642, 2 }, },	-- 2x Mark of Honor
 						}),

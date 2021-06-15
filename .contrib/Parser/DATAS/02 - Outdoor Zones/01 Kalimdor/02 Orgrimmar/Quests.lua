@@ -207,7 +207,7 @@ _.Zones =
 									q(53353, {	-- Echo of Warlord Zaela
 										["sourceQuests"] = { 53354 },	-- Echo of Gul'dan
 										["provider"] = { "n", 143692 },	-- Anachronos
-										["coord"] = { 54.4, 50.2, 17 },
+										["coord"] = { 54.4, 50.2, BLASTED_LANDS },
 										["races"] = HORDE_ONLY,
 									}),
 									q(53355, {	-- Echo of Garrosh Hellscream
@@ -2529,16 +2529,6 @@ _.Zones =
 						i(63912),	-- Twilight Mirrorshield
 						i(63915),	-- Vision-Tainted Treads
 						i(63917),	-- Truthbreaker Shield [Not listed, but awards on completing quest]
-					},
-				}),
-				q(2753,  {	-- Trampled Under Foot
-					["requireSkill"] = BLACKSMITHING,
-					["sourceQuests"] = { 2752 },	-- On Iron Pauldrons
-					["provider"] = { "n", 7790 },	-- Orokk Omosh
-					["coord"] = { 76.8, 37.4, ORGRIMMAR },
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(7981),	-- Plans: Barbaric Iron Boots
 					},
 				}),
 				q(28475, {	-- Twilight Scheming

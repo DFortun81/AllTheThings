@@ -161,7 +161,7 @@ _.Zones =
 						q(9303,  {	-- Inoculation [Original]
 							-- 9303 is only given to you instead of 37444 if you turn in Vindicator Aldar first, confirmed by Crieve, deleted 3 level 4 Draenei to test it and different scenarios.
 							-- There was absolutely nothing different about the quest other than the quest text, so rather than duplicate the entry, using altQuests instead.
-							-- The extra information doesn't help a new player and you get credit for both anywayson turn in, so it's whatever.
+							-- The extra information doesn't help a new player and you get credit for both anyways on turn in, so it's whatever.
 							["qg"] = 16535,	-- Vindicator Aldar
 							["sourceQuest"] = 10304,	-- Vindicator Aldar
 							-- #if AFTER WOD
@@ -174,6 +174,20 @@ _.Zones =
 							-- #endif
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = lvlsquish(2, 1, 2),
+							["groups"] = {
+								objective(1, {	-- 	Nestlewood Owlkin inoculated
+									["provider"] = { "i", 22962 },	-- Inoculating Crystal
+									["cr"] = 16518,	-- Nestlewood Owlkin
+								}),
+							},
+						}),
+						q(37444, {	-- Inoculation
+							["sourceQuests"] = { 10302 },	-- Volatile Mutations
+							["description"] = "This quest is given if you pick it up before getting or turning in the quest |cFFFFD700Vindicator Aldar|r.",
+							["provider"] = { "n", 16535 },	-- Vindicator Aldar
+							["coord"] = { 50.6, 48.7, AMMEN_VALE },
+							["races"] = ALLIANCE_ONLY,
+							["timeline"] = { "added 6.0.2.18816" },
 							["groups"] = {
 								objective(1, {	-- 	Nestlewood Owlkin inoculated
 									["provider"] = { "i", 22962 },	-- Inoculating Crystal
@@ -250,11 +264,36 @@ _.Zones =
 							-- #else
 							["coord"] = { 80.4, 45.9, AZUREMYST_ISLE },
 							-- #endif
-							["cost"] = {
-								{ "i", 22889, 8 },	-- Vial of Moth Blood
-							},
 							["races"] = ALLIANCE_ONLY,
 							["groups"] = {
+								objective(1, {	-- Vial of Moth Blood
+									["cost"] = {
+										{ "i", 22889, 6 },	-- Vial of Moth Blood
+									},
+								}),
+								i(24129),	-- Salvaged Leather Belt
+								i(24131),	-- Slightly Rusted Bracers
+								i(24130),	-- Worn Slippers
+								-- #if AFTER LEGION
+								i(131819),	-- Partially Tarnished Chain
+								-- #endif
+							},
+						}),
+						q(9369,  {	-- Replenishing the Healing Crystals
+							["qg"] = 16477,	-- Proenitus
+							["sourceQuest"] = 9279,	-- You Survived!
+							-- #if AFTER MOP
+							["coord"] = { 52.7, 35.9, AMMEN_VALE },
+							-- #else
+							["coord"] = { 80.4, 45.9, AZUREMYST_ISLE },
+							-- #endif
+							["races"] = exclude(DRAENEI, ALLIANCE_ONLY),	-- all other races except draenei
+							["groups"] = {
+								objective(1, {	-- Vial of Moth Blood
+									["cost"] = {
+										{ "i", 22889, 6 },	-- Vial of Moth Blood
+									},
+								}),
 								i(24129),	-- Salvaged Leather Belt
 								i(24131),	-- Slightly Rusted Bracers
 								i(24130),	-- Worn Slippers
@@ -315,6 +354,13 @@ _.Zones =
 								i(131250),	-- Coarse Mail Leggings
 								-- #endif
 							},
+						}),
+						q(37445, {	-- Spare Parts
+							["sourceQuests"] = { 10302 },	-- Volatile Mutations
+							["provider"] = { "n", 17071 },	-- Technician Zhanaa
+							["coord"] = { 50.7, 48.0 },
+							["races"] = ALLIANCE_ONLY,
+							["timeline"] = { "added 6.0.2.18816" },
 						}),
 						q(26963, {	-- Steadying Your Shot
 							["qg"] = 16499,	-- Keilnei
@@ -515,3 +561,9 @@ _.Zones =
 		}),
 	})),
 };
+
+_.NeverImplemented = bubbleDown({["u"] = NEVER_IMPLEMENTED},{
+	n(QUESTS, {
+		q(9749),	-- They're Alive! Maybe... (duplicate, never went live)
+	}),
+});

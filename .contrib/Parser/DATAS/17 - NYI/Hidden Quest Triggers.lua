@@ -1774,8 +1774,8 @@ _.HiddenQuestTriggers =
 		q(37460),	-- Gorgrond - Short-Supply Reward (Drov the Ruiner killed)
 		q(37672),	-- Short-Supply Reward (Rukhmar bonus roll)
 		q(37675),	-- Tarlna the Ageless bonus roll
-		q(39434),	-- Short-Supply Reward
-		q(39375),	-- Short-Supply Reward
+		q(39434),	-- Short-Supply Reward / First Rare killed in Tanaan
+		q(39375),	-- Short-Supply Reward / Suspiciously Glowing Chest in Tanaan
 		q(39376),	-- Short-Supply Reward
 		q(39377),	-- Short-Supply Reward
 		q(39378),	-- Short-Supply Reward
@@ -3418,6 +3418,7 @@ _.HiddenQuestTriggers =
 		q(59062),	-- choosing Spike as the name for your Aqir Hatchling
 		q(59059),	-- chose "Yu'gaz" as the name for your Aqir Hatchling
 		q(59132),	-- probably "Unwavering Resolve" achievement (upgrade cloak to rank 15)
+		q(59030),	-- Vulpera learning Flames of Fury (175158) for Bag of Tricks
 
 		-- Horrific Visions
 		-- Orgrimmar
@@ -3770,6 +3771,7 @@ _.HiddenQuestTriggers =
 		q(63452),	-- Triggered when exceeding the rep needed for a Wild Hunt paragon box, but before turning in the quest for the paragon box
 					-- Also when reaching Renown 23, rep only at Honored with Wild Hunt
 		q(62941),	-- When opening the box containing Blacksmithing WQ supplies for 61435
+		q(59729),	-- During Getting Backstage
 		-- Ardenweald Rares
 		q(62267),	-- Gormbore secondary quest
 		q(62269),	-- Macabre secondary quest
@@ -4025,6 +4027,7 @@ _.HiddenQuestTriggers =
 		q(63394),	-- When completing 60237 (Old Stomping Grounds) and receiving Stitched Wraith's Armguards (182497)
 		q(59266),	-- triggered when i picked up the last eye for "Prying Eyes"
 		q(60166),	-- Triggered after raising portcullis to access Miru Soulblossom in Etheric Vault
+		q(63428),	-- After Necro intro skip (A Hero of Great Renown)
 
 		-- Oribos
 		q(62019),	-- Triggered after choosing Night Fae covenant

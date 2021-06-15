@@ -447,6 +447,7 @@ _.ExpansionFeatures =
 							i(114131),	-- Power Overrun Weapon Enhancement
 							i(122576),	-- Rush Order: Alchemy Lab
 							i(122594),	-- Rush Order: Tailoring Emporium
+							i(118474),	-- Supreme Manual of Dance
 							i(114616),	-- War Ravaged Weaponry
 							i(120302),	-- Weapon Enhancement Token
 							i(122584),	-- Winning with Wildlings

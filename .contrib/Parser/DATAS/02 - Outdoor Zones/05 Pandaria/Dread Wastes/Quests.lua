@@ -342,8 +342,12 @@ _.Zones =
 					["provider"] = { "n", 64815 },	-- Kor'ik
 					["sourceQuest"] = 31066,	-- A Cry From Darkness
 				}),
-				q(31679, {	-- Extending Our Coverage (NYI - duplicate)
-					["u"] = NEVER_IMPLEMENTED,
+				q(31679, {	-- Extending Our Coverage
+					["coord"] = { 48.0, 49.6, 422 },
+					["provider"] = { "n", 65975 },	-- Zer'ik
+					["altQuests"] = { 31087 },	-- Extending Our Coverage
+					["description"] = "This version is available if Kor'ik has been killed.",
+					["sourceQuest"] = 31441,	-- Corruption Runs Deep
 				}),
 				q(31465, {	-- Extracting Answers
 					["coord"] = { 56.2, 58.2, 422 },

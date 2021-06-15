@@ -98,7 +98,7 @@ _.Zones =
 				}),
 				n(115887, {	-- Trinket
 					["coord"] = { 32.4, 66.8, 650 },
-					["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
+					["g"] = pvp({
 						i(142364), 	-- Bag of Twigs
 						i(142368, {	-- Cracked Falcosaur Beak
 							["cost"] = 10000000,	-- 1,000g

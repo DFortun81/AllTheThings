@@ -12,7 +12,7 @@ _.Zones =
 					n(27760, {	-- "Grizzly" D. Adams <Venture Coin Vendor>
 						["coord"] = { 13.8, 86.4, 116 },
 						["races"] = ALLIANCE_ONLY,
-						["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
+						["g"] = pvp({
 							i(38358, {	-- Arcane Revitalizer
 								["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
 							}),
@@ -44,7 +44,7 @@ _.Zones =
 					n(27730, {	-- Purkom <Venture Coin Vendor>
 						["coord"] = { 13.8, 86.2, 116 },
 						["races"] = HORDE_ONLY,
-						["g"] = bubbleDown({["u"] = PLAYER_VS_PLAYER}, {
+						["g"] = pvp({
 							i(38358, {	-- Arcane Revitalizer
 								["cost"] = { { "i", 137642, 1 }, },	-- 1x Mark of Honor
 							}),

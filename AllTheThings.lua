@@ -914,6 +914,13 @@ app.report = function(...)
 	app.print(app.Version .. L["PLEASE_REPORT_MESSAGE"]);
 end
 
+-- Screenshot
+function app:TakeScreenShot()
+	if app.Settings:GetTooltipSetting("Screenshot") then
+		Screenshot();
+	end
+end
+
 -- audio lib
 local lastPlayedFanfare;
 function app:PlayCompleteSound()
@@ -1536,10 +1543,12 @@ local PrintQuestInfo = function(questID, new, info)
 				questID = questID .. " [HQT]";
 			end
 		end
-		if new then
-			print("Quest accepted: #" .. questID .. (info or ""));
+		if new == true then
+			print("Quest accepted #" .. questID .. (info or ""));
+		elseif new == false then
+			print("Quest unflagged #" .. questID .. (info or ""));
 		else
-			print("Completed Quest #" .. questID .. (info or ""));
+			print("Quest completed #" .. questID .. (info or ""));
 		end
 	end
 end
@@ -1551,6 +1560,10 @@ local CompletedQuests = setmetatable({}, {__newindex = function (t, key, value)
 		ATTAccountWideData.Quests[key] = 1;
 		app.CurrentCharacter.Quests[key] = 1;
 		PrintQuestInfo(key);
+	elseif value == false then
+		-- no need to actually set the key in the table since it's been marked as incomplete
+		-- and this meta function only triggers on NEW key assignments
+		PrintQuestInfo(key, false);
 	end
 end});
 -- returns nil if nil provided, otherwise true/false based on the specific quest being completed by the current character
@@ -6374,7 +6387,7 @@ end)();
 -- Death Tracker Lib
 (function()
 local OnUpdateForDeathTrackerLib = function(t)
-	if app.MODE_DEBUG then	--app.Settings:Get("Thing:Deaths");
+	if app.MODE_DEBUG then -- app.Settings:Get("Thing:Deaths");
 		t.visible = app.GroupVisibilityFilter(t);
 		local stat = select(1, GetStatistic(60)) or "0";
 		if stat == "--" then stat = "0"; end
@@ -6388,7 +6401,7 @@ local OnUpdateForDeathTrackerLib = function(t)
 	else
 		t.visible = false;
 	end
-	return true;
+	return false;
 end
 local fields = {
 	["key"] = function(t)
@@ -8866,6 +8879,7 @@ local RefreshMounts = function(newMountID)
 
 	if newSpellIDResults then
 		UpdateSearchResults(newSpellIDResults);
+		app:TakeScreenShot();
 		app:PlayRareFindSound();
 	end
 end
@@ -9996,9 +10010,17 @@ app:RegisterEvent("QUEST_SESSION_JOINED");
 end)();
 
 local function QueryCompletedQuests()
-	local t = CompletedQuests;
+	local t, freshCompletes = CompletedQuests, {};
 	for _,v in pairs(C_QuestLog_GetAllCompletedQuestIDs()) do
 		t[v] = true;
+		freshCompletes[v] = true;
+	end
+	-- check for 'unflagged' questIDs (this seems to basically not impact lag at all... i hope)
+	for q,_ in pairs(t) do
+		if not freshCompletes[q] then
+			t[q] = nil;		-- delete the key
+			t[q] = false;	-- trigger the metatable function
+		end
 	end
 end
 local function RefreshQuestCompletionState(questID)
@@ -10280,6 +10302,7 @@ app.events.NEW_PET_ADDED = function(petID)
 		rawset(collectedSpecies, speciesID, 1);
 		UpdateSearchResults(SearchForField("speciesID", speciesID));
 		app:PlayFanfare();
+		app:TakeScreenShot();
 		wipe(searchCache);
 	end
 end
@@ -11340,7 +11363,7 @@ UpdateGroup = function(parent, group, window)
 	-- if not app.DEBUG_LOG and shouldLog then
 	-- 	app.DEBUG_LOG = shouldLog;
 	-- end
-	
+
 	-- -- Only update a group ONCE per update cycle...
 	-- if not group._Updated or group._Updated ~= app._Updated then
 	-- 	if LOG then print("First Update") end
@@ -12571,51 +12594,55 @@ function app:CreateMiniListForGroup(group)
 				gTop = NestSourceQuests(root).g or {};
 			elseif root.sourceQuests then
 				local sourceQuests, sourceQuest, subSourceQuests, prereqs = root.sourceQuests;
+				local addedQuests = {};
 				while sourceQuests and #sourceQuests > 0 do
 					subSourceQuests = {}; prereqs = {};
 					for i,sourceQuestID in ipairs(sourceQuests) do
-						local qs = sourceQuestID < 1 and SearchForField("creatureID", math.abs(sourceQuestID)) or SearchForField("questID", sourceQuestID);
-						if qs and #qs > 0 then
-							local i, sq = #qs;
-							while not sq and i > 0 do
-								if qs[i].questID == sourceQuestID then sq = qs[i]; end
-								i = i - 1;
-							end
-							-- just throw every sourceQuest into groups since it's specific questID?
-							-- continue to force collectible though even without quest tracking since it's a temp window
-							-- only reason to include altQuests in search was because of A/H questID usage, which is now cleaned up for quest objects
-							local found = nil;
-							if sq and sq.questID then
-								if sq.parent and sq.parent.questID == sq.questID then
-									sq = sq.parent;
+						if not addedQuests[sourceQuestID] then
+							addedQuests[sourceQuestID] = true;
+							local qs = sourceQuestID < 1 and SearchForField("creatureID", math.abs(sourceQuestID)) or SearchForField("questID", sourceQuestID);
+							if qs and #qs > 0 then
+								local i, sq = #qs;
+								while not sq and i > 0 do
+									if qs[i].questID == sourceQuestID then sq = qs[i]; end
+									i = i - 1;
 								end
-								found = sq;
-							end
-							if found and not found.isBreadcrumb then
-								sourceQuest = CloneData(found);
-								sourceQuest.collectible = true;
-								sourceQuest.visible = true;
-								sourceQuest.hideText = true;
-								if found.sourceQuests and #found.sourceQuests > 0 and
-									(not found.saved or app.CollectedItemVisibilityFilter(sourceQuest)) then
-									-- Mark the sub source quest IDs as marked (as the same sub quest might point to 1 source quest ID)
-									for j, subsourceQuests in ipairs(found.sourceQuests) do
-										subSourceQuests[subsourceQuests] = true;
+								-- just throw every sourceQuest into groups since it's specific questID?
+								-- continue to force collectible though even without quest tracking since it's a temp window
+								-- only reason to include altQuests in search was because of A/H questID usage, which is now cleaned up for quest objects
+								local found = nil;
+								if sq and sq.questID then
+									if sq.parent and sq.parent.questID == sq.questID then
+										sq = sq.parent;
 									end
+									found = sq;
 								end
+								if found and not found.isBreadcrumb then
+									sourceQuest = CloneData(found);
+									sourceQuest.collectible = true;
+									sourceQuest.visible = true;
+									sourceQuest.hideText = true;
+									if found.sourceQuests and #found.sourceQuests > 0 and
+										(not found.saved or app.CollectedItemVisibilityFilter(sourceQuest)) then
+										-- Mark the sub source quest IDs as marked (as the same sub quest might point to 1 source quest ID)
+										for j, subsourceQuests in ipairs(found.sourceQuests) do
+											subSourceQuests[subsourceQuests] = true;
+										end
+									end
+								else
+									sourceQuest = nil;
+								end
+							elseif sourceQuestID > 0 then
+								-- Create a Quest Object.
+								sourceQuest = app.CreateQuest(sourceQuestID, { ['visible'] = true, ['collectible'] = true, ['hideText'] = true });
 							else
-								sourceQuest = nil;
+								-- Create a NPC Object.
+								sourceQuest = app.CreateNPC(math.abs(sourceQuestID), { ['visible'] = true, ['hideText'] = true });
 							end
-						elseif sourceQuestID > 0 then
-							-- Create a Quest Object.
-							sourceQuest = app.CreateQuest(sourceQuestID, { ['visible'] = true, ['collectible'] = true, ['hideText'] = true });
-						else
-							-- Create a NPC Object.
-							sourceQuest = app.CreateNPC(math.abs(sourceQuestID), { ['visible'] = true, ['hideText'] = true });
-						end
 
-						-- If the quest was valid, attach it.
-						if sourceQuest then tinsert(prereqs, sourceQuest); end
+							-- If the quest was valid, attach it.
+							if sourceQuest then tinsert(prereqs, sourceQuest); end
+						end
 					end
 
 					-- Convert the subSourceQuests table into an array
@@ -12624,6 +12651,9 @@ function app:CreateMiniListForGroup(group)
 						for sourceQuestID,i in pairs(subSourceQuests) do
 							tinsert(sourceQuests, tonumber(sourceQuestID));
 						end
+						-- print("Shifted pre-reqs down & next sq layer",#prereqs)
+						-- app.PrintTable(sourceQuests)
+						-- print("---")
 						tinsert(prereqs, {
 							["text"] = L["UPON_COMPLETION"],
 							["description"] = L["UPON_COMPLETION_DESC"],
@@ -12640,7 +12670,6 @@ function app:CreateMiniListForGroup(group)
 				-- Clean up the recursive hierarchy. (this removed duplicates)
 				sourceQuests = {};
 				prereqs = g;
-				local orig = g;
 				while prereqs and #prereqs > 0 do
 					for i=#prereqs,1,-1 do
 						local o = prereqs[i];
@@ -12658,11 +12687,9 @@ function app:CreateMiniListForGroup(group)
 					if #prereqs > 1 then
 						prereqs = prereqs[#prereqs];
 						if prereqs then prereqs = prereqs.g; end
-						orig = prereqs;
 					else
 						prereqs = prereqs[#prereqs];
 						if prereqs then prereqs = prereqs.g; end
-						orig[#orig].g = prereqs;
 					end
 				end
 
@@ -13566,6 +13593,11 @@ RowOnEnter = function (self)
 				AttachTooltipSearchResults(GameTooltip, "speciesID:" .. reference.speciesID, SearchForField, "speciesID", reference.speciesID);
 			elseif reference.u then
 				GameTooltip:AddLine(L["UNOBTAINABLE_ITEM_REASONS"][reference.u][2], 1, 1, 1, 1, true);
+			end
+			-- PvP filter text
+			if reference.pvp then
+				-- TODO: probably re-design this once it's no longer considered an unobtainable filter completely
+				GameTooltip:AddLine(L["UNOBTAINABLE_ITEM_REASONS"][12][2], 1, 1, 1, 1, true);
 			end
 		end
 		if reference.speciesID then
@@ -17290,6 +17322,7 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 						app:RefreshData(true, true);
 						if not previousState or not app.Settings:Get("AccountWide:Recipes") then
 							app:PlayFanfare();
+							app:TakeScreenShot();
 						end
 						wipe(searchCache);
 					end
@@ -19598,7 +19631,7 @@ app.events.VARIABLES_LOADED = function()
 			52888,	-- Verdant Hollow (BFA Alliance Outpost Unlock)
 			53043,	-- Vulture's Nest (Mission Completion)
 			53044,	-- Vulture's Nest (BFA Alliance Outpost Unlock)
-			
+
 			-- These are BOTH once-per-account (single character) completion & shared account-wide lockout groups (likely due to locking Account-Wide HQTs)
 			53063,	-- A Mission of Unity (BFA Alliance WQ Unlock)
 			53064,	-- A Mission of Unity (BFA Horde WQ Unlock)
@@ -19608,10 +19641,10 @@ app.events.VARIABLES_LOADED = function()
 
 			53055,	-- Pushing Our Influence (BFA Horde PreQ for 1st Foothold)
 			53056,	-- Pushing Our Influence (BFA Alliance PreQ for 1st Foothold)
-			
+
 			53207,	-- The Warfront Looms (BFA Horde Warfront Breadcrumb)
 			53175,	-- The Warfront Looms (BFA Alliance Warfront Breadcrumb)
-			
+
 			-- Shard Labor
 			61229,	-- forging the Crystal Mallet of the Heralds
 			61191,	-- ringing the Vesper of the Silver Wind
@@ -19872,6 +19905,7 @@ app.events.HEIRLOOMS_UPDATED = function(itemID, kind, ...)
 	if itemID then
 		app:RefreshData(false, true);
 		app:PlayFanfare();
+		app:TakeScreenShot();
 		wipe(searchCache);
 
 		if app.Settings:GetTooltipSetting("Report:Collected") then
@@ -19912,7 +19946,7 @@ app.events.QUEST_ACCEPTED = function(questID)
 				end
 			end
 		end
-		PrintQuestInfo(questID, 1, freq);
+		PrintQuestInfo(questID, true, freq);
 		-- Check if this quest is a nextQuest of a non-collected breadcrumb if breadcrumbs are being tracked
 		if app.Settings:Get("Thing:QuestBreadcrumbs") then
 			local nextQuests = app.SearchForField("nextQuests", questID);
@@ -20001,6 +20035,7 @@ app.events.TOYS_UPDATED = function(itemID, new)
 		--[[]]-- uncomment to test
 		app:RefreshData(false, true);
 		app:PlayFanfare();
+		app:TakeScreenShot();
 		--]]
 		wipe(searchCache);
 
@@ -20021,6 +20056,7 @@ app.events.TRANSMOG_COLLECTION_SOURCE_ADDED = function(sourceID)
 			ATTAccountWideData.Sources[sourceID] = 1;
 			app.ActiveItemCollectionHelper(sourceID, oldState);
 			app:PlayFanfare();
+			app:TakeScreenShot();
 			wipe(searchCache);
 			SendSocialMessage("S\t" .. sourceID .. "\t" .. oldState .. "\t1");
 		end

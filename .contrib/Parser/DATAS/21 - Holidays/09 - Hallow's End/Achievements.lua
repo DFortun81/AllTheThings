@@ -310,12 +310,12 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { BADLANDS },
 										}),
 										crit(4,  {	-- Blasted Lands, Nethergarde Keep
-											["coord"] = { 60.7, 14.2, 17 },
-											["maps"] = { 17 },	-- Blasted Lands
+											["coord"] = { 60.7, 14.2, BLASTED_LANDS },
+											["maps"] = { BLASTED_LANDS },
 										}),
 										crit(5,  {	-- Blasted Lands, Surwich
-											["coord"] = { 44.4, 87.7, 17 },
-											["maps"] = { 17 },	-- Blasted Lands
+											["coord"] = { 44.4, 87.7, BLASTED_LANDS },
+											["maps"] = { BLASTED_LANDS },
 										}),
 										crit(6,  {	-- The Cape of Stranglethorn, Booty Bay
 											["coord"] = { 40.9, 73.8, 210 },
@@ -419,8 +419,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { BADLANDS },
 										}),
 										crit(4,  {	-- Blasted Lands, Dreadmaul Hold
-											["coord"] = { 40.5, 11.4, 17 },
-											["maps"] = { 17 },	-- Blasted Lands
+											["coord"] = { 40.5, 11.4, BLASTED_LANDS },
+											["maps"] = { BLASTED_LANDS },
 										}),
 										crit(5,  {	-- The Cape of Stranglethorn, Booty Bay
 											["coord"] = { 40.9, 73.8, 210 },

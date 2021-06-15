@@ -105,6 +105,9 @@ _.ExpansionFeatures =
 							q(39241, {	-- Shipbuilding
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 39236,	-- Let's Get To Work
+								["g"] = {
+									i(127268),	-- Ship Blueprint: Transport
+								},
 							}),
 							q(37841, {	-- The Final Assault
 								["u"] = REMOVED_FROM_GAME,

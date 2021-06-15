@@ -5,17 +5,17 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(17, {	-- Blasted Lands
+		m(BLASTED_LANDS, {
 			n(VENDORS, {
 				n(3546, {	-- Bernie Heisten <Food & Drink>
-					["coord"] = { 63.5, 17.0, 17 },
+					["coord"] = { 63.5, 17.0, BLASTED_LANDS },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(23848),	-- Nethergarde Bitter
 					},
 				}),
 				n(8178, {	-- Nina Lightbrew <Alchemy Supplies>
-					["coord"] = { 62.5, 16.0, 17 },
+					["coord"] = { 62.5, 16.0, BLASTED_LANDS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(9300, {	-- Recipe: Elixir of Demonslaying
@@ -24,7 +24,7 @@ _.Zones =
 					},
 				}),
 				n(44321, {	-- Sarah Lightbrew <Enchanting Supplies>
-					["coord"] = { 62.4, 16.2, 17 },
+					["coord"] = { 62.4, 16.2, BLASTED_LANDS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(20753),	-- Formula: Lesser Wizard Oil
@@ -34,7 +34,7 @@ _.Zones =
 					},
 				}),
 				n(76117, {	-- Quartermaster Rindelle <Replacement Quest Rewards and General Goods>
-					["coord"] = { 66.4, 27.6, 17 },
+					["coord"] = { 66.4, 27.6, BLASTED_LANDS },
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "Vendor only sells quest reward items as you progress through the invasion story.",
 					["g"] = {
@@ -61,7 +61,7 @@ _.Zones =
 					},
 				}),
 				n(76522, {	-- Zerpy Clampshock <Replacement Quest Rewards and General Goods>
-					["coord"] = { 71.5, 49.1, 17 },
+					["coord"] = { 71.5, 49.1, BLASTED_LANDS },
 					["races"] = HORDE_ONLY,
 					["description"] = "Vendor only sells quest reward items as you progress through the invasion story.",
 					["g"] = {

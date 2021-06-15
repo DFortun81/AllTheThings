@@ -150,11 +150,11 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 						10741,	-- Distinguished Service [Protector]
 						10739,	-- Distinguished Service [Restorer]
 					},
-					["cost"] = {
-						{ "i", 29281, 1 },	-- Violet Signet
-					},
 					["lvl"] = 70,
 					["groups"] = {
+						objective(1, {	-- 0/1 Violet Signet
+							["provider"] = { "i", 29281 },	-- Violet Signet
+						}),
 						i(29282),	-- Violet Signet
 					},
 				}),
@@ -170,11 +170,11 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 						10741,	-- Distinguished Service [Protector]
 						10739,	-- Distinguished Service [Restorer]
 					},
-					["cost"] = {
-						{ "i", 29285, 1 },	-- Violet Signet
-					},
 					["lvl"] = 70,
 					["groups"] = {
+						objective(1, {	-- 0/1 Violet Signet
+							["provider"] = { "i", 29285 },	-- Violet Signet
+						}),
 						i(29286),	-- Violet Signet
 					},
 				}),
@@ -190,11 +190,11 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 						--10741,	-- Distinguished Service [Protector]
 						10739,	-- Distinguished Service [Restorer]
 					},
-					["cost"] = {
-						{ "i", 29277, 1 },	-- Violet Signet
-					},
 					["lvl"] = 70,
 					["groups"] = {
+						objective(1, {	-- 0/1 Violet Signet
+							["provider"] = { "i", 29277 },	-- Violet Signet
+						}),
 						i(29278),	-- Violet Signet
 					},
 				}),
@@ -210,11 +210,11 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 						10741,	-- Distinguished Service [Protector]
 						--10739,	-- Distinguished Service [Restorer]
 					},
-					["cost"] = {
-						{ "i", 29289, 1 },	-- Violet Signet
-					},
 					["lvl"] = 70,
 					["groups"] = {
+						objective(1, {	-- 0/1 Violet Signet
+							["provider"] = { "i", 29289 },	-- Violet Signet
+						}),
 						i(29291),	-- Violet Signet
 					},
 				}),
@@ -230,11 +230,11 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 						10736,	-- Down the Violet Path [Protector]
 						10734,	-- Down the Violet Path [Restorer]
 					},
-					["cost"] = {
-						{ "i", 29280, 1 },	-- Violet Signet
-					},
 					["lvl"] = 70,
 					["groups"] = {
+						objective(1, {	-- 0/1 Violet Signet
+							["provider"] = { "i", 29280 },	-- Violet Signet
+						}),
 						i(29281),	-- Violet Signet
 					},
 				}),
@@ -250,11 +250,11 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 						10736,	-- Down the Violet Path [Protector]
 						10734,	-- Down the Violet Path [Restorer]
 					},
-					["cost"] = {
-						{ "i", 29284, 1 },	-- Violet Signet
-					},
 					["lvl"] = 70,
 					["groups"] = {
+						objective(1, {	-- 0/1 Violet Signet
+							["provider"] = { "i", 29284 },	-- Violet Signet
+						}),
 						i(29285),	-- Violet Signet
 					},
 				}),
@@ -270,11 +270,11 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 						--10736,	-- Down the Violet Path [Protector]
 						10734,	-- Down the Violet Path [Restorer]
 					},
-					["cost"] = {
-						{ "i", 29276, 1 },	-- Violet Signet
-					},
 					["lvl"] = 70,
 					["groups"] = {
+						objective(1, {	-- 0/1 Violet Signet
+							["provider"] = { "i", 29276 },	-- Violet Signet
+						}),
 						i(29277),	-- Violet Signet
 					},
 				}),
@@ -290,11 +290,11 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 						10736,	-- Down the Violet Path [Protector]
 						--10734,	-- Down the Violet Path [Restorer]
 					},
-					["cost"] = {
-						{ "i", 29288, 1 },	-- Violet Signet
-					},
 					["lvl"] = 70,
 					["groups"] = {
+						objective(1, {	-- 0/1 Violet Signet
+							["provider"] = { "i", 29288 },	-- Violet Signet
+						}),
 						i(29289),	-- Violet Signet
 					},
 				}),
@@ -310,11 +310,11 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 						10728,	-- Eminence Among the Violet Eye [Protector]
 						10726,	-- Eminence Among the Violet Eye [Restorer]
 					},
-					["cost"] = {
-						{ "i", 29282, 1 },	-- Violet Signet
-					},
 					["lvl"] = 70,
 					["groups"] = {
+						objective(1, {	-- 0/1 Violet Signet
+							["provider"] = { "i", 29282 },	-- Violet Signet
+						}),
 						i(29283),	-- Violet Signet of the Master Assassin
 					},
 				}),
@@ -330,11 +330,11 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 						10728,	-- Eminence Among the Violet Eye [Protector]
 						10726,	-- Eminence Among the Violet Eye [Restorer]
 					},
-					["cost"] = {
-						{ "i", 29286, 1 },	-- Violet Signet
-					},
 					["lvl"] = 70,
 					["groups"] = {
+						objective(1, {	-- 0/1 Violet Signet
+							["provider"] = { "i", 29286 },	-- Violet Signet
+						}),
 						i(29287),	-- Violet Signet of the Archmage
 					},
 				}),
@@ -350,11 +350,11 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 						--10728,	-- Eminence Among the Violet Eye [Protector]
 						10726,	-- Eminence Among the Violet Eye [Restorer]
 					},
-					["cost"] = {
-						{ "i", 29278, 1 },	-- Violet Signet
-					},
 					["lvl"] = 70,
 					["groups"] = {
+						objective(1, {	-- 0/1 Violet Signet
+							["provider"] = { "i", 29278 },	-- Violet Signet
+						}),
 						i(29279),	-- Violet Signet of the Great Protector
 					},
 				}),
@@ -370,11 +370,11 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 						10728,	-- Eminence Among the Violet Eye [Protector]
 						--10726,	-- Eminence Among the Violet Eye [Restorer]
 					},
-					["cost"] = {
-						{ "i", 29291, 1 },	-- Violet Signet
-					},
 					["lvl"] = 70,
 					["groups"] = {
+						objective(1, {	-- 0/1 Violet Signet
+							["provider"] = { "i", 29291 },	-- Violet Signet
+						}),
 						i(29290),	-- Violet Signet of the Grand Restorer
 					},
 				}),
@@ -707,10 +707,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 				["groups"] = {
 					i(22559),	-- Formula: Enchant Weapon - Mongoose
 					i(138797, {	-- Illusion: Mongoose
-						["timeline"] = {
-							"created 7.0.3.22248",
-							"added 7.0.3.22248"
-						},
+						["timeline"] = { "added 7.0.3.22248" },
 					}),
 					i(28524),	-- Emerald Ripper
 					i(28525),	-- Signet of Unshakable Faith
@@ -770,16 +767,10 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 						},
 						["groups"] = {
 							i(138017, {	-- Clothes Chest Pattern: Karazhan Opera House
-								["timeline"] = {
-									"created 7.0.3.22248",
-									"added 7.0.3.22248"
-								},
+								["timeline"] = { "added 7.0.3.22248" },
 							}),
 							i(122231, {	-- Music Roll: Karazhan Opera House
-								["timeline"] = {
-									"created 6.1.0.19480",
-									"added 6.1.0.19480"
-								},
+								["timeline"] = { "added 6.1.0.19480" },
 							}),
 							i(28593),	-- Eternium Greathelm
 							i(28589),	-- Beastmaw Pauldrons
@@ -800,10 +791,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 						},
 						["groups"] = {
 							i(97548, {	-- Spiky Collar (PET!)
-								["timeline"] = {
-									"created 5.3.0.16758",
-									"added 5.3.0.16758"
-								},
+								["timeline"] = { "added 5.3.0.16758" },
 							}),
 							i(28584),	-- Big Bad Wolf's Paw
 							i(28581),	-- Wolfslayer Sniper Rifle
@@ -871,10 +859,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 				["creatureID"] = 15691,
 				["groups"] = {
 					i(97549, {	-- Instant Arcane Sanctum Security Kit (PET!)
-						["timeline"] = {
-							"created 5.3.0.16758",
-							"added 5.3.0.16758"
-						},
+						["timeline"] = { "added 5.3.0.16758" },
 					}),
 					i(29757, {	-- Gloves of the Fallen Champion
 						["classes"] = { PALADIN, ROGUE, SHAMAN },
@@ -898,16 +883,10 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 				["groups"] = {
 					i(22561),	-- Formula: Enchant Weapon - Soulfrost
 					i(138799, {	-- Illusion: Soulfrost
-						["timeline"] = {
-							"created 7.0.3.22248",
-							"added 7.0.3.22248"
-						},
+						["timeline"] = { "added 7.0.3.22248" },
 					}),
 					i(97551, {	-- Satyr Charm (PET!)
-						["timeline"] = {
-							"created 5.3.0.16758",
-							"added 5.3.0.16758"
-						},
+						["timeline"] = { "added 5.3.0.16758" },
 					}),
 					i(28658),	-- Terestian's Stranglestaff
 					i(28657),	-- Fool's Bane
@@ -932,10 +911,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 				["groups"] = {
 					i(22560),	-- Formula: Enchant Weapon - Sunfire
 					i(138798, {	-- Illusion: Sunfire
-						["timeline"] = {
-							"created 7.0.3.22248",
-							"added 7.0.3.22248"
-						},
+						["timeline"] = { "added 7.0.3.22248" },
 					}),
 					i(28673),	-- Tirisfal Wand of Ascendancy
 					i(28728),	-- Aran's Soothing Sapphire
@@ -994,10 +970,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 				["groups"] = {
 					ach(690),	-- Karazhan
 					i(97550, {	-- Netherspace Portal Stone (PET!)
-						["timeline"] = {
-							"created 5.3.0.16758",
-							"added 5.3.0.16758"
-						},
+						["timeline"] = { "added 5.3.0.16758" },
 					}),
 					i(29760, {	-- Helm of the Fallen Champion
 						["classes"] = { PALADIN, ROGUE, SHAMAN },

@@ -252,7 +252,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(5973, {	-- Pattern: Barbaric Leggings
-					["isLimited"] = true,
+							["isLimited"] = true,
 						}),
 					},
 				}),
