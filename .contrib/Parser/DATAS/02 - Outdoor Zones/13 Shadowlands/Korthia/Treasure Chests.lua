@@ -392,6 +392,7 @@ _.Zones =
 							["description"] = "Either behind the building, next to the building hidden in a bush, or next to the anima pool.",
 							["isDaily"] = true,
 							["coords"] = {
+								{ 59.2, 56.7, KORTHIA },	-- next to a bush
 								{ 60.3, 56.5, KORTHIA },	-- next to the anima pool
 								{ 61.0, 58.7, KORTHIA },	-- behind the building
 								{ 62.1, 57.7, KORTHIA },	-- hidden in a bush between two trees

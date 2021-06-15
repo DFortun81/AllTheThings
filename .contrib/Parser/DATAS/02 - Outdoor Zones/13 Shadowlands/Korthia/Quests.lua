@@ -591,6 +591,12 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 61.6, 26.0, KORTHIA },
 				}),
+				q(64015, {	-- Into the Meat Grinder
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
+					["provider"] = { "n", 178805 },	-- Emeni
+					["isDaily"] = true,
+					["coord"] = { 60.1, 27.5, KORTHIA },
+				}),
 				q(64065, {	-- Local Reagents
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 178806 },	-- Plague Deviser Marileth

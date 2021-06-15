@@ -26,6 +26,7 @@ _.Zones =
 						{ 41.1, 39.8, KORTHIA },
 						{ 49.3, 41.8, KORTHIA },
 						{ 59.8, 15.1, KORTHIA },
+						{ 62.4, 49.7, KORTHIA },
 					},
 					["icon"] = 3155422,
 					["cr"] = 179912,	-- Maelie the Wanderer
