@@ -340,27 +340,27 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(28959, {	-- Candy Bucket — Blasted Lands, Dreadmaul Hold, Horde
 				["isYearly"] = true,
-				["coord"] = { 40.5, 11.4, 17 },
+				["coord"] = { 40.5, 11.4, BLASTED_LANDS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 17 },	-- Blasted Lands
+				["maps"] = { BLASTED_LANDS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(28960, {	-- Candy Bucket — Blasted Lands, Nethergarde Keep, Alliance
 				["isYearly"] = true,
-				["coord"] = { 60.7, 14.2, 17 },
+				["coord"] = { 60.7, 14.2, BLASTED_LANDS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 17 },	-- Blasted Lands
+				["maps"] = { BLASTED_LANDS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(28961, {	-- Candy Bucket — Blasted Lands, Surwich, Alliance
 				["isYearly"] = true,
-				["coord"] = { 44.4, 87.7, 17 },
+				["coord"] = { 44.4, 87.7, BLASTED_LANDS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 17 },	-- Blasted Lands
+				["maps"] = { BLASTED_LANDS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},

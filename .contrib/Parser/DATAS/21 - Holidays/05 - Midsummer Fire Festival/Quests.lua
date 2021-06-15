@@ -108,10 +108,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(28917, {	-- Desecrate this Fire! — Blasted Lands
 				["isYearly"] = true,
 				["provider"] = { "o", 207989 },	-- Horde Bonfire
-				["coord"] = { 46.3, 14.4, 17 },
+				["coord"] = { 46.3, 14.4, BLASTED_LANDS },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
-				["maps"] = { 17 },	-- Blasted Lands
+				["maps"] = { BLASTED_LANDS },
 			}),
 			q(13441, {	-- Desecrate this Fire! — Borean Tundra
 				["isYearly"] = true,
@@ -518,10 +518,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11737, {	-- Desecrate this Fire! — Blasted Lands
 				["isYearly"] = true,
 				["provider"] = { "o", 187920 },	-- Alliance Bonfire
-				["coord"] = { 55.2, 15.3, 17 },
+				["coord"] = { 55.2, 15.3, BLASTED_LANDS },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-				["maps"] = { 17 },	-- Blasted Lands
+				["maps"] = { BLASTED_LANDS },
 			}),
 			q(11738, {	-- Desecrate this Fire! — Bloodmyst Isle
 				["isYearly"] = true,
@@ -953,9 +953,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11808, {	-- Honor the Flame — Blasted Lands
 				["provider"] = { "n", 25890 },	-- Blasted Lands Flame Warden
 				["isYearly"] = true,
-				["coord"] = { 55.5, 15.0, 17 },
+				["coord"] = { 55.5, 15.0, BLASTED_LANDS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 17 },	-- Blasted Lands
+				["maps"] = { BLASTED_LANDS },
 			}),
 			q(11809, {	-- Honor the Flame — Bloodmyst Isle
 				["provider"] = { "n", 25891 },	-- Bloodmyst Isle Flame Warden
@@ -1347,9 +1347,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(28930, {	-- Honor the Flame — Blasted Lands
 				["provider"] = { "n", 51603 },	-- Blasted Lands Flame Keeper
 				["isYearly"] = true,
-				["coord"] = { 46.2, 13.8, 17 },
+				["coord"] = { 46.2, 13.8, BLASTED_LANDS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 17 },	-- Blasted Lands
+				["maps"] = { BLASTED_LANDS },
 			}),
 			q(13493, {	-- Honor the Flame — Borean Tundra
 				["provider"] = { "n", 32809 },	-- Borean Tundra Flame Keeper
@@ -1904,7 +1904,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["maps"] = {
 					ARATHI_HIGHLANDS,
 					BADLANDS,
-					17,		-- Blasted Lands
+					BLASTED_LANDS,
 					22,		-- Western Plaguelands
 					26,		-- The Hinterlands
 					27,		-- Dun Morogh

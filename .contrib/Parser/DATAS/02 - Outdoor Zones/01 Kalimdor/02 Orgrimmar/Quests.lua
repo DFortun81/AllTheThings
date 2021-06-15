@@ -207,7 +207,7 @@ _.Zones =
 									q(53353, {	-- Echo of Warlord Zaela
 										["sourceQuests"] = { 53354 },	-- Echo of Gul'dan
 										["provider"] = { "n", 143692 },	-- Anachronos
-										["coord"] = { 54.4, 50.2, 17 },
+										["coord"] = { 54.4, 50.2, BLASTED_LANDS },
 										["races"] = HORDE_ONLY,
 									}),
 									q(53355, {	-- Echo of Garrosh Hellscream

@@ -185,11 +185,9 @@ _.WorldEvents =
 						["isRaid"] = true,
 						["questID"] = 47461,
 						["isDaily"] = true,
-						["maps"] = {
-							17,	-- Blasted Lands
-						},
+						["maps"] = { BLASTED_LANDS },
 						["coords"] = {
-							{ 32.42, 48.21 ,17 },
+							{ 32.42, 48.21, BLASTED_LANDS },
 						},
 						["g"] = {
 							i(150383),	-- Amberseal Keeper

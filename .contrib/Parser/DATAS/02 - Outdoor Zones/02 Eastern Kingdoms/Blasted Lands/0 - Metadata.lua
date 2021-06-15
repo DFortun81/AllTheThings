@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(17, {	-- Blasted Lands
+		m(BLASTED_LANDS, {
 			["description"] = "The Blasted Lands are a scorched zone connecting Eastern Kingdoms to Outland via the Dark Portal. It is filled with demons and ogres. New to Cataclysm is the Gilnean village of Surwich, a sinister forest revitalized by druid Marl Wormthorn.",
 			["achievementID"] = 766,
 		}),

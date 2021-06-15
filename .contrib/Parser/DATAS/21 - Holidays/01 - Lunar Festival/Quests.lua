@@ -275,8 +275,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["description"] = "In order to view this Elder, visit Zidormi at 48.1, 7.3 to see Blasted Lands before the invasion.",
 				["provider"] = { "n", 15563 },	-- Elder Bellowrage
 				["isYearly"] = true,
-				["coord"] = { 54.2, 49.4, 17 },
-				["maps"] = { 17 },	-- Blasted Lands
+				["coord"] = { 54.2, 49.4, BLASTED_LANDS },
+				["maps"] = { BLASTED_LANDS },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(2, {	-- Elder Bellowrage

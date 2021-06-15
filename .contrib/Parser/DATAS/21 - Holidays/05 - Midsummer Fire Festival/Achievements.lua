@@ -36,9 +36,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { BADLANDS },
 									}),
 									crit(3,  {	-- Blasted Lands
-										["coord"] = { 55.5, 15.0, 17 },
+										["coord"] = { 55.5, 15.0, BLASTED_LANDS },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 17 },	-- Blasted Lands
+										["maps"] = { BLASTED_LANDS },
 									}),
 									crit(4,  {	-- Burning Steppes
 										["coord"] = { 68.2, 60.6, 36 },
@@ -316,9 +316,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { BADLANDS },
 									}),
 									crit(3,  {	-- Blasted Lands
-										["coord"] = { 46.3, 14.4, 17 },
+										["coord"] = { 46.3, 14.4, BLASTED_LANDS },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 17 },	-- Blasted Lands
+										["maps"] = { BLASTED_LANDS },
 									}),
 									crit(4,  {	-- Burning Steppes
 										["coord"] = { 51.5, 29.3, 36 },
@@ -742,9 +742,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { BADLANDS },
 									}),
 									crit(3,  {	-- Blasted Lands
-										["coord"] = { 46.2, 13.8, 17 },
+										["coord"] = { 46.2, 13.8, BLASTED_LANDS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 17 },	-- Blasted Lands
+										["maps"] = { BLASTED_LANDS },
 									}),
 									crit(4,  {	-- Burning Steppes
 										["coord"] = { 51.1, 29.2, 36 },
@@ -1012,9 +1012,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { BADLANDS },
 									}),
 									crit(3,  {	-- Blasted Lands
-										["coord"] = { 55.2, 15.3, 17 },
+										["coord"] = { 55.2, 15.3, BLASTED_LANDS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 17 },	-- Blasted Lands
+										["maps"] = { BLASTED_LANDS },
 									}),
 									crit(4,  {	-- Burning Steppes
 										["coord"] = { 68.6, 59.9, 36 },
