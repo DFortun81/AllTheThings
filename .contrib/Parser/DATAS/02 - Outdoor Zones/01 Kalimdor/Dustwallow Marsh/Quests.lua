@@ -1198,7 +1198,10 @@ _.Zones =
 					["provider"] = { "n", 23566 },	-- Calia Hastings
 					["coord"] = { 68.3, 51.1, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 28552,	-- Hero's Call: Dustwallow Marsh
+					["sourceQuests"] = { 
+						28552,	-- Hero's Call: Dustwallow Marsh
+						26702,	-- Flight to Theramore
+					},
 				}),
 				-- #if AFTER BFA
 				q(6624, {	-- Triage (A)
