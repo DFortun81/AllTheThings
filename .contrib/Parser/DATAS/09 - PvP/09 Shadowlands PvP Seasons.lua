@@ -4,7 +4,7 @@
 
 _.PVP =
 {
-	n(-10100, {	-- Shadowlands
+	pvp(n(-10100, {	-- Shadowlands
 		n(-693, {	-- Sinful Gladiator: Shadowlands Season 1
 			n(-659, {	-- Aspirant Gear
 				n(-322, {	-- Cloak
@@ -451,7 +451,7 @@ _.PVP =
 			}),
 		}),
 		n(-694, {	-- Unchained Gladiator: Shadowlands Season 2
-			n(-659, bubbleDown({["u"] = PLAYER_VS_PLAYER}, {	-- Aspirant Gear
+			n(-659, {	-- Aspirant Gear
 				n(-322, {	-- Cloak
 					i(185240),	-- Unchained Aspirant's Cape
 					i(185128),	-- Unchained Aspirant's Cloak
@@ -567,8 +567,8 @@ _.PVP =
 					i(185289),	-- Unchained Aspirant's Sword
 					i(185293),	-- Unchained Aspirant's Warglaive
 				}),
-			})),
-			n(-661, bubbleDown({["u"] = PLAYER_VS_PLAYER}, {	-- Gladiator Gear
+			}),
+			n(-661, {	-- Gladiator Gear
 				n(-322, {	-- Cloak
 					i(185164),	-- Unchained Gladiator's Cloak
 					i(185245),	-- Unchained Gladiator's Drape
@@ -681,7 +681,7 @@ _.PVP =
 					i(185312),	-- Unchained Gladiator's Warglaive
 					i(185315),	-- Unchained Gladiator's Xiphos
 				}),
-			})),
+			}),
 			n(-662, {	-- Elite Gear
 				--[[ TODO
 				n(-322, {	-- Cloak
@@ -704,14 +704,14 @@ _.PVP =
 				}),
 			--]]
 			}),
-			f(100, bubbleDown({["u"] = PLAYER_VS_PLAYER}, {	-- Mounts
+			f(100, {	-- Mounts
 				i(186178, {	-- Vicious War Gorm (A)
 					["races"] = ALLIANCE_ONLY,
 				}),
 				i(186179, {	-- Vicious War Gorm (H)
 					["races"] = HORDE_ONLY,
 				}),
-			})),
+			}),
 		}),
-	}),
+	})),
 };
