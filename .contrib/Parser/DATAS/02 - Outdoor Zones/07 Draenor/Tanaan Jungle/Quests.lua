@@ -424,11 +424,13 @@ _.Zones =
 					["provider"] = { "n", 90309 },	-- Exarch Yrel
 					["coord"] = { 58.4, 60.3, 534 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 38445,	-- The Assault Base
+					["sourceQuest"] = 38445,
+					["isBreadcrumb"] = true,	-- The Assault Base
 				}),
 				q(39423, {	-- Shipyard Report
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 37935,	-- The Assault Base
+					["sourceQuest"] = 37935,
+					["isBreadcrumb"] = true,	-- The Assault Base
 				}),
 				q(38445, {	-- The Assault Base
 					["provider"] = { "n", 91923 },	-- Exarch Naielle
