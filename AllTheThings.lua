@@ -19714,16 +19714,16 @@ app.events.UPDATE_INSTANCE_INFO = function()
 	RefreshSaves();
 end
 app.events.HEIRLOOMS_UPDATED = function(itemID, kind, ...)
-	-- print("HEIRLOOMS_UPDATED")
+	-- print("HEIRLOOMS_UPDATED",itemID,kind)
 	app.RefreshQuestInfo();
 	if itemID then
-		app:RefreshData(false, true);
+		UpdateSearchResults(SearchForField("itemID", itemID));
 		app:PlayFanfare();
 		app:TakeScreenShot();
 		wipe(searchCache);
 
 		if app.Settings:GetTooltipSetting("Report:Collected") then
-			local name, link = GetItemInfo(itemID);
+			local _, link = GetItemInfo(itemID);
 			if link then print(format(L["ITEM_ID_ADDED_RANK"], link, itemID, (select(5, C_Heirloom.GetHeirloomInfo(itemID)) or 1))); end
 		end
 	end
