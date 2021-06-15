@@ -8635,6 +8635,8 @@ app.GetCurrentMapID = function()
 			end
 		end
 		-- print("Current UI Map ID: ", uiMapID);
+		-- if entering an instance, clear the search Cache so that proper difficulty tooltips are re-generated
+		if IsInInstance() then wipe(searchCache); end
 		app.CurrentMapID = uiMapID;
 	end
 	return uiMapID;
