@@ -420,8 +420,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8650,  {	-- Snowcrown the Elder
 				["provider"] = { "n", 15566 },	-- Elder Snowcrown
 				["isYearly"] = true,
-				["coord"] = { 75.7, 54.4, 23 },
-				["maps"] = { 23 },	-- Eastern Plaguelands
+				["coord"] = { 75.7, 54.4, EASTERN_PLAGUELANDS },
+				["maps"] = { EASTERN_PLAGUELANDS },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(16, {	-- Elder Snowcrown in Light's Hope Chapel
@@ -456,8 +456,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8688,  {	-- Windrun the Elder
 				["provider"] = { "n", 15592 },	-- Elder Windrun
 				["isYearly"] = true,
-				["coord"] = { 35.5, 68.8, 23 },
-				["maps"] = { 23 },	-- Eastern Plaguelands
+				["coord"] = { 35.5, 68.8, EASTERN_PLAGUELANDS },
+				["maps"] = { EASTERN_PLAGUELANDS },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(15, {	-- Elder Windrun in Eastern Plaguelands
@@ -1011,9 +1011,9 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["description"] = "Enter Stratholme through the main gate.  The Elder is in the northeast corner, east of The Unforgiven.",
 				["provider"] = { "n", 15607 },	-- Elder Farwhisper
 				["isYearly"] = true,
-				["coord"] = { 27.7, 11.6, 23 },	-- Stratholme entrance
+				["coord"] = { 27.7, 11.6, EASTERN_PLAGUELANDS },	-- Stratholme entrance
 				["maps"] = {
-					23,		-- Eastern Plaguelands
+					EASTERN_PLAGUELANDS,
 					STRATHOLME,
 				},
 				["u"] = 17,	-- Lunar Festival

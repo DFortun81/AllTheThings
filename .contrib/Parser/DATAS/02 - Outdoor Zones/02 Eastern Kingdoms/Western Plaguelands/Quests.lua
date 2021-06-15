@@ -272,7 +272,7 @@ _.Zones =
 				q(5408,  {	-- Corruptor's Scourgestones
 					["provider"] = { "n", 11039 },		-- Duke Nicholas Zverenhoff
 					["u"] = REMOVED_FROM_GAME,			-- Removed in Patch 4.0.3
-					["coord"] = { 75.76, 53.81, 23 },
+					["coord"] = { 75.76, 53.81, EASTERN_PLAGUELANDS },
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(12844)),	-- Argent Dawn Valor Token -- Removed in Patch 4.0.3
 					},

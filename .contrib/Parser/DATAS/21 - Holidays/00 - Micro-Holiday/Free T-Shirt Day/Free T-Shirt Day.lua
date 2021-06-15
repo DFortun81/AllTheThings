@@ -101,8 +101,8 @@ _.Holidays =
 					},
 				}),
 				n(150904, {	-- Melvin Shirtson
-					["coord"] = { 74.3, 53.0, 23 },
-					["maps"] = { 23 },	-- Eastern Plaguelands
+					["coord"] = { 74.3, 53.0, EASTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS },
 					["u"] = 22,
 					["g"] = {
 						un(22, i(167220)),	-- Threads of Tirion

@@ -250,12 +250,12 @@ _.PetBattles =
 	}),
 	q(56492, {	-- Pet Battle Challenge: Stratholme
 		["provider"] = { "n", 150987 },	-- Sean Wilkers
-		["coord"] = { 43.1, 19.9, 23 },
+		["coord"] = { 43.1, 19.9, EASTERN_PLAGUELANDS },
 		["sourceQuest"] = 56491,	-- Tiny Terrors of Stratholme
 		["isWeekly"] = true,
 		["lvl"] = 120,
 		["maps"] = {
-			23,	-- Eastern Plaguelands
+			EASTERN_PLAGUELANDS,
 			1505,	-- Pet Dungeon
 		},
 		["g"] = {
@@ -292,7 +292,7 @@ _.PetBattles =
 			}),
 			q(56491, {	-- Tiny Terrors of Stratholme
 				["provider"] = { "n", 150987 },	-- Sean Wilkers
-				["coord"] = { 43.2, 20.0, 23 },
+				["coord"] = { 43.2, 20.0, EASTERN_PLAGUELANDS },
 				["sourceQuests"] = {
 					56489,	-- Restless Dead (A)
 					56490,	-- Restless Dead (H)
@@ -310,7 +310,7 @@ _.PetBattles =
 				},
 			}),
 			n(150987, {	-- Sean Wilkers
-				["coord"] = { 43.1, 20.0, 23 },	-- Eastern Plaguelands
+				["coord"] = { 43.1, 20.0, EASTERN_PLAGUELANDS },
 				["g"] = {
 					i(169666, {	-- Unopened Stratholme Supply Crate
 						["cost"] = { { "i", 169665, 1 } },	-- 1x Cleansed Remains

@@ -9,7 +9,7 @@ _.WorldEvents =
 		["maps"] = {
 			ORGRIMMAR,
 			86,	-- Orgrimmar: Cleft of Shadows
-			13,	-- Stormwind City
+			STORMWIND_CITY,
 		},
 		["g"] = {
 			ach(10741, {	-- 12th Anniversary
@@ -42,7 +42,7 @@ _.WorldEvents =
 				q(43323, {	-- A Time to Reflect
 					["provider"] = { "n", 110034 },		-- Historian Llore
 					["isDaily"] = true,
-					["coord"] = { 84.6, 25.0, 13 },
+					["coord"] = { 84.6, 25.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					-- Note!! See Master List of quiz answers at the end in a better format
 					-- Was going to list it in description, but too many and terrible looking
@@ -74,7 +74,7 @@ _.WorldEvents =
 					},
 				}),
 				n(110034, {	-- Historian Llore [Alliance]
-					["coord"] = { 84.6, 25.0, 13 },
+					["coord"] = { 84.6, 25.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {	-- WoW Anniversary
 						i(136925, {	-- Corgi Pup

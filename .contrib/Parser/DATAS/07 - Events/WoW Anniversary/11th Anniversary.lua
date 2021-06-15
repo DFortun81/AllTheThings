@@ -9,7 +9,7 @@ _.WorldEvents =
 		["maps"] = {
 			ORGRIMMAR,
 			86,	-- Orgrimmar: Cleft of Shadows
-			13,	-- Stormwind City
+			STORMWIND_CITY,
 		},
 		["g"] = {
 			ach(10058, {	-- 11th Anniversary

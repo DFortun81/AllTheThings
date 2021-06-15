@@ -5,11 +5,11 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(23, {	-- Eastern Plaguelands
+		m(EASTERN_PLAGUELANDS, {
 			n(VENDORS, {
 				n(12384, {	-- Agustus the Touched
 					["description"]	= "Vendor will not sell to you until you complete his quest.|r",
-					["coord"] = { 11.4, 28.6, 23 },
+					["coord"] = { 11.4, 28.6, EASTERN_PLAGUELANDS },
 					["g"] = {
 						i(15902, {	-- A Crazy Grab Bag
 							["isLimited"] = true,
@@ -24,7 +24,7 @@ _.Zones =
 				}),
 				n(29587, {	-- Dread Commander Thalanor
 					["classes"] = { DEATHKNIGHT },
-					["coord"] = { 84.0, 49.8, 23 },
+					["coord"] = { 84.0, 49.8, EASTERN_PLAGUELANDS },
 					["g"] = {
 						i(40775),	-- Winged Steed of the Ebon Blade
 						i(136796, {	-- Necrophile Tome: Corpse Exploder
@@ -33,7 +33,7 @@ _.Zones =
 					},
 				}),
 				n(12941, {	-- Jase Farlane <Trade Supplies>
-					["coord"] = { 74.3, 50.9, 23 },
+					["coord"] = { 74.3, 50.9, EASTERN_PLAGUELANDS },
 					["g"] = {
 						i(21954, {	-- Design: Ring of Bitter Shadows
 							["isLimited"] = true,
@@ -42,7 +42,7 @@ _.Zones =
 					},
 				}),
 				n(11536, {	-- Quartermaster Miranda Breechlock <The Argent Crusade>
-					["coord"]= { 75.8, 54.0, 23 },
+					["coord"] = { 75.8, 54.0, EASTERN_PLAGUELANDS },
 					["g"] = {
 						i(18171),	-- Arcane Mantle of the Dawn
 						i(18182),	-- Chromatic Mantle of the Dawn
@@ -68,7 +68,7 @@ _.Zones =
 				}),
 				n(28512, {	-- Quartermaster Ozorg
 					["classes"] = { DEATHKNIGHT },
-					["coord"] = { 81.9, 48.4, 23 },
+					["coord"] = { 81.9, 48.4, EASTERN_PLAGUELANDS },
 					["g"] = {
 						i(34649),	-- Archerus Knight's Gauntlets
 						i(34651),	-- Archerus Knight's Girdle

@@ -702,8 +702,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12402, {	-- Candy Bucket — Eastern Plaguelands, Light's Hope Chapel, neutral
 				["isYearly"] = true,
-				["coord"] = { 75.6, 52.4, 23 },
-				["maps"] = { 23 },	-- Eastern Plaguelands
+				["coord"] = { 75.6, 52.4, EASTERN_PLAGUELANDS },
+				["maps"] = { EASTERN_PLAGUELANDS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},

@@ -18,7 +18,7 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 92183 },	-- Alard Schmied
 						["coord"] = { 45.0, 29.6, 627 },
 						["maps"] = { 627 },	-- Dalaran
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 123918, 25 },	-- Leystone Ore x25
 							{ "i", 147768, 1 },		-- Suramarian Sapphire
 						},
@@ -563,7 +563,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 42774 },	-- Hope Prevails
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 90369 },	-- Lord Maxwell Tyrosus
-						["coord"] = { 74.3, 53.2, 23 },
+						["coord"] = { 74.3, 53.2, EASTERN_PLAGUELANDS },
 					}),
 					q(42120, {	-- The Silver Hand
 						["sourceQuests"] = { 42377 },	-- The Brother's Trail

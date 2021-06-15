@@ -498,8 +498,8 @@ _.WorldEvents =
 				n(RARES, {
 					["g"] = {
 						n(169035, {	-- Nathanos Blightcaller
-							["maps"] = { 23 },	-- Eastern Plaguelands
-							["coord"] = { 23.5, 68.4, 23 },
+							["maps"] = { EASTERN_PLAGUELANDS },
+							["coord"] = { 23.5, 68.4, EASTERN_PLAGUELANDS },
 							["isRaid"] = true,
 							["questID"] = 60542,
 							["isWorldQuest"] = true,

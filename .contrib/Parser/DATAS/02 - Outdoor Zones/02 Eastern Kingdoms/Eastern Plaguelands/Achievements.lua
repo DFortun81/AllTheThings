@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(23, {	-- Eastern Plaguelands
+		m(EASTERN_PLAGUELANDS, {
 			n(ACHIEVEMENTS, {
 				ach(4892, {	-- Eastern Plaguelands Quests
 					crit(1, {	-- The Paladin Pals
@@ -51,7 +51,7 @@ _.Zones =
 						["g"] = {
 							n(46022, {	-- Beezil Linkspanner
 								["questID"] = 27563,
-								["coord"] = { 73.8, 52.4, 23 },
+								["coord"] = { 73.8, 52.4, EASTERN_PLAGUELANDS },
 							}),
 						},
 					}),

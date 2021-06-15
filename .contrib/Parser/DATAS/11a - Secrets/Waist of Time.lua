@@ -10,7 +10,7 @@ _.Secrets =
 			ARATHI_HIGHLANDS,
 			BADLANDS,
 			BLASTED_LANDS,
-			23,
+			EASTERN_PLAGUELANDS,
 			25,
 			BLACKROCK_MOUNTAIN,
 			BURNING_STEPPES,
@@ -105,7 +105,7 @@ _.Secrets =
 				["questID"] = 52904,
 				["sourceQuests"] = { 52903 },
 				["description"] = "Eastern Plaguelands\n\nInside the crypt, on top of the sarcophagus lid\n\nThe Pretty Flower reads:\n\n\"<Something is written here.>\n\nDead Rune Thug\"",
-				["coord"] = { 24.0, 78.0, 23 },	-- Pretty Flower
+				["coord"] = { 24.0, 78.0, EASTERN_PLAGUELANDS },	-- Pretty Flower
 			}),
 			o(294105, { 	-- Old Book
 				["model"] = 244161,

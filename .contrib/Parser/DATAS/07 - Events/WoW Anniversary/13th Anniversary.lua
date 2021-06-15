@@ -9,7 +9,7 @@ _.WorldEvents =
 		["maps"] = {
 			ORGRIMMAR,
 			86,	-- Orgrimmar: Cleft of Shadows
-			13,	-- Stormwind City
+			STORMWIND_CITY,
 		},
 		["g"] = {
 			ach(11848, {	-- 13th Anniversary
@@ -53,7 +53,7 @@ _.WorldEvents =
 					["provider"] = { "n", 110034 },		-- Historian Llore
 					["isDaily"] = true,
 					["coords"] = {
-						{ 84.61, 25.01, 13 },
+						{ 84.61, 25.01, STORMWIND_CITY },
 					},
 					["races"] = ALLIANCE_ONLY,
 					-- Note!! See Master List of quiz answers at the end of 12th anniversary in a better format
@@ -77,7 +77,7 @@ _.WorldEvents =
 					["provider"] = { "n", 110034 },		-- Historian Llore
 					["isDaily"] = true,
 					["coords"] = {
-						{ 84.61, 25.01, 13 },
+						{ 84.61, 25.01, STORMWIND_CITY },
 					},
 					["sourceQuests"] = {
 						47462,	-- Azuregos
@@ -109,7 +109,7 @@ _.WorldEvents =
 				}),
 				n(110034, {	-- Historian Llore [Alliance]
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 84.6, 25.0, 13 },
+					["coord"] = { 84.6, 25.0, STORMWIND_CITY },
 					["g"] = {	-- WoW Anniversary
 						i(147885, {	-- Bronze-Tinted Sunglasses
 							["cost"] = { { "c", 1166, 200 } },	-- 200x Timewarped Badge
