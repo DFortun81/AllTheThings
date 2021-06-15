@@ -13,7 +13,7 @@ _.Secrets =
 			23,
 			25,
 			BLACKROCK_MOUNTAIN,
-			36,
+			BURNING_STEPPES,
 			37,
 			42,
 			47,
@@ -122,7 +122,7 @@ _.Secrets =
 				["sourceQuests"] = { 52905 },
 				["description"] = "Blackrock Mountain\n\nRoom next to LBRS entrance, next to the fire.\n\nThe Dead Fish says:\n\n\"<Something is written here.>\n\nNecropolis Expos!\"",
 				["coords"] = {
-					{ 21.0, 38.2, 36 },	-- Entrance
+					{ 21.0, 38.2, BURNING_STEPPES },	-- Entrance
 					{ 77.9, 44.3, BLACKROCK_MOUNTAIN },	-- Dead Fish
 				},
 			}),
@@ -162,7 +162,7 @@ _.Secrets =
 				["questID"] = 52911,
 				["sourceQuests"] = { 52910 },
 				["description"] = "Burning Steppes\n\nEquipped on the larger brown skeletons head.\n\nThe Worn Helm reads:\n\n\"<Something is written here.>\n\nSensed the Figs...\"",
-				["coord"] = { 27.1, 47.0, 36 },	-- Worn Helm
+				["coord"] = { 27.1, 47.0, BURNING_STEPPES },	-- Worn Helm
 			}),
 			o(294112, { 	-- Leafy Leaf
 				["model"] = 523642,

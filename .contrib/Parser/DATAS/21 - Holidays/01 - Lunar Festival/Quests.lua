@@ -287,8 +287,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8683,  {	-- Dawnstrider the Elder
 				["provider"] = { "n", 15585 },	-- Elder Dawnstrider
 				["isYearly"] = true,
-				["coord"] = { 52.3, 23.9, 36 },
-				["maps"] = { 36 },	-- Burning Steppes
+				["coord"] = { 52.3, 23.9, BURNING_STEPPES },
+				["maps"] = { BURNING_STEPPES },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(10, {	-- Elder Dawnstrider in Flame Crest
@@ -384,8 +384,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8636,  {	-- Rumblerock the Elder
 				["provider"] = { "n", 15557 },	-- Elder Rumblerock
 				["isYearly"] = true,
-				["coord"] = { 70.1, 45.4, 36 },
-				["maps"] = { 36 },	-- Burning Steppes
+				["coord"] = { 70.1, 45.4, BURNING_STEPPES },
+				["maps"] = { BURNING_STEPPES },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(9, {	-- Elder Rumblerock in Burning Steppes
@@ -1075,9 +1075,9 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["description"] = "Once inside Blackrock Depths, you can find this Elder in the Ring of Law.  Approaching the Elder in the center of the ring will also start the encounter.",
 				["provider"] = { "n", 15549 },	-- Elder Morndeep
 				["isYearly"] = true,
-				["coord"] = { 21.1, 38.5, 36 },	-- entrance to Blackrock Mountain
+				["coord"] = { 21.1, 38.5, BURNING_STEPPES },	-- entrance to Blackrock Mountain
 				["maps"] = {
-					36,		-- Burning Steppes
+					BURNING_STEPPES,
 					BLACKROCK_DEPTHS,
 				},
 				["u"] = 17,	-- Lunar Festival
@@ -1155,9 +1155,9 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["description"] = "Once inside Lower Blackrock Spire, head down and to the left.  The Elder is just past the first bridge.",
 				["provider"] = { "n", 15560 },	-- Elder Stonefort
 				["isYearly"] = true,
-				["coord"] = { 21.1, 38.5, 36 },	-- entrance to Blackrock Mountain
+				["coord"] = { 21.1, 38.5, BURNING_STEPPES },	-- entrance to Blackrock Mountain
 				["maps"] = {
-					36,		-- Burning Steppes
+					BURNING_STEPPES,
 					252,	-- Lower Blackrock Spire
 				},
 				["u"] = 17,	-- Lunar Festival

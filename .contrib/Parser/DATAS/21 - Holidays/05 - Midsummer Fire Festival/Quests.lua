@@ -124,10 +124,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11768, {	-- Desecrate this Fire! — Burning Steppes
 				["isYearly"] = true,
 				["provider"] = { "o", 187956 },	-- Horde Bonfire
-				["coord"] = { 51.5, 29.3, 36 },
+				["coord"] = { 51.5, 29.3, BURNING_STEPPES },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
-				["maps"] = { 36 },	-- Burning Steppes
+				["maps"] = { BURNING_STEPPES },
 			}),
 			q(13457, {	-- Desecrate this Fire! — Crystalsong Forest
 				["isYearly"] = true,
@@ -542,10 +542,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11739, {	-- Desecrate this Fire! — Burning Steppes
 				["isYearly"] = true,
 				["provider"] = { "o", 187922 },	-- Alliance Bonfire
-				["coord"] = { 68.6, 59.9, 36 },
+				["coord"] = { 68.6, 59.9, BURNING_STEPPES },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-				["maps"] = { 36 },	-- Burning Steppes
+				["maps"] = { BURNING_STEPPES },
 			}),
 			q(13447, {	-- Desecrate this Fire! — Crystalsong Forest
 				["isYearly"] = true,
@@ -974,9 +974,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11810, {	-- Honor the Flame — Burning Steppes
 				["provider"] = { "n", 25892 },	-- Burning Steppes Flame Warden
 				["isYearly"] = true,
-				["coord"] = { 68.2, 60.6, 36 },
+				["coord"] = { 68.2, 60.6, BURNING_STEPPES },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 36 },	-- Burning Steppes
+				["maps"] = { BURNING_STEPPES },
 			}),
 			q(13491, {	-- Honor the Flame — Crystalsong Forest
 				["provider"] = { "n", 32807 },	-- Crystalsong Forest Flame Warden
@@ -1361,9 +1361,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11844, {	-- Honor the Flame — Burning Steppes
 				["provider"] = { "n", 25927 },	-- Burning Steppes Flame Keeper
 				["isYearly"] = true,
-				["coord"] = { 51.1, 29.2, 36 },
+				["coord"] = { 51.1, 29.2, BURNING_STEPPES },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 36 },	-- Burning Steppes
+				["maps"] = { BURNING_STEPPES },
 			}),
 			q(13499, {	-- Honor the Flame — Crystalsong Forest
 				["provider"] = { "n", 32815 },	-- Crystalsong Forest Flame Keeper
@@ -1908,7 +1908,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					22,		-- Western Plaguelands
 					26,		-- The Hinterlands
 					27,		-- Dun Morogh
-					36,		-- Burning Steppes
+					BURNING_STEPPES,
 					37,		-- Elwynn Forest
 					47,		-- Duskwood
 					48,		-- Loch Modan

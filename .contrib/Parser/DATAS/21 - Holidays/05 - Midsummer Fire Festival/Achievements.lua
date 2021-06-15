@@ -41,9 +41,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { BLASTED_LANDS },
 									}),
 									crit(4,  {	-- Burning Steppes
-										["coord"] = { 68.2, 60.6, 36 },
+										["coord"] = { 68.2, 60.6, BURNING_STEPPES },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 36 },	-- Burning Steppes
+										["maps"] = { BURNING_STEPPES },
 									}),
 									crit(5,  {	-- Dun Morogh
 										["coord"] = { 53.8, 45.2, 27 },
@@ -321,9 +321,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { BLASTED_LANDS },
 									}),
 									crit(4,  {	-- Burning Steppes
-										["coord"] = { 51.5, 29.3, 36 },
+										["coord"] = { 51.5, 29.3, BURNING_STEPPES },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 36 },	-- Burning Steppes
+										["maps"] = { BURNING_STEPPES },
 									}),
 									crit(5,  {	-- Eversong Woods
 										["coord"] = { 46.3, 50.3, EVERSONG_WOODS },
@@ -747,9 +747,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { BLASTED_LANDS },
 									}),
 									crit(4,  {	-- Burning Steppes
-										["coord"] = { 51.1, 29.2, 36 },
+										["coord"] = { 51.1, 29.2, BURNING_STEPPES },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 36 },	-- Burning Steppes
+										["maps"] = { BURNING_STEPPES },
 									}),
 									crit(5,  {	-- Eversong Woods
 										["coord"] = { 46.4, 50.6, EVERSONG_WOODS },
@@ -1017,9 +1017,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { BLASTED_LANDS },
 									}),
 									crit(4,  {	-- Burning Steppes
-										["coord"] = { 68.6, 59.9, 36 },
+										["coord"] = { 68.6, 59.9, BURNING_STEPPES },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 36 },	-- Burning Steppes
+										["maps"] = { BURNING_STEPPES },
 									}),
 									crit(5,  {	-- Dun Morogh
 										["coord"] = { 53.8, 44.7, 27 },
