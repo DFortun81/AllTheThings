@@ -19486,6 +19486,18 @@ app.events.VARIABLES_LOADED = function()
 			61229,	-- forging the Crystal Mallet of the Heralds
 			61191,	-- ringing the Vesper of the Silver Wind
 			61183,	-- looting the Gift of the Silver Wind
+			
+			-- Ve'Nari Items (Acc Wide Bonus (Hiddenquest?) but quests are not accwide)
+			63193,	-- bangle of seniority
+			63523,	-- Broker Traversam Enhancer
+			63183, 	-- Extradimensional Pockets
+			63201,	-- Loupe of Unusual Charm
+			61144,	-- Possibility Matrix
+			63200,	-- Rang Insignia: Acquisitionist
+			63204,	-- Ritual Prism of Fortune
+			63202,	-- Vessel of Unfortunate Spirits
+			
+			
 
 			-- etc.
 		}) do
