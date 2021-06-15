@@ -6352,7 +6352,7 @@ end)();
 -- Death Tracker Lib
 (function()
 local OnUpdateForDeathTrackerLib = function(t)
-	if app.MODE_DEBUG then	--app.Settings:Get("Thing:Deaths");
+	if app.MODE_DEBUG then -- app.Settings:Get("Thing:Deaths");
 		t.visible = app.GroupVisibilityFilter(t);
 		local stat = select(1, GetStatistic(60)) or "0";
 		if stat == "--" then stat = "0"; end
@@ -6366,7 +6366,7 @@ local OnUpdateForDeathTrackerLib = function(t)
 	else
 		t.visible = false;
 	end
-	return true;
+	return false;
 end
 local fields = {
 	["key"] = function(t)
