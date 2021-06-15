@@ -299,8 +299,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8653,  {	-- Goldwell the Elder
 				["provider"] = { "n", 15569 },	-- Elder Goldwell
 				["isYearly"] = true,
-				["coord"] = { 53.8, 49.9, 27 },
-				["maps"] = { 27 },	-- Dun Morogh
+				["coord"] = { 53.8, 49.9, DUN_MOROGH },
+				["maps"] = { DUN_MOROGH },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(1, {	-- Elder Goldwell in Kharanos

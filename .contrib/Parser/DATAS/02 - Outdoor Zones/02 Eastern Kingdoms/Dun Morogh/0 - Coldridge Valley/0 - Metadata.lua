@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(27, {	-- Dun Morogh
+		m(DUN_MOROGH, {
 			m(427,  {	-- Coldridge Valley
 				["description"] = "Coldridge Valley is the starting area for young dwarven recruits, and contains the base camp of Anvilmar. It is located in the southwestern corner of Dun Morogh, and is linked to the greater area by Coldridge Pass to the northeast.",
 				["icon"] = "Interface\\Icons\\Achievement_Character_Dwarf_Male",

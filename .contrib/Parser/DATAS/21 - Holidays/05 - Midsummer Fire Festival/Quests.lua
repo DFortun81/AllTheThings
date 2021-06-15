@@ -590,10 +590,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11742, {	-- Desecrate this Fire! — Dun Morogh
 				["isYearly"] = true,
 				["provider"] = { "o", 187925 },	-- Alliance Bonfire
-				["coord"] = { 53.8, 44.7, 27 },
+				["coord"] = { 53.8, 44.7, DUN_MOROGH },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-				["maps"] = { 27 },	-- Dun Morogh
+				["maps"] = { DUN_MOROGH },
 			}),
 			q(11743, {	-- Desecrate this Fire! — Duskwood
 				["isYearly"] = true,
@@ -1023,9 +1023,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11813, {	-- Honor the Flame — Dun Morogh
 				["provider"] = { "n", 25895 },	-- Dun Morogh Flame Warden
 				["isYearly"] = true,
-				["coord"] = { 53.8, 45.2, 27 },
+				["coord"] = { 53.8, 45.2, DUN_MOROGH },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 27 },	-- Dun Morogh
+				["maps"] = { DUN_MOROGH },
 			}),
 			q(11814, {	-- Honor the Flame — Duskwood
 				["provider"] = { "n", 25896 },	-- Duskwood Flame Warden
@@ -1907,7 +1907,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					BLASTED_LANDS,
 					22,		-- Western Plaguelands
 					26,		-- The Hinterlands
-					27,		-- Dun Morogh
+					DUN_MOROGH,
 					BURNING_STEPPES,
 					37,		-- Elwynn Forest
 					47,		-- Duskwood

@@ -11,7 +11,7 @@ _.Holidays =
 				q(8149,  {	-- Honoring a Hero (A)
 					["provider"] = { "n", 15011 },	-- Wagner Hammerstrike
 					["isYearly"] = true,
-					["coord"] = { 59.8, 34.2, 27 },	-- Dun Morogh
+					["coord"] = { 59.8, 34.2, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["u"] = 25,	-- Harvest Festival
 				}),

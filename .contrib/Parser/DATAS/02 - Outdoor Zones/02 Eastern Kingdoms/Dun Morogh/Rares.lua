@@ -5,14 +5,14 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(27, {	-- Dun Morogh
+		m(DUN_MOROGH, {
 			n(RARES, {
 				n(1130, {	-- Bjarn
 					["coords"] = {
-						{ 69.2, 55.8, 27 },
-						{ 69.8, 58.6, 27 },
-						{ 67.8, 58.8, 27 },
-						{ 66.2, 59.8, 27 },
+						{ 69.2, 55.8, DUN_MOROGH },
+						{ 69.8, 58.6, DUN_MOROGH },
+						{ 67.8, 58.8, DUN_MOROGH },
+						{ 66.2, 59.8, DUN_MOROGH },
 					},
 				}),
 				n(1137, { 	-- Edan the Howler
@@ -20,7 +20,7 @@ _.Zones =
 				n(1119, {	-- Hammerspine
 					["description"] = "Spawns at the very end of the cave.",
 					["coords"] = {
-						{ 77.9, 55.1, 27 }, -- cave entrance
+						{ 77.9, 55.1, DUN_MOROGH }, -- cave entrance
 						{ 56.3, 39.1, 31 }, -- spawn area
 					},
 					["g"] = {

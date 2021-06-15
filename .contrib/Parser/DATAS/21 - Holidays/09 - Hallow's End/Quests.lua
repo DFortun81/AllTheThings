@@ -15,13 +15,13 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["isDaily"] = true,
 				["coords"] = {
 					{ 60.8, 53.6, AZUREMYST_ISLE },
-					{ 53.4, 51.5, 27 },	-- Dun Morogh
+					{ 53.4, 51.5, DUN_MOROGH },
 					{ 42.6, 64.6, 37 },	-- Elwynn Forest
 				},
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = {
 					AZUREMYST_ISLE,
-					27, -- Dun Morogh
+					DUN_MOROGH,
 					37, -- Elwynn Forest
 				},
 				["g"] = {
@@ -649,9 +649,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12332, {	-- Candy Bucket — Dun Morogh, Kharanos, Alliance
 				["isYearly"] = true,
-				["coord"] = { 54.5, 50.7, 27 },
+				["coord"] = { 54.5, 50.7, DUN_MOROGH },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 27 },	-- Dun Morogh
+				["maps"] = { DUN_MOROGH },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -2157,9 +2157,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 			q(11439, {	-- Fire Brigade Practice (Kharanos)
 				["sourceQuests"] = { 11356 },	-- Costumed Orphan Matron
 				["provider"] = { "n", 24519 },	-- Costumed Orphan Matron
-				["coord"] = { 53.2, 51.4, 27 },	-- Dun Morogh
+				["coord"] = { 53.2, 51.4, DUN_MOROGH },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 27 },	-- Dun Morogh
+				["maps"] = { DUN_MOROGH },
 				["g"] = {
 					i(33226),	-- Tricky Treat
 				},
@@ -2342,13 +2342,13 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["isDaily"] = true,
 				["coords"] = {
 					{ 60.8, 53.6, AZUREMYST_ISLE },
-					{ 53.4, 51.5, 27 },	-- Dun Morogh
+					{ 53.4, 51.5, DUN_MOROGH },
 					{ 42.6, 64.6, 37 },	-- Elwynn Forest
 				},
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = {
 					AZUREMYST_ISLE,
-					27, -- Dun Morogh
+					DUN_MOROGH,
 					37  -- Elwynn Forest
 				},
 				["g"] = {
@@ -2423,13 +2423,13 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["isDaily"] = true,
 				["coords"] = {
 					{ 60.8, 53.6, AZUREMYST_ISLE },
-					{ 53.4, 51.5, 27 },	-- Dun Morogh
+					{ 53.4, 51.5, DUN_MOROGH },
 					{ 42.6, 64.6, 37 },	-- Elwynn Forest
 				},
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = {
 					AZUREMYST_ISLE,
-					27, -- Dun Morogh
+					DUN_MOROGH,
 					37  -- Elwynn Forest
 				},
 				["g"] = {
@@ -2488,7 +2488,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["provider"] = { "n", 24519 },	-- Costumed Orphan Matron
 				["maps"] = {
 					AZUREMYST_ISLE,
-					27,	-- Dun Morogh
+					DUN_MOROGH,
 					37,	-- Elwynn Forest
 				},
 			}),

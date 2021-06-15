@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(27, {	-- Dun Morogh
+		m(DUN_MOROGH, {
 			m(469,  {	-- New Tinkertown [Above]
 				n(VENDORS, {
 					n(8508, {	-- Gretta Ganter <Fishing Supplies>

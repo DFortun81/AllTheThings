@@ -322,8 +322,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { 210 },	-- The Cape of Stranglethorn
 										}),
 										crit(7,  {	-- Dun Morogh, Kharanos
-											["coord"] = { 54.5, 50.7, 27 },
-											["maps"] = { 27 },	-- Dun Morogh
+											["coord"] = { 54.5, 50.7, DUN_MOROGH },
+											["maps"] = { DUN_MOROGH },
 										}),
 										crit(8,  {	-- Duskwood, Darkshire
 											["coord"] = { 73.9, 44.4, 47 },

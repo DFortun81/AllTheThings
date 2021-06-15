@@ -55,8 +55,8 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_DAY_OF_THE_DEAD },
 				["provider"] = { "n", 34478 },	-- Cheerful Dwarf Spirit
 				["isYearly"] = true,
 				["races"] = { DWARF },
-				["coord"] = { 61.6, 37.4, 27 },
-				["maps"] = { 27 },	-- Dun Moroghs
+				["coord"] = { 61.6, 37.4, DUN_MOROGH },
+				["maps"] = { DUN_MOROGH },
 				["g"] = {
 					i(46831),	-- Macabre Marionette (PET!)
 				},
@@ -65,8 +65,8 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_DAY_OF_THE_DEAD },
 				["provider"] = { "n", 34481 },	-- Cheerful Gnome Spirit
 				["isYearly"] = true,
 				["races"] = { GNOME },
-				["coord"] = { 61.6, 37.4, 27 },
-				["maps"] = { 27 },	-- Dun Moroghs
+				["coord"] = { 61.6, 37.4, DUN_MOROGH },
+				["maps"] = { DUN_MOROGH },
 				["g"] = {
 					i(46831),	-- Macabre Marionette (PET!)
 				},

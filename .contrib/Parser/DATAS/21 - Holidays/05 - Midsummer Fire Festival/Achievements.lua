@@ -46,9 +46,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { BURNING_STEPPES },
 									}),
 									crit(5,  {	-- Dun Morogh
-										["coord"] = { 53.8, 45.2, 27 },
+										["coord"] = { 53.8, 45.2, DUN_MOROGH },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 27 },	-- Dun Morogh
+										["maps"] = { DUN_MOROGH },
 									}),
 									crit(6,  {	-- Duskwood
 										["coord"] = { 73.8, 54.7, 47 },
@@ -1022,9 +1022,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { BURNING_STEPPES },
 									}),
 									crit(5,  {	-- Dun Morogh
-										["coord"] = { 53.8, 44.7, 27 },
+										["coord"] = { 53.8, 44.7, DUN_MOROGH },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 27 },	-- Dun Morogh
+										["maps"] = { DUN_MOROGH },
 									}),
 									crit(6,  {	-- Duskwood
 										["coord"] = { 73.2, 54.9, 47 },

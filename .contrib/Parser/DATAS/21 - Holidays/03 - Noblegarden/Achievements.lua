@@ -50,7 +50,7 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 							["maps"] = { 37 },	-- Elwynn Forest
 						}),
 						crit(4, {	-- Kharanos
-							["maps"] = { 27 },	-- Dun Morogh
+							["maps"] = { DUN_MOROGH },
 						}),
 					}),
 				}),
