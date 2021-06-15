@@ -4,7 +4,7 @@
 -- #if AFTER TBC
 local ANACHRONOS_COORD = { 41.6, 49.8, CAVERNS_OF_TIME };
 -- #else
-local ANACHRONOS_COORD = { 65, 50, TANARIS },
+local ANACHRONOS_COORD = { 65, 50, TANARIS };
 -- #endif
 _.Instances = { tier(1, applyclassicphase(PHASE_FIVE, {	-- Classic
 	inst(744, {	-- Temple of Ahn'Qiraj
