@@ -2553,35 +2553,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 										crit(4),	-- Sha of Pride
 									},
 								}),
-								i(99678, {	-- Chest of the Cursed Conqueror
-									i(99052),	-- Battleplate of Winged Triumph
-									i(99003),	-- Breastplate of Winged Triumph
-									i(99031),	-- Chestguard of Winged Triumph
-									i(99004),	-- Raiment of the Ternion Glory
-									i(99017),	-- Robes of the Ternion Glory
-									i(99056),	-- Robes of the Horned Nightmare
-								}),
-								i(99679, {	-- Chest of the Cursed Protector
-									i(99085),	-- Tunic of the Unblinking Vigil
-									i(99063),	-- Chestguard of Seven Sacred Seals
-									i(99071),	-- Tunic of Seven Sacred Seals
-									i(99061),	-- Vest of Seven Sacred Seals
-									i(98992),	-- Cuirass of Celestial Harmony
-									i(99087),	-- Hauberk of Celestial Harmony
-									i(99011),	-- Tunic of Celestial Harmony
-									i(99047),	-- Battleplate of the Prehistoric Marauder
-									i(99037),	-- Chestguard of the Prehistoric Marauder
-								}),
-								i(99677, {	-- Chest of the Cursed Vanquisher
-									i(99066),	-- Breastplate of Cyclopean Dread
-									i(99060),	-- Chestguard of Cyclopean Dread
-									i(99041),	-- Raiment of the Shattered Vale
-									i(99015),	-- Robes of the Shattered Vale
-									i(98999),	-- Tunic of the Shattered Vale
-									i(98997),	-- Vestment of the Shattered Vale
-									i(99078),	-- Chronomancer Robes
-									i(99006),	-- Tunic of the Barbed Assassin
-								}),
+								i(99678),	-- Chest of the Cursed Conqueror
+								i(99679),	-- Chest of the Cursed Protector
+								i(99677),	-- Chest of the Cursed Vanquisher
 								i(104162),	-- Droplet of Y'Shaarj (PET!)
 								i(104163),	-- Gooey Sha-ling (PET!)
 								i(112951),	-- Gaze of Arrogance
@@ -2698,35 +2672,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 										crit(4),	-- General Nazgrim
 									},
 								}),
-								i(99681, {	-- Gauntlets of the Cursed Conqueror
-									i(99002),	-- Gauntlets of Winged Triumph
-									i(98982),	-- Gloves of Winged Triumph
-									i(99028),	-- Handguards of Winged Triumph
-									i(99019),	-- Gloves of the Ternion Glory
-									i(99023),	-- Handwraps of the Ternion Glory
-									i(99053),	-- Gloves of the Horned Nightmare
-								}),
-								i(99667, {	-- Gauntlets of the Cursed Protector
-									i(99086),	-- Gloves of the Unblinking Vigil
-									i(99064),	-- Gauntlets of Seven Sacred Seals
-									i(99072),	-- Grips of Seven Sacred Seals
-									i(99068),	-- Handwraps of Seven Sacred Seals
-									i(99088),	-- Gloves of Celestial Harmony
-									i(98993),	-- Grips of Celestial Harmony
-									i(98988),	-- Handwraps of Celestial Harmony
-									i(99034),	-- Gauntlets of the Prehistoric Marauder
-									i(99038),	-- Handguards of the Prehistoric Marauder
-								}),
-								i(99680, {	-- Gauntlets of the Cursed Vanquisher
-									i(99067),	-- Gauntlets of Cyclopean Dread
-									i(99048),	-- Handguards of Cyclopean Dread
-									i(98994),	-- Gloves of the Shattered Vale
-									i(99042),	-- Grips of the Shattered Vale
-									i(99000),	-- Handguards of the Shattered Vale
-									i(99012),	-- Handwraps of the Shattered Vale
-									i(99083),	-- Chronomancer Gloves
-									i(99007),	-- Gloves of the Barbed Assassin
-								}),
+								i(99681),	-- Gauntlets of the Cursed Conqueror
+								i(99667),	-- Gauntlets of the Cursed Protector
+								i(99680),	-- Gauntlets of the Cursed Vanquisher
 								i(112785),	-- Gar'tok, Strength of the Faithful
 								i(112787),	-- Arcweaver Spell Sword
 								i(112780),	-- Naz'grim's Gutripper
@@ -2812,35 +2760,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 										crit(3),	-- Thok the Bloodthirsty
 									},
 								}),
-								i(99672, {	-- Helm of the Cursed Conqueror
-									i(99029),	-- Faceguard of Winged Triumph
-									i(98979),	-- Headguard of Winged Triumph
-									i(98985),	-- Helmet of Winged Triumph
-									i(99024),	-- Cowl of the Ternion Glory
-									i(99020),	-- Hood of the Ternion Glory
-									i(99054),	-- Hood of the Horned Nightmare
-								}),
-								i(99673, {	-- Helm of the Cursed Protector
-									i(99080),	-- Headguard of the Unblinking Vigil
-									i(99065),	-- Crown of Seven Sacred Seals
-									i(99073),	-- Headpiece of Seven Sacred Seals
-									i(99069),	-- Helm of Seven Sacred Seals
-									i(99089),	-- Faceguard of Celestial Harmony
-									i(98989),	-- Headpiece of Celestial Harmony
-									i(98983),	-- Helmet of Celestial Harmony
-									i(99032),	-- Faceguard of the Prehistoric Marauder
-									i(99046),	-- Helmet of the Prehistoric Marauder
-								}),
-								i(99671, {	-- Helm of the Cursed Vanquisher
-									i(99049),	-- Faceguard of Cyclopean Dread
-									i(99057),	-- Helmet of Cyclopean Dread
-									i(98995),	-- Cover of the Shattered Vale
-									i(99001),	-- Headguard of the Shattered Vale
-									i(99043),	-- Headpiece of the Shattered Vale
-									i(99013),	-- Helm of the Shattered Vale
-									i(99084),	-- Chronomancer Hood
-									i(99008),	-- Helmet of the Barbed Assassin
-								}),
+								i(99672),	-- Helm of the Cursed Conqueror
+								i(99673),	-- Helm of the Cursed Protector
+								i(99671),	-- Helm of the Cursed Vanquisher
 								i(112862),	-- Britomart's Jagged Pike
 								i(112853),	-- Hvitserk's Formidable Shanker
 								i(112861),	-- Festering Primordial Globule
@@ -2868,35 +2790,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 									},
 								}),
 								i(104158),	-- Blackfuse Bombling (PET!)
-								i(99669, {	-- Shoulders of the Cursed Conqueror
-									i(99076),	-- Mantle of Winged Triumph
-									i(98987),	-- Pauldrons of Winged Triumph
-									i(99027),	-- Shoulderguards of Winged Triumph
-									i(99018),	-- Mantle of the Ternion Glory
-									i(99005),	-- Shoulderguards of the Ternion Glory
-									i(99045),	-- Mantle of the Horned Nightmare
-								}),
-								i(99670, {	-- Shoulders of the Cursed Protector
-									i(99082),	-- Spaulders of the Unblinking Vigil
-									i(99062),	-- Mantle of Seven Sacred Seals
-									i(99051),	-- Shoulderguards of Seven Sacred Seals
-									i(99075),	-- Spaulders of Seven Sacred Seals
-									i(99091),	-- Mantle of Celestial Harmony
-									i(98991),	-- Shoulderwraps of Celestial Harmony
-									i(98977),	-- Spaulders of Celestial Harmony
-									i(99036),	-- Pauldrons of the Prehistoric Marauder
-									i(99030),	-- Shoulderguards of the Prehistoric Marauder
-								}),
-								i(99668, {	-- Shoulders of the Cursed Vanquisher
-									i(99059),	-- Pauldrons of Cyclopean Dread
-									i(99040),	-- Shoulderguards of Cyclopean Dread
-									i(99016),	-- Mantle of the Shattered Vale
-									i(98978),	-- Shoulderguards of the Shattered Vale
-									i(98998),	-- Shoulderwraps of the Shattered Vale
-									i(99022),	-- Spaulders of the Shattered Vale
-									i(99079),	-- Chronomancer Mantle
-									i(99010),	-- Spaulders of the Barbed Assassin
-								}),
+								i(99669),	-- Shoulders of the Cursed Conqueror
+								i(99670),	-- Shoulders of the Cursed Protector
+								i(99668),	-- Shoulders of the Cursed Vanquisher
 								i(112892),	-- Lever of the Megantholithic Apparatus
 								i(112897),	-- Siegecrafter's Forge Hammer
 								i(112894),	-- Blackfuse's Blasting Cord
@@ -2917,35 +2813,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 									},
 								}),
 								i(104165),	-- Kovok (PET!)
-								i(99675, {	-- Leggings of the Cursed Conqueror
-									i(98980),	-- Greaves of Winged Triumph
-									i(99026),	-- Legguards of Winged Triumph
-									i(98986),	-- Legplates of Winged Triumph
-									i(99021),	-- Leggings of the Ternion Glory
-									i(99025),	-- Legwraps of the Ternion Glory
-									i(99055),	-- Leggings of the Horned Nightmare
-								}),
-								i(99676, {	-- Leggings of the Cursed Protector
-									i(99081),	-- Legguards of the Unblinking Vigil
-									i(99074),	-- Leggings of Seven Sacred Seals
-									i(99050),	-- Legguards of Seven Sacred Seals
-									i(99070),	-- Legwraps of Seven Sacred Seals
-									i(99090),	-- Leggings of Celestial Harmony
-									i(98984),	-- Legguards of Celestial Harmony
-									i(98990),	-- Legwraps of Celestial Harmony
-									i(99033),	-- Legguards of the Prehistoric Marauder
-									i(99035),	-- Legplates of the Prehistoric Marauder
-								}),
-								i(99674, {	-- Leggings of the Cursed Vanquisher
-									i(99058),	-- Greaves of Cyclopean Dread
-									i(99039),	-- Legguards of Cyclopean Dread
-									i(98981),	-- Breeches of the Shattered Vale
-									i(98996),	-- Leggings of the Shattered Vale
-									i(99044),	-- Legguards of the Shattered Vale
-									i(99014),	-- Legwraps of the Shattered Vale
-									i(99077),	-- Chronomancer Leggings
-									i(99009),	-- Legguards of the Barbed Assassin
-								}),
+								i(99675),	-- Leggings of the Cursed Conqueror
+								i(99676),	-- Leggings of the Cursed Protector
+								i(99674),	-- Leggings of the Cursed Vanquisher
 								i(112921),	-- Kil'ruk's Furious Blade
 								i(112920),	-- Korven's Crimson Crescent
 								i(112922),	-- Rik'kal's Bloody Scalpel
@@ -3743,35 +3613,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							crit(4),	-- Sha of Pride
 						},
 					}),
-					i(99743, {	-- Chest of the Cursed Conqueror
-						i(99566),	-- Battleplate of Winged Triumph
-						i(99626),	-- Breastplate of Winged Triumph
-						i(99598),	-- Chestguard of Winged Triumph
-						i(99627),	-- Raiment of the Ternion Glory
-						i(99584),	-- Robes of the Ternion Glory
-						i(99570),	-- Robes of the Horned Nightmare
-					}),
-					i(99744, {	-- Chest of the Cursed Protector
-						i(99577),	-- Tunic of the Unblinking Vigil
-						i(99643),	-- Chestguard of Seven Sacred Seals
-						i(99555),	-- Tunic of Seven Sacred Seals
-						i(99641),	-- Vest of Seven Sacred Seals
-						i(99615),	-- Cuirass of Celestial Harmony
-						i(99579),	-- Hauberk of Celestial Harmony
-						i(99636),	-- Tunic of Celestial Harmony
-						i(99603),	-- Battleplate of the Prehistoric Marauder
-						i(99562),	-- Chestguard of the Prehistoric Marauder
-					}),
-					i(99742, {	-- Chest of the Cursed Vanquisher
-						i(99608),	-- Breastplate of Cyclopean Dread
-						i(99640),	-- Chestguard of Cyclopean Dread
-						i(99632),	-- Raiment of the Shattered Vale
-						i(99582),	-- Robes of the Shattered Vale
-						i(99622),	-- Tunic of the Shattered Vale
-						i(99620),	-- Vestment of the Shattered Vale
-						i(99658),	-- Chronomancer Robes
-						i(99629),	-- Tunic of the Barbed Assassin
-					}),
+					i(99743),	-- Chest of the Cursed Conqueror
+					i(99744),	-- Chest of the Cursed Protector
+					i(99742),	-- Chest of the Cursed Vanquisher
 					i(104162),	-- Droplet of Y'Shaarj (PET!)
 					i(104163),	-- Gooey Sha-ling (PET!)
 					i(112951),	-- Gaze of Arrogance
@@ -3901,35 +3745,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							crit(4),	-- General Nazgrim
 						},
 					}),
-					i(99746, {	-- Gauntlets of the Cursed Conqueror
-						i(99625),	-- Gauntlets of Winged Triumph
-						i(99648),	-- Gloves of Winged Triumph
-						i(99595),	-- Handguards of Winged Triumph
-						i(99586),	-- Gloves of the Ternion Glory
-						i(99590),	-- Handwraps of the Ternion Glory
-						i(99567),	-- Gloves of the Horned Nightmare
-					}),
-					i(99747, {	-- Gauntlets of the Cursed Protector
-						i(99578),	-- Gloves of the Unblinking Vigil
-						i(99644),	-- Gauntlets of Seven Sacred Seals
-						i(99556),	-- Grips of Seven Sacred Seals
-						i(99552),	-- Handwraps of Seven Sacred Seals
-						i(99580),	-- Gloves of Celestial Harmony
-						i(99616),	-- Grips of Celestial Harmony
-						i(99611),	-- Handwraps of Celestial Harmony
-						i(99559),	-- Gauntlets of the Prehistoric Marauder
-						i(99563),	-- Handguards of the Prehistoric Marauder
-					}),
-					i(99745, {	-- Gauntlets of the Cursed Vanquisher
-						i(99609),	-- Gauntlets of Cyclopean Dread
-						i(99604),	-- Handguards of Cyclopean Dread
-						i(99633),	-- Grips of the Shattered Vale
-						i(99617),	-- Gloves of the Shattered Vale
-						i(99623),	-- Handguards of the Shattered Vale
-						i(99637),	-- Handwraps of the Shattered Vale
-						i(99575),	-- Chronomancer Gloves
-						i(99630),	-- Gloves of the Barbed Assassin
-					}),
+					i(99746),	-- Gauntlets of the Cursed Conqueror
+					i(99747),	-- Gauntlets of the Cursed Protector
+					i(99745),	-- Gauntlets of the Cursed Vanquisher
 					i(112785),	-- Gar'tok, Strength of the Faithful
 					i(112787),	-- Arcweaver Spell Sword
 					i(112780),	-- Naz'grim's Gutripper
@@ -4011,35 +3829,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							crit(3),	-- Thok the Bloodthirsty
 						},
 					}),
-					i(99749, {	-- Helm of the Cursed Conqueror
-						i(99596),	-- Faceguard of Winged Triumph
-						i(99665),	-- Headguard of Winged Triumph
-						i(99651),	-- Helmet of Winged Triumph
-						i(99591),	-- Cowl of the Ternion Glory
-						i(99587),	-- Hood of the Ternion Glory
-						i(99568),	-- Hood of the Horned Nightmare
-					}),
-					i(99750, {	-- Helm of the Cursed Protector
-						i(99660),	-- Headguard of the Unblinking Vigil
-						i(99607),	-- Crown of Seven Sacred Seals
-						i(99653),	-- Headpiece of Seven Sacred Seals
-						i(99553),	-- Helm of Seven Sacred Seals
-						i(99612),	-- Faceguard of Celestial Harmony
-						i(99645),	-- Headpiece of Celestial Harmony
-						i(99649),	-- Helmet of Celestial Harmony
-						i(99557),	-- Faceguard of the Prehistoric Marauder
-						i(99602),	-- Helmet of the Prehistoric Marauder
-					}),
-					i(99748, {	-- Helm of the Cursed Vanquisher
-						i(99605),	-- Faceguard of Cyclopean Dread
-						i(99571),	-- Helmet of Cyclopean Dread
-						i(99618),	-- Cover of the Shattered Vale
-						i(99624),	-- Headguard of the Shattered Vale
-						i(99599),	-- Headpiece of the Shattered Vale
-						i(99638),	-- Helm of the Shattered Vale
-						i(99576),	-- Chronomancer Hood
-						i(99631),	-- Helmet of the Barbed Assassin
-					}),
+					i(99749),	-- Helm of the Cursed Conqueror
+					i(99750),	-- Helm of the Cursed Protector
+					i(99748),	-- Helm of the Cursed Vanquisher
 					i(112862),	-- Britomart's Jagged Pike
 					i(112853),	-- Hvitserk's Formidable Shanker
 					i(112861),	-- Festering Primordial Globule
@@ -4066,35 +3858,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						crit(4),	-- Disassembled Crawler Mines
 					}),
 					i(104158),	-- Blackfuse Bombling (PET!)
-					i(99755, {	-- Shoulders of the Cursed Conqueror
-						i(99656),	-- Mantle of Winged Triumph
-						i(99662),	-- Pauldrons of Winged Triumph
-						i(99594),	-- Shoulderguards of Winged Triumph
-						i(99585),	-- Mantle of the Ternion Glory
-						i(99628),	-- Shoulderguards of the Ternion Glory
-						i(99601),	-- Mantle of the Horned Nightmare
-					}),
-					i(99756, {	-- Shoulders of the Cursed Protector
-						i(99574),	-- Spaulders of the Unblinking Vigil
-						i(99642),	-- Mantle of Seven Sacred Seals
-						i(99565),	-- Shoulderguards of Seven Sacred Seals
-						i(99655),	-- Spaulders of Seven Sacred Seals
-						i(99614),	-- Mantle of Celestial Harmony
-						i(99647),	-- Shoulderwraps of Celestial Harmony
-						i(99663),	-- Spaulders of Celestial Harmony
-						i(99561),	-- Pauldrons of the Prehistoric Marauder
-						i(99597),	-- Shoulderguards of the Prehistoric Marauder
-					}),
-					i(99754, {	-- Shoulders of the Cursed Vanquisher
-						i(99639),	-- Pauldrons of Cyclopean Dread
-						i(99652),	-- Shoulderguards of Cyclopean Dread
-						i(99583),	-- Mantle of the Shattered Vale
-						i(99664),	-- Shoulderguards of the Shattered Vale
-						i(99621),	-- Shoulderwraps of the Shattered Vale
-						i(99589),	-- Spaulders of the Shattered Vale
-						i(99659),	-- Chronomancer Mantle
-						i(99635),	-- Spaulders of the Barbed Assassin
-					}),
+					i(99755),	-- Shoulders of the Cursed Conqueror
+					i(99756),	-- Shoulders of the Cursed Protector
+					i(99754),	-- Shoulders of the Cursed Vanquisher
 					i(112892),	-- Lever of the Megantholithic Apparatus
 					i(112897),	-- Siegecrafter's Forge Hammer
 					i(112894),	-- Blackfuse's Blasting Cord
@@ -4116,35 +3882,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					}),
 					ach(8531),	-- Now We are the Paragon
 					i(104165),	-- Kovok (PET!)
-					i(99752, {	-- Leggings of the Cursed Conqueror
-						i(99666),	-- Greaves of Winged Triumph
-						i(99593),	-- Legguards of Winged Triumph
-						i(99661),	-- Legplates of Winged Triumph
-						i(99588),	-- Leggings of the Ternion Glory
-						i(99592),	-- Legwraps of the Ternion Glory
-						i(99569),	-- Leggings of the Horned Nightmare
-					}),
-					i(99753, {	-- Leggings of the Cursed Protector
-						i(99573),	-- Legguards of the Unblinking Vigil
-						i(99654),	-- Leggings of Seven Sacred Seals
-						i(99606),	-- Legguards of Seven Sacred Seals
-						i(99554),	-- Legwraps of Seven Sacred Seals
-						i(99646),	-- Leggings of Celestial Harmony
-						i(99650),	-- Legguards of Celestial Harmony
-						i(99613),	-- Legwraps of Celestial Harmony
-						i(99558),	-- Legguards of the Prehistoric Marauder
-						i(99560),	-- Legplates of the Prehistoric Marauder
-					}),
-					i(99751, {	-- Leggings of the Cursed Vanquisher
-						i(99572),	-- Greaves of Cyclopean Dread
-						i(99564),	-- Legguards of Cyclopean Dread
-						i(99610),	-- Breeches of the Shattered Vale
-						i(99619),	-- Leggings of the Shattered Vale
-						i(99600),	-- Legguards of the Shattered Vale
-						i(99581),	-- Legwraps of the Shattered Vale
-						i(99657),	-- Chronomancer Leggings
-						i(99634),	-- Legguards of the Barbed Assassin
-					}),
+					i(99752),	-- Leggings of the Cursed Conqueror
+					i(99753),	-- Leggings of the Cursed Protector
+					i(99751),	-- Leggings of the Cursed Vanquisher
 					i(112921),	-- Kil'ruk's Furious Blade
 					i(112920),	-- Korven's Crimson Crescent
 					i(112922),	-- Rik'kal's Bloody Scalpel
@@ -4940,35 +4680,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							crit(4),	-- Sha of Pride
 						},
 					}),
-					i(99686, {	-- Chest of the Cursed Conqueror
-						i(99136),	-- Battleplate of Winged Triumph
-						i(99133),	-- Breastplate of Winged Triumph
-						i(99126),	-- Chestguard of Winged Triumph
-						i(99110),	-- Raiment of the Ternion Glory
-						i(99119),	-- Robes of the Ternion Glory
-						i(99204),	-- Robes of the Horned Nightmare
-					}),
-					i(99691, {	-- Chest of the Cursed Protector
-						i(99167),	-- Tunic of the Unblinking Vigil
-						i(99140),	-- Chestguard of Seven Sacred Seals
-						i(99154),	-- Tunic of Seven Sacred Seals
-						i(99150),	-- Vest of Seven Sacred Seals
-						i(99101),	-- Cuirass of Celestial Harmony
-						i(99106),	-- Hauberk of Celestial Harmony
-						i(99107),	-- Tunic of Celestial Harmony
-						i(99197),	-- Battleplate of the Prehistoric Marauder
-						i(99201),	-- Chestguard of the Prehistoric Marauder
-					}),
-					i(99696, { -- Chest of the Cursed Vanquisher
-						i(99192),	-- Breastplate of Cyclopean Dread
-						i(99188),	-- Chestguard of Cyclopean Dread
-						i(99180),	-- Raiment of the Shattered Vale
-						i(99172),	-- Robes of the Shattered Vale
-						i(99170),	-- Tunic of the Shattered Vale
-						i(99177),	-- Vestment of the Shattered Vale
-						i(99152),	-- Chronomancer Robes
-						i(99112),	-- Tunic of the Barbed Assassin
-					}),
+					i(99686),	-- Chest of the Cursed Conqueror
+					i(99691),	-- Chest of the Cursed Protector
+					i(99696),	-- Chest of the Cursed Vanquisher
 					i(104162),	-- Droplet of Y'Shaarj (PET!)
 					i(104163),	-- Gooey Sha-ling (PET!)
 					i(112951),	-- Gaze of Arrogance
@@ -5098,35 +4812,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							crit(4),	-- General Nazgrim
 						},
 					}),
-					i(99687, {	-- Gauntlets of the Cursed Conqueror
-						i(99137),	-- Gauntlets of Winged Triumph
-						i(99134),	-- Gloves of Winged Triumph
-						i(99127),	-- Handguards of Winged Triumph
-						i(99121),	-- Gloves of the Ternion Glory
-						i(99131),	-- Handgwraps of the Ternion Glory
-						i(99096),	-- Gloves of the Horned Nightmare
-					}),
-					i(99692, {	-- Gauntlets of the Cursed Protector
-						i(99168),	-- Gloves of the Unblinking Vigil
-						i(99141),	-- Gauntlets of Seven Sacred Seals
-						i(99155),	-- Grips of Seven Sacred Seals
-						i(99147),	-- Handwraps of Seven Sacred Seals
-						i(99092),	-- Gloves of Celestial Harmony
-						i(99102),	-- Grips of Celestial Harmony
-						i(99108),	-- Handwraps of Celestial Harmony
-						i(99198),	-- Gauntlets of the Prehistoric Marauder
-						i(99202),	-- Handguards of the Prehistoric Marauder
-					}),
-					i(99682, {	-- Gauntlets of the Cursed Vanquisher
-						i(99193),	-- Gauntlets of Cyclopean Dread
-						i(99189),	-- Handguards of Cyclopean Dread
-						i(99174),	-- Gloves of the Shattered Vale
-						i(99181),	-- Grips of the Shattered Vale
-						i(99163),	-- Handguards of the Shattered Vale
-						i(99185),	-- Handwraps of the Shattered Vale
-						i(99160),	-- Chronomancer Gloves
-						i(99113),	-- Gloves of the Barbed Assassin
-					}),
+					i(99687),	-- Gauntlets of the Cursed Conqueror
+					i(99692),	-- Gauntlets of the Cursed Protector
+					i(99682),	-- Gauntlets of the Cursed Vanquisher
 					i(112785),	-- Gar'tok, Strength of the Faithful
 					i(112787),	-- Arcweaver Spell Sword
 					i(112780),	-- Naz'grim's Gutripper
@@ -5208,35 +4896,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							crit(3),	-- Thok the Bloodthirsty
 						},
 					}),
-					i(99689, {	-- Helm of the Cursed Conqueror
-						i(99128),	-- Faceguard of Winged Triumph
-						i(99135),	-- Headguard of Winged Triumph
-						i(99138),	-- Helmet of Winged Triumph
-						i(99117),	-- Cowl of the Ternion Glory
-						i(99122),	-- Hood of the Ternion Glory
-						i(99097),	-- Hood of the Horned Nightmare
-					}),
-					i(99694, {	-- Helm of the Cursed Protector
-						i(99157),	-- Headguard of the Unblinking Vigil
-						i(99142),	-- Crown of Seven Sacred Seals
-						i(99156),	-- Headpiece of Seven Sacred Seals
-						i(99148),	-- Helm of Seven Sacred Seals
-						i(99109),	-- Faceguard of Celestial Harmony
-						i(99093),	-- Headpiece of Celestial Harmony
-						i(99103),	-- Helmet of Celestial Harmony
-						i(99203),	-- Faceguard of the Prehistoric Marauder
-						i(99206),	-- Helmet of the Prehistoric Marauder
-					}),
-					i(99683, {	-- Helm of the Cursed Vanquisher
-						i(99190),	-- Faceguard of Cyclopean Dread
-						i(99194),	-- Helmet of Cyclopean Dread
-						i(99175),	-- Cover of the Shattered Vale
-						i(99164),	-- Headguard of the Shattered Vale
-						i(99182),	-- Headpiece of the Shattered Vale
-						i(99178),	-- Helm of the Shattered Vale
-						i(99161),	-- Chronomancer Hood
-						i(99114),	-- Helmet of the Barbed Assassin
-					}),
+					i(99689),	-- Helm of the Cursed Conqueror
+					i(99694),	-- Helm of the Cursed Protector
+					i(99683),	-- Helm of the Cursed Vanquisher
 					i(112862),	-- Britomart's Jagged Pike
 					i(112853),	-- Hvitserk's Formidable Shanker
 					i(112861),	-- Festering Primordial Globule
@@ -5263,35 +4925,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						crit(4),	-- Disassembled Crawler Mines
 					}),
 					i(104158),	-- Blackfuse Bombling (PET!)
-					i(99690, {	-- Shoulders of the Cursed Conqueror
-						i(99125),	-- Mantle of Winged Triumph
-						i(99132),	-- Pauldrons of Winged Triumph
-						i(99130),	-- Shoulderguards of Winged Triumph
-						i(99120),	-- Mantle of the Ternion Glory
-						i(99111),	-- Shoulderguards of the Ternion Glory
-						i(99205),	-- Mantle of the Horned Nightmare
-					}),
-					i(99695, {	-- Shoulders of the Cursed Protector
-						i(99159),	-- Spaulders of the Unblinking Vigil
-						i(99151),	-- Mantle of Seven Sacred Seals
-						i(99144),	-- Shoulderguards of Seven Sacred Seals
-						i(99146),	-- Spaulders of Seven Sacred Seals
-						i(99100),	-- Mantle of Celestial Harmony
-						i(99095),	-- Shoulderwraps of Celestial Harmony
-						i(99105),	-- Spaulders of Celestial Harmony
-						i(99200),	-- Pauldrons of the Prehistoric Marauder
-						i(99196),	-- Shoulderguards of the Prehistoric Marauder
-					}),
-					i(99685, {	-- Shoulders of the Cursed Vanquisher
-						i(99187),	-- Pauldrons of Cyclopean Dread
-						i(99179),	-- Shoulderguards of Cyclopean Dread
-						i(99173),	-- Mantle of the Shattered Vale
-						i(99166),	-- Shoulderguards of the Shattered Vale
-						i(99169),	-- Shoulderwraps of the Shattered Vale
-						i(99184),	-- Spaulders of the Shattered Vale
-						i(99153),	-- Chronomancer Mantle
-						i(99116),	-- Spaulders of the Barbed Assassin
-					}),
+					i(99690),	-- Shoulders of the Cursed Conqueror
+					i(99695),	-- Shoulders of the Cursed Protector
+					i(99685),	-- Shoulders of the Cursed Vanquisher
 					i(112892),	-- Lever of the Megantholithic Apparatus
 					i(112897),	-- Siegecrafter's Forge Hammer
 					i(112894),	-- Blackfuse's Blasting Cord
@@ -5313,35 +4949,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					}),
 					ach(8531),	-- Now We are the Paragon
 					i(104165),	-- Kovok (PET!)
-					i(99688, {	-- Leggings of the Cursed Conqueror
-						i(99124),	-- Greaves 	of Winged Triumph
-						i(99129),	-- Legguards of Winged Triumph
-						i(99139),	-- Legplates of Winged Triumph
-						i(99123),	-- Leggings of the Ternion Glory
-						i(99118),	-- Legwraps of the Ternion Glory
-						i(99098),	-- Leggings of the Horned Nightmare
-					}),
-					i(99693, {	-- Leggings of the Cursed Protector
-						i(99158),	-- Legguards of the Unblinking Vigil
-						i(99145),	-- Leggings of Seven Sacred Seals
-						i(99143),	-- Legguards of Seven Sacred Seals
-						i(99149),	-- Legwraps of Seven Sacred Seals
-						i(99094),	-- Leggings of Celestial Harmony
-						i(99104),	-- Legguards of Celestial Harmony
-						i(99099),	-- Legwraps of Celestial Harmony
-						i(99195),	-- Legguards of the Prehistoric Marauder
-						i(99199),	-- Legplates of the Prehistoric Marauder
-					}),
-					i(99684, {	-- Leggings of the Cursed Vanquisher
-						i(99186),	-- Greaves of Cyclopean Dread
-						i(99191),	-- Legguards of Cyclopean Dread
-						i(99165),	-- Breeches of the Shattered Vale
-						i(99176),	-- Leggings of the Shattered Vale
-						i(99183),	-- Legguards of the Shattered Vale
-						i(99171),	-- Legwraps of the Shattered Vale
-						i(99162),	-- Chronomancer Leggings
-						i(99115),	-- Legguards of the Barbed Assassin
-					}),
+					i(99688),	-- Leggings of the Cursed Conqueror
+					i(99693),	-- Leggings of the Cursed Protector
+					i(99684),	-- Leggings of the Cursed Vanquisher
 					i(112921),	-- Kil'ruk's Furious Blade
 					i(112920),	-- Korven's Crimson Crescent
 					i(112922),	-- Rik'kal's Bloody Scalpel
@@ -6160,57 +5770,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							crit(4),	-- Sha of Pride
 						},
 					}),
-					i(99715, {	-- Chest of the Cursed Conqueror
-						["classes"] = {
-							PRIEST,
-							WARLOCK,
-							PALADIN,
-						},
-						["g"] = {
-							i(99362),	-- Raiment of the Ternion Glory
-							i(99357),	-- Robes of the Ternion Glory
-							i(99416),	-- Robes of the Horned Nightmare
-							i(99387),	-- Battleplate of Winged Triumph
-							i(99374),	-- Breastplate of Winged Triumph
-							i(99368),	-- Chestguard of Winged Triumph
-						},
-					}),
-					i(99716, {	-- Chest of the Cursed Protector
-						["classes"] = {
-							MONK,
-							HUNTER,
-							SHAMAN,
-							WARRIOR,
-						},
-						["g"] = {
-							i(99396),	-- Tunic of Seven Sacred Seals
-							i(99391),	-- Vest of Seven Sacred Seals
-							i(99405),	-- Tunic of the Unblinking Vigil
-							i(99347),	-- Cuirass of Celestial Harmony
-							i(99344),	-- Hauberk of Celestial Harmony
-							i(99351),	-- Tunic of Celestial Harmony
-							i(99411),	-- Battleplate of the Prehistoric Marauder
-							i(99415),	-- Chestguard of the Prehistoric MarauderSeals
-						},
-					}),
-					i(99714, {	-- Chest of the Cursed Vanquisher
-						["classes"] = {
-							MAGE,
-							DRUID,
-							ROGUE,
-							DEATHKNIGHT,
-						},
-						["g"] = {
-							i(99400),	-- Chronomancer Robes
-							i(99326),	-- Raiment of the Shattered Vale
-							i(99430),	-- Robes of the Shattered Vale
-							i(99419),	-- Tunic of the Shattered Vale
-							i(99427),	-- Vestment of the Shattered Vale
-							i(99356),	-- Tunic of the Barbed Assassin
-							i(99335),	-- Breastplate of Cyclopean Dread
-							i(99330),	-- Chestguard of Cyclopean Dread
-						},
-					}),
+					i(99715),	-- Chest of the Cursed Conqueror
+					i(99716),	-- Chest of the Cursed Protector
+					i(99714),	-- Chest of the Cursed Vanquisher
 					i(104162),	-- Droplet of Y'Shaarj (PET!)
 					i(104163),	-- Gooey Sha-ling (PET!)
 					i(112951),	-- Gaze of Arrogance
@@ -6344,50 +5906,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						},
 					}),
 					ach(8471),	-- Mythic: General Nazgrim
-					i(99721, {	-- Gauntlets of the Cursed Conqueror
-						["classes"] = {
-							PRIEST,
-							WARLOCK,
-							PALADIN,
-						},
-						["g"] = {
-							i(99359),	-- Gloves of the Ternion Glory
-							i(99365),	-- Handwraps of the Ternion GloryGlory
-							i(99424),	-- Gloves of the Horned Nightmare
-							i(99380),	-- Gauntlets of Winged Triumph
-							i(99375),	-- Gloves of Winged Triumph
-							i(99369),	-- Handguards of Winged Triumph
-						},
-					}),
-					i(99722, {	-- Gauntlets of the Cursed Protector
-						["classes"] = {
-							MONK,
-							HUNTER,
-							SHAMAN,
-							WARRIOR,
-						},
-						["g"] = {
-							i(99383),	-- Gauntlets of Seven Sacred Seals
-							i(99392),	-- Grips of Seven Sacred Seals
-							i(99388),	-- Handwraps of Seven Sacred Seals
-							i(99406),	-- Gloves of the Unblinking Vigil
-							i(99345),	-- Gloves of Celestial Harmony
-							i(99340),	-- Grips of Celestial Harmony
-							i(99352),	-- Handwraps of Celestial Harmony
-							i(99412),	-- Gauntlets of the Prehistoric Marauder
-							i(99408),	-- Handguards of the Prehistoric Marauder
-						},
-					}),
-					i(99720, {	-- Gauntlets of the Cursed Vanquisher
-						i(99397),	-- Chronomancer Gloves
-						i(99336),	-- Gauntlets of Cyclopean Dread
-						i(99355),	-- Gloves of the Barbed Assassin
-						i(99432),	-- Gloves of the Shattered Vale
-						i(99327),	-- Grips of the Shattered Vale
-						i(99331),	-- Handguards of Cyclopean Dread
-						i(99420),	-- Handguards of the Shattered Vale
-						i(99435),	-- Handwraps of the Shattered Vale
-					}),
+					i(99721),	-- Gauntlets of the Cursed Conqueror
+					i(99722),	-- Gauntlets of the Cursed Protector
+					i(99720),	-- Gauntlets of the Cursed Vanquisher
 					i(112785),	-- Gar'tok, Strength of the Faithful
 					i(112787),	-- Arcweaver Spell Sword
 					i(112780),	-- Naz'grim's Gutripper
@@ -6472,35 +5993,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							crit(3),	-- Thok the Bloodthirsty
 						},
 					}),
-					i(99724, {	-- Helm of the Cursed Conqueror
-						i(99370),	-- Faceguard of Winged Triumph
-						i(99376),	-- Headguard of Winged Triumph
-						i(99379),	-- Helmet of Winged Triumph
-						i(99366),	-- Cowl of the Ternion Glory
-						i(99360),	-- Hood of the Ternion Glory
-						i(99425),	-- Hood of the Horned Nightmare
-					}),
-					i(99725, {	-- Helm of the Cursed Protector
-						i(99402),	-- Headguard of the Unblinking Vigil
-						i(99384),	-- Crown of Seven Sacred Seals
-						i(99393),	-- Headpiece of Seven Sacred Seals
-						i(99389),	-- Helm of Seven Sacred Seals
-						i(99353),	-- Faceguard of Celestial Harmony
-						i(99332),	-- Headpiece of Celestial Harmony
-						i(99341),	-- Helmet of Celestial Harmony
-						i(99409),	-- Faceguard of the Prehistoric Marauder
-						i(99418),	-- Helmet of the Prehistoric Marauder
-					}),
-					i(99723, {	-- Helm of the Cursed Vanquisher
-						i(99323),	-- Faceguard of Cyclopean Dread
-						i(99337),	-- Helmet of Cyclopean Dread
-						i(99433),	-- Cover of the Shattered Vale
-						i(99421),	-- Headguard of the Shattered Vale
-						i(99328),	-- Headpiece of the Shattered Vale
-						i(99436),	-- Helm of the Shattered Vale
-						i(99398),	-- Chronomancer Hood
-						i(99348),	-- Helmet of the Barbed Assassin
-					}),
+					i(99724),	-- Helm of the Cursed Conqueror
+					i(99725),	-- Helm of the Cursed Protector
+					i(99723),	-- Helm of the Cursed Vanquisher
 					i(112862),	-- Britomart's Jagged Pike
 					i(112853),	-- Hvitserk's Formidable Shanker
 					i(112861),	-- Festering Primordial Globule
@@ -6528,35 +6023,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					}),
 					ach(8480),	-- Mythic: Siegecrafter Blackfuse
 					i(104158),	-- Blackfuse Bombling (PET!)
-					i(99718, {	-- Shoulders of the Cursed Conqueror
-						i(99378),	-- Mantle of Winged Triumph
-						i(99373),	-- Pauldrons of Winged Triumph
-						i(99364),	-- Shoulderguards of Winged Triumph
-						i(99358),	-- Mantle of the Ternion Glory
-						i(99363),	-- Shoulderguards of the Ternion Glory
-						i(99417),	-- Mantle of the Horned Nightmare
-					}),
-					i(99719, {	-- Shoulders of the Cursed Protector
-						i(99404),	-- Spaulders of the Unblinking Vigil
-						i(99381),	-- Mantle of Seven Sacred Seals
-						i(99386),	-- Shoulderguards of Seven Sacred Seals
-						i(99395),	-- Spaulders of Seven Sacred Seals
-						i(99346),	-- Mantle of Celestial Harmony
-						i(99334),	-- Shoulderwraps of Celestial Harmony
-						i(99343),	-- Spaulders of Celestial Harmony
-						i(99414),	-- Pauldrons of the Prehistoric Marauder
-						i(99407),	-- Shoulderguards of the Prehistoric Marauder
-					}),
-					i(99717, {	-- Shoulders of the Cursed Vanquisher
-						i(99339),	-- Pauldrons of Cyclopean Dread
-						i(99325),	-- Shoulderguards of Cyclopean Dread
-						i(99431),	-- Mantle of the Shattered Vale
-						i(99423),	-- Shoulderguards of the Shattered Vale
-						i(99428),	-- Shoulderwraps of the Shattered Vale
-						i(99322),	-- Spaulders of the Shattered Vale
-						i(99401),	-- Chronomancer Mantle
-						i(99350),	-- Spaulders of the Barbed Assassin
-					}),
+					i(99718),	-- Shoulders of the Cursed Conqueror
+					i(99719),	-- Shoulders of the Cursed Protector
+					i(99717),	-- Shoulders of the Cursed Vanquisher
 					i(112892),	-- Lever of the Megantholithic Apparatus
 					i(112897),	-- Siegecrafter's Forge Hammer
 					i(112894),	-- Blackfuse's Blasting Cord
@@ -6579,35 +6048,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					ach(8481),	-- Mythic: Paragons of the Klaxxi
 					ach(8531),	-- Now We are the Paragon
 					i(104165),	-- Kovok (PET!)
-					i(99712, {	-- Leggings of the Cursed Conqueror
-						i(99377),	-- Greaves of Winged Triumph
-						i(99371),	-- Legguards of Winged Triumph
-						i(99372),	-- Legplates of Winged Triumph
-						i(99361),	-- Leggings of the Ternion Glory
-						i(99367),	-- Legwraps of the Ternion Glory
-						i(99426),	-- Leggings of the Horned Nightmare
-					}),
-					i(99713, {	-- Leggings of the Cursed Protector
-						i(99403),	-- Legguards of the Unblinking Vigil
-						i(99394),	-- Leggings of Seven Sacred Seals
-						i(99385),	-- Legguards of Seven Sacred Seals
-						i(99390),	-- Legwraps of Seven Sacred Seals
-						i(99333),	-- Leggings of Celestial Harmony
-						i(99342),	-- Legguards of Celestial Harmony
-						i(99354),	-- Legwraps of Celestial Harmony
-						i(99410),	-- Legguards of the Prehistoric Marauder
-						i(99413),	-- Legplates of the Prehistoric Marauder
-					}),
-					i(99726, {	-- Leggings of the Cursed Vanquisher
-						i(99338),	-- Greaves of Cyclopean Dread
-						i(99324),	-- Legguards of Cyclopean Dread
-						i(99422),	-- Breeches of the Shattered Vale
-						i(99434),	-- Leggings of the Shattered Vale
-						i(99329),	-- Legguards of the Shattered Vale
-						i(99429),	-- Legwraps of the Shattered Vale
-						i(99399),	-- Chronomancer Leggings
-						i(99349),	-- Legguards of the Barbed Assassin
-					}),
+					i(99712),	-- Leggings of the Cursed Conqueror
+					i(99713),	-- Leggings of the Cursed Protector
+					i(99726),	-- Leggings of the Cursed Vanquisher
 					i(112921),	-- Kil'ruk's Furious Blade
 					i(112920),	-- Korven's Crimson Crescent
 					i(112922),	-- Rik'kal's Bloody Scalpel
