@@ -156,10 +156,10 @@ _.Zones =
 									i(186741),	-- Razorwing Scale Footguards
 									i(185872),	-- Razorwing Scale Greaves*
 									i(185870),	-- Razorwing Scale Grips
-									i(186740),	-- Razorwing Scale Harness
+									i(186740),	-- Razorwing Scale Harness*
 									i(186743),	-- Razorwing Scale Hood
 									i(186744),	-- Razorwing Scale Pants
-									i(185873),	-- Razorwing Scale Shoulderguards
+									i(185873),	-- Razorwing Scale Shoulderguards*
 									i(186745),	-- Razorwing Scale Spaulders
 									i(185869),	-- Razorwing Scale Striders
 									i(186747),	-- Razorwing Scale Wristguards
@@ -194,7 +194,7 @@ _.Zones =
 									i(185900),	-- Korthian Caretaker's Rod
 									i(185900),	-- Korthian Caretaker's Stave*
 									i(186760),	-- Korthian Energy Bow
-									i(186758),	-- Korthian Keeper's Buckler
+									i(186758),	-- Korthian Keeper's Buckler*
 									i(185898),	-- Korthian Pathfinder's Spire
 									i(185893),	-- Korthian Protector's Greataxe
 									i(186764),	-- Korthian Protector's Warhammer*
@@ -205,6 +205,9 @@ _.Zones =
 									i(186763),	-- Vault Guardian's Decapitator
 									i(185887),	-- Vault Guardian's Targe
 									i(186769),	-- Vault Guardian's Warglaive
+									i(186765),	-- Vault Patroller's Mace
+									i(186771),	-- Vault Patroller's Slicer*
+									i(186766),	-- Vault Patroller's Staff
 								}),
 								f(52,   {	-- Finger
 									i(185894),	-- Attendant's Loop*
@@ -213,6 +216,7 @@ _.Zones =
 									i(185903),	-- Soul-Seeker's Ring*
 								}),
 								f(53,   {	-- Trinkets
+									i(186155),	-- Harmonic Crowd Breaker
 									i(186156),	-- Tome of Insight
 								}),
 							},

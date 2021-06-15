@@ -199,6 +199,7 @@ _.Zones =
 						{ 62.9, 34.9, KORTHIA },
 					},
 					["g"] = {
+						i(187026),	-- Field Warden's Torture Kit
 						i(187431),	-- Sleeping Armament
 					},
 				}),
@@ -214,6 +215,7 @@ _.Zones =
 						{ 62.3, 58.6, KORTHIA },
 					},
 					["g"] = {
+						i(187026),	-- Field Warden's Torture Kit
 						i(187431),	-- Sleeping Armament
 					},
 				}),
@@ -222,11 +224,13 @@ _.Zones =
 					["isDaily"] = true,
 					["coords"] = {
 						{ 47.7, 74.3, KORTHIA },
+						{ 51.3, 64.7, KORTHIA },
 						{ 54.0, 72.8, KORTHIA },
 						{ 56.4, 69.5, KORTHIA },
 						{ 56.5, 74.7, KORTHIA },
 					},
 					["g"] = {
+						i(187026),	-- Field Warden's Torture Kit
 						i(187431),	-- Sleeping Armament
 					},
 				}),
@@ -373,6 +377,9 @@ _.Zones =
 						{ 50.4, 31.1, KORTHIA },	-- Shardhide Stash
 						{ 51.3, 29.7, KORTHIA },	-- Shardhide Stash
 						{ 52.3, 27.0, KORTHIA },	-- Shardhide Stash
+					},
+					["g"] = {
+						i(187442),	-- Scholar's Ancient Pack
 					},
 				}),
 				n(179772, {	-- Spectral Bound Chest

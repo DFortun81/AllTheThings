@@ -211,6 +211,7 @@ _.Zones =
 							["isWeekly"] = true,
 							["questID"] = 64553,	-- Legend of the Animaswell
 						}),
+						i(187386),	-- Stygian Crystal Studded Legguards
 					},
 				}),
 				n(179760, {	-- Towering Exterminator
@@ -226,6 +227,7 @@ _.Zones =
 						i(187241),	-- Watchful Eye of the Damned
 						--
 						i(187376),	-- Mawsworn Lieutenant's Treads
+						i(187392),	-- Sabatons of the Towering Construct
 						i(187373),	-- Soul-Enveloping Leggings
 					},
 				}),
