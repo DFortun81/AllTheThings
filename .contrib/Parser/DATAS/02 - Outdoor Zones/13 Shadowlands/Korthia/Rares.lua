@@ -104,6 +104,7 @@ _.Zones =
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 						i(187183),	-- Rampaging Mauler (MOUNT!)
+						i(187375),	-- Bound Worldeater Tendrils
 						i(187384),	-- Konthrogz's Scaled Handguards
 						i(187397),	-- Vambraces of the In-Between
 						i(187378),	-- Visage of the Obliterator
