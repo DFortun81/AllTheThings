@@ -2010,19 +2010,11 @@ _.Zones =
 								i(163729),	-- Dread Gladiator's Shawl
 								i(161731),	-- Dread Gladiator's Silk Amice (A)
 								i(161737),	-- Dread Gladiator's Silk Bracers (A)
-								i(161625),	-- Dread Gladiator's Silk Cord (A)
 								i(161722),	-- Dread Gladiator's Silk Cowl (A)
-								i(161628),	-- Dread Gladiator's Silk Cuffs (A)
-								i(161611),	-- Dread Gladiator's Silk Gloves (A)
 								i(161720),	-- Dread Gladiator's Silk Handguards (A)
-								i(161613),	-- Dread Gladiator's Silk Hood (A)
-								i(161617),	-- Dread Gladiator's Silk Leggings (A)
-								i(161622),	-- Dread Gladiator's Silk Mantle (A)
 								i(161710),	-- Dread Gladiator's Silk Raiment (A)
-								i(161601),	-- Dread Gladiator's Silk Robe (A)
 								i(161657),	-- Dread Gladiator's Silk Sash (A)
 								i(161715),	-- Dread Gladiator's Silk Slippers (A)
-								i(161606),	-- Dread Gladiator's Silk Treads (A)
 								i(161726),	-- Dread Gladiator's Silk Trousers (A)
 							},
 						}),
