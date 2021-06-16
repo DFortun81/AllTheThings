@@ -2408,6 +2408,13 @@ subroutines = {
 			-- Timothy Jones <Jewelcrafting Trainer> Northrend Jewelcrafting
 		}
 	end,
+	["common_tier_vendor"] = function(npcID)
+		return {
+			{"select", "creatureID", npcID},	-- Main Vendor
+			{"pop"},	-- Remove Main Vendor and push his children into the processing queue.
+			{"is", "itemID"},	-- Only Items
+		}
+	end,
 };
 ResolveSymbolicLink = function(o)
 	if o and o.sym then
