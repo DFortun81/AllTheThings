@@ -1845,17 +1845,6 @@ CreateObject = function(t)
 		end
 		return s;
 	else
-		-- if t.key == "criteriaID" then s.achievementID = t.achievementID; end
-		-- for k,v in pairs(t) do
-		-- 	rawset(s, k, v);
-		-- end
-		-- if t.g then
-		-- 	s.g = {};
-		-- 	for i,o in ipairs(t.g) do
-		-- 		tinsert(s.g, CreateObject(o));
-		-- 	end
-		-- end
-
 		if t.mapID then
 			t = app.CreateMap(t.mapID, t);
 		elseif t.s then
@@ -17916,27 +17905,32 @@ app.events.LOOT_OPENED = function()
 	   end
 	end
 end
-app:GetWindow("Debugger", UIParent, function(self)
+app:GetWindow("Debugger", UIParent, function(self, force)
 	if not self.initialized then
 		self.initialized = true;
+		force = true;
 		self.data = {
 			['text'] = "Session History",
 			['icon'] = "Interface\\Icons\\Achievement_Dungeon_GloryoftheRaider.blp",
 			["description"] = "This keeps a visual record of all of the quests, maps, loot, and vendors that you have come into contact with since the session was started.",
-			['visible'] = true,
+			["OnUpdate"] = app.AlwaysShowUpdate,
 			['expanded'] = true,
 			['back'] = 1,
 			['options'] = {
 				{
+					["hash"] = "clearHistory",
 					['text'] = "Clear History",
 					['icon'] = "Interface\\Icons\\Ability_Rogue_FeignDeath.blp",
 					["description"] = "Click this to fully clear this window.\n\nNOTE: If you click this by accident, use the dynamic Restore Buttons that this generates to reapply the data that was cleared.\n\nWARNING: If you reload the UI, the data stored in the Reload Button will be lost forever!",
-					['visible'] = true,
+					["OnUpdate"] = app.AlwaysShowUpdate,
 					['count'] = 0,
 					['OnClick'] = function(row, button)
 						local copy = {};
-						for i,o in ipairs(self.rawData) do
-							tinsert(copy, o);
+						for i,o in ipairs(self.data.g) do
+							-- only backup non-button groups
+							if not o.OnClick then
+								tinsert(copy, o);
+							end
 						end
 						if #copy < 1 then
 							app.print("There is nothing to clear.");
@@ -17944,17 +17938,18 @@ app:GetWindow("Debugger", UIParent, function(self)
 						end
 						row.ref.count = row.ref.count + 1;
 						tinsert(self.data.options, {
+							["hash"] = "restore" .. row.ref.count,
 							['text'] = "Restore Button " .. row.ref.count,
 							['icon'] = "Interface\\Icons\\ability_monk_roll.blp",
 							["description"] = "Click this to restore your cleared data.\n\nNOTE: Each Restore Button houses different data.\n\nWARNING: This data will be lost forever when you reload your UI!",
-							['visible'] = true,
+							["OnUpdate"] = app.AlwaysShowUpdate,
 							['data'] = copy,
 							['OnClick'] = function(row, button)
 								for i,info in ipairs(row.ref.data) do
 									MergeObject(self.data.g, CreateObject(info));
-									MergeObject(self.rawData, info);
 								end
-								self:Update();
+								BuildGroups(self.data, self.data.g);
+								AfterCombatCallback(self.Update, self, true);
 								return true;
 							end,
 						});
@@ -17963,39 +17958,109 @@ app:GetWindow("Debugger", UIParent, function(self)
 						for i=#self.data.options,1,-1 do
 							tinsert(self.data.g, 1, self.data.options[i]);
 						end
-						self:Update();
+						BuildGroups(self.data, self.data.g);
+						AfterCombatCallback(self.Update, self, true);
 						return true;
 					end,
 				},
 			},
 			['g'] = {},
 		};
-		self.rawData = {};
 
 		local AddObject = function(info)
+			-- print("Debugger.AddObject")
+			-- app.PrintTable(info)
+			-- print("---")
 			-- Bubble Up the Maps
 			local mapInfo;
 			local mapID = app.GetCurrentMapID();
 			if mapID then
-				local pos = C_Map.GetPlayerMapPosition(mapID, "player");
-				if pos then
-					local px, py = pos:GetXY();
-					info.coord = { px * 100, py * 100, mapID };
+				if info then
+					local pos = C_Map.GetPlayerMapPosition(mapID, "player");
+					if pos then
+						local px, py = pos:GetXY();
+						info.coord = { px * 100, py * 100, mapID };
+					end
 				end
 				repeat
 					mapInfo = C_Map_GetMapInfo(mapID);
 					if mapInfo then
-						info = { ["mapID"] = mapInfo.mapID, ["g"] = { info } };
+						if not info then
+							info = { ["mapID"] = mapInfo.mapID };
+							-- print("Added mapID",mapInfo.mapID)
+						else
+							info = { ["mapID"] = mapInfo.mapID, ["g"] = { info } };
+							-- print("Pushed into mapID",mapInfo.mapID)
+						end
 						mapID = mapInfo.parentMapID
 					end
 				until not mapInfo or not mapID;
 			end
 
-			MergeObject(self.data.g, CreateObject(info));
-			MergeObject(self.rawData, info);
-			self:Update();
+			if info then
+				MergeObject(self.data.g, CreateObject(info));
+				MergeObject(self.rawData, info);
+				BuildGroups(self.data, self.data.g);
+				AfterCombatCallback(self.Update, self, true);
+			end
 		end
 
+		-- Merchant Additions
+		local AddMerchant = function(guid)
+			-- print("AddMerchant",guid)
+			local guid = guid or UnitGUID("npc");
+			if guid then
+				local ty, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",guid);
+				if npc_id then
+					npc_id = tonumber(npc_id);
+
+					-- Ignore vendor mount...
+					if npc_id == 62822 then
+						return true;
+					end
+
+					local numItems = GetMerchantNumItems();
+					print("MERCHANT DETAILS", ty, npc_id, numItems);
+
+					local rawGroups = {};
+					for i=1,numItems,1 do
+						local link = GetMerchantItemLink(i);
+						if link then
+							local name, texture, cost, quantity, numAvailable, isPurchasable, isUsable, extendedCost = GetMerchantItemInfo(i);
+							if extendedCost then
+								cost = {};
+								local itemCount = GetMerchantItemCostInfo(i);
+								for j=1,itemCount,1 do
+									local itemTexture, itemValue, itemLink = GetMerchantItemCostItem(i, j);
+									if itemLink then
+										-- print("  ", itemValue, itemLink, gsub(itemLink, "\124", "\124\124"));
+										local m = itemLink:match("currency:(%d+)");
+										if m then
+											-- Parse as a CURRENCY.
+											tinsert(cost, {"c", tonumber(m), itemValue});
+										else
+											-- Parse as an ITEM.
+											tinsert(cost, {"i", tonumber(itemLink:match("item:(%d+)")), itemValue});
+										end
+									end
+								end
+							end
+
+							-- Parse as an ITEM LINK.
+							table.insert(rawGroups, { ["itemID"] = tonumber(link:match("item:(%d+)")), ["rawlink"] = link, ["cost"] = cost });
+						end
+					end
+
+					local info = { [(ty == "GameObject") and "objectID" or "npcID"] = npc_id };
+					info.faction = UnitFactionGroup("npc");
+					info.text = UnitName("npc");
+					info.g = rawGroups;
+					-- app.DEBUG_PRINT = true;
+					AddObject(info);
+					-- app.DEBUG_PRINT = nil;
+				end
+			end
+		end
 
 		-- Setup Event Handlers and register for events
 		self:SetScript("OnEvent", function(self, e, ...)
@@ -18010,77 +18075,13 @@ app:GetWindow("Debugger", UIParent, function(self)
 				for i=#self.data.options,1,-1 do
 					tinsert(self.data.g, 1, self.data.options[i]);
 				end
-				self:Update();
+				BuildGroups(self.data, self.data.g);
+				AfterCombatCallback(self.Update, self, true);
 			elseif e == "ZONE_CHANGED_NEW_AREA" or e == "NEW_WMO_CHUNK" then
-				-- Bubble Up the Maps
-				local mapInfo, info;
-				local mapID = app.GetCurrentMapID();
-				if mapID then
-					repeat
-						mapInfo = C_Map_GetMapInfo(mapID);
-						if mapInfo then
-							info = { ["mapID"] = mapInfo.mapID, ["g"] = { info } };
-							mapID = mapInfo.parentMapID
-						end
-					until not mapInfo or not mapID;
-
-					MergeObject(self.data.g, CreateObject(info));
-					MergeObject(self.rawData, info);
-					self:Update();
-				end
+				AddObject();
 			elseif e == "MERCHANT_SHOW" or e == "MERCHANT_UPDATE" then
 				MerchantFrame_SetFilter(MerchantFrame, 1);
-				C_Timer.After(0.6, function()
-					local guid = UnitGUID("npc");
-					local ty, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid;
-					if guid then ty, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",guid); end
-					if npc_id then
-						npc_id = tonumber(npc_id);
-
-						-- Ignore vendor mount...
-						if npc_id == 62822 then
-							return true;
-						end
-
-						local numItems = GetMerchantNumItems();
-						print("MERCHANT DETAILS", ty, npc_id, numItems);
-
-						local rawGroups = {};
-						for i=1,numItems,1 do
-							local link = GetMerchantItemLink(i);
-							if link then
-								local name, texture, cost, quantity, numAvailable, isPurchasable, isUsable, extendedCost = GetMerchantItemInfo(i);
-								if extendedCost then
-									cost = {};
-									local itemCount = GetMerchantItemCostInfo(i);
-									for j=1,itemCount,1 do
-										local itemTexture, itemValue, itemLink = GetMerchantItemCostItem(i, j);
-										if itemLink then
-											-- print("  ", itemValue, itemLink, gsub(itemLink, "\124", "\124\124"));
-											local m = itemLink:match("currency:(%d+)");
-											if m then
-												-- Parse as a CURRENCY.
-												tinsert(cost, {"c", tonumber(m), itemValue});
-											else
-												-- Parse as an ITEM.
-												tinsert(cost, {"i", tonumber(itemLink:match("item:(%d+)")), itemValue});
-											end
-										end
-									end
-								end
-
-								-- Parse as an ITEM LINK.
-								table.insert(rawGroups, {["itemID"] = tonumber(link:match("item:(%d+)")), ["cost"] = cost});
-							end
-						end
-
-						local info = { [(ty == "GameObject") and "objectID" or "npcID"] = npc_id };
-						info.faction = UnitFactionGroup("npc");
-						info.text = UnitName("npc");
-						info.g = rawGroups;
-						AddObject(info);
-					end
-				end);
+				DelayedCallback(AddMerchant, 1, UnitGUID("npc"));
 			elseif e == "TRADE_SKILL_LIST_UPDATE" then
 				local tradeSkillID = AllTheThings.GetTradeSkillLine();
 				local currentCategoryGroup, currentCategoryID, categories = {}, -1, {};
@@ -18161,7 +18162,8 @@ app:GetWindow("Debugger", UIParent, function(self)
 				};
 				MergeObject(self.data.g, CreateObject(info));
 				MergeObject(self.rawData, info);
-				self:Update();
+				BuildGroups(self.data, self.data.g);
+				AfterCombatCallback(self.Update, self, true);
 			elseif e == "QUEST_DETAIL" then
 				local questStartItemID = ...;
 				local questID = GetQuestID();
@@ -18213,12 +18215,17 @@ app:GetWindow("Debugger", UIParent, function(self)
 				AddObject(info);
 			elseif e == "CHAT_MSG_LOOT" then
 				local msg, player, a, b, c, d, e, f, g, h, i, j, k, l = ...;
+				-- "You receive item: item:###" will break the match
+				-- this probably doesn't work in other locales
+				msg = msg:gsub("item: ", "");
+				-- print("Loot parse",msg)
 				local itemString = string.match(msg, "item[%-?%d:]+");
 				if itemString then
-					local rawGroups = {};
+					-- print("Looted Item",itemString)
 					local itemID = GetItemInfoInstant(itemString);
-					table.insert(rawGroups, { ["itemID"] = itemID, ["s"] = app.GetSourceID(itemString, itemID) });
-					AddObject({ ["unit"] = j, ["g"] = rawGroups });
+					-- app.DEBUG_PRINT = true;
+					AddObject({ ["unit"] = j, ["g"] = { { ["itemID"] = itemID, ["rawlink"] = itemString, ["s"] = app.GetSourceID(itemString) } } });
+					-- app.DEBUG_PRINT = nil;
 				end
 			end
 		end);
@@ -18232,6 +18239,8 @@ app:GetWindow("Debugger", UIParent, function(self)
 		self:RegisterEvent("MERCHANT_UPDATE");
 		self:RegisterEvent("CHAT_MSG_LOOT");
 		--self:RegisterAllEvents();
+
+		BuildGroups(self.data, self.data.g);
 	end
 
 	-- Update the window and all of its row data
@@ -18239,8 +18248,7 @@ app:GetWindow("Debugger", UIParent, function(self)
 	self.data.index = 0;
 	self.data.back = 1;
 	self.data.indent = 0;
-	BuildGroups(self.data, self.data.g);
-	self:BaseUpdate(true);
+	self:BaseUpdate(force);
 end):Show();
 --]]--
 -- WARNING: DEV ONLY END
