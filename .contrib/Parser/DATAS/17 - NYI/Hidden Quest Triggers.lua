@@ -1105,6 +1105,7 @@ _.HiddenQuestTriggers =
 
 		-- Zones
 		q(12845),	-- Dalaran teleport crystal flag
+		q(13700),	-- Argent Tournament - Alliance Champion Marker
 		q(13701),	-- Argent Tournament - Horde Champion Marker
 		q(13686),	-- Alliance Tournament Eligibility Marker
 		q(13687),	-- Horde Tournament Eligibility Marker
