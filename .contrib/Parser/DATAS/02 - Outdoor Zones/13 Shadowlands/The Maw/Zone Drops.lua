@@ -14,6 +14,11 @@ _.Zones =
 				i(186564, {	-- Golden Eye
 					["cr"] = 177132,	-- Helsworn Soulseeker
 				}),
+				i(186559, {	-- Grappling Gauntlet
+					["crs"] = {
+						157824,	-- Protector of Flame
+					},
+				}),
 				i(187253, {	-- Maw Guard's Spiked Spaulders
 					["crs"] = {
 						167322,	-- Mawsworn Shackler

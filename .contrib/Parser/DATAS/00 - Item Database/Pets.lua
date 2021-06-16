@@ -1004,6 +1004,8 @@ pet(181267, 2957);	-- Writhing Spine
 pet(186449, 3117);	-- Amaranthine Stinger
 pet(186546, 3103);	-- Copperback Etherwyrm
 pet(186543, 3138);	-- Domestic Aunian
+pet(186554, 3128);	-- Eye of Allseeing
+pet(186555, 3129);	-- Eye of Extermination
 pet(185919, 3097);	-- Flawless Amethyst Baubleworm
 pet(186557, 3114);	-- Fodder
 pet(186564, 3125);	-- Golden Eye

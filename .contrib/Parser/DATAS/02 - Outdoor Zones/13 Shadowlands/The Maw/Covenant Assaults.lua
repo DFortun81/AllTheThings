@@ -38,7 +38,6 @@ _.Zones =
 					}),
 					ach(15033, {	-- Taking the Tremaculum
 						crit(4),	-- Fangcrack's Fan Club
-						crit(7),	-- If Even One is Worthy
 						crit(8),	-- They Grow Up So Quickly
 					}),
 					ach(15034, {	-- Wings Against the Flames
@@ -564,6 +563,16 @@ _.Zones =
 								["coord"] = { 31.5, 15.0, THE_MAW },
 								["g"] = {
 									crit(6, { 	-- Duelist's Challenge
+										["achievementID"] = 15033,	-- Taking the Tremaculum
+									}),
+								},
+							}),
+							q(63839, {	-- If Even One is Worthy
+								["provider"] = { "n", 178063 },	-- The Accuser
+								["isWeekly"] = true,
+								["coord"] = { 30.9, 16.0, THE_MAW },
+								["g"] = {
+									crit(7, {	-- If Even One is Worthy
 										["achievementID"] = 15033,	-- Taking the Tremaculum
 									}),
 								},

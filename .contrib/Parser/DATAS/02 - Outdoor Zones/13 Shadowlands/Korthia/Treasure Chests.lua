@@ -77,7 +77,10 @@ _.Zones =
 				o(369327, {	-- Invasive Mawshroom
 					["questID"] = 64351,
 					["isDaily"] = true,
-					["coord"] = { 54.2, 41.2, KORTHIA },
+					["coords"] = {
+						{ 54.2, 41.2, KORTHIA },
+						{ 57.3, 39.4, KORTHIA },
+					},
 					["g"] = {
 						i(186990),	-- Recipe: Blossom Burst
 						i(186988),	-- Recipe: Glory Burst
@@ -101,7 +104,10 @@ _.Zones =
 				o(369330, {	-- Invasive Mawshroom
 					["questID"] = 64355,
 					["isDaily"] = true,
-					["coord"] = { 45.6, 34.3, KORTHIA },
+					["coords"] = {
+						{ 43.6, 36.6, KORTHIA },
+						{ 45.6, 34.3, KORTHIA },
+					},
 					["g"] = {
 						i(186990),	-- Recipe: Blossom Burst
 						i(186988),	-- Recipe: Glory Burst
@@ -223,6 +229,7 @@ _.Zones =
 					["questID"] = 64364,
 					["isDaily"] = true,
 					["coords"] = {
+						{ 43.1, 31.4, KORTHIA },
 						{ 47.7, 74.3, KORTHIA },
 						{ 51.3, 64.7, KORTHIA },
 						{ 54.0, 72.8, KORTHIA },
@@ -438,4 +445,5 @@ _.HiddenQuestTriggers = {
 	q(64317),	-- 2nd loot of shared treasure in Korthia (Pile of Bones, Relic Cache, Shardhide Stash)
 	q(64318),	-- 3rd loot of shared treasure in Korthia (Pile of Bones, Relic Cache, Shardhide Stash)
 	q(64564),	-- 4th loot of shared treasure in Korthia (Pile of Bones, Relic Cache, Shardhide Stash) - this # loot used to be 64309, but they changed it at some point on PTR
+--	q(64310),	-- popped when i looted the #64310 Invasive Mawshroom at its second location (57.3, 39.4) - may be tied to receiving a Repaired Riftkey, commenting until confirmed
 };

@@ -53,6 +53,7 @@ _.PetJournal =
 		p(627),		-- Infected Squirrel
 		p(453),		-- Infested Bear Cub
 		p(3045),	-- Iridescent Ooze
+		p(3122),	-- Irongrasp
 		un(10, p(302)),	-- Landro's Lichling
 		p(2532),	-- Leper Rat
 		p(3098),	-- Lil'Abom
