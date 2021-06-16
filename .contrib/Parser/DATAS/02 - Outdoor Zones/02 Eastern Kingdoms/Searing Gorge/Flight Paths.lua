@@ -5,16 +5,16 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(32, {	-- Searing Gorge
+		m(SEARING_GORGE, {
 			n(FLIGHT_PATHS, {
 				fp(673, {	-- Iron Summit, Searing Gorge
-					["coord"] = { 41.0, 68.6, 32 },
+					["coord"] = { 41.0, 68.6, SEARING_GORGE },
 				}),
 				fp(74, {	-- Thorium Point, Searing Gorge
-					["coord"] = { 37.8, 30.6, 32 },
+					["coord"] = { 37.8, 30.6, SEARING_GORGE },
 				}),
 				fp(75, {	-- Thorium Point, Searing Gorge
-					["coord"] = { 34.8, 30.8, 32 },
+					["coord"] = { 34.8, 30.8, SEARING_GORGE },
 				}),
 			}),
 		}),

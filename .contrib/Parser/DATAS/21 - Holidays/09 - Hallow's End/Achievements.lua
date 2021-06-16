@@ -366,8 +366,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { 49 },	-- Redridge Mountains
 										}),
 										crit(18, {	-- Searing Gorge, Iron Summit
-											["coord"] = { 39.4, 66.1, 32 },
-											["maps"] = { 32 },	-- Searing Gorge
+											["coord"] = { 39.4, 66.1, SEARING_GORGE },
+											["maps"] = { SEARING_GORGE },
 										}),
 										crit(19, {	-- Stormwind, The Trade District
 											["coord"] = { 60.5, 75.2, 84 },
@@ -467,8 +467,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { 50 },	-- Northern Stranglethorn
 										}),
 										crit(16, {	-- Searing Gorge, Iron Summit
-											["coord"] = { 39.4, 66.1, 32 },
-											["maps"] = { 32 },	-- Searing Gorge
+											["coord"] = { 39.4, 66.1, SEARING_GORGE },
+											["maps"] = { SEARING_GORGE },
 										}),
 										crit(17, {	-- Silvermoon City, The Bazaar
 											["coord"] = { 67.6, 73.2, SILVERMOON_CITY },

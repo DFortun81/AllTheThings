@@ -336,8 +336,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8651,  {	-- Ironband the Elder
 				["provider"] = { "n", 15567 },	-- Elder Ironband
 				["isYearly"] = true,
-				["coord"] = { 21.3, 79.0, 32 },
-				["maps"] = { 32 },	-- Searing Gorge
+				["coord"] = { 21.3, 79.0, SEARING_GORGE },
+				["maps"] = { SEARING_GORGE },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(12, {	-- Elder Ironband in Searing Gorge

@@ -1330,8 +1330,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(28965, {	-- Candy Bucket — Searing Gorge, Iron Summit, neutral
 				["isYearly"] = true,
-				["coord"] = { 39.4, 66.1, 32 },
-				["maps"] = { 32 },	-- Searing Gorge
+				["coord"] = { 39.4, 66.1, SEARING_GORGE },
+				["maps"] = { SEARING_GORGE },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
