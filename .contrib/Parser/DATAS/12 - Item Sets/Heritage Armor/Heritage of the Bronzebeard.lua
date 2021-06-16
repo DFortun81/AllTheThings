@@ -55,14 +55,14 @@ _.GearSets =
 			q(53844, {	-- Recruiting the Furnace Master
 				["sourceQuest"] = 53840,	-- Interest Yah In A Pint?
 				["provider"] = { "n", 145462 },	-- Brann Bronzebeard
-				["coord"] = { 35.0, 48.8, 48 }, -- Loch Modan
+				["coord"] = { 35.0, 48.8, LOCH_MODAN },
 				["races"] = { DWARF },
 				["minReputation"] = { 47, EXALTED },
 			}),
 			q(53842, {	-- Earthen Blessing
 				["sourceQuest"] = 53844,	-- Recruiting the Furnace Master
 				["provider"] = { "n", 145462 },	-- Brann Bronzebeard
-				["coord"] = { 35.0, 48.8, 48 }, -- Loch Modan
+				["coord"] = { 35.0, 48.8, LOCH_MODAN },
 				["races"] = { DWARF },
 				["minReputation"] = { 47, EXALTED },
 			}),

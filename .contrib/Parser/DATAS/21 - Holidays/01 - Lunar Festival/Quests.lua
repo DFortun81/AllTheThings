@@ -396,8 +396,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8642,  {	-- Silvervein the Elder
 				["provider"] = { "n", 15558 },	-- Elder Silvervein
 				["isYearly"] = true,
-				["coord"] = { 33.3, 46.5, 48 },
-				["maps"] = { 48 },	-- Loch Modan
+				["coord"] = { 33.3, 46.5, LOCH_MODAN },
+				["maps"] = { LOCH_MODAN },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(7, {	-- Elder Silvervein in Thelsamar

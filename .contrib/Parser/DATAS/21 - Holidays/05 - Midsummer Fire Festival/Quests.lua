@@ -654,10 +654,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11749, {	-- Desecrate this Fire! — Loch Modan
 				["isYearly"] = true,
 				["provider"] = { "o", 187564 },	-- Alliance Bonfire
-				["coord"] = { 32.3, 40.4, 48 },
+				["coord"] = { 32.3, 40.4, LOCH_MODAN },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-				["maps"] = { 48 },	-- Loch Modan
+				["maps"] = { LOCH_MODAN },
 			}),
 			q(11750, {	-- Desecrate this Fire! — Nagrand (Outland)
 				["isYearly"] = true,
@@ -1086,9 +1086,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11820, {	-- Honor the Flame — Loch Modan
 				["provider"] = { "n", 25902 },	-- Loch Modan Flame Warden
 				["isYearly"] = true,
-				["coord"] = { 32.3, 41.0, 48 },
+				["coord"] = { 32.3, 41.0, LOCH_MODAN },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 48 },	-- Loch Modan
+				["maps"] = { LOCH_MODAN },
 			}),
 			q(11821, {	-- Honor the Flame — Nagrand (Outland)
 				["provider"] = { "n", 25903 },	-- Nagrand Flame Warden
@@ -1911,7 +1911,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					BURNING_STEPPES,
 					37,		-- Elwynn Forest
 					DUSKWOOD,
-					48,		-- Loch Modan
+					LOCH_MODAN,
 					49,		-- Redridge Mountains
 					50,		-- Northern Stranglethorn
 					51,		-- Swamp of Sorrows

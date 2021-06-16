@@ -1174,18 +1174,18 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(28963, {	-- Candy Bucket — Loch Modan, Farstrider Lodge, Alliance
 				["isYearly"] = true,
-				["coord"] = { 82.9, 63.6, 48 },
+				["coord"] = { 82.9, 63.6, LOCH_MODAN },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 48 },	-- Loch Modan
+				["maps"] = { LOCH_MODAN },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12339, {	-- Candy Bucket — Loch Modan, Thelsamar, Alliance
 				["isYearly"] = true,
-				["coord"] = { 35.5, 48.4, 48 },
+				["coord"] = { 35.5, 48.4, LOCH_MODAN },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 48 },	-- Loch Modan
+				["maps"] = { LOCH_MODAN },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},

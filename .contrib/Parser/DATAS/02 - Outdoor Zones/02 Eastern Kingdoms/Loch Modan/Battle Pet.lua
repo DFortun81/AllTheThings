@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(48, {	-- Loch Modan
+		m(LOCH_MODAN, {
 			filter(101, {	-- Pet Battle
 				p(441, {	-- Alpine Hare
 					["crs"] = { 61690 },	-- Alpine Hare

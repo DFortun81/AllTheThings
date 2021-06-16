@@ -350,12 +350,12 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { IRONFORGE },
 										}),
 										crit(14, {	-- Loch Modan, Farstrider's Lodge
-											["coord"] = { 82.9, 63.6, 48 },
-											["maps"] = { 48 },	-- Loch Modan
+											["coord"] = { 82.9, 63.6, LOCH_MODAN },
+											["maps"] = { LOCH_MODAN },
 										}),
 										crit(15, {	-- Loch Modan, Thelsamar
-											["coord"] = { 35.5, 48.4, 48 },
-											["maps"] = { 48 },	-- Loch Modan
+											["coord"] = { 35.5, 48.4, LOCH_MODAN },
+											["maps"] = { LOCH_MODAN },
 										}),
 										crit(16, {	-- Northern Stranglethorn, Fort Livingston
 											["coord"] = { 53.1, 66.9, 50 },
