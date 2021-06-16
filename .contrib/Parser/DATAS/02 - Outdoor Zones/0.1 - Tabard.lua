@@ -15,7 +15,7 @@ _.Zones =
 			THE_EXODAR,
 			SILVERMOON_CITY,
 			SHATTRATH_CITY,
-			87,		-- Ironforge
+			IRONFORGE,
 			90,		-- Undercity
 			84,		-- Stormwind City
 			89,		-- Darnassus
@@ -28,7 +28,7 @@ _.Zones =
 			{ 53.71, 68.53, THE_EXODAR },	-- Issca
 			{ 78.64, 84.73, SILVERMOON_CITY },	-- Kredis
 			{ 59.01, 46.58, SHATTRATH_CITY },	-- Linsa
-			{ 36.45, 85.32, 87 },	-- Lyesa Steelbrow [Ironforge]
+			{ 36.45, 85.32, IRONFORGE },	-- Lyesa Steelbrow
 			{ 69.33, 44.82, 90 },	-- Merill Pleasance [Undercity]
 			{ 64.06, 77.41, 84 },	-- Rebecca Laughlin [Stormwind City]
 			{ 64.58, 38.09, 89 },	-- Shalumon [Darnassus]

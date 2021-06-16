@@ -81,7 +81,7 @@ _.Zones =
 				}),
 				q(26112, {	-- Demanding Answers
 					["provider"] = { "n", 41853 },	-- Commander Stonebreaker
-					["coord"] = { 78.2, 20.4, 87 },
+					["coord"] = { 78.2, 20.4, IRONFORGE },
 					["sourceQuest"] = 26102,	-- Grimaxe's Demise
 					["races"] = ALLIANCE_ONLY,
 				}),

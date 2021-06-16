@@ -993,9 +993,9 @@ _.Zones =
 				}),
 				q(27271, {	-- Journey to the Wizard's Sanctum
 					["isBreadcrumb"] = true,
-					["provider"] = { "n", 5146 },	-- Nittlebur Sparkfizzle (Ironforge)
+					["provider"] = { "n", 5146 },	-- Nittlebur Sparkfizzle
 					["classes"] = { MAGE },
-					["coord"] = { 51.0, 26.2, 87 },	-- Nittlebur Sparkfizzle (Ironforge)
+					["coord"] = { 51.0, 26.2, IRONFORGE },	-- Nittlebur Sparkfizzle
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27265, {	-- Lord Grayson Shadowbreaker
@@ -1015,9 +1015,9 @@ _.Zones =
 				}),
 				q(27265, {	-- Lord Grayson Shadowbreaker
 					["isBreadcrumb"] = true,
-					["provider"] = { "n", 5147 },	-- Valgar Highforge (Ironforge)
+					["provider"] = { "n", 5147 },	-- Valgar Highforge
 					["classes"] = { PALADIN },
-					["coord"] = { 51.0, 26.2, 87 },	-- Nittlebur Sparkfizzle (Ironforge)
+					["coord"] = { 51.0, 26.2, IRONFORGE },	-- Nittlebur Sparkfizzle
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27268, {	-- Make Haste to the Cathedral
@@ -1037,9 +1037,9 @@ _.Zones =
 				}),
 				q(27268, {	-- Make Haste to the Cathedral
 					["isBreadcrumb"] = true,
-					["provider"] = { "n", 11406 },	-- High Priest Rohan (Ironforge)
+					["provider"] = { "n", 11406 },	-- High Priest Rohan
 					["classes"] = { PRIEST },
-					["coord"] = { 25.0, 8.2, 87 },	-- High Priest Rohan (Ironforge)
+					["coord"] = { 25.0, 8.2, IRONFORGE },	-- High Priest Rohan
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28258, {	-- Meet with Ander Germaine
@@ -1066,9 +1066,9 @@ _.Zones =
 				}),
 				q(28285, {	-- Meet with High Priestess Laurena
 					["isBreadcrumb"] = true,
-					["provider"] = { "n", 11406 },	-- High Priest Rohan (Ironforge)
+					["provider"] = { "n", 11406 },	-- High Priest Rohan
 					["classes"] = { PRIEST },
-					["coord"] = { 25.0, 8.2, 87 }, -- High Priest Rohan (Ironforge)
+					["coord"] = { 25.0, 8.2, IRONFORGE }, -- High Priest Rohan
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28285, {	-- Meet with High Priestess Laurena
@@ -1096,9 +1096,9 @@ _.Zones =
 				}),
 				q(28268, {	-- Meet with Lord Grayson Shadowbreaker
 					["isBreadcrumb"] = true,
-					["provider"] = { "n", 5147 },	-- Valgar Highforge (Ironforge)
+					["provider"] = { "n", 5147 },	-- Valgar Highforge
 					["classes"] = { PALADIN },
-					["coord"] = { 51.0, 26.2, 87 },	-- Nittlebur Sparkfizzle (Ironforge)
+					["coord"] = { 51.0, 26.2, IRONFORGE },	-- Nittlebur Sparkfizzle
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28263, {	-- Meet with Maginor Dumas
@@ -1118,9 +1118,9 @@ _.Zones =
 				}),
 				q(28263, {	-- Meet with Maginor Dumas
 					["isBreadcrumb"] = true,
-					["provider"] = { "n", 5146 },	-- Nittlebur Sparkfizzle (Ironforge)
+					["provider"] = { "n", 5146 },	-- Nittlebur Sparkfizzle
 					["classes"] = { MAGE },
-					["coord"] = { 26.2, 6.2, 87 },	-- Nittlebur Sparkfizzle (Ironforge)
+					["coord"] = { 26.2, 6.2, IRONFORGE },	-- Nittlebur Sparkfizzle
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28260, {	-- Meet with Wulf Hansreim
@@ -1133,9 +1133,9 @@ _.Zones =
 				}),
 				q(28260, {	-- Meet with Wulf Hansreim
 					["isBreadcrumb"] = true,
-					["provider"] = { "n", 5115 },	-- Daera Brightspear (Ironforge)
+					["provider"] = { "n", 5115 },	-- Daera Brightspear
 					["classes"] = { HUNTER },
-					["coord"] = { 47.2, 88.4, 87 },	-- Daera Brightspear (Ironforge)
+					["coord"] = { 47.2, 88.4, IRONFORGE },	-- Daera Brightspear
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28260, {	-- Meet with Wulf Hansreim
@@ -1779,9 +1779,9 @@ _.Zones =
 				}),
 				q(27266, {	-- Wulf Calls
 					["isBreadcrumb"] = true,
-					["provider"] = { "n", 5115 },	-- Daera Brightspear (Ironforge)
+					["provider"] = { "n", 5115 },	-- Daera Brightspear
 					["classes"] = { HUNTER },
-					["coord"] = { 70.9, 89.8, 87 },	-- Daera Brightspear (Ironforge)
+					["coord"] = { 70.9, 89.8, IRONFORGE },	-- Daera Brightspear
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27266, {	-- Wulf Calls

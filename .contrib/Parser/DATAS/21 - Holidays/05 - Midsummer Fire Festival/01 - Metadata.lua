@@ -6,7 +6,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 {
 	holiday(235474, {	-- Midsummer Fire Festival
 		["maps"] = {
-			87,	-- Ironforge
+			IRONFORGE,
 			ORGRIMMAR,
 			86,	-- Orgrimmar: The Drag
 		},

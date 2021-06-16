@@ -346,8 +346,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { 26 },	-- The Hinterlands
 										}),
 										crit(13, {	-- Ironforge, The Commons
-											["coord"] = { 18.6, 51.3, 87 },
-											["maps"] = { 87 },	-- Ironforge
+											["coord"] = { 18.6, 51.3, IRONFORGE },
+											["maps"] = { IRONFORGE },
 										}),
 										crit(14, {	-- Loch Modan, Farstrider's Lodge
 											["coord"] = { 82.9, 63.6, 48 },

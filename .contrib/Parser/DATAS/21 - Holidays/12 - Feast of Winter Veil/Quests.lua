@@ -10,7 +10,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 				-- Added for Winter Veil 2020
 				["questID"] = 58901,
 				["coords"] = {
-					{ 33.9, 68.1, 87 },	-- Ironforge
+					{ 33.9, 68.1, IRONFORGE },
 					{ 52.9, 77.4, ORGRIMMAR },
 				},
 			}),
@@ -353,14 +353,14 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 			--[[-- Legacy Winter Veil Quests
 			q(8799, {	-- The Hero of the Day
 				["provider"] = { "n", 13418 },	-- Kaymard Copperpinch
-				["coord"] = { 52.4, 77.0, 87 },
+				["coord"] = { 52.4, 77.0, IRONFORGE },
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 				["isYearly"] = true,
 				}),
 			q(8763, {	-- The Hero of the Day
 				["provider"] = { "n", 13433 },	-- Wulmort Jinglepocket
-				["coord"] = { 33.2, 67.8, 87 },
+				["coord"] = { 33.2, 67.8, IRONFORGE },
 				["races"] = ALLIANCE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 				["isYearly"] = true,

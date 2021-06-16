@@ -82,7 +82,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 					NORTHERN_BARRENS,
 					TANARIS,
 					WINTERSPRING,
-					87,		-- Ironforge
+					IRONFORGE,
 					84,		-- Stormwind City
 					89,		-- Darnassus
 					THE_EXODAR,
@@ -1005,9 +1005,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12335, {	-- Candy Bucket — Ironforge, The Commons, Alliance
 				["isYearly"] = true,
-				["coord"] = { 18.6, 51.3, 87 },
+				["coord"] = { 18.6, 51.3, IRONFORGE },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 87 },	-- Ironforge
+				["maps"] = { IRONFORGE },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -2084,7 +2084,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 					NORTHERN_BARRENS,
 					TANARIS,
 					WINTERSPRING,
-					87,		-- Ironforge
+					IRONFORGE,
 					84,		-- Stormwind City
 					89,		-- Darnassus
 					THE_EXODAR,
@@ -2252,7 +2252,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["repeatable"] = true,
 				["provider"] = { "n", 5111 },	-- Innkeeper Firebrew
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 87 },	-- Ironforge
+				["maps"] = { IRONFORGE },
 			}),
 			q(8358,  {	-- Incoming Gumdrop (Horde)
 				["description"] = "Pick up |cFFFFD700Hallow's End Treats for Spoops!|r for this quest to become available.",

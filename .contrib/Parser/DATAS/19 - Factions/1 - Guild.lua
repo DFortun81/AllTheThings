@@ -16,14 +16,14 @@ _.Factions =
 			{ 37.1, 63.3, THUNDER_BLUFF },		-- Randah Songhorn
 			{ 58.7, 46.4, SHATTRATH_CITY },	-- Riha
 			{ 64.1, 77.0, 84 },		-- Shay Pressler [Stormwind]
-			{ 36.3, 85.7, 87 },		-- Steeg Haskell [Ironforge]
+			{ 36.3, 85.7, IRONFORGE },	-- Steeg Haskell
 			{ 64.7, 37.6, 89 },		-- Velia Moonbow [Darnassus]
 			{ 58.0, 43.6, 1163 },	-- Ulla Skycloven [Dazar'alor]
 		},
 		["maps"] = {
 			89,		-- Darnassus
 			125,	-- Dalaran: Northrend
-			87,		-- Ironforge
+			IRONFORGE,
 			1361,	-- Old Ironforge
 			ORGRIMMAR,
 			86,		-- Orgrimmar: The Drag
