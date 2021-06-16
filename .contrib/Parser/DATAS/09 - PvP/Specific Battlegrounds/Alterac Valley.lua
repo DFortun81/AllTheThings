@@ -6,9 +6,7 @@ _.PVP =
 {
 	pvp(n(-304, {	-- Battlegrounds
 		m(91 , {	-- Alterac Valley
-			["maps"] = {
-				25,	-- Hillsbrad Foothills
-			},
+			["maps"] = { HILLSBRAD_FOOTHILLS },
 			["achievementID"] = 218,	-- Alterac Valley Victory
 			["description"] = "Alterac Valley is a battleground players fight in frosty Alterac between the Frostwolf Clan (Horde) and Stormpike Guard (Alliance). Alterac Valley is notable both for how many people can queue per side (40) as well as how much honor each game rewards.\n\nAlterac Valley is won when the enemy's General is killed, or the opposing team's resources are reduced from 600 to 0. 1 reinforcement is lost when each player dies, 75 lost per each destroyed tower (4 towers total), and 100 for the enemy Captain. Two mines can be captured that replenish reinforcements every 45 seconds--but this is trivial and should only be used in a very long turtle.\n\nKilling players is secondary to destroying towers. For each tower destroyed, the enemy's General becomes easier to kill. Most players will rush for the enemy's graveyard closest to the General first, capping other graveyards in the middle after. A \"turtle\" is when both teams rez in inconvenient areas and spend most of the battle fighting at a chokepoint, instead of capturing objectives. It is important to defend your own towers and cap graveyards in a strategic order.",
 			["g"] = {
@@ -40,7 +38,7 @@ _.PVP =
 								["timeline"] = {
 									"added 1.11.1.10772",
 									"removed 8.0.1.25902", -- inaccessible since 15th Anniversary event
-									"added 9.0.1", 
+									"added 9.0.1",
 								}, -- timeline may be incorrect
 							}),
 							q(5893,  {	-- Coldtooth Supplies (H)
@@ -56,7 +54,7 @@ _.PVP =
 							}),
 							q(7165,  {	-- Earned Reverence
 								["provider"] = { "n", 13840 },	-- Warmaster Laggrond
-								["coord"] = { 57.7, 33.3, 25 },
+								["coord"] = { 57.7, 33.3, HILLSBRAD_FOOTHILLS },
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 7164 },	-- Honored Amongst the Clan
 								["lvl"] = 51,
@@ -91,7 +89,7 @@ _.PVP =
 							}),
 							q(8272,  {	-- Hero of the Frostwolf
 								["provider"] = { "n", 13817 },	-- Voggah Deathgrip
-								["coord"] = { 58.6, 34.2, 25 },
+								["coord"] = { 58.6, 34.2, HILLSBRAD_FOOTHILLS },
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 7142 },	-- The Battle for Alterac
 								["g"] = {
@@ -104,7 +102,7 @@ _.PVP =
 							}),
 							q(7164,  {	-- Honored Amongst the Clan
 								["provider"] = { "n", 13840 },	-- Warmaster Laggrond
-								["coord"] = { 57.7, 33.3, 25 },
+								["coord"] = { 57.7, 33.3, HILLSBRAD_FOOTHILLS },
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 7163 },	-- Rise and be Recognized
 								["lvl"] = 51,
@@ -121,7 +119,7 @@ _.PVP =
 							}),
 							q(7166,  {	-- Legendary Heroes
 								["provider"] = { "n", 13840 },	-- Warmaster Laggrond
-								["coord"] = { 57.7, 33.3, 25 },
+								["coord"] = { 57.7, 33.3, HILLSBRAD_FOOTHILLS },
 								["races"] = HORDE_ONLY,
 								["sourceQuests"] = { 7165 },	-- Earned Reverence
 								["lvl"] = 51,
@@ -156,7 +154,7 @@ _.PVP =
 							q(7161,  {	-- Proving Grounds
 								["provider"] = { "n", 13840 },	-- Warmaster Laggrond
 								["lvl"] = 51,
-								["coord"] = { 57.7, 33.3, 25 },
+								["coord"] = { 57.7, 33.3, HILLSBRAD_FOOTHILLS },
 								["races"] = HORDE_ONLY,
 								["g"] = {
 									i(17690),	-- Frostwolf Insignia Rank 1
@@ -172,7 +170,7 @@ _.PVP =
 							q(7163,  {	-- Rise and Be Recognized
 								["sourceQuests"] = { 7161 },	-- Proving Grounds
 								["provider"] = { "n", 13840 },	-- Warmaster Laggrond
-								["coord"] = { 57.7, 33.3, 25 },
+								["coord"] = { 57.7, 33.3, HILLSBRAD_FOOTHILLS },
 								["races"] = HORDE_ONLY,
 								["g"] = {
 									i(17905),	-- Frostwolf Insignia Rank 2
@@ -185,7 +183,7 @@ _.PVP =
 							}),
 							q(7142,  {	-- The Battle for Alterac
 								["provider"] = { "n", 13817 },	-- Voggah Deathgrip
-								["coord"] = { 58.6, 34.2, 25 },
+								["coord"] = { 58.6, 34.2, HILLSBRAD_FOOTHILLS },
 								["races"] = HORDE_ONLY,
 								["lvl"] = 51,
 							}),
@@ -198,7 +196,7 @@ _.PVP =
 							q(7167,  {	-- The Eye of Command
 								["sourceQuests"] = { 7166 },	-- Legendary Heroes
 								["provider"] = { "n", 13840 },	-- Warmaster Laggrond
-								["coord"] = { 57.7, 33.3, 25 },
+								["coord"] = { 57.7, 33.3, HILLSBRAD_FOOTHILLS },
 								["races"] = HORDE_ONLY,
 								["g"] = {
 									i(17909),	-- Frostwolf Insignia Rank 6
@@ -238,7 +236,7 @@ _.PVP =
 						n(VENDORS, {
 							n(13218, {	-- Grunnda Wolfheart
 								["itemID"] = 137642,	-- Mark of Honor
-								["coord"] = { 58.1, 33.6, 25 },
+								["coord"] = { 58.1, 33.6, HILLSBRAD_FOOTHILLS },
 								["races"] = HORDE_ONLY,
 								["g"] = {
 									i(19029, {	-- Horn of the Frostwolf Howler Mount
@@ -384,7 +382,7 @@ _.PVP =
 						n(QUESTS, {
 							q(7081,  {	-- Alterac Valley Graveyards
 								["provider"] = { "n", 13777 },	-- Sergeant Durgen Stormpike
-								["coord"] = { 43.0, 43.8, 25 },
+								["coord"] = { 43.0, 43.8, HILLSBRAD_FOOTHILLS },
 								["races"] = ALLIANCE_ONLY,
 								["lvl"] = 51,
 								["u"] = REMOVED_FROM_GAME,	-- inaccessible since 15th Anniversary event
@@ -403,7 +401,7 @@ _.PVP =
 							}),
 							q(7122,  {	-- Capture a Mine (A)
 								["provider"] = { "n", 13777 },	-- Sergeant Durgen Stormpike
-								["coord"] = { 43.0, 43.8, 25 },
+								["coord"] = { 43.0, 43.8, HILLSBRAD_FOOTHILLS },
 								["races"] = ALLIANCE_ONLY,
 								["lvl"] = 51,
 								["u"] = REMOVED_FROM_GAME,	-- inaccessible since 15th Anniversary event
@@ -428,7 +426,7 @@ _.PVP =
 							}),
 							q(7170,  {	-- Earned Reverence
 								["provider"] = { "n", 13841 },	-- Lieutenant Haggerdin
-								["coord"] = { 44.6, 46.2, 25 },
+								["coord"] = { 44.6, 46.2, HILLSBRAD_FOOTHILLS },
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 7169 },	-- Honored Among the Guard
 								["lvl"] = 51,
@@ -453,7 +451,7 @@ _.PVP =
 							}),
 							q(8271,  {	-- Hero of the Stormpike
 								["provider"] = { "n", 13816 },	-- Prospecter Stonechewer
-								["coord"] = { 45.2, 45.2, 25 },
+								["coord"] = { 45.2, 45.2, HILLSBRAD_FOOTHILLS },
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 7141 },	-- The Battle of Alterac
 								["g"] = {
@@ -466,7 +464,7 @@ _.PVP =
 							}),
 							q(7169,  {	-- Honored Amongst the Guard
 								["provider"] = { "n", 13841 },	-- Lieutenant Haggerdin
-								["coord"] = { 44.6, 46.2, 25 },
+								["coord"] = { 44.6, 46.2, HILLSBRAD_FOOTHILLS },
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 7168 },	-- Rise and be Recognized
 								["lvl"] = 51,
@@ -505,7 +503,7 @@ _.PVP =
 							}),
 							q(7171,  {	-- Legendary Heroes
 								["provider"] = { "n", 13841 },	-- Lieutenant Haggerdin
-								["coord"] = { 44.6, 46.2, 25 },
+								["coord"] = { 44.6, 46.2, HILLSBRAD_FOOTHILLS },
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 7170 },	-- Earned Reverence
 								["lvl"] = 51,
@@ -526,7 +524,7 @@ _.PVP =
 							}),
 							q(7162,  {	-- Proving Grounds
 								["provider"] = { "n", 13841 },	-- Lieutenant Haggerdin
-								["coord"] = { 44.6, 46.2, 25 },
+								["coord"] = { 44.6, 46.2, HILLSBRAD_FOOTHILLS },
 								["races"] = ALLIANCE_ONLY,
 								["lvl"] = 51,
 								["g"] = {
@@ -542,7 +540,7 @@ _.PVP =
 							}),
 							q(7168,  {	-- Rise and Be Recognized
 								["provider"] = { "n", 13841 },	-- Lieutenant Haggerdin
-								["coord"] = { 44.6, 46.2, 25 },
+								["coord"] = { 44.6, 46.2, HILLSBRAD_FOOTHILLS },
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 7162 },	-- Proving Grounds
 								["lvl"] = 51,
@@ -572,7 +570,7 @@ _.PVP =
 							q(7172,  {	-- The Eye of Command
 								["sourceQuests"] = { 7171 },	-- Legendary Heroes
 								["provider"] = { "n", 13841 },	-- Lieutenant Haggerdin
-								["coord"] = { 44.6, 46.2, 25 },
+								["coord"] = { 44.6, 46.2, HILLSBRAD_FOOTHILLS },
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									i(17904),	-- Stormpike Insignia Rank 6
@@ -585,7 +583,7 @@ _.PVP =
 							}),
 							q(7102,  {	-- Towers and Bunkers (A)
 								["provider"] = { "n", 13777 },	-- Sergeant Durgen Stormpike
-								["coord"] = { 43.0, 43.8, 25 },
+								["coord"] = { 43.0, 43.8, HILLSBRAD_FOOTHILLS },
 								["races"] = ALLIANCE_ONLY,
 								["lvl"] = 51,
 								["u"] = REMOVED_FROM_GAME,	-- inaccessible since 15th Anniversary event

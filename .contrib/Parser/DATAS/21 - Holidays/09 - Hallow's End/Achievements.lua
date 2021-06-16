@@ -447,12 +447,12 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { GHOSTLANDS },
 										}),
 										crit(11, {	-- Hillsbrad Foothills, Eastpoint Tower
-											["coord"] = { 60.3, 63.8, 25 },
-											["maps"] = { 25 },	-- Hillsbrad Foothills
+											["coord"] = { 60.3, 63.8, HILLSBRAD_FOOTHILLS },
+											["maps"] = { HILLSBRAD_FOOTHILLS },
 										}),
 										crit(12, {	-- Hillsbrad Foothills, Tarren Mill
-											["coord"] = { 57.9, 47.3, 25 },
-											["maps"] = { 25 },	-- Hillsbrad Foothills
+											["coord"] = { 57.9, 47.3, HILLSBRAD_FOOTHILLS },
+											["maps"] = { HILLSBRAD_FOOTHILLS },
 										}),
 										crit(13, {	-- The Hinterlands, Hiri'watha Research Station
 											["coord"] = { 31.9, 57.9, 26 },

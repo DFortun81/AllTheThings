@@ -56,7 +56,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 					{ "n", 13433 },	-- Wulmort Jinglepocket
 					{ "n", 13636 },	-- Strange Snowman
 				},
-				["maps"] = { 25 },	-- Hillsbrad Foothills
+				["maps"] = { HILLSBRAD_FOOTHILLS },
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["g"] = {
@@ -235,7 +235,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 					{ "n", 13418 },	-- Kaymard Copperpinch
 					{ "n", 13636 },	-- Strange Snowman
 				},
-				["maps"] = { 25 },	-- Hillsbrad Foothills
+				["maps"] = { HILLSBRAD_FOOTHILLS },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["g"] = {

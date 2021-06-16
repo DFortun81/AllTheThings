@@ -889,18 +889,18 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(28962, {	-- Candy Bucket — Hillsbrad Foothills, Eastpoint Tower, Horde
 				["isYearly"] = true,
-				["coord"] = { 60.3, 63.8, 25 },
+				["coord"] = { 60.3, 63.8, HILLSBRAD_FOOTHILLS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 25 },	-- Hillsbrad Foothills
+				["maps"] = { HILLSBRAD_FOOTHILLS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12376, {	-- Candy Bucket — Hillsbrad Foothills, Tarren Hill
 				["isYearly"] = true,
-				["coord"] = { 57.9, 47.3, 25 },
+				["coord"] = { 57.9, 47.3, HILLSBRAD_FOOTHILLS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 25 },	-- Hillsbrad Foothills
+				["maps"] = { HILLSBRAD_FOOTHILLS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},

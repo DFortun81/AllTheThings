@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(25, {	-- Hillsbrad Foothills
+		m(HILLSBRAD_FOOTHILLS, {
 			n(VENDORS, {
 				n(2480,  {	-- Bro'kin <Alchemy Supplies>
-					["coord"] = { 44.0, 21.8, 25 },
+					["coord"] = { 44.0, 21.8, HILLSBRAD_FOOTHILLS },
 					["g"] = {
 						i(14634, {	-- Recipe: Frost Oil
 							["isLimited"] = true,
@@ -16,7 +16,7 @@ _.Zones =
 					},
 				}),
 				n(2393,  {	-- Christoph Jeffcoat <Tradesman>
-					["coord"] = { 57.5, 47.8, 25 },
+					["coord"] = { 57.5, 47.8, HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(20971, {	-- Design: Heavy Iron Knuckles (Removed in Cata and available through trainer now)
@@ -32,7 +32,7 @@ _.Zones =
 					},
 				}),
 				n(2397,  {	-- Derak Nightfall <Cook>
-					["coord"] = { 57.6, 45.2, 25 },
+					["coord"] = { 57.6, 45.2, HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(6330), 	-- Recipe: Bristle Whisker Catfish
@@ -122,7 +122,7 @@ _.Zones =
 					},
 				}),
 				n(2698,  {	-- George Candarte <Leatherworking Supplies>
-					["coord"] = { 76.6, 58.6, 25 },
+					["coord"] = { 76.6, 58.6, HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(7613, { 	-- Pattern: Green Leather Armor
@@ -131,7 +131,7 @@ _.Zones =
 					},
 				}),
 				n(47712, {	-- Harland Waldek <Weaponsmith>
-					["coord"] = { 28.8, 64.0, 25 },
+					["coord"] = { 28.8, 64.0, HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(4817, {	-- Blessed Claymore
@@ -144,7 +144,7 @@ _.Zones =
 				}),
 				n(13219, {	-- Jorek Ironside
 					["itemID"] = 137642,	-- Mark of Honor
-					["coord"] = { 58.1, 33.6, 25 },
+					["coord"] = { 58.1, 33.6, HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(19029, {	-- Horn of the Frostwolf Howler Mount
@@ -227,7 +227,7 @@ _.Zones =
 					},
 				}),
 				n(3536,  {	-- Kris Legace <Freewheeling Tradeswoman>
-					["coord"] = { 68.8, 58.8, 25 },
+					["coord"] = { 68.8, 58.8, HILLSBRAD_FOOTHILLS },
 					["g"] = {
 						i(4795, {	-- Bear Bracers
 							["isLimited"] = true,
@@ -250,7 +250,7 @@ _.Zones =
 					},
 				}),
 				n(2394,  {	-- Mallen Swain <Tailoring Supplies>
-					["coord"] = { 58.0, 47.8, 25 },
+					["coord"] = { 58.0, 47.8, HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(6274, {	-- Pattern: Blue Overalls
@@ -279,7 +279,7 @@ _.Zones =
 					},
 				}),
 				n(3539,  {	-- Ott <Weaponsmith>
-					["coord"] = { 57.6, 47.6, 25 },
+					["coord"] = { 57.6, 47.6, HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(4817, {	-- Blessed Claymore
@@ -313,13 +313,13 @@ _.Zones =
 				}),
 				n(6779,   {	-- Smudge Thunderwood <Poison Supplies>
 					["classes"] = { ROGUE },
-					["coord"] = { 71.0, 45.8, 25 },
+					["coord"] = { 71.0, 45.8, HILLSBRAD_FOOTHILLS },
 					["g"] = {
 						i(18160),	-- Recipe: Thistle Tea
 					},
 				}),
 				n(6777,   {	-- Zan Shivsproket <Speciality Engineer>
-					["coord"] = { 71.2, 45.3, 25 },
+					["coord"] = { 71.2, 45.3, HILLSBRAD_FOOTHILLS },
 					["g"] = {
 						i(7742, {	-- Schematic: Gnomish Cloaking Device
 							["isLimited"] = true,
@@ -328,9 +328,9 @@ _.Zones =
 				}),
 				n(3537,   {	-- Zixil <Merchant Supreme>
 					["coords"] = {
-						{ 49.4, 66.6, 25 },
-						{ 56.0, 46.4, 25 },
-						{ 51.8, 55.6, 25 },
+						{ 49.4, 66.6, HILLSBRAD_FOOTHILLS },
+						{ 56.0, 46.4, HILLSBRAD_FOOTHILLS },
+						{ 51.8, 55.6, HILLSBRAD_FOOTHILLS },
 					},
 					["g"] = {
 						i(4829, {	-- Dreamer's Belt

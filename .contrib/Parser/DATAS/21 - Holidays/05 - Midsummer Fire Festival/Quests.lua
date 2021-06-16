@@ -220,10 +220,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11776, {	-- Desecrate this Fire! — Hillsbrad Foothills
 				["isYearly"] = true,
 				["provider"] = { "o", 187964 },	-- Horde Bonfire
-				["coord"] = { 54.5, 50.1, 25 },
+				["coord"] = { 54.5, 50.1, HILLSBRAD_FOOTHILLS },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
-				["maps"] = { 25 },	-- Hillsbrad Foothills
+				["maps"] = { HILLSBRAD_FOOTHILLS },
 			}),
 			q(13453, {	-- Desecrate this Fire! — Howling Fjord
 				["isYearly"] = true,
@@ -1452,9 +1452,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11853, {	-- Honor the Flame — Hillsbrad Foothills
 				["provider"] = { "n", 25935 },	-- Hillsbrad Flame Keeper
 				["isYearly"] = true,
-				["coord"] = { 54.7, 50.1, 25 },
+				["coord"] = { 54.7, 50.1, HILLSBRAD_FOOTHILLS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 25 },	-- Hillsbrad Foothills
+				["maps"] = { HILLSBRAD_FOOTHILLS },
 			}),
 			q(13496, {	-- Honor the Flame — Howling Fjord
 				["provider"] = { "n", 32812 },	-- Howling Fjord Flame Keeper

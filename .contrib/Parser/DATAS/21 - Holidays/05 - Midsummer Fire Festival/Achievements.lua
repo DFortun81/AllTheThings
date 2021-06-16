@@ -336,9 +336,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { GHOSTLANDS },
 									}),
 									crit(7,  {	-- Hillsbrad Foothills
-										["coord"] = { 54.5, 50.1, 25 },
+										["coord"] = { 54.5, 50.1, HILLSBRAD_FOOTHILLS },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 25 },	-- Hillsbrad Foothills
+										["maps"] = { HILLSBRAD_FOOTHILLS },
 									}),
 									crit(8,  {	-- Northern Stranglethorn
 										["coord"] = { 40.7, 52.0, 50 },
@@ -762,9 +762,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { GHOSTLANDS },
 									}),
 									crit(7,  {	-- Hillsbrad Foothills
-										["coord"] = { 54.7, 50.1, 25 },
+										["coord"] = { 54.7, 50.1, HILLSBRAD_FOOTHILLS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 25 },	-- Hillsbrad Foothills
+										["maps"] = { HILLSBRAD_FOOTHILLS },
 									}),
 									crit(8,  {	-- Northern Stranglethorn
 										["coord"] = { 40.6, 50.9, 50 },

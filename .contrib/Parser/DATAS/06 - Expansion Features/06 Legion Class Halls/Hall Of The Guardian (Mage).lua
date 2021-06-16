@@ -755,7 +755,7 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 42508,	-- Not a Toothless Dragon
 					}),
 					q(11997, {	-- The Frozen Flame
-						["coord"] = { 28.6, 37.2, 25 },
+						["coord"] = { 28.6, 37.2, HILLSBRAD_FOOTHILLS },
 						["classes"] = { MAGE },
 						["provider"] = { "n", 99415 },	-- Aethas Sunreaver
 						["sourceQuest"] = 40270,	-- The Path of Atonement
@@ -824,8 +824,8 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 41112,	-- The Great Akazamzarak
 					}),
 					q(40270, {	-- The Path of Atonement
-						["maps"] = { 25 },
-						["coord"] = { 28.6, 37.2, 25 },
+						["maps"] = { HILLSBRAD_FOOTHILLS },
+						["coord"] = { 28.6, 37.2, HILLSBRAD_FOOTHILLS },
 						["classes"] = { MAGE },
 						["provider"] = { "n", 99398 },	-- Archmage Modera
 						["sourceQuest"] = 40267,	-- An Unexpected Message

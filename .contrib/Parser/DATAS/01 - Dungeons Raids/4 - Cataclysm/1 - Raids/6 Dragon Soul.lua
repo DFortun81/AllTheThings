@@ -28,7 +28,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 				["isRaid"] = true,
 				["lvl"] = 85,
 				["maps"] = {
-					25,	-- Hillsbrad Foothills (maybe needs specific rogue building id)
+					HILLSBRAD_FOOTHILLS,	-- maybe needs specific rogue building id
 					74,	-- Tanaris: Caverns of Time Entrance
 					CAVERNS_OF_TIME,	-- Tanaris: Caverns of Time
 					84,	-- Stormwind City
