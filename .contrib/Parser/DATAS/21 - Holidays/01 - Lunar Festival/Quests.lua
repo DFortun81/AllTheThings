@@ -74,7 +74,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["maps"] = {
 					37,	-- Elwynn Forest
 					90,	-- Undercity
-					87,	-- Ironforge
+					IRONFORGE,
 					ORGRIMMAR,
 					THUNDER_BLUFF,
 					89,	-- Darnassus
@@ -98,7 +98,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["provider"] = { "n", 15892 },	-- Lunar Festival Emissary
 				["isYearly"] = true,
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 87 },	-- Ironforge
+				["maps"] = { IRONFORGE },
 				["u"] = 17,	-- Lunar Festival
 			}),
 			q(8871,  {	-- The Lunar Festival (A)
@@ -149,7 +149,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["maps"] = {
 					37,	-- Elwynn Forest
 					90,	-- Undercity
-					87,	-- Ironforge
+					IRONFORGE,
 					ORGRIMMAR,
 					THUNDER_BLUFF,
 					89,	-- Darnassus
@@ -336,8 +336,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8651,  {	-- Ironband the Elder
 				["provider"] = { "n", 15567 },	-- Elder Ironband
 				["isYearly"] = true,
-				["coord"] = { 21.3, 79.0, 32 },
-				["maps"] = { 32 },	-- Searing Gorge
+				["coord"] = { 21.3, 79.0, SEARING_GORGE },
+				["maps"] = { SEARING_GORGE },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(12, {	-- Elder Ironband in Searing Gorge
@@ -396,8 +396,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8642,  {	-- Silvervein the Elder
 				["provider"] = { "n", 15558 },	-- Elder Silvervein
 				["isYearly"] = true,
-				["coord"] = { 33.3, 46.5, 48 },
-				["maps"] = { 48 },	-- Loch Modan
+				["coord"] = { 33.3, 46.5, LOCH_MODAN },
+				["maps"] = { LOCH_MODAN },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(7, {	-- Elder Silvervein in Thelsamar
@@ -969,8 +969,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["description"] = "Once inside Ironforge, head left.  The Elder is in the small pool in the Mystic Ward in the northwest corner of the city.",
 				["provider"] = { "n", 15871 },	-- Elder Bronzebeard
 				["isYearly"] = true,
-				["coord"] = { 29.4, 17.1, 87 },
-				["maps"] = { 87 },	-- Ironforge
+				["coord"] = { 29.4, 17.1, IRONFORGE },
+				["maps"] = { IRONFORGE },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(2, {	-- Elder Bronzebeard in Ironforge

@@ -2412,6 +2412,13 @@ subroutines = {
 			-- Timothy Jones <Jewelcrafting Trainer> Northrend Jewelcrafting
 		}
 	end,
+	["common_tier_vendor"] = function(npcID)
+		return {
+			{"select", "creatureID", npcID},	-- Main Vendor
+			{"pop"},	-- Remove Main Vendor and push his children into the processing queue.
+			{"is", "itemID"},	-- Only Items
+		}
+	end,
 };
 ResolveSymbolicLink = function(o)
 	if o and o.sym then
@@ -8153,7 +8160,7 @@ local itemFields = {
 						not GetRelativeField(t, "parent", ref) then
 						-- track this item as a cost collectible
 						if not t.costCollectibles then t.costCollectibles = { ref }
-						else MergeObject(t.costCollectibles, ref); end
+						else tinsert(t.costCollectibles, ref); end
 						-- account or debug, skip filter/exclusion logic
 						if app.MODE_DEBUG_OR_ACCOUNT or
 							-- otherwise don't include items which are from something the current character cannot complete

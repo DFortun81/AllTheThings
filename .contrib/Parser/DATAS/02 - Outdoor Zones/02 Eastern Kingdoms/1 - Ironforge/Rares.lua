@@ -8,7 +8,7 @@ _.Zones =
 		m(IRONFORGE, {
 			n(RARES, {
 				n(51596, {	-- Wildhammer Fact Checker
-					["coord"] = { 38.6, 54.8, 87 },
+					["coord"] = { 38.6, 54.8, IRONFORGE },
 					["description"] = "AKA Red Shirt Guy\n\nYou must be a member of the Horde in order to attack this NPC.\n",
 					["races"] = HORDE_ONLY,
 					["g"] = {

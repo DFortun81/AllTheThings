@@ -22,7 +22,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 					TANARIS,
 					WINTERSPRING,
 					84,		-- Stormwind City
-					87,		-- Ironforge
+					IRONFORGE,
 					89,		-- Darnassus
 					THE_EXODAR,
 					NETHERSTORM,

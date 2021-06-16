@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(25, {	-- Hillsbrad Foothills
+		m(HILLSBRAD_FOOTHILLS, {
 			n(ACHIEVEMENTS, {
 				ach(4895, {	-- Hillsbrad Foothills Quests
 					["races"] = HORDE_ONLY,

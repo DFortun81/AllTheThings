@@ -782,7 +782,7 @@ _.Zones =
 						}),
 						n(152194, {	-- MOTHER
 							["description"] = "MOTHER sells rank 3 essences for Echoes of Ny'alotha provided you have obtained them through other means on your account on at least one character.",
-							["coord"] = {48.15, 72.54, REPAIRED_CHAMBER_OF_HEART },
+							["coord"] = { 48.2, 72.5, REPAIRED_CHAMBER_OF_HEART },
 							["g"] = {
 								i(173363, {	-- Vessel of Horrific Visions
 									["cost"] = { { "c", 1803, 1750 }, }, -- 1750 Echoes of Ny'alotha

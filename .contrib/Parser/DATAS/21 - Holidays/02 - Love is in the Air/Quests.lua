@@ -13,7 +13,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 				["isDaily"] = true,
 				["coords"] = {
 					{ 45.0, 57.4, 89 },	-- Darnassus
-					{ 33.8, 66.6, 87 },	-- Ironforge
+					{ 33.8, 66.6, IRONFORGE },
 					{ 52.8, 77.0, ORGRIMMAR },
 					{ 64.2, 67.2, SILVERMOON_CITY },
 					{ 62.2, 75.2, 84 },	-- Stormwind
@@ -43,7 +43,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 			q(24609, {	-- A Gift for a Lord of Ironforge
 				["provider"] = { "n", 37887 },	-- Kwee Q. Peddlefeet
 				["isDaily"] = true,
-				["coord"] = { 33.4, 65.8, 87 },	-- Ironforge
+				["coord"] = { 33.4, 65.8, IRONFORGE },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(24612, {	-- A Gift for High Overlord Saurfang
@@ -93,7 +93,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 				["isDaily"] = true,
 				["coords"] = {
 					{ 45.0, 57.4, 89 },	-- Darnassus
-					{ 33.8, 66.6, 87 },	-- Ironforge
+					{ 33.8, 66.6, IRONFORGE },
 					{ 52.8, 77.0, ORGRIMMAR },
 					{ 64.2, 67.2, SILVERMOON_CITY },
 					{ 62.2, 75.2, 84 },	-- Stormwind
@@ -111,7 +111,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 				["isDaily"] = true,
 				["coords"] = {
 					{ 45.0, 57.4, 89 },	-- Darnassus
-					{ 33.8, 66.6, 87 },	-- Ironforge
+					{ 33.8, 66.6, IRONFORGE },
 					{ 52.8, 77.0, ORGRIMMAR },
 					{ 64.2, 67.2, SILVERMOON_CITY },
 					{ 62.2, 75.2, 84 },	-- Stormwind
@@ -409,7 +409,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 				["provider"] = { "n", 38293 },	-- Junior Inspector
 				["coords"] = {
 					{ 44.8, 56.6, 89 },	-- Darnassus
-					{ 35.0, 68.8, 87 },	-- Ironforge
+					{ 35.0, 68.8, IRONFORGE },
 					{ 76.2, 57.2, THE_EXODAR },
 				},
 				["races"] = ALLIANCE_ONLY,

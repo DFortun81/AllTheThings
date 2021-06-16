@@ -26,7 +26,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = {
 					84,		-- Stormwind City
-					87,		-- Ironforge
+					IRONFORGE,
 					89,		-- Darnassus
 					THE_EXODAR,
 				},
@@ -220,10 +220,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11776, {	-- Desecrate this Fire! — Hillsbrad Foothills
 				["isYearly"] = true,
 				["provider"] = { "o", 187964 },	-- Horde Bonfire
-				["coord"] = { 54.5, 50.1, 25 },
+				["coord"] = { 54.5, 50.1, HILLSBRAD_FOOTHILLS },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
-				["maps"] = { 25 },	-- Hillsbrad Foothills
+				["maps"] = { HILLSBRAD_FOOTHILLS },
 			}),
 			q(13453, {	-- Desecrate this Fire! — Howling Fjord
 				["isYearly"] = true,
@@ -654,10 +654,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11749, {	-- Desecrate this Fire! — Loch Modan
 				["isYearly"] = true,
 				["provider"] = { "o", 187564 },	-- Alliance Bonfire
-				["coord"] = { 32.3, 40.4, 48 },
+				["coord"] = { 32.3, 40.4, LOCH_MODAN },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-				["maps"] = { 48 },	-- Loch Modan
+				["maps"] = { LOCH_MODAN },
 			}),
 			q(11750, {	-- Desecrate this Fire! — Nagrand (Outland)
 				["isYearly"] = true,
@@ -1086,9 +1086,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11820, {	-- Honor the Flame — Loch Modan
 				["provider"] = { "n", 25902 },	-- Loch Modan Flame Warden
 				["isYearly"] = true,
-				["coord"] = { 32.3, 41.0, 48 },
+				["coord"] = { 32.3, 41.0, LOCH_MODAN },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 48 },	-- Loch Modan
+				["maps"] = { LOCH_MODAN },
 			}),
 			q(11821, {	-- Honor the Flame — Nagrand (Outland)
 				["provider"] = { "n", 25903 },	-- Nagrand Flame Warden
@@ -1452,9 +1452,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11853, {	-- Honor the Flame — Hillsbrad Foothills
 				["provider"] = { "n", 25935 },	-- Hillsbrad Flame Keeper
 				["isYearly"] = true,
-				["coord"] = { 54.7, 50.1, 25 },
+				["coord"] = { 54.7, 50.1, HILLSBRAD_FOOTHILLS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 25 },	-- Hillsbrad Foothills
+				["maps"] = { HILLSBRAD_FOOTHILLS },
 			}),
 			q(13496, {	-- Honor the Flame — Howling Fjord
 				["provider"] = { "n", 32812 },	-- Howling Fjord Flame Keeper
@@ -1797,7 +1797,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["isYearly"] = true,
 				["coords"] = {
 					{ 49.6, 72.0, 84 },		-- Stormwind City
-					{ 64.0, 25.8, 87 },		-- Ironforge
+					{ 64.0, 25.8, IRONFORGE },
 					{ 62.2, 48.6, 89 },		-- Darnassus
 					{ 41.4, 25.2, THE_EXODAR },
 					{ 61.2, 32.2, SHATTRATH_CITY },
@@ -1805,7 +1805,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = {
 					84,		-- Stormwind City
-					87,		-- Ironforge
+					IRONFORGE,
 					89,		-- Darnassus
 					THE_EXODAR,
 					SHATTRATH_CITY,
@@ -1832,14 +1832,14 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["isDaily"] = true,
 				["coords"] = {
 					{ 49.8, 72.0, 84 },		-- Stormwind City
-					{ 65.2, 25.4, 87 },		-- Ironforge
+					{ 65.2, 25.4, IRONFORGE },
 					{ 63.0, 47.6, 89 },		-- Darnassus
 					{ 41.2, 24.4, THE_EXODAR },
 				},
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = {
 					84,		-- Stormwind City
-					87,		-- Ironforge
+					IRONFORGE,
 					89,		-- Darnassus
 					THE_EXODAR,
 				},
@@ -1868,14 +1868,14 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["isDaily"] = true,
 				["coords"] = {
 					{ 49.8, 72.0, 84 },		-- Stormwind City
-					{ 65.2, 25.4, 87 },		-- Ironforge
+					{ 65.2, 25.4, IRONFORGE },
 					{ 63.0, 47.6, 89 },		-- Darnassus
 					{ 41.2, 24.4, THE_EXODAR },
 				},
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = {
 					84,		-- Stormwind City
-					87,		-- Ironforge
+					IRONFORGE,
 					89,		-- Darnassus
 					THE_EXODAR,
 				},
@@ -1911,7 +1911,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					BURNING_STEPPES,
 					37,		-- Elwynn Forest
 					DUSKWOOD,
-					48,		-- Loch Modan
+					LOCH_MODAN,
 					49,		-- Redridge Mountains
 					50,		-- Northern Stranglethorn
 					51,		-- Swamp of Sorrows
@@ -1988,10 +1988,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["isYearly"] = true,
 				["provider"] = { "o", 181333 },	-- Flame of Ironforge
 				--["itemID"] = 23183,	-- Flame of Ironforge
-				["coord"] = { 65.2, 24.7, 87 },
+				["coord"] = { 65.2, 24.7, IRONFORGE },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_flameshock",
-				["maps"] = { 87 },	-- Ironforge
+				["maps"] = { IRONFORGE },
 			}),
 			q(9324,  {	-- Stealing Orgrimmar's Flame
 				["isYearly"] = true,
@@ -2045,7 +2045,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["coords"] = {
 					{ 49.4, 72.0, 84 },		-- Stormwind City
 					{ 47.2, 37.6, ORGRIMMAR },
-					{ 64.8, 27.4, 87 },		-- Ironforge
+					{ 64.8, 27.4, IRONFORGE },
 					{ 21.4, 24.4, THUNDER_BLUFF },
 					{ 62.2, 49.2, 89 },		-- Darnassus
 					{ 67.0, 13.0, 90 },		-- Undercity
@@ -2056,7 +2056,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["maps"] = {
 					84,		-- Stormwind City
 					ORGRIMMAR,
-					87,		-- Ironforge
+					IRONFORGE,
 					THUNDER_BLUFF,
 					89,		-- Darnassus
 					90,		-- Undercity
@@ -2072,7 +2072,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["coords"] = {
 					{ 49.4, 72.0, 84 },		-- Stormwind City
 					{ 47.2, 37.6, ORGRIMMAR },
-					{ 64.8, 27.4, 87 },		-- Ironforge
+					{ 64.8, 27.4, IRONFORGE },
 					{ 21.4, 24.4, THUNDER_BLUFF },
 					{ 62.2, 49.2, 89 },		-- Darnassus
 					{ 67.0, 13.0, 90 },		-- Undercity
@@ -2083,7 +2083,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["maps"] = {
 					84,		-- Stormwind City
 					ORGRIMMAR,
-					87,		-- Ironforge
+					IRONFORGE,
 					THUNDER_BLUFF,
 					89,		-- Darnassus
 					90,		-- Undercity
@@ -2099,7 +2099,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["coords"] = {
 					{ 49.4, 72.0, 84 },		-- Stormwind City
 					{ 47.2, 37.6, ORGRIMMAR },
-					{ 64.8, 27.4, 87 },		-- Ironforge
+					{ 64.8, 27.4, IRONFORGE },
 					{ 21.4, 24.4, THUNDER_BLUFF },
 					{ 62.2, 49.2, 89 },		-- Darnassus
 					{ 67.0, 13.0, 90 },		-- Undercity
@@ -2110,7 +2110,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["maps"] = {
 					84,		-- Stormwind City
 					ORGRIMMAR,
-					87,		-- Ironforge
+					IRONFORGE,
 					THUNDER_BLUFF,
 					89,		-- Darnassus
 					90,		-- Undercity
@@ -2126,7 +2126,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["coords"] = {
 					{ 49.4, 72.0, 84 },		-- Stormwind City
 					{ 47.2, 37.6, ORGRIMMAR },
-					{ 64.8, 27.4, 87 },		-- Ironforge
+					{ 64.8, 27.4, IRONFORGE },
 					{ 21.4, 24.4, THUNDER_BLUFF },
 					{ 62.2, 49.2, 89 },		-- Darnassus
 					{ 67.0, 13.0, 90 },		-- Undercity
@@ -2137,7 +2137,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["maps"] = {
 					84,		-- Stormwind City
 					ORGRIMMAR,
-					87,		-- Ironforge
+					IRONFORGE,
 					THUNDER_BLUFF,
 					89,		-- Darnassus
 					90,		-- Undercity
@@ -2153,7 +2153,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["coords"] = {
 					{ 49.4, 72.0, 84 },		-- Stormwind City
 					{ 47.2, 37.6, ORGRIMMAR },
-					{ 64.8, 27.4, 87 },		-- Ironforge
+					{ 64.8, 27.4, IRONFORGE },
 					{ 21.4, 24.4, THUNDER_BLUFF },
 					{ 62.2, 49.2, 89 },		-- Darnassus
 					{ 67.0, 13.0, 90 },		-- Undercity
@@ -2164,7 +2164,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["maps"] = {
 					84,		-- Stormwind City
 					ORGRIMMAR,
-					87,		-- Ironforge
+					IRONFORGE,
 					THUNDER_BLUFF,
 					89,		-- Darnassus
 					90,		-- Undercity
@@ -2180,7 +2180,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["coords"] = {
 					{ 49.4, 72.0, 84 },		-- Stormwind City
 					{ 47.2, 37.6, ORGRIMMAR },
-					{ 64.8, 27.4, 87 },		-- Ironforge
+					{ 64.8, 27.4, IRONFORGE },
 					{ 21.4, 24.4, THUNDER_BLUFF },
 					{ 62.2, 49.2, 89 },		-- Darnassus
 					{ 67.0, 13.0, 90 },		-- Undercity
@@ -2191,7 +2191,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["maps"] = {
 					84,		-- Stormwind City
 					ORGRIMMAR,
-					87,		-- Ironforge
+					IRONFORGE,
 					THUNDER_BLUFF,
 					89,		-- Darnassus
 					90,		-- Undercity
@@ -2227,7 +2227,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					TANARIS,
 					WINTERSPRING,
 					84,		-- Stormwind City
-					87,		-- Ironforge
+					IRONFORGE,
 					89,		-- Darnassus
 					THE_EXODAR,
 					NETHERSTORM,
@@ -2268,14 +2268,14 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["provider"] = { "n", 25975 },	-- Master Fire Eater
 				["coords"] = {
 					{ 49.8, 72.0, 84 },		-- Stormwind City
-					{ 65.2, 25.4, 87 },		-- Ironforge
+					{ 65.2, 25.4, IRONFORGE },
 					{ 63.0, 47.6, 89 },		-- Darnassus
 					{ 41.2, 24.4, THE_EXODAR },
 				},
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = {
 					84,		-- Stormwind City
-					87,		-- Ironforge
+					IRONFORGE,
 					89,		-- Darnassus
 					THE_EXODAR,
 				},
@@ -2301,14 +2301,14 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["provider"] = { "n", 25975 },	-- Master Fire Eater
 				["coords"] = {
 					{ 49.8, 72.0, 84 },		-- Stormwind City
-					{ 65.2, 25.4, 87 },		-- Ironforge
+					{ 65.2, 25.4, IRONFORGE },
 					{ 63.0, 47.6, 89 },		-- Darnassus
 					{ 41.2, 24.4, THE_EXODAR },
 				},
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = {
 					84,		-- Stormwind City
-					87,		-- Ironforge
+					IRONFORGE,
 					89,		-- Darnassus
 					THE_EXODAR,
 				},
@@ -2334,7 +2334,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["coords"] = {
 					{ 49.4, 72.0, 84 },		-- Stormwind City
 					{ 47.2, 37.6, ORGRIMMAR },
-					{ 64.8, 27.4, 87 },		-- Ironforge
+					{ 64.8, 27.4, IRONFORGE },
 					{ 21.4, 24.4, THUNDER_BLUFF },
 					{ 62.2, 49.2, 89 },		-- Darnassus
 					{ 67.0, 13.0, 90 },		-- Undercity
@@ -2345,7 +2345,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["maps"] = {
 					84,		-- Stormwind City
 					ORGRIMMAR,
-					87,		-- Ironforge
+					IRONFORGE,
 					THUNDER_BLUFF,
 					89,		-- Darnassus
 					90,		-- Undercity

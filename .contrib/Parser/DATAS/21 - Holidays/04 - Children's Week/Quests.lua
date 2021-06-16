@@ -1294,13 +1294,13 @@ _.Holidays =
 							1468,	-- Children's Week
 						},
 						["coords"] = {
-							{ 44.61, 49.40, 87 },	-- The High Seat [Leads to tunnel]
-							{ 44.76, 52.25, 87 },	-- Path to Old Ironforge
+							{ 44.61, 49.40, IRONFORGE },	-- The High Seat [Leads to tunnel]
+							{ 44.76, 52.25, IRONFORGE },	-- Path to Old Ironforge
 							{ 37.43, 54.32, 1361 },	-- Magni [Old Ironforge]
 						},
 						["maps"] = {
 							84,		-- Stormwind City
-							87,		-- Ironforge
+							IRONFORGE,
 							1361,	-- Old Ironforge
 						},
 						["races"] = ALLIANCE_ONLY,

@@ -346,16 +346,16 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { 26 },	-- The Hinterlands
 										}),
 										crit(13, {	-- Ironforge, The Commons
-											["coord"] = { 18.6, 51.3, 87 },
-											["maps"] = { 87 },	-- Ironforge
+											["coord"] = { 18.6, 51.3, IRONFORGE },
+											["maps"] = { IRONFORGE },
 										}),
 										crit(14, {	-- Loch Modan, Farstrider's Lodge
-											["coord"] = { 82.9, 63.6, 48 },
-											["maps"] = { 48 },	-- Loch Modan
+											["coord"] = { 82.9, 63.6, LOCH_MODAN },
+											["maps"] = { LOCH_MODAN },
 										}),
 										crit(15, {	-- Loch Modan, Thelsamar
-											["coord"] = { 35.5, 48.4, 48 },
-											["maps"] = { 48 },	-- Loch Modan
+											["coord"] = { 35.5, 48.4, LOCH_MODAN },
+											["maps"] = { LOCH_MODAN },
 										}),
 										crit(16, {	-- Northern Stranglethorn, Fort Livingston
 											["coord"] = { 53.1, 66.9, 50 },
@@ -366,8 +366,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { 49 },	-- Redridge Mountains
 										}),
 										crit(18, {	-- Searing Gorge, Iron Summit
-											["coord"] = { 39.4, 66.1, 32 },
-											["maps"] = { 32 },	-- Searing Gorge
+											["coord"] = { 39.4, 66.1, SEARING_GORGE },
+											["maps"] = { SEARING_GORGE },
 										}),
 										crit(19, {	-- Stormwind, The Trade District
 											["coord"] = { 60.5, 75.2, 84 },
@@ -447,12 +447,12 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { GHOSTLANDS },
 										}),
 										crit(11, {	-- Hillsbrad Foothills, Eastpoint Tower
-											["coord"] = { 60.3, 63.8, 25 },
-											["maps"] = { 25 },	-- Hillsbrad Foothills
+											["coord"] = { 60.3, 63.8, HILLSBRAD_FOOTHILLS },
+											["maps"] = { HILLSBRAD_FOOTHILLS },
 										}),
 										crit(12, {	-- Hillsbrad Foothills, Tarren Mill
-											["coord"] = { 57.9, 47.3, 25 },
-											["maps"] = { 25 },	-- Hillsbrad Foothills
+											["coord"] = { 57.9, 47.3, HILLSBRAD_FOOTHILLS },
+											["maps"] = { HILLSBRAD_FOOTHILLS },
 										}),
 										crit(13, {	-- The Hinterlands, Hiri'watha Research Station
 											["coord"] = { 31.9, 57.9, 26 },
@@ -467,8 +467,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { 50 },	-- Northern Stranglethorn
 										}),
 										crit(16, {	-- Searing Gorge, Iron Summit
-											["coord"] = { 39.4, 66.1, 32 },
-											["maps"] = { 32 },	-- Searing Gorge
+											["coord"] = { 39.4, 66.1, SEARING_GORGE },
+											["maps"] = { SEARING_GORGE },
 										}),
 										crit(17, {	-- Silvermoon City, The Bazaar
 											["coord"] = { 67.6, 73.2, SILVERMOON_CITY },

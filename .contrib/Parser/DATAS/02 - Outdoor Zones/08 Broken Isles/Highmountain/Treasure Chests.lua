@@ -175,7 +175,7 @@ _.Zones =
 					["coord"] = { 40.3, 50.0, 657 },
 				}),
 				o(245543, {	-- Treasure Chest
-					["description"] = "On the upper level of Bitestone Enclave, all the way at the back.  Cave entrance is at |cFFFFFFFF13.8, 24.8|r.",
+					["description"] = "On the upper level of Bitestone Enclave, all the way at the back.  Cave entrance is at |cFFFFFFFF41, 73|r.",
 					["questID"] = 40489,
 					["coord"] = { 85.2, 38.2, 651 },	-- Bitestone Enclave
 				}),

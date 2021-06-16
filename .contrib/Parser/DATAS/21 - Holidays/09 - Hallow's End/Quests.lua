@@ -82,7 +82,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 					NORTHERN_BARRENS,
 					TANARIS,
 					WINTERSPRING,
-					87,		-- Ironforge
+					IRONFORGE,
 					84,		-- Stormwind City
 					89,		-- Darnassus
 					THE_EXODAR,
@@ -889,18 +889,18 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(28962, {	-- Candy Bucket — Hillsbrad Foothills, Eastpoint Tower, Horde
 				["isYearly"] = true,
-				["coord"] = { 60.3, 63.8, 25 },
+				["coord"] = { 60.3, 63.8, HILLSBRAD_FOOTHILLS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 25 },	-- Hillsbrad Foothills
+				["maps"] = { HILLSBRAD_FOOTHILLS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12376, {	-- Candy Bucket — Hillsbrad Foothills, Tarren Hill
 				["isYearly"] = true,
-				["coord"] = { 57.9, 47.3, 25 },
+				["coord"] = { 57.9, 47.3, HILLSBRAD_FOOTHILLS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 25 },	-- Hillsbrad Foothills
+				["maps"] = { HILLSBRAD_FOOTHILLS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -1005,9 +1005,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12335, {	-- Candy Bucket — Ironforge, The Commons, Alliance
 				["isYearly"] = true,
-				["coord"] = { 18.6, 51.3, 87 },
+				["coord"] = { 18.6, 51.3, IRONFORGE },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 87 },	-- Ironforge
+				["maps"] = { IRONFORGE },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -1174,18 +1174,18 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(28963, {	-- Candy Bucket — Loch Modan, Farstrider Lodge, Alliance
 				["isYearly"] = true,
-				["coord"] = { 82.9, 63.6, 48 },
+				["coord"] = { 82.9, 63.6, LOCH_MODAN },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 48 },	-- Loch Modan
+				["maps"] = { LOCH_MODAN },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12339, {	-- Candy Bucket — Loch Modan, Thelsamar, Alliance
 				["isYearly"] = true,
-				["coord"] = { 35.5, 48.4, 48 },
+				["coord"] = { 35.5, 48.4, LOCH_MODAN },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 48 },	-- Loch Modan
+				["maps"] = { LOCH_MODAN },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -1330,8 +1330,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(28965, {	-- Candy Bucket — Searing Gorge, Iron Summit, neutral
 				["isYearly"] = true,
-				["coord"] = { 39.4, 66.1, 32 },
-				["maps"] = { 32 },	-- Searing Gorge
+				["coord"] = { 39.4, 66.1, SEARING_GORGE },
+				["maps"] = { SEARING_GORGE },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -2084,7 +2084,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 					NORTHERN_BARRENS,
 					TANARIS,
 					WINTERSPRING,
-					87,		-- Ironforge
+					IRONFORGE,
 					84,		-- Stormwind City
 					89,		-- Darnassus
 					THE_EXODAR,
@@ -2252,7 +2252,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["repeatable"] = true,
 				["provider"] = { "n", 5111 },	-- Innkeeper Firebrew
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 87 },	-- Ironforge
+				["maps"] = { IRONFORGE },
 			}),
 			q(8358,  {	-- Incoming Gumdrop (Horde)
 				["description"] = "Pick up |cFFFFD700Hallow's End Treats for Spoops!|r for this quest to become available.",

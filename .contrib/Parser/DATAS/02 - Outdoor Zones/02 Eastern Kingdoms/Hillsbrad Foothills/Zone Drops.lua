@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(25, {	-- Hillsbrad Foothills
+		m(HILLSBRAD_FOOTHILLS, {
 			n(ZONEDROPS, {
 				i(8491),	-- Cat Carrier (Black Tabby)
 				n(2287, { 	-- Crushridge Warmonger

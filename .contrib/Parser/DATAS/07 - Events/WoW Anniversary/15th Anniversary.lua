@@ -17,7 +17,7 @@ _.WorldEvents =
 			n(-9987, {	-- Alterac Valley
 				["maps"] = {
 					1537,	-- Alterac Valley
-					25,		-- Hillsbrad Foothills
+					HILLSBRAD_FOOTHILLS,
 				},
 				["g"] = bubbleDown({ ["u"] = 31 }, {	-- WoW Anniversary
 					ach(13928, {	-- Alterac Valley of Olde (A)
@@ -248,7 +248,7 @@ _.WorldEvents =
 					}),
 					n(VENDORS, {
 						n(158386, {	-- Time-Displaced Jorek Ironside <Frostwolf Supply Officer>
-							["coord"] = { 58.1, 33.6, 25 },
+							["coord"] = { 58.1, 33.6, HILLSBRAD_FOOTHILLS },
 							["races"] = HORDE_ONLY,
 							["g"] = {
 								n(-322, {	-- Cloaks
@@ -462,7 +462,7 @@ _.WorldEvents =
 							},
 						}),
 						n(158385, {	-- Time-Displaced Thanthaldis Snowgleam <Stormpike Supply Officer>
-							["coord"] = { 44.7, 46.4, 25 },
+							["coord"] = { 44.7, 46.4, HILLSBRAD_FOOTHILLS },
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								n(-322, {	-- Cloaks

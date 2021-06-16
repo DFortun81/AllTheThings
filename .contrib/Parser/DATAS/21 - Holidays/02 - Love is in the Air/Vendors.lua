@@ -8,7 +8,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 			n(37674, {	-- Lovely Merchant <Crown Chemical Co.>
 				["coords"] = {
 					{ 45.2, 57.6, 89 },	-- Darnassus
-					{ 33.8, 66.6, 87 },	-- Ironforge
+					{ 33.8, 66.6, IRONFORGE },
 					{ 52.8, 77.6, ORGRIMMAR },
 					{ 64.2, 67.2, SILVERMOON_CITY },
 					{ 62.6, 75.4, 84 },	-- Stormwind

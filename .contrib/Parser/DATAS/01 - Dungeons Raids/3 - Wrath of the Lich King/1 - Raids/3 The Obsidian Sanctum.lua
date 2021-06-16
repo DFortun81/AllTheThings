@@ -47,31 +47,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					crit(1, {	-- Sartharion (10 or 25 player) slain
 						["achievementID"] = 1658,	-- Champion of the Frozen Wastes
 					}),
-					i(40613, {	-- Gloves of the Lost Conqueror		//** Confirmed Drop 4/19/19 [1 Drake up]
-						i(39634),	-- Heroes' Redemption Gauntlets
-						i(39632),	-- Heroes' Redemption Gloves
-						i(39639),	-- Heroes' Redemption Handguards
-						i(39519),	-- Heroes' Gloves of Faith
-						i(39530),	-- Heroes' Handwraps of Faith
-						i(39500),	-- Heroes' Plagueheart Gloves
-					}),
-					i(40614, {	-- Gloves of the Lost Protector
-						i(39582),	-- Heroes' Cryptstalker Handguards
-						i(39593),	-- Heroes' Earthshatter Gloves
-						i(39601),	-- Heroes' Earthshatter Grips
-						i(39591),	-- Heroes' Earthshatter Handguards
-						i(39609),	-- Heroes' Dreadnaught Gauntlets
-						i(39622),	-- Heroes' Dreadnaught Handguards
-					}),
-					i(40615, {	-- Gloves of the Lost Vanquisher	//** Confirmed Drop 4/19/19 [2 Drakes(s) up]
-						i(39618),	-- Heroes' Scourgeborne Gauntlets
-						i(39624),	-- Heroes' Scourgeborne Handguards
-						i(39544),	-- Heroes' Dreamwalker Gloves
-						i(39557),	-- Heroes' Dreamwalker Handgrips
-						i(39543),	-- Heroes' Dreamwalker Handguards
-						i(39495),	-- Heroes' Frostfire Gloves
-						i(39560),	-- Heroes' Bonescythe Gauntlets
-					}),
+					i(40613),	-- Gloves of the Lost Conqueror		//** Confirmed Drop 4/19/19 [1 Drake up]
+					i(40614),	-- Gloves of the Lost Protector
+					i(40615),	-- Gloves of the Lost Vanquisher	//** Confirmed Drop 4/19/19 [2 Drakes(s) up]
 					i(40429),	-- Crimson Steel
 					i(40428),	-- Titan's Outlook			//** Confirmed Drop 4/19/19 [1/2/3 Drake(s) up]
 					i(40427),	-- Circle of Arcane Streams	//** Confirmed Drop 4/19/19 [1 Drake up]
@@ -120,31 +98,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					crit(1, {	-- Sartharion (10 or 25 player) slain
 						["achievementID"] = 1658,	-- Champion of the Frozen Wastes
 					}),
-					i(40628, {	-- Gauntlets of the Lost Conqueror		//** Confirmed Drop 4/19/19 [3 Drakes up]
-						i(40575),	-- Valorous Redemption Gauntlets
-						i(40570),	-- Valorous Redemption Gloves
-						i(40580),	-- Valorous Redemption Handguards
-						i(40445),	-- Valorous Gloves of Faith
-						i(40454),	-- Valorous Handwraps of Faith
-						i(40420),	-- Valorous Plagueheart Gloves
-					}),
-					i(40629, {	-- Gauntlets of the Lost Protector
-						i(40504),	-- Valorous Cryptstalker Handguards
-						i(40515),	-- Valorous Earthshatter Gloves
-						i(40520),	-- Valorous Earthshatter Grips
-						i(40509),	-- Valorous Earthshatter Handguards
-						i(40527),	-- Valorous Dreadnaught Gauntlets
-						i(40545),	-- Valorous Dreadnaught Handguards
-					}),
-					i(40630, {	-- Gauntlets of the Lost Vanquisher		//** Confirmed Drop 4/19/19 [3 Drakes up]
-						i(40552),	-- Valorous Scourgeborne Gauntlets
-						i(40563),	-- Valorous Scourgeborne Handguards
-						i(40466),	-- Valorous Dreamwalker Gloves
-						i(40472),	-- Valorous Dreamwalker Handgrips
-						i(40460),	-- Valorous Dreamwalker Handguards
-						i(40415),	-- Valorous Frostfire Gloves
-						i(40496),	-- Valorous Bonescythe Gauntlets
-					}),
+					i(40628),	-- Gauntlets of the Lost Conqueror		//** Confirmed Drop 4/19/19 [3 Drakes up]
+					i(40629),	-- Gauntlets of the Lost Protector
+					i(40630),	-- Gauntlets of the Lost Vanquisher		//** Confirmed Drop 4/19/19 [3 Drakes up]
 					i(40455),	-- Staff of Restraint					//** Confirmed Drop 4/19/19 [2 Drakes up]
 					i(40451),	-- Hyaline Helm of the Sniper
 					i(40437),	-- Concealment Shoulderpads				//** Confirmed Drop 4/19/19 [3 Drakes up]
