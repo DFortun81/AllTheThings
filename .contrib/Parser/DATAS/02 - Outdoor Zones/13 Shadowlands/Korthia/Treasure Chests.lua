@@ -241,6 +241,7 @@ _.Zones =
 					["g"] = {
 						i(187440, {	-- Feather-Stuffed Helm
 						--	TODO: can probably drop at least 1 helm per armor class
+							i(185858),	-- Korthian Caretaker's Crest
 							i(186666),	-- Korthian Caretaker's Crown
 							i(186736),	-- Shardhide Leather Cowl
 						}),
@@ -254,6 +255,7 @@ _.Zones =
 					["coord"] = { 42.4, 54.8, KORTHIA },
 					["g"] = {
 						i(187440, {	-- Feather-Stuffed Helm
+							i(185858),	-- Korthian Caretaker's Crest
 							i(186666),	-- Korthian Caretaker's Crown
 							i(186736),	-- Shardhide Leather Cowl
 						}),
@@ -268,6 +270,7 @@ _.Zones =
 					["coord"] = { 52.4, 43.8, KORTHIA },
 					["g"] = {
 						i(187440, {	-- Feather-Stuffed Helm
+							i(185858),	-- Korthian Caretaker's Crest
 							i(186666),	-- Korthian Caretaker's Crown
 							i(186736),	-- Shardhide Leather Cowl
 						}),
@@ -281,6 +284,7 @@ _.Zones =
 					["coord"] = { 63.7, 31.4, KORTHIA },
 					["g"] = {
 						i(187440, {	-- Feather-Stuffed Helm
+							i(185858),	-- Korthian Caretaker's Crest
 							i(186666),	-- Korthian Caretaker's Crown
 							i(186736),	-- Shardhide Leather Cowl
 						}),
@@ -294,6 +298,7 @@ _.Zones =
 					["coord"] = { 52.3, 72.7, KORTHIA },
 					["g"] = {
 						i(187440, {	-- Feather-Stuffed Helm
+							i(185858),	-- Korthian Caretaker's Crest
 							i(186666),	-- Korthian Caretaker's Crown
 							i(186736),	-- Shardhide Leather Cowl
 						}),
