@@ -124,10 +124,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11768, {	-- Desecrate this Fire! — Burning Steppes
 				["isYearly"] = true,
 				["provider"] = { "o", 187956 },	-- Horde Bonfire
-				["coord"] = { 51.5, 29.3, 36 },
+				["coord"] = { 51.5, 29.3, BURNING_STEPPES },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
-				["maps"] = { 36 },	-- Burning Steppes
+				["maps"] = { BURNING_STEPPES },
 			}),
 			q(13457, {	-- Desecrate this Fire! — Crystalsong Forest
 				["isYearly"] = true,
@@ -542,10 +542,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11739, {	-- Desecrate this Fire! — Burning Steppes
 				["isYearly"] = true,
 				["provider"] = { "o", 187922 },	-- Alliance Bonfire
-				["coord"] = { 68.6, 59.9, 36 },
+				["coord"] = { 68.6, 59.9, BURNING_STEPPES },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-				["maps"] = { 36 },	-- Burning Steppes
+				["maps"] = { BURNING_STEPPES },
 			}),
 			q(13447, {	-- Desecrate this Fire! — Crystalsong Forest
 				["isYearly"] = true,
@@ -590,18 +590,18 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11742, {	-- Desecrate this Fire! — Dun Morogh
 				["isYearly"] = true,
 				["provider"] = { "o", 187925 },	-- Alliance Bonfire
-				["coord"] = { 53.8, 44.7, 27 },
+				["coord"] = { 53.8, 44.7, DUN_MOROGH },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-				["maps"] = { 27 },	-- Dun Morogh
+				["maps"] = { DUN_MOROGH },
 			}),
 			q(11743, {	-- Desecrate this Fire! — Duskwood
 				["isYearly"] = true,
 				["provider"] = { "o", 187926 },	-- Alliance Bonfire
-				["coord"] = { 73.2, 54.9, 47 },
+				["coord"] = { 73.2, 54.9, DUSKWOOD },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-				["maps"] = { 47 },	-- Duskwood
+				["maps"] = { DUSKWOOD },
 			}),
 			q(11744, {	-- Desecrate this Fire! — Dustwallow Marsh
 				["isYearly"] = true,
@@ -974,9 +974,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11810, {	-- Honor the Flame — Burning Steppes
 				["provider"] = { "n", 25892 },	-- Burning Steppes Flame Warden
 				["isYearly"] = true,
-				["coord"] = { 68.2, 60.6, 36 },
+				["coord"] = { 68.2, 60.6, BURNING_STEPPES },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 36 },	-- Burning Steppes
+				["maps"] = { BURNING_STEPPES },
 			}),
 			q(13491, {	-- Honor the Flame — Crystalsong Forest
 				["provider"] = { "n", 32807 },	-- Crystalsong Forest Flame Warden
@@ -1023,16 +1023,16 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11813, {	-- Honor the Flame — Dun Morogh
 				["provider"] = { "n", 25895 },	-- Dun Morogh Flame Warden
 				["isYearly"] = true,
-				["coord"] = { 53.8, 45.2, 27 },
+				["coord"] = { 53.8, 45.2, DUN_MOROGH },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 27 },	-- Dun Morogh
+				["maps"] = { DUN_MOROGH },
 			}),
 			q(11814, {	-- Honor the Flame — Duskwood
 				["provider"] = { "n", 25896 },	-- Duskwood Flame Warden
 				["isYearly"] = true,
-				["coord"] = { 73.8, 54.7, 47 },
+				["coord"] = { 73.8, 54.7, DUSKWOOD },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 47 },	-- Duskwood
+				["maps"] = { DUSKWOOD },
 			}),
 			q(11815, {	-- Honor the Flame — Dustwallow Marsh
 				["provider"] = { "n", 25897 },	-- Dustwallow Marsh Flame Warden
@@ -1361,9 +1361,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11844, {	-- Honor the Flame — Burning Steppes
 				["provider"] = { "n", 25927 },	-- Burning Steppes Flame Keeper
 				["isYearly"] = true,
-				["coord"] = { 51.1, 29.2, 36 },
+				["coord"] = { 51.1, 29.2, BURNING_STEPPES },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 36 },	-- Burning Steppes
+				["maps"] = { BURNING_STEPPES },
 			}),
 			q(13499, {	-- Honor the Flame — Crystalsong Forest
 				["provider"] = { "n", 32815 },	-- Crystalsong Forest Flame Keeper
@@ -1907,10 +1907,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 					BLASTED_LANDS,
 					22,		-- Western Plaguelands
 					26,		-- The Hinterlands
-					27,		-- Dun Morogh
-					36,		-- Burning Steppes
+					DUN_MOROGH,
+					BURNING_STEPPES,
 					37,		-- Elwynn Forest
-					47,		-- Duskwood
+					DUSKWOOD,
 					48,		-- Loch Modan
 					49,		-- Redridge Mountains
 					50,		-- Northern Stranglethorn

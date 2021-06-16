@@ -474,15 +474,15 @@ _.Zones =
 						}),
 						q(56188, {	-- To the Catacombs!
 							["provider"] = { "n", 154874 },	-- Blacktalon Watcher
-							["coord"] = { 47.8, 68.8, 13 },	-- Eastern Kingdoms (Burning Steppes, outside BWD)
+							["coord"] = { 47.8, 68.8, EASTERN_KINGDOMS },	-- Burning Steppes, outside BWD
 							["sourceQuest"] = 56187,	-- Black Winged Shadow
 							["u"] = REMOVED_FROM_GAME,	-- (removed with 8.3)
 						}),
 						q(56189, {	-- On the Trail of the Black Prince
 							["provider"] = { "n", 154870 },	-- Slain Blacktalon Lookout
-							["coord"] = { 47.0, 69.2, 42 },
+							["coord"] = { 47.0, 69.2, DEADWIND_PASS },
 							["sourceQuest"] = 56188,	-- To the Catacombs!
-							["maps"] = { 42 },	-- Deadwind Pass
+							["maps"] = { DEADWIND_PASS },
 							["u"] = REMOVED_FROM_GAME,	-- (removed with 8.3)
 						}),
 						q(56190, {	-- Save Ebonhorn

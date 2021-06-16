@@ -10,13 +10,13 @@ _.Secrets =
 			ARATHI_HIGHLANDS,
 			BADLANDS,
 			BLASTED_LANDS,
-			23,
+			EASTERN_PLAGUELANDS,
 			25,
 			BLACKROCK_MOUNTAIN,
-			36,
+			BURNING_STEPPES,
 			37,
-			42,
-			47,
+			DEADWIND_PASS,
+			DUSKWOOD,
 			51,
 			66,
 			FERALAS,
@@ -105,7 +105,7 @@ _.Secrets =
 				["questID"] = 52904,
 				["sourceQuests"] = { 52903 },
 				["description"] = "Eastern Plaguelands\n\nInside the crypt, on top of the sarcophagus lid\n\nThe Pretty Flower reads:\n\n\"<Something is written here.>\n\nDead Rune Thug\"",
-				["coord"] = { 24.0, 78.0, 23 },	-- Pretty Flower
+				["coord"] = { 24.0, 78.0, EASTERN_PLAGUELANDS },	-- Pretty Flower
 			}),
 			o(294105, { 	-- Old Book
 				["model"] = 244161,
@@ -113,7 +113,7 @@ _.Secrets =
 				["questID"] = 52905,
 				["sourceQuests"] = { 52904 },
 				["description"] = "Deadwind Pass\n\nInside the old church, near the table.\n\nThe Old Book reads:\n\n\"<Something is written here.>\n\n...A Stage Deception\"",
-				["coord"] = { 41.2, 78.9, 42 },	-- Old Book
+				["coord"] = { 41.2, 78.9, DEADWIND_PASS },	-- Old Book
 			}),
 			o(294106, { 	-- Dead Fish
 				["model"] = 189087,
@@ -122,7 +122,7 @@ _.Secrets =
 				["sourceQuests"] = { 52905 },
 				["description"] = "Blackrock Mountain\n\nRoom next to LBRS entrance, next to the fire.\n\nThe Dead Fish says:\n\n\"<Something is written here.>\n\nNecropolis Expos!\"",
 				["coords"] = {
-					{ 21.0, 38.2, 36 },	-- Entrance
+					{ 21.0, 38.2, BURNING_STEPPES },	-- Entrance
 					{ 77.9, 44.3, BLACKROCK_MOUNTAIN },	-- Dead Fish
 				},
 			}),
@@ -132,7 +132,7 @@ _.Secrets =
 				["questID"] = 52907,
 				["sourceQuests"] = { 52906 },
 				["description"] = "Duskwood\n\nUnderneath the large plank.\n\nThe Scratched Board reads:\n\n\"<Something is written here.>\n\nThe net saves.\"",
-				["coord"] = { 52.0, 62.4, 47 },	-- Scratched Board
+				["coord"] = { 52.0, 62.4, DUSKWOOD },	-- Scratched Board
 			}),
 			o(294108, { 	-- Lost Ring
 				["model"] = 242730,
@@ -162,7 +162,7 @@ _.Secrets =
 				["questID"] = 52911,
 				["sourceQuests"] = { 52910 },
 				["description"] = "Burning Steppes\n\nEquipped on the larger brown skeletons head.\n\nThe Worn Helm reads:\n\n\"<Something is written here.>\n\nSensed the Figs...\"",
-				["coord"] = { 27.1, 47.0, 36 },	-- Worn Helm
+				["coord"] = { 27.1, 47.0, BURNING_STEPPES },	-- Worn Helm
 			}),
 			o(294112, { 	-- Leafy Leaf
 				["model"] = 523642,

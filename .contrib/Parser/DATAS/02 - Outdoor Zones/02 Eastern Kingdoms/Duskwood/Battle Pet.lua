@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(47, {	-- Duskwood
+		m(DUSKWOOD, {
 			filter(101, {	-- Pet Battle
 				p(398, { -- Black Rat
 					["crs"] = { 61257 },	-- Black Rat
@@ -47,12 +47,12 @@ _.Zones =
 				}),
 				q(31850, {	-- Eric Davidson
 					["provider"] = { "n", 65655 },	-- Eric Davidson
-					["coord"] = { 19.8, 44.6, 47 },
+					["coord"] = { 19.8, 44.6, DUSKWOOD },
 					["isDaily"] = true,
 				}),
 				q(31729, {	-- Steven Lisbane
 					["provider"] = { "n", 65655 },	-- Eric Davidson
-					["coord"] = { 19.8, 44.8, 47 },
+					["coord"] = { 19.8, 44.8, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 31726,	-- Eric Davidson
 					["g"] = {

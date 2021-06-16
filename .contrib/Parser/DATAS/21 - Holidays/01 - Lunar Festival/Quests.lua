@@ -287,8 +287,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8683,  {	-- Dawnstrider the Elder
 				["provider"] = { "n", 15585 },	-- Elder Dawnstrider
 				["isYearly"] = true,
-				["coord"] = { 52.3, 23.9, 36 },
-				["maps"] = { 36 },	-- Burning Steppes
+				["coord"] = { 52.3, 23.9, BURNING_STEPPES },
+				["maps"] = { BURNING_STEPPES },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(10, {	-- Elder Dawnstrider in Flame Crest
@@ -299,8 +299,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8653,  {	-- Goldwell the Elder
 				["provider"] = { "n", 15569 },	-- Elder Goldwell
 				["isYearly"] = true,
-				["coord"] = { 53.8, 49.9, 27 },
-				["maps"] = { 27 },	-- Dun Morogh
+				["coord"] = { 53.8, 49.9, DUN_MOROGH },
+				["maps"] = { DUN_MOROGH },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(1, {	-- Elder Goldwell in Kharanos
@@ -384,8 +384,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8636,  {	-- Rumblerock the Elder
 				["provider"] = { "n", 15557 },	-- Elder Rumblerock
 				["isYearly"] = true,
-				["coord"] = { 70.1, 45.4, 36 },
-				["maps"] = { 36 },	-- Burning Steppes
+				["coord"] = { 70.1, 45.4, BURNING_STEPPES },
+				["maps"] = { BURNING_STEPPES },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(9, {	-- Elder Rumblerock in Burning Steppes
@@ -420,8 +420,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8650,  {	-- Snowcrown the Elder
 				["provider"] = { "n", 15566 },	-- Elder Snowcrown
 				["isYearly"] = true,
-				["coord"] = { 75.7, 54.4, 23 },
-				["maps"] = { 23 },	-- Eastern Plaguelands
+				["coord"] = { 75.7, 54.4, EASTERN_PLAGUELANDS },
+				["maps"] = { EASTERN_PLAGUELANDS },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(16, {	-- Elder Snowcrown in Light's Hope Chapel
@@ -456,8 +456,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8688,  {	-- Windrun the Elder
 				["provider"] = { "n", 15592 },	-- Elder Windrun
 				["isYearly"] = true,
-				["coord"] = { 35.5, 68.8, 23 },
-				["maps"] = { 23 },	-- Eastern Plaguelands
+				["coord"] = { 35.5, 68.8, EASTERN_PLAGUELANDS },
+				["maps"] = { EASTERN_PLAGUELANDS },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(15, {	-- Elder Windrun in Eastern Plaguelands
@@ -1011,9 +1011,9 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["description"] = "Enter Stratholme through the main gate.  The Elder is in the northeast corner, east of The Unforgiven.",
 				["provider"] = { "n", 15607 },	-- Elder Farwhisper
 				["isYearly"] = true,
-				["coord"] = { 27.7, 11.6, 23 },	-- Stratholme entrance
+				["coord"] = { 27.7, 11.6, EASTERN_PLAGUELANDS },	-- Stratholme entrance
 				["maps"] = {
-					23,		-- Eastern Plaguelands
+					EASTERN_PLAGUELANDS,
 					STRATHOLME,
 				},
 				["u"] = 17,	-- Lunar Festival
@@ -1075,9 +1075,9 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["description"] = "Once inside Blackrock Depths, you can find this Elder in the Ring of Law.  Approaching the Elder in the center of the ring will also start the encounter.",
 				["provider"] = { "n", 15549 },	-- Elder Morndeep
 				["isYearly"] = true,
-				["coord"] = { 21.1, 38.5, 36 },	-- entrance to Blackrock Mountain
+				["coord"] = { 21.1, 38.5, BURNING_STEPPES },	-- entrance to Blackrock Mountain
 				["maps"] = {
-					36,		-- Burning Steppes
+					BURNING_STEPPES,
 					BLACKROCK_DEPTHS,
 				},
 				["u"] = 17,	-- Lunar Festival
@@ -1155,9 +1155,9 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["description"] = "Once inside Lower Blackrock Spire, head down and to the left.  The Elder is just past the first bridge.",
 				["provider"] = { "n", 15560 },	-- Elder Stonefort
 				["isYearly"] = true,
-				["coord"] = { 21.1, 38.5, 36 },	-- entrance to Blackrock Mountain
+				["coord"] = { 21.1, 38.5, BURNING_STEPPES },	-- entrance to Blackrock Mountain
 				["maps"] = {
-					36,		-- Burning Steppes
+					BURNING_STEPPES,
 					252,	-- Lower Blackrock Spire
 				},
 				["u"] = 17,	-- Lunar Festival

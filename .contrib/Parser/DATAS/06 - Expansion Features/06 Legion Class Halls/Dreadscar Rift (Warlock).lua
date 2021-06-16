@@ -245,9 +245,9 @@ _.ExpansionFeatures =
 					q(40604, {	-- Disturbing the Past
 						["sourceQuest"] = 40588,	-- Following the Curse
 						["classes"] = { WARLOCK },
-						["coord"] = { 52.3, 34.5, 42 },
+						["coord"] = { 52.3, 34.5, DEADWIND_PASS },
 						["provider"] = { "n", 100729 },	-- Revil Kost
-						["maps"] = { 42 },	-- Deadwind Pass
+						["maps"] = { DEADWIND_PASS },
 					}),
 					q(41780, {	-- Doom and Gloom
 						["sourceQuest"] = 41781,	-- Herding Goats
@@ -293,9 +293,9 @@ _.ExpansionFeatures =
 					q(40588, {	-- Following the Curse
 						["sourceQuest"] = 40495,	-- Ulthalesh, the Deadwind Harvester
 						["classes"] = { WARLOCK },
-						["coord"] = { 77.4, 36.1, 47 },
+						["coord"] = { 77.4, 36.1, DUSKWOOD },
 						["provider"] = { "n", 100323 },	-- Revil Kost
-						["maps"] = { 47 }	-- Duskwood
+						["maps"] = { DUSKWOOD },
 					}),
 					q(46784, {	-- Further Advancement
 						["sourceQuest"] = 46047,	-- Champion: Kanrethad Ebonlocke
@@ -481,9 +481,9 @@ _.ExpansionFeatures =
 					q(40623, {	-- The Dark Riders
 						["sourceQuests"] = { 40611 },	-- The Fate of Deadwind
 						["classes"] = { WARLOCK },
-						["coord"] = { 49.4, 74.8, 42 },
+						["coord"] = { 49.4, 74.8, DEADWIND_PASS },
 						["provider"] = { "n", 100812 },	-- Revil Kost
-						["maps"] = { 42 },	-- Deadwind Pass
+						["maps"] = { DEADWIND_PASS },
 						["altQuests"] = { 41155 },	-- The Dark Riders
 					}),
 					q(46242, {	-- The Dreadlord's Calling
@@ -494,9 +494,9 @@ _.ExpansionFeatures =
 					q(40611, {	-- The Fate of Deadwind
 						["sourceQuests"] = { 40606 },	-- To Point the Way
 						["classes"] = { WARLOCK },
-						["coord"] = { 52.3, 34.4, 42 },
+						["coord"] = { 52.3, 34.4, DEADWIND_PASS },
 						["provider"] = { "n", 100729 },	-- Revil Kost
-						["maps"] = { 42 },	-- Deadwind Pass
+						["maps"] = { DEADWIND_PASS },
 						["altQuests"] = { 41154 },
 					}),
 					q(45028, {	-- The Fate of Kanrethad
@@ -583,9 +583,9 @@ _.ExpansionFeatures =
 					q(40606, {	-- To Point the Way
 						["sourceQuests"] = { 40604 },	-- Disturbing the Past
 						["classes"] = { WARLOCK },
-						["coord"] = { 52.3, 33.9, 42 },
+						["coord"] = { 52.3, 33.9, DEADWIND_PASS },
 						["icon"] = "Interface\\Icons\\inv_offhand_1h_draenorcrafted_d_02a",
-						["maps"] = { 42 },	-- Deadwind Pass
+						["maps"] = { DEADWIND_PASS },
 					}),
 					q(45027, {	-- To the Broken Shore
 						["sourceQuests"] = { 45794 },	-- Informing the Council

@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(47, {	-- Duskwood
+		m(DUSKWOOD, {
 			n(ZONEDROPS, {
 				i(2014, {	-- Black Metal Greatsword
 					["u"] = REMOVED_FROM_GAME,

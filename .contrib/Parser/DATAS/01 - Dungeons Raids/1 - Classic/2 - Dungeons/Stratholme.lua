@@ -13,7 +13,7 @@ _.Instances = { tier(1, {	-- Classic
 					STRATHOLME,	-- Living Side
 					827,	-- Paladin: Legion Class Mount Map
 				},
-				["coord"] = { 27.66, 11.64, 23 },	-- Stratholme [Main Gate], Eastern Plaguelands
+				["coord"] = { 27.66, 11.64, EASTERN_PLAGUELANDS },	-- Stratholme [Main Gate]
 				["groups"] = {
 					n(QUESTS, {
 						q(27185, {	-- Cutting the Competition
@@ -276,7 +276,7 @@ _.Instances = { tier(1, {	-- Classic
 			n(-389, {	-- Service Entrance
 				["description"] = "Stratholme is divided into two sides.\n\nThis side is commonly referred to as the \"Dead\" or \"Scourge\" side, which the Scourge has taken over.",
 				["maps"] = { 318 },	-- Undead Side
-				["coord"] = { 43.76, 17.52, 23 },	-- Stratholme [Undead Side], Eastern Plaguelands
+				["coord"] = { 43.76, 17.52, EASTERN_PLAGUELANDS },	-- Stratholme [Undead Side]
 				["groups"] = {
 					n(QUESTS, {
 						q(5263, {	-- Above and Beyond

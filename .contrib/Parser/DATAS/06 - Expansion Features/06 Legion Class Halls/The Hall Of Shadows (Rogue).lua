@@ -280,7 +280,7 @@ _.ExpansionFeatures =
 					}),
 					q(42539, {	-- Cloak and Dagger
 						["lvl"] = 100,
-						["maps"] = { 47 },	-- Duskwood
+						["maps"] = { DUSKWOOD },
 						["coord"] = { 38.1, 67.6, 626 },
 						["classes"] = { ROGUE },
 						["provider"] = { "o", 250671 },	-- Notes on the Veiled Hand
@@ -295,7 +295,7 @@ _.ExpansionFeatures =
 					}),
 					q(42503, {	-- Codebreaker
 						["lvl"] = 100,
-						["maps"] = { 47 },	-- Duskwood
+						["maps"] = { DUSKWOOD },
 						["classes"] = { ROGUE },
 						["coords"] = {
 							{ 42.4, 75.9, 626 },	-- Princess Tess Greymane
@@ -612,7 +612,7 @@ _.ExpansionFeatures =
 					}),
 					q(42568, {	-- Preparation
 						["lvl"] = 100,
-						["maps"] = { 47 },	-- Duskwood
+						["maps"] = { DUSKWOOD },
 						["coord"] = { 38.1, 67.6, 626 },
 						["classes"] = { ROGUE },
 						["provider"] = { "o", 250671 },	-- Notes on the Veiled Hand

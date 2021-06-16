@@ -10,13 +10,13 @@ _.Zones =
 					["coord"] = { 62.4, 17.2, NORTHERN_BARRENS },
 				}),
 				fp(80, {	-- Ratchet, Northern Barrens
-					["coord"] = { 69, 70.6, NORTHERN_BARRENS },
+					["coord"] = { 69.0, 70.6, NORTHERN_BARRENS },
 				}),
 				fp(25, {	-- The Crossroads, Northern Barrens
 					["coord"] = { 48.6, 58.6, NORTHERN_BARRENS },
 				}),
 				fp(354, {	-- The Mor'Shan Ramparts, Ashenvale
-					["coord"] = { 42, 15.8, NORTHERN_BARRENS },
+					["coord"] = { 42.0, 15.8, NORTHERN_BARRENS },
 				}),
 			}),
 		}),

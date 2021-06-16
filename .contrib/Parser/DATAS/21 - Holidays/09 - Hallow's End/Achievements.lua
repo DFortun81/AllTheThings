@@ -322,16 +322,16 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { 210 },	-- The Cape of Stranglethorn
 										}),
 										crit(7,  {	-- Dun Morogh, Kharanos
-											["coord"] = { 54.5, 50.7, 27 },
-											["maps"] = { 27 },	-- Dun Morogh
+											["coord"] = { 54.5, 50.7, DUN_MOROGH },
+											["maps"] = { DUN_MOROGH },
 										}),
 										crit(8,  {	-- Duskwood, Darkshire
-											["coord"] = { 73.9, 44.4, 47 },
-											["maps"] = { 47 },	-- Duskwood
+											["coord"] = { 73.9, 44.4, DUSKWOOD },
+											["maps"] = { DUSKWOOD },
 										}),
 										crit(9,  {	-- Eastern Plaguelands, Light's Hope Chapel
-											["coord"] = { 75.6, 52.4, 23 },
-											["maps"] = { 23 },	-- Eastern Plaguelands
+											["coord"] = { 75.6, 52.4, EASTERN_PLAGUELANDS },
+											["maps"] = { EASTERN_PLAGUELANDS },
 										}),
 										crit(10, {	-- Elwynn Forest, Goldshire
 											["coord"] = { 43.7, 66.0, 37 },
@@ -431,8 +431,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { 210 },	-- The Cape of Stranglethorn
 										}),
 										crit(7,  {	-- Eastern Plaguelands, Light's Hope Chapel
-											["coord"] = { 75.6, 52.4, 23 },
-											["maps"] = { 23 },	-- Eastern Plaguelands
+											["coord"] = { 75.6, 52.4, EASTERN_PLAGUELANDS },
+											["maps"] = { EASTERN_PLAGUELANDS },
 										}),
 										crit(8,  {	-- Eversong Woods, Fairbreeze Village
 											["coord"] = { 43.7, 71.1, EVERSONG_WOODS },

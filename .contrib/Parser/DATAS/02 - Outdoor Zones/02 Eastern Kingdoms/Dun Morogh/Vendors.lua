@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(27, {	-- Dun Morogh
+		m(DUN_MOROGH, {
 			n(VENDORS, {
 				n(7955, {	-- Milli Featherwhistle <Mechanostrider Merchant>
-					["coord"] = { 56.2, 46.3, 27 },
+					["coord"] = { 56.2, 46.3, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(8595),	-- Blue Mechanostrider
@@ -21,7 +21,7 @@ _.Zones =
 					},
 				}),
 				n(1261, {	-- Veron Amberstill <Ram Breeder>
-					["coord"] = { 70.6, 48.9, 27 },
+					["coord"] = { 70.6, 48.9, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(5872),	-- Brown Ram
@@ -33,7 +33,7 @@ _.Zones =
 					},
 				}),
 				n(1263, {	-- Yarlyn Amberstill
-					["coord"] = { 70.5, 49.1, 27 },
+					["coord"] = { 70.5, 49.1, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(8497),	-- Rabbit Crate (Snowshoe) (PET!)

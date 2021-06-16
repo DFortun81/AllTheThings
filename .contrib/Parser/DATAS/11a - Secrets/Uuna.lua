@@ -10,7 +10,7 @@ _.Secrets =
 		--["modelID"] = 80456,
 		["maps"] = {
 			BLACKROCK_MOUNTAIN,
-			36,
+			BURNING_STEPPES,
 			SHATTRATH_CITY,
 			115,
 			198,
@@ -146,7 +146,7 @@ _.Secrets =
 						["name"] = "Step 7: Blackrock Mountain",
 						["coords"] = {
 							{ 37.5, 67.4, BLACKROCK_MOUNTAIN },
-							{ 21.1, 38.4, 36 },	-- Burning Steppes
+							{ 21.1, 38.4, BURNING_STEPPES },
 						},
 						["icon"] = "Interface\\Icons\\inv_misc_toy_02",
 					}),

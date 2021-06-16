@@ -11,7 +11,7 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_DAY_OF_THE_DEAD },
 				{ 33.9, 39.3, 627 },	-- Dalaran: Broken Isles
 				{ 34.4, 39.1, 125 },	-- Dalaran: Northrend
 				{ 69.4, 40.5, 89 },		-- Darnassus
-				{ 61.0, 36.9, 27 },		-- Dun Morogh [IF]
+				{ 61.0, 36.9, DUN_MOROGH },
 				{ 47.2, 17.8, 1 },		-- Durotar [Org]
 				{ 47.7, 49.7, EVERSONG_WOODS },
 				{ 46.6, 25.8, 84 },		-- Stormwind City
@@ -24,7 +24,7 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_DAY_OF_THE_DEAD },
 				627,	-- Dalaran: Broken Isles
 				125,	-- Dalaran: Northrend
 				89,		-- Darnassus
-				27,		-- Dun Morogh [IF]
+				DUN_MOROGH,
 				1,		-- Durotar [Org]
 				EVERSONG_WOODS,
 				84,		-- Stormwind City

@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(36, {	-- Burning Steppes
+		m(BURNING_STEPPES, {
 			filter(101, {	-- Pet Battle
 				p(425, {	-- Ash Viper
 					["crs"] = { 61385 },	-- Ash Viper
@@ -27,7 +27,7 @@ _.Zones =
 				}),
 				q(31914, {	-- Durin Darkhammer
 					["provider"] = { "n", 66520 },	-- Durin Darkhammer
-					["coord"] = { 25.5, 47.4, 36 },
+					["coord"] = { 25.5, 47.4, BURNING_STEPPES },
 					["isDaily"] = true,
 				}),
 			}),

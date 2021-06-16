@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(27, {	-- Dun Morogh
+		m(DUN_MOROGH, {
 			n(QUESTS, {
 				q(319,   {	-- A Favor for Evershine
 					["u"] = REMOVED_FROM_GAME,
@@ -14,7 +14,7 @@ _.Zones =
 				}),
 				q(25882, {	-- A Hand at the Ranch
 					["provider"] = { "n", 41298 },	-- Slamp Wobblecog
-					["coord"] = { 62.5, 53.7, 27 },
+					["coord"] = { 62.5, 53.7, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = {
@@ -23,7 +23,7 @@ _.Zones =
 					},
 				}),
 				q(26855, {	-- A Pilot's Revenge
-					["coord"] = { 87.6, 50.2, 27 },
+					["coord"] = { 87.6, 50.2, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 2059 },	-- A Dwarven Corpse
 					["g"] = {
@@ -50,18 +50,18 @@ _.Zones =
 				}),
 				q(26380, {	-- Bound for Kharanos
 					["provider"] = { "n", 42933 },	-- Ciara Deepstone
-					["coord"] = { 49.9, 44.9, 27 },
+					["coord"] = { 49.9, 44.9, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25667, {	-- Culling the Wendigos
 					["provider"] = { "n", 40950 },	-- Captain Tharran
-					["coord"] = { 53.7, 52.1, 27 },
+					["coord"] = { 53.7, 52.1, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25724,	-- Frostmane Aggression
 				}),
 				q(25997, {	-- Dark Iron Scheming
 					["provider"] = { "n", 41786 },	-- Sergeant Bahrum
-					["coord"] = { 82.8, 48.4, 27 },
+					["coord"] = { 82.8, 48.4, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						25979,	-- Dealing With the Surge
@@ -76,7 +76,7 @@ _.Zones =
 				}),
 				q(25979, {	-- Dealing with the Surge
 					["provider"] = { "n", 41804 },	-- Khurgon Singefeather
-					["coord"] = { 82.6, 48.3, 27 },
+					["coord"] = { 82.6, 48.3, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26112, {	-- Demanding Answers
@@ -93,13 +93,13 @@ _.Zones =
 				}),
 				q(25840, {	-- Eliminate the Resistance
 					["provider"] = { "n", 41298 },	-- Slamp Wobblecog
-					["coord"] = { 62.5, 53.7, 27 },
+					["coord"] = { 62.5, 53.7, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25839,	-- The Ultrasafe Personnel Launcher
 				}),
 				q(25978, {	-- Entombed in Ice
 					["provider"] = { "n", 41786 },	-- Sergeant Bahrum
-					["coord"] = { 82.8, 48.4, 27 },
+					["coord"] = { 82.8, 48.4, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25986,	-- Trouble at the Lake
 				}),
@@ -110,13 +110,13 @@ _.Zones =
 				}),
 				q(26078, {	-- Extinguish the Fires
 					["provider"] = { "n", 41853 },	-- Commander Stonebreaker
-					["coord"] = { 78.2, 20.5, 27 },
+					["coord"] = { 78.2, 20.5, DUN_MOROGH },
 					["sourceQuest"] = 25998,	-- Get to the Airfield
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(313,   {	-- Forced to Watch from Afar
 					["provider"] = { "n", 40950 },	-- Captain Tharran
-					["coord"] = { 53.7, 52.1, 27 },
+					["coord"] = { 53.7, 52.1, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25724,	-- Frostmane Aggression
 				}),
@@ -132,7 +132,7 @@ _.Zones =
 				}),
 				q(25724, {	-- Frostmane Aggression
 					["provider"] = { "n", 40950 },	-- Captain Tharran
-					["coord"] = { 53.7, 52.1, 27 },
+					["coord"] = { 53.7, 52.1, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26373,	-- On to Kharanos
 				}),
@@ -146,13 +146,13 @@ _.Zones =
 				}),
 				q(25998, {	-- Get to the Airfield
 					["provider"] = { "n", 41786 },	-- Sergeant Bahrum
-					["coord"] = { 82.8, 48.4, 27 },
+					["coord"] = { 82.8, 48.4, DUN_MOROGH },
 					["sourceQuest"] = 25997,	-- Dark Iron Scheming
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26102, {	-- Grimaxe's Demise
 					["provider"] = { "n", 41853 },	-- Commander Stonebreaker
-					["coord"] = { 78.2, 20.5, 27 },
+					["coord"] = { 78.2, 20.5, DUN_MOROGH },
 					["sourceQuest"] = 26094,	-- Striking Back
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -170,7 +170,7 @@ _.Zones =
 				}),
 				q(25933, {	-- Help for the Quarry
 					["provider"] = { "n", 41578 },	-- Sergeant Flinterhammer
-					["coord"] = { 70.4, 48.9, 27 },
+					["coord"] = { 70.4, 48.9, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						314,	-- Protecting the Herd (TODO:: verify if needed)
@@ -179,7 +179,7 @@ _.Zones =
 				}),
 				q(25838, {	-- Help from Steelgrill's Depot
 					["provider"] = { "n", 40950 },	-- Captain Tharran
-					["coord"] = { 53.7, 52.1, 27 },
+					["coord"] = { 53.7, 52.1, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						412,	-- Operation Recombobulation
@@ -188,7 +188,7 @@ _.Zones =
 				}),
 				q(6387,  {	-- Honor Students
 					["provider"] = { "n", 1699 },	-- Gremlock Pilsnor
-					["coord"] = { 54.7, 50.5, 27 },
+					["coord"] = { 54.7, 50.5, DUN_MOROGH },
 					["races"] = { DWARF, GNOME },
 				}),
 				q(4126,  {	-- Hurley Blackbreath
@@ -201,7 +201,7 @@ _.Zones =
 				}),
 				q(25932, {	-- It's Raid Night Every Night
 					["provider"] = { "n", 41578 },	-- Sergeant Flinthammer
-					["coord"] = { 70.4, 48.9, 27 },
+					["coord"] = { 70.4, 48.9, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25882,	-- A Hand at the Ranch
 				}),
@@ -229,7 +229,7 @@ _.Zones =
 				}),
 				q(412,   {	-- Operation Recombobulation
 					["provider"] = { "n", 1269 },	-- Razzle Sprysprocket
-					["coord"] = { 53.2, 51.9, 27 },
+					["coord"] = { 53.2, 51.9, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						25667,	-- Culling the Wendigos
@@ -239,13 +239,13 @@ _.Zones =
 				}),
 				q(25668, {	-- Pilfered Supplies
 					["provider"] = { "n", 40951 },	-- Quartermaster Glynna
-					["coord"] = { 53.7, 52.0, 27 },
+					["coord"] = { 53.7, 52.0, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25724,	-- Frostmane Aggression
 				}),
 				q(25937, {	-- Priceless Treasures
 					["provider"] = { "n", 50631 },	-- Prospector Drugan
-					["coord"] = { 76.1, 53.0, 27 },
+					["coord"] = { 76.1, 53.0, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(57571),	-- Archaeologist's Pants
@@ -259,7 +259,7 @@ _.Zones =
 				}),
 				q(314,   {	-- Protecting the Herd
 					["provider"] = { "n", 1265 },	-- Rudra Amberstill
-					["coord"] = { 70.2, 48.1, 27 },
+					["coord"] = { 70.2, 48.1, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25932,	-- It's Raid Night Every Night
 					["g"] = {
@@ -282,7 +282,7 @@ _.Zones =
 				}),
 				q(25792, {	-- Pushing Forward
 					["provider"] = { "n", 40950 },	-- Captain Tharran
-					["coord"] = { 53.7, 52.1, 27 },
+					["coord"] = { 53.7, 52.1, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						25667,	-- Culling the Wendigos
@@ -292,13 +292,13 @@ _.Zones =
 				}),
 				q(26085, {	-- Rallying the Defenders
 					["provider"] = { "n", 41853 },	-- Commander Stonebreaker
-					["coord"] = { 78.2, 20.5, 27 },
+					["coord"] = { 78.2, 20.5, DUN_MOROGH },
 					["sourceQuest"] = 26078,	-- Extinguish the Fires
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25905, {	-- Rams on the Lam
 					["provider"] = { "n", 1261 },	-- Veron Amberstill
-					["coord"] = { 70.6, 48.9, 27 },
+					["coord"] = { 70.6, 48.9, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25932,	-- It's Raid Night Every Night
 				}),
@@ -319,7 +319,7 @@ _.Zones =
 				}),
 				q(6391,  {	-- Ride to Ironforge
 					["provider"] = { "n", 43701 },	-- Brolan Galebeard
-					["coord"] = { 53.8, 52.6, 27 },
+					["coord"] = { 53.8, 52.6, DUN_MOROGH },
 					["sourceQuest"] = 6387,	-- Honor Students
 					["races"] = { DWARF, GNOME },
 				}),
@@ -337,19 +337,19 @@ _.Zones =
 				}),
 				q(25841, {	-- Strike From Above
 					["provider"] = { "n", 41298 },	-- Slamp Wobblecog
-					["coord"] = { 62.5, 53.7, 27 },
+					["coord"] = { 62.5, 53.7, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25839,	-- The Ultrasafe Personnel Launcher
 				}),
 				q(26094, {	-- Striking Back
 					["provider"] = { "n", 41853 },	-- Commander Stonebreaker
-					["coord"] = { 78.2, 20.5, 27 },
+					["coord"] = { 78.2, 20.5, DUN_MOROGH },
 					["sourceQuest"] = 26085,	-- Rallying the Defenders
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(315,   {	-- The Perfect Stout
 					["provider"] = { "n", 1374 },	-- Rejold Barleybrew
-					["coord"] = { 54.1, 51.1, 27 },
+					["coord"] = { 54.1, 51.1, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(24528, {	-- The Power of the Light
@@ -360,7 +360,7 @@ _.Zones =
 				}),
 				q(433,   { 	-- The Public Servant
 					["provider"] = { "n", 1977 },	-- Senator Mehr Stonehallow
-					["coord"] = { 75.9, 54.3, 27 },
+					["coord"] = { 75.9, 54.3, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["isYearly"] = true,
 					["g"] = {
@@ -378,19 +378,19 @@ _.Zones =
 				}),
 				q(25839, {	-- The Ultrasafe Personnel Launcher
 					["provider"] = { "n", 41363 },	-- Delber Cranktoggle
-					["coord"] = { 56.8, 47.1, 27 },
+					["coord"] = { 56.8, 47.1, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25838,	-- Help from Steelgrill's Depot
 				}),
 				q(28868, {	-- The View from Down Here
 					["provider"] = { "n", 50601 },	-- Snevik the Blade
-					["coord"] = { 62.5, 53.8, 27 },
+					["coord"] = { 62.5, 53.8, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25839,	-- The Ultrasafe Personnel Launcher
 				}),
 				q(432,   {	-- Those Blasted Troggs!
 					["provider"] = { "n", 1254 },	-- Foreman Stonebrow
-					["coord"] = { 76.3, 54.6, 27 },
+					["coord"] = { 76.3, 54.6, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(400,   {	-- Tools for Steelgrill
@@ -400,7 +400,7 @@ _.Zones =
 				}),
 				q(25986, {	-- Trouble at the Lake
 					["provider"] = { "n", 1977 },	-- Senator Mehr Stonehallow
-					["coord"] = { 75.8, 54.2, 27 },
+					["coord"] = { 75.8, 54.2, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = {

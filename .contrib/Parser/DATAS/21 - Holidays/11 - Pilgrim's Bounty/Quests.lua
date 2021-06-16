@@ -55,7 +55,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 			}),
 			q(14028, {	-- Cranberry Chutney (Alliance)
 				["provider"] = { "n", 34644 },	-- Edward Winslow
-				["maps"] = { 27, },	-- Dun Morogh
+				["maps"] = { DUN_MOROGH },
 				["sourceQuests"] = { 14024, },	-- Pumpkin Pie (Alliance)
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
@@ -86,7 +86,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 				["provider"] = { "n", 34708 },	-- Caitrin Ironkettle
 				["isDaily"] = true,
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 27, },	-- Dun Morogh
+				["maps"] = { DUN_MOROGH },
 				["g"] = {
 					i(46723),	-- Pilgrim's Hat
 					i(46800),	-- Pilgrim's Attire
@@ -104,7 +104,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 				["provider"] = { "n", 34708 },	-- Caitrin Ironkettle
 				["isDaily"] = true,
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 27, },	-- Dun Morogh
+				["maps"] = { DUN_MOROGH },
 				["g"] = {
 					i(46723),	-- Pilgrim's Hat
 					i(46800),	-- Pilgrim's Attire

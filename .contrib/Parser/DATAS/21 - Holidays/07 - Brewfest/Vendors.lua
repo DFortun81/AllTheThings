@@ -19,23 +19,23 @@ _.Holidays =
 				n(23521,  {	-- Anne Summers <Cheese Vendor>
 					["coord"] = { 56.4, 37.6, 24 },
 					["races"] = ALLIANCE_ONLY,
-					["maps"] = { 27 },	-- Dun Morogh
+					["maps"] = { DUN_MOROGH },
 					["g"] = bubbleDown({["u"] = 24}, {
 						i(34065),	-- Spiced Onion Cheese
 					}),
 				}),
 				n(23522,  {	-- Arlen Lochlan <Bread Vendor>
-					["coord"] = { 55.6, 38.0, 27 },
+					["coord"] = { 55.6, 38.0, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
-					["maps"] = { 27 },	-- Dun Morogh
+					["maps"] = { DUN_MOROGH },
 					["g"] = bubbleDown({["u"] = 24}, {
 						i(33043),	-- The Essential Brewfest Pretzel
 					}),
 				}),
 				n(23482,  {	-- Barleybrew Apprentice <Barleybrew Brew Vendor>
-					["coord"] = { 56.0, 38.0, 27 },
+					["coord"] = { 56.0, 38.0, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
-					["maps"] = { 27 },	-- Dun Morogh
+					["maps"] = { DUN_MOROGH },
 					["g"] = bubbleDown({["u"] = 24}, {
 						i(33030),	-- Barleybrew Clear
 						i(33029),	-- Barleybrew Dark
@@ -46,9 +46,9 @@ _.Holidays =
 				}),
 				n(23710,  {	-- Belbi Quikswitch <Token Redeemer>
 					["description"] = "Larkin Thunderbrew <Brew of the Month Club> in Ironforge also sells these items.",
-					["coord"] = { 56.3, 37.5, 27 },
+					["coord"] = { 56.3, 37.5, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
-					["maps"] = { 27 },	-- Dun Morogh
+					["maps"] = { DUN_MOROGH },
 					["g"] = {
 						n(-3198, {	-- Brewfest Garb
 							["u"] = 24,	-- Brewfest
@@ -366,9 +366,9 @@ _.Holidays =
 					},
 				}),
 				n(153574, {	-- Britta Steinheart <Chowdown Organizer>
-					["coord"] = { 54.8, 38.6, 27 },
+					["coord"] = { 54.8, 38.6, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
-					["maps"] = { 27 },	-- Dun Morogh
+					["maps"] = { DUN_MOROGH },
 					["g"] = bubbleDown({["u"] = 24}, {
 						i(169865, {	-- Brewfest Chowdown Trophy
 							["cost"] = { { "i", 169599, 5 }, },	-- 5x Chowdown Champion Token
@@ -399,10 +399,13 @@ _.Holidays =
 				}),
 				n(23511,  {	-- Gordok Brew Apprentice <Gordok Brew Vendor>
 					["coords"] = {
-						{ 55.6, 36.6, 27 },	-- Dun Morogh
+						{ 55.6, 36.6, DUN_MOROGH },
 						{ 40.9, 16.8, 1 },	-- Durotar
 					},
-					["maps"] = { 27, 1 },	-- Dun Morogh, Durotar
+					["maps"] = {
+						DUN_MOROGH,
+						1,	-- Durotar
+					},
 					["g"] = bubbleDown({["u"] = 24}, {
 						i(46403),	-- Chuganpug's Delight
 						i(138869),	-- Gordok Bock
@@ -412,9 +415,9 @@ _.Holidays =
 					}),
 				}),
 				n(23481,  {	-- Keiran Donoghue <Sausage Vendor>
-					["coord"] = { 55.33, 37.17, 27 },
+					["coord"] = { 55.33, 37.17, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
-					["maps"] = { 27 },	-- Dun Morogh
+					["maps"] = { DUN_MOROGH },
 					["g"] = bubbleDown({["u"] = 24}, {
 						i(34063),	-- Dried Sausage
 						i(138900, {	-- Gravil Goldbraid's Famous Sausage Hat (TOY!)
@@ -441,9 +444,9 @@ _.Holidays =
 					}),
 				}),
 				n(23510,  {	-- Thunderbrew Apprentice <Thunderbrew Brew Vendor>
-					["coord"] = { 56.6, 37.0, 27 },
+					["coord"] = { 56.6, 37.0, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
-					["maps"] = { 27 },	-- Dun Morogh
+					["maps"] = { DUN_MOROGH },
 					["g"] = bubbleDown({["u"] = 24}, {
 						i(138871),	-- Storming Saison
 						i(33031),	-- Thunder 45
