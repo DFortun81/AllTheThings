@@ -31,7 +31,7 @@ _.Zones =
 					}),
 				}),
 				ach(10398, {	-- Drum Circle
-					["description"] = "You need 5 people jumping on the drum on the lower floor of Thunder Totem. CANNOT be completed while you are on 'Assault on Thunder Totem'."
+					["description"] = "This achievement can be soloed since after 'Battle of Azeroth'. Repeatedly jump for 1-3 minutes in the middle ring on the lower floor of Thunder Totem. It CANNOT be completed while you are on 'Assault on Thunder Totem' and you must be able to hear the drum beats to know the achievement is working."
 				}),
 				ach(9696,  {	-- Family Familiar
 					["collectible"] = false,
