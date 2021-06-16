@@ -842,6 +842,7 @@ _.HiddenQuestTriggers =
 		q(50659),	-- Silithus - talk to Zidormi to phase into the past version of the map
 		q(49813),	-- Adventure Calls (lvl 60) - can trigger prior to level 60 if you accept a quest from the warboard
 		q(49860),	-- Adventure Calls (lvl 60) - can trigger prior to level 60 if you accept a quest from the warboard
+		q(42871),	-- Tome of Illusions - Azeroth
 		q(42873),	-- Tome of Illusions - Outland
 		q(42874),	-- Tome of Illusions - Northrend
 		q(42875),	-- Tome of Illusions - Cataclysm
@@ -1816,6 +1817,7 @@ _.HiddenQuestTriggers =
 		q(39713),	-- Tracking Quest. Pops immediately on new characters but no other info known. Possibly legendary ring related
 		q(34024),	-- Tracking Quest. This completes when you kill the Windfang Matriarch after helping Romuul.
 		q(33786),	-- ??????. This was completed around Fiona's caravan in Shadowmoon Valley - Draenor (not entirely sure what triggered it.)
+		q(52969),	-- Going through the Stormwind Portal to Stormshield while on the WoD timeline in Chromie time
 
 		-------------------
 		--    Legion     --
@@ -2419,10 +2421,6 @@ _.HiddenQuestTriggers =
 		-------------------
 		--      BFA      --
 		-------------------
-		--[[ All of these pop up with brand new characters. Something account-wide triggers these. Possibly related to certain kinds of transmog events
-		q(52969),	--
-		]]--
-
 		--	VARIOUS
 		q(47703),	-- triggered while on #47631, "Rendezvous with the Libation"
 		q(50225),	-- first kill of Ogmot the Mad
