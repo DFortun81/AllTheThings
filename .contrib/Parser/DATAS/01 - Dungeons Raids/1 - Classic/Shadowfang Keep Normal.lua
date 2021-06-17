@@ -5,7 +5,7 @@
 _.Instances = { tier(1, {	-- Classic
 	inst(64, { 	-- Shadowfang Keep
 		["coord"] = { 44.79, 67.82, 21 },	-- Shadowfang Keep, Silverpine Forest
-		["maps"] = { 310, 311, 312, 313, 314, 315, 316 },
+		["maps"] = { SHADOWFANG_KEEP, 311, 312, 313, 314, 315, 316 },
 		["lvl"] = 11,
 		["g"] = {
 			n(QUESTS, {

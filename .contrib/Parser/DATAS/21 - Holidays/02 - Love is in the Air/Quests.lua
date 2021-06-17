@@ -361,12 +361,12 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 			q(24745, {	-- Something is in the Air (and it Ain't Love) (A)
 				["provider"] = { "i", 50320 },	-- Faded Lovely Greeting Card (A)
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 310 },	-- Shadowfang Keep
+				["maps"] = { SHADOWFANG_KEEP },
 			}),
 			q(14483, {	-- Something is in the Air (and it Ain't Love) (H)
 				["provider"] = { "i", 49641 },	-- Faded Lovely Greeting Card (H)
 				["races"] = HORDE_ONLY,
-				["maps"] = { 310 },	-- Shadowfang Keep
+				["maps"] = { SHADOWFANG_KEEP },
 			}),
 			q(24655, {	-- Something Stinks (A)
 				["sourceQuests"] = { 24804 },	-- Uncommon Scents (A)
@@ -431,7 +431,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 				},
 				["provider"] = { "n", 38208 },	-- Investigator Fezzen Brasstacks
 				["isDaily"] = true,
-				["maps"] = { 310 },	-- Shadowfang Keep
+				["maps"] = { SHADOWFANG_KEEP },
 				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(8980,  {	-- Zinge's Assessment
