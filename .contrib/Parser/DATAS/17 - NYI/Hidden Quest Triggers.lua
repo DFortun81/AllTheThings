@@ -1119,6 +1119,7 @@ _.HiddenQuestTriggers =
 		q(12452),	-- Dragonblight - triggers when turning in "The Fate of the Ruby Dragonshrine". duplicate version of a quest during early development
 		q(12693),	-- Sholazar Basin - Wolvar Faction Choice Tracker
 		q(12694),	-- Sholazar Basin - Oracle Faction Choice Tracker
+		q(39783),	-- Battle Pet - Terky
 
 		-------------------
 		--   CATACLYSM   --
