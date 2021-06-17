@@ -276,7 +276,12 @@ settings.GetModeString = function(self)
 		for key,_ in pairs(GeneralSettingsBase.__index) do
 			if string.sub(key, 1, 6) == "Thing:" then
 				totalThingCount = totalThingCount + 1;
-				if settings:Get(key) then
+				if settings:Get(key) and
+					-- Quest Breadcrumbs only count when Quests are enabled
+					(key ~= "Thing:QuestBreadcrumbs" or settings:Get("Thing:Quests")) and
+					-- Heirloom Upgrades only count when Heirlooms are enabled
+					(key ~= "Thing:HeirloomUpgrades" or settings:Get("Thing:Heirlooms"))
+					then
 					thingCount = thingCount + 1;
 					table.insert(things, string.sub(key, 7));
 				end
@@ -319,7 +324,12 @@ settings.GetShortModeString = function(self)
 		for key,_ in pairs(GeneralSettingsBase.__index) do
 			if string.sub(key, 1, 6) == "Thing:" then
 				totalThingCount = totalThingCount + 1;
-				if settings:Get(key) then
+				if settings:Get(key) and
+					-- Quest Breadcrumbs only count when Quests are enabled
+					(key ~= "Thing:QuestBreadcrumbs" or settings:Get("Thing:Quests")) and
+					-- Heirloom Upgrades only count when Heirlooms are enabled
+					(key ~= "Thing:HeirloomUpgrades" or settings:Get("Thing:Heirlooms"))
+					then
 					thingCount = thingCount + 1;
 					table.insert(things, string.sub(key, 7));
 				end
