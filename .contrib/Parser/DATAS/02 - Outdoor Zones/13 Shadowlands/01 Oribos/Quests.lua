@@ -398,6 +398,7 @@ _.Zones =
 				q(63771, {	-- Fate's Reminder
 					["description"] = "Will be automatically offered to a character who choses NOT to Skip the Campaign in Shadowlands.",
 					["sourceQuests"] = { 62704 },	-- The Threads of Fate
+					["altQuests"] = { 62713 },	-- Becoming a Skip character will exclude this Quest from being available
 					["isBreadcrumb"] = true,
 				}),
 				q(62716, {	-- Re-Introductions
