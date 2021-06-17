@@ -176,6 +176,7 @@ _.Zones =
 					["provider"] = { "n", 108017 },	-- Torv Dubstomp
 				}),
 				q(39670, {	-- Critter Scatter Shot
+					["sourceQuests"] = { 39386 },	-- Procuring a Prototype
 					["coord"] = { 57.5, 56.6, 650 },
 					["provider"] = { "n", 96513 },	-- Razik Gazbolt
 				}),
