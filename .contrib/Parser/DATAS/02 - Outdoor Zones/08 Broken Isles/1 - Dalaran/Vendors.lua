@@ -1988,17 +1988,13 @@ _.Zones =
 				n(96979,  {	-- Bragund Brightlink <Mail Armor Merchant>
 					["coord"] = { 51.0, 73.5, 627 },
 					["sym"] = {
-						{"sub", "common_tier_vendor", 29523},	-- Bragund Brightlink <Mail Armor Merchant> (Dalaran Northrend)
+						{"sub", "common_vendor", 29523},	-- Bragund Brightlink <Mail Armor Merchant> (Dalaran Northrend)
 					},
 				}),
 				n(96479,  {	-- Breanni <Pet Supplies>
 					["coord"] = { 58.3, 39.4, 627 },
-					["g"] = {
-						i(44822),	-- Albino Snake (PET!)
-						i(46398),	-- Cat Carrier (Calico Cat) (PET!)
-						i(48120),	-- Obsidian Hatchling (PET!)
-						i(129826),	-- Nursery Spider (PET!)
-						i(44820),	-- Red Ribbon Pet Leash (TOY!)
+					["sym"] = {
+						{"sub", "common_vendor", 28951},	-- Breanni <Pet Supplies> (Dalaran Northrend)
 					},
 				}),
 				n(119484, {	-- Captain Roberts <Legion Elite Gladiator>
@@ -2840,19 +2836,8 @@ _.Zones =
 				}),
 				n(96484,  {	-- Clockwork Assistant <Jepetto's Companion>
 					["coord"] = { 43.4, 45.7, 627 },
-					["g"] = {
-						i(54436),	-- Blue Clockwork Rocket Bot (PET!)
-						i(54343),	-- Blue Crashin' Thrashin' Racer Controller (TOY!)
-						i(104324),	-- Foot Ball (TOY!)
-						i(137663),	-- Soft Foam Sword (TOY!)
-						i(104323),	-- The Swineskin (TOY!)
-						i(54438),	-- Tiny Blue Ragdoll (TOY!)
-						i(54437),	-- Tiny Green Ragdoll (TOY!)
-						i(44606),	-- Toy Train Set (TOY!)
-						i(95621, {	-- Warbot Ignition Key (PET!)
-							["cost"] = 5000000,	-- 500g
-						}),
-						i(45057),	-- Wind-Up Train Wreck (TOY!)
+					["sym"] = {
+						{"sub", "common_vendor", 29716},	-- Clockwork Assistant <Jepetto's Companion> (Dalaran Northrend)
 					},
 				}),
 				n(96976,  {	-- Cloth Merchant <Cloth Armor Merchant>
@@ -3150,20 +3135,11 @@ _.Zones =
 				}),
 				n(96483,  {	-- Jepetto Joybuzz <Toymaker>
 					["coord"] = { 43.6, 45.6, 627 },
+					["sym"] = {
+						{"sub", "common_vendor", 29716},	-- Clockwork Assistant <Jepetto's Companion> (Dalaran Northrend)
+					},
 					["g"] = {
-						i(54436),	-- Blue Clockwork Rocket Bot (PET!)
-						i(54343),	-- Blue Crashin' Thrashin' Racer Controller (TOY!)
 						i(129057),	-- Dalaran Disc (TOY!)
-						i(104324),	-- Foot Ball (TOY!)
-						i(137663),	-- Soft Foam Sword (TOY!)
-						i(104323),	-- The Swineskin (TOY!)
-						i(54438),	-- Tiny Blue Ragdoll (TOY!)
-						i(54437),	-- Tiny Green Ragdoll (TOY!)
-						i(44606),	-- Toy Train Set (TOY!)
-						i(95621, {	-- Warbot Ignition Key (PET!)
-							["cost"] = 5000000,	-- 500g
-						}),
-						i(45057),	-- Wind-Up Train Wreck (TOY!)
 					},
 				}),
 				n(93524,  {	-- Lalla Brightweave <Tailoring Supplies>
@@ -5317,185 +5293,32 @@ _.Zones =
 				}),
 				n(96980,  {	-- Matilda Brightlink <Mail Armor Merchant>
 					["coord"] = { 51.3, 73.4, 627 },
-					["g"] = {
-						i(50114),	-- Ahn'Kahar Blood Hunter's Handguards
-						i(50115),	-- Ahn'Kahar Blood Hunter's Headpiece
-						i(50116),	-- Ahn'Kahar Blood Hunter's Legguards
-						i(50117),	-- Ahn'Kahar Blood Hunter's Spaulders
-						i(50118),	-- Ahn'Kahar Blood Hunter's Tunic
-						i(50830),	-- Frost Witch's Chestguard
-						i(50832),	-- Frost Witch's Faceguard
-						i(50842),	-- Frost Witch's Gloves
-						i(50831),	-- Frost Witch's Grips
-						i(50836),	-- Frost Witch's Handguards
-						i(50841),	-- Frost Witch's Hauberk
-						i(50837),	-- Frost Witch's Headpiece
-						i(50843),	-- Frost Witch's Helm
-						i(50844),	-- Frost Witch's Kilt
-						i(50838),	-- Frost Witch's Legguards
-						i(50834),	-- Frost Witch's Shoulderguards
-						i(50845),	-- Frost Witch's Shoulderpads
-						i(50839),	-- Frost Witch's Spaulders
-						i(50835),	-- Frost Witch's Tunic
-						i(50833),	-- Frost Witch's War-Kilt
-						a(i(48341)),	-- Nobundo's Chestguard of Conquest
-						a(i(48343)),	-- Nobundo's Faceguard of Conquest
-						a(i(48312)),	-- Nobundo's Gloves of Conquest
-						a(i(48342)),	-- Nobundo's Grips of Conquest
-						a(i(48284)),	-- Nobundo's Handguards of Conquest
-						a(i(48310)),	-- Nobundo's Hauberk of Conquest
-						a(i(48280)),	-- Nobundo's Headpiece of Conquest
-						a(i(48313)),	-- Nobundo's Helm of Conquest
-						a(i(48314)),	-- Nobundo's Kilt of Conquest
-						a(i(48282)),	-- Nobundo's Legguards of Conquest
-						a(i(48345)),	-- Nobundo's Shoulderguards of Conquest
-						a(i(48315)),	-- Nobundo's Shoulderpads of Conquest
-						a(i(48283)),	-- Nobundo's Spaulders of Conquest
-						a(i(48281)),	-- Nobundo's Tunic of Conquest
-						a(i(48344)),	-- Nobundo's War-Kilt of Conquest
-						i(51154),	-- Sanctified Ahn'Kahar Blood Hunter's Handguards (N)
-						i(51285),	-- Sanctified Ahn'Kahar Blood Hunter's Handguards (H)
-						i(51153),	-- Sanctified Ahn'Kahar Blood Hunter's Headpiece (N)
-						i(51286),	-- Sanctified Ahn'Kahar Blood Hunter's Headpiece (H)
-						i(51152),	-- Sanctified Ahn'Kahar Blood Hunter's Legguards (N)
-						i(51287),	-- Sanctified Ahn'Kahar Blood Hunter's Legguards (H)
-						i(51151),	-- Sanctified Ahn'Kahar Blood Hunter's Spaulders (N)
-						i(51288),	-- Sanctified Ahn'Kahar Blood Hunter's Spaulders (H)
-						i(51150),	-- Sanctified Ahn'Kahar Blood Hunter's Tunic (N)
-						i(51289),	-- Sanctified Ahn'Kahar Blood Hunter's Tunic (H)
-						i(51195),	-- Sanctified Frost Witch's Chestguard (N)
-						i(51244),	-- Sanctified Frost Witch's Chestguard (H)
-						i(51197),	-- Sanctified Frost Witch's Faceguard (N)
-						i(51242),	-- Sanctified Frost Witch's Faceguard (H)
-						i(51201),	-- Sanctified Frost Witch's Gloves (N)
-						i(51238),	-- Sanctified Frost Witch's Gloves (H)
-						i(51196),	-- Sanctified Frost Witch's Grips (N)
-						i(51243),	-- Sanctified Frost Witch's Grips (H)
-						i(51191),	-- Sanctified Frost Witch's Handguards (N)
-						i(51248),	-- Sanctified Frost Witch's Handguards (H)
-						i(51200),	-- Sanctified Frost Witch's Hauberk (N)
-						i(51239),	-- Sanctified Frost Witch's Hauberk (H)
-						i(51192),	-- Sanctified Frost Witch's Headpiece (N)
-						i(51247),	-- Sanctified Frost Witch's Headpiece (H)
-						i(51202),	-- Sanctified Frost Witch's Helm (N)
-						i(51237),	-- Sanctified Frost Witch's Helm (H)
-						i(51203),	-- Sanctified Frost Witch's Kilt (N)
-						i(51236),	-- Sanctified Frost Witch's Kilt (H)
-						i(51193),	-- Sanctified Frost Witch's Legguards (N)
-						i(51246),	-- Sanctified Frost Witch's Legguards (H)
-						i(51199),	-- Sanctified Frost Witch's Shoulderguards (N)
-						i(51240),	-- Sanctified Frost Witch's Shoulderguards (H)
-						i(51204),	-- Sanctified Frost Witch's Shoulderpads (N)
-						i(51235),	-- Sanctified Frost Witch's Shoulderpads (H)
-						i(51194),	-- Sanctified Frost Witch's Spaulders (N)
-						i(51245),	-- Sanctified Frost Witch's Spaulders (H)
-						i(51190),	-- Sanctified Frost Witch's Tunic (N)
-						i(51249),	-- Sanctified Frost Witch's Tunic (H)
-						i(51198),	-- Sanctified Frost Witch's War-Kilt (N)
-						i(51241),	-- Sanctified Frost Witch's War-Kilt (H)
-						h(i(48366)),	-- Thrall's Chestguard of Conquest
-						h(i(48368)),	-- Thrall's Faceguard of Conquest
-						h(i(48337)),	-- Thrall's Gloves of Conquest
-						h(i(48367)),	-- Thrall's Grips of Conquest
-						h(i(48296)),	-- Thrall's Handguards of Conquest
-						h(i(48336)),	-- Thrall's Hauberk of Conquest
-						h(i(48297)),	-- Thrall's Headpiece of Conquest
-						h(i(48338)),	-- Thrall's Helm of Conquest
-						h(i(48339)),	-- Thrall's Kilt of Conquest
-						h(i(48298)),	-- Thrall's Legguards of Conquest
-						h(i(48370)),	-- Thrall's Shoulderguards of Conquest
-						h(i(48340)),	-- Thrall's Shoulderpads of Conquest
-						h(i(48299)),	-- Thrall's Spaulders of Conquest
-						h(i(48295)),	-- Thrall's Tunic of Conquest
-						h(i(48369)),	-- Thrall's War-Kilt of Conquest
-						a(i(48254)),	-- Windrunner's Handguards of Conquest (A)
-						h(i(48276)),	-- Windrunner's Handguards of Conquest (H)
-						a(i(48250)),	-- Windrunner's Headpiece of Conquest (A)
-						h(i(48277)),	-- Windrunner's Headpiece of Conquest (H)
-						a(i(48252)),	-- Windrunner's Legguards of Conquest (A)
-						h(i(48278)),	-- Windrunner's Legguards of Conquest (H)
-						a(i(48253)),	-- Windrunner's Spaulders of Conquest (A)
-						h(i(48279)),	-- Windrunner's Spaulders of Conquest (H)
-						a(i(48251)),	-- Windrunner's Tunic of Conquest (A)
-						h(i(48275)),	-- Windrunner's Tunic of Conquest (H)
+					["sym"] = {
+						{"sub", "common_vendor", 35500},	--  Matilda Brightlink <Mail Armor Merchant> (Dalaran Northrend)
 					},
 				}),
 				n(92489,  {	-- Mei Francis <Exotic Mounts>
 					["coord"] = { 57.3, 42.4, 627 },
-					["g"] = {
-						i(44690, {	-- Armored Blue Wind Rider
-							["races"] = HORDE_ONLY,
-							["cost"] = 20000000,	-- 2,000g
-						}),
-						i(44689, {	-- Armored Snowy Gryphon
-							["races"] = ALLIANCE_ONLY,
-							["cost"] = 20000000,	-- 2,000g
-						}),
-						h(i(25475)),	-- Blue Wind Rider
-						a(i(25471)),	-- Ebon Gryphon
-						a(i(25470)),	-- Golden Gryphon
-						h(i(25476)),	-- Green Wind Rider
-						i(44225, {	-- Reins of the Armored Brown Bear
-							["races"] = ALLIANCE_ONLY,
-							["cost"] = 7500000,	-- 750g
-						}),
-						i(44226, {	-- Reins of the Armored Brown Bear
-							["races"] = HORDE_ONLY,
-							["cost"] = 7500000,	-- 750g
-						}),
-						i(44235, {	-- Reins of the Traveler's Tundra Mammoth
-							["races"] = ALLIANCE_ONLY,
-							["cost"] = 200000000,	-- 20,000g
-						}),
-						i(44234, {	-- Reins of the Traveler's Tundra Mammoth
-							["races"] = HORDE_ONLY,
-							["cost"] = 200000000,	-- 20,000g
-						}),
-						i(44230, {	-- Reins of the Wooly Mammoth
-							["races"] = ALLIANCE_ONLY,
-							["cost"] = 100000000,	-- 10,000g
-						}),
-						i(44231, {	-- Reins of the Wooly Mammoth
-							["races"] = HORDE_ONLY,
-							["cost"] = 100000000,	-- 10,000g
-						}),
-						a(i(25472)),	-- Snowy Gryphon
-						a(i(25473)),	-- Swift Blue Gryphon
-						a(i(25528)),	-- Swift Green Gryphon
-						h(i(25531)),	-- Swift Green Wind Rider
-						a(i(25529)),	-- Swift Purple Gryphon
-						h(i(25533)),	-- Swift Purple Wind Rider
-						a(i(25527)),	-- Swift Red Gryphon
-						h(i(25477)),	-- Swift Red Wind Rider
-						h(i(25532)),	-- Swift Yellow Wind Rider
-						h(i(25474)),	-- Tawny Wind Rider
+					["sym"] = {
+						{"sub", "common_vendor", 32216},	-- Mei Francis <Exotic Mounts> (Dalaran Northrend)
 					},
 				}),
 				n(96987,  {	-- Norvin Alderman <Cloaks>
 					["coord"] = { 36.9, 55.8, 627 },
-					["g"] = {
-						i(40724),	-- Cloak of Kea Feathers
-						i(40723),	-- Disguise of the Kumiho
-						i(50468),	-- Drape of the Violet Tower
-						i(40721),	-- Hammerhead Sharkskin Cloak
-						i(50467),	-- Might of the Ocean Serpent
-						i(40722),	-- Platinum Mesh Cloak
-						i(50470),	-- Recovered Scarlet Onslaught Cape
-						i(50466),	-- Sentinel's Winter Cloak
-						i(50469),	-- Volde's Cloak of the Night Sky
+					["sym"] = {
+						{"sub", "common_vendor", 29495},	-- Norvin Alderman <Cloaks> (Dalaran Northrend)
 					},
 				}),
 				n(97001,  {	-- Orton Bennet <Offhand Offerings>
 					["coord"] = { 51.5, 55.5, 627 },
-					["g"] = {
-						i(40699),	-- Handbook of Obscure Remedies
-						i(40698),	-- Ward of the Violet Citadel
+					["sym"] = {
+						{"sub", "common_vendor", 29527},	-- Orton Bennet <Offhand Offerings> (Dalaran Northrend)
 					},
 				}),
 				n(96975,  {	-- Paldesse <Cloth Armor Merchant>
 					["coord"] = { 37.5, 56.1, 627 },
 					["sym"] = {
-						{"sub", "common_tier_vendor", 28995},	--  Paldesse <Cloth Armor Merchant> (Dalaran Northrend)
+						{"sub", "common_vendor", 28995},	--  Paldesse <Cloth Armor Merchant> (Dalaran Northrend)
 					},
 				}),
 				n(92457,  {	-- Patricia Egan <Alchemy Supplier>
@@ -5532,107 +5355,8 @@ _.Zones =
 				}),
 				n(96978,  {	-- Rafael Langrom <Leather Armor Merchant>
 					["coord"] = { 50.8, 72.0, 627 },
-					["g"] = {
-						h(i(48243)),	-- Garona's Breastplate of Conquest
-						h(i(48244)),	-- Garona's Gauntlets of Conquest
-						h(i(48245)),	-- Garona's Helmet of Conquest
-						h(i(48246)),	-- Garona's Legplates of Conquest
-						h(i(48247)),	-- Garona's Pauldrons of Conquest
-						i(50821),	-- Lasherweave Cover
-						i(50107),	-- Lasherweave Gauntlets
-						i(50822),	-- Lasherweave Gloves
-						i(50827),	-- Lasherweave Handgrips
-						i(50826),	-- Lasherweave Headguard
-						i(50108),	-- Lasherweave Helmet
-						i(50825),	-- Lasherweave Legguards
-						i(50109),	-- Lasherweave Legplates
-						i(50819),	-- Lasherweave Mantle
-						i(50113),	-- Lasherweave Pauldrons
-						i(50828),	-- Lasherweave Raiment
-						i(50106),	-- Lasherweave Robes
-						i(50824),	-- Lasherweave Shoulderpads
-						i(50820),	-- Lasherweave Trousers
-						i(50823),	-- Lasherweave Vestment
-						a(i(48158)),	-- Malfurion's Cover of Conquest
-						a(i(48162)),	-- Malfurion's Gloves of Conquest
-						a(i(48213)),	-- Malfurion's Handgrips of Conquest
-						a(i(48132)),	-- Malfurion's Handguards of Conquest
-						a(i(48214)),	-- Malfurion's Headguard of Conquest
-						a(i(48102)),	-- Malfurion's Headpiece of Conquest
-						a(i(48130)),	-- Malfurion's Leggings of Conquest
-						a(i(48215)),	-- Malfurion's Legguards of Conquest
-						a(i(48161)),	-- Malfurion's Mantle of Conquest
-						a(i(48216)),	-- Malfurion's Raiments of Conquest
-						a(i(48129)),	-- Malfurion's Robe of Conquest
-						a(i(48217)),	-- Malfurion's Shoulderpads of Conquest
-						a(i(48131)),	-- Malfurion's Spaulders of Conquest
-						a(i(48160)),	-- Malfurion's Trousers of Conquest
-						a(i(48159)),	-- Malfurion's Vestments of Conquest
-						h(i(48184)),	-- Runetotem's Cover of Conquest
-						h(i(48183)),	-- Runetotem's Gloves of Conquest
-						h(i(48192)),	-- Runetotem's Handgrips of Conquest
-						h(i(48153)),	-- Runetotem's Handguards of Conquest
-						h(i(48188)),	-- Runetotem's Headguard of Conquest
-						h(i(48154)),	-- Runetotem's Headpiece of Conquest
-						h(i(48155)),	-- Runetotem's Leggings of Conquest
-						h(i(48190)),	-- Runetotem's Legguards of Conquest
-						h(i(48187)),	-- Runetotem's Mantle of Conquest
-						h(i(48189)),	-- Runetotem's Raiments of Conquest
-						h(i(48156)),	-- Runetotem's Robe of Conquest
-						h(i(48191)),	-- Runetotem's Shoulderpads of Conquest
-						h(i(48157)),	-- Runetotem's Spaulders of Conquest
-						h(i(48185)),	-- Runetotem's Trousers of Conquest
-						h(i(48186)),	-- Runetotem's Vestments of Conquest
-						i(51149),	-- Sanctified Lasherweave Cover (N)
-						i(51290),	-- Sanctified Lasherweave Cover (H)
-						i(51138),	-- Sanctified Lasherweave Gauntlets (N)
-						i(51301),	-- Sanctified Lasherweave Gauntlets (H)
-						i(51148),	-- Sanctified Lasherweave Gloves (N)
-						i(51291),	-- Sanctified Lasherweave Gloves (H)
-						i(51144),	-- Sanctified Lasherweave Handgrips (N)
-						i(51295),	-- Sanctified Lasherweave Handgrips (H)
-						i(51143),	-- Sanctified Lasherweave Headguard (N)
-						i(51296),	-- Sanctified Lasherweave Headguard (H)
-						i(51137),	-- Sanctified Lasherweave Helmet (N)
-						i(51302),	-- Sanctified Lasherweave Helmet (H)
-						i(51142),	-- Sanctified Lasherweave Legguards (N)
-						i(51297),	-- Sanctified Lasherweave Legguards (H)
-						i(51136),	-- Sanctified Lasherweave Legplates (N)
-						i(51303),	-- Sanctified Lasherweave Legplates (H)
-						i(51147),	-- Sanctified Lasherweave Mantle (N)
-						i(51292),	-- Sanctified Lasherweave Mantle (H)
-						i(51135),	-- Sanctified Lasherweave Pauldrons (N)
-						i(51304),	-- Sanctified Lasherweave Pauldrons (H)
-						i(51141),	-- Sanctified Lasherweave Raiment (N)
-						i(51298),	-- Sanctified Lasherweave Raiment (H)
-						i(51139),	-- Sanctified Lasherweave Robes (N)
-						i(51300),	-- Sanctified Lasherweave Robes (H)
-						i(51140),	-- Sanctified Lasherweave Shoulderpads (N)
-						i(51299),	-- Sanctified Lasherweave Shoulderpads (H)
-						i(51146),	-- Sanctified Lasherweave Trousers (N)
-						i(51293),	-- Sanctified Lasherweave Trousers (H)
-						i(51145),	-- Sanctified Lasherweave Vestment (N)
-						i(51294),	-- Sanctified Lasherweave Vestment (H)
-						i(51189),	-- Sanctified Shadowblade Breastplate (N)
-						i(51250),	-- Sanctified Shadowblade Breastplate (H)
-						i(51188),	-- Sanctified Shadowblade Gauntlets (N)
-						i(51251),	-- Sanctified Shadowblade Gauntlets (H)
-						i(51187),	-- Sanctified Shadowblade Helmet (N)
-						i(51252),	-- Sanctified Shadowblade Helmet (H)
-						i(51186),	-- Sanctified Shadowblade Legplates (N)
-						i(51253),	-- Sanctified Shadowblade Legplates (H)
-						i(51185),	-- Sanctified Shadowblade Pauldrons (N)
-						i(51254),	-- Sanctified Shadowblade Pauldrons (H)
-						i(50087),	-- Shadowblade Breastplate
-						i(50088),	-- Shadowblade Gauntlets
-						i(50089),	-- Shadowblade Helmet
-						i(50090),	-- Shadowblade Legplates
-						i(50105),	-- Shadowblade Pauldrons
-						a(i(48219)),	-- VanCleef's Breastplate of Conquest
-						a(i(48222)),	-- VanCleef's Gauntlets of Conquest
-						a(i(48218)),	-- VanCleef's Helmet of Conquest
-						a(i(48220)),	-- VanCleef's Legplates of Conquest
-						a(i(48221)),	-- VanCleef's Pauldrons of Conquest
+					["sym"] = {
+						{"sub", "common_vendor", 35497},	-- Rafael Langrom <Leather Armor Merchant> (Dalaran Northrend)
 					},
 				}),
 				n(93521,  {	-- Ranid Glowergold <Leatherworking & Skinning Supplies>
@@ -6589,14 +6313,14 @@ _.Zones =
 				}),
 				n(97011,  {	-- Valaden Silverblade <Sword Merchant>
 					["coord"] = { 54.1, 63.2, 627 },
-					["g"] = {
-						i(40703),	-- Grasscutter
+					["sym"] = {
+						{"sub", "common_vendor", 28991},	--  Valaden Silverblade <Sword Merchant> (Dalaran Northrend)
 					},
 				}),
 				n(96977,  {	-- Valerie Langrom <Leather Armor Merchant>
 					["coord"] = { 51.1, 72.7, 627 },
 					["sym"] = {
-						{"sub", "common_tier_vendor", 28992},	-- Valerie Langrom <Leather Armor Merchant> (Dalaran Northrend)
+						{"sub", "common_vendor", 28992},	-- Valerie Langrom <Leather Armor Merchant> (Dalaran Northrend)
 					},
 				}),
 				n(120687, {	-- Violet Shadowmend <Gladiator Quartermaster> -- Horde
@@ -7103,8 +6827,8 @@ _.Zones =
 				}),
 				n(97012,  {	-- Wanda Chanter
 					["coord"] = { 48.6, 73.8, 627 },
-					["g"] = {
-						i(47658),	-- Brimstone Igniter
+					["sym"] = {
+						{"sub", "common_vendor", 28994},	--  Wanda Chanter (Dalaran Northrend)
 					},
 				}),
 				n(107109, {	-- Xur'ios <Vaultkeeper of the Void>

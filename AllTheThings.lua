@@ -2408,7 +2408,7 @@ subroutines = {
 			-- Timothy Jones <Jewelcrafting Trainer> Northrend Jewelcrafting
 		}
 	end,
-	["common_tier_vendor"] = function(npcID)
+	["common_vendor"] = function(npcID)
 		return {
 			{"select", "creatureID", npcID},	-- Main Vendor
 			{"pop"},	-- Remove Main Vendor and push his children into the processing queue.
