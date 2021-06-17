@@ -11,6 +11,8 @@ _.Zones =
 					["provider"] = { "n", 68586 },	-- Grand Magister Rommath
 					["races"] = { BLOODELF, ORC },
 					["classes"] = { WARRIOR, WARLOCK },
+					["sourceQuest"] = 32412,
+					["description"] = "To be able to pick up this quest, head to Domination Point in Krasarang Wilds and take the flightpath back to Dalaran."
 				}),
 				--[[
 				q(32406, {	-- A Tactical Assault
