@@ -303,7 +303,10 @@ _.Zones =
 					},
 				}),
 				q(34582, {	-- Finding a Foothold
-					["sourceQuests"] = { 34575 },	-- Step Three: Prophet!
+					["sourceQuests"] = { 
+						34575,	-- Step Three: Prophet!
+						49562 	-- Hero's Call: Shadowmoon Valley!
+					},	
 					["coord"] = { 26.9, 8.00, 539 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 79206 },	-- Prophet Velen
