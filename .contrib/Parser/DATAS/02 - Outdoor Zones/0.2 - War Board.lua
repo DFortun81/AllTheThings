@@ -462,6 +462,7 @@ _.Zones =
 			q(28550, {	-- Hero's Call: Southern Barrens! (breadcrumb quest for 24862) (max level 33)
 				["isBreadcrumb"] = true,
 				["lvl"] = 25,
+                                                                           ["description"] = "This quest needs to be accepted from the 'Adventure Guide' and not the 'Hero's Call Board'."
 			}),
 			q(28551, {	-- Hero's Call: Southern Barrens!
 				["isBreadcrumb"] = true,
