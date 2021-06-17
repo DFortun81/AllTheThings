@@ -9,7 +9,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 			IRONFORGE,
 			ORGRIMMAR,
 			SILVERMOON_CITY,
-			84,		-- Stormwind
+			STORMWIND_CITY,
 			THE_EXODAR,
 			THUNDER_BLUFF,
 			90,		-- Undercity

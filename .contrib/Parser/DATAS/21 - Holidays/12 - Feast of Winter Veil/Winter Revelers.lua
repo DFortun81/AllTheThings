@@ -67,20 +67,20 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 								["coord"] = { 67.40, 47.41, DUSTWALLOW_MARSH },
 							}),
 							crit(4, {	-- Brother Kristoff in Stormwind
-								["coord"] = { 55.04, 54.20, 84 },
+								["coord"] = { 55.04, 54.20, STORMWIND_CITY },
 							}),
 							crit(5, {	-- Brother Joshua in Stormwind
-								["coord"] = { 49.50, 45.22, 84 },
+								["coord"] = { 49.50, 45.22, STORMWIND_CITY },
 							}),
 							crit(6, {	-- Brother Crowley in Stormwind
 								["description"] = "He is in the basement.",
-								["coord"] = { 52.60, 43.93, 84 },
+								["coord"] = { 52.60, 43.93, STORMWIND_CITY },
 							}),
 							crit(7, {	-- Brother Cassius in Stormwind
-								["coord"] = { 52.42, 45.80, 84 },
+								["coord"] = { 52.42, 45.80, STORMWIND_CITY },
 							}),
 							crit(8, {	-- Brother Benjamin in Stormwind
-								["coord"] = { 51.8, 46.8, 84 },
+								["coord"] = { 51.8, 46.8, STORMWIND_CITY },
 							}),
 						},
 					}),

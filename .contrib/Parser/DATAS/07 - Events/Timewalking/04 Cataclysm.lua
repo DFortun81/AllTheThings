@@ -21,7 +21,7 @@ _.WorldEvents =
 				}),
 				n(101759, {	-- Kiatke <Timewalking Vendor>
 					["maps"] = {
-						84,	-- Stormwind City
+						STORMWIND_CITY,
 						ORGRIMMAR,
 					},
 					["g"] = {

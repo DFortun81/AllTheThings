@@ -15,7 +15,7 @@ _.Factions =
 			{ 70.2, 14.7, 1161 },	-- Perry Charlton [Boralus]
 			{ 37.1, 63.3, THUNDER_BLUFF },		-- Randah Songhorn
 			{ 58.7, 46.4, SHATTRATH_CITY },	-- Riha
-			{ 64.1, 77.0, 84 },		-- Shay Pressler [Stormwind]
+			{ 64.1, 77.0, STORMWIND_CITY },	-- Shay Pressler
 			{ 36.3, 85.7, IRONFORGE },	-- Steeg Haskell
 			{ 64.7, 37.6, 89 },		-- Velia Moonbow [Darnassus]
 			{ 58.0, 43.6, 1163 },	-- Ulla Skycloven [Dazar'alor]
@@ -30,7 +30,7 @@ _.Factions =
 			THE_EXODAR,
 			SHATTRATH_CITY,
 			SILVERMOON_CITY,
-			84,		-- Stormwind
+			STORMWIND_CITY,
 			THUNDER_BLUFF,
 			90,		-- Undercity
 		},

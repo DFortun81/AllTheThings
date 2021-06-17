@@ -22,8 +22,8 @@ _.Zones =
 					},
 					["classes"] = { DRUID },
 					["coords"] = {
-						{ 27.6, 50.0, 84 },	-- Sheldras Moontree (Stormwind)
-						{ 57.6, 24.8, 84 },	-- Celestine of the Harvest (Stormwind)
+						{ 27.6, 50.0, STORMWIND_CITY },	-- Sheldras Moontree
+						{ 57.6, 24.8, STORMWIND_CITY },	-- Celestine of the Harvest
 					},
 					["races"] = ALLIANCE_ONLY,
 				}),

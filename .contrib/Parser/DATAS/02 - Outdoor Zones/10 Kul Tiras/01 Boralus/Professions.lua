@@ -452,7 +452,7 @@ _.Zones =
 					}),
 					q(55230, {	-- Telonis' Prized Leather
 						["provider"] = { "n", 151287 },	-- Telonis
-						["coord"] = { 42.6, 60.6, 84 },
+						["coord"] = { 42.6, 60.6, STORMWIND_CITY },
 						["sourceQuest"] = 55228,	-- The Audition (A)
 						["requireSkill"] = LEATHERWORKING,
 						["races"] = ALLIANCE_ONLY,

@@ -17,7 +17,7 @@ _.Zones =
 			SHATTRATH_CITY,
 			IRONFORGE,
 			90,		-- Undercity
-			84,		-- Stormwind City
+			STORMWIND_CITY,
 			89,		-- Darnassus
 			THUNDER_BLUFF,
 		},
@@ -30,7 +30,7 @@ _.Zones =
 			{ 59.01, 46.58, SHATTRATH_CITY },	-- Linsa
 			{ 36.45, 85.32, IRONFORGE },	-- Lyesa Steelbrow
 			{ 69.33, 44.82, 90 },	-- Merill Pleasance [Undercity]
-			{ 64.06, 77.41, 84 },	-- Rebecca Laughlin [Stormwind City]
+			{ 64.06, 77.41, STORMWIND_CITY },	-- Rebecca Laughlin
 			{ 64.58, 38.09, 89 },	-- Shalumon [Darnassus]
 			{ 54.08, 57.22, THUNDER_BLUFF },	-- Thrumn
 		},

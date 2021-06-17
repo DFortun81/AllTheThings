@@ -8,7 +8,7 @@ _.GearSets =
 		gs(1803, {	-- Heritage of the Bronzebeard
 			q(53838, {	-- Keep Yer Feet On The Ground
 				["provider"] = { "n", 146988 },	-- Digger Golad
-				["coord"] = { 54.6, 18.0, 84 }, -- Stormwind City
+				["coord"] = { 54.6, 18.0, STORMWIND_CITY },
 				["races"] = { DWARF },
 				["minReputation"] = { 47, EXALTED },
 			}),

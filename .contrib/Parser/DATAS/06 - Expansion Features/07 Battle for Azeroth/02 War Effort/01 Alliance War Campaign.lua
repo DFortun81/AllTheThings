@@ -996,9 +996,9 @@ _.ExpansionFeatures =
 						q(53098, {	-- Champion: Shandris Feathermoon
 							["provider"] = { "n", 141291 },	-- Shandris Feathermoon
 							["races"] = ALLIANCE_ONLY,
-							["maps"] = { 84 },	-- Stormwind City
+							["maps"] = { STORMWIND_CITY },
 							-- ^This puts just this quest in SW.  It looks weird without context, but the only alternative I can think of is attaching the SW map at the very beginning of the achievement with the Boralus map, which would list the entirety of Ready for War in SW, which doesn't make much sense.
-							["coord"] = { 85.7, 31.7, 84 },	-- Stormwind City
+							["coord"] = { 85.7, 31.7, STORMWIND_CITY },
 							["sourceQuests"] = { 52790 },	-- An End to the Killing
 							["lvl"] = 120,
 							["g"] = {
@@ -1460,13 +1460,13 @@ _.ExpansionFeatures =
 						q(53849, {	-- Waning Hope
 							["sourceQuests"] = { 53847 },	-- On Whispered Winds
 							["provider"] = { "n", 146050 },	-- Maiev Shadowsong
-							["coord"] = { 86.6, 35.7, 84 },
+							["coord"] = { 86.6, 35.7, STORMWIND_CITY },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(53988, {	-- Shores of Fate
 							["sourceQuests"] = { 53849 },	-- Waning Hope
 							["provider"] = { "n", 146050 },	-- Maiev Shadowsong
-							["coord"] = { 86.6, 35.7, 84 },
+							["coord"] = { 86.6, 35.7, STORMWIND_CITY },
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(53989, {	-- Hope
@@ -1482,7 +1482,7 @@ _.ExpansionFeatures =
 							["races"] = ALLIANCE_ONLY,
 						}),
 						q(53990, {	-- In Darkest Night
-							["coord"] = { 86.6, 35.7, 84 },
+							["coord"] = { 86.6, 35.7, STORMWIND_CITY },
 							["races"] = ALLIANCE_ONLY,
 							["provider"] = { "n", 146050 },	-- Maiev Shadowsong
 							["sourceQuests"] = {
@@ -1510,10 +1510,10 @@ _.ExpansionFeatures =
 						}),
 						q(55783, {	-- Stay of Execution
 							["sourceQuests"] = { 55784 },	-- Payment in Kind
-							["coord"] = { 85.7, 31.7, 84 },	-- Stormwind
+							["coord"] = { 85.7, 31.7, STORMWIND_CITY },
 							["races"] = ALLIANCE_ONLY,
 							["maps"] = {
-								84,		-- Stormwind
+								STORMWIND_CITY,
 								1479,	-- Baine Rescue (Scenario)
 							},
 							["lvl"] = 120,

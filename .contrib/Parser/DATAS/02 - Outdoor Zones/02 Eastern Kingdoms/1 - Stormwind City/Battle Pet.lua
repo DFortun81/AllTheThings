@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(84, {	-- Stormwind City
+		m(STORMWIND_CITY, {
 			filter(101, {	-- Pet Battle
 				p(378, {	-- Rabbit
 					["crs"] = { 61080 },	-- Rabbit
@@ -20,7 +20,7 @@ _.Zones =
 					q(32008, {	-- Audrey Burnhep
 						["isBreadcrumb"] = true,
 						["provider"] = { "n", 63596 },	-- Audrey Burnhelp
-						["coord"] = { 69.2, 25.0, 84 },
+						["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 						["races"] = ALLIANCE_ONLY,
 						["DisablePartySync"] = true,
 						["altQuests"] = {
@@ -67,7 +67,7 @@ _.Zones =
 					q(31966, {	-- Battle Pet Tamers: Cataclysm
 						["altQuests"] = { 31967 },
 						["provider"] = { "n", 63596 },	-- Audrey Burnhelp
-						["coord"] = { 69.2, 25.0, 84 },
+						["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 31984,	-- A Brief Reprieve
 						["g"] = {
@@ -77,7 +77,7 @@ _.Zones =
 					q(31902, {	-- Battle Pet Tamers: Eastern Kingdoms
 						["altQuests"] = { 31903 },	-- Battle Pet Tamers: Eastern Kingdoms (Horde version, since only one can be completed per account and Blizz doesn't check it off, apparently)
 						["provider"] = { "n", 63596 },	-- Audrey Burnhelp
-						["coord"] = { 69.2, 25.0, 84 },
+						["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 31917,	-- A Tamer's Homecoming
 						["g"] = {
@@ -87,7 +87,7 @@ _.Zones =
 					q(31889, {	-- Battle Pet Tamers: Kalimdor
 						["altQuests"] = { 31981 },
 						["provider"] = { "n", 63596 },	-- Audrey Burnhelp
-						["coord"] = { 69.2, 25.0, 84 },
+						["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							i(89125),	-- Sack of Pet Supplies
@@ -96,7 +96,7 @@ _.Zones =
 					q(31927, {	-- Battle Pet Tamers: Northrend
 						["altQuests"] = { 31929 },
 						["provider"] = { "n", 63596 },	-- Audrey Burnhelp
-						["coord"] = { 69.2, 25.0, 84 },
+						["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 31981,	-- Exceeding Expectations
 						["g"] = {
@@ -106,7 +106,7 @@ _.Zones =
 					q(31919, {	-- Battle Pet Tamers: Outland
 						["altQuests"] = { 31921 },
 						["provider"] = { "n", 63596 },	-- Audrey Burnhelp
-						["coord"] = { 69.2, 25.0, 84 },
+						["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuests"] = {
 							31975,	-- The Returning Champion
@@ -119,7 +119,7 @@ _.Zones =
 					q(31930, {	-- Battle Pet Tamers: Pandaria
 						["altQuests"] = { 31952 },
 						["provider"] = { "n", 63596 },	-- Audrey Burnhelp
-						["coord"] = { 69.2, 25.0, 84 },
+						["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 31985,	-- The Triumphant Return
 						["g"] = {
@@ -128,13 +128,13 @@ _.Zones =
 					}),
 					q(31593, {	-- Got one!
 						["provider"] = { "n", 63596 },	-- Audrey Burnhep
-						["coord"] = { 69.2, 25.0, 84 },
+						["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 						["sourceQuest"] = 31821,	-- Level Up!
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(31316, {	-- Julia, The Pet Tamer
 						["provider"] = { "n", 63596 },	-- Audrey Burnhelp
-						["coord"] = { 69.2, 25.0, 84 },
+						["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 32008,	-- Audrey Burnhep
 						["g"] = {
@@ -143,24 +143,24 @@ _.Zones =
 					}),
 					q(31591, {	-- Learning the Ropes
 						["provider"] = { "n", 63596 },	-- Audrey Burnhep
-						["coord"] = { 69.2, 25.0, 84 },
+						["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(31821, {	-- Level Up!
 						["provider"] = { "n", 63596 },	-- Audrey Burnhep
-						["coord"] = { 69.2, 25.0, 84 },
+						["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 						["sourceQuest"] = 31592,	-- On The Mend
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(31592, {	-- On The Mend
 						["provider"] = { "n", 63596 },	-- Audrey Burnhep
-						["coord"] = { 69.2, 25.0, 84 },
+						["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 						["sourceQuest"] = 31591,	-- Learning the Ropes
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(32863, { 	-- What We've Been Training For
 						["provider"] = { "n", 63596 },	-- Audrey Burnhelp
-						["coord"] = { 69.2, 25.0, 84 },
+						["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 						["races"] = ALLIANCE_ONLY,
 						["isWeekly"] = true,
 						["g"] = {

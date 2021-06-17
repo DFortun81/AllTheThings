@@ -15,7 +15,7 @@ _.WorldEvents =
 						["maps"] = {
 							118,	-- Icecrown (achievement pops in your capital, but all the SQs are in Icecrown so it's probably helpful to see it there
 							ORGRIMMAR,
-							84,		-- Stormwind
+							STORMWIND_CITY,
 						},
 					}),
 				}),
@@ -30,7 +30,7 @@ _.WorldEvents =
 						["lvl"] = { 50 },
 					}),
 					q(62594, {	-- The Safety of Others (A)
-						["maps"] = { 84 },
+						["maps"] = { STORMWIND_CITY },
 						["lvl"] = { 50 },
 						["u"] = NEVER_IMPLEMENTED,
 					}),
@@ -41,8 +41,8 @@ _.WorldEvents =
 					}),
 					q(60116, {	-- Cause for Distraction (A)
 						["u"] = REMOVED_FROM_GAME,
-						["maps"] = { 84 },	-- Stormwind
-						["coord"] = { 39.4, 64.1, 84 },
+						["maps"] = { STORMWIND_CITY },
+						["coord"] = { 39.4, 64.1, STORMWIND_CITY },
 						["provider"] = { "n", 167329 },	-- Genn Greymane
 						["sourceQuest"] = 60113,	-- An Urgent Request (A)
 						["lvl"] = { 50 },
@@ -57,8 +57,8 @@ _.WorldEvents =
 					}),
 					q(60117, {	-- Return of the Crusade (A)
 						["u"] = REMOVED_FROM_GAME,
-						["maps"] = { 84 },	-- Stormwind
-						["coord"] = { 39.4, 64.1, 84 },
+						["maps"] = { STORMWIND_CITY },
+						["coord"] = { 39.4, 64.1, STORMWIND_CITY },
 						["provider"] = { "n", 167329 },	-- Genn Greymane
 						["sourceQuest"] = 60116,	-- Cause for Distraction (A)
 						["lvl"] = { 50 },
@@ -73,8 +73,8 @@ _.WorldEvents =
 					}),
 					q(59876, {	-- Field Reports (A)
 						["u"] = REMOVED_FROM_GAME,
-						["maps"] = { 84 },	-- Stormwind
-						["coord"] = { 65.7, 77.1, 84 },
+						["maps"] = { STORMWIND_CITY },
+						["coord"] = { 65.7, 77.1, STORMWIND_CITY },
 						["provider"] = { "n", 166383 },	-- Commander Gregor
 						["sourceQuest"] = 60117,	-- Return of the Crusade (A)
 						["lvl"] = { 50 },
@@ -121,8 +121,8 @@ _.WorldEvents =
 					}),
 					q(61486, {	-- The Banshee's Champion (A)
 						["u"] = REMOVED_FROM_GAME,
-						["maps"] = { 84 },	-- Stormwind
-						["coord"] = { 65.55, 77.0, 84 },
+						["maps"] = { STORMWIND_CITY },
+						["coord"] = { 65.55, 77.0, STORMWIND_CITY },
 						["provider"] = { "n", 172510 },	-- Light's Hope Messenger
 						["sourceQuest"] = 60767,	-- Return of the Scourge (A)
 						["lvl"] = { 50 },
@@ -137,8 +137,8 @@ _.WorldEvents =
 					}),
 					q(59877, {	-- A Message from Icecrown (A)
 						["u"] = REMOVED_FROM_GAME,
-						["maps"] = { 84 },	-- Stormwind
-						["coord"] = { 65.7, 77.1, 84 },
+						["maps"] = { STORMWIND_CITY },
+						["coord"] = { 65.7, 77.1, STORMWIND_CITY },
 						["provider"] = { "n", 166383 },	-- Commander Gregor
 						["sourceQuest"] = 60767,	-- Return of the Scourge (A)
 						["lvl"] = { 50 },
@@ -266,10 +266,10 @@ _.WorldEvents =
 					-------------------------- Week 2 --------------------------
 					q(62162, {	-- A Message from the Justicar (A)
 						["u"] = REMOVED_FROM_GAME,
-						["coord"] = { 65.7, 77.1, 84 },
+						["coord"] = { 65.7, 77.1, STORMWIND_CITY },
 						["provider"] = { "n", 166383 },	-- Commander Gregor
 						["isBreadcrumb"] = true,
-						["maps"] = { 84 },	-- Stormwind
+						["maps"] = { STORMWIND_CITY },
 						["sourceQuest"] = 60827,	-- Advancing the Effort
 						["lvl"] = { 50 },
 						["description"] = "Only available if you've done \"Advancing the Effort\" in week 1."
@@ -277,7 +277,7 @@ _.WorldEvents =
 					q(61112, {	-- A Hunger for Flesh (A)
 						["u"] = REMOVED_FROM_GAME,
 						["provider"] = { "i", 180712 },	-- Partially Digested Cloth
-						["maps"] = { 84 },	-- Stormwind
+						["maps"] = { STORMWIND_CITY },
 						["crs"] = {
 							174621,	-- Bloodthirsty Ghoul
 							171447,	-- Infectious Zombie
@@ -952,11 +952,9 @@ _.WorldEvents =
 							}),
 						}),
 						n(165839, {	-- Quartermaster Renick <The Argent Crusade>
-							["coord"] = { 65.4, 76.8, 84 },
+							["coord"] = { 65.4, 76.8, STORMWIND_CITY },
 							["races"] = ALLIANCE_ONLY,
-							["maps"] = {
-								84,	-- Stormwind City
-							},
+							["maps"] = { STORMWIND_CITY },
 							["g"] = bubbleDown({["cost"] = { { "c", 1754, 15 } }}, {
 								i(183524, {	-- Argent Conscript's Drape
 									["classes"] = { MAGE, PRIEST, WARLOCK },

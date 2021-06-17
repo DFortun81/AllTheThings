@@ -16,7 +16,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 					{ 33.8, 66.6, IRONFORGE },
 					{ 52.8, 77.0, ORGRIMMAR },
 					{ 64.2, 67.2, SILVERMOON_CITY },
-					{ 62.2, 75.2, 84 },	-- Stormwind
+					{ 62.2, 75.2, STORMWIND_CITY },
 					{ 74.0, 56.2, THE_EXODAR },
 					{ 43.6, 53.4, THUNDER_BLUFF },
 					{ 66.0, 38.4, 90 },	-- Undercity
@@ -25,7 +25,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 			q(24657, {	-- A Friendly Chat... (A)
 				["sourceQuests"] = { 24849 },	-- Hot On The Trail (A)
 				["provider"] = { "n", 38325 },	-- Marion Sutton
-				["coord"] = { 60.4, 76.2, 84 },	-- Stormwind
+				["coord"] = { 60.4, 76.2, STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(24576, {	-- A Friendly Chat... (H)
@@ -73,7 +73,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 			q(24597, {	-- A Gift for the King of Stormwind
 				["provider"] = { "n", 37887 },	-- Kwee Q. Peddlefeet
 				["isDaily"] = true,
-				["coord"] = { 62.4, 75.0, 84 },	-- Stormwind
+				["coord"] = { 62.4, 75.0, STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(24611, {	-- A Gift for the Prophet
@@ -96,7 +96,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 					{ 33.8, 66.6, IRONFORGE },
 					{ 52.8, 77.0, ORGRIMMAR },
 					{ 64.2, 67.2, SILVERMOON_CITY },
-					{ 62.2, 75.2, 84 },	-- Stormwind
+					{ 62.2, 75.2, STORMWIND_CITY },
 					{ 74.0, 56.2, THE_EXODAR },
 					{ 43.6, 53.4, THUNDER_BLUFF },
 					{ 66.0, 38.4, 90 },	-- Undercity
@@ -114,7 +114,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 					{ 33.8, 66.6, IRONFORGE },
 					{ 52.8, 77.0, ORGRIMMAR },
 					{ 64.2, 67.2, SILVERMOON_CITY },
-					{ 62.2, 75.2, 84 },	-- Stormwind
+					{ 62.2, 75.2, STORMWIND_CITY },
 					{ 74.0, 56.2, THE_EXODAR },
 					{ 43.6, 53.4, THUNDER_BLUFF },
 					{ 66.0, 38.4, 90 },	-- Undercity
@@ -124,69 +124,69 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 				["sourceQuests"] = { 24657 },	-- A Friendly Chat... (A)
 				["provider"] = { "n", 38066 },	-- Detective Snip Snagglebolt
 				["isDaily"] = true,
-				["coord"] = { 61.5, 75.2, 84 },	-- Stormwind
+				["coord"] = { 61.5, 75.2, STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(24658, {	-- Crushing the Crown
 				["provider"] = { "n", 38066 },	-- Detective Snip Snagglebolt
 				["isDaily"] = true,
-				["coord"] = { 61.5, 75.2, 84 },	-- Stormwind
+				["coord"] = { 61.5, 75.2, STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(24659, {	-- Crushing the Crown
 				["provider"] = { "n", 38066 },	-- Detective Snip Snagglebolt
 				["isDaily"] = true,
-				["coord"] = { 61.5, 75.2, 84 },	-- Stormwind
+				["coord"] = { 61.5, 75.2, STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(24660, {	-- Crushing the Crown
 				["provider"] = { "n", 38066 },	-- Detective Snip Snagglebolt
 				["isDaily"] = true,
-				["coord"] = { 61.5, 75.2, 84 },	-- Stormwind
+				["coord"] = { 61.5, 75.2, STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(24662, {	-- Crushing the Crown
 				["provider"] = { "n", 38066 },	-- Detective Snip Snagglebolt
 				["isDaily"] = true,
-				["coord"] = { 61.5, 75.2, 84 },	-- Stormwind
+				["coord"] = { 61.5, 75.2, STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(24663, {	-- Crushing the Crown
 				["provider"] = { "n", 38066 },	-- Detective Snip Snagglebolt
 				["isDaily"] = true,
-				["coord"] = { 61.5, 75.2, 84 },	-- Stormwind
+				["coord"] = { 61.5, 75.2, STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(24664, {	-- Crushing the Crown
 				["provider"] = { "n", 38066 },	-- Detective Snip Snagglebolt
 				["isDaily"] = true,
-				["coord"] = { 61.5, 75.2, 84 },	-- Stormwind
+				["coord"] = { 61.5, 75.2, STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(24665, {	-- Crushing the Crown
 				["provider"] = { "n", 38066 },	-- Detective Snip Snagglebolt
 				["isDaily"] = true,
-				["coord"] = { 61.5, 75.2, 84 },	-- Stormwind
+				["coord"] = { 61.5, 75.2, STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(24666, {	-- Crushing the Crown
 				["provider"] = { "n", 38066 },	-- Detective Snip Snagglebolt
 				["isDaily"] = true,
-				["coord"] = { 61.5, 75.2, 84 },	-- Stormwind
+				["coord"] = { 61.5, 75.2, STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(28934, {	-- Crushing the Crown
 				["provider"] = { "n", 38066 },	-- Detective Snip Snagglebolt
 				["isDaily"] = true,
-				["coord"] = { 61.5, 75.2, 84 },	-- Stormwind
+				["coord"] = { 61.5, 75.2, STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 			}),
@@ -295,7 +295,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 			q(24848, {	-- Fireworks At The Gilded Rose
 				["sourceQuests"] = { 24656 },	-- Pilfering Perfume (A)
 				["provider"] = { "n", 38066 },	-- Inspector Snip Snagglebolt
-				["coord"] = { 61.6, 75.2, 84 },	-- Stormwind
+				["coord"] = { 61.6, 75.2, STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(44560, {	-- Follow the Recipe (A)
@@ -313,7 +313,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 			q(24849, {	-- Hot On The Trail (A)
 				["sourceQuests"] = { 24848 },	-- Fireworks At The Gilded Rose
 				["provider"] = { "n", 38325 },	-- Marion Sutton
-				["coord"] = { 60.4, 76.2, 84 },	-- Stormwind
+				["coord"] = { 60.4, 76.2, STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(24851, {	-- Hot On The Trail (H)
@@ -326,7 +326,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 				["sourceQuests"] = { 24657 },	-- A Friendly Chat... (A)
 				["provider"] = { "n", 38066 },	-- Inspector Snip Snagglebolt
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 84 },	-- Stormwind City
+				["maps"] = { STORMWIND_CITY },
 				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(24793, {	-- Man on the Inside (H)
@@ -343,7 +343,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 			q(24656, {	-- Pilfering Perfume (A)
 				["sourceQuests"] = { 24655 },	-- Something Stinks (A)
 				["provider"] = { "n", 38066 },	-- Inspector Snip Snagglebolt
-				["coord"] = { 61.6, 75.2, 84 },	-- Stormwind
+				["coord"] = { 61.6, 75.2, STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(24541, {	-- Pilfering Perfume (H)
@@ -371,7 +371,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 			q(24655, {	-- Something Stinks (A)
 				["sourceQuests"] = { 24804 },	-- Uncommon Scents (A)
 				["provider"] = { "n", 38066 },	-- Inspector Snip Snagglebolt
-				["coord"] = { 61.6, 75.2, 84 },	-- Stormwind
+				["coord"] = { 61.6, 75.2, STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(24536, {	-- Something Stinks (H)

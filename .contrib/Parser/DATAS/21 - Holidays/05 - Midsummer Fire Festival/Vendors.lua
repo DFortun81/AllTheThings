@@ -8,14 +8,14 @@ _.Holidays =
 		n(VENDORS, {
 			n(26123, {	-- Midsummer Supplier (Alliance Vendor)
 				["coords"] = {
-					{ 49.2, 71.8, 84 },		-- Stormwind City
+					{ 49.2, 71.8, STORMWIND_CITY },
 					{ 64.6, 26.6, IRONFORGE },
 					{ 62.0, 48.6, 89 },		-- Darnassus
 					{ 42.6, 25.6, THE_EXODAR },
 				},
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = {
-					84,		-- Stormwind City
+					STORMWIND_CITY,
 					IRONFORGE,
 					89,		-- Darnassus
 					THE_EXODAR,

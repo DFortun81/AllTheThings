@@ -52,7 +52,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 					},
 					["races"] = ALLIANCE_ONLY,
 					["maps"] = {
-						84,		-- Stormwind City
+						STORMWIND_CITY,
 						IRONFORGE,
 						89,		-- Darnassus
 						THE_EXODAR,

@@ -111,29 +111,27 @@ _.Holidays =
 							29119,	-- You Scream, I Scream...
 						},
 						["coords"] = {
-							{ 56.31, 53.99, 84 },	-- Orphan Matron Nightingale
-							{ 56.31, 68.45, 84 },	-- Craggle Wobbletop Path
-							{ 56.67, 66.57, 84 },	-- Craggle Wobbletop Path
-							{ 56.75, 70.04, 84 },	-- Craggle Wobbletop Path
-							{ 57.19, 71.63, 84 },	-- Craggle Wobbletop Path
-							{ 57.57, 65.42, 84 },	-- Craggle Wobbletop Path
-							{ 57.63, 73.23, 84 },	-- Craggle Wobbletop Path
-							{ 58.07, 74.83, 84 },	-- Craggle Wobbletop Path
-							{ 58.44, 64.31, 84 },	-- Craggle Wobbletop Path
-							{ 58.51, 76.42, 84 },	-- Craggle Wobbletop Path
-							{ 59.12, 77.98, 84 },	-- Craggle Wobbletop Path
-							{ 59.44, 63.31, 84 },	-- Craggle Wobbletop Path
-							{ 60.44, 62.44, 84 },	-- Craggle Wobbletop Path
-							{ 61.21, 61.78, 84 },	-- Craggle Wobbletop Path
-							{ 62.31, 61.34, 84 },	-- Craggle Wobbletop Path
-							{ 63.44, 61.05, 84 },	-- Craggle Wobbletop Path
-							{ 64.62, 61.54, 84 },	-- Craggle Wobbletop Path
-							{ 65.63, 62.99, 84 },	-- Craggle Wobbletop Path
-							{ 66.61, 64.43, 84 },	-- Craggle Wobbletop Path
+							{ 56.31, 53.99, STORMWIND_CITY },	-- Orphan Matron Nightingale
+							{ 56.31, 68.45, STORMWIND_CITY },	-- Craggle Wobbletop Path
+							{ 56.67, 66.57, STORMWIND_CITY },	-- Craggle Wobbletop Path
+							{ 56.75, 70.04, STORMWIND_CITY },	-- Craggle Wobbletop Path
+							{ 57.19, 71.63, STORMWIND_CITY },	-- Craggle Wobbletop Path
+							{ 57.57, 65.42, STORMWIND_CITY },	-- Craggle Wobbletop Path
+							{ 57.63, 73.23, STORMWIND_CITY },	-- Craggle Wobbletop Path
+							{ 58.07, 74.83, STORMWIND_CITY },	-- Craggle Wobbletop Path
+							{ 58.44, 64.31, STORMWIND_CITY },	-- Craggle Wobbletop Path
+							{ 58.51, 76.42, STORMWIND_CITY },	-- Craggle Wobbletop Path
+							{ 59.12, 77.98, STORMWIND_CITY },	-- Craggle Wobbletop Path
+							{ 59.44, 63.31, STORMWIND_CITY },	-- Craggle Wobbletop Path
+							{ 60.44, 62.44, STORMWIND_CITY },	-- Craggle Wobbletop Path
+							{ 61.21, 61.78, STORMWIND_CITY },	-- Craggle Wobbletop Path
+							{ 62.31, 61.34, STORMWIND_CITY },	-- Craggle Wobbletop Path
+							{ 63.44, 61.05, STORMWIND_CITY },	-- Craggle Wobbletop Path
+							{ 64.62, 61.54, STORMWIND_CITY },	-- Craggle Wobbletop Path
+							{ 65.63, 62.99, STORMWIND_CITY },	-- Craggle Wobbletop Path
+							{ 66.61, 64.43, STORMWIND_CITY },	-- Craggle Wobbletop Path
 						},
-						["maps"] = {
-							84,	-- Stormwind City
-						},
+						["maps"] = { STORMWIND_CITY },
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							{	-- Piglet's Collar
@@ -654,11 +652,9 @@ _.Holidays =
 						["u"] = 20,				-- Children's Week Filter
 						["provider"] = { "n", 51988 },			-- Orphan Matron Nightingale
 						["description"] = "If you are missing this quest resummon your Human child to pick it up.",
-						["maps"] = {
-							84,	-- Stormwind City
-						},
+						["maps"] = { STORMWIND_CITY },
 						["coords"] = {
-							{ 56.31, 53.99, 84 },	-- Orphan Matron Nightingale
+							{ 56.31, 53.99, STORMWIND_CITY },	-- Orphan Matron Nightingale
 						},
 						["races"] = ALLIANCE_ONLY,
 						["isYearly"] = true,
@@ -732,7 +728,7 @@ _.Holidays =
 						},
 						["maps"] = {
 							52,	-- Westfall
-							84,	-- Stormwind City
+							STORMWIND_CITY,
 						},
 						["races"] = ALLIANCE_ONLY,
 						["isYearly"] = true,
@@ -827,28 +823,26 @@ _.Holidays =
 							29106,	-- The Biggest Diamond Ever!
 						},
 						["coords"] = {
-							{ 56.31, 68.45, 84 },	-- Craggle Wobbletop Path
-							{ 56.67, 66.57, 84 },	-- Craggle Wobbletop Path
-							{ 56.75, 70.04, 84 },	-- Craggle Wobbletop Path
-							{ 57.19, 71.63, 84 },	-- Craggle Wobbletop Path
-							{ 57.57, 65.42, 84 },	-- Craggle Wobbletop Path
-							{ 57.63, 73.23, 84 },	-- Craggle Wobbletop Path
-							{ 58.07, 74.83, 84 },	-- Craggle Wobbletop Path
-							{ 58.44, 64.31, 84 },	-- Craggle Wobbletop Path
-							{ 58.51, 76.42, 84 },	-- Craggle Wobbletop Path
-							{ 59.12, 77.98, 84 },	-- Craggle Wobbletop Path
-							{ 59.44, 63.31, 84 },	-- Craggle Wobbletop Path
-							{ 60.44, 62.44, 84 },	-- Craggle Wobbletop Path
-							{ 61.21, 61.78, 84 },	-- Craggle Wobbletop Path
-							{ 62.31, 61.34, 84 },	-- Craggle Wobbletop Path
-							{ 63.44, 61.05, 84 },	-- Craggle Wobbletop Path
-							{ 64.62, 61.54, 84 },	-- Craggle Wobbletop Path
-							{ 65.63, 62.99, 84 },	-- Craggle Wobbletop Path
-							{ 66.61, 64.43, 84 },	-- Craggle Wobbletop Path
+							{ 56.31, 68.45, STORMWIND_CITY },	-- Craggle Wobbletop Path
+							{ 56.67, 66.57, STORMWIND_CITY },	-- Craggle Wobbletop Path
+							{ 56.75, 70.04, STORMWIND_CITY },	-- Craggle Wobbletop Path
+							{ 57.19, 71.63, STORMWIND_CITY },	-- Craggle Wobbletop Path
+							{ 57.57, 65.42, STORMWIND_CITY },	-- Craggle Wobbletop Path
+							{ 57.63, 73.23, STORMWIND_CITY },	-- Craggle Wobbletop Path
+							{ 58.07, 74.83, STORMWIND_CITY },	-- Craggle Wobbletop Path
+							{ 58.44, 64.31, STORMWIND_CITY },	-- Craggle Wobbletop Path
+							{ 58.51, 76.42, STORMWIND_CITY },	-- Craggle Wobbletop Path
+							{ 59.12, 77.98, STORMWIND_CITY },	-- Craggle Wobbletop Path
+							{ 59.44, 63.31, STORMWIND_CITY },	-- Craggle Wobbletop Path
+							{ 60.44, 62.44, STORMWIND_CITY },	-- Craggle Wobbletop Path
+							{ 61.21, 61.78, STORMWIND_CITY },	-- Craggle Wobbletop Path
+							{ 62.31, 61.34, STORMWIND_CITY },	-- Craggle Wobbletop Path
+							{ 63.44, 61.05, STORMWIND_CITY },	-- Craggle Wobbletop Path
+							{ 64.62, 61.54, STORMWIND_CITY },	-- Craggle Wobbletop Path
+							{ 65.63, 62.99, STORMWIND_CITY },	-- Craggle Wobbletop Path
+							{ 66.61, 64.43, STORMWIND_CITY },	-- Craggle Wobbletop Path
 						},
-						["maps"] = {
-							84,	-- Stormwind City
-						},
+						["maps"] = { STORMWIND_CITY },
 						["races"] = ALLIANCE_ONLY,
 						["isYearly"] = true,
 					},
@@ -941,7 +935,7 @@ _.Holidays =
 							1468,	-- Children's Week
 						},
 						["maps"] = {
-							84,	-- Stormwind City
+							STORMWIND_CITY,
 							89,	-- Darnassus
 						},
 						["races"] = ALLIANCE_ONLY,
@@ -998,11 +992,9 @@ _.Holidays =
 							1468,	-- Children's Week
 						},
 						["coords"] = {
-							{ 53.28, 15.25, 84 },	-- Stormwind Embassy
+							{ 53.28, 15.25, STORMWIND_CITY },	-- Stormwind Embassy
 						},
-						["maps"] = {
-							84,	-- Stormwind City
-						},
+						["maps"] = { STORMWIND_CITY },
 						["races"] = ALLIANCE_ONLY,
 						["isYearly"] = true,
 					},
@@ -1299,7 +1291,7 @@ _.Holidays =
 							{ 37.43, 54.32, 1361 },	-- Magni [Old Ironforge]
 						},
 						["maps"] = {
-							84,		-- Stormwind City
+							STORMWIND_CITY,
 							IRONFORGE,
 							1361,	-- Old Ironforge
 						},
@@ -1654,12 +1646,10 @@ _.Holidays =
 							52421,	-- Hans Coldhearth
 						},
 						["coords"] = {
-							{ 49.01, 89.74, 84 },	-- Hans Coldhearth
-							{ 49.12, 90.07, 84 },	-- Bazzil Frostweaver
+							{ 49.01, 89.74, STORMWIND_CITY },	-- Hans Coldhearth
+							{ 49.12, 90.07, STORMWIND_CITY },	-- Bazzil Frostweaver
 						},
-						["maps"] = {
-							84,	-- Stormwind City
-						},
+						["maps"] = { STORMWIND_CITY },
 						["races"] = ALLIANCE_ONLY,
 						["isYearly"] = true,
 					},

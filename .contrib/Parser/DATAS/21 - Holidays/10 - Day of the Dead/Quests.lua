@@ -115,8 +115,8 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_DAY_OF_THE_DEAD },
 				["provider"] = { "n", 34435 },	-- Cheerful Human Spirit
 				["isYearly"] = true,
 				["races"] = { HUMAN },
-				["coord"] = { 47.6, 26.6, 84 },
-				["maps"] = { 84 },	-- Stormwind City
+				["coord"] = { 47.6, 26.6, STORMWIND_CITY },
+				["maps"] = { STORMWIND_CITY },
 				["g"] = {
 					i(46831),	-- Macabre Marionette (PET!)
 				},

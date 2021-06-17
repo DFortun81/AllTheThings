@@ -75,11 +75,11 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 					{ 58.11, 46.17, SHATTRATH_CITY },	-- Goblin
 					{ 58.96, 57.96, SHATTRATH_CITY },	-- Goblin
 					{ 63.52, 39.64, SHATTRATH_CITY },	-- Goblin
-					{ 49.73, 90.03, 84 },	-- Stormwind City [Human]
-					{ 61.68, 74.19, 84 },	-- Stormwind City [Human]
-					{ 63.77, 32.04, 84 },	-- Stormwind City [Human]
-					{ 66.96, 72.52, 84 },	-- Stormwind City [Human]
-					{ 73.88, 55.88, 84 },	-- Stormwind City [Human]
+					{ 49.73, 90.03, STORMWIND_CITY },	-- Human
+					{ 61.68, 74.19, STORMWIND_CITY },	-- Human
+					{ 63.77, 32.04, STORMWIND_CITY },	-- Human
+					{ 66.96, 72.52, STORMWIND_CITY },	-- Human
+					{ 73.88, 55.88, STORMWIND_CITY },	-- Human
 					{ 50.92, 30.09, TANARIS },	-- Goblin
 					{ 51.51, 26.68, TANARIS },	-- Goblin
 					{ 51.99, 29.36, TANARIS },	-- Goblin

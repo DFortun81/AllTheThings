@@ -370,8 +370,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { SEARING_GORGE },
 										}),
 										crit(19, {	-- Stormwind, The Trade District
-											["coord"] = { 60.5, 75.2, 84 },
-											["maps"] = { 84 },	-- Stormwind City
+											["coord"] = { 60.5, 75.2, STORMWIND_CITY },
+											["maps"] = { STORMWIND_CITY },
 										}),
 										crit(20, {	-- Swamp of Sorrows, Bogpaddle
 											["coord"] = { 71.7, 14.0, 51 },

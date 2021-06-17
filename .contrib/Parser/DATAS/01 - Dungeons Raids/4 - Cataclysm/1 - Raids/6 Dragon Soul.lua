@@ -31,7 +31,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					HILLSBRAD_FOOTHILLS,	-- maybe needs specific rogue building id
 					74,	-- Tanaris: Caverns of Time Entrance
 					CAVERNS_OF_TIME,	-- Tanaris: Caverns of Time
-					84,	-- Stormwind City
+					STORMWIND_CITY,
 					ORGRIMMAR,
 					86,	-- Orgrimmar: The Drag
 					129,	-- The Nexus

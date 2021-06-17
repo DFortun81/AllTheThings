@@ -725,10 +725,10 @@ _.ExpansionFeatures =
 					}),
 					q(37689, {	-- The Imposter
 						["provider"] = { "n", 111049 },	-- Master Mathias Shaw
-						["coord"] = { 35.6, 60.0, 84 },
+						["coord"] = { 35.6, 60.0, STORMWIND_CITY },
 						["sourceQuests"] = { 37494 },	-- Under Cover of Darkness
 						["classes"] = { ROGUE },	-- Rogue
-						["maps"] = { 84 },	 -- Stormwind City
+						["maps"] = { STORMWIND_CITY },
 						["lvl"] = 98,
 						["g"] = {
 							i(139739),	-- Chestguard of the Uncrowned
