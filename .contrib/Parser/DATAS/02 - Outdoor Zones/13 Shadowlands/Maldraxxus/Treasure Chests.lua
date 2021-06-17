@@ -32,7 +32,9 @@ _.Zones =
 							["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant drop only
 						}),
 						i(183619),	-- Everlasting Boneforged Greataxe
-						i(181800),	-- Standard of the Blackhound Warband
+						i(181800, {	-- Standard of the Blackhound Warband
+							["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant drop only
+						}),
 					},
 				}),
 				n(171337, {	-- Bloated Lootfly
