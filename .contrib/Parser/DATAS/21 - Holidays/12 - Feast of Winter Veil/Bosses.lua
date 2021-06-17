@@ -41,7 +41,15 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 				inst(64, {	-- Shadowfang Keep
 					n(46964, {	-- Lord Godfrey
 						un(HOLIDAY_FEAST_OF_WINTER_VEIL, ig(21525, {	-- Green Winter Hat
-							["maps"] = { SHADOWFANG_KEEP, 311, 312, 313, 314, 315, 316 },
+							["maps"] = {
+								SHADOWFANG_KEEP,
+								SHADOWFANG_KEEP_LEVEL2,
+								SHADOWFANG_KEEP_LEVEL3,
+								SHADOWFANG_KEEP_LEVEL4,
+								SHADOWFANG_KEEP_LEVEL5,
+								SHADOWFANG_KEEP_LEVEL6,
+								SHADOWFANG_KEEP_LEVEL7
+							},
 						})),
 					}),
 				}),

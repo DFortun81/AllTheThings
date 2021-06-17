@@ -5,7 +5,15 @@
 _.Instances = { tier(4, {	-- Cataclysm
 	inst(64, { 	-- Shadowfang Keep
 		["coord"] = { 44.79, 67.82, 21 },	-- Shadowfang Keep, Silverpine Forest
-		["maps"] = { SHADOWFANG_KEEP, 311, 312, 313, 314, 315, 316 },
+		["maps"] = {
+			SHADOWFANG_KEEP,
+			SHADOWFANG_KEEP_LEVEL2,
+			SHADOWFANG_KEEP_LEVEL3,
+			SHADOWFANG_KEEP_LEVEL4,
+			SHADOWFANG_KEEP_LEVEL5,
+			SHADOWFANG_KEEP_LEVEL6,
+			SHADOWFANG_KEEP_LEVEL7
+		},
 		["g"] = {
 			d(2, {	-- Heroic
 				["ignoreBonus"] = true,
