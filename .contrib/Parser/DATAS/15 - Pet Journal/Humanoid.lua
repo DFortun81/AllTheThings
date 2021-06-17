@@ -86,6 +86,7 @@ _.PetJournal =
 		p(1226),			-- Lil' Bad Wolf
 		p(3062),			-- Lost Featherling
 		un(REMOVED_FROM_GAME, p(111)),		-- Lurky
+		p(3131),	-- Mawsworn Minion
 		un(REMOVED_FROM_GAME, p(189)),		-- Mini Tyrael
 		un(REMOVED_FROM_GAME, p(296, {	-- Moonkin Hatchling (Alliance)
 			["races"] = ALLIANCE_ONLY,

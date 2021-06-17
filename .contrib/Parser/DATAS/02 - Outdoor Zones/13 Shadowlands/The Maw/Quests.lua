@@ -152,15 +152,18 @@ _.Zones =
 									i(185974, {	-- Bahmeht Chain Link
 										["description"] = "A guaranteed drop from the Tormentor, and a possible drop from its lieutenants.",
 									}),
-									i(186218),	-- Fire-Tempered Armor Cinch (probably CBD, but looted from Zul'gath)
+									i(186218),	-- Fire-Tempered Armor Cinch (looted from Zul'gath near the start of PTR - drops may have been changed, not sure if this is CBD or specific to Zul'gath - apparently most tormentors have at least 1 dedicated drop, but this guy isn't especially fiery so i'm not sure)
 									i(185972, {	-- Tormentor's Cache
 										i(186977),	-- Beastcaller's Skull Crescent
 										i(185756),	-- Warped Phantasma (TODO: add rep item if this makes it to live)
 									}),
 								},
 							}),
-							n(177979, {	-- Gralebboih <Tormentor of Torghast>
+							n(177979, {	-- Gralebboih
 								i(186449),	-- Amaranthine Stinger (PET!)
+							}),
+							n(177330, {	-- Promathiz
+								i(186007),	-- Cudgel of the Tin Sentinel
 							}),
 							i(185973, {	-- Chain of Bahmethra
 								["cost"] = { { "i", 185974, 200 } },	-- 200x Bahmet Chain Link

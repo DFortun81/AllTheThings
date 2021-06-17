@@ -230,35 +230,84 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(182684),	-- Resolute Defender
 						i(183509),	-- Sleight of Hand
 						i(186599),	-- Stygian Ember
-						--[[
-						i(),	-- 
-						i(),	-- 
-						i(),	-- 
-						i(),	-- 
-						i(),	-- 
-						i(),	-- 
-						i(),	-- 
-						i(),	-- 
-						i(),	-- 
-						i(),	-- 
-						i(),	-- 
-						i(),	-- 
-						i(),	-- 
-						i(),	-- 
-						i(),	-- 
-						i(),	-- 
-						i(),	-- 
-						--]]
+						i(181867),	-- Swift Penitence
+						i(181624),	-- Swift Transference
+						i(182108),	-- Thunderous Paws
+						i(186419),	-- Record of Collapsing Realities
+						i(186330),	-- Cowl of Haunting Precognition
+						i(186340),	-- Conjunction-Forged Chainmail
+						i(186320),	-- Diviner's Draped Finery
+						i(186335),	-- Fate-Threaded Bindings
+						i(186345),	-- Demigaunts of Predestination
+						i(186326),	-- Gloves of Forsaken Purpose
+						i(186352),	-- Binding of Dark Destinies
+						i(186348),	-- Fateforged Legplates
+						i(186376),	-- Oscillating Ouroboros
+						i(186435),	-- Carved Ivory Keepsake
+						i(186434),	-- Weave of Warped Fates
 					},
 				}),
 				e(2440, {	-- Kel'Thuzad
 				--	["crs"] = {  },	-- 
 					["g"] = {
+						i(182136),	-- Chilled to the Core
+						i(181698),	-- Cryo-Freeze
+						i(183202),	-- Deadly Tandem
+						i(181943),	-- Eradicating Blow
+						i(183490),	-- Floral Recycling
+						i(182141),	-- Holy Oration
+						i(180847),	-- Inspiring Presence
+						i(186550),	-- Mawsworn Minion (PET!)
+						i(183499),	-- Quick Decisions
+						i(186599),	-- Stygian Ember
+						i(182675),	-- Untempered Dedication
+						i(182747),	-- Withering Bolt
+						i(187542),	-- Jaithys, the Prison Blade
+						i(186406),	-- Maledict Opus
+						i(187056),	-- The Devouring Cold
+						i(186350),	-- Valorous Visage of Krexus
+						i(186379),	-- Interplanar Keystone
+						i(186324),	-- Frame of the False Margrave
+						i(186336),	-- Spaulders of the Crooked Confidant
+						i(186365),	-- Bands of the Fallen House
+						i(186351),	-- Vyraz's Parade Cuffs
+						i(186338),	-- Ceremonial Construct Clasp
+						i(186322),	-- Sash of Duplicitous Magics
+						i(186331),	-- Elite Aranakk Breeches
+						i(186421),	-- Forbidden Necromantic Tome
+						i(186437),	-- Relic of the Frozen Wastes
+						i(186436),	-- Resonant Silver Bell
 					},
 				}),
 				e(2441, {	-- Sylvanas Windrunner
 				--	["crs"] = {  },	-- 
 					["g"] = {
+						i(180933),	-- Ashen Juggernaut
+						i(183483),	-- Carnivorous Instinct
+						i(183511),	-- Deeper Daggers
+						i(181740),	-- Evasive Stride
+						i(182385),	-- Growing Inferno
+						i(182772),	-- Infernal Brand
+						i(182208),	-- Lingering Plague
+						i(182138),	-- Mind Devourer
+						i(182476),	-- Resilience of the Hunter
+						i(182127),	-- Shake the Foundations
+						i(186599),	-- Stygian Ember
+						i(182559),	-- Templar's Vindication
+						i(181383),	-- Unrelenting Cold
+						i(186398),	-- Edge of Night
+						i(186414),	-- Rae'shalare, Death's Whisper
+						i(186417),	-- Guard of the Sundered Defender
+						i(186325),	-- Veil of the Banshee Queen
+						i(186342),	-- Epaulettes of the Master Ranger
+						i(186349),	-- Spires of Broken Hope
+						i(186439),	-- Dark Ranger's Quiver
+						i(186334),	-- Witherheart Studded Breastplate
+						i(186321),	-- Desecrator's Keening Wristwraps
+						i(186332),	-- Windrunner's Baldric
+						i(186353),	-- Greaves of Haunting Ruination
+						i(186377),	-- Tarnished Insignia of Quel'Thalas
+						i(186438),	-- Old Warrior's Soul
 					},
 				}),
 			}),
@@ -469,16 +518,92 @@ _.Instances = { tier(9, {	-- Shadowlands
 				e(2447, {	-- Fatescribe Roh-Kalo
 				--	["crs"] = {  },	-- 
 					["g"] = {
+						i(181509),	-- Arcane Prodigy
+						i(182649),	-- Brutal Projectiles
+						i(182470),	-- Demonic Momentum
+						i(182324),	-- Felfire Haste
+						i(183469),	-- Front of the Pack
+						i(182684),	-- Resolute Defender
+						i(183509),	-- Sleight of Hand
+						i(186599),	-- Stygian Ember
+						i(181867),	-- Swift Penitence
+						i(181624),	-- Swift Transference
+						i(182108),	-- Thunderous Paws
+						i(186419),	-- Record of Collapsing Realities
+						i(186330),	-- Cowl of Haunting Precognition
+						i(186340),	-- Conjunction-Forged Chainmail
+						i(186320),	-- Diviner's Draped Finery
+						i(186335),	-- Fate-Threaded Bindings
+						i(186345),	-- Demigaunts of Predestination
+						i(186326),	-- Gloves of Forsaken Purpose
+						i(186352),	-- Binding of Dark Destinies
+						i(186348),	-- Fateforged Legplates
+						i(186376),	-- Oscillating Ouroboros
+						i(186435),	-- Carved Ivory Keepsake
+						i(186434),	-- Weave of Warped Fates
 					},
 				}),
 				e(2440, {	-- Kel'Thuzad
 				--	["crs"] = {  },	-- 
 					["g"] = {
+						i(182136),	-- Chilled to the Core
+						i(181698),	-- Cryo-Freeze
+						i(183202),	-- Deadly Tandem
+						i(181943),	-- Eradicating Blow
+						i(183490),	-- Floral Recycling
+						i(182141),	-- Holy Oration
+						i(180847),	-- Inspiring Presence
+						i(186550),	-- Mawsworn Minion (PET!)
+						i(183499),	-- Quick Decisions
+						i(186599),	-- Stygian Ember
+						i(182675),	-- Untempered Dedication
+						i(182747),	-- Withering Bolt
+						i(187542),	-- Jaithys, the Prison Blade
+						i(186406),	-- Maledict Opus
+						i(187056),	-- The Devouring Cold
+						i(186350),	-- Valorous Visage of Krexus
+						i(186379),	-- Interplanar Keystone
+						i(186324),	-- Frame of the False Margrave
+						i(186336),	-- Spaulders of the Crooked Confidant
+						i(186365),	-- Bands of the Fallen House
+						i(186351),	-- Vyraz's Parade Cuffs
+						i(186338),	-- Ceremonial Construct Clasp
+						i(186322),	-- Sash of Duplicitous Magics
+						i(186331),	-- Elite Aranakk Breeches
+						i(186421),	-- Forbidden Necromantic Tome
+						i(186437),	-- Relic of the Frozen Wastes
+						i(186436),	-- Resonant Silver Bell
 					},
 				}),
 				e(2441, {	-- Sylvanas Windrunner
 				--	["crs"] = {  },	-- 
 					["g"] = {
+						i(180933),	-- Ashen Juggernaut
+						i(183483),	-- Carnivorous Instinct
+						i(183511),	-- Deeper Daggers
+						i(181740),	-- Evasive Stride
+						i(182385),	-- Growing Inferno
+						i(182772),	-- Infernal Brand
+						i(182208),	-- Lingering Plague
+						i(182138),	-- Mind Devourer
+						i(182476),	-- Resilience of the Hunter
+						i(182127),	-- Shake the Foundations
+						i(186599),	-- Stygian Ember
+						i(182559),	-- Templar's Vindication
+						i(181383),	-- Unrelenting Cold
+						i(186398),	-- Edge of Night
+						i(186414),	-- Rae'shalare, Death's Whisper
+						i(186417),	-- Guard of the Sundered Defender
+						i(186325),	-- Veil of the Banshee Queen
+						i(186342),	-- Epaulettes of the Master Ranger
+						i(186349),	-- Spires of Broken Hope
+						i(186439),	-- Dark Ranger's Quiver
+						i(186334),	-- Witherheart Studded Breastplate
+						i(186321),	-- Desecrator's Keening Wristwraps
+						i(186332),	-- Windrunner's Baldric
+						i(186353),	-- Greaves of Haunting Ruination
+						i(186377),	-- Tarnished Insignia of Quel'Thalas
+						i(186438),	-- Old Warrior's Soul
 					},
 				}),
 			}),
@@ -689,16 +814,92 @@ _.Instances = { tier(9, {	-- Shadowlands
 				e(2447, {	-- Fatescribe Roh-Kalo
 				--	["crs"] = {  },	-- 
 					["g"] = {
+						i(181509),	-- Arcane Prodigy
+						i(182649),	-- Brutal Projectiles
+						i(182470),	-- Demonic Momentum
+						i(182324),	-- Felfire Haste
+						i(183469),	-- Front of the Pack
+						i(182684),	-- Resolute Defender
+						i(183509),	-- Sleight of Hand
+						i(186599),	-- Stygian Ember
+						i(181867),	-- Swift Penitence
+						i(181624),	-- Swift Transference
+						i(182108),	-- Thunderous Paws
+						i(186419),	-- Record of Collapsing Realities
+						i(186330),	-- Cowl of Haunting Precognition
+						i(186340),	-- Conjunction-Forged Chainmail
+						i(186320),	-- Diviner's Draped Finery
+						i(186335),	-- Fate-Threaded Bindings
+						i(186345),	-- Demigaunts of Predestination
+						i(186326),	-- Gloves of Forsaken Purpose
+						i(186352),	-- Binding of Dark Destinies
+						i(186348),	-- Fateforged Legplates
+						i(186376),	-- Oscillating Ouroboros
+						i(186435),	-- Carved Ivory Keepsake
+						i(186434),	-- Weave of Warped Fates
 					},
 				}),
 				e(2440, {	-- Kel'Thuzad
 				--	["crs"] = {  },	-- 
 					["g"] = {
+						i(182136),	-- Chilled to the Core
+						i(181698),	-- Cryo-Freeze
+						i(183202),	-- Deadly Tandem
+						i(181943),	-- Eradicating Blow
+						i(183490),	-- Floral Recycling
+						i(182141),	-- Holy Oration
+						i(180847),	-- Inspiring Presence
+						i(186550),	-- Mawsworn Minion (PET!)
+						i(183499),	-- Quick Decisions
+						i(186599),	-- Stygian Ember
+						i(182675),	-- Untempered Dedication
+						i(182747),	-- Withering Bolt
+						i(187542),	-- Jaithys, the Prison Blade
+						i(186406),	-- Maledict Opus
+						i(187056),	-- The Devouring Cold
+						i(186350),	-- Valorous Visage of Krexus
+						i(186379),	-- Interplanar Keystone
+						i(186324),	-- Frame of the False Margrave
+						i(186336),	-- Spaulders of the Crooked Confidant
+						i(186365),	-- Bands of the Fallen House
+						i(186351),	-- Vyraz's Parade Cuffs
+						i(186338),	-- Ceremonial Construct Clasp
+						i(186322),	-- Sash of Duplicitous Magics
+						i(186331),	-- Elite Aranakk Breeches
+						i(186421),	-- Forbidden Necromantic Tome
+						i(186437),	-- Relic of the Frozen Wastes
+						i(186436),	-- Resonant Silver Bell
 					},
 				}),
 				e(2441, {	-- Sylvanas Windrunner
 				--	["crs"] = {  },	-- 
 					["g"] = {
+						i(180933),	-- Ashen Juggernaut
+						i(183483),	-- Carnivorous Instinct
+						i(183511),	-- Deeper Daggers
+						i(181740),	-- Evasive Stride
+						i(182385),	-- Growing Inferno
+						i(182772),	-- Infernal Brand
+						i(182208),	-- Lingering Plague
+						i(182138),	-- Mind Devourer
+						i(182476),	-- Resilience of the Hunter
+						i(182127),	-- Shake the Foundations
+						i(186599),	-- Stygian Ember
+						i(182559),	-- Templar's Vindication
+						i(181383),	-- Unrelenting Cold
+						i(186398),	-- Edge of Night
+						i(186414),	-- Rae'shalare, Death's Whisper
+						i(186417),	-- Guard of the Sundered Defender
+						i(186325),	-- Veil of the Banshee Queen
+						i(186342),	-- Epaulettes of the Master Ranger
+						i(186349),	-- Spires of Broken Hope
+						i(186439),	-- Dark Ranger's Quiver
+						i(186334),	-- Witherheart Studded Breastplate
+						i(186321),	-- Desecrator's Keening Wristwraps
+						i(186332),	-- Windrunner's Baldric
+						i(186353),	-- Greaves of Haunting Ruination
+						i(186377),	-- Tarnished Insignia of Quel'Thalas
+						i(186438),	-- Old Warrior's Soul
 					},
 				}),
 			}),
@@ -910,17 +1111,93 @@ _.Instances = { tier(9, {	-- Shadowlands
 				e(2447, {	-- Fatescribe Roh-Kalo
 				--	["crs"] = {  },	-- 
 					["g"] = {
+						i(181509),	-- Arcane Prodigy
+						i(182649),	-- Brutal Projectiles
+						i(182470),	-- Demonic Momentum
+						i(182324),	-- Felfire Haste
+						i(183469),	-- Front of the Pack
+						i(182684),	-- Resolute Defender
+						i(183509),	-- Sleight of Hand
+						i(186599),	-- Stygian Ember
+						i(181867),	-- Swift Penitence
+						i(181624),	-- Swift Transference
+						i(182108),	-- Thunderous Paws
+						i(186419),	-- Record of Collapsing Realities
+						i(186330),	-- Cowl of Haunting Precognition
+						i(186340),	-- Conjunction-Forged Chainmail
+						i(186320),	-- Diviner's Draped Finery
+						i(186335),	-- Fate-Threaded Bindings
+						i(186345),	-- Demigaunts of Predestination
+						i(186326),	-- Gloves of Forsaken Purpose
+						i(186352),	-- Binding of Dark Destinies
+						i(186348),	-- Fateforged Legplates
+						i(186376),	-- Oscillating Ouroboros
+						i(186435),	-- Carved Ivory Keepsake
+						i(186434),	-- Weave of Warped Fates
 					},
 				}),
 				e(2440, {	-- Kel'Thuzad
 				--	["crs"] = {  },	-- 
 					["g"] = {
+						i(182136),	-- Chilled to the Core
+						i(181698),	-- Cryo-Freeze
+						i(183202),	-- Deadly Tandem
+						i(181943),	-- Eradicating Blow
+						i(183490),	-- Floral Recycling
+						i(182141),	-- Holy Oration
+						i(180847),	-- Inspiring Presence
+						i(186550),	-- Mawsworn Minion (PET!)
+						i(183499),	-- Quick Decisions
+						i(186599),	-- Stygian Ember
+						i(182675),	-- Untempered Dedication
+						i(182747),	-- Withering Bolt
+						i(187542),	-- Jaithys, the Prison Blade
+						i(186406),	-- Maledict Opus
+						i(187056),	-- The Devouring Cold
+						i(186350),	-- Valorous Visage of Krexus
+						i(186379),	-- Interplanar Keystone
+						i(186324),	-- Frame of the False Margrave
+						i(186336),	-- Spaulders of the Crooked Confidant
+						i(186365),	-- Bands of the Fallen House
+						i(186351),	-- Vyraz's Parade Cuffs
+						i(186338),	-- Ceremonial Construct Clasp
+						i(186322),	-- Sash of Duplicitous Magics
+						i(186331),	-- Elite Aranakk Breeches
+						i(186421),	-- Forbidden Necromantic Tome
+						i(186437),	-- Relic of the Frozen Wastes
+						i(186436),	-- Resonant Silver Bell
 					},
 				}),
 				e(2441, {	-- Sylvanas Windrunner
 				--	["crs"] = {  },	-- 
 					["g"] = {
 						i(186642),	-- Vengeance (MOUNT!)
+						i(180933),	-- Ashen Juggernaut
+						i(183483),	-- Carnivorous Instinct
+						i(183511),	-- Deeper Daggers
+						i(181740),	-- Evasive Stride
+						i(182385),	-- Growing Inferno
+						i(182772),	-- Infernal Brand
+						i(182208),	-- Lingering Plague
+						i(182138),	-- Mind Devourer
+						i(182476),	-- Resilience of the Hunter
+						i(182127),	-- Shake the Foundations
+						i(186599),	-- Stygian Ember
+						i(182559),	-- Templar's Vindication
+						i(181383),	-- Unrelenting Cold
+						i(186398),	-- Edge of Night
+						i(186414),	-- Rae'shalare, Death's Whisper
+						i(186417),	-- Guard of the Sundered Defender
+						i(186325),	-- Veil of the Banshee Queen
+						i(186342),	-- Epaulettes of the Master Ranger
+						i(186349),	-- Spires of Broken Hope
+						i(186439),	-- Dark Ranger's Quiver
+						i(186334),	-- Witherheart Studded Breastplate
+						i(186321),	-- Desecrator's Keening Wristwraps
+						i(186332),	-- Windrunner's Baldric
+						i(186353),	-- Greaves of Haunting Ruination
+						i(186377),	-- Tarnished Insignia of Quel'Thalas
+						i(186438),	-- Old Warrior's Soul
 					},
 				}),
 			}),

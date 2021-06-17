@@ -8,7 +8,6 @@ _.Zones =
 		m(KORTHIA, {
 			n(-212, {	-- Treasure Chest
 			--	TODO: (?) korthian relic boxes currently do not have questIDs and don't actually even disappear immediately when you open them - if quests for them get implemented, they need to be added
-			--	i looted i(186987),	-- Recipe: Torch Burst and it MAY have come from an Invasive Mawshroom, but i'm not sure :(  it's a white item and i didn't notice it until a little while later
 				i(187216),	-- Soultwining Crescent
 				i(185962, {	-- Rune Chit
 					["sourceQuests"] = { 64506 },	-- What Must Be Found
@@ -79,12 +78,15 @@ _.Zones =
 					["isDaily"] = true,
 					["coords"] = {
 						{ 54.2, 41.2, KORTHIA },
+						{ 56.8, 51.5, KORTHIA },
 						{ 57.3, 39.4, KORTHIA },
+						{ 60.7, 38.2, KORTHIA },
 					},
 					["g"] = {
 						i(186990),	-- Recipe: Blossom Burst
 						i(186988),	-- Recipe: Glory Burst
 						i(186989),	-- Recipe: Marrow Burst
+						i(186987),	-- Recipe: Torch Burst
 						i(186986),	-- Recipe: Widow Burst
 						i(187153),	-- Tasty Mawshroom
 					},
@@ -92,11 +94,16 @@ _.Zones =
 				o(369329, {	-- Invasive Mawshroom
 					["questID"] = 64354,
 					["isDaily"] = true,
-					["coord"] = { 53.7, 37.9, KORTHIA },
+					["coords"] = {
+						{ 49.4, 40.7, KORTHIA },
+						{ 49.9, 32.5, KORTHIA },
+						{ 53.7, 37.9, KORTHIA },
+					},
 					["g"] = {
 						i(186990),	-- Recipe: Blossom Burst
 						i(186988),	-- Recipe: Glory Burst
 						i(186989),	-- Recipe: Marrow Burst
+						i(186987),	-- Recipe: Torch Burst
 						i(186986),	-- Recipe: Widow Burst
 						i(187153),	-- Tasty Mawshroom
 					},
@@ -105,6 +112,7 @@ _.Zones =
 					["questID"] = 64355,
 					["isDaily"] = true,
 					["coords"] = {
+						{ 42.3, 34.6, KORTHIA },
 						{ 43.6, 36.6, KORTHIA },
 						{ 45.6, 34.3, KORTHIA },
 					},
@@ -112,6 +120,7 @@ _.Zones =
 						i(186990),	-- Recipe: Blossom Burst
 						i(186988),	-- Recipe: Glory Burst
 						i(186989),	-- Recipe: Marrow Burst
+						i(186987),	-- Recipe: Torch Burst
 						i(186986),	-- Recipe: Widow Burst
 						i(187153),	-- Tasty Mawshroom
 					},
@@ -119,11 +128,15 @@ _.Zones =
 				o(369331, {	-- Invasive Mawshroom
 					["questID"] = 64356,
 					["isDaily"] = true,
-					["coord"] = { 39.7, 34.8, KORTHIA },
+					["coords"] = {
+						{ 35.7, 31.1, KORTHIA },
+						{ 39.7, 34.8, KORTHIA },
+					},
 					["g"] = {
 						i(186990),	-- Recipe: Blossom Burst
 						i(186988),	-- Recipe: Glory Burst
 						i(186989),	-- Recipe: Marrow Burst
+						i(186987),	-- Recipe: Torch Burst
 						i(186986),	-- Recipe: Widow Burst
 						i(187153),	-- Tasty Mawshroom
 					},
@@ -131,11 +144,16 @@ _.Zones =
 				o(369332, {	-- Invasive Mawshroom
 					["questID"] = 64357,
 					["isDaily"] = true,
-					["coord"] = { 39.6, 30.0, KORTHIA },
+					["coords"] = {
+						{ 39.6, 30.0, KORTHIA },
+						{ 41.2, 44.9, KORTHIA },
+						{ 54.8, 55.5, KORTHIA },
+					},
 					["g"] = {
 						i(186990),	-- Recipe: Blossom Burst
 						i(186988),	-- Recipe: Glory Burst
 						i(186989),	-- Recipe: Marrow Burst
+						i(186987),	-- Recipe: Torch Burst
 						i(186986),	-- Recipe: Widow Burst
 						i(187153),	-- Tasty Mawshroom
 					},
@@ -251,6 +269,7 @@ _.Zones =
 							i(185858),	-- Korthian Caretaker's Crest
 							i(186666),	-- Korthian Caretaker's Crown
 							i(186736),	-- Shardhide Leather Cowl
+							i(185864),	-- Shardhide Leather Hood
 						}),
 						i(187442),	-- Scholar's Ancient Pack
 						i(187008),	-- Recipe: Porous Rock Candy
@@ -259,12 +278,14 @@ _.Zones =
 				o(369334, {	-- Nest of Unusual Materials
 					["questID"] = 64359,
 					["isDaily"] = true,
-					["coord"] = { 42.4, 54.8, KORTHIA },
+				--	["coord"] = { 42.4, 54.8, KORTHIA },
+					["coord"] = { 42.2, 55.9, KORTHIA },	-- TODO: figure out if old coord still exists - this one was particularly irritating to get to so they may have just moved it.
 					["g"] = {
 						i(187440, {	-- Feather-Stuffed Helm
 							i(185858),	-- Korthian Caretaker's Crest
 							i(186666),	-- Korthian Caretaker's Crown
 							i(186736),	-- Shardhide Leather Cowl
+							i(185864),	-- Shardhide Leather Hood
 						}),
 						i(187442),	-- Scholar's Ancient Pack
 						i(187008),	-- Recipe: Porous Rock Candy
@@ -280,6 +301,7 @@ _.Zones =
 							i(185858),	-- Korthian Caretaker's Crest
 							i(186666),	-- Korthian Caretaker's Crown
 							i(186736),	-- Shardhide Leather Cowl
+							i(185864),	-- Shardhide Leather Hood
 						}),
 						i(187442),	-- Scholar's Ancient Pack
 						i(187008),	-- Recipe: Porous Rock Candy
@@ -294,6 +316,7 @@ _.Zones =
 							i(185858),	-- Korthian Caretaker's Crest
 							i(186666),	-- Korthian Caretaker's Crown
 							i(186736),	-- Shardhide Leather Cowl
+							i(185864),	-- Shardhide Leather Hood
 						}),
 						i(187442),	-- Scholar's Ancient Pack
 						i(187008),	-- Recipe: Porous Rock Candy
@@ -308,6 +331,7 @@ _.Zones =
 							i(185858),	-- Korthian Caretaker's Crest
 							i(186666),	-- Korthian Caretaker's Crown
 							i(186736),	-- Shardhide Leather Cowl
+							i(185864),	-- Shardhide Leather Hood
 						}),
 						i(187442),	-- Scholar's Ancient Pack
 						i(187008),	-- Recipe: Porous Rock Candy
@@ -332,6 +356,7 @@ _.Zones =
 						{ 27.2, 48.3, KORTHIA },	-- Pile of Bones
 						{ 28.2, 50.7, KORTHIA },	-- Pile of Bones
 						{ 29.3, 47.1, KORTHIA },	-- Pile of Bones
+						{ 29.5, 53.4, KORTHIA },	-- Pile of Bones
 						{ 30.9, 45.7, KORTHIA },	-- Pile of Bones
 						{ 32.7, 42.0, KORTHIA },	-- Pile of Bones
 						{ 32.8, 45.3, KORTHIA },	-- Pile of Bones
@@ -346,6 +371,7 @@ _.Zones =
 					},
 					["g"] = {
 						i(187007),	-- Recipe: Bonemeal Bread
+						i(187442),	-- Scholar's Ancient Pack
 					},
 				}),
 				o(369292, {	-- Relic Cache
@@ -355,6 +381,7 @@ _.Zones =
 					["coords"] = {
 						{ 44.4, 77.3, KORTHIA },	-- Relic Cache
 						{ 45.6, 81.4, KORTHIA },	-- Relic Cache
+						{ 46.3, 56.7, KORTHIA },	-- Relic Cache
 						{ 47.2, 76.8, KORTHIA },	-- Relic Cache
 						{ 50.6, 67.1, KORTHIA },	-- Relic Cache
 						{ 53.9, 76.1, KORTHIA },	-- Relic Cache
@@ -365,6 +392,7 @@ _.Zones =
 						{ 56.3, 67.6, KORTHIA },	-- Relic Cache
 						{ 56.8, 38.8, KORTHIA },	-- Relic Cache
 						{ 57.3, 34.9, KORTHIA },	-- Relic Cache
+						{ 57.3, 48.0, KORTHIA },	-- Relic Cache
 						{ 58.8, 33.6, KORTHIA },	-- Relic Cache
 						{ 59.8, 35.9, KORTHIA },	-- Relic Cache
 						{ 60.3, 39.0, KORTHIA },	-- Relic Cache
@@ -445,5 +473,6 @@ _.HiddenQuestTriggers = {
 	q(64317),	-- 2nd loot of shared treasure in Korthia (Pile of Bones, Relic Cache, Shardhide Stash)
 	q(64318),	-- 3rd loot of shared treasure in Korthia (Pile of Bones, Relic Cache, Shardhide Stash)
 	q(64564),	-- 4th loot of shared treasure in Korthia (Pile of Bones, Relic Cache, Shardhide Stash) - this # loot used to be 64309, but they changed it at some point on PTR
---	q(64310),	-- popped when i looted the #64310 Invasive Mawshroom at its second location (57.3, 39.4) - may be tied to receiving a Repaired Riftkey, commenting until confirmed
+	q(64310),	-- looting a Repaired Riftkey (also pops when looting one from rares)
+	q(64311),	-- looting a Teleporter Repair Kit (also pops looting one from rares)
 };

@@ -19,8 +19,7 @@ _.Zones =
 					},
 				}),
 				ach(15107, {	-- Conquering Korthia
-					crit(7),	-- Deadsoul Hatcher
-					crit(11),	-- Fallen Charger
+					crit(4),	-- Deadsoul Hatcher
 				}),
 				ach(15066),		-- Reliquary Restoration
 				ach(15099),	-- Treasures of Korthia

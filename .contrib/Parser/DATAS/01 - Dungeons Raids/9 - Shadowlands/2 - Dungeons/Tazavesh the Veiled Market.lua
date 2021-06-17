@@ -19,6 +19,28 @@ _.Instances = { tier(9, {	-- Shadowlands
 		["lvl"] = { 60 },
 		["g"] = {
 			--	TODO: add fp to fpdb / verify FP's name
+			n(ACHIEVEMENTS, {
+				ach(15190, {	-- Mischief!	-- TODO: may need to be moved to specific bosses depending on where these criteria can be found
+					crit(1, {	-- Pickle
+						["cr"] = 180817,	-- Pickle
+					}),
+					crit(2, {	-- Oswald
+						["cr"] = 180818,	-- Oswald
+					}),
+					crit(3, {	-- Sassafras
+						["cr"] = 180821,	-- Sassafras
+					}),
+					crit(4, {	-- Goblin
+						["cr"] = 180822,	-- Goblin
+					}),
+					crit(5, {	-- Pancake
+						["cr"] = 180823,	-- Pancake
+					}),
+					crit(6, {	-- Waffle
+						["cr"] = 180824,	-- Waffle
+					}),
+				}),
+			}),
 			filter(101, {	-- Battle Pets
 				pet(3108, {	-- Curious Purrkin
 					["cr"] = 179164,	-- Curious Purrkin
@@ -211,7 +233,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 					e(2455, {	-- So'leah
 					--	["crs"] = {  },	-- 
 						["g"] = {
-							ach(15178),	-- Fake It 'Til You Make It
+							ach(15178, {	-- Fake It 'Til You Make It
+								i(186637),	-- Tazavesh Gearglider (MOUNT!)
+							}),
 							ach(15177),	-- Tazavesh, the Veiled Market
 							i(181838),	-- Charitable Soul
 							i(182304),	-- Divine Call

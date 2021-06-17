@@ -388,6 +388,7 @@ i(186644, 347810);	-- Beryl Shardhide
 i(186645, 354357);	-- Crimson Shardhide
 i(186646, 354358);	-- Darkmaul
 i(186482, 353875);	-- Elysian Aquilon
+i(186659, 354353);	-- Fallen Charger
 i(186649, 354359);	-- Fierce Razorwing
 i(186483, 353877);	-- Foresworn Aquilon
 i(186652, 354360);	-- Garnet Razorwing
@@ -407,6 +408,7 @@ i(186648, 347251);	-- Soaring Razorwing
 i(186657, 354352);	-- Soulbound Gloomcharger
 i(186492, 353859);	-- Summer Wilderling
 i(186641, 347536);	-- Tamed Mauler
+i(186637, 346554);	-- Tazavesh Gearglider
 i(186103, 352742);	-- Undying Darkhound
 i(186642, 351195);	-- Vengeance
 i(186178, 348770);	-- Vicious War Gorm (A)

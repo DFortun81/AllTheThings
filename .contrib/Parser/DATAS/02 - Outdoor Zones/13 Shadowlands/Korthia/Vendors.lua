@@ -107,7 +107,7 @@ _.Zones =
 							["cost"] = { { "c", 1767, 1000 } },	-- 1,000x Stygia
 							["g"] = {	-- * are next to ones i have seen (there are a couple sets so not sure if both exist)
 								f(3,    {	-- Cloaks
-									i(186770),	-- Vault Attendant's Cape
+									i(186770),	-- Vault Attendant's Cape*
 									i(185905),	-- Vault Guardian's Drape*
 								}),
 								f(4,    {	-- Cloth
@@ -120,7 +120,7 @@ _.Zones =
 									i(186670),	-- Korthian Caretaker's Mantle
 									i(186665),	-- Korthian Caretaker's Mitts*
 									i(186667),	-- Korthian Caretaker's Pantaloons*
-									i(185855),	-- Korthian Caretaker's Robes
+									i(185855),	-- Korthian Caretaker's Robes*
 									i(186664),	-- Korthian Caretaker's Sandals*
 									i(186668),	-- Korthian Caretaker's Sash
 									i(185886),	-- Korthian Caretaker's Shoulderpads*

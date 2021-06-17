@@ -67,6 +67,7 @@ _.Mounts =
 		i(180723),	-- Enchanted Wakener's Runestag
 		i(78919),	-- Experiment 12-B
 		i(169201),	-- Fabious
+		i(186659),	-- Fallen Charger
 		i(138201),	-- Fathom Dweller
 		i(137574),	-- Felblaze Infernal
 		i(152841),	-- Felglow Mana Ray Mount

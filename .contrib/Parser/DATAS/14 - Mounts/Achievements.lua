@@ -98,6 +98,7 @@ _.Mounts =
 		i(156486),	-- Starcursed Voidstrider (A)
 		i(120968),	-- Summon Chauffeur (A)
 		i(122703),	-- Summon Chauffeur (H)
+		i(186637),	-- Tazavesh Gearglider
 		i(77068),	-- Twilight Harbinger
 		i(165020, {	-- Vicious Black Bonesteed
 			["races"] = HORDE_ONLY,

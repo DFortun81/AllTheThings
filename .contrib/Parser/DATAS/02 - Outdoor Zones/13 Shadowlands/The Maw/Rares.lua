@@ -37,6 +37,7 @@ _.Zones =
 						--	Korthia
 							179931,	-- Relic Breaker Krelva
 							179985,	-- Stygian Stonecrusher
+							179760,	-- Towering Exterminator
 						},
 						["g"] = {
 							i(183409),	-- Decaying Mawrat
@@ -316,6 +317,17 @@ _.Zones =
 								}),
 							},
 						}),
+					},
+				}),
+				n(179460, {	-- Fallen Charger
+					["description"] = "It spawns in the Crucible of the Damned with a zonewide announcement: |cFFff8040An earsplitting whinny echoes across the Maw as the Fallen Charger begins its ride.|r\n\nIt runs through the Tremaculum, south past Ve'nari's Refuge, and into the Beastwarrens.\n\nIf it makes it all the way to Korthia, it despawns with another zonewide announcement: |cFFff8040Fallen Charger releases a final mournful whinny as it fades away.|r",
+					["questID"] = 64164,
+					["isDaily"] = true,
+					["g"] = {
+						crit(8, {	-- Fallen Charger
+							["achievementID"] = 15107,	-- Conquering Korthia
+						}),
+						i(186659),	-- Fallen Charger (MOUNT!)
 					},
 				}),
 				n(172523, {	-- Houndmaster Vasanok
