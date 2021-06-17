@@ -5089,7 +5089,13 @@ local function RefreshCollections()
 			end
 			coroutine.yield();
 		end
-		app:RefreshData(false, false, true);
+
+		-- Need to update the Settings window as well if User does not have auto-refresh for Settings
+		if app.Settings:Get("Skip:AutoRefresh") then
+			app.Settings:UpdateMode("FORCE");
+		else
+			app:RefreshData(false, false, true);
+		end
 
 		-- Wait for refresh to actually finish
 		while app.refreshing["RefreshData"] do coroutine.yield(); end
