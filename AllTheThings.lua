@@ -5091,7 +5091,7 @@ local function RefreshCollections()
 		end
 
 		-- Need to update the Settings window as well if User does not have auto-refresh for Settings
-		if app.Settings:Get("Skip:AutoRefresh") then
+		if app.Settings:Get("Skip:AutoRefresh") or app.Settings.NeedsRefresh then
 			app.Settings:UpdateMode("FORCE");
 		else
 			app:RefreshData(false, false, true);
