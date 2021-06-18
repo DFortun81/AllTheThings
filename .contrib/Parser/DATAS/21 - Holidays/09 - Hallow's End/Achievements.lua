@@ -495,12 +495,12 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { 51 },	-- Swamp of Sorrows
 										}),
 										crit(23, {	-- Tirisfal Glades, Brill
-											["coord"] = { 60.9, 51.5, 18 },
-											["maps"] = { 18 },	-- Tirisfal Glades
+											["coord"] = { 60.9, 51.5, TIRISFAL_GLADES },
+											["maps"] = { TIRISFAL_GLADES },
 										}),
 										crit(24, {	-- Tirisfal Glades, The Bulwark
-											["coord"] = { 83.0, 72.0, 18 },
-											["maps"] = { 18 },	-- Tirisfal Glades
+											["coord"] = { 83.0, 72.0, TIRISFAL_GLADES },
+											["maps"] = { TIRISFAL_GLADES },
 										}),
 										crit(25, {	-- Undercity, The Trade Quarter
 											["coord"] = { 67.7, 37.9, 90 },

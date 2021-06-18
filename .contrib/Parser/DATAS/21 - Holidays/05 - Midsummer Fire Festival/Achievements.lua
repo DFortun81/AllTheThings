@@ -366,9 +366,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { THE_HINTERLANDS },
 									}),
 									crit(13, {	-- Tirisfal Glades
-										["coord"] = { 57.0, 51.9, 18 },
+										["coord"] = { 57.0, 51.9, TIRISFAL_GLADES },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 18 },	-- Tirisfal Glades
+										["maps"] = { TIRISFAL_GLADES },
 									}),
 									crit(14, {	-- Western Plaguelands
 										["coord"] = { 28.9, 56.8, 22 },
@@ -792,9 +792,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { THE_HINTERLANDS },
 									}),
 									crit(13, {	-- Tirisfal Glades
-										["coord"] = { 57.2, 51.8, 18 },
+										["coord"] = { 57.2, 51.8, TIRISFAL_GLADES },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 18 },	-- Tirisfal Glades
+										["maps"] = { TIRISFAL_GLADES },
 									}),
 									crit(14, {	-- Western Plaguelands
 										["coord"] = { 29.2, 57.3, 22 },

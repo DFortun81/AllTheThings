@@ -61,7 +61,7 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 							["maps"] = { 7 },	-- Bloodhoof Village
 						}),
 						crit(2, {	-- Brill
-							["maps"] = { 18 },	-- Tirisfal Glades
+							["maps"] = { TIRISFAL_GLADES },
 						}),
 						crit(3, {	-- Falconwing Square
 							["maps"] = { EVERSONG_WOODS },

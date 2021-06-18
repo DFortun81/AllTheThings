@@ -152,7 +152,7 @@ _.ExpansionFeatures =
 					q(40706, {	-- A Legend You Can Hold
 						["sourceQuests"] = { 40705 },	-- Priestly Matters
 						["classes"] = { PRIEST },
-						["coord"] = { 78.9, 41.0, 18 },	-- Eastern Kingdom
+						["coord"] = { 78.9, 41.0, TIRISFAL_GLADES },
 						["provider"] = { "n", 101314 },	-- Alonsus Faol
 					}),
 					q(41626, {	-- A New Threat
@@ -639,7 +639,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 40706 },	-- A Legend You Can Hold
 						["classes"] = { PRIEST },
 						["provider"] = { "n", 101314 },	-- Alonsus Faol
-						["coord"] = { 78.9, 41.0, 18},
+						["coord"] = { 78.9, 41.0, TIRISFAL_GLADES },
 					}),
 					q(45349, {	-- To the Broken Shore
 						-- TBD: fill in other fields

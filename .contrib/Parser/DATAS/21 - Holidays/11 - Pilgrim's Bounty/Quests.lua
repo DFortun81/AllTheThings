@@ -206,7 +206,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 				["races"] = HORDE_ONLY,
 				["maps"] = {
 					1,		-- Durotar
-					18,		-- Tirisfal Glades
+					TIRISFAL_GLADES,
 					EVERSONG_WOODS,
 					HELLFIRE_PENINSULA,
 				},

@@ -5,13 +5,13 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(18, {	-- Tirisfal Glades
+		m(TIRISFAL_GLADES, {
 			n(FLIGHT_PATHS, {
 				fp(460, {	-- Brill, Tirisfal Glades [Horde]
-					["coord"] = { 58.8, 51.8, 18 },
+					["coord"] = { 58.8, 51.8, TIRISFAL_GLADES },
 				}),
 				fp(384, {	-- The Bulwark, Tirisfal
-					["coord"] = { 83.4, 70, 18 },
+					["coord"] = { 83.4, 70.0, TIRISFAL_GLADES },
 				}),
 			}),
 		}),

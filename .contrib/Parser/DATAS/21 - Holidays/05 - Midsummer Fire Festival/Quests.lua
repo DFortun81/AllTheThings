@@ -388,10 +388,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11786, {	-- Desecrate this Fire! — Tirisfal Glades
 				["isYearly"] = true,
 				["provider"] = { "o", 187559 },	-- Horde Bonfire
-				["coord"] = { 57.0, 51.9, 18 },
+				["coord"] = { 57.0, 51.9, TIRISFAL_GLADES },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
-				["maps"] = { 18 },	-- Tirisfal Glades
+				["maps"] = { TIRISFAL_GLADES },
 			}),
 			q(28944, {	-- Desecrate this Fire! — Twilight Highlands
 				["isYearly"] = true,
@@ -1606,9 +1606,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11862, {	-- Honor the Flame — Tirisfal Glades
 				["provider"] = { "n", 25946 },	-- Tirisfal Glades Flame Keeper
 				["isYearly"] = true,
-				["coord"] = { 57.2, 51.8, 18 },
+				["coord"] = { 57.2, 51.8, TIRISFAL_GLADES },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 18 },	-- Tirisfal Glades
+				["maps"] = { TIRISFAL_GLADES },
 			}),
 			q(28946, {	-- Honor the Flame — Twilight Highlands
 				["provider"] = { "n", 51651 },	-- Twilight Highlands Flame Keeper
@@ -1952,7 +1952,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					1,		-- Durotar
 					7,		-- Mulgore
 					NORTHERN_BARRENS,
-					18,		-- Tirisfal Glades
+					TIRISFAL_GLADES,
 					ASHENVALE,
 					TANARIS,
 					AZSHARA,

@@ -39,13 +39,13 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["coords"] = {
 					{ 52.6, 41.5, 1  },	-- Durotar
 					{ 47.2, 46.4, EVERSONG_WOODS },
-					{ 60.8, 53.6, 18 }	-- Tirisfal Glades
+					{ 60.8, 53.6, TIRISFAL_GLADES },
 				},
 				["races"] = HORDE_ONLY,
 				["maps"] = {
 					1,  -- Durotar
 					EVERSONG_WOODS,
-					18 -- Tirisfal Glades
+					TIRISFAL_GLADES,
 				},
 				["g"] = {
 					i(20557),	-- Hallow's End Pumpkin Treat
@@ -123,10 +123,10 @@ _.Holidays = bubbleDown({["u"] = 26},
 			q(29377, {	-- A Time to Break Down
 				["provider"] = { "n", 15197 },	-- Darkcaller Yanka
 				["sourceQuest"] = 29400,	-- A Season for Celebration
-				["coord"] = { 62.0, 67.8, 18 },
+				["coord"] = { 62.0, 67.8, TIRISFAL_GLADES },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
-				["maps"] = { 18 }, -- Tirisfal Glades
+				["maps"] = { TIRISFAL_GLADES },
 				["g"] = {
 					i(33226),	-- Tricky Treat
 				},
@@ -134,10 +134,10 @@ _.Holidays = bubbleDown({["u"] = 26},
 			q(29376, {	-- A Time to Build Up
 				["provider"] = { "n", 15197 },	-- Darkcaller Yanka
 				["sourceQuest"] = 29400,	-- A Season for Celebration
-				["coord"] = { 62.0, 67.8, 18 },
+				["coord"] = { 62.0, 67.8, TIRISFAL_GLADES },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
-				["maps"] = { 18 }, -- Tirisfal Glades
+				["maps"] = { TIRISFAL_GLADES },
 				["g"] = {
 					i(33226),	-- Tricky Treat
 				},
@@ -1695,18 +1695,18 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12363, {	-- Candy Bucket — Tirisfal Glades, Brill, Horde
 				["isYearly"] = true,
-				["coord"] = { 60.9, 51.5, 18 },
+				["coord"] = { 60.9, 51.5, TIRISFAL_GLADES },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 18 },	-- Tirisfal Glades
+				["maps"] = { TIRISFAL_GLADES },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(28972, {	-- Candy Bucket — Tirisfal Glades, The Bulwark, Horde
 				["isYearly"] = true,
-				["coord"] = { 83.0, 72.0, 18 },
+				["coord"] = { 83.0, 72.0, TIRISFAL_GLADES },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 18 },	-- Tirisfal Glades
+				["maps"] = { TIRISFAL_GLADES },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -2062,10 +2062,10 @@ _.Holidays = bubbleDown({["u"] = 26},
 			q(29375, {	-- Clean Up in Undercity
 				["provider"] = { "n", 53763 },	-- Candace Fenlow
 				["sourceQuest"] = 29400,	-- A Season for Celebration
-				["coord"] = { 62.4, 66.7, 18 },	-- Tirisfal Glades
+				["coord"] = { 62.4, 66.7, TIRISFAL_GLADES },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
-				["maps"] = { 18 },	-- Tirisfal Glades
+				["maps"] = { TIRISFAL_GLADES },
 				["g"] = {
 					i(33226),	-- Tricky Treat
 				},
@@ -2187,9 +2187,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 			q(11449, {	-- Fire Training (Tirisfal Glades)
 				["sourceQuests"] = { 11357 },	-- Masked Orphan Matron
 				["provider"] = { "n", 23973 },	-- Masked Orphan Matron
-				["coord"] = { 52.5, 41.2, 18 },	-- Tirisfal Glades
+				["coord"] = { 52.5, 41.2, TIRISFAL_GLADES },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 18 },	-- Tirisfal Glades
+				["maps"] = { TIRISFAL_GLADES },
 				["g"] = {
 					i(33226),	-- Tricky Treat
 				},
@@ -2240,9 +2240,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 			q(8312,  {	-- Hallow's End Treats for Spoops!
 				["isYearly"] = true,
 				["provider"] = { "n", 15309 },	-- Spoops
-				["coord"] = { 62.1, 66.4, 18 },	-- Tirisfal Glades
+				["coord"] = { 62.1, 66.4, TIRISFAL_GLADES },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 18 },	-- Tirisfal Glades
+				["maps"] = { TIRISFAL_GLADES },
 				["g"] = {
 					i(33226),	-- Tricky Treat
 				},
@@ -2361,13 +2361,13 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["coords"] = {
 					{ 52.6, 41.5, 1  },	-- Durotar
 					{ 47.2, 46.4, EVERSONG_WOODS },
-					{ 60.8, 53.6, 18 }	-- Tirisfal Glades
+					{ 60.8, 53.6, TIRISFAL_GLADES },
 				},
 				["races"] = HORDE_ONLY,
 				["maps"] = {
 					1,  -- Durotar
 					EVERSONG_WOODS,
-					18, -- Tirisfal Glades
+					TIRISFAL_GLADES,
 				},
 				["g"] = {
 					i(34077),	-- Crudely Wrapped Gift
@@ -2388,9 +2388,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["provider"] = { "n", 53763 },	-- Candace Fenlow
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 29400,	-- A Season for Celebration
-				["coord"] = { 62.4, 66.7, 18 },
+				["coord"] = { 62.4, 66.7, TIRISFAL_GLADES },
 				["isDaily"] = true,
-				["maps"] = { 18 },	-- Tirisfal Glades
+				["maps"] = { TIRISFAL_GLADES },
 				["g"] = {
 					i(33226),	-- Tricky Treat
 				},
@@ -2401,13 +2401,13 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["coords"] = {
 					{ 52.6, 41.5, 1  },	-- Durotar
 					{ 47.2, 46.4, EVERSONG_WOODS },
-					{ 60.8, 53.6, 18 }	-- Tirisfal Glades
+					{ 60.8, 53.6, TIRISFAL_GLADES },
 				},
 				["races"] = HORDE_ONLY,
 				["maps"] = {
 					1,  -- Durotar
 					EVERSONG_WOODS,
-					18, -- Tirisfal Glades
+					TIRISFAL_GLADES,
 				},
 				["g"] = {
 					i(20557),	-- Hallow's End Pumpkin Treat
@@ -2498,7 +2498,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["maps"] = {
 					1,	-- Durotar
 					EVERSONG_WOODS,
-					18,	-- Tirisfal Glades
+					TIRISFAL_GLADES,
 				},
 			}),
 			q(43162, {	-- Under the Crooked Tree

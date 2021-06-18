@@ -8,14 +8,14 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 			n(32837, {	-- Noblegarden Merchant
 				["coords"] = {
 					{ 47.11, 59.89, 7 },	-- Bloodhoof Village, Mulgore
-					{ 61.35, 52.98, 18 },	-- Brill, Tirisfal Glades
-					{ 47.64, 47.31, EVERSONG_WOODS },	-- Falconwing Square, Eversong Woods
+					{ 61.35, 52.98, TIRISFAL_GLADES },	-- Brill
+					{ 47.64, 47.31, EVERSONG_WOODS },	-- Falconwing Square
 					{ 51.91, 41.87, 1 },	-- Razor Hill, Durotar
 				},
 				["maps"] = {
 					1,	-- Durotar
 					7,	-- Mulgore
-					18,	-- Tirisfal Glades
+					TIRISFAL_GLADES,
 					EVERSONG_WOODS,
 				},
 				["races"] = HORDE_ONLY,

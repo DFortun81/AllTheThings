@@ -312,8 +312,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["description"] = "In order to view this Elder, visit Zidormi at 69.4, 62.7 to see Tirisfal Glades before the Battle for Lordaeron.",
 				["provider"] = { "n", 15568 },	-- Elder Graveborn
 				["isYearly"] = true,
-				["coord"] = { 61.8, 53.9, 18 },
-				["maps"] = { 18 },	-- Tirisfal Glades
+				["coord"] = { 61.8, 53.9, TIRISFAL_GLADES },
+				["maps"] = { TIRISFAL_GLADES },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(13, {	-- Elder Graveborn in Brill
