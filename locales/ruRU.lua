@@ -204,6 +204,8 @@ local L = app.L;
 	L.QUEST_LOOP = "Скорее всего ATT вырвался из цепочки зацикленных заданий.";
 	L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT = "Задание '%s' [%d] не позволит собрать Хлебную Крошку [%d]";
 	L.QUEST_OBJECTIVE_INVALID = "Недействительная Цель Задания";
+	L.REFRESHING_COLLECTION = "Обновление коллекции...";
+	L.DONE_REFRESHING = "Коллекция обновлена.";
 
 	-- Item Filter Window
 		L.ITEM_FILTER_TEXT = "Фильтровать предметы";

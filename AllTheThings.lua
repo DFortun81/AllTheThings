@@ -4976,7 +4976,7 @@ end
 local function RefreshCollections()
 	StartCoroutine("RefreshingCollections", function()
 		while InCombatLockdown() do coroutine.yield(); end
-		app.print("Refreshing collection...");
+		app.print(L["REFRESHING_COLLECTION"]);
 		app.RefreshQuestInfo();
 
 		-- Harvest Illusion Collections
@@ -5101,7 +5101,7 @@ local function RefreshCollections()
 		while app.refreshing["RefreshData"] do coroutine.yield(); end
 
 		-- Report success.
-		app.print("Done refreshing collection.");
+		app.print(L["DONE_REFRESHING"]);
 	end);
 end
 local function GetGroupSortValue(group)
