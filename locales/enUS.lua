@@ -1134,6 +1134,7 @@ app.L = {
 		[-691] = "Interface\\Icons\\inv_protodrakegladiatormount_purple",					-- Notorious Gladiator: Battle for Azeroth Season 3
 		[-692] = "Interface\\Icons\\inv_protodrakegladiatormount_black",					-- Corrupted Gladiator: Battle for Azeroth Season 4
 		[-693] = "Interface\\Icons\\inv_shadebeastmount",									-- Sinful Gladiator: Shadowlands Season 1
+		[-798] = app.asset("Category_SelfieFilters"),										-- Selfie Filter
 		[-799] = "775461",																	-- Burden of Eternity
 		[-800] = "Interface\\Icons\\inv_horse2purple",										-- Lucid Nightmare
 		[-801] = "Interface\\Icons\\inv_serpentmount_darkblue",								-- Riddler's Mind-Worm
@@ -1934,7 +1935,7 @@ app.L = {
 	-- Shadowlands PvP Seasons
 		[-693] = select(2, GetAchievementInfo(14690)),							-- Sinful Gladiator: Shadowlands Season 1
 
-
+		[-798] = "Selfie Filter",												-- Selfie Filter
 		[-799] = "Burden of Eternity",											-- Burden of Eternity
 
 	-- Secret Header [Maybe need to change the numbers again when I need more space for PvP -- sadidorf]
