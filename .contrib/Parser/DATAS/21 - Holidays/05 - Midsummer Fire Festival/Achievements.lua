@@ -86,9 +86,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { 210 },	-- The Cape of Stranglethorn
 									}),
 									crit(13, {	-- The Hinterlands
-										["coord"] = { 14.4, 50.2, 26 },
+										["coord"] = { 14.4, 50.2, THE_HINTERLANDS },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 26 },	-- The Hinterlands
+										["maps"] = { THE_HINTERLANDS },
 									}),
 									crit(14, {	-- Western Plaguelands
 										["coord"] = { 43.5, 82.2, 22 },
@@ -361,9 +361,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { 210 },	-- The Cape of Stranglethorn
 									}),
 									crit(12, {	-- The Hinterlands
-										["coord"] = { 76.4, 74.5, 26 },
+										["coord"] = { 76.4, 74.5, THE_HINTERLANDS },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 26 },	-- The Hinterlands
+										["maps"] = { THE_HINTERLANDS },
 									}),
 									crit(13, {	-- Tirisfal Glades
 										["coord"] = { 57.0, 51.9, 18 },
@@ -787,9 +787,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { 210 },	-- The Cape of Stranglethorn
 									}),
 									crit(12, {	-- The Hinterlands
-										["coord"] = { 76.6, 75.0, 26 },
+										["coord"] = { 76.6, 75.0, THE_HINTERLANDS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 26 },	-- The Hinterlands
+										["maps"] = { THE_HINTERLANDS },
 									}),
 									crit(13, {	-- Tirisfal Glades
 										["coord"] = { 57.2, 51.8, 18 },
@@ -1062,9 +1062,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { 210 },	-- The Cape of Stranglethorn
 									}),
 									crit(13, {	-- The Hinterlands
-										["coord"] = { 14.5, 50.0, 26 },
+										["coord"] = { 14.5, 50.0, THE_HINTERLANDS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 26 },	-- The Hinterlands
+										["maps"] = { THE_HINTERLANDS },
 									}),
 									crit(14, {	-- Western Plaguelands
 										["coord"] = { 43.6, 82.5, 22 },

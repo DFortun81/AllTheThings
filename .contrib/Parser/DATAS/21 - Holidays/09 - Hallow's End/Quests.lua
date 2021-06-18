@@ -907,36 +907,36 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12351, {	-- Candy Bucket — Hinterlands, Aerie Peak, Alliance
 				["isYearly"] = true,
-				["coord"] = { 14.2, 44.7, 26 },
+				["coord"] = { 14.2, 44.7, THE_HINTERLANDS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 26 },	-- The Hinterlands
+				["maps"] = { THE_HINTERLANDS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(28971, {	-- Candy Bucket — Hinterlands, Hiri'watha Research Station, Horde
 				["isYearly"] = true,
-				["coord"] = { 31.9, 57.9, 26 },
+				["coord"] = { 31.9, 57.9, THE_HINTERLANDS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 26 },	-- The Hinterlands
+				["maps"] = { THE_HINTERLANDS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12387, {	-- Candy Bucket — Hinterlands, Revantusk Village, Horde
 				["isYearly"] = true,
-				["coord"] = { 78.2, 81.4, 26 },
+				["coord"] = { 78.2, 81.4, THE_HINTERLANDS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 26 },	-- The Hinterlands
+				["maps"] = { THE_HINTERLANDS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(28970, {	-- Candy Bucket — Hinterlands, Stormfeather Outpost, Alliance
 				["isYearly"] = true,
-				["coord"] = { 66.2, 44.4, 26 },
+				["coord"] = { 66.2, 44.4, THE_HINTERLANDS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 26 },	-- The Hinterlands
+				["maps"] = { THE_HINTERLANDS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},

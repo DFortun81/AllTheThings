@@ -380,10 +380,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11784, {	-- Desecrate this Fire! — The Hinterlands
 				["isYearly"] = true,
 				["provider"] = { "o", 187972 },	-- Horde Bonfire
-				["coord"] = { 76.4, 74.5, 26 },
+				["coord"] = { 76.4, 74.5, THE_HINTERLANDS },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
-				["maps"] = { 26 },	-- The Hinterlands
+				["maps"] = { THE_HINTERLANDS },
 			}),
 			q(11786, {	-- Desecrate this Fire! — Tirisfal Glades
 				["isYearly"] = true,
@@ -806,10 +806,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11755, {	-- Desecrate this Fire! — The Hinterlands
 				["isYearly"] = true,
 				["provider"] = { "o", 187938 },	-- Alliance Bonfire (this isn't linked to the quest on wowhead, but it's the Alliance Bonfire listed in this zone)
-				["coord"] = { 14.5, 50.0, 26 },
+				["coord"] = { 14.5, 50.0, THE_HINTERLANDS },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-				["maps"] = { 26 },	-- The Hinterlands
+				["maps"] = { THE_HINTERLANDS },
 			}),
 			q(54736, {	-- Desecrate this Fire! — Tiragarde Sound
 				["isYearly"] = true,
@@ -1219,9 +1219,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11826, {	-- Honor the Flame — The Hinterlands
 				["provider"] = { "n", 25908 },	-- The Hinterlands Flame Warden
 				["isYearly"] = true,
-				["coord"] = { 14.4, 50.2, 26 },
+				["coord"] = { 14.4, 50.2, THE_HINTERLANDS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 26 },	-- The Hinterlands
+				["maps"] = { THE_HINTERLANDS },
 			}),
 			q(54737, {	-- Honor the Flame — Tiragarde Sound
 				["provider"] = { "n", 148917 },	-- Tiragarde Sound Flame Warden
@@ -1599,9 +1599,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11860, {	-- Honor the Flame — The Hinterlands
 				["provider"] = { "n", 25944 },	-- The Hinterlands Flame Keeper
 				["isYearly"] = true,
-				["coord"] = { 76.6, 75.0, 26 },
+				["coord"] = { 76.6, 75.0, THE_HINTERLANDS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 26 },	-- The Hinterlands
+				["maps"] = { THE_HINTERLANDS },
 			}),
 			q(11862, {	-- Honor the Flame — Tirisfal Glades
 				["provider"] = { "n", 25946 },	-- Tirisfal Glades Flame Keeper
@@ -1906,7 +1906,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					BADLANDS,
 					BLASTED_LANDS,
 					22,		-- Western Plaguelands
-					26,		-- The Hinterlands
+					THE_HINTERLANDS,
 					DUN_MOROGH,
 					BURNING_STEPPES,
 					37,		-- Elwynn Forest

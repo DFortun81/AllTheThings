@@ -324,8 +324,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8643,  {	-- Highpeak the Elder
 				["provider"] = { "n", 15559 },	-- Elder Highpeak
 				["isYearly"] = true,
-				["coord"] = { 49.9, 47.9, 26 },
-				["maps"] = { 26 },	-- The Hinterlands
+				["coord"] = { 49.9, 47.9, THE_HINTERLANDS },
+				["maps"] = { THE_HINTERLANDS },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(11, {	-- Elder Highpeak in The Hinterlands

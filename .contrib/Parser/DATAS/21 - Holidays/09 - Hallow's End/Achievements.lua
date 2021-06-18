@@ -338,12 +338,12 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { 37 },	-- Elwynn Forest
 										}),
 										crit(11, {	-- The Hinterlands, Aerie Peak
-											["coord"] = { 14.2, 44.7, 26 },
-											["maps"] = { 26 },	-- The Hinterlands
+											["coord"] = { 14.2, 44.7, THE_HINTERLANDS },
+											["maps"] = { THE_HINTERLANDS },
 										}),
 										crit(12, {	-- The Hinterlands, Stormfeather Outpost
-											["coord"] = { 66.2, 44.4, 26 },
-											["maps"] = { 26 },	-- The Hinterlands
+											["coord"] = { 66.2, 44.4, THE_HINTERLANDS },
+											["maps"] = { THE_HINTERLANDS },
 										}),
 										crit(13, {	-- Ironforge, The Commons
 											["coord"] = { 18.6, 51.3, IRONFORGE },
@@ -455,12 +455,12 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { HILLSBRAD_FOOTHILLS },
 										}),
 										crit(13, {	-- The Hinterlands, Hiri'watha Research Station
-											["coord"] = { 31.9, 57.9, 26 },
-											["maps"] = { 26 },	-- The Hinterlands
+											["coord"] = { 31.9, 57.9, THE_HINTERLANDS },
+											["maps"] = { THE_HINTERLANDS },
 										}),
 										crit(14, {	-- The Hinterlands, Revantusk Village
-											["coord"] = { 78.2, 81.4, 26 },
-											["maps"] = { 26 },	-- The Hinterlands
+											["coord"] = { 78.2, 81.4, THE_HINTERLANDS },
+											["maps"] = { THE_HINTERLANDS },
 										}),
 										crit(15, {	-- Northern Stranglethorn, Grom'gol Base Camp
 											["coord"] = { 37.3, 51.7, 50 },
