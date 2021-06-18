@@ -47,7 +47,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["maps"] = {
 					ORGRIMMAR,
 					THUNDER_BLUFF,
-					90,		-- Undercity
+					UNDERCITY,
 					SILVERMOON_CITY,
 					SHATTRATH_CITY,
 				},
@@ -380,26 +380,26 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11784, {	-- Desecrate this Fire! — The Hinterlands
 				["isYearly"] = true,
 				["provider"] = { "o", 187972 },	-- Horde Bonfire
-				["coord"] = { 76.4, 74.5, 26 },
+				["coord"] = { 76.4, 74.5, THE_HINTERLANDS },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
-				["maps"] = { 26 },	-- The Hinterlands
+				["maps"] = { THE_HINTERLANDS },
 			}),
 			q(11786, {	-- Desecrate this Fire! — Tirisfal Glades
 				["isYearly"] = true,
 				["provider"] = { "o", 187559 },	-- Horde Bonfire
-				["coord"] = { 57.0, 51.9, 18 },
+				["coord"] = { 57.0, 51.9, TIRISFAL_GLADES },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
-				["maps"] = { 18 },	-- Tirisfal Glades
+				["maps"] = { TIRISFAL_GLADES },
 			}),
 			q(28944, {	-- Desecrate this Fire! — Twilight Highlands
 				["isYearly"] = true,
 				["provider"] = { "o", 208090 },	-- Horde Bonfire
-				["coord"] = { 53.3, 46.5, 241 },
+				["coord"] = { 53.3, 46.5, TWILIGHT_HIGHLANDS },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
-				["maps"] = { 241 },	-- Twilight Highlands
+				["maps"] = { TWILIGHT_HIGHLANDS },
 			}),
 			q(28948, {	-- Desecrate this Fire! — Uldum
 				["isYearly"] = true,
@@ -806,10 +806,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11755, {	-- Desecrate this Fire! — The Hinterlands
 				["isYearly"] = true,
 				["provider"] = { "o", 187938 },	-- Alliance Bonfire (this isn't linked to the quest on wowhead, but it's the Alliance Bonfire listed in this zone)
-				["coord"] = { 14.5, 50.0, 26 },
+				["coord"] = { 14.5, 50.0, THE_HINTERLANDS },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-				["maps"] = { 26 },	-- The Hinterlands
+				["maps"] = { THE_HINTERLANDS },
 			}),
 			q(54736, {	-- Desecrate this Fire! — Tiragarde Sound
 				["isYearly"] = true,
@@ -822,10 +822,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(28943, {	-- Desecrate this Fire! — Twilight Highlands
 				["isYearly"] = true,
 				["provider"] = { "o", 208089 },	-- Alliance Bonfire
-				["coord"] = { 47.0, 28.3, 241 },
+				["coord"] = { 47.0, 28.3, TWILIGHT_HIGHLANDS },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-				["maps"] = { 241 },	-- Twilight Highlands
+				["maps"] = { TWILIGHT_HIGHLANDS },
 			}),
 			q(28947, {	-- Desecrate this Fire! — Uldum
 				["isYearly"] = true,
@@ -1219,9 +1219,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11826, {	-- Honor the Flame — The Hinterlands
 				["provider"] = { "n", 25908 },	-- The Hinterlands Flame Warden
 				["isYearly"] = true,
-				["coord"] = { 14.4, 50.2, 26 },
+				["coord"] = { 14.4, 50.2, THE_HINTERLANDS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 26 },	-- The Hinterlands
+				["maps"] = { THE_HINTERLANDS },
 			}),
 			q(54737, {	-- Honor the Flame — Tiragarde Sound
 				["provider"] = { "n", 148917 },	-- Tiragarde Sound Flame Warden
@@ -1233,9 +1233,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(28945, {	-- Honor the Flame — Twilight Highlands
 				["provider"] = { "n", 51650 },	-- Twilight Highlands Flame Warden
 				["isYearly"] = true,
-				["coord"] = { 47.0, 28.0, 241 },
+				["coord"] = { 47.0, 28.0, TWILIGHT_HIGHLANDS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 241 },	-- Twilight Highlands
+				["maps"] = { TWILIGHT_HIGHLANDS },
 			}),
 			q(28950, {	-- Honor the Flame — Uldum
 				["provider"] = { "n", 51653 },	-- Uldum Flame Warden
@@ -1599,23 +1599,23 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11860, {	-- Honor the Flame — The Hinterlands
 				["provider"] = { "n", 25944 },	-- The Hinterlands Flame Keeper
 				["isYearly"] = true,
-				["coord"] = { 76.6, 75.0, 26 },
+				["coord"] = { 76.6, 75.0, THE_HINTERLANDS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 26 },	-- The Hinterlands
+				["maps"] = { THE_HINTERLANDS },
 			}),
 			q(11862, {	-- Honor the Flame — Tirisfal Glades
 				["provider"] = { "n", 25946 },	-- Tirisfal Glades Flame Keeper
 				["isYearly"] = true,
-				["coord"] = { 57.2, 51.8, 18 },
+				["coord"] = { 57.2, 51.8, TIRISFAL_GLADES },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 18 },	-- Tirisfal Glades
+				["maps"] = { TIRISFAL_GLADES },
 			}),
 			q(28946, {	-- Honor the Flame — Twilight Highlands
 				["provider"] = { "n", 51651 },	-- Twilight Highlands Flame Keeper
 				["isYearly"] = true,
-				["coord"] = { 53.1, 46.2, 241 },
+				["coord"] = { 53.1, 46.2, TWILIGHT_HIGHLANDS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 241 },	-- Twilight Highlands
+				["maps"] = { TWILIGHT_HIGHLANDS },
 			}),
 			q(28949, {	-- Honor the Flame — Uldum
 				["provider"] = { "n", 51652 },	-- Uldum Flame Keeper
@@ -1779,7 +1779,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["coords"] = {
 					{ 47.8, 38.4, ORGRIMMAR },
 					{ 21.4, 27.8, THUNDER_BLUFF },
-					{ 67.4, 8.00, 90 },		-- Undercity
+					{ 67.4, 8.00, UNDERCITY },
 					{ 70.0, 42.8, SILVERMOON_CITY },
 					{ 62.0, 32.2, SHATTRATH_CITY },
 				},
@@ -1787,7 +1787,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["maps"] = {
 					ORGRIMMAR,
 					THUNDER_BLUFF,
-					90,		-- Undercity
+					UNDERCITY,
 					SILVERMOON_CITY,
 					SHATTRATH_CITY,
 				},
@@ -1851,14 +1851,14 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["coords"] = {
 					{ 46.6, 37.2, ORGRIMMAR },
 					{ 21.2, 26.2, THUNDER_BLUFF },
-					{ 68.6, 8.00, 90 },		-- Undercity
+					{ 68.6, 8.00, UNDERCITY },
 					{ 69.6, 42.4, SILVERMOON_CITY },
 				},
 				["races"] = HORDE_ONLY,
 				["maps"] = {
 					ORGRIMMAR,
 					THUNDER_BLUFF,
-					90,		-- Undercity
+					UNDERCITY,
 					SILVERMOON_CITY,
 				},
 			}),
@@ -1887,14 +1887,14 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["coords"] = {
 					{ 46.6, 37.2, ORGRIMMAR },
 					{ 21.2, 26.2, THUNDER_BLUFF },
-					{ 68.6, 8.00, 90 },		-- Undercity
+					{ 68.6, 8.00, UNDERCITY },
 					{ 69.6, 42.4, SILVERMOON_CITY },
 				},
 				["races"] = HORDE_ONLY,
 				["maps"] = {
 					ORGRIMMAR,
 					THUNDER_BLUFF,
-					90,		-- Undercity
+					UNDERCITY,
 					SILVERMOON_CITY,
 				},
 			}),
@@ -1906,7 +1906,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					BADLANDS,
 					BLASTED_LANDS,
 					22,		-- Western Plaguelands
-					26,		-- The Hinterlands
+					THE_HINTERLANDS,
 					DUN_MOROGH,
 					BURNING_STEPPES,
 					37,		-- Elwynn Forest
@@ -1941,7 +1941,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					127,	-- Crystalsong Forest
 					SOUTHERN_BARRENS,
 					210,	-- The Cape of Stranglethorn
-					241,	-- Twilight Highlands
+					TWILIGHT_HIGHLANDS,
 					249,	-- Uldum
 				},
 			}),
@@ -1952,7 +1952,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					1,		-- Durotar
 					7,		-- Mulgore
 					NORTHERN_BARRENS,
-					18,		-- Tirisfal Glades
+					TIRISFAL_GLADES,
 					ASHENVALE,
 					TANARIS,
 					AZSHARA,
@@ -2023,11 +2023,11 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(9326,  {	-- Stealing the Undercity's Flame
 				["isYearly"] = true,
 				["provider"] = { "o", 181335 },	-- Flame of the Undercity
-			--	["itemID"] = 23181,	-- Flame of the Undercity
-				["coord"] = { 68.7, 8.50, 90 },
+				--["itemID"] = 23181,	-- Flame of the Undercity
+				["coord"] = { 68.7, 8.50, UNDERCITY },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_flameshock",
-				["maps"] = { 90 },	-- Undercity
+				["maps"] = { UNDERCITY },
 			}),
 			q(11935, {	-- Stealing Silvermoon's Flame
 				["isYearly"] = true,
@@ -2048,7 +2048,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ 64.8, 27.4, IRONFORGE },
 					{ 21.4, 24.4, THUNDER_BLUFF },
 					{ 62.2, 49.2, 89 },		-- Darnassus
-					{ 67.0, 13.0, 90 },		-- Undercity
+					{ 67.0, 13.0, UNDERCITY },
 					{ 43.2, 25.8, THE_EXODAR },
 					{ 68.8, 42.6, SILVERMOON_CITY },
 					{ 60.4, 30.8, SHATTRATH_CITY },
@@ -2059,7 +2059,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					IRONFORGE,
 					THUNDER_BLUFF,
 					89,		-- Darnassus
-					90,		-- Undercity
+					UNDERCITY,
 					THE_EXODAR,
 					SILVERMOON_CITY,
 					SHATTRATH_CITY,
@@ -2075,7 +2075,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ 64.8, 27.4, IRONFORGE },
 					{ 21.4, 24.4, THUNDER_BLUFF },
 					{ 62.2, 49.2, 89 },		-- Darnassus
-					{ 67.0, 13.0, 90 },		-- Undercity
+					{ 67.0, 13.0, UNDERCITY },
 					{ 43.2, 25.8, THE_EXODAR },
 					{ 68.8, 42.6, SILVERMOON_CITY },
 					{ 60.4, 30.8, SHATTRATH_CITY },
@@ -2086,7 +2086,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					IRONFORGE,
 					THUNDER_BLUFF,
 					89,		-- Darnassus
-					90,		-- Undercity
+					UNDERCITY,
 					THE_EXODAR,
 					SILVERMOON_CITY,
 					SHATTRATH_CITY,
@@ -2102,7 +2102,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ 64.8, 27.4, IRONFORGE },
 					{ 21.4, 24.4, THUNDER_BLUFF },
 					{ 62.2, 49.2, 89 },		-- Darnassus
-					{ 67.0, 13.0, 90 },		-- Undercity
+					{ 67.0, 13.0, UNDERCITY },
 					{ 43.2, 25.8, THE_EXODAR },
 					{ 68.8, 42.6, SILVERMOON_CITY },
 					{ 60.4, 30.8, SHATTRATH_CITY },
@@ -2113,7 +2113,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					IRONFORGE,
 					THUNDER_BLUFF,
 					89,		-- Darnassus
-					90,		-- Undercity
+					UNDERCITY,
 					THE_EXODAR,
 					SILVERMOON_CITY,
 					SHATTRATH_CITY,
@@ -2129,7 +2129,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ 64.8, 27.4, IRONFORGE },
 					{ 21.4, 24.4, THUNDER_BLUFF },
 					{ 62.2, 49.2, 89 },		-- Darnassus
-					{ 67.0, 13.0, 90 },		-- Undercity
+					{ 67.0, 13.0, UNDERCITY },
 					{ 43.2, 25.8, THE_EXODAR },
 					{ 68.8, 42.6, SILVERMOON_CITY },
 					{ 60.4, 30.8, SHATTRATH_CITY },
@@ -2140,7 +2140,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					IRONFORGE,
 					THUNDER_BLUFF,
 					89,		-- Darnassus
-					90,		-- Undercity
+					UNDERCITY,
 					THE_EXODAR,
 					SILVERMOON_CITY,
 					SHATTRATH_CITY,
@@ -2156,7 +2156,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ 64.8, 27.4, IRONFORGE },
 					{ 21.4, 24.4, THUNDER_BLUFF },
 					{ 62.2, 49.2, 89 },		-- Darnassus
-					{ 67.0, 13.0, 90 },		-- Undercity
+					{ 67.0, 13.0, UNDERCITY },
 					{ 43.2, 25.8, THE_EXODAR },
 					{ 68.8, 42.6, SILVERMOON_CITY },
 					{ 60.4, 30.8, SHATTRATH_CITY },
@@ -2167,7 +2167,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					IRONFORGE,
 					THUNDER_BLUFF,
 					89,		-- Darnassus
-					90,		-- Undercity
+					UNDERCITY,
 					THE_EXODAR,
 					SILVERMOON_CITY,
 					SHATTRATH_CITY,
@@ -2183,7 +2183,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ 64.8, 27.4, IRONFORGE },
 					{ 21.4, 24.4, THUNDER_BLUFF },
 					{ 62.2, 49.2, 89 },		-- Darnassus
-					{ 67.0, 13.0, 90 },		-- Undercity
+					{ 67.0, 13.0, UNDERCITY },
 					{ 43.2, 25.8, THE_EXODAR },
 					{ 68.8, 42.6, SILVERMOON_CITY },
 					{ 60.4, 30.8, SHATTRATH_CITY },
@@ -2194,7 +2194,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					IRONFORGE,
 					THUNDER_BLUFF,
 					89,		-- Darnassus
-					90,		-- Undercity
+					UNDERCITY,
 					THE_EXODAR,
 					SILVERMOON_CITY,
 					SHATTRATH_CITY,
@@ -2253,7 +2253,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					WINTERSPRING,
 					ORGRIMMAR,
 					THUNDER_BLUFF,
-					90,		-- Undercity
+					UNDERCITY,
 					EVERSONG_WOODS,
 					NETHERSTORM,
 					SILVERMOON_CITY,
@@ -2286,14 +2286,14 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["coords"] = {
 					{ 46.6, 37.2, ORGRIMMAR },
 					{ 21.2, 26.2, THUNDER_BLUFF },
-					{ 68.6, 8.00, 90 },		-- Undercity
+					{ 68.6, 8.00, UNDERCITY },
 					{ 69.6, 42.4, SILVERMOON_CITY },
 				},
 				["races"] = HORDE_ONLY,
 				["maps"] = {
 					ORGRIMMAR,
 					THUNDER_BLUFF,
-					90,		-- Undercity
+					UNDERCITY,
 					SILVERMOON_CITY,
 				},
 			}),
@@ -2318,14 +2318,14 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["coords"] = {
 					{ 46.6, 37.2, ORGRIMMAR },
 					{ 21.2, 26.2, THUNDER_BLUFF },
-					{ 68.6, 8.00, 90 },		-- Undercity
+					{ 68.6, 8.00, UNDERCITY },
 					{ 69.6, 42.4, SILVERMOON_CITY },
 				},
 				["races"] = HORDE_ONLY,
 				["maps"] = {
 					ORGRIMMAR,
 					THUNDER_BLUFF,
-					90,		-- Undercity
+					UNDERCITY,
 					SILVERMOON_CITY,
 				},
 			}),
@@ -2337,7 +2337,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ 64.8, 27.4, IRONFORGE },
 					{ 21.4, 24.4, THUNDER_BLUFF },
 					{ 62.2, 49.2, 89 },		-- Darnassus
-					{ 67.0, 13.0, 90 },		-- Undercity
+					{ 67.0, 13.0, UNDERCITY },
 					{ 43.2, 25.8, THE_EXODAR },
 					{ 68.8, 42.6, SILVERMOON_CITY },
 					{ 60.4, 30.8, SHATTRATH_CITY },
@@ -2348,7 +2348,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					IRONFORGE,
 					THUNDER_BLUFF,
 					89,		-- Darnassus
-					90,		-- Undercity
+					UNDERCITY,
 					THE_EXODAR,
 					SILVERMOON_CITY,
 					SHATTRATH_CITY,

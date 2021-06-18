@@ -217,6 +217,8 @@ app.L = {
 	["QUEST_LOOP"] = "Likely just broke out of an infinite source quest loop.";
 	["QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT"] = "Quest '%s' [%d] will prevent collection of Breadcrumb Quest [%d]";
 	["QUEST_OBJECTIVE_INVALID"] = "Invalid Quest Objective";
+	["REFRESHING_COLLECTION"] = "Refreshing collection...";
+	["DONE_REFRESHING"] = "Done refreshing collection.";
 
 	-- Item Filter Window
 	["ITEM_FILTER_TEXT"] = "Item Filters";

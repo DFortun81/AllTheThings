@@ -10,7 +10,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 			n(QUESTS, {
 				q(29850, {	-- Corrupt Constructs
 					["provider"] = { "n", 55835 },	-- Kaldir Ironbane
-					["coord"] = { 35.6, 35.2 },
+					["coord"] = { 35.6, 35.2, 140 },
 				}),
 				q(54642, {	-- G.E.A.R. Up
 					["provider"] = { "n", 149503 },	-- Cog Captain Winklespring
@@ -33,7 +33,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				}),
 				q(13207, {	-- Halls of Stone
 					["provider"] = { "n", 28070 },	-- Brann Bronzebeard
-					["coord"] = { 70.8, 50.0 },
+					["coord"] = { 70.8, 50.0, 140 },
 					["groups"] = {
 						i(44370),	-- Mantle of the Intrepid Explorer
 						i(44373),	-- Pauldrons of Reconnaissance
@@ -43,7 +43,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				}),
 				q(29848, {	-- The Forlorn Watcher
 					["provider"] = { "n", 55835 },	-- Kaldir Ironbane
-					["coord"] = { 35.6, 35.2 },
+					["coord"] = { 35.6, 35.2, 140 },
 				}),
 			}),
 			d(1, {	-- Normal

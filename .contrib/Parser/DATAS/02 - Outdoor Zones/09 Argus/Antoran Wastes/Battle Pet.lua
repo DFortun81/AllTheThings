@@ -12,32 +12,32 @@ _.Zones =
 						{
 							["achievementID"] = 12088,	-- Anomalous Animals of Argus
 							["criteriaID"] = 14, 		-- Bloat
-							["coord"] = { 56.6, 54.2 },
+							["coord"] = { 56.6, 54.2, 885 },
 						},
 						{
 							["achievementID"] = 12088,	-- Anomalous Animals of Argus
 							["criteriaID"] = 15, 		-- Earseeker
-							["coord"] = { 56.1, 28.7 },
+							["coord"] = { 56.1, 28.7, 885 },
 						},
 						{
 							["achievementID"] = 12088,	-- Anomalous Animals of Argus
 							["criteriaID"] = 17, 		-- Minixis
-							["coord"] = { 76.7, 73.9 },
+							["coord"] = { 76.7, 73.9, 885 },
 						},
 						{
 							["achievementID"] = 12088,	-- Anomalous Animals of Argus
 							["criteriaID"] = 18, 		-- One-of-Many
-							["coord"] = { 59.8, 40.3 },
+							["coord"] = { 59.8, 40.3, 885 },
 						},
 						{
 							["achievementID"] = 12088,	-- Anomalous Animals of Argus
 							["criteriaID"] = 16, 		-- Pilfer
-							["coord"] = { 64.1, 66.0 },
+							["coord"] = { 64.1, 66.0, 885 },
 						},
 						{
 							["achievementID"] = 12088,	-- Anomalous Animals of Argus
 							["criteriaID"] = 13, 		-- Watcher
-							["coord"] = { 51.6, 41.4 },
+							["coord"] = { 51.6, 41.4, 885 },
 						},
 					},
 					["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
@@ -52,32 +52,32 @@ _.Zones =
 								{
 									["achievementID"] = 12089,	-- Aquatic Assault
 									["criteriaID"] = 14, 		-- Bloat
-									["coord"] = { 56.6, 54.2 },
+									["coord"] = { 56.6, 54.2, 885 },
 								},
 								{
 									["achievementID"] = 12089,	-- Aquatic Assault
 									["criteriaID"] = 15, 		-- Earseeker
-									["coord"] = { 56.1, 28.7 },
+									["coord"] = { 56.1, 28.7, 885 },
 								},
 								{
 									["achievementID"] = 12089,	-- Aquatic Assault
 									["criteriaID"] = 17, 		-- Minixis
-									["coord"] = { 76.7, 73.9 },
+									["coord"] = { 76.7, 73.9, 885 },
 								},
 								{
 									["achievementID"] = 12089,	-- Aquatic Assault
 									["criteriaID"] = 18, 		-- One-of-Many
-									["coord"] = { 59.8, 40.3 },
+									["coord"] = { 59.8, 40.3, 885 },
 								},
 								{
 									["achievementID"] = 12089,	-- Aquatic Assault
 									["criteriaID"] = 16, 		-- Pilfer
-									["coord"] = { 64.1, 66.0 },
+									["coord"] = { 64.1, 66.0, 885 },
 								},
 								{
 									["achievementID"] = 12089,	-- Aquatic Assault
 									["criteriaID"] = 13, 		-- Watcher
-									["coord"] = { 51.6, 41.4 },
+									["coord"] = { 51.6, 41.4, 885 },
 								},
 							},
 							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
@@ -87,32 +87,32 @@ _.Zones =
 								{
 									["achievementID"] = 12091,	-- Aquatic Assault
 									["criteriaID"] = 14, 		-- Bloat
-									["coord"] = { 56.6, 54.2 },
+									["coord"] = { 56.6, 54.2, 885 },
 								},
 								{
 									["achievementID"] = 12091,	-- Aquatic Assault
 									["criteriaID"] = 15, 		-- Earseeker
-									["coord"] = { 56.1, 28.7 },
+									["coord"] = { 56.1, 28.7, 885 },
 								},
 								{
 									["achievementID"] = 12091,	-- Aquatic Assault
 									["criteriaID"] = 17, 		-- Minixis
-									["coord"] = { 76.7, 73.9 },
+									["coord"] = { 76.7, 73.9, 885 },
 								},
 								{
 									["achievementID"] = 12091,	-- Aquatic Assault
 									["criteriaID"] = 18, 		-- One-of-Many
-									["coord"] = { 59.8, 40.3 },
+									["coord"] = { 59.8, 40.3, 885 },
 								},
 								{
 									["achievementID"] = 12091,	-- Aquatic Assault
 									["criteriaID"] = 16, 		-- Pilfer
-									["coord"] = { 64.1, 66.0 },
+									["coord"] = { 64.1, 66.0, 885 },
 								},
 								{
 									["achievementID"] = 12091,	-- Aquatic Assault
 									["criteriaID"] = 13, 		-- Watcher
-									["coord"] = { 51.6, 41.4 },
+									["coord"] = { 51.6, 41.4, 885 },
 								},
 							},
 							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
@@ -122,32 +122,32 @@ _.Zones =
 								{
 									["achievementID"] = 12092,	-- Aquatic Assault
 									["criteriaID"] = 14, 		-- Bloat
-									["coord"] = { 56.6, 54.2 },
+									["coord"] = { 56.6, 54.2, 885 },
 								},
 								{
 									["achievementID"] = 12092,	-- Aquatic Assault
 									["criteriaID"] = 15, 		-- Earseeker
-									["coord"] = { 56.1, 28.7 },
+									["coord"] = { 56.1, 28.7, 885 },
 								},
 								{
 									["achievementID"] = 12092,	-- Aquatic Assault
 									["criteriaID"] = 17, 		-- Minixis
-									["coord"] = { 76.7, 73.9 },
+									["coord"] = { 76.7, 73.9, 885 },
 								},
 								{
 									["achievementID"] = 12092,	-- Aquatic Assault
 									["criteriaID"] = 18, 		-- One-of-Many
-									["coord"] = { 59.8, 40.3 },
+									["coord"] = { 59.8, 40.3, 885 },
 								},
 								{
 									["achievementID"] = 12092,	-- Aquatic Assault
 									["criteriaID"] = 16, 		-- Pilfer
-									["coord"] = { 64.1, 66.0 },
+									["coord"] = { 64.1, 66.0, 885 },
 								},
 								{
 									["achievementID"] = 12092,	-- Aquatic Assault
 									["criteriaID"] = 13, 		-- Watcher
-									["coord"] = { 51.6, 41.4 },
+									["coord"] = { 51.6, 41.4, 885 },
 								},
 							},
 							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
@@ -157,32 +157,32 @@ _.Zones =
 								{
 									["achievementID"] = 12093,	-- Aquatic Assault
 									["criteriaID"] = 14, 		-- Bloat
-									["coord"] = { 56.6, 54.2 },
+									["coord"] = { 56.6, 54.2, 885 },
 								},
 								{
 									["achievementID"] = 12093,	-- Aquatic Assault
 									["criteriaID"] = 15, 		-- Earseeker
-									["coord"] = { 56.1, 28.7 },
+									["coord"] = { 56.1, 28.7, 885 },
 								},
 								{
 									["achievementID"] = 12093,	-- Aquatic Assault
 									["criteriaID"] = 17, 		-- Minixis
-									["coord"] = { 76.7, 73.9 },
+									["coord"] = { 76.7, 73.9, 885 },
 								},
 								{
 									["achievementID"] = 12093,	-- Aquatic Assault
 									["criteriaID"] = 18, 		-- One-of-Many
-									["coord"] = { 59.8, 40.3 },
+									["coord"] = { 59.8, 40.3, 885 },
 								},
 								{
 									["achievementID"] = 12093,	-- Aquatic Assault
 									["criteriaID"] = 16, 		-- Pilfer
-									["coord"] = { 64.1, 66.0 },
+									["coord"] = { 64.1, 66.0, 885 },
 								},
 								{
 									["achievementID"] = 12093,	-- Aquatic Assault
 									["criteriaID"] = 13, 		-- Watcher
-									["coord"] = { 51.6, 41.4 },
+									["coord"] = { 51.6, 41.4, 885 },
 								},
 							},
 							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
@@ -192,32 +192,32 @@ _.Zones =
 								{
 									["achievementID"] = 12094,	-- Aquatic Assault
 									["criteriaID"] = 14, 		-- Bloat
-									["coord"] = { 56.6, 54.2 },
+									["coord"] = { 56.6, 54.2, 885 },
 								},
 								{
 									["achievementID"] = 12094,	-- Aquatic Assault
 									["criteriaID"] = 15, 		-- Earseeker
-									["coord"] = { 56.1, 28.7 },
+									["coord"] = { 56.1, 28.7, 885 },
 								},
 								{
 									["achievementID"] = 12094,	-- Aquatic Assault
 									["criteriaID"] = 17, 		-- Minixis
-									["coord"] = { 76.7, 73.9 },
+									["coord"] = { 76.7, 73.9, 885 },
 								},
 								{
 									["achievementID"] = 12094,	-- Aquatic Assault
 									["criteriaID"] = 18, 		-- One-of-Many
-									["coord"] = { 59.8, 40.3 },
+									["coord"] = { 59.8, 40.3, 885 },
 								},
 								{
 									["achievementID"] = 12094,	-- Aquatic Assault
 									["criteriaID"] = 16, 		-- Pilfer
-									["coord"] = { 64.1, 66.0 },
+									["coord"] = { 64.1, 66.0, 885 },
 								},
 								{
 									["achievementID"] = 12094,	-- Aquatic Assault
 									["criteriaID"] = 13, 		-- Watcher
-									["coord"] = { 51.6, 41.4 },
+									["coord"] = { 51.6, 41.4, 885 },
 								},
 							},
 							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
@@ -227,32 +227,32 @@ _.Zones =
 								{
 									["achievementID"] = 12095,	-- Aquatic Assault
 									["criteriaID"] = 14, 		-- Bloat
-									["coord"] = { 56.6, 54.2 },
+									["coord"] = { 56.6, 54.2, 885 },
 								},
 								{
 									["achievementID"] = 12095,	-- Aquatic Assault
 									["criteriaID"] = 15, 		-- Earseeker
-									["coord"] = { 56.1, 28.7 },
+									["coord"] = { 56.1, 28.7, 885 },
 								},
 								{
 									["achievementID"] = 12095,	-- Aquatic Assault
 									["criteriaID"] = 17, 		-- Minixis
-									["coord"] = { 76.7, 73.9 },
+									["coord"] = { 76.7, 73.9, 885 },
 								},
 								{
 									["achievementID"] = 12095,	-- Aquatic Assault
 									["criteriaID"] = 18, 		-- One-of-Many
-									["coord"] = { 59.8, 40.3 },
+									["coord"] = { 59.8, 40.3, 885 },
 								},
 								{
 									["achievementID"] = 12095,	-- Aquatic Assault
 									["criteriaID"] = 16, 		-- Pilfer
-									["coord"] = { 64.1, 66.0 },
+									["coord"] = { 64.1, 66.0, 885 },
 								},
 								{
 									["achievementID"] = 12095,	-- Aquatic Assault
 									["criteriaID"] = 13, 		-- Watcher
-									["coord"] = { 51.6, 41.4 },
+									["coord"] = { 51.6, 41.4, 885 },
 								},
 							},
 							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
@@ -262,32 +262,32 @@ _.Zones =
 								{
 									["achievementID"] = 12096,	-- Aquatic Assault
 									["criteriaID"] = 14, 		-- Bloat
-									["coord"] = { 56.6, 54.2 },
+									["coord"] = { 56.6, 54.2, 885 },
 								},
 								{
 									["achievementID"] = 12096,	-- Aquatic Assault
 									["criteriaID"] = 15, 		-- Earseeker
-									["coord"] = { 56.1, 28.7 },
+									["coord"] = { 56.1, 28.7, 885 },
 								},
 								{
 									["achievementID"] = 12096,	-- Aquatic Assault
 									["criteriaID"] = 17, 		-- Minixis
-									["coord"] = { 76.7, 73.9 },
+									["coord"] = { 76.7, 73.9, 885 },
 								},
 								{
 									["achievementID"] = 12096,	-- Aquatic Assault
 									["criteriaID"] = 18, 		-- One-of-Many
-									["coord"] = { 59.8, 40.3 },
+									["coord"] = { 59.8, 40.3, 885 },
 								},
 								{
 									["achievementID"] = 12096,	-- Aquatic Assault
 									["criteriaID"] = 16, 		-- Pilfer
-									["coord"] = { 64.1, 66.0 },
+									["coord"] = { 64.1, 66.0, 885 },
 								},
 								{
 									["achievementID"] = 12096,	-- Aquatic Assault
 									["criteriaID"] = 13, 		-- Watcher
-									["coord"] = { 51.6, 41.4 },
+									["coord"] = { 51.6, 41.4, 885 },
 								},
 							},
 							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
@@ -297,32 +297,32 @@ _.Zones =
 								{
 									["achievementID"] = 12097,	-- Aquatic Assault
 									["criteriaID"] = 14, 		-- Bloat
-									["coord"] = { 56.6, 54.2 },
+									["coord"] = { 56.6, 54.2, 885 },
 								},
 								{
 									["achievementID"] = 12097,	-- Aquatic Assault
 									["criteriaID"] = 15, 		-- Earseeker
-									["coord"] = { 56.1, 28.7 },
+									["coord"] = { 56.1, 28.7, 885 },
 								},
 								{
 									["achievementID"] = 12097,	-- Aquatic Assault
 									["criteriaID"] = 17, 		-- Minixis
-									["coord"] = { 76.7, 73.9 },
+									["coord"] = { 76.7, 73.9, 885 },
 								},
 								{
 									["achievementID"] = 12097,	-- Aquatic Assault
 									["criteriaID"] = 18, 		-- One-of-Many
-									["coord"] = { 59.8, 40.3 },
+									["coord"] = { 59.8, 40.3, 885 },
 								},
 								{
 									["achievementID"] = 12097,	-- Aquatic Assault
 									["criteriaID"] = 16, 		-- Pilfer
-									["coord"] = { 64.1, 66.0 },
+									["coord"] = { 64.1, 66.0, 885 },
 								},
 								{
 									["achievementID"] = 12097,	-- Aquatic Assault
 									["criteriaID"] = 13, 		-- Watcher
-									["coord"] = { 51.6, 41.4 },
+									["coord"] = { 51.6, 41.4, 885 },
 								},
 							},
 							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
@@ -332,32 +332,32 @@ _.Zones =
 								{
 									["achievementID"] = 12098,	-- Aquatic Assault
 									["criteriaID"] = 14, 		-- Bloat
-									["coord"] = { 56.6, 54.2 },
+									["coord"] = { 56.6, 54.2, 885 },
 								},
 								{
 									["achievementID"] = 12098,	-- Aquatic Assault
 									["criteriaID"] = 15, 		-- Earseeker
-									["coord"] = { 56.1, 28.7 },
+									["coord"] = { 56.1, 28.7, 885 },
 								},
 								{
 									["achievementID"] = 12098,	-- Aquatic Assault
 									["criteriaID"] = 17, 		-- Minixis
-									["coord"] = { 76.7, 73.9 },
+									["coord"] = { 76.7, 73.9, 885 },
 								},
 								{
 									["achievementID"] = 12098,	-- Aquatic Assault
 									["criteriaID"] = 18, 		-- One-of-Many
-									["coord"] = { 59.8, 40.3 },
+									["coord"] = { 59.8, 40.3, 885 },
 								},
 								{
 									["achievementID"] = 12098,	-- Aquatic Assault
 									["criteriaID"] = 16, 		-- Pilfer
-									["coord"] = { 64.1, 66.0 },
+									["coord"] = { 64.1, 66.0, 885 },
 								},
 								{
 									["achievementID"] = 12098,	-- Aquatic Assault
 									["criteriaID"] = 13, 		-- Watcher
-									["coord"] = { 51.6, 41.4 },
+									["coord"] = { 51.6, 41.4, 885 },
 								},
 							},
 							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here
@@ -367,32 +367,32 @@ _.Zones =
 								{
 									["achievementID"] = 12099,	-- Aquatic Assault
 									["criteriaID"] = 14, 		-- Bloat
-									["coord"] = { 56.6, 54.2 },
+									["coord"] = { 56.6, 54.2, 885 },
 								},
 								{
 									["achievementID"] = 12099,	-- Aquatic Assault
 									["criteriaID"] = 15, 		-- Earseeker
-									["coord"] = { 56.1, 28.7 },
+									["coord"] = { 56.1, 28.7, 885 },
 								},
 								{
 									["achievementID"] = 12099,	-- Aquatic Assault
 									["criteriaID"] = 17, 		-- Minixis
-									["coord"] = { 76.7, 73.9 },
+									["coord"] = { 76.7, 73.9, 885 },
 								},
 								{
 									["achievementID"] = 12099,	-- Aquatic Assault
 									["criteriaID"] = 18, 		-- One-of-Many
-									["coord"] = { 59.8, 40.3 },
+									["coord"] = { 59.8, 40.3, 885 },
 								},
 								{
 									["achievementID"] = 12099,	-- Aquatic Assault
 									["criteriaID"] = 16, 		-- Pilfer
-									["coord"] = { 64.1, 66.0 },
+									["coord"] = { 64.1, 66.0, 885 },
 								},
 								{
 									["achievementID"] = 12099,	-- Aquatic Assault
 									["criteriaID"] = 13, 		-- Watcher
-									["coord"] = { 51.6, 41.4 },
+									["coord"] = { 51.6, 41.4, 885 },
 								},
 							},
 							["collectible"] = false,	-- We want to hide the achievement after the finished the criteria for the zone since they can't earn anything more here

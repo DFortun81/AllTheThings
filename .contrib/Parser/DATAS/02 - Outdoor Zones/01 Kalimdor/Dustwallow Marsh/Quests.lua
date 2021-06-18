@@ -830,7 +830,7 @@ _.Zones =
 						STORMWIND_CITY,
 						ORGRIMMAR,
 						IRONFORGE,
-						90,	-- Undercity
+						UNDERCITY,
 					},
 					["providers"] = {
 						{ "n", 4568 },	-- Anastasia Hartwell

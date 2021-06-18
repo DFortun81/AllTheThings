@@ -428,30 +428,30 @@ _.Zones =
 									q(53892, {	-- Where Are the Workers?
 										["sourceQuests"] = { 53891 },	-- No Problem Too Small
 										["provider"] = { "n", 145641 },	-- Kiro
-										["coord"] = { 44.1, 73.4, 241 },
+										["coord"] = { 44.1, 73.4, TWILIGHT_HIGHLANDS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 241 },	-- Twilight Highlands
+										["maps"] = { TWILIGHT_HIGHLANDS },
 									}),
 									q(53893, {	-- A Little Goodwill
 										["sourceQuests"] = { 53892 },	-- Where Are the Workers?
 										["provider"] = { "n", 145416 },	-- Kiro
-										["coord"] = { 46.8, 66.2, 241 },
+										["coord"] = { 46.8, 66.2, TWILIGHT_HIGHLANDS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 241 },	-- Twilight Highlands
+										["maps"] = { TWILIGHT_HIGHLANDS },
 									}),
 									q(53894, {	-- Worthwhile Repairs
 										["sourceQuests"] = { 53892 },	-- Where Are the Workers?
 										["provider"] = { "n", 145416 },	-- Kiro
-										["coord"] = { 46.8, 66.2, 241 },
+										["coord"] = { 46.8, 66.2, TWILIGHT_HIGHLANDS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 241 },	-- Twilight Highlands
+										["maps"] = { TWILIGHT_HIGHLANDS },
 									}),
 									q(53895, {	-- Peon Promotions!
 										["sourceQuests"] = { 53892 },	-- Where Are the Workers?
 										["provider"] = { "n", 145416 },	-- Kiro
-										["coord"] = { 46.8, 66.2, 241 },
+										["coord"] = { 46.8, 66.2, TWILIGHT_HIGHLANDS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 241 },	-- Twilight Highlands
+										["maps"] = { TWILIGHT_HIGHLANDS },
 									}),
 									q(53897, {	-- A Party in Your Honor
 										["sourceQuests"] = {
@@ -460,23 +460,23 @@ _.Zones =
 											53894,	-- Worthwhile Repairs
 										},
 										["provider"] = { "n", 145416 },	-- Kiro
-										["coord"] = { 46.8, 66.2, 241 },
+										["coord"] = { 46.8, 66.2, TWILIGHT_HIGHLANDS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 241 },	-- Twilight Highlands
+										["maps"] = { TWILIGHT_HIGHLANDS },
 									}),
 									q(53898, {	-- Strength and Honor
 										["sourceQuests"] = { 53897 },	-- A Party in Your Honor
 										["provider"] = { "n", 145416 },	-- Kiro
-										["coord"] = { 45.0, 76.2, 241 },
+										["coord"] = { 45.0, 76.2, TWILIGHT_HIGHLANDS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 241 },	-- Twilight Highlands
+										["maps"] = { TWILIGHT_HIGHLANDS },
 									}),
 									q(54026, {	-- Job's Done
 										["sourceQuests"] = { 53898 },	-- Strength and Honor
 										["provider"] = { "n", 145416 },	-- Kiro
-										["coord"] = { 45.0, 76.2, 241 },
+										["coord"] = { 45.0, 76.2, TWILIGHT_HIGHLANDS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 241 },	-- Twilight Highlands
+										["maps"] = { TWILIGHT_HIGHLANDS },
 									}),
 									q(53899, {	-- On the Outskirts
 										["sourceQuests"] = { 54026 },	-- Job's Done
@@ -1835,7 +1835,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 4563 },	-- Kaal Soulreaper
 					["classes"] = { WARLOCK },
-					["coord"] = { 86.0, 15.6, 90 },	-- Kaal Soulreaper (Undercity)
+					["coord"] = { 86.0, 15.6, UNDERCITY },
 					["races"] = HORDE_ONLY,
 				}),
 				q(28303, {	-- Meet with Master Pyreanor
@@ -1857,7 +1857,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 20406 },	-- Champion Cyssa Dawnrose
 					["classes"] = { PALADIN },
-					["coord"] = { 57.8, 90.2, 90 },	-- Champion Cyssa Dawnrose (Undercity)
+					["coord"] = { 57.8, 90.2, UNDERCITY },
 					["races"] = { BLOODELF },
 				}),
 				q(28297, {	-- Meet with Ormak Grimshot
@@ -1879,7 +1879,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 39116 },	-- Apolos
 					["classes"] = { HUNTER },
-					["coord"] = { 49.6, 29.0, 90 },	-- Apolos (Undercity)
+					["coord"] = { 49.6, 29.0, UNDERCITY },
 					["races"] = HORDE_ONLY,
 				}),
 				q(28301, {	-- Meet with Terga Earthbreaker
@@ -1916,7 +1916,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 4566 },	-- Kaelystia Hatebringer
 					["classes"] = { MAGE },
-					["coord"] = { 85.2, 14.2, 90 },	-- Kaelystia Hatebringer (Undercity)
+					["coord"] = { 85.2, 14.2, UNDERCITY },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27298, {	-- Seek Out Master Pyreanor
@@ -1938,7 +1938,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 20406 },	-- Champion Cyssa Dawnrose
 					["classes"] = { PALADIN },
-					["coord"] = { 57.8, 90.2, 90 },	-- Champion Cyssa Dawnrose (Undercity)
+					["coord"] = { 57.8, 90.2, UNDERCITY },
 					["races"] = { BLOODELF },
 				}),
 				q(27280, {	-- The Earthbreaker Calls
@@ -1968,7 +1968,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 4584 },	-- Gregory Charles
 					["classes"] = { ROGUE },
-					["coord"] = { 84.6, 73.2, 90 },	-- Gregory Charles (Undercity)
+					["coord"] = { 84.6, 73.2, UNDERCITY },
 					["races"] = HORDE_ONLY,
 				}),
 				q(28302, {	-- Meet with Sunwalker Atohmo
@@ -1982,7 +1982,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 20406 },	-- Champion Cyssa Dawnrose
 					["classes"] = { PALADIN },
-					["coord"] = { 57.8, 90.2, 90 },	-- Champion Cyssa Dawnrose (Undercity)
+					["coord"] = { 57.8, 90.2, UNDERCITY },
 					["races"] = { TAUREN },
 				}),
 				-- END SECTION OF INSANITY, CRIEVE WILL COME BACK FOR YOU LATER. TOUCH AT YOUR OWN PERIL, IT IS MADNESS.

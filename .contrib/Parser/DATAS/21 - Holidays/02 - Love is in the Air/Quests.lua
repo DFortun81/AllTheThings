@@ -19,7 +19,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 					{ 62.2, 75.2, STORMWIND_CITY },
 					{ 74.0, 56.2, THE_EXODAR },
 					{ 43.6, 53.4, THUNDER_BLUFF },
-					{ 66.0, 38.4, 90 },	-- Undercity
+					{ 66.0, 38.4,  UNDERCITY },
 				},
 			}),
 			q(24657, {	-- A Friendly Chat... (A)
@@ -55,7 +55,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 			q(24613, {	-- A Gift for the Banshee Queen
 				["provider"] = { "n", 37887 },	-- Kwee Q. Peddlefeet
 				["isDaily"] = true,
-				["coord"] = { 66.4, 38.2, 90 },	-- Undercity
+				["coord"] = { 66.4, 38.2,  UNDERCITY },
 				["races"] = HORDE_ONLY,
 			}),
 			q(24614, {	-- A Gift for the High Chieftain
@@ -99,7 +99,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 					{ 62.2, 75.2, STORMWIND_CITY },
 					{ 74.0, 56.2, THE_EXODAR },
 					{ 43.6, 53.4, THUNDER_BLUFF },
-					{ 66.0, 38.4, 90 },	-- Undercity
+					{ 66.0, 38.4,  UNDERCITY },
 				},
 			}),
 			q(9024,  {	-- Aristan's Hunch
@@ -117,7 +117,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 					{ 62.2, 75.2, STORMWIND_CITY },
 					{ 74.0, 56.2, THE_EXODAR },
 					{ 43.6, 53.4, THUNDER_BLUFF },
-					{ 66.0, 38.4, 90 },	-- Undercity
+					{ 66.0, 38.4,  UNDERCITY },
 				},
 			}),
 			q(44558, {	-- Crushing the Crown (A)
@@ -420,7 +420,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 				["coords"] = {
 					{ 64.2, 70.0, SILVERMOON_CITY },
 					{ 42.2, 55.75, THUNDER_BLUFF },
-					{ 64.6, 37.4, 90 },	-- Undercity
+					{ 64.6, 37.4,  UNDERCITY },
 				},
 				["races"] = HORDE_ONLY,
 			}),

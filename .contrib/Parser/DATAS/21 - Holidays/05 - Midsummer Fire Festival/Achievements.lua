@@ -86,9 +86,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { 210 },	-- The Cape of Stranglethorn
 									}),
 									crit(13, {	-- The Hinterlands
-										["coord"] = { 14.4, 50.2, 26 },
+										["coord"] = { 14.4, 50.2, THE_HINTERLANDS },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 26 },	-- The Hinterlands
+										["maps"] = { THE_HINTERLANDS },
 									}),
 									crit(14, {	-- Western Plaguelands
 										["coord"] = { 43.5, 82.2, 22 },
@@ -281,9 +281,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { 207 },	-- Deepholm
 									}),
 									crit(3, {	-- Twilight Highlands
-										["coord"] = { 47.2, 29.0, 241 },
+										["coord"] = { 47.2, 29.0, TWILIGHT_HIGHLANDS },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 241 },	-- Twilight Highlands
+										["maps"] = { TWILIGHT_HIGHLANDS },
 									}),
 									crit(4, {	-- Vashj'ir
 										["coord"] = { 49.4, 42.0, 205 },	-- Shimmering Expanse
@@ -361,14 +361,14 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { 210 },	-- The Cape of Stranglethorn
 									}),
 									crit(12, {	-- The Hinterlands
-										["coord"] = { 76.4, 74.5, 26 },
+										["coord"] = { 76.4, 74.5, THE_HINTERLANDS },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 26 },	-- The Hinterlands
+										["maps"] = { THE_HINTERLANDS },
 									}),
 									crit(13, {	-- Tirisfal Glades
-										["coord"] = { 57.0, 51.9, 18 },
+										["coord"] = { 57.0, 51.9, TIRISFAL_GLADES },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 18 },	-- Tirisfal Glades
+										["maps"] = { TIRISFAL_GLADES },
 									}),
 									crit(14, {	-- Western Plaguelands
 										["coord"] = { 28.9, 56.8, 22 },
@@ -541,9 +541,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									crit(1, {	-- Twilight Highlands
-										["coord"] = { 53.2, 46.5, 241 },
+										["coord"] = { 53.2, 46.5, TWILIGHT_HIGHLANDS },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 241 },	-- Twilight Highlands
+										["maps"] = { TWILIGHT_HIGHLANDS },
 									}),
 									crit(2, {	-- Uldum
 										["coord"] = { 53.0, 34.4, 249 },
@@ -787,14 +787,14 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { 210 },	-- The Cape of Stranglethorn
 									}),
 									crit(12, {	-- The Hinterlands
-										["coord"] = { 76.6, 75.0, 26 },
+										["coord"] = { 76.6, 75.0, THE_HINTERLANDS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 26 },	-- The Hinterlands
+										["maps"] = { THE_HINTERLANDS },
 									}),
 									crit(13, {	-- Tirisfal Glades
-										["coord"] = { 57.2, 51.8, 18 },
+										["coord"] = { 57.2, 51.8, TIRISFAL_GLADES },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 18 },	-- Tirisfal Glades
+										["maps"] = { TIRISFAL_GLADES },
 									}),
 									crit(14, {	-- Western Plaguelands
 										["coord"] = { 29.2, 57.3, 22 },
@@ -972,9 +972,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { 203, 205 },	-- Vashj'ir + Shimmering Expanse
 									}),
 									crit(2, {	-- Twilight Highlands
-										["coord"] = { 53.0, 46.0, 241 },
+										["coord"] = { 53.0, 46.0, TWILIGHT_HIGHLANDS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 241 },	-- Twilight Highlands
+										["maps"] = { TWILIGHT_HIGHLANDS },
 									}),
 									crit(3, {	-- Hyjal
 										["coord"] = { 62.8, 22.6, 198 },
@@ -1062,9 +1062,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { 210 },	-- The Cape of Stranglethorn
 									}),
 									crit(13, {	-- The Hinterlands
-										["coord"] = { 14.5, 50.0, 26 },
+										["coord"] = { 14.5, 50.0, THE_HINTERLANDS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 26 },	-- The Hinterlands
+										["maps"] = { THE_HINTERLANDS },
 									}),
 									crit(14, {	-- Western Plaguelands
 										["coord"] = { 43.6, 82.5, 22 },
@@ -1247,9 +1247,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 								["races"] = HORDE_ONLY,
 								["g"] = {
 									crit(1, {	-- Twilight Highlands
-										["coord"] = { 47.0, 28.3, 241 },
+										["coord"] = { 47.0, 28.3, TWILIGHT_HIGHLANDS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 241 },	-- Twilight Highlands
+										["maps"] = { TWILIGHT_HIGHLANDS },
 									}),
 									crit(2, {	-- Uldum
 										["coord"] = { 53.4, 32.0, 249 },

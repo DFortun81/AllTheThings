@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(90, {	-- Undercity
+		m(UNDERCITY, {
 			n(VENDORS, {
 				n(4604,  {	-- Abigail Sawyer <Bow Merchant>
-					["coord"] = { 55.0, 37.4, 90 },
+					["coord"] = { 55.0, 37.4, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(11303, {	-- Fine Shortbow
@@ -23,7 +23,7 @@ _.Zones =
 					},
 				}),
 				n(4610,  {	-- Algernon <Alchemy Supplies>
-					["coord"] = { 52.6, 75.0, 90 },
+					["coord"] = { 52.6, 75.0, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(9301, {	-- Recipe: Elixir of Shadow Power
@@ -33,7 +33,7 @@ _.Zones =
 					},
 				}),
 				n(50304, {	-- Captain Donald Adams <Undercity Quartermaster>
-					["coord"] = { 63.6, 48.8, 90 },
+					["coord"] = { 63.6, 48.8, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(64921),	-- Cape of Undercity
@@ -44,7 +44,7 @@ _.Zones =
 					},
 				}),
 				n(4561,  {	-- Daniel Bartlett <Trade Supplies>
-					["coord"] = { 64.0, 37.4, 90 },
+					["coord"] = { 64.0, 37.4, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(20854, {	-- Design: Amulet of the Moon
@@ -63,7 +63,7 @@ _.Zones =
 					},
 				}),
 				n(6566,  {	-- Estelle Gendry <Heirloom "Curator">
-					["coord"] = { 78.2, 76.6, 90 },
+					["coord"] = { 78.2, 76.6, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(122375, {	-- Aged Pauldrons of The Five Thunders
@@ -375,7 +375,7 @@ _.Zones =
 					},
 				}),
 				n(4775,  {	-- Felicia Doan <Trade Supplies>
-					["coord"] = { 64.1, 50.6, 90 },
+					["coord"] = { 64.1, 50.6, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						-- #if AFTER TBC
@@ -386,14 +386,14 @@ _.Zones =
 					},
 				}),
 				n(8403,  {	-- Jeremiah Payson <Cockroach Vendor>
-					["coord"] = { 67.6, 44.1, 90 },
+					["coord"] = { 67.6, 44.1, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(10393)	-- Undercity Cockroach (PET!)
 					},
 				}),
 				n(4589,  {	-- Joseph Moore <Leatherworking Supplies>
-					["coord"] = { 70.6, 59.6, 90 },
+					["coord"] = { 70.6, 59.6, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 3366}, -- Tamar <Leatherworking Supplies>
@@ -408,7 +408,7 @@ _.Zones =
 					},
 				}),
 				n(4558,  {	-- Lauren Newcomb <Light Armor Merchant>
-					["coord"] = { 63.8, 38.0, 90 },
+					["coord"] = { 63.8, 38.0, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(16059),	-- Common Brown Shirt
@@ -417,7 +417,7 @@ _.Zones =
 					},
 				}),
 				n(4574,  {	-- Lizbeth Cromwell <Fishing Supplies>
-					["coord"] = { 8, 90 },
+					["coord"] = { 81.8, 30.6, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(6325),	-- Recipe: Brilliant Smallfish
@@ -427,7 +427,7 @@ _.Zones =
 					},
 				}),
 				n(4577,  {	-- Millie Gregorian <Tailoring Supplies>
-					["coord"] = { 70.6, 30.2, 90 },
+					["coord"] = { 70.6, 30.2, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 3364}, -- Borya <Tailoring Supplies>
@@ -451,7 +451,7 @@ _.Zones =
 					},
 				}),
 				n(4553,  {	-- Ronald Burch <Cooking Supplies>
-					["coord"] = { 62.3, 43.1, 90 },
+					["coord"] = { 62.3, 43.1, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 49737}, -- Shazdar <Sous Chef>
@@ -464,21 +464,21 @@ _.Zones =
 					},
 				}),
 				n(4597,  {	-- Samuel Van Brunt <Blacksmithing Supplies>
-					["coord"] = { 61.4, 30.1, 90 },
+					["coord"] = { 61.4, 30.1, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 3356}, -- Sumi <Blacksmithing Supplies>
 					},
 				}),
 				n(52588, {	-- Sara Lanner <Jewelcrafting Supplies>
-					["coord"] = { 56.2, 36.6, 90 },
+					["coord"] = { 56.2, 36.6, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 50482}, -- Marith Lazuria <Jewelcrafting Supplies>
 					},
 				}),
 				n(4617,  {	-- Thaddeus Webb <Enchanting Supplies>
-					["coord"] = { 62.0, 60.8, 90 },
+					["coord"] = { 62.0, 60.8, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 3346}, -- Kithas <Enchanting Supplies>

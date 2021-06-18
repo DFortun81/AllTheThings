@@ -64,7 +64,7 @@ _.Zones =
 				}),
 				q(14151, {	-- Cardinal Ruby
 					["provider"] = { "n", 28703 },	-- Quest Giver: Linzy Blackbolt <Alchemy Trainer>
-					["coord"] = { 42.4, 32.0 },
+					["coord"] = { 42.4, 32.0, 125 },
 					["repeatable"] = true,
 					["requireSkill"] = ALCHEMY,
 					["g"] = {
@@ -206,7 +206,7 @@ _.Zones =
 				}),
 				q(12853, {	-- Luxurious Getaway!
 					["provider"] = { "n", 30490 },	-- Rin Duoctane
-					["coord"] = { 31.2, 49.6 },
+					["coord"] = { 31.2, 49.6, 126 },
 					["sourceQuests"] = {
 						49554,	-- Hero's Call: Storm Peaks!
 						49536,	-- Warchief's Command: Storm Peaks!

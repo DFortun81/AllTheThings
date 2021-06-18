@@ -18,17 +18,13 @@ _.Achievements =
 				un(REMOVED_FROM_GAME, ach(8881)),		-- Auchindoun: Silver
 				un(REMOVED_FROM_GAME, ach(8880)),		-- Auchindoun: Bronze
 				un(REMOVED_FROM_GAME, ach(8879)),		-- Auchindoun Challenger
-				un(REMOVED_FROM_GAME, spell(159897, {	-- Path of the Vigilant
-					-- ["collectible"] = true,
-				})),
+				un(REMOVED_FROM_GAME, spell(159897)),	-- Path of the Vigilant
 			})),
 			un(REMOVED_FROM_GAME, ach(8878, {	-- Bloodmaul Slag Mines: Gold
 				un(REMOVED_FROM_GAME, ach(8877)),		-- Bloodmaul Slag Mines: Silver
 				un(REMOVED_FROM_GAME, ach(8876)),		-- Bloodmaul Slag Mines: Bronze
 				un(REMOVED_FROM_GAME, ach(8875)),		-- Bloodmaul Slag Mines Challenger
-				un(REMOVED_FROM_GAME, spell(159895, {	-- Path of the Bloodmaul
-					-- ["collectible"] = true,
-				})),
+				un(REMOVED_FROM_GAME, spell(159895)),	-- Path of the Bloodmaul
 			})),
 			un(REMOVED_FROM_GAME, ach(6920)),	-- Challenge Conqueror
 			un(REMOVED_FROM_GAME, ach(6374, {	-- Challenge Conqueror: Bronze
@@ -210,25 +206,19 @@ _.Achievements =
 				un(REMOVED_FROM_GAME, ach(6906)),		-- Gate of the Setting Sun: Silver
 				un(REMOVED_FROM_GAME, ach(6905)),		-- Gate of the Setting Sun: Bronze
 				un(REMOVED_FROM_GAME, ach(6894)),		-- Gate of the Setting Sun Challenger
-				un(REMOVED_FROM_GAME, spell(131225, {	-- Path of the Setting Sun
-					-- ["collectible"] = true,
-				})),
+				un(REMOVED_FROM_GAME, spell(131225)),	-- Path of the Setting Sun
 			})),
 			un(REMOVED_FROM_GAME, ach(8890, {	-- Grimrail Depot: Gold
 				un(REMOVED_FROM_GAME, ach(8889)),		-- Grimrail Depot: Silver
 				un(REMOVED_FROM_GAME, ach(8888)),		-- Grimrail Depot: Bronze
 				un(REMOVED_FROM_GAME, ach(8887)),		-- Grimrail Depot Challenger
-				un(REMOVED_FROM_GAME, spell(159900, {	-- Path of the Dark Rail
-					-- ["collectible"] = true,
-				})),
+				un(REMOVED_FROM_GAME, spell(159900)),	-- Path of the Dark Rail
 			})),
 			un(REMOVED_FROM_GAME, ach(9000, {	-- Iron Docks: Gold
 				un(REMOVED_FROM_GAME, ach(8999)),		-- Iron Docks: Silver
 				un(REMOVED_FROM_GAME, ach(8998)),		-- Iron Docks: Bronze
 				un(REMOVED_FROM_GAME, ach(8997)),		-- Iron Docks Challenger
-				un(REMOVED_FROM_GAME, spell(159896, {	-- Path of the Iron Prow
-					-- ["collectible"] = true,
-				})),
+				un(REMOVED_FROM_GAME, spell(159896)),	-- Path of the Iron Prow
 			})),
 			un(REMOVED_FROM_GAME, ach(2188, {	-- Leeeeeeeeeeeeeroy!
 				title(110),		-- %s Jenkins
@@ -237,89 +227,67 @@ _.Achievements =
 				un(REMOVED_FROM_GAME, ach(6900)),		-- Mogu'shan Palace: Silver
 				un(REMOVED_FROM_GAME, ach(6899)),		-- Mogu'shan Palace: Bronze
 				un(REMOVED_FROM_GAME, ach(6892)),		-- Mogu'shan Palace Challenger
-				un(REMOVED_FROM_GAME, spell(131222, {	-- Path of the Mogu King
-					-- ["collectible"] = true,
-				})),
+				un(REMOVED_FROM_GAME, spell(131222)),	-- Path of the Mogu King
 			})),
 			un(REMOVED_FROM_GAME, ach(6910, {	-- Scarlet Halls: Gold
 				un(REMOVED_FROM_GAME, ach(6909)),		-- Scarlet Halls: Silver
 				un(REMOVED_FROM_GAME, ach(6908)),		-- Scarlet Halls: Bronze
 				un(REMOVED_FROM_GAME, ach(6895)),		-- Scarlet Halls Challenger
-				un(REMOVED_FROM_GAME, spell(131231, {	-- Path of the Scarlet Blade
-					-- ["collectible"] = true,
-				})),
+				un(REMOVED_FROM_GAME, spell(131231)),	-- Path of the Scarlet Blade
 			})),
 			un(REMOVED_FROM_GAME, ach(6913, {	-- Scarlet Monastery: Gold
 				un(REMOVED_FROM_GAME, ach(6912)),		-- Scarlet Monastery: Silver
 				un(REMOVED_FROM_GAME, ach(6911)),		-- Scarlet Monastery: Bronze
 				un(REMOVED_FROM_GAME, ach(6896)),		-- Scarlet Monastery Challenger
-				un(REMOVED_FROM_GAME, spell(131229, {	-- Path of the Scarlet Mitre
-					-- ["collectible"] = true,
-				})),
+				un(REMOVED_FROM_GAME, spell(131229)),	-- Path of the Scarlet Mitre
 			})),
 			un(REMOVED_FROM_GAME, ach(6916, {	-- Scholomance: Gold
 				un(REMOVED_FROM_GAME, ach(6915)),		-- Scholomance: Silver
 				un(REMOVED_FROM_GAME, ach(6914)),		-- Scholomance: Bronze
 				un(REMOVED_FROM_GAME, ach(6897)),		-- Scholomance Challenger
-				un(REMOVED_FROM_GAME, spell(131232, {	-- Path of the Necromancer
-					-- ["collectible"] = true,
-				})),
+				un(REMOVED_FROM_GAME, spell(131232)),	-- Path of the Necromancer
 			})),
 			un(REMOVED_FROM_GAME, ach(6904, {	-- Shado-Pan Monastery: Gold
 				un(REMOVED_FROM_GAME, ach(6903)),		-- Shado-Pan Monastery: Silver
 				un(REMOVED_FROM_GAME, ach(6902)),		-- Shado-Pan Monastery: Bronze
 				un(REMOVED_FROM_GAME, ach(6893)),		-- Shado-Pan Monastery Challenger
-				un(REMOVED_FROM_GAME, spell(131206, {	-- Path of the Shado-Pan
-					-- ["collectible"] = true,
-				})),
+				un(REMOVED_FROM_GAME, spell(131206)),	-- Path of the Shado-Pan
 			})),
 			un(REMOVED_FROM_GAME, ach(8886, {	-- Shadowmoon Burial Grounds: Gold
 				un(REMOVED_FROM_GAME, ach(8885)),		-- Shadowmoon Burial Grounds: Silver
 				un(REMOVED_FROM_GAME, ach(8884)),		-- Shadowmoon Burial Grounds: Bronze
 				un(REMOVED_FROM_GAME, ach(8883)),		-- Shadowmoon Burial Grounds Challenger
-				un(REMOVED_FROM_GAME, spell(159899, {	-- Path of the Crescent Moon
-					-- ["collectible"] = true,
-				})),
+				un(REMOVED_FROM_GAME, spell(159899)),	-- Path of the Crescent Moon
 			})),
 			un(REMOVED_FROM_GAME, ach(6919, {	-- Siege of Niuzao Temple: Gold
 				un(REMOVED_FROM_GAME, ach(6918)),		-- Siege of Niuzao Temple: Silver
 				un(REMOVED_FROM_GAME, ach(6917)),		-- Siege of Niuzao Temple: Bronze
 				un(REMOVED_FROM_GAME, ach(6898)),		-- Siege of Niuzao Temple Challenger
-				un(REMOVED_FROM_GAME, spell(131228, {	-- Path of the Black Ox
-					-- ["collectible"] = true,
-				})),
+				un(REMOVED_FROM_GAME, spell(131228)),	-- Path of the Black Ox
 			})),
 			un(REMOVED_FROM_GAME, ach(8874, {	-- Skyreach: Gold
 				un(REMOVED_FROM_GAME, ach(8873)),		-- Skyreach: Silver
 				un(REMOVED_FROM_GAME, ach(8872)),		-- Skyreach: Bronze
 				un(REMOVED_FROM_GAME, ach(8871)),		-- Skyreach Challenger
-				un(REMOVED_FROM_GAME, spell(159898, {	-- Path of the Skies
-					-- ["collectible"] = true,
-				})),
+				un(REMOVED_FROM_GAME, spell(159898)),	-- Path of the Skies
 			})),
 			un(REMOVED_FROM_GAME, ach(6891, {	-- Stormstout Brewery: Gold
 				un(REMOVED_FROM_GAME, ach(6890)),		-- Stormstout Brewery: Silver
 				un(REMOVED_FROM_GAME, ach(6889)),		-- Stormstout Brewery: Bronze
 				un(REMOVED_FROM_GAME, ach(6888)),		-- Stormstout Brewery Challenger
-				un(REMOVED_FROM_GAME, spell(131205, {	-- Path of the Stout Brew
-					-- ["collectible"] = true,
-				})),
+				un(REMOVED_FROM_GAME, spell(131205)),	-- Path of the Stout Brew
 			})),
 			un(REMOVED_FROM_GAME, ach(6887, {	-- Temple of the Jade Serpent: Gold
 				un(REMOVED_FROM_GAME, ach(6886)),		-- Temple of the Jade Serpent: Silver
 				un(REMOVED_FROM_GAME, ach(6885)),		-- Temple of the Jade Serpent: Bronze
 				un(REMOVED_FROM_GAME, ach(6884)),		-- Temple of the Jade Serpent Challenger
-				un(REMOVED_FROM_GAME, spell(131204, {	-- Path of the Jade Serpent
-					-- ["collectible"] = true,
-				})),
+				un(REMOVED_FROM_GAME, spell(131204)),	-- Path of the Jade Serpent
 			})),
 			un(REMOVED_FROM_GAME, ach(9004, {	-- The Everbloom: Gold
 				un(REMOVED_FROM_GAME, ach(9003)),	-- The Everbloom: Silver
 				un(REMOVED_FROM_GAME, ach(9002)),	-- The Everbloom: Bronze
 				un(REMOVED_FROM_GAME, ach(9001)),	-- The Everbloom Challenger
-				un(REMOVED_FROM_GAME, spell(159901, {	-- Path of the Verdant
-					-- ["collectible"] = true,
-				})),
+				un(REMOVED_FROM_GAME, spell(159901)),	-- Path of the Verdant
 			})),
 			un(REMOVED_FROM_GAME, ach(11218)),	-- There's a Boss In There
 			un(REMOVED_FROM_GAME, ach(1307)),	-- Upper Blackrock Spire (Classic)
@@ -327,9 +295,7 @@ _.Achievements =
 				un(REMOVED_FROM_GAME, ach(8893)),		-- Upper Blackrock Spire: Silver
 				un(REMOVED_FROM_GAME, ach(8892)),		-- Upper Blackrock Spire: Bronze
 				un(REMOVED_FROM_GAME, ach(8891)),		-- Upper Blackrock Spire Challenger
-				un(REMOVED_FROM_GAME, spell(159902, {	-- Path of the Burning Mountain
-					-- ["collectible"] = true,
-				})),
+				un(REMOVED_FROM_GAME, spell(159902)),	-- Path of the Burning Mountain
 			})),
 		}),
 	}),

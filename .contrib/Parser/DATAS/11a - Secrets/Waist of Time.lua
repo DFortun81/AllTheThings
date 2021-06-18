@@ -25,7 +25,7 @@ _.Secrets =
 			TEROKKAR_FOREST,
 			121,
 			125,
-			241,
+			TWILIGHT_HIGHLANDS,
 			379,
 			539,
 			542,
@@ -185,7 +185,7 @@ _.Secrets =
 				["questID"] = 52914,
 				["sourceQuests"] = { 52913 },
 				["description"] = "Twilight Highlands\n\nOn the ground next to the mace.\n\nThe Broken Tablet reads:\n\n\"<Something is written here.>\n\nStarfish droplets!\"",
-				["coord"] = { 17.1, 57.9, 241 },	-- Broken Tablet
+				["coord"] = { 17.1, 57.9, TWILIGHT_HIGHLANDS },	-- Broken Tablet
 			}),
 			o(294115, { 	-- Ashed Torch
 				["model"] = 341882,
@@ -224,7 +224,7 @@ _.Secrets =
 				["questID"] = 52822,
 				["sourceQuests"] = { 52918 },
 				["description"] = "Twilight Highlands\n\n/slap",
-				["coord"] = { 28.5, 24.9, 241 },	-- Aquinastrasz <Vermillion Redoubt Flight Master>
+				["coord"] = { 28.5, 24.9, TWILIGHT_HIGHLANDS },	-- Aquinastrasz <Vermillion Redoubt Flight Master>
 			}),
 			n(36034, { 	-- Karnum Marshweaver <The Cenarion Circle>
 				["questID"] = 52823,

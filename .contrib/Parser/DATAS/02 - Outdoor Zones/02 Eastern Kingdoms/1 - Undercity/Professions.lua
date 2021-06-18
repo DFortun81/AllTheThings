@@ -5,13 +5,13 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(90, {	-- Undercity
+		m(UNDERCITY, {
 			n(-38, {	-- Profession
 				prof(ALCHEMY, {
 					n(QUESTS, {
 						q(29481, {	-- Elixir Master
-							["provider"] = { "n", 4611 },	-- Doctor Herbert Halsey (Undercity)
-							["coord"] = { 47.6, 72.8, 90 },	-- Doctor Herbert Halsey (Undercity)
+							["provider"] = { "n", 4611 },	-- Doctor Herbert Halsey
+							["coord"] = { 47.6, 72.8, UNDERCITY },
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = ALCHEMY,
 							["repeatable"] = true,
@@ -25,8 +25,8 @@ _.Zones =
 							},]]
 						}),
 						q(29067, {	-- Potion Master
-							["provider"] = { "n", 4611 },	-- Doctor Herbert Halsey (Undercity)
-							["coord"] = { 47.6, 72.8, 90 },	-- Doctor Herbert Halsey (Undercity)
+							["provider"] = { "n", 4611 },	-- Doctor Herbert Halsey
+							["coord"] = { 47.6, 72.8, UNDERCITY },
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = ALCHEMY,
 							["repeatable"] = true,
@@ -40,8 +40,8 @@ _.Zones =
 							},]]
 						}),
 						q(29482, {	-- Transmutation Master
-							["provider"] = { "n", 4611 },	-- Doctor Herbert Halsey (Undercity)
-							["coord"] = { 47.6, 72.8, 90 },	-- Doctor Herbert Halsey (Undercity)
+							["provider"] = { "n", 4611 },	-- Doctor Herbert Halsey
+							["coord"] = { 47.6, 72.8, UNDERCITY },
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = ALCHEMY,
 							["repeatable"] = true,
@@ -75,7 +75,7 @@ _.Zones =
 						}),
 						q(29317, {	-- Fish Head
 							["provider"] = { "n", 4573 },	-- Armand Cromwell
-							["coord"] = { 80.7, 31.2, 90 },
+							["coord"] = { 80.7, 31.2, UNDERCITY },
 							["isDaily"] = true,
 							["requireSkill"] = FISHING,
 							["races"] = HORDE_ONLY,
@@ -87,7 +87,7 @@ _.Zones =
 						}),
 						q(29320, {	-- Like Pike?
 							["provider"] = { "n", 4573 },	-- Armand Cromwell
-							["coord"] = { 80.7, 31.2, 90 },
+							["coord"] = { 80.7, 31.2, UNDERCITY },
 							["isDaily"] = true,
 							["requireSkill"] = FISHING,
 							["races"] = HORDE_ONLY,
@@ -99,7 +99,7 @@ _.Zones =
 						}),
 						q(29361, {	-- Moat Monster!
 							["provider"] = { "n", 4573 },	-- Armand Cromwell
-							["coord"] = { 80.7, 31.2, 90 },
+							["coord"] = { 80.7, 31.2, UNDERCITY },
 							["isDaily"] = true,
 							["requireSkill"] = FISHING,
 							["races"] = HORDE_ONLY,
@@ -111,7 +111,7 @@ _.Zones =
 						}),
 						q(29319, {	-- Tadpole Terror
 							["provider"] = { "n", 4573 },	-- Armand Cromwell
-							["coord"] = { 80.7, 31.2, 90 },
+							["coord"] = { 80.7, 31.2, UNDERCITY },
 							["isDaily"] = true,
 							["requireSkill"] = FISHING,
 							["races"] = HORDE_ONLY,
@@ -123,7 +123,7 @@ _.Zones =
 						}),
 						q(29322, {	-- Time for Slime
 							["provider"] = { "n", 4573 },	-- Armand Cromwell
-							["coord"] = { 80.7, 31.2, 90 },
+							["coord"] = { 80.7, 31.2, UNDERCITY },
 							["isDaily"] = true,
 							["requireSkill"] = FISHING,
 							["races"] = HORDE_ONLY,
@@ -144,7 +144,7 @@ _.Zones =
 					n(QUESTS, {
 						q(29333, {	-- Escargot A Go-Go
 							["provider"] = { "n", 4552 },	-- Eunice Burch
-							["coord"] = { 62.2, 44.6, 90 },
+							["coord"] = { 62.2, 44.6, UNDERCITY },
 							["isDaily"] = true,
 							["requireSkill"] = COOKING,
 							["races"] = HORDE_ONLY,
@@ -157,7 +157,7 @@ _.Zones =
 						}),
 						q(29315, {	-- Fungus Among Us
 							["provider"] = { "n", 4552 },	-- Eunice Burch
-							["coord"] = { 62.2, 44.6, 90 },
+							["coord"] = { 62.2, 44.6, UNDERCITY },
 							["isDaily"] = true,
 							["requireSkill"] = COOKING,
 							["races"] = HORDE_ONLY,
@@ -170,7 +170,7 @@ _.Zones =
 						}),
 						q(29332, {	-- Lily, Oh Lily
 							["provider"] = { "n", 4552 },	-- Eunice Burch
-							["coord"] = { 62.2, 44.6, 90 },
+							["coord"] = { 62.2, 44.6, UNDERCITY },
 							["isDaily"] = true,
 							["requireSkill"] = COOKING,
 							["races"] = HORDE_ONLY,
@@ -183,7 +183,7 @@ _.Zones =
 						}),
 						q(29334, {	-- Roach Coach
 							["provider"] = { "n", 4552 },	-- Eunice Burch
-							["coord"] = { 62.2, 44.6, 90 },
+							["coord"] = { 62.2, 44.6, UNDERCITY },
 							["isDaily"] = true,
 							["requireSkill"] = COOKING,
 							["races"] = HORDE_ONLY,
@@ -196,7 +196,7 @@ _.Zones =
 						}),
 						q(29360, {	-- Would You Like Some Flies With That?
 							["provider"] = { "n", 4552 },	-- Eunice Burch
-							["coord"] = { 62.2, 44.6, 90 },
+							["coord"] = { 62.2, 44.6, UNDERCITY },
 							["isDaily"] = true,
 							["requireSkill"] = COOKING,
 							["races"] = HORDE_ONLY,

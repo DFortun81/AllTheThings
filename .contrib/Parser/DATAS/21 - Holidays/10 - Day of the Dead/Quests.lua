@@ -143,8 +143,8 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_DAY_OF_THE_DEAD },
 				["provider"] = { "n", 34476 },	-- Cheerful Undead Spirit
 				["isYearly"] = true,
 				["races"] = { UNDEAD },
-				["coord"] = { 62.3, 68.3, 18 },
-				["maps"] = { 18 },	-- Tirisfal Glads
+				["coord"] = { 62.3, 68.3, TIRISFAL_GLADES },
+				["maps"] = { TIRISFAL_GLADES },
 				["g"] = {
 					i(46831),	-- Macabre Marionette (PET!)
 				},

@@ -1690,7 +1690,7 @@ _.Zones =
 				}),
 				q(35017, {	-- Skulltaker's Revenge
 					["provider"] = { "n", 81185 },	-- Dying Skulltaker
-					["coord"] = { 54.8, 65.2 },
+					["coord"] = { 54.8, 65.2, 543 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(35667, {	-- Skulltakers in Crimson Fen

@@ -136,6 +136,7 @@ _.Zones =
 					["provider"] = { "n", 40809 },	-- Tak
 					["coord"] = { 47.4, 58.6, 7 },
 					["races"] = { TAUREN },
+					["sourceQuest"] = 6361,	-- A Bundle of Hides
 				}),
 				q(767,   {	-- Rite of Vision
 					["u"] = REMOVED_FROM_GAME,

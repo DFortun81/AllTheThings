@@ -2026,29 +2026,6 @@ local function HasExpandedSubgroup(group)
 	end
 	return false;
 end
--- TODO: remove if really unnecessary
--- local function ReapplyExpand(g, g2)
--- 	for j,p in ipairs(g2) do
--- 		local found = false;
--- 		local key = p.key;
--- 		local id = p[key];
--- 		for i,o in ipairs(g) do
--- 			if o[key] == id then
--- 				found = true;
--- 				if o.expanded then
--- 					if not p.expanded then
--- 						p.expanded = true;
--- 						if o.g and p.g then ReapplyExpand(o.g, p.g); end
--- 					end
--- 				end
--- 				break;
--- 			end
--- 		end
--- 		if not found then
--- 			ExpandGroupsRecursively(p, true);
--- 		end
--- 	end
--- end
 
 local ResolveSymbolicLink;
 (function()
@@ -4973,10 +4950,76 @@ end
 local function RefreshSaves()
 	AfterCombatCallback(RefreshSavesCallback);
 end
+local function RefreshAppearanceSources()
+	app.DoRefreshAppearanceSources = nil;
+	wipe(ATTAccountWideData.Sources);
+	local collectedSources = ATTAccountWideData.Sources;
+	-- TODO: test C_TransmogCollection.PlayerKnowsSource(sourceID) ?
+	app.MaxSourceID = app.MaxSourceID or 0;
+	-- process through all known ATT SourceIDs if not yet processed
+	if app.MaxSourceID == 0 then
+		if app.Settings:Get("Completionist") then
+			-- Completionist Mode can simply use the *fast* blizzard API.
+			for id,_ in pairs(fieldCache["s"]) do
+				if rawget(collectedSources, id) ~= 1 then
+					if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(id) then
+						rawset(collectedSources, id, 1);
+					end
+				end
+				-- track the max sourceID so we can evaluate sources not in ATT as well
+				if id > app.MaxSourceID then app.MaxSourceID = id; end
+			end
+		else
+			-- Unique Mode requires a lot more calculation.
+			for id,_ in pairs(fieldCache["s"]) do
+				if not rawget(collectedSources, id) then
+					if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(id) then
+						rawset(collectedSources, id, 1);
+					else
+						_cache = C_TransmogCollection_GetSourceInfo(id);
+						if _cache and app.ItemSourceFilter(_cache, C_TransmogCollection_GetAllAppearanceSources(_cache.visualID)) then
+							rawset(collectedSources, id, 2);
+						end
+					end
+				end
+				-- track the max sourceID so we can evaluate sources not in ATT as well
+				if id > app.MaxSourceID then app.MaxSourceID = id; end
+			end
+		end
+		-- print("Max SourceID",app.MaxSourceID);
+	end
+	if app.MaxSourceID > 0 then
+		-- Otherwise evaluate all SourceIDs under the maximum
+		if app.Settings:Get("Completionist") then
+			for s=1,app.MaxSourceID do
+				if rawget(collectedSources, s) ~= 1 then
+					if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(s) then
+						rawset(collectedSources, s, 1);
+					end
+				end
+			end
+		else
+			for s=1,app.MaxSourceID do
+				if not rawget(collectedSources, s) then
+					if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(s) then
+						rawset(collectedSources, s, 1);
+					else
+						_cache = C_TransmogCollection_GetSourceInfo(s);
+						if _cache and app.ItemSourceFilter(_cache, C_TransmogCollection_GetAllAppearanceSources(_cache.visualID)) then
+							rawset(collectedSources, s, 2);
+						end
+					end
+				end
+			end
+		end
+		-- print("Finished SourceID",app.MaxSourceID);
+	end
+end
+app.RefreshAppearanceSources = RefreshAppearanceSources;
 local function RefreshCollections()
 	StartCoroutine("RefreshingCollections", function()
 		while InCombatLockdown() do coroutine.yield(); end
-		app.print("Refreshing collection...");
+		app.print(L["REFRESHING_COLLECTION"]);
 		app.RefreshQuestInfo();
 
 		-- Harvest Illusion Collections
@@ -5024,74 +5067,13 @@ local function RefreshCollections()
 		coroutine.yield();
 
 		-- Refresh Sources from Cache if tracking Transmog
-		if app.Settings:Get("Thing:Transmog") then
-			local collectedSources = ATTAccountWideData.Sources;
-			-- TODO: test C_TransmogCollection.PlayerKnowsSource(sourceID) ?
-			app.MaxSourceID = app.MaxSourceID or 0;
-			-- process through all known ATT SourceIDs if not yet processed
-			if app.MaxSourceID == 0 then
-				if app.Settings:Get("Completionist") then
-					-- Completionist Mode can simply use the *fast* blizzard API.
-					for id,_ in pairs(fieldCache["s"]) do
-						if rawget(collectedSources, id) ~= 1 then
-							if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(id) then
-								rawset(collectedSources, id, 1);
-							end
-						end
-						-- track the max sourceID so we can evaluate sources not in ATT as well
-						if id > app.MaxSourceID then app.MaxSourceID = id; end
-					end
-				else
-					-- Unique Mode requires a lot more calculation.
-					for id,_ in pairs(fieldCache["s"]) do
-						if not rawget(collectedSources, id) then
-							if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(id) then
-								rawset(collectedSources, id, 1);
-							else
-								_cache = C_TransmogCollection_GetSourceInfo(id);
-								if _cache and app.ItemSourceFilter(_cache, C_TransmogCollection_GetAllAppearanceSources(_cache.visualID)) then
-									rawset(collectedSources, id, 2);
-								end
-							end
-						end
-						-- track the max sourceID so we can evaluate sources not in ATT as well
-						if id > app.MaxSourceID then app.MaxSourceID = id; end
-					end
-				end
-				-- print("Max SourceID",app.MaxSourceID);
-			end
-			coroutine.yield();
-			if app.MaxSourceID > 0 then
-				-- Otherwise evaluate all SourceIDs under the maximum
-				if app.Settings:Get("Completionist") then
-					for s=1,app.MaxSourceID do
-						if rawget(collectedSources, s) ~= 1 then
-							if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(s) then
-								rawset(collectedSources, s, 1);
-							end
-						end
-					end
-				else
-					for s=1,app.MaxSourceID do
-						if not rawget(collectedSources, s) then
-							if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(s) then
-								rawset(collectedSources, s, 1);
-							else
-								_cache = C_TransmogCollection_GetSourceInfo(s);
-								if _cache and app.ItemSourceFilter(_cache, C_TransmogCollection_GetAllAppearanceSources(_cache.visualID)) then
-									rawset(collectedSources, s, 2);
-								end
-							end
-						end
-					end
-				end
-				-- print("Finished SourceID",app.MaxSourceID);
-			end
-			coroutine.yield();
+		if app.DoRefreshAppearanceSources or app.Settings:Get("Thing:Transmog") then
+			RefreshAppearanceSources();
 		end
+		coroutine.yield();
 
 		-- Need to update the Settings window as well if User does not have auto-refresh for Settings
-		if app.Settings:Get("Skip:AutoRefresh") then
+		if app.Settings:Get("Skip:AutoRefresh") or app.Settings.NeedsRefresh then
 			app.Settings:UpdateMode("FORCE");
 		else
 			app:RefreshData(false, false, true);
@@ -5101,7 +5083,7 @@ local function RefreshCollections()
 		while app.refreshing["RefreshData"] do coroutine.yield(); end
 
 		-- Report success.
-		app.print("Done refreshing collection.");
+		app.print(L["DONE_REFRESHING"]);
 	end);
 end
 local function GetGroupSortValue(group)
@@ -11356,7 +11338,7 @@ UpdateGroup = function(parent, group, window)
 	-- 	return group.visible;
 	-- end
 
-	local visible = app.MODE_DEBUG;
+	local visible;
 
 	-- Determine if this user can enter the instance or acquire the item.
 	-- If the 'can equip' filter says true
@@ -11420,20 +11402,19 @@ UpdateGroup = function(parent, group, window)
 				if group.forceShow then
 					-- if app.DEBUG_LOG then print("UpdateGroup.g.forceShow",group.progress,group.total) end
 					visible = true;
-					group.forceShow = nil;
 				-- If this group contains Things, show based on visibility filter
-				elseif group.total > 0 and app.GroupVisibilityFilter(group) then
+				elseif group.total > 0 then
 					-- if app.DEBUG_LOG then print("UpdateGroup.g.total",group.progress,group.total) end
-					visible = true;
+					visible = app.GroupVisibilityFilter(group);
 				-- If this group is trackable, then we should show it.
-				elseif app.ShowIncompleteThings(group) and not group.saved then
+				elseif app.ShowIncompleteThings(group) then
 					-- if app.DEBUG_LOG then print("UpdateGroup.g.trackable",group.progress,group.total) end
-					visible = true;
-					parent.forceShow = true;
+					visible = not group.saved;
+					parent.forceShow = visible or parent.forceShow;
 				-- elseif group.itemID and app.CollectibleLoot and group.f then
 				-- 	visible = true;
 				end
-				-- end
+				group.forceShow = nil;
 			else
 				-- If the 'can equip' filter says true
 				-- if app.GroupFilter(group) then
@@ -11454,14 +11435,12 @@ UpdateGroup = function(parent, group, window)
 					else
 						visible = true;
 					end
-				elseif group.trackable then
+				elseif app.ShowIncompleteThings(group) then
 					-- if app.DEBUG_LOG then print("UpdateGroup.trackable",group.progress,group.total) end
 					-- If this group is trackable, then we should show it.
-					if app.ShowIncompleteThings(group) and not group.saved then
 						-- if app.DEBUG_LOG then print("UpdateGroup.trackable.visible",group.progress,group.total) end
-						visible = true;
-						parent.forceShow = true;
-					end
+					visible = not group.saved;
+					parent.forceShow = visible or parent.forceShow;
 				-- elseif group.itemID and app.CollectibleLoot and group.f then
 				-- 	visible = true;
 				end

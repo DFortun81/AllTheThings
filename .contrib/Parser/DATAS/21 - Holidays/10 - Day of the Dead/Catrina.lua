@@ -17,7 +17,7 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_DAY_OF_THE_DEAD },
 				{ 46.6, 25.8, STORMWIND_CITY },
 				{ 56.4, 18.4, THUNDER_BLUFF },
 				{ 39.9, 21.8, TEROKKAR_FOREST },
-				{ 62.2, 67.4, 18 },		-- Tirisfal Glades [UC]
+				{ 62.2, 67.4, TIRISFAL_GLADES },	-- Undercity
 			},
 			["maps"] = {
 				AZUREMYST_ISLE,
@@ -30,7 +30,7 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_DAY_OF_THE_DEAD },
 				STORMWIND_CITY,
 				THUNDER_BLUFF,
 				TEROKKAR_FOREST,
-				18,		-- Tirisfal Glades [UC]
+				TIRISFAL_GLADES,	-- Undercity
 			},
 			["g"] = {
 				ach(3456),	-- Dead Man's Party

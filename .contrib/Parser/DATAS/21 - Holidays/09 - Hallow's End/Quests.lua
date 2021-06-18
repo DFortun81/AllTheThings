@@ -39,13 +39,13 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["coords"] = {
 					{ 52.6, 41.5, 1  },	-- Durotar
 					{ 47.2, 46.4, EVERSONG_WOODS },
-					{ 60.8, 53.6, 18 }	-- Tirisfal Glades
+					{ 60.8, 53.6, TIRISFAL_GLADES },
 				},
 				["races"] = HORDE_ONLY,
 				["maps"] = {
 					1,  -- Durotar
 					EVERSONG_WOODS,
-					18 -- Tirisfal Glades
+					TIRISFAL_GLADES,
 				},
 				["g"] = {
 					i(20557),	-- Hallow's End Pumpkin Treat
@@ -66,7 +66,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["isBreadcrumb"] = true,
 				["provider"] = { "n", 53763 },	-- Gretchen Fenlow
 				["races"] = HORDE_ONLY,
-				["maps"] = { 90 },	-- Undercity
+				["maps"] = { UNDERCITY },
 			}),
 			q(29074, {	-- A Season for Celebration (Alliance)
 				["providers"] = {
@@ -110,7 +110,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 					WINTERSPRING,
 					ORGRIMMAR,
 					THUNDER_BLUFF,
-					90,		-- Undercity
+					UNDERCITY,
 					EVERSONG_WOODS,
 					NETHERSTORM,
 					SHATTRATH_CITY,
@@ -123,10 +123,10 @@ _.Holidays = bubbleDown({["u"] = 26},
 			q(29377, {	-- A Time to Break Down
 				["provider"] = { "n", 15197 },	-- Darkcaller Yanka
 				["sourceQuest"] = 29400,	-- A Season for Celebration
-				["coord"] = { 62.0, 67.8, 18 },
+				["coord"] = { 62.0, 67.8, TIRISFAL_GLADES },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
-				["maps"] = { 18 }, -- Tirisfal Glades
+				["maps"] = { TIRISFAL_GLADES },
 				["g"] = {
 					i(33226),	-- Tricky Treat
 				},
@@ -134,10 +134,10 @@ _.Holidays = bubbleDown({["u"] = 26},
 			q(29376, {	-- A Time to Build Up
 				["provider"] = { "n", 15197 },	-- Darkcaller Yanka
 				["sourceQuest"] = 29400,	-- A Season for Celebration
-				["coord"] = { 62.0, 67.8, 18 },
+				["coord"] = { 62.0, 67.8, TIRISFAL_GLADES },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
-				["maps"] = { 18 }, -- Tirisfal Glades
+				["maps"] = { TIRISFAL_GLADES },
 				["g"] = {
 					i(33226),	-- Tricky Treat
 				},
@@ -907,36 +907,36 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12351, {	-- Candy Bucket — Hinterlands, Aerie Peak, Alliance
 				["isYearly"] = true,
-				["coord"] = { 14.2, 44.7, 26 },
+				["coord"] = { 14.2, 44.7, THE_HINTERLANDS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 26 },	-- The Hinterlands
+				["maps"] = { THE_HINTERLANDS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(28971, {	-- Candy Bucket — Hinterlands, Hiri'watha Research Station, Horde
 				["isYearly"] = true,
-				["coord"] = { 31.9, 57.9, 26 },
+				["coord"] = { 31.9, 57.9, THE_HINTERLANDS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 26 },	-- The Hinterlands
+				["maps"] = { THE_HINTERLANDS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12387, {	-- Candy Bucket — Hinterlands, Revantusk Village, Horde
 				["isYearly"] = true,
-				["coord"] = { 78.2, 81.4, 26 },
+				["coord"] = { 78.2, 81.4, THE_HINTERLANDS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 26 },	-- The Hinterlands
+				["maps"] = { THE_HINTERLANDS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(28970, {	-- Candy Bucket — Hinterlands, Stormfeather Outpost, Alliance
 				["isYearly"] = true,
-				["coord"] = { 66.2, 44.4, 26 },
+				["coord"] = { 66.2, 44.4, THE_HINTERLANDS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 26 },	-- The Hinterlands
+				["maps"] = { THE_HINTERLANDS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -1695,18 +1695,18 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12363, {	-- Candy Bucket — Tirisfal Glades, Brill, Horde
 				["isYearly"] = true,
-				["coord"] = { 60.9, 51.5, 18 },
+				["coord"] = { 60.9, 51.5, TIRISFAL_GLADES },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 18 },	-- Tirisfal Glades
+				["maps"] = { TIRISFAL_GLADES },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(28972, {	-- Candy Bucket — Tirisfal Glades, The Bulwark, Horde
 				["isYearly"] = true,
-				["coord"] = { 83.0, 72.0, 18 },
+				["coord"] = { 83.0, 72.0, TIRISFAL_GLADES },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 18 },	-- Tirisfal Glades
+				["maps"] = { TIRISFAL_GLADES },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -1721,63 +1721,63 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(28973, {	-- Candy Bucket — Twilight Highlands, Bloodgulch, Horde
 				["isYearly"] = true,
-				["coord"] = { 53.4, 42.9, 241 },
+				["coord"] = { 53.4, 42.9,TWILIGHT_HIGHLANDS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 241 },	-- Twilight Highlands
+				["maps"] = { TWILIGHT_HIGHLANDS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(28974, {	-- Candy Bucket — Twilight Highlands, Crushblow, Horde
 				["isYearly"] = true,
-				["coord"] = { 45.1, 76.7, 241 },
+				["coord"] = { 45.1, 76.7,TWILIGHT_HIGHLANDS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 241 },	-- Twilight Highlands
+				["maps"] = { TWILIGHT_HIGHLANDS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(28977, {	-- Candy Bucket — Twilight Highlands, Firebeard's Patrol, Alliance
 				["isYearly"] = true,
-				["coord"] = { 60.4, 58.2, 241 },
+				["coord"] = { 60.4, 58.2,TWILIGHT_HIGHLANDS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 241 },	-- Twilight Highlands
+				["maps"] = { TWILIGHT_HIGHLANDS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(28980, {	-- Candy Bucket — Twilight Highlands, Highbank, Alliance
 				["isYearly"] = true,
-				["coord"] = { 79.5, 78.5, 241 },
+				["coord"] = { 79.5, 78.5,TWILIGHT_HIGHLANDS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 241 },	-- Twilight Highlands
+				["maps"] = { TWILIGHT_HIGHLANDS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(28976, {	-- Candy Bucket — Twilight Highlands, Krazzworks, Horde
 				["isYearly"] = true,
-				["coord"] = { 75.4, 16.5, 241 },
+				["coord"] = { 75.4, 16.5,TWILIGHT_HIGHLANDS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 241 },	-- Twilight Highlands
+				["maps"] = { TWILIGHT_HIGHLANDS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(28978, {	-- Candy Bucket — Twilight Highlands, Thundermar, Alliance
 				["isYearly"] = true,
-				["coord"] = { 49.6, 30.4, 241 },
+				["coord"] = { 49.6, 30.4,TWILIGHT_HIGHLANDS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 241 },	-- Twilight Highlands
+				["maps"] = { TWILIGHT_HIGHLANDS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(28979, {	-- Candy Bucket — Twilight Highlands, Victor's Point, Alliance
 				["isYearly"] = true,
-				["coord"] = { 43.6, 57.3, 241 },
+				["coord"] = { 43.6, 57.3,TWILIGHT_HIGHLANDS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 241 },	-- Twilight Highlands
+				["maps"] = { TWILIGHT_HIGHLANDS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -1800,9 +1800,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12368, {	-- Candy Bucket — Undercity, The Trade Quarter, Horde
 				["isYearly"] = true,
-				["coord"] = { 67.7, 37.9, 90 },
+				["coord"] = { 67.7, 37.9, UNDERCITY },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 90 },	-- Undercity
+				["maps"] = { UNDERCITY },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -2047,7 +2047,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["repeatable"] = true,
 				["provider"] = { "n", 6741 },	-- Innkeeper Norman
 				["races"] = HORDE_ONLY,
-				["maps"] = { 90 },	-- Undercity
+				["maps"] = { UNDERCITY },
 			}),
 			q(29144, {	-- Clean Up in Stormwind
 				["provider"] = { "n", 51934 },	-- Gretchen Fenlow
@@ -2062,10 +2062,10 @@ _.Holidays = bubbleDown({["u"] = 26},
 			q(29375, {	-- Clean Up in Undercity
 				["provider"] = { "n", 53763 },	-- Candace Fenlow
 				["sourceQuest"] = 29400,	-- A Season for Celebration
-				["coord"] = { 62.4, 66.7, 18 },	-- Tirisfal Glades
+				["coord"] = { 62.4, 66.7, TIRISFAL_GLADES },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
-				["maps"] = { 18 },	-- Tirisfal Glades
+				["maps"] = { TIRISFAL_GLADES },
 				["g"] = {
 					i(33226),	-- Tricky Treat
 				},
@@ -2187,9 +2187,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 			q(11449, {	-- Fire Training (Tirisfal Glades)
 				["sourceQuests"] = { 11357 },	-- Masked Orphan Matron
 				["provider"] = { "n", 23973 },	-- Masked Orphan Matron
-				["coord"] = { 52.5, 41.2, 18 },	-- Tirisfal Glades
+				["coord"] = { 52.5, 41.2, TIRISFAL_GLADES },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 18 },	-- Tirisfal Glades
+				["maps"] = { TIRISFAL_GLADES },
 				["g"] = {
 					i(33226),	-- Tricky Treat
 				},
@@ -2240,9 +2240,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 			q(8312,  {	-- Hallow's End Treats for Spoops!
 				["isYearly"] = true,
 				["provider"] = { "n", 15309 },	-- Spoops
-				["coord"] = { 62.1, 66.4, 18 },	-- Tirisfal Glades
+				["coord"] = { 62.1, 66.4, TIRISFAL_GLADES },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 18 },	-- Tirisfal Glades
+				["maps"] = { TIRISFAL_GLADES },
 				["g"] = {
 					i(33226),	-- Tricky Treat
 				},
@@ -2277,7 +2277,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 					WINTERSPRING,
 					ORGRIMMAR,
 					THUNDER_BLUFF,
-					90,		-- Undercity
+					UNDERCITY,
 					EVERSONG_WOODS,
 					NETHERSTORM,
 					SHATTRATH_CITY,
@@ -2361,13 +2361,13 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["coords"] = {
 					{ 52.6, 41.5, 1  },	-- Durotar
 					{ 47.2, 46.4, EVERSONG_WOODS },
-					{ 60.8, 53.6, 18 }	-- Tirisfal Glades
+					{ 60.8, 53.6, TIRISFAL_GLADES },
 				},
 				["races"] = HORDE_ONLY,
 				["maps"] = {
 					1,  -- Durotar
 					EVERSONG_WOODS,
-					18, -- Tirisfal Glades
+					TIRISFAL_GLADES,
 				},
 				["g"] = {
 					i(34077),	-- Crudely Wrapped Gift
@@ -2388,9 +2388,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["provider"] = { "n", 53763 },	-- Candace Fenlow
 				["races"] = HORDE_ONLY,
 				["sourceQuest"] = 29400,	-- A Season for Celebration
-				["coord"] = { 62.4, 66.7, 18 },
+				["coord"] = { 62.4, 66.7, TIRISFAL_GLADES },
 				["isDaily"] = true,
-				["maps"] = { 18 },	-- Tirisfal Glades
+				["maps"] = { TIRISFAL_GLADES },
 				["g"] = {
 					i(33226),	-- Tricky Treat
 				},
@@ -2401,13 +2401,13 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["coords"] = {
 					{ 52.6, 41.5, 1  },	-- Durotar
 					{ 47.2, 46.4, EVERSONG_WOODS },
-					{ 60.8, 53.6, 18 }	-- Tirisfal Glades
+					{ 60.8, 53.6, TIRISFAL_GLADES },
 				},
 				["races"] = HORDE_ONLY,
 				["maps"] = {
 					1,  -- Durotar
 					EVERSONG_WOODS,
-					18, -- Tirisfal Glades
+					TIRISFAL_GLADES,
 				},
 				["g"] = {
 					i(20557),	-- Hallow's End Pumpkin Treat
@@ -2498,7 +2498,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["maps"] = {
 					1,	-- Durotar
 					EVERSONG_WOODS,
-					18,	-- Tirisfal Glades
+					TIRISFAL_GLADES,
 				},
 			}),
 			q(43162, {	-- Under the Crooked Tree

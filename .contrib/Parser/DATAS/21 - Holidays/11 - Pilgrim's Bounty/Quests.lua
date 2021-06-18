@@ -191,7 +191,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 					WINTERSPRING,
 					ORGRIMMAR,
 					THUNDER_BLUFF,
-					90,		-- Undercity
+					UNDERCITY,
 					EVERSONG_WOODS,
 					NETHERSTORM,
 					SHATTRATH_CITY,
@@ -206,20 +206,20 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 				["races"] = HORDE_ONLY,
 				["maps"] = {
 					1,		-- Durotar
-					18,		-- Tirisfal Glades
+					TIRISFAL_GLADES,
 					EVERSONG_WOODS,
 					HELLFIRE_PENINSULA,
 				},
 			}),
 			q(14037, {	-- Spice Bread Stuffing (Horde)
 				["provider"] = { "n", 34677 },	-- Miles Standish
-				["maps"] = { 90, },	-- Undercity
+				["maps"] = { UNDERCITY },
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
 			}),
 			q(14040, {	-- Pumpkin Pie (Horde)
 				["provider"] = { "n", 34768 },	-- William Mullins
-				["maps"] = { 90, },	-- Undercity
+				["maps"] = { UNDERCITY },
 				["sourceQuests"] = { 14037, },	-- Spice Bread Stuffing (Horde)
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
@@ -247,7 +247,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 			}),
 			q(14047, {	-- Slow-roasted Turkey (Horde)
 				["provider"] = { "n", 34677 },	-- Miles Standish
-				["maps"] = { 90, },	-- Undercity
+				["maps"] = { UNDERCITY },
 				["sourceQuests"] = { 14044 },	-- Undersupplied in the Undercity (Horde)
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
@@ -257,7 +257,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 				["provider"] = { "n", 34768 },	-- William Mullins
 				["isDaily"] = true,
 				["races"] = HORDE_ONLY,
-				["maps"] = { 90, },	-- Undercity
+				["maps"] = { UNDERCITY },
 				["g"] = {
 					i(46723),	-- Pilgrim's Hat
 					i(46800),	-- Pilgrim's Attire
@@ -275,7 +275,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 				["provider"] = { "n", 34712 },	-- Roberta Carter
 				["isDaily"] = true,
 				["races"] = HORDE_ONLY,
-				["maps"] = { 90, },	-- Undercity
+				["maps"] = { UNDERCITY },
 				["g"] = {
 					i(46723),	-- Pilgrim's Hat
 					i(46800),	-- Pilgrim's Attire

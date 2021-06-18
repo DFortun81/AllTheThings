@@ -12,7 +12,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 			STORMWIND_CITY,
 			THE_EXODAR,
 			THUNDER_BLUFF,
-			90,		-- Undercity
+			UNDERCITY,
 		},
 	}),
 });

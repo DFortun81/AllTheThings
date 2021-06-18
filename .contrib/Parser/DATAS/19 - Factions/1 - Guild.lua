@@ -7,7 +7,7 @@ _.Factions =
 	faction(1168, {	-- Your Guild (Faction) <Guild Vendor>
 		["coords"] = {
 			{ 48.4, 75.5, ORGRIMMAR },		-- Goram
-			{ 69.8, 43.7, 90 },		-- Kim Horn [Undercity]
+			{ 69.8, 43.7, UNDERCITY },	-- Kim Horn
 			{ 56.8, 88.6, ORGRIMMAR },		-- Kim Horn
 			{ 78.3, 85.2, SILVERMOON_CITY },	-- Larissia
 			{ 52.5, 54.9, 125 },	-- Mirla Silverblaze [Dalaran: Northrend]
@@ -32,7 +32,7 @@ _.Factions =
 			SILVERMOON_CITY,
 			STORMWIND_CITY,
 			THUNDER_BLUFF,
-			90,		-- Undercity
+			UNDERCITY,
 		},
 		["crs"] = {
 			46572,	-- Goram (Orgrimmar)

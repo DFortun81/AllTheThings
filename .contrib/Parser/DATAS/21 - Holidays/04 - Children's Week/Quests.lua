@@ -1272,7 +1272,7 @@ _.Holidays =
 						["maps"] = {
 							ORGRIMMAR,
 							86,	-- Orgrimmar: The Drag
-							90,	-- Undercity
+							UNDERCITY,
 						},
 						["races"] = HORDE_ONLY,
 						["isYearly"] = true,

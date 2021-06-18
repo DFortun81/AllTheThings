@@ -73,7 +73,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["maps"] = {
 					37,	-- Elwynn Forest
-					90,	-- Undercity
+					UNDERCITY,
 					IRONFORGE,
 					ORGRIMMAR,
 					THUNDER_BLUFF,
@@ -130,7 +130,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["provider"] = { "n", 15891 },	-- Lunar Festival Herald
 				["isYearly"] = true,
 				["races"] = HORDE_ONLY,
-				["maps"] = { 90 },	-- Undercity
+				["maps"] = { UNDERCITY },
 				["u"] = 17,	-- Lunar Festival
 			}),
 			q(8875,  {	-- The Lunar Festival (H)
@@ -148,7 +148,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["maps"] = {
 					37,	-- Elwynn Forest
-					90,	-- Undercity
+					UNDERCITY,
 					IRONFORGE,
 					ORGRIMMAR,
 					THUNDER_BLUFF,
@@ -165,8 +165,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(29736, {	-- Darkfeather the Elder
 				["provider"] = { "n", 55218 },	-- Elder Darkfeather
 				["isYearly"] = true,
-				["coord"] = { 51.8, 33.0, 241 },
-				["maps"] = { 241 },	-- Twilight Highlands
+				["coord"] = { 51.8, 33.0, TWILIGHT_HIGHLANDS },
+				["maps"] = { TWILIGHT_HIGHLANDS },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(5, {	-- Elder Darkfeather in Twilight Highlands
@@ -201,8 +201,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(29737, {	-- Firebeard the Elder
 				["provider"] = { "n", 55219 },	-- Elder Firebeard
 				["isYearly"] = true,
-				["coord"] = { 50.9, 70.4, 241 },
-				["maps"] = { 241 },	-- Twilight Highlands
+				["coord"] = { 50.9, 70.4, TWILIGHT_HIGHLANDS },
+				["maps"] = { TWILIGHT_HIGHLANDS },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(4, {	-- Elder Firebeard in Twilight Highlands
@@ -312,8 +312,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["description"] = "In order to view this Elder, visit Zidormi at 69.4, 62.7 to see Tirisfal Glades before the Battle for Lordaeron.",
 				["provider"] = { "n", 15568 },	-- Elder Graveborn
 				["isYearly"] = true,
-				["coord"] = { 61.8, 53.9, 18 },
-				["maps"] = { 18 },	-- Tirisfal Glades
+				["coord"] = { 61.8, 53.9, TIRISFAL_GLADES },
+				["maps"] = { TIRISFAL_GLADES },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(13, {	-- Elder Graveborn in Brill
@@ -324,8 +324,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8643,  {	-- Highpeak the Elder
 				["provider"] = { "n", 15559 },	-- Elder Highpeak
 				["isYearly"] = true,
-				["coord"] = { 49.9, 47.9, 26 },
-				["maps"] = { 26 },	-- The Hinterlands
+				["coord"] = { 49.9, 47.9, THE_HINTERLANDS },
+				["maps"] = { THE_HINTERLANDS },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(11, {	-- Elder Highpeak in The Hinterlands
@@ -1204,8 +1204,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["description"] = "In order to view this Elder, visit Zidormi at 69.4, 62.7 to see Tirisfal Glades before the Battle for Lordaeron.  The Elder is just inside the front door of the city.",
 				["provider"] = { "n", 15564 },	-- Elder Darkcore
 				["isYearly"] = true,
-				["coord"] = { 66.5, 38.0, 90 },
-				["maps"] = { 90 },	-- Undercity
+				["coord"] = { 66.5, 38.0, UNDERCITY },
+				["maps"] = { UNDERCITY },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(3, {	-- Elder Darkcore in Undercity
