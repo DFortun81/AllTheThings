@@ -14527,7 +14527,7 @@ function app:GetDataCache()
 			db.g = app.Categories.BattlePets;
 			db.f = 101;
 			db.expanded = false;
-			db.text = BATTLE_PETS;
+			db.text = AUCTION_CATEGORY_BATTLE_PETS;
 			db.icon = app.asset("Category_PetJournal");
 			table.insert(g, db);
 		end

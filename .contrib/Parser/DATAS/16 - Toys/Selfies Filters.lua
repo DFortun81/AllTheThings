@@ -5,12 +5,6 @@
 _.Toys =
 {
 	n(-798,  {	-- Selfie Filter
-		i(122674, {	-- S.E.L.F.I.E. Camera MkII
-			["cost"] = {
-				{ "i", 122637, 1 },	-- S.E.L.F.I.E. Camera
-				{ "i", 122661, 1 },	-- S.E.L.F.I.E. Lens Upgrade Kit
-			},
-		}),
 		spell(258803, {	-- Argus Filter
 			["questID"] = 49762,	-- Completed
 			["f"] = 60,				-- S.E.L.F.I.E. Camera Filter
