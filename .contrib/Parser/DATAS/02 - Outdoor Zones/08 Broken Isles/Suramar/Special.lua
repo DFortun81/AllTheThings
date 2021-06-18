@@ -12,7 +12,7 @@ _.Zones =
 				["g"] = {
 					n(113935, {	-- Candrael Twinshadow
 						["description"] = "They will fling you up in the air to flying demon Downfall.",
-						["coord"] = { 28.2, 70.2 },
+						["coord"] = { 28.2, 70.2, 680 },
 						["g"] = {
 							n(111110, {	-- Downfall
 								["description"] = "If you are near him his winds will keep you aloft while you fight him.\nHe will occassionaly knock you back, make use of your glide ability and make sure you float back to (through) him, you will begin to float once you come near.\n\nWhen he dies his corpse will fall to the ground.",
@@ -35,7 +35,7 @@ _.Zones =
 								i(157759),	-- Shal'dorei Tabard
 							},
 							["provider"] = { "n", 131326 },	-- First Arcanist Thalyssra
-							["coord"] = { 59.3, 85.5 },
+							["coord"] = { 59.3, 85.5, 680 },
 						}),
 					}),
 				},

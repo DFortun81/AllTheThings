@@ -272,7 +272,7 @@ _.Zones =
 					o(293350, {	-- Carved Wooden Chest
 						["questID"] = 52429,
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
-						["coord"] = { 44.44, 73.53 },
+						["coord"] = { 44.44, 73.53, 942 },
 						["g"] = {
 							i(162000),	-- Pig Nose
 						},
@@ -280,7 +280,7 @@ _.Zones =
 					o(293349, {	-- Discarded Lunchbox
 						["questID"] = 52326,
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
-						["coord"] = { 58.2, 63.7 },
+						["coord"] = { 58.2, 63.7, 942 },
 						["g"] = {
 							i(160485),	-- An Unforgettable Luncheon
 						},
@@ -288,42 +288,42 @@ _.Zones =
 					o(294174, {	-- Forgotten Chest
 						["questID"] = 52980,
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
-						["coord"] = { 46.00, 30.69 },
+						["coord"] = { 46.00, 30.69, 942 },
 					}),
 					o(281494, {	-- Frosty Treasure Chest
 						["questID"] = 50526,
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
-						["coord"] = { 48.96, 84.07 },
+						["coord"] = { 48.96, 84.07, 942 },
 					}),
 					o(284448, {	-- Hidden Scholar's Chest
 						["questID"] = 50937,
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
-						["coord"] = { 59.9, 39.1 },
+						["coord"] = { 59.9, 39.1, 942 },
 					}),
 					o(280619, {	-- Old Ironbound Chest
 						["questID"] = 50089,
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
-						["coord"] = { 42.8, 47.2 },
+						["coord"] = { 42.8, 47.2, 942 },
 					}),
 					o(279042, {	-- Smuggler's Stash
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
-						["coord"] = { 58.6, 83.8 },
+						["coord"] = { 58.6, 83.8, 942 },
 						["questID"] = 49811,
 					}),
 					o(282153, {	-- Sunken Strongbox
 						["questID"] = 50734,
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
-						["coord"] = { 67.22, 43.2 },
+						["coord"] = { 67.22, 43.2, 942 },
 					}),
 					o(294173, {	-- Venture Co. Supply Chest
 						["questID"] = 52976,
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
-						["coord"] = { 36.69, 23.23 },
+						["coord"] = { 36.69, 23.23, 942 },
 					}),
 					o(289647, {	-- Weathered Treasure Chest
 						["questID"] = 51449,
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
-						["coord"] = { 66.92, 12.03 },
+						["coord"] = { 66.92, 12.03, 942 },
 					}),
 				}),
 			}),
