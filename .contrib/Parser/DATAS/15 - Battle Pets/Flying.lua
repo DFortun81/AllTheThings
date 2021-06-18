@@ -2,7 +2,7 @@
 --   P E T   J O U R N A L   M O D U L E   --
 ---------------------------------------------
 
-_.PetJournal =
+_.BattlePets =
 {
 	pa(239, { 	-- Flying
 		p(1708),			-- Albatross Chick

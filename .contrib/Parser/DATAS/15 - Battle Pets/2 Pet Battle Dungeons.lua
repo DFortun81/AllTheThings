@@ -2,7 +2,7 @@
 --   P E T    B A T T L E    M O D U L E    --
 ----------------------------------------------
 
-_.PetBattles =
+_.BattlePets =
 {
 	q(33137, {	-- The Celestial Tournament
 		["provider"] = { "n", 73082 },	-- Master Li

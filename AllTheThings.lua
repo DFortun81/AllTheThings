@@ -14522,12 +14522,12 @@ function app:GetDataCache()
 		end
 
 		-- Pet Journal
-		if app.Categories.PetJournal then
+		if app.Categories.BattlePets then
 			db = {};
-			db.g = app.Categories.PetJournal;
+			db.g = app.Categories.BattlePets;
 			db.f = 101;
 			db.expanded = false;
-			db.text = PET_JOURNAL;
+			db.text = Battle_Pets;
 			db.icon = app.asset("Category_PetJournal");
 			table.insert(g, db);
 		end

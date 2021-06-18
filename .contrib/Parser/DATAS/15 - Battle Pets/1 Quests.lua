@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-_.PetJournal =
+_.BattlePets =
 {
 	un(REMOVED_FROM_GAME, i(165840, {	-- Interdimensional Pet Portal
 		["questID"] = 54264,

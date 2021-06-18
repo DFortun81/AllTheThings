@@ -2,7 +2,7 @@
 --   P E T    B A T T L E    M O D U L E    --
 ----------------------------------------------
 
-_.PetBattles =
+_.BattlePets =
 {
 	n(WORLD_QUESTS, {
 		i(86143),	-- Battle Pet Bandage
