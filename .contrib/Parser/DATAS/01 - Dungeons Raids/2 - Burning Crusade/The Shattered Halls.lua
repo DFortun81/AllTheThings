@@ -11,11 +11,13 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 				q(29655, {	-- A Very Special Cloth
 					["qg"] = 54931,	-- Stone Guard Stok'ton
 					["timeline"] = { "added 4.3.0.14732" },
-					["cost"] = {
-						{ "i", 72597, 1 },	-- O'mrogg's Warcloth
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(66, 20, 66),
+					["groups"] = {
+						objective(1, {	-- O'mrogg's Warcloth
+							["provider"] = { "i", 72597 },	-- O'mrogg's Warcloth
+						}),
+					},
 				}),
 				q(29689, {	-- Advancing the Campaign [Alliance]
 					["qg"] = 16819,	-- Force Commander Danath Trollbane
@@ -39,13 +41,19 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 					["coord"] = { 51.1, 60.3, HELLFIRE_PENINSULA },
 					["timeline"] = { "removed 4.0.3.14732" },
 					["maps"] = { HELLFIRE_PENINSULA },
-					["cost"] = {
-						{ "i", 23445, 4 },	-- Fel Iron Bar
-						{ "i", 22445, 2 },	-- Arcane Dust
-						{ "i", 22574, 4 },	-- Mote of Fire
-					},
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(68, 10, 68),
+					["groups"] = {
+						objective(1, {	-- Fel Iron Bar
+							["provider"] = { "i", 23445 },	-- Fel Iron Bar
+						}),
+						objective(2, {	-- Arcane Dust
+							["provider"] = { "i", 22445 },	-- Arcane Dust
+						}),
+						objective(3, {	-- Mote of Fire
+							["provider"] = { "i", 22574 },	-- Mote of Fire
+						}),
+					},
 				}),
 				q(10754, {	-- Entry Into the Citadel [Alliance]
 					["provider"] = { "i", 31239 },	-- Primed Key Mold
@@ -66,12 +74,12 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 				q(29650, {	-- Fel Ember
 					["qg"] = 54931,	-- Stone Guard Stok'ton
 					["timeline"] = { "added 4.3.0.14732" },
-					["cost"] = {
-						{ "i", 23726, 1 },	-- Fel Ember
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(66, 20, 66),
 					["groups"] = {
+						objective(1, {	-- Fel Ember
+							["provider"] = { "i", 23726 },	-- Fel Ember
+						}),
 						i(25790),	-- Expedition Scout's Epaulets
 						i(25788),	-- Dauntless Handguards
 						i(25791),	-- Gloves of Preservation
@@ -102,11 +110,16 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 					["coord"] = { 56.6, 66.7, HELLFIRE_PENINSULA },
 					["timeline"] = { "removed 4.0.3.14732" },
 					["maps"] = { HELLFIRE_PENINSULA },
-					["cost"] = {
-						{ "i", 31245, 1 },	-- Primed Key Mold
-					},
+					-- ["cost"] = {
+					-- 	{ "i", 31245, 1 },	-- Primed Key Mold
+					-- },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(68, 10, 68),
+					["groups"] = {
+						objective(1, {	-- Primed Key Mold
+							["provider"] = { "i", 31245 },	-- Primed Key Mold
+						}),
+					},
 				}),
 				q(10756, {	-- Grand Master Rohok
 					["qg"] = 3230,	-- Nazgrel
@@ -114,11 +127,16 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 					["coord"] = { 55.0, 36.0, HELLFIRE_PENINSULA },
 					["timeline"] = { "removed 4.0.3.14732" },
 					["maps"] = { HELLFIRE_PENINSULA },
-					["cost"] = {
-						{ "i", 31245, 1 },	-- Primed Key Mold
-					},
+					-- ["cost"] = {
+					-- 	{ "i", 31245, 1 },	-- Primed Key Mold
+					-- },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(68, 10, 68),
+					["groups"] = {
+						objective(1, {	-- Primed Key Mold
+							["provider"] = { "i", 31245 },	-- Primed Key Mold
+						}),
+					},
 				}),
 				q(29651, {	-- Honor the Dying
 					["qg"] = 54932,	-- Caza'rez
@@ -131,9 +149,9 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 					["sourceQuest"] = 10763,	-- Dumphry's Request
 					["coord"] = { 51.1, 60.3, HELLFIRE_PENINSULA },
 					["maps"] = { HELLFIRE_PENINSULA },
-					["cost"] = {
-						{ "i", 31252, 1 },	-- Charred Key Mold
-					},
+					-- ["cost"] = {
+					-- 	{ "i", 31252, 1 },	-- Charred Key Mold
+					-- },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(68, 10, 68),
 					["groups"] = {
@@ -149,9 +167,9 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 					["sourceQuest"] = 10757,	-- Rohok's Request
 					["coord"] = { 53.1, 38.2, HELLFIRE_PENINSULA },
 					["maps"] = { HELLFIRE_PENINSULA },
-					["cost"] = {
-						{ "i", 31252, 1 },	-- Charred Key Mold
-					},
+					-- ["cost"] = {
+					-- 	{ "i", 31252, 1 },	-- Charred Key Mold
+					-- },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(68, 10, 68),
 					["groups"] = {
@@ -165,12 +183,15 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 				q(29649, {	-- How to Save a Life
 					["qg"] = 54933,	-- Advance Scout Chadwick
 					["timeline"] = { "added 4.3.0.14732" },
-					["cost"] = {
-						{ "i", 23726, 1 },	-- Fel Ember
-					},
+					-- ["cost"] = {
+					-- 	{ "i", 23726, 1 },	-- Fel Ember
+					-- },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(66, 20, 66),
 					["groups"] = {
+						objective(1, {	-- Fel Ember
+							["provider"] = { "i", 23726 },	-- Fel Ember
+						}),
 						i(25790),	-- Expedition Scout's Epaulets
 						i(25788),	-- Dauntless Handguards
 						i(25791),	-- Gloves of Preservation
@@ -181,11 +202,16 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 				q(29656, {	-- O'mrogg's Warcloth
 					["qg"] = 54933,	-- Advance Scout Chadwick
 					["timeline"] = { "added 4.3.0.14732" },
-					["cost"] = {
-						{ "i", 72597, 1 },	-- O'mrogg's Warcloth
-					},
+					-- ["cost"] = {
+					-- 	{ "i", 72597, 1 },	-- O'mrogg's Warcloth
+					-- },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(66, 20, 66),
+					["groups"] = {
+						objective(1, {	-- O'mrogg's Warcloth
+							["provider"] = { "i", 72597 },	-- O'mrogg's Warcloth
+						}),
+					},
 				}),
 				q(29652, {	-- One Last Favor
 					["qg"] = 54934,	-- Gunny
@@ -215,13 +241,24 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 					["coord"] = { 53.1, 38.2, HELLFIRE_PENINSULA },
 					["timeline"] = { "removed 4.0.3.14732" },
 					["maps"] = { HELLFIRE_PENINSULA },
-					["cost"] = {
-						{ "i", 23445, 4 },	-- Fel Iron Bar
-						{ "i", 22445, 2 },	-- Arcane Dust
-						{ "i", 22574, 4 },	-- Mote of Fire
-					},
+					-- ["cost"] = {
+					-- 	{ "i", 23445, 4 },	-- Fel Iron Bar
+					-- 	{ "i", 22445, 2 },	-- Arcane Dust
+					-- 	{ "i", 22574, 4 },	-- Mote of Fire
+					-- },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(68, 10, 68),
+					["groups"] = {
+						objective(1, {	-- Fel Iron Bar
+							["provider"] = { "i", 23445 },	-- Fel Iron Bar
+						}),
+						objective(2, {	-- Arcane Dust
+							["provider"] = { "i", 22445 },	-- Arcane Dust
+						}),
+						objective(3, {	-- Mote of Fire
+							["provider"] = { "i", 22574 },	-- Mote of Fire
+						}),
+					},
 				}),
 				q(10670, {	-- Tear of the Earthmother
 					["qg"] = 21465,	-- David Wayne
@@ -231,23 +268,31 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 					},
 					["coord"] = { 77.4, 38.6, TEROKKAR_FOREST },
 					["maps"] = { TEROKKAR_FOREST },
-					["cost"] = {
-						{ "i", 30829, 1 },	-- Tear of the Earthmother
-					},
+					-- ["cost"] = {
+					-- 	{ "i", 30829, 1 },	-- Tear of the Earthmother
+					-- },
 					["lvl"] = lvlsquish(67, 25, 67),
+					["groups"] = {
+						objective(1, {	-- Tear of the Earthmother
+							["provider"] = { "i", 30829 },	-- Tear of the Earthmother
+						}),
+					},
 				}),
 				q(9495, {	-- The Will of the Warchief
 					["qg"] = 3230,	-- Nazgrel <Advisor to Thrall>
 					["coord"] = { 55.0, 36.0, HELLFIRE_PENINSULA },
 					["timeline"] = { "removed 4.3.0.14732" },
 					["maps"] = { HELLFIRE_PENINSULA },
-					["cost"] = {
-						{ "i", 23723, 1 },	-- Warchief Kargath's Fist
-					},
+					-- ["cost"] = {
+					-- 	{ "i", 23723, 1 },	-- Warchief Kargath's Fist
+					-- },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(67, 20, 67),
 					-- #if BEFORE 4.3.0.14732
 					["groups"] = {
+						objective(1, {	-- Warchief Kargath's Fist
+							["provider"] = { "i", 23723 },	-- Warchief Kargath's Fist
+						}),
 						i(25808),	-- Rod of Dire Shadows
 						i(25809),	-- Maimfist's Choker
 						i(25810),	-- Vicar's Cloak
@@ -258,12 +303,15 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 				q(29653, {	-- The Will of the Warchief
 					["qg"] = 54931,	-- Stone Guard Stok'ton
 					["timeline"] = { "added 4.3.0.14732" },
-					["cost"] = {
-						{ "i", 23723, 1 },	-- Warchief Kargath's Fist
-					},
+					-- ["cost"] = {
+					-- 	{ "i", 23723, 1 },	-- Warchief Kargath's Fist
+					-- },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(66, 20, 66),
 					["groups"] = {
+						objective(1, {	-- Warchief Kargath's Fist
+							["provider"] = { "i", 23723 },	-- Warchief Kargath's Fist
+						}),
 						i(25808),	-- Rod of Dire Shadows
 						i(25809),	-- Maimfist's Choker
 						i(25810),	-- Vicar's Cloak
@@ -275,23 +323,31 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 					["sourceQuest"] = 10883,	-- The Tempest Key
 					["coord"] = { 54.0, 44.8, SHATTRATH_CITY },
 					["maps"] = { SHATTRATH_CITY },
-					["cost"] = {
-						{ "i", 31716, 1 },	-- Unused Axe of the Executioner
-					},
+					-- ["cost"] = {
+					-- 	{ "i", 31716, 1 },	-- Unused Axe of the Executioner
+					-- },
 					["lvl"] = lvlsquish(70, 20, 70),
+					["groups"] = {
+						objective(1, {	-- Unused Axe of the Executioner
+							["provider"] = { "i", 31716 },	-- Unused Axe of the Executioner
+						}),
+					},
 				}),
 				q(9492, {	-- Turning the Tide
 					["qg"] = 16819,	-- Force Commander Danath Trollbane <Sons of Lothar>
 					["coord"] = { 56.6, 66.7, HELLFIRE_PENINSULA },
 					["timeline"] = { "removed 4.3.0.14732" },
 					["maps"] = { HELLFIRE_PENINSULA },
-					["cost"] = {
-						{ "i", 23723, 1 },	-- Warchief Kargath's Fist
-					},
+					-- ["cost"] = {
+					-- 	{ "i", 23723, 1 },	-- Warchief Kargath's Fist
+					-- },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(67, 20, 67),
 					-- #if BEFORE 4.3.0.14732
 					["groups"] = {
+						objective(1, {	-- Warchief Kargath's Fist
+							["provider"] = { "i", 23723 },	-- Warchief Kargath's Fist
+						}),
 						i(25806),	-- Nethekurse's Rod of Torment
 						i(25803),	-- Medallion of the Valiant Guardian
 						i(25805),	-- Mantle of Vivification
@@ -302,12 +358,15 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 				q(29654, {	-- Turning the Tide
 					["qg"] = 54933,	-- Advance Scout Chadwick
 					["timeline"] = { "added 4.3.0.14732" },
-					["cost"] = {
-						{ "i", 23723, 1 },	-- Warchief Kargath's Fist
-					},
+					-- ["cost"] = {
+					-- 	{ "i", 23723, 1 },	-- Warchief Kargath's Fist
+					-- },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(66, 20, 66),
 					["groups"] = {
+						objective(1, {	-- Warchief Kargath's Fist
+							["provider"] = { "i", 23723 },	-- Warchief Kargath's Fist
+						}),
 						i(25806),	-- Nethekurse's Rod of Torment
 						i(25803),	-- Medallion of the Valiant Guardian
 						i(25805),	-- Mantle of Vivification

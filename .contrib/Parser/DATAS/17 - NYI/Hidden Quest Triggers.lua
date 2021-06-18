@@ -1119,6 +1119,7 @@ _.HiddenQuestTriggers =
 		q(12452),	-- Dragonblight - triggers when turning in "The Fate of the Ruby Dragonshrine". duplicate version of a quest during early development
 		q(12693),	-- Sholazar Basin - Wolvar Faction Choice Tracker
 		q(12694),	-- Sholazar Basin - Oracle Faction Choice Tracker
+		q(39783),	-- Battle Pet - Terky
 
 		-------------------
 		--   CATACLYSM   --
@@ -1403,6 +1404,12 @@ _.HiddenQuestTriggers =
 		q(32611),	-- Rare Drop Tracking Quest — progenitus (second rare kill of the week, dropped incantation of deng)
 		-- TREASURES
 		q(32609),	-- Rare Chest Tracking Quest — popped after looting trove of the thunder king.  it took a while to show up, but i didn't do anything else meaningful in the interim
+		-- QUEST
+		q(32259),	-- Horde Quest Choice: PvE
+		q(32260),	-- Alliance Quest Choice: PvE
+		q(32629),	-- Thunderwing Captured Tracking Quest
+		q(32723),	-- Tracking quest called 'reuse me'
+		q(32289),	-- Loot plans, kill boat captain
 
 		--	TIMELESS ISLE
 		-- RARES

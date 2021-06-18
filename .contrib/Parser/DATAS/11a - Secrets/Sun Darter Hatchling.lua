@@ -127,7 +127,7 @@ _.Secrets =
 						["g"] = {
 							n(1316, {	-- Adair Gilroy <Librarian>
 								["description"] = "Stormwind",
-								["coord"] = { 51.8, 74.8, 84 },
+								["coord"] = { 51.8, 74.8, STORMWIND_CITY },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							n(958, {	-- Dawn Brightstar <Arcane Goods>

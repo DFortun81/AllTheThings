@@ -827,7 +827,7 @@ _.Zones =
 				q(2861, {	-- Tabetha's Task
 					["u"] = REMOVED_FROM_GAME,
 					["maps"] = {
-						84,	-- Stormwind
+						STORMWIND_CITY,
 						ORGRIMMAR,
 						IRONFORGE,
 						90,	-- Undercity
@@ -1198,7 +1198,7 @@ _.Zones =
 					["provider"] = { "n", 23566 },	-- Calia Hastings
 					["coord"] = { 68.3, 51.1, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						28552,	-- Hero's Call: Dustwallow Marsh
 						26702,	-- Flight to Theramore
 					},

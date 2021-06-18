@@ -11,7 +11,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 					{ 33.8, 66.6, IRONFORGE },
 					{ 52.8, 77.6, ORGRIMMAR },
 					{ 64.2, 67.2, SILVERMOON_CITY },
-					{ 62.6, 75.4, 84 },	-- Stormwind
+					{ 62.6, 75.4, STORMWIND_CITY },
 					{ 74.0, 56.4, THE_EXODAR },
 					{ 43.6, 53.6, THUNDER_BLUFF },
 					{ 66.0, 38.6, 90 },	-- Undercity

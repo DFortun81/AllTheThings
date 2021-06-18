@@ -320,7 +320,9 @@ _.Zones =
 					["provider"] = { "n", 69371 },	-- Amalia Penshire
 				}),
 				q(32589, {	-- Life Blood (H)
+					["provider"] = { "n", 67990 },	-- Lor'themar Theron
 					["races"] = HORDE_ONLY,
+					["minReputation"] = { 1388, EXALTED },	-- Sunreaver Onslaught
 					["g"] = {
 						i(95590),	-- Glorious Standard of the Sunreaver Onslaught (TOY!)
 					},
@@ -462,7 +464,9 @@ _.Zones =
 					},
 				}),
 				q(32599, {	-- Securing A Future
+					["provider"] = { "n", 67992 },	-- Lady Jaina Proudmoore
 					["races"] = ALLIANCE_ONLY,
+					["minReputation"] = { 1387, EXALTED },	-- Kirin Tor Offensive
 					["g"] = {
 						i(95589),	-- Glorious Standard of the Kirin Tor Offensive (TOY!)
 					},

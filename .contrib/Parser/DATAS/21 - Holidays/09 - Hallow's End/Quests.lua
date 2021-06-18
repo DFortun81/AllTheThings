@@ -83,7 +83,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 					TANARIS,
 					WINTERSPRING,
 					IRONFORGE,
-					84,		-- Stormwind City
+					STORMWIND_CITY,
 					89,		-- Darnassus
 					THE_EXODAR,
 					NETHERSTORM,
@@ -1581,9 +1581,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12336, {	-- Candy Bucket — Stormwind, The Trade District, Alliance
 				["isYearly"] = true,
-				["coord"] = { 60.5, 75.2, 84 },
+				["coord"] = { 60.5, 75.2, STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 84 },	-- Stormwind City
+				["maps"] = { STORMWIND_CITY },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -2040,7 +2040,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["repeatable"] = true,
 				["provider"] = { "n", 6740 },	-- Innkeeper Allison
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 84 },	-- Stormwind City
+				["maps"] = { STORMWIND_CITY },
 			}),
 			q(8354,  {	-- Chicken Clucking for a Mint (Horde)
 				["description"] = "Pick up |cFFFFD700Hallow's End Treats for Spoops!|r for this quest to become available.",
@@ -2085,7 +2085,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 					TANARIS,
 					WINTERSPRING,
 					IRONFORGE,
-					84,		-- Stormwind City
+					STORMWIND_CITY,
 					89,		-- Darnassus
 					THE_EXODAR,
 					NETHERSTORM,
@@ -2126,7 +2126,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["sourceQuests"] = { 29392 },	-- Missing Heirlooms (Alliance)
 				["provider"] = { "n", 53950 },	-- Hired Courier
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 84 },	-- Stormwind City
+				["maps"] = { STORMWIND_CITY },
 			}),
 			q(29416, {	-- Fencing the Goods (Horde)
 				["sourceQuests"] = { 29415 },	-- Missing Heirlooms (Horde)
@@ -2199,7 +2199,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["repeatable"] = true,
 				["provider"] = { "n", 6740 },	-- Innkeeper Allison
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 84 },	-- Stormwind City
+				["maps"] = { STORMWIND_CITY },
 			}),
 			q(8359,  {	-- Flexing for Nougat (Horde)
 				["description"] = "Pick up |cFFFFD700Hallow's End Treats for Spoops!|r for this quest to become available.",
@@ -2291,7 +2291,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["sourceQuests"] = { 29430 },	-- A Friend in Need (Alliance)
 				["provider"] = { "n", 53949 },	-- Anson Hastings
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 84 },	-- Stormwind City
+				["maps"] = { STORMWIND_CITY },
 			}),
 			q(29415, {	-- Missing Heirlooms (Horde)
 				["sourceQuests"] = { 29431 },	-- A Friend in Need (Horde)
@@ -2316,7 +2316,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["sourceQuests"] = { 29398 },	-- Fencing the Goods (Alliance)
 				["provider"] = { "n", 8719 },	-- Auctioneer Fitch
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 84 },	-- Stormwind City
+				["maps"] = { STORMWIND_CITY },
 			}),
 			q(29425, {	-- Shopping Around (Horde)
 				["sourceQuests"] = { 29416 },	-- Fencing the Goods (Horde)
@@ -2445,7 +2445,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["sourceQuests"] = { 29399 },	-- Shopping Around (Alliance)
 				["provider"] = { "n", 54021 },	-- Hudson Barnes
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 84 },	-- Stormwind City
+				["maps"] = { STORMWIND_CITY },
 			}),
 			q(29426, {	-- Taking Precautions (Horde)
 				["sourceQuests"] = { 29425 },	-- Shopping Around (Horde)
@@ -2457,7 +2457,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["sourceQuests"] = { 29402 },	-- Taking Precautions (Alliance)
 				["provider"] = { "n", 54021 },	-- Hudson Barnes
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 84 },	-- Stormwind City
+				["maps"] = { STORMWIND_CITY },
 			}),
 			q(29427, {	-- The Collector's Agent (Horde)
 				["sourceQuests"] = { 29426 },	-- Taking Precautions (HORDE)
@@ -2469,7 +2469,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["sourceQuests"] = { 29411 },	-- What Now? (Alliance)
 				["provider"] = { "o", 209076 },	-- Anson's Crate
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 84 },	-- Stormwind City
+				["maps"] = { STORMWIND_CITY },
 				["g"] = {
 					i(71076),	-- Creepy Crate (Pet)
 				},
@@ -2565,7 +2565,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["sourceQuests"] = { 29403 },	-- The Collector's Agent (Alliance)
 				["provider"] = { "o", 209072 },	-- Stolen Crate
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 84 },	-- Stormwind City
+				["maps"] = { STORMWIND_CITY },
 			}),
 			q(29428, {	-- What Now? (Horde)
 				["sourceQuests"] = { 29427 },	-- The Collector's Agent (Horde)

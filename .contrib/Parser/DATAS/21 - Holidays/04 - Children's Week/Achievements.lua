@@ -139,7 +139,7 @@ _.Holidays =
 										},
 										["maps"] = {
 											64,		-- Thousand Needles
-											84,		-- Stormwind City
+											STORMWIND_CITY,
 											ORGRIMMAR,
 											86,		-- Orgrimmar
 											NAGRAND,

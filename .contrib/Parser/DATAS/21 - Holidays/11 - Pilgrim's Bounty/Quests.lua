@@ -21,7 +21,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 					37,		-- Elwynn Forest
 					TANARIS,
 					WINTERSPRING,
-					84,		-- Stormwind City
+					STORMWIND_CITY,
 					IRONFORGE,
 					89,		-- Darnassus
 					THE_EXODAR,

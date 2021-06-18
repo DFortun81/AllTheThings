@@ -6,7 +6,7 @@ _.Instances = { tier(1, {	-- Classic
 	inst(238, {	-- The Stockade
 		["lvl"] = 15,
 		["mapID"] = 225,
-		["coord"] = { 50.48, 66.46, 84 },	-- The Stockade, Stormwind City
+		["coord"] = { 50.48, 66.46, STORMWIND_CITY },	-- The Stockade
 		["g"] = {
 			n(QUESTS, {
 				q(27737, {	-- By Fire Be Saved!

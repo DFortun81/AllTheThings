@@ -27,7 +27,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 					{ "n", 96304 },	-- Tradurjo Jinglepocket
 				},
 				["maps"] = {
-					84,		-- Stormwind City
+					STORMWIND_CITY,
 					THE_EXODAR,
 					579,	-- Lunarfall
 				},
@@ -37,9 +37,9 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 			q(8860,  {	-- New Year Celebrations! (A)
 				["description"] = "This quest is only available on December 31, and can be done once per character (not each year). Quest can be obtained from any Wonderform Operator in any major city.",
 				["provider"] = { "n", 15732 },	-- Wonderform Operator
-				["coord"] = { 67.7, 71.4, 84 },	-- Stormwind (closest pick-up to turn-in)
+				["coord"] = { 67.7, 71.4, STORMWIND_CITY },	-- (closest pick-up to turn-in
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 84 },	-- Stormwind
+				["maps"] = { STORMWIND_CITY },
 				["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL,
 			}),
 			q(7025,  {	-- Treats for Greatfather Winter
@@ -160,7 +160,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 					125,	-- Dalaran (Northrend) (couldn't find it in Legion)
 					DUN_MOROGH,
 					TANARIS,	-- Gadgetzan
-					84,		-- Stormwind
+					STORMWIND_CITY,
 				},
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true, -- not sure, I was able to pick it up only after 25th
@@ -315,7 +315,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 					125,	-- Dalaran (Northrend) (couldn't find it in Legion)
 					DUN_MOROGH,
 					TANARIS,	-- Gadgetzan
-					84,		-- Stormwind
+					STORMWIND_CITY,
 				},
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true, -- not sure, I was able to pick it up only after 25th

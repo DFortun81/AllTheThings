@@ -240,21 +240,24 @@ app.L = {
 	["QUEST_ONCE_PER_ACCOUNT_FORMAT"] = "Completed By: %s";
 
 	-- Settings.lua
-		-- General tab
-			-- Mod Title
+		["SKIP_AUTO_REFRESH"] = "Do Not Auto-Refresh!";
+		["SKIP_AUTO_REFRESH_TOOLTIP"] = "By default (unchecked), any Settings change which may affect visible data will cause an automatic refresh.\n\nBy enabling this option, Settings changes won't take effect until the User performs a Full Refresh by Shift-Clicking on an ATT window.";
+		["AFTER_REFRESH"] = "After Refresh";
 
-	["MODE"] = "Mode";
-	["TITLE_COMPLETIONIST"] = "Completionist ";
-	["TITLE_UNIQUE_APPEARANCE"] = "Unique Appearance ";
-	["TITLE_DEBUG"] = "Debug ";
-	["TITLE_ACCOUNT"] = "Account ";
-	["TITLE_MAIN_ONLY"] = " (Main Only)";
-	["TITLE_NONE_THINGS"] = "None of the Things ";
-	["TITLE_ONLY"] = " Only ";
-	["TITLE_INSANE"] = "Insane ";
-	["TITLE_SOME_THINGS"] = "Some of the Things ";
-	["TITLE_LEVEL"] = "Level ";
-	["_BETA_LABEL"] = " |CFF4AA7FF[Beta]|R";
+		-- General tab
+			-- Mode Title
+				["MODE"] = "Mode";
+				["TITLE_COMPLETIONIST"] = "Completionist ";
+				["TITLE_UNIQUE_APPEARANCE"] = "Unique Appearance ";
+				["TITLE_DEBUG"] = "Debug ";
+				["TITLE_ACCOUNT"] = "Account ";
+				["TITLE_MAIN_ONLY"] = " (Main Only)";
+				["TITLE_NONE_THINGS"] = "None of the Things ";
+				["TITLE_ONLY"] = " Only ";
+				["TITLE_INSANE"] = "Insane ";
+				["TITLE_SOME_THINGS"] = "Some of the Things ";
+				["TITLE_LEVEL"] = "Level ";
+				["_BETA_LABEL"] = " |CFF4AA7FF[Beta]|R";
 
 
 	["GENERAL_TAB"] = "General";
