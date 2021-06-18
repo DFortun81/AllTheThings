@@ -11338,7 +11338,7 @@ UpdateGroup = function(parent, group, window)
 	-- 	return group.visible;
 	-- end
 
-	local visible = app.MODE_DEBUG;
+	local visible;
 
 	-- Determine if this user can enter the instance or acquire the item.
 	-- If the 'can equip' filter says true
@@ -11402,20 +11402,19 @@ UpdateGroup = function(parent, group, window)
 				if group.forceShow then
 					-- if app.DEBUG_LOG then print("UpdateGroup.g.forceShow",group.progress,group.total) end
 					visible = true;
-					group.forceShow = nil;
 				-- If this group contains Things, show based on visibility filter
-				elseif group.total > 0 and app.GroupVisibilityFilter(group) then
+				elseif group.total > 0 then
 					-- if app.DEBUG_LOG then print("UpdateGroup.g.total",group.progress,group.total) end
-					visible = true;
+					visible = app.GroupVisibilityFilter(group);
 				-- If this group is trackable, then we should show it.
-				elseif app.ShowIncompleteThings(group) and not group.saved then
+				elseif app.ShowIncompleteThings(group) then
 					-- if app.DEBUG_LOG then print("UpdateGroup.g.trackable",group.progress,group.total) end
-					visible = true;
-					parent.forceShow = true;
+					visible = not group.saved;
+					parent.forceShow = visible or parent.forceShow;
 				-- elseif group.itemID and app.CollectibleLoot and group.f then
 				-- 	visible = true;
 				end
-				-- end
+				group.forceShow = nil;
 			else
 				-- If the 'can equip' filter says true
 				-- if app.GroupFilter(group) then
@@ -11436,14 +11435,12 @@ UpdateGroup = function(parent, group, window)
 					else
 						visible = true;
 					end
-				elseif group.trackable then
+				elseif app.ShowIncompleteThings(group) then
 					-- if app.DEBUG_LOG then print("UpdateGroup.trackable",group.progress,group.total) end
 					-- If this group is trackable, then we should show it.
-					if app.ShowIncompleteThings(group) and not group.saved then
 						-- if app.DEBUG_LOG then print("UpdateGroup.trackable.visible",group.progress,group.total) end
-						visible = true;
-						parent.forceShow = true;
-					end
+					visible = not group.saved;
+					parent.forceShow = visible or parent.forceShow;
 				-- elseif group.itemID and app.CollectibleLoot and group.f then
 				-- 	visible = true;
 				end

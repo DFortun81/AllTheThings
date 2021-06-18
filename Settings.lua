@@ -117,6 +117,7 @@ local GeneralSettingsBase = {
 		["Thing:Transmog"] = true,
 		["Show:CompletedGroups"] = false,
 		["Show:CollectedThings"] = false,
+		["Skip:AutoRefresh"] = false,
 	},
 };
 local FilterSettingsBase = {
@@ -413,6 +414,8 @@ settings.SetPersonal = function(self, setting, value)
 	self:Refresh();
 end
 settings.Refresh = function(self)
+	settings.SkipAutoRefreshCheckbox:OnRefresh();
+
 	for i,tab in ipairs(self.Tabs) do
 		if tab.OnRefresh then tab:OnRefresh(); end
 		for j,o in ipairs(tab.objects) do
@@ -833,6 +836,7 @@ function(self)
 end);
 f:SetATTTooltip(L["SKIP_AUTO_REFRESH_TOOLTIP"]);
 f:SetPoint("TOPLEFT", settings.title, "TOPRIGHT", 4, -2);
+settings.SkipAutoRefreshCheckbox = f;
 
 f = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 f:SetPoint("TOPRIGHT", settings, "TOPRIGHT", -8, -8);
@@ -1108,7 +1112,6 @@ function(self)
 end,
 function(self)
 	settings:Set("Thing:Transmog", self:GetChecked());
-	settings:UpdateMode();
 	if self:GetChecked() then
 		app.DoRefreshAppearanceSources = true;
 	end
