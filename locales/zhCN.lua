@@ -231,7 +231,7 @@ local L = app.L;
 -- Settings.lua
 	--TODO: L.SKIP_AUTO_REFRESH = "Do Not Auto-Refresh!";
 	--TODO: L.SKIP_AUTO_REFRESH_TOOLTIP = "By default (unchecked), any Settings change which may affect visible data will cause an automatic refresh.\n\nBy enabling this option, Settings changes won't take effect until the User performs a Full Refresh by Shift-Clicking on an ATT window.";
-	--TODO: L.AFTER_REFRESH" = "After Refresh";
+	--TODO: L.AFTER_REFRESH = "After Refresh";
 
 	-- General tab
 		-- Mod Title

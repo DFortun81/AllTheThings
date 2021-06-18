@@ -227,9 +227,9 @@ local L = app.L;
 	L.QUEST_ONCE_PER_ACCOUNT_FORMAT = "Выполнено На: %s";
 
 -- Settings.lua
-	--TODO: L.SKIP_AUTO_REFRESH = "Do Not Auto-Refresh!";
-	--TODO: L.SKIP_AUTO_REFRESH_TOOLTIP = "By default (unchecked), any Settings change which may affect visible data will cause an automatic refresh.\n\nBy enabling this option, Settings changes won't take effect until the User performs a Full Refresh by Shift-Clicking on an ATT window.";
-	--TODO: L.AFTER_REFRESH" = "After Refresh";
+	L.SKIP_AUTO_REFRESH = "Не авто обновлять!";
+	L.SKIP_AUTO_REFRESH_TOOLTIP = "По умолчанию (выключено) любое изменение Настроек, которое меняет отображаемую информацию, будет авто обновлять коллекцию.\n\nПосле включения этой опции, изменения Настроек не будут менять отображение, пока Вы не произведёте Полное Обновление коллекции, сделав Shift+Клик на окне ATT.";
+	L.AFTER_REFRESH = "После Обновления";
 
 	-- General tab
 		-- Mod Title
