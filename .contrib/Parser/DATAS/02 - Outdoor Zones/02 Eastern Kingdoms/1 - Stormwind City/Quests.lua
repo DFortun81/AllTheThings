@@ -1563,7 +1563,7 @@ _.Zones =
 						{ "n", 142930 },	-- Halford Wyrmbane
 						{ "n", 49748 },		-- Hero's Herald
 					},
-					["coord"] = { 27.6, 21.2 },
+					["coord"] = { 27.6, 21.2, 84 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(42782, {	-- To Be Prepared

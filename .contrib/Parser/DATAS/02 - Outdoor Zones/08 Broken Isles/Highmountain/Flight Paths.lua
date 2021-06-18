@@ -9,7 +9,7 @@ _.Zones =
 			n(FLIGHT_PATHS, {
 				fp(1850, {	-- Eastern Highmountain (Eagle)
 					["classes"] = { HUNTER },
-					["coord"] = { 56.6, 67.8 },
+					["coord"] = { 56.6, 67.8, 650 },
 				}),
 				fp(1755, {	-- Felbane Camp, Highmountain
 					["coord"] = { 30.0, 39.2, 650 },

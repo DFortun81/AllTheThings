@@ -12,11 +12,11 @@ _.ExpansionFeatures =
 			["g"] = {
 				n(FLIGHT_PATHS, {
 					fp(1760, {	-- Trueshot Lodge, Highmountain
-						["coord"] = { 36.0, 27.8 },
+						["coord"] = { 36.0, 27.8, 739 },
 						["classes"] = { HUNTER },
 					}),
 					fp(1848, {	-- Trueshot Lodge (Eagle)
-						["coord"] = { 39.8, 29.6 },
+						["coord"] = { 39.8, 29.6, 739 },
 						["classes"] = { HUNTER },
 					}),
 				}),

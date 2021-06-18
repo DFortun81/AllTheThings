@@ -12,7 +12,7 @@ _.Zones =
 					n(11608, {	-- Bardu Sharpeye
 						["description"] = "After talking to Prince Tortheldrin, you can talk to him for the next part of the chain. After you have done so, read Grand Inquisitor Isillien's Journal at Hearthglen in Western Plaguelands.",
 						["classes"] = { PALADIN },
-						["coord"] = { 83.2, 71.8 },
+						["coord"] = { 83.2, 71.8, 18 },
 						["races"] = HORDE_ONLY,
 						["questID"] = 43683,	-- Traveller Found [Retribution Paladin Hidden Artifact Appearance]
 						["sourceQuests"] = { 43682 },	-- Book Presented

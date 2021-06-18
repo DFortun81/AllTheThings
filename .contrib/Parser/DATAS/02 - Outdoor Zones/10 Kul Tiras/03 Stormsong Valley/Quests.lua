@@ -233,7 +233,7 @@ _.Zones =
 				q(50594, {	-- Beneath the Veil
 					["sourceQuests"] = { 49998 },	-- Voices Below
 					["provider"] = { "n", 134639 },	-- Brother Pike
-					["coord"] = { 66.1, 47.4 },
+					["coord"] = { 66.1, 47.4, 942 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(155229),	-- Abyssal Beacon
@@ -1679,7 +1679,7 @@ _.Zones =
 					["sourceQuests"] = { 50909 },	-- Never Outgunned
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 135682 },	-- Patrick Eckhart
-					["coord"] = { 57.8, 55.3 },
+					["coord"] = { 57.8, 55.3, 942 },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(49745, {	-- You Have Their Orders

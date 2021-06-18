@@ -341,7 +341,7 @@ _.Zones =
 				}),
 				n(142839, {	-- Old Jen'tay
 					["description"] = "When you have 150 BfA Inscription, speak to the NPC and he will teach you the technique.",
-					["coord"] = { 76.2, 39.8 },
+					["coord"] = { 76.2, 39.8, 862 },
 					["g"] = {
 						i(162030),	-- Technique: Glyph of the Humble Flyer
 					},

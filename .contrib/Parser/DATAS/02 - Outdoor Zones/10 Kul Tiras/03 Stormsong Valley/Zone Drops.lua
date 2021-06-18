@@ -11,7 +11,7 @@ _.Zones =
 					["description"] = "These are a World Drop in any zone and can be bought from the Auction House.  Once you collect 20, combine them and use them on the \"Abyssal Icon\" located at 73.5, 23.6 in Stormsong Valley.",
 					["g"] = {
 						i(161479, {	-- Nazjatar Blood Serpent
-							["coord"] = { 73.5, 23.6 },
+							["coord"] = { 73.5, 23.6, 942 },
 							["crs"] = { 140474 },	-- Adherent of the Abyss
 						}),
 					},
