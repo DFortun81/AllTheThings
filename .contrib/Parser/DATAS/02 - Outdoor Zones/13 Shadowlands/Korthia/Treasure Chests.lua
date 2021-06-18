@@ -51,6 +51,7 @@ _.Zones =
 						crit(2, {	-- Forgotten Feather
 							["achievementID"] = 15099,	-- Treasures of Korthia
 						}),
+						i(187051),	-- Forgotten Feather (TOY!)
 					},
 				}),
 				o(369148, {	-- Glittering Nest Material
@@ -95,6 +96,7 @@ _.Zones =
 					["questID"] = 64354,
 					["isDaily"] = true,
 					["coords"] = {
+						{ 48.5, 41.2, KORTHIA },
 						{ 49.4, 40.7, KORTHIA },
 						{ 49.9, 32.5, KORTHIA },
 						{ 53.7, 37.9, KORTHIA },
@@ -130,6 +132,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coords"] = {
 						{ 35.7, 31.1, KORTHIA },
+						{ 39.5, 30.7, KORTHIA },
 						{ 39.7, 34.8, KORTHIA },
 					},
 					["g"] = {
@@ -346,6 +349,7 @@ _.Zones =
 						crit(10, {	-- Offering Box
 							["achievementID"] = 15099,	-- Treasures of Korthia
 						}),
+						i(187344);	-- Offering Kit Maker (TOY!)
 					},
 				}),
 				o(369297, {	-- Pile of Bones

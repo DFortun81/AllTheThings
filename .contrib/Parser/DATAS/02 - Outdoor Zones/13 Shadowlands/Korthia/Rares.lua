@@ -6,8 +6,6 @@ _.Zones =
 	m(SHADOWLANDS, {
 		m(KORTHIA, {
 			n(RARES, {
-			--	TODO: note about covenant rare mounts (Escaped Wilderling, Fleshwing, Stygian Stonecrusher, & Wild Worldcracker): SS mount is currently bugged so not sure if it can be summoned by any covenant, but EW mount can be - not sure if this is similar to harika/valfir mounts or if this is a PTR bug
-			--	if it is similar to harika/valfir (mounts can be used by anyone but only looted by their respective covenant), the quests themselves need to be tagged as such so they do not show in the list for players tracking quests
 				i(187216),	-- Soultwining Crescent
 				n(179769, {	-- Consumption
 					["description"] = "Only gives daily kill and achievement credit when it is in Rare or Rare Elite form.\n\nWhen it spawns, there is a zonewide announcement: |cFFf73f3fMawsworn Ruiner yells: Soon it shall feed off the Maw Walkers!|r",
@@ -52,14 +50,17 @@ _.Zones =
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 						i(187281, {	-- Wilderling Saddle
+							["customCollect"] = "SL_COV_NFA",	-- Night Fae
 							["questID"] = 64528,	-- Wilderling Saddle
 							["g"] = {
-								i(186492),	-- Summer Wilderling (MOUNT!)
+								i(186492, {	-- Summer Wilderling (MOUNT!)
+									["customCollect"] = "SL_COV_NFA",	-- Night Fae
+								}),
 							},
 						}),
 						i(187278, {	-- Talon-Pierced Mawsworn Lockbox
 						--	["description"] = "Can contain items from the Korthian sets.",	-- actually not sure about this, i've just gotten 1 specific item so far that doesn't seem to be part of the sets
-							["g"] = {	-- TODO: commented mount because i haven't received it and it isn't explicitly listed as coming from the rare in the journal like the others.  if it is NF-only it needs to be marked here + in the mount section
+							["g"] = {
 							--	i(187246),	-- Death-Enveloped Pauldrons (not sure about this one, a stranger said they got it from the cache)
 								i(187395),	-- Reinforced Stygian Spaulders
 							},
@@ -81,11 +82,14 @@ _.Zones =
 						180064,	-- Corpse Heap
 						180057,	-- Restless Necromancer
 					},
-					["g"] = {	-- TODO: if 'lord of the corpseflies' is necrolord-only, it needs to be marked here + in mount section
+					["g"] = {
 						crit(9, {	-- Fleshwing
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
-						i(186489),	-- Lord of the Corpseflies (MOUNT!)
+						--	TODO: add quest that rewards mount + mark it necrolord-only as well
+						i(186489, {	-- Lord of the Corpseflies (MOUNT!)
+							["customCollect"] = "SL_COV_NEC",	-- Necrolord
+						}),
 						i(187424, {	-- Legend of the Animaswell
 							["customCollect"] = "SL_COV_NEC",	-- Necrolord
 							["isWeekly"] = true,
@@ -202,9 +206,12 @@ _.Zones =
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 						i(187283, {	-- Gravewing Crystal
+							["customCollect"] = "SL_COV_VEN",	-- Venthyr-only
 							["questID"] = 64530,	-- Gravewing Crystal
-							["g"] = {	-- TODO: cannot test whether or not this mount is venthyr-specific because it doesn't show up in the mount journal.
-								i(186479),	-- Masterwork Gravewing (MOUNT!)
+							["g"] = {
+								i(186479, {	-- Masterwork Gravewing (MOUNT!)
+									["customCollect"] = "SL_COV_VEN",	-- Venthyr-only
+								}),
 							},
 						}),
 						i(187428, {	-- Legend of the Animaswell
@@ -262,14 +269,17 @@ _.Zones =
 						{ 46.9, 35.1, KORTHIA },	-- end
 					},
 					["cr"] = 180028,	-- Popo
-					["g"] = {	-- TODO: if foresworn aquilon is kyrian-only, it needs to be marked here + in mount section
+					["g"] = {
 						crit(24, {	-- Wild Worldcracker
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 						i(187282, {	-- Intact Aquilon Core
+							["customCollect"] = "SL_COV_KYR",	-- Kyrian
 							["questID"] = 64529,
 							["g"] = {
-								i(186483),	-- Foresworn Aquilon (MOUNT!)
+								i(186483, {	-- Foresworn Aquilon (MOUNT!)
+									["customCollect"] = "SL_COV_KYR",	-- Kyrian
+								}),
 							},
 						}),
 						i(187426, {	-- Legend of the Animaswell
@@ -291,7 +301,7 @@ _.Zones =
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 						i(187104, {	-- Obelisk of Dark Tidings
-						--	TODO: may be available with no prereqs (or with only the rep unlocked) if someone else repairs the teleporter?  but 'lost vaults' is when you first learn about the relic
+						--	TODO: may be available with only the rep unlocked if someone else repairs the teleporter?  but 'lost vaults' is when you first learn about the relic
 							["sourceQuests"] = { 64519 },	-- Lost Vaults
 							["questID"] = 63918,	-- Obelisk of Dark Tidings
 						}),

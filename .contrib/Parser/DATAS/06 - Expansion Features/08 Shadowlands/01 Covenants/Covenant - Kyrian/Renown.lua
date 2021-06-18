@@ -39,7 +39,9 @@ _.ExpansionFeatures =
 								i(185008),	-- Aspiring Aspirant's Robes
 								i(184996),	-- Aspiring Aspirant's Sash
 								i(184992),	-- Aspiring Aspirant's Slippers
-								i(184991),	-- Aspiring Aspirant's Vestments
+								i(184991, {	-- Aspiring Aspirant's Vestments
+									["u"] = NEVER_IMPLEMENTED,	-- not included in the ensemble as of June 17th on PTR
+								}),
 								i(184997),	-- Aspiring Aspirant's Wraps
 							},
 						}),
