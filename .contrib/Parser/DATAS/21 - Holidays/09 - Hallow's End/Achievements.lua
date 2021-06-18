@@ -503,8 +503,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { TIRISFAL_GLADES },
 										}),
 										crit(25, {	-- Undercity, The Trade Quarter
-											["coord"] = { 67.7, 37.9, 90 },
-											["maps"] = { 90 },	-- Undercity
+											["coord"] = { 67.7, 37.9, UNDERCITY },
+											["maps"] = { UNDERCITY },
 										}),
 										crit(26, {	-- Western Plaguelands, Andorhal
 											["coord"] = { 48.2, 63.7, 22 },

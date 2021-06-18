@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(90, {	-- Undercity
+		m(UNDERCITY, {
 			filter(101, {	-- Pet Battle
 				p(450, {	-- Maggot
 					["crs"] = { 61753 },	-- Maggot

@@ -47,7 +47,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["maps"] = {
 					ORGRIMMAR,
 					THUNDER_BLUFF,
-					90,		-- Undercity
+					UNDERCITY,
 					SILVERMOON_CITY,
 					SHATTRATH_CITY,
 				},
@@ -1779,7 +1779,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["coords"] = {
 					{ 47.8, 38.4, ORGRIMMAR },
 					{ 21.4, 27.8, THUNDER_BLUFF },
-					{ 67.4, 8.00, 90 },		-- Undercity
+					{ 67.4, 8.00, UNDERCITY },
 					{ 70.0, 42.8, SILVERMOON_CITY },
 					{ 62.0, 32.2, SHATTRATH_CITY },
 				},
@@ -1787,7 +1787,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["maps"] = {
 					ORGRIMMAR,
 					THUNDER_BLUFF,
-					90,		-- Undercity
+					UNDERCITY,
 					SILVERMOON_CITY,
 					SHATTRATH_CITY,
 				},
@@ -1851,14 +1851,14 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["coords"] = {
 					{ 46.6, 37.2, ORGRIMMAR },
 					{ 21.2, 26.2, THUNDER_BLUFF },
-					{ 68.6, 8.00, 90 },		-- Undercity
+					{ 68.6, 8.00, UNDERCITY },
 					{ 69.6, 42.4, SILVERMOON_CITY },
 				},
 				["races"] = HORDE_ONLY,
 				["maps"] = {
 					ORGRIMMAR,
 					THUNDER_BLUFF,
-					90,		-- Undercity
+					UNDERCITY,
 					SILVERMOON_CITY,
 				},
 			}),
@@ -1887,14 +1887,14 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["coords"] = {
 					{ 46.6, 37.2, ORGRIMMAR },
 					{ 21.2, 26.2, THUNDER_BLUFF },
-					{ 68.6, 8.00, 90 },		-- Undercity
+					{ 68.6, 8.00, UNDERCITY },
 					{ 69.6, 42.4, SILVERMOON_CITY },
 				},
 				["races"] = HORDE_ONLY,
 				["maps"] = {
 					ORGRIMMAR,
 					THUNDER_BLUFF,
-					90,		-- Undercity
+					UNDERCITY,
 					SILVERMOON_CITY,
 				},
 			}),
@@ -2023,11 +2023,11 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(9326,  {	-- Stealing the Undercity's Flame
 				["isYearly"] = true,
 				["provider"] = { "o", 181335 },	-- Flame of the Undercity
-			--	["itemID"] = 23181,	-- Flame of the Undercity
-				["coord"] = { 68.7, 8.50, 90 },
+				--["itemID"] = 23181,	-- Flame of the Undercity
+				["coord"] = { 68.7, 8.50, UNDERCITY },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_flameshock",
-				["maps"] = { 90 },	-- Undercity
+				["maps"] = { UNDERCITY },
 			}),
 			q(11935, {	-- Stealing Silvermoon's Flame
 				["isYearly"] = true,
@@ -2048,7 +2048,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ 64.8, 27.4, IRONFORGE },
 					{ 21.4, 24.4, THUNDER_BLUFF },
 					{ 62.2, 49.2, 89 },		-- Darnassus
-					{ 67.0, 13.0, 90 },		-- Undercity
+					{ 67.0, 13.0, UNDERCITY },
 					{ 43.2, 25.8, THE_EXODAR },
 					{ 68.8, 42.6, SILVERMOON_CITY },
 					{ 60.4, 30.8, SHATTRATH_CITY },
@@ -2059,7 +2059,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					IRONFORGE,
 					THUNDER_BLUFF,
 					89,		-- Darnassus
-					90,		-- Undercity
+					UNDERCITY,
 					THE_EXODAR,
 					SILVERMOON_CITY,
 					SHATTRATH_CITY,
@@ -2075,7 +2075,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ 64.8, 27.4, IRONFORGE },
 					{ 21.4, 24.4, THUNDER_BLUFF },
 					{ 62.2, 49.2, 89 },		-- Darnassus
-					{ 67.0, 13.0, 90 },		-- Undercity
+					{ 67.0, 13.0, UNDERCITY },
 					{ 43.2, 25.8, THE_EXODAR },
 					{ 68.8, 42.6, SILVERMOON_CITY },
 					{ 60.4, 30.8, SHATTRATH_CITY },
@@ -2086,7 +2086,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					IRONFORGE,
 					THUNDER_BLUFF,
 					89,		-- Darnassus
-					90,		-- Undercity
+					UNDERCITY,
 					THE_EXODAR,
 					SILVERMOON_CITY,
 					SHATTRATH_CITY,
@@ -2102,7 +2102,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ 64.8, 27.4, IRONFORGE },
 					{ 21.4, 24.4, THUNDER_BLUFF },
 					{ 62.2, 49.2, 89 },		-- Darnassus
-					{ 67.0, 13.0, 90 },		-- Undercity
+					{ 67.0, 13.0, UNDERCITY },
 					{ 43.2, 25.8, THE_EXODAR },
 					{ 68.8, 42.6, SILVERMOON_CITY },
 					{ 60.4, 30.8, SHATTRATH_CITY },
@@ -2113,7 +2113,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					IRONFORGE,
 					THUNDER_BLUFF,
 					89,		-- Darnassus
-					90,		-- Undercity
+					UNDERCITY,
 					THE_EXODAR,
 					SILVERMOON_CITY,
 					SHATTRATH_CITY,
@@ -2129,7 +2129,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ 64.8, 27.4, IRONFORGE },
 					{ 21.4, 24.4, THUNDER_BLUFF },
 					{ 62.2, 49.2, 89 },		-- Darnassus
-					{ 67.0, 13.0, 90 },		-- Undercity
+					{ 67.0, 13.0, UNDERCITY },
 					{ 43.2, 25.8, THE_EXODAR },
 					{ 68.8, 42.6, SILVERMOON_CITY },
 					{ 60.4, 30.8, SHATTRATH_CITY },
@@ -2140,7 +2140,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					IRONFORGE,
 					THUNDER_BLUFF,
 					89,		-- Darnassus
-					90,		-- Undercity
+					UNDERCITY,
 					THE_EXODAR,
 					SILVERMOON_CITY,
 					SHATTRATH_CITY,
@@ -2156,7 +2156,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ 64.8, 27.4, IRONFORGE },
 					{ 21.4, 24.4, THUNDER_BLUFF },
 					{ 62.2, 49.2, 89 },		-- Darnassus
-					{ 67.0, 13.0, 90 },		-- Undercity
+					{ 67.0, 13.0, UNDERCITY },
 					{ 43.2, 25.8, THE_EXODAR },
 					{ 68.8, 42.6, SILVERMOON_CITY },
 					{ 60.4, 30.8, SHATTRATH_CITY },
@@ -2167,7 +2167,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					IRONFORGE,
 					THUNDER_BLUFF,
 					89,		-- Darnassus
-					90,		-- Undercity
+					UNDERCITY,
 					THE_EXODAR,
 					SILVERMOON_CITY,
 					SHATTRATH_CITY,
@@ -2183,7 +2183,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ 64.8, 27.4, IRONFORGE },
 					{ 21.4, 24.4, THUNDER_BLUFF },
 					{ 62.2, 49.2, 89 },		-- Darnassus
-					{ 67.0, 13.0, 90 },		-- Undercity
+					{ 67.0, 13.0, UNDERCITY },
 					{ 43.2, 25.8, THE_EXODAR },
 					{ 68.8, 42.6, SILVERMOON_CITY },
 					{ 60.4, 30.8, SHATTRATH_CITY },
@@ -2194,7 +2194,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					IRONFORGE,
 					THUNDER_BLUFF,
 					89,		-- Darnassus
-					90,		-- Undercity
+					UNDERCITY,
 					THE_EXODAR,
 					SILVERMOON_CITY,
 					SHATTRATH_CITY,
@@ -2253,7 +2253,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					WINTERSPRING,
 					ORGRIMMAR,
 					THUNDER_BLUFF,
-					90,		-- Undercity
+					UNDERCITY,
 					EVERSONG_WOODS,
 					NETHERSTORM,
 					SILVERMOON_CITY,
@@ -2286,14 +2286,14 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["coords"] = {
 					{ 46.6, 37.2, ORGRIMMAR },
 					{ 21.2, 26.2, THUNDER_BLUFF },
-					{ 68.6, 8.00, 90 },		-- Undercity
+					{ 68.6, 8.00, UNDERCITY },
 					{ 69.6, 42.4, SILVERMOON_CITY },
 				},
 				["races"] = HORDE_ONLY,
 				["maps"] = {
 					ORGRIMMAR,
 					THUNDER_BLUFF,
-					90,		-- Undercity
+					UNDERCITY,
 					SILVERMOON_CITY,
 				},
 			}),
@@ -2318,14 +2318,14 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["coords"] = {
 					{ 46.6, 37.2, ORGRIMMAR },
 					{ 21.2, 26.2, THUNDER_BLUFF },
-					{ 68.6, 8.00, 90 },		-- Undercity
+					{ 68.6, 8.00, UNDERCITY },
 					{ 69.6, 42.4, SILVERMOON_CITY },
 				},
 				["races"] = HORDE_ONLY,
 				["maps"] = {
 					ORGRIMMAR,
 					THUNDER_BLUFF,
-					90,		-- Undercity
+					UNDERCITY,
 					SILVERMOON_CITY,
 				},
 			}),
@@ -2337,7 +2337,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ 64.8, 27.4, IRONFORGE },
 					{ 21.4, 24.4, THUNDER_BLUFF },
 					{ 62.2, 49.2, 89 },		-- Darnassus
-					{ 67.0, 13.0, 90 },		-- Undercity
+					{ 67.0, 13.0, UNDERCITY },
 					{ 43.2, 25.8, THE_EXODAR },
 					{ 68.8, 42.6, SILVERMOON_CITY },
 					{ 60.4, 30.8, SHATTRATH_CITY },
@@ -2348,7 +2348,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					IRONFORGE,
 					THUNDER_BLUFF,
 					89,		-- Darnassus
-					90,		-- Undercity
+					UNDERCITY,
 					THE_EXODAR,
 					SILVERMOON_CITY,
 					SHATTRATH_CITY,

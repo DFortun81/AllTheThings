@@ -81,14 +81,14 @@ _.Holidays =
 				["coords"] = {
 					{ 47.8, 37.4, ORGRIMMAR },
 					{ 19.8, 24.6, THUNDER_BLUFF },
-					{ 67.8, 11.2, 90 },		-- Undercity
+					{ 67.8, 11.2, UNDERCITY },
 					{ 70.6, 44.0, SILVERMOON_CITY },
 				},
 				["races"] = HORDE_ONLY,
 				["maps"] = {
 					ORGRIMMAR,
 					THUNDER_BLUFF,
-					90,		-- Undercity
+					UNDERCITY,
 					SILVERMOON_CITY,
 				},
 				["g"] = {

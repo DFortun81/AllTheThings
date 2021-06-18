@@ -16,7 +16,7 @@ _.Zones =
 			SILVERMOON_CITY,
 			SHATTRATH_CITY,
 			IRONFORGE,
-			90,		-- Undercity
+			UNDERCITY,
 			STORMWIND_CITY,
 			89,		-- Darnassus
 			THUNDER_BLUFF,
@@ -29,7 +29,7 @@ _.Zones =
 			{ 78.64, 84.73, SILVERMOON_CITY },	-- Kredis
 			{ 59.01, 46.58, SHATTRATH_CITY },	-- Linsa
 			{ 36.45, 85.32, IRONFORGE },	-- Lyesa Steelbrow
-			{ 69.33, 44.82, 90 },	-- Merill Pleasance [Undercity]
+			{ 69.33, 44.82, UNDERCITY },	-- Merill Pleasance
 			{ 64.06, 77.41, STORMWIND_CITY },	-- Rebecca Laughlin
 			{ 64.58, 38.09, 89 },	-- Shalumon [Darnassus]
 			{ 54.08, 57.22, THUNDER_BLUFF },	-- Thrumn

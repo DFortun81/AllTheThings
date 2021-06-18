@@ -73,7 +73,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["maps"] = {
 					37,	-- Elwynn Forest
-					90,	-- Undercity
+					UNDERCITY,
 					IRONFORGE,
 					ORGRIMMAR,
 					THUNDER_BLUFF,
@@ -130,7 +130,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["provider"] = { "n", 15891 },	-- Lunar Festival Herald
 				["isYearly"] = true,
 				["races"] = HORDE_ONLY,
-				["maps"] = { 90 },	-- Undercity
+				["maps"] = { UNDERCITY },
 				["u"] = 17,	-- Lunar Festival
 			}),
 			q(8875,  {	-- The Lunar Festival (H)
@@ -148,7 +148,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["maps"] = {
 					37,	-- Elwynn Forest
-					90,	-- Undercity
+					UNDERCITY,
 					IRONFORGE,
 					ORGRIMMAR,
 					THUNDER_BLUFF,
@@ -1204,8 +1204,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["description"] = "In order to view this Elder, visit Zidormi at 69.4, 62.7 to see Tirisfal Glades before the Battle for Lordaeron.  The Elder is just inside the front door of the city.",
 				["provider"] = { "n", 15564 },	-- Elder Darkcore
 				["isYearly"] = true,
-				["coord"] = { 66.5, 38.0, 90 },
-				["maps"] = { 90 },	-- Undercity
+				["coord"] = { 66.5, 38.0, UNDERCITY },
+				["maps"] = { UNDERCITY },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(3, {	-- Elder Darkcore in Undercity

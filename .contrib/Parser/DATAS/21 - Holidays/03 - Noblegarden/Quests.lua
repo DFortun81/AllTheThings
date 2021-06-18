@@ -157,8 +157,8 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 					{ 41.68, 74.18, 210 },	-- The Cape of Stranglethorn [Goblin]
 					{ 40.77, 84.45, 120 },	-- The Storm Peaks [Goblin]
 					{ 40.82, 56.05, THUNDER_BLUFF },	-- Tauren
-					{ 63.22, 47.55, 90 },	-- Undercity [Forsaken]
-					{ 67.75, 39.25, 90 },	-- Undercity [Forsaken]
+					{ 63.22, 47.55, UNDERCITY },	-- Forsaken
+					{ 67.75, 39.25, UNDERCITY },	-- Forsaken
 					{ 58.75, 48.42, WINTERSPRING },	-- Goblin
 					{ 59.77, 49.67, WINTERSPRING },	-- Goblin
 					{ 59.91, 50.89, WINTERSPRING },	-- Goblin
@@ -177,7 +177,7 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 					210,	-- The Cape of Stranglethorn
 					120,	-- The Storm Peaks
 					THUNDER_BLUFF,
-					90,		-- Undercity
+					UNDERCITY,
 					WINTERSPRING,
 				},
 			}),

@@ -66,7 +66,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["isBreadcrumb"] = true,
 				["provider"] = { "n", 53763 },	-- Gretchen Fenlow
 				["races"] = HORDE_ONLY,
-				["maps"] = { 90 },	-- Undercity
+				["maps"] = { UNDERCITY },
 			}),
 			q(29074, {	-- A Season for Celebration (Alliance)
 				["providers"] = {
@@ -110,7 +110,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 					WINTERSPRING,
 					ORGRIMMAR,
 					THUNDER_BLUFF,
-					90,		-- Undercity
+					UNDERCITY,
 					EVERSONG_WOODS,
 					NETHERSTORM,
 					SHATTRATH_CITY,
@@ -1800,9 +1800,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12368, {	-- Candy Bucket — Undercity, The Trade Quarter, Horde
 				["isYearly"] = true,
-				["coord"] = { 67.7, 37.9, 90 },
+				["coord"] = { 67.7, 37.9, UNDERCITY },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 90 },	-- Undercity
+				["maps"] = { UNDERCITY },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -2047,7 +2047,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["repeatable"] = true,
 				["provider"] = { "n", 6741 },	-- Innkeeper Norman
 				["races"] = HORDE_ONLY,
-				["maps"] = { 90 },	-- Undercity
+				["maps"] = { UNDERCITY },
 			}),
 			q(29144, {	-- Clean Up in Stormwind
 				["provider"] = { "n", 51934 },	-- Gretchen Fenlow
@@ -2277,7 +2277,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 					WINTERSPRING,
 					ORGRIMMAR,
 					THUNDER_BLUFF,
-					90,		-- Undercity
+					UNDERCITY,
 					EVERSONG_WOODS,
 					NETHERSTORM,
 					SHATTRATH_CITY,
