@@ -91,9 +91,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { THE_HINTERLANDS },
 									}),
 									crit(14, {	-- Western Plaguelands
-										["coord"] = { 43.5, 82.2, 22 },
+										["coord"] = { 43.5, 82.2, WESTERN_PLAGUELANDS },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 22 },	-- Western Plaguelands
+										["maps"] = { WESTERN_PLAGUELANDS },
 									}),
 									crit(15, {	-- Westfall
 										["coord"] = { 44.6, 62.1, 52 },
@@ -371,9 +371,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { TIRISFAL_GLADES },
 									}),
 									crit(14, {	-- Western Plaguelands
-										["coord"] = { 28.9, 56.8, 22 },
+										["coord"] = { 28.9, 56.8, WESTERN_PLAGUELANDS },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 22 },	-- Western Plaguelands
+										["maps"] = { WESTERN_PLAGUELANDS },
 									}),
 								},
 							}),
@@ -797,9 +797,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { TIRISFAL_GLADES },
 									}),
 									crit(14, {	-- Western Plaguelands
-										["coord"] = { 29.2, 57.3, 22 },
+										["coord"] = { 29.2, 57.3, WESTERN_PLAGUELANDS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 22 },	-- Western Plaguelands
+										["maps"] = { WESTERN_PLAGUELANDS },
 									}),
 								},
 							}),
@@ -1067,9 +1067,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { THE_HINTERLANDS },
 									}),
 									crit(14, {	-- Western Plaguelands
-										["coord"] = { 43.6, 82.5, 22 },
+										["coord"] = { 43.6, 82.5, WESTERN_PLAGUELANDS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 22 },	-- Western Plaguelands
+										["maps"] = { WESTERN_PLAGUELANDS },
 									}),
 									crit(15, {	-- Westfall
 										["coord"] = { 45.2, 62.3, 52 },

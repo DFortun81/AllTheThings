@@ -348,8 +348,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8722,  {	-- Meadowrun the Elder
 				["provider"] = { "n", 15602 },	-- Elder Meadowrun
 				["isYearly"] = true,
-				["coord"] = { 63.5, 36.2, 22 },
-				["maps"] = { 22 },	-- Western Plaguelands
+				["coord"] = { 63.5, 36.2, WESTERN_PLAGUELANDS },
+				["maps"] = { WESTERN_PLAGUELANDS },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(4, {	-- Elder Meadowrun in Western Plaguelands
@@ -360,8 +360,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8714,  {	-- Moonstrike the Elder
 				["provider"] = { "n", 15594 },	-- Elder Moonstrike
 				["isYearly"] = true,
-				["coord"] = { 69.1, 73.3, 22 },
-				["maps"] = { 22 },	-- Western Plaguelands
+				["coord"] = { 69.1, 73.3, WESTERN_PLAGUELANDS },
+				["maps"] = { WESTERN_PLAGUELANDS },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(17, {	-- Elder Moonstrike in Scholomance

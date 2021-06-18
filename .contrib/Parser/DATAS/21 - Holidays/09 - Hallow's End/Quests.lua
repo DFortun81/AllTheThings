@@ -1911,18 +1911,18 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(28987, {	-- Candy Bucket — Western Plaguelands, Andorhal, Horde
 				["isYearly"] = true,
-				["coord"] = { 48.2, 63.7, 22 },
+				["coord"] = { 48.2, 63.7, WESTERN_PLAGUELANDS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 22 },	-- Western Plaguelands
+				["maps"] = { WESTERN_PLAGUELANDS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(28988, {	-- Candy Bucket — Western Plaguelands, Chillwind Camp, Alliance
 				["isYearly"] = true,
-				["coord"] = { 43.4, 84.5, 22 },
+				["coord"] = { 43.4, 84.5, WESTERN_PLAGUELANDS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 22 },	-- Western Plaguelands
+				["maps"] = { WESTERN_PLAGUELANDS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},

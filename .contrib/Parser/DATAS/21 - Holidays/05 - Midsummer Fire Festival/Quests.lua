@@ -436,10 +436,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(28918, {	-- Desecrate this Fire! — Western Plaguelands
 				["isYearly"] = true,
 				["provider"] = { "o", 207990 },	-- Horde Bonfire
-				["coord"] = { 28.9, 56.8, 22 },
+				["coord"] = { 28.9, 56.8, WESTERN_PLAGUELANDS },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
-				["maps"] = { 22 },	-- Western Plaguelands
+				["maps"] = { WESTERN_PLAGUELANDS },
 			}),
 			q(11803, {	-- Desecrate this Fire! — Winterspring
 				["isYearly"] = true,
@@ -854,10 +854,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11756, {	-- Desecrate this Fire! — Western Plaguelands
 				["isYearly"] = true,
 				["provider"] = { "o", 187939 },	-- Alliance Bonfire
-				["coord"] = { 43.6, 82.5, 22 },
+				["coord"] = { 43.6, 82.5, WESTERN_PLAGUELANDS },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-				["maps"] = { 22 },	-- Western Plaguelands
+				["maps"] = { WESTERN_PLAGUELANDS },
 			}),
 			q(11581, {	-- Desecrate this Fire! — Westfall
 				["isYearly"] = true,
@@ -1268,9 +1268,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11827, {	-- Honor the Flame — Western Plaguelands
 				["provider"] = { "n", 25909 },	-- Western Plaguelands Flame Warden
 				["isYearly"] = true,
-				["coord"] = { 43.5, 82.2, 22 },
+				["coord"] = { 43.5, 82.2, WESTERN_PLAGUELANDS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 22 },	-- Western Plaguelands
+				["maps"] = { WESTERN_PLAGUELANDS },
 			}),
 			q(11583, {	-- Honor the Flame — Westfall
 				["provider"] = { "n", 25910 },	-- Westfall Flame Warden
@@ -1655,9 +1655,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(28931, {	-- Honor the Flame — Western Plaguelands
 				["provider"] = { "n", 51604 },	-- Western Plaguelands Flame Keeper
 				["isYearly"] = true,
-				["coord"] = { 29.2, 57.3, 22 },
+				["coord"] = { 29.2, 57.3, WESTERN_PLAGUELANDS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 22 },	-- Western Plaguelands
+				["maps"] = { WESTERN_PLAGUELANDS },
 			}),
 			q(11839, {	-- Honor the Flame — Winterspring
 				["provider"] = { "n", 25922 },	-- Winterspring Flame Keeper
@@ -1905,7 +1905,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					ARATHI_HIGHLANDS,
 					BADLANDS,
 					BLASTED_LANDS,
-					22,		-- Western Plaguelands
+					WESTERN_PLAGUELANDS,
 					THE_HINTERLANDS,
 					DUN_MOROGH,
 					BURNING_STEPPES,

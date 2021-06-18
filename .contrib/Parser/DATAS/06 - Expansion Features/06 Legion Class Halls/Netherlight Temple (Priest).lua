@@ -69,7 +69,7 @@ _.ExpansionFeatures =
 									["description"] = "Enter Chillheart's room - you don't need to kill the boss. Kill the first trashpack on the right side. The book is on top of the 6th bookshelf from the right.",
 									["provider"] = { "n", 58633 },	-- Instructor Chillheart
 									["coords"] = {
-										{ 69.0, 72.9, 22 },		-- Scholomance entrance
+										{ 69.0, 72.9, WESTERN_PLAGUELANDS },	-- Scholomance entrance
 										{ 58.8, 84.0, SCHOLOMANCE },	--	Actual volume inside the dungeon
 									},
 								}),

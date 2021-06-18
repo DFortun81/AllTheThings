@@ -382,8 +382,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { 51 },	-- Swamp of Sorrows
 										}),
 										crit(22, {	-- Western Plaguelands, Chillwind Camp
-											["coord"] = { 43.4, 84.5, 22 },
-											["maps"] = { 22 },	-- Western Plaguelands
+											["coord"] = { 43.4, 84.5, WESTERN_PLAGUELANDS },
+											["maps"] = { WESTERN_PLAGUELANDS },
 										}),
 										crit(23, {	-- Wetlands, Menethil Harbor
 											["coord"] = { 10.8, 60.9, 56 },
@@ -507,8 +507,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { UNDERCITY },
 										}),
 										crit(26, {	-- Western Plaguelands, Andorhal
-											["coord"] = { 48.2, 63.7, 22 },
-											["maps"] = { 22 },	-- Western Plaguelands
+											["coord"] = { 48.2, 63.7, WESTERN_PLAGUELANDS },
+											["maps"] = { WESTERN_PLAGUELANDS },
 										}),
 									},
 								}),

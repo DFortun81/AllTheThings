@@ -7,7 +7,7 @@ _.Instances = { tier(1, {	-- Classic
 		["lvl"] = 33,
 		["mapID"] = SCHOLOMANCE,
 		["maps"] = { 477, 478, 479 },
-		["coord"] = { 69.07, 72.96, 22 },	-- Scholomance, Western Plaguelands
+		["coord"] = { 69.07, 72.96, WESTERN_PLAGUELANDS },
 		["g"] = {
 			d(1, {		-- Normal
 				n(QUESTS, {

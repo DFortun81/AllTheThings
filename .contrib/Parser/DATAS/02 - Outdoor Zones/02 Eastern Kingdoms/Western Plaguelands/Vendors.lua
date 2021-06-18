@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(22, {	-- Western Plaguelands
+		m(WESTERN_PLAGUELANDS, {
 			n(VENDORS, {
 				n(10857, {	-- Argent Quartermaster Lightspark <The Argent Crusade>
-					["coord"] = { 42.8, 83.8, 22 },
+					["coord"] = { 42.8, 83.8, WESTERN_PLAGUELANDS },
 					["description"] = "Although this vendor is in an Alliance area, Horde players may still purchase from this NPC provided they have the required reputation.",
 					["g"] = {
 						i(18171),	-- Arcane Mantle of the Dawn
@@ -30,7 +30,7 @@ _.Zones =
 					},
 				}),
 				n(12942, {	-- Leonard Porter <Leatherworking Supplies>
-					["coord"] = { 43.1, 84.3, 22 },
+					["coord"] = { 43.1, 84.3, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(15741, {	-- Pattern: Stormshroud Pants
@@ -42,7 +42,7 @@ _.Zones =
 					},
 				}),
 				n(11278,{	-- Magnus Frostwake
-					["coord"] = { 68.0, 77.6, 22 },
+					["coord"] = { 68.0, 77.6, WESTERN_PLAGUELANDS },
 					["g"] = {
 						i(8030),	-- Plans: Ebon Shiv
 						i(12823), 	-- Plans: Huge Thorium Battleaxe
