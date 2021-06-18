@@ -536,15 +536,12 @@ settings.SetDebugMode = function(self, debugMode)
 		settings:SetCollectedThings(true, true);
 		if not self:Get("Thing:Transmog") then
 			wipe(ATTAccountWideData.Sources);
-			debugMode = "R";
 		end
 	else
 		settings:SetCompletedGroups(settings:Get("Cache:CompletedGroups"), true);
 		settings:SetCollectedThings(settings:Get("Cache:CollectedThings"), true);
 	end
-	if not debugMode or debugMode ~= "R" then
-		self:UpdateMode(1);
-	end
+	self:UpdateMode(1);
 end
 settings.ToggleDebugMode = function(self)
 	self:SetDebugMode(not self:Get("DebugMode"));
@@ -800,6 +797,10 @@ settings.UpdateMode = function(self, doRefresh)
 		self.NeedsRefresh = true;
 		if doRefresh == "FORCE" or not settings:Get("Skip:AutoRefresh") then
 			self.NeedsRefresh = nil;
+			-- debug should always include Transmog regardless of user's setting
+			if app.MODE_DEBUG then
+				app.RefreshAppearanceSources();
+			end
 			app:RefreshData(nil,nil,true);
 		end
 	end
