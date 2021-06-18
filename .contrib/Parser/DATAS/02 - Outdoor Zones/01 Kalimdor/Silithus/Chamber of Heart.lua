@@ -341,10 +341,10 @@ _.Zones =
 						}),
 						q(55657, {	-- In the Shadow of Crimson Wings
 							["provider"] = { "n", 152720 },	-- Kalecgos
-							["coord"] = { 36.0, 50.5, 241 },
+							["coord"] = { 36.0, 50.5, TWILIGHT_HIGHLANDS },
 							["sourceQuest"] = 56167,	-- Investigating the Highlands
 							["maps"] = {
-								241,	-- Twilight Highlands
+								TWILIGHT_HIGHLANDS,
 								1476,	-- Twilight Highlands (Szenario)
 							},
 							["g"] = {

@@ -1721,63 +1721,63 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(28973, {	-- Candy Bucket — Twilight Highlands, Bloodgulch, Horde
 				["isYearly"] = true,
-				["coord"] = { 53.4, 42.9, 241 },
+				["coord"] = { 53.4, 42.9,TWILIGHT_HIGHLANDS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 241 },	-- Twilight Highlands
+				["maps"] = { TWILIGHT_HIGHLANDS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(28974, {	-- Candy Bucket — Twilight Highlands, Crushblow, Horde
 				["isYearly"] = true,
-				["coord"] = { 45.1, 76.7, 241 },
+				["coord"] = { 45.1, 76.7,TWILIGHT_HIGHLANDS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 241 },	-- Twilight Highlands
+				["maps"] = { TWILIGHT_HIGHLANDS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(28977, {	-- Candy Bucket — Twilight Highlands, Firebeard's Patrol, Alliance
 				["isYearly"] = true,
-				["coord"] = { 60.4, 58.2, 241 },
+				["coord"] = { 60.4, 58.2,TWILIGHT_HIGHLANDS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 241 },	-- Twilight Highlands
+				["maps"] = { TWILIGHT_HIGHLANDS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(28980, {	-- Candy Bucket — Twilight Highlands, Highbank, Alliance
 				["isYearly"] = true,
-				["coord"] = { 79.5, 78.5, 241 },
+				["coord"] = { 79.5, 78.5,TWILIGHT_HIGHLANDS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 241 },	-- Twilight Highlands
+				["maps"] = { TWILIGHT_HIGHLANDS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(28976, {	-- Candy Bucket — Twilight Highlands, Krazzworks, Horde
 				["isYearly"] = true,
-				["coord"] = { 75.4, 16.5, 241 },
+				["coord"] = { 75.4, 16.5,TWILIGHT_HIGHLANDS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 241 },	-- Twilight Highlands
+				["maps"] = { TWILIGHT_HIGHLANDS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(28978, {	-- Candy Bucket — Twilight Highlands, Thundermar, Alliance
 				["isYearly"] = true,
-				["coord"] = { 49.6, 30.4, 241 },
+				["coord"] = { 49.6, 30.4,TWILIGHT_HIGHLANDS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 241 },	-- Twilight Highlands
+				["maps"] = { TWILIGHT_HIGHLANDS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(28979, {	-- Candy Bucket — Twilight Highlands, Victor's Point, Alliance
 				["isYearly"] = true,
-				["coord"] = { 43.6, 57.3, 241 },
+				["coord"] = { 43.6, 57.3,TWILIGHT_HIGHLANDS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 241 },	-- Twilight Highlands
+				["maps"] = { TWILIGHT_HIGHLANDS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},

@@ -165,8 +165,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(29736, {	-- Darkfeather the Elder
 				["provider"] = { "n", 55218 },	-- Elder Darkfeather
 				["isYearly"] = true,
-				["coord"] = { 51.8, 33.0, 241 },
-				["maps"] = { 241 },	-- Twilight Highlands
+				["coord"] = { 51.8, 33.0, TWILIGHT_HIGHLANDS },
+				["maps"] = { TWILIGHT_HIGHLANDS },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(5, {	-- Elder Darkfeather in Twilight Highlands
@@ -201,8 +201,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(29737, {	-- Firebeard the Elder
 				["provider"] = { "n", 55219 },	-- Elder Firebeard
 				["isYearly"] = true,
-				["coord"] = { 50.9, 70.4, 241 },
-				["maps"] = { 241 },	-- Twilight Highlands
+				["coord"] = { 50.9, 70.4, TWILIGHT_HIGHLANDS },
+				["maps"] = { TWILIGHT_HIGHLANDS },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(4, {	-- Elder Firebeard in Twilight Highlands

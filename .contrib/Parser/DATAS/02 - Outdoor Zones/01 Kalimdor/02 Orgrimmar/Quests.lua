@@ -428,30 +428,30 @@ _.Zones =
 									q(53892, {	-- Where Are the Workers?
 										["sourceQuests"] = { 53891 },	-- No Problem Too Small
 										["provider"] = { "n", 145641 },	-- Kiro
-										["coord"] = { 44.1, 73.4, 241 },
+										["coord"] = { 44.1, 73.4, TWILIGHT_HIGHLANDS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 241 },	-- Twilight Highlands
+										["maps"] = { TWILIGHT_HIGHLANDS },
 									}),
 									q(53893, {	-- A Little Goodwill
 										["sourceQuests"] = { 53892 },	-- Where Are the Workers?
 										["provider"] = { "n", 145416 },	-- Kiro
-										["coord"] = { 46.8, 66.2, 241 },
+										["coord"] = { 46.8, 66.2, TWILIGHT_HIGHLANDS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 241 },	-- Twilight Highlands
+										["maps"] = { TWILIGHT_HIGHLANDS },
 									}),
 									q(53894, {	-- Worthwhile Repairs
 										["sourceQuests"] = { 53892 },	-- Where Are the Workers?
 										["provider"] = { "n", 145416 },	-- Kiro
-										["coord"] = { 46.8, 66.2, 241 },
+										["coord"] = { 46.8, 66.2, TWILIGHT_HIGHLANDS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 241 },	-- Twilight Highlands
+										["maps"] = { TWILIGHT_HIGHLANDS },
 									}),
 									q(53895, {	-- Peon Promotions!
 										["sourceQuests"] = { 53892 },	-- Where Are the Workers?
 										["provider"] = { "n", 145416 },	-- Kiro
-										["coord"] = { 46.8, 66.2, 241 },
+										["coord"] = { 46.8, 66.2, TWILIGHT_HIGHLANDS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 241 },	-- Twilight Highlands
+										["maps"] = { TWILIGHT_HIGHLANDS },
 									}),
 									q(53897, {	-- A Party in Your Honor
 										["sourceQuests"] = {
@@ -460,23 +460,23 @@ _.Zones =
 											53894,	-- Worthwhile Repairs
 										},
 										["provider"] = { "n", 145416 },	-- Kiro
-										["coord"] = { 46.8, 66.2, 241 },
+										["coord"] = { 46.8, 66.2, TWILIGHT_HIGHLANDS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 241 },	-- Twilight Highlands
+										["maps"] = { TWILIGHT_HIGHLANDS },
 									}),
 									q(53898, {	-- Strength and Honor
 										["sourceQuests"] = { 53897 },	-- A Party in Your Honor
 										["provider"] = { "n", 145416 },	-- Kiro
-										["coord"] = { 45.0, 76.2, 241 },
+										["coord"] = { 45.0, 76.2, TWILIGHT_HIGHLANDS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 241 },	-- Twilight Highlands
+										["maps"] = { TWILIGHT_HIGHLANDS },
 									}),
 									q(54026, {	-- Job's Done
 										["sourceQuests"] = { 53898 },	-- Strength and Honor
 										["provider"] = { "n", 145416 },	-- Kiro
-										["coord"] = { 45.0, 76.2, 241 },
+										["coord"] = { 45.0, 76.2, TWILIGHT_HIGHLANDS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 241 },	-- Twilight Highlands
+										["maps"] = { TWILIGHT_HIGHLANDS },
 									}),
 									q(53899, {	-- On the Outskirts
 										["sourceQuests"] = { 54026 },	-- Job's Done

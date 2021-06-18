@@ -6,7 +6,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 	inst(72, { 	-- The Bastion of Twilight
 		["sharedLockout"] = 1,
 		["isRaid"] = true,
-		["coord"] = { 34.2, 77.7, 241 },
+		["coord"] = { 34.2, 77.7, TWILIGHT_HIGHLANDS },
 		["mapID"] = 294,
 		["maps"] = { 295, 296 },
 		["lvl"] = 85,

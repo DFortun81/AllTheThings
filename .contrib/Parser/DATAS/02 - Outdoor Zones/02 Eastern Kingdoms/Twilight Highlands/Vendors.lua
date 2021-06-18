@@ -5,24 +5,24 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(241, {	-- Twilight Highlands
+		m(TWILIGHT_HIGHLANDS, {
 			n(VENDORS, {
 				n(50146, {	-- Agatian Fallanos <Shard Trader>
-					["coord"] = { 76.8, 49.4, 241 },
+					["coord"] = { 76.8, 49.4, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 3346}, -- Kithas <Enchanting Supplies>
 					},
 				}),
 				n(50433, {	-- Aristaleon Sunweaver <Cloth Trader>
-					["coord"] = { 75.3, 50.0, 241 },
+					["coord"] = { 75.3, 50.0, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 3364}, -- Borya <Tailoring Supplies>
 					},
 				}),
 				n(49605, {	-- Brian Terrel <Bowyer>
-					["coord"] = { 43.8, 57.8, 241 },
+					["coord"] = { 43.8, 57.8, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(11308, {	-- Sylvan Shortbow
@@ -31,14 +31,14 @@ _.Zones =
 					},
 				}),
 				n(50382, {	-- Brundall Chiselgut <Metal Trader>
-					["coord"] = { 79.0, 76.6, 241 },
+					["coord"] = { 79.0, 76.6, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 3356}, -- Sumi <Blacksmithing Supplies>
 					},
 				}),
 				n(49386, {	-- Craw MacGraw <Wildhammer Clan Quartermaster>
-					["coord"] = { 48.6, 30.6, 241 },
+					["coord"] = { 48.6, 30.6, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(62427),	-- Band of Singing Grass
@@ -57,7 +57,7 @@ _.Zones =
 					},
 				}),
 				n(49387, {	-- Grot Deathblow <Dragonmaw Clan Quartermaster>
-					["coord"] = { 53.8, 42.0, 241 },
+					["coord"] = { 53.8, 42.0, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(62415),	-- Band of Lamentation
@@ -76,35 +76,35 @@ _.Zones =
 					},
 				}),
 				n(50375, {	-- Kuldar Steeltooth <Metal Trader>
-					["coord"] = { 77.2, 53.0, 241 },
+					["coord"] = { 77.2, 53.0, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 3356}, -- Sumi <Blacksmithing Supplies>
 					},
 				}),
 				n(50381, {	-- Misty Merriweather <Hide & Leather Trader>
-					["coord"] = { 78.6, 76.2, 241 },
+					["coord"] = { 78.6, 76.2, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 3366}, -- Tamar <Leatherworking Supplies>
 					},
 				}),
 				n(50386, {	-- Sal Ferraga <Cloth Trader>
-					["coord"] = { 78.6, 76.8, 241 },
+					["coord"] = { 78.6, 76.8, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 3364}, -- Borya <Tailoring Supplies>
 					},
 				}),
 				n(50134, {	-- Senthii <Shard Trader>
-					["coord"] = { 78.6, 77.0, 241 },
+					["coord"] = { 78.6, 77.0, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 3346}, -- Kithas <Enchanting Supplies>
 					},
 				}),
 				n(50172, {	-- Threm Blackscalp <Hide & Leather Trader>
-					["coord"] = { 75.2, 50.0, 241 },
+					["coord"] = { 75.2, 50.0, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 3366}, -- Tamar <Leatherworking Supplies>

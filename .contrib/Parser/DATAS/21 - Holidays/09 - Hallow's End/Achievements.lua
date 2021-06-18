@@ -1127,20 +1127,20 @@ _.Holidays = bubbleDown({["u"] = 26},
 							["maps"] = { 198 },	-- Mount Hyjal
 						}),
 						crit(5,  {	-- Twilight Highlands, Firebeard's Patrol
-							["coord"] = { 60.4, 58.2, 241 },
-							["maps"] = { 241 },	-- Twilight Highlands
+							["coord"] = { 60.4, 58.2,TWILIGHT_HIGHLANDS },
+							["maps"] = { TWILIGHT_HIGHLANDS },
 						}),
 						crit(6,  {	-- Twilight Highlands, Highbank
-							["coord"] = { 79.5, 78.5, 241 },
-							["maps"] = { 241 },	-- Twilight Highlands
+							["coord"] = { 79.5, 78.5,TWILIGHT_HIGHLANDS },
+							["maps"] = { TWILIGHT_HIGHLANDS },
 						}),
 						crit(7,  {	-- Twilight Highlands, Thundermar
-							["coord"] = { 49.6, 30.4, 241 },
-							["maps"] = { 241 },	-- Twilight Highlands
+							["coord"] = { 49.6, 30.4,TWILIGHT_HIGHLANDS },
+							["maps"] = { TWILIGHT_HIGHLANDS },
 						}),
 						crit(8,  {	-- Twilight Highlands, Victor's Point
-							["coord"] = { 43.6, 57.3, 241 },
-							["maps"] = { 241 },	-- Twilight Highlands
+							["coord"] = { 43.6, 57.3,TWILIGHT_HIGHLANDS },
+							["maps"] = { TWILIGHT_HIGHLANDS },
 						}),
 						crit(9,  {	-- Uldum, Oasis of Vir'sar
 							["coord"] = { 26.6, 7.30, 249 },
@@ -1188,16 +1188,16 @@ _.Holidays = bubbleDown({["u"] = 26},
 							["maps"] = { 198 },	-- Mount Hyjal
 						}),
 						crit(5,  {	-- Twilight Highlands, Bloodgulch
-							["coord"] = { 53.4, 42.9, 241 },
-							["maps"] = { 241 },	-- Twilight Highlands
+							["coord"] = { 53.4, 42.9,TWILIGHT_HIGHLANDS },
+							["maps"] = { TWILIGHT_HIGHLANDS },
 						}),
 						crit(6,  {	-- Twilight Highlands, Crushblow
-							["coord"] = { 45.1, 76.7, 241 },
-							["maps"] = { 241 },	-- Twilight Highlands
+							["coord"] = { 45.1, 76.7,TWILIGHT_HIGHLANDS },
+							["maps"] = { TWILIGHT_HIGHLANDS },
 						}),
 						crit(7,  {	-- Twilight Highlands, The Krazzworks
-							["coord"] = { 75.4, 16.5, 241 },
-							["maps"] = { 241 },	-- Twilight Highlands
+							["coord"] = { 75.4, 16.5,TWILIGHT_HIGHLANDS },
+							["maps"] = { TWILIGHT_HIGHLANDS },
 						}),
 						crit(8,  {	-- Uldum, Oasis of Vir'sar
 							["coord"] = { 26.6, 7.30, 249 },

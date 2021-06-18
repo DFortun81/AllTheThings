@@ -396,10 +396,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(28944, {	-- Desecrate this Fire! — Twilight Highlands
 				["isYearly"] = true,
 				["provider"] = { "o", 208090 },	-- Horde Bonfire
-				["coord"] = { 53.3, 46.5, 241 },
+				["coord"] = { 53.3, 46.5, TWILIGHT_HIGHLANDS },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
-				["maps"] = { 241 },	-- Twilight Highlands
+				["maps"] = { TWILIGHT_HIGHLANDS },
 			}),
 			q(28948, {	-- Desecrate this Fire! — Uldum
 				["isYearly"] = true,
@@ -822,10 +822,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(28943, {	-- Desecrate this Fire! — Twilight Highlands
 				["isYearly"] = true,
 				["provider"] = { "o", 208089 },	-- Alliance Bonfire
-				["coord"] = { 47.0, 28.3, 241 },
+				["coord"] = { 47.0, 28.3, TWILIGHT_HIGHLANDS },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-				["maps"] = { 241 },	-- Twilight Highlands
+				["maps"] = { TWILIGHT_HIGHLANDS },
 			}),
 			q(28947, {	-- Desecrate this Fire! — Uldum
 				["isYearly"] = true,
@@ -1233,9 +1233,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(28945, {	-- Honor the Flame — Twilight Highlands
 				["provider"] = { "n", 51650 },	-- Twilight Highlands Flame Warden
 				["isYearly"] = true,
-				["coord"] = { 47.0, 28.0, 241 },
+				["coord"] = { 47.0, 28.0, TWILIGHT_HIGHLANDS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 241 },	-- Twilight Highlands
+				["maps"] = { TWILIGHT_HIGHLANDS },
 			}),
 			q(28950, {	-- Honor the Flame — Uldum
 				["provider"] = { "n", 51653 },	-- Uldum Flame Warden
@@ -1613,9 +1613,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(28946, {	-- Honor the Flame — Twilight Highlands
 				["provider"] = { "n", 51651 },	-- Twilight Highlands Flame Keeper
 				["isYearly"] = true,
-				["coord"] = { 53.1, 46.2, 241 },
+				["coord"] = { 53.1, 46.2, TWILIGHT_HIGHLANDS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 241 },	-- Twilight Highlands
+				["maps"] = { TWILIGHT_HIGHLANDS },
 			}),
 			q(28949, {	-- Honor the Flame — Uldum
 				["provider"] = { "n", 51652 },	-- Uldum Flame Keeper
@@ -1941,7 +1941,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					127,	-- Crystalsong Forest
 					SOUTHERN_BARRENS,
 					210,	-- The Cape of Stranglethorn
-					241,	-- Twilight Highlands
+					TWILIGHT_HIGHLANDS,
 					249,	-- Uldum
 				},
 			}),
