@@ -4951,6 +4951,8 @@ local function RefreshSaves()
 	AfterCombatCallback(RefreshSavesCallback);
 end
 local function RefreshAppearanceSources()
+	app.DoRefreshAppearanceSources = nil;
+	wipe(ATTAccountWideData.Sources);
 	local collectedSources = ATTAccountWideData.Sources;
 	-- TODO: test C_TransmogCollection.PlayerKnowsSource(sourceID) ?
 	app.MaxSourceID = app.MaxSourceID or 0;
@@ -5065,8 +5067,8 @@ local function RefreshCollections()
 		coroutine.yield();
 
 		-- Refresh Sources from Cache if tracking Transmog
-		if app.Settings:Get("Thing:Transmog") then
-			RefreshAppearanceSources()
+		if app.DoRefreshAppearanceSources or app.Settings:Get("Thing:Transmog") then
+			RefreshAppearanceSources();
 		end
 		coroutine.yield();
 

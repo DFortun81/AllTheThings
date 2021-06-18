@@ -519,7 +519,7 @@ settings.ToggleAccountMode = function(self)
 end
 settings.SetCompletionistMode = function(self, completionistMode)
 	self:Set("Completionist", completionistMode);
-	wipe(ATTAccountWideData.Sources);
+	app.DoRefreshAppearanceSources = true;
 	self:UpdateMode(1);
 end
 settings.ToggleCompletionistMode = function(self)
@@ -535,7 +535,7 @@ settings.SetDebugMode = function(self, debugMode)
 		settings:SetCompletedGroups(true, true);
 		settings:SetCollectedThings(true, true);
 		if not self:Get("Thing:Transmog") then
-			wipe(ATTAccountWideData.Sources);
+			app.DoRefreshAppearanceSources = true;
 		end
 	else
 		settings:SetCompletedGroups(settings:Get("Cache:CompletedGroups"), true);
@@ -797,8 +797,7 @@ settings.UpdateMode = function(self, doRefresh)
 		self.NeedsRefresh = true;
 		if doRefresh == "FORCE" or not settings:Get("Skip:AutoRefresh") then
 			self.NeedsRefresh = nil;
-			-- debug should always include Transmog regardless of user's setting
-			if app.MODE_DEBUG then
+			if app.DoRefreshAppearanceSources then
 				app.RefreshAppearanceSources();
 			end
 			app:RefreshData(nil,nil,true);
@@ -1111,7 +1110,7 @@ function(self)
 	settings:Set("Thing:Transmog", self:GetChecked());
 	settings:UpdateMode();
 	if self:GetChecked() then
-		wipe(ATTAccountWideData.Sources);
+		app.DoRefreshAppearanceSources = true;
 	end
 	settings:UpdateMode(1);
 end);
