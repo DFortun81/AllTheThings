@@ -19,7 +19,7 @@ _.Zones =
 					},
 					["timeline"] = {
 						"added 1.11.1.10772",
-						"removed removed 4.0.3.10000",
+						"removed 4.0.3.10000",
 					},
 				}),
 				q(818, {	-- A Solvent Spirit
@@ -46,12 +46,12 @@ _.Zones =
 								3105,	-- Makrura Snapclaw
 								6020,	-- Slimeshell Makrura
 							},
-						}),	
+						}),
 						i(4941),	-- Really Sticky Glue
 					},
 					["timeline"] = {
 						"added 1.11.1.10958",
-						"removed removed 4.0.3.10000",
+						"removed 4.0.3.10000",
 					},
 				}),
 				q(41002, {	-- A Weapon of the Horde
@@ -88,7 +88,7 @@ _.Zones =
 					["lvl"] = 4,
 					["timeline"] = {
 						"added 1.11.1.10958",
-						"removed removed 4.0.3.10000",
+						"removed 4.0.3.10000",
 					},
 				}),
 				q(32872, {	-- Battlefield: Barrens Ally
@@ -166,7 +166,7 @@ _.Zones =
 					},
 					["timeline"] = {
 						"added 1.11.1.10772",
-						"removed removed 4.0.3.10000",
+						"removed 4.0.3.10000",
 					},
 				}),
 				q(25167, {	-- Breaking the Chain
@@ -177,7 +177,7 @@ _.Zones =
 						objective(1, {	-- 0/3 Northwatch Supply Crates destroyed
 							["cr"] = 39251,	-- Northwatch Supply Crate
 						}),
-						objective(2, {	-- 0/10 Northwatch Lug slain 
+						objective(2, {	-- 0/10 Northwatch Lug slain
 							["crs"] = {
 								39245,	-- Northwatch Lug
 								39249,	-- Northwatch Lug
@@ -204,7 +204,7 @@ _.Zones =
 					},
 					["timeline"] = {
 						"added 1.11.1.10772",
-						"removed removed 4.0.3.10000",
+						"removed 4.0.3.10000",
 					},
 				}),
 				q(832, {	-- Burning Shadows
