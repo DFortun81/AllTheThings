@@ -12,9 +12,6 @@ _.Zones =
 					["coord"] = { 52.05, 68.31, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 1,
-					["cost"] = {
-						{ "i", 7629, 1}, -- 0/1 Ukor's Burden
-					},
 					["groups"] = {
 						objective(1, {	-- 0/1 Ukor's Burden
 							["provider"] = { "i", 7629 },
@@ -29,10 +26,6 @@ _.Zones =
 					["qg"] = 3304,	-- Master Vornal
 					["coord"] = { 55.95, 74.39, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["cost"] = {
-						{ "i", 4888, 8 },	-- Crawler Mucus
-						{ "i", 4887, 4 },	-- Intact Makrura Eye
-					},
 					["lvl"] = 5,
 					["groups"] = {
 						objective(1, { -- 0/8 Crawler Mucus
@@ -62,68 +55,156 @@ _.Zones =
 					},
 				}),
 				q(41002, {	-- A Weapon of the Horde
-					["provider"] = { "n", 101035 },	-- Lady Sylvanas Windrunner
+					["qg"] = 101035,	-- Lady Sylvanas Windrunner
 					["races"] = { BLOODELF },
 					["classes"] = { DEMONHUNTER },
+					["lvl"] = lvlsquish(98, 10, 98),
 					["sourceQuest"] = 40983,	-- Demons Among Them
+					["timeline"] = {
+						"added 7.0.1.20796",
+					},
 				}),
 				q(25263, {	-- Arnak Fireblade
-					["provider"] = { "n", 3208 },	-- Margoz
-					["coord"] = { 56.4, 19.8, 1 },
+					["qg"] = 3208,	-- Margoz
+					["coord"] = { 56.4, 19.8, DUROTAR },
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(4, 1, 4),
 					["sourceQuest"] = 25262,	-- Skull Rock
+					["groups"] = {
+						objective(1, {	-- 0/1 Example Collar
+							["provider"] = { "i", 6658 },	-- Example Collar
+						}),
+					},
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
+				}),
+				q(809, {	-- Ak'Zeloth
+					["qg"] = 3216,	-- Neeru Fireblade
+					["sourceQuest"] = 829,	-- Neeru Fireblade
+					["coord"] = { 49.6, 50.4, ORGRIMMAR },
+					["maps"] = { ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 4,
+					["timeline"] = {
+						"added 1.11.1.10958",
+						"removed removed 4.0.3.10000",
+					},
 				}),
 				q(32872, {	-- Battlefield: Barrens Ally
-					["u"] = REMOVED_FROM_GAME,
+					["qg"] = 71333,	-- Ki'ta Arrowtusk
 					["races"] = ALLIANCE_ONLY,
 					["isWeekly"] = true,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(97849)),	-- Radical Mojo
+					["groups"] = {
+						objective(1, {	-- 0/150 Kor'kron Lumber
+							["provider"] = { "i", 97530 },	-- Kor'kron Lumber
+						}),
+						objective(2, {	-- 0/150 Kor'kron Oil
+							["provider"] = { "i", 97544 }, -- Kor'kron Oil
+						}),
+						objective(3, {	-- 0/150 Kor'kron Meat
+							["provider"] = { "i", 97545 }, -- Kor'kron Meat
+						}),
+						objective(4, {	-- 0/150 Kor'kron Stone
+							["provider"] = { "i", 97543 }, -- Kor'kron Stone
+						}),
+						i(97849),	-- Radical Mojo
+					},
+					["timeline"] = {
+						"added 5.3.0.16767",
+						"removed 5.4.0.17359",
 					},
 				}),
 				q(32862, {	-- Battlefield: Barrens Horde
-					["u"] = REMOVED_FROM_GAME,
+					["qg"] = 71333,	-- Ki'ta Arrowtusk
 					["races"] = HORDE_ONLY,
 					["isWeekly"] = true,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(97849)),	-- Radical Mojo
+					["groups"] = {
+						objective(1, {	-- 0/150 Kor'kron Lumber
+							["provider"] = { "i", 97530 },	-- Kor'kron Lumber
+						}),
+						objective(2, {	-- 0/150 Kor'kron Oil
+							["provider"] = { "i", 97544 }, -- Kor'kron Oil
+						}),
+						objective(3, {	-- 0/150 Kor'kron Meat
+							["provider"] = { "i", 97545 }, -- Kor'kron Meat
+						}),
+						objective(4, {	-- 0/150 Kor'kron Stone
+							["provider"] = { "i", 97543 }, -- Kor'kron Stone
+						}),
+						i(97849),	-- Radical Mojo
+					},
+					["timeline"] = {
+						"added 5.3.0.16767",
+						"removed 5.4.0.17359",
 					},
 				}),
 				q(25648, {	-- Beyond Durotar
-					["provider"] = { "n", 39379 },	-- Gor the Enforcer
-					["coord"] = { 44.9, 14.7, 1 },
+					["qg"] = 39379,	-- Gor the Enforcer
+					["coord"] = { 44.9, 14.7, DUROTAR },
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(8, 5, 8),
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = {
 						25236,	-- Thunder Down Under
 						25205,	-- The Wolf and The Kodo
 						25206,	-- Ignoring the Warnings
 					},
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(815,   {	-- Break a Few Eggs
-					["u"] = REMOVED_FROM_GAME,
+					["qg"] = 3191,	-- Cook Torka
+					["coord"] = { 51.11, 42.45, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3191 },	-- Cook Torka
+					["lvl"] = 6,
+					["groups"] = {
+						objective(1, {	-- 0/3 Taillasher Egg
+							["provider"] = { "i", 4890 },	-- Taillasher Egg
+						}),
+					},
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed removed 4.0.3.10000",
+					},
 				}),
 				q(25167, {	-- Breaking the Chain
-					["provider"] = { "n", 3188 },	-- Master Gadrin
-					["coord"] = { 55.9, 74.8, 1 },
+					["qg"] = 3188,	-- Master Gadrin
+					["coord"] = { 55.9, 74.8, DUROTAR },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/3 Northwatch Supply Crates destroyed
+							["cr"] = 39251,	-- Northwatch Supply Crate
+						}),
+						objective(2, {	-- 0/10 Northwatch Lug slain 
+							["crs"] = {
+								39245,	-- Northwatch Lug
+								39249,	-- Northwatch Lug
+							},
+						}),
+					},
 					["sourceQuests"] = {
 						25133,	-- Report to Sen'jin Village
 						25073,	-- Sen'jin Village
 					},
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
-				q(1843,  {	-- Brutal Gauntlets
-					["provider"] = { "n", 6408 },	-- Ula'elek
-					["coord"] = { 56.4, 74.4, 1 },
+				q(1843, {	-- Brutal Gauntlets
+					["qg"] = 6408,	-- Ula'elek
 					["sourceQuest"] = 1842,	-- Satyr Hooves
+					["coord"] = { 56.2, 74.4, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 20,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(7129)),	-- Brutal Gauntlets
+					["groups"] = {
+						i(7129),	-- Brutal Gauntlets
+					},
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed removed 4.0.3.10000",
 					},
 				}),
 				q(832, {	-- Burning Shadows
@@ -728,3 +809,15 @@ _.Zones =
 		}),
 	}),
 };
+_.NEVER_IMPLEMENTED = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(785, {	-- A Strategic Alliance
+			-- low enough questID for classic, but unable to verify if it actually was in vanilla
+			-- since Neeru Fireblade was moved to Orgrimmar for launch, it seems unlikely.
+			["qg"] = 3216,	-- Neeru Fireblade
+			["coord"] = { 49.64, 50.31, ORGRIMMAR },
+			["races"] = HORDE_ONLY,
+			["lvl"] = 5,
+		}),
+	}),
+});
