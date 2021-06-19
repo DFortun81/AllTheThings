@@ -537,7 +537,6 @@ app.L = {
 	["SPLIT"] = "Per Difficulty";
 	["REQUIRES_LEVEL"] = "Requires Level";
 	["SECRETS_HEADER"] = "Secrets";
-	["SELFIE_FILTERS_HEADER"] = "Selfie Filters";
 	["LIMITED_QUANTITY"] = "This has a limited quantity and may not always be present on the vendor.";
 	["SOURCE_ID_MISSING"] = "Please report this Item and where it was acquired to the ATT Discord in #errors!";
 
@@ -1938,13 +1937,14 @@ app.L = {
 
 	-- Shadowlands PvP Seasons
 		[-693] = select(2, GetAchievementInfo(14690)),							-- Sinful Gladiator: Shadowlands Season 1
+
 	-- Pets
-		[-796] = "Battle",														-- Battle
-		[-797] = "Journal",														-- Journal
-		
+		[-796] = BATTLE_PET_SOURCE_5,											-- Battle
+		[-797] = PET_JOURNAL,													-- Journal
+
 	-- Toys
-		[-798] = "Selfie Filter",												-- Selfie Filter
-		
+		[-798] = select(1, GetItemInfo(122637)),								-- S.E.L.F.I.E. Camera
+
 		[-799] = "Burden of Eternity",											-- Burden of Eternity
 
 	-- Secret Header [Maybe need to change the numbers again when I need more space for PvP -- sadidorf]

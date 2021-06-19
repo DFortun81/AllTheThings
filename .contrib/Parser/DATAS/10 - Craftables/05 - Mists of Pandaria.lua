@@ -385,7 +385,7 @@ _.Craftables =
 			}),
 		}),
 		prof(JEWELCRAFTING, {
-			filter(100, {	-- Mount
+			filter(100, {	-- Mounts
 				i(83088),	-- Jade Panther
 				i(82453),	-- Jeweled Onyx Panther
 				i(83087),	-- Ruby Panther

@@ -14439,17 +14439,6 @@ function app:GetDataCache()
 			table.insert(g, db);
 		end
 
-		-- Selfie Filters
-		if app.Categories.SelfieFilters then
-			db = {};
-			db.g = app.Categories.SelfieFilters;
-			db.expanded = false;
-			db.text = L["SELFIE_FILTERS_HEADER"];
-			db.icon = app.asset("Category_SelfieFilters");
-			db.lvl = 40;	-- used to be 100
-			table.insert(g, db);
-		end
-
 		-- Gear Sets
 		if app.Categories.GearSets then
 			db = {};

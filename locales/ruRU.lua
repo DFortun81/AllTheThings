@@ -523,7 +523,6 @@ local L = app.L;
 		L.SPLIT = "Отдельные Сложности";
 		L.REQUIRES_LEVEL = "Требуется Уровень";
 		L.SECRETS_HEADER = "Секреты";
-		L.SELFIE_FILTERS_HEADER = "Фильтры СЕЛФИ";
 		L.LIMITED_QUANTITY = "Предмет имеется в ограниченном количестве и может не всегда быть доступен у торговца.";
 		L.SOURCE_ID_MISSING = "Пожалуйста, сообщите в канале #errors на нашем сервере Discord, где Вы нашли эту вещь!";
 

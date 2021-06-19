@@ -525,7 +525,6 @@ local L = app.L;
 		L["SPLIT"] = "Per Difficulty"
 		L["REQUIRES_LEVEL"] = "要求等级" -- Requires Level
 		L["SECRETS_HEADER"] = "解密"
-		L["SELFIE_FILTERS_HEADER"] = "自拍滤镜"
 		L["LIMITED_QUANTITY"] = "此物品有数量限制，在商人处并非总是可见。"
 		L.SOURCE_ID_MISSING = "请在#errors中向ATT Discord报告此物品及其获取地点!";
 
