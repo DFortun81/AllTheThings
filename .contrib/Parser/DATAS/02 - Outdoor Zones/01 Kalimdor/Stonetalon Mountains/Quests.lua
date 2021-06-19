@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(65, {	-- Stonetalon Mountains
+		m(STONETALON_MOUNTAINS, {
 			n(QUESTS, {
 				q(1071,  {	-- A Gnome's Respite
 					["u"] = REMOVED_FROM_GAME,
@@ -15,13 +15,13 @@ _.Zones =
 				}),
 				q(25837, {	-- A Proper Peace Offerin'
 					["provider"] = { "n", 41278 },	-- "Cookie" McWeaksauce
-					["coord"] = { 70.9, 79.7, 65 },
+					["coord"] = { 70.9, 79.7, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25834,	-- Death by Proxy
 				}),
 				q(25821, {	-- A Special Kind of Job
 					["provider"] = { "n", 41277 },	-- Lieutenant Paulson
-					["coord"] = { 72.1, 75.9, 65 },
+					["coord"] = { 72.1, 75.9, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						25808,	-- Is This Thing On?
@@ -31,13 +31,13 @@ _.Zones =
 				}),
 				q(25852, {	-- All's Clear
 					["provider"] = { "n", 41229 },	-- Force Commander Valen
-					["coord"] = { 71.0, 79.7, 65 },
+					["coord"] = { 71.0, 79.7, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25851,	-- Dances with Grimtotem
 				}),
 				q(26073, {	-- All's Quiet on the Southern Front
 					["provider"] = { "n", 3995 },	-- Witch Doctor Jin'Zil
-					["coord"] = { 71.1, 91.2, 65 },
+					["coord"] = { 71.1, 91.2, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						26067,	-- Jin'Zil's Blessing
@@ -46,13 +46,13 @@ _.Zones =
 				}),
 				q(26002, {	-- Alliance Attack Plans
 					["provider"] = { "n", 40901 },	-- Blastgineer Fuzzwhistle
-					["coord"] = { 73.2, 56.6, 65 },
+					["coord"] = { 73.2, 56.6, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26001,	-- The Missing Blastgineer
 				}),
 				q(26047, {	-- And That's Why They Call Them Peons...
 					["provider"] = { "n", 41992 },	-- Blastgineer Igore
-					["coord"] = { 67.2, 64.5, 65 },
+					["coord"] = { 67.2, 64.5, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26044,	-- Where Are the Parts?
 				}),
@@ -67,13 +67,13 @@ _.Zones =
 				}),
 				q(25766, {	-- Arcane Legacy
 					["provider"] = { "n", 40899 },	-- Arcanist Valdurian
-					["coord"] = { 58.6, 55.9, 65 },
+					["coord"] = { 58.6, 55.9, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25669,	-- Rumble in the Lumber...Mill
 				}),
 				q(25822, {	-- Armaments for War
 					["provider"] = { "n", 41229 },	-- Force Commander Valen
-					["coord"] = { 71.0, 79.7, 65 },
+					["coord"] = { 71.0, 79.7, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25845,	-- Terms of Service
 					["g"] = {
@@ -85,13 +85,13 @@ _.Zones =
 				}),
 				q(25930, {	-- Ascending the Vale
 					["provider"] = { "n", 41487 },	-- Hierophant Malyk
-					["coord"] = { 33.1, 59.5, 65 },
+					["coord"] = { 33.1, 59.5, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25925,	-- Thal'darah's Vengeance
 				}),
 				q(26010, {	-- Ashes to Ashes
 					["provider"] = { "n", 41023 },	-- Overlord Krom'gar
-					["coord"] = { 66.0, 63.7, 65 },
+					["coord"] = { 66.0, 63.7, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26004,	-- Krom'gar Fortress
 					["g"] = {
@@ -108,13 +108,13 @@ _.Zones =
 				}),
 				q(25914, {	-- Back to the Depths!
 					["provider"] = { "n", 41488 },	-- Sentinel Mistress Geleneth
-					["coord"] = { 39.6, 30.7, 65 },
+					["coord"] = { 39.6, 30.7, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25891,	-- Last Ditch Effort
 				}),
 				q(25999, {	-- Barrier to Entry
 					["provider"] = { "n", 34341 },	-- Saurboz
-					["coord"] = { 74.3, 47.7, 65 },
+					["coord"] = { 74.3, 47.7, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25945,	-- We're Here to Do One Thing, Maybe Two...
 					["g"] = {
@@ -126,24 +126,24 @@ _.Zones =
 				}),
 				q(26074, {	-- Beginning of the End
 					["provider"] = { "n", 41023 },	-- Overlord Krom'gar
-					["coord"] = { 66.1, 63.7, 65 },
+					["coord"] = { 66.1, 63.7, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26073,	-- All's Quiet on the Southern Front
 				}),
 				q(26098, {	-- Betrayal at the Grove
 					["provider"] = { "n", 42091 },	-- Orthus Cliffwalker
-					["coord"] = { 39.6, 46.4, 65 },
+					["coord"] = { 39.6, 46.4, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26097,	-- Proof of Lies
 				}),
 				q(26046, {	-- Between a Rock and a Hard Place
 					["provider"] = { "n", 41990 },	-- Scout Utvoch
-					["coord"] = { 67.0, 64.5, 65 },
+					["coord"] = { 67.0, 64.5, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26044,	-- Where Are the Parts?
 				}),
 				q(25730, {	-- BEWARE OF CRAGJAW!
-					["coord"] = { 65.0, 49.4, 65 },
+					["coord"] = { 65.0, 49.4, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 203186 },	-- STAY OUT!
 				--	["sourceQuest"] = 25621,	-- Field Test: Gnomecorder (may be available earlier, but definitely has a prereq)
@@ -156,7 +156,7 @@ _.Zones =
 					},
 				}),
 				q(26043, {	-- BEWARE OF CRAGJAW!
-					["coord"] = { 65.0, 49.4, 65 },
+					["coord"] = { 65.0, 49.4, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 203186 },	-- STAY OUT!
 					["sourceQuest"] = 26004,	-- Krom'gar Fortress
@@ -184,7 +184,7 @@ _.Zones =
 				}),
 				q(25768, {	-- Bombs Away: Mirkfallon Post!
 					["provider"] = { "n", 40896 },	-- Lord Fallowmere
-					["coord"] = { 59.5, 56.8, 65 },
+					["coord"] = { 59.5, 56.8, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25769,	-- Fallowmere Beckons
 					["g"] = {
@@ -205,7 +205,7 @@ _.Zones =
 					["sourceQuest"] = 25622,	-- Burn, Baby, Burn!
 				}),
 				q(25931, {	-- Brood of Seldarria
-					["coord"] = { 30.6, 70.4, 65 },
+					["coord"] = { 30.6, 70.4, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25930,	-- Ascending the Vale
 					["g"] = {
@@ -217,7 +217,7 @@ _.Zones =
 					},
 				}),
 				q(25622, {	-- Burn, Baby, Burn!
-					["coord"] = { 73.0, 46.6, 65 },
+					["coord"] = { 73.0, 46.6, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25621,	-- Field Test: Gnomecorder
 					["g"] = {
@@ -233,7 +233,7 @@ _.Zones =
 				}),
 				q(25767, {	-- Capturing Memories
 					["provider"] = { "n", 40900 },	-- Neophyte Starcrest
-					["coord"] = { 58.6, 55.9, 65 },
+					["coord"] = { 58.6, 55.9, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25669,	-- Rumble in the Lumber...Mill
 				}),
@@ -244,7 +244,7 @@ _.Zones =
 				}),
 				q(25652, {	-- Commandeer That Balloon!
 					["provider"] = { "n", 40879 },	-- Boog the "Gear Whisperer"
-					["coord"] = { 72.5, 61.4, 65 },
+					["coord"] = { 72.5, 61.4, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25650,	-- Orders from High Command
 					["g"] = {
@@ -260,13 +260,13 @@ _.Zones =
 				}),
 				q(26061, {	-- Da Voodoo: Ram Horns
 					["provider"] = { "n", 3995 },	-- Witch Doctor Jin'Zil
-					["coord"] = { 71.1, 91.2, 65 },
+					["coord"] = { 71.1, 91.2, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26059,	-- Eyes and Ears: Malaka'jin
 				}),
 				q(26062, {	-- Da Voodoo: Resonite Crystal
 					["provider"] = { "n", 3995 },	-- Witch Doctor Jin'Zil
-					["coord"] = { 71.1, 91.2, 65 },
+					["coord"] = { 71.1, 91.2, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						26061,	-- Da Voodoo: Ram Horns
@@ -275,13 +275,13 @@ _.Zones =
 				}),
 				q(26060, {	-- Da Voodoo: Stormer Heart
 					["provider"] = { "n", 3995 },	-- Witch Doctor Jin'Zil
-					["coord"] = { 71.1, 91.2, 65 },
+					["coord"] = { 71.1, 91.2, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26059,	-- Eyes and Ears: Malaka'jin
 				}),
 				q(25851, {	-- Dances with Grimtotem
 					["provider"] = { "n", 11858 },	-- Grundig Darkcloud
-					["coord"] = { 72.2, 83.7, 65 },
+					["coord"] = { 72.2, 83.7, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25848,	-- Downfall
 					["g"] = {
@@ -294,25 +294,25 @@ _.Zones =
 				}),
 				q(25834, {	-- Death by Proxy
 					["provider"] = { "n", 41229 },	-- Force Commander Valen
-					["coord"] = { 71.0, 79.7, 65 },
+					["coord"] = { 71.0, 79.7, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25821,	-- A Special Kind of Job
 				}),
 				q(25642, {	-- Don't Look Them in the Eyes
 					["provider"] = { "n", 40879 },	-- Boog the "Gear Whisperer"
-					["coord"] = { 72.5, 61.4, 65 },
+					["coord"] = { 72.5, 61.4, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25640,	-- Bombs Away: Windshear Mine!
 				}),
 				q(25848, {	-- Downfall
 					["provider"] = { "n", 11858 },	-- Grundig Darkcloud
-					["coord"] = { 72.2, 83.7, 65 },
+					["coord"] = { 72.2, 83.7, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25847,	-- Grimtotem Supremacy
 				}),
 				q(26026, {	-- Dream of a Better Tomorrow
 					["provider"] = { "n", 40907 },	-- Clarissa
-					["coord"] = { 66.0, 64.1, 65 },
+					["coord"] = { 66.0, 64.1, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26004,	-- Krom'gar Fortress
 				}),
@@ -332,19 +332,19 @@ _.Zones =
 				}),
 				q(26011, {	-- Enemy of the Horde: Marshal Paltrow
 					["provider"] = { "n", 40903 },	-- Spy-Mistress Anara
-					["coord"] = { 65.7, 63.2, 65 },
+					["coord"] = { 65.7, 63.2, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26004,	-- Krom'gar Fortress
 				}),
 				q(26059, {	-- Eyes and Ears: Malaka'jin
 					["provider"] = { "n", 41023 },	-- Overlord Krom'gar
-					["coord"] = { 66.1, 63.6, 65 },
+					["coord"] = { 66.1, 63.6, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26058,	-- In Defense of Krom'gar Fortress
 				}),
 				q(25769, {	-- Fallowmere Beckons
 					["provider"] = { "n", 40899 },	-- Arcanist Valdurian
-					["coord"] = { 58.6, 55.9, 65 },
+					["coord"] = { 58.6, 55.9, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						25766,	-- Arcane Legacy
@@ -353,19 +353,19 @@ _.Zones =
 				}),
 				q(26064, {	-- Fight On Their Stomachs
 					["provider"] = { "n", 3411 },	-- Denni'ka
-					["coord"] = { 72.0, 91.2, 65 },
+					["coord"] = { 72.0, 91.2, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26059,	-- Eyes and Ears: Malaka'jin
 				}),
 				q(26077, {	-- Final Delivery
 					["provider"] = { "n", 42033 },	-- Jibbly Rakit
-					["coord"] = { 52.9, 39.1, 65 },
+					["coord"] = { 52.9, 39.1, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26076,	-- Spy Infestation
 				}),
 				q(25662, {	-- Free Our Sisters
 					["provider"] = { "n", 40896 },	-- Lord Fallowmere
-					["coord"] = { 59.5, 56.8, 65 },
+					["coord"] = { 59.5, 56.8, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25652,	-- Commandeer That Balloon!
 				}),
@@ -401,19 +401,19 @@ _.Zones =
 				}),
 				q(25875, {	-- Gnome on the Inside
 					["provider"] = { "n", 41233 },	-- Scout Commander Barus
-					["coord"] = { 48.3, 51.8, 65 },
+					["coord"] = { 48.3, 51.8, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25768,	-- Bombs Away: Mirkfallon Post!
 				}),
 				q(25847, {	-- Grimtotem Supremacy
 					["provider"] = { "n", 11858 },	-- Grundig Darkcloud
-					["coord"] = { 72.2, 83.7, 65 },
+					["coord"] = { 72.2, 83.7, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25846,	-- Grundig Darkcloud, Chieftain of the Grimtotem
 				}),
 				q(25846, {	-- Grundig Darkcloud, Chieftain of the Grimtotem
 					["provider"] = { "n", 41229 },	-- Force Commander Valen
-					["coord"] = { 71.0, 79.7, 65 },
+					["coord"] = { 71.0, 79.7, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25822,	-- Armaments for War
 				}),
@@ -424,25 +424,25 @@ _.Zones =
 				}),
 				q(25938, {	-- Help for Desolace (mutually exclusive with Rerouted! and Hero's Call: Desolace!)
 					["provider"] = { "n", 41487 },	-- Hierophant Malyk
-					["coord"] = { 33.0, 59.6, 65 },
+					["coord"] = { 33.0, 59.6, STONETALON_MOUNTAINS },
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25935, {	-- Hungry Pups
 					["provider"] = { "n", 41638 },	-- Houndmaster Jonathan
-					["coord"] = { 32.3, 60.4, 65 },
+					["coord"] = { 32.3, 60.4, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25925,	-- Thal'darah's Vengeance
 				}),
 				q(26045, {	-- I Got Your Parts Right Here...
 					["provider"] = { "n", 41991 },	-- Sergeant Dontrag
-					["coord"] = { 67.1, 64.5, 65 },
+					["coord"] = { 67.1, 64.5, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26044,	-- Where Are the Parts?
 				}),
 				q(25739, {	-- If the Horde Don't Get You...
 					["provider"] = { "n", 40897 },	-- Northwatch Captain Kosak
-					["coord"] = { 59.4, 56.8, 65 },
+					["coord"] = { 59.4, 56.8, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25669,	-- Rumble in the Lumber...Mill
 				}),
@@ -454,13 +454,13 @@ _.Zones =
 				}),
 				q(26058, {	-- In Defense of Krom'gar Fortress
 					["provider"] = { "n", 40902 },	-- Chief Blastgineer Bombguts
-					["coord"] = { 66.2, 62.9, 65 },
+					["coord"] = { 66.2, 62.9, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26048,	-- Spare Parts Up in Here!
 				}),
 				q(26099, {	-- Is This Justice?
 					["provider"] = { "n", 42039 },	-- High Chieftain Cliffwalker
-					["coord"] = { 45.0, 32.7, 65 },
+					["coord"] = { 45.0, 32.7, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26098,	-- Betrayal at the Grove
 				}),
@@ -476,13 +476,13 @@ _.Zones =
 				}),
 				q(25876, {	-- It's Up There!
 					["provider"] = { "n", 41434 },	-- "Goblin" Pump Controller
-					["coord"] = { 53.6, 42.3, 65 },
+					["coord"] = { 53.6, 42.3, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25875,	-- Gnome on the Inside
 				}),
 				q(26067, {	-- Jin'Zil's Blessing
 					["provider"] = { "n", 3995 },	-- Witch Doctor Jin'Zil
-					["coord"] = { 71.1, 91.2, 65 },
+					["coord"] = { 71.1, 91.2, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26062,	-- Da Voodoo: Resonite Crystal
 				}),
@@ -497,7 +497,7 @@ _.Zones =
 				}),
 				q(25673, {	-- Just Ask Alice
 					["provider"] = { "n", 40908 },	-- Alice
-					["coord"] = { 58.5, 55.2, 65 },
+					["coord"] = { 58.5, 55.2, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25652,	-- Commandeer That Balloon?
 				}),
@@ -514,56 +514,56 @@ _.Zones =
 				}),
 				q(26004, {	-- Krom'gar Fortress
 					["provider"] = { "n", 34341 },	-- Saurboz
-					["coord"] = { 74.2, 47.7, 65 },
+					["coord"] = { 74.2, 47.7, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26002,	-- Alliance Attack Plans
 				}),
 				q(25891, {	-- Last Ditch Effort
 					["provider"] = { "n", 41482 },	-- Master Thal'darah
-					["coord"] = { 39.9, 33.5, 65 },
+					["coord"] = { 39.9, 33.5, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25889,	-- Save the Children!
 				}),
 				q(25809, {	-- Leave No Man Behind!
 					["provider"] = { "n", 41282 },	-- Corporal Wocard
-					["coord"] = { 72.0, 75.9, 65 },
+					["coord"] = { 72.0, 75.9, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25793,	-- The Deep Reaches
 				}),
 				q(26003, {	-- Lessons from the Lost Isles
 					["provider"] = { "n", 40926 },	-- Kilag Gorefang
-					["coord"] = { 74.4, 47.6, 65 },
+					["coord"] = { 74.4, 47.6, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25999,	-- Barrier to Entry
 				}),
 				q(26101, {	-- Might Makes Right
 					["provider"] = { "n", 41023 },	-- Overlord Krom'gar
-					["coord"] = { 66.1, 63.7, 65 },
+					["coord"] = { 66.1, 63.7, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26100,	-- The General is Dead
 				}),
 				q(28084, {	-- Might of the Krom'gar
 					["provider"] = { "n", 42028 },	-- Krom'gar Quartermaster
-					["coord"] = { 65.9, 64.1, 65 },
+					["coord"] = { 65.9, 64.1, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26004,	-- Krom'gar Fortress
 				}),
 				q(25649, {	-- Minx'll Fix It
 					["provider"] = { "n", 40879 },	-- Boog the "Gear Whisperer"
-					["coord"] = { 72.5, 61.4, 65 },
+					["coord"] = { 72.5, 61.4, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25647,	-- Illegible Orc Letter
 				}),
 				q(26028, {	-- Mr. D's Wild Ride
 					["provider"] = { "n", 40907 },	-- Clarissa
-					["coord"] = { 66.1, 64.2, 65 },
+					["coord"] = { 66.1, 64.2, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["description"] = "Warning: If you complete |cFFFFD700To Be Horde...|r, this quest cannot be completed.",
 					["sourceQuest"] = 26026,	-- Dream of a Better Tomorrow
 				}),
 				q(25728, {	-- Mr. P's Wild Ride
 					["provider"] = { "n", 40908 },	-- Alice
-					["coord"] = { 58.5, 55.2, 65 },
+					["coord"] = { 58.5, 55.2, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25673,	-- Just Ask Alice
 				}),
@@ -578,14 +578,14 @@ _.Zones =
 				}),
 				q(26134, {	-- Nothing Left for You Here
 					["provider"] = { "n", 42039 },	-- High Chieftain Cliffwalker
-					["coord"] = { 45.5, 33.7, 65 },
+					["coord"] = { 45.5, 33.7, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["sourceQuest"] = 26115,	-- To Be Horde...
 				}),
 				q(25877, {	-- No Time for Goodbyes!
 					["provider"] = { "n", 41434 },	-- "Goblin" Pump Controller
-					["coord"] = { 53.6, 42.3, 65 },
+					["coord"] = { 53.6, 42.3, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25876,	-- It's Up There!
 					["g"] = {
@@ -597,7 +597,7 @@ _.Zones =
 				}),
 				q(26069, {	-- Nura Pathfinder
 					["provider"] = { "n", 3995 },	-- Witch Doctor Jin'Zil
-					["coord"] = { 71.0, 91.2, 65 },
+					["coord"] = { 71.0, 91.2, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["sourceQuest"] = 26059,	-- Eyes and Ears: Malaka'jin
@@ -622,19 +622,19 @@ _.Zones =
 				}),
 				q(25650, {	-- Orders from High Command
 					["provider"] = { "n", 40881 },	-- Minx
-					["coord"] = { 70.7, 63.0, 65 },
+					["coord"] = { 70.7, 63.0, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25649,	-- Minx'll Fix It
 				}),
 				q(25741, {	-- Preparations for the Future
 					["provider"] = { "n", 40898 },	-- Alithia Fallowmere
-					["coord"] = { 59.0, 56.4, 65 },
+					["coord"] = { 59.0, 56.4, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25669,	-- Rumble in the Lumber...Mill
 				}),
 				q(26097, {	-- Proof of Lies
 					["provider"] = { "n", 42039 },	-- High Chieftain Cliffwalker
-					["coord"] = { 45.0, 32.7, 65 },
+					["coord"] = { 45.0, 32.7, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26082,	-- To Battlescar!
 				}),
@@ -645,7 +645,7 @@ _.Zones =
 				}),
 				q(25913, {	-- Putting Them to Rest
 					["provider"] = { "n", 41488 },	-- Sentinel Mistress Geleneth
-					["coord"] = { 39.6, 30.7, 65 },
+					["coord"] = { 39.6, 30.7, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25891,	-- Last Ditch Effort
 				}),
@@ -671,7 +671,7 @@ _.Zones =
 				}),
 				q(26066, {	-- Reinforcements...
 					["provider"] = { "n", 42023 },	-- Subjugator Devo
-					["coord"] = { 71.1, 91.1, 65 },
+					["coord"] = { 71.1, 91.1, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						26061,	-- Da Voodoo: Ram Horns
@@ -680,13 +680,13 @@ _.Zones =
 				}),
 				q(26020, {	-- Report to Bombgutz
 					["provider"] = { "n", 41023 },	-- Overlord Krom'gar
-					["coord"] = { 66.2, 63.6, 65 },
+					["coord"] = { 66.2, 63.6, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26010,	-- Ashes to Ashes
 				}),
 				q(25615, {	-- Return to Stardust
 					["provider"] = { "n", 39256 },	-- Kalen Trueshot
-					["coord"] = { 71.8, 45.6, 65 },
+					["coord"] = { 71.8, 45.6, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25614,	-- The Only Way Down is in a Body Bag
 					["g"] = {
@@ -698,7 +698,7 @@ _.Zones =
 				}),
 				q(25669, {	-- Rumble in the Lumber... Mill
 					["provider"] = { "n", 41071 },	-- Huntress Illiona
-					["coord"] = { 66.2, 54.5, 65 },
+					["coord"] = { 66.2, 54.5, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25662,	-- Free Our Sisters
 					["g"] = {
@@ -710,13 +710,13 @@ _.Zones =
 				}),
 				q(25844, {	-- Sating the Savage Beast
 					["provider"] = { "n", 41278 },	-- "Cookie" McWeaksauce
-					["coord"] = { 70.9, 79.7, 65 },
+					["coord"] = { 70.9, 79.7, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25837,	-- A Proper Peace Offerin'
 				}),
 				q(25889, {	-- Save the Children!
 					["provider"] = { "n", 41482 },	-- Master Thal'darah
-					["coord"] = { 39.9, 33.5, 65 },
+					["coord"] = { 39.9, 33.5, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25880,	-- Warn Master Thal'darah
 					["g"] = {
@@ -728,7 +728,7 @@ _.Zones =
 				}),
 				q(25878, {	-- Schemin' That Sabotage
 					["provider"] = { "n", 41441 },	-- Scout Mistress Yvonia
-					["coord"] = { 48.4, 51.8, 65 },
+					["coord"] = { 48.4, 51.8, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25768,	-- Bombs Away: Mirkfallon Post!
 					["g"] = {
@@ -740,7 +740,7 @@ _.Zones =
 				}),
 				q(26009, {	-- Seek and Destroy
 					["provider"] = { "n", 41023 },	-- Overlord Krom'gar
-					["coord"] = { 66.1, 63.7, 65 },
+					["coord"] = { 66.1, 63.7, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["maxReputation"] = { 76, EXALTED },
@@ -750,7 +750,7 @@ _.Zones =
 				}),
 				q(25912, {	-- Seen Better Days
 					["provider"] = { "n", 41486 },	-- Elder Sareth'na
-					["coord"] = { 39.6, 30.7, 65 },
+					["coord"] = { 39.6, 30.7, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25891,	-- Last Ditch Effort
 					["g"] = {
@@ -763,7 +763,7 @@ _.Zones =
 				}),
 				q(25811, {	-- Shuttin Her Down
 					["provider"] = { "n", 41276 },	-- Steeltoe McGee
-					["coord"] = { 72.0, 75.9, 65 },
+					["coord"] = { 72.0, 75.9, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25793,	-- The Deep Reaches
 					["g"] = {
@@ -773,7 +773,7 @@ _.Zones =
 				}),
 				q(26048, {	-- Spare Parts Up In Here!
 					["provider"] = { "n", 41991 },	-- Sergeant Dontrag
-					["coord"] = { 67.1, 64.5, 65 },
+					["coord"] = { 67.1, 64.5, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						26047,	-- And That's Why They Call Them Peons...
@@ -789,7 +789,7 @@ _.Zones =
 				}),
 				q(26076, {	-- Spy Infestation
 					["provider"] = { "n", 42033 },	-- Jibbly Rakit
-					["coord"] = { 52.9, 39.1, 65 },
+					["coord"] = { 52.9, 39.1, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26075,	-- The Turd Problem
 					["g"] = {
@@ -805,19 +805,19 @@ _.Zones =
 				}),
 				q(25765, {	-- Tell 'Em Koko Sent You
 					["provider"] = { "n", 40897 },	-- Northwatch Captain Kosak
-					["coord"] = { 59.4, 56.8, 65 },
+					["coord"] = { 59.4, 56.8, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25739,	-- If the Horde Don't Get You...
 				}),
 				q(25845, {	-- Terms of Service
 					["provider"] = { "n", 41350 },	-- Ton Windbow
-					["coord"] = { 72.6, 81.0, 65 },
+					["coord"] = { 72.6, 81.0, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25844,	-- Sating the Savage Beast
 				}),
 				q(1154,  {	-- Test of Lore
 					["provider"] = { "n", 4489 },	-- Braug Dimspirit
-					["coord"] = { 78.6, 45.6, 65 },
+					["coord"] = { 78.6, 45.6, STONETALON_MOUNTAINS },
 					["sourceQuest"] = 1152,	-- Test of Lore
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
@@ -825,7 +825,7 @@ _.Zones =
 				}),
 				q(6627,  {	-- Test of Lore
 					["provider"] = { "n", 4489 },	-- Braug Dimspirit
-					["coord"] = { 78.6, 45.6, 65 },
+					["coord"] = { 78.6, 45.6, STONETALON_MOUNTAINS },
 					["sourceQuest"] = 1154,	-- Test of Lore
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
@@ -833,7 +833,7 @@ _.Zones =
 				}),
 				q(1159,  {	-- Test of Lore
 					["provider"] = { "n", 4489 },	-- Braug Dimspirit
-					["coord"] = { 78.6, 45.6, 65 },
+					["coord"] = { 78.6, 45.6, STONETALON_MOUNTAINS },
 					["sourceQuest"] = 6627,	-- Test of Lore
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
@@ -841,13 +841,13 @@ _.Zones =
 				}),
 				q(25925, {	-- Thal'darah's Vengeance
 					["provider"] = { "n", 41482 },	-- Master Thal'darah
-					["coord"] = { 39.9, 33.5, 65 },
+					["coord"] = { 39.9, 33.5, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25891,	-- Last Ditch Effort
 				}),
 				q(25793, {	-- The Deep Reaches
 					["provider"] = { "n", 41229 },	-- Force Commander Valen
-					["coord"] = { 71.0, 79.7, 65 },
+					["coord"] = { 71.0, 79.7, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25765,	-- Tell 'Em Koko Sent You
 				}),
@@ -863,31 +863,31 @@ _.Zones =
 				}),
 				q(26100, {	-- The General is Dead
 					["provider"] = { "n", 42047 },	-- Masha Cliffwalker
-					["coord"] = { 45.1, 32.7, 65 },
+					["coord"] = { 45.1, 32.7, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26099,	-- Is This Justice?
 				}),
 				q(25879, {	-- The Lumbering Oaf Problem
 					["provider"] = { "n", 41441 },	-- Scout Mistress Yvonia
-					["coord"] = { 48.4, 51.8, 65 },
+					["coord"] = { 48.4, 51.8, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25768,	-- Bombs Away: Mirkfallon Post!
 				}),
 				q(26001, {	-- The Missing Blastgineer
 					["provider"] = { "n", 34341 },	-- Saurboz
-					["coord"] = { 74.2, 47.7, 65 },
+					["coord"] = { 74.2, 47.7, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25999,	-- Barrier to Entry
 				}),
 				q(25614, {	-- The Only Way Down is in a Body Bag
 					["provider"] = { "n", 39256 },	-- Kalen Trueshot
-					["coord"] = { 71.8, 45.7, 65 },
+					["coord"] = { 71.8, 45.7, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25613,	-- Do Yourself a Favor
 				}),
 				q(26063, {	-- The Queen and Her Court (aa?)
 					["provider"] = { "n", 11821 },	-- Darn Talongrip
-					["coord"] = { 64.9, 82.5, 65 },
+					["coord"] = { 64.9, 82.5, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(57493),	-- Darn Legguards
@@ -896,25 +896,25 @@ _.Zones =
 				}),
 				q(26075, {	-- The Turd Problem
 					["provider"] = { "n", 42033 },	-- Jibbly Rakit
-					["coord"] = { 52.9, 39.1, 65 },
+					["coord"] = { 52.9, 39.1, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26074,	-- Beginning of the End
 				}),
 				q(25823, {	-- The Unrelenting Horde
 					["provider"] = { "n", 41229 },	-- Force Commander Valen
-					["coord"] = { 71.0, 79.7, 65 },
+					["coord"] = { 71.0, 79.7, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25845,	-- Terms of Service
 				}),
 				q(25806, {	-- They Put the Assass in... Never Mind
 					["provider"] = { "n", 41277 },	-- Lieutenant Paulson
-					["coord"] = { 72.0, 75.9, 65 },
+					["coord"] = { 72.0, 75.9, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25793,	-- The Deep Reaches
 				}),
 				q(25671, {	-- Thinning the Horde
 					["provider"] = { "n", 40896 },	-- Lord Fallowmere
-					["coord"] = { 59.5, 56.8, 65 },
+					["coord"] = { 59.5, 56.8, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["description"] = "This quest cannot be completed after level 30, after reaching Exalted with Darnassus, or after finishing the Stonetalon Mountains questline.",
@@ -922,7 +922,7 @@ _.Zones =
 				}),
 				q(26082, {	-- To Battlescar!
 					["provider"] = { "n", 42050 },	-- General Grebo
-					["coord"] = { 45.1, 32.7, 65 },
+					["coord"] = { 45.1, 32.7, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26077,	-- Final Delivery
 					["g"] = {
@@ -934,7 +934,7 @@ _.Zones =
 				}),
 				q(26115, {	-- To Be Horde...
 					["provider"] = { "n", 42106 },	-- Overlord Krom'gar
-					["coord"] = { 45.6, 34.1, 65 },
+					["coord"] = { 45.6, 34.1, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26101,	-- Might Makes Right
 					["g"] = {
@@ -949,24 +949,24 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 11862 },	-- Tsunaman
 					["races"] = HORDE_ONLY,
-					["coord"] = { 47.2, 64.3, 65 },
+					["coord"] = { 47.2, 64.3, STONETALON_MOUNTAINS },
 					["isBreadcrumb"] = true,
 				}),
 				q(25880, {	-- Warn Master Thal'darah
 					["provider"] = { "n", 41233 },	-- Scout Commander Barus
-					["coord"] = { 48.4, 51.8, 65 },
+					["coord"] = { 48.4, 51.8, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25877,	-- No Time for Goodbyes!
 				}),
 				q(26044, {	-- Where Are the Parts?
 					["provider"] = { "n", 40902 },	-- Chief Blastgineer Bombgutz
-					["coord"] = { 66.2, 62.9, 65 },
+					["coord"] = { 66.2, 62.9, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26020,	-- Report to Bombgutz
 				}),
 				q(25646, {	-- Windshear Mine Cleanup
 					["provider"] = { "n", 40973 },	-- Sentinal Heliana
-					["coord"] = { 72.5, 61.4, 65 },
+					["coord"] = { 72.5, 61.4, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25640,	-- Bombs Away: Windshear Mine
 					["g"] = {
@@ -979,7 +979,7 @@ _.Zones =
 				}),
 				q(25934, {	-- World First: Gnomegen
 					["provider"] = { "n", 41664 },	-- Salsbury the "Help"
-					["coord"] = { 33.1, 59.5, 65 },
+					["coord"] = { 33.1, 59.5, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25925,	-- Thal'darah's Vengeance
 				}),

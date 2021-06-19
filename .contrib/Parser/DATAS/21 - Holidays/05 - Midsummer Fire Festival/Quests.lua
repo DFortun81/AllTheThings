@@ -324,10 +324,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11780, {	-- Desecrate this Fire! — Stonetalon Mountains
 				["isYearly"] = true,
 				["provider"] = { "o", 187968 },	-- Horde Bonfire
-				["coord"] = { 53.0, 62.4, 65 },
+				["coord"] = { 53.0, 62.4, STONETALON_MOUNTAINS },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
-				["maps"] = { 65 },	-- Stonetalon Mountains
+				["maps"] = { STONETALON_MOUNTAINS },
 			}),
 			q(13455, {	-- Desecrate this Fire! — Storm Peaks
 				["isYearly"] = true,
@@ -734,10 +734,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(28915, {	-- Desecrate this Fire! — Stonetalon Mountains
 				["isYearly"] = true,
 				["provider"] = { "o", 207987 },	-- Alliance Bonfire
-				["coord"] = { 49.6, 51.1, 65 },
+				["coord"] = { 49.6, 51.1, STONETALON_MOUNTAINS },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-				["maps"] = { 65 },	-- Stonetalon Mountains
+				["maps"] = { STONETALON_MOUNTAINS },
 			}),
 			q(13446, {	-- Desecrate this Fire! — Storm Peaks
 				["isYearly"] = true,
@@ -1156,9 +1156,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(28928, {	-- Honor the Flame — Stonetalon Mountains
 				["provider"] = { "n", 51588 },	-- Stonetalon Mountains Flame Warden
 				["isYearly"] = true,
-				["coord"] = { 49.0, 51.0, 65 },
+				["coord"] = { 49.0, 51.0, STONETALON_MOUNTAINS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 65 },	-- Stonetalon Mountains
+				["maps"] = { STONETALON_MOUNTAINS },
 			}),
 			q(13490, {	-- Honor the Flame — Storm Peaks
 				["provider"] = { "n", 32806 },	-- Storm Peaks Flame Warden
@@ -1550,9 +1550,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11856, {	-- Honor the Flame — Stonetalon Mountains
 				["provider"] = { "n", 25940 },	-- Stonetalon Flame Keeper
 				["isYearly"] = true,
-				["coord"] = { 52.9, 62.5, 65 },
+				["coord"] = { 52.9, 62.5, STONETALON_MOUNTAINS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 65 },	-- Stonetalon Mountains
+				["maps"] = { STONETALON_MOUNTAINS },
 			}),
 			q(13498, {	-- Honor the Flame — Storm Peaks
 				["provider"] = { "n", 32814 },	-- Storm Peaks Flame Keeper
@@ -1920,7 +1920,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					TELDRASSIL,
 					DARKSHORE,
 					ASHENVALE,
-					65,		-- Stonetalon Mountains
+					STONETALON_MOUNTAINS,
 					DESOLACE,
 					DUSTWALLOW_MARSH,
 					TANARIS,

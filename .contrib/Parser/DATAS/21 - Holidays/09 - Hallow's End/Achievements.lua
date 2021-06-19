@@ -588,20 +588,20 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { SOUTHERN_BARRENS },
 										}),
 										crit(19, {	-- Stonetalon Mountains, Farwatcher's Glen
-											["coord"] = { 31.5, 60.7, 65 },
-											["maps"] = { 65 },	-- Stonetalon Mountains
+											["coord"] = { 31.5, 60.7, STONETALON_MOUNTAINS },
+											["maps"] = { STONETALON_MOUNTAINS },
 										}),
 										crit(20, {	-- Stonetalon Mountains, Northwatch Expedition Base
-											["coord"] = { 71.0, 79.1, 65 },
-											["maps"] = { 65 },	-- Stonetalon Mountains
+											["coord"] = { 71.0, 79.1, STONETALON_MOUNTAINS },
+											["maps"] = { STONETALON_MOUNTAINS },
 										}),
 										crit(21, {	-- Stonetalon Mountains, Thal'darah Overlook
-											["coord"] = { 39.5, 32.8, 65 },
-											["maps"] = { 65 },	-- Stonetalon Mountains
+											["coord"] = { 39.5, 32.8, STONETALON_MOUNTAINS },
+											["maps"] = { STONETALON_MOUNTAINS },
 										}),
 										crit(22, {	-- Stonetalon Mountains, Windshear Hold
-											["coord"] = { 59.1, 56.3, 65 },
-											["maps"] = { 65 },	-- Stonetalon Mountains
+											["coord"] = { 59.1, 56.3, STONETALON_MOUNTAINS },
+											["maps"] = { STONETALON_MOUNTAINS },
 										}),
 										crit(23, {	-- Tanaris, Bootlegger Outpost
 											["coord"] = { 55.7, 60.9, TANARIS },
@@ -721,12 +721,12 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { SOUTHERN_BARRENS },
 										}),
 										crit(24, {	-- Stonetalon Mountains, Krom'gar Fortress
-											["coord"] = { 66.5, 64.2, 65 },
-											["maps"] = { 65 },	-- Stonetalon Mountains
+											["coord"] = { 66.5, 64.2, STONETALON_MOUNTAINS },
+											["maps"] = { STONETALON_MOUNTAINS },
 										}),
 										crit(25, {	-- Stonetalon Mountains, Sun Rock Retreat
-											["coord"] = { 50.4, 63.8, 65 },
-											["maps"] = { 65 },	-- Stonetalon Mountains
+											["coord"] = { 50.4, 63.8, STONETALON_MOUNTAINS },
+											["maps"] = { STONETALON_MOUNTAINS },
 										}),
 										crit(26, {	-- Tanaris, Bootlegger Outpost
 											["coord"] = { 55.7, 60.9, TANARIS },

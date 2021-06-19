@@ -1475,63 +1475,63 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(29013, {	-- Candy Bucket — Stonetalon Mountains, Farwatcher's Glen, Alliance
 				["isYearly"] = true,
-				["coord"] = { 31.5, 60.7, 65 },
+				["coord"] = { 31.5, 60.7, STONETALON_MOUNTAINS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 65 },	-- Stonetalon Mountains
+				["maps"] = { STONETALON_MOUNTAINS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(29009, {	-- Candy Bucket — Stonetalon Mountains, Krom'gar Fortress
 				["isYearly"] = true,
-				["coord"] = { 66.5, 64.2, 65 },
+				["coord"] = { 66.5, 64.2, STONETALON_MOUNTAINS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 65 },	-- Stonetalon Mountains
+				["maps"] = { STONETALON_MOUNTAINS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(29010, {	-- Candy Bucket — Stonetalon Mountains, Northwatch Expedition Base, Alliance
 				["isYearly"] = true,
-				["coord"] = { 71.0, 79.1, 65 },
+				["coord"] = { 71.0, 79.1, STONETALON_MOUNTAINS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 65 },	-- Stonetalon Mountains
+				["maps"] = { STONETALON_MOUNTAINS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12347, {	-- Candy Bucket — Stonetalon Mountains, Stonetalon Peak, Alliance
 				["isYearly"] = true,
-				["coord"] = { 40.6, 17.7, 65 },
+				["coord"] = { 40.6, 17.7, STONETALON_MOUNTAINS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 65 },	-- Stonetalon Mountains
+				["maps"] = { STONETALON_MOUNTAINS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12378, {	-- Candy Bucket — Stonetalon Mountains, Sun Rock Retreat, Horde
 				["isYearly"] = true,
-				["coord"] = { 50.4, 63.8, 65 },
+				["coord"] = { 50.4, 63.8, STONETALON_MOUNTAINS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 65 },	-- Stonetalon Mountains
+				["maps"] = { STONETALON_MOUNTAINS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(29012, {	-- Candy Bucket — Stonetalon Mountains, Thal'darah Overlook, Alliance
 				["isYearly"] = true,
-				["coord"] = { 39.5, 32.8, 65 },
+				["coord"] = { 39.5, 32.8, STONETALON_MOUNTAINS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 65 },	-- Stonetalon Mountains
+				["maps"] = { STONETALON_MOUNTAINS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(29011, {	-- Candy Bucket — Stonetalon Mountains, Windshear Hold, Alliance
 				["isYearly"] = true,
-				["coord"] = { 59.1, 56.3, 65 },
+				["coord"] = { 59.1, 56.3, STONETALON_MOUNTAINS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 65 },	-- Stonetalon Mountains
+				["maps"] = { STONETALON_MOUNTAINS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},

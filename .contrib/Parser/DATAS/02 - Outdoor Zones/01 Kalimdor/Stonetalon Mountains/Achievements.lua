@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(65, {	-- Stonetalon Mountains
+		m(STONETALON_MOUNTAINS, {
 			n(ACHIEVEMENTS, {
 				ach(4936, {	-- Stonetalon Mountains Quests (A)
 					["races"] = ALLIANCE_ONLY,

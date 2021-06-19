@@ -156,9 +156,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { SOUTHERN_BARRENS },
 									}),
 									crit(10, {	-- Stonetalon Mountains
-										["coord"] = { 49.0, 51.0, 65 },
+										["coord"] = { 49.0, 51.0, STONETALON_MOUNTAINS },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 65 },	-- Stonetalon Mountains
+										["maps"] = { STONETALON_MOUNTAINS },
 									}),
 									crit(11, {	-- Tanaris
 										["coord"] = { 52.0, 29.0, TANARIS },
@@ -431,9 +431,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { SOUTHERN_BARRENS },
 									}),
 									crit(11, {	-- Stonetalon Mountains
-										["coord"] = { 53.0, 62.4, 65 },
+										["coord"] = { 53.0, 62.4, STONETALON_MOUNTAINS },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 65 },	-- Stonetalon Mountains
+										["maps"] = { STONETALON_MOUNTAINS },
 									}),
 									crit(12, {	-- Tanaris
 										["coord"] = { 49.8, 28.2, TANARIS },
@@ -857,9 +857,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { SOUTHERN_BARRENS },
 									}),
 									crit(11, {	-- Stonetalon Mountains
-										["coord"] = { 52.9, 62.5, 65 },
+										["coord"] = { 52.9, 62.5, STONETALON_MOUNTAINS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 65 },	-- Stonetalon Mountains
+										["maps"] = { STONETALON_MOUNTAINS },
 									}),
 									crit(12, {	-- Tanaris
 										["coord"] = { 49.8, 27.9, TANARIS },
@@ -1132,9 +1132,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { SOUTHERN_BARRENS },
 									}),
 									crit(10, {	-- Stonetalon Mountains
-										["coord"] = { 49.6, 51.1, 65 },
+										["coord"] = { 49.6, 51.1, STONETALON_MOUNTAINS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 65 },	-- Stonetalon Mountains
+										["maps"] = { STONETALON_MOUNTAINS },
 									}),
 									crit(11, {	-- Tanaris
 										["coord"] = { 52.7, 30.0, TANARIS },
