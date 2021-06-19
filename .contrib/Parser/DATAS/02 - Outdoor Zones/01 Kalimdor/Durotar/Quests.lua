@@ -206,51 +206,259 @@ _.Zones =
 						"removed 4.0.3.10000",
 					},
 				}),
+				q(794, {	-- Burning Blade Medallion
+					["qg"] = 3145,	-- Zureetha Fargaze
+					["sourceQuests"] = {
+						792,	-- Vile Familiars
+						1499,	-- Vile Familiars (Part 2 - Warlocks only!)
+					},
+					["coord"] = { 42.85, 69.14, DUROTAR },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 4859, 1 },	-- Burning Blade Medallion
+					},
+					["g"] = {
+						objective(1, {	-- 0/1 Burning Blade Medallion
+							["provider"] = { "i", 4859 },	-- Burning Blade Medallion
+							["cr"] = 3183,	-- Yarrog Baneshadow
+							["coord"] = { 42.8, 52.6, DUROTAR },
+						}),
+						i(4921),	-- Dust-covered Leggings
+						i(4922),	-- Jagged Chain Vest
+						i(6713),	-- Ripped Pants
+					},
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000", -- Can be wrong according to wowhead comments, but wowpedia says removed 4.0.3.
+					},
+				}),
 				q(832, {	-- Burning Shadows
-					["u"] = REMOVED_FROM_GAME,
+					["qg"] = 4903,	-- Eye of Burning Shadow
+					["coord"] = { 51.78, 9.56, DUROTAR },
+					["maps"] = { ORGRIMMAR },
+					["cr"] = 3204,	-- Gazz'uz
+					["races"] = HORDE_ONLY,
+					["lvl"] = 4,
+					["g"] = {
+						objective(1, {	-- 0/1 Eye of Burning Shadow
+							["provider"] = { "i", 4903 },	-- Eye of Burning Shadow
+						}),
+					},
+					["timeline"] = {
+						"added 1.11.1.10958",
+						"removed 4.0.3.10000",
+					},
 				}),
 				q(25924, {	-- Call of Duty
-					["provider"] = { "n", 41621 },	-- Commander Thorak
+					["qg"] = 41621,	-- Commander Thorak
 					["coord"] = { 55.9, 12.3, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						28816,	-- To the Depths
 						27718,	-- Warchief's Command: Vashj'ir!
 					},
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
-				q(791,   {	-- Carry Your Weight
-					["u"] = REMOVED_FROM_GAME,
+				q(1516, {	-- Call of Earth (1/3)
+					["qg"] = 5887,	-- Canaga Earthcaller
+					["coord"] = { 42.4, 69.0, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3147 },	-- Furl Scornbrow
+					["classes"] = { SHAMAN },
+					["altQuests"] = {
+						1519, -- Call to Earth (1/3 Mulgore)
+					},
+					["lvl"] = 4,
+					["g"] = {
+						objective(1, {	-- 0/2 Felstalker Hoof
+							["provider"] = { "i", 6640, 2 },	-- Felstalker Hoof
+							["cr"] = 3102,
+						}),
+					},
+					["timeline"] = {
+						"added 1.11.1.10958",
+						"removed 4.0.3.10000",
+					},
+				}),
+				q(1517, {	-- Call of Earth (2/3)
+					["qg"] = 5887,	-- Canaga Earthcaller
+					["sourceQuest"] = 1516,	-- Call of Earth (1/3)
+					["coord"] = { 42.4, 69.0, DUROTAR },
+					["races"] = HORDE_ONLY,
+					["classes"] = { SHAMAN },
+					["altQuests"] = {
+						1520, -- Call to Earth (2/3 Mulgore)
+					},
+					["lvl"] = 4,
+					["groups"] = {
+						objective(1, {	-- 0/1 Earth Sapta
+							["provider"] = { "i", 6635, 1 },	-- Earth Sapta
+						}),
+					},
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
+				}),
+				q(1518, {	-- Call of Earth (3/3)
+					["qg"] = 5891,	-- Minor Manifestation of Earth
+					["sourceQuest"] = 1517,	-- Call of Earth (2/3)
+					["coord"] = { 44.0, 76.0, DUROTAR },
+					["races"] = HORDE_ONLY,
+					["classes"] = { SHAMAN },
+					["altQuests"] = {
+						1521, -- Call to Earth (3/3 Mulgore)
+					},
+					["lvl"] = 4,
+					["groups"] = {
+						objective(1, {	-- 0/1 Rough Quartz
+							["provider"] = { "i", 6656, 1 },	-- Rough Quartz
+						}),
+						recipe(8071),	-- Stoneskin Totem
+						i(5175, {	-- Earth Totem
+							["description"] = "You must keep this in your bags forever.",
+						}),
+					},
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
+				}),
+				q(791, {	-- Carry Your Weight
+					["qg"] = 3147,	-- Furl Scornbrow
+					["coord"] = { 49.8, 40.4, DUROTAR },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 4870, 8 },	-- Canvas Scraps
+					},
+					["lvl"] = 4,
+					["g"] = {
+						objective(1, {	-- 0/8 Canvas Scraps
+							["provider"] = { "i", 4870, 8 },	-- Canvas Scraps
+							["crs"] = {
+								3128,	-- Kul Tiras Sailor
+								3129,	-- Kul Tiras Marine
+								3119,	-- Kolkar Drudge
+								5809,	-- Watch Commander Zalaphil
+								3120,	-- Kolkar Outrunner
+								3192,	-- Lieutenant Benedict
+								5808,	-- Warlord Kolkanis
+							},
+						}),
+						i(11845),	-- Handmade Leather Bag
+					},
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
 				}),
 				q(25170, {	-- Cleaning Up the Coastline
-					["provider"] = { "n", 10578 },	-- Bom'bay
+					["qg"] = 10578,	-- Bom'bay
 					["coord"] = { 55.6, 75.2, DUROTAR },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, { -- 0/8 Crawler Mucus
+							["provider"] = { "i", 4888 }, -- Crawler Mucus
+							["crs"] = {
+								3107,	-- Mature Surf Crawler
+								3108,	-- Encrusted Surf Crawler
+								39004,	-- Pygmy Surf Crawler
+								3106,	-- Surf Crawler
+							},
+						}),
+					},
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(840,   {	-- Conscript of the Horde
-					["provider"] = { "n", 3336 },	-- Takrin Pathseeker
-					["lvl"] = 10,
+					["qg"] = 3336,	-- Takrin Pathseeker
+					["lvl"] = lvlsquish(10, 5, 10),
 					["coord"] = { 50.8, 43.5, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/1 Recruitment Letter
+							["provider"] = { "i", 4992 },	-- Recruitment Letter
+						}),
+					},
+					["timeline"] = {
+						"added 1.11.1.25864",
+					},
 				}),
-				q(806,   {	-- Dark Storms
-					["u"] = REMOVED_FROM_GAME,
+				q(842, {	-- Crossroads Conscription
+					["qg"] = 3337,	-- Kargal Battlescar
+					["sourceQuest"] = 840,	-- Conscript of the Horde
+					["coord"] = { 62.26, 19.37, THE_BARRENS },
+					["maps"] = { DUROTAR, THE_BARRENS },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3142 },	-- Orgnil Soulscar
+					["lvl"] = 10,
+					["groups"] = {
+						objective(1, {	-- 0/1 Signed Recruitment Letter
+							["provider"] = { "i", 4995, 1 },	-- Signed Recruitment Letter
+						}),
+					},
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
+				}),
+				q(788, {	-- Cutting Teeth
+					["qg"] = 3143,	-- Gornek
+					["sourceQuest"] = 4641,	-- Your Place In The World
+					["coord"] = { 42.06, 68.33, DUROTAR },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						objective(1, {	-- 0/8 Mottled Boar
+							["cr"] = 3098, -- Mottled Boar
+						}),
+						i(4915),	-- Soft Wool Boots
+						i(4914),	-- Battleworn Leather Gloves
+					},
+					["timeline"] = {
+						"added 1.11.1.10676",
+						"removed 4.0.3.10000",
+					},
+				}),
+				q(806, {	-- Dark Storms
+					["qg"] = 3142,	-- Orgnil Soulscar
 					["sourceQuest"] = 823,	-- Report to Orgnil
+					["coord"] = { 52.2, 43.2, DUROTAR },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 4,
+					["g"] = {
+						objective(1, {	-- 0/1 Fizzle's Claw
+							["provider"] = { "i", 4869, 1 },	-- Fizzle's Claw
+							["cr"] = 3203,	-- Fizzle Darkstorm
+							["coord"] = { 42.6, 26.4, DUROTAR },
+						}),
+						i(4942),	-- Tiger Hide Boots
+					},
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
 				}),
 				q(25444, {	-- Da Perfect Spies
-					["u"] = REMOVED_FROM_GAME,
+					["timeline"] = {
+					"added 3.3.3.11573",
+					"removed 4.0.1.10000",
+					},
 				}),
 				q(25480, {	-- Dance Of De Spirits
-					["u"] = REMOVED_FROM_GAME,
 					["sourceQuest"] = 25470,	-- Lady Of Da Tigers
+					["g"] = {
+						i(54653),	-- Darkspear Pride (TOY!)
+					},
+					["timeline"] = {
+						"added 3.3.3.11573",
+						"removed 4.0.1.10000",
+					},
 				}),
 				q(40607, {	-- Demons Among Us
-					["provider"] = { "n", 100873 },	-- Allari the Souleater
-					["lvl"] = 98,
+					["qg"] = 100873,	-- Allari the Souleater
+					["lvl"] = lvlsquish(98, 10, 98),
 					["coord"] = { 45.8, 15.1, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
@@ -260,10 +468,13 @@ _.Zones =
 						i(138776),	-- Accolade of the Banshee Queen
 						i(138775),	-- Token of the Banshee Queen
 					},
+					["timeline"] = {
+						"added 7.0.3.21655",
+					},
 				}),
 				q(40983, {	-- Demons Among Them
-					["provider"] = { "n", 100873 },	-- Allari the Souleater
-					["lvl"] = 98,
+					["qg"] = 100873,	-- Allari the Souleater
+					["lvl"] = lvlsquish(98, 10, 98),
 					["coord"] = { 45.8, 15.1, DUROTAR },
 					["races"] = { BLOODELF },
 					["classes"]= { DEMONHUNTER },
@@ -271,13 +482,38 @@ _.Zones =
 					["g"] = {
 						i(129104),	-- Brand of the Banshee Queen
 					},
+					["timeline"] = {
+						"added 7.0.1.20796",
+					},
+				}),
+				q(1463, {	-- Earth Sapta
+					["qg"] = 5887,	-- Canaga Earthcaller
+					["sourceQuest"] = 1516,	-- Call of Earth (1/3)
+					["coord"] = { 42.4, 69.0, DUROTAR },
+					["races"] = HORDE_ONLY,
+					["classes"] = { SHAMAN },
+					["repeatable"] = true,
+					["altQuests"] = {
+						1462, -- Earth Sapta (Mulgore)
+					},
+					["groups"] = {
+						i(6635),	-- Earth Sapta
+					},
+					["lvl"] = 4,
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
 				}),
 				q(40760, {	-- Emissary
 					["provider"] = { "n", 100866 },	-- Lady Sylvanas Windrunner
-					["lvl"] = 98,
+					["lvl"] = lvlsquish(98, 10, 98),
 					["coord"] = { 45.6, 15.8, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 40522 },	-- Fate of the Horde
+					["timeline"] = {
+						"added 7.0.3.21655",
+					},
 				}),
 				q(837,   {	-- Encroachment
 					["u"] = REMOVED_FROM_GAME,
