@@ -794,19 +794,14 @@ for key,value in pairs({
 			--TODO: [-652] = "Honor Gear Grievous Season",			-- Honor Gear Grievous Season
 			--TODO: [-651] = "Honor Gear Prideful Season",			-- Honor Gear Prideful Season
 
-	[-799] = "Fardeau de l'éternité",								-- Burden of Eternity
-
 	-- Secret Header [Maybe need to change the numbers again when I need more space for PvP -- sadidorf]
-		--TODO: [-806] = "Waist of Time",							-- Waist of Time
-		--TODO: [-807] = "Hivemind",								-- Hivemind
-		[-808] = "Molosse d’ombre lié",								-- Bound Shadehound
+		[-806] = "Boucle temporelle",								-- Waist of Time
 
 	-- Mechagon
 		--TODO: [-850] = "Mechanized Chest",						-- Mechanized Chest
 		--TODO: [-851] = "Irontide Chest",							-- Irontide Chest
 
 	-- 8.2 Neck Stuff
-		--TODO: [-852] = "Azerite Essences",						-- Azerite Essences
 		--TODO: [-853] = "All Roles",								-- All Roles
 		--TODO: [-854] = "DPS",										-- DPS
 		--TODO: [-855] = "Healers",									-- Healers

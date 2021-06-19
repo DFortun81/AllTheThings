@@ -845,19 +845,14 @@ for key,value in pairs({
 			--TODO: [-652] = "Honor Gear Grievous Season",			-- Honor Gear Grievous Season
 			--TODO: [-651] = "Honor Gear Prideful Season",			-- Honor Gear Prideful Season
 
-	[-799] = "不朽之责",												-- Burden of Eternity
-
 	-- Secret Header [Maybe need to change the numbers again when I need more space for PvP -- sadidorf]
-		[-806] = "钟示贤德腰带",										-- Waist of Time
-		[-807] = "主脑",												-- Hivemind
-		[-808] = "被缚的影犬",										-- Bound Shadehound
+	[-806] = "钟示贤德腰带",												-- Waist of Time
 
 	-- Mechagon
 		[-850] = "机械化的宝箱",										-- Mechanized Chest
 		[-851] = "铁潮宝箱",											-- Irontide Chest
 
 	-- 8.2 Neck Stuff
-		[-852] = "艾泽里特精华",										-- Azerite Essences
 		[-853] = "全部角色",											-- All Roles
 		--TODO: [-854] = "DPS",										-- DPS
 		[-855] = "治疗",												-- Healers

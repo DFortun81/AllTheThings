@@ -778,19 +778,14 @@ for key,value in pairs({
 			[-652] = "Доспехи Бездушного гладиатора за очки чести",		-- Honor Gear Grievous Season
 			[-651] = "Доспехи Гордого гладиатора за очки чести",		-- Honor Gear Prideful Season
 
-	[-799] = "Бремя вечности",										-- Burden of Eternity
-
 	-- Secret Header [Maybe need to change the numbers again when I need more space for PvP -- sadidorf]
-		[-806] = "Часовой пояс",									-- Waist of Time
-		[-807] = "Коллективный разум",								-- Hivemind
-		[-808] = "Подчиненная темная гончая",						-- Bound Shadehound
+	[-806] = "Часовой пояс",									-- Waist of Time
 
 	-- Mechagon
 		[-850] = "Механизированный сундук",							-- Mechanized Chest
 		[-851] = "Сейф братства Стальных Волн",						-- Irontide Chest
 
 	-- 8.2 Neck Stuff
-		[-852] = "Азеритовые сущности",								-- Azerite Essences
 		[-853] = "Все роли",										-- All Roles
 		[-854] = "Боец",											-- DPS
 		[-855] = "Лекарь",											-- Healers

@@ -1939,13 +1939,13 @@ app.L = {
 		[-693] = select(2, GetAchievementInfo(14690)),							-- Sinful Gladiator: Shadowlands Season 1
 
 	-- Pets
-		[-796] = BATTLE_PET_SOURCE_5,											-- Battle
-		[-797] = PET_JOURNAL,													-- Journal
+		[-796] = BATTLE_PET_SOURCE_5,											-- Pet Battle
+		[-797] = PET_JOURNAL,													-- Pet Journal
 
 	-- Toys
-		[-798] = select(1, GetItemInfo(122637)),								-- S.E.L.F.I.E. Camera
+		[-798] = GetSpellInfo(181765),											-- S.E.L.F.I.E. Camera
 
-		[-799] = "Burden of Eternity",											-- Burden of Eternity
+		[-799] = GetSpellInfo(147343),											-- Burden of Eternity
 
 	-- Secret Header [Maybe need to change the numbers again when I need more space for PvP -- sadidorf]
 		[-800] = GetSpellInfo(247402), 											-- Lucid Nightmare
@@ -1954,15 +1954,15 @@ app.L = {
 		[-804] = GetSpellInfo(254763),											-- Uuna
 		[-805] = GetSpellInfo(277461),											-- Baa'l
 		[-806] = "Waist of Time",												-- Waist of Time
-		[-807] = "Hivemind",													-- Hivemind
-		[-808] = "Bound Shadehound",											-- Bound Shadehound
+		[-807] = GetSpellInfo(261395),											-- The Hivemind
+		[-808] = GetSpellInfo(344577),											-- Bound Shadehound
 
 	-- Mechagon
 		[-850] = "Mechanized Chest",											-- Mechanized Chest
 		[-851] = "Irontide Chest",												-- Irontide Chest
 
 	-- 8.2 Neck Stuff
-		[-852] = "Azerite Essences",											-- Azerite Essences
+		[-852] = SPLASH_BATTLEFORAZEROTH_8_2_0_FEATURE2_TITLE,					-- Heart of Azeroth Essences
 		[-853] = "All Roles",													-- All Roles
 		[-854] = "DPS",															-- DPS
 		[-855] = "Healers",														-- Healers
