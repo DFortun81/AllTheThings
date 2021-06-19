@@ -1447,9 +1447,9 @@ _.ExpansionFeatures =
 						q(57088, {	-- This Ain't Mine
 							["sourceQuests"] = { 56496 },	-- The Eve of Battle
 							["provider"] = { "n", 155786 },	-- Varok Saurfang
-							["coord"] = { 54.1, 42.4, 1 },
+							["coord"] = { 54.1, 42.4, DUROTAR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 1 },	-- Durotar
+							["maps"] = { DUROTAR },
 						}),
 						q(57090, {	-- Saving the Siege
 							["sourceQuests"] = { 57088 },	-- This Ain't Mine

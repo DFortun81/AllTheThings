@@ -170,10 +170,10 @@ _.Holidays = bubbleDown({["u"] = 24},
 				-- HORDE QUESTS --
 				q(29396, {	-- A New Supplier of Souvenirs (H)
 					["provider"] = { "n", 24497 },	-- Ram Master Ray
-					["coord"] = { 42.6, 17.6, 1 },
+					["coord"] = { 42.6, 17.6, DUROTAR },
 					["sourceQuest"] = 11409,	-- Now This is Ram Racing... Almost. (H)
 					["races"] = HORDE_ONLY,
-					["maps"] = { 1 },	-- Durotar
+					["maps"] = { DUROTAR },
 					["g"] = {
 						i(56836),	-- Overflowing Purple Brewfest Stein
 					},
@@ -181,22 +181,22 @@ _.Holidays = bubbleDown({["u"] = 24},
 				}),
 				q(11407, {	-- Bark for Drohn's Distillery!
 					["provider"] = { "n", 24498 },	-- Cort Gorestein
-					["coord"] = { 40.5, 18.3, 1 },
+					["coord"] = { 40.5, 18.3, DUROTAR },
 					["sourceQuest"] = 11409,	-- Now This is Ram Racing... Almost. (H)
 					["isDaily"] = true,
 					["races"] = HORDE_ONLY,
-					["maps"] = { 1 },	-- Durotar
+					["maps"] = { DUROTAR },
 					["g"] = {
 						i(37829),	-- Brewfest Prize Token
 					},
 				}),
 				q(11408, {	-- Bark for T'chali's Voodoo Brewery!
 					["provider"] = { "n", 24498 },	-- Cort Gorestein
-					["coord"] = { 40.2, 17.0, 1 },
+					["coord"] = { 40.2, 17.0, DUROTAR },
 					["sourceQuest"] = 11409,	-- Now This is Ram Racing... Almost. (H)
 					["isDaily"] = true,
 					["races"] = HORDE_ONLY,
-					["maps"] = { 1 },	-- Durotar
+					["maps"] = { DUROTAR },
 					["g"] = {
 						i(37829),	-- Brewfest Prize Token
 					},
@@ -212,7 +212,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 					},
 					["races"] = HORDE_ONLY,
 					["maps"] = {
-						1,	-- Durotar
+						DUROTAR,
 						NORTHERN_BARRENS,
 						TANARIS,
 						WINTERSPRING,
@@ -231,9 +231,9 @@ _.Holidays = bubbleDown({["u"] = 24},
 				}),
 				q(56748, {	-- Brewfest Chowdown (H)
 					["provider"] = { "n", 155133 },	-- Etga
-					["coord"] = { 42.3, 18.4, 1 },
+					["coord"] = { 42.3, 18.4, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["maps"] = { 1 },	-- Durotar
+					["maps"] = { DUROTAR },
 					["g"] = {
 						i(37829),	-- Brewfest Prize Token
 					},
@@ -241,11 +241,11 @@ _.Holidays = bubbleDown({["u"] = 24},
 				}),
 				q(29393, {	-- Brew For Brewfest (H)
 					["provider"] = { "n", 24497 },	-- Ram Master Ray
-					["coord"] = { 42.6, 17.8, 1 },
+					["coord"] = { 42.6, 17.8, DUROTAR },
 					["sourceQuest"] = 11412,	-- There and Back Again (H)
 					["isDaily"] = true,
 					["races"] = HORDE_ONLY,
-					["maps"] = { 1 },	-- Durotar
+					["maps"] = { DUROTAR },
 				}),
 				q(12306, {    -- Brew of the Month Club (H)
 					["races"] = HORDE_ONLY,
@@ -253,17 +253,17 @@ _.Holidays = bubbleDown({["u"] = 24},
 				}),
 				q(56716, {	-- Direbrew Cog (H)
 					--	["provider"] = { "o", ??? },	-- ???
-					["coord"] = { 41.0, 17.8, 1 },
+					["coord"] = { 41.0, 17.8, DUROTAR },
 					["isDaily"] = true,
 					["races"] = HORDE_ONLY,
-					["maps"] = { 1 },	-- Durotar
+					["maps"] = { DUROTAR },
 				}),
 				q(11431, {	-- Catch the Wild Wolpertinger! (H)
 					["description"] = "This quest is not available to EU players.",
 					["provider"] = { "n", 24657 },	-- Glodrak Huntsniper
-					["coord"] = { 41.2, 18.4, 1 },
+					["coord"] = { 41.2, 18.4, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["maps"] = { 1 },	-- Durotar
+					["maps"] = { DUROTAR },
 					["g"] = {
 						i(32233, {	-- Wolpertinger's Tankard (Pet)
 							ach(1936),	-- Does Your Wolpertinger Linger?
@@ -273,13 +273,13 @@ _.Holidays = bubbleDown({["u"] = 24},
 				}),
 				q(12191, {	-- Chug and Chuck! (H)
 					["provider"] = { "n", 27216 },	-- Bizzle Quicklift
-					["coord"] = { 41.4, 17.6, 1 },
+					["coord"] = { 41.4, 17.6, DUROTAR },
 					["sourceQuests"] = {
 						11446,	-- Brewfest! (H)
 						11447,	-- Welcome to Brewfest! (H)
 					},
 					["races"] = HORDE_ONLY,
-					["maps"] = { 1 },	-- Durotar
+					["maps"] = { DUROTAR },
 					["g"] = {
 						i(37829),	-- Brewfest Prize Token
 					},
@@ -287,43 +287,43 @@ _.Holidays = bubbleDown({["u"] = 24},
 				}),
 				q(56714, {	-- Contained Alemental (H)
 					--	["provider"] = { "o", ??? },	-- ???
-					["coord"] = { 41.0, 17.8, 1 },
+					["coord"] = { 41.0, 17.8, DUROTAR },
 					["isDaily"] = true,
 					["races"] = HORDE_ONLY,
-					["maps"] = { 1 },	-- Durotar
+					["maps"] = { DUROTAR },
 				}),
 				q(56715, {	-- Hozen Totem (H)
 					--	["provider"] = { "o", ??? },	-- Hozen Totem
-					["coord"] = { 41.0, 17.8, 1 },
+					["coord"] = { 41.0, 17.8, DUROTAR },
 					["isDaily"] = true,
 					["races"] = HORDE_ONLY,
-					["maps"] = { 1 },	-- Durotar
+					["maps"] = { DUROTAR },
 				}),
 				q(11409, {	-- Now This is Ram Racing... Almost. (H)
 					["provider"] = { "n", 24497 },	-- Ram Master Ray
-					["coord"] = { 42.6, 17.8, 1 },
+					["coord"] = { 42.6, 17.8, DUROTAR },
 					["sourceQuests"] = {
 						11446,	-- Brewfest! (H)
 						11447,	-- Welcome to Brewfest! (H)
 					},
 					["races"] = HORDE_ONLY,
-					["maps"] = { 1 },	-- Durotar
+					["maps"] = { DUROTAR },
 					["isYearly"] = true,
 				}),
 				q(11120, {	-- Pink Elekks On Parade (H)
 					["description"] = "This quest is not available to EU players.",
 					["provider"] = { "n", 24657 },	-- Glodrak Huntsniper
-					["coord"] = { 41.2, 18.4, 1 },
+					["coord"] = { 41.2, 18.4, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["maps"] = { 1 },	-- Durotar
+					["maps"] = { DUROTAR },
 					["isYearly"] = true,
 				}),
 				q(11412, {	-- There and Back Again (H)
 					["provider"] = { "n", 24497 },	-- Ram Master Ray
-					["coord"] = { 42.6, 17.8, 1 },
+					["coord"] = { 42.6, 17.8, DUROTAR },
 					["sourceQuest"] = 11409,	-- Now This is Ram Racing... Almost. (H)
 					["races"] = HORDE_ONLY,
-					["maps"] = { 1 },	-- Durotar
+					["maps"] = { DUROTAR },
 					["g"] = {
 						i(37829),	-- Brewfest Prize Token
 					},
@@ -331,9 +331,9 @@ _.Holidays = bubbleDown({["u"] = 24},
 				}),
 				q(11447, {	-- Welcome to Brewfest! (H)
 					["provider"] = { "n", 155194 },	-- La'gar Brewshout
-					["coord"] = { 41.6, 18.4, 1 },
+					["coord"] = { 41.6, 18.4, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["maps"] = { 1 },	-- Durotar
+					["maps"] = { DUROTAR },
 					["isYearly"] = true,
 				}),
 			},

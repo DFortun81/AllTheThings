@@ -246,7 +246,7 @@ _.Zones =
 									q(51479, {	-- The Uncorrupted
 										["sourceQuests"] = { 52955 },	-- Tyranny of the Light
 										["provider"] = { "n", 143845 },	-- Overlord Geya'rah
-										["coord"] = { 41.2, 16.8, 1 },
+										["coord"] = { 41.2, 16.8, DUROTAR },
 										["races"] = HORDE_ONLY,
 										["g"] = {
 											ach(12518),	-- Allied Races: Mag'har Orc

@@ -486,10 +486,10 @@ _.ExpansionFeatures =
 					}),
 					q(42484, {	-- The Firstborn Rises
 						["provider"] = { "n", 107554 },	-- Thassarian
-						["coord"] = { 47.3, 17.7, 1 },
+						["coord"] = { 47.3, 17.7, DUROTAR },
 						["classes"] = { DEATHKNIGHT },
 						["sourceQuest"] = 42449, -- Return of the Four Horsemen
-						["maps"] = { 1 },	-- Durotar
+						["maps"] = { DUROTAR },
 					}),
 					q(43686, {	-- The Fourth Horseman
 						["provider"] = { "n", 93437 }, -- Highlord Darion Mograine

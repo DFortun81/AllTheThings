@@ -156,10 +156,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11770, {	-- Desecrate this Fire! — Durotar
 				["isYearly"] = true,
 				["provider"] = { "o", 187958 },	-- Horde Bonfire
-				["coord"] = { 52.0, 47.0, 1 },
+				["coord"] = { 52.0, 47.0, DUROTAR },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
-				["maps"] = { 1 },	-- Durotar
+				["maps"] = { DUROTAR },
 			}),
 			q(11771, {	-- Desecrate this Fire! — Dustwallow Marsh
 				["isYearly"] = true,
@@ -1396,9 +1396,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11846, {	-- Honor the Flame — Durotar
 				["provider"] = { "n", 25929 },	-- Durotar Flame Keeper
 				["isYearly"] = true,
-				["coord"] = { 52.0, 47.0, 1 },
+				["coord"] = { 52.0, 47.0, DUROTAR },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 1 },	-- Durotar
+				["maps"] = { DUROTAR },
 			}),
 			q(11847, {	-- Honor the Flame — Dustwallow Marsh
 				["provider"] = { "n", 25930 },	-- Dustwallow Marsh Flame Keeper
@@ -1949,7 +1949,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["provider"] = { "n", 25994 },	-- Fire Eater
 				["races"] = HORDE_ONLY,
 				["maps"] = {
-					1,		-- Durotar
+					DUROTAR,
 					7,		-- Mulgore
 					NORTHERN_BARRENS,
 					TIRISFAL_GLADES,

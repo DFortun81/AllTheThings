@@ -7,7 +7,7 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 		n(ZONEDROPS, {
 			i(45072, {	-- Brightly Colored Egg
 				["maps"] = {
-					1,	-- Durotar
+					DUROTAR,
 					7,	-- Mulgore
 					TIRISFAL_GLADES,
 					DUN_MOROGH,

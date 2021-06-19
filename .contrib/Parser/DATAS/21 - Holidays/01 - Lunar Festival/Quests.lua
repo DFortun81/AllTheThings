@@ -652,8 +652,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8670,  {	-- Runetotem the Elder
 				["provider"] = { "n", 15572 },	-- Elder Runetotem
 				["isYearly"] = true,
-				["coord"] = { 53.1, 43.6, 1 },
-				["maps"] = { 1 },	-- Durotar
+				["coord"] = { 53.1, 43.6, DUROTAR },
+				["maps"] = { DUROTAR },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(1, {	-- Elder Runetotem in Razor Hill

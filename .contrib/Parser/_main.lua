@@ -57,6 +57,7 @@ TEMPEST_KEEP_MECHANAR = 267;	-- Confirmed! 268 also
 STRANGLETHORN_VALE = nil;	-- 1434 Classic
 
 -- Kalimdor
+DUROTAR = 1;
 KALIMDOR = 12;	-- Confirmed!
 ASHENVALE = 63;	-- Confirmed!
 AZSHARA = 76;	-- Confirmed!

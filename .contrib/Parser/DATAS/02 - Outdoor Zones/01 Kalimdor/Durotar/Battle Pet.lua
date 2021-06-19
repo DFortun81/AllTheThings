@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(1, {	-- Durotar
+		m(DUROTAR, {
 			filter(101, {	-- Pet Battle
 				p(635, {	-- Adder
 					["crs"] = { 61325 },	-- Adder
@@ -28,7 +28,7 @@ _.Zones =
 					["crs"] = { 61367 },	-- Water Snake
 				}),
 				n(63061, {	-- Narzak
-					["coord"] = { 52.7, 41.3, 1 },
+					["coord"] = { 52.7, 41.3, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.",
 					["g"] = {
@@ -54,7 +54,7 @@ _.Zones =
 				}),
 				q(31813, {	-- Dagra the Fierce
 					["provider"] = { "n", 66126 },	-- Zunta
-					["coord"] = { 43.9, 28.9, 1 },
+					["coord"] = { 43.9, 28.9, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(89125),	-- Sack of Pet Supplies
@@ -62,31 +62,31 @@ _.Zones =
 				}),
 				q(31570, {	-- Got one!
 					["provider"] = { "n", 63061 },	-- Narzak
-					["coord"] = { 52.7, 41.3, 1 },
+					["coord"] = { 52.7, 41.3, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 31830,	-- Level Up!
 				}),
 				q(31571, {	-- Learning the Ropes
 					["provider"] = { "n", 63061 },	-- Narzak
-					["coord"] = { 52.7, 41.3, 1 },
+					["coord"] = { 52.7, 41.3, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["description"] = "This quest is part of a chain initiated by learning Battle Pet Training.",
 				}),
 				q(31830, {	-- Level Up!
 					["provider"] = { "n", 63061 },	-- Narzak
-					["coord"] = { 52.7, 41.3, 1 },
+					["coord"] = { 52.7, 41.3, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 31572,	-- On The Mend
 				}),
 				q(31572, {	-- On The Mend
 					["provider"] = { "n", 63061 },	-- Narzak
-					["coord"] = { 52.7, 41.3, 1 },
+					["coord"] = { 52.7, 41.3, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 31571,	-- Learning the Ropes
 				}),
 				q(31818, {	-- Zunta
 					["provider"] = { "n", 66126 },	-- Zunta
-					["coord"] = { 43.9, 28.9, 1 },
+					["coord"] = { 43.9, 28.9, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),

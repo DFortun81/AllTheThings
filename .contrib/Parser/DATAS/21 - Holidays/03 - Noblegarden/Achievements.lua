@@ -67,7 +67,7 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 							["maps"] = { EVERSONG_WOODS },
 						}),
 						crit(4, {	-- Razor Hill
-							["maps"] = { 1 },	-- Durotar
+							["maps"] = { DUROTAR },
 						}),
 					}),
 				}),

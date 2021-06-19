@@ -37,13 +37,13 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["provider"] = { "n", 23973 },	-- Masked Orphan Matron
 				["isDaily"] = true,
 				["coords"] = {
-					{ 52.6, 41.5, 1  },	-- Durotar
+					{ 52.6, 41.5, DUROTAR },
 					{ 47.2, 46.4, EVERSONG_WOODS },
 					{ 60.8, 53.6, TIRISFAL_GLADES },
 				},
 				["races"] = HORDE_ONLY,
 				["maps"] = {
-					1,  -- Durotar
+					DUROTAR,
 					EVERSONG_WOODS,
 					TIRISFAL_GLADES,
 				},
@@ -658,9 +658,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12361, {	-- Candy Bucket — Durotar, Razor Hill, Horde
 				["isYearly"] = true,
-				["coord"] = { 51.6, 41.7, 1 },
+				["coord"] = { 51.6, 41.7, DUROTAR },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 1 },	-- Durotar
+				["maps"] = { DUROTAR },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -2167,9 +2167,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 			q(11361, {	-- Fire Training (Durotar)
 				["sourceQuests"] = { 11357 },	-- Masked Orphan Matron
 				["provider"] = { "n", 23973 },	-- Masked Orphan Matron
-				["coord"] = { 52.5, 41.2, 1 },	-- Durotar
+				["coord"] = { 52.5, 41.2, DUROTAR },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 1 },	-- Durotar
+				["maps"] = { DUROTAR },
 				["g"] = {
 					i(33226),	-- Tricky Treat
 				},
@@ -2359,13 +2359,13 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["provider"] = { "o", 186887 },	-- Large Jack-o'-Lantern
 				["isDaily"] = true,
 				["coords"] = {
-					{ 52.6, 41.5, 1  },	-- Durotar
+					{ 52.6, 41.5, DUROTAR },
 					{ 47.2, 46.4, EVERSONG_WOODS },
 					{ 60.8, 53.6, TIRISFAL_GLADES },
 				},
 				["races"] = HORDE_ONLY,
 				["maps"] = {
-					1,  -- Durotar
+					DUROTAR,
 					EVERSONG_WOODS,
 					TIRISFAL_GLADES,
 				},
@@ -2399,13 +2399,13 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["provider"] = { "n", 23973 },	-- Masked Orphan Matron
 				["isDaily"] = true,
 				["coords"] = {
-					{ 52.6, 41.5, 1  },	-- Durotar
+					{ 52.6, 41.5, DUROTAR },
 					{ 47.2, 46.4, EVERSONG_WOODS },
 					{ 60.8, 53.6, TIRISFAL_GLADES },
 				},
 				["races"] = HORDE_ONLY,
 				["maps"] = {
-					1,  -- Durotar
+					DUROTAR,
 					EVERSONG_WOODS,
 					TIRISFAL_GLADES,
 				},
@@ -2496,7 +2496,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["u"] = REMOVED_FROM_GAME,
 				["provider"] = { "n", 23973 },	-- Masked Orphan Matron
 				["maps"] = {
-					1,	-- Durotar
+					DUROTAR,
 					EVERSONG_WOODS,
 					TIRISFAL_GLADES,
 				},

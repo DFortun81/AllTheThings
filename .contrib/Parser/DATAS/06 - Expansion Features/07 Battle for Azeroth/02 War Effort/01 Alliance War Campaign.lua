@@ -1531,9 +1531,9 @@ _.ExpansionFeatures =
 						q(56719, {	-- This Ain't Mine
 							["sourceQuests"] = { 56494 },	-- The Eye of Battle
 							["provider"] = { "n", 155784 },	-- Anduin Wrynn
-							["coord"] = { 54.0, 42.6, 1 },	-- Durotar
+							["coord"] = { 54.0, 42.6, DUROTAR },
 							["races"] = ALLIANCE_ONLY,
-							["maps"] = { 1 },	-- Durotar
+							["maps"] = { DUROTAR },
 							["lvl"] = 120,
 						}),
 						q(56979, {	-- Saving the Siege

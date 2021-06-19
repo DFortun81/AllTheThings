@@ -18,7 +18,7 @@ _.Holidays =
 				q(8150, {	-- Honoring a Hero (H)
 					["provider"] = { "n", 15012 },	-- Javnir Nashak
 					["isYearly"] = true,
-					["coord"] = { 46.2, 15.0, 1 },	-- Durotar
+					["coord"] = { 46.2, 15.0, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["u"] = 25,	-- Harvest Festival
 				}),

@@ -205,7 +205,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 				["isYearly"] = true,
 				["races"] = HORDE_ONLY,
 				["maps"] = {
-					1,		-- Durotar
+					DUROTAR,
 					TIRISFAL_GLADES,
 					EVERSONG_WOODS,
 					HELLFIRE_PENINSULA,
@@ -226,7 +226,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 			}),
 			q(14041, {	-- Cranberry Chutney (Horde)
 				["provider"] = { "n", 34679 },	-- Francis Eaton
-				["maps"] = { 1, },	-- Durotar
+				["maps"] = { DUROTAR },
 				["sourceQuests"] = { 14040, },	-- Pumpkin Pie (Horde)
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
@@ -240,7 +240,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 			}),
 			q(14044, {	-- Undersupplied in the Undercity (Horde)
 				["provider"] = { "n", 34679 },	-- Francis Eaton
-				["maps"] = { 1, },	-- Durotar
+				["maps"] = { DUROTAR },
 				["sourceQuests"] = { 14043, },	-- Candied Sweet Potatoes (Horde)
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
@@ -311,7 +311,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 				["provider"] = { "n", 34713 },	-- Ondani Greatmill
 				["isDaily"] = true,
 				["races"] = HORDE_ONLY,
-				["maps"] = { 1, },	-- Durotar
+				["maps"] = { DUROTAR },
 				["g"] = {
 					i(46723),	-- Pilgrim's Hat
 					i(46800),	-- Pilgrim's Attire
@@ -329,7 +329,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 				["provider"] = { "n", 34713 },	-- Ondani Greatmill
 				["isDaily"] = true,
 				["races"] = HORDE_ONLY,
-				["maps"] = { 1, },	-- Durotar
+				["maps"] = { DUROTAR },
 				["g"] = {
 					i(46723),	-- Pilgrim's Hat
 					i(46800),	-- Pilgrim's Attire

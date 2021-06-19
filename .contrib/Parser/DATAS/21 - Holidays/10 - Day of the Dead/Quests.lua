@@ -75,8 +75,8 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_DAY_OF_THE_DEAD },
 				["provider"] = { "n", 46901 },	-- Cheerful Goblin Spirit
 				["isYearly"] = true,
 				["races"] = { GOBLIN },
-				["coord"] = { 47.4, 17.6, 1 },
-				["maps"] = { 1 },	-- Durotar
+				["coord"] = { 47.4, 17.6, DUROTAR },
+				["maps"] = { DUROTAR },
 				["g"] = {
 					i(46831),	-- Macabre Marionette (PET!)
 				},
@@ -85,8 +85,8 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_DAY_OF_THE_DEAD },
 				["provider"] = { "n", 34477 },	-- Cheerful Orc Spirit
 				["isYearly"] = true,
 				["races"] = { ORC },
-				["coord"] = { 47.4, 17.6, 1 },
-				["maps"] = { 1 },	-- Durotar
+				["coord"] = { 47.4, 17.6, DUROTAR },
+				["maps"] = { DUROTAR },
 				["g"] = {
 					i(46831),	-- Macabre Marionette (PET!)
 				},
@@ -95,8 +95,8 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_DAY_OF_THE_DEAD },
 				["provider"] = { "n", 34482 },	-- Cheerful Troll Spirit
 				["isYearly"] = true,
 				["races"] = { TROLL },
-				["coord"] = { 47.4, 17.6, 1 },
-				["maps"] = { 1 },	-- Durotar
+				["coord"] = { 47.4, 17.6, DUROTAR },
+				["maps"] = { DUROTAR },
 				["g"] = {
 					i(46831),	-- Macabre Marionette (PET!)
 				},

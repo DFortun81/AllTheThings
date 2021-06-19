@@ -657,8 +657,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { 66 },	-- Desolace
 										}),
 										crit(8,  {	-- Durotar, Razor Hill
-											["coord"] = { 51.6, 41.7, 1 },
-											["maps"] = { 1 },	-- Durotar
+											["coord"] = { 51.6, 41.7, DUROTAR },
+											["maps"] = { DUROTAR },
 										}),
 										crit(9,  {	-- Dustwallow Marsh, Brackenwall Village
 											["coord"] = { 36.8, 32.4, DUSTWALLOW_MARSH },

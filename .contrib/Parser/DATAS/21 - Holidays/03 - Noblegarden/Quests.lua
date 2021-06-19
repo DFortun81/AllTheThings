@@ -33,10 +33,10 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 					{ 47.11, 59.89, 7 },	-- Bloodhoof Village, Mulgore
 					{ 61.35, 52.98, TIRISFAL_GLADES },	-- Brill
 					{ 47.64, 47.31, EVERSONG_WOODS },	-- Falconwing Square
-					{ 51.91, 41.87, 1 },	-- Razor Hill, Durotar
+					{ 51.91, 41.87, DUROTAR },	-- Razor Hill
 				},
 				["maps"] = {
-					1,	-- Durotar
+					DUROTAR,
 					7,	-- Mulgore
 					TIRISFAL_GLADES,
 					EVERSONG_WOODS,
@@ -211,10 +211,10 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 					{ 46.92, 59.53, 7 },	-- Bloodhoof Village, Mulgore
 					{ 61.63, 53.12, TIRISFAL_GLADES },	-- Brill
 					{ 47.77, 47.12, EVERSONG_WOODS },	-- Falconwing Square
-					{ 51.82, 42.06, 1 },	-- Razor Hill, Durotar
+					{ 51.82, 42.06, DUROTAR },	-- Razor Hill
 				},
 				["maps"] = {
-					1,	-- Durotar
+					DUROTAR,
 					7,	-- Mulgore
 					TIRISFAL_GLADES,
 					EVERSONG_WOODS,
