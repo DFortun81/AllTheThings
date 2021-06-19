@@ -19476,7 +19476,7 @@ app.events.VARIABLES_LOADED = function()
 			61191,	-- ringing the Vesper of the Silver Wind
 			61183,	-- looting the Gift of the Silver Wind
 
-			-- Ve'nari Items (Acc Wide Bonus (Hidden quest?) but quests are not accwide)
+			-- Ve'nari Items (The Quest Bonus is Accwide but quests itself are not accwide)
 			63193,	-- Bangle of Seniority
 			63523,	-- Broker Traversam Enhancer
 			63183, 	-- Extradimensional Pockets

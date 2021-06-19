@@ -176,7 +176,6 @@ _.PVP =
 					i(161693),	-- Dread Gladiator's Warglaive (H)
 				}),
 				n(-43, {	-- Cloth
-				--	items still marked "removed" were not learned when i used the ensemble that got added.  not sure if they're available to non-priest classes.
 					i(161731),	-- Dread Gladiator's Silk Amice (A)
 					i(161737),	-- Dread Gladiator's Silk Bracers (A)
 					un(REMOVED_FROM_GAME, i(161625)),	-- Dread Gladiator's Silk Cord (A)
