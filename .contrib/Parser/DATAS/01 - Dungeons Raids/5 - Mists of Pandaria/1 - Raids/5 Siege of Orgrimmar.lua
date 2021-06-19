@@ -1940,8 +1940,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								i(99678),	-- Chest of the Cursed Conqueror
 								i(99679),	-- Chest of the Cursed Protector
 								i(99677),	-- Chest of the Cursed Vanquisher
-								i(104162),	-- Droplet of Y'Shaarj (PET!)
-								i(104163),	-- Gooey Sha-ling (PET!)
+								--i(104162),	-- Droplet of Y'Shaarj (PET! N/H/M only)
+								i(104163),	-- Gooey Sha-ling (PET! LFR only)
 								i(112951),	-- Gaze of Arrogance
 								i(112949),	-- Greatsword of Pride's Fall
 								i(112950),	-- Shield of Mockery
@@ -2358,8 +2358,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(99743),	-- Chest of the Cursed Conqueror
 					i(99744),	-- Chest of the Cursed Protector
 					i(99742),	-- Chest of the Cursed Vanquisher
-					i(104162),	-- Droplet of Y'Shaarj (PET!)
-					i(104163),	-- Gooey Sha-ling (PET!)
+					i(104162),	-- Droplet of Y'Shaarj (PET! N/H/M only)
+					--i(104163),	-- Gooey Sha-ling (PET! LFR only)
 					i(112951),	-- Gaze of Arrogance
 					i(112949),	-- Greatsword of Pride's Fall
 					i(112950),	-- Shield of Mockery
@@ -2783,8 +2783,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(99686),	-- Chest of the Cursed Conqueror
 					i(99691),	-- Chest of the Cursed Protector
 					i(99696),	-- Chest of the Cursed Vanquisher
-					i(104162),	-- Droplet of Y'Shaarj (PET!)
-					i(104163),	-- Gooey Sha-ling (PET!)
+					i(104162),	-- Droplet of Y'Shaarj (PET! N/H/M only)
+					--i(104163),	-- Gooey Sha-ling (PET! LFR only)
 					i(112951),	-- Gaze of Arrogance
 					i(112949),	-- Greatsword of Pride's Fall
 					i(112950),	-- Shield of Mockery
@@ -3231,8 +3231,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(99715),	-- Chest of the Cursed Conqueror
 					i(99716),	-- Chest of the Cursed Protector
 					i(99714),	-- Chest of the Cursed Vanquisher
-					i(104162),	-- Droplet of Y'Shaarj (PET!)
-					i(104163),	-- Gooey Sha-ling (PET!)
+					i(104162),	-- Droplet of Y'Shaarj (PET! N/H/M only)
+					--i(104163),	-- Gooey Sha-ling (PET! LFR only)
 					i(112951),	-- Gaze of Arrogance
 					i(112949),	-- Greatsword of Pride's Fall
 					i(112950),	-- Shield of Mockery
