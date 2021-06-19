@@ -18051,7 +18051,7 @@ app:GetWindow("Debugger", UIParent, function(self, force)
 					AllTheThingsDebugData = app.GetDataMember("Debugger", {});
 					app.SetDataMember("Debugger", nil);
 				end
-				self.rawData = AllTheThingsDebugData;
+				self.rawData = {}; --AllTheThingsDebugData;
 				self.data.g = CreateObject(self.rawData);
 				for i=#self.data.options,1,-1 do
 					tinsert(self.data.g, 1, self.data.options[i]);
