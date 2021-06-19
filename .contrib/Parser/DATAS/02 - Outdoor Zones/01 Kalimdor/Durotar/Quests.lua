@@ -7,15 +7,59 @@ _.Zones =
 	m(KALIMDOR, {
 		m(1, {	-- Durotar
 			n(QUESTS, {
-				q(2161, {	-- A Peon's Budren
-					["u"] = REMOVED_FROM_GAME,
+				q(2161, {	-- A Peon's Burden
+					["qg"] = 6786,	-- Ukor
+					["coord"] = { 52.05, 68.31, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 6786 },	-- Ukor
+					["lvl"] = 1,
+					["cost"] = {
+						{ "i", 7629, 1}, -- 0/1 Ukor's Burden
+					},
+					["groups"] = {
+						objective(1, {	-- 0/1 Ukor's Burden
+							["provider"] = { "i", 7629 },
+						}),
+					},
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed removed 4.0.3.10000",
+					},
 				}),
-				q(818,   {	-- A Solvent Spirit
-					["u"] = REMOVED_FROM_GAME,
+				q(818, {	-- A Solvent Spirit
+					["qg"] = 3304,	-- Master Vornal
+					["coord"] = { 55.95, 74.39, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3304 },	-- Master Vornal
+					["cost"] = {
+						{ "i", 4888, 8 },	-- Crawler Mucus
+						{ "i", 4887, 4 },	-- Intact Makrura Eye
+					},
+					["lvl"] = 5,
+					["groups"] = {
+						objective(1, { -- 0/8 Crawler Mucus
+							["provider"] = { "i", 4888 }, -- Crawler Mucus
+							["crs"] = {
+								3228,	-- Corrupted Surf Crawler
+								3108,	-- Encrusted Surf Crawler
+								3106,	-- Pygmy Surf Crawler
+								3107,	-- Surf Crawler
+							},
+						}),
+						objective(2, { -- 0/4 Intact Makrura Eye
+							["provider"] = { "i", 4887 },	-- Intact Makrura Eye
+							["crs"] = {
+								3103,	-- Makrura Clacker
+								3141,	-- Makrura Elder
+								3104,	-- Makrura Shellhide
+								3105,	-- Makrura Snapclaw
+								6020,	-- Slimeshell Makrura
+							},
+						}),	
+						i(4941),	-- Really Sticky Glue
+					},
+					["timeline"] = {
+						"added 1.11.1.10958",
+						"removed removed 4.0.3.10000",
+					},
 				}),
 				q(41002, {	-- A Weapon of the Horde
 					["provider"] = { "n", 101035 },	-- Lady Sylvanas Windrunner
