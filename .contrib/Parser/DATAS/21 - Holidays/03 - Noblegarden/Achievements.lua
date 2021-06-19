@@ -58,7 +58,7 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 					["races"] = HORDE_ONLY,
 					["g"] = bubbleDown({ ["races"] = HORDE_ONLY }, {
 						crit(1, {	-- Bloodhoof Village
-							["maps"] = { 7 },	-- Bloodhoof Village
+							["maps"] = { MULGORE },	-- Bloodhoof Village
 						}),
 						crit(2, {	-- Brill
 							["maps"] = { TIRISFAL_GLADES },

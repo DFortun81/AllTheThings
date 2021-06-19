@@ -8,7 +8,7 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 			i(45072, {	-- Brightly Colored Egg
 				["maps"] = {
 					DUROTAR,
-					7,	-- Mulgore
+					MULGORE,
 					TIRISFAL_GLADES,
 					DUN_MOROGH,
 					37,	-- Elwynn Forest

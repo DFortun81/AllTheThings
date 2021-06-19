@@ -1399,11 +1399,9 @@ _.Holidays =
 						["sourceQuests"] = {
 							172,	-- Children's Week
 						},
-						["coords"] = {
-							{ 60.74, 22.92, 7 },	-- Fallen Chieftain
-						},
+						["coord"] = { 60.74, 22.92, MULGORE },	-- Fallen Chieftain
 						["maps"] = {
-							7,	-- Mulgore
+							MULGORE,
 							ORGRIMMAR,
 							86,	-- Orgrimmar: The Drag
 							THUNDER_BLUFF,

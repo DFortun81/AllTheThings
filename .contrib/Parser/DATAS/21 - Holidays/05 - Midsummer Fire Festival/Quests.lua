@@ -236,10 +236,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11777, {	-- Desecrate this Fire! — Mulgore
 				["isYearly"] = true,
 				["provider"] = { "o", 187965 },	-- Horde Bonfire
-				["coord"] = { 52.0, 59.3, 7 },
+				["coord"] = { 52.0, 59.3, MULGORE },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
-				["maps"] = { 7 },	-- Mulgore
+				["maps"] = { MULGORE },
 			}),
 			q(11778, {	-- Desecrate this Fire! — Nagrand (Outland)
 				["isYearly"] = true,
@@ -1473,9 +1473,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11852, {	-- Honor the Flame — Mulgore
 				["provider"] = { "n", 25936 },	-- Mulgore Flame Keeper
 				["isYearly"] = true,
-				["coord"] = { 51.8, 59.3, 7 },
+				["coord"] = { 51.8, 59.3, MULGORE },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 7 },	-- Mulgore
+				["maps"] = { MULGORE },
 			}),
 			q(11854, {	-- Honor the Flame — Nagrand (Outland)
 				["provider"] = { "n", 25937 },	-- Nagrand Flame Keeper
@@ -1950,7 +1950,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 				["races"] = HORDE_ONLY,
 				["maps"] = {
 					DUROTAR,
-					7,		-- Mulgore
+					MULGORE,
 					NORTHERN_BARRENS,
 					TIRISFAL_GLADES,
 					ASHENVALE,

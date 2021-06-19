@@ -507,8 +507,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8673,  {	-- Bloodhoof the Elder
 				["provider"] = { "n", 15575 },	-- Elder Bloodhoof
 				["isYearly"] = true,
-				["coord"] = { 48.4, 53.2, 7 },
-				["maps"] = { 7 },	-- Mulgore
+				["coord"] = { 48.4, 53.2, MULGORE },
+				["maps"] = { MULGORE },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(8, {	-- Elder Bloodhoof in Bloodhoof Village

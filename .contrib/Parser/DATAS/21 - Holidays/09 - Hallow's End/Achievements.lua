@@ -685,8 +685,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { FERALAS },
 										}),
 										crit(15, {	-- Mulgore, Bloodhoof Village
-											["coord"] = { 46.8, 60.4, 7 },
-											["maps"] = { 7 },	-- Mulgore
+											["coord"] = { 46.8, 60.4, MULGORE },
+											["maps"] = { MULGORE },
 										}),
 										crit(16, {	-- Northern Barrens, The Crossroads
 											["coord"] = { 49.5, 58.0, NORTHERN_BARRENS },

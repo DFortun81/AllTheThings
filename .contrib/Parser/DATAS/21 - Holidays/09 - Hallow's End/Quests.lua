@@ -1216,9 +1216,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12362, {	-- Candy Bucket — Mulgore, Bloodhoof Village, Horde
 				["isYearly"] = true,
-				["coord"] = { 46.8, 60.4, 7 },
+				["coord"] = { 46.8, 60.4, MULGORE },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 7 },	-- Mulgore
+				["maps"] = { MULGORE },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},

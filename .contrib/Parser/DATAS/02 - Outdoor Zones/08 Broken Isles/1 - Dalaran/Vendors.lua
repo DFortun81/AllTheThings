@@ -2761,8 +2761,8 @@ _.Zones =
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -686, -9914, -662, 7 },	-- Season 5
-										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -662, 7	},	-- Season 6
-										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -662, 7	},	-- Season 7
+										{"sub", "pvp_set_faction_ensemble", -9982, -687, -9914, -662, 7 },	-- Season 6
+										{"sub", "pvp_set_faction_ensemble", -9982, -688, -9914, -662, 7 },	-- Season 7
 										{"exclude", "itemID", 149470 }, -- Exclude itself to stop duplicating
 									},
 									["g"] = {
@@ -5896,7 +5896,7 @@ _.Zones =
 									-- ["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 									["sym"] = {
 										{"sub", "pvp_set_faction_ensemble", -9982, -684, -9913, -662, 7 },	-- Season 3
-										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -662, 7	},	-- Season 4
+										{"sub", "pvp_set_faction_ensemble", -9982, -685, -9913, -662, 7 },	-- Season 4
 										{"exclude", "itemID", 147638 },	-- Exclude itself to stop duplicating
 									},
 									["g"] = {

@@ -72,6 +72,7 @@ FELWOOD = 77;
 FERALAS = 69;	-- Confirmed!
 KALIMDOR = 12;	-- Confirmed!
 MOONGLADE = 80;
+MULGORE = 7;
 NORTHERN_BARRENS = 10;
 ORGRIMMAR = 85;	-- Confirmed!
 SILITHUS = 81;	-- Confirmed!
