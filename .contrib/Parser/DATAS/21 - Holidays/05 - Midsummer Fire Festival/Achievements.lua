@@ -131,9 +131,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { DARKSHORE },
 									}),
 									crit(5,  {	-- Desolace
-										["coord"] = { 65.0, 17.0, 66 },
+										["coord"] = { 65.0, 17.0, DESOLACE },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 66 },	-- Desolace
+										["maps"] = { DESOLACE },
 									}),
 									crit(6,  {	-- Dustwallow Marsh
 										["coord"] = { 62.0, 40.0, DUSTWALLOW_MARSH },
@@ -391,9 +391,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { AZSHARA },
 									}),
 									crit(3,  {	-- Desolace
-										["coord"] = { 26.1, 77.4, 66 },
+										["coord"] = { 26.1, 77.4, DESOLACE },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 66 },	-- Desolace
+										["maps"] = { DESOLACE },
 									}),
 									crit(4,  {	-- Durotar
 										["coord"] = { 52.0, 47.0, DUROTAR },
@@ -817,9 +817,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { AZSHARA },
 									}),
 									crit(3,  {	-- Desolace
-										["coord"] = { 26.1, 76.9, 66 },
+										["coord"] = { 26.1, 76.9, DESOLACE },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 66 },	-- Desolace
+										["maps"] = { DESOLACE },
 									}),
 									crit(4,  {	-- Durotar
 										["coord"] = { 52.0, 47.0, DUROTAR },
@@ -1107,9 +1107,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { DARKSHORE },
 									}),
 									crit(5,  {	-- Desolace
-										["coord"] = { 65.8, 17.0, 66 },
+										["coord"] = { 65.8, 17.0, DESOLACE },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 66 },	-- Desolace
+										["maps"] = { DESOLACE },
 									}),
 									crit(6,  {	-- Dustwallow Marsh
 										["coord"] = { 62.1, 40.3, DUSTWALLOW_MARSH },

@@ -140,10 +140,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11769, {	-- Desecrate this Fire! — Desolace
 				["isYearly"] = true,
 				["provider"] = { "o", 187957 },	-- Horde Bonfire
-				["coord"] = { 26.1, 77.4, 66 },
+				["coord"] = { 26.1, 77.4, DESOLACE },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
-				["maps"] = { 66 },	-- Desolace
+				["maps"] = { DESOLACE },
 			}),
 			q(13451, {	-- Desecrate this Fire! — Dragonblight
 				["isYearly"] = true,
@@ -566,10 +566,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11741, {	-- Desecrate this Fire! — Desolace
 				["isYearly"] = true,
 				["provider"] = { "o", 187924 },	-- Alliance Bonfire
-				["coord"] = { 65.8, 17.0, 66 },
+				["coord"] = { 65.8, 17.0, DESOLACE },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-				["maps"] = { 66 },	-- Desolace
+				["maps"] = { DESOLACE },
 			}),
 			q(13443, {	-- Desecrate this Fire! — Dragonblight
 				["isYearly"] = true,
@@ -1002,9 +1002,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11812, {	-- Honor the Flame — Desolace
 				["provider"] = { "n", 25894 },	-- Desolace Flame Warden
 				["isYearly"] = true,
-				["coord"] = { 65.0, 17.0, 66 },
+				["coord"] = { 65.0, 17.0, DESOLACE },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 66 },	-- Desolace
+				["maps"] = { DESOLACE },
 			}),
 			q(13487, {	-- Honor the Flame — Dragonblight
 				["provider"] = { "n", 32803 },	-- Dragonblight Flame Warden
@@ -1382,9 +1382,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11845, {	-- Honor the Flame — Desolace
 				["provider"] = { "n", 25928 },	-- Desolace Flame Keeper
 				["isYearly"] = true,
-				["coord"] = { 26.1, 76.9, 66 },
+				["coord"] = { 26.1, 76.9, DESOLACE },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 66 },	-- Desolace
+				["maps"] = { DESOLACE },
 			}),
 			q(13495, {	-- Honor the Flame — Dragonblight
 				["provider"] = { "n", 32811 },	-- Dragonblight Flame Keeper
@@ -1921,7 +1921,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					DARKSHORE,
 					ASHENVALE,
 					65,		-- Stonetalon Mountains
-					66,		-- Desolace
+					DESOLACE,
 					DUSTWALLOW_MARSH,
 					TANARIS,
 					WINTERSPRING,

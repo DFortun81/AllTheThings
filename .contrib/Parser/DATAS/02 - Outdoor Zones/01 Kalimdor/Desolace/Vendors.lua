@@ -4,10 +4,10 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(66, {	-- Desolace
+		m(DESOLACE, {
 			n(VENDORS, {
 				n(12045, {	-- Hae'Wilani <Axecrafter>
-					["coord"] = { 25.6, 70.8, 66 },
+					["coord"] = { 25.6, 70.8, DESOLACE },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(12249, {	-- Merciless Axe
@@ -19,7 +19,7 @@ _.Zones =
 					},
 				}),
 				n(8150,  {	-- Janet Hommers <Food & Drink>
-					["coord"] = { 66.2, 6.6, 66 },
+					["coord"] = { 66.2, 6.6, DESOLACE },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(12240),	-- Recipe: Heavy Kodo Stew
@@ -27,7 +27,7 @@ _.Zones =
 					},
 				}),
 				n(9636,  {	-- Kireena <Trade Goods>
-					["coord"] = { 51.0, 53.4, 66 },
+					["coord"] = { 51.0, 53.4, DESOLACE },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(20973, {	-- Design: Blazing Citrine Ring
@@ -42,7 +42,7 @@ _.Zones =
 					},
 				}),
 				n(8878,  {	-- Muuran <Superior Macecrafter>
-					["coord"] = { 55.8, 56.6, 66 },
+					["coord"] = { 55.8, 56.6, DESOLACE },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(10858, {	-- Plans: Solid Iron Maul
@@ -51,7 +51,7 @@ _.Zones =
 					},
 				}),
 				n(12033, {	-- Wulan <Cooking Supplies>
-					["coord"] = { 26.2, 69.8, 66 },
+					["coord"] = { 26.2, 69.8, DESOLACE },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(17062),	-- Recipe: Mithril Head Trout

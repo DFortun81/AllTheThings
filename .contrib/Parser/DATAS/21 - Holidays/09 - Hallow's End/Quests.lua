@@ -545,26 +545,26 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(28993, {	-- Candy Bucket — Desolace, Karnum's Glade, neutral
 				["isYearly"] = true,
-				["coord"] = { 56.8, 50.0, 66 },
-				["maps"] = { 66 },	-- Desolace
+				["coord"] = { 56.8, 50.0, DESOLACE },
+				["maps"] = { DESOLACE },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12348, {	-- Candy Bucket — Desolace, Nijel's Point, Alliance
 				["isYearly"] = true,
-				["coord"] = { 66.3, 6.70, 66 },
+				["coord"] = { 66.3, 6.70, DESOLACE },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 66 },	-- Desolace
+				["maps"] = { DESOLACE },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12381, {	-- Candy Bucket — Desolace, Shadowprey Village, Horde
 				["isYearly"] = true,
-				["coord"] = { 24.1, 68.3, 66 },
+				["coord"] = { 24.1, 68.3, DESOLACE },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 66 },	-- Desolace
+				["maps"] = { DESOLACE },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},

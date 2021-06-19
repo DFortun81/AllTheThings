@@ -18,7 +18,7 @@ _.Secrets =
 			DEADWIND_PASS,
 			DUSKWOOD,
 			51,
-			66,
+			DESOLACE,
 			FERALAS,
 			SHADOWMOON_VALLEY,
 			BLADES_EDGE_MOUNTAINS,
@@ -230,7 +230,7 @@ _.Secrets =
 				["questID"] = 52823,
 				["sourceQuests"] = { 52918 },
 				["description"] = "Desolace\n\n/wave",
-				["coord"] = { 57.5, 47.7, 66 },	-- Karnum Marshweaver <The Cenarion Circle>
+				["coord"] = { 57.5, 47.7, DESOLACE },	-- Karnum Marshweaver <The Cenarion Circle>
 			}),
 			n(28792, { 	-- Noggra <General Goods>
 				["questID"] = 52824,

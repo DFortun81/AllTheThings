@@ -1123,9 +1123,9 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["description"] = "Take the central path to reach the Portal to Inner Maraudon.  Once inside the dungeon, jump down and follow the path to reach the Elder in the far southeast corner of the map.",
 				["provider"] = { "n", 15556 },	-- Elder Splitrock
 				["isYearly"] = true,
-				["coord"] = { 29.1, 62.5, 66 },	-- Maraudon path entrance
+				["coord"] = { 29.1, 62.5, DESOLACE },	-- Maraudon path entrance
 				["maps"] = {
-					66,		-- Desolace
+					DESOLACE,
 					280,	-- Maraudon
 				},
 				["u"] = 17,	-- Lunar Festival

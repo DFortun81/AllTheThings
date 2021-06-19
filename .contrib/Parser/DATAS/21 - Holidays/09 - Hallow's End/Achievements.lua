@@ -536,12 +536,12 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { DARNASSUS },
 										}),
 										crit(6,  {	-- Desolace, Karnum's Glade
-											["coord"] = { 56.8, 50.0, 66 },
-											["maps"] = { 66 },	-- Desolace
+											["coord"] = { 56.8, 50.0, DESOLACE },
+											["maps"] = { DESOLACE },
 										}),
 										crit(7,  {	-- Desolace, Nijel's Point
-											["coord"] = { 66.3, 6.70, 66 },
-											["maps"] = { 66 },	-- Desolace
+											["coord"] = { 66.3, 6.70, DESOLACE },
+											["maps"] = { DESOLACE },
 										}),
 										crit(8,  {	-- Dustwallow Marsh, Mudsprocket
 											["coord"] = { 41.0, 73.0, DUSTWALLOW_MARSH },
@@ -649,12 +649,12 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { AZSHARA },
 										}),
 										crit(6,  {	-- Desolace, Karnum's Glade
-											["coord"] = { 56.8, 50.0, 66 },
-											["maps"] = { 66 },	-- Desolace
+											["coord"] = { 56.8, 50.0, DESOLACE },
+											["maps"] = { DESOLACE },
 										}),
 										crit(7,  {	-- Desolace, Shadowprey Village
-											["coord"] = { 24.1, 68.3, 66 },
-											["maps"] = { 66 },	-- Desolace
+											["coord"] = { 24.1, 68.3, DESOLACE },
+											["maps"] = { DESOLACE },
 										}),
 										crit(8,  {	-- Durotar, Razor Hill
 											["coord"] = { 51.6, 41.7, DUROTAR },
