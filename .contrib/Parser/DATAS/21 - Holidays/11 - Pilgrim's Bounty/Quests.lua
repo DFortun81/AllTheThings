@@ -23,7 +23,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 					WINTERSPRING,
 					STORMWIND_CITY,
 					IRONFORGE,
-					89,		-- Darnassus
+					DARNASSUS,
 					THE_EXODAR,
 					NETHERSTORM,
 					SHATTRATH_CITY,
@@ -69,7 +69,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 			}),
 			q(14033, {	-- Candied Sweet Potatoes (Alliance)
 				["provider"] = { "n", 34676 },	-- Isaac Allerton
-				["maps"] = { 89, },	-- Darnassus
+				["maps"] = { DARNASSUS },
 				["sourceQuests"] = { 14030, },	-- They're Ravenous In Darnassus (Alliance)
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
@@ -139,9 +139,9 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 			q(14054, {	-- Easy As Pie (Alliance)
 				["provider"] = { "n", 34711 },	-- Mary Allerton
 				["isDaily"] = true,
-				["coord"] = { 61.8, 46.2, 89 },
+				["coord"] = { 61.8, 46.2, DARNASSUS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 89 },	-- Darnassus
+				["maps"] = { DARNASSUS },
 				["g"] = {
 					i(46723),	-- Pilgrim's Hat
 					i(46800),	-- Pilgrim's Attire

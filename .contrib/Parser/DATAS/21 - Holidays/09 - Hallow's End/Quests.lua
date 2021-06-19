@@ -84,7 +84,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 					WINTERSPRING,
 					IRONFORGE,
 					STORMWIND_CITY,
-					89,		-- Darnassus
+					DARNASSUS,
 					THE_EXODAR,
 					NETHERSTORM,
 					SHATTRATH_CITY,
@@ -518,9 +518,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12334, {	-- Candy Bucket — Darnassus, Craftsmen's Terrace, Alliance
 				["isYearly"] = true,
-				["coord"] = { 62.2, 33.0, 89 },
+				["coord"] = { 62.2, 33.0, DARNASSUS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 89 },	-- Darnassus
+				["maps"] = { DARNASSUS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -2086,7 +2086,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 					WINTERSPRING,
 					IRONFORGE,
 					STORMWIND_CITY,
-					89,		-- Darnassus
+					DARNASSUS,
 					THE_EXODAR,
 					NETHERSTORM,
 					SHATTRATH_CITY,
@@ -2113,7 +2113,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["repeatable"] = true,
 				["provider"] = { "n", 6735 },	-- Innkeeper Saelienne
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 89 },	-- Darnassus
+				["maps"] = { DARNASSUS },
 			}),
 			q(8360,  {	-- Dancing for Marzipan (Horde)
 				["description"] = "Pick up |cFFFFD700Hallow's End Treats for Spoops!|r for this quest to become available.",

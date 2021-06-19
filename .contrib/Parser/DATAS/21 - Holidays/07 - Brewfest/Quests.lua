@@ -54,7 +54,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 					["maps"] = {
 						STORMWIND_CITY,
 						IRONFORGE,
-						89,		-- Darnassus
+						DARNASSUS,
 						THE_EXODAR,
 						504,	-- Isle of Thunder
 					},

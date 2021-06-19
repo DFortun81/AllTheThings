@@ -986,9 +986,9 @@ _.Zones =
 				}),
 				q(27271, {	-- Journey to the Wizard's Sanctum
 					["isBreadcrumb"] = true,
-					["provider"] = { "n", 50690 },	-- Tarelvir (Darnassus)
+					["provider"] = { "n", 50690 },	-- Tarelvir
 					["classes"] = { MAGE },
-					["coord"] = { 37.6, 80.0, 89 },	-- Tarelvir (Darnassus)
+					["coord"] = { 37.6, 80.0, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27271, {	-- Journey to the Wizard's Sanctum
@@ -999,7 +999,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27265, {	-- Lord Grayson Shadowbreaker
-					["provider"] = { "n", 16761 },	-- Baatun (The Exodar)
+					["provider"] = { "n", 16761 },	-- Baatun
 					["coord"] = { 43.6, 78.4, THE_EXODAR },
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
@@ -1008,9 +1008,9 @@ _.Zones =
 				}),
 				q(27265, {	-- Lord Grayson Shadowbreaker
 					["isBreadcrumb"] = true,
-					["provider"] = { "n", 35281 },	-- Rukua (Darnassus)
+					["provider"] = { "n", 35281 },	-- Rukua
 					["classes"] = { PALADIN },
-					["coord"] = { 43.6, 78.4, 89 },	-- Rukua (Darnassus)
+					["coord"] = { 43.6, 78.4, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27265, {	-- Lord Grayson Shadowbreaker
@@ -1021,7 +1021,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27268, {	-- Make Haste to the Cathedral
-					["provider"] = { "n", 16756 },	-- Caedmos (The Exodar)
+					["provider"] = { "n", 16756 },	-- Caedmos
 					["coord"] = { 33.0, 65.4, THE_EXODAR },
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
@@ -1030,9 +1030,9 @@ _.Zones =
 				}),
 				q(27268, {	-- Make Haste to the Cathedral
 					["isBreadcrumb"] = true,
-					["provider"] = { "n", 11401 },	-- Priestess Alathea (Darnassus)
+					["provider"] = { "n", 11401 },	-- Priestess Alathea
 					["classes"] = { PRIEST },
-					["coord"] = { 43.4, 79.2, 89 },	-- Priestess Alathea (Darnassus)
+					["coord"] = { 43.4, 79.2, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27268, {	-- Make Haste to the Cathedral
@@ -1043,7 +1043,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28258, {	-- Meet with Ander Germaine
-					["provider"] = { "n", 17120 },	-- Behomat (The Exodar)
+					["provider"] = { "n", 17120 },	-- Behomat
 					["coord"] = { 56.4, 46.2, THE_EXODAR },
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
@@ -1052,16 +1052,16 @@ _.Zones =
 				}),
 				q(28258, {	-- Meet with Ander Germaine
 					["isBreadcrumb"] = true,
-					["provider"] = { "n", 4087 },	-- Arias'ta Bladesinger (Darnassus)
+					["provider"] = { "n", 4087 },	-- Arias'ta Bladesinger
 					["classes"] = { WARRIOR },
-					["coord"] = { 56.4, 46.2, 89 },	-- Arias'ta Bladesinger (Darnassus)
+					["coord"] = { 56.4, 46.2, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28285, {	-- Meet with High Priestess Laurena
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 11401 },	-- Priestess Alathea
 					["classes"] = { PRIEST },
-					["coord"] = { 43.4, 79.2, 89 },
+					["coord"] = { 43.4, 79.2, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28285, {	-- Meet with High Priestess Laurena
@@ -1072,7 +1072,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28285, {	-- Meet with High Priestess Laurena
-					["provider"] = { "n", 16756 },	-- Caedmos (The Exodar)
+					["provider"] = { "n", 16756 },	-- Caedmos
 					["coord"] = { 33.0, 65.4, THE_EXODAR },
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
@@ -1080,7 +1080,7 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(28268, {	-- Meet with Lord Grayson Shadowbreaker
-					["provider"] = { "n", 16761 },	-- Baatun (The Exodar)
+					["provider"] = { "n", 16761 },	-- Baatun
 					["coord"] = { 39.0, 84.2, THE_EXODAR },
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
@@ -1089,9 +1089,9 @@ _.Zones =
 				}),
 				q(28268, {	-- Meet with Lord Grayson Shadowbreaker
 					["isBreadcrumb"] = true,
-					["provider"] = { "n", 35281 },	-- Rukua (Darnassus)
+					["provider"] = { "n", 35281 },	-- Rukua
 					["classes"] = { PALADIN },
-					["coord"] = { 43.6, 78.4, 89 },	-- Rukua (Darnassus)
+					["coord"] = { 43.6, 78.4, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28268, {	-- Meet with Lord Grayson Shadowbreaker
@@ -1102,7 +1102,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28263, {	-- Meet with Maginor Dumas
-					["provider"] = { "n", 16749 },	-- Edirah (The Exodar)
+					["provider"] = { "n", 16749 },	-- Edirah
 					["coord"] = { 26.2, 6.2, THE_EXODAR },
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
@@ -1111,9 +1111,9 @@ _.Zones =
 				}),
 				q(28263, {	-- Meet with Maginor Dumas
 					["isBreadcrumb"] = true,
-					["provider"] = { "n", 50690 },	-- Tarelvir (Darnassus)
+					["provider"] = { "n", 50690 },	-- Tarelvir
 					["classes"] = { MAGE },
-					["coord"] = { 37.6, 80.0, 89 },	-- Tarelvir (Darnassus)
+					["coord"] = { 37.6, 80.0, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28263, {	-- Meet with Maginor Dumas
@@ -1124,7 +1124,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28260, {	-- Meet with Wulf Hansreim
-					["provider"] = { "n", 17122 },	-- Vord (The Exodar)
+					["provider"] = { "n", 17122 },	-- Vord
 					["coord"] = { 47.2, 88.4, THE_EXODAR },
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
@@ -1140,9 +1140,9 @@ _.Zones =
 				}),
 				q(28260, {	-- Meet with Wulf Hansreim
 					["isBreadcrumb"] = true,
-					["provider"] = { "n", 4138 },	-- Jeen'ra Nightrunner (Darnassus)
+					["provider"] = { "n", 4138 },	-- Jeen'ra Nightrunner
 					["classes"] = { HUNTER },
-					["coord"] = { 43.4, 26.0, 89 },	-- Jeen'ra Nightrunner (Darnassus)
+					["coord"] = { 43.4, 26.0, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				-- END BREADCRUMBS
@@ -1363,7 +1363,7 @@ _.Zones =
 					["provider"] = { "n", 29611 },	-- King Varian Wrynn <King of Stormwind>
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
-					["description"] = "While this Quest is removed, doing the Horde Version of this Quest named The Horde Way (ID:31013) will complete this quest.", 
+					["description"] = "While this Quest is removed, doing the Horde Version of this Quest named The Horde Way (ID:31013) will complete this quest.",
 				}),
 				q(42740, {	-- The Battle for Broken Shore
 					["sourceQuests"] = { 42782 },	-- To Be Prepared
@@ -1776,7 +1776,7 @@ _.Zones =
 
 				-- TODO: ANOTHER SET OF SILLY BREADCRUMBS, PLEASE FIX.
 				q(27266, {	-- Wulf Calls
-					["provider"] = { "n", 17122 },	-- Vord (The Exodar)
+					["provider"] = { "n", 17122 },	-- Vord
 					["coord"] = { 47.2, 88.4, THE_EXODAR },
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
@@ -1792,9 +1792,9 @@ _.Zones =
 				}),
 				q(27266, {	-- Wulf Calls
 					["isBreadcrumb"] = true,
-					["provider"] = { "n", 4138 },	-- Jeen'ra Nightrunner (Darnassus)
+					["provider"] = { "n", 4138 },	-- Jeen'ra Nightrunner
 					["classes"] = { HUNTER },
-					["coord"] = { 43.4, 26.0, 89 },	-- Jeen'ra Nightrunner (Darnassus)
+					["coord"] = { 43.4, 26.0, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				-- END SILL BREADCRUMB SECTION

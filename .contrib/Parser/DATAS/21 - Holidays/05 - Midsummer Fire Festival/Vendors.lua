@@ -10,14 +10,14 @@ _.Holidays =
 				["coords"] = {
 					{ 49.2, 71.8, STORMWIND_CITY },
 					{ 64.6, 26.6, IRONFORGE },
-					{ 62.0, 48.6, 89 },		-- Darnassus
+					{ 62.0, 48.6, DARNASSUS },
 					{ 42.6, 25.6, THE_EXODAR },
 				},
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = {
 					STORMWIND_CITY,
 					IRONFORGE,
-					89,		-- Darnassus
+					DARNASSUS,
 					THE_EXODAR,
 				},
 				["g"] = {

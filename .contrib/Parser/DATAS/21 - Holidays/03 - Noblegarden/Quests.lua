@@ -60,7 +60,7 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 					{ 33.19, 52.65, 126 },	-- Dalaran: Northrend [Goblin]
 					{ 44.16, 58.93, 125 },	-- Dalaran: Northrend [Human]
 					{ 46.31, 72.73, 125 },	-- Dalaran: Northrend [Human]
-					{ 44.74, 52.77, 89 },	-- Darnassus [Night Elf]
+					{ 44.74, 52.77, DARNASSUS },	-- Night Elf
 					{ 30.85, 72.17, IRONFORGE },	-- Dwarf
 					{ 58.14, 49.35, IRONFORGE },	-- Gnome
 					{ 32.29, 64.81, NETHERSTORM },	-- Goblin
@@ -97,7 +97,7 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 				["maps"] = {
 					125,	-- Dalaran: Northrend
 					126,	-- Dalaran: Northrend
-					89,		-- Darnassus
+					DARNASSUS,
 					IRONFORGE,
 					NETHERSTORM,
 					NORTHERN_BARRENS,

@@ -77,7 +77,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 					IRONFORGE,
 					ORGRIMMAR,
 					THUNDER_BLUFF,
-					89,	-- Darnassus
+					DARNASSUS,
 					SILVERMOON_CITY,
 					THE_EXODAR,
 					SHATTRATH_CITY,
@@ -114,7 +114,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["provider"] = { "n", 15892 },	-- Lunar Festival Emissary
 				["isYearly"] = true,
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 89 },	-- Darnassus
+				["maps"] = { DARNASSUS },
 				["u"] = 17,	-- Lunar Festival
 			}),
 			q(8873,  {	-- The Lunar Festival (H)
@@ -152,7 +152,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 					IRONFORGE,
 					ORGRIMMAR,
 					THUNDER_BLUFF,
-					89,	-- Darnassus
+					DARNASSUS,
 					SILVERMOON_CITY,
 					THE_EXODAR,
 					SHATTRATH_CITY,
@@ -956,8 +956,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["description"] = "In order to view this Elder, visit Zidormi at 48.8, 24.4 in Darkshore to be able to visit the past version of Darnassus.  The Elder is on the left side of the Cenarion Enclave.",
 				["provider"] = { "n", 15598 },	-- Elder Bladeswift
 				["isYearly"] = true,
-				["coord"] = { 39.3, 31.8, 89 },
-				["maps"] = { 89 },	-- Darnassus
+				["coord"] = { 39.3, 31.8, DARNASSUS },
+				["maps"] = { DARNASSUS },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(1, {	-- Elder Bladeswift in Darnassus

@@ -1294,7 +1294,7 @@ _.Zones =
 								["sourceQuests"] = { 32414 },	-- Darnassus Attacked?
 								["description"] = "If you leave before completing this quest, you may need to abandon it and pick it near the east gate of Darnassus rather than returning to where you originally picked it up.",
 								["provider"] = { "n", 68651 },	-- Lady Jaina Proudmoore
-								["coord"] = { 39.0, 32.8, 89 },
+								["coord"] = { 39.0, 32.8, DARNASSUS },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							q(32158, {	-- Two Step Program

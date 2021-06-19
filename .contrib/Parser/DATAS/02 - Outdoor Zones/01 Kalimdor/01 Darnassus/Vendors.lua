@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(89, {	-- Darnassus
+		m(DARNASSUS, {
 			n(VENDORS, {
 				n(55285, {	-- Astrid Langstrump <Mountain Horse Handler>
-					["coord"] = { 48.2, 21.8, 89 },
+					["coord"] = { 48.2, 21.8, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(73838),	-- Mountain Horse
@@ -16,7 +16,7 @@ _.Zones =
 					},
 				}),
 				n(4168,  {	-- Elynna <Tailoring Supplies>
-					["coord"] = { 60.4, 36.8, 89 },
+					["coord"] = { 60.4, 36.8, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 3364}, -- Borya <Tailoring Supplies>
@@ -34,7 +34,7 @@ _.Zones =
 					},
 				}),
 				n(4223,  {	-- Fyldan <Cooking Supplies>
-					["coord"] = { 49.6, 36.6, 89 },
+					["coord"] = { 49.6, 36.6, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 49737}, -- Shazdar <Sous Chef>
@@ -45,7 +45,7 @@ _.Zones =
 					},
 				}),
 				n(4232,  {	-- Glorandiir <Axe Merchant>
-					["coord"] = { 60.2, 62.6, 89 },
+					["coord"] = { 60.2, 62.6, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(12249, {	-- Merciless Axe
@@ -54,7 +54,7 @@ _.Zones =
 					},
 				}),
 				n(4173,  {	-- Landria <Bow Merchant>
-					["coord"] = { 59.6, 67.6, 89 },
+					["coord"] = { 59.6, 67.6, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(11303, {	-- Fine Shortbow
@@ -69,7 +69,7 @@ _.Zones =
 					},
 				}),
 				n(52641, {	-- Layna Karner <Blacksmithing Supplies>
-					["coord"] = { 56.6, 52.6, 89 },
+					["coord"] = { 56.6, 52.6, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 3356}, -- Sumi <Blacksmithing Supplies>
@@ -81,7 +81,7 @@ _.Zones =
 					},
 				}),
 				n(4730,  {	-- Lelanai <Saber Handler>
-					["coord"] = { 42.6, 32.8, 89 },
+					["coord"] = { 42.6, 32.8, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(18766),	-- Reins of the Swift Frostsaber
@@ -94,7 +94,7 @@ _.Zones =
 					},
 				}),
 				n(50307, {	-- Lord Candren <Gilneas Quartermaster>
-					["coord"] = { 37.1, 47.4, 89 },	-- Darnassus
+					["coord"] = { 37.1, 47.4, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(64882),	-- Gilneas Tabard
@@ -105,7 +105,7 @@ _.Zones =
 					},
 				}),
 				n(50305, {	-- Moon Priestess Lasara <Darnassus Quartermaster>
-					["coord"] = { 36.17, 48.49, 89 },	-- Darnassus
+					["coord"] = { 36.17, 48.49, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(45579),	-- Darnassus Tabard
@@ -116,7 +116,7 @@ _.Zones =
 					},
 				}),
 				n(4229,  {	-- Mythrin'dir <Trade Supplies>
-					["coord"] = { 58.2, 35.0, 89 },
+					["coord"] = { 58.2, 35.0, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						-- #if AFTER TBC
@@ -133,7 +133,7 @@ _.Zones =
 					},
 				}),
 				n(4225,  {	-- Saenorion <Leatherworking Supplies>
-					["coord"] = { 60.0, 37.2, 89 },
+					["coord"] = { 60.0, 37.2, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 3366}, -- Tamar <Leatherworking Supplies>
@@ -148,7 +148,7 @@ _.Zones =
 					},
 				}),
 				n(8665,  {	-- Shylenai <Owl Trainer>
-					["coord"] = { 64.0, 53.6, 89 },
+					["coord"] = { 64.0, 53.6, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(8500),	-- Great Horned Owl
@@ -156,14 +156,14 @@ _.Zones =
 					},
 				}),
 				n(52644, {	-- Tarien Silverdew <Jewelcrafting Supplies>
-					["coord"] = { 54.6, 29.8, 89 },
+					["coord"] = { 54.6, 29.8, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 50482}, -- Marith Lazuria <Jewelcrafting Supplies>
 					},
 				}),
 				n(4235,  {	-- Turian <Thrown Weapons Merchant>
-					["coord"] = { 59.6, 67.4, 89 },
+					["coord"] = { 59.6, 67.4, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(12247, {	-- Broad Bladed Knife
@@ -172,7 +172,7 @@ _.Zones =
 					},
 				}),
 				n(4226,  {	-- Ulthir <Alchemy Supplies>
-					["coord"] = { 54.6, 39.6, 89 },
+					["coord"] = { 54.6, 39.6, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(5642, {	-- Recipe: Free Action Potion
@@ -185,7 +185,7 @@ _.Zones =
 					},
 				}),
 				n(4228,  {	-- Vaean <Enchanting Supplies>
-					["coord"] = { 56.6, 31.8, 89 },
+					["coord"] = { 56.6, 31.8, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 3346}, -- Kithas <Enchanting Supplies>
@@ -198,7 +198,7 @@ _.Zones =
 					},
 				}),
 				n(4175,  {	-- Vinasia <Cloth Armor Merchant>
-					["coord"] = { 57.8, 71.6, 89 },
+					["coord"] = { 57.8, 71.6, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(12256, {	-- Cindercloth Leggings

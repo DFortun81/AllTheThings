@@ -936,7 +936,7 @@ _.Holidays =
 						},
 						["maps"] = {
 							STORMWIND_CITY,
-							89,	-- Darnassus
+							DARNASSUS,
 						},
 						["races"] = ALLIANCE_ONLY,
 						["isYearly"] = true,
