@@ -1195,6 +1195,7 @@ _.HiddenQuestTriggers =
 		q(30566),	-- FLAG - Pest Problems Training — triggered after turning in daily quest #30319, "Pest Problems"
 		q(31950),	-- Tracking Quest: Move NPCs to Dais — triggered after turning in quest #31945, "Learn and Grow VI: Gina's Vote"
 		q(32357),	-- triggered after watching the RP that takes place after turning in #32316, "Heart of the Alliance," part of the Operation: Shieldwall campaign
+		q(32356),	-- After "Heart of the Alliance" completion
 		q(32395),	-- Tracking Event: Saw Avartu - triggered while on "The Divine Bell," part of the Operation: Shieldwall campaign (at the end of the quest before killing Avartu)
 		q(32339),	-- Rebuilding the Mallet (Tracker) — triggered after turning in The Head and The Harmonic Ointment (The Handle was turned in earlier, but presumably requires all 3), part of the Operation: Shieldwall campaign
 		q(32365),	-- Tracking Event: Epilogue Complete — triggered after turning in "The Silence" and watching the RP, part of the Operation: Shieldwall campaign.  didn't go off until I left the area and turned in another quest (which is a daily that doesn't normally have any additional tracking quests attached, so i know it was from the final campaign quest)
@@ -1312,6 +1313,7 @@ _.HiddenQuestTriggers =
 		q(31054),	-- Townlong Steppes - Unlocked Yalia Sagewhisper
 		q(31607),	-- Townlong Steppes - Tracking Event: Finished Spiteful Spirits & Hatred Becomes Us
 		q(30936),	-- Townlong Steppes - unused. Triggers when turning in "Behind the Battlefront"
+		q(39127),	-- Townlong Steppes - Beyond the Wall (quest duplicate?), gets completed after handing in The Shado-Pan Offensive
 
 		q(32725),	-- Warlock Green Fire Questline - Reached Kanrethad
 		q(32666),	-- Warlock Green Fire Questline - Reached Kanrethad
@@ -2516,6 +2518,7 @@ _.HiddenQuestTriggers =
 		q(54326),	-- triggered when turning in #54135, "Romp in the Swamp," had WM off
 		q(55241),	-- closing the second to last rift while on #55214, "Seam Stress"
 		q(50657),	-- not sure if this is part of the Vulpera allied race questline?  i turned in #53907, picked up #53908, learned the "Nomi's Vintage" toy, refreshed (nothing), went and took the portal from the vineyard to shal'aran, and this popped.  it popped immediately when i clicked the portal
+		q(55628),	-- Tracking Quest
 
 		--	HONEYBACK HIVE
 		q(55906),	-- triggers when pulling out Seabreeze Bumblebee or Bumbles next to Barry at 69.1, 64.2 in Stormsong Valley
@@ -3966,6 +3969,7 @@ _.HiddenQuestTriggers =
 		q(57242),	-- triggered when completing #57205, "A Few Bumps Along the Way"
 		q(62942),	-- Triggered when looting Crafted Crate for WQ Cooking: Spider Jerky
 		q(62922),	-- triggered when turning in the Mixing a Mess WQ
+		q(62944),	-- After picking up the world quest: Engineering: Boneclad Stake Launcher
 		-- Plaguefall dungeon
 		q(62685),	-- Triggers when solo killing last boss of heroic/mythic Plaguefall for collecting the Slime Serpent mount
 
@@ -4410,6 +4414,7 @@ _.HiddenQuestTriggers =
 		q(63195),	-- triggered when starting/accepting Hunt Souleaters
 		q(63196),	-- triggered when starting/accepting Hunt Death Elementals
 		q(63197),	-- triggered when starting/accepting Hunt Winged Souleaters
+		q(68666),	-- Either after killing Ekphoras, Herald of Grief in the maw or after crafting Domination's calling with the three Dominion's etchings
 	--	q(63178),	-- triggered randomly in The Maw 12/16/20
 		-- The Maw rares
 		q(62722),	-- triggered when killing Naelcrotix (possible Wrath of the Jailer rare)

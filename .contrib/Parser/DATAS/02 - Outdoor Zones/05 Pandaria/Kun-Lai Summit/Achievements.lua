@@ -66,7 +66,7 @@ _.Zones =
 							["modelScale"] = 1.5,
 							["questID"] = 31412,
 							["model"] = 446675,
-							["coord"] = { 74.6, 74.8 },	-- needs mapID, probably separate map for cave
+							["coord"] = { 74.6, 74.8, 381 },
 							["icon"] = "Interface\\Icons\\inv_misc_treasurechest01a",
 							["g"] = {
 								i(86223),	-- Agile Sprite Cloak

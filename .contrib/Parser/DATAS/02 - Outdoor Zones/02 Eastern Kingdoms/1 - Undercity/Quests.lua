@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(90, {	-- Undercity
+		m(UNDERCITY, {
 			n(QUESTS, {
 				q(4294,  {	-- ... and a Batch of Ooze
 					["provider"] = { "n", 10136 },	-- Chemist Fuely
@@ -15,7 +15,7 @@ _.Zones =
 					["sourceQuests"] = { 38395 },	-- Completionism
 					["provider"] = { "n", 6566 },	-- Estelle Gendry
 					["coords"] = {
-						{ 78.2, 75.6, 90 },
+						{ 78.2, 75.6, UNDERCITY },
 						{ 56.8, 89.8, ORGRIMMAR },
 					},
 					["races"] = HORDE_ONLY,
@@ -49,7 +49,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 52319 },	-- Mala Skywatcher
 					["classes"] = { DRUID },
-					["coord"] = { 55.0, 50.4, 90 },	-- Mala Skywatcher (Undercity)
+					["coord"] = { 55.0, 50.4, UNDERCITY },
 					["races"] = HORDE_ONLY,
 				}),
 				q(42985, {	-- A Royal Audience
@@ -65,13 +65,13 @@ _.Zones =
 				q(3564,  {	-- Andron's Payment to Jediga
 					["sourceQuests"] = { 3542 },	-- Delivery to Andron Gant
 					["provider"] = { "n", 6522 },	-- Andron Gant
-					["coord"] = { 54.8, 76.3, 90 },
+					["coord"] = { 54.8, 76.3, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(6521,  {	-- An Unholy Alliance
 					["provider"] = { "n", 36273 },	-- Bragor Bloodfist
-					["coord"] = { 56.1, 92.1, 90 },
+					["coord"] = { 56.1, 92.1, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
@@ -99,7 +99,7 @@ _.Zones =
 					["sourceQuests"] = { 1846 },	-- Dragonmaw Shinbones
 					["provider"] = { "n", 6411 },	-- Velora Nitely
 					["classes"] = { WARRIOR },
-					["coord"] = { 62.6,39.4, 90 },
+					["coord"] = { 62.6, 39.4, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
@@ -110,7 +110,7 @@ _.Zones =
 					["sourceQuests"] = { 38346 },	-- Numismatics
 					["provider"] = { "n", 6566 },	-- Estelle Gendry
 					["coords"] = {
-						{ 78.2, 75.6, 90 },
+						{ 78.2, 75.6, UNDERCITY },
 						{ 56.8, 89.8, ORGRIMMAR },
 					},
 					["races"] = HORDE_ONLY,
@@ -135,13 +135,13 @@ _.Zones =
 					["sourceQuests"] = { 1841 },	-- Velora Nitely and the Brutal Legguards
 					["provider"] = { "n", 6411 },	-- Velora Nitely
 					["classes"] = { WARRIOR },
-					["coord"] = { 62.6,39.4, 90 },
+					["coord"] = { 62.6,39.4, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(515,   {	-- Elixir of Agony
 					["provider"] = { "n", 2055 },	-- Master Apothecary Faranell
-					["coord"] = { 48.6, 69.6, 90 },
+					["coord"] = { 48.6, 69.6, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
@@ -167,13 +167,13 @@ _.Zones =
 				}),
 				q(31037, {	-- Enemies Below
 					["provider"] = { "n", 10181 },	-- Lady Sylvanas Windrunner
-					["coord"] = { 57.8, 91.6, 90 },
+					["coord"] = { 57.8, 91.6, UNDERCITY },
 					["races"] = HORDE_ONLY,
 				}),
 				q(1394,  {	-- Final Passage
 					["sourceQuests"] = { 6628 },	-- Test of Lore
 					["provider"] = { "n", 4488 },	-- Parqual Fintallas
-					["coord"] = { 57.6, 65.0, 90 },
+					["coord"] = { 57.6, 65.0, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
@@ -185,13 +185,13 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 20406 },	-- Champion Cyssa Dawnrose
 					["classes"] = { PALADIN },
-					["coord"] = { 57.8, 90.2, 90 },	-- Champion Cyssa Dawnrose (Undercity)
+					["coord"] = { 57.8, 90.2, UNDERCITY },
 					["races"] = { TAUREN },
 				}),
 				q(737,   {	-- Forbidden Knowledge
 					["sourceQuests"] = { 736 },	-- The Star, the Hand and the Heart
 					["provider"] = { "n", 2934 },	-- Keeper Bel'dugur
-					["coord"] = { 53.8, 54.4, 90 },
+					["coord"] = { 53.8, 54.4, UNDERCITY },
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(4984)),	-- Skull of Impending Doom
@@ -229,7 +229,7 @@ _.Zones =
 				}),
 				q(1048,  {	-- Into the Scarlet Monastery
 					["provider"] = { "n", 2425 },	-- Varimathras
-					["coord"] = { 56.3, 92.2, 90 },
+					["coord"] = { 56.3, 92.2, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
@@ -268,7 +268,7 @@ _.Zones =
 				}),
 				q(4642,  {	-- Melding of Influences
 					["provider"] = { "n", 10136 },	-- Chemist Fuely
-					["coord"] = { 47.5, 73.3, 90 },
+					["coord"] = { 47.5, 73.3, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
@@ -279,20 +279,20 @@ _.Zones =
 				q(6322,  {	-- Michael Garrett
 					["sourceQuests"] = { 6323 },	-- Ride to the Undercity
 					["provider"] = { "n", 4556 },	-- Gordon Wendham
-					["coord"] = { 61.8, 42.0, 90 },
+					["coord"] = { 61.8, 42.0, UNDERCITY },
 					["races"] = { UNDEAD },
 				}),
 				q(28289, {	-- Moonglade Calls
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 52319 },	-- Mala Skywatcher
 					["classes"] = { DRUID },
-					["coord"] = { 55.0, 50.4, 90 },	-- Mala Skywatcher (Undercity)
+					["coord"] = { 55.0, 50.4, UNDERCITY },
 				}),
 				q(38346, {	-- Numismatics
 					["sourceQuests"] = { 38306 },	-- Mystery Notebook
 					["provider"] = { "n", 6566 },	-- Estelle Gendry
 					["coords"] = {
-						{ 78.2, 75.6, 90 },
+						{ 78.2, 75.6, UNDERCITY },
 						{ 56.8, 89.8, ORGRIMMAR },
 					},
 					["races"] = HORDE_ONLY,
@@ -304,7 +304,7 @@ _.Zones =
 				}),
 				q(8273,  {	-- Oran's Gratitude
 					["provider"] = { "n", 7825 },	-- Oran Snakewrithe
-					["coord"] = { 73.1, 32.8, 90 },
+					["coord"] = { 73.1, 32.8, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
@@ -331,12 +331,12 @@ _.Zones =
 				q(6324,  {	-- Return to Morris
 					["sourceQuests"] = { 6322 },	-- Michael Garrett
 					["provider"] = { "n", 4551 },	-- Michael Garrett
-					["coord"] = { 63.0, 48.2, 90 },
+					["coord"] = { 63.0, 48.2, UNDERCITY },
 					["races"] = { UNDEAD },
 				}),
 				q(1358,  {	-- Sample for Helbrim
 					["provider"] = { "n", 5204 },	-- Apothecary Zinge
-					["coord"] = { 50.1, 68.0, 90 },
+					["coord"] = { 50.1, 68.0, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
@@ -364,7 +364,7 @@ _.Zones =
 				q(1962,  {	-- Spellfire Robes
 					["provider"] = { "n", 4576 },	-- Josef Gregorian
 					["classes"] = { MAGE },
-					["coord"] = { 70.8, 30.7, 90 },
+					["coord"] = { 70.8, 30.7, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
@@ -374,21 +374,21 @@ _.Zones =
 				q(1160,  {	-- Test of Lore
 					["sourceQuests"] = { 1159 },	-- Test of Lore
 					["provider"] = { "n", 4488 },	-- Parqual Fintallas
-					["coord"] = { 57.6, 65.0, 90 },
+					["coord"] = { 57.6, 65.0, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(6628,  {	-- Test of Lore
 					["sourceQuests"] = { 1160 },	-- Test of Lore
 					["provider"] = { "n", 4488 },	-- Parqual Fintallas
-					["coord"] = { 57.6, 65.0, 90 },
+					["coord"] = { 57.6, 65.0, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(1882,  {	-- The Balnir Farmstead
 					["provider"] = { "n", 4568 },	-- Anastasia Hartwell
 					["classes"] = { MAGE },
-					["coord"] = { 85.1, 10.0, 90 },
+					["coord"] = { 85.1, 10.0, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
@@ -454,7 +454,7 @@ _.Zones =
 					["requireSkill"] = INSCRIPTION,
 					["sourceQuests"] = { 39959 },	-- The Plot Thickens
 					["provider"] = { "n", 97766 },	-- Francis Serbacon <Author Extrodinaire>
-					["coord"] = { 77.8, 38.8, 90 },
+					["coord"] = { 77.8, 38.8, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["g"]= {
 						recipe(192804),	-- Steamy Romance Novel Kit
@@ -473,7 +473,7 @@ _.Zones =
 				}),
 				q(5725,  {	-- The Power to Destroy
 					["provider"] = { "n", 2425 },	-- Varimathras
-					["coord"] = { 56.3, 92.2, 90 },
+					["coord"] = { 56.3, 92.2, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
@@ -496,7 +496,7 @@ _.Zones =
 					["sourceQuests"] = { 38397 },	-- A Curious Oddity
 					["provider"] = { "n", 6566 },	-- Estelle Gendry
 					["coords"] = {
-						{ 78.2, 75.6, 90 },
+						{ 78.2, 75.6, UNDERCITY },
 						{ 56.8, 89.8, ORGRIMMAR },
 					},
 					["races"] = HORDE_ONLY,
@@ -509,14 +509,14 @@ _.Zones =
 				q(736,   {	-- The Star, the Hand and the Heart
 					["sourceQuests"] = { 728 },	-- To the Undercity for Yagyin's Digest
 					["provider"] = { "n", 2934 },	-- Keeper Bel'dugur
-					["coord"] = { 53.8, 54.4, 90 },
+					["coord"] = { 53.8, 54.4, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(42987, {	-- The Victor's Spoils
 					["sourceQuests"] = { 42985 },	-- A Royal Audience
 					["provider"] = { "n", 109471 },	-- Lady Sylvanas Windrunner
-					["coord"] = { 57.8, 91.6, 90 },
+					["coord"] = { 57.8, 91.6, UNDERCITY },
 					["races"] = HORDE_ONLY,
 				}),
 				q(446,   {	-- Thule Ravenclaw
@@ -526,7 +526,7 @@ _.Zones =
 				}),
 				q(1164,  {	-- To Steal From Thieves
 					["provider"] = { "n", 4486 },	-- Genavie Callow
-					["coord"] = { 63.8, 49.5, 90 },
+					["coord"] = { 63.8, 49.5, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {

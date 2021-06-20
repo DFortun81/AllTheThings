@@ -30,15 +30,15 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 				["races"] = HORDE_ONLY,
 				["provider"] = { "n", 32837 },	-- Noblegarden Merchant  [Falconwing]
 				["coords"] = {
-					{ 47.11, 59.89, 7 },	-- Bloodhoof Village, Mulgore
-					{ 61.35, 52.98, 18 },	-- Brill, Tirisfal Glades
-					{ 47.64, 47.31, EVERSONG_WOODS },	-- Falconwing Square, Eversong Woods
-					{ 51.91, 41.87, 1 },	-- Razor Hill, Durotar
+					{ 47.11, 59.89, MULGORE },	-- Bloodhoof Village
+					{ 61.35, 52.98, TIRISFAL_GLADES },	-- Brill
+					{ 47.64, 47.31, EVERSONG_WOODS },	-- Falconwing Square
+					{ 51.91, 41.87, DUROTAR },	-- Razor Hill
 				},
 				["maps"] = {
-					1,	-- Durotar
-					7,	-- Mulgore
-					18,	-- Tirisfal Glades
+					DUROTAR,
+					MULGORE,
+					TIRISFAL_GLADES,
 					EVERSONG_WOODS,
 				},
 				["g"] = {
@@ -60,7 +60,7 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 					{ 33.19, 52.65, 126 },	-- Dalaran: Northrend [Goblin]
 					{ 44.16, 58.93, 125 },	-- Dalaran: Northrend [Human]
 					{ 46.31, 72.73, 125 },	-- Dalaran: Northrend [Human]
-					{ 44.74, 52.77, 89 },	-- Darnassus [Night Elf]
+					{ 44.74, 52.77, DARNASSUS },	-- Night Elf
 					{ 30.85, 72.17, IRONFORGE },	-- Dwarf
 					{ 58.14, 49.35, IRONFORGE },	-- Gnome
 					{ 32.29, 64.81, NETHERSTORM },	-- Goblin
@@ -97,7 +97,7 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 				["maps"] = {
 					125,	-- Dalaran: Northrend
 					126,	-- Dalaran: Northrend
-					89,		-- Darnassus
+					DARNASSUS,
 					IRONFORGE,
 					NETHERSTORM,
 					NORTHERN_BARRENS,
@@ -157,8 +157,8 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 					{ 41.68, 74.18, 210 },	-- The Cape of Stranglethorn [Goblin]
 					{ 40.77, 84.45, 120 },	-- The Storm Peaks [Goblin]
 					{ 40.82, 56.05, THUNDER_BLUFF },	-- Tauren
-					{ 63.22, 47.55, 90 },	-- Undercity [Forsaken]
-					{ 67.75, 39.25, 90 },	-- Undercity [Forsaken]
+					{ 63.22, 47.55, UNDERCITY },	-- Forsaken
+					{ 67.75, 39.25, UNDERCITY },	-- Forsaken
 					{ 58.75, 48.42, WINTERSPRING },	-- Goblin
 					{ 59.77, 49.67, WINTERSPRING },	-- Goblin
 					{ 59.91, 50.89, WINTERSPRING },	-- Goblin
@@ -177,7 +177,7 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 					210,	-- The Cape of Stranglethorn
 					120,	-- The Storm Peaks
 					THUNDER_BLUFF,
-					90,		-- Undercity
+					UNDERCITY,
 					WINTERSPRING,
 				},
 			}),
@@ -208,15 +208,15 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 				["races"] = HORDE_ONLY,
 				["provider"] = { "n", 32798 },	-- Spring Gatherer [Falconwing]
 				["coords"] = {
-					{ 46.92, 59.53, 7 },	-- Bloodhoof Village, Mulgore
-					{ 61.63, 53.12, 18 },	-- Brill, Tirisfal Glades
-					{ 47.77, 47.12, EVERSONG_WOODS },	-- Falconwing Square, Eversong Woods
-					{ 51.82, 42.06, 1 },	-- Razor Hill, Durotar
+					{ 46.92, 59.53, MULGORE },	-- Bloodhoof Village
+					{ 61.63, 53.12, TIRISFAL_GLADES },	-- Brill
+					{ 47.77, 47.12, EVERSONG_WOODS },	-- Falconwing Square
+					{ 51.82, 42.06, DUROTAR },	-- Razor Hill
 				},
 				["maps"] = {
-					1,	-- Durotar
-					7,	-- Mulgore
-					18,	-- Tirisfal Glades
+					DUROTAR,
+					MULGORE,
+					TIRISFAL_GLADES,
 					EVERSONG_WOODS,
 				},
 				["g"] = {

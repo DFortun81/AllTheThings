@@ -204,6 +204,8 @@ local L = app.L;
 	L.QUEST_LOOP = "Скорее всего ATT вырвался из цепочки зацикленных заданий.";
 	L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT = "Задание '%s' [%d] не позволит собрать Хлебную Крошку [%d]";
 	L.QUEST_OBJECTIVE_INVALID = "Недействительная Цель Задания";
+	L.REFRESHING_COLLECTION = "Обновление коллекции...";
+	L.DONE_REFRESHING = "Коллекция обновлена.";
 
 	-- Item Filter Window
 		L.ITEM_FILTER_TEXT = "Фильтровать предметы";
@@ -227,9 +229,9 @@ local L = app.L;
 	L.QUEST_ONCE_PER_ACCOUNT_FORMAT = "Выполнено На: %s";
 
 -- Settings.lua
-	--TODO: L.SKIP_AUTO_REFRESH = "Do Not Auto-Refresh!";
-	--TODO: L.SKIP_AUTO_REFRESH_TOOLTIP = "By default (unchecked), any Settings change which may affect visible data will cause an automatic refresh.\n\nBy enabling this option, Settings changes won't take effect until the User performs a Full Refresh by Shift-Clicking on an ATT window.";
-	--TODO: L.AFTER_REFRESH" = "After Refresh";
+	L.SKIP_AUTO_REFRESH = "Не авто обновлять!";
+	L.SKIP_AUTO_REFRESH_TOOLTIP = "По умолчанию (выключено) любое изменение Настроек, которое меняет отображаемую информацию, будет авто обновлять коллекцию.\n\nПосле включения этой опции, изменения Настроек не будут менять отображение, пока Вы не произведёте Полное Обновление коллекции, сделав Shift+Клик на окне ATT.";
+	L.AFTER_REFRESH = "После Обновления";
 
 	-- General tab
 		-- Mod Title
@@ -521,7 +523,6 @@ local L = app.L;
 		L.SPLIT = "Отдельные Сложности";
 		L.REQUIRES_LEVEL = "Требуется Уровень";
 		L.SECRETS_HEADER = "Секреты";
-		L.SELFIE_FILTERS_HEADER = "Фильтры СЕЛФИ";
 		L.LIMITED_QUANTITY = "Предмет имеется в ограниченном количестве и может не всегда быть доступен у торговца.";
 		L.SOURCE_ID_MISSING = "Пожалуйста, сообщите в канале #errors на нашем сервере Discord, где Вы нашли эту вещь!";
 
@@ -777,19 +778,14 @@ for key,value in pairs({
 			[-652] = "Доспехи Бездушного гладиатора за очки чести",		-- Honor Gear Grievous Season
 			[-651] = "Доспехи Гордого гладиатора за очки чести",		-- Honor Gear Prideful Season
 
-	[-799] = "Бремя вечности",										-- Burden of Eternity
-
 	-- Secret Header [Maybe need to change the numbers again when I need more space for PvP -- sadidorf]
-		[-806] = "Часовой пояс",									-- Waist of Time
-		[-807] = "Коллективный разум",								-- Hivemind
-		[-808] = "Подчиненная темная гончая",						-- Bound Shadehound
+	[-806] = "Часовой пояс",									-- Waist of Time
 
 	-- Mechagon
 		[-850] = "Механизированный сундук",							-- Mechanized Chest
 		[-851] = "Сейф братства Стальных Волн",						-- Irontide Chest
 
 	-- 8.2 Neck Stuff
-		[-852] = "Азеритовые сущности",								-- Azerite Essences
 		[-853] = "Все роли",										-- All Roles
 		[-854] = "Боец",											-- DPS
 		[-855] = "Лекарь",											-- Healers

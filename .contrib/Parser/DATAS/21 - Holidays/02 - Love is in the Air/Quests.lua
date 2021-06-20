@@ -12,14 +12,14 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 				["provider"] = { "n", 37675 },	-- Public Relations Agent
 				["isDaily"] = true,
 				["coords"] = {
-					{ 45.0, 57.4, 89 },	-- Darnassus
+					{ 45.0, 57.4, DARNASSUS },
 					{ 33.8, 66.6, IRONFORGE },
 					{ 52.8, 77.0, ORGRIMMAR },
 					{ 64.2, 67.2, SILVERMOON_CITY },
 					{ 62.2, 75.2, STORMWIND_CITY },
 					{ 74.0, 56.2, THE_EXODAR },
 					{ 43.6, 53.4, THUNDER_BLUFF },
-					{ 66.0, 38.4, 90 },	-- Undercity
+					{ 66.0, 38.4,  UNDERCITY },
 				},
 			}),
 			q(24657, {	-- A Friendly Chat... (A)
@@ -55,7 +55,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 			q(24613, {	-- A Gift for the Banshee Queen
 				["provider"] = { "n", 37887 },	-- Kwee Q. Peddlefeet
 				["isDaily"] = true,
-				["coord"] = { 66.4, 38.2, 90 },	-- Undercity
+				["coord"] = { 66.4, 38.2,  UNDERCITY },
 				["races"] = HORDE_ONLY,
 			}),
 			q(24614, {	-- A Gift for the High Chieftain
@@ -67,7 +67,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 			q(24610, {	-- A Gift for the High Priestess of Elune
 				["provider"] = { "n", 37887 },	-- Kwee Q. Peddlefeet
 				["isDaily"] = true,
-				["coord"] = { 45.2, 57.4, 89 },	-- Darnassus
+				["coord"] = { 45.2, 57.4, DARNASSUS },
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(24597, {	-- A Gift for the King of Stormwind
@@ -92,14 +92,14 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 				["provider"] = { "n", 37675 },	-- Public Relations Agent
 				["isDaily"] = true,
 				["coords"] = {
-					{ 45.0, 57.4, 89 },	-- Darnassus
+					{ 45.0, 57.4, DARNASSUS },
 					{ 33.8, 66.6, IRONFORGE },
 					{ 52.8, 77.0, ORGRIMMAR },
 					{ 64.2, 67.2, SILVERMOON_CITY },
 					{ 62.2, 75.2, STORMWIND_CITY },
 					{ 74.0, 56.2, THE_EXODAR },
 					{ 43.6, 53.4, THUNDER_BLUFF },
-					{ 66.0, 38.4, 90 },	-- Undercity
+					{ 66.0, 38.4,  UNDERCITY },
 				},
 			}),
 			q(9024,  {	-- Aristan's Hunch
@@ -110,14 +110,14 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 				["provider"] = { "n", 37675 },	-- Public Relations Agent
 				["isDaily"] = true,
 				["coords"] = {
-					{ 45.0, 57.4, 89 },	-- Darnassus
+					{ 45.0, 57.4, DARNASSUS },
 					{ 33.8, 66.6, IRONFORGE },
 					{ 52.8, 77.0, ORGRIMMAR },
 					{ 64.2, 67.2, SILVERMOON_CITY },
 					{ 62.2, 75.2, STORMWIND_CITY },
 					{ 74.0, 56.2, THE_EXODAR },
 					{ 43.6, 53.4, THUNDER_BLUFF },
-					{ 66.0, 38.4, 90 },	-- Undercity
+					{ 66.0, 38.4,  UNDERCITY },
 				},
 			}),
 			q(44558, {	-- Crushing the Crown (A)
@@ -408,7 +408,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 				["isBreadcrumb"] = true,
 				["provider"] = { "n", 38293 },	-- Junior Inspector
 				["coords"] = {
-					{ 44.8, 56.6, 89 },	-- Darnassus
+					{ 44.8, 56.6, DARNASSUS },
 					{ 35.0, 68.8, IRONFORGE },
 					{ 76.2, 57.2, THE_EXODAR },
 				},
@@ -420,7 +420,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 				["coords"] = {
 					{ 64.2, 70.0, SILVERMOON_CITY },
 					{ 42.2, 55.75, THUNDER_BLUFF },
-					{ 64.6, 37.4, 90 },	-- Undercity
+					{ 64.6, 37.4,  UNDERCITY },
 				},
 				["races"] = HORDE_ONLY,
 			}),

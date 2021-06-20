@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(1, {	-- Durotar
+		m(DUROTAR, {
 			m(463, {	-- Echo Isles
 				n(VENDORS, {
 					n(113615, {	-- Ravika <Darkspear Quartermaster>

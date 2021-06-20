@@ -5,11 +5,11 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(90, {	-- Undercity
+		m(UNDERCITY, {
 			n(TREASURES, {
 				o(240623, {	-- Sylvanas' Strongbox
 					["description"] = "Use Zidormi to access Tirisfal Glades of the past. Loot the strongbox at the base of a pillar to the left of Sylvanas Windrunner. Alliance characters *can* loot this.",
-					["coord"] = { 58.1, 93.8, 90 },
+					["coord"] = { 58.1, 93.8, UNDERCITY },
 					["modelRotation"] = 270,
 					["modelScale"] = 1.3,
 					["model"] = 195121,

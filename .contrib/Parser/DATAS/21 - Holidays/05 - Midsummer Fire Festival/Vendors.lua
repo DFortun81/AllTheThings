@@ -10,14 +10,14 @@ _.Holidays =
 				["coords"] = {
 					{ 49.2, 71.8, STORMWIND_CITY },
 					{ 64.6, 26.6, IRONFORGE },
-					{ 62.0, 48.6, 89 },		-- Darnassus
+					{ 62.0, 48.6, DARNASSUS },
 					{ 42.6, 25.6, THE_EXODAR },
 				},
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = {
 					STORMWIND_CITY,
 					IRONFORGE,
-					89,		-- Darnassus
+					DARNASSUS,
 					THE_EXODAR,
 				},
 				["g"] = {
@@ -81,14 +81,14 @@ _.Holidays =
 				["coords"] = {
 					{ 47.8, 37.4, ORGRIMMAR },
 					{ 19.8, 24.6, THUNDER_BLUFF },
-					{ 67.8, 11.2, 90 },		-- Undercity
+					{ 67.8, 11.2, UNDERCITY },
 					{ 70.6, 44.0, SILVERMOON_CITY },
 				},
 				["races"] = HORDE_ONLY,
 				["maps"] = {
 					ORGRIMMAR,
 					THUNDER_BLUFF,
-					90,		-- Undercity
+					UNDERCITY,
 					SILVERMOON_CITY,
 				},
 				["g"] = {

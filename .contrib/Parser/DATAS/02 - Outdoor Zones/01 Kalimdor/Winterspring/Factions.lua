@@ -80,7 +80,7 @@ _.Zones =
 						}),
 						q(29034, {	-- They Grow Up So Fast
 							["provider"] = { "n", 10618 },	-- Rivern Frostwind
-							["coord"] = { 46.6, 17.6 },
+							["coord"] = { 46.6, 17.6, WINTERSPRING },
 							["races"] = ALLIANCE_ONLY,
 							["description"] = "This quest must remain in your quest log to do the relevant daily quests.",
 							["sourceQuest"] = 29032,	-- Get Them While They're Young

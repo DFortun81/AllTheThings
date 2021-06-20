@@ -148,7 +148,7 @@ _.Zones =
 						}),
 						q(12717, {	-- Noth's Special Brew
 							["provider"] = { "n", 28919 },	-- Noth the Plaguebringer
-							["coord"] = { 55.8, 52.3 },
+							["coord"] = { 55.8, 52.3, 124 },
 							["sourceQuest"] = 12716,	-- The Plaguebringer's Request
 						}),
 						q(12719, {	-- Nowhere to Run And Nowhere to Hide

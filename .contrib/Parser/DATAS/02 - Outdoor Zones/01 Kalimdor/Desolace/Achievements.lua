@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(66, {	-- Desolace
+		m(DESOLACE, {
 			n(ACHIEVEMENTS, {
 				ach(4930, {	-- Desolace Quests
 					["g"] = {

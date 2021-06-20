@@ -83,7 +83,7 @@ _.ExpansionFeatures =
 					q(43153, {	-- An Eye for a Scepter
 						["sourceQuest"] = 43100,	-- Finding the Scepter
 						["classes"] = { WARLOCK },
-						["coord"] = { 69.2, 79.0, 22 },	-- Western Plaguelands
+						["coord"] = { 69.2, 79.0, WESTERN_PLAGUELANDS },
 						["provider"] = { "n", 109698 },	-- Calydus
 					}),
 					q(41759, {	-- An Unlikely Ally

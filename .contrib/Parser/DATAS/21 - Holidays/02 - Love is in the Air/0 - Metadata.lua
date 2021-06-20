@@ -5,14 +5,14 @@
 _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 	holiday(235468, {	-- Love is in the Air
 		["maps"] = {
-			89,		-- Darnassus
+			DARNASSUS,
 			IRONFORGE,
 			ORGRIMMAR,
 			SILVERMOON_CITY,
 			STORMWIND_CITY,
 			THE_EXODAR,
 			THUNDER_BLUFF,
-			90,		-- Undercity
+			UNDERCITY,
 		},
 	}),
 });

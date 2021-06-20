@@ -7,7 +7,7 @@ _.Factions =
 	faction(1168, {	-- Your Guild (Faction) <Guild Vendor>
 		["coords"] = {
 			{ 48.4, 75.5, ORGRIMMAR },		-- Goram
-			{ 69.8, 43.7, 90 },		-- Kim Horn [Undercity]
+			{ 69.8, 43.7, UNDERCITY },	-- Kim Horn
 			{ 56.8, 88.6, ORGRIMMAR },		-- Kim Horn
 			{ 78.3, 85.2, SILVERMOON_CITY },	-- Larissia
 			{ 52.5, 54.9, 125 },	-- Mirla Silverblaze [Dalaran: Northrend]
@@ -17,11 +17,11 @@ _.Factions =
 			{ 58.7, 46.4, SHATTRATH_CITY },	-- Riha
 			{ 64.1, 77.0, STORMWIND_CITY },	-- Shay Pressler
 			{ 36.3, 85.7, IRONFORGE },	-- Steeg Haskell
-			{ 64.7, 37.6, 89 },		-- Velia Moonbow [Darnassus]
+			{ 64.7, 37.6, DARNASSUS },	-- Velia Moonbow
 			{ 58.0, 43.6, 1163 },	-- Ulla Skycloven [Dazar'alor]
 		},
 		["maps"] = {
-			89,		-- Darnassus
+			DARNASSUS,
 			125,	-- Dalaran: Northrend
 			IRONFORGE,
 			1361,	-- Old Ironforge
@@ -32,7 +32,7 @@ _.Factions =
 			SILVERMOON_CITY,
 			STORMWIND_CITY,
 			THUNDER_BLUFF,
-			90,		-- Undercity
+			UNDERCITY,
 		},
 		["crs"] = {
 			46572,	-- Goram (Orgrimmar)

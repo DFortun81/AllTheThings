@@ -163,7 +163,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				i(163478, {	-- Battered Twilight Scale
-					["coord"] = { 20.2, 54.6, 241 },
+					["coord"] = { 20.2, 54.6, TWILIGHT_HIGHLANDS },
 					["g"] = {
 						q(53171, {	-- Battered Twilight Scale
 							["provider"] = { "n", 132888 },	-- Eryna

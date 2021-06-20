@@ -73,7 +73,7 @@ _.Zones =
 				}),
 				q(938,   {	-- Mist
 					["provider"] = { "n", 3568 },	-- Mist
-					["coord"] = { 34.5, 27.8 },
+					["coord"] = { 34.5, 27.8, TELDRASSIL },
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "If someone else has started this escort quest, you'll need to wait for them to finish before the questgiver reappears.",
 					["g"] = {

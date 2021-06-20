@@ -329,7 +329,7 @@ _.Zones =
 				prof(TAILORING, {
 					q(38971, {	-- Exotic Textiles
 						["requireSkill"] = TAILORING,
-						["coord"] = { 26.6, 71.4 },
+						["coord"] = { 26.6, 71.4,  680 },
 						["provider"] = { "n", 93978 },	-- Leyweaver Athystro
 						["g"] = {
 							i(127026),	-- Pattern: Imbued Silkweave Gloves (Rank 1)
@@ -337,7 +337,7 @@ _.Zones =
 					}),
 					q(38975, {	-- Inspire Me!
 						["requireSkill"] = TAILORING,
-						["coord"] = { 40.2, 69.6 },
+						["coord"] = { 40.2, 69.6, 680 },
 						["provider"] = { "n", 93976 },	-- Leyweaver Mithrogane
 						["g"] = {
 							i(127028),	-- Pattern: Imbued Silkwave Robes (Rank 1)
@@ -347,7 +347,7 @@ _.Zones =
 					q(38968),	-- Proof of Loyalty
 					q(44741, {	-- Return to Karazhan: The Big Bag Theory
 						["requireSkill"] = TAILORING,
-						["coord"] = { 40.4, 69.4 },
+						["coord"] = { 40.4, 69.4, 680 },
 						["provider"] = { "n", 93969 },	-- Leyweaver Tytallo
 						["g"] = {
 							i(142076),	-- Pattern: Imbued Silkweave Bag (Rank 1)

@@ -86,7 +86,7 @@ _.Achievements =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						crit(1, {	-- Brother Malach in the Undercity
-							["coord"] = { 51.6, 22.6, 90 },
+							["coord"] = { 51.6, 22.6, UNDERCITY },
 						}),
 						crit(2, {	-- Durkot Wolfbrother in Warsong Hold
 							["coord"] = { 40.2, 55.0, 114 },

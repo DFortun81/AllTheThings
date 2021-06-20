@@ -117,6 +117,7 @@ local GeneralSettingsBase = {
 		["Thing:Transmog"] = true,
 		["Show:CompletedGroups"] = false,
 		["Show:CollectedThings"] = false,
+		["Skip:AutoRefresh"] = false,
 	},
 };
 local FilterSettingsBase = {
@@ -413,6 +414,8 @@ settings.SetPersonal = function(self, setting, value)
 	self:Refresh();
 end
 settings.Refresh = function(self)
+	settings.SkipAutoRefreshCheckbox:OnRefresh();
+
 	for i,tab in ipairs(self.Tabs) do
 		if tab.OnRefresh then tab:OnRefresh(); end
 		for j,o in ipairs(tab.objects) do
@@ -519,7 +522,7 @@ settings.ToggleAccountMode = function(self)
 end
 settings.SetCompletionistMode = function(self, completionistMode)
 	self:Set("Completionist", completionistMode);
-	wipe(ATTAccountWideData.Sources);
+	app.DoRefreshAppearanceSources = true;
 	self:UpdateMode(1);
 end
 settings.ToggleCompletionistMode = function(self)
@@ -535,16 +538,13 @@ settings.SetDebugMode = function(self, debugMode)
 		settings:SetCompletedGroups(true, true);
 		settings:SetCollectedThings(true, true);
 		if not self:Get("Thing:Transmog") then
-			wipe(ATTAccountWideData.Sources);
-			debugMode = "R";
+			app.DoRefreshAppearanceSources = true;
 		end
 	else
 		settings:SetCompletedGroups(settings:Get("Cache:CompletedGroups"), true);
 		settings:SetCollectedThings(settings:Get("Cache:CollectedThings"), true);
 	end
-	if not debugMode or debugMode ~= "R" then
-		self:UpdateMode(1);
-	end
+	self:UpdateMode(1);
 end
 settings.ToggleDebugMode = function(self)
 	self:SetDebugMode(not self:Get("DebugMode"));
@@ -800,6 +800,9 @@ settings.UpdateMode = function(self, doRefresh)
 		self.NeedsRefresh = true;
 		if doRefresh == "FORCE" or not settings:Get("Skip:AutoRefresh") then
 			self.NeedsRefresh = nil;
+			if app.DoRefreshAppearanceSources then
+				app.RefreshAppearanceSources();
+			end
 			app:RefreshData(nil,nil,true);
 		end
 	end
@@ -833,6 +836,7 @@ function(self)
 end);
 f:SetATTTooltip(L["SKIP_AUTO_REFRESH_TOOLTIP"]);
 f:SetPoint("TOPLEFT", settings.title, "TOPRIGHT", 4, -2);
+settings.SkipAutoRefreshCheckbox = f;
 
 f = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 f:SetPoint("TOPRIGHT", settings, "TOPRIGHT", -8, -8);
@@ -1108,9 +1112,8 @@ function(self)
 end,
 function(self)
 	settings:Set("Thing:Transmog", self:GetChecked());
-	settings:UpdateMode();
 	if self:GetChecked() then
-		wipe(ATTAccountWideData.Sources);
+		app.DoRefreshAppearanceSources = true;
 	end
 	settings:UpdateMode(1);
 end);

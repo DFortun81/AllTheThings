@@ -179,7 +179,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 			}),
 			q(7024,  {	-- Great-father Winter is Here!
 				["provider"] = { "n", 13429 },	-- Nardstrum Copperpinch
-				["maps"] = { 90 },	-- Undercity
+				["maps"] = { UNDERCITY },
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
 			}),

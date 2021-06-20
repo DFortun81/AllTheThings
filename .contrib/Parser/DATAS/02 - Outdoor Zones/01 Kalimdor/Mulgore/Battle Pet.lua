@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(7, {	-- Mulgore
+		m(MULGORE, {
 			filter(101, {	-- Pet Battle
 				p(477, {	-- Gazelle Fawn
 					["crs"] = { 62176 },	-- Gazelle Fawn
@@ -19,7 +19,7 @@ _.Zones =
 					["crs"] = { 61080 },	-- Rabbit
 				}),
 				n(63067, {	-- Naleen
-					["coord"] = { 49.2, 56.1, 7 },
+					["coord"] = { 49.2, 56.1, MULGORE },
 					["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.|r",
 					["g"] = {
 						p(75, {	-- Black Kingsnake
@@ -44,25 +44,25 @@ _.Zones =
 				}),
 				q(31575, {	-- Got One!
 					["provider"] = { "n", 63067 },	-- Naleen
-					["coord"] = { 49.2, 56.1, 7 },
+					["coord"] = { 49.2, 56.1, MULGORE },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 31831,	-- Level Up!
 				}),
 				q(31573, {	-- Learning the Ropes
 					["provider"] = { "n", 63067 },	-- Naleen
-					["coord"] = { 49.2, 56.1, 7 },
+					["coord"] = { 49.2, 56.1, MULGORE },
 					["races"] = HORDE_ONLY,
 					["description"] = "This quest is part of a chain initiated by learning Battle Pet Training.",
 				}),
 				q(31831, {	-- Level Up!
 					["provider"] = { "n", 63067 },	-- Naleen
-					["coord"] = { 49.2, 56.1, 7 },
+					["coord"] = { 49.2, 56.1, MULGORE },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 31574,	-- On The Mend
 				}),
 				q(31574, {	-- On The Mend
 					["provider"] = { "n", 63067 },	-- Naleen
-					["coord"] = { 49.2, 56.1, 7 },
+					["coord"] = { 49.2, 56.1, MULGORE },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 31573,	-- Learning the Ropes
 				}),

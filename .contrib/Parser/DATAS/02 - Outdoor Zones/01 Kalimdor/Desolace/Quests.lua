@@ -5,25 +5,25 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(66, {	-- Desolace
+		m(DESOLACE, {
 			n(QUESTS, {
 				q(14284, {	-- A Revenant's Vengeance
 					["provider"] = { "n", 35902 },	-- Lord Hydronis
-					["coord"] = { 29.0, 8.0, 66 },
+					["coord"] = { 29.0, 8.0, DESOLACE },
 					["sourceQuest"] = 14292,	-- The Enemy of Our Enemy
 				}),
 				q(14305, {	-- A Time to Reap
 					["provider"] = { "n", 36060 },	-- Botanist Ferrah
-					["coord"] = { 58.5, 48.7, 66 },
+					["coord"] = { 58.5, 48.7, DESOLACE },
 				}),
 				q(14195, {	-- All Becoming Clearer
-					["coord"] = { 77.0, 18.0, 66 },
+					["coord"] = { 77.0, 18.0, DESOLACE },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 14360,	-- Nothing a Couple of Melons Won't Fix
 				}),
 				q(1433,  {	-- Alliance Relations
 					["provider"] = { "n", 5641 },	-- Takata Steelblade
-					["coord"] = { 52.6, 54.2, 66 },
+					["coord"] = { 52.6, 54.2, DESOLACE },
 					["sourceQuest"] = 1432,	-- Alliance Relations
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
@@ -31,7 +31,7 @@ _.Zones =
 				}),
 				q(1436,  {	-- Alliance Relations
 					["provider"] = { "n", 5641 },	-- Takata Steelblade
-					["coord"] = { 52.6, 54.2, 66 },
+					["coord"] = { 52.6, 54.2, DESOLACE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 					["u"] = REMOVED_FROM_GAME,
@@ -46,24 +46,24 @@ _.Zones =
 				}),
 				q(14380, {	-- An Impactful Discovery
 					["provider"] = { "n", 36329 },	-- Thargad
-					["coord"] = { 36.7, 71.3, 66 },
+					["coord"] = { 36.7, 71.3, DESOLACE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 14378,	-- Hunting Brendol
 				}),
 				q(14312, {	-- An Introduction Is In Order (is this chain part of Karnum's Glade or Uniting the Tribes?)
 					["provider"] = { "n", 36052 },	-- Garren Darkwind
-					["coord"] = { 58.4, 49.8, 66 },
+					["coord"] = { 58.4, 49.8, DESOLACE },
 					["sourceQuest"] = 14311,	-- Taking Part
 				}),
 				q(14188, {	-- Avenge Furien!
 					["provider"] = { "n", 35295 },	-- Cerelia
-					["coord"] = { 44.6, 29.4, 66 },
+					["coord"] = { 44.6, 29.4, DESOLACE },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 14184,	-- My Time Has Passed
 				}),
 				q(1434,  {	-- Befouled by Satyr
 					["provider"] = { "n", 5641 },	-- Takata Steelblade
-					["coord"] = { 52.6, 54.2, 66 },
+					["coord"] = { 52.6, 54.2, DESOLACE },
 					["sourceQuest"] = 1432,	-- Alliance Relations
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
@@ -76,7 +76,7 @@ _.Zones =
 				}),
 				q(14359, {	-- Blessings From Above
 					["model"] = 200976,
-					["coord"] = { 78.6, 23.1, 66 },
+					["coord"] = { 78.6, 23.1, DESOLACE },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 195497 },	-- Elune's Brazier
 					["repeatable"] = true,
@@ -84,11 +84,11 @@ _.Zones =
 				}),
 				q(14304, {	-- Blood Theory
 					["provider"] = { "n", 36048 },	-- Thressa Amberglen
-					["coord"] = { 58.7, 46.5, 66 },
+					["coord"] = { 58.7, 46.5, DESOLACE },
 				}),
 				q(14334, {	-- Blubbergut
 					["provider"] = { "n", 12031 },	-- Mai'Lahii
-					["coord"] = { 22.6, 71.9, 66 },
+					["coord"] = { 22.6, 71.9, DESOLACE },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 14337,	-- Shadowprey Village
 					["g"] = {
@@ -107,7 +107,7 @@ _.Zones =
 				}),
 				q(5501,  {	-- Bone Collector
 					["provider"] = { "n", 11438 },	-- Bibbly F'utzbuckle
-					["coord"] = { 62.3, 38.9, 66 },
+					["coord"] = { 62.3, 38.9, DESOLACE },
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(15690)),	-- Kodobone Necklace NOTE: Reward has been removed from quest but quest is still available
 					},
@@ -122,12 +122,12 @@ _.Zones =
 				}),
 				q(14314, {	-- Breakout!
 					["provider"] = { "n", 36056 },	-- Khan Leh'Prah
-					["coord"] = { 58.2, 50.0, 66 },
+					["coord"] = { 58.2, 50.0, DESOLACE },
 					["sourceQuest"] = 14312,	-- An Introduction is in Order
 				}),
 				q(14309, {	-- Calming the Kodo
 					["provider"] = { "n", 36048 },	-- Thressa Amberglen
-					["coord"] = { 58.7, 46.4, 66 },
+					["coord"] = { 58.7, 46.4, DESOLACE },
 					["sourceQuest"] = 14304,	-- Blood Theory
 					["g"] = {
 						i(55902), 	-- Kodo-Wrangler Cover
@@ -143,7 +143,7 @@ _.Zones =
 				}),
 				q(14316, {	-- Cenarion Property
 					["provider"] = { "n", 36052 },	-- Garren Darkwind
-					["coord"] = { 58.4, 49.8, 66 },
+					["coord"] = { 58.4, 49.8, DESOLACE },
 					["sourceQuest"] = 14312,	-- An Introduction is in Order
 				}),
 				q(1387,  {	-- Centaur Bounty (A)
@@ -165,7 +165,7 @@ _.Zones =
 				}),
 				q(14335, {	-- Chipping In
 					["provider"] = { "n", 11624 },	-- Taiga Wisemane
-					["coord"] = { 25.8, 68.2, 66 },
+					["coord"] = { 25.8, 68.2, DESOLACE },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						14334,	-- Blubbergut
@@ -199,7 +199,7 @@ _.Zones =
 				}),
 				q(14381, {	-- Cleansing Our Crevasse (A)
 					["provider"] = { "n", 36034 },	-- Karnum Marshweaver
-					["coord"] = { 57.4, 47.6, 66 },
+					["coord"] = { 57.4, 47.6, DESOLACE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 14380,	-- An Impactful Discovery
 					["g"] = {
@@ -211,7 +211,7 @@ _.Zones =
 				}),
 				q(14346, {	-- Cleansing Our Crevasse (H)
 					["provider"] = { "n", 36034 },	-- Karnum Marshweaver
-					["coord"] = { 57.4, 47.7, 66 },
+					["coord"] = { 57.4, 47.7, DESOLACE },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 14343,	-- Maurin's Concoction
 					["g"] = {
@@ -243,7 +243,7 @@ _.Zones =
 				}),
 				q(14394, {	-- Death to Agogridon
 					["provider"] = { "n", 36398 },	-- Khan Leh'Prah
-					["coord"] = { 72.2, 67.3, 66 },
+					["coord"] = { 72.2, 67.3, DESOLACE },
 					["sourceQuest"] = 14393,	-- Into the Fray!
 					["description"] = "This quest was fixed in Patch 8.0.1 to grant Exalted reputation with both the Gelkis and Magram Kolkar factions upon completion. From our understanding, this change may not have been intentional, but nevertheless, we are very, very excited when Blizzard does things like this. Please show your support for future adjustments to the old world - perhaps someday we'll get Shendralar back as well!\n\nIf you completed this quest prior to 8.0.1, go to Karnum's Glade and speak with Karnum Marshweaver (57.4, 47.6) and he'll grant you the rep.\n\n - Crieve",
 					["g"] = {
@@ -261,12 +261,12 @@ _.Zones =
 				}),
 				q(14268, {	-- Deep Impact
 					["provider"] = { "n", 35827 },	-- Valishj
-					["coord"] = { 30.9, 30.8, 66 },
+					["coord"] = { 30.9, 30.8, DESOLACE },
 					["sourceQuest"] = 14264,	-- Wetter than Wet
 				}),
 				q(14318, {	-- Delicate Negotiations
 					["provider"] = { "n", 36056 },	-- Khan Leh'Prah
-					["coord"] = { 58.2, 50.0, 66 },
+					["coord"] = { 58.2, 50.0, DESOLACE },
 					["sourceQuests"] = {
 						14314,	-- Breakout!
 						14316,	-- Cenarion Property
@@ -280,13 +280,13 @@ _.Zones =
 				}),
 				q(14339, {	-- Delivery Device
 					["provider"] = { "n", 4498 },	-- Maurin Bonesplitter
-					["coord"] = { 52.2, 53.4, 66 },
+					["coord"] = { 52.2, 53.4, DESOLACE },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 14338,	-- Ghost Walker Post
 				}),
 				q(14246, {	-- Early Adoption
 					["provider"] = { "n", 35661 },	-- Cenarion Embassador Thunk
-					["coord"] = { 70.3, 32.9, 66 },
+					["coord"] = { 70.3, 32.9, DESOLACE },
 					["g"] = {
 						i(55894),	-- Featherlight Leggings
 						i(55895),	-- Collector's Padded Gauntlets
@@ -316,7 +316,7 @@ _.Zones =
 				}),
 				q(14354, {	-- Elune's Gifts
 					["provider"] = { "n", 5642 },	-- Vahlarriel Demonslayer
-					["coord"] = { 66.4, 11.8, 66 },
+					["coord"] = { 66.4, 11.8, DESOLACE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 14387,	-- Lay of the Land
 					["g"] = {
@@ -328,33 +328,33 @@ _.Zones =
 				}),
 				q(14365, {	-- Ethel Rethor (A)
 					["provider"] = { "n", 5752 },	-- Corporal Melkins
-					["coord"] = { 66.6, 10.8, 66 },
+					["coord"] = { 66.6, 10.8, DESOLACE },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["sourceQuest"] = 14354,	-- Elune's Gifts
 				}),
 				q(14255, {	-- Ethel Rethor (H)
 					["provider"] = { "n", 35295 },	-- Cerelia
-					["coord"] = { 44.6, 29.4, 66 },
+					["coord"] = { 44.6, 29.4, DESOLACE },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["sourceQuest"] = 14189,	-- Translation
 				}),
 				q(14196, {	-- Firestarter
 					["model"] = 199976,
-					["coord"] = { 74.8, 13.2, 66 },
+					["coord"] = { 74.8, 13.2, DESOLACE },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 195445 },	-- Ancient Vortex Runestone
 					["sourceQuest"] = 14195,	-- All Becoming Clearer
 				}),
 				q(5421,  {	-- Fish in a Bucket
 					["provider"] = { "n", 11317 },	-- Jinar'Zillen
-					["coord"] = { 22.4, 73.1, 66 },
+					["coord"] = { 22.4, 73.1, DESOLACE },
 					["races"] = HORDE_ONLY,
 				}),
 				q(14253, {	-- Fletch Me Some Plumage!
 					["provider"] = { "n", 35757 },	-- Bizby
-					["coord"] = { 60.9, 29.0, 66 },
+					["coord"] = { 60.9, 29.0, DESOLACE },
 					["g"] = {
 						i(55891), 	-- Swoop-Tail Shoulders
 						i(55892), 	-- Feather Lined Legguards
@@ -364,7 +364,7 @@ _.Zones =
 				}),
 				q(14191, {	-- Furien's Footsteps
 					["model"] = 198754,
-					["coord"] = { 69.2, 29.2, 66 },
+					["coord"] = { 69.2, 29.2, DESOLACE },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 14189,	-- Translation
 					["providers"] = {
@@ -379,18 +379,18 @@ _.Zones =
 				}),
 				q(6132,  {	-- Get Me Out of Here!
 					["provider"] = { "n", 12277 },	-- Melizza Brimbuzzle
-					["coord"] = { 33.9, 53.5, 66 },
+					["coord"] = { 33.9, 53.5, DESOLACE },
 				}),
 				q(14338, {	-- Ghost Walker Post
 					["provider"] = { "n", 36034 },	-- Karnum Marshweaver
-					["coord"] = { 57.3, 47.7, 66 },
+					["coord"] = { 57.3, 47.7, DESOLACE },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["sourceQuest"] = 14311,	-- Taking Part
 				}),
 				q(6134,  {	-- Ghost-o-plasm Round Up
 					["provider"] = { "n", 6019 },	-- Hornizz Brimbuzzle
-					["coord"] = { 47.8, 61.8, 66 },
+					["coord"] = { 47.8, 61.8, DESOLACE },
 					["g"] = {
 						i(15864), 	-- Condor Bracers
 						i(15865), 	-- Anchorhold Buckler
@@ -407,12 +407,12 @@ _.Zones =
 				}),
 				q(14260, {	-- Going Deep
 					["provider"] = { "n", 35773 },	-- Cenarion Researcher Korrah
-					["coord"] = { 38.8, 26.9, 66 },
+					["coord"] = { 38.8, 26.9, DESOLACE },
 					["sourceQuest"] = 14257,	-- Slitherblade Slaughter
 				}),
 				q(14252, {	-- Good Gold For Bad Tail
 					["provider"] = { "n", 35757 },	-- Bizby
-					["coord"] = { 60.9, 29.0, 66 },
+					["coord"] = { 60.9, 29.0, DESOLACE },
 				}),
 				q(5381, {	-- Hand of Iruxos
 					["u"] = REMOVED_FROM_GAME,
@@ -421,13 +421,13 @@ _.Zones =
 				}),
 				q(14254, {	-- Heavy Metal
 					["model"] = 253308,
-					["coord"] = { 69.2, 21.3, 66 },
+					["coord"] = { 69.2, 21.3, DESOLACE },
 					["provider"] = { "o", 195600 },	-- Smouldering Stone
 					["sourceQuest"] = 14247,	-- Stubborn Lands
 				}),
 				q(14378, {	-- Hunting Brendol
 					["provider"] = { "n", 36329 },	-- Thargad
-					["coord"] = { 36.7, 71.3, 66 },
+					["coord"] = { 36.7, 71.3, DESOLACE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						14373,	-- Infernal Encroachment
@@ -441,7 +441,7 @@ _.Zones =
 				}),
 				q(14373, {	-- Infernal Encroachment
 					["provider"] = { "n", 36329 },	-- Thargad
-					["coord"] = { 36.7, 71.3, 66 },
+					["coord"] = { 36.7, 71.3, DESOLACE },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(55931),	-- Demonkiller Mask
@@ -451,7 +451,7 @@ _.Zones =
 				}),
 				q(14342, {	-- Infernal Encroachment
 					["provider"] = { "n", 5395 },	-- Felgur Twocuts
-					["coord"] = { 56.1, 59.5, 66 },
+					["coord"] = { 56.1, 59.5, DESOLACE },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(55934),	-- Demonkiller Mask
@@ -461,17 +461,17 @@ _.Zones =
 				}),
 				q(14393, {	-- Into the Fray!
 					["provider"] = { "n", 36398 },	-- Khan Leh'Prah
-					["coord"] = { 72.2, 67.3, 66 },
+					["coord"] = { 72.2, 67.3, DESOLACE },
 					["sourceQuest"] = 14332,	-- Time for Change
 				}),
 				q(14376, {	-- Jugkar's Undoing (A)
-					["coord"] = { 51.2, 75.4, 66 },
+					["coord"] = { 51.2, 75.4, DESOLACE },
 					["crs"] = { 35591 },	-- Lesser Infernal
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "i", 49220 },	-- Infernal Power Core
 				}),
 				q(14344, {	-- Jugkar's Undoing (H)
-					["coord"] = { 51.2, 75.4, 66 },
+					["coord"] = { 51.2, 75.4, DESOLACE },
 					["crs"] = { 35591 },	-- Lesser Infernal
 					["races"] = HORDE_ONLY,
 					["provider"] = { "i", 49200 },	-- Infernal Power Core
@@ -503,7 +503,7 @@ _.Zones =
 				}),
 				q(5561,  {	-- Kodo Roundup
 					["provider"] = { "n", 11596 },	-- Smeed Scrabblescrew
-					["coord"] = { 60.8, 61.8, 66 },
+					["coord"] = { 60.8, 61.8, DESOLACE },
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(15697)),	-- Kodo Rustler Boots
 						un(REMOVED_FROM_GAME, i(15698)),	-- Wrangling Spaulders
@@ -511,31 +511,31 @@ _.Zones =
 				}),
 				q(14387, {	-- Lay of the Land
 					["provider"] = { "n", 5396 },	-- Captain Pentigast
-					["coord"] = { 66.6, 11.0, 66 },
+					["coord"] = { 66.6, 11.0, DESOLACE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 14384,	-- Rerouted!
 				}),
 				q(14343, {	-- Maurin's Concoction
 					["provider"] = { "n", 4498 },	-- Maurin Bonesplitter
-					["coord"] = { 52.2, 53.4, 66 },
+					["coord"] = { 52.2, 53.4, DESOLACE },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 14339,	-- Delivery Device
 				}),
 				q(14184, {	-- My Time Has Passed
 					["provider"] = { "n", 35286 },	-- Furien
-					["coord"] = { 54.7, 8.7, 66 },
+					["coord"] = { 54.7, 8.7, DESOLACE },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["sourceQuest"] = 28548,	-- Warchief's Command: Desolace!
 				}),
 				q(14327, {	-- My Word is My Bond
 					["provider"] = { "n", 36163 },	-- Khan Kammah
-					["coord"] = { 71.7, 45.5, 66 },
+					["coord"] = { 71.7, 45.5, DESOLACE },
 					["sourceQuest"] = 14325,	-- Will Work For Food
 				}),
 				q(14282, {	-- Mystery Solved
 					["provider"] = { "n", 35773 },	-- Cenarion Researcher Korrah
-					["coord"] = { 38.7, 26.9, 66 },
+					["coord"] = { 38.7, 26.9, DESOLACE },
 					["sourceQuest"] = 14268,	-- Deep Impact
 					["g"] = {
 						i(55896), 	-- Emblazoned Girdle
@@ -546,16 +546,16 @@ _.Zones =
 				}),
 				q(14251, {	-- New Beginnings
 					["provider"] = { "n", 35757 },	-- Bizby
-					["coord"] = { 60.9, 29.0, 66 },
+					["coord"] = { 60.9, 29.0, DESOLACE },
 				}),
 				q(14329, {	-- Not So Fast!
 					["provider"] = { "n", 36185 },	-- Khan Shodo
-					["coord"] = { 40.4, 95.4, 66 },
+					["coord"] = { 40.4, 95.4, DESOLACE },
 					["sourceQuest"] = 14328,	-- Three Princes
 				}),
 				q(14193, {	-- Nothing a Couple of Melons Won't Fix (A)
 					["model"] = 201275,
-					["coord"] = { 69.2, 29.2, 66 },
+					["coord"] = { 69.2, 29.2, DESOLACE },
 					["races"] = ALLIANCE_ONLY,
 					["providers"] = {
 						{ "o", 195433 },	-- Ancient Tablets (model 201275)
@@ -564,13 +564,13 @@ _.Zones =
 				}),
 				q(14360, {	-- Nothing a Couple of Melons Won't Fix (H)
 					["provider"] = { "0", 195433 },	-- Ancient Tablets
-					["coord"] = { 69.2, 29.2, 66 },
+					["coord"] = { 69.2, 29.2, DESOLACE },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 14191,	-- Furien's Footsteps
 				}),
 				q(14302, {	-- Official Assessment
 					["provider"] = { "n", 35773 },	-- Cenarion Researcher Korrah
-					["coord"] = { 38.7, 26.9, 66 },
+					["coord"] = { 38.7, 26.9, DESOLACE },
 					["sourceQuest"] = 14301,	-- Return and Report
 				}),
 				q(1373,  {	-- Ongeku
@@ -584,19 +584,19 @@ _.Zones =
 				}),
 				q(14361, {	-- Peace of Mind (A)
 					["provider"] = { "n", 5396 },	-- Captain Pentigast
-					["coord"] = { 66.6, 11.0, 66 },
+					["coord"] = { 66.6, 11.0, DESOLACE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 14354,	-- Elune's Gifts
 				}),
 				q(14223, {	-- Peace of Mind (H)
 					["provider"] = { "n", 35298 },	-- Sorrem
-					["coord"] = { 44.9, 29.5, 66 },
+					["coord"] = { 44.9, 29.5, DESOLACE },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 14189,	-- Translation
 				}),
 				q(14374, {	-- Portals of the Legion (A)
 					["provider"] = { "n", 36329 },	-- Thargad
-					["coord"] = { 36.7, 71.3, 66 },
+					["coord"] = { 36.7, 71.3, DESOLACE },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(55937),	-- Bracer of Portals
@@ -607,7 +607,7 @@ _.Zones =
 				}),
 				q(5581,  {	-- Portals of the Legion (H)
 					["provider"] = { "n", 5395 },	-- Felgur Twocuts
-					["coord"] = { 56.1, 59.5, 66 },
+					["coord"] = { 56.1, 59.5, DESOLACE },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(55940),	-- Bracer of Portals
@@ -620,7 +620,7 @@ _.Zones =
 				}),
 				q(14306, {	-- Pulling Weeds
 					["provider"] = { "n", 36060 },	-- Botanist Ferrah
-					["coord"] = { 58.5, 48.7, 66 },
+					["coord"] = { 58.5, 48.7, DESOLACE },
 					["g"] = {
 						i(55899), 	-- Lasherspike Wristguards
 						i(55900), 	-- Puncture-Binding Spaulder
@@ -630,7 +630,7 @@ _.Zones =
 				}),
 				q(14364, {	-- Putting Their Heads Together (A)
 					["provider"] = { "n", 5396 },	-- Captain Pentigast
-					["coord"] = { 66.6, 11.0, 66 },
+					["coord"] = { 66.6, 11.0, DESOLACE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 14363,	-- You'll Know it When You See It
 					["g"] = {
@@ -641,7 +641,7 @@ _.Zones =
 				}),
 				q(14227, {	-- Putting Their Heads Together (H)
 					["provider"] = { "n", 35298 },	-- Sorrem
-					["coord"] = { 44.9, 29.5, 66 },
+					["coord"] = { 44.9, 29.5, DESOLACE },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 14225,	-- You'll Know it When You See It
 					["g"] = {
@@ -667,13 +667,13 @@ _.Zones =
 				}),
 				q(14384, {	-- Rerouted!
 					["provider"] = { "n", 36410 },	-- Officer Jankie
-					["coord"] = { 54.25, 9.29, 66 },
+					["coord"] = { 54.25, 9.29, DESOLACE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 28531,	-- Hero's Call: Desolace!
 				}),
 				q(14301, {	-- Return and Report
 					["provider"] = { "n", 35902 },	-- Lord Hydronis
-					["coord"] = { 29.0, 8.1, 66 },
+					["coord"] = { 29.0, 8.1, DESOLACE },
 					["sourceQuest"] = 14284,	-- A Revenant's Vengeance
 					["g"] = {
 						i(55906), 	-- Balmy Wraps
@@ -697,7 +697,7 @@ _.Zones =
 				}),
 				q(14198, {	-- Rider on the Storm
 					["provider"] = { "o", 195445 },	-- Ancient Vortex Runestone
-					["coord"] = { 74.8, 13.2, 66 },
+					["coord"] = { 74.8, 13.2, DESOLACE },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 14196,	-- Firestarter
 					["g"] = {
@@ -708,7 +708,7 @@ _.Zones =
 				}),
 				q(14379, {	-- Rock Lobstrock!
 					["provider"] = { "n", 36378 },	-- Dumti
-					["coord"] = { 36.4, 71.2, 66 },
+					["coord"] = { 36.4, 71.2, DESOLACE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						14373,	-- Infernal Encroachment
@@ -717,7 +717,7 @@ _.Zones =
 				}),
 				q(14217, {	-- Satyrical Offerings
 					["model"] = 200976,
-					["coord"] = { 78.6, 23.1, 66 },
+					["coord"] = { 78.6, 23.1, DESOLACE },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 195497 },	-- Elune's Brazier
 					["repeatable"] = true,
@@ -729,19 +729,19 @@ _.Zones =
 				}),
 				q(14337, {	-- Shadowprey Village
 					["provider"] = { "n", 36034 },	-- Karnum Marshweaver
-					["coord"] = { 57.3, 47.7, 66 },
+					["coord"] = { 57.3, 47.7, DESOLACE },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["sourceQuest"] = 14327,	-- My Word is My Bond
 				}),
 				q(14257, {	-- Slitherblade Slaughter
 					["provider"] = { "n", 35773 },	-- Cenarion Researcher Korrahb
-					["coord"] = { 38.8, 26.9, 66 },
+					["coord"] = { 38.8, 26.9, DESOLACE },
 					["sourceQuest"] = 14256,	-- The Emerging Threat
 				}),
 				q(14341, {	-- Smeed's Harnesses (breadcrumb?)
 					["provider"] = { "n", 11259 },	-- Nataka Longhorn
-					["coord"] = { 55.4, 55.8, 66 },
+					["coord"] = { 55.4, 55.8, DESOLACE },
 					["races"] = HORDE_ONLY,
 				}),
 				q(1370,  {	-- Stealing Supplies
@@ -773,15 +773,15 @@ _.Zones =
 				}),
 				q(14247, {	-- Stubborn Lands
 					["provider"] = { "n", 35661 },	-- Cenarion Embassador Thunk
-					["coord"] = { 70.3, 32.9, 66 },
+					["coord"] = { 70.3, 32.9, DESOLACE },
 				}),
 				q(14307, {	-- Stubborn Winds
 					["provider"] = { "n", 36034 },	-- Karnum Marshweaver
-					["coord"] = { 57.4, 47.7, 66 },
+					["coord"] = { 57.4, 47.7, DESOLACE },
 				}),
 				q(14311, {	-- Taking Part
 					["provider"] = { "n", 36060 },	-- Botanist Ferrah
-					["coord"] = { 58.5, 48.7, 66 },
+					["coord"] = { 58.5, 48.7, DESOLACE },
 					["sourceQuests"] = {
 						14305,	-- A Time to Reap
 						14306,	-- Pulling Weeds
@@ -789,27 +789,27 @@ _.Zones =
 				}),
 				q(14358, {	-- Ten Pounds of Flesh (A)
 					["model"] = 200976,
-					["coord"] = { 78.6, 23.1, 66 },
+					["coord"] = { 78.6, 23.1, DESOLACE },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 195497 },	-- Elune's Brazier
 				}),
 				q(14213, {	-- Ten Pounds of Flesh (H)
 					["model"] = 200976,
-					["coord"] = { 78.6, 23.1, 66 },
+					["coord"] = { 78.6, 23.1, DESOLACE },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 195497 },	-- Elune's Brazier
 					["sourceQuest"] = 14189,	-- Translation
 				}),
 				q(14372, {	-- Thargad's Camp
 					["provider"] = { "n", 36034 },	-- Karnum Marshweaver
-					["coord"] = { 57.4, 47.6, 66 },
+					["coord"] = { 57.4, 47.6, DESOLACE },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["sourceQuest"] = 14327,	-- My Word is My Bond
 				}),
 				q(1435,  {	-- The Burning of Spirits
 					["provider"] = { "n", 4498 },	-- Maurin Bonesplitter
-					["coord"] = { 52.2, 53.6, 66 },
+					["coord"] = { 52.2, 53.6, DESOLACE },
 					["sourceQuest"] = 1432,	-- Alliance Relations
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
@@ -860,7 +860,7 @@ _.Zones =
 				}),
 				q(14256, {	-- The Emerging Threat
 					["provider"] = { "n", 35773 },	-- Cenarion Researcher Korrah
-					["coord"] = { 38.8, 26.9, 66 },
+					["coord"] = { 38.8, 26.9, DESOLACE },
 					["sourceQuests"] = {
 						14365,	-- Ethel Rethor (alliance)
 						14255,	-- Ethel Rethor (horde)
@@ -868,7 +868,7 @@ _.Zones =
 				}),
 				q(14292, {	-- The Enemy of Our Enemy
 					["provider"] = { "n", 35773 },	-- Cenarion Researh Korrah
-					["coord"] = { 38.8, 26.9, 66 },
+					["coord"] = { 38.8, 26.9, DESOLACE },
 					["sourceQuest"] = 14282,	-- Mystery Solved
 				}),
 				q(1457,  {	-- The Karnitol Shipwreck
@@ -882,7 +882,7 @@ _.Zones =
 				}),
 				q(1454,  {	-- The Karnitol Shipwreck
 					["provider"] = { "n", 5638 },	-- Kreldig Ungor
-					["coord"] = { 66.2, 9.6, 66 },
+					["coord"] = { 66.2, 9.6, DESOLACE },
 					["sourceQuests"] = {
 						1453,	-- Reclaimers' Business in Desolace
 						14354,	-- Elune's Gift
@@ -891,7 +891,7 @@ _.Zones =
 				}),
 				q(1456,  {	-- The Karnitol Shipwreck
 					["provider"] = { "n", 5638 },	-- Kreldig Ungor
-					["coord"] = { 66.2, 9.6, 66 },
+					["coord"] = { 66.2, 9.6, DESOLACE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 1455,	-- The Karnitol Shipwreck
 					["g"] = {
@@ -904,13 +904,13 @@ _.Zones =
 				q(1455,  {	-- The Karnitol Shipwreck
 					["model"] = 196979,
 					["provider"] = { "o", 35251 },	-- Karnitol's Chest
-					["coord"] = { 36.1, 30.4, 66 },
+					["coord"] = { 36.1, 30.4, DESOLACE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 1454,	-- The Karnitol Shipwreck
 				}),
 				q(14410, {	-- The Wilds of Feralas (A)
 					["provider"] = { "n", 36487 },	-- Khan Shodo
-					["coord"] = { 73.3, 73.0, 66 },
+					["coord"] = { 73.3, 73.0, DESOLACE },
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = {
 						14381,	-- Cleansing Our Crevasse (A)
@@ -923,7 +923,7 @@ _.Zones =
 				}),
 				q(26589, {	-- The Wilds of Feralas (H)
 					["provider"] = { "n", 36487 },	-- Khan Shodo
-					["coord"] = { 73.3, 73.0, 66 },
+					["coord"] = { 73.3, 73.0, DESOLACE },
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = {
 						14346,	-- Cleansing Our Crevasse (H)
@@ -932,12 +932,12 @@ _.Zones =
 				}),
 				q(14328, {	-- Three Princes
 					["provider"] = { "n", 36056 },	-- Khan Leh'Prah
-					["coord"] = { 58.2, 50.0, 66 },
+					["coord"] = { 58.2, 50.0, DESOLACE },
 					["sourceQuest"] = 14327,	-- My Word is My Bond
 				}),
 				q(14332, {	-- Time For Change
 					["provider"] = { "n", 36196 },	-- Kherrah
-					["coord"] = { 13.2, 46.7, 67, 66 },	-- quest starts in Maraudon's mapID
+					["coord"] = { 13.2, 46.7, 67 },	-- quest starts in Maraudon's mapID
 					["sourceQuest"] = 14330,	-- Behind Closed Doors
 					["g"] = {
 						i(55914), 	-- Silent Footpads
@@ -948,7 +948,7 @@ _.Zones =
 				}),
 				q(14357, {	-- To the Hilt! (A)
 					["model"] = 198945,
-					["coord"] = { 75.9, 26.5, 66 },
+					["coord"] = { 75.9, 26.5, DESOLACE },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 195517 },	-- Elune's Handmaiden
 					["g"] = {
@@ -960,7 +960,7 @@ _.Zones =
 				}),
 				q(14219, {	-- To the Hilt! (H)
 					["model"] = 198945,
-					["coord"] = { 75.9, 26.5, 66 },
+					["coord"] = { 75.9, 26.5, DESOLACE },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 195517 },	-- Elune's Handmaiden
 					["sourceQuest"] = 14189,	-- Translation
@@ -973,7 +973,7 @@ _.Zones =
 				}),
 				q(14189, {	-- Translation
 					["provider"] = { "n", 35298 },	-- Sorrem
-					["coord"] = { 44.9, 29.5, 66 },
+					["coord"] = { 44.9, 29.5, DESOLACE },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 14188,	-- Avenge Furien!
 				}),
@@ -990,7 +990,7 @@ _.Zones =
 				}),
 				q(14264, {	-- Wetter Than Wet
 					["provider"] = { "n", 35827 },	-- Valishj
-					["coord"] = { 30.9, 30.8, 66 },
+					["coord"] = { 30.9, 30.8, DESOLACE },
 					["sourceQuest"] = 14260,	-- Going Deep
 				}),
 				q(14333, {	-- While You're Here
@@ -1001,18 +1001,18 @@ _.Zones =
 				}),
 				q(14325, {	-- Will Work For Food
 					["provider"] = { "n", 36163 },	-- Khan Kammah
-					["coord"] = { 71.7, 45.5, 66 },
+					["coord"] = { 71.7, 45.5, DESOLACE },
 					["sourceQuest"] = 14318,	-- Delicate Negotiations
 				}),
 				q(14363, {	-- You'll Know It When You See It (A)
 					["provider"] = { "n", 5396 },	-- Captain Pentigast
-					["coord"] = { 66.6, 11.0, 66 },
+					["coord"] = { 66.6, 11.0, DESOLACE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 14361,	-- Peace of Mind
 				}),
 				q(14225, {	-- You'll Know It When You See It (H)
 					["provider"] = { "n", 35298 },	-- Sorrem
-					["coord"] = { 44.8, 29.4, 66 },
+					["coord"] = { 44.8, 29.4, DESOLACE },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 14223,	-- Peace of Mind
 				}),

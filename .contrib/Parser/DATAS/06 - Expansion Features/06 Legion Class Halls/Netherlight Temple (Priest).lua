@@ -69,7 +69,7 @@ _.ExpansionFeatures =
 									["description"] = "Enter Chillheart's room - you don't need to kill the boss. Kill the first trashpack on the right side. The book is on top of the 6th bookshelf from the right.",
 									["provider"] = { "n", 58633 },	-- Instructor Chillheart
 									["coords"] = {
-										{ 69.0, 72.9, 22 },		-- Scholomance entrance
+										{ 69.0, 72.9, WESTERN_PLAGUELANDS },	-- Scholomance entrance
 										{ 58.8, 84.0, SCHOLOMANCE },	--	Actual volume inside the dungeon
 									},
 								}),
@@ -152,7 +152,7 @@ _.ExpansionFeatures =
 					q(40706, {	-- A Legend You Can Hold
 						["sourceQuests"] = { 40705 },	-- Priestly Matters
 						["classes"] = { PRIEST },
-						["coord"] = { 78.9, 41.0, 18 },	-- Eastern Kingdom
+						["coord"] = { 78.9, 41.0, TIRISFAL_GLADES },
 						["provider"] = { "n", 101314 },	-- Alonsus Faol
 					}),
 					q(41626, {	-- A New Threat
@@ -639,7 +639,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 40706 },	-- A Legend You Can Hold
 						["classes"] = { PRIEST },
 						["provider"] = { "n", 101314 },	-- Alonsus Faol
-						["coord"] = { 78.9, 41.0, 18},
+						["coord"] = { 78.9, 41.0, TIRISFAL_GLADES },
 					}),
 					q(45349, {	-- To the Broken Shore
 						-- TBD: fill in other fields

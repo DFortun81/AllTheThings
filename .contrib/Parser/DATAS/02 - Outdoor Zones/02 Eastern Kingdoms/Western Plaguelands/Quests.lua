@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(22, {	-- Western Plaguelands
+		m(WESTERN_PLAGUELANDS, {
 			n(QUESTS, {
 				q(5093, {	-- A Call to Arms: The Plaguelands!
 					["u"] = REMOVED_FROM_GAME,
@@ -24,12 +24,12 @@ _.Zones =
 				}),
 				q(26954, {	-- A Different Approach
 					["provider"] = { "n", 44456 },	-- Adrine Towhide
-					["coord"] = { 48.8, 54.7, 22 },
+					["coord"] = { 48.8, 54.7, WESTERN_PLAGUELANDS },
 					["sourceQuests"] = { 26953 },	-- Zen'kiki, the Druid
 				}),
 				q(27012, {	-- A Gnoll's Resolve
 					["provider"] = { "n", 44472 },	-- Kelly Dumah
-					["coord"] = { 48.4, 31.9, 22 },
+					["coord"] = { 48.4, 31.9, WESTERN_PLAGUELANDS },
 					["sourceQuest"] = 27013,	-- Too Close for Comfort
 					["g"] = {
 						i(62177),	-- Kelly's Booties
@@ -39,7 +39,7 @@ _.Zones =
 				}),
 				q(27167, {	-- A Mighty Hunger
 					["provider"] = { "n", 45165 },	-- Thurman Grant
-					["coord"] = { 42.7, 84.1, 22 },
+					["coord"] = { 42.7, 84.1, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(62159),	-- Bear Hunter's Rifle
@@ -51,7 +51,7 @@ _.Zones =
 				}),
 				q(26999, {	-- A New Era for the Plaguelands
 					["provider"] = { "n", 44454 },	-- Field Agent Kaartish
-					["coord"] = { 49.2, 54.9, 22 },
+					["coord"] = { 49.2, 54.9, WESTERN_PLAGUELANDS },
 					["sourceQuests"] = { 27175, 27233, 26952 },	-- The Menders' Stead (A/A/H versions)
 					["g"] = {
 						i(62174),	-- Bracers of the Returning Wild
@@ -73,7 +73,7 @@ _.Zones =
 				}),
 				q(27089, {	-- Ace in the Hole
 					["provider"] = { "n", 44451 },	-- Lady Sylvanas Windrunner
-					["coord"] = { 49.0, 63.7, 22 },
+					["coord"] = { 49.0, 63.7, WESTERN_PLAGUELANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27087,	-- Lindsay Ravensun, Revealed
 					["g"] = {
@@ -100,7 +100,7 @@ _.Zones =
 				}),
 				q(27206, {	-- Alas, Andorhal
 					["provider"] = { "n", 44453 },	-- Thassarian
-					["coord"] = { 39.9, 69.4, 22 },
+					["coord"] = { 39.9, 69.4, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27204,	-- Aradne
 					["g"] = {
@@ -113,7 +113,7 @@ _.Zones =
 					},
 				}),
 				q(27171, {	-- Ambushed!
-					["coord"] = { 53.7, 80.4, 22 },
+					["coord"] = { 53.7, 80.4, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 205258 },	-- Broken Weapons Crate
 					["sourceQuest"] = 27170,	-- The Abandoned Crypt
@@ -126,30 +126,30 @@ _.Zones =
 				}),
 				q(27002, {	-- An Audience with the Highlord
 					["provider"] = { "n", 11616 },	-- Nathaniel Dumah
-					["coord"] = { 48.1, 32.3, 22 },
+					["coord"] = { 48.1, 32.3, WESTERN_PLAGUELANDS },
 					["sourceQuest"] = 27001,	-- This Means WAR (Wild Arachnid Roundup)
 				}),
 				q(27090, {	-- Andorhal, Once and For All
 					["provider"] = { "n", 45129 },	-- Lurid
-					["coord"] = { 39.3, 70.5, 22 },
+					["coord"] = { 39.3, 70.5, WESTERN_PLAGUELANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27089,	-- Ace in the Hole
 				}),
 				q(27164, {	-- Araj the Summoner (A)
 					["provider"] = { "n", 44467 },	-- Lang Loosegrip
-					["coord"] = { 41.2, 70.0, 22 },
+					["coord"] = { 41.2, 70.0, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27161,	-- The Endless Flow
 				}),
 				q(26925, {	-- Araj the Summoner (H)
 					["provider"] = { "n", 44462 },	-- Jearl Donald
-					["coord"] = { 47.3, 64.4, 22 },
+					["coord"] = { 47.3, 64.4, WESTERN_PLAGUELANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26922,	-- The Endless Flow
 				}),
 				q(27204, {	-- Aradne
 					["provider"] = { "n", 44453 },	-- Thassarian
-					["coord"] = { 39.9, 69.4, 22 },
+					["coord"] = { 39.9, 69.4, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						27202,	-- Brother Against Brother
@@ -173,19 +173,19 @@ _.Zones =
 				}),
 				q(27199, {	-- Ashes to Ashes (A)
 					["provider"] = { "n", 44453 },	-- Thassarian
-					["coord"] = { 39.9, 69.4, 22 },
+					["coord"] = { 39.9, 69.4, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27197,	-- The Battle Resumes!
 				}),
 				q(27086, {	-- Ashes to Ashes (H)
 					["provider"] = { "n", 44452 },	-- Koltira Deathweaver
-					["coord"] = { 46.9, 63.8, 22 },
+					["coord"] = { 46.9, 63.8, WESTERN_PLAGUELANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27083,	-- The Battle Resumes!
 				}),
 				q(27154, {	-- Bagging Bisp
 					["provider"] = { "n", 45147 },	-- Daria L'Rayne
-					["coord"] = { 42.1, 14.9, 22 },
+					["coord"] = { 42.1, 14.9, WESTERN_PLAGUELANDS },
 					["sourceQuest"] = 27153,	-- The Good People of Hearthglen
 				}),
 				q(5021, {	-- Better Late Than Never
@@ -206,7 +206,7 @@ _.Zones =
 				}),
 				q(27202, {	-- Brother Against Brother
 					["provider"] = { "n", 45165 },	-- Thurman Grant
-					["coord"] = { 39.8, 69.7, 22 },
+					["coord"] = { 39.8, 69.7, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27205,	-- The Depravity of the Forsaken
 					["g"] = {
@@ -227,7 +227,7 @@ _.Zones =
 				}),
 				q(27163, {	-- Brute Strength (A)
 					["provider"] = { "n", 44453 },	-- Thassarian
-					["coord"] = { 41.0, 70.4, 22 },
+					["coord"] = { 41.0, 70.4, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						27159,	-- Scourge First... Horde Later
@@ -236,7 +236,7 @@ _.Zones =
 				}),
 				q(27117, {	-- Brute Strength (H)
 					["provider"] = { "n", 44452 },	-- Koltira Deathweaver
-					["coord"] = { 47.7, 65.1, 22 },
+					["coord"] = { 47.7, 65.1, WESTERN_PLAGUELANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						26921,	-- Scourge First... Alliance Later
@@ -245,7 +245,7 @@ _.Zones =
 				}),
 				q(27174, {	-- Combat Training (A)
 					["provider"] = { "n", 45165 },	-- Thurman Grant
-					["coord"] = { 53.8, 64.6, 22 },
+					["coord"] = { 53.8, 64.6, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27173,	-- This Is Our Army
 					["g"] = {
@@ -258,7 +258,7 @@ _.Zones =
 				}),
 				q(26938, {	-- Combat Training (H)
 					["provider"] = { "n", 44466 },	-- Lindsay Ravensun
-					["coord"] = { 40.6, 52.0, 22 },
+					["coord"] = { 40.6, 52.0, WESTERN_PLAGUELANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26937,	-- When Death is Not Enough
 					["g"] = {
@@ -284,7 +284,7 @@ _.Zones =
 				}),
 				q(27054, {	-- Desperate Acts
 					["provider"] = { "n", 44454 },	-- Field Agent Kaartish
-					["coord"] = { 49.2, 54.9, 22 },
+					["coord"] = { 49.2, 54.9, WESTERN_PLAGUELANDS },
 					["sourceQuest"] = 27057,	-- Return to the Stead
 				}),
 				q(5382, {	-- Doctor Theolen Krastinov, the Butcher
@@ -293,12 +293,12 @@ _.Zones =
 				}),
 				q(27157, {	-- Drudges... <Sigh>
 					["provider"] = { "n", 45157 },	-- Lieutenant Myner
-					["coord"] = { 43.2, 15.9, 22 },
+					["coord"] = { 43.2, 15.9, WESTERN_PLAGUELANDS },
 					["sourceQuest"] = 27156,	-- It's About Time!
 				}),
 				q(27053, {	-- Gahrron's Withering Cauldron
 					["provider"] = { "n", 44454 },	-- Field Agent Kaartish
-					["coord"] = { 49.2, 54.9, 22 },
+					["coord"] = { 49.2, 54.9, WESTERN_PLAGUELANDS },
 					["sourceQuests"] = {
 						26999,	-- A New Era for the Plaguelands
 						27002,	-- An Audience with the Highlord
@@ -322,12 +322,12 @@ _.Zones =
 				}),
 				q(27166, {	-- Go Fletch!
 					["provider"] = { "n", 10838 },	-- Commander Ashlam Valorfist
-					["coord"] = { 42.6, 84.0, 22 },
+					["coord"] = { 42.6, 84.0, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26956, {	-- I Ain't Sayin' You a Gourd-Digger...
 					["provider"] = { "n", 44457 },	-- Selyria Groenveld
-					["coord"] = { 48.5, 54.9, 22 },
+					["coord"] = { 48.5, 54.9, WESTERN_PLAGUELANDS },
 				}),
 				q(5944,  {	-- In Dreams
 					["u"] = REMOVED_FROM_GAME,
@@ -343,7 +343,7 @@ _.Zones =
 				q(5407,  {	-- Invader's Scourgestones [A]
 					["provider"] = { "n", 10840 },		-- Argent Officer Pureheart
 					["u"] = REMOVED_FROM_GAME,			-- Removed in Patch 4.0.3
-					["coord"] = { 42.96, 83.55, 22 },
+					["coord"] = { 42.96, 83.55, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(12844)),	-- Argent Dawn Valor Token -- Removed in Patch 4.0.3
@@ -357,14 +357,14 @@ _.Zones =
 						{ "n", 44456 },	-- Adrine Towhide
 					},
 					["coords"] = {
-						{ 42.9, 83.5, 22 },	-- Argent Officer Pureheart (A)
-						{ 48.8, 54.7, 22 },	-- Adrine Towhide
-						{ 47.3, 64.4, 22 },	-- Jearl Donald (H)
+						{ 42.9, 83.5, WESTERN_PLAGUELANDS },	-- Argent Officer Pureheart (A)
+						{ 48.8, 54.7, WESTERN_PLAGUELANDS },	-- Adrine Towhide
+						{ 47.3, 64.4, WESTERN_PLAGUELANDS },	-- Jearl Donald (H)
 					},
 				}),
 				q(27156, {	-- It's About Time!
 					["provider"] = { "n", 45157 },	-- Lieutenant Myner
-					["coord"] = { 43.2, 15.9, 22 },
+					["coord"] = { 43.2, 15.9, WESTERN_PLAGUELANDS },
 				}),
 				q(5515, {	-- Krastinov's Bag of Horrors
 					["u"] = REMOVED_FROM_GAME,
@@ -373,12 +373,12 @@ _.Zones =
 				}),
 				q(27000, {	-- Learning the Ropes
 					["provider"] = { "n", 11616 },	-- Nathaniel Dumah
-					["coord"] = { 48.1, 32.3, 22 },
+					["coord"] = { 48.1, 32.3, WESTERN_PLAGUELANDS },
 					["sourceQuest"] = 26935,	-- Northridge Lumber Mill
 				}),
 				q(27087, {	-- Lindsay Ravensun, Revealed
 					["provider"] = { "n", 44452 },	-- Koltira Deathweaver
-					["coord"] = { 46.9, 63.8, 22 },
+					["coord"] = { 46.9, 63.8, WESTERN_PLAGUELANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						27086,	-- Ashes to Ashes
@@ -404,7 +404,7 @@ _.Zones =
 				}),
 				q(27017, {	-- Memories from a Lost Past
 					["provider"] = { "n", 44458 },	-- Del Gahrron
-					["coord"] = { 50.6, 52.5, 22 },
+					["coord"] = { 50.6, 52.5, WESTERN_PLAGUELANDS },
 					["sourceQuest"] = 26957,	-- The Long Trip Home
 					["g"] = {
 						i(62198),  -- Andrea's Locket
@@ -418,7 +418,7 @@ _.Zones =
 				q(5408,  {	-- Minion's Scourgestones [A]
 					["provider"] = { "n", 10840 },		-- Argent Officer Pureheart
 					["u"] = REMOVED_FROM_GAME,			-- Removed in Patch 4.0.3
-					["coord"] = { 43.0, 84.0, 22 },
+					["coord"] = { 43.0, 84.0, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(12844)),	-- Argent Dawn Valor Token -- Removed in Patch 4.0.3
@@ -439,13 +439,13 @@ _.Zones =
 				}),
 				q(26935, {	-- Northridge Lumber Mill
 					["provider"] = { "n", 44454 },	-- Field Agent Kaartish
-					["coord"] = { 49.2, 54.9, 22 },
+					["coord"] = { 49.2, 54.9, WESTERN_PLAGUELANDS },
 					["sourceQuest"] = 26999,	-- A New Era for the Plaguelands
 					["isBreadcrumb"] = true,	-- for "Learning the Ropes"
 				}),
 				q(27011, {	-- Redpine Thievery
 					["provider"] = { "n", 44472 },	-- Kelly Dumah
-					["coord"] = { 48.4, 31.9, 22 },
+					["coord"] = { 48.4, 31.9, WESTERN_PLAGUELANDS },
 					["sourceQuest"] = 27013,	-- Too Close for Comfort
 				}),
 				q(5230, {	-- Return to the Bulwark
@@ -472,13 +472,13 @@ _.Zones =
 					["sourceQuest"] = 5235,	-- Target: Gahrron's Withering
 				}),
 				q(27057, {	-- Return to the Stead
-					["coord"] = { 62.5, 58.5, 22 },
+					["coord"] = { 62.5, 58.5, WESTERN_PLAGUELANDS },
 					["provider"] = { "o", 176392 },	-- Scourge Cauldron
 					["sourceQuest"] = 27053,	-- Gahrron's Withering Cauldron
 				}),
 				q(27162, {	-- Scholomancer (A)
 					["provider"] = { "n", 44453 },	-- Thassarian
-					["coord"] = { 41.0, 70.4, 22 },
+					["coord"] = { 41.0, 70.4, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						27159,	-- Scourge First... Horde Later
@@ -495,7 +495,7 @@ _.Zones =
 				}),
 				q(26924, {	-- Scholomancer (H)
 					["provider"] = { "n", 44452 },	-- Koltira Deathweaver
-					["coord"] = { 47.7, 65.1, 22 },
+					["coord"] = { 47.7, 65.1, WESTERN_PLAGUELANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						26921,	-- Scourge First... Alliance Later
@@ -512,7 +512,7 @@ _.Zones =
 				}),
 				q(26921, {	-- Scourge First... Alliance Later
 					["provider"] = { "n", 44452 },	-- Koltira Deathweaver
-					["coord"] = { 47.7, 65.2, 22 },
+					["coord"] = { 47.7, 65.2, WESTERN_PLAGUELANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						28750,	-- The Battle for Andorhal (Arcanist Arman, STV)
@@ -523,7 +523,7 @@ _.Zones =
 				}),
 				q(27159, {	-- Scourge First... Horde Later
 					["provider"] = { "n", 44453 },	-- Thassarian
-					["coord"] = { 41.0, 70.4, 22 },
+					["coord"] = { 41.0, 70.4, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						28576,	-- Hero's Call: Western Plaguelands!
@@ -539,7 +539,7 @@ _.Zones =
 				}),
 				q(27055, {	-- Students of Krastinov
 					["provider"] = { "n", 44454 },	-- Field Agent Kaartish
-					["coord"] = { 49.2, 54.9, 22 },
+					["coord"] = { 49.2, 54.9, WESTERN_PLAGUELANDS },
 					["sourceQuest"] = 27054,	-- Desperate Acts
 					["g"] = {
 						i(62201),	-- Kaartish's Sword
@@ -550,7 +550,7 @@ _.Zones =
 				}),
 				q(27198, {	-- Supporting the Troops (A)
 					["provider"] = { "n", 44467 },	-- Lang Loosegrip
-					["coord"] = { 40.0, 69.1, 22 },
+					["coord"] = { 40.0, 69.1, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27197,	-- The Battle Resumes!
 					["g"] = {
@@ -564,7 +564,7 @@ _.Zones =
 				}),
 				q(27085, {	-- Supporting the Troops (H)
 					["provider"] = { "n", 44462 },	-- Jearl Donald
-					["coord"] = { 46.8, 63.4, 22 },
+					["coord"] = { 46.8, 63.4, WESTERN_PLAGUELANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27083,	-- The Battle Resumes!
 					["g"] = {
@@ -578,12 +578,12 @@ _.Zones =
 				}),
 				q(27151, {	-- Taelan Fordring's Legacy
 					["provider"] = { "n", 45147 },	-- Daria L'Rayne
-					["coord"] = { 42.1, 14.9, 22 },
+					["coord"] = { 42.1, 14.9, WESTERN_PLAGUELANDS },
 					["sourceQuest"] = 27002,	-- An Audience With the Highlord
 				}),
 				q(27170, {	-- The Abandoned Crypt
 					["provider"] = { "n", 1854 },	-- High Priest Thel'danis
-					["coord"] = { 52.1, 83.5, 22 },
+					["coord"] = { 52.1, 83.5, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27169,	-- Uther's Blessing
 				}),
@@ -594,7 +594,7 @@ _.Zones =
 				}),
 				q(27158, {	-- The Battle for Andorhal
 					["provider"] = { "n", 10838 },	-- Commander Ashlam Valorfist
-					["coord"] = { 42.6, 84.0, 22 },
+					["coord"] = { 42.6, 84.0, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,	-- for "Scourge First... Horde Later"
 				}),
@@ -605,19 +605,19 @@ _.Zones =
 				}),
 				q(27197, {	-- The Battle Resumes! (A)
 					["provider"] = { "n", 45012 },	-- Durnt Brightfalcon
-					["coord"] = { 50.4, 52.5, 22 },
+					["coord"] = { 50.4, 52.5, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27174,	-- Combat Training
 				}),
 				q(27083, {	-- The Battle Resumes! (H)
 					["provider"] = { "n", 45013 },	-- Damion Steel
-					["coord"] = { 49.2, 53.1, 22 },
+					["coord"] = { 49.2, 53.1, WESTERN_PLAGUELANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26938,	-- Combat Training
 				}),
 				q(27205, {	-- The Depravity of the Forsaken
 					["provider"] = { "n", 44453 },	-- Thassarian
-					["coord"] = { 39.9, 69.4, 22 },
+					["coord"] = { 39.9, 69.4, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						27199,	-- Ashes to Ashes
@@ -631,23 +631,23 @@ _.Zones =
 				}),
 				q(27161, {	-- The Endless Flow (A)
 					["provider"] = { "n", 44467 },	-- Lang Loosegrip
-					["coord"] = { 41.2, 70.0, 22 },
+					["coord"] = { 41.2, 70.0, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26922, {	-- The Endless Flow (H)
 					["provider"] = { "n", 44462 },	-- Jearl Donald
-					["coord"] = { 47.3, 64.4, 22 },
+					["coord"] = { 47.3, 64.4, WESTERN_PLAGUELANDS },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27084, {	-- The Farmers' Militia
 					["provider"] = { "n", 44452 },	-- Koltira Deathweaver
-					["coord"] = { 46.9, 63.8, 22 },
+					["coord"] = { 46.9, 63.8, WESTERN_PLAGUELANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27083,	-- The Battle Resumes!
 				}),
 				q(27153, {	-- The Good People of Hearthglen
 					["provider"] = { "n", 45147 },	-- Daria L'Rayne
-					["coord"] = { 42.1, 14.9, 22 },
+					["coord"] = { 42.1, 14.9, WESTERN_PLAGUELANDS },
 					["sourceQuest"] = 27152,	-- Unusual Behavior... Even For Gnolls
 				}),
 				q(5461, {	-- The Human, Ras Frostwhisper
@@ -671,25 +671,25 @@ _.Zones =
 				}),
 				q(26957, {	-- The Long Trip Home
 					["provider"] = { "n", 44905 },	-- Del Gahrron
-					["coord"] = { 42.6, 14.9, 22 },
+					["coord"] = { 42.6, 14.9, WESTERN_PLAGUELANDS },
 				}),
 				q(27233, {	-- The Menders' Stead
 					["provider"] = { "n", 45165 },	-- Thurman Grant
-					["coord"] = { 53.8, 64.6, 22 },
+					["coord"] = { 53.8, 64.6, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27174,	-- Combat Training
 					["isBreadcrumb"] = true,
 				}),
 				q(27175, {	-- The Menders' Stead
 					["provider"] = { "n", 10840 },	-- Argent Officer Pureheart
-					["coord"] = { 42.9, 83.5, 22 },
+					["coord"] = { 42.9, 83.5, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27174,	-- Combat Training
 					["isBreadcrumb"] = true,
 				}),
 				q(27144, {	-- The Reckoning
 					["provider"] = { "n", 44451 },	-- Lady Sylvanas Windrunner
-					["coord"] = { 49.0, 63.7, 22 },
+					["coord"] = { 49.0, 63.7, WESTERN_PLAGUELANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27090,	-- Andorhal, Once and For All
 					["g"] = {
@@ -712,19 +712,19 @@ _.Zones =
 				}),
 				q(27172, {	-- The Writhing Haunt
 					["provider"] = { "n", 10838 },	-- Commander Ashlam Valorfist
-					["coord"] = { 42.6, 84.0, 22 },
+					["coord"] = { 42.6, 84.0, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27171,	-- Ambushed!
 				}),
 				q(27173, {	-- This Is Our Army
 					["provider"] = { "n", 45165 },	-- Thurman Grant
-					["coord"] = { 53.8, 64.6, 22 },
+					["coord"] = { 53.8, 64.6, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27172,	-- The Writhing Haunt
 				}),
 				q(27001, {	-- This Means WAR (Wild Arachnid Roundup)
 					["provider"] = { "n", 11616 },	-- Nathaniel Dumah
-					["coord"] = { 48.1, 32.3, 22 },
+					["coord"] = { 48.1, 32.3, WESTERN_PLAGUELANDS },
 					["sourceQuest"] = 27000,	-- Learning the Ropes
 					["g"] = {
 						i(62180),   -- Band of the Arachnid Wrangler
@@ -734,7 +734,7 @@ _.Zones =
 				}),
 				q(27168, {	-- Those That Couldn't Let Go
 					["provider"] = { "n", 11053 },	-- High Priestess MacDonnell
-					["coord"] = { 43.4, 83.7, 22 },
+					["coord"] = { 43.4, 83.7, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						-- TODO: Verify if "Victory, For Now" (27165) is also needed
@@ -744,11 +744,11 @@ _.Zones =
 				}),
 				q(27013, {	-- Too Close for Comfort
 					["provider"] = { "n", 44472 },	-- Kelly Dumah
-					["coord"] = { 48.4, 31.9, 22 },
+					["coord"] = { 48.4, 31.9, WESTERN_PLAGUELANDS },
 				}),
 				q(27155, {	-- Turning Yourself In
 					["provider"] = { "n", 45147 },	-- Daria L'Rayne
-					["coord"] = { 42.1, 14.9, 22 },
+					["coord"] = { 42.1, 14.9, WESTERN_PLAGUELANDS },
 					["sourceQuest"] = 27154,	-- Bagging Bisp
 					["g"] = {
 						i(62191),	-- Highlord's Favor
@@ -778,12 +778,12 @@ _.Zones =
 				}),
 				q(27152, {	-- Unusual Behavior... Even For Gnolls
 					["provider"] = { "n", 45147 },	-- Daria L'Rayne
-					["coord"] = { 42.1, 14.9, 22 },
+					["coord"] = { 42.1, 14.9, WESTERN_PLAGUELANDS },
 					["sourceQuest"] = 27151,	-- Taelan Fordring's Legacy
 				}),
 				q(27169, {	-- Uther's Blessing
 					["provider"] = { "n", 10838 },	-- Commander Ashlam Valorfist
-					["coord"] = { 42.6, 84.0, 22 },
+					["coord"] = { 42.6, 84.0, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						27167,	-- A Mighty Hunger
@@ -793,13 +793,13 @@ _.Zones =
 				}),
 				q(27201, {	-- Val'kyr Incursion
 					["provider"] = { "n", 44453 },	-- Thassarian
-					["coord"] = { 39.9, 69.4, 22 },
+					["coord"] = { 39.9, 69.4, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27205,	-- The Depravity of the Forsaken
 				}),
 				q(27165, {	-- Victory, For Now (A)
 					["provider"] = { "n", 44453 },	-- Thassarian
-					["coord"] = { 41.0, 70.4, 22 },
+					["coord"] = { 41.0, 70.4, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						27164,	-- Araj the Summoner
@@ -809,7 +809,7 @@ _.Zones =
 				}),
 				q(26926, {	-- Victory, For Now (H)
 					["provider"] = { "n", 44452 },	-- Koltira Deathweaver
-					["coord"] = { 47.7, 65.1, 22 },
+					["coord"] = { 47.7, 65.1, WESTERN_PLAGUELANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						26925,	-- Araj the Summoner
@@ -819,7 +819,7 @@ _.Zones =
 				}),
 				q(27160, {	-- War Machines (A)
 					["provider"] = { "n", 44471 },	-- Lurid
-					["coord"] = { 41.0, 70.4, 22 },
+					["coord"] = { 41.0, 70.4, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(62143),	-- Gut Opener Gloves
@@ -832,7 +832,7 @@ _.Zones =
 				}),
 				q(26923, {	-- War Machines (H)
 					["provider"] = { "n", 44466 },	-- Lindsay Ravensun
-					["coord"] = { 47.5, 65.5, 22 },
+					["coord"] = { 47.5, 65.5, WESTERN_PLAGUELANDS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(62147),	-- Gut Opener Gloves
@@ -845,17 +845,17 @@ _.Zones =
 				}),
 				q(26937, {	-- When Death is Not Enough
 					["provider"] = { "n", 44466 },	-- Lindsay Ravensun
-					["coord"] = { 40.6, 52.0, 22 },
+					["coord"] = { 40.6, 52.0, WESTERN_PLAGUELANDS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26979,	-- Strange New Faces
 				}),
 				q(26953, {	-- Zen'Kiki, the Druid
 					["provider"] = { "n", 44456 },	-- Adrine Towhide
-					["coord"] = { 48.8, 54.7, 22 },
+					["coord"] = { 48.8, 54.7, WESTERN_PLAGUELANDS },
 				}),
 				q(26955, {	-- Zen'Kiki and the Cultists
 					["provider"] = { "n", 44456 },	-- Adrine Towhide
-					["coord"] = { 48.8, 54.7, 22 },
+					["coord"] = { 48.8, 54.7, WESTERN_PLAGUELANDS },
 					["sourceQuests"] = {
 						26954,	-- A Different Approach
 						27057,	-- Return to the Stead

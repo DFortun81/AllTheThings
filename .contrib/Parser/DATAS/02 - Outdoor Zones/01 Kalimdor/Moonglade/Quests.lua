@@ -36,9 +36,9 @@ _.Zones =
 				}),
 				q(27273, {	-- An Invitation from Moonglade
 					["isBreadcrumb"] = true,
-					["provider"] = { "n", 4217 },	-- Mathrengyl Bearwalker (Darnassus)
+					["provider"] = { "n", 4217 },	-- Mathrengyl Bearwalker
 					["classes"] = { DRUID },
-					["coord"] = { 40.4, 27.6, 89 },	-- Mathrengyl Bearwalker (Darnassus)
+					["coord"] = { 40.4, 27.6, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(5061,  {	-- Aquatic Form

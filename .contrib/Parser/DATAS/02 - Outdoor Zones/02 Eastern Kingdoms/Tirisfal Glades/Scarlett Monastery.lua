@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(18, {	-- Tirisfal Glades
+		m(TIRISFAL_GLADES, {
 			m(19, {	-- Scarlet Monastery Entrance
 				["icon"] = "Interface\\Icons\\inv_helmet_52",
 				["crs"] = {

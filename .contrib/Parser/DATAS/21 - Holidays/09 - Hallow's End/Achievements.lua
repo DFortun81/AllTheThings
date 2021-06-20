@@ -338,12 +338,12 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { 37 },	-- Elwynn Forest
 										}),
 										crit(11, {	-- The Hinterlands, Aerie Peak
-											["coord"] = { 14.2, 44.7, 26 },
-											["maps"] = { 26 },	-- The Hinterlands
+											["coord"] = { 14.2, 44.7, THE_HINTERLANDS },
+											["maps"] = { THE_HINTERLANDS },
 										}),
 										crit(12, {	-- The Hinterlands, Stormfeather Outpost
-											["coord"] = { 66.2, 44.4, 26 },
-											["maps"] = { 26 },	-- The Hinterlands
+											["coord"] = { 66.2, 44.4, THE_HINTERLANDS },
+											["maps"] = { THE_HINTERLANDS },
 										}),
 										crit(13, {	-- Ironforge, The Commons
 											["coord"] = { 18.6, 51.3, IRONFORGE },
@@ -382,8 +382,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { 51 },	-- Swamp of Sorrows
 										}),
 										crit(22, {	-- Western Plaguelands, Chillwind Camp
-											["coord"] = { 43.4, 84.5, 22 },
-											["maps"] = { 22 },	-- Western Plaguelands
+											["coord"] = { 43.4, 84.5, WESTERN_PLAGUELANDS },
+											["maps"] = { WESTERN_PLAGUELANDS },
 										}),
 										crit(23, {	-- Wetlands, Menethil Harbor
 											["coord"] = { 10.8, 60.9, 56 },
@@ -455,12 +455,12 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { HILLSBRAD_FOOTHILLS },
 										}),
 										crit(13, {	-- The Hinterlands, Hiri'watha Research Station
-											["coord"] = { 31.9, 57.9, 26 },
-											["maps"] = { 26 },	-- The Hinterlands
+											["coord"] = { 31.9, 57.9, THE_HINTERLANDS },
+											["maps"] = { THE_HINTERLANDS },
 										}),
 										crit(14, {	-- The Hinterlands, Revantusk Village
-											["coord"] = { 78.2, 81.4, 26 },
-											["maps"] = { 26 },	-- The Hinterlands
+											["coord"] = { 78.2, 81.4, THE_HINTERLANDS },
+											["maps"] = { THE_HINTERLANDS },
 										}),
 										crit(15, {	-- Northern Stranglethorn, Grom'gol Base Camp
 											["coord"] = { 37.3, 51.7, 50 },
@@ -495,20 +495,20 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { 51 },	-- Swamp of Sorrows
 										}),
 										crit(23, {	-- Tirisfal Glades, Brill
-											["coord"] = { 60.9, 51.5, 18 },
-											["maps"] = { 18 },	-- Tirisfal Glades
+											["coord"] = { 60.9, 51.5, TIRISFAL_GLADES },
+											["maps"] = { TIRISFAL_GLADES },
 										}),
 										crit(24, {	-- Tirisfal Glades, The Bulwark
-											["coord"] = { 83.0, 72.0, 18 },
-											["maps"] = { 18 },	-- Tirisfal Glades
+											["coord"] = { 83.0, 72.0, TIRISFAL_GLADES },
+											["maps"] = { TIRISFAL_GLADES },
 										}),
 										crit(25, {	-- Undercity, The Trade Quarter
-											["coord"] = { 67.7, 37.9, 90 },
-											["maps"] = { 90 },	-- Undercity
+											["coord"] = { 67.7, 37.9, UNDERCITY },
+											["maps"] = { UNDERCITY },
 										}),
 										crit(26, {	-- Western Plaguelands, Andorhal
-											["coord"] = { 48.2, 63.7, 22 },
-											["maps"] = { 22 },	-- Western Plaguelands
+											["coord"] = { 48.2, 63.7, WESTERN_PLAGUELANDS },
+											["maps"] = { WESTERN_PLAGUELANDS },
 										}),
 									},
 								}),
@@ -532,16 +532,16 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { DARKSHORE },	-- Darkshore
 										}),
 										crit(5,  {	-- Darnassus, Craftsmen's Terrace
-											["coord"] = { 62.2, 33.0, 89 },
-											["maps"] = { 89 },	-- Darnassus
+											["coord"] = { 62.2, 33.0, DARNASSUS },
+											["maps"] = { DARNASSUS },
 										}),
 										crit(6,  {	-- Desolace, Karnum's Glade
-											["coord"] = { 56.8, 50.0, 66 },
-											["maps"] = { 66 },	-- Desolace
+											["coord"] = { 56.8, 50.0, DESOLACE },
+											["maps"] = { DESOLACE },
 										}),
 										crit(7,  {	-- Desolace, Nijel's Point
-											["coord"] = { 66.3, 6.70, 66 },
-											["maps"] = { 66 },	-- Desolace
+											["coord"] = { 66.3, 6.70, DESOLACE },
+											["maps"] = { DESOLACE },
 										}),
 										crit(8,  {	-- Dustwallow Marsh, Mudsprocket
 											["coord"] = { 41.0, 73.0, DUSTWALLOW_MARSH },
@@ -588,20 +588,20 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { SOUTHERN_BARRENS },
 										}),
 										crit(19, {	-- Stonetalon Mountains, Farwatcher's Glen
-											["coord"] = { 31.5, 60.7, 65 },
-											["maps"] = { 65 },	-- Stonetalon Mountains
+											["coord"] = { 31.5, 60.7, STONETALON_MOUNTAINS },
+											["maps"] = { STONETALON_MOUNTAINS },
 										}),
 										crit(20, {	-- Stonetalon Mountains, Northwatch Expedition Base
-											["coord"] = { 71.0, 79.1, 65 },
-											["maps"] = { 65 },	-- Stonetalon Mountains
+											["coord"] = { 71.0, 79.1, STONETALON_MOUNTAINS },
+											["maps"] = { STONETALON_MOUNTAINS },
 										}),
 										crit(21, {	-- Stonetalon Mountains, Thal'darah Overlook
-											["coord"] = { 39.5, 32.8, 65 },
-											["maps"] = { 65 },	-- Stonetalon Mountains
+											["coord"] = { 39.5, 32.8, STONETALON_MOUNTAINS },
+											["maps"] = { STONETALON_MOUNTAINS },
 										}),
 										crit(22, {	-- Stonetalon Mountains, Windshear Hold
-											["coord"] = { 59.1, 56.3, 65 },
-											["maps"] = { 65 },	-- Stonetalon Mountains
+											["coord"] = { 59.1, 56.3, STONETALON_MOUNTAINS },
+											["maps"] = { STONETALON_MOUNTAINS },
 										}),
 										crit(23, {	-- Tanaris, Bootlegger Outpost
 											["coord"] = { 55.7, 60.9, TANARIS },
@@ -649,16 +649,16 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { AZSHARA },
 										}),
 										crit(6,  {	-- Desolace, Karnum's Glade
-											["coord"] = { 56.8, 50.0, 66 },
-											["maps"] = { 66 },	-- Desolace
+											["coord"] = { 56.8, 50.0, DESOLACE },
+											["maps"] = { DESOLACE },
 										}),
 										crit(7,  {	-- Desolace, Shadowprey Village
-											["coord"] = { 24.1, 68.3, 66 },
-											["maps"] = { 66 },	-- Desolace
+											["coord"] = { 24.1, 68.3, DESOLACE },
+											["maps"] = { DESOLACE },
 										}),
 										crit(8,  {	-- Durotar, Razor Hill
-											["coord"] = { 51.6, 41.7, 1 },
-											["maps"] = { 1 },	-- Durotar
+											["coord"] = { 51.6, 41.7, DUROTAR },
+											["maps"] = { DUROTAR },
 										}),
 										crit(9,  {	-- Dustwallow Marsh, Brackenwall Village
 											["coord"] = { 36.8, 32.4, DUSTWALLOW_MARSH },
@@ -685,8 +685,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { FERALAS },
 										}),
 										crit(15, {	-- Mulgore, Bloodhoof Village
-											["coord"] = { 46.8, 60.4, 7 },
-											["maps"] = { 7 },	-- Mulgore
+											["coord"] = { 46.8, 60.4, MULGORE },
+											["maps"] = { MULGORE },
 										}),
 										crit(16, {	-- Northern Barrens, The Crossroads
 											["coord"] = { 49.5, 58.0, NORTHERN_BARRENS },
@@ -721,12 +721,12 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { SOUTHERN_BARRENS },
 										}),
 										crit(24, {	-- Stonetalon Mountains, Krom'gar Fortress
-											["coord"] = { 66.5, 64.2, 65 },
-											["maps"] = { 65 },	-- Stonetalon Mountains
+											["coord"] = { 66.5, 64.2, STONETALON_MOUNTAINS },
+											["maps"] = { STONETALON_MOUNTAINS },
 										}),
 										crit(25, {	-- Stonetalon Mountains, Sun Rock Retreat
-											["coord"] = { 50.4, 63.8, 65 },
-											["maps"] = { 65 },	-- Stonetalon Mountains
+											["coord"] = { 50.4, 63.8, STONETALON_MOUNTAINS },
+											["maps"] = { STONETALON_MOUNTAINS },
 										}),
 										crit(26, {	-- Tanaris, Bootlegger Outpost
 											["coord"] = { 55.7, 60.9, TANARIS },
@@ -1127,20 +1127,20 @@ _.Holidays = bubbleDown({["u"] = 26},
 							["maps"] = { 198 },	-- Mount Hyjal
 						}),
 						crit(5,  {	-- Twilight Highlands, Firebeard's Patrol
-							["coord"] = { 60.4, 58.2, 241 },
-							["maps"] = { 241 },	-- Twilight Highlands
+							["coord"] = { 60.4, 58.2,TWILIGHT_HIGHLANDS },
+							["maps"] = { TWILIGHT_HIGHLANDS },
 						}),
 						crit(6,  {	-- Twilight Highlands, Highbank
-							["coord"] = { 79.5, 78.5, 241 },
-							["maps"] = { 241 },	-- Twilight Highlands
+							["coord"] = { 79.5, 78.5,TWILIGHT_HIGHLANDS },
+							["maps"] = { TWILIGHT_HIGHLANDS },
 						}),
 						crit(7,  {	-- Twilight Highlands, Thundermar
-							["coord"] = { 49.6, 30.4, 241 },
-							["maps"] = { 241 },	-- Twilight Highlands
+							["coord"] = { 49.6, 30.4,TWILIGHT_HIGHLANDS },
+							["maps"] = { TWILIGHT_HIGHLANDS },
 						}),
 						crit(8,  {	-- Twilight Highlands, Victor's Point
-							["coord"] = { 43.6, 57.3, 241 },
-							["maps"] = { 241 },	-- Twilight Highlands
+							["coord"] = { 43.6, 57.3,TWILIGHT_HIGHLANDS },
+							["maps"] = { TWILIGHT_HIGHLANDS },
 						}),
 						crit(9,  {	-- Uldum, Oasis of Vir'sar
 							["coord"] = { 26.6, 7.30, 249 },
@@ -1188,16 +1188,16 @@ _.Holidays = bubbleDown({["u"] = 26},
 							["maps"] = { 198 },	-- Mount Hyjal
 						}),
 						crit(5,  {	-- Twilight Highlands, Bloodgulch
-							["coord"] = { 53.4, 42.9, 241 },
-							["maps"] = { 241 },	-- Twilight Highlands
+							["coord"] = { 53.4, 42.9,TWILIGHT_HIGHLANDS },
+							["maps"] = { TWILIGHT_HIGHLANDS },
 						}),
 						crit(6,  {	-- Twilight Highlands, Crushblow
-							["coord"] = { 45.1, 76.7, 241 },
-							["maps"] = { 241 },	-- Twilight Highlands
+							["coord"] = { 45.1, 76.7,TWILIGHT_HIGHLANDS },
+							["maps"] = { TWILIGHT_HIGHLANDS },
 						}),
 						crit(7,  {	-- Twilight Highlands, The Krazzworks
-							["coord"] = { 75.4, 16.5, 241 },
-							["maps"] = { 241 },	-- Twilight Highlands
+							["coord"] = { 75.4, 16.5,TWILIGHT_HIGHLANDS },
+							["maps"] = { TWILIGHT_HIGHLANDS },
 						}),
 						crit(8,  {	-- Uldum, Oasis of Vir'sar
 							["coord"] = { 26.6, 7.30, 249 },

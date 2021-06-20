@@ -142,7 +142,7 @@ _.Secrets =
 							}),
 							n(4581, {	-- Rathis Tomber <Trade Supplies>
 								["description"] = "Undercity",
-								["coord"] = { 77.6, 38.6, 90 },
+								["coord"] = { 77.6, 38.6, UNDERCITY },
 								["races"] = HORDE_ONLY,
 							}),
 						},

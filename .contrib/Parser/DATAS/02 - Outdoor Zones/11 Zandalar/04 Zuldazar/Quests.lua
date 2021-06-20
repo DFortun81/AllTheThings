@@ -1379,7 +1379,7 @@ _.Zones =
 				q(47963, {	-- The Ancient One
 					["sourceQuests"] = { 47521 },	-- Midnight in the Garden of the Loa
 					["provider"] = { "n", 133653 },	-- Hexlord Raal
-					["coord"] = { 50.7, 29.6 },
+					["coord"] = { 50.7, 29.6, 862 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47329, {	-- The Bloodwatcher Legacy
@@ -1946,7 +1946,7 @@ _.Zones =
 				}),
 				q(51516, {	-- Atal'Dazr: Ashes of a Warchief
 					["provider"] = { "n", 138138 },	-- Princess Telanji
-					["coord"] = { 43.7, 39.5 },
+					["coord"] = { 43.7, 39.5, 862 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 52113 },	-- Vole'jin, Son of Sen'jin
 				}),
@@ -1964,7 +1964,7 @@ _.Zones =
 				}),
 				q(52113, {	-- Vol'jin, Son of Sen'jin
 					["provider"] = { "n", 137878 },	-- Master Gadrin
-					["coord"] = { 45.5, 35.8 },
+					["coord"] = { 45.5, 35.8, 862 },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 52114 },	-- Honoring a True Leader
 				}),

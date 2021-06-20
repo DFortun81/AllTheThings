@@ -202,12 +202,8 @@ _.WorldEvents =
 						["isRaid"] = true,
 						["questID"] = 47463,
 						["isDaily"] = true,
-						["maps"] = {
-							26,	-- The Hinterlands
-						},
-						["coords"] = {
-							{ 62.87, 25.2, 26 },
-						},
+						["maps"] = { THE_HINTERLANDS },
+						["coord"] = { 62.87, 25.2, THE_HINTERLANDS },
 						["g"] = {
 							i(150429),	-- Emerald Dragonfang
 							i(150412),	-- Hammer of Bestial Fury

@@ -97,8 +97,8 @@ _.Achievements =
 				crit(16, {	-- Gargra (Frostfire Ridge)
 					["coord"] = { 68.6, 64.6, 525 },
 				}),
-				crit(17, {	-- Goz Banefury (Twilight Highlands)
-					["coord"] = { 56.6, 56.8, 241 },
+				crit(17, {	-- Goz Banefury
+					["coord"] = { 56.6, 56.8, TWILIGHT_HIGHLANDS },
 				}),
 				crit(18, {	-- Gutretch (Zul'Drak)
 					["coord"] = { 13.2, 66.8, 121 },

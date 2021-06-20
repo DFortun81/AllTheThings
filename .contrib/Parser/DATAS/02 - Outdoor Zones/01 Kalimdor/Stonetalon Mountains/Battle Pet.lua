@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(65, {	-- Stonetalon Mountains
+		m(STONETALON_MOUNTAINS, {
 			filter(101, {	-- Pet Battle
 				p(487, {	-- Alpine Chipmunk
 					["crs"] = { 62189 },	-- Alpine Chipmunk
@@ -37,7 +37,7 @@ _.Zones =
 				}),
 				q(31817, {	-- Merda Stronghoof
 					["provider"] = { "n", 66137 },	-- Zonya the Sadist
-					["coord"] = { 59.6, 71.6, 65 },
+					["coord"] = { 59.6, 71.6, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["g"] = {
@@ -46,7 +46,7 @@ _.Zones =
 				}),
 				q(31862, {	-- Zonya the Sadist
 					["provider"] = { "n", 66137 },	-- Zonya the Sadist
-					["coord"] = { 59.6, 71.6, 65 },
+					["coord"] = { 59.6, 71.6, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
