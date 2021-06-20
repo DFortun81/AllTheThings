@@ -1,0 +1,33 @@
+unsourced pet items
+-- already in ATT pet journal
+i(182671)	-- Runelight Leaper
+i(183107)	-- Pile of Ashen Dust(Ashen Amalaganation drop)
+i(180629)	-- Thumbbiter
+i(181282)	-- Mu'dud(profession abom stitching)
+i(175114)	-- Renny
+i(181171)	-- Luminous Webspinner(cache of eyes in mald)
+i(180589)	-- Soullocked Sinstone(hidden crypt in raven)
+i(180601)	-- Stonewing Dredwing Pup(court of harvesters tribute)
+i(180603)	-- Violet Dredwing Pup(Rendle and Cudgelface hastily wrapped gift)
+i(180632)	-- Gorm Rootstinger(pet battle arden)
+i(180872)	-- Spirited Skyfoal(adventurers shadowlands)
+i(181170)	-- Pernicious Bonetusk(adventureres shadowlands)
+i(181268)	-- Backbone(abom stitching)
+i(183714)	-- Swamp Reed(raven)
+i(183855)	-- Stony's Infused Ruby(venthyr, repaired mirror in raven)
+i(180869)	-- Devoured Wader
+i(184400)	-- Courage/drop from Courage in Bastion
+i(184397)	-- Lost Featherling/Drop in Bastion
+p(3066)		-- Lucy
+i()
+
+
+
+
+
+-- not in journal
+
+i(183853)	-- Baby Sinfall Screecher
+
+
+i(180841)	-- Olive Dragon Turtle
