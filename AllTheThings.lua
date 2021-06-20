@@ -11445,9 +11445,9 @@ UpdateGroup = function(parent, group, window)
 					-- if app.DEBUG_LOG then print("UpdateGroup.g.forceShow",group.progress,group.total) end
 					visible = true;
 				-- If this group contains Things, show based on visibility filter
-				elseif group.total > 0 then
+				elseif group.total > 0 and app.GroupVisibilityFilter(group) then
 					-- if app.DEBUG_LOG then print("UpdateGroup.g.total",group.progress,group.total) end
-					visible = app.GroupVisibilityFilter(group);
+					visible = true;
 				-- If this group is trackable, then we should show it.
 				elseif app.ShowIncompleteThings(group) then
 					-- if app.DEBUG_LOG then print("UpdateGroup.g.trackable",group.progress,group.total) end
