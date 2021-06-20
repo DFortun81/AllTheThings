@@ -396,7 +396,7 @@ _.Zones =
 					["lvl"] = 10,
 					["groups"] = {
 						objective(1, {	-- 0/1 Signed Recruitment Letter
-							["provider"] = { "i", 4995, 1 },	-- Signed Recruitment Letter
+							["provider"] = { "i", 4995 },	-- Signed Recruitment Letter
 						}),
 					},
 					["timeline"] = {
@@ -515,38 +515,176 @@ _.Zones =
 						"added 7.0.3.21655",
 					},
 				}),
-				q(837,   {	-- Encroachment
-					["u"] = REMOVED_FROM_GAME,
+				q(837, {	-- Encroachment
+					["qg"] = 3139,	-- Gar'Thok
+					["coord"] = { 52, 43.4, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3139 },	-- Gar'Thok
+					["lvl"] = 6,
+					["groups"] = {
+						objective(1, {	-- 0/4 Razormane Quilboar
+							["cr"] = 3111,	-- Razormane Quilboar
+						}),
+						objective(2, {	-- 0/4 Razormane Scout
+							["cr"] = 3112,	-- Razormane Scout
+						}),
+						objective(3, {	-- 0/4 Razormane Dustrunner
+							["cr"] = 3113,	-- Razormane Dustrunner
+						}),
+						objective(4, {	-- 0/4 Razormane Battleguard
+							["cr"] = 3114,	-- Razormane Battleguard
+						}),
+					},
+					["timeline"] = {
+						"added 1.11.1.10772",
+					},
+				}),
+				q(3088, {	-- Encrypted Parchment
+					["qg"] = 3143,	-- Gornek
+					["sourceQuest"] = 788,	-- Cutting Teeth
+					["coord"] = { 42.06, 68.33, DUROTAR },
+					["races"] = { ORC },
+					["classes"] = { ROGUE },
+					["groups"] = {
+						objective(1, {	-- 0/1 Encrypted Parchment
+							["provider"] = { "i", 9560, 1 },	-- Encrypted Parchment
+						}),
+					},
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
+				}),
+				q(3083, {	-- Encrypted Tablet
+					["qg"] = 3143,	-- Gornek
+					["sourceQuest"] = 788,	-- Cutting Teeth
+					["coord"] = { 42.06, 68.33, DUROTAR },
+					["races"] = { TROLL },
+					["classes"] = { ROGUE },
+					["groups"] = {
+						objective(1, {	-- 0/1 Encrypted Tablet
+							["provider"] = { "i", 9554, 1 },	-- Encrypted Tablet
+						}),
+					},
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
+				}),
+				q(3087, {	-- Etched Parchment
+					["qg"] = 3143,	-- Gornek
+					["sourceQuest"] = 788,	-- Cutting Teeth
+					["coord"] = { 42.06, 68.33, DUROTAR },
+					["races"] = { ORC },
+					["classes"] = { HUNTER },
+					["groups"] = {
+						objective(1, {	-- 0/1 Etched Parchment
+							["provider"] = { "i", 9553, 1 },	-- Etched Parchment
+						}),
+					},
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
+				}),
+				q(3082, {	-- Etched Tablet
+					["qg"] = 3143,	-- Gornek
+					["sourceQuest"] = 788,	-- Cutting Teeth
+					["coord"] = { 42.06, 68.33, DUROTAR },
+					["races"] = { TROLL },
+					["classes"] = { HUNTER },
+					["groups"] = {
+						objective(1, {	-- 0/1 Etched Tablet
+							["provider"] = { "i", 9564, 1 },	-- Etched Tablet
+						}),
+					},
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
 				}),
 				q(25176, {	-- Exploiting the Situation
-					["provider"] = { "n", 39423 },	-- Gail Nozzywig
+					["qg"] = 39423,	-- Gail Nozzywig
 					["coord"] = { 53.0, 43.1, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25171,	-- Riding On
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(40522, {	-- Fate of the Horde
-					["provider"] = { "n", 100453 },	-- Eitrigg
-					["lvl"] = 98,
+					["qg"] = 100453,	-- Eitrigg
+					["lvl"] = lvlsquish(98, 10, 98),
 					["coord"] = { 57.2, 10.5, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 40518 },	-- The Battle for Broken Shore
+					["timeline"] = {
+						"added 7.0.3.21655",
+					},
+				}),
+				q(813, {	-- Finding the Antidote
+					["qg"] = 3189,	-- Kor'ghan
+					["coord"] = { 47, 53.4, ORGRIMMAR },
+					["maps"] = { ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/4 Venomtail Poison Sac
+							["provider"] = { "i", 4886, 4 },	-- Venomtail Poison Sac
+							["crs"] = {
+								3226,	-- Corrupted Scorpid
+								5823,	-- Death Flayer
+								3127,	-- Venomtail Scorpid
+							},
+						}),
+						i(4904),	-- Venomtail Antidote
+					},
+					["lvl"] = 7,
+					["timeline"] = {
+						"added 1.11.1.10958",
+						"removed 4.0.3.10000",
+					},
 				}),
 				q(25260, {	-- Fizzled
-					["provider"] = { "n", 39379 },	-- Gor the Enforcer
+					["qg"] = 39379,	-- Gor the Enforcer
 					["coord"] = { 44.9, 14.7, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25196,	-- The Dranosh'ar Blockade
 					["g"] = {
+						objective(1, {	-- 0/1 Fizzle's Orb
+							["provider"] = { "i", 52580 },	-- Fizzle's Orb
+						}),
 						i(53369),	-- Fizzle's Gloves
 						i(53366),	-- Enforcer's Gloves
 						i(131413),	-- Gor's Re-Inforced Gloves
 					},
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
+				}),
+				q(926, {	-- Flawed Power Stone
+					["provider"] = { "o", 5620 },	-- Flawed Power Stones
+					["coord"] = { 62.4, 20, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
+					["g"] = {
+						{
+							["itemID"] = 4986,	-- Flawed Power Stone
+							["questID"] = 924,	-- The Demon Seed
+						},
+					},
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
 				}),
 				q(25446, {	-- Frogs Away!
-					["u"] = REMOVED_FROM_GAME,
 					["sourceQuest"] = 25444,	-- Da Perfect Spies
+					["g"] = {
+						i(53637),	-- Sack o' Frogs
+					},
+					["timeline"] = {
+						"added 3.3.3.11573",
+					},
 				}),
 				q(25173, {	-- From Bad to Worse
 					["provider"] = { "n", 3139 },	-- Gar'Thok
@@ -554,54 +692,181 @@ _.Zones =
 					["coord"] = { 51.9, 43.4, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25171,	-- Riding On
+					["groups"] = {
+						objective(1, {	-- 0/6 Northwatch Marine <Northwatch Expeditionary Force>
+							["cr"] = 39267,	-- Northwatch Marine <Northwatch Expeditionary Force>
+						}),
+						objective(2, {	-- 0/6 Northwatch Sharpshooter <Northwatch Expeditionary Force>
+							["cr"] = 39268,	-- Northwatch Sharpshooter <Northwatch Expeditionary Force>
+						}),
+						objective(3, {	-- 0/1 Lieutenant Palliter <Northwatch Expeditionary Force>
+							["cr"] = 39269,	-- Lieutenant Palliter <Northwatch Expeditionary Force>
+						}),
+					},
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
-				q(825,   {	-- From The Wreckage...
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3139 },	-- Gar'Thok
+				q(825, {	-- From The Wreckage....
+					["qg"] = 3139,	-- Gar'Thok
 					["sourceQuest"] = 784,	-- Vanquish the Betrayers
-				}),
-				q(5648,  {	-- Garments of Spirituality
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 3706 },	-- Tai'jin
-					["races"] = { TROLL },
-					["classes"] = { PRIEST },
+					["coord"] = { 52, 43.4, DUROTAR },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 3,
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(16606)),	-- Juju Hex Robes
+						objective(1, {	-- 0/3 Gnomish Tools
+							["provider"] = { "i", 4863, },	-- Gnomish Tools
+						}),
+						i(4936),	-- Dirt-trodden Boots
+						i(4928),	-- Sandrunner Wristguards
+						i(4935),	-- Wide Metal Girdle
+					},
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
+				}),
+				q(4402, {	-- Galgar's Cactus Apple Surprise
+					["qg"] = 9796,	-- Galgar
+					["sourceQuest"] = 788,	-- Cutting Teeth
+					["coord"] = { 42.73, 67.23, DUROTAR },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Cactus Apple
+							["provider"] = { "i", 11583, },	-- Cactus Apple
+						}),
+					},
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
+				}),
+				q(1506, {	-- Gan'rul's Summons
+					["qg"] = 3294,	-- Ophek
+					["coord"] = { 54.2, 41.2, DUROTAR },
+					["races"] = { ORC, TROLL, UNDEAD },
+					["classes"] = { WARLOCK },
+					["altQuests"] = {
+						1478,	-- Halgar's Summons
+					},
+					["lvl"] = 10,
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
+				}),
+				q(5648, {	-- Garments of Spirituality
+					["qg"] = 3706,	-- Tai'jin
+					["sourceQuest"] = 5649,	-- In Favor of Spirituality
+					["coord"] = { 54.2, 42.8, DUROTAR },
+					["classes"] = { PRIEST },
+					["races"] = { TROLL },
+					["lvl"] = 5,
+					["groups"] = {
+						i(16606),	-- Juju Hex Robes
+					},
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
 					},
 				}),
 				q(25259, {	-- Gaur Icehorn
-					["provider"] = { "n", 39590 },	-- Spiketooth
+					["qg"] = 39590,	-- Spiketooth
 					["coord"] = { 58.7, 23.1, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 25256	-- Sent for Help
+					["sourceQuest"] = 25256,	-- Sent for Help
+					["groups"] = {
+						objective(1, {	-- 0/1 Gaur Icehorn
+							["cr"] = 39352,	-- Gaur Icehorn
+						}),
+					},
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(25257, {	-- Ghislania
-					["provider"] = { "n", 39590 },	-- Spiketooth
+					["qg"] = 39590,	-- Spiketooth
 					["coord"] = { 58.7, 23.1, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 25256	-- Sent for Help
+					["sourceQuest"] = 25256,	-- Sent for Help
+					["groups"] = {
+						objective(1, {	-- 0/1 Ghislania
+							["cr"] = 39351,	-- Ghislania
+						}),
+					},
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
+				}),
+				q(3086, {	-- Glyphic Tablet
+					["qg"] = 3143,	-- Gornek
+					["sourceQuest"] = 788,	-- Cutting Teeth
+					["coord"] = { 42.0, 68.4, DUROTAR },
+					["classes"] = { MAGE },
+					["races"] = { TROLL },
+					["groups"] = {
+						objective(1, {	-- 0/1 Glyphic Tablet
+							["provider"] = { "i", 9575, },	-- Glyphic Tablet
+						}),
+					},
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
 				}),
 				q(25258, {	-- Griswold Hanniston
-					["provider"] = { "n", 39590 },	-- Spiketooth
+					["qg"] = 39590,	-- Spiketooth
 					["coord"] = { 58.7, 23.1, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 25256	-- Sent for Help
+					["sourceQuest"] = 25256,	-- Sent for Help
+					["groups"] = {
+						objective(1, {	-- 0/1 Griswold Hanniston
+							["cr"] = 39353,	-- Griswold Hanniston
+						}),
+					},
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
+				}),
+				q(3085, {	-- Hallowed Tablet
+					["qg"] = 3143,	-- Gornek
+					["sourceQuest"] = 788,	-- Cutting Teeth
+					["coord"] = { 42.0, 68.4, DUROTAR },
+					["classes"] = { PRIEST },
+					["races"] = { TROLL },
+					["groups"] = {
+						objective(1, {	-- 0/1 Hallowed Tablet
+							["provider"] = { "i", 9561, },	-- Hallowed Tablet
+						}),
+					},
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
 				}),
 				q(25206, {	-- Ignoring the Warnings
-					["provider"] = { "n", 39379 },	-- Gor the Enforcer
+					["qg"] = 39379,	-- Gor the Enforcer
 					["lvl"] = 8,
 					["coord"] = { 44.9, 14.7, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25205,	-- The Wolf and The Kodo
 					["g"] = {
+						objective(1, {	-- 0/12 Warring Elementals
+							["crs"] = {
+								39595,	-- Furious Earthguard
+								39596,	-- Teeming Waterguard
+							},
+						}),
 						i(53368),	-- Feckless Armbands
 						i(53374),	-- Heedless Treads
 						i(131410),	-- Bindings of Disregard
 					},
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(29690, {	-- Into the Mists
-					["provider"] = { "n", 55054 },	-- General Nazrim
+					["qg"] = 55054,	-- General Nazrim
 					["lvl"] = 80,
 					["coord"] = { 61.2, 44.6, DUROTAR },
 					["races"] = HORDE_ONLY,
@@ -1046,13 +1311,17 @@ _.Zones =
 };
 _.NEVER_IMPLEMENTED = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
-		q(785, {	-- A Strategic Alliance
-			-- low enough questID for classic, but unable to verify if it actually was in vanilla
-			-- since Neeru Fireblade was moved to Orgrimmar for launch, it seems unlikely.
-			["qg"] = 3216,	-- Neeru Fireblade
-			["coord"] = { 49.64, 50.31, ORGRIMMAR },
-			["races"] = HORDE_ONLY,
-			["lvl"] = 5,
+		m(KALIMDOR, {
+			m(DUROTAR, {
+				q(785, {	-- A Strategic Alliance
+					-- low enough questID for classic, but unable to verify if it actually was in vanilla
+					-- since Neeru Fireblade was moved to Orgrimmar for launch, it seems unlikely.
+					["qg"] = 3216,	-- Neeru Fireblade
+					["coord"] = { 49.64, 50.31, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 5,
+				}),
+			}),
 		}),
 	}),
 });
