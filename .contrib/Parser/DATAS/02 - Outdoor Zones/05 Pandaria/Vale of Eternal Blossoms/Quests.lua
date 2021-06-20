@@ -247,11 +247,13 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 64610 },	-- Lyalia
 					["coord"] = { 84.0, 58.8, 390 },
+					["isBreadcrumb"] = true,
 				}),
 				q(32678, {	-- Thunder Calls (H)
 					["coord"] = { 62.8, 28.0, 390 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 64566 },	-- Sunwalker Dezco
+					["isBreadcrumb"] = true,
 				}),
 				q(31380, {	-- Trial At The Temple of the White Tiger (A)
 					["sourceQuests"] = { 31512 },	-- A Witness to History
