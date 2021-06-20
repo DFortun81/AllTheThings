@@ -46,6 +46,7 @@ _.Zones =
 				i(187333),	-- Core of an Unknown Titan
 				i(187322),	-- Crumbling Stone Tablet
 				i(187327),	-- Encrypted Korthian Journal
+				i(187457),	-- Engraved Glass Pane
 				i(187463),	-- Enigmatic Map Fragments
 				i(187325),	-- Faded Razorwing Anatomy Illustration
 				i(187336),	-- Forbidden Weapon Schematics

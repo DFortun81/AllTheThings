@@ -479,4 +479,5 @@ _.HiddenQuestTriggers = {
 	q(64564),	-- 4th loot of shared treasure in Korthia (Pile of Bones, Relic Cache, Shardhide Stash) - this # loot used to be 64309, but they changed it at some point on PTR
 	q(64310),	-- looting a Repaired Riftkey (also pops when looting one from rares)
 	q(64311),	-- looting a Teleporter Repair Kit (also pops looting one from rares)
+	q(64702),	-- secondary quest triggered when looting Invasive Mawshroom (35.6, 31.1) - 369331 - probably related to 48-research item Scroll of Shadowlands Fables
 };

@@ -345,4 +345,5 @@ _.Zones =
 
 _.HiddenQuestTriggers = {
 	q(64572),	-- i think this is a daily lockout for receiving a Soultwining Crescent from a rare (also triggers on treasures)
+	q(64699),	-- popped when looting 48-resesarch item Encrypted Korthian Journal from Fleshwing
 };

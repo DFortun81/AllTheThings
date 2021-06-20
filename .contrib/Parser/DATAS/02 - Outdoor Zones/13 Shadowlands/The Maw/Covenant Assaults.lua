@@ -31,10 +31,7 @@ _.Zones =
 						}),
 					}),
 					ach(15036, {	-- Rooting Out The Evil
-						crit(4),	-- Snail Stomping
 						crit(5),	-- Just Don't Ask Me to Spell It
-						crit(7),	-- Needless Needlers
-						crit(8),	-- The Soul Blade
 					}),
 					ach(15033, {	-- Taking the Tremaculum
 						crit(4),	-- Fangcrack's Fan Club
@@ -425,11 +422,42 @@ _.Zones =
 								},
 							}),
 							q(63970, {	-- No Soul Left Behind
-								["provider"] = { "n", 178884 },
+								["provider"] = { "n", 178884 },	-- Thiernax
 								["isWeekly"] = true,
 								["coord"] = { 22.9, 43.2, THE_MAW },
 								["g"] = {
 									crit(3, {	-- No Soul Left Behind
+										["achievementID"] = 15036,	-- Rooting Out The Evil
+									}),
+								},
+							}),
+							q(63971, {	-- Snail Stomping
+								["provider"] = { "n", 178885 },	-- Lady Moonberry
+								["isWeekly"] = true,
+								["coord"] = { 22.7, 43.7, THE_MAW },
+								["g"] = {
+									crit(4, {	-- Snail Stomping
+										["achievementID"] = 15036,	-- Rooting Out The Evil
+									}),
+								},
+							}),
+							q(63974, {	-- That's Going to Sting
+								["provider"] = { "n", 179065 },	-- Niya
+								["isWeekly"] = true,
+								["coord"] = { 22.2, 43.6, THE_MAW },
+								["g"] = {
+									-- no criteria with this exact name, i assume it should be this one (quest is currently bugged and not completable, so can't verify)
+									crit(7, {	-- Needless Needlers
+										["achievementID"] = 15036,	-- Rooting Out The Evil
+									}),
+								},
+							}),
+							q(63945, {	-- The Soul Blade
+								["provider"] = { "n", 178690 },	-- Bonesmith Heirmir
+								["isWeekly"] = true,
+								["coord"] = { 22.2, 43.5, THE_MAW },
+								["g"] = {
+									crit(8, {	-- The Soul Blade
 										["achievementID"] = 15036,	-- Rooting Out The Evil
 									}),
 								},
@@ -651,4 +679,6 @@ _.HiddenQuestTriggers = {
 
 --	Night Fae
 	q(63821),	-- triggered when completing the assault (#63823)
+	q(64060),	-- Stolen Anima Vessel (19.0, 50.2) - 368953
+	q(64700),	-- Stolen Anima Vessel (19.0, 50.2) - 368953 - same loot as above, 1 quest is probably tied to receiving 100-research item Ripped Cosmology Chart
 };
