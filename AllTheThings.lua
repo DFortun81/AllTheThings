@@ -19780,7 +19780,7 @@ app.events.QUEST_ACCEPTED = function(questID)
 				local warning;
 				for _,group in pairs(nextQuests) do
 					if not group.collected and app.RecursiveGroupRequirementsFilter(group) then
-						app.print(string.format(L["QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT"], title, questID, group.questID));
+						app.print(string.format(L["QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT"], title, questID, group.text or RETRIEVING_DATA, group.questID));
 						warning = true;
 					end
 				end
