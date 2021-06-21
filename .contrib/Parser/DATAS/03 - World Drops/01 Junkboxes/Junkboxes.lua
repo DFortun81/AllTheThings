@@ -104,6 +104,9 @@ _.WorldDrops =
 				i(4416),	-- Schematic: Goblin Land Mine
 				i(4414),	-- Schematic: Portable Bronze Mortar
 			}),
+			i(31952, {	-- Khorium Lockbox
+				["timeline"] = { "added 2.1.0.6678" },
+			}),
 			i(180532),	-- Laestrite Lockbox
 			i(5758),	-- Mithril Lockbox
 			i(179311),	-- Oxxein Lockbox
