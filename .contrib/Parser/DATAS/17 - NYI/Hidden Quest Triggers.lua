@@ -2,8 +2,7 @@
 --     N E V E R    I M P L E M E N T E D    M O D U L E     --
 ---------------------------------------------------------------
 
-_.HiddenQuestTriggers =
-{
+_.HiddenQuestTriggers = {
 	-- Note!! Here is where we can put all the hidden quest triggers in the game that don't exactly fit anywhere.
 	-- When adding a quest trigger be sure to put a description of how it triggered
 	n(QUESTS, {	-- Quests
@@ -4433,43 +4432,7 @@ _.HiddenQuestTriggers =
 		q(63376),	-- Abductors (4)
 		q(63417),	-- Immediate Extinction (5)
 
-		-- Torghast
-		q(59987),	-- Tracking Quest (Finished Mort'regar Layer 1)
-		q(59988),	-- Tracking Quest (Finished The Soulforges Layer 1)
-		q(59989),	-- Tracking Quest (Finished Coldheart Interstitia Layer 1)
-		q(59990),	-- Tracking Quest (Finished The Upper Reaches Layer 1)
-		q(59991),	-- Tracking Quest (Finished The Soulforges Layer 1)
-		q(59992),	-- Tracking Quest (Finished The Upper Reaches Layer 1)
-		q(59993),	-- Tracking Quest (Finished The Fracture Chambers Layer 1)
-		q(59995),	-- Tracking Quest (Finished The Fracture Chambers Layer 1)
-		q(59996),	-- Tracking Quest (Finished Skoldus Hall Layer 1)
-		q(59997),	-- Tracking Quest (Finished The Upper Reaches Layer 1)
-		q(62967),	-- Triggered when opening Domination Lock for Prison of the Forgotten quest
-		q(61951),	-- Triggered when completing 61958 (Champion: Gorgelimb)
-		q(61305),	-- triggered when completing #61313, "Champion: Kythekios"
-		q(61420),	-- Triggered when freeing Yira'lya
-		q(61215),	-- triggered when completing Champion: Kaletar
-		q(61417),	-- triggered when completing Karynmwylyann's Roots (61429)
-		q(61211),	-- triggered when completing Thela's Memory Stone (61243)
-		q(60555),	-- triggered when completing Champion: Meatball (Venthyr)
-		q(61212),	-- triggered when completing Champion: Dug Gravewell [Venthyr] (61218)
-		q(61415),	-- Triggered when completing #61427, "Blisswing's Rescue"
-		q(61416),	-- Triggered when completing #61428, "Duskleaf's Revenge"
-		q(61418),	-- Triggered when completing #61430, "Chalkyth's Saber"
-		q(61419),	-- Triggered when completing #TODO, "TODO" (for Lloth'wellyn)
-		q(61216),	-- triggered when completing #61259, "Ayeleth's Hunger" (was on a venthyr and picked up the champ quest right after)
-		q(61309),	-- triggered when completing #61347, "Molako's Freedom"
-		q(61213),	-- triggered when completing #61262, "Nerith's Vengeance"
-		q(61952),	-- triggered when completing #62226, "Talethi's Desire"
-		q(61307),	-- triggered when completing #61340, "Telethakas's Revenge"
-		q(61306),	-- triggered when completing #61330, "Teliah's Stolen Spear"
-		q(61214),	-- triggered when completing #61234, "Stonehuck's Sinstone"
-		q(62885),	-- triggered when learning legendary memory that triggered a cutscene w/Runecarver
-		q(62991),	-- triggered when completing #62993, "The Riddle of Death"
-		q(61953),	-- triggered when completing #62231, "Velkein's Blade"
-		q(62977),	-- Twisting Corridors, Layer 2 (it looks like TC quests don't reset weekly like the others/are used to mark account TC progress or something)
-		q(62978),	-- Twisting Corridors, Layer 4
-		q(62980),	-- Twisting Corridors, Layer 8
+		-- Torghast (ref: SL/Torghast/Quests)
 
 		-- Dungeons
 		q(62658),	-- Shadowlands Dungeon Reward Quest
