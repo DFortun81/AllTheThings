@@ -1,7 +1,11 @@
 # AllTheThings
 
-## [SL-2.3.4](https://github.com/DFortun81/AllTheThings/tree/SL-2.3.4) (2021-06-21)
-[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.3.3...SL-2.3.4) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
+## [SL-2.3.4a](https://github.com/DFortun81/AllTheThings/tree/SL-2.3.4a) (2021-06-21)
+[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.3.3...SL-2.3.4a) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
+
+### HOTFIX
+
+Version 2.3.4a includes a hotfix for popout windows (you could get it why right-clicking Midsummer Fire Festival).
 
 ### Highlights of this update
 
