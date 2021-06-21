@@ -28,6 +28,17 @@ _.Zones =
 						i(187247),	-- Death-Enveloped Shoulder Spikes
 					},
 				}),
+				n(179913, {	-- Deadsoul Hatcher
+					["description"] = "Requires someone to enter the Rift and click the rare, at which point it will pull the player out into the normal phase of Korthia.\n\nWhen the rare has shifted into the normal Korthia phase, there is a zonewide announcement: |cFFff8040Deadsoul Hatcher breaks into Korthia from the Rift!|r",
+					["questID"] = 64285,
+					["isDaily"] = true,
+					["coord"] = { 60.0, 53.2, KORTHIA },	-- haven't killed personally, coords may need to be refined
+					["g"] = {
+						crit(4, {	-- Deadsoul Hatcher
+							["achievementID"] = 15107,	-- Conquering Korthia
+						}),
+					},
+				}),
 				n(177903, {	-- Dominated Protector
 					["questID"] = 63830,
 					["isDaily"] = true,
@@ -171,6 +182,7 @@ _.Zones =
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 						i(186652),	-- Garnet Razorwing (MOUNT!)
+						i(187388),	-- Barbed Scale Cinch
 					},
 				}),
 				n(179608, {	-- Screaming Shade

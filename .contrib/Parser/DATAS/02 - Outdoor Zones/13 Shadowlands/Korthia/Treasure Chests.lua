@@ -81,6 +81,8 @@ _.Zones =
 						{ 54.2, 41.2, KORTHIA },
 						{ 56.8, 51.5, KORTHIA },
 						{ 57.3, 39.4, KORTHIA },
+						{ 58.2, 40.5, KORTHIA },
+						{ 60.3, 41.6, KORTHIA },
 						{ 60.7, 38.2, KORTHIA },
 					},
 					["g"] = {
@@ -150,6 +152,7 @@ _.Zones =
 					["coords"] = {
 						{ 39.6, 30.0, KORTHIA },
 						{ 41.2, 44.9, KORTHIA },
+						{ 45.2, 47.9, KORTHIA },
 						{ 54.8, 55.5, KORTHIA },
 					},
 					["g"] = {
@@ -357,21 +360,21 @@ _.Zones =
 					["questID"] = 64565,
 					["isDaily"] = true,
 					["coords"] = {
-						{ 27.2, 48.3, KORTHIA },	-- Pile of Bones
-						{ 28.2, 50.7, KORTHIA },	-- Pile of Bones
-						{ 29.3, 47.1, KORTHIA },	-- Pile of Bones
-						{ 29.5, 53.4, KORTHIA },	-- Pile of Bones
-						{ 30.9, 45.7, KORTHIA },	-- Pile of Bones
-						{ 32.7, 42.0, KORTHIA },	-- Pile of Bones
-						{ 32.8, 45.3, KORTHIA },	-- Pile of Bones
-						{ 32.8, 55.1, KORTHIA },	-- Pile of Bones
-						{ 34.1, 44.0, KORTHIA },	-- Pile of Bones
-						{ 34.5, 56.8, KORTHIA },	-- Pile of Bones
-						{ 34.7, 45.8, KORTHIA },	-- Pile of Bones
-						{ 37.1, 53.7, KORTHIA },	-- Pile of Bones
-						{ 38.2, 51.7, KORTHIA },	-- Pile of Bones
-						{ 39.6, 50.2, KORTHIA },	-- Pile of Bones
-						{ 41.0, 50.5, KORTHIA },	-- Pile of Bones
+						{ 27.2, 48.3, KORTHIA },
+						{ 28.2, 50.7, KORTHIA },
+						{ 29.3, 47.1, KORTHIA },
+						{ 29.5, 53.4, KORTHIA },
+						{ 30.9, 45.7, KORTHIA },
+						{ 32.7, 42.0, KORTHIA },
+						{ 32.8, 45.3, KORTHIA },
+						{ 32.8, 55.1, KORTHIA },
+						{ 34.1, 44.0, KORTHIA },
+						{ 34.5, 56.8, KORTHIA },
+						{ 34.7, 45.8, KORTHIA },
+						{ 37.1, 53.7, KORTHIA },
+						{ 38.2, 51.7, KORTHIA },
+						{ 39.6, 50.2, KORTHIA },
+						{ 41.0, 50.5, KORTHIA },
 					},
 					["g"] = {
 						i(187007),	-- Recipe: Bonemeal Bread
@@ -383,27 +386,28 @@ _.Zones =
 					["questID"] = 64565,
 					["isDaily"] = true,
 					["coords"] = {
-						{ 44.4, 77.3, KORTHIA },	-- Relic Cache
-						{ 45.6, 81.4, KORTHIA },	-- Relic Cache
-						{ 46.3, 56.7, KORTHIA },	-- Relic Cache
-						{ 47.2, 76.8, KORTHIA },	-- Relic Cache
-						{ 50.6, 67.1, KORTHIA },	-- Relic Cache
-						{ 53.9, 76.1, KORTHIA },	-- Relic Cache
-						{ 54.2, 72.3, KORTHIA },	-- Relic Cache
-						{ 54.9, 50.2, KORTHIA },	-- Relic Cache
-						{ 55.3, 65.1, KORTHIA },	-- Relic Cache
-						{ 55.8, 37.3, KORTHIA },	-- Relic Cache
-						{ 56.3, 67.6, KORTHIA },	-- Relic Cache
-						{ 56.8, 38.8, KORTHIA },	-- Relic Cache
-						{ 57.3, 34.9, KORTHIA },	-- Relic Cache
-						{ 57.3, 48.0, KORTHIA },	-- Relic Cache
-						{ 58.8, 33.6, KORTHIA },	-- Relic Cache
-						{ 59.8, 35.9, KORTHIA },	-- Relic Cache
-						{ 60.3, 39.0, KORTHIA },	-- Relic Cache
-						{ 60.8, 35.0, KORTHIA },	-- Relic Cache
-						{ 61.0, 32.9, KORTHIA },	-- Relic Cache
-						{ 61.4, 38.1, KORTHIA },	-- Relic Cache
-						{ 62.4, 37.5, KORTHIA },	-- Relic Cache
+						{ 44.4, 77.3, KORTHIA },
+						{ 45.3, 49.5, KORTHIA },
+						{ 45.6, 81.4, KORTHIA },
+						{ 46.3, 56.7, KORTHIA },
+						{ 47.2, 76.8, KORTHIA },
+						{ 50.6, 67.1, KORTHIA },
+						{ 53.9, 76.1, KORTHIA },
+						{ 54.2, 72.3, KORTHIA },
+						{ 54.9, 50.2, KORTHIA },
+						{ 55.3, 65.1, KORTHIA },
+						{ 55.8, 37.3, KORTHIA },
+						{ 56.3, 67.6, KORTHIA },
+						{ 56.8, 38.8, KORTHIA },
+						{ 57.3, 34.9, KORTHIA },
+						{ 57.3, 48.0, KORTHIA },
+						{ 58.8, 33.6, KORTHIA },
+						{ 59.8, 35.9, KORTHIA },
+						{ 60.3, 39.0, KORTHIA },
+						{ 60.8, 35.0, KORTHIA },
+						{ 61.0, 32.9, KORTHIA },
+						{ 61.4, 38.1, KORTHIA },
+						{ 62.4, 37.5, KORTHIA },
 					},
 				}),
 				o(369296, {	-- Shardhide Stash
@@ -411,29 +415,38 @@ _.Zones =
 					["questID"] = 64565,
 					["isDaily"] = true,
 					["coords"] = {
-						{ 45.8, 30.1, KORTHIA },	-- Shardhide Stash
-						{ 46.7, 30.6, KORTHIA },	-- Shardhide Stash
-						{ 47.4, 26.2, KORTHIA },	-- Shardhide Stash
-						{ 48.1, 33.2, KORTHIA },	-- Shardhide Stash
-						{ 49.1, 30.1, KORTHIA },	-- Shardhide Stash
-						{ 49.5, 26.7, KORTHIA },	-- Shardhide Stash
-						{ 49.7, 33.3, KORTHIA },	-- Shardhide Stash
-						{ 50.4, 31.1, KORTHIA },	-- Shardhide Stash
-						{ 51.3, 29.7, KORTHIA },	-- Shardhide Stash
-						{ 52.3, 27.0, KORTHIA },	-- Shardhide Stash
+						{ 45.8, 30.1, KORTHIA },
+						{ 46.7, 30.6, KORTHIA },
+						{ 47.4, 26.2, KORTHIA },
+						{ 48.1, 33.2, KORTHIA },
+						{ 49.1, 30.1, KORTHIA },
+						{ 49.5, 26.7, KORTHIA },
+						{ 49.7, 33.3, KORTHIA },
+						{ 50.4, 31.1, KORTHIA },
+						{ 51.3, 29.7, KORTHIA },
+						{ 52.3, 27.0, KORTHIA },
 					},
 					["g"] = {
 						i(187442),	-- Scholar's Ancient Pack
 					},
 				}),
 				n(179772, {	-- Spectral Bound Chest
-					["description"] = "Requires collecting three |cFFFFFFFFSpectral Keys|r.  Use your preferred method of daily quest tracking to see the locations of the keys.\n\n|cffde1c1cKeys 1 and 2 can be collected in any order, but the key by the chain must be clicked last!|r",
+					["description"] = "Requires collecting three |cFFFFFFFFSpectral Keys|r.  Use your preferred method of daily quest tracking to see the locations of the keys.",
 					["isDaily"] = true,
 					["questID"] = 64247,
 					["coord"] = { 62.1, 55.4, KORTHIA },
 					["g"] = {
-						q(64250, {	-- Spectral Key, near Path of Understanding Building
-							["description"] = "Either behind the building, next to the building hidden in a bush, or next to the anima pool.",
+						q(64249, {	-- First Chain
+							["isDaily"] = true,
+							["coords"] = {
+								{ 50.5, 53.7, KORTHIA },	-- next to a large bush
+								{ 52.3, 53.2, KORTHIA },	-- between the two large rocks
+								{ 52.6, 49.7, KORTHIA },	-- next to the building on top of a flat rock
+								{ 54.2, 50.6, KORTHIA },	-- inside the building
+							},
+							["name"] = "First Chain",
+						}),
+						q(64250, {	-- Second Chain
 							["isDaily"] = true,
 							["coords"] = {
 								{ 59.2, 56.7, KORTHIA },	-- next to a bush
@@ -441,27 +454,17 @@ _.Zones =
 								{ 61.0, 58.7, KORTHIA },	-- behind the building
 								{ 62.1, 57.7, KORTHIA },	-- hidden in a bush between two trees
 							},
-							["name"] = "Spectral Key #1, Path of Understanding Building",
+							["name"] = "Second Chain",
 						}),
-						q(64249, {	-- Spectral Key, near Seeker's Quorum Building
-							["description"] = "Either inside the building, on a flat rock next to the building, or next to a large bush.",
-							["isDaily"] = true,
-							["coords"] = {
-								{ 50.5, 53.7, KORTHIA },	-- next to a large bush
-								{ 52.6, 49.7, KORTHIA },	-- next to the building on top of a flat rock
-								{ 54.2, 50.6, KORTHIA },	-- inside the building
-							},
-							["name"] = "Spectral Key #2, Seeker's Quorum Building",
-						}),
-						q(64248, {	-- Spectral Key, near Seeker's Quorum Chain
-							["description"] = "|cffde1c1cMust be clicked last!|r  Either on the north side of the chain, next to a leaning pillar, or next to a cage between two packs of mawrats.",
+						q(64248, {	-- Third Chain
 							["isDaily"] = true,
 							["coords"] = {
 								{ 57.5, 49.3, KORTHIA },	-- next to a leaning pillar
 								{ 59.1, 48.7, KORTHIA },	-- north side of the chain
+								{ 59.2, 56.7, KORTHIA },	-- by a bush
 								{ 62.8, 51.4, KORTHIA },	-- next to a cage, between two packs of mawrats
 							},
-							["name"] = "Spectral Key #3, near Seeker's Quorum Chain",
+							["name"] = "Third Chain",
 						}),
 						i(187240),	-- Field Warden's Watchful Eye
 						i(187023),	-- Instructor's Mantle
