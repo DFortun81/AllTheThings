@@ -1145,9 +1145,13 @@ for key,value in pairs({
 	[2703] = "트롤베인의 무덤",	-- Trollbane's Tomb	--TODO: This was taken from classic Wowhead
 	[2713] = "현상 수배 전단",	-- Wanted Board
 	[2908] = "도장 찍힌 보급품 상자",	-- Sealed Supply Crate
+	[3189] = "공격 계획서: 시험의 골짜기",	-- Attack Plan: Valley of Trials
+	[3190] = "공격 계획서: 센진 마을",	-- Attack Plan: Sen'jin Village
+	[3192] = "공격 계획서: 오그리마",	-- Attack Plan: Orgrimmar
 	[3238] = "첸의 빈 술통",	-- Chen's Empty Keg
 	[3972] = "현상 수배!",	-- WANTED
 	[4141] = "제어 장치",	-- Control Console
+	[5620] = "혼란의 마법석",	-- Flawed Power Stones
 	[6751] = "이상한 열매의 식물",	-- Strange Fruited Plant
 	[6752] = "이상한 잎의 식물",	-- Strange Fronded Plant	--TODO: This was taken from classic Wowhead
 	[7510] = "싹튼 잎",	-- Sprouted Frond	--TODO: This was taken from classic Wowhead

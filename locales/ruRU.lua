@@ -1132,9 +1132,13 @@ for key,value in pairs({
 	[2703] = "Могила Троллебоя",	-- Trollbane's Tomb
 	[2713] = "Розыск!",	-- Wanted Board
 	[2908] = "Запечатанный ящик с припасами",	-- Sealed Supply Crate
+	[3189] = "План нападения на Долину Испытаний",	-- Attack Plan: Valley of Trials
+	[3190] = "План нападения на деревню Сен'джин",	-- Attack Plan: Sen'jin Village
+	[3192] = "План нападения на Оргриммар",	-- Attack Plan: Orgrimmar
 	[3238] = "Пустой бочонок Чена",	-- Chen's Empty Keg
 	[3972] = "РАЗЫСКИВАЕТСЯ",	-- WANTED
 	[4141] = "Панель управления",	-- Control Console
+	[5620] = "Силовой камень с изъяном",	-- Flawed Power Stones
 	[6751] = "Чудоягодник",	-- Strange Fruited Plant
 	[6752] = "Растение со странными листьями",	-- Strange Fronded Plant
 	[7510] = "Росток папоротника",	-- Sprouted Frond

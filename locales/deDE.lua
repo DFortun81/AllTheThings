@@ -1145,9 +1145,13 @@ for key,value in pairs({
 	[2703] = "Trollbanns Grabmal",	-- Trollbane's Tomb
 	[2713] = "Steckbriefbrett",	-- Wanted Board
 	[2908] = "Versiegelte Vorratskiste",	-- Sealed Supply Crate
+	[3189] = "Angriffsplan: Tal der Prüfungen",	-- Attack Plan: Valley of Trials
+	[3190] = "Angriffsplan: Sen'jin",	-- Attack Plan: Sen'jin Village
+	[3192] = "Angriffsplan: Orgrimmar",	-- Attack Plan: Orgrimmar
 	[3238] = "Chens leeres Fässchen",	-- Chen's Empty Keg
 	[3972] = "GESUCHT",	-- WANTED
 	[4141] = "Steuerkonsole",	-- Control Console
+	[5620] = "Fehlerhafte Kraftsteine",	-- Flawed Power Stones
 	[6751] = "Sonderbare fruchtbeladene Pflanze",	-- Strange Fruited Plant
 	[6752] = "Sonderbare wedelbestückte Pflanze",	-- Strange Fronded Plant
 	[7510] = "Sprießender Wedel",	-- Sprouted Frond

@@ -1145,9 +1145,13 @@ for key,value in pairs({
 	[2703] = "Trollbane's Tomb",	-- Trollbane's Tomb	--TODO: This was taken from classic Wowhead
 	[2713] = "Bacheca dei Ricercati",	-- Wanted Board
 	[2908] = "Cassa di Rifornimenti Sigillata",	-- Sealed Supply Crate
+	[3189] = "Piano d'Attacco: Valle delle Sfide",	-- Attack Plan: Valley of Trials
+	[3190] = "Piano d'Attacco: Villaggio di Sen'jin",	-- Attack Plan: Sen'jin Village
+	[3192] = "Piano d'Attacco: Orgrimmar",	-- Attack Plan: Orgrimmar
 	[3238] = "Chen's Empty Keg",	-- Chen's Empty Keg	--TODO: This was taken from classic Wowhead
 	[3972] = "RICERCATO",	-- WANTED
 	[4141] = "Console di Comando",	-- Control Console
+	[5620] = "Pietre del Potere Difettose",	-- Flawed Power Stones
 	[6751] = "Strana Pianta da Frutto",	-- Strange Fruited Plant
 	[6752] = "Strana Pianta Frondosa",	-- Strange Fronded Plant
 	[7510] = "Pianta Rigogliosa",	-- Sprouted Frond

@@ -1144,9 +1144,13 @@ for key,value in pairs({
 	[2703] = "Tombeau de Trollemort",	-- Trollbane's Tomb
 	[2713] = "Tableau des recherches",	-- Wanted Board
 	[2908] = "Caisse de ravitaillements scellée",	-- Sealed Supply Crate
+	[3189] = "Plan d'attaque : Vallée des Épreuves",	-- Attack Plan: Valley of Trials
+	[3190] = "Plan d'attaque : Village de Sen’jin",	-- Attack Plan: Sen'jin Village
+	[3192] = "Plan d'attaque : Orgrimmar",	-- Attack Plan: Orgrimmar
 	[3238] = "Tonneau vide de Chen",	-- Chen's Empty Keg
 	[3972] = "AVIS DE RECHERCHE",	-- WANTED
 	[4141] = "Console de contrôle",	-- Control Console
+	[5620] = "Pierres de puissance imparfaites",	-- Flawed Power Stones
 	[6751] = "Plante aux fruits étranges",	-- Strange Fruited Plant
 	[6752] = "Plantes aux feuilles étranges",	-- Strange Fronded Plant
 	[7510] = "Racine éclose",	-- Sprouted Frond
