@@ -47,6 +47,9 @@ _.WorldDrops =
 				i(68163),	-- The Twilight Blade
 				i(68161),	-- Krol Decapitator
 			}),
+			i(88567, {	-- Ghost Iron Lockbox
+				["timeline"] = { "added 5.0.1.15752" },
+			}),
 			i(16885, { 	-- Heavy Junkbox
 				i(1728),	-- Teebu's Blazing Longsword [Discord Confirmation - Luce]
 				i(16215),	-- Formula: Enchant Boots Greater Stamina
