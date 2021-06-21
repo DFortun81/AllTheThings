@@ -1953,6 +1953,7 @@ MergeObjects = function(g, g2, cloneOnAdd)
 							if t.g then
 								MergeObjects(t.g, o.g, true);
 							else
+								t.g = {};
 								for _,s in ipairs(o.g) do
 									tinsert(t.g, CloneData(s));
 								end
@@ -2007,6 +2008,7 @@ MergeObject = function(g, t, index, cloneOnAdd)
 					if o.g then
 						MergeObjects(o.g, t.g, cloneOnAdd);
 					elseif cloneOnAdd then
+						o.g = {};
 						for _,s in ipairs(t.g) do
 							tinsert(o.g, CloneData(s));
 						end
@@ -12403,11 +12405,11 @@ function app:CreateMiniListForGroup(group)
 			-- clone/search initially so as to not let popout operations modify the source data
 			group = CloneData(group);
 			-- Fill any purchasable things for the sub-groups
-			if group.g then
-				for _,sub in ipairs(group.g) do
-					FillPurchases(sub);
-				end
-			end
+			-- if group.g then
+			-- 	for _,sub in ipairs(group.g) do
+			-- 		FillPurchases(sub);
+			-- 	end
+			-- end
 		end
 		-- This logic allows for nested searches of groups within a popout to be returned as the root search which resets the parent
 		-- if not group.isBaseSearchResult then
