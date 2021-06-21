@@ -6356,12 +6356,6 @@ local fields = {
 		local info = t.info;
 		return info and info.name or ("Currency #" .. t.currencyID);
 	end,
-	-- ["collectible"] = function(t)
-	-- 	return t.collectibleAsCost;
-	-- end,
-	-- ["collected"] = function(t)
-	-- 	return t.collectedAsCost;
-	-- end,
 	["collectedAsCost"] = function(t)
 		local results = app.SearchForField("currencyIDAsCost", t.currencyID);
 		if results and #results > 0 then
@@ -6379,7 +6373,9 @@ local fields = {
 		end
 	end,
 	["collectibleAsCost"] = function(t)
-		if t.parent and t.parent.saved then return false; end
+		-- Quick escape if current-character only and comes from something saved
+		if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved then return false; end
+		-- TODO: utilize shared cache table of cost collectibles eventually
 		local results = app.SearchForField("currencyIDAsCost", t.currencyID);
 		if results and #results > 0 then
 			for _,ref in pairs(results) do
@@ -8121,14 +8117,14 @@ local itemFields = {
 		return rawget(t, "modItemID");
 	end,
 	["trackableAsQuest"] = app.ReturnTrue,
-	-- ["collectible"] = function(t)
-	-- 	return t.collectibleAsCost;
-	-- end,
 	["collectibleAsAchievement"] = function(t)
 		return app.CollectibleAchievements;
 	end,
 	["collectibleAsCost"] = function(t)
+		-- Quick escape if current-character only and comes from something saved
 		if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved then return false; end
+		-- TODO: convert this into a common cache table since cost items are obviously listed multiple times, we shouldn't have to generate
+		-- results for every instance of a group
 		if not t.costCollectibles then
 			local results, id;-- = rawget(t, "collectibleResults");
 			-- if results then
@@ -8156,10 +8152,10 @@ local itemFields = {
 						-- track this item as a cost collectible
 						if not t.costCollectibles then t.costCollectibles = { ref }
 						else tinsert(t.costCollectibles, ref); end
-						-- account or debug, skip filter/exclusion logic
-						if app.MODE_DEBUG_OR_ACCOUNT or
-							-- otherwise don't include items which are from something the current character cannot complete
-							(not GetRelativeValue(t, "altcollected") and app.RecursiveGroupRequirementsFilter(ref)) then
+						-- account or debug, skip filter/exclusion logic, or else make sure not altcollected
+						if (app.MODE_DEBUG_OR_ACCOUNT or not GetRelativeValue(t, "altcollected"))
+							-- don't include groups which do not meet the current filter requirements
+							and app.RecursiveGroupRequirementsFilter(ref) then
 							-- Used as a cost for something which is collectible itself
 							if ref.collectible then
 								filteredCost = true;
@@ -8176,10 +8172,10 @@ local itemFields = {
 			end
 		else
 			for _,ref in pairs(t.costCollectibles) do
-				-- account or debug, skip filter/exclusion logic
-				if app.MODE_DEBUG_OR_ACCOUNT or
-					-- otherwise don't include items which are from something the current character cannot complete
-					(not GetRelativeValue(t, "altcollected") and app.RecursiveGroupRequirementsFilter(ref)) then
+				-- account or debug, skip filter/exclusion logic, or else make sure not altcollected
+				if (app.MODE_DEBUG_OR_ACCOUNT or not GetRelativeValue(t, "altcollected"))
+					-- don't include groups which do not meet the current filter requirements
+					and app.RecursiveGroupRequirementsFilter(ref) then
 					-- Used as a cost for something which is collectible itself
 					if ref.collectible then
 						return true;
@@ -8208,17 +8204,14 @@ local itemFields = {
 	["collectibleAsQuest"] = function(t)
 		return app.CollectibleAsQuest(t);
 	end,
-	-- ["collected"] = function(t)
-	-- 	return t.collectedAsCost;
-	-- end,
 	["collectedAsCost"] = function(t)
 		if not t.costCollectibles then return; end
 		-- local LOG = t.s;
 		for _,ref in pairs(t.costCollectibles) do
-			-- account or debug, skip filter/exclusion logic
-			if app.MODE_DEBUG_OR_ACCOUNT or
-				-- otherwise don't include items which are from something the current character cannot complete
-				(not GetRelativeValue(t, "altcollected") and app.RecursiveGroupRequirementsFilter(ref)) then
+			-- account or debug, skip filter/exclusion logic, or else make sure not altcollected
+			if (app.MODE_DEBUG_OR_ACCOUNT or not GetRelativeValue(t, "altcollected"))
+				-- don't include groups which do not meet the current filter requirements
+				and app.RecursiveGroupRequirementsFilter(ref) then
 				-- Used as a cost for something which is collectible itself and not collected
 				-- if LOG then print("check collectible/collected",LOG,ref.key,ref[ref.key]) end
 				if ref.collectible and not ref.collected then
@@ -8318,13 +8311,6 @@ local itemFields = {
 	end,
 	["collectedAsTransmog"] = function(t)
 		return ATTAccountWideData.Sources[rawget(t, "s")];
-		-- -- item has no cost use, or cost has been fulfilled
-		-- -- TODO: find a way to make this lag less... the time it takes to calculate this on account/debug is insane for whatever reason
-		-- if not t.collectibleAsCost or t.collectedAsCost then
-		-- 	return ATTAccountWideData.Sources[rawget(t, "s")];
-		-- end
-		-- -- item is still required to be obtained/collected
-		-- return false;
 	end,
 	["savedAsQuest"] = function(t)
 		return IsQuestFlaggedCompleted(t.questID);
@@ -10672,17 +10658,22 @@ end
 function app.FilterItemBind(item)
 	return item.b == 2 or item.b == 3; -- BoE
 end
+-- Represents filters which should be applied at the Character level
 function app.FilterItemClass(item)
-	if app.UnobtainableItemFilter(item) and app.SeasonalItemFilter(item) then
+	-- check Account trait filters
+	if app.UnobtainableItemFilter(item)
+		and app.SeasonalItemFilter(item)
+		and app.PvPFilter(item)
+		and app.RequireFactionFilter(item) then
+		-- BoE can skip Character trait filters
 		if app.ItemBindFilter(item) then return true; end
+		-- check Character trait filters
 		return app.ItemTypeFilter(item)
 			and app.RequireBindingFilter(item)
 			and app.RequiredSkillFilter(item)
 			and app.ClassRequirementFilter(item)
 			and app.RaceRequirementFilter(item)
-			and app.RequireFactionFilter(item)
-			and app.RequireCustomCollectFilter(item)
-			and app.PvPFilter(item);
+			and app.RequireCustomCollectFilter(item);
 	end
 end
 function app.FilterItemClass_RequireClasses(item)
@@ -11383,8 +11374,8 @@ UpdateGroup = function(parent, group, window)
 	local visible;
 
 	-- Determine if this user can enter the instance or acquire the item.
-	-- If the 'can equip' filter says true
 	if app.GroupRequirementsFilter(group) then
+		-- If the 'can equip' filter says true
 		if app.GroupFilter(group) then
 			-- Set total/progress for this object using it's cost information if any
 			group.total = group.costTotal or 0;
@@ -19803,6 +19794,7 @@ app.events.QUEST_REMOVED = function()
 	AfterCombatCallback(app.UpdateWindows);
 end
 app.events.QUEST_ACCEPTED = function(questID)
+	-- print("QUEST_ACCEPTED",questID)
 	if questID then
 		local logIndex = C_QuestLog.GetLogIndexForQuestID(questID);
 		local freq, title;
