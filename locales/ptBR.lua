@@ -1145,9 +1145,13 @@ for key,value in pairs({
 	[2703] = "Tumba de Matatroll",	-- Trollbane's Tomb	--TODO: This was taken from classic Wowhead
 	[2713] = "Quadro de Procurados",	-- Wanted Board
 	[2908] = "Caixote de Suprimentos Lacrado",	-- Sealed Supply Crate
+	[3189] = "Plano de Ataque: Vale das Provações",	-- Attack Plan: Valley of Trials
+	[3190] = "Plano de Ataque: Aldeia Sen'jin",	-- Attack Plan: Sen'jin Village
+	[3192] = "Plano de Ataque: Orgrimmar",	-- Attack Plan: Orgrimmar
 	[3238] = "Barril Vazio do Chen",	-- Chen's Empty Keg	--TODO: This was taken from classic Wowhead
 	[3972] = "PROCURA-SE",	-- WANTED
 	[4141] = "Painel de Controle",	-- Control Console
+	[5620] = "Pedras do Poder Defeituosas",	-- Flawed Power Stones
 	[6751] = "Planta Frutífera Estranha",	-- Strange Fruited Plant
 	[6752] = "Planta Frondosa Estranha",	-- Strange Fronded Plant
 	[7510] = "Fronde Desenvolvida",	-- Sprouted Frond

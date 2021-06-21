@@ -1197,9 +1197,13 @@ for key, value in pairs({
 	[2703] = "托尔贝恩的墓室",	-- Trollbane's Tomb	--TODO: This was taken from classic Wowhead
 	[2713] = "通缉板",	-- Wanted Board
 	[2908] = "密封的补给箱",	-- Sealed Supply Crate
+	[3189] = "进攻计划：试炼谷",	-- Attack Plan: Valley of Trials
+	[3190] = "进攻计划：森金村",	-- Attack Plan: Sen'jin Village
+	[3192] = "进攻计划：奥格瑞玛",	-- Attack Plan: Orgrimmar
 	[3238] = "老陈的空酒桶",	-- Chen's Empty Keg	--TODO: This was taken from classic Wowhead
 	[3972] = "通缉",	-- WANTED
 	[4141] = "控制台",	-- Control Console
+	[5620] = "有裂痕的能量石",	-- Flawed Power Stones
 	[6751] = "奇怪的果树",	-- Strange Fruited Plant	--TODO: This was taken from classic Wowhead
 	[6752] = "奇怪的树木",	-- Strange Fronded Plant	--TODO: This was taken from classic Wowhead
 	[7510] = "发芽的树叶",	-- Sprouted Frond	--TODO: This was taken from classic Wowhead
