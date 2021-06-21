@@ -3657,7 +3657,9 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		app.BuildCrafted(group);
 
 		-- Expand any things requiring this group
-		app.ExpandSubGroups(group);
+		-- TODO: is this necessary anymore? can't think of a situation to properly test it
+		-- it causes weird nesting results for ToV Ensembles due to non-modID items
+		-- app.ExpandSubGroups(group);
 
 		-- Append currency info to any orphan currency groups
 		app.BuildCurrencies(group);
