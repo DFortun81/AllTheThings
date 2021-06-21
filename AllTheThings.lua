@@ -3853,11 +3853,10 @@ app.BuildCrafted = function(item)
 	local itemID = item.itemID;
 	if not itemID then return; end
 	-- track the starting item
-	-- print("BuildCrafted",itemID)
 	app.BuildCrafted_IncludedItems[itemID] = true;
 	local reagentCache = app.GetDataSubMember("Reagents", itemID);
 	if reagentCache then
-		-- print("Item is Reagent")
+		-- print("BuildCrafted Reagent",itemID)
 		-- check if the item is BoP and needs skill filtering for current character, or debug mode
 		local filterSkill = not app.MODE_DEBUG and item.b and item.b == 1 or select(14, GetItemInfo(itemID)) == 1;
 
@@ -3947,50 +3946,57 @@ app.BuildCrafted = function(item)
 		-- Now that all craftable items have been collected, pop their search results into the sub-group of the Item
 		-- This will include the craftable items of those items as well if any
 		if not item.g then item.g = {}; end
-		local search, subCraftables;
+		local search, craftableReagentIDs;
 		for craftedItemID,_ in pairs(craftableItemIDs) do
 			-- Each item has potential to add a crafted item which is already listed in the set of craftable items, so have to check again
 			if not app.BuildCrafted_IncludedItems[craftedItemID] then
-				-- print("search",craftedItemID)
-				search = GetCachedSearchResults("itemID:" .. tostring(craftedItemID), app.SearchForField, "itemID", craftedItemID);
-				if search then
-					-- this crafted item has sub-crafted or other items... move them to the end of the list
-					if search.g and #search.g > 0 then
-						-- print("sub-craftable",#search.g)
-						if not subCraftables then subCraftables = { search }
-						else tinsert(subCraftables, search); end
-					else
-						-- print("merged")
+				-- sub-crafted reagents are processed at the end
+				if app.GetDataSubMember("Reagents", craftedItemID) then
+					if not craftableReagentIDs then craftableReagentIDs = { craftedItemID }
+					else tinsert(craftableReagentIDs, craftedItemID); end
+				else
+					-- print("search",craftedItemID)
+					search = GetCachedSearchResults("itemID:" .. tostring(craftedItemID), app.SearchForField, "itemID", craftedItemID);
+					if search then
 						MergeObject(item.g, search);
 					end
 				end
 			end
 		end
-		-- Now process the subcraftables so we don't insert duplicate groups
-		if subCraftables then
-			local filteredSearch;
-			for _,nested in ipairs(subCraftables) do
-				-- print("sub-crafted",nested.itemID)
-				for _,sub in pairs(nested.g) do
-					-- only add sub-crafted items which have not already been added
-					if sub.itemID and not app.BuildCrafted_IncludedItems[sub.itemID] then
-						-- print("non-filtered",sub.itemID)
-						app.BuildCrafted_IncludedItems[sub.itemID] = true;
-						if not filteredSearch then filteredSearch = { sub }
-						else MergeObject(filteredSearch, sub); end
+		-- Now process the craftable reagents so we don't insert duplicate groups
+		if craftableReagentIDs then
+			for _,cratedReagentID in ipairs(craftableReagentIDs) do
+				-- print("sub-crafted",cratedReagentID)
+				-- Each item has potential to add a crafted item which is already listed in the set of craftable items, so have to check again
+				if not app.BuildCrafted_IncludedItems[cratedReagentID] then
+					-- print("search",craftedItemID)
+					search = GetCachedSearchResults("itemID:" .. tostring(cratedReagentID), app.SearchForField, "itemID", cratedReagentID);
+					if search then
+						MergeObject(item.g, search);
 					end
 				end
+				-- for _,sub in pairs(nested.g) do
+				-- 	-- only add sub-crafted items which have not already been added
+				-- 	print("sub.itemID",sub.itemID)
+				-- 	if sub.itemID and not app.BuildCrafted_IncludedItems[sub.itemID] then
+				-- 		print("non-filtered",sub.itemID)
+				-- 		app.BuildCrafted_IncludedItems[sub.itemID] = true;
+				-- 		if not filteredSearch then filteredSearch = { sub }
+				-- 		else MergeObject(filteredSearch, sub); end
+				-- 	end
+				-- end
 				-- print("replace and merged filtered",filteredSearch and #filteredSearch)
-				-- replace the nested group with the filtered group (even if nothing left)
-				nested.g = filteredSearch;
-				-- push the nested craftable into the original item group
-				MergeObject(item.g, nested);
-				-- reset filtered group
-				filteredSearch = nil;
+				-- -- replace the nested group with the filtered group (even if nothing left)
+				-- nested.g = filteredSearch;
+				-- -- push the nested craftable into the original item group
+				-- MergeObject(item.g, nested);
+				-- -- reset filtered group
+				-- filteredSearch = nil;
+				-- -- print("nested sub",nested.g and #nested.g)
 			end
 		end
+		-- print("BuildCrafted-Done")
 	end
-	-- print("BuildCrafted-Done")
 end
 app.ExpandSubGroups_IncludedItems = {};
 -- Appends sub-groups into the item group based on what is required to have this item (cost, source sub-group)
