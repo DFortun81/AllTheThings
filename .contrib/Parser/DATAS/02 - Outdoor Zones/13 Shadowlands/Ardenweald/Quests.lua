@@ -804,7 +804,7 @@ _.Zones =
 				}),
 				q(60840, {	-- Wild Hunt Offensive (bonus objective)
 					["isWorldQuest"] = true,	-- shows up in /attwq without this
-					["coord"] = { 64, 46, ARDENWEALD },
+					["coord"] = { 64.0, 46.0, ARDENWEALD },
 				}),
 				q(60778, {	-- Wildseed Rescue
 					["sourceQuests"] = { 60341 },	-- First on the Agenda

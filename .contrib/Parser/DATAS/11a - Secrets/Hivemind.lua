@@ -11,7 +11,7 @@ _.Secrets =
 		--["modelID"] = ,
 		["maps"] = {
 			DUSKWOOD,
-			64,
+			THOUSAND_NEEDLES,
 			114,
 			118,
 			198,
@@ -64,7 +64,7 @@ _.Secrets =
 							o(280838, {	-- Letter 4: Razorfen Downs
 								["model"] = 1661948,
 								["questID"] = 40252,
-								["coord"] = { 45.7, 24.0, 64 },	-- Razorfen Downs
+								["coord"] = { 45.7, 24.0, THOUSAND_NEEDLES },	-- Razorfen Downs
 								["sourceQuest"] = 40404,	-- Letter 3: Karazhan (Old)
 								["description"] = "|cFFFFFFFFLetter 4:|r Go to |cFFFFD700Razorfen Downs|r in |cFFFFD700Thousand Needles|r. The next |cFFFFD700Letter from Ms. Graham|r is located on a hay box behind the second-to-last boss, |cFFFFD700Death Speaker Blackthorn|r. will spawn on the table.  Click it.  The note reads...\r\r|cFFFFFFFFMs. Sin will accompany you down The longest Streets Of the underworld.|r\n",
 							}),

@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(64, {	-- Thousand Needles
+		m(THOUSAND_NEEDLES, {
 			n(ACHIEVEMENTS, {
 				ach(4938, {	-- Thousand Needles Quests
 					crit(1, {	-- The Treasure Trove (A)

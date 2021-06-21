@@ -30,7 +30,7 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 						["maps"] = { TANARIS },
 					}),
 					crit(5, {	-- Thousand Needles
-						["maps"] = { 64 },	-- Thousand Needles
+						["maps"] = { THOUSAND_NEEDLES },
 					}),
 				}),
 				ach(2576),	-- Blushing Bride

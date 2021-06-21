@@ -947,7 +947,7 @@ _.Zones =
 				}),
 				q(28768, {	-- Winterspring!
 					["provider"] = { "n", 15395 },	-- Nafien
-					["coord"] = { 64, 10.4, FELWOOD },
+					["coord"] = { 64.0, 10.4, FELWOOD },
 					["isBreadcrumb"] = true,
 					--["description"] = "Only available between level 15 and XX.", TODO: before level squish it was available from level 15 till level 60, now min is 15 but max is unknown
 				}),
