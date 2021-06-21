@@ -1936,7 +1936,7 @@ MergeProperties = function(g, o, noReplace)
 		end
 	end
 end
-MergeObjects = function(g, g2)
+MergeObjects = function(g, g2, cloneOnAdd)
 	if #g2 > 25 then
 		local hashTable,t = {};
 		for i,o in ipairs(g) do
@@ -1945,35 +1945,63 @@ MergeObjects = function(g, g2)
 				hashTable[hash] = o;
 			end
 		end
-		for i,o in ipairs(g2) do
-			local hash = GetHash(o);
-			-- print("_",hash);
-			if hash then
-				t = hashTable[hash];
-				if t then
-					if o.g then
-						if t.g then
-							MergeObjects(t.g, o.g);
-						else
-							t.g = o.g;
+		local hash;
+		if cloneOnAdd then
+			for i,o in ipairs(g2) do
+				hash = GetHash(o);
+				-- print("_",hash);
+				if hash then
+					t = hashTable[hash];
+					if t then
+						if o.g then
+							if t.g then
+								MergeObjects(t.g, o.g, true);
+							else
+								for _,s in ipairs(o.g) do
+									tinsert(t.g, CloneData(s));
+								end
+							end
 						end
+						MergeProperties(t, o);
+					else
+						hashTable[hash] = CloneData(o);
+						tinsert(g, hashTable[hash]);
 					end
-					MergeProperties(t, o);
 				else
-					hashTable[hash] = o;
+					tinsert(g, CloneData(o));
+				end
+			end
+		else
+			for i,o in ipairs(g2) do
+				hash = GetHash(o);
+				-- print("_",hash);
+				if hash then
+					t = hashTable[hash];
+					if t then
+						if o.g then
+							if t.g then
+								MergeObjects(t.g, o.g);
+							else
+								t.g = o.g;
+							end
+						end
+						MergeProperties(t, o);
+					else
+						hashTable[hash] = o;
+						tinsert(g, o);
+					end
+				else
 					tinsert(g, o);
 				end
-			else
-				tinsert(g, o);
 			end
 		end
 	else
 		for i,o in ipairs(g2) do
-			MergeObject(g, o);
+			MergeObject(g, o, nil, cloneOnAdd);
 		end
 	end
 end
-MergeObject = function(g, t, index)
+MergeObject = function(g, t, index, cloneOnAdd)
 	local hash = GetHash(t);
 	-- print("_",hash);
 	if hash then
@@ -1981,7 +2009,11 @@ MergeObject = function(g, t, index)
 			if GetHash(o) == hash then
 				if t.g then
 					if o.g then
-						MergeObjects(o.g, t.g);
+						MergeObjects(o.g, t.g, cloneOnAdd);
+					elseif cloneOnAdd then
+						for _,s in ipairs(t.g) do
+							tinsert(o.g, CloneData(s));
+						end
 					else
 						o.g = t.g;
 					end
@@ -1990,6 +2022,9 @@ MergeObject = function(g, t, index)
 				return o;
 			end
 		end
+	end
+	if cloneOnAdd then
+		t = CloneData(t);
 	end
 	if index then
 		tinsert(g, index, t);
@@ -2851,13 +2886,11 @@ end
 -- This should only be used on a cloned group so the source group is not contaminated
 -- The 'cost' tag will be removed afterward so as to not double the tooltip info for the item
 -- app._PurchaseTracking = nil;
-local function FillPurchases(group, recursive)
-	return group;
-
+local function FillPurchases(group)
 	-- While in theory this is neat, it turns out the logic needs to be more complicated due to places where Thing A is a cost to Quest A
 	-- which reward Thing B which is a cost to Quest B which rewards Thing A ... etc. like AQ ring quests etc.
 
-	--[[
+	--[[]]
 	-- local cleanUp;
 	-- if not app._PurchaseTracking then
 	-- 	app._PurchaseTracking = {};
@@ -2868,20 +2901,29 @@ local function FillPurchases(group, recursive)
 	-- group has cost collectibles or is collectible as cost (to thus generate cost collectibles)
 	-- if not app._PurchaseTracking[trackingKey] then
 	-- 	app._PurchaseTracking[trackingKey] = true;
-		print("FillPurchases",app.GetHash(group),recursive)
-		if group.costCollectibles or group.collectibleAsCost then
-			if not group.g then group.g = {}; end
-			MergeObjects(group.g, CloneData(group.costCollectibles));
+	-- Fill Purchases of sub-groups before adding purchases to sub-groups... please no infinite recursion
+	if group.g then
+		for _,s in ipairs(group.g) do
+			FillPurchases(s);
 		end
-		print("#group.g",group.g and #group.g)
-		-- do recursion after potentially creating new sub-groups
-		if recursive and group.g then
-			local level = (recursive == true and 3) or (recursive > 1 and recursive - 1) or nil;
-			print("Next level",level)
-			for _,s in ipairs(group.g) do
-				FillPurchases(s, level);
-			end
-		end
+	end
+	-- print("FillPurchases",app.GetHash(group))
+	if group.costCollectibles then
+		if not group.g then group.g = {}; end
+		MergeObjects(group.g, group.costCollectibles, true);
+	elseif group.collectibleAsCost and group.costCollectibles then
+		if not group.g then group.g = {}; end
+		MergeObjects(group.g, group.costCollectibles, true);
+	end
+	-- print("#group.g",group.g and #group.g)
+	-- do recursion after potentially creating new sub-groups
+	-- if recursive and group.g then
+	-- 	local level = (recursive == true and 3) or (recursive > 1 and recursive - 1) or nil;
+	-- 	print("Next level",level)
+	-- 	for _,s in ipairs(group.g) do
+	-- 		FillPurchases(s, level);
+	-- 	end
+	-- end
 	-- end
 	-- if app.DEBUG_PRINT == group then app.DEBUG_PRINT = nil; end
 	-- if cleanUp then
@@ -3650,7 +3692,9 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		app.BuildCrafted(group);
 
 		-- Expand any things requiring this group
-		app.ExpandSubGroups(group);
+		-- TODO: is this necessary anymore? can't think of a situation to properly test it
+		-- it causes weird nesting results for ToV Ensembles due to non-modID items
+		-- app.ExpandSubGroups(group);
 
 		-- Append currency info to any orphan currency groups
 		app.BuildCurrencies(group);
@@ -6349,12 +6393,6 @@ local fields = {
 		local info = t.info;
 		return info and info.name or ("Currency #" .. t.currencyID);
 	end,
-	-- ["collectible"] = function(t)
-	-- 	return t.collectibleAsCost;
-	-- end,
-	-- ["collected"] = function(t)
-	-- 	return t.collectedAsCost;
-	-- end,
 	["collectedAsCost"] = function(t)
 		local results = app.SearchForField("currencyIDAsCost", t.currencyID);
 		if results and #results > 0 then
@@ -6372,7 +6410,9 @@ local fields = {
 		end
 	end,
 	["collectibleAsCost"] = function(t)
-		if t.parent and t.parent.saved then return false; end
+		-- Quick escape if current-character only and comes from something saved
+		if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved then return false; end
+		-- TODO: utilize shared cache table of cost collectibles eventually
 		local results = app.SearchForField("currencyIDAsCost", t.currencyID);
 		if results and #results > 0 then
 			for _,ref in pairs(results) do
@@ -8114,14 +8154,14 @@ local itemFields = {
 		return rawget(t, "modItemID");
 	end,
 	["trackableAsQuest"] = app.ReturnTrue,
-	-- ["collectible"] = function(t)
-	-- 	return t.collectibleAsCost;
-	-- end,
 	["collectibleAsAchievement"] = function(t)
 		return app.CollectibleAchievements;
 	end,
 	["collectibleAsCost"] = function(t)
+		-- Quick escape if current-character only and comes from something saved
 		if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved then return false; end
+		-- TODO: convert this into a common cache table since cost items are obviously listed multiple times, we shouldn't have to generate
+		-- results for every instance of a group
 		if not t.costCollectibles then
 			local results, id;-- = rawget(t, "collectibleResults");
 			-- if results then
@@ -8149,10 +8189,10 @@ local itemFields = {
 						-- track this item as a cost collectible
 						if not t.costCollectibles then t.costCollectibles = { ref }
 						else tinsert(t.costCollectibles, ref); end
-						-- account or debug, skip filter/exclusion logic
-						if app.MODE_DEBUG_OR_ACCOUNT or
-							-- otherwise don't include items which are from something the current character cannot complete
-							(not GetRelativeValue(t, "altcollected") and app.RecursiveGroupRequirementsFilter(ref)) then
+						-- account or debug, skip filter/exclusion logic, or else make sure not altcollected
+						if (app.MODE_DEBUG_OR_ACCOUNT or not GetRelativeValue(t, "altcollected"))
+							-- don't include groups which do not meet the current filter requirements
+							and app.RecursiveGroupRequirementsFilter(ref) then
 							-- Used as a cost for something which is collectible itself
 							if ref.collectible then
 								filteredCost = true;
@@ -8169,10 +8209,10 @@ local itemFields = {
 			end
 		else
 			for _,ref in pairs(t.costCollectibles) do
-				-- account or debug, skip filter/exclusion logic
-				if app.MODE_DEBUG_OR_ACCOUNT or
-					-- otherwise don't include items which are from something the current character cannot complete
-					(not GetRelativeValue(t, "altcollected") and app.RecursiveGroupRequirementsFilter(ref)) then
+				-- account or debug, skip filter/exclusion logic, or else make sure not altcollected
+				if (app.MODE_DEBUG_OR_ACCOUNT or not GetRelativeValue(t, "altcollected"))
+					-- don't include groups which do not meet the current filter requirements
+					and app.RecursiveGroupRequirementsFilter(ref) then
 					-- Used as a cost for something which is collectible itself
 					if ref.collectible then
 						return true;
@@ -8201,17 +8241,14 @@ local itemFields = {
 	["collectibleAsQuest"] = function(t)
 		return app.CollectibleAsQuest(t);
 	end,
-	-- ["collected"] = function(t)
-	-- 	return t.collectedAsCost;
-	-- end,
 	["collectedAsCost"] = function(t)
 		if not t.costCollectibles then return; end
 		-- local LOG = t.s;
 		for _,ref in pairs(t.costCollectibles) do
-			-- account or debug, skip filter/exclusion logic
-			if app.MODE_DEBUG_OR_ACCOUNT or
-				-- otherwise don't include items which are from something the current character cannot complete
-				(not GetRelativeValue(t, "altcollected") and app.RecursiveGroupRequirementsFilter(ref)) then
+			-- account or debug, skip filter/exclusion logic, or else make sure not altcollected
+			if (app.MODE_DEBUG_OR_ACCOUNT or not GetRelativeValue(t, "altcollected"))
+				-- don't include groups which do not meet the current filter requirements
+				and app.RecursiveGroupRequirementsFilter(ref) then
 				-- Used as a cost for something which is collectible itself and not collected
 				-- if LOG then print("check collectible/collected",LOG,ref.key,ref[ref.key]) end
 				if ref.collectible and not ref.collected then
@@ -8311,13 +8348,6 @@ local itemFields = {
 	end,
 	["collectedAsTransmog"] = function(t)
 		return ATTAccountWideData.Sources[rawget(t, "s")];
-		-- -- item has no cost use, or cost has been fulfilled
-		-- -- TODO: find a way to make this lag less... the time it takes to calculate this on account/debug is insane for whatever reason
-		-- if not t.collectibleAsCost or t.collectedAsCost then
-		-- 	return ATTAccountWideData.Sources[rawget(t, "s")];
-		-- end
-		-- -- item is still required to be obtained/collected
-		-- return false;
 	end,
 	["savedAsQuest"] = function(t)
 		return IsQuestFlaggedCompleted(t.questID);
@@ -9796,7 +9826,7 @@ app.TryPopulateQuestRewards = function(questObject)
 										item.total = 0;
 									end
 									-- if app.DEBUG_PRINT then print(modItemID," ? added",data.key,data[data.key]) end
-									MergeObject(item.g, CloneData(data));
+									MergeObject(item.g, data);
 								end
 							end
 
@@ -9866,7 +9896,7 @@ app.TryPopulateQuestRewards = function(questObject)
 							local searchResults = app.SearchForField("questID", 44058);	-- Volpin the Elusive
 							if searchResults and #searchResults > 0 then
 								if not o.g then o.g = {}; end
-								MergeObjects(o.g, CreateObject(searchResults));
+								MergeObjects(o.g, searchResults, true);
 							end
 						end
 					end
@@ -10665,17 +10695,22 @@ end
 function app.FilterItemBind(item)
 	return item.b == 2 or item.b == 3; -- BoE
 end
+-- Represents filters which should be applied at the Character level
 function app.FilterItemClass(item)
-	if app.UnobtainableItemFilter(item) and app.SeasonalItemFilter(item) then
+	-- check Account trait filters
+	if app.UnobtainableItemFilter(item)
+		and app.SeasonalItemFilter(item)
+		and app.PvPFilter(item)
+		and app.RequireFactionFilter(item) then
+		-- BoE can skip Character trait filters
 		if app.ItemBindFilter(item) then return true; end
+		-- check Character trait filters
 		return app.ItemTypeFilter(item)
 			and app.RequireBindingFilter(item)
 			and app.RequiredSkillFilter(item)
 			and app.ClassRequirementFilter(item)
 			and app.RaceRequirementFilter(item)
-			and app.RequireFactionFilter(item)
-			and app.RequireCustomCollectFilter(item)
-			and app.PvPFilter(item);
+			and app.RequireCustomCollectFilter(item);
 	end
 end
 function app.FilterItemClass_RequireClasses(item)
@@ -11376,8 +11411,8 @@ UpdateGroup = function(parent, group, window)
 	local visible;
 
 	-- Determine if this user can enter the instance or acquire the item.
-	-- If the 'can equip' filter says true
 	if app.GroupRequirementsFilter(group) then
+		-- If the 'can equip' filter says true
 		if app.GroupFilter(group) then
 			-- Set total/progress for this object using it's cost information if any
 			group.total = group.costTotal or 0;
@@ -11438,9 +11473,9 @@ UpdateGroup = function(parent, group, window)
 					-- if app.DEBUG_LOG then print("UpdateGroup.g.forceShow",group.progress,group.total) end
 					visible = true;
 				-- If this group contains Things, show based on visibility filter
-				elseif group.total > 0 then
+				elseif group.total > 0 and app.GroupVisibilityFilter(group) then
 					-- if app.DEBUG_LOG then print("UpdateGroup.g.total",group.progress,group.total) end
-					visible = app.GroupVisibilityFilter(group);
+					visible = true;
 				-- If this group is trackable, then we should show it.
 				elseif app.ShowIncompleteThings(group) then
 					-- if app.DEBUG_LOG then print("UpdateGroup.g.trackable",group.progress,group.total) end
@@ -12378,7 +12413,7 @@ function app:CreateMiniListForGroup(group)
 			-- clone/search initially so as to not let popout operations modify the source data
 			group = CloneData(group);
 			-- Merge any purchasable things into the sub-groups
-			FillPurchases(group, true);
+			FillPurchases(group);
 		end
 		-- This logic allows for nested searches of groups within a popout to be returned as the root search which resets the parent
 		-- if not group.isBaseSearchResult then
@@ -15311,6 +15346,7 @@ app:GetWindow("CosmicInfuser", UIParent, function(self)
 end);
 app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 	if not self.initialized then
+		force = true;
 		self.initialized = true;
 		self.openedOnLogin = false;
 		self.IsSameMapData = function(self)
@@ -15586,6 +15622,9 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 
 				-- Expand all symlinks in the minilist for clarity
 				FillSymLinks(self.data, true);
+				-- Fill purchasable things under any currency from this zone
+				-- TODO: this is really weird in Dalaran with ICC tier pieces...
+				-- FillPurchases(self.data);
 
 				-- Check to see completion...
 				-- print("build groups");
@@ -15678,6 +15717,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 				});
 				BuildGroups(self.data, self.data.g);
 			end
+			return true;
 		end
 		local function OpenMiniList(id, show)
 			-- print("OpenMiniList",id,show);
@@ -15745,14 +15785,12 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 		-- Update the window and all of its row data
 		if self.mapID ~= self.displayedMapID then
 			self.displayedMapID = self.mapID;
-			self:Rebuild();
+			force = self:Rebuild();
 		end
-		self.data.progress = 0;
-		self.data.total = 0;
 		self.data.back = 1;
 		self.data.indent = 0;
 		self.data.visible = true;
-		self:BaseUpdate(true, got);
+		self:BaseUpdate(force or got, got);
 	end
 end);
 app:GetWindow("Harvester", UIParent, function(self)
@@ -19946,6 +19984,7 @@ app.events.QUEST_REMOVED = function()
 	AfterCombatCallback(app.UpdateWindows);
 end
 app.events.QUEST_ACCEPTED = function(questID)
+	-- print("QUEST_ACCEPTED",questID)
 	if questID then
 		local logIndex = C_QuestLog.GetLogIndexForQuestID(questID);
 		local freq, title;
@@ -19968,7 +20007,7 @@ app.events.QUEST_ACCEPTED = function(questID)
 				local warning;
 				for _,group in pairs(nextQuests) do
 					if not group.collected and app.RecursiveGroupRequirementsFilter(group) then
-						app.print(string.format(L["QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT"], title, questID, group.questID));
+						app.print(string.format(L["QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT"], title, questID, group.text or RETRIEVING_DATA, group.questID));
 						warning = true;
 					end
 				end

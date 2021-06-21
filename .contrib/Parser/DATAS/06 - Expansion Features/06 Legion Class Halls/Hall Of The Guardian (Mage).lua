@@ -11,12 +11,6 @@ _.ExpansionFeatures =
 				--700,	-- Icecrown Citadel (Fire weapon scenario)	-- Commented to give the proper header.
 				734,	-- Hall of the Guardian (Mage)
 				735,	-- Hall of the Guardian (Mage) (2nd Floor)
-				736,	-- The Nexus (Arcane weapon scenario)
-				799,	-- The Oculus scenario map used during "Into the Oculus"
-				800,	-- The Oculus scenario map used during "Into the Oculus"
-				801,	-- The Oculus scenario map used during "Into the Oculus"
-				802,	-- The Oculus scenario map used during "Into the Oculus"
-				803,	-- The Oculus scenario map used during "Into the Oculus"
 			},
 			["lvl"] = 98,
 			["g"] = {
@@ -31,31 +25,43 @@ _.ExpansionFeatures =
 						641,	-- Val'Sharah
 						37,		-- Elwynn Forest
 					},
-					["g"] = {
-						n(89386, {	-- Cliffwing Hippogryph [Azsuna]
+					["g"] = sharedData({
+							["classes"] = { MAGE },
+						},{
+						q(43787, {	-- Zone Targets Polymorphed: Azsuna
+							["name"] = "Polymorph: Cliffwing Hippogryph",
 							["description"] = "If this quest has a checkmark next to it, then that means that you have polymorphed this npc already and can move on to the next one!\n\nTake the Azsuna Teleportation Nexus.",
-							["questID"] = 43787,
+							["crs"] = { 89386 },	-- Cliffwing Hippogryph [Azsuna]
+							["sourceQuest"] = 42011,	-- The Nexus Vault (Acquiring Base Arcane Artifact)
 						}),
-						n(110043, {	-- Heartwood Doe [Suramar]
+						q(43791, {	-- Zone Targets Polymorphed: Suramar
+							["name"] = "Polymorph: Heartwood Doe",
 							["description"] = "If this quest has a checkmark next to it, then that means that you have polymorphed this npc already and can move on to the next one!\n\nTake the Suramar Teleportation Nexus.",
-							["questID"] = 43791,
+							["crs"] = { 110043 },	-- Heartwood Doe [Suramar]
+							["sourceQuest"] = 42011,	-- The Nexus Vault (Acquiring Base Arcane Artifact)
 						}),
-						n(99636, {	-- Highpeak Goat [Highmountain]
+						q(43788, {	-- Zone Targets Polymorphed: Highmountain
+							["name"] = "Polymorph: Highpeak Goat",
 							["description"] = "If this quest has a checkmark next to it, then that means that you have polymorphed this npc already and can move on to the next one!\n\nTake the Highmountain Teleportation Nexus.",
-							["questID"] = 43788,
+							["crs"] = { 99636 },	-- Highpeak Goat [Highmountain]
+							["sourceQuest"] = 42011,	-- The Nexus Vault (Acquiring Base Arcane Artifact)
 						}),
-						n(107808, {	-- Plains Runehorn Calf [Stormheim]
+						q(43789, {	-- Zone Targets Polymorphed: Stormheim
+							["name"] = "Polymorph: Plains Runehorn Calf",
 							["description"] = "If this quest has a checkmark next to it, then that means that you have polymorphed this npc already and can move on to the next one!\n\nTake the Stormheim Teleportation Nexus.",
-							["questID"] = 43789,
+							["crs"] = { 107808 },	-- Plains Runehorn Calf [Stormheim]
+							["sourceQuest"] = 42011,	-- The Nexus Vault (Acquiring Base Arcane Artifact)
 						}),
-						n(109819, {	-- Wild Dreamrunner [Val'Sharah]
+						q(43790, {	-- Zone Targets Polymorphed: Val'sharah
+							["name"] = "Polymorph: Wild Dreamrunner",
 							["description"] = "If this quest has a checkmark next to it, then that means that you have polymorphed this npc already and can move on to the next one!\n\nTake the Val'Sharah Teleportation Nexus.",
-							["questID"] = 43790,
+							["crs"] = { 109819 },	-- Wild Dreamrunner [Val'Sharah]
+							["sourceQuest"] = 42011,	-- The Nexus Vault (Acquiring Base Arcane Artifact)
 						}),
-						n(-159, {	-- Daily Event Roll
+						q(43828, {	-- Sheep Summon Daily Roll
+							["name"] = "Sheep Summon Daily Roll",
 							["isDaily"] = true,
 							["provider"] = { "n", 111704 },	-- Cote "Shepherd" Metcalf
-							["questID"] = 43828,	-- "Sheep Summon Daily Roll" on WoWHead
 							["description"] = "If the event roll was successful, you'll see an emote from Cote \"Shepherd\" Metcalf saying \"Success!\".\n\nYou should find a Volatile Sheep on the stairs at the entrance to the class hall. Spam click it.\n\nIf this quest has a checkmark next to it and you didn't see Cote's dialogue emote, then that means that you should come back tomorrow.",
 							["icon"] = "Interface\\Icons\\INV_Staff_2h_SheepStick_D_01",
 							["sourceQuests"] = {
@@ -65,38 +71,43 @@ _.ExpansionFeatures =
 								43789,	-- Plains Runehorn Calf [Stormheim]
 								43790,	-- Wild Dreamrunner [Val'Sharah]
 							},
+							["g"] = {
+								q(43799, {	-- Summoned Sheep Exploded
+									["name"] = "Summoned Sheep Exploded",
+									["description"] = "The next step is pure RNG - when you teleport to your class order hall you have (once a day) chance to trigger a spawn of Volatile Sheep. If it does spawn for you, you will see Cote's dialogue box saying 'Success!' - the sheep will be standing just next to Dalaran portal, all you have to do is to right-click it couple times to make it explode. After you do you'll get another speech box, this time Extemely Volatile Stormheim Sheep bleating '...' - for some reason you can see someone else's sheep dialogue box, so if you see that one in Hall of the guardian without doing previous mob sheeping, means someone just made their sheep explode in the class hall :) As I said this step is pure luck, so it may take some time until you get your sheep to spawn (for me it was around 3 weeks).",
+									["crs"] = { 111107 },	-- Volatile Sheep
+									["sourceQuests"] = { 43828 },	-- Sheep Summon Daily Roll
+								}),
+							},
 						}),
-						n(111107, {	-- Volatile Sheep
-							["description"] = "The next step is pure RNG - when you teleport to your class order hall you have (once a day) chance to trigger a spawn of Volatile Sheep. If it does spawn for you, you will see Cote's dialogue box saying 'Success!' - the sheep will be standing just next to Dalaran portal, all you have to do is to right-click it couple times to make it explode. After you do you'll get another speech box, this time Extemely Volatile Stormheim Sheep bleating '...' - for some reason you can see someone else's sheep dialogue box, so if you see that one in Hall of the guardian without doing previous mob sheeping, means someone just made their sheep explode in the class hall :) As I said this step is pure luck, so it may take some time until you get your sheep to spawn (for me it was around 3 weeks).",
-							["questID"] = 43799,	-- Extremely Volatile Stormheim Sheep: "..." [Volatile Sheep]
-							["sourceQuests"] = { 43828 },	-- Sheep Summon Daily Roll
-						}),
-						n(111691, {	-- Extremely Volatile Stormheim Sheep
+						q(43800, {	-- Stormheim Sheep Exploded
+							["name"] = "Stormheim Sheep Exploded",
 							["description"] = "After that you just need to go to Stormheim in search of Extremely Volatile Stormheim Sheep. This is usually spawning somewhere around Runewood - the best way to find it would be to make /target macro, go to Valdisdall and just run around Runewood spamming macro - it didn't take me even 2 minutes until I got my sheep. Just as the previous one, click it couple times to make it explode, which should result in getting an angry bleat '...' from Enraged Volatile Elwynn Sheep.",
-							["questID"] = 43800,	-- Enraged Volatile Elwynn Sheep says: ...
+							["crs"] = { 111691 },	-- Extremely Volatile Stormheim Sheep
 							["sourceQuests"] = { 43799 },	-- Volatile Sheep
 							["coords"] = {
 								{ 60.0, 55.0, 634 },
-								{ 64.8, 44.8, 634},
-								{ 70.8, 37.8, 634},
-								{ 66.6, 53.8, 634},
-								{ 72.2, 49.2, 634},
-								{ 70.2, 56.8, 634},
-								{ 76.8, 62.6, 634},
-								{ 79.4, 67.8, 634},
+								{ 64.8, 44.8, 634 },
+								{ 70.8, 37.8, 634 },
+								{ 66.6, 53.8, 634 },
+								{ 72.2, 49.2, 634 },
+								{ 70.2, 56.8, 634 },
+								{ 76.8, 62.6, 634 },
+								{ 79.4, 67.8, 634 },
 							},
 						}),
-						n(111704, {	-- Cote "Shepherd" Metcalf
+						q(43658, {	-- Hidden Appearance Unlocked
+							["name"] = "Hidden Appearance Unlocked",
 							["description"] = "Now you need to go to the Tower of Azora in Elwynn Forest. Once there you will see Cote talking to Theocritus. After a short RP bit, he will become hostile and when you kill him, he drops the item.",
+							["crs"] = { 111704 },	-- Cote "Shepherd" Metcalf
 							["sourceQuests"] = { 43800 },	-- Extremely Volatile Stormheim Sheep
-							["questID"] = 43658,	-- Done!
 							["g"] = {
 								i(139558, {	-- The Woolomancer's Charge
 									artifact(846),	-- Arcane Mage Hidden Appearance
 								}),
 							}
 						}),
-					},
+					}),
 				}),
 				gt(386, {		-- Teleportation Nexus
 					["description"] = "A set of 5 portals is generated in the Class Hall; there is a small daily chance instead you will be phased to Frostfire Ridge where you can loot Everburning Crystal. You will be alerted to this chance by an emote when walking around on the stairs of your class hall.",
@@ -153,6 +164,7 @@ _.ExpansionFeatures =
 						["model"] = 192568,
 						["classes"] = { MAGE },
 						["provider"] = { "o", 248398 },	-- Ethereal Communication Device
+						["sourceQuest"] = 42006,	-- A New Threat
 					}),
 					q(43415, {	-- A Hero's Weapon
 						["coord"] = { 72.8, 61.8, 735 },
@@ -542,6 +554,13 @@ _.ExpansionFeatures =
 						["classes"] = { MAGE },
 						["provider"] = { "n", 107351 },	-- Archmage Khadgar
 						["sourceQuest"] = 44689,	-- The Might of the Tirisgarde
+						["maps"] = {
+							799,	-- The Oculus scenario map used during "Into the Oculus"
+							800,	-- The Oculus scenario map used during "Into the Oculus"
+							801,	-- The Oculus scenario map used during "Into the Oculus"
+							802,	-- The Oculus scenario map used during "Into the Oculus"
+							803,	-- The Oculus scenario map used during "Into the Oculus"
+						},
 						["g"] = {
 							i(139751),	-- Robes of Tirisgarde
 						},
@@ -626,6 +645,7 @@ _.ExpansionFeatures =
 						["coord"] = { 44.8, 57.8, 735 },
 						["classes"] = { MAGE },
 						["provider"] = { "n", 112440 },	-- Jackson Watkins
+						["sourceQuest"] = 41124,	-- The Tirisgarde Reborn
 						["g"] = {
 							i(139749),	-- Cowl of Tirisgarde
 						},
@@ -804,7 +824,10 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 42166,	-- What Is Going On Here?
 					}),
 					q(42011, {	-- The Nexus Vault
-						["maps"] = { 114 },
+						["maps"] = {
+							114,	-- Borean Tundra
+							736,	-- The Nexus (Scenario)
+						},
 						["coord"] = { 27.8, 26.7, 114 },
 						["classes"] = { MAGE },
 						["provider"] = { "n", 105917 },	-- Image of Kalec

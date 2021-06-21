@@ -1161,6 +1161,7 @@ _.Zones =
 				}),
 				q(47571, {	-- The Elder's Wisdom
 					["sourceQuests"] = {
+						47943,	-- Crab Trapping
 						47570,	-- Hidden Motives
 						47577,	-- They Came From The Sea
 					},
