@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(27, {	-- Dun Morogh
+		m(DUN_MOROGH, {
 			filter(101, {	-- Pet Battle
 				p(441, {	-- Alpine Hare
 					["crs"] = { 61690 },	-- Alpine Hare
@@ -14,7 +14,7 @@ _.Zones =
 					["crs"] = { 61689 },	-- Snow Cub
 				}),
 				n(63075, {	-- Grady Bannson
-					["coord"] = { 53.8, 50.1, 27 },
+					["coord"] = { 53.8, 50.1, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.|r",
 					["g"] = {
@@ -40,25 +40,25 @@ _.Zones =
 				}),
 				q(31551, {	-- Got one!
 					["provider"] = { "n", 63075 },	-- Grady Bannson
-					["coord"] = { 53.8, 50.1, 27 },
+					["coord"] = { 53.8, 50.1, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 31822,	-- Level Up!
 				}),
 				q(31548, {	-- Learning the Ropes
 					["provider"] = { "n", 63075 },	-- Grady Bannson
-					["coord"] = { 53.8, 50.1, 27 },
+					["coord"] = { 53.8, 50.1, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "This quest is part of a chain initiated by learning Battle Pet Training.",
 				}),
 				q(31822, {	-- Level Up!
 					["provider"] = { "n", 63075 },	-- Grady Bannson
-					["coord"] = { 53.8, 50.1, 27 },
+					["coord"] = { 53.8, 50.1, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 31549,	-- On The Mend
 				}),
 				q(31549, {	-- On The Mend
 					["provider"] = { "n", 63075 },	-- Grady Bannson
-					["coord"] = { 53.8, 50.1, 27 },
+					["coord"] = { 53.8, 50.1, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 31548,	-- Learning the Ropes
 				}),

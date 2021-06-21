@@ -1317,7 +1317,7 @@ _.Zones =
 					},
 				}),
 				n(25977, {	-- Yrma <Transmuter of Sin'dorei Relics>
-					["coord"] = { 50.2, 28.2 },
+					["coord"] = { 50.2, 28.2, ISLE_OF_QUELDANAS },
 					["g"] = {
 						i(34397, {	-- Bladed Chaos Tunic
 							["cost"] = {

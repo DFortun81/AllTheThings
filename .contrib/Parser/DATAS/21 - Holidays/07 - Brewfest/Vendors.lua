@@ -9,9 +9,9 @@ _.Holidays =
 			["u"] = 24,	-- Brewfest
 			["g"] = {
 				n(23604,  {	-- Agnes Farwithers <Cheese Vendor>
-					["coord"] = { 41.0, 18.3, 1 },
+					["coord"] = { 41.0, 18.3, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["maps"] = { 1 },	-- Durotar
+					["maps"] = { DUROTAR },
 					["g"] = bubbleDown({["u"] = 24}, {
 						i(34065),	-- Spiced Onion Cheese
 					}),
@@ -19,23 +19,23 @@ _.Holidays =
 				n(23521,  {	-- Anne Summers <Cheese Vendor>
 					["coord"] = { 56.4, 37.6, 24 },
 					["races"] = ALLIANCE_ONLY,
-					["maps"] = { 27 },	-- Dun Morogh
+					["maps"] = { DUN_MOROGH },
 					["g"] = bubbleDown({["u"] = 24}, {
 						i(34065),	-- Spiced Onion Cheese
 					}),
 				}),
 				n(23522,  {	-- Arlen Lochlan <Bread Vendor>
-					["coord"] = { 55.6, 38.0, 27 },
+					["coord"] = { 55.6, 38.0, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
-					["maps"] = { 27 },	-- Dun Morogh
+					["maps"] = { DUN_MOROGH },
 					["g"] = bubbleDown({["u"] = 24}, {
 						i(33043),	-- The Essential Brewfest Pretzel
 					}),
 				}),
 				n(23482,  {	-- Barleybrew Apprentice <Barleybrew Brew Vendor>
-					["coord"] = { 56.0, 38.0, 27 },
+					["coord"] = { 56.0, 38.0, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
-					["maps"] = { 27 },	-- Dun Morogh
+					["maps"] = { DUN_MOROGH },
 					["g"] = bubbleDown({["u"] = 24}, {
 						i(33030),	-- Barleybrew Clear
 						i(33029),	-- Barleybrew Dark
@@ -46,9 +46,9 @@ _.Holidays =
 				}),
 				n(23710,  {	-- Belbi Quikswitch <Token Redeemer>
 					["description"] = "Larkin Thunderbrew <Brew of the Month Club> in Ironforge also sells these items.",
-					["coord"] = { 56.3, 37.5, 27 },
+					["coord"] = { 56.3, 37.5, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
-					["maps"] = { 27 },	-- Dun Morogh
+					["maps"] = { DUN_MOROGH },
 					["g"] = {
 						n(-3198, {	-- Brewfest Garb
 							["u"] = 24,	-- Brewfest
@@ -197,9 +197,9 @@ _.Holidays =
 					},
 				}),
 				n(23605,  {	-- Bron <Sausage Vendor>
-					["coord"] = { 41.6, 17.8, 1 },
+					["coord"] = { 41.6, 17.8, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["maps"] = { 1 },	-- Durotar
+					["maps"] = { DUROTAR },
 					["g"] = bubbleDown({["u"] = 24}, {
 						i(34063),	-- Dried Sausage
 						i(138900, {	-- Gravil Goldbraid's Famous Sausage Hat (TOY!)
@@ -215,9 +215,9 @@ _.Holidays =
 				}),
 				n(24495,  {	-- Blix Fixwidget <Token Redeemer>
 					["description"] = "Ray'ma <Brew of the Month Club> in Orgrimmar also sells these items.",
-					["coord"] = { 41.0, 17.0, 1 },
+					["coord"] = { 41.0, 17.0, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["maps"] = { 1 },	-- Durotar
+					["maps"] = { DUROTAR },
 					["g"] = {
 						n(-3198, {	-- Brewfest Garb
 							["u"] = 24,	-- Brewfest
@@ -366,9 +366,9 @@ _.Holidays =
 					},
 				}),
 				n(153574, {	-- Britta Steinheart <Chowdown Organizer>
-					["coord"] = { 54.8, 38.6, 27 },
+					["coord"] = { 54.8, 38.6, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
-					["maps"] = { 27 },	-- Dun Morogh
+					["maps"] = { DUN_MOROGH },
 					["g"] = bubbleDown({["u"] = 24}, {
 						i(169865, {	-- Brewfest Chowdown Trophy
 							["cost"] = { { "i", 169599, 5 }, },	-- 5x Chowdown Champion Token
@@ -376,9 +376,9 @@ _.Holidays =
 					}),
 				}),
 				n(24501,  {	-- Drohn's Distillery Apprentice <Drohn's Distillery Brew Vendor>
-					["coord"] = { 40.4, 18.1, 1 },
+					["coord"] = { 40.4, 18.1, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["maps"] = { 1 },	-- Durotar
+					["maps"] = { DUROTAR },
 					["g"] = bubbleDown({["u"] = 24}, {
 						i(34018),	-- Long Stride Brew
 						i(138868),	-- Mannoroth's Blood Red Ale
@@ -388,9 +388,9 @@ _.Holidays =
 					}),
 				}),
 				n(155133, {	-- Etga <Chowdown Organizer>
-					["coord"] = { 42.2, 18.5, 1 },
+					["coord"] = { 42.2, 18.5, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["maps"] = { 1 },	-- Durotar
+					["maps"] = { DUROTAR },
 					["g"] = bubbleDown({["u"] = 24}, {
 						i(169865, {	-- Brewfest Chowdown Trophy
 							["cost"] = { { "i", 169599, 5 }, },	-- 5x Chowdown Champion Token
@@ -399,10 +399,13 @@ _.Holidays =
 				}),
 				n(23511,  {	-- Gordok Brew Apprentice <Gordok Brew Vendor>
 					["coords"] = {
-						{ 55.6, 36.6, 27 },	-- Dun Morogh
-						{ 40.9, 16.8, 1 },	-- Durotar
+						{ 55.6, 36.6, DUN_MOROGH },
+						{ 40.9, 16.8, DUROTAR },
 					},
-					["maps"] = { 27, 1 },	-- Dun Morogh, Durotar
+					["maps"] = {
+						DUN_MOROGH,
+						DUROTAR,
+					},
 					["g"] = bubbleDown({["u"] = 24}, {
 						i(46403),	-- Chuganpug's Delight
 						i(138869),	-- Gordok Bock
@@ -412,9 +415,9 @@ _.Holidays =
 					}),
 				}),
 				n(23481,  {	-- Keiran Donoghue <Sausage Vendor>
-					["coord"] = { 55.33, 37.17, 27 },
+					["coord"] = { 55.33, 37.17, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
-					["maps"] = { 27 },	-- Dun Morogh
+					["maps"] = { DUN_MOROGH },
 					["g"] = bubbleDown({["u"] = 24}, {
 						i(34063),	-- Dried Sausage
 						i(138900, {	-- Gravil Goldbraid's Famous Sausage Hat (TOY!)
@@ -429,9 +432,9 @@ _.Holidays =
 					}),
 				}),
 				n(23533,  {	-- T'chali's Voodoo Brewery Apprentice <Voodoo Brew Vendor>
-					["coord"] = { 40.3, 16.9, 1 },
+					["coord"] = { 40.3, 16.9, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["maps"] = { 1 },	-- Durotar
+					["maps"] = { DUROTAR },
 					["g"] = bubbleDown({["u"] = 24}, {
 						i(34021),	-- Brewdoo Magic
 						i(46401),	-- Crimson Stripe
@@ -441,9 +444,9 @@ _.Holidays =
 					}),
 				}),
 				n(23510,  {	-- Thunderbrew Apprentice <Thunderbrew Brew Vendor>
-					["coord"] = { 56.6, 37.0, 27 },
+					["coord"] = { 56.6, 37.0, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
-					["maps"] = { 27 },	-- Dun Morogh
+					["maps"] = { DUN_MOROGH },
 					["g"] = bubbleDown({["u"] = 24}, {
 						i(138871),	-- Storming Saison
 						i(33031),	-- Thunder 45
@@ -453,9 +456,9 @@ _.Holidays =
 					}),
 				}),
 				n(23603,  {	-- Uta Roughdough <Bread Vendor>
-					["coord"] = { 41.6, 17.8, 1 },
+					["coord"] = { 41.6, 17.8, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["maps"] = { 1 },	-- Durotar
+					["maps"] = { DUROTAR },
 					["g"] = bubbleDown({["u"] = 24}, {
 						i(33043),	-- The Essential Brewfest Pretzel
 					}),

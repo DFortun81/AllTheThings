@@ -163,7 +163,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				i(163478, {	-- Battered Twilight Scale
-					["coord"] = { 20.2, 54.6, 241 },
+					["coord"] = { 20.2, 54.6, TWILIGHT_HIGHLANDS },
 					["g"] = {
 						q(53171, {	-- Battered Twilight Scale
 							["provider"] = { "n", 132888 },	-- Eryna
@@ -321,7 +321,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				i(163477, {	-- Unscarred Black Scale
-					["coord"] = { 47.8, 68.8, 36 },	-- Verify map/npc id
+					["coord"] = { 47.8, 68.8, BURNING_STEPPES },	-- Verify map/npc id
 					["g"] = {
 						q(53170, {	-- Unscarred Black Scale
 							["provider"] = { "n", 66306 },	-- Blacktalon Agent <Servant of the Black Prince>

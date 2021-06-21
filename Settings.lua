@@ -117,6 +117,7 @@ local GeneralSettingsBase = {
 		["Thing:Transmog"] = true,
 		["Show:CompletedGroups"] = false,
 		["Show:CollectedThings"] = false,
+		["Skip:AutoRefresh"] = false,
 	},
 };
 local FilterSettingsBase = {
@@ -227,7 +228,6 @@ settings.Initialize = function(self)
 		app.Minimap:Hide();
 	end
 	OnClickForTab(self.Tabs[1]);
-	self:Refresh();
 	self:UpdateMode();
 
 	if self:GetTooltipSetting("Auto:MainList") then
@@ -276,7 +276,12 @@ settings.GetModeString = function(self)
 		for key,_ in pairs(GeneralSettingsBase.__index) do
 			if string.sub(key, 1, 6) == "Thing:" then
 				totalThingCount = totalThingCount + 1;
-				if settings:Get(key) then
+				if settings:Get(key) and
+					-- Quest Breadcrumbs only count when Quests are enabled
+					(key ~= "Thing:QuestBreadcrumbs" or settings:Get("Thing:Quests")) and
+					-- Heirloom Upgrades only count when Heirlooms are enabled
+					(key ~= "Thing:HeirloomUpgrades" or settings:Get("Thing:Heirlooms"))
+					then
 					thingCount = thingCount + 1;
 					table.insert(things, string.sub(key, 7));
 				end
@@ -307,6 +312,10 @@ settings.GetModeString = function(self)
 	if self:Get("Filter:ByLevel") then
 		mode = L["TITLE_LEVEL"] .. app.Level .. " " .. mode;
 	end
+	-- Waiting on Refresh to properly show values
+	if self.NeedsRefresh then
+		mode = L["AFTER_REFRESH"] .. ": " .. mode;
+	end
 	return mode;
 end
 settings.GetShortModeString = function(self)
@@ -319,7 +328,12 @@ settings.GetShortModeString = function(self)
 		for key,_ in pairs(GeneralSettingsBase.__index) do
 			if string.sub(key, 1, 6) == "Thing:" then
 				totalThingCount = totalThingCount + 1;
-				if settings:Get(key) then
+				if settings:Get(key) and
+					-- Quest Breadcrumbs only count when Quests are enabled
+					(key ~= "Thing:QuestBreadcrumbs" or settings:Get("Thing:Quests")) and
+					-- Heirloom Upgrades only count when Heirlooms are enabled
+					(key ~= "Thing:HeirloomUpgrades" or settings:Get("Thing:Heirlooms"))
+					then
 					thingCount = thingCount + 1;
 					table.insert(things, string.sub(key, 7));
 				end
@@ -342,6 +356,10 @@ settings.GetShortModeString = function(self)
 			end
 		else
 			style = "";
+		end
+		-- Waiting on Refresh to properly show values
+		if self.NeedsRefresh then
+			style = "R:" .. " " .. style;
 		end
 		if self:Get("Completionist") then
 			if self:Get("AccountMode") then
@@ -384,8 +402,7 @@ settings.Set = function(self, setting, value)
 end
 settings.SetFilter = function(self, filterID, value)
 	AllTheThingsSettingsPerCharacter.Filters[filterID] = value;
-	self:Refresh();
-	app:RefreshData(nil,nil,true);
+	self:UpdateMode(1);
 end
 settings.SetTooltipSetting = function(self, setting, value)
 	AllTheThingsSettings.Tooltips[setting] = value;
@@ -397,6 +414,8 @@ settings.SetPersonal = function(self, setting, value)
 	self:Refresh();
 end
 settings.Refresh = function(self)
+	settings.SkipAutoRefreshCheckbox:OnRefresh();
+
 	for i,tab in ipairs(self.Tabs) do
 		if tab.OnRefresh then tab:OnRefresh(); end
 		for j,o in ipairs(tab.objects) do
@@ -406,7 +425,7 @@ settings.Refresh = function(self)
 end
 settings.CreateCheckBox = function(self, text, OnRefresh, OnClick)
 	local cb = CreateFrame("CheckButton", self:GetName() .. "-" .. text, self, "InterfaceOptionsCheckButtonTemplate");
-	table.insert(self.MostRecentTab.objects, cb);
+	if self.MostRecentTab then table.insert(self.MostRecentTab.objects, cb); end
 	cb:SetScript("OnClick", OnClick);
 	cb.OnRefresh = OnRefresh;
 	cb.Text:SetText(text);
@@ -499,15 +518,16 @@ settings.SetAccountMode = function(self, accountMode)
 end
 settings.ToggleAccountMode = function(self)
 	self:SetAccountMode(not self:Get("AccountMode"));
+	self:ForceRefreshFromToggle();
 end
 settings.SetCompletionistMode = function(self, completionistMode)
 	self:Set("Completionist", completionistMode);
-	self:UpdateMode();
-	wipe(ATTAccountWideData.Sources);
-	app.RefreshCollections();
+	app.DoRefreshAppearanceSources = true;
+	self:UpdateMode(1);
 end
 settings.ToggleCompletionistMode = function(self)
 	self:SetCompletionistMode(not self:Get("Completionist"));
+	self:ForceRefreshFromToggle();
 end
 settings.SetDebugMode = function(self, debugMode)
 	self:Set("DebugMode", debugMode);
@@ -518,20 +538,17 @@ settings.SetDebugMode = function(self, debugMode)
 		settings:SetCompletedGroups(true, true);
 		settings:SetCollectedThings(true, true);
 		if not self:Get("Thing:Transmog") then
-			wipe(ATTAccountWideData.Sources);
-			app.RefreshCollections();
-			debugMode = "R";
+			app.DoRefreshAppearanceSources = true;
 		end
 	else
 		settings:SetCompletedGroups(settings:Get("Cache:CompletedGroups"), true);
 		settings:SetCollectedThings(settings:Get("Cache:CollectedThings"), true);
 	end
-	if not debugMode or debugMode ~= "R" then
-		self:UpdateMode(1);
-	end
+	self:UpdateMode(1);
 end
 settings.ToggleDebugMode = function(self)
 	self:SetDebugMode(not self:Get("DebugMode"));
+	self:ForceRefreshFromToggle();
 end
 settings.SetFactionMode = function(self, factionMode)
 	self:Set("FactionMode", factionMode);
@@ -539,6 +556,7 @@ settings.SetFactionMode = function(self, factionMode)
 end
 settings.ToggleFactionMode = function(self)
 	self:SetFactionMode(not self:Get("FactionMode"));
+	self:ForceRefreshFromToggle();
 end
 settings.SetMainOnlyMode = function(self, mainOnly)
 	self:Set("MainOnly", mainOnly);
@@ -546,6 +564,7 @@ settings.SetMainOnlyMode = function(self, mainOnly)
 end
 settings.ToggleMainOnlyMode = function(self)
 	self:SetMainOnlyMode(not self:Get("MainOnly"));
+	self:ForceRefreshFromToggle();
 end
 settings.SetCompletedThings = function(self, checked)
 	self:Set("Show:CompletedGroups", checked);
@@ -556,6 +575,7 @@ settings.SetCompletedThings = function(self, checked)
 end
 settings.ToggleCompletedThings = function(self)
 	self:SetCompletedThings(not self:Get("Show:CompletedGroups"));
+	self:ForceRefreshFromToggle();
 end
 settings.SetCompletedGroups = function(self, checked, skipRefresh)
 	self:Set("Show:CompletedGroups", checked);
@@ -564,6 +584,7 @@ end
 settings.ToggleCompletedGroups = function(self)
 	self:SetCompletedGroups(not self:Get("Show:CompletedGroups"));
 	settings:Set("Cache:CompletedGroups", self:Get("Show:CompletedGroups"));
+	self:ForceRefreshFromToggle();
 end
 settings.SetCollectedThings = function(self, checked, skipRefresh)
 	self:Set("Show:CollectedThings", checked);
@@ -572,6 +593,7 @@ end
 settings.ToggleCollectedThings = function(self)
 	settings:SetCollectedThings(not self:Get("Show:CollectedThings"));
 	settings:Set("Cache:CollectedThings", self:Get("Show:CollectedThings"));
+	self:ForceRefreshFromToggle();
 end
 settings.SetHideBOEItems = function(self, checked)
 	self:Set("Hide:BoEs", checked);
@@ -579,6 +601,14 @@ settings.SetHideBOEItems = function(self, checked)
 end
 settings.ToggleBOEItems = function(self)
 	self:SetHideBOEItems(not self:Get("Hide:BoEs"));
+	self:ForceRefreshFromToggle();
+end
+-- When we toggle a setting directly (keybind etc.) the refresh should always take place immediately,
+-- so force it if it is being skipped
+settings.ForceRefreshFromToggle = function(self)
+	if self:Get("Skip:AutoRefresh") then
+		self:UpdateMode("FORCE");
+	end
 end
 settings.UpdateMode = function(self, doRefresh)
 	if self:Get("Completionist") then
@@ -767,8 +797,18 @@ settings.UpdateMode = function(self, doRefresh)
 
 	-- if auto-refresh
 	if doRefresh then
-		app:RefreshData(nil,nil,true);
+		self.NeedsRefresh = true;
+		if doRefresh == "FORCE" or not settings:Get("Skip:AutoRefresh") then
+			self.NeedsRefresh = nil;
+			if app.DoRefreshAppearanceSources then
+				app.RefreshAppearanceSources();
+			end
+			app:RefreshData(nil,nil,true);
+		end
 	end
+
+	-- ensure the settings pane itself is refreshed
+	self:Refresh();
 end
 
 -- The ALL THE THINGS Epic Logo!
@@ -786,6 +826,17 @@ f:SetText(L["TITLE"]);
 f:SetScale(1.5);
 f:Show();
 settings.title = f;
+
+f = settings:CreateCheckBox(L["SKIP_AUTO_REFRESH"],
+function(self)
+	self:SetChecked(settings:Get("Skip:AutoRefresh"));
+end,
+function(self)
+	settings:Set("Skip:AutoRefresh", self:GetChecked());
+end);
+f:SetATTTooltip(L["SKIP_AUTO_REFRESH_TOOLTIP"]);
+f:SetPoint("TOPLEFT", settings.title, "TOPRIGHT", 4, -2);
+settings.SkipAutoRefreshCheckbox = f;
 
 f = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 f:SetPoint("TOPRIGHT", settings, "TOPRIGHT", -8, -8);
@@ -1061,12 +1112,10 @@ function(self)
 end,
 function(self)
 	settings:Set("Thing:Transmog", self:GetChecked());
-	settings:UpdateMode();
 	if self:GetChecked() then
-		wipe(ATTAccountWideData.Sources);
-		app.RefreshCollections();
+		app.DoRefreshAppearanceSources = true;
 	end
-	app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 end);
 TransmogCheckBox:SetATTTooltip(L["TMOG_CHECKBOX_TOOLTIP"]);
 TransmogCheckBox:SetPoint("TOPLEFT", AchievementsCheckBox, "BOTTOMLEFT", 0, 4);
@@ -1896,7 +1945,7 @@ f:SetScript("OnClick", function(self)
 		AllTheThingsSettingsPerCharacter.Filters[key] = nil;
 	end
 	settings:Refresh();
-	app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 end);
 f:SetATTTooltip(L["CLASS_DEFAULTS_BUTTON_TOOLTIP"]);
 f.OnRefresh = function(self)
@@ -1950,7 +1999,7 @@ f:SetScript("OnClick", function(self)
 		AllTheThingsSettingsPerCharacter.Filters[v] = true
 	end
 	settings:Refresh();
-	app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 end);
 f:SetATTTooltip(L["ALL_BUTTON_TOOLTIP"]);
 f.OnRefresh = function(self)
@@ -1974,7 +2023,7 @@ f:SetScript("OnClick", function(self)
 		AllTheThingsSettingsPerCharacter.Filters[v] = false
 	end
 	settings:Refresh();
-	app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 end);
 f:SetATTTooltip(L["UNCHECK_ALL_BUTTON_TOOLTIP"]);
 f.OnRefresh = function(self)
@@ -2147,7 +2196,7 @@ function(self)
 		app.SeasonalItemFilter = app.NoFilter;
 	end
 	settings:Refresh();
-	app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 end);
 seasonalEnable:SetPoint("TOPLEFT", seasonalFrame, "TOPLEFT", 4, -4);
 
@@ -2179,7 +2228,7 @@ function(self)
 	end
 	app.SetDataMember("SeasonalFilters", val);
 	settings:Refresh();
-	app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 end);
 seasonalAll:SetPoint("TOP", seasonalFrame, "TOP", 0, -4);
 seasonalAll:SetPoint("LEFT", seasonalFrame, "CENTER", 0, 0);
@@ -2210,7 +2259,7 @@ for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
 			val[k]= not self:GetChecked()
 			app.SetDataMember("SeasonalFilters", val);
 			settings:Refresh();
-			app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 		end);
 		seasonalFilter:SetATTTooltip(v[2]);
 		seasonalFilter:SetPoint("TOPLEFT",last,x,-y)
@@ -2251,7 +2300,7 @@ function(self)
 		app.UnobtainableItemFilter = app.NoFilter;
 	end
 	settings:Refresh();
-	app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 end);
 unobtainableEnable:SetPoint("TOPLEFT",unobtainable,5,-20)
 
@@ -2283,7 +2332,7 @@ function(self)
 	end
 	app.SetDataMember("UnobtainableItemFilters", val);
 	settings:Refresh();
-	app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 end);
 unobtainableAll:SetPoint("TOPLEFT",unobtainable, 300, -20)
 
@@ -2326,7 +2375,7 @@ function(self)
 	end
 	app.SetDataMember("UnobtainableItemFilters", val);
 	settings:Refresh();
-	app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 end);
 noChanceAll:SetPoint("TOPLEFT",noChance, 300, 7)
 
@@ -2352,7 +2401,7 @@ for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
 			val[k]= not self:GetChecked()
 			app.SetDataMember("UnobtainableItemFilters", val);
 			settings:Refresh();
-			app:RefreshData(nil,nil,true);
+			settings:UpdateMode(1);
 		end);
 		filter:SetATTTooltip(v[2]);
 		filter:SetPoint("TOPLEFT",last,x,-y)
@@ -2407,7 +2456,7 @@ function(self)
 	end
 	app.SetDataMember("UnobtainableItemFilters", val);
 	settings:Refresh();
-	app:RefreshData(nil,nil,true);
+	settings:UpdateMode(1);
 end);
 highChanceAll:SetPoint("TOPLEFT",highChance, 300, 7);
 
@@ -2433,7 +2482,7 @@ for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
 			val[k]= not self:GetChecked();
 			app.SetDataMember("UnobtainableItemFilters", val);
 			settings:Refresh();
-			app:RefreshData(nil,nil,true);
+			settings:UpdateMode(1);
 		end);
 		filter:SetATTTooltip(v[2]);
 		filter:SetPoint("TOPLEFT",last,x,-y);

@@ -49,41 +49,6 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 			}),
 			d(14, {	-- Normal
 				n(ZONEDROPS, {
-					["crs"] = {
-						34183,	-- Arachnopod Destroyer
-						34197,	-- Chamber Overseer
-						34133,	-- Champion of Hodir
-						34193,	-- Clockwork Sapper
-						33354,	-- Corrupted Servitor
-						33755,	-- Dark Rune Ravager
-						33754,	-- Dark Rune Thunderer
-						33772,	-- Faceless Horror
-						34085,	-- Forge Construct
-						33430,	-- Guardian Lasher
-						33528,	-- Guardian of Life
-						34190,	-- Hardened Iron Golem
-						34198,	-- Iron Mender
-						33526,	-- Ironroot Lasher
-						34199,	-- Lightning Charged Iron Dwarf
-						34086,	-- Magma Rager
-						33525,	-- Mangrove Ent
-						33355,	-- Misguided Nymph
-						34069,	-- Molten Colossus
-						33527,	-- Nature's Blade
-						34196,	-- Rune Etched Sentry
-						33722,	-- Storm Tempered Keeper
-						33699,	-- Storm Tempered Keeper
-						33818,	-- Twilight Adherent
-						33819,	-- Twilight Frost Mage
-						33822,	-- Twilight Guardian
-						33820,	-- Twilight Pyromancer
-						33824,	-- Twilight Shadowblade
-						33823,	-- Twilight Slayer
-						34134,	-- Winter Revenant
-						34135,	-- Winter Rumbler
-						34271,	-- XD-175 Compactobot
-						34269,	-- XR-949 Salvagebot
-					},
 					["g"] = {
 						i(46351),	-- Bloodcrush Cudgel
 						i(45605),	-- Daschal's Bite
@@ -662,58 +627,14 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					}),
 					ach(12344),	-- I Have the Coolest Friends
 					ach(12346),	-- Staying Buffed All Winter
-					i(45632, {	-- Breastplate of the Wayward Conqueror
-						i(46154),	-- Conqueror's Aegis Battleplate
-						i(46173),	-- Conqueror's Aegis Breastplate
-						i(46178),	-- Conqueror's Aegis Tunic
-						i(46168),	-- Conqueror's Raiments of Sanctification
-						i(46193),	-- Conqueror's Robe of Sanctification
-						i(46137),	-- Conqueror's Deathbringer Robe
-					}),
-					i(45633, {	-- Breastplate of the Wayward Protector
-						i(46141),	-- Conqueror's Scourgestalker Tunic
-						i(46205),	-- Conqueror's Worldbreaker Chestguard
-						i(46206),	-- Conqueror's Worldbreaker Hauberk
-						i(46198),	-- Conqueror's Worldbreaker Tunic
-						i(46146),	-- Conqueror's Siegebreaker Battleplate
-						i(46162),	-- Conqueror's Siegebreaker Breastplate
-					}),
-					i(45634, {	-- Breastplate of the Wayward Vanquisher
-						i(46111),	-- Conqueror's Darkruned Battleplate
-						i(46118),	-- Conqueror's Darkruned Chestguard
-						i(46159),	-- Conqueror's Nightsong Raiments
-						i(46186),	-- Conqueror's Nightsong Robe
-						i(46194),	-- Conqueror's Nightsong Vestments
-						i(46130),	-- Conqueror's Kirin Tor Tunic
-						i(46123),	-- Conqueror's Terrorblade Breastplate
-					}),
-					i(138800),	-- Illusion: Blade Ward
-					i(45650, {	-- Leggings of the Wayward Conqueror
-						i(45371),	-- Valorous Aegis Greaves
-						i(45384),	-- Valorous Aegis Legguards
-						i(45379),	-- Valorous Aegis Legplates
-						i(45388),	-- Valorous Leggings of Sanctification
-						i(45394),	-- Valorous Pants of Sanctification
-						i(45420),	-- Valorous Deathbringer Leggings
-					}),
-					i(45651, {	-- Leggings of the Wayward Protector
-						i(45362),	-- Valorous Scourgestalker Legguards
-						i(45409),	-- Valorous Worldbreaker Kilt
-						i(45403),	-- Valorous Worldbreaker Legguards
-						i(45416),	-- Valorous Worldbreaker War-Kilt
-						i(45427),	-- Valorous Siegebreaker Legguards
-						i(45432),	-- Valorous Siegebreaker Legplates
-					}),
-					i(45652, {	-- Leggings of the Wayward Vanquisher
-						i(45338),	-- Valorous Darkruned Legguards
-						i(45343),	-- Valorous Darkruned Legplates
-						i(45347),	-- Valorous Nightsong Leggings
-						i(45357),	-- Valorous Nightsong Legguards
-						i(45353),	-- Valorous Nightsong Trousers
-						i(45367),	-- Valorous Kirin Tor Leggings
-						i(45399),	-- Valorous Terrorblade Legplates
-					}),
+					i(45632),	-- Breastplate of the Wayward Conqueror
+					i(45633),	-- Breastplate of the Wayward Protector
+					i(45634),	-- Breastplate of the Wayward Vanquisher
+					i(45650),	-- Leggings of the Wayward Conqueror
+					i(45651),	-- Leggings of the Wayward Protector
+					i(45652),	-- Leggings of the Wayward Vanquisher
 					i(142090),	-- Ominous Pile of Snow (PET!)
+					i(138800),	-- Illusion: Blade Ward
 					i(45458),	-- Stormedge
 					i(45872),	-- Avalanche
 					i(45450),	-- Northern Barrier
@@ -750,57 +671,13 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					}),
 					ach(12351),	-- Siffed
 					ach(12350),	-- Who Needs Bloodlust?
-					i(45638, {	-- Crown of the Wayward Conqueror
-						i(46175),	-- Conqueror's Aegis Faceguard
-						i(46180),	-- Conqueror's Aegis Headpiece
-						i(46156),	-- Conqueror's Aegis Helm
-						i(46172),	-- Conqueror's Circlet of Sanctification
-						i(46197),	-- Conqueror's Cowl of Sanctification
-						i(46140),	-- Conqueror's Deathbringer Hood
-					}),
-					i(45639, {	-- Crown of the Wayward Protector
-						i(46143),	-- Conqueror's Scourgestalker Headpiece
-						i(46212),	-- Conqueror's Worldbreaker Faceguard
-						i(46201),	-- Conqueror's Worldbreaker Headpiece
-						i(46209),	-- Conqueror's Worldbreaker Helm
-						i(46166),	-- Conqueror's Siegebreaker Greathelm
-						i(46151),	-- Conqueror's Siegebreaker Helmet
-					}),
-					i(45640, {	-- Crown of the Wayward Vanquisher
-						i(46120),	-- Conqueror's Darkruned Faceguard
-						i(46115),	-- Conqueror's Darkruned Helmet
-						i(46191),	-- Conqueror's Nightsong Cover
-						i(46161),	-- Conqueror's Nightsong Headguard
-						i(46184),	-- Conqueror's Nightsong Headpiece
-						i(46129),	-- Conqueror's Kirin Tor Hood
-						i(46125),	-- Conqueror's Terrorblade Helmet
-					}),
+					i(45638),	-- Crown of the Wayward Conqueror
+					i(45639),	-- Crown of the Wayward Protector
+					i(45640),	-- Crown of the Wayward Vanquisher
+					i(45659),	-- Spaulders of the Wayward Conqueror
+					i(45660),	-- Spaulders of the Wayward Protector
+					i(45661),	-- Spaulders of the Wayward Vanquisher
 					i(138800),	-- Illusion: Blade Ward
-					i(45659, {	-- Spaulders of the Wayward Conqueror
-						i(45385),	-- Valorous Aegis Shoulderguards
-						i(45380),	-- Valorous Aegis Shoulderplates
-						i(45373),	-- Valorous Aegis Spaulders
-						i(45393),	-- Valorous Mantle of Sanctification
-						i(45390),	-- Valorous Shoulderpads of Sanctification
-						i(45422),	-- Valorous Deathbringer Shoulderpads
-					}),
-					i(45660, {	-- Spaulders of the Wayward Protector
-						i(45363),	-- Valorous Scourgestalker Spaulders
-						i(45415),	-- Valorous Worldbreaker Shoulderguards
-						i(45410),	-- Valorous Worldbreaker Shoulderpads
-						i(45404),	-- Valorous Worldbreaker Spaulders
-						i(45428),	-- Valorous Siegebreaker Pauldrons
-						i(45433),	-- Valorous Siegebreaker Shoulderplates
-					}),
-					i(45661, {	-- Spaulders of the Wayward Vanquisher
-						i(45339),	-- Valorous Darkruned Pauldrons
-						i(45344),	-- Valorous Darkruned Shoulderplates
-						i(45352),	-- Valorous Nightsong Mantle
-						i(45359),	-- Valorous Nightsong Shoulderpads
-						i(45349),	-- Valorous Nightsong Spaulders
-						i(45369),	-- Valorous Kirin Tor Shoulderpads
-						i(45400),	-- Valorous Terrorblade Pauldrons
-					}),
 					i(45892),	-- Legacy of Thunder
 					i(45463),	-- Vulmir, the Northern Tempest
 					i(45893),	-- Guise of the Midgard Serpent
@@ -838,57 +715,13 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(45946),	-- Fire Orchid Signet
 					}),
 					i(142091),	-- Blessed Seed (PET!)
-					i(45644, {	-- Gloves of the Wayward Conqueror
-						i(45376),	-- Valorous Aegis Gauntlets
-						i(45370),	-- Valorous Aegis Gloves
-						i(45383),	-- Valorous Aegis Handguards
-						i(45387),	-- Valorous Gloves of Sanctification
-						i(45392),	-- Valorous Handwraps of Sanctification
-						i(45419),	-- Valorous Deathbringer Gloves
-					}),
-					i(45645, {	-- Gloves of the Wayward Protector
-						i(45360),	-- Valorous Scourgestalker Handguards
-						i(45406),	-- Valorous Worldbreaker Gloves
-						i(45414),	-- Valorous Worldbreaker Grips
-						i(45401),	-- Valorous Worldbreaker Handguards
-						i(45430),	-- Valorous Siegebreaker Gauntlets
-						i(45426),	-- Valorous Siegebreaker Handguards
-					}),
-					i(45646, {	-- Gloves of the Wayward Vanquisher
-						i(45341),	-- Valorous Darkruned Gauntlets
-						i(45337),	-- Valorous Darkruned Handguards
-						i(45351),	-- Valorous Nightsong Gloves
-						i(45355),	-- Valorous Nightsong Handgrips
-						i(45345),	-- Valorous Nightsong Handguards
-						i(46131),	-- Valorous Kirin Tor Gauntlets
-						i(45397),	-- Valorous Terrorblade Gauntlets
-					}),
+					i(45644),	-- Gloves of the Wayward Conqueror
+					i(45645),	-- Gloves of the Wayward Protector
+					i(45646),	-- Gloves of the Wayward Vanquisher
+					i(45653),	-- Legplates of the Wayward Conqueror
+					i(45654),	-- Legplates of the Wayward Protector
+					i(45655),	-- Legplates of the Wayward Vanquisher
 					i(138800),	-- Illusion: Blade Ward
-					i(45653, {	-- Legplates of the Wayward Conqueror
-						i(46153),	-- Conqueror's Aegis Legplates
-						i(46176),	-- Conqueror's Aegis Legguards
-						i(46181),	-- Conqueror's Aegis Greaves
-						i(46195),	-- Conqueror's Leggings of Sanctification
-						i(46170),	-- Conqueror's Pants of Sanctification
-						i(46139),	-- Conqueror's Deathbringer Leggings
-					}),
-					i(45654, {	-- Legplates of the Wayward Protector
-						i(46144),	-- Conqueror's Scourgestalker Legguards
-						i(46210),	-- Conqueror's Worldbreaker Kilt
-						i(46202),	-- Conqueror's Worldbreaker Legguards
-						i(46208),	-- Conqueror's Worldbreaker War-Kilt
-						i(46169),	-- Conqueror's Siegebreaker Legguards
-						i(46150),	-- Conqueror's Siegebreaker Legplates
-					}),
-					i(45655, {	-- Legplates of the Wayward Vanquisher
-						i(46121),	-- Conqueror's Darkruned Legguards
-						i(46116),	-- Conqueror's Darkruned Legplates
-						i(46185),	-- Conqueror's Nightsong Leggings
-						i(46160),	-- Conqueror's Nightsong Legguards
-						i(46192),	-- Conqueror's Nightsong Trousers
-						i(46133),	-- Conqueror's Kirin Tor Leggings
-						i(46126),	-- Conqueror's Terrorblade Legplates
-					}),
 					i(45479),	-- The Lifebinder
 					i(45934),	-- Unraveling Reach
 					i(45935),	-- Ironbark Faceguard
@@ -932,56 +765,12 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							crit(2),	-- A Rocket Strike
 							crit(3),	-- A Bomb Bot
 						}),
-						i(45641, {	-- Gauntlets of the Wayward Conqueror
-							i(46163),	--
-							i(46188),	--
-							i(46135),	--
-							i(46174),	--
-							i(46179),	--
-							i(46155),	--
-						}),
-						i(45642, {	-- Gauntlets of the Wayward Protector
-							i(46199),	--
-							i(46200),	--
-							i(46207),	--
-							i(46164),	--
-							i(46148),	--
-							i(46142),	--
-						}),
-						i(45643, {	-- Gauntlets of the Wayward Vanquisher
-							i(46124),	--
-							i(46183),	--
-							i(46158),	--
-							i(46189),	--
-							i(46132),	--
-							i(46119),	--
-							i(46113),	--
-						}),
-						i(45647, {	-- Helm of the Wayward Conqueror
-							i(45417),	--
-							i(45386),	--
-							i(45391),	--
-							i(45377),	--
-							i(45372),	--
-							i(45382),	--
-						}),
-						i(45648, {	-- Helm of the Wayward Protector
-							i(45408),	--
-							i(45402),	--
-							i(45412),	--
-							i(45431),	--
-							i(45425),	--
-							i(45361),	--
-						}),
-						i(45649, {	-- Helm of the Wayward Vanquisher
-							i(45398),	--
-							i(45346),	--
-							i(45356),	--
-							i(46313),	--
-							i(45365),	--
-							i(45342),	--
-							i(45336),	--
-						}),
+						i(45641),	-- Gauntlets of the Wayward Conqueror
+						i(45642),	-- Gauntlets of the Wayward Protector
+						i(45643),	-- Gauntlets of the Wayward Vanquisher
+						i(45647),	-- Helm of the Wayward Conqueror
+						i(45648),	-- Helm of the Wayward Protector
+						i(45649),	-- Helm of the Wayward Vanquisher
 						i(138800),	-- Illusion: Blade Ward
 						i(142092),	-- Overcomplicated Controller (PET!)
 						i(45489),	-- Insanity's Grip
@@ -1071,56 +860,12 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					ach(12386),	-- Two Lights in the Darkness
 					ach(12385),	-- Three Lights in the Darkness
 					ach(12397),	-- They're Coming Out of the Walls
-					i(45635, {	-- Chestguard of the Wayward Conqueror
-						i(45375),	-- Valorous Aegis Battleplate
-						i(45381),	-- Valorous Aegis Breastplate
-						i(45374),	-- Valorous Aegis Tunic
-						i(45395),	-- Valorous Raiments of Sanctification
-						i(45389),	-- Valorous Robe of Sanctification
-						i(45421),	-- Valorous Deathbringer Robe
-					}),
-					i(45636, {	-- Chestguard of the Wayward Protector
-						i(45364),	-- Valorous Scourgestalker Tunic
-						i(45413),	-- Valorous Worldbreaker Chestguard
-						i(45411),	-- Valorous Worldbreaker Hauberk
-						i(45405),	-- Valorous Worldbreaker Tunic
-						i(45429),	-- Valorous Siegebreaker Battleplate
-						i(45424),	-- Valorous Siegebreaker Breastplate
-					}),
-					i(45637, {	-- Chestguard of the Wayward Vanquisher
-						i(45340),	-- Valorous Darkruned Battleplate
-						i(45335),	-- Valorous Darkruned Chestguard
-						i(45358),	-- Valorous Nightsong Raiments
-						i(45348),	-- Valorous Nightsong Robe
-						i(45354),	-- Valorous Nightsong Vestments
-						i(45368),	-- Valorous Kirin Tor Tunic
-						i(45396),	-- Valorous Terrorblade Robe
-					}),
-					i(45656, {	-- Mantle of the Wayward Conqueror
-						i(46177),	-- Conqueror's Aegis Shoulderguards
-						i(46152),	-- Conqueror's Aegis Shoulderplates
-						i(46182),	-- Conqueror's Aegis Spaulders
-						i(46165),	-- Conqueror's Mantle of Sanctification
-						i(46190),	-- Conqueror's Shoulderpads of Sanctification
-						i(46136),	-- Conqueror's Deathbringer Shoulderpads
-					}),
-					i(45657, {	-- Mantle of the Wayward Protector
-						i(46145),	-- Conqueror's Scourgestalker Spaulders
-						i(46203),	-- Conqueror's Worldbreaker Shoulderguards
-						i(46211),	-- Conqueror's Worldbreaker Shoulderpads
-						i(46204),	-- Conqueror's Worldbreaker Spaulders
-						i(46167),	-- Conqueror's Siegebreaker Pauldrons
-						i(46149),	-- Conqueror's Siegebreaker Shoulderplates
-					}),
-					i(45658, {	-- Mantle of the Wayward Vanquisher
-						i(46122),	-- Conqueror's Darkruned Pauldrons
-						i(46117),	-- Conqueror's Darkruned Shoulderplates
-						i(46196),	-- Conqueror's Nightsong Mantle
-						i(46157),	-- Conqueror's Nightsong Shoulderpads
-						i(46187),	-- Conqueror's Nightsong Spaulders
-						i(46134),	-- Conqueror's Kirin Tor Shoulderpads
-						i(46127),	-- Conqueror's Terrorblade Pauldrons
-					}),
+					i(45635),	-- Chestguard of the Wayward Conqueror
+					i(45636),	-- Chestguard of the Wayward Protector
+					i(45637),	-- Chestguard of the Wayward Vanquisher
+					i(45656),	-- Mantle of the Wayward Conqueror
+					i(45657),	-- Mantle of the Wayward Protector
+					i(45658),	-- Mantle of the Wayward Vanquisher
 					i(46348),	-- Formula: Enchant Weapon - Blood Draining
 					i(138801),	-- Illusion: Blood Draining
 					i(142093),	-- Wriggling Darkness (PET!)

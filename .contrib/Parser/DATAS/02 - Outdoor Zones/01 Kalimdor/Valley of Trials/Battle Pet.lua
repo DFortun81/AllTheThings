@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(1, {	-- Durotar
+		m(DUROTAR, {
 			m(461, {	-- Valley of Trials
 				filter(101, {	-- Pet Battle
 					p(635, {	-- Adder

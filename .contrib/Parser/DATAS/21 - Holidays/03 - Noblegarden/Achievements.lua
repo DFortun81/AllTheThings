@@ -21,7 +21,7 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 						["maps"] = { BADLANDS },
 					}),
 					crit(2, {	-- Desolace
-						["maps"] = { 66 },	-- Desolace
+						["maps"] = { DESOLACE },
 					}),
 					crit(3, {	-- Silithus
 						["maps"] = { SILITHUS },
@@ -50,7 +50,7 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 							["maps"] = { 37 },	-- Elwynn Forest
 						}),
 						crit(4, {	-- Kharanos
-							["maps"] = { 27 },	-- Dun Morogh
+							["maps"] = { DUN_MOROGH },
 						}),
 					}),
 				}),
@@ -58,16 +58,16 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 					["races"] = HORDE_ONLY,
 					["g"] = bubbleDown({ ["races"] = HORDE_ONLY }, {
 						crit(1, {	-- Bloodhoof Village
-							["maps"] = { 7 },	-- Bloodhoof Village
+							["maps"] = { MULGORE },	-- Bloodhoof Village
 						}),
 						crit(2, {	-- Brill
-							["maps"] = { 18 },	-- Tirisfal Glades
+							["maps"] = { TIRISFAL_GLADES },
 						}),
 						crit(3, {	-- Falconwing Square
 							["maps"] = { EVERSONG_WOODS },
 						}),
 						crit(4, {	-- Razor Hill
-							["maps"] = { 1 },	-- Durotar
+							["maps"] = { DUROTAR },
 						}),
 					}),
 				}),

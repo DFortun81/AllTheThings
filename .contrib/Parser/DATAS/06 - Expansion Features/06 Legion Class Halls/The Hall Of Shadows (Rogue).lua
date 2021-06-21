@@ -280,7 +280,7 @@ _.ExpansionFeatures =
 					}),
 					q(42539, {	-- Cloak and Dagger
 						["lvl"] = 100,
-						["maps"] = { 47 },	-- Duskwood
+						["maps"] = { DUSKWOOD },
 						["coord"] = { 38.1, 67.6, 626 },
 						["classes"] = { ROGUE },
 						["provider"] = { "o", 250671 },	-- Notes on the Veiled Hand
@@ -295,7 +295,7 @@ _.ExpansionFeatures =
 					}),
 					q(42503, {	-- Codebreaker
 						["lvl"] = 100,
-						["maps"] = { 47 },	-- Duskwood
+						["maps"] = { DUSKWOOD },
 						["classes"] = { ROGUE },
 						["coords"] = {
 							{ 42.4, 75.9, 626 },	-- Princess Tess Greymane
@@ -612,7 +612,7 @@ _.ExpansionFeatures =
 					}),
 					q(42568, {	-- Preparation
 						["lvl"] = 100,
-						["maps"] = { 47 },	-- Duskwood
+						["maps"] = { DUSKWOOD },
 						["coord"] = { 38.1, 67.6, 626 },
 						["classes"] = { ROGUE },
 						["provider"] = { "o", 250671 },	-- Notes on the Veiled Hand
@@ -725,10 +725,10 @@ _.ExpansionFeatures =
 					}),
 					q(37689, {	-- The Imposter
 						["provider"] = { "n", 111049 },	-- Master Mathias Shaw
-						["coord"] = { 35.6, 60.0, 84 },
+						["coord"] = { 35.6, 60.0, STORMWIND_CITY },
 						["sourceQuests"] = { 37494 },	-- Under Cover of Darkness
 						["classes"] = { ROGUE },	-- Rogue
-						["maps"] = { 84 },	 -- Stormwind City
+						["maps"] = { STORMWIND_CITY },
 						["lvl"] = 98,
 						["g"] = {
 							i(139739),	-- Chestguard of the Uncrowned

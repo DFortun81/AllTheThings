@@ -5,11 +5,11 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(47, {	-- Duskwood
+		m(DUSKWOOD, {
 			n(QUESTS, {
 				q(26720, {	-- A Curse We Cannot Lift
 					["provider"] = { "n", 43730 },	-- Oliver Harris
-					["coord"] = { 18.3, 57.6, 47 },
+					["coord"] = { 18.3, 57.6, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26719,	-- Delivery to Master Harris
 				}),
@@ -22,7 +22,7 @@ _.Zones =
 				}),
 				q(26797, {	-- A Daughters Love
 					["provider"] = { "n", 576 },	-- Watcher Ladimore
-					["coord"] = { 75.0, 45.8, 47 },
+					["coord"] = { 75.0, 45.8, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26796,	-- The Daughter Who Lived
 					["g"] = {
@@ -33,7 +33,7 @@ _.Zones =
 				}),
 				q(26707, {	-- A Deadly Vine
 					["provider"] = { "n", 43738 },	-- Apprentice Fess
-					["coord"] = { 44.9, 67.4, 47 },
+					["coord"] = { 44.9, 67.4, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(60924),	-- Corpseweed Sickle
@@ -46,14 +46,14 @@ _.Zones =
 				}),
 				q(54980, {	-- Bane of the Nightbane
 					["provider"] = { "n", 151761 },	-- Vassandra Stormclaw
-					["coord"] = { 18.1, 57.2, 47 },
+					["coord"] = { 18.1, 57.2, DUSKWOOD },
 					["races"] = { WORGEN },
 					["sourceQuest"] = 54977, -- Into Duskwood
 					["minReputation"] = { 1134, EXALTED }, -- Gilneas
 				}),
 				q(26787, {	-- Bear In Mind
 					["provider"] = { "n", 288 },	-- Jitters
-					["coord"] = { 18.6, 58.3, 47 },
+					["coord"] = { 18.6, 58.3, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26721,	-- The Jitters-Bugs
 					["g"] = {
@@ -65,7 +65,7 @@ _.Zones =
 				}),
 				q(26686, {	-- Bones That Walk
 					["provider"] = { "n", 264 },	-- Commander Althea Ebonlocke
-					["coord"] = { 73.5, 46.9, 47 },
+					["coord"] = { 73.5, 46.9, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26645,	-- The Night Watch
 					["g"] = {
@@ -85,14 +85,14 @@ _.Zones =
 				}),
 				q(26722, {	-- Buried Below
 					["model"] = 189528,
-					["coord"] = { 20.3, 27.4, 47 },
+					["coord"] = { 20.3, 27.4, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 204824 },	-- Lightforged Arch
 					["sourceQuest"] = 26753,	-- The Halls of the Dead
 				}),
 				q(26685, {	-- Classy Glass
 					["provider"] = { "n", 276 },	-- Viktori Prism'Antras
-					["coord"] = { 79.5, 47.4, 47 },
+					["coord"] = { 79.5, 47.4, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26684,	-- The Insane Ghoul
 					["g"] = {
@@ -104,13 +104,13 @@ _.Zones =
 				}),
 				q(26672, {	-- Clawing at the Truth
 					["provider"] = { "n", 43453 },	-- Tobias Mistmantle
-					["coord"] = { 79.0, 44.1, 47 },
+					["coord"] = { 79.0, 44.1, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26671,	-- The Fate of Stalvan Mistmantle
 				}),
 				q(26760, {	-- Cry For The Moon
 					["provider"] = { "n", 43730 },	-- Oliver Harris
-					["coord"] = { 18.3, 57.6, 47 },
+					["coord"] = { 18.3, 57.6, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26720,	-- A Curse We Cannot Lift
 					["g"] = {
@@ -122,14 +122,14 @@ _.Zones =
 				}),
 				q(54981, {	-- Cry to the Moon
 					["provider"] = { "n", 151761 },	-- Vassandra Stormclaw
-					["coord"] = { 18.1, 57.2, 47 },
+					["coord"] = { 18.1, 57.2, DUSKWOOD },
 					["races"] = { WORGEN },
 					["sourceQuest"] = 54980, -- Bane of the Nightbane
 					["minReputation"] = { 1134, EXALTED }, -- Gilneas
 				}),
 				q(26655, {	-- Deliver the Thread
 					["provider"] = { "n", 265 },	-- Madame Eva
-					["coord"] = { 75.7, 45.2, 47 },
+					["coord"] = { 75.7, 45.2, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26654,	-- Return the Comb
 					["g"] = {
@@ -142,7 +142,7 @@ _.Zones =
 				}),
 				q(26719, {	-- Delivery to Master Harris
 					["provider"] = { "n", 43738 },	-- Apprentice Fess
-					["coord"] = { 44.9, 67.4, 47 },
+					["coord"] = { 44.9, 67.4, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26717,	-- The Yorgen Worgen
 				}),
@@ -155,7 +155,7 @@ _.Zones =
 				}),
 				q(26623, {	-- Dusky Crab Cakes
 					["provider"] = { "n", 272 },	-- Chef Grual
-					["coord"] = { 73.7, 43.4, 47 },
+					["coord"] = { 73.7, 43.4, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(3683),	-- Recipe: Gooey Spider Cake
@@ -163,37 +163,37 @@ _.Zones =
 				}),
 				q(26661, {	-- Gather Rot Blossoms
 					["provider"] = { "n", 273 },	-- Tavernkeep Smitts
-					["coord"] = { 73.7, 44.4, 47 },
+					["coord"] = { 73.7, 44.4, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26660,	-- Zombie Juice
 				}),
 				q(26652, {	-- Ghost Hair Thread
 					["provider"] = { "n", 265 },	-- Madame Eva
-					["coord"] = { 75.8, 45.2, 47 },
+					["coord"] = { 75.8, 45.2, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26653,	-- Supplies from Darkshire
 				}),
 				q(26677, {	-- Ghoulish Effigy
 					["provider"] = { "n", 289 },	-- Abercrombie
-					["coord"] = { 87.4, 35.2, 47 },
+					["coord"] = { 87.4, 35.2, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26680,	-- Ogre Thieves
 				}),
 				q(26725, {	-- Guided by the Light
 					["provider"] = { "n", 43731 },	-- Sister Elsington
-					["coord"] = { 20.0, 57.8, 47 },
+					["coord"] = { 20.0, 57.8, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26724,	-- The Lurking Lich
 				}),
 				q(26669, {	-- In A Dark Corner
 					["provider"] = { "n", 267 },	-- Clerk Daltry
-					["coord"] = { 72.4, 46.9, 47 },
+					["coord"] = { 72.4, 46.9, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26667,	-- The Stolen Letters
 				}),
 				q(26676, {	-- Juice Delivery
 					["provider"] = { "n", 273 },	-- Tavernkeep Smitts
-					["coord"] = { 73.7, 44.4, 47 },
+					["coord"] = { 73.7, 44.4, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26661,	-- Gather Rot Blossoms
 					["g"] = {
@@ -205,7 +205,7 @@ _.Zones =
 				}),
 				q(54984, {	-- Let Sleeping Wolves Lie
 					["provider"] = { "n", 150106 },	-- Goldrinn
-					["coord"] = { 46.6, 36.6, 47 },
+					["coord"] = { 46.6, 36.6, DUSKWOOD },
 					["races"] = { WORGEN },
 					["sourceQuest"] = 54983, -- Waking a Dreamer
 					["minReputation"] = { 1134, EXALTED }, -- Gilneas
@@ -220,13 +220,13 @@ _.Zones =
 				}),
 				q(26683, {	-- Look To The Stars
 					["provider"] = { "n", 276 },	-- Viktori Prism'Antras
-					["coord"] = { 79.5, 47.4, 47 },
+					["coord"] = { 79.5, 47.4, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26618,	-- Wolves at Our Heels
 				}),
 				q(26674, {	-- Mistmantle's Revenge
 					["provider"] = { "n", 265 },	-- Madame Eva
-					["coord"] = { 75.8, 45.2, 47 },
+					["coord"] = { 75.8, 45.2, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26672,	-- Clawing at the Truth
 					["g"] = {
@@ -239,7 +239,7 @@ _.Zones =
 				}),
 				q(26795, {	-- Mor'Ladim
 					["provider"] = { "n", 264 },	-- Commander Althea Ebonlocke
-					["coord"] = { 73.5, 46.9, 47 },
+					["coord"] = { 73.5, 46.9, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26794,	-- Morgan Ladimore
 				}),
@@ -255,7 +255,7 @@ _.Zones =
 				}),
 				q(26754, {	-- Morbent's Bane
 					["model"] = 189528,
-					["coord"] = { 18.0, 25.3, 47 },
+					["coord"] = { 18.0, 25.3, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 204825 },	-- Lightforged Crest
 					["sourceQuest"] = 26722,	-- Buried Below
@@ -268,13 +268,13 @@ _.Zones =
 				}),
 				q(26794, {	-- Morgan Ladimore
 					["provider"] = { "n", 268 },	-- Sirra Von'Indi
-					["coord"] = { 72.6, 47.7, 47 },
+					["coord"] = { 72.6, 47.7, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26793,	-- The Weathered Grave
 				}),
 				q(26681, {	-- Note to the Mayor
 					["provider"] = { "n", 289 },	-- Abercrombie
-					["coord"] = { 87.4, 35.2, 47 },
+					["coord"] = { 87.4, 35.2, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26677,	-- Ghoulish Effigy
 				}),
@@ -292,26 +292,26 @@ _.Zones =
 				}),
 				q(26680, {	-- Ogre Thieves
 					["provider"] = { "n", 289 },	-- Abercrombie
-					["coord"] = { 87.4, 35.2, 47 },
+					["coord"] = { 87.4, 35.2, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26676,	-- Juice Delivery
 				}),
 				q(26785, {	-- Part of the Pack
 					["provider"] = { "n", 43453 },	-- Tobias Mistmantle
-					["coord"] = { 79.0, 44.1, 47 },
+					["coord"] = { 79.0, 44.1, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26674,	-- Mistmantle's Revenge
 					["isBreadcrumb"] = true,
 				}),
 				q(26838, {	-- Rebels Without a Clue
 					["provider"] = { "n", 43731 },	-- Sister Elsington
-					["coord"] = { 20.0, 57.8, 47 },
+					["coord"] = { 20.0, 57.8, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(26654, {	-- Return the Comb
 					["provider"] = { "n", 302 },	-- Blind Mary
-					["coord"] = { 82.0, 59.3, 47 },
+					["coord"] = { 82.0, 59.3, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26652,	-- Ghost Hair Thread
 				}),
@@ -328,7 +328,7 @@ _.Zones =
 				}),
 				q(26670, {	-- Roland's Doom
 					["provider"] = { "n", 267 },	-- Clerk Daltry
-					["coord"] = { 72.4, 46.9, 47 },
+					["coord"] = { 72.4, 46.9, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26669,	-- In A Dark Corner
 					["g"] = {
@@ -342,7 +342,7 @@ _.Zones =
 				}),
 				q(26620, {	-- Seasoned Wolf Kabobs
 					["provider"] = { "n", 272 },	-- Chef Grual
-					["coord"] = { 73.7, 43.4, 47 },
+					["coord"] = { 73.7, 43.4, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(2701),	-- Recipe: Seasoned Wolf Kabob
@@ -350,18 +350,18 @@ _.Zones =
 				}),
 				q(26777, {	-- Soothing Spirits
 					["provider"] = { "n", 43731 },	-- Sister Elsington
-					["coord"] = { 20.0, 57.8, 47 },
+					["coord"] = { 20.0, 57.8, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26653, {	-- Supplies from Darkshire
 					["provider"] = { "n", 289 },	-- Abercrombie
-					["coord"] = { 87.4, 35.2, 47 },
+					["coord"] = { 87.4, 35.2, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26627,	-- The Hermit
 				}),
 				q(1042,  {	-- The Carevin Family
 					["provider"] = { "n", 267 },	-- Clerk Daltry
-					["coord"] = { 72.6, 46.8, 47 },
+					["coord"] = { 72.6, 46.8, DUSKWOOD },
 					["sourceQuest"] = 1041,	-- The Caravan Road
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
@@ -369,7 +369,7 @@ _.Zones =
 				}),
 				q(26778, {	-- The Cries of the Dead
 					["provider"] = { "n", 43731 },	-- Sister Elsington
-					["coord"] = { 20.0, 57.8, 47 },
+					["coord"] = { 20.0, 57.8, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26760,	-- Cry For The Moon
 					["g"] = {
@@ -381,13 +381,13 @@ _.Zones =
 				}),
 				q(26796, {	-- The Daughter Who Lived
 					["provider"] = { "n", 264 },	-- Commander Althea Ebonlocke
-					["coord"] = { 73.5, 46.9, 47 },
+					["coord"] = { 73.5, 46.9, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26795,	-- Mor'Ladim
 				}),
 				q(26727, {	-- The Embalmer's Revenge
 					["provider"] = { "n", 263 },
-					["coord"] = { 71.9, 46.4, 47 },
+					["coord"] = { 71.9, 46.4, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26681,	-- Note to the Mayor
 					["g"] = {
@@ -406,7 +406,7 @@ _.Zones =
 				}),
 				q(54990, {	-- The New Guard
 					["provider"] = { "n", 150115 },	-- Princess Tess Greymane
-					["coord"] = { 46.3, 37.0, 47 },
+					["coord"] = { 46.3, 37.0, DUSKWOOD },
 					["races"] = { WORGEN },
 					["sourceQuest"] = 54984, -- Let Sleeping Wolves Lie
 					["minReputation"] = { 1134, EXALTED }, -- Gilneas
@@ -434,7 +434,7 @@ _.Zones =
 				}),
 				q(1043,  {	-- The Scythe of Elune
 					["provider"] = { "n", 661 },	-- Jonathan Carevin
-					["coord"] = { 75.2, 48.8, 47 },
+					["coord"] = { 75.2, 48.8, DUSKWOOD },
 					["sourceQuest"] = 1042,	-- The Carevin Family
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
@@ -442,73 +442,73 @@ _.Zones =
 				}),
 				q(26723, {	-- The Fate of Morbent Fel
 					["provider"] = { "n", 43861 },	-- Sven Yorgen
-					["coord"] = { 18.3, 58.0, 47 },
+					["coord"] = { 18.3, 58.0, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26760,	-- Cry For The Moon
 				}),
 				q(26671, {	-- The Fate of Stalvan Mistmantle
 					["provider"] = { "n", 267 },	-- Clerk Daltry
-					["coord"] = { 72.4, 46.9, 47 },
+					["coord"] = { 72.4, 46.9, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26670,	-- Roland's Doom
 				}),
 				q(26753, {	-- The Halls of the Dead
 					["model"] = 189528,
-					["coord"] = { 23.4, 35.4, 47 },
+					["coord"] = { 23.4, 35.4, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 204817 },	-- Lightforged Rod
 					["sourceQuest"] = 26725,	-- Guided by the Light
 				}),
 				q(26627, {	-- The Hermit
 					["provider"] = { "n", 264 },	-- Commander Althea Ebonlocke
-					["coord"] = { 73.5, 46.9, 47 },
+					["coord"] = { 73.5, 46.9, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(26684, {	-- The Insane Ghoul
 					["provider"] = { "n", 302 },	-- Blind Mary
-					["coord"] = { 82.0, 59.3, 47 },
+					["coord"] = { 82.0, 59.3, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26683,	-- Look To The Stars
 				}),
 				q(26721, {	-- The Jitters-Bugs
 					["provider"] = { "n", 288 },	-- Jitters
-					["coord"] = { 18.6, 58.3, 47 },
+					["coord"] = { 18.6, 58.3, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26666, {	-- The Legend of Stalvan
 					["provider"] = { "n", 43453 },	-- Tobias Mistmantle
-					["coord"] = { 79.0, 44.1, 47 },
+					["coord"] = { 79.0, 44.1, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26724, {	-- The Lurking Lich
 					["provider"] = { "n", 43861 },	-- Sven Yorgen
-					["coord"] = { 18.3, 58.0, 47 },
+					["coord"] = { 18.3, 58.0, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26723,	-- The Fate of Morbent Fel
 				}),
 				q(26645, {	-- The Night Watch
 					["provider"] = { "n", 264 },	-- Commander Althea Ebonlocke
-					["coord"] = { 73.5, 46.9, 47 },
+					["coord"] = { 73.5, 46.9, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26618,	-- Wolves at Our Heels
 				}),
 				q(26689, {	-- The Rotting Orchard
 					["provider"] = { "n", 663 },	-- Calor
-					["coord"] = { 75.3, 48.0, 47 },
+					["coord"] = { 75.3, 48.0, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26688,	-- Worgen in the Woods
 				}),
 				q(54982, {	-- The Spirit of the Hunter
 					["provider"] = { "n", 151761 },	-- Vassandra Stormclaw
-					["coord"] = { 18.1, 57.2, 47 },
+					["coord"] = { 18.1, 57.2, DUSKWOOD },
 					["races"] = { WORGEN },
 					["sourceQuest"] = 54980, -- Bane of the Nightbane
 					["minReputation"] = { 1134, EXALTED }, -- Gilneas
 				}),
 				q(26667, {	-- The Stolen Letters
 					["provider"] = { "n", 267 },	-- Clerk Daltry
-					["coord"] = { 72.4, 46.9, 47 },
+					["coord"] = { 72.4, 46.9, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26666,	-- The Legend of Stalvan
 					["g"] = {
@@ -529,30 +529,30 @@ _.Zones =
 				}),
 				q(26793, {	-- The Weathered Grave
 					["model"] = 189541,
-					["coord"] = { 17.7, 29.1, 47 },
+					["coord"] = { 17.7, 29.1, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 61 },	-- A Weathered Grave
 				}),
 				q(26717, {	-- The Yorgen Worgen
 					["provider"] = { "n", 43738 },	-- Apprentice Fess
-					["coord"] = { 44.9, 67.4, 47 },
+					["coord"] = { 44.9, 67.4, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26785,	-- Part of the Pack
 				}),
 				q(26690, {	-- Vile and Tainted
 					["provider"] = { "n", 663 },	-- Calor
-					["coord"] = { 75.3, 48.0, 47 },
+					["coord"] = { 75.3, 48.0, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26689,	-- The Rotting Orchard
 				}),
 				q(25235, {	-- Vulgar Vul'Gol
 					["provider"] = { "n", 888 },	-- Watcher Dodds
-					["coord"] = { 45.1, 67.0, 47 },
+					["coord"] = { 45.1, 67.0, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(54983, {	-- Waking a Dreamer
 					["provider"] = { "n", 151761 },	-- Vassandra Stormclaw
-					["coord"] = { 46.4, 36.9, 47 },
+					["coord"] = { 46.4, 36.9, DUSKWOOD },
 					["races"] = { WORGEN },
 					["sourceQuests"] = {
 						54981,		-- Cry to the Moon
@@ -562,7 +562,7 @@ _.Zones =
 				}),
 				q(26618, {	-- Wolves at Our Heels
 					["provider"] = { "n", 264 },	-- Commander Althea Ebonlocke
-					["coord"] = { 73.5, 46.9, 47 },
+					["coord"] = { 73.5, 46.9, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(60895),	-- Ebonlocke Band
@@ -582,7 +582,7 @@ _.Zones =
 				}),
 				q(26691, {	-- Worgen in the Woods
 					["provider"] = { "n", 663 },	-- Calor
-					["coord"] = { 75.3, 48.0, 47 },
+					["coord"] = { 75.3, 48.0, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26690,	-- Vile and Tainted
 					["g"] = {
@@ -594,12 +594,12 @@ _.Zones =
 				}),
 				q(26688, {	-- Worgen in the Woods
 					["provider"] = { "n", 663 },	-- Calor
-					["coord"] = { 75.3, 48.0, 47 },
+					["coord"] = { 75.3, 48.0, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26660, {	-- Zombie Juice
 					["provider"] = { "n", 289 },	-- Abercrombie
-					["coord"] = { 87.4, 35.2, 47 },
+					["coord"] = { 87.4, 35.2, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26655,	-- Deliver the Thread
 				}),

@@ -842,6 +842,7 @@ _.HiddenQuestTriggers =
 		q(50659),	-- Silithus - talk to Zidormi to phase into the past version of the map
 		q(49813),	-- Adventure Calls (lvl 60) - can trigger prior to level 60 if you accept a quest from the warboard
 		q(49860),	-- Adventure Calls (lvl 60) - can trigger prior to level 60 if you accept a quest from the warboard
+		q(42871),	-- Tome of Illusions - Azeroth
 		q(42873),	-- Tome of Illusions - Outland
 		q(42874),	-- Tome of Illusions - Northrend
 		q(42875),	-- Tome of Illusions - Cataclysm
@@ -1105,6 +1106,7 @@ _.HiddenQuestTriggers =
 
 		-- Zones
 		q(12845),	-- Dalaran teleport crystal flag
+		q(13700),	-- Argent Tournament - Alliance Champion Marker
 		q(13701),	-- Argent Tournament - Horde Champion Marker
 		q(13686),	-- Alliance Tournament Eligibility Marker
 		q(13687),	-- Horde Tournament Eligibility Marker
@@ -1117,6 +1119,7 @@ _.HiddenQuestTriggers =
 		q(12452),	-- Dragonblight - triggers when turning in "The Fate of the Ruby Dragonshrine". duplicate version of a quest during early development
 		q(12693),	-- Sholazar Basin - Wolvar Faction Choice Tracker
 		q(12694),	-- Sholazar Basin - Oracle Faction Choice Tracker
+		q(39783),	-- Battle Pet - Terky
 
 		-------------------
 		--   CATACLYSM   --
@@ -1192,6 +1195,7 @@ _.HiddenQuestTriggers =
 		q(30566),	-- FLAG - Pest Problems Training — triggered after turning in daily quest #30319, "Pest Problems"
 		q(31950),	-- Tracking Quest: Move NPCs to Dais — triggered after turning in quest #31945, "Learn and Grow VI: Gina's Vote"
 		q(32357),	-- triggered after watching the RP that takes place after turning in #32316, "Heart of the Alliance," part of the Operation: Shieldwall campaign
+		q(32356),	-- After "Heart of the Alliance" completion
 		q(32395),	-- Tracking Event: Saw Avartu - triggered while on "The Divine Bell," part of the Operation: Shieldwall campaign (at the end of the quest before killing Avartu)
 		q(32339),	-- Rebuilding the Mallet (Tracker) — triggered after turning in The Head and The Harmonic Ointment (The Handle was turned in earlier, but presumably requires all 3), part of the Operation: Shieldwall campaign
 		q(32365),	-- Tracking Event: Epilogue Complete — triggered after turning in "The Silence" and watching the RP, part of the Operation: Shieldwall campaign.  didn't go off until I left the area and turned in another quest (which is a daily that doesn't normally have any additional tracking quests attached, so i know it was from the final campaign quest)
@@ -1309,6 +1313,7 @@ _.HiddenQuestTriggers =
 		q(31054),	-- Townlong Steppes - Unlocked Yalia Sagewhisper
 		q(31607),	-- Townlong Steppes - Tracking Event: Finished Spiteful Spirits & Hatred Becomes Us
 		q(30936),	-- Townlong Steppes - unused. Triggers when turning in "Behind the Battlefront"
+		q(39127),	-- Townlong Steppes - Beyond the Wall (quest duplicate?), gets completed after handing in The Shado-Pan Offensive
 
 		q(32725),	-- Warlock Green Fire Questline - Reached Kanrethad
 		q(32666),	-- Warlock Green Fire Questline - Reached Kanrethad
@@ -1401,6 +1406,12 @@ _.HiddenQuestTriggers =
 		q(32611),	-- Rare Drop Tracking Quest — progenitus (second rare kill of the week, dropped incantation of deng)
 		-- TREASURES
 		q(32609),	-- Rare Chest Tracking Quest — popped after looting trove of the thunder king.  it took a while to show up, but i didn't do anything else meaningful in the interim
+		-- QUEST
+		q(32259),	-- Horde Quest Choice: PvE
+		q(32260),	-- Alliance Quest Choice: PvE
+		q(32629),	-- Thunderwing Captured Tracking Quest
+		q(32723),	-- Tracking quest called 'reuse me'
+		q(32289),	-- Loot plans, kill boat captain
 
 		--	TIMELESS ISLE
 		-- RARES
@@ -1815,6 +1826,7 @@ _.HiddenQuestTriggers =
 		q(39713),	-- Tracking Quest. Pops immediately on new characters but no other info known. Possibly legendary ring related
 		q(34024),	-- Tracking Quest. This completes when you kill the Windfang Matriarch after helping Romuul.
 		q(33786),	-- ??????. This was completed around Fiona's caravan in Shadowmoon Valley - Draenor (not entirely sure what triggered it.)
+		q(52969),	-- Going through the Stormwind Portal to Stormshield while on the WoD timeline in Chromie time
 
 		-------------------
 		--    Legion     --
@@ -2418,10 +2430,6 @@ _.HiddenQuestTriggers =
 		-------------------
 		--      BFA      --
 		-------------------
-		--[[ All of these pop up with brand new characters. Something account-wide triggers these. Possibly related to certain kinds of transmog events
-		q(52969),	--
-		]]--
-
 		--	VARIOUS
 		q(47703),	-- triggered while on #47631, "Rendezvous with the Libation"
 		q(50225),	-- first kill of Ogmot the Mad
@@ -2510,6 +2518,7 @@ _.HiddenQuestTriggers =
 		q(54326),	-- triggered when turning in #54135, "Romp in the Swamp," had WM off
 		q(55241),	-- closing the second to last rift while on #55214, "Seam Stress"
 		q(50657),	-- not sure if this is part of the Vulpera allied race questline?  i turned in #53907, picked up #53908, learned the "Nomi's Vintage" toy, refreshed (nothing), went and took the portal from the vineyard to shal'aran, and this popped.  it popped immediately when i clicked the portal
+		q(55628),	-- Tracking Quest
 
 		--	HONEYBACK HIVE
 		q(55906),	-- triggers when pulling out Seabreeze Bumblebee or Bumbles next to Barry at 69.1, 64.2 in Stormsong Valley
@@ -3954,6 +3963,7 @@ _.HiddenQuestTriggers =
 		q(57242),	-- triggered when completing #57205, "A Few Bumps Along the Way"
 		q(62942),	-- Triggered when looting Crafted Crate for WQ Cooking: Spider Jerky
 		q(62922),	-- triggered when turning in the Mixing a Mess WQ
+		q(62944),	-- After picking up the world quest: Engineering: Boneclad Stake Launcher
 		-- Plaguefall dungeon
 		q(62685),	-- Triggers when solo killing last boss of heroic/mythic Plaguefall for collecting the Slime Serpent mount
 
@@ -4408,6 +4418,7 @@ _.HiddenQuestTriggers =
 		q(63195),	-- triggered when starting/accepting Hunt Souleaters
 		q(63196),	-- triggered when starting/accepting Hunt Death Elementals
 		q(63197),	-- triggered when starting/accepting Hunt Winged Souleaters
+		q(68666),	-- Either after killing Ekphoras, Herald of Grief in the maw or after crafting Domination's calling with the three Dominion's etchings
 	--	q(63178),	-- triggered randomly in The Maw 12/16/20
 		-- The Maw rares
 		q(62722),	-- triggered when killing Naelcrotix (possible Wrath of the Jailer rare)

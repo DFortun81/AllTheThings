@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(7, {	-- Mulgore
+		m(MULGORE, {
 			m(462, {	-- Camp Narache
 				filter(101, {	-- Pet Battle
 					p(385, {	-- Mouse

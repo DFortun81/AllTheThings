@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(48, {	-- Loch Modan
+		m(LOCH_MODAN, {
 			n(QUESTS, {
 				q(283,   {	-- A Dark Threat Looms
 					["races"] = ALLIANCE_ONLY,
@@ -26,7 +26,7 @@ _.Zones =
 				}),
 				q(26148, {	-- A Decisive Strike
 					["sourceQuests"] = { 26146 },	-- In Defense of the King's Lands
-					["coord"] = { 23.3, 75.0, 48 },
+					["coord"] = { 23.3, 75.0, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 1092 },	-- Captain Rugelfuss
 					["g"] = {
@@ -66,13 +66,13 @@ _.Zones =
 				}),
 				q(26929, {	-- A Load of Croc
 					["sourceQuests"] = { 26927 },	-- Suddenly, Murlocs!
-					["coord"] = { 34.7, 49.1, 48 },
+					["coord"] = { 34.7, 49.1, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 44345 },	-- Cannary Caskshot
 				}),
 				q(454,   {	-- After the Ambush
 					["provider"] = { "n", 2057 },	-- Huldar
-					["coord"] = { 52.2, 69.4, 48 },
+					["coord"] = { 52.2, 69.4, LOCH_MODAN },
 					["sourceQuest"] = 273,	-- Resupplying the Excavation (Legacy)
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
@@ -80,25 +80,25 @@ _.Zones =
 				}),
 				q(26846, {	-- A Nasty Exploit
 					["sourceQuests"] = { 26844 },	-- Kobold and Kobolder
-					["coord"] = { 25.5, 17.9, 48 },
+					["coord"] = { 25.5, 17.9, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 44200 },	-- Scout Dorli
 				}),
 				q(27115, {	-- Ando's Call
 					["sourceQuests"] = { 27078 },	-- Gor'kresh
-					["coord"] = { 64.1, 26.6, 48 },
+					["coord"] = { 64.1, 26.6, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 1073 },	-- Ashlan Stonesmirk
 				}),
 				q(26843, {	-- A Tiny, Clever Commander
 					["sourceQuests"] = { 13636 },	-- Stormpike's Orders
-					["coord"] = { 25.4, 17.9, 48 },
+					["coord"] = { 25.4, 17.9, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 1343 },	-- Mountaineer Stormpike
 				}),
 				q(26868, {	-- Axis of Awful
 					["sourceQuests"] = { 26928 },	-- Smells Like a Plan
-					["coord"] = { 34.7, 49.1, 48 },
+					["coord"] = { 34.7, 49.1, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 44345 },	-- Cannary Caskshot
 				}),
@@ -110,7 +110,7 @@ _.Zones =
 				}),
 				q(26147, {	-- Bigger and Uglier
 					["sourceQuests"] = { 26146 },	-- In Defense of the King's Lands
-					["coord"] = { 23.4, 74.9, 48 },
+					["coord"] = { 23.4, 74.9, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 1090 },	-- Mountaineer Wallbang
 					["g"] = {
@@ -132,25 +132,25 @@ _.Zones =
 				}),
 				q(27032, {	-- Bird is the Word
 					["sourceQuests"] = { 27031 },	-- Wing Nut
-					["coord"] = { 81.6, 64.7, 48 },
+					["coord"] = { 81.6, 64.7, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 6577 },	-- Bingles Blastenheimer
 				}),
 				q(26932, {	-- Buzz Off
 					["sourceQuests"] = { 26927 },	-- Suddenly, Murlocs!
-					["coord"] = { 35.0, 46.5, 48 },
+					["coord"] = { 35.0, 46.5, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 1340 },	-- Mountaineer Kadrell
 				}),
 				q(26137, {	-- Checking on the Boys
 					["isBreadcrumb"] = true,
-					["coord"] = { 25.4, 17.9, 48 },
+					["coord"] = { 25.4, 17.9, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 1343 },	-- Mountaineer Stormpike
 				}),
 				q(27077, {	-- Clutching at Chaos
 					["sourceQuests"] = { 27074 },	-- Fight the Hammer
-					["coord"] = { 64.1, 26.6, 48 },
+					["coord"] = { 64.1, 26.6, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 1073 },	-- Ashlan Stonesmirk
 				}),
@@ -165,7 +165,7 @@ _.Zones =
 				}),
 				q(27026, {	-- Defcon: Bobcat
 					["sourceQuests"] = { 27025 },	-- Thistle While You Work
-					["coord"] = { 82.7, 63.4, 48 },
+					["coord"] = { 82.7, 63.4, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 44859 },	-- Safety Warden Pipsy
 				}),
@@ -174,49 +174,49 @@ _.Zones =
 				}),
 				q(298,   {	-- Excavation Progress Report
 					["provider"] = { "n", 1344 },	-- Prospector Ironband
-					["coord"] = { 65.9, 65.6, 48 },
+					["coord"] = { 65.9, 65.6, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(13656, {	-- Explorers' League Document (1 of 6)
-					["coord"] = { 36.7, 61.1, 48 },
+					["coord"] = { 36.7, 61.1, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 194387 },	-- Stolen Explorers' League Document
 				}),
 				q(13655, {	-- Explorers' League Document (2 of 6)
-					["coord"] = { 41.3, 38.9, 48 },
+					["coord"] = { 41.3, 38.9, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 194378 },	-- Stolen Explorers' League Document
 				}),
 				q(13657, {	-- Explorers' League Document (3 of 6)
-					["coord"] = { 61.6, 73.1, 48 },
+					["coord"] = { 61.6, 73.1, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 194388 },	-- Stolen Explorers' League Document
 				}),
 				q(13658, {	-- Explorers' League Document (4 of 6)
-					["coord"] = { 68.1, 66.1, 48 },
+					["coord"] = { 68.1, 66.1, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 194389 },	-- Stolen Explorers' League Document
 				}),
 				q(13660, {	-- Explorers' League Document (5 of 6)
-					["coord"] = { 53.7, 38.1, 48 },
+					["coord"] = { 53.7, 38.1, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 194391 },	-- Stolen Explorers' League Document
 				}),
 				q(13659, {	-- Explorers' League Document (6 of 6)
-					["coord"] = { 73.1, 35.8, 48 },
+					["coord"] = { 73.1, 35.8, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 194390 },	-- Stolen Explorers' League Document
 				}),
 				q(27074, {	-- Fight the Hammer
 					["sourceQuests"] = { 27035 },	-- Standing Up
-					["coord"] = { 58.5, 29.1, 48 },
+					["coord"] = { 58.5, 29.1, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 44870 },	-- Ando Blastenheimer
 				}),
 				q(26863, {	-- Filthy Paws
 					["sourceQuests"] = { 26844 },	-- Kobold and Kobolder
-					["coord"] = { 25.4, 17.9, 48 },
+					["coord"] = { 25.4, 17.9, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 1343 },	-- Mountaineer Stormpike
 					["g"] = {
@@ -235,12 +235,12 @@ _.Zones =
 					},
 				}),
 				q(27030, {	-- Foxtails By The Handful
-					["coord"] = { 81.7, 61.6, 48 },
+					["coord"] = { 81.7, 61.6, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 1154 },	-- Marek Ironheart
 				}),
 				q(26961, {	-- Gathering Idols
-					["coord"] = { 64.8, 66.6, 48 },
+					["coord"] = { 64.8, 66.6, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 1345 },	-- Magmar Felhew
 					["g"] = {
@@ -264,7 +264,7 @@ _.Zones =
 						27077,	-- Clutching at Chaos
 						27075,	-- Servants of Cho'gall
 					},
-					["coord"] = { 64.1, 26.6, 48 },
+					["coord"] = { 64.1, 26.6, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 1073 },	-- Ashlan Stonesmirk
 				}),
@@ -277,7 +277,7 @@ _.Zones =
 						13660,	-- Explorers' League Document (5 of 6)
 						13659,	-- Explorers' League Document (6 of 6)
 					},
-					["coord"] = { 37.1, 47.8, 48 },
+					["coord"] = { 37.1, 47.8, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 1153 },	-- Torren Squarejaw
 					["g"] = {
@@ -290,17 +290,17 @@ _.Zones =
 				}),
 				q(27034, {	-- He's That Age
 					["sourceQuests"] = { 27033 },	-- Skystrider's Heart
-					["coord"] = { 81.6, 64.7, 48 },
+					["coord"] = { 81.6, 64.7, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 6577 },	-- Bingles Blastenheimer
 				}),
 				q(27028, {	-- Hornet Hunting
-					["coord"] = { 81.7, 61.6, 48 },
+					["coord"] = { 81.7, 61.6, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 1154 },	-- Marek Ironheart
 				}),
 				q(26146, {	-- In Defense of the King's Lands
-					["coord"] = { 23.3, 75.0, 48 },
+					["coord"] = { 23.3, 75.0, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 1092 },	-- Captain Rugelfuss
 					["g"] = {
@@ -325,43 +325,43 @@ _.Zones =
 						13650,	-- Keep Your Hands Off The Goods!
 					},
 					["isBreadcrumb"] = true,
-					["coord"] = { 64.9, 66.5, 48 },
+					["coord"] = { 64.9, 66.5, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 1345 },	-- Magmar Felhew
 				}),
 				q(13650, {	-- Keep Your Hands Off The Goods!
 					["sourceQuests"] = { 309 },	-- Protecting the Shipment
-					["coord"] = { 65.2, 66.1, 48 },
+					["coord"] = { 65.2, 66.1, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 1344 },	-- Prospector Ironband
 				}),
 				q(26844, {	-- Kobold and Kobolder
 					["sourceQuests"] = { 26843 },	-- A Tiny, Clever Commander
-					["coord"] = { 25.4, 17.9, 48 },
+					["coord"] = { 25.4, 17.9, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 1343 },	-- Mountaineer Stormpike
 				}),
 				q(25118, {	-- Looking for Lurkers
-					["coord"] = { 36, 44.2, 48 },
+					["coord"] = { 36.0, 44.2, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 1777 },	-- Dakk Blunderblast
 				}),
 				q(26176, {	-- Onward to Thelsamar
 					["sourceQuests"] = { 26148 },	-- A Decisive Strike
 					["isBreadcrumb"] = true,
-					["coord"] = { 23.4, 74.9, 48 },
+					["coord"] = { 23.4, 74.9, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 1092 },	-- Captain Rugelfuss
 				}),
 				q(26842, {	-- Out of Gnoll-where
 					["sourceQuests"] = { 26176 },	-- Onward to Thelsamar
-					["coord"] = { 35.0, 46.5, 48 },
+					["coord"] = { 35.0, 46.5, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 1340 },	-- Mountaineer Kadrell
 				}),
 				q(309,   { 	-- Protecting the Shipment
 					["sourceQuests"] = { 13639 },	-- Resupplying the Excavation
-					["coord"] = { 56.4, 65.8, 48 },
+					["coord"] = { 56.4, 65.8, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 2057 },	-- Huldar
 					["g"] = {
@@ -385,20 +385,20 @@ _.Zones =
 				}),
 				q(301,   {	-- Report to Ironforge
 					["provider"] = { "n", 1105 },	-- Jern Hornhelm
-					["coord"] = { 37.2, 47.4, 48 },
+					["coord"] = { 37.2, 47.4, LOCH_MODAN },
 					["sourceQuest"] = 298,	-- Excavation Progress Report
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(13639, {	-- Resupplying the Excavation
 					["provider"] = { "n", 1105 },	-- Jern Hornhelm
-					["coord"] = { 37.2, 47.4, 48 },
+					["coord"] = { 37.2, 47.4, LOCH_MODAN },
 					["sourceQuest"] = 26868,	-- Axis of Awful
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(273,   {	-- Resupplying the Excavation (Legacy)
 					["provider"] = { "n", 1105 },	-- Jern Hornhelm
-					["coord"] = { 37.2, 47.4, 48 },
+					["coord"] = { 37.2, 47.4, LOCH_MODAN },
 					["sourceQuest"] = 302,	-- Powder to Ironband
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
@@ -415,32 +415,32 @@ _.Zones =
 				}),
 				q(27075, {	-- Servants of Cho'gall
 					["sourceQuests"] = { 27074 },	-- Fight the Hammer
-					["coord"] = { 64.1, 26.6, 48 },
+					["coord"] = { 64.1, 26.6, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 1073 },	-- Ashlan Stonesmirk
 				}),
 				q(27033, {	-- Skystrider's Heart
 					["sourceQuests"] = { 27032 },	-- Bird is the Word
-					["coord"] = { 78.5, 76.2, 48 },
+					["coord"] = { 78.5, 76.2, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 44618 },	-- Rusted Skystrider
 				}),
 				q(13635, {	-- South Gate Status Report
 					["sourceQuests"] = { 26855 },	-- A Pilot's Revenge
 					["isBreadcrumb"] = true,
-					["coord"] = { 14.0, 56.4, 48 },
+					["coord"] = { 14.0, 56.4, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 1960 },	-- Pilot Hammerfoot
 				}),
 				q(26928, {	-- Smells Like A Plan
 					["sourceQuests"] = { 26927 },	-- Suddenly, Murlocs!
-					["coord"] = { 34.7, 49.1, 48 },
+					["coord"] = { 34.7, 49.1, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 44345 },	-- Cannary Caskshot
 				}),
 				q(27035, {	-- Standing Up
 					["sourceQuests"] = { 27034 },	-- He's That Age
-					["coord"] = { 58.5, 29.1, 48 },
+					["coord"] = { 58.5, 29.1, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 44870 },	-- Ando Blastenheimer
 				}),
@@ -450,20 +450,20 @@ _.Zones =
 					["altQuests"] = { 13636 },
 				}),
 				q(13636, {	-- Stormpike's Orders
-					["coord"] = { 35.0, 46.5, 48 },
+					["coord"] = { 35.0, 46.5, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 1340 },	-- Mountaineer Kadrell
 					["altQuests"] = { 1338 },
 				}),
 				q(26927, {	-- Suddenly, Murlocs!
 					["sourceQuests"] = { 26864 },	-- The Bearer of Gnoll-edge
-					["coord"] = { 35.0, 46.5, 48 },
+					["coord"] = { 35.0, 46.5, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 1340 },	-- Mountaineer Kadrell
 				}),
 				q(26864, {	-- The Bearer of Gnoll-edge
 					["sourceQuests"] = { 26845 },	-- Who's in Charge Here?
-					["coord"] = { 25.4, 17.9, 48 },
+					["coord"] = { 25.4, 17.9, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 1343 },	-- Mountaineer Stormpike
 				}),
@@ -472,7 +472,7 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(27016, {	-- The Joy of Boar Hunting
-					["coord"] = { 83.4, 65.4, 48 },
+					["coord"] = { 83.4, 65.4, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 1187 },	-- Daryl the Youngling
 				}),
@@ -481,7 +481,7 @@ _.Zones =
 						26131,	-- Reinforcements for Loch Modan
 						28567,	-- Hero's Call: Loch Modan!
 					},
-					["coord"] = { 14.0, 56.6, 48 },
+					["coord"] = { 14.0, 56.6, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 1960 },	-- Pilot Hammerfoot
 					["g"] = {
@@ -500,7 +500,7 @@ _.Zones =
 					},
 				}),
 				q(26860, {	-- Thelsamar Blood Sausages
-					["coord"] = { 34.8, 49.2, 48 },
+					["coord"] = { 34.8, 49.2, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 1963 },	-- Vidra Hearthstove
 					["g"] = {
@@ -509,18 +509,18 @@ _.Zones =
 				}),
 				q(26145, {	-- The Trogg Threat
 					["sourceQuests"] = { 13635 },	-- South Gate Status Report
-					["coord"] = { 23.3, 74.9, 48 },
+					["coord"] = { 23.3, 74.9, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 1089 },	-- Mountaineer Cobbleflint
 				}),
 				q(27116, {	-- The Winds of Loch Modan
 					["sourceQuests"] = { 27115 },	-- Ando's Call
-					["coord"] = { 58.5, 29.1, 48 },
+					["coord"] = { 58.5, 29.1, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 44870 },	-- Ando Blastenheimer
 				}),
 				q(27025, {	-- Thistle While You Work
-					["coord"] = { 82.7, 63.4, 48 },
+					["coord"] = { 82.7, 63.4, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 44859 },	-- Safety Warden Pipsy
 				}),
@@ -531,7 +531,7 @@ _.Zones =
 				}),
 				q(27036, {	-- Vyrin's Revenge (#1)
 					["sourceQuests"] = { 27016 },	-- The Joy of Boar Hunting
-					["coord"] = { 81.9, 64.6, 48 },
+					["coord"] = { 81.9, 64.6, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 1156 },	-- Vyrin Swiftwind
 				}),
@@ -543,7 +543,7 @@ _.Zones =
 				}),
 				q(27037, {	-- Vyrin's Revenge (#2)
 					["sourceQuests"] = { 27036 },	-- Vyrin's Revenge (#1)
-					["coord"] = { 83.4, 65.4, 48 },
+					["coord"] = { 83.4, 65.4, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 1187 },	-- Daryl the Youngling
 					["g"] = {
@@ -565,18 +565,18 @@ _.Zones =
 					},
 				}),
 				q(13648, {	-- WANTED: The Dark Iron Spy
-					["coord"] = { 37.3, 46.5, 48 },
+					["coord"] = { 37.3, 46.5, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 256 },	-- Wanted!
 				}),
 				q(26845, {	-- Who's In Charge Here?
 					["sourceQuests"] = { 26844 },	-- Kobold and Kobolder
-					["coord"] = { 25.4, 17.9, 48 },
+					["coord"] = { 25.4, 17.9, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 1343 },	-- Mountaineer Stormpike
 				}),
 				q(27031, {	-- Wing Nut
-					["coord"] = { 81.6, 64.7, 48 },
+					["coord"] = { 81.6, 64.7, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 6577 },	-- Bingles Blastenheimer
 				}),

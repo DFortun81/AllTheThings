@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(66, {	-- Desolace
+		m(DESOLACE, {
 			filter(101, {	-- Pet Battle
 				p(838, {	-- Amethyst Shale Hatchling
 					["crs"] = { 62182 },	-- Amethyst Shale Hatchling
@@ -45,7 +45,7 @@ _.Zones =
 				}),
 				q(31870, {	-- Cassandra Kaboom
 					["provider"] = { "n", 66372 },	-- Merda Stronghoof
-					["coord"] = { 57.2, 45.8, 66 },
+					["coord"] = { 57.2, 45.8, DESOLACE },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(89125),	-- Sack of Pet Supplies
@@ -53,7 +53,7 @@ _.Zones =
 				}),
 				q(31872, {	-- Merda Stronghoof
 					["provider"] = { "n", 66372 },	-- Merda Stronghoof
-					["coord"] = { 57.2, 45.8, 66 },
+					["coord"] = { 57.2, 45.8, DESOLACE },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),

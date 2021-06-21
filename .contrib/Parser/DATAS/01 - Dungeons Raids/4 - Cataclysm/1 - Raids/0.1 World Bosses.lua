@@ -67,7 +67,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 				},
 			}),
 			n(50089, {	-- Julak-Doom
-				["maps"] = { 241 },	-- Twilight Highlands
+				["maps"] = { TWILIGHT_HIGHLANDS },
 				["g"] = {
 					i(69844),	-- Vitreous Beak of Julak-Doom
 					un(REMOVED_FROM_GAME, i(67246)),	-- Beak of Julak-Doom [Replaced with 69844]

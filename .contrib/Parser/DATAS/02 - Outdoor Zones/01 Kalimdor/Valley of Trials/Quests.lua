@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(1, {	-- Durotar
+		m(DUROTAR, {
 			m(461, {	-- Valley of Trials
 				n(QUESTS, {
 					q(25130, {	-- Back to the Den

@@ -5,12 +5,12 @@
 --[[ TODO: commenting out until secret is finished
 _.Secrets =
 {
-	n(-807, {	-- Hivemind
+	n(-807, {	-- The Hivemind
 		["description"] = "Below is a detailed explanation on how to obtain The Hivemind mount.\n\n***This secret requires you to have debug mode enabled to see the steps. To enable debug mode right click the ATT icon on the minimap, navigate to the general tab and check the \"|Cff15abffDebug Mode|r |cFFFFFFFF(Show Everything)|r\" box.***",
 		["modelScale"] = 1.1,
 		--["modelID"] = ,
 		["maps"] = {
-			47,
+			DUSKWOOD,
 			64,
 			114,
 			118,
@@ -57,7 +57,7 @@ _.Secrets =
 							o(280837, {	-- Letter 3: Karazhan (Old)
 								["model"] = 1661948,
 								["questID"] = 40404,
-								["coord"] = { 47.4, 75.0, 47 },	-- Karazhan
+								["coord"] = { 47.4, 75.0, DUSKWOOD },	-- Karazhan
 								["sourceQuest"] = 40314, 	-- Leter 2: Prepfoot Compound, Highmountain
 								["description"] = "|cFFFFFFFFLetter 3:|r Go to |cFFFFD700Karazhan (Old)|r in |cFFFFD700Duskwood|r. The third letter is located in |cFFFFD700Medivh's Chambers|r, located after the Chess Event, in the staircase leading to Prince Malchezaar. The letter is on the chair Medivh used to write his scrolls and spells, literally the seat of the guardian. Click it. The letter reads...\n\n|cFFFFFFFFI sat Dumbfounded, watching As the most Subtle Rat reached for the cheese a third time in under an hour.|r\n"
 							}),

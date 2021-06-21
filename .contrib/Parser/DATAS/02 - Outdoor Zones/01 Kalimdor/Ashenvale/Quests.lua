@@ -100,7 +100,7 @@ _.Zones =
 				}),
 				q(1044,  {	-- Answered Questions
 					["provider"] = { "n", 661 },	-- Jonathan Carevin
-					["coord"] = { 75.2, 48.8, 47 },
+					["coord"] = { 75.2, 48.8, DUSKWOOD },
 					["sourceQuest"] = 1043,	-- The Scythe of Elune
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,

@@ -21,9 +21,9 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 					37,		-- Elwynn Forest
 					TANARIS,
 					WINTERSPRING,
-					84,		-- Stormwind City
-					87,		-- Ironforge
-					89,		-- Darnassus
+					STORMWIND_CITY,
+					IRONFORGE,
+					DARNASSUS,
 					THE_EXODAR,
 					NETHERSTORM,
 					SHATTRATH_CITY,
@@ -55,7 +55,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 			}),
 			q(14028, {	-- Cranberry Chutney (Alliance)
 				["provider"] = { "n", 34644 },	-- Edward Winslow
-				["maps"] = { 27, },	-- Dun Morogh
+				["maps"] = { DUN_MOROGH },
 				["sourceQuests"] = { 14024, },	-- Pumpkin Pie (Alliance)
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
@@ -69,7 +69,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 			}),
 			q(14033, {	-- Candied Sweet Potatoes (Alliance)
 				["provider"] = { "n", 34676 },	-- Isaac Allerton
-				["maps"] = { 89, },	-- Darnassus
+				["maps"] = { DARNASSUS },
 				["sourceQuests"] = { 14030, },	-- They're Ravenous In Darnassus (Alliance)
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
@@ -86,7 +86,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 				["provider"] = { "n", 34708 },	-- Caitrin Ironkettle
 				["isDaily"] = true,
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 27, },	-- Dun Morogh
+				["maps"] = { DUN_MOROGH },
 				["g"] = {
 					i(46723),	-- Pilgrim's Hat
 					i(46800),	-- Pilgrim's Attire
@@ -104,7 +104,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 				["provider"] = { "n", 34708 },	-- Caitrin Ironkettle
 				["isDaily"] = true,
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 27, },	-- Dun Morogh
+				["maps"] = { DUN_MOROGH },
 				["g"] = {
 					i(46723),	-- Pilgrim's Hat
 					i(46800),	-- Pilgrim's Attire
@@ -139,9 +139,9 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 			q(14054, {	-- Easy As Pie (Alliance)
 				["provider"] = { "n", 34711 },	-- Mary Allerton
 				["isDaily"] = true,
-				["coord"] = { 61.8, 46.2, 89 },
+				["coord"] = { 61.8, 46.2, DARNASSUS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 89 },	-- Darnassus
+				["maps"] = { DARNASSUS },
 				["g"] = {
 					i(46723),	-- Pilgrim's Hat
 					i(46800),	-- Pilgrim's Attire
@@ -191,7 +191,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 					WINTERSPRING,
 					ORGRIMMAR,
 					THUNDER_BLUFF,
-					90,		-- Undercity
+					UNDERCITY,
 					EVERSONG_WOODS,
 					NETHERSTORM,
 					SHATTRATH_CITY,
@@ -205,28 +205,28 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 				["isYearly"] = true,
 				["races"] = HORDE_ONLY,
 				["maps"] = {
-					1,		-- Durotar
-					18,		-- Tirisfal Glades
+					DUROTAR,
+					TIRISFAL_GLADES,
 					EVERSONG_WOODS,
 					HELLFIRE_PENINSULA,
 				},
 			}),
 			q(14037, {	-- Spice Bread Stuffing (Horde)
 				["provider"] = { "n", 34677 },	-- Miles Standish
-				["maps"] = { 90, },	-- Undercity
+				["maps"] = { UNDERCITY },
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
 			}),
 			q(14040, {	-- Pumpkin Pie (Horde)
 				["provider"] = { "n", 34768 },	-- William Mullins
-				["maps"] = { 90, },	-- Undercity
+				["maps"] = { UNDERCITY },
 				["sourceQuests"] = { 14037, },	-- Spice Bread Stuffing (Horde)
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
 			}),
 			q(14041, {	-- Cranberry Chutney (Horde)
 				["provider"] = { "n", 34679 },	-- Francis Eaton
-				["maps"] = { 1, },	-- Durotar
+				["maps"] = { DUROTAR },
 				["sourceQuests"] = { 14040, },	-- Pumpkin Pie (Horde)
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
@@ -240,14 +240,14 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 			}),
 			q(14044, {	-- Undersupplied in the Undercity (Horde)
 				["provider"] = { "n", 34679 },	-- Francis Eaton
-				["maps"] = { 1, },	-- Durotar
+				["maps"] = { DUROTAR },
 				["sourceQuests"] = { 14043, },	-- Candied Sweet Potatoes (Horde)
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
 			}),
 			q(14047, {	-- Slow-roasted Turkey (Horde)
 				["provider"] = { "n", 34677 },	-- Miles Standish
-				["maps"] = { 90, },	-- Undercity
+				["maps"] = { UNDERCITY },
 				["sourceQuests"] = { 14044 },	-- Undersupplied in the Undercity (Horde)
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
@@ -257,7 +257,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 				["provider"] = { "n", 34768 },	-- William Mullins
 				["isDaily"] = true,
 				["races"] = HORDE_ONLY,
-				["maps"] = { 90, },	-- Undercity
+				["maps"] = { UNDERCITY },
 				["g"] = {
 					i(46723),	-- Pilgrim's Hat
 					i(46800),	-- Pilgrim's Attire
@@ -275,7 +275,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 				["provider"] = { "n", 34712 },	-- Roberta Carter
 				["isDaily"] = true,
 				["races"] = HORDE_ONLY,
-				["maps"] = { 90, },	-- Undercity
+				["maps"] = { UNDERCITY },
 				["g"] = {
 					i(46723),	-- Pilgrim's Hat
 					i(46800),	-- Pilgrim's Attire
@@ -311,7 +311,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 				["provider"] = { "n", 34713 },	-- Ondani Greatmill
 				["isDaily"] = true,
 				["races"] = HORDE_ONLY,
-				["maps"] = { 1, },	-- Durotar
+				["maps"] = { DUROTAR },
 				["g"] = {
 					i(46723),	-- Pilgrim's Hat
 					i(46800),	-- Pilgrim's Attire
@@ -329,7 +329,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 				["provider"] = { "n", 34713 },	-- Ondani Greatmill
 				["isDaily"] = true,
 				["races"] = HORDE_ONLY,
-				["maps"] = { 1, },	-- Durotar
+				["maps"] = { DUROTAR },
 				["g"] = {
 					i(46723),	-- Pilgrim's Hat
 					i(46800),	-- Pilgrim's Attire

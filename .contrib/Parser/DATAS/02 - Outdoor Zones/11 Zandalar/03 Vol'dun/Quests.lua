@@ -695,7 +695,7 @@ _.Zones =
 				q(48324, {	-- Lost in Zem'lan
 					["sourceQuests"] = { 51775 },	-- Camp Lastwind (breadcrumb)
 					["provider"] = { "n", 125904 },	-- Norah
-					["coord"] = { 38.8, 77.2 },
+					["coord"] = { 38.8, 77.2, 864 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(50536, {	-- Magic Decoder Device
@@ -1161,6 +1161,7 @@ _.Zones =
 				}),
 				q(47571, {	-- The Elder's Wisdom
 					["sourceQuests"] = {
+						47943,	-- Crab Trapping
 						47570,	-- Hidden Motives
 						47577,	-- They Came From The Sea
 					},

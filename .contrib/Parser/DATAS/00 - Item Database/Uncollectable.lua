@@ -299,6 +299,7 @@ i(171989);	-- Pouch of Spores
 i(174078);	-- Primrose's Pyrotechnic Powder
 i(169237);	-- Pulsating Marble
 i(168184);	-- Rare Metal
+i(160983);	-- Recruitment Orders
 i(169230);	-- Reflective Plating
 i(167875);	-- Reforged Dreamglow Dragonscale
 i(169252);	-- Resonant Pearl

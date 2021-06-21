@@ -246,7 +246,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						},
 					}),
 					ach(13288, 13291, {	-- Might of the Alliance (A) / Victory or Death (H)
-						["collectible"] = true,
+						["collectible"] = false,
 						["crs"] = {
 							177193,	-- Kiku
 							177208,	-- Eppu

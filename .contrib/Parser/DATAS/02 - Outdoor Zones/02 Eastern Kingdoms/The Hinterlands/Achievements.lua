@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(26, {	-- The Hinterlands
+		m(THE_HINTERLANDS, {
 			n(ACHIEVEMENTS, {
 				ach(4897, {	-- Hinterlands Quests
 					crit(1, {	-- Quel'Danil Lodge

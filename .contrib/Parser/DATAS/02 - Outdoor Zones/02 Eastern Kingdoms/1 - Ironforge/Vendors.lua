@@ -8,7 +8,7 @@ _.Zones =
 		m(IRONFORGE, {
 			n(VENDORS, {
 				n(5128,  {	-- Bombus Finespindle <Leatherworking Supplies>
-					["coord"] = { 40.2, 33.4, 87 },
+					["coord"] = { 40.2, 33.4, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 3366}, -- Tamar <Leatherworking Supplies>
@@ -20,7 +20,7 @@ _.Zones =
 					},
 				}),
 				n(5163,  {	-- Burbik Gearspanner <Trade Supplies>
-					["coord"] = { 46.6, 28.6, 87 },
+					["coord"] = { 46.6, 28.6, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(21948, {	-- Design: Opal Necklace of Impact
@@ -46,7 +46,7 @@ _.Zones =
 					},
 				}),
 				n(50309, {	-- Captain Stonehelm <Ironforge Quartermaster>
-					["coord"] = { 55.8, 47.8, 87 },
+					["coord"] = { 55.8, 47.8, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(64899),	-- Cape of Ironforge
@@ -57,7 +57,7 @@ _.Zones =
 					},
 				}),
 				n(5160,  {	-- Emrul Riknussun <Cooking Supplies>
-					["coord"] = { 60.8, 37.4, 87 },
+					["coord"] = { 60.8, 37.4, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 49737}, -- Shazdar <Sous Chef>
@@ -68,7 +68,7 @@ _.Zones =
 					},
 				}),
 				n(5175,  {	-- Gearcutter Cogspinner <Engineering Supplies>
-					["coord"] = { 68.2, 44.0, 87 },
+					["coord"] = { 68.2, 44.0, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(18649, {	-- Schematic: Blue Firework
@@ -85,7 +85,7 @@ _.Zones =
 					},
 				}),
 				n(6294,  {	-- Krom Stoutarm <Heirloom Curator>
-					["coord"] = { 74.6, 9.8, 87 },
+					["coord"] = { 74.6, 9.8, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(122375, {	-- Aged Pauldrons of The Five Thunders
@@ -397,14 +397,14 @@ _.Zones =
 					},
 				}),
 				n(52584, {	-- Laida Gembold <Jewelcrafting Supplies>
-					["coord"] = { 50.6, 27.0, 87 },
+					["coord"] = { 50.6, 27.0, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 50482}, -- Marith Lazuria <Jewelcrafting Supplies>
 					},
 				}),
 				n(50308, {	-- Master Tinker Trini <Gnomeregan Quartermaster>
-					["coord"] = { 55.8, 47.8, 87 },
+					["coord"] = { 55.8, 47.8, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(64896),	-- Cape of Gnomeregan
@@ -415,7 +415,7 @@ _.Zones =
 					},
 				}),
 				n(8681,  {	-- Outfitter Eric <Speciality Tailoring Supplies>
-					["coord"] = { 44.2, 29.6, 87 },
+					["coord"] = { 44.2, 29.6, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(10314, { 	-- Pattern: Lavender Mageweave Shirt
@@ -436,14 +436,14 @@ _.Zones =
 					},
 				}),
 				n(5154,  {	-- Poranna Snowbraid <Tailoring Supplies>
-					["coord"] = { 43.8, 29.6, 87 },
+					["coord"] = { 43.8, 29.6, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 3364}, -- Borya <Tailoring Supplies>
 					},
 				}),
 				n(5108,  {	-- Raena Flinthammer <Light Armor Merchant>
-					["coord"] = { 32.6, 58.0, 87 },
+					["coord"] = { 32.6, 58.0, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(16059),	-- Common Brown Shirt
@@ -452,7 +452,7 @@ _.Zones =
 					},
 				}),
 				n(5122,  {	-- Skolmin Goldfury <Bow Merchant>
-					["coord"] = { 72.2, 65.0, 87 },
+					["coord"] = { 72.2, 65.0, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(11303, {	-- Fine Shortbow
@@ -467,7 +467,7 @@ _.Zones =
 					},
 				}),
 				n(5178,  {	-- Soolie Berryfizz <Alchemy Supplies>
-					["coord"] = { 66.6, 54.6, 87 },
+					["coord"] = { 66.6, 54.6, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(13478, {	-- Recipe: Elixir of Superior Defense
@@ -479,7 +479,7 @@ _.Zones =
 					},
 				}),
 				n(5162,  {	-- Tansy Puddlefizz <Fishing Supplies>
-					["coord"] = { 47.8, 6.6, 87 },
+					["coord"] = { 47.8, 6.6, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(6328),	-- Recipe: Longjaw Mud Snapper
@@ -489,14 +489,14 @@ _.Zones =
 					},
 				}),
 				n(4259,  {	-- Thurgrum Deepforge <Blacksmithing Supplies>
-					["coord"] = { 51.8, 41.2, 87 },
+					["coord"] = { 51.8, 41.2, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 3356}, -- Sumi <Blacksmithing Supplies>
 					},
 				}),
 				n(5158,  {	-- Tilli Thistlefuzz <Enchanting Supplies>
-					["coord"] = { 61.0, 45.6, 87 },
+					["coord"] = { 61.0, 45.6, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 3346}, -- Kithas <Enchanting Supplies>

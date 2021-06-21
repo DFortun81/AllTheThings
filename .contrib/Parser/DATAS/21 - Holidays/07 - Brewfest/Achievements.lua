@@ -7,8 +7,8 @@ _.Holidays = bubbleDown({["u"] = 24},
 	holiday(235442, {	-- Brewfest
 		n(ACHIEVEMENTS, {
 			["maps"] = {
-				1,	-- Durotar
-				27,	-- Dun Morogh
+				DUROTAR,
+				DUN_MOROGH,
 			},
 			["g"] = {
 				ach(1260),	-- Almost Blind Luck

@@ -12,9 +12,7 @@ _.Holidays =
 						["providers"] = {
 							{ "i", 33978 },	-- "Honorary Brewer" Hand Stamp
 						},
-						["maps"] = {
-							27,	-- Dun Morogh
-						},
+						["maps"] = { DUN_MOROGH },
 						["g"] = {
 							i(33976),	-- Brewfest Ram
 						},
@@ -24,9 +22,7 @@ _.Holidays =
 						["providers"] = {
 							{ "i", 34028 },	-- "Honorary Brewer" Hand Stamp H
 						},
-						["maps"] = {
-							1,	-- Durotar
-						},
+						["maps"] = { DUROTAR },
 						["g"] = {
 							i(33976),	-- Brewfest Ram
 						},
@@ -37,11 +33,9 @@ _.Holidays =
 							{ "n", 24468 },	-- Pol Amberstill
 						},
 						["coords"] = {
-							{ 53.6, 38.6, 27 },
+							{ 53.6, 38.6, DUN_MOROGH },
 						},
-						["maps"] = {
-							27,	-- Dun Morogh
-						},
+						["maps"] = { DUN_MOROGH },
 						["g"] = {
 							i(32912),	-- Yellow Brewfest Stein
 						},
@@ -53,11 +47,9 @@ _.Holidays =
 							{ "n", 24497 },	-- Ram Master Ray
 						},
 						["coords"] = {
-							{ 42.6, 17.6, 1 },
+							{ 42.6, 17.6, DUROTAR },
 						},
-						["maps"] = {
-							1,	-- Durotar
-						},
+						["maps"] = { DUROTAR },
 						["g"] = {
 							i(32912),	-- Yellow Brewfest Stein
 						},
@@ -75,11 +67,9 @@ _.Holidays =
 							{ "n", 24468 },	-- Pol Amberstill
 						},
 						["coords"] = {
-							{ 53.6, 38.6, 27 },
+							{ 53.6, 38.6, DUN_MOROGH },
 						},
-						["maps"] = {
-							27,	-- Dun Morogh
-						},
+						["maps"] = { DUN_MOROGH },
 						["g"] = {
 							i(33016),	-- Blue Brewfest Stein
 						},
@@ -91,11 +81,9 @@ _.Holidays =
 							{ "n", 24497 },	-- Ram Master Ray
 						},
 						["coords"] = {
-							{ 42.6, 17.6, 1 },
+							{ 42.6, 17.6, DUROTAR },
 						},
-						["maps"] = {
-							1,	-- Durotar
-						},
+						["maps"] = { DUROTAR },
 						["g"] = {
 							i(33016),	-- Blue Brewfest Stein
 						},
@@ -107,11 +95,9 @@ _.Holidays =
 							{ "n", 24468 },	-- Pol Amberstill
 						},
 						["coords"] = {
-							{ 53.6, 38.6, 27 },
+							{ 53.6, 38.6, DUN_MOROGH },
 						},
-						["maps"] = {
-							27,	-- Dun Morogh
-						},
+						["maps"] = { DUN_MOROGH },
 						["g"] = {
 							i(37892),	-- Green Brewfest Stein
 						},
@@ -123,11 +109,9 @@ _.Holidays =
 							{ "n", 24497 },	-- Ram Master Ray
 						},
 						["coords"] = {
-							{ 42.6, 17.6, 1 },
+							{ 42.6, 17.6, DUROTAR },
 						},
-						["maps"] = {
-							1,	-- Durotar
-						},
+						["maps"] = { DUROTAR },
 						["g"] = {
 							i(37892),	-- Green Brewfest Stein
 						},
@@ -136,8 +120,8 @@ _.Holidays =
 					}),
 					q(11454, {	-- Seek the Saboteurs
 						["maps"] = {
-							1,	-- Durotar
-							27,	-- Dun Morogh
+							DUROTAR,
+							DUN_MOROGH,
 						},
 					}),
 					q(12020, {	-- This One Time, When I Was Drunk... (H)
@@ -145,11 +129,9 @@ _.Holidays =
 							{ "o", 189989 },	-- Dark Iron Mole Machine Wreckage
 						},
 						["coords"] = {
-							{ 56, 37.1, 1 },
+							{ 56.0, 37.1, DUROTAR },
 						},
-						["maps"] = {
-							27,	-- Dun Morogh
-						},
+						["maps"] = { DUN_MOROGH },
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 						["g"] = {
@@ -161,11 +143,9 @@ _.Holidays =
 							{ "o", 189990 },	-- Dark Iron Mole Machine Wreckage
 						},
 						["coords"] = {
-							{ 40.7, 17.4, 1 },
+							{ 40.7, 17.4, DUROTAR },
 						},
-						["maps"] = {
-							1,	-- Durotar
-						},
+						["maps"] = { DUROTAR },
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 						["g"] = {
@@ -190,18 +170,18 @@ _.Holidays =
 					}),
 					q(12318, {	-- Save Brewfest! (Alliance)
 						["provider"] = { "n", 27584 },	-- Darna Honeybock
-						["maps"] = { 27, },	-- Dun Morogh
+						["maps"] = { DUN_MOROGH },
 						["sourceQuests"] = { 11442, },	-- Welcome to Brewfest! (Alliance)
 					}),
 					q(12318, {	-- Save Brewfest! (Horde)
 						["provider"] = { "n", 28329 },	-- Slurpo Fizzykeg
-						["maps"] = { 1, },	-- Durotar
+						["maps"] = { DUROTAR },
 						["sourceQuests"] = { 11447, },	-- Welcome to Brewfest! (Horde)
 					}),
 					i(34028, {	-- "Honorary Brewer" Hand Stamp (Alliance)
 						["g"] = {
 							q(11419, {	-- Brewfest Riding Rams
-								["maps"] = { 27, },	-- Dun Morogh
+								["maps"] = { DUN_MOROGH },
 								["races"] = ALLIANCE_ONLY,
 							}),
 						},
@@ -210,7 +190,7 @@ _.Holidays =
 					i(33978, {	-- "Honorary Brewer" Hand Stamp (Horde)
 						["g"] = {
 							q(11400, {	-- Brewfest Riding Rams
-								["maps"] = { 1, },	-- Durotar
+								["maps"] = { DUROTAR },
 								["races"] = HORDE_ONLY,
 							}),
 						},

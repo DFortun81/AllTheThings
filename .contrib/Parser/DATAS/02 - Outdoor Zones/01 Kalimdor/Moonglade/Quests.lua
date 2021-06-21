@@ -22,8 +22,8 @@ _.Zones =
 					},
 					["classes"] = { DRUID },
 					["coords"] = {
-						{ 27.6, 50.0, 84 },	-- Sheldras Moontree (Stormwind)
-						{ 57.6, 24.8, 84 },	-- Celestine of the Harvest (Stormwind)
+						{ 27.6, 50.0, STORMWIND_CITY },	-- Sheldras Moontree
+						{ 57.6, 24.8, STORMWIND_CITY },	-- Celestine of the Harvest
 					},
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -36,9 +36,9 @@ _.Zones =
 				}),
 				q(27273, {	-- An Invitation from Moonglade
 					["isBreadcrumb"] = true,
-					["provider"] = { "n", 4217 },	-- Mathrengyl Bearwalker (Darnassus)
+					["provider"] = { "n", 4217 },	-- Mathrengyl Bearwalker
 					["classes"] = { DRUID },
-					["coord"] = { 40.4, 27.6, 89 },	-- Mathrengyl Bearwalker (Darnassus)
+					["coord"] = { 40.4, 27.6, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(5061,  {	-- Aquatic Form

@@ -204,8 +204,10 @@ local L = app.L;
 	L.AH_SCAN_SUCCESSFUL_2 = " 物品.";
 	L.REAGENT_CACHE_OUT_OF_DATE = "缓存已过期, 打开专业界面后会重新缓存!";
 	--TODO: L.QUEST_LOOP = "Likely just broke out of an infinite source quest loop.";
-	--TODO: L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT = "Quest '%s' [%d] will prevent collection of Breadcrumb Quest [%d]";
+	--TODO: L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT = "Quest '%s' [%d] will prevent collection of Breadcrumb Quest '%s' [%d]";
 	--TODO: L.QUEST_OBJECTIVE_INVALID = "Invalid Quest Objective";
+	--TODO: L.REFRESHING_COLLECTION = "Refreshing collection...";
+	--TODO: L.DONE_REFRESHING = "Done refreshing collection.";
 
 	-- Item Filter Window
 		--TODO: L.ITEM_FILTER_TEXT = "Item Filters";
@@ -229,6 +231,10 @@ local L = app.L;
 	--TODO: L.QUEST_ONCE_PER_ACCOUNT_FORMAT = "Completed By: %s";
 
 -- Settings.lua
+	--TODO: L.SKIP_AUTO_REFRESH = "Do Not Auto-Refresh!";
+	--TODO: L.SKIP_AUTO_REFRESH_TOOLTIP = "By default (unchecked), any Settings change which may affect visible data will cause an automatic refresh.\n\nBy enabling this option, Settings changes won't take effect until the User performs a Full Refresh by Shift-Clicking on an ATT window.";
+	--TODO: L.AFTER_REFRESH = "After Refresh";
+
 	-- General tab
 		-- Mod Title
 			L.MODE = "模式";
@@ -519,7 +525,6 @@ local L = app.L;
 		L["SPLIT"] = "Per Difficulty"
 		L["REQUIRES_LEVEL"] = "要求等级" -- Requires Level
 		L["SECRETS_HEADER"] = "解密"
-		L["SELFIE_FILTERS_HEADER"] = "自拍滤镜"
 		L["LIMITED_QUANTITY"] = "此物品有数量限制，在商人处并非总是可见。"
 		L.SOURCE_ID_MISSING = "请在#errors中向ATT Discord报告此物品及其获取地点!";
 
@@ -840,19 +845,14 @@ for key,value in pairs({
 			--TODO: [-652] = "Honor Gear Grievous Season",			-- Honor Gear Grievous Season
 			--TODO: [-651] = "Honor Gear Prideful Season",			-- Honor Gear Prideful Season
 
-	[-799] = "不朽之责",												-- Burden of Eternity
-
 	-- Secret Header [Maybe need to change the numbers again when I need more space for PvP -- sadidorf]
-		[-806] = "钟示贤德腰带",										-- Waist of Time
-		[-807] = "主脑",												-- Hivemind
-		[-808] = "被缚的影犬",										-- Bound Shadehound
+	[-806] = "钟示贤德腰带",												-- Waist of Time
 
 	-- Mechagon
 		[-850] = "机械化的宝箱",										-- Mechanized Chest
 		[-851] = "铁潮宝箱",											-- Irontide Chest
 
 	-- 8.2 Neck Stuff
-		[-852] = "艾泽里特精华",										-- Azerite Essences
 		[-853] = "全部角色",											-- All Roles
 		--TODO: [-854] = "DPS",										-- DPS
 		[-855] = "治疗",												-- Healers

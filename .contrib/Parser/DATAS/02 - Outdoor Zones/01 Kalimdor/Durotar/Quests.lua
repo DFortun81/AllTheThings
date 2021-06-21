@@ -5,129 +5,461 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(1, {	-- Durotar
+		m(DUROTAR, {
 			n(QUESTS, {
-				q(2161, {	-- A Peon's Budren
-					["u"] = REMOVED_FROM_GAME,
+				q(2161, {	-- A Peon's Burden
+					["qg"] = 6786,	-- Ukor
+					["coord"] = { 52.05, 68.31, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 6786 },	-- Ukor
+					["groups"] = {
+						objective(1, {	-- 0/1 Ukor's Burden
+							["provider"] = { "i", 7629 },
+						}),
+					},
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
 				}),
-				q(818,   {	-- A Solvent Spirit
-					["u"] = REMOVED_FROM_GAME,
+				q(818, {	-- A Solvent Spirit
+					["qg"] = 3304,	-- Master Vornal
+					["coord"] = { 55.95, 74.39, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3304 },	-- Master Vornal
+					["lvl"] = 5,
+					["groups"] = {
+						objective(1, { -- 0/8 Crawler Mucus
+							["provider"] = { "i", 4888 }, -- Crawler Mucus
+							["crs"] = {
+								3228,	-- Corrupted Surf Crawler
+								3108,	-- Encrusted Surf Crawler
+								3106,	-- Pygmy Surf Crawler
+								3107,	-- Surf Crawler
+							},
+						}),
+						objective(2, { -- 0/4 Intact Makrura Eye
+							["provider"] = { "i", 4887 },	-- Intact Makrura Eye
+							["crs"] = {
+								3103,	-- Makrura Clacker
+								3141,	-- Makrura Elder
+								3104,	-- Makrura Shellhide
+								3105,	-- Makrura Snapclaw
+								6020,	-- Slimeshell Makrura
+							},
+						}),
+						i(4941),	-- Really Sticky Glue
+					},
+					["timeline"] = {
+						"added 1.11.1.10958",
+						"removed 4.0.3.10000",
+					},
 				}),
 				q(41002, {	-- A Weapon of the Horde
-					["provider"] = { "n", 101035 },	-- Lady Sylvanas Windrunner
+					["qg"] = 101035,	-- Lady Sylvanas Windrunner
 					["races"] = { BLOODELF },
 					["classes"] = { DEMONHUNTER },
+					["lvl"] = lvlsquish(98, 10, 98),
 					["sourceQuest"] = 40983,	-- Demons Among Them
+					["timeline"] = {
+						"added 7.0.1.20796",
+					},
 				}),
 				q(25263, {	-- Arnak Fireblade
-					["provider"] = { "n", 3208 },	-- Margoz
-					["coord"] = { 56.4, 19.8, 1 },
+					["qg"] = 3208,	-- Margoz
+					["coord"] = { 56.4, 19.8, DUROTAR },
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(4, 1, 4),
 					["sourceQuest"] = 25262,	-- Skull Rock
+					["groups"] = {
+						objective(1, {	-- 0/1 Example Collar
+							["provider"] = { "i", 6658 },	-- Example Collar
+						}),
+					},
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
+				}),
+				q(809, {	-- Ak'Zeloth
+					["qg"] = 3216,	-- Neeru Fireblade
+					["sourceQuest"] = 829,	-- Neeru Fireblade
+					["coord"] = { 49.6, 50.4, ORGRIMMAR },
+					["maps"] = { ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 4,
+					["timeline"] = {
+						"added 1.11.1.10958",
+						"removed 4.0.3.10000",
+					},
 				}),
 				q(32872, {	-- Battlefield: Barrens Ally
-					["u"] = REMOVED_FROM_GAME,
+					["qg"] = 71333,	-- Ki'ta Arrowtusk
 					["races"] = ALLIANCE_ONLY,
 					["isWeekly"] = true,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(97849)),	-- Radical Mojo
+					["groups"] = {
+						objective(1, {	-- 0/150 Kor'kron Lumber
+							["provider"] = { "i", 97530 },	-- Kor'kron Lumber
+						}),
+						objective(2, {	-- 0/150 Kor'kron Oil
+							["provider"] = { "i", 97544 }, -- Kor'kron Oil
+						}),
+						objective(3, {	-- 0/150 Kor'kron Meat
+							["provider"] = { "i", 97545 }, -- Kor'kron Meat
+						}),
+						objective(4, {	-- 0/150 Kor'kron Stone
+							["provider"] = { "i", 97543 }, -- Kor'kron Stone
+						}),
+						i(97849),	-- Radical Mojo
+					},
+					["timeline"] = {
+						"added 5.3.0.16767",
+						"removed 5.4.0.17359",
 					},
 				}),
 				q(32862, {	-- Battlefield: Barrens Horde
-					["u"] = REMOVED_FROM_GAME,
+					["qg"] = 71333,	-- Ki'ta Arrowtusk
 					["races"] = HORDE_ONLY,
 					["isWeekly"] = true,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(97849)),	-- Radical Mojo
+					["groups"] = {
+						objective(1, {	-- 0/150 Kor'kron Lumber
+							["provider"] = { "i", 97530 },	-- Kor'kron Lumber
+						}),
+						objective(2, {	-- 0/150 Kor'kron Oil
+							["provider"] = { "i", 97544 }, -- Kor'kron Oil
+						}),
+						objective(3, {	-- 0/150 Kor'kron Meat
+							["provider"] = { "i", 97545 }, -- Kor'kron Meat
+						}),
+						objective(4, {	-- 0/150 Kor'kron Stone
+							["provider"] = { "i", 97543 }, -- Kor'kron Stone
+						}),
+						i(97849),	-- Radical Mojo
+					},
+					["timeline"] = {
+						"added 5.3.0.16767",
+						"removed 5.4.0.17359",
 					},
 				}),
 				q(25648, {	-- Beyond Durotar
-					["provider"] = { "n", 39379 },	-- Gor the Enforcer
-					["coord"] = { 44.9, 14.7, 1 },
+					["qg"] = 39379,	-- Gor the Enforcer
+					["coord"] = { 44.9, 14.7, DUROTAR },
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(8, 5, 8),
 					["isBreadcrumb"] = true,
 					["sourceQuests"] = {
 						25236,	-- Thunder Down Under
 						25205,	-- The Wolf and The Kodo
 						25206,	-- Ignoring the Warnings
 					},
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(815,   {	-- Break a Few Eggs
-					["u"] = REMOVED_FROM_GAME,
+					["qg"] = 3191,	-- Cook Torka
+					["coord"] = { 51.11, 42.45, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3191 },	-- Cook Torka
+					["lvl"] = 6,
+					["groups"] = {
+						objective(1, {	-- 0/3 Taillasher Egg
+							["provider"] = { "i", 4890 },	-- Taillasher Egg
+						}),
+					},
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
 				}),
 				q(25167, {	-- Breaking the Chain
-					["provider"] = { "n", 3188 },	-- Master Gadrin
-					["coord"] = { 55.9, 74.8, 1 },
+					["qg"] = 3188,	-- Master Gadrin
+					["coord"] = { 55.9, 74.8, DUROTAR },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/3 Northwatch Supply Crates destroyed
+							["cr"] = 39251,	-- Northwatch Supply Crate
+						}),
+						objective(2, {	-- 0/10 Northwatch Lug slain
+							["crs"] = {
+								39245,	-- Northwatch Lug
+								39249,	-- Northwatch Lug
+							},
+						}),
+					},
 					["sourceQuests"] = {
 						25133,	-- Report to Sen'jin Village
 						25073,	-- Sen'jin Village
 					},
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
-				q(1843,  {	-- Brutal Gauntlets
-					["provider"] = { "n", 6408 },	-- Ula'elek
-					["coord"] = { 56.4, 74.4, 1 },
+				q(1843, {	-- Brutal Gauntlets
+					["qg"] = 6408,	-- Ula'elek
 					["sourceQuest"] = 1842,	-- Satyr Hooves
+					["coord"] = { 56.2, 74.4, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 20,
-					["u"] = REMOVED_FROM_GAME,
+					["groups"] = {
+						i(7129),	-- Brutal Gauntlets
+					},
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
+				}),
+				q(794, {	-- Burning Blade Medallion
+					["qg"] = 3145,	-- Zureetha Fargaze
+					["sourceQuests"] = {
+						792,	-- Vile Familiars
+						1499,	-- Vile Familiars (Part 2 - Warlocks only!)
+					},
+					["coord"] = { 42.85, 69.14, DUROTAR },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 4859, 1 },	-- Burning Blade Medallion
+					},
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(7129)),	-- Brutal Gauntlets
+						objective(1, {	-- 0/1 Burning Blade Medallion
+							["provider"] = { "i", 4859 },	-- Burning Blade Medallion
+							["cr"] = 3183,	-- Yarrog Baneshadow
+							["coord"] = { 42.8, 52.6, DUROTAR },
+						}),
+						i(4921),	-- Dust-covered Leggings
+						i(4922),	-- Jagged Chain Vest
+						i(6713),	-- Ripped Pants
+					},
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000", -- Can be wrong according to wowhead comments, but wowpedia says removed 4.0.3.
 					},
 				}),
 				q(832, {	-- Burning Shadows
-					["u"] = REMOVED_FROM_GAME,
+					["qg"] = 4903,	-- Eye of Burning Shadow
+					["coord"] = { 51.78, 9.56, DUROTAR },
+					["maps"] = { ORGRIMMAR },
+					["cr"] = 3204,	-- Gazz'uz
+					["races"] = HORDE_ONLY,
+					["lvl"] = 4,
+					["g"] = {
+						objective(1, {	-- 0/1 Eye of Burning Shadow
+							["provider"] = { "i", 4903 },	-- Eye of Burning Shadow
+						}),
+					},
+					["timeline"] = {
+						"added 1.11.1.10958",
+						"removed 4.0.3.10000",
+					},
 				}),
 				q(25924, {	-- Call of Duty
-					["provider"] = { "n", 41621 },	-- Commander Thorak
-					["coord"] = { 55.9, 12.3, 1 },
+					["qg"] = 41621,	-- Commander Thorak
+					["coord"] = { 55.9, 12.3, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						28816,	-- To the Depths
 						27718,	-- Warchief's Command: Vashj'ir!
 					},
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
-				q(791,   {	-- Carry Your Weight
-					["u"] = REMOVED_FROM_GAME,
+				q(1516, {	-- Call of Earth (1/3)
+					["qg"] = 5887,	-- Canaga Earthcaller
+					["coord"] = { 42.4, 69.0, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3147 },	-- Furl Scornbrow
+					["classes"] = { SHAMAN },
+					["altQuests"] = {
+						1519, -- Call to Earth (1/3 Mulgore)
+					},
+					["lvl"] = 4,
+					["g"] = {
+						objective(1, {	-- 0/2 Felstalker Hoof
+							["provider"] = { "i", 6640, 2 },	-- Felstalker Hoof
+							["cr"] = 3102,
+						}),
+					},
+					["timeline"] = {
+						"added 1.11.1.10958",
+						"removed 4.0.3.10000",
+					},
+				}),
+				q(1517, {	-- Call of Earth (2/3)
+					["qg"] = 5887,	-- Canaga Earthcaller
+					["sourceQuest"] = 1516,	-- Call of Earth (1/3)
+					["coord"] = { 42.4, 69.0, DUROTAR },
+					["races"] = HORDE_ONLY,
+					["classes"] = { SHAMAN },
+					["altQuests"] = {
+						1520, -- Call to Earth (2/3 Mulgore)
+					},
+					["lvl"] = 4,
+					["groups"] = {
+						objective(1, {	-- 0/1 Earth Sapta
+							["provider"] = { "i", 6635, 1 },	-- Earth Sapta
+						}),
+					},
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
+				}),
+				q(1518, {	-- Call of Earth (3/3)
+					["qg"] = 5891,	-- Minor Manifestation of Earth
+					["sourceQuest"] = 1517,	-- Call of Earth (2/3)
+					["coord"] = { 44.0, 76.0, DUROTAR },
+					["races"] = HORDE_ONLY,
+					["classes"] = { SHAMAN },
+					["altQuests"] = {
+						1521, -- Call to Earth (3/3 Mulgore)
+					},
+					["lvl"] = 4,
+					["groups"] = {
+						objective(1, {	-- 0/1 Rough Quartz
+							["provider"] = { "i", 6656, 1 },	-- Rough Quartz
+						}),
+						recipe(8071),	-- Stoneskin Totem
+						i(5175, {	-- Earth Totem
+							["description"] = "You must keep this in your bags forever.",
+						}),
+					},
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
+				}),
+				q(791, {	-- Carry Your Weight
+					["qg"] = 3147,	-- Furl Scornbrow
+					["coord"] = { 49.8, 40.4, DUROTAR },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 4870, 8 },	-- Canvas Scraps
+					},
+					["lvl"] = 4,
+					["g"] = {
+						objective(1, {	-- 0/8 Canvas Scraps
+							["provider"] = { "i", 4870, 8 },	-- Canvas Scraps
+							["crs"] = {
+								3128,	-- Kul Tiras Sailor
+								3129,	-- Kul Tiras Marine
+								3119,	-- Kolkar Drudge
+								5809,	-- Watch Commander Zalaphil
+								3120,	-- Kolkar Outrunner
+								3192,	-- Lieutenant Benedict
+								5808,	-- Warlord Kolkanis
+							},
+						}),
+						i(11845),	-- Handmade Leather Bag
+					},
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
 				}),
 				q(25170, {	-- Cleaning Up the Coastline
-					["provider"] = { "n", 10578 },	-- Bom'bay
-					["coord"] = { 55.6, 75.2, 1 },
+					["qg"] = 10578,	-- Bom'bay
+					["coord"] = { 55.6, 75.2, DUROTAR },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, { -- 0/8 Crawler Mucus
+							["provider"] = { "i", 4888 }, -- Crawler Mucus
+							["crs"] = {
+								3107,	-- Mature Surf Crawler
+								3108,	-- Encrusted Surf Crawler
+								39004,	-- Pygmy Surf Crawler
+								3106,	-- Surf Crawler
+							},
+						}),
+					},
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(840,   {	-- Conscript of the Horde
-					["provider"] = { "n", 3336 },	-- Takrin Pathseeker
-					["lvl"] = 10,
-					["coord"] = { 50.8, 43.5, 1 },
+					["qg"] = 3336,	-- Takrin Pathseeker
+					["lvl"] = lvlsquish(10, 5, 10),
+					["coord"] = { 50.8, 43.5, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/1 Recruitment Letter
+							["provider"] = { "i", 4992 },	-- Recruitment Letter
+						}),
+					},
+					["timeline"] = {
+						"added 1.11.1.25864",
+					},
 				}),
-				q(806,   {	-- Dark Storms
-					["u"] = REMOVED_FROM_GAME,
+				q(842, {	-- Crossroads Conscription
+					["qg"] = 3337,	-- Kargal Battlescar
+					["sourceQuest"] = 840,	-- Conscript of the Horde
+					["coord"] = { 62.26, 19.37, THE_BARRENS },
+					["maps"] = { DUROTAR, THE_BARRENS },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3142 },	-- Orgnil Soulscar
+					["lvl"] = 10,
+					["groups"] = {
+						objective(1, {	-- 0/1 Signed Recruitment Letter
+							["provider"] = { "i", 4995 },	-- Signed Recruitment Letter
+						}),
+					},
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
+				}),
+				q(788, {	-- Cutting Teeth
+					["qg"] = 3143,	-- Gornek
+					["sourceQuest"] = 4641,	-- Your Place In The World
+					["coord"] = { 42.06, 68.33, DUROTAR },
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						objective(1, {	-- 0/8 Mottled Boar
+							["cr"] = 3098, -- Mottled Boar
+						}),
+						i(4915),	-- Soft Wool Boots
+						i(4914),	-- Battleworn Leather Gloves
+					},
+					["timeline"] = {
+						"added 1.11.1.10676",
+						"removed 4.0.3.10000",
+					},
+				}),
+				q(806, {	-- Dark Storms
+					["qg"] = 3142,	-- Orgnil Soulscar
 					["sourceQuest"] = 823,	-- Report to Orgnil
+					["coord"] = { 52.2, 43.2, DUROTAR },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 4,
+					["g"] = {
+						objective(1, {	-- 0/1 Fizzle's Claw
+							["provider"] = { "i", 4869, 1 },	-- Fizzle's Claw
+							["cr"] = 3203,	-- Fizzle Darkstorm
+							["coord"] = { 42.6, 26.4, DUROTAR },
+						}),
+						i(4942),	-- Tiger Hide Boots
+					},
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
 				}),
 				q(25444, {	-- Da Perfect Spies
-					["u"] = REMOVED_FROM_GAME,
+					["timeline"] = {
+					"added 3.3.3.11573",
+					"removed 4.0.1.10000",
+					},
 				}),
 				q(25480, {	-- Dance Of De Spirits
-					["u"] = REMOVED_FROM_GAME,
 					["sourceQuest"] = 25470,	-- Lady Of Da Tigers
+					["g"] = {
+						i(54653),	-- Darkspear Pride (TOY!)
+					},
+					["timeline"] = {
+						"added 3.3.3.11573",
+						"removed 4.0.1.10000",
+					},
 				}),
 				q(40607, {	-- Demons Among Us
-					["provider"] = { "n", 100873 },	-- Allari the Souleater
-					["lvl"] = 98,
-					["coord"] = { 45.8, 15.1, 1 },
+					["qg"] = 100873,	-- Allari the Souleater
+					["lvl"] = lvlsquish(98, 10, 98),
+					["coord"] = { 45.8, 15.1, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["classes"] = exclude(DEMONHUNTER, ALL_CLASSES),
 					["sourceQuests"] = { 40760 },	-- Emissary
@@ -136,402 +468,1335 @@ _.Zones =
 						i(138776),	-- Accolade of the Banshee Queen
 						i(138775),	-- Token of the Banshee Queen
 					},
+					["timeline"] = {
+						"added 7.0.3.21655",
+					},
 				}),
 				q(40983, {	-- Demons Among Them
-					["provider"] = { "n", 100873 },	-- Allari the Souleater
-					["lvl"] = 98,
-					["coord"] = { 45.8, 15.1, 1 },
+					["qg"] = 100873,	-- Allari the Souleater
+					["lvl"] = lvlsquish(98, 10, 98),
+					["coord"] = { 45.8, 15.1, DUROTAR },
 					["races"] = { BLOODELF },
 					["classes"]= { DEMONHUNTER },
 					["sourceQuests"] = { 40982 },	-- Second Sight
 					["g"] = {
 						i(129104),	-- Brand of the Banshee Queen
 					},
+					["timeline"] = {
+						"added 7.0.1.20796",
+					},
+				}),
+				q(1463, {	-- Earth Sapta
+					["qg"] = 5887,	-- Canaga Earthcaller
+					["sourceQuest"] = 1516,	-- Call of Earth (1/3)
+					["coord"] = { 42.4, 69.0, DUROTAR },
+					["races"] = HORDE_ONLY,
+					["classes"] = { SHAMAN },
+					["repeatable"] = true,
+					["altQuests"] = {
+						1462, -- Earth Sapta (Mulgore)
+					},
+					["groups"] = {
+						i(6635),	-- Earth Sapta
+					},
+					["lvl"] = 4,
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
 				}),
 				q(40760, {	-- Emissary
 					["provider"] = { "n", 100866 },	-- Lady Sylvanas Windrunner
-					["lvl"] = 98,
-					["coord"] = { 45.6, 15.8, 1 },
+					["lvl"] = lvlsquish(98, 10, 98),
+					["coord"] = { 45.6, 15.8, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 40522 },	-- Fate of the Horde
+					["timeline"] = {
+						"added 7.0.3.21655",
+					},
 				}),
-				q(837,   {	-- Encroachment
-					["u"] = REMOVED_FROM_GAME,
+				q(837, {	-- Encroachment
+					["qg"] = 3139,	-- Gar'Thok
+					["coord"] = { 52, 43.4, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3139 },	-- Gar'Thok
+					["lvl"] = 6,
+					["groups"] = {
+						objective(1, {	-- 0/4 Razormane Quilboar
+							["cr"] = 3111,	-- Razormane Quilboar
+						}),
+						objective(2, {	-- 0/4 Razormane Scout
+							["cr"] = 3112,	-- Razormane Scout
+						}),
+						objective(3, {	-- 0/4 Razormane Dustrunner
+							["cr"] = 3113,	-- Razormane Dustrunner
+						}),
+						objective(4, {	-- 0/4 Razormane Battleguard
+							["cr"] = 3114,	-- Razormane Battleguard
+						}),
+					},
+					["timeline"] = {
+						"added 1.11.1.10772",
+					},
+				}),
+				q(3088, {	-- Encrypted Parchment
+					["qg"] = 3143,	-- Gornek
+					["sourceQuest"] = 788,	-- Cutting Teeth
+					["coord"] = { 42.06, 68.33, DUROTAR },
+					["races"] = { ORC },
+					["classes"] = { ROGUE },
+					["groups"] = {
+						objective(1, {	-- 0/1 Encrypted Parchment
+							["provider"] = { "i", 9560, 1 },	-- Encrypted Parchment
+						}),
+					},
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
+				}),
+				q(3083, {	-- Encrypted Tablet
+					["qg"] = 3143,	-- Gornek
+					["sourceQuest"] = 788,	-- Cutting Teeth
+					["coord"] = { 42.06, 68.33, DUROTAR },
+					["races"] = { TROLL },
+					["classes"] = { ROGUE },
+					["groups"] = {
+						objective(1, {	-- 0/1 Encrypted Tablet
+							["provider"] = { "i", 9554, 1 },	-- Encrypted Tablet
+						}),
+					},
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
+				}),
+				q(3087, {	-- Etched Parchment
+					["qg"] = 3143,	-- Gornek
+					["sourceQuest"] = 788,	-- Cutting Teeth
+					["coord"] = { 42.06, 68.33, DUROTAR },
+					["races"] = { ORC },
+					["classes"] = { HUNTER },
+					["groups"] = {
+						objective(1, {	-- 0/1 Etched Parchment
+							["provider"] = { "i", 9553, 1 },	-- Etched Parchment
+						}),
+					},
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
+				}),
+				q(3082, {	-- Etched Tablet
+					["qg"] = 3143,	-- Gornek
+					["sourceQuest"] = 788,	-- Cutting Teeth
+					["coord"] = { 42.06, 68.33, DUROTAR },
+					["races"] = { TROLL },
+					["classes"] = { HUNTER },
+					["groups"] = {
+						objective(1, {	-- 0/1 Etched Tablet
+							["provider"] = { "i", 9564, 1 },	-- Etched Tablet
+						}),
+					},
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
 				}),
 				q(25176, {	-- Exploiting the Situation
-					["provider"] = { "n", 39423 },	-- Gail Nozzywig
-					["coord"] = { 53.0, 43.1, 1 },
+					["qg"] = 39423,	-- Gail Nozzywig
+					["coord"] = { 53.0, 43.1, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25171,	-- Riding On
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(40522, {	-- Fate of the Horde
-					["provider"] = { "n", 100453 },	-- Eitrigg
-					["lvl"] = 98,
-					["coord"] = { 57.2, 10.5, 1 },
+					["qg"] = 100453,	-- Eitrigg
+					["lvl"] = lvlsquish(98, 10, 98),
+					["coord"] = { 57.2, 10.5, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 40518 },	-- The Battle for Broken Shore
+					["timeline"] = {
+						"added 7.0.3.21655",
+					},
+				}),
+				q(813, {	-- Finding the Antidote
+					["qg"] = 3189,	-- Kor'ghan
+					["coord"] = { 47, 53.4, ORGRIMMAR },
+					["maps"] = { ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/4 Venomtail Poison Sac
+							["provider"] = { "i", 4886, 4 },	-- Venomtail Poison Sac
+							["crs"] = {
+								3226,	-- Corrupted Scorpid
+								5823,	-- Death Flayer
+								3127,	-- Venomtail Scorpid
+							},
+						}),
+						i(4904),	-- Venomtail Antidote
+					},
+					["lvl"] = 7,
+					["timeline"] = {
+						"added 1.11.1.10958",
+						"removed 4.0.3.10000",
+					},
 				}),
 				q(25260, {	-- Fizzled
-					["provider"] = { "n", 39379 },	-- Gor the Enforcer
-					["coord"] = { 44.9, 14.7, 1 },
+					["qg"] = 39379,	-- Gor the Enforcer
+					["coord"] = { 44.9, 14.7, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25196,	-- The Dranosh'ar Blockade
 					["g"] = {
+						objective(1, {	-- 0/1 Fizzle's Orb
+							["provider"] = { "i", 52580 },	-- Fizzle's Orb
+						}),
 						i(53369),	-- Fizzle's Gloves
 						i(53366),	-- Enforcer's Gloves
 						i(131413),	-- Gor's Re-Inforced Gloves
 					},
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
+				}),
+				q(926, {	-- Flawed Power Stone
+					["provider"] = { "o", 5620 },	-- Flawed Power Stones
+					["coord"] = { 62.4, 20, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
+					["g"] = {
+						{
+							["itemID"] = 4986,	-- Flawed Power Stone
+							["questID"] = 924,	-- The Demon Seed
+						},
+					},
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
 				}),
 				q(25446, {	-- Frogs Away!
-					["u"] = REMOVED_FROM_GAME,
 					["sourceQuest"] = 25444,	-- Da Perfect Spies
+					["g"] = {
+						i(53637),	-- Sack o' Frogs
+					},
+					["timeline"] = {
+						"added 3.3.3.11573",
+					},
 				}),
 				q(25173, {	-- From Bad to Worse
 					["provider"] = { "n", 3139 },	-- Gar'Thok
 					["lvl"] = 4,
-					["coord"] = { 51.9, 43.4, 1 },
+					["coord"] = { 51.9, 43.4, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25171,	-- Riding On
+					["groups"] = {
+						objective(1, {	-- 0/6 Northwatch Marine <Northwatch Expeditionary Force>
+							["cr"] = 39267,	-- Northwatch Marine <Northwatch Expeditionary Force>
+						}),
+						objective(2, {	-- 0/6 Northwatch Sharpshooter <Northwatch Expeditionary Force>
+							["cr"] = 39268,	-- Northwatch Sharpshooter <Northwatch Expeditionary Force>
+						}),
+						objective(3, {	-- 0/1 Lieutenant Palliter <Northwatch Expeditionary Force>
+							["cr"] = 39269,	-- Lieutenant Palliter <Northwatch Expeditionary Force>
+						}),
+					},
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
-				q(825,   {	-- From The Wreckage...
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3139 },	-- Gar'Thok
+				q(825, {	-- From The Wreckage....
+					["qg"] = 3139,	-- Gar'Thok
 					["sourceQuest"] = 784,	-- Vanquish the Betrayers
-				}),
-				q(5648,  {	-- Garments of Spirituality
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 3706 },	-- Tai'jin
-					["races"] = { TROLL },
-					["classes"] = { PRIEST },
+					["coord"] = { 52, 43.4, DUROTAR },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 3,
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(16606)),	-- Juju Hex Robes
+						objective(1, {	-- 0/3 Gnomish Tools
+							["provider"] = { "i", 4863, },	-- Gnomish Tools
+						}),
+						i(4936),	-- Dirt-trodden Boots
+						i(4928),	-- Sandrunner Wristguards
+						i(4935),	-- Wide Metal Girdle
+					},
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
+				}),
+				q(4402, {	-- Galgar's Cactus Apple Surprise
+					["qg"] = 9796,	-- Galgar
+					["sourceQuest"] = 788,	-- Cutting Teeth
+					["coord"] = { 42.73, 67.23, DUROTAR },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/10 Cactus Apple
+							["provider"] = { "i", 11583, },	-- Cactus Apple
+						}),
+					},
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
+				}),
+				q(1506, {	-- Gan'rul's Summons
+					["qg"] = 3294,	-- Ophek
+					["coord"] = { 54.2, 41.2, DUROTAR },
+					["races"] = { ORC, TROLL, UNDEAD },
+					["classes"] = { WARLOCK },
+					["altQuests"] = {
+						1478,	-- Halgar's Summons
+					},
+					["lvl"] = 10,
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
+				}),
+				q(5648, {	-- Garments of Spirituality
+					["qg"] = 3706,	-- Tai'jin
+					["sourceQuest"] = 5649,	-- In Favor of Spirituality
+					["coord"] = { 54.2, 42.8, DUROTAR },
+					["classes"] = { PRIEST },
+					["races"] = { TROLL },
+					["lvl"] = 5,
+					["groups"] = {
+						i(16606),	-- Juju Hex Robes
+					},
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
 					},
 				}),
 				q(25259, {	-- Gaur Icehorn
-					["provider"] = { "n", 39590 },	-- Spiketooth
-					["coord"] = { 58.7, 23.1, 1 },
+					["qg"] = 39590,	-- Spiketooth
+					["coord"] = { 58.7, 23.1, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 25256	-- Sent for Help
+					["sourceQuest"] = 25256,	-- Sent for Help
+					["groups"] = {
+						objective(1, {	-- 0/1 Gaur Icehorn
+							["cr"] = 39352,	-- Gaur Icehorn
+						}),
+					},
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(25257, {	-- Ghislania
-					["provider"] = { "n", 39590 },	-- Spiketooth
-					["coord"] = { 58.7, 23.1, 1 },
+					["qg"] = 39590,	-- Spiketooth
+					["coord"] = { 58.7, 23.1, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 25256	-- Sent for Help
+					["sourceQuest"] = 25256,	-- Sent for Help
+					["groups"] = {
+						objective(1, {	-- 0/1 Ghislania
+							["cr"] = 39351,	-- Ghislania
+						}),
+					},
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
+				}),
+				q(3086, {	-- Glyphic Tablet
+					["qg"] = 3143,	-- Gornek
+					["sourceQuest"] = 788,	-- Cutting Teeth
+					["coord"] = { 42.0, 68.4, DUROTAR },
+					["classes"] = { MAGE },
+					["races"] = { TROLL },
+					["groups"] = {
+						objective(1, {	-- 0/1 Glyphic Tablet
+							["provider"] = { "i", 9575, },	-- Glyphic Tablet
+						}),
+					},
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
 				}),
 				q(25258, {	-- Griswold Hanniston
-					["provider"] = { "n", 39590 },	-- Spiketooth
-					["coord"] = { 58.7, 23.1, 1 },
+					["qg"] = 39590,	-- Spiketooth
+					["coord"] = { 58.7, 23.1, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 25256	-- Sent for Help
+					["sourceQuest"] = 25256,	-- Sent for Help
+					["groups"] = {
+						objective(1, {	-- 0/1 Griswold Hanniston
+							["cr"] = 39353,	-- Griswold Hanniston
+						}),
+					},
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
+				}),
+				q(3085, {	-- Hallowed Tablet
+					["qg"] = 3143,	-- Gornek
+					["sourceQuest"] = 788,	-- Cutting Teeth
+					["coord"] = { 42.0, 68.4, DUROTAR },
+					["classes"] = { PRIEST },
+					["races"] = { TROLL },
+					["groups"] = {
+						objective(1, {	-- 0/1 Hallowed Tablet
+							["provider"] = { "i", 9561, },	-- Hallowed Tablet
+						}),
+					},
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
 				}),
 				q(25206, {	-- Ignoring the Warnings
-					["provider"] = { "n", 39379 },	-- Gor the Enforcer
+					["qg"] = 39379,	-- Gor the Enforcer
 					["lvl"] = 8,
-					["coord"] = { 44.9, 14.7, 1 },
+					["coord"] = { 44.9, 14.7, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25205,	-- The Wolf and The Kodo
 					["g"] = {
+						objective(1, {	-- 0/12 Warring Elementals
+							["crs"] = {
+								39595,	-- Furious Earthguard
+								39596,	-- Teeming Waterguard
+							},
+						}),
 						i(53368),	-- Feckless Armbands
 						i(53374),	-- Heedless Treads
 						i(131410),	-- Bindings of Disregard
 					},
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(29690, {	-- Into the Mists
-					["provider"] = { "n", 55054 },	-- General Nazrim
-					["lvl"] = 80,
-					["coord"] = { 61.2, 44.6, 1 },
+					["qg"] = 55054,	-- General Nazrim
+					["lvl"] = lvlsquish(80, 10, 80),
+					["coord"] = { 61.2, 44.6, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 31853,	-- All Aboard!
+					["timeline"] = {
+						"added 5.0.1.15589",
+					},
+				}),
+				q(5649, {	-- In Favor of Spirituality
+					["qg"] = 3707,	-- Ken'jai
+					["coord"] = { 42.4, 68.8, DUROTAR },
+					["classes"] = { PRIEST },
+					["races"] = { TROLL },
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
 				}),
 				q(31012, {	-- Joining the Horde
-					["provider"] = { "n", 60570 },	-- Ji Firepaw
-					["coord"] = { 45.6, 12.6, 1 },
+					["qg"] = 60570,	-- Ji Firepaw
+					["coord"] = { 45.6, 12.6, DUROTAR },
 					["races"] = { PANDAREN_NEUTRAL },
+					["timeline"] = {
+						"added 5.0.1.15589",
+						"removed 4.0.3.10000",
+					},
 				}),
 				q(1884, {	-- Ju-Ju Heaps
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
+					["qg"] = 5880,	-- Un'Thuwa <Mage Trainer>
+					["sourceQuests"] = {
+						1881,	-- Speak with Anastasia
+						1883,	-- Speak with Un'thuwa
+					},
+					["coord"] = { 56.2, 75.0, DUROTAR },
+					["races"] = { UNDEAD, TROLL },
 					["classes"] = { MAGE },
-					["g"] = {
-						i(9513),	-- Ley Staff
+					["lvl"] = 10,
+					["groups"] = {
 						i(7508),	-- Ley Orb
+						i(9513),	-- Ley Staff
+					},
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
 					},
 				}),
 				q(40605, {	-- Keep Your Friends Close
-					["coord"] = { 45.6, 15.9, 1 },
-					["provider"] = { "n", 101035 },	-- Lady Sylvanas Windrunner
+					["coord"] = { 45.6, 15.9, DUROTAR },
+					["qg"] = 101035,	-- Lady Sylvanas Windrunner
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						40607,	-- Demons Among Us
 						40983,	-- Demons Among Them
 					},
+					["timeline"] = {
+						"added 7.0.1.20796",
+					},
 				}),
 				q(25470, {	-- Lady Of Da Tigers
-					["u"] = REMOVED_FROM_GAME,
 					["sourceQuest"] = 25446,	-- Frogs Away!
+					["timeline"] = {
+						"added 3.3.3.11573",
+						"removed 4.0.1.10000",
+					},
+				}),
+				q(5441, {	-- Lazy Peons
+					["qg"] = 11378,	-- Foreman Thazz'ril
+					["coord"] = { 44.62, 68.65, DUROTAR },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/5 Peons Awoken
+							["provider"] = { "i", 16114 },	-- Foreman's Blackjack
+							["cr"] = 10556,	-- Lazy Peon
+						}),
+					},
+					["lvl"] = 3,
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
 				}),
 				q(32671, {	-- Learn To Ride
-					["lvl"] = 10,
+					["lvl"] = lvlsquish(20, 10, 20),
 					["races"] = { TROLL },
 					["description"] = "This quest is available to Trolls upon reaching level 10.",
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
+					["timeline"] = {
+						"added 5.2.0.16486",
+					},
 				}),
 				q(14088, {	-- Learn to Ride in Durotar
-					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
-					["provider"] = { "i", 46883 },	-- Riding Trainer Pamphlet
+					["qg"] = 46883,	-- Riding Trainer Pamphlet
+					["timeline"] = {
+						"added 3.3.0.10958",
+						"removed 4.0.1.10000",
+					},
 				}),
 				q(25179, {	-- Loss Reduction
-					["provider"] = { "n", 39270 },	-- Injured Razor Hill Grunt
+					["qg"] = 39270,	-- Injured Razor Hill Grunt
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25173,	-- From Bad to Worse
 					["description"] = "Talk to an Injured Razor Hill Grunt on the beach.",
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
-				q(816,   {	-- Lost But Not Forgotten
-					["u"] = REMOVED_FROM_GAME,
+				q(816, {	-- Lost But Not Forgotten
+					["qg"] = 3193,	-- Misha Tor'kren
+					["coord"] = { 43.10, 30.24, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3193 },	-- Misha Tor'kren
+					["groups"] = {
+						objective(1, {	-- 0/1 Kron's Amulet
+							["provider"] = { "i", 4891 },	-- Kron's Amulet
+							["crs"] = {
+								3110,	-- Dreadmaw Crocolisk
+								3231,	-- Corrupted Dreadmaw Crocolisk
+							},
+						}),
+						i(4944),	-- Handsewn Cloak
+					},
+					["lvl"] = 8,
+					["timeline"] = {
+						"added 1.11.1.10958",
+						"removed 4.0.3.10000",
+					},
 				}),
 				q(25193, {	-- Lost But Not Forgotten
-					["provider"] = { "n", 3193 },	-- Misha Tor'kren
-					["coord"] = { 43.3, 30.6, 1 },
+					["qg"] = 3193,	-- Misha Tor'kren
+					["coord"] = { 43.3, 30.6, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25187,	-- Lost in the Floods
+					["groups"] = {
+						objective(1, {	-- 0/250 Durotar Crocolisk Tooth
+							["provider"] = { "i", 60615 },	-- Durotar Crocolisk Tooth
+							["crs"] = {
+								39452,	-- Dreadmaw Toothgnasher
+								3110,	-- Dreadmaw Crocolisk
+							},
+						}),
+					},
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(25187, {	-- Lost in the Floods
-					["provider"] = { "n", 39323 },	-- Gail Nozzywig
-					["coord"] = { 49.5, 40.1, 1 },
+					["qg"] = 39323,	-- Gail Nozzywig
+					["coord"] = { 49.5, 40.1, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25227,	-- Thonk
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(39698, {	-- Making the Rounds
-					["provider"] = { "n", 96686 },	-- Lady Sylvanas Windrunner
-					["lvl"] = 98,
-					["coord"] = { 61.3, 8.8, 1 },
+					["qg"] = 96686,	-- Lady Sylvanas Windrunner
+					["lvl"] = lvlsquish(98, 10, 98),
+					["coord"] = { 61.3, 8.8, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 38307 },	-- The Warchief Beckons
+					["timeline"] = {
+						"added 7.0.1.20796",
+					},
 				}),
-				q(828,   {	-- Margoz
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3142 },	-- Orgnil Soulscar
+				q(828, {	-- Margoz
+					["qg"] = 3142,	-- Orgnil Soulscar
 					["sourceQuest"] = 806,	-- Dark Storms
+					["coord"] = { 52.2, 43.2, DUROTAR },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 4,
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
 				}),
 				q(25261, {	-- Margoz
-					["provider"] = { "n", 39379 },	-- Gor the Enforcer
-					["coord"] = { 44.9, 14.7, 1 },
+					["qg"] = 39379,	-- Gor the Enforcer
+					["coord"] = { 44.9, 14.7, DUROTAR },
 					["sourceQuest"] = 25260,	-- Fizzled
 					["races"] = { ORC, TROLL, MAGHAR },
+					["timeline"] = {
+						"added 4.0.3.13277"
+					},
 				}),
 				q(6365,  {	-- Meats to Orgrimmar
-					["provider"] = { "n", 3881 },	-- Grimtak
-					["coord"] = { 50.7, 42.8, 1 },
+					["qg"] = 3881,	-- Grimtak
+					["coord"] = { 50.7, 42.8, DUROTAR },
 					["races"] = { ORC, TROLL, MAGHAR },
+					["timeline"] = {
+						"added 1.11.1.10772",
+					},
 				}),
-				q(25267, {	-- Message for Saurfang
-					["coord"] = { 57.6, 9.6, 1 },
+				q(25267, {	-- Message for Garrosh (Cata) / Vol'jin (WoD) / Saurfang (Legion) <-- Need more work
+					["coord"] = { 57.6, 9.6, DUROTAR },
 					["races"] = { GOBLIN },
 					["sourceQuest"] = 25266,	-- Warchief's Emissary
-					["providers"] = {
-						{ "n", 86884 },	-- Darkspear Loyalist
-						{ "n", 39609 },	-- Kor'kron Loyalist
+					["timeline"] = {
+						"added 4.0.3.13277",
 					},
-					["g"] = {
-						i(118217),	-- Staff of Dubious Pacts
-						i(118219),	-- Harness of Forward Directions
-						i(131898),	-- Chestguard of Forward Directions
-						i(118218),	-- Girdle of Common Causes
-						un(REMOVED_FROM_GAME, i(67154)),	-- Staff of the Unwelcome
-						un(REMOVED_FROM_GAME, i(67157)),	-- Harness of Binding
-						un(REMOVED_FROM_GAME, i(67156)),	-- Girdle of Servitude
+					["providers"] = {
+						{ "n", 39609 },	-- Kor'kron Loyalist (Cata)
+						{ "n", 86884 },	-- Darkspear Loyalist (Wod, Legion)
+					},
+					["groups"] = {
+						i(67154, {	-- Staff of the Unwelcome
+							["timeline"] = {	-- (Cata)
+								"added 4.0.3.13277",
+								"removed 6.0.2.10000",
+							},
+						}),
+						i(67157, {	-- Harness of Binding
+							["timeline"] = {	-- (Cata)
+								"added 4.0.3.13277",
+								"removed 6.0.2.10000",
+							},
+						}),
+						i(67156, {	-- Girdle of Servitude
+							["timeline"] = {	-- (Cata)
+								"added 4.0.3.13277",
+								"removed 6.0.2.10000",
+							},
+						}),
+						i(118217, {	-- Staff of Dubious Pacts
+							["timeline"] = {	-- (WoD)
+								"added 6.0.2.10000",
+							},
+						}),
+						i(118219, {	-- Harness of Forward Directions
+							["timeline"] = {	-- (WoD)
+								"added 6.0.2.10000",
+							},
+						}),
+						i(118218, {	-- Girdle of Common Causes
+							["timeline"] = {	-- (WoD)
+								"added 6.0.2.10000",
+							},
+						}),
+						i(131898, {	-- Chestguard of Forward Directions
+							["timeline"] = {	-- (WoD)
+								"added 7.0.3.10000",
+							},
+						}),
 					},
 				}),
 				q(808,   {	-- Minshina's Skull
-					["u"] = REMOVED_FROM_GAME,
+					["qg"] = 3188,	-- Master Gadrin
+					["sourceQuest"] = 805,	-- Report to Sen'jin Village
+					["coord"] = { 55.95, 74.72, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3188 },	-- Master Gadrin
+					["lvl"] = 4,
+					["g"] = {
+						objective(1, {	-- 0/1 Minshina's Skull
+							["provider"] = { "i", 4864 },	-- Minshina's Skull
+							["coord"] = { 67.4, 87.7, DUROTAR },
+						}),
+						i(4945),	-- Faintly Glowing Skull
+					},
+					["timeline"] = {
+						"added 1.11.1.10958",
+						"removed 4.0.3.10000",
+					},
 				}),
-				q(812,   {	-- Need for a Cure
-					["u"] = REMOVED_FROM_GAME,
+				q(812, {	-- Need for a Cure
+					["qg"] = 3190,	-- Rhinag
+					["coord"] = { 41.54, 18.61, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3190 },	-- Rhinag
+					["cost"] = {
+						{ "i", 4904, 1 },	-- Venomtail Antidote
+					},
+					["lvl"] = 7,
+					["g"] = {
+						i(4937),	-- Charging Buckler
+						i(4929),	-- Light Scorpid Armor
+					},
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
 				}),
-				q(829,   {	-- Neeru Fireblade
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3208 },	-- Margoz
+				q(829, {	-- Neeru Fireblade
+					["qg"] = 3208,	-- Margoz
 					["sourceQuest"] = 827,	-- Skull Rock
+					["coord"] = { 56.41, 20.05, DUROTAR },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 4,
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
+					["groups"] = {
+						objective(1, {	-- 0/1 Example Collar
+							["provider"] = { "i", 6658 },	-- Example Collar
+						}),
+					},
 				}),
 				q(25165, {	-- Never Trust a Big Barb and a Smile
-					["provider"] = { "n", 10578 },	-- Bom'bay
-					["coord"] = { 55.7, 75.3, 1 },
+					["qg"] = 10578,	-- Bom'bay
+					["coord"] = { 55.7, 75.3, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25170,	-- Cleaning up the Coastline
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
+					["groups"] = {
+						objective(1, {	-- 0/6 Sample of Scorpid Venom Collected
+							["provider"] = { "i", 52505},	-- Poison Extraction Totem
+						}),
+					},
 				}),
-				q(817,   {	-- Practical Prey
-					["u"] = REMOVED_FROM_GAME,
+				q(817, {	-- Practical Prey
+					["qg"] = 3194,	-- Vel'rin Fang
+					["coord"] = { 55.95, 73.92, DUROTAR },
+					["cr"] = 3121,	-- Durotar Tiger
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3194 },	-- Vel'rin Fang
+					["lvl"] = 5,
+					["timeline"] = {
+						"added 1.11.1.10958",
+						"removed 4.0.3.10000",
+					},
+					["groups"] = {
+						objective(1, {	-- 0/4 Durotar Tiger Fur
+							["provider"] = { "i", 4892 },	-- Durotar Tiger Fur
+						}),
+					},
 				}),
 				q(25495, {	-- Preparin' For Battle
-					["u"] = REMOVED_FROM_GAME,
 					["sourceQuest"] = 25461,	-- Trollin' For Volunteers
+					["timeline"] = {
+						"added 3.3.3.11573",
+						"removed 4.0.1.10000",
+					},
 				}),
 				q(25168, {	-- Purge the Valley
-					["provider"] = { "n", 3188 },	-- Master Gadrin
-					["coord"] = { 55.9, 74.7, 1 },
+					["qg"] = 3188,	-- Master Gadrin
+					["coord"] = { 55.9, 74.7, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25167,	-- Breaking the Chain
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
+					["groups"] = {
+						objective(1, {	-- 0/12 Northwatch Troops
+							["crs"] = {
+								39260,	-- Northwatch Infantryman <Northwatch Expeditionary Force>
+								39261,	-- Northwatch Ranger <Northwatch Expeditionary Force>
+								39262,	-- Northwatch Troop
+							},
+						}),
+					},
 				}),
 				q(25192, {	-- Raggaran's Fury
-					["provider"] = { "n", 39326 },	-- Raggaran
-					["coord"] = { 42.6, 49.8, 1 },
+					["qg"] = 39326,	-- Raggaran
+					["coord"] = { 42.6, 49.8, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25190,	-- Raggaran's Rage
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
+					["groups"] = {
+						objective(1, {	-- 0/5 Razormane Dustrunner
+							["cr"] = 3113,	-- Razormane Dustrunner
+						}),
+						objective(2, {	-- 0/5 Razormane Battleguard
+							["cr"] = 3114,	-- Razormane Battleguard
+						}),
+					},
 				}),
 				q(25190, {	-- Raggaran's Rage
-					["provider"] = { "n", 39326 },	-- Raggaran
-					["coord"] = { 42.6, 49.8, 1 },
+					["qg"] = 39326,	-- Raggaran
+					["coord"] = { 42.6, 49.8, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25187,	-- Lost in the Floods
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
+					["groups"] = {
+						objective(1, {	-- 0/4 Razormane Quilboar
+							["cr"] = 3111,	-- Razormane Quilboar
+						}),
+						objective(2, {	-- 0/4 Razormane Scout
+							["cr"] = 3112,	-- Razormane Scout
+						}),
+					},
 				}),
-				q(823,   {	-- Report to Orgnil
-					["u"] = REMOVED_FROM_GAME,
+				q(823, {	-- Report to Orgnil
+					["qg"] = 3188,	-- Master Gadrin
+					["sourceQuest"] = 805,	-- Report to Sen'jin Village
+					["coord"] = { 56, 74.6, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3188 },	-- Master Gadrin
+					["lvl"] = 4,
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
 				}),
 				q(26806, {	-- Reports to Orgrimmar
-					["provider"] = { "n", 3139 },	-- Gar'Thok
-					["coord"] = { 51.8, 43.4, 1 },
+					["qg"] = 3139,	-- Gar'Thok
+					["coord"] = { 51.8, 43.4, DUROTAR },
 					["races"] = { GOBLIN },
 					["sourceQuest"] = 26804,	-- Flight to Razor Hill
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
+					["groups"] = {
+						objective(1, {	-- 0/1 Gar'Thok's Reports
+							["provider"] = { "i", 60370 },	-- Gar'Thok's Reports
+						}),
+					},
 				}),
 				q(26807, {	-- Return to Eitrigg
 					["provider"] = { "n", 41140 },	-- Burok
-					["coord"] = { 53.0, 43.6, 1 },
+					["coord"] = { 53.0, 43.6, DUROTAR },
 					["races"] = { GOBLIN },
 					["sourceQuest"] = 26806,	-- Reports to Orgrimmar
 				}),
+				q(805, {	-- Report to Sen'jin Village
+					["qg"] = 3145,	-- Zureetha Fargaze
+					["sourceQuest"] = 794,	-- Burning Blade Medallion
+					["coord"] = { 42.8, 69, DUROTAR },
+					["races"] = HORDE_ONLY,
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
+				}),
 				q(25171, {	-- Riding On
-					["provider"] = { "n", 3188 },	-- Master Gadrin
-					["coord"] = { 55.9, 74.7, 1 },
+					["qg"] = 3188,	-- Master Gadrin
+					["coord"] = { 55.9, 74.7, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						25165,	-- Never Trust a Big Barb and a Smile
 						25168,	-- The War of Northwatch Aggression
 						25169,	-- Purge the Valley
 					},
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(6384,  {	-- Ride to Orgrimmar
-					["provider"] = { "n", 41140 },	-- Burok
-					["coord"] = { 53.0, 43.6, 1 },
+					["qg"] = 41140,	-- Burok
+					["coord"] = { 53.0, 43.6, DUROTAR },
 					["sourceQuest"] = 6365,	-- Meats to Orgrimmar
 					["races"] = { ORC, TROLL, MAGHAR },
+					["timeline"] = {
+						"added 1.11.1.10772",
+					},
+					["groups"] = {
+						objective(1, {	-- 0/1 Grimtak's Meats
+							["provider"] = { "i", 16306 },	-- Grimtak's Meats
+						}),
+					},
 				}),
-				q(1842,  {	-- Satyr Hooves
-					["provider"] = { "n", 6408 },	-- Ula'elek
-					["coord"] = { 56.4, 74.4, 1 },
+				q(3089, {	-- Rune-Inscribed Parchment
+					["qg"] = 3143,	-- Gornek
+					["sourceQuest"] = 788,	-- Cutting Teeth
+					["coord"] = { 42.06, 68.33, DUROTAR },
+					["races"] = { ORC },
+					["classes"] = { SHAMAN },
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
+					["groups"] = {
+						objective(1, {	-- 0/1 Rune-Inscribed Parchment
+							["provider"] = { "i", 9568 },	-- Rune-Inscribed Parchment
+						}),
+					},
+				}),
+				q(3084, {	-- Rune-Inscribed Tablet
+					["qg"] = 3143,	-- Gornek
+					["sourceQuest"] = 788,	-- Cutting Teeth
+					["coord"] = { 42.06, 68.33, DUROTAR },
+					["races"] = { TROLL },
+					["classes"] = { SHAMAN },
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
+					["groups"] = {
+						objective(1, {	-- 0/1 Rune-Inscribed Tablet
+							["provider"] = { "i", 9562 },	-- Rune-Inscribed Tablet
+						}),
+					},
+				}),
+				q(790, {	-- Sarkoth (1/2)
+					["qg"] = 3287,	-- Hana'zua
+					["coord"] = { 40.60, 62.60, DUROTAR },
+					["races"] = HORDE_ONLY,
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
+					["groups"] = {
+						objective(1, {	-- 0/1 Sarkoth's Mangled Claw
+							["provider"] = { "i", 4905 },	-- Sarkoth's Mangled Claw
+							["cr"] = 3281,	-- Sarkoth
+							["coord"] = { 40.6, 66.6, DUROTAR },
+						}),
+					},
+				}),
+				q(804, {	-- Sarkoth (2/2)
+					["qg"] = 3287,	-- Hana'zua
+					["sourceQuest"] = 790,	-- Sarkoth (1/2)
+					["coord"] = { 40.60, 62.60, DUROTAR },
+					["races"] = HORDE_ONLY,
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
+				}),
+				q(1842, {	-- Satyr Hooves
+					["qg"] = 6408,	-- Ula'elek
 					["sourceQuest"] = 1839,	-- Ula'elek and the Brutal Gauntlets
+					["coord"] = { 56.2, 74.4, DUROTAR },
+					["maps"] = { ASHENVALE },
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 20,
-					["u"] = REMOVED_FROM_GAME,
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
+					["groups"] = {
+						objective(1, {	-- 0/7 Uncloven Satyr Hoof
+							["provider"] = { "i", 7128 },	-- Uncloven Satyr Hoof
+							["crs"] = {
+								3771,	-- Bleakheart Hellcaller
+								3770,	-- Bleakheart Shadowstalker
+								3767,	-- Bleakheart Trickster
+								3765,	-- Bleakheart Satyr
+								3755,	-- Xavian Felsworn
+								3754,	-- Xavian Betrayer
+								3757,	-- Xavian Hellcaller
+								3752,	-- Xavian Rogue
+								10647,	-- Prince Raze
+								3758,	-- Felmusk Satyr
+								3762,	-- Felmusk Felsworn
+								3763,	-- Felmusk Shadowstalker
+								3759,	-- Felmusk Rogue
+							},
+						}),
+					},
 				}),
 				q(40982, {	-- Second Sight
-					["coord"] = { 45.8, 15.1, 1 },
-					["provider"] = { "n", 100873 },	-- Allari the Souleater
+					["coord"] = { 45.8, 15.1, DUROTAR },
+					["qg"] = 100873,	-- Allari the Souleater
 					["races"] = { BLOODELF },
 					["classes"] = { DEMONHUNTER },
+					["timeline"] = {
+						"added 7.0.1.20796",
+					},
 				}),
-				q(835,   {	-- Securing the Lines
-					["provider"] = { "n", 3293 },	-- Rezlak
+				-- #if BEFORE CATA
+				q(835, {	-- Securing the Lines
+					["qg"] = 3293,	-- Rezlak
+					["sourceQuest"] = 834,	-- Winds in the Desert
+					["coord"] = { 46.38, 22.94, DUROTAR },
+					--["races"] = ALL_RACES,	-- Crieve: Yes, doable on Alliance.
 					["lvl"] = 7,
-					["races"] = HORDE_ONLY,
-					["coord"] = { 46.3, 22.8, 1 },
+					["timeline"] = {
+						"added 1.11.1.10772",
+					},
+					["g"] = {
+						objective(1, {	-- 0/12 Dustwind Savage
+							["cr"] = 3117,	-- Dustwind Savage
+						}),
+						objective(2, {	-- 0/8 Dustwind Storm Witch
+							["cr"] = 3118,	-- Dustwind Storm Witch
+						}),	
+						i(4932),	-- Harpy Wing Clipper
+						i(4931),	-- Hickory Shortbow
+						i(4938),	-- Blemished Wooden Staff
+					},
 				}),
+				-- #endif
+				-- #if AFTER WRATH
+				q(835, {	-- Securing the Lines
+					["qg"] = 3293,	-- Rezlak
+					["sourceQuest"] = 834,	-- Winds in the Desert
+					["coord"] = { 46.38, 22.94, DUROTAR },
+					--["races"] = ALL_RACES,	-- Crieve: Yes, doable on Alliance.
+					-- I dont know when this was confirmed but according to wowhead comments 8.2.5 its not anymore
+					["lvl"] = lvlsquish(7, 1, 7),
+					["timeline"] = {
+						"added 1.11.1.10772",
+					},
+					["g"] = {
+						objective(1, {	-- 0/12 Durotar Harpy slain
+							["crs"] = {
+								3115,	-- Dustwind Harpy
+								3116,	-- Dustwind Pillager
+								3118,	-- Dustwind Storm Witch
+								3117,	-- Dustwind Savage
+							},
+						}),
+					},
+				}),
+				-- #endif
 				q(25256, {	-- Sent for Help
-					["provider"] = { "n", 39604 },	-- Vek'nag
-					["lvl"] = 8,
-					["coord"] = { 56.4, 20.2, 1 },
+					["qg"] = 39604,	-- Vek'nag
+					["lvl"] = lvlsquish(8, 1, 8),
+					["coord"] = { 56.4, 20.2, DUROTAR },
 					["races"] = HORDE_ONLY,
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
+				}),
+				q(2383, {	-- Simple Parchment
+					["qg"] = 3143,	-- Gornek
+					["sourceQuest"] = 788,	-- Cutting Teeth
+					["coord"] = { 42.06, 68.33, DUROTAR },
+					["races"] = { ORC },
+					["classes"] = { WARRIOR },
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
+					["groups"] = {
+						objective(1, {	-- 0/1 Simple Parchment
+							["provider"] = { "i", 12635 },	-- Simple Parchment
+						}),
+					},
+				}),
+				q(3065, {	-- Simple Tablet
+					["qg"] = 3143,	-- Gornek
+					["sourceQuest"] = 788,	-- Cutting Teeth
+					["coord"] = { 42.06, 68.33, DUROTAR },
+					["races"] = { TROLL },
+					["classes"] = { WARRIOR },
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
+					["groups"] = {
+						objective(1, {	-- 0/1 Simple Tablet
+							["provider"] = { "i", 6488 },	-- Simple Tablet
+						}),
+					},
 				}),
 				q(25178, {	-- Shipwreck Searching
-					["provider"] = { "n", 39423 },	-- Gail Nozzywig
-					["coord"] = { 53.0, 43.1, 1 },
+					["qg"] = 39423,	-- Gail Nozzywig
+					["coord"] = { 53.0, 43.1, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						25173,	-- From Bad to Worse
 						25176,	-- Exploiting the Situation
 					},
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
+					["groups"] = {
+						objective(1, {	-- 0/4 Gnomish Tools
+							["provider"] = { "i", 4863 },	-- Gnomish Tools
+						}),
+					},
 				}),
-				q(827,   {	-- Skull Rock
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 3208 },	-- Margoz
+				q(827, {	-- Skull Rock
+					["qg"] = 3208,	-- Margoz
+					["sourceQuest"] = 828,	-- Margoz
+					["coord"] = { 56.41, 20.05, DUROTAR },
 					["races"] = HORDE_ONLY,
+					["lvl"] = 4,
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(4947)),	-- Jagged Dagger
-						un(REMOVED_FROM_GAME, i(4939)),	-- Steady Bastard Sword
-						un(REMOVED_FROM_GAME, i(4948)),	-- Stinging Mace
+						objective(1, {	-- 0/6 Searing Collar
+							["provider"] = { "i", 4871 },	-- Searing Collar
+							["crs"] = {
+								3195,	-- Burning Blade Thug
+								3197,	-- Burning Blade Fanatic
+								3198,	-- Burning Blade Apprentice
+								3196,	-- Burning Blade Neophyte
+								3199,	-- Burning Blade Cultist
+							},
+						}),
+						i(4947),	-- Jagged Dagger
+						i(4939),	-- Steady Bastard Sword
+						i(4948),	-- Stinging Mace
 					},
 				}),
 				q(25262, {	-- Skull Rock
 					["provider"] = { "n", 3208 },	-- Margoz
-					["coord"] = { 56.4, 20.0, 1 },
+					["coord"] = { 56.4, 20.0, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25261,	-- Margoz
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 					["g"] = {
-						i(53358),	-- Blade Cultist Slippers
-						i(53387),	-- Searing Bracers
-						i(53390),	-- Skull Rock Belt
-						i(131414),	-- Burning Armbands
+						objective(1, {	-- 0/6 Searing Collar
+							["provider"] = { "i", 4871 },	-- Searing Collar
+							["crs"] = {
+								3195,	-- Burning Blade Thug
+								3197,	-- Burning Blade Fanatic
+								3198,	-- Burning Blade Apprentice
+								3196,	-- Burning Blade Neophyte
+								3199,	-- Burning Blade Cultist
+							},
+						}),
+						i(53358, {["timeline"] = {"added 4.0.3.13277"}}),	-- Blade Cultist Slippers
+						i(53387, {["timeline"] = {"added 4.0.3.13277"}}),	-- Searing Bracers
+						i(53390, {["timeline"] = {"added 4.0.3.13277"}}),	-- Skull Rock Belt
+						i(131414, {["timeline"] = {"added 7.0.3.22248"}}),	-- Burning Armbands
 					},
 				}),
 				q(1883, {	-- Speak with Un'thuwa
-					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
+					["qgs"] = {
+						3049,	-- Thurston Xane <Mage Trainer>
+						7311,	-- Uthel'nay <Mage Trainer>
+					},
+					["coords"] = {
+						{ 39, 86, ORGRIMMAR },
+						{ 25, 20.6, THUNDER_BLUFF },
+					},
+					["maps"] = { ORGRIMMAR, THUNDER_BLUFF },
+					["races"] = { UNDEAD, TROLL },
 					["classes"] = { MAGE },
+					["altQuests"] = {
+						1881,	-- Speak with Anastasia
+					},
+					["lvl"] = 10,
+					["isBreadcrumb"] = true,
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
+				}),
+				q(789, {	-- Sting of the Scorpid
+					["qg"] = 3143,	-- Gornek
+					["sourceQuest"] = 788,	-- Cutting Teeth
+					["coord"] = { 42.06, 68.33, DUROTAR },
+					["races"] = HORDE_ONLY,
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
+					["g"] = {
+						objective(1, {	-- 0/10 Scorpid Worker Tail
+							["provider"] = { "i", 4862 },	-- Scorpid Worker Tail
+							["crs"] = {
+								3124,	-- Scorpid Worker
+								3281,	-- Sarkoth
+							},
+						}),
+						i(4919),	-- Soft Wool Belt
+						i(4920),	-- Battleworn Cape
+					},
 				}),
 				q(25177, {	-- Storming the Beaches
-					["provider"] = { "n", 3139 },	-- Gar'Thok
-					["coord"] = { 52.0, 43.4, 1 },
+					["qg"] = 3139,	-- Gar'Thok
+					["coord"] = { 52.0, 43.4, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25173,	-- From Bad to Worse
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
+					["groups"] = {
+						objective(1, {	-- 0/11 Foaming Sea Elemental
+							["cr"] = 39272,	-- Foaming Sea Elemental
+						}),
+					},
 				}),
 				q(2937, {	-- Summoning Shadra
-					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 3188 },	-- Master Gadrin
 					["sourceQuest"] = 2936,	-- The Spider God
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
+					["groups"] = {
+						objective(1, {	-- 0/1 Shadra's Venom
+							["provider"] = { "i", 9324 },	-- Shadra's Venom
+							["cr"] = 2707,	-- Shadra <The Venom Queen>
+						}),
+						objective(2, {	-- 0/1 Gadrin's Parchment
+							["provider"] = { "i", 9323 },	-- Gadrin's Parchment
+						}),
+					},
+				}),
+				q(3090, {	-- Tainted Parchment
+					["qg"] = 3143,	-- Gornek
+					["sourceQuest"] = 788,	-- Cutting Teeth
+					["coord"] = { 42.06, 68.33, DUROTAR },
+					["races"] = { ORC, TROLL },
+					["classes"] = { WARLOCK },
+					["cost"] = {
+						{ "i", 9579, 1 },	-- Tainted Parchment
+					},
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 7.0.3.10000",
+					},
+					["groups"] = {
+						objective(1, {	-- 0/1 Tainted Parchment
+							["provider"] = { "i", 9579 },	-- Tainted Parchment
+						}),
+					},
+				}),
+				q(6062, {	-- Taming the Beast (1/3)
+					["qg"] = 3171,	-- Thotar <Hunter Trainer>
+					["sourceQuests"] = {
+						6068,	-- The Hunter's Path
+						6069,	-- The Hunter's Path
+						6070,	-- The Hunter's Path
+					},
+					["coord"] = { 51.8, 43.4, DUROTAR },
+					["races"] = { ORC, UNDEAD, TROLL },
+					["classes"] = { HUNTER },
+					["lvl"] = 10,
+					["timeline"] = {
+						"added 1.11.1.10958",
+						"removed 4.0.1.10000",
+					},
+					["groups"] = {
+						objective(1, {	-- 0/1 Taming Rod
+							["provider"] = { "i", 15917 },	-- Taming Rod
+						}),
+					},
+				}),
+				q(6083, {	-- Taming the Beast (2/3)
+					["qg"] = 3171,	-- Thotar <Hunter Trainer>
+					["sourceQuest"] = 6062,	-- Taming the Beast (1/3)
+					["coord"] = { 51.8, 43.4, DUROTAR },
+					["races"] = { ORC, UNDEAD, TROLL },
+					["classes"] = { HUNTER },
+					["lvl"] = 10,
+					["timeline"] = {
+						"added 1.11.1.10958",
+						"removed 4.0.1.10000",
+					},
+					["groups"] = {
+						objective(1, {	-- 0/1 Taming Rod
+							["provider"] = { "i", 15917 },	-- Taming Rod
+						}),
+					},
+				}),
+				q(6082, {	-- Taming the Beast (3/3)
+					["qg"] = 3171,	-- Thotar <Hunter Trainer>
+					["sourceQuest"] = 6083,	-- Taming the Beast (2/3)
+					["coord"] = { 51.8, 43.4, DUROTAR },
+					["races"] = { ORC, UNDEAD, TROLL },
+					["classes"] = { HUNTER },
+					["lvl"] = 10,
+					["timeline"] = {
+						"added 1.11.1.10958",
+						"removed 4.0.1.10000",
+					},
+					["groups"] = {
+						objective(1, {	-- 0/1 Taming Rod
+							["provider"] = { "i", 15920 },	-- Taming Rod
+						}),
+						recipe(883),	-- Call Pet
+						recipe(2641),	-- Dismiss Pet
+						recipe(1515),	-- Tame Beast
+					},
 				}),
 				q(25195, {	-- That's the End of That Raptor
-					["provider"] = { "n", 39324 },	-- Zen'Taji
-					["coord"] = { 35.8, 41.3, 1 },
+					["qg"] = 39324,	-- Zen'Taji
+					["coord"] = { 35.8, 41.3, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25194,	-- Unbidden Visitors
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
+					["groups"] = {
+						objective(1, {	-- 0/1 Screamslash
+							["cr"] = 39385,	-- Screamslash
+						}),
+					},
+				}),
+				q(6394, {	-- Thazz'ril's Pick
+					["qg"] = 11378,	-- Foreman Thazz'ril
+					["sourceQuest"] = 5441,	-- Lazy Peons
+					["coord"] = { 44.62, 68.65, DUROTAR },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 3,
+					["timeline"] = {
+						"added 1.11.1.10772",
+					},
+					["groups"] = {
+						objective(1, {	-- 0/1 Thazz'ril's Pick
+							["provider"] = { "i", 16332},
+							["coord"] = { 43.8, 53.8, DUROTAR },
+						}),
+					},
 				}),
 				q(830, {	-- The Admiral's Orders
-					["provider"] = { "i", 4881 },	-- A Letter to Yvette
+					["provider"] = { "i", 4881 },	-- Aged Envelope
+					["coord"] = { 59.26, 57.65, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
+					["groups"] = {
+						objective(1, {	-- 0/1 Admiral Proudmoore's Orders
+							["provider"] = { "i", 4883 },	-- Admiral Proudmoore's Orders
+						}),
+					},
 				}),
 				q(831, {	-- The Admiral's Orders
-					["provider"] = { "n", 3139 },	-- A Letter to Yvette
+					["qg"] = 3139,	-- Gar'Thok
+					["sourceQuest"] = 830,	-- The Admiral's Orders
+					["coord"] = { 52, 43.4, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["u"] = REMOVED_FROM_GAME,
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
+					["groups"] = {
+						objective(1, {	-- 0/1 Admiral Proudmoore's Orders
+							["provider"] = { "i", 4883 },	-- Admiral Proudmoore's Orders
+						}),
+					},
 				}),
 				q(40518, {	-- The Battle for Broken Shore
-					["provider"] = { "n", 113547 },	-- Stone Guard Mukar
-					["coord"] = { 55.6, 11.0, 1 },
+					["qg"] = 113547,	-- Stone Guard Mukar
+					["coord"] = { 55.6, 11.0, DUROTAR },
 					["sourceQuest"] = 44281,	-- To Be Prepared
 				--	["altQuest"] = 44543,	-- Scenario Skip (H)
 					["description"] = "Legion expansion introduction quest.|r",
 					["races"] = HORDE_ONLY,
-					["lvl"] = 98,
+					["lvl"] = lvlsquish(98, 10, 98),
+					["timeline"] = {
+						"added 7.0.1.20756",
+					},
 					["g"] = {
 						i(136582),	-- Bonegrinder of the Horde Vanguard
 						i(136583),	-- Longbow of the Horde Vanguard
@@ -546,36 +1811,119 @@ _.Zones =
 					},
 				}),
 				q(25232, {	-- The Burning Blade
-					["provider"] = { "n", 3142 },	-- Orgnil Soulscar
+					["qg"] = 3142,	-- Orgnil Soulscar
 					["lvl"] = 8,
-					["coord"] = { 52.2, 43.1, 1 },
+					["coord"] = { 52.2, 43.1, DUROTAR },
 					["races"] = HORDE_ONLY,
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
+					["groups"] = {
+						objective(1, {	-- 0/6 Burning Blade Spellscroll
+							["provider"] = { "i", 52564 },	-- Burning Blade Spellscroll
+							["crs"] = {
+								3196,	-- Burning Blade Neophyte
+								3199,	-- Burning Blade Cultist
+								3195,	-- Burning Blade Thug
+							},
+						}),
+					},
 				}),
-				q(924,   {	-- The Demon Seed
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 3521 },	-- Ak'Zeloth
+				q(924, {	-- The Demon Seed
+					["qg"] = 3521,	-- Ak'Zeloth
+					["sourceQuest"] = 809,	-- Ak'Zeloth
+					["coord"] = { 62.4, 20, THE_BARRENS },
+					["maps"] = { THE_BARRENS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = 9,
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.1.0.10000",
+					},
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(5420)),	-- Banshee Armor
+						objective(1, {	-- 0/1 Flawed Power Stone
+							["provider"] = { "i", 4986 },	-- Flawed Power Stone
+							["coord"] = { 47, 19, THE_BARRENS },
+						}),
+						i(5420),	-- Banshee Armor
 					},
 				}),
 				q(25196, {	-- The Dranosh'ar Blockade
-					["provider"] = { "n", 3142 },	-- Orgnil Soulscar
-					["coord"] = { 52.2, 43.0, 1 },
+					["qg"] = 3142,	-- Orgnil Soulscar
+					["coord"] = { 52.2, 43.0, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25232,	-- The Burning Blade
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
+				}),
+				q(6068, {	-- The Hunter's Path
+					["qg"] = 3407,	-- Sian'dur <Hunter Trainer>
+					["coord"] = { 67.8, 17.8, ORGRIMMAR },
+					["maps"] = { ORGRIMMAR },
+					["races"] = { ORC, UNDEAD, TROLL },
+					["classes"] = { HUNTER },
+					["isBreadcrumb"] = true,
+					["lvl"] = 10,
+					["timeline"] = {
+						"added 1.11.1.11159",
+						"removed 4.0.3.10000",
+					},
+				}),
+				q(6069, {	-- The Hunter's Path
+					["qg"] = 11814,	-- Kali Remik
+					["coord"] = { 6.2, 74.2, DUROTAR },
+					["races"] = { ORC, UNDEAD, TROLL },
+					["classes"] = { HUNTER },
+					["isBreadcrumb"] = true,
+					["lvl"] = 10,
+					["timeline"] = {
+						"added 1.11.1.10958",
+						"removed 4.0.3.10000",
+					},
+				}),
+				q(6070, {	-- The Hunter's Path
+					["qg"] = 3038,	-- Kary Thunderhorn <Hunter Trainer>
+					["coord"] = { 58.4, 88, THUNDER_BLUFF },
+					["maps"] = { THUNDER_BLUFF },
+					["races"] = { ORC, UNDEAD, TROLL },
+					["classes"] = { HUNTER },
+					["isBreadcrumb"] = true,
+					["lvl"] = 10,
+					["timeline"] = {
+						"added 1.11.1.11159",
+						"removed 4.0.3.10000",
+					},
+				}),
+				q(1859, {	-- Therzok
+					["qg"] = 3170,	-- Kaplak
+					["coord"] = { 51.98, 43.70, DUROTAR },
+					["races"] = { ORC, TROLL },
+					["classes"] = { ROGUE },
+					["isBreadcrumb"] = true,
+					["lvl"] = 10,
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
 				}),
 				q(2936, {	-- The Spider God
-					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 3188 },	-- Master Gadrin
 					["sourceQuest"] = 2935,	-- Consult Master Gadrin
+					["timeline"] = {
+						"added 1.11.1.10958",
+						"removed 4.0.3.10000",
+					},
 				}),
 				q(39801, {	-- The Splintered Fleet
 					["sourceQuest"] = 39698,	-- Making the Rounds
 					["lvl"] = 98,
-					["provider"] = { "n", 96686 },	-- Lady Sylvanas Windrunner <Banshee Queen>
+					["qg"] = 96686,	-- Lady Sylvanas Windrunner <Banshee Queen>
 					["races"] = HORDE_ONLY,
+					["timeline"] = {
+						"added 7.0.1.20756",
+					},
 					["g"] = {
 						i(139916),	-- Black Rose Amice
 						i(139925),	-- Black Rose Wristwraps
@@ -589,98 +1937,322 @@ _.Zones =
 				}),
 				q(25169, {	-- The War of Northwatch Aggression
 					["provider"] = { "n", 3140 },	-- Lar Prowltusk
-					["coord"] = { 55.4, 75.0, 1 },
+					["coord"] = { 55.4, 75.0, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25167,	-- Breaking the Chain
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(25205, {	-- The Wolf and The Kodo
 					["provider"] = { "n", 39380 },	-- Shin Stonepillar
-					["lvl"] = 8,
-					["coord"] = { 44.9, 14.7, 1 },
+					["lvl"] = lvlsquish(8, 1, 8),
+					["coord"] = { 44.9, 14.7, DUROTAR },
 					["races"] = HORDE_ONLY,
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(25227, {	-- Thonk
 					["provider"] = { "n", 39423 },	-- Gail Nozzywig
-					["coord"] = { 53.0, 43.1, 1 },
+					["coord"] = { 53.0, 43.1, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25178,	-- Shipwreck Searching
 					["isBreadcrumb"] = true,
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(25236, {	-- Thunder Down Under
 					["provider"] = { "n", 39379 },	-- Gor the Enforcer
-					["coord"] = { 44.9, 14.7, 1 },
+					["coord"] = { 44.9, 14.7, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25196,	-- The Dranosh'ar Blockade
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
-				q(786,   {	-- Thwarting Kolkar Aggression
-					["u"] = REMOVED_FROM_GAME,
+				q(786, {	-- Thwarting Kolkar Aggression
+					["qg"] = 3140,	-- Lar Prowltusk
+					--["sourceQuest"] = 785,	-- A Strategic Alliance [didn't make it into Classic]
+					["coord"] = { 54.52, 75.20, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3140 },	-- Lar Prowltusk
-					["sourceQuest"] = 785,	-- A Strategic Alliance
+					["lvl"] = 5,
+					["timeline"] = {
+						"added 1.11.1.10958",
+						"removed 4.0.3.10000",
+					},
+					["g"] = {
+						objective(1, {	-- 0/1 Attack Plan: Orgrimmar
+							["provider"] = { "o", 3192 },	-- Attack Plan: Orgrimmar
+							["coord"] = { 46.3, 79.0, DUROTAR },
+						}),
+						objective(1, {	-- 0/1 Attack Plan: Sen'jin Village
+							["provider"] = { "o", 3190 },	-- Attack Plan: Sen'jin Village
+							["coord"] = { 47.6, 77.4, DUROTAR },
+						}),
+						objective(1, {	-- 0/1 Attack Plan: Valley of Trials
+							["provider"] = { "o", 3189 },	-- Attack Plan: Valley of Trials
+							["coord"] = { 49.8, 81.3, DUROTAR },
+						}),
+						i(4933),	-- Seasoned Fighter's Cloak
+						i(6062),	-- Heavy Cord Bracers
+					},
 				}),
 				q(44281, {	-- To Be Prepared
 					["provider"] = { "n", 4311 },	-- Holgar Stormaxe
-					["lvl"] = 98,
-					["coord"] = { 46.0, 13.7, 1 },
+					["lvl"] = lvlsquish(98, 10, 98),
+					["coord"] = { 46.0, 13.7, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 43926,	-- The Legion Returns
+					["timeline"] = {
+						"added 7.0.3.21691",
+					},
 					["g"] = {
 						i(141294),	-- Mark of Orgrimmar
 					},
 				}),
+				q(6081, {	-- Training the Beast
+					["qg"] = 3171,	-- Thotar <Hunter Trainer>
+					["sourceQuest"] = 6082,	-- Taming the Beast (3/3)
+					["coord"] = { 51.8, 43.4, DUROTAR },
+					["races"] = { ORC, UNDEAD, TROLL },
+					["classes"] = { HUNTER },
+					["lvl"] = 10,
+					["timeline"] = {
+						"added 1.11.1.10958",
+						"removed 4.0.3.10000",
+					},
+					["groups"] = {
+						recipe(6991),		-- Feed Pet
+						recipe(982),		-- Revive Pet
+					},
+				}),
 				q(25461, {	-- Trollin' For Volunteers
-					["u"] = REMOVED_FROM_GAME,
 					["sourceQuest"] = 25480,	-- Dance Of De Spirits
+					["timeline"] = {
+						"added 3.3.3.11573",
+						"removed 4.0.1.10000",
+					},
+				}),
+				q(2380, {	-- To Orgrimmar!
+					["qg"] = 3170,	-- Kaplak
+					["coord"] = { 51.98, 43.70, DUROTAR },
+					["races"] = HORDE_ONLY,
+					["classes"] = { ROGUE },
+					["isBreadcrumb"] = true,
+					["lvl"] = 16,
+					["timeline"] = {
+						"added 1.12.1.10772",
+						"removed 4.0.3.10000",
+					},
 				}),
 				q(47867, {	-- Two If By Sea
 					["provider"] = { "n", 122065 },	-- Lady Liadrin
-					["coord"] = { 58.2, 12.0, 1 },
+					["coord"] = { 58.2, 12.0, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						48507,	-- The Hand of Fate
 						47835,	-- The Hand of Fate
 					},
+					["timeline"] = {
+						"added 7.3.0.24492",
+					},
 				}),
 				q(25194, {	-- Unbidden Visitors
 					["provider"] = { "n", 39324 },	-- Zen'Taji
-					["coord"] = { 35.8, 41.3, 1 },
+					["coord"] = { 35.8, 41.3, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25187,	-- Lost in the Floods
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
-				q(784,   {	-- Vanquish the Betrayers
-					["u"] = REMOVED_FROM_GAME,
+				q(784, {	-- Vanquish the Betrayers
+					["qg"] = 3139,	-- Gar'Thok
+					["coord"] = { 52, 43.4, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3139 },	-- Gar'Thok
+					["lvl"] = 3,
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
+					["groups"] = {
+						objective(1, {	-- 0/10 Kul Tiras Sailor
+							["cr"] = 3128,	-- Kul Tiras Sailor
+						}),
+						objective(2, {	-- 0/8 Kul Tiras Marine
+							["cr"] = 3129,	-- Kul Tiras Marine
+						}),
+						objective(3, {	-- 0/1 Lieutenant Benedict
+							["cr"] = 3192,	-- Lieutenant Benedict
+						}),
+					},
+				}),
+				q(792, {	-- Vile Familiars
+					["qg"] = 3145,	-- Zureetha Fargaze
+					["coord"] = { 42.85, 69.14, DUROTAR },
+					["classes"] = exclude(WARLOCK, ALL_CLASSES),
+					["races"] = HORDE_ONLY,
+					["lvl"] = 2,
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
+					["g"] = {
+						objective(1, {	-- 0/12 Vile Familiar
+							["cr"] = 3101,	-- Vile Familiar
+						}),
+						i(4924),	-- Primitive Club
+						i(4925),	-- Primitive Hand Blade
+						i(4923),	-- Primitive Hatchet
+						i(5778),	-- Primitive Walking Stick
+					},
+				}),
+				q(1485, {	-- Vile Familiars (Part 1 - Warlocks only!)
+					["qg"] = 5765,	-- Ruzan
+					["coord"] = { 42.6, 69.0, DUROTAR },
+					["classes"] = { WARLOCK },
+					["races"] = HORDE_ONLY,
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
+					["groups"] = {
+						objective(1, {	-- 0/8 Vile Familiar Head
+							["provider"] = { "i", 6487 },	-- Vile Familiar Head
+							["cr"] = 3101,	-- Vile Familiar
+						}),
+						recipe(688),	-- Summon Imp
+					},
+				}),
+				q(1499, {	-- Vile Familiars (Part 2 - Warlocks only!)
+					["qg"] = 5765,	-- Ruzan
+					["sourceQuest"] = 1485,	-- Vile Familiars (Part 1 - Warlocks only!)
+					["coord"] = { 42.6, 69.0, DUROTAR },
+					["classes"] = { WARLOCK },
+					["races"] = HORDE_ONLY,
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
 				}),
 				q(25188, {	-- Watershed Patrol
 					["provider"] = { "n", 39323 },	-- Gail Nozzywig
-					["coord"] = { 49.5, 40.1, 1 },
+					["coord"] = { 49.5, 40.1, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 25187,	-- Lost in the Floods
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
+				un(REMOVED_FROM_GAME, q(5843, {	-- Welcome! <-- Need more work
+					["provider"] = { "i", 14649 },	-- Valley of Trials Gift Voucher
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.6.10000",
+					},
+					["altQuests"] = {
+						5843,	-- Welcome! [Durotar]
+						5844,	-- Welcome! [Mulgore]
+						5847,	-- Welcome! [Tirisfal Glades]
+						8547,	-- Welcome! [Eversong Woods]
+					},
+					["races"] = HORDE_ONLY,
+					["g"] = bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
+						i(13584),	-- Diablo Stone
+						i(13583),	-- Panda Collar
+						i(13582),	-- Zergling Leash
+					}),
+				})),
 				q(53777, {	-- Where He Died
 					["provider"] = { "n", 146290 },	-- Spirit of Vol'jin
-					["lvl"] = 120,
-					["coord"] = { 45.9, 15.9, 1 },
+					["lvl"] = lvlsquish(120, 50, 120),
+					["coord"] = { 45.9, 15.9, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 54120,	-- To Orgrimmar
+					["timeline"] = {
+						"added 8.1.0.29139",
+					},
 				}),
-				q(834,   {	-- Winds in the Desert
-					["provider"] = { "n", 3293 },	-- Rezlak
-					["lvl"] = 7,
-					["races"] = HORDE_ONLY,
-					["coord"] = { 46.3, 22.8, 1 },
+				q(834, {	-- Winds in the Desert
+					["qg"] = 3293,	-- Rezlak
+					["coord"] = { 46.38, 22.94, DUROTAR },
+					--["races"] = ALL_RACES,	-- Crieve: Yes, doable on Alliance.
+					["lvl"] = lvlsquish(7, 1, 7),
+					["timeline"] = {
+						"added 1.11.1.10772",
+					},
+					["groups"] = {
+						objective(1, {	-- 0/5 Sack of Supplies
+							["provider"] = { "i", 4918 },	-- Sack of Supplies
+						}),
+					},
 				}),
-				q(826,   {	-- Zalazane
-					["u"] = REMOVED_FROM_GAME,
+				q(4641, {	-- Your Place In The World
+					["qg"] = 10176,	-- Kaltunk
+					["coord"] = { 43.2, 68.4, DUROTAR },
+					["altQuests"] = { 787 },	-- The New Horde
+					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 3188 },	-- Master Gadrin
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
+				}),
+				q(826, {	-- Zalazane
+					["qg"] = 3188,	-- Master Gadrin
+					["sourceQuest"] = 805,	-- Report to Sen'jin Village
+					["coord"] = { 55.95, 74.72, DUROTAR },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 4866, 1 },	-- 	Zalazane's Head
+					},
+					["lvl"] = 4,
+					["timeline"] = {
+						"added 1.11.1.10958",
+						"removed 4.0.1.10000",
+					},
+					["g"] = {
+						objective(1, {	-- 0/8 Hexed Troll
+							["cr"] = 3207,	-- Hexed Troll
+						}),
+						objective(2, {	-- 0/8 Voodoo Troll
+							["cr"] = 3206,	-- Voodoo Troll
+						}),
+						objective(3, {	-- 0/1 Zalazane's Head
+							["provider"] = { "i", 4866 },	-- Zalazane's Head
+							["cr"] = 3205,	-- Zalazane
+							["coord"] = { 67.6, 87.8, DUROTAR },
+						}),
+						i(4946),	-- Lightweight Boots
+						i(4940),	-- Veiled Grips
+					},
 				}),
 				q(25445, {	-- Zalazane's Fall
-					["u"] = REMOVED_FROM_GAME,
 					["sourceQuest"] = 25495,	-- Preparin' For Battle
+					["timeline"] = {
+						"added 3.3.3.11573",
+						"removed 4.0.1.10000",
+					},
 				}),
 			}),
 		}),
 	}),
 };
+_.NEVER_IMPLEMENTED = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		m(KALIMDOR, {
+			m(DUROTAR, {
+				q(785, {	-- A Strategic Alliance
+					-- low enough questID for classic, but unable to verify if it actually was in vanilla
+					-- since Neeru Fireblade was moved to Orgrimmar for launch, it seems unlikely.
+					["qg"] = 3216,	-- Neeru Fireblade
+					["coord"] = { 49.64, 50.31, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 5,
+				}),
+			}),
+		}),
+	}),
+});

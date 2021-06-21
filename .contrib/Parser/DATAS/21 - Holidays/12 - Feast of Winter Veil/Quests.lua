@@ -10,7 +10,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 				-- Added for Winter Veil 2020
 				["questID"] = 58901,
 				["coords"] = {
-					{ 33.9, 68.1, 87 },	-- Ironforge
+					{ 33.9, 68.1, IRONFORGE },
 					{ 52.9, 77.4, ORGRIMMAR },
 				},
 			}),
@@ -27,7 +27,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 					{ "n", 96304 },	-- Tradurjo Jinglepocket
 				},
 				["maps"] = {
-					84,		-- Stormwind City
+					STORMWIND_CITY,
 					THE_EXODAR,
 					579,	-- Lunarfall
 				},
@@ -37,9 +37,9 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 			q(8860,  {	-- New Year Celebrations! (A)
 				["description"] = "This quest is only available on December 31, and can be done once per character (not each year). Quest can be obtained from any Wonderform Operator in any major city.",
 				["provider"] = { "n", 15732 },	-- Wonderform Operator
-				["coord"] = { 67.7, 71.4, 84 },	-- Stormwind (closest pick-up to turn-in)
+				["coord"] = { 67.7, 71.4, STORMWIND_CITY },	-- (closest pick-up to turn-in
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 84 },	-- Stormwind
+				["maps"] = { STORMWIND_CITY },
 				["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL,
 			}),
 			q(7025,  {	-- Treats for Greatfather Winter
@@ -56,7 +56,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 					{ "n", 13433 },	-- Wulmort Jinglepocket
 					{ "n", 13636 },	-- Strange Snowman
 				},
-				["maps"] = { 25 },	-- Hillsbrad Foothills
+				["maps"] = { HILLSBRAD_FOOTHILLS },
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
 				["g"] = {
@@ -158,9 +158,9 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 				["provider"] = { "n", 15732 },	-- Wonderform Operator <Smokywood Pastures>
 				["maps"] = {
 					125,	-- Dalaran (Northrend) (couldn't find it in Legion)
-					27,		-- Dun Morogh
+					DUN_MOROGH,
 					TANARIS,	-- Gadgetzan
-					84,		-- Stormwind
+					STORMWIND_CITY,
 				},
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true, -- not sure, I was able to pick it up only after 25th
@@ -179,7 +179,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 			}),
 			q(7024,  {	-- Great-father Winter is Here!
 				["provider"] = { "n", 13429 },	-- Nardstrum Copperpinch
-				["maps"] = { 90 },	-- Undercity
+				["maps"] = { UNDERCITY },
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true,
 			}),
@@ -235,7 +235,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 					{ "n", 13418 },	-- Kaymard Copperpinch
 					{ "n", 13636 },	-- Strange Snowman
 				},
-				["maps"] = { 25 },	-- Hillsbrad Foothills
+				["maps"] = { HILLSBRAD_FOOTHILLS },
 				["races"] = HORDE_ONLY,
 				["isDaily"] = true,
 				["g"] = {
@@ -313,9 +313,9 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 				["provider"] = { "n", 15732 },	-- Wonderform Operator <Smokywood Pastures>
 				["maps"] = {
 					125,	-- Dalaran (Northrend) (couldn't find it in Legion)
-					27,		-- Dun Morogh
+					DUN_MOROGH,
 					TANARIS,	-- Gadgetzan
-					84,		-- Stormwind
+					STORMWIND_CITY,
 				},
 				["races"] = HORDE_ONLY,
 				["isYearly"] = true, -- not sure, I was able to pick it up only after 25th
@@ -353,14 +353,14 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 			--[[-- Legacy Winter Veil Quests
 			q(8799, {	-- The Hero of the Day
 				["provider"] = { "n", 13418 },	-- Kaymard Copperpinch
-				["coord"] = { 52.4, 77.0, 87 },
+				["coord"] = { 52.4, 77.0, IRONFORGE },
 				["races"] = HORDE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 				["isYearly"] = true,
 				}),
 			q(8763, {	-- The Hero of the Day
 				["provider"] = { "n", 13433 },	-- Wulmort Jinglepocket
-				["coord"] = { 33.2, 67.8, 87 },
+				["coord"] = { 33.2, 67.8, IRONFORGE },
 				["races"] = ALLIANCE_ONLY,
 				["u"] = REMOVED_FROM_GAME,
 				["isYearly"] = true,

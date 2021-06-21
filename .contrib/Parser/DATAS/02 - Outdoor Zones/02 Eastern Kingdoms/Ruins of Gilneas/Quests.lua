@@ -5,17 +5,17 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(217, {	-- Ruins of Gilneas
+		m(RUINS_OF_GILNEAS, {
 			n(QUESTS, {
 				q(27406, {	-- A Man Named Godfrey
 					["provider"] = { "n", 45312 },	-- Deathstalker Commander Belmont (secondary QG ID 45474)
-					["coord"] = { 72.9, 30.1, 217 },
+					["coord"] = { 72.9, 30.1, RUINS_OF_GILNEAS },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27405 },	-- Fall Back!
 				}),
 				q(27349, {	-- Break in Communications: Dreadwatch Outpost
 					["provider"] = { "n", 45315 },	-- Forward Commander Onslaught
-					["coord"] = { 57.5, 18.2, 217 },
+					["coord"] = { 57.5, 18.2, RUINS_OF_GILNEAS },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						27342,	-- In Time, All Will Be Revealed
@@ -25,7 +25,7 @@ _.Zones =
 				}),
 				q(27350, {	-- Break in Communications: Rutsak's Guard
 					["provider"] = { "n", 45315 },	-- Forward Commander Onslaught
-					["coord"] = { 57.5, 18.2, 217 },
+					["coord"] = { 57.5, 18.2, RUINS_OF_GILNEAS },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27349 },	-- Break in Communications: Dreadwatch Outpost
 				}),
@@ -43,7 +43,7 @@ _.Zones =
 				q(27342, {	-- In Time, All Will Be Revealed
 					["provider"] = { "n", 45312 },	-- Deathstalker Commander Belmont
 					["races"] = HORDE_ONLY,
-					["coord"] = { 57.4, 18.9, 217 },
+					["coord"] = { 57.4, 18.9, RUINS_OF_GILNEAS },
 					["sourceQuests"] = { 27290 },	-- To Forsaken Forward Command
 					["g"] = {
 						i(62862),	-- Belmont's Bracers
@@ -67,30 +67,30 @@ _.Zones =
 				q(27333, {	-- Losing Ground
 					["provider"] = { "n", 45315 },	-- Forward Commander Onslaught
 					["races"] = HORDE_ONLY,
-					["coord"] = { 57.5, 18.2, 217 },
+					["coord"] = { 57.5, 18.2, RUINS_OF_GILNEAS },
 					["sourceQuests"] = { 27290 },	-- To Forsaken Forward Command
 				}),
 				q(27364, {	-- On Whose Orders?
 					["provider"] = { "n", 45315 },	-- Forward Commander Onslaught
-					["coord"] = { 57.5, 18.2, 217 },
+					["coord"] = { 57.5, 18.2, RUINS_OF_GILNEAS },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27350 },	-- Break in Communications: Rutsak's Guard
 				}),
 				q(27423, {	-- Resistance is Futile
 					["provider"] = { "n", 45315 },	-- Forward Commander Onslaught
-					["coord"] = { 57.5, 18.2, 217 },
+					["coord"] = { 57.5, 18.2, RUINS_OF_GILNEAS },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27405 },	-- Fall Back!
 				}),
 				q(27345, {	-- The F.C.D.
 					["provider"] = { "n", 45315 },	-- Forward Commander Onslaught
-					["coord"] = { 57.5, 18.2, 217 },
+					["coord"] = { 57.5, 18.2, RUINS_OF_GILNEAS },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27290 },	-- To Forsaken Forward Command
 				}),
 				q(27438, {	-- The Great Escape (awards "Ruins of Gilneas" criteria for zone achievement)
 					["provider"] = { "n", 45312 },	-- Deathstalker Commander Belmont
-					["coord"] = { 79.7, 75.7, 217 },
+					["coord"] = { 79.7, 75.7, RUINS_OF_GILNEAS },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						27406,	-- A Man Named Godfrey
@@ -105,7 +105,7 @@ _.Zones =
 				}),
 				q(27360, {	-- Vengeance for Our Soldiers
 					["provider"] = { "n", 45389 },	-- Captain Rutsak
-					["coord"] = { 65.6, 34.1, 217 },
+					["coord"] = { 65.6, 34.1, RUINS_OF_GILNEAS },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27350 },	-- Break in Communication: Rutsak's Guard
 					["g"] = {

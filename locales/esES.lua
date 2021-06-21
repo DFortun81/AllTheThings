@@ -202,8 +202,10 @@ local L = app.L;
 	--TODO: L.AH_SCAN_SUCCESSFUL_2 = " item(s).";
 	--TODO: L.REAGENT_CACHE_OUT_OF_DATE = "Reagent Cache is out-of-date and will be re-cached when opening your professions!";
 	--TODO: L.QUEST_LOOP = "Likely just broke out of an infinite source quest loop.";
-	--TODO: L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT = "Quest '%s' [%d] will prevent collection of Breadcrumb Quest [%d]";
+	--TODO: L.QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT = "Quest '%s' [%d] will prevent collection of Breadcrumb Quest '%s' [%d]";
 	--TODO: L.QUEST_OBJECTIVE_INVALID = "Invalid Quest Objective";
+	--TODO: L.REFRESHING_COLLECTION = "Refreshing collection...";
+	--TODO: L.DONE_REFRESHING = "Done refreshing collection.";
 
 	-- Item Filter Window
 		--TODO: L.ITEM_FILTER_TEXT = "Item Filters";
@@ -227,6 +229,10 @@ local L = app.L;
 	--TODO: L.QUEST_ONCE_PER_ACCOUNT_FORMAT = "Completed By: %s";
 
 -- Settings.lua
+	--TODO: L.SKIP_AUTO_REFRESH = "Do Not Auto-Refresh!";
+	--TODO: L.SKIP_AUTO_REFRESH_TOOLTIP = "By default (unchecked), any Settings change which may affect visible data will cause an automatic refresh.\n\nBy enabling this option, Settings changes won't take effect until the User performs a Full Refresh by Shift-Clicking on an ATT window.";
+	--TODO: L.AFTER_REFRESH = "After Refresh";
+
 	-- General tab
 		-- Mod Title
 			--TODO: L.MODE = "Mode";
@@ -517,7 +523,6 @@ local L = app.L;
 		--TODO: L.SPLIT = "Per Difficulty";
 		--TODO: L.REQUIRES_LEVEL = "Requires Level";
 		--TODO: L.SECRETS_HEADER = "Secrets";
-		--TODO: L.SELFIE_FILTERS_HEADER = "Selfie Filters";
 		--TODO: L.LIMITED_QUANTITY = "This has a limited quantity and may not always be present on the vendor.";
 		--TODO: L.SOURCE_ID_MISSING = "Please report this Item and where it was acquired to the ATT Discord in #errors!";
 
@@ -790,19 +795,14 @@ for key,value in pairs({
 			--TODO: [-652] = "Honor Gear Grievous Season",			-- Honor Gear Grievous Season
 			--TODO: [-651] = "Honor Gear Prideful Season",			-- Honor Gear Prideful Season
 
-	[-799] = "Carga de eternidad",									-- Burden of Eternity
-
 	-- Secret Header [Maybe need to change the numbers again when I need more space for PvP -- sadidorf]
-		--TODO: [-806] = "Waist of Time",							-- Waist of Time
-		--TODO: [-807] = "Hivemind",								-- Hivemind
-		[-808] = "Can de sombras vinculado",						-- Bound Shadehound
+		[-806] = "Cintiempo libre",									-- Waist of Time
 
 	-- Mechagon
 		--TODO: [-850] = "Mechanized Chest",						-- Mechanized Chest
 		--TODO: [-851] = "Irontide Chest",							-- Irontide Chest
 
 	-- 8.2 Neck Stuff
-		--TODO: [-852] = "Azerite Essences",						-- Azerite Essences
 		--TODO: [-853] = "All Roles",								-- All Roles
 		--TODO: [-854] = "DPS",										-- DPS
 		--TODO: [-855] = "Healers",									-- Healers

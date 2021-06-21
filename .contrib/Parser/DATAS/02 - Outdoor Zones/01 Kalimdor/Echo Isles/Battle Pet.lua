@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(1, {	-- Durotar
+		m(DUROTAR, {
 			m(463, {	-- Echo Isles
 				filter(101, {	-- Pet Battle
 					p(467, {	-- Dung Beetle

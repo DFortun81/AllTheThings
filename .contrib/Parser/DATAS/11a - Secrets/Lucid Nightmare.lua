@@ -10,7 +10,7 @@ _.Secrets =
 		["modelID"] = 78092,
 		["maps"] = {
 			627, 628,												-- Broken Isles Dalaran
-			42, 41, 43, 44, 45, 46,									-- Deadwind Pass
+			DEADWIND_PASS, 41, 43, 44, 45, 46,						-- Deadwind Pass
 			207,													-- Deepholm
 			226, 227, 228, 229,										-- Gnomeregan
 			379, 380, 381, 382, 383, 384, 385, 386, 387, 421, 434,	-- Kun-Lai Summit
@@ -88,7 +88,7 @@ _.Secrets =
 			o(272270, {	-- Step 10: Puzzler's Desire
 				["model"] = 942865,
 				["questID"] = 47885,
-				["coord"] = { 39.8, 73.6, 42 },	-- Deadwind Pass
+				["coord"] = { 39.8, 73.6, DEADWIND_PASS },
 				["sourceQuest"] = 47881,	-- Step 9: Inconspicuous Note
 				["description"] = "|cFFFFFFFFStep 10:|r This step requires visiting |cFFFFD700Deadwind Pass|r.  Head to |cFFFFFFFF39.8, 73.6|r, the entrance to the Forgotten Crypt.\n\nOnce inside, head down the stairs into the |cFFFFD700Well of the Forgotten|r.  Head into the |cFFFFD700Pauper's Walk|r hallway and follow it into the |cFFFFD700Forgotten Crypt.|r\n\nTake a right and then another right back into |cFFFFD700Pauper's Walk|r, then take a right at the Y and walk down the spiral, back into the |cFFFFD700Forgotten Crypt|r.\nTake a left and another left into the |cFFFFD700Tomb of the Unrepentant.|r\nOpen the gate and fall down the hole to the right (just drop down one level, not two). Walk into |cFFFFD700The Pit of Criminals|r, and |cFFFFD700Puzzler's Desire|r is on top of the bone pile.\n\n|cffcc33ffNote: If you are on the Warlock Affiction artifact quest and can't see the Puzzler's Desire, then you will have to abandon the quest to solve the phasing issue.\n\nCongratulations on your mount!|r\n\nWe would like to thank the |cFFFFD700Secret Finding Discord|r for solving yet another puzzle.\n",
 				["g"] = {

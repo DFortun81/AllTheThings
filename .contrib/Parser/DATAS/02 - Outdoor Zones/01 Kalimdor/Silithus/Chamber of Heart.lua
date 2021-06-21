@@ -341,10 +341,10 @@ _.Zones =
 						}),
 						q(55657, {	-- In the Shadow of Crimson Wings
 							["provider"] = { "n", 152720 },	-- Kalecgos
-							["coord"] = { 36.0, 50.5, 241 },
+							["coord"] = { 36.0, 50.5, TWILIGHT_HIGHLANDS },
 							["sourceQuest"] = 56167,	-- Investigating the Highlands
 							["maps"] = {
-								241,	-- Twilight Highlands
+								TWILIGHT_HIGHLANDS,
 								1476,	-- Twilight Highlands (Szenario)
 							},
 							["g"] = {
@@ -474,15 +474,15 @@ _.Zones =
 						}),
 						q(56188, {	-- To the Catacombs!
 							["provider"] = { "n", 154874 },	-- Blacktalon Watcher
-							["coord"] = { 47.8, 68.8, 13 },	-- Eastern Kingdoms (Burning Steppes, outside BWD)
+							["coord"] = { 47.8, 68.8, EASTERN_KINGDOMS },	-- Burning Steppes, outside BWD
 							["sourceQuest"] = 56187,	-- Black Winged Shadow
 							["u"] = REMOVED_FROM_GAME,	-- (removed with 8.3)
 						}),
 						q(56189, {	-- On the Trail of the Black Prince
 							["provider"] = { "n", 154870 },	-- Slain Blacktalon Lookout
-							["coord"] = { 47.0, 69.2, 42 },
+							["coord"] = { 47.0, 69.2, DEADWIND_PASS },
 							["sourceQuest"] = 56188,	-- To the Catacombs!
-							["maps"] = { 42 },	-- Deadwind Pass
+							["maps"] = { DEADWIND_PASS },
 							["u"] = REMOVED_FROM_GAME,	-- (removed with 8.3)
 						}),
 						q(56190, {	-- Save Ebonhorn
@@ -782,7 +782,7 @@ _.Zones =
 						}),
 						n(152194, {	-- MOTHER
 							["description"] = "MOTHER sells rank 3 essences for Echoes of Ny'alotha provided you have obtained them through other means on your account on at least one character.",
-							["coord"] = {48.15, 72.54, REPAIRED_CHAMBER_OF_HEART },
+							["coord"] = { 48.2, 72.5, REPAIRED_CHAMBER_OF_HEART },
 							["g"] = {
 								i(173363, {	-- Vessel of Horrific Visions
 									["cost"] = { { "c", 1803, 1750 }, }, -- 1750 Echoes of Ny'alotha

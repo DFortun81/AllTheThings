@@ -18,7 +18,7 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 92183 },	-- Alard Schmied
 						["coord"] = { 45.0, 29.6, 627 },
 						["maps"] = { 627 },	-- Dalaran
-						["cost"] = { 
+						["cost"] = {
 							{ "i", 123918, 25 },	-- Leystone Ore x25
 							{ "i", 147768, 1 },		-- Suramarian Sapphire
 						},
@@ -320,8 +320,8 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 42773 },	-- The Light Reveals
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 108776 },	-- Lord Maxwell Tyrosus
-						["coord"] = { 52.1, 83.2, 22 },
-						["maps"] = { 22 },	-- Western Plaguelands
+						["coord"] = { 52.1, 83.2, WESTERN_PLAGUELANDS },
+						["maps"] = { WESTERN_PLAGUELANDS },
 					}),
 					q(45975, {	-- Investigate the Broken Shore
 						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
@@ -330,8 +330,8 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 42770 },	-- Seeking Guidance
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 108778 },	-- Mehlar Dawnblade
-						["coord"] = { 51.3, 79.0, 22 },
-						["maps"] = { 22 },	-- Western Plaguelands
+						["coord"] = { 51.3, 79.0, WESTERN_PLAGUELANDS },
+						["maps"] = { WESTERN_PLAGUELANDS },
 					}),
 					q(45562, {	-- Kneel and Be Squired!
 						["sourceQuests"] = { 45561 },	-- Seek Me Out
@@ -437,8 +437,8 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 42770 },	-- Seeking Guidance
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 108777 },	-- High Priest Thel'danis
-						["coord"] = { 51.4, 79.0, 22 },
-						["maps"] = { 22 },	-- Western Plaguelands
+						["coord"] = { 51.4, 79.0, WESTERN_PLAGUELANDS },
+						["maps"] = { WESTERN_PLAGUELANDS },
 					}),
 					q(45561, {	-- Seek Me Out
 						["sourceQuests"] = { },	-- TBD
@@ -537,8 +537,8 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 42771 },	-- Keeping the Peace
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 108776 },	-- Lord Maxwell Tyrosus
-						["coord"] = { 51.6, 81.9, 22 },
-						["maps"] = { 22 },	-- Western Plaguelands
+						["coord"] = { 51.6, 81.9, WESTERN_PLAGUELANDS },
+						["maps"] = { WESTERN_PLAGUELANDS },
 					}),
 					q(43540, {	-- The Mind of the Enemy
 						["sourceQuests"] = { 43490 },	-- Aponi's Trail
@@ -563,7 +563,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 42774 },	-- Hope Prevails
 						["classes"] = { PALADIN },
 						["provider"] = { "n", 90369 },	-- Lord Maxwell Tyrosus
-						["coord"] = { 74.3, 53.2, 23 },
+						["coord"] = { 74.3, 53.2, EASTERN_PLAGUELANDS },
 					}),
 					q(42120, {	-- The Silver Hand
 						["sourceQuests"] = { 42377 },	-- The Brother's Trail

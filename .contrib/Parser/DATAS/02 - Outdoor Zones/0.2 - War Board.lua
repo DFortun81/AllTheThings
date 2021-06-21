@@ -450,6 +450,7 @@ _.Zones =
 			q(49562, {	-- Hero's Call: Shadowmoon Valley! (Draenor)
 				["isBreadcrumb"] = true,
 				["lvl"] = 90,
+				["description"] = "Abandon quest 'Step Three: Prophet!' after the 'Assault on the Dark Portal' scenario and visit a Hero's Call Board to pick this quest up.",
 			}),
 			q(49553, {	-- Hero's Call: Sholazar Basin!
 				["isBreadcrumb"] = true,
@@ -462,6 +463,7 @@ _.Zones =
 			q(28550, {	-- Hero's Call: Southern Barrens! (breadcrumb quest for 24862) (max level 33)
 				["isBreadcrumb"] = true,
 				["lvl"] = 25,
+				["description"] = "This quest needs to be accepted from the 'Adventure Guide' and not the 'Hero's Call Board'.",
 			}),
 			q(28551, {	-- Hero's Call: Southern Barrens!
 				["isBreadcrumb"] = true,
@@ -582,8 +584,8 @@ _.Zones =
 				["description"] = "This is a breadcrumb quest and is mutually exclusive with other Redridge Mountains breadcrumbs.  It also seems to be unobtainable at higher levels, so if you want to collect the transmog from this quest then you'll need to do it early.",
 				["lvl"] = 15,
 				["coords"] = {
-					{ 85.6, 31.8, 84 },	-- Anduin Wrynn <King of Stormwind> -- not sure about this one
-					{ 85.8, 32.4, 84 },	-- Grand Admiral Jes-Tereth
+					{ 85.6, 31.8, STORMWIND_CITY },	-- Anduin Wrynn <King of Stormwind> -- not sure about this one
+					{ 85.8, 32.4, STORMWIND_CITY },	-- Grand Admiral Jes-Tereth
 					{ 56.3, 47.6, 52 },	-- Captain Danuvin
 				},
 				["isBreadcrumb"] = true,

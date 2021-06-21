@@ -69,7 +69,7 @@ _.ExpansionFeatures =
 									["description"] = "Enter Chillheart's room - you don't need to kill the boss. Kill the first trashpack on the right side. The book is on top of the 6th bookshelf from the right.",
 									["provider"] = { "n", 58633 },	-- Instructor Chillheart
 									["coords"] = {
-										{ 69.0, 72.9, 22 },		-- Scholomance entrance
+										{ 69.0, 72.9, WESTERN_PLAGUELANDS },	-- Scholomance entrance
 										{ 58.8, 84.0, SCHOLOMANCE },	--	Actual volume inside the dungeon
 									},
 								}),
@@ -108,7 +108,7 @@ _.ExpansionFeatures =
 									["description"] = "After the Curator, jump down to the right and head straight into the first nook. There is a tapestry on the wall and 3 bookshelves below. Volume 11 is on the bottom of the left-hand bookshelf.",
 									["provider"] = { "n", 15691 },	-- The Curator
 									["coords"] = {
-										{ 46.9, 74.8, 42 },	-- Karazhan entrance
+										{ 46.9, 74.8, DEADWIND_PASS },	-- Karazhan entrance
 										{ 36.8, 37.9, 358 },
 									},
 								}),
@@ -152,7 +152,7 @@ _.ExpansionFeatures =
 					q(40706, {	-- A Legend You Can Hold
 						["sourceQuests"] = { 40705 },	-- Priestly Matters
 						["classes"] = { PRIEST },
-						["coord"] = { 78.9, 41.0, 18 },	-- Eastern Kingdom
+						["coord"] = { 78.9, 41.0, TIRISFAL_GLADES },
 						["provider"] = { "n", 101314 },	-- Alonsus Faol
 					}),
 					q(41626, {	-- A New Threat
@@ -274,7 +274,7 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 43392,	-- Into the Void
 						["classes"] = { PRIEST },
 						["provider"] = { "n", 110684 },	-- Natalie Seline
-						["coord"] = { 24.2, 37.8, 47 },
+						["coord"] = { 24.2, 37.8, DUSKWOOD },
 						["g"] = {
 							follower(874),	-- Natalie Seline
 						},
@@ -406,7 +406,7 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 43391,	-- Secrets of the Void
 						["classes"] = { PRIEST },
 						["provider"] = { "n", 111041 },	-- Micah Belford
-						["coord"] = { 24.4, 37.8, 47 },
+						["coord"] = { 24.4, 37.8, DUSKWOOD },
 					}),
 					q(46029, {	-- Investigate the Broken Shore
 						["u"] = REMOVED_FROM_GAME,	-- supposedly removed in 7.2
@@ -517,7 +517,7 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 43392,	-- Into the Void
 						["classes"] = { PRIEST },
 						["provider"] = { "n", 110684 },	-- Natalie Seline
-						["coord"] = { 24.2, 37.8, 47 },
+						["coord"] = { 24.2, 37.8, DUSKWOOD },
 					}),
 					q(43925, {	-- Runescale Koi
 						["repeatable"] = true,
@@ -551,7 +551,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 43390 },	-- Forgotten Shadows
 						["classes"] = { PRIEST },
 						["provider"] = { "n", 111041 },	-- Micah Belford
-						["coord"] = { 24.2, 37.8, 47 },
+						["coord"] = { 24.2, 37.8, DUSKWOOD },
 					}),
 					q(45346, {	-- Shambling Specimens
 						-- TBD: fill in other fields
@@ -639,7 +639,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 40706 },	-- A Legend You Can Hold
 						["classes"] = { PRIEST },
 						["provider"] = { "n", 101314 },	-- Alonsus Faol
-						["coord"] = { 78.9, 41.0, 18},
+						["coord"] = { 78.9, 41.0, TIRISFAL_GLADES },
 					}),
 					q(45349, {	-- To the Broken Shore
 						-- TBD: fill in other fields

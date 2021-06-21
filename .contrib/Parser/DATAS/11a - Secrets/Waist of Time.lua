@@ -10,22 +10,22 @@ _.Secrets =
 			ARATHI_HIGHLANDS,
 			BADLANDS,
 			BLASTED_LANDS,
-			23,
-			25,
+			EASTERN_PLAGUELANDS,
+			HILLSBRAD_FOOTHILLS,
 			BLACKROCK_MOUNTAIN,
-			36,
+			BURNING_STEPPES,
 			37,
-			42,
-			47,
+			DEADWIND_PASS,
+			DUSKWOOD,
 			51,
-			66,
+			DESOLACE,
 			FERALAS,
 			SHADOWMOON_VALLEY,
 			BLADES_EDGE_MOUNTAINS,
 			TEROKKAR_FOREST,
 			121,
 			125,
-			241,
+			TWILIGHT_HIGHLANDS,
 			379,
 			539,
 			542,
@@ -105,7 +105,7 @@ _.Secrets =
 				["questID"] = 52904,
 				["sourceQuests"] = { 52903 },
 				["description"] = "Eastern Plaguelands\n\nInside the crypt, on top of the sarcophagus lid\n\nThe Pretty Flower reads:\n\n\"<Something is written here.>\n\nDead Rune Thug\"",
-				["coord"] = { 24.0, 78.0, 23 },	-- Pretty Flower
+				["coord"] = { 24.0, 78.0, EASTERN_PLAGUELANDS },	-- Pretty Flower
 			}),
 			o(294105, { 	-- Old Book
 				["model"] = 244161,
@@ -113,7 +113,7 @@ _.Secrets =
 				["questID"] = 52905,
 				["sourceQuests"] = { 52904 },
 				["description"] = "Deadwind Pass\n\nInside the old church, near the table.\n\nThe Old Book reads:\n\n\"<Something is written here.>\n\n...A Stage Deception\"",
-				["coord"] = { 41.2, 78.9, 42 },	-- Old Book
+				["coord"] = { 41.2, 78.9, DEADWIND_PASS },	-- Old Book
 			}),
 			o(294106, { 	-- Dead Fish
 				["model"] = 189087,
@@ -122,7 +122,7 @@ _.Secrets =
 				["sourceQuests"] = { 52905 },
 				["description"] = "Blackrock Mountain\n\nRoom next to LBRS entrance, next to the fire.\n\nThe Dead Fish says:\n\n\"<Something is written here.>\n\nNecropolis Expos!\"",
 				["coords"] = {
-					{ 21.0, 38.2, 36 },	-- Entrance
+					{ 21.0, 38.2, BURNING_STEPPES },	-- Entrance
 					{ 77.9, 44.3, BLACKROCK_MOUNTAIN },	-- Dead Fish
 				},
 			}),
@@ -132,7 +132,7 @@ _.Secrets =
 				["questID"] = 52907,
 				["sourceQuests"] = { 52906 },
 				["description"] = "Duskwood\n\nUnderneath the large plank.\n\nThe Scratched Board reads:\n\n\"<Something is written here.>\n\nThe net saves.\"",
-				["coord"] = { 52.0, 62.4, 47 },	-- Scratched Board
+				["coord"] = { 52.0, 62.4, DUSKWOOD },	-- Scratched Board
 			}),
 			o(294108, { 	-- Lost Ring
 				["model"] = 242730,
@@ -162,7 +162,7 @@ _.Secrets =
 				["questID"] = 52911,
 				["sourceQuests"] = { 52910 },
 				["description"] = "Burning Steppes\n\nEquipped on the larger brown skeletons head.\n\nThe Worn Helm reads:\n\n\"<Something is written here.>\n\nSensed the Figs...\"",
-				["coord"] = { 27.1, 47.0, 36 },	-- Worn Helm
+				["coord"] = { 27.1, 47.0, BURNING_STEPPES },	-- Worn Helm
 			}),
 			o(294112, { 	-- Leafy Leaf
 				["model"] = 523642,
@@ -185,7 +185,7 @@ _.Secrets =
 				["questID"] = 52914,
 				["sourceQuests"] = { 52913 },
 				["description"] = "Twilight Highlands\n\nOn the ground next to the mace.\n\nThe Broken Tablet reads:\n\n\"<Something is written here.>\n\nStarfish droplets!\"",
-				["coord"] = { 17.1, 57.9, 241 },	-- Broken Tablet
+				["coord"] = { 17.1, 57.9, TWILIGHT_HIGHLANDS },	-- Broken Tablet
 			}),
 			o(294115, { 	-- Ashed Torch
 				["model"] = 341882,
@@ -224,13 +224,13 @@ _.Secrets =
 				["questID"] = 52822,
 				["sourceQuests"] = { 52918 },
 				["description"] = "Twilight Highlands\n\n/slap",
-				["coord"] = { 28.5, 24.9, 241 },	-- Aquinastrasz <Vermillion Redoubt Flight Master>
+				["coord"] = { 28.5, 24.9, TWILIGHT_HIGHLANDS },	-- Aquinastrasz <Vermillion Redoubt Flight Master>
 			}),
 			n(36034, { 	-- Karnum Marshweaver <The Cenarion Circle>
 				["questID"] = 52823,
 				["sourceQuests"] = { 52918 },
 				["description"] = "Desolace\n\n/wave",
-				["coord"] = { 57.5, 47.7, 66 },	-- Karnum Marshweaver <The Cenarion Circle>
+				["coord"] = { 57.5, 47.7, DESOLACE },	-- Karnum Marshweaver <The Cenarion Circle>
 			}),
 			n(28792, { 	-- Noggra <General Goods>
 				["questID"] = 52824,

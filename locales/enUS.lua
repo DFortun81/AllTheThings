@@ -215,8 +215,10 @@ app.L = {
 	["REAGENT_CACHE_OUT_OF_DATE"] = "Reagent Cache is out-of-date and will be re-cached when opening your professions!";
 	["ARTIFACT_CACHE_OUT_OF_DATE"] = "Artifact Cache is out-of-date/inaccurate and will be re-cached when logging onto each character!";
 	["QUEST_LOOP"] = "Likely just broke out of an infinite source quest loop.";
-	["QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT"] = "Quest '%s' [%d] will prevent collection of Breadcrumb Quest [%d]";
+	["QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT"] = "Quest '%s' [%d] will prevent collection of Breadcrumb Quest '%s' [%d]";
 	["QUEST_OBJECTIVE_INVALID"] = "Invalid Quest Objective";
+	["REFRESHING_COLLECTION"] = "Refreshing collection...";
+	["DONE_REFRESHING"] = "Done refreshing collection.";
 
 	-- Item Filter Window
 	["ITEM_FILTER_TEXT"] = "Item Filters";
@@ -240,21 +242,24 @@ app.L = {
 	["QUEST_ONCE_PER_ACCOUNT_FORMAT"] = "Completed By: %s";
 
 	-- Settings.lua
-		-- General tab
-			-- Mod Title
+		["SKIP_AUTO_REFRESH"] = "Do Not Auto-Refresh!";
+		["SKIP_AUTO_REFRESH_TOOLTIP"] = "By default (unchecked), any Settings change which may affect visible data will cause an automatic refresh.\n\nBy enabling this option, Settings changes won't take effect until the User performs a Full Refresh by Shift-Clicking on an ATT window.";
+		["AFTER_REFRESH"] = "After Refresh";
 
-	["MODE"] = "Mode";
-	["TITLE_COMPLETIONIST"] = "Completionist ";
-	["TITLE_UNIQUE_APPEARANCE"] = "Unique Appearance ";
-	["TITLE_DEBUG"] = "Debug ";
-	["TITLE_ACCOUNT"] = "Account ";
-	["TITLE_MAIN_ONLY"] = " (Main Only)";
-	["TITLE_NONE_THINGS"] = "None of the Things ";
-	["TITLE_ONLY"] = " Only ";
-	["TITLE_INSANE"] = "Insane ";
-	["TITLE_SOME_THINGS"] = "Some of the Things ";
-	["TITLE_LEVEL"] = "Level ";
-	["_BETA_LABEL"] = " |CFF4AA7FF[Beta]|R";
+		-- General tab
+			-- Mode Title
+				["MODE"] = "Mode";
+				["TITLE_COMPLETIONIST"] = "Completionist ";
+				["TITLE_UNIQUE_APPEARANCE"] = "Unique Appearance ";
+				["TITLE_DEBUG"] = "Debug ";
+				["TITLE_ACCOUNT"] = "Account ";
+				["TITLE_MAIN_ONLY"] = " (Main Only)";
+				["TITLE_NONE_THINGS"] = "None of the Things ";
+				["TITLE_ONLY"] = " Only ";
+				["TITLE_INSANE"] = "Insane ";
+				["TITLE_SOME_THINGS"] = "Some of the Things ";
+				["TITLE_LEVEL"] = "Level ";
+				["_BETA_LABEL"] = " |CFF4AA7FF[Beta]|R";
 
 
 	["GENERAL_TAB"] = "General";
@@ -532,7 +537,6 @@ app.L = {
 	["SPLIT"] = "Per Difficulty";
 	["REQUIRES_LEVEL"] = "Requires Level";
 	["SECRETS_HEADER"] = "Secrets";
-	["SELFIE_FILTERS_HEADER"] = "Selfie Filters";
 	["LIMITED_QUANTITY"] = "This has a limited quantity and may not always be present on the vendor.";
 	["SOURCE_ID_MISSING"] = "Please report this Item and where it was acquired to the ATT Discord in #errors!";
 
@@ -1131,6 +1135,9 @@ app.L = {
 		[-691] = "Interface\\Icons\\inv_protodrakegladiatormount_purple",					-- Notorious Gladiator: Battle for Azeroth Season 3
 		[-692] = "Interface\\Icons\\inv_protodrakegladiatormount_black",					-- Corrupted Gladiator: Battle for Azeroth Season 4
 		[-693] = "Interface\\Icons\\inv_shadebeastmount",									-- Sinful Gladiator: Shadowlands Season 1
+		[-796] = app.asset("Category_PetBattles"),											-- Battle
+		[-797] = 631719,																	-- Journal
+		[-798] = app.asset("Category_SelfieFilters"),										-- Selfie Filter
 		[-799] = "775461",																	-- Burden of Eternity
 		[-800] = "Interface\\Icons\\inv_horse2purple",										-- Lucid Nightmare
 		[-801] = "Interface\\Icons\\inv_serpentmount_darkblue",								-- Riddler's Mind-Worm
@@ -1931,8 +1938,14 @@ app.L = {
 	-- Shadowlands PvP Seasons
 		[-693] = select(2, GetAchievementInfo(14690)),							-- Sinful Gladiator: Shadowlands Season 1
 
+	-- Pets
+		[-796] = BATTLE_PET_SOURCE_5,											-- Pet Battle
+		[-797] = PET_JOURNAL,													-- Pet Journal
 
-		[-799] = "Burden of Eternity",											-- Burden of Eternity
+	-- Toys
+		[-798] = GetSpellInfo(181765),											-- S.E.L.F.I.E. Camera
+
+		[-799] = GetSpellInfo(147343),											-- Burden of Eternity
 
 	-- Secret Header [Maybe need to change the numbers again when I need more space for PvP -- sadidorf]
 		[-800] = GetSpellInfo(247402), 											-- Lucid Nightmare
@@ -1941,15 +1954,15 @@ app.L = {
 		[-804] = GetSpellInfo(254763),											-- Uuna
 		[-805] = GetSpellInfo(277461),											-- Baa'l
 		[-806] = "Waist of Time",												-- Waist of Time
-		[-807] = "Hivemind",													-- Hivemind
-		[-808] = "Bound Shadehound",											-- Bound Shadehound
+		[-807] = GetSpellInfo(261395),											-- The Hivemind
+		[-808] = GetSpellInfo(344577),											-- Bound Shadehound
 
 	-- Mechagon
 		[-850] = "Mechanized Chest",											-- Mechanized Chest
 		[-851] = "Irontide Chest",												-- Irontide Chest
 
 	-- 8.2 Neck Stuff
-		[-852] = "Azerite Essences",											-- Azerite Essences
+		[-852] = SPLASH_BATTLEFORAZEROTH_8_2_0_FEATURE2_TITLE,					-- Heart of Azeroth Essences
 		[-853] = "All Roles",													-- All Roles
 		[-854] = "DPS",															-- DPS
 		[-855] = "Healers",														-- Healers

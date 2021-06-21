@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(241, {	-- Twilight Highlands
+		m(TWILIGHT_HIGHLANDS, {
 			n(-38,  {	-- Profession
 				prof(MINING, {
 					["description"] = "Elementium Veins (0.05% Drop Rate) and Rich Elementium Veins (0.08% Drop Rate) require a mining skill of 475-500.",

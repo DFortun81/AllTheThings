@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(84, {	-- Stormwind City
+		m(STORMWIND_CITY, {
 			n(FLIGHT_PATHS, {
 				fp(2, {	-- Stormwind, Elwynn
-					["coord"] = { 71.0, 72.6, 84 },
+					["coord"] = { 71.0, 72.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),

@@ -11,7 +11,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 			285,	-- Blackwing Descent (The Broken Hall)
 			286,	-- Blackwing Descent (Vault of the Shadowflame)
 		},
-		["coord"] = { 47.54, 68.93, 13 },	-- Blackwing Descent, Eastern Kingdoms (This is the metamap it uses, don't change!)
+		["coord"] = { 47.54, 68.93, EASTERN_KINGDOMS },	-- Blackwing Descent (This is the metamap it uses, don't change!)
 		["groups"] = {
 			ach(4842),	-- Blackwing Descent
 			n(ZONEDROPS, {

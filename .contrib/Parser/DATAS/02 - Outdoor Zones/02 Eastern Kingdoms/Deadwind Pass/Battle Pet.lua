@@ -16,14 +16,14 @@ _.Zones =
 				}),
 				q(31915, {	-- Grand Master Lydia Accoste (non-daily)
 					["provider"] = { "n", 66522 },	-- Lydia Accoste
-					["coord"] = { 40.0, 76.4, 42 },
+					["coord"] = { 40.0, 76.4, DEADWIND_PASS },
 					["g"] = {
 						i(89125),	-- Sack of Pet Supplies
 					},
 				}),
 				q(31916, { 	-- Grand Master Lydia Accoste (daily)
 					["provider"] = { "n", 66522 },	-- Lydia Accoste
-					["coord"] = { 40.0, 76.4, 42 },
+					["coord"] = { 40.0, 76.4, DEADWIND_PASS },
 					["isDaily"] = true,
 					["sourceQuest"] = 31915,	-- Grand Master Lydia Accoste
 					["g"] = {
@@ -32,14 +32,14 @@ _.Zones =
 				}),
 				q(31980, {	-- The Returning Champion
 					["provider"] = { "n", 66522 },	-- Lydia Accoste
-					["coord"] = { 40.0, 76.4, 42 },
+					["coord"] = { 40.0, 76.4, DEADWIND_PASS },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["altQuests"] = { 31977 },	-- The Returning Champion (Winterspring)
 				}),
 				q(31976, {	-- The Returning Champion
 					["provider"] = { "n", 66522 },	-- Lydia Accoste
-					["coord"] = { 40.0, 76.4, 42 },
+					["coord"] = { 40.0, 76.4, DEADWIND_PASS },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["altQuests"] = { 31975 },	-- The Returning Champion (Winterspring)

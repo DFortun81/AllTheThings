@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(36, {	-- Burning Steppes
+		m(BURNING_STEPPES, {
 			n(ACHIEVEMENTS, {
 				ach(4901, {	-- Burning Steppes Quests
 					crit(1, {	-- Preparation

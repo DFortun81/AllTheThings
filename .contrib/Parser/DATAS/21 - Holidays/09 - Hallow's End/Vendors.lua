@@ -10,8 +10,8 @@ _.Holidays =
 			n(VENDORS, {
 				n(53757,  {	-- Chub <Candy & Toy Vendor>
 					["races"] = HORDE_ONLY,
-					["coord"] = { 62.1, 66.4, 18 },
-					["maps"] = { 18 },	-- Tirisfal Glades
+					["coord"] = { 62.1, 66.4, TIRISFAL_GLADES },
+					["maps"] = { TIRISFAL_GLADES },
 					["g"] = {
 						i(122338, {	-- Ancient Heirloom Armor Casing
 							["cost"] = {
@@ -127,9 +127,9 @@ _.Holidays =
 					},
 				}),
 				n(53756,  {	-- Darla <Wand Vendor>
-					["coord"] = { 62.2, 66.4, 18 },
+					["coord"] = { 62.2, 66.4, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
-					["maps"] = { 18 },	-- Tirisfal Glades
+					["maps"] = { TIRISFAL_GLADES },
 					["g"] = bubbleDown({["u"] = 26}, {
 						i(116851, {	-- Hallowed Wand - Abomination
 							["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
@@ -339,8 +339,8 @@ _.Holidays =
 				}),
 				n(53760,  {	-- Farina <Mask Vendor>
 					["races"] = HORDE_ONLY,
-					["coord"] = { 62.3, 66.4, 18 },
-					["maps"] = { 18 },	-- Tirisfal Glades
+					["coord"] = { 62.3, 66.4, TIRISFAL_GLADES },
+					["maps"] = { TIRISFAL_GLADES },
 					["g"] = bubbleDown({["u"] = 26}, {
 						i(34000,  {	-- Blood Elf Female Mask
 							["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
@@ -952,8 +952,8 @@ _.Holidays =
 				}),
 				n(109688, {	-- Woim <Pet Vendor>
 					["races"] = HORDE_ONLY,
-					["coord"] = { 62.3, 66.4, 18 },
-					["maps"] = { 18 },	-- Tirisfal Glades	Note!! While technically under UC this is where the map swaps.
+					["coord"] = { 62.3, 66.4, TIRISFAL_GLADES },
+					["maps"] = { TIRISFAL_GLADES },	-- Note!! While technically under UC this is where the map swaps.
 					["g"] = bubbleDown({["u"] = 26}, {
 						i(116811, {	-- "Lil' Starlet" Costume
 							["cost"] = { { "i", 33226, 5 }, },	-- 5x Tricky Treat

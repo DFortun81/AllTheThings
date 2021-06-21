@@ -135,6 +135,9 @@ _.Achievements =
 					ach(14348),	-- The Path Towards Ascension 20
 					ach(14349),	-- The Path Towards Ascension 24
 				}),
+				ach(14887, {	-- To the Moon
+					["description"] = "Requires the Path of Ascension building. Some people needed 50+ tries for this achievement, others needed 500+. There is no guaranteed way known. You need to /wave at Athanos while he knocks you off with any ability.",
+				}),
 			})),
 			n(-920, bubbleDown({["customCollect"] = { "SL_COV_NEC" }},{	-- Covenant: Necrolord
 				ach(14833, {	-- Fashion Abomination

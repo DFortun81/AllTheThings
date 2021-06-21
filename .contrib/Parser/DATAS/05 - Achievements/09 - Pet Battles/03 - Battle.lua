@@ -97,8 +97,8 @@ _.Achievements =
 				crit(16, {	-- Gargra (Frostfire Ridge)
 					["coord"] = { 68.6, 64.6, 525 },
 				}),
-				crit(17, {	-- Goz Banefury (Twilight Highlands)
-					["coord"] = { 56.6, 56.8, 241 },
+				crit(17, {	-- Goz Banefury
+					["coord"] = { 56.6, 56.8, TWILIGHT_HIGHLANDS },
 				}),
 				crit(18, {	-- Gutretch (Zul'Drak)
 					["coord"] = { 13.2, 66.8, 121 },
@@ -112,8 +112,8 @@ _.Achievements =
 				crit(21, {	-- Lorewalker Cho (Celestial Tournament)
 					["coord"] = { 34.8, 59.6, 554 },
 				}),
-				crit(22, {	-- Lydia Accoste (Deadwind Pass)
-					["coord"] = { 40.2, 76.6, 42 },
+				crit(22, {	-- Lydia Accoste
+					["coord"] = { 40.2, 76.6, DEADWIND_PASS },
 				}),
 				crit(23, {	-- Major Payne (Icecrown)
 					["coord"] = { 77.4, 19.6, 118 },

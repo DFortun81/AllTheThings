@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(22, {	-- Western Plaguelands
+		m(WESTERN_PLAGUELANDS, {
 			n(ZONEDROPS, {
 				un(REMOVED_FROM_GAME, i(15771, {	-- Pattern: Living Breastplate
 					["crs"] = { 1813 },	-- Decaying Horror

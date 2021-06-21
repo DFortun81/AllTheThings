@@ -40,19 +40,19 @@ _.GearSets =
 			}),
 			q(54763, {	-- Crossing Over
 				["provider"] = { "n", 149529 },	-- Spiritwalker Ussoh
-				["coord"] = { 49.2, 60.8, 65 },
+				["coord"] = { 49.2, 60.8, STONETALON_MOUNTAINS },
 				["sourceQuest"] = 54762,	-- A Small Retreat
 				["races"] = { TAUREN },
 				["minReputation"] = { 81, EXALTED },
-				["maps"] = { 65 },	-- Stonetalon Mountains
+				["maps"] = { STONETALON_MOUNTAINS },
 			}),
 			q(54764, {	-- Storm in Bloodhoof
 				["provider"] = { "n", 149529 },	-- Spiritwalker Ussoh
-				["coord"] = { 49.2, 60.8, 65 },
+				["coord"] = { 49.2, 60.8, STONETALON_MOUNTAINS },
 				["sourceQuest"] = 54763,	-- Crossing Over
 				["races"] = { TAUREN },
 				["minReputation"] = { 81, EXALTED },
-				["maps"] = { 65 },	-- Stonetalon Mountains
+				["maps"] = { STONETALON_MOUNTAINS },
 			}),
 			q(54766, {	-- Answer the Call
 				["provider"] = { "n", 36648 },	-- Baine Bloodhoof <High Chieftain>

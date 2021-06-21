@@ -358,7 +358,7 @@ _.Zones =
 						q(37445, {	-- Spare Parts
 							["sourceQuests"] = { 10302 },	-- Volatile Mutations
 							["provider"] = { "n", 17071 },	-- Technician Zhanaa
-							["coord"] = { 50.7, 48.0 },
+							["coord"] = { 50.7, 48.0, AMMEN_VALE },
 							["races"] = ALLIANCE_ONLY,
 							["timeline"] = { "added 6.0.2.18816" },
 						}),

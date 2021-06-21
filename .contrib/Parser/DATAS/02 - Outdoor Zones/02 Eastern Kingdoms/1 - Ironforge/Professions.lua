@@ -10,8 +10,8 @@ _.Zones =
 				prof(ALCHEMY, {
 					n(QUESTS, {
 						q(29481, {	-- Elixir Master
-							["provider"] = { "n", 5177 },	-- Tally Berryfizz (Ironfoge)
-							["coord"] = { 66.6, 55.0, 87 },	-- Tally Berryfizz (Ironfoge)
+							["provider"] = { "n", 5177 },	-- Tally Berryfizz
+							["coord"] = { 66.6, 55.0, IRONFORGE },	-- Tally Berryfizz
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = ALCHEMY,
 							["repeatable"] = true,
@@ -25,8 +25,8 @@ _.Zones =
 							},]]
 						}),
 						q(29067, {	-- Potion Master
-							["provider"] = { "n", 5177 },	-- Tally Berryfizz (Ironfoge)
-							["coord"] = { 66.6, 55.0, 87 },	-- Tally Berryfizz (Ironfoge)
+							["provider"] = { "n", 5177 },	-- Tally Berryfizz
+							["coord"] = { 66.6, 55.0, IRONFORGE },	-- Tally Berryfizz
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = ALCHEMY,
 							["repeatable"] = true,
@@ -40,8 +40,8 @@ _.Zones =
 							},]]
 						}),
 						q(29482, {	-- Transmutation Master
-							["provider"] = { "n", 5177 },	-- Tally Berryfizz (Ironfoge)
-							["coord"] = { 66.6, 55.0, 87 },	-- Tally Berryfizz (Ironfoge)
+							["provider"] = { "n", 5177 },	-- Tally Berryfizz
+							["coord"] = { 66.6, 55.0, IRONFORGE },	-- Tally Berryfizz
 							["description"] = "Requires 300 Classic Alchemy.",
 							["requireSkill"] = ALCHEMY,
 							["repeatable"] = true,
@@ -65,7 +65,7 @@ _.Zones =
 					n(QUESTS, {
 						q(29352, {	-- A Fowl Shortage
 							["provider"] = { "n", 5159 },	-- Daryl Riknussun
-							["coord"] = { 60.1, 36.4, 87 },
+							["coord"] = { 60.1, 36.4, IRONFORGE },
 							["isDaily"] = true,
 							["requireSkill"] = COOKING,
 							["races"] = ALLIANCE_ONLY,
@@ -79,7 +79,7 @@ _.Zones =
 						}),
 						q(29351, {	-- A Round for the Guards
 							["provider"] = { "n", 5159 },	-- Daryl Riknussun
-							["coord"] = { 60.1, 36.4, 87 },
+							["coord"] = { 60.1, 36.4, IRONFORGE },
 							["isDaily"] = true,
 							["requireSkill"] = COOKING,
 							["races"] = ALLIANCE_ONLY,
@@ -93,7 +93,7 @@ _.Zones =
 						}),
 						q(29355, {	-- Can't Get Enough Spice Bread
 							["provider"] = { "n", 5159 },	-- Daryl Riknussun
-							["coord"] = { 60.1, 36.4, 87 },
+							["coord"] = { 60.1, 36.4, IRONFORGE },
 							["isDaily"] = true,
 							["requireSkill"] = COOKING,
 							["races"] = ALLIANCE_ONLY,
@@ -107,7 +107,7 @@ _.Zones =
 						}),
 						q(29356, {	-- I Need to Cask a Favor
 							["provider"] = { "n", 5159 },	-- Daryl Riknussun
-							["coord"] = { 60.1, 36.4, 87 },
+							["coord"] = { 60.1, 36.4, IRONFORGE },
 							["isDaily"] = true,
 							["requireSkill"] = COOKING,
 							["races"] = ALLIANCE_ONLY,
@@ -121,7 +121,7 @@ _.Zones =
 						}),
 						q(29353, {	-- Keepin' the Haggis Flowin'
 							["provider"] = { "n", 5159 },	-- Daryl Riknussun
-							["coord"] = { 60.1, 36.4, 87 },
+							["coord"] = { 60.1, 36.4, IRONFORGE },
 							["isDaily"] = true,
 							["requireSkill"] = COOKING,
 							["races"] = ALLIANCE_ONLY,
@@ -139,7 +139,7 @@ _.Zones =
 					n(QUESTS, {
 						q(1618,  {	-- Gearing Redridge
 							["provider"] = { "n", 6031 },	-- Tormus Deepforge
-							["coord"] = { 49.0, 42.4, 87 },
+							["coord"] = { 49.0, 42.4, IRONFORGE },
 							["requireSkill"] = BLACKSMITHING,
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 15,
@@ -149,7 +149,7 @@ _.Zones =
 						}),
 						q(1578,  {	-- Supplying the Front
 							["provider"] = { "n", 6031 },	-- Tormus Deepforge
-							["coord"] = { 49.0, 42.4, 87 },
+							["coord"] = { 49.0, 42.4, IRONFORGE },
 							["requireSkill"] = BLACKSMITHING,
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 10,
@@ -178,7 +178,7 @@ _.Zones =
 						}),
 						q(29342, {	-- Cold Water Fishing
 							["provider"] = { "n", 5161 },	-- Grimnur Stonebrand
-							["coord"] = { 48.4, 8.2, 87 },
+							["coord"] = { 48.4, 8.2, IRONFORGE },
 							["isDaily"] = true,
 							["requireSkill"] = FISHING,
 							["races"] = ALLIANCE_ONLY,
@@ -191,7 +191,7 @@ _.Zones =
 						}),
 						q(8229, {	-- Could I get a Fishing Flier?
 							["provider"] = { "n", 15119 },	-- Barrus
-							["coord"] = { 28.6, 74.6, 87 },
+							["coord"] = { 28.6, 74.6, IRONFORGE },
 							["isBreadcrumb"] = true,
 							["repeatable"]= true,
 							["requireSkill"] = FISHING,
@@ -200,7 +200,7 @@ _.Zones =
 						}),
 						q(29344, {	-- Fish fer Squrky
 							["provider"] = { "n", 5161 },	-- Grimnur Stonebrand
-							["coord"] = { 48.4, 8.2, 87 },
+							["coord"] = { 48.4, 8.2, IRONFORGE },
 							["isDaily"] = true,
 							["requireSkill"] = FISHING,
 							["races"] = ALLIANCE_ONLY,
@@ -213,7 +213,7 @@ _.Zones =
 						}),
 						q(6609, {	-- I Got Nothin' Left!
 							["provider"] = { "n", 5161 },	-- Grimnur Stonebrand
-							["coord"] = { 48.4, 8.2, 87 },
+							["coord"] = { 48.4, 8.2, IRONFORGE },
 							["isBreadcrumb"] = true,
 							["requireSkill"] = FISHING,
 							["races"] = ALLIANCE_ONLY,
@@ -222,7 +222,7 @@ _.Zones =
 						}),
 						q(29347, {	-- Live Bait
 							["provider"] = { "n", 5161 },	-- Grimnur Stonebrand
-							["coord"] = { 48.4, 8.2, 87 },
+							["coord"] = { 48.4, 8.2, IRONFORGE },
 							["isDaily"] = true,
 							["requireSkill"] = FISHING,
 							["races"] = ALLIANCE_ONLY,
@@ -235,7 +235,7 @@ _.Zones =
 						}),
 						q(29343, {	-- One fer the Ages
 							["provider"] = { "n", 5161 },	-- Grimnur Stonebrand
-							["coord"] = { 48.4, 8.2, 87 },
+							["coord"] = { 48.4, 8.2, IRONFORGE },
 							["isDaily"] = true,
 							["requireSkill"] = FISHING,
 							["races"] = ALLIANCE_ONLY,
@@ -248,7 +248,7 @@ _.Zones =
 						}),
 						q(29350, {	-- The Gnomish Bait-o-Matic
 							["provider"] = { "n", 5161 },	-- Grimnur Stonebrand
-							["coord"] = { 48.4, 8.2, 87 },
+							["coord"] = { 48.4, 8.2, IRONFORGE },
 							["isDaily"] = true,
 							["requireSkill"] = FISHING,
 							["races"] = ALLIANCE_ONLY,
@@ -269,7 +269,7 @@ _.Zones =
 					n(QUESTS, {
 						q(39956, {	-- The Legacy Passed On
 							["provider"] = { "n", 97762 },	-- Bill Spearshaker <Author Extrodinaire>
-							["coord"] = { 77.2, 10.4, 87 },
+							["coord"] = { 77.2, 10.4, IRONFORGE },
 							["sourceQuest"] = 39955,	-- The Plot Thickens
 							["requireSkill"] = INSCRIPTION,
 							["races"] = ALLIANCE_ONLY,

@@ -16,7 +16,7 @@ _.Secrets =
 						["g"] = {
 							n(144128, {	-- Dark Iron Brewer
 								["coords"] = {
-									{ 21.0, 38.3, 36 },	-- Blackrock Mountain
+									{ 21.0, 38.3, BURNING_STEPPES },	-- Blackrock Mountain
 									{ 55.0, 84.5, BLACKROCK_MOUNTAIN_LEVEL3 },	-- Entrance by MC
 									{ 39.0, 18.3, BLACKROCK_MOUNTAIN_LEVEL3 },	-- BRD Entrance
 									{ 49.8, 60.9, 243 },	-- Inside Instance
@@ -127,7 +127,7 @@ _.Secrets =
 						["g"] = {
 							n(1316, {	-- Adair Gilroy <Librarian>
 								["description"] = "Stormwind",
-								["coord"] = { 51.8, 74.8, 84 },
+								["coord"] = { 51.8, 74.8, STORMWIND_CITY },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							n(958, {	-- Dawn Brightstar <Arcane Goods>
@@ -142,7 +142,7 @@ _.Secrets =
 							}),
 							n(4581, {	-- Rathis Tomber <Trade Supplies>
 								["description"] = "Undercity",
-								["coord"] = { 77.6, 38.6, 90 },
+								["coord"] = { 77.6, 38.6, UNDERCITY },
 								["races"] = HORDE_ONLY,
 							}),
 						},

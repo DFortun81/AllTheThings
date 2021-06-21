@@ -5,14 +5,14 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(241, {	-- Twilight Highlands
+		m(TWILIGHT_HIGHLANDS, {
 			n(ACHIEVEMENTS, {
 				ach(9069, {	-- An Awfully Big Adventure
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
 					["g"] = {
 						crit(17, {	-- Goz Banefury
-							["coord"] = { 56.6, 56.8, 241 },
+							["coord"] = { 56.6, 56.8, TWILIGHT_HIGHLANDS },
 							["cr"] = 66822,	-- Goz Banefury <Master Pet Tamer>
 						}),
 					},
@@ -25,30 +25,30 @@ _.Zones =
 					["g"] = {
 						crit(1, {	-- High Shaman MacKilligan slain
 							["creatureID"] = 46885,
-							["coord"] = { 45.8, 33.6, 241 },
+							["coord"] = { 45.8, 33.6, TWILIGHT_HIGHLANDS },
 						}),
 						crit(2, {	-- Dillan MacHurley slain
 							["creatureID"] = 46378,
 							["coords"] = {
-								{ 45.0, 37.6, 241 },
-								{ 46.8, 36.8, 241 },
+								{ 45.0, 37.6, TWILIGHT_HIGHLANDS },
+								{ 46.8, 36.8, TWILIGHT_HIGHLANDS },
 							},
 						}),
 						crit(3, {	-- Gunwald Greybeard slain
 							["creatureID"] = 46376,
-							["coord"] = { 45.2, 42.8, 241 },
+							["coord"] = { 45.2, 42.8, TWILIGHT_HIGHLANDS },
 						}),
 						crit(4, {	-- Cliff Thundermar slain
 							["creatureID"] = 46377,
-							["coord"] = { 52.8, 28.2, 241 },
+							["coord"] = { 52.8, 28.2, TWILIGHT_HIGHLANDS },
 						}),
 						crit(5, {	-- The Black Recluse spider slain
 							["creatureID"] = 47115,
-							["coord"] = { 45.8, 31.6, 241 },
+							["coord"] = { 45.8, 31.6, TWILIGHT_HIGHLANDS },
 						}),
 						crit(6, {	-- Korthalon the Black slain
 							["creatureID"] = 47171,
-							["coord"] = { 52.0, 27.6, 241 },
+							["coord"] = { 52.0, 27.6, TWILIGHT_HIGHLANDS },
 						}),
 					},
 				}),
@@ -142,22 +142,22 @@ _.Zones =
 					["g"] = {
 						crit(1, {	-- Warlord Halthar slain
 							["creatureID"] = 46493,
-							["coord"] = { 49.0, 37.2, 241 },
+							["coord"] = { 49.0, 37.2, TWILIGHT_HIGHLANDS },
 						}),
 						crit(2, {	-- Karkrog the Exterminator slain
 							["creatureID"] = 46756,
 							["coords"] = {
-								{ 50.8, 33.8, 241 },
-								{ 51.6, 33.0, 241 },
+								{ 50.8, 33.8, TWILIGHT_HIGHLANDS },
+								{ 51.6, 33.0, TWILIGHT_HIGHLANDS },
 							},
 						}),
 						crit(3, {	-- The Black Recluse spider slain
 							["creatureID"] = 47115,
-							["coord"] = { 45.8, 31.6, 241 },
+							["coord"] = { 45.8, 31.6, TWILIGHT_HIGHLANDS },
 						}),
 						crit(4, {	-- Korthalon the Black slain
 							["creatureID"] = 47171,
-							["coord"] = { 52.0, 27.6, 241 },
+							["coord"] = { 52.0, 27.6, TWILIGHT_HIGHLANDS },
 						}),
 					},
 				}),

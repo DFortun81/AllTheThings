@@ -843,7 +843,7 @@ _.Zones =
 					["lvl"] = 82,
 					["coords"] = {
 						{ 50.4, 38.2, ORGRIMMAR },	-- Farseer Krogar
-						{ 74.4, 18.8, 84 },	-- Naraat the Earthspeaker (Stormwind)
+						{ 74.4, 18.8, STORMWIND_CITY },	-- Naraat the Earthspeaker
 					},
 					["providers"] = {
 						{ "n", 45224 },	-- Farseer Krogar

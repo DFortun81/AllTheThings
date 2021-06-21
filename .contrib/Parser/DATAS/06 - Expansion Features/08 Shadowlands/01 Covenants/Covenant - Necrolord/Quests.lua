@@ -876,4 +876,7 @@ _.HiddenQuestTriggers = {
 	q(62306),	-- using "Sorcerer's Blade"
 --	Unknown
 	q(60773),	-- Renown 30/Channeling anima
+	
+--	Unity Transmog
+	q(63407),	-- Leather Chest
 };

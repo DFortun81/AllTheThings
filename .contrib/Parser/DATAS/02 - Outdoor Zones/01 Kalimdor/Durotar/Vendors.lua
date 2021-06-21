@@ -4,10 +4,10 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(1, {	-- Durotar
+		m(DUROTAR, {
 			n(VENDORS, {
 				n(3881,   {	-- Grimtak
-					["coord"] = { 50.8, 42.8, 1 },
+					["coord"] = { 50.8, 42.8, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(5483),	-- Recipe: Scorpid Surprise
@@ -15,7 +15,7 @@ _.Zones =
 				}),
 				n(113615, {	-- Ravika <Darkspear Quartermaster> Legion Version
 					["description"] = "Only available with the quests |cFFFFD700The Legion Returns|r or |cFFFFD700To Be Prepared|r. Permanently available on the Echo Isles.",
-					["coord"] = { 55.4, 11.2, 1 },
+					["coord"] = { 55.4, 11.2, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(97901),	-- Griftah's Authentic Troll Shoes
@@ -47,7 +47,7 @@ _.Zones =
 					},
 				}),
 				n(5942,   {	-- Zansoa <Fishing Supplies>
-					["coord"] = { 57.4, 77.0, 1 },
+					["coord"] = { 57.4, 77.0, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(6368),	-- Recipe: Rainbow Fin Albacore
@@ -55,7 +55,7 @@ _.Zones =
 					},
 				}),
 				n(7952,   {	-- Zjolnir <Raptor Handler>
-					["coord"] = { 55.2, 75.6, 1 },
+					["coord"] = { 55.2, 75.6, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(18788),	-- Swift Blue Raptor

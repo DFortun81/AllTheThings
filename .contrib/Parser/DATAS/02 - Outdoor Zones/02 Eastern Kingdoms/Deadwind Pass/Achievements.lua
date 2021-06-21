@@ -12,7 +12,7 @@ _.Zones =
 					["filterID"] = 101,	-- Battle Pet
 					["g"] = {
 						crit(22, {	-- Lydia Accoste
-							["coord"] = { 40.2, 76.6, 42 },
+							["coord"] = { 40.2, 76.6, DEADWIND_PASS },
 							["cr"] = 66522,	-- Lydia Accoste <Grand Master Pet Tamer>
 						}),
 					},

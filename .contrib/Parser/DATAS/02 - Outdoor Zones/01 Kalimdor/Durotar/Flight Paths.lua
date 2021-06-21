@@ -4,13 +4,13 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(1, {	-- Durotar
+		m(DUROTAR, {
 			n(FLIGHT_PATHS, {
-				fp(537, {	-- Razor Hill, Durotar
-					["coord"] = { 53.0, 43.6, 1 },
+				fp(537, {	-- Razor Hill
+					["coord"] = { 53.0, 43.6, DUROTAR },
 				}),
-				fp(536, {	-- Sen'jin Village, Durotar
-					["coord"] = { 55.4, 73.4, 1 },
+				fp(536, {	-- Sen'jin Village
+					["coord"] = { 55.4, 73.4, DUROTAR },
 				}),
 			}),
 		}),

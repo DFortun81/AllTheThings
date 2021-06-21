@@ -69,7 +69,7 @@ _.Zones =
 					["groups"] = {
 						objective(1, {	-- 0/5 Bladespire Hold building cursed
 							["provider"] = { "i", 30479 },	-- Wicked Strong Fetish (Provided)
-							["coord"] = { 42, 47, BLADES_EDGE_MOUNTAINS },
+							["coord"] = { 42.0, 47.0, BLADES_EDGE_MOUNTAINS },
 							["cr"] = 21446,	-- Bladespire Evil Spirit
 						}),
 						objective(2, {	-- 0/2 Bloodmaul Outpost building cursed
@@ -1442,13 +1442,13 @@ _.Zones =
 -- #if AFTER TBC
 -- These quests trigger after specific events occur in the zone.
 _.HiddenQuestTriggers = {
-	
+
 };
 
 -- These quests never made it in.
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
-		
+
 	}),
 });
 -- #endif

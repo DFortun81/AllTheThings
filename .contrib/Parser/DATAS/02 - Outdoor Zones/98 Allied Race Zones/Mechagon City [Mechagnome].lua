@@ -20,8 +20,8 @@ _.Zones =
 					},
 				}),
 				q(58147, {	-- Stranger in a Strange Land
-					["maps"] = { 84 },	-- Stormwind
-					["coord"] = { 53.0, 15.2, 84 },
+					["maps"] = { STORMWIND_CITY },
+					["coord"] = { 53.0, 15.2, STORMWIND_CITY },
 					["races"] = { MECHAGNOME },
 					["provider"] = { "n", 133362 },	-- Ambassador Moorgard
 					["sourceQuest"] = 58146,	-- For the Alliance

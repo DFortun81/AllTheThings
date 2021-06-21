@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(84, {	-- Stormwind City
+		m(STORMWIND_CITY, {
 			n(VENDORS, {
 				n(69334,  {	-- Adherent Hanjun
-					["coord"] = { 68.0, 17.0, 84 },
+					["coord"] = { 68.0, 17.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(92071),	-- Tushui Satchel
@@ -16,7 +16,7 @@ _.Zones =
 					},
 				}),
 				n(1347,   {	-- Alexandra Bolero
-					["coord" ] = { 53.2, 81.6, 84 },
+					["coord"] = { 53.2, 81.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = appendGroups(COMMON_CATACLYSM_TAILORING_RECIPES, {
 						i(6274, {	-- Pattern: Blue Overalls
@@ -28,7 +28,7 @@ _.Zones =
 					}),
 				}),
 				n(175051, {	-- Alice Fischer <Corrupted Aspirant Vendor>
-					["coord" ] = { 74.97, 67.35, 84 },
+					["coord"] = { 75.0, 67.4, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						n(-659, {	-- Aspirant PvP Gear
@@ -234,7 +234,7 @@ _.Zones =
 				}),
 				n(55285,  {	-- Astrid Langstrump
 					["description"] = "Appears in Stormwind after War of Thorns.",
-					["coord"] = { 52.4, 8.2, 84 },
+					["coord"] = { 52.4, 8.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(73838),	-- Mountain Horse
@@ -242,7 +242,7 @@ _.Zones =
 					},
 				}),
 				n(12777,  {	-- Captain Dirgehammer (Legacy)
-					["coord"] = { 75.0, 67.5, 84 },
+					["coord"] = { 75.0, 67.5, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
@@ -331,7 +331,7 @@ _.Zones =
 					},
 				}),
 				n(69975,  {	-- Captain Dirgehammer <Cataclysmic Gladiator>
-					["coord"] = { 75.0, 67.5, 84 },
+					["coord"] = { 75.0, 67.5, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
 						{"sub", "pvp_gear_base", -9979, -674, -661 },	-- Cataclysmic Gladiator: Season 11 Gladiator Gear
@@ -340,7 +340,7 @@ _.Zones =
 					},
 				}),
 				n(49877,  {	-- Captain Lancy Revshon
-					["coord"] = { 67.6, 72.8, 84 },
+					["coord"] = { 67.6, 72.8, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(64902),	-- Cape of Stormwind
@@ -351,7 +351,7 @@ _.Zones =
 					},
 				}),
 				n(34079,  {	-- Captain O'Neal
-					["coord"] = { 75.0, 66.7, 84 },
+					["coord"] = { 75.0, 66.7, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
@@ -371,7 +371,7 @@ _.Zones =
 					},
 				}),
 				n(1291,   {	-- Carla Granger
-					["coord"] = { 62.2, 67.6, 84 },
+					["coord"] = { 62.2, 67.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(16059),	-- Common Brown Shirt
@@ -380,14 +380,14 @@ _.Zones =
 					},
 				}),
 				n(30713,  {	-- Catarina Stanford
-					["coord"] = { 49.8, 74.6, 84 },
+					["coord"] = { 49.8, 74.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(140566),	-- Technique: Songs of the Alliance
 					},
 				}),
 				n(5494,   {	-- Catherine Leland
-					["coord"] = { 55.0, 69.6, 84 },
+					["coord"] = { 55.0, 69.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(6325),	-- Recipe: Brilliant Smallfish
@@ -396,7 +396,7 @@ _.Zones =
 					},
 				}),
 				n(1307,   {	-- Charys Yserian
-					["coord"] = { 44.8, 86.2, 84 },
+					["coord"] = { 44.8, 86.2, STORMWIND_CITY },
 					["description"] = "The items this vendor sells have all limited supply.",
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -422,10 +422,10 @@ _.Zones =
 				}),
 				n(52358,  {	-- Craggle Wobbletop
 					["coords"] = {
-						{ 66.6, 64.4, 84 },
-						{ 63.6, 61.2, 84 },
-						{ 56.6, 67.6, 84 },
-						{ 58.6, 76.8, 84 },
+						{ 66.6, 64.4, STORMWIND_CITY },
+						{ 63.6, 61.2, STORMWIND_CITY },
+						{ 56.6, 67.6, STORMWIND_CITY },
+						{ 58.6, 76.8, STORMWIND_CITY },
 					},
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -448,7 +448,7 @@ _.Zones =
 					},
 				}),
 				n(133411, {	-- Dalia Skyblossom
-					["coord"] = { 51.4, 18.0, 84 },
+					["coord"] = { 51.4, 18.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(21219),	-- Recipe: Sagefish Delight
@@ -456,7 +456,7 @@ _.Zones =
 					},
 				}),
 				n(1304,   {	-- Darian Singh
-					["coord"] = { 42.6, 76.8, 84 },
+					["coord"] = { 42.6, 76.8, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(18649, {	-- Schematic: Blue Firework
@@ -465,7 +465,7 @@ _.Zones =
 					},
 				}),
 				n(50669,  {	-- Dawn Radue
-					["coord"] = { 64.8, 71.6, 84 },
+					["coord"] = { 64.8, 71.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(67396),	-- "Carriage - Christina" Precious Metal Bag
@@ -480,7 +480,7 @@ _.Zones =
 				}),
 				n(52029,  {	-- Edlan Halsing <Bloodthirsty Gladiator>
 					["itemID"] = 137642,	-- Mark of Honor
-					["coord"] = { 74.7, 68.2, 84 },
+					["coord"] = { 74.7, 68.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
 						{"sub", "pvp_gear_base", -9979, -672, -9983 },
@@ -488,7 +488,7 @@ _.Zones =
 					},
 				}),
 				n(1286,   {	-- Edna Mullby
-					["coord"] = { 64.6, 71.6, 84 },
+					["coord"] = { 64.6, 71.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(20856, {	-- Design: Heavy Golden Necklace of Battle
@@ -504,14 +504,14 @@ _.Zones =
 					},
 				}),
 				n(5503,   {	-- Eldraeith
-					["coord"] = { 55.6, 85.6, 84 },
+					["coord"] = { 55.6, 85.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(22250),	-- Herb Pouch
 					},
 				}),
 				n(5483,   {	-- Erika Tate
-					["coord"] = { 77.6, 53.2, 84 },
+					["coord"] = { 77.6, 53.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(21219),	-- Recipe: Sagefish Delight
@@ -519,7 +519,7 @@ _.Zones =
 					},
 				}),
 				n(44245,  {	-- Faldren Tillsdale
-					["coord"] = { 76.07, 66.78, 84 },
+					["coord"] = { 76.1, 66.8, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(77162),	-- Arrowflick Gauntlets
@@ -1456,7 +1456,7 @@ _.Zones =
 					},
 				}),
 				n(56925,  {	-- Farrah Facet
-					["coord"] = { 63.8, 61.6, 84 },
+					["coord"] = { 63.8, 61.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(71928, {	-- Design: Accurate Shadow Spinel
@@ -1663,7 +1663,7 @@ _.Zones =
 					},
 				}),
 				n(1298,   {	-- Frederick Stover
-					["coord"] = { 58.6, 69.0, 84 },
+					["coord"] = { 58.6, 69.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(11303, {	-- Fine Shortbow
@@ -1678,14 +1678,14 @@ _.Zones =
 					},
 				}),
 				n(50480,  {	-- Isabel Jones
-					["coord"] = { 63.8, 61.3, 84 },
+					["coord"] = { 63.8, 61.3, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 50482}, -- Marith Lazuria <Jewelcrafting Supplies>
 					},
 				}),
 				n(1318,   {	-- Jessara Cordell
-					["coord"] = { 53.0, 74.2, 84 },
+					["coord"] = { 53.0, 74.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = appendGroups(COMMON_CATACLYSM_ENCHANTING_RECIPES, {
 						i(20753),	-- Formula: Lesser Wizard Oil
@@ -1695,12 +1695,12 @@ _.Zones =
 					}),
 				}),
 				n(5565,   {	-- Jillian Tanner
-					["coord"] = { 71.7, 62.8, 84 },
+					["coord"] = { 71.7, 62.8, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = appendGroups(COMMON_CATACLYSM_LEATHERWORKING_RECIPES, {}),
 				}),
 				n(49701,  {	-- Jon Casper
-					["coord"] = { 50.6, 71.6, 84 },
+					["coord"] = { 50.6, 71.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(65426, {	-- Recipe: Baked Rockfish
@@ -1793,12 +1793,12 @@ _.Zones =
 					},
 				}),
 				n(55684,  {	-- Jordan Smith
-					["coord"] = { 64.8, 48.2, 84 },
+					["coord"] = { 64.8, 48.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = appendGroups(COMMON_CATACLYSM_BLACKSMITHING_RECIPES, {}),
 				}),
 				n(5512,   {	-- Kaita Deepforge
-					["coord"] = { 63.2, 37.6, 84 },
+					["coord"] = { 63.2, 37.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
 						{"sub", "common_recipes_vendor", 3356}, -- Sumi <Blacksmithing Supplies>
@@ -1810,7 +1810,7 @@ _.Zones =
 					},
 				}),
 				n(43694,  {	-- Katie Stokx
-					["coord"] = { 77.0, 67.8, 84 },
+					["coord"] = { 77.0, 67.8, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(2411),	-- Black Stallion Bridle
@@ -1823,7 +1823,7 @@ _.Zones =
 					},
 				}),
 				n(340,    {	-- Kendor Kabonka
-					["coord"] = { 76.4, 53.0, 84 },
+					["coord"] = { 76.4, 53.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(2889),	-- Recipe: Beer Basted Boar Ribs
@@ -1842,14 +1842,14 @@ _.Zones =
 					},
 				}),
 				n(40606,  {	-- Knight-Lieutenant T'Maire Sydes >S10< Elite Vendor
-					["coord"] = { 74.8, 67.6, 84 },
+					["coord"] = { 74.8, 67.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 					},
 				}),
 				n(69974,  {	-- Knight-Lieutenant T'Maire Sydes <Ruthless Gladiator>
-					["coord"] = { 74.8, 67.6, 84 },
+					["coord"] = { 74.8, 67.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
 						{"sub", "pvp_gear_base", -9979, -673, -661 },
@@ -1859,7 +1859,7 @@ _.Zones =
 				}),
 				n(4730,   {	-- Lelanai <Saber Handler>
 					["description"] = "Appears in Stormwind after War of Thorns.",
-					["coord"] = { 55.0, 12.6, 84 },
+					["coord"] = { 55.0, 12.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(8632),	-- Reins of the Spotted Frostsaber
@@ -1872,7 +1872,7 @@ _.Zones =
 					},
 				}),
 				n(2795,   {	-- Lenny "Fingers" McCoy
-					["coord"] = { 72.8, 58.8, 84 },
+					["coord"] = { 72.8, 58.8, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(97921),	-- Bom'bay's Color-Seein'Sauce (TOY!)
@@ -1880,7 +1880,7 @@ _.Zones =
 					},
 				}),
 				n(12784,  {	-- Lieutenant Jackspring <Legacy Weapon Quartermaster>
-					["coord"] = { 75.2, 67.2, 84 },
+					["coord"] = { 75.2, 67.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = pvp({
 						i(18825, {	-- Grand Marshal's Aegis
@@ -1949,7 +1949,7 @@ _.Zones =
 					}),
 				}),
 				n(12783,  {	-- Lieutenant Karter
-					["coord"] = { 76.2, 65.6, 84 },
+					["coord"] = { 76.2, 65.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = pvp({
 						i(29465, {	-- Black Battlestrider Mount
@@ -1975,19 +1975,19 @@ _.Zones =
 				}),
 				n(23446,  {	-- Lieutenant Tristia -- BC Vendor for Trinkets
 					-- The NPC ID got reused many times. This is the BC Version, items listed under PvP>BC
-					["coord"] = { 75.0, 67.0, 84 },
+					["coord"] = { 75.0, 67.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 					},
 				}),
 				n(51255,  {	-- Lieutenant Tristia Original CATA S9 ELITE VENDOR Alliance
-					["coord"] = { 75.0, 67.0, 84 },
+					["coord"] = { 75.0, 67.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				n(54660,  {	-- Lieutenant Tristia <Vicious Gladiator>
-					["coord"] = { 75.0, 67.0, 84 },
+					["coord"] = { 75.0, 67.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {
 						{"sub", "pvp_gear_base", -9979, -672, -661 },	-- Vicious Gladiator: Season 9 Gladiator Gear
@@ -2005,7 +2005,7 @@ _.Zones =
 				}),
 				n(52030,  {	-- Liliana Emberfrost
 					["itemID"] = 137642,	-- Mark of Honor
-					["coord"] = { 74.4, 67.6, 84 },
+					["coord"] = { 74.4, 67.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(122375, {	-- Aged Paundrons of The Five Thunders
@@ -2081,7 +2081,7 @@ _.Zones =
 					},
 				}),
 				n(1299,   {	-- Lisbeth Schneider
-					["coord"] = { 58.2, 67.6, 84 },
+					["coord"] = { 58.2, 67.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(3426),	-- Bold Yellow Shirt
@@ -2091,7 +2091,7 @@ _.Zones =
 				}),
 				n(50307,  {	-- Lord Candren
 					["description"] = "Appears in Stormwind after War of Thorns.",
-					["coord"] = { 56.1, 13.2, 84 },
+					["coord"] = { 56.1, 13.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(64893),	-- Cape of Gilneas
@@ -2102,7 +2102,7 @@ _.Zones =
 					},
 				}),
 				n(44246,  {	-- Magatha Silverton
-					["coord"] = { 75.5, 66.1, 84 },
+					["coord"] = { 75.5, 66.1, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(71213),	-- Amulet of Burning Brilliance
@@ -2680,7 +2680,7 @@ _.Zones =
 					},
 				}),
 				n(1313,   {	-- Maria Lumere
-					["coord"]= { 55.7, 85.6, 84 },
+					["coord"] = { 55.7, 85.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(9301, {	-- Recipe: Elixir of Shadow Power
@@ -2689,7 +2689,7 @@ _.Zones =
 					},
 				}),
 				n(12781,  {	-- Master Sergeant Biggins
-					["coord"] = { 75.2, 66.8, 84 },
+					["coord"] = { 75.2, 66.8, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(15198, {	-- Knight's Colors
@@ -2713,7 +2713,7 @@ _.Zones =
 					},
 				}),
 				n(28347,  {	-- Miles Sidney
-					["coord"] = {74.2, 58.1, 84 },
+					["coord"] = { 74.2, 58.1, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(38579, {	-- Venomous Tome
@@ -2723,7 +2723,7 @@ _.Zones =
 				}),
 				n(50305,  {	-- Moon Priestess Lasara
 					["description"] = "Appears in Stormwind after War of Thorns.",
-					["coord"] = { 56.6, 13.2, 84 },
+					["coord"] = { 56.6, 13.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(64887),	-- Cape of Darnassus
@@ -2734,7 +2734,7 @@ _.Zones =
 					},
 				}),
 				n(73190,  {	-- Necrolord Sipe
-					["coord"] = { 76.8, 65.6, 84 },
+					["coord"] = { 76.8, 65.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = pvp({
 						i(70909, {	-- Reins of the Vicious War Steed
@@ -2790,7 +2790,7 @@ _.Zones =
 					}),
 				}),
 				n(65068,  {	-- Old Whitenose
-					["coord"] = { 67.8, 18.4, 84 },
+					["coord"] = { 67.8, 18.4, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(87795), 	-- Black Dragon Turtle
@@ -2847,7 +2847,7 @@ _.Zones =
 					},
 				}),
 				n(87501,  {	-- Paulie
-					["coord"] = { 73.0, 59.3, 84 },
+					["coord"] = { 73.0, 59.3, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(116789, {	-- Champion's Treadblade
@@ -2856,7 +2856,7 @@ _.Zones =
 					},
 				}),
 				n(167429, {	-- Quartermaster Richter
-					["coord"] = { 79.5, 69.0, 84 },
+					["coord"] = { 79.5, 69.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(175173),  -- Expeditionary Cudgel
@@ -2870,7 +2870,7 @@ _.Zones =
 				}),
 				n(12785,  {	-- Sergeant Major Clate
 					["itemID"] = 137642,	-- Mark of Honor
-					["coord"] = { 75.4, 67.0, 84 },
+					["coord"] = { 75.4, 67.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = pvp({
 						-- Head
@@ -3254,7 +3254,7 @@ _.Zones =
 				}),
 				n(8665,   {	-- Shylenai
 					["description"] = "Appears in Stormwind after War of Thorns.",
-					["coord"] = { 56.0, 3.22, 84 },
+					["coord"] = { 56.0, 3.22, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(8500),	-- Great Horned Owl (PET!)
@@ -3262,7 +3262,7 @@ _.Zones =
 					},
 				}),
 				n(30730,  {	-- Stanly McCormick
-					["coord"] = { 49.6, 74.8, 84 },
+					["coord"] = { 49.6, 74.8, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(39489, {	-- Scribe's Satchel
@@ -3271,7 +3271,7 @@ _.Zones =
 					},
 				}),
 				n(43768,  {	-- Tannec Stonebeak
-					["coord"] = { 71.4, 72.0, 84 },
+					["coord"] = { 71.4, 72.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(25471),	-- Ebon Gryphon Mount
@@ -3284,12 +3284,12 @@ _.Zones =
 					},
 				}),
 				n(44583,  {	-- Terrance Denman
-					["coord"] = { 63.1, 61.5, 84 },
+					["coord"] = { 63.1, 61.5, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = appendGroups(COMMON_CATACLYSM_JEWELCRAFTING_RECIPES, {}),
 				}),
 				n(58154,  {	-- Toren Landow
-					["coord"] = { 75.7, 65.9, 84 },
+					["coord"] = { 75.7, 65.9, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(57931),	-- Amulet of Dull Dreaming

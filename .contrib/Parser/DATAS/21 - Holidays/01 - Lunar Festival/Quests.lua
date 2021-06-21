@@ -73,11 +73,11 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["maps"] = {
 					37,	-- Elwynn Forest
-					90,	-- Undercity
-					87,	-- Ironforge
+					UNDERCITY,
+					IRONFORGE,
 					ORGRIMMAR,
 					THUNDER_BLUFF,
-					89,	-- Darnassus
+					DARNASSUS,
 					SILVERMOON_CITY,
 					THE_EXODAR,
 					SHATTRATH_CITY,
@@ -98,7 +98,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["provider"] = { "n", 15892 },	-- Lunar Festival Emissary
 				["isYearly"] = true,
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 87 },	-- Ironforge
+				["maps"] = { IRONFORGE },
 				["u"] = 17,	-- Lunar Festival
 			}),
 			q(8871,  {	-- The Lunar Festival (A)
@@ -114,7 +114,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["provider"] = { "n", 15892 },	-- Lunar Festival Emissary
 				["isYearly"] = true,
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 89 },	-- Darnassus
+				["maps"] = { DARNASSUS },
 				["u"] = 17,	-- Lunar Festival
 			}),
 			q(8873,  {	-- The Lunar Festival (H)
@@ -130,7 +130,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["provider"] = { "n", 15891 },	-- Lunar Festival Herald
 				["isYearly"] = true,
 				["races"] = HORDE_ONLY,
-				["maps"] = { 90 },	-- Undercity
+				["maps"] = { UNDERCITY },
 				["u"] = 17,	-- Lunar Festival
 			}),
 			q(8875,  {	-- The Lunar Festival (H)
@@ -148,11 +148,11 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["isYearly"] = true,
 				["maps"] = {
 					37,	-- Elwynn Forest
-					90,	-- Undercity
-					87,	-- Ironforge
+					UNDERCITY,
+					IRONFORGE,
 					ORGRIMMAR,
 					THUNDER_BLUFF,
-					89,	-- Darnassus
+					DARNASSUS,
 					SILVERMOON_CITY,
 					THE_EXODAR,
 					SHATTRATH_CITY,
@@ -165,8 +165,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(29736, {	-- Darkfeather the Elder
 				["provider"] = { "n", 55218 },	-- Elder Darkfeather
 				["isYearly"] = true,
-				["coord"] = { 51.8, 33.0, 241 },
-				["maps"] = { 241 },	-- Twilight Highlands
+				["coord"] = { 51.8, 33.0, TWILIGHT_HIGHLANDS },
+				["maps"] = { TWILIGHT_HIGHLANDS },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(5, {	-- Elder Darkfeather in Twilight Highlands
@@ -201,8 +201,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(29737, {	-- Firebeard the Elder
 				["provider"] = { "n", 55219 },	-- Elder Firebeard
 				["isYearly"] = true,
-				["coord"] = { 50.9, 70.4, 241 },
-				["maps"] = { 241 },	-- Twilight Highlands
+				["coord"] = { 50.9, 70.4, TWILIGHT_HIGHLANDS },
+				["maps"] = { TWILIGHT_HIGHLANDS },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(4, {	-- Elder Firebeard in Twilight Highlands
@@ -287,8 +287,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8683,  {	-- Dawnstrider the Elder
 				["provider"] = { "n", 15585 },	-- Elder Dawnstrider
 				["isYearly"] = true,
-				["coord"] = { 52.3, 23.9, 36 },
-				["maps"] = { 36 },	-- Burning Steppes
+				["coord"] = { 52.3, 23.9, BURNING_STEPPES },
+				["maps"] = { BURNING_STEPPES },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(10, {	-- Elder Dawnstrider in Flame Crest
@@ -299,8 +299,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8653,  {	-- Goldwell the Elder
 				["provider"] = { "n", 15569 },	-- Elder Goldwell
 				["isYearly"] = true,
-				["coord"] = { 53.8, 49.9, 27 },
-				["maps"] = { 27 },	-- Dun Morogh
+				["coord"] = { 53.8, 49.9, DUN_MOROGH },
+				["maps"] = { DUN_MOROGH },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(1, {	-- Elder Goldwell in Kharanos
@@ -312,8 +312,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["description"] = "In order to view this Elder, visit Zidormi at 69.4, 62.7 to see Tirisfal Glades before the Battle for Lordaeron.",
 				["provider"] = { "n", 15568 },	-- Elder Graveborn
 				["isYearly"] = true,
-				["coord"] = { 61.8, 53.9, 18 },
-				["maps"] = { 18 },	-- Tirisfal Glades
+				["coord"] = { 61.8, 53.9, TIRISFAL_GLADES },
+				["maps"] = { TIRISFAL_GLADES },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(13, {	-- Elder Graveborn in Brill
@@ -324,8 +324,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8643,  {	-- Highpeak the Elder
 				["provider"] = { "n", 15559 },	-- Elder Highpeak
 				["isYearly"] = true,
-				["coord"] = { 49.9, 47.9, 26 },
-				["maps"] = { 26 },	-- The Hinterlands
+				["coord"] = { 49.9, 47.9, THE_HINTERLANDS },
+				["maps"] = { THE_HINTERLANDS },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(11, {	-- Elder Highpeak in The Hinterlands
@@ -336,8 +336,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8651,  {	-- Ironband the Elder
 				["provider"] = { "n", 15567 },	-- Elder Ironband
 				["isYearly"] = true,
-				["coord"] = { 21.3, 79.0, 32 },
-				["maps"] = { 32 },	-- Searing Gorge
+				["coord"] = { 21.3, 79.0, SEARING_GORGE },
+				["maps"] = { SEARING_GORGE },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(12, {	-- Elder Ironband in Searing Gorge
@@ -348,8 +348,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8722,  {	-- Meadowrun the Elder
 				["provider"] = { "n", 15602 },	-- Elder Meadowrun
 				["isYearly"] = true,
-				["coord"] = { 63.5, 36.2, 22 },
-				["maps"] = { 22 },	-- Western Plaguelands
+				["coord"] = { 63.5, 36.2, WESTERN_PLAGUELANDS },
+				["maps"] = { WESTERN_PLAGUELANDS },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(4, {	-- Elder Meadowrun in Western Plaguelands
@@ -360,8 +360,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8714,  {	-- Moonstrike the Elder
 				["provider"] = { "n", 15594 },	-- Elder Moonstrike
 				["isYearly"] = true,
-				["coord"] = { 69.1, 73.3, 22 },
-				["maps"] = { 22 },	-- Western Plaguelands
+				["coord"] = { 69.1, 73.3, WESTERN_PLAGUELANDS },
+				["maps"] = { WESTERN_PLAGUELANDS },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(17, {	-- Elder Moonstrike in Scholomance
@@ -384,8 +384,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8636,  {	-- Rumblerock the Elder
 				["provider"] = { "n", 15557 },	-- Elder Rumblerock
 				["isYearly"] = true,
-				["coord"] = { 70.1, 45.4, 36 },
-				["maps"] = { 36 },	-- Burning Steppes
+				["coord"] = { 70.1, 45.4, BURNING_STEPPES },
+				["maps"] = { BURNING_STEPPES },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(9, {	-- Elder Rumblerock in Burning Steppes
@@ -396,8 +396,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8642,  {	-- Silvervein the Elder
 				["provider"] = { "n", 15558 },	-- Elder Silvervein
 				["isYearly"] = true,
-				["coord"] = { 33.3, 46.5, 48 },
-				["maps"] = { 48 },	-- Loch Modan
+				["coord"] = { 33.3, 46.5, LOCH_MODAN },
+				["maps"] = { LOCH_MODAN },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(7, {	-- Elder Silvervein in Thelsamar
@@ -420,8 +420,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8650,  {	-- Snowcrown the Elder
 				["provider"] = { "n", 15566 },	-- Elder Snowcrown
 				["isYearly"] = true,
-				["coord"] = { 75.7, 54.4, 23 },
-				["maps"] = { 23 },	-- Eastern Plaguelands
+				["coord"] = { 75.7, 54.4, EASTERN_PLAGUELANDS },
+				["maps"] = { EASTERN_PLAGUELANDS },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(16, {	-- Elder Snowcrown in Light's Hope Chapel
@@ -456,8 +456,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8688,  {	-- Windrun the Elder
 				["provider"] = { "n", 15592 },	-- Elder Windrun
 				["isYearly"] = true,
-				["coord"] = { 35.5, 68.8, 23 },
-				["maps"] = { 23 },	-- Eastern Plaguelands
+				["coord"] = { 35.5, 68.8, EASTERN_PLAGUELANDS },
+				["maps"] = { EASTERN_PLAGUELANDS },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(15, {	-- Elder Windrun in Eastern Plaguelands
@@ -507,8 +507,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8673,  {	-- Bloodhoof the Elder
 				["provider"] = { "n", 15575 },	-- Elder Bloodhoof
 				["isYearly"] = true,
-				["coord"] = { 48.4, 53.2, 7 },
-				["maps"] = { 7 },	-- Mulgore
+				["coord"] = { 48.4, 53.2, MULGORE },
+				["maps"] = { MULGORE },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(8, {	-- Elder Bloodhoof in Bloodhoof Village
@@ -652,8 +652,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8670,  {	-- Runetotem the Elder
 				["provider"] = { "n", 15572 },	-- Elder Runetotem
 				["isYearly"] = true,
-				["coord"] = { 53.1, 43.6, 1 },
-				["maps"] = { 1 },	-- Durotar
+				["coord"] = { 53.1, 43.6, DUROTAR },
+				["maps"] = { DUROTAR },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(1, {	-- Elder Runetotem in Razor Hill
@@ -956,8 +956,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["description"] = "In order to view this Elder, visit Zidormi at 48.8, 24.4 in Darkshore to be able to visit the past version of Darnassus.  The Elder is on the left side of the Cenarion Enclave.",
 				["provider"] = { "n", 15598 },	-- Elder Bladeswift
 				["isYearly"] = true,
-				["coord"] = { 39.3, 31.8, 89 },
-				["maps"] = { 89 },	-- Darnassus
+				["coord"] = { 39.3, 31.8, DARNASSUS },
+				["maps"] = { DARNASSUS },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(1, {	-- Elder Bladeswift in Darnassus
@@ -969,8 +969,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["description"] = "Once inside Ironforge, head left.  The Elder is in the small pool in the Mystic Ward in the northwest corner of the city.",
 				["provider"] = { "n", 15871 },	-- Elder Bronzebeard
 				["isYearly"] = true,
-				["coord"] = { 29.4, 17.1, 87 },
-				["maps"] = { 87 },	-- Ironforge
+				["coord"] = { 29.4, 17.1, IRONFORGE },
+				["maps"] = { IRONFORGE },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(2, {	-- Elder Bronzebeard in Ironforge
@@ -1011,9 +1011,9 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["description"] = "Enter Stratholme through the main gate.  The Elder is in the northeast corner, east of The Unforgiven.",
 				["provider"] = { "n", 15607 },	-- Elder Farwhisper
 				["isYearly"] = true,
-				["coord"] = { 27.7, 11.6, 23 },	-- Stratholme entrance
+				["coord"] = { 27.7, 11.6, EASTERN_PLAGUELANDS },	-- Stratholme entrance
 				["maps"] = {
-					23,		-- Eastern Plaguelands
+					EASTERN_PLAGUELANDS,
 					STRATHOLME,
 				},
 				["u"] = 17,	-- Lunar Festival
@@ -1075,9 +1075,9 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["description"] = "Once inside Blackrock Depths, you can find this Elder in the Ring of Law.  Approaching the Elder in the center of the ring will also start the encounter.",
 				["provider"] = { "n", 15549 },	-- Elder Morndeep
 				["isYearly"] = true,
-				["coord"] = { 21.1, 38.5, 36 },	-- entrance to Blackrock Mountain
+				["coord"] = { 21.1, 38.5, BURNING_STEPPES },	-- entrance to Blackrock Mountain
 				["maps"] = {
-					36,		-- Burning Steppes
+					BURNING_STEPPES,
 					BLACKROCK_DEPTHS,
 				},
 				["u"] = 17,	-- Lunar Festival
@@ -1123,9 +1123,9 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["description"] = "Take the central path to reach the Portal to Inner Maraudon.  Once inside the dungeon, jump down and follow the path to reach the Elder in the far southeast corner of the map.",
 				["provider"] = { "n", 15556 },	-- Elder Splitrock
 				["isYearly"] = true,
-				["coord"] = { 29.1, 62.5, 66 },	-- Maraudon path entrance
+				["coord"] = { 29.1, 62.5, DESOLACE },	-- Maraudon path entrance
 				["maps"] = {
-					66,		-- Desolace
+					DESOLACE,
 					280,	-- Maraudon
 				},
 				["u"] = 17,	-- Lunar Festival
@@ -1155,9 +1155,9 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["description"] = "Once inside Lower Blackrock Spire, head down and to the left.  The Elder is just past the first bridge.",
 				["provider"] = { "n", 15560 },	-- Elder Stonefort
 				["isYearly"] = true,
-				["coord"] = { 21.1, 38.5, 36 },	-- entrance to Blackrock Mountain
+				["coord"] = { 21.1, 38.5, BURNING_STEPPES },	-- entrance to Blackrock Mountain
 				["maps"] = {
-					36,		-- Burning Steppes
+					BURNING_STEPPES,
 					252,	-- Lower Blackrock Spire
 				},
 				["u"] = 17,	-- Lunar Festival
@@ -1204,8 +1204,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["description"] = "In order to view this Elder, visit Zidormi at 69.4, 62.7 to see Tirisfal Glades before the Battle for Lordaeron.  The Elder is just inside the front door of the city.",
 				["provider"] = { "n", 15564 },	-- Elder Darkcore
 				["isYearly"] = true,
-				["coord"] = { 66.5, 38.0, 90 },
-				["maps"] = { 90 },	-- Undercity
+				["coord"] = { 66.5, 38.0, UNDERCITY },
+				["maps"] = { UNDERCITY },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(3, {	-- Elder Darkcore in Undercity
