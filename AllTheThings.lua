@@ -2741,19 +2741,22 @@ ResolveSymbolicLink = function(o)
 	end
 end
 end)();
-local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
-	-- local total = 0;
-	-- local progress = 0;
+local function BuildContainsInfo(item, entries, paramA, paramB, indent, layer)
+	if not item or not item.g then return; end
+
+	-- skip Character filtering for sub-groups if this Item meets the BoE filter logic, since it can be moved to the designated character
+	local oldItemBindFilter = app.ItemBindFilter;
+	if app.ItemBindFilter(item) then
+		app.ItemBindFilter = app.NoFilter;
+	end
 	-- using pairs since some index values may get set to nil prior to this
-	for i,group in pairs(groups) do
+	for i,group in pairs(item.g) do
 		-- print(group.hash,group.key,group[group.key],group.modItemID,group.collectible,group.collected,group.trackable,group.saved,group.visible);
 		-- check groups outwards to ensure that the group can be displayed in the contains under the current filters
 		if app.GroupRequirementsFilter(group) and app.GroupFilter(group) then
 			-- print("display")
 			local right;
 			if group.total and (group.total > 1 or (not group.collectible and group.total > 0)) then
-				-- total = total + group.total;
-				-- progress = progress + (group.progress or 0);
 				if app.GroupVisibilityFilter(group) then
 					right = true;
 				-- the group itself may be a trackable thing
@@ -2770,9 +2773,7 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 				end
 			else
 				if group.collectible then
-					-- total = total + 1;
 					if group.collected then
-						-- progress = progress + 1;
 						if app.CollectedItemVisibilityFilter(group) then
 							right = true;
 						end
@@ -2809,21 +2810,13 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 				tinsert(entries, o);
 
 				-- Only go down one more level.
-				if layer < 3
+				if layer < 4
 					-- if there are sub groups
 					and group.g and #group.g > 0
-					-- not for achievements unless tied to an NPC
-					-- and (not group.achievementID or paramA == "creatureID")
 					-- not for things with a parent unless the parent has no difficultyID
 					and (not group.parent or not group.parent.difficultyID)
-					-- not for group which contains an artifact
-					-- and not group.g[1].artifactID
-					-- not for heirlooms
-					-- and not (group.filterID == 109)
-					-- not for a group which is symbolized
-					-- and not group.symbolized
 					then
-					BuildContainsInfo(group.g, entries, paramA, paramB, indent .. "  ", layer + 1);
+					BuildContainsInfo(group, entries, paramA, paramB, indent .. "  ", layer + 1);
 				-- else
 				-- 	print("skipped sub-contains");
 				-- 	for k,o in pairs(group) do
@@ -2831,33 +2824,10 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 				-- 	end
 				-- 	print("--");
 				end
-			-- If this group is a Quest, then it may be a source Quest to another Quest which has a Nested Collectible that needs to be shown
-			-- This is just too laggy in some situations to search for sourceQuests repeatedly... maybe if it can be coroutined in the tooltip...?
-			-- elseif group.questID and not group.isBreadcrumb then
-				-- -- print("check if is a sourceQuest for",group.questID);
-				-- local search = app.SearchForField("sourceQuests", group.questID);
-				-- if search then
-					-- -- for i,g in ipairs(search) do
-						-- -- print("has sq",RecurseGroupParent(g));
-					-- -- end
-					-- BuildContainsInfo(search, entries, paramA, paramB, indent .. " ", layer);
-				-- end
 			end
-			-- print("total",tostring(total),"progress",tostring(progress));
-			-- else
-			-- 	print("ex",group.key,group[group.key]);
-			-- end
-			-- else
-			-- 	print("group contains itself",group.key,group[group.key])
-			-- end
 		end
 	end
-	-- if (total > 0) then
-	-- 	local data = {};
-	-- 	data.total = total;
-	-- 	data.progress = progress;
-	-- 	return data;
-	-- end
+	app.ItemBindFilter = oldItemBindFilter;
 end
 -- Fills & returns a group with its symlink references, along with all sub-groups recursively if specified
 -- This should only be used on a cloned group so the source group is not contaminated
@@ -3668,6 +3638,13 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 		-- Only need to build/update groups from the top level
 		if topLevelSearch then
+
+			-- skip Character filtering for sub-groups if this Item meets the Ignore BoE filter logic, since it can be moved to the designated character
+			local oldItemBindFilter = app.ItemBindFilter;
+			if app.ItemBindFilter(group) then
+				app.ItemBindFilter = app.NoFilter;
+			end
+
 			group.total = 0;
 			group.progress = 0;
 			BuildGroups(group, group.g);
@@ -3678,6 +3655,8 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					group.progress = group.progress + 1;
 				end
 			end
+			-- reapply the previous BoE filter
+			app.ItemBindFilter = oldItemBindFilter;
 		end
 	end
 
@@ -3692,13 +3671,13 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 	if paramA == "itemID" and paramB == 137642 then
 		if app.Settings:GetTooltipSetting("SummarizeThings") then
-			tinsert(info, 1, { left = L["MARKS_OF_HONOR_DESC"], wrap = false, color = "ffff8426" });		--L["MARKS_OF_HONOR_DESC"] = "Marks of Honor must be viewed in a Popout window to see all of the normal 'Contains' content\n(Type '/att ' in chat then Shift-Click to link the item)"
+			tinsert(info, 1, { left = L["MARKS_OF_HONOR_DESC"], wrap = false, color = "ffff8426" });
 		end
 	end
 
 	-- an item used for a faction which is repeatable
 	if group.itemID and group.factionID and group.repeatable then
-		tinsert(info, { left = L["ITEM_GIVES_REP"] .. (select(1, GetFactionInfoByID(group.factionID)) or ("Faction #" .. tostring(group.factionID))) .. "'", wrap = true, color = "ff66ccff" });		--L["ITEM_GIVES_REP"] = "Provides Reputation with '";
+		tinsert(info, { left = L["ITEM_GIVES_REP"] .. (select(1, GetFactionInfoByID(group.factionID)) or ("Faction #" .. tostring(group.factionID))) .. "'", wrap = true, color = "ff66ccff" });
 	end
 
 	if topLevelSearch and group.g and #group.g > 0 then
@@ -3714,7 +3693,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		if app.Settings:GetTooltipSetting("SummarizeThings") then
 			local entries, left, right = {};
 			-- app.DEBUG_PRINT = "CONTAINS-" .. group.key .. group[group.key];
-			BuildContainsInfo(group.g, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
+			BuildContainsInfo(group, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
 			-- app.DEBUG_PRINT = nil;
 			if #entries > 0 then
 				-- print("#entries",#entries);
