@@ -101,6 +101,7 @@ _.Zones =
 						{ 48.5, 41.2, KORTHIA },
 						{ 49.4, 40.7, KORTHIA },
 						{ 49.9, 32.5, KORTHIA },
+						{ 51.4, 46.8, KORTHIA },
 						{ 53.7, 37.9, KORTHIA },
 					},
 					["g"] = {
@@ -116,6 +117,7 @@ _.Zones =
 					["questID"] = 64355,
 					["isDaily"] = true,
 					["coords"] = {
+						{ 42.1, 35.8, KORTHIA },
 						{ 42.3, 34.6, KORTHIA },
 						{ 43.6, 36.6, KORTHIA },
 						{ 45.6, 34.3, KORTHIA },
@@ -152,7 +154,9 @@ _.Zones =
 					["coords"] = {
 						{ 39.6, 30.0, KORTHIA },
 						{ 41.2, 44.9, KORTHIA },
+						{ 43.4, 56.3, KORTHIA },
 						{ 45.2, 47.9, KORTHIA },
+						{ 46.5, 48.5, KORTHIA },
 						{ 54.8, 55.5, KORTHIA },
 					},
 					["g"] = {
@@ -386,6 +390,7 @@ _.Zones =
 					["questID"] = 64565,
 					["isDaily"] = true,
 					["coords"] = {
+						{ 44.0, 56.0, KORTHIA },
 						{ 44.4, 77.3, KORTHIA },
 						{ 45.3, 49.5, KORTHIA },
 						{ 45.6, 81.4, KORTHIA },

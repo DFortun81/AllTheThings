@@ -107,6 +107,7 @@ _.Zones =
 							["questID"] = 64551,
 						}),
 						i(187372),	-- Miasma Filtering Headpiece
+						i(187181),	-- Small Corpsefly Egg
 					},
 				}),
 				n(179472, {	-- Konthrogz the Obliterator
@@ -357,5 +358,6 @@ _.Zones =
 
 _.HiddenQuestTriggers = {
 	q(64572),	-- i think this is a daily lockout for receiving a Soultwining Crescent from a rare (also triggers on treasures)
-	q(64699),	-- popped when looting 48-resesarch item Encrypted Korthian Journal from Fleshwing
+	q(64699),	-- popped when looting 48-research item Encrypted Korthian Journal from Fleshwing
+	q(64703),	-- popped when looting 48-research item Half-Completed Runeforge Pattern from Xyraxz
 };

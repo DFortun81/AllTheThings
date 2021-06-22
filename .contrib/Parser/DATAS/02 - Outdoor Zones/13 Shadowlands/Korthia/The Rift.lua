@@ -43,7 +43,7 @@ _.Zones =
 					}),
 					n(RARES, {
 						n(179914, {	-- Observer Yorik
-						--	["questID"] = ,
+							["questID"] = 64369,
 							["isDaily"] = true,
 							["coord"] = { 50.2, 75.4, KORTHIA },
 							["g"] = {
@@ -99,4 +99,8 @@ _.Zones =
 			}),
 		}),
 	}),
+};
+
+_.HiddenQuestTriggers = {
+	q(64704),	-- triggered when looting 48-research item Half-Completed Runeforge Pattern from Observer Yorik
 };
