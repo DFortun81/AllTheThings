@@ -965,6 +965,7 @@ _.HiddenQuestTriggers = {
 		q(52758),	-- Silverpine Forest - triggered when taking the bat during "Iterating Upon Success"
 		q(26136),	-- FLAG - Rigor Mortis Removed. Triggered on a fresh lvl 1 warlock undead on login
 		q(24644),	-- Troll Introduction Complete
+		q(236),		-- Fueling the Demolishers (auto-completed removed quest)
 
 		--	DUNGEONS
 		q(35929),	-- Blackfathom Deeps Reward Quest
@@ -1313,7 +1314,10 @@ _.HiddenQuestTriggers = {
 		q(31607),	-- Townlong Steppes - Tracking Event: Finished Spiteful Spirits & Hatred Becomes Us
 		q(30936),	-- Townlong Steppes - unused. Triggers when turning in "Behind the Battlefront"
 		q(39127),	-- Townlong Steppes - Beyond the Wall (quest duplicate?), gets completed after handing in The Shado-Pan Offensive
-
+		q(31486),	-- Townlong Steppes - Looting a Bag of Wu Kao Supplies
+		q(31877),	-- Auto-complete after The Inkmasters of the Aboretum
+		q(33684),	-- Auto-complete after The Inkmasters of the Aboretum
+		q(32516),	-- Auto-complete after The Bloodletter
 		q(32725),	-- Warlock Green Fire Questline - Reached Kanrethad
 		q(32666),	-- Warlock Green Fire Questline - Reached Kanrethad
 
@@ -1643,6 +1647,7 @@ _.HiddenQuestTriggers = {
 		q(38438),	-- Max-level Choice Tracker: Tanaan 6.2 - The Fel Forge
 		q(38041),	-- Max-level Choice Tracker: Tanaan 6.2 - Zeth'Gol
 		q(38042),	-- Max-level Choice Tracker: Tanaan 6.2 - Zeth'Gol
+		q(38876),	-- Assault on the Fel Forge (auto-accept bonus objective)
 
 		--	DUNGEONS & RAIDS
 		q(35960),	-- Auchindoun Reward Quest
@@ -1739,6 +1744,7 @@ _.HiddenQuestTriggers = {
 		q(36901),	-- Tracking Quest: Vivianne — assigned Vivianne as bodyguard
 		q(36902),	-- Tracking Quest: Aeda Brightdawn — assigned Aeda Brightdawn as bodyguard
 		q(46952),	-- Flag Garrison Dog Quest
+		q(54705),	-- Level 17 human monk looting mailbox in garrisson
 
 		-- ASSAULTS
 		q(36808), 	-- Missive completion: Assault on Shattrath Harbour
@@ -2024,6 +2030,7 @@ _.HiddenQuestTriggers = {
 		q(47699),	-- Generic Order Hall - [DNT] — tracking quest while doing Demon Hunter quest 41066, The Hunter's Gaze. Also triggers on warrior while on "On the Trail of the Great Worm". Triggered immediately after the broken shore scenario, so probably some kind of daily trigger
 		q(44483),	-- Generic Order Hall - Vendor Beckon Trigger - Druid, Warrior, Paladin, Warlock, Shaman (all classes?)
 		q(44484),	-- Generic Order Hall - Vendor Beckon Trigger - Druid, Warrior, Paladin, Warlock, Shaman (all classes?)
+		q(45773),	-- 7.2 Class Hall - Maximillian of Northshire - Aqcuisition - Track Mail Sent
 
 		--	Artifact Appearances
 		q(43655),	-- Hidden Appearance unlocked (The Silver Hand?)
@@ -3924,6 +3931,7 @@ _.HiddenQuestTriggers = {
 		q(62757),	-- Reaching Renown 35 Kyrian / unlocking Deepening Bond 6% stam increase
 		q(62927),	-- Reaching Renown 39 Kyrian / unlocking Eternal Phalynx of Purity
 		q(63081),	-- triggered when earning "Itsy Bitsy Fighters" achievement
+		q(63426),	-- Skipping Kyrian intro
 
 		-- Maldraxxus
 		q(59429),	-- Triggered along with 59428 when looting Strange Growth (348521)
@@ -4218,6 +4226,8 @@ _.HiddenQuestTriggers = {
 		q(62493),	-- Ember Court End (The Countess / Polemarch Adrestes as first-time guests, both Elated)
 		q(62510),	-- ""
 		q(61534),	-- triggered when looting Mikanikos' Extravagant Tribute for the first time, all i got was Decree: Mikanikos's Boon -- did NOT trigger with the rest of the ending quests, was only after i looted the chest
+		q(61731),	-- Ember Court - after completing Magical Curios
+		q(62208),	-- Ember Court - after Maldraxxi Protocols
 
 		q(62668),	-- after looting a Dirty Glinting Object -- someone on discord got this when turning in Favor: She Had a Stone Heart, but i did not
 		q(58059),	-- when choosing House Briarbane while on "Enacting Immediate Justice"
