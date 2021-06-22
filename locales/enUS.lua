@@ -594,7 +594,7 @@ app.L = {
 	["KNOWN_ON_CHARACTER"] = "|T" .. app.asset("known") .. ":0|t |cff15abffKnown on current character|r";
 	["UNKNOWN_ON_CHARACTER"] = "|T" .. app.asset("unknown") .. ":0|t |cffff9333Unknown on current character|r";
 	["COST_ICON"] = "|T" .. app.asset("Currency") .. ":0|t";
-	["COST_TEXT"] = "|T" .. app.asset("Currency") .. ":0|t |cffffff00Currency|r";
+	["COST_TEXT"] = "|T" .. app.asset("Currency") .. ":0|t |cff0891ffCurrency|r";
 
 	["ABBREVIATIONS"] = {
 		["ALL THE THINGS"] = "ATT",
