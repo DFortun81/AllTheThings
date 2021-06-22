@@ -139,6 +139,9 @@ SUNSTRIDER_ISLE = 467;	-- Confirmed!
 BLADES_EDGE_MOUNTAINS = 105;	-- Confirmed!
 SHADOWMOON_VALLEY = 104;	-- Confirmed!
 
+-- MOP Additions to Old World
+VALLEY_OF_TRIALS = 461;
+
 -- Battle for Azeroth
 CHAMBER_OF_HEART = 1021;
 REPAIRED_CHAMBER_OF_HEART = 1473;
