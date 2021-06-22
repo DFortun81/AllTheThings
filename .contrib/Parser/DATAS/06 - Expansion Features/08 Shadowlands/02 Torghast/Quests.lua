@@ -67,6 +67,14 @@ _.ExpansionFeatures =
 				}),
 
 				-- Champion Unlocks
+				q(61957, {	-- Champion: Ashraka [Necrolord]
+					["customCollect"] = "SL_COV_NEC",	-- Necrolord
+					["sourceQuests"] = { 62229 },	-- Ashraka's Intelligence
+					["provider"] = { "n", 173395 },	-- Ashraka
+					["g"] = {
+						follower(1311),	-- Ashraka
+					},
+				}),
 				q(61223, {	-- Champion: Ayeleth the Deprived [Venthyr]
 					["customCollect"] = "SL_COV_VEN",	-- Venthyr
 					["sourceQuests"] = { 61259 },	-- Ayeleth's Hunger
@@ -195,6 +203,14 @@ _.ExpansionFeatures =
 						follower(1215),	-- Nerith Darkwing
 					},
 				}),
+				q(61961, {	-- Champion: Rattlebag [Necrolord]
+					["customCollect"] = "SL_COV_NEC",	-- Necrolord
+					["sourceQuests"] = { 62236 },	-- Rattlebag's Lost Armor
+					["provider"] = { "n", 173398 },	-- Rattlebag
+					["g"] = {
+						follower(1310),	-- Rattlebag
+					},
+				}),
 				q(61221, {	-- Champion: Stonehuck [Venthyr]
 					["customCollect"] = "SL_COV_VEN",	-- Venthyr
 					["sourceQuests"] = { 61234 },	-- Stonehuck's Sinstone
@@ -243,6 +259,14 @@ _.ExpansionFeatures =
 						follower(1308),	-- Velkein
 					},
 				}),
+				q(61960, {	-- Champion: Xertora [Necrolord]
+					["customCollect"] = "SL_COV_NEC",	-- Necrolord
+					["sourceQuests"] = { 62227 },	-- Xertora's Construct
+					["provider"] = { "n", 173401 },	-- Assembler Xertora
+					["g"] = {
+						follower(1309),	-- Assembler Xertora
+					},
+				}),
 				q(61426, {	-- Champion: Yira'lya [Night Fae]
 					["customCollect"] = "SL_COV_NFA",	-- Night Fae
 					-- ["sourceQuests"] = { },	-- TODO
@@ -280,6 +304,11 @@ _.ExpansionFeatures =
 
 
 				-- Bonus Quests
+				q(62229, {	-- Ashraka's Intelligence
+					["sourceQuests"] = { 60136 },	-- Into Torghast
+					["repeatable"] = true,
+					-- ["provider"] = { "n", ??? },	-- TODO: ???
+				}),
 				q(61259, {	-- Ayeleth's Hunger
 					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["repeatable"] = true,
@@ -391,6 +420,11 @@ _.ExpansionFeatures =
 					["repeatable"] = true,
 					["provider"] = { "n", 157432 },	-- Indigo
 				}),
+				q(62236, {	-- Rattlebag's Lost Armor
+					["sourceQuests"] = { 60136 },	-- Into Torghast
+					["repeatable"] = true,
+					["provider"] = { "n", 173404 },	-- Lost Armor
+				}),
 				q(59344, {	-- Renavyth's Medallion
 					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["repeatable"] = true,
@@ -420,6 +454,11 @@ _.ExpansionFeatures =
 					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["repeatable"] = true,
 					["provider"] = { "n", 175648 },	-- Croman
+				}),
+				q(62227, {	-- Xertora's Construct
+					["sourceQuests"] = { 60136 },	-- Into Torghast
+					["repeatable"] = true,
+					-- ["provider"] = { "n", ??? },	-- TODO: ???
 				}),
 				q(62231, {	-- Velkein's Blade
 					["sourceQuests"] = { 60136 },	-- Into Torghast
@@ -641,41 +680,47 @@ _.ExpansionFeatures =
 };
 
 _.HiddenQuestTriggers = {
-	q(59987),	-- Tracking Quest (Finished Mort'regar Layer 1)
-	q(59988),	-- Tracking Quest (Finished The Soulforges Layer 1)
-	q(59989),	-- Tracking Quest (Finished Coldheart Interstitia Layer 1)
-	q(59990),	-- Tracking Quest (Finished The Upper Reaches Layer 1)
-	q(59991),	-- Tracking Quest (Finished The Soulforges Layer 1)
-	q(59992),	-- Tracking Quest (Finished The Upper Reaches Layer 1)
-	q(59993),	-- Tracking Quest (Finished The Fracture Chambers Layer 1)
-	q(59995),	-- Tracking Quest (Finished The Fracture Chambers Layer 1)
-	q(59996),	-- Tracking Quest (Finished Skoldus Hall Layer 1)
-	q(59997),	-- Tracking Quest (Finished The Upper Reaches Layer 1)
-	q(62967),	-- Triggered when opening Domination Lock for Prison of the Forgotten quest
-	q(61951),	-- Triggered when completing 61958 (Champion: Gorgelimb)
-	q(61305),	-- triggered when completing #61313, "Champion: Kythekios"
-	q(61420),	-- Triggered when freeing Yira'lya
-	q(61215),	-- triggered when completing Champion: Kaletar
-	q(61417),	-- triggered when completing Karynmwylyann's Roots (61429)
-	q(61211),	-- triggered when completing Thela's Memory Stone (61243)
-	q(60555),	-- triggered when completing Champion: Meatball (Venthyr)
-	q(61212),	-- triggered when completing Champion: Dug Gravewell [Venthyr] (61218)
-	q(61415),	-- Triggered when completing #61427, "Blisswing's Rescue"
-	q(61416),	-- Triggered when completing #61428, "Duskleaf's Revenge"
-	q(61418),	-- Triggered when completing #61430, "Chalkyth's Saber"
-	q(61419),	-- Triggered when completing #TODO, "TODO" (for Lloth'wellyn)
-	q(61216),	-- triggered when completing #61259, "Ayeleth's Hunger" (was on a venthyr and picked up the champ quest right after)
-	q(61309),	-- triggered when completing #61347, "Molako's Freedom"
-	q(61213),	-- triggered when completing #61262, "Nerith's Vengeance"
-	q(61952),	-- triggered when completing #62226, "Talethi's Desire"
-	q(61307),	-- triggered when completing #61340, "Telethakas's Revenge"
-	q(61306),	-- triggered when completing #61330, "Teliah's Stolen Spear"
-	q(61214),	-- triggered when completing #61234, "Stonehuck's Sinstone"
-	q(62885),	-- triggered when learning legendary memory that triggered a cutscene w/Runecarver
-	q(62991),	-- triggered when completing #62993, "The Riddle of Death"
-	q(61953),	-- triggered when completing #62231, "Velkein's Blade"
-	q(62977),	-- Twisting Corridors, Layer 2 (it looks like TC quests don't reset weekly like the others/are used to mark account TC progress or something)
-	q(62978),	-- Twisting Corridors, Layer 4
-	q(62979),	-- Twisting Corridors, Layer 6
-	q(62980),	-- Twisting Corridors, Layer 8
+	-- Various Triggers
+		q(59987),	-- Tracking Quest (Finished Mort'regar Layer 1)
+		q(59988),	-- Tracking Quest (Finished The Soulforges Layer 1)
+		q(59989),	-- Tracking Quest (Finished Coldheart Interstitia Layer 1)
+		q(59990),	-- Tracking Quest (Finished The Upper Reaches Layer 1)
+		q(59991),	-- Tracking Quest (Finished The Soulforges Layer 1)
+		q(59992),	-- Tracking Quest (Finished The Upper Reaches Layer 1)
+		q(59993),	-- Tracking Quest (Finished The Fracture Chambers Layer 1)
+		q(59995),	-- Tracking Quest (Finished The Fracture Chambers Layer 1)
+		q(59996),	-- Tracking Quest (Finished Skoldus Hall Layer 1)
+		q(59997),	-- Tracking Quest (Finished The Upper Reaches Layer 1)
+		q(62967),	-- Triggered when opening Domination Lock for Prison of the Forgotten quest
+		q(62885),	-- triggered when learning legendary memory that triggered a cutscene w/Runecarver
+		q(62977),	-- Twisting Corridors, Layer 2 (it looks like TC quests don't reset weekly like the others/are used to mark account TC progress or something)
+		q(62978),	-- Twisting Corridors, Layer 4
+		q(62979),	-- Twisting Corridors, Layer 6
+		q(62980),	-- Twisting Corridors, Layer 8
+
+	-- Follower Access Triggers
+		q(61951),	-- Triggered when completing 61958 (Champion: Gorgelimb)
+		q(61305),	-- triggered when completing #61313, "Champion: Kythekios"
+		q(61420),	-- Triggered when freeing Yira'lya
+		q(61956),	-- triggered when completing #62229, "Ashraka's Intelligence"
+		q(61215),	-- triggered when completing Champion: Kaletar
+		q(61417),	-- triggered when completing Karynmwylyann's Roots (61429)
+		q(61211),	-- triggered when completing Thela's Memory Stone (61243)
+		q(60555),	-- triggered when completing Champion: Meatball (Venthyr)
+		q(61212),	-- triggered when completing Champion: Dug Gravewell [Venthyr] (61218)
+		q(61415),	-- Triggered when completing #61427, "Blisswing's Rescue"
+		q(61416),	-- Triggered when completing #61428, "Duskleaf's Revenge"
+		q(61418),	-- Triggered when completing #61430, "Chalkyth's Saber"
+		q(61419),	-- Triggered when completing #TODO, "TODO" (for Lloth'wellyn)
+		q(61216),	-- triggered when completing #61259, "Ayeleth's Hunger" (was on a venthyr and picked up the champ quest right after)
+		q(61309),	-- triggered when completing #61347, "Molako's Freedom"
+		q(61213),	-- triggered when completing #61262, "Nerith's Vengeance"
+		q(61952),	-- triggered when completing #62226, "Talethi's Desire"
+		q(61307),	-- triggered when completing #61340, "Telethakas's Revenge"
+		q(61306),	-- triggered when completing #61330, "Teliah's Stolen Spear"
+		q(61214),	-- triggered when completing #61234, "Stonehuck's Sinstone"
+		q(61955),	-- triggered when completing #62236, "Rattlebag's Lost Armor"
+		q(62991),	-- triggered when completing #62993, "The Riddle of Death"
+		q(61953),	-- triggered when completing #62231, "Velkein's Blade"
+		q(61954),	-- triggered when completing #62227, "Xertora's Construct"
 };
