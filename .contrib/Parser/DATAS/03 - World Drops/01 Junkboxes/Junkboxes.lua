@@ -47,6 +47,9 @@ _.WorldDrops =
 				i(68163),	-- The Twilight Blade
 				i(68161),	-- Krol Decapitator
 			}),
+			i(88567, {	-- Ghost Iron Lockbox
+				["timeline"] = { "added 5.0.1.15752" },
+			}),
 			i(16885, { 	-- Heavy Junkbox
 				i(1728),	-- Teebu's Blazing Longsword [Discord Confirmation - Luce]
 				i(16215),	-- Formula: Enchant Boots Greater Stamina
@@ -103,6 +106,9 @@ _.WorldDrops =
 				i(10601),	-- Schematic: Bright-Eye Goggles
 				i(4416),	-- Schematic: Goblin Land Mine
 				i(4414),	-- Schematic: Portable Bronze Mortar
+			}),
+			i(31952, {	-- Khorium Lockbox
+				["timeline"] = { "added 2.1.0.6678" },
 			}),
 			i(180532),	-- Laestrite Lockbox
 			i(5758),	-- Mithril Lockbox

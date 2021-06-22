@@ -1562,64 +1562,79 @@ _.PVP =
 
 -- The items never made it in.
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	-- Season 2
-	i(165036),	-- Sinister Gladiator's Halberd (A)
-	i(166634),	-- Sinister Gladiator's Silk Armor (A)
-	i(166660),	-- Sinister Gladiator's Silk Shoulderguards (A)
-	i(166611),	-- Sinister Gladiator's Silk Cap (A)
-	i(166630),	-- Sinister Gladiator's Silk Armor (H)
-	i(166654),	-- Sinister Gladiator's Silk Shoulderguards (H)
-	i(166606),	-- Sinister Gladiator's Silk Cap (H)
-	i(166637),	-- Sinister Gladiator's Leather Harness (A)
-	i(166613),	-- Sinister Gladiator's Leather Headpiece (A)
-	i(166658),	-- Sinister Gladiator's Leather Shoulderpads (A)
-	i(166631),	-- Sinister Gladiator's Leather Harness (H)
-	i(166607),	-- Sinister Gladiator's Leather Headpiece (H)
-	i(166655),	-- Sinister Gladiator's Leather Shoulderpads (H)
-	i(166635),	-- Sinister Gladiator's Plate Chestplate (A)
-	i(166659),	-- Sinister Gladiator's Shoulderplates (A)
-	i(166610),	-- Sinister Gladiator's Plate Skullguard (A)
-	i(166633),	-- Sinister Gladiator's Plate Chestplate (H)
-	i(166657),	-- Sinister Gladiator's Shoulderplates (H)
-	i(166609),	-- Sinister Gladiator's Plate Skullguard (H)
-	i(166661),	-- Sinister Gladiator's Chain Epaulets (A)
-	i(166612),	-- Sinister Gladiator's Chain Skullcover (A)
-	i(166636),	-- Sinister Gladiator's Chain Vest (A)
-	i(166632),	-- Sinister Gladiator's Chain Vest (H)
-	i(166608),	-- Sinister Gladiator's Chain Skullcover (H
-	i(166656),	-- Sinister Gladiator's Chain Epaulets (H)
-
-	-- Season 3
-	i(167522),	-- Notorious Aspirant's Shield Wall (A)
-	i(167521),	-- Notorious Aspirant's Shield Wall (H)
-	i(169725),	-- Notorious Gladiator's Bonegrinder (A)
-	i(169724),	-- Notorious Gladiator's Bonegrinder
-	i(167291),	-- Notorious Gladiator's Silk Cord (A)
-	i(167241),	-- Notorious Gladiator's Silk Cord (H)
-
-	-- Season 4
-	i(172718),	-- Corrupted Gladiator's Silk Armor (A)
-	i(172695),	-- Corrupted Gladiator's Silk Cap (A)
-	i(172744),	-- Corrupted Gladiator's Silk Shoulderguards (A)
-	i(172714),	-- Corrupted Gladiator's Silk Armor (H)
-	i(172690),	-- Corrupted Gladiator's Silk Cap (H)
-	i(172738),	-- Corrupted Gladiator's Silk Shoulderguards (H)
-	i(172721),	-- Corrupted Gladiator's Leather Harness (A)
-	i(172697),	-- Corrupted Gladiator's Leather Headpiece (A)
-	i(172742),	-- Corrupted Gladiator's Leather Shoulderpads (A)
-	i(172715),	-- Corrupted Gladiator's Leather Harness (H)
-	i(172691),	-- Corrupted Gladiator's Leather Headpiece (H)
-	i(172739),	-- Corrupted Gladiator's Leather Shoulderpads (H)
-	i(172745),	-- Corrupted Gladiator's Chain Epaulets (A)
-	i(172696),	-- Corrupted Gladiator's Chain Skullcover (A)
-	i(172720),	-- Corrupted Gladiator's Chain Vest (A)
-	i(172716),	-- Corrupted Gladiator's Chain Vest (H)
-	i(172692),	-- Corrupted Gladiator's Chain Skullcover (H)
-	i(172740),	-- Corrupted Gladiator's Chain Epaulets (H)
-	i(172719),	-- Corrupted Gladiator's Plate Chestplate (A)
-	i(172694),	-- Corrupted Gladiator's Plate Skullguard (A)
-	i(172743),	-- Corrupted Gladiator's Shoulderplates (A)
-	i(172741),	-- Corrupted Gladiator's Shoulderplates (H)
-	i(172693),	-- Corrupted Gladiator's Plate Skullguard (H)
-	i(172717),	-- Corrupted Gladiator's Plate Chestplate (H)
+	n(-319, {	-- Weapons
+		-- Season 2
+		i(165036),	-- Sinister Gladiator's Halberd (A)
+		-- Season 3
+		i(167522),	-- Notorious Aspirant's Shield Wall (A)
+		i(167521),	-- Notorious Aspirant's Shield Wall (H)
+		i(169725),	-- Notorious Gladiator's Bonegrinder (A)
+		i(169724),	-- Notorious Gladiator's Bonegrinder
+	}),
+	n(-163, {	-- Armor
+		n(-43, {	-- Cloth
+			i(166634),	-- Sinister Gladiator's Silk Armor (A)
+			i(166660),	-- Sinister Gladiator's Silk Shoulderguards (A)
+			i(166611),	-- Sinister Gladiator's Silk Cap (A)
+			i(166630),	-- Sinister Gladiator's Silk Armor (H)
+			i(166654),	-- Sinister Gladiator's Silk Shoulderguards (H)
+			i(166606),	-- Sinister Gladiator's Silk Cap (H)
+			-- Season 3
+			i(167291),	-- Notorious Gladiator's Silk Cord (A)
+			i(167241),	-- Notorious Gladiator's Silk Cord (H)
+			-- Season 4
+			i(172718),	-- Corrupted Gladiator's Silk Armor (A)
+			i(172695),	-- Corrupted Gladiator's Silk Cap (A)
+			i(172744),	-- Corrupted Gladiator's Silk Shoulderguards (A)
+			i(172714),	-- Corrupted Gladiator's Silk Armor (H)
+			i(172690),	-- Corrupted Gladiator's Silk Cap (H)
+			i(172738),	-- Corrupted Gladiator's Silk Shoulderguards (H)
+			
+		}),
+		n(-44, {	-- Leather
+			i(166637),	-- Sinister Gladiator's Leather Harness (A)
+			i(166613),	-- Sinister Gladiator's Leather Headpiece (A)
+			i(166658),	-- Sinister Gladiator's Leather Shoulderpads (A)
+			i(166631),	-- Sinister Gladiator's Leather Harness (H)
+			i(166607),	-- Sinister Gladiator's Leather Headpiece (H)
+			i(166655),	-- Sinister Gladiator's Leather Shoulderpads (H)
+			-- Season 4
+			i(172721),	-- Corrupted Gladiator's Leather Harness (A)
+			i(172697),	-- Corrupted Gladiator's Leather Headpiece (A)
+			i(172742),	-- Corrupted Gladiator's Leather Shoulderpads (A)
+			i(172715),	-- Corrupted Gladiator's Leather Harness (H)
+			i(172691),	-- Corrupted Gladiator's Leather Headpiece (H)
+			i(172739),	-- Corrupted Gladiator's Leather Shoulderpads (H)
+		}),	
+		n(-45, {	-- Mail
+			i(166661),	-- Sinister Gladiator's Chain Epaulets (A)
+			i(166612),	-- Sinister Gladiator's Chain Skullcover (A)
+			i(166636),	-- Sinister Gladiator's Chain Vest (A)
+			i(166632),	-- Sinister Gladiator's Chain Vest (H)
+			i(166608),	-- Sinister Gladiator's Chain Skullcover (H
+			i(166656),	-- Sinister Gladiator's Chain Epaulets (H)
+			-- Season 4
+			i(172745),	-- Corrupted Gladiator's Chain Epaulets (A)
+			i(172696),	-- Corrupted Gladiator's Chain Skullcover (A)
+			i(172720),	-- Corrupted Gladiator's Chain Vest (A)
+			i(172716),	-- Corrupted Gladiator's Chain Vest (H)
+			i(172692),	-- Corrupted Gladiator's Chain Skullcover (H)
+			i(172740),	-- Corrupted Gladiator's Chain Epaulets (H)
+		}),
+		n(-46, {	-- Plate
+			i(166635),	-- Sinister Gladiator's Plate Chestplate (A)
+			i(166659),	-- Sinister Gladiator's Shoulderplates (A)
+			i(166610),	-- Sinister Gladiator's Plate Skullguard (A)
+			i(166633),	-- Sinister Gladiator's Plate Chestplate (H)
+			i(166657),	-- Sinister Gladiator's Shoulderplates (H)
+			i(166609),	-- Sinister Gladiator's Plate Skullguard (H)
+			-- Season 4
+			i(172719),	-- Corrupted Gladiator's Plate Chestplate (A)
+			i(172694),	-- Corrupted Gladiator's Plate Skullguard (A)
+			i(172743),	-- Corrupted Gladiator's Shoulderplates (A)
+			i(172741),	-- Corrupted Gladiator's Shoulderplates (H)
+			i(172693),	-- Corrupted Gladiator's Plate Skullguard (H)
+			i(172717),	-- Corrupted Gladiator's Plate Chestplate (H)
+		}),
+	}),
 });

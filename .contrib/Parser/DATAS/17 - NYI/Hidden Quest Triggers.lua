@@ -2,8 +2,7 @@
 --     N E V E R    I M P L E M E N T E D    M O D U L E     --
 ---------------------------------------------------------------
 
-_.HiddenQuestTriggers =
-{
+_.HiddenQuestTriggers = {
 	-- Note!! Here is where we can put all the hidden quest triggers in the game that don't exactly fit anywhere.
 	-- When adding a quest trigger be sure to put a description of how it triggered
 	n(QUESTS, {	-- Quests
@@ -4178,10 +4177,8 @@ _.HiddenQuestTriggers =
 		q(60960),	-- "Chiu's Lute," sort of a real quest?  but repeatable, only available when certain choices are made for ember court, pointless in general, doesn't seem worth tracking
 		q(60955),	-- "Noko's Flute," same as above
 		q(61433),	-- "Lower Your Standards," for turning in Giant Lungcap to Picky Stefan
-		q(62135),	-- picked up when entering the Ember Court for the week — for "Fungi Experiments"
 		q(61445),	-- triggered completed upon turning in gossip to Prince Renathal for the "Venthyr Provocateur" objective (assume this is for sharing the gossip to make court +Exciting)
 		q(62146),	-- triggered when completing "A Little More Comfortable"
-		q(61725),	-- turning in Stolen Mementos to Keeper Ta'saran in Ember Court
 		q(62496),	-- triggered when Ember Court ended, Week 1 (had Cryptkeeper Kassir as guest and he was Elated)
 		q(62512),	-- triggered when Ember Court ended, Week 1 (had Cryptkeeper Kassir as guest and he was Elated)
 		q(62499),	-- triggered when Ember Court ended, Week 2 (had Kleia + Pelagos as guests and they were Elated)
@@ -4221,69 +4218,17 @@ _.HiddenQuestTriggers =
 		q(62493),	-- Ember Court End (The Countess / Polemarch Adrestes as first-time guests, both Elated)
 		q(62510),	-- ""
 		q(61534),	-- triggered when looting Mikanikos' Extravagant Tribute for the first time, all i got was Decree: Mikanikos's Boon -- did NOT trigger with the rest of the ending quests, was only after i looted the chest
-		q(59626),	-- Guest Selected for Ember Court: Baroness Vashj
-		q(59627),	-- Guest Selected for Ember Court: Lady Moonberry
-		q(59628),	-- Guest Selected for Ember Court: Mikanikos
-		q(59629),	-- Guest Selected for Ember Court: The Countess
-		q(59630),	-- Guest Selected for Ember Court: Alexandros Morgraine
-		q(59631),	-- Guest Selected for Ember Court: Hunt-Captain Korayn
-		q(59632),	-- Guest Selected for Ember Court: Polemarch Adrestes
-		q(59633),	-- Guest Selected for Ember Court: Rendle and Cudgelface
-		q(59634),	-- Guest Selected for Ember Court: Choofa
-		q(59635),	-- Guest Selected for Ember Court: Cryptkeeper Kassir
-		q(59636),	-- Guest Selected for Ember Court: Droman Aliothe
-		q(59637),	-- Guest Selected for Ember Court: Grandmaster Vole
-		q(59638),	-- Guest Selected for Ember Court: Kleia and Pelagos
-		q(59639),	-- Guest Selected for Ember Court: Plague Deviser Marileth
-		q(59640),	-- Guest Selected for Ember Court: Sika
-		q(60319),	-- Guest Selected for Ember Court: Stonehead
-		q(61389),	-- 1st free revoke RSVP per week
-		q(61390),	-- 2nd free revoke RSVP per week
-		q(61889),	-- 3rd free revoke RSVP per week
-		q(61890),	-- 4th free revoke RSVP per week
-		q(61504),	-- triggered when using item #181536, "Guest List Page"
-		q(59491),	-- triggered when using "Contract: Glimpse of the Wilds"
-		q(59492),	-- triggered when using "Contract: Glimpse of the Wilds"
-		q(59503),	-- triggered when using "Contract: Divine Desserts"
-		q(59504),	-- triggered when using "Contract: Divine Desserts"
+
 		q(62668),	-- after looting a Dirty Glinting Object -- someone on discord got this when turning in Favor: She Had a Stone Heart, but i did not
-		q(59690),	-- triggered when using "Racing Permit," reward from "It's Race Day in the Ramparts!" WQ
 		q(58059),	-- when choosing House Briarbane while on "Enacting Immediate Justice"
 		q(58061),	-- when choosing House Primrose while on "Enacting Immediate Justice"
 		q(58063),	-- when choosing House Darkvein while on "Enacting Immediate Justice"
 		q(58064),	-- when choosing House Sourwine while on "Enacting Immediate Justice"
 		q(58065),	-- when choosing House Duskmire while on "Enacting Immediate Justice"
 		q(58066),	-- when choosing House Sinfang while on "Enacting Immediate Justice"
-		q(61581),	-- Choosing Purple during 'Shades of Muck' (61851)
-		q(61584),	-- Choosing Blue during 'Shades of Muck' (61851)
-		q(61579),	-- Choosing Green during 'Shades of Muck' (61851)
-		q(61580),	-- Choosing Red during 'Shades of Muck' (61851)
-		q(61583),	-- When completing 'Shades of Muck' (61851) with Purple chosen
-		q(61793),	-- Choosing name 'Rogi' during 'Dredging up a Name' (61764)
-		q(61794),	-- Choosing name 'Grubber' during 'Dredging up a Name' (61764)
-		q(61795),	-- Choosing name 'Jeebs' during 'Dredging up a Name' (61764)
-		q(61796),	-- Choosing name 'Smither' during 'Dredging up a Name' (61764)
-		q(61797),	-- Choosing name 'Higgs' during 'Dredging up a Name' (61764)
-		q(61798),	-- Choosing name 'Muckworth Muddington III' during 'Dredging up a Name' (61764)
-		q(61799),	-- Choosing name 'Belvy' during 'Dredging up a Name' (61764)
-		q(61800),	-- Choosing name 'Wustur' during 'Dredging up a Name' (61764)
-		q(61801),	-- Choosing name 'Riff' during 'Dredging up a Name' (61764)
-		q(61802),	-- Choosing name 'Egor' during 'Dredging up a Name' (61764)
-		q(61803),	-- Choosing name 'Dredgeworth' during 'Dredging up a Name' (61764)
-		q(61804),	-- Choosing name 'Furgus' during 'Dredging up a Name' (61764)
-		q(61805),	-- Choosing name 'Colem' during 'Dredging up a Name' (61764)
-		q(61806),	-- Choosing name 'Panns' during 'Dredging up a Name' (61764)
-		q(61807),	-- Choosing name 'Mucky' during 'Dredging up a Name' (61764)
-		q(61808),	-- Choosing name 'Dobb' during 'Dredging up a Name' (61764)
-		q(61809),	-- Choosing name 'Sweepy' during 'Dredging up a Name' (61764)
-		q(61810),	-- Choosing name 'Copperworth' during 'Dredging up a Name' (61764)
-		q(61811),	-- Choosing name 'Fred' during 'Dredging up a Name' (61764)
-		q(61812),	-- Choosing name 'Raff' during 'Dredging up a Name' (61764)
-		q(61582),	-- When applying trimmed hair to your dredger
 		-- q(59682),	-- triggered when using "Crown of Honor"
 		q(59684),	-- Using 'Bounding Shroom Seeds' (177233)
 		q(59694),	-- Using 'Night Fae Arsenal' (177244)
-		q(59695),	-- triggered when using "Maldraxxi Challenge Banner"
 		q(61546),	-- when opening the correct crypt door while on quest 'Crypt Crashers' (58428)
 		q(62502),	-- triggered at the end of Ember Court, before collecting tribute/leaving (week 3)
 		q(61531),	-- either due to Acquaintence with The Countess, or from the auto-use of "Decree: The Countess's Boon" when opening The Countess's Extravagant Tribute
@@ -4296,87 +4241,11 @@ _.HiddenQuestTriggers =
 		q(60611),	-- triggered when completing #60601, "Darkwing Drills," Anima Conductor Rank 2 WQ (as aggressor)
 		q(60613),	-- triggered when completing #60601, "Darkwing Drills," Anima Conductor Rank 2 WQ (as aggressor)
 		q(62460),	-- triggered when completing #60601, "Darkwing Drills," Anima Conductor Rank 2 WQ (as aggressor)
-		-- q(61493),	-- when using "Building: Dredger Pool"
-		q(59472),	-- when using "Contract: Traditional Theme"
-		q(59473),	-- when using "Contract: Traditional Theme"
-		q(61501),	-- when using "Staff: Ambassador"
-		q(61887),	-- when using "Staff: Ambassador" (Maldraxxus)
-		q(61888),	-- when using "Staff: Ambassador" (Bastion)
-		q(59437),	-- when using "Staff: Bouncers"
-		q(59435),	-- when using "Staff: Dredger Decorators"
-		q(61498),	-- when using "Stock: Appetizers"
-		q(59476),	-- when using "Contract: Mortal Reminders"
-		q(59477),	-- when using "Contract: Mortal Reminders"
-		q(59382),	-- when using "RSVP: Baroness Vashj" — every time
-		q(59383),	-- when using "RSVP: Baroness Vashj" — first time only
-		q(59406),	-- when using "RSVP: Choofa" — every time
-		q(59407),	-- when using "RSVP: Choofa" — first time only
-		q(59409),	-- when using "RSVP: Cryptkeeper Kassir" — every time
-		q(59410),	-- when using "RSVP: Cryptkeeper Kassir" — first time only
-		q(59412),	-- when using "RSVP: Droman Aliothe" — every time
-		q(59413),	-- when using "RSVP: Droman Aliothe" — first time only
-		q(59415),	-- when using "RSVP: Grandmaster Vole" — every time
-		q(59416),	-- when using "RSVP: Grandmaster Vole" — first time only
-		q(59397),	-- when using "RSVP: Hunt-Captain Korayn" — every time
-		q(59398),	-- when using "RSVP: Hunt-Captain Korayn" — first time only
-		q(59418),	-- when using "RSVP: Kleia and Pelagos" — every time
-		q(59419),	-- when using "RSVP: Kleia and Pelagos" — first time only
-		q(59385),	-- when using "RSVP: Lady Moonberry" — every time
-		q(59386),	-- when using "RSVP: Lady Moonberry" — first time only
-		q(59388),	-- when using "RSVP: Mikanikos" — every time
-		q(59389),	-- when using "RSVP: Mikanikos" — first time only
-		q(59421),	-- when using "RSVP: Plague Deviser Marileth" (176124) — every time
-		q(59422),	-- when using "RSVP: Plague Deviser Marileth" (176124) — first time only
-		q(59400),	-- when using 'RSVP: Polemarch Adrestes' (176117) — every time
-		q(59401),	-- when using 'RSVP: Polemarch Adrestes' (176117) — first time only
-		q(59403),	-- when using "RSVP: Rendle and Cudgelface" (176118) — every time
-		q(59404),	-- when using "RSVP: Rendle and Cudgelface" (176118) — first time only
-		q(59424),	-- when using "RSVP: Sika" — every time
-		q(59425),	-- when using "RSVP: Sika" — first time only
-		q(59618),	-- when using "RSVP: Stonehead" — every time
-		q(59619),	-- when using "RSVP: Stonehead" — first time only
-		q(59394),	-- when using "RSVP: Alexandros Morgraine" — every time
-		q(59395),	-- when using "RSVP: Alexandros Morgraine" — first time only
-		q(59391),	-- when using "RSVP: The Countess" — every time
-		q(59392),	-- when using "RSVP: The Countess" — first time only
-		q(61505),	-- when using 'Guest List Page' (181537)
-		q(61506),	-- when using 'Guest List Page' (181538)
 		-- q(61531),	-- learning the toy (The Countess's Parasol) ?? maybe?
 		q(63454),	-- triggered when turning in #62867, "Return Lost Souls" (Venthyr 10-soul weekly)
 		q(59744),	-- when opening the Battered Chest while on Repair and Restore
 		q(60302),	-- when channeling anima to Dominance Keep for the first time
-		-- q(61494),	-- using Building: Guardhouse
-		q(59436),	-- using Staff: Stage Crew
-		q(59433),	-- using Staff: Waiters
-		q(61457),	-- using Altar of Accomplishment
-		q(59515),	-- using Contract: Stoneborn Reserves
-		q(59516),	-- using Contract: Stoneborn Reserves
-		q(59488),	-- using Contract: Lost Chalice Band
-		q(59489),	-- using Contract: Lost Chalice Band
-		q(59518),	-- using Contract: Venthyr Volunteers
-		q(59519),	-- using Contract: Venthyr Volunteers
-		q(59512),	-- using Contract: Maldraxxian Army
-		q(59513),	-- using Contract: Maldraxxian Army
-		q(59500),	-- using Contract: Mushroom Surprise
-		q(59501),	-- using Contract: Mushroom Surprise
-		q(59479),	-- using Contract: Mystery Mirrors
-		q(59480),	-- using Contract: Mystery Mirrors
-		q(61499),	-- using Stock: Anima Samples
-		q(61500),	-- using Stock: Comfy Chairs
-		q(61497),	-- using Stock: Greeting Kits
 		q(61502),	-- when using Invitation: Choofa
-		q(59474),	-- selecting Decoration: Traditional for Ember Court
-		q(59475),	-- selecting Decoration: Mortal Reminders for Ember Court
-		q(59478),	-- selecting Decoration: Mystery Mirrors for Ember Court
-		q(59493),	-- selecting Entertainment: Atoning Rituals for Ember Court
-		q(59490),	-- selecting Entertainment: Glimpse of the Wilds for Ember Court
-		q(59487),	-- selecting Entertainment: Lost Chalice Band for Ember Court
-		q(59505),	-- selecting Refreshment: Tubbins's Tea Party for Ember Court
-		q(59502),	-- selecting Refreshment: Divine Desserts for Embert Court
-		q(59499),	-- selecting Refreshment: Mushroom Surprise for Embrt Court
-		q(59517),	-- selecting Security: Venthyr Volunteers for Embrt Court
-		q(59514),	-- selecting Security: Stoneborn Reserves for Embrt Court
-		q(59511),	-- selecting Security: Maldraxxian Army for Embrt Court
 		q(62533),	-- when completing 'Sootible Hat: Pink Party Hat' (62556)
 		q(63354),	-- when completing 'Sootible Hat: Pink Party Hat' (62556)
 		q(62531),	-- when completing 'Sootible Hat: Crown of the Righteous' (62559)
@@ -4429,43 +4298,7 @@ _.HiddenQuestTriggers =
 		q(63376),	-- Abductors (4)
 		q(63417),	-- Immediate Extinction (5)
 
-		-- Torghast
-		q(59987),	-- Tracking Quest (Finished Mort'regar Layer 1)
-		q(59988),	-- Tracking Quest (Finished The Soulforges Layer 1)
-		q(59989),	-- Tracking Quest (Finished Coldheart Interstitia Layer 1)
-		q(59990),	-- Tracking Quest (Finished The Upper Reaches Layer 1)
-		q(59991),	-- Tracking Quest (Finished The Soulforges Layer 1)
-		q(59992),	-- Tracking Quest (Finished The Upper Reaches Layer 1)
-		q(59993),	-- Tracking Quest (Finished The Fracture Chambers Layer 1)
-		q(59995),	-- Tracking Quest (Finished The Fracture Chambers Layer 1)
-		q(59996),	-- Tracking Quest (Finished Skoldus Hall Layer 1)
-		q(59997),	-- Tracking Quest (Finished The Upper Reaches Layer 1)
-		q(62967),	-- Triggered when opening Domination Lock for Prison of the Forgotten quest
-		q(61951),	-- Triggered when completing 61958 (Champion: Gorgelimb)
-		q(61305),	-- triggered when completing #61313, "Champion: Kythekios"
-		q(61420),	-- Triggered when freeing Yira'lya
-		q(61215),	-- triggered when completing Champion: Kaletar
-		q(61417),	-- triggered when completing Karynmwylyann's Roots (61429)
-		q(61211),	-- triggered when completing Thela's Memory Stone (61243)
-		q(60555),	-- triggered when completing Champion: Meatball (Venthyr)
-		q(61212),	-- triggered when completing Champion: Dug Gravewell [Venthyr] (61218)
-		q(61415),	-- Triggered when completing #61427, "Blisswing's Rescue"
-		q(61416),	-- Triggered when completing #61428, "Duskleaf's Revenge"
-		q(61418),	-- Triggered when completing #61430, "Chalkyth's Saber"
-		q(61419),	-- Triggered when completing #TODO, "TODO" (for Lloth'wellyn)
-		q(61216),	-- triggered when completing #61259, "Ayeleth's Hunger" (was on a venthyr and picked up the champ quest right after)
-		q(61309),	-- triggered when completing #61347, "Molako's Freedom"
-		q(61213),	-- triggered when completing #61262, "Nerith's Vengeance"
-		q(61952),	-- triggered when completing #62226, "Talethi's Desire"
-		q(61307),	-- triggered when completing #61340, "Telethakas's Revenge"
-		q(61306),	-- triggered when completing #61330, "Teliah's Stolen Spear"
-		q(61214),	-- triggered when completing #61234, "Stonehuck's Sinstone"
-		q(62885),	-- triggered when learning legendary memory that triggered a cutscene w/Runecarver
-		q(62991),	-- triggered when completing #62993, "The Riddle of Death"
-		q(61953),	-- triggered when completing #62231, "Velkein's Blade"
-		q(62977),	-- Twisting Corridors, Layer 2 (it looks like TC quests don't reset weekly like the others/are used to mark account TC progress or something)
-		q(62978),	-- Twisting Corridors, Layer 4
-		q(62980),	-- Twisting Corridors, Layer 8
+		-- Torghast (ref: SL/Torghast/Quests)
 
 		-- Dungeons
 		q(62658),	-- Shadowlands Dungeon Reward Quest

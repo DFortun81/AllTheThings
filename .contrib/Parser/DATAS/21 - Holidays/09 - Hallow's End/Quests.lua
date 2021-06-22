@@ -1668,8 +1668,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 			q(12379, {	-- Candy Bucket — Thousand Needles, Freewind Post, Horde (removed)
 				["isYearly"] = true,
 				["races"] = HORDE_ONLY,
-				["coord"] = { 46.1, 51.4, 64 },
-				["maps"] = { 64 },	-- Thousand Needles
+				["coord"] = { 46.1, 51.4, THOUSAND_NEEDLES },
+				["maps"] = { THOUSAND_NEEDLES },
 				["u"] = REMOVED_FROM_GAME,	-- Freewind Post was taken by the Grimtotem during Cataclysm
 				["g"] = {
 					i(37586), -- Handful of Treats

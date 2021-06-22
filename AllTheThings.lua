@@ -1957,6 +1957,7 @@ MergeObjects = function(g, g2, cloneOnAdd)
 							if t.g then
 								MergeObjects(t.g, o.g, true);
 							else
+								t.g = {};
 								for _,s in ipairs(o.g) do
 									tinsert(t.g, CloneData(s));
 								end
@@ -2011,6 +2012,7 @@ MergeObject = function(g, t, index, cloneOnAdd)
 					if o.g then
 						MergeObjects(o.g, t.g, cloneOnAdd);
 					elseif cloneOnAdd then
+						o.g = {};
 						for _,s in ipairs(t.g) do
 							tinsert(o.g, CloneData(s));
 						end
@@ -3888,15 +3890,15 @@ app.BuildCrafted = function(item)
 	local itemID = item.itemID;
 	if not itemID then return; end
 	-- track the starting item
-	-- print("BuildCrafted",itemID)
 	app.BuildCrafted_IncludedItems[itemID] = true;
+	-- print("marked",itemID)
 	local reagentCache = app.GetDataSubMember("Reagents", itemID);
 	if reagentCache then
-		-- print("Item is Reagent")
+		-- print("BuildCrafted Reagent",itemID)
 		-- check if the item is BoP and needs skill filtering for current character, or debug mode
 		local filterSkill = not app.MODE_DEBUG and item.b and item.b == 1 or select(14, GetItemInfo(itemID)) == 1;
 
-		local clone;
+		local craftableItemIDs = {};
 		-- item is BoP
 		if filterSkill then
 			-- If needing to filter by skill due to BoP reagent, then check via recipe cache instead of by crafted item
@@ -3907,8 +3909,7 @@ app.BuildCrafted = function(item)
 				local craftedItemID = info[1];
 				-- print(itemID,"x",info[2],"=>",craftedItemID,"via",recipeID);
 				-- TODO: review how this can be nil
-				if craftedItemID then
-					clone = nil;
+				if craftedItemID and not craftableItemIDs[craftedItemID] and not app.BuildCrafted_IncludedItems[craftedItemID] then
 					-- print("recipeID",recipeID);
 					local searchRecipes = app.SearchForField("spellID", recipeID);
 					if searchRecipes and #searchRecipes > 0 then
@@ -3919,35 +3920,12 @@ app.BuildCrafted = function(item)
 						-- ensure this character can craft the recipe
 						if skillID then
 							if knownSkills and knownSkills[skillID] then
-								if not app.BuildCrafted_IncludedItems[craftedItemID] then
-									-- track the added craftedItemID regardless of if an item was added for it
-									app.BuildCrafted_IncludedItems[craftedItemID] = true;
-									-- find a reference to the item in the DB and add it to the group
-									clone = GetCachedSearchResults("itemID:" .. tostring(craftedItemID), app.SearchForField, "itemID", craftedItemID);
-								end
+								craftableItemIDs[craftedItemID] = true;
 							end
 						else
 						-- recipe without any skill requirement? weird...
-							if not app.BuildCrafted_IncludedItems[craftedItemID] then
-								-- track the added craftedItemID regardless of if an item was added for it
-								app.BuildCrafted_IncludedItems[craftedItemID] = true;
-								-- find a reference to the item in the DB and add it to the group
-								clone = GetCachedSearchResults("itemID:" .. tostring(craftedItemID), app.SearchForField, "itemID", craftedItemID);
-							end
+							craftableItemIDs[craftedItemID] = true;
 						end
-					end
-					if clone then
-						-- use the crafting count as the total/progress
-						-- clone.matCount = count;-- * (item.matCount or 1);
-						-- clone.total = clone.collectible and clone.matCount;
-						-- clone.progress = clone.collectible and clone.collected and clone.matCount;
-						if not clone.g then
-							clone.total = nil;
-							clone.progress = nil;
-						end
-
-						if not item.g then item.g = { clone };
-						else MergeObject(item.g, clone); end
 					end
 				end
 			end
@@ -3955,32 +3933,81 @@ app.BuildCrafted = function(item)
 		else
 			-- Can otherwise simply iterate over the set of crafted items and add them
 			for craftedItemID,count in pairs(reagentCache[2]) do
-				-- print(itemID,"x",count,"=>",craftedItemID);
-				-- TODO: review how this can be nil
 				if craftedItemID then
-					clone = nil;
-					if not app.BuildCrafted_IncludedItems[craftedItemID] then
-						-- track the added craftedItemID regardless of if an item was added for it
-						app.BuildCrafted_IncludedItems[craftedItemID] = true;
-						-- find a reference to the item in the DB and add it to the group
-						clone = GetCachedSearchResults("itemID:" .. tostring(craftedItemID), app.SearchForField, "itemID", craftedItemID);
-						if clone then
-							-- use the crafting count as the total/progress
-							-- clone.matCount = count;-- * (item.matCount or 1);
-							-- clone.total = clone.collectible and clone.matCount;
-							-- clone.progress = clone.collectible and clone.collected and clone.matCount;
-							if not clone.g then
-								clone.total = nil;
-								clone.progress = nil;
-							end
-
-							if not item.g then item.g = { clone };
-							else MergeObject(item.g, clone); end
-						end
-					end
+					craftableItemIDs[craftedItemID] = true;
 				end
 			end
 		end
+		-- Now that all craftable items have been collected, pop their search results into the sub-group of the Item
+		-- This will include the craftable items of those items as well if any
+		if not item.g then item.g = {}; end
+		local search;
+		local basicItemIDs = {};
+		for craftedItemID,_ in pairs(craftableItemIDs) do
+			-- Each item has potential to add a crafted item which is already listed in the set of craftable items, so have to check again
+			if not app.BuildCrafted_IncludedItems[craftedItemID] then
+				-- sub-crafted reagents are processed first
+				if app.GetDataSubMember("Reagents", craftedItemID) then
+					-- print("reagentItem",craftedItemID)
+					search = GetCachedSearchResults("itemID:" .. tostring(craftedItemID), app.SearchForField, "itemID", craftedItemID);
+					if search then
+						-- dont replicate any sub-groups in lower-level crafts
+						-- probably don't need to recursively do this...
+						if search.g then
+							for _,sub in pairs(search.g) do
+								if sub.itemID then
+									app.BuildCrafted_IncludedItems[sub.itemID] = true;
+								end
+							end
+						end
+						MergeObject(item.g, search);
+					end
+				else
+					basicItemIDs[craftedItemID] = true;
+				end
+			end
+		end
+		-- Now process the craftable reagents so we don't insert duplicate groups
+		-- if craftableReagentIDs then
+		for basicItemID,_ in pairs(basicItemIDs) do
+			-- Each item has potential to add a crafted item which is already listed in the set of craftable items, so have to check again
+			if not app.BuildCrafted_IncludedItems[basicItemID] then
+				-- print("basicItem",basicItemID)
+				search = GetCachedSearchResults("itemID:" .. tostring(basicItemID), app.SearchForField, "itemID", basicItemID);
+				if search then
+					-- dont replicate any sub-groups in lower-level crafts
+					-- probably don't need to recursively do this...
+					if search.g then
+						for _,sub in pairs(search.g) do
+							if sub.itemID then
+								app.BuildCrafted_IncludedItems[sub.itemID] = true;
+							end
+						end
+					end
+					MergeObject(item.g, search);
+				end
+			end
+			-- for _,sub in pairs(nested.g) do
+			-- 	-- only add sub-crafted items which have not already been added
+			-- 	print("sub.itemID",sub.itemID)
+			-- 	if sub.itemID and not app.BuildCrafted_IncludedItems[sub.itemID] then
+			-- 		print("non-filtered",sub.itemID)
+			-- 		app.BuildCrafted_IncludedItems[sub.itemID] = true;
+			-- 		if not filteredSearch then filteredSearch = { sub }
+			-- 		else MergeObject(filteredSearch, sub); end
+			-- 	end
+			-- end
+			-- print("replace and merged filtered",filteredSearch and #filteredSearch)
+			-- -- replace the nested group with the filtered group (even if nothing left)
+			-- nested.g = filteredSearch;
+			-- -- push the nested craftable into the original item group
+			-- MergeObject(item.g, nested);
+			-- -- reset filtered group
+			-- filteredSearch = nil;
+			-- -- print("nested sub",nested.g and #nested.g)
+		end
+		-- end
+		-- print("BuildCrafted-Done")
 	end
 end
 app.ExpandSubGroups_IncludedItems = {};
@@ -12412,8 +12439,12 @@ function app:CreateMiniListForGroup(group)
 		else
 			-- clone/search initially so as to not let popout operations modify the source data
 			group = CloneData(group);
-			-- Merge any purchasable things into the sub-groups
-			FillPurchases(group);
+			-- Fill any purchasable things for the sub-groups
+			-- if group.g then
+			-- 	for _,sub in ipairs(group.g) do
+			-- 		FillPurchases(sub);
+			-- 	end
+			-- end
 		end
 		-- This logic allows for nested searches of groups within a popout to be returned as the root search which resets the parent
 		-- if not group.isBaseSearchResult then
@@ -12428,7 +12459,11 @@ function app:CreateMiniListForGroup(group)
 		-- if popping out a thing with a Cost, generate a Cost group to allow referencing the Cost things directly
 		if group.cost then app.BuildCost(group); end
 		popout = app:GetWindow(suffix);
-		popout.shouldFullRefresh = true;
+		-- popout.shouldFullRefresh = true;
+		-- custom Update method for the popout so we don't have to force refresh
+		popout.Update = function(self, force, got)
+			self:BaseUpdate(force or got, got)
+		end
 		-- popping out something without a source, try to determine it on-the-fly using same logic as harvester
 		-- TODO: modify parser to include known sources for unsorted before commenting this back in
 		-- if not group.s or group.s == 0 then

@@ -591,8 +591,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8724,  {	-- Morningdew the Elder
 				["provider"] = { "n", 15604 },	-- Elder Morningdew
 				["isYearly"] = true,
-				["coord"] = { 77.1, 75.6, 64 },
-				["maps"] = { 64 },	-- Thousand Needles
+				["coord"] = { 77.1, 75.6, THOUSAND_NEEDLES },
+				["maps"] = { THOUSAND_NEEDLES },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(14, {	-- Elder Morningdew in Fizzle and Pozzik's Speedbarge
@@ -676,8 +676,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8682,  {	-- Skyseer the Elder
 				["provider"] = { "n", 15584 },	-- Elder Skyseer
 				["isYearly"] = true,
-				["coord"] = { 46.3, 50.9, 64 },
-				["maps"] = { 64 },	-- Thousand Needles
+				["coord"] = { 46.3, 50.9, THOUSAND_NEEDLES },
+				["maps"] = { THOUSAND_NEEDLES },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(13, {	-- Elder Skyseer in Freewind Post
