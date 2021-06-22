@@ -4,7 +4,7 @@
 
 _.Instances = { tier(1, {	-- Classic
 	inst(233, {	-- Razorfen Downs
-		["coord"] = { 43.5, 25.2, 64 },	-- Razorfen Downs
+		["coord"] = { 43.5, 25.2, THOUSAND_NEEDLES },	-- Razorfen Downs
 		["mapID"] = 300,
 		["lvl"] = 35,
 		["g"] = {

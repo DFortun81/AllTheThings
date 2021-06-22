@@ -1145,9 +1145,13 @@ for key,value in pairs({
 	[2703] = "Tumba de Aterratrols",	-- Trollbane's Tomb
 	[2713] = "Tablón de Se busca",	-- Wanted Board
 	[2908] = "Cajón de suministros sellado",	-- Sealed Supply Crate
+	[3189] = "Plan de ataque: Valle de los Retos",	-- Attack Plan: Valley of Trials
+	[3190] = "Plan de ataque: Poblado Sen'jin",	-- Attack Plan: Sen'jin Village
+	[3192] = "Plan de ataque: Orgrimmar",	-- Attack Plan: Orgrimmar
 	[3238] = "Barril vacío de Chen",	-- Chen's Empty Keg
 	[3972] = "SE BUSCA",	-- WANTED
 	[4141] = "Consola de control",	-- Control Console
+	[5620] = "Piedras de energía imperfectas",	-- Flawed Power Stones
 	[6751] = "Planta con extraños frutos",	-- Strange Fruited Plant
 	[6752] = "Planta con extrañas hojas",	-- Strange Fronded Plant
 	[7510] = "Fronda crecida",	-- Sprouted Frond

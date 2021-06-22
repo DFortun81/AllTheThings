@@ -98,7 +98,7 @@ _.ExpansionFeatures =
 							45724,	-- Snakes and Stones
 							45723,	-- The Crone's Wrath
 						},
-						["maps"] = { 64 },	-- Thousand Needles
+						["maps"] = { THOUSAND_NEEDLES },
 					}),
 					q(44406, {	-- Aggra's Guidance
 						["sourceQuests"] = { 41510 },	-- Azeroth Needs You
@@ -146,7 +146,7 @@ _.ExpansionFeatures =
 						["lvl"] = 110,
 						["provider"] = { "n", 120244 },	-- Magatha Grimtotem
 						["sourceQuests"] = { 45706 },	-- The Power of Thousands
-						["maps"] = { 64 },	-- Thousand Needles
+						["maps"] = { THOUSAND_NEEDLES },
 					}),
 					q(45765, {	-- Brothers and Sisters
 						["classes"] = { SHAMAN },
@@ -454,7 +454,7 @@ _.ExpansionFeatures =
 						["lvl"] = 110,
 						["provider"] = { "n", 120244 },	-- Magatha Grimtotem
 						["sourceQuests"] = { 45706 },	-- The Power of Thousands
-						["maps"] = { 64 },	-- Thousand Needles
+						["maps"] = { THOUSAND_NEEDLES },
 					}),
 					q(43886, {	-- Speaking to the Wind
 						["u"] = REMOVED_FROM_GAME,
@@ -524,7 +524,7 @@ _.ExpansionFeatures =
 						["lvl"] = 110,
 						["provider"] = { "n", 120244 },	-- Magatha Grimtotem
 						["sourceQuests"] = { 45706 },	-- The Power of Thousands
-						["maps"] = { 64 },	-- Thousand Needles
+						["maps"] = { THOUSAND_NEEDLES },
 					}),
 					q(41335, {	-- The Elements Call...
 						["sourceQuests"] = { 39746 },	-- A Ring Unbroken

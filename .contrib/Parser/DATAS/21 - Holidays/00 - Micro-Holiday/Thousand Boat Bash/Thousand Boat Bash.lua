@@ -7,7 +7,7 @@ _.Holidays =
 --[[	-- TODO: figure out the holidayID before adding this section
 	holiday(, {	-- Thousand Boat Bash
 		["u"] = 22,	-- Micro-Holiday Filter
-		["maps"] = { 64 },	-- Thousand Needles
+		["maps"] = { THOUSAND_NEEDLES },
 		["g"] = {
 			n(WORLD_QUESTS, {
 				q(45808),	-- Beach Ball Bash

@@ -130,7 +130,7 @@ _.Holidays =
 										},
 										["coords"] = {
 											{ 53.32, 79.27, ORGRIMMAR },	-- Alowicious Czervik
-											{ 69.87, 85.18, 64 },	-- Brivelthwerp [Thousand Needles]
+											{ 69.87, 85.18, THOUSAND_NEEDLES },	-- Brivelthwerp
 											{ 54.22, 76.11, NAGRAND },	-- Caregiver Isel
 											-- { },	-- Katrina Shimmerstar [Ironforge]	Note!! Only shows up during Hallow's End
 											{ 56.73, 34.51, NAGRAND },	-- Matron Tikkit
@@ -138,7 +138,7 @@ _.Holidays =
 											{ 53.66, 53.01, ORGRIMMAR },	-- Snack-O-Matic IV
 										},
 										["maps"] = {
-											64,		-- Thousand Needles
+											THOUSAND_NEEDLES,
 											STORMWIND_CITY,
 											ORGRIMMAR,
 											86,		-- Orgrimmar

@@ -3,11 +3,17 @@ Functions used for object localization (all TODOs and simple sync when adding/re
 """
 
 import fileinput
+import logging
 import re
+import sys
 from collections import namedtuple
 
 import requests
 from bs4 import BeautifulSoup
+
+logging.basicConfig(
+    format="%(levelname)s:%(message)s", stream=sys.stdout, level=logging.INFO
+)
 
 CUSTOM_OBJECTS_CONST = 9000000
 LOCALES_DIR = "../../../locales/"
@@ -27,16 +33,16 @@ def get_localized_obj_name(obj_id, lang_code="en", game_flavor="retail"):
 
     page = requests.get(URL)
     if "notFound" in page.url:
-        print(f"Can't find {obj_id} at {URL}!")
+        logging.warn(f"Can't find {obj_id} at {URL}!")
         return ""
     soup = BeautifulSoup(page.content, "html.parser")
     heading = soup.find("h1", class_="heading-size-1")
     if heading is None:
-        print(f"Can't find heading-size-1 for {obj_id} on Wowhead!")
+        logging.warn(f"Can't find heading-size-1 for {obj_id} on Wowhead!")
         return ""
     # not localized names look like [en_obj_name] on Wowhead
     if heading.text.startswith("["):
-        print(f"No localization for {obj_id}: {heading.text}")
+        logging.info(f"No localization for {obj_id}: {heading.text}")
         return ""
     if '"' in heading.text:
         return heading.text.replace('"', '\\"')
@@ -47,11 +53,11 @@ def get_todo_lines(lines):
     todo_dict = {}
     for ind, line in enumerate(lines):
         if "ObjectNames" in line:
-            # print(f"Found beginning at line {ind + 2}!")
+            # logging.info(f"Found beginning at line {ind + 2}!")
             while True:
                 line = lines[ind]
                 if "}" in line:
-                    # print(f"Found ending at line {ind - 1}!")
+                    # logging.info(f"Found ending at line {ind - 1}!")
                     break
                 if "--TODO: " in line:
                     obj_id = re.search(r"\d+", line).group()
@@ -74,19 +80,19 @@ def get_localized_names(todo_dict, lang_code):
             continue
 
         localized_dict[obj_line_ind] = localized_obj_name
-        print(f"{obj_id}: {localized_obj_name}")
+        logging.info(f"{obj_id}: {localized_obj_name}")
 
     return localized_dict
 
 
 def localize_objects(filename, lang_code, original_obj_names={}):
-    print(f"Starting {lang_code}!")
+    logging.info(f"Starting {lang_code}!")
     file = open(filename)
     lines = file.readlines()
 
     todo_dict = get_todo_lines(lines)
 
-    print(f"Names to localize: {len(todo_dict)}")
+    logging.info(f"Names to localize: {len(todo_dict)}")
 
     localized_dict = get_localized_names(todo_dict, lang_code)
 
@@ -118,13 +124,13 @@ def sort_objects(filename):
             if "ObjectDB" in filename:
                 first_obj_line -= 1
                 ind -= 1
-            # print(f"Found beginning at line {first_obj_line}!")
+            # logging.info(f"Found beginning at line {first_obj_line}!")
             while True:
                 line = lines[ind]
 
                 if "}" in line:
                     last_obj_line = ind - 1
-                    # print(f"Found ending at line {last_obj_line}!")
+                    # logging.info(f"Found ending at line {last_obj_line}!")
                     break
 
                 obj_id = re.search(r"\d+", line).group()
@@ -164,13 +170,13 @@ def get_objects_info(filename):
             if "ObjectDB" in filename:
                 first_obj_line -= 1
                 ind -= 1
-            # print(f"Found beginning at line {first_obj_line}!")
+            # logging.info(f"Found beginning at line {first_obj_line}!")
             while True:
                 line = lines[ind]
 
                 if "}" in line:
                     last_obj_line = ind - 1
-                    # print(f"Found ending at line {last_obj_line}!")
+                    # logging.info(f"Found ending at line {last_obj_line}!")
                     break
 
                 obj_id = re.search(r"\d+", line).group()
@@ -184,7 +190,7 @@ def get_objects_info(filename):
                 if len(obj_name) == 0 and int(obj_id) < CUSTOM_OBJECTS_CONST:
                     obj_name = get_localized_obj_name(obj_id)
                     line = re.sub('".*"', f'"{obj_name}"', line)
-                    print(f"New object {obj_id}: {obj_name}")
+                    logging.info(f"New object {obj_id}: {obj_name}")
                 objects.append(Object(int(obj_id), obj_name, line))
                 ind += 1
             break
@@ -205,7 +211,7 @@ game_flavors = ["retail", "classic", "tbc"]
 
 
 def get_new_object_line(obj_id, obj_name, lang_code):
-    print(f"New object {obj_id}: {obj_name}")
+    logging.info(f"New object {obj_id}: {obj_name}")
 
     for game_flavor in game_flavors:
         localized_obj_name = get_localized_obj_name(obj_id, lang_code, game_flavor)
@@ -225,12 +231,12 @@ def get_new_object_line(obj_id, obj_name, lang_code):
                 new_object,
             )
 
-    print(new_object)
+    logging.info(new_object)
     return new_object
 
 
 def sync_objects(objects, filename, lang_code):
-    print(f"Syncing {lang_code}!")
+    logging.info(f"Syncing {lang_code}!")
     localized_objects, first_obj_line, last_obj_line = get_objects_info(filename)
 
     new_tail = False
@@ -247,7 +253,7 @@ def sync_objects(objects, filename, lang_code):
             )
         elif obj_id > localized_obj_id:  # deleted object
             while obj_id > localized_obj_id:
-                print(f"Deleted object {localized_obj_id}")
+                logging.info(f"Deleted object {localized_obj_id}")
                 del localized_objects[localized_ind]
                 localized_obj_id = localized_objects[localized_ind].id
         localized_ind += 1
@@ -259,9 +265,9 @@ def sync_objects(objects, filename, lang_code):
             localized_objects.append(Object(obj_id, obj_name, new_object))
             localized_ind += 1
     if localized_ind < len(localized_objects):  # we need to delete objects in tail
-        print("Deleted objects ")
+        logging.info("Deleted objects ")
         for del_obj in localized_objects[localized_ind:]:
-            print(del_obj)
+            logging.info(del_obj)
         del localized_objects[localized_ind:]
 
     f = open(filename)

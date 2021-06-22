@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(64, {	-- Thousand Needles
+		m(THOUSAND_NEEDLES, {
 			n(VENDORS, {
 				n(40475, {	-- Jinky Twizzlefixxit <Engineering Supplies>
-					["coord"] = { 76.6, 73.6, 64 },
+					["coord"] = { 76.6, 73.6, THOUSAND_NEEDLES },
 					["g"] = {
 						i(13309, {	-- Schematic: Lovingly Crafted Boomstick
 							["spellID"] = 0,	-- now learned from trainer, schematic was removed from game
@@ -24,13 +24,13 @@ _.Zones =
 					},
 				}),
 				n(41135, {	-- "Plucky" Johnson
-					["coord"] = { 85.6, 91.6, 64 },
+					["coord"] = { 85.6, 91.6, THOUSAND_NEEDLES },
 					["g"] = {
 						i(11023),	-- Ancona Chicken (PET!)
 					},
 				}),
 				n(41452, {	-- Starn <Gunsmith & Bowyer>
-					["coord"] = { 46.2, 57.6, 64 },
+					["coord"] = { 46.2, 57.6, THOUSAND_NEEDLES },
 					["g"] = {
 						i(11305, {	-- Dense Shortbow
 							["isLimited"] = true,
