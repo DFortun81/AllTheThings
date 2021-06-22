@@ -536,6 +536,7 @@ _.Zones =
 					},
 					["timeline"] = {
 						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
 					},
 				}),
 				q(3088, {	-- Encrypted Parchment
@@ -684,6 +685,7 @@ _.Zones =
 					},
 					["timeline"] = {
 						"added 3.3.3.11573",
+						"removed 4.0.1.10000",
 					},
 				}),
 				q(25173, {	-- From Bad to Worse
