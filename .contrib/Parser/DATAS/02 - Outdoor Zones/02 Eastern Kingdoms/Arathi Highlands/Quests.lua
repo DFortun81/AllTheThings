@@ -622,7 +622,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26036,	-- Wand Over Fist
 				}),
-				-- #if AFTER BFA
 				q(6622, {	-- Triage (H)
 					["qg"] = 12920,	-- Doctor Gregory Victor
 					["sourceQuest"] = 6623,	-- Horde Trauma
@@ -631,24 +630,23 @@ _.Zones =
 					-- #else
 					["coord"] = { 68.5, 37.8, ARATHI_HIGHLANDS },
 					-- #endif
-					["maps"] = { ARATHI_HIGHLANDS },
 					-- #if BEFORE BFA
 					["requireSkill"] = FIRST_AID,
 					-- #else
 					["requireSkill"] = TAILORING,
 					-- #endif
 					["races"] = HORDE_ONLY,
-					["cost"] = {
-						{ "i", 16991, 1 },	-- Triage Bandage
-					},
 					["lvl"] = lvlsquish(35, 15, 35),
+					["timeline"] = { "added 1.11.1.10958" },
 					["groups"] = {
+						objective(1, {
+							["provider"] = { "i", 16991 },	-- Triage Bandage
+						}),
 						i(49192, {	-- Horde Trauma Certification
-							["timeline"] = { "timeline 3.2.0.10192" },
+							["timeline"] = { "added 3.2.0.10192" },
 						}),
 					},
 				}),
-				-- #endif
 				q(645,   {	-- Trol'kalar
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,

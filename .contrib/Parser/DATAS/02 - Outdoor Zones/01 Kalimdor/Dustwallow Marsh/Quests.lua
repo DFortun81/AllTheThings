@@ -1203,29 +1203,27 @@ _.Zones =
 						26702,	-- Flight to Theramore
 					},
 				}),
-				-- #if AFTER BFA
 				q(6624, {	-- Triage (A)
 					["qg"] = 12939,	-- Doctor Gustaf VanHowzen
 					["sourceQuest"] = 6625,	-- Alliance Trauma
 					["coord"] = { 67.7, 48.9, DUSTWALLOW_MARSH },
-					["maps"] = { DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
 					-- #if BEFORE BFA
 					["requireSkill"] = FIRST_AID,
 					-- #else
 					["requireSkill"] = TAILORING,
 					-- #endif
-					["cost"] = {
-						{ "i", 16991, 1 },	-- Triage Bandage
-					},
 					["lvl"] = lvlsquish(35, 15, 35),
+					["timeline"] = { "added 1.11.1.10958" },
 					["groups"] = {
+						objective(1, {
+							["provider"] = { "i", 16991 },	-- Triage Bandage
+						}),
 						i(49193, {	-- Alliance Trauma Certification
-							["timeline"] = { "timeline 3.2.0.10192" },
+							["timeline"] = { "added 3.2.0.10192" },
 						}),
 					},
 				}),
-				-- #endif
 				q(9437,  {	-- Twilight of the Dawn Runner
 					["provider"] = { "n", 17095 },	-- Balandar Brightstar
 					["coord"] = { 35.8, 31.7, DUSTWALLOW_MARSH },

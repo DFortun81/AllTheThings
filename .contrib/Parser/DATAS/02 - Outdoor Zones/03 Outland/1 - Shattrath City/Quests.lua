@@ -305,7 +305,7 @@ _.Zones =
 					},
 				}),
 				q(11109, {	-- Jorus the Cobalt Netherwing Drake
-					-- ["provider"] = { "n",  },	-- 
+					-- ["provider"] = { "n",  },	--
 					["sourceQuests"] = { 11107 },	-- Bow to the Highlord
 					-- ["coord"] = { , SHATTRATH_CITY },
 					["g"] = {
@@ -313,7 +313,7 @@ _.Zones =
 					},
 				}),
 				q(11110, {	-- Malfas the Purple Netherwing Drake
-					-- ["provider"] = { "n",  },	-- 
+					-- ["provider"] = { "n",  },	--
 					["sourceQuests"] = { 11107 },	-- Bow to the Highlord
 					-- ["coord"] = { , SHATTRATH_CITY },
 					["g"] = {
@@ -321,7 +321,7 @@ _.Zones =
 					},
 				}),
 				q(11111, {	-- Onyxien the Onyx Netherwing Drake
-					-- ["provider"] = { "n",  },	-- 
+					-- ["provider"] = { "n",  },	--
 					["sourceQuests"] = { 11107 },	-- Bow to the Highlord
 					-- ["coord"] = { , SHATTRATH_CITY },
 					["g"] = {
@@ -329,7 +329,7 @@ _.Zones =
 					},
 				}),
 				q(11112, {	-- Suraku the Azure Netherwing Drake
-					-- ["provider"] = { "n",  },	-- 
+					-- ["provider"] = { "n",  },	--
 					["sourceQuests"] = { 11107 },	-- Bow to the Highlord
 					-- ["coord"] = { , SHATTRATH_CITY },
 					["g"] = {
@@ -337,7 +337,7 @@ _.Zones =
 					},
 				}),
 				q(11113, {	-- Voranaku the Violet Netherwing Drake
-					-- ["provider"] = { "n",  },	-- 
+					-- ["provider"] = { "n",  },	--
 					["sourceQuests"] = { 11107 },	-- Bow to the Highlord
 					-- ["coord"] = { , SHATTRATH_CITY },
 					["g"] = {
@@ -345,7 +345,7 @@ _.Zones =
 					},
 				}),
 				q(11114, {	-- Zoya the Veridian Netherwing Drake
-					-- ["provider"] = { "n",  },	-- 
+					-- ["provider"] = { "n",  },	--
 					["sourceQuests"] = { 11107 },	-- Bow to the Highlord
 					-- ["coord"] = { , SHATTRATH_CITY },
 					["g"] = {
@@ -394,7 +394,10 @@ _.Zones =
 					["requireSkill"] = BLACKSMITHING,
 					["coord"] = { 64.1, 71.5, SHATTRATH_CITY },
 					["provider"] = { "n", 115546 },	-- Lunelli
-					["timeline"] = { "timeline 7.0.3.21655" },
+					["timeline"] = {
+						"created 7.0.3.21655",
+						"added 7.1.5.23038"
+					},
 					["g"] = {
 						i(142279),	-- Plans: Windforged Rapier
 						i(142283),	-- Plans: Skyforged Great Axe
