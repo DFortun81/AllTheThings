@@ -26,7 +26,7 @@ _.Zones =
 					["coord"] = { 42.2, 29.3, 895 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 125922 },	-- Brother Therold
-					["g"] = { 
+					["g"] = {
 						i(160097),	-- Navigator's Wristwraps
 						i(158260),	-- Navigator's Grips
 						i(160098),	-- Freebooter Bands

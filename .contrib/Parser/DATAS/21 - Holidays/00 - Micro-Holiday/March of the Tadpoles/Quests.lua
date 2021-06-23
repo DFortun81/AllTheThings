@@ -5,8 +5,8 @@
 _.Holidays =
 {
 	holiday(1572472, {	-- March of the Tadpoles
-		["u"] = 22,	-- Micro-Holiday Filter
-		["g"] = {
+		["u"] = MICRO_HOLIDAY,
+		["groups"] = {
 			n(QUESTS, {
 				q(46049, {	-- A Gift From Your Tadpole
 					["isWeekly"] = true,
