@@ -871,3 +871,8 @@ _.Zones =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(27018),	-- The Herald <NYI>
+	}),
+});
