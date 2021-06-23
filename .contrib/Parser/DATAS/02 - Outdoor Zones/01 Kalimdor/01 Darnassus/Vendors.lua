@@ -123,6 +123,7 @@ _.Zones =
 						i(20854, {	-- Design: Amulet of the Moon
 							["isLimited"] = true,
 						}),
+						-- #endif
 						i(11223, {	-- Formula: Enchant Bracer - Dodge
 							["isLimited"] = true,
 						}),
