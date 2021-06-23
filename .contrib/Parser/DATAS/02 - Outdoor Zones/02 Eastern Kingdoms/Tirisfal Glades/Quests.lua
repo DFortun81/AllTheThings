@@ -746,3 +746,16 @@ _.Zones =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(57377),	-- A Hand Offered
+		q(54955),	-- Scarlet Recon
+		q(54943),	-- The Dark Ranger's Pupil
+		q(54944),	-- The Dark Ranger's Pupil
+		q(55345),	-- The Dark Ranger's Pupil
+		q(55346),	-- The Dark Ranger's Pupil
+		q(54956),	-- The Grasp of Hate
+		q(54954),	-- The Missing Apprentice
+		q(55351),	-- The Missing Apprentice
+	}),
+});

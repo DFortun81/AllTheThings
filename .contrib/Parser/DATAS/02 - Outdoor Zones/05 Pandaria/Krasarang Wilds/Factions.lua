@@ -247,7 +247,7 @@ _.Zones =
 							q(32372, {	-- De-Subjugation
 								["sourceQuests"] = { 32320 },	-- The Horde is Family
 								["provider"] = { "n", 68025 },	-- Thrall
-								["coord"] = { 38.2, 46.4, 463 },
+								["coord"] = { 38.2, 46.4, ECHO_ISLES },
 								["races"] = HORDE_ONLY,
 							}),
 							q(32123, {	-- Death on Two Legs
@@ -484,7 +484,7 @@ _.Zones =
 							q(32320, {	-- The Horde Is Family
 								["sourceQuests"] = { 32319 },	-- Find Thrall!
 								["provider"] = { "n", 68025 },	-- Thrall
-								["coord"] = { 38.4, 46.6, 461 },
+								["coord"] = { 38.4, 46.6, VALLEY_OF_TRIALS },
 								["races"] = HORDE_ONLY,
 							}),
 							q(32244, {	-- The Korune

@@ -507,7 +507,7 @@ profession(TAILORING, {
 				},
 				{
 					["name"] = "Robe of the Void",
-					["timeline"] = { "timeline 5.0.4.10000" },
+					["timeline"] = { "removed 5.0.4.10000" },
 					["recipeID"] = 18458
 				},
 				{

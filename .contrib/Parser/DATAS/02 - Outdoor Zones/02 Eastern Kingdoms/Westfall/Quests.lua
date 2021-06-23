@@ -424,3 +424,8 @@ _.Zones =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(33434),	-- BETA Westfall Race 30
+	}),
+});

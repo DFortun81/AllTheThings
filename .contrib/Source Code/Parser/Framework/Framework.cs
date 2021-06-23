@@ -410,6 +410,7 @@ namespace ATT
                     if (version > lastVersion) lastVersion = version;
                     switch (commandSplit[0])
                     {
+                        // Note: Adding command options here requires adjusting the filter Regex for 'timeline' entries during MergeStringArrayData
                         case "created":
                             {
                                 if (CURRENT_RELEASE_VERSION < version) return false;    // Invalid

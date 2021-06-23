@@ -937,3 +937,9 @@ _.Zones =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(14319),	-- BETA Further Treatment
+		q(14220),	-- BETA This Is the End
+	}),
+});
