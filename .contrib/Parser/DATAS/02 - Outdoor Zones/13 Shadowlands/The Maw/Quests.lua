@@ -159,8 +159,14 @@ _.Zones =
 									}),
 								},
 							}),
+							n(178897, {	-- Algel the Haunter
+								i(186239),	-- Drape of the Phantasm
+							}),
 							n(177979, {	-- Gralebboih
 								i(186449),	-- Amaranthine Stinger (PET!)
+							}),
+							n(178899, {	-- Manifestation of Pain
+								i(186213),	-- Bindings of Manifest Pain
 							}),
 							n(177330, {	-- Promathiz
 								i(186007),	-- Cudgel of the Tin Sentinel
@@ -943,4 +949,9 @@ _.Zones =
 
 _.HiddenQuestTriggers = {
 	q(62907),	-- triggered after collecting all stygia during "Rule 1: Have an Escape Plan" (triggers dialogue from The Jailer + the Eye of the Jailer counter...thing)
+	q(64107),	-- triggered when killing Algel the Haunter - first Tormentor kill of the week, dropped Drape of the Phantasm
+	q(64695),	-- triggered when killing Algel the Haunter - first Tormentor kill of the week, dropped Drape of the Phantasm
+	q(64118),	-- triggered when killing Manifestation of Pain - first Tormentor kill of the week, dropped Bindings of Manifest Pain
+	q(64692),	-- triggered when killing Manifestation of Pain - first Tormentor kill of the week, dropped Bindings of Manifest Pain
+	q(64697),	-- triggered when killing Sentinel Shakorzeth - second Tormentor kill of the week, no loot beyond 75 Soul Ash and 100 Death's Advance rep.  also triggered on Malleus Grakizz, another character's second Tormentor of the week, same loot
 };

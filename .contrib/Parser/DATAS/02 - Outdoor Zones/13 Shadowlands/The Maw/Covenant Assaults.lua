@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-
+-- currently all covenant assault quests show up in /attwq.  because each 'world quest' is used as a header, this makes the entirety of possible covenant assault contents show up in /attwq - this is good AND bad, in the sense that it shows you "hey, there is stuff you are missing here" but it's not necessarily clear that we do not know whether or not the stuff is up.  you can't see which quests are available in the assault until after you start it, which means there's no way to get the actually active assault quests *only* to show up in /attwq.  the choice is basically "show everything" or "show only that the assault is up and no other information."  my preference is to show everything.  perhaps a compromise would be to add a description on each header explaining this but my brain is not functional enough atm to figure out what that description should say
 _.Zones =
 {
 	m(SHADOWLANDS, {
@@ -10,16 +10,12 @@ _.Zones =
 			--	PTR - Assault quests
 				-- seems similar to Mogu/Mantid etc. assaults from Uldum/Vale, it's an automatically-started zone quest that lasts a few days
 				-- the quest was automatically on the map, but you had to speak to Xandria to ~activate it, and then all the other quests popped up.  weird system
-				-- everything after "Kyrian Assault" requires speaking to Xandria to show up.  these are probably periodically repeatable, like potentially up every time the kyrian assault is active
 				n(ACHIEVEMENTS, {
 					ach(15032),		-- Breaking Their Hold
 					ach(15064, {	-- Breaking the Chains
 						ach(15035, {	-- On the Offensive
 							ach(15000),		-- United Front
-							ach(15037, {	-- This Army
-								crit(2),	-- Kearnen the Blade
-								crit(3),	-- Winslow Swan
-							}),
+							ach(15037),		-- This Army
 							ach(15044, {	-- Krrprripripkraak's Heroes
 								crit(1),	-- Elder Gwenna
 								crit(2),	-- Foreman Thorodir
@@ -250,6 +246,20 @@ _.Zones =
 									crit(5, {	-- Putting a Plan Together
 										["achievementID"] = 15032,	-- Breaking Their Hold
 									}),
+									o(368205, {	-- Mawsworn Cache
+										["questID"] = 63815,
+										["isDaily"] = true,
+										["coord"] = { 30.3, 55.8, THE_MAW },
+										["g"] = {
+											i(186573, {	-- Defense Map
+												["description"] = "This item will not drop if |cFF349cffPutting A Plan Together|r is not an active quest.  Furthermore, looting it may require that you are actually in the Overcharged Centurion, as the quest cannot be completed otherwise.",
+												["questID"] = 63594,	-- Clearing the Walls
+												["g"] = {
+													i(186601),	-- Quartered Ancient Ring
+												},
+											}),
+										},
+									}),
 								},
 							}),
 							q(63669, {	-- Somebody Feed Kevin
@@ -294,6 +304,14 @@ _.Zones =
 										["achievementID"] = 15037,	-- This Army
 										["cr"] = 158300,	-- Flytrap
 									}),
+									crit(2, {	-- Kearnen the Blade
+										["achievementID"] = 15037,	-- This Army
+										["cr"] = 177769,	-- Kearnen the Blade
+									}),
+									crit(3, {	-- Winslow Swan
+										["achievementID"] = 15037,	-- This Army
+										["cr"] = 177764,	-- Winslow Swain
+									}),
 									crit(3, {	-- You and What Army
 										["achievementID"] = 15032,	-- Breaking Their Hold
 									}),
@@ -308,7 +326,6 @@ _.Zones =
 						--	TODO: figure out the contents of this chest
 								i(186103),	-- Undying Darkhound's Harness (MOUNT!)
 								i(186557),	-- Fodder (PET!)
-							--	i(186156),	-- PH Korthia Trinket
 							}),
 						}),
 						n(TREASURES, {
@@ -321,19 +338,6 @@ _.Zones =
 								},
 								["g"] = {
 									i(186600),	-- Quartered Ancient Ring
-								},
-							}),
-							o(368205, {	-- Mawsworn Cache
-								["questID"] = 63815,
-								["isDaily"] = true,
-								["coord"] = { 30.3, 55.8, THE_MAW },
-								["g"] = {
-									i(186573, {	-- Defense Map
-										["questID"] = 63594,	-- Clearing the Walls
-										["g"] = {
-											i(186601),	-- Quartered Ancient Ring
-										},
-									}),
 								},
 							}),
 							o(368206, {	-- Mawsworn Cache
@@ -677,8 +681,15 @@ _.HiddenQuestTriggers = {
 	q(64057),	-- Stolen Anima Vessel (32.6, 43.3) - didn't get objectID
 	q(64058),	-- Stolen Anima Vessel (34.1, 35.7) - 368951
 
+--	Necrolord
+	q(64044),	-- Stolen Anima Vessel (30.6, 58.4) / (34.2, 64.6) / (36.7, 68.0) - 368946
+	q(63807),	-- selecting Boil Master Yetch to accompany you on You and What Army
+	q(63809),	-- selecting Cutter Fin to accompany you on You and What Army
+	q(63806),	-- selecting Flytrap to accompany you on You and What Army
+	q(63808),	-- selecting Kearnen the Blade to accompany you on You and What Army
+	q(63805),	-- selecting Winslow Swain to accompany you on You and What Army
+
 --	Night Fae
 	q(63821),	-- triggered when completing the assault (#63823)
 	q(64060),	-- Stolen Anima Vessel (19.0, 50.2) - 368953
-	q(64700),	-- Stolen Anima Vessel (19.0, 50.2) - 368953 - same loot as above, 1 quest is probably tied to receiving 100-research item Ripped Cosmology Chart
 };

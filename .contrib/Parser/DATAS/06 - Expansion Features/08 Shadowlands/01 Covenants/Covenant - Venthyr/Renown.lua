@@ -67,6 +67,7 @@ _.HiddenQuestTriggers = {
 	q(64133),	-- hitting Renown 56
 	q(64135),	-- hitting Renown 59
 	q(64375),	-- hitting Renown 60
+	q(64453),	-- hitting Renown 67
 	q(63630),	-- learning Ensemble: Harvester's Court Attire (Renown reward)
 	q(63637),	-- learning Ensemble: Sinful Inquisitor's Vestments (Renown reward)
 };

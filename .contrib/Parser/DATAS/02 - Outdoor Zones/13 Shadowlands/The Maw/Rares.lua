@@ -244,6 +244,9 @@ _.Zones =
 						crit(1, {	-- Drifting Sorrow
 							["achievementID"] = 14660,	-- It's About Sending a Message
 						}),
+						i(186622, {	-- Robe of Drifting Sorrow
+							["timeline"] = { "added 9.1.0.38312" },
+						}),
 						q(59183, {	-- Bonus Objective
 							["isDaily"] = true,
 						}),
@@ -350,6 +353,9 @@ _.Zones =
 					["g"] = {
 						crit(5, {	-- Huwerath
 							["achievementID"] = 14660,	-- It's About Sending a Message
+						}),
+						i(186623, {	-- Lost Soul's Mantle
+							["timeline"] = { "added 9.1.0.38312" },
 						}),
 					},
 				}),
@@ -473,9 +479,10 @@ _.Zones =
 					},
 				}),
 				n(175821, {	-- Ratgusher <10,000 Mawrats in a Suit of Armor>
+					["description"] = "Inside the cave.",
 					["questID"] = 63388,
 					["isDaily"] = true,
-					["coord"] = { 21.6, 41.8, THE_MAW },
+					["coord"] = { 20.8, 39.1, THE_MAW },
 					["g"] = {
 						crit(19, {	-- Ratgusher
 							["achievementID"] = 14660,	-- It's About Sending a Message
@@ -549,7 +556,8 @@ _.Zones =
 					["description"] = "Inside the cave.",
 					["questID"] = 63386,
 					["isDaily"] = true,
-					["coord"] = { 59.2, 79.9, THE_MAW },
+				--	["coord"] = { 59.2, 79.9, THE_MAW }, pre-9.1 idk how the fuck to do timeline shit for coords
+					["coord"] = { 54.4, 79.2, THE_MAW },	-- 9.1 cave entrance
 					["g"] = {
 						crit(14, {	-- Skittering Broodmother
 							["achievementID"] = 14660,	-- It's About Sending a Message

@@ -4333,9 +4333,6 @@ _.HiddenQuestTriggers = {
 		q(64155),	-- dancing near a forge for The Zovaal Shuffle
 		q(64161),	-- dancing near a forge for The Zovaal Shuffle
 		q(64158),	-- dancing near a forge for The Zovaal Shuffle
-		q(63806),	-- selecting Flytrap to accompany you on You and What Army
-		q(63807),	-- selecting Boil Master Yetch to accompany you on You and What Army
-		q(63809),	-- selecting Cutter Fin to accompany you on You and What Army
 		q(64147),	-- triggered when turning in #63621, "Pulling His Chain"
 		q(63544),	-- triggered when completing #63543, "Necrolord Assault"
 		q(64274),	-- triggered when logging in on 4/30/21 - ptr.wowhead.com says this is a tracking quest for "NPC #179868 slain (5)" and "Dusklight Matriarch [id #179871] slain."  i couldn't see anything on the map that was attached to this quest ID so idk!!  there IS a WQ up in the maw, but it's 64273, not 64274.  but possibly this is tied to the active status of a maw wq, not sure

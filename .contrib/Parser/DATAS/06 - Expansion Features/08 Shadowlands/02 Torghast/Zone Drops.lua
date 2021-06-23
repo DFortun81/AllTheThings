@@ -7,6 +7,16 @@ _.ExpansionFeatures =
 	tier(9, {	-- Shadowlands
 		m(1627, {	-- Torghast
 			n(ZONEDROPS, {
+				i(187096, {	-- Adamant Vault Shoulderplates
+					["crs"] = {
+						155945,	-- Gherus the Chained
+					},
+				}),
+				i(187030, {	-- Deathsworn Shoulderguards
+					["crs"] = {
+						151329,	-- Warden Skoldus
+					},
+				}),
 				i(183192, {	-- Frenzied Mawrat
 					["crs"] = {
 						151331,	-- Cellblock Sentinel

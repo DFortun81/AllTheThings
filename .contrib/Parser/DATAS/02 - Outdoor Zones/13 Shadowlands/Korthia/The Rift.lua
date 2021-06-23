@@ -60,6 +60,9 @@ _.Zones =
 							["questID"] = 64456,
 							["isDaily"] = true,
 							["coord"] = { 37.9, 35.8, KORTHIA },
+							["g"] = {
+								i(187251),	-- Shaded Skull Shoulderguards
+							},
 						}),
 						o(369438, {	-- Riftbound Cache
 							["description"] = "If this cache spawns in Zelnithop's cave, it is on the lowest level and the opposite side from where the rare spawns.",
@@ -69,6 +72,9 @@ _.Zones =
 								{ 24.8, 56.1, KORTHIA },
 								{ 26.0, 55.7, KORTHIA },
 							},
+							["g"] = {
+								i(187251),	-- Shaded Skull Shoulderguards
+							},
 						}),
 						o(369440, {	-- Riftbound Cache
 							["questID"] = 64472,
@@ -77,6 +83,9 @@ _.Zones =
 								{ 56.3, 18.4, KORTHIA },
 								{ 64.3, 30.3, KORTHIA },
 							},
+							["g"] = {
+								i(187251),	-- Shaded Skull Shoulderguards
+							},
 						}),
 						o(369439, {	-- Riftbound Cache
 							["questID"] = 64471,
@@ -84,6 +93,9 @@ _.Zones =
 							["coords"] = {
 								{ 54.1, 54.7, KORTHIA },
 								{ 54.8, 42.3, KORTHIA },
+							},
+							["g"] = {
+								i(187251),	-- Shaded Skull Shoulderguards
 							},
 						}),
 					}),

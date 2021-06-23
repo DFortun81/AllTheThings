@@ -275,11 +275,15 @@ _.Zones =
 					["coord"] = { 41.0, 39.7, KORTHIA },
 					["g"] = {
 						i(187440, {	-- Feather-Stuffed Helm
-						--	TODO: can probably drop at least 1 helm per armor class
+						--	TODO: commented are unconfirmed
 							i(185858),	-- Korthian Caretaker's Crest
 							i(186666),	-- Korthian Caretaker's Crown
+						--	i(185871),	-- Razorwing Scale Coif
+						--	i(186743),	-- Razorwing Scale Hood
 							i(186736),	-- Shardhide Leather Cowl
 							i(185864),	-- Shardhide Leather Hood
+							i(185876),	-- Vault Guardian's Helm
+						--	i(186748),	-- Vault Guardian's Visor
 						}),
 						i(187442),	-- Scholar's Ancient Pack
 						i(187008),	-- Recipe: Porous Rock Candy
@@ -288,14 +292,17 @@ _.Zones =
 				o(369334, {	-- Nest of Unusual Materials
 					["questID"] = 64359,
 					["isDaily"] = true,
-				--	["coord"] = { 42.4, 54.8, KORTHIA },
-					["coord"] = { 42.2, 55.9, KORTHIA },	-- TODO: figure out if old coord still exists - this one was particularly irritating to get to so they may have just moved it.
+					["coord"] = { 42.2, 55.9, KORTHIA },
 					["g"] = {
 						i(187440, {	-- Feather-Stuffed Helm
 							i(185858),	-- Korthian Caretaker's Crest
 							i(186666),	-- Korthian Caretaker's Crown
+						--	i(185871),	-- Razorwing Scale Coif
+						--	i(186743),	-- Razorwing Scale Hood
 							i(186736),	-- Shardhide Leather Cowl
 							i(185864),	-- Shardhide Leather Hood
+							i(185876),	-- Vault Guardian's Helm
+						--	i(186748),	-- Vault Guardian's Visor
 						}),
 						i(187442),	-- Scholar's Ancient Pack
 						i(187008),	-- Recipe: Porous Rock Candy
@@ -310,8 +317,12 @@ _.Zones =
 						i(187440, {	-- Feather-Stuffed Helm
 							i(185858),	-- Korthian Caretaker's Crest
 							i(186666),	-- Korthian Caretaker's Crown
+						--	i(185871),	-- Razorwing Scale Coif
+						--	i(186743),	-- Razorwing Scale Hood
 							i(186736),	-- Shardhide Leather Cowl
 							i(185864),	-- Shardhide Leather Hood
+							i(185876),	-- Vault Guardian's Helm
+						--	i(186748),	-- Vault Guardian's Visor
 						}),
 						i(187442),	-- Scholar's Ancient Pack
 						i(187008),	-- Recipe: Porous Rock Candy
@@ -325,8 +336,12 @@ _.Zones =
 						i(187440, {	-- Feather-Stuffed Helm
 							i(185858),	-- Korthian Caretaker's Crest
 							i(186666),	-- Korthian Caretaker's Crown
+						--	i(185871),	-- Razorwing Scale Coif
+						--	i(186743),	-- Razorwing Scale Hood
 							i(186736),	-- Shardhide Leather Cowl
 							i(185864),	-- Shardhide Leather Hood
+							i(185876),	-- Vault Guardian's Helm
+						--	i(186748),	-- Vault Guardian's Visor
 						}),
 						i(187442),	-- Scholar's Ancient Pack
 						i(187008),	-- Recipe: Porous Rock Candy
@@ -340,8 +355,12 @@ _.Zones =
 						i(187440, {	-- Feather-Stuffed Helm
 							i(185858),	-- Korthian Caretaker's Crest
 							i(186666),	-- Korthian Caretaker's Crown
+						--	i(185871),	-- Razorwing Scale Coif
+						--	i(186743),	-- Razorwing Scale Hood
 							i(186736),	-- Shardhide Leather Cowl
 							i(185864),	-- Shardhide Leather Hood
+							i(185876),	-- Vault Guardian's Helm
+						--	i(186748),	-- Vault Guardian's Visor
 						}),
 						i(187442),	-- Scholar's Ancient Pack
 						i(187008),	-- Recipe: Porous Rock Candy
@@ -487,5 +506,6 @@ _.HiddenQuestTriggers = {
 	q(64564),	-- 4th loot of shared treasure in Korthia (Pile of Bones, Relic Cache, Shardhide Stash) - this # loot used to be 64309, but they changed it at some point on PTR
 	q(64310),	-- looting a Repaired Riftkey (also pops when looting one from rares)
 	q(64311),	-- looting a Teleporter Repair Kit (also pops looting one from rares)
-	q(64702),	-- secondary quest triggered when looting Invasive Mawshroom (35.6, 31.1) - 369331 - probably related to 48-research item Scroll of Shadowlands Fables
+	q(64700),	-- looting 100-research item Ripped Cosmology Chart
+	q(64702),	-- looting 48-research item Scroll of Shadowlands Fables
 };
