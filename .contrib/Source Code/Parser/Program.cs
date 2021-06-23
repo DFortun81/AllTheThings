@@ -130,6 +130,14 @@ namespace ATT
                             Framework.Merge(lua.GetTable("AllTheThings"));
                             break;
                         }
+                        // Invalid data are thrown on purpose when ATT-specific formatting issues are encountered in LUA files
+                        catch(InvalidDataException e)
+                        {
+                            Trace.WriteLine(fileName);
+                            Trace.WriteLine(e.Message);
+                            Trace.WriteLine("Press Enter once you have resolved the issue.");
+                            Console.ReadLine();
+                        }
                         catch (Exception e)
                         {
                             Trace.WriteLine(fileName);

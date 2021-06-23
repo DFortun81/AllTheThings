@@ -1356,6 +1356,12 @@ namespace ATT
                 foreach (var entry in newList)
                 {
                     var index = Convert.ToString(entry);
+                    if (field == "timeline")
+                    {
+                        // Verify the timeline data is parsable since it's 'just a string' ... could be anything!
+                        if (!System.Text.RegularExpressions.Regex.IsMatch(index, "^[a-z]*[ ][\\.0-9]*$"))
+                            throw new InvalidDataException("Invalid 'timeline' value: " + index);
+                    }
                     if (oldList.Contains(index)) continue;
                     oldList.Add(index);
                 }
