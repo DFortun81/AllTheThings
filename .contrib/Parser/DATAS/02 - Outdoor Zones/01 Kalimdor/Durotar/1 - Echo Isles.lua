@@ -97,12 +97,10 @@ _.Zones =
 								-- if AFTER MOP
 								["coord"] = { 56.8, 63.7, ECHO_ISLES },
 								-- endif
-								["classes"] = exclude({ 
-									PALADIN, 
+								["classes"] = exclude({
+									PALADIN,
 									DEATHKNIGHT,
-									-- if AFTER LEGION
-									DEMONHUNTER 
-									-- endif
+									DEMONHUNTER
 									}, ALL_CLASSES),
 								["sourceQuest"] = 25064,	-- Moraya
 							}),
@@ -111,12 +109,10 @@ _.Zones =
 								-- if AFTER MOP
 								["coord"] = { 58.9, 23.1, ECHO_ISLES },
 								-- endif
-								["classes"] = exclude({ 
-									PALADIN, 
+								["classes"] = exclude({
+									PALADIN,
 									DEATHKNIGHT,
-									-- if AFTER LEGION
-									DEMONHUNTER 
-									-- endif
+									DEMONHUNTER
 									}, ALL_CLASSES),
 								["sourceQuests"] = {
 									24812,	-- No More Mercy
@@ -128,12 +124,10 @@ _.Zones =
 								-- if AFTER MOP
 								["coord"] = { 59.0, 66.8, ECHO_ISLES },
 								-- endif
-								["classes"] = exclude({ 
-									PALADIN, 
+								["classes"] = exclude({
+									PALADIN,
 									DEATHKNIGHT,
-									-- if AFTER LEGION
-									DEMONHUNTER 
-									-- endif
+									DEMONHUNTER
 									}, ALL_CLASSES),
 								["sourceQuest"] = 24626,	-- Young and Vicious
 							}),
@@ -153,12 +147,10 @@ _.Zones =
 								-- if AFTER MOP
 								["coord"] = { 45.7, 85.0, ECHO_ISLES },
 								-- endif
-								["classes"] = exclude({ 
-									PALADIN, 
+								["classes"] = exclude({
+									PALADIN,
 									DEATHKNIGHT,
-									-- if AFTER LEGION
-									DEMONHUNTER 
-									-- endif
+									DEMONHUNTER
 									}, ALL_CLASSES),
 								["sourceQuest"] = 24622,	-- A Troll's Truest Companion
 							}),
@@ -167,12 +159,10 @@ _.Zones =
 								-- if AFTER MOP
 								["coord"] = { 60.5, 62.9, ECHO_ISLES },
 								-- endif
-								["classes"] = exclude({ 
-									PALADIN, 
+								["classes"] = exclude({
+									PALADIN,
 									DEATHKNIGHT,
-									-- if AFTER LEGION
-									DEMONHUNTER 
-									-- endif
+									DEMONHUNTER
 									}, ALL_CLASSES),
 								["sourceQuest"] = 25064,	-- Moraya
 							}),
@@ -184,7 +174,7 @@ _.Zones =
 								-- endif
 								["sourceQuest"] = 51515,	-- Vengeance for Vol'jin
 								["timeline"] = {
-									"added added 8.0.1.27291",
+									"added 8.0.1.27291",
 								},
 							}),
 							q(24624, {	-- Mercy for the Lost
@@ -192,12 +182,10 @@ _.Zones =
 								-- if AFTER MOP
 								["coord"] = { 45.7, 85.0, ECHO_ISLES },
 								-- endif
-								["classes"] = exclude({ 
-									PALADIN, 
+								["classes"] = exclude({
+									PALADIN,
 									DEATHKNIGHT,
-									-- if AFTER LEGION
-									DEMONHUNTER 
-									-- endif
+									DEMONHUNTER
 									}, ALL_CLASSES),
 								["sourceQuest"] = 24622,	-- A Troll's Truest Companion
 							}),
@@ -206,14 +194,12 @@ _.Zones =
 								-- if AFTER MOP
 								["coord"] = { 61.6, 65.9, ECHO_ISLES },
 								-- endif
-								["classes"] = exclude({ 
-									PALADIN, 
+								["classes"] = exclude({
+									PALADIN,
 									DEATHKNIGHT,
-									-- if AFTER LEGION
-									DEMONHUNTER 
-									-- endif
+									DEMONHUNTER
 									}, ALL_CLASSES),
-								["sourceQuests"] = { 
+								["sourceQuests"] = {
 									24781,
 									-- if AFTER MOP
 									31163,
@@ -306,12 +292,10 @@ _.Zones =
 								-- if AFTER MOP
 								["coord"] = { 58.9, 23.1, ECHO_ISLES },
 								-- endif
-								["classes"] = exclude({ 
-									PALADIN, 
+								["classes"] = exclude({
+									PALADIN,
 									DEATHKNIGHT,
-									-- if AFTER LEGION
-									DEMONHUNTER 
-									-- endif
+									DEMONHUNTER
 									}, ALL_CLASSES),
 								["sourceQuest"] = 25035,	-- Breaking the Line
 							}),
@@ -420,12 +404,10 @@ _.Zones =
 							q(24623, {	-- Saving the Young
 								["provider"] = { "n", 37969 },	-- Kijara
 								["coord"] = { 44.6, 85.6, ECHO_ISLES },
-								["classes"] = exclude({ 
-									PALADIN, 
+								["classes"] = exclude({
+									PALADIN,
 									DEATHKNIGHT,
-									-- if AFTER LEGION
-									DEMONHUNTER 
-									-- endif
+									DEMONHUNTER
 									}, ALL_CLASSES),
 								["sourceQuest"] = 24622,	-- A Troll's Truest Companion
 							}),
@@ -434,12 +416,10 @@ _.Zones =
 								-- if AFTER MOP
 								["coord"] = { 61.6, 65.9, ECHO_ISLES },
 								-- endif
-								["classes"] = exclude({ 
-									PALADIN, 
+								["classes"] = exclude({
+									PALADIN,
 									DEATHKNIGHT,
-									-- if AFTER LEGION
-									DEMONHUNTER 
-									-- endif
+									DEMONHUNTER
 									}, ALL_CLASSES),
 								["sourceQuest"] = 24814,	-- An Ancient Enemy
 								["isBreadcrumb"] = true,
@@ -449,12 +429,10 @@ _.Zones =
 								-- if AFTER MOP
 								["coord"] = { 58.9, 23.1, ECHO_ISLES },
 								-- endif
-								["classes"] = exclude({ 
-									PALADIN, 
+								["classes"] = exclude({
+									PALADIN,
 									DEATHKNIGHT,
-									-- if AFTER LEGION
-									DEMONHUNTER 
-									-- endif
+									DEMONHUNTER
 									}, ALL_CLASSES),
 								["sourceQuest"] = 25035,	-- Breaking the Line
 							}),
@@ -635,12 +613,10 @@ _.Zones =
 								-- if AFTER MOP
 								["coord"] = { 45.1, 85.5, ECHO_ISLES },
 								-- endif
-								["classes"] = exclude({ 
-									PALADIN, 
+								["classes"] = exclude({
+									PALADIN,
 									DEATHKNIGHT,
-									-- if AFTER LEGION
-									DEMONHUNTER 
-									-- endif
+									DEMONHUNTER
 									}, ALL_CLASSES),
 								["sourceQuests"] = {
 									24625,	-- Consort of the Sea Witch
