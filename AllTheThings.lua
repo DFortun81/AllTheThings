@@ -11944,10 +11944,14 @@ end
 -- that key based on the current value and current character
 app.SetCustomCollectibility = function(key, func)
 	-- print("cached",key,app.CurrentCharacter.CustomCollects[key]);
-	local result = func(app.CurrentCharacter.CustomCollects[key]);
+	local result = func();
 	if result ~= nil then
 		-- print("saved",key,result);
 		app.CurrentCharacter.CustomCollects[key] = result;
+	else
+		-- failed attempt to set the CC, try next frame
+		-- print("Failed, set cc",key)
+		Callback(app.SetCustomCollectibility, key, func);
 	end
 end
 -- determines whether an object may be considered collectible for the current character based on the 'customCollect' value(s)
@@ -11963,6 +11967,7 @@ app.CheckCustomCollects = function(t)
 end
 -- Performs the necessary checks to determine any 'customCollect' settings the current character should have applied
 app.RefreshCustomCollectibility = function()
+	-- print("RefreshCustomCollectibility",app.IsReady)
 	if not app.IsReady then
 		Callback(app.RefreshCustomCollectibility);
 		return;
@@ -11973,58 +11978,35 @@ app.RefreshCustomCollectibility = function()
 
 	-- do one-time per character custom visibility check(s)
 	-- Exile's Reach (New Player Experience)
-	app.SetCustomCollectibility("NPE", function(cc)
+	app.SetCustomCollectibility("NPE", function()
 		-- settings override
 		if app.Settings:GetFilter("CC:NPE") then return true; end
-		-- character is not checked
-		if cc == nil then
-			-- print("first check");
-			-- check if the current MapID is in Exile's Reach
-			local maps = { [1409] = 1, [1609] = 1, [1610] = 1, [1611] = 1, [1726] = 1, [1727] = 1 };
-			while not app.CurrentMapID do
-				app.GetCurrentMapID();
-			end
-			-- print("map check",app.CurrentMapID);
-			-- this is an NPE character, so flag the GUID
-			if maps[app.CurrentMapID] then
-				-- print("on map");
-				return true;
-			-- if character has completed the first NPE quest
-			elseif ((IsQuestFlaggedCompleted(56775) or IsQuestFlaggedCompleted(59926))
-					-- but not finished the NPE chain
-					and not (IsQuestFlaggedCompleted(60359) or IsQuestFlaggedCompleted(58911))) then
-				-- print("incomplete NPE chain");
-				return true;
-			end
-			-- otherwise character is not NPE
-			return false;
-		-- character has previously been flagged
-		elseif cc then
-			-- finished the NPE chain
-			if IsQuestFlaggedCompleted(60359) or IsQuestFlaggedCompleted(58911) then
-				-- print("complete NPE chain");
-				return false;
-			end
+		-- needs mapID to check this
+		if not app.CurrentMapID then return; end
+		-- print("first check");
+		-- check if the current MapID is in Exile's Reach
+		local maps = { [1409] = 1, [1609] = 1, [1610] = 1, [1611] = 1, [1726] = 1, [1727] = 1 };
+		-- print("map check",app.CurrentMapID);
+		-- this is an NPE character, so flag the GUID
+		if maps[app.CurrentMapID] then
+			-- print("on map");
+			return true;
+		-- if character has completed the first NPE quest
+		elseif ((IsQuestFlaggedCompleted(56775) or IsQuestFlaggedCompleted(59926))
+				-- but not finished the NPE chain
+				and not (IsQuestFlaggedCompleted(60359) or IsQuestFlaggedCompleted(58911))) then
+			-- print("incomplete NPE chain");
+			return true;
 		end
-		return cc;
+		-- otherwise character is not NPE
+		return false;
 	end);
 	-- Shadowlands Skip
-	app.SetCustomCollectibility("SL_SKIP", function(cc)
+	app.SetCustomCollectibility("SL_SKIP", function()
 		-- settings override
 		if app.Settings:GetFilter("CC:SL_SKIP") then return true; end
-		-- character is not checked
-		if cc == nil then
-			-- print("first check of SL_SKIP");
-			-- check if quest #62713 is completed. appears to be a HQT concerning whether the character has chosen to skip the SL Storyline
-			cc = IsQuestFlaggedCompleted(62713) or false;
-		-- character is not a skip character, check if the status has changed
-		elseif not cc then
-			-- check if quest #62713 is completed. appears to be a HQT concerning whether the character has chosen to skip the SL Storyline
-			cc = IsQuestFlaggedCompleted(62713);
-		end
-		-- no apparent way to revert this choice, so no logic to revert the CC value
-		-- print("isSkip",cc);
-		return cc;
+		-- check if quest #62713 is completed. appears to be a HQT concerning whether the character has chosen to skip the SL Storyline
+		return IsQuestFlaggedCompleted(62713) or false;
 	end);
 
 	local SLCovenantId = C_Covenants.GetActiveCovenantID();
