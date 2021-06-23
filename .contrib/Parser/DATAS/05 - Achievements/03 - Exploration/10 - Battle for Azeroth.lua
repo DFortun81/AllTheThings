@@ -916,9 +916,75 @@ _.Achievements =
 			ach(13765),	-- Subaquatic Support
 			ach(13722),	-- Terror of the Tadpoles
 			ach(13061, {	-- Three Sheets to the Wind
+				crit(1, {	-- "Aurora Borealis"
+					["cost"] = { { "i", 160484, 1 } },	-- "Aurora Borealis"
+				}),
+				crit(2, {	-- Admiralty-Issued Grog
+					["cost"] = { { "i", 163103, 1 } },	-- Admiralty-Issued Grog
+				}),
+				crit(3, {	-- Arathor Single Cask
+					["cost"] = { { "i", 163639, 1 } },	-- Arathor Single Cask
+				}),
+				crit(4, {	-- Bitter Darkroot Vodka
+					["cost"] = { { "i", 159850, 1 } },	-- Bitter Darkroot Vodka
+				}),
+				crit(5, {	-- Blacktooth Bloodwine
+					["cost"] = { { "i", 159848, 1 } },	-- Blacktooth Bloodwine
+				}),
+				crit(6, {	-- Brennadam Apple Brandy
+					["cost"] = { { "i", 159845, 1 } },	-- Brennadam Apple Brandy
+				}),
+				crit(7, {	-- Corlain Estate 12 Year
+					["cost"] = { { "i", 163638, 1 } },	-- Corlain Estate 12 Year
+				}),
+				crit(8, {	-- Dark and Stormy
+					["cost"] = { { "i", 163522, 1 } },	-- Dark and Stormy
+				}),
+				crit(9, {	-- Drop Anchor Dunkel
+					["cost"] = { { "i", 163019, 1 } },	-- Drop Anchor Dunkel
+				}),
+				crit(10, {	-- Foaming Turtle Broth
+					["cost"] = { { "i", 158927, 1 } },	-- Foaming Turtle Broth
+				}),
+				crit(11, {	-- Hook Point Porter
+					["cost"] = { { "i", 162026, 1 } },	-- Hook Point Porter
+				}),
+				crit(12, {	-- Hook Point Schnapps
+					["cost"] = { { "i", 159849, 1 } },	-- Hook Point Schnapps
+				}),
+				crit(13, {	-- Kul Tiran Tripel
+					["cost"] = { { "i", 163548, 1 } },	-- Kul Tiran Tripel
+				}),
+				crit(14, {	-- Long Forgotten Rum
+					["cost"] = { { "i", 161153, 1 } },	-- Long Forgotten Rum
+				}),
+				crit(15, {	-- Mildenhall Mead
+					["cost"] = { { "i", 159847, 1 } },	-- Mildenhall Mead
+				}),
+				crit(16, {	-- Patina Pale Ale
+					["cost"] = { { "i", 162560, 1 } },	-- Patina Pale Ale
+				}),
+				crit(17, {	-- Pontoon Pilsner
+					["cost"] = { { "i", 163018, 1 } },	-- Pontoon Pilsner
+				}),
+				crit(18, {	-- Sausage Martini
+					["cost"] = { { "i", 163651, 1 } },	-- Sausage Martini
+				}),
+				crit(19, {	-- Snowberry Berliner
+					["cost"] = { { "i", 163094, 1 } },	-- Snowberry Berliner
+				}),
+				crit(20, {	-- Thornspeaker Moonshine
+					["cost"] = { { "i", 163549, 1 } },	-- Thornspeaker Moonshine
+				}),
+				crit(21, {	-- Tradewinds Kolsch
+					["cost"] = { { "i", 163098, 1 } },	-- Tradewinds Kolsch
+				}),
+				crit(22, {	-- Whitegrove Pale Ale
+					["cost"] = { { "i", 159846, 1 } },	-- Whitegrove Pale Ale
+				}),
+				-- Items which grant the criteria... ideally these would be sourced in the respective zones on the respective vendors,
+				-- but not taking the time to worry about that right now...
 				i(160484, {	-- "Aurora Borealis"
-					["achievementID"] = 13061,	-- Three Sheets to the Wind
-					["criteriaID"] = 1,			-- "Aurora Borealis"
 					["crs"] = {
 						138221,	-- "Nasty" Buck
 						142188,	-- Allison Weber
@@ -942,8 +1008,6 @@ _.Achievements =
 					},
 				}),
 				i(163103, {	-- Admiralty-Issued Grog
-					["achievementID"] = 13061,	-- Three Sheets to the Wind
-					["criteriaID"] = 2,			-- Admiralty-Issued Grog
 					["crs"] = {
 						134729,	-- Crimper Mirjam
 						143246,	-- Garrett Elmendorf
@@ -967,8 +1031,6 @@ _.Achievements =
 					},
 				}),
 				i(163639, {	-- Arathor Single Cask
-					["achievementID"] = 13061,	-- Three Sheets to the Wind
-					["criteriaID"] = 3,			-- Arathor Single Cask
 					["crs"] = {
 						143487,	-- Nicolas Moal
 					},
@@ -980,8 +1042,6 @@ _.Achievements =
 					},
 				}),
 				i(159850, {	-- Bitter Darkroot Vodka
-					["achievementID"] = 13061,	-- Three Sheets to the Wind
-					["criteriaID"] = 4,			-- Bitter Darkroot Vodka
 					["crs"] = {
 						142188,	-- Allison Weber
 						126600,	-- Arthur Seville
@@ -1011,8 +1071,6 @@ _.Achievements =
 					},
 				}),
 				i(159848, {	-- Blacktooth Bloodwine
-					["achievementID"] = 13061,	-- Three Sheets to the Wind
-					["criteriaID"] = 5,			-- Blacktooth Bloodwine
 					["crs"] = {
 						142188,	-- Allison Weber
 						126600,	-- Arthur Seville
@@ -1043,8 +1101,6 @@ _.Achievements =
 					},
 				}),
 				i(159845, {	-- Brennadam Apple Brandy
-					["achievementID"] = 13061,	-- Three Sheets to the Wind
-					["criteriaID"] = 6,			-- Brennadam Apple Brandy
 					["crs"] = {
 						138221,	-- "Nasty" Buck
 						142188,	-- Allison Weber
@@ -1074,8 +1130,6 @@ _.Achievements =
 					},
 				}),
 				i(163638, {	-- Corlain Estate 12 Year
-					["achievementID"] = 13061,	-- Three Sheets to the Wind
-					["criteriaID"] = 7,			-- Corlain Estate 12 Year
 					["crs"] = {
 						143487,	-- Nicolas Moal
 					},
@@ -1087,8 +1141,6 @@ _.Achievements =
 					},
 				}),
 				i(163522, {	-- Dark and Stormy
-					["achievementID"] = 13061,	-- Three Sheets to the Wind
-					["criteriaID"] = 8,			-- Dark and Stormy
 					["crs"] = {
 						137411,	-- Joseph Stephens
 						129376,	-- Lenne
@@ -1108,8 +1160,6 @@ _.Achievements =
 					},
 				}),
 				i(163019, {	-- Drop Anchor Dunkel
-					["achievementID"] = 13061,	-- Three Sheets to the Wind
-					["criteriaID"] = 9,			-- Drop Anchor Dunkel
 					["crs"] = {
 						142764,	-- "Fairplay" JJ
 						142760,	-- Barserver Aspen
@@ -1151,8 +1201,6 @@ _.Achievements =
 					},
 				}),
 				i(158927, {	-- Foaming Turtle Broth
-					["achievementID"] = 13061,	-- Three Sheets to the Wind
-					["criteriaID"] = 10,		-- Foaming Turtle Broth
 					["crs"] = {
 						135600,	-- Emma Haribull
 					},
@@ -1164,8 +1212,6 @@ _.Achievements =
 					},
 				}),
 				i(162026, {	-- Hook Point Porter
-					["achievementID"] = 13061,	-- Three Sheets to the Wind
-					["criteriaID"] = 11,		-- Hook Point Porter
 					["crs"] = {
 						142764,	-- "Fairplay" JJ
 						142760,	-- Barserver Aspen
@@ -1210,8 +1256,6 @@ _.Achievements =
 					},
 				}),
 				i(159849, {	-- Hook Point Schnapps
-					["achievementID"] = 13061,	-- Three Sheets to the Wind
-					["criteriaID"] = 12,		-- Hook Point Schnapps
 					["crs"] = {
 						142188,	-- Allison Weber
 						126600,	-- Arthur Seville
@@ -1243,8 +1287,6 @@ _.Achievements =
 					},
 				}),
 				i(163548, {	-- Kul Tiran Tripel
-					["achievementID"] = 13061,	-- Three Sheets to the Wind
-					["criteriaID"] = 13,		-- Kul Tiran Tripel
 					["crs"] = {
 						139638,	-- Barkeep Cotner
 						139113,	-- Bored Barkeep
@@ -1268,9 +1310,7 @@ _.Achievements =
 					},
 				}),
 				i(161153, {	-- Long Forgotten Rum
-					["provider"] = { "n", 140055 }, 			-- First Mate Grogtok
-					["achievementID"] = 13061,	-- Three Sheets to the Wind
-					["criteriaID"] = 14,		-- Long Forgotten Rum
+					-- ["provider"] = { "n", 140055 },	-- First Mate Grogtok -- Why is this here...
 					["crs"] = {
 						137040,	-- Linda Deepwater
 					},
@@ -1284,8 +1324,6 @@ _.Achievements =
 					},
 				}),
 				i(159847, {	-- Mildenhall Mead
-					["achievementID"] = 13061,	-- Three Sheets to the Wind
-					["criteriaID"] = 15,		-- Mildenhall Mead
 					["crs"] = {
 						138221,	-- "Nasty" Buck
 						126600,	-- Arthur Seville
@@ -1326,8 +1364,6 @@ _.Achievements =
 					},
 				}),
 				i(162560, {	-- Patina Pale Ale
-					["achievementID"] = 13061,	-- Three Sheets to the Wind
-					["criteriaID"] = 16,		-- Patina Pale Ale
 					["crs"] = {
 						142764,	-- "Fairplay" JJ
 						142760,	-- Barserver Aspen
@@ -1355,8 +1391,6 @@ _.Achievements =
 					},
 				}),
 				i(163018, {	-- Pontoon Pilsner
-					["achievementID"] = 13061,	-- Three Sheets to the Wind
-					["criteriaID"] = 17,		-- Pontoon Pilsner
 					["crs"] = {
 						142764,	-- "Fairplay" JJ
 						142760,	-- Barserver Aspen
@@ -1392,8 +1426,6 @@ _.Achievements =
 					},
 				}),
 				i(163651, {	-- Sausage Martini
-					["achievementID"] = 13061,	-- Three Sheets to the Wind
-					["criteriaID"] = 18,		-- Sausage Martini
 					["crs"] = {
 						139638,	-- Barkeep Cotner
 					},
@@ -1405,8 +1437,6 @@ _.Achievements =
 					},
 				}),
 				i(163094, {	-- Snowberry Berliner
-					["achievementID"] = 13061,	-- Three Sheets to the Wind
-					["criteriaID"] = 19,		-- Snowberry Berliner
 					["crs"] = {
 						142764,	-- "Fairplay" JJ
 						139638,	-- Barkeep Cotner
@@ -1437,8 +1467,6 @@ _.Achievements =
 					},
 				}),
 				i(163549, {	-- Thornspeaker Moonshine
-					["achievementID"] = 13061,	-- Three Sheets to the Wind
-					["criteriaID"] = 20,		-- Thornspeaker Moonshine
 					["crs"] = {
 						142188,	-- Allison Weber
 						137411,	-- Joseph Stephens
@@ -1455,8 +1483,6 @@ _.Achievements =
 					},
 				}),
 				i(163098, {	-- Tradewinds Kolsch
-					["achievementID"] = 13061,	-- Three Sheets to the Wind
-					["criteriaID"] = 21,		-- Tradewinds Kolsch
 					["crs"] = {
 						142764,	-- "Fairplay" JJ
 						142760,	-- Barserver Aspen
@@ -1491,8 +1517,6 @@ _.Achievements =
 					},
 				}),
 				i(159846, {	-- Whitegrove Pale Ale
-					["achievementID"] = 13061,	-- Three Sheets to the Wind
-					["criteriaID"] = 22,		-- Whitegrove Pale Ale
 					["crs"] = {
 						138221,	-- "Nasty" Buck
 						126600,	-- Arthur Seville
