@@ -261,7 +261,13 @@ _.WorldEvents =
 						q(43291, {	-- Defend (Dun Morogh)
 							["u"] = REMOVED_FROM_GAME,
 						}),
+						q(43296, {	-- Defend (RHillsbrad Foothills)
+							["u"] = REMOVED_FROM_GAME,
+						}),
 						q(43283, {	-- Demon Commander (Dun Morogh)
+							["u"] = REMOVED_FROM_GAME,
+						}),
+						q(43286, {	-- Demon Commander (Hillsbrad Foothills)
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(40755, {	-- Hiding in the Stacks
@@ -317,6 +323,9 @@ _.WorldEvents =
 						q(43292, {	-- Repel (Dun Morogh)
 							["u"] = REMOVED_FROM_GAME,
 						}),
+						q(43297, {	-- Repel (Hillsbrad Foothills)
+							["u"] = REMOVED_FROM_GAME,
+						}),
 						q(42970, {	-- The Diamond King
 							["u"] = REMOVED_FROM_GAME,
 							["provider"] = { "n", 113655 },	-- Brann Bronzebeard
@@ -328,10 +337,6 @@ _.WorldEvents =
 						-- Tanaris:
 						--q(43293),	-- Defend (possibly LEGACY - Legion pre-patch)
 						--q(43243),	-- Demon Commander (possibly LEGACY - Legion pre-patch)
-						-- hillsbrad foothills:
-						--q(43296),	-- Defend (REMOVED, from Legion pre-patch)
-						--q(43286),	-- Demon Commander (REMOVED, from Legion pre-patch)
-						--q(43297),	-- Repel (Hillsbrad Foothills)
 					}),
 					n(VENDORS, {
 						n(109912, {	-- Captive Wyrmtongue <Reluctant 'Quartermaster'>

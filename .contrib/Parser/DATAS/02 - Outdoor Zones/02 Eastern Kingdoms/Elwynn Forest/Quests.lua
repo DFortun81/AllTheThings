@@ -359,3 +359,12 @@ _.Zones =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(33428),	-- BETA Elwynn Forest Racing
+		q(33422),	-- BETA Elwynn Long Distance Practice
+		q(33429),	-- BETA Elwynn Long Distance Trial: 25
+		q(33432),	-- BETA Elwynn South Distance Practice
+		q(33431),	-- BETA Elwynn South Distance Trial: 30
+	}),
+});

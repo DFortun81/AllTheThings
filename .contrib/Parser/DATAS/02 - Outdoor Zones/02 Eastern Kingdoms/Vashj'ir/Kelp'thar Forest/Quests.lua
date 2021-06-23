@@ -471,3 +471,8 @@ _.Zones =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(25474),	-- BETA Once More, With Eeling [DEPRICATED]
+	}),
+});

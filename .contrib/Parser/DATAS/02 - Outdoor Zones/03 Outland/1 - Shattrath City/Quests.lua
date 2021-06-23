@@ -452,6 +452,11 @@ _.Zones =
 					["coord"] = { 54.3, 44.3, SHATTRATH_CITY },
 					["sourceQuests"] = { 10948 },	-- The Hostage Soul
 				}),
+				q(11550, {	-- Enter, the Deceiver...
+					["u"] = REMOVED_FROM_GAME,
+					["provider"] = { "n", 25167 },	-- General Tiras'alan
+					["coord"] = { 54.3, 44.3, SHATTRATH_CITY },
+				}),
 				q(12771, {	-- Ironforge (Dwarf)
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = { DWARF },
@@ -611,6 +616,11 @@ _.Zones =
 					["g"] = {
 						i(29460),	-- Ethereum Prison Key
 					},
+				}),
+				q(11378, {	-- WANTED: The Epoch Hunter's Head
+					["provider"] = { "n", 24369 },	-- Wind Trader Zhareem
+					["coord"] = { 75, 37, SHATTRATH_CITY },
+					["isDaily"] = true,
 				}),
 				q(10231, {	-- What Book? I Don't See Any Book.
 					["coord"] = { 59.3, 35.6, SHATTRATH_CITY },

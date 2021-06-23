@@ -166,3 +166,9 @@ _.Zones =
 		}),
 	})),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(11553),	-- BETA Archonisus, the Final Gate
+		q(11552),	-- BETA Rohendor, the Second Gate
+	}),
+});
