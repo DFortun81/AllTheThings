@@ -2443,11 +2443,6 @@ ResolveSymbolicLink = function(o)
 					for k,s in ipairs(cache) do
 						-- if finding itself in the cache, don't try to resolve itself
 						if s ~= o and (s.key ~= o.key or s[s.key] ~= o[o.key]) then
-							if s.g then
-								for i,m in ipairs(s.g) do
-									table.insert(searchResults, m);
-								end
-							end
 							local ref = ResolveSymbolicLink(s);
 							if ref then
 								for i,m in ipairs(ref) do
@@ -2709,7 +2704,7 @@ ResolveSymbolicLink = function(o)
 					print("Could not find subroutine", sym[2]);
 				end
 			end
-			if app.DEBUG_PRINT then print("Results",searchResults and #searchResults,"from '",cmd,"' with [",sym[2],"] & [",sym[3],"] for",o.key,o.key and o[o.key]) end
+			-- if app.DEBUG_PRINT then print("Results",searchResults and #searchResults,"from '",cmd,"' with [",sym[2],"] & [",sym[3],"] for",o.key,o.key and o[o.key]) end
 		end
 
 		-- If we have any pending finalizations to make, then merge them into the finalized table. [Equivalent to a "finalize" instruction]
@@ -2720,19 +2715,10 @@ ResolveSymbolicLink = function(o)
 		end
 		-- if app.DEBUG_PRINT then print("Forced Finalize",o.key,o.key and o[o.key],#finalized) end
 
-		-- make sure we've only grabbed a set of unique results... I can't think of any reason we'd ever want to select
-		-- multiples of the same header/item/etc.
-		local uniques = {};
-		MergeObjects(uniques, finalized);
-		finalized = uniques;
-		-- if app.DEBUG_PRINT then print("Forced Uniques",o.key,o.key and o[o.key],#finalized); app.PrintTable(finalized); end
-
 		-- If we had any finalized search results, then clone all the records and return it.
 		if #finalized > 0 then
 			local cloned = {};
-			for _,s in ipairs(finalized) do
-				tinsert(cloned, CreateObject(s));
-			end
+			MergeObjects(cloned, finalized, true);
 			-- if app.DEBUG_PRINT then print("Symbolic Link for", o.key,o.key and o[o.key], "contains", #uniques, "values after filtering.") end
 			return cloned;
 		else
@@ -3812,6 +3798,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	end
 
 	-- Cache the result for a while depending on if there is more work to be done.
+	group.isSearchResult = true;
 	group.working = working;
 	cache[2] = (working and 0.01) or 100000000;
 	-- if working then print("still working...")
@@ -12360,17 +12347,22 @@ function app:CreateMiniListForGroup(group)
 		if not group.g and (group.itemID or group.currencyID) then
 			local cmd = group.link or group.key .. ":" .. group[group.key];
 			group = GetCachedSearchResults(cmd, SearchForLink, cmd);
-			-- clone/search initially so as to not let popout operations modify the source data
-			group = CloneData(group);
-		else
-			-- clone/search initially so as to not let popout operations modify the source data
-			group = CloneData(group);
+		end
+
+		-- clone/search initially so as to not let popout operations modify the source data
+		group = CloneData(group);
+
+		-- being a search result means it has already received certain processing
+		if not group.isSearchResult then
 			-- Fill any purchasable things for the sub-groups
 			-- if group.g then
 			-- 	for _,sub in ipairs(group.g) do
 			-- 		FillPurchases(sub);
 			-- 	end
 			-- end
+			-- Merge any symbolic linked data into the sub-groups
+			-- print("resolve non-search popout root",group.key, group.key and group[group.key])
+			FillSymLinks(group, true);
 		end
 		-- This logic allows for nested searches of groups within a popout to be returned as the root search which resets the parent
 		-- if not group.isBaseSearchResult then
@@ -12399,8 +12391,6 @@ function app:CreateMiniListForGroup(group)
 		-- 		group.s = s;
 		-- 	end
 		-- end
-		-- Merge any symbolic linked data into the sub-groups
-		FillSymLinks(group, true);
 		-- Create groups showing Appearance information
 		if group.s then
 			-- popout.data = group;
