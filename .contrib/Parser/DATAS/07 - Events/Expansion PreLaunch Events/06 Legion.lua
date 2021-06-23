@@ -314,6 +314,9 @@ _.WorldEvents =
 						q(43245, {	-- Invasion: Westfall
 							["u"] = REMOVED_FROM_GAME,
 						}),
+						q(43292, {	-- Repel (Dun Morogh)
+							["u"] = REMOVED_FROM_GAME,
+						}),
 						q(42970, {	-- The Diamond King
 							["u"] = REMOVED_FROM_GAME,
 							["provider"] = { "n", 113655 },	-- Brann Bronzebeard
@@ -322,7 +325,6 @@ _.WorldEvents =
 						--q(43289),	-- Defend
 						--q(43294),	-- Repel
 						--q(43290),	-- Repel
-						--q(43292),	-- Repel (Dun Morogh)
 						-- Tanaris:
 						--q(43293),	-- Defend (possibly LEGACY - Legion pre-patch)
 						--q(43243),	-- Demon Commander (possibly LEGACY - Legion pre-patch)

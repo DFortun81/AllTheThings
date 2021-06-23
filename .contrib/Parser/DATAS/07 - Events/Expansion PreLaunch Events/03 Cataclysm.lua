@@ -10,7 +10,69 @@ _.WorldEvents =
 				["groups"] = {
 					un(REMOVED_FROM_GAME, ach(4786, {	-- Operation: Gnomeregan
 						["groups"] = {
-							un(REMOVED_FROM_GAME, i(54651)),	-- Gnomeregan Pride Toy
+							q(25229, {	-- A Few Good Gnomes
+								["u"] = REMOVED_FROM_GAME,
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(25199, {	-- Basic Orders
+								["u"] = REMOVED_FROM_GAME,
+								["sourceQuest"] = 25229,	-- A Few Good Gnomes
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(25285, {	-- In and Out
+								["u"] = REMOVED_FROM_GAME,
+								["sourceQuest"] = 25199,	-- Basic Orders
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(25289, {	-- One Step Forward...
+								["u"] = REMOVED_FROM_GAME,
+								["sourceQuest"] = 25285,	-- In and Out
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(25393, {	-- Operation: Gnomeregan
+								["u"] = REMOVED_FROM_GAME,
+								["sourceQuest"] = 25287,	-- Words for Delivery
+								["races"] = ALLIANCE_ONLY,
+								["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME}, {
+								i(53097),	-- Gnomeregan Drape
+								}),
+							}),
+							q(25283, {	-- Prepping the Speech
+								["u"] = REMOVED_FROM_GAME,
+								["sourceQuest"] = 25212,	-- Vent Horizon
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(25295, {	-- Press Fire
+								["u"] = REMOVED_FROM_GAME,
+								["sourceQuest"] = 25289,	-- One Step Forward...
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(25212, {	-- Vent Horizon
+								["u"] = REMOVED_FROM_GAME,
+								["sourceQuest"] = 25295,	-- Press Fire
+								["races"] = ALLIANCE_ONLY,
+							}),
+							q(25286, {	-- Words for Delivery
+								["u"] = REMOVED_FROM_GAME,
+								["sourceQuest"] = 25283,	-- Prepping the Speech
+								["races"] = ALLIANCE_ONLY,
+								["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME}, {
+								i(54651),	-- Gnomeregan Pride Toy
+								}),
+							}),
+							q(25500, {	-- Words for Delivery
+								["u"] = NEVER_IMPLEMENTED,
+								["sourceQuest"] = 25283,	-- Prepping the Speech
+								["races"] = ALLIANCE_ONLY,
+								["g"] = bubbleDown({["u"] = REMOVED_FROM_GAME}, {
+								i(54651),	-- Gnomeregan Pride Toy
+								}),
+							}),
+							q(25287, {	-- Words for Delivery
+								["u"] = REMOVED_FROM_GAME,
+								["sourceQuest"] = 25286,	-- Words for Delivery
+								["races"] = ALLIANCE_ONLY,
+							}),
 						},
 						["collectible"] = false,
 					})),
@@ -97,7 +159,6 @@ _.WorldEvents =
 							["races"] = HORDE_ONLY,
 							["provider"] = { "n", 39827 },	-- Overseer Jintak
 						}),
-						un(REMOVED_FROM_GAME,q(25285)),	-- In and Out
 						q(25290, {	-- Infiltrating the Cult
 							["u"] = REMOVED_FROM_GAME,
 							["races"] = ALLIANCE_ONLY,
@@ -108,9 +169,7 @@ _.WorldEvents =
 							["races"] = HORDE_ONLY,
 							["provider"] = { "n", 39448 },	-- Blood Guard Torek
 						}),
-						un(REMOVED_FROM_GAME,q(25289)),	-- One Step Forward...
 						un(REMOVED_FROM_GAME,q(24462)),	-- Operation Item Get
-						un(REMOVED_FROM_GAME,q(25295)),	-- Press Fire
 						q(25253, {	-- Prophecies of Doom
 							["u"] = REMOVED_FROM_GAME,
 							["races"] = ALLIANCE_ONLY,
