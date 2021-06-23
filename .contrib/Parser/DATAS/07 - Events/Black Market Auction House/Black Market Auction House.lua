@@ -367,11 +367,15 @@ _.WorldEvents =
 				["description"] = "Contains 250-500 Darkmoon Faire Tickets",
 			}),
 			un(REMOVED_FROM_GAME, i(128312)),	-- Elixir of the Rapid Mind
-			un(9, i(45037)),					-- Epic Purple Shirt
-			i(110672, {							-- Grimoire of the Four Winds
+			un(9, i(45037)),	-- Epic Purple Shirt
+			{	-- Grimoire of the Four Winds
+				["itemID"] = 110672,	-- Grimoire of the Four Winds
 				["u"] = REMOVED_FROM_GAME,
 				["collectible"] = false,
-			}),
+				["icon"] = "Interface\\Icons\\passive_monk_teachingsofmonastery",
+				["f"] = 55,
+				-- Removed from BMAH with 7.3.5
+			},
 			-- Heart of Fear Heroic Trash Drops. Only where available from the BMAH while HoF was current Content.
 			un(REMOVED_FROM_GAME, i(86993)),	-- Darting Damselfly Cuffs
 			un(REMOVED_FROM_GAME, i(86994)),	-- Gleaming Moth Cuffs
@@ -397,14 +401,11 @@ _.WorldEvents =
 				["itemID"] = 105751,
 			},
 			un(9, i(142000)),	-- Rhinestone Sunglasses
-			i(14617),			-- Sawbones Shirt
-			i(112935),			-- Tusk of Mannoroth
-			i(141006),			-- The First Satyr's Spaulders
-			i(169430, {			--  Unclaimed Black Market Container
-				["sym"] = {
-					{"select", "headerID", -94}, 
-					{"exclude", "itemID", 169430 },	-- Exclude itself to stop duplicating
-				},
+			i(14617),	-- Sawbones Shirt
+			i(112935),	-- Tusk of Mannoroth
+			i(141006),	-- The First Satyr's Spaulders
+			i(169430, {	--  Unclaimed Black Market Container
+				["sym"] = {{"select", "headerID", -94}, {"pop"}, {"not","itemID", 169430}},
 			}),
 			un(REMOVED_FROM_GAME, i(141995)),	-- Unclaimed Black Market Container Pre 8.2.5 (they updated and added new items)
 		},
