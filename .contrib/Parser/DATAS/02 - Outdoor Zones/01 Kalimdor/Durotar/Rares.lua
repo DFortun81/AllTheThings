@@ -25,7 +25,6 @@ _.Zones =
 						{ 39.6, 45.6, DUROTAR },
 						{ 38.6, 44.0, DUROTAR },
 						{ 36.6, 44.4, DUROTAR },
-
 					},
 					["timeline"] = {
 						"added 1.11.1.7272",

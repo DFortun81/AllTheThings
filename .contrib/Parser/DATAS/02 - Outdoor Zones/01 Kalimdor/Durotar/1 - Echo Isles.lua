@@ -199,7 +199,7 @@ _.Zones =
 									DEATHKNIGHT,
 									DEMONHUNTER
 									}, ALL_CLASSES),
-								["sourceQuests"] = {
+								["sourceQuests"] = {	-- More Than Expected (All Classes)
 									24781,
 									-- if AFTER MOP
 									31163,
@@ -210,7 +210,8 @@ _.Zones =
 									24755,
 									26277,
 									24643,
-									24769},	-- More Than Expected (All Classes)
+									24769
+								},
 							}),
 							q(24769, {	-- More Than Expected (Druid)
 								["provider"] = { "n", 38243 },	-- Zen'tabra
