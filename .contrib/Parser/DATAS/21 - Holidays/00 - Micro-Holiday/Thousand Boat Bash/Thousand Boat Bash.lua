@@ -13,7 +13,7 @@ _.Holidays =
 				["npcID"] = -34,	-- World Quests
 				["g"] = bubbleDown({
 						["u"] = 22,	-- Micro-Holiday Filter
-						["description"] = "Call of the Scarab must be available for this World Quests to display.",
+						["description"] = "Thousand Boat Bash must be available for this World Quests to display.",
 						["isWorldQuest"] = true,
 						["maps"] = { THOUSAND_NEEDLES },
 					}, {
