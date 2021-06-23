@@ -44,7 +44,7 @@ _.Mounts =
 		i(43953),	-- Blue Drake
 		i(44151),	-- Blue Proto-Drake
 		i(21218),	-- Blue Qiraji Battle Tank
-		i(163578), 	-- Broken Highland Mustang
+		i(163578),	-- Broken Highland Mustang
 		i(43951),	-- Bronze Drake
 		i(184160),	-- Bulbous Necroray
 		i(181818),	-- Chewed Reins of the Callow Flayedwing
@@ -52,7 +52,7 @@ _.Mounts =
 		i(173887),	-- Clutch of Ha-Li
 		i(95059),	-- Clutch of Ji-Kun
 		i(94228),	-- Cobalt Primordial Direhorn
-		i(163583),  -- Craghorn Chasm-Leaper
+		i(163583),	-- Craghorn Chasm-Leaper
 		i(186645),	-- Crimson Shardhide
 		i(152905),	-- Crimson Slavermaw
 		i(186646),	-- Darkmaul
@@ -154,7 +154,7 @@ _.Mounts =
 			["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant drop only
 		}),
 		i(69224),	-- Pureblood Fire Hawk
-		i(163582),  -- Qinsho's Eternal Hound
+		i(163582),	-- Qinsho's Eternal Hound
 		i(187183),	-- Rampaging Mauler
 		i(32768),	-- Raven Lord
 		i(94291),	-- Red Primal Raptor
@@ -183,7 +183,7 @@ _.Mounts =
 		i(116771),	-- Solar Spirehawk
 		i(89783),	-- Son of Galleon
 		i(186657),	-- Soulbound Gloomcharger
-		i(163586),  -- Squawks
+		i(163586),	-- Squawks
 		i(93666),	-- Spawn of Horridon
 		i(180725),	-- Spinemaw Gladechewer
 		i(166470),	-- Stonehide Elderhorn
@@ -194,7 +194,7 @@ _.Mounts =
 		i(159842),	-- Summon Sharkbait
 		i(180773),	-- Sundancer
 		i(116792),	-- Sunhide Gronnling
-		i(163585),  -- Surf Jelly
+		i(163585),	-- Surf Jelly
 		i(163644),	-- Swift Albino Raptor
 		i(116773),	-- Swift Breezestrider
 		i(180728),	-- Swift Gloomhoof
@@ -207,9 +207,9 @@ _.Mounts =
 		i(104269),	-- Thundering Onyx Cloud Serpent
 		i(90655),	-- Thundering Ruby Cloud Serpent
 		i(44168),	-- Time-Lost Proto-Drake
-		i(159921), 	-- Tomb Stalker
+		i(159921),	-- Tomb Stalker
 		i(116658),	-- Tundra Icehoof
-		i(163584),  -- Twilight Avenger
+		i(163584),	-- Twilight Avenger
 		i(43954),	-- Twilight Drake
 		i(166803),	-- Umber Nightsaber
 		i(160829),	-- Underrot Crawg Harness

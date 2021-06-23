@@ -79,7 +79,6 @@ _.Zones =
 					["groups"] = {
 						i(22900, {	-- Recipe: Elixir of Camouflage
 							["isLimited"] = true,
-							["f"] = 200,
 						}),
 					},
 				}),
@@ -89,7 +88,6 @@ _.Zones =
 					["groups"] = {
 						i(22900, {	-- Recipe: Elixir of Camouflage
 							["isLimited"] = true,
-							["f"] = 200,
 						}),
 					},
 				}),
@@ -229,11 +227,9 @@ _.Zones =
 					["groups"] = {
 						i(23803, {	-- Schematic: Cogspinner Goggles
 							["isLimited"] = true,
-							["f"] = 200,
 						}),
 						i(23805, {	-- Schematic: Ultra-Spectropic Detection Goggles
 							["isLimited"] = true,
-							["f"] = 200,
 						}),
 					},
 				}),
@@ -321,11 +317,9 @@ _.Zones =
 					["groups"] = {
 						i(23807, {	-- Schematic: Adamantite Scope
 							["isLimited"] = true,
-							["f"] = 200,
 						}),
 						i(23803, {	-- Schematic: Cogspinner Goggles
 							["isLimited"] = true,
-							["f"] = 200,
 						}),
 					},
 				}),
@@ -414,7 +408,6 @@ _.Zones =
 						i(25847),	-- Plans: Eternium Rod
 						i(23638, {	-- Plans: Lesser Ward of Shielding
 							["isLimited"] = true,
-							["f"] = 200,
 						}),
 					},
 				}),

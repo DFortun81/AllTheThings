@@ -1015,9 +1015,6 @@ _.Zones =
 						i(77787),	-- Replica Sergeant Major's Silk Cuffs
 					}),
 				}),
-				n(33918, {  -- Kezzik the Striker <Veteran Arena Vendor> [Note: Yes, two NPCs with same name. One is removed]
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				n(107599, {	-- Izzee the 'Clutch' <Merciless and Veteran's Gladiator>
 					["coord"] = { 33.0, 64.2, NETHERSTORM },
 					["itemID"] = 137642,	-- Mark of Honor

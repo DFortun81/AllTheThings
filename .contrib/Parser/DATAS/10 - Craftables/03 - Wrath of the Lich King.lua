@@ -356,30 +356,6 @@ _.Craftables =
 				i(44446),			-- Pack of Endless Pockets
 				un(REMOVED_FROM_GAME, i(44447)),	-- Dragonscale Ammo Pouch
 				un(REMOVED_FROM_GAME, i(44448)),	-- Nerubian Reinforced Quiver
-			}),	
-			f(55, {		-- Consumables
-				i(38371),	-- Jormungar Leg Armor
-				i(38372),	-- Nerubian Leg Armor
-				i(38376),	-- Heavy Borean Armor Kit
-				i(38373), 	-- Frosthide Leg Armor
-				i(38374), 	-- Icescale Leg Armor
-				i(44963), 	-- Earthen Leg Armor
-			}),
-			f(55, {		-- Consumables
-				i(38371),	-- Jormungar Leg Armor
-				i(38372),	-- Nerubian Leg Armor
-				i(38376),	-- Heavy Borean Armor Kit
-				i(38373), 	-- Frosthide Leg Armor
-				i(38374), 	-- Icescale Leg Armor
-				i(44963), 	-- Earthen Leg Armor
-			}),
-			f(55, {		-- Consumables
-				i(38371),	-- Jormungar Leg Armor
-				i(38372),	-- Nerubian Leg Armor
-				i(38376),	-- Heavy Borean Armor Kit
-				i(38373), 	-- Frosthide Leg Armor
-				i(38374), 	-- Icescale Leg Armor
-				i(44963), 	-- Earthen Leg Armor
 			}),
 			f(55, {		-- Consumables
 				i(38371),	-- Jormungar Leg Armor

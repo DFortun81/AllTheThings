@@ -202,7 +202,6 @@ _.Zones =
 					["coord"] = { 72.9, 65.2, BURNING_STEPPES },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 207304 },	-- Adventure Board
-					["lvl"] = 20,
 					["isBreadcrumb"] = true,
 				}),
 				q(28069, {	-- Adventurers Wanted: Blackrock Depths

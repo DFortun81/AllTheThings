@@ -24,13 +24,9 @@ _.Zones =
 					["groups"] = {
 						i(22900, {	-- Recipe: Elixir of Camouflage
 							["isLimited"] = true,
-							["f"] = 200,
 						}),
 						i(23574, {	-- Recipe: Transmute Primal Might
-							["spellID"] = 29688,	-- Transmute Primal Might
-							["requireSkill"] = ALCHEMY,
 							["isLimited"] = true,
-							["f"] = 200,
 						}),
 					},
 				}),
@@ -42,28 +38,16 @@ _.Zones =
 					},
 					["groups"] = {
 						i(23591, {	-- Plans: Adamantite Cleaver
-							["spellID"] = 29568,	-- Adamantite Cleaver
-							["requireSkill"] = BLACKSMITHING,
 							["isLimited"] = true,
-							["f"] = 200,
 						}),
 						i(23592, {	-- Plans: Adamantite Dagger
-							["spellID"] = 29569,	-- Adamantite Dagger
-							["requireSkill"] = BLACKSMITHING,
 							["isLimited"] = true,
-							["f"] = 200,
 						}),
 						i(23590, {	-- Plans: Adamantite Maul
-							["spellID"] = 29566,	-- Adamantite Maul
-							["requireSkill"] = BLACKSMITHING,
 							["isLimited"] = true,
-							["f"] = 200,
 						}),
 						i(23593, {	-- Plans: Adamantite Rapier
-							["spellID"] = 29571,	-- Adamantite Rapier
-							["requireSkill"] = BLACKSMITHING,
 							["isLimited"] = true,
-							["f"] = 200,
 						}),
 					},
 				}),
@@ -75,44 +59,16 @@ _.Zones =
 					},
 					["groups"] = {
 						i(20854, {	-- Design: Amulet of the Moon
-							["spellID"] = 25339,	-- Amulet of the Moon
-							["requireSkill"] = JEWELCRAFTING,
-							["timeline"] = { "added 2.0.1.6180" },
-							-- #if ANYCLASSIC
-							["u"] = TBC_PHASE_ONE,
-							-- #endif
 							["isLimited"] = true,
-							["f"] = 200,
 						}),
 						i(20856, {	-- Design: Heavy Golden Necklace of Battle
-							["spellID"] = 25320,	-- Heavy Golden Necklace of Battle
-							["requireSkill"] = JEWELCRAFTING,
-							["timeline"] = { "added 2.0.1.6180" },
-							-- #if ANYCLASSIC
-							["u"] = TBC_PHASE_ONE,
-							-- #endif
 							["isLimited"] = true,
-							["f"] = 200,
 						}),
 						i(21948, {	-- Design: Opal Necklace of Impact
-							["spellID"] = 26897,	-- Opal Necklace of Impact
-							["requireSkill"] = JEWELCRAFTING,
-							["timeline"] = { "added 2.0.1.6180" },
-							-- #if ANYCLASSIC
-							["u"] = TBC_PHASE_ONE,
-							-- #endif
 							["isLimited"] = true,
-							["f"] = 200,
 						}),
 						i(20975, {	-- Design: The Jade Eye
-							["spellID"] = 25619,	-- The Jade Eye
-							["requireSkill"] = JEWELCRAFTING,
-							["timeline"] = { "added 2.0.1.6180" },
-							-- #if ANYCLASSIC
-							["u"] = TBC_PHASE_ONE,
-							-- #endif
 							["isLimited"] = true,
-							["f"] = 200,
 						}),
 					},
 				}),
@@ -140,18 +96,15 @@ _.Zones =
 					["groups"] = {
 						i(23799, {	-- Schematic: Adamantite Rifle
 							["isLimited"] = true,
-							["f"] = 200,
 						}),
 						applyclassicphase(TBC_PHASE_THREE, i(23815, {	-- Schematic: Adamantite Shell Machine
 							["isLimited"] = true,
 						})),
 						i(23816, {	-- Schematic: Fel Iron Toolbox
 							["isLimited"] = true,
-							["f"] = 200,
 						}),
 						i(23811, {	-- Schematic: White Smoke Flare
 							["isLimited"] = true,
-							["f"] = 200,
 						}),
 					},
 				}),
@@ -203,10 +156,7 @@ _.Zones =
 					["groups"] = {
 						i(21892),	-- Pattern: Bolt of Imbued Netherweave
 						i(21894, {	-- Pattern: Bolt of Soulcloth
-							["spellID"] = 26750,	-- Bolt of Soulcloth
-							["requireSkill"] = TAILORING,
 							["isLimited"] = true,
-							["f"] = 200,
 						}),
 						i(21896),	-- Pattern: Netherweave Robe
 						i(21897),	-- Pattern: Netherweave Tunic

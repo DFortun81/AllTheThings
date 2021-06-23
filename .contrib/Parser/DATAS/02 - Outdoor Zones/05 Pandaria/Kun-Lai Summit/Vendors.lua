@@ -1837,7 +1837,7 @@ _.Zones =
 							}),
 						}),
 					},
-				}),	
+				}),
 				n(65165, {	-- Doris Chiltonius (Removed Season 12 Vendor)
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,

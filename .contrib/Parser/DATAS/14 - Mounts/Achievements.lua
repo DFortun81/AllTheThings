@@ -24,7 +24,7 @@ _.Mounts =
 		i(153041),	-- Bleakhoof Ruinstrider
 		i(51954),	-- Bloodbathed Frostbrood Vanquisher
 		i(168055),	-- Bloodflank Charger
-		i(163216), 	-- Bloodgorged Crawg
+		i(163216),	-- Bloodgorged Crawg
 		i(44843),	-- Blue Dragonhawk
 		i(174066, {	-- Caravan Hyena
 			["races"] = HORDE_ONLY,
@@ -120,7 +120,7 @@ _.Mounts =
 		i(163124),	-- Vicious War Clefthoof
 		i(140350),	-- Vicious War Elekk*
 		i(152870),	-- Vicious War Fox (A)*
-		i(152869),  -- Vicious War Fox (H)*
+		i(152869),	-- Vicious War Fox (H)*
 		i(186178, {	-- Vicious War Gorm (A)
 			["races"] = ALLIANCE_ONLY,
 		}),

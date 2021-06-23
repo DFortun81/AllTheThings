@@ -444,6 +444,7 @@ app.L = {
 	["FOR_UNSORTED_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see Source Locations which have not been fully sourced into the database.";
 	["WITH_WRAPPING_CHECKBOX"] = "Allow Source Wrapping",
 	["WITH_WRAPPING_CHECKBOX_TOOLTIP"] = "Enable this option to allow the Source lines to wrap within the tooltip.\nThis will ensure that the tooltips do not grow wider than necessary, but will unfortunately make the Source information harder to read in many situations.",
+	["MISC_LABEL"] = "Miscellaneous";
 	["SHOW_REMAINING_CHECKBOX"] = "Show Remaining Things";
 	["SHOW_REMAINING_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the number of items remaining instead of the progress over total.";
 	["PERCENTAGES_CHECKBOX"] = "Show Percentage Completion";
@@ -771,7 +772,7 @@ app.L = {
 		[200] = "Interface\\Icons\\inv_scroll_05",								-- Recipes
 		[999] = "Interface\\Icons\\INV_Holiday_Christmas_Present_01",			-- Event Item
 	};
-	
+
 	-- Custom Icons for Holidays
 	["HOLIDAY_ID_ICONS"] = {
 		-- Examples --
@@ -2373,7 +2374,6 @@ app.L = {
 		[-10102] = select(1,GetCategoryInfo(15438)),							-- Shadowlands Raids
 		[-10103] = select(1,GetCategoryInfo(15440)),							-- The Maw and Torghast
 		[-10104] = select(1,GetCategoryInfo(15441)),							-- Covenant Sanctums
-		
 
 		-- Achieve 14339 Sub-Criteira
 		[-1433901] = "Anima Crystal Shard",										-- Anima Crystal Shard
@@ -2566,15 +2566,3 @@ app.L = {
 		["SL_COV_VEN"] = { "|cFFfe040fVenthyr Covenant|r" },
 	};
 };
-
--- Assign programmatic names here. (This means you don't need to manually assign a locale for each one)
-local a = app.ObjectNames;
-for key,value in pairs({
-	[226468] = GetSpellInfo(155344),										-- Buffeting Galefury
-	[226469] = GetSpellInfo(154259),										-- Spirit of the Wolf
-	[230544] = GetSpellInfo(155334),										-- Touched By Ice
-	[233263] = GetSpellInfo(154253),										-- Blessing of the Wolf
-	[239925] = GetSpellInfo(155346),										-- Ogrish Fortitude
-	[239926] = GetSpellInfo(155315),										-- Touched By Fire
-})
-do a[key] = value; end

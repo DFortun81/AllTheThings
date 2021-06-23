@@ -2137,26 +2137,6 @@ _.NeverImplemented =
 		n(-386, {	-- Trinket
 			i(12805),	-- Orb of Fire
 			i(37561),	-- Unknown
-			i(125045),	-- Wild Combatant's Accolade of Dominance
-			i(125047),	-- Wild Combatant's Accolade of Meditation
-			i(125044),	-- Wild Combatant's Accolade of conquest
-			i(125046),	-- Wild Combatant's Accolade of Victory
-			i(125048),	-- Wild Combatant's Accolade of Endurance
-			i(124871),	-- Wild Gladiator's Accolade of Dominance
-			i(124874),	-- Wild Gladiator's Accolade of Endurance
-			i(124870),	-- Wild Gladiator's Accolade of conquest
-			i(124872),	-- Wild Gladiator's Accolade of victory
-			i(124873),	-- Wild Gladiator's Accolade of meditation
-			i(125522),	-- Wild Combatant's Accolade of Dominance
-			i(125524),	-- Wild Combatant's Accolade of Meditation
-			i(125521),	-- Wild Combatant's Accolade of conquest
-			i(125523),	-- Wild Combatant's Accolade of Victory
-			i(125525),	-- Wild Combatant's Accolade of Endurance
-			i(125348),	-- Wild Gladiator's Accolade of Dominance
-			i(125351),	-- Wild Gladiator's Accolade of Endurance
-			i(125347),	-- Wild Gladiator's Accolade of conquest
-			i(125349),	-- Wild Gladiator's Accolade of victory
-			i(125350),	-- Wild Gladiator's Accolade of meditation
 			i(173426),	-- Black Empire trinkets
 			i(18355),	-- Ferras Collar
 			i(18438),	-- Sergeant's Mark
@@ -3531,13 +3511,6 @@ _.NeverImplemented =
 			i(86552),	-- Artisan Cookbook
 			i(86553),	-- Master Cookbook
 			i(86554),	-- Grand Master Cookbook
-			recipe(169696),	-- Marinated Elekk Steak
-			recipe(169699),	-- Seasoned Elekk Ribeye
-			recipe(169701),	-- Seasoned Elekk Ribeye
-			recipe(169693),	-- Whole Pot-Roasted Elekk
-			recipe(145170),	-- Grand Deluxe Noodle Cart Kit
-			recipe(145167),	-- Grand Noodle Cart Kit
-			recipe(145197),	-- Grand Pandaren Treasure Noodle Cart Kit
 		}),
 		prof(ENGINEERING, {
 			{	-- Blingtron's Circuit Design Tutorial

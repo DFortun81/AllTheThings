@@ -3478,7 +3478,7 @@ _.Zones =
 							}),
 						}),
 					},
-				}),	
+				}),
 				n(58714, {	-- Mei Mei Ironpaw <Master of the Pot>
 					["coord"] = { 52.6, 51.6, 376 },
 					["g"] = {

@@ -179,9 +179,6 @@ _.Zones =
 				q(9374, {	-- Arelion's Journal
 					["qg"] = 16793,	-- Magistrix Carinda
 					["coord"] = { 26.3, 60.3, HELLFIRE_PENINSULA },
-					["cost"] = {
-						{ "i", 23339, 1 },	-- Arelion's Journal
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(60, 10, 60),
 					["groups"] = {
@@ -391,9 +388,6 @@ _.Zones =
 				q(10450, {	-- Bonechewer Blood
 					["qg"] = 21256,	-- Vurtok Axebreaker
 					["coord"] = { 55.1, 36.3, HELLFIRE_PENINSULA },
-					["cost"] = {
-						{ "i", 30327, 12 },	-- Bonechewer Blood
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(58, 10, 58),
 					["groups"] = {
@@ -1346,9 +1340,6 @@ _.Zones =
 					["qg"] = 16833,	-- Makuru
 					["sourceQuest"] = 9423,	-- Return to Obadei
 					["coord"] = { 23.1, 40.1, HELLFIRE_PENINSULA },
-					["cost"] = {
-						{ "i", 23589, 10 },	-- Mag'har Ancestral Beads
-					},
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(60, 10, 60),
 					["groups"] = {

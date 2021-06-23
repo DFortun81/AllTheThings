@@ -4029,7 +4029,6 @@ _.HiddenQuestTriggers = {
 		q(62290),	-- Triggered when turning in 'Corpse Run' (61523)
 		q(62215),	-- Triggered when turning in Training Program (62216)
 		q(62596),	-- Triggered when completing 'The Great Luckydo'
-	
 		q(62404),	-- using Ashen Ink (Crypt Couture)
 		q(62408),	-- using Jagged Bonesaw (Crypt Couture)
 		q(62405),	-- using Mucosal Pigment (Crypt Couture)
@@ -4325,7 +4324,7 @@ _.HiddenQuestTriggers = {
 		q(62878),	-- Sludgefist
 		q(62879),	-- Stone Legion Generals
 		q(62880),	-- Sire Denthrius
-		
+
 		-- 9.1 PTR
 		q(63820),	-- triggered when completing the final step of the Kyrian Assault, quest #63824
 		q(64077),	-- triggered when completing the final step of the Kyrian Assault, quest #63824
@@ -4349,7 +4348,7 @@ _.HiddenQuestTriggers = {
 		q(64262),	-- triggered when turning in #64007, "Charge of the Covenants"
 		q(64536),	-- looting Maldraxxus Larva Shell (300 Catalogued Research)
 		q(63601),	-- this was either learning Aspiring Aspirant's ensemble or pulling a legendary out of the mailbox that i hadn't had bagspace for earlier
-		
+
 		-- Treasures of Korthia achievement
 		q(64244),	-- Korthia treasure - Anima Laden Egg
 		q(64241),	-- Korthia treasure - Dislodged Nest
@@ -4362,4 +4361,4 @@ _.HiddenQuestTriggers = {
 		q(64045),	-- The Maw repeatable treasure, Stolen Anima Vessel
 		q(64044),	-- The Maw repeatable treasure, Stolen Anima Vessel (34.2, 64.6) / (30.6, 58.4)
 	}),
-};
+};

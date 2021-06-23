@@ -1388,9 +1388,6 @@ _.PVP =
 									["cost"] = { { "i",  137642, 2 } }, -- 2x Mark of Honor
 								}),
 							},
-						}),	
-						i(84477, {	-- Dreadful Gladiator's Linked Armor
-							["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 						}),
 					}),
 					cl(WARLOCK, {
@@ -2185,8 +2182,6 @@ _.PVP =
 						i(91478, {	-- Malevolent Gladiator's Drape of Prowess
 							["cost"] = { { "i",  137642, 1 } }, -- 1x Mark of Honor
 						}),
-						
-						un(NEVER_IMPLEMENTED, i(97518)),	-- Dreadful Gladiator's Drape of Prowess
 					}),
 					n(-326, {	-- Wrists
 						i(91710, {	-- Malevolent Gladiator's Armbands of Meditation

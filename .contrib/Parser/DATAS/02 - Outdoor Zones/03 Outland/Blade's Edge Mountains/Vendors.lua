@@ -90,7 +90,6 @@ _.Zones =
 					["groups"] = {
 						i(22900, {	-- Recipe: Elixir of Camouflage
 							["isLimited"] = true,
-							["f"] = 200,
 						}),
 						i(22909, {	-- Recipe: Elixir of Major Defense
 							["isLimited"] = true,

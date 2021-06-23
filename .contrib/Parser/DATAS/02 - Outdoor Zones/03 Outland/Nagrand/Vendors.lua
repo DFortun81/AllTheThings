@@ -44,10 +44,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(21894, {	-- Pattern: Bolt of Soulcloth
-							["spellID"] = 26750,	-- Bolt of Soulcloth
-							["requireSkill"] = TAILORING,
 							["isLimited"] = true,
-							["f"] = 200,
 						}),
 						i(21902, { 	-- Pattern: Soulcloth Gloves
 							["isLimited"] = true,
@@ -121,16 +118,9 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(21894, {	-- Pattern: Bolt of Soulcloth
-							["spellID"] = 26750,	-- Bolt of Soulcloth
-							["requireSkill"] = TAILORING,
 							["isLimited"] = true,
-							["f"] = 200,
 						}),
-						i(21893, {	-- Pattern: Imbued Netherweave Bag
-							["spellID"] = 26749,	-- Imbued Netherweave Bag
-							["requireSkill"] = TAILORING,
-							["f"] = 200,
-						}),
+						i(21893),	-- Pattern: Imbued Netherweave Bag
 						i(21902, { 	-- Pattern: Soulcloth Gloves
 							["isLimited"] = true,
 						}),

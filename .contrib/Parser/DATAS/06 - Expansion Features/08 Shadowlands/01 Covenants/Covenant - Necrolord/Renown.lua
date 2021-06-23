@@ -19,10 +19,10 @@ _.ExpansionFeatures =
 							["description"] = "Requires 45 Renown.",
 						}),
 						title(426, {	-- Baron
-							["description"] = "Requires 40 Renown.",
+							["description"] = "Requires Renown 40. Rewarded to a male character. You can also receive the title by changing your gender at the barber shop after obtaining the Baroness title, however it will display as not earned on external websites.",
 						}),
 						title(427, {	-- Baroness
-							["description"] = "Requires 40 Renown.",
+							["description"] = "Requires Renown 40. Rewarded to a female character. You can also receive the title by changing your gender at the barber shop after obtaining the Baron title, however it will display as not earned on external websites.",
 						}),
 						title(443, {	-- Sword of the Primus
 							["description"] = "Requires 80 Renown.",

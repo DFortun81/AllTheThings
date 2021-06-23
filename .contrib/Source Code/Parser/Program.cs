@@ -10,50 +10,6 @@ namespace ATT
 {
     class Program
     {
-        /// <summary>
-        /// All of the Release Phases that can be used as part of a conditional.
-        /// </summary>
-        static Dictionary<string, int> RELEASE_PHASES = new Dictionary<string, int>
-        {
-            // Key-Value Pair   // Classic Release Phase
-            { "UNKNOWN", 0 },   // Unknown, invalid data.
-            { "CLASSIC", 11 },  // PHASE_ONE
-            { "TBC", 17 },      // TBC_PHASE_ONE
-            { "WRATH", 30 },    // WRATH_PHASE_ONE
-            { "CATA", 40 },     // CATA_PHASE_ONE
-            { "MOP", 50 },      // MOP_PHASE_ONE
-            { "WOD", 60 },      // WOD_PHASE_ONE
-            { "LEGION", 70 },   // LEGION_PHASE_ONE
-            { "BFA", 80 },      // BFA_PHASE_ONE
-            { "SHADOWLANDS", 80 },      // SHADOWLANDS_PHASE_ONE
-        };
-
-        static string CURRENT_RELEASE_PHASE_NAME = 
-#if SHADOWLANDS
-                "SHADOWLANDS"
-#elif BFA
-                "BFA"
-#elif LEGION
-                "LEGION"
-#elif WOD
-                "WOD"
-#elif MOP
-                "MOP"
-#elif CATA
-                "CATA"
-#elif WRATH
-                "WRATH"
-#elif TBC
-                "TBC"
-#elif CLASSIC
-                "CLASSIC"
-#else
-                "UKNOWN"
-#endif
-            ;
-
-        static int CURRENT_RELEASE_PHASE = RELEASE_PHASES[CURRENT_RELEASE_PHASE_NAME];
-
         static void Main(string[] args)
         {
             // Setup tracing to the console.
@@ -173,6 +129,14 @@ namespace ATT
                             lua.DoString(content = ProcessContent(File.ReadAllText(fileName)));
                             Framework.Merge(lua.GetTable("AllTheThings"));
                             break;
+                        }
+                        // Invalid data are thrown on purpose when ATT-specific formatting issues are encountered in LUA files
+                        catch(InvalidDataException e)
+                        {
+                            Trace.WriteLine(fileName);
+                            Trace.WriteLine(e.Message);
+                            Trace.WriteLine("Press Enter once you have resolved the issue.");
+                            Console.ReadLine();
                         }
                         catch (Exception e)
                         {

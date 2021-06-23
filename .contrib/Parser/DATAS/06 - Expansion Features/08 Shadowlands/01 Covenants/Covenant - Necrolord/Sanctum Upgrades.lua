@@ -770,6 +770,7 @@ _.ExpansionFeatures =
 							q(63054, {	-- Strength in Numbers
 								["provider"] = { "n", 161909 },	-- Arkadia Moa
 								["coord"] = { 52.4, 38.4, 1698 },
+								["description"] = "Becomes available after you build Command Table tier 1 in your sanctum.",
 							}),
 						}),
 						-- Tier 2: Recuperative Treatments

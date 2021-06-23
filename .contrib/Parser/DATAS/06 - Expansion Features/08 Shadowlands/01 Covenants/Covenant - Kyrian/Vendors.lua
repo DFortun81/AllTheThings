@@ -15,7 +15,7 @@ _.ExpansionFeatures =
 				n(VENDORS, {
 					n(174937, {	-- Adjutant Galos <Renown Quartermaster>
 						["coord"] = { 63.3, 30.6, 1708 },
-						["g"] = sharedData( 
+						["g"] = sharedData(
 							{ ["customCollect"] = "SL_COV_KYR", }	-- Kyrian
 							, {
 							i(186485, {	-- Ascendant's Aquilon (MOUNT!)

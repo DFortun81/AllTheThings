@@ -19,7 +19,7 @@ local TIER_FOUR_GROUPS = applyclassicphase(TBC_PHASE_ONE, {
 		i(29022, {	-- Warbringer Greaves
 			["cost"] = { { "i", 29767, 1 }, },	-- Leggings of the Fallen Defender
 		}),
-		
+
 		-- Protection
 		i(29011, {	-- Warbringer Greathelm
 			["cost"] = { { "i", 29761, 1 }, },	-- Helm of the Fallen Defender
@@ -54,7 +54,7 @@ local TIER_FOUR_GROUPS = applyclassicphase(TBC_PHASE_ONE, {
 		i(29074, {	-- Justicar Greaves
 			["cost"] = { { "i", 29766, 1 }, },	-- Leggings of the Fallen Champion
 		}),
-		
+
 		-- Holy
 		i(29061, {	-- Justicar Diadem
 			["cost"] = { { "i", 29760, 1 }, },	-- Helm of the Fallen Champion
@@ -71,7 +71,7 @@ local TIER_FOUR_GROUPS = applyclassicphase(TBC_PHASE_ONE, {
 		i(29063, {	-- Justicar Leggings
 			["cost"] = { { "i", 29766, 1 }, },	-- Leggings of the Fallen Champion
 		}),
-		
+
 		-- Protection
 		i(29068, {	-- Justicar Faceguard
 			["cost"] = { { "i", 29760, 1 }, },	-- Helm of the Fallen Champion
@@ -140,7 +140,7 @@ local TIER_FOUR_GROUPS = applyclassicphase(TBC_PHASE_ONE, {
 		i(29059, {	-- Leggings of the Incarnate
 			["cost"] = { { "i", 29767, 1 }, },	-- Leggings of the Fallen Defender
 		}),
-		
+
 		-- Holy
 		i(29049, {	-- Light-Collar of the Incarnate
 			["cost"] = { { "i", 29761, 1 }, },	-- Helm of the Fallen Defender
@@ -175,7 +175,7 @@ local TIER_FOUR_GROUPS = applyclassicphase(TBC_PHASE_ONE, {
 		i(29042, {	-- Cyclone War-Kilt
 			["cost"] = { { "i", 29766, 1 }, },	-- Leggings of the Fallen Champion
 		}),
-		
+
 		-- Elemental
 		i(29035, {	-- Cyclone Faceguard
 			["cost"] = { { "i", 29760, 1 }, },	-- Helm of the Fallen Champion
@@ -192,7 +192,7 @@ local TIER_FOUR_GROUPS = applyclassicphase(TBC_PHASE_ONE, {
 		i(29036, {	-- Cyclone Legguards
 			["cost"] = { { "i", 29766, 1 }, },	-- Leggings of the Fallen Champion
 		}),
-		
+
 		-- Restoration
 		i(29028, {	-- Cyclone Headdress
 			["cost"] = { { "i", 29760, 1 }, },	-- Helm of the Fallen Champion
@@ -261,7 +261,7 @@ local TIER_FOUR_GROUPS = applyclassicphase(TBC_PHASE_ONE, {
 		i(29094, {	-- Britches of Malorne
 			["cost"] = { { "i", 29767, 1 }, },	-- Leggings of the Fallen Defender
 		}),
-		
+
 		-- Feral
 		i(29098, {	-- Stag-Helm of Malorne
 			["cost"] = { { "i", 29761, 1 }, },	-- Helm of the Fallen Defender
@@ -278,7 +278,7 @@ local TIER_FOUR_GROUPS = applyclassicphase(TBC_PHASE_ONE, {
 		i(29099, {	-- Greaves of Malorne
 			["cost"] = { { "i", 29767, 1 }, },	-- Leggings of the Fallen Defender
 		}),
-		
+
 		-- Restoration
 		i(29086, {	-- Crown of Malorne
 			["cost"] = { { "i", 29761, 1 }, },	-- Helm of the Fallen Defender
@@ -424,7 +424,6 @@ local TIER_FIVE_GROUPS = applyclassicphase(TBC_PHASE_TWO, {
 		i(30153, {	-- Breeches of the Avatar
 			["cost"] = { { "i", 30246, 1 }, },	-- Leggings of the Vanquished Defender
 		}),
-		
 		i(30154, {	-- Mantle of the Avatar
 			["cost"] = { { "i", 30249, 1 }, },	-- Pauldrons of the Vanquished Defender
 		}),
@@ -599,28 +598,16 @@ _.Zones =
 					["minReputation"] = { 1011, NEUTRAL },	-- Lower City, Neutral.
 					["groups"] = {
 						i(23591, {	-- Plans: Adamantite Cleaver
-							["spellID"] = 29568,	-- Adamantite Cleaver
-							["requireSkill"] = BLACKSMITHING,
 							["isLimited"] = true,
-							["f"] = 200,
 						}),
 						i(23592, {	-- Plans: Adamantite Dagger
-							["spellID"] = 29569,	-- Adamantite Dagger
-							["requireSkill"] = BLACKSMITHING,
 							["isLimited"] = true,
-							["f"] = 200,
 						}),
 						i(23590, {	-- Plans: Adamantite Maul
-							["spellID"] = 29566,	-- Adamantite Maul
-							["requireSkill"] = BLACKSMITHING,
 							["isLimited"] = true,
-							["f"] = 200,
 						}),
 						i(23593, {	-- Plans: Adamantite Rapier
-							["spellID"] = 29571,	-- Adamantite Rapier
-							["requireSkill"] = BLACKSMITHING,
 							["isLimited"] = true,
-							["f"] = 200,
 						}),
 						i(25846, {	-- Plans: Adamantite Rod
 							["isLimited"] = true,
@@ -1119,27 +1106,78 @@ _.Zones =
 							["spellID"] = 0,	-- This is now available via 35248, need to delink the old plans from the recipe
 								["u"] = REMOVED_FROM_GAME,
 						}),
-						i(28911, {	-- Greater Inscription of the Knight
-							["cost"] = { { "i", 29736, 8 }, },	-- 8x Arcane Rune
+						i(35255, {	-- Design: Brilliant Crimson Spinel
+							["spellID"] = 0,	-- This is now available via 35248, need to delink the old plans from the recipe
+								["u"] = REMOVED_FROM_GAME,
 						}),
-						i(28912, {	-- Greater Inscription of the Oracle
-							["cost"] = { { "i", 29736, 8 }, },	-- 8x Arcane Rune
+						i(35271),	-- Design: Deadly Pyrestone
+						i(35246),	-- Design: Delicate Crimson Spinel
+						i(35245, {	-- Design: Delicate Crimson Spinel
+							["spellID"] = 0,	-- This is now available via 35246, need to delink the old plans from the recipe
+								["u"] = REMOVED_FROM_GAME,
 						}),
-						i(28909, {	-- Greater Inscription of the Orb
-							["cost"] = { { "i", 29736, 8 }, },	-- 8x Arcane Rune
+						i(35247),	-- Design: Flashing Crimson Spinel
+						i(35769),	-- Design: Forceful Seaspray Emerald
+						i(35325),	-- Design: Forceful Talasite
+						i(35266),	-- Design: Glinting Shadowsong Amethyst
+						i(35240, {	-- Design: Glinting Shadowsong Amethyst
+							["spellID"] = 0,	-- This is now available via 35266, need to delink the old plans from the recipe
+								["u"] = REMOVED_FROM_GAME,
 						}),
-						i(28907, {	-- Inscription of the Blade
-							["cost"] = { { "i", 29736, 2 }, },	-- 2x Arcane Rune
+						i(35267),	-- Design: Inscribed Pyrestone
+						i(35253),	-- Design: Jagged Seaspray Emerald
+						i(35258),	-- Design: Mystic Lionseye
+						i(35269),	-- Design: Potent Pyrestone
+						i(35251),	-- Design: Purified Shadowsong Amethyst
+						i(35241, {	-- Design: Purified Shadowsong Amethyst
+							["spellID"] = 0,	-- This is now available via 35251, need to delink the old plans from the recipe
+								["u"] = REMOVED_FROM_GAME,
 						}),
-						i(28908, {	-- Inscription of the Knight
-							["cost"] = { { "i", 29736, 2 }, },	-- 2x Arcane Rune
+						i(37504, {	-- Design: Purified Shadowsong Amethyst
+							["spellID"] = 0,	-- This is now available via 35251, need to delink the old plans from the recipe
+								["u"] = REMOVED_FROM_GAME,
 						}),
-						i(28904, {	-- Inscription of the Oracle
-							["cost"] = { { "i", 29736, 2 }, },	-- 2x Arcane Rune
+						i(35322),	-- Design: Quick Dawnstone
+						i(35768),	-- Design: Quick Lionseye
+						i(35254),	-- Design: Radiant Seaspray Emerald
+						i(35323),	-- Design: Reckless Noble Topaz
+						i(35767),	-- Design: Reckless Pyrestone
+						i(35268, {	-- Design: Reckless Pyrestone
+							["spellID"] = 0,	-- This is now available via 35767, need to delink the old plans from the recipe
+								["u"] = REMOVED_FROM_GAME,
 						}),
-						i(28903, {	-- Inscription of the Orb
-							["cost"] = { { "i", 29736, 2 }, },	-- 2x Arcane Rune
+						i(35252),	-- Design: Regal Seaspray Emerald
+						i(35259),	-- Design: Rigid Empyrean Sapphire
+						i(35257, {	-- Design: Rigid Empyrean Sapphire
+							["spellID"] = 0,	-- This is now available via 35259, need to delink the old plans from the recipe
+								["u"] = REMOVED_FROM_GAME,
 						}),
+						i(35242),	-- Design: Shifting Shadowsong Amethyst
+						i(35238, {	-- Design: Shifting Shadowsong Amethyst
+							["spellID"] = 0,	-- This is now available via 35242, need to delink the old plans from the recipe
+								["u"] = REMOVED_FROM_GAME,
+						}),
+						i(35260),	-- Design: Smooth Lionseye
+						i(35256, {	-- Design: Smooth Lionseye
+							["spellID"] = 0,	-- This is now available via 35260, need to delink the old plans from the recipe
+								["u"] = REMOVED_FROM_GAME,
+						}),
+						i(35263),	-- Design: Solid Empyrean Sapphire
+						i(35243),	-- Design: Sovereign Shadowsong Amethyst
+						i(35264),	-- Design: Sparkling Empyrean Sapphire
+						i(35262, {	-- Design: Sparkling Empyrean Sapphire
+							["spellID"] = 0,	-- This is now available via 35264, need to delink the old plans from the recipe
+								["u"] = REMOVED_FROM_GAME,
+						}),
+						i(35766),	-- Design: Steady Seaspray Emerald
+						i(35265),	-- Design: Stormy Empyrean Sapphire
+						i(35249),	-- Design: Subtle Lionseye
+						i(35261, {	-- Design: Subtle Lionseye
+							["spellID"] = 0,	-- This is now available via 35249, need to delink the old plans from the recipe
+								["u"] = REMOVED_FROM_GAME,
+						}),
+						i(35239),	-- Design: Timeless Shadowsong Amethyst
+						i(35270),	-- Design: Veiled Shadowsong Amethyst
 					},
 				})),
 				n(19321, {	-- Quartermaster Endarin <Aldor Quartermaster>
@@ -1272,10 +1310,7 @@ _.Zones =
 					["minReputation"] = { 1011, NEUTRAL },	-- Lower City, Neutral.
 					["groups"] = {
 						i(23574, {	-- Recipe: Transmute Primal Might
-							["spellID"] = 29688,	-- Transmute Primal Might
-							["requireSkill"] = ALCHEMY,
 							["isLimited"] = true,
-							["f"] = 200,
 						}),
 					},
 				}),
@@ -1294,28 +1329,9 @@ _.Zones =
 					["groups"] = {
 						i(23799, {	-- Schematic: Adamantite Rifle
 							["isLimited"] = true,
-							["f"] = 200,
 						}),
 						i(32381, {	-- Schematic: Fused Wiring
 							["isLimited"] = true,
-						}),
-						i(28912, {	-- Greater Inscription of the Oracle
-							["cost"] = { { "i", 29736, 8 }, },	-- 8x Arcane Rune
-						}),
-						i(28909, {	-- Greater Inscription of the Orb
-							["cost"] = { { "i", 29736, 8 }, },	-- 8x Arcane Rune
-						}),
-						i(28907, {	-- Inscription of the Blade
-							["cost"] = { { "i", 29736, 2 }, },	-- 2x Arcane Rune
-						}),
-						i(28908, {	-- Inscription of the Knight
-							["cost"] = { { "i", 29736, 2 }, },	-- 2x Arcane Rune
-						}),
-						i(28904, {	-- Inscription of the Oracle
-							["cost"] = { { "i", 29736, 2 }, },	-- 2x Arcane Rune
-						}),
-						i(28903, {	-- Inscription of the Orb
-							["cost"] = { { "i", 29736, 2 }, },	-- 2x Arcane Rune
 						}),
 					},
 				}),
@@ -1332,11 +1348,9 @@ _.Zones =
 						})),
 						i(23816, {	-- Schematic: Fel Iron Toolbox
 							["isLimited"] = true,
-							["f"] = 200,
 						}),
 						i(23811, {	-- Schematic: White Smoke Flare
 							["isLimited"] = true,
-							["f"] = 200,
 						}),
 					},
 				}),
