@@ -1,0 +1,23 @@
+repos:
+-   repo: https://github.com/pycqa/isort
+    rev: 5.9.1
+    hooks:
+    - id: isort
+      args: ["--profile", "black"]
+
+-   repo: https://github.com/psf/black
+    rev: 21.6b0
+    hooks:
+    - id: black
+
+-   repo: https://github.com/asottile/pyupgrade
+    rev: v2.19.4
+    hooks:
+    - id: pyupgrade
+      args: ["--py39-plus"]
+
+-   repo: https://github.com/pycqa/flake8
+    rev: 3.9.2
+    hooks:
+    -   id: flake8
+        args: ["--max-line-length", "88", "--extend-ignore", "E203, E501"]
