@@ -61,7 +61,6 @@ _.Instances = { tier(4, {	-- Cataclysm
 						["groups"] = {
 							objective(1, {
 								i(71141, {	-- Eternal Ember
-									["description"] = "Need 25 of these for the All-Seeing Eye quest.",
 									["crs"] = {
 										53691,	-- Shannox
 										52498,	-- Beth'tilac <The Red Widow>
@@ -75,14 +74,13 @@ _.Instances = { tier(4, {	-- Cataclysm
 							}),
 							objective(2, {
 								i(65893, {	-- Sands of Time
-									["description"] = "Need 3 of these for the All-Seeing Eye quest.",
 									["crs"] = {
 										61650,	-- Big Keech <Rare Antiquities>
 										49406,	-- Yasmin <Innkeeper>
 									},
 								}),
 							}),
-						}),
+						},
 					}),
 					q(29193, {	-- On a Wing and a Prayer
 						["provider"] = { "n", 15192 },	-- Anachronos
