@@ -14027,7 +14027,7 @@ RowOnEnter = function (self)
 			local owner = self:GetParent():GetParent();
 			if owner and owner.isLocked then
 				GameTooltip:AddLine(L["TOP_ROW_TO_UNLOCK"], 1, 1, 1);
-			else
+			elseif app.Settings:GetTooltipSetting("Show:TooltipHelp") then
 				GameTooltip:AddLine(L["TOP_ROW_TO_LOCK"], 1, 1, 1);
 			end
 		end
