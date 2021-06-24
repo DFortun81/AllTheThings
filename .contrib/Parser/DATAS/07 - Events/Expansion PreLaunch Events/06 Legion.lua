@@ -258,12 +258,18 @@ _.WorldEvents =
 							["provider"] = { "n", 114561 },	-- Khadgar's Upgraded Servant
 							["sourceQuests"] = { 40755 },	-- Hiding in the Stacks
 						}),
+						q(43298, {	-- Defend (Azshara)
+							["u"] = REMOVED_FROM_GAME,
+						}),
 						q(43291, {	-- Defend (Dun Morogh)
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(43296, {	-- Defend (RHillsbrad Foothills)
 							["u"] = REMOVED_FROM_GAME,
 						}),
+						q(43299, {	-- Demon Commander (Azshara)
+							["u"] = REMOVED_FROM_GAME,
+						}),						
 						q(43283, {	-- Demon Commander (Dun Morogh)
 							["u"] = REMOVED_FROM_GAME,
 						}),
@@ -320,6 +326,9 @@ _.WorldEvents =
 						q(43245, {	-- Invasion: Westfall
 							["u"] = REMOVED_FROM_GAME,
 						}),
+						q(43300, {	-- Repel (Azshara)
+							["u"] = REMOVED_FROM_GAME,
+						}),						
 						q(43292, {	-- Repel (Dun Morogh)
 							["u"] = REMOVED_FROM_GAME,
 						}),
