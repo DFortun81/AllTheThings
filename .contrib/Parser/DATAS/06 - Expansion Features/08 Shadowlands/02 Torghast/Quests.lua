@@ -430,8 +430,8 @@ _.ExpansionFeatures =
 					["repeatable"] = true,
 					["provider"] = { "n", 157406 },	-- Renavyth
 				}),
-				q(61395, {	-- Stonehuck's Sinstone
-					["sourceQuests"] = { 60136 },	-- Spare Parts
+				q(61395, {	-- Spare Parts
+					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["repeatable"] = true,
 					["provider"] = { "n", 172157 },	-- Ispiron
 				}),
@@ -712,6 +712,8 @@ _.HiddenQuestTriggers = {
 		q(61416),	-- Triggered when completing #61428, "Duskleaf's Revenge"
 		q(61418),	-- Triggered when completing #61430, "Chalkyth's Saber"
 		q(61419),	-- Triggered when completing #TODO, "TODO" (for Lloth'wellyn)
+		q(61308),	-- Unlocking access to pickup follower 'Hala' by completing #61348 "Hala's Sword"
+		q(61310),	-- Unlocking access to pickup follower 'Ispiron' by completing #61395, "Spare Parts"
 		q(61216),	-- triggered when completing #61259, "Ayeleth's Hunger" (was on a venthyr and picked up the champ quest right after)
 		q(61309),	-- triggered when completing #61347, "Molako's Freedom"
 		q(61213),	-- triggered when completing #61262, "Nerith's Vengeance"
