@@ -15128,10 +15128,11 @@ app:GetWindow("Bounty", UIParent, function(self, force, got)
 		self:BaseUpdate(true, got);
 	end
 end);
-app:GetWindow("CosmicInfuser", UIParent, function(self)
+app:GetWindow("CosmicInfuser", UIParent, function(self, force)
 	if self:IsVisible() then
 		if not self.initialized then
 			self.initialized = true;
+			force = true;
 			self.data = {
 				['text'] = "Cosmic Infuser",
 				['icon'] = "Interface\\Icons\\INV_Misc_Celestial Map.blp",
@@ -15187,7 +15188,7 @@ app:GetWindow("CosmicInfuser", UIParent, function(self)
 					end
 				end
 
-				self:Update();
+				self:Update(true);
 			end
 		end
 
@@ -15197,7 +15198,7 @@ app:GetWindow("CosmicInfuser", UIParent, function(self)
 		self.data.indent = 0;
 		self.data.back = 1;
 		BuildGroups(self.data, self.data.g);
-		self:BaseUpdate(true);
+		self:BaseUpdate(force);
 	end
 end);
 app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
@@ -17302,10 +17303,11 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 		self:BaseUpdate(...);
 	end
 end);
-app:GetWindow("WorldQuests", UIParent, function(self)
+app:GetWindow("WorldQuests", UIParent, function(self, force, got)
 	if self:IsVisible() then
 		if not self.initialized then
 			self.initialized = true;
+			force = true;
 			self.data = {
 				['text'] = L["WORLD_QUESTS"],
 				['icon'] = "Interface\\Icons\\INV_Misc_Map08.blp",
@@ -17882,7 +17884,7 @@ app:GetWindow("WorldQuests", UIParent, function(self)
 			end;
 		end
 
-		self:BaseUpdate(true);
+		self:BaseUpdate(force or got);
 	end
 end);
 
