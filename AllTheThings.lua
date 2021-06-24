@@ -2949,25 +2949,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				end
 			end
 
-			-- Seems pretty pointless now since all results at the end will pass through a RecursiveGroupRequirementsFilter on every object
-			-- if not app.MODE_DEBUG then
-			-- 	print("Pre-Filtering NPC Search",group and #group)
-			-- 	local regroup = {};
-			-- 	if app.MODE_ACCOUNT then
-			-- 		for i,j in ipairs(group) do
-			-- 			if app.RecursiveUnobtainableFilter(j) then
-			-- 				tinsert(regroup, j);
-			-- 			end
-			-- 		end
-			-- 	else
-			-- 		for i,j in ipairs(group) do
-			-- 			if app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
-			-- 				tinsert(regroup, j);
-			-- 			end
-			-- 		end
-			-- 	end
-			-- 	group = regroup;
-			-- end
 			if #group > 0 then
 				-- collect descriptions from all search groups and insert into the info for the search
 				if app.Settings:GetTooltipSetting("Descriptions") and paramA ~= "encounterID" and paramA ~= "currencyID" then
@@ -2988,26 +2969,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				insertionSort(group, function(a, b)
 					return not (a.headerID and a.headerID == -1) and b.headerID and b.headerID == -1;
 				end);
-				-- don't think we want this logic anymmore either... it basically changes our search of actual NPC groups into a search for the items for that NPC
-				-- and messes up logic later down the line
-				-- for i,j in ipairs(group) do
-				-- 	print("regroup",j.key,j.key and j[j.key])
-				-- 	-- always include the root quest/item when it's contained
-				-- 	if j.questID or j.itemID then
-				-- 		print("quest or item")
-				-- 		tinsert(subgroup, j);
-				-- 	elseif j.g and not (j.achievementID and j.parent.difficultyID) and j.headerID ~= 0 then
-				-- 		print("special with sub groups")
-				-- 		for k,l in ipairs(j.g) do
-				-- 			print("moving into search group", l.key,l.key and l[l.key])
-				-- 			tinsert(subgroup, l);
-				-- 		end
-				-- 	else
-				-- 		print("other")
-				-- 		tinsert(subgroup, j);
-				-- 	end
-				-- end
-				-- group = subgroup;
 			end
 		end
 	elseif paramA == "achievementID" then
@@ -3168,6 +3129,11 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 			-- Show the unobtainable source text, if necessary.
 			if sourceGroup then
+				-- Description for Items
+				if sourceGroup.description and app.Settings:GetTooltipSetting("Descriptions") then
+					tinsert(info, 1, { left = sourceGroup.description, wrap = true, color = "ff66ccff" });
+				end
+
 				if sourceGroup.u and (not sourceGroup.crs or paramA == "itemID" or paramA == "sourceID") then
 					tinsert(info, { left = L["UNOBTAINABLE_ITEM_REASONS"][sourceGroup.u][2] });
 				end
@@ -3654,11 +3620,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		end
 	end
 
-	-- Creature/Encounter Descriptions are handled already
-	if group.description and app.Settings:GetTooltipSetting("Descriptions") and not (group.speciesID or group.creatureID or group.encounterID or paramA == "achievementID" or paramA == "titleID") then
-		tinsert(info, 1, { left = group.description, wrap = true, color = "ff66ccff" });
-	end
-
 	if group.isLimited then
 		tinsert(info, 1, { left = L.LIMITED_QUANTITY, wrap = false, color = "ff66ccff" });
 	end
@@ -3675,15 +3636,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 	end
 
 	if topLevelSearch and group.g and #group.g > 0 then
-		--[[
-		if app.Settings:GetTooltipSetting("Descriptions") and not (paramA == "achievementID" or paramA == "titleID") then
-			for i,j in ipairs(group.g) do
-				if j.description and ((j[paramA] and j[paramA] == paramB) or (paramA == "itemID" and group.key == j.key)) then
-					tinsert(info, 1, { left = j.description, wrap = true, color = "ff66ccff" });
-				end
-			end
-		end
-		]]--
 		if app.Settings:GetTooltipSetting("SummarizeThings") then
 			local entries, left, right = {};
 			-- app.DEBUG_PRINT = "CONTAINS-" .. group.key .. group[group.key];
@@ -3786,19 +3738,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 
 	-- If there was any informational text generated, then attach that info.
 	if #info > 0 then
-		-- not sure it's necessary or useful in most situations to try cleaning unqiue entries by name
-		-- putting this back due to descriptions, ugh
-		-- descriptions are cleaned when found instead of cleaning all info at the end, so hopefully don't need this done here anymore
-		-- local uniques, dupes = {}, {};
-		-- for i,item in ipairs(info) do
-		-- 	if not item.left then
-		-- 		tinsert(uniques, item);
-		-- 	elseif not dupes[item.left] then
-		-- 		dupes[item.left] = true;
-		-- 		tinsert(uniques, item);
-		-- 	end
-		-- end
-
 		group.tooltipInfo = info;
 		for i,item in ipairs(info) do
 			if item.color then item.a, item.r, item.g, item.b = HexToARGB(item.color); end
