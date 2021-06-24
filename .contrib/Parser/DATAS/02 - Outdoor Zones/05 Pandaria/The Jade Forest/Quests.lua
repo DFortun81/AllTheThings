@@ -1393,7 +1393,7 @@ _.Zones =
 					["coord"] = { 50.4, 88.2, 371 },
 				}),
 				q(32461, {	-- The Order of the Cloud Serpent
-					["description"] = "Need to loot a Cloud Serpent without going to The Order of the Cloud Serpent",
+					["description"] = "Need to loot a Cloud Serpent without going to The Order of the Cloud Serpent.",
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(90, 10, 90),
 					["timeline"] = {

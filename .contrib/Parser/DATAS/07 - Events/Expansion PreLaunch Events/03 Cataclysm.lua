@@ -70,68 +70,67 @@ _.WorldEvents =
 					})),
 					un(REMOVED_FROM_GAME, ach(4790, {	-- Zalazane's Fall
 						["collectible"] = false,
-						["groups"] = sharedData({ ["races"] = HORDE_ONLY_ONLY }, {
+						["groups"] = sharedData({ ["races"] = HORDE_ONLY }, {
 							q(26951, {	-- Cleanup on Isle E.
 								["u"] = REMOVED_FROM_GAME,
 							}),
 							q(25444, {	-- Da Perfect Spies
-								["u"] = REMOVED_FROM_GAME,
 								["timeline"] = {
 									"added 3.3.3.11573",
 									"removed 4.0.1.10000",
-								},								
+								},
 							}),
 							q(25480, {	-- Dance Of De Spirits
-								["u"] = REMOVED_FROM_GAME,
 								["sourceQuest"] = 25470,	-- Lady Of Da Tigers
 								["timeline"] = {
 									"added 3.3.3.11573",
 									"removed 4.0.1.10000",
-								},								
-								["groups"] = bubbleDown({["u"] = REMOVED_FROM_GAME}, {
+								},
+								["groups"] = bubbleDown({["timeline"] = {
+									"added 3.3.3.11573",
+									"removed 4.0.1.10000",
+								}}, {
 									i(54653),	-- Darkspear Pride
 								}),
 							}),
 							q(25446, {	-- Frogs Away!
-								["u"] = REMOVED_FROM_GAME,
 								["sourceQuest"] = 25444,	-- Da Perfect Spies
 								["timeline"] = {
 									"added 3.3.3.11573",
 									"removed 4.0.1.10000",
-								},								
+								},
 							}),
 							q(25470, {	-- Lady Of Da Tigers
-								["u"] = REMOVED_FROM_GAME,
 								["sourceQuest"] = 25446,	-- Frogs Away!
 								["timeline"] = {
 									"added 3.3.3.11573",
 									"removed 4.0.1.10000",
-								},								
+								},
 							}),
 							q(25495, {	-- Preparin' For Battle
-								["u"] = REMOVED_FROM_GAME,
 								["sourceQuest"] = 25461,	-- Trollin' For Volunteers
 								["timeline"] = {
 									"added 3.3.3.11573",
 									"removed 4.0.1.10000",
-								},					
+								},
 							}),
 							q(25461, {	-- Trollin' For Volunteers
-								["u"] = REMOVED_FROM_GAME,
 								["sourceQuest"] = 25480,	-- Dance Of De Spirits
 								["timeline"] = {
 									"added 3.3.3.11573",
 									"removed 4.0.1.10000",
-								},								
+								},
 							}),
 							q(25445, {	-- Zalazane's Fall
-								["u"] = REMOVED_FROM_GAME,
 								["sourceQuest"] = 25495,	-- Preparin' For Battle
 								["timeline"] = {
 									"added 3.3.3.11573",
 									"removed 4.0.1.10000",
-								},								
-								["groups"] = bubbleDown({["u"] = REMOVED_FROM_GAME}, {
+								},
+								["groups"] = bubbleDown({["timeline"] = {
+									"added 3.3.3.11573",
+									"removed 4.0.1.10000",
+								}}, {
 									i(54617),	-- Darkspear Shroud
 								}),
 							}),
