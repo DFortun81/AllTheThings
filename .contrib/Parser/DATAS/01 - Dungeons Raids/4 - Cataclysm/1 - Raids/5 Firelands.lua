@@ -58,27 +58,27 @@ _.Instances = { tier(4, {	-- Cataclysm
 					q(29135, {	-- All-Seeing Eye
 						["provider"] = { "n", 15192 },	-- Anachronos
 						["sourceQuests"] = { 29134 },	-- A Wrinkle in Time
-						["g"] = {
-							i(71141, {	-- Eternal Ember
-								["description"] = "Need 25 of these for the All-Seeing Eye quest.",
-								["questID"] = 29135,
-								["crs"] = {
-									53691,	-- Shannox
-									52498,	-- Beth'tilac <The Red Widow>
-									52530,	-- Alysrazor
-									52558,	-- Lord Rhyolith
-									53494,	-- Baleroc <The Gatekeeper>
-									52571,	-- Majordomo Staghelm <Archdruid of the Flame>
-									52409,	-- Ragnaros
-								},
+						["groups"] = {
+							objective(1, {
+								i(71141, {	-- Eternal Ember
+									["crs"] = {
+										53691,	-- Shannox
+										52498,	-- Beth'tilac <The Red Widow>
+										52530,	-- Alysrazor
+										52558,	-- Lord Rhyolith
+										53494,	-- Baleroc <The Gatekeeper>
+										52571,	-- Majordomo Staghelm <Archdruid of the Flame>
+										52409,	-- Ragnaros
+									},
+								}),
 							}),
-							i(65893, {	-- Sands of Time
-								["description"] = "Need 3 of these for the All-Seeing Eye quest.",
-								["questID"] = 29135,
-								["crs"] = {
-									61650,	-- Big Keech <Rare Antiquities>
-									49406,	-- Yasmin <Innkeeper>
-								},
+							objective(2, {
+								i(65893, {	-- Sands of Time
+									["crs"] = {
+										61650,	-- Big Keech <Rare Antiquities>
+										49406,	-- Yasmin <Innkeeper>
+									},
+								}),
 							}),
 						},
 					}),
