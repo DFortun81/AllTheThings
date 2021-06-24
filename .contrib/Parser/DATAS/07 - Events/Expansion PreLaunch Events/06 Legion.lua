@@ -242,10 +242,14 @@ _.WorldEvents =
 						}),
 						q(43298),	-- Defend (Azshara)
 						q(43291),	-- Defend (Dun Morogh)
-						q(43296),	-- Defend (RHillsbrad Foothills)
+						q(43296),	-- Defend (Hillsbrad Foothills)
+						q(43289), 	-- Defend (Northern Barrens)
+						q(43293), 	-- Defend (Tanaris)
 						q(43299),	-- Demon Commander (Azshara)
 						q(43283),	-- Demon Commander (Dun Morogh)
 						q(43286),	-- Demon Commander (Hillsbrad Foothills)
+						-- try to find ID for Demon Commander (Northern Barrens)
+						q(43243), 	-- Demon Commander (Tanaris)
 						q(40755, {	-- Hiding in the Stacks
 							["provider"] = { "n", 101547 },	-- Archmage Khadgar
 							["sourceQuests"] = { 42970 },	-- The Diamond King
@@ -273,16 +277,12 @@ _.WorldEvents =
 						q(43300),	-- Repel (Azshara)
 						q(43292),	-- Repel (Dun Morogh)
 						q(43297),	-- Repel (Hillsbrad Foothills)
+						q(43290), 	-- Repel (Northern Barrens)
+						q(43294), 	-- Repel (Tanaris)
 						q(42970, {	-- The Diamond King
 							["provider"] = { "n", 113655 },	-- Brann Bronzebeard
 							["sourceQuests"] = { 40717, 40718 },	-- Calling of the Council
 						}),
-						--q(43289),	-- Defend
-						--q(43294),	-- Repel
-						--q(43290),	-- Repel
-						-- Tanaris:
-						--q(43293),	-- Defend (possibly LEGACY - Legion pre-patch)
-						--q(43243),	-- Demon Commander (possibly LEGACY - Legion pre-patch)
 					})),
 					n(VENDORS, {
 						n(109912, bubbleDown({["u"] = REMOVED_FROM_GAME}, {	-- Captive Wyrmtongue <Reluctant 'Quartermaster'>

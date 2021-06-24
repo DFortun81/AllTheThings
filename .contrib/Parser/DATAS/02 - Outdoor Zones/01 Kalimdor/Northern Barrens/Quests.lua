@@ -1036,3 +1036,9 @@ _.Zones =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(29091),	-- Freedom Movement
+		q(29096),	-- Mor'shan Caravan Pick-Up
+	}),
+});
