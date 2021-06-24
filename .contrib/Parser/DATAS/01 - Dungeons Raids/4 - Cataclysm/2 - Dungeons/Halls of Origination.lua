@@ -249,3 +249,6 @@ _.Instances = { tier(4, {	-- Cataclysm
 		},
 	}),
 })};
+_.HiddenQuestTriggers = {
+	q(35415),	-- Reward for killing Anraphet
+};
