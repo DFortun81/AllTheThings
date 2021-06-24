@@ -15602,6 +15602,8 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 				});
 				BuildGroups(self.data, self.data.g);
 			end
+			-- Make sure to scroll to the top when being rebuilt
+			self.ScrollBar:SetValue(1);
 			return true;
 		end
 		local function OpenMiniList(id, show)
