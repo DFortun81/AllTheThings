@@ -1589,7 +1589,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(172714),	-- Corrupted Gladiator's Silk Armor (H)
 			i(172690),	-- Corrupted Gladiator's Silk Cap (H)
 			i(172738),	-- Corrupted Gladiator's Silk Shoulderguards (H)
-			
 		}),
 		n(-44, {	-- Leather
 			i(166637),	-- Sinister Gladiator's Leather Harness (A)
