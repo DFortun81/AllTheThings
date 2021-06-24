@@ -498,6 +498,12 @@ _.Zones =
 						i(178335, {	-- Sinful Aspirant's Pendant
 							["cost"] = { { "c", 1792, 525 } },
 						}),
+						i(185834, {	-- Orboreal Distinguishment
+							["cost"] = { { "c", 1792, 2000 } },
+							["g"] = {
+								i(137642),	-- Mark of Honor
+							},
+						}),
 					},
 				}),
 				n(167881, {	-- Ta'lan the Antiquary <Cartel Ta>
