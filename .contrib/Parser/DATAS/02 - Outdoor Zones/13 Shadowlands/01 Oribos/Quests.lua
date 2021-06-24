@@ -767,3 +767,7 @@ _.Zones =
 		}),
 	}),
 };
+
+_.HiddenQuestTriggers = {
+	q(63416),	-- triggers when accepting the first of your 'Zone Meta Quests' on a Skip Character
+};

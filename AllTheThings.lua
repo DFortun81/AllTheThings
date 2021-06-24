@@ -3937,7 +3937,7 @@ app.BuildCost = function(group)
 				["description"] = L["COST_DESC"],
 				["icon"] = "Interface\\Icons\\INV_Misc_Coin_02",
 				["OnUpdate"] = app.AlwaysShowUpdate,
-				["g"] = { },
+				["g"] = {},
 			};
 		local costItem;
 		for i,c in ipairs(group.cost) do
@@ -3962,8 +3962,46 @@ app.BuildCost = function(group)
 				MergeObject(costGroup.g, costItem);
 			end
 		end
-		if not group.g then group.g = {}; end
-		tinsert(group.g, 1, costGroup);
+		if not group.g then group.g = { costGroup };
+		else tinsert(group.g, 1, costGroup); end
+	end
+end
+-- Builds a 'Source' group from the sourceParent or parent of the group and lists it under the group itself for
+-- visibility in popouts
+app.BuildSourceParent = function(group)
+	if group.sourceParent or group.parent then
+		local parent = group.sourceParent or group.parent;
+		-- only show certain types of parents as sources.. typically 'Game World Things'
+		if parent.key
+			and (parent.key == "npcID"
+				or parent.key == "creatureID"
+				or parent.key == "itemID"
+				or parent.key == "s"
+				or parent.key == "questID"
+				or parent.key == "encounterID"
+				or parent.key == "mapID")
+			and parent[parent.key] then
+			local sourceGroup = {
+				["text"] = L["SOURCES"],
+				["description"] = L["SOURCES_DESC"],
+				["icon"] = "Interface\\Icons\\inv_misc_spyglass_02",
+				["OnUpdate"] = app.AlwaysShowUpdate,
+				["g"] = {},
+			};
+			local sources = app.SearchForLink(parent.key .. ":" .. parent[parent.key]);
+			if sources then
+				local clonedSource;
+				for _,source in pairs(sources) do
+					clonedSource = CloneData(source);
+					clonedSource.g = nil;
+					clonedSource.collectible = false;
+					clonedSource.OnUpdate = app.AlwaysShowUpdate;
+					MergeObject(sourceGroup.g, clonedSource);
+				end
+				if not group.g then group.g = { sourceGroup };
+				else tinsert(group.g, 1, sourceGroup); end
+			end
+		end
 	end
 end
 -- check for orphaned currency groups and fill them with things purchased by that currency
@@ -12341,8 +12379,11 @@ function app:CreateMiniListForGroup(group)
 		-- 		group = CloneData(group);
 		-- 	end
 		-- end
+		-- if popping out a thing with a sourced parent, generate a Source group to allow referencing the Source of the thing directly
+		app.BuildSourceParent(group);
 		-- if popping out a thing with a Cost, generate a Cost group to allow referencing the Cost things directly
-		if group.cost then app.BuildCost(group); end
+		app.BuildCost(group);
+
 		popout = app:GetWindow(suffix);
 		-- popout.shouldFullRefresh = true;
 		-- custom Update method for the popout so we don't have to force refresh

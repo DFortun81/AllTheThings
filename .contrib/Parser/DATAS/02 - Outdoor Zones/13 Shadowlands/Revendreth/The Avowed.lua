@@ -285,6 +285,7 @@ _.Zones =
 							}),
 							n(159088, {	-- Bored Dredger
 								["description"] = "There is a chance to find this vendor when opening a crypt with an |cFFFFFFFFAtonement Crypt Key|r.\n\nHe runs away shortly after exiting the crypt, so make your purchases quickly!",
+								["sourceQuests"] = { 57928 },	-- Atonement Crypt Key
 								["g"] = {
 									i(177231, {	-- Crown of Honor
 										["questID"] = 59682,
