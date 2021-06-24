@@ -15531,8 +15531,8 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 				end
 			end
 
-			-- If we don't have any map data on this area and it exists in game, report it to the chat window.
-			if not results or not results.g or #results.g < 1 then
+			-- If we don't have any data cached for this mapID and it exists in game, report it to the chat window.
+			if not results then
 				local mapID = self.mapID;
 				local mapInfo = C_Map_GetMapInfo(mapID);
 				if mapInfo then
