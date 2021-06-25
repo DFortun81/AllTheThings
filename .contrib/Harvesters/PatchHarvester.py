@@ -2,8 +2,8 @@ import logging
 import os.path
 import re
 import sys
-import traceback
 import time
+import traceback
 
 import requests
 from bs4 import BeautifulSoup
