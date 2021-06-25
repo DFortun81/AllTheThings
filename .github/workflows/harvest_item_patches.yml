@@ -25,6 +25,7 @@ jobs:
       - name: Harvest items
         working-directory: .contrib/Harvesters
         timeout-minutes: 1
+        continue-on-error: true
         run: |
           python ItemPatchHarvester.py
 
