@@ -37,28 +37,6 @@ _.NeverImplemented =
 		i(181817),	-- Deathbringer's Flayedwing
 		-- Gear
 		i(171401),	-- Phaeweald Rapier
-		i(175999),	-- Sinful Gladiator's Greatbow (existed in beta; doesn't appear to exist in live)
-		i(176002),	-- Sinful Gladiator's Polearm (existed in beta; doesn't appear to exist in live)
-		i(176003),	-- Sinful Gladiator's Spellstaff (existed in beta; doesn't appear to exist in live)
-		i(178389),	-- Sinful Gladiator's Recurve (existed in beta; doesn't appear to exist in live)
-		i(178392),	-- Sinful Gladiator's Halberd (existed in beta; doesn't appear to exist in live)
-		i(178393),	-- Sinful Gladiator's Spire (existed in beta; doesn't appear to exist in live)
-		i(183403),	-- Sinful Gladiator's Battlehammer (existed in beta; doesn't appear to exist in live)
-		i(183406),	-- Sinful Gladiator's Greatmaul (existed in beta; doesn't appear to exist in live)
-		i(183404),	-- Sinful Gladiator's Spellblade (existed in beta; doesn't appear to exist in live)
-		i(183405),	-- Sinful Gladiator's Mageblade (existed in beta; doesn't appear to exist in live)
-		i(175998),	-- Sinful Gladiator's Axe (existed in beta; doesn't appear to exist in live)
-		i(176000),	-- Sinful Gladiator's Blade (existed in beta; doesn't appear to exist in live)
-		i(176004),	-- Sinful Gladiator's Sword (existed in beta; doesn't appear to exist in live)
-		i(176009),	-- Sinful Gladiator's Warglaive (existed in beta; doesn't appear to exist in live)
-		i(178388),	-- Sinful Gladiator's Handaxe (existed in beta; doesn't appear to exist in live)
-		i(178390),	-- Sinful Gladiator's Dagger (existed in beta; doesn't appear to exist in live)
-		i(178394),	-- Sinful Gladiator's Saber (existed in beta; doesn't appear to exist in live)
-		i(178399),	-- Sinful Gladiator's Slicer (existed in beta; doesn't appear to exist in live)
-		i(176007),	-- Sinful Gladiator's Shield (existed in beta; doesn't appear to exist in live)
-		i(176008),	-- Sinful Gladiator's Focus (existed in beta; doesn't appear to exist in live)
-		i(178397),	-- Sinful Gladiator's Aegis (existed in beta; doesn't appear to exist in live)
-		i(178398),	-- Sinful Gladiator's Goblet (existed in beta; doesn't appear to exist in live)
 		i(175941),	-- Spiritual Alchemy Stone (171323 is the version in game)
 		i(175942),	-- Spiritual Alchemy Stone (171323 is the version in game)
 		i(175943),	-- Spiritual Alchemy Stone (171323 is the version in game)
@@ -210,11 +188,6 @@ _.NeverImplemented =
 				i(96264),	-- Leggings of the Chromatic Hydra
 				i(96265),	-- Robes of the Chromatic Hydra
 				i(96266),	-- Mantle of the Chromatic Hydra
-				i(88251),	-- Gladiator's Silk Amice
-				i(88252),	-- Gladiator's Silk Cowl
-				i(88253),	-- Gladiator's Silk Handguards
-				i(88254),	-- Gladiator's Silk Robe
-				i(88255),	-- Gladiator's Silk Trousers
 			}),
 			cl(PRIEST, {
 				i(46230),	-- Circlet of Sanctification
@@ -227,21 +200,11 @@ _.NeverImplemented =
 				i(46257),	-- Rainments of Sanctification
 				i(46258),	-- Robe of Sanctification
 				i(46259),	-- Shoulderpads of Sanctification
-				i(88241),	-- Gladiator's Satin Gloves
-				i(88242),	-- Gladiator's Satin Hood
-				i(88243),	-- Gladiator's Satin Leggings
-				i(88244),	-- Gladiator's Satin Mantle
-				i(88245),	-- Gladiator's Satin Robe
 				i(48745),	-- Velen's Cowl
 				i(48746),	-- Velen's Gloves
 				i(48747),	-- Velen's Leggings
 				i(48748),	-- Velen's Robe
 				i(48749),	-- Velen's Shoulderpads
-				i(88221),	-- Gladiator's Mooncloth Gloves
-				i(88222),	-- Gladiator's Mooncloth Helm
-				i(88223),	-- Gladiator's Mooncloth Leggings
-				i(88224),	-- Gladiator's Mooncloth Mantle
-				i(88225),	-- Gladiator's Mooncloth Robe
 				i(48750),	-- Zabra's Cowl of Conquest
 				i(48751),	-- Zabra's Gloves of Conquest
 				i(48752),	-- Zabra's Leggings of Conquest
@@ -817,22 +780,6 @@ _.NeverImplemented =
 			i(159175),	-- Mistfall Belt
 			i(159180),	-- Mistfall Legguards
 			i(159178),	-- Mistfall Boots
-			i(166946),	-- Dread Gladiator's Leather Tunic
-			i(166947),	-- Dread Gladiator's Leather Boots
-			i(166948),	-- Dread Gladiator's Leather Gloves
-			i(166949),	-- Dread Gladiator's Leather Helm
-			i(166950),	-- Dread Gladiator's Leather Legguards
-			i(166951),	-- Dread Gladiator's Leather Spaulders
-			i(166952),	-- Dread Gladiator's Leather Belt
-			i(166953),	-- Dread Gladiator's Leather Bindings
-			i(166915),	-- Dread Gladiator's Leather Tunic
-			i(166916),	-- Dread Gladiator's Leather Boots
-			i(166917),	-- Dread Gladiator's Leather Gloves
-			i(166918),	-- Dread Gladiator's Leather Helm
-			i(166919),	-- Dread Gladiator's Leather Legguards
-			i(166920),	-- Dread Gladiator's Leather Spaulders
-			i(166921),	-- Dread Gladiator's Leather Belt
-			i(166922),	-- Dread Gladiator's Leather Bindings
 			i(163436),	-- Honorbound Outrider's Faceguard
 			i(163433),	-- Honorbound Outrider's Mantle
 			i(163440),	-- Honorbound Outrider's Belt
@@ -991,37 +938,7 @@ _.NeverImplemented =
 				i(32150),	-- Chancellor's Ringmail Headpiece
 				i(32151),	-- Chancellor's Ringmail Legguards
 				i(32152),	-- Chancellor's Ringmail Shoulders
-				i(64961),	-- Gladiator's Linked Gauntlets
-				i(64960),	-- Gladiator's Linked Helm
-				i(64959),	-- Gladiator's Linked Leggings
-				i(64958),	-- Gladiator's Linked Spaulders
-				i(64962),	-- Gladiator's Linked Armor
-				i(65156),	-- Gladiator's Mail Armor
-				i(65155),	-- Gladiator's Mail Gauntlets
-				i(65154),	-- Gladiator's Mail Helm
-				i(65153),	-- Gladiator's Mail Leggings
-				i(65152),	-- Gladiator's Mail Sppaulders
-				i(65151),	-- Gladiator's Ringmail Armor
-				i(65150),	-- Gladiator's Ringmail Gauntlets
-				i(65149),	-- Gladiator's Ringmail Helm
-				i(65148),	-- Gladiator's Ringmail Leggings
-				i(65147),	-- Gladiator's Ringmail Spaulders
 				-- MoP Version
-				i(88212),	-- Gladiator's Linked Gauntlets
-				i(88213),	-- Gladiator's Linked Helm
-				i(88214),	-- Gladiator's Linked Leggings
-				i(88215),	-- Gladiator's Linked Spaulders
-				i(88211),	-- Gladiator's Linked Armor
-				i(88216),	-- Gladiator's Mail Armor
-				i(88217),	-- Gladiator's Mail Gauntlets
-				i(88218),	-- Gladiator's Mail Helm
-				i(88219),	-- Gladiator's Mail Leggings
-				i(88220),	-- Gladiator's Mail Sppaulders
-				i(88236),	-- Gladiator's Ringmail Armor
-				i(88237),	-- Gladiator's Ringmail Gauntlets
-				i(88238),	-- Gladiator's Ringmail Helm
-				i(88239),	-- Gladiator's Ringmail Leggings
-				i(88240),	-- Gladiator's Ringmail Spaulders
 				i(46293),	-- Worldbreaker Chestguard
 				i(46294),	-- Worldbreaker Faceguard
 				i(46295),	-- Worldbreaker Gloves
@@ -1182,16 +1099,6 @@ _.NeverImplemented =
 				i(48821),	-- Windrunner's Legguards
 				i(48822),	-- Windrunner's Spaulders
 				i(48823),	-- Windrunner's Tunic
-				i(88181),	-- Gladiator's Chain Armor
-				i(88182),	-- Gladiator's Chain Gauntlets
-				i(88183),	-- Gladiator's Chain Helm
-				i(88184),	-- Gladiator's Chain Leggings
-				i(88185),	-- Gladiator's Chain Spaulders
-				i(64992),	-- Gladiator's Chain Armor
-				i(64991),	-- Gladiator's Chain Gauntlets
-				i(64990),	-- Gladiator's Chain Helm
-				i(64989),	-- Gladiator's Chain Leggings
-				i(64988),	-- Gladiator's Chain Spaulders
 				i(46274),	-- Scourgestalker Headpiece
 				i(51707),	-- Ahn'kahar Blood Hunter's Tunic
 				i(51708),	-- Ahn'kahar Blood Hunter's Spaulders
@@ -1237,22 +1144,6 @@ _.NeverImplemented =
 			i(179859),	-- Ardenweald Covenant Mail Hand
 			i(179860),	-- Ardenweald Covenant Mail Feet
 			i(179861),	-- Ardenweald Covenant Mail Chest
-			i(166954),	-- Dread Gladiator's Chain Armor
-			i(166955),	-- Dread Gladiator's Chain Sabatons
-			i(166956),	-- Dread Gladiator's Chain Gauntlets
-			i(166957),	-- Dread Gladiator's Chain Helm
-			i(166958),	-- Dread Gladiator's Chain Leggings
-			i(166959),	-- Dread Gladiator's Chain Spaulders
-			i(166960),	-- Dread Gladiator's Chain Waistguard
-			i(166961),	-- Dread Gladiator's Chain Armbands
-			i(166923),	-- Dread Gladiator's Chain Armor
-			i(166924),	-- Dread Gladiator's Chain Sabatons
-			i(166925),	-- Dread Gladiator's Chain Gauntlets
-			i(166926),	-- Dread Gladiator's Chain Helm
-			i(166927),	-- Dread Gladiator's Chain Leggings
-			i(166928),	-- Dread Gladiator's Chain Spaulders
-			i(166929),	-- Dread Gladiator's Chain Waistguard
-			i(166930),	-- Dread Gladiator's Chain Armbands
 			i(179830),	-- Ardenweald Covenant Mail Chest
 			i(179831),	-- Ardenweald Covenant Mail Feet
 			i(179832),	-- Ardenweald Covenant Mail Hand
@@ -1994,7 +1885,6 @@ _.NeverImplemented =
 			i(108819),	-- Unknown
 			i(109267),	-- Unknown
 			i(33197),	-- Mossy Necklace
-			i(153484),	-- Fierce Combatant's Necklace
 			i(109293),	-- Unknown
 			i(109295),	-- Unknown
 			i(31930),	-- Unknown
@@ -3944,7 +3834,6 @@ _.NeverImplemented =
 			i(108789),   	-- Unknown
 			i(109361),   	-- Unknown
 			i(157639),	-- Spiritbreaker Talons
-			i(105955),	-- Wrathful Gladiator's Razor (Elite, added in 5.4 ????)
 			i(109535),   	-- Unknown
 			i(109534),   	-- Unknown
 			i(165269),	-- unknown
@@ -3985,9 +3874,6 @@ _.NeverImplemented =
 			i(177728),	--
 			i(177729),	--
 			i(177730),	--
-			i(42523),	-- Savage Gladiator's Endgame
-			i(42529),	-- Savage Gladiator's Reprieve
-			i(42535),	-- Savage Gladiator's Grimoire
 			i(93440),	-- Crafted Dreadful Gladiator's Endgame
 			i(93450),	-- Crafted Dreadful Gladiator's Reprieve
 			i(159941),	-- Unknown
@@ -4007,9 +3893,7 @@ _.NeverImplemented =
 			i(68050),	-- Shatterscale Mightfish
 			i(49456),	-- Will of the Earth
 			i(50251),	-- Unknown
-			i(180460),	-- Primal Combatant's Decapitator
 			i(115292),	-- spectral axe
-			i(42214),	-- Savage Gladiator's Waraxe
 			i(108779),	-- Unknown
 			i(108780),	-- Unknown
 			i(108781),	-- Unknown
@@ -4099,7 +3983,6 @@ _.NeverImplemented =
 		}),
 		n(-343,	{	-- Polearms
 			i(158504),	-- Whaler's Pike
-			i(165036),	-- Sinister Gladiator's Halberd (A)
 			i(158563),	-- Tomb-Rustler's Polearm
 			i(108797),	-- Unknown
 			i(108798),	-- Unknown
@@ -4340,9 +4223,6 @@ _.NeverImplemented =
 		--
 		i(159538),	-- Coldscale Cudgel
 		i(159498),	-- Coldscale Pistol
-		i(111076),	-- Primal Gladiator's Staff (H), none elite
-		i(115603),	-- Primal Gladiator's Staff (A), none elite
-		i(115854),	-- Primal Gladiator's Staff
 		i(159586),	-- Coralshell Blade
 		i(159559),	-- Coralshell Halberd
 		i(159513),	-- Deepwarden Fangs
@@ -4429,7 +4309,6 @@ _.NeverImplemented =
 		i(84086),	-- Dreadwaste Diviner's Rod
 		i(84527),	-- Hidden Pass Meditation Staff
 		i(85588), 	-- Reflex Edges [This version never implemented]
-		i(105956), 	-- Wrath Gladiator's Razor [Not implemented, other version was instead]
 		i(117010),	-- Forester's Axe 										(Never added in Game)
 		i(120272), 	-- High Warlord's Razor [This version never implemented]
 		i(120273), 	-- High Warlord's Razor [This version never implemented]

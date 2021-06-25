@@ -4264,34 +4264,77 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(64860),	-- Bloodthirsty Gladiator's Staff (Epic BG Item, never made it out of beta)
 				i(64861),	-- Bloodthirsty Gladiator's Touch of Defeat
 			}),
-			n(-322, {
+			cl(DEATHKNIGHT, {
+				i(64978),	-- Gladiator's Dreadplate Shoulders
+				i(64979),	-- Gladiator's Dreadplate Legguards
+				i(64980),	-- Gladiator's Dreadplate Helm
+				i(64981),	-- Gladiator's Dreadplate Gauntlets
+				i(64982),	-- Gladiator's Dreadplate Chestpiece
+			}),
+			cl(PALADIN, {
+				i(64933),	-- Gladiator's Scaled Shoulders
+				i(64934),	-- Gladiator's Scaled Legguards
+				i(64935),	-- Gladiator's Scaled Helm
+				i(64936),	-- Gladiator's Scaled Gauntlets
+				i(64937),	-- Gladiator's Scaled Chestpiece
+				i(64948),	-- Gladiator's Ornamented Spaulders
+				i(64949),	-- Gladiator's Ornamented Legplates
+				i(64950),	-- Gladiator's Ornamented Headcover
+				i(64951),	-- Gladiator's Ornamented Gloves
+				i(64952),	-- Gladiator's Ornamented Chestguard
+			}),
+			cl(SHAMAN, {
+				i(64961),	-- Gladiator's Linked Gauntlets
+				i(64960),	-- Gladiator's Linked Helm
+				i(64959),	-- Gladiator's Linked Leggings
+				i(64958),	-- Gladiator's Linked Spaulders
+				i(64962),	-- Gladiator's Linked Armor
+				i(65156),	-- Gladiator's Mail Armor
+				i(65155),	-- Gladiator's Mail Gauntlets
+				i(65154),	-- Gladiator's Mail Helm
+				i(65153),	-- Gladiator's Mail Leggings
+				i(65152),	-- Gladiator's Mail Sppaulders
+				i(65151),	-- Gladiator's Ringmail Armor
+				i(65150),	-- Gladiator's Ringmail Gauntlets
+				i(65149),	-- Gladiator's Ringmail Helm
+				i(65148),	-- Gladiator's Ringmail Leggings
+				i(65147),	-- Gladiator's Ringmail Spaulders
+			}),
+			cl(WARRIOR, {
+				i(64943),	-- Gladiator's Plate Shoulders
+				i(64944),	-- Gladiator's Plate Legguards
+				i(64945),	-- Gladiator's Plate Helm
+				i(64946),	-- Gladiator's Plate Gauntlets
+				i(64947),	-- Gladiator's Plate Chestpiece
+			}),
+			n(-322, {	-- Back
 				i(60782),	-- Vicious Gladiator's Cloak of Conquest
 				i(60784),	-- Vicious Gladiator's Cloak of Dominance
 				i(60785),	-- Vicious Gladiator's Cloak of Dominance
 				
 			}),
-			n(-326, {
+			n(-326, {	-- Wrist
 				i(60585),	-- Vicious Gladiator's Armwraps of Dominance
 				i(60608),	-- Vicious Gladiator's Armwraps of Dominance
 				i(60588),	-- Vicious Gladiator's Armwraps of Triumph
 				i(60597),	-- Vicious Gladiator's Armwraps of Triumph
 				i(60598),	-- Vicious Gladiator's Armwraps of Triumph
 			}),
-			n(-328, {
+			n(-328, {	-- Waist
 				i(60606),	-- Vicious Gladiator's Belt of Dominance
 				i(60609),	-- Vicious Gladiator's Belt of Dominance
 			}),
-			n(-330, {
+			n(-330, {	-- Feet
 				i(60584),	-- Vicious Gladiator's Boots of Dominance
 				i(60590),	-- Vicious Gladiator's Boots of Triumph
 				i(60610),	-- Vicious Gladiator's Boots of Dominance
 			}),
-			f(51, {
+			f(51, {	-- Neck
 				i(60666), 	-- Vicious Gladiator's Pendant of Conquest
 			}),
 		}),
-		n(-673, {
-			n(-662, {
+		n(-673, {	-- Ruthless Gladiator: Season 10
+			n(-662, {	-- Elite
 				i(146483),	-- Ensemble: Elite Ruthless Gladiator's Dreadplate Armor
 				i(146481),	-- Ensemble: Elite Ruthless Gladiator's Dragonhide Armor
 				i(146479),	-- Ensemble: Elite Ruthless Gladiator's Chain Armor
@@ -4304,8 +4347,8 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(146489),	-- Ensemble: Elite Ruthless Gladiator's Plate Armor
 			}),
 		}),
-		n(-674, {
-			n(-662, {
+		n(-674, {	-- Cataclysmic Gladiator: Season 11
+			n(-662, {	-- Elite
 				i(146463),	-- Ensemble: Elite Cataclysmic Gladiator's Dreadplate Armor
 				i(146461),	-- Ensemble: Elite Cataclysmic Gladiator's Dragonhide Armor
 				i(146459),	-- Ensemble: Elite Cataclysmic Gladiator's Chain Armor

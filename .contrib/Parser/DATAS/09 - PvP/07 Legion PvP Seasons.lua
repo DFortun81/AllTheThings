@@ -12287,3 +12287,13 @@ _.PVP =
 		}),
 	})),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-9982, {	-- Legion
+		n(-686, {	-- Fierce Gladiator: Legion Season 5
+			f(51, {	-- Neck
+				i(153484),	-- Fierce Combatant's Necklace
+			}),
+		}),
+	}),
+});
+		

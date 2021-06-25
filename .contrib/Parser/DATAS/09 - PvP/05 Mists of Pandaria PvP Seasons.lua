@@ -10313,10 +10313,9 @@ _.PVP =
 
 -- The items never made it in.
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-10041, {
-		n(-675, {
+	n(-10041, {	-- Mists of Pandaria
+		n(-675, {	-- Malevolent Gladiator: Season 12
 			n(-319, {	-- Weapons
-				-- Season 12
 				i(84714),	-- Dreadful Gladiator's Barrier
 				i(84704),	-- Dreadful Gladiator's Baton of Light
 				i(84723),	-- Dreadful Gladiator's Battle Staff
@@ -10349,17 +10348,17 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(84725),	-- Dreadful Gladiator's Staff
 				i(84703),	-- Dreadful Gladiator's Touch of Defeat
 			}),
-			f(52, {
+			f(52, {	-- Finger
 				i(97527),	-- Dreadful Gladiator's Band of Meditation
 				i(97529),	-- Dreadful Gladiator's Band of Meditation
 			}),
-			n(-322, {
+			n(-322, {	-- Back
 				i(97518),	-- Dreadful Gladiator's Drape of Prowess
 			}),
-			f(51, {
+			f(51, {	-- Neck
 				i(97516),	-- Dreadful Gladiator's Pendant of Meditation
 			}),
-			n(-319, {
+			n(-319, {	-- Weapons
 				i(84899),	-- Malevolent Gladiator's Baton of Light
 				i(84897),	-- Malevolent Gladiator's Heavy Crossbow
 				i(85118),	-- Malevolent Gladiator's Shiv
@@ -10373,6 +10372,25 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(94899),	-- Never made to Live. Malevolent Gladiator's Baton of Light
 				i(94898),	-- Never made to Live. Malevolent Gladiator's Touch of Death
 			}),
+			cl(DEATHKNIGHT, {
+				i(88191),	-- Gladiator's Dreadplate Chestpiece
+				i(88192),	-- Gladiator's Dreadplate Gauntlets
+				i(88193),	-- Gladiator's Dreadplate Helm
+				i(88194),	-- Gladiator's Dreadplate Legguards
+				i(88195),	-- Gladiator's Dreadplate Shoulders
+			}),
+			cl(HUNTER, {
+				i(88181),	-- Gladiator's Chain Armor
+				i(88182),	-- Gladiator's Chain Gauntlets
+				i(88183),	-- Gladiator's Chain Helm
+				i(88184),	-- Gladiator's Chain Leggings
+				i(88185),	-- Gladiator's Chain Spaulders
+				i(64992),	-- Gladiator's Chain Armor
+				i(64991),	-- Gladiator's Chain Gauntlets
+				i(64990),	-- Gladiator's Chain Helm
+				i(64989),	-- Gladiator's Chain Leggings
+				i(64988),	-- Gladiator's Chain Spaulders
+			}),
 			cl(MAGE, {
 				i(97925),	-- Malevolent Gladiator's Silk Amice
 				i(97835),	-- Malevolent Gladiator's Silk Amice
@@ -10384,6 +10402,23 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(97837),	-- Malevolent Gladiator's Silk Robe
 				i(97931),	-- Malevolent Gladiator's Silk Trousers
 				i(97841),	-- Malevolent Gladiator's Silk Trousers
+				i(88251),	-- Gladiator's Silk Amice
+				i(88252),	-- Gladiator's Silk Cowl
+				i(88253),	-- Gladiator's Silk Handguards
+				i(88254),	-- Gladiator's Silk Robe
+				i(88255),	-- Gladiator's Silk Trousers
+			}),
+			cl(PALADIN, {
+				i(88226),	-- Gladiator's Ornamented Chestguard
+				i(88227),	-- Gladiator's Ornamented Gloves
+				i(88228),	-- Gladiator's Ornamented Headcover
+				i(88229),	-- Gladiator's Ornamented Legplates
+				i(88230),	-- Gladiator's Ornamented Spaulders
+				i(88246),	-- Gladiator's Scaled Chestpiece
+				i(88247),	-- Gladiator's Scaled Gauntlets
+				i(88248),	-- Gladiator's Scaled Helm
+				i(88249),	-- Gladiator's Scaled Legguards
+				i(88250),	-- Gladiator's Scaled Shoulders
 			}),
 			cl(PRIEST, {
 				i(97515),	-- Malevolent Gladiator's Mooncloth Helm
@@ -10391,36 +10426,70 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(97525),	-- Malevolent Gladiator's Satin Leggings
 				i(97517),	-- Malevolent Gladiator's Satin Mantle
 				i(97520),	-- Malevolent Gladiator's Satin Robe
+				i(88241),	-- Gladiator's Satin Gloves
+				i(88242),	-- Gladiator's Satin Hood
+				i(88243),	-- Gladiator's Satin Leggings
+				i(88244),	-- Gladiator's Satin Mantle
+				i(88245),	-- Gladiator's Satin Robe
+				i(88221),	-- Gladiator's Mooncloth Gloves
+				i(88222),	-- Gladiator's Mooncloth Helm
+				i(88223),	-- Gladiator's Mooncloth Leggings
+				i(88224),	-- Gladiator's Mooncloth Mantle
+				i(88225),	-- Gladiator's Mooncloth Robe
 			}),
-			n(-322, {
+			cl(SHAMAN, {
+				i(88212),	-- Gladiator's Linked Gauntlets
+				i(88213),	-- Gladiator's Linked Helm
+				i(88214),	-- Gladiator's Linked Leggings
+				i(88215),	-- Gladiator's Linked Spaulders
+				i(88211),	-- Gladiator's Linked Armor
+				i(88216),	-- Gladiator's Mail Armor
+				i(88217),	-- Gladiator's Mail Gauntlets
+				i(88218),	-- Gladiator's Mail Helm
+				i(88219),	-- Gladiator's Mail Leggings
+				i(88220),	-- Gladiator's Mail Sppaulders
+				i(88236),	-- Gladiator's Ringmail Armor
+				i(88237),	-- Gladiator's Ringmail Gauntlets
+				i(88238),	-- Gladiator's Ringmail Helm
+				i(88239),	-- Gladiator's Ringmail Leggings
+				i(88240),	-- Gladiator's Ringmail Spaulders
+			}),
+			cl(WARRIOR, {
+				i(88231),	-- Gladiator's Plate Chestpiece
+				i(88232),	-- Gladiator's Plate Gauntlets
+				i(88233),	-- Gladiator's Plate Helm
+				i(88234),	-- Gladiator's Plate Legguards
+				i(88235),	-- Gladiator's Plate Shoulders
+			}),
+			n(-322, {	-- Back
 				i(97926),	-- Malevolent Gladiator's Drape of Prowess
 				i(97836),	-- Malevolent Gladiator's Drape of Prowess
 			}),
-			n(-326, {
+			n(-326, {	-- Wrist
 				i(97838),	-- Malevolent Gladiator's Cuffs of Accuracy
 				i(97521),	-- Malevolent Gladiator's Cuffs of Meditation
 			}),
-			n(-328, {
+			n(-328, {	-- Waist
 				i(97930),	-- Malevolent Gladiator's Cord of Accuracy
 				i(97840),	-- Malevolent Gladiator's Cord of Accuracy
 				i(97523),	-- Malevolent Gladiator's Cord of Cruelty
 			}),
-			n(-330, {
+			n(-330, {	-- Feet
 				i(97526),	-- Malevolent Gladiator's Treads of Alacrity
 				i(97842),	-- Malevolent Gladiator's Treads of Cruelty
 				i(97932),	-- Malevolent Gladiator's Treads of Cruelty
 			}),
-			f(51, {
+			f(51, {	-- Neck
 				i(97924),	-- Malevolent Gladiator's Pendant of Cruelty
 				i(97834),	-- Malevolent Gladiator's Pendant of Cruelty
 			}),
-			f(52, {
+			f(52, {	-- Finger
 				i(97844),	-- Malevolent Gladiator's Band of Accuracy
 				i(97933),	-- Malevolent Gladiator's Band of Cruelty
 				i(97843),	-- Malevolent Gladiator's Band of Cruelty
 				i(97528),	-- Malevolent Gladiator's Band of Cruelty
 			}),
-			f(53, {
+			f(53, {	-- Trinket
 				i(97531),	-- Malevolent Gladiator's Badge of Dominance
 				i(97532),	-- Malevolent Gladiator's Badge of Dominance
 				i(97936),	-- Malevolent Gladiator's Badge of Dominance
@@ -10429,8 +10498,8 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(97935),	-- Malevolent Gladiator's Medallion of Cruelty (H)
 			}),
 		}),
-		n(-676, {
-			n(-319, {
+		n(-676, {	-- Tyrannical Gladiator: Season 13
+			n(-319, {	-- Weapons
 				i(91089),	-- Tyrannical Gladiator's Bonegrinder
 				i(91394),	-- Tyrannical Gladiator's Fleshslicer
 				i(91107),	-- Tyrannical Gladiator's Longbow
@@ -10462,7 +10531,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			cl(SHAMAN, {
 				i(91799),	-- Tyrannical Gladiator's Mail Leggings
 			}),
-			f(53, {
+			f(53, {	-- Trinket
 				i(91330),	-- Tyrannical Gladiator's Medallion of Cruelty (H)
 				i(91334),	-- Tyrannical Gladiator's Medallion of Meditation (H)
 				i(91332),	-- Tyrannical Gladiator's Medallion of Tenacity (H)
@@ -10477,8 +10546,8 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(91332),	-- Tyrannical Gladiator's Medallion of Tenacity (H)
 			}),
 		}),
-		n(-677, {
-			n(-319, {
+		n(-677, {	-- Grievous Gladiator: Season 14
+			n(-319, {	-- Weapons
 				i(100185),	-- Grievous Gladiator's Bonegrinder
 				i(100241),	-- Grievous Gladiator's Heavy Crossbow
 				i(100278),	-- Grievous Gladiator's Staff
@@ -10498,8 +10567,8 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(100536),	-- Grievous Gladiator's Spellblade
 			}),
 		}),
-		n(-678, {
-			n(-319, {
+		n(-678, {	-- Prideful Gladiator: Season 15
+			n(-319, {	-- Weapons
 				i(102611),	-- Prideful Gladiator's Bonegrinder
 				i(102613),	-- Prideful Gladiator's Heavy Crossbow
 				i(102595),	-- Prideful Gladiator's Staff
@@ -10509,6 +10578,8 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(102985),	-- Prideful Gladiator's Bonegrinder
 				i(103003),	-- Prideful Gladiator's Heavy Crossbow
 				i(103021),	-- Prideful Gladiator's Staff
+				i(105955),	-- Wrathful Gladiator's Razor (Elite, added in 5.4 ????)??
+				i(105956), 	-- Wrathful Gladiator's Razor [Not implemented, other version was instead]
 			}),
 		}),
 	}),

@@ -446,3 +446,33 @@ _.PVP =
 		}),
 	})),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10100, {	-- Shadowlands
+		n(-693, {	-- Sinful Gladiator: Shadowlands Season 1
+			n(-319, {	-- Weapons
+				i(178397),	-- Sinful Gladiator's Aegis (existed in beta; doesn't appear to exist in live)
+				i(175998),	-- Sinful Gladiator's Axe (existed in beta; doesn't appear to exist in live)
+				i(183403),	-- Sinful Gladiator's Battlehammer (existed in beta; doesn't appear to exist in live)
+				i(176000),	-- Sinful Gladiator's Blade (existed in beta; doesn't appear to exist in live)
+				i(178390),	-- Sinful Gladiator's Dagger (existed in beta; doesn't appear to exist in live)
+				i(176008),	-- Sinful Gladiator's Focus (existed in beta; doesn't appear to exist in live)
+				i(178398),	-- Sinful Gladiator's Goblet (existed in beta; doesn't appear to exist in live)
+				i(175999),	-- Sinful Gladiator's Greatbow (existed in beta; doesn't appear to exist in live)
+				i(183406),	-- Sinful Gladiator's Greatmaul (existed in beta; doesn't appear to exist in live)
+				i(178392),	-- Sinful Gladiator's Halberd (existed in beta; doesn't appear to exist in live)
+				i(178388),	-- Sinful Gladiator's Handaxe (existed in beta; doesn't appear to exist in live)
+				i(183405),	-- Sinful Gladiator's Mageblade (existed in beta; doesn't appear to exist in live)
+				i(176002),	-- Sinful Gladiator's Polearm (existed in beta; doesn't appear to exist in live)
+				i(178389),	-- Sinful Gladiator's Recurve (existed in beta; doesn't appear to exist in live)
+				i(178394),	-- Sinful Gladiator's Saber (existed in beta; doesn't appear to exist in live)
+				i(176007),	-- Sinful Gladiator's Shield (existed in beta; doesn't appear to exist in live)
+				i(178399),	-- Sinful Gladiator's Slicer (existed in beta; doesn't appear to exist in live)
+				i(183404),	-- Sinful Gladiator's Spellblade (existed in beta; doesn't appear to exist in live)
+				i(176003),	-- Sinful Gladiator's Spellstaff (existed in beta; doesn't appear to exist in live)
+				i(178393),	-- Sinful Gladiator's Spire (existed in beta; doesn't appear to exist in live)
+				i(176004),	-- Sinful Gladiator's Sword (existed in beta; doesn't appear to exist in live)
+				i(176009),	-- Sinful Gladiator's Warglaive (existed in beta; doesn't appear to exist in live)
+			}),
+		}),
+	}),
+});

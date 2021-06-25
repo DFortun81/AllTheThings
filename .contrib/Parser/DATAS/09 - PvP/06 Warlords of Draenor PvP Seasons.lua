@@ -9636,30 +9636,41 @@ _.PVP =
 
 -- The items never made it in.
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-163, {	-- Armor
-		n(-386, {	-- Trinket
-			-- Season 2
-			i(124835),	-- Wild Gladiator's Ringmail Leggings (You get Wild Gladiator's Ringmail Kilt via Ensemble)
-			i(125045),	-- Wild Combatant's Accolade of Dominance
-			i(125047),	-- Wild Combatant's Accolade of Meditation
-			i(125044),	-- Wild Combatant's Accolade of Conquest
-			i(125046),	-- Wild Combatant's Accolade of Victory
-			i(125048),	-- Wild Combatant's Accolade of Endurance
-			i(124871),	-- Wild Gladiator's Accolade of Dominance
-			i(124874),	-- Wild Gladiator's Accolade of Endurance
-			i(124870),	-- Wild Gladiator's Accolade of Conquest
-			i(124872),	-- Wild Gladiator's Accolade of Victory
-			i(124873),	-- Wild Gladiator's Accolade of Meditation
-			i(125522),	-- Wild Combatant's Accolade of Dominance
-			i(125524),	-- Wild Combatant's Accolade of Meditation
-			i(125521),	-- Wild Combatant's Accolade of Conquest
-			i(125523),	-- Wild Combatant's Accolade of Victory
-			i(125525),	-- Wild Combatant's Accolade of Endurance
-			i(125348),	-- Wild Gladiator's Accolade of Dominance
-			i(125351),	-- Wild Gladiator's Accolade of Endurance
-			i(125347),	-- Wild Gladiator's Accolade of Conquest
-			i(125349),	-- Wild Gladiator's Accolade of Victory
-			i(125350),	-- Wild Gladiator's Accolade of Meditation
+	n(-9981, {	-- Draenor
+		n(-679, {	-- Primal Gladiator: Warlords Season 1
+			n(-319, {	-- Weapons
+				i(180460),	-- Primal Combatant's Decapitator
+				i(111076),	-- Primal Gladiator's Staff (H), none elite
+				i(115603),	-- Primal Gladiator's Staff (A), none elite
+				i(115854),	-- Primal Gladiator's Staff
+			}),
+		}),
+		n(-680, {	-- Wild Gladiator: Warlords Season 2
+			n(-386, {	-- Trinket
+				i(125045),	-- Wild Combatant's Accolade of Dominance
+				i(125047),	-- Wild Combatant's Accolade of Meditation
+				i(125044),	-- Wild Combatant's Accolade of Conquest
+				i(125046),	-- Wild Combatant's Accolade of Victory
+				i(125048),	-- Wild Combatant's Accolade of Endurance
+				i(124871),	-- Wild Gladiator's Accolade of Dominance
+				i(124874),	-- Wild Gladiator's Accolade of Endurance
+				i(124870),	-- Wild Gladiator's Accolade of Conquest
+				i(124872),	-- Wild Gladiator's Accolade of Victory
+				i(124873),	-- Wild Gladiator's Accolade of Meditation
+				i(125522),	-- Wild Combatant's Accolade of Dominance
+				i(125524),	-- Wild Combatant's Accolade of Meditation
+				i(125521),	-- Wild Combatant's Accolade of Conquest
+				i(125523),	-- Wild Combatant's Accolade of Victory
+				i(125525),	-- Wild Combatant's Accolade of Endurance
+				i(125348),	-- Wild Gladiator's Accolade of Dominance
+				i(125351),	-- Wild Gladiator's Accolade of Endurance
+				i(125347),	-- Wild Gladiator's Accolade of Conquest
+				i(125349),	-- Wild Gladiator's Accolade of Victory
+				i(125350),	-- Wild Gladiator's Accolade of Meditation
+			}),
+			cl(SHAMAN, {
+				i(124835),	-- Wild Gladiator's Ringmail Leggings (You get Wild Gladiator's Ringmail Kilt via Ensemble)
+			}),
 		}),
 	}),
 });
