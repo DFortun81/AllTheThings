@@ -9682,16 +9682,22 @@ app.CollectibleAsQuest = function(t)
 			(
 			-- must not be repeatable, unless considering repeatable quests as collectible
 			(not t.repeatable or app.Settings:GetTooltipSetting("Repeatable"))
-			-- must not be a breadcrumb unless collecting breadcrumbs and is available OR collecting breadcrumbs and in Account-mode OR in Party Sync
+			-- debug mode
 			and (app.MODE_DEBUG
-				or (not t.isBreadcrumb and not t.DisablePartySync)
+				-- must not be a breadcrumb
+				or (not t.isBreadcrumb)
+				-- unless collecting breadcrumbs
 				or (app.CollectibleBreadcrumbs and
+					-- in account mode
 					(app.MODE_ACCOUNT
+					-- or party sync without the quest being disabled for it
 					or (app.IsInPartySync and not t.DisablePartySync)
+					-- or simply being able to access the breadcrumb
 					or not t.breadcrumbLockedBy)))
-			-- tracking account-wide quests or must not be a once-per-account quest which has already been flagged as completed on a different character
-			and (app.AccountWideQuests or (not ATTAccountWideData.OneTimeQuests[t.questID] or ATTAccountWideData.OneTimeQuests[t.questID] == app.GUID))
-			)
+			-- account-wide quests (special case since quests are only available once per account, so can only consider them collectible if they've never been completed otherwise)
+			and (app.AccountWideQuests
+				-- otherwise must not be a once-per-account quest which has already been flagged as completed on a different character
+				or (not ATTAccountWideData.OneTimeQuests[t.questID] or ATTAccountWideData.OneTimeQuests[t.questID] == app.GUID)))
 
 			-- If it is an item and associated to an active quest.
 			-- TODO: add t.requiredForQuestID
@@ -12304,8 +12310,8 @@ local function NestSourceQuests(root, addedQuests, depth)
 					if sq then
 						-- track how many quests levels are nested so it can be sorted in a decent-ish looking way
 						root.depth = math.max((root.depth or 0),(sq.depth or 1));
-						if not prereqs then prereqs = {}; end
-						tinsert(prereqs, sq);
+						if not prereqs then prereqs = { sq };
+						else tinsert(prereqs, sq); end
 					else
 						addedQuests[sourceQuestID] = nil;
 					end
