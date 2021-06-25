@@ -133,7 +133,7 @@ _.Zones =
 						i(184742),	-- Rattling Bonefists
 						i(184736),	-- Robe of the March Warden
 						i(184745),	-- Tunic of the March Warden
-						n(-920, sharedData({["customCollect"] = { "SL_COV_NEC" }},{	-- Covenant: Necrolord
+						n(-920, sharedData({["customCollect"] = { "SL_COV_NEC" }}, {
 							i(181807, {	-- Barbarous Osteowings
 								["cost"] = 5000000, -- 500g
 							}),
@@ -185,7 +185,7 @@ _.Zones =
 						i(184727),	-- Courtier's Shoulderguard
 						i(184755),	-- Reinforced High Collar
 						i(182207),	-- Illusion: Sinsedge
-						n(-949, sharedData({["customCollect"] = { "SL_COV_VEN" }},{	-- Covenant: Venthyr
+						n(-949, sharedData({["customCollect"] = { "SL_COV_VEN" }}, {
 							i(183708, {	-- Glittering Gold Sinstone Chain
 								["cost"] = { { "c", 1813, 3500 } },
 							}),
@@ -269,7 +269,7 @@ _.Zones =
 						i(184754),	-- Glitterwing Scarf
 						i(184752),	-- Gormscale Leggings
 						i(184753),	-- Tree-Scaler's Britches
-						n(-929, sharedData({["customCollect"] = { "SL_COV_NFA" }},{	-- Covenant: Night Fae
+						n(-929, sharedData({["customCollect"] = { "SL_COV_NFA" }}, {
 							i(182168, {	-- Crane Soul
 								["cost"] = { { "c", 1813, 1500 } },	-- Reservoir Anima
 							}),
@@ -1399,220 +1399,180 @@ _.Zones =
 							["description"] = "Take this to Acquirer Ta'gosh in Oribos |cffffffff(61.7, 72.3)|r.",
 						}),
 					--	Shadowlands S1 (removed)
-						n(-939, sharedData({["customCollect"] = { "SL_COV_KYR" }},{	-- Covenant: Kyrian
+						n(-939, sharedData({
+								["customCollect"] = { "SL_COV_KYR" },
+								["u"] = REMOVED_FROM_GAME,
+							}, {
 							i(177851, {	-- Sinful Gladiator's Ceremonial Sword
 								["cost"] = { { "c", 1602, 1350 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(177866, {	-- Sinful Gladiator's Chalice
 								["cost"] = { { "c", 1602, 450 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(184549, {	-- Sinful Gladiator's Dory
 								["cost"] = { { "c", 1602, 1800 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(177846, {	-- Sinful Gladiator's Gladius
 								["cost"] = { { "c", 1602, 900 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(180313, {	-- Sinful Gladiator's Greatmallet
 								["cost"] = { { "c", 1602, 1800 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(174311, {	-- Sinful Gladiator's Guard
 								["cost"] = { { "c", 1602, 450 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(184546, {	-- Sinful Gladiator's Hacker
 								["cost"] = { { "c", 1602, 900 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(177861, {	-- Sinful Gladiator's Knife
 								["cost"] = { { "c", 1602, 900 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(177856, {	-- Sinful Gladiator's Lightbow
 								["cost"] = { { "c", 1602, 1800 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(184548, {	-- Sinful Gladiator's Ritual Dagger
 								["cost"] = { { "c", 1602, 1350 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(174299, {	-- Sinful Gladiator's Splitter
 								["cost"] = { { "c", 1602, 900 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(178971, {	-- Sinful Gladiator's Vesper
 								["cost"] = { { "c", 1602, 1800 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(184237, {	-- Sinful Gladiator's Warglaive
 								["cost"] = { { "c", 1602,  900 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(184547, {	-- Sinful Gladiator's Xiphos
 								["cost"] = { { "c", 1602, 900 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 						})),
-						n(-920, sharedData({["customCollect"] = { "SL_COV_NEC" }},{	-- Covenant: Necrolord
+						n(-920, sharedData({
+							["customCollect"] = { "SL_COV_NEC" },
+							["u"] = REMOVED_FROM_GAME,
+							}, {
 							i(183446, {	-- Sinful Gladiator's Cleaver
 								["cost"] = { { "c", 1602, 1800 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(183439, {	-- Sinful Gladiator's Crystal
 								["cost"] = { { "c", 1602, 450 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(183449, {	-- Sinful Gladiator's Gavel
 								["cost"] = { { "c", 1602, 1350 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(183447, {	-- Sinful Gladiator's Glaive
 								["cost"] = { { "c", 1602, 1800 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(183448, {	-- Sinful Gladiator's Hacker
 								["cost"] = { { "c", 1602, 900 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(184574, {	-- Sinful Gladiator's Necrostave
 								["cost"] = { { "c", 1602, 1800 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(183438, {	-- Sinful Gladiator's Redoubt
 								["cost"] = { { "c", 1602, 450 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(183445, {	-- Sinful Gladiator's Rifle
 								["cost"] = { { "c", 1602, 1800 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(183443, {	-- Sinful Gladiator's Sacrificial Dagger
 								["cost"] = { { "c", 1602, 1350 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(183437, {	-- Sinful Gladiator's Shanker
 								["cost"] = { { "c", 1602, 900 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(183440, {	-- Sinful Gladiator's Splitter
 								["cost"] = { { "c", 1602, 900 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(183441, {	-- Sinful Gladiator's Warglaive
 								["cost"] = { { "c", 1602, 900 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 						})),
-						n(-929, sharedData({["customCollect"] = { "SL_COV_NFA" }},{	-- Covenant: Night Fae
+						n(-929, sharedData({
+							["customCollect"] = { "SL_COV_NFA" },
+							["u"] = REMOVED_FROM_GAME,
+							}, {
 							i(179543, {	-- Sinful Gladiator's Bludgeon
 								["cost"] = { { "c", 1602, 1800 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(179609, {	-- Sinful Gladiator's Bulwark
 								["cost"] = { { "c", 1602, 450 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(180261, {	-- Sinful Gladiator's Edge
 								["cost"] = { { "c", 1602, 900 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(179495, {	-- Sinful Gladiator's Fang
 								["cost"] = { { "c", 1602, 900 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(179578, {	-- Sinful Gladiator's Jaws
 								["cost"] = { { "c", 1602, 900 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(179569, {	-- Sinful Gladiator's Lyre
 								["cost"] = { { "c", 1602, 450 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(179559, {	-- Sinful Gladiator's Scepter
 								["cost"] = { { "c", 1602, 1350 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(182349, {	-- Sinful Gladiator's Shillelagh
 								["cost"] = { { "c", 1602, 900 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(179526, {	-- Sinful Gladiator's Spear
 								["cost"] = { { "c", 1602, 1800 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(180004, {	-- Sinful Gladiator's Staff
 								["cost"] = { { "c", 1602, 1800 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(180019, {	-- Sinful Gladiator's Wand
 								["cost"] = { { "c", 1602, 1350 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(180081, {	-- Sinful Gladiator's Warbow
 								["cost"] = { { "c", 1602, 1800 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 						})),
-						n(-949, sharedData({["customCollect"] = { "SL_COV_VEN" }},{	-- Covenant: Venthyr
+						n(-949, sharedData({
+							["customCollect"] = { "SL_COV_VEN" },
+							["u"] = REMOVED_FROM_GAME,
+							}, {
 							i(182406, {	-- Sinful Gladiator's Battlestave
 								["cost"] = { { "c", 1602, 1800 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(182402, {	-- Sinful Gladiator's Crusaderblade
 								["cost"] = { { "c", 1602, 1800 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(182403, {	-- Sinful Gladiator's Gargoyle Claw
 								["cost"] = { { "c", 1602, 900 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(182412, {	-- Sinful Gladiator's Redoubt
 								["cost"] = { { "c", 1602, 450 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(182411, {	-- Sinful Gladiator's Repeating Crossbow
 								["cost"] = { { "c", 1602, 1800 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(184568, {	-- Sinful Gladiator's Shortblade
 								["cost"] = { { "c", 1602, 900 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(182409, {	-- Sinful Gladiator's Sineater Blade
 								["cost"] = { { "c", 1602, 1350 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(182404, {	-- Sinful Gladiator's Sineater Gavel
 								["cost"] = { { "c", 1602, 1350 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(182401, {	-- Sinful Gladiator's Sinedged Dirk
 								["cost"] = { { "c", 1602, 900 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(182413, {	-- Sinful Gladiator's Spell Foci
 								["cost"] = { { "c", 1602, 450 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(182408, {	-- Sinful Gladiator's Swordbreaker
 								["cost"] = { { "c", 1602, 900 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(182405, {	-- Sinful Gladiator's Torch Staff
 								["cost"] = { { "c", 1602, 1800 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(182407, {	-- Sinful Gladiator's Wingblade
 								["cost"] = { { "c", 1602, 900 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(182410, {	-- Sinful Gladiator's Wingglaive
 								["cost"] = { { "c", 1602, 900 } },
-								["u"] = REMOVED_FROM_GAME,
 							}),
 						})),
 						i(178448, {	-- Sinful Gladiator's Amulet
