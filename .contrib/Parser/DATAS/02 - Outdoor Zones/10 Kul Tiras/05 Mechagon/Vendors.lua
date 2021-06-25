@@ -38,10 +38,10 @@ _.Zones =
 						i(167069, {	-- Rustbolt Gramophone
 							["questID"] = 55534,    -- Rustbolt Gramophone
 							["g"] = {
-                                crit(1, {    -- Ode to Tinkertown
-                                    ["achievementID"] = 13686,    -- Junkyard Melomanic
-                                }),
-                            },
+								crit(1, {    -- Ode to Tinkertown
+									["achievementID"] = 13686,    -- Junkyard Melomanic
+								}),
+							},
 						}),
 						i(169113, {	-- Advanced Adventurer Augmentation
 							i(169002),	-- Calibrated Hefty Cog

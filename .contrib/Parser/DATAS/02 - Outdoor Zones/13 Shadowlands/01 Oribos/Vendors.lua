@@ -252,7 +252,7 @@ _.Zones =
 				n(164095, {	-- Purveyor Zo'kuul <Assessor of Conflict>
 					["coord"] = { 36.0, 58.6, ORIBOS },
 					["g"] = {
-                        i(183246, {	-- Memory of Sephuz
+						i(183246, {	-- Memory of Sephuz
 							["cost"] = { { "c", 1792, 1500 } },
 						}),
 						i(183252, {	-- Memory of a Trapping Apparatus
@@ -369,9 +369,9 @@ _.Zones =
 						i(178468, {	-- Sinful Aspirant's Battleaxe
 							["cost"] = { { "c", 1792, 875 } },
 						}),
-					    i(178490, {	-- Sinful Aspirant's Barrier
+						i(178490, {	-- Sinful Aspirant's Barrier
 							["cost"] = { { "c", 1792, 425 } },
-                        }),
+						}),
 						i(178478, {	-- Sinful Aspirant's Orb
 							["cost"] = { { "c", 1792, 425 } },
 						}),
