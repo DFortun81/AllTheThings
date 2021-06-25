@@ -356,60 +356,72 @@ _.Zones =
 					["provider"] = { "i", 21749 },	-- Combat Task Briefing I
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
+					["repeatable"] = true,
 				}),
 				q(8771,  {	-- Target: Hive'Ashi Sandstalkers
 					["provider"] = { "i", 21750 },	-- Combat Task Briefing II
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
+					["repeatable"] = true,
 				}),
 				q(8501,  {	-- Target: Hive'Ashi Stingers
 					["provider"] = { "i", 20941 },	-- Combat Task Briefing XII
 					["u"] = REMOVED_FROM_GAME,
+					["repeatable"] = true,
 				}),
 				q(8502,  {	-- Target: Hive'Ashi Workers
 					["provider"] = { "i", 20942 },	-- Combat Task Briefing III
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
+					["repeatable"] = true,
 				}),
 				q(8774,  {	-- Target: Hive'Regal Ambushers
 					["provider"] = { "i", 21252 },	-- Combat Task Briefing VIII
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
+					["repeatable"] = true,
 				}),
 				q(8777,  {	-- Target: Hive'Regal Burrowers
 					["provider"] = { "i", 21256 },	-- Combat Task Briefing XI
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
+					["repeatable"] = true,
 				}),
 				q(8776,  {	-- Target: Hive'Regal Slavemakers
 					["provider"] = { "i", 21255 },	-- Combat Task Briefing X
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
+					["repeatable"] = true,
 				}),
 				q(8775,  {	-- Target: Hive'Regal Spitfires
 					["provider"] = { "i", 21253 },	-- Combat Task Briefing IX
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
+					["repeatable"] = true,
 				}),
 				q(8539,  {	-- Target: Hive'Zora Hive Sisters
 					["provider"] = { "i", 21249 },	-- Combat Task Briefing V
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
+					["repeatable"] = true,
 				}),
 				q(8773,  {	-- Target: Hive'Zora Reavers
 					["provider"] = { "i", 21248 },	-- Combat Task Briefing VI
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
+					["repeatable"] = true,
 				}),
 				q(8687,  {	-- Target: Hive'Zora Tunnelers
 					["provider"] = { "i", 21251 },	-- Combat Task Briefing VII
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
+					["repeatable"] = true,
 				}),
 				q(8772,  {	-- Target: Hive'Zora Waywatchers
 					["provider"] = { "i", 21250 },	-- Combat Task Briefing VI
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
+					["repeatable"] = true,
 				}),
 				q(8509,  {	-- The Alliance Needs Arthas' Tears!
 					["races"] = ALLIANCE_ONLY,

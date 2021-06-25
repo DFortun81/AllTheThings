@@ -33,6 +33,21 @@ _.PVP =
 								["races"] = HORDE_ONLY,
 								["lvl"] = 51,
 							}),
+							q(6825,  {	-- Call of Air - Guse's Fleet
+								["provider"] = { "n", 13179 },	-- Wing Commander Guse
+								["races"] = HORDE_ONLY,
+								["repeatable"] = true,
+							}),
+							q(6826,  {	-- Call of Air - Jeztor's Fleet
+								["provider"] = { "n", 13180 },	-- Wing Commander Jeztor
+								["races"] = HORDE_ONLY,
+								["repeatable"] = true,
+							}),
+							q(6827,  {	-- Call of Air - Mulverick's Fleet
+								["provider"] = { "n", 13181 },	-- Wing Commander Mulverick
+								["races"] = HORDE_ONLY,
+								["repeatable"] = true,
+							}),
 							q(7124,  {	-- Capture a Mine (H)
 								["races"] = HORDE_ONLY,
 								["timeline"] = {
@@ -399,6 +414,21 @@ _.PVP =
 								["races"] = ALLIANCE_ONLY,
 								["lvl"] = 51,
 							}),
+							q(6943,  {	-- Call of Air - Ichman's Fleet
+								["provider"] = { "n", 13437 },	-- Wing Commander Ichman
+								["races"] = ALLIANCE_ONLY,
+								["repeatable"] = true,
+							}),
+							q(6942,  {	-- Call of Air - Slidore's Fleet
+								["provider"] = { "n", 13438 },	-- Wing Commander Slidore
+								["races"] = ALLIANCE_ONLY,
+								["repeatable"] = true,
+							}),
+							q(6941,  {	-- Call of Air - Vipore's Fleet
+								["provider"] = { "n", 13439 },	-- Wing Commander Vipore
+								["races"] = ALLIANCE_ONLY,
+								["repeatable"] = true,
+							}),
 							q(7122,  {	-- Capture a Mine (A)
 								["provider"] = { "n", 13777 },	-- Sergeant Durgen Stormpike
 								["coord"] = { 43.0, 43.8, HILLSBRAD_FOOTHILLS },
@@ -741,3 +771,17 @@ _.PVP =
 		}),
 	})),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(6846),	-- Begin the Attack!
+		q(7421),	-- Darkspear Defense
+		q(7423),	-- I've Got A Fever For More Bone Chips
+		q(6901),	-- Launch the Attack!		
+		q(7426),	-- One Man's Love
+		q(7425),	-- Staghelm's Mojo Jamboree
+		q(7422),	-- Tuft it Out
+		q(7427),	-- Wanted: MORE DWARVES!
+		q(7428),	-- Wanted: MORE ORCS!
+		q(7424),	-- What the Hoof?
+	}),
+});
