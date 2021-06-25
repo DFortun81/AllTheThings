@@ -4,7 +4,7 @@
 
 _.PVP =
 {
-	pvp(n(-10041, {	-- Mists of Pandaria
+	pvp(tier(5, {	-- Mists of Pandaria
 		n(-675, {	-- Malevolent Gladiator: Season 12
 			n(-9983, {	-- Honor Gear
 				cl(DEATHKNIGHT, {
@@ -10313,186 +10313,229 @@ _.PVP =
 
 -- The items never made it in.
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-319, {	-- Weapons
-		-- Season 12
-		i(84714),	-- Dreadful Gladiator's Barrier
-		i(84704),	-- Dreadful Gladiator's Baton of Light
-		i(84723),	-- Dreadful Gladiator's Battle Staff
-		i(84719),	-- Dreadful Gladiator's Bonecracker
-		i(84721),	-- Dreadful Gladiator's Bonegrinder
-		i(84701),	-- Dreadful Gladiator's Cleaver
-		i(84707),	-- Dreadful Gladiator's Decapitator
-		i(84711),	-- Dreadful Gladiator's Endgame
-		i(84724),	-- Dreadful Gladiator's Energy Staff
-		i(84697),	-- Dreadful Gladiator's Fleshslicer
-		i(84720),	-- Dreadful Gladiator's Gavel
-		i(84717),	-- Dreadful Gladiator's Greatsword
-		i(84702),	-- Dreadful Gladiator's Hacker
-		i(84718),	-- Dreadful Gladiator's Heavy Crossbow
-		i(84705),	-- Dreadful Gladiator's Longbow
-		i(84722),	-- Dreadful Gladiator's Pike
-		i(84700),	-- Dreadful Gladiator's Pummeler
-		i(84716),	-- Dreadful Gladiator's Quickblade
-		i(84715),	-- Dreadful Gladiator's Redoubt
-		i(84699),	-- Dreadful Gladiator's Render
-		i(84712),	-- Dreadful Gladiator's Reprieve
-		i(84706),	-- Dreadful Gladiator's Rifle
-		i(84696),	-- Dreadful Gladiator's Ripper
-		i(84708),	-- Dreadful Gladiator's Shanker
-		i(84713),	-- Dreadful Gladiator's Shield Wall
-		i(84709),	-- Dreadful Gladiator's Shiv
-		i(84698),	-- Dreadful Gladiator's Slasher
-		i(84710),	-- Dreadful Gladiator's Slicer
-		i(84695),	-- Dreadful Gladiator's Spellblade
-		i(84725),	-- Dreadful Gladiator's Staff
-		i(84703),	-- Dreadful Gladiator's Touch of Defeat
-		i(97527),	-- Dreadful Gladiator's Band of Meditation
-		i(97529),	-- Dreadful Gladiator's Band of Meditation
-		i(97518),	-- Dreadful Gladiator's Drape of Prowess
-		i(97516),	-- Dreadful Gladiator's Pendant of Meditation
-		i(84899),	-- Malevolent Gladiator's Baton of Light
-		i(84897),	-- Malevolent Gladiator's Heavy Crossbow
-		i(85118),	-- Malevolent Gladiator's Shiv
-		i(84895),	-- Malevolent Gladiator's Shiv
-		i(97846),	-- Malevolent Gladiator's Spellblade
-		i(84898),	-- Malevolent Gladiator's Touch of Defeat
-		i(97925),	-- Malevolent Gladiator's Silk Amice
-		i(97835),	-- Malevolent Gladiator's Silk Amice
-		i(97923),	-- Malevolent Gladiator's Silk Cowl
-		i(97833),	-- Malevolent Gladiator's Silk Cowl
-		i(97929),	-- Malevolent Gladiator's Silk Handguards
-		i(97839),	-- Malevolent Gladiator's Silk Handguards
-		i(97927),	-- Malevolent Gladiator's Silk Robe
-		i(97837),	-- Malevolent Gladiator's Silk Robe
-		i(97931),	-- Malevolent Gladiator's Silk Trousers
-		i(97841),	-- Malevolent Gladiator's Silk Trousers
-		i(97515),	-- Malevolent Gladiator's Mooncloth Helm
-		i(97522),	-- Malevolent Gladiator's Satin Gloves
-		i(97525),	-- Malevolent Gladiator's Satin Leggings
-		i(97517),	-- Malevolent Gladiator's Satin Mantle
-		i(97520),	-- Malevolent Gladiator's Satin Robe
-		i(97926),	-- Malevolent Gladiator's Drape of Prowess
-		i(97836),	-- Malevolent Gladiator's Drape of Prowess
-		i(97838),	-- Malevolent Gladiator's Cuffs of Accuracy
-		i(97521),	-- Malevolent Gladiator's Cuffs of Meditation
-		i(97930),	-- Malevolent Gladiator's Cord of Accuracy
-		i(97840),	-- Malevolent Gladiator's Cord of Accuracy
-		i(97523),	-- Malevolent Gladiator's Cord of Cruelty
-		i(97526),	-- Malevolent Gladiator's Treads of Alacrity
-		i(97842),	-- Malevolent Gladiator's Treads of Cruelty
-		i(97932),	-- Malevolent Gladiator's Treads of Cruelty
-		i(97924),	-- Malevolent Gladiator's Pendant of Cruelty
-		i(97834),	-- Malevolent Gladiator's Pendant of Cruelty
-		i(97844),	-- Malevolent Gladiator's Band of Accuracy
-		i(97933),	-- Malevolent Gladiator's Band of Cruelty
-		i(97843),	-- Malevolent Gladiator's Band of Cruelty
-		i(97528),	-- Malevolent Gladiator's Band of Cruelty
-		i(97531),	-- Malevolent Gladiator's Badge of Dominance
-		i(97532),	-- Malevolent Gladiator's Badge of Dominance
-		i(97936),	-- Malevolent Gladiator's Badge of Dominance
-		i(97533),	-- Malevolent Gladiator's Medallion of Cruelty (H)
-		i(97845),	-- Malevolent Gladiator's Medallion of Cruelty (H)
-		i(97935),	-- Malevolent Gladiator's Medallion of Cruelty (H)
-		i(91747),	-- Malevolent Gladiator's Fleshslicer
-		i(91751),	-- Malevolent Gladiator's Slasher
-		i(84893),	-- Malevolent Gladiator's Fleshslicer
-		i(84968),	-- Malevolent Gladiator's Slicer
-		-- S13
-		i(91089),	-- Tyrannical Gladiator's Bonegrinder
-		i(91394),	-- Tyrannical Gladiator's Fleshslicer
-		i(91107),	-- Tyrannical Gladiator's Longbow
-		i(91307),	-- Tyrannical Gladiator's Pike
-		i(91201),	-- Tyrannical Gladiator's Rifle
-		i(99833),	-- Tyrannical Gladiator's Shiv
-		i(91329),	-- Tyrannical Gladiator's Medallion of Cruelty (A)
-		i(91333),	-- Tyrannical Gladiator's Medallion of Meditation (A)
-		i(91331),	-- Tyrannical Gladiator's Medallion of Tenacity (A)
-		i(99939),	-- Tyrannical Gladiator's Baton of Light
-		i(99767),	-- Tyrannical Gladiator's Bonegrinder
-		i(99934),	-- Tyrannical Gladiator's Fleshslicer
-		i(99780),	-- Tyrannical Gladiator's Longbow
-		i(99892),	-- Tyrannical Gladiator's Pike
-		i(99834),	-- Tyrannical Gladiator's Rifle
-		i(99804),	-- Tyrannical Gladiator's Touch of Deafeat
-		i(94324),	-- Tyrannical Gladiator's Bonegrinder
-		i(94314),	-- Tyrannical Gladiator's Fleshslicer
-		i(94303),	-- Tyrannical Gladiator's Longbow
-		i(94319),	-- Tyrannical Gladiator's Pike
-		i(94309),	-- Tyrannical Gladiator's Rifle
-		i(99962),	-- Tyrannical Gladiator's Shiv
-		i(91330),	-- Tyrannical Gladiator's Medallion of Cruelty (H)
-		i(91334),	-- Tyrannical Gladiator's Medallion of Meditation (H)
-		i(91332),	-- Tyrannical Gladiator's Medallion of Tenacity (H)
-		i(99969),	-- Tyrannical Gladiator's Baton of Light
-		i(99985),	-- Tyrannical Gladiator's Bonegrinder
-		i(99975),	-- Tyrannical Gladiator's Fleshslicer
-		i(99964),	-- Tyrannical Gladiator's Longbow
-		i(99980),	-- Tyrannical Gladiator's Pike
-		i(99970),	-- Tyrannical Gladiator's Rifle
-		i(99966),	-- Tyrannical Gladiator's Touch of Deafeat
-		i(91200),	-- Tyrannical Gladiator's Shiv
-		i(91799),	-- Tyrannical Gladiator's Mail Leggings
-		i(91089),	-- Tyrannical Gladiator's Bonegrinder
-		i(91394),	-- Tyrannical Gladiator's Fleshslicer
-		i(91107),	-- Tyrannical Gladiator's Longbow
-		i(91307),	-- Tyrannical Gladiator's Pike
-		i(91201),	-- Tyrannical Gladiator's Rifle
-		i(99833),	-- Tyrannical Gladiator's Shiv
-		i(91329),	-- Tyrannical Gladiator's Medallion of Cruelty (A)
-		i(91333),	-- Tyrannical Gladiator's Medallion of Meditation (A)
-		i(91331),	-- Tyrannical Gladiator's Medallion of Tenacity (A)
-		i(99939),	-- Tyrannical Gladiator's Baton of Light
-		i(99767),	-- Tyrannical Gladiator's Bonegrinder
-		i(99934),	-- Tyrannical Gladiator's Fleshslicer
-		i(99780),	-- Tyrannical Gladiator's Longbow
-		i(99892),	-- Tyrannical Gladiator's Pike
-		i(99834),	-- Tyrannical Gladiator's Rifle
-		i(99804),	-- Tyrannical Gladiator's Touch of Deafeat
-		i(94324),	-- Tyrannical Gladiator's Bonegrinder
-		i(94314),	-- Tyrannical Gladiator's Fleshslicer
-		i(94303),	-- Tyrannical Gladiator's Longbow
-		i(94319),	-- Tyrannical Gladiator's Pike
-		i(94309),	-- Tyrannical Gladiator's Rifle
-		i(99962),	-- Tyrannical Gladiator's Shiv
-		i(91330),	-- Tyrannical Gladiator's Medallion of Cruelty (H)
-		i(91334),	-- Tyrannical Gladiator's Medallion of Meditation (H)
-		i(91332),	-- Tyrannical Gladiator's Medallion of Tenacity (H)
-		i(99969),	-- Tyrannical Gladiator's Baton of Light
-		i(99985),	-- Tyrannical Gladiator's Bonegrinder
-		i(99975),	-- Tyrannical Gladiator's Fleshslicer
-		i(99964),	-- Tyrannical Gladiator's Longbow
-		i(99980),	-- Tyrannical Gladiator's Pike
-		i(99970),	-- Tyrannical Gladiator's Rifle
-		i(99966),	-- Tyrannical Gladiator's Touch of Deafeat
-		i(91200),	-- Tyrannical Gladiator's Shiv
-		i(91799),	-- Tyrannical Gladiator's Mail Leggings
-		-- S14
-		i(100185),	-- Grievous Gladiator's Bonegrinder
-		i(100241),	-- Grievous Gladiator's Heavy Crossbow
-		i(100278),	-- Grievous Gladiator's Staff
-		i(100554),	-- Grievous Gladiator's Bonegrinder
-		i(103178),	-- Grievous Gladiator's Heavy Crossbow
-		i(103197),	-- Grievous Gladiator's
-		i(103140),	-- Grievous Gladiator's Bonegrinder
-		i(100556),	-- Grievous Gladiator's Heavy Crossbow
-		i(100537),	-- Grievous Gladiator's Staff
-		i(102808),	-- Grievous Gladiator's Bonegrinder
-		i(102810),	-- Grievous Gladiator's Heavy Crossbow
-		i(102792),	-- Grievous Gladiator's Staff
-		i(100186),	-- Grievous Gladiator's Bonegrinder
-		i(100242),	-- Grievous Gladiator's Heavy Crossbow
-		i(100279),	-- Grievous Gladiator's Staff
-		i(100535),	-- Grievous Gladiator's Touch of Defeat
-		i(100536),	-- Grievous Gladiator's Spellblade
-		-- S15
-		i(102611),	-- Prideful Gladiator's Bonegrinder
-		i(102613),	-- Prideful Gladiator's Heavy Crossbow
-		i(102595),	-- Prideful Gladiator's Staff
-		i(103337),	-- Prideful Gladiator's Bonegrinder
-		i(103375),	-- Prideful Gladiator's Heavy Crossbow
-		i(103394),	-- Prideful Gladiator's Staff
-		i(102985),	-- Prideful Gladiator's Bonegrinder
-		i(103003),	-- Prideful Gladiator's Heavy Crossbow
-		i(103021),	-- Prideful Gladiator's Staff
+	n(-10041, {
+		n(-675, {
+			n(-319, {	-- Weapons
+				-- Season 12
+				i(84714),	-- Dreadful Gladiator's Barrier
+				i(84704),	-- Dreadful Gladiator's Baton of Light
+				i(84723),	-- Dreadful Gladiator's Battle Staff
+				i(84719),	-- Dreadful Gladiator's Bonecracker
+				i(84721),	-- Dreadful Gladiator's Bonegrinder
+				i(84701),	-- Dreadful Gladiator's Cleaver
+				i(84707),	-- Dreadful Gladiator's Decapitator
+				i(84711),	-- Dreadful Gladiator's Endgame
+				i(84724),	-- Dreadful Gladiator's Energy Staff
+				i(84697),	-- Dreadful Gladiator's Fleshslicer
+				i(84720),	-- Dreadful Gladiator's Gavel
+				i(84717),	-- Dreadful Gladiator's Greatsword
+				i(84702),	-- Dreadful Gladiator's Hacker
+				i(84718),	-- Dreadful Gladiator's Heavy Crossbow
+				i(84705),	-- Dreadful Gladiator's Longbow
+				i(84722),	-- Dreadful Gladiator's Pike
+				i(84700),	-- Dreadful Gladiator's Pummeler
+				i(84716),	-- Dreadful Gladiator's Quickblade
+				i(84715),	-- Dreadful Gladiator's Redoubt
+				i(84699),	-- Dreadful Gladiator's Render
+				i(84712),	-- Dreadful Gladiator's Reprieve
+				i(84706),	-- Dreadful Gladiator's Rifle
+				i(84696),	-- Dreadful Gladiator's Ripper
+				i(84708),	-- Dreadful Gladiator's Shanker
+				i(84713),	-- Dreadful Gladiator's Shield Wall
+				i(84709),	-- Dreadful Gladiator's Shiv
+				i(84698),	-- Dreadful Gladiator's Slasher
+				i(84710),	-- Dreadful Gladiator's Slicer
+				i(84695),	-- Dreadful Gladiator's Spellblade
+				i(84725),	-- Dreadful Gladiator's Staff
+				i(84703),	-- Dreadful Gladiator's Touch of Defeat
+			}),
+			f(52, {
+				i(97527),	-- Dreadful Gladiator's Band of Meditation
+				i(97529),	-- Dreadful Gladiator's Band of Meditation
+			}),
+			n(-322, {
+				i(97518),	-- Dreadful Gladiator's Drape of Prowess
+			}),
+			f(51, {
+				i(97516),	-- Dreadful Gladiator's Pendant of Meditation
+			}),
+			n(-319, {
+				i(84899),	-- Malevolent Gladiator's Baton of Light
+				i(84897),	-- Malevolent Gladiator's Heavy Crossbow
+				i(85118),	-- Malevolent Gladiator's Shiv
+				i(84895),	-- Malevolent Gladiator's Shiv
+				i(97846),	-- Malevolent Gladiator's Spellblade
+				i(84898),	-- Malevolent Gladiator's Touch of Defeat
+				i(91747),	-- Malevolent Gladiator's Fleshslicer
+				i(91751),	-- Malevolent Gladiator's Slasher
+				i(84893),	-- Malevolent Gladiator's Fleshslicer
+				i(84968),	-- Malevolent Gladiator's Slicer
+			}),
+			cl(MAGE, {
+				i(97925),	-- Malevolent Gladiator's Silk Amice
+				i(97835),	-- Malevolent Gladiator's Silk Amice
+				i(97923),	-- Malevolent Gladiator's Silk Cowl
+				i(97833),	-- Malevolent Gladiator's Silk Cowl
+				i(97929),	-- Malevolent Gladiator's Silk Handguards
+				i(97839),	-- Malevolent Gladiator's Silk Handguards
+				i(97927),	-- Malevolent Gladiator's Silk Robe
+				i(97837),	-- Malevolent Gladiator's Silk Robe
+				i(97931),	-- Malevolent Gladiator's Silk Trousers
+				i(97841),	-- Malevolent Gladiator's Silk Trousers
+			}),
+			cl(PRIEST, {
+				i(97515),	-- Malevolent Gladiator's Mooncloth Helm
+				i(97522),	-- Malevolent Gladiator's Satin Gloves
+				i(97525),	-- Malevolent Gladiator's Satin Leggings
+				i(97517),	-- Malevolent Gladiator's Satin Mantle
+				i(97520),	-- Malevolent Gladiator's Satin Robe
+			}),
+			n(-322, {
+				i(97926),	-- Malevolent Gladiator's Drape of Prowess
+				i(97836),	-- Malevolent Gladiator's Drape of Prowess
+			}),
+			n(-326, {
+				i(97838),	-- Malevolent Gladiator's Cuffs of Accuracy
+				i(97521),	-- Malevolent Gladiator's Cuffs of Meditation
+			}),
+			n(-328, {
+				i(97930),	-- Malevolent Gladiator's Cord of Accuracy
+				i(97840),	-- Malevolent Gladiator's Cord of Accuracy
+				i(97523),	-- Malevolent Gladiator's Cord of Cruelty
+			}),
+			n(-330, {
+				i(97526),	-- Malevolent Gladiator's Treads of Alacrity
+				i(97842),	-- Malevolent Gladiator's Treads of Cruelty
+				i(97932),	-- Malevolent Gladiator's Treads of Cruelty
+			}),
+			f(51, {
+				i(97924),	-- Malevolent Gladiator's Pendant of Cruelty
+				i(97834),	-- Malevolent Gladiator's Pendant of Cruelty
+			}),
+			f(52, {
+				i(97844),	-- Malevolent Gladiator's Band of Accuracy
+				i(97933),	-- Malevolent Gladiator's Band of Cruelty
+				i(97843),	-- Malevolent Gladiator's Band of Cruelty
+				i(97528),	-- Malevolent Gladiator's Band of Cruelty
+			}),
+			f(53, {
+				i(97531),	-- Malevolent Gladiator's Badge of Dominance
+				i(97532),	-- Malevolent Gladiator's Badge of Dominance
+				i(97936),	-- Malevolent Gladiator's Badge of Dominance
+				i(97533),	-- Malevolent Gladiator's Medallion of Cruelty (H)
+				i(97845),	-- Malevolent Gladiator's Medallion of Cruelty (H)
+				i(97935),	-- Malevolent Gladiator's Medallion of Cruelty (H)
+			}),
+		}),
+		n(-676, {
+			n(-319, {
+				i(91089),	-- Tyrannical Gladiator's Bonegrinder
+				i(91394),	-- Tyrannical Gladiator's Fleshslicer
+				i(91107),	-- Tyrannical Gladiator's Longbow
+				i(91307),	-- Tyrannical Gladiator's Pike
+				i(91201),	-- Tyrannical Gladiator's Rifle
+				i(99833),	-- Tyrannical Gladiator's Shiv
+				i(99939),	-- Tyrannical Gladiator's Baton of Light
+				i(99767),	-- Tyrannical Gladiator's Bonegrinder
+				i(99934),	-- Tyrannical Gladiator's Fleshslicer
+				i(99780),	-- Tyrannical Gladiator's Longbow
+				i(99892),	-- Tyrannical Gladiator's Pike
+				i(99834),	-- Tyrannical Gladiator's Rifle
+				i(99804),	-- Tyrannical Gladiator's Touch of Deafeat
+				i(94324),	-- Tyrannical Gladiator's Bonegrinder
+				i(94314),	-- Tyrannical Gladiator's Fleshslicer
+				i(94303),	-- Tyrannical Gladiator's Longbow
+				i(94319),	-- Tyrannical Gladiator's Pike
+				i(94309),	-- Tyrannical Gladiator's Rifle
+				i(99962),	-- Tyrannical Gladiator's Shiv
+				i(99969),	-- Tyrannical Gladiator's Baton of Light
+				i(99985),	-- Tyrannical Gladiator's Bonegrinder
+				i(99975),	-- Tyrannical Gladiator's Fleshslicer
+				i(99964),	-- Tyrannical Gladiator's Longbow
+				i(99980),	-- Tyrannical Gladiator's Pike
+				i(99970),	-- Tyrannical Gladiator's Rifle
+				i(99966),	-- Tyrannical Gladiator's Touch of Deafeat
+				i(91200),	-- Tyrannical Gladiator's Shiv
+				i(91799),	-- Tyrannical Gladiator's Mail Leggings
+				i(91089),	-- Tyrannical Gladiator's Bonegrinder
+				i(91394),	-- Tyrannical Gladiator's Fleshslicer
+				i(91107),	-- Tyrannical Gladiator's Longbow
+				i(91307),	-- Tyrannical Gladiator's Pike
+				i(91201),	-- Tyrannical Gladiator's Rifle
+				i(99833),	-- Tyrannical Gladiator's Shiv
+				i(99939),	-- Tyrannical Gladiator's Baton of Light
+				i(99767),	-- Tyrannical Gladiator's Bonegrinder
+				i(99934),	-- Tyrannical Gladiator's Fleshslicer
+				i(99780),	-- Tyrannical Gladiator's Longbow
+				i(99892),	-- Tyrannical Gladiator's Pike
+				i(99834),	-- Tyrannical Gladiator's Rifle
+				i(99804),	-- Tyrannical Gladiator's Touch of Deafeat
+				i(94324),	-- Tyrannical Gladiator's Bonegrinder
+				i(94314),	-- Tyrannical Gladiator's Fleshslicer
+				i(94303),	-- Tyrannical Gladiator's Longbow
+				i(94319),	-- Tyrannical Gladiator's Pike
+				i(94309),	-- Tyrannical Gladiator's Rifle
+				i(99962),	-- Tyrannical Gladiator's Shiv
+				i(99969),	-- Tyrannical Gladiator's Baton of Light
+				i(99985),	-- Tyrannical Gladiator's Bonegrinder
+				i(99975),	-- Tyrannical Gladiator's Fleshslicer
+				i(99964),	-- Tyrannical Gladiator's Longbow
+				i(99980),	-- Tyrannical Gladiator's Pike
+				i(99970),	-- Tyrannical Gladiator's Rifle
+				i(99966),	-- Tyrannical Gladiator's Touch of Deafeat
+				i(91200),	-- Tyrannical Gladiator's Shiv
+			}),
+			cl(SHAMAN, {
+				i(91799),	-- Tyrannical Gladiator's Mail Leggings
+			}),
+			f(53, {
+				i(91330),	-- Tyrannical Gladiator's Medallion of Cruelty (H)
+				i(91334),	-- Tyrannical Gladiator's Medallion of Meditation (H)
+				i(91332),	-- Tyrannical Gladiator's Medallion of Tenacity (H)
+				i(91329),	-- Tyrannical Gladiator's Medallion of Cruelty (A)
+				i(91333),	-- Tyrannical Gladiator's Medallion of Meditation (A)
+				i(91331),	-- Tyrannical Gladiator's Medallion of Tenacity (A)
+				i(91329),	-- Tyrannical Gladiator's Medallion of Cruelty (A)
+				i(91333),	-- Tyrannical Gladiator's Medallion of Meditation (A)
+				i(91331),	-- Tyrannical Gladiator's Medallion of Tenacity (A)
+				i(91330),	-- Tyrannical Gladiator's Medallion of Cruelty (H)
+				i(91334),	-- Tyrannical Gladiator's Medallion of Meditation (H)
+				i(91332),	-- Tyrannical Gladiator's Medallion of Tenacity (H)
+			}),
+		}),
+		n(-677, {
+			n(-319, {
+				i(100185),	-- Grievous Gladiator's Bonegrinder
+				i(100241),	-- Grievous Gladiator's Heavy Crossbow
+				i(100278),	-- Grievous Gladiator's Staff
+				i(100554),	-- Grievous Gladiator's Bonegrinder
+				i(103178),	-- Grievous Gladiator's Heavy Crossbow
+				i(103197),	-- Grievous Gladiator's
+				i(103140),	-- Grievous Gladiator's Bonegrinder
+				i(100556),	-- Grievous Gladiator's Heavy Crossbow
+				i(100537),	-- Grievous Gladiator's Staff
+				i(102808),	-- Grievous Gladiator's Bonegrinder
+				i(102810),	-- Grievous Gladiator's Heavy Crossbow
+				i(102792),	-- Grievous Gladiator's Staff
+				i(100186),	-- Grievous Gladiator's Bonegrinder
+				i(100242),	-- Grievous Gladiator's Heavy Crossbow
+				i(100279),	-- Grievous Gladiator's Staff
+				i(100535),	-- Grievous Gladiator's Touch of Defeat
+				i(100536),	-- Grievous Gladiator's Spellblade
+			}),
+		}),
+		n(-678, {
+			n(-319, {
+				i(102611),	-- Prideful Gladiator's Bonegrinder
+				i(102613),	-- Prideful Gladiator's Heavy Crossbow
+				i(102595),	-- Prideful Gladiator's Staff
+				i(103337),	-- Prideful Gladiator's Bonegrinder
+				i(103375),	-- Prideful Gladiator's Heavy Crossbow
+				i(103394),	-- Prideful Gladiator's Staff
+				i(102985),	-- Prideful Gladiator's Bonegrinder
+				i(103003),	-- Prideful Gladiator's Heavy Crossbow
+				i(103021),	-- Prideful Gladiator's Staff
+			}),
+		}),
 	}),
 });
