@@ -3,6 +3,7 @@ import os.path
 import re
 import sys
 import traceback
+import time
 
 import requests
 from bs4 import BeautifulSoup
@@ -40,13 +41,15 @@ def harvest_things(thing_type, max_id_path, db_path):
                 int(re.search(r"i\((\d+)", str(line)).group(1)) if line != "" else 0
             )
 
-    with open(db_path, "a") as things:
-        try:
-            for thing_id in range(max_harvested_id + 1, max_id + 1):
-                patch = get_thing_patch(thing_type, thing_id)
-                if patch != "":
-                    logging.info(f"{thing_type} {thing_id} added in patch {patch}")
-                    things.write(f"i({thing_id}, {patch})\n")
-        # catching all exceptions just to salvage collected items if we run for hours
-        except Exception:
-            logging.error(traceback.format_exc())
+    t_end = time.monotonic() + 60 * 1
+    while time.monotonic() < t_end:
+        with open(db_path, "a") as things:
+            try:
+                for thing_id in range(max_harvested_id + 1, max_id + 1):
+                    patch = get_thing_patch(thing_type, thing_id)
+                    if patch != "":
+                        logging.info(f"{thing_type} {thing_id} added in patch {patch}")
+                        things.write(f"i({thing_id}, {patch})\n")
+            # catching all exceptions just to salvage collected items if we run for hours
+            except Exception:
+                logging.error(traceback.format_exc())
