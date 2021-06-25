@@ -15063,17 +15063,24 @@ function app:ApplyLockedWindows()
 end
 function app:BuildSearchResponse(groups, field, value)
 	if groups then
-		local t;
+		local t, response, v;
 		for i,group in ipairs(groups) do
-			local v = group[field];
+			v = group[field];
+			response = nil;
 			if v and (v == value or (field == "requireSkill" and app.SpellIDToSkillID[app.SpecializationSpellIDs[v] or 0] == value)) then
-				if not t then t = {}; end
-				tinsert(t, CloneData(group));
+				if not t then t = { CloneData(group) };
+				else tinsert(t, CloneData(group)); end
 			elseif group.g then
-				local response = app:BuildSearchResponse(group.g, field, value);
+				response = app:BuildSearchResponse(group.g, field, value);
 				if response then
-					if not t then t = {}; end
-					tinsert(t, setmetatable({g=response}, { __index = group }));
+					local groupCopy = {};
+					-- set the same metatable
+					setmetatable(groupCopy, getmetatable(group));
+					-- copy direct group values only
+					MergeProperties(groupCopy, group);
+					groupCopy.g = response;
+					if not t then t = { groupCopy };
+					else tinsert(t, groupCopy); end
 				end
 			end
 		end
@@ -16975,9 +16982,10 @@ app:GetWindow("Random", UIParent, function(self)
 		self:BaseUpdate(true);
 	end
 end);
-app:GetWindow("Tradeskills", UIParent, function(self, ...)
+app:GetWindow("Tradeskills", UIParent, function(self, force, got)
 	if not self.initialized then
 		self.initialized = true;
+		force = true;
 		self:SetMovable(false);
 		self:SetUserPlaced(false);
 		self:SetClampedToScreen(false);
@@ -17105,15 +17113,6 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 							if response then tinsert(self.data.g, app.CreateDifficulty(18, {icon = app.asset("Category_Event"),g=response}));  end
 							response = app:BuildSearchResponse(app.Categories.Craftables, "requireSkill", requireSkill);
 							if response then tinsert(self.data.g, {text=LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM,icon = app.asset("Category_Crafting"),g=response});  end
-
-							self.data.indent = 0;
-							self.data.visible = true;
-							BuildGroups(self.data, self.data.g);
-							app.UpdateGroups(self.data, self.data.g);
-							if not self.data.expanded then
-								self.data.expanded = true;
-								ExpandGroupsRecursively(self.data, true);
-							end
 						end
 					end
 				end
@@ -17128,16 +17127,12 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 		end
 		self.RefreshRecipes = function(self)
 			if app.CollectibleRecipes then
-				StartCoroutine("RefreshingRecipes", function()
-					local wait = 5;
-					while wait > 0 do
-						wait = wait - 1;
-						coroutine.yield();
-					end
-					self:CacheRecipes();
-					self:Update();
-				end);
+				DelayedCallback(self.CacheAndUpdate, 1, self);
 			end
+		end
+		self.CacheAndUpdate = function(self)
+			self:CacheRecipes();
+			self:Update(true);
 		end
 
 		-- TSM Shenanigans
@@ -17203,7 +17198,6 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 						self:SetVisible(false);
 						return false;
 					end
-					self:Update();
 				end
 				self:RefreshRecipes();
 			elseif e == "TRADE_SKILL_SHOW" then
@@ -17326,10 +17320,16 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 		end
 
 		-- Update the window and all of its row data
-		self.data.progress = 0;
-		self.data.total = 0;
-		UpdateGroups(self.data, self.data.g);
-		self:BaseUpdate(...);
+		if force then
+			self.data.indent = 0;
+			self.data.visible = true;
+			BuildGroups(self.data, self.data.g);
+			if not self.data.expanded then
+				self.data.expanded = true;
+				ExpandGroupsRecursively(self.data, true);
+			end
+		end
+		self:BaseUpdate(force or got, got);
 	end
 end);
 app:GetWindow("WorldQuests", UIParent, function(self, force, got)
