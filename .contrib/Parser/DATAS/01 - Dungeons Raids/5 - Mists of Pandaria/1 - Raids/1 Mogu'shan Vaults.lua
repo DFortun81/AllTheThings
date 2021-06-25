@@ -246,38 +246,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["difficulties"] = { 3, 4 },
 				["groups"] = {
 					n(ZONEDROPS, {
-						["crs"] = {
-							60047, 	-- Amethyst Guardian
-							60051, 	-- Cobalt Guardian
-							60043, 	-- Jade Guardian
-							59915, 	-- Jasper Guardian
-							60009, 	-- Feng the Accursed
-							60143, 	-- Gara'jal the Spiritbindre
-							60701, 	-- Zian of the Endless Shadow <Sorcer King>
-							60708, 	-- Meng the Demented <Mad King>
-							60709, 	-- Qiang the Merciless <Warlord King>
-							60710, 	-- Subetai the Swift <Bandit King>
-							60410, 	-- Elegon
-							60400, 	-- Jan-xi <Emperor's Open Hand>
-							60399,	-- Qin-xi <Emperor's Closed Fist>
-							60043,	-- Jade Guardian
-							61989,	-- Cursed Mogu Sculpture
-							61334,	-- Cursed Mogu Sculpture
-							64183,	-- Enormous Stone Quilen
-							61347,	-- Kingsguard
-							61345,	-- Mogu Archer
-							64063,	-- Mogu'shan Arcanist
-							64068,	-- Mogu'shan Engine Keeper
-							61131,	-- Mogu'shan Secret-Keeper
-							64061,	-- Mogu'shan Warden
-							64947,	-- Mogu'shan Warden
-							61341,	-- Mounted Mogu
-							61250,	-- Sorcerer Mogu
-							60402,	-- Zandalari Fire-Dancer
-							60381,	-- Zandalari Infiltrator
-							60375,	-- Zandalari Skullcharger
-							60386,	-- Zandalari Terror Rider
-						},
 						["groups"] = {
 							i(86238),	-- Pattern: Chestguard of Nemeses
 							i(86272),	-- Pattern: Fists of Lightning
@@ -297,14 +265,12 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							i(87413),	-- Plans: Gauntlets of Unbound Devotion
 							i(87410),	-- Plans: Ornate Battleplate of the Master
 							i(87408),	-- Plans: Unyielding Bloodplate
+							i(86043),	-- Jade Bandit Figurine
+							i(86042),	-- Jade Charioteer Figurine
+							i(86045),	-- Jade Courtesan Figurine
+							i(86044),	-- Jade Magistrate Figurine
+							i(86046),	-- Jade Warlord Figurine
 						},
-					}),
-					n(ZONEDROPS, {
-						i(86043),	-- Jade Bandit Figurine
-						i(86042),	-- Jade Charioteer Figurine
-						i(86045),	-- Jade Courtesan Figurine
-						i(86044),	-- Jade Magistrate Figurine
-						i(86046),	-- Jade Warlord Figurine
 					}),
 					e(679, {	-- The Stone Guard
 						["crs"] = {
@@ -492,38 +458,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["difficulties"] = { 5, 6 },
 				["g"] = {
 					n(ZONEDROPS, {
-						["crs"] = {
-							60047, 	-- Amethyst Guardian
-							60051, 	-- Cobalt Guardian
-							60043, 	-- Jade Guardian
-							59915, 	-- Jasper Guardian
-							60009, 	-- Feng the Accursed
-							60143, 	-- Gara'jal the Spiritbindre
-							60701, 	-- Zian of the Endless Shadow <Sorcer King>
-							60708, 	-- Meng the Demented <Mad King>
-							60709, 	-- Qiang the Merciless <Warlord King>
-							60710, 	-- Subetai the Swift <Bandit King>
-							60410, 	-- Elegon
-							60400, 	-- Jan-xi <Emperor's Open Hand>
-							60399,	-- Qin-xi <Emperor's Closed Fist>
-							60043,	-- Jade Guardian
-							61989,	-- Cursed Mogu Sculpture
-							61334,	-- Cursed Mogu Sculpture
-							64183,	-- Enormous Stone Quilen
-							61347,	-- Kingsguard
-							61345,	-- Mogu Archer
-							64063,	-- Mogu'shan Arcanist
-							64068,	-- Mogu'shan Engine Keeper
-							61131,	-- Mogu'shan Secret-Keeper
-							64061,	-- Mogu'shan Warden
-							64947,	-- Mogu'shan Warden
-							61341,	-- Mounted Mogu
-							61250,	-- Sorcerer Mogu
-							60402,	-- Zandalari Fire-Dancer
-							60381,	-- Zandalari Infiltrator
-							60375,	-- Zandalari Skullcharger
-							60386,	-- Zandalari Terror Rider
-						},
 						["groups"] = {
 							i(86238),	-- Pattern: Chestguard of Nemeses
 							i(86272),	-- Pattern: Fists of Lightning

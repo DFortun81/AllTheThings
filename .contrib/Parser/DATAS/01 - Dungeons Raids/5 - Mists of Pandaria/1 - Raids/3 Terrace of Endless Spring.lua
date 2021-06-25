@@ -148,36 +148,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								i(167052),	-- Spirit of the Spring (PET!)
 								i(89277, {	-- Shoulders of the Shadowy Conqueror
 									["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
-									["g"] = {
-										i(86684),	-- White Tiger Mantle
-										i(86679),	-- White Tiger Pauldrons
-										i(86659),	-- White Tiger Shoulderguards
-										i(86699),	-- Guardian Serpent Mantle
-										i(86708),	-- Guardian Serpent Shoulderguards
-										i(86713),	-- Sha-Skin Mantle
-									},
 								}),
-								i(89278, {	-- Shoulders of the Shadowy Protector
-									i(86634),	-- Yaungol Slayer's Spaulders
-									i(86733),	-- Red Crane Mantle
-									i(86724),	-- Red Crane Shoulderguards
-									i(86738),	-- Red Crane Spaulders
-									i(86689),	-- Firebird's Mantle
-									i(86633),	-- Firebird's Shoulderwraps
-									i(86624),	-- Firebird's Spaulders
-									i(86669),	-- Pauldrons of Resounding Rings
-									i(86664),	-- Shoulderguards of Resounding Rings
-								}),
-								i(89276, {	-- Shoulders of the Shadowy Vanquisher
-									i(86674),	-- Pauldrons of the Lost Catacomb
-									i(86654),	-- Shoulderguards of the Lost Catacomb
-									i(86694),	-- Eternal Blossom Mantle
-									i(86723),	-- Eternal Blossom Shoulderguards
-									i(86644),	-- Eternal Blossom Shoulderwraps
-									i(86649),	-- Eternal Blossom Spaulders
-									i(86714),	-- Mantle of the Burning Scroll
-									i(86639),	-- Spaulders of the Thousandfold Blades
-								}),
+								i(89278),	-- Shoulders of the Shadowy Protector
+								i(89276),	-- Shoulders of the Shadowy Vanquisher
 								i(86893),	-- Jin'ya, Orb of the Waterspeaker
 								i(86910),	-- Spiritsever
 								i(86889),	-- Taoren, the Soul Burner
@@ -199,36 +172,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							cr(60999, e(709, {	-- Sha of Fear
 								i(89274, {	-- Helm of the Shadowy Conqueror
 									["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
-									["g"] = {
-										i(86661),	-- White Tiger Faceguard
-										i(86686),	-- White Tiger Headguard
-										i(86681),	-- White Tiger Helmet
-										i(86702),	-- Guardian Serpent Cowl
-										i(86705),	-- Guardian Serpent Hood
-										i(86710),	-- Sha-Skin Hood
-									},
 								}),
-								i(89275, {	-- Helm of the Shadowy Protector
-									i(86636),	-- Yaungol Slayer's Headguard
-									i(86726),	-- Red Crane Crown
-									i(86736),	-- Red Crane Headpiece
-									i(86730),	-- Red Crane Helm
-									i(86691),	-- Firebird's Faceguard
-									i(86631),	-- Firebird's Headpiece
-									i(86626),	-- Firebird's Helmet
-									i(86666),	-- Faceguard of Resounding Rings
-									i(86673),	-- Helmet of Resounding Rings
-								}),
-								i(89273, {	-- Helm of the Shadowy Vanquisher
-									i(86656),	-- Faceguard of the Lost Catacomb
-									i(86676),	-- Helmet of the Lost Catacomb
-									i(86647),	-- Eternal Blossom Cover
-									i(86721),	-- Eternal Blossom Headguard
-									i(86651),	-- Eternal Blossom Headpiece
-									i(86697),	-- Eternal Blossom Helm
-									i(86717),	-- Hood of the Burning Scroll
-									i(86641),	-- Helmet of the Thousandfold Blades
-								}),
+								i(89275),	-- Helm of the Shadowy Protector
+								i(89273),	-- Helm of the Shadowy Vanquisher
 								i(138805),	-- Illusion: Jade Spirit
 								i(86905),	-- Shin'ka, Execution of Dominion
 								i(86906),	-- Kilrak, Jaws of Terror
@@ -353,36 +299,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(167052),	-- Spirit of the Spring (PET!)
 						i(89246, {	-- Shoulders of the Shadowy Conqueror
 							["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
-							["g"] = {
-								i(85344),	-- White Tiger Mantle
-								i(85339),	-- White Tiger Pauldrons
-								i(85319),	-- White Tiger Shoulderguards
-								i(85359),	-- Guardian Serpent Mantle
-								i(85368),	-- Guardian Serpent Shoulderguards
-								i(85373),	-- Sha-Skin Mantle
-							},
 						}),
-						i(89247, {	-- Shoulders of the Shadowy Protector
-							i(85294),	-- Yaungol Slayer's Spaulders
-							i(85393),	-- Red Crane Mantle
-							i(85384),	-- Red Crane Shoulderguards
-							i(85398),	-- Red Crane Spaulders
-							i(85349),	-- Firebird's Mantle
-							i(85293),	-- Firebird's Shoulderwraps
-							i(85284),	-- Firebird's Spaulders
-							i(85329),	-- Pauldrons of Resounding Rings
-							i(85324),	-- Shoulderguards of Resounding Rings
-						}),
-						i(89248, {	-- Shoulders of the Shadowy Vanquisher
-							i(85334),	-- Pauldrons of the Lost Catacomb
-							i(85314),	-- Shoulderguards of the Lost Catacomb
-							i(85354),	-- Eternal Blossom Mantle
-							i(85383),	-- Eternal Blossom Shoulderguards
-							i(85304),	-- Eternal Blossom Shoulderwraps
-							i(85309),	-- Eternal Blossom Spaulders
-							i(85374),	-- Mantle of the Burning Scroll
-							i(85299),	-- Spaulders of the Thousandfold Blades
-						}),
+						i(89247),	-- Shoulders of the Shadowy Protector
+						i(89248),	-- Shoulders of the Shadowy Vanquisher
 						i(86335),	-- Jin'ya, Orb of the Waterspeaker
 						i(86391),	-- Spiritsever
 						i(86331),	-- Taoren, the Soul Burner
@@ -405,36 +324,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						ach(6825),	-- The Mind-Killer
 						i(89235, {	-- Helm of the Shadowy Conqueror
 							["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
-							["g"] = {
-								i(85321),	-- White Tiger Faceguard
-								i(85346),	-- White Tiger Headguard
-								i(85341),	-- White Tiger Helmet
-								i(85362),	-- Guardian Serpent Cowl
-								i(85365),	-- Guardian Serpent Hood
-								i(85370),	-- Sha-Skin Hood
-							},
 						}),
-						i(89236, {	-- Helm of the Shadowy Protector
-							i(85296),	-- Yaungol Slayer's Headguard
-							i(85386),	-- Red Crane Crown
-							i(85396),	-- Red Crane Headpiece
-							i(85390),	-- Red Crane Helm
-							i(85351),	-- Firebird's Faceguard
-							i(85291),	-- Firebird's Headpiece
-							i(85286),	-- Firebird's Helmet
-							i(85326),	-- Faceguard of Resounding Rings
-							i(85333),	-- Helmet of Resounding Rings
-						}),
-						i(89234, {	-- Helm of the Shadowy Vanquisher
-							i(85316),	-- Faceguard of the Lost Catacomb
-							i(85336),	-- Helmet of the Lost Catacomb
-							i(85307),	-- Eternal Blossom Cover
-							i(85381),	-- Eternal Blossom Headguard
-							i(85311),	-- Eternal Blossom Headpiece
-							i(85357),	-- Eternal Blossom Helm
-							i(85377),	-- Hood of the Burning Scroll
-							i(85301),	-- Helmet of the Thousandfold Blades
-						}),
+						i(89236),	-- Helm of the Shadowy Protector
+						i(89234),	-- Helm of the Shadowy Vanquisher
 						i(138805),	-- Illusion: Jade Spirit
 						i(86386),	-- Shin'ka, Execution of Dominion
 						i(86387),	-- Kilrak, Jaws of Terror
@@ -560,36 +452,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(167052),	-- Spirit of the Spring (PET!)
 						i(89262, {	-- Shoulders of the Shadowy Conqueror
 							["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
-							["g"] = {
-								i(87108),	-- White Tiger Mantle
-								i(87103),	-- White Tiger Pauldrons
-								i(87113),	-- White Tiger Shoulderguards
-								i(87118),	-- Guardian Serpent Mantle
-								i(87123),	-- Guardian Serpent Shoulderguards
-								i(87191),	-- Sha-Skin Mantle
-							},
 						}),
-						i(89263, {	-- Shoulders of the Shadowy Protector
-							i(87006),	-- Yaungol Slayer's Spaulders
-							i(87093),	-- Red Crane Mantle
-							i(87098),	-- Red Crane Shoulderguards
-							i(87088),	-- Red Crane Spaulders
-							i(87133),	-- Firebird's Mantle
-							i(87143),	-- Firebird's Shoulderwraps
-							i(87138),	-- Firebird's Spaulders
-							i(87196),	-- Pauldrons of Resounding Rings
-							i(87201),	-- Shoulderguards of Resounding Rings
-						}),
-						i(89261, {	-- Shoulders of the Shadowy Vanquisher
-							i(86917),	-- Pauldrons of the Lost Catacomb
-							i(86922),	-- Shoulderguards of the Lost Catacomb
-							i(86932),	-- Eternal Blossom Mantle
-							i(86942),	-- Eternal Blossom Shoulderguards
-							i(86937),	-- Eternal Blossom Shoulderwraps
-							i(86927),	-- Eternal Blossom Spaulders
-							i(87011),	-- Mantle of the Burning Scroll
-							i(87128),	-- Spaulders of the Thousandfold Blades
-						}),
+						i(89263),	-- Shoulders of the Shadowy Protector
+						i(89261),	-- Shoulders of the Shadowy Vanquisher
 						i(87170),	-- Jin'ya, Orb of the Waterspeaker
 						i(87166),	-- Spiritsever
 						i(87168),	-- Taoren, the Soul Burner
@@ -620,36 +485,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						ach(6825),	-- The Mind-Killer
 						i(89259, {	-- Helm of the Shadowy Conqueror
 							["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
-							["g"] = {
-								i(87111),	-- White Tiger Faceguard
-								i(87106),	-- White Tiger Headguard
-								i(87101),	-- White Tiger Helmet
-								i(87115),	-- Guardian Serpent Cowl
-								i(87120),	-- Guardian Serpent Hood
-								i(87188),	-- Sha-Skin Hood
-							},
 						}),
-						i(89260, {	-- Helm of the Shadowy Protector
-							i(87004),	-- Yaungol Slayer's Hood
-							i(87096),	-- Red Crane Crown
-							i(87086),	-- Red Crane Headpiece
-							i(87090),	-- Red Crane Helm
-							i(87131),	-- Firebird's Faceguard
-							i(87141),	-- Firebird's Headpiece
-							i(87136),	-- Firebird's Helmet
-							i(87199),	-- Faceguard of Resounding Rings
-							i(87192),	-- Helmet of Resounding Rings
-						}),
-						i(89258, {	-- Helm of the Shadowy Vanquisher
-							i(86920),	-- Faceguard of the Lost Catacomb
-							i(86915),	-- Helmet of the Lost Catacomb
-							i(86934),	-- Eternal Blossom Cover
-							i(86940),	-- Eternal Blossom Headguard
-							i(86925),	-- Eternal Blossom Headpiece
-							i(86929),	-- Eternal Blossom Helm
-							i(87008),	-- Hood of the Burning Scroll
-							i(87126),	-- Helmet of the Thousandfold Blades
-						}),
+						i(89260),	-- Helm of the Shadowy Protector
+						i(89258),	-- Helm of the Shadowy Vanquisher
 						i(138805),	-- Illusion: Jade Spirit
 						i(87176),	-- Shin'ka, Execution of Dominion
 						i(87173),	-- Kilrak, Jaws of Terror
