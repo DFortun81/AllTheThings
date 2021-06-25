@@ -148,18 +148,7 @@ _.NeverImplemented =
 				i(78015),	-- Replica Magister's Gloves
 				i(78017),	-- Replica Magister's Leggings
 				i(78019),	-- Replica Magister's Mantle
-				i(78018),	-- Replica Magister's Robes
-				-- T15 Thunderforged & Heroic Thunderforged (Throne of Thunder)
-				i(97006),	-- Gloves of the Chromatic Hydra
-				i(97007),	-- Hood of the Chromatic Hydra
-				i(97008),	-- Leggings of the Chromatic Hydra
-				i(97009),	-- Robes of the Chromatic Hydra
-				i(97010),	-- Mantle of the Chromatic Hydra
-				i(96262),	-- Gloves of the Chromatic Hydra
-				i(96263),	-- Hood of the Chromatic Hydra
-				i(96264),	-- Leggings of the Chromatic Hydra
-				i(96265),	-- Robes of the Chromatic Hydra
-				i(96266),	-- Mantle of the Chromatic Hydra
+				i(78018),	-- Replica Magister's Robes		
 			}),
 			cl(PRIEST, {
 				-- Possible Unused Level 120/Lv 120 Classtrial
@@ -174,27 +163,6 @@ _.NeverImplemented =
 				i(78036),	-- Replica Devout Robe
 				i(78035),	-- Replica Devout Sandals
 				i(78032),	-- Replica Devout Skirt
-				-- T15 Thunderforged & Heroic Thunderforged (Throne of Thunder)
-				i(97041),	-- Handwraps of the Exorcist
-				i(97042),	-- Cowl of the Exorcist
-				i(97043),	-- Legwraps of the Exorcist
-				i(97044),	-- Robes of the Exorcist
-				i(97045),	-- Mantle of the Exorcist
-				i(97046),	-- Gloves of the Exorcist
-				i(97047),	-- Hood of the Exorcist
-				i(97048),	-- Leggings of the Exorcist
-				i(97049),	-- Raiment of the Exorcist
-				i(97050),	-- Shoulderguards of the Exorcist
-				i(96297),	-- Handwraps of the Exorcist
-				i(96298),	-- Cowl of the Exorcist
-				i(96299),	-- Legwraps of the Exorcist
-				i(96300),	-- Robes of the Exorcist
-				i(96301),	-- Mantle of the Exorcist
-				i(96302),	-- Gloves of the Exorcist
-				i(96303),	-- Hood of the Exorcist
-				i(96304),	-- Leggings of the Exorcist
-				i(96305),	-- Raiment of the Exorcist
-				i(96306),	-- Shoulderguards of the Exorcist
 				i(167111),	-- Unknown
 				i(167112),	-- Unknown
 				i(167113),	-- Unknown
@@ -228,17 +196,6 @@ _.NeverImplemented =
 				i(78049),	-- Replica Dreadmist Robe
 				i(78048),	-- Replica Dreadmist Sandals
 				i(78046),	-- Replica Dreadmist Wraps
-				-- T15 Thunderforged & Heroic Thunderforged (Throne of Thunder)
-				i(97097),	-- Gloves of the Thousandfold Hells
-				i(97098),	-- Hood of the Thousandfold Hells
-				i(97099),	-- Leggings of the Thousandfold Hells
-				i(97100),	-- Robes of the Thousandfold Hells
-				i(97101),	-- Mantle of the Thousandfold Hells
-				i(96353),	-- Gloves of the Thousandfold Hells
-				i(96354),	-- Hood of the Thousandfold Hells
-				i(96355),	-- Leggings of the Thousandfold Hells
-				i(96356),	-- Robes of the Thousandfold Hells
-				i(96357),	-- Mantle of the Thousandfold Hells
 			}),
 			i(153289),	-- Eredar Priestess' Tunic
 			i(105710),	-- Lasso Bracers, Humanoid
@@ -485,47 +442,6 @@ _.NeverImplemented =
 				i(78069),	-- Replica Wildheart Kilt
 				i(78066),	-- Replica Wildheart Spaulders
 				i(78065),	-- Replica Wildheart Vest
-				-- T15 Thunderforged & Heroic Thunderforged (Throne of Thunder)
-				i(96951),	-- Raiment of the Haunted Forest
-				i(96952),	-- Grips of the Haunted Forest
-				i(96953),	-- Headpiece of the Haunted Forest
-				i(96954),	-- Legguards of the Haunted Forest
-				i(96955),	-- Spaulders of the Haunted Forest
-				i(96956),	-- Handwraps of the Haunted Forest
-				i(96957),	-- Helm of the Haunted Forest
-				i(96958),	-- Legwraps of the Haunted Forest
-				i(96959),	-- Robes of the Haunted Forest
-				i(96960),	-- Mantle of the Haunted Forest
-				i(96961),	-- Gloves of the Haunted Forest
-				i(96962),	-- Cover of the Haunted Forest
-				i(96963),	-- Leggings of the Haunted Forest
-				i(96964),	-- Vestment of the Haunted Forest
-				i(96965),	-- Shoulderwraps of the Haunted Forest
-				i(96966),	-- Tunic of the Haunted Forest
-				i(96967),	-- Handguards of the Haunted Forest
-				i(96968),	-- Headguard of the Haunted Forest
-				i(96969),	-- Breeches of the Haunted Forest
-				i(96970),	-- Shoulderguards of the Haunted Forest
-				i(96207),	-- Raiment of the Haunted Forest
-				i(96208),	-- Grips of the Haunted Forest
-				i(96209),	-- Headpiece of the Haunted Forest
-				i(96210),	-- Legguards of the Haunted Forest
-				i(96211),	-- Spaulders of the Haunted Forest
-				i(96212),	-- Handwraps of the Haunted Forest
-				i(96213),	-- Helm of the Haunted Forest
-				i(96214),	-- Legwraps of the Haunted Forest
-				i(96215),	-- Robes of the Haunted Forest
-				i(96216),	-- Mantle of the Haunted Forest
-				i(96217),	-- Gloves of the Haunted Forest
-				i(96218),	-- Cover of the Haunted Forest
-				i(96219),	-- Leggings of the Haunted Forest
-				i(96220),	-- Vestment of the Haunted Forest
-				i(96221),	-- Shoulderwraps of the Haunted Forest
-				i(96222),	-- Tunic of the Haunted Forest
-				i(96223),	-- Handguards of the Haunted Forest
-				i(96224),	-- Headguard of the Haunted Forest
-				i(96225),	-- Breeches of the Haunted Forest
-				i(96226),	-- Shoulderguards of the Haunted Forest
 			}),
 			cl(ROGUE, {
 				i(7950),		-- Armor of Thero-Shan
@@ -546,52 +462,10 @@ _.NeverImplemented =
 				i(78082),	-- Replica Shadowcraft Pants
 				i(78085),	-- Replica Shadowcraft Spaulders
 				i(78079),	-- Replica Shadowcraft Tunic
-				-- T15 Thunderforged & Heroic Thunderforged (Throne of Thunder)
-				i(97051),	-- Nine-Tailed Tunic
-				i(97052),	-- Nine-Tailed Gloves
-				i(97053),	-- Nine-Tailed Helmet
-				i(97054),	-- Nine-Tailed Legguards
-				i(97055),	-- Nine-Tailed Spaulders
-				i(97051),	-- Nine-Tailed Tunic
-				i(97052),	-- Nine-Tailed Gloves
-				i(97053),	-- Nine-Tailed Helmet
-				i(97054),	-- Nine-Tailed Legguards
-				i(97055),	-- Nine-Tailed Spaulders
 				-- Transmog set item that never became available
 				i(130327),	-- Artful Britches
 			}),
 			cl(MONK, {
-				-- T15 Thunderforged & Heroic Thunderforged (Throne of Thunder)
-				i(97011),	-- Fire-Charm Tunic
-				i(97012),	-- Fire-Charm Grips
-				i(97013),	-- Fire-Charm Headpiece
-				i(97014),	-- Fire-Charm Leggings
-				i(97015),	-- Fire-Charm Spaulders
-				i(97016),	-- Fire-Charm Handwraps
-				i(97017),	-- Fire-Charm Helm
-				i(97018),	-- Fire-Charm Legwraps
-				i(97019),	-- Fire-Charm Vest
-				i(97020),	-- Fire-Charm Mantle
-				i(97021),	-- Fire-Charm Chestguard
-				i(97022),	-- Fire-Charm Gauntlets
-				i(97023),	-- Fire-Charm Crown
-				i(97024),	-- Fire-Charm Legguards
-				i(97025),	-- Fire-Charm Shoulderguards
-				i(96267),	-- Fire-Charm Tunic
-				i(96268),	-- Fire-Charm Grips
-				i(96269),	-- Fire-Charm Headpiece
-				i(96270),	-- Fire-Charm Leggings
-				i(96271),	-- Fire-Charm Spaulders
-				i(96272),	-- Fire-Charm Handwraps
-				i(96273),	-- Fire-Charm Helm
-				i(96274),	-- Fire-Charm Legwraps
-				i(96275),	-- Fire-Charm Vest
-				i(96276),	-- Fire-Charm Mantle
-				i(96277),	-- Fire-Charm Chestguard
-				i(96278),	-- Fire-Charm Gauntlets
-				i(96279),	-- Fire-Charm Crown
-				i(96280),	-- Fire-Charm Legguards
-				i(96281),	-- Fire-Charm Shoulderguards
 			}),
 			i(27719),	-- Aldor Leggings of Puissance (never made it to live)
 			i(54685),	-- Archer's Jerkin
@@ -772,37 +646,6 @@ _.NeverImplemented =
 				i(78099),	-- Replica Beaststalker's Mantle
 				i(78098),	-- Replica Beaststalker's Pants
 				i(78096),	-- Replica Beaststalker's Tunic
-				-- T15 Thunderforged & Heroic Thunderforged (Throne of Thunder)
-				i(97056),	-- Tunic of the Witch Doctor
-				i(97057),	-- Handwraps of the Witch Doctor
-				i(97058),	-- Faceguard of the Witch Doctor
-				i(97059),	-- Legwraps of the Witch Doctor
-				i(97060),	-- Mantle of the Witch Doctor
-				i(97061),	-- Cuirass of the Witch Doctor
-				i(97062),	-- Grips of the Witch Doctor
-				i(97063),	-- Helmet of the Witch Doctor
-				i(97064),	-- Legguards of the Witch Doctor
-				i(97065),	-- Spaulders of the Witch Doctor
-				i(97066),	-- Hauberk of the Witch Doctor
-				i(97067),	-- Gloves of the Witch Doctor
-				i(97068),	-- Headpiece of the Witch Doctor
-				i(97069),	-- Kilt of the Witch Doctor
-				i(97070),	-- Shoulderwraps of the Witch Doctor
-				i(96312),	-- Tunic of the Witch Doctor
-				i(96313),	-- Handwraps of the Witch Doctor
-				i(96314),	-- Faceguard of the Witch Doctor
-				i(96315),	-- Legwraps of the Witch Doctor
-				i(96316),	-- Mantle of the Witch Doctor
-				i(96317),	-- Cuirass of the Witch Doctor
-				i(96318),	-- Grips of the Witch Doctor
-				i(96319),	-- Helmet of the Witch Doctor
-				i(96320),	-- Legguards of the Witch Doctor
-				i(96321),	-- Spaulders of the Witch Doctor
-				i(96322),	-- Hauberk of the Witch Doctor
-				i(96323),	-- Gloves of the Witch Doctor
-				i(96324),	-- Headpiece of the Witch Doctor
-				i(96325),	-- Kilt of the Witch Doctor
-				i(96326),	-- Shoulderwraps of the Witch Doctor
 				-- Not added boosted Gear
 				i(122010),	-- Stormseeker Vest
 				i(122012),	-- Stormseeker Sabatons
@@ -852,17 +695,6 @@ _.NeverImplemented =
 				i(78120),	-- Replica Kilt of Elements
 				i(78121),	-- Replica Pauldrons of Elements
 				i(78124),	-- Replica Vest of Elements
-				-- T15 Thunderforged & Heroic Thunderforged (Throne of Thunder)
-				i(96998),	-- Saurok Stalker's Tunic
-				i(96999),	-- Saurok Stalker's Gloves
-				i(97000),	-- Saurok Stalker's Headguard
-				i(97001),	-- Saurok Stalker's Legguards
-				i(97002),	-- Saurok Stalker's Spaulders
-				i(96254),	-- Saurok Stalker's Tunic
-				i(96255),	-- Saurok Stalker's Gloves
-				i(96256),	-- Saurok Stalker's Headguard
-				i(96257),	-- Saurok Stalker's Legguards
-				i(96258),	-- Saurok Stalker's Spaulders
 			}),
 			i(163286),	-- Honorbound Vanguard's Footguards
 			i(163291),	-- Honorbound Vanguard's Strikers
@@ -1107,30 +939,8 @@ _.NeverImplemented =
 				i(157665),	-- Heart-Lesion Vambraces)
 				i(157661),	-- Heart-Lesion Helm
 				i(157663),	-- Heart-Lesion Pauldrons
-				-- T15 Thunderforged & Heroic Thunderforged (Throne of Thunder)
-				i(96941),	-- Breastplate of the All-Consuming Maw
-				i(96942),	-- Gauntlets of the All-Consuming Maw
-				i(96943),	-- Helmet of the All-Consuming Maw
-				i(96944),	-- Greaves of the All-Consuming Maw
-				i(96945),	-- Pauldrons of the All-Consuming Maw
-				i(96946),	-- Chestguard of the All-Consuming Maw
-				i(96947),	-- Handguards of the All-Consuming Maw
-				i(96948),	-- Faceguard of the All-Consuming Maw
-				i(96949),	-- Legguards of the All-Consuming Maw
-				i(96950),	-- Shoulderguards of the All-Consuming Maw
-				i(96197),	-- Breastplate of the All-Consuming Maw
-				i(96198),	-- Gauntlets of the All-Consuming Maw
-				i(96199),	-- Helmet of the All-Consuming Maw
-				i(96200),	-- Greaves of the All-Consuming Maw
-				i(96201),	-- Pauldrons of the All-Consuming Maw
-				i(96202),	-- Chestguard of the All-Consuming Maw
-				i(96203),	-- Handguards of the All-Consuming Maw
-				i(96204),	-- Faceguard of the All-Consuming Maw
-				i(96205),	-- Legguards of the All-Consuming Maw
-				i(96206),	-- Shoulderguards of the All-Consuming Maw
 			}),
 			cl(PALADIN, {
-				
 				i(32153),	-- Chancellor's Lamellar Chestpiece
 				i(32154),	-- Chancellor's Lamellar  Handguards
 				i(32155),	-- Chancellor's Lamellar  Headpiece
@@ -1152,37 +962,6 @@ _.NeverImplemented =
 				i(78140),	-- Replica Lightforge Helm
 				i(78138),	-- Replica Lightforge Legplates
 				i(78141),	-- Replica Lightforge Spaulders
-				-- T15 Thunderforged & Heroic Thunderforged (Throne of Thunder)
-				i(97026),	-- Lightning Emperor's Battleplate
-				i(97027),	-- Lightning Emperor's Gauntlets
-				i(97028),	-- Lightning Emperor's Helmet
-				i(97029),	-- Lightning Emperor's Legplates
-				i(97030),	-- Lightning Emperor's Pauldrons
-				i(97031),	-- Lightning Emperor's Breastplate
-				i(97032),	-- Lightning Emperor's Gloves
-				i(97033),	-- Lightning Emperor's Headguard
-				i(97034),	-- Lightning Emperor's Greaves
-				i(97035),	-- Lightning Emperor's Mantle
-				i(97036),	-- Lightning Emperor's Chestguard
-				i(97037),	-- Lightning Emperor's Handguards
-				i(97038),	-- Lightning Emperor's Faceguard
-				i(97039),	-- Lightning Emperor's Legguards
-				i(97040),	-- Lightning Emperor's Shoulderguards
-				i(96282),	-- Lightning Emperor's Battleplate
-				i(96283),	-- Lightning Emperor's Gauntlets
-				i(96284),	-- Lightning Emperor's Helmet
-				i(96285),	-- Lightning Emperor's Legplates
-				i(96286),	-- Lightning Emperor's Pauldrons
-				i(96287),	-- Lightning Emperor's Breastplate
-				i(96288),	-- Lightning Emperor's Gloves
-				i(96289),	-- Lightning Emperor's Headguard
-				i(96290),	-- Lightning Emperor's Greaves
-				i(96291),	-- Lightning Emperor's Mantle
-				i(96292),	-- Lightning Emperor's Chestguard
-				i(96293),	-- Lightning Emperor's Handguards
-				i(96294),	-- Lightning Emperor's Faceguard
-				i(96295),	-- Lightning Emperor's Legguards
-				i(96296),	-- Lightning Emperor's Shoulderguards
 			}),
 			cl(WARRIOR, {
 				i(154041),	-- Oathsworn Faceguard
@@ -1197,27 +976,6 @@ _.NeverImplemented =
 				i(78156),	-- Replica Helm of Valor
 				i(78158),	-- Replica Legplates of Valor
 				i(78157),	-- Replica Spaulders of Valor
-				-- T15 Thunderforged & Heroic Thunderforged (Throne of Thunder)
-				i(97102), -- Helmet of the Last Mogu
-				i(97103), -- Battleplate of the Last Mogu
-				i(97104), -- Gauntlets of the Last Mogu
-				i(97105), -- Legplates of the Last Mogu
-				i(97106), -- Pauldrons of the Last Mogu
-				i(97107), -- Chestguard of the Last Mogu
-				i(97108), -- Handguards of the Last Mogu
-				i(97109), -- Faceguard of the Last Mogu
-				i(97110), -- Legguards of the Last Mogu
-				i(97111), -- Shoulderguards of the Last Mogu
-				i(96358), -- Helmet of the Last Mogu
-				i(96359), -- Battleplate of the Last Mogu
-				i(96360), -- Gauntlets of the Last Mogu
-				i(96361), -- Legplates of the Last Mogu
-				i(96362), -- Pauldrons of the Last Mogu
-				i(96363), -- Chestguard of the Last Mogu
-				i(96364), -- Handguards of the Last Mogu
-				i(96365), -- Faceguard of the Last Mogu
-				i(96366), -- Legguards of the Last Mogu
-				i(96367), -- Shoulderguards of the Last Mogu
 			}),
 			-- Plate Blue Warfront Pieces
 			i(163412),	-- 7th Legionnaire's Helmet
