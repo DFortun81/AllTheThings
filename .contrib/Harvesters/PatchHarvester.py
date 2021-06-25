@@ -15,12 +15,12 @@ def get_thing_patch(thing_type, thing_id):
 
     page = requests.get(URL)
     if "notFound" in page.url:
-        logging.info(f"Can't find {thing_id} at {URL}!")
+        logging.info(f"Can't find {thing_type} {thing_id} at {URL}!")
         return ""
     soup = BeautifulSoup(page.content, "html.parser")
     patch_string = re.search(r"Added in patch (\d.\d+.\d.\d+)", str(soup)).group(1)
     if patch_string is None:
-        logging.info(f"Can't find patch string for {thing_id} on Wowhead!")
+        logging.info(f"Can't find patch string for {thing_type} {thing_id} on Wowhead!")
         return ""
     return patch_string
 
