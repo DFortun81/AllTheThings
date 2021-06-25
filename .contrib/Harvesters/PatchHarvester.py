@@ -29,6 +29,7 @@ def get_thing_patch(thing_type, thing_id):
 
 
 def harvest_things(thing_type, max_id_path, db_path):
+    thing_prefix = thing_type[0]
     with open(max_id_path) as f:
         max_id = int(f.readline())
     if not os.path.isfile(db_path):
@@ -38,7 +39,9 @@ def harvest_things(thing_type, max_id_path, db_path):
             for line in f:
                 pass
             max_harvested_id = (
-                int(re.search(r"i\((\d+)", str(line)).group(1)) if line != "" else 0
+                int(re.search(fr"{thing_prefix}\((\d+)", str(line)).group(1))
+                if line != ""
+                else 0
             )
 
     time_end = time.monotonic() + 60 * 1
@@ -50,7 +53,7 @@ def harvest_things(thing_type, max_id_path, db_path):
                 patch = get_thing_patch(thing_type, thing_id)
                 if patch != "":
                     logging.info(f"{thing_type} {thing_id} added in patch {patch}")
-                    things.write(f"i({thing_id}, {patch})\n")
+                    things.write(f"{thing_prefix}({thing_id}, {patch})\n")
         # catching all exceptions just to salvage collected items if we run for hours
         except Exception:
             logging.error(traceback.format_exc())
