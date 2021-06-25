@@ -17,6 +17,7 @@ _.Zones =
 				i(179311),	-- Oxxein Lockbox
 				i(172957, {	-- Atonement Crypt Key
 					["description"] = "Used to open the crypts around |cFFFFFFFF70.1, 55.2|r.",
+					["sourceQuests"] = { 57928 },	-- Atonement Crypt Key
 				}),
 				i(182703, {	-- Bubbling Red Muck Dye
 					["description"] = "Drops from mobs or |cFFFFFFFFDiscarded Vials|r in the Blistering Bog area (|cFFFFFFFF35.7, 32.7|r).",
