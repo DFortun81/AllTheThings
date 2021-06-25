@@ -482,31 +482,9 @@ _.Instances = { tier(4, {	-- Cataclysm
 							}),
 							i(152978),	-- Fandral's Pet Carrier (PET!)
 							i(122304),	-- Fandral's Seed Pouch (TOY!)
-							i(71681, {	-- Mantle of the Fiery Conqueror
-								i(71275),	-- Mantle of the Cleansing Flame
-								i(71280),	-- Shoulderwraps of the Cleansing Flame
-								i(71285),	-- Balespider's Mantle
-								i(71095),	-- Immolation Mantle
-								i(71067),	-- Immolation Pauldrons
-								i(70946),	-- Immolation Shoulderguards
-							}),
-							i(71688, {	-- Mantle of the Fiery Protector
-								i(71053),	-- Flamewaker's Spaulders
-								i(71305),	-- Erupting Volcanic Spaulders
-								i(71295),	-- Erupting Volcanic Shoulderwraps
-								i(71300),	-- Erupting Volcanic Mantle
-								i(71072),	-- Pauldrons of the Molten Giant
-								i(70941),	-- Shoulderguards of the Molten Giant
-							}),
-							i(71674, {	-- Mantle of the Fiery Vanquisher
-								i(71290),	-- Firehawk Mantle
-								i(71101),	-- Obsidian Arborweave Spaulders
-								i(71106),	-- Obsidian Arborweave Mantle
-								i(71111),	-- Obsidian Arborweave Shoulderwraps
-								i(71049),	-- Dark Phoenix Spaulders
-								i(70951),	-- Elementium Deathplate Shoulderguards
-								i(71062),	-- Elementium Deathplate Pauldrons
-							}),
+							i(71681),	-- Mantle of the Fiery Conqueror
+							i(71688),	-- Mantle of the Fiery Protector
+							i(71674),	-- Mantle of the Fiery Vanquisher
 							i(69897),	-- Fandral's Flamescythe
 							i(71347),	-- Stinger of the Flaming Scorpion
 							i(71348),	-- Flowform Choker
@@ -525,31 +503,9 @@ _.Instances = { tier(4, {	-- Cataclysm
 						["creatureID"] = 52409,
 						["g"] = {
 							ach(5855),	-- Ragnar-O's
-							i(71675, {	-- Helm of the Fiery Conqueror
-								i(71272),	-- Cowl of the Cleansing Flame
-								i(71277),	-- Hood of the Cleansing Flame
-								i(71282),	-- Balespider's Hood
-								i(71093),	-- Immolation Headguard
-								i(70948),	-- Immolation Faceguard
-								i(71065),	-- Immolation Helmet
-							}),
-							i(71682, {	-- Helm of the Fiery Protector
-								i(71051),	-- Flamewaker's Headguard
-								i(71293),	-- Erupting Volcanic Headpiece
-								i(71298),	-- Erupting Volcanic Faceguard
-								i(71303),	-- Erupting Volcanic Helmet
-								i(70944),	-- Faceguard of the Molten Giant
-								i(71070),	-- Helmet of the Molten Giant
-							}),
-							i(71668, {	-- Helm of the Fiery Vanquisher
-								i(71287),	-- Firehawk Hood
-								i(71098),	-- Obsidian Arborweave Headpiece
-								i(71103),	-- Obsidian Arborweave Helm
-								i(71108),	-- Obsidian Arborweave Cover
-								i(71047),	-- Dark Phoenix Helmet
-								i(70954),	-- Elementium Deathplate Faceguard
-								i(71060),	-- Elementium Deathplate Helmet
-							}),
+							i(71675),	-- Helm of the Fiery Conqueror
+							i(71682),	-- Helm of the Fiery Protector
+							i(71668),	-- Helm of the Fiery Vanquisher
 							i(69224),	-- Smoldering Egg of Millagazor (MOUNT!)
 							i(175158, {	-- Flames of Fury (Bag of Tricks addition)
 								["races"] = { VULPERA },
@@ -736,31 +692,9 @@ _.Instances = { tier(4, {	-- Cataclysm
 								crit(4),	-- Fiery Tornado
 							}),
 							ach(5809),	-- Heroic: Alysrazor
-							i(71679, {	-- Chest of the Fiery Conqueror
-								i(71530),	-- Robes of the Cleansing Flame
-								i(71535),	-- Vestment of the Cleansing Flame
-								i(71597),	-- Balespider's Robes
-								i(71512),	-- Immolation Battleplate
-								i(71517),	-- Immolation Breastplate
-								i(71522),	-- Immolation Chestguard
-							}),
-							i(71686, {	-- Chest of the Fiery Protector
-								i(71501),	-- Flamewaker's Tunic
-								i(71542),	-- Erupting Volcanic Tunic
-								i(71547),	-- Erupting Volcanic Cuirass
-								i(71552),	-- Erupting Volcanic Hauberk
-								i(71600),	-- Battleplate of the Molten Giant
-								i(71604),	-- Chestguard of the Molten Giant
-							}),
-							i(71672, {	-- Chest of the Fiery Vanquisher
-								i(71510),	-- Firehawk Robes
-								i(71486),	-- Obsidian Arborweave Raiment
-								i(71494),	-- Obsidian Arborweave Tunic
-								i(71499),	-- Obsidian Arborweave Vestment
-								i(71537),	-- Dark Phoenix Tunic
-								i(71476),	-- Elementium Deathplate Breastplate
-								i(71481),	-- Elementium Deathplate Chestguard
-							}),
+							i(71679),	-- Chest of the Fiery Conqueror
+							i(71686),	-- Chest of the Fiery Protector
+							i(71672),	-- Chest of the Fiery Vanquisher
 							i(71665),	-- Flametalon of Alysrazor (MOUNT!)
 							i(71427),	-- Alysra's Razor
 							i(71430),	-- Greathelm of the Voracious Maw
@@ -789,31 +723,9 @@ _.Instances = { tier(4, {	-- Cataclysm
 								crit(5),	-- Shatterstone
 							}),
 							ach(5806),	-- Heroic: Shannox
-							i(71678, {	-- Leggings of the Fiery Conqueror
-								i(71529),	-- Legwraps of the Cleansing Flame
-								i(71534),	-- Leggings of the Cleansing Flame
-								i(71596),	-- Balespider's Leggings
-								i(71515),	-- Immolation Legplates
-								i(71520),	-- Immolation Greaves
-								i(71525),	-- Immolation Legguards
-							}),
-							i(71685, {	-- Leggings of the Fiery Protector
-								i(71504),	-- Flamewaker's Legguards
-								i(71545),	-- Erupting Volcanic Legwraps
-								i(71550),	-- Erupting Volcanic Legguards
-								i(71555),	-- Erupting Volcanic Kilt
-								i(71602),	-- Legplates of the Molten Giant
-								i(71607),	-- Legguards of the Molten Giant
-							}),
-							i(71671, {	-- Leggings of the Fiery Vanquisher
-								i(71509),	-- Firehawk Leggings
-								i(71489),	-- Obsidian Arborweave Legguards
-								i(71493),	-- Obsidian Arborweave Legwraps
-								i(71498),	-- Obsidian Arborweave Leggings
-								i(71540),	-- Dark Phoenix Legguards
-								i(71479),	-- Elementium Deathplate Greaves
-								i(71484),	-- Elementium Deathplate Legguards
-							}),
+							i(71678),	-- Leggings of the Fiery Conqueror
+							i(71685),	-- Leggings of the Fiery Protector
+							i(71671),	-- Leggings of the Fiery Vanquisher
 							i(152975),	-- Smoldering Treat (PET!)
 							i(71445),	-- Skullstealer Greataxe
 							i(71441),	-- Feeding Frenzy
@@ -836,31 +748,9 @@ _.Instances = { tier(4, {	-- Cataclysm
 						["g"] = {
 							ach(5805),	-- Heroic: Baleroc
 							ach(5830),	-- Share the Pain
-							i(71676, {	-- Gauntlets of the Fiery Conqueror
-								i(71527),	-- Handwraps of the Cleansing Flame
-								i(71532),	-- Gloves of the Cleansing Flame
-								i(71594),	-- Balespider's Handwraps
-								i(71513),	-- Immolation Gauntlets
-								i(71518),	-- Immolation Gloves
-								i(71523),	-- Immolation Handguards
-							}),
-							i(71683, {	-- Gauntlets of the Fiery Protector
-								i(71502),	-- Flamewaker's Gloves
-								i(71543),	-- Erupting Volcanic Handwraps
-								i(71548),	-- Erupting Volcanic Grips
-								i(71553),	-- Erupting Volcanic Gloves
-								i(71601),	-- Gauntlets of the Molten Giant
-								i(71605),	-- Handguards of the Molten Giant
-							}),
-							i(71669, {	-- Gauntlets of the Fiery Vanquisher
-								i(71507),	-- Firehawk Gloves
-								i(71487),	-- Obsidian Arborweave Grips
-								i(71491),	-- Obsidian Arborweave Handwraps
-								i(71496),	-- Obsidian Arborweave Gloves
-								i(71538),	-- Dark Phoenix Gloves
-								i(71482),	-- Elementium Deathplate Handguards
-								i(71477),	-- Elementium Deathplate Gauntlets
-							}),
+							i(71676),	-- Gauntlets of the Fiery Conqueror
+							i(71683),	-- Gauntlets of the Fiery Protector
+							i(71669),	-- Gauntlets of the Fiery Vanquisher
 							i(152977),	-- Vibrating Stone (PET!)
 							i(71454),	-- Gatecrasher
 							i(71460),	-- Shard of Torment
@@ -886,31 +776,9 @@ _.Instances = { tier(4, {	-- Cataclysm
 							}),
 							i(152978),	-- Fandral's Pet Carrier (PET!)
 							i(122304),	-- Fandral's Seed Pouch (TOY!)
-							i(71680, {	-- Shoulders of the Fiery Conqueror
-								i(71531),	-- Mantle of the Cleansing Flame
-								i(71536),	-- Shoulderwraps of the Cleansing Flame
-								i(71598),	-- Balespider's Mantle
-								i(71516),	-- Immolation Pauldrons
-								i(71521),	-- Immolation Mantle
-								i(71526),	-- Immolation Shoulderguards
-							}),
-							i(71687, {	-- Shoulders of the Fiery Protector
-								i(71505),	-- Flamewaker's Spaulders
-								i(71546),	-- Erupting Volcanic Mantle
-								i(71551),	-- Erupting Volcanic Spaulders
-								i(71556),	-- Erupting Volcanic Shoulderwraps
-								i(71603),	-- Pauldrons of the Molten Giant
-								i(71608),	-- Shoulderguards of the Molten Giant
-							}),
-							i(71673, {	-- Shoulders of the Fiery Vanquisher
-								i(71511),	-- Firehawk Mantle
-								i(71490),	-- Obsidian Arborweave Spaulders
-								i(71495),	-- Obsidian Arborweave Mantle
-								i(71500),	-- Obsidian Arborweave Shoulderwraps
-								i(71541),	-- Dark Phoenix Spaulders
-								i(71480),	-- Elementium Deathplate Pauldrons
-								i(71485),	-- Elementium Deathplate Shoulderguards
-							}),
+							i(71680),	-- Shoulders of the Fiery Conqueror
+							i(71687),	-- Shoulders of the Fiery Protector
+							i(71673),	-- Shoulders of the Fiery Vanquisher
 							i(71466),	-- Fandral's Flamescythe
 							i(71473),	-- Stinger of the Flaming Scorpion
 							i(71472),	-- Flowform Choker
@@ -932,31 +800,9 @@ _.Instances = { tier(4, {	-- Cataclysm
 								title(190),	-- Firelord
 							}),
 							ach(5855),	-- Ragnar-O's
-							i(71677, {	-- Crown of the Fiery Conqueror
-								i(71528),	-- Cowl of the Cleansing Flame
-								i(71533),	-- Hood of the Cleansing Flame
-								i(71595),	-- Balespider's Hood
-								i(71524),	-- Immolation Faceguard
-								i(71514),	-- Immolation Helmet
-								i(71519),	-- Immolation Headguard
-							}),
-							i(71684, {	-- Crown of the Fiery Protector
-								i(71503),	-- Flamewaker's Headguard
-								i(71544),	-- Erupting Volcanic Faceguard
-								i(71549),	-- Erupting Volcanic Helmet
-								i(71554),	-- Erupting Volcanic Headpiece
-								i(71599),	-- Helmet of the Molten Giant
-								i(71606),	-- Faceguard of the Molten Giant
-							}),
-							i(71670, {	-- Crown of the Fiery Vanquisher
-								i(71508),	-- Firehawk Hood
-								i(71488),	-- Obsidian Arborweave Headpiece
-								i(71492),	-- Obsidian Arborweave Helm
-								i(71497),	-- Obsidian Arborweave Cover
-								i(71539),	-- Dark Phoenix Helmet
-								i(71478),	-- Elementium Deathplate Helmet
-								i(71483),	-- Elementium Deathplate Faceguard
-							}),
+							i(71677),	-- Crown of the Fiery Conqueror
+							i(71684),	-- Crown of the Fiery Protector
+							i(71670),	-- Crown of the Fiery Vanquisher
 							i(69224),	-- Smoldering Egg of Millagazor (MOUNT!)
 							i(175158, {	-- Flames of Fury (Bag of Tricks addition)
 								["races"] = { VULPERA },
