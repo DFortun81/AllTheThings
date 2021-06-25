@@ -1447,8 +1447,8 @@ _.Zones =
 							}),
 						})),
 						n(-920, sharedData({
-							["customCollect"] = { "SL_COV_NEC" },
-							["u"] = REMOVED_FROM_GAME,
+								["customCollect"] = { "SL_COV_NEC" },
+								["u"] = REMOVED_FROM_GAME,
 							}, {
 							i(183446, {	-- Sinful Gladiator's Cleaver
 								["cost"] = { { "c", 1602, 1800 } },
@@ -1488,8 +1488,8 @@ _.Zones =
 							}),
 						})),
 						n(-929, sharedData({
-							["customCollect"] = { "SL_COV_NFA" },
-							["u"] = REMOVED_FROM_GAME,
+								["customCollect"] = { "SL_COV_NFA" },
+								["u"] = REMOVED_FROM_GAME,
 							}, {
 							i(179543, {	-- Sinful Gladiator's Bludgeon
 								["cost"] = { { "c", 1602, 1800 } },
@@ -1529,8 +1529,8 @@ _.Zones =
 							}),
 						})),
 						n(-949, sharedData({
-							["customCollect"] = { "SL_COV_VEN" },
-							["u"] = REMOVED_FROM_GAME,
+								["customCollect"] = { "SL_COV_VEN" },
+								["u"] = REMOVED_FROM_GAME,
 							}, {
 							i(182406, {	-- Sinful Gladiator's Battlestave
 								["cost"] = { { "c", 1602, 1800 } },
