@@ -437,22 +437,6 @@ _.Zones =
 						i(4942),	-- Tiger Hide Boots
 					},
 				}),
-				q(25444, {	-- Da Perfect Spies
-					["timeline"] = {
-						"added 3.3.3.11573",
-						"removed 4.0.1.10000",
-					},
-				}),
-				q(25480, {	-- Dance Of De Spirits
-					["sourceQuest"] = 25470,	-- Lady Of Da Tigers
-					["timeline"] = {
-						"added 3.3.3.11573",
-						"removed 4.0.1.10000",
-					},
-					["g"] = {
-						i(54653),	-- Darkspear Pride (TOY!)
-					},
-				}),
 				q(40607, {	-- Demons Among Us
 					["qg"] = 100873,	-- Allari the Souleater
 					["lvl"] = lvlsquish(98, 10, 98),
@@ -673,16 +657,6 @@ _.Zones =
 							["itemID"] = 4986,	-- Flawed Power Stone
 							["questID"] = 924,	-- The Demon Seed
 						},
-					},
-				}),
-				q(25446, {	-- Frogs Away!
-					["sourceQuest"] = 25444,	-- Da Perfect Spies
-					["g"] = {
-						i(53637),	-- Sack o' Frogs
-					},
-					["timeline"] = {
-						"added 3.3.3.11573",
-						"removed 4.0.1.10000",
 					},
 				}),
 				q(25173, {	-- From Bad to Worse
@@ -922,13 +896,6 @@ _.Zones =
 					},
 					["timeline"] = {
 						"added 7.0.1.20796",
-					},
-				}),
-				q(25470, {	-- Lady Of Da Tigers
-					["sourceQuest"] = 25446,	-- Frogs Away!
-					["timeline"] = {
-						"added 3.3.3.11573",
-						"removed 4.0.1.10000",
 					},
 				}),
 				q(5441, {	-- Lazy Peons
@@ -1194,13 +1161,6 @@ _.Zones =
 						objective(1, {	-- 0/4 Durotar Tiger Fur
 							["provider"] = { "i", 4892 },	-- Durotar Tiger Fur
 						}),
-					},
-				}),
-				q(25495, {	-- Preparin' For Battle
-					["sourceQuest"] = 25461,	-- Trollin' For Volunteers
-					["timeline"] = {
-						"added 3.3.3.11573",
-						"removed 4.0.1.10000",
 					},
 				}),
 				q(25168, {	-- Purge the Valley
@@ -2032,13 +1992,6 @@ _.Zones =
 						recipe(982),		-- Revive Pet
 					},
 				}),
-				q(25461, {	-- Trollin' For Volunteers
-					["sourceQuest"] = 25480,	-- Dance Of De Spirits
-					["timeline"] = {
-						"added 3.3.3.11573",
-						"removed 4.0.1.10000",
-					},
-				}),
 				q(2380, {	-- To Orgrimmar!
 					["qg"] = 3170,	-- Kaplak
 					["coord"] = { 51.98, 43.70, DUROTAR },
@@ -2230,13 +2183,6 @@ _.Zones =
 						}),
 						i(4946),	-- Lightweight Boots
 						i(4940),	-- Veiled Grips
-					},
-				}),
-				q(25445, {	-- Zalazane's Fall
-					["sourceQuest"] = 25495,	-- Preparin' For Battle
-					["timeline"] = {
-						"added 3.3.3.11573",
-						"removed 4.0.1.10000",
 					},
 				}),
 			}),

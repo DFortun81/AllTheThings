@@ -1,20 +1,16 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
-
--- TODO: format
 _.Holidays =
 {
-	{	-- Call of the Scarab
-		["holidayID"] = 1574965,	-- Call of the Scarab
-		["u"] = 22,					-- Micro-Holiday Filter
-		["g"] = {
-			{	-- World Quests
-				["npcID"] = -34,	-- World Quests
+	holiday(1574965, {	-- Call of the Scarab
+		["u"] = MICRO_HOLIDAY,
+		["groups"] = {
+			n(-34, {	-- World Quests
 				--Note!! Reminder WQ's do not get Repeatable//Daily tag.  We treat them with isWQ tag
-				["g"] = bubbleDown({
-						["u"] = 22,	-- Micro-Holiday Filter
-						["description"] = "Call of the Scarab must be available for this World Quests to display.",
+				["groups"] = bubbleDown({
+						["u"] = MICRO_HOLIDAY,
+						["description"] = "Call of the Scarab must be available for this World Quest to display.",
 						["isWorldQuest"] = true,
 					}, {
 					a(q(45737, {	-- Ahn'Qiraj: C'thun [A]
@@ -130,7 +126,7 @@ _.Holidays =
 						},
 					})),
 				}),
-			},
+			}),
 		},
-	},
+	}),
 };

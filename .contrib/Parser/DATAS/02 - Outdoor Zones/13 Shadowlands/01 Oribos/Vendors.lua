@@ -628,9 +628,6 @@ _.Zones =
 						i(185311, {	-- Unchained Aspirant's Sigil of Adaptation
 							["cost"] = { { "c", 1792, 525 } },	-- 525x Honor
 						}),
-						i(185834, {	-- Orboreal Distinguishment
-							["cost"] = { { "c", 1792, 2000 } },	-- 2,000x Honor
-						}),
 					--	Shadowlands S1 (removed)
 						i(175884, {	-- Sinful Aspirant's Badge of Ferocity
 							["cost"] = { { "c", 1792, 525 } },
@@ -1387,6 +1384,20 @@ _.Zones =
 						i(182681, {	-- Vengeful Shock
 							["classes"] = { PALADIN },
 							["cost"] = { { "c", 1602, 200 } },
+						}),
+						i(185834, {	-- Orboreal Distinguishment
+							["cost"] = { { "c", 1792, 2000 } },
+							["g"] = {
+								i(137642),	-- Mark of Honor
+							},
+						}),
+					},
+				}),
+				n(167881, {	-- Ta'lan the Antiquary <Cartel Ta>
+					["coord"] = { 51.3, 43.0, 1672 },
+					["g"] = {
+						i(180971, {	-- Aquamarine Cartel Chit
+							["description"] = "Take this to Acquirer Ta'gosh in Oribos |cffffffff(61.7, 72.3)|r.",
 						}),
 					--	Shadowlands S1 (removed)
 						n(-939, sharedData({["customCollect"] = { "SL_COV_KYR" }},{	-- Covenant: Kyrian

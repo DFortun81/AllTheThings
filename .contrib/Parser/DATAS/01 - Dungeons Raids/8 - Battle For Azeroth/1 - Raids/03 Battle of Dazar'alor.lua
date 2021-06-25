@@ -1268,3 +1268,6 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 		},
 	}),
 })};
+_.HiddenQuestTriggers = {
+	q(55027),	-- Killing Opulence(M)
+};

@@ -297,9 +297,6 @@ _.Zones =
 						i(65337),	-- Emerald Orb
 					},
 				}),
-				q(29029, {	-- Dying Knowledge
-					["u"] = REMOVED_FROM_GAME,
-				}),
 				q(28382, {	-- Enemy at our Roots
 					["provider"] = { "n", 47931 },	-- Denmother Ulrica
 					["coord"] = { 61.8, 26.6, FELWOOD },
@@ -377,9 +374,6 @@ _.Zones =
 				q(28358, {	-- Hunting the Damned
 					["provider"] = { "n", 48349 },	-- Hurak Wildhorn
 					["coord"] = { 44.0, 27.8, FELWOOD },
-				}),
-				q(29028, {	-- Into Jaedenar
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(28384, {	-- Into the Clearing
 					["provider"] = { "n", 47931 },	-- Denmother Ulrica
@@ -969,3 +963,32 @@ _.Zones =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(4448),	-- Corrupted Night Dragon
+		q(4462),	-- Corrupted Night Dragon
+		q(2878),	-- Corrupted Songflower
+		q(4113),	-- Corrupted Songflower
+		q(4114),	-- Corrupted Songflower
+		q(4116),	-- Corrupted Songflower
+		q(4118),	-- Corrupted Songflower
+		q(4401),	-- Corrupted Songflower
+		q(4464),	-- Corrupted Songflower
+		q(4465),	-- Corrupted Songflower
+		q(4444),	-- Corrupted Whipper Root
+		q(4445),	-- Corrupted Whipper Root
+		q(4446),	-- Corrupted Whipper Root
+		q(4461),	-- Corrupted Whipper Root
+		q(1514),	-- Corrupted Windblossom
+		q(4115),	-- Corrupted Windblossom
+		q(4221),	-- Corrupted Windblossom
+		q(4222),	-- Corrupted Windblossom
+		q(4343),	-- Corrupted Windblossom
+		q(4403),	-- Corrupted Windblossom
+		q(4466),	-- Corrupted Windblossom
+		q(4467),	-- Corrupted Windblossom
+		q(29029),	-- Dying Knowledge
+		q(29028),	-- Into Jaedenar
+		q(28365),	-- <PH>Drizle Safe
+	}),
+});

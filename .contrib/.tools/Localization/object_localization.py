@@ -33,12 +33,12 @@ def get_localized_obj_name(obj_id, lang_code="en", game_flavor="retail"):
 
     page = requests.get(URL)
     if "notFound" in page.url:
-        logging.warn(f"Can't find {obj_id} at {URL}!")
+        logging.warning(f"Can't find {obj_id} at {URL}!")
         return ""
     soup = BeautifulSoup(page.content, "html.parser")
     heading = soup.find("h1", class_="heading-size-1")
     if heading is None:
-        logging.warn(f"Can't find heading-size-1 for {obj_id} on Wowhead!")
+        logging.warning(f"Can't find heading-size-1 for {obj_id} on Wowhead!")
         return ""
     # not localized names look like [en_obj_name] on Wowhead
     if heading.text.startswith("["):

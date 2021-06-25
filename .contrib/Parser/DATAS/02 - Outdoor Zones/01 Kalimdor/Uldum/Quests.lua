@@ -890,3 +890,11 @@ _.Zones =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(28555),	-- Expel the Envoys
+		q(28270),	-- Riding Shotgun
+		q(28240),	-- Tapped Out
+		q(28255),	-- Vhat's Next?
+	}),
+});

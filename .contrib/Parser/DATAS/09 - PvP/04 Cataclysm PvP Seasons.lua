@@ -4227,3 +4227,194 @@ _.PVP =
 		}),
 	})),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-9979, {	-- Cataclysm
+		n(-672, {	-- Vicious Gladiator: Season 9
+			n(-319, { -- Weapons
+				i(64693),	-- Bloodthirsty Gladiator's Barrier
+				i(64694),	-- Bloodthirsty Gladiator's Baton of Light
+				i(64695),	-- Bloodthirsty Gladiator's Battle Staff (Epic BG Item, never made it out of beta)
+				i(64700),	-- Bloodthirsty Gladiator's Bonecracker (Epic BG Item, never made it out of beta)
+				i(64701),	-- Bloodthirsty Gladiator's Bonegrinder (Epic BG Item, never made it out of beta)
+				i(64717),	-- Bloodthirsty Gladiator's Cleaver (Epic BG Item, never made it out of beta)
+				i(64726),	-- Bloodthirsty Gladiator's Decapitator (Epic BG item never made it out of beta)
+				i(64743),	-- Bloodthirsty Gladiator's Endgame
+				i(64744),	-- Bloodthirsty Gladiator's Energy Staff (Epic BG Item, never made it out of beta)
+				i(64775),	-- Bloodthirsty Gladiator's Fleshslicer (Epic BG item never made it out of beta)
+				i(64755),	-- Bloodthirsty Gladiator's Greatsword (Epic BG item never made it out of beta)
+				i(64752),	-- Bloodthirsty Gladiator's Gravel (Epic BG Item, never made it out of beta)
+				i(64758),	-- Bloodthirsty Gladiator's Hacker (Epic BG Item, never made it out of beta)
+				i(64760),	-- Bloodthirsty Gladiator's Heavy Crossbow (Epic BG item never made it out of beta)
+				i(64783),	-- Bloodthirsty Gladiator's Longbow (Epic BG item never made it out of beta)
+				i(64810),	-- Bloodthirsty Gladiator's Pike (Epic BG item never made it out of beta)
+				i(64816),	-- Bloodthirsty Gladiator's Pummeler (Epic BG Item, never made it out of beta)
+				i(64817),	-- Bloodthirsty Gladiator's Quickblade (Epic BG Item, never made it out of beta)
+				i(64818),	-- Bloodthirsty Gladiator's Redoubt
+				i(64823),	-- Bloodthirsty Gladiator's Reprieve
+				i(64824),	-- Bloodthirsty Gladiator's Rifle (Epic BG item never made it out of beta)
+				i(64825),	-- Bloodthirsty Gladiator's Right Render (Epic BG item never made it out of beta)
+				i(64826),	-- Bloodthirsty Gladiator's Ripper (Epic BG Item, never made it out of beta)
+				i(64848),	-- Bloodthirsty Gladiator's Shanker (Epic BG Item, never made it out of beta)
+				i(64849),	-- Bloodthirsty Gladiator's Shield Wall
+				i(64850),	-- Bloodthirsty Gladiator's Shiv
+				i(64774),	-- Bloodthirsty Gladiator's Slasher (Epic BG item never made it out of beta)
+				i(64858),	-- Bloodthirsty Gladiator's Slicer (Epic BG Item, never made it out of beta)
+				i(64859),	-- Bloodthirsty Gladiator's Spellblade (Epic BG Item, never made it out of beta)
+				i(64860),	-- Bloodthirsty Gladiator's Staff (Epic BG Item, never made it out of beta)
+				i(64861),	-- Bloodthirsty Gladiator's Touch of Defeat
+			}),
+			cl(DEATHKNIGHT, {
+				i(64978),	-- Gladiator's Dreadplate Shoulders
+				i(64979),	-- Gladiator's Dreadplate Legguards
+				i(64980),	-- Gladiator's Dreadplate Helm
+				i(64981),	-- Gladiator's Dreadplate Gauntlets
+				i(64982),	-- Gladiator's Dreadplate Chestpiece
+			}),
+			cl(DRUID, {
+				i(64923),	-- Gladiator's Wyrmhide Spaulders
+				i(64924),	-- Gladiator's Wyrmhide Robes
+				i(64925),	-- Gladiator's Wyrmhide Legguards
+				i(64926),	-- Gladiator's Wyrmhide Helm
+				i(64927),	-- Gladiator's Wyrmhide Gloves
+				i(64968),	-- Gladiator's Kodohide Spaulders
+				i(64969),	-- Gladiator's Kodohide Robes
+				i(64970),	-- Gladiator's Kodohide Legguards
+				i(64971),	-- Gladiator's Kodohide Helm
+				i(64972),	-- Gladiator's Kodohide Gloves
+				i(64983),	-- Gladiator's Dragonhide Spaulders
+				i(64984),	-- Gladiator's Dragonhide Robes
+				i(64985),	-- Gladiator's Dragonhide Legguards
+				i(64986),	-- Gladiator's Dragonhide Helm
+				i(64987),	-- Gladiator's Dragonhide Gloves
+			}),
+			cl(HUNTER, {
+				i(64992),	-- Gladiator's Chain Armor
+				i(64991),	-- Gladiator's Chain Gauntlets
+				i(64990),	-- Gladiator's Chain Helm
+				i(64989),	-- Gladiator's Chain Leggings
+				i(64988),	-- Gladiator's Chain Spaulders
+			}),
+			cl(MAGE, {
+				i(64928),	-- Gladiator's Silk Trousers
+				i(64929),	-- Gladiator's Silk Robe
+				i(64930),	-- Gladiator's Silk Handguards
+				i(64931),	-- Gladiator's Silk Cowl
+				i(64932),	-- Gladiator's Silk Amice
+			}),
+			cl(PRIEST, {
+				i(64938),	-- Gladiator's Satin Robe
+				i(64939),	-- Gladiator's Satin Mantle
+				i(64940),	-- Gladiator's Satin Leggings
+				i(64941),	-- Gladiator's Satin Hood
+				i(64942),	-- Gladiator's Satin Gloves
+				i(64953),	-- Gladiator's Mooncloth Robe
+				i(64954),	-- Gladiator's Mooncloth Mantle
+				i(64955),	-- Gladiator's Mooncloth Leggings
+				i(64956),	-- Gladiator's Mooncloth Helm
+				i(64957),	-- Gladiator's Mooncloth Gloves
+			}),
+			cl(PALADIN, {
+				i(64933),	-- Gladiator's Scaled Shoulders
+				i(64934),	-- Gladiator's Scaled Legguards
+				i(64935),	-- Gladiator's Scaled Helm
+				i(64936),	-- Gladiator's Scaled Gauntlets
+				i(64937),	-- Gladiator's Scaled Chestpiece
+				i(64948),	-- Gladiator's Ornamented Spaulders
+				i(64949),	-- Gladiator's Ornamented Legplates
+				i(64950),	-- Gladiator's Ornamented Headcover
+				i(64951),	-- Gladiator's Ornamented Gloves
+				i(64952),	-- Gladiator's Ornamented Chestguard
+			}),
+			cl(ROGUE, {
+				i(64963),	-- Gladiator's Leather Tunic
+				i(64964),	-- Gladiator's Leather Spaulders
+				i(64965),	-- Gladiator's Leather Legguards
+				i(64966),	-- Gladiator's Leather Helm
+				i(64967),	-- Gladiator's Leather Gloves
+			}),
+			cl(SHAMAN, {
+				i(64961),	-- Gladiator's Linked Gauntlets
+				i(64960),	-- Gladiator's Linked Helm
+				i(64959),	-- Gladiator's Linked Leggings
+				i(64958),	-- Gladiator's Linked Spaulders
+				i(64962),	-- Gladiator's Linked Armor
+				i(65156),	-- Gladiator's Mail Armor
+				i(65155),	-- Gladiator's Mail Gauntlets
+				i(65154),	-- Gladiator's Mail Helm
+				i(65153),	-- Gladiator's Mail Leggings
+				i(65152),	-- Gladiator's Mail Sppaulders
+				i(65151),	-- Gladiator's Ringmail Armor
+				i(65150),	-- Gladiator's Ringmail Gauntlets
+				i(65149),	-- Gladiator's Ringmail Helm
+				i(65148),	-- Gladiator's Ringmail Leggings
+				i(65147),	-- Gladiator's Ringmail Spaulders
+			}),
+			cl(WARLOCK, {
+				i(64973),	-- Gladiator's Felweave Trousers
+				i(64974),	-- Gladiator's Felweave Raiment
+				i(64975),	-- Gladiator's Felweave Handguards
+				i(64976),	-- Gladiator's Felweave Cowl
+				i(64977),	-- Gladiator's Felweave Amice
+			}),
+			cl(WARRIOR, {
+				i(64943),	-- Gladiator's Plate Shoulders
+				i(64944),	-- Gladiator's Plate Legguards
+				i(64945),	-- Gladiator's Plate Helm
+				i(64946),	-- Gladiator's Plate Gauntlets
+				i(64947),	-- Gladiator's Plate Chestpiece
+			}),
+			n(-322, {	-- Back
+				i(60782),	-- Vicious Gladiator's Cloak of Conquest
+				i(60784),	-- Vicious Gladiator's Cloak of Dominance
+				i(60785),	-- Vicious Gladiator's Cloak of Dominance
+			}),
+			n(-326, {	-- Wrist
+				i(60585),	-- Vicious Gladiator's Armwraps of Dominance
+				i(60608),	-- Vicious Gladiator's Armwraps of Dominance
+				i(60588),	-- Vicious Gladiator's Armwraps of Triumph
+				i(60597),	-- Vicious Gladiator's Armwraps of Triumph
+				i(60598),	-- Vicious Gladiator's Armwraps of Triumph
+			}),
+			n(-328, {	-- Waist
+				i(60606),	-- Vicious Gladiator's Belt of Dominance
+				i(60609),	-- Vicious Gladiator's Belt of Dominance
+			}),
+			n(-330, {	-- Feet
+				i(60584),	-- Vicious Gladiator's Boots of Dominance
+				i(60590),	-- Vicious Gladiator's Boots of Triumph
+				i(60610),	-- Vicious Gladiator's Boots of Dominance
+			}),
+			f(51, {	-- Neck
+				i(60666), 	-- Vicious Gladiator's Pendant of Conquest
+			}),
+		}),
+		n(-673, {	-- Ruthless Gladiator: Season 10
+			n(-662, {	-- Elite
+				i(146483),	-- Ensemble: Elite Ruthless Gladiator's Dreadplate Armor
+				i(146481),	-- Ensemble: Elite Ruthless Gladiator's Dragonhide Armor
+				i(146479),	-- Ensemble: Elite Ruthless Gladiator's Chain Armor
+				i(146497),	-- Ensemble: Elite Ruthless Gladiator's Silk Armor
+				i(146495),	-- Ensemble: Elite Ruthless Gladiator's Scaled Armor
+				i(146493),	-- Ensemble: Elite Ruthless Gladiator's Satin Armor
+				i(146487),	-- Ensemble: Elite Ruthless Gladiator's Leather Armor
+				i(146491),	-- Ensemble: Elite Ruthless Gladiator's Ringmail Armor
+				i(146485),	-- Ensemble: Elite Ruthless Gladiator's Felweave Armor
+				i(146489),	-- Ensemble: Elite Ruthless Gladiator's Plate Armor
+			}),
+		}),
+		n(-674, {	-- Cataclysmic Gladiator: Season 11
+			n(-662, {	-- Elite
+				i(146463),	-- Ensemble: Elite Cataclysmic Gladiator's Dreadplate Armor
+				i(146461),	-- Ensemble: Elite Cataclysmic Gladiator's Dragonhide Armor
+				i(146459),	-- Ensemble: Elite Cataclysmic Gladiator's Chain Armor
+				i(146477),	-- Ensemble: Elite Cataclysmic Gladiator's Silk Armor
+				i(146475),	-- Ensemble: Elite Cataclysmic Gladiator's Scaled Armor
+				i(146473),	-- Ensemble: Elite Cataclysmic Gladiator's Satin Armor
+				i(146467),	-- Ensemble: Elite Cataclysmic Gladiator's Leather Armor
+				i(146471),	-- Ensemble: Elite Cataclysmic Gladiator's Ringmail Armor
+				i(146465),	-- Ensemble: Elite Cataclysmic Gladiator's Felweave Armor
+				i(146469),	-- Ensemble: Elite Cataclysmic Gladiator's Plate Armor
+			}),
+		}),
+	}),
+});

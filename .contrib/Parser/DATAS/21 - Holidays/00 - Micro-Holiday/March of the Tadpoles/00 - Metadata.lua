@@ -5,7 +5,7 @@
 _.Holidays =
 {
 	holiday(1572472, {	-- March of the Tadpoles
-		["u"] = 22,	-- Micro-Holiday Filter
+		["u"] = MICRO_HOLIDAY,
 		["maps"] = {
 			114,	-- Borean Tundra
 		},

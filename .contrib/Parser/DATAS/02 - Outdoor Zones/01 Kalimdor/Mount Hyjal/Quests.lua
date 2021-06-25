@@ -1085,6 +1085,11 @@ _.Zones =
 					["provider"] = { "n", 40093 },	-- Subjugated Inferno Lord
 					["sourceQuest"] = 25411,	-- A New Master
 				}),
+				q(25443, {	-- The Name Never Spoken
+					["provider"] = { "n", 39933 },	-- Tyrus Blackhorn
+					["sourceQuest"] = 25411,	-- A New Master
+					["u"] = REMOVED_FROM_GAME,
+				}),				
 				q(29326, {	-- The Nordrassil Summit
 					["provider"] = { "n", 54313 },	-- Thrall
 					["coord"] = { 60.6, 31.4, 198 },

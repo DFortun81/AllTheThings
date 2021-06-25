@@ -1,15 +1,13 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
-
 _.Holidays =
 {
-	{	-- Call of the Scarab
-		["holidayID"] = 1574965,	-- Call of the Scarab
-		["u"] = 22,					-- Micro-Holiday Filter
-		["g"] = {
+	holiday(1574965, {	-- Call of the Scarab
+		["u"] = MICRO_HOLIDAY,
+		["groups"] = {
 			n(QUESTS, bubbleDown({
-				["u"] = 22,	-- Micro-Holiday Filter
+				["u"] = MICRO_HOLIDAY,
 				["description"] = "Call of the Scarab must be available for this Quest to be active.",
 			}, {
 				a(q(45787, {	-- Call of the Scarab [A]
@@ -108,5 +106,5 @@ _.Holidays =
 				})),
 			})),
 		},
-	},
+	}),
 };

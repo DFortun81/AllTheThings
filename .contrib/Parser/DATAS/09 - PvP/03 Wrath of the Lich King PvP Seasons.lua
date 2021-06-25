@@ -3930,3 +3930,15 @@ _.PVP =
 		}),
 	})),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10014, {	-- Wrath of the Lich King
+		n(-668, {	-- Deadly Gladiator: Season 5
+			n(-319, {	-- Weapons
+				i(42214),	-- Savage Gladiator's Waraxe
+				i(42523),	-- Savage Gladiator's Endgame
+				i(42529),	-- Savage Gladiator's Reprieve
+				i(42535),	-- Savage Gladiator's Grimoire
+			}),
+		}),
+	}),
+});

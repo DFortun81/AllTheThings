@@ -70,9 +70,71 @@ _.WorldEvents =
 					})),
 					un(REMOVED_FROM_GAME, ach(4790, {	-- Zalazane's Fall
 						["collectible"] = false,
-						["groups"] = {
-							un(REMOVED_FROM_GAME, i(54653)),	-- Darkspear Pride Toy
-						},
+						["groups"] = sharedData({ ["races"] = HORDE_ONLY }, {
+							q(26951, {	-- Cleanup on Isle E.
+								["u"] = REMOVED_FROM_GAME,
+							}),
+							q(25444, {	-- Da Perfect Spies
+								["timeline"] = {
+									"added 3.3.3.11573",
+									"removed 4.0.1.10000",
+								},
+							}),
+							q(25480, {	-- Dance Of De Spirits
+								["sourceQuest"] = 25470,	-- Lady Of Da Tigers
+								["timeline"] = {
+									"added 3.3.3.11573",
+									"removed 4.0.1.10000",
+								},
+								["groups"] = bubbleDown({["timeline"] = {
+									"added 3.3.3.11573",
+									"removed 4.0.1.10000",
+								}}, {
+									i(54653),	-- Darkspear Pride
+								}),
+							}),
+							q(25446, {	-- Frogs Away!
+								["sourceQuest"] = 25444,	-- Da Perfect Spies
+								["timeline"] = {
+									"added 3.3.3.11573",
+									"removed 4.0.1.10000",
+								},
+							}),
+							q(25470, {	-- Lady Of Da Tigers
+								["sourceQuest"] = 25446,	-- Frogs Away!
+								["timeline"] = {
+									"added 3.3.3.11573",
+									"removed 4.0.1.10000",
+								},
+							}),
+							q(25495, {	-- Preparin' For Battle
+								["sourceQuest"] = 25461,	-- Trollin' For Volunteers
+								["timeline"] = {
+									"added 3.3.3.11573",
+									"removed 4.0.1.10000",
+								},
+							}),
+							q(25461, {	-- Trollin' For Volunteers
+								["sourceQuest"] = 25480,	-- Dance Of De Spirits
+								["timeline"] = {
+									"added 3.3.3.11573",
+									"removed 4.0.1.10000",
+								},
+							}),
+							q(25445, {	-- Zalazane's Fall
+								["sourceQuest"] = 25495,	-- Preparin' For Battle
+								["timeline"] = {
+									"added 3.3.3.11573",
+									"removed 4.0.1.10000",
+								},
+								["groups"] = bubbleDown({["timeline"] = {
+									"added 3.3.3.11573",
+									"removed 4.0.1.10000",
+								}}, {
+									i(54617),	-- Darkspear Shroud
+								}),
+							}),
+						}),
 					})),
 					un(REMOVED_FROM_GAME, ach(4887, bubbleDown({["u"] = REMOVED_FROM_GAME}, {	-- Tripping the Rifts
 						-- NOTE: NPCs are unrelated to the achievement.

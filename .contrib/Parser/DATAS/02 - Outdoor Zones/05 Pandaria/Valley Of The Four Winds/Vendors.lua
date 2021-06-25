@@ -254,7 +254,7 @@ _.Zones =
 							i(138689, {	-- Ensemble: Tyrannical Gladiator's Chain Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -9979, -676, -9914, -661, 3 },
+									{"sub", "pvp_set_ensemble", -10041, -676, -9914, -661, 3 },
 									{"select", "itemID", 91221 },	-- Tyrannical Gladiator's Wristguards of Accuracy
 									{"select", "itemID", 91220 },	-- Tyrannical Gladiator's Wristguards of Alacrity
 									{"select", "itemID", 91214 },	-- Tyrannical Gladiator's Links of Accuracy
@@ -1222,7 +1222,7 @@ _.Zones =
 							i(138667, {	-- Ensemble: Grievous Gladiator's Chain Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -9979, -677, -9914, -661, 3 },
+									{"sub", "pvp_set_ensemble", -10041, -677, -9914, -661, 3 },
 									{"select", "itemID", 100317 },	-- Grievous Gladiator's Wristguards of Accuracy
 									{"select", "itemID", 100316 },	-- Grievous Gladiator's Wristguards of Alacrity
 									{"select", "itemID", 100310 },	-- Grievous Gladiator's Links of Accuracy
@@ -1968,7 +1968,7 @@ _.Zones =
 							i(138718, {	-- Ensemble: Dreadful Gladiator's Chain Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -9979, -675, -9983, 3 },
+									{"sub", "pvp_set_ensemble", -10041, -675, -9983, 3 },
 									{"select", "itemID", 84407 },	-- Dreadful Gladiator's Wristguards of Accuracy
 									{"select", "itemID", 84406 },	-- Dreadful Gladiator's Wristguards of Alacrity
 									{"select", "itemID", 84403 },	-- Dreadful Gladiator's Links of Accuracy
@@ -2781,7 +2781,7 @@ _.Zones =
 							i(138707, {	-- Ensemble: Malevolent Gladiator's Chain Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -9979, -675, -661, 3 },
+									{"sub", "pvp_set_ensemble", -10041, -675, -661, 3 },
 									{"select", "itemID", 84981 },	-- Malevolent Gladiator's Wristguards of Accuracy
 									{"select", "itemID", 84980 },	-- Malevolent Gladiator's Wristguards of Alacrity
 									{"select", "itemID", 84957 },	-- Malevolent Gladiator's Links of Accuracy
@@ -3745,7 +3745,7 @@ _.Zones =
 							i(138645, {	-- Ensemble: Prideful Gladiator's Chain Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -9979, -678, -9914, -661, 3 },
+									{"sub", "pvp_set_ensemble", -10041, -678, -9914, -661, 3 },
 									{"select", "itemID", 102753 },	-- Prideful Gladiator's Wristguards of Accuracy
 									{"select", "itemID", 102688 },	-- Prideful Gladiator's Wristguards of Alacrity
 									{"select", "itemID", 102645 },	-- Prideful Gladiator's Links of Accuracy

@@ -5,32 +5,22 @@
 
 _.Holidays =
 {
-	{	-- Thousand Boat Bash
-		["holidayID"] = 1572478,	-- Thousand Boat Bash
-		["u"] = 22,					-- Micro-Holiday Filter
-		["g"] = {
-			{	-- World Quests
-				["npcID"] = -34,	-- World Quests
-				["g"] = bubbleDown({
-						["u"] = 22,	-- Micro-Holiday Filter
-						["description"] = "Thousand Boat Bash must be available for this World Quests to display.",
-						["isWorldQuest"] = true,
-						["maps"] = { THOUSAND_NEEDLES },
-					}, {
-					q(45808, {	-- Beach Ball Bash	
-					}),
-					q(45806, {	-- Boat Tour
-					}),				
-					q(45807, {	-- Garbage Fishing
-					}),				
-					q(45809, {	-- Grog, Rum, and Ale
-					}),				
-					q(45810, {	-- The Gnomes Stole Our Bombs!
-					}),				
-					q(45811, {	-- The Goblins Stole Our Bombs!
-					}),			
-				}),
+	holiday(1572478, {	-- Thousand Boat Bash
+		["u"] = MICRO_HOLIDAY,
+		["groups"] = bubbleDown({ ["u"] = MICRO_HOLIDAY }, {
+			n(-34, bubbleDown({	-- World Quests
+				["description"] = "Thousand Boat Bash must be available for this World Quest to display.",
+				["isWorldQuest"] = true,
+				["maps"] = { THOUSAND_NEEDLES },
 			},
-		},
-	},
-};		
+			{
+				q(45808),	-- Beach Ball Bash
+				q(45806),	-- Boat Tour
+				q(45807),	-- Garbage Fishing
+				q(45809),	-- Grog, Rum, and Ale
+				q(45810),	-- The Gnomes Stole Our Bombs!
+				q(45811),	-- The Goblins Stole Our Bombs!
+			})),
+		}),
+	}),
+};

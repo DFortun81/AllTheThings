@@ -972,3 +972,8 @@ _.Zones =
 		}),
 	})),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(9695),	-- The Sun King's Command
+	}),
+});
