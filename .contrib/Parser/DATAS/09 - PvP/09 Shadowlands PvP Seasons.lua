@@ -473,6 +473,12 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(176004),	-- Sinful Gladiator's Sword (existed in beta; doesn't appear to exist in live)
 				i(176009),	-- Sinful Gladiator's Warglaive (existed in beta; doesn't appear to exist in live)
 			}),
+			n(-339, {	-- Feet
+				i(180650),	-- Shadowlandy Gladiator's Stompers
+			}),
+			n(-386, {	-- Trinkets
+				i(174380),	-- Gladiator's Concordance
+			}),
 		}),
 	}),
 });

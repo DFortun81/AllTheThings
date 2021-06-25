@@ -1565,6 +1565,24 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-10052, {	-- Battle for Azeroth
 		n(-689, {	-- Dread Gladiator: Battle for Azeroth Season 1
 			n(-163, {	-- Armor
+				n(-43, {	-- Cloth
+					i(166907),	-- Dread Gladiator's Silk Robe
+					i(166908),	-- Dread Gladiator's Silk Treads
+					i(166909),	-- Dread Gladiator's Silk Gloves
+					i(166910),	-- Dread Gladiator's Silk Hood
+					i(166911),	-- Dread Gladiator's Silk Leggings
+					i(166912),	-- Dread Gladiator's Silk Mantle
+					i(166913),	-- Dread Gladiator's Silk Cord
+					i(166914),	-- Dread Gladiator's Silk Cuffs
+					i(166938),	-- Dread Gladiator's Silk Robe
+					i(166939),	-- Dread Gladiator's Silk Treads
+					i(166940),	-- Dread Gladiator's Silk Gloves
+					i(166941),	-- Dread Gladiator's Silk Hood
+					i(166942),	-- Dread Gladiator's Silk Leggings
+					i(166943),	-- Dread Gladiator's Silk Mantle
+					i(166944),	-- Dread Gladiator's Silk Cord
+					i(166945),	-- Dread Gladiator's Silk Cuffs
+				}),
 				n(-44, {	-- Leather
 					i(166946),	-- Dread Gladiator's Leather Tunic
 					i(166947),	-- Dread Gladiator's Leather Boots
@@ -1601,6 +1619,24 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(166929),	-- Dread Gladiator's Chain Waistguard
 					i(166930),	-- Dread Gladiator's Chain Armbands
 				}),
+				n(-46, {	-- Plate
+					i(166906),	-- Dread Gladiator's Plate Pauldrons
+					i(166931),	-- Dread Gladiator's Plate Chestpiece
+					i(166932),	-- Dread Gladiator's Plate Warboots
+					i(166933),	-- Dread Gladiator's Plate Gauntlets
+					i(166934),	-- Dread Gladiator's Plate Helm
+					i(166935),	-- Dread Gladiator's Plate Legguards
+					i(166936),	-- Dread Gladiator's Plate Girdle
+					i(166937),	-- Dread Gladiator's Plate Armguards
+					i(166962),	-- Dread Gladiator's Plate Chestpiece
+					i(166963),	-- Dread Gladiator's Plate Warboots
+					i(166964),	-- Dread Gladiator's Plate Gauntlets
+					i(166965),	-- Dread Gladiator's Plate Helm
+					i(166966),	-- Dread Gladiator's Plate Legguards
+					i(166967),	-- Dread Gladiator's Plate Pauldrons
+					i(166968),	-- Dread Gladiator's Plate Girdle
+					i(166969),	-- Dread Gladiator's Plate Armguards
+				}),					
 			}),
 		}),
 		n(-690, {	-- Sinister Gladiator: Battle for Azeroth Season 2
@@ -1689,6 +1725,12 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(172741),	-- Corrupted Gladiator's Shoulderplates (H)
 					i(172693),	-- Corrupted Gladiator's Plate Skullguard (H)
 					i(172717),	-- Corrupted Gladiator's Plate Chestplate (H)
+				}),
+				-- These were added 9.0.1??
+				n(-386, { 	-- Trinkets
+					i(184055),	-- Corrupted Gladiator's Medallion
+					i(184056),	-- Corrupted Gladiator's Relentless Brooch
+					i(184057),	-- Corrupted Gladiator's Sigil of Adaptation
 				}),
 			}),
 		}),
