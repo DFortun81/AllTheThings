@@ -3969,38 +3969,39 @@ end
 -- Builds a 'Source' group from the sourceParent or parent of the group and lists it under the group itself for
 -- visibility in popouts
 app.BuildSourceParent = function(group)
-	if group.sourceParent or group.parent then
-		local parent = group.sourceParent or group.parent;
-		-- only show certain types of parents as sources.. typically 'Game World Things'
-		if parent.key
-			and (parent.key == "npcID"
-				or parent.key == "creatureID"
-				or parent.key == "itemID"
-				or parent.key == "s"
-				or parent.key == "questID"
-				or parent.key == "encounterID"
-				or parent.key == "mapID")
-			and parent[parent.key] then
-			local sourceGroup = {
-				["text"] = L["SOURCES"],
-				["description"] = L["SOURCES_DESC"],
-				["icon"] = "Interface\\Icons\\inv_misc_spyglass_02",
-				["OnUpdate"] = app.AlwaysShowUpdate,
-				["g"] = {},
-			};
-			local sources = app.SearchForLink(parent.key .. ":" .. parent[parent.key]);
-			if sources then
-				local clonedSource;
-				for _,source in pairs(sources) do
-					clonedSource = CloneData(source);
-					clonedSource.g = nil;
-					clonedSource.collectible = false;
-					clonedSource.OnUpdate = app.AlwaysShowUpdate;
-					MergeObject(sourceGroup.g, clonedSource);
-				end
-				if not group.g then group.g = { sourceGroup };
-				else tinsert(group.g, 1, sourceGroup); end
+	if not group.sourceParent and not group.parent then return; end
+	-- only show sources for Things and not 'headers'
+	if group.key == "headerID" then return; end
+	local parent = group.sourceParent or group.parent;
+	-- only show certain types of parents as sources.. typically 'Game World Things'
+	if parent.key
+		and (parent.key == "npcID"
+			or parent.key == "creatureID"
+			or parent.key == "itemID"
+			or parent.key == "s"
+			or parent.key == "questID"
+			or parent.key == "encounterID")
+			-- TODO: maybe handle mapID in a different way as a fallback for things nested under headers within a zone....?
+		and parent[parent.key] then
+		local sourceGroup = {
+			["text"] = L["SOURCES"],
+			["description"] = L["SOURCES_DESC"],
+			["icon"] = "Interface\\Icons\\inv_misc_spyglass_02",
+			["OnUpdate"] = app.AlwaysShowUpdate,
+			["g"] = {},
+		};
+		local sources = app.SearchForLink(parent.key .. ":" .. parent[parent.key]);
+		if sources then
+			local clonedSource;
+			for _,source in pairs(sources) do
+				clonedSource = CloneData(source);
+				clonedSource.g = nil;
+				clonedSource.collectible = false;
+				clonedSource.OnUpdate = app.AlwaysShowUpdate;
+				MergeObject(sourceGroup.g, clonedSource);
 			end
+			if not group.g then group.g = { sourceGroup };
+			else tinsert(group.g, 1, sourceGroup); end
 		end
 	end
 end
