@@ -41,10 +41,10 @@ _.Zones =
 				p(2411, {	-- Wicker Pup
 					["description"] = "You must find each of the four parts and combine them to form this battle pet.  Coordinates for each chest are listed in the coordinate section.",
 					["coords"] = {
-						{ 18.50, 51.30 }, 	-- Bundle of Wicker Sticks
-						{ 67.70, 73.70 }, 	-- Miniature Stag Skull
-						{ 55.60, 51.80 }, 	-- Spooky Incantation
-						{ 25.20, 24.20 }, 	-- Wolf Pup Spine
+						{ 18.50, 51.30, 896 }, 	-- Bundle of Wicker Sticks
+						{ 67.70, 73.70, 896 }, 	-- Miniature Stag Skull
+						{ 55.60, 51.80, 896 }, 	-- Spooky Incantation
+						{ 25.20, 24.20, 896 }, 	-- Wolf Pup Spine
 					},
 					["g"] = {
 						i(163789, {	-- Bundle of Wicker Sticks
