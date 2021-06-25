@@ -5389,6 +5389,27 @@ _.PVP =
 							},
 						}),
 					}),
+					n(-384,	{	-- Neck
+						un(REMOVED_FROM_GAME, i(144655)),	-- Cruel Gladiator's Necklace (H)
+						un(REMOVED_FROM_GAME, i(144657)),	-- Cruel Gladiator's Pendant (H)
+						un(REMOVED_FROM_GAME, i(144659)),	-- Cruel Gladiator's Choker (H)
+					}),
+					n(-385,	{	-- Finger
+						un(REMOVED_FROM_GAME, i(144693)),	-- Cruel Gladiator's Ring (H)
+						un(REMOVED_FROM_GAME, i(144695)),	-- Cruel Gladiator's Band (H)
+						un(REMOVED_FROM_GAME, i(144697)),	-- Cruel Gladiator's Signet (H)
+					}),
+					n(-386,	{	-- Trinket
+						un(REMOVED_FROM_GAME, i(144731)),	-- Cruel Gladiator's Badge of Conquest (H)
+						un(REMOVED_FROM_GAME, i(144733)),	-- Cruel Gladiator's Accolade of Conquest (H)
+						un(REMOVED_FROM_GAME, i(144735)),	-- Cruel Gladiator's Insignia of Conquest (H)
+						un(REMOVED_FROM_GAME, i(144737)),	-- Cruel Gladiator's Badge of Dominance (H)
+						un(REMOVED_FROM_GAME, i(144739)),	-- Cruel Gladiator's Accolade of Dominance (H)
+						un(REMOVED_FROM_GAME, i(144741)),	-- Cruel Gladiator's Insignia of Dominance (H)
+						un(REMOVED_FROM_GAME, i(144743)),	-- Cruel Gladiator's Badge of Victory (H)
+						un(REMOVED_FROM_GAME, i(144745)),	-- Cruel Gladiator's Accolade of Victory (H)
+						un(REMOVED_FROM_GAME, i(144747)),	-- Cruel Gladiator's Insignia of Victory (H)
+					}),
 				}),
 				n(-662, {	-- Elite PvP Gear
 					un(REMOVED_FROM_GAME, i(147336)),	-- Cruel Gladiator's Tabard [Elite Rating] h

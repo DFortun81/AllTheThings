@@ -10402,11 +10402,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(88183),	-- Gladiator's Chain Helm
 				i(88184),	-- Gladiator's Chain Leggings
 				i(88185),	-- Gladiator's Chain Spaulders
-				i(64992),	-- Gladiator's Chain Armor
-				i(64991),	-- Gladiator's Chain Gauntlets
-				i(64990),	-- Gladiator's Chain Helm
-				i(64989),	-- Gladiator's Chain Leggings
-				i(64988),	-- Gladiator's Chain Spaulders
 			}),
 			cl(MAGE, {
 				i(97925),	-- Malevolent Gladiator's Silk Amice
@@ -10424,6 +10419,18 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(88253),	-- Gladiator's Silk Handguards
 				i(88254),	-- Gladiator's Silk Robe
 				i(88255),	-- Gladiator's Silk Trousers
+			}),
+			cl(MONK, {
+				i(88171),	-- Gladiator's Ironskin Gloves
+				i(88172),	-- Gladiator's Ironskin Helm
+				i(88173),	-- Gladiator's Ironskin Legguards
+				i(88174),	-- Gladiator's Ironskin Tunic
+				i(88175),	-- Gladiator's Ironskin Spaulders
+				i(88176),	-- Gladiator's Copperskin Gloves
+				i(88177),	-- Gladiator's Copperskin Helm
+				i(88178),	-- Gladiator's Copperskin Legguards
+				i(88179),	-- Gladiator's Copperskin Tunic
+				i(88180),	-- Gladiator's Copperskin Spaulders
 			}),
 			cl(PALADIN, {
 				i(88226),	-- Gladiator's Ornamented Chestguard
@@ -10477,6 +10484,13 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(88238),	-- Gladiator's Ringmail Helm
 				i(88239),	-- Gladiator's Ringmail Leggings
 				i(88240),	-- Gladiator's Ringmail Spaulders
+			}),
+			cl(WARLOCK, {
+				i(88196),	-- Gladiator's Felweave Amice
+				i(88197),	-- Gladiator's Felweave Cowl
+				i(88198),	-- Gladiator's Felweave Handguards
+				i(88199),	-- Gladiator's Felweave Raiment
+				i(88200),	-- Gladiator's Felweave Trousers
 			}),
 			cl(WARRIOR, {
 				i(88231),	-- Gladiator's Plate Chestpiece
