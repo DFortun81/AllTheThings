@@ -1199,21 +1199,6 @@ _.NeverImplemented =
 			i(109541),	-- unknown
 			i(109543),	-- unknown
 			i(109548),	-- unknown
-			i(178268),	-- Sinful Aspirant's Chain Tunic
-			i(178272),	-- Sinful Aspirant's Chain Stompers
-			i(178277),	-- Sinful Aspirant's Chain Handguards
-			i(178279),	-- Sinful Aspirant's Chain Headguard
-			i(178283),	-- Sinful Aspirant's Chain Wargreaves
-			i(178288),	-- Sinful Aspirant's Chain Shoulderguards
-			i(178291),	-- Sinful Aspirant's Chain Clasp
-			i(178296),	-- Sinful Aspirant's Chain Bracer
-			i(178308),	-- Sinful Aspirant's Chain Footguards
-			i(178313),	-- Sinful Aspirant's Chain Grips
-			i(178315),	-- Sinful Aspirant's Chain Helmet
-			i(178319),	-- Sinful Aspirant's Chain Breeches
-			i(178324),	-- Sinful Aspirant's Chain Monnion
-			i(178327),	-- Sinful Aspirant's Chain Buckle
-			i(178332),	-- Sinful Aspirant's Chain Coils
 			i(158536),	-- Saurscale Wristguards
 			i(158537),	-- Saurscale Gloves
 			i(158538),	-- Saurscale Leggings

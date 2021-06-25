@@ -450,6 +450,11 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-10100, {	-- Shadowlands
 		n(-693, {	-- Sinful Gladiator: Shadowlands Season 1
 			n(-319, {	-- Weapons
+				i(178671),	-- Sinful Aspirant's Broadsword
+				i(178672),	-- Sinful Aspirant's Bulwark
+				i(178674),	-- Sinful Aspirant's Glaive
+				i(178477),	-- Sinful Aspirant's Shield
+				i(178491),	-- Sinful Aspirant's Warshield
 				i(178397),	-- Sinful Gladiator's Aegis (existed in beta; doesn't appear to exist in live)
 				i(175998),	-- Sinful Gladiator's Axe (existed in beta; doesn't appear to exist in live)
 				i(183403),	-- Sinful Gladiator's Battlehammer (existed in beta; doesn't appear to exist in live)
@@ -472,6 +477,70 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(178393),	-- Sinful Gladiator's Spire (existed in beta; doesn't appear to exist in live)
 				i(176004),	-- Sinful Gladiator's Sword (existed in beta; doesn't appear to exist in live)
 				i(176009),	-- Sinful Gladiator's Warglaive (existed in beta; doesn't appear to exist in live)
+			}),
+			n(-163, {	-- Armor
+				n(-43, {	-- Cloth
+					i(178266),	-- Sinful Aspirant's Silk Gown
+					i(178271),	-- Sinful Aspirant's Silk Footwraps
+					i(178276),	-- Sinful Aspirant's Silk Handwraps
+					i(178278),	-- Sinful Aspirant's Silk Cover
+					i(178282),	-- Sinful Aspirant's Silk Legwraps
+					i(178287),	-- Sinful Aspirant's Silk Shawl
+					i(178290),	-- Sinful Aspirant's Silk Belt
+					i(178294),	-- Sinful Aspirant's Silk Bindings
+				}),
+				n(-44, {	-- Leather
+					i(178269),	-- Sinful Aspirant's Leather Tunic
+					i(178273),	-- Sinful Aspirant's Leather Footpads
+					i(178274),	-- Sinful Aspirant's Leather Grips
+					i(178280),	-- Sinful Aspirant's Leather Mask
+					i(178284),	-- Sinful Aspirant's Leather Leggings
+					i(178285),	-- Sinful Aspirant's Leather Mantle
+					i(178292),	-- Sinful Aspirant's Leather Cord
+					i(178297),	-- Sinful Aspirant's Leather Armguards
+					i(178309),	-- Sinful Aspirant's Leather Treads
+					i(178310),	-- Sinful Aspirant's Leather Handguards
+					i(178316),	-- Sinful Aspirant's Leather Headguard
+					i(178320),	-- Sinful Aspirant's Leather Britches
+					i(178321),	-- Sinful Aspirant's Leather Shoulderpads
+					i(178328),	-- Sinful Aspirant's Leather Loop
+					i(178333),	-- Sinful Aspirant's Leather Cuffs
+				}),
+				n(-45, {	-- Mail
+					i(178268),	-- Sinful Aspirant's Chain Tunic
+					i(178272),	-- Sinful Aspirant's Chain Stompers
+					i(178277),	-- Sinful Aspirant's Chain Handguards
+					i(178279),	-- Sinful Aspirant's Chain Headguard
+					i(178283),	-- Sinful Aspirant's Chain Wargreaves
+					i(178288),	-- Sinful Aspirant's Chain Shoulderguards
+					i(178291),	-- Sinful Aspirant's Chain Clasp
+					i(178296),	-- Sinful Aspirant's Chain Bracer
+					i(178308),	-- Sinful Aspirant's Chain Footguards
+					i(178313),	-- Sinful Aspirant's Chain Grips
+					i(178315),	-- Sinful Aspirant's Chain Helmet
+					i(178319),	-- Sinful Aspirant's Chain Breeches
+					i(178324),	-- Sinful Aspirant's Chain Monnion
+					i(178327),	-- Sinful Aspirant's Chain Buckle
+					i(178332),	-- Sinful Aspirant's Chain Coils
+				}),
+				n(-46, {	-- Plate
+					i(111184),	-- Sinful Aspirant's Plate Headguard
+					i(111187),	-- Sinful Aspirant's Plate Armor
+					i(111190),	-- Sinful Aspirant's Plate Stompers
+					i(111195),	-- Sinful Aspirant's Plate Handguards
+					i(111201),	-- Sinful Aspirant's Plate Wargreaves
+					i(111206),	-- Sinful Aspirant's Plate Pauldrons
+					i(111209),	-- Sinful Aspirant's Plate Greatbelt
+					i(111214),	-- Sinful Aspirant's Plate Armguards
+					i(178300),	-- Sinful Aspirant's Plate Greathelm
+					i(178303),	-- Sinful Aspirant's Plate Chestguard
+					i(178306),	-- Sinful Aspirant's Plate Sabatons
+					i(178311),	-- Sinful Aspirant's Plate Gloves
+					i(178317),	-- Sinful Aspirant's Plate Legplates
+					i(178322),	-- Sinful Aspirant's Plate Shoulderplates
+					i(178325),	-- Sinful Aspirant's Plate Vambraces
+					i(178331),	-- Sinful Aspirant's Plate Chain
+				}),					
 			}),
 			n(-322, {	-- Back
 				i(180425),	-- 9.0 PvP - PvP Reward - Accessory - Cloak - 02
