@@ -33,5 +33,5 @@ jobs:
         with:
           commit-message: Add item timelines
           title: Item patches
-          branch: harvest-timelines-pr
+          branch: harvest-timelines-items
           delete-branch: true
