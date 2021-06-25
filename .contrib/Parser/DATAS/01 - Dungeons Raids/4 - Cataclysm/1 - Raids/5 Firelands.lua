@@ -275,36 +275,6 @@ _.Instances = { tier(4, {	-- Cataclysm
 				}),
 			}),
 			n(ZONEDROPS, {
-				["crs"] = {
-					53134,	-- Ancient Core Hound
-					53635,	-- Cinderweb Drone
-					53642,	-- Cinderweb Spinner
-					53096,	-- Fire Turtle Hatchling
-					54161,	-- Flame Archon
-					53187,	-- Flamewaker Animator
-					53223,	-- Flamewaker Beast Handler
-					53121,	-- Flamewaker Cauterizer
-					53639,	-- Flamewaker Cauterizer
-					53222,	-- Flamewaker Centurion
-					53119,	-- Flamewaker Forward Guard
-					54073,	-- Flamewaker Hound Master
-					53185,	-- Flamewaker Overseer
-					53120,	-- Flamewaker Pathfinder
-					53640,	-- Flamewaker Sentinel
-					53188,	-- Flamewaker Subjugator
-					53224,	-- Flamewaker Taskmaster
-					53244,	-- Flamewaker Trainee
-					53128,	-- Giant Fire Scorpion
-					53206,	-- Hell Hound
-					53616,	-- Kar the Everburning<Firelord>
-					53575,	-- Lava Wielder
-					54143,	-- Molten Flamefather
-					53115,	-- Molten Lord
-					53141,	-- Molten Surger
-					53167,	-- Unbound Pyrelord
-					53732,	-- Unbound Smoldering Elemental
-					53901,	-- Unstable Magma
-				},
 				["g"] = {
 					i(69976),	-- Pattern: Boots of the Black Flame
 					i(69966),	-- Pattern: Don Tayo's Inferno Mittens

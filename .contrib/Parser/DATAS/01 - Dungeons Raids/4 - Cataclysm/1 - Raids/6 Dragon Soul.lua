@@ -383,22 +383,6 @@ _.Instances = { tier(4, {	-- Cataclysm
 						},
 					}),
 					n(ZONEDROPS, {
-						["crs"] = {
-							57333,	-- Acidic Globule
-							57160,	-- Ancient Water Lord
-							57890,	-- Claw of Go'rath
-							57384,	-- Cobalt Globule <Blood of Shu'ma>
-							57386,	-- Crimson Globule <Blood of Shu'ma>
-							57382,	-- Dark Globule <Blood of Shu'ma>
-							57158,	-- Earthen Destroyer
-							57159,	-- Earthen Soldier
-							57875,	-- Eye of Go'rath
-							57877,	-- Flail of Go'rath
-							57387,	-- Glowing Globule <Blood of Shu'ma>
-							57821,	-- Lieutenant Shara
-							57388,	-- Shadowed Globule <Blood of Shu'ma>
-							57280,	-- Twilight Siege Captain
-						},
 						["groups"] = {
 							i(78886),	-- Belt of Ghostly Graces
 							i(78885),	-- Dragoncarver Belt
@@ -664,22 +648,6 @@ _.Instances = { tier(4, {	-- Cataclysm
 						},
 					}),
 					n(ZONEDROPS, {
-						["crs"] = {
-							57333,	-- Acidic Globule
-							57160,	-- Ancient Water Lord
-							57890,	-- Claw of Go'rath
-							57384,	-- Cobalt Globule <Blood of Shu'ma>
-							57386,	-- Crimson Globule <Blood of Shu'ma>
-							57382,	-- Dark Globule <Blood of Shu'ma>
-							57158,	-- Earthen Destroyer
-							57159,	-- Earthen Soldier
-							57875,	-- Eye of Go'rath
-							57877,	-- Flail of Go'rath
-							57387,	-- Glowing Globule <Blood of Shu'ma>
-							57821,	-- Lieutenant Shara
-							57388,	-- Shadowed Globule <Blood of Shu'ma>
-							57280,	-- Twilight Siege Captain
-						},
 						["g"] = {
 							i(78886),	-- Belt of Ghostly Graces
 							i(78885),	-- Dragoncarver Belt
