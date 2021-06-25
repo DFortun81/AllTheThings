@@ -524,14 +524,14 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(178332),	-- Sinful Aspirant's Chain Coils
 				}),
 				n(-46, {	-- Plate
-					i(111184),	-- Sinful Aspirant's Plate Headguard
-					i(111187),	-- Sinful Aspirant's Plate Armor
-					i(111190),	-- Sinful Aspirant's Plate Stompers
-					i(111195),	-- Sinful Aspirant's Plate Handguards
-					i(111201),	-- Sinful Aspirant's Plate Wargreaves
-					i(111206),	-- Sinful Aspirant's Plate Pauldrons
-					i(111209),	-- Sinful Aspirant's Plate Greatbelt
-					i(111214),	-- Sinful Aspirant's Plate Armguards
+					i(178264),	-- Sinful Aspirant's Plate Headguard
+					i(178267),	-- Sinful Aspirant's Plate Armor
+					i(178270),	-- Sinful Aspirant's Plate Stompers
+					i(178275),	-- Sinful Aspirant's Plate Handguards
+					i(178281),	-- Sinful Aspirant's Plate Wargreaves
+					i(178286),	-- Sinful Aspirant's Plate Pauldrons
+					i(178289),	-- Sinful Aspirant's Plate Greatbelt
+					i(178295),	-- Sinful Aspirant's Plate Armguards
 					i(178300),	-- Sinful Aspirant's Plate Greathelm
 					i(178303),	-- Sinful Aspirant's Plate Chestguard
 					i(178306),	-- Sinful Aspirant's Plate Sabatons
@@ -540,7 +540,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(178322),	-- Sinful Aspirant's Plate Shoulderplates
 					i(178325),	-- Sinful Aspirant's Plate Vambraces
 					i(178331),	-- Sinful Aspirant's Plate Chain
-				}),					
+				}),
 			}),
 			n(-322, {	-- Back
 				i(180425),	-- 9.0 PvP - PvP Reward - Accessory - Cloak - 02

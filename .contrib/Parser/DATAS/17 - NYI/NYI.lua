@@ -148,7 +148,7 @@ _.NeverImplemented =
 				i(78015),	-- Replica Magister's Gloves
 				i(78017),	-- Replica Magister's Leggings
 				i(78019),	-- Replica Magister's Mantle
-				i(78018),	-- Replica Magister's Robes		
+				i(78018),	-- Replica Magister's Robes
 			}),
 			cl(PRIEST, {
 				-- Possible Unused Level 120/Lv 120 Classtrial
@@ -3327,7 +3327,6 @@ _.NeverImplemented =
 			i(176014),	--
 			i(176015),	--
 			i(176016),	--
-			i(176007),	--
 			i(179007),	--
 			i(179550),	--
 			i(179551),	--

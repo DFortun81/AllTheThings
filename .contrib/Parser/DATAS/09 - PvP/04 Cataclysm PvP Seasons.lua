@@ -4347,7 +4347,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(65150),	-- Gladiator's Ringmail Gauntlets
 				i(65149),	-- Gladiator's Ringmail Helm
 				i(65148),	-- Gladiator's Ringmail Leggings
-				i(65147),	-- 
+				i(65147),	-- Gladiator's Ringmail Spaulders
 			}),
 			cl(WARLOCK, {
 				i(64973),	-- Gladiator's Felweave Trousers
@@ -4367,7 +4367,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(60782),	-- Vicious Gladiator's Cloak of Conquest
 				i(60784),	-- Vicious Gladiator's Cloak of Dominance
 				i(60785),	-- Vicious Gladiator's Cloak of Dominance
-				
 			}),
 			n(-326, {	-- Wrist
 				i(60585),	-- Vicious Gladiator's Armwraps of Dominance
