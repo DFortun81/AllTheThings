@@ -140,26 +140,6 @@ _.NeverImplemented =
 				i(150645),	-- Mountainsage Sandals
 				i(150650),	-- Mountainsage Shoulderpads
 				i(150652),	-- Mountainsage Wristwraps
-				i(46249),	-- Kirin Tor Gauntlets
-				i(46250),	-- Kirin Tor Hood
-				i(46251),	-- Kirin Tor Leggings
-				i(46252),	-- Kirin Tor Shoulderpads
-				i(46253),	-- Kirin Tor Tunic
-				i(48725),	-- Khadgar's Gauntlets
-				i(48726),	-- Khadgar's Hood
-				i(48727),	-- Khadgar's Leggings
-				i(48728),	-- Khadgar's Robe
-				i(48729),	-- Khadgar's Shoulderpads
-				i(48730),	-- Sunstrider's Gauntlets of Conquest
-				i(48731),	-- Sunstrider's Hood of Conquest
-				i(48732),	-- Sunstrider's Leggings of Conquest
-				i(48733),	-- Sunstrider's Robe of Conquest
-				i(48734),	-- Sunstrider's Shoulderpads of Conquest
-				i(51712),	-- Bloodmage Shoulderpads
-				i(51713),	-- Bloodmage Robe
-				i(51714),	-- Bloodmage Leggings
-				i(51715),	-- Bloodmage Hood
-				i(51716),	-- Bloodmage Gloves
 				-- Unused T0 Replica
 				i(78020),	-- Replica Magister's Belt
 				i(78021),	-- Replica Magister's Bindings
@@ -182,46 +162,6 @@ _.NeverImplemented =
 				i(96266),	-- Mantle of the Chromatic Hydra
 			}),
 			cl(PRIEST, {
-				i(46230),	-- Circlet of Sanctification
-				i(46231),	-- Cowl of Sanctification
-				i(46247),	-- Gloves of Sanctification
-				i(46248),	-- Handwraps of Sanctification
-				i(46254),	-- Leggings of Sanctification
-				i(46255),	-- Mantle of Sanctification
-				i(46256),	-- Pants of Sanctification
-				i(46257),	-- Rainments of Sanctification
-				i(46258),	-- Robe of Sanctification
-				i(46259),	-- Shoulderpads of Sanctification
-				i(48745),	-- Velen's Cowl
-				i(48746),	-- Velen's Gloves
-				i(48747),	-- Velen's Leggings
-				i(48748),	-- Velen's Robe
-				i(48749),	-- Velen's Shoulderpads
-				i(48750),	-- Zabra's Cowl of Conquest
-				i(48751),	-- Zabra's Gloves of Conquest
-				i(48752),	-- Zabra's Leggings of Conquest
-				i(48753),	-- Zabra's Robe of Conquest
-				i(48754),	-- Zabra's Shoulderpads of Conquest
-				i(48755),	-- Velen's Circlet
-				i(48756),	-- Velen's Handwraps
-				i(48757),	-- Velen's Mantle
-				i(48758),	-- Velen's Pants
-				i(48759),	-- Velen's Rainments
-				i(48760),	-- Zabra's Circlet of Conquest
-				i(48761),	-- Zabra's Handwraps of Conquest
-				i(48762),	-- Zabra's Mantle of Conquest
-				i(48763),	-- Zabra's Pants of Conquest
-				i(48764),	-- Zabra's Raiments of Conquest
-				i(51732),	-- Crimson Acolyte Leggings
-				i(51733),	-- Crimson Acolyte Robe
-				i(51734),	-- Crimson Acolyte Shoulderpads
-				i(51735),	-- Crimson Acolyte Gloves
-				i(51736),	-- Crimson Acolyte Hood
-				i(51737),	-- Crimson Acolyte Cowl
-				i(51738),	-- Crimson Acolyte Handwraps
-				i(51739),	-- Crimson Acolyte Mantle
-				i(51740),	-- Crimson Acolyte Rainments
-				i(51741),	-- Crimson Acolyte Pants
 				-- Possible Unused Level 120/Lv 120 Classtrial
 				i(157634),	-- Whispering Staff of the Void
 				i(157633),	-- Staff of Radiance
@@ -276,26 +216,6 @@ _.NeverImplemented =
 				i(32095),	-- Chancellor's Dreadweave Legs
 				i(32096),	-- Chancellor's Dreadweave Manthle
 				i(32097),	-- Chancellor's Dreadweave Robe
-				i(46242),	-- Deathbringer Gloves
-				i(46243),	-- Deathbringer Hood
-				i(46244),	-- Deathbringer Leggings
-				i(46245),	-- Deathbringer Robe
-				i(46246),	-- Deathbringer Shoulderpads
-				i(48735),	-- Gul'dan's Gloves of Conquest
-				i(48736),	-- Gul'dan's Hood of Conquest
-				i(48737),	-- Gul'dan's Leggings of Conquest
-				i(48738),	-- Gul'dan's Robe of Conquest
-				i(48739),	-- Gul'dan's Shoulderpads of Conquest
-				i(48740),	-- Kel'Thuzad's Gloves
-				i(48741),	-- Kel'Thuzad's Hood
-				i(48742),	-- Kel'Thuzad's Leggings
-				i(48743),	-- Kel'Thuzad's Robe
-				i(48744),	-- Kel'Thuzad's Shoulderpads
-				i(51762),	-- Dark Coven Shoulderpads
-				i(51763),	-- Dark Coven Robe
-				i(51764),	-- Dark Coven Leggings
-				i(51765),	-- Dark Coven Hood
-				i(51766),	-- Dark Coven Gloves
 				-- Possible Unused Level 120/Lv 120 Classtrial
 				i(157642),	-- Demonologist's Staff
 				i(157641),	-- Destructive Spellstaff
@@ -556,69 +476,6 @@ _.NeverImplemented =
 				i(32130),	-- Chancellor's Wyrmhide Legguards
 				i(32131),	-- Chancellor's Wyrmhide Spaulders
 				i(32132),	-- Chancellor's Wyrmhide Tunic
-				-- T9 "Replica" added in cata
-				i(48769),	-- Runetotem's Handguards of Conquest
-				i(48770),	-- Runetotem's Headpiece of Conquest
-				i(48771),	-- Runetotem's Leggings of Conquest
-				i(48772),	-- Runetotem's Robe of Conquest
-				i(48773),	-- Runetotem's Spaulders of Conquest
-				i(48781),	-- Runetotem's Cover of Conquest
-				i(48782),	-- Runetotem's Gloves of Conquest
-				i(48783),	-- Runetotem's Mantle of Conquest
-				i(48784),	-- Runetotem's Trousers of Conquest
-				i(48785),	-- Runetotem's Vestments of Conquest
-				i(48794),	-- Runetotem's Handgrips of Conquest
-				i(48795),	-- Runetotem's Headguard of Conquest
-				i(48796),	-- Runetotem's Legguards of Conquest
-				i(48797),	-- Runetotem's Raiments of Conquest
-				i(48798),	-- Runetotem's Shoulderpads of Conquest
-				i(48774),	-- Malfurion's Handguards
-				i(48775),	-- Malfurion's Headpiece
-				i(48776),	-- Malfurion's Leggings
-				i(48777),	-- Malfurion's Robe
-				i(48778),	-- Malfurion's Spaulders
-				i(48786),	-- Malfurion's Cover
-				i(48787),	-- Malfurion's Gloves
-				i(48788),	-- Malfurion's Mantle
-				i(48789),	-- Malfurion's Trousers
-				i(48790),	-- Malfurion's Vestments
-				i(48799),	-- Malfurion's Handgrips
-				i(48800),	-- Malfurion's Headguard
-				i(48801),	-- Malfurion's Legguards
-				i(48802),	-- Malfurion's Raiments
-				i(48803),	-- Malfurion's Shoulderpads
-				-- T8 "Replica" added in cata
-				i(45350),	-- Nightsong Cover
-				i(46260),	-- Nightsong Handgrips
-				i(46261),	-- Nightsong Handguards
-				i(46262),	-- Nightsong Headguard
-				i(46263),	-- Nightsong Headpiece
-				i(46264),	-- Nightsong Leggings
-				i(46265),	-- Nightsong Legguards
-				i(46266),	-- Nightsong Mantle
-				i(46267),	-- Nightsong Raiments
-				i(46268),	-- Nightsong Robe
-				i(46269),	-- Nightsong Shoulderpads
-				i(46270),	-- Nightsong Spaulders
-				i(46271),	-- Nightsong Trousers
-				i(46272),	-- Nightsong Vestments
-				i(46309),	-- Nightsong Gloves
-				-- T10 "Replica" added in cata
-				i(51692),	-- Lasherweave Pauldrons
-				i(51693),	-- Lasherweave Legplates
-				i(51694),	-- Lasherweave Helmet
-				i(51695),	-- Lasherweave Gauntlets
-				i(51696),	-- Lasherweave Robes
-				i(51697),	-- Lasherweave Raiment
-				i(51698),	-- Lasherweave Handgrips
-				i(51699),	-- Lasherweave Headguard
-				i(51700),	-- Lasherweave Legguards
-				i(51701),	-- Lasherweave Shoulderpads
-				i(51702),	-- Lasherweave Vestment
-				i(51703),	-- Lasherweave Gloves
-				i(51704),	-- Lasherweave Cover
-				i(51705),	-- Lasherweave Trousers
-				i(51706),	-- Lasherweave Mantle
 				-- Unused T0 Replica
 				i(78068),	-- Replica Wildheart Belt
 				i(78067),	-- Replica Wildheart Boots
@@ -677,12 +534,6 @@ _.NeverImplemented =
 				i(7951),		-- Hands of Thero-Shan
 				i(7953),		-- Mask of Thero-Shan
 				i(7949),		-- Leggings of Thero-Shan
-				-- T9 "Replica" added in cata
-				i(48804),	-- Garona's Breastplate of Conquest
-				i(48805),	-- Garona's Gauntlets of Conquest
-				i(48806),	-- Garona's Helmet of Conquest
-				i(48807),	-- Garona's Legplates of Conquest
-				i(48808),	-- Garona's Pauldrons of Conquest
 				-- Possible Unused Level 120/Lv 120 Classtrial
 				i(150600),	-- Outlaw's Cutlass
 				i(157637),	-- Swaggering Cutlass
@@ -708,24 +559,6 @@ _.NeverImplemented =
 				i(97055),	-- Nine-Tailed Spaulders
 				-- Transmog set item that never became available
 				i(130327),	-- Artful Britches
-				-- T8 "Replica" added in cata
-				i(46288),	-- Terrorblade Breastplate
-				i(46289),	-- Terrorblade Gauntlets
-				i(46290),	-- Terrorblade Helmet
-				i(46291),	-- Terrorblade Legplates
-				i(46292),	-- Terrorblade Pauldrons
-				-- T9 "Replica" added in cata
-				i(48809),	-- VanCleef's Breastplate
-				i(48810),	-- VanCleef's Gauntlets
-				i(48811),	-- VanCleef's Helmet
-				i(48812),	-- VanCleef's Legplates
-				i(48813),	-- VanCleef's Pauldrons
-				-- T10 "Replica" added in cata
-				i(51742),	-- Shadowblade Gauntlets
-				i(51743),	-- Shadowblade Breastplate
-				i(51744),	-- Shadowblade Legplates
-				i(51745),	-- Shadowblade Helmet
-				i(51746),	-- Shadowblade Pauldrons
 			}),
 			cl(MONK, {
 				-- T15 Thunderforged & Heroic Thunderforged (Throne of Thunder)
@@ -930,82 +763,6 @@ _.NeverImplemented =
 				i(32150),	-- Chancellor's Ringmail Headpiece
 				i(32151),	-- Chancellor's Ringmail Legguards
 				i(32152),	-- Chancellor's Ringmail Shoulders
-				-- MoP Version
-				i(46293),	-- Worldbreaker Chestguard
-				i(46294),	-- Worldbreaker Faceguard
-				i(46295),	-- Worldbreaker Gloves
-				i(46296),	-- Worldbreaker Grips
-				i(46297),	-- Worldbreaker Handguards
-				i(46298),	-- Worldbreaker Hauberk
-				i(46299),	-- Worldbreaker Headpiece
-				i(46300),	-- Worldbreaker Helm
-				i(46301),	-- Worldbreaker Kilt
-				i(46302),	-- Worldbreaker Legguards
-				i(46303),	-- Worldbreaker Shoulderguards
-				i(46304),	-- Worldbreaker Shoulderpads
-				i(46305),	-- Worldbreaker Spaulbers
-				i(46306),	-- Worldbreaker Tunic
-				i(46307),	-- Worldbreaker War-Kilt
-				i(48824),	-- Nobundo's Handguards
-				i(48825),	-- Nobundo's Headpiece
-				i(48826),	-- Nobundo's Legguards
-				i(48827),	-- Nobundo's Spaulders
-				i(48828),	-- Nobundo's Tunic
-				i(48836),	-- Nobundo's Gloves
-				i(48837),	-- Nobundo's Hauberk
-				i(48838),	-- Nobundo's Helm
-				i(48839),	-- Nobundo's Kilt
-				i(48840),	-- Nobundo's Shoulderpads
-				i(48846),	-- Nobundo's Chestguard
-				i(48847),	-- Nobundo's Faceguard
-				i(48848),	-- Nobundo's Grips
-				i(48849),	-- Nobundo's Shoulderguards
-				i(48850),	-- Nobundo's War-Kilt
-				i(51747),	-- Frost Witch's Tunic
-				i(51748),	-- Frost Witch's Handguards
-				i(51749),	-- Frost Witch's Headpiece
-				i(51750),	-- Frost Witch's Legguards
-				i(51751),	-- Frost Witch's Spaulders
-				i(51752),	-- Frost Witch's Chestguard
-				i(51753),	-- Frost Witch's Grips
-				i(51754),	-- Frost Witch's Faceguard
-				i(51755),	-- Frost Witch's War-Kilt
-				i(51756),	-- Frost Witch's Shoulderguards
-				i(51757),	-- Frost Witch's Hauberk
-				i(51758),	-- Frost Witch's Gloves
-				i(51759),	-- Frost Witch's Helm
-				i(51760),	-- Frost Witch's Kilt
-				i(51761),	-- Frost Witch's Shoulderpads
-				i(48829),	-- Thrall's Handguards of Conquest
-				i(48830),	-- Thrall's Headpiece of Conquest
-				i(48831),	-- Thrall's Legguards of Conquest
-				i(48832),	-- Thrall's Spaulders of Conquest
-				i(48833),	-- Thrall's Tunic of Conquest
-				i(48841),	-- Thrall's Gloves of Conquest
-				i(48842),	-- Thrall's Hauberk of Conquest
-				i(48843),	-- Thrall's Helm of Conquest
-				i(48844),	-- Thrall's Kilt of Conquest
-				i(48845),	-- Thrall's Shoulderpads of Conquest
-				i(48851),	-- Thrall's Chestguard of Conquest
-				i(48852),	-- Thrall's Faceguard of Conquest
-				i(48853),	-- Thrall's Grips of Conquest
-				i(48854),	-- Thrall's Shoulderguards of Conquest
-				i(48855),	-- Thrall's War-Kilt of Conquest
-				i(48829),	-- Thrall's Handguards of Conquest
-				i(48830),	-- Thrall's Headpiece of Conquest
-				i(48831),	-- Thrall's Legguards of Conquest
-				i(48832),	-- Thrall's Spaulders of Conquest
-				i(48833),	-- Thrall's Tunic of Conquest
-				i(48841),	-- Thrall's Gloves of Conquest
-				i(48842),	-- Thrall's Hauberk of Conquest
-				i(48843),	-- Thrall's Helm of Conquest
-				i(48844),	-- Thrall's Kilt of Conquest
-				i(48845),	-- Thrall's Shoulderpads of Conquest
-				i(48851),	-- Thrall's Chestguard of Conquest
-				i(48852),	-- Thrall's Faceguard of Conquest
-				i(48853),	-- Thrall's Grips of Conquest
-				i(48854),	-- Thrall's Shoulderguards of Conquest
-				i(48855),	-- Thrall's War-Kilt of Conquest
 				-- Unused T0 Replica
 				i(78100),	-- Replica Beaststalker's Belt
 				i(78101),	-- Replica Beaststalker's Bindings
@@ -1086,22 +843,6 @@ _.NeverImplemented =
 				i(150641),	-- Trailseeker Legguards
 				i(150643),	-- Trailseeker Belt
 				i(150644),	-- Trailseeker Bracers
-				i(48819),	-- Windrunner's Handguards
-				i(48820),	-- Windrunner's Headpiece
-				i(48821),	-- Windrunner's Legguards
-				i(48822),	-- Windrunner's Spaulders
-				i(48823),	-- Windrunner's Tunic
-				i(46274),	-- Scourgestalker Headpiece
-				i(51707),	-- Ahn'kahar Blood Hunter's Tunic
-				i(51708),	-- Ahn'kahar Blood Hunter's Spaulders
-				i(51709),	-- Ahn'kahar Blood Hunter's Legguards
-				i(51710),	-- Ahn'kahar Blood Hunter's Headpiece
-				i(51711),	-- Ahn'kahar Blood Hunter's Handguards
-				i(48814),	-- Windrunner's Handguards of Conquest
-				i(48815),	-- Windrunner's Headpiece of Conquest
-				i(48816),	-- Windrunner's Legguards of Conquest
-				i(48817),	-- Windrunner's Spaulders of Conquest
-				i(48818),	-- Windrunner's Tunic of Conquest
 				-- Unused T0 Replica
 				i(78122),	-- Replica Bindings of Elements
 				i(78125),	-- Replica Boots of Elements
@@ -1260,10 +1001,6 @@ _.NeverImplemented =
 			i(42886),	-- Gloves of the Howling Peaks
 			i(109265),	-- Unknown
 			i(43460),	-- Giantmaim Girdle
-			i(46273),	-- Scourgestalker Handguards
-			i(46275),	-- Scourgestalker Legguards
-			i(46276),	-- Scourgestalker Spaulders
-			i(46277),	-- Scourgestalker Tunic
 			i(109270),	-- Unknown
 			i(43936),	-- Battlesurgeons Gauntlets
 			i(54549),	-- Saline-Soaked Spaulders
@@ -1350,16 +1087,6 @@ _.NeverImplemented =
 		}),
 		n(-46, {	-- Plate
 			cl(DEATHKNIGHT, {
-				i(48880),	-- Koltira's Battleplate of Conquest
-				i(48881),	-- Koltira's Gauntlets of Conquest
-				i(48882),	-- Koltira's Helmet of Conquest
-				i(48883),	-- Koltira's Legplates of Conquest
-				i(48884),	-- Koltira's Shoulderpads of Conquest
-				i(48890),	-- Koltira's Chestguard of Conquest
-				i(48891),	-- Koltira's Faceguard of Conquest
-				i(48892),	-- Koltira's Handguards of Conquest
-				i(48893),	-- Koltira's Legguards of Conquest
-				i(48894),	-- Koltira's Pauldrons of Conquest
 				i(157677),	-- Hearthbonded Helm (Hunter Future Boost Gear)
 				i(157679),	-- Hearthbonded Spaulders (Hunter Future Boost Gear)
 				i(119485),	-- Heart-Lesion Chestguard
@@ -1403,21 +1130,7 @@ _.NeverImplemented =
 				i(96206),	-- Shoulderguards of the All-Consuming Maw
 			}),
 			cl(PALADIN, {
-				i(48905),	-- Liadrin's Tunic of Conquest
-				i(48906),	-- Liadrin's Spaulders of Conquest
-				i(48907),	-- Liadrin's Headpiece of Conquest
-				i(48908),	-- Liadrin's Greaves of Conquest
-				i(48909),	-- Liadrin's Gloves of Conquest
-				i(48910),	-- Liadrin's Battleplate of Conquest
-				i(48911),	-- Liadrin's Gauntlets of Conquest
-				i(48912),	-- Liadrin's Helm of Conquest
-				i(48913),	-- Liadrin's Legplates of Conquest
-				i(48914),	-- Liadrin's Shoulderplates of Conquest
-				i(48922),	-- Liadrin's Breastplate of Conquest
-				i(48923),	-- Liadrin's Faceguard of Conquest
-				i(48924),	-- Liadrin's Handguards of Conquest
-				i(48925),	-- Liadrin's Legguards of Conquest
-				i(48926),	-- Liadrin's Shoulderguards of Conquest
+				
 				i(32153),	-- Chancellor's Lamellar Chestpiece
 				i(32154),	-- Chancellor's Lamellar  Handguards
 				i(32155),	-- Chancellor's Lamellar  Headpiece
@@ -1472,39 +1185,7 @@ _.NeverImplemented =
 				i(96296),	-- Lightning Emperor's Shoulderguards
 			}),
 			cl(WARRIOR, {
-				i(48860),	-- Hellscream's Battleplate of Conquest
-				i(48861),	-- Hellscream's Gauntlets of Conquest
-				i(48862),	-- Hellscream's Helmet of Conquest
-				i(48863),	-- Hellscream's Legplates of Conquest
-				i(48864),	-- Hellscream's Shoulderplates of Conquest
-				i(48870),	-- Hellscream's Breastplate of Conquest
-				i(48871),	-- Hellscream's Greathelm of Conquest
-				i(48872),	-- Hellscream's Handguards of Conquest
-				i(48873),	-- Hellscream's Legguards of Conquest
-				i(48874),	-- Hellscream's Pauldrons of Conquest
 				i(154041),	-- Oathsworn Faceguard
-				i(46278),	-- Siegebreaker Battleplate
-				i(46279),	-- Siegebreaker Breastplate
-				i(46280),	-- Siegebreaker Gauntlets
-				i(46281),	-- Siegebreaker Greathelm
-				i(46282),	-- Siegebreaker Helmet
-				i(46283),	-- Siegebreaker Handguards
-				i(46284),	-- Siegebreaker Legguards
-				i(46285),	-- Siegebreaker Legplates
-				i(46286),	-- Siegebreaker Pauldrons
-				i(46287),	-- Siegebreaker Shoulderplates
-				i(48865),	-- Wyrnn's Battleplate
-				i(48866),	-- Wyrnn's Gauntlets
-				i(48867),	-- Wyrnn's Helmet
-				i(48868),	-- Wyrnn's Legplates
-				i(48869),	-- Wyrnn's Shoulderplates
-				i(48875),	-- Wyrnn's Breastplate
-				i(48876),	-- Wyrnn's Greathelm
-				i(48877),	-- Wyrnn's Handguards
-				i(48878),	-- Wyrnn's Legguards
-				i(48879),	-- Wyrnn's Pauldrons
-				i(48895),	-- Thassarian's Chestguard
-				i(48899),	-- Thassarian's Pauldrons
 				i(157741),	-- Warsinger's Helm
 				i(157743),	-- Warsinger's  Pauldrons
 				-- Unused T0 Replica
@@ -1645,16 +1326,6 @@ _.NeverImplemented =
 			i(32170),	-- Chancellor's Scaled Helm
 			i(32171),	-- Chancellor's Scaled Shoulders
 			i(32172),	-- Chancellor's Scaled Spaulders
-			i(46213),	-- Aegis Battleplate
-			i(46214),	-- Aegis Breastplate
-			i(46215),	-- Aegis Faceguard
-			i(46216),	-- Aegis Gauntlets
-			i(46217),	-- Aegis Gloves
-			i(46218),	-- Aegis Greaves
-			i(46219),	-- Aegis Handguards
-			i(46220),	-- Aegis Headpiece
-			i(46221),	-- Aegis Helm
-			i(46222),	-- Aegis Legguards
 			i(5822),		-- Hedgeseed Gauntlets
 			i(26041),	-- Vigilant Vambraces
 			i(21587),	-- Wristguards of Castigation (never made it off test)
