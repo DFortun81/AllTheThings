@@ -44,7 +44,7 @@ def harvest_things(thing_type, max_id_path, db_path):
                 else 0
             )
 
-    time_end = time.monotonic() + 60 * 1
+    time_end = time.monotonic() + 60 * 60 * 5  # 5 hours
     with open(db_path, "a") as things:
         try:
             for thing_id in range(max_harvested_id + 1, max_id + 1):
