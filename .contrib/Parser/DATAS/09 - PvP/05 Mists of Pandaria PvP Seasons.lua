@@ -4,7 +4,7 @@
 
 _.PVP =
 {
-	pvp(tier(5, {	-- Mists of Pandaria
+	pvp(n(-10041, {	-- Mists of Pandaria
 		n(-675, {	-- Malevolent Gladiator: Season 12
 			n(-9983, {	-- Honor Gear
 				cl(DEATHKNIGHT, {
@@ -102,7 +102,7 @@ _.PVP =
 					i(138718, {	-- Ensemble: Dreadful Gladiator's Chain Armor
 						["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 						["sym"] = {
-							{"sub", "pvp_set_ensemble", -9979, -675, -9983, 3 },
+							{"sub", "pvp_set_ensemble", -10041, -675, -9983, 3 },
 							{"select", "itemID", 84407 },	-- Dreadful Gladiator's Wristguards of Accuracy
 							{"select", "itemID", 84406 },	-- Dreadful Gladiator's Wristguards of Alacrity
 							{"select", "itemID", 84403 },	-- Dreadful Gladiator's Links of Accuracy
@@ -935,7 +935,7 @@ _.PVP =
 						i(138707, {	-- Ensemble: Malevolent Gladiator's Chain Armor
 							["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 							["sym"] = {
-								{"sub", "pvp_set_ensemble", -9979, -675, -661, 3 },
+								{"sub", "pvp_set_ensemble", -10041, -675, -661, 3 },
 								{"select", "itemID", 84981 },	-- Malevolent Gladiator's Wristguards of Accuracy
 								{"select", "itemID", 84980 },	-- Malevolent Gladiator's Wristguards of Alacrity
 								{"select", "itemID", 84957 },	-- Malevolent Gladiator's Links of Accuracy
@@ -2640,7 +2640,7 @@ _.PVP =
 							i(138689, {	-- Ensemble: Tyrannical Gladiator's Chain Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -9979, -676, -9914, -661, 3 },
+									{"sub", "pvp_set_ensemble", -10041, -676, -9914, -661, 3 },
 									{"select", "itemID", 91221 },	-- Tyrannical Gladiator's Wristguards of Accuracy
 									{"select", "itemID", 91220 },	-- Tyrannical Gladiator's Wristguards of Alacrity
 									{"select", "itemID", 91214 },	-- Tyrannical Gladiator's Links of Accuracy
@@ -4105,7 +4105,7 @@ _.PVP =
 							i(138690, {	-- Ensemble: Tyrannical Gladiator's Chain Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -9979, -676, -9913, -661, 3 },
+									{"sub", "pvp_set_ensemble", -10041, -676, -9913, -661, 3 },
 									{"select", "itemID", 94469 },	-- Tyrannical Gladiator's Wristguards of Accuracy
 									{"select", "itemID", 94404 },	-- Tyrannical Gladiator's Wristguards of Alacrity
 									{"select", "itemID", 94358 },	-- Tyrannical Gladiator's Links of Accuracy
@@ -5776,7 +5776,7 @@ _.PVP =
 							i(138667, {	-- Ensemble: Grievous Gladiator's Chain Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -9979, -677, -9914, -661, 3 },
+									{"sub", "pvp_set_ensemble", -10041, -677, -9914, -661, 3 },
 									{"select", "itemID", 100317 },	-- Grievous Gladiator's Wristguards of Accuracy
 									{"select", "itemID", 100316 },	-- Grievous Gladiator's Wristguards of Alacrity
 									{"select", "itemID", 100310 },	-- Grievous Gladiator's Links of Accuracy
@@ -7261,7 +7261,7 @@ _.PVP =
 							i(138668, {	-- Ensemble: Grievous Gladiator's Chain Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -9979, -677, -9913, -661, 3 },
+									{"sub", "pvp_set_ensemble", -10041, -677, -9913, -661, 3 },
 									{"select", "itemID", 100699 },	-- Grievous Gladiator's Wristguards of Accuracy
 									{"select", "itemID", 100634 },	-- Grievous Gladiator's Wristguards of Alacrity
 									{"select", "itemID", 100588 },	-- Grievous Gladiator's Links of Accuracy
@@ -8832,7 +8832,7 @@ _.PVP =
 							i(138645, {	-- Ensemble: Prideful Gladiator's Chain Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -9979, -678, -9914, -661, 3 },
+									{"sub", "pvp_set_ensemble", -10041, -678, -9914, -661, 3 },
 									{"select", "itemID", 102753 },	-- Prideful Gladiator's Wristguards of Accuracy
 									{"select", "itemID", 103217 },	-- Prideful Gladiator's Wristguards of Alacrity (World Boss has different Version)
 									{"select", "itemID", 102645 },	-- Prideful Gladiator's Links of Accuracy
@@ -9569,7 +9569,7 @@ _.PVP =
 							i(138646, {	-- Ensemble: Prideful Gladiator's Chain Armor
 								["cost"] = { { "i", 137642, 12 } },	-- 12x Mark of Honor
 								["sym"] = {
-									{"sub", "pvp_set_ensemble", -9979, -678, -9913, -661, 3 },
+									{"sub", "pvp_set_ensemble", -10041, -678, -9913, -661, 3 },
 									{"select", "itemID", 103415 },	-- Prideful Gladiator's Wristguards of Accuracy
 									{"select", "itemID", 103414 },	-- Prideful Gladiator's Wristguards of Alacrity
 									{"select", "itemID", 103411 },	-- Prideful Gladiator's Links of Accuracy
@@ -10370,6 +10370,8 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(91751),	-- Malevolent Gladiator's Slasher
 				i(84893),	-- Malevolent Gladiator's Fleshslicer
 				i(84968),	-- Malevolent Gladiator's Slicer
+				i(94899),	-- Never made to Live. Malevolent Gladiator's Baton of Light
+				i(94898),	-- Never made to Live. Malevolent Gladiator's Touch of Death
 			}),
 			cl(MAGE, {
 				i(97925),	-- Malevolent Gladiator's Silk Amice
@@ -10429,34 +10431,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		}),
 		n(-676, {
 			n(-319, {
-				i(91089),	-- Tyrannical Gladiator's Bonegrinder
-				i(91394),	-- Tyrannical Gladiator's Fleshslicer
-				i(91107),	-- Tyrannical Gladiator's Longbow
-				i(91307),	-- Tyrannical Gladiator's Pike
-				i(91201),	-- Tyrannical Gladiator's Rifle
-				i(99833),	-- Tyrannical Gladiator's Shiv
-				i(99939),	-- Tyrannical Gladiator's Baton of Light
-				i(99767),	-- Tyrannical Gladiator's Bonegrinder
-				i(99934),	-- Tyrannical Gladiator's Fleshslicer
-				i(99780),	-- Tyrannical Gladiator's Longbow
-				i(99892),	-- Tyrannical Gladiator's Pike
-				i(99834),	-- Tyrannical Gladiator's Rifle
-				i(99804),	-- Tyrannical Gladiator's Touch of Deafeat
-				i(94324),	-- Tyrannical Gladiator's Bonegrinder
-				i(94314),	-- Tyrannical Gladiator's Fleshslicer
-				i(94303),	-- Tyrannical Gladiator's Longbow
-				i(94319),	-- Tyrannical Gladiator's Pike
-				i(94309),	-- Tyrannical Gladiator's Rifle
-				i(99962),	-- Tyrannical Gladiator's Shiv
-				i(99969),	-- Tyrannical Gladiator's Baton of Light
-				i(99985),	-- Tyrannical Gladiator's Bonegrinder
-				i(99975),	-- Tyrannical Gladiator's Fleshslicer
-				i(99964),	-- Tyrannical Gladiator's Longbow
-				i(99980),	-- Tyrannical Gladiator's Pike
-				i(99970),	-- Tyrannical Gladiator's Rifle
-				i(99966),	-- Tyrannical Gladiator's Touch of Deafeat
-				i(91200),	-- Tyrannical Gladiator's Shiv
-				i(91799),	-- Tyrannical Gladiator's Mail Leggings
 				i(91089),	-- Tyrannical Gladiator's Bonegrinder
 				i(91394),	-- Tyrannical Gladiator's Fleshslicer
 				i(91107),	-- Tyrannical Gladiator's Longbow

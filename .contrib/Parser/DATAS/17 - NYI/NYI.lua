@@ -817,11 +817,6 @@ _.NeverImplemented =
 			i(159175),	-- Mistfall Belt
 			i(159180),	-- Mistfall Legguards
 			i(159178),	-- Mistfall Boots
-			i(60585),	-- Vicious Gladiator's Armwraps of Dominance
-			i(60608),	-- Vicious Gladiator's Armwraps of Dominance
-			i(60588),	-- Vicious Gladiator's Armwraps of Triumph
-			i(60597),	-- Vicious Gladiator's Armwraps of Triumph
-			i(60598),	-- Vicious Gladiator's Armwraps of Triumph
 			i(166946),	-- Dread Gladiator's Leather Tunic
 			i(166947),	-- Dread Gladiator's Leather Boots
 			i(166948),	-- Dread Gladiator's Leather Gloves
@@ -915,21 +910,6 @@ _.NeverImplemented =
 			i(28145),	-- Tranquillien Wraps (Leather)
 			i(54727),	-- Traveler's Boots
 			i(54543),	-- Orca-Tooth Treads
-			i(60584),	-- Vicious Gladiator's Boots of Dominance
-			i(60585),	-- Vicious Gladiator's Armwraps of Dominance
-			i(60588),	-- Vicious Gladiator's Armwraps of Triumph
-			i(60590),	-- Vicious Gladiator's Boots of Triumph
-			i(60592),	-- Vicious Gladiator's Belt of Triumph
-			i(60595),	-- Vicious Gladiator's Belt of Triumph
-			i(60596),	-- Vicious Gladiator's Boots of Triumph
-			i(60597),	-- Vicious Gladiator's Armwraps of Triumph
-			i(60598),	-- Vicious Gladiator's Armwraps of Triumph
-			i(60599),	-- Vicious Gladiator's Boots of Triumph
-			i(60600),	-- Vicious Gladiator's Belt of Triumph
-			i(60606),	-- Vicious Gladiator's Belt of Dominance
-			i(60608),	-- Vicious Gladiator's Armwraps of Dominance
-			i(60609),	-- Vicious Gladiator's Belt of Dominance
-			i(60610),	-- Vicious Gladiator's Boots of Dominance
 			i(54649),	-- Cow King's Hide
 			i(54650),	-- Forest's Embrace
 			i(80946),	-- Peacebreaker's Leather Helm
@@ -1257,9 +1237,6 @@ _.NeverImplemented =
 			i(179859),	-- Ardenweald Covenant Mail Hand
 			i(179860),	-- Ardenweald Covenant Mail Feet
 			i(179861),	-- Ardenweald Covenant Mail Chest
-			i(60584),	-- Vicious Gladiator's Boots of Dominance
-			i(60610),	-- Vicious Gladiator's Boots of Dominance
-			i(60590),	-- Vicious Gladiator's Boots of Triumph
 			i(166954),	-- Dread Gladiator's Chain Armor
 			i(166955),	-- Dread Gladiator's Chain Sabatons
 			i(166956),	-- Dread Gladiator's Chain Gauntlets
@@ -1839,9 +1816,6 @@ _.NeverImplemented =
 			i(165261),	-- Unknown Cloak
 			i(134699),	-- Enveloping Drape
 			i(134609),	-- Scorching Cape
-			i(60782),	-- Vicious Gladiator's Cloak of Conquest
-			i(60784),	-- Vicious Gladiator's Cloak of Dominance
-			i(60785),	-- Vicious Gladiator's Cloak of Dominance
 			i(179615),	-- Oribos Quest Mail Cloak
 			i(179621),	-- Ardenweald Covenant Mail Cloak
 			i(179630),	-- Ardenweald Covenant Mail Cloak
@@ -1918,9 +1892,6 @@ _.NeverImplemented =
 			i(80968),	-- Scavenger's cloak
 			i(80969),	-- Scavenger's manteua
 			i(35876),	-- Talbuk Cape
-			i(60782),	-- Vicious Gladiator's Cloak of Conquest
-			i(60784),	-- Vicious Gladiator's Cloak of Dominance
-			i(60785),	-- Vicious Gladiator's Cloak of Dominance
 			i(37174),	-- Rippling Azure Cloak
 			i(155384),	-- Singed Skycaller Drape (NEver added)
 			i(108823),	-- 6.0 PH Cloak Int
@@ -2018,7 +1989,6 @@ _.NeverImplemented =
 			i(81051),	-- Scavenger's Locket
 			i(81052),	-- Scavenger's Amulet
 			i(81053),	-- Scavenger's Pendant
-			i(60666), 	-- Vicious Gladiator's Pendant of Conquest
 			i(108812),	-- Unknown
 			i(108818),	-- Unknown
 			i(108819),	-- Unknown
@@ -2138,7 +2108,6 @@ _.NeverImplemented =
 			i(60655),	-- Unknown
 			i(60656),	-- Unknown
 			i(60657),	-- Unknown
-			i(60666),	-- Vicious Gladiator's Pendant of Conquest
 		}),
 		n(-386, {	-- Trinket
 			i(12805),	-- Orb of Fire
@@ -2306,16 +2275,6 @@ _.NeverImplemented =
 		i(178488),	-- Retrieving Data
 		i(178489),	-- Retrieving Data
 		i(178673),	-- Retrieving Data
-		i(146463),	-- Ensemble: Elite Cataclysmic Gladiator's Dreadplate Armor
-		i(146461),	-- Ensemble: Elite Cataclysmic Gladiator's Dragonhide Armor
-		i(146459),	-- Ensemble: Elite Cataclysmic Gladiator's Chain Armor
-		i(146477),	-- Ensemble: Elite Cataclysmic Gladiator's Silk Armor
-		i(146475),	-- Ensemble: Elite Cataclysmic Gladiator's Scaled Armor
-		i(146473),	-- Ensemble: Elite Cataclysmic Gladiator's Satin Armor
-		i(146467),	-- Ensemble: Elite Cataclysmic Gladiator's Leather Armor
-		i(146471),	-- Ensemble: Elite Cataclysmic Gladiator's Ringmail Armor
-		i(146465),	-- Ensemble: Elite Cataclysmic Gladiator's Felweave Armor
-		i(146469),	-- Ensemble: Elite Cataclysmic Gladiator's Plate Armor
 		i(159681),	-- Set Keystone Map: Darkheart Thicket
 		i(159683),	-- Set Keystone Map: Black Rook Hold
 		i(159684),	-- Set Keystone Map: Cathedral of Eternal Night
@@ -2364,16 +2323,6 @@ _.NeverImplemented =
 		i(169154),	-- ph nzoth cache
 		i(170501),	-- ph mogu cache
 		i(172381),	-- ph objective 2
-		i(146483),	-- Ensemble: Elite Ruthless Gladiator's Dreadplate Armor
-		i(146481),	-- Ensemble: Elite Ruthless Gladiator's Dragonhide Armor
-		i(146479),	-- Ensemble: Elite Ruthless Gladiator's Chain Armor
-		i(146497),	-- Ensemble: Elite Ruthless Gladiator's Silk Armor
-		i(146495),	-- Ensemble: Elite Ruthless Gladiator's Scaled Armor
-		i(146493),	-- Ensemble: Elite Ruthless Gladiator's Satin Armor
-		i(146487),	-- Ensemble: Elite Ruthless Gladiator's Leather Armor
-		i(146491),	-- Ensemble: Elite Ruthless Gladiator's Ringmail Armor
-		i(146485),	-- Ensemble: Elite Ruthless Gladiator's Felweave Armor
-		i(146489),	-- Ensemble: Elite Ruthless Gladiator's Plate Armor
 		i(169178),	-- Blueprint: TK33(DNT))
 		i(169179),	-- Blueprint: TK34(DNT))
 		i(169180),	-- Blueprint: TK35(DNT))
@@ -2541,11 +2490,6 @@ _.NeverImplemented =
 		i(137282),	-- valarjar Vendor List
 		i(137283),	-- dreamweavers Vendor List
 		i(34544),	-- Essence of the immortals
-		i(84897),	-- Never made to Live. Malevolent Gladiator's Heavy Crossbow
-		i(94899),	-- Never made to Live. Malevolent Gladiator's Baton of Light
-		i(94898),	-- Never made to Live. Malevolent Gladiator's Touch of Death
-		i(85118),	-- Never made to Live. 490 Malevolent Gladiator's Shiv
-		i(84895),	-- Never made to Live. Malevolent Gladiator's Shiv
 		i(54757),	-- Double Link Tunic
 		i(54765),	-- Burnished Leggings
 		i(54766),	-- Burnished Gloves
@@ -3930,16 +3874,11 @@ _.NeverImplemented =
 			i(109283),   	-- 6.0 QA Combat Test Hunter Bow
 			i(140717),	-- Marksman Recurve Bow
 			i(150612),	-- Marksman Recurve Bow
-			i(91107),	-- Tyrannical Gladiator's Longbow a s13
-			i(94303),	-- Tyrannical Gladiator's Longbow h s13
-			i(99780),	-- Tyrannical Gladiator's Longbow a s14
-			i(99964),	-- Tyrannical Gladiator's Longbow h s14
 			i(158562),	-- Howdah-Rider's Bow
 			i(167141),	-- Unknown
 			i(177114),	-- [Honorbound Longbow]
 			i(177128),	-- [7th Legionnaire's Longbow]
 			i(178469),	--
-			i(64783),	-- Bloodthirsty Gladiator's Longbow (Epic BG item never made it out of beta)))
 			i(111783),	-- Irontree Bow (Cata version 55306 is in game but this version doesn't seem to have ever existed)
 		}),
 		n(-346, {	-- Crossbows
@@ -3950,15 +3889,6 @@ _.NeverImplemented =
 			i(165267),	-- Unknown
 			i(165271),	-- Unknown
 			i(115600),	-- Unknown
-			i(64760),	-- Bloodthirsty Gladiator's Heavy Crossbow (Epic BG item never made it out of beta)
-			i(103003),   	-- Prideful Gladiator's Heavy Crossbow (they ditched those items)
-			i(103375),   	-- Prideful Gladiator's Heavy Crossbow (they ditched those items)
-			i(102613),   	-- Prideful Gladiator's Heavy Crossbow (they ditched those items)
-			i(102810),   	-- Grievous Gladiator's Heavy Crossbow (they ditched those items)
-			i(100241),	-- Grevious Gladiator's Heavy Crossbow (they ditched those items, first try) (A)
-			i(100556),	-- Grevious Gladiator's Heavy Crossbow (they ditched those items, first try) (H)
-			i(100242),	-- Grevious Gladiator's Heavy Crossbow (they ditched those items, first try) (Elite)
-			i(103178),	-- Grevious Gladiator's Heavy Crossbow (they ditched those items) (A)
 			i(158503),	-- Scalawag's Bolt Thrower
 		}),
 		n(-333, {	-- Daggers
@@ -3985,8 +3915,6 @@ _.NeverImplemented =
 			i(150598),	-- Duskfall Daggers
 			i(140704),	-- Assassins Serrated Dagger
 			i(150599),	-- Assassins Serrated Dagger
-			i(64848),	-- Bloodthirsty Gladiator's Shanker(Epic BG Item, never made it out of beta)
-			i(64859),	-- Bloodthirsty Gladiator's Spellblade (Epic BG Item, never made it out of beta))
 			i(109269),	-- Unknown
 			i(109292),	-- Unknown
 			i(117993),	-- RENAME RANGARI BOOT KNIFE
@@ -4012,7 +3940,6 @@ _.NeverImplemented =
 			i(171191),   	-- owen test
 			i(171192),   	-- owen test
 			i(115797),	-- test fist weapon
-			i(64826),	-- Bloodthirsty Gladiator's Ripper (Epic BG Item, never made it out of beta))
 			i(108788),   	-- Unknown
 			i(108789),   	-- Unknown
 			i(109361),   	-- Unknown
@@ -4025,10 +3952,6 @@ _.NeverImplemented =
 			i(159895),	-- honorable combatant's cestus
 			i(161973),	-- honorable combatant's striker
 			i(161974),	-- honorable combatant's cestus
-			i(64774),	-- Bloodthirsty Gladiator's Slasher(Epic BG item never made it out of beta))
-			i(64775),	-- Bloodthirsty Gladiator's Fleshslicer (Epic BG item never made it out of beta))
-			i(64825),	-- Bloodthirsty Gladiator's Right Render (Epic BG item never made it out of beta))
-			i(64926),	-- Bloodthirsty Gladiator's Ripper (Epic BG item never made it out of beta)))
 			i(140708),	-- Earthmenders talons (probably first try for party sync)
 			i(150603),	-- Earthmenders talons (probably first try for party sync)
 			i(157640),	-- Earthmenders talons (probably first try for party sync)
@@ -4039,17 +3962,12 @@ _.NeverImplemented =
 			i(161296),	-- Autumnvale Hunting Rifle (they added a different version)
 			i(165270),	-- Unknown
 			i(165266),	-- Unknown
-			i(91201),	-- Tyrannical Gladiator's Rifle a s13
-			i(94309),	-- Tyrannical Gladiator's Rifle h s13
-			i(99834),	-- Tyrannical Gladiator's Rifle a s14
-			i(99970),	-- Tyrannical Gladiator's Rifle h s14
 			i(108790),	-- Unknown
 			i(109491),	-- Unknown
 			i(109529),	-- Unknown
 			i(140691),	-- Packmasters Rifle
 			i(150586),	-- Packmasters Rifle
 			i(122080),	-- Warscout Shotgun (not added version)
-			i(64824),	-- Bloodthirsty Gladiator's Rifle (Epic BG item never made it out of beta))
 
 		}),
 		n(-331, {	-- Held in Offhand
@@ -4092,8 +4010,6 @@ _.NeverImplemented =
 			i(180460),	-- Primal Combatant's Decapitator
 			i(115292),	-- spectral axe
 			i(42214),	-- Savage Gladiator's Waraxe
-			i(64717),	-- Bloodthirsty Gladiator's Cleaver (Epic BG Item, never made it out of beta)
-			i(64758),	-- Bloodthirsty Gladiator's Hacker (Epic BG Item, never made it out of beta))
 			i(108779),	-- Unknown
 			i(108780),	-- Unknown
 			i(108781),	-- Unknown
@@ -4108,9 +4024,6 @@ _.NeverImplemented =
 			i(147379),	-- Wooden Toy Axe (H) used to apply the mog
 		}),
 		n(-336, { 	-- One-Handed Maces
-			i(64700),	-- Bloodthirsty Gladiator's Bonecracker (Epic BG Item, never made it out of beta)
-			i(64752),	-- Bloodthirsty Gladiator's Gravel (Epic BG Item, never made it out of beta)
-			i(64816),	-- Bloodthirsty Gladiator's Pummeler (Epic BG Item, never made it out of beta))
 			i(165262),	-- Unknown
 			i(182578),	-- NPE Weapon 1H Mace AGI
 			i(146304),	-- Fel Titan Hammer (test version for Maiden Mog Drop)
@@ -4169,8 +4082,6 @@ _.NeverImplemented =
 			i(161308),	-- Ashvane Captain's Quickblade
 			i(161309),	-- Ashvane Captain's Gladius
 			i(93145),	-- Scavenged Pandaren Sword
-			i(64817),	-- Bloodthirsty Gladiator's Quickblade (Epic BG Item, never made it out of beta)
-			i(64858),	-- Bloodthirsty Gladiator's Slicer (Epic BG Item, never made it out of beta))
 			i(140705),	-- Outlaw Cutlass
 			i(137225),	-- Thunderfury, Blessed Blade of the Windseeker (mog testing)
 			i(47846),	-- Cruel Barb (Glow, Purple - Low)
@@ -4193,7 +4104,6 @@ _.NeverImplemented =
 			i(108797),	-- Unknown
 			i(108798),	-- Unknown
 			i(54965),	-- Unknown
-			i(64810),	-- Bloodthirsty Gladiator's Pike (Epic BG item never made it out of beta)))
 			i(108799),	-- Unknown
 			i(109456),	-- Unknown
 			i(153401),	-- [Whaler's Pike]
@@ -4287,9 +4197,6 @@ _.NeverImplemented =
 			i(180160),	--
 			i(180161),	--
 			i(115298),	-- Spectral Spire
-			i(64695),	-- Bloodthirsty Gladiator's Battle Staff (Epic BG Item, never made it out of beta)
-			i(64744),	-- Bloodthirsty Gladiator's Energy Staff (Epic BG Item, never made it out of beta)
-			i(64860),	-- Bloodthirsty Gladiator's Staff (Epic BG Item, never made it out of beta))
 			i(132477),	-- Unknown - was under Legion>Staves
 			i(132478),	-- Unknown - was under Legion>Staves
 			i(132479),	-- Unknown - was under Legion>Staves
@@ -4326,13 +4233,6 @@ _.NeverImplemented =
 			i(129968),	-- Sheilun
 			i(129969),	-- Sheilun
 			i(129970),	-- Sheilun
-			i(100537),	-- Grievous Gladiator's Staff (S14, not in weapon arsenal) (Horde)
-			i(103394),	-- Prideful Gladiator's Staff (Not in Weapon Arsenal) (Horde)
-			i(102595),	-- Prideful Gladiator's Staff (unique look, never added)
-			i(102792),	-- Grievous Gladiator's Staff (S15, not in weapon arsenal) (Horde)
-			i(100278),	-- Grievous Gladiator's Staff (Alliance)
-			i(103197),	-- Grievous Gladiator's Staff (S15, not in weapon arsenal) (Alliance)
-			i(100279),	-- Grievous Gladiator's Staff
 			i(159579),	-- 8.0 PH - Weapon - Staff
 			i(159580),	-- 8.0 PH - Weapon - Staff
 			i(159581),	-- 8.0 PH - Weapon - Staff
@@ -4371,8 +4271,6 @@ _.NeverImplemented =
 			i(115293),	-- Spectral Greataxe
 			i(80984),	-- Expropriator's Greataxe
 			i(117994),	-- RENAME Karabor Honor Guard Axe
-			i(64701),	-- Bloodthirsty Gladiator's Bonegrinder (Epic BG Item, never made it out of beta))
-			i(64726),	-- Bloodthirsty Gladiator's Decapitator (Epic BG item never made it out of beta))
 		}),
 		n(-337, {	-- Two Handed Maces
 			i(23457),	-- High Warlord's Destroyer
@@ -4381,19 +4279,8 @@ _.NeverImplemented =
 			i(150594),	-- Warhammer of Retribution
 			i(159555),	-- Unknown
 			i(165263),	-- Unknown
-			i(91089),	-- Tyrannical Gladiator's Bonegrinder a s13
-			i(94324),	-- Tyrannical Gladiator's Bonegrinder h s13
-			i(99767),	-- Tyrannical Gladiator's Bonegrinder a s14
-			i(99985),	-- Tyrannical Gladiator's Bonegrinder h s14
-			i(102611),	-- Prideful Gladiator's Bonegrinder
 			i(108794),	-- Unknown
 			i(108795),	-- Unknown
-			i(100186),	-- Grievous Gladiator's Bonegrinder
-			i(100185),	-- Grievous Gladiator's Bonegrinder (Alliance)
-			i(100554), 	-- Grievous Gladiator's Bonegrinder (Horde)
-			i(102808),	-- Grievous Gladiator's Bonegrinder
-			i(103140),	-- Grievous Gladiator's Bonegrinder
-			i(103337),	-- Prideful Gladiator's Bonegrinder
 			i(108796),	-- Unknown
 			i(109401),	-- Unknown
 		}),
@@ -4407,7 +4294,6 @@ _.NeverImplemented =
 			i(137581),	-- Test Ashbringer 1
 			i(49457),	-- Unknown
 			i(81703),	-- Glorenzelg, added in 5.0.1 ??
-			i(64755),	-- Bloodthirsty Gladiator's Greatsword (Epic BG item never made it out of beta))
 			i(139621),	-- The Watcher's Hammer. Used for Lost Edicts of the Watcher Paladin Appearance, actual appearance is gained via a different item
 			i(137582),	-- Test Ashbringer 2
 			i(49547),	-- Unknown
@@ -4439,8 +4325,6 @@ _.NeverImplemented =
 			i(180017),	--
 			i(152871),	-- Seapriest's Wand
 			i(152873),	-- Talanji's Salutary Scepter
-			i(64694),	-- Bloodthirsty Gladiator's Baton of Light
-			i(64861),	-- Bloodthirsty Gladiator's Touch of Defeat
 			i(165275),	-- Unknown
 		}),
 		n(-340, {	-- War Glaives
@@ -4453,67 +4337,6 @@ _.NeverImplemented =
 			i(165682),	-- Unknown
 			i(164760),	-- Illidari Warglaives (Lv100 boosted gear)
 		}),
-		i(64693),	-- Bloodthirsty Gladiator's Barrier
-		i(64694),	-- Bloodthirsty Gladiator's Baton of Light
-		i(64695),	-- Bloodthirsty Gladiator's Battle Staff
-		i(64700),	-- Bloodthirsty Gladiator's Bonecracker
-		i(64701),	-- Bloodthirsty Gladiator's Bonegrinder
-		i(64717),	-- Bloodthirsty Gladiator's Cleaver
-		i(64726),	-- Bloodthirsty Gladiator's Decapitator
-		i(64743),	-- Bloodthirsty Gladiator's Endgame
-		i(64744),	-- Bloodthirsty Gladiator's Energy Staff
-		i(64775),	-- Bloodthirsty Gladiator's Fleshslicer
-		i(64752),	-- Bloodthirsty Gladiator's Gavel
-		i(64755),	-- Bloodthirsty Gladiator's Greatsword
-		i(64758),	-- Bloodthirsty Gladiator's Hacker
-		i(64760),	-- Bloodthirsty Gladiator's Heavy Crossbow
-		i(64783),	-- Bloodthirsty Gladiator's Longbow
-		i(64810),	-- Bloodthirsty Gladiator's Pike
-		i(64816),	-- Bloodthirsty Gladiator's Pummeler
-		i(64817),	-- Bloodthirsty Gladiator's Quickblade
-		i(64818),	-- Bloodthirsty Gladiator's Redoubt
-		i(64823),	-- Bloodthirsty Gladiator's Reprieve
-		i(64824),	-- Bloodthirsty Gladiator's Rifle
-		i(64825),	-- Bloodthirsty Gladiator's Right Render
-		i(64826),	-- Bloodthirsty Gladiator's Ripper
-		i(64848),	-- Bloodthirsty Gladiator's Shanker
-		i(64849),	-- Bloodthirsty Gladiator's Shield Wall
-		i(64850),	-- Bloodthirsty Gladiator's Shiv
-		i(64774),	-- Bloodthirsty Gladiator's Slasher
-		i(64858),	-- Bloodthirsty Gladiator's Slicer
-		i(64859),	-- Bloodthirsty Gladiator's Spellblade
-		i(64860),	-- Bloodthirsty Gladiator's Staff
-		i(64861),	-- Bloodthirsty Gladiator's Touch of Defeat
-		-- Dreadful Gladiator (BLUE QUALITY) (did not make it to live)
-		i(84697),	-- Dreadful Gladiator's Fleshslicer
-		i(84722),	-- Dreadful Gladiator's Pike
-		i(84699),	-- Dreadful Gladiator's Render
-		i(84696),	-- Dreadful Gladiator's Ripper
-		i(84695),	-- Dreadful Gladiator's Spellblade (blue)
-		i(84708),	-- Dreadful Gladiator's Shanker (blue)
-		i(84698),	-- Dreadful Gladiator's Slasher
-		i(84707),	-- Dreadful Gladiator's Decapitator
-		i(84700),	-- Dreadful Gladiator's Pummeler
-		i(84719),	-- Dreadful Gladiator's Bonecracker
-		i(84720),	-- Dreadful Gladiator's Gavel
-		i(84701),	-- Dreadful Gladiator's Cleaver
-		i(84702),	-- Dreadful Gladiator's Hacker
-		i(84705),	-- Dreadful Gladiator's Longbow
-		i(84706),	-- Dreadful Gladiator's Rifle
-		i(84710),	-- Dreadful Gladiator's Slicer
-		i(84716),	-- Dreadful Gladiator's Quickblade
-		i(84717),	-- Dreadful Gladiator's Greatsword
-		i(84721),	-- Dreadful Gladiator's Bonegrinder
-		i(84723),	-- Dreadful Gladiator's battle staff
-		i(84724),	-- Dreadful Gladiator's energy staff
-		i(84725),	-- Dreadful Gladiator's staff
-		--
-		-- Dreadful Gladiator (EPIC QUALITY) (did not make it to live)
-		i(84711),	-- Dreadful Gladiator's endgame
-		i(84712),	-- Dreadful Gladiator's reprieve
-		i(84713),	-- Dreadful Gladiator's Shield Wall
-		i(84714),	-- Dreadful Gladiator's Barrier
-		i(84715),	-- Dreadful Gladiator's Redoubt
 		--
 		i(159538),	-- Coldscale Cudgel
 		i(159498),	-- Coldscale Pistol
@@ -4594,7 +4417,6 @@ _.NeverImplemented =
 		i(138489), 	-- Kargath's Sacrified Hands
 		i(80981),	-- Scavenged Rotor Blade
 		i(81320),	-- Right-Handed Invis Knuckles
-		i(84893),	-- Malevolent Gladiator's Fleshslicer
 		i(23420),	-- Engraved Axe
 		i(23422),	-- Engraved Dagger
 		i(20522),	-- Feral Staff
@@ -4635,7 +4457,6 @@ _.NeverImplemented =
 	}),
 	-- Weapons end
 
-	i(146651),	-- Arsenal: Gladiator's Weapons							(Never added in Game; instead was combined with Merciless)
 	i(133018),	-- Azsuna Packe 3 Holy 1 Unused
 	i(138229),	-- Nightmare Boss 3 Relic Storm
 	i(140011),	-- Duskwatch Adjudicator's Pauldrons
