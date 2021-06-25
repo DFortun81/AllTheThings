@@ -23,7 +23,7 @@ _.Zones =
 					["cr"] = 179183,	-- Lost Limb
 				}),
 				pet(3118, {	-- Scurrying Mawrat
-				--	["cr"] = ,	-- 
+					["cr"] = 179182,	-- Scurrying Mawrat
 				}),
 				pet(3124, {	-- Vile Deathroach
 					["cr"] = 179227,	-- Vile Deathroach

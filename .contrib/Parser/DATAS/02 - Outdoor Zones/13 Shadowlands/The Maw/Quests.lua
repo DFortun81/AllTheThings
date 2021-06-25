@@ -171,6 +171,9 @@ _.Zones =
 							n(177330, {	-- Promathiz
 								i(186007),	-- Cudgel of the Tin Sentinel
 							}),
+							n(178883, {	-- Sentinel Shakorzeth
+								i(186244),	-- Shakorzeth's Gorget
+							}),
 							i(185973, {	-- Chain of Bahmethra
 								["cost"] = { { "i", 185974, 200 } },	-- 200x Bahmet Chain Link
 							}),
@@ -832,7 +835,7 @@ _.Zones =
 					["maps"] = { 1971 },	-- Skyhold (scenario)
 				}),
 				q(64541, {	-- The Cost of Death
-				--	not flagged daily/weekly in API - you trade 800 Stygia to Ve'nari in return for 1,000 reputation with her.  TODO: verify this is a one-time quest.  quest text makes it seem like it will be repeatable in one way or another
+				--	not flagged daily/weekly in API - you trade 800 Stygia to Ve'nari in return for 1,000 reputation with her.  TODO: verify this is a one-time quest.  quest text makes it seem like it will be repeatable in one way or another.  ETA: this popped up again on my priest but i'm not sure if it's daily/weekly still
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.8, 41.7, THE_MAW },
 					["cost"] = { { "c", 1767, 800 } },	-- 800x Stygia
@@ -949,9 +952,12 @@ _.Zones =
 
 _.HiddenQuestTriggers = {
 	q(62907),	-- triggered after collecting all stygia during "Rule 1: Have an Escape Plan" (triggers dialogue from The Jailer + the Eye of the Jailer counter...thing)
-	q(64107),	-- triggered when killing Algel the Haunter - first Tormentor kill of the week, dropped Drape of the Phantasm
-	q(64695),	-- triggered when killing Algel the Haunter - first Tormentor kill of the week, dropped Drape of the Phantasm
-	q(64118),	-- triggered when killing Manifestation of Pain - first Tormentor kill of the week, dropped Bindings of Manifest Pain
-	q(64692),	-- triggered when killing Manifestation of Pain - first Tormentor kill of the week, dropped Bindings of Manifest Pain
-	q(64697),	-- triggered when killing Sentinel Shakorzeth - second Tormentor kill of the week, no loot beyond 75 Soul Ash and 100 Death's Advance rep.  also triggered on Malleus Grakizz, another character's second Tormentor of the week, same loot
+	q(64107),	-- triggered when killing Algel the Haunter
+	q(64695),	-- triggered when killing Algel the Haunter / Gruukuuek the Elder
+	q(64698),	-- triggered when killing Intercessor Razzra
+	q(64118),	-- triggered when killing Manifestation of Pain
+	q(64692),	-- triggered when killing Manifestation of Pain
+	q(64696),	-- triggered when killing Promathiz / Sentinel Shakorzeth
+	q(64697),	-- triggered when killing Malleus Grakizz / Sentinel Shakorzeth
+	q(64121),	-- triggered when killing Sentinel Shakorzeth (somehow it + Kazj the Sentinel were both up at once, this was only after killing Shakorzeth, and then Kazj did not trigger an additional questID at all)
 };

@@ -53,6 +53,9 @@ _.Zones =
 						crit(1, {	-- Adjutant Dekaris
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
 						}),
+						i(186222, {	-- Grips of the Coldheart Adjutant
+							["timeline"] = { "added 9.1.0.38312" },
+						}),
 					},
 				}),
 				n(169102, {	-- Agonix
@@ -63,8 +66,8 @@ _.Zones =
 						crit(8, {	-- Agonix
 							["achievementID"] = 14660,	-- It's About Sending a Message
 						}),
-						q(61136, {	-- Bonus Objective
-							["isDaily"] = true,
+						i(186616, {	-- Bindings of Screaming Death
+							["timeline"] = { "added 9.1.0.38312" },
 						}),
 					},
 				}),
@@ -112,6 +115,7 @@ _.Zones =
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 						i(187370),	-- Carriage Crusher's Padded Slippers
+						i(187399),	-- Maw Construct's Shoulderguards
 					},
 				}),
 				n(171317, {	-- Conjured Death
@@ -323,7 +327,7 @@ _.Zones =
 					},
 				}),
 				n(179460, {	-- Fallen Charger
-					["description"] = "It spawns in the Crucible of the Damned with a zonewide announcement: |cFFff8040An earsplitting whinny echoes across the Maw as the Fallen Charger begins its ride.|r\n\nIt runs through the Tremaculum, south past Ve'nari's Refuge, and into the Beastwarrens.\n\nIf it makes it all the way to Korthia, it despawns with another zonewide announcement: |cFFff8040Fallen Charger releases a final mournful whinny as it fades away.|r",
+					["description"] = "It spawns in the Crucible of the Damned with a zonewide announcement: |cFFff8040An earsplitting whinny echoes across the Maw as the Fallen Charger begins its ride.|r\n\nIt either runs (A) through the Tremaculum, south past Ve'nari's Refuge, and down the eastern side of the Beastwarrens or (B) down the western side of Zovaal's Cauldron, past Perdition Hold, and down the western side of the Beastwarrens.\n\nIf it makes it all the way to Korthia, it despawns with another zonewide announcement: |cFFff8040Fallen Charger releases a final mournful whinny as it fades away.|r",
 					["questID"] = 64164,
 					["isDaily"] = true,
 					["g"] = {
@@ -415,6 +419,9 @@ _.Zones =
 						crit(13, {	-- Nascent Devourer
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
 						}),
+						i(186236, {	-- Devourer's Shadehide Jerkin
+							["timeline"] = { "added 9.1.0.38312" },
+						}),
 					},
 				}),
 				n(164064, {	-- Obolos
@@ -424,6 +431,9 @@ _.Zones =
 					["g"] = {
 						crit(14, {	-- Obolos
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
+						}),
+						i(186238, {	-- Mantle of the Prime Collector
+							["timeline"] = { "added 9.1.0.38312" },
 						}),
 					},
 				}),
@@ -469,6 +479,9 @@ _.Zones =
 					["g"] = {
 						crit(15, {	-- Orophea
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
+						}),
+						i(186211, {	-- Pantaloons of the Condemned Bard
+							["timeline"] = { "added 9.1.0.38312" },
 						}),
 						o(356555, {	-- Eurydea's Necklace
 							["coord"] = { 26.8, 29.3, THE_MAW },
@@ -562,15 +575,15 @@ _.Zones =
 						crit(14, {	-- Skittering Broodmother
 							["achievementID"] = 14660,	-- It's About Sending a Message
 						}),
-						q(62211, {	-- Bonus Objective
-							["isDaily"] = true,
+						i(186240, {	-- Broodmotherhide Cloak
+							["timeline"] = { "added 9.1.0.38312" },
 						}),
 					},
 				}),
 				n(166398, {	-- Soulforger Rhovus
 					["questID"] = 60834,
 					["isDaily"] = true,
-					["coord"] = { 35.1, 41.5, THE_MAW },
+					["coord"] = { 36.0, 41.4, THE_MAW },
 					["g"] = {
 						crit(17, {	-- Soulforger Rhovus
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
@@ -716,4 +729,6 @@ _.Zones =
 };
 
 _.HiddenQuestTriggers = {
+	q(61136),	-- Agonix bonus objective
+	q(62211),	-- Skittering Broodmother bonus objective
 };

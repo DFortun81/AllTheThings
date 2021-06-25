@@ -16,6 +16,7 @@ _.Zones =
 				}),
 				i(186559, {	-- Grappling Gauntlet
 					["crs"] = {
+						173138,	-- Mawsworn Outrider
 						157824,	-- Protector of Flame
 					},
 				}),
