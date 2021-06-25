@@ -1301,7 +1301,8 @@ local function GetUnobtainableTexture(group)
 		-- not NYI
 		if obtainType > 1 and
 			-- is BoE
-			(not group.b or group.b == 2 or group.b == 3) then
+			not app.IsBoP(group)
+			then
 			-- green dot for 'possible'
 			index = 3;
 		end
@@ -3066,7 +3067,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				if #group > 0 then
 					for i,j in ipairs(group) do
 						if j.modItemID == paramB then
-							if j.u and j.u == 2 and (not j.b or j.b == 2 or j.b == 3) and numBonusIds and numBonusIds ~= "" and tonumber(numBonusIds) > 0 then
+							if j.u and j.u == 2 and (not app.IsBoP(j)) and numBonusIds and numBonusIds ~= "" and tonumber(numBonusIds) > 0 then
 								tinsert(info, { left = L["RECENTLY_MADE_OBTAINABLE"] });
 							end
 						end
@@ -3774,7 +3775,7 @@ app.BuildCrafted = function(item)
 	if reagentCache then
 		-- print("BuildCrafted Reagent",itemID)
 		-- check if the item is BoP and needs skill filtering for current character, or debug mode
-		local filterSkill = not app.MODE_DEBUG and item.b and item.b == 1 or select(14, GetItemInfo(itemID)) == 1;
+		local filterSkill = not app.MODE_DEBUG and (app.IsBoP(item) or select(14, GetItemInfo(itemID)) == 1);
 
 		local craftableItemIDs = {};
 		-- item is BoP
@@ -4518,7 +4519,7 @@ local function SearchForLink(link)
 end
 local function SearchForMissingItemsRecursively(group, listing)
 	if group.visible then
-		if (group.collectible or (group.itemID and group.total and group.total > 0)) and (not group.b or group.b == 2 or group.b == 3) then
+		if (group.collectible or (group.itemID and group.total and group.total > 0)) and (not app.IsBoP(group)) then
 			table.insert(listing, group);
 		end
 		if group.g and group.expanded then
@@ -8017,13 +8018,15 @@ local itemFields = {
 			else
 				itemLink = string.format("item:%d:::::::::::::", itemLink);
 			end
-			local _, link, quality, _, _, _, _, _, _, icon = GetItemInfo(itemLink);
+			local _, link, quality, _, _, _, _, _, _, icon, _, _, _, b = GetItemInfo(itemLink);
 			-- print("Retry", rawget(t, "retries"), itemLink, link)
 			if link then
 				rawset(t, "retries", nil);
 				rawset(t, "link", link);
 				rawset(t, "icon", icon);
 				rawset(t, "q", quality);
+				-- TODO: can't rawset 'b' until determine if it's heirloom or not since that shows as 1
+				-- rawset(t, "b", b);
 				return link;
 			else
 				if rawget(t, "retries") then
@@ -8051,6 +8054,11 @@ local itemFields = {
 		return GetFixedItemSpecInfo(t.itemID);
 	end,
 	["b"] = function(t)
+		local link = t.link;
+		if link then
+			return select(14, GetItemInfo(link));
+		end
+		-- assume BoE item since it is unsourced
 		return 2;
 	end,
 	["f"] = function(t)
@@ -8441,7 +8449,7 @@ itemHarvesterFields.text = function(t)
 			if info.inventoryType == 0 then
 				info.inventoryType = nil;
 			end
-			if info.b and info.b ~= 1 then
+			if not app.IsBoP(info) then
 				info.b = nil;
 			end
 			if info.q and info.q < 1 then
@@ -10630,6 +10638,11 @@ end)();
 app.Filter = app.ReturnFalse;
 -- Meaning "Display as expected" - Returns true
 app.NoFilter = app.ReturnTrue;
+-- Whether the group has a binding designation, which means it basically cannot be moved to another Character
+function app.IsBoP(group)
+	-- 1 = BoP, 4 = Quest Item... probably don't need that?
+	return group.b == 1;-- or group.b == 4;
+end
 function app.FilterGroupsByLevel(group)
 	-- after 9.0, transition to a req lvl range, either min, or min + max
 	if group.lvl then
@@ -10656,10 +10669,11 @@ end
 function app.FilterGroupsByCompletion(group)
 	return group.total and (group.progress or 0) < group.total;
 end
+-- returns whether this is a Character-transferable Thing/Item
 function app.FilterItemBind(item)
-	return item.b == 2 or item.b == 3; -- BoE
+	return item.itemID and not app.IsBoP(item);
 end
--- Represents filters which should be applied at the Character level
+-- Represents filters which should be applied during Updates to groups
 function app.FilterItemClass(item)
 	-- check Account trait filters
 	if app.UnobtainableItemFilter(item)
@@ -10727,11 +10741,7 @@ function app.FilterItemClass_UnobtainableItem(item)
 	end
 end
 function app.FilterItemClass_RequireBinding(item)
-	if item.b and (item.b == 2 or item.b == 3) then
-		return false;
-	else
-		return true;
-	end
+	return not item.itemID or app.IsBoP(item);
 end
 function app.FilterItemClass_PvP(item)
 	if item.pvp then
@@ -10742,7 +10752,7 @@ function app.FilterItemClass_PvP(item)
 end
 function app.FilterItemClass_RequiredSkill(item)
 	local requireSkill = item.requireSkill;
-	if requireSkill and (not item.professionID or not GetRelativeValue(item, "DontEnforceSkillRequirements") or item.b == 1) then
+	if requireSkill and (not item.professionID or not GetRelativeValue(item, "DontEnforceSkillRequirements") or app.IsBoP(item)) then
 		return app.GetTradeSkillCache()[requireSkill];
 	else
 		return true;
