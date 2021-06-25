@@ -53,7 +53,8 @@ def harvest_things(thing_type, max_id_path, db_path):
                 patch = get_thing_patch(thing_type, thing_id)
                 if patch != "":
                     logging.info(f"{thing_type} {thing_id} added in patch {patch}")
-                    things.write(f"{thing_prefix}({thing_id}, {patch})\n")
+                    things.write(f'{thing_prefix}({thing_id}, "{patch}")\n')
         # catching all exceptions just to salvage collected items if we run for hours
         except Exception:
+            logging.error(f"{thing_type} {thing_id}")
             logging.error(traceback.format_exc())
