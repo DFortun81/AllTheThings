@@ -32,5 +32,5 @@ jobs:
         with:
           commit-message: Add quest timelines
           title: Quest patches
-          branch: harvest-timelines
+          branch: harvest-timelines-pr
           delete-branch: true
