@@ -1397,7 +1397,9 @@ _.HiddenQuestTriggers = {
 -- These quests never made it in.
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
-		q(10871),	-- BETA Ally of the Netherwing
+		q(10871, {	-- BETA Ally of the Netherwing
+			["_drop"] = { "g" }
+		}),
 		q(10815),	-- BETA The Journal of Val'zareq: Portends of War
 		q(10872),	-- BETA Zuluhed the Whacked
 		-- #if AFTER MOP

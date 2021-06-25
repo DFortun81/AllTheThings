@@ -10379,6 +10379,23 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(88194),	-- Gladiator's Dreadplate Legguards
 				i(88195),	-- Gladiator's Dreadplate Shoulders
 			}),
+			cl(DRUID, {
+				i(88186),	-- Gladiator's Dragonhide Gloves
+				i(88187),	-- Gladiator's Dragonhide Helm
+				i(88188),	-- Gladiator's Dragonhide Legguards
+				i(88189),	-- Gladiator's Dragonhide Robes
+				i(88190),	-- Gladiator's Dragonhide Spaulders
+				i(88201),	-- Gladiator's Kodohide Gloves
+				i(88202),	-- Gladiator's Kodohide Helm
+				i(88203),	-- Gladiator's Kodohide Legguards
+				i(88204),	-- Gladiator's Kodohide Robes
+				i(88205),	-- Gladiator's Kodohide Spaulders
+				i(88256),	-- Gladiator's Wyrmhide Gloves
+				i(88257),	-- Gladiator's Wyrmhide Helm
+				i(88258),	-- Gladiator's Wyrmhide Legguards
+				i(88259),	-- Gladiator's Wyrmhide Robes
+				i(88260),	-- Gladiator's Wyrmhide Spaulders
+			}),
 			cl(HUNTER, {
 				i(88181),	-- Gladiator's Chain Armor
 				i(88182),	-- Gladiator's Chain Gauntlets
@@ -10436,6 +10453,13 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(88223),	-- Gladiator's Mooncloth Leggings
 				i(88224),	-- Gladiator's Mooncloth Mantle
 				i(88225),	-- Gladiator's Mooncloth Robe
+			}),
+			cl(ROGUE, {
+				i(88206),	-- Gladiator's Leather Gloves
+				i(88207),	-- Gladiator's Leather Helm
+				i(88208),	-- Gladiator's Leather Legguards
+				i(88209),	-- Gladiator's Leather Spaulders
+				i(88210),	-- Gladiator's Leather Tunic
 			}),
 			cl(SHAMAN, {
 				i(88212),	-- Gladiator's Linked Gauntlets

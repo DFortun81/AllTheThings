@@ -4254,7 +4254,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(64824),	-- Bloodthirsty Gladiator's Rifle (Epic BG item never made it out of beta)
 				i(64825),	-- Bloodthirsty Gladiator's Right Render (Epic BG item never made it out of beta)
 				i(64826),	-- Bloodthirsty Gladiator's Ripper (Epic BG Item, never made it out of beta)
-				i(64926),	-- Bloodthirsty Gladiator's Ripper (Epic BG item never made it out of beta)
 				i(64848),	-- Bloodthirsty Gladiator's Shanker (Epic BG Item, never made it out of beta)
 				i(64849),	-- Bloodthirsty Gladiator's Shield Wall
 				i(64850),	-- Bloodthirsty Gladiator's Shiv
@@ -4271,6 +4270,23 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(64981),	-- Gladiator's Dreadplate Gauntlets
 				i(64982),	-- Gladiator's Dreadplate Chestpiece
 			}),
+			cl(DRUID, {
+				i(64923),	-- Gladiator's Wyrmhide Spaulders
+				i(64924),	-- Gladiator's Wyrmhide Robes
+				i(64925),	-- Gladiator's Wyrmhide Legguards
+				i(64926),	-- Gladiator's Wyrmhide Helm
+				i(64927),	-- Gladiator's Wyrmhide Gloves
+				i(64968),	-- Gladiator's Kodohide Spaulders
+				i(64969),	-- Gladiator's Kodohide Robes
+				i(64970),	-- Gladiator's Kodohide Legguards
+				i(64971),	-- Gladiator's Kodohide Helm
+				i(64972),	-- Gladiator's Kodohide Gloves
+				i(64983),	-- Gladiator's Dragonhide Spaulders
+				i(64984),	-- Gladiator's Dragonhide Robes
+				i(64985),	-- Gladiator's Dragonhide Legguards
+				i(64986),	-- Gladiator's Dragonhide Helm
+				i(64987),	-- Gladiator's Dragonhide Gloves
+			}),
 			cl(PALADIN, {
 				i(64933),	-- Gladiator's Scaled Shoulders
 				i(64934),	-- Gladiator's Scaled Legguards
@@ -4282,6 +4298,13 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(64950),	-- Gladiator's Ornamented Headcover
 				i(64951),	-- Gladiator's Ornamented Gloves
 				i(64952),	-- Gladiator's Ornamented Chestguard
+			}),
+			cl(ROGUE, {
+				i(64963),	-- Gladiator's Leather Tunic
+				i(64964),	-- Gladiator's Leather Spaulders
+				i(64965),	-- Gladiator's Leather Legguards
+				i(64966),	-- Gladiator's Leather Helm
+				i(64967),	-- Gladiator's Leather Gloves
 			}),
 			cl(SHAMAN, {
 				i(64961),	-- Gladiator's Linked Gauntlets
