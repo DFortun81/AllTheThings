@@ -18,7 +18,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 				},
 				["maps"] = {
 					NORTHERN_BARRENS,
-					37,		-- Elwynn Forest
+					ELWYNN_FOREST,
 					TANARIS,
 					WINTERSPRING,
 					STORMWIND_CITY,
@@ -36,19 +36,19 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 			}),
 			q(14064, {	-- Sharing a Bountiful Feast (Alliance)
 				["provider"] = { "n", 34653 },	-- Bountiful Table Hostess
-				["maps"] = { 37, },	-- Elwynn Forest
+				["maps"] = { ELWYNN_FOREST },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 			}),
 			q(14023, {	-- Spice Bread Stuffing (Alliance)
 				["provider"] = { "n", 34675 },	-- Gregory Tabor
-				["maps"] = { 37, },	-- Elwynn Forest
+				["maps"] = { ELWYNN_FOREST },
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
 			}),
 			q(14024, {	-- Pumpkin Pie (Alliance)
 				["provider"] = { "n", 34744 },	-- Jasper Moore
-				["maps"] = { 37, },	-- Elwynn Forest
+				["maps"] = { ELWYNN_FOREST },
 				["sourceQuests"] = { 14023, },	-- Spice Bread Stuffing (Alliance)
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
@@ -62,7 +62,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 			}),
 			q(14030, {	-- They're Ravenous In Darnassus (Alliance)
 				["provider"] = { "n", 34744 },	-- Jasper Moore
-				["maps"] = { 37, },	-- Elwynn Forest
+				["maps"] = { ELWYNN_FOREST },
 				["sourceQuests"] = { 14028, },	-- Cranberry Chutney (Alliance)
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
@@ -76,7 +76,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 			}),
 			q(14035, {	-- Slow-roasted Turkey (Alliance)
 				["provider"] = { "n", 34675 },	-- Gregory Tabor
-				["maps"] = { 37, },	-- Elwynn Forest
+				["maps"] = { ELWYNN_FOREST },
 				["sourceQuests"] = { 14033, },	-- Candied Sweet Potatoes (Alliance)
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
@@ -122,7 +122,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 				["provider"] = { "n", 34710 },	-- Ellen Moore
 				["isDaily"] = true,
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 37, },	-- Elwynn Forest
+				["maps"] = { ELWYNN_FOREST },
 				["g"] = {
 					i(46723),	-- Pilgrim's Hat
 					i(46800),	-- Pilgrim's Attire
@@ -159,7 +159,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_PILGRIMS_BOUNTY},
 				["provider"] = { "n", 34744 },	-- Jasper Moore
 				["isDaily"] = true,
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 37 },	-- Elwynn Forest
+				["maps"] = { ELWYNN_FOREST },
 				["g"] = {
 					i(46723),	-- Pilgrim's Hat
 					i(46800),	-- Pilgrim's Attire

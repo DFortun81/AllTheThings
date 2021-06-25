@@ -773,9 +773,9 @@ _.ExpansionFeatures =
 						["description"] = "Pursue |cFFFFD700Fangs of the Devourer|r.",
 					}),
 					q(42504, {	-- The Unseen Blade (A)
-						["coord"] = { 36.8, 52.6, 37 },
+						["coord"] = { 36.8, 52.6, ELWYNN_FOREST },
 						["lvl"] = 100,
-						["maps"] = { 37 },	-- Elwynn Forest
+						["maps"] = { ELWYNN_FOREST },
 						["races"] = ALLIANCE_ONLY,
 						["classes"] = { ROGUE },
 						["provider"] = { "n", 107979 },	-- Garona Halforcen
@@ -786,9 +786,9 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(42627, {	-- The Unseen Blade (H)
-						["coord"] = { 36.8, 52.6, 37 },
+						["coord"] = { 36.8, 52.6, ELWYNN_FOREST },
 						["lvl"] = 100,
-						["maps"] = { 37 },	-- Elwynn Forest
+						["maps"] = { ELWYNN_FOREST },
 						["races"] = HORDE_ONLY,
 						["classes"] = { ROGUE },
 						["provider"] = { "n", 107979 },	-- Garona Halforcen

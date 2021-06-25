@@ -221,8 +221,8 @@ _.Holidays =
 				}),
 				n(53728,  {	-- Dorothy <Candy & Toy Vendor>
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 31.8, 50.0, 37 },
-					["maps"] = { 37 },	-- Elwynn Forest
+					["coord"] = { 31.8, 50.0, ELWYNN_FOREST },
+					["maps"] = { ELWYNN_FOREST },
 					["g"] = {
 						i(122338, {	-- Ancient Heirloom Armor Casing
 							["cost"] = {
@@ -597,8 +597,8 @@ _.Holidays =
 				}),
 				n(109685, {	-- Pippi <Pet Vendor>
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 31.9, 50.2, 37 },
-					["maps"] = { 37 },	-- Elwynn Forestt
+					["coord"] = { 31.9, 50.2, ELWYNN_FOREST },
+					["maps"] = { ELWYNN_FOREST },
 					["g"] = bubbleDown({["u"] = 26}, {
 						i(116811, {	-- "Lil' Starlet" Costume
 							["cost"] = { { "i", 33226, 5 }, },	-- 5x Tricky Treat
@@ -636,8 +636,8 @@ _.Holidays =
 				}),
 				n(52497,  {	-- Spanky <Mask Vendor>
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 31.8, 50.0, 37 },
-					["maps"] = { 37 },	-- Elwynn Forestt
+					["coord"] = { 31.8, 50.0, ELWYNN_FOREST },
+					["maps"] = { ELWYNN_FOREST },
 					["g"] = bubbleDown({["u"] = 26}, {
 						i(34000,  {	-- Blood Elf Female Mask
 							["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat
@@ -859,8 +859,8 @@ _.Holidays =
 				}),
 				n(53702,  {	-- Stymie <Wand Vendor>
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 31.9, 50.1, 37 },
-					["maps"] = { 37 },	-- Elwynn Forestt
+					["coord"] = { 31.9, 50.1, ELWYNN_FOREST },
+					["maps"] = { ELWYNN_FOREST },
 					["g"] = bubbleDown({["u"] = 26}, {
 						i(116851, {	-- Hallowed Wand - Abomination
 							["cost"] = { { "i", 33226, 2 }, },	-- 2x Tricky Treat

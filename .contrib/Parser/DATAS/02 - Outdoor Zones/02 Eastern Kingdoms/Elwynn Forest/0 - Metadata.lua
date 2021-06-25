@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(37, {	-- Elwynn Forest
+		m(ELWYNN_FOREST, {
 			["achievementID"] = 776,
 			["description"] = "Elwynn Forest is the starting zone for Human characters. It is a lush valley with farmers and loggers, with Stormwind City at its center.",
 			["maps"] = {

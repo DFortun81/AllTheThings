@@ -16,13 +16,13 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["coords"] = {
 					{ 60.8, 53.6, AZUREMYST_ISLE },
 					{ 53.4, 51.5, DUN_MOROGH },
-					{ 42.6, 64.6, 37 },	-- Elwynn Forest
+					{ 42.6, 64.6, ELWYNN_FOREST },
 				},
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = {
 					AZUREMYST_ISLE,
 					DUN_MOROGH,
-					37, -- Elwynn Forest
+					ELWYNN_FOREST,
 				},
 				["g"] = {
 					i(20557),	-- Hallow's End Pumpkin Treat
@@ -60,7 +60,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["isBreadcrumb"] = true,
 				["provider"] = { "n", 51934 },	-- Gretchen Fenlow
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 37 },	-- Elwynn Forest
+				["maps"] = { ELWYNN_FOREST },
 			}),
 			q(29431, {	-- A Friend in Need (Horde)
 				["isBreadcrumb"] = true,
@@ -144,22 +144,22 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(29075, {	-- A Time to Gain
 				["provider"] = { "n", 51665 },	-- Celestine of the Harvest
-				["coord"] = { 32, 50.4, 37 },
+				["coord"] = { 32, 50.4, ELWYNN_FOREST },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 29074,	-- A Season for Celebration
 				["isDaily"] = true,
-				["maps"] = { 37 }, -- Elwynn Forest
+				["maps"] = { ELWYNN_FOREST },
 				["g"] = {
 					i(33226),	-- Tricky Treat
 				},
 			}),
 			q(29371, {	-- A Time to Lose
 				["provider"] = { "n", 52064 },	-- Keira
-				["coord"] = { 32, 50.4, 37 },
+				["coord"] = { 32, 50.4, ELWYNN_FOREST },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 29074,	-- A Season for Celebration
 				["isDaily"] = true,
-				["maps"] = { 37 }, -- Elwynn Forest
+				["maps"] = { ELWYNN_FOREST },
 				["g"] = {
 					i(33226),	-- Tricky Treat
 				},
@@ -710,9 +710,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12286, {	-- Candy Bucket — Elwynn Forest, Goldshire, Alliance
 				["isYearly"] = true,
-				["coord"] = { 43.7, 66.0, 37 },
+				["coord"] = { 43.7, 66.0, ELWYNN_FOREST },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 37 },	-- Elwynn Forest
+				["maps"] = { ELWYNN_FOREST },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -2051,10 +2051,10 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(29144, {	-- Clean Up in Stormwind
 				["provider"] = { "n", 51934 },	-- Gretchen Fenlow
-				["coord"] = { 32.2, 50.8, 37 },
+				["coord"] = { 32.2, 50.8, ELWYNN_FOREST },
 				["races"] = ALLIANCE_ONLY,
 				["isDaily"] = true,
-				["maps"] = { 37 }, -- Elwynn Forest
+				["maps"] = { ELWYNN_FOREST },
 				["g"] = {
 					i(33226),	-- Tricky Treat
 				},
@@ -2147,9 +2147,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 			q(11360, {	-- Fire Brigade Practice (Elwynn Forest)
 				["sourceQuests"] = { 11356 },	-- Costumed Orphan Matron
 				["provider"] = { "n", 24519 },	-- Costumed Orphan Matron
-				["coord"] = { 42.6, 64.4, 37 },	-- Elwynn Forest
+				["coord"] = { 42.6, 64.4, ELWYNN_FOREST },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 37 },	-- Elwynn Forest
+				["maps"] = { ELWYNN_FOREST },
 				["g"] = {
 					i(33226),	-- Tricky Treat
 				},
@@ -2235,7 +2235,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["provider"] = { "n", 15310 },	-- Jesper
 				["isYearly"] = true,
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 37 },	-- Elwynn Forest
+				["maps"] = { ELWYNN_FOREST },
 			}),
 			q(8312,  {	-- Hallow's End Treats for Spoops!
 				["isYearly"] = true,
@@ -2343,13 +2343,13 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["coords"] = {
 					{ 60.8, 53.6, AZUREMYST_ISLE },
 					{ 53.4, 51.5, DUN_MOROGH },
-					{ 42.6, 64.6, 37 },	-- Elwynn Forest
+					{ 42.6, 64.6, ELWYNN_FOREST },
 				},
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = {
 					AZUREMYST_ISLE,
 					DUN_MOROGH,
-					37  -- Elwynn Forest
+					ELWYNN_FOREST,
 				},
 				["g"] = {
 					i(34077),	-- Crudely Wrapped Gift
@@ -2375,11 +2375,11 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(29054, {	-- Stink Bombs Away! (Alliance)
 				["provider"] = { "n", 51934 },	-- Gretchen Fenlow
-				["coord"] = { 32.2, 50.8, 37 },
+				["coord"] = { 32.2, 50.8, ELWYNN_FOREST },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuest"] = 29074,	-- A Season for Celebration
 				["isDaily"] = true,
-				["maps"] = { 37 }, -- Elwynn Forest
+				["maps"] = { ELWYNN_FOREST },
 				["g"] = {
 					i(33226),	-- Tricky Treat
 				},
@@ -2424,13 +2424,13 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["coords"] = {
 					{ 60.8, 53.6, AZUREMYST_ISLE },
 					{ 53.4, 51.5, DUN_MOROGH },
-					{ 42.6, 64.6, 37 },	-- Elwynn Forest
+					{ 42.6, 64.6, ELWYNN_FOREST },
 				},
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = {
 					AZUREMYST_ISLE,
 					DUN_MOROGH,
-					37  -- Elwynn Forest
+					ELWYNN_FOREST,
 				},
 				["g"] = {
 					i(20557),	-- Hallow's End Pumpkin Treat
@@ -2489,7 +2489,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["maps"] = {
 					AZUREMYST_ISLE,
 					DUN_MOROGH,
-					37,	-- Elwynn Forest
+					ELWYNN_FOREST,
 				},
 			}),
 			q(11220, {	-- The Headless Horseman

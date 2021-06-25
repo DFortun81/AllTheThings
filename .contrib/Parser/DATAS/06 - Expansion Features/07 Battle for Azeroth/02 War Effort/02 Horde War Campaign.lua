@@ -1542,16 +1542,16 @@ _.ExpansionFeatures =
 						q(54101, {	-- On Track
 							["sourceQuests"] = { 54100 },	-- A Way Out
 							["provider"] = { "n", 146010 },	-- Dark Ranger Lyana
-							["coord"] = { 30.5, 57.6, 37 },
+							["coord"] = { 30.5, 57.6, ELWYNN_FOREST },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 37 },	-- Elwynn Forest
+							["maps"] = { ELWYNN_FOREST },
 						}),
 						q(54102, {	-- Eastern Escape
 							["sourceQuests"] = { 54101 },	-- On Track
 							["provider"] = { "n", 146791 },	-- Dark Ranger
-							["coord"] = { 34.5, 63.3, 37 },
+							["coord"] = { 34.5, 63.3, ELWYNN_FOREST },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 37 },	-- Elwynn Forest
+							["maps"] = { ELWYNN_FOREST },
 						}),
 						q(54103, {	-- Corner Crossing
 							["sourceQuests"] = { 54102 },	-- Eastern Escape

@@ -5,12 +5,12 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(37, {	-- Elwynn Forest
+		m(ELWYNN_FOREST, {
 			n(TREASURES, {
 				o(310709, {	-- Waterlogged Chest
 					["model"] = 196989,
 					["questID"] = 54131,
-					["coord"] = { 32.3, 63.6, 37 },
+					["coord"] = { 32.3, 63.6, ELWYNN_FOREST },
 					["lvl"] = 110,
 					["g"] = {
 						i(3678),	-- Recipe: Crocolisk Steak

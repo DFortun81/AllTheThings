@@ -5,39 +5,39 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(37, {	-- Elwynn Forest
+		m(ELWYNN_FOREST, {
 			n(QUESTS, {
 				q(5545,  {	-- A Bundle of Trouble
 					["provider"] = { "n", 10616 },	-- Supervisor Raelen
-					["coord"] = { 81.3, 66.1, 37 },
+					["coord"] = { 81.3, 66.1, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(40,    {	-- A Fishy Peril
 					["provider"] = { "n", 241 },	-- Remy
-					["coord"] = { 42.1, 67.2, 37 },
+					["coord"] = { 42.1, 67.2, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26393, {	-- A Swift Message
 					["provider"] = { "n", 514 },	-- Smith Argus
-					["coord"] = { 41.7, 65.5, 37 },
+					["coord"] = { 41.7, 65.5, ELWYNN_FOREST },
 					["races"] = { HUMAN },
 				}),
 				q(26150, {	-- A Visit With Maybell
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 253 },	-- William Pestle
-					["coord"] = { 43.3, 65.7, 37 },
+					["coord"] = { 43.3, 65.7, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 60,	-- Kobold Candles
 				}),
 				q(84,    {	-- Back to Billy
 					["provider"] = { "n", 246 },	-- "Auntie" Bernice Stonefield
-					["coord"] = { 34.4, 84.2, 37 },
+					["coord"] = { 34.4, 84.2, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 86,	-- Pie for Billy
 				}),
 				q(46,    {	-- Bounty on Murlocs
 					["model"] = 199473,
-					["coord"] = { 74.0, 72.3, 37 },
+					["coord"] = { 74.0, 72.3, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 203733 },	-- Bounty Board
 					["g"] = {
@@ -51,7 +51,7 @@ _.Zones =
 				}),
 				q(59,    {	-- Cloth and Leather Armor
 					["provider"] = { "n", 261 },	-- Guard Thomas
-					["coord"] = { 73.9, 72.1, 37 },
+					["coord"] = { 73.9, 72.1, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 71,	-- Report to Thomas
 					["g"] = {
@@ -74,19 +74,19 @@ _.Zones =
 				}),
 				q(112,   {	-- Collecting Kelp
 					["provider"] = { "n", 253 },	-- William Pestle
-					["coord"] = { 43.3, 65.7, 37 },
+					["coord"] = { 43.3, 65.7, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 107,	-- Note to William
 				}),
 				q(26394, {	-- Continue to Stormwind
 					["provider"] = { "n", 42983 },	-- Bartlett the Brave
-					["coord"] = { 41.7, 64.6, 37 },
+					["coord"] = { 41.7, 64.6, ELWYNN_FOREST },
 					["races"] = { HUMAN },
 					["sourceQuest"] = 26393,	-- A Swift Message
 				}),
 				q(45,    {	-- Discover Rolf's Fate
 					["model"] = 198343,
-					["coord"] = { 72.6, 60.3, 37 },
+					["coord"] = { 72.6, 60.3, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 55 },	-- A half-eaten body
 					["sourceQuest"] = 37,	-- Find the Lost Guards
@@ -94,12 +94,12 @@ _.Zones =
 				q(1097,  {	-- Elmore's Task
 					["isBreadcrumb"] = true,	-- for "Stormpike's Delivery" in Stormwind
 					["provider"] = { "n", 514 },	-- Smith Argus
-					["coord"] = { 41.7, 65.5, 37 },
+					["coord"] = { 41.7, 65.5, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(37,    {	-- Find the Lost Guards
 					["provider"] = { "n", 261 },	-- Guard Thomas
-					["coord"] = { 73.9, 72.1, 37 },
+					["coord"] = { 73.9, 72.1, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 35,	-- Further Concerns
 				}),
@@ -116,13 +116,13 @@ _.Zones =
 				}),
 				q(184,   {	-- Furlbrow's Deed
 					["model"] = 243448,
-					["coord"] = { 24.7, 95.2, 37 },
+					["coord"] = { 24.7, 95.2, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 203734 },	-- Westfall Deed
 				}),
 				q(35,    {	-- Further Concerns
 					["provider"] = { "n", 240 },	-- Marshal Dughan
-					["coord"] = { 42.1, 65.9, 37 },
+					["coord"] = { 42.1, 65.9, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 40,	-- A Fishy Peril
 				}),
@@ -136,30 +136,30 @@ _.Zones =
 				}),
 				q(16,    {	-- Give Gerard a Drink
 					["provider"] = { "n", 255 },	-- Gerard Tiller
-					["coord"] = { 43.1, 85.5, 37 },
+					["coord"] = { 43.1, 85.5, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 				}),
 				q(47,    {	-- Gold Dust Exchange
 					["provider"] = { "n", 241 },	-- Remy "Two Times"
-					["coord"] = { 42.1, 67.2, 37 },
+					["coord"] = { 42.1, 67.2, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(87,    {	-- Goldtooth
 					["provider"] = { "n", 247 },	-- Billy Maclure
-					["coord"] = { 43.1, 85.7, 37 },
+					["coord"] = { 43.1, 85.7, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 84,	-- Back to Billy
 				}),
 				q(26378, {	-- Hero's Call: Westfall! (add'l QGs 240, 261, 294, 963, 42256)
 					["provider"] = { "n", 240 },	-- Marshal Dughan
-					["coord"] = { 42.1, 65.9, 37 },
+					["coord"] = { 42.1, 65.9, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(60,    {	-- Kobold Candles
 					["provider"] = { "n", 253 },	-- William Pestle
-					["coord"] = { 43.3, 65.7, 37 },
+					["coord"] = { 43.3, 65.7, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(32618, {	-- Learn To Ride
@@ -175,12 +175,12 @@ _.Zones =
 				}),
 				q(85,    {	-- Lost Necklace
 					["provider"] = { "n", 246 },	-- "Auntie" Bernice Stonefield
-					["coord"] = { 34.4, 84.2, 37 },
+					["coord"] = { 34.4, 84.2, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(147,   {	-- Manhunt
 					["provider"] = { "n", 42256 },	-- Marshal McCree
-					["coord"] = { 81.8, 66.0, 37 },
+					["coord"] = { 81.8, 66.0, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 123,	-- The Collector
 					["g"] = {
@@ -193,7 +193,7 @@ _.Zones =
 				}),
 				q(107,   {	-- Note to William
 					["provider"] = { "n", 248 },	-- Gramma Stonefield
-					["coord"] = { 34.9, 83.8, 37 },
+					["coord"] = { 34.9, 83.8, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 111,	-- Speak with Gramma
 				}),
@@ -209,18 +209,18 @@ _.Zones =
 				}),
 				q(86,    {	-- Pie for Billy
 					["provider"] = { "n", 247 },	-- Billy Maclure
-					["coord"] = { 43.1, 85.7, 37 },
+					["coord"] = { 43.1, 85.7, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 85,	-- Lost Necklace
 				}),
 				q(88,    {	-- Princess Must Die!
 					["provider"] = { "n", 244 },	-- Ma Stonefield
-					["coord"] = { 34.6, 84.4, 37 },
+					["coord"] = { 34.6, 84.4, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(52,    {	-- Protect the Frontier
 					["provider"] = { "n", 261 },	-- Guard Thomas
-					["coord"] = { 73.9, 72.1, 37 },
+					["coord"] = { 73.9, 72.1, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(57523),	-- Wolf Fur Boots
@@ -231,7 +231,7 @@ _.Zones =
 				}),
 				q(71,    {	-- Report to Thomas
 					["model"] = 198343,
-					["coord"] = { 79.7, 55.5, 37 },
+					["coord"] = { 79.7, 55.5, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 56 },	-- Rolf's corpse
 					["sourceQuest"] = 45,	-- Discover Rolf's Fate
@@ -240,18 +240,18 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 6774 },	-- Falkhaan Isenstrider
 					["lvl"] = 4,
-					["coord"] = { 45.3, 49.0, 37 },
+					["coord"] = { 45.3, 49.0, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(37112, {	-- Rest and Relaxation
 					["provider"] = { "n", 6774 },	-- Falkhaan Isenstrider
 					["lvl"] = 4,
-					["coord"] = { 45.3, 49.0, 37 },
+					["coord"] = { 45.3, 49.0, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(11,    {	-- Riverpaw Gnoll Bounty
 					["provider"] = { "n", 963 },	-- Deputy Rainer
-					["coord"] = { 24.2, 74.4, 37 },
+					["coord"] = { 24.2, 74.4, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 239,	-- Westbrook Garrison Needs Help!
 					["g"] = {
@@ -264,25 +264,25 @@ _.Zones =
 				}),
 				q(111,   {	-- Speak with Gramma
 					["provider"] = { "n", 252 },	-- Tommy Joe Stonefield
-					["coord"] = { 29.8, 85.9, 37 },
+					["coord"] = { 29.8, 85.9, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 106,	-- Young Lovers
 				}),
 				q(114,   {	-- The Escape
 					["provider"] = { "n", 253 },	-- William Pestle
-					["coord"] = { 43.3, 65.7, 37 },
+					["coord"] = { 43.3, 65.7, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 112,	-- Collecting Kelp
 				}),
 				q(76,    {	-- The Jasperlode Mine
 					["provider"] = { "n", 240 },	-- Marshal Dughan
-					["coord"] = { 42.1, 65.9, 37 },
+					["coord"] = { 42.1, 65.9, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 62,	-- The Fargodeep Mine
 				}),
 				q(62,    {	-- The Fargodeep Mine
 					["provider"] = { "n", 240 },	-- Marshal Dughan
-					["coord"] = { 42.1, 65.9, 37 },
+					["coord"] = { 42.1, 65.9, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(42740, {	-- The Battle For Broken Shore
@@ -300,13 +300,13 @@ _.Zones =
 				}),
 				q(123,   {	-- The Collector
 					["crs"] = { 13159 },	-- James Clark
-					["coord"] = { 78.6, 67.2, 37 },
+					["coord"] = { 78.6, 67.2, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "i", 1307 },	-- Gold Pickup Schedule
 				}),
 				q(26152, {	-- Wanted: James Clark
 					["model"] = 199473,
-					["coord"] = { 74.0, 72.3, 37 },
+					["coord"] = { 74.0, 72.3, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 203733 },	-- Bounty Board
 				}),
@@ -314,8 +314,8 @@ _.Zones =
 					["model"] = 199421,
 					["races"] = ALLIANCE_ONLY,
 					["coords"] = {
-						{ 24.5, 78.2, 37 },
-						{ 24.5, 74.6, 37 },
+						{ 24.5, 78.2, ELWYNN_FOREST },
+						{ 24.5, 74.6, ELWYNN_FOREST },
 					},
 					["providers"] = {
 						{ "o", 307265 },	-- Wanted Poster
@@ -331,7 +331,7 @@ _.Zones =
 				}),
 				q(239,   {	-- Westbrook Garrison Needs Help!
 					["provider"] = { "n", 240 },	-- Marshal Dughan
-					["coord"] = { 42.1, 65.9, 37 },
+					["coord"] = { 42.1, 65.9, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 47,	-- Gold Dust Exchange
 					["isBreadcrumb"] = true,
@@ -348,7 +348,7 @@ _.Zones =
 				}),
 				q(106,   {	-- Young Lovers
 					["provider"] = { "n", 251 },	-- Maybell Maclure
-					["coord"] = { 43.1, 89.6, 37 },
+					["coord"] = { 43.1, 89.6, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26150,	-- A Visit With Maybell
 				}),
