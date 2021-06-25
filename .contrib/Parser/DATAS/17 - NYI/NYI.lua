@@ -40,14 +40,6 @@ _.NeverImplemented =
 		i(175941),	-- Spiritual Alchemy Stone (171323 is the version in game)
 		i(175942),	-- Spiritual Alchemy Stone (171323 is the version in game)
 		i(175943),	-- Spiritual Alchemy Stone (171323 is the version in game)
-		i(180425),	-- 9.0 PvP - PvP Reward - Accessory - Cloak - 02
-		i(180426),	-- 9.0 PvP - PvP Reward - Accessory - Cloak - 03
-		i(180427),	-- 9.0 PvP - PvP Reward - Accessory - Cloak - 04
-		i(180428),	-- 9.0 PvP - PvP Reward - Accessory - Cloak - 05
-		i(180432),	-- 9.0 PvP - PvP Reward - Tabard - 2
-		i(180433),	-- 9.0 PvP - PvP Reward - Tabard - 3
-		i(180434),	-- 9.0 PvP - PvP Reward - Tabard - 4
-		i(180435),	-- 9.0 PvP - PvP Reward - Tabard - 5
 		i(179775),	-- Conservator's Leather Tunic (reported as not being awarded from ensemble 184112)
 		i(179660),	-- Winterborn Tunic (reported as not being awarded from ensemble 184114)
 		-- Pets

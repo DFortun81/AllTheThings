@@ -473,11 +473,23 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(176004),	-- Sinful Gladiator's Sword (existed in beta; doesn't appear to exist in live)
 				i(176009),	-- Sinful Gladiator's Warglaive (existed in beta; doesn't appear to exist in live)
 			}),
-			n(-339, {	-- Feet
+			n(-322, {	-- Back
+				i(180425),	-- 9.0 PvP - PvP Reward - Accessory - Cloak - 02
+				i(180426),	-- 9.0 PvP - PvP Reward - Accessory - Cloak - 03
+				i(180427),	-- 9.0 PvP - PvP Reward - Accessory - Cloak - 04
+				i(180428),	-- 9.0 PvP - PvP Reward - Accessory - Cloak - 05
+			}),
+			n(-330, {	-- Feet
 				i(180650),	-- Shadowlandy Gladiator's Stompers
 			}),
 			n(-386, {	-- Trinkets
 				i(174380),	-- Gladiator's Concordance
+			}),
+			n(-325, {	-- Tabard
+				i(180432),	-- 9.0 PvP - PvP Reward - Tabard - 2
+				i(180433),	-- 9.0 PvP - PvP Reward - Tabard - 3
+				i(180434),	-- 9.0 PvP - PvP Reward - Tabard - 4
+				i(180435),	-- 9.0 PvP - PvP Reward - Tabard - 5
 			}),
 		}),
 	}),
