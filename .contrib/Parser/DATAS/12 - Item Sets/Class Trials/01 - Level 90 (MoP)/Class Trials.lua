@@ -912,6 +912,18 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(119564),	-- Mountainsage Ring of Destruction
 				}),
 			}),
+			n(-141, {	-- Felsoul
+				["classes"] = { WARLOCK },
+				["groups"] = bubbleDown({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
+					-- added 6.0.2
+					i(119756),	-- Felsoul Idol of Destruction
+					i(119759),	-- Felsoul Stone of Destruction
+					i(119769),	-- Felsoul Cloak of Destruction
+					i(119755),	-- Felsoul Medallion
+					i(119757),	-- Felsoul Band of Destruction
+					i(119758),	-- Felsoul Ring of Destruction
+				}),
+			}),
 		}),
 	}),
 });
