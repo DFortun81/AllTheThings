@@ -16,6 +16,12 @@ _.Zones =
 					Thunder Bluff: 207323
 					Undercity: 207324
 			]]--
+			q(49851, {	-- Cataclysm First Responder (Horde)
+				["sourceQuests"] = { 49846 },	-- War on Two Fronts (Cataclysm)
+				["isBreadcrumb"] = true,
+				["races"] = HORDE_ONLY,
+				["u"] = REMOVED_FROM_GAME,
+			}),			
 			q(29390, {	-- Guardians of Hyjal: Call of the Ancients
 				["isBreadcrumb"] = true,
 				["lvl"] = 85,
@@ -618,13 +624,6 @@ _.Zones =
 				["sourceQuests"] = { 49846 },	-- War on Two Fronts (Cataclysm)
 				["isBreadcrumb"] = true,
 				["races"] = ALLIANCE_ONLY,
-				["u"] = REMOVED_FROM_GAME,
-			}),
-			q(49851, {	-- Cataclysm First Responder (Horde)
-				["sourceQuests"] = { 49846 },	-- War on Two Fronts (Cataclysm)
-				["isBreadcrumb"] = true,
-				["races"] = HORDE_ONLY,
-				["lvl"] = 80,
 				["u"] = REMOVED_FROM_GAME,
 			}),
 			q(49864, {	-- Wars on Two Fronts (Cataclysm or Pandaria)
