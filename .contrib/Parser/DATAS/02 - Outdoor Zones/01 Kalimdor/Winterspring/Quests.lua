@@ -739,5 +739,6 @@ _.Zones =
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(29033),	-- [PH] Bridle Buy-In
+		q(29052),	-- A Cub's Cravings
 	}),
 });

@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(37, {	-- Elwynn Forest
+		m(ELWYNN_FOREST, {
 			m(423, {	-- Northshire
 				n(RARES, {
 					n(62, {	-- Gug Fatcandle

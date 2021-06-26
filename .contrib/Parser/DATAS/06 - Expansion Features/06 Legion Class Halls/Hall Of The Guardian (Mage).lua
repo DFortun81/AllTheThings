@@ -23,7 +23,7 @@ _.ExpansionFeatures =
 						634,	-- Stormheim
 						680,	-- Suramar
 						641,	-- Val'Sharah
-						37,		-- Elwynn Forest
+						ELWYNN_FOREST,
 					},
 					["g"] = sharedData({
 							["classes"] = { MAGE },

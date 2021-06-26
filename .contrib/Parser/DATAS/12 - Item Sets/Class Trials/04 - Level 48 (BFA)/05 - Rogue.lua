@@ -33,3 +33,31 @@ _.GearSets =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-9982, {	-- Legion
+		n(-5350, {	-- Class Trial Item Sets
+			n(-143, {	-- Lightdrinker
+				["classes"] = { ROGUE },
+				["groups"] = bubbleDown({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
+					-- added 7.2.5
+					i(150677),	-- Lightdrinker Jerkin
+					i(150678),	-- Lightdrinker Boots
+					i(150679),	-- Lightdrinker Gloves
+					i(150680),	-- Lightdrinker Hood
+					i(150681),	-- Lightdrinker Britches
+					i(150682),	-- Lightdrinker Shoulders
+					i(150683),	-- Lightdrinker Waistband
+					i(150684),	-- Lightdrinker Bindings
+					-- 7.3.5
+				}),
+			}),
+			n(-143, {	-- Lightdrinker
+				["classes"] = { ROGUE },
+				["groups"] = {
+					-- Level 110 unused Boost Gear (7.3.5)
+					-- Level 48 unused Boost Gear
+				},
+			}),
+		}),
+	}),
+});

@@ -56,3 +56,31 @@ _.GearSets =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-9982, {	-- Legion
+		n(-5350, {	-- Class Trial Item Sets
+			n(-144, {	-- Mistdancer
+				["classes"] = { MONK },
+				["groups"] = bubbleDown({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
+					-- added 7.2.5
+					i(150653),	-- Mistdancer Vest
+					i(150654),	-- Mistdancer Footpads
+					i(150655),	-- Mistdancer Handguards
+					i(150656),	-- Mistdancer Helm
+					i(150657),	-- Mistdancer Legguards
+					i(150659),	-- Mistdancer Cord
+					i(150660),	-- Mistdancer Cuffs
+					i(150658),	-- Mistdancer Pauldrons
+					-- 7.3.5
+				}),
+			}),
+			n(-144, {	-- Mistdancer
+				["classes"] = { MONK },
+				["groups"] = {
+					-- Level 110 unused Boost Gear (7.3.5)
+					-- Level 48 unused Boost Gear
+				},
+			}),
+		}),
+	}),
+});

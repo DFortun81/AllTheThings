@@ -162,7 +162,7 @@ _.Zones =
 				}),
 				q(10969, {	-- Seek Out Ameer
 					["provider"] = { "n", 22899 },	-- Protectorate Advisor Rahim
-					["coord"] = { 32.4, 64.2, NETHERSTORM },
+					["coord"] = { 45.8, 36.2, NETHERSTORM },
 					["minReputation"] = { 933, HONORED },
 					["isBreadcrumb"] = true, 	-- for "A Mission of Mercy"
 				}),

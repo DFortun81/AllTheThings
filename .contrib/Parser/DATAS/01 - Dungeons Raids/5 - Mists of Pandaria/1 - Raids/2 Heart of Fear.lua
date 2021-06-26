@@ -163,36 +163,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							cr(62397, e(741, {	-- Wind Lord Mel'jarak
 								i(89271, {	-- Gauntlets of the Shadowy Conqueror
 									["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
-									["g"] = {
-										i(86682),	-- White Tiger Gauntlets
-										i(86687),	-- White Tiger Gloves
-										i(86662),	-- White Tiger Handguards
-										i(86704),	-- Guardian Serpent Gloves
-										i(86703),	-- Guardian Serpent Handwraps
-										i(86709),	-- Sha-Skin Gloves
-									},
 								}),
-								i(89272, {	-- Gauntlets of the Shadowy Protector
-									i(86637),	-- Yaungol Slayer's Gloves
-									i(86727),	-- Red Crane Gauntlets
-									i(86735),	-- Red Crane Grips
-									i(86729),	-- Red Crane Handwraps
-									i(86630),	-- Firebird's Gloves
-									i(86627),	-- Firebird's Grips
-									i(86692),	-- Firebird's Handwraps
-									i(86671),	-- Gauntlets of Resounding Rings
-									i(86667),	-- Handguards of Resounding Rings
-								}),
-								i(89270, {	-- Gauntlets of the Shadowy Vanquisher
-									i(86677),	-- Gauntlets of the Lost Catacomb
-									i(86657),	-- Handguards of the Lost Catacomb
-									i(86648),	-- Eternal Blossom Gloves
-									i(86652),	-- Eternal Blossom Grips
-									i(86720),	-- Eternal Blossom Handguards
-									i(86698),	-- Eternal Blossom Handwraps
-									i(86718),	-- Gloves of the Burning Scroll
-									i(86642),	-- Gloves of the Thousandfold Blades
-								}),
+								i(89272),	-- Gauntlets of the Shadowy Protector
+								i(89270),	-- Gauntlets of the Shadowy Vanquisher
 								i(86856),	-- Korven's Amber-Sealed Beetle
 								i(86855),	-- Wingslasher Pauldrons
 								i(86853),	-- Cloak of Raining Blades
@@ -205,36 +178,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								i(167055),	-- Amber Goo Puddle
 								i(89268, {	-- Leggings of the Shadowy Conqueror
 									["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
-									["g"] = {
-										i(86685),	-- White Tiger Greaves
-										i(86660),	-- White Tiger Legguards
-										i(86680),	-- White Tiger Legplates
-										i(86706),	-- Guardian Serpent Leggings
-										i(86701),	-- Guardian Serpent Legwraps
-										i(86711),	-- Sha-Skin Leggings
-									},
 								}),
-								i(89269, {	-- Leggings of the Shadowy Protector
-									i(86635),	-- Yaungol Slayer's Legguards
-									i(86737),	-- Red Crane Leggings
-									i(86725),	-- Red Crane Legguards
-									i(86731),	-- Red Crane Legwraps
-									i(86632),	-- Firebird's Kilt
-									i(86625),	-- Firebird's Legguards
-									i(86690),	-- Firebird's Legwraps
-									i(86665),	-- Legguards of Resounding Rings
-									i(86670),	-- Legplates of Resounding Rings
-								}),
-								i(89267, {	-- Leggings of the Shadowy Vanquisher
-									i(86675),	-- Greaves of the Lost Catacomb
-									i(86655),	-- Legguards of the Lost Catacomb
-									i(86722),	-- Eternal Blossom Breeches
-									i(86646),	-- Eternal Blossom Leggings
-									i(86650),	-- Eternal Blossom Legguards
-									i(86696),	-- Eternal Blossom Legwraps
-									i(86716),	-- Leggings of the Burning Scroll
-									i(86640),	-- Legguards of the Thousandfold Blades
-								}),
+								i(89269),	-- Leggings of the Shadowy Protector
+								i(89267),	-- Leggings of the Shadowy Vanquisher
 								i(86863),	-- Scimitar of Seven Stars
 								i(86862),	-- Un'sok's Amber Scalpel
 								i(86860),	-- Shoulderpads of Misshapen Life
@@ -247,36 +193,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								i(167056),	-- Essence of Pride
 								i(89265, {	-- Chest of the Shadowy Conqueror
 									["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
-									["g"] = {
-										i(86683),	-- White Tiger Battleplate
-										i(86688),	-- White Tiger Breastplate
-										i(86663),	-- White Tiger Chestguard
-										i(86707),	-- Guardian Serpent Raiment
-										i(86700),	-- Guardian Serpent Robes
-										i(86712),	-- Sha-Skin Robes
-									},
 								}),
-								i(89266, {	-- Chest of the Shadowy Protector
-									i(86638),	-- Yaungol Slayer's Tunic
-									i(86728),	-- Red Crane Chestguard
-									i(86734),	-- Red Crane Tunic
-									i(86732),	-- Red Crane Vest
-									i(86628),	-- Firebird's Cuirass
-									i(86629),	-- Firebird's Hauberk
-									i(86693),	-- Firebird's Tunic
-									i(86672),	-- Battleplate of Resounding Rings
-									i(86668),	-- Chestguard of Resounding Rings
-								}),
-								i(89264, {	-- Chest of the Shadowy Vanquisher
-									i(86678),	-- Breastplate of the Lost Catacomb
-									i(86658),	-- Chestguard of the Lost Catacomb
-									i(86653),	-- Eternal Blossom Raiment
-									i(86695),	-- Eternal Blossom Robes
-									i(86719),	-- Eternal Blossom Tunic
-									i(86645),	-- Eternal Blossom Vestment
-									i(86715),	-- Robes of the Burning Scroll
-									i(86643),	-- Tunic of the Thousandfold Blades
-								}),
+								i(89266),	-- Chest of the Shadowy Protector
+								i(89264),	-- Chest of the Shadowy Vanquisher
 								i(86864),	-- Claws of Shek'zeer
 								i(86865),	-- Kri'tak, Imperial Scepter of the Swarm
 								i(86866),	-- Crown of the Doomed Empress
@@ -294,36 +213,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["difficulties"] = { 3, 4 },
 				["groups"] = {
 					n(ZONEDROPS, {
-						["crs"] = {
-							62980,	-- Imperial Vizier Zor'lok
-							62543,  -- Blade Lord Ta'yak
-							62164,	-- Garalon
-							62397,	-- Wind Lord Mel'jarak
-							62511,	-- Amber-Shaper Un'sok
-							62837,	-- Grand Empress Shek'zeer
-							63569,	-- Amber Searsting
-							63568,	-- Amber-Ridden Mushan
-							63030,	-- Enslaved Bonesmasher
-							63191,	-- Garalon
-							64338,	-- Instructor Kli'thak
-							64340,	-- Instructor Maltik
-							64339,	-- Instructor Tak'thok
-							64341,	-- Instructor Zarik
-							63036,	-- Kor'thik Extremist
-							64902,	-- Kor'thik Fleshrender
-							63048,	-- Kor'thik Slicer
-							64916,	-- Kor'thik Swarmguard
-							64458,	-- Kor'thik Warsinger
-							63031,	-- Set'thik Fanatic
-							63049,	-- Set'thik Swiftblade
-							64453,	-- Set'thik Windblade
-							63593,	-- Set'thik Zephyrian
-							64917,	-- Sra'thik Ambercaller
-							63570,	-- Sra'thik Pool-Tender
-							63032,	-- Sra'thik Shield Master
-							64454,	-- Zar'thik Augurer
-							63035,	-- Zar'thik Zealot
-						},
 						["groups"] = {
 							i(86192),	-- Darting Damselfly Cuffs
 							i(86186),	-- Gleaming Moth Cuffs
@@ -418,36 +307,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						ach(6683),	-- Less Than Three
 						i(89240, {	-- Gauntlets of the Shadowy Conqueror
 							["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
-							["g"] = {
-								i(85342),	-- White Tiger Gauntlets
-								i(85347),	-- White Tiger Gloves
-								i(85322),	-- White Tiger Handguards
-								i(85364),	-- Guardian Serpent Gloves
-								i(85363),	-- Guardian Serpent Handwraps
-								i(85369),	-- Sha-Skin Gloves
-							},
 						}),
-						i(89241, {	-- Gauntlets of the Shadowy Protector
-							i(85297),	-- Yaungol Slayer's Gloves
-							i(85387),	-- Red Crane Gauntlets
-							i(85395),	-- Red Crane Grips
-							i(85389),	-- Red Crane Handwraps
-							i(85290),	-- Firebird's Gloves
-							i(85287),	-- Firebird's Grips
-							i(85352),	-- Firebird's Handwraps
-							i(85331),	-- Gauntlets of Resounding Rings
-							i(85327),	-- Handguards of Resounding Rings
-						}),
-						i(89242, {	-- Gauntlets of the Shadowy Vanquisher
-							i(85337),	-- Gauntlets of the Lost Catacomb
-							i(85317),	-- Handguards of the Lost Catacomb
-							i(85308),	-- Eternal Blossom Gloves
-							i(85312),	-- Eternal Blossom Grips
-							i(85380),	-- Eternal Blossom Handguards
-							i(85358),	-- Eternal Blossom Handwraps
-							i(85378),	-- Gloves of the Burning Scroll
-							i(85302),	-- Gloves of the Thousandfold Blades
-						}),
+						i(89241),	-- Gauntlets of the Shadowy Protector
+						i(89242),	-- Gauntlets of the Shadowy Vanquisher
 						i(86205),	-- Korven's Amber-Sealed Beetle
 						i(86204),	-- Wingslasher Pauldrons
 						i(86202),	-- Cloak of Raining Blades
@@ -461,36 +323,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(167055),	-- Amber Goo Puddle
 						i(89243, {	-- Leggings of the Shadowy Conqueror
 							["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
-							["g"] = {
-								i(85345),	-- White Tiger Greaves
-								i(85320),	-- White Tiger Legguards
-								i(85340),	-- White Tiger Legplates
-								i(85366),	-- Guardian Serpent Leggings
-								i(85361),	-- Guardian Serpent Legwraps
-								i(85371),	-- Sha-Skin Leggings
-							},
 						}),
-						i(89244, {	-- Leggings of the Shadowy Protector
-							i(85295),	-- Yaungol Slayer's Legguards
-							i(85397),	-- Red Crane Leggings
-							i(85385),	-- Red Crane Legguards
-							i(85391),	-- Red Crane Legwraps
-							i(85292),	-- Firebird's Kilt
-							i(85285),	-- Firebird's Legguards
-							i(85350),	-- Firebird's Legwraps
-							i(85325),	-- Legguards of Resounding Rings
-							i(85330),	-- Legplates of Resounding Rings
-						}),
-						i(89245, {	-- Leggings of the Shadowy Vanquisher
-							i(85335),	-- Greaves of the Lost Catacomb
-							i(85315),	-- Legguards of the Lost Catacomb
-							i(85382),	-- Eternal Blossom Breeches
-							i(85306),	-- Eternal Blossom Leggings
-							i(85310),	-- Eternal Blossom Legguards
-							i(85356),	-- Eternal Blossom Legwraps
-							i(85376),	-- Leggings of the Burning Scroll
-							i(85300),	-- Legguards of the Thousandfold Blades
-						}),
+						i(89244),	-- Leggings of the Shadowy Protector
+						i(89245),	-- Leggings of the Shadowy Vanquisher
 						i(86219),	-- Scimitar of Seven Stars
 						i(86217),	-- Un'sok's Amber Scalpel
 						i(86213),	-- Shoulderpads of Misshapen Life
@@ -504,36 +339,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(167056),	-- Essence of Pride
 						i(89237, {	-- Chest of the Shadowy Conqueror
 							["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
-							["g"] = {
-								i(85343),	-- White Tiger Battleplate
-								i(85348),	-- White Tiger Breastplate
-								i(85323),	-- White Tiger Chestguard
-								i(85367),	-- Guardian Serpent Raiment
-								i(85360),	-- Guardian Serpent Robes
-								i(85372),	-- Sha-Skin Robes
-							},
 						}),
-						i(89238, {	-- Chest of the Shadowy Protector
-							i(85298),	-- Yaungol Slayer's Tunic
-							i(85388),	-- Red Crane Chestguard
-							i(85394),	-- Red Crane Tunic
-							i(85392),	-- Red Crane Vest
-							i(85288),	-- Firebird's Cuirass
-							i(85289),	-- Firebird's Hauberk
-							i(85353),	-- Firebird's Tunic
-							i(85332),	-- Battleplate of Resounding Rings
-							i(85328),	-- Chestguard of Resounding Rings
-						}),
-						i(89239, {	-- Chest of the Shadowy Vanquisher
-							i(85338),	-- Breastplate of the Lost Catacomb
-							i(85318),	-- Chestguard of the Lost Catacomb
-							i(85313),	-- Eternal Blossom Raiment
-							i(85355),	-- Eternal Blossom Robes
-							i(85379),	-- Eternal Blossom Tunic
-							i(85305),	-- Eternal Blossom Vestment
-							i(85375),	-- Robes of the Burning Scroll
-							i(85303),	-- Tunic of the Thousandfold Blades
-						}),
+						i(89238),	-- Chest of the Shadowy Protector
+						i(89239),	-- Chest of the Shadowy Vanquisher
 						i(86226),	-- Claws of Shek'zeer
 						i(86227),	-- Kri'tak, Imperial Scepter of the Swarm
 						i(86228),	-- Crown of the Doomed Empress
@@ -549,36 +357,6 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 				["difficulties"] = { 5, 6 },
 				["groups"] = {
 					n(ZONEDROPS, {
-						["crs"] = {
-							62980,	-- Imperial Vizier Zor'lok
-							62543,  -- Blade Lord Ta'yak
-							62164,	-- Garalon
-							62397,	-- Wind Lord Mel'jarak
-							62511,	-- Amber-Shaper Un'sok
-							62837,	-- Grand Empress Shek'zeer
-							63569,	-- Amber Searsting
-							63568,	-- Amber-Ridden Mushan
-							63030,	-- Enslaved Bonesmasher
-							63191,	-- Garalon
-							64338,	-- Instructor Kli'thak
-							64340,	-- Instructor Maltik
-							64339,	-- Instructor Tak'thok
-							64341,	-- Instructor Zarik
-							63036,	-- Kor'thik Extremist
-							64902,	-- Kor'thik Fleshrender
-							63048,	-- Kor'thik Slicer
-							64916,	-- Kor'thik Swarmguard
-							64458,	-- Kor'thik Warsinger
-							63031,	-- Set'thik Fanatic
-							63049,	-- Set'thik Swiftblade
-							64453,	-- Set'thik Windblade
-							63593,	-- Set'thik Zephyrian
-							64917,	-- Sra'thik Ambercaller
-							63570,	-- Sra'thik Pool-Tender
-							63032,	-- Sra'thik Shield Master
-							64454,	-- Zar'thik Augurer
-							63035,	-- Zar'thik Zealot
-						},
 						["groups"] = {
 							i(86192),	-- Darting Damselfly Cuffs
 							i(86186),	-- Gleaming Moth Cuffs
@@ -677,36 +455,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						ach(6683),	-- Less Than Three
 						i(89256, {	-- Gauntlets of the Shadowy Conqueror
 							["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
-							["g"] = {
-								i(87100),	-- White Tiger Gauntlets
-								i(87105),	-- White Tiger Gloves
-								i(87110),	-- White Tiger Handguards
-								i(87119),	-- Guardian Serpent Gloves
-								i(87114),	-- Guardian Serpent Handwraps
-								i(87187),	-- Sha-Skin Gloves
-							},
 						}),
-						i(89257, {	-- Gauntlets of the Shadowy Protector
-							i(87003),	-- Yaungol Slayer's Gloves
-							i(87095),	-- Red Crane Gauntlets
-							i(87085),	-- Red Crane Grips
-							i(87089),	-- Red Crane Handwraps
-							i(87140),	-- Firebird's Gloves
-							i(87135),	-- Firebird's Grips
-							i(87130),	-- Firebird's Handwraps
-							i(87194),	-- Gauntlets of Resounding Rings
-							i(87198),	-- Handguards of Resounding Rings
-						}),
-						i(89255, {	-- Gauntlets of the Shadowy Vanquisher
-							i(86914),	-- Gauntlets of the Lost Catacomb
-							i(86919),	-- Handguards of the Lost Catacomb
-							i(86933),	-- Eternal Blossom Gloves
-							i(86924),	-- Eternal Blossom Grips
-							i(86939),	-- Eternal Blossom Handguards
-							i(86928),	-- Eternal Blossom Handwraps
-							i(87007),	-- Gloves of the Burning Scroll
-							i(87125),	-- Gloves of the Thousandfold Blades
-						}),
+						i(89257),	-- Gauntlets of the Shadowy Protector
+						i(89255),	-- Gauntlets of the Shadowy Vanquisher
 						i(86976),	-- Korven's Amber-Sealed Beetle
 						i(86978),	-- Wingslasher Pauldrons
 						i(86980),	-- Cloak of Raining Blades
@@ -721,36 +472,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(167055),	-- Amber Goo Puddle
 						i(89253, {	-- Leggings of the Shadowy Conqueror
 							["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
-							["g"] = {
-								i(87107),	-- White Tiger Greaves
-								i(87112),	-- White Tiger Legguards
-								i(87102),	-- White Tiger Legplates
-								i(87121),	-- Guardian Serpent Leggings
-								i(87116),	-- Guardian Serpent Legwraps
-								i(87189),	-- Sha-Skin Leggings
-							},
 						}),
-						i(89254, {	-- Leggings of the Shadowy Protector
-							i(87005),	-- Yaungol Slayer's Legguards
-							i(87087),	-- Red Crane Leggings
-							i(87097),	-- Red Crane Legguards
-							i(87091),	-- Red Crane Legwraps
-							i(87142),	-- Firebird's Kilt
-							i(87137),	-- Firebird's Legguards
-							i(87132),	-- Firebird's Legwraps
-							i(87200),	-- Legguards of Resounding Rings
-							i(87195),	-- Legplates of Resounding Rings
-						}),
-						i(89252, {	-- Leggings of the Shadowy Vanquisher
-							i(86916),	-- Greaves of the Lost Catacomb
-							i(86921),	-- Legguards of the Lost Catacomb
-							i(86935),	-- Eternal Blossom Leggings
-							i(86941),	-- Eternal Blossom Breeches
-							i(86926),	-- Eternal Blossom Legguards
-							i(86930),	-- Eternal Blossom Legwraps
-							i(87009),	-- Leggings of the Burning Scroll
-							i(87127),	-- Leggings of the Thousandfold Blades
-						}),
+						i(89254),	-- Leggings of the Shadowy Protector
+						i(89252),	-- Leggings of the Shadowy Vanquisher
 						i(86987),	-- Scimitar of Seven Stars
 						i(86983),	-- Un'sok's Amber Scalpel
 						i(86986),	-- Shoulderpads of Misshapen Life
@@ -765,36 +489,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						i(167056),	-- Essence of Pride
 						i(89250, {	-- Chest of the Shadowy Conqueror
 							["description"] = "Paladin completionists will want to turn this into the vendor since one piece can be awarded in any spec.",
-							["g"] = {
-								i(87099),	-- White Tiger Battleplate
-								i(87104),	-- White Tiger Breastplate
-								i(87109),	-- White Tiger Chestguard
-								i(87122),	-- Guardian Serpent Raiment
-								i(87117),	-- Guardian Serpent Robes
-								i(87190),	-- Sha-Skin Robes
-							},
 						}),
-						i(89251, {	-- Chest of the Shadowy Protector
-							i(87002),	-- Yaungol Slayer's Tunic
-							i(87094),	-- Red Crane Chestguard
-							i(87084),	-- Red Crane Tunic
-							i(87092),	-- Red Crane Vest
-							i(87134),	-- Firebird's Cuirass
-							i(87139),	-- Firebird's Hauberk
-							i(87129),	-- Firebird's Tunic
-							i(87193),	-- Battleplate of Resounding Rings
-							i(87197),	-- Chestguard of Resounding Rings
-						}),
-						i(89249, {	-- Chest of the Shadowy Vanquisher
-							i(86913),	-- Breastplate of the Lost Catacomb
-							i(86918),	-- Chestguard of the Lost Catacomb
-							i(86923),	-- Eternal Blossom Raiment
-							i(86931),	-- Eternal Blossom Robes
-							i(86938),	-- Eternal Blossom Tunic
-							i(86936),	-- Eternal Blossom Vestment
-							i(87010),	-- Robes of the Burning Scroll
-							i(87124),	-- Tunic of the Thousandfold Blades
-						}),
+						i(89251),	-- Chest of the Shadowy Protector
+						i(89249),	-- Chest of the Shadowy Vanquisher
 						i(86988),	-- Claws of Shek'zeer
 						i(86990),	-- Kri'tak, Imperial Scepter of the Swarm
 						i(86991),	-- Crown of the Doomed Empress

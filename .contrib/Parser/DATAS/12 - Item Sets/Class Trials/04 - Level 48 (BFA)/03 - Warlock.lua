@@ -9,7 +9,6 @@ _.GearSets =
 			n(-141, {	-- Felsoul
 				["classes"] = { WARLOCK },
 				["groups"] = {
-					un(NEVER_IMPLEMENTED, i(154022)),	-- Felsoul Wand
 					i(154024),	-- Felsoul Stave
 					i(154016),	-- Felsoul Cowl
 					i(154009),	-- Felsoul Medallion
@@ -30,3 +29,30 @@ _.GearSets =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-9982, {	-- Legion
+		n(-5350, {	-- Class Trial Item Sets
+			n(-141, {	-- Felsoul
+				["classes"] = { WARLOCK },
+				["groups"] = bubbleDown({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
+					-- added 7.2.5
+					i(150693),	-- Felsoul Sandals
+					i(150694),	-- Felsoul Handwraps
+					i(150695),	-- Felsoul Cowl
+					i(150696),	-- Felsoul Leggings
+					i(150697),	-- Felsoul Robe
+					i(150698),	-- Felsoul Shoulderpads
+					i(150699),	-- Felsoul Cord
+					i(150700),	-- Felsoul Wristwraps
+					-- 7.3.5
+				}),
+			}),
+			n(-141, {	-- Felsoul
+				["classes"] = { WARLOCK },
+				["groups"] = {
+					i(154022),	-- Felsoul Wand
+				},
+			}),
+		}),
+	}),
+});

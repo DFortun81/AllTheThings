@@ -72,7 +72,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["provider"] = { "n", 15895 },	-- Lunar Festival Harbinger
 				["isYearly"] = true,
 				["maps"] = {
-					37,	-- Elwynn Forest
+					ELWYNN_FOREST,
 					UNDERCITY,
 					IRONFORGE,
 					ORGRIMMAR,
@@ -106,7 +106,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["provider"] = { "n", 15892 },	-- Lunar Festival Emissary
 				["isYearly"] = true,
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 37 },	-- Elwynn Forest
+				["maps"] = { ELWYNN_FOREST },
 				["u"] = 17,	-- Lunar Festival
 			}),
 			q(8872,  {	-- The Lunar Festival (A)
@@ -147,7 +147,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["provider"] = { "n", 15895 },	-- Lunar Festival Harbinger
 				["isYearly"] = true,
 				["maps"] = {
-					37,	-- Elwynn Forest
+					ELWYNN_FOREST,
 					UNDERCITY,
 					IRONFORGE,
 					ORGRIMMAR,
@@ -444,8 +444,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8649,  {	-- Stormbrow the Elder
 				["provider"] = { "n", 15565 },	-- Elder Stormbrow
 				["isYearly"] = true,
-				["coord"] = { 39.8, 63.8, 37 },
-				["maps"] = { 37 },	-- Goldshire
+				["coord"] = { 39.8, 63.8, ELWYNN_FOREST },
+				["maps"] = { ELWYNN_FOREST },	-- Goldshire
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(3, {	-- Elder Stormbrow in Goldshire
@@ -981,8 +981,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8646,  {	-- Hammershout the Elder
 				["provider"] = { "n", 15562 },	-- Elder Hammershout
 				["isYearly"] = true,
-				["coord"] = { 34.5, 50.3, 37 },
-				["maps"] = { 37 },	-- Elwynn Forest
+				["coord"] = { 34.5, 50.3, ELWYNN_FOREST },
+				["maps"] = { ELWYNN_FOREST },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(3, {	-- Elder Hammershout in Stormwind

@@ -631,7 +631,6 @@ _.GearSets =
 								i(117150),	-- Mistdancer Stone of Wisdom
 							}),
 							n(-9932, {	-- Windwalker
-								--	i(117136),	-- Mistdancer Helm
 								i(117157),	-- Mistdancer Choker
 								i(117161),	-- Mistdancer Cloak of Rage
 								i(117138),	-- Mistdancer Pauldrons [Hidden Shoulders]
@@ -871,3 +870,163 @@ _.GearSets =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-9981, {	-- Draenor
+		n(-5350, {	-- Class Trial Item Sets
+			n(-140, {	-- Communal
+				["classes"] = { PRIEST },
+				["groups"] = bubbleDown({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
+					-- added 6.0.2
+					i(119667),	-- Communal Sandals
+					i(119668),	-- Communal Handwraps
+					i(119669),	-- Communal Hood
+					i(119670),	-- Communal Leggings
+					i(119675),	-- Communal Vestments
+					i(119677),	-- Communal Shoulderpads
+					i(119678),	-- Communal Cord
+					i(119679),	-- Communal Wristwraps
+					i(119661),	-- Communal Idol of Destruction
+					i(119664),	-- Communal Stone of Destruction
+					i(119672),	-- Communal Idol of Wisdom
+					i(119676),	-- Communal Stone of Wisdom
+					i(119666),	-- Communal Cloak of Wisdom
+					i(119681),	-- Communal Cloak of Destruction
+					i(119660),	-- Communal Medallion
+					i(119671),	-- Communal Necklace
+					i(119662),	-- Communal Band of Destruction
+					i(119663),	-- Communal Ring of Destruction
+					i(119673),	-- Communal Band of Wisdom
+					i(119674),	-- Communal Ring of Wisdom
+				}),
+			}),
+			n(-145, {	-- Mountainsage
+				["classes"] = { MAGE },
+				["groups"] = bubbleDown({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
+					-- added 6.0.2
+					i(119562),	-- Mountainsage Idol of Destruction
+					i(119565),	-- Mountainsage Stone of Destruction
+					i(119575),	-- Mountainsage Cloak of Destruction
+					i(119561),	-- Mountainsage Medallion
+					i(119563),	-- Mountainsage Band of Destruction
+					i(119564),	-- Mountainsage Ring of Destruction
+				}),
+			}),
+			n(-141, {	-- Felsoul
+				["classes"] = { WARLOCK },
+				["groups"] = bubbleDown({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
+					-- added 6.0.2
+					i(119756),	-- Felsoul Idol of Destruction
+					i(119759),	-- Felsoul Stone of Destruction
+					i(119769),	-- Felsoul Cloak of Destruction
+					i(119755),	-- Felsoul Medallion
+					i(119757),	-- Felsoul Band of Destruction
+					i(119758),	-- Felsoul Ring of Destruction
+				}),
+			}),
+			n(-147, {	-- Springrain
+				["classes"] = { DRUID },
+				["groups"] = bubbleDown({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
+					-- added 6.0.2
+					i(119520),	-- Springrain Vest
+					i(119521),	-- Springrain Footpads
+					i(119522),	-- Springrain Handguards
+					i(119523),	-- Springrain Helm
+					i(119524),	-- Springrain Legguards
+					i(119526),	-- Springrain Pauldrons
+					i(119527),	-- Springrain Cord
+					i(119528),	-- Springrain Cuffs
+					i(119536),	-- Springrain Jerkin
+					i(119537),	-- Springrain Boots
+					i(119538),	-- Springrain Gloves
+					i(119539),	-- Springrain Hood
+					i(119540),	-- Springrain Britches
+					i(119541),	-- Springrain Shoulders
+					i(119542),	-- Springrain Waistband
+					i(119543),	-- Springrain Bindings
+					i(119502),	-- Springrain Idol of Rage
+					i(119505),	-- Springrain Stone of Rage
+					i(119516),	-- Springrain Idol of Destruction
+					i(119519),	-- Springrain Stone of Destruction
+					i(119531),	-- Springrain Idol of Wisdom
+					i(119534),	-- Springrain Stone of Wisdom
+					i(119805),	-- Springrain Idol of Durability
+					i(119808),	-- Springrain Stone of Durability
+					i(119500),	-- Springrain Cloak of Rage
+					i(119529),	-- Springrain Cloak of Wisdom
+					i(119535),	-- Springrain Cloak of Destruction
+					i(119803),	-- Springrain Cloak of Durability
+					i(119501),	-- Springrain Choker
+					i(119515),	-- Springrain Medallion
+					i(119530),	-- Springrain Necklace
+					i(119804),	-- Springrain Choker
+					i(119503),	-- Springrain Ring of Onslaught
+					i(119504),	-- Springrain Band of Onslaught
+					i(119517),	-- Springrain Band of Destruction
+					i(119518),	-- Springrain Ring of Destruction
+					i(119532),	-- Springrain Band of Wisdom
+					i(119533),	-- Springrain Ring of Wisdom
+					i(119806),	-- Springrain Ring of Durability
+					i(119807),	-- Springrain Band of Durability
+					-- added 6.0.1
+					i(117537),	-- Springrain Idol of Durability
+					i(117540),	-- Springrain Stone of Durability
+					i(117535),	-- Springrain Cloak of Durability
+				}),
+			}),
+			n(-147, {	-- Springrain
+				["classes"] = { DRUID },
+				["groups"] = {
+					-- added 6.0.1
+					i(117536),	-- Springrain Choker
+				},
+			}),
+			n(-143, {	-- Lightdrinker
+				["classes"] = { ROGUE },
+				["groups"] = bubbleDown({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
+					-- added 6.0.2
+					i(119693),	-- Lightdrinker Idol of Rage
+					i(119696),	-- Lightdrinker Stone of Rage
+					i(119691),	-- Lightdrinker Cloak of Rage
+					i(119692),	-- Lightdrinker Choker
+					i(119694),	-- Lightdrinker Band of Onslaught
+					i(119695),	-- Lightdrinker Ring of Onslaught
+				}),
+			}),
+			n(-144, {	-- Mistdancer
+				["classes"] = { MONK },
+				["groups"] = bubbleDown({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
+					-- added 6.0.1
+					i(117130),	-- Mistdancer Defender Stone
+					i(117132),	-- Mistdancer Defender Idol
+					i(117136),	-- Mistdancer Helm <- Might be removed
+					-- added 6.0.2
+					i(119591),	-- Mistdancer Boots
+					i(119592),	-- Mistdancer Gloves
+					i(119593),	-- Mistdancer Hood
+					i(119596),	-- Mistdancer Britches
+					i(119601),	-- Mistdancer Shoulders
+					i(119603),	-- Mistdancer Waistband
+					i(119604),	-- Mistdancer Bindings
+					i(119612),	-- Mistdancer Jerkin
+					i(119580),	-- Mistdancer Defender Stone
+					i(119582),	-- Mistdancer Defender Idol
+					i(119595),	-- Mistdancer Idol of Wisdom
+					i(119600),	-- Mistdancer Stone of Wisdom
+					i(119606),	-- Mistdancer Idol of Rage
+					i(119610),	-- Mistdancer Stone of Rage
+					i(119594),	-- Mistdancer Cloak of Wisdom
+					i(119611),	-- Mistdancer Cloak of Rage
+					i(119577),	-- Mistdancer Amulet
+					i(119597),	-- Mistdancer Necklace
+					i(119607),	-- Mistdancer Choker
+					i(119578),	-- Mistdancer Band of Stoicism
+					i(119579),	-- Mistdancer Ring of Stoicism
+					i(119598),	-- Mistdancer Ring of Wisdom
+					i(119599),	-- Mistdancer Band of Wisdom
+					i(119608),	-- Mistdancer Band of Onslaught
+					i(119609),	-- Mistdancer Ring of Onslaught
+				}),
+			}),
+		}),
+	}),
+});

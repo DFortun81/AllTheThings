@@ -9,7 +9,6 @@ _.GearSets =
 			n(-145, {	-- Mountainsage
 				["classes"] = { MAGE },
 				["groups"] = {
-					un(NEVER_IMPLEMENTED, i(153828)),	-- Mountainsage Wand	*LA0207
 					i(153830),	-- Mountainsage Staff	*LA0207
 					i(153822),	-- Mountainsage Hood	*LA0207
 					i(153815),	-- Mountainsage Medallion	*LA0207
@@ -30,3 +29,29 @@ _.GearSets =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-9982, {	-- Legion
+		n(-5350, {	-- Class Trial Item Sets
+			n(-145, {	-- Mountainsage
+				["classes"] = { MAGE },
+				["groups"] = bubbleDown({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
+				}),
+			}),
+			n(-145, {	-- Mountainsage
+				["classes"] = { MAGE },
+				["groups"] = {
+					-- Possible Unused Level 120/Lv 120 Classtrial 7.2.5
+				i(150651),	-- Mountainsage Cord
+				i(150646),	-- Mountainsage Handwraps
+				i(150647),	-- Mountainsage Hood
+				i(150648),	-- Mountainsage Leggings
+				i(150649),	-- Mountainsage Robe
+				i(150645),	-- Mountainsage Sandals
+				i(150650),	-- Mountainsage Shoulderpads
+				i(150652),	-- Mountainsage Wristwraps
+				i(153828),	-- Mountainsage Wand	*LA0207
+				},
+			}),
+		}),
+	}),
+});

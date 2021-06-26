@@ -15,25 +15,6 @@ _.Instances = { tier(4, {	-- Cataclysm
 		["groups"] = {
 			ach(4842),	-- Blackwing Descent
 			n(ZONEDROPS, {
-				["crs"] = {
-					46083,	-- Drakeadon Mongrel
-					42803,	-- Drakeadon Mongrel
-					42649,	-- Drakonid Chainwielder
-					42362,	-- Drakonid Drudge
-					42802,	-- Drakonid Slayer
-					42800,	-- Golem Sentry
-					42767,	-- Ivoroc
-					42768,	-- Maimgor
-					42764,	-- Pyrecraw
-					43119,	-- Spirit of Angerforge
-					43128,	-- Spirit of Anvilrage
-					43130,	-- Spirit of Burningeye
-					43122,	-- Spirit of Corehammer
-					43127,	-- Spirit of Ironstar
-					43125,	-- Spirit of Moltenfist
-					43129,	-- Spirit of Shadowforge
-					43126,	-- Spirit of Thaurissan
-				},
 				["groups"] = {
 					i(59466),	-- Ironstar's Impenetrable Cover
 					i(59468),	-- Shadowforge's Lightbound Smock
@@ -148,31 +129,9 @@ _.Instances = { tier(4, {	-- Cataclysm
 						["creatureID"] = 41376,
 						["groups"] = {
 							ach(4849),	-- Keeping it in the Family
-							i(63683, {	-- Helm of the Forlorn Conqueror
-								i(60249),	-- Shadowflame Hood
-								i(60346),	-- Reinforced Sapphirium Helmet
-								i(60359),	-- Reinforced Sapphirium Headguard
-								i(60356),	-- Reinforced Sapphirium Faceguard
-								i(60256),	-- Mercurial Hood
-								i(60258),	-- Mercurial Cowl
-							}),
-							i(63684, {	-- Helm of the Forlorn Protector
-								i(60303),	-- Lightning-Charged Headguard
-								i(60320),	-- Helmet of the Raging Elements
-								i(60315),	-- Headpiece of the Raging Elements
-								i(60308),	-- Faceguard of the Raging Elements
-								i(60325),	-- Earthen Helemt
-								i(60328),	-- Earthen Faceguard
-							}),
-							i(63682, {	-- Helm of the Forlorn Vanquisher
-								i(60299),	-- Wind Dancer's Helmet
-								i(60277),	-- Stormrider's Helm
-								i(60286),	-- Stormrider's Headpiece
-								i(60282),	-- Stormrider's Cover
-								i(60341),	-- Magma Plated Helmet
-								i(60351),	-- Magma Plated Faceguard
-								i(60243),	-- Firelord's Hood
-							}),
+							i(63683),	-- Helm of the Forlorn Conqueror
+							i(63684),	-- Helm of the Forlorn Protector
+							i(63682),	-- Helm of the Forlorn Vanquisher
 							i(138802),	-- Illusion: Power Torrent
 							i(152968),	-- Shadowy Pile of Bones (PET!)
 							i(63679),	-- Reclaimed Ashkandi, Greatsword of the Brotherhood
@@ -201,31 +160,9 @@ _.Instances = { tier(4, {	-- Cataclysm
 						["groups"] = {
 							ach(5094),	-- Heroic: Magmaw
 							ach(5306),	-- Parasite Evening
-							i(67429, {	-- Gauntlets of the Forlorn Conqueror
-								i(65259),	-- Shadowflame Handwraps
-								i(65225),	-- Reinforced Sapphirium Handguards
-								i(65220),	-- Reinforced Sapphirium Gloves
-								i(65215),	-- Reinforced Sapphirium Gauntlets
-								i(65229),	-- Mercurial Handwraps
-								i(65234)	-- Mercurial Gloves
-							}),
-							i(67430, {	-- Gauntlets of the Forlorn Protector
-								i(65205),	-- Lightning-Charged Gloves
-								i(65245),	-- Handwraps of the Raging Elements
-								i(65250),	-- Grips of the Raging Elements
-								i(65255),	-- Gloves of the Raging Elements
-								i(65270),	-- Earthen Handguards
-								i(65265)	-- Earthen Gauntlets
-							}),
-							i(67431, {	-- Gauntlets of the Forlorn Vanquisher
-								i(65240),	-- Wind Dancer's Gloves
-								i(65194),	-- Stormrider's Handwraps
-								i(65189),	-- Stormrider's Grips
-								i(65199),	-- Stormrider's Gloves
-								i(65185),	-- Magma Plated Handguards
-								i(65180),	-- Magma Plated Gauntlets
-								i(65209)	-- Firelord's Gloves
-							}),
+							i(67429),	-- Gauntlets of the Forlorn Conqueror
+							i(67430),	-- Gauntlets of the Forlorn Protector
+							i(67431),	-- Gauntlets of the Forlorn Vanquisher
 							i(65007),	-- Akirus the Worm-Breaker
 							i(65041),	-- Incineratus
 							i(65047),	-- Lava Spine
@@ -266,31 +203,9 @@ _.Instances = { tier(4, {	-- Cataclysm
 							ach(5108),	-- Heroic: Maloriak
 							ach(5310),	-- Aberrant Behavior
 							i(152967),	-- Experiment-In-A-Jar (PET!)
-							i(67428, {	-- Leggings of the Forlorn Conqueror
-								i(65261),	-- Shadowflame Leggings
-								i(65217),	-- Reinforced Sapphirium Legplates
-								i(65227),	-- Reinforced Sapphirium Legguards
-								i(65222),	-- Reinforced Sapphirium Greaves
-								i(65231),	-- Mercurial Legwraps
-								i(65236)	-- Mercurial Leggings
-							}),
-							i(67427, {	-- Leggings of the Forlorn Protector
-								i(65207),	-- Lightning-Charged Legguards
-								i(65247),	-- Legwraps of the Raging Elements
-								i(65252),	-- Legguards of the Raging Elements
-								i(65257),	-- Kilt of the Raging Elements
-								i(65267),	-- Earthen Legplates
-								i(65272)	-- Earthen Legguards
-							}),
-							i(67426, {	-- Leggings of the Forlorn Vanquisher
-								i(65242),	-- Wind Dancer's Legguards
-								i(65196),	-- Stormrider's Legwraps
-								i(65191),	-- Stormrider's Legguards
-								i(65201),	-- Stormrider's Leggings
-								i(65182),	-- Magma Plated Legplates
-								i(65187),	-- Magma Plated Legguards
-								i(65211)	-- Firelord's Leggings
-							}),
+							i(67428),	-- Leggings of the Forlorn Conqueror
+							i(67427),	-- Leggings of the Forlorn Protector
+							i(67426),	-- Leggings of the Forlorn Vanquisher
 							i(65036),	-- Mace of Acrid Death
 							i(65038),	-- Dragon Bone Warhelm
 							i(65035),	-- Cloak of Biting Chill
@@ -350,31 +265,9 @@ _.Instances = { tier(4, {	-- Cataclysm
 								title(187),	-- , Blackwing's Bane
 							}),
 							ach(4849),	-- Keeping it in the Family
-							i(65001, {	-- Crown of the Forlorn Conqueror
-								i(65260),	-- Shadowflame Hood
-								i(65216),	-- Reinforced Sapphirium Helmet
-								i(65221),	-- Reinforced Sapphirium Headguard
-								i(65226),	-- Reinforced Sapphirium Faceguard
-								i(65235),	-- Mercurial Hood
-								i(65230)	-- Mercurial Cowl
-							}),
-							i(65000, {	-- Crown of the Forlorn Protector
-								i(65206),	-- Lightning-Charged Headguard
-								i(65251),	-- Helmet of the Raging Elements
-								i(65256),	-- Headpiece of the Raging Elements
-								i(65246),	-- Faceguard of the Raging Elements
-								i(65266),	-- Earthen Helmet
-								i(65271)	-- Earthen Faceguard
-							}),
-							i(65002, {	-- Crown of the Forlorn Vanquisher
-								i(65241),	-- Wind Dancer's Helmet
-								i(65195),	-- Stormrider's Helm
-								i(65190),	-- Stormrider's Headpiece
-								i(65200),	-- Stormrider's Cove
-								i(65181),	-- Magma Plated Helmet
-								i(65186),	-- Magma Plated Faceguard
-								i(65210)	-- Firelord's Hood
-							}),
+							i(65001),	-- Crown of the Forlorn Conqueror
+							i(65000),	-- Crown of the Forlorn Protector
+							i(65002),	-- Crown of the Forlorn Vanquisher
 							i(138802),	-- Illusion: Power Torrent
 							i(152968),	-- Shadowy Pile of Bones (PET!)
 							i(65003),	-- Reclaimed Ashkandi, Greatsword of the Brotherhood

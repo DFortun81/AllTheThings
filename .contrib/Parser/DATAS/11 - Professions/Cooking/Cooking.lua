@@ -2732,6 +2732,16 @@ profession(COOKING, {
 				-- #endif
 			},
 		}),
+		q(13825, {	-- Clamlette Surprise
+			["u"] = REMOVED_FROM_GAME,
+			["provider"] = { "n", 8125 },	-- Dirge Quikcleave
+			["coord"] = { 52.63, 28.12, TANARIS },
+			["requireSkill"] = COOKING,
+			["altQuests"] = { 6610 },	-- Clamlette Surprise
+			["groups"] = {
+				i(16971),	-- Clamlette Surprise
+			},
+		}),
 		q(8307, {	-- Desert Recipe
 			["qg"] = 15174,	-- Calandrath <Innkeeper>
 			["requireSkill"] = COOKING,

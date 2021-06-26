@@ -771,7 +771,6 @@ _.ExpansionFeatures =
 		}),
 	}),
 };
-
 _.HiddenQuestTriggers = {
 	q(62699),	-- triggered when turning in #62691, "A Calling in Revendreth"
 	q(62924),	-- triggered when turning in #62691, "A Calling in Revendreth"
@@ -782,3 +781,8 @@ _.HiddenQuestTriggers = {
 	q(59316),	-- turning in quest #62918, "Binding Power"
 	q(59317),	-- triggered when turning in #62919, "Strengthening the Bond"
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(62917),	-- Shared Souls
+	}),
+});

@@ -350,27 +350,27 @@ _.Zones =
 				}),
 				ach(13048, {	-- Life Finds a Way... To Die!
 					crit(1, {		-- Thuderfoot the Brutosaur slain
-						["coord"] = { 67.73, 29.03 },
+						["coord"] = { 67.73, 29.03, 862 },
 						["description"] = "This rare shares respawn with Azuresail (67.10 26.57) and Kil'Tawan (69.2 30.4) so kill them if you need it. To make things worse they don't spawn every day.",
 					}),
 					crit(2, {		-- Azuresail the Diemetrodon slain
-						["coord"] = { 67.10, 26.57 },
+						["coord"] = { 67.10, 26.57, 862 },
 						["description"] = "This rare shares respawn with Thuderfoot (67.73 29.03) and Kil'Tawan (69.2 30.4) so kill them if you need it. To make things worse they don't spawn every day.",
 					}),
 					crit(3, {		-- Queenfeather the Ravasaur slain
-						["coord"] = { 71.13, 40.34 },
+						["coord"] = { 71.13, 40.34, 862 },
 					}),
 					crit(5, {		-- The Sabertusk Empress slain
-						["coord"] = { 52.39, 47.71 },
+						["coord"] = { 52.39, 47.71, 862 },
 					}),
 					crit(6, {		-- Sludgecrusher the Anklyodon slain
-						["coord"] = { 66.08, 22.38 },
+						["coord"] = { 66.08, 22.38, 862 },
 					}),
 					crit(7, {		-- Nol'ixwan the Direhorn slain
-						["coord"] = { 61.62, 25.37 },
+						["coord"] = { 61.62, 25.37, 862 },
 					}),
 					crit(8, {		-- King K'tal the Devilsaur slain
-						["coord"] = { 71.24, 21.84 },
+						["coord"] = { 71.24, 21.84, 862 },
 					}),
 				}),
 				ach(12861, {	-- Master of Duels

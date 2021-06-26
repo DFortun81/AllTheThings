@@ -56,9 +56,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { DUSKWOOD },
 									}),
 									crit(7,  {	-- Elwynn Forest
-										["coord"] = { 43.5, 62.7, 37 },
+										["coord"] = { 43.5, 62.7, ELWYNN_FOREST },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 37 },	-- Elwynn Forest
+										["maps"] = { ELWYNN_FOREST },
 									}),
 									crit(8,  {	-- Loch Modan
 										["coord"] = { 32.3, 41.0, LOCH_MODAN },
@@ -1032,9 +1032,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { DUSKWOOD },
 									}),
 									crit(7,  {	-- Elwynn Forest
-										["coord"] = { 43.2, 63.0, 37 },
+										["coord"] = { 43.2, 63.0, ELWYNN_FOREST },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 37 },	-- Elwynn Forest
+										["maps"] = { ELWYNN_FOREST },
 									}),
 									crit(8,  {	-- Loch Modan
 										["coord"] = { 32.3, 40.4, LOCH_MODAN },

@@ -14,7 +14,7 @@ _.Secrets =
 			HILLSBRAD_FOOTHILLS,
 			BLACKROCK_MOUNTAIN,
 			BURNING_STEPPES,
-			37,
+			ELWYNN_FOREST,
 			DEADWIND_PASS,
 			DUSKWOOD,
 			51,
@@ -51,7 +51,7 @@ _.Secrets =
 				["questID"] = 52831,
 				["sourceQuests"] = { 52830 },
 				["description"] = "Stormwind City\n\nThe Strange Seed reads: \n\n\"<Something is written here.>\n\nSadness, Keynoted\"",
-				["coord"] = { 17.5, 56.5, 37 },	-- Strange Seed
+				["coord"] = { 17.5, 56.5, ELWYNN_FOREST },	-- Strange Seed
 			}),
 			o(294098, { 	-- Tiny Frog
 				["model"] = 367326,

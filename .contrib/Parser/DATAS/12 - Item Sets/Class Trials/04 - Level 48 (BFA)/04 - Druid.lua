@@ -37,42 +37,70 @@ _.GearSets =
 						}),
 						i(153773),	-- Springrain Spear *LA0422Feral
 						i(153771),	-- Springrain Helm *LA0422Feral
-						un(NEVER_IMPLEMENTED, i(153787)),	-- Springrain Hood [NYI]
 						i(153749),	-- Springrain Choker *LA0422Feral
-						un(NEVER_IMPLEMENTED, i(153794)),	-- Springrain Choker [NYI]
-						un(NEVER_IMPLEMENTED, i(153778)),	-- Springrain Necklace [NYI]
 						i(153774),	-- Springrain Pauldrons *LA0422Feral
-						un(NEVER_IMPLEMENTED, i(153789)),	-- Springrain Shoulders [NYI]
-						un(NEVER_IMPLEMENTED, i(153793)),	-- Springrain Cloak of Durability [NYI]
 						i(153748),	-- Springrain Cloak of Rage *LA0422Feral
-						un(NEVER_IMPLEMENTED, i(153777)),	-- Springrain Cloak of Wisdom [NYI]
-						un(NEVER_IMPLEMENTED, i(153784)),	-- Springrain Jerkin [NYI]
 						i(153768),	-- Springrain Vest *LA0422Feral
-						un(NEVER_IMPLEMENTED, i(153791)),	-- Springrain Bindings [NYI]
 						i(153776),	-- Springrain Cuffs
-						un(NEVER_IMPLEMENTED, i(153786)),	-- Springrain Gloves [NYI]
 						i(153770),	-- Springrain Handguards *LA0422Feral
 						i(153775),	-- Springrain Cord *LA0422Feral
-						un(NEVER_IMPLEMENTED, i(153790)),	-- Springrain Waistband [NYI]
-						un(NEVER_IMPLEMENTED, i(153788)),	-- Springrain Britches [NYI]
 						i(153772),	-- Springrain Legguards *LA0422Feral
-						un(NEVER_IMPLEMENTED, i(153785)),	-- Springrain Boots [NYI]
 						i(153769),	-- Springrain Footpads *LA0422Feral
-						un(NEVER_IMPLEMENTED, i(153797)),	-- Springrain Band of Durability [NYI]
 						i(153752),	-- Springrain Band of Onslaught [NYI]
-						un(NEVER_IMPLEMENTED, i(153780)),	-- Springrain Band of Wisdom *LA0422Feral
-						un(NEVER_IMPLEMENTED, i(153795)),	-- Springrain Idol of Durability [NYI]
 						i(153750),	-- Springrain Idol of Rage *LA0422Feral
-						un(NEVER_IMPLEMENTED, i(153779)),	-- Springrain Idol of Wisdom [NYI]
-						un(NEVER_IMPLEMENTED, i(153796)),	-- Springrain Ring of Durability [NYI]
 						i(153751),	-- Springrain Ring of Onslaught *LA0422Feral
-						un(NEVER_IMPLEMENTED, i(153781)),	-- Springrain Ring of Wisdom [NYI]
-						un(NEVER_IMPLEMENTED, i(153798)),	-- Springrain Stone of Durability [NYI]
 						i(153753),	-- Springrain Stone of Rage *LA0422Feral
-						un(NEVER_IMPLEMENTED, i(153782)),	-- Springrain Stone of Wisdom [NYI]
 					}),
 				},
 			}),
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-9982, {	-- Legion
+		n(-5350, {	-- Class Trial Item Sets
+			n(-147, {	-- Springrain
+				["classes"] = { DRUID },
+				["groups"] = bubbleDown({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
+					-- added 7.2.5
+					i(150629),	-- Springrain Tunic
+					i(150630),	-- Springrain Treads
+					i(150631),	-- Springrain Grips
+					i(150632),	-- Springrain Headpiece
+					i(150633),	-- Springrain Leggings
+					i(150634),	-- Springrain Spaulders
+					i(150635),	-- Springrain Belt
+					i(150636),	-- Springrain Bracers
+					-- 7.3.5
+					i(153792),	-- Springrain Staff
+				}),
+			}),
+			n(-147, {	-- Springrain
+				["classes"] = { DRUID },
+				["groups"] = {
+					-- Level 110 unused Boost Gear (7.3.5)
+					i(153787),	-- Springrain Hood [NYI]
+					i(153794),	-- Springrain Choker [NYI]
+					i(153778),	-- Springrain Necklace [NYI]
+					i(153789),	-- Springrain Shoulders [NYI]
+					i(153793),	-- Springrain Cloak of Durability [NYI]
+					i(153777),	-- Springrain Cloak of Wisdom [NYI]
+					i(153784),	-- Springrain Jerkin [NYI]
+					i(153791),	-- Springrain Bindings [NYI]
+					i(153786),	-- Springrain Gloves [NYI]
+					i(153790),	-- Springrain Waistband [NYI]
+					i(153788),	-- Springrain Britches [NYI]
+					i(153785),	-- Springrain Boots [NYI]
+					i(153797),	-- Springrain Band of Durability [NYI]
+					i(153780),	-- Springrain Band of Wisdom *LA0422Feral
+					i(153795),	-- Springrain Idol of Durability [NYI]
+					i(153779),	-- Springrain Idol of Wisdom [NYI]
+					i(153796),	-- Springrain Ring of Durability [NYI]
+					i(153781),	-- Springrain Ring of Wisdom [NYI]
+					i(153798),	-- Springrain Stone of Durability [NYI]
+					i(153782),	-- Springrain Stone of Wisdom [NYI]
+				},
+			}),
+		}),
+	}),
+});
