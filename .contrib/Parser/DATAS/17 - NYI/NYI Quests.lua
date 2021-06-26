@@ -10,6 +10,8 @@ p = function(...) return un(NEVER_IMPLEMENTED, oldP(...)); end
 _.NeverImplemented =
 {
 	n(QUESTS, {
+		tier(9, {	-- Shadowlands -- These Quests might be ingame, very unlikely however.
+		}),
 		q(3064,  {	-- <NYI> <TXT> Pirate Hats
 			["u"] = NEVER_IMPLEMENTED,
 		}),
