@@ -34,8 +34,8 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		n(-5350, {	-- Class Trial Item Sets
 			n(-140, {	-- Communal
 				["classes"] = { PRIEST },
-				["groups"] = bubbleDown({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
-					-- added 7.2.5
+				["groups"] = {
+					-- added 7.2.5/No Info
 					i(150669),	-- Communal Boots
 					i(150670),	-- Communal Gloves
 					i(150671),	-- Communal Cowl
@@ -44,22 +44,16 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(150674),	-- Communal Mantle
 					i(150675),	-- Communal Sash
 					i(150676),	-- Communal Bindings
-					-- 7.3.5
+					-- adde 7.3.5/No Info
 					i(153944),	-- Communal Stave
 					i(157634),	-- Whispering Staff of the Void
 					i(157633),	-- Staff of Radiance
-				}),
-			}),
-			n(-140, {	-- Communal
-				["classes"] = { PRIEST },
-				["groups"] = {
-					-- Level 110 unused Boost Gear (7.3.5)
+					-- added 7.3.5/Confirmed
 					i(153919),	-- Communal Wand
 					i(153938),	-- Communal Cowl
 					i(153914),	-- Communal Medallion
 					i(153941),	-- Communal Mantle
-					i(153935),	-- Communal Cloak of Destruction
-					-- Level 48 unused Boost Gear
+					i(153935),	-- Communal Cloak of Destructio
 					i(153940),	-- Communal Robe	NYI
 					i(153943),	-- Communal Bindings	NYI
 					i(153937),	-- Communal Gloves	NYI

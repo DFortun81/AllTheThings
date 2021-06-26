@@ -33,8 +33,8 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		n(-5350, {	-- Class Trial Item Sets
 			n(-140, {	-- Communal
 				["classes"] = { PRIEST },
-				["groups"] = bubbleDown({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
-					-- added 9.0.1
+				["groups"] = {
+					-- added 9.0.1/No Info
 					i(177521),	-- Communal Sandals
 					i(177522),	-- Communal Handwraps
 					i(177524),	-- Communal Leggings
@@ -58,13 +58,9 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(177383),	-- Communal Medallion
 					i(177389),	-- Communal Necklace
 					i(177394),	-- Communal Staff
-					-- added 8.2.5
+					-- added 8.2.5/No Info
 					i(170866),	-- Communal Pants
-				}),
-			}),
-			n(-140, {	-- Communal
-				["classes"] = { PRIEST },
-				["groups"] = {
+					-- added 8.2.5/Confirmed
 					i(170865),	-- Communal Cowl
 					i(170703),	-- Communal Stave
 					i(170690),	-- Communal Medallion

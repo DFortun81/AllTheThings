@@ -33,8 +33,8 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		n(-5350, {	-- Class Trial Item Sets
 			n(-145, {	-- Mountainsage
 				["classes"] = { MAGE },
-				["groups"] = bubbleDown({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
-					-- added 9.0.1
+				["groups"] = {
+					-- added 9.0.1/No Info
 					i(177473),	-- Mountainsage Sandals
 					i(177474),	-- Mountainsage Handwraps
 					i(177476),	-- Mountainsage Leggings
@@ -47,11 +47,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(177339),	-- Mountainsage Cloak of Destruction
 					i(177334),	-- Mountainsage Medallion
 					i(177340),	-- Mountainsage Staff
-				}),
-			}),
-			n(-145, {	-- Mountainsage
-				["classes"] = { MAGE },
-				["groups"] = {
+					-- added 8.2.5/Confirmed
 					i(170640),	-- Mountainsage Medallion
 				},
 			}),

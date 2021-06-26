@@ -415,29 +415,29 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		n(-5350, {	-- Class Trial Item Sets
 			n(-140, {	-- Communal
 				["classes"] = { PRIEST },
-				["groups"] = bubbleDown({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
-					-- added 6.2.2
+				["groups"] = {
+					-- added 6.2.2/No Info
 					i(129404),	-- Communal Stave
-				}),
+				},
 			}),
 			n(-145, {	-- Mountainsage
 				["classes"] = { MAGE },
-				["groups"] = bubbleDown({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
-					-- added 6.2.2
+				["groups"] = {
+					-- added 6.2.2/No Info
 					i(129523),	-- Mountainsage Wand
-				}),
+				},
 			}),
 			n(-141, {	-- Felsoul
 				["classes"] = { WARLOCK },
-				["groups"] = bubbleDown({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
-					-- added 6.2.2
+				["groups"] = {
+					-- added 6.2.2/No Info
 					i(129423),	-- Felsoul Wand
-				}),
+				},
 			}),
 			n(-147, {	-- Springrain
 				["classes"] = { DRUID },
-				["groups"] = bubbleDown({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
-					-- added 6.2.2
+				["groups"] = {
+					-- added 6.2.2 /No Info
 					i(129594),	-- Springrain Jerkin
 					i(129595),	-- Springrain Boots
 					i(129596),	-- Springrain Gloves
@@ -459,19 +459,25 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(129606),	-- Springrain Ring of Durability
 					i(129607),	-- Springrain Band of Durability
 					i(129602),	-- Springrain Staff
-				}),
+				},
 			}),
 			n(-143, {	-- Lightdrinker
 				["classes"] = { ROGUE },
-				["groups"] = bubbleDown({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
-					-- added 6.0.2
-				}),
+				["groups"] = {
+					-- added 6.2.2 /No Info
+				},
 			}),
 			n(-144, {	-- Mistdancer
 				["classes"] = { MONK },
-				["groups"] = bubbleDown({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
-					-- added 6.0.2
-				}),
+				["groups"] = {
+					-- added 6.2.2 /No Info
+				},
+			}),
+			n(-150, {	-- Trailseeker
+				["classes"] = { HUNTER },
+				["groups"] = {
+					-- added 6.2.2 /No Info
+				},
 			}),
 		}),
 	}),

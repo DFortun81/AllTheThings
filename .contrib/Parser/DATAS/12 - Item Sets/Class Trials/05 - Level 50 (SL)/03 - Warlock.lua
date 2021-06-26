@@ -33,8 +33,8 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		n(-5350, {	-- Class Trial Item Sets
 			n(-141, {	-- Felsoul
 				["classes"] = { WARLOCK },
-				["groups"] = bubbleDown({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
-					-- added 9.0.1
+				["groups"] = {
+					-- added 9.0.1/No Info
 					i(177606),	-- Felsoul Sandals
 					i(177607),	-- Felsoul Handwraps
 					i(177609),	-- Felsoul Leggings
@@ -47,11 +47,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(177588),	-- Felsoul Cloak of Destruction
 					i(177583),	-- Felsoul Medallion
 					i(177589),	-- Felsoul Staff
-				}),
-			}),
-			n(-141, {	-- Felsoul
-				["classes"] = { WARLOCK },
-				["groups"] = {
+					-- added 8.2.5/No Info
 					i(170736),	-- Felsoul Medallion
 				},
 			}),

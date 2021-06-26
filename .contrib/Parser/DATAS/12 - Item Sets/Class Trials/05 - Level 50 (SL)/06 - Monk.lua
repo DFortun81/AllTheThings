@@ -60,8 +60,8 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		n(-5350, {	-- Class Trial Item Sets
 			n(-144, {	-- Mistdancer
 				["classes"] = { MONK },
-				["groups"] = bubbleDown({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
-					-- added 9.0.1
+				["groups"] = {
+					-- added 9.0.1/No Info
 					i(177482),	-- Mistdancer Footpads
 					i(177483),	-- Mistdancer Handguards
 					i(177485),	-- Mistdancer Legguards
@@ -92,13 +92,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(177356),	-- Mistdancer Choker
 					i(177345),	-- Mistdancer Spire
 					i(177353),	-- Mistdancer Staff
-					-- added 8.2.5
-				}),
-			}),
-			n(-144, {	-- Mistdancer
-				["classes"] = { MONK },
-				["groups"] = {
-					-- 8.2.5
+					-- added 8.2.5/Confirmed
 					i(170655),	-- Mistdancer Necklace
 					i(170647),	-- Mistdancer Amulet
 					i(170662),	-- Mistdancer Choker

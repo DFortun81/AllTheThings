@@ -875,8 +875,8 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		n(-5350, {	-- Class Trial Item Sets
 			n(-140, {	-- Communal
 				["classes"] = { PRIEST },
-				["groups"] = bubbleDown({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
-					-- added 6.0.2
+				["groups"] = {
+					-- added 6.0.2/No Info
 					i(119667),	-- Communal Sandals
 					i(119668),	-- Communal Handwraps
 					i(119669),	-- Communal Hood
@@ -897,36 +897,36 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(119663),	-- Communal Ring of Destruction
 					i(119673),	-- Communal Band of Wisdom
 					i(119674),	-- Communal Ring of Wisdom
-				}),
+				},
 			}),
 			n(-145, {	-- Mountainsage
 				["classes"] = { MAGE },
-				["groups"] = bubbleDown({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
-					-- added 6.0.2
+				["groups"] = {
+					-- added 6.0.2/No Info
 					i(119562),	-- Mountainsage Idol of Destruction
 					i(119565),	-- Mountainsage Stone of Destruction
 					i(119575),	-- Mountainsage Cloak of Destruction
 					i(119561),	-- Mountainsage Medallion
 					i(119563),	-- Mountainsage Band of Destruction
 					i(119564),	-- Mountainsage Ring of Destruction
-				}),
+				},
 			}),
 			n(-141, {	-- Felsoul
 				["classes"] = { WARLOCK },
-				["groups"] = bubbleDown({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
-					-- added 6.0.2
+				["groups"] = {
+					-- added 6.0.2/No Info
 					i(119756),	-- Felsoul Idol of Destruction
 					i(119759),	-- Felsoul Stone of Destruction
 					i(119769),	-- Felsoul Cloak of Destruction
 					i(119755),	-- Felsoul Medallion
 					i(119757),	-- Felsoul Band of Destruction
 					i(119758),	-- Felsoul Ring of Destruction
-				}),
+				},
 			}),
 			n(-147, {	-- Springrain
 				["classes"] = { DRUID },
-				["groups"] = bubbleDown({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
-					-- added 6.0.2
+				["groups"] = {
+					-- added 6.0.2/No Info
 					i(119520),	-- Springrain Vest
 					i(119521),	-- Springrain Footpads
 					i(119522),	-- Springrain Handguards
@@ -967,39 +967,34 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(119533),	-- Springrain Ring of Wisdom
 					i(119806),	-- Springrain Ring of Durability
 					i(119807),	-- Springrain Band of Durability
-					-- added 6.0.1
+					-- added 6.0.1/No Info
 					i(117537),	-- Springrain Idol of Durability
 					i(117540),	-- Springrain Stone of Durability
 					i(117535),	-- Springrain Cloak of Durability
-				}),
-			}),
-			n(-147, {	-- Springrain
-				["classes"] = { DRUID },
-				["groups"] = {
-					-- added 6.0.1
+					-- added 6.0.1/Confirmed
 					i(117536),	-- Springrain Choker
 				},
 			}),
 			n(-143, {	-- Lightdrinker
 				["classes"] = { ROGUE },
-				["groups"] = bubbleDown({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
-					-- added 6.0.2
+				["groups"] = {
+					-- added 6.0.2/No Info
 					i(119693),	-- Lightdrinker Idol of Rage
 					i(119696),	-- Lightdrinker Stone of Rage
 					i(119691),	-- Lightdrinker Cloak of Rage
 					i(119692),	-- Lightdrinker Choker
 					i(119694),	-- Lightdrinker Band of Onslaught
 					i(119695),	-- Lightdrinker Ring of Onslaught
-				}),
+				},
 			}),
 			n(-144, {	-- Mistdancer
 				["classes"] = { MONK },
-				["groups"] = bubbleDown({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
-					-- added 6.0.1
+				["groups"] = {
+					-- added 6.0.1/No Info
 					i(117130),	-- Mistdancer Defender Stone
 					i(117132),	-- Mistdancer Defender Idol
 					i(117136),	-- Mistdancer Helm <- Might be removed
-					-- added 6.0.2
+					-- added 6.0.2/No Info
 					i(119591),	-- Mistdancer Boots
 					i(119592),	-- Mistdancer Gloves
 					i(119593),	-- Mistdancer Hood
@@ -1025,7 +1020,12 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(119599),	-- Mistdancer Band of Wisdom
 					i(119608),	-- Mistdancer Band of Onslaught
 					i(119609),	-- Mistdancer Ring of Onslaught
-				}),
+				},
+			}),
+			n(-150, {	-- Trailseeker
+				["classes"] = { HUNTER },
+				["groups"] = {
+				},
 			}),
 		}),
 	}),

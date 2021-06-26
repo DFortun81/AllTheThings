@@ -61,8 +61,8 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		n(-5350, {	-- Class Trial Item Sets
 			n(-147, {	-- Springrain
 				["classes"] = { DRUID },
-				["groups"] = bubbleDown({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
-					-- added 7.2.5
+				["groups"] = {
+					-- added 7.2.5/No Info
 					i(150629),	-- Springrain Tunic
 					i(150630),	-- Springrain Treads
 					i(150631),	-- Springrain Grips
@@ -71,14 +71,9 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(150634),	-- Springrain Spaulders
 					i(150635),	-- Springrain Belt
 					i(150636),	-- Springrain Bracers
-					-- 7.3.5
+					-- added 7.3.5/No Info
 					i(153792),	-- Springrain Staff
-				}),
-			}),
-			n(-147, {	-- Springrain
-				["classes"] = { DRUID },
-				["groups"] = {
-					-- Level 110 unused Boost Gear (7.3.5)
+					-- added 7.3.5/Level 110 unused Boost Gear
 					i(153787),	-- Springrain Hood [NYI]
 					i(153794),	-- Springrain Choker [NYI]
 					i(153778),	-- Springrain Necklace [NYI]
