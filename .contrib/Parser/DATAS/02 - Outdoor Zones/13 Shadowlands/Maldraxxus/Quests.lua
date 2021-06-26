@@ -742,3 +742,15 @@ _.Zones =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(58625),	-- Connecting the Dots
+		q(57537),	-- Covering our Tracks
+		q(57513),	-- Enemy of My Enemy
+		q(57978),	-- Forward and Back
+		q(62394),	-- House in Decline
+		q(59903),	-- Split Blob Test
+		q(59882),	-- Sure Bet
+		q(59175),	-- The Eternal Revenge
+	}),
+});
