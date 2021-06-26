@@ -74,3 +74,23 @@ _.GearSets =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-9982, {	-- Legion
+		n(-5350, {	-- Class Trial Item Sets
+			n(-148, {	-- Streamtalker
+				["classes"] = { SHAMAN },
+				["groups"] = {
+					-- added 7.2.5/No Info
+					i(150685),	-- Streamtalker Tunic
+					i(150686),	-- Streamtalker Boots
+					i(150687),	-- Streamtalker Gloves
+					i(150688),	-- Streamtalker Coif
+					i(150689),	-- Streamtalker Legwraps
+					i(150690),	-- Streamtalker Pauldrons
+					i(150691),	-- Streamtalker Belt
+					i(150692),	-- Streamtalker Armbands
+				},
+			}),
+		}),
+	}),
+});

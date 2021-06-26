@@ -479,6 +479,12 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					-- added 6.2.2 /No Info
 				},
 			}),
+			n(-148, {	-- Streamtalker
+				["classes"] = { SHAMAN },
+				["groups"] = {
+					-- added 6.2.2 /No Info
+				},
+			}),
 		}),
 	}),
 });

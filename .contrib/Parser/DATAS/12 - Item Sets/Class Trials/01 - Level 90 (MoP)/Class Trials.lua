@@ -1025,6 +1025,23 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			n(-150, {	-- Trailseeker
 				["classes"] = { HUNTER },
 				["groups"] = {
+					-- added 6.0.2/No Info
+					i(119547),	-- Trailseeker Idol of Rage
+					i(119550),	-- Trailseeker Stone of Rage
+					i(119546),	-- Trailseeker Choker
+					i(119548),	-- Trailseeker Band of Onslaught
+					i(119549),	-- Trailseeker Ring of Onslaught
+				},
+			}),
+			n(-148, {	-- Streamtalker
+				["classes"] = { SHAMAN },
+				["groups"] = {
+					-- added 6.0.2/No Info
+					i(119547),	-- Trailseeker Idol of Rage
+					i(119550),	-- Trailseeker Stone of Rage
+					i(119546),	-- Trailseeker Choker
+					i(119548),	-- Trailseeker Band of Onslaught
+					i(119549),	-- Trailseeker Ring of Onslaught
 				},
 			}),
 		}),

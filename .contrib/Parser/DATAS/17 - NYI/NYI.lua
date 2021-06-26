@@ -607,14 +607,6 @@ _.NeverImplemented =
 				i(32135),	-- Chancellor's Chain Helm
 				i(32136),	-- Chancellor's Chain Leggings
 				i(32137),	-- Chancellor's Chain Spaulders
-				i(150642),	-- Trailseeker Spaulders
-				i(150637),	-- Trailseeker Vest
-				i(150638),	-- Trailseeker Greaves
-				i(150639),	-- Trailseeker Gauntlets
-				i(150640),	-- Trailseeker Helm
-				i(150641),	-- Trailseeker Legguards
-				i(150643),	-- Trailseeker Belt
-				i(150644),	-- Trailseeker Bracers
 			}),
 			i(163286),	-- Honorbound Vanguard's Footguards
 			i(163291),	-- Honorbound Vanguard's Strikers

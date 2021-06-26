@@ -33,3 +33,23 @@ _.GearSets =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-9982, {	-- Legion
+		n(-5350, {	-- Class Trial Item Sets
+			n(-150, {	-- Trailseeker
+				["classes"] = { HUNTER },
+				["groups"] = {
+					-- added 7.2.5/Confirmed
+					i(150642),	-- Trailseeker Spaulders
+					i(150637),	-- Trailseeker Vest
+					i(150638),	-- Trailseeker Greaves
+					i(150639),	-- Trailseeker Gauntlets
+					i(150640),	-- Trailseeker Helm
+					i(150641),	-- Trailseeker Legguards
+					i(150643),	-- Trailseeker Belt
+					i(150644),	-- Trailseeker Bracers
+				},
+			}),
+		}),
+	}),
+});
