@@ -890,6 +890,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 130377 },	-- Courier Gerald
 					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 69.2, 11.6, 1161 },
 				}),
 				q(52194, { 	-- What You May Regret
 					["provider"] = { "n", 122370 },	-- Cyrus Crestfall
