@@ -242,3 +242,23 @@ _.ExpansionFeatures =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(61326),	-- [[Deprecated]]
+		q(61327),	-- [[Deprecated]]
+		q(61329),	-- [[Deprecated]]
+		q(59608),	-- Don't Cross The Streams
+		q(60885),	-- Grove of Awekening
+		q(61056),	-- Niya of Ardenweald
+		q(61881),	-- Pauldrons
+		q(61324),	-- Replenish the Reservoir
+		q(61325),	-- Return Lost Souls
+		q(63024),	-- Return Lost Souls
+		q(63025),	-- Return Lost Souls
+		q(63026),	-- Return Lost Souls
+		q(63027),	-- Return Lost Souls
+		q(59606),	-- The Anima Expert
+		q(57896),	-- The Archon's Will
+		q(59318),	-- Work Not Wasted
+	}),
+});

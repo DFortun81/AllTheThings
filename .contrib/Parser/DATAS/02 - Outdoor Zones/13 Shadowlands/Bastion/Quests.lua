@@ -959,6 +959,12 @@ _.Zones =
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
+		q(57681),	-- [NYI] Temple of Courage
+		q(57684),	-- [NYI] Temple of Humility
+		q(57683),	-- [NYI] Temple of Loyalty
+		q(58954),	-- [PH] Catch!
+		q(58516),	-- [UNUSED]
+		q(58517),	-- [UNUSED]
 		q(61636),	-- PH - UNUSED
 		q(62304),	-- Round 1
 		q(62321),	-- Round 1
@@ -975,6 +981,8 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(62366),	-- Round 3
 		q(62374),	-- Round 3
 		q(62387),	-- Round 3
+		q(57685),	-- Temple of Purity
+		q(57682),	-- Temple of Wisdom
 		q(62895),	-- Track Selection
 		q(62896),	-- Track Selection
 	}),

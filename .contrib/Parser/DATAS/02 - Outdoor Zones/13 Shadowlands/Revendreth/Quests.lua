@@ -325,6 +325,14 @@ _.Zones =
 					["coord"] = { 69.5, 53.3, REVENDRETH },
 				}),
 				q(57471, {	-- It's a Dirty Job
+					["altQuests"] = { 62190 },		-- It's a Dirty Job
+					["sourceQuests"] = { 60509 },	-- Not My Job
+					["provider"] = { "n", 157846 },	-- Rendle
+					["coord"] = { 72.5, 73.2, REVENDRETH },
+				}),
+				q(62190, {	-- It's a Dirty Job
+					["description"] = "This quest is available for Venthyr players with Ember Court rank 2 while doing Dredger quest-line before doing Dirty Jobs quest-line in Revendreth",
+					["altQuests"] = { 57471 },		-- It's a Dirty Job
 					["sourceQuests"] = { 60509 },	-- Not My Job
 					["provider"] = { "n", 157846 },	-- Rendle
 					["coord"] = { 72.5, 73.2, REVENDRETH },
@@ -945,6 +953,26 @@ _.Zones =
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
+		q(58067),	-- [DNT] DO NOT USE - Template Quest
 		q(62987),	-- [DNT] Test Quest
+		q(58607),	-- [DNT] Tracking Quest
+		q(58855),	-- [DNT] Tracking Quest
+		q(58338),	-- [NYI] Sinstone Mining
+		q(60001),	-- [NYI] The Sword in the Stone
+		q(57099),	-- A Dreadful Roundup
+		q(58400),	-- Break the Barrier
+		q(57172),	-- Break Their Will
+		q(58402),	-- Destroy Siege Weapons
+		q(57185),	-- Dutybound
+		q(57100),	-- Feeding Time is Over
+		q(58405),	-- Find KT's Phylactery
+		q(58644),	-- Gather Our Forces
+		q(58396),	-- Interrogate Baddies
+		q(58404),	-- Kill Elites in Phase
+		q(57414),	-- Mount Up Test
+		q(58401),	-- Ooze Kills
+		q(58397),	-- Steal Supplies
+		q(58403),	-- Supercharge Kael'thas
+		q(57228),	-- The Assault on Dreadhollow
 	}),
 });

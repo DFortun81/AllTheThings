@@ -676,12 +676,37 @@ _.ExpansionFeatures =
 							}),
 						}),
 						n(-917, {	-- Tier 2: Streaming Threads
+							q(62563, {	-- Back Again!
+								["isDaily"] = true,
+								["provider"] = { "n", 160523 },	-- Cyrin Smirk
+								["coord"] = { 51.4, 16.2, MALDRAXXUS },
+							}),
+							q(62403, {	-- Boared to Death
+								["isDaily"] = true,
+								["provider"] = { "n", 167603 },	-- Fixer Bixie
+								["coord"] = { 49.0, 36.0, MALDRAXXUS },
+							}),
+							q(62390, {	-- Body Count
+								["isDaily"] = true,
+								["provider"] = { "n", 167603 },	-- Fixer Bixie
+								["coord"] = { 49.0, 36.0, MALDRAXXUS },
+							}),
 							q(62364, {	-- Dire Learning
 								["isDaily"] = true,
 								["provider"] = { "n", 167603 },	-- Fixer Bixie
 								["coord"] = { 49.0, 36.0, MALDRAXXUS },
 							}),
+							q(62363, {	-- Heavy Lifting
+								["isDaily"] = true,
+								["provider"] = { "n", 167603 },	-- Fixer Bixie
+								["coord"] = { 49.0, 36.0, MALDRAXXUS },
+							}),
 							q(58260, {	-- Queens and Future Kings
+								["isDaily"] = true,
+								["provider"] = { "n", 167603 },	-- Fixer Bixie
+								["coord"] = { 49.0, 36.0, MALDRAXXUS },
+							}),
+							q(62362, {	-- Volatile Reactions
 								["isDaily"] = true,
 								["provider"] = { "n", 167603 },	-- Fixer Bixie
 								["coord"] = { 49.0, 36.0, MALDRAXXUS },

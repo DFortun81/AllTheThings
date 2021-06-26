@@ -819,6 +819,25 @@ _.HiddenQuestTriggers = {
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(60286),	-- A Token of Our Admiration
+		q(60157),	-- Answers from the Ascended
+		q(59084),	-- Bybeen Dreadweaver
+		q(59080),	-- Demons!
+		q(62072),	-- Familiar Faces
+		q(59086),	-- Manor of Minions
+		q(59082),	-- Next Realm!
 		q(62289),	-- Observing Conflict
+		q(59079),	-- Portal to Paradise
+		q(59081),	-- Scum Scrape
+		q(59083),	-- Sticky Getaway
+		q(62165),	-- Tal-Inara's Call
+		q(62166),	-- Tal-Inara's Call
+		q(59078),	-- The Hook
+		q(59076),	-- The Minions of Mayhem
+		q(59077),	-- The Plan
+		q(59085),	-- Third Time is a Charm
+		q(60155),	-- To Open the Way
+		q(62077),	-- To the Chase
+		q(60138),	-- Unlocking the Gates
+		q(60559),	-- Unused
 	}),
 });

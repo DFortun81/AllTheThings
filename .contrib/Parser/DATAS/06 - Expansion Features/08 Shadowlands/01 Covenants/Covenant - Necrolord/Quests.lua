@@ -883,5 +883,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(62696),	-- A Call to Service
 		q(63061),	-- Helping Hand
+		q(61690),	-- The Honor of Service
 	}),
 });

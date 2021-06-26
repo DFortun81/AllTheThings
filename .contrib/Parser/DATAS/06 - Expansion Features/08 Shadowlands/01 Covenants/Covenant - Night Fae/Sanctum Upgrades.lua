@@ -261,6 +261,12 @@ _.ExpansionFeatures =
 									["coord"] = { 24.0, 53.3, 1662 },
 									["isWeekly"] = true,
 								}),
+								q(62445, {	-- A Spirit's Pride
+									["sourceQuests"] = { 62454 },	-- A Rare and Unusual Spirit (2)
+									["provider"] = { "n", 174329 },	-- Falir the Shifting
+									["coord"] = { 24.0, 53.3, 1662 },
+									["isWeekly"] = true,
+								}),
 								q(62442, {	-- Aid the Covenant
 									["sourceQuests"] = { 59999 },	-- Rebirth of the Grove
 									["provider"] = { "n", 174324 },	-- Conservator Aoni
@@ -666,3 +672,14 @@ _.ExpansionFeatures =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(59870),	-- [OLD NOT USED]
+		q(59912),	-- [OLD NOT USED]
+		q(59925),	-- [OLD NOT USED]
+		q(60643),	-- [OLD NOT USED]
+		q(60726),	-- [OLD NOT USED]
+		q(59840),	-- Divine Gratitude
+		q(59986),	-- Wide Worlds of Catalysts
+	}),
+});

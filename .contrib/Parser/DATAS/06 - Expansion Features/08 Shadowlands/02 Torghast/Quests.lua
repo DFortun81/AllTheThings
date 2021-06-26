@@ -726,3 +726,19 @@ _.HiddenQuestTriggers = {
 		q(61953),	-- triggered when completing #62231, "Velkein's Blade"
 		q(61954),	-- triggered when completing #62227, "Xertora's Construct"
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(55424),	-- Aspirant Elynna
+		q(60104),	-- Darkness' Domain
+		q(60101),	-- Deadsoul Interstitia
+		q(60099),	-- Fracture Chambers
+		q(60102),	-- Kakophonus
+		q(60105),	-- Sineater Belfry
+		q(60092),	-- Skoldus Hall
+		q(60103),	-- The Miscreation Wing
+		q(60100),	-- The Soulforges
+		q(60106),	-- The Upper Reaches
+		q(60107),	-- The Winding Halls
+		q(56070),	-- Vengeancefor the Venthyr
+	}),
+});
