@@ -1212,7 +1212,6 @@ _.NeverImplemented =
 			i(109459),	-- Unknown
 			i(109522),	-- Unknown
 			i(109526),	-- Unknown
-			i(117536),	-- Springrain Choker
 			i(42856),	-- Unknown (might be Frosthowl Amulet)
 			i(44389),	-- Unknown (might be Curative Necklace)
 			i(44390),	-- Unknown (might be Venomous Pendant)

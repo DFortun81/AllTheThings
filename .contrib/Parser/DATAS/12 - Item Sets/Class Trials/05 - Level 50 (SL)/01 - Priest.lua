@@ -58,6 +58,8 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(177383),	-- Communal Medallion
 					i(177389),	-- Communal Necklace
 					i(177394),	-- Communal Staff
+					-- added 8.2.5
+					i(170866),	-- Communal Pants
 				}),
 			}),
 			n(-140, {	-- Communal

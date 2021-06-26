@@ -924,6 +924,63 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(119758),	-- Felsoul Ring of Destruction
 				}),
 			}),
+			n(-147, {	-- Springrain
+				["classes"] = { DRUID },
+				["groups"] = bubbleDown({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
+					-- added 6.0.2
+					i(119520),	-- Springrain Vest
+					i(119521),	-- Springrain Footpads
+					i(119522),	-- Springrain Handguards
+					i(119523),	-- Springrain Helm
+					i(119524),	-- Springrain Legguards
+					i(119526),	-- Springrain Pauldrons
+					i(119527),	-- Springrain Cord
+					i(119528),	-- Springrain Cuffs
+					i(119536),	-- Springrain Jerkin
+					i(119537),	-- Springrain Boots
+					i(119538),	-- Springrain Gloves
+					i(119539),	-- Springrain Hood
+					i(119540),	-- Springrain Britches
+					i(119541),	-- Springrain Shoulders
+					i(119542),	-- Springrain Waistband
+					i(119543),	-- Springrain Bindings
+					i(119502),	-- Springrain Idol of Rage
+					i(119505),	-- Springrain Stone of Rage
+					i(119516),	-- Springrain Idol of Destruction
+					i(119519),	-- Springrain Stone of Destruction
+					i(119531),	-- Springrain Idol of Wisdom
+					i(119534),	-- Springrain Stone of Wisdom
+					i(119805),	-- Springrain Idol of Durability
+					i(119808),	-- Springrain Stone of Durability
+					i(119500),	-- Springrain Cloak of Rage
+					i(119529),	-- Springrain Cloak of Wisdom
+					i(119535),	-- Springrain Cloak of Destruction
+					i(119803),	-- Springrain Cloak of Durability
+					i(119501),	-- Springrain Choker
+					i(119515),	-- Springrain Medallion
+					i(119530),	-- Springrain Necklace
+					i(119804),	-- Springrain Choker
+					i(119503),	-- Springrain Ring of Onslaught
+					i(119504),	-- Springrain Band of Onslaught
+					i(119517),	-- Springrain Band of Destruction
+					i(119518),	-- Springrain Ring of Destruction
+					i(119532),	-- Springrain Band of Wisdom
+					i(119533),	-- Springrain Ring of Wisdom
+					i(119806),	-- Springrain Ring of Durability
+					i(119807),	-- Springrain Band of Durability
+					-- added 6.0.1
+					i(117537),	-- Springrain Idol of Durability
+					i(117540),	-- Springrain Stone of Durability
+					i(117535),	-- Springrain Cloak of Durability
+				}),
+			}),
+			n(-147, {	-- Springrain
+				["classes"] = { DRUID },
+				["groups"] = {
+					-- added 6.0.1
+					i(117536),	-- Springrain Choker
+				},
+			}),
 		}),
 	}),
 });
