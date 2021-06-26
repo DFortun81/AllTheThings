@@ -212,6 +212,16 @@ local function AfterCombatCallback(method, ...)
 		app:RegisterEvent("PLAYER_REGEN_ENABLED");
 	end
 end
+-- Triggers a timer callback method to run either when current combat ends, or after the provided delay; the method can only be set to run once until it has been run
+local function AfterCombatOrDelayedCallback(method, delaySec, ...)
+	if InCombatLockdown() then
+		-- print("chose AfterCombatCallback")
+		AfterCombatCallback(method, ...);
+	else
+		-- print("chose DelayedCallback",delaySec)
+		DelayedCallback(method, delaySec, ...);
+	end
+end
 local constructor = function(id, t, typeID)
 	if t then
 		if not rawget(t, "g") and rawget(t, 1) then
@@ -4840,14 +4850,14 @@ end
 local function RefreshSavesCallback()
 	-- This can be attempted a few times incase data is slow, but not too many times since it's possible to not be saved to any instance
 	app.refreshingSaves = app.refreshingSaves or 30;
-	-- Make sure there's info available to check save data
-	local saves = GetNumSavedInstances();
 	-- While the player is still logging in, wait.
 	if not app.GUID then
 		AfterCombatCallback(RefreshSavesCallback);
 		return;
 	end
 
+	-- Make sure there's info available to check save data
+	local saves = GetNumSavedInstances();
 	-- While the player is still waiting for information, wait.
 	if saves and saves < 1 and app.refreshingSaves > 0 then
 		app.refreshingSaves = app.refreshingSaves - 1;
@@ -12344,16 +12354,15 @@ local function NestSourceQuests(root, addedQuests, depth)
 	return root;
 end
 
--- OPTIMIZE THESE FOR THE LOVE OF GOD
 app.Windows = {};
-function app:UpdateWindows(force, got)
-	local anyUpdated = false;
-	for name, window in pairs(app.Windows) do
-		if window:Update(force, got) then
-			anyUpdated = true;
-		end
+app._UpdateWindows = function(force, got)
+	-- print("_UpdateWindows",force,got)
+	for _, window in pairs(app.Windows) do
+		window:Update(force, got);
 	end
-	return anyUpdated;
+end
+function app:UpdateWindows(force, got)
+	AfterCombatOrDelayedCallback(app._UpdateWindows, 0.1, force, got);
 end
 local CreateRow;
 function app:CreateMiniListForGroup(group)
@@ -13111,15 +13120,6 @@ local function StartMovingOrSizing(self, fromChild)
 			end);
 		elseif self:IsMovable() then
 			self:StartMoving();
-			-- never encountered this bug without this added logic...is there some specific way to trigger it?
-			-- Push(app, "StartMovingOrSizing (Moving)", function()
-			-- 	-- This fixes a bug where the window will get stuck on the mouse until you reload.
-			-- 	if IsSelfOrChild(self, GetMouseFocus()) then
-			-- 		return true;
-			-- 	else
-			-- 		StopMovingOrSizing(self);
-			-- 	end
-			-- end);
 		end
 	end
 end
@@ -14303,7 +14303,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 		container.rows = {};
 		scrollbar:SetValue(1);
 		container:Show();
-		window:Update(true);
+		window:Update();
 	end
 	return window;
 end
@@ -19754,7 +19754,6 @@ app.events.PLAYER_LEVEL_UP = function(newLevel)
 	-- print("PLAYER_LEVEL_UP")
 	app.RefreshQuestInfo();
 	app.Level = newLevel;
-	app:UpdateWindows();
 	app.Settings:Refresh();
 end
 app.events.BOSS_KILL = function(id, name, ...)
