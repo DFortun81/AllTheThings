@@ -271,7 +271,7 @@ _.WorldEvents =
 				["provider"] = { "n", 14828 },	-- Gelvas Grimegate
 				["coord"] = { 48.0, 64.8, 407 },
 				["g"] = {
-					i(22729),	-- Schematic: Steam Tonk Controller
+					i(19296),	-- Greater Darkmoon Prize
 				},
 			}),
 			q(9249, {	-- 40 Tickets - Schematic: Steam Tonk Controller
@@ -280,7 +280,7 @@ _.WorldEvents =
 				["provider"] = { "n", 14828 },	-- Gelvas Grimegate
 				["coord"] = { 48.0, 64.8, 407 },
 				["g"] = {
-					i(19296),	-- Greater Darkmoon Prize
+					i(22729),	-- Schematic: Steam Tonk Controller
 				},
 			}),
 			q(7934, {	-- 50 Tickets - Darkmoon Storage Box
