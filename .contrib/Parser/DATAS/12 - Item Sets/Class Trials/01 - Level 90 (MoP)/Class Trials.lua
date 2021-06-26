@@ -871,3 +871,35 @@ _.GearSets =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-9981, {	-- Draenor
+		n(-5350, {	-- Class Trial Item Sets
+			n(-140, {	-- Communal
+				["classes"] = { PRIEST },
+				["groups"] = bubbleDown({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
+					-- added 6.0.2
+					i(119667),	-- Communal Sandals
+					i(119668),	-- Communal Handwraps
+					i(119669),	-- Communal Hood
+					i(119670),	-- Communal Leggings
+					i(119675),	-- Communal Vestments
+					i(119677),	-- Communal Shoulderpads
+					i(119678),	-- Communal Cord
+					i(119679),	-- Communal Wristwraps
+					i(119661),	-- Communal Idol of Destruction
+					i(119664),	-- Communal Stone of Destruction
+					i(119672),	-- Communal Idol of Wisdom
+					i(119676),	-- Communal Stone of Wisdom
+					i(119666),	-- Communal Cloak of Wisdom
+					i(119681),	-- Communal Cloak of Destruction
+					i(119660),	-- Communal Medallion
+					i(119671),	-- Communal Necklace
+					i(119662),	-- Communal Band of Destruction
+					i(119663),	-- Communal Ring of Destruction
+					i(119673),	-- Communal Band of Wisdom
+					i(119674),	-- Communal Ring of Wisdom
+				}),
+			}),
+		}),
+	}),
+});

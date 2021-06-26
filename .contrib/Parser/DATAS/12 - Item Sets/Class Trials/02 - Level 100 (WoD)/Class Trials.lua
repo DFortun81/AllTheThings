@@ -411,3 +411,16 @@ _.GearSets =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-9981, {	-- Draenor
+		n(-5350, {	-- Class Trial Item Sets
+			n(-140, {	-- Communal
+				["classes"] = { PRIEST },
+				["groups"] = bubbleDown({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
+					-- added 6.2.2
+					i(129404),	-- Communal Stave
+				}),
+			}),
+		}),
+	}),
+});
