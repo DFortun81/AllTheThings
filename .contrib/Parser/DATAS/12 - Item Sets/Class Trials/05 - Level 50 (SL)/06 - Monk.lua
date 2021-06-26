@@ -21,9 +21,6 @@ _.GearSets =
 					}),
 					n(-9933, {	-- Mistweaver
 						i(170825),	-- Mistdancer Hood
-						i(170655, {	-- Mistdancer Necklace
-							["u"] = NEVER_IMPLEMENTED,
-						}),
 						i(170827),	-- Mistdancer Shoulders
 						i(170653),	-- Mistdancer Cloak of Wisdom
 						i(170830),	-- Mistdancer Jerkin
@@ -41,12 +38,6 @@ _.GearSets =
 						i(170660),	-- Mistdancer Sword
 					}),
 					i(170818),	-- Mistdancer Helm
-					i(170647, {	-- Mistdancer Amulet
-						["u"] = NEVER_IMPLEMENTED,
-					}),
-					i(170662, {	-- Mistdancer Choker
-						["u"] = NEVER_IMPLEMENTED,
-					}),
 					i(170820),	-- Mistdancer Pauldrons
 					i(170666),	-- Mistdancer Cloak of Rage
 					i(170815),	-- Mistdancer Vest
@@ -64,3 +55,55 @@ _.GearSets =
 		})),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10100, {	-- Shadowlands
+		n(-5350, {	-- Class Trial Item Sets
+			n(-144, {	-- Mistdancer
+				["classes"] = { MONK },
+				["groups"] = bubbleDown({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
+					-- added 9.0.1
+					i(177482),	-- Mistdancer Footpads
+					i(177483),	-- Mistdancer Handguards
+					i(177485),	-- Mistdancer Legguards
+					i(177487),	-- Mistdancer Cord
+					i(177488),	-- Mistdancer Cuffs
+					i(177489),	-- Mistdancer Boots
+					i(177490),	-- Mistdancer Gloves
+					i(177492),	-- Mistdancer Britches
+					i(177494),	-- Mistdancer Waistband
+					i(177495),	-- Mistdancer Bindings
+					i(177342),	-- Mistdancer Band of Stoicism
+					i(177343),	-- Mistdancer Ring of Stoicism
+					i(177350),	-- Mistdancer Ring of Wisdom
+					i(177351),	-- Mistdancer Band of Wisdom
+					i(177357),	-- Mistdancer Band of Onslaught
+					i(177358),	-- Mistdancer Ring of Onslaught
+					i(177344),	-- Mistdancer Defender Stone
+					i(177346),	-- Mistdancer Defender Idol
+					i(177348),	-- Mistdancer Idol of Wisdom
+					i(177352),	-- Mistdancer Stone of Wisdom
+					i(177355),	-- Mistdancer Idol of Rage
+					i(177359),	-- Mistdancer Stone of Rage
+					i(177354),	-- Mistdancer Sword
+					i(177347),	-- Mistdancer Cloak of Wisdom
+					i(177360),	-- Mistdancer Cloak of Rage
+					i(177341),	-- Mistdancer Amulet
+					i(177349),	-- Mistdancer Necklace
+					i(177356),	-- Mistdancer Choker
+					i(177345),	-- Mistdancer Spire
+					i(177353),	-- Mistdancer Staff
+					-- added 8.2.5
+				}),
+			}),
+			n(-144, {	-- Mistdancer
+				["classes"] = { MONK },
+				["groups"] = {
+					-- 8.2.5
+					i(170655),	-- Mistdancer Necklace
+					i(170647),	-- Mistdancer Amulet
+					i(170662),	-- Mistdancer Choker
+				},
+			}),
+		}),
+	}),
+});

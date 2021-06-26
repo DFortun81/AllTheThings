@@ -461,6 +461,18 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(129602),	-- Springrain Staff
 				}),
 			}),
+			n(-143, {	-- Lightdrinker
+				["classes"] = { ROGUE },
+				["groups"] = bubbleDown({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
+					-- added 6.0.2
+				}),
+			}),
+			n(-144, {	-- Mistdancer
+				["classes"] = { MONK },
+				["groups"] = bubbleDown({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
+					-- added 6.0.2
+				}),
+			}),
 		}),
 	}),
 });

@@ -631,7 +631,6 @@ _.GearSets =
 								i(117150),	-- Mistdancer Stone of Wisdom
 							}),
 							n(-9932, {	-- Windwalker
-								--	i(117136),	-- Mistdancer Helm
 								i(117157),	-- Mistdancer Choker
 								i(117161),	-- Mistdancer Cloak of Rage
 								i(117138),	-- Mistdancer Pauldrons [Hidden Shoulders]
@@ -980,6 +979,53 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					-- added 6.0.1
 					i(117536),	-- Springrain Choker
 				},
+			}),
+			n(-143, {	-- Lightdrinker
+				["classes"] = { ROGUE },
+				["groups"] = bubbleDown({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
+					-- added 6.0.2
+					i(119693),	-- Lightdrinker Idol of Rage
+					i(119696),	-- Lightdrinker Stone of Rage
+					i(119691),	-- Lightdrinker Cloak of Rage
+					i(119692),	-- Lightdrinker Choker
+					i(119694),	-- Lightdrinker Band of Onslaught
+					i(119695),	-- Lightdrinker Ring of Onslaught
+				}),
+			}),
+			n(-144, {	-- Mistdancer
+				["classes"] = { MONK },
+				["groups"] = bubbleDown({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
+					-- added 6.0.1
+					i(117130),	-- Mistdancer Defender Stone
+					i(117132),	-- Mistdancer Defender Idol
+					i(117136),	-- Mistdancer Helm <- Might be removed
+					-- added 6.0.2
+					i(119591),	-- Mistdancer Boots
+					i(119592),	-- Mistdancer Gloves
+					i(119593),	-- Mistdancer Hood
+					i(119596),	-- Mistdancer Britches
+					i(119601),	-- Mistdancer Shoulders
+					i(119603),	-- Mistdancer Waistband
+					i(119604),	-- Mistdancer Bindings
+					i(119612),	-- Mistdancer Jerkin
+					i(119580),	-- Mistdancer Defender Stone
+					i(119582),	-- Mistdancer Defender Idol
+					i(119595),	-- Mistdancer Idol of Wisdom
+					i(119600),	-- Mistdancer Stone of Wisdom
+					i(119606),	-- Mistdancer Idol of Rage
+					i(119610),	-- Mistdancer Stone of Rage
+					i(119594),	-- Mistdancer Cloak of Wisdom
+					i(119611),	-- Mistdancer Cloak of Rage
+					i(119577),	-- Mistdancer Amulet
+					i(119597),	-- Mistdancer Necklace
+					i(119607),	-- Mistdancer Choker
+					i(119578),	-- Mistdancer Band of Stoicism
+					i(119579),	-- Mistdancer Ring of Stoicism
+					i(119598),	-- Mistdancer Ring of Wisdom
+					i(119599),	-- Mistdancer Band of Wisdom
+					i(119608),	-- Mistdancer Band of Onslaught
+					i(119609),	-- Mistdancer Ring of Onslaught
+				}),
 			}),
 		}),
 	}),
