@@ -865,6 +865,7 @@ _.Zones =
 				}),
 				q(56031, {	-- The Wolf's Offensive
 					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
 				}),
 				q(51489, {	-- Time to Leave
 					["sourceQuests"] = { 51488 },	-- Archived Knowledge
