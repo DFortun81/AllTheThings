@@ -907,6 +907,11 @@ _.ExpansionFeatures =
 									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["provider"] = { "n", 165494 },	-- Hips
 									["coord"] = { 30.7, 41.7, REVENDRETH },
+									["cost"] = {
+										{ "i", 173202, 10 },	-- 10x Shrouded Cloth
+										{ "i", 172230, 5 },		-- 5x Soul Dust
+										{ "c", 1820, 20 }, 		-- 20x Infused Ruby
+									},
 								}),
 								q(62064, {	-- Restock: Broken Mirrors
 									["repeatable"] = true,
@@ -923,6 +928,10 @@ _.ExpansionFeatures =
 									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["provider"] = { "n", 165493 },	-- Boot the Beaut
 									["coord"] = { 29.8, 45.4, REVENDRETH },
+									["cost"] = {
+										{ "i", 171263, 10 },	-- 10x Potion of Soul Purity
+										{ "c", 1820, 20 },		-- 20x Infused Ruby
+									},
 								}),
 								q(62106, {	-- Restock: Enchantments
 									["repeatable"] = true,
@@ -936,15 +945,44 @@ _.ExpansionFeatures =
 								}),
 								q(62094, {	-- Restock: Exploratory Meals
 									["repeatable"] = true,
+									--["altQuests"] = { 63765 },	-- Unseen Hero of the Party
+									["provider"] = { "n", 165490 },	-- Picky Stefan
+									["coord"] = { 29.0, 44.3, REVENDRETH },
+									["cost"] = {
+										{ "i", 173060, 20 },	-- 20x Aerated Water
+										{ "i", 171274, 1 },		-- 1x Potion of Spectral Stamina
+										{ "c", 1820, 20 }, 		-- 20x Infused Ruby
+									},
+								}),
+								q(62078, {	-- Restock: Fashion Accessories
+									["repeatable"] = true,
+									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
+									["provider"] = { "n", 165494 },	-- Hips
+									["coord"] = { 30.7, 41.7, REVENDRETH },
+									["cost"] = {
+										{ "i", 173141, 1 },		-- 1x Masterful Laestrite Choker
+										{ "c", 1820, 20 }, 		-- 20x Infused Ruby
+									},
+								}),
+								q(62084, {	-- Restock: Fine Cutlery
+									["repeatable"] = true,
 									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["provider"] = { "n", 165490 },	-- Picky Stefan
 									["coord"] = { 29.0, 44.3, REVENDRETH },
+									["cost"] = {
+										{ "i", 171828, 10 },	-- 10x Laestrite Ore
+										{ "c", 1820, 20 },	-- 20x Infused Ruby
+									},
 								}),
 								q(61916, {	-- Restock: Fire Damage
 									["repeatable"] = true,
 									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["provider"] = { "n", 165493 },	-- Boot the Beaut
 									["coord"] = { 29.8, 45.4, REVENDRETH },
+									["cost"] = {
+										{ "i", 173202, 10 },	-- 20x Shrouded Cloth
+										{ "c", 1820, 20 }, 		-- 20x Infused Ruby
+									},
 								}),
 								q(62070, {	-- Restock: Fragrant Flowers
 									["repeatable"] = true,
@@ -956,12 +994,28 @@ _.ExpansionFeatures =
 										{ "c", 1820, 20 }, 		-- 20x Infused Ruby
 									},
 								}),
+								q(62076, {	-- Restock: Free Press
+									["repeatable"] = true,
+									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
+									["provider"] = { "n", 165494 },	-- Hips
+									["coord"] = { 30.7, 41.7, REVENDRETH },
+									["cost"] = {
+										{ "i", 173059, 1 },		-- 1x Luminous Ink
+										{ "i", 175886, 10 },	-- 10x Dark Parchment
+										{ "c", 1820, 20 }, 		-- 20x Infused Ruby
+									},
+								}),
 								q(62080, {	-- Restock: Herbal Tea
 								--	showed up after Week 1 Ember Court
 									["repeatable"] = true,
 									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["provider"] = { "n", 165490 },	-- Picky Stefan
 									["coord"] = { 29.0, 44.2, REVENDRETH },
+									["cost"] = {
+										{ "i", 168583, 1 },	-- 1x Widowbloom
+										{ "i", 168589, 1 },	-- 1x Marrowroot
+										{ "c", 1820, 20 },	-- 20x Infused Ruby
+									},
 								}),
 								q(62087, {	-- Restock: Imported Dinnerware
 								--	showed up after Week 3 Ember Court
@@ -975,6 +1029,17 @@ _.ExpansionFeatures =
 										{ "c", 1820, 20 },	-- 20x Infused Ruby
 									},
 								}),
+								q(62095, {	-- Restock: Medic's Tent
+									["repeatable"] = true,
+									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
+									["provider"] = { "n", 165496 },	-- Watchmaster Boromod
+									["coord"] = { 32.1, 41.6, REVENDRETH },
+									["cost"] = {
+										{ "i", 173192, 10 },	-- 10x Shrouded Cloth Bandage
+										{ "i", 171267, 1 },		-- 1x Spiritual Healing Potion
+										{ "c", 1820, 20 }, 		-- 20x Infused Ruby
+									},
+								}),
 								q(62083, {	-- Restock: Medical Supplies
 									["repeatable"] = true,
 									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
@@ -985,12 +1050,28 @@ _.ExpansionFeatures =
 										{ "c", 1820, 20 },		-- 20x Infused Ruby
 									},
 								}),
+								q(62065, {	-- Restock: My Favorite Table
+									["repeatable"] = true,
+									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
+									["provider"] = { "n", 165493 },	-- Boot the Beaut
+									["coord"] = { 29.8, 45.4, REVENDRETH },
+									["cost"] = {
+										{ "i", 177061, 10 },	-- 10x Twilight Bark
+										{ "c", 1820, 20 },		-- 20x Infused Ruby
+									},
+								}),
 								q(62082, {	-- Restock: Personal Stash
 								--	showed up after Week 4 Ember Court
 									["repeatable"] = true,
 									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["provider"] = { "n", 165490 },	-- Picky Stefan
 									["coord"] = { 29.0, 44.3, REVENDRETH },
+									["cost"] = {
+										{ "i", 172069, 1 },		-- 1x Banana Beef Pudding
+										{ "i", 172068, 1 },		-- 1x Pickled Meat Smoothie
+										{ "i", 172051, 1 },		-- 1x Steak a la Mode
+										{ "c", 1820, 20 }, 		-- 20x Infused Ruby
+									},
 								}),
 								q(62069, {	-- Restock: Sinstones
 								--	showed up after Week 2 Ember Court
@@ -1014,6 +1095,16 @@ _.ExpansionFeatures =
 										{ "c", 1820, 20 }, 		-- 20x Infused Ruby
 									},
 								}),
+								q(62067, {	-- Restock: Statues
+									["repeatable"] = true,
+									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
+									["provider"] = { "n", 165493 },	-- Boot the Beaut
+									["coord"] = { 29.8, 45.4, REVENDRETH },
+									["cost"] = {
+										{ "i", 171840, 60 },	-- 60x Porous Stone
+										{ "c", 1820, 20 },		-- 20x Infused Ruby
+									},
+								}),
 								q(62062, {	-- Restock: Stolen Rugs
 									["repeatable"] = true,
 									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
@@ -1030,7 +1121,10 @@ _.ExpansionFeatures =
 									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
 									["provider"] = { "n", 165496 },
 									["coord"] = { 32.1, 41.6, REVENDRETH },
-								--	TODO: add cost i guess, i wasn't even paying attention when i turned the quest in so i didn't see what it was
+									["cost"] = {
+										{ "i", 171841, 10 },	-- 10x Shaded Stone
+										{ "c", 1820, 20 }, 		-- 20x Infused Ruby
+									},
 								}),
 								q(62108, {	-- Restock: Strategic Codices
 									["repeatable"] = true,
@@ -1039,6 +1133,28 @@ _.ExpansionFeatures =
 									["coord"] = { 32.1, 41.6, REVENDRETH },
 									["cost"] = {
 										{ "i", 184090, 1 },		-- 1x Potion of the Psychopomp's Speed
+										{ "c", 1820, 20 }, 		-- 20x Infused Ruby
+									},
+								}),
+								q(62109, {	-- Restock: Surveillance Equipment
+									["repeatable"] = true,
+									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
+									["provider"] = { "n", 165496 },	-- Watchmaster Boromod
+									["coord"] = { 32.1, 41.6, REVENDRETH },
+									["cost"] = {
+										{ "i", 171266, 5 },		-- 5x Potion of the Hidden Spirit
+										{ "i", 171264, 5 },		-- 5x Potion of Shaded Sight
+										{ "c", 1820, 20 }, 		-- 20x Infused Ruby
+									},
+								}),
+								q(62105, {	-- Restock: Unconventional Weapons
+									["repeatable"] = true,
+									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
+									["provider"] = { "n", 165496 },	-- Watchmaster Boromod
+									["coord"] = { 32.1, 41.6, REVENDRETH },
+									["cost"] = {
+										{ "i", 172903, 1 },		-- 1x Nutcracker Grenade
+										{ "i", 172904, 1 },		-- 1x Shadow Land Mine
 										{ "c", 1820, 20 }, 		-- 20x Infused Ruby
 									},
 								}),

@@ -957,3 +957,25 @@ _.Zones =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(61636),	-- PH - UNUSED
+		q(62304),	-- Round 1
+		q(62321),	-- Round 1
+		q(62324),	-- Round 1
+		q(62367),	-- Round 1
+		q(62385),	-- Round 1
+		q(62305),	-- Round 2
+		q(62322),	-- Round 2
+		q(62325),	-- Round 2
+		q(62373),	-- Round 2
+		q(62386),	-- Round 2
+		q(62307),	-- Round 3
+		q(62323),	-- Round 3
+		q(62366),	-- Round 3
+		q(62374),	-- Round 3
+		q(62387),	-- Round 3
+		q(62895),	-- Track Selection
+		q(62896),	-- Track Selection
+	}),
+});

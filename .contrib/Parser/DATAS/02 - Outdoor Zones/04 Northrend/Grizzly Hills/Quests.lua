@@ -1396,3 +1396,8 @@ _.Zones =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(12233),	-- [Depricated]Sewing Your Seed
+	}),
+});

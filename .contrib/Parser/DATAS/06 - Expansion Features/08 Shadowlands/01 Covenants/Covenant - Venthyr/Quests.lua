@@ -761,3 +761,8 @@ _.ExpansionFeatures =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(62917),	-- Shared Souls
+	}),
+});

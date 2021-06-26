@@ -866,7 +866,6 @@ _.ExpansionFeatures =
 		}),
 	}),
 };
-
 _.HiddenQuestTriggers = {
 --	Campaign quests
 	q(62982),	-- triggers when searching the storeroom on "Gharmal's Tower" (#57530)
@@ -880,3 +879,9 @@ _.HiddenQuestTriggers = {
 --	Unity Transmog
 	q(63407),	-- Leather Chest
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(62696),	-- A Call to Service
+		q(63061),	-- Helping Hand
+	}),
+});

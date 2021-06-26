@@ -11,6 +11,14 @@ _.Zones =
 					q(62910, {	-- Against Overwhelming Odds
 						["provider"] = { "n", 168011 },	-- Zo'sorg
 						["isWeekly"] = true,
+						["races"] = ALLIANCE_ONLY,
+						["coord"] = { 34.7, 56.5, ORIBOS },
+						["_drop"] = { "g" },	-- drop anima trash
+					}),
+					q(62911, {	-- Against Overwhelming Odds
+						["provider"] = { "n", 168011 },	-- Zo'sorg
+						["isWeekly"] = true,
+						["races"] = HORDE_ONLY,
 						["coord"] = { 34.7, 56.5, ORIBOS },
 						["_drop"] = { "g" },	-- drop anima trash
 					}),
@@ -44,14 +52,6 @@ _.Zones =
 						["coord"] = { 34.7, 56.5, ORIBOS },
 						["_drop"] = { "g" },	-- drop anima trash
 					}),
-					--[[
-				--	TODO: these are the rest of the PVP quests from Unsorted.  if they show up, it'll be easier to move them/add information.  if they don't show up they can be moved to the NYI > NYI Quests file.
-					q(62289, {	-- Observing Conflict
-						["provider"] = { "n",  },	--
-						["isWeekly"] = true,
-						["coord"] = { , , ORIBOS },
-						["_drop"] = { "g" },	-- drop anima trash
-					}),--]]
 				}),
 				q(60151, {	-- A Doorway Through the Veil
 					["sourceQuests"] = { 60150 },	-- Tether to Home
@@ -211,6 +211,58 @@ _.Zones =
 					["sourceQuests"] = { 60129 },	-- Stranger in an Even Stranger Land
 					["provider"] = { "n", 167425 },	-- Overseer Kah-Delen
 					["coord"] = { 39.7, 66.1, ORIBOS },
+				}),
+				q(62043, {	-- Prove Your Worth
+					["description"] = "Available while switching back to Kyrian Covenant",
+					["provider"] = { "n", 171787 },	-- Polemarch Adrestes
+					["isWeekly"] = true,
+					["coord"] = { 36.2, 64.2, ORIBOS },
+				}),
+				q(62061, {	-- Prove Your Worth
+					["description"] = "Available while switching back to Venthyr Covenant",
+					["provider"] = { "n", 171589 },	-- General Draven
+					["isWeekly"] = true,
+					["coord"] = { 44.9, 68.9, ORIBOS },
+				}),
+				q(62060, {	-- Prove Your Worth
+					["description"] = "Available while switching back to Night Fae Covenant",
+					["provider"] = { "n", 171795 },	-- Lady Moonberry
+					["isWeekly"] = true,
+					["coord"] = { 39.8, 60.9, ORIBOS },
+				}),
+				q(62059, {	-- Prove Your Worth
+					["description"] = "Available while switching back to Necrolords Covenant",
+					["provider"] = { "n", 171821 },	-- Secutor Mevix
+					["isWeekly"] = true,
+					["coord"] = { 43.0, 74.3, ORIBOS },
+				}),
+				q(62368, {	-- Rebuild Our Trust
+					["sourceQuests"] = { 62043 },	-- Prove Your Worth
+					["description"] = "Available while switching back to Kyrian Covenant",
+					["provider"] = { "n", 171787 },	-- Polemarch Adrestes
+					["isWeekly"] = true,
+					["coord"] = { 36.2, 64.2, ORIBOS },
+				}),
+				q(62389, {	-- Rebuild Our Trust
+					["sourceQuests"] = { 62061 },	-- Prove Your Worth
+					["description"] = "Available while switching back to Venthyr Covenant",
+					["provider"] = { "n", 171589 },	-- General Draven
+					["isWeekly"] = true,
+					["coord"] = { 44.9, 68.9, ORIBOS },
+				}),
+				q(62392, {	-- Rebuild Our Trust
+					["sourceQuests"] = { 62060 },	-- Prove Your Worth
+					["description"] = "Available while switching back to Night Fae Covenant",
+					["provider"] = { "n", 171795 },	-- Lady Moonberry
+					["isWeekly"] = true,
+					["coord"] = { 39.8, 60.9, ORIBOS },
+				}),
+				q(62393, {	-- Rebuild Our Trust
+					["sourceQuests"] = { 62059 },	-- Prove Your Worth
+					["description"] = "Available while switching back to Necrolords Covenant",
+					["provider"] = { "n", 171821 },	-- Secutor Mevix
+					["isWeekly"] = true,
+					["coord"] = { 43.0, 74.3, ORIBOS },
 				}),
 				q(62935, {	-- Remnants of Hope
 					["sourceQuests"] = { 62932 },	-- Explore Torghast
@@ -756,13 +808,6 @@ _.Zones =
 				}),
 				-- Revendreth
 
-
-				--[[ quest was in beta but still has not been seen in game
-				q(60286, {	-- A Token of Our Admiration
-					["provider"] = { "n", 168432 },	-- Ve'rayn
-					["coord"] = { 33.2, 48.9, ORIBOS },
-				}),
-				--]]
 			}),
 		}),
 	}),
@@ -771,3 +816,9 @@ _.Zones =
 _.HiddenQuestTriggers = {
 	q(63416),	-- triggers when accepting the first of your 'Zone Meta Quests' on a Skip Character
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(60286),	-- A Token of Our Admiration
+		q(62289),	-- Observing Conflict
+	}),
+});

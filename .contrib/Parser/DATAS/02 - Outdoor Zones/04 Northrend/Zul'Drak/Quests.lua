@@ -805,6 +805,13 @@ _.Zones =
 					["provider"] = { "n", 28039 },	-- Commander Kunz
 					["sourceQuest"] = 12596,	-- Pa'Troll
 				}),
+				q(12563, {	-- Troll Patrol
+					-- confirmed available 26.June.2021 by Darkal
+					["coord"] = { 40.2, 66.6, 121 },
+					["isDaily"] = true,
+					["provider"] = { "n", 28039 },	-- Commander Kunz
+					["sourceQuest"] = 12596,	-- Pa'Troll
+				}),
 				q(12587, {	-- Troll Patrol
 					-- almost certainly the removed version
 					["u"] = REMOVED_FROM_GAME,

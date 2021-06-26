@@ -551,12 +551,27 @@ _.Zones =
 					["coord"] = { 75, 37, SHATTRATH_CITY },
 					["isDaily"] = true,
 				}),
+				q(11384, {	-- WANTED: A Warp Splinter Clipping
+					["provider"] = { "n", 24369 },	-- Wind Trader Zhareem
+					["coord"] = { 75, 37, SHATTRATH_CITY },
+					["isDaily"] = true,
+				}),
+				q(11382, {	-- WANTED: Aeonus's Hourglass
+					["provider"] = { "n", 24369 },	-- Wind Trader Zhareem
+					["coord"] = { 75, 37, SHATTRATH_CITY },
+					["isDaily"] = true,
+				}),
 				q(11389, {	-- Wanted: Arcatraz Sentinels
 					["provider"] = { "n", 24370 },	-- Nether-Stalker Mah'duun
 					["isDaily"] = true,
 					["g"] = {
 						i(29460),	-- Ethereum Prison Key
 					},
+				}),
+				q(11363, {	-- WANTED: Bladefist's Seal
+					["provider"] = { "n", 24369 },	-- Wind Trader Zhareem
+					["coord"] = { 75, 37, SHATTRATH_CITY },
+					["isDaily"] = true,
 				}),
 				q(11371, {	-- Wanted: Coilfang Myrmidons
 					["provider"] = { "n", 24370 },	-- Nether-Stalker Mah'duun
@@ -565,12 +580,22 @@ _.Zones =
 						i(29460),	-- Ethereum Prison Key
 					},
 				}),
+				q(11362, {	-- WANTED: Keli'dan's Feathered Stave
+					["provider"] = { "n", 24369 },	-- Wind Trader Zhareem
+					["coord"] = { 75, 37, SHATTRATH_CITY },
+					["isDaily"] = true,
+				}),
 				q(11376, {	-- Wanted: Malicious Instructors
 					["provider"] = { "n", 24370 },	-- Nether-Stalker Mah'duun
 					["isDaily"] = true,
 					["g"] = {
 						i(29460),	-- Ethereum Prison Key
 					},
+				}),
+				q(11375, {	-- WANTED: Murmur's Whisper
+					["provider"] = { "n", 24369 },	-- Wind Trader Zhareem
+					["coord"] = { 75, 37, SHATTRATH_CITY },
+					["isDaily"] = true,
 				}),
 				q(11354, {	-- WANTED: Nazan's Riding Crop
 					["provider"] = { "n", 24369 },	-- Wind Trader Zhareem
@@ -581,12 +606,22 @@ _.Zones =
 						{ "i", 33833, 1 },	-- Nazan's Riding Crop
 					},
 				}),
+				q(11386, {	-- WANTED: Pathaleon's Projector
+					["provider"] = { "n", 24369 },	-- Wind Trader Zhareem
+					["coord"] = { 75, 37, SHATTRATH_CITY },
+					["isDaily"] = true,
+				}),
 				q(11383, {	-- Wanted: Rift Lords
 					["provider"] = { "n", 24370 },	-- Nether-Stalker Mah'duun
 					["isDaily"] = true,
 					["g"] = {
 						i(29460),	-- Ethereum Prison Key
 					},
+				}),
+				q(11373, {	-- WANTED: Shaffar's Wondrous Pendant
+					["provider"] = { "n", 24369 },	-- Wind Trader Zhareem
+					["coord"] = { 75, 37, SHATTRATH_CITY },
+					["isDaily"] = true,
 				}),
 				q(11364, {	-- Wanted: Shattered Hand Centurions
 					["provider"] = { "n", 24370 },	-- Nether-Stalker Mah'duun
@@ -625,6 +660,36 @@ _.Zones =
 					["coord"] = { 75, 37, SHATTRATH_CITY },
 					["isDaily"] = true,
 				}),
+				q(11374, {	-- WANTED: The Exarch's Soul Gem
+					["provider"] = { "n", 24369 },	-- Wind Trader Zhareem
+					["coord"] = { 75, 37, SHATTRATH_CITY },
+					["isDaily"] = true,
+				}),
+				q(11372, {	-- WANTED: The Headfeathers of Ikiss
+					["provider"] = { "n", 24369 },	-- Wind Trader Zhareem
+					["coord"] = { 75, 37, SHATTRATH_CITY },
+					["isDaily"] = true,
+				}),
+				q(11368, {	-- WANTED: The Heart of Quagmirran
+					["provider"] = { "n", 24369 },	-- Wind Trader Zhareem
+					["coord"] = { 75, 37, SHATTRATH_CITY },
+					["isDaily"] = true,
+				}),
+				q(11388, {	-- WANTED: The Scroll of Skyriss
+					["provider"] = { "n", 24369 },	-- Wind Trader Zhareem
+					["coord"] = { 75, 37, SHATTRATH_CITY },
+					["isDaily"] = true,
+				}),
+				q(11499, {	-- WANTED: The Signet Ring of Prince Kael'thas
+					["provider"] = { "n", 24369 },	-- Wind Trader Zhareem
+					["coord"] = { 75, 37, SHATTRATH_CITY },
+					["isDaily"] = true,
+				}),
+				q(11370, {	-- WANTED: The Warlord's Treatise
+					["provider"] = { "n", 24369 },	-- Wind Trader Zhareem
+					["coord"] = { 75, 37, SHATTRATH_CITY },
+					["isDaily"] = true,
+				}),
 				q(10231, {	-- What Book? I Don't See Any Book.
 					["coord"] = { 59.3, 35.6, SHATTRATH_CITY },
 					["provider"] = { "n", 19715 },	-- Ezekiel
@@ -640,3 +705,9 @@ _.Zones =
 		}),
 	})),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(12479),	-- Wrath of the Lich King: Onwards to Northrend!
+		q(12480),	-- Wrath of the Lich King: Onwards to Northrend!
+	}),
+});

@@ -271,6 +271,15 @@ _.WorldEvents =
 				["provider"] = { "n", 14828 },	-- Gelvas Grimegate
 				["coord"] = { 48.0, 64.8, 407 },
 				["g"] = {
+					i(22729),	-- Schematic: Steam Tonk Controller
+				},
+			}),
+			q(9249, {	-- 40 Tickets - Schematic: Steam Tonk Controller
+				["u"] = REMOVED_FROM_GAME,
+				["repeatable"] = true,
+				["provider"] = { "n", 14828 },	-- Gelvas Grimegate
+				["coord"] = { 48.0, 64.8, 407 },
+				["g"] = {
 					i(19296),	-- Greater Darkmoon Prize
 				},
 			}),
@@ -558,6 +567,15 @@ _.WorldEvents =
 					}),
 				},
 			}),
+			q(8222, {	-- Glowing Scorpid Blood
+				["u"] = REMOVED_FROM_GAME,
+				["repeatable"] = true,
+				["provider"] = { "n", 14829 },	-- Yebb Neblegear
+				["coord"] = { 51.6, 81.8, 407 },
+				["g"] = {
+					i(19182),	-- Tattered Darkmoon Faire Prize Ticket
+				},
+			}),	
 			q(7896, {	-- Green Fireworks
 				["requireSkill"] = ENGINEERING,
 				["u"] = REMOVED_FROM_GAME,

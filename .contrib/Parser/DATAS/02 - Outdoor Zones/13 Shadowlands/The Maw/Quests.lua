@@ -580,66 +580,6 @@ _.Zones =
 					["coord"] = { 29.6, 43.6, 1648 },
 					["maps"] = { 1648 },	-- pre-SL scenario
 				}),
-
-
-
-
-
-
-
-
-
-
-
-				-- Do not think these made it into the release version of the game
-				-- q(60232, {	-- Souls of the Damned (Bastion)
-					-- ["provider"] = { "n", 160212 },	-- Soulguide Daelia
-					-- ["coord"] = { 33.9, 43.5, BASTION },
-					-- ["sourceQuests"] = { 57905 },	-- A Unique Opportunity
-				-- }),
-				-- q(60130, {	-- Souls of the Damned (Maldraxxus)
-					-- ["provider"] = { "n", 167748 },	-- Osbourne Black
-					-- --["coord"] = { 33.9, 43.5, MALDRAXXUS },
-					-- ["sourceQuests"] = { 61397 },	-- Opportunity Strikes
-				-- }),
-				-- q(60234, {	-- Souls of the Damned (Revendreth)
-					-- ["provider"] = { "n", 164738 },	-- Tenaval
-					-- ["coord"] = { 46.6, 28.6, REVENDRETH },
-					-- ["sourceQuests"] = { 59320 },	-- Souls to Save
-				-- }),
-				-- q(61508, {	-- Soul Salvation (Bastion)
-					-- --["provider"] = { "n", 158553 },	-- Flutterby
-					-- --["coord"] = { 33.9, 43.5, BASTION },
-					-- ["sourceQuests"] = { 60232 },	-- Souls of the Damned (Bastion)
-				-- }),
-				-- q(61513, {	-- Soul Salvation (Maldraxxus)
-					-- --["provider"] = { "n", 158553 },	-- Flutterby
-					-- --["coord"] = { 33.9, 43.5, MALDRAXXUS },
-					-- ["sourceQuests"] = { 60130 },	-- Souls of the Damned (Maldraxxus)
-				-- }),
-				-- q(61515, {	-- Soul Salvation (Revendreth)
-					-- ["provider"] = { "n", 158553 },	-- Tenaval
-					-- ["coord"] = { 33.9, 43.5, REVENDRETH },
-					-- ["sourceQuests"] = { 60234 },	-- Souls of the Damned (Revendreth)
-				-- }),
-				-- q(61496, {	-- A Familiar Energy
-					-- ["provider"] = { "n", 172543 },	-- Rescued Soul
-					-- ["coords"] = {
-						-- { 33.8, 42.5, ARDENWEALD },
-						-- --{ 33.8, 42.5, BASTION },
-						-- --{ 33.8, 42.5, MALDRAXXUS },
-						-- --{ 33.8, 42.5, REVENDRETH },
-					-- },
-					-- ["sourceQuests"] = {
-						-- 61508,	-- Soul Salvation (Ardenweald)REVENDRETH
-						-- 61508,	-- Soul Salvation (Bastion)
-						-- 61513,	-- Soul Salvation (Maldraxxus)
-						-- 61515,	-- Soul Salvation (Revendreth)
-					-- },
-				-- }),
-				-- q(61391, {	-- The Eye of the Jailer
-					-- ["sourceQuests"] = { 62882 },	-- Setting the Ground Rules
-				-- }),
 				q(62838, {	-- Soulful Recovery
 					["sourceQuests"] = { 60289 },	-- Rule 3: Trust is Earned
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
@@ -674,3 +614,37 @@ _.Zones =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(61496),	-- A Familiar Energy
+		q(62855),	-- Edict of the Eternal Ones
+		q(62074),	-- Professions - Reuse
+		q(62086),	-- Professions - Reuse
+		q(62088),	-- Professions - Reuse
+		q(62089),	-- Professions - Reuse
+		q(62090),	-- Professions - Reuse
+		q(62091),	-- Professions - Reuse
+		q(62092),	-- Professions - Reuse
+		q(62093),	-- Professions - Reuse
+		q(62096),	-- Professions - Reuse
+		q(62097),	-- Professions - Reuse
+		q(62098),	-- Professions - Reuse
+		q(62099),	-- Professions - Reuse
+		q(62100),	-- Professions - Reuse
+		q(62101),	-- Professions - Reuse
+		q(62102),	-- Professions - Reuse
+		q(62103),	-- Professions - Reuse
+		q(61314),	-- REUSE ME - SCS
+		q(61495),	-- Soul Salvation
+		q(61508),	-- Soul Salvation
+		q(61513),	-- Soul Salvation
+		q(61515),	-- Soul Salvation
+		q(60130),	-- Souls of the Damned
+		q(60232),	-- Souls of the Damned
+		q(60233),	-- Souls of the Damned
+		q(60234),	-- Souls of the Damned
+		q(61736),	-- Stolen Away
+		q(61737),	-- Stolen Away
+		q(61391),	-- The Eye of the Jailer
+	}),
+});
