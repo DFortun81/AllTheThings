@@ -130,16 +130,7 @@ _.NeverImplemented =
 	n(-163, {	-- Armor
 		n(-43, {	-- Cloth
 			cl(MAGE, {
-				-- Possible Unused Level 120/Lv 120 Classtrial
-				i(150651),	-- Mountainsage Cord
 				i(77780),	-- Replica Lieutenant Commander's Silk Mantle
-				i(150646),	-- Mountainsage Handwraps
-				i(150647),	-- Mountainsage Hood
-				i(150648),	-- Mountainsage Leggings
-				i(150649),	-- Mountainsage Robe
-				i(150645),	-- Mountainsage Sandals
-				i(150650),	-- Mountainsage Shoulderpads
-				i(150652),	-- Mountainsage Wristwraps
 			}),
 			cl(PRIEST, {
 				-- ?

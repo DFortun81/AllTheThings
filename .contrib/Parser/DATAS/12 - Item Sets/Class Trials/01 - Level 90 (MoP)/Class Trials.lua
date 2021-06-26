@@ -900,6 +900,18 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(119674),	-- Communal Ring of Wisdom
 				}),
 			}),
+			n(-145, {	-- Mountainsage
+				["classes"] = { MAGE },
+				["groups"] = bubbleDown({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
+					-- added 6.0.2
+					i(119562),	-- Mountainsage Idol of Destruction
+					i(119565),	-- Mountainsage Stone of Destruction
+					i(119575),	-- Mountainsage Cloak of Destruction
+					i(119561),	-- Mountainsage Medallion
+					i(119563),	-- Mountainsage Band of Destruction
+					i(119564),	-- Mountainsage Ring of Destruction
+				}),
+			}),
 		}),
 	}),
 });
