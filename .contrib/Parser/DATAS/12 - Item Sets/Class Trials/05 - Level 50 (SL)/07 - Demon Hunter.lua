@@ -11,7 +11,6 @@ _.GearSets =
 				["groups"] = {
 					i(170941),	-- Illidari Warglaives
 					i(170929),	-- Illidari Blindfold
-					un(NEVER_IMPLEMENTED, i(170939)),	-- Illidari Chain
 					i(170928),	-- Illidari Shoulders
 					i(170940),	-- Illidari Drape
 					i(170931),	-- Illidari Robe
@@ -29,3 +28,32 @@ _.GearSets =
 		})),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10100, {	-- Shadowlands
+		n(-5350, {	-- Class Trial Item Sets
+			n(-142, {	-- Heart-Lesion
+				["classes"] = { DEATHKNIGHT },
+				["groups"] = {
+					-- added 9.0.1/No Info
+					i(177568),	-- Illidari Leggings
+					i(177570),	-- Illidari Gloves
+					i(177572),	-- Illidari Bracers
+					i(177573),	-- Illidari Boots
+					i(177574),	-- Illidari Belt
+					i(177581),	-- Illidari Warglaive
+					i(177577),	-- Illidari Band
+					i(177578),	-- Illidari Ring
+					i(177580),	-- Illidari Drape
+					i(177579),	-- Illidari Chain
+					i(180324),	-- Iremore Necklace
+					-- added 8.2.5/No Info
+					i(170927),	-- Illidari Shoulders
+					i(170937),	-- Illidari Band
+					i(170938),	-- Illidari Ring
+					-- added 8.2.5/Confirmed
+					i(170939),	-- Illidari Chain
+				},
+			}),
+		}),
+	}),
+});

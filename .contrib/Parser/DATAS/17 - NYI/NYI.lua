@@ -3497,7 +3497,6 @@ _.NeverImplemented =
 			i(151138), 	-- Warglaive of Azzinoth [This version not implemented; was testing for transmog]
 			i(129737), 	-- Verus
 			i(165682),	-- Unknown
-			i(164760),	-- Illidari Warglaives (Lv100 boosted gear)
 		}),
 		--
 		i(159538),	-- Coldscale Cudgel
@@ -3609,7 +3608,6 @@ _.NeverImplemented =
 		i(5255),	-- Quilboar Tomahawk
 		i(17142),	-- Shard of the Defiler
 		i(2664),	-- Spinner Fang
-		i(150715),	-- Illidari Warglaive
 		i(3738),	-- Brewing Rod
 		i(128824), 	-- Tome of the Silver Hand
 	}),

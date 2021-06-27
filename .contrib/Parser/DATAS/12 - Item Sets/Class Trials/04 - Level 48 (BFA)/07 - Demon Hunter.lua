@@ -28,3 +28,49 @@ _.GearSets =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-9982, {	-- Legion
+		n(-5350, {	-- Class Trial Item Sets
+			n(-224, {	-- Illidari
+				["classes"]  = { DEMONHUNTER },
+				["groups"] = {
+					-- added 7.2.5/Confirmed
+					i(150715),	-- Illidari Warglaive
+					-- added 7.2.5/No Info
+					i(150716),	-- Illidari Blindfold
+					i(150717),	-- Illidari Leggings
+					i(150718),	-- Illidari Bracers
+					i(150719),	-- Illidari Belt
+					i(150720),	-- Illidari Robe
+					i(150721),	-- Illidari Gloves
+					i(150722),	-- Illidari Shoulders
+					i(150723),	-- Illidari Boots
+					i(150724),	-- Illidari Shoulders
+					i(150725),	-- Illidari Leggings
+					i(150726),	-- Illidari Blindfold
+					i(150727),	-- Illidari Gloves
+					i(150728),	-- Illidari Robe
+					i(150729),	-- Illidari Bracers
+					i(150730),	-- Illidari Boots
+					i(150731),	-- Illidari Belt
+					-- added 8.0.1/Confirmed
+					i(164760),	-- Illidari Warglaives (Lv100 boosted gear)
+					-- added 8.0.1/No Info
+					i(164746),	-- Illidari Shoulders
+					i(164747),	-- Illidari Leggings
+					i(164748),	-- Illidari Blindfold
+					i(164749),	-- Illidari Gloves
+					i(164750),	-- Illidari Robe
+					i(164751),	-- Illidari Bracers
+					i(164752),	-- Illidari Boots
+					i(164753),	-- Illidari Belt
+					i(164759),	-- Illidari Drape
+					i(164758),	-- Illidari Chain
+					i(164756),	-- Illidari Band
+					i(164757),	-- Illidari Ring
+					i(160513),	-- Illidari Warglaive
+				},
+			}),
+		}),
+	}),
+});
