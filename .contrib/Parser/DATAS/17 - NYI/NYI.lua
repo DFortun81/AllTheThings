@@ -833,24 +833,8 @@ _.NeverImplemented =
 			cl(DEATHKNIGHT, {
 				i(157677),	-- Hearthbonded Helm (Hunter Future Boost Gear)
 				i(157679),	-- Hearthbonded Spaulders (Hunter Future Boost Gear)
-				i(119485),	-- Heart-Lesion Chestguard
-				i(119487),	-- Heart-Lesion Greaves
-				i(119488),	-- Heart-Lesion Handguards
-				i(119489),	-- Heart-Lesion Faceguard
-				i(119490),	-- Heart-Lesion Legguards
-				i(119496),	-- Heart-Lesion Shoulderguards
-				i(119497),	-- Heart-Lesion Waistband
-				i(119498),	-- Heart-Lesion Armguards
 				i(157618),	-- Unholy Runeblade
 				i(157646),	-- Bloodcaked Runeblade
-				i(157658),	-- Heart-Lesion Breastplate
-				i(157659),	-- Heart-Lesion Sabatons
-				i(157660),	-- Heart-Lesion Gauntlets
-				i(157662),	-- Heart-Lesion Legplates
-				i(157664),	-- Heart-Lesion Girdle
-				i(157665),	-- Heart-Lesion Vambraces)
-				i(157661),	-- Heart-Lesion Helm
-				i(157663),	-- Heart-Lesion Pauldrons
 			}),
 			cl(PALADIN, {
 				i(32153),	-- Chancellor's Lamellar Chestpiece
@@ -3488,7 +3472,6 @@ _.NeverImplemented =
 			i(165274),	-- Unknown
 			i(122067),	-- Inexorable Greatsword
 			i(122067),	-- Inexorable Greatsword
-			i(129426),	-- Heart-Lesion Greatsword
 		}),
 		n(-341, {	-- Wands
 			i(161924),	-- Seapriest's Wand (never addedd)

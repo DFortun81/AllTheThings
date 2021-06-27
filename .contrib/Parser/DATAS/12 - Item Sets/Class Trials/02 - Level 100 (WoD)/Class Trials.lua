@@ -416,14 +416,14 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			n(-140, {	-- Communal
 				["classes"] = { PRIEST },
 				["groups"] = {
-					-- added 6.2.2/No Info
+					-- added 6.2.2/Confirmed
 					i(129404),	-- Communal Stave
 				},
 			}),
 			n(-145, {	-- Mountainsage
 				["classes"] = { MAGE },
 				["groups"] = {
-					-- added 6.2.2/No Info
+					-- added 6.2.2/Confirmed
 					i(129523),	-- Mountainsage Wand
 				},
 			}),
@@ -495,6 +495,28 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				["classes"] = { WARRIOR },
 				["groups"] = {
 					-- added 6.2.2 /No Info
+				},
+			}),
+			n(-142, {	-- Heart-Lesion
+				["classes"] = { DEATHKNIGHT },
+				["groups"] = {
+					-- added 6.2.2 /confirmed
+					i(129426),	-- Heart-Lesion Greatsword
+					-- added 6.2.2/No Info
+					i(129449),	-- Heart-Lesion Defender Idol
+					i(129452),	-- Heart-Lesion Defender Stone
+					i(129442),	-- Heart-Lesion Chestguard
+					i(129444),	-- Heart-Lesion Greaves
+					i(129445),	-- Heart-Lesion Handguards
+					i(129446),	-- Heart-Lesion Faceguard
+					i(129447),	-- Heart-Lesion Legguards
+					i(129453),	-- Heart-Lesion Shoulderguards
+					i(129454),	-- Heart-Lesion Waistband
+					i(129455),	-- Heart-Lesion Armguards
+					i(129443),	-- Heart-Lesion Cloak of Stoicism
+					i(129448),	-- Heart-Lesion Amulet
+					i(129450),	-- Heart-Lesion Ring of Stoicism
+					i(129451),	-- Heart-Lesion Band of Stoicism
 				},
 			}),
 		}),

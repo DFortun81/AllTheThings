@@ -1110,6 +1110,33 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(119798),	-- Oathsworn Ring of Stoicism
 				},
 			}),
+			n(-142, {	-- Heart-Lesion
+				["classes"] = { DEATHKNIGHT },
+				["groups"] = {
+					-- added 6.0.2/Confirmed
+					i(119485),	-- Heart-Lesion Chestguard
+					i(119487),	-- Heart-Lesion Greaves
+					i(119488),	-- Heart-Lesion Handguards
+					i(119489),	-- Heart-Lesion Faceguard
+					i(119490),	-- Heart-Lesion Legguards
+					i(119496),	-- Heart-Lesion Shoulderguards
+					i(119497),	-- Heart-Lesion Waistband
+					i(119498),	-- Heart-Lesion Armguards
+					-- added 6.0.2/No Info
+					i(119483),	-- Heart-Lesion Stone of Battle
+					i(119484),	-- Heart-Lesion Idol of Battle
+					i(119492),	-- Heart-Lesion Defender Idol
+					i(119495),	-- Heart-Lesion Defender Stone
+					i(119479),	-- Heart-Lesion Cloak of Battle
+					i(119486),	-- Heart-Lesion Cloak of Stoicism
+					i(119480),	-- Heart-Lesion Pendant
+					i(119491),	-- Heart-Lesion Amulet
+					i(119481),	-- Heart-Lesion Ring of Might
+					i(119482),	-- Heart-Lesion Band of Might
+					i(119493),	-- Heart-Lesion Ring of Stoicism
+					i(119494),	-- Heart-Lesion Band of Stoicism
+				},
+			}),
 		}),
 	}),
 });
