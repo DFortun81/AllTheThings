@@ -989,3 +989,10 @@ _.Instances = { tier(7, {	-- Legion
 		},
 	}),
 })};
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-9982, {	-- Legion
+		inst(768, { 	-- The Emerald Nightmare
+				i(138229),	-- Nightmare Boss 3 Relic Storm
+		}),
+	}),
+});

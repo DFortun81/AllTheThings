@@ -244,3 +244,12 @@ _.Instances = { tier(4, {	-- Cataclysm
 		},
 	}),
 })};
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-9979, {	-- Cataclysm
+		inst(77, { 	-- Zul'Aman
+			n(-45, {	-- Mail
+				i(33964),	-- Helm of the Stormcaller - Never Added
+			}),
+		}),
+	}),
+});

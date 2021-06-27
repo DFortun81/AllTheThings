@@ -362,6 +362,7 @@ _.NeverImplemented =
 			i(114299),	-- Suture-Slice Cloak
 			i(114300),	-- Grimchop Greatcloak
 			i(114301),	-- Axebreak Darkcloak
+			i(59797),	-- Abalone-Linked Robes
 		}),
 		n(-44, {	-- Leather
 			cl(DRUID, {
@@ -549,6 +550,8 @@ _.NeverImplemented =
 			i(163382),	-- 7th Legionnaire's Tunic
 			i(163385),	-- 7th Legionnaire's Belt
 			i(163379),	-- 7th Legionnaire's Pants
+			i(56405),	-- Oasis Bracers
+			i(59796), 	-- Treads of Decapod Death
 		}),
 		n(-45, {	-- Mail
 			cl(SHAMAN, {
@@ -798,7 +801,8 @@ _.NeverImplemented =
 			i(81000),	-- Ringmail Armor of Eminent Domain (not added version)
 			i(80996),	-- Chain Armor of Eminent Domain (not added version)
 			i(37454),	-- HF28 Mail Physical Chest4
-			i(2867),		-- Rough Bronze Bracers (crafted by NYI pattern)
+			i(2867),	-- Rough Bronze Bracers (crafted by NYI pattern)
+			i(140011),	-- Duskwatch Adjudicator's Pauldrons
 		}),
 		n(-46, {	-- Plate
 			cl(DEATHKNIGHT, {
@@ -944,6 +948,7 @@ _.NeverImplemented =
 				["description"] = "|CFFFF0000If you had this item drop in SoO please screenshot and submit it to the ATT Discord.\n\nIf you have the item already and are running completionist mode please screenshot as well. Tag: 105642",
 			}),
 			i(103785),	-- Tusks of Mannoroth [Heroic]
+			i(59795),	-- Harp Shell Shoulderplates
 		}),
 		n(-322, {	-- Cloaks
 			i(22230),	-- Frightmaw Hide (Cloak)
@@ -1652,6 +1657,7 @@ _.NeverImplemented =
 		i(55217),	-- Aqua Transform
 		i(55218),	-- Rocky Transform
 		i(55219),	-- Vaporous Transform
+		i(142360),	-- Blazing Ember Signet
 	}),
 	n(-160, {	-- Mounts
 		a(model(9475, i(13325))),		-- Fluorescent Green Mechanostrider (Never added in Game)
@@ -3172,6 +3178,7 @@ _.NeverImplemented =
 			i(109470),	-- Unknown
 			i(109533),	-- Unknown
 			i(90331),	-- Face Smasher Warhammer
+			i(136593), 	-- Doomhammer Offhand Appearance Record (referenced by actual item)
 		}),
 		n(-338, {	-- One-Handed Swords
 			i(134586),	-- Vanguard Hatchet
@@ -3526,21 +3533,18 @@ _.NeverImplemented =
 		i(128824), 	-- Tome of the Silver Hand
 	}),
 	-- Weapons end
-
-	i(133018),	-- Azsuna Packe 3 Holy 1 Unused
-	i(138229),	-- Nightmare Boss 3 Relic Storm
-	i(140011),	-- Duskwatch Adjudicator's Pauldrons
-	i(33964),	-- Helm of the Stormcaller - Never Added
-	i(8195),		-- Nightscape Cloak										(Pattern never actually went live)
-	i(31279),	-- Enchanted Illidari Tabard [Temp Quest Item]
-	i(56405),	-- Oasis Bracers
-	i(59795),	-- Harp Shell Shoulderplates
-	i(59796), 	-- Treads of Decapod Death
-	i(59797),	-- Abalone-Linked Robes
-	i(67600), 	-- Lil' Alexstrasza										(Never added in Game)
-	i(136593), 	-- Doomhammer Offhand Appearance Record (referenced by actual item)
-	i(142360),	-- Blazing Ember Signet
-	i(146307), 	-- Winter Boots 										(STUCK ON RETRIEVING DATA)						(removed Beta)
+	n(-387,  {	-- Relics
+		i(133018),	-- Azsuna Packe 3 Holy 1 Unused
+	}),
+	n(-797,	{	-- Journal
+		i(67600), 	-- Lil' Alexstrasza (Never added in Game)
+	}),
+	f(104, {	-- Quest
+		i(31279),	-- Enchanted Illidari Tabard [Temp Quest Item]
+	}),
+	f(2, {	-- Cosmetic
+		i(146307), 	-- Winter Boots (STUCK ON RETRIEVING DATA) (removed Beta)
+	}),
 
 ------------------------------------------------------------
 --			T E M P O R A R Y			I T E M S		  --

@@ -631,6 +631,9 @@ _.Craftables =
 };
 -- The items never made it in.
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	-- Leatherworking
-	i(38378)	-- Wyrmscale Leg Armor
+	n(-10014, {	-- Wrath of the Lich King
+		prof(LEATHERWORKING, {
+			i(38378)	-- Wyrmscale Leg Armor
+		}),
+	}),
 });

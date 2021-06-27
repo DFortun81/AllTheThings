@@ -1581,3 +1581,10 @@ _.Craftables = { tier(1, {	-- Classic
 		}),
 	}),
 })};
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10002, {	-- Classic
+		prof(LEATHERWORKING, {
+				i(8195),	-- Nightscape Cloak	(Pattern never actually went live) 
+		}),
+	}),
+});
