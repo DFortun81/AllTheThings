@@ -46,6 +46,12 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 						i(150650),	-- Mountainsage Shoulderpads
 						i(150652),	-- Mountainsage Wristwraps
 						i(153828),	-- Mountainsage Wand	*LA0207
+						i(150614),	-- Staff of Arcane Power
+						i(150588),	-- Staff of Inner Flame
+						i(150587),	-- Frostcore Staff
+						-- added 7.3.5
+						i(157623),	-- Frostcore Staff (Lv20 Start Gear?)
+						i(157624),	-- Staff of Inner Flame (Lv20 Start Gear?)
 					},
 				}),
 				-- added 7.0.3/No Info
@@ -81,6 +87,9 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(121911),	-- Abstruse Ring of Destruction
 				i(122081),	-- Abstruse Wand
 				i(122071),	-- Abstruse Staff
+				i(140719),	-- Staff of Arcane Power
+				i(140693),	-- Staff of Inner Flame
+				i(140692),	-- Frostcore Staff
 			}),
 		}),
 	}),

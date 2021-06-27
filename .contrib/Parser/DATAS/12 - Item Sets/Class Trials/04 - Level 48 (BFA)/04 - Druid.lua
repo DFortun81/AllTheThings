@@ -72,6 +72,8 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 						i(150634),	-- Springrain Spaulders
 						i(150635),	-- Springrain Belt
 						i(150636),	-- Springrain Bracers
+						i(150585),	-- restorative Ashwood Staff
+						i(150583),	-- Staff of Astral Alignment
 						-- added 7.3.5/No Info
 						i(153792),	-- Springrain Staff
 						-- added 7.3.5/Level 110 unused Boost Gear
@@ -95,6 +97,9 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 						i(153781),	-- Springrain Ring of Wisdom [NYI]
 						i(153798),	-- Springrain Stone of Durability [NYI]
 						i(153782),	-- Springrain Stone of Wisdom [NYI]
+						i(157648),	-- Oakenstaff Protector
+						i(157620),	-- Halberd of Ferocity
+						i(157621),	-- Staff of Regrowth (Lv20 Start Gear?)
 					},
 				}),
 				-- added 7.0.3/Confirmed
@@ -157,6 +162,8 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(121883),	-- Nurturer Band of Wisdom
 				i(121884),	-- Nurturer Ring of Wisdom
 				i(122070),	-- Nurturer Staff
+				i(140690),	-- Restorative Ashwood Staff
+				i(140688),	-- Staff of Astral Alignment
 			}),
 		}),
 	}),

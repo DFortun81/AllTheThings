@@ -40,7 +40,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				n(-143, {	-- Lightdrinker
 					["classes"] = { ROGUE },
 					["groups"] = {
-						-- added 7.2.5
+						-- added 7.2.5/No Info
 						i(150677),	-- Lightdrinker Jerkin
 						i(150678),	-- Lightdrinker Boots
 						i(150679),	-- Lightdrinker Gloves
@@ -49,6 +49,13 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 						i(150682),	-- Lightdrinker Shoulders
 						i(150683),	-- Lightdrinker Waistband
 						i(150684),	-- Lightdrinker Bindings
+						-- added 7.2.5/Confirmed
+						i(150598),	-- Duskfall Daggers
+						i(150599),	-- Assassins Serrated Dagger
+						i(150600),	-- Outlaw's Cutlass
+						-- added 7.3.5/Confirmed
+						i(157635),	-- Duskfall Daggers
+						i(157637),	-- Swaggering Cutlass
 					},
 				}),
 				-- added 7.0.3/No Info
@@ -85,6 +92,9 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(122088),	-- Skulldugger Dagger
 				i(122089),	-- Skulldugger Shiv
 				i(122094),	-- Skulldugger Sword
+				i(140703),	-- Duskfall Daggers
+				i(140704),	-- Assassins Serrated Dagger
+				i(140705),	-- Outlaw's Cutlass
 			}),
 		}),
 	}),

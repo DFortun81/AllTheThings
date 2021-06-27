@@ -72,8 +72,12 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 						i(150659),	-- Mistdancer Cord
 						i(150660),	-- Mistdancer Cuffs
 						i(150658),	-- Mistdancer Pauldrons
+						i(150590),	-- Staff of the Jade Mist
+						i(150591),	-- Sword of Singing Wind
+						i(150589),	-- Brewmasher's Staff
 					},
 				}),
+				-- added 7.0.3/No Info
 				i(121926),	-- Harmonious Tunic
 				i(121927),	-- Harmonious Slippers
 				i(121928),	-- Harmonious Gloves
@@ -110,6 +114,9 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(122072),	-- Harmonious Spire
 				i(122073),	-- Harmonious Staff
 				i(122085),	-- Harmonious Sword
+				--
+				i(140695),	-- Staff of the Jade Mist
+				
 			}),
 		}),
 	}),

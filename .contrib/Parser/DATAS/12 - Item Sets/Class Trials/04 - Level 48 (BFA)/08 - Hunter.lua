@@ -49,6 +49,8 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 						i(150641),	-- Trailseeker Legguards
 						i(150643),	-- Trailseeker Belt
 						i(150644),	-- Trailseeker Bracers
+						-- added 7.3.5/Confirmed
+						i(157650),	-- Tracker's Spear
 					},
 				}),
 				-- added 7.0.3/Confirmed

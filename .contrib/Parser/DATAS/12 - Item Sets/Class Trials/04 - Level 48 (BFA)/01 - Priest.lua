@@ -36,6 +36,8 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				n(-140, {	-- Communal
 					["classes"] = { PRIEST },
 					["groups"] = {
+						-- added 7.2.5/Confirmed
+						i(150597),	-- Whispering Staff of the Void
 						-- added 7.2.5/No Info
 						i(150669),	-- Communal Boots
 						i(150670),	-- Communal Gloves
@@ -45,6 +47,8 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 						i(150674),	-- Communal Mantle
 						i(150675),	-- Communal Sash
 						i(150676),	-- Communal Bindings
+						i(150595),	-- Staff of Dual Convictions
+						i(150596),	-- Staff of Radiance
 						-- adde 7.3.5/No Info
 						i(153944),	-- Communal Stave
 						i(157634),	-- Whispering Staff of the Void
@@ -107,6 +111,9 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(122082),	-- Soulward Wand
 				i(122075),	-- Soulward Staff
 				i(122076),	-- Soulward Stave
+				i(140702),	-- Whispering Staff of the Void
+				i(140700),	-- Staff of Dual Convictions
+				i(140701),	-- Staff of Radiance
 			}),
 		}),
 	}),

@@ -149,9 +149,6 @@ _.NeverImplemented =
 				i(32095),	-- Chancellor's Dreadweave Legs
 				i(32096),	-- Chancellor's Dreadweave Manthle
 				i(32097),	-- Chancellor's Dreadweave Robe
-				-- Possible Unused Level 120/Lv 120 Classtrial
-				i(157642),	-- Demonologist's Staff
-				i(157641),	-- Destructive Spellstaff
 			}),
 			i(153289),	-- Eredar Priestess' Tunic
 			i(105710),	-- Lasso Bracers, Humanoid
@@ -397,9 +394,6 @@ _.NeverImplemented =
 				i(7951),		-- Hands of Thero-Shan
 				i(7953),		-- Mask of Thero-Shan
 				i(7949),		-- Leggings of Thero-Shan
-				-- Possible Unused Level 120/Lv 120 Classtrial
-				i(150600),	-- Outlaw's Cutlass
-				i(157637),	-- Swaggering Cutlass
 				-- Transmog set item that never became available
 				i(130327),	-- Artful Britches
 			}),
@@ -3057,11 +3051,6 @@ _.NeverImplemented =
 			i(179506),	--
 			i(179507),	--
 			i(180863),	--
-			i(157635),	-- Duskfall Daggers
-			i(140703),	-- Duskfall Daggers
-			i(150598),	-- Duskfall Daggers
-			i(140704),	-- Assassins Serrated Dagger
-			i(150599),	-- Assassins Serrated Dagger
 			i(109269),	-- Unknown
 			i(109292),	-- Unknown
 			i(117993),	-- RENAME RANGARI BOOT KNIFE
@@ -3221,7 +3210,6 @@ _.NeverImplemented =
 			i(161308),	-- Ashvane Captain's Quickblade
 			i(161309),	-- Ashvane Captain's Gladius
 			i(93145),	-- Scavenged Pandaren Sword
-			i(140705),	-- Outlaw Cutlass
 			i(137225),	-- Thunderfury, Blessed Blade of the Windseeker (mog testing)
 			i(47846),	-- Cruel Barb (Glow, Purple - Low)
 			i(147378),	-- Wooden Toy Sword(Visual usage for toy weapon set)
@@ -3307,9 +3295,6 @@ _.NeverImplemented =
 			i(49458),	-- Unknown
 			i(182566),	-- NPE Weapon Staff AGI
 			i(182572),	-- NPE Weapon Staff INT
-			i(157621),	-- Staff of Regrowth (Lv20 Start Gear?)
-			i(157623),	-- Frostcore Staff (Lv20 Start Gear?)
-			i(157624),	-- Staff of Inner Flame (Lv20 Start Gear?)
 			i(157626),	-- Staff of Sining mists (Lv20 Start Gear?)
 			i(176841),	--
 			i(176842),	--
@@ -3340,10 +3325,6 @@ _.NeverImplemented =
 			i(132479),	-- Unknown - was under Legion>Staves
 			i(132480),	-- Unknown - was under Legion>Staves
 			i(132481),	-- Unknown - was under Legion>Staves
-			i(140690),	-- Restorative Ashwood Staff
-			i(140702),	-- whispering Staff of the void
-			i(150585),	-- restorative Ashwood Staff
-			i(150597),	-- whispering Staff of the void
 			i(132482),	-- Unknown - was under Legion>Staves
 			i(132483),	-- Unknown - was under Legion>Staves
 			i(134066),	-- Unknown - was under Legion>Staves
@@ -3562,9 +3543,6 @@ _.NeverImplemented =
 		i(23432),	-- Engraved Greatsword
 		i(32186),	-- Chancellor's Warblade
 		i(54553),	-- Kliklak's Fearsome Greatsword (never made it to live)
-		i(157650),	-- Tracker's Spear
-		i(157648),	-- Oakenstaff Protector
-		i(157620),	-- Halberd of Ferocity
 		i(32173),	-- Chancellor's Bonecracker
 		i(32176),	-- Chancellor's Pummeler
 		i(38468),	-- Kalu'ak Peacebringer
