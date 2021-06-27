@@ -32,20 +32,55 @@ _.GearSets =
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-9982, {	-- Legion
 		n(-5350, {	-- Class Trial Item Sets
-			n(-145, {	-- Mountainsage
-				["classes"] = { MAGE },
-				["groups"] = {
-					-- added 7.2.5/Possible Unused Level 120/Lv 120 Classtria
-					i(150651),	-- Mountainsage Cord
-					i(150646),	-- Mountainsage Handwraps
-					i(150647),	-- Mountainsage Hood
-					i(150648),	-- Mountainsage Leggings
-					i(150649),	-- Mountainsage Robe
-					i(150645),	-- Mountainsage Sandals
-					i(150650),	-- Mountainsage Shoulderpads
-					i(150652),	-- Mountainsage Wristwraps
-					i(153828),	-- Mountainsage Wand	*LA0207
-				},
+			cl(MAGE, {
+				n(-145, {	-- Mountainsage
+					["classes"] = { MAGE },
+					["groups"] = {
+						-- added 7.2.5/Possible Unused Level 120/Lv 120 Classtria
+						i(150651),	-- Mountainsage Cord
+						i(150646),	-- Mountainsage Handwraps
+						i(150647),	-- Mountainsage Hood
+						i(150648),	-- Mountainsage Leggings
+						i(150649),	-- Mountainsage Robe
+						i(150645),	-- Mountainsage Sandals
+						i(150650),	-- Mountainsage Shoulderpads
+						i(150652),	-- Mountainsage Wristwraps
+						i(153828),	-- Mountainsage Wand	*LA0207
+					},
+				}),
+				-- added 7.0.3/No Info
+				i(121904),	-- Abstruse Sandals
+				i(121905),	-- Abstruse Handwraps
+				i(121906),	-- Abstruse Hood
+				i(121913),	-- Abstruse Leggings
+				i(121914),	-- Abstruse Robe
+				i(121915),	-- Abstruse Shoulderpads
+				i(121916),	-- Abstruse Cord
+				i(121917),	-- Abstruse Wristwraps
+				i(123263),	-- Abstruse Sandals
+				i(123264),	-- Abstruse Handwraps
+				i(123265),	-- Abstruse Hood
+				i(123266),	-- Abstruse Leggings
+				i(123267),	-- Abstruse Robe
+				i(123268),	-- Abstruse Shoulderpads
+				i(123269),	-- Abstruse Cord
+				i(123270),	-- Abstruse Wristwraps
+				i(123271),	-- Abstruse Sandals
+				i(123272),	-- Abstruse Handwraps
+				i(123273),	-- Abstruse Hood
+				i(123274),	-- Abstruse Leggings
+				i(123275),	-- Abstruse Robe
+				i(123276),	-- Abstruse Shoulderpads
+				i(123277),	-- Abstruse Cord
+				i(123278),	-- Abstruse Wristwraps
+				i(121909),	-- Abstruse Idol of Destruction
+				i(121912),	-- Abstruse Stone of Destruction
+				i(121907),	-- Abstruse Cloak of Destruction
+				i(121908),	-- Abstruse Medallion
+				i(121910),	-- Abstruse Band of Destruction
+				i(121911),	-- Abstruse Ring of Destruction
+				i(122081),	-- Abstruse Wand
+				i(122071),	-- Abstruse Staff
 			}),
 		}),
 	}),

@@ -32,21 +32,56 @@ _.GearSets =
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-9982, {	-- Legion
 		n(-5350, {	-- Class Trial Item Sets
-			n(-141, {	-- Felsoul
-				["classes"] = { WARLOCK },
-				["groups"] = {
-					-- added 7.2.5/No Info
-					i(150693),	-- Felsoul Sandals
-					i(150694),	-- Felsoul Handwraps
-					i(150695),	-- Felsoul Cowl
-					i(150696),	-- Felsoul Leggings
-					i(150697),	-- Felsoul Robe
-					i(150698),	-- Felsoul Shoulderpads
-					i(150699),	-- Felsoul Cord
-					i(150700),	-- Felsoul Wristwraps
-					-- 7.3.5/Confirmed
-					i(154022),	-- Felsoul Wand
-				},
+			cl(WARLOCK, {
+				n(-141, {	-- Felsoul
+					["classes"] = { WARLOCK },
+					["groups"] = {
+						-- added 7.2.5/No Info
+						i(150693),	-- Felsoul Sandals
+						i(150694),	-- Felsoul Handwraps
+						i(150695),	-- Felsoul Cowl
+						i(150696),	-- Felsoul Leggings
+						i(150697),	-- Felsoul Robe
+						i(150698),	-- Felsoul Shoulderpads
+						i(150699),	-- Felsoul Cord
+						i(150700),	-- Felsoul Wristwraps
+						-- 7.3.5/Confirmed
+						i(154022),	-- Felsoul Wand
+					},
+				}),
+				-- added 7.0.3/No Info
+				i(122032),	-- Ruinrain Sandals
+				i(122033),	-- Ruinrain Handwraps
+				i(122034),	-- Ruinrain Cowl
+				i(122041),	-- Ruinrain Leggings
+				i(122042),	-- Ruinrain Robe
+				i(122043),	-- Ruinrain Shoulderpads
+				i(122044),	-- Ruinrain Cord
+				i(122045),	-- Ruinrain Wristwraps
+				i(123352),	-- Ruinrain Sandals
+				i(123353),	-- Ruinrain Handwraps
+				i(123354),	-- Ruinrain Cowl
+				i(123355),	-- Ruinrain Leggings
+				i(123356),	-- Ruinrain Robe
+				i(123357),	-- Ruinrain Shoulderpads
+				i(123358),	-- Ruinrain Cord
+				i(123359),	-- Ruinrain Wristwraps
+				i(123360),	-- Ruinrain Sandals
+				i(123361),	-- Ruinrain Handwraps
+				i(123362),	-- Ruinrain Cowl
+				i(123363),	-- Ruinrain Leggings
+				i(123364),	-- Ruinrain Robe
+				i(123365),	-- Ruinrain Shoulderpads
+				i(123366),	-- Ruinrain Cord
+				i(123367),	-- Ruinrain Wristwraps
+				i(122037),	-- Ruinrain Idol of Destruction
+				i(122040),	-- Ruinrain Stone of Destruction
+				i(122035),	-- Ruinrain Cloak of Destruction
+				i(122036),	-- Ruinrain Medallion
+				i(122038),	-- Ruinrain Band of Destruction
+				i(122039),	-- Ruinrain Ring of Destruction
+				i(122083),	-- Ruinrain Wand
+				i(122077),	-- Ruinrain Staff
 			}),
 		}),
 	}),
