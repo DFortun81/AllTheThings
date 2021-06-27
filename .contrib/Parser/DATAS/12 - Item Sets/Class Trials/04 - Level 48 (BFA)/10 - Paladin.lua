@@ -71,21 +71,71 @@ _.GearSets =
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-9982, {	-- Legion
 		n(-5350, {	-- Class Trial Item Sets
-			n(-149, {	-- Sunsoul
-				["classes"] = { PALADIN },
-				["groups"] = {
-					-- added 7.2.5/No Info
-					i(150661),	-- Sunsoul Battleplate
-					i(150662),	-- Sunsoul Sabatons
-					i(150663),	-- Sunsoul Gauntlets
-					i(150664),	-- Sunsoul Helm
-					i(150665),	-- Sunsoul Legplates
-					i(150666),	-- Sunsoul Pauldrons
-					i(150667),	-- Sunsoul Girdle
-					i(150668),	-- Sunsoul Vambraces
-					-- added 7.3.5/No Info
-					i(153890),	-- Sunsoul Shield
-				},
+			cl(PALADIN, {
+				n(-149, {	-- Sunsoul
+					["classes"] = { PALADIN },
+					["groups"] = {
+						-- added 7.2.5/No Info
+						i(150661),	-- Sunsoul Battleplate
+						i(150662),	-- Sunsoul Sabatons
+						i(150663),	-- Sunsoul Gauntlets
+						i(150664),	-- Sunsoul Helm
+						i(150665),	-- Sunsoul Legplates
+						i(150666),	-- Sunsoul Pauldrons
+						i(150667),	-- Sunsoul Girdle
+						i(150668),	-- Sunsoul Vambraces
+						-- added 7.3.5/No Info
+						i(153890),	-- Sunsoul Shield
+					},
+				}),
+				-- added 7.0.3/Confirmed
+				i(122074),	-- Duskbreaker Warmaul
+				-- added 7.0.3/No Info
+				i(121949),	-- Duskbreaker Idol of Wisdom
+				i(121952),	-- Duskbreaker Stone of Wisdom
+				i(121960),	-- Duskbreaker Stone of Battle
+				i(121961),	-- Duskbreaker Idol of Battle
+				i(121964),	-- Duskbreaker Defender Idol
+				i(121967),	-- Duskbreaker Defender Stone
+				i(121943),	-- Duskbreaker Battleplate
+				i(121944),	-- Duskbreaker Gloves
+				i(121945),	-- Duskbreaker Headpiece
+				i(121953),	-- Duskbreaker Leggings
+				i(121955),	-- Duskbreaker Spaulders
+				i(121968),	-- Duskbreaker Belt
+				i(121969),	-- Duskbreaker Armplates
+				i(123287),	-- Duskbreaker Sabatons
+				i(123288),	-- Duskbreaker Battleplate
+				i(123289),	-- Duskbreaker Gloves
+				i(123290),	-- Duskbreaker Headpiece
+				i(123291),	-- Duskbreaker Leggings
+				i(123292),	-- Duskbreaker Spaulders
+				i(123293),	-- Duskbreaker Belt
+				i(123294),	-- Duskbreaker Armplates
+				i(123295),	-- Duskbreaker Sabatons
+				i(123296),	-- Duskbreaker Battleplate
+				i(123297),	-- Duskbreaker Gloves
+				i(123298),	-- Duskbreaker Headpiece
+				i(123299),	-- Duskbreaker Leggings
+				i(123300),	-- Duskbreaker Spaulders
+				i(123301),	-- Duskbreaker Belt
+				i(123302),	-- Duskbreaker Armplates
+				i(123303),	-- Duskbreaker Sabatons
+				i(121947),	-- Duskbreaker Cloak of Wisdom
+				i(121956),	-- Duskbreaker Cloak of Battle
+				i(121962),	-- Duskbreaker Cloak of Stoicism
+				i(121948),	-- Duskbreaker Necklace
+				i(121957),	-- Duskbreaker Pendant
+				i(121963),	-- Duskbreaker Amulet
+				i(121950),	-- Duskbreaker Band of Wisdom
+				i(121951),	-- Duskbreaker Ring of Wisdom
+				i(121958),	-- Duskbreaker Band of Might
+				i(121959),	-- Duskbreaker Ring of Might
+				i(121965),	-- Duskbreaker Band of Stoicism
+				i(121966),	-- Duskbreaker Ring of Stoicism
+				i(121946),	-- Duskbreaker Shield
+				i(121954),	-- Duskbreaker Bulwark
+				i(122087),	-- Duskbreaker Sword
 			}),
 		}),
 	}),

@@ -575,31 +575,6 @@ _.NeverImplemented =
 				i(32150),	-- Chancellor's Ringmail Headpiece
 				i(32151),	-- Chancellor's Ringmail Legguards
 				i(32152),	-- Chancellor's Ringmail Shoulders
-				-- Not added boosted Gear
-				i(122010),	-- Stormseeker Vest
-				i(122012),	-- Stormseeker Sabatons
-				i(122013),	-- Stormseeker Grips
-				i(122014),	-- Stormseeker Cowl
-				i(122027),	-- Stormseeker Leggings
-				i(122029),	-- Stormseeker Spaulders
-				i(122030),	-- Stormseeker Girdle
-				i(122031),	-- Stormseeker Bracers
-				i(123336),	-- Stormseeker Vest
-				i(123337),	-- Stormseeker Sabatons
-				i(123338),	-- Stormseeker Grips
-				i(123339),	-- Stormseeker Cowl
-				i(123340),	-- Stormseeker Leggings
-				i(123341),	-- Stormseeker Spaulders
-				i(123342),	-- Stormseeker Girdle
-				i(123343),	-- Stormseeker Bracers
-				i(123344),	-- Stormseeker Vest
-				i(123345),	-- Stormseeker Sabatons
-				i(123346),	-- Stormseeker Grips
-				i(123347),	-- Stormseeker Cowl
-				i(123348),	-- Stormseeker Leggings
-				i(123349),	-- Stormseeker Spaulders
-				i(123350),	-- Stormseeker Girdle
-				i(123351),	-- Stormseeker Bracers
 			}),
 			cl(HUNTER, {
 				i(32133),	-- Chancellor's Chain Armor
@@ -3504,7 +3479,6 @@ _.NeverImplemented =
 		i(159513),	-- Deepwarden Fangs
 		i(159603),	-- Deepwarden Spark
 		i(122069),	-- Nurturer Spear
-		i(122074),	-- Duskbreaker Warmaul
 		i(159541),	-- Dockyard Mace
 		i(159500),	-- Dockyard Sidearm
 		i(159591),	-- Gnarlwood Cutlass
