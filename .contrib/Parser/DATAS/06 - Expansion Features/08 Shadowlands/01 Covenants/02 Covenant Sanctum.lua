@@ -253,8 +253,10 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(61138),	-- [DNT] Purge the Grove
 		q(59814),	-- [DNT] Words of Mueh'zala
 		q(59810),	-- [DNT]Just A Small Request
+		q(57820),	-- Diplomatic Relations
 		q(59608),	-- Don't Cross The Streams
 		q(60885),	-- Grove of Awekening
+		q(57821),	-- Keeping the Peace
 		q(61056),	-- Niya of Ardenweald
 		q(61881),	-- Pauldrons
 		q(61324),	-- Replenish the Reservoir

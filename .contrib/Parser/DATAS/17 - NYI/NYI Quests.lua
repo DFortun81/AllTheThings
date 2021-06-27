@@ -109,6 +109,10 @@ _.NeverImplemented =
 			q(53556),	-- BFA 120 E
 			q(53557),	-- BFA 120 E
 			q(53558),	-- BFA 120 E
+			q(57961),	-- Heroic: Battle for Darkshore
+			q(57962),	-- Heroic: Battle for Darkshore
+			q(57973),	-- Heroic: Battle for Darkshore
+			q(57974),	-- Heroic: Battle for Darkshore
 			q(53727),	-- Legion 110 H		-- Legion quest with BFA ID smh
 			q(53728),	-- Legion 110 H		-- Legion quest with BFA ID smh
 			q(53729),	-- Legion 110 H		-- Legion quest with BFA ID smh
@@ -127,6 +131,8 @@ _.NeverImplemented =
 			q(52051),	-- LFGDungeons - BFA - Raid Finder - 1st
 			q(52052),	-- LFGDungeons - BFA - Raid Finder - Nth
 			q(53641),	-- LFGDungeons - BFA - Stromgarde (Arathi)
+			q(58707),	-- Sorting Through Visions
+			q(58089),	-- Test Quest
 		}),
 		tier(9, {	-- Shadowlands -- These Quests might be ingame, very unlikely however.
 			q(62300),	-- Classic 20-49
@@ -142,6 +148,7 @@ _.NeverImplemented =
 			q(62645),	-- LFGDungeons - SL - Normal Random - Nth
 			q(62646),	-- LFGDungeons - SL - Raid Finder - 1st
 			q(62647),	-- LFGDungeons - SL - Raid Finder - Nth
+			q(62071),	-- RRP Test Quest
 			q(62346),	-- Shadowlands (51-59) E
 			q(62349),	-- Shadowlands (51-59) E
 			q(62350),	-- Shadowlands (51-59) E
@@ -175,6 +182,8 @@ _.NeverImplemented =
 			q(60028),	-- Shadowlands 60 E
 			q(60029),	-- Shadowlands 60 E
 			q(60030),	-- Shadowlands 60 E
+			q(60474),	-- Spawn Tracking Unit-Specified World Effect in a WMO Bug
+			q(62402),	-- Timewalking Campaigns
 		}),
 		q(3064,  {	-- <NYI> <TXT> Pirate Hats
 			["u"] = NEVER_IMPLEMENTED,

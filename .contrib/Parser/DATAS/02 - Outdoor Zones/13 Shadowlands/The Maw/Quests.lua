@@ -625,6 +625,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(60769),	-- Flames of Torment
 		q(60645),	-- Gargantuan Seeker
 		q(62593),	-- Hunt: Death Elementals
+		q(57506),	-- Light Lost
 		q(60140),	-- Mort'regar
 		q(57692),	-- Prisoner Transfers
 		q(62074),	-- Professions - Reuse

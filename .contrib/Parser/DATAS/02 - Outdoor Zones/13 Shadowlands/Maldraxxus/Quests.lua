@@ -754,5 +754,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(59903),	-- Split Blob Test
 		q(59882),	-- Sure Bet
 		q(59175),	-- The Eternal Revenge
+		q(58261),	-- What's the Grub
 	}),
 });

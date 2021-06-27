@@ -305,6 +305,9 @@ _.ExpansionFeatures =
 										}),
 									}),
 									n(-973, {	-- Loyalty
+										i(181165, {	-- Blueprint: Kyrian Smith's Kit
+											["questID"] = 61304,	-- Blueprint: Kyrian Smith's Kit
+										}),
 									}),
 									n(-974, {	-- Wisdom
 									}),
@@ -318,6 +321,9 @@ _.ExpansionFeatures =
 										}),
 									}),
 									n(-973, {	-- Loyalty
+										i(181155, {	-- Blueprint: Charm of Discord
+												["questID"] = 61272,	-- Blueprint: Charm of Discord
+											}),
 									}),
 									n(-974, {	-- Wisdom
 									}),

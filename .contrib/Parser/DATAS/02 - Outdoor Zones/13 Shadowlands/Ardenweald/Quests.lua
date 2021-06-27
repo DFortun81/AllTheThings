@@ -855,6 +855,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(58769),	-- REUSE ME
 		q(58736),	-- Selenis, Night Warrior
 		q(57457),	-- Shaking 'Shrooms
+		q(57658),	-- The Final Leg
 		q(58732),	-- The Stuff of Memories
 		q(58173),	-- What Are They Hiding?
 	}),
