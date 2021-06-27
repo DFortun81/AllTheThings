@@ -59,19 +59,57 @@ _.GearSets =
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-9982, {	-- Legion
 		n(-5350, {	-- Class Trial Item Sets
-			n(-144, {	-- Mistdancer
-				["classes"] = { MONK },
-				["groups"] = {
-					-- added 7.2.5/No Info
-					i(150653),	-- Mistdancer Vest
-					i(150654),	-- Mistdancer Footpads
-					i(150655),	-- Mistdancer Handguards
-					i(150656),	-- Mistdancer Helm
-					i(150657),	-- Mistdancer Legguards
-					i(150659),	-- Mistdancer Cord
-					i(150660),	-- Mistdancer Cuffs
-					i(150658),	-- Mistdancer Pauldrons
-				},
+			cl(MONK, {
+				n(-144, {	-- Mistdancer
+					["classes"] = { MONK },
+					["groups"] = {
+						-- added 7.2.5/No Info
+						i(150653),	-- Mistdancer Vest
+						i(150654),	-- Mistdancer Footpads
+						i(150655),	-- Mistdancer Handguards
+						i(150656),	-- Mistdancer Helm
+						i(150657),	-- Mistdancer Legguards
+						i(150659),	-- Mistdancer Cord
+						i(150660),	-- Mistdancer Cuffs
+						i(150658),	-- Mistdancer Pauldrons
+					},
+				}),
+				i(121926),	-- Harmonious Tunic
+				i(121927),	-- Harmonious Slippers
+				i(121928),	-- Harmonious Gloves
+				i(121929),	-- Harmonious Hood
+				i(121933),	-- Harmonious Britches
+				i(121937),	-- Harmonious Shoulders
+				i(121938),	-- Harmonious Waistband
+				i(121942),	-- Harmonious Bindings
+				i(123279),	-- Harmonious Tunic
+				i(123280),	-- Harmonious Slippers
+				i(123281),	-- Harmonious Gloves
+				i(123282),	-- Harmonious Hood
+				i(123283),	-- Harmonious Britches
+				i(123284),	-- Harmonious Shoulders
+				i(123285),	-- Harmonious Waistband
+				i(123286),	-- Harmonious Bindings
+				i(121924),	-- Harmonious Defender Stone
+				i(121925),	-- Harmonious Defender Idol
+				i(121934),	-- Harmonious Idol of Wisdom
+				i(121936),	-- Harmonious Stone of Wisdom
+				i(121939),	-- Harmonious Idol of Rage
+				i(121941),	-- Harmonious Stone of Rage
+				i(121920),	-- Harmonious Cloak of Rage
+				i(121930),	-- Harmonious Cloak of Wisdom
+				i(121923),	-- Harmonious Amulet
+				i(121935),	-- Harmonious Necklace
+				i(121940),	-- Harmonious Choker
+				i(121918),	-- Harmonious Band of Onslaught
+				i(121919),	-- Harmonious Ring of Onslaught
+				i(121921),	-- Harmonious Band of Stoicism
+				i(121922),	-- Harmonious Ring of Stoicism
+				i(121931),	-- Harmonious Band of Wisdom
+				i(121932),	-- Harmonious Ring of Wisdom
+				i(122072),	-- Harmonious Spire
+				i(122073),	-- Harmonious Staff
+				i(122085),	-- Harmonious Sword
 			}),
 		}),
 	}),

@@ -3113,7 +3113,6 @@ _.NeverImplemented =
 			i(109529),	-- Unknown
 			i(140691),	-- Packmasters Rifle
 			i(150586),	-- Packmasters Rifle
-			i(122080),	-- Warscout Shotgun (not added version)
 
 		}),
 		n(-331, {	-- Held in Offhand
