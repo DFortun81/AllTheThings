@@ -52,3 +52,26 @@ _.GearSets =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-9982, {	-- Legion
+		n(-5350, {	-- Class Trial Item Sets
+			n(-146, {	-- Oathsworn
+				["classes"] = { WARRIOR },
+				["groups"] = {
+					-- added 7.2.5/No Info
+					i(150701),	-- Oathsworn Breastplate
+					i(150702),	-- Oathsworn Sabatons
+					i(150703),	-- Oathsworn Gauntlets
+					i(150704),	-- Oathsworn Helm
+					i(150705),	-- Oathsworn Legplates
+					i(150706),	-- Oathsworn Pauldrons
+					i(150707),	-- Oathsworn Girdle
+					i(150708),	-- Oathsworn Vambraces
+					-- added 7.3.5/Confirmed
+					i(154041),	-- Oathsworn Faceguard
+
+				},
+			}),
+		}),
+	}),
+});

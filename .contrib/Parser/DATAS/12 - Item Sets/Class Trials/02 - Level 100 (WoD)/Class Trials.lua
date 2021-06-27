@@ -485,6 +485,18 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					-- added 6.2.2 /No Info
 				},
 			}),
+			n(-149, {	-- Sunsoul
+				["classes"] = { PALADIN },
+				["groups"] = {
+					-- added 6.2.2 /No Info
+				},
+			}),
+			n(-146, {	-- Oathsworn
+				["classes"] = { WARRIOR },
+				["groups"] = {
+					-- added 6.2.2 /No Info
+				},
+			}),
 		}),
 	}),
 });

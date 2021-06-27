@@ -867,7 +867,6 @@ _.NeverImplemented =
 				i(157703),	-- Light Soul Pauldrons
 			}),
 			cl(WARRIOR, {
-				i(154041),	-- Oathsworn Faceguard
 				i(157741),	-- Warsinger's Helm
 				i(157743),	-- Warsinger's  Pauldrons
 			}),
@@ -3441,7 +3440,6 @@ _.NeverImplemented =
 			i(165265),	-- Unknown
 			i(182568),	-- NPE Weapon 2H Axe STR
 			i(177121),	-- Honorbound Decapitator
-			i(177591),	-- Oathsworn Headchopper
 			i(180147),	--
 			i(180148),	--
 			i(180149),	--

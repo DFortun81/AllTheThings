@@ -1044,6 +1044,72 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(119549),	-- Trailseeker Ring of Onslaught
 				},
 			}),
+			n(-149, {	-- Sunsoul
+				["classes"] = { PALADIN },
+				["groups"] = {
+					-- added 6.0.2/No Info
+					i(119628),	-- Sunsoul Idol of Wisdom
+					i(119631),	-- Sunsoul Stone of Wisdom
+					i(119644),	-- Sunsoul Stone of Battle
+					i(119645),	-- Sunsoul Idol of Battle
+					i(119653),	-- Sunsoul Defender Idol
+					i(119656),	-- Sunsoul Defender Stone
+					i(119621),	-- Sunsoul Breastplate
+					i(119623),	-- Sunsoul Boots
+					i(119624),	-- Sunsoul Gloves
+					i(119625),	-- Sunsoul Headpiece
+					i(119626),	-- Sunsoul Leggings
+					i(119632),	-- Sunsoul Spaulders
+					i(119633),	-- Sunsoul Belt
+					i(119634),	-- Sunsoul Armplates
+					i(119646),	-- Sunsoul Chestguard
+					i(119648),	-- Sunsoul Greaves
+					i(119649),	-- Sunsoul Handguards
+					i(119650),	-- Sunsoul Faceguard
+					i(119651),	-- Sunsoul Legguards
+					i(119657),	-- Sunsoul Shoulderguards
+					i(119658),	-- Sunsoul Waistband
+					i(119659),	-- Sunsoul Armguards
+					i(119622),	-- Sunsoul Cloak of Wisdom
+					i(119640),	-- Sunsoul Cloak of Battle
+					i(119647),	-- Sunsoul Cloak of Stoicism
+					i(119627),	-- Sunsoul Necklace
+					i(119641),	-- Sunsoul Pendant
+					i(119652),	-- Sunsoul Amulet
+					i(119629),	-- Sunsoul Ring of Wisdom
+					i(119630),	-- Sunsoul Band of Wisdom
+					i(119642),	-- Sunsoul Ring of Might
+					i(119643),	-- Sunsoul Band of Might
+					i(119654),	-- Sunsoul Ring of Stoicism
+					i(119655),	-- Sunsoul Band of Stoicism
+				},
+			}),
+			n(-146, {	-- Oathsworn
+				["classes"] = { WARRIOR },
+				["groups"] = {
+					-- added 6.0.2/No Info
+					i(119787),	-- Oathsworn Stone of Battle
+					i(119788),	-- Oathsworn Idol of Battle
+					i(119796),	-- Oathsworn Defender Idol
+					i(119799),	-- Oathsworn Defender Stone
+					i(119789),	-- Oathsworn Chestguard
+					i(119791),	-- Oathsworn Greaves
+					i(119792),	-- Oathsworn Handguards
+					i(119793),	-- Oathsworn Faceguard
+					i(119794),	-- Oathsworn Legguards
+					i(119800),	-- Oathsworn Shoulderguards
+					i(119801),	-- Oathsworn Waistband
+					i(119802),	-- Oathsworn Armguards
+					i(119783),	-- Oathsworn Cloak of Battle
+					i(119790),	-- Oathsworn Cloak of Stoicism
+					i(119784),	-- Oathsworn Pendant
+					i(119795),	-- Oathsworn Amulet
+					i(119785),	-- Oathsworn Band of Might
+					i(119786),	-- Oathsworn Ring of Might
+					i(119797),	-- Oathsworn Band of Stoicism
+					i(119798),	-- Oathsworn Ring of Stoicism
+				},
+			}),
 		}),
 	}),
 });
