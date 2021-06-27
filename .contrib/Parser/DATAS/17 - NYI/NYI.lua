@@ -3477,7 +3477,6 @@ _.NeverImplemented =
 		i(159559),	-- Coralshell Halberd
 		i(159513),	-- Deepwarden Fangs
 		i(159603),	-- Deepwarden Spark
-		i(122069),	-- Nurturer Spear
 		i(159541),	-- Dockyard Mace
 		i(159500),	-- Dockyard Sidearm
 		i(159591),	-- Gnarlwood Cutlass
