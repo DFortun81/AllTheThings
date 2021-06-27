@@ -447,7 +447,7 @@ _.Instances = { tier(1, {	-- Classic
 						["description"] = "Speak with Mizzle after killing |cFFFFD700King Gordok|r to spawn the Tribute Chest.",
 						["g"] = {
 							o(179564, {	-- Gordok Tribute Chest (No Localization)
-								["description"] =  "A full Tribute Run (5 items) requires leaving all bosses alive except King Gordok, and also requires activating the Frost Trap & fooling Kromcrush with the Ogre Suit, granted by the Goblin near the trap.",
+								["description"] = "A full Tribute Run (5 items) requires leaving all bosses alive except King Gordok, and also requires activating the Frost Trap & fooling Kromcrush with the Ogre Suit, granted by the Goblin near the trap.",
 								["model"] = 200953,
 								["modelScale"] = 3,
 								["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",

@@ -649,7 +649,7 @@ _.Zones =
 					["sourceQuests"] = { 37256 },	-- They Came From the Sea
 					["coord"] = { 47.0, 41.3, 630 },
 					["provider"] = { "n", 89341 },	-- Magister Garuhod
-					["g"]  = {
+					["g"] = {
 						i(133814),	-- Recipe: Faronaar Fizz (Rank 1)
 					},
 				}),

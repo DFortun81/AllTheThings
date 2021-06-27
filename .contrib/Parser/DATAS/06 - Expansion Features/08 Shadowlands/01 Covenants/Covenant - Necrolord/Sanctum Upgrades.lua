@@ -701,10 +701,30 @@ _.ExpansionFeatures =
 								["provider"] = { "n", 167603 },	-- Fixer Bixie
 								["coord"] = { 49.0, 36.0, MALDRAXXUS },
 							}),
+							q(58211, {	-- Pumped Up
+								["isDaily"] = true,
+								["provider"] = { "n", 168675 },	-- Varzisk Lidless
+								["coord"] = { 51.2, 16.8, MALDRAXXUS },
+							}),
 							q(58260, {	-- Queens and Future Kings
 								["isDaily"] = true,
 								["provider"] = { "n", 167603 },	-- Fixer Bixie
 								["coord"] = { 49.0, 36.0, MALDRAXXUS },
+							}),
+							q(57964, {	-- Revenge Is Easy
+								["isDaily"] = true,
+								["provider"] = { "n", 160523 },	-- Cyrin Smirk
+								["coord"] = { 51.4, 16.2, MALDRAXXUS },
+							}),
+							q(60482, {	-- See With My Eyes
+								["isDaily"] = true,
+								["provider"] = { "n", 168675 },	-- Varzisk Lidless
+								["coord"] = { 51.2, 16.8, MALDRAXXUS },
+							}),
+							q(60505, {	-- Spider's Lair
+								["isDaily"] = true,
+								["provider"] = { "n", 168675 },	-- Varzisk Lidless
+								["coord"] = { 51.2, 16.8, MALDRAXXUS },
 							}),
 							q(62362, {	-- Volatile Reactions
 								["isDaily"] = true,
@@ -835,3 +855,11 @@ _.HiddenQuestTriggers =
 {
 	q(60773),	-- Triggered shortly after completing 'Dude, Where's My Necropolis' (60184) after NPC RP
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(58377),	-- Abomination Part: Magnificent Skin
+		q(58378),	-- Abomination Part: Regenerative Frame
+		q(58596),	-- Specter Of War: Visectus
+		q(58664),	-- Ultimate Makeover
+	}),
+});

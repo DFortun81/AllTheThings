@@ -207,19 +207,10 @@ _.ExpansionFeatures =
 										}),
 										crit(11, {	-- Necrolord Arsenal
 										}),
-										crit(12, {	-- Venthyr Arsenal
-										}),
 										crit(13, {	-- Kyrian Arsenal
 										}),
-										crit(16, {	-- Vanity Mirror
-										}),
 									}),
-									ach(14681, {	-- Dredger Academy
-										crit(1, {	-- Ardenweald Etiquette
-										}),
-										crit(3, {	-- Maldraxxus Etiquette
-										}),
-									}),
+									ach(14681),		-- Dredger Academy
 									ach(14683),		-- Dredger Style
 									ach(14726, {	-- It's Certainly Never Boring
 										crit(1),	-- Messy
@@ -283,10 +274,12 @@ _.ExpansionFeatures =
 											}),
 											i(181300),	-- Gruesome Flayedwing (MOUNT!)
 											i(181616),	-- A Treatise on the Great Battles of Lordaeron
-											i(181300),	-- Gruesome Flayedwing (MOUNT!)
+											i(181617),	-- Command the Field
 											i(181325),	-- Marrowfused Dagger
 											i(181331),	-- Marrowfused Shield
 											i(181330),	-- Marrowfused Warglaive
+											i(183860),	-- The Death March: An Introduction to Maldraxxi Etiquette
+											i(183844),	-- A Letter of Introduction, The Bonesmith
 											i(181615),	-- Marching an Army
 											i(181327),	-- Spineforged Tenderizer
 										},
@@ -310,6 +303,9 @@ _.ExpansionFeatures =
 											i(181322),	-- Bonebound Tome
 											i(178894),	-- Decree: Baroness Vashj's Boon
 											i(181330),	-- Marrowfused Warglaive
+											i(181264),	-- Plaguelouse Larva (PET!)
+											i(183860),	-- The Death March: An Introduction to Maldraxxi Etiquette
+											i(178892),	-- Decree: Baroness Vashj's Favor
 											i(181327),	-- Spineforged Tenderizer
 										},
 									}),
@@ -328,11 +324,13 @@ _.ExpansionFeatures =
 											i(183883),	-- Bulging Collection of Random Bits
 											i(179605),	-- Elderwood Barrier
 											i(179499),	-- Nightwillow Barb
+											i(183861),	-- The Winter Cycle: A Collection of Ardenweald Etiquettes and Parables
 											i(177233, {	-- Bounding Shroom Seeds
 												crit(4, {	-- Bounding Shroom Seeds
 													["achievementID"] = 14678,	-- Court Favors
 												}),
 											}),
+											i(183882),	-- Collection of Random Bits
 											i(179548),	-- Elderwood Gavel
 											i(179563),	-- Heartwood Stem
 										},
@@ -347,12 +345,14 @@ _.ExpansionFeatures =
 												["achievementID"] = 14724,	-- People Pleaser
 											}),
 											i(183713),	-- Kassir's Crypt Mantle - got when i hit Best Friend, not sure if that was just luck
-											i(183862),	-- A Proper Soiree: A detailed account of Venthyr Etiquette by Theotar (TODO: this is tied to Dredger Academy but i'm not sure where the quest should go as i haven't gotten it yet.  may also drop from other Revendreth-based tributes)
+											i(183862),	-- A Proper Soiree: A detailed account of Venthyr Etiquette by Theotar
 											i(180954),	-- Crypt Watcher's Spire
 											i(180964),	-- Ember Court Barrier
 											i(180956),	-- Axeblade Blunderbuss
 											i(180957),	-- Batwing Glaive
 											i(180963),	-- Crypt Keeper's Vessel
+											i(172957),	-- Atonement Crypt Key
+											-- TODO: add all inquisitor sinstones? e.g. Inquisitor Otilia's Sinstone etc
 										},
 									}),
 									o(356716, {	-- Droman Aliothe's Extravagant Tribute
@@ -368,13 +368,14 @@ _.ExpansionFeatures =
 											i(179538),	-- Grove Warden's Maul
 											i(180628),	-- Pearlwing Heron (PET!)
 											i(179514),	-- Ripvine Saber
-											i(183861),	-- The Winter Cycle: A Collection of Ardenweald Etiquettes and Parables (TODO: this is tied to Dredger Academy but i'm not sure where the quest should go as i haven't gotten it yet.  may also drop from other Ardenweald-based tributes)
+											i(183861),	-- The Winter Cycle: A Collection of Ardenweald Etiquettes and Parables
 											i(179548),	-- Elderwood Gavel
 											i(181438, {	-- The Wild Drum
 												crit(18, {	-- The Wild Drum
 													["achievementID"] = 14678,	-- Court Favors
 												}),
 											}),
+											i(172043),	-- Feast of Gluttonous Hedonism
 										},
 									}),
 									o(356700, {	-- Grandmaster Vole's Extravagant Tribute
@@ -390,10 +391,11 @@ _.ExpansionFeatures =
 												["isWeekly"] = true,
 												["questID"] = 62628,	-- Vole's Voucher
 											}),
-										--	i(181765),	-- Marcel Mullby's Marker TODO: add related quest
+											i(181168),	-- Corpulent Bonetusk (PET!)
+											i(181765),	-- Marcel Mullby's Marker
 											i(181328),	-- Marrowfused Sword
 											i(181330),	-- Marrowfused Warglaive
-											i(183860),	-- The Death March: An Introduction to Maldraxxi Etiquette (TODO: this is tied to Dredger Academy but i'm not sure where the quest should go as i haven't gotten it yet.  may also drop from other Maldraxxus-based tributes)
+											i(183860),	-- The Death March: An Introduction to Maldraxxi Etiquette
 											i(181329),	-- Marrowfused Claymore
 											i(181767),	-- Small Coin Purse
 											i(181327),	-- Spineforged Tenderizer
@@ -409,14 +411,17 @@ _.ExpansionFeatures =
 												["achievementID"] = 14724,	-- People Pleaser
 											}),
 											i(180726),	-- Pale Acidmaw (MOUNT!)
-											i(179605),	-- Elderwood Barrier
-											i(179548),	-- Elderwood Gavel
 											i(181618),	-- Gorm Quishe Platter
 											i(179509),	-- Grove Warden's Edge
 											i(179533),	-- Grove Warden's Harvester
+											i(179605),	-- Elderwood Barrier
 											i(181620),	-- Hard Boiled Gorm Egg
-											i(179585),	-- Nightwillow Shortbow
+											i(179585),	-- Nightwillow Shortbow	
+											i(183861),	-- The Winter Cycle: A Collection of Ardenweald Etiquettes and Parables
+											i(179548),	-- Elderwood Gavel
 											i(183846),	-- Orders to Gormsmith Cavina
+											i(181619),	-- Poached Gorm Eggs
+											
 										},
 									}),
 									o(356733, {	-- Kleia and Pelagos' Extravagant Tribute
@@ -453,11 +458,18 @@ _.ExpansionFeatures =
 												["achievementID"] = 14724,	-- People Pleaser
 											}),
 											i(180726),	-- Pale Acidmaw (MOUNT!)
-											i(181607),	-- Decree: Lady Moonberry's Esteem
 											i(181613),	-- Decree: Lady Moonberry's Boon
 											i(179516),	-- Songwood Staff
+											i(181607),	-- Decree: Lady Moonberry's Esteem
+											i(180639),	-- Dusty Sporeflutterer (PET!)
 											i(179605),	-- Elderwood Barrier
+											i(183861),	-- The Winter Cycle: A Collection of Ardenweald Etiquettes and Parables
 											i(179548),	-- Elderwood Gavel
+											i(177232, {	-- Bewitched Wardrobe
+												crit(3, {	-- Bewitched Wardrobe
+													["achievementID"] = 14678,	-- Court Favors
+												}),
+											}),
 										},
 									}),
 									o(356728, {	-- Mikanikos' Extravagant Tribute
@@ -475,8 +487,10 @@ _.ExpansionFeatures =
 											i(181235),	-- Final Arbiter's Gavel
 											i(181564),	-- Decree: Mikanikos's Esteem
 											i(181230),	-- Pugilist's Chakram
+											i(183863),	-- The Proper Path and Etiquette for Aspirants
 											i(181226),	-- Bronze Dual-Bladed Glaive
 											i(181232),	-- Cupbearer's Claymore
+											i(181565),	-- Decree: Mikanikos's Favor
 											i(181439, {	-- Protective Braziers
 												crit(19, {	-- Protective Braziers
 													["achievementID"] = 14678,	-- Court Favors
@@ -493,10 +507,13 @@ _.ExpansionFeatures =
 											crit(14, {	-- Plague Deviser Marileth
 												["achievementID"] = 14724,	-- People Pleaser
 											}),
+											i(181621),	-- Hyper-Reactive Slime Sample
 											i(181323),	-- Blightclutched Greatstaff
 											i(181326),	-- Bloodstained Hacksaw
 											i(181330),	-- Marrowfused Warglaive
-											i(183860),	-- The Death March: An Introduction to Maldraxxi Etiquette (TODO: this is tied to Dredger Academy but i'm not sure where the quest should go as i haven't gotten it yet.  may also drop from other Maldraxxus-based tributes)
+											i(181622),	-- Slightly Irradiated Slime Sample
+											i(183860),	-- The Death March: An Introduction to Maldraxxi Etiquette
+											i(181623),	-- Fluorescent Slime Sample
 											i(181321),	-- Gem-Crowned Wand
 											i(181327),	-- Spineforged Tenderizer
 											i(181437, {	-- Training Dummies
@@ -518,7 +535,10 @@ _.ExpansionFeatures =
 											i(181317),	-- Dauntless Duskrunner (MOUNT!)
 											i(178897),	-- Stalwart Pauldron of Resolve
 											i(181230),	-- Pugilist's Chakram
+											i(178896),	-- Stalwart Gloves of Resolve
 											i(181228),	-- Temple Guard's Partisan
+											i(183863),	-- The Proper Path and Etiquette for Aspirants
+											i(183845),	-- A Short Letter to Forgelite Sophone
 											i(181226),	-- Bronze Dual-Bladed Glaive
 											i(181232),	-- Cupbearer's Claymore
 											i(177238, {	-- Generous Gift
@@ -526,6 +546,7 @@ _.ExpansionFeatures =
 													["achievementID"] = 14678,	-- Court Favors
 												}),
 											}),
+											i(178895),	-- Stalwart Vambraces of Resolve
 										},
 									}),
 									o(356744, {	-- Rendle and Cudgelface's Extravagant Tribute
@@ -542,12 +563,22 @@ _.ExpansionFeatures =
 											}),
 											i(181780),	-- An Undelivered Tradesman's Shipment
 											i(180962),	-- Sterling-Silver Cudgel
+											i(183862),	-- A Proper Soiree: A detailed account of Venthyr Etiquette by Theotar
 											i(181779),	-- A "Wrapped" Weapon
-											i(181315),	-- Bloodfeaster Spiderling
+											i(180677),	-- Discarded Medal of Valor
+											i(181315),	-- Bloodfeaster Spiderling (PET!)
 											i(180959),	-- Dredger Anklebiter
 											i(180964),	-- Ember Court Barrier
+											i(180710),	-- Pocket Repair Kit
+											i(180707),	-- Sticky Muck
 											i(180956),	-- Axeblade Blunderbuss
 											i(180957),	-- Batwing Glaive
+											i(177237, {	-- Dredger Party Supplies
+												crit(8, {	-- Dredger Party Supplies
+													["achievementID"] = 14678,	-- Court Favors
+												}),
+											}),
+											i(183848),	-- Hastily Scrawled Note to Forgy
 											i(181778),	-- Sack of Shinies
 										},
 									}),
@@ -563,6 +594,7 @@ _.ExpansionFeatures =
 											i(183886),	-- Sika's Rare Ore Pouch
 											i(180815),	-- Brightscale Hatchling (PET!)
 											i(181230),	-- Pugilist's Chakram
+											i(183885),	-- Sika's Spare Ore Pouch
 											i(183863),	-- The Proper Path and Etiquette for Aspirants
 											i(181229),	-- Tranquil's Censer
 											i(177230, {	-- Anima-Infused Water
@@ -572,6 +604,7 @@ _.ExpansionFeatures =
 											}),
 											i(181226),	-- Bronze Dual-Bladed Glaive
 											i(181232),	-- Cupbearer's Claymore
+											i(183884),	-- Pocketful of Assorted Nuggets
 										},
 									}),
 									o(356748, {	-- Stonehead's Extravagant Tribute
@@ -584,18 +617,21 @@ _.ExpansionFeatures =
 												["achievementID"] = 14724,	-- People Pleaser
 											}),
 											i(183709),	-- Bronze-Bound Sinstone
+											i(183862),	-- A Proper Soiree: A detailed account of Venthyr Etiquette by Theotar
 											i(180964),	-- Ember Court Barrier
 											i(180960),	-- Shiny-Metal Topped Basher
 											i(181771),	-- Stonehead's Best Bud Bracelet
+											i(180603),	-- Violet Dredwing Pup (PET!)
 											i(180956),	-- Axeblade Blunderbuss
 											i(180957),	-- Batwing Glaive
+											i(180689),	-- Pocket Embers
 											i(181440, {	-- Slippery Muck
 												crit(20, {	-- Slippery Muck
 													["achievementID"] = 14678,	-- Court Favors
 												}),
 											}),
 											i(180955),	-- Stonewing Halberd
-											i(180603),	-- Violet Dredwing Pup
+											i(178128),	-- Pouch of Shinies
 										},
 									}),
 									o(356741, {	-- The Countess' Extravagant Tribute
@@ -609,10 +645,19 @@ _.ExpansionFeatures =
 											}),
 											i(182209),	-- Desire's Battle Gargon (MOUNT!)
 											i(181566),	-- Decree: The Countess's Boon
+											i(180958),	-- Redelev House Foil
 											i(180961),	-- Silver-Bladed Ritual Dagger
+											i(183862),	-- A Proper Soiree: A detailed account of Venthyr Etiquette by Theotar
+											i(181567),	-- Decree: The Countess's Esteem
 											i(180964),	-- Ember Court Barrier
 											i(182696),	-- The Countess's Parasol (TOY!)
+											i(180956),	-- Axeblade Blunderbuss
 											i(180957),	-- Batwing Glaive
+											i(181436, {	-- Vanity Mirror
+												crit(16, {	-- Vanity Mirror
+													["achievementID"] = 14678,	-- Court Favors
+												}),
+											}),
 										},
 									}),
 								},
@@ -908,6 +953,10 @@ _.ExpansionFeatures =
 								q(63697, {	-- Kleia and Pelagos's Best Friend
 									["provider"] = { "n", 174916 },	-- Kleia
 									["coord"] = { 55.8, 86.4, BASTION },
+								}),
+								q(62626, {	-- Mullby's Marker
+									["provider"] = { "i", 181765 },	-- Marcel Mullby's Marker
+									["repeatable"] = true,
 								}),
 								q(63213, {	-- Naladu the Elder
 									["provider"] = { "n", 176253 },	-- Elder Naladu
@@ -1347,11 +1396,20 @@ _.ExpansionFeatures =
 										}),
 									},
 								}),
+								q(62206, {	-- Ardenweald Etiquette
+									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
+									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
+									["provider"] = { "i", 183861 },	-- The Winter Cycle: A Collection of Ardenweald Etiquettes and Parables
+									["g"] = {
+										crit(1, {	-- Ardenweald Etiquette
+											["achievementID"] = 14681,	-- Dredger Academy
+										}),
+									},
+								}),
 								q(62207, {	-- Bastion Etiquette
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
-									["provider"] = { "n", 172854 },	-- Dredger Butler
-									["cost"] = { { "i", 183863, 1 } },	-- The Proper Path and Etiquette for Aspirants
+									["provider"] = { "i", 183863 },	-- The Proper Path and Etiquette for Aspirants
 									["g"] = {
 										crit(2, {	-- Bastion Etiquette
 											["achievementID"] = 14681,	-- Dredger Academy
@@ -1458,6 +1516,16 @@ _.ExpansionFeatures =
 										}),
 									},
 								}),
+								q(62208, {	-- Maldraxxi Protocols
+									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
+									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
+									["provider"] = { "i", 183860 },	-- The Death March: An Introduction to Maldraxxi Etiquette
+									["g"] = {
+										crit(3, {	-- Maldraxxus Etiquette
+											["achievementID"] = 14681,	-- Dredger Academy
+										}),
+									},
+								}),
 								q(62221, {	-- My Own Death Pony!
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
 									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
@@ -1518,10 +1586,10 @@ _.ExpansionFeatures =
 									["provider"] = { "n", 172854 },	-- Dredger Butler
 									["cost"] = { { "i", 185741, 1 } },	-- 1x Restock and Repair, Tips and Tricks for Keeping the Party Going
 								}),
-								q(62205, {	-- Venthyr Etiquette
+								q(62205, {	-- Venthyr Ettiquette
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
-									["provider"] = { "n", 172854 },	-- Dredger Butler
-									["cost"] = { { "i", 183862, 1 } },	-- 1x A Proper Soiree: A detailed account of Venthyr Etiquette by Theotar
+									["description"] = "Summon your |cFF006211Dredger Butler|r from the Pet Journal.",
+									["provider"] = { "i", 183862 },	-- A Proper Soiree: A detailed account of Venthyr Etiquette by Theotar
 									["g"] = {
 										crit(4, {	-- Revendreth Etiquette
 											["achievementID"] = 14681,	-- Dredger Academy
@@ -1534,6 +1602,9 @@ _.ExpansionFeatures =
 									["provider"] = { "n", 171933 },	-- Alexandros Mograine
 									["coord"] = { 50.4, 67.4, MALDRAXXUS },
 								}),
+								q(62597, {	-- Bonesmith Heirmir
+									["provider"] = { "i", 183844 },	-- A Letter of Introduction, The Bonesmith
+								}),
 								q(61943, {	-- Court Influencer
 									-- ["sourceQuests"] = {  },	-- TODO: unknown
 									["provider"] = { "n", 165399 },	-- Lord Garridan
@@ -1545,6 +1616,12 @@ _.ExpansionFeatures =
 											}),
 										}),
 									},
+								}),
+								q(62598, {	-- Forgelite Sophone
+									["provider"] = { "i", 183845 },	-- A Short Letter to Forgelite Sophone
+								}),
+								q(62601, {	-- Forgy
+									["provider"] = { "i", 183848 },	-- Hastily Scrawled Note to Forgy
 								}),
 								q(61255, {	-- RSVP: Alexandros Mograine
 									["sourceQuests"] = { 61943 },	-- Court Influencer
@@ -1633,6 +1710,18 @@ _.ExpansionFeatures =
 											},
 										}),
 										i(176118),	-- RSVP: Rendle and Cudgelface
+									},
+								}),
+								q(62612, {	-- Venthyr Arsenal
+									["sourceQuests"] = { 62601 },	-- Forgy
+									["provider"] = { "n", 161931 },	-- Forgy
+									["coord"] = { 63.2, 62.7, REVENDRETH },
+									["g"] = {
+										i(177242, {	-- Venthyr Arsenal
+											crit(12, {	-- Venthyr Arsenal
+												["achievementID"] = 14678,	-- Court Favors
+											}),
+										}),
 									},
 								}),
 							}),
@@ -2464,3 +2553,13 @@ _.HiddenQuestTriggers = {
 			q(59690),	-- triggered when using "Racing Permit," reward from "It's Race Day in the Ramparts!" WQ
 			q(59695),	-- triggered when using "Maldraxxi Challenge Banner"
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(59539),	-- For Your Consideration: Baroness Vashj
+		q(59548),	-- For Your Consideration: Lady Moonberry
+		q(59549),	-- For Your Consideration: Mikanikos
+		q(59550),	-- For Your Consideration: The Countess
+		q(59551),	-- Earn Honor 5's RSVP
+		q(59552),	-- Earn Honor 6's RSVP
+	}),
+});

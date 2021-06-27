@@ -142,7 +142,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["u"] = 17,	-- Lunar Festival
 			}),
 			q(8883,  {	-- Valadar Starsong
-				["sourceQuests"] =  { 8867 },	-- Lunar Fireworks
+				["sourceQuests"] = { 8867 },	-- Lunar Fireworks
 				["isBreadcrumb"] = true,
 				["provider"] = { "n", 15895 },	-- Lunar Festival Harbinger
 				["isYearly"] = true,

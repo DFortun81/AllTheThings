@@ -881,7 +881,7 @@ _.ExpansionFeatures =
 							}),
 							q(37165, {	-- Cenrion Concerns
 								["provider"] = { "n", 88004 },	--  Zen'kiki
-								["g"]  = {
+								["g"] = {
 									i(118935),	-- Ever-Blooming Frond
 								},
 							}),

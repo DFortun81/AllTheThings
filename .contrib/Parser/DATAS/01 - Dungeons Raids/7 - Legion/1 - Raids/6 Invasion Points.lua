@@ -189,7 +189,7 @@ _.Instances = { tier(7, {	-- Legion
 					},
 				}),
 				e(2012, {	-- Inquisitor Meto
-					["questID"]  = 49166,
+					["questID"] = 49166,
 					["mapID"] = 930,
 					["modelScale"] = 0.85,
 					["creatureID"] = 124592,

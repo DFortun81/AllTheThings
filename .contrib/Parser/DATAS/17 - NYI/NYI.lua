@@ -143,9 +143,6 @@ _.NeverImplemented =
 				i(32095),	-- Chancellor's Dreadweave Legs
 				i(32096),	-- Chancellor's Dreadweave Manthle
 				i(32097),	-- Chancellor's Dreadweave Robe
-				-- Possible Unused Level 120/Lv 120 Classtrial
-				i(157642),	-- Demonologist's Staff
-				i(157641),	-- Destructive Spellstaff
 			}),
 			i(153289),	-- Eredar Priestess' Tunic
 			i(105710),	-- Lasso Bracers, Humanoid
@@ -359,6 +356,7 @@ _.NeverImplemented =
 			i(114299),	-- Suture-Slice Cloak
 			i(114300),	-- Grimchop Greatcloak
 			i(114301),	-- Axebreak Darkcloak
+			i(59797),	-- Abalone-Linked Robes
 		}),
 		n(-44, {	-- Leather
 			cl(DRUID, {
@@ -391,9 +389,6 @@ _.NeverImplemented =
 				i(7951),		-- Hands of Thero-Shan
 				i(7953),		-- Mask of Thero-Shan
 				i(7949),		-- Leggings of Thero-Shan
-				-- Possible Unused Level 120/Lv 120 Classtrial
-				i(150600),	-- Outlaw's Cutlass
-				i(157637),	-- Swaggering Cutlass
 				-- Transmog set item that never became available
 				i(130327),	-- Artful Britches
 			}),
@@ -549,6 +544,8 @@ _.NeverImplemented =
 			i(163382),	-- 7th Legionnaire's Tunic
 			i(163385),	-- 7th Legionnaire's Belt
 			i(163379),	-- 7th Legionnaire's Pants
+			i(56405),	-- Oasis Bracers
+			i(59796), 	-- Treads of Decapod Death
 		}),
 		n(-45, {	-- Mail
 			cl(SHAMAN, {
@@ -569,31 +566,8 @@ _.NeverImplemented =
 				i(32150),	-- Chancellor's Ringmail Headpiece
 				i(32151),	-- Chancellor's Ringmail Legguards
 				i(32152),	-- Chancellor's Ringmail Shoulders
-				-- Not added boosted Gear
-				i(122010),	-- Stormseeker Vest
-				i(122012),	-- Stormseeker Sabatons
-				i(122013),	-- Stormseeker Grips
-				i(122014),	-- Stormseeker Cowl
-				i(122027),	-- Stormseeker Leggings
-				i(122029),	-- Stormseeker Spaulders
-				i(122030),	-- Stormseeker Girdle
-				i(122031),	-- Stormseeker Bracers
-				i(123336),	-- Stormseeker Vest
-				i(123337),	-- Stormseeker Sabatons
-				i(123338),	-- Stormseeker Grips
-				i(123339),	-- Stormseeker Cowl
-				i(123340),	-- Stormseeker Leggings
-				i(123341),	-- Stormseeker Spaulders
-				i(123342),	-- Stormseeker Girdle
-				i(123343),	-- Stormseeker Bracers
-				i(123344),	-- Stormseeker Vest
-				i(123345),	-- Stormseeker Sabatons
-				i(123346),	-- Stormseeker Grips
-				i(123347),	-- Stormseeker Cowl
-				i(123348),	-- Stormseeker Leggings
-				i(123349),	-- Stormseeker Spaulders
-				i(123350),	-- Stormseeker Girdle
-				i(123351),	-- Stormseeker Bracers
+				i(157677),	-- Hearthbonded Helm (Hunter Future Boost Gear)
+				i(157679),	-- Hearthbonded Spaulders (Hunter Future Boost Gear)
 			}),
 			cl(HUNTER, {
 				i(32133),	-- Chancellor's Chain Armor
@@ -601,14 +575,6 @@ _.NeverImplemented =
 				i(32135),	-- Chancellor's Chain Helm
 				i(32136),	-- Chancellor's Chain Leggings
 				i(32137),	-- Chancellor's Chain Spaulders
-				i(150642),	-- Trailseeker Spaulders
-				i(150637),	-- Trailseeker Vest
-				i(150638),	-- Trailseeker Greaves
-				i(150639),	-- Trailseeker Gauntlets
-				i(150640),	-- Trailseeker Helm
-				i(150641),	-- Trailseeker Legguards
-				i(150643),	-- Trailseeker Belt
-				i(150644),	-- Trailseeker Bracers
 			}),
 			i(163286),	-- Honorbound Vanguard's Footguards
 			i(163291),	-- Honorbound Vanguard's Strikers
@@ -829,30 +795,11 @@ _.NeverImplemented =
 			i(81000),	-- Ringmail Armor of Eminent Domain (not added version)
 			i(80996),	-- Chain Armor of Eminent Domain (not added version)
 			i(37454),	-- HF28 Mail Physical Chest4
-			i(2867),		-- Rough Bronze Bracers (crafted by NYI pattern)
+			i(2867),	-- Rough Bronze Bracers (crafted by NYI pattern)
+			i(140011),	-- Duskwatch Adjudicator's Pauldrons
 		}),
 		n(-46, {	-- Plate
 			cl(DEATHKNIGHT, {
-				i(157677),	-- Hearthbonded Helm (Hunter Future Boost Gear)
-				i(157679),	-- Hearthbonded Spaulders (Hunter Future Boost Gear)
-				i(119485),	-- Heart-Lesion Chestguard
-				i(119487),	-- Heart-Lesion Greaves
-				i(119488),	-- Heart-Lesion Handguards
-				i(119489),	-- Heart-Lesion Faceguard
-				i(119490),	-- Heart-Lesion Legguards
-				i(119496),	-- Heart-Lesion Shoulderguards
-				i(119497),	-- Heart-Lesion Waistband
-				i(119498),	-- Heart-Lesion Armguards
-				i(157618),	-- Unholy Runeblade
-				i(157646),	-- Bloodcaked Runeblade
-				i(157658),	-- Heart-Lesion Breastplate
-				i(157659),	-- Heart-Lesion Sabatons
-				i(157660),	-- Heart-Lesion Gauntlets
-				i(157662),	-- Heart-Lesion Legplates
-				i(157664),	-- Heart-Lesion Girdle
-				i(157665),	-- Heart-Lesion Vambraces)
-				i(157661),	-- Heart-Lesion Helm
-				i(157663),	-- Heart-Lesion Pauldrons
 			}),
 			cl(PALADIN, {
 				i(32153),	-- Chancellor's Lamellar Chestpiece
@@ -869,7 +816,6 @@ _.NeverImplemented =
 				i(157703),	-- Light Soul Pauldrons
 			}),
 			cl(WARRIOR, {
-				i(154041),	-- Oathsworn Faceguard
 				i(157741),	-- Warsinger's Helm
 				i(157743),	-- Warsinger's  Pauldrons
 			}),
@@ -996,6 +942,7 @@ _.NeverImplemented =
 				["description"] = "|CFFFF0000If you had this item drop in SoO please screenshot and submit it to the ATT Discord.\n\nIf you have the item already and are running completionist mode please screenshot as well. Tag: 105642",
 			}),
 			i(103785),	-- Tusks of Mannoroth [Heroic]
+			i(59795),	-- Harp Shell Shoulderplates
 		}),
 		n(-322, {	-- Cloaks
 			i(22230),	-- Frightmaw Hide (Cloak)
@@ -1704,6 +1651,7 @@ _.NeverImplemented =
 		i(55217),	-- Aqua Transform
 		i(55218),	-- Rocky Transform
 		i(55219),	-- Vaporous Transform
+		i(142360),	-- Blazing Ember Signet
 	}),
 	n(-160, {	-- Mounts
 		a(model(9475, i(13325))),		-- Fluorescent Green Mechanostrider (Never added in Game)
@@ -3101,11 +3049,6 @@ _.NeverImplemented =
 			i(179506),	--
 			i(179507),	--
 			i(180863),	--
-			i(157635),	-- Duskfall Daggers
-			i(140703),	-- Duskfall Daggers
-			i(150598),	-- Duskfall Daggers
-			i(140704),	-- Assassins Serrated Dagger
-			i(150599),	-- Assassins Serrated Dagger
 			i(109269),	-- Unknown
 			i(109292),	-- Unknown
 			i(117993),	-- RENAME RANGARI BOOT KNIFE
@@ -3134,7 +3077,6 @@ _.NeverImplemented =
 			i(108788),   	-- Unknown
 			i(108789),   	-- Unknown
 			i(109361),   	-- Unknown
-			i(157639),	-- Spiritbreaker Talons
 			i(109535),   	-- Unknown
 			i(109534),   	-- Unknown
 			i(165269),	-- unknown
@@ -3142,9 +3084,6 @@ _.NeverImplemented =
 			i(159895),	-- honorable combatant's cestus
 			i(161973),	-- honorable combatant's striker
 			i(161974),	-- honorable combatant's cestus
-			i(140708),	-- Earthmenders talons (probably first try for party sync)
-			i(150603),	-- Earthmenders talons (probably first try for party sync)
-			i(157640),	-- Earthmenders talons (probably first try for party sync)
 		}),
 		n(-345, {	-- Guns
 			i(49455),	-- Blunderbuss of Deforestation
@@ -3155,9 +3094,6 @@ _.NeverImplemented =
 			i(108790),	-- Unknown
 			i(109491),	-- Unknown
 			i(109529),	-- Unknown
-			i(140691),	-- Packmasters Rifle
-			i(150586),	-- Packmasters Rifle
-			i(122080),	-- Warscout Shotgun (not added version)
 
 		}),
 		n(-331, {	-- Held in Offhand
@@ -3198,7 +3134,6 @@ _.NeverImplemented =
 			i(108779),	-- Unknown
 			i(108780),	-- Unknown
 			i(108781),	-- Unknown
-			i(157645),	-- Foebreaker's Axe (Lv20 Start Gear?)
 			i(159483),	--Unknown
 			i(159484),	--Unknown
 			i(164967),	--Unknown
@@ -3229,7 +3164,6 @@ _.NeverImplemented =
 			i(179553),	--
 			i(179554),	--
 			i(179555),	--
-			i(157629),	-- Hammer of Faith
 			i(163930),	-- Kovork's Rattle
 			i(109279),	-- Unknown
 			i(109383),	-- Unknown
@@ -3238,14 +3172,11 @@ _.NeverImplemented =
 			i(109470),	-- Unknown
 			i(109533),	-- Unknown
 			i(90331),	-- Face Smasher Warhammer
-			i(140697),	-- Justicar's Hammer
-			i(150592),	-- Justicar's Hammer
+			i(136593), 	-- Doomhammer Offhand Appearance Record (referenced by actual item)
 		}),
 		n(-338, {	-- One-Handed Swords
 			i(134586),	-- Vanguard Hatchet
 			i(134755),	-- Covert Hatchet
-			i(140713),	-- Protector's Axe
-			i(150608),	-- Protector's Axe
 			i(18582),	-- The Twin Blades of Azzinoth
 			i(18583),	-- Warglaive of Azzinoth (Right)
 			i(18584),	-- Warglaive of Azzinoth (Left)
@@ -3255,8 +3186,6 @@ _.NeverImplemented =
 			i(166889),	-- Unknown
 			i(134067),	-- Unknown
 			i(167143),	-- Unknown
-			i(157630),	-- Stalwart's Longsword
-			i(157647),	-- Frost-Etched Runeblade
 			i(43922),	-- Honed Lightblade
 			--i(134067),	-- Unknown
 			i(162447),	-- Marrow Render
@@ -3266,7 +3195,6 @@ _.NeverImplemented =
 			i(161308),	-- Ashvane Captain's Quickblade
 			i(161309),	-- Ashvane Captain's Gladius
 			i(93145),	-- Scavenged Pandaren Sword
-			i(140705),	-- Outlaw Cutlass
 			i(137225),	-- Thunderfury, Blessed Blade of the Windseeker (mog testing)
 			i(47846),	-- Cruel Barb (Glow, Purple - Low)
 			i(147378),	-- Wooden Toy Sword(Visual usage for toy weapon set)
@@ -3330,10 +3258,6 @@ _.NeverImplemented =
 			i(109312),	-- Unknown
 			i(109476),	-- Unknown
 			i(109550),	-- Unknown
-			i(157653),	-- Faithful Shield (Lv20 Start Gear?)
-			i(157654),	-- Stalwart's Bulwark (Lv20 Start Gear?)
-			i(157656),	-- Raincaller's Shield (Lv20 Start Gear?)
-			i(157657),	-- Foebreaker's Barrier (Lv20 Start Gear?)
 			i(34415),	-- Crystaline Shard Shield
 			i(54554),	-- Bejeweled Ship's Wheel
 			i(60220),	-- Unknown
@@ -3352,9 +3276,6 @@ _.NeverImplemented =
 			i(49458),	-- Unknown
 			i(182566),	-- NPE Weapon Staff AGI
 			i(182572),	-- NPE Weapon Staff INT
-			i(157621),	-- Staff of Regrowth (Lv20 Start Gear?)
-			i(157623),	-- Frostcore Staff (Lv20 Start Gear?)
-			i(157624),	-- Staff of Inner Flame (Lv20 Start Gear?)
 			i(157626),	-- Staff of Sining mists (Lv20 Start Gear?)
 			i(176841),	--
 			i(176842),	--
@@ -3385,10 +3306,6 @@ _.NeverImplemented =
 			i(132479),	-- Unknown - was under Legion>Staves
 			i(132480),	-- Unknown - was under Legion>Staves
 			i(132481),	-- Unknown - was under Legion>Staves
-			i(140690),	-- Restorative Ashwood Staff
-			i(140702),	-- whispering Staff of the void
-			i(150585),	-- restorative Ashwood Staff
-			i(150597),	-- whispering Staff of the void
 			i(132482),	-- Unknown - was under Legion>Staves
 			i(132483),	-- Unknown - was under Legion>Staves
 			i(134066),	-- Unknown - was under Legion>Staves
@@ -3430,10 +3347,6 @@ _.NeverImplemented =
 			i(134563),	-- Unknown
 			i(108782),	-- Unknown
 			i(151377),	-- Arne Test Heirloom - Bloodied Arcanite Reaper
-			i(157644),	-- Greataxe of Fury (Lv20 Kul Tiran Warrior Start Gear?
-			i(150607),	-- Greataxe of Fury
-			i(150606),	-- Armsmaster's Greataxe
-			i(140711),	-- Armsmaster's Greataxe
 			i(80980),	-- Axe of Aborted Deforestation (Never made it to Live, yet into our Appearances Tab)
 			i(167142),	-- Unknown (probably discarded idea of crucible of storms loot)
 			i(167145),	-- Unknown (probably discarded idea of crucible of storms loot)
@@ -3443,7 +3356,6 @@ _.NeverImplemented =
 			i(165265),	-- Unknown
 			i(182568),	-- NPE Weapon 2H Axe STR
 			i(177121),	-- Honorbound Decapitator
-			i(177591),	-- Oathsworn Headchopper
 			i(180147),	--
 			i(180148),	--
 			i(180149),	--
@@ -3458,8 +3370,6 @@ _.NeverImplemented =
 		n(-337, {	-- Two Handed Maces
 			i(23457),	-- High Warlord's Destroyer
 			i(137660),	-- The Silver Hand
-			i(140699),	-- Warhammer of Retribution
-			i(150594),	-- Warhammer of Retribution
 			i(159555),	-- Unknown
 			i(165263),	-- Unknown
 			i(108794),	-- Unknown
@@ -3468,11 +3378,6 @@ _.NeverImplemented =
 			i(109401),	-- Unknown
 		}),
 		n(-339, {	-- Two Handed Swords
-			i(140687),	-- Unholy Runeblade (You only get Heart-Lession Gear, even as Unholy)
-			i(140714),	-- Bloodcaked Runeblade (You only get Heart-Lession Gear, even as Unholy)
-			i(150582),	-- Unholy Runeblade (You only get Heart-Lession Gear, even as Unholy)
-			i(150609),	-- Bloodcaked Runeblade (You only get Heart-Lession Gear, even as Unholy)
-			i(153717),	-- Heart-Lession Greatsword (You get the Runeblade)
 			i(33475),	-- Artefact Frostmourne
 			i(137581),	-- Test Ashbringer 1
 			i(49457),	-- Unknown
@@ -3490,9 +3395,6 @@ _.NeverImplemented =
 			i(109373),	-- 6.0 QA Combat Test Strength 2h Sword
 			i(122747),	-- Unknown
 			i(165274),	-- Unknown
-			i(122067),	-- Inexorable Greatsword
-			i(122067),	-- Inexorable Greatsword
-			i(129426),	-- Heart-Lesion Greatsword
 		}),
 		n(-341, {	-- Wands
 			i(161924),	-- Seapriest's Wand (never addedd)
@@ -3518,7 +3420,6 @@ _.NeverImplemented =
 			i(151138), 	-- Warglaive of Azzinoth [This version not implemented; was testing for transmog]
 			i(129737), 	-- Verus
 			i(165682),	-- Unknown
-			i(164760),	-- Illidari Warglaives (Lv100 boosted gear)
 		}),
 		--
 		i(159538),	-- Coldscale Cudgel
@@ -3527,11 +3428,6 @@ _.NeverImplemented =
 		i(159559),	-- Coralshell Halberd
 		i(159513),	-- Deepwarden Fangs
 		i(159603),	-- Deepwarden Spark
-		i(122069),	-- Nurturer Spear
-		i(122074),	-- Duskbreaker Warmaul
-		i(122078),	-- Defiant Greataxe
-		i(122079),	-- Defiant Headchopper
-		i(122093),	-- Defiant Axe
 		i(159541),	-- Dockyard Mace
 		i(159500),	-- Dockyard Sidearm
 		i(159591),	-- Gnarlwood Cutlass
@@ -3617,9 +3513,6 @@ _.NeverImplemented =
 		i(23432),	-- Engraved Greatsword
 		i(32186),	-- Chancellor's Warblade
 		i(54553),	-- Kliklak's Fearsome Greatsword (never made it to live)
-		i(157650),	-- Tracker's Spear
-		i(157648),	-- Oakenstaff Protector
-		i(157620),	-- Halberd of Ferocity
 		i(32173),	-- Chancellor's Bonecracker
 		i(32176),	-- Chancellor's Pummeler
 		i(38468),	-- Kalu'ak Peacebringer
@@ -3630,26 +3523,22 @@ _.NeverImplemented =
 		i(5255),	-- Quilboar Tomahawk
 		i(17142),	-- Shard of the Defiler
 		i(2664),	-- Spinner Fang
-		i(150715),	-- Illidari Warglaive
 		i(3738),	-- Brewing Rod
 		i(128824), 	-- Tome of the Silver Hand
 	}),
 	-- Weapons end
-
-	i(133018),	-- Azsuna Packe 3 Holy 1 Unused
-	i(138229),	-- Nightmare Boss 3 Relic Storm
-	i(140011),	-- Duskwatch Adjudicator's Pauldrons
-	i(33964),	-- Helm of the Stormcaller - Never Added
-	i(8195),		-- Nightscape Cloak										(Pattern never actually went live)
-	i(31279),	-- Enchanted Illidari Tabard [Temp Quest Item]
-	i(56405),	-- Oasis Bracers
-	i(59795),	-- Harp Shell Shoulderplates
-	i(59796), 	-- Treads of Decapod Death
-	i(59797),	-- Abalone-Linked Robes
-	i(67600), 	-- Lil' Alexstrasza										(Never added in Game)
-	i(136593), 	-- Doomhammer Offhand Appearance Record (referenced by actual item)
-	i(142360),	-- Blazing Ember Signet
-	i(146307), 	-- Winter Boots 										(STUCK ON RETRIEVING DATA)						(removed Beta)
+	n(-387,  {	-- Relics
+		i(133018),	-- Azsuna Packe 3 Holy 1 Unused
+	}),
+	n(-797,	{	-- Journal
+		i(67600), 	-- Lil' Alexstrasza (Never added in Game)
+	}),
+	f(104, {	-- Quest
+		i(31279),	-- Enchanted Illidari Tabard [Temp Quest Item]
+	}),
+	f(2, {	-- Cosmetic
+		i(146307), 	-- Winter Boots (STUCK ON RETRIEVING DATA) (removed Beta)
+	}),
 
 ------------------------------------------------------------
 --			T E M P O R A R Y			I T E M S		  --

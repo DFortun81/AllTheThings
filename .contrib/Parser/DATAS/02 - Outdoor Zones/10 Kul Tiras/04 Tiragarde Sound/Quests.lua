@@ -954,7 +954,7 @@ _.Zones =
 					["provider"] = { "n", 128353 },	-- Pendi Cranklefuse
 				}),
 				q(53041, { 	-- Sampling the Goods
-					["sourceQuests"] =  { 50531 },	-- Under Their Noses
+					["sourceQuests"] = { 50531 },	-- Under Their Noses
 					["coord"] = { 75.85, 49.08, 895 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 121239 },	-- Flynn Fairwind

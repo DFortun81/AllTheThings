@@ -7,7 +7,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		["lvl"] = 60,
 		["mapID"] = 157,
 		["coord"] = { 26.0, 50.6, 115 },
-		["maps"] =  { 158, 159 },
+		["maps"] = { 158, 159 },
 		["groups"] = {
 			n(QUESTS, {
 				q(29807, {	-- Death to the Traitor King

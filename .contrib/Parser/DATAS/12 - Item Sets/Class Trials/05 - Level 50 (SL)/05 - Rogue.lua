@@ -33,12 +33,23 @@ _.GearSets =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10052, {	-- Battle for Azeroth
+		n(-5350, {	-- Class Trial Item Sets
+			n(-143, {	-- Lightdrinker
+				["classes"] = { ROGUE },
+				["groups"] = {
+					-- added 8.2.5/Confirmed
+					i(170705),	-- Lightdrinker Choker
+				},
+			}),
+		}),
+	}),
 	n(-10100, {	-- Shadowlands
 		n(-5350, {	-- Class Trial Item Sets
 			n(-143, {	-- Lightdrinker
 				["classes"] = { ROGUE },
-				["groups"] = bubbleDown({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
-					-- added 9.0.1
+				["groups"] = {
+					-- added 9.0.1/No Info
 					i(177536),	-- Lightdrinker Boots
 					i(177537),	-- Lightdrinker Gloves
 					i(177539),	-- Lightdrinker Britches
@@ -53,14 +64,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(177404),	-- Lightdrinker Sword
 					i(177396),	-- Lightdrinker Cloak of Rage
 					i(177397),	-- Lightdrinker Choker
-					-- added 8.2.5
-				}),
-			}),
-			n(-143, {	-- Lightdrinker
-				["classes"] = { ROGUE },
-				["groups"] = {
-				-- added 8.2.5
-					i(170705),	-- Lightdrinker Choker
 				},
 			}),
 		}),

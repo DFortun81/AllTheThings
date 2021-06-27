@@ -56,7 +56,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["crs"] = {
 						131383,	-- Sporecaller Zancha
 					},
-					["g"] =  bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(159654),	-- Corruption Borne Headlopper
 						i(159665),	-- Targee of the Ancient Warder
 						i(159292),	-- Sporecaller's Shroud
@@ -71,7 +71,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					["crs"] = {
 						133007,	-- Unbound Abomination
 					},
-					["g"] =  bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
+					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						ach(12500),	-- Underrot
 						i(159655),	-- Vile Exasanguinator
 						i(159446),	-- Greathelm of the Putrid Path

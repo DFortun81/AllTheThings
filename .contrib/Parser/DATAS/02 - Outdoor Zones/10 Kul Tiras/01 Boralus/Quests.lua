@@ -865,6 +865,7 @@ _.Zones =
 				}),
 				q(56031, {	-- The Wolf's Offensive
 					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
 				}),
 				q(51489, {	-- Time to Leave
 					["sourceQuests"] = { 51488 },	-- Archived Knowledge
@@ -890,6 +891,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 130377 },	-- Courier Gerald
 					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 69.2, 11.6, 1161 },
 				}),
 				q(52194, { 	-- What You May Regret
 					["provider"] = { "n", 122370 },	-- Cyrus Crestfall

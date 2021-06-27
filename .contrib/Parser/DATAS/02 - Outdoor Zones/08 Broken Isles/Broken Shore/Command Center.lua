@@ -8,7 +8,7 @@ _.Zones =
 		m(646, {	-- Broken Shore
 			n(-10049, {	-- Command Center
 				["achievementID"] = 11736,	-- Assume Command
-				["g"] =  {
+				["g"] = {
 					n(122719, {	-- Scouting Map
 						["achievementID"] = 11217,
 						["modelScale"] = 2.75,

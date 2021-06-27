@@ -875,8 +875,8 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		n(-5350, {	-- Class Trial Item Sets
 			n(-140, {	-- Communal
 				["classes"] = { PRIEST },
-				["groups"] = bubbleDown({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
-					-- added 6.0.2
+				["groups"] = {
+					-- added 6.0.2/No Info
 					i(119667),	-- Communal Sandals
 					i(119668),	-- Communal Handwraps
 					i(119669),	-- Communal Hood
@@ -897,36 +897,42 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(119663),	-- Communal Ring of Destruction
 					i(119673),	-- Communal Band of Wisdom
 					i(119674),	-- Communal Ring of Wisdom
-				}),
+				},
 			}),
 			n(-145, {	-- Mountainsage
 				["classes"] = { MAGE },
-				["groups"] = bubbleDown({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
-					-- added 6.0.2
+				["groups"] = {
+					-- added 6.0.2/No Info
 					i(119562),	-- Mountainsage Idol of Destruction
 					i(119565),	-- Mountainsage Stone of Destruction
 					i(119575),	-- Mountainsage Cloak of Destruction
 					i(119561),	-- Mountainsage Medallion
 					i(119563),	-- Mountainsage Band of Destruction
 					i(119564),	-- Mountainsage Ring of Destruction
-				}),
+				},
 			}),
 			n(-141, {	-- Felsoul
 				["classes"] = { WARLOCK },
-				["groups"] = bubbleDown({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
-					-- added 6.0.2
+				["groups"] = {
+					-- added 6.0.2/No Info
 					i(119756),	-- Felsoul Idol of Destruction
 					i(119759),	-- Felsoul Stone of Destruction
 					i(119769),	-- Felsoul Cloak of Destruction
 					i(119755),	-- Felsoul Medallion
 					i(119757),	-- Felsoul Band of Destruction
 					i(119758),	-- Felsoul Ring of Destruction
-				}),
+				},
 			}),
 			n(-147, {	-- Springrain
 				["classes"] = { DRUID },
-				["groups"] = bubbleDown({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
-					-- added 6.0.2
+				["groups"] = {
+					-- added 6.0.1/No Info
+					i(117537),	-- Springrain Idol of Durability
+					i(117540),	-- Springrain Stone of Durability
+					i(117535),	-- Springrain Cloak of Durability
+					-- added 6.0.1/Confirmed
+					i(117536),	-- Springrain Choker
+					-- added 6.0.2/No Info
 					i(119520),	-- Springrain Vest
 					i(119521),	-- Springrain Footpads
 					i(119522),	-- Springrain Handguards
@@ -967,39 +973,28 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(119533),	-- Springrain Ring of Wisdom
 					i(119806),	-- Springrain Ring of Durability
 					i(119807),	-- Springrain Band of Durability
-					-- added 6.0.1
-					i(117537),	-- Springrain Idol of Durability
-					i(117540),	-- Springrain Stone of Durability
-					i(117535),	-- Springrain Cloak of Durability
-				}),
-			}),
-			n(-147, {	-- Springrain
-				["classes"] = { DRUID },
-				["groups"] = {
-					-- added 6.0.1
-					i(117536),	-- Springrain Choker
 				},
 			}),
 			n(-143, {	-- Lightdrinker
 				["classes"] = { ROGUE },
-				["groups"] = bubbleDown({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
-					-- added 6.0.2
+				["groups"] = {
+					-- added 6.0.2/No Info
 					i(119693),	-- Lightdrinker Idol of Rage
 					i(119696),	-- Lightdrinker Stone of Rage
 					i(119691),	-- Lightdrinker Cloak of Rage
 					i(119692),	-- Lightdrinker Choker
 					i(119694),	-- Lightdrinker Band of Onslaught
 					i(119695),	-- Lightdrinker Ring of Onslaught
-				}),
+				},
 			}),
 			n(-144, {	-- Mistdancer
 				["classes"] = { MONK },
-				["groups"] = bubbleDown({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
-					-- added 6.0.1
+				["groups"] = {
+					-- added 6.0.1/No Info
 					i(117130),	-- Mistdancer Defender Stone
 					i(117132),	-- Mistdancer Defender Idol
 					i(117136),	-- Mistdancer Helm <- Might be removed
-					-- added 6.0.2
+					-- added 6.0.2/No Info
 					i(119591),	-- Mistdancer Boots
 					i(119592),	-- Mistdancer Gloves
 					i(119593),	-- Mistdancer Hood
@@ -1025,7 +1020,122 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(119599),	-- Mistdancer Band of Wisdom
 					i(119608),	-- Mistdancer Band of Onslaught
 					i(119609),	-- Mistdancer Ring of Onslaught
-				}),
+				},
+			}),
+			n(-150, {	-- Trailseeker
+				["classes"] = { HUNTER },
+				["groups"] = {
+					-- added 6.0.2/No Info
+					i(119547),	-- Trailseeker Idol of Rage
+					i(119550),	-- Trailseeker Stone of Rage
+					i(119546),	-- Trailseeker Choker
+					i(119548),	-- Trailseeker Band of Onslaught
+					i(119549),	-- Trailseeker Ring of Onslaught
+				},
+			}),
+			n(-148, {	-- Streamtalker
+				["classes"] = { SHAMAN },
+				["groups"] = {
+					-- added 6.0.2/No Info
+					i(119547),	-- Trailseeker Idol of Rage
+					i(119550),	-- Trailseeker Stone of Rage
+					i(119546),	-- Trailseeker Choker
+					i(119548),	-- Trailseeker Band of Onslaught
+					i(119549),	-- Trailseeker Ring of Onslaught
+				},
+			}),
+			n(-149, {	-- Sunsoul
+				["classes"] = { PALADIN },
+				["groups"] = {
+					-- added 6.0.2/No Info
+					i(119628),	-- Sunsoul Idol of Wisdom
+					i(119631),	-- Sunsoul Stone of Wisdom
+					i(119644),	-- Sunsoul Stone of Battle
+					i(119645),	-- Sunsoul Idol of Battle
+					i(119653),	-- Sunsoul Defender Idol
+					i(119656),	-- Sunsoul Defender Stone
+					i(119621),	-- Sunsoul Breastplate
+					i(119623),	-- Sunsoul Boots
+					i(119624),	-- Sunsoul Gloves
+					i(119625),	-- Sunsoul Headpiece
+					i(119626),	-- Sunsoul Leggings
+					i(119632),	-- Sunsoul Spaulders
+					i(119633),	-- Sunsoul Belt
+					i(119634),	-- Sunsoul Armplates
+					i(119646),	-- Sunsoul Chestguard
+					i(119648),	-- Sunsoul Greaves
+					i(119649),	-- Sunsoul Handguards
+					i(119650),	-- Sunsoul Faceguard
+					i(119651),	-- Sunsoul Legguards
+					i(119657),	-- Sunsoul Shoulderguards
+					i(119658),	-- Sunsoul Waistband
+					i(119659),	-- Sunsoul Armguards
+					i(119622),	-- Sunsoul Cloak of Wisdom
+					i(119640),	-- Sunsoul Cloak of Battle
+					i(119647),	-- Sunsoul Cloak of Stoicism
+					i(119627),	-- Sunsoul Necklace
+					i(119641),	-- Sunsoul Pendant
+					i(119652),	-- Sunsoul Amulet
+					i(119629),	-- Sunsoul Ring of Wisdom
+					i(119630),	-- Sunsoul Band of Wisdom
+					i(119642),	-- Sunsoul Ring of Might
+					i(119643),	-- Sunsoul Band of Might
+					i(119654),	-- Sunsoul Ring of Stoicism
+					i(119655),	-- Sunsoul Band of Stoicism
+				},
+			}),
+			n(-146, {	-- Oathsworn
+				["classes"] = { WARRIOR },
+				["groups"] = {
+					-- added 6.0.2/No Info
+					i(119787),	-- Oathsworn Stone of Battle
+					i(119788),	-- Oathsworn Idol of Battle
+					i(119796),	-- Oathsworn Defender Idol
+					i(119799),	-- Oathsworn Defender Stone
+					i(119789),	-- Oathsworn Chestguard
+					i(119791),	-- Oathsworn Greaves
+					i(119792),	-- Oathsworn Handguards
+					i(119793),	-- Oathsworn Faceguard
+					i(119794),	-- Oathsworn Legguards
+					i(119800),	-- Oathsworn Shoulderguards
+					i(119801),	-- Oathsworn Waistband
+					i(119802),	-- Oathsworn Armguards
+					i(119783),	-- Oathsworn Cloak of Battle
+					i(119790),	-- Oathsworn Cloak of Stoicism
+					i(119784),	-- Oathsworn Pendant
+					i(119795),	-- Oathsworn Amulet
+					i(119785),	-- Oathsworn Band of Might
+					i(119786),	-- Oathsworn Ring of Might
+					i(119797),	-- Oathsworn Band of Stoicism
+					i(119798),	-- Oathsworn Ring of Stoicism
+				},
+			}),
+			n(-142, {	-- Heart-Lesion
+				["classes"] = { DEATHKNIGHT },
+				["groups"] = {
+					-- added 6.0.2/Confirmed
+					i(119485),	-- Heart-Lesion Chestguard
+					i(119487),	-- Heart-Lesion Greaves
+					i(119488),	-- Heart-Lesion Handguards
+					i(119489),	-- Heart-Lesion Faceguard
+					i(119490),	-- Heart-Lesion Legguards
+					i(119496),	-- Heart-Lesion Shoulderguards
+					i(119497),	-- Heart-Lesion Waistband
+					i(119498),	-- Heart-Lesion Armguards
+					-- added 6.0.2/No Info
+					i(119483),	-- Heart-Lesion Stone of Battle
+					i(119484),	-- Heart-Lesion Idol of Battle
+					i(119492),	-- Heart-Lesion Defender Idol
+					i(119495),	-- Heart-Lesion Defender Stone
+					i(119479),	-- Heart-Lesion Cloak of Battle
+					i(119486),	-- Heart-Lesion Cloak of Stoicism
+					i(119480),	-- Heart-Lesion Pendant
+					i(119491),	-- Heart-Lesion Amulet
+					i(119481),	-- Heart-Lesion Ring of Might
+					i(119482),	-- Heart-Lesion Band of Might
+					i(119493),	-- Heart-Lesion Ring of Stoicism
+					i(119494),	-- Heart-Lesion Band of Stoicism
+				},
 			}),
 		}),
 	}),

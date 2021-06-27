@@ -31,3 +31,8 @@ _.WorldEvents =
 		},
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(60215),	-- Doomwalkin' Has Come Knockin'
+	}),
+});

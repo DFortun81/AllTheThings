@@ -8,7 +8,7 @@ _.ExpansionFeatures =
 		cl(PRIEST, {
 			["classes"] = { PRIEST },
 			["mapID"] = 702,	-- Netherlight Temple (Priest)
-			["g"] =  {
+			["g"] = {
 				n(QUESTS, {
 					n(-10067, {	-- Artifact Quests
 						i(141332, {	-- The Annals of Light and Shadow

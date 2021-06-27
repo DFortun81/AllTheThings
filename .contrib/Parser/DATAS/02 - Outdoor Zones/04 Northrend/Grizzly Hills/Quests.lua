@@ -746,6 +746,7 @@ _.Zones =
 				}),
 				q(12770, {	-- Reallocating Resources
 					-- NOTE: This quest is mutually exclusive with 12789 (Into the Breach) from Dragonblight
+					["altQuests"] = { 12789 },	-- Into the Breach
 					["coord"] = { 59.4, 26.0, 116 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 26212 },	-- Captain Gryan Stoutmantle

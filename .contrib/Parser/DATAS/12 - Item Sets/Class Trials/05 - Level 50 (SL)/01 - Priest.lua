@@ -29,12 +29,39 @@ _.GearSets =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10052, {	-- Battle for Azeroth
+		n(-5350, {	-- Class Trial Item Sets
+			n(-140, {	-- Communal
+				["classes"] = { PRIEST },
+				["groups"] = {
+					-- added 8.2.5/No Info
+					i(170866),	-- Communal Pants
+					-- added 8.2.5/Confirmed
+					i(170865),	-- Communal Cowl
+					i(170703),	-- Communal Stave
+					i(170690),	-- Communal Medallion
+					i(170696),	-- Communal Necklace	*LA0104
+					i(170868),	-- Communal Mantle
+					i(170702),	-- Communal Cloak of Destruction
+					i(170867),	-- Communal Robe
+					i(170870),	-- Communal Bindings
+					i(170864),	-- Communal Gloves
+					i(170869),	-- Communal Sash
+					i(170863),	-- Communal Boots
+					i(170692),	-- Communal Band of Destruction
+					i(170693),	-- Communal Ring of Destruction
+					i(170694),	-- Communal Stone of Destruction
+					i(170691),	-- Communal Idol of Destruction
+				},
+			}),
+		}),
+	}),
 	n(-10100, {	-- Shadowlands
 		n(-5350, {	-- Class Trial Item Sets
 			n(-140, {	-- Communal
 				["classes"] = { PRIEST },
-				["groups"] = bubbleDown({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
-					-- added 9.0.1
+				["groups"] = {
+					-- added 9.0.1/No Info
 					i(177521),	-- Communal Sandals
 					i(177522),	-- Communal Handwraps
 					i(177524),	-- Communal Leggings
@@ -58,28 +85,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(177383),	-- Communal Medallion
 					i(177389),	-- Communal Necklace
 					i(177394),	-- Communal Staff
-					-- added 8.2.5
-					i(170866),	-- Communal Pants
-				}),
-			}),
-			n(-140, {	-- Communal
-				["classes"] = { PRIEST },
-				["groups"] = {
-					i(170865),	-- Communal Cowl
-					i(170703),	-- Communal Stave
-					i(170690),	-- Communal Medallion
-					i(170696),	-- Communal Necklace	*LA0104
-					i(170868),	-- Communal Mantle
-					i(170702),	-- Communal Cloak of Destruction
-					i(170867),	-- Communal Robe
-					i(170870),	-- Communal Bindings
-					i(170864),	-- Communal Gloves
-					i(170869),	-- Communal Sash
-					i(170863),	-- Communal Boots
-					i(170692),	-- Communal Band of Destruction
-					i(170693),	-- Communal Ring of Destruction
-					i(170694),	-- Communal Stone of Destruction
-					i(170691),	-- Communal Idol of Destruction
 				},
 			}),
 		}),

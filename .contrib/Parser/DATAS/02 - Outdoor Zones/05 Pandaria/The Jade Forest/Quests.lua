@@ -534,7 +534,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(31742, {	-- Fractured Forces
-					["sourceQuests"]  = {
+					["sourceQuests"] = {
 						31738,	-- Pillaging Peons
 						29552,	-- Critical Condition
 						31740,	-- Koukou's Rampage
@@ -1048,7 +1048,7 @@ _.Zones =
 					["coord"] = { 44.2, 15.0, 371 },
 				}),
 				q(29885, {	-- Road Rations
-					["sourceQuests"]  = { 29562 },	-- Jailbreak
+					["sourceQuests"] = { 29562 },	-- Jailbreak
 					["provider"] = { "n", 66949 },	-- Rell Nightwind
 					["coord"] = { 58.8, 81.9, 371 },
 					["races"] = ALLIANCE_ONLY,
@@ -1192,7 +1192,7 @@ _.Zones =
 					["coord"] = { 48.5, 20.6, 371 },
 				}),
 				q(31743, {	-- Smoke Before Fire
-					["sourceQuests"]  = {
+					["sourceQuests"] = {
 						31738,	-- Pillaging Peons
 						29552,	-- Critical Condition
 						31740,	-- Koukou's Rampage
@@ -1306,7 +1306,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(30070, {	-- The Fall of Ga'trul
-					["sourceQuests"]  = {
+					["sourceQuests"] = {
 						31741,	-- Twinspire Keep
 						31744,	-- Unfair Trade
 						31742,	-- Fractured Forces
@@ -1407,7 +1407,7 @@ _.Zones =
 					["coord"] = { 54.1, 82.5, 371 },
 				}),
 				q(29883, {	-- The Pearlfin Situation
-					["sourceQuests"]  = { 29562 },	-- Jailbreak
+					["sourceQuests"] = { 29562 },	-- Jailbreak
 					["provider"] = { "n", 66949 },	-- Rell Nightwind
 					["coord"] = { 58.8, 81.9, 371 },
 					["races"] = ALLIANCE_ONLY,
@@ -1595,7 +1595,7 @@ _.Zones =
 					["coord"] = { 61.1, 36.3, 372 },
 				}),
 				q(31741, {	-- Twinspire Keep
-					["sourceQuests"]  = {
+					["sourceQuests"] = {
 						31738,	-- Pillaging Peons
 						29552,	-- Critical Condition
 						31740,	-- Koukou's Rampage
@@ -1610,7 +1610,7 @@ _.Zones =
 					["coord"] = { 41.0, 73.9, 371 },
 				}),
 				q(31744, {	-- Unfair Trade
-					["sourceQuests"]  = {
+					["sourceQuests"] = {
 						31738,	-- Pillaging Peons
 						29552,	-- Critical Condition
 						31740,	-- Koukou's Rampage

@@ -402,7 +402,7 @@ _.ExpansionFeatures =
 						q(53118, {	-- Dented Coin
 							["repeatable"] = true,
 							["provider"] = { "n", 122370 },	-- Cyrus Crestfall <Harbormaster>
-							["races"] =  ALLIANCE_ONLY,
+							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								i(174504),	-- Proudmoore War Copper
 							},
@@ -416,7 +416,7 @@ _.ExpansionFeatures =
 						q(53120, {	-- Exotic Spices
 							["repeatable"] = true,
 							["provider"] = { "n", 136269 },	-- Xun Xun Sweetflower <Exotic Food & Spices>
-							["races"] =  ALLIANCE_ONLY,
+							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								i(174503),	-- Exotically Spiced Carrot
 							},
@@ -459,7 +459,7 @@ _.ExpansionFeatures =
 						q(53119, {	-- Lost Sea Scroll
 							["repeatable"] = true,
 							["provider"] = { "n", 130576 },	-- Brother Pike
-							["races"] =  ALLIANCE_ONLY,
+							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								i(174505),	-- Tide-Speaker's Tome
 							},
@@ -473,7 +473,7 @@ _.ExpansionFeatures =
 						q(53117, {	-- Rusted Alliance Insignia [Alliance]
 							["repeatable"] = true,
 							["provider"] = { "n", 135446 },	-- Vindicator Jaelaana <7th Legion Emissary>
-							["races"] =  ALLIANCE_ONLY,
+							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								i(174507),	-- Fallen Soldier's Insignia
 							},

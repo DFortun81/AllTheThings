@@ -2267,3 +2267,9 @@ _.ExpansionFeatures =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(58801),	-- Enter the Void
+		q(58904),	-- Shards of Corruption
+	}),
+});

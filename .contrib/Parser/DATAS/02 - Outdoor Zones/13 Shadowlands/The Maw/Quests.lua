@@ -901,13 +901,16 @@ _.Zones =
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
+		q(60902),	-- A Dark Song
 		q(61496),	-- A Familiar Energy
 		q(60141),	-- Coldheart Interstitia
 		q(60132),	-- Constellan Writs and Stygia
 		q(62855),	-- Edict of the Eternal Ones
 		q(60182),	-- Feasting Soul Eater
+		q(60769),	-- Flames of Torment
 		q(60645),	-- Gargantuan Seeker
 		q(62593),	-- Hunt: Death Elementals
+		q(57506),	-- Light Lost
 		q(60140),	-- Mort'regar
 		q(57692),	-- Prisoner Transfers
 		q(62074),	-- Professions - Reuse
@@ -926,8 +929,11 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(62101),	-- Professions - Reuse
 		q(62102),	-- Professions - Reuse
 		q(62103),	-- Professions - Reuse
+		q(60161),	-- Quest #60161		-- I can't even find a name for this quest.
 		q(61314),	-- REUSE ME - SCS
 		q(60757),	-- Skeleton Key
+		q(59168),	-- Soul Hole
+		q(59169),	-- Soul Hole
 		q(61495),	-- Soul Salvation
 		q(61508),	-- Soul Salvation
 		q(61513),	-- Soul Salvation
