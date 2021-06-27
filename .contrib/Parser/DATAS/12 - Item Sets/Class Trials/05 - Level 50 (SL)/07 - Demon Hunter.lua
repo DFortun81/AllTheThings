@@ -31,8 +31,8 @@ _.GearSets =
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-10100, {	-- Shadowlands
 		n(-5350, {	-- Class Trial Item Sets
-			n(-142, {	-- Heart-Lesion
-				["classes"] = { DEATHKNIGHT },
+			n(-224, {	-- Illidari
+				["classes"]  = { DEMONHUNTER },
 				["groups"] = {
 					-- added 9.0.1/No Info
 					i(177568),	-- Illidari Leggings

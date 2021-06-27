@@ -55,22 +55,56 @@ _.GearSets =
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-9982, {	-- Legion
 		n(-5350, {	-- Class Trial Item Sets
-			n(-146, {	-- Oathsworn
-				["classes"] = { WARRIOR },
-				["groups"] = {
-					-- added 7.2.5/No Info
-					i(150701),	-- Oathsworn Breastplate
-					i(150702),	-- Oathsworn Sabatons
-					i(150703),	-- Oathsworn Gauntlets
-					i(150704),	-- Oathsworn Helm
-					i(150705),	-- Oathsworn Legplates
-					i(150706),	-- Oathsworn Pauldrons
-					i(150707),	-- Oathsworn Girdle
-					i(150708),	-- Oathsworn Vambraces
-					-- added 7.3.5/Confirmed
-					i(154041),	-- Oathsworn Faceguard
-
-				},
+			cl(WARRIOR, {
+				n(-146, {	-- Oathsworn
+					["classes"] = { WARRIOR },
+					["groups"] = {
+						-- added 7.2.5/No Info
+						i(150701),	-- Oathsworn Breastplate
+						i(150702),	-- Oathsworn Sabatons
+						i(150703),	-- Oathsworn Gauntlets
+						i(150704),	-- Oathsworn Helm
+						i(150705),	-- Oathsworn Legplates
+						i(150706),	-- Oathsworn Pauldrons
+						i(150707),	-- Oathsworn Girdle
+						i(150708),	-- Oathsworn Vambraces
+						-- added 7.3.5/Confirmed
+						i(154041),	-- Oathsworn Faceguard
+					},
+				}),
+				-- added 7.0.3/No Info
+				i(122078),	-- Defiant Greataxe
+				i(122079),	-- Defiant Headchopper
+				i(122093),	-- Defiant Axe
+				i(122056),	-- Defiant Stone of Battle
+				i(122057),	-- Defiant Idol of Battle
+				i(122060),	-- Defiant Defender Idol
+				i(122063),	-- Defiant Defender Stone
+				i(122046),	-- Defiant Breastplate
+				i(122047),	-- Defiant Greaves
+				i(122048),	-- Defiant Faceguard
+				i(122049),	-- Defiant Legguards
+				i(122051),	-- Defiant Shoulderguards
+				i(122064),	-- Defiant Waistband
+				i(122065),	-- Defiant Armguards
+				i(122066),	-- Defiant Handguards
+				i(123368),	-- Defiant Breastplate
+				i(123369),	-- Defiant Greaves
+				i(123370),	-- Defiant Faceguard
+				i(123371),	-- Defiant Legguards
+				i(123372),	-- Defiant Shoulderguards
+				i(123373),	-- Defiant Waistband
+				i(123374),	-- Defiant Armguards
+				i(123375),	-- Defiant Handguards
+				i(122052),	-- Defiant Cloak of Battle
+				i(122058),	-- Defiant Cloak of Stoicism
+				i(122053),	-- Defiant Pendant
+				i(122059),	-- Defiant Amulet
+				i(122054),	-- Defiant Band of Might
+				i(122055),	-- Defiant Ring of Might
+				i(122061),	-- Defiant Band of Stoicism
+				i(122062),	-- Defiant Ring of Stoicism
+				i(122050),	-- Defiant Bulwark
 			}),
 		}),
 	}),

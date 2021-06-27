@@ -3470,8 +3470,6 @@ _.NeverImplemented =
 			i(109373),	-- 6.0 QA Combat Test Strength 2h Sword
 			i(122747),	-- Unknown
 			i(165274),	-- Unknown
-			i(122067),	-- Inexorable Greatsword
-			i(122067),	-- Inexorable Greatsword
 		}),
 		n(-341, {	-- Wands
 			i(161924),	-- Seapriest's Wand (never addedd)
@@ -3507,9 +3505,6 @@ _.NeverImplemented =
 		i(159603),	-- Deepwarden Spark
 		i(122069),	-- Nurturer Spear
 		i(122074),	-- Duskbreaker Warmaul
-		i(122078),	-- Defiant Greataxe
-		i(122079),	-- Defiant Headchopper
-		i(122093),	-- Defiant Axe
 		i(159541),	-- Dockyard Mace
 		i(159500),	-- Dockyard Sidearm
 		i(159591),	-- Gnarlwood Cutlass
