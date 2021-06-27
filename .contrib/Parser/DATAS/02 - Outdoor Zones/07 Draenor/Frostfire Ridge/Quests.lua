@@ -834,7 +834,7 @@ _.Zones =
 					["coord"] = { 73.4, 58.8, 525 },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 34123,	-- To Thunder Pass
-					["g"]  = {
+					["g"] = {
 						i(106169),	-- Frostwolf Ringmail Cap
 						i(106137),	-- Frostwolf Scout's Cap
 						i(106146),	-- Frostwolf Stalwart Cap

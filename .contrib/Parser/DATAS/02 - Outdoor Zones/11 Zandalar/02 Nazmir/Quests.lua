@@ -1330,7 +1330,7 @@ _.Zones =
 					["provider"] = { "n", 127215 },	-- Shadow Hunter Da'jul
 					["coord"] = { 31.0, 52.0, 863 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] =  { 48854 },	-- Offer of Power
+					["sourceQuests"] = { 48854 },	-- Offer of Power
 				}),
 				q(54145, {	-- The Loa of Death
 					["provider"] = { "n", 146824 },	-- Princess Talanji

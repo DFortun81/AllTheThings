@@ -12250,7 +12250,7 @@ end
 local function NestSourceQuests(root, addedQuests, depth)
 	-- root is already the cloned source of the new list, just add each sourceQuest cloned into sub-groups
 	-- setup tracking which quests have been added as a sub-group, so we can only add them once
-	if not addedQuests then addedQuests =  {}; end
+	if not addedQuests then addedQuests = {}; end
 	root.visible = true;
 	root.hideText = true;
 	root.depth = depth or 0;

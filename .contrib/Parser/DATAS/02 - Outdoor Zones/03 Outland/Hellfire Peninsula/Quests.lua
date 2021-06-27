@@ -224,8 +224,7 @@ _.Zones =
 						49862,	-- To Outland [Breadcrumb]
 						-- #endif
 						-- #if AFTER 9.0.1.36230
-						60959,	-- Burning Crusade: Onward to Adventure in Outland [Alliance?]
-						60961,	-- Burning Crusade: Onward to Adventure in Outland [Horde?]
+						60959,	-- Burning Crusade: Onward to Adventure in Outland [Alliance]
 						-- #endif
 					},
 					["coord"] = { 87.3, 50.7, HELLFIRE_PENINSULA },
@@ -246,8 +245,7 @@ _.Zones =
 						49816,	-- To Outland [Breadcrumb]
 						-- #endif
 						-- #if AFTER 9.0.1.36230
-						60959,	-- Burning Crusade: Onward to Adventure in Outland [Alliance?]
-						60961,	-- Burning Crusade: Onward to Adventure in Outland [Horde?]
+						60961,	-- Burning Crusade: Onward to Adventure in Outland [Horde]
 						-- #endif
 					},
 					["coord"] = { 87.3, 49.8, HELLFIRE_PENINSULA },

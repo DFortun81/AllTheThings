@@ -543,7 +543,7 @@ _.Zones =
 					["sourceQuests"] = { 57477 },	-- We're Gonna Need a Bigger Dredger
 					["provider"] = { "n", 157898 },	-- Bootus
 					["coord"] = { 72.8, 73.9, REVENDRETH },
-					["g"] =  {
+					["g"] = {
 						i(177656),	-- Boot-a-Charge Flyers
 						i(177655),	-- Air Bootuses
 						i(177654),	-- Bootus Shocks
@@ -820,7 +820,7 @@ _.Zones =
 				q(60275, {	-- WANTED: Enforcer Kristof
 					["provider"] = { "o", 351874 },	-- Wanted: Enforcer Kristof
 					["coord"] = { 30.6, 48.9, REVENDRETH },
-					["g"] =  {
+					["g"] = {
 						i(181714),	-- Jeweled Hand Fan
 					},
 				}),
@@ -831,7 +831,7 @@ _.Zones =
 				q(60276, {	-- WANTED: Summoner Marcelis
 					["provider"] = { "o", 351888 },	-- Wanted: Summoner Marcelis
 					["coord"] = { 30.8, 49.0, REVENDRETH },
-					["g"] =  {
+					["g"] = {
 						i(180459),	-- Dessication Duster
 					},
 				}),
@@ -841,7 +841,7 @@ _.Zones =
 				--	mob is in the endmire, so possibly after 'the endmire'?  ('the endmire' is also available prior to doing 'a plea to revendreth')
 					["provider"] = { "o", 351889 },	-- Wanted: The Pale Doom
 					["coord"] = { 62.2, 63.5, REVENDRETH },
-					["g"] =  {
+					["g"] = {
 						i(180458),	-- Writ of Tithe Exemption
 					},
 				}),

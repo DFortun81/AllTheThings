@@ -609,7 +609,7 @@ _.ExpansionFeatures =
 			m(244, {	-- Tol Barad
 				["description"] = "Tol Barad is a world PvP zone very similar to Wintergrasp. A battle starts on even intervals of time, and the winner of the match gains access to the Baradin Hold raid, as well as a number of special daily quests that grant reputation and currency. In addition to this, both winner and loser gain access to the standard quests in the zone.",
 				["icon"] = "Interface\\Icons\\achievement_bg_winwsg",
-				["maps"] =  { 773 },	-- Tol Barad (used in "An Eye for a Scepter" Warlock artifact scenario)
+				["maps"] = { 773 },	-- Tol Barad (used in "An Eye for a Scepter" Warlock artifact scenario)
 				["g"] = {
 					pvp(n(ACHIEVEMENTS, {	-- pvp map
 						ach(5718, {	-- Just Another Day in Tol Barad (A)

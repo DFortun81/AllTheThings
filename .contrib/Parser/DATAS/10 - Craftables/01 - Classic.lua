@@ -1296,7 +1296,7 @@ _.Craftables = { tier(1, {	-- Classic
 				i(20479),	-- Spitfire Breastplate
 				i(20478),	-- Sandstalker Breastplate
 				un(REMOVED_FROM_GAME, i(20380, {	-- Dreamscale Breastplate
-					["description"] =  "While this recipe is still available, the mats required to craft it are not",
+					["description"] = "While this recipe is still available, the mats required to craft it are not",
 				})),
 				un(REMOVED_FROM_GAME, i(22664)),	-- Icy Scale Breastplate
 				un(REMOVED_FROM_GAME, i(15047)),	-- Red Dragonscale Breastplate
@@ -1584,7 +1584,7 @@ _.Craftables = { tier(1, {	-- Classic
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-10002, {	-- Classic
 		prof(LEATHERWORKING, {
-				i(8195),	-- Nightscape Cloak	(Pattern never actually went live) 
+				i(8195),	-- Nightscape Cloak	(Pattern never actually went live)
 		}),
 	}),
 });

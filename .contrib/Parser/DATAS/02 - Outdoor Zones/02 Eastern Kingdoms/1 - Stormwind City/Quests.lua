@@ -442,7 +442,7 @@ _.Zones =
 						{ "n", 13283 },	-- Lord Tony Romano
 					},
 					["classes"] = { ROGUE },
-					["coords"] =  {
+					["coords"] = {
 						{ 79.6, 61.2, STORMWIND_CITY },	-- Arthur Huwe
 						{ 79.6, 60.8, STORMWIND_CITY },	-- Lord Tony Romano
 					},

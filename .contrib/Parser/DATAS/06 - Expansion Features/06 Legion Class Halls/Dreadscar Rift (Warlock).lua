@@ -426,7 +426,7 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 101097 },	-- Calydus
 					}),
 					q(42517, {	-- Ritual of Doom
-						["description"] =  "Requires the Demonic Offering Class Hall upgrade.",
+						["description"] = "Requires the Demonic Offering Class Hall upgrade.",
 						["classes"] = { WARLOCK },
 						["coord"] = { 57.0, 41.0, 717 },
 						["provider"] = { "n", 111740 },	-- Mile Raithborne

@@ -2384,7 +2384,7 @@ local x = 5;
 local y = 5;
 local count = 0;
 for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
-	if v[1]  == 1 then
+	if v[1] == 1 then
 		local filter = child:CreateCheckBox(v[3],
 		function(self)
 			self:SetChecked(not app.GetDataMember("UnobtainableItemFilters")[k]);

@@ -166,7 +166,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					69911,	-- Zandalari Warlord
 					69455,	-- Zandalari Water-Binder
 				},
-				["g"] =  {
+				["g"] = {
 					i(95202),	-- Necklace of the Terra-Cotta Archer
 					i(95203),	-- Necklace of the Terra-Cotta Invoker
 					i(95204),	-- Necklace of the Terra-Cotta Mender

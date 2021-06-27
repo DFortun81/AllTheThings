@@ -23,7 +23,7 @@ _.Zones =
 				n(126862, {	-- Baruut the Bloodthirsty
 					["modelScale"] = 0.75,
 					["altQuests"] = { 48701 },	-- WQ
-					["questID"] =  48700,	-- killID
+					["questID"] = 48700,	-- killID
 					["isDaily"] = true,
 					["coord"] = { 44.2, 59.4, 882 },
 					["g"] = {
@@ -238,7 +238,7 @@ _.Zones =
 				}),
 				n(126868, {	-- Turek the Lucid
 					["altQuests"] = { 48726 },	-- WQ
-					["questID"]  = 48706,	-- killID
+					["questID"] = 48706,	-- killID
 					["isDaily"] = true,
 					["coord"] = { 38.6, 65.2, 882 },
 					["g"] = {

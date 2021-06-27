@@ -1076,7 +1076,7 @@ _.Zones =
 				}),
 				q(35237, {	-- Mor'gran Logworks (bonus objective)
 					["coord"] = { 65.4, 32.0, 535 },
-					["races"] =  HORDE_ONLY,
+					["races"] = HORDE_ONLY,
 				}),
 				q(37838, {	-- My Garona
 					["u"] = REMOVED_FROM_GAME,

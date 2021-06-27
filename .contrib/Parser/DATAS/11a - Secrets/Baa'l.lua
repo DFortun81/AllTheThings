@@ -123,7 +123,7 @@ _.Secrets =
 				["modelScale"] = .5,
 				["questID"] = 53634,
 				["coord"] = { 10.0, 82.7, 1161 },	-- Cave Entrance
-				["sourceQuest"] =  53633,	-- Step 12: Eleventh Ordinary Pebble
+				["sourceQuest"] = 53633,	-- Step 12: Eleventh Ordinary Pebble
 				["description"] = "|cFFFFFFFFStep 13:|r Head to Boralus.  At the coordinates provided, there is a well hidden underwater cave.  Its entrance is covered in a layer of seaweed that you can swim through.  Head to the little island inside the cave, and on the right you'll see stalagmites on either side of some red kelp./n/nThe pebble is hidden underneath the kelp around |cFFFFFFFF59.6, 41.8|r, and it's another one where you have to really play with your camera angle to find it.\n\nShift+click to refresh your collection.\n",
 			}),
 			o(303016, {	-- Step 14: Thirteenth Ordinary Pebble

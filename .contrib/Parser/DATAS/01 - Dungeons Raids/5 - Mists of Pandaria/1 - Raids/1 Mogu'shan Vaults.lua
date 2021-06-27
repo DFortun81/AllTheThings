@@ -652,7 +652,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								["achievementID"] = 6724,	-- Heroic: Will of the Emperor
 								["g"] = {
 									{	-- ,Delver of the Vaults
-										["titleID"] =  204,	-- ,Delver of the Vaults
+										["titleID"] = 204,	-- ,Delver of the Vaults
 									},
 								},
 							},
