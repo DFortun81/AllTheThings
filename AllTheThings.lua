@@ -1538,7 +1538,7 @@ end
 local PrintQuestInfo = function(questID, new, info)
 	if app.IsReady and app.Settings:GetTooltipSetting("Report:CompletedQuests") then
 		local searchResults = app.SearchForField("questID", questID)
-		if not searchResults or #searchResults <= 0 or GetRelativeField(searchResults[1], "text", "Unsorted") then
+		if not searchResults or #searchResults <= 0 or GetRelativeField(searchResults[1], "text", L["UNSORTED_1"]) then
 			questID = questID .. " |cffff5c6c(Not in ATT " .. app.Version .. ")|r";
 		else
 			if app.Settings:GetTooltipSetting("Report:UnsortedQuests") then
@@ -1547,8 +1547,10 @@ local PrintQuestInfo = function(questID, new, info)
 			-- tack on an 'HQT' tag if ATT thinks this QuestID is a Hidden Quest Trigger
 			-- (sometimes 'real' quests are triggered complete when other 'real' quests are turned in and contribs may consider them HQT if not yet sourced
 			-- so when a quest flagged as HQT is accepted/completed directly, it will be more noticable of being incorrectly sourced
-			if GetRelativeField(searchResults[1], "text", "Hidden Quest Triggers") then
+			if GetRelativeField(searchResults[1], "text", L["HIDDEN_QUEST_TRIGGERS"]) then
 				questID = questID .. " [HQT]";
+			elseif GetRelativeField(searchResults[1], "text", L["NEVER_IMPLEMENTED"]) then
+				questID = questID .. " |cffff5c6c(Not in ATT " .. app.Version .. " [NYI])|r";
 			end
 		end
 		if new == true then
