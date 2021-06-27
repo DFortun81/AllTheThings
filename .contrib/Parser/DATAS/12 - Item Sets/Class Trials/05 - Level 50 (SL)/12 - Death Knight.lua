@@ -33,6 +33,32 @@ _.GearSets =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10052, {	-- Battle for Azeroth
+		n(-5350, {	-- Class Trial Item Sets
+			n(-142, {	-- Heart-Lesion
+				["classes"] = { DEATHKNIGHT },
+				["groups"] = {
+					-- added 8.2.5/Confirmed
+					i(170590),	-- Heart-Lesion Greatsword
+					i(170770),	-- Heart-Lesion Faceguard
+					i(170593),	-- Heart-Lesion Pendant
+					i(170599),	-- Heart-Lesion Amulet
+					i(170772),	-- Heart-Lesion Shoulderguards
+					i(170598),	-- Heart-Lesion Cloak of Stoicism
+					i(170767),	-- Heart-Lesion Chestguard
+					i(170774),	-- Heart-Lesion Armguards
+					i(170769),	-- Heart-Lesion Handguards
+					i(170773),	-- Heart-Lesion Waistband
+					i(170771),	-- Heart-Lesion Legguards
+					i(170768),	-- Heart-Lesion Greaves
+					i(170602),	-- Heart-Lesion Band of Stoicism
+					i(170601),	-- Heart-Lesion Ring of Stoicism
+					i(170600),	-- Heart-Lesion Defender Idol
+					i(170603),	-- Heart-Lesion Defender Stone
+				},
+			}),
+		}),
+	}),
 	n(-10100, {	-- Shadowlands
 		n(-5350, {	-- Class Trial Item Sets
 			n(-142, {	-- Heart-Lesion
@@ -62,23 +88,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(177294),	-- Heart-Lesion Cloak of Stoicism
 					i(177289),	-- Heart-Lesion Pendant
 					i(177295),	-- Heart-Lesion Amulet
-					-- added 8.2.5/Confirmed
-					i(170590),	-- Heart-Lesion Greatsword
-					i(170770),	-- Heart-Lesion Faceguard
-					i(170593),	-- Heart-Lesion Pendant
-					i(170599),	-- Heart-Lesion Amulet
-					i(170772),	-- Heart-Lesion Shoulderguards
-					i(170598),	-- Heart-Lesion Cloak of Stoicism
-					i(170767),	-- Heart-Lesion Chestguard
-					i(170774),	-- Heart-Lesion Armguards
-					i(170769),	-- Heart-Lesion Handguards
-					i(170773),	-- Heart-Lesion Waistband
-					i(170771),	-- Heart-Lesion Legguards
-					i(170768),	-- Heart-Lesion Greaves
-					i(170602),	-- Heart-Lesion Band of Stoicism
-					i(170601),	-- Heart-Lesion Ring of Stoicism
-					i(170600),	-- Heart-Lesion Defender Idol
-					i(170603),	-- Heart-Lesion Defender Stone
 				},
 			}),
 		}),

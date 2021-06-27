@@ -67,6 +67,22 @@ _.GearSets =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10052, {	-- Battle for Azeroth
+		n(-5350, {	-- Class Trial Item Sets
+			n(-148, {	-- Streamtalker
+				["classes"] = { SHAMAN },
+				["groups"] = {
+					-- added 8.2.5/No Info
+					i(170734),	-- Streamtalker Slicers
+					-- added 8.2.5/Confirmed
+					i(170735),	-- Streamtalker Shield
+					i(170728),	-- Streamtalker Necklace
+					i(170719),	-- Streamtalker Medallion
+					i(170714),	-- Streamtalker Choker
+				},
+			}),
+		}),
+	}),
 	n(-10100, {	-- Shadowlands
 		n(-5350, {	-- Class Trial Item Sets
 			n(-148, {	-- Streamtalker
@@ -109,13 +125,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(177406),	-- Streamtalker Choker
 					i(177411),	-- Streamtalker Medallion
 					i(177420),	-- Streamtalker Necklace
-					-- added 8.2.5/No Info
-					i(170734),	-- Streamtalker Slicers
-					-- added 8.2.5/Confirmed
-					i(170735),	-- Streamtalker Shield
-					i(170728),	-- Streamtalker Necklace
-					i(170719),	-- Streamtalker Medallion
-					i(170714),	-- Streamtalker Choker
 				},
 			}),
 		}),

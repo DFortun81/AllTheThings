@@ -926,6 +926,12 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			n(-147, {	-- Springrain
 				["classes"] = { DRUID },
 				["groups"] = {
+					-- added 6.0.1/No Info
+					i(117537),	-- Springrain Idol of Durability
+					i(117540),	-- Springrain Stone of Durability
+					i(117535),	-- Springrain Cloak of Durability
+					-- added 6.0.1/Confirmed
+					i(117536),	-- Springrain Choker
 					-- added 6.0.2/No Info
 					i(119520),	-- Springrain Vest
 					i(119521),	-- Springrain Footpads
@@ -967,12 +973,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(119533),	-- Springrain Ring of Wisdom
 					i(119806),	-- Springrain Ring of Durability
 					i(119807),	-- Springrain Band of Durability
-					-- added 6.0.1/No Info
-					i(117537),	-- Springrain Idol of Durability
-					i(117540),	-- Springrain Stone of Durability
-					i(117535),	-- Springrain Cloak of Durability
-					-- added 6.0.1/Confirmed
-					i(117536),	-- Springrain Choker
 				},
 			}),
 			n(-143, {	-- Lightdrinker

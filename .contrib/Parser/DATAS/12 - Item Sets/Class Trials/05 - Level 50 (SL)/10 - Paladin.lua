@@ -60,6 +60,20 @@ _.GearSets =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10052, {	-- Battle for Azeroth
+		n(-5350, {	-- Class Trial Item Sets
+			n(-149, {	-- Sunsoul
+				["classes"] = { PALADIN },
+				["groups"] = {
+					-- added 8.2.5/Confirmed
+					i(170674),	-- Sunsoul Shield
+					i(170685),	-- Sunsoul Amulet
+					i(170668),	-- Sunsoul Necklace
+					i(170679),	-- Sunsoul Pendant
+				},
+			}),
+		}),
+	}),
 	n(-10100, {	-- Shadowlands
 		n(-5350, {	-- Class Trial Item Sets
 			n(-149, {	-- Sunsoul
@@ -105,12 +119,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(177362),	-- Sunsoul Necklace
 					i(177372),	-- Sunsoul Pendant
 					i(177378),	-- Sunsoul Amulet
-					-- added 8.2.5/Confirmed
-					i(170674),	-- Sunsoul Shield
-					i(170685),	-- Sunsoul Amulet
-					i(170668),	-- Sunsoul Necklace
-					i(170679),	-- Sunsoul Pendant
-
 				},
 			}),
 		}),

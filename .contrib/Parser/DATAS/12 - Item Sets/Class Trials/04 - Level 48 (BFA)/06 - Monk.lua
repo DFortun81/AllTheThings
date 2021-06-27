@@ -114,9 +114,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(122072),	-- Harmonious Spire
 				i(122073),	-- Harmonious Staff
 				i(122085),	-- Harmonious Sword
-				--
 				i(140695),	-- Staff of the Jade Mist
-				
 			}),
 		}),
 	}),

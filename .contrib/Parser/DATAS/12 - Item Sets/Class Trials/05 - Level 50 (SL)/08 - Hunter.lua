@@ -32,6 +32,17 @@ _.GearSets =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10052, {	-- Battle for Azeroth
+		n(-5350, {	-- Class Trial Item Sets
+			n(-150, {	-- Trailseeker
+				["classes"] = { HUNTER },
+				["groups"] = {
+					-- added 8.2.5/Confirmed
+					i(170633),	-- Trailseeker Choker
+				},
+			}),
+		}),
+	}),
 	n(-10100, {	-- Shadowlands
 		n(-5350, {	-- Class Trial Item Sets
 			n(-150, {	-- Trailseeker
@@ -51,8 +62,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(177326),	-- Trailseeker Cloak of Rage
 					i(177327),	-- Trailseeker Choker
 					i(177332),	-- Trailseeker Shotgun
-					-- added 8.2.5/Confirmed
-					i(170633),	-- Trailseeker Choker
 				},
 			}),
 		}),

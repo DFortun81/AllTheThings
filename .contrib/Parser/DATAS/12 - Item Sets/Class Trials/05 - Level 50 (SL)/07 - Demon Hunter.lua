@@ -29,6 +29,21 @@ _.GearSets =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10052, {	-- Battle for Azeroth
+		n(-5350, {	-- Class Trial Item Sets
+			n(-224, {	-- Illidari
+				["classes"]  = { DEMONHUNTER },
+				["groups"] = {
+					-- added 8.2.5/No Info
+					i(170927),	-- Illidari Shoulders
+					i(170937),	-- Illidari Band
+					i(170938),	-- Illidari Ring
+					-- added 8.2.5/Confirmed
+					i(170939),	-- Illidari Chain
+				},
+			}),
+		}),
+	}),
 	n(-10100, {	-- Shadowlands
 		n(-5350, {	-- Class Trial Item Sets
 			n(-224, {	-- Illidari
@@ -45,12 +60,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(177578),	-- Illidari Ring
 					i(177580),	-- Illidari Drape
 					i(177579),	-- Illidari Chain
-					-- added 8.2.5/No Info
-					i(170927),	-- Illidari Shoulders
-					i(170937),	-- Illidari Band
-					i(170938),	-- Illidari Ring
-					-- added 8.2.5/Confirmed
-					i(170939),	-- Illidari Chain
 				},
 			}),
 		}),

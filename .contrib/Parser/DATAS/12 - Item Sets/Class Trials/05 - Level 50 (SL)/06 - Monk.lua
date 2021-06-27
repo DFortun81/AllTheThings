@@ -56,6 +56,19 @@ _.GearSets =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10052, {	-- Battle for Azeroth
+		n(-5350, {	-- Class Trial Item Sets
+			n(-144, {	-- Mistdancer
+				["classes"] = { MONK },
+				["groups"] = {
+					-- added 8.2.5/Confirmed
+					i(170655),	-- Mistdancer Necklace
+					i(170647),	-- Mistdancer Amulet
+					i(170662),	-- Mistdancer Choker
+				},
+			}),
+		}),
+	}),
 	n(-10100, {	-- Shadowlands
 		n(-5350, {	-- Class Trial Item Sets
 			n(-144, {	-- Mistdancer
@@ -92,10 +105,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(177356),	-- Mistdancer Choker
 					i(177345),	-- Mistdancer Spire
 					i(177353),	-- Mistdancer Staff
-					-- added 8.2.5/Confirmed
-					i(170655),	-- Mistdancer Necklace
-					i(170647),	-- Mistdancer Amulet
-					i(170662),	-- Mistdancer Choker
 				},
 			}),
 		}),

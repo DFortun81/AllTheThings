@@ -74,6 +74,27 @@ _.GearSets =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10052, {	-- Battle for Azeroth
+		n(-5350, {	-- Class Trial Item Sets
+			n(-147, {	-- Springrain
+				["classes"] = { DRUID },
+				["groups"] = {
+					-- added 8.2.5/Confirmed
+					i(170625),	-- Springrain Staff
+					i(170612),	-- Springrain Medallion
+					i(170627),	-- Springrain Choker
+					i(170606),	-- Springrain Choker
+					i(170619),	-- Springrain Necklace
+					i(170626),	-- Springrain Cloak of Durability [NYI]
+					i(170630),	-- Springrain Band of Durability [NYI]
+					i(170614),	-- Springrain Band of Wisdom *LA0422Feral
+					i(170628),	-- Springrain Idol of Durability [NYI]
+					i(170629),	-- Springrain Ring of Durability [NYI]
+					i(170631),	-- Springrain Stone of Durability [NYI]
+				},
+			}),
+		}),
+	}),
 	n(-10100, {	-- Shadowlands
 		n(-5350, {	-- Class Trial Item Sets
 			n(-147, {	-- Springrain
@@ -121,18 +142,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(177314),	-- Springrain Necklace
 					i(177321),	-- Springrain Choker
 					i(177306),	-- Springrain Stave
-					-- added 8.2.5/Confirmed
-					i(170625),	-- Springrain Staff
-					i(170612),	-- Springrain Medallion
-					i(170627),	-- Springrain Choker
-					i(170606),	-- Springrain Choker
-					i(170619),	-- Springrain Necklace
-					i(170626),	-- Springrain Cloak of Durability [NYI]
-					i(170630),	-- Springrain Band of Durability [NYI]
-					i(170614),	-- Springrain Band of Wisdom *LA0422Feral
-					i(170628),	-- Springrain Idol of Durability [NYI]
-					i(170629),	-- Springrain Ring of Durability [NYI]
-					i(170631),	-- Springrain Stone of Durability [NYI]
 				},
 			}),
 		}),

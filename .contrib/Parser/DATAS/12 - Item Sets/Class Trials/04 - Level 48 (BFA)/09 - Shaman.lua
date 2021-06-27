@@ -95,12 +95,12 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 						i(150618),	-- Stormshaper's Bulwark
 						i(150619),	-- Earthmender's Shield
 						i(150602),	-- Talons of Totemic Might
+						-- added 7.3.5/Confirmed
+						i(157640),	-- Raincaller's Talons (probably first try for party sync)
+						i(157656),	-- Raincaller's Shield (Lv20 Start Gear?)
+						i(157639),	-- Spiritbreaker Talons
 					},
 				}),
-				-- added 7.3.5/Confirmed
-				i(157640),	-- Raincaller's Talons (probably first try for party sync)
-				i(157656),	-- Raincaller's Shield (Lv20 Start Gear?)
-				i(157639),	-- Spiritbreaker Talons
 				-- added 7.0.3/Confirmed
 				i(122010),	-- Stormseeker Vest
 				i(122012),	-- Stormseeker Sabatons
@@ -126,6 +126,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(123349),	-- Stormseeker Spaulders
 				i(123350),	-- Stormseeker Girdle
 				i(123351),	-- Stormseeker Bracers
+				i(140708),	-- Earthmenders talons (probably first try for party sync)
 				-- added 7.0.3/No Info
 				i(122006),	-- Stormseeker Idol of Rage
 				i(122009),	-- Stormseeker Stone of Rage
@@ -154,8 +155,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(140738),	-- Stormshaper's Bulwark
 				i(140739),	-- Earthmender's Shield
 				i(140707),	-- Talons of Totemic Might
-				-- added 7.0.3/Confrimed
-				i(140708),	-- Earthmenders talons (probably first try for party sync)
 			}),
 		}),
 	}),

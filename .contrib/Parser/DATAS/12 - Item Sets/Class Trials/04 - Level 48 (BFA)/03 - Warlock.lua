@@ -49,7 +49,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 						i(150615),	-- Staff of Swelling Agony
 						-- added 7.2.5/Confirmed
 						i(150604),	-- Destructive Spellstaff
-						-- 7.3.5/Confirmed
+						-- added 7.3.5/Confirmed
 						i(154022),	-- Felsoul Wand
 						i(157642),	-- Demonologist's Staff
 						i(157641),	-- Destructive Spellstaff

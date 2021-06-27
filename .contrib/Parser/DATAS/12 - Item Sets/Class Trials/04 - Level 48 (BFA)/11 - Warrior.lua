@@ -69,15 +69,15 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 						i(150707),	-- Oathsworn Girdle
 						i(150708),	-- Oathsworn Vambraces
 						i(150620),	-- Protector's Barrier
+						-- added 7.2.5/Confirmed
+						i(150608),	-- Protector's Axe
+						i(150607),	-- Greataxe of Fury
+						i(150606),	-- Armsmaster's Greataxe
 						-- added 7.3.5/Confirmed
 						i(154041),	-- Oathsworn Faceguard
 						i(157645),	-- Foebreaker's Axe (Lv20 Start Gear?)
 						i(157657),	-- Foebreaker's Barrier (Lv20 Start Gear?)
 						i(157644),	-- Greataxe of Fury (Lv20 Kul Tiran Warrior Start Gear?
-						-- added 7.2.5/Confirmed
-						i(150608),	-- Protector's Axe
-						i(150607),	-- Greataxe of Fury
-						i(150606),	-- Armsmaster's Greataxe
 					},
 				}),
 				-- added 7.0.3/No Info

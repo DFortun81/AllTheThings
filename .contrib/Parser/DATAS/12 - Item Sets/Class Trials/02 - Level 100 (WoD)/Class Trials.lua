@@ -437,7 +437,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			n(-147, {	-- Springrain
 				["classes"] = { DRUID },
 				["groups"] = {
-					-- added 6.2.2 /No Info
+					-- added 6.2.2/No Info
 					i(129594),	-- Springrain Jerkin
 					i(129595),	-- Springrain Boots
 					i(129596),	-- Springrain Gloves
@@ -461,46 +461,10 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(129602),	-- Springrain Staff
 				},
 			}),
-			n(-143, {	-- Lightdrinker
-				["classes"] = { ROGUE },
-				["groups"] = {
-					-- added 6.2.2 /No Info
-				},
-			}),
-			n(-144, {	-- Mistdancer
-				["classes"] = { MONK },
-				["groups"] = {
-					-- added 6.2.2 /No Info
-				},
-			}),
-			n(-150, {	-- Trailseeker
-				["classes"] = { HUNTER },
-				["groups"] = {
-					-- added 6.2.2 /No Info
-				},
-			}),
-			n(-148, {	-- Streamtalker
-				["classes"] = { SHAMAN },
-				["groups"] = {
-					-- added 6.2.2 /No Info
-				},
-			}),
-			n(-149, {	-- Sunsoul
-				["classes"] = { PALADIN },
-				["groups"] = {
-					-- added 6.2.2 /No Info
-				},
-			}),
-			n(-146, {	-- Oathsworn
-				["classes"] = { WARRIOR },
-				["groups"] = {
-					-- added 6.2.2 /No Info
-				},
-			}),
 			n(-142, {	-- Heart-Lesion
 				["classes"] = { DEATHKNIGHT },
 				["groups"] = {
-					-- added 6.2.2 /confirmed
+					-- added 6.2.2/Confirmed
 					i(129426),	-- Heart-Lesion Greatsword
 					-- added 6.2.2/No Info
 					i(129449),	-- Heart-Lesion Defender Idol

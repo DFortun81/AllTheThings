@@ -36,7 +36,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				n(-145, {	-- Mountainsage
 					["classes"] = { MAGE },
 					["groups"] = {
-						-- added 7.2.5/Possible Unused Level 120/Lv 120 Classtria
+						-- added 7.2.5/Confirmed
 						i(150651),	-- Mountainsage Cord
 						i(150646),	-- Mountainsage Handwraps
 						i(150647),	-- Mountainsage Hood
@@ -49,7 +49,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 						i(150614),	-- Staff of Arcane Power
 						i(150588),	-- Staff of Inner Flame
 						i(150587),	-- Frostcore Staff
-						-- added 7.3.5
+						-- added 7.3.5/Confirmed
 						i(157623),	-- Frostcore Staff (Lv20 Start Gear?)
 						i(157624),	-- Staff of Inner Flame (Lv20 Start Gear?)
 					},

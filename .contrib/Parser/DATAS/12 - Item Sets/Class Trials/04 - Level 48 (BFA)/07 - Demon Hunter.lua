@@ -53,6 +53,15 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(150729),	-- Illidari Bracers
 					i(150730),	-- Illidari Boots
 					i(150731),	-- Illidari Belt
+				},
+			}),
+		}),
+	}),
+	n(-10052, {	-- Battle for Azeroth
+		n(-5350, {	-- Class Trial Item Sets
+			n(-224, {	-- Illidari
+				["classes"]  = { DEMONHUNTER },
+				["groups"] = {
 					-- added 8.0.1/Confirmed
 					i(164760),	-- Illidari Warglaives (Lv100 boosted gear)
 					-- added 8.0.1/No Info
