@@ -2448,3 +2448,13 @@ _.HiddenQuestTriggers = {
 			q(59690),	-- triggered when using "Racing Permit," reward from "It's Race Day in the Ramparts!" WQ
 			q(59695),	-- triggered when using "Maldraxxi Challenge Banner"
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(59539),	-- For Your Consideration: Baroness Vashj
+		q(59548),	-- For Your Consideration: Lady Moonberry
+		q(59549),	-- For Your Consideration: Mikanikos
+		q(59550),	-- For Your Consideration: The Countess
+		q(59551),	-- Earn Honor 5's RSVP
+		q(59552),	-- Earn Honor 6's RSVP
+	}),
+});

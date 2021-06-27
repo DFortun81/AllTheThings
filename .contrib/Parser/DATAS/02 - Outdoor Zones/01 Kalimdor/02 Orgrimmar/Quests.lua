@@ -1919,6 +1919,12 @@ _.Zones =
 					["coord"] = { 85.2, 14.2, UNDERCITY },
 					["races"] = HORDE_ONLY,
 				}),
+				q(60964, {	-- Mists of Pandaria: Onward to Adventure in Pandaria
+					["repeatable"] = true,
+					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
+					["coord"] = { 40.8, 79.9, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+				}),
 				q(27298, {	-- Seek Out Master Pyreanor
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 43795 },	-- Aponi Brightmane

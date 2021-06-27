@@ -755,6 +755,8 @@ _.ExpansionFeatures =
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(62886),	-- A Call to Service
+		q(60888),	-- Ceremony of Awakening
+		q(60599),	-- Soul Shape
 		q(61554),	-- The Play's The Thing
 		q(63101),	-- XX REUSEME
 	}),

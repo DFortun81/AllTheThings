@@ -246,7 +246,13 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(61326),	-- [[Deprecated]]
 		q(61327),	-- [[Deprecated]]
+		q(61328),	-- [[Deprecated]]
 		q(61329),	-- [[Deprecated]]
+		q(59816),	-- [DNT] Bwonsamdi's Plan
+		q(59820),	-- [DNT] Da Treacherous Loa
+		q(61138),	-- [DNT] Purge the Grove
+		q(59814),	-- [DNT] Words of Mueh'zala
+		q(59810),	-- [DNT]Just A Small Request
 		q(59608),	-- Don't Cross The Streams
 		q(60885),	-- Grove of Awekening
 		q(61056),	-- Niya of Ardenweald

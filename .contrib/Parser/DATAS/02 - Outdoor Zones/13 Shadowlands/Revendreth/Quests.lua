@@ -962,6 +962,8 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(57099),	-- A Dreadful Roundup
 		q(58400),	-- Break the Barrier
 		q(57172),	-- Break Their Will
+		q(58399),	-- Clear the Skies
+		q(61087),	-- Delayed Delivery: Old Gate Parcel
 		q(58402),	-- Destroy Siege Weapons
 		q(57185),	-- Dutybound
 		q(57100),	-- Feeding Time is Over
@@ -971,8 +973,11 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(58404),	-- Kill Elites in Phase
 		q(57414),	-- Mount Up Test
 		q(58401),	-- Ooze Kills
+		q(60228),	-- Sinstone Delivery TBD
 		q(58397),	-- Steal Supplies
 		q(58403),	-- Supercharge Kael'thas
+		q(58328),	-- TBD
+		q(60227),	-- TBD Soulguard Torch
 		q(57228),	-- The Assault on Dreadhollow
 	}),
 });

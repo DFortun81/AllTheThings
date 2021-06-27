@@ -36,6 +36,21 @@ _.ExpansionFeatures =
 							}),
 						}),
 						n(-917, {	-- Tier 2: Streaming Threads
+							q(61193, {	-- A Light Touch
+								["isDaily"] = true,
+								["provider"] = { "n", 171671 },    -- Kofi
+								["coord"] = { 50.3, 21.4, BASTION },
+							}),
+							q(61209, {	-- A Somber Melody
+								["isDaily"] = true,
+								["provider"] = { "n", 171677 },    -- Forgelite Selene
+								["coord"] = { 50.2, 21.3, BASTION },
+							}),
+							q(61199, {	-- Arms Day
+								["isDaily"] = true,
+								["provider"] = { "n", 171671 },    -- Kofi
+								["coord"] = { 50.3, 21.4, BASTION },
+							}),
 							q(61179, {	-- Forge Ahead
 								["provider"] = { "n", 158773 },    -- Capheus
 								["coord"] = { 64.2, 20.0, BASTION },
@@ -43,12 +58,37 @@ _.ExpansionFeatures =
 							q(62280, {	-- Limbo
 								["isWorldQuest"] = true,
 							}),
+							q(61146, {	-- Manifesting Power
+								["isDaily"] = true,
+								["provider"] = { "n", 171677 },    -- Forgelite Selene
+								["coord"] = { 50.2, 21.3, BASTION },
+							}),
+							q(61182, {	-- Pollen Your Weight
+								["isDaily"] = true,
+								["provider"] = { "n", 171671 },    -- Kofi
+								["coord"] = { 50.3, 21.4, BASTION },
+							}),
+							q(61166, {	-- Reduce, Reuse, Recycle
+								["isDaily"] = true,
+								["provider"] = { "n", 171671 },    -- Kofi
+								["coord"] = { 50.3, 21.4, BASTION },
+							}),
 							q(61159, {	-- Signs of Demise
 								["isDaily"] = true,
 								["provider"] = { "n", 171676 },    -- Galakamos
 								["coord"] = { 50.4, 21.2, BASTION },
 							}),
 							q(61157, {	-- Straight to the Point
+								["isDaily"] = true,
+								["provider"] = { "n", 171676 },    -- Galakamos
+								["coord"] = { 50.4, 21.2, BASTION },
+							}),
+							q(61196, {	-- The Secret Ingredient
+								["isDaily"] = true,
+								["provider"] = { "n", 171677 },    -- Forgelite Selene
+								["coord"] = { 50.2, 21.3, BASTION },
+							}),
+							q(61156, {	-- Where There's a Quill...
 								["isDaily"] = true,
 								["provider"] = { "n", 171676 },    -- Galakamos
 								["coord"] = { 50.4, 21.2, BASTION },
@@ -1302,6 +1342,7 @@ _.ExpansionFeatures =
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
+		q(60937),	-- [DNT] Blueprint: Herald's Footpads
 		q(61265),	-- Blueprint: Charm of Alacrity
 	}),
 });

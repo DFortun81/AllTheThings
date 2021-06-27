@@ -965,6 +965,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(58954),	-- [PH] Catch!
 		q(58516),	-- [UNUSED]
 		q(58517),	-- [UNUSED]
+		q(60235),	-- Newfound Power
 		q(61636),	-- PH - UNUSED
 		q(62304),	-- Round 1
 		q(62321),	-- Round 1

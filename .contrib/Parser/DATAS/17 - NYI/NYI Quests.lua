@@ -135,6 +135,7 @@ _.NeverImplemented =
 			q(62303),	-- Classic 50
 			q(62351),	-- Classic 50
 			q(62352),	-- Classic 50
+			q(60185),	-- LFGDungeons - BFA - Ny'alotha Raid Finder - 1st
 			q(62642),	-- LFGDungeons - SL - Heroic Random - 1st
 			q(62643),	-- LFGDungeons - SL - Heroic Random - Nth
 			q(62644),	-- LFGDungeons - SL - Normal Random - 1st

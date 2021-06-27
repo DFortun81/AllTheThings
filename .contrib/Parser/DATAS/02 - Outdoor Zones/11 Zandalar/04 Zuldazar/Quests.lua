@@ -1981,3 +1981,8 @@ _.Zones =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(59225),	-- [DNT] Azerite Reward Test Quest - BJI
+	}),
+});

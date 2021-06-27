@@ -832,9 +832,11 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(62165),	-- Tal-Inara's Call
 		q(62166),	-- Tal-Inara's Call
 		q(59078),	-- The Hook
+		q(60499),	-- The Light's Retribution
 		q(59076),	-- The Minions of Mayhem
 		q(59077),	-- The Plan
 		q(59085),	-- Third Time is a Charm
+		q(60172),	-- This Quest is Temporary
 		q(60155),	-- To Open the Way
 		q(62077),	-- To the Chase
 		q(60138),	-- Unlocking the Gates

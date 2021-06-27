@@ -763,6 +763,12 @@ _.ExpansionFeatures =
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
+		q(60367),	-- Anima Crossing
+		q(59322),	-- Shared Souls		
 		q(62917),	-- Shared Souls
+		q(59320),	-- Souls to Save
+		q(59604),	-- Takin' Down the Beast
+		q(59605),	-- Takin' Down the Beast
+		q(60568),	-- TEMP MAW RUN
 	}),
 });
