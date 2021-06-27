@@ -64,3 +64,10 @@ _.WorldEvents =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(57850),	-- Storied Partnerships
+		q(57852),	-- Dungeon Adventure
+		q(57853),	-- Battleforged Team
+	}),
+});

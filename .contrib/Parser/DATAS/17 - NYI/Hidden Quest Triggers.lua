@@ -4226,7 +4226,6 @@ _.HiddenQuestTriggers = {
 		q(62510),	-- ""
 		q(61534),	-- triggered when looting Mikanikos' Extravagant Tribute for the first time, all i got was Decree: Mikanikos's Boon -- did NOT trigger with the rest of the ending quests, was only after i looted the chest
 		q(61731),	-- Ember Court - after completing Magical Curios
-		q(62208),	-- Ember Court - after Maldraxxi Protocols
 
 		q(62668),	-- after looting a Dirty Glinting Object -- someone on discord got this when turning in Favor: She Had a Stone Heart, but i did not
 		q(58059),	-- when choosing House Briarbane while on "Enacting Immediate Justice"

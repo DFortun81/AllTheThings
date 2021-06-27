@@ -647,6 +647,8 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(60161),	-- Quest #60161		-- I can't even find a name for this quest.
 		q(61314),	-- REUSE ME - SCS
 		q(60757),	-- Skeleton Key
+		q(59168),	-- Soul Hole
+		q(59169),	-- Soul Hole
 		q(61495),	-- Soul Salvation
 		q(61508),	-- Soul Salvation
 		q(61513),	-- Soul Salvation
