@@ -48,6 +48,10 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 						i(150626),	-- Heart-Lesion Pauldrons
 						i(150627),	-- Heart-Lesion Girdle
 						i(150628),	-- Heart-Lesion Vambraces
+						i(150610),	-- Frost-Etched Runeblade
+						-- added 7.2.5/Confirmed
+						i(150582),	-- Unholy Runeblade (You only get Heart-Lession Gear, even as Unholy)
+						i(150609),	-- Bloodcaked Runeblade (You only get Heart-Lession Gear, even as Unholy)
 						-- added 7.3.5/Confirmed
 						i(157658),	-- Heart-Lesion Breastplate
 						i(157659),	-- Heart-Lesion Sabatons
@@ -71,6 +75,10 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 						i(153741),	-- Heart-Lesion Ring of Stoicism
 						i(153740),	-- Heart-Lesion Defender Idol
 						i(153743),	-- Heart-Lesion Defender Stone
+						i(157647),	-- Frost-Etched Runeblade
+						i(153717),	-- Heart-Lession Greatsword (You get the Runeblade)
+						i(157618),	-- Unholy Runeblade
+						i(157646),	-- Bloodcaked Runeblade
 					},
 				}),
 				-- added 7.0.3/No Info
@@ -113,6 +121,9 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(121854),	-- Inexorable Ring of Stoicism
 				i(122068),	-- Inexorable Runeblade
 				i(122084),	-- Inexorable Blade
+				-- added 7.0.3/Confirmed
+				i(140687),	-- Unholy Runeblade (You only get Heart-Lession Gear, even as Unholy)
+				i(140714),	-- Bloodcaked Runeblade (You only get Heart-Lession Gear, even as Unholy)
 			}),
 		}),
 	}),

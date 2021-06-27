@@ -111,9 +111,10 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(122082),	-- Soulward Wand
 				i(122075),	-- Soulward Staff
 				i(122076),	-- Soulward Stave
-				i(140702),	-- Whispering Staff of the Void
 				i(140700),	-- Staff of Dual Convictions
 				i(140701),	-- Staff of Radiance
+				-- added 7.0.3/Confirmed
+				i(140702),	-- Whispering Staff of the Void
 			}),
 		}),
 	}),

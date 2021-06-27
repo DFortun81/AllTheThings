@@ -45,9 +45,10 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 						i(150698),	-- Felsoul Shoulderpads
 						i(150699),	-- Felsoul Cord
 						i(150700),	-- Felsoul Wristwraps
-						i(150604),	-- Destructive Spellstaff
 						i(150605),	-- Demonologist's Staff
 						i(150615),	-- Staff of Swelling Agony
+						-- added 7.2.5/Confirmed
+						i(150604),	-- Destructive Spellstaff
 						-- 7.3.5/Confirmed
 						i(154022),	-- Felsoul Wand
 						i(157642),	-- Demonologist's Staff
@@ -87,9 +88,10 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(122039),	-- Ruinrain Ring of Destruction
 				i(122083),	-- Ruinrain Wand
 				i(122077),	-- Ruinrain Staff
-				i(140709),	-- Destructive Spellstaff
 				i(140710),	-- Demonologist's Staff
 				i(140720),	-- Staff of Swelling Agony
+				-- added 7.0.3/Confirmed
+				i(140709),	-- Destructive Spellstaff
 			}),
 		}),
 	}),

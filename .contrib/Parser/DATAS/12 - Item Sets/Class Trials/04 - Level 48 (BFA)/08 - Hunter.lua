@@ -49,12 +49,14 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 						i(150641),	-- Trailseeker Legguards
 						i(150643),	-- Trailseeker Belt
 						i(150644),	-- Trailseeker Bracers
+						i(150586),	-- Packmasters Rifle
 						-- added 7.3.5/Confirmed
 						i(157650),	-- Tracker's Spear
 					},
 				}),
 				-- added 7.0.3/Confirmed
 				i(122080),	-- Warscout Shotgun (not added version)
+				i(140691),	-- Packmasters Rifle
 				-- added 7.0.3/No Info
 				i(121892),	-- Warscout Idol of Rage
 				i(121895),	-- Warscout Stone of Rage

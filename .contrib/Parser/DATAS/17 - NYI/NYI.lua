@@ -569,6 +569,8 @@ _.NeverImplemented =
 				i(32150),	-- Chancellor's Ringmail Headpiece
 				i(32151),	-- Chancellor's Ringmail Legguards
 				i(32152),	-- Chancellor's Ringmail Shoulders
+				i(157677),	-- Hearthbonded Helm (Hunter Future Boost Gear)
+				i(157679),	-- Hearthbonded Spaulders (Hunter Future Boost Gear)
 			}),
 			cl(HUNTER, {
 				i(32133),	-- Chancellor's Chain Armor
@@ -800,10 +802,6 @@ _.NeverImplemented =
 		}),
 		n(-46, {	-- Plate
 			cl(DEATHKNIGHT, {
-				i(157677),	-- Hearthbonded Helm (Hunter Future Boost Gear)
-				i(157679),	-- Hearthbonded Spaulders (Hunter Future Boost Gear)
-				i(157618),	-- Unholy Runeblade
-				i(157646),	-- Bloodcaked Runeblade
 			}),
 			cl(PALADIN, {
 				i(32153),	-- Chancellor's Lamellar Chestpiece
@@ -3079,7 +3077,6 @@ _.NeverImplemented =
 			i(108788),   	-- Unknown
 			i(108789),   	-- Unknown
 			i(109361),   	-- Unknown
-			i(157639),	-- Spiritbreaker Talons
 			i(109535),   	-- Unknown
 			i(109534),   	-- Unknown
 			i(165269),	-- unknown
@@ -3087,9 +3084,6 @@ _.NeverImplemented =
 			i(159895),	-- honorable combatant's cestus
 			i(161973),	-- honorable combatant's striker
 			i(161974),	-- honorable combatant's cestus
-			i(140708),	-- Earthmenders talons (probably first try for party sync)
-			i(150603),	-- Earthmenders talons (probably first try for party sync)
-			i(157640),	-- Earthmenders talons (probably first try for party sync)
 		}),
 		n(-345, {	-- Guns
 			i(49455),	-- Blunderbuss of Deforestation
@@ -3100,8 +3094,6 @@ _.NeverImplemented =
 			i(108790),	-- Unknown
 			i(109491),	-- Unknown
 			i(109529),	-- Unknown
-			i(140691),	-- Packmasters Rifle
-			i(150586),	-- Packmasters Rifle
 
 		}),
 		n(-331, {	-- Held in Offhand
@@ -3142,7 +3134,6 @@ _.NeverImplemented =
 			i(108779),	-- Unknown
 			i(108780),	-- Unknown
 			i(108781),	-- Unknown
-			i(157645),	-- Foebreaker's Axe (Lv20 Start Gear?)
 			i(159483),	--Unknown
 			i(159484),	--Unknown
 			i(164967),	--Unknown
@@ -3173,7 +3164,6 @@ _.NeverImplemented =
 			i(179553),	--
 			i(179554),	--
 			i(179555),	--
-			i(157629),	-- Hammer of Faith
 			i(163930),	-- Kovork's Rattle
 			i(109279),	-- Unknown
 			i(109383),	-- Unknown
@@ -3182,14 +3172,10 @@ _.NeverImplemented =
 			i(109470),	-- Unknown
 			i(109533),	-- Unknown
 			i(90331),	-- Face Smasher Warhammer
-			i(140697),	-- Justicar's Hammer
-			i(150592),	-- Justicar's Hammer
 		}),
 		n(-338, {	-- One-Handed Swords
 			i(134586),	-- Vanguard Hatchet
 			i(134755),	-- Covert Hatchet
-			i(140713),	-- Protector's Axe
-			i(150608),	-- Protector's Axe
 			i(18582),	-- The Twin Blades of Azzinoth
 			i(18583),	-- Warglaive of Azzinoth (Right)
 			i(18584),	-- Warglaive of Azzinoth (Left)
@@ -3199,8 +3185,6 @@ _.NeverImplemented =
 			i(166889),	-- Unknown
 			i(134067),	-- Unknown
 			i(167143),	-- Unknown
-			i(157630),	-- Stalwart's Longsword
-			i(157647),	-- Frost-Etched Runeblade
 			i(43922),	-- Honed Lightblade
 			--i(134067),	-- Unknown
 			i(162447),	-- Marrow Render
@@ -3273,10 +3257,6 @@ _.NeverImplemented =
 			i(109312),	-- Unknown
 			i(109476),	-- Unknown
 			i(109550),	-- Unknown
-			i(157653),	-- Faithful Shield (Lv20 Start Gear?)
-			i(157654),	-- Stalwart's Bulwark (Lv20 Start Gear?)
-			i(157656),	-- Raincaller's Shield (Lv20 Start Gear?)
-			i(157657),	-- Foebreaker's Barrier (Lv20 Start Gear?)
 			i(34415),	-- Crystaline Shard Shield
 			i(54554),	-- Bejeweled Ship's Wheel
 			i(60220),	-- Unknown
@@ -3366,10 +3346,6 @@ _.NeverImplemented =
 			i(134563),	-- Unknown
 			i(108782),	-- Unknown
 			i(151377),	-- Arne Test Heirloom - Bloodied Arcanite Reaper
-			i(157644),	-- Greataxe of Fury (Lv20 Kul Tiran Warrior Start Gear?
-			i(150607),	-- Greataxe of Fury
-			i(150606),	-- Armsmaster's Greataxe
-			i(140711),	-- Armsmaster's Greataxe
 			i(80980),	-- Axe of Aborted Deforestation (Never made it to Live, yet into our Appearances Tab)
 			i(167142),	-- Unknown (probably discarded idea of crucible of storms loot)
 			i(167145),	-- Unknown (probably discarded idea of crucible of storms loot)
@@ -3393,8 +3369,6 @@ _.NeverImplemented =
 		n(-337, {	-- Two Handed Maces
 			i(23457),	-- High Warlord's Destroyer
 			i(137660),	-- The Silver Hand
-			i(140699),	-- Warhammer of Retribution
-			i(150594),	-- Warhammer of Retribution
 			i(159555),	-- Unknown
 			i(165263),	-- Unknown
 			i(108794),	-- Unknown
@@ -3403,11 +3377,6 @@ _.NeverImplemented =
 			i(109401),	-- Unknown
 		}),
 		n(-339, {	-- Two Handed Swords
-			i(140687),	-- Unholy Runeblade (You only get Heart-Lession Gear, even as Unholy)
-			i(140714),	-- Bloodcaked Runeblade (You only get Heart-Lession Gear, even as Unholy)
-			i(150582),	-- Unholy Runeblade (You only get Heart-Lession Gear, even as Unholy)
-			i(150609),	-- Bloodcaked Runeblade (You only get Heart-Lession Gear, even as Unholy)
-			i(153717),	-- Heart-Lession Greatsword (You get the Runeblade)
 			i(33475),	-- Artefact Frostmourne
 			i(137581),	-- Test Ashbringer 1
 			i(49457),	-- Unknown

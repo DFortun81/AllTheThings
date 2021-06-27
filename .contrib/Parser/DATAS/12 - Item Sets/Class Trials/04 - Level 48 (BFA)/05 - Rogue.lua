@@ -92,6 +92,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(122088),	-- Skulldugger Dagger
 				i(122089),	-- Skulldugger Shiv
 				i(122094),	-- Skulldugger Sword
+				-- 7.0.3/Confirmed
 				i(140703),	-- Duskfall Daggers
 				i(140704),	-- Assassins Serrated Dagger
 				i(140705),	-- Outlaw's Cutlass

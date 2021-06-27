@@ -90,8 +90,17 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 						i(150690),	-- Streamtalker Pauldrons
 						i(150691),	-- Streamtalker Belt
 						i(150692),	-- Streamtalker Armbands
+						i(150603),	-- Earthmenders Talons (probably first try for party sync)
+						i(150601),	-- Stormshaper's Claws
+						i(150618),	-- Stormshaper's Bulwark
+						i(150619),	-- Earthmender's Shield
+						i(150602),	-- Talons of Totemic Might
 					},
 				}),
+				-- added 7.3.5/Confirmed
+				i(157640),	-- Raincaller's Talons (probably first try for party sync)
+				i(157656),	-- Raincaller's Shield (Lv20 Start Gear?)
+				i(157639),	-- Spiritbreaker Talons
 				-- added 7.0.3/Confirmed
 				i(122010),	-- Stormseeker Vest
 				i(122012),	-- Stormseeker Sabatons
@@ -141,6 +150,12 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(122090),	-- Stormseeker Claws
 				i(122091),	-- Stormseeker Talons
 				i(122092),	-- Stormseeker Slicers
+				i(140706),	-- Stormshaper's Claws
+				i(140738),	-- Stormshaper's Bulwark
+				i(140739),	-- Earthmender's Shield
+				i(140707),	-- Talons of Totemic Might
+				-- added 7.0.3/Confrimed
+				i(140708),	-- Earthmenders talons (probably first try for party sync)
 			}),
 		}),
 	}),

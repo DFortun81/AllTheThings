@@ -72,8 +72,9 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 						i(150634),	-- Springrain Spaulders
 						i(150635),	-- Springrain Belt
 						i(150636),	-- Springrain Bracers
-						i(150585),	-- restorative Ashwood Staff
 						i(150583),	-- Staff of Astral Alignment
+						-- added 7.2.5/Confirmed
+						i(150585),	-- Restorative Ashwood Stafft
 						-- added 7.3.5/No Info
 						i(153792),	-- Springrain Staff
 						-- added 7.3.5/Level 110 unused Boost Gear
@@ -104,6 +105,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				}),
 				-- added 7.0.3/Confirmed
 				i(122069),	-- Nurturer Spear
+				i(140690),	-- Restorative Ashwood Staff
 				-- added 7.0.3/No Info
 				i(121870),	-- Nurturer Vest
 				i(121871),	-- Nurturer Footpads
@@ -162,7 +164,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(121883),	-- Nurturer Band of Wisdom
 				i(121884),	-- Nurturer Ring of Wisdom
 				i(122070),	-- Nurturer Staff
-				i(140690),	-- Restorative Ashwood Staff
 				i(140688),	-- Staff of Astral Alignment
 			}),
 		}),

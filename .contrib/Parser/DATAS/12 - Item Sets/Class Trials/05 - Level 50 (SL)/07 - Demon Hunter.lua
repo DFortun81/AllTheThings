@@ -45,7 +45,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(177578),	-- Illidari Ring
 					i(177580),	-- Illidari Drape
 					i(177579),	-- Illidari Chain
-					i(180324),	-- Iremore Necklace
 					-- added 8.2.5/No Info
 					i(170927),	-- Illidari Shoulders
 					i(170937),	-- Illidari Band

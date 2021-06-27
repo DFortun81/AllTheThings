@@ -84,12 +84,25 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 						i(150666),	-- Sunsoul Pauldrons
 						i(150667),	-- Sunsoul Girdle
 						i(150668),	-- Sunsoul Vambraces
+						i(150617),	-- Defender's Bulwark
+						i(150593),	-- Defender's Longsword
+						i(150616),	-- Justicar's Shield
+						-- added 7.2.5/Confirmed
+						i(150592),	-- Justicar's Hammer
+						i(150594),	-- Warhammer of Retribution
 						-- added 7.3.5/No Info
 						i(153890),	-- Sunsoul Shield
+						-- added 7.3.5/Confirmed
+						i(157630),	-- Stalwart's Longsword
+						i(157654),	-- Stalwart's Bulwark (Lv20 Start Gear?)
+						i(157653),	-- Faithful Shield (Lv20 Start Gear?)
+						i(157629),	-- Hammer of Faith
 					},
 				}),
 				-- added 7.0.3/Confirmed
 				i(122074),	-- Duskbreaker Warmaul
+				i(140697),	-- Justicar's Hammer
+				i(140699),	-- Warhammer of Retribution
 				-- added 7.0.3/No Info
 				i(121949),	-- Duskbreaker Idol of Wisdom
 				i(121952),	-- Duskbreaker Stone of Wisdom
@@ -136,6 +149,10 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(121946),	-- Duskbreaker Shield
 				i(121954),	-- Duskbreaker Bulwark
 				i(122087),	-- Duskbreaker Sword
+				i(122086),	-- Duskbreaker Scepter
+				i(140737),	-- Defender's Bulwark
+				i(140698),	-- Defender's Longsword
+				i(140736),	-- Justicar's Shield
 			}),
 		}),
 	}),
