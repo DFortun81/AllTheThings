@@ -1662,6 +1662,17 @@ _.Zones =
 						}),
 					},
 				}),
+				n(179896, {	-- Finn
+					["coord"] = { 61.0, 65.0, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(187009),	-- Dazzling Spectacles
+						i(186092),	-- Historical Perspective Shifters
+						i(186091),	-- Onyx Glare-Reducers
+						i(186090),	-- Simple Glasses
+						i(187010),	-- Tasteful Eyeglasses
+					},
+				}),
 				n(1298,   {	-- Frederick Stover
 					["coord"] = { 58.6, 69.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
