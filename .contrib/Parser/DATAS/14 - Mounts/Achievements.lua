@@ -49,6 +49,7 @@ _.Mounts =
 		i(137614),	-- Frostshard Infernal
 		i(116383),	-- Gorestrider Gronnling
 		i(141216),	-- Grove Defiler
+		i(186653),	-- Hand of Hrestimorak
 		i(186654),	-- Hand of Salaranga
 		i(87776),	-- Heavenly Azure Cloud Serpent
 		i(87773),	-- Heavenly Crimson Cloud Serpent
@@ -63,6 +64,7 @@ _.Mounts =
 		}),
 		i(141217),	-- Leyfeather Hippogryph
 		i(155656),	-- Lightforged Felcrusher (A)
+		i(186655),	-- Mawsworn Charger
 		i(168329),	-- Mechacycle Model W
 		i(174067, {	-- Mechagon Mechanostrider
 			["races"] = ALLIANCE_ONLY,
@@ -94,6 +96,7 @@ _.Mounts =
 		i(182717),	-- Sintouched Deathwalker
 		i(169194),	-- Snapback Scuttler
 		i(128706),	-- Soaring Skyterror
+		i(187525),	-- Soultwisted Deathwalker
 		i(104208),	-- Spawn of Galakras
 		i(156486),	-- Starcursed Voidstrider (A)
 		i(120968),	-- Summon Chauffeur (A)

@@ -19,6 +19,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 				e(2435, {	-- The Tarragrue
 					["crs"] = { 175611 },	-- The Tarragrue
 					["g"] = {
+						crit(1, {	-- The Tarragrue
+							["achievementID"] = 15126,	-- Sanctum of Domination
+						}),
 						i(182750),	-- Carnivorous Stalkers
 						i(182610),	-- Ferocious Appetite
 						i(182113),	-- Fleeting Wind
@@ -51,6 +54,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 						176531,	-- Deathseeker Eye
 					},
 					["g"] = {
+						crit(2, {	-- The Eye of the Jailer
+							["achievementID"] = 15126,	-- Sanctum of Domination
+						}),
 						i(181738),	-- Artifice of the Archmage
 						i(181963),	-- Blood Bond
 						i(182478),	-- Corrupting Leer
@@ -78,6 +84,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 				e(2439, {	-- The Nine
 				--	["crs"] = {  },	-- 
 					["g"] = {
+						crit(3, {	-- The Nine
+							["achievementID"] = 15126,	-- Sanctum of Domination
+						}),
 						i(186656),	-- Sanctum Gloomcharger (MOUNT!) TODO not sure where this falls in the dungeon journal because the game crashes when i scroll to it, so just throwing it at the top for now
 						i(182657),	-- Deadly Chain
 						i(181845),	-- Exaltation
@@ -107,6 +116,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 				e(2444, {	-- Remnant of Ner'zhul
 				--	["crs"] = {  },	-- 
 					["g"] = {
+						crit(4, {	-- Remnant of Ner'zhul
+							["achievementID"] = 15126,	-- Sanctum of Domination
+						}),
 						i(183508),	-- Ambidexterity
 						i(181705),	-- Celestial Effervescence
 						i(182206),	-- Convocation of the Dead
@@ -134,6 +146,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 				e(2445, {	-- Soulrender Dormazain
 					["crs"] = { 175727 },	-- Soulrender Dormazain 175728 Garrosh Hellscream
 					["g"] = {
+						crit(5, {	-- Soulrender Dormazain
+							["achievementID"] = 15126,	-- Sanctum of Domination
+						}),
 						i(180844),	-- Brutal Vitality
 						i(181834),	-- Chilled Resilience
 						i(183076),	-- Diabolic Bloodstone
@@ -164,6 +179,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 				e(2443, {	-- Painsmith Raznal
 				--	["crs"] = {  },	-- 
 					["g"] = {
+						crit(6, {	-- Painsmith Raznal
+							["achievementID"] = 15126,	-- Sanctum of Domination
+						}),
 						i(182203),	-- Debilitating Malady
 						i(182754),	-- Duplicitous Havoc
 						i(182582),	-- Enkindled Spirit
@@ -193,6 +211,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 				e(2446, {	-- Guardian of the First Ones
 				--	["crs"] = {  },	-- 
 					["g"] = {
+						crit(7, {	-- Guardian of the First Ones
+							["achievementID"] = 15126,	-- Sanctum of Domination
+						}),
 						i(187507),	-- Adaptive Armor Fragment
 						i(183132),	-- Echoing Call
 						i(181735),	-- Hack and Slash
@@ -223,6 +244,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 				e(2447, {	-- Fatescribe Roh-Kalo
 				--	["crs"] = {  },	-- 
 					["g"] = {
+						crit(8, {	-- Fatescribe Roh-Kalo
+							["achievementID"] = 15126,	-- Sanctum of Domination
+						}),
 						i(181509),	-- Arcane Prodigy
 						i(182649),	-- Brutal Projectiles
 						i(182470),	-- Demonic Momentum
@@ -251,6 +275,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 				e(2440, {	-- Kel'Thuzad
 				--	["crs"] = {  },	-- 
 					["g"] = {
+						crit(9, {	-- Kel'Thuzad
+							["achievementID"] = 15126,	-- Sanctum of Domination
+						}),
 						i(182136),	-- Chilled to the Core
 						i(181698),	-- Cryo-Freeze
 						i(183202),	-- Deadly Tandem
@@ -283,6 +310,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 				e(2441, {	-- Sylvanas Windrunner
 				--	["crs"] = {  },	-- 
 					["g"] = {
+						crit(10, {	-- Sylvanas Windrunner
+							["achievementID"] = 15126,	-- Sanctum of Domination
+						}),
 						i(180933),	-- Ashen Juggernaut
 						i(183483),	-- Carnivorous Instinct
 						i(183511),	-- Deeper Daggers
@@ -297,7 +327,6 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(182559),	-- Templar's Vindication
 						i(181383),	-- Unrelenting Cold
 						i(186398),	-- Edge of Night
-						i(186414),	-- Rae'shalare, Death's Whisper
 						i(186417),	-- Guard of the Sundered Defender
 						i(186325),	-- Veil of the Banshee Queen
 						i(186342),	-- Epaulettes of the Master Ranger
@@ -316,6 +345,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 				e(2435, {	-- The Tarragrue
 					["crs"] = { 175611 },	-- The Tarragrue
 					["g"] = {
+						crit(1, {	-- The Tarragrue
+							["achievementID"] = 15126,	-- Sanctum of Domination
+						}),
+						ach(14998),	-- Name A Better Duo, I'll Wait
 						i(182750),	-- Carnivorous Stalkers
 						i(182610),	-- Ferocious Appetite
 						i(182113),	-- Fleeting Wind
@@ -348,6 +381,13 @@ _.Instances = { tier(9, {	-- Shadowlands
 						176531,	-- Deathseeker Eye
 					},
 					["g"] = {
+						crit(2, {	-- The Eye of the Jailer
+							["achievementID"] = 15126,	-- Sanctum of Domination
+						}),
+						ach(15065, {	-- Eye Wish You Were Here
+							crit(1),	-- All players have Photoflash!
+							crit(2),	-- Eye of the Jailer has Photoflash!
+						}),
 						i(181738),	-- Artifice of the Archmage
 						i(181963),	-- Blood Bond
 						i(182478),	-- Corrupting Leer
@@ -375,6 +415,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 				e(2439, {	-- The Nine
 				--	["crs"] = {  },	-- 
 					["g"] = {
+						crit(3, {	-- The Nine
+							["achievementID"] = 15126,	-- Sanctum of Domination
+						}),
+						ach(15003),	-- To the Nines
 						i(186656),	-- Sanctum Gloomcharger (MOUNT!) TODO not sure where this falls in the dungeon journal because the game crashes when i scroll to it, so just throwing it at the top for now
 						i(182657),	-- Deadly Chain
 						i(181845),	-- Exaltation
@@ -404,6 +448,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 				e(2444, {	-- Remnant of Ner'zhul
 				--	["crs"] = {  },	-- 
 					["g"] = {
+						crit(4, {	-- Remnant of Ner'zhul
+							["achievementID"] = 15126,	-- Sanctum of Domination
+						}),
+						ach(15058),	-- I Used to Bullseye Deeprun Rats Back Home
 						i(183508),	-- Ambidexterity
 						i(181705),	-- Celestial Effervescence
 						i(182206),	-- Convocation of the Dead
@@ -431,6 +479,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 				e(2445, {	-- Soulrender Dormazain
 					["crs"] = { 175727 },	-- Soulrender Dormazain 175728 Garrosh Hellscream
 					["g"] = {
+						crit(5, {	-- Soulrender Dormazain
+							["achievementID"] = 15126,	-- Sanctum of Domination
+						}),
+						ach(15105),	-- Tormentor's Tango
 						i(180844),	-- Brutal Vitality
 						i(181834),	-- Chilled Resilience
 						i(183076),	-- Diabolic Bloodstone
@@ -461,6 +513,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 				e(2443, {	-- Painsmith Raznal
 				--	["crs"] = {  },	-- 
 					["g"] = {
+						crit(6, {	-- Painsmith Raznal
+							["achievementID"] = 15126,	-- Sanctum of Domination
+						}),
+						ach(15131),	-- Whack-A-Soul
 						i(182203),	-- Debilitating Malady
 						i(182754),	-- Duplicitous Havoc
 						i(182582),	-- Enkindled Spirit
@@ -490,6 +546,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 				e(2446, {	-- Guardian of the First Ones
 				--	["crs"] = {  },	-- 
 					["g"] = {
+						crit(7, {	-- Guardian of the First Ones
+							["achievementID"] = 15126,	-- Sanctum of Domination
+						}),
+						ach(15132),	-- Knowledge is Power
 						i(187507),	-- Adaptive Armor Fragment
 						i(183132),	-- Echoing Call
 						i(181735),	-- Hack and Slash
@@ -520,6 +580,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 				e(2447, {	-- Fatescribe Roh-Kalo
 				--	["crs"] = {  },	-- 
 					["g"] = {
+						crit(8, {	-- Fatescribe Roh-Kalo
+							["achievementID"] = 15126,	-- Sanctum of Domination
+						}),
+						ach(15040),	-- Flawless Fate
 						i(181509),	-- Arcane Prodigy
 						i(182649),	-- Brutal Projectiles
 						i(182470),	-- Demonic Momentum
@@ -548,6 +612,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 				e(2440, {	-- Kel'Thuzad
 				--	["crs"] = {  },	-- 
 					["g"] = {
+						crit(9, {	-- Kel'Thuzad
+							["achievementID"] = 15126,	-- Sanctum of Domination
+						}),
+						ach(15108),	-- Together Forever
 						i(182136),	-- Chilled to the Core
 						i(181698),	-- Cryo-Freeze
 						i(183202),	-- Deadly Tandem
@@ -580,6 +648,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 				e(2441, {	-- Sylvanas Windrunner
 				--	["crs"] = {  },	-- 
 					["g"] = {
+						crit(10, {	-- Sylvanas Windrunner
+							["achievementID"] = 15126,	-- Sanctum of Domination
+						}),
+						ach(15133),	-- This World is a Prism
 						i(180933),	-- Ashen Juggernaut
 						i(183483),	-- Carnivorous Instinct
 						i(183511),	-- Deeper Daggers
@@ -594,7 +666,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(182559),	-- Templar's Vindication
 						i(181383),	-- Unrelenting Cold
 						i(186398),	-- Edge of Night
-						i(186414),	-- Rae'shalare, Death's Whisper
+						i(186414, {	-- Rae'shalare, Death's Whisper
+							ach(15191),	-- Rae'shalare, Death's Whisper
+						}),
 						i(186417),	-- Guard of the Sundered Defender
 						i(186325),	-- Veil of the Banshee Queen
 						i(186342),	-- Epaulettes of the Master Ranger
@@ -613,6 +687,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 				e(2435, {	-- The Tarragrue
 					["crs"] = { 175611 },	-- The Tarragrue
 					["g"] = {
+						crit(1, {	-- The Tarragrue
+							["achievementID"] = 15127,	-- Heroic: Sanctum of Domination
+						}),
+						ach(14998),	-- Name A Better Duo, I'll Wait
 						i(182750),	-- Carnivorous Stalkers
 						i(182610),	-- Ferocious Appetite
 						i(182113),	-- Fleeting Wind
@@ -645,6 +723,13 @@ _.Instances = { tier(9, {	-- Shadowlands
 						176531,	-- Deathseeker Eye
 					},
 					["g"] = {
+						crit(2, {	-- The Eye of the Jailer
+							["achievementID"] = 15127,	-- Heroic: Sanctum of Domination
+						}),
+						ach(15065, {	-- Eye Wish You Were Here
+							crit(1),	-- All players have Photoflash!
+							crit(2),	-- Eye of the Jailer has Photoflash!
+						}),
 						i(181738),	-- Artifice of the Archmage
 						i(181963),	-- Blood Bond
 						i(182478),	-- Corrupting Leer
@@ -672,6 +757,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 				e(2439, {	-- The Nine
 				--	["crs"] = {  },	-- 
 					["g"] = {
+						crit(3, {	-- The Nine
+							["achievementID"] = 15127,	-- Heroic: Sanctum of Domination
+						}),
+						ach(15003),	-- To the Nines
 						i(186656),	-- Sanctum Gloomcharger (MOUNT!) TODO not sure where this falls in the dungeon journal because the game crashes when i scroll to it, so just throwing it at the top for now
 						i(182657),	-- Deadly Chain
 						i(181845),	-- Exaltation
@@ -701,6 +790,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 				e(2444, {	-- Remnant of Ner'zhul
 				--	["crs"] = {  },	-- 
 					["g"] = {
+						crit(5, {	-- Remnant of Ner'zhul
+							["achievementID"] = 15127,	-- Heroic: Sanctum of Domination
+						}),
+						ach(15058),	-- I Used to Bullseye Deeprun Rats Back Home
 						i(183508),	-- Ambidexterity
 						i(181705),	-- Celestial Effervescence
 						i(182206),	-- Convocation of the Dead
@@ -728,6 +821,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 				e(2445, {	-- Soulrender Dormazain
 					["crs"] = { 175727 },	-- Soulrender Dormazain 175728 Garrosh Hellscream
 					["g"] = {
+						crit(4, {	-- Soulrender Dormazain
+							["achievementID"] = 15127,	-- Heroic: Sanctum of Domination
+						}),
+						ach(15105),	-- Tormentor's Tango
 						i(180844),	-- Brutal Vitality
 						i(181834),	-- Chilled Resilience
 						i(183076),	-- Diabolic Bloodstone
@@ -758,6 +855,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 				e(2443, {	-- Painsmith Raznal
 				--	["crs"] = {  },	-- 
 					["g"] = {
+						crit(6, {	-- Painsmith Raznal
+							["achievementID"] = 15127,	-- Heroic: Sanctum of Domination
+						}),
+						ach(15131),	-- Whack-A-Soul
 						i(182203),	-- Debilitating Malady
 						i(182754),	-- Duplicitous Havoc
 						i(182582),	-- Enkindled Spirit
@@ -787,6 +888,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 				e(2446, {	-- Guardian of the First Ones
 				--	["crs"] = {  },	-- 
 					["g"] = {
+						crit(7, {	-- Guardian of the First Ones
+							["achievementID"] = 15127,	-- Heroic: Sanctum of Domination
+						}),
+						ach(15132),	-- Knowledge is Power
 						i(187507),	-- Adaptive Armor Fragment
 						i(183132),	-- Echoing Call
 						i(181735),	-- Hack and Slash
@@ -817,6 +922,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 				e(2447, {	-- Fatescribe Roh-Kalo
 				--	["crs"] = {  },	-- 
 					["g"] = {
+						crit(8, {	-- Fatescribe Roh-Kalo
+							["achievementID"] = 15127,	-- Heroic: Sanctum of Domination
+						}),
+						ach(15040),	-- Flawless Fate
 						i(181509),	-- Arcane Prodigy
 						i(182649),	-- Brutal Projectiles
 						i(182470),	-- Demonic Momentum
@@ -845,6 +954,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 				e(2440, {	-- Kel'Thuzad
 				--	["crs"] = {  },	-- 
 					["g"] = {
+						crit(9, {	-- Kel'Thuzad
+							["achievementID"] = 15127,	-- Heroic: Sanctum of Domination
+						}),
+						ach(15108),	-- Together Forever
 						i(182136),	-- Chilled to the Core
 						i(181698),	-- Cryo-Freeze
 						i(183202),	-- Deadly Tandem
@@ -877,6 +990,11 @@ _.Instances = { tier(9, {	-- Shadowlands
 				e(2441, {	-- Sylvanas Windrunner
 				--	["crs"] = {  },	-- 
 					["g"] = {
+						crit(10, {	-- Sylvanas Windrunner
+							["achievementID"] = 15127,	-- Heroic: Sanctum of Domination
+						}),
+						ach(15134),	-- Ahead of the Curve: Sylvanas Windrunner
+						ach(15133),	-- This World is a Prism
 						i(180933),	-- Ashen Juggernaut
 						i(183483),	-- Carnivorous Instinct
 						i(183511),	-- Deeper Daggers
@@ -891,7 +1009,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(182559),	-- Templar's Vindication
 						i(181383),	-- Unrelenting Cold
 						i(186398),	-- Edge of Night
-						i(186414),	-- Rae'shalare, Death's Whisper
+						i(186414, {	-- Rae'shalare, Death's Whisper
+							ach(15191),	-- Rae'shalare, Death's Whisper
+						}),
 						i(186417),	-- Guard of the Sundered Defender
 						i(186325),	-- Veil of the Banshee Queen
 						i(186342),	-- Epaulettes of the Master Ranger
@@ -910,6 +1030,8 @@ _.Instances = { tier(9, {	-- Shadowlands
 				e(2435, {	-- The Tarragrue
 					["crs"] = { 175611 },	-- The Tarragrue
 					["g"] = {
+						ach(15112),	-- Mythic: The Tarragrue
+						ach(14998),	-- Name A Better Duo, I'll Wait
 						i(182750),	-- Carnivorous Stalkers
 						i(182610),	-- Ferocious Appetite
 						i(182113),	-- Fleeting Wind
@@ -942,6 +1064,11 @@ _.Instances = { tier(9, {	-- Shadowlands
 						176531,	-- Deathseeker Eye
 					},
 					["g"] = {
+						ach(15113),		-- Mythic: The Eye of the Jailer
+						ach(15065, {	-- Eye Wish You Were Here
+							crit(1),	-- All players have Photoflash!
+							crit(2),	-- Eye of the Jailer has Photoflash!
+						}),
 						i(181738),	-- Artifice of the Archmage
 						i(181963),	-- Blood Bond
 						i(182478),	-- Corrupting Leer
@@ -970,6 +1097,8 @@ _.Instances = { tier(9, {	-- Shadowlands
 				e(2439, {	-- The Nine
 				--	["crs"] = {  },	-- 
 					["g"] = {
+						ach(15114),	-- Mythic: The Nine
+						ach(15003),	-- To the Nines
 						i(186656),	-- Sanctum Gloomcharger (MOUNT!) TODO not sure where this falls in the dungeon journal because the game crashes when i scroll to it, so just throwing it at the top for now
 						i(182657),	-- Deadly Chain
 						i(181845),	-- Exaltation
@@ -999,6 +1128,8 @@ _.Instances = { tier(9, {	-- Shadowlands
 				e(2444, {	-- Remnant of Ner'zhul
 				--	["crs"] = {  },	-- 
 					["g"] = {
+						ach(15115),	-- Mythic: Remnant of Ner'zhul
+						ach(15058),	-- I Used to Bullseye Deeprun Rats Back Home
 						i(183508),	-- Ambidexterity
 						i(181705),	-- Celestial Effervescence
 						i(182206),	-- Convocation of the Dead
@@ -1026,6 +1157,8 @@ _.Instances = { tier(9, {	-- Shadowlands
 				e(2445, {	-- Soulrender Dormazain
 					["crs"] = { 175727 },	-- Soulrender Dormazain 175728 Garrosh Hellscream
 					["g"] = {
+						ach(15116),	-- Mythic: Soulrender Dormazain
+						ach(15105),	-- Tormentor's Tango
 						i(180844),	-- Brutal Vitality
 						i(181834),	-- Chilled Resilience
 						i(183076),	-- Diabolic Bloodstone
@@ -1056,6 +1189,8 @@ _.Instances = { tier(9, {	-- Shadowlands
 				e(2443, {	-- Painsmith Raznal
 				--	["crs"] = {  },	-- 
 					["g"] = {
+						ach(15117),	-- Mythic: Painsmith Raznal
+						ach(15131),	-- Whack-A-Soul
 						i(182203),	-- Debilitating Malady
 						i(182754),	-- Duplicitous Havoc
 						i(182582),	-- Enkindled Spirit
@@ -1085,6 +1220,8 @@ _.Instances = { tier(9, {	-- Shadowlands
 				e(2446, {	-- Guardian of the First Ones
 				--	["crs"] = {  },	-- 
 					["g"] = {
+						ach(15118),	-- Mythic: Guardian of the First Ones
+						ach(15132),	-- Knowledge is Power
 						i(187507),	-- Adaptive Armor Fragment
 						i(183132),	-- Echoing Call
 						i(181735),	-- Hack and Slash
@@ -1115,6 +1252,8 @@ _.Instances = { tier(9, {	-- Shadowlands
 				e(2447, {	-- Fatescribe Roh-Kalo
 				--	["crs"] = {  },	-- 
 					["g"] = {
+						ach(15119),	-- Mythic: Fatescribe Roh-Kalo
+						ach(15040),	-- Flawless Fate
 						i(181509),	-- Arcane Prodigy
 						i(182649),	-- Brutal Projectiles
 						i(182470),	-- Demonic Momentum
@@ -1143,6 +1282,8 @@ _.Instances = { tier(9, {	-- Shadowlands
 				e(2440, {	-- Kel'Thuzad
 				--	["crs"] = {  },	-- 
 					["g"] = {
+						ach(15120),	-- Mythic: Kel'Thuzad
+						ach(15108),	-- Together Forever
 						i(182136),	-- Chilled to the Core
 						i(181698),	-- Cryo-Freeze
 						i(183202),	-- Deadly Tandem
@@ -1175,6 +1316,12 @@ _.Instances = { tier(9, {	-- Shadowlands
 				e(2441, {	-- Sylvanas Windrunner
 				--	["crs"] = {  },	-- 
 					["g"] = {
+						ach(15121, {	-- Mythic: Sylvanas Windrunner
+							title(447),	-- Breaker of Chains
+						}),
+						ach(15134),	-- Ahead of the Curve: Sylvanas Windrunner
+						ach(15135),	-- Cutting Edge: Sylvanas Windrunner
+						ach(15133),	-- This World is a Prism
 						i(186642),	-- Vengeance (MOUNT!)
 						i(180933),	-- Ashen Juggernaut
 						i(183483),	-- Carnivorous Instinct
@@ -1190,7 +1337,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(182559),	-- Templar's Vindication
 						i(181383),	-- Unrelenting Cold
 						i(186398),	-- Edge of Night
-						i(186414),	-- Rae'shalare, Death's Whisper
+						i(186414, {	-- Rae'shalare, Death's Whisper
+							ach(15191),	-- Rae'shalare, Death's Whisper
+						}),
 						i(186417),	-- Guard of the Sundered Defender
 						i(186325),	-- Veil of the Banshee Queen
 						i(186342),	-- Epaulettes of the Master Ranger

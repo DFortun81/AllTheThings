@@ -59,19 +59,33 @@ _.Zones =
 							},
 						}),
 					}),
-					n(TREASURES, {
+					n(-77, {	-- Special
 						n(179572, {	-- Hand of Nilganihmaht
-							["description"] = "At the back of the cave.",
+							["description"] = "At the back of the cave.  Collect 5 rings from throughout the Maw and place them on the Hand to receive the mount.\n\nThe 4 pieces that make up the Stone Ring require the Necrolord Assault; 2 pieces additionally require the quest |cFF349cffPutting a Plan Together|r.  The Hand of Nilganihmaht and the Runed Band are both in the Rift, which requires either the Night Fae Covenant Assault quest |cFF349cffA Shady Place|r or the use of a |cFF1eff00Repaired Riftkey|r in Korthia.\n\nThe other 3 rings can be collected at any time in the normal phase of the Maw.",
 							["coord"] = { 25.6, 32.0, THE_MAW },
 							["g"] = {
-								i(186713, {	-- Hand of Nilganihmaht (MOUNT!)
-									["cost"] = {
-										{ "i", 186608, 1 },	-- Nilganihmaht's Gold Band
-										{ "i", 186605, 1 },	-- Nilganihmaht's Runed Band
-										{ "i", 186606, 1 },	-- Nilganihmaht's Signet Ring
-										{ "i", 186607, 1 },	-- Nilganihmaht's Silver Ring
-										{ "i", 186603, 1 },	-- Nilganihmaht's Stone Ring (combine 4 green Quartered Rings)
-									},
+								q(64197, {	-- Placing Stone Ring
+									["cost"] = { { "i", 186603, 1 } },	-- Nilganihmaht's Stone Ring (combine 4 green Quartered Rings)
+									["name"] = "Placing Stone Ring",
+								}),
+								q(64198, {	-- Placing Runed Band
+									["cost"] = { { "i", 186605, 1 } },	-- Nilganihmaht's Runed Band
+									["name"] = "Placing Runed Band",
+								}),
+								q(64199, {	-- Placing Gold Band
+									["cost"] = { { "i", 186608, 1 } },	-- Nilganihmaht's Gold Band
+									["name"] = "Placing Gold Band",
+								}),
+								q(64200, {	-- Placing Silver Ring
+									["cost"] = { { "i", 186607, 1 } },	-- Nilganihmaht's Silver Ring
+									["name"] = "Placing Silver Ring",
+								}),
+								q(64201, {	-- Placing Signet Ring
+									["cost"] = { { "i", 186606, 1 } },	-- Nilganihmaht's Signet Ring
+									["name"] = "Placing Signet Ring",
+								}),
+								q(64202, {	-- Gotta Hand It To Ya
+									i(186713),	-- Hand of Nilganihmaht (MOUNT!)
 								}),
 							},
 						}),

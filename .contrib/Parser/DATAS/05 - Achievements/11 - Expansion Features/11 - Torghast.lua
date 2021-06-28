@@ -6,6 +6,8 @@ _.Achievements =
 {
 	n(-10055, {	-- Expansion Features
 		n(-10103, {	-- Torghast
+			ach(15091),		-- A Taste of Perfection
+			ach(15067),		-- Adamant Vaults
 			ach(14795, {	-- Clearing the Fog (15 memories)
 				ach(14760),	-- Recollection Collection (10)
 				ach(14759),	-- It's Coming Back to Me... (1)
@@ -27,6 +29,15 @@ _.Achievements =
 				crit(13),	-- Prisoner's Concord
 			}),
 			ach(14773),		-- Explosive Extermination
+			ach(15089, {	-- Flawless Master
+				i(186655),	-- Mawsworn Charger's Reins (MOUNT!)
+				ach(15088),	-- Flawless: Upper Reaches
+				ach(15087),	-- Flawless: Mort'regar
+				ach(15084),	-- Flawless: The Soulforges
+				ach(15083),	-- Flawless: Coldheart Interstitia
+				ach(15081),	-- Flawless: Skoldus Hall
+				ach(15082),	-- Flawless: Fracture Chambers
+			}),
 			ach(14776),		-- For the Hoarder!
 			ach(14473),		-- Fracture Chambers
 			ach(14498, {	-- Gatekeepers of Torghast
@@ -50,7 +61,23 @@ _.Achievements =
 				crit(18),	-- Elder Longbranch
 				crit(19),	-- Decayspeaker
 			}),
+			ach(15075, {	-- Infiltrators
+				crit(1),	-- Karthazel
+				crit(2),	-- Sath'zuul
+				crit(3),	-- Vil'thras
+			}),
 			ach(14755),		-- Legendary Accord
+			ach(15079, {	-- Many, Many Things
+				i(186551),	-- Mord'al Eveningstar (PET!)
+				ach(15076),	-- The Box of Many Things
+				ach(15080),	-- So Blessed
+			}),
+			ach(15092, {	-- Master of Torment
+				ach(15093),	-- Avenge Me!
+				ach(15095),	-- No Doubt
+				ach(15094),	-- Rampage
+				ach(15096),	-- Crowd Pleaser
+			}),
 			ach(14488),		-- Mort'regar
 			ach(14501, {	-- Phanatical (250000)
 				ach(14499),	-- Phanciful (2500)
@@ -101,37 +128,6 @@ _.Achievements =
 				ach(14569),	-- Twisting Corridors: Layer 7
 			}),
 
-
-			-- PTR - TODO: incorporate into main list if these make it to live
-			ach(15091),		-- A Taste of Perfection
-			ach(15067),		-- Adamant Vaults
-			ach(15089, {	-- Flawless Master
-				i(186655),	-- Mawsworn Charger's Reins (MOUNT!)
-				ach(15088),	-- Flawless: Upper Reaches
-				ach(15087),	-- Flawless: Mort'regar
-				ach(15084),	-- Flawless: The Soulforges
-				ach(15083),	-- Flawless: Coldheart Interstitia
-				ach(15081),	-- Flawless: Skoldus Hall
-				ach(15082),	-- Flawless: Fracture Chambers
-			}),
-			ach(15075, {	-- Infiltrators
-				crit(1),	-- Karthazel
-				crit(2),	-- Sath'zuul
-				crit(3),	-- Vil'thras
-			}),
-			ach(15079, {	-- Many, Many Things
-				i(186551),	-- Mord'al Eveningstar (PET!)
-				ach(15076),	-- The Box of Many Things
-				ach(15080),	-- So Blessed
-			}),
-			ach(15092, {	-- Master of Torment
-				ach(15093),	-- Avenge Me!
-				ach(15095),	-- No Doubt
-				ach(15094),	-- Rampage
-				ach(15096),	-- Crowd Pleaser
-			}),
-			
-			
 		-- These may have existed on beta? But don't appear to be in the release version, only the layer 1 achieves have been seen.
 		-- Leaving them here commented out for now, we can delete later if they never show up.
 		--	ach(14587, {	-- Torghast: Coldheart Interstitia: Layer 9

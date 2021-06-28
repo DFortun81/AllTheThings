@@ -189,6 +189,22 @@ _.Achievements =
 				ach(13430),		-- De Lurker Be'loa
 				ach(13425),		-- We Got Spirit, How About You?
 			}),
+			ach(15130, {	-- Glory of the Dominant Raider
+				i(186653),	-- Hand of Hrestimorak (MOUNT!)
+				ach(14998),		-- Name A Better Duo, I'll Wait
+				ach(15065, {	-- Eye Wish You Were Here
+					crit(1),	-- All players have Photoflash!
+					crit(2),	-- Eye of the Jailer has Photoflash!
+				}),
+				ach(15003),	-- To the Nines
+				ach(15105),	-- Tormentor's Tango
+				ach(15058),	-- I Used to Bullseye Deeprun Rats Back Home
+				ach(15131),	-- Whack-A-Soul
+				ach(15132),	-- Knowledge is Power
+				ach(15040),	-- Flawless Fate
+				ach(15108),	-- Together Forever
+				ach(15133),	-- This World is a Prism
+			}),
 			ach(9396, {		-- Glory of the Draenor Hero
 				i(116670),		-- Frostplains Battleboar
 				crit(1),		-- Draenor Dungeon Hero

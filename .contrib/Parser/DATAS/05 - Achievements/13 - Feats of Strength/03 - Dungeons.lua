@@ -78,7 +78,7 @@ _.Achievements =
 				crit(9),	-- Tol Dagor
 				crit(10),	-- Waycrest Manor
 			})),
-			un(REMOVED_FROM_GAME, ach(14144, {	-- Battle for Azeroth Keystone Conqueror: Season Four
+			un(REMOVED_FROM_GAME, ach(14144, {		-- Battle for Azeroth Keystone Conqueror: Season Four
 				title(418),	-- "the Awakened"
 				crit(1),	-- Atal'Dazar
 				crit(2),	-- Freehold
@@ -93,7 +93,7 @@ _.Achievements =
 				crit(11),	-- Mechagon Junkyard
 				crit(12),	-- Mechagon Workshop
 			})),
-			un(REMOVED_FROM_GAME, ach(14145, {	-- Battle for Azeroth Keystone Master: Season Four
+			un(REMOVED_FROM_GAME, ach(14145, {		-- Battle for Azeroth Keystone Master: Season Four
 				i(174836),	-- Awakened Mindborer
 				crit(1),	-- Atal'Dazar
 				crit(2),	-- Freehold
@@ -164,15 +164,15 @@ _.Achievements =
 					["description"] = "Must earn with a female character.",
 				})),
 			})),
-			un(REMOVED_FROM_GAME, ach(13789)),	-- Hertz Locker
+			un(REMOVED_FROM_GAME, ach(13789)),		-- Hertz Locker
 			un(REMOVED_FROM_GAME, ach(8903, {		-- Mistwalker
 				un(REMOVED_FROM_GAME, title(255)),	-- Mistwalker
 			})),
-			ach(14938, {	-- Shadowlands Keystone Explorer: Season One
+			un(REMOVED_FROM_GAME, ach(14938, {	-- Shadowlands Keystone Explorer: Season One
 				-- There's no criteria here because it's messed up in-game as of 9.0.5 (only 2-6 work, the others are blank or give error msgs).  Blame Blizz.
-			}),
-			ach(14531, {	-- Shadowlands Keystone Conqueror: Season One
-				title(431),	-- 'the Proud'
+			})),
+			un(REMOVED_FROM_GAME, ach(14531, {	-- Shadowlands Keystone Conqueror: Season One
+				un(REMOVED_FROM_GAME, title(431)),	-- 'the Proud'
 				crit(1),	-- Necrotic Wake
 				crit(2),	-- Plaguefall
 				crit(3),	-- Mists of Tirna Scithe
@@ -181,9 +181,9 @@ _.Achievements =
 				crit(6),	-- Theater of Pain
 				crit(7),	-- De Other Side
 				crit(8),	-- Sanguine Depths
-			}),
-			ach(14532, {	-- Shadowlands Keystone Master: Season One
-				i(182717),	-- Sintouched Deathwalker
+			})),
+			un(REMOVED_FROM_GAME, ach(14532, {	-- Shadowlands Keystone Master: Season One
+				un(REMOVED_FROM_GAME, i(182717)),	-- Sintouched Deathwalker
 				crit(1),	-- Necrotic Wake
 				crit(2),	-- Plaguefall
 				crit(3),	-- Mists of Tirna Scithe
@@ -192,6 +192,22 @@ _.Achievements =
 				crit(6),	-- Theater of Pain
 				crit(7),	-- De Other Side
 				crit(8),	-- Sanguine Depths
+			})),
+			ach(15051),		-- Keystone Hero: De Other Side
+			ach(15048),		-- Keystone Hero: Halls of Atonement
+			ach(15047),		-- Keystone Hero: Mists of Tirna Scithe
+			ach(15046),		-- Keystone Hero: Plaguefall
+			ach(15052),		-- Keystone Hero: Sanguine Depths
+			ach(15049),		-- Keystone Hero: Spires of Ascension
+			ach(15045),		-- Keystone Hero: The Necrotic Wake
+			ach(15050),		-- Keystone Hero: Theater of Pain
+			ach(15073, {	-- Shadowlands Keystone Explorer: Season Two
+			}),
+			ach(15077, {	-- Shadowlands Keystone Conqueror: Season Two
+				title(446),	-- The Tormented
+			}),
+			ach(15078, {	-- Shadowlands Keystone Master: Season Two
+				i(187525),	-- Soultwisted Deathwalker (MOUNT!)
 			}),
 		}),
 	}),
