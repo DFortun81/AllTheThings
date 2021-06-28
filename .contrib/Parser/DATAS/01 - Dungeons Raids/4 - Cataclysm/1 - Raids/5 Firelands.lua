@@ -27,7 +27,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					198,	-- Mount Hyjal
 					114,	-- Borean Tundra
 				},
-				["g"] = {
+				["g"] = sharedData({["classes"] = { PRIEST, SHAMAN, MAGE, WARLOCK, DRUID }},{
 					a(q(29453, {	-- Your Time Has Come [A]
 						["description"] = "This quest is auto accepted upon killing a Molten Lord.",
 						["provider"] = { "n", 53115 },	-- Molten Lord
@@ -255,7 +255,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 							i(71086),	-- Dragonwrath, Tarecgosa's Rest
 						},
 					}),
-				},
+				}),
 			}),
 			n(VENDORS, {
 				n(54401, {	-- Naresir Stormfury
