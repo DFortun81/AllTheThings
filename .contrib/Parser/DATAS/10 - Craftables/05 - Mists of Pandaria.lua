@@ -826,3 +826,23 @@ _.Craftables =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10041, {
+		prof(LEATHERWORKING, {
+			i(93508),	-- Crafted Gladiator's Ironskin Gloves
+			i(93510),	-- Crafted Gladiator's Ironskin Helm
+			i(93512),	-- Crafted Gladiator's Ironskin Legguards
+			i(93514),	-- Crafted Gladiator's Ironskin Spaulders
+			i(93516),	-- Crafted Gladiator's Ironskin Tunic
+			i(93518),	-- Crafted Gladiator's Copperskin Gloves
+			i(93520),	-- Crafted Gladiator's Copperskin Helm
+			i(93522),	-- Crafted Gladiator's Copperskin Legguards
+			i(93524),	-- Crafted Gladiator's Copperskin Spaulders
+			i(93526),	-- Crafted Gladiator's Copperskin Tunic
+		}),
+		prof(JEWELCRAFTING, {
+			i(93597),	-- Crafted Dreadful Gladiator's Fleshslicer
+			i(93599),	-- Crafted Dreadful Gladiator's Slasher
+		}),
+	}),
+});

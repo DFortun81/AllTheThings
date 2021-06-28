@@ -2081,6 +2081,11 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(97053),	-- Nine-Tailed Helmet
 				i(97054),	-- Nine-Tailed Legguards
 				i(97055),	-- Nine-Tailed Spaulders
+				i(96307),	-- Nine-Tailed Tunic
+				i(96308),	-- Nine-Tailed Gloves
+				i(96309),	-- Nine-Tailed Helmet
+				i(96310),	-- Nine-Tailed Legguards
+				i(96311),	-- Nine-Tailed Spaulders
 			}),
 			cl(SHAMAN, {
 				i(97056),	-- Tunic of the Witch Doctor
@@ -2180,6 +2185,24 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(97072),	-- Shoulders of the Crackling Conqueror
 				i(97073),	-- Shoulders of the Crackling Protector
 			}),
+			i(97075),	-- Spiderweb Tabi
+			i(97082),	-- Deeproot Treads
+			i(97086),	-- Abandoned Zandalari Silentbelt
+			i(97087),	-- Abandoned Zandalari Moonstrap
+			i(97077),	-- Abandoned Zandalari Firecord (Heroic Thunderforged)
+			i(97078),	-- Abandoned Zandalari Shadowgirdle (Heroic Thunderforged)
+			i(97079),	-- Silentflame Sandals (Heroic Thunderforged)
+			i(97081),	-- Home-Warding Slippers (Heroic Thunderforged)
+			i(97076),	-- Scalehide Spurs
+			i(97083),	-- Spiritbound Boots
+			i(97088),	-- Abandoned Zandalari Arrowlinks
+			i(97089),	-- Abandoned Zandalari Waterchain
+			i(97084),	-- Vaultwalker Sabatons
+			i(97090),	-- Abandoned Zandalari Greatbelt
+			i(97091),	-- Abandoned Zandalari Goreplate
+			i(97092),	-- Abandoned Zandalari Bucklebreaker
+			i(97094),	-- Locksmasher Greaves
+			i(97095),	-- Columnbreaker Stompers
 		}),
 	}),
 });

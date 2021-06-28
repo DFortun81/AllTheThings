@@ -337,18 +337,12 @@ _.NeverImplemented =
 			i(80989),	-- Scavenger's Satin Mantle
 			i(80997),	-- Silk Robe of Eminent Domain
 			i(80998),	-- Satin Robe of Eminent Domain
-			i(81006),	-- Honorary Combat Engineer's Silk Trousers
-			i(81007),	-- Honorary Combat Engineer's Satin Leggings
 			i(81015),	-- Landfall Silk Treads
 			i(81016),	-- Landfall Satin Treads
 			i(81033),	-- Scavenger's Silk Handguards
 			i(81034),	-- Scavenger's Satin Gloves
 			i(81042),	-- Scavenger's Silk Cuffs
 			i(81043),	-- Scavenger's Satin Cuffs
-			i(97077),	-- Abandoned Zandalari Firecord (Heroic Thunderforged)
-			i(97078),	-- Abandoned Zandalari Shadowgirdle (Heroic Thunderforged)
-			i(97079),	-- Silentflame Sandals (Heroic Thunderforged)
-			i(97081),	-- Home-Warding Slippers (Heroic Thunderforged)
 			i(114247),	-- Firefly Bracers
 			i(114254),	-- Firefly Robes
 			i(114255),	-- Firefly Sandals
@@ -665,10 +659,6 @@ _.NeverImplemented =
 			i(158540),	-- Saurscale Boots
 			i(158541),	-- Saurscale Girdle
 			i(158542),	-- Saurscale Chestguard
-			i(97076),	-- Scalehide Spurs
-			i(97083),	-- Spiritbound Boots
-			i(97088),	-- Abandoned Zandalari Arrowlinks
-			i(97089),	-- Abandoned Zandalari Waterchain
 			i(163392),	-- 7th Legionnaire's Vestments
 			i(163393),	-- 7th Legionnaire's Raiment
 			i(163443),	-- Honorbound Vanguard's Vestments

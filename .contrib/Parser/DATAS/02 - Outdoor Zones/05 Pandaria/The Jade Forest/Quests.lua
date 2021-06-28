@@ -75,6 +75,9 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,	-- shared appearance only available from this quest
 						}),
 						i(90305),	-- Honorary Combat Engineer's Chain Leggings
+						i(90357, {	-- Honorary Combat Engineer's Chain Leggings
+							["races"] = ALLIANCE_ONLY,
+						}),
 						i(90312),	-- Honorary Combat Engineer's Heavy Legplates
 						i(90364, {	-- Honorary Combat Engineer's Heavy Legguards
 							["races"] = ALLIANCE_ONLY,	-- shared appearance only available from this quest
@@ -92,6 +95,9 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,	-- shared appearance only available from this quest
 						}),
 						i(90309),	-- Honorary Combat Engineer's Ringmail Leggings
+						i(90361, {	-- Honorary Combat Engineer's Ringmail Kilt
+							["races"] = ALLIANCE_ONLY,
+						}),
 						i(90307),	-- Honorary Combat Engineer's Satin Leggings
 						i(90359, {	-- Honorary Combat Engineer's Satin Leggings
 							["races"] = ALLIANCE_ONLY,	-- shared appearance only available from this quest
@@ -1740,3 +1746,26 @@ _.Zones =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10041, {
+		n(-163, {	-- Armor
+			n(-43, {	-- Cloth
+				i(81006),	-- Honorary Combat Engineer's Silk Trousers
+				i(81007),	-- Honorary Combat Engineer's Satin Leggings
+			}),
+			n(-44, {	-- Leather
+				i(81004),	-- Honorary Combat Engineer's Leather Trousers
+				i(81008), 	-- Honorary Combat Engineer's Hide Leggings
+			}),
+			n(-45, {	-- Mail
+				i(81005),	-- Honorary Combat Engineer's Chain Leggings
+				i(81009),	-- Honorary Combat Engineer's Ringmail Leggings
+			}),
+			n(-46, {	-- Plate
+				i(81010),	-- Honorary Combat Engineer's Burnished Legplates
+				i(81011),	-- Honorary Combat Engineer's Legguards
+				i(81012),	-- Honorary Combat Engineer's Heavy Legplates
+			}),
+		}),
+	}),
+});

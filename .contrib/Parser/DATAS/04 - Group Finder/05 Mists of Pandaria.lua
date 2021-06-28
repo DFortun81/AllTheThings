@@ -383,6 +383,76 @@ _.GroupFinder =
 				i(92882),	-- Stormcrier Ring
 			},
 		}),
+		i(89613, {	-- Cache of Treasures
+			["timeline"] = {
+				"added 5.0.3.15851",
+				"removed 5.1.0.10000",
+			},
+			["g"] = {
+				i(89501),	-- Brewmoon Cloak
+				i(89492),	-- Brewmoon Cord
+				i(89493),	-- Brewmoon Cowl
+				i(89494),	-- Brewmoon Handwraps
+				i(89495),	-- Brewmoon Leggings
+				i(89496),	-- Brewmoon Robe
+				i(89497),	-- Brewmoon Sandals
+				i(89498),	-- Brewmoon Shoulderpads
+				i(89499),	-- Brewmoon Wristwraps
+				i(89509),	-- Brewmoon Necklace
+				i(89507),	-- Brewmoon Signet
+				i(89491),	-- Firewool Cord
+				i(89490),	-- Firewool Cowl
+				i(89485),	-- Firewool Shoulderpads
+				i(89489),	-- Firewool Handwraps
+				i(89488),	-- Firewool Leggings
+				i(89487),	-- Firewool Robe
+				i(89486),	-- Firewool Sandals
+				i(89484),	-- Firewool Wristwraps
+				i(89475),	-- Forgotten Bindings
+				i(89474),	-- Forgotten Boots
+				i(89473),	-- Forgotten Britches
+				i(89472),	-- Forgotten Gloves
+				i(89471),	-- Forgotten Hood
+				i(89470),	-- Forgotten Jerkin
+				i(89469),	-- Forgotten Shoulders
+				i(89468),	-- Forgotten Waistband
+				i(89443),	-- Greenstone Breastplate
+				i(89503),	-- Greenstone Drape
+				i(89442),	-- Greenstone Gauntlets
+				i(89441),	-- Greenstone Girdle
+				i(89440),	-- Greenstone Helm
+				i(89439),	-- Greenstone Legplates
+				i(89511),	-- Greenstone Neck
+				i(89438),	-- Greenstone Pauldrons
+				i(89437),	-- Greenstone Sabatons
+				i(89505),	-- Greenstone Seal
+				i(89435),	-- Greenstone Vambraces
+				i(89477),	-- Hozen-Crafted Boots
+				i(89476),	-- Hozen-Crafted Bindings
+				i(89479),	-- Hozen-Crafted Gloves
+				i(89478),	-- Hozen-Crafted Britches
+				i(89480),	-- Hozen-Crafted Hood
+				i(89481),	-- Hozen-Crafted Jerkin
+				i(89482),	-- Hozen-Crafted Shoulders
+				i(89483),	-- Hozen-Crafted Waistband
+				i(89447),	-- Mogu-Wrought Helm
+				i(89448),	-- Mogu-Wrought Legplates
+				i(89449),	-- Mogu-Wrought Pauldrons
+				i(89450),	-- Mogu-Wrought Sabatons
+				i(89465),	-- Scarshell Legguards
+				i(89510),	-- Stormbound Choker
+				i(89502),	-- Stormbound Cloak
+				i(89504),	-- Stormbound Ring
+				i(89459),	-- Stormbrew Belt
+				i(89458),	-- Stormbrew Bracers
+				i(89457),	-- Stormbrew Gauntlets
+				i(89456),	-- Stormbrew Greaves
+				i(89455),	-- Stormbrew Helm
+				i(89454),	-- Stormbrew Legguards
+				i(89453),	-- Stormbrew Spaulders
+				i(89452),	-- Stormbrew Vest
+			},
+		}),	
 		i(98134, {	-- Heroic Cache of Treasures
 			["description"] = "Rewarded for completing a random Mists of Pandaria heroic scenario.",
 			["g"] = {
