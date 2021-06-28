@@ -7,14 +7,19 @@ _.Zones =
 	m(SHADOWLANDS, {
 		m(KORTHIA, {
 			n(-77, {	-- Special
-			--	TODO: finish figuring out maelie shit/matriarch nest shit ahhhhh
-			--	seems a little wonky atm, i think this is probably intended to be at least a daily lockout but i was able to find maelie like 4x today in the same place because the quest kept resetting
 				n(180063, {	-- Darkmaul
 					["description"] = "Collect |cFFFFFFFFTasty Mawshrooms|r from the daily Invasive Mawshroom treasures in Korthia and feed them to Darkmaul.",
 					["coord"] = { 42.8, 32.7, KORTHIA },
 					["cost"] = { { "i", 187153, 5 } },	-- TODO: not sure if 5 is the correct number!  i am bad at counting!
 					["g"] = {
 						i(186646),	-- Darkmaul (MOUNT!)
+					},
+				}),
+				n(179871, {	-- Dusklight Matriarch
+					["description"] = "Bring 6 |cFFFFFFFFLost Razorwing Eggs|r to the Razorwing Nest to receive the mount.",
+					["cost"] = { { "i", 187054, 6 } },	-- 6x Lost Razorwing Egg
+					["g"] = {
+						i(186651),	-- Dusklight Razorwing (MOUNT!)
 					},
 				}),
 				n(-977, {	-- Maelie the Wanderer

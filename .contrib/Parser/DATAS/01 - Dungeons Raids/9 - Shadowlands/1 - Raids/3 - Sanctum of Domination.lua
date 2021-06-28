@@ -78,6 +78,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 				e(2439, {	-- The Nine
 				--	["crs"] = {  },	-- 
 					["g"] = {
+						i(186656),	-- Sanctum Gloomcharger (MOUNT!) TODO not sure where this falls in the dungeon journal because the game crashes when i scroll to it, so just throwing it at the top for now
 						i(182657),	-- Deadly Chain
 						i(181845),	-- Exaltation
 						i(182340),	-- Fel Celerity
@@ -374,6 +375,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 				e(2439, {	-- The Nine
 				--	["crs"] = {  },	-- 
 					["g"] = {
+						i(186656),	-- Sanctum Gloomcharger (MOUNT!) TODO not sure where this falls in the dungeon journal because the game crashes when i scroll to it, so just throwing it at the top for now
 						i(182657),	-- Deadly Chain
 						i(181845),	-- Exaltation
 						i(182340),	-- Fel Celerity
@@ -670,6 +672,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 				e(2439, {	-- The Nine
 				--	["crs"] = {  },	-- 
 					["g"] = {
+						i(186656),	-- Sanctum Gloomcharger (MOUNT!) TODO not sure where this falls in the dungeon journal because the game crashes when i scroll to it, so just throwing it at the top for now
 						i(182657),	-- Deadly Chain
 						i(181845),	-- Exaltation
 						i(182340),	-- Fel Celerity
@@ -967,6 +970,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 				e(2439, {	-- The Nine
 				--	["crs"] = {  },	-- 
 					["g"] = {
+						i(186656),	-- Sanctum Gloomcharger (MOUNT!) TODO not sure where this falls in the dungeon journal because the game crashes when i scroll to it, so just throwing it at the top for now
 						i(182657),	-- Deadly Chain
 						i(181845),	-- Exaltation
 						i(182340),	-- Fel Celerity

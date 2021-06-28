@@ -47,6 +47,7 @@ _.Mounts =
 		i(163578),	-- Broken Highland Mustang
 		i(43951),	-- Bronze Drake
 		i(184160),	-- Bulbous Necroray
+		i(186638),	-- Cartel Master's Gearglider
 		i(181818),	-- Chewed Reins of the Callow Flayedwing
 		i(147806),	-- Cloudwing Hippogryph
 		i(173887),	-- Clutch of Ha-Li
@@ -62,6 +63,7 @@ _.Mounts =
 		i(63040),	-- Drake of the North Wind
 		i(63041),	-- Drake of the South Wind
 		i(163576),	-- Dune Scavenger
+		i(186651),	-- Dusklight Razorwing
 		i(174860),	-- Elusive Quickhoof
 		i(180582),	-- Endmire Flyer Tether
 		i(180723),	-- Enchanted Wakener's Runestag
@@ -97,6 +99,7 @@ _.Mounts =
 		i(21323),	-- Green Qiraji Battle Tank
 		i(63046),	-- Grey Riding Camel
 		i(185973),	-- Hand of Bahmethra
+		i(186713),	-- Hand of Nilganihmaht
 		i(87771),	-- Heavenly Onyx Cloud Serpent
 		i(137575),	-- Hellfire Infernal
 		i(163579),	-- Highland Mustang
@@ -166,6 +169,7 @@ _.Mounts =
 		i(13335),	-- Rivendare's Deathcharger
 		i(169198),	-- Royal Snapdragon
 		i(168823),	-- Rusty Mechanocrawler
+		i(186656),	-- Sanctum Gloomcharger
 		i(116767),	-- Sapphire Riberbeast
 		i(152840),	-- Scintillating Mana Ray Mount
 		i(152789),	-- Shackled Ur'zul

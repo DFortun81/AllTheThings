@@ -1832,6 +1832,7 @@ select(2, ...).ObjectNames = {
 	[368668] = "Lil'Abom's Trunk",
 	[368772] = "Sigilscored Scroll",
 	[368876] = "Mawsworn Cache",
+	[369129] = "Nilganihmaht's Gold Band",
 	[369132] = "Domination Sealed Chest",
 	[369133] = "Domination Seal #1",
 	[369134] = "Domination Sealed Cage",

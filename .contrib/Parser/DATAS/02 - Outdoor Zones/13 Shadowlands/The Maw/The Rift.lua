@@ -60,6 +60,21 @@ _.Zones =
 						}),
 					}),
 					n(TREASURES, {
+						n(179572, {	-- Hand of Nilganihmaht
+							["description"] = "At the back of the cave.",
+							["coord"] = { 25.6, 32.0, THE_MAW },
+							["g"] = {
+								i(186713, {	-- Hand of Nilganihmaht (MOUNT!)
+									["cost"] = {
+										{ "i", 186608, 1 },	-- Nilganihmaht's Gold Band
+										{ "i", 186605, 1 },	-- Nilganihmaht's Runed Band
+										{ "i", 186606, 1 },	-- Nilganihmaht's Signet Ring
+										{ "i", 186607, 1 },	-- Nilganihmaht's Silver Ring
+										{ "i", 186603, 1 },	-- Nilganihmaht's Stone Ring (combine 4 green Quartered Rings)
+									},
+								}),
+							},
+						}),
 						n(179883, {	-- Zovaal's Vault
 							["description"] = "Part of the Ve'nari daily quest |cFF349cffFull of Surprises|r.  The chest shows up on the main map and minimap when you are close to it.  Turn it in to Ve'nari at |cFFFFFFFF44.7, 51.4.|r\n\nIf you return the chest to Ve'nari before picking up the daily quest, you cannot turn the quest in.",
 							["questID"] = 64283,

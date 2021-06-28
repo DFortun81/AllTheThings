@@ -100,6 +100,7 @@ _.Zones =
 					["coords"] = {
 						{ 48.5, 41.2, KORTHIA },
 						{ 49.4, 40.7, KORTHIA },
+						{ 49.5, 31.7, KORTHIA },
 						{ 49.9, 32.5, KORTHIA },
 						{ 51.4, 46.8, KORTHIA },
 						{ 53.7, 37.9, KORTHIA },
@@ -121,6 +122,7 @@ _.Zones =
 						{ 42.3, 34.6, KORTHIA },
 						{ 43.6, 36.6, KORTHIA },
 						{ 45.6, 34.3, KORTHIA },
+						{ 55.1, 16.4, KORTHIA },
 					},
 					["g"] = {
 						i(186990),	-- Recipe: Blossom Burst
@@ -385,6 +387,7 @@ _.Zones =
 					["coords"] = {
 						{ 27.2, 48.3, KORTHIA },
 						{ 28.2, 50.7, KORTHIA },
+						{ 28.5, 54.9, KORTHIA },
 						{ 29.3, 47.1, KORTHIA },
 						{ 29.5, 53.4, KORTHIA },
 						{ 30.9, 45.7, KORTHIA },
@@ -508,4 +511,5 @@ _.HiddenQuestTriggers = {
 	q(64311),	-- looting a Teleporter Repair Kit (also pops looting one from rares)
 	q(64700),	-- looting 100-research item Ripped Cosmology Chart
 	q(64702),	-- looting 48-research item Scroll of Shadowlands Fables
+	q(64705),	-- looting 150-research item from a treasure
 };

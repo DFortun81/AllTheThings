@@ -126,6 +126,20 @@ _.Zones =
 				i(186148),	-- Mawsworn Vanquisher's Spire*
 				i(186145),	-- Stygian Thorn Loop
 				--
+				i(187054, {	-- Lost Razorwing Egg
+					["crs"] = {
+						177295,	-- Colossal Worldeater
+						177913,	-- Hungering Behemoth
+						179472,	-- Konthrogz the Obliterator
+						177645,	-- Melded Gorger
+						177646,	-- Mindseize Controller
+						177582,	-- Nimble Scavenger
+						177245,	-- Ravenous Gorger
+						177198,	-- Ravenous Scavenger
+						180032,	-- Wild Worldcracker
+						179859,	-- Xyraxz the Unknowable
+					},
+				}),
 				i(186995, {	-- Pattern: Shrouded Hand Towel
 					["crs"] = {	-- probably drops from many more (or any mawsworn); this is a mob specific to the Wild Worldcracker event
 						180030,	-- Opportunistic Corruptor

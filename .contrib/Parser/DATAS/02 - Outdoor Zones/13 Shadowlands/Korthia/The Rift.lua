@@ -53,15 +53,18 @@ _.Zones =
 							},
 						}),
 					}),
-					n(TREASURES, {	-- TODO: at least some of these appear to have multiple spawnpoints, which i probably won't capture all of myself
-						i(187421),	-- Ashen Linament
-						i(187251),	-- Shaded Skull Shoulderguards TODO - received from 369437 but assume it's not specific to that chest
+					n(TREASURES, {	-- TODO: at least some of these appear to have multiple spawnpoints, which i am sure i have not captured all of myself
 						o(369437, {	-- Riftbound Cache
 							["questID"] = 64456,
 							["isDaily"] = true,
-							["coord"] = { 37.9, 35.8, KORTHIA },
+							["coords"] = {
+								{ 37.9, 35.8, KORTHIA },
+								{ 39.8, 42.9, KORTHIA },
+							},
 							["g"] = {
 								i(187251),	-- Shaded Skull Shoulderguards
+								i(185050),	-- Spider Soul
+								i(187421),	-- Ashen Linament
 							},
 						}),
 						o(369438, {	-- Riftbound Cache
@@ -74,6 +77,8 @@ _.Zones =
 							},
 							["g"] = {
 								i(187251),	-- Shaded Skull Shoulderguards
+								i(185050),	-- Spider Soul
+								i(187421),	-- Ashen Linament
 							},
 						}),
 						o(369440, {	-- Riftbound Cache
@@ -85,6 +90,8 @@ _.Zones =
 							},
 							["g"] = {
 								i(187251),	-- Shaded Skull Shoulderguards
+								i(185050),	-- Spider Soul
+								i(187421),	-- Ashen Linament
 							},
 						}),
 						o(369439, {	-- Riftbound Cache
@@ -96,6 +103,8 @@ _.Zones =
 							},
 							["g"] = {
 								i(187251),	-- Shaded Skull Shoulderguards
+								i(185050),	-- Spider Soul
+								i(187421),	-- Ashen Linament
 							},
 						}),
 					}),

@@ -97,17 +97,20 @@ _.Zones =
 						crit(9, {	-- Fleshwing
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
-						--	TODO: add quest that rewards mount + mark it necrolord-only as well
-						i(186489, {	-- Lord of the Corpseflies (MOUNT!)
-							["customCollect"] = "SL_COV_NEC",	-- Necrolord
-						}),
 						i(187424, {	-- Legend of the Animaswell
 							["customCollect"] = "SL_COV_NEC",	-- Necrolord
 							["isWeekly"] = true,
 							["questID"] = 64551,
 						}),
 						i(187372),	-- Miasma Filtering Headpiece
-						i(187181),	-- Small Corpsefly Egg
+						i(187181, {	-- Small Corpsefly Egg
+							["customCollect"] = "SL_COV_NEC",	-- Necrolord
+							["g"] = {
+								i(186489, {	-- Lord of the Corpseflies (MOUNT!)
+									["customCollect"] = "SL_COV_NEC",	-- Necrolord
+								}),
+							},
+						}),
 					},
 				}),
 				n(179472, {	-- Konthrogz the Obliterator

@@ -90,7 +90,7 @@ _.Mounts =
 		i(44842),	-- Red Dragonhawk
 		i(44160),	-- Red Proto-Drake
 		i(45802),	-- Rusted Proto-Drake
-		i(183937),	-- Sinful Gladiator's Soul Eater
+		pvp(i(183937)),	-- Sinful Gladiator's Soul Eater
 		i(182717),	-- Sintouched Deathwalker
 		i(169194),	-- Snapback Scuttler
 		i(128706),	-- Soaring Skyterror
@@ -100,6 +100,7 @@ _.Mounts =
 		i(122703),	-- Summon Chauffeur (H)
 		i(186637),	-- Tazavesh Gearglider
 		i(77068),	-- Twilight Harbinger
+		pvp(i(186177)),	-- Unchained Gladiator's Soul Eater
 		i(165020, {	-- Vicious Black Bonesteed
 			["races"] = HORDE_ONLY,
 		}),

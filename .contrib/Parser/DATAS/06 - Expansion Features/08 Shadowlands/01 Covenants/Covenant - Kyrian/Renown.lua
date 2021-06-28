@@ -64,4 +64,5 @@ _.HiddenQuestTriggers = {
 	q(64137),	-- hitting Renown 56
 	q(64146),	-- hitting Renown 59
 	q(64372),	-- hitting Renown 60
+	q(64444),	-- hitting Renown 67
 };

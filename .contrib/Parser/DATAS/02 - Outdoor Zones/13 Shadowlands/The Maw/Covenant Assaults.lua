@@ -161,6 +161,32 @@ _.Zones =
 								i(186546),	-- Copperback Etherwyrm (PET!)
 							}),
 						}),
+						n(-77, {	-- Special
+							n(179096, {	-- Sly
+								["description"] = "Speak to Orator Kloe and tell her you will help find the missing Vulpin.  Follow the footprints and reassure Sly 3 times (over the course of 3 Kyrian Assaults) to earn the achievement and pet.",
+								["isWeekly"] = true,
+								["questID"] = 64019,
+								["coord"] = { 42.1, 44.5, THE_MAW },	-- Orator Kloe
+								["cr"] = 179068,	-- Orator Kloe
+								["g"] = {
+									q(64024, {	-- 1st Find
+										["coord"] = { 40.7, 51.6, THE_MAW },
+										["name"] = "1st Find",
+									}),
+									q(64022, {	-- 2nd Find
+										["coord"] = { 38.0, 39.7, THE_MAW },
+										["name"] = "2nd Find",
+									}),
+									q(64023, {	-- 3rd Find
+										["coord"] = { 32.9, 44.2, THE_MAW },
+										["name"] = "3rd Find",
+									}),
+									ach(15004, {	-- A Sly Fox
+										i(186539),	-- Sly (PET!)
+									}),
+								},
+							}),
+						}),
 					},
 				}),
 				q(63543, {	-- Necrolord Assault
@@ -329,6 +355,59 @@ _.Zones =
 							}),
 						}),
 						n(TREASURES, {
+							i(186188, {	-- Lil'Abom (PET!)
+							--	TODO: maybe move to battle pet section?  but idk because all the parts come from treasures :\
+							--	originally was not on PTR, then showed up during necrolord assault.  then was up without assault, the necrolord assault came back and pet parts all disappeared.  so i'm really not sure what the fuck the criteria are for seeing/looting these objects lol.  there is an assault quest that requires you to help build abominations so it may be tied to that, but it wasn't up last time the NL assault was active so i'm not sure
+								["cost"] = {
+									{ "i", 186183, 1 },	-- Lil'Abom Head
+									{ "i", 186185, 1 },	-- Lil'Abom Legs
+									{ "i", 186186, 1 },	-- Lil'Abom Right Hand
+									{ "i", 186187, 1 },	-- Lil'Abom Spare Arm
+									{ "i", 186184, 1 },	-- Lil'Abom Torso
+								},
+							}),
+							o(368666, {	-- Lil'Abom's Head
+								["questID"] = 64010,
+								["isDaily"] = true,
+							--	["coord"] = { 30.3, 63.3, THE_MAW }, original coord
+								["coord"] = { 32.1, 56.0, THE_MAW },	-- new coord?  or possibly multiple spawnpoints
+								["g"] = {
+									i(186183),	-- Lil'Abom Head
+								},
+							}),
+							o(368663, {	-- Lil'Abom's Right Hand
+								["description"] = "At the back of the cave, behind a rock on the left side.",
+								["questID"] = 64008,
+								["isDaily"] = true,
+								["coord"] = { 38.5, 58.5, THE_MAW },
+								["g"] = {
+									i(186186),	-- Lil'Abom Right Hand
+								},
+							}),
+							o(368665, {	-- Lil'Abom's Spare Arm
+								["questID"] = 64009,
+								["isDaily"] = true,
+								["coord"] = { 39.2, 66.5, THE_MAW },
+								["g"] = {
+									i(186187),	-- Lil'Abom Spare Arm
+								},
+							}),
+							o(368667, {	-- Lil'Abom's Torso
+								["questID"] = 64011,
+								["isDaily"] = true,
+								["coord"] = { 39.9, 62.6, THE_MAW },
+								["g"] = {
+									i(186184),	-- Lil'Abom Torso
+								},
+							}),
+							o(368668, {	-- Lil'Abom's Trunk
+								["questID"] = 64013,
+								["isDaily"] = true,
+								["coord"] = { 29.4, 67.2, THE_MAW },
+								["g"] = {
+									i(186185),	-- Lil'Abom Legs
+								},
+							}),
 							o(369141, {	-- Mawsworn Cache
 								["questID"] = 64209,
 								["isDaily"] = true,
@@ -364,6 +443,28 @@ _.Zones =
 								["questID"] = 63826,
 								["isDaily"] = true,
 								["coord"] = { 32.0, 56.3, THE_MAW },
+							}),
+							i(186603, {	-- Nilganihmaht's Stone Ring
+								["cost"] = {
+									{ "i", 186600, 1 },	-- Quartered Ancient Ring (looted from Mawsworn Cache)
+									{ "i", 186601, 1 },	-- Quartered Ancient Ring (bouncy Centurion ring)
+									{ "i", 186602, 1 },	-- Quartered Ancient Ring (Mad Maw Construct)
+									{ "i", 186604, 1 },	-- Quartered Ancient Ring (looted from ground)
+								},
+							}),
+							o(369143, {	-- Quartered Ancient Ring
+								["description"] = "This ring can be found in Perdition Hold once you've looted another |cFF1eff00Quartered Ancient Ring|r.",
+								["coords"] = {
+									{ 33.7, 66.2, THE_MAW },
+									{ 34.6, 59.7, THE_MAW },
+								},
+								["g"] = {
+									i(186604),	-- Quartered Ancient Ring
+								},
+							}),
+							i(186602, {	-- Quartered Ancient Ring
+								["description"] = "Mad Maw Construct will spawn in Perdition Hold once you've looted another |cFF1eff00Quartered Ancient Ring|r.  Kill it before it reaches Seeker Xeros's tower, or it will despawn.",
+								["cr"] = 179601,	-- Mad Maw Construct
 							}),
 						}),
 					},

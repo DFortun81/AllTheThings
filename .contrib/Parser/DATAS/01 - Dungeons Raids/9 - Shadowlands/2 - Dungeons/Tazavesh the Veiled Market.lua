@@ -237,6 +237,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 								i(186637),	-- Tazavesh Gearglider (MOUNT!)
 							}),
 							ach(15177),	-- Tazavesh, the Veiled Market
+							i(186638),	-- Cartel Master's Gearglider (MOUNT!)
 							i(181838),	-- Charitable Soul
 							i(182304),	-- Divine Call
 							i(182316),	-- Fel Defender

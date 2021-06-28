@@ -865,20 +865,15 @@ _.Zones =
 					["provider"] = { "n", 177141 },	-- Lady Moonberry
 					["coord"] = { 40.9, 66.2, ORIBOS },	-- Ring of Fates
 					["maps"] = { 2005 },	-- Ardenweald (scenario)
-					["g"] = {	-- TODO: add additional rewards, classes not checked listed below (probably warrior would be enough since i've done priest/mage?  but i do not have a 60 warrior)
-					--	warrior
-					--	paladin
-					--	hunter
-					--	rogue
-					--	warlock
-					--	monk
-					--	druid
-					--	dh
+					["g"] = {
 						i(179498),	-- Faesworn Barb
 						i(179564),	-- Faesworn Channeling Root
 						i(179515),	-- Faesworn Falchion
 						i(182322),	-- Faesworn Gavel
+						i(179511),	-- Faesworn Glaive
+						i(179531),	-- Faesworn Reaper
 						i(182323),	-- Faesworn Spellblade
+						i(179583),	-- Faesworn Warbow
 						i(179546),	-- Faesworn Warclub
 						i(179536),	-- Faesworn Warmaul
 					},

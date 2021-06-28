@@ -72,12 +72,15 @@ _.Zones =
 					},
 				}),
 				n(170787, {	-- Akros <Death's Hammer>
-					["questID"] = 60920,
+					["questID"] = 63382,
 					["isDaily"] = true,
 					["coord"] = { 34.0, 74.6, THE_MAW },
 					["g"] = {
 						crit(10, {	-- Akros
 							["achievementID"] = 14660,	-- It's About Sending a Message
+						}),
+						i(186617, {	-- Death's Hammer Stompers
+							["timeline"] = { "added 9.1.0.38312" },
 						}),
 					},
 				}),
@@ -164,6 +167,9 @@ _.Zones =
 					["g"] = {
 						crit(6, {	-- Darklord Taraxis
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
+						}),
+						i(186611, {	-- Taraxis' Treads
+							["timeline"] = { "added 9.1.0.38312" },
 						}),
 					},
 				}),
@@ -286,7 +292,10 @@ _.Zones =
 						crit(10, {	-- Eternas the Tormentor
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
 						}),
-						i(183407),	-- Contained Essence of Dread
+						i(183407),	-- Dread (PET!)
+						i(186212, {	-- Eternas' Braided Waistcord
+							["timeline"] = { "added 9.1.0.38312" },
+						}),
 					},
 				}),
 				n(170303, {	-- Exos, Herald of Domination
@@ -299,6 +308,7 @@ _.Zones =
 						crit(11, {	-- Exos, Herald of Domination
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
 						}),
+						i(186606),	-- Nilganihmaht's Signet Ring
 						i(184108),	-- Vorpal Amulet
 						i(183066, {	-- Korrath's Grimoire: Aleketh
 							["questID"] = 63160,	-- Korrath's Grimoire: Aleketh
@@ -395,9 +405,10 @@ _.Zones =
 						crit(11, {	-- Malevolent Stygia
 							["achievementID"] = 14660,	-- It's About Sending a Message
 						}),
-						q(61125, {	-- Bonus Objective
-							["isDaily"] = true,
+						i(186625, {	-- Hood of Malevolence
+							["timeline"] = { "added 9.1.0.38312" },
 						}),
+						
 					},
 				}),
 				n(162849, {	-- Morguliax <Lord of Decapitation>
@@ -466,8 +477,8 @@ _.Zones =
 						crit(4, {	-- Orrholyn
 							["achievementID"] = 14660,	-- It's About Sending a Message
 						}),
-						q(60991, {	-- Bonus Objective
-							["isDaily"] = true,
+						i(186626, {	-- Bloodwicking Bands
+							["timeline"] = { "added 9.1.0.38312" },
 						}),
 					},
 				}),
@@ -588,11 +599,14 @@ _.Zones =
 						crit(17, {	-- Soulforger Rhovus
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
 						}),
-						i(183141),	-- Stygic Magma
+						i(186613, {	-- Rhovus' Linked Greaves
+							["timeline"] = { "added 9.1.0.38312" },
+						}),
 						i(185473, {	-- Soulforger's Tools
 							["description"] = "Used for the |cFFb19cd9Bound Shadehound|r secret mount. Only available to characters who have collected the |cFFa335eeIntact Rune Codex|r.",
 							["questID"] = 63667,
 						}),
+						i(183141),	-- Stygic Magma
 					},
 				}),
 				n(165047, {	-- Soulsmith Yol-Mattar
@@ -665,8 +679,14 @@ _.Zones =
 						crit(15, {	-- Valis the Cruel
 							["achievementID"] = 14660,	-- It's About Sending a Message
 						}),
-						q(61728, {	-- Bonus Objective
-							["isDaily"] = true,
+						n(174810, {	-- Rune of Cruelty (1)
+							["description"] = "Click 1st.",
+						}),
+						n(174811, {	-- Rune of Cruelty (2)
+							["description"] = "Click 2nd.",
+						}),
+						n(174812, {	-- Rune of Cruelty (3)
+							["description"] = "Click 3rd.",
 						}),
 					},
 				}),
@@ -730,5 +750,8 @@ _.Zones =
 
 _.HiddenQuestTriggers = {
 	q(61136),	-- Agonix bonus objective
+	q(61125),	-- Malevolent Stygia bonus objective
+	q(60991),	-- Orrholyn bonus objective
 	q(62211),	-- Skittering Broodmother bonus objective
+	q(61728),	-- Valis bonus objective
 };

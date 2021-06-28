@@ -20,11 +20,6 @@ _.NeverImplemented =
 		["description"] = "If this drops for you, please provide as much information as you can about how and where you got it.",
 	}),
 	tier(9,	{	-- Shadowlands -- Items that might get added after 9.0.5. If you are sure the item won't be added, please put it into the correct section
-		-- Added in 9.1. Remove me soon!
-		i(179531),	-- Faesworn Reaper
-		i(179583),	-- Faesworn Warbow
-
-
 		i(180491),	-- Wingdancer's Spire
 		-- Mounts
 		i(182083),	-- Bonecleaver's Skullboar

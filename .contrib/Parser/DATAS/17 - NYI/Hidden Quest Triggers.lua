@@ -4299,7 +4299,6 @@ _.HiddenQuestTriggers = {
 
 
 		-- Eye of the Jailer Levels
-		q(63382),	-- Mortars/Missiles (1)
 		q(63379),	-- Assassins (2)
 		-- q(),	-- Chains (3)
 		q(63376),	-- Abductors (4)
