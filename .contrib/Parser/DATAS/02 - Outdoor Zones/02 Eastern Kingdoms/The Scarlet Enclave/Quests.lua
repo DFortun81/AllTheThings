@@ -31,10 +31,77 @@ _.Zones =
 								i(38675),	-- Signet of the Dark Brotherhood
 							},
 						}),
+						q(12739, {	-- A Special Surprise
+							["provider"] = { "n", 29053 },	-- Knight Commander Plaguefist
+							["coord"] = { 52.6, 81.0, 124 },
+							["sourceQuest"] = 12738,	-- A Cry For Vengeance!
+							["races"] = { TAUREN },
+						}),
+						q(12742, {	-- A Special Surprise
+							["provider"] = { "n", 29053 },	-- Knight Commander Plaguefist
+							["coord"] = { 52.6, 81.0, 124 },
+							["sourceQuest"] = 12738,	-- A Cry For Vengeance!
+							["races"] = { HUMAN },
+						}),
+						q(12743, {	-- A Special Surprise
+							["provider"] = { "n", 29053 },	-- Knight Commander Plaguefist
+							["coord"] = { 52.6, 81.0, 124 },
+							["sourceQuest"] = 12738,	-- A Cry For Vengeance!
+							["races"] = { NIGHTELF, DRAENEI },
+						}),
+						q(12744, {	-- A Special Surprise
+							["provider"] = { "n", 29053 },	-- Knight Commander Plaguefist
+							["coord"] = { 52.6, 81.0, 124 },
+							["sourceQuest"] = 12738,	-- A Cry For Vengeance!
+							["races"] = { DWARF },
+						}),
+						q(12745, {	-- A Special Surprise
+							["provider"] = { "n", 29053 },	-- Knight Commander Plaguefist
+							["coord"] = { 52.6, 81.0, 124 },
+							["sourceQuest"] = 12738,	-- A Cry For Vengeance!
+							["races"] = { GNOME },
+						}),
+						q(12746, {	-- A Special Surprise
+							["provider"] = { "n", 29053 },	-- Knight Commander Plaguefist
+							["coord"] = { 52.6, 81.0, 124 },
+							["sourceQuest"] = 12738,	-- A Cry For Vengeance!
+							["races"] = { DRAENEI },
+						}),
+						q(12747, {	-- A Special Surprise
+							["provider"] = { "n", 29053 },	-- Knight Commander Plaguefist
+							["coord"] = { 52.6, 81.0, 124 },
+							["sourceQuest"] = 12738,	-- A Cry For Vengeance!
+							["races"] = { BLOODELF },
+						}),
+						q(12748, {	-- A Special Surprise
+							["provider"] = { "n", 29053 },	-- Knight Commander Plaguefist
+							["coord"] = { 52.6, 81.0, 124 },
+							["sourceQuest"] = 12738,	-- A Cry For Vengeance!
+							["races"] = { ORC, MAGHAR },
+						}),
+						q(12749, {	-- A Special Surprise
+							["provider"] = { "n", 29053 },	-- Knight Commander Plaguefist
+							["coord"] = { 52.6, 81.0, 124 },
+							["sourceQuest"] = 12738,	-- A Cry For Vengeance!
+							["races"] = { TROLL },
+						}),
+						q(12750, {	-- A Special Surprise
+							["provider"] = { "n", 29053 },	-- Knight Commander Plaguefist
+							["coord"] = { 52.6, 81.0, 124 },
+							["sourceQuest"] = 12738,	-- A Cry For Vengeance!
+							["races"] = { UNDEAD },
+						}),
+						q(28649, {	-- A Special Surprise
+							["provider"] = { "n", 29053 },	-- Knight Commander Plaguefist
+							["coord"] = { 52.6, 81.0, 124 },
+							["sourceQuest"] = 12738,	-- A Cry For Vengeance!
+							["races"] = { WORGEN },
+						}),
 						q(28650, {	-- A Special Surprise
 							["provider"] = { "n", 29053 },	-- Knight Commander Plaguefist
 							["coord"] = { 52.6, 81.0, 124 },
 							["sourceQuest"] = 12738,	-- A Cry For Vengeance!
+							["races"] = { GOBLIN },
 						}),
 						q(12711, {	-- Abandoned Mail
 							["coord"] = { 55.2, 46.2, 124 },
