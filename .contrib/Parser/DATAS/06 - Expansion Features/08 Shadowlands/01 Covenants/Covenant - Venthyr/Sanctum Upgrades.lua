@@ -185,10 +185,6 @@ _.ExpansionFeatures =
 									ach(14723),		-- Be Our Guest
 									ach(14678, {	-- Court Favors
 									--	TODO: add remaining crit to the places From Whence They Come
-										crit(3, {	-- Bewitched Wardrobe
-										}),
-										crit(8, {	-- Dredger Party Supplies
-										}),
 										crit(11, {	-- Necrolord Arsenal
 										}),
 										crit(13, {	-- Kyrian Arsenal
@@ -685,12 +681,19 @@ _.ExpansionFeatures =
 									},
 								}),
 								q(63694, {	-- Choofa's Best Friend
+									-- ["minReputation"] = { ,  }, -- TODO, Best Friend w/ Choofa?
 									["provider"] = { "n", 160814 },	-- Choofa
 									["coord"] = { 63.7, 36.6, ARDENWEALD },
 								}),
 								q(63685, {	-- Cryptkeeper Kassir's Best Friend
+									-- ["minReputation"] = { ,  }, -- TODO, Best Friend w/ Cryptkeeper Kassir?
 									["provider"] = { "n", 163073 },	-- Cryptkeeper Kassir
 									["coord"] = { 70.1, 56.1, REVENDRETH },
+								}),
+								q(63695, {	-- Droman Aliothe's Best Friend
+									-- ["minReputation"] = { ,  }, -- TODO, Best Friend w/ Droman Aliothe?
+									["provider"] = { "n", 160894 },	-- Droman Aliothe
+									["coord"] = { 60.0, 53.8, ARDENWEALD },
 								}),
 								q(61407, {	-- Ember Court: Atoning Rituals
 									["sourceQuests"] = {
@@ -935,6 +938,7 @@ _.ExpansionFeatures =
 									["coord"] = { 70.0, 56.2, REVENDRETH },
 								}),
 								q(63697, {	-- Kleia and Pelagos's Best Friend
+									-- ["minReputation"] = { 2457,  }, -- TODO, Best Friend w/ Kleia and Pelagos?
 									["provider"] = { "n", 174916 },	-- Kleia
 									["coord"] = { 55.8, 86.4, BASTION },
 								}),
@@ -950,6 +954,11 @@ _.ExpansionFeatures =
 											i(184628),	-- Elder's Sacrificial Moonstone
 										}),
 									},
+								}),
+								q(63698, {	-- Plague Deviser Marileth's Best Friend
+									-- ["minReputation"] = { ,  }, -- TODO, Best Friend w/ Plague Deviser Marileth?
+									["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
+									["coord"] = { 60.4, 71.6, MALDRAXXUS },
 								}),
 								q(62073, {	-- Restock: Band Shirts
 									["repeatable"] = true,
@@ -1295,6 +1304,7 @@ _.ExpansionFeatures =
 									["coord"] = { 55.5, 27.0, 1699 },	-- Sinfall Reaches
 								}),
 								q(63699, {	-- Sika's Best Friend
+									-- ["minReputation"] = { ,  }, -- TODO, Best Friend w/ Sika?
 									["provider"] = { "n", 166577 },	-- Sika
 									["coord"] = { 52.6, 82.5, BASTION },
 								}),
@@ -1309,6 +1319,11 @@ _.ExpansionFeatures =
 											}),
 										}),
 									},
+								}),
+								q(63700, {	-- Stonehead's Best Friend
+									-- ["minReputation"] = { ,  }, -- TODO, Best Friend w/ Stonehead?
+									["provider"] = { "n", 157199 },	-- Stonehead
+									["coord"] = { 39.0, 66.0, REVENDRETH },
 								}),
 								q(61616, {	-- The Ember Court (Week 1)
 								--	got this as my Week 1 quest.  after the weekly rollover, IsQuestFlaggedCompleted is still returning 'true' for this, so possible it changes every week?
@@ -1583,6 +1598,7 @@ _.ExpansionFeatures =
 							}),
 							n(-963, {	-- Tier 3: Court Influencer
 								q(63690, {	-- Alexandros Mograine's Best Friend
+									-- ["minReputation"] = { ,  }, -- TODO, Best Friend w/ Alexandros Mograine?
 									["provider"] = { "n", 171933 },	-- Alexandros Mograine
 									["coord"] = { 50.4, 67.4, MALDRAXXUS },
 								}),
@@ -1606,6 +1622,21 @@ _.ExpansionFeatures =
 								}),
 								q(62601, {	-- Forgy
 									["provider"] = { "i", 183848 },	-- Hastily Scrawled Note to Forgy
+								}),
+								q(63691, {	-- Hunt-Captain Korayn's Best Friend
+									-- ["minReputation"] = { ,  }, -- TODO, Best Friend w/ Hunt-Captain Korayn?
+									["provider"] = { "n", 171319 },	-- Hunt-Captain Korayn
+									["coord"] = { 50.8, 70.4, ARDENWEALD },
+								}),
+								q(63692, {	-- Polemarch Adrestes's Best Friend
+									-- ["minReputation"] = { ,  }, -- TODO, Best Friend w/ Polemarch Adrestes?
+									["provider"] = { "n", 171385 },	-- Polemarch Adrestes
+									["coord"] = { 51.8, 47.6, BASTION },
+								}),
+								q(63693, {	-- Rendle and Cudgelface's Best Friend
+									-- ["minReputation"] = { ,  }, -- TODO, Best Friend w/ Rendle and Cudgelface?
+									["provider"] = { "n", 171190 },	-- Alexandros Mograine
+									["coord"] = { 31, 40, REVENDRETH },
 								}),
 								q(61255, {	-- RSVP: Alexandros Mograine
 									["sourceQuests"] = { 61943 },	-- Court Influencer
@@ -1710,6 +1741,11 @@ _.ExpansionFeatures =
 								}),
 							}),
 							n(-964, {	-- Tier 4: Discerning Taste
+								q(63686, {	-- Baroness Vashj's Best Friend
+									-- ["minReputation"] = { ,  }, -- TODO, Best Friend w/ Baroness Vashj?
+									["provider"] = { "n", 162487 },	-- Baroness Vashj
+									["coord"] = { 67.6, 45.9, MALDRAXXUS },
+								}),
 								q(61944, {	-- Discerning Taste
 									["sourceQuests"] = { 61943 },	-- Court Influencer (not confirmed, but very likely)
 									["provider"] = { "n", 165399 },	-- Lord Garridan
@@ -1721,6 +1757,16 @@ _.ExpansionFeatures =
 											}),
 										}),
 									},
+								}),
+								q(63687, {	-- Lady Moonberry's Best Friend
+									-- ["minReputation"] = { ,  }, -- TODO, Best Friend w/ Lady Moonberry?
+									["provider"] = { "n", 172098 },	-- Lady Moonberry
+									["coord"] = { 48.9, 51.0, ARDENWEALD },
+								}),
+								q(63688, {	-- Mikanikos's Best Friend
+									-- ["minReputation"] = { ,  }, -- TODO, Best Friend w/ Mikanikos?
+									["provider"] = { "n", 171647 },	-- Mikanikos
+									["coord"] = { 50.1, 21.0, BASTION },
 								}),
 								q(61174, {	-- RSVP: Baroness Vashj
 									-- ["sourceQuests"] = {  },	-- Tier 4 Unlock from Fourth Guest List Page...
@@ -1754,6 +1800,11 @@ _.ExpansionFeatures =
 									["g"] = {
 										i(176114),	-- RSVP: The Countess
 									},
+								}),
+								q(63689, {	-- The Countess's Best Friend
+									-- ["minReputation"] = { ,  }, -- TODO, Best Friend w/ The Countess?
+									["provider"] = { "n", 171106 },	-- The Countess
+									["coord"] = { 58.0, 27.4, REVENDRETH },
 								}),
 							}),
 							n(-965, {	-- Tier 5: The Professionals
