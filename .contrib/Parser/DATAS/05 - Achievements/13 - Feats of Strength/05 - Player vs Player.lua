@@ -566,8 +566,7 @@ _.Achievements =
 				ach(12959),	-- Challenger: Battle for Azeroth Season 1
 				ach(13199),	-- Combatant: Battle for Azeroth Season 1
 				ach(12962, {	-- Duelist: Battle for Azeroth Season 1
-					--[[ Note!! Currently we can not list this due to having no item.
-					Illusion: Dreadflame // Dreadflame Illusion --]]
+					illusion(6096),		-- Dreadflame
 					i(164575),	-- Dread Gladiator's Cloak (A)
 					i(164574),	-- Dread Gladiator's Cloak (H)
 				}),
@@ -592,8 +591,7 @@ _.Achievements =
 				ach(13203),	-- Challenger: Battle for Azeroth Season 2
 				ach(13204),	-- Combatant: Battle for Azeroth Season 2
 				ach(13209, {	-- Duelist: Battle for Azeroth Season 2
-					--[[ Note!! Currently we can not list this due to having no item.
-					Illusion: Dreadflame // Dreadflame Illusion --]]
+					illusion(6096),		-- Dreadflame
 					i(165060),	-- Alliance Sinister Gladiator's Cloak
 					i(165059),	-- Horde Sinister Gladiator's Cloak
 				}),
@@ -617,8 +615,7 @@ _.Achievements =
 				ach(13634),	-- Challenger: Battle for Azeroth Season 3
 				ach(13639),	-- Combatant: Battle for Azeroth Season 3
 				ach(13642, {	-- Duelist: Battle for Azeroth Season 3
-					--[[ Note!! Currently we can not list this due to having no item.
-					Illusion: Dreadflame // Dreadflame Illusion --]]
+					illusion(6096),		-- Dreadflame
 					i(167382),	-- Notorious Gladiator's Cloak (A)
 					i(167381),	-- Notorious Gladiator's Cloak (H)
 				}),
@@ -642,8 +639,7 @@ _.Achievements =
 				ach(13959),	-- Challenger: Battle for Azeroth Season 4
 				ach(13962),	-- Combatant: Battle for Azeroth Season 4
 				ach(13964, {	-- Duelist: Battle for Azeroth Season 4
-					-- Note!! Currently we can not list this due to having no item.
-					-- Illusion: Dreadflame // Dreadflame Illusion
+					illusion(6096),		-- Dreadflame
 					i(172671),	-- Corrupted Gladiator's Cloak (A)
 					i(172670),	-- Corrupted Gladiator's Cloak (H)
 				}),
@@ -669,7 +665,6 @@ _.Achievements =
 					title(78),	-- Combatant <Name>
 				}),
 				ach(14688, {	-- Duelist: Shadowlands Season 1
-					illusion(6096),		-- Dreadflame
 					illusion(6266, {	-- Sinful Flame
 						["u"] = REMOVED_FROM_GAME,
 					}),
