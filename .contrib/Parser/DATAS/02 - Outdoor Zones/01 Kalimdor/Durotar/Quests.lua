@@ -1383,16 +1383,17 @@ _.Zones =
 						"added 7.0.1.20796",
 					},
 				}),
-				-- #if BEFORE CATA
 				q(835, {	-- Securing the Lines
 					["qg"] = 3293,	-- Rezlak
 					["sourceQuest"] = 834,	-- Winds in the Desert
 					["coord"] = { 46.38, 22.94, DUROTAR },
 					--["races"] = ALL_RACES,	-- Crieve: Yes, doable on Alliance.
-					["lvl"] = 7,
+					-- I dont know when this was confirmed but according to wowhead comments 8.2.5 its not anymore(Waiting for confirment from disc
+					["lvl"] = lvlsquish(7, 1, 7),
 					["timeline"] = {
 						"added 1.11.1.10772",
 					},
+					-- #if BEFORE CATA
 					["g"] = {
 						objective(1, {	-- 0/12 Dustwind Savage
 							["cr"] = 3117,	-- Dustwind Savage
@@ -1404,19 +1405,7 @@ _.Zones =
 						i(4931),	-- Hickory Shortbow
 						i(4938),	-- Blemished Wooden Staff
 					},
-				}),
-				-- #endif
-				-- #if AFTER CATA
-				q(835, {	-- Securing the Lines
-					["qg"] = 3293,	-- Rezlak
-					["sourceQuest"] = 834,	-- Winds in the Desert
-					["coord"] = { 46.38, 22.94, DUROTAR },
-					--["races"] = ALL_RACES,	-- Crieve: Yes, doable on Alliance.
-					-- I dont know when this was confirmed but according to wowhead comments 8.2.5 its not anymore
-					["lvl"] = lvlsquish(7, 1, 7),
-					["timeline"] = {
-						"added 1.11.1.10772",
-					},
+					-- #else
 					["g"] = {
 						objective(1, {	-- 0/12 Durotar Harpy slain
 							["crs"] = {
@@ -1427,8 +1416,8 @@ _.Zones =
 							},
 						}),
 					},
+					-- #endif
 				}),
-				-- #endif
 				q(25256, {	-- Sent for Help
 					["qg"] = 39604,	-- Vek'nag
 					["lvl"] = lvlsquish(8, 1, 8),

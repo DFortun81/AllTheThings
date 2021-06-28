@@ -1106,6 +1106,7 @@ _.NeverImplemented =
 			i(162639), 	-- Wooden Toy Helm (A) (used from Winter Veil 2018 Toy, but its just used to attach the look to you, you actually never get the item)
 			i(163922), 	-- Used for a toy, you never can get the actual item
 			i(163923), 	-- Used for a toy, you never can get the actual item
+			i(146307), 	-- Winter Boots (STUCK ON RETRIEVING DATA) (removed Beta)
 		}),
 		n(-324, {	-- Shirts
 			i(53869),	-- War Paint (Shirt) NOT GOOD FOR THE LADIES (NYI)
@@ -1372,6 +1373,7 @@ _.NeverImplemented =
 			i(168023),	-- dnt smashed transporter relay
 			i(168030),	-- dnt hyperbolic circuit
 			i(168031),	-- dnt transference disc
+			i(31279),	-- Enchanted Illidari Tabard [Temp Quest Item]
 		}),
 		-- M+ PTR Testing
 		i(181850),	-- Set Keystone Map: Plaguefall
@@ -1801,6 +1803,7 @@ _.NeverImplemented =
 		i(136913),	-- Red Broodling (wild pet catchable, item was never used)
 		i(136902),	-- Toxic Whelpling (wild pet catchable, item was never used)
 		i(136921),	-- Trigger (132519 is crafted from engineering, doesn't appear this version was ever used)
+		i(67600), 	-- Lil' Alexstrasza (Never added in Game)
 	}),
 	n(-38, {	-- Professions
 		prof(ALCHEMY, {
@@ -3254,6 +3257,7 @@ _.NeverImplemented =
 			i(140412),	-- Reactive Intuition
 			i(140416),	-- Conscience of the Victorious
 			i(140420),	-- Battering Tempest
+			i(133018),	-- Azsuna Packe 3 Holy 1 Unused
 		}),
 		n(-332, {	-- Shields
 			i(165617),	-- Unknown
@@ -3533,18 +3537,6 @@ _.NeverImplemented =
 		i(128824), 	-- Tome of the Silver Hand
 	}),
 	-- Weapons end
-	n(-387,  {	-- Relics
-		i(133018),	-- Azsuna Packe 3 Holy 1 Unused
-	}),
-	n(-797,	{	-- Journal
-		i(67600), 	-- Lil' Alexstrasza (Never added in Game)
-	}),
-	f(104, {	-- Quest
-		i(31279),	-- Enchanted Illidari Tabard [Temp Quest Item]
-	}),
-	f(2, {	-- Cosmetic
-		i(146307), 	-- Winter Boots (STUCK ON RETRIEVING DATA) (removed Beta)
-	}),
 
 ------------------------------------------------------------
 --			T E M P O R A R Y			I T E M S		  --
