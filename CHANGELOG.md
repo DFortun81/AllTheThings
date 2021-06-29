@@ -14,6 +14,7 @@ New zone, questlines, achievements, mounts and everything else should be in this
 ### Other notable changes:
 
 - Currencies now use new diamond icon instead of star icon (to avoid confusion with CanIMogIt)
+- If you right-click a Thing to open popout window for it, we will now show Source(s) header with Vendors/Quests/etc
 - Modified Contains & Search logic to properly utilize the 'Ignore BoE Filters' option for the nested content of BoE Items
 - Ongoing fixes for stuff from Burning Crusade
 - Fixed a bug causing script timeouts in some maps
