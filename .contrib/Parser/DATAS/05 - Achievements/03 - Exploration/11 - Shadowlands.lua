@@ -84,9 +84,9 @@ _.Achievements =
 				crit(7),		-- Sabriel the Bonecleaver
 			}),
 			ach(14767, {	-- Count Your Blessings
-				crit(1), 		-- Purified Blessing of Grace
-				crit(2), 		-- Purified Blessing of Power
-				crit(3), 		-- Purified Blessing of Fortitude
+				crit(1),		-- Purified Blessing of Grace
+				crit(2),		-- Purified Blessing of Power
+				crit(3),		-- Purified Blessing of Fortitude
 			}),
 			ach(14763, {	-- Crypt Couture
 				crit(1),		-- Ashen Ink

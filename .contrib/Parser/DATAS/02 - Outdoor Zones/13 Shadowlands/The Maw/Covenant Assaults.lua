@@ -677,11 +677,11 @@ _.Zones =
 										}),
 										crit(6, {	-- Lost Sybille
 										--	["coord"] = { , , THE_MAW },
-										--	["cr"] = ,	-- 
+										--	["cr"] = ,	--
 										}),
 										crit(7, {	-- Vulca
 										--	["coord"] = { , , THE_MAW },
-										--	["cr"] = ,	-- 
+										--	["cr"] = ,	--
 										}),
 										crit(8, {	-- Iven
 											["coord"] = { 32.7, 14.8, THE_MAW },
@@ -695,7 +695,7 @@ _.Zones =
 								["isWeekly"] = true,
 								["coord"] = { 31.5, 15.0, THE_MAW },
 								["g"] = {
-									crit(6, { 	-- Duelist's Challenge
+									crit(6, {	-- Duelist's Challenge
 										["achievementID"] = 15033,	-- Taking the Tremaculum
 									}),
 								},
