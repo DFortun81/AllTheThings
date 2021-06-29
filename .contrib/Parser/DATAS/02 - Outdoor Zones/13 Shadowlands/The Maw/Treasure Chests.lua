@@ -41,13 +41,15 @@ _.Zones =
 					},
 				}),
 				o(369145, {	-- Helgarde Supply Cache
-					["description"] = "This chest does not glow or sparkle.",
+					["description"] = "This chest does not glow or sparkle.  After the first loot of these chests, which will drop the key, they are repeatable and appear to just drop Stygia.",
 					["questID"] = 62682,
 					["coords"] = {
+						{ 62.2, 51.6, THE_MAW },
 						{ 65.7, 61.2, THE_MAW },
 						{ 67.3, 49.0, THE_MAW },
 						{ 67.7, 53.1, THE_MAW },
 						{ 68.2, 48.1, THE_MAW },
+						{ 68.7, 42.6, THE_MAW },
 					},
 					["g"] = {
 						i(186727),	-- Seal Breaker Key

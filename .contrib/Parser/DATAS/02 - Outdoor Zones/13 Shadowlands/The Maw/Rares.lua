@@ -225,10 +225,11 @@ _.Zones =
 					},
 				}),
 				n(179791, {	-- Deomen the Vortex
-					["description"] = "If the portcullis is locked, enter the building to the left of the rare.  There is a lever on the wall on either side of the room at the bottom of the stairs, inside the alcoves.",
-				--	["questID"] = , TODO - get questID
+					["description"] = "If the cage is locked, enter the building to the left of the rare at |cFFFFFFFF63.3, 43.6|r.  There is a lever on the wall on either side of the room at the bottom of the stairs, inside the alcoves.",
+					["questID"] = 64251,
 					["isDaily"] = true,
-					["coord"] = { 66.4, 55.4, THE_MAW },
+				--	["coord"] = { 66.4, 55.4, THE_MAW }, old coord?
+					["coord"] = { 61.3, 41.3, THE_MAW },
 					["g"] = {
 						crit(5, {	-- Deomen the Vortex
 							["achievementID"] = 15107,	-- Conquering Korthia
