@@ -20,16 +20,6 @@ _.NeverImplemented =
 		["description"] = "If this drops for you, please provide as much information as you can about how and where you got it.",
 	}),
 	tier(9,	{	-- Shadowlands -- Items that might get added after 9.0.5. If you are sure the item won't be added, please put it into the correct section
-		-- Added in 9.1. Remove me soon!
-		i(179531),	-- Faesworn Reaper
-		i(179515),	-- Faesworn Falchion
-		i(179498),	-- Faesworn Barb
-		i(179564),	-- Faesworn Channeling Root
-		i(182322),	-- Faesworn Gavel
-		i(182323),	-- Faesworn Spellblade
-		i(179546),	-- Faesworn Warclub
-		i(179583),	-- Faesworn Warbow
-
 
 		i(180491),	-- Wingdancer's Spire
 		-- Mounts
@@ -130,25 +120,10 @@ _.NeverImplemented =
 	n(-163, {	-- Armor
 		n(-43, {	-- Cloth
 			cl(MAGE, {
-				i(77780),	-- Replica Lieutenant Commander's Silk Mantle
 			}),
 			cl(PRIEST, {
-				-- ?
-				i(167111),	-- Unknown
-				i(167112),	-- Unknown
-				i(167113),	-- Unknown
-				i(167114),	-- Unknown
-				i(167115),	-- Unknown
-				i(167116),	-- Unknown
-				i(167117),	-- Unknown
-				i(167118),	-- Unknown
 			}),
 			cl(WARLOCK, {
-				i(32093),	-- Chancellor's Dreadweave Gloves
-				i(32094),	-- Chancellor's Dreadweave Hood
-				i(32095),	-- Chancellor's Dreadweave Legs
-				i(32096),	-- Chancellor's Dreadweave Manthle
-				i(32097),	-- Chancellor's Dreadweave Robe
 			}),
 			i(153289),	-- Eredar Priestess' Tunic
 			i(105710),	-- Lasso Bracers, Humanoid
@@ -240,7 +215,6 @@ _.NeverImplemented =
 			i(179716),	--
 			i(179717),	--
 			i(179718),	--
-			i(78017),	-- Replica Magister's Leggings (Cloth)
 			i(4989),		-- Mage Dragon Robe (intended to be quest reward, never made it to live?)
 			i(4990),		-- Scorched Bands
 			i(163340),	-- 7th Legionnaire's Circlet
@@ -269,23 +243,8 @@ _.NeverImplemented =
 			i(109540),	-- Unknown
 			i(109542),	-- Unknown
 			i(109546),	-- Unknown
-			i(32098),	-- Chancellor's Mooncloth Cowl
-			i(32099),	-- Chancellor's Mooncloth Legs
-			i(32100),	-- Chancellor's Mooncloth Mitts
-			i(32101),	-- Chancellor's Mooncloth Shoulderpads
-			i(32102),	-- Chancellor's Mooncloth Vestments
 			i(166406),	-- Flaskzertauren's Cloth Robes
 			i(166407),	-- Flaskzertauren's Cloth Shoulders
-			i(32103),	-- Chancellor's Satin Gloves
-			i(32104),	-- Chancellor's Satin Hood
-			i(32105),	-- Chancellor's Satin Legs
-			i(32106),	-- Chancellor's Satin Manthle
-			i(32107),	-- Chancellor's Satin Robe
-			i(32108),	-- Chancellor's Silk Amice
-			i(32109),	-- Chancellor's Silk Cowl
-			i(32110),	-- Chancellor's Silk Handguards
-			i(32111),	-- Chancellor's Silk Rainment
-			i(32112),	-- Chancellor's Silk Legs
 			i(104355),	-- Titan Rocket Boots
 			i(109303),	-- Unknown
 			i(109339),	-- Unknown
@@ -357,30 +316,17 @@ _.NeverImplemented =
 			i(114300),	-- Grimchop Greatcloak
 			i(114301),	-- Axebreak Darkcloak
 			i(59797),	-- Abalone-Linked Robes
+			i(167111),	-- QA Combat Test Caster Belt 1
+			i(167112),	-- QA Combat Test Caster Robes 1
+			i(167113),	-- QA Combat Test Caster Shoulders 1
+			i(167114),	-- QA Combat Test Caster Gloves 1
+			i(167115),	-- QA Combat Test Caster Helm 1
+			i(167116),	-- QA Combat Test Caster Legs 1
+			i(167117),	-- QA Combat Test Caster Boots
+			i(167118),	-- QA Combat Test Caster Bracer 1
 		}),
 		n(-44, {	-- Leather
 			cl(DRUID, {
-				i(77751),	-- Replicate Knight Captains Dragonhide Chestpiece
-				i(32113),	-- Chancellor's Dragonhide Gloves
-				i(32114),	-- Chancellor's Dragonhide Helm
-				i(32115),	-- Chancellor's Dragonhide Legguards
-				i(32116),	-- Chancellor's Dragonhide Spaulders
-				i(32117),	-- Chancellor's Dragonhide Tunic
-				i(32118),	-- Chancellor's Kodohide Gloves
-				i(32119),	-- Chancellor's Kodohide Helm
-				i(32120),	-- Chancellor's Leather Legguards
-				i(32121),	-- Chancellor's Kodohide Spaulders
-				i(32122),	-- Chancellor's Kodohide Legguards
-				i(32123),	-- Chancellor's Kodohide Tunic
-				i(32124),	-- Chancellor's Leather Gloves
-				i(32125),	-- Chancellor's Leather Helm
-				i(32126),	-- Chancellor's Leather Spaulders
-				i(32127),	-- Chancellor's Leather Tunic
-				i(32128),	-- Chancellor's Wyrmhide gloves
-				i(32129),	-- Chancellor's Wyrmhide Helm
-				i(32130),	-- Chancellor's Wyrmhide Legguards
-				i(32131),	-- Chancellor's Wyrmhide Spaulders
-				i(32132),	-- Chancellor's Wyrmhide Tunic
 			}),
 			cl(ROGUE, {
 				i(7950),		-- Armor of Thero-Shan
@@ -559,30 +505,10 @@ _.NeverImplemented =
 			cl(SHAMAN, {
 				i(157725),	-- Totem Caller Coif (Sham Future Boost Gear)
 				i(157727),	-- Totem Caller Pauldrons (Sham Future Boost Gear)
-				i(32138),	-- Chancellor's Linked Armor
-				i(32139),	-- Chancellor's Linked Gauntlets
-				i(32140),	-- Chancellor's Linked Helm
-				i(32141),	-- Chancellor's Linked Leggings
-				i(32142),	-- Chancellor's Linked Spaulders
-				i(32143),	-- Chancellor's Mail Armor
-				i(32144),	-- Chancellor's Mail Gauntlets
-				i(32145),	-- Chancellor's Mail Helm
-				i(32146),	-- Chancellor's Mail Leggings
-				i(32147),	-- Chancellor's Mail Sppaulders
-				i(32148),	-- Chancellor's Ringmail Chestguard
-				i(32149),	-- Chancellor's Ringmail Gloves
-				i(32150),	-- Chancellor's Ringmail Headpiece
-				i(32151),	-- Chancellor's Ringmail Legguards
-				i(32152),	-- Chancellor's Ringmail Shoulders
 				i(157677),	-- Hearthbonded Helm (Hunter Future Boost Gear)
 				i(157679),	-- Hearthbonded Spaulders (Hunter Future Boost Gear)
 			}),
 			cl(HUNTER, {
-				i(32133),	-- Chancellor's Chain Armor
-				i(32134),	-- Chancellor's Chain Gauntlets
-				i(32135),	-- Chancellor's Chain Helm
-				i(32136),	-- Chancellor's Chain Leggings
-				i(32137),	-- Chancellor's Chain Spaulders
 			}),
 			i(163286),	-- Honorbound Vanguard's Footguards
 			i(163291),	-- Honorbound Vanguard's Strikers
@@ -795,7 +721,7 @@ _.NeverImplemented =
 			i(38389),	-- Comfy Raccoonskin Hat
 			i(38390),	-- The Rugged Marksman
 			i(80947),	-- Peacebreaker's Chain Helm
-			i(80951),	-- Peacebreaker's Ringmail Helm
+			i(80951),	-- Peacebreaker's Ringmail Helm              
 			i(81000),	-- Ringmail Armor of Eminent Domain (not added version)
 			i(80996),	-- Chain Armor of Eminent Domain (not added version)
 			i(37454),	-- HF28 Mail Physical Chest4
@@ -806,16 +732,6 @@ _.NeverImplemented =
 			cl(DEATHKNIGHT, {
 			}),
 			cl(PALADIN, {
-				i(32153),	-- Chancellor's Lamellar Chestpiece
-				i(32154),	-- Chancellor's Lamellar  Handguards
-				i(32155),	-- Chancellor's Lamellar  Headpiece
-				i(32156),	-- Chancellor's Lamellar  Legguards
-				i(32157),	-- Chancellor's Lamellar  Spaulders
-				i(32158),	-- Chancellor's OrnamentedChestplate
-				i(32159),	-- Chancellor's Ornamented Handguards
-				i(32160),	-- Chancellor's Ornamented Headguard
-				i(32161),	-- Chancellor's Ornamented Leggings
-				i(32162),	-- Chancellor's Ornamented Spaulders
 				i(157701),	-- Light Soul Helm
 				i(157703),	-- Light Soul Pauldrons
 			}),
@@ -839,7 +755,6 @@ _.NeverImplemented =
 			i(106147),	-- Forstwolf Stalwart Chestpiece (beta only)
 			i(106155),	-- karabor honor guard wristwraps (green version, beta only)
 			i(41759),	-- unknown
-			i(77870),	-- Replica First Sergeant's Plate Bracers
 			i(42885),	-- unknown
 			i(43848),	-- unknown
 			i(39460),	-- unknown
@@ -920,16 +835,6 @@ _.NeverImplemented =
 			i(80953),	-- Peacebreaker's Armored Helm
 			i(80954),	-- Peacebreaker's Heavy Helm
 			i(38524),	-- Carapace of the Scarlet Commander
-			i(32163),	-- Chancellor's Plate Chestpiece
-			i(32164),	-- Chancellor's Plate Handguards
-			i(32165),	-- Chancellor's Plate Helm
-			i(32166),	-- Chancellor's Plate Legguards
-			i(32167),	-- Chancellor's Plate Shoulders
-			i(32168),	-- Chancellor's Scaled Chestpiece
-			i(32169),	-- Chancellor's Scaled Handguards
-			i(32170),	-- Chancellor's Scaled Helm
-			i(32171),	-- Chancellor's Scaled Shoulders
-			i(32172),	-- Chancellor's Scaled Spaulders
 			i(5822),		-- Hedgeseed Gauntlets
 			i(26041),	-- Vigilant Vambraces
 			i(21587),	-- Wristguards of Castigation (never made it off test)
@@ -3036,7 +2941,6 @@ _.NeverImplemented =
 			i(111783),	-- Irontree Bow (Cata version 55306 is in game but this version doesn't seem to have ever existed)
 		}),
 		n(-346, {	-- Crossbows
-			i(32187),   	-- Chancellor's Heavy Crossbow
 			i(108784),   	-- Unknown
 			i(153400),   	-- [Scalawag's Bolt-Thrower]
 			i(111073),	-- Unknown
@@ -3073,18 +2977,12 @@ _.NeverImplemented =
 			i(109309),	-- Unknown
 			i(109387),	-- Unknown
 			i(109482),	-- Unknown
-			i(32179),   	-- Chancellor's Shiv
 			i(147908),	-- 6.0 Weapon - Knife
 			i(159534),	-- Unknown
 			i(165268),	-- Unknown
-			i(23458),   	-- High Warlord's Spellblade (23466 was the added version)
 		}),
 		n(-348, {	-- Fist Weapons
-			i(32188),   	-- Chancellor's Fleshslicer
-			i(32189),   	-- Chancellor's Ripper
 			i(38243),   	-- Ravaging Steelfist
-			i(77559),	-- Replica Grand Marshal's left hand blade
-			i(77583),	-- Replica High Warlords left claw
 			i(108787),   	-- Unknown
 			i(171191),   	-- owen test
 			i(171192),   	-- owen test
@@ -3112,9 +3010,6 @@ _.NeverImplemented =
 
 		}),
 		n(-331, {	-- Held in Offhand
-			i(23462),	-- High Warlord's Tome of Destruction
-			i(23463),	-- High Warlord's Tome of Mending
-			i(32191),	-- Chancellor's Battletome
 			i(176042),	--
 			i(176043),	--
 			i(176044),	--
@@ -3336,7 +3231,6 @@ _.NeverImplemented =
 			i(109507),	-- Unknown - was under Legion>Staves
 			i(109531),	-- Unknown - was under Legion>Staves
 			i(109532),	-- Unknown - was under Legion>Staves
-			i(32185),   	-- Chancellor's War Staff
 			i(166887),	-- Unknown
 			i(118180),	-- Aluneth
 			i(158509),	-- Tideshaper Staff
@@ -3384,7 +3278,6 @@ _.NeverImplemented =
 			i(117994),	-- RENAME Karabor Honor Guard Axe
 		}),
 		n(-337, {	-- Two Handed Maces
-			i(23457),	-- High Warlord's Destroyer
 			i(137660),	-- The Silver Hand
 			i(159555),	-- Unknown
 			i(165263),	-- Unknown
@@ -3467,26 +3360,15 @@ _.NeverImplemented =
 		i(159592),	-- Wintersail Sabre
 		i(159510),	-- Wintersail Strikers
 		i(80983),	-- Extravagant Tree Chopper (Never made it to Live, yet into our Appearances Tab)
-		i(32178),	-- Chancellor's Shanker
 		i(129899),	-- The Eagle Spear
 		i(119408),	-- Foereaver Polearm [This version wasn't added]
 		i(115297),	-- Spectral Polearm
 		i(18316),	-- Obsidian Bauble
 		i(19989),	-- Tome of Devouring Shadows
-		i(32184),	-- Chancellor's Painsaw
 		i(18303),	-- Nimble Buckler
 		i(18342),	-- Quel'dorei Guard [NPC Shield I believe]
 		i(20502),	-- Ironbark Shield [NPC Shield]
-		i(32181),	-- Chancellor's Bonegrinder
-		i(32174),   -- Chancellor's Cleaver
-		i(32182),   -- Chancellor's Decapitator
 		i(38244),   -- Valorous Exterminator (Never added)
-		i(32177),   -- Chancellor's Quickblade
-		i(32180),   -- Chancellor's Slicer
-		i(23461),	-- High Warlord's Quickblade [This was never actually added]
-		i(77588),	-- Replica High Warlord's Quickblade
-		i(77586),	-- Replica High Warlord's Spellblade
-		i(77570),	-- Replica High Warlord's Battle Mace
 		i(32482),	-- Touch of Victory
 		i(34138),	-- Enchanted White Wand
 		i(34139),	-- Enchanted Crimson Wand
@@ -3499,13 +3381,7 @@ _.NeverImplemented =
 		i(58505),	-- ObsoleteQA Combat Test Caster DPS Wand 2
 		i(65878),	-- Charbelching Wand
 		i(109384),	-- 6.0 QA Combat Test Caster DPS Wand
-		i(23459),	-- High Warlord's Battle Mace
-		i(32192),	-- Chancellor's Barricade
-		i(32175),	-- Chancellor's Hacker
-		i(32190),	-- Chancellor's Spellblade
-		i(32183),	-- Chancellor's Maul
 		i(153505),	-- Monelite Boomstick
-		i(77587),	-- Replica High Warlord's Destroyer
 		i(138489), 	-- Kargath's Sacrified Hands
 		i(80981),	-- Scavenged Rotor Blade
 		i(81320),	-- Right-Handed Invis Knuckles
@@ -3522,15 +3398,10 @@ _.NeverImplemented =
 		i(84527),	-- Hidden Pass Meditation Staff
 		i(85588), 	-- Reflex Edges [This version never implemented]
 		i(117010),	-- Forester's Axe 										(Never added in Game)
-		i(120272), 	-- High Warlord's Razor [This version never implemented]
-		i(120273), 	-- High Warlord's Razor [This version never implemented]
 		i(913),		-- Huge Ogre Sword
 		i(12469),	-- Mutilator
 		i(23432),	-- Engraved Greatsword
-		i(32186),	-- Chancellor's Warblade
 		i(54553),	-- Kliklak's Fearsome Greatsword (never made it to live)
-		i(32173),	-- Chancellor's Bonecracker
-		i(32176),	-- Chancellor's Pummeler
 		i(38468),	-- Kalu'ak Peacebringer
 		i(107390),	-- Obliterator Firing Lever
 		i(115296),	-- Spectral Warmace
