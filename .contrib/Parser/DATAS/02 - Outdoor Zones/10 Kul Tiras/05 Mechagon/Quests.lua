@@ -60,6 +60,13 @@ _.Zones =
 				q(56557, {	-- A Little Side Action
 					["provider"] = { "n", 155355 },	-- Usha Eyegouge
 					["coord"] = { 70.0, 31.1, 1462 },
+					["races"] = HORDE_ONLY,
+					["isDaily"] = true,
+				}),
+				q(56559, {	-- A Little Side Action
+					["provider"] = { "n", 155357 },	-- Grumbol Grimhammer
+					["coord"] = { 70.2, 30.6, 1462 },
+					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(55905, {	-- Abduction Reduction
@@ -1591,3 +1598,52 @@ _.Zones =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(54084),	-- [DNT]
+		q(56191),	-- Blueprint: TK32[DNT]
+		q(56192),	-- Blueprint: TK33[DNT]
+		q(56193),	-- Blueprint: TK34[DNT]
+		q(56194),	-- Blueprint: TK35[DNT]
+		q(56195),	-- Blueprint: TK36[DNT]
+		q(56196),	-- Blueprint: TK37[DNT]
+		q(56197),	-- Blueprint: TK38[DNT]
+		q(56198),	-- Blueprint: TK39[DNT]
+		q(56199),	-- Blueprint: TK40[DNT]
+		q(56200),	-- Blueprint: TK41[DNT]
+		q(56201),	-- Blueprint: TK42[DNT]
+		q(56202),	-- Blueprint: TK43[DNT]
+		q(56203),	-- Blueprint: TK44[DNT]
+		q(55742),	-- Bundle of Corroded Parts
+		q(56071),	-- De-Synced Vibro Blade
+		q(56072),	-- De-Synced Vibro Blade
+		q(55669),	-- Encrypted Radio Receiver TBD
+		q(56097),	-- Grime-Coated Disc
+		q(55605),	-- NOT USED
+		q(55099),	-- TBD NOT USED
+		q(55100),	-- TBD NOT USED
+		q(55738),	-- TBD NOT USED
+		q(55740),	-- TBD NOT USED
+		q(55319),	-- Tonk the Terrible
+		q(55693),	-- UNusued
+		q(55320),	-- Vehicle: TK02[DNT]
+		q(55321),	-- Vehicle: TK03[DNT]
+		q(55322),	-- Vehicle: TK04[DNT]
+		q(55323),	-- Vehicle: TK05[DNT]
+		q(55324),	-- Vehicle: TK06[DNT]
+		q(55325),	-- Vehicle: TK07[DNT]
+		q(55326),	-- Vehicle: TK08[DNT]
+		q(55327),	-- Vehicle: TK09[DNT]
+		q(55328),	-- Vehicle: TK10[DNT]
+		q(55329),	-- Vehicle: TK11[DNT]
+		q(55330),	-- Vehicle: TK12[DNT]
+		q(55331),	-- Vehicle: TK13[DNT]
+		q(55332),	-- Vehicle: TK14[DNT]
+		q(55333),	-- Vehicle: TK15[DNT]
+		q(55334),	-- Vehicle: TK16[DNT]
+		q(55335),	-- Vehicle: TK17[DNT]
+		q(55336),	-- Vehicle: TK18[DNT]
+		q(55337),	-- Vehicle: TK19[DNT]
+		q(55338),	-- Vehicle: TK20[DNT]
+	}),
+});

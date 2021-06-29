@@ -113,6 +113,8 @@ _.NeverImplemented =
 			q(57962),	-- Heroic: Battle for Darkshore
 			q(57973),	-- Heroic: Battle for Darkshore
 			q(57974),	-- Heroic: Battle for Darkshore
+			q(56129),	-- Heroic: Battle for Stromgarde
+			q(56206),	-- Heroic: Battle for Stromgarde
 			q(53727),	-- Legion 110 H		-- Legion quest with BFA ID smh
 			q(53728),	-- Legion 110 H		-- Legion quest with BFA ID smh
 			q(53729),	-- Legion 110 H		-- Legion quest with BFA ID smh
@@ -133,6 +135,7 @@ _.NeverImplemented =
 			q(53641),	-- LFGDungeons - BFA - Stromgarde (Arathi)
 			q(58707),	-- Sorting Through Visions
 			q(58089),	-- Test Quest
+			q(57112),	-- Tst Shared Quest
 		}),
 		tier(9, {	-- Shadowlands -- These Quests might be ingame, very unlikely however.
 			q(62300),	-- Classic 20-49
@@ -183,6 +186,7 @@ _.NeverImplemented =
 			q(60029),	-- Shadowlands 60 E
 			q(60030),	-- Shadowlands 60 E
 			q(60474),	-- Spawn Tracking Unit-Specified World Effect in a WMO Bug
+			q(55660),	-- Time Trials (Tournament Realm Quest)
 			q(62402),	-- Timewalking Campaigns
 		}),
 		q(3064,  {	-- <NYI> <TXT> Pirate Hats

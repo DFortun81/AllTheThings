@@ -1002,3 +1002,10 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 		},
 	}),
 })};
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(56836),	-- The Eternal Palace: Master's Call
+		q(56837),	-- The Eternal Palace: Master's Call
+		q(56838),	-- The Eternal Palace: Master's Call
+	}),
+});
