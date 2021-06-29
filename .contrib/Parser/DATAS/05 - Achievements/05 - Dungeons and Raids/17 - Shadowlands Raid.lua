@@ -78,7 +78,25 @@ _.Achievements =
 				crit(9),	-- Kel'Thuzad
 				crit(10),	-- Sylvanas Windrunner
 			}),
+			ach(15124, {	-- Shackles of Fate
+				crit(1),	-- Guardian of the First Ones
+				crit(2),	-- Fatescribe Roh-Kalo
+				crit(3),	-- Kel'Thuzad
+			}),
 			ach(14523),		-- Taking Care of Business
+			ach(15123, {	-- The Dark Bastille
+				crit(1),	-- Remnant of Ner'zhul
+				crit(2),	-- Soulrender Dormazain
+				crit(3),	-- Painsmith Raznal
+			}),
+			ach(15122, {	-- The Jailer's Vanguard
+				crit(1),	-- The Tarragrue
+				crit(2),	-- The Eye of the Jailer
+				crit(3),	-- The Nine
+			}),
+			ach(15125, {	-- The Reckoning
+				crit(1),	-- Sylvanas Windrunner
+			}),
 			ach(15133),		-- This World is a Prism
 			ach(15003),		-- To the Nines
 			ach(15108),		-- Together Forever

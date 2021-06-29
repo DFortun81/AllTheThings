@@ -851,8 +851,7 @@ _.ExpansionFeatures =
 	}),
 };
 
-_.HiddenQuestTriggers =
-{
+_.HiddenQuestTriggers = {
 	q(60773),	-- Triggered shortly after completing 'Dude, Where's My Necropolis' (60184) after NPC RP
 	q(60780),	-- triggered the first time i channeled anima to the daily quest hub
 };

@@ -953,7 +953,9 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(64692),	-- triggered when killing Manifestation of Pain
 		q(64696),	-- triggered when killing Promathiz / Sentinel Shakorzeth
 		q(64697),	-- triggered when killing Malleus Grakizz / Sentinel Shakorzeth
+		q(64693),	-- triggered when killing Manifestation of Pain
 		q(64121),	-- triggered when killing Sentinel Shakorzeth (somehow it + Kazj the Sentinel were both up at once, this was only after killing Shakorzeth, and then Kazj did not trigger an additional questID at all)
+		q(64697),	-- triggered when killing Versya the Damned
 		q(60137),	-- The Fractured Chambers
 	}),
 });

@@ -223,6 +223,17 @@ _.Zones =
 					["provider"] = { "n", 177451 },	-- Tal-Galan - TODO: verify NPC once on live, it's currently named "Tal-Galan (temp)"
 					["coord"] = { 34.9, 35.3, KORTHIA },
 				}),
+				q(64519, {	-- Lost Vaults
+					["sourceQuests"] = {
+						64511,	-- Missing Relics
+					--	TODO: "Missing Relics" is the previous quest in the chain.  i didn't get access to this until i had turned in the 2 quests below, which took me to Tier 3 research.
+					--	not sure if the quests are the prerequisite, the research, or both.  fragment turn-ins are SUPER janky atm on PTR so i can't test trying to get the rep without turning in any reliquaries
+						63915,	-- Drum of Driving
+						63917,	-- Everliving Statuette
+					},
+					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+					["coord"] = { 62.7, 22.5, KORTHIA },
+				}),
 				q(64511, {	-- Missing Relics
 					["sourceQuests"] = {	-- TODO: not sure if the prereq is these quests (contextually it makes sense) or Tier 2 research, or both.  i had also picked up, but not finished, 63892, "Diviner's Rune Chits."  these 5 are the first set of research that he directed me to collect, so at least having discovered the diviner's rune chits quest may also be required
 						63899,	-- Book of Binding: The Mad Witch
@@ -421,7 +432,8 @@ _.Zones =
 				--	PTR - Death's Advance repeatable quests
 				-- Korthia Weekly
 				q(63949, {	-- Shaping Fate
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+				--	TODO: double-check SQ
+					["sourceQuests"] = { 64556 },	-- Charge of the Covenants
 					["provider"] = { "n", 177927 },	-- Tal-Galan
 					["isWeekly"] = true,
 					["coord"] = { 62.7, 24.8, KORTHIA },
@@ -436,116 +448,115 @@ _.Zones =
 				-- Korthia Daily
 				i(186017),	-- Korthite Crystal - rewarded by some dailies and found in some treasures, but does not seem statically attached to anything specific.  acquisition/availability may be based on having completed the campaign questline to the point where you get to the Vault of Secrets
 				q(64271, {	-- A More Civilized Way
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178795 },	-- Nadjia the Mistblade
 					["isDaily"] = true,
 					["coord"] = { 61.8, 25.2, KORTHIA },
 				}),
 				q(63779, {	-- A Semblance of Normal
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 179134 },	-- Pelagos
 					["isDaily"] = true,
 					["coord"] = { 61.7, 24.0, KORTHIA },
 				}),
 				q(63783, {	-- Anima Reclamation
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178793 },	-- Kael'thas Sunstrider
 					["isDaily"] = true,
 					["coord"] = { 61.8, 25.6, KORTHIA },
 				}),
 				q(64560, {	-- Anima Reclamation
-				--	TODO - this version was picked up after picking up 'in need of assistance' - not sure if that's going to be a daily/weekly???  picked up on 6/2
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178793 },	-- Kael'thas Sunstrider
 					["isDaily"] = true,
 					["coord"] = { 61.8, 25.6, KORTHIA },
 				}),
 				q(63934, {	-- Assail Mail
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178802 },	-- Messenger Mnemis
 					["isDaily"] = true,
 					["coord"] = { 61.4, 22.4, KORTHIA },
 				}),
 				q(63793, {	-- Broker's Bounty: Ensydius the Defiler
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "o", 368772 },	-- Sigilscored Scroll
 					["isDaily"] = true,
 					["coord"] = { 64.7, 25.6, KORTHIA },
 				}),
 				q(63964, {	-- Broker's Bounty: Grimtalon
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "o", 368772 },	-- Sigilscored Scroll
 					["isDaily"] = true,
 					["coord"] = { 64.7, 25.6, KORTHIA },
 				}),
 				q(63794, {	-- Broker's Bounty: Hungering Behemoth
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "o", 368772 },	-- Sigilscored Scroll
 					["isDaily"] = true,
 					["coord"] = { 64.7, 25.6, KORTHIA },
 				}),
 				q(63790, {	-- Broker's Bounty: Lord Azzorak
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "o", 368772 },	-- Sigilscored Scroll
 					["isDaily"] = true,
 					["coord"] = { 64.7, 25.6, KORTHIA },
 				}),
 				q(63792, {	-- Broker's Bounty: Nocturnus the Unraveler
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "o", 368772 },	-- Sigilscored Scroll
 					["isDaily"] = true,
 					["coord"] = { 64.7, 25.6, KORTHIA },
 				}),
 				q(63963, {	-- Broker's Bounty: Ripmaul
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "o", 368772 },	-- Sigilscored Scroll
 					["isDaily"] = true,
 					["coord"] = { 64.7, 25.6, KORTHIA },
 				}),
 				q(63791, {	-- Broker's Bounty: Valdinar the Curseborn
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "o", 368772 },	-- Sigilscored Scroll
 					["isDaily"] = true,
 					["coord"] = { 64.7, 25.6, KORTHIA },
 				}),
 				q(64129, {	-- Charge of the Wild Hunt
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178840 },	-- Niya
 					["isDaily"] = true,
 					["coord"] = { 61.1, 21.2, KORTHIA },
 				}),
 				q(63787, {	-- Continued Efforts: Mauler's Outlook
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 179149 },	-- Baroness Vashj
 					["isDaily"] = true,
 					["coord"] = { 60.9, 28.0, KORTHIA },
 				}),
 				q(63788, {	-- Continued Efforts: Sanctuary of Guidance
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178800 },	-- Voitha
 					["isDaily"] = true,
 					["coord"] = { 61.7, 23.7, KORTHIA },
 				}),
 				q(63789, {	-- Continued Efforts: Scholar's Den
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178807 },	-- Alexandros Mograine
 					["isDaily"] = true,
 					["coord"] = { 60.4, 28.5, KORTHIA },
 				}),
 				q(63785, {	-- Continued Efforts: Seeker's Quorum
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178841 },	-- Hunt-Captain Korayn
 					["isDaily"] = true,
 					["coord"] = { 60.9, 21.7, KORTHIA },
 				}),
 				q(63775, {	-- Cryptograms and Keys
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 179082 },	-- Tal-Rahl
 					["isDaily"] = true,
 					["coord"] = { 64.1, 23.0, KORTHIA },
 				}),
 				q(63936, {	-- Devoured Anima
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178797 },	-- Sika
 					["isDaily"] = true,
 					["coord"] = { 61.7, 23.9, KORTHIA },
@@ -554,25 +565,25 @@ _.Zones =
 					},
 				}),
 				q(64080, {	-- Down to Earth
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178841 },	-- Hunt-Captain Korayn
 					["isDaily"] = true,
 					["coord"] = { 60.9, 21.7, KORTHIA },
 				}),
 				q(63958, {	-- Encrypted Databanks
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178844 },	-- Ta'nasi
 					["isDaily"] = true,
 					["coord"] = { 64.6, 25.4, KORTHIA },
 				}),
 				q(63960, {	-- Encrypted Databanks
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178844 },	-- Ta'nasi
 					["isDaily"] = true,
 					["coord"] = { 64.6, 25.4, KORTHIA },
 				}),
 				q(64240, {	-- Flight of the Kyrian
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 179194 },	-- Kleia
 					["isDaily"] = true,
 					["coord"] = { 61.6, 23.9, KORTHIA },
@@ -586,7 +597,7 @@ _.Zones =
 				--	i(186688),	-- Gold Filled Wash Bucket
 				--	i(186691),	-- Gold Filled Satchel
 				--	i(186706),	-- Gold Filled Hat
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 179221 },	-- Rendle
 					["isDaily"] = true,
 					["coord"] = { 61.6, 26.0, KORTHIA },
@@ -598,85 +609,74 @@ _.Zones =
 					["coord"] = { 60.1, 27.5, KORTHIA },
 				}),
 				q(64065, {	-- Local Reagents
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178806 },	-- Plague Deviser Marileth
 					["isDaily"] = true,
 					["coord"] = { 60.5, 27.7, KORTHIA },
 				}),
-				q(64519, {	-- Lost Vaults
-					["sourceQuests"] = {
-						64511,	-- Missing Relics
-					--	TODO: "Missing Relics" is the previous quest in the chain.  i didn't get access to this until i had turned in the 2 quests below, which took me to Tier 3 research.
-					--	not sure if the quests are the prerequisite, the research, or both.  fragment turn-ins are SUPER janky atm on PTR so i can't test trying to get the rep without turning in any reliquaries
-						63915,	-- Drum of Driving
-						63917,	-- Everliving Statuette
-					},
-					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
-					["coord"] = { 62.7, 22.5, KORTHIA },
-				}),
 				q(63781, {	-- Mawsworn Battle Plans
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178795 },	-- Nadjia the Mistblade
 					["isDaily"] = true,
 					["coord"] = { 61.8, 25.1, KORTHIA },
 				}),
 				q(63782, {	-- Mawsworn Rituals
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178799 },	-- Arios Riftbearer
 					["isDaily"] = true,
 					["coord"] = { 61.5, 23.5, KORTHIA },
 				}),
 				q(63937, {	-- Nasty, Big, Pointy Teeth
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178805 },	-- Emeni
 					["isDaily"] = true,
 					["coord"] = { 59.9, 27.0, KORTHIA },
 				}),
 				q(63776, {	-- Observational Records
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178844 },	-- Ta'nasi
 					["isDaily"] = true,
 					["coord"] = { 64.6, 25.4, KORTHIA },
 				}),
 				q(63957, {	-- Observational Records
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178844 },	-- Ta'nasi
 					["isDaily"] = true,
 					["coord"] = { 64.6, 25.4, KORTHIA },
 				}),
 				q(63959, {	-- Observational Records
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178844 },	-- Ta'nasi
 					["isDaily"] = true,
 					["coord"] = { 64.6, 25.4, KORTHIA },
 				}),
 				q(63962, {	-- Observational Records
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178844 },	-- Ta'nasi
 					["isDaily"] = true,
 					["coord"] = { 64.6, 25.4, KORTHIA },
 				}),
 				q(64561, {	-- Observational Records
 				--	TODO - this version was picked up after picking up 'in need of assistance' - not sure if that's going to be a daily/weekly???  picked up on 6/2
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178844 },	-- Ta'nasi
 					["isDaily"] = true,
 					["coord"] = { 64.6, 25.4, KORTHIA },
 				}),
 				q(64103, {	-- Old Tricks Work Best
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178808 },	-- Baroness Draka
 					["isDaily"] = true,
 					["coord"] = { 60.7, 27.9, KORTHIA },
 				}),
 				q(64040, {	-- Once More, With Healing
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 179194 },	-- Kleia
 					["isDaily"] = true,
 					["coord"] = { 61.6, 24.1, KORTHIA },
 				}),
 				q(64017, {	-- Oozing with Character (Bloop)
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178806 },	-- Plague Deviser Marileth
 					["isDaily"] = true,
 					["coord"] = { 60.5, 27.6, KORTHIA },
@@ -685,7 +685,7 @@ _.Zones =
 					},
 				}),
 				q(64016, {	-- Oozing with Character (Ooz)
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178806 },	-- Plague Deviser Marileth
 					["isDaily"] = true,
 					["coord"] = { 60.5, 27.6, KORTHIA },
@@ -694,7 +694,7 @@ _.Zones =
 					},
 				}),
 				q(63989, {	-- Oozing with Character (Plaguey)
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178806 },	-- Plague Deviser Marileth
 					["isDaily"] = true,
 					["coord"] = { 60.5, 27.6, KORTHIA },
@@ -703,128 +703,127 @@ _.Zones =
 					},
 				}),
 				q(63935, {	-- Precious Roots
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178842 },	-- Zayhad, The Builder
 					["isDaily"] = true,
 					["coord"] = { 60.9, 21.3, KORTHIA },
 				}),
 				q(64166, {	-- Random Memory Access
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 179134 },	-- Pelagos
 					["isDaily"] = true,
 					["coord"] = { 61.7, 24.0, KORTHIA },
 				}),
 				q(63950, {	-- Razorwing Talons
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178837 },	-- Lord Herne
 					["isDaily"] = true,
 					["coord"] = { 61.3, 21.3, KORTHIA },
 				}),
 				q(63777, {	-- Sealed Secrets
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178845 },	-- Ve'lonu
 					["isDaily"] = true,
 					["coord"] = { 64.6, 25.4, KORTHIA },
 				}),
 				q(63954, {	-- Sealed Secrets
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178845 },	-- Ve'lonu
 					["isDaily"] = true,
 					["coord"] = { 64.6, 25.4, KORTHIA },
 				}),
 				q(63955, {	-- Sealed Secrets
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178845 },	-- Ve'lonu
 					["isDaily"] = true,
 					["coord"] = { 64.6, 25.4, KORTHIA },
 				}),
 				q(63956, {	-- Sealed Secrets
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178845 },	-- Ve'lonu
 					["isDaily"] = true,
 					["coord"] = { 64.6, 25.4, KORTHIA },
 				}),
 				q(63961, {	-- Sealed Secrets
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178845 },	-- Ve'lonu
 					["isDaily"] = true,
 					["coord"] = { 64.6, 25.4, KORTHIA },
 				}),
 				q(63780, {	-- See How THEY Like It!
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178838 },	-- Lady Moonberry
 					["isDaily"] = true,
 					["coord"] = { 61.2, 21.2, KORTHIA },
 				}),
 				q(63965, {	-- Slitherwing Egg Rescue
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178839 },	-- Dreamweaver
 					["isDaily"] = true,
 					["coord"] = { 61.4, 21.4, KORTHIA },
 				}),
 				q(64430, {	-- Spill the Tea
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 179218 },	-- Theotar
 					["isDaily"] = true,
 					["coord"] = { 61.6, 25.7, KORTHIA },
 				}),
 				q(64070, {	-- Staying Scrappy
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 179214 },	-- Bonesmith Heirmir
 					["isDaily"] = true,
 					["coord"] = { 60.1, 27.5, KORTHIA },
 				}),
 				q(63786, {	-- Sweep the Windswept Aerie
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178794 },	-- General Draven
 					["isDaily"] = true,
 					["coord"] = { 61.5, 25.2, KORTHIA },
 				}),
 				q(64089, {	-- Teas and Tinctures
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 179218 },	-- Theotar
 					["isDaily"] = true,
 					["coord"] = { 61.6, 25.7, KORTHIA },
 				}),
 				q(64101, {	-- The Proper Procedures
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178790 },	-- The Accuser
 					["isDaily"] = true,
 					["coord"] = { 61.8, 25.3, KORTHIA },
 				}),
 				q(64018, {	-- The Weight of Stone
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178794 },	-- General Draven
 					["isDaily"] = true,
 					["coord"] = { 61.5, 25.2, KORTHIA },
 				}),
 				q(64104, {	-- Think of the Critters
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178839 },	-- Dreamweaver
 					["isDaily"] = true,
 					["coord"] = { 61.4, 21.4, KORTHIA },
 				}),
 				q(64194, {	-- War Prototype
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 179216 },	-- Mikanikos
 					["isDaily"] = true,
 					["coord"] = { 61.4, 23.9, KORTHIA },
 				}),
 				q(63778, {	-- We Move Forward
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178840 },	-- Niya
 					["isDaily"] = true,
 					["coord"] = { 61.1, 21.2, KORTHIA },
 				}),
 				q(64043, {	-- We Need a Healer - You!
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 179216 },	-- Mikanikos
 					["isDaily"] = true,
 					["coord"] = { 61.4, 23.2, KORTHIA },
 				}),
 				q(64562, {	-- We Need a Healer - You!
-				--	TODO - this version was picked up after picking up 'in need of assistance' - not sure if that's going to be a daily/weekly???  picked up on 6/2
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 179216 },	-- Mikanikos
 					["isDaily"] = true,
 					["coord"] = { 61.4, 23.2, KORTHIA },

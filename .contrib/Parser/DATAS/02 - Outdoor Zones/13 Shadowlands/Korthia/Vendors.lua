@@ -190,7 +190,7 @@ _.Zones =
 									i(186768),	-- Korthian Attendant's Cane*
 									i(186767),	-- Korthian Attendant's Scepter*
 									i(185890),	-- Korthian Caretaker's Kris*
-									i(185888),	-- Korthian Caretaker's Orb
+									i(185888),	-- Korthian Caretaker's Orb*
 									i(185900),	-- Korthian Caretaker's Rod
 									i(185900),	-- Korthian Caretaker's Stave*
 									i(186760),	-- Korthian Energy Bow

@@ -66,6 +66,28 @@ _.Instances = { tier(9, {	-- Shadowlands
 					i(183199),	-- Withering Ground
 				},
 			}),
+			e(2456, {	-- Mor'geth <Tormentor of the Damned>
+				["isWeekly"] = true,
+			--	["questID"] = ,	-- Mor'geth (WQ)
+				["isRaid"] = true,
+			--	["coord"] = { , ,  },
+			--	["maps"] = {  },
+				["cr"] = 178958,	-- Mor'geth <Tormentor of the Damned>
+				["g"] = bubbleDown({ ["modID"] = 3 }, {
+					i(187507),	-- Adaptive Armor Fragment
+					i(187506),	-- Condensed Anima Sphere
+					i(187061),	-- Shard of Rev
+					i(186355),	-- Wristwraps of Anguish
+					i(186361),	-- Grips of Unleashed Suffering
+					i(186368),	-- Mor'geth's Gauntlets of Damnation
+					i(186360),	-- Tormented Soul Harness
+					i(186372),	-- Tormentor's Greatbelt
+					i(186370),	-- Caged Legplates
+					i(186357),	-- Sorrowful Trousers
+					i(186366),	-- Stygian Chain Greaves
+					i(187447),	-- Soul Cage Fragment
+				}),
+			}),
 			e(2431, {	-- Mortanis
 				["isWeekly"] = true,
 				["questID"] = 61816,	-- Mortanis (WQ)

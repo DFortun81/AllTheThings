@@ -65,13 +65,13 @@ _.Achievements =
 			ach(6181, {								-- Fangs of the Father
 				["classes"] = { ROGUE },
 			}),
-			ach(15197, {	-- Hall of Fame: Sylvanas (Alliance)
+			ach(15197, {							-- Hall of Fame: Sylvanas (Alliance)
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
 					title(448),	-- <Name>, Famed Bane of the Banshee Queen
 				},
 			}),
-			ach(15196, {	-- Hall of Fame: Sylvanas (Horde)
+			ach(15196, {							-- Hall of Fame: Sylvanas (Horde)
 				["races"] = HORDE_ONLY,
 				["g"] = {
 					title(448),	-- <Name>, Famed Bane of the Banshee Queen
@@ -88,6 +88,9 @@ _.Achievements =
 				i(150372, {				-- Arsenal: The Warglaives of Azzinoth
 					["classes"] = { DEMONHUNTER },
 				}),
+			}),
+			ach(15191, {							-- Rae'shalare, Death's Whisper
+				["classes"] = { HUNTER },
 			}),
 			ach(4623, {								-- Shadowmourne
 				["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },

@@ -668,6 +668,7 @@ _.Zones =
 						crit(22, {	-- Traitor Balthier
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
+						i(187374),	-- Balthier's Waistcord
 					},
 				}),
 				n(173086, {	-- Valis the Cruel
