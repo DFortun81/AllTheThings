@@ -24,6 +24,7 @@ _.Mounts =
 		i(87777),	-- Astral Cloud Serpent
 		i(153044),	-- Avenging Felcrusher Mount
 		i(43952),	-- Azure Drake
+		i(186644),	-- Beryl Shardhide
 		i(152903),	-- Biletooth Gnasher Mount [Note: Drop Argus]
 		i(43986),	-- Black Drake
 		i(166428),	-- Blackpaw
@@ -46,33 +47,43 @@ _.Mounts =
 		i(163578),	-- Broken Highland Mustang
 		i(43951),	-- Bronze Drake
 		i(184160),	-- Bulbous Necroray
+		i(186638),	-- Cartel Master's Gearglider
 		i(181818),	-- Chewed Reins of the Callow Flayedwing
 		i(147806),	-- Cloudwing Hippogryph
 		i(173887),	-- Clutch of Ha-Li
 		i(95059),	-- Clutch of Ji-Kun
 		i(94228),	-- Cobalt Primordial Direhorn
-		i(163583),  -- Craghorn Chasm-Leaper
+		i(163583),	-- Craghorn Chasm-Leaper
+		i(186645),	-- Crimson Shardhide
 		i(152905),	-- Crimson Slavermaw
+		i(186646),	-- Darkmaul
 		i(152843),	-- Darkspore Mana Ray Mount
 		i(182209),	-- Desire's Battle Gargon
 		i(174641),	-- Drake of the Four Winds
 		i(63040),	-- Drake of the North Wind
 		i(63041),	-- Drake of the South Wind
 		i(163576),	-- Dune Scavenger
+		i(186651),	-- Dusklight Razorwing
 		i(174860),	-- Elusive Quickhoof
 		i(180582),	-- Endmire Flyer Tether
 		i(180723),	-- Enchanted Wakener's Runestag
 		i(78919),	-- Experiment 12-B
 		i(169201),	-- Fabious
+		i(186659),	-- Fallen Charger
 		i(138201),	-- Fathom Dweller
 		i(137574),	-- Felblaze Infernal
 		i(152841),	-- Felglow Mana Ray Mount
 		i(123890),	-- Felsteel Annihilator
+		i(186649),	-- Fierce Razorwing
 		i(30480),	-- Fiery Warhorse
 		i(71665),	-- Flametalon of Alysrazor
+		i(186483, {	-- Foresworn Aquilon
+			["customCollect"] = "SL_COV_KYR",	-- Kyrian
+		}),
 		i(166433),	-- Frightened Kodo
 		i(116794),	-- Garn Nighthowl
 		i(116779),	-- Garn Steelmaw
+		i(186652),	-- Garnet Razorwing
 		i(116673),	-- Giant Coldsnout
 		i(166705),	-- Glacial Tidestorm
 		i(153042),	-- Glorious Felcrusher Mount
@@ -87,6 +98,8 @@ _.Mounts =
 		i(44707),	-- Green Proto-Drake
 		i(21323),	-- Green Qiraji Battle Tank
 		i(63046),	-- Grey Riding Camel
+		i(185973),	-- Hand of Bahmethra
+		i(186713),	-- Hand of Nilganihmaht
 		i(87771),	-- Heavenly Onyx Cloud Serpent
 		i(137575),	-- Hellfire Infernal
 		i(163579),	-- Highland Mustang
@@ -94,9 +107,7 @@ _.Mounts =
 		i(180581, {	-- Hopecrusher Gargon
 			["customCollect"] = "SL_COV_VEN",	-- Venthyr covenant drop only
 		}),
-		i(180461, {	-- Horrid Dredwing
-			["customCollect"] = "SL_COV_VEN",	-- Venthyr covenant drop only
-		}),
+		i(180461),	-- Horrid Dredwing
 		i(184161),	-- Infested Necroray
 		i(50818),	-- Invincible
 		i(116660),	-- Ironhoof Destroyer
@@ -112,12 +123,19 @@ _.Mounts =
 		i(77069),	-- Life-Binder's Handmaiden
 		i(163646),	-- Lil' Donkey
 		i(138258),	-- Long-Forgotten Hippogryph
+		i(186489, {	-- Lord of the Corpseflies
+			["customCollect"] = "SL_COV_NEC",	-- Necrolord
+		}),
 		i(151623),	-- Lucid Nightmare Mount [Note: Drop's from Puzzler's Demise; a puzzle mount similar to Kosumoth, Riddler's Mind Worm and Sun Darter Hatchling]
-		i(152814),	-- Maddened Chaorunner
+		i(152814),	-- Maddened Chaosrunner
+		i(186643),	-- Maelie The Wanderer
 		i(174653),	-- Mail Muncher
 		i(184167),	-- Mawsworn Soulhunter
 		i(174769),	-- Malevolent Drone
 		i(181819),	-- Marrowfang's Reins
+		i(186479, {	-- Masterwork Gravewing
+			["customCollect"] = "SL_COV_VEN",	-- Venthyr-only
+		}),
 		i(168826),	-- Mechagon Peacekeeper
 		i(142236),	-- Midnight
 		i(45693),	-- Mimiron's Head
@@ -139,7 +157,8 @@ _.Mounts =
 			["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant drop only
 		}),
 		i(69224),	-- Pureblood Fire Hawk
-		i(163582),  -- Qinsho's Eternal Hound
+		i(163582),	-- Qinsho's Eternal Hound
+		i(187183),	-- Rampaging Mauler
 		i(32768),	-- Raven Lord
 		i(94291),	-- Red Primal Raptor
 		i(21321),	-- Red Qiraji Battle Tank
@@ -150,6 +169,7 @@ _.Mounts =
 		i(13335),	-- Rivendare's Deathcharger
 		i(169198),	-- Royal Snapdragon
 		i(168823),	-- Rusty Mechanocrawler
+		i(186656),	-- Sanctum Gloomcharger
 		i(116767),	-- Sapphire Riberbeast
 		i(152840),	-- Scintillating Mana Ray Mount
 		i(152789),	-- Shackled Ur'zul
@@ -166,20 +186,25 @@ _.Mounts =
 		i(142552),	-- Smoldering Ember Wyrm
 		i(116771),	-- Solar Spirehawk
 		i(89783),	-- Son of Galleon
-		i(163586),  -- Squawks
+		i(186657),	-- Soulbound Gloomcharger
+		i(163586),	-- Squawks
 		i(93666),	-- Spawn of Horridon
 		i(180725),	-- Spinemaw Gladechewer
 		i(166470),	-- Stonehide Elderhorn
 		i(67151),	-- Subdued Seahorse
+		i(186492, {	-- Summer Wilderling
+			["customCollect"] = "SL_COV_NFA",	-- Night Fae
+		}),
 		i(159842),	-- Summon Sharkbait
 		i(180773),	-- Sundancer
 		i(116792),	-- Sunhide Gronnling
-		i(163585),  -- Surf Jelly
+		i(163585),	-- Surf Jelly
 		i(163644),	-- Swift Albino Raptor
 		i(116773),	-- Swift Breezestrider
 		i(180728),	-- Swift Gloomhoof
 		i(35513),	-- Swift White Hawkstrider
 		i(68824),	-- Swift Zulian Panther
+		i(186641),	-- Tamed Mauler
 		i(163574),	-- Terrified Pack Mule
 		i(156798),	-- The Hivemind
 		i(95057),	-- Thundering Cobalt Cloud Serpent
@@ -188,11 +213,12 @@ _.Mounts =
 		i(44168),	-- Time-Lost Proto-Drake
 		i(159921),	-- Tomb Stalker
 		i(116658),	-- Tundra Icehoof
-		i(163584),  -- Twilight Avenger
+		i(163584),	-- Twilight Avenger
 		i(43954),	-- Twilight Drake
 		i(166803),	-- Umber Nightsaber
 		i(160829),	-- Underrot Crawg Harness
 		i(147805),	-- Valarjar Stormwing
+		i(186642),	-- Vengeance
 		i(152842),	-- Vibrant Mana Ray Mount
 		i(152790),	-- Vile Fiend
 		i(63043),	-- Vitreous Stone Drake

@@ -87,6 +87,7 @@ _.BattlePets =
 			p(1226),			-- Lil' Bad Wolf
 			p(3062),			-- Lost Featherling
 			un(REMOVED_FROM_GAME, p(111)),		-- Lurky
+			p(3131),	-- Mawsworn Minion
 			un(REMOVED_FROM_GAME, p(189)),		-- Mini Tyrael
 			un(REMOVED_FROM_GAME, p(296, {	-- Moonkin Hatchling (Alliance)
 				["races"] = ALLIANCE_ONLY,
@@ -94,6 +95,7 @@ _.BattlePets =
 			un(REMOVED_FROM_GAME, p(298, {	-- Moonkin Hatchling (Horde)
 				["races"] = HORDE_ONLY,
 			})),
+			p(3132),			-- Mord'al Eveningstar
 			p(2681),			-- Murgle
 			un(REMOVED_FROM_GAME, p(329)),		-- Murkablo
 			un(REMOVED_FROM_GAME, p(1364)),		-- Murkalot
@@ -108,6 +110,7 @@ _.BattlePets =
 			p(513),				-- Qiraji Guardling
 			p(2417),			-- Ranishu Runt
 			p(2135),			-- Rebellious Imp
+			p(3133),			-- Rook
 			p(1349),			-- Rotten Little Helper
 			p(3042),			-- Ruffle
 			p(1628),			-- Sister of Temptation

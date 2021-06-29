@@ -566,8 +566,7 @@ _.Achievements =
 				ach(12959),	-- Challenger: Battle for Azeroth Season 1
 				ach(13199),	-- Combatant: Battle for Azeroth Season 1
 				ach(12962, {	-- Duelist: Battle for Azeroth Season 1
-					--[[ Note!! Currently we can not list this due to having no item.
-					Illusion: Dreadflame // Dreadflame Illusion --]]
+					illusion(6096),		-- Dreadflame
 					i(164575),	-- Dread Gladiator's Cloak (A)
 					i(164574),	-- Dread Gladiator's Cloak (H)
 				}),
@@ -592,8 +591,7 @@ _.Achievements =
 				ach(13203),	-- Challenger: Battle for Azeroth Season 2
 				ach(13204),	-- Combatant: Battle for Azeroth Season 2
 				ach(13209, {	-- Duelist: Battle for Azeroth Season 2
-					--[[ Note!! Currently we can not list this due to having no item.
-					Illusion: Dreadflame // Dreadflame Illusion --]]
+					illusion(6096),		-- Dreadflame
 					i(165060),	-- Alliance Sinister Gladiator's Cloak
 					i(165059),	-- Horde Sinister Gladiator's Cloak
 				}),
@@ -617,8 +615,7 @@ _.Achievements =
 				ach(13634),	-- Challenger: Battle for Azeroth Season 3
 				ach(13639),	-- Combatant: Battle for Azeroth Season 3
 				ach(13642, {	-- Duelist: Battle for Azeroth Season 3
-					--[[ Note!! Currently we can not list this due to having no item.
-					Illusion: Dreadflame // Dreadflame Illusion --]]
+					illusion(6096),		-- Dreadflame
 					i(167382),	-- Notorious Gladiator's Cloak (A)
 					i(167381),	-- Notorious Gladiator's Cloak (H)
 				}),
@@ -642,8 +639,7 @@ _.Achievements =
 				ach(13959),	-- Challenger: Battle for Azeroth Season 4
 				ach(13962),	-- Combatant: Battle for Azeroth Season 4
 				ach(13964, {	-- Duelist: Battle for Azeroth Season 4
-					-- Note!! Currently we can not list this due to having no item.
-					-- Illusion: Dreadflame // Dreadflame Illusion
+					illusion(6096),		-- Dreadflame
 					i(172671),	-- Corrupted Gladiator's Cloak (A)
 					i(172670),	-- Corrupted Gladiator's Cloak (H)
 				}),
@@ -664,28 +660,50 @@ _.Achievements =
 				}),
 			})),
 			n(-693, {	-- Sinful Gladiator: Shadowlands Season 1
-				ach(14686),	-- Challenger: Shadowlands Season 1
+				ach(14686),		-- Challenger: Shadowlands Season 1
 				ach(14685, {	-- Combatant: Shadowlands Season 1
 					title(78),	-- Combatant <Name>
 				}),
 				ach(14688, {	-- Duelist: Shadowlands Season 1
-					-- Note!! Currently we can not list this due to having no item.
-					-- Illusion: Dreadflame // Dreadflame Illusion
+					illusion(6266, {	-- Sinful Flame
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					i(180424),	-- Sinful Gladiator's Prestigious Cloak
 				}),
 				ach(14691, {	-- Elite: Shadowlands Season 1
 					i(180431),	-- Sinful Gladiator's Tabard
 				}),
-				ach(14689),	-- Gladiator: Shadowlands Season 1	-- Mount is listed under FoS>Mounts.
+				ach(14689),		-- Gladiator: Shadowlands Season 1	-- Mount is listed under FoS>Mounts.
 				ach(14692, {	-- Hero of the Alliance: Sinful
 					["races"] = ALLIANCE_ONLY,
 				}),
 				ach(14693, {	-- Hero of the Horde: Sinful
 					["races"] = HORDE_ONLY,
 				}),
-				ach(14687),	-- Rival: Shadowlands Season 1
+				ach(14687),		-- Rival: Shadowlands Season 1
 				ach(14690, {	-- Sinful Gladiator: Shadowlands Season 1
 					title(434),	-- Sinful Gladiator <Name>
+				}),
+			}),
+			n(-694, {	-- Unchained Gladiator: Shadowlands Season 2
+				ach(14969),		-- Challenger: Shadowlands Season 2
+				ach(14968),		-- Combatant: Shadowlands Season 2
+				ach(14971, {	-- Duelist: Shadowlands Season 2
+					illusion(6344),	-- Unchained Fury
+				}),
+				ach(14974, {	-- Elite: Shadowlands Season 2
+					i(185303),	-- Unchained Gladiator's Tabard
+				}),
+				ach(14972),		-- Gladiator: Shadowlands Season 2	-- Mount is listed under FoS>Mounts.
+				ach(14975, {	-- Hero of the Alliance: Unchained
+					["races"] = ALLIANCE_ONLY,
+				}),
+				ach(14976, {	-- Hero of the Horde: Unchained
+					["races"] = HORDE_ONLY,
+				}),
+				ach(14970),	-- Rival: Shadowlands Season 2
+				ach(14973, {	-- Unchained Gladiator: Shadowlands Season 2
+					title(441),	-- Unchained Gladiator <Name>
 				}),
 			}),
 			un(REMOVED_FROM_GAME, ach(1161, {		-- High Five: 2200

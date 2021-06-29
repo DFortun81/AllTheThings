@@ -508,9 +508,19 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 175772 },	-- Rahel
 						["coord"] = { 54.0, 27.2, 1699 },	-- Sinfall Reaches
 					}),
+					q(64083, {	-- Sinfall Tactician #2
+						["description"] = "Requires Renown 59.",
+						["provider"] = { "n", 175772 },	-- Rahel
+						["coord"] = { 54.0, 27.2, 1699 },	-- Sinfall Reaches
+					}),
 					q(63340, {	-- Sinfall Veteran
 					--	["sourceQuests"] = {  },	-- probably requires something between "our true purpose" and "ashes of the tower," unsure what unlocks the ability to pick up "return lost souls," which gives renown
 						["description"] = "Requires Renown 7.",
+						["provider"] = { "n", 175772 },	-- Rahel
+						["coord"] = { 54.1, 26.8, 1699 },	-- Sinfall Reaches
+					}),
+					q(64325, {	-- Sinfall Veteran #2
+						["description"] = "Requires Renown 43.",
 						["provider"] = { "n", 175772 },	-- Rahel
 						["coord"] = { 54.1, 26.8, 1699 },	-- Sinfall Reaches
 					}),
@@ -754,6 +764,16 @@ _.ExpansionFeatures =
 			},
 		}),
 	}),
+};
+_.HiddenQuestTriggers = {
+	q(62699),	-- triggered when turning in #62691, "A Calling in Revendreth"
+	q(62924),	-- triggered when turning in #62691, "A Calling in Revendreth"
+	q(63001),	-- triggers when choosing to skip the Venthyr sanctum intro quests
+	q(63023),	-- triggers when choosing to skip the Venthyr sanctum intro quests
+	q(63425),	-- triggers when choosing to skip the Venthyr sanctum intro quests
+	q(63429),	-- triggers when choosing to skip the Venthyr sanctum intro quests
+	q(59316),	-- turning in quest #62918, "Binding Power"
+	q(59317),	-- triggered when turning in #62919, "Strengthening the Bond"
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {

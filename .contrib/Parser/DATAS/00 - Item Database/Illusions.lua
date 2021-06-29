@@ -438,4 +438,16 @@ _.IllusionDB = {
 		["text"] = "Transcendent Soul",
 		["questID"] = 62395,
 	},
+	{	-- Illusion: Dreadflame
+	--	["itemID"] = ,
+		["illusionID"] = 6096,
+		["text"] = "Dreadflame",
+	--	["questID"] = ,
+	},
+	{	-- Illusion: Unchained Fury
+	--	["itemID"] = ,
+		["illusionID"] = 6344,
+		["text"] = "Unchained Fury",
+	--	["questID"] = ,
+	},
 };

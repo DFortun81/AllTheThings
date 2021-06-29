@@ -88,9 +88,9 @@ _.Achievements =
 			ach(5767, {			-- Scourer of the Eternal Sands
 				title(143),		-- the Camel-Hoarder
 			}),
-			ach(14816, {	-- Sinful Gladiator's Soul Eater
+			un(REMOVED_FROM_GAME, ach(14816, {	-- Sinful Gladiator's Soul Eater
 				i(183937),	-- Sinful Gladiator's Soul Eater
-			}),
+			})),
 			un(REMOVED_FROM_GAME, ach(13202, {	-- Sinister Gladiator's Proto-Drake
 				un(REMOVED_FROM_GAME, i(156880)),	-- Sinister Gladiator's Proto-Drake
 			})),
@@ -103,6 +103,9 @@ _.Achievements =
 			un(26, ach(980)),	-- The Horseman's Reins
 			un(REMOVED_FROM_GAME, ach(8678, {	-- Tyrannical Gladiator's Cloud Serpent
 				un(REMOVED_FROM_GAME, i(104325)),	-- Tyrannical Gladiator's Cloud Serpent
+			})),
+			pvp(ach(14999, {	-- Unchained Gladiator's Soul Eater
+				i(186177),	-- Unchained Gladiator's Soul Eater
 			})),
 			un(REMOVED_FROM_GAME, ach(888, {	-- Vengeful Nether Drake
 				un(REMOVED_FROM_GAME, i(37676)),	-- Vengeful Nether Drake

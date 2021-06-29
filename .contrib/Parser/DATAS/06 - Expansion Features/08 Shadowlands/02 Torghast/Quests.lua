@@ -32,6 +32,18 @@ _.ExpansionFeatures =
 					["provider"] = { "n", 164937 },	-- Runecarver
 					["coord"] = { 50.6, 57.2, 1912 },
 				}),
+				q(64210, {	-- The Box of Many Things
+				--	i think it actually might be available earlier?  the quest showed up before i turned in 'in darkness,' picked up while i was in the 'a paladin's soul' scenario.  
+				--	'in darkness' doesn't LOOK like a breadcrumb quest (because it doesn't hide 'the box of many things' until after it's turned in, but if 'the box' IS available earlier then your character may get locked out of picking up 'in darkness' if they overlooked it... so it may be a breadcrumb.  i do not knoooooow
+					["sourceQuests"] = { 64557 },	-- In Darkness, Found
+					["provider"] = { "n", 179598 },	-- Ve'nish
+					["coord"] = { 42.9, 68.2, 1967 },	-- TG106_Floor (scenario)
+					["maps"] = {	-- TODO: not sure if these are strictly scenario maps or if they are additions to Torghast overall.  adding them in the order i went through the floors for the quest
+						1968,	-- TG107_Floor
+						1967,	-- TG106_Floor
+						1969,	-- TG108_Floor
+					},
+				}),
 				q(62719, {	-- The Final Pieces
 					["sourceQuests"] = { 60272 },    -- The Weak Link
 					["provider"] = { "n", 164937 },    -- Runecarver
@@ -64,6 +76,11 @@ _.ExpansionFeatures =
 					["description"] = "Unlocks the capability of learning the base item crafts for Shadowlands Legendary items made by Tailoring",
 					["provider"] = { "n", 164937 },	-- Runecarver
 					["coord"] = { 50.6, 57.2, 1912 },
+				}),
+				q(64216, {	-- Tower Knowledge
+					["sourceQuests"] = { 64210 },	-- The Box of Many Things
+					["provider"] = { "n", 164937 },	-- Runecarver
+					["coord"] = { 50.3, 60.4, 1912 },	-- The Runecarver's Oubliette
 				}),
 
 				-- Champion Unlocks
@@ -301,6 +318,23 @@ _.ExpansionFeatures =
 					["coord"] = { 39.9, 68.5, ORIBOS },
 				}),
 				]]--
+				
+				-- 9.1 PTR QUESTS -- TODO: SORT ON LIVE
+				q(63727, {	-- The Primus Returns
+				--	TODO: maybe move to korthia for visibility?
+					["sourceQuests"] = { 63726 },	-- Untangling the Sigil
+					["provider"] = { "n", 177569 },	-- The Primus
+					["coord"] = { 50.2, 58.4, 1912 },	-- The Runecarver's Oubliette
+					["g"] = {
+						i(185965, {	-- Memories of Sunless Skies
+							["questID"] = 63893,	-- quest may need to be moved to HQT if the item can only be used once per account
+						}),
+					},
+				}),
+				
+
+
+
 
 
 				-- Bonus Quests

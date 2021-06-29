@@ -1271,20 +1271,23 @@ local function GetSourceID(itemLink)
 		local sourceID = select(2, C_TransmogCollection.GetItemInfo(itemLink));
 		if sourceID then return sourceID, true; end
 
-		local itemID, _, _, slotName = GetItemInfoInstant(itemLink);
-		if slotName then
-			local slots = inventorySlotsMap[slotName];
-			if slots then
-				DressUpModel:SetUnit('player');
-				DressUpModel:Undress();
-				for i, slot in pairs(slots) do
-					DressUpModel:TryOn(itemLink, slot);
-					local sourceID = DressUpModel:GetSlotTransmogSources(slot);
-					if sourceID and sourceID ~= 0 then
-						-- Added 5/4/2018 - Account for DressUpModel lag... sigh
-						local sourceItemLink = select(6, C_TransmogCollection.GetAppearanceSourceInfo(sourceID));
-						if sourceItemLink and tonumber(sourceItemLink:match("item:(%d+)")) == itemID then
-							return sourceID, true;
+		-- in PTR this doesn't exist anymore?
+		if DressUpModel.GetSlotTransmogSources then
+			local itemID, _, _, slotName = GetItemInfoInstant(itemLink);
+			if slotName then
+				local slots = inventorySlotsMap[slotName];
+				if slots then
+					DressUpModel:SetUnit('player');
+					DressUpModel:Undress();
+					for i, slot in pairs(slots) do
+						DressUpModel:TryOn(itemLink, slot);
+						local sourceID = DressUpModel:GetSlotTransmogSources(slot);
+						if sourceID and sourceID ~= 0 then
+							-- Added 5/4/2018 - Account for DressUpModel lag... sigh
+							local sourceItemLink = select(6, C_TransmogCollection.GetAppearanceSourceInfo(sourceID));
+							if sourceItemLink and tonumber(sourceItemLink:match("item:(%d+)")) == itemID then
+								return sourceID, true;
+							end
 						end
 					end
 				end
@@ -14482,7 +14485,7 @@ function app:GetDataCache()
 		table.insert(g, db);
 		]]--
 
-		--[[
+		
 		-- SUPER SECRETTTT!
 		-- Artifacts (Dynamic)
 		db = app.CreateAchievement(11171, (function()

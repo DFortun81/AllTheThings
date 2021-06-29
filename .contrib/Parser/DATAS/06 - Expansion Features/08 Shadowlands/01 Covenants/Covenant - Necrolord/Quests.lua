@@ -402,10 +402,20 @@ _.ExpansionFeatures =
 					q(63343, {	-- Necrolord Tactician
 						["description"] = "Requires Renown 22.",
 						["provider"] = { "n", 175998 },    -- Elspeth Larink
-						["coord"] = { 46.5, 40.2, 1698 },
+						["coord"] = { 46.5, 40.2, 1698 },	-- Seat of the Primus
+					}),
+					q(64084, {	-- Necrolord Tactician
+						["description"] = "Requires Renown 59.",
+						["provider"] = { "n", 175998 },    -- Elspeth Larink
+						["coord"] = { 46.5, 40.2, 1698 },	-- Seat of the Primus
 					}),
 					q(63342, {	-- Necrolord Veteran
 						["description"] = "Requires Renown 7.",
+						["provider"] = { "n", 175998 },    -- Elspeth Larink
+						["coord"] = { 46.5, 40.2, 1698 },	-- Seat of the Primus
+					}),
+					q(64324, {	-- Necrolord Veteran #2
+						["description"] = "Requires Renown 43.",
 						["provider"] = { "n", 175998 },    -- Elspeth Larink
 						["coord"] = { 46.5, 40.2, 1698 },	-- Seat of the Primus
 					}),

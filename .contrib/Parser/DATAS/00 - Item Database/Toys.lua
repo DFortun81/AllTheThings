@@ -732,3 +732,17 @@ t(184396);	-- Malfunctioning Goliath Gauntlet
 t(184435);	-- Mark of Purity
 t(184476);	-- Regenerating Slime Vial
 t(178530);	-- Wreath-A-Rang
+
+-----------------
+-- PATCH 9.1.0 --
+-----------------
+t(187154);	-- Ancient Korthian Runes
+t(187139);	-- Bottled Shade Heart
+t(187051);	-- Forgotten Feather
+t(187344);	-- Offering Kit Maker
+t(187113);	-- Personal Ball and Chain
+t(187140);	-- Ring of Duplicity
+t(187174);	-- Shaded Judgment Stone
+t(187159);	-- Shadow Slicing Shortsword
+t(187176);	-- Vesper of Harmony
+t(187184);	-- Vesper of Clarity

@@ -238,6 +238,31 @@ _.ExpansionFeatures =
 						}),
 					},
 				}),
+				n(QUESTS, {
+					q(63592, {	-- A New Path
+					--	currently takes place on a 'nil' map, may need another mapID added via ["maps"] later
+					--	TODO: grants "a new path" criteria of "chains of domination" achievement, add to whichever zone these quests wind up being in
+						["sourceQuests"] = { 63584 },	-- A Triumphant Return
+						["provider"] = { "n", 168517 },	-- Polemarch Kalisthene
+						["coord"] = { 64.0, 19.1, 1707 },	-- Elysian Hold, Archon's Rise
+					}),
+					q(63586, {	-- Compassion in Devotion
+						["sourceQuests"] = { 63585 },	-- Blind Loyalty
+						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
+						["coord"] = { 66.5, 16.5, 1707 },	-- Elysian Hold, Archon's Rise
+					}),
+					q(63728, {	-- Hunting Amid Houses
+					--	TODO - not sure if this is non-NF or Venthyr-only.  will verify on Kyrian/Necrolord
+						["sourceQuests"] = { 63672 },	-- A Cry From the Heart
+						["provider"] = { "n", 177434 },	-- Ysera
+						["coord"] = { 47.8, 53.5, ARDENWEALD },
+					}),
+					q(63593, {	-- New Sigil of the Kyrian
+					--	currently picked up on the same 'nil' map from A New Path
+						["sourceQuests"] = { 63592 },	-- A New Path
+						["provider"] = { "n", 177116 },	-- Polemarch Adrestes
+					}),
+				}),
 			},
 		}),
 	}),

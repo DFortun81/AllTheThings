@@ -83,6 +83,11 @@ _.Achievements =
 				crit(6),		-- Ti'or
 				crit(7),		-- Sabriel the Bonecleaver
 			}),
+			ach(14767, {	-- Count Your Blessings
+				crit(1),		-- Purified Blessing of Grace
+				crit(2),		-- Purified Blessing of Power
+				crit(3),		-- Purified Blessing of Fortitude
+			}),
 			ach(14763, {	-- Crypt Couture
 				crit(1),		-- Ashen Ink
 				crit(2),		-- Jagged Bonesaw
@@ -115,6 +120,17 @@ _.Achievements =
 				crit(20),		-- Mawsworn Shackles
 				crit(21),		-- Wailing Coin
 				crit(22),		-- Mawsworn Orders
+			}),
+			ach(15053, {	-- Explore Korthia
+				crit(1),	-- Estuary of Awakening
+				crit(2),	-- Hope's Ascent
+				crit(3),	-- Keeper's Respite
+				crit(4),	-- Mauler's Outlook
+				crit(5),	-- Sanctuary of Guidance
+				crit(6),	-- Scholar's Den
+				crit(7),	-- Seeker's Quorum
+				crit(8),	-- Vault of Secrets
+				crit(9),	-- Windswept Aerie
 			}),
 			ach(14663, {	-- Explore The Maw
 				crit(1),		-- Calcis
@@ -366,11 +382,6 @@ _.Achievements =
 					crit(15),		-- Gift of Devos
 				}),
 			}),
-			ach(14767, {	-- Count Your Blessings
-				crit(1),		-- Purified Blessing of Grace
-				crit(2),		-- Purified Blessing of Power
-				crit(3),		-- Purified Blessing of Fortitude
-			}),
 			ach(14788, {	-- Fractured Faerie Tales
 				crit(1),		-- A Meandering Story
 				crit(2),		-- A Wandering Tale
@@ -379,6 +390,7 @@ _.Achievements =
 				crit(5),		-- A Naughty Story
 			}),
 			ach(14745),		-- Grand Theft Shadehound
+			ach(14943),		-- Guarmageddon
 			ach(14626),		-- Harvester of Sorrow
 			ach(14738, {	-- Hunting Party
 				crit(1),		-- Complete Hunt: Shadehounds
@@ -421,6 +433,23 @@ _.Achievements =
 				crit(7),		-- Corrupted Sediment
 			}),
 			ach(14747),		-- Make it Double!
+			ach(15054, {	-- Minions of the Cold Dark
+				crit(1),	-- Versya the Damned slain
+				crit(2),	-- Gralebboih slain
+				crit(3),	-- Promathiz slain
+				crit(4),	-- Sentinel Pyrophus slain
+				crit(5),	-- Gruukuuek the Elder slain
+				crit(6),	-- Zul'gath the Flayer slain
+				crit(7),	-- Mugrem the Soul Devourer slain
+				crit(8),	-- The Mass of Souls slain
+				crit(9),	-- Algel the Hunter slain
+				crit(10),	-- Sentinel Shakorzeth slain
+				crit(11),	-- Kazj the Sentinel slain
+				crit(12),	-- Intercessor Razzram slain
+				crit(13),	-- Malleus Grakizz slain
+				crit(14),	-- Manifestation of Pain slain
+				crit(15),	-- Golmak the Monstrosity slain
+			}),
 			ach(14634, {	-- Nine Afterlives
 				i(184449),		-- Jiggles's Favorite Toy
 				crit(1),		-- Hairball
@@ -483,6 +512,18 @@ _.Achievements =
 				crit(12),		-- Creeper
 			}),
 			ach(14791),		-- Toss a Seed to Your Hunter...
+			ach(15099, {	-- Treasures of Korthia
+				crit(1),	-- Glittering Nest Material
+				crit(2),	-- Forgotten Feather
+				crit(3),	-- Lost Memento
+				crit(4),	-- Dislodged Nest
+				crit(5),	-- Anima Laden Egg
+				crit(6),	-- Displaced Relic
+				crit(7),	-- Helsworn Chest
+				crit(8),	-- Jeweled Heart
+				crit(9),	-- Infested Vestige
+				crit(10),	-- Offering Box
+			}),
 			ach(14770, {	-- What We Ride in the Shadows
 				crit(1),		-- Old Gate
 				crit(2),		-- Hole in the Wall

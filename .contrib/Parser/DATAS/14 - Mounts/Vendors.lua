@@ -12,9 +12,13 @@ _.Mounts =
 			["races"] = HORDE_ONLY,
 		}),
 		i(85262),	-- Amber Scorpion
+		i(186647),	-- Amber Shardhide
 		i(152794),	-- Amethyst Ruinstrider
 		i(167167),	-- Ankoan Waveray
 		i(141713),	-- Arcadian War Turtle
+		i(186493, {	-- Ardenweald Wilderling
+			["customCollect"] = "SL_COV_NFA",	-- Night Fae covenant only
+		}),
 		i(47179, {	-- Argent Charger
 			["classes"] = { PALADIN },
 		}),
@@ -35,13 +39,25 @@ _.Mounts =
 			["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant only
 		}),
 		i(44689),	-- Armored Snowy Gryphon
+		i(186485, {	-- Ascendant's Aquilon
+			["customCollect"] = "SL_COV_KYR",	-- Kyrian covenant only
+		}),
 		i(103638),	-- Ashhide Mushan Beast
+		i(186494, {	-- Autumnal Wilderling
+			["customCollect"] = "SL_COV_NFA",	-- Night Fae covenant only
+		}),
 		i(87781),	-- Azure Riding Crane
 		i(166465, {	-- Azureshell Krolusk
 			["races"] = ALLIANCE_ONLY,
 			["cost"] = { { "c", 1717, 200 }, },	-- 200x 7th Legion Service Medal
 		}),
 		i(81354),	-- Azure Water Strider
+		i(186480, {	-- Battle-Hardened Aquilon
+			["customCollect"] = "SL_COV_KYR",	-- Kyrian covenant only
+		}),
+		i(186490, {	-- Battlefield Swarmer
+			["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant only
+		}),
 		i(167894),	-- Beastlord's Irontusk
 		i(167895),	-- Beastlord's Warwolf
 		i(152795),	-- Beryl Ruinstrider
@@ -92,7 +108,9 @@ _.Mounts =
 		i(182078),	-- Bonesewn Fleshroc(Abom Stitching profession)
 		i(116775),	-- Breezestrider Stallion
 		i(128481),	-- Bristling Hellboar
-		un(NEVER_IMPLEMENTED, i(128480)),	-- Bristling Hellboar
+		i(128480, {	-- Bristling Hellboar
+			["u"] = NEVER_IMPLEMENTED,
+		}),
 		i(91005, {	-- Brown Dragon Turtle [Panda Only]
 			["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 		}),
@@ -166,8 +184,11 @@ _.Mounts =
 			["races"] = ALLIANCE_ONLY,
 		}),
 		i(25471),	-- Ebon Gryphon
-		i(180724),	-- Enchanted Winterborn Runestag
+		i(186482, {	-- Elysian Aquilon
+			["customCollect"] = "SL_COV_KYR",	-- Kyrian covenant only
+		}),
 		i(180722),	-- Enchanted Shadeleaf Runestag
+		i(180724),	-- Enchanted Winterborn Runestag
 		i(8588),	-- Emerald Raptor
 		i(161774, {	-- Expedition Bloodswarmer
 			["races"] = HORDE_ONLY,
@@ -267,11 +288,9 @@ _.Mounts =
 		i(13334),	-- Green Skeletal Warhorse
 		i(25476),	-- Green Wind Rider
 		i(87788),	-- Grey Riding Yak
-		i(181300),	-- Gruesome Flayedwing		-- no cost due each covenant offering this mount in different ways
+		i(181300),	-- Gruesome Flayedwing
 		i(87774),	-- Heavenly Golden Cloud Serpent
-		i(180461, {	-- Horrid Dredwing
-			["customCollect"] = "SL_COV_VEN",	-- Venthyr covenant only
-		}),
+		i(180461),	-- Horrid Dredwing
 		i(142228, {	-- Huntmaster's Dire Wolfhawk (Hunter)
 			["classes"] = { HUNTER },
 		}),
@@ -292,15 +311,24 @@ _.Mounts =
 		i(67107),	-- Kor'kron Annihilator
 		i(152788),	-- Lightforged Warframe Mount
 		i(182082),	-- Lurid Bloodtusk
+		i(186487, {	-- Maldraxxian Corpsefly
+			["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant only
+		}),
 		un(9, i(163042)),	-- Mighty Caravan Brutosaur
 		i(116768),	-- Mosshide Riverwallow
 		i(73838),	-- Mountain Horse
 		i(143637, {	-- Netherlord's Brimstone Wrathsteed (Warlock)
 			["classes"] = { WARLOCK },
 		}),
+		i(186478, {	-- Obsidian Gravewing
+			["customCollect"] = "SL_COV_VEN",	-- Venthyr-only
+		}),
 		i(47101),	-- Ochre Skeletal Warhorse
 		i(45595),	-- Orgrimmar Wolf
 		i(180726),	-- Pale Acidmaw
+		i(186477, {	-- Pale Gravewing
+			["customCollect"] = "SL_COV_VEN",	-- Venthyr-only
+		}),
 		i(116776),	-- Pale Thorngrazer
 		i(163589),	-- Palehide Direhorn
 		i(180762, {	-- Phalynx of Humility
@@ -350,6 +378,9 @@ _.Mounts =
 		i(89306),	-- Red Shado-Pan Riding Tiger
 		i(13331),	-- Red Skeletal Horse
 		i(29470),	-- Red Skeletal Warhorse
+		i(186488, {	-- Regal Corpsefly
+			["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant only
+		}),
 		i(87783),	-- Regal Riding Crane
 		i(116667),	-- Rocktusk Battleboar
 		i(166464, {	-- Rubyshell Krolusk
@@ -399,11 +430,17 @@ _.Mounts =
 			["races"] = HORDE_ONLY,
 		}),
 		i(45596),	-- Silvermoon Hawkstrider
-		i(183715),	-- Sinfall Gargon
+		i(183715, {	-- Sinfall Gargon
+			["customCollect"] = "SL_COV_VEN",	-- Venthyr-only
+		}),
+		i(186476, {	-- Sinfall Gravewing
+			["customCollect"] = "SL_COV_VEN",	-- Venthyr-only
+		}),
 		i(161910, {	-- Smoky Charger
 			["races"] = ALLIANCE_ONLY,
 		}),
 		i(25472),	-- Snowy Gryphon
+		i(186648),	-- Soaring Razorwing
 		i(64998, {	-- Spectral Steed [Alliance Only]
 			["races"] = ALLIANCE_ONLY,
 		}),
@@ -548,6 +585,9 @@ _.Mounts =
 		i(116671),	-- Wild Goretusk
 		i(40775, {	-- Winged Steed of the Ebon Blade [Death Knight Only]
 			["classes"] = { DEATHKNIGHT },
+		}),
+		i(186495, {	-- Winter Wilderling
+			["customCollect"] = "SL_COV_NFA",	-- Night Fae-only
 		}),
 		i(180415, {	-- Winterborn Runestag
 			["customCollect"] = "SL_COV_NFA",	-- Night Fae covenant only

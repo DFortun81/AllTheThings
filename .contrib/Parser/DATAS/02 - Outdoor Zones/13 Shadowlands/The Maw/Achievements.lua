@@ -74,6 +74,7 @@ _.Zones =
 						176390,	-- Bridled Shadehound (random spawn?  found one up around 44, 45.  you just click to ride and it doesn't have a cast bar to hop on)
 					},
 				}),
+				ach(14738),		-- Hunting Party
 				ach(14334, {	-- Into the Maw
 					["sourceQuests"] = { 59770 },	-- Stand as One
 				}),
@@ -91,8 +92,10 @@ _.Zones =
 						174129,	-- Agonized Soul
 						175897,	-- Aimless Soul
 						174182,	-- Caged Soul
+						178270,	-- Helya's Grasp (for Imprisoned Soul)
 						176149,	-- Imprisoned Soul
 						175910,	-- Scavenged Soul
+						176313,	-- Scavenged Soul
 						176145,	-- Stone Prison (for Imprisoned Souls)
 						176175,	-- Tormented Soul
 						174158,	-- Wailing Soul

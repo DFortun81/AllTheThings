@@ -7,6 +7,17 @@ _.ExpansionFeatures =
 	tier(9, {	-- Shadowlands
 		m(1627, {	-- Torghast
 			n(ACHIEVEMENTS, {
+				ach(15091),		-- A Taste of Perfection
+				ach(15067),		-- Adamant Vaults
+				ach(14961, {	-- Chains of Domination
+				--	TODO: this quest is picked up in runecarver's oubliette, which is technically torghast, but it might make more sense to list it in Korthia for visibility?
+					["collectible"] = false,
+					["g"] = {
+						crit(3, {	-- The Last Sigil
+							["sourceQuests"] = { 63727 },	-- The Primus Returns (technically in Torghast/Runecarver's Oubliette)
+						}),
+					},
+				}),
 				ach(14795, {	-- Clearing the Fog
 					ach(14759),	-- It's Coming Back to Me...
 					ach(14760),	-- Recollection Collection
@@ -130,6 +141,15 @@ _.ExpansionFeatures =
 						}),
 					}),
 				}),
+				ach(15089, {	-- Flawless Master
+					i(186655),	-- Mawsworn Charger's Reins (MOUNT!)
+					ach(15088),	-- Flawless: Upper Reaches
+					ach(15087),	-- Flawless: Mort'regar
+					ach(15084),	-- Flawless: The Soulforges
+					ach(15083),	-- Flawless: Coldheart Interstitia
+					ach(15081),	-- Flawless: Skoldus Hall
+					ach(15082),	-- Flawless: Fracture Chambers
+				}),
 				ach(14776),		-- For the Hoarder!
 				ach(14498, {	-- Gatekeepers of Torghast
 					crit(1,  {		-- Dark Aspirant Corrus
@@ -190,7 +210,25 @@ _.ExpansionFeatures =
 						["crs"] = { 155250 },	-- Decayspeaker
 					}),
 				}),
+				ach(15075, {	-- Infiltrators
+					crit(1),	-- Karthazel
+					crit(2),	-- Sath'zuul
+					crit(3),	-- Vil'thras
+				}),
 				ach(14755),		-- Legendary Accord
+				ach(15079, {	-- Many, Many Things
+					i(186551),		-- Mord'al Eveningstar (PET!)
+					ach(15076, {	-- The Box of Many Things
+						["sourceQuests"] = { 64216 },	-- Tower Knowledge
+					}),
+					ach(15080),		-- So Blessed
+				}),
+				ach(15092, {	-- Master of Torment
+					ach(15093),	-- Avenge Me!
+					ach(15095),	-- No Doubt
+					ach(15094),	-- Rampage
+					ach(15096),	-- Crowd Pleaser
+				}),
 				ach(14501, {	-- Phanatical
 					ach(14499),		-- Phanciful
 					ach(14500),		-- Phantastic

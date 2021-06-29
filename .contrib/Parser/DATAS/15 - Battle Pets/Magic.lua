@@ -46,7 +46,10 @@ _.BattlePets =
 			p(1773),	-- Erudite Manafiend
 			un(10, p(183)),		-- Ethereal Soul-Trader
 			p(1717),	-- Extinguished Eye
+			p(3126),	-- Eye of Affliction
+			p(3128),	-- Eye of Allseeing
 			p(2836),	-- Eye of Corruption
+			p(3129),	-- Eye of Extermination
 			p(1719),	-- Eye of Inquisition
 			p(1576),	-- Eye of Observation
 			p(2090),	-- Faceless Mindlasher
@@ -56,6 +59,7 @@ _.BattlePets =
 			p(1245),	-- Filthling
 			p(2187),	-- Filthy Slime
 			p(2837),	-- Gloop
+			p(3125),	-- Golden Eye
 			p(2120),	-- Grasping Manifestation
 			un(10, p(1174)),	-- Gusting Grimoire
 			p(1346),	-- Harmonious Porcupette

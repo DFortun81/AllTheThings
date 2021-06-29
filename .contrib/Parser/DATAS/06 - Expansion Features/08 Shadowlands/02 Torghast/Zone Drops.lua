@@ -7,6 +7,16 @@ _.ExpansionFeatures =
 	tier(9, {	-- Shadowlands
 		m(1627, {	-- Torghast
 			n(ZONEDROPS, {
+				i(187096, {	-- Adamant Vault Shoulderplates
+					["crs"] = {
+						155945,	-- Gherus the Chained
+					},
+				}),
+				i(187030, {	-- Deathsworn Shoulderguards
+					["crs"] = {
+						151329,	-- Warden Skoldus
+					},
+				}),
 				i(183192, {	-- Frenzied Mawrat
 					["crs"] = {
 						151331,	-- Cellblock Sentinel
@@ -54,6 +64,11 @@ _.ExpansionFeatures =
 						159190,	-- Synod
 					},
 				}),
+				i(187041, {	-- Shoulders of Unbreakable Demise
+					["crs"] = {
+						155250,	-- Decayspeaker
+					},
+				}),
 				i(183195, {	-- Torghast Lurker
 					["crs"] = {
 						153011,	-- Binder Baritas
@@ -68,6 +83,16 @@ _.ExpansionFeatures =
 						156239,	-- Dark Ascended Corrus
 						155250,	-- Decayspeaker
 						155251,	-- Elder Longbranch
+					},
+				}),
+				i(187031, {	-- Towering Mantle of the Maw
+					["crs"] = {
+						169859,	-- Observer Zelgar <The Third Eye>
+					},
+				}),
+				i(187040, {	-- Twin-Scythe Spaulders
+					["crs"] = {
+					--	no drop data yet, just reported by players
 					},
 				}),
 

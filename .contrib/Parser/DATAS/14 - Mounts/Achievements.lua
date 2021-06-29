@@ -8,7 +8,7 @@ _.Mounts =
 		i(152815),	-- Antoran Gloomhound
 		i(44178),	-- Albino Drake
 		i(98259),	-- Armored Blue Dragonhawk
-		i(181820, {		-- Armored Chosen Tauralus
+		i(181820, {	-- Armored Chosen Tauralus
 			["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant only
 		}),
 		i(116668),	-- Armored Frostboar
@@ -18,8 +18,8 @@ _.Mounts =
 		i(174836),	-- Awakened Mindborer
 		i(167171),	-- Azshari Bloatray
 		i(174654),	-- Black Serpent of N'Zoth
-		i(44223),	-- Black War Bear (Alliance)
-		i(44224),	-- Black War Bear (Horde)
+		i(44223),	-- Black War Bear (A)
+		i(44224),	-- Black War Bear (H)
 		i(116666),	-- Blacksteel Battleboar
 		i(153041),	-- Bleakhoof Ruinstrider
 		i(51954),	-- Bloodbathed Frostbrood Vanquisher
@@ -29,7 +29,7 @@ _.Mounts =
 		i(174066, {	-- Caravan Hyena
 			["races"] = HORDE_ONLY,
 		}),
-		i(182074, {		--  Chosen Tauralus
+		i(182074, {	--  Chosen Tauralus
 			["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant only
 		}),
 		i(163577),	-- Conquerer's Scythemaw
@@ -37,7 +37,7 @@ _.Mounts =
 		i(69230),	-- Corrupted Fire Hawk
 		i(87769),	-- Crimson Cloud Serpent
 		i(166539),	-- Dazar'alor Windreaver
-		i(161331, {	-- Dark Iron Core Hound [Dark Iron Dwarf Allied Race]
+		i(161331, {	-- Dark Iron Core Hound
 			["races"] = ALLIANCE_ONLY,
 		}),
 		i(62901),	-- Drake of the East Wind
@@ -49,19 +49,22 @@ _.Mounts =
 		i(137614),	-- Frostshard Infernal
 		i(116383),	-- Gorestrider Gronnling
 		i(141216),	-- Grove Defiler
+		i(186653),	-- Hand of Hrestimorak
+		i(186654),	-- Hand of Salaranga
 		i(87776),	-- Heavenly Azure Cloud Serpent
 		i(87773),	-- Heavenly Crimson Cloud Serpent
-		i(155662),	-- Highmountain Thunderhoof (Horde Only)
+		i(155662),	-- Highmountain Thunderhoof (H)
 		i(51955),	-- Icebound Frostbrood Vanquisher
 		i(127140),	-- Infernal Direwolf
 		i(45801),	-- Ironbound Proto-Drake
 		i(168056),	-- Ironclad Frostclaw
 		i(91802),	-- Jade Pandaren Kite
-		i(164762, {	-- Kul Tiran Charger (Kul Tiran Allied Race)
+		i(164762, {	-- Kul Tiran Charger
 			["races"] = ALLIANCE_ONLY,
 		}),
 		i(141217),	-- Leyfeather Hippogryph
-		i(155656),	-- Lightforged Felcrusher (Alliance)
+		i(155656),	-- Lightforged Felcrusher (A)
+		i(186655),	-- Mawsworn Charger
 		i(168329),	-- Mechacycle Model W
 		i(174067, {	-- Mechagon Mechanostrider
 			["races"] = ALLIANCE_ONLY,
@@ -82,20 +85,25 @@ _.Mounts =
 		i(129280),	-- Prestigious War Steed
 		i(143864),	-- Prestigious War Wolf
 		i(163982),	-- Pureheart Courser
-		un(NEVER_IMPLEMENTED, i(166417)),	-- Reins of the Onyx War Hyena	-- Nobody obtained it since Season 2 start. Hopefully will be added later
+		i(166417, {	-- Reins of the Onyx War Hyena	-- Nobody obtained it since Season 2 start. Hopefully will be added later
+			["u"] = NEVER_IMPLEMENTED,
+		}),
 		i(138387),	-- Ratstallion
 		i(44842),	-- Red Dragonhawk
 		i(44160),	-- Red Proto-Drake
 		i(45802),	-- Rusted Proto-Drake
-		i(183937),	-- Sinful Gladiator's Soul Eater
+		pvp(i(183937)),	-- Sinful Gladiator's Soul Eater
 		i(182717),	-- Sintouched Deathwalker
 		i(169194),	-- Snapback Scuttler
 		i(128706),	-- Soaring Skyterror
+		i(187525),	-- Soultwisted Deathwalker
 		i(104208),	-- Spawn of Galakras
-		i(156486),	-- Starcursed Voidstrider (Alliance)
+		i(156486),	-- Starcursed Voidstrider (A)
 		i(120968),	-- Summon Chauffeur (A)
 		i(122703),	-- Summon Chauffeur (H)
+		i(186637),	-- Tazavesh Gearglider
 		i(77068),	-- Twilight Harbinger
+		pvp(i(186177)),	-- Unchained Gladiator's Soul Eater
 		i(165020, {	-- Vicious Black Bonesteed
 			["races"] = HORDE_ONLY,
 		}),
@@ -111,12 +119,18 @@ _.Mounts =
 		i(163121, {	-- Vicious War Basilisk (H)
 			["races"] = HORDE_ONLY,
 		}),
-		i(142234),	-- Vicious War Bear (Alliance)*
-		i(142235),	-- Vicious War Bear (Horde)*
+		i(142234),	-- Vicious War Bear (A)*
+		i(142235),	-- Vicious War Bear (H)*
 		i(163124),	-- Vicious War Clefthoof
 		i(140350),	-- Vicious War Elekk*
-		i(152869),  -- Vicious War Fox (Horde)*
-		i(152870),	-- Vicious War Fox (Alliance)*
+		i(152870),	-- Vicious War Fox (A)*
+		i(152869),	-- Vicious War Fox (H)*
+		i(186178, {	-- Vicious War Gorm (A)
+			["races"] = ALLIANCE_ONLY,
+		}),
+		i(186179, {	-- Vicious War Gorm (H)
+			["races"] = HORDE_ONLY,
+		}),
 		i(124540),	-- Vicious War Kodo*
 		i(142237),	-- Vicious War Lion*
 		i(124089),	-- Vicious War Mechanostrider*
@@ -127,8 +141,8 @@ _.Mounts =
 		i(70909),	-- Vicious War Steed*
 		i(140348),	-- Vicious Warstrider*
 		i(140354),	-- Vicious War Trike*
-		i(143648),	-- Vicious War Turtle (Alliance)*
-		i(143649),	-- Vicious War Turtle (Horde)*
+		i(143648),	-- Vicious War Turtle (A)*
+		i(143649),	-- Vicious War Turtle (H)*
 		i(184014),	-- Vicious War Spider (A)
 		i(184013),	-- Vicious War Spider (H)
 		i(70910),	-- Vicious War Wolf*
@@ -143,7 +157,7 @@ _.Mounts =
 		i(184183),	-- Voracious Gorger
 		i(169162),	-- Wonderwing 2.0
 		i(174861),	-- Wriggling Parasite
-		i(157870, {	-- Zandalari Direhorn  [Zandalari Allied Race Quest Chain]
+		i(157870, {	-- Zandalari Direhorn
 			["races"] = HORDE_ONLY,
 		}),
 	}),

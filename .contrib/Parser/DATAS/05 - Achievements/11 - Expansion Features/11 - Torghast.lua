@@ -6,11 +6,13 @@ _.Achievements =
 {
 	n(-10055, {	-- Expansion Features
 		n(-10103, {	-- Torghast
+			ach(15091),		-- A Taste of Perfection
+			ach(15067),		-- Adamant Vaults
 			ach(14795, {	-- Clearing the Fog (15 memories)
 				ach(14760),	-- Recollection Collection (10)
 				ach(14759),	-- It's Coming Back to Me... (1)
 			}),
-			ach(14483),	-- Coldheart Interstitia
+			ach(14483),		-- Coldheart Interstitia
 			ach(14778, {	-- Extremely Ravenous
 				crit(1),	-- Dark Armaments
 				crit(2),	-- Deadsoul Hound Harness
@@ -26,9 +28,18 @@ _.Achievements =
 				crit(12),	-- Skeletal Ward
 				crit(13),	-- Prisoner's Concord
 			}),
-			ach(14773),	-- Explosive Extermination
-			ach(14776),	-- For the Hoarder!
-			ach(14473),	-- Fracture Chambers
+			ach(14773),		-- Explosive Extermination
+			ach(15089, {	-- Flawless Master
+				i(186655),	-- Mawsworn Charger's Reins (MOUNT!)
+				ach(15088),	-- Flawless: Upper Reaches
+				ach(15087),	-- Flawless: Mort'regar
+				ach(15084),	-- Flawless: The Soulforges
+				ach(15083),	-- Flawless: Coldheart Interstitia
+				ach(15081),	-- Flawless: Skoldus Hall
+				ach(15082),	-- Flawless: Fracture Chambers
+			}),
+			ach(14776),		-- For the Hoarder!
+			ach(14473),		-- Fracture Chambers
 			ach(14498, {	-- Gatekeepers of Torghast
 				crit(1),	-- Dark Aspirant Corrus
 				crit(2),	-- Arch-Suppressor Laguas
@@ -50,13 +61,29 @@ _.Achievements =
 				crit(18),	-- Elder Longbranch
 				crit(19),	-- Decayspeaker
 			}),
-			ach(14755),	-- Legendary Accord
-			ach(14488),	-- Mort'regar
+			ach(15075, {	-- Infiltrators
+				crit(1),	-- Karthazel
+				crit(2),	-- Sath'zuul
+				crit(3),	-- Vil'thras
+			}),
+			ach(14755),		-- Legendary Accord
+			ach(15079, {	-- Many, Many Things
+				i(186551),	-- Mord'al Eveningstar (PET!)
+				ach(15076),	-- The Box of Many Things
+				ach(15080),	-- So Blessed
+			}),
+			ach(15092, {	-- Master of Torment
+				ach(15093),	-- Avenge Me!
+				ach(15095),	-- No Doubt
+				ach(15094),	-- Rampage
+				ach(15096),	-- Crowd Pleaser
+			}),
+			ach(14488),		-- Mort'regar
 			ach(14501, {	-- Phanatical (250000)
 				ach(14499),	-- Phanciful (2500)
 				ach(14500),	-- Phantastic (25000)
 			}),
-			ach(14463),	-- Skoldus Hall
+			ach(14463),		-- Skoldus Hall
 			ach(14810, {	-- Terror of Torghast (Layer 8)
 				ach(14809, {	-- Traversing Torghast (Layer 4)
 					ach(14808, {	-- Touring Torghast (Layer 1)
@@ -81,9 +108,9 @@ _.Achievements =
 				crit(5),	-- Mort'regar
 				crit(6),	-- The Upper Reaches
 			}),
-			ach(14754),	-- The Forgotten One
-			ach(14478),	-- The Soulforges
-			ach(14493),	-- The Upper Reaches
+			ach(14754),		-- The Forgotten One
+			ach(14478),		-- The Soulforges
+			ach(14493),		-- The Upper Reaches
 			ach(14570, {	-- Twisting Corridors: Layer 8
 				i(184166),	-- Corridor Creeper
 				ach(14468),	-- Twisting Corridors: Layer 1
@@ -100,7 +127,6 @@ _.Achievements =
 				}),
 				ach(14569),	-- Twisting Corridors: Layer 7
 			}),
-
 
 		-- These may have existed on beta? But don't appear to be in the release version, only the layer 1 achieves have been seen.
 		-- Leaving them here commented out for now, we can delete later if they never show up.

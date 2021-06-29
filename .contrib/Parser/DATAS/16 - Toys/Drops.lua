@@ -30,6 +30,7 @@ _.Toys =
 		i(153179),		-- Blue Conservatory Scroll
 		i(184312),		-- Borr-Geth's Fiery Brimstone
 		i(119432),		-- Botani Camouflage
+		i(187139),		-- Bottled Shade Heart
 		i(134023),		-- Bottled Tornado
 		i(128223),		-- Bottomless Stygana Mushroom Brew
 		i(163713),		-- Brazier Cap
@@ -152,6 +153,7 @@ _.Toys =
 		i(153253),		-- S.F.E. Interceptor
 		i(86583),		-- Salyin Battle Banner
 		i(127655),		-- Sassy Imp
+		i(187174),		-- Shaded Judgment Stone
 		i(170187),		-- Shadescale
 		i(86573),		-- Shard of Archstone
 		i(170196),		-- Shirakess Warning Sign
@@ -193,6 +195,7 @@ _.Toys =
 		i(170476),		-- Underlight Sealamp
 		i(153004),		-- Unstable Portal Emitter
 		i(141301),		-- Unstable Powder Box
+		i(187176),		-- Vesper of Harmony
 		i(141331),		-- Vial of Green Goo
 		i(127666),		-- Vial of Red Goo
 		i(113375),		-- Vindicator's Armor Polish Kit

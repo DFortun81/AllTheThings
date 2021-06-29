@@ -71,6 +71,9 @@ _.ExpansionFeatures =
 					q(62420, {	-- Snapper Soul
 						["provider"] = { "i", 181313 },	-- Snapper Soul
 					}),
+					q(63606, {	-- Spider Soul
+						["provider"] = { "i", 185050 },	-- Spider Soul
+					}),
 					q(62435, {	-- Stag Soul
 						["provider"] = { "i", 182180 },	-- Stag Soul
 					}),

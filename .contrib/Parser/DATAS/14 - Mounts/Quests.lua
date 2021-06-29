@@ -52,9 +52,9 @@ _.Mounts =
 		mount(23161, {	-- Dreadsteed
 			["classes"] = { WARLOCK },
 		}),
-		i(180263),	-- Dreamlight Runestag
-		i(180721),	-- Enchanted Dreamlight Runestag
-		i(180766),	-- Eternal Phalynx of Courage
+		i(180263),		-- Dreamlight Runestag
+		i(180721),		-- Enchanted Dreamlight Runestag
+		i(180766),		-- Eternal Phalynx of Courage
 		mount(73629, {	-- Exarch's Elekk
 			["races"] = { DRAENEI },
 			["classes"] = { PALADIN },
@@ -79,6 +79,7 @@ _.Mounts =
 			["races"] = { TAUREN },
 			["classes"] = { PALADIN },
 		}),
+		i(185996),		-- Harvester's Dredwing
 		i(143502, {		-- Highlord's Golden Charger
 			["classes"] = { PALADIN },
 		}),
@@ -109,7 +110,7 @@ _.Mounts =
 			["races"] = HORDE_ONLY
 		}),
 		i(116769),		-- Mudback Riverbeast
-		mount(232412, {	-- Netherlord's Chaotic Wrathsteed
+		mount(241851, {	-- Netherlord's Chaotic Wrathsteed
 			["classes"] = { WARLOCK },
 		}),
 		i(174771),		-- Obedient Drone
@@ -148,6 +149,7 @@ _.Mounts =
 		i(116774),		-- Trained Silverpelt
 		i(116784),		-- Trained Snarler
 		i(174862),		-- Uncorrupted Voidwing
+		i(186103),		-- Undying Darkhound
 		i(54465),		-- Vashj'ir Seahorse
 		i(46102),		-- Venomhide Ravasaur
 		i(32861),		-- Veridian Netherwing Drake
@@ -155,7 +157,7 @@ _.Mounts =
 		i(152901),		-- Violet Spellwing
 		i(137580),		-- Viridian Sharptalon
 		i(183615),		-- Warstitched Darkhound
-		i(182077, {		--  War-Bred Tauralus
+		i(182077, {		-- War-Bred Tauralus
 			["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant only
 		}),
 		i(163128),		-- War-Torn Reins of the Undercity Plaguebat
@@ -163,6 +165,7 @@ _.Mounts =
 			["classes"] = { PALADIN },
 		}),
 		i(43962),		-- White Polar Bear
+		i(186000),		-- Wild Hunt Legsplitter
 		i(13086),		-- Winterspring Frostsaber
 	}),
 };

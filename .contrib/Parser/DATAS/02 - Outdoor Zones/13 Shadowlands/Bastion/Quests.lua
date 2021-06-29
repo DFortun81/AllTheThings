@@ -953,6 +953,72 @@ _.Zones =
 						i(181577),	-- Soulbearer's Vest [monk]
 					},
 				}),
+				
+				-- PTR - todo: merge with regular quests
+				q(63584, {	-- A Triumphant Return
+					["sourceQuests"] = { 63590 },	-- The Vesper Rings
+					["provider"] = { "n", 177116 },	-- Polemarch Adrestes
+					["coord"] = { 20.6, 22.8, BASTION },
+				}),
+				q(63585, {	-- Blind Loyalty
+					["sourceQuests"] = { 63583 },	-- I Intend to Live Forever
+					["provider"] = { "n", 177116 },	-- Polemarch Adrestes
+					["coord"] = { 39.9, 20.0, BASTION },
+				}),
+				q(63984, {	-- Coins for the Ferryman
+					["sourceQuests"] = { 63983 },	-- Dead Drop
+					["provider"] = { "n", 158890 },	-- Bounty Hunter Ta'oku
+					["coord"] = { 32.5, 32.4, BASTION },
+				}),
+				q(63983, {	-- Dead Drop
+					["sourceQuests"] = { 63982 },	-- Above My Station
+					["provider"] = { "n", 158890 },	-- Bounty Hunter Ta'oku
+					["coord"] = { 32.5, 32.4, BASTION },
+				}),
+				q(63589, {	-- Directing Dedication
+					["sourceQuests"] = { 63586 },	-- Compassion in Devotion
+					["provider"] = { "n", 177116 },	-- Polemarch Adrestes
+					["coord"] = { 24.3, 30.2, BASTION },
+				}),
+				q(63582, {	-- He Was My Student
+					["sourceQuests"] = { 63581 },	-- Step Into the Light
+					["provider"] = { "n", 177116 },	-- Polemarch Adrestes
+					["coord"] = { 39.9, 20.0, BASTION },
+				}),
+				q(63583, {	-- I Intend to Live Forever
+					["sourceQuests"] = { 63582 },	-- He Was My Student
+					["provider"] = { "n", 177112 },	-- Uther
+					["coord"] = { 40.1, 20.3, BASTION },
+				}),
+				q(63588, {	-- Rebuilding Faith
+					["sourceQuests"] = { 63586 },	-- Compassion in Devotion
+					["provider"] = { "n", 177300 },	-- Fallen Disciple Nikolon
+					["coord"] = { 24.4, 30.1, BASTION },
+				}),
+				q(63587, {	-- Reclaimable Anima
+					["sourceQuests"] = { 63586 },	-- Compassion in Devotion
+					["provider"] = { "n", 177123 },	-- Kleia
+					["coord"] = { 24.2, 30.0, BASTION },
+				}),
+				q(63581, {	-- Step Into the Light
+					["sourceQuests"] = { 63580 },	-- Wounded Memories
+					["provider"] = { "n", 154629 },	-- Thenios
+					["coord"] = { 40.1, 20.0, BASTION },
+				}),
+				q(63590, {	-- The Vesper Rings
+					["sourceQuests"] = {
+						63589,	-- Directing Dedication
+						63588,	-- Rebuilding Faith
+						63587,	-- Reclaimable Anima
+					},
+					["provider"] = { "n", 177116 },	-- Polemarch Adrestes
+					["coord"] = { 20.6, 22.8, BASTION },
+				}),
+				q(63580, {	-- Wounded Memories
+					["sourceQuests"] = { 63579 },	-- A Paladin's Soul
+					["provider"] = { "n", 177116 },	-- Polemarch Adrestes
+					["coord"] = { 39.9, 20.0, BASTION },
+				}),
 			}),
 		}),
 	}),

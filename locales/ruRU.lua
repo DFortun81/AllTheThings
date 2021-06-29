@@ -884,6 +884,7 @@ for key,value in pairs({
 			[-970] = "Набор C",										-- Set C
 			[-971] = "Набор D",										-- Set D
 
+			--TODO: [-976] = "Korthian Sets",						-- Korthian Sets
 			[-1001] = "Черный ящик",
 
 	-- Warrior order hall lore items TODO: localize

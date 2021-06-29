@@ -23,7 +23,6 @@ _.NeverImplemented =
 		["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.",
 	}),
 	tier(9,	{	-- Shadowlands -- Items that might get added after 9.0.5. If you are sure the item won't be added, please put it into the correct section
-
 		i(180491),	-- Wingdancer's Spire
 		-- Mounts
 		i(182083),	-- Bonecleaver's Skullboar

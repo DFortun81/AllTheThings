@@ -1137,6 +1137,7 @@ app.L = {
 		[-691] = "Interface\\Icons\\inv_protodrakegladiatormount_purple",					-- Notorious Gladiator: Battle for Azeroth Season 3
 		[-692] = "Interface\\Icons\\inv_protodrakegladiatormount_black",					-- Corrupted Gladiator: Battle for Azeroth Season 4
 		[-693] = "Interface\\Icons\\inv_shadebeastmount",									-- Sinful Gladiator: Shadowlands Season 1
+		[-694] = 3949827,																	-- Unchained Gladiator: Shadowlands Season 2
 		[-796] = app.asset("Category_PetBattles"),											-- Battle
 		[-797] = 631719,																	-- Journal
 		[-798] = app.asset("Category_SelfieFilters"),										-- Selfie Filter
@@ -1170,6 +1171,7 @@ app.L = {
 		[-905] = 3675495,																	-- Command Table
 		[-906] = 3675495,																	-- Tier 1: Tactical Insight
 		[-908] = 901746,																	-- Rewards
+		[-913] = "Interface\\Icons\\ui_torghast",											-- Tormentors of Torghast
 
 		[-915] = "Interface\\Icons\\sanctum_features_animadiversion",						-- Anima Conductor
 		[-916] = "Interface\\Icons\\sanctum_features_animadiversion",						-- Tier 1: Flowing Tendrils
@@ -1235,6 +1237,9 @@ app.L = {
 		[-973] = 3536186,																	-- Loyalty
 		[-974] = 3536184,																	-- Wisdom
 		[-975] = 3536187,																	-- Humility
+		[-976] = 4076799,																	-- Korthian Sets
+		[-978] = 651097,																	-- The Rift
+		[-980] = 133650,																	-- Shared Treasures
 		[-1000] = "Interface\\Icons\\achievement_transmog_collections",						-- Sets
 		[-1001] = "Interface\\Icons\\Racial_Dwarf_FindTreasure",							-- The Black Vault
 		[-2200] = "Interface\\Icons\\inv_scroll_11",										-- Warrior order hall lore item
@@ -1463,12 +1468,14 @@ app.L = {
 		[-10080] = "Interface\\Icons\\trade_alchemy_potiond2",						-- Horrific Visions
 		[-10081] = "Interface\\Icons\\spell_shadow_shadowmend",						-- Corrupted Area (Vision Scenario)
 		[-10082] = "Interface\\Icons\\spell_priest_psyfiend",						-- Lost Area (Vision Scenario)
+		[-10083] = "236373",														-- Covenant Assaults
 
 		[-10100] = app.asset("Expansion_SL"),										-- Shadowlands
 		[-10101] = "Interface\\Icons\\Paladin_Protection",							-- Shadowlands Dungeon
 		[-10102] = "Interface\\Icons\\Paladin_Protection",							-- Shadowlands Raid
 		[-10103] = "Interface\\Icons\\Paladin_Protection",							-- The Maw and Torghast
 		[-10104] = "Interface\\Icons\\Paladin_Protection",							-- Covenant Sanctums
+		[-10105] = 236373,															-- Covenant Assaults
 
 
 		[-101501] = "Interface\\FriendsFrame\\achievements_zone_azsuna",
@@ -1939,6 +1946,7 @@ app.L = {
 
 	-- Shadowlands PvP Seasons
 		[-693] = select(2, GetAchievementInfo(14690)),							-- Sinful Gladiator: Shadowlands Season 1
+		[-694] = select(2, GetAchievementInfo(14973)),							-- Unchained Gladiator: Shadowlands Season 2
 
 	-- Pets
 		[-796] = BATTLE_PET_SOURCE_5,											-- Pet Battle
@@ -1990,12 +1998,17 @@ app.L = {
 		[-910] = "Hunt: Alpha Devourers",										-- Hunt: Alpha Devourers
 		[-911] = "Hunt: Shadehounds",											-- Hunt: Shadehounds
 		[-912] = "Hunt: Winged Soul Eaters",									-- Hunt: Winged Soul Eaters
+		[-913] = "Tormentors of Torghast",										-- Tormentors of Torghast
 		[-914] = "Adventures",													-- Adventures
 		[-915] = "Anima Conductor",												-- Anima Conductor
 		[-916] = "Tier 1: Flowing Tendrils",									-- Tier 1: Flowing Tendrils
 		[-917] = "Tier 2: Streaming Threads",									-- Tier 2: Streaming Threads
 		[-918] = "Tier 3: Flowing Power",										-- Tier 3: Flowing Power
 		[-919] = "Night Mare",													-- Night Mare
+		[-977] = "Maelie the Wanderer",											-- Maelie the Wanderer
+		[-978] = select(1, GetSpellInfo(354778)),								-- The Rift
+		[-979] = "Broker Ve'ken & Broker Ve'nott",								-- Broker Ve'ken & Broker Ve'nott
+		[-980] = "Shared Treasures",											-- Shared Treasures
 
 	-- SL Maldraxxus/Necrolord
 		[-920] = "Covenant: Necrolord",											-- Covenant: Necrolord
@@ -2065,6 +2078,7 @@ app.L = {
 		[-970] = "Set C",														-- Set C
 		[-971] = "Set D",														-- Set D
 
+		[-976] = "Korthian Sets",												-- Korthian Sets
 		[-1000] = WARDROBE_SETS, 												-- Sets
 		[-1001] = "The Black Vault",
 
@@ -2354,6 +2368,7 @@ app.L = {
 		[-10080] = "Horrific Visions",
 		[-10081] = "Corrupted Area",
 		[-10082] = "Lost Area",
+		[-10083] = "Covenant Assaults",											-- Covenant Assaults
 
 	-- Shadowlands Achievement Header
 		[-10100] = select(1,GetCategoryInfo(15422)),							-- Shadowlands

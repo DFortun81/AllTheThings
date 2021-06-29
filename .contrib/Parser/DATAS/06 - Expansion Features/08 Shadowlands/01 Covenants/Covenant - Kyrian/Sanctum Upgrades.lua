@@ -108,20 +108,68 @@ _.ExpansionFeatures =
 									follower(1259),	-- Pelagos
 								},
 							}),
-							q(61859, {    -- Adventurer: Nemea
-								["sourceQuests"] = { 58103 },    -- Pride or Unit
+							q(61863, {	-- Adventurer: Apolon
+								["description"] = "Requires Renown 27.",
 								["provider"] = { "n", 160389 },    -- Koros
 								["coord"] = { 43.8, 40.7, 1707 },	-- Archon's Rise
-								["description"] = "Becomes available at Renown 4. Must choose Nemea in the Pride or Unit quest to get this follower.",
+								["g"] = {
+									follower(1276),	-- Apolon
+								},
+							}),
+							q(61864, {	-- Adventurer: Bron
+								["description"] = "Requires Renown 33.",
+								["provider"] = { "n", 160389 },    -- Koros
+								["coord"] = { 43.8, 40.7, 1707 },	-- Archon's Rise
+								["g"] = {
+									follower(1275),	-- Bron
+								},
+							}),
+							q(61862, {	-- Adventurer: Clora
+								["description"] = "Requires Renown 17.",
+								["provider"] = { "n", 160389 },    -- Koros
+								["coord"] = { 43.8, 40.7, 1707 },	-- Archon's Rise
+								["g"] = {
+									follower(1273),	-- Clora
+								},
+							}),
+							q(64462, {	-- Adventurer: Cromas the Mystic
+								["description"] = "Requires Renown 62.",
+								["provider"] = { "n", 160389 },    -- Koros
+								["coord"] = { 43.8, 40.7, 1707 },	-- Archon's Rise
+								["g"] = {
+									follower(1342),	-- Cromas the Mystic
+								},
+							}),
+							q(61865, {	-- Adventurer: Disciple Kosmas
+								["description"] = "Requires Renown 38.",
+								["provider"] = { "n", 160389 },    -- Koros
+								["coord"] = { 43.8, 40.7, 1707 },	-- Archon's Rise
+								["g"] = {
+									follower(1274),	-- Disciple Kosmas
+								},
+							}),
+							q(64461, {	-- Adventurer: Hermestes
+								["description"] = "Requires Renown 44.",
+								["provider"] = { "n", 160389 },	-- Koros
+								["coord"] = { 43.8, 40.7, 1707 },	-- Archon's Rise
+								["g"] = {
+									follower(1341),	-- Hermestes
+								},
+							}),
+							q(61859, {	-- Adventurer: Nemea
+								["sourceQuests"] = { 58103 },    -- Pride or Unit
+								["description"] = "Requires Renown 4. Must choose Nemea in the Pride or Unit quest to get this follower.",
+								["provider"] = { "n", 160389 },    -- Koros
+								["coord"] = { 43.8, 40.7, 1707 },	-- Archon's Rise
 								["g"] = {
 									follower(1270),	-- Nemea
 								},
 							}),
 							q(61860, {	-- Adventurer: Pelodis
 								["sourceQuests"] = { 58103 },    -- Pride or Unit
+								["description"] = "Requires Renown 4. Must choose Pelodis in the Pride or Unit quest to get this follower.",
 								["provider"] = { "n", 160389 },    -- Koros
 								["coord"] = { 43.8, 40.7, 1707 },	-- Archon's Rise
-								["description"] = "Becomes available at Renown 4. Must choose Pelodis in the Pride or Unit quest to get this follower.",
 								["g"] = {
 									follower(1271),	-- Pelodis
 								},
@@ -146,44 +194,12 @@ _.ExpansionFeatures =
 								["description"] = "Requires Renown 4.",
 								["altQuests"] = { 59674 },    -- A Friendly Rivalry
 								["provider"] = { "n", 160389 },    -- Koros
-								["coord"] = { 43.8, 40.7, 1707 },
+								["coord"] = { 43.8, 40.7, 1707 },	-- Archon's Rise
 							}),
 						}),
 						-- TODO: create headers for these
 						-- Tier 2: Enhanced Purification
 						-- Tier 3: Wings of Light
-						q(61863, {	-- Adventurer: Apolon
-							["provider"] = { "n", 160389 },    -- Koros
-							["coord"] = { 43.8, 40.7, 1707 },
-							["description"] = "Becomes available at Renown 27.",
-							["g"] = {
-								follower(1276),	-- Apolon
-							},
-						}),
-						q(61864, {	-- Adventurer: Bron
-							["provider"] = { "n", 160389 },    -- Koros
-							["coord"] = { 43.8, 40.7, 1707 },
-							["description"] = "Becomes available at Renown 33.",
-							["g"] = {
-								follower(1275),	-- Bron
-							},
-						}),
-						q(61862, {	-- Adventurer: Clora
-							["description"] = "Becomes available at Renown 17.",
-							["provider"] = { "n", 160389 },    -- Koros
-							["coord"] = { 43.8, 40.7, 1707 },	-- Archon's Rise
-							["g"] = {
-								follower(1273),	-- Clora
-							},
-						}),
-						q(61865, {	-- Adventurer: Disciple Kosmas
-							["provider"] = { "n", 160389 },    -- Koros
-							["coord"] = { 43.8, 40.7, 1707 },
-							["description"] = "Becomes available at Renown 38.",
-							["g"] = {
-								follower(1274),	-- Disciple Kosmas
-							},
-						}),
 					}),
 					n(-942, {	-- Path of Ascension
 						["maps"] = { 1711 },	-- Path of Ascension Coliseum

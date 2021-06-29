@@ -306,6 +306,17 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(44957)),	-- Greater Inscription of the Gladiator
 					},
 				}),
+				n(179897, {	-- Ca'nees
+					["coord"] = { 40.0, 61.0, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(187009),	-- Dazzling Spectacles
+						i(186092),	-- Historical Perspective Shifters
+						i(186091),	-- Onyx Glare-Reducers
+						i(186090),	-- Simple Glasses
+						i(187010),	-- Tasteful Eyeglasses
+					},
+				}),
 				n(50477,  {	-- Champion Uru'zin <Darkspear Quartermaster>
 					["coord"] = { 49.9, 58.1, ORGRIMMAR },
 					["races"] = HORDE_ONLY,

@@ -18,6 +18,9 @@ _.ExpansionFeatures =
 						["g"] = sharedData(
 							{ ["customCollect"] = "SL_COV_KYR", }	-- Kyrian
 							, {
+							i(186485, {	-- Ascendant's Aquilon (MOUNT!)
+								["cost"] = { { "c", 1813, 7500 } },	-- 7,500 Reservoir Anima
+							}),
 							i(180762, {	-- Phalynx of Humility (MOUNT!)
 								["cost"] = {
 									{ "c", 1813, 5000 },
@@ -40,6 +43,20 @@ _.ExpansionFeatures =
 								["cost"] = {
 									{ "c", 1813, 1500 },
 									{ "c", 1885, 30 },
+								},
+							}),
+							i(186516, {	-- Ensemble: Devoted Aspirant's Regalia
+								["cost"] = { { "c", 1813, 10000 } },	-- 10,000 Reservoir Anima
+								["g"] = {
+									i(185006),	-- Devoted Aspirant's Drape
+									i(185001),	-- Devoted Aspirant's Handwraps
+									i(185002),	-- Devoted Aspirant's Hood
+									i(185003),	-- Devoted Aspirant's Leggings
+									i(185007),	-- Devoted Aspirant's Robes
+									i(185004),	-- Devoted Aspirant's Sash
+									i(185000),	-- Devoted Aspirant's Slippers
+									i(184999),	-- Devoted Aspirant's Vestments
+									i(185005),	-- Devoted Aspirant's Wraps
 								},
 							}),
 							i(181288, {	-- Halo of the Harmonious

@@ -157,6 +157,7 @@ THE_MAW = 1543;
 SHADOWLANDS = 1550;
 ARDENWEALD = 1565;
 ORIBOS = 1670;
+KORTHIA = 1961;
 
 -- Helper Tables
 local DifficultyDB = {
@@ -943,6 +944,9 @@ holiday = function(id, t)								-- Create an HOLIDAY Object
 	return struct("holidayID", id, t);
 end
 ho = holiday;											-- Create an HOLIDAY Object (alternative shortcut)
+illusion = function(id, t)								-- Create an ILLUSION Object (only necessary for illusions without itemIDs)
+	return struct("illusionID", id, t);
+end
 inst = function(id, t)									-- Create an INSTANCE Object
 	t = struct("instanceID", id, t);
 

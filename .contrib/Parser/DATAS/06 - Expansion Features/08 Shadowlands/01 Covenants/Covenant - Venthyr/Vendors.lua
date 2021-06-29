@@ -39,6 +39,9 @@ _.ExpansionFeatures =
 									{ "c", 1885, 100 },		-- 100x Grateful Offering
 								},
 							}),
+							i(186478, {	-- Obsidian Gravewing (MOUNT!)
+								["cost"] = { { "c", 1813, 7500 } },	-- 7,500x Reservoir Anima
+							}),
 							i(183715, {	-- Sinfall Gargon (MOUNT!)
 								["cost"] = { { "c", 1813, 5000 } },	-- 5,000x Reservoir Anima
 							}),
@@ -191,6 +194,47 @@ _.ExpansionFeatures =
 								["cost"] = {
 									{ "c", 1813, 2000 },	-- 2,000x Reservoir Anima
 									{ "c", 1885, 15 },		-- 15x Grateful Offering
+								},
+							}),
+							i(186508, {	-- Ensemble: Court Inquisitor's Vestments
+								["cost"] = { { "c", 1813, 10000 } },	-- 10,000x Reservoir Anima
+								["g"] = {
+									i(185097),	-- Court Inquisitor's Cape
+									i(185091),	-- Court Inquisitor's Handwraps
+									i(185092),	-- Court Inquisitor's Hood
+									i(185093),	-- Court Inquisitor's Leggings
+									i(185094),	-- Court Inquisitor's Mantle
+									i(185089),	-- Court Inquisitor's Robe
+									i(185095),	-- Court Inquisitor's Sash
+									i(185090),	-- Court Inquisitor's Slippers
+									i(185096),	-- Court Inquisitor's Wraps
+								},
+							}),
+							i(186510, {	-- Ensemble: Sinful Inquisitor's Vestments
+								["cost"] = { { "c", 1813, 10000 } },	-- 10,000x Reservoir Anima
+								["g"] = {
+									i(185118),	-- Sinful Inquisitor's Handwraps
+									i(185119),	-- Sinful Inquisitor's Hood
+									i(185120),	-- Sinful Inquisitor's Leggings
+									i(185121),	-- Sinful Inquisitor's Mantle
+									i(185116),	-- Sinful Inquisitor's Robes
+									i(185122),	-- Sinful Inquisitor's Sash
+									i(185124),	-- Sinful Inquisitor's Shawl
+									i(185117),	-- Sinful Inquisitor's Slippers
+									i(185123),	-- Sinful Inquisitor's Wraps
+								},
+							}),
+							i(186509, {	-- Ensemble: Sinful Venthyr Attire
+								["cost"] = { { "c", 1813, 10000 } },	-- 10,000x Reservoir Anima
+								["g"] = {
+									i(185083),	-- Sinfall Venthyr Handwraps
+									i(185084),	-- Sinfall Venthyr Hood
+									i(185085),	-- Sinfall Venthyr Leggings
+									i(185086),	-- Sinfall Venthyr Sash
+									i(185088),	-- Sinfall Venthyr Shawl
+									i(185082),	-- Sinfall Venthyr Slippers
+									i(185081),	-- Sinfall Venthyr Vestments
+									i(185087),	-- Sinfall Venthyr Wraps
 								},
 							}),
 							i(181073, {	-- Fearstalker's Crimson Belt
@@ -559,7 +603,6 @@ _.ExpansionFeatures =
 						},
 					}),
 					n(175407, {	-- Lord Afanas <Normal Nathrian Weaponsmith>
-						-- TODO: Fill in "cost". Currently it's acting really weird in that the currency displays the itemid of the last item previously hovered over.
 						["coord"] = { 55.2, 54.1, 1700 },
 						["g"] = bubbleDown({
 							["modID"] = 3,	-- Normal
@@ -768,9 +811,6 @@ _.ExpansionFeatures =
 						}),
 					}),
 					n(174183, {	-- Solivane <Raid Finder Nathrian Weaponsmith>
-						-- TODO: Fill in "cost". Currently it's acting really weird in that the currency displays the itemid of the last item previously hovered over.
-						-- ^ i'm not having this issue, but the modID doesn't seem to be picking up at all.  looking at the individual items shows the 'normal' version of the currencies instead of the LFR version
-						-- and when you look at the currencies in the dungeon journal or in an ATT list, none of the things they buy show up (doesn't appear on LFR or normal currency)
 						["coord"] = { 55.1, 46.1, 1700 },
 						["g"] = bubbleDown({
 							["customCollect"] = { "SL_COV_VEN" },	-- Venthyr Covenant
@@ -982,7 +1022,6 @@ _.ExpansionFeatures =
 						}),
 					}),
 					n(174709, {	-- Stoneweaver McConnell <Heroic Nathrian Weaponsmith>
-						-- TODO: Fill in "cost". Currently it's acting really weird in that the currency displays the itemid of the last item previously hovered over.
 						["coord"] = { 45.4, 65.0, 1700 },
 						["g"] = bubbleDown({
 							["modID"] = 5,	-- Heroic
@@ -1191,7 +1230,6 @@ _.ExpansionFeatures =
 						}),
 					}),
 					n(175369, {	-- Vorpalia <Mythic Nathrian Weaponsmith>
-						-- TODO: Fill in "cost". Currently it's acting really weird in that the currency displays the itemid of the last item previously hovered over.
 						["coord"] = { 40.3, 46.1, 1700 },
 						["g"] = bubbleDown({
 							["modID"] = 6,	-- Mythic

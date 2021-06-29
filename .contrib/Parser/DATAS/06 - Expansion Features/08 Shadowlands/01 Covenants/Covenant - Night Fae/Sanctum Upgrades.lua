@@ -103,50 +103,66 @@ _.ExpansionFeatures =
 						}),
 					}),
 					n(-905, {	-- Command Table
-						q(61857, {	-- Adventurer: Groonoomcrooek
+						q(64459, {	-- Adventurer: Elwyn
+							["description"] = "Requires Renown 62.",
 							["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
 							["coord"] = { 44.7, 56.3, ARDENWEALD },
+							["g"] = {
+								follower(1338),	-- Elwyn
+							},
+						}),
+						q(61857, {	-- Adventurer: Groonoomcrooek
 							["description"] = "Requires Renown 38.",
+							["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+							["coord"] = { 44.7, 56.3, ARDENWEALD },
 							["g"] = {
 								follower(1288),	-- Groonoomcrooek
 							},
 						}),
 						q(61854, {	-- Adventurer: Master Sha'lor
+							["description"] = "Requires Renown 17.",
 							["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
 							["coord"] = { 44.7, 56.3, ARDENWEALD },
-							["description"] = "Requires Renown 17.",
 							["g"] = {
 								follower(1284),	-- Master Sha'lor
 							},
 						}),
 						q(61852, {	-- Adventurer: Guardian Kota
+							["description"] = "Requires Renown 4.",
 							["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
 							["coord"] = { 44.7, 56.3, ARDENWEALD },
-							["description"] = "Requires Renown 4.",
 							["g"] = {
 								follower(1283),	-- Guardian Kota
 							},
 						}),
 						q(61855, {	-- Adventurer: Qadarin
+							["description"] = "Requires Renown 27.",
 							["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
 							["coord"] = { 44.7, 56.3, ARDENWEALD },
-							["description"] = "Requires Renown 27.",
 							["g"] = {
 								follower(1286),	-- Qadarin
 							},
 						}),
-						q(61853, {	-- Adventurer: Te'zan
+						q(64458, {	-- Adventurer: Sulanoom
+							["description"] = "Requires Renown 44.",
 							["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
 							["coord"] = { 44.7, 56.3, ARDENWEALD },
+							["g"] = {
+								follower(1337),	-- Sulanoom
+							},
+						}),
+						q(61853, {	-- Adventurer: Te'zan
 							["description"] = "Requires Renown 12.",
+							["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+							["coord"] = { 44.7, 56.3, ARDENWEALD },
 							["g"] = {
 								follower(1285),	-- Te'zan
 							},
 						}),
 						q(61856, {	-- Adventurer: Watcher Vesperbloom
+							["description"] = "Requires Renown 33.",
 							["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
 							["coord"] = { 44.7, 56.3, ARDENWEALD },
-							["description"] = "Requires Renown 33.",
 							["g"] = {
 								follower(1287),	-- Watcher Vesperbloom
 							},

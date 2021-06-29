@@ -2,13 +2,14 @@
 --   P E T   J O U R N A L   M O D U L E   --
 ---------------------------------------------
 
-_.BattlePets=
+_.BattlePets =
 {
 	n(-797,	{	-- Journal
 		pa(236, {	-- Critter
 			p(487),		-- Alpine Chipmunk
 			p(441),		-- Alpine Hare
 			p(2697),	-- Amethyst Softshell
+			p(3134),	-- Anxious Nibbler
 			p(2834),	-- Aqir Hivespawn
 			p(2848),	-- Aqir Tunneler
 			p(641),		-- Arctic Hare
@@ -38,15 +39,18 @@ _.BattlePets=
 			p(468),		-- Creepy Crawly
 			p(1752),	-- Crispin
 			p(556),		-- Crystal Beetle
+			p(3111),	-- Damp Skrat
 			p(2699),	-- Damplight Slug
 			p(1061),	-- Darkmoon Hatchling
 			p(848),		-- Darkmoon Rabbit
 			p(755),		-- Death's Head Cockroach
+			p(3123),	-- Deathroach
 			p(3081),	-- Decay Grub
 			p(3039),	-- Decaying Mawrat
 			p(555),		-- Deepholm Cockroach
 			p(3021),	-- Deepwood Leaper
 			p(2065),	-- Dig Rat
+			p(3138),	-- Domestic Aunian
 			p(467),		-- Dung Beetle
 			p(1778),	-- Dust Bunny
 			un(20, p(158)),		-- Egbert
@@ -102,6 +106,7 @@ _.BattlePets=
 			p(570),		-- Masked Tanuki
 			p(703),		-- Masked Tanuki Pup
 			p(2670),	-- Mechagon Marmot
+			p(3137),	-- Mosscoated Gromit
 			p(391),		-- Mountain Cottontail
 			p(633),		-- Mountain Skunk
 			p(385),		-- Mouse
@@ -142,7 +147,9 @@ _.BattlePets=
 			p(2463),	-- Sandshell Chitterer
 			p(717),		-- Savory Beetle
 			p(512),		-- Scarab Hatchling
+			p(3112),	-- Scavenging Skrat
 			un(20, p(289)),		-- Scooter the Snail
+			p(3118),	-- Scurrying Mawrat
 			p(3022),	-- Shimmerbough Hoarder
 			p(493),		-- Shimmershell Snail
 			p(677),		-- Shy Bandicoon
@@ -176,6 +183,7 @@ _.BattlePets=
 			p(55),		-- Undercity Cockroach
 			p(454),		-- Undercity Rat
 			p(3038),	-- Undying Deathroach
+			p(3124),	-- Vile Deathroach
 			p(2843),	-- Void-Scarred Beetle
 			p(2839),	-- Void-Scarred Hare
 			p(2864),	-- Void-Scarred Locust
@@ -187,6 +195,7 @@ _.BattlePets=
 			p(2700),	-- Wriggler
 			p(740),		-- Yakrat
 			p(549),		-- Yellow-Bellied Marmot
+			p(3135),	-- Young Garnetgullet
 			un(REMOVED_FROM_GAME, p(94)),	-- Zergling
 			p(1903),	-- Zoom
 		}),

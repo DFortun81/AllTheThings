@@ -889,11 +889,172 @@ _.Zones =
 					-- ["sourceQuests"] = { },
 					["isWeekly"] = true,
 				})),
-				-- End of Zone Achievement Quests
-				-- The Duelist's Debt
-				-- Tithes of Darkhaven
-				-- The Final Atonement
-				-- Revelations of the Light
+
+				-- PTR QUESTS - TODO: MERGE INTO MAIN QUESTS AFTER CONFIRMATION ON LIVE
+				
+				-- part of tazavesh unlock, unrelated to campaign
+				q(63982, {	-- Above My Station
+					["sourceQuests"] = { 63980 },	-- Seeking Smugglers
+					["provider"] = { "n", 160090 },	-- Ta'nla the Identifier
+					["coord"] = { 51.4, 82.7, REVENDRETH },
+				}),
+				-------------------------------------------------
+				
+				q(63678, {	-- Akarek Avenged
+					["sourceQuests"] = {
+						63677,	-- You Can Only Die
+						63676,	-- You Cannot Hide
+						63675,	-- You Cannot Run
+					},
+					["provider"] = { "n", 177437 },	-- Khaliiq
+				}),
+				q(63681, {	-- Back to The Heart
+					["sourceQuests"] = { 63680 },	-- Out On the Edge
+					["providers"] = {
+						{ "n", 177962 },	-- Lady Moonberry <Court of Night>
+						{ "n", 177964 },	-- Lady Moonberry <Inconspicuous Stone Fiend>
+					},
+					["coord"] = { 34.0, 9.65, REVENDRETH },
+				}),
+				q(63674, {	-- By Your Leave
+					["sourceQuests"] = { 63990 },	-- The Blade in the Night
+					["provider"] = { "n", 177435 },	-- Khaliiq
+					["coord"] = { 42.1, 23.2, MALDRAXXUS },
+				}),
+				q(63646, {	-- Convoy of the Covenants
+					["sourceQuests"] = { 63644 },	-- Dread Tidings
+					["provider"] = { "n", 168898 },	-- Prince Renathal
+					["coord"] = { 22.9, 43.7, REVENDRETH },
+				}),
+				q(63651, {	-- Cryptograms
+					["sourceQuests"] = { 63650 },	-- De-Infiltration
+					["provider"] = { "n", 178260 },	-- The Stonewright
+					["coord"] = { 54.6, 40.3, 1699 },	-- Sinfall Reaches
+				}),
+				q(63650, {	-- De-Infiltration
+					["sourceQuests"] = {
+						63648,	-- Nal'ragas
+						63649,	-- Spy vs Spy
+					},
+					["provider"] = { "n", 177644 },	-- Prince Renathal
+					["coord"] = { 25.0, 27.9, REVENDRETH },
+				}),
+				q(64092, {	-- Hunting Huln
+					["sourceQuests"] = { 63679 },	-- Magical Mystery Tour!
+					["provider"] = { "n", 177962 },	-- Lady Moonberry
+					["coord"] = { 25.3, 29.0, REVENDRETH },
+				}),
+				q(64437, {	-- Inform the Primus
+					["sourceQuests"] = { 63683 },	-- Winter's Sigil
+					["provider"] = { "n", 177434 },	-- Ysera
+					["coord"] = { 47.8, 53.6, 1701 },	-- Heart of the Forest
+				}),
+				q(63679, {	-- Magical Mystery Tour!
+					["sourceQuests"] = { 63678 },	-- Akarek Avenged
+					["provider"] = { "n", 177919 },	-- Urgent Message from Ardenweald
+					["coord"] = { 74.7, 33.6, MALDRAXXUS },
+				}),
+				q(64091, {	-- Mal'appropriated
+					["sourceQuests"] = { 64092 },	-- Hunting Huln
+					["provider"] = { "n", 179327 },	-- Mal'Ganis
+					["coord"] = { 37.9, 23.4, REVENDRETH },
+				}),
+				q(63655, {	-- Medallion of Wrath
+				--	TODO: this quest may change, it's not fully implemented/cannot be turned in
+					["sourceQuests"] = { 63654 },	-- The Nathrezim
+					["provider"] = { "n", 179978 },	-- The Accuser
+					["coord"] = { 23.1, 45.9, REVENDRETH },
+				}),
+				q(63648, {	-- Nal'ragas
+					["sourceQuests"] = { 63647 },	-- The Unseen Guests
+					["provider"] = { "n", 177628 },	-- Kael'thas Sunstrider
+					["coord"] = { 36.0, 22.4, REVENDRETH },
+				}),
+				q(63680, {	-- Out On the Edge
+					["sourceQuests"] = { 64090 },	-- The Big Squeeze
+					["provider"] = { "n", 177967 },	-- Lady Moonberry
+					["coord"] = { 35.6, 22.6, REVENDRETH },
+				}),
+				q(64042, {	-- Rituals of Night
+					["sourceQuests"] = { 63681 },	-- Back to The Heart
+					["provider"] = { "n", 177434 },	-- Ysera
+					["coord"] = { 48.0, 53.9, ARDENWEALD },
+				}),
+				q(63649, {	-- Spy vs Spy
+					["sourceQuests"] = { 63647 },	-- The Unseen Guests
+					["provider"] = { "n", 177637 },	-- Baroness Vashj
+					["coord"] = { 36.0, 22.4, REVENDRETH },
+				}),
+				q(63652, {	-- The "Unwelcome" Guests
+					["sourceQuests"] = { 63650 },	-- De-Infiltration
+					["provider"] = { "n", 158653 },	-- Prince Renathal
+					["coord"] = { 51.3, 38.1, 1699 },	-- Sinfall Reaches
+				}),
+				q(64090, {	-- The Big Squeeze
+					["sourceQuests"] = { 64091 },	-- Mal'appropriated
+					["provider"] = { "n", 177968 },	-- Cudgelface
+					["coord"] = { 38.0, 23.7, REVENDRETH },
+				}),
+				q(63990, {	-- The Blade in the Night
+					["sourceQuests"] = { 63728 },	-- Hunting Amid Houses
+					["provider"] = { "n", 177471 },	-- Huln Highmountain
+					["coord"] = { 42.8, 25.2, MALDRAXXUS },
+				}),
+				q(63645, {	-- The Dawnkeep Prisoner
+				--	i think this is only for characters who haven't already killed Denathrius, so will have to find a way to check it off for characters who aren't eligible
+					["sourceQuests"] = { 63644 },	-- Dread Tidings
+					["provider"] = { "n", 168898 },	-- Prince Renathal
+					["coord"] = { 22.9, 43.7, REVENDRETH },
+				}),
+				q(63656, {	-- The Meaning of Wrath
+					["sourceQuests"] = { 63654 },	-- The Nathrezim
+					["provider"] = { "n", 179978 },	-- The Accuser
+					["coord"] = { 23.1, 45.9, REVENDRETH },
+				}),
+				q(63654, {	-- The Nathrezim
+					["sourceQuests"] = { 63653 },	-- The Power of a Crown
+					["provider"] = { "n", 178337 },	-- The Stonewright
+					["coord"] = { 25.2, 45.1, REVENDRETH },
+				}),
+				q(63653, {	-- The Power of a Crown
+					["sourceQuests"] = {
+						63651,	-- Cryptograms
+						63652,	-- The "Unwelcome Guests",
+					},
+					["provider"] = { "n", 158653 },	-- Prince Renathal
+					["coord"] = { 51.1, 38.0, 1699 },	-- Sinfall Reaches
+				}),
+				q(63682, {	-- The Power of Elune
+					["sourceQuests"] = { 64042 },	-- Rituals of Night
+					["provider"] = { "n", 177434 },	-- Ysera
+					["coord"] = { 45.3, 64.8, ARDENWEALD },
+				}),
+				q(63647, {	-- The Unseen Guests
+					["sourceQuests"] = { 63646 },	-- Convoy of the Covenants
+					["provider"] = { "n", 165866 },	-- The Stonewright
+					["coord"] = { 34.3, 22.0, REVENDRETH },
+				}),
+				q(63683, {	-- Winter's Sigil
+					["sourceQuests"] = { 63682 },	-- The Power of Elune
+					["provider"] = { "n", 178669 },	-- Winter Queen
+					["coord"] = { 45.2, 65.1, ARDENWEALD },
+				}),
+				q(63677, {	-- You Can Only Die
+					["sourceQuests"] = { 63674 },	-- By Your Leave
+					["provider"] = { "n", 177435 },	-- Khaliiq
+					["coord"] = { 52.8, 68.6, MALDRAXXUS },
+				}),
+				q(63676, {	-- You Cannot Hide
+					["sourceQuests"] = { 63674 },	-- By Your Leave
+					["provider"] = { "n", 177435 },	-- Khaliiq
+					["coord"] = { 52.8, 68.6, MALDRAXXUS },
+				}),
+				q(63675, {	-- You Cannot Run
+					["sourceQuests"] = { 63674 },	-- By Your Leave
+					["provider"] = { "n", 177435 },	-- Khaliiq
+					["coord"] = { 52.8, 68.6, MALDRAXXUS },
+				}),
+
 
 
 				-- Bonus Objectives

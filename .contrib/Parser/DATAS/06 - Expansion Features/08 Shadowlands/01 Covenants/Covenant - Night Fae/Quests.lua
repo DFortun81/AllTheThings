@@ -14,8 +14,13 @@ _.ExpansionFeatures =
 			},
 			["g"] = {
 				n(QUESTS, sharedData({
-						["customCollect"] = { "SL_COV_NFA", },	-- Night Fae
-						}, {
+					["customCollect"] = { "SL_COV_NFA", },	-- Night Fae
+					}, {
+					q(63673, {	-- Hunting Amid Houses
+						["sourceQuests"] = { 63672 },	-- A Cry From the Heart
+						["provider"] = { "n", 160262 },	-- Ysera
+						["coord"] = { 44.3, 38.8, 1701 },	-- The Trunk
+					}),
 					-- These quests are not part of the covenant questline chapters, but are Night Fae only
 					q(61058, {	-- Bound in Dreams
 						-- SQ needs confirmation, but this is when i saw the quest pop up.  this happened at Renown 16 for me, even though the soulbind only requires Renown 9 and i had been back to the sanctum many times since hitting that level
@@ -50,9 +55,19 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 176096 },	-- Laurel
 						["coord"] = { 34.0, 37.0, 1701 },	-- The Trunk
 					}),
+					q(64085, {	-- Night Fae Tactician #2
+						["description"] = "Requires Renown 59.",
+						["provider"] = { "n", 176096 },	-- Laurel
+						["coord"] = { 34.0, 37.0, 1701 },	-- The Trunk
+					}),
 					q(63346, {	-- Night Fae Veteran
 						["sourceQuests"] = { 62899 },	-- The Endless Forest
 						["description"] = "Requires Renown 7.",
+						["provider"] = { "n", 176096 },	-- Laurel
+						["coord"] = { 34.0, 37.0, 1701 },	-- The Trunk
+					}),
+					q(64322, {	-- Night Fae Veteran #2
+						["description"] = "Requires Renown 43.",
 						["provider"] = { "n", 176096 },	-- Laurel
 						["coord"] = { 34.0, 37.0, 1701 },	-- The Trunk
 					}),
