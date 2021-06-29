@@ -1,6 +1,6 @@
 # AllTheThings
 
-## [SL-2.3.5](https://github.com/DFortun81/AllTheThings/tree/SL-2.3.5) (2021-06-28)
+## [SL-2.3.5](https://github.com/DFortun81/AllTheThings/tree/SL-2.3.5) (2021-06-29)
 [Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.3.4a...SL-2.3.5) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
 
 ### Highlight of this update
