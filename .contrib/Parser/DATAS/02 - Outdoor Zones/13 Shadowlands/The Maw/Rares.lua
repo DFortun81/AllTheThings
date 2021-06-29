@@ -346,6 +346,7 @@ _.Zones =
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 						i(186659),	-- Fallen Charger (MOUNT!)
+						i(186042),	-- Forsaken Crusader's Blade
 					},
 				}),
 				n(172523, {	-- Houndmaster Vasanok
