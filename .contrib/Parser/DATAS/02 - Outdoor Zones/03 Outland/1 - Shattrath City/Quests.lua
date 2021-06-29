@@ -85,7 +85,7 @@ _.Zones =
 						{ 60.6, 63.2, SHATTRATH_CITY },
 					},
 					["providers"] = {
-						{ "n", 23273 }, 	-- Arcanist Raestan
+						{ "n", 23273 },	-- Arcanist Raestan
 						{ "n", 23272 },	-- Arcanist Savan
 					},
 				}),

@@ -4,7 +4,7 @@
 
 -- TODO: reformat achievs here
 _.Instances = { tier(3, {	-- Wrath of the Lich King
-	inst(281, { 	-- The Nexus
+	inst(281, {	-- The Nexus
 		["lvl"] = 59,
 		["mapID"] = 129,
 		["maps"] = {
@@ -12,56 +12,56 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 		},
 		["groups"] = {
 			n(QUESTS, {
-				q(13094,{ 	-- Have They No Shame?
+				q(13094,{	-- Have They No Shame?
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 55537 },	-- Image of Warmage Kaitlyn
 					["g"] = {
-						i(43182), 	-- Cured Mammoth Hide Mantle
+						i(43182),	-- Cured Mammoth Hide Mantle
 						i(43181),	-- Shoulders of the Northern Lights
-						i(43184), 	-- Tundra Pauldrons
-						i(43183), 	-- Tundra Tracker's Shoulderguards
+						i(43184),	-- Tundra Pauldrons
+						i(43183),	-- Tundra Tracker's Shoulderguards
 					},
 				}),
-				q(13095,{ 	-- Have They No Shame?
+				q(13095,{	-- Have They No Shame?
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 55537 },	-- Image of Warmage Kaitlyn
 					["g"] = {
-						i(43182), 	-- Cured Mammoth Hide Mantle
+						i(43182),	-- Cured Mammoth Hide Mantle
 						i(43181),	-- Shoulders of the Northern Lights
-						i(43184), 	-- Tundra Pauldrons
-						i(43183), 	-- Tundra Tracker's Shoulderguards
+						i(43184),	-- Tundra Pauldrons
+						i(43183),	-- Tundra Tracker's Shoulderguards
 					},
 				}),
-				q(11905,{ 	-- Postponing the Inevitable
+				q(11905,{	-- Postponing the Inevitable
 					["provider"] = { "n", 55535 },	-- Image of Warmage Kaitlyn
 					["g"] = {
-						i(42763), 	-- Bindings of Sabotage
+						i(42763),	-- Bindings of Sabotage
 						i(42765),	-- Gauntlets of the Disturbed Giant
-						i(42761), 	-- Time-Stop Gloves
-						i(42758), 	-- Time-Twisted Wraps
+						i(42761),	-- Time-Stop Gloves
+						i(42758),	-- Time-Twisted Wraps
 					},
 				}),
-				q(11973,{ 	-- Prisoner of War
+				q(11973,{	-- Prisoner of War
 					["provider"] = { "n", 55531 },	-- Warmage Kaitlyn
 					["g"] = {
-						i(38223), 	-- Cloak of Azure Lights
+						i(38223),	-- Cloak of Azure Lights
 						i(38222),	-- Mantle of Keristrasza
-						i(38221), 	-- Shroud of Fluid Strikes
+						i(38221),	-- Shroud of Fluid Strikes
 					},
 				}),
-				q(11911,{ 	-- Quickening
+				q(11911,{	-- Quickening
 					["provider"] = { "n", 55536 },	-- Image of Warmage Kaitlyn
 					["g"] = {
-						i(42768), 	-- Boots of the Unbowed Protector
+						i(42768),	-- Boots of the Unbowed Protector
 						i(42767),	-- Invigorating Sabatons
-						i(42760), 	-- Sandals of Mystical Evolution
-						i(42766), 	-- Spiked Treads of Mutation
-						i(42762), 	-- Treads of Torn Future
+						i(42760),	-- Sandals of Mystical Evolution
+						i(42766),	-- Spiked Treads of Mutation
+						i(42762),	-- Treads of Torn Future
 					},
 				}),
 			}),
 			d(1, {	-- Normal
-				cr(26731, e(618, { 	-- Grand Magus Telestra
+				cr(26731, e(618, {	-- Grand Magus Telestra
 					{	-- The Nexus: Grand Magus Telestra
 						["achievementID"] = 478,	-- The Nexus
 						["criteriaID"] = 1,	-- Grand Magus Telestra
@@ -87,7 +87,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(35600),	-- Cleated Ice Boots
 					i(37150),	-- Rift Striders
 				})),
-				cr(26794, e(620, { 	-- Ormorok the Tree-Shaper
+				cr(26794, e(620, {	-- Ormorok the Tree-Shaper
 					{	-- The Nexus: Ormorok the Tree-Shaper
 						["achievementID"] = 478,	-- The Nexus
 						["criteriaID"] = 3,	-- Ormorok the Tree-Shaper
@@ -95,7 +95,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(35601),	-- Drakonid Arm Blade
 					i(35602),	-- Chiseled Stalagmite Pauldrons
 					i(37153),	-- Gloves of the Crystal Gardener
-					i(157559), 	-- Chilly Cinch
+					i(157559),	-- Chilly Cinch
 					i(37152),	-- Girdle of Ice
 					i(37155),	-- Frozen Forest Kilt
 					i(35603),	-- Greaves of the Blue Flight
@@ -135,7 +135,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(37731),	-- Opposed Stasis Leggings
 						i(37730),	-- Cleric's Linen Shoes
 					}))),
-					cr(26731, e(618, { 	-- Grand Magus Telestra
+					cr(26731, e(618, {	-- Grand Magus Telestra
 						{	-- Heroic: The Nexus: Grand Magus Telestra
 							["achievementID"] = 490,	-- Heroic: The Nexus
 							["criteriaID"] = 1,	-- Grand Magus Telestra
@@ -163,7 +163,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(35600),	-- Cleated Ice Boots
 						i(37150),	-- Rift Striders
 					})),
-					cr(26794, e(620, { 	-- Ormorok the Tree-Shaper
+					cr(26794, e(620, {	-- Ormorok the Tree-Shaper
 						{	-- Heroic: The Nexus: Ormorok the Tree-Shaper
 							["achievementID"] = 490,	-- Heroic: The Nexus
 							["criteriaID"] = 3,	-- Ormorok the Tree-Shaper
@@ -171,7 +171,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(35601),	-- Drakonid Arm Blade
 						i(35602),	-- Chiseled Stalagmite Pauldrons
 						i(37153),	-- Gloves of the Crystal Gardener
-						i(157559), 	-- Chilly Cinch
+						i(157559),	-- Chilly Cinch
 						i(37152),	-- Girdle of Ice
 						i(37155),	-- Frozen Forest Kilt
 						i(35603),	-- Greaves of the Blue Flight
@@ -249,11 +249,11 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					})),
 					cr(26794, e(620, {	-- Ormorok the Tree-Shaper
 						i(127574),	-- Drakonid Arm Blade [DJ Shows Anomalus, but it's actually Ormorok; #errors confirmed 5-29-18]
-						i(127575), 	-- Chiseled Stalagmite Pauldrons [DJ Shows Anomalus, but it's actually Ormorok; WoWHead 2019-07-24]
-						i(127590), 	-- Gloves of the Crystal Gardener [DJ Shows Anomalus, but it's actually Ormorok; WoWHead 2019-07-24]
-						i(127589), 	-- Girdle of Ice [DJ Shows Anomalus, but it's actually Ormorok; WoWHead 2019-07-24]
+						i(127575),	-- Chiseled Stalagmite Pauldrons [DJ Shows Anomalus, but it's actually Ormorok; WoWHead 2019-07-24]
+						i(127590),	-- Gloves of the Crystal Gardener [DJ Shows Anomalus, but it's actually Ormorok; WoWHead 2019-07-24]
+						i(127589),	-- Girdle of Ice [DJ Shows Anomalus, but it's actually Ormorok; WoWHead 2019-07-24]
 						i(127591),	-- Frozen Forest Kilt [DJ Shows Anomalus, but it's actually Ormorok; WoWHead 2019-07-24]
-						i(127602), 	-- Cavern Leather Treads [DJ Shows Anomalus, but it's actually Ormorok; WoWHead 2019-07-24]
+						i(127602),	-- Cavern Leather Treads [DJ Shows Anomalus, but it's actually Ormorok; WoWHead 2019-07-24]
 						i(127576),	-- Greaves of the Blue Flight [DJ Shows Anomalus, but it's actually Ormorok; WoWHead 2019-07-24]
 						i(127588),	-- Band of Frosted Thorns [DJ Shows Anomalus, but it's actually Ormorok; WoWHead 2019-07-24]
 					})),

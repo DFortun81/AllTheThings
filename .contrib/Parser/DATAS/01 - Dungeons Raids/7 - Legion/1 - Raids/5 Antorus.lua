@@ -479,7 +479,7 @@ _.Instances = { tier(7, {	-- Legion
 								{"isnt", "c"},	-- Exclude Tier Set Pieces
 								{"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 },
 								{"exclude", "itemID",
-									152094, 153115, 	-- Exclude Taeshalach, Scythe of the Unmaker
+									152094, 153115,	-- Exclude Taeshalach, Scythe of the Unmaker
 									154172, 154173, 154174, 154175, 154176, 154177,		-- All Argus Trinkets
 									155831,	-- Pantheon's Blessing
 								},
@@ -884,7 +884,7 @@ _.Instances = { tier(7, {	-- Legion
 								{"isnt", "c"},	-- Exclude Tier Set Pieces
 								{"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 },
 								{"exclude", "itemID",
-									152094, 153115, 	-- Exclude Taeshalach, Scythe of the Unmaker
+									152094, 153115,	-- Exclude Taeshalach, Scythe of the Unmaker
 									154172, 154173, 154174, 154175, 154176, 154177,		-- All Argus Trinkets
 									155831,	-- Pantheon's Blessing
 								},
@@ -1294,7 +1294,7 @@ _.Instances = { tier(7, {	-- Legion
 								{"isnt", "c"},	-- Exclude Tier Set Pieces
 								{"contains", "f", 1, 2, 3, 4, 5, 6, 7, 8, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 51, 52, 53, 54 },
 								{"exclude", "itemID",
-									152094, 153115, 155880, 	-- Exclude Taeshalach, Scythe of the Unmaker (Both)
+									152094, 153115, 155880,	-- Exclude Taeshalach, Scythe of the Unmaker (Both)
 									154172, 154173, 154174, 154175, 154176, 154177,		-- All Argus Trinkets
 									155831,	-- Pantheon's Blessing
 								},

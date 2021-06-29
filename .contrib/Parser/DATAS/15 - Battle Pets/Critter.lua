@@ -5,7 +5,7 @@
 _.BattlePets=
 {
 	n(-797,	{	-- Journal
-		pa(236, { 	-- Critter
+		pa(236, {	-- Critter
 			p(487),		-- Alpine Chipmunk
 			p(441),		-- Alpine Hare
 			p(2697),	-- Amethyst Softshell
@@ -55,7 +55,7 @@ _.BattlePets=
 			p(2664),	-- Experimental Roach
 			p(447),		-- Fawn
 			p(2956),	-- Feasting Larva
-			p(2113), 	-- Felclaw Marsuul
+			p(2113),	-- Felclaw Marsuul
 			p(415),		-- Fire Beetle
 			p(541),		-- Fire-Proof Roach
 			p(644),		-- Fjord Rat
@@ -115,7 +115,7 @@ _.BattlePets=
 			p(1943),	-- Noblegarden Bunny
 			p(323),		-- Nuts
 			p(1729),	-- Olivetail Hare
-			p(2116), 	-- Orphaned Marsuul
+			p(2116),	-- Orphaned Marsuul
 			un(20, p(159)),		-- Peanut
 			p(250),		-- Perky Pug
 			p(166),		-- Pint-Sized Pink Pachyderm

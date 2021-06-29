@@ -371,7 +371,7 @@ _.Zones =
 					["sourceQuests"] = { 31230 },	-- Welcome to Dawn's Blossom
 					["description"] = "Must be on or have completed |cFFFFD700The Double Hozen Dare|r to see this quest.  If you completed it without picking up this quest, you can find An Windfur running around Dawn's Blossom, rather than in the forest near the Lair of the Jade Witch.",
 					["provider"] = { "n", 55274 },	-- An Windfur
-					["coord"] = { 38.4, 46.2, 371 }, 	-- coordinates for the middle of the area where the quest is picked up.  not adding secondary Dawn's Blossom coordinates because i don't want it to look like you pick up both quests in town initially (description should suffice, since you only pick it up in town under specific circumstances)
+					["coord"] = { 38.4, 46.2, 371 },	-- coordinates for the middle of the area where the quest is picked up.  not adding secondary Dawn's Blossom coordinates because i don't want it to look like you pick up both quests in town initially (description should suffice, since you only pick it up in town under specific circumstances)
 					["g"] = {
 						i(88708),	-- An's Ring
 						i(88705),	-- Jade Smasher Band
@@ -1379,7 +1379,7 @@ _.Zones =
 						{ "n", 55234 },	-- An Windfur
 						{ "n", 55274 },	-- An Windfur
 					},
-					["coord"] = { 38.4, 46.2, 371 }, 	-- coordinates for the middle of the area where the quest is picked up
+					["coord"] = { 38.4, 46.2, 371 },	-- coordinates for the middle of the area where the quest is picked up
 					["g"] = {
 						i(82984),	-- Jade Raccoon
 					},
@@ -1765,7 +1765,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(80995),	-- Leather Tunic of Eniment Domain
 				i(80999),	-- Hide Tunic of Eminent Domain
 				i(81004),	-- Honorary Combat Engineer's Leather Trousers
-				i(81008), 	-- Honorary Combat Engineer's Hide Leggings
+				i(81008),	-- Honorary Combat Engineer's Hide Leggings
 				i(81013),	-- Landfall Leather Boots
 				i(81017),	-- Landfall Moccasins
 			}),

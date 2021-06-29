@@ -392,10 +392,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 					q(62054, {	-- Castle Nathria: Getting a Head [Normal]
 						-- TODO: verify if this is locked out/completed by higher difficulty skip
 						["provider"] = { "n", 172653 },	-- General Draven
-						-- ["altQuests"] = {
-						-- 	62055,	-- Castle Nathria: Getting a Head [Heroic]
-						-- 	62056,	-- Castle Nathria: Getting a Head [Mythic]
-						-- },
+						--["altQuests"] = {
+						--	62055,	-- Castle Nathria: Getting a Head [Heroic]
+						--	62056,	-- Castle Nathria: Getting a Head [Mythic]
+						--},
 					}),
 				}),
 				n(ZONEDROPS, {
@@ -757,9 +757,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 					q(62055, {	-- Castle Nathria: Getting a Head [Heroic]
 						-- TODO: verify if this is locked out/completed by higher difficulty skip
 						["provider"] = { "n", 172653 },	-- General Draven
-						-- ["altQuests"] = {
-						-- 	62056,	-- Castle Nathria: Getting a Head [Mythic]
-						-- },
+						--["altQuests"] = {
+						--	62056,	-- Castle Nathria: Getting a Head [Mythic]
+						--},
 					}),
 				}),
 				n(ZONEDROPS, {

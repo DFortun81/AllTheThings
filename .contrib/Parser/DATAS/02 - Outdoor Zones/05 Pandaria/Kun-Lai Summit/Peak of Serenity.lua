@@ -38,7 +38,7 @@ _.Zones =
 							i(89558),
 							i(89555),
 						}),
-						q(31836, { 	-- Continue Your Training: Master Yoon
+						q(31836, {	-- Continue Your Training: Master Yoon
 							i(89548),
 							i(89549),
 							i(89550),
@@ -70,7 +70,7 @@ _.Zones =
 						q(31843, {	-- Practice Makes Perfect: Master Yoon/lvl 50
 							["isDaily"] = true,
 						}),
-						q(31856), 	-- The Peak of Serenity - Begin Your Training
+						q(31856),	-- The Peak of Serenity - Begin Your Training
 						q(31989),	-- The Peak of Serenity - Complete Your Training/lvl 90
 						q(31859),	-- The Peak of Serenity - Continue Your Training/lvl 60
 						q(31860),	-- The Peak of Serenity - Continue Your Training/lvl 70

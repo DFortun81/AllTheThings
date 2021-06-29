@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(8, {	-- Battle for Azeroth
-	inst(1180, { 	-- Ny'alotha
+	inst(1180, {	-- Ny'alotha
 		["coords"] = {
 			{ 55.1, 43.8, 1527 },	-- Uldum
 			{ 41.6, 45.5, 1530 },	-- Vale of Eternal Blossoms

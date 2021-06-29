@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(7, {	-- Legion
-	inst(861, { 	-- Trial of Valor
+	inst(861, {	-- Trial of Valor
 		["isRaid"] = true,
 		["coord"] = { 70.4, 69.4, 634 },
 		["maps"] = { 806, 807, 808 },
@@ -159,7 +159,7 @@ _.Instances = { tier(7, {	-- Legion
 						}),
 					},
 				}),
-				ach(11394, { 	-- Trial of Valor
+				ach(11394, {	-- Trial of Valor
 					["crs"] = { 111246 },	-- Archmage Timear
 					["g"] = {
 						cr(114263, e(1819, {	-- Odyn

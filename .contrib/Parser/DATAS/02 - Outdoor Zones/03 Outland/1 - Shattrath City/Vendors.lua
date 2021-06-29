@@ -19,7 +19,7 @@ local TIER_FOUR_GROUPS = applyclassicphase(TBC_PHASE_ONE, {
 		i(29022, {	-- Warbringer Greaves
 			["cost"] = { { "i", 29767, 1 }, },	-- Leggings of the Fallen Defender
 		}),
-		
+
 		-- Protection
 		i(29011, {	-- Warbringer Greathelm
 			["cost"] = { { "i", 29761, 1 }, },	-- Helm of the Fallen Defender
@@ -54,7 +54,7 @@ local TIER_FOUR_GROUPS = applyclassicphase(TBC_PHASE_ONE, {
 		i(29074, {	-- Justicar Greaves
 			["cost"] = { { "i", 29766, 1 }, },	-- Leggings of the Fallen Champion
 		}),
-		
+
 		-- Holy
 		i(29061, {	-- Justicar Diadem
 			["cost"] = { { "i", 29760, 1 }, },	-- Helm of the Fallen Champion
@@ -71,7 +71,7 @@ local TIER_FOUR_GROUPS = applyclassicphase(TBC_PHASE_ONE, {
 		i(29063, {	-- Justicar Leggings
 			["cost"] = { { "i", 29766, 1 }, },	-- Leggings of the Fallen Champion
 		}),
-		
+
 		-- Protection
 		i(29068, {	-- Justicar Faceguard
 			["cost"] = { { "i", 29760, 1 }, },	-- Helm of the Fallen Champion
@@ -140,7 +140,7 @@ local TIER_FOUR_GROUPS = applyclassicphase(TBC_PHASE_ONE, {
 		i(29059, {	-- Leggings of the Incarnate
 			["cost"] = { { "i", 29767, 1 }, },	-- Leggings of the Fallen Defender
 		}),
-		
+
 		-- Holy
 		i(29049, {	-- Light-Collar of the Incarnate
 			["cost"] = { { "i", 29761, 1 }, },	-- Helm of the Fallen Defender
@@ -175,7 +175,7 @@ local TIER_FOUR_GROUPS = applyclassicphase(TBC_PHASE_ONE, {
 		i(29042, {	-- Cyclone War-Kilt
 			["cost"] = { { "i", 29766, 1 }, },	-- Leggings of the Fallen Champion
 		}),
-		
+
 		-- Elemental
 		i(29035, {	-- Cyclone Faceguard
 			["cost"] = { { "i", 29760, 1 }, },	-- Helm of the Fallen Champion
@@ -192,7 +192,7 @@ local TIER_FOUR_GROUPS = applyclassicphase(TBC_PHASE_ONE, {
 		i(29036, {	-- Cyclone Legguards
 			["cost"] = { { "i", 29766, 1 }, },	-- Leggings of the Fallen Champion
 		}),
-		
+
 		-- Restoration
 		i(29028, {	-- Cyclone Headdress
 			["cost"] = { { "i", 29760, 1 }, },	-- Helm of the Fallen Champion
@@ -261,7 +261,7 @@ local TIER_FOUR_GROUPS = applyclassicphase(TBC_PHASE_ONE, {
 		i(29094, {	-- Britches of Malorne
 			["cost"] = { { "i", 29767, 1 }, },	-- Leggings of the Fallen Defender
 		}),
-		
+
 		-- Feral
 		i(29098, {	-- Stag-Helm of Malorne
 			["cost"] = { { "i", 29761, 1 }, },	-- Helm of the Fallen Defender
@@ -278,7 +278,7 @@ local TIER_FOUR_GROUPS = applyclassicphase(TBC_PHASE_ONE, {
 		i(29099, {	-- Greaves of Malorne
 			["cost"] = { { "i", 29767, 1 }, },	-- Leggings of the Fallen Defender
 		}),
-		
+
 		-- Restoration
 		i(29086, {	-- Crown of Malorne
 			["cost"] = { { "i", 29761, 1 }, },	-- Helm of the Fallen Defender
@@ -424,7 +424,7 @@ local TIER_FIVE_GROUPS = applyclassicphase(TBC_PHASE_TWO, {
 		i(30153, {	-- Breeches of the Avatar
 			["cost"] = { { "i", 30246, 1 }, },	-- Leggings of the Vanquished Defender
 		}),
-		
+
 		i(30154, {	-- Mantle of the Avatar
 			["cost"] = { { "i", 30249, 1 }, },	-- Pauldrons of the Vanquished Defender
 		}),
@@ -686,59 +686,59 @@ _.Zones =
 						i(34935),	-- Aftershock Waistguard
 						i(34887),	-- Angelista's Revenge
 						i(34890),	-- Anveena's Touch
-						i(34904), 	-- Barbed Gloves of the Sage
-						i(34929), 	-- Belt of the Silent Path
-						i(34894), 	-- Blade of Serration
-						i(34947), 	-- Blue's Greaves of the Righteous Guardian
-						i(34919), 	-- Boots of Incantations
-						i(34942), 	-- Breastplate of Ire
-						i(34939), 	-- Chestplate of Stoicism
-						i(34932), 	-- Clutch of the Soothing Breeze
-						i(34937), 	-- Corrupted Soulcloth Pantaloons
-						i(34892), 	-- Crossbow of Relentless Strikes
-						i(34905), 	-- Crystalwind Leggings
-						i(34921), 	-- Ecclesiastical Cuirass
-						i(34906), 	-- Embrace of Everlasting Prowess
-						i(34903), 	-- Embrace of Starlight
-						i(34938), 	-- Enslaved Doomguard Soulgrips
+						i(34904),	-- Barbed Gloves of the Sage
+						i(34929),	-- Belt of the Silent Path
+						i(34894),	-- Blade of Serration
+						i(34947),	-- Blue's Greaves of the Righteous Guardian
+						i(34919),	-- Boots of Incantations
+						i(34942),	-- Breastplate of Ire
+						i(34939),	-- Chestplate of Stoicism
+						i(34932),	-- Clutch of the Soothing Breeze
+						i(34937),	-- Corrupted Soulcloth Pantaloons
+						i(34892),	-- Crossbow of Relentless Strikes
+						i(34905),	-- Crystalwind Leggings
+						i(34921),	-- Ecclesiastical Cuirass
+						i(34906),	-- Embrace of Everlasting Prowess
+						i(34903),	-- Embrace of Starlight
+						i(34938),	-- Enslaved Doomguard Soulgrips
 						i(34889),	-- Fused Nethergon Band
-						i(34916), 	-- Gauntless of Rapidity
-						i(34896), 	-- Gavel of Naaru Blessings
-						i(34944), 	-- Girdle of Seething Rage
-						i(34941), 	-- Girdle of the Fearless
-						i(34924), 	-- Gown of Spiritual Wonder
-						i(34922), 	-- Greaves of Pacification
-						i(34901), 	-- Grovewalker's Leggings
-						i(34911), 	-- Handwraps of the Aggressor
-						i(34933), 	-- Hauberk of Whirling Fury
-						i(34946), 	-- Inscribed Legplates of the Aldor
-						i(34914), 	-- Leggings of the Pursuit
-						i(34943), 	-- Legplates of the Unending Fury
-						i(34918), 	-- Legwraps of Sweltering Flame
-						i(34902), 	-- Oakleaf-Spun Handguards
+						i(34916),	-- Gauntless of Rapidity
+						i(34896),	-- Gavel of Naaru Blessings
+						i(34944),	-- Girdle of Seething Rage
+						i(34941),	-- Girdle of the Fearless
+						i(34924),	-- Gown of Spiritual Wonder
+						i(34922),	-- Greaves of Pacification
+						i(34901),	-- Grovewalker's Leggings
+						i(34911),	-- Handwraps of the Aggressor
+						i(34933),	-- Hauberk of Whirling Fury
+						i(34946),	-- Inscribed Legplates of the Aldor
+						i(34914),	-- Leggings of the Pursuit
+						i(34943),	-- Legplates of the Unending Fury
+						i(34918),	-- Legwraps of Sweltering Flame
+						i(34902),	-- Oakleaf-Spun Handguards
 						i(34888),	-- Ring of the Stalwart Protector
-						i(34931), 	-- Runed Scales of Antiquity
-						i(34934), 	-- Rushing Storm Kilt
-						i(34912), 	-- Scaled Drakeskin Chestguard
-						i(34895), 	-- Scryer's Blade of Focus
-						i(34945), 	-- Shattrah Protectorate's Breastplate
-						i(34900), 	-- Shroud of Nature's Harmony
-						i(34917), 	-- Shroud of the Lore`nial
-						i(34926), 	-- Slippers of Dutiful Mending
-						i(34898), 	-- Staff of the Forest Lord
-						i(34940), 	-- Sunguard Legplates
-						i(34949), 	-- Swift Blade of Uncertainty
-						i(34910), 	-- Tameless Breeches
-						i(34891), 	-- The Blade of Harbingers
-						i(34952), 	-- The Mutilator
-						i(34936), 	-- Tormented Demonsoul Robes
-						i(34928), 	-- Trousers of the Scryers' Retainer
-						i(34927), 	-- Tunic of the Dark Hour
-						i(34893), 	-- Vanir's Fist of Brutality
-						i(34951), 	-- Vanir's Fist of Carnage
-						i(34950), 	-- Vanir's Fist of Savagery
-						i(34923), 	-- Waistguard of Reparation
-						i(34930), 	-- Wave of Life Chestguard
+						i(34931),	-- Runed Scales of Antiquity
+						i(34934),	-- Rushing Storm Kilt
+						i(34912),	-- Scaled Drakeskin Chestguard
+						i(34895),	-- Scryer's Blade of Focus
+						i(34945),	-- Shattrah Protectorate's Breastplate
+						i(34900),	-- Shroud of Nature's Harmony
+						i(34917),	-- Shroud of the Lore`nial
+						i(34926),	-- Slippers of Dutiful Mending
+						i(34898),	-- Staff of the Forest Lord
+						i(34940),	-- Sunguard Legplates
+						i(34949),	-- Swift Blade of Uncertainty
+						i(34910),	-- Tameless Breeches
+						i(34891),	-- The Blade of Harbingers
+						i(34952),	-- The Mutilator
+						i(34936),	-- Tormented Demonsoul Robes
+						i(34928),	-- Trousers of the Scryers' Retainer
+						i(34927),	-- Tunic of the Dark Hour
+						i(34893),	-- Vanir's Fist of Brutality
+						i(34951),	-- Vanir's Fist of Carnage
+						i(34950),	-- Vanir's Fist of Savagery
+						i(34923),	-- Waistguard of Reparation
+						i(34930),	-- Wave of Life Chestguard
 					},
 				})),
 				n(23483, {	-- Arcanist Xorith
@@ -808,131 +808,131 @@ _.Zones =
 					["coord"] = { 50.8, 42.4, SHATTRATH_CITY },
 					["minReputation"] = { 935, NEUTRAL },	-- The Sha'tar, Neutral.
 					["groups"] = {
-						i(33585), 	-- Achromic Trousers of the Naaru
-						i(33810), 	-- Amani Mask of Death
-						i(33578), 	-- Armwraps of the Kaldorei Protector
-						i(29266), 	-- Azure-Shield of Coldarra
-						i(29373), 	-- Band of Halos
+						i(33585),	-- Achromic Trousers of the Naaru
+						i(33810),	-- Amani Mask of Death
+						i(33578),	-- Armwraps of the Kaldorei Protector
+						i(29266),	-- Azure-Shield of Coldarra
+						i(29373),	-- Band of Halos
 						i(33580),	-- Band of the Swift Paw
-						i(35326), 	-- Battlemaster's Alacrity
-						i(34049), 	-- Battlemaster's Audacity
-						i(34163), 	-- Battlemaster's Cruelty
-						i(34162), 	-- Battlemaster's Depravity
-						i(33832), 	-- Battlemaster's Determination
-						i(34050), 	-- Battlemaster's Perseverance
-						i(29375), 	-- Bishop's Cloak
-						i(33566), 	-- Blessed Elunite Coverings
-						i(29382), 	-- Blood Knight War Cloak
-						i(29383), 	-- Bloodlust Brooch
-						i(33501), 	-- Bloodthirster's Wargreaves
-						i(33517), 	-- Bonefist Gauntlets
-						i(33516), 	-- Bracers of the Ancient Phalanx
-						i(33296), 	-- Brooch of Deftness
-						i(33192), 	-- Carved Witch Doctor's Stick
-						i(33331), 	-- Chain of Unleashed Rage
-						i(33522), 	-- Chestguard of the Stoic Guardian
+						i(35326),	-- Battlemaster's Alacrity
+						i(34049),	-- Battlemaster's Audacity
+						i(34163),	-- Battlemaster's Cruelty
+						i(34162),	-- Battlemaster's Depravity
+						i(33832),	-- Battlemaster's Determination
+						i(34050),	-- Battlemaster's Perseverance
+						i(29375),	-- Bishop's Cloak
+						i(33566),	-- Blessed Elunite Coverings
+						i(29382),	-- Blood Knight War Cloak
+						i(29383),	-- Bloodlust Brooch
+						i(33501),	-- Bloodthirster's Wargreaves
+						i(33517),	-- Bonefist Gauntlets
+						i(33516),	-- Bracers of the Ancient Phalanx
+						i(33296),	-- Brooch of Deftness
+						i(33192),	-- Carved Witch Doctor's Stick
+						i(33331),	-- Chain of Unleashed Rage
+						i(33522),	-- Chestguard of the Stoic Guardian
 						i(29381),	-- Choker of Vile Intent
 						i(35321),	-- Cloak of Arcane Alacrity
-						i(33304), 	-- Cloak of Subjugated Power
-						i(35324), 	-- Cloak of Swift Reprieve
-						i(32088), 	-- Cowl of Beastly Rage
-						i(32090), 	-- Cowl of Naaru Blessings
-						i(33484), 	-- Dory's Embrace
-						i(33535), 	-- Earthquake Bracers
-						i(29376), 	-- Essence of the Martyr
-						i(33513), 	-- Eternium Rage-Shackles
-						i(32083), 	-- Faceguard of Domination
-						i(29385), 	-- Farstrider Defender's Cloak
-						i(33334), 	-- Fetish of the Primal Gods
-						i(29270), 	-- Flametongue Seal
-						i(33582), 	-- Footwraps of Wild Encroachment
-						i(33512), 	-- Furious Deathgrips
+						i(33304),	-- Cloak of Subjugated Power
+						i(35324),	-- Cloak of Swift Reprieve
+						i(32088),	-- Cowl of Beastly Rage
+						i(32090),	-- Cowl of Naaru Blessings
+						i(33484),	-- Dory's Embrace
+						i(33535),	-- Earthquake Bracers
+						i(29376),	-- Essence of the Martyr
+						i(33513),	-- Eternium Rage-Shackles
+						i(32083),	-- Faceguard of Domination
+						i(29385),	-- Farstrider Defender's Cloak
+						i(33334),	-- Fetish of the Primal Gods
+						i(29270),	-- Flametongue Seal
+						i(33582),	-- Footwraps of Wild Encroachment
+						i(33512),	-- Furious Deathgrips
 						i(33557),	-- Gargon's Bracers of Peaceful Slumber
 						i(33528),	-- Gauntlets of Sniping
-						i(33524), 	-- Girdle of the Protector
-						i(33532), 	-- Gleaming Earthen Bracers
-						i(33287), 	-- Gnarled Ironwood Pauldrons
-						i(29387), 	-- Gnomeregan Auto-Dodger 600
-						i(33974), 	-- Grasp of the Moonkin
-						i(33534), 	-- Grips of Nature's Wrath
-						i(33519), 	-- Handguards of the Templar
-						i(33965), 	-- Hauberk of the Furious Elements
-						i(32084), 	-- Helmet of the Steadfast Champion
-						i(33518), 	-- High Justicar's Legplates
-						i(29370), 	-- Icon of the Silver Crescent
-						i(33207), 	-- Implacable Guardian Sabatons
-						i(30770), 	-- Inferno Forged Boots
-						i(30774), 	-- Inferno Forged Gloves
-						i(30773), 	-- Inferno Forged Hauberk
-						i(30772), 	-- Inferno Forged Leggings
-						i(30779), 	-- Inferno Hardened Boots
-						i(30776), 	-- Inferno Hardened Chestguard
-						i(30780), 	-- Inferno Hardened Gloves
-						i(30778), 	-- Inferno Hardened Leggings
-						i(30768), 	-- Inferno Tempered Boots
-						i(30769), 	-- Inferno Tempered Chestguard
-						i(30767), 	-- Inferno Tempered Gauntlets
-						i(30766), 	-- Inferno Tempered Leggings
-						i(30763), 	-- Infernoweave Boots
-						i(30764), 	-- Infernoweave Gloves
-						i(30761), 	-- Infernoweave Leggings
-						i(30762), 	-- Infernoweave Robe
-						i(33279), 	-- Iron-Tusk Girdle
-						i(29273), 	-- Khadgar's Knapsack
-						i(33333), 	-- Kharmaa's Shroud of Hope
-						i(29267), 	-- Light-Bearer's Faith Shield
-						i(33587), 	-- Light-Blessed Bonds
-						i(33386), 	-- Man'kin'do's Belt
-						i(32089), 	-- Mana-Binders Cowl
-						i(29368), 	-- Manasurge Pendant
-						i(33972), 	-- Mask of Primal Power
-						i(32087), 	-- Mask of the Deceiver
-						i(33540), 	-- Master Assassin Wristwraps
-						i(29268), 	-- Mazthoril Honor Shield
-						i(33577), 	-- Moon-Walkers
-						i(33530), 	-- Natural Life Leggings
-						i(29374), 	-- Necklace of Eternal Hope
-						i(29386), 	-- Necklace of the Juggernaut
+						i(33524),	-- Girdle of the Protector
+						i(33532),	-- Gleaming Earthen Bracers
+						i(33287),	-- Gnarled Ironwood Pauldrons
+						i(29387),	-- Gnomeregan Auto-Dodger 600
+						i(33974),	-- Grasp of the Moonkin
+						i(33534),	-- Grips of Nature's Wrath
+						i(33519),	-- Handguards of the Templar
+						i(33965),	-- Hauberk of the Furious Elements
+						i(32084),	-- Helmet of the Steadfast Champion
+						i(33518),	-- High Justicar's Legplates
+						i(29370),	-- Icon of the Silver Crescent
+						i(33207),	-- Implacable Guardian Sabatons
+						i(30770),	-- Inferno Forged Boots
+						i(30774),	-- Inferno Forged Gloves
+						i(30773),	-- Inferno Forged Hauberk
+						i(30772),	-- Inferno Forged Leggings
+						i(30779),	-- Inferno Hardened Boots
+						i(30776),	-- Inferno Hardened Chestguard
+						i(30780),	-- Inferno Hardened Gloves
+						i(30778),	-- Inferno Hardened Leggings
+						i(30768),	-- Inferno Tempered Boots
+						i(30769),	-- Inferno Tempered Chestguard
+						i(30767),	-- Inferno Tempered Gauntlets
+						i(30766),	-- Inferno Tempered Leggings
+						i(30763),	-- Infernoweave Boots
+						i(30764),	-- Infernoweave Gloves
+						i(30761),	-- Infernoweave Leggings
+						i(30762),	-- Infernoweave Robe
+						i(33279),	-- Iron-Tusk Girdle
+						i(29273),	-- Khadgar's Knapsack
+						i(33333),	-- Kharmaa's Shroud of Hope
+						i(29267),	-- Light-Bearer's Faith Shield
+						i(33587),	-- Light-Blessed Bonds
+						i(33386),	-- Man'kin'do's Belt
+						i(32089),	-- Mana-Binders Cowl
+						i(29368),	-- Manasurge Pendant
+						i(33972),	-- Mask of Primal Power
+						i(32087),	-- Mask of the Deceiver
+						i(33540),	-- Master Assassin Wristwraps
+						i(29268),	-- Mazthoril Honor Shield
+						i(33577),	-- Moon-Walkers
+						i(33530),	-- Natural Life Leggings
+						i(29374),	-- Necklace of Eternal Hope
+						i(29386),	-- Necklace of the Juggernaut
 						i(30183),	-- Nether Vortex
-						i(33222), 	-- Nyn'jah's Tabi Boots
-						i(29272), 	-- Orb of the Soul-Eater
-						i(33584), 	-- Pantaloons of Arcane Annihilation
-						i(33552), 	-- Pants of Splendid Recovery
-						i(33514), 	-- Pauldrons of Gruesome Fate
-						i(33970), 	-- Pauldrons of the Furious Elements
-						i(33973), 	-- Pauldrons of Tribal Fury
-						i(33531), 	-- Polished Waterscale Gloves
+						i(33222),	-- Nyn'jah's Tabi Boots
+						i(29272),	-- Orb of the Soul-Eater
+						i(33584),	-- Pantaloons of Arcane Annihilation
+						i(33552),	-- Pants of Splendid Recovery
+						i(33514),	-- Pauldrons of Gruesome Fate
+						i(33970),	-- Pauldrons of the Furious Elements
+						i(33973),	-- Pauldrons of Tribal Fury
+						i(33531),	-- Polished Waterscale Gloves
 						i(23572),	-- Primal Nether
-						i(29379), 	-- Ring of Arathi Warlords
+						i(29379),	-- Ring of Arathi Warlords
 						i(29367),	-- Ring of Cryptic Dreams
 						i(29384),	-- Ring of Unyielding Force
-						i(33588), 	-- Runed Spell-Cuffs
-						i(33523), 	-- Sabatons of the Righteous Defender
-						i(29269), 	-- Sapphiron's Wing Bone
-						i(29275), 	-- Searing Sunblade
-						i(33538), 	-- Shallow-Grave Trousers
+						i(33588),	-- Runed Spell-Cuffs
+						i(33523),	-- Sabatons of the Righteous Defender
+						i(29269),	-- Sapphiron's Wing Bone
+						i(29275),	-- Searing Sunblade
+						i(33538),	-- Shallow-Grave Trousers
 						i(29369),	-- Shawl of Shifting Probabilities
-						i(33527), 	-- Shifting Camouflage Pants
-						i(33593), 	-- Slikk's Cloak of Placation
-						i(33559), 	-- Starfire Waistband
-						i(33529), 	-- Steadying Bracers
-						i(32086), 	-- Storm Master's Helmet
-						i(33536), 	-- Stormwrap
-						i(33586), 	-- Studious Wraps
-						i(29271), 	-- Talisman of Kalecgos
-						i(29274), 	-- Tears of Heaven
-						i(33537), 	-- Treads of Booming Thunder
-						i(33324), 	-- Treads of the Life Path
-						i(33539), 	-- Trickster's Stickyfingers
-						i(33515), 	-- Unwavering Legguards
-						i(33520), 	-- Vambraces of the Naaru
-						i(33579), 	-- Vestments of Hibernation
-						i(33325), 	-- Voodoo Shaker
-						i(33291), 	-- Voodoo-Woven Belt
-						i(33583), 	-- Waistguard of the Great Beast
-						i(33280), 	-- War-Feathered Loop
-						i(32085), 	-- Warpstalker Helm
-						i(33589), 	-- Wristguards of Tranquil Thought
+						i(33527),	-- Shifting Camouflage Pants
+						i(33593),	-- Slikk's Cloak of Placation
+						i(33559),	-- Starfire Waistband
+						i(33529),	-- Steadying Bracers
+						i(32086),	-- Storm Master's Helmet
+						i(33536),	-- Stormwrap
+						i(33586),	-- Studious Wraps
+						i(29271),	-- Talisman of Kalecgos
+						i(29274),	-- Tears of Heaven
+						i(33537),	-- Treads of Booming Thunder
+						i(33324),	-- Treads of the Life Path
+						i(33539),	-- Trickster's Stickyfingers
+						i(33515),	-- Unwavering Legguards
+						i(33520),	-- Vambraces of the Naaru
+						i(33579),	-- Vestments of Hibernation
+						i(33325),	-- Voodoo Shaker
+						i(33291),	-- Voodoo-Woven Belt
+						i(33583),	-- Waistguard of the Great Beast
+						i(33280),	-- War-Feathered Loop
+						i(32085),	-- Warpstalker Helm
+						i(33589),	-- Wristguards of Tranquil Thought
 					},
 				}),
 				n(22213, {	-- Gidge Spellweaver <Spellfire Tailoring Specialist>

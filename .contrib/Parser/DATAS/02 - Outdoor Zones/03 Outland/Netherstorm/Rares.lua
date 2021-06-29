@@ -6,7 +6,7 @@ _.Zones =
 	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(NETHERSTORM, {
 			n(RARES, {
-				n(18697, { 	-- Chief Engineer Lorthander
+				n(18697, {	-- Chief Engineer Lorthander
 					["coords"] = {
 						{ 26.8, 36.0, NETHERSTORM },
 						{ 27.4, 38.6, NETHERSTORM },
@@ -30,7 +30,7 @@ _.Zones =
 						i(31201),	-- Illidari Cloak
 					},
 				}),
-				n(18698, { 	-- Ever-Core the Punisher
+				n(18698, {	-- Ever-Core the Punisher
 					["coords"] = {
 						{ 20.6, 68.2, NETHERSTORM },
 						{ 21.2, 76.4, NETHERSTORM },
@@ -52,7 +52,7 @@ _.Zones =
 						i(31203),	-- Arcane Loop
 					},
 				}),
-				n(20932, { 	-- Nuramoc
+				n(20932, {	-- Nuramoc
 					["coords"] = {
 						{ 23.2, 78.8, NETHERSTORM },
 						{ 26.8, 81.4, NETHERSTORM },

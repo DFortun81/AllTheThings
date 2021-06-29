@@ -367,9 +367,9 @@ _.Achievements =
 				}),
 			}),
 			ach(14767, {	-- Count Your Blessings
-				crit(1), 		-- Purified Blessing of Grace
-				crit(2), 		-- Purified Blessing of Power
-				crit(3), 		-- Purified Blessing of Fortitude
+				crit(1),		-- Purified Blessing of Grace
+				crit(2),		-- Purified Blessing of Power
+				crit(3),		-- Purified Blessing of Fortitude
 			}),
 			ach(14788, {	-- Fractured Faerie Tales
 				crit(1),		-- A Meandering Story

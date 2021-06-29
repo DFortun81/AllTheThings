@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(3, {	-- Wrath of the Lich King
-	inst(759, { 	-- Ulduar
+	inst(759, {	-- Ulduar
 		["isRaid"] = true,
 		["lvl"] = 80,
 		["mapID"] = 147,
@@ -41,7 +41,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						q(13629, {	-- Val'anyr, Hammer of Ancient Kings
 							["sourceQuest"] = 13622,	-- Ancient History
 							["g"] = {
-								i(46017) 	-- Val'anyr, Hammer of Ancient Kings
+								i(46017)	-- Val'anyr, Hammer of Ancient Kings
 							},
 						}),
 					})
@@ -1398,7 +1398,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(46239),	-- Darkruned Legplates
 				i(46240),	-- Darkruned Pauldrons
 				i(46241),	-- Darkruned Shoulderplates
-			
+
 			}),
 			cl(DRUID, {
 				i(45350),	-- Nightsong Cover

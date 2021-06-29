@@ -5,10 +5,10 @@
 _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 {
 	holiday(235485, {	-- Feast of Winter Veil
-		n(54519, { 	-- Winter Veil Tree
+		n(54519, {	-- Winter Veil Tree
 			["modelScale"] = 5,
 			["g"] = {
-				q(8744, { 	-- A Carefully Wrapped Present
+				q(8744, {	-- A Carefully Wrapped Present
 					["isYearly"] = true,
 					["g"] = {
 						i(21191, {	-- Carefully Wrapped Present
@@ -29,7 +29,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 						}),
 					},
 				}),
-				q(8768, { 	-- A Gaily Wrapped Present
+				q(8768, {	-- A Gaily Wrapped Present
 					["isYearly"] = true,
 					["lvl"] = 20,
 					["g"] = {
@@ -41,7 +41,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 						}),
 					},
 				}),
-				q(50420, { 	-- A Gently Shaken Gift
+				q(50420, {	-- A Gently Shaken Gift
 					["isYearly"] = true,
 					["lvl"] = 10,
 					["g"] = {
@@ -137,7 +137,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 						}),
 					},
 				}),
-				q(8769, { 	-- A Ticking Present
+				q(8769, {	-- A Ticking Present
 					["isYearly"] = true,
 					["lvl"] = 40,
 					["g"] = {
@@ -155,7 +155,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 						}),
 					},
 				}),
-				q(47751, { 	-- A Winter Veil Gift
+				q(47751, {	-- A Winter Veil Gift
 					["isYearly"] = true,
 					["lvl"] = 10,
 					["g"] = {

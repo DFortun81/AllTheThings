@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(875, { 	-- Zandalar
+	m(875, {	-- Zandalar
 		m(1163, {	-- Dazar'alor
 			["isRaid"] = true,
 			["achievementID"] = 12559,	-- Explore Zuldazar

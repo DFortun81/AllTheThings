@@ -159,7 +159,7 @@ _.Zones =
 					["coord"] = { 75.8, 62.0, 550 },
 					["g"] = {
 						i(116635),	-- Howling Mace
-						i(116636), 	-- Oshu'gun Scepter
+						i(116636),	-- Oshu'gun Scepter
 					},
 				}),
 				o(233218, {	-- Adventurer's Pack

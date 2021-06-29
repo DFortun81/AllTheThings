@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(3, {	-- Wrath of the Lich King
-	inst(761, { 	-- The Ruby Sanctum
+	inst(761, {	-- The Ruby Sanctum
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 80,

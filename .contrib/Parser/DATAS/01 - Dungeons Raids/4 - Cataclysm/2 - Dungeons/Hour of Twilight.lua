@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(4, {	-- Cataclysm
-	inst(186, { 	-- Hour of Twilight
+	inst(186, {	-- Hour of Twilight
 		["lvl"] = 85,
 		["mapID"] = 399,
 		["maps"] = { 400 },
@@ -66,7 +66,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 				i(72850),	-- Surestride Boots
 				i(72849),	-- Wayfinder Boots
 			})),
-			cr(54968, e(342, { 	-- Asira Dawnslayer
+			cr(54968, e(342, {	-- Asira Dawnslayer
 				i(72860),	-- Mandible of the Old Ones
 				i(72855),	-- Corrupted Carapace
 				i(72859),	-- Dawnslayer Helm

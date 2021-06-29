@@ -25,7 +25,7 @@ _.Zones =
 				p(420, {	-- Toad
 					["crs"] = { 61369 },	-- Toad
 				}),
-				q(31924, { 	-- Narrok
+				q(31924, {	-- Narrok
 					["isDaily"] = true,
 					["coord"] = { 61.0, 49.4, NAGRAND },
 					["provider"] = { "n", 66552 },	-- Narrok <Master Pet Tamer>

@@ -488,7 +488,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(109828),	-- Felflame Belt
 						i(109825),	-- Frost-Touched Cord
 						i(109839),	-- Goldsteel Belt
-						i(109840), 	-- Gutcrusher Greatbelt
+						i(109840),	-- Gutcrusher Greatbelt
 						i(109837),	-- Incarnadine Girdle
 						i(109836),	-- Lavalink Girdle
 						i(109832),	-- Leafmender Girdle
@@ -553,7 +553,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							i(109828),	-- Felflame Belt
 							i(109825),	-- Frost-Touched Cord
 							i(109839),	-- Goldsteel Belt
-							i(109840), 	-- Gutcrusher Greatbelt
+							i(109840),	-- Gutcrusher Greatbelt
 							i(109837),	-- Incarnadine Girdle
 							i(109836),	-- Lavalink Girdle
 							i(109832),	-- Leafmender Girdle
@@ -848,7 +848,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(109828),	-- Felflame Belt
 						i(109825),	-- Frost-Touched Cord
 						i(109839),	-- Goldsteel Belt
-						i(109840), 	-- Gutcrusher Greatbelt
+						i(109840),	-- Gutcrusher Greatbelt
 						i(109837),	-- Incarnadine Girdle
 						i(109836),	-- Lavalink Girdle
 						i(109832),	-- Leafmender Girdle
@@ -1126,7 +1126,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						i(109828),	-- Felflame Belt
 						i(109825),	-- Frost-Touched Cord
 						i(109839),	-- Goldsteel Belt
-						i(109840), 	-- Gutcrusher Greatbelt
+						i(109840),	-- Gutcrusher Greatbelt
 						i(109837),	-- Incarnadine Girdle
 						i(109836),	-- Lavalink Girdle
 						i(109832),	-- Leafmender Girdle

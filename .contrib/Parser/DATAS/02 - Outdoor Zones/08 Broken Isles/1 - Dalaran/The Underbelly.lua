@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(619, { 	-- The Broken Isles
-		m(627, { 	-- Dalaran
+	m(619, {	-- The Broken Isles
+		m(627, {	-- Dalaran
 			n(-213, {	-- The Underbelly
 				n(ACHIEVEMENTS, {
 					currency(1149, {	-- Sightless Eyes
@@ -78,7 +78,7 @@ _.Zones =
 							}),
 						},
 					}),
-					n(97364, { 	-- Laura Malley <Creatures>
+					n(97364, {	-- Laura Malley <Creatures>
 						["coord"] = { 58.0, 58.1, 628 },
 						["g"] = {
 							i(137932, {	-- Recipe: Flaming Hoop

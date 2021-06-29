@@ -10,7 +10,7 @@ _.Zones =
 				["groups"] = {
 					i(144309),	-- Formula: Enchant Neck - Mark of the Master (Rank 2)
 					i(137717, {	-- Schematic: Double-Barreled Cranial Cannon (Rank 3)
-						["crs"] = { 111393 }, 	-- Deathcaller Mystic
+						["crs"] = { 111393 },	-- Deathcaller Mystic
 					}),
 					i(136701),	-- Schematic: Shockinator
 					i(137729),	-- Technique: Codex of the Tranquil Mind

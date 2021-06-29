@@ -444,130 +444,130 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["coord"] = { 38.2, 72.6, ORGRIMMAR },
 					["g"] = pvp({
-						i(28377), 	-- Sergeant's Heavy Cloak
-						i(28378), 	-- Sergeant's Heavy Cape
-						i(16486), 	-- First Sergeant's Silk Cuffs
-						i(16497), 	-- First Sergeant's Leather Armguards
-						i(16532), 	-- First Sergeant's Mail Wristguards
-						i(16533), 	-- Warlord's Silk Cowl
-						i(16534), 	-- General's Silk Trousers
-						i(16535), 	-- Warlord's Silk Raiment
-						i(16536), 	-- Warlord's Silk Amice
-						i(16539), 	-- General's Silk Boots
-						i(16540), 	-- General's Silk Handguards
-						i(16541), 	-- Warlord's Plate Armor
-						i(16542), 	-- Warlord's Plate Headpiece
-						i(16543), 	-- General's Plate Leggings
-						i(16544), 	-- Warlord's Plate Shoulders
-						i(16545), 	-- General's Plate Boots
-						i(16548), 	-- General's Plate Gauntlets
-						i(16549), 	-- Warlord's Dragonhide Hauberk
-						i(16550), 	-- Warlord's Dragonhide Helmet
-						i(16551), 	-- Warlord's Dragonhide Epaulets
-						i(16552), 	-- General's Dragonhide Leggings
-						i(16554), 	-- General's Dragonhide Boots
-						i(16555), 	-- General's Dragonhide Gloves
-						i(16558), 	-- General's Leather Treads
-						i(16560), 	-- General's Leather Mitts
-						i(16561), 	-- Warlord's Leather Helm
-						i(16562), 	-- Warlord's Leather Spaulders
-						i(16563), 	-- Warlord's Leather Breastplate
-						i(16564), 	-- General's Leather Legguards
-						i(16565), 	-- Warlord's Chain Chestpiece
-						i(16566), 	-- Warlord's Chain Helmet
-						i(16567), 	-- General's Chain Legguards
-						i(16568), 	-- Warlord's Chain Shoulders
-						i(16569), 	-- General's Chain Boots
-						i(16571), 	-- General's Chain Gloves
-						i(16573), 	-- General's Mail Boots
-						i(16574), 	-- General's Mail Gauntlets
-						i(16577), 	-- Warlord's Mail Armor
-						i(16578), 	-- Warlord's Mail Helm
-						i(16579), 	-- General's Mail Leggings
-						i(16580), 	-- Warlord's Mail Spaulders
-						i(17586), 	-- General's Dreadweave Boots
-						i(17588), 	-- General's Dreadweave Gloves
-						i(17590), 	-- Warlord's Dreadweave Mantle
-						i(17591), 	-- Warlord's Dreadweave Hood
-						i(17592), 	-- Warlord's Dreadweave Robe
-						i(17593), 	-- General's Dreadweave Pants
-						i(17618), 	-- General's Satin Boots
-						i(17620), 	-- General's Satin Gloves
-						i(17622), 	-- Warlord's Satin Mantle
-						i(17623), 	-- Warlord's Satin Cowl
-						i(17624), 	-- Warlord's Satin Robes
-						i(17625), 	-- General's Satin Leggings
-						i(18429), 	-- First Sergeant's Plate Bracers
-						i(18434), 	-- First Sergeant's Dragonhide Armguards
-						i(18461), 	-- Sergeant's Cloak
-						i(22843), 	-- Blood Guard's Chain Greaves
-						i(22852), 	-- Blood Guard's Dragonhide Treads
-						i(22855), 	-- Blood Guard's Dreadweave Walkers
-						i(22856), 	-- Blood Guard's Leather Walkers
-						i(22857), 	-- Blood Guard's Mail Greaves
-						i(22858), 	-- Blood Guard's Plate Greaves
-						i(22859), 	-- Blood Guard's Satin Walkers
-						i(22860), 	-- Blood Guard's Silk Walkers
-						i(22862), 	-- Blood Guard's Chain Vices
-						i(22863), 	-- Blood Guard's Dragonhide Grips
-						i(22864), 	-- Blood Guard's Leather Grips
+						i(28377),	-- Sergeant's Heavy Cloak
+						i(28378),	-- Sergeant's Heavy Cape
+						i(16486),	-- First Sergeant's Silk Cuffs
+						i(16497),	-- First Sergeant's Leather Armguards
+						i(16532),	-- First Sergeant's Mail Wristguards
+						i(16533),	-- Warlord's Silk Cowl
+						i(16534),	-- General's Silk Trousers
+						i(16535),	-- Warlord's Silk Raiment
+						i(16536),	-- Warlord's Silk Amice
+						i(16539),	-- General's Silk Boots
+						i(16540),	-- General's Silk Handguards
+						i(16541),	-- Warlord's Plate Armor
+						i(16542),	-- Warlord's Plate Headpiece
+						i(16543),	-- General's Plate Leggings
+						i(16544),	-- Warlord's Plate Shoulders
+						i(16545),	-- General's Plate Boots
+						i(16548),	-- General's Plate Gauntlets
+						i(16549),	-- Warlord's Dragonhide Hauberk
+						i(16550),	-- Warlord's Dragonhide Helmet
+						i(16551),	-- Warlord's Dragonhide Epaulets
+						i(16552),	-- General's Dragonhide Leggings
+						i(16554),	-- General's Dragonhide Boots
+						i(16555),	-- General's Dragonhide Gloves
+						i(16558),	-- General's Leather Treads
+						i(16560),	-- General's Leather Mitts
+						i(16561),	-- Warlord's Leather Helm
+						i(16562),	-- Warlord's Leather Spaulders
+						i(16563),	-- Warlord's Leather Breastplate
+						i(16564),	-- General's Leather Legguards
+						i(16565),	-- Warlord's Chain Chestpiece
+						i(16566),	-- Warlord's Chain Helmet
+						i(16567),	-- General's Chain Legguards
+						i(16568),	-- Warlord's Chain Shoulders
+						i(16569),	-- General's Chain Boots
+						i(16571),	-- General's Chain Gloves
+						i(16573),	-- General's Mail Boots
+						i(16574),	-- General's Mail Gauntlets
+						i(16577),	-- Warlord's Mail Armor
+						i(16578),	-- Warlord's Mail Helm
+						i(16579),	-- General's Mail Leggings
+						i(16580),	-- Warlord's Mail Spaulders
+						i(17586),	-- General's Dreadweave Boots
+						i(17588),	-- General's Dreadweave Gloves
+						i(17590),	-- Warlord's Dreadweave Mantle
+						i(17591),	-- Warlord's Dreadweave Hood
+						i(17592),	-- Warlord's Dreadweave Robe
+						i(17593),	-- General's Dreadweave Pants
+						i(17618),	-- General's Satin Boots
+						i(17620),	-- General's Satin Gloves
+						i(17622),	-- Warlord's Satin Mantle
+						i(17623),	-- Warlord's Satin Cowl
+						i(17624),	-- Warlord's Satin Robes
+						i(17625),	-- General's Satin Leggings
+						i(18429),	-- First Sergeant's Plate Bracers
+						i(18434),	-- First Sergeant's Dragonhide Armguards
+						i(18461),	-- Sergeant's Cloak
+						i(22843),	-- Blood Guard's Chain Greaves
+						i(22852),	-- Blood Guard's Dragonhide Treads
+						i(22855),	-- Blood Guard's Dreadweave Walkers
+						i(22856),	-- Blood Guard's Leather Walkers
+						i(22857),	-- Blood Guard's Mail Greaves
+						i(22858),	-- Blood Guard's Plate Greaves
+						i(22859),	-- Blood Guard's Satin Walkers
+						i(22860),	-- Blood Guard's Silk Walkers
+						i(22862),	-- Blood Guard's Chain Vices
+						i(22863),	-- Blood Guard's Dragonhide Grips
+						i(22864),	-- Blood Guard's Leather Grips
 						i(22852),	-- Blood Guard's Leather Treads
-						i(22865), 	-- Blood Guard's Dreadweave Handwraps
-						i(22867), 	-- Blood Guard's Mail Vices
-						i(22868), 	-- Blood Guard's Plate Gauntlets
-						i(22869), 	-- Blood Guard's Satin Handwraps
-						i(22870), 	-- Blood Guard's Silk Handwraps
-						i(22872), 	-- Legionnaire's Plate Hauberk
-						i(22873), 	-- Legionnaire's Plate Leggings
-						i(22874), 	-- Legionnaire's Chain Hauberk
-						i(22875), 	-- Legionnaire's Chain Legguards
-						i(22876), 	-- Legionnaire's Mail Hauberk
-						i(22877), 	-- Legionnaire's Dragonhide Chestpiece
-						i(22878), 	-- Legionnaire's Dragonhide Leggings
-						i(22879), 	-- Legionnaire's Leather Chestpiece
-						i(22880), 	-- Legionnaire's Leather Legguards
-						i(22881), 	-- Legionnaire's Dreadweave Legguards
-						i(22882), 	-- Legionnaire's Satin Legguards
-						i(22883), 	-- Legionnaire's Silk Legguards
-						i(22884), 	-- Legionnaire's Dreadweave Tunic
-						i(22885), 	-- Legionnaire's Satin Tunic
-						i(22886), 	-- Legionnaire's Silk Tunic
-						i(22887), 	-- Legionnaire's Mail Legguards
-						i(23243), 	-- Champion's Plate Shoulders
-						i(23244), 	-- Champion's Plate Helm
-						i(23251), 	-- Champion's Chain Helm
-						i(23252), 	-- Champion's Chain Shoulders
-						i(23253), 	-- Champion's Dragonhide Headguard
-						i(23254), 	-- Champion's Dragonhide Shoulders
-						i(23255), 	-- Champion's Dreadweave Cowl
-						i(23256), 	-- Champion's Dreadweave Spaulders
-						i(23257), 	-- Champion's Leather Helm
-						i(23258), 	-- Champion's Leather Shoulders
-						i(23259), 	-- Champion's Mail Headguard
-						i(23260), 	-- Champion's Mail Pauldrons
-						i(23261), 	-- Champion's Satin Hood
-						i(23262), 	-- Champion's Satin Mantle
-						i(23263), 	-- Champion's Silk Cowl
-						i(23264), 	-- Champion's Silk Mantle
-						i(29600), 	-- Blood Guard's Lamellar Gauntlets
-						i(29601), 	-- Blood Guard's Lamellar Sabatons
-						i(29602), 	-- Legionnaire's Lamellar Breastplate
-						i(29603), 	-- Legionnaire's Lamellar Leggings
-						i(29604), 	-- Champion's Lamellar Headguard
-						i(29605), 	-- Champion's Lamellar Shoulders
-						i(29612), 	-- General's Lamellar Boots
-						i(29613), 	-- General's Lamellar Gloves
-						i(29614), 	-- General's Lamellar Legplates
-						i(29615), 	-- Warlord's Lamellar Chestplate
-						i(29616), 	-- Warlord's Lamellar Faceguard
-						i(29617), 	-- Warlord's Lamellar Pauldrons
-						i(16341), 	-- Sergeant's Cloak
-						i(18430), 	-- First Sergeant's Plate Bracers
-						i(18432), 	-- First Sergeant's Mail Wristguards
-						i(18435), 	-- First Sergeant's Leather Armguards
-						i(18436), 	-- First Sergeant's Dragonhide Armguards
-						i(18437), 	-- First Sergeant's Silk Cuffs
-						i(18427), 	-- Sergeant's Cloak
+						i(22865),	-- Blood Guard's Dreadweave Handwraps
+						i(22867),	-- Blood Guard's Mail Vices
+						i(22868),	-- Blood Guard's Plate Gauntlets
+						i(22869),	-- Blood Guard's Satin Handwraps
+						i(22870),	-- Blood Guard's Silk Handwraps
+						i(22872),	-- Legionnaire's Plate Hauberk
+						i(22873),	-- Legionnaire's Plate Leggings
+						i(22874),	-- Legionnaire's Chain Hauberk
+						i(22875),	-- Legionnaire's Chain Legguards
+						i(22876),	-- Legionnaire's Mail Hauberk
+						i(22877),	-- Legionnaire's Dragonhide Chestpiece
+						i(22878),	-- Legionnaire's Dragonhide Leggings
+						i(22879),	-- Legionnaire's Leather Chestpiece
+						i(22880),	-- Legionnaire's Leather Legguards
+						i(22881),	-- Legionnaire's Dreadweave Legguards
+						i(22882),	-- Legionnaire's Satin Legguards
+						i(22883),	-- Legionnaire's Silk Legguards
+						i(22884),	-- Legionnaire's Dreadweave Tunic
+						i(22885),	-- Legionnaire's Satin Tunic
+						i(22886),	-- Legionnaire's Silk Tunic
+						i(22887),	-- Legionnaire's Mail Legguards
+						i(23243),	-- Champion's Plate Shoulders
+						i(23244),	-- Champion's Plate Helm
+						i(23251),	-- Champion's Chain Helm
+						i(23252),	-- Champion's Chain Shoulders
+						i(23253),	-- Champion's Dragonhide Headguard
+						i(23254),	-- Champion's Dragonhide Shoulders
+						i(23255),	-- Champion's Dreadweave Cowl
+						i(23256),	-- Champion's Dreadweave Spaulders
+						i(23257),	-- Champion's Leather Helm
+						i(23258),	-- Champion's Leather Shoulders
+						i(23259),	-- Champion's Mail Headguard
+						i(23260),	-- Champion's Mail Pauldrons
+						i(23261),	-- Champion's Satin Hood
+						i(23262),	-- Champion's Satin Mantle
+						i(23263),	-- Champion's Silk Cowl
+						i(23264),	-- Champion's Silk Mantle
+						i(29600),	-- Blood Guard's Lamellar Gauntlets
+						i(29601),	-- Blood Guard's Lamellar Sabatons
+						i(29602),	-- Legionnaire's Lamellar Breastplate
+						i(29603),	-- Legionnaire's Lamellar Leggings
+						i(29604),	-- Champion's Lamellar Headguard
+						i(29605),	-- Champion's Lamellar Shoulders
+						i(29612),	-- General's Lamellar Boots
+						i(29613),	-- General's Lamellar Gloves
+						i(29614),	-- General's Lamellar Legplates
+						i(29615),	-- Warlord's Lamellar Chestplate
+						i(29616),	-- Warlord's Lamellar Faceguard
+						i(29617),	-- Warlord's Lamellar Pauldrons
+						i(16341),	-- Sergeant's Cloak
+						i(18430),	-- First Sergeant's Plate Bracers
+						i(18432),	-- First Sergeant's Mail Wristguards
+						i(18435),	-- First Sergeant's Leather Armguards
+						i(18436),	-- First Sergeant's Dragonhide Armguards
+						i(18437),	-- First Sergeant's Silk Cuffs
+						i(18427),	-- Sergeant's Cloak
 					}),
 				}),
 				n(50323,  {	-- Frizzo Villamar <Bilgewater Cartel Quartermaster>
@@ -1211,7 +1211,7 @@ _.Zones =
 								{ "i", 71679, 1 },	-- Chest of the Fiery Conqueror
 							},
 						}),
-						i(71150), 	-- Scorchvine Wand
+						i(71150),	-- Scorchvine Wand
 						i(71208),	-- Serrated Brimstone Signet
 						i(70941),	-- Shoulderguards of the Molten Giant
 						i(71608, {	-- Shoulderguards of the Molten Giant
@@ -3643,15 +3643,15 @@ _.Zones =
 					["coord"] = { 69.8, 41.0, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(91008, { 	-- Black Dragon Turtle (Panda)
+						i(91008, {	-- Black Dragon Turtle (Panda)
 							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
-						i(87795), 	-- Black Dragon Turtle
+						i(87795),	-- Black Dragon Turtle
 						i(91009, {	-- Blue Dragon Turtle (Panda)
 							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
-						i(87796), 	-- Blue Dragon Turtle
-						i(91005, { 	-- Brown Dragon Turtle (Panda)
+						i(87796),	-- Blue Dragon Turtle
+						i(91005, {	-- Brown Dragon Turtle (Panda)
 							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
 						i(87797),	-- Brown Dragon Turtle

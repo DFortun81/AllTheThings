@@ -81,7 +81,7 @@ _.Zones =
 					["coord"] = { 67.8, 37.4, ARATHI_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(7089, { 	-- Pattern: Azure Silk Cloak
+						i(7089, {	-- Pattern: Azure Silk Cloak
 							["isLimited"] = true,
 						}),
 					},
@@ -221,7 +221,7 @@ _.Zones =
 						i(20210, {	-- Defiler's Plate Greaves
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 						}),
-						i(20211, { 	-- Defiler's Plate Greaves
+						i(20211, {	-- Defiler's Plate Greaves
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 						}),
 						i(20220, {	-- Ironbark Staff
@@ -332,7 +332,7 @@ _.Zones =
 					["coord"] = { 70.0, 35.4, ARATHI_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(13287, { 	-- Pattern: Raptor Hide Harness
+						i(13287, {	-- Pattern: Raptor Hide Harness
 							["isLimited"] = true,
 						}),
 					},

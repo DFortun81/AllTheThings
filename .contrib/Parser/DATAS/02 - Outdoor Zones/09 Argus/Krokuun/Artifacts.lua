@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(905, { 	-- Argus
+	m(905, {	-- Argus
 		m(830, {	-- Krokuun
 			n(-10067, {	-- Artifacts
 				-- /script for i = 44093,44097 do print("Head "..(i-44092)..": "..tostring(IsQuestFlaggedCompleted(i))) end

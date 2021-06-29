@@ -135,7 +135,7 @@ _.Instances = { tier(7, {	-- Legion
 					["cr"] = 114312,	-- Moroes
 					["g"] = {
 						i(138797),	-- Illusion: Mongoose
-						i(142246, { 	-- Broken Pocket Watch
+						i(142246, {	-- Broken Pocket Watch
 							["description"] = "This is a rare drop that eventually leads to adding Moroes as a follower.",
 							["questID"] = 44803,	-- Return to Karazhan: Master of the House
 						}),
@@ -334,7 +334,7 @@ _.Instances = { tier(7, {	-- Legion
 					["g"] = {
 						ach(11338),	-- Dine and Bash
 						i(138797),	-- Illusion: Mongoose
-						i(142246, { 	-- Broken Pocket Watch
+						i(142246, {	-- Broken Pocket Watch
 							["description"] = "This is a rare drop that eventually leads to adding Moroes as a follower.",
 							["questID"] = 44803,	-- Return to Karazhan: Master of the House
 						}),

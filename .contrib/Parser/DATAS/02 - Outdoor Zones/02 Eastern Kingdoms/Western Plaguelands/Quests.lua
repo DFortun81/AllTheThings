@@ -864,7 +864,7 @@ _.Zones =
 						i(62194),	-- Breastplate of the Patient
 						i(62193),	-- Leggings of the Slipper Shifter
 						i(131627),	-- Scaled Pants of Patience
-						i(62192),  	-- Zen'Kiki's Thanks
+						i(62192),	-- Zen'Kiki's Thanks
 					},
 				}),
 			}),

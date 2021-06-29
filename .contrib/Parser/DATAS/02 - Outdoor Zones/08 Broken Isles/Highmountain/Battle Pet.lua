@@ -91,8 +91,8 @@ _.Zones =
 					["speciesID"] = 1590,	-- Swamplighter Firefly
 					["crs"] = { 88359 },	-- Swamplighter Firefly
 				},
-				ach(10626, { 	-- Zoom!
-					i(137298), 		-- Zoom
+				ach(10626, {	-- Zoom!
+					i(137298),		-- Zoom
 				}),
 				n(115737, {	-- Orphaned Snowfeather
 					["description"] = "1. Buy Smoked Elderhorn from Marius Felbane in Highmountain.\n2. Kill Snowfeather Matriarch.\n3. /target Orphaned Snowfeather\n4. Feed Orphaned Snowfeather Smoked Elderhorn.\n5. Enjoy new Snowfeather Hatchling|r",

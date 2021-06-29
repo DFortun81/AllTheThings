@@ -8,7 +8,7 @@ _.Zones =
 			n(ZONEDROPS, {
 				i(16219, {	-- Formula: Enchant Gloves - Greater Agility
 					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, formula was removed from game
-					["spellID"] = 0,   	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
+					["spellID"] = 0,	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
 					["crs"] = { 6201 },	-- Legashi Rogue
 				}),
 				i(15763, {	-- Pattern: Blue Dragonscale Shoulders
@@ -25,12 +25,12 @@ _.Zones =
 				}),
 				i(15728, {	-- Pattern: Wicked Leather Bracers
 					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, formula was removed from game
-					["spellID"] = 0,   	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
+					["spellID"] = 0,	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
 					["crs"] = { 6201 },	-- Legashi Rogue
 				}),
 				i(16045, {	-- Schematic: Spellpower Goggles Xtreme Plus
 					["u"] = REMOVED_FROM_GAME,	-- now learned from trainer, formula was removed from game
-					["spellID"] = 0,   	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe otherwise the recipe will show as unobtainable in tooltips
+					["spellID"] = 0,	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe otherwise the recipe will show as unobtainable in tooltips
 					["crs"] = { 6195 },	-- Spitelash Siren
 				}),
 			}),

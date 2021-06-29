@@ -1128,7 +1128,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(15471)),	-- Brawnhide Armor
-						un(REMOVED_FROM_GAME, i(15470)), 	-- Plainsguard Leggings
+						un(REMOVED_FROM_GAME, i(15470)),	-- Plainsguard Leggings
 					},
 				}),
 				q(28051, {	-- We All Scream for Ice Cream... and then Die!

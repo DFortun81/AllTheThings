@@ -46,7 +46,7 @@ _.Zones =
 					["coord"] = { 75.8, 45.4, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(14627, { 	-- Pattern: Bright Yellow Shirt
+						i(14627, {	-- Pattern: Bright Yellow Shirt
 							["isLimited"] = true,
 						}),
 					},
@@ -117,10 +117,10 @@ _.Zones =
 					["coord"] = { 75.6, 45.4, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(6401, { 	-- Pattern: Dark Silk Shirt
+						i(6401, {	-- Pattern: Dark Silk Shirt
 							["isLimited"] = true,
 						}),
-						i(6275, { 	-- Pattern: Greater Adept's Robe
+						i(6275, {	-- Pattern: Greater Adept's Robe
 							["isLimited"] = true,
 						}),
 					},

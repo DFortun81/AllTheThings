@@ -61,7 +61,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 					})),
 					i(21737, {	-- Schematic: Cluster Launcher
 						["u"] = REMOVED_FROM_GAME,
-						["spellID"] = 0,   	-- Old BOE version new version is 44918 and BOP, using spellID = 0 to delink the unused plans from the recipe otherwise the recipe will show as unobtainable in tooltips
+						["spellID"] = 0,	-- Old BOE version new version is 44918 and BOP, using spellID = 0 to delink the unused plans from the recipe otherwise the recipe will show as unobtainable in tooltips
 					}),
 					un(17, i(116146, {  -- Schematic: Snake Firework
 						["cost"] = { { "i", 21100, 5 } },	-- 5x Coin of Ancestry

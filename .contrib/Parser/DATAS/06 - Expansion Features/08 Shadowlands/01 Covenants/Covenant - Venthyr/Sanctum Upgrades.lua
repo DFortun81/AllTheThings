@@ -967,7 +967,7 @@ _.ExpansionFeatures =
 									["cost"] = {
 										{ "i", 173202, 10 },	-- 10x Shrouded Cloth
 										{ "i", 172230, 5 },		-- 5x Soul Dust
-										{ "c", 1820, 20 }, 		-- 20x Infused Ruby
+										{ "c", 1820, 20 },		-- 20x Infused Ruby
 									},
 								}),
 								q(62064, {	-- Restock: Broken Mirrors
@@ -1008,7 +1008,7 @@ _.ExpansionFeatures =
 									["cost"] = {
 										{ "i", 173060, 20 },	-- 20x Aerated Water
 										{ "i", 171274, 1 },		-- 1x Potion of Spectral Stamina
-										{ "c", 1820, 20 }, 		-- 20x Infused Ruby
+										{ "c", 1820, 20 },		-- 20x Infused Ruby
 									},
 								}),
 								q(62078, {	-- Restock: Fashion Accessories
@@ -1018,7 +1018,7 @@ _.ExpansionFeatures =
 									["coord"] = { 30.7, 41.7, REVENDRETH },
 									["cost"] = {
 										{ "i", 173141, 1 },		-- 1x Masterful Laestrite Choker
-										{ "c", 1820, 20 }, 		-- 20x Infused Ruby
+										{ "c", 1820, 20 },		-- 20x Infused Ruby
 									},
 								}),
 								q(62084, {	-- Restock: Fine Cutlery
@@ -1038,7 +1038,7 @@ _.ExpansionFeatures =
 									["coord"] = { 29.8, 45.4, REVENDRETH },
 									["cost"] = {
 										{ "i", 173202, 10 },	-- 20x Shrouded Cloth
-										{ "c", 1820, 20 }, 		-- 20x Infused Ruby
+										{ "c", 1820, 20 },		-- 20x Infused Ruby
 									},
 								}),
 								q(62070, {	-- Restock: Fragrant Flowers
@@ -1048,7 +1048,7 @@ _.ExpansionFeatures =
 									["coord"] = { 30.7, 41.7, REVENDRETH },
 									["cost"] = {
 										{ "i", 170554, 1 },		-- 1x Vigil's Torch
-										{ "c", 1820, 20 }, 		-- 20x Infused Ruby
+										{ "c", 1820, 20 },		-- 20x Infused Ruby
 									},
 								}),
 								q(62076, {	-- Restock: Free Press
@@ -1059,7 +1059,7 @@ _.ExpansionFeatures =
 									["cost"] = {
 										{ "i", 173059, 1 },		-- 1x Luminous Ink
 										{ "i", 175886, 10 },	-- 10x Dark Parchment
-										{ "c", 1820, 20 }, 		-- 20x Infused Ruby
+										{ "c", 1820, 20 },		-- 20x Infused Ruby
 									},
 								}),
 								q(62080, {	-- Restock: Herbal Tea
@@ -1094,7 +1094,7 @@ _.ExpansionFeatures =
 									["cost"] = {
 										{ "i", 173192, 10 },	-- 10x Shrouded Cloth Bandage
 										{ "i", 171267, 1 },		-- 1x Spiritual Healing Potion
-										{ "c", 1820, 20 }, 		-- 20x Infused Ruby
+										{ "c", 1820, 20 },		-- 20x Infused Ruby
 									},
 								}),
 								q(62083, {	-- Restock: Medical Supplies
@@ -1127,7 +1127,7 @@ _.ExpansionFeatures =
 										{ "i", 172069, 1 },		-- 1x Banana Beef Pudding
 										{ "i", 172068, 1 },		-- 1x Pickled Meat Smoothie
 										{ "i", 172051, 1 },		-- 1x Steak a la Mode
-										{ "c", 1820, 20 }, 		-- 20x Infused Ruby
+										{ "c", 1820, 20 },		-- 20x Infused Ruby
 									},
 								}),
 								q(62069, {	-- Restock: Sinstones
@@ -1149,7 +1149,7 @@ _.ExpansionFeatures =
 									["cost"] = {
 										{ "i", 172089, 20 },	-- 20x Desolate Leather
 										{ "i", 171832, 1 },		-- 1x Sinvyr Ore
-										{ "c", 1820, 20 }, 		-- 20x Infused Ruby
+										{ "c", 1820, 20 },		-- 20x Infused Ruby
 									},
 								}),
 								q(62067, {	-- Restock: Statues
@@ -1180,7 +1180,7 @@ _.ExpansionFeatures =
 									["coord"] = { 32.1, 41.6, REVENDRETH },
 									["cost"] = {
 										{ "i", 171841, 10 },	-- 10x Shaded Stone
-										{ "c", 1820, 20 }, 		-- 20x Infused Ruby
+										{ "c", 1820, 20 },		-- 20x Infused Ruby
 									},
 								}),
 								q(62108, {	-- Restock: Strategic Codices
@@ -1190,7 +1190,7 @@ _.ExpansionFeatures =
 									["coord"] = { 32.1, 41.6, REVENDRETH },
 									["cost"] = {
 										{ "i", 184090, 1 },		-- 1x Potion of the Psychopomp's Speed
-										{ "c", 1820, 20 }, 		-- 20x Infused Ruby
+										{ "c", 1820, 20 },		-- 20x Infused Ruby
 									},
 								}),
 								q(62109, {	-- Restock: Surveillance Equipment
@@ -1201,7 +1201,7 @@ _.ExpansionFeatures =
 									["cost"] = {
 										{ "i", 171266, 5 },		-- 5x Potion of the Hidden Spirit
 										{ "i", 171264, 5 },		-- 5x Potion of Shaded Sight
-										{ "c", 1820, 20 }, 		-- 20x Infused Ruby
+										{ "c", 1820, 20 },		-- 20x Infused Ruby
 									},
 								}),
 								q(62105, {	-- Restock: Unconventional Weapons
@@ -1212,7 +1212,7 @@ _.ExpansionFeatures =
 									["cost"] = {
 										{ "i", 172903, 1 },		-- 1x Nutcracker Grenade
 										{ "i", 172904, 1 },		-- 1x Shadow Land Mine
-										{ "c", 1820, 20 }, 		-- 20x Infused Ruby
+										{ "c", 1820, 20 },		-- 20x Infused Ruby
 									},
 								}),
 								q(60236, {	-- RSVP: Cryptkeeper Kassir

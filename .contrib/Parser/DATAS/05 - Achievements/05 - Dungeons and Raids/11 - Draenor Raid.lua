@@ -135,7 +135,7 @@ _.Achievements =
 			ach(8986, {		-- The Walled City
 				crit(1),		-- Kargath Bladefist
 				crit(2),		-- The Butcher
-				crit(3),		-- 	Brackenspore
+				crit(3),		-- Brackenspore
 			}),
 			ach(8982),		-- There's Always a Bigger Train
 			ach(10012),		-- This Land Was Green and Good Until...

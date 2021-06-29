@@ -324,9 +324,9 @@ _.Zones =
 					["provider"] = { "o", 207104 },	-- Master Control Pump
 					["sourceQuest"] = 28335,	-- Turn It Off! Turn It Off!
 					["g"] = {
-						i(65346),  	-- Gauntlets of Raw Strength
-						i(65349),  	-- Everburning Cloak
-						i(65352),  	-- Drilldozer Band
+						i(65346),	-- Gauntlets of Raw Strength
+						i(65349),	-- Everburning Cloak
+						i(65352),	-- Drilldozer Band
 					},
 				}),
 				q(5155, {	-- Forces of Jaedenar
@@ -459,7 +459,7 @@ _.Zones =
 						i(65278),	-- Gold Pot Gloves
 						i(65298),	-- Cheerful Shoulders
 						i(65317),	-- Rainbow Band
-						i(133998), 	-- Rainbow Generator (TOY!)
+						i(133998),	-- Rainbow Generator (TOY!)
 					},
 				}),
 				q(28380, {	-- Pikwik in Peril
@@ -494,9 +494,9 @@ _.Zones =
 						28387,	-- Burnout
 					},
 					["g"] = {
-						i(65292),  	-- Fists of the Pack
-						i(65311),  	-- Denmother's Cloak
-						i(65330),  	-- Token of the Bond
+						i(65292),	-- Fists of the Pack
+						i(65311),	-- Denmother's Cloak
+						i(65330),	-- Token of the Bond
 					},
 				}),
 				q(5203, {	-- Rescue From Jaedenar

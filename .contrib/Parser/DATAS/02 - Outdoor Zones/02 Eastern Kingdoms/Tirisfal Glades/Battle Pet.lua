@@ -19,7 +19,7 @@ _.Zones =
 				p(417, {	-- Rat
 					["crs"] = { 61366 },
 				}),
-				n(63073, { 	-- Ansel Fincap
+				n(63073, {	-- Ansel Fincap
 					["coord"] = { 60.8, 54.2, TIRISFAL_GLADES },
 					["description"] = "You may only learn this pet once per character from a Battle Pet Trainer.|r",
 					["g"] = {

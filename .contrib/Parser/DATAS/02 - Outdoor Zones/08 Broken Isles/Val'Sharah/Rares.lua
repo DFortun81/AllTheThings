@@ -34,7 +34,7 @@ _.Zones =
 						crit(4, {	-- Darkshade, Saber Matriarch
 							["achievementID"] = 11262,	-- Adventurer of Val'sharah
 						}),
-						i(130166), 	-- Risen Saber Kitten (PET!)
+						i(130166),	-- Risen Saber Kitten (PET!)
 					},
 				}),
 				n(97517,  {	-- Dreadbog
@@ -214,14 +214,14 @@ _.Zones =
 					},
 				}),
 --[[ TODO:
-			--	n(93758, { 		-- Antydas Nightcaller	}),
-			--	n(107924, { 	-- Darkfiend Tormentor	}),
-			--	n(93686, { 		-- Jinikki the Puncturer	}),
-			--	n(106042, { 	-- Kalazzius the Guileful	}),
-			--	n(109125, { 	-- Kathaw the Savage	}),
-			--	v(45490, { 		-- Lytheron	}),
-			--	v(45500, { 		-- Shalas'aman	}),
-			--	n(103785, { 	-- Well-Fed Bear	}),
+			--	n(93758, {	-- Antydas Nightcaller	}),
+			--	n(107924, {	-- Darkfiend Tormentor	}),
+			--	n(93686, {	-- Jinikki the Puncturer	}),
+			--	n(106042, {	-- Kalazzius the Guileful	}),
+			--	n(109125, {	-- Kathaw the Savage	}),
+			--	v(45490, {	-- Lytheron	}),
+			--	v(45500, {	-- Shalas'aman	}),
+			--	n(103785, {	-- Well-Fed Bear	}),
 --]]
 			}),
 		}),

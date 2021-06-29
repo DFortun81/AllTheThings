@@ -21,7 +21,7 @@ _.Zones =
 				n(2672,   {	-- Cowardly Crosby <Tailoring Supplies>
 					["coord"] = { 40.8, 82.1, 210 },
 					["g"] = {
-						i(10318, { 	-- Pattern: Admiral's Hat
+						i(10318, {	-- Pattern: Admiral's Hat
 							["isLimited"] = true,
 						}),
 					},
@@ -138,7 +138,7 @@ _.Zones =
 					["g"] = {
 						i(8496),	-- Parrot Cage (Cockatiel) (PET!)
 						i(8495),	-- Parrot Cage (Senegal) (PET!)
-						i(10728, { 	-- Pattern: Black Swashbuckler's Shirt
+						i(10728, {	-- Pattern: Black Swashbuckler's Shirt
 							["isLimited"] = true,
 						}),
 					},

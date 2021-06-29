@@ -17,7 +17,7 @@ _.ExpansionFeatures =
 							}),
 						}),
 						n(VENDORS, {
-							n(77372, { 	-- Eric Broadoak <Scribe>
+							n(77372, {	-- Eric Broadoak <Scribe>
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									i(111923, {	-- Draenor Inscription **Teaches laughing tarot, ocean tarot, savage tarot, war paints, card of omens, research warbinders ink, secrets of draenor inscription, Warbinder's ink

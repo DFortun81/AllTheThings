@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(3, {	-- Wrath of the Lich King
-	inst(756, { 	-- The Eye of Eternity
+	inst(756, {	-- The Eye of Eternity
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 80,

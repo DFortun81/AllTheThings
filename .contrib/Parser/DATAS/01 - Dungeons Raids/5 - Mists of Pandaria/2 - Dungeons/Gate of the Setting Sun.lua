@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(5, {	-- Mists of Pandaria
-	inst(303, { 	-- Gate of the Setting Sun
+	inst(303, {	-- Gate of the Setting Sun
 		["lvl"] = 88,
 		["maps"] = { 437, 438 },
 		["groups"] = {

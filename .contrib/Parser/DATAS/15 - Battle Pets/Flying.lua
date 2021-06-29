@@ -5,13 +5,13 @@
 _.BattlePets =
 {
 	n(-797,	{	-- Journal
-		pa(239, { 	-- Flying
+		pa(239, {	-- Flying
 			p(1708),			-- Albatross Chick
 			p(2566, {			-- Albatross Hatchling
 				["races"] = ALLIANCE_ONLY,
 			}),
 			p(1984),			-- Albino Buzzard
-			p(2555),		 	-- Albino Duskwatcher
+			p(2555),			-- Albino Duskwatcher
 			p(331, {			-- Alliance Balloon (Alliance)
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -73,7 +73,7 @@ _.BattlePets =
 			p(2940),			-- Devoured Wader
 			p(2922),			-- Devouring Animite
 			p(1975),			-- Direbeak Hatchling
-			p(2118),	 		-- Docile Skyfin
+			p(2118),			-- Docile Skyfin
 			un(10, p(169)),		-- Dragon Kite
 			p(537),				-- Dragonbone Hatchling
 			un(REMOVED_FROM_GAME, p(1386)),		-- Dread Hatchling
@@ -84,7 +84,7 @@ _.BattlePets =
 			p(1761),			-- Echo Batling
 			p(747),				-- Effervescent Glowfly
 			p(1566),			-- Everbloom Peachick
-			p(2119), 			-- Fel-Afflicted Skyfin
+			p(2119),			-- Fel-Afflicted Skyfin
 			p(1889),			-- Felbat Pup
 			p(1928),			-- Firebat Pup
 			p(146),				-- Firefly

@@ -160,21 +160,21 @@ _.Zones =
 							["groups"] = {
 								i(139531, {	-- Crumpled Request
 									["achievementID"] = 11139,	-- Field Medic (Achievement)
-									["criteriaID"] = 8, 		-- Crumpled Request (Criteria)
+									["criteriaID"] = 8,			-- Crumpled Request (Criteria)
 									--["questID"] = 42058,		-- Crumpled Request (Quest)
 									["description"] = "Vampirates.\n  - Crieve (This was the best farming spot by far.)",
 									["crs"] = {108030}
 								}),
 								i(139529, {	-- Fevered Request
 									["achievementID"] = 11139,	-- Field Medic (Achievement)
-									["criteriaID"] = 13, 		-- Fevered Request (Criteria)
+									["criteriaID"] = 13,		-- Fevered Request (Criteria)
 									--["questID"] = 41985,		-- Fevered Request (Quest)
 									["description"] = "Murlocs at Morheim (eastern Stormheim).",
 									["crs"] = {98498, 98500, 98501, 98502, 110258}
 								}),
 								i(139530, {	-- Singed Letter
 									["achievementID"] = 11139,	-- Field Medic (Achievement)
-									["criteriaID"] = 14, 		-- Singed Letter (Criteria)
+									["criteriaID"] = 14,		-- Singed Letter (Criteria)
 									--["questID"] = 42215,		-- Singed Letter (Quest)
 									["description"] = "Southern Stormheim.",
 									["crs"] = {116600}

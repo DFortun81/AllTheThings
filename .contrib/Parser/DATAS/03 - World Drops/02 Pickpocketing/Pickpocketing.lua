@@ -44,7 +44,7 @@ _.WorldDrops =
 			i(151147),	--Charmed Pendant	10
 			i(151146),	--Charmed Band
 		}),
-		n(-161,  { 	-- Toys
+		n(-161,  {	-- Toys
 			i(36863, {	-- Decahedral Dwarven Dice
 				["description"] = "Can be pickpocketed from Northrend humanoids.",
 			}),

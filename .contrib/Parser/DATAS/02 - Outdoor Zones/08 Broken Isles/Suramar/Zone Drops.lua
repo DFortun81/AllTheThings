@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(619, { 	-- The Broken Isles
+	m(619, {	-- The Broken Isles
 		m(680, {	-- Suramar
 			n(ZONEDROPS, {
 				["g"] = {
@@ -306,7 +306,7 @@ _.Zones =
 						99304,	-- Trenchwalker Scavenger
 					},
 					["g"] = {
-						i(133817), 	-- Recipe: Suramar Surf and Turf
+						i(133817),	-- Recipe: Suramar Surf and Turf
 					},
 				}),
 			}),

@@ -55,7 +55,7 @@ _.Instances = { tier(1, {	-- Classic
 					["provider"] = { "n", 46417 },	-- Rifle Commander Coe
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(386, { 	-- What Comes Around...
+				q(386, {	-- What Comes Around...
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -81,7 +81,7 @@ _.Instances = { tier(1, {	-- Classic
 					un(REMOVED_FROM_GAME, i(2941)),	-- Prison Shank
 				},
 			}),
-			n(1666, { 	-- Kam Deepfury
+			n(1666, {	-- Kam Deepfury
 				["u"] = REMOVED_FROM_GAME,
 				["g"] = {
 					un(REMOVED_FROM_GAME, i(2280)),	-- Kam's Walking Stick
@@ -104,7 +104,7 @@ _.Instances = { tier(1, {	-- Classic
 			cr(46254, e(464, {	-- Hogger
 				ach(633),	-- Stormwind Stockade
 				i(1959),	-- Cold Iron Pick
-				i(151074), 	-- Turnkey's Pauldrons
+				i(151074),	-- Turnkey's Pauldrons
 				i(1934),	-- Hogger's Trousers
 				i(132569),	-- Stolen Jailer's Greaves
 				i(2168),	-- Corpse Rompers

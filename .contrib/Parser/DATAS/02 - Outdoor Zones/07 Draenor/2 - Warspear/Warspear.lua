@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(572, { 	-- Draenor
+	m(572, {	-- Draenor
 		m(624, {	-- Warspear
 			["achievementID"] = 9215,	-- Hero of Warspear
 			["isRaid"] = true,
@@ -2880,9 +2880,9 @@ _.Zones =
 										i(112037),	-- Recipe: Greater Draenic Stamina Flask
 										i(112034),	-- Recipe: Greater Draenic Strength Flask
 										i(112047),	-- Recipe: Transmorphic Tincture
-										i(160662), 	-- Recipe: Blackwater Anti-Venom
-										i(160663), 	-- Recipe: Healing Tonic
-										i(160661), 	-- Recipe: Fire Ammonite Oil
+										i(160662),	-- Recipe: Blackwater Anti-Venom
+										i(160663),	-- Recipe: Healing Tonic
+										i(160661),	-- Recipe: Fire Ammonite Oil
 										i(114028, {	-- Small Pouch of Coins
 											["description"] = "Contains between 1 and 5 gold. Don't waste your secrets.\n\nSide note: Counts towards Looted Gold Achievements. (Got My Mind on My Money, etc)",
 										}),
@@ -3625,7 +3625,7 @@ _.Zones =
 								})),
 							},
 						}),
-						n(87551, { 	-- Maru'sa <Inscription Recipes>
+						n(87551, {	-- Maru'sa <Inscription Recipes>
 							["coord"] = { 75.3, 47.6, 624 },
 							["g"] = {
 								i(111923, {	-- Draenor Inscription **Teaches laughing tarot, ocean tarot, savage tarot, war paints, card of omens, research warbinders ink, secrets of draenor inscription, Warbinder's ink
@@ -3737,7 +3737,7 @@ _.Zones =
 								}),
 							},
 						}),
-						n(87550, { 	-- Nonn Threeratchet <Blacksmithing Plans>
+						n(87550, {	-- Nonn Threeratchet <Blacksmithing Plans>
 							["coord"] = { 75.0, 37.9, 624 },
 							["g"] = {
 								i(115356, {	-- Draenor Blacksmithing
@@ -3811,7 +3811,7 @@ _.Zones =
 								}),
 							},
 						}),
-						n(88253, { 	-- Srikka
+						n(88253, {	-- Srikka
 							["coord"] = { 74.4, 31.6, 624 },
 							["g"] = {
 								i(122606, {	-- Explorer's Notebook

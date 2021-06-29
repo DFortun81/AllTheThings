@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(5, {	-- Mists of Pandaria
-	inst(369, { 	-- Siege of Orgrimmar
+	inst(369, {	-- Siege of Orgrimmar
 		["isRaid"] = true,
 		["coords"] = {
 			{ 72.3, 44.3, 390 },	-- old Vale
@@ -3573,7 +3573,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 })};
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-10041, {
-		inst(369, { 	-- Siege of Orgrimmar
+		inst(369, {	-- Siege of Orgrimmar
 			i(104986),	-- Unrepentant Heels
 			i(102312),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Boss X Loot X - Agi DPS Trinket (5)
 			i(102313),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Boss X Loot X - Int Hit Trinket (5)

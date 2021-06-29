@@ -5,7 +5,7 @@
 _.WorldEvents =
 {
 	n(-65, {	-- Blizzard Promotions
-		n(-545, { 	-- Blizzcon
+		n(-545, {	-- Blizzcon
 			un(REMOVED_FROM_GAME, ach(411, {	-- Blizzcon 2005 - Murky
 				un(REMOVED_FROM_GAME, i(20371)),	-- Blue Murloc Egg
 			})),

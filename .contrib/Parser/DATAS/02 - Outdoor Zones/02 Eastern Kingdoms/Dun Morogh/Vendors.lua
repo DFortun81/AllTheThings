@@ -13,7 +13,7 @@ _.Zones =
 					["g"] = {
 						i(8595),	-- Blue Mechanostrider
 						i(13321),	-- Green Mechanostrider
-						i(8563), 	-- Red Mechanostrider
+						i(8563),	-- Red Mechanostrider
 						i(18772),	-- Swift Green Mechanostrider
 						i(18773),	-- Swift White Mechanostrider
 						i(18774),	-- Swift Yellow Mechanostrider

@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
-	inst(747, { 	-- Magtheridon's Lair
+	inst(747, {	-- Magtheridon's Lair
 		["coord"] = { 47.51, 52.08, HELLFIRE_PENINSULA },	-- Magtheridon's Lair, Hellfire Peninsula
 		["mapID"] = MAGTHERIDONS_LAIR,
 		["sharedLockout"] = 1,
@@ -34,7 +34,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 					["qg"] = 18481,	-- A'dal
 					["sourceQuests"] = {
 						10884,	-- Trial of the Naaru: Mercy
-						10885, 	-- Trial of the Naaru: Strength
+						10885,	-- Trial of the Naaru: Strength
 						10886,	-- Trial of the Naaru: Tenacity
 					},
 					["altQuests"] = { 10888 },	-- Trial of the Naaru: Magtheridon (legacy version)

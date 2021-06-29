@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(5, {	-- Mists of Pandaria
-	inst(362, { 	-- Throne of Thunder
+	inst(362, {	-- Throne of Thunder
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 90,
@@ -278,7 +278,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						},
 						["g"] = {
 							cr(69465, e(827, {	-- Jin'rokh the Breaker
-								i(95343), 	-- Treasures of the Thunder King
+								i(95343),	-- Treasures of the Thunder King
 								i(95640),	-- Soulblade of the Breaking Storm
 								i(95632),	-- Worldbreaker's Stormscythe
 								i(95626),	-- Lightning-Eye Hood
@@ -301,7 +301,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								i(95625),	-- Renataki's Soul Charm
 							})),
 							cr(68476, e(819, {	-- Horridon
-								i(95343), 	-- Treasures of the Thunder King
+								i(95343),	-- Treasures of the Thunder King
 								i(94574),	-- Pygmy Direhorn (PET!)
 								i(95657),	-- Dinomancer's Spiritbinding Spire
 								i(95647),	-- Jalak's Maelstrom Staff
@@ -336,7 +336,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 									i(95856),		-- Gauntlets of the Crackling Conqueror
 									i(95857),		-- Gauntlets of the Crackling Protector
 									i(95855),		-- Gauntlets of the Crackling Vanquisher
-									i(95343), 	-- Treasures of the Thunder King
+									i(95343),	-- Treasures of the Thunder King
 									i(95675),	-- Zerat, Malakk's Soulburning Greatsword
 									i(95670),	-- Amun-Thoth, Sul's Spiritrending Talons
 									i(95666),	-- Kura-Kura, Kazra'jin's Skullcleaver
@@ -363,7 +363,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								["description"] = "Must obtain 250 stacks of Spray Water from the geysers before Tortos.",
 							}),
 							cr(67977, e(825, {	-- Tortos
-								i(95343), 	-- Treasures of the Thunder King
+								i(95343),	-- Treasures of the Thunder King
 								i(95686),	-- Shellsplitter Greataxe
 								i(95678),	-- Shattered Tortoiseshell Longbow
 								i(95692),	-- Tortos' Discarded Shell
@@ -393,7 +393,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 									70247,	-- Venomous Head <Head of Megaera>
 								},
 								["g"] = {
-									i(95343), 	-- Treasures of the Thunder King
+									i(95343),	-- Treasures of the Thunder King
 									i(95698),	-- Megaera's Poisoned Fang
 									i(95710),	-- Fetish of the Hydra
 									i(95713),	-- Hood of Smoldering Flesh
@@ -425,7 +425,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								i(95888),	-- Leggings of the Crackling Conqueror
 								i(95889),	-- Leggings of the Crackling Protector
 								i(95887),	-- Leggings of the Crackling Vanquisher
-								i(95343), 	-- Treasures of the Thunder King
+								i(95343),	-- Treasures of the Thunder King
 								i(94835),	-- Ji-Kun Hatchling (PET!)
 								i(95720),	-- Giorgio's Caduceus of Pure Moods
 								i(95723),	-- Crown of Potentiated Birth
@@ -447,7 +447,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						},
 						["g"] = {
 							cr(68036, e(818, {	-- Durumu the Forgotten
-								i(95343), 	-- Treasures of the Thunder King
+								i(95343),	-- Treasures of the Thunder King
 								i(95743),	-- Ritual Dagger of the Mind's Eye
 								i(95728),	-- Durumu's Baleful Gaze
 								i(95740),	-- Chilblain Spaulders
@@ -470,7 +470,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								i(95737),	-- Durumu's Severed Tentacle
 							})),
 							cr(69017, e(820, {	-- Primordius
-								i(95343), 	-- Treasures of the Thunder King
+								i(95343),	-- Treasures of the Thunder King
 								i(97959),	-- Quivering Blob (PET!)
 								i(97960),	-- Dark Quivering Blob
 								i(95758),	-- Acid-Spine Bonemace
@@ -503,7 +503,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 									i(95823),	-- Chest of the Crackling Conqueror
 									i(95824),	-- Chest of the Crackling Protector
 									i(95822),	-- Chest of the Crackling Vanquisher
-									i(95343), 	-- Treasures of the Thunder King
+									i(95343),	-- Treasures of the Thunder King
 									i(94152),	-- Son of Animus (PET!)
 									i(95774),	-- Athame of the Sanguine Ritual
 									i(95770),	-- Hand of the Dark Animus
@@ -536,7 +536,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 									i(95956),	-- Shoulders of the Crackling Conqueror
 									i(95957),	-- Shoulders of the Crackling Protector
 									i(95955),	-- Shoulders of the Crackling Vanquisher
-									i(95343), 	-- Treasures of the Thunder King
+									i(95343),	-- Treasures of the Thunder King
 									i(95780),	-- Iron Qon's Boot Knife
 									i(95790),	-- Qon's Flaming Scimitar
 									i(95781),	-- Voice of the Quilen
@@ -559,7 +559,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 									i(95880),	-- Helm of the Crackling Conqueror
 									i(95881),	-- Helm of the Crackling Protector
 									i(95879),	-- Helm of the Crackling Vanquisher
-									i(95343), 	-- Treasures of the Thunder King
+									i(95343),	-- Treasures of the Thunder King
 									i(95795),	-- Suen-Wo, Spire of the Falling Sun
 									i(95791),	-- Wu-Lai, Bladed Fan of the Consorts
 									i(95794),	-- Shield of Twinned Despair
@@ -574,7 +574,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								},
 							})),
 							cr(68397, e(832, {	-- Lei Shen
-								i(95343), 	-- Treasures of the Thunder King
+								i(95343),	-- Treasures of the Thunder King
 								i(95803),	-- Shan-Dun, Breaker of Hope
 								i(95809),	-- Uroe, Harbinger of Terror
 								i(95815),	-- Torall, Rod of the Shattered Throne

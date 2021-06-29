@@ -101,7 +101,7 @@ _.Achievements =
 			ach(12990),		-- Catchin' Some Rays
 			ach(3217,  {	-- Chasing Marcia
 				crit(1),		-- The Ghostfish
-				crit(2), 		-- Jewel Of The Sewers
+				crit(2),		-- Jewel Of The Sewers
 				crit(3),		-- Dangerously Delicious
 				crit(4),		-- Blood Is Thicker
 				crit(5),		-- Disarmed!

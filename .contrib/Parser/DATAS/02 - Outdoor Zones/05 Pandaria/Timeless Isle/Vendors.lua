@@ -165,7 +165,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(72007, { 	-- Master Kukuru
+				n(72007, {	-- Master Kukuru
 					["description"] = "Buy Kukuru's Cache Key and open chests for a chance at the pet.",
 					["g"] = {
 						i(101538, {	-- Kukuru's Cache Key

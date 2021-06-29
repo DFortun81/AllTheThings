@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(905, { 	-- Argus
+	m(905, {	-- Argus
 		m(885, {	-- Antoran Wastes
 			n(RARES, {
 				n(127090, {	-- Admiral Rel'var

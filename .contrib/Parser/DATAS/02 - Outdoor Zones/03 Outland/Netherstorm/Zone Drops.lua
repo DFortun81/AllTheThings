@@ -43,7 +43,7 @@ _.Zones =
 				i(22530, {	-- Formula: Enchant Bracer - Greater Dodge
 					["crs"] = {
 						23008,	-- Ethereum Jailor
-						22822, 	-- Ethereum Nullifier
+						22822,	-- Ethereum Nullifier
 					},
 				}),
 				i(28277, {  -- Formula: Enchant Cloak - Greater Shadow Resistance

@@ -30,13 +30,13 @@ _.Zones =
 						i(5572),	-- Small Green Pouch
 					},
 				}),
-				n(1658,  { 	-- Captain Dargol
+				n(1658,  {	-- Captain Dargol
 					["coord"] = { 52.6, 26.2, TIRISFAL_GLADES },
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(3330)),	-- Dargol's Hauberk
 					},
 				}),
-				n(1911,  { 	-- Deeb
+				n(1911,  {	-- Deeb
 					["coord"] = { 72.6, 25.8, TIRISFAL_GLADES },
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(4303)),	-- Cranial Thumper
@@ -64,7 +64,7 @@ _.Zones =
 						i(5572),	-- Small Green Pouch
 					},
 				}),
-				n(10358, { 	-- Fellicent's Shade
+				n(10358, {	-- Fellicent's Shade
 					["coord"] = { 77.0, 59.8, TIRISFAL_GLADES },
 				}),
 				n(50930, {	-- Hibernus the Sleeper
@@ -102,7 +102,7 @@ _.Zones =
 						i(5572),	-- Small Green Pouch
 					},
 				}),
-				n(50908, { 	-- Nighthowl
+				n(50908, {	-- Nighthowl
 					["coord"] = { 42.6, 28.6, TIRISFAL_GLADES },
 				}),
 				n(51044, {	-- Plague
@@ -115,7 +115,7 @@ _.Zones =
 						i(5572),	-- Small Green Pouch
 					},
 				}),
-				n(10357, { 	-- Ressan the Needler
+				n(10357, {	-- Ressan the Needler
 					["coord"] = { 54.2, 56.2, TIRISFAL_GLADES },
 				}),
 				n(50763, {	-- Shadowstalker
@@ -128,10 +128,10 @@ _.Zones =
 						i(5572),	-- Small Green Pouch
 					},
 				}),
-				n(10359, { 	-- Sri'skulk
+				n(10359, {	-- Sri'skulk
 					["coord"] = { 84.6, 49.4, TIRISFAL_GLADES },
 				}),
-				n(1533,  { 	-- Tormented Spirit
+				n(1533,  {	-- Tormented Spirit
 					["coords"] = {
 						{ 46.8, 30.6, TIRISFAL_GLADES },
 						{ 47.6, 35.6, TIRISFAL_GLADES },

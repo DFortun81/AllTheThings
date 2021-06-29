@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(905, { 	-- Argus
+	m(905, {	-- Argus
 		m(885, {	-- Antoran Wastes
 			n(TREASURES, {
 				o(273519, {	-- Legion War Supplies (east and south of small green lake in southeast area of map)

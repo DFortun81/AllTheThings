@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(8, {	-- Battle for Azeroth
-	inst(1031, { 	-- Uldir
+	inst(1031, {	-- Uldir
 		["isRaid"] = true,
 		["lvl"] = { 50 },
 		["mapID"] = 1148,	-- Ruin's Descent
@@ -15,8 +15,8 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 			1153,	-- Gallery of Failures
 			1154,	-- The Oblivion Door
 			1155,	-- The Festering Core
-			1381, 	-- Neck Upgrade Quest #1 -- The Oblivion Door
-			1382, 	-- Neck Upgrade Quest #2 -- The Oblivion Door
+			1381,	-- Neck Upgrade Quest #1 -- The Oblivion Door
+			1382,	-- Neck Upgrade Quest #2 -- The Oblivion Door
 		},
 		["g"] = {
 			n(QUESTS, {
@@ -261,7 +261,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 						}),
 					},
 				}),
-				ach(12523, { 	-- Heart of Corruption
+				ach(12523, {	-- Heart of Corruption
 					["crs"] = {
 						177193,	-- Kiku
 						177208,	-- Eppu
@@ -957,7 +957,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 })};
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-10052, {	-- Battle for Azeroth
-		inst(1031, { 	-- Uldir
+		inst(1031, {	-- Uldir
 			i(166406),	-- Flaskzertauren's Cloth Robes
 			i(166407),	-- Flaskzertauren's Cloth Shoulders
 			i(166403),	-- Flaskzertauren's Leather Vest

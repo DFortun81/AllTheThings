@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(905, { 	-- Argus
+	m(905, {	-- Argus
 		m(882, {	-- Mac'Aree
 			n(RARES, {
 				n(126887, {	-- Ataxon

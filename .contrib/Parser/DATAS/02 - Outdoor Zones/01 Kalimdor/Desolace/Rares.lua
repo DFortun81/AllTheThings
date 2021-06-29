@@ -63,7 +63,7 @@ _.Zones =
 						{ 56.8, 74.6, DESOLACE },
 					},
 				}),
-				n(4684,  { 	-- Nether Sorceress
+				n(4684,  {	-- Nether Sorceress
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(2620)),	-- Augural Shroud

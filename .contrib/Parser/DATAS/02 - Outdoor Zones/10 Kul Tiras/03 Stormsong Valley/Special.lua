@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(876, { 	-- Kul'Tiras
+	m(876, {	-- Kul'Tiras
 		m(942, {	-- Stormsong Valley
 			n(-77, {	-- Special
 				i(163699, {	-- Annealed Honey Amulet

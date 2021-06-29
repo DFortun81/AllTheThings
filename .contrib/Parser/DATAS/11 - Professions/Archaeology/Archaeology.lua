@@ -169,7 +169,7 @@ profession(ARCHAEOLOGY, {
 				["sourceQuest"] = 40857,	-- Bits and Pieces
 				["g"] = {
 					i(136362, {	-- Ancient War Remnants
-						i(131724), 	-- Crystalline Eye of Undravius (TOY!)
+						i(131724),	-- Crystalline Eye of Undravius (TOY!)
 						crit(1, {	-- Crystalline Eye of Undravius
 							["achievementID"] = 10603,	-- A Keen Eye
 						}),
@@ -255,7 +255,7 @@ profession(ARCHAEOLOGY, {
 			--
 			q(41170, {	-- The Relic Renewed
 				["sourceQuests"] = {	-- Hidden Tracking quests used, as the other quests reset weekly.
-					41871, 	-- Darkheart Thicket: Through the Fog
+					41871,	-- Darkheart Thicket: Through the Fog
 					41870,	-- Dark Secrets
 					41869,	-- The Apocalypse Bringer
 					41868,	-- The Gates of Valor
@@ -820,8 +820,8 @@ profession(ARCHAEOLOGY, {
 				["sourceQuest"] = 41178,
 				["g"] = {
 					i(136383, {	-- Ravencrest Cache
-						i(131745), 	-- Key of Kalyndras
-						crit(6, { 	-- Key of Kalyndras
+						i(131745),	-- Key of Kalyndras
+						crit(6, {	-- Key of Kalyndras
 							["achievementID"] = 10603,	-- A Keen Eye
 						}),
 					}),
@@ -1631,8 +1631,8 @@ profession(ARCHAEOLOGY, {
 			}),
 		}),
 		n(-319, {	-- Weapons
-			i(89685), 	-- Spear of Xuen
-			i(89684),  	-- Umbrella of Chi-Ji
+			i(89685),	-- Spear of Xuen
+			i(89684),	-- Umbrella of Chi-Ji
 		}),
 	}),
 	currency(401,  {	-- Tol'vir

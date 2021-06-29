@@ -17,7 +17,7 @@ _.ExpansionFeatures =
 							}),
 						}),
 						n(VENDORS, {
-							n(77383, { 	-- Anders Longstitch <Leatherworker>
+							n(77383, {	-- Anders Longstitch <Leatherworker>
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									i(115358, {	-- Draenor Leatherworking

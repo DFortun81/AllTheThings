@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(905, { 	-- Argus
+	m(905, {	-- Argus
 		m(882, {	-- Mac'Aree
 			n(ACHIEVEMENTS, {
 				ach(12074, {	-- Shoot First, Loot Later

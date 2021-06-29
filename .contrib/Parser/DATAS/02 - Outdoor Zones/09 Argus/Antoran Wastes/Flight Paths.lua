@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(905, { 	-- Argus
+	m(905, {	-- Argus
 		m(885, {	-- Antoran Wastes
 			n(FLIGHT_PATHS, {
 				fp(1988, {	-- Hope's Landing, Antoran Wastes

@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(4, {	-- Cataclysm
-	inst(77, { 	-- Zul'Aman
+	inst(77, {	-- Zul'Aman
 		["mapID"] = ZULAMAN,
 		["coord"] = { 81.8, 64.3, GHOSTLANDS },	-- Zul'Aman, Ghostlands
 		["groups"] = {
@@ -107,7 +107,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						}),
 						i(69799),	-- Quickfinger Ring
 					}),
-					n(24396, { 	-- Forest Frog
+					n(24396, {	-- Forest Frog
 						["description"] = "Use an Amani Hex Stick on a Forest Frog for a chance to have Mojo spawn and hop into your bags.",
 						["cost"] = {
 							{ "i", 33865, 1 },	-- Amani Hex Stick
@@ -246,7 +246,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 })};
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-9979, {	-- Cataclysm
-		inst(77, { 	-- Zul'Aman
+		inst(77, {	-- Zul'Aman
 			n(-45, {	-- Mail
 				i(33964),	-- Helm of the Stormcaller - Never Added
 			}),

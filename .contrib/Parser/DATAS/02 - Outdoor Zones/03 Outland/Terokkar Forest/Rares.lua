@@ -61,7 +61,7 @@ _.Zones =
 						i(32715),	-- Akkarai's Talons
 					},
 				}),
-				n(18686, { 	-- Doomsayer Jurim
+				n(18686, {	-- Doomsayer Jurim
 					["coords"] = {
 						{ 55.4, 19.8, TEROKKAR_FOREST },
 						{ 52.6, 23.6, TEROKKAR_FOREST },
@@ -153,7 +153,7 @@ _.Zones =
 						i(32717),	-- Karro's Spine
 					},
 				}),
-				n(18685, { 	-- Okrek
+				n(18685, {	-- Okrek
 					["coords"] = {
 						{ 30.4, 44.0, TEROKKAR_FOREST },
 						{ 31.0, 43.0, TEROKKAR_FOREST },
@@ -198,7 +198,7 @@ _.Zones =
 						i(32541),	--	Terokk's Wisdom
 					},
 				}),
-				n(23162, { 	-- Vakkiz the Windrager
+				n(23162, {	-- Vakkiz the Windrager
 					["description"] = "Summoned at skull piles with 10 Time-Lost Scrolls. See Terokk's description for more info.",
 					["coords"] = {
 						{ 69.7, 74.7, TEROKKAR_FOREST },

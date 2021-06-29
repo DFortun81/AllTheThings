@@ -17,7 +17,7 @@ _.ExpansionFeatures =
 							}),
 						}),
 						n(VENDORS, {
-							n(79864, { 	-- Warra the Weaver <Tailor>
+							n(79864, {	-- Warra the Weaver <Tailor>
 								["races"] = HORDE_ONLY,
 								["g"] = {
 									i(115357, {	-- Draenor Tailoring

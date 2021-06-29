@@ -284,7 +284,7 @@ _.Zones =
 						crit(1, {	-- Orumo the Observer
 							["achievementID"] = 9638,	-- Heralds of the Legion
 						}),
-						i(119170), 	-- Eye of Observation Pet
+						i(119170),	-- Eye of Observation Pet
 						i(119375),	-- Chained Orb of Omniscience
 					},
 				}),
@@ -414,7 +414,7 @@ _.Zones =
 					["questID"] = 34148,
 					["coord"] = { 37.6, 74.7, 535 },
 					["g"] = {
-						o(227654, { 	-- Bonechewer Spear
+						o(227654, {	-- Bonechewer Spear
 							i(112371),	-- Warpstalker-Scale Grips
 						}),
 					},

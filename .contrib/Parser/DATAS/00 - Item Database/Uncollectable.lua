@@ -388,7 +388,7 @@ i(137215);	-- Cut Azsunite.  You get it for a split second after completing the 
 -- Recipes (Not actual recipes)
 i(168326);	-- Eye of Theras
 i(127772);	-- Gemcutter Module: Haste
-i(171315); 	-- Reuse me (MTMM)
+i(171315);	-- Reuse me (MTMM)
 
 
 

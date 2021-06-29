@@ -118,7 +118,7 @@ _.Secrets =
 				["sourceQuest"] = 53632,	-- Step 11: Tenth Ordinary Pebble
 				["description"] = "|cFFFFFFFFStep 12:|r The next pebble is also in Tiragarde Sound.  At the coordinates provided, there is a cave hidden behind a waterfall.  At the back right-hand side of the cave, there is a pillar with a couple of scrolls pinned to it.\n\nThe pebble is very well hidden, underneath the scroll that is unfurled over the ground.  It's around |cFFFFFFFF79.6, 18.0|r, and you have to be standing practically on top of it with your camera tilted very far back in order to see it.\n\nShift+click to refresh your collection.\n",
 			}),
-			o(303017, { 	-- Step 13: Twelfth Ordinary Pebble
+			o(303017, {	-- Step 13: Twelfth Ordinary Pebble
 				["model"] = 1068320,
 				["modelScale"] = .5,
 				["questID"] = 53634,

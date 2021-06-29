@@ -5,7 +5,7 @@
 _.BattlePets =
 {
 	n(-797,	{	-- Journal
-		pa(242, { 	-- Undead
+		pa(242, {	-- Undead
 			p(2958),	-- Backbone
 			p(2456),	-- Barnaby
 			p(2408),	-- Bilefang Skitter
@@ -59,15 +59,15 @@ _.BattlePets =
 			p(1351),	-- Macabre Marionette
 			p(3029),	-- Maw Crawler
 			p(2959),	-- Micromancer
-			p(2202), 	-- Miimii
+			p(2202),	-- Miimii
 			p(2638),	-- Minimancer
 			p(1145),	-- Mr. Bigglesworth
 			p(2963),	-- Mu'dud
-			p(2002), 	-- Naxxy
+			p(2002),	-- Naxxy
 			p(1954),	-- Nerubian Swarmer
 			p(2944),	-- Oonar's Arm
 			p(3046),	-- Putrid Geist
-			p(2080), 	-- Rattlejaw
+			p(2080),	-- Rattlejaw
 			p(439),		-- Restless Shadeling
 			p(2199),	-- Restored Revenant
 			p(2394),	-- Returned Hatchling

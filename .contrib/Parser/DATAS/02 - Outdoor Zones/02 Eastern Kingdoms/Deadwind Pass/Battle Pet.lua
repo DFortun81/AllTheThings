@@ -21,7 +21,7 @@ _.Zones =
 						i(89125),	-- Sack of Pet Supplies
 					},
 				}),
-				q(31916, { 	-- Grand Master Lydia Accoste (daily)
+				q(31916, {	-- Grand Master Lydia Accoste (daily)
 					["provider"] = { "n", 66522 },	-- Lydia Accoste
 					["coord"] = { 40.0, 76.4, DEADWIND_PASS },
 					["isDaily"] = true,

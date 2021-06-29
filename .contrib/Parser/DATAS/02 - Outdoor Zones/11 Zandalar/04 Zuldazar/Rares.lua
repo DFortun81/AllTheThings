@@ -52,7 +52,7 @@ _.Zones =
 					["questID"] = 50269,
 					["coord"] = { 74.2, 39.6, 862 },
 					["g"] = {
-						i(160952, {	--  Daggerjaw's Incisor
+						i(160952, {	-- Daggerjaw's Incisor
 							["bonusID"] = 4776,
 							["lvl"] = 110,
 						}),

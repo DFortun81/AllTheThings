@@ -4,7 +4,7 @@
 
 dofile("./DATAS/06 - Expansion Features/Common/Raid Caches.lua");
 _.Instances = { tier(7, {	-- Legion
-	inst(875, { 	-- Tomb of Sargeras
+	inst(875, {	-- Tomb of Sargeras
 		["isRaid"] = true,
 		["coord"] = { 64.3, 21.0, 646 },	-- Broken Shore
 		["maps"] = {
@@ -132,7 +132,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(147038),	-- Wakening Horror Spaulders
 					},
 				}),
-				ach(11787, { 	-- The Gates of Hell
+				ach(11787, {	-- The Gates of Hell
 					["cr"] = 111246,	-- Archmage Timear
 					["g"] = {
 						e(1862, {	-- Goroth
@@ -219,7 +219,7 @@ _.Instances = { tier(7, {	-- Legion
 						}),
 					},
 				}),
-				ach(11788, { 	-- Wailing Halls
+				ach(11788, {	-- Wailing Halls
 					["cr"] = 111246,	-- Archmage Timear
 					["g"] = {
 						e(1867, {	-- Demonic Inquisition
@@ -317,7 +317,7 @@ _.Instances = { tier(7, {	-- Legion
 						}),
 					},
 				}),
-				ach(11789, { 	-- Chamber of the Avatar
+				ach(11789, {	-- Chamber of the Avatar
 					["cr"] = 111246,	-- Archmage Timear
 					["g"] = {
 						e(1897, {	-- Maiden of Vigilance
@@ -384,7 +384,7 @@ _.Instances = { tier(7, {	-- Legion
 						}),
 					},
 				}),
-				ach(11790, { 	-- Deceiver's Fall
+				ach(11790, {	-- Deceiver's Fall
 					["cr"] = 111246,	-- Archmage Timear
 					["g"] = {
 						e(1898, {	-- Kil'jaeden
@@ -1435,9 +1435,9 @@ _.Instances = { tier(7, {	-- Legion
 })};
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-9982, {	-- Legion
-		inst(875, { 	-- Tomb of Sargeras
-			i(147036),	-- Fel-Stippled Legguards 		(removed Beta)
-			i(147058),	-- Chaos-Calming Wristguards 	(removed Beta)
+		inst(875, {	-- Tomb of Sargeras
+			i(147036),	-- Fel-Stippled Legguards		(removed Beta)
+			i(147058),	-- Chaos-Calming Wristguards	(removed Beta)
 			i(147074),	-- Vambraces of Resoulte Justice
 		}),
 	}),

@@ -120,7 +120,7 @@ _.ExpansionFeatures =
 							}),
 						}),
 						n(-153, {	-- Work Orders
-							n(86639, { 	-- Altar of Bones
+							n(86639, {	-- Altar of Bones
 								i(118043, {	-- Broken Bones
 									n(-659, {	-- Aspirant PvP Gear
 										cl(DEATHKNIGHT, {

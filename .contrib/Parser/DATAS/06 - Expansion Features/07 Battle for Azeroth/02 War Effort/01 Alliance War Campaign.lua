@@ -112,24 +112,24 @@ _.ExpansionFeatures =
 							["races"] = ALLIANCE_ONLY,
 							["isBreadcrumb"] = true,
 						}),
-						q(47099, { 	-- Get Your Bearings
+						q(47099, {	-- Get Your Bearings
 							["coord"] = { 75.7, 23.5, 1161 },
 							["races"] = ALLIANCE_ONLY,
 							["provider"] = { "n", 121235 },	-- Taelia
 						}),
-						q(46729, { 	-- The Old Knight
+						q(46729, {	-- The Old Knight
 							["sourceQuests"] = { 47099 },	-- Get Your Bearings
 							["coord"] = { 67.1, 15.3, 1161 },
 							["races"] = ALLIANCE_ONLY,
 							["provider"] = { "n", 124630 },	-- Taelia
 						}),
-						q(47186, { 	-- Sanctum of Sages
+						q(47186, {	-- Sanctum of Sages
 							["sourceQuests"] = { 46729 },	-- The Old Knight
 							["coord"] = { 68.1, 21.9, 1161 },
 							["races"] = ALLIANCE_ONLY,
 							["provider"] = { "n", 121235 },	-- Taelia
 						}),
-						q(47189, { 	-- A Nation Divided
+						q(47189, {	-- A Nation Divided
 							["sourceQuests"] = { 47186 },	-- Sanctum of Sages
 							["coord"] = { 68.1, 21.9, 1161 },
 							["provider"] = { "n", 121235 },	-- Taelia

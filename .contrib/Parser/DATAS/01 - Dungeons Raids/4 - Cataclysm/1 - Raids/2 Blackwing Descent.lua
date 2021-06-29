@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(4, {	-- Cataclysm
-	inst(73, { 	-- Blackwing Descent
+	inst(73, {	-- Blackwing Descent
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 85,

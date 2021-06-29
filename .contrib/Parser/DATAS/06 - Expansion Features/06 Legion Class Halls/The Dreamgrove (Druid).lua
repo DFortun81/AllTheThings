@@ -22,7 +22,7 @@ _.ExpansionFeatures =
 						i(140397),	-- G'hanir's Blossom
 					},
 				}),
-				filter(101, { 	-- Pet Battle
+				filter(101, {	-- Pet Battle
 					p(479),	-- Elfin Rabbit
 				}),
 				n(FLIGHT_PATHS, {
@@ -152,8 +152,8 @@ _.ExpansionFeatures =
 						["coord"] = { 39.6, 45.5, 715 },
 						["sourceQuests"] = {
 							42719,	-- Eye of Azshara: Cleansing the Dreamway
-							43365, 	-- The Cycle Continues
-							42129, 	-- The Pendant of Starlight
+							43365,	-- The Cycle Continues
+							42129,	-- The Pendant of Starlight
 						},
 						["maps"] = { 715 },	-- The Dreamway
 						["g"] = {

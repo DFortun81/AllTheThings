@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(876, { 	-- Kul'Tiras
+	m(876, {	-- Kul'Tiras
 		m(1161, {	-- Boralus
 			n(FLIGHT_PATHS, {
 				fp(2278, {	-- Mariner's Row, Tiragarde Sound [Alliance]

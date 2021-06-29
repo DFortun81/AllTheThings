@@ -5,7 +5,7 @@
 _.BattlePets =
 {
 	n(-797,	{	-- Journal
-		pa(237, { 	-- Beast
+		pa(237, {	-- Beast
 			p(635),				-- Adder
 			p(1571),			-- Albino River Calf
 			p(74),				-- Albino Snake

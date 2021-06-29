@@ -189,10 +189,10 @@ _.ExpansionFeatures =
 										i(181316),	-- Silvertip Dredwing
 										i(180414, {	-- Wakener's Runestag
 											["description"] = "Use |cFFFFD7002x|r |cffd05f10Wildseed Root Grain|r on an Anima Catalyst Plot & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7002x|r or more Anima Catalyst Plots nearby.",
-											-- ["cost"] = {	-- TODO: waiting to verify...
-											-- 	{ "i", 177699, 1 },	-- Divine Untamed Spirit Ardenweald
-											-- 	{ "i", 176832, 2 },	-- Wildseed Root Grain
-											-- },
+											--["cost"] = {	-- TODO: waiting to verify...
+											--	{ "i", 177699, 1 },	-- Divine Untamed Spirit Ardenweald
+											--	{ "i", 176832, 2 },	-- Wildseed Root Grain
+											--},
 										}),
 									},
 								}),

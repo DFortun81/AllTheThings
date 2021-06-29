@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(1, {	-- Classic
-	inst(227, { 	-- Blackfathom Deeps
+	inst(227, {	-- Blackfathom Deeps
 		["lvl"] = 15,
 		["maps"] = { BLACKFATHOM_DEEPS, BLACKFATHOM_DEEPS_LEVEL2, BLACKFATHOM_DEEPS_LEVEL3 },
 		["coord"] =	{ 16.53, 11.01, ASHENVALE },

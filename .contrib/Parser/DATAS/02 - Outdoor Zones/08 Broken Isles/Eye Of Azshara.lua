@@ -30,7 +30,7 @@ _.Zones =
 							q(43798, {	-- DANGER: Kosumoth the Hungering
 								["repeatable"] = true,
 								["g"] = {
-									i(140261), 	-- Hungering Claw (PET!)
+									i(140261),	-- Hungering Claw (PET!)
 									i(138201),	-- Fathom Dweller (MOUNT!)
 								},
 							}),

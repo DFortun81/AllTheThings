@@ -525,7 +525,7 @@ _.Zones =
 						["provider"] = { "n", 136091 },	-- Myra Cabot
 						["coord"] = { 75.01, 7.61, 1161 },
 						["description"] = "Requires 130 Kul'Tiran Mining.",
-						["sourceQuest"] = 48752, 	-- A Need For Coal
+						["sourceQuest"] = 48752,	-- A Need For Coal
 						["requireSkill"] = MINING,
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
@@ -533,7 +533,7 @@ _.Zones =
 						},
 					}),
 					-- Monelite Seam
-					q(48764, { 	-- Don't Pick a Fight
+					q(48764, {	-- Don't Pick a Fight
 						["provider"] = { "n", 136091 },	-- Myra Cabot
 						["coord"] = { 75.01, 7.61, 1161 },
 						["description"] = "Requires 50 Kul'Tiran Mining.",

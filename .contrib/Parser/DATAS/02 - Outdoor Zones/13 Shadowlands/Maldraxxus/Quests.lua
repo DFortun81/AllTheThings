@@ -419,7 +419,7 @@ _.Zones =
 					["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
 					["coord"] = { 56.4, 57.2, MALDRAXXUS },
 					["g"] = {
-						i(173891),	-- 	Plagueborn Slime (PET!)
+						i(173891),	--	Plagueborn Slime (PET!)
 					},
 				}),
 				q(58785, {	-- Smack And Grab

@@ -36,7 +36,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
 					["sourceQuest"] = 10957,	-- Redemption of the Ashtongue
 					["coord"] = { 62.0, 50.2, THE_BLACK_TEMPLE },
 					["groups"] = {
-						i(32757),	-- 	Blessed Medallion of Karabor
+						i(32757),	--	Blessed Medallion of Karabor
 					},
 				}),
 			}),

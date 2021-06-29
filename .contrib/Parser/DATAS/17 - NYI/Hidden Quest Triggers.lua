@@ -1596,8 +1596,8 @@ _.HiddenQuestTriggers = {
 		q(34562),	-- Talador - Trigger Teron'gor Defense Spawns),	-- triggers in a cave with Soulbind Nyami at Gul'Rok
 		q(34574),	-- Talador - Unused. Triggered when choosing the Arcane Sanctum
 		q(34101),	-- Talador - Vignette: Aruumel's Worn Mace	-- triggers when looting "Lightbearer"
-		q(34112), 	-- Talador - Vignette: Guy 1 Found,	-- triggers breaking a deathweb cocoon in Deathweb Hollow (A)
-		q(34114), 	-- Talador - Vignette: Four Friends Found,	-- triggers when all 4 citizens are freed from deathweb cocoons, making the Deathweb Toxin Vial treasure lootable (A)
+		q(34112),	-- Talador - Vignette: Guy 1 Found,	-- triggers breaking a deathweb cocoon in Deathweb Hollow (A)
+		q(34114),	-- Talador - Vignette: Four Friends Found,	-- triggers when all 4 citizens are freed from deathweb cocoons, making the Deathweb Toxin Vial treasure lootable (A)
 		q(34115),	-- Talador - Vignette: Four Friends Found,	-- triggers when all 4 citizens are freed from deathweb cocoons, making the Deathweb Toxin Vial treasure lootable
 		q(34110),	-- Talador - Vignette: Girl 1 Found,	-- triggers breaking a a deathweb cocoon in Deathweb Hollow
 		q(34116),	-- Talador - Vignette: Girl 1 Found,	-- triggers breaking a a deathweb cocoon in Deathweb Hollow
@@ -1747,8 +1747,8 @@ _.HiddenQuestTriggers = {
 		q(54705),	-- Level 17 human monk looting mailbox in garrisson
 
 		-- ASSAULTS
-		q(36808), 	-- Missive completion: Assault on Shattrath Harbour
-		q(36809), 	-- Missive completion: Assault on the Heart of Shattrath
+		q(36808),	-- Missive completion: Assault on Shattrath Harbour
+		q(36809),	-- Missive completion: Assault on the Heart of Shattrath
 		q(36534),	-- Garrison Max-level Choice Tracker: (GROUP) Talador Shattrath City, West (When picking up Assault on the Heart of Shattrath on Horde character)
 		q(36547),	-- Garrison Max-level Choice Tracker: (GROUP) Talador Shattrath City, West (When picking up Assault on the Heart of Shattrath on Horde character)
 		q(36663),	-- Garrison Max-level Choice Tracker: ANY CHOICE MADE (When picking up Assault on the Heart of Shattrath on Horde character)
@@ -1969,7 +1969,7 @@ _.HiddenQuestTriggers = {
 		q(38420),	-- triggered when turning in #38624, "Cry Thunder!"
 		q(42860),	-- Tracking - God-King Scene — something happened around turning in #38811/39791 that triggered some /yells from God-King Skovald
 		q(45365),	-- Treasure: Wand of Simulated Life – part of some legion engineering quest
-		q(47255), 	-- Triggers after completing "Mark of the Sentinax" (47139)
+		q(47255),	-- Triggers after completing "Mark of the Sentinax" (47139)
 		q(39017, {	-- Triggered when turning in first DK artifact completion quest (likely triggers after any first artifact quest for DK)
 			-- Added sourcequests in here since this HQT unlocks the Legion DK Flight Path...
 			["name"] = "Flight Path Unlock",
@@ -2073,7 +2073,7 @@ _.HiddenQuestTriggers = {
 		--  Engineering
 		q(41100),	-- FLAG - Swap Didis - triggered after completing Endless Possibilities (40854)
 		--	Jewelcrafting
-		q(40557), 	-- FLAG: Clive Cozen Leave - Triggers after completing Hidden Intentions (40539)
+		q(40557),	-- FLAG: Clive Cozen Leave - Triggers after completing Hidden Intentions (40539)
 		--	Leatherworking
 		q(44351),	-- FLAG: Upgrade First Crafted Item - triggers when you craft the first legion armour item (may not be LW specific)
 		q(47094),	-- Broken Shore - Choice: Leatherworking (L) - triggers when you choose to craft the leather legendary at Eliezer Hammerbeard (Nether Disruptor)
@@ -2539,8 +2539,8 @@ _.HiddenQuestTriggers = {
 		q(57726),	-- triggers on Honey Smasher kill together with 57674 so putting it here
 		--	( 57.1, 51.2 )	-- looting honey triggered 56170, 56414, 57702, 57703
 		q(56170),	-- \
-		q(56414),	-- 	\	all 4 triggered at the same time after i looted the jelly at the end of the Lush Flower Bed event.  appears to be repeatable
-		q(57702),	-- 	/
+		q(56414),	--	\	all 4 triggered at the same time after i looted the jelly at the end of the Lush Flower Bed event.  appears to be repeatable
+		q(57702),	--	/
 		q(57703),	-- /
 		q(56113),	-- triggered after Honeyback Harvester event that got to round 23 or 24
 		q(57700),	-- triggered after Honeyback Harvester event that got to round 23 or 24
@@ -3626,7 +3626,7 @@ _.HiddenQuestTriggers = {
 		-- Illusions
 		q(63004),	-- triggered when learning Illusion: Devoted Spirit
 		q(62964),	-- triggered when learning Illusion: Undying Spirit
-		q(61727), 	-- triggered when learning Illusion: Sinsedge
+		q(61727),	-- triggered when learning Illusion: Sinsedge
 
 		-- Adventures
 		-- Completing mi(2174), "Tutorial: Dispose of the Detritus"

@@ -162,7 +162,7 @@ profession(FISHING, {
 			["description"] = "When the short buff expires, this item will disappear from your inventory and a Bitestone Fishbrul will spawn.  Kill it for the lure.",
 			["g"] = {
 				n(102347, {	-- Bitestone Fishbrul
-					i(133710), 	-- Salmon Lure
+					i(133710),	-- Salmon Lure
 				}),
 			},
 		}),

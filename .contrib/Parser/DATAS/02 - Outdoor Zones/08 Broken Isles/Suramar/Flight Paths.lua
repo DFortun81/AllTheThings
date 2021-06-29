@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(619, { 	-- The Broken Isles
+	m(619, {	-- The Broken Isles
 		m(680, {	-- Suramar
 			n(FLIGHT_PATHS, {
 				fp(1879, {	-- Crimson Thicket, Suramar

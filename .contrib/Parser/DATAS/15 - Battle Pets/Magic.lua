@@ -5,7 +5,7 @@
 _.BattlePets =
 {
 	n(-797,	{	-- Journal
-		pa(243, { 	-- Magic
+		pa(243, {	-- Magic
 			p(1624),	-- Abyssius
 			p(2420),	-- Accursed Hexxer
 			p(3051),	-- Animated Cruor
@@ -14,7 +14,7 @@ _.BattlePets =
 			p(1160),	-- Arcane Eye
 			p(2131),	-- Arcane Gorger
 			p(3054),	-- Archivist's Quill
-			p(2439), 	-- Azerite Puddle
+			p(2439),	-- Azerite Puddle
 			p(2352),	-- Baa'l
 			p(2582),	-- Baoh-Xi
 			p(1964),	-- Blood Boil
@@ -27,7 +27,7 @@ _.BattlePets =
 			p(2846),	-- Corrupted Tentacle
 			p(1931),	-- Court Scribe
 			p(1962),	-- Creeping Tentacle
-			p(2115), 	-- Cross Gazer
+			p(2115),	-- Cross Gazer
 			p(1063),	-- Darkmoon Eye
 			p(3041),	-- Death Seeker
 			p(114),		-- Disgusting Oozeling
@@ -49,14 +49,14 @@ _.BattlePets =
 			p(2836),	-- Eye of Corruption
 			p(1719),	-- Eye of Inquisition
 			p(1576),	-- Eye of Observation
-			p(2090), 	-- Faceless Mindlasher
-			p(2083), 	-- Faceless Minion
+			p(2090),	-- Faceless Mindlasher
+			p(2083),	-- Faceless Minion
 			p(2132),	-- Felcrazed Wyrm
 			p(342),		-- Festival Lantern
 			p(1245),	-- Filthling
 			p(2187),	-- Filthy Slime
 			p(2837),	-- Gloop
-			p(2120), 	-- Grasping Manifestation
+			p(2120),	-- Grasping Manifestation
 			un(10, p(1174)),	-- Gusting Grimoire
 			p(1346),	-- Harmonious Porcupette
 			p(1718),	-- Hateful Eye

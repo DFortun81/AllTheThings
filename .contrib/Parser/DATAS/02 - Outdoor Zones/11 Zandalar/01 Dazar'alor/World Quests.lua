@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(875, { 	-- Zandalar
+	m(875, {	-- Zandalar
 		m(1163, {	-- Dazar'alor
 			n(WORLD_QUESTS, {
 				n(QUESTS, {
@@ -17,7 +17,7 @@ _.Zones =
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
-					q(50845, { 	-- Kul'krazahn
+					q(50845, {	-- Kul'krazahn
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
@@ -26,7 +26,7 @@ _.Zones =
 						--["races"] = HORDE_ONLY,	-- This is likely Horde Only due to quests that need to be completed for phasing but needs verification
 						["isWorldQuest"] = true,
 					}),
-					q(50747, { 	-- No Good Amani
+					q(50747, {	-- No Good Amani
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
@@ -39,7 +39,7 @@ _.Zones =
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
-					q(49413, { 	-- Scamps With Scrolls
+					q(49413, {	-- Scamps With Scrolls
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
@@ -243,7 +243,7 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["requireSkill"] = ENGINEERING,
 						["g"] = {
-							i(162343), 	-- Schematic: Crow's Nest Scope [Rank 3]
+							i(162343),	-- Schematic: Crow's Nest Scope [Rank 3]
 						},
 					}),
 					q(52373, {	-- Work Order: Electroshock Mount Motivator
@@ -261,7 +261,7 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["requireSkill"] = ENCHANTING,
 						["g"] = {
-							i(162299), 	-- Formula: Enchant Ring - Seal of Haste [Rank 3]
+							i(162299),	-- Formula: Enchant Ring - Seal of Haste [Rank 3]
 						},
 					}),
 					q(52359, {	-- Work Order: Enchant Ring - Seal of Mastery
@@ -270,7 +270,7 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["requireSkill"] = ENCHANTING,
 						["g"] = {
-							i(162300), 	-- Formula: Enchant Ring - Seal of Mastery [Rank 3]
+							i(162300),	-- Formula: Enchant Ring - Seal of Mastery [Rank 3]
 						},
 					}),
 					q(52369, {	-- Work Order: Incendiary Ammunition
@@ -279,7 +279,7 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["requireSkill"] = ENGINEERING,
 						["g"] = {
-							i(162321), 	-- Schematic: Incendiary Ammunition [Rank 3]
+							i(162321),	-- Schematic: Incendiary Ammunition [Rank 3]
 						},
 					}),
 					q(51013, {	-- Work Order: Mistscale

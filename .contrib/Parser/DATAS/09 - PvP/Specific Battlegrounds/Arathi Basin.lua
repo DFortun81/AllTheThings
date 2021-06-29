@@ -21,7 +21,7 @@ _.PVP =
 					["races"] = HORDE_ONLY,
 					["icon"] = "Interface\\Icons\\spell_shadow_psychichorrors",
 					["g"] = {
-						ach(710), 	-- The Defiler
+						ach(710),	-- The Defiler
 						n(QUESTS, {
 							q(8265, {	-- Defiler's Advanced Care Package
 								["provider"] = { "n", 15126 },	-- Rutherford Twing
@@ -65,7 +65,7 @@ _.PVP =
 					["races"] = ALLIANCE_ONLY,
 					["icon"] = "Interface\\Icons\\ability_warrior_rallyingcry",
 					["g"] = {
-						ach(711), 	-- Knight of Arathor
+						ach(711),	-- Knight of Arathor
 						n(QUESTS, {
 							q(8262, {	-- Arathor Advanced Care Package
 								["provider"] = { "n", 15127 },	-- Samuel Hawke

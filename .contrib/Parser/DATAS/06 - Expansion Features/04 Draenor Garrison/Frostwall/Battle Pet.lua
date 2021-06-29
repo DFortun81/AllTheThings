@@ -6,7 +6,7 @@ _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
 		m(590, {	-- Frostwall
-			filter(101, { 	-- Battle Pet
+			filter(101, {	-- Battle Pet
 				["races"] = HORDE_ONLY,
 				["g"] = {
 					p(560),	-- Sea Gull

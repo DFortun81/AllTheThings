@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(3, {	-- Wrath of the Lich King
-	inst(758, { 	-- Icecrown Citadel
+	inst(758, {	-- Icecrown Citadel
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 80,
@@ -15,7 +15,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				["achievementID"] = 4598,	-- The Ashen Verdict (Achievement)
 				["g"] = {
 					title(141),	-- Of the Ashen Verdict
-					n(37687, { 	-- Alchemist Finklestein
+					n(37687, {	-- Alchemist Finklestein
 						i(49959, {	-- Pattern: Bladeborn Leggings
 							["cost"] = { { "i", 49908, 1 }, },	-- 1x Primordial Saronite
 						}),
@@ -93,7 +93,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							}),
 						},
 					}),
-				-- 	Quest Chain: Path of Courage
+				-- Quest Chain: Path of Courage
 					q(24827, {	-- Path of Courage (Honored)
 						["minReputation"] = { 1156, HONORED },	-- The Ashen Verdict
 						["sourceQuest"] = 24815,	-- Choose Your Path
@@ -540,7 +540,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				},
 			}),
 			n(VENDORS, {
-				n(37999, { 	-- Alana Moonstrike <Druid Armor>
+				n(37999, {	-- Alana Moonstrike <Druid Armor>
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(50821),	-- Lasherweave Cover
@@ -740,7 +740,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						}),
 					},
 				}),
-				n(37688, { 	-- Crusader Grimtong <Warrior Armor>
+				n(37688, {	-- Crusader Grimtong <Warrior Armor>
 					i(51214, {	-- Sanctified Ymirjar Lord's Battleplate (N)
 						["cost"] = {
 							{ "i", 52026, 1 },	-- Protector's Mark of Sanctification
@@ -872,7 +872,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(50846),	-- Ymirjar Lord's Pauldrons
 					i(50082),	-- Ymirjar Lord's Shoulderplates
 				}),
-				n(37696, { 	-- Crusader Halford <Paladin Armor>
+				n(37696, {	-- Crusader Halford <Paladin Armor>
 					i(50328),	-- Lightsworn Battleplate
 					i(50864),	-- Lightsworn Chestguard
 					i(50862),	-- Lightsworn Faceguard
@@ -1069,7 +1069,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					}),
 				}),
-				n(37993, { 	-- Gerardo the Suave <Hunter Armor>
+				n(37993, {	-- Gerardo the Suave <Hunter Armor>
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(50114),	-- Ahn'Kahar Blood Hunter's Handguards
@@ -1139,7 +1139,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						}),
 					},
 				}),
-				n(38858, { 	-- Goodman the "Closer" <Legacy Justice Quartermaster>
+				n(38858, {	-- Goodman the "Closer" <Legacy Justice Quartermaster>
 					["g"] = {
 						i(50993),	-- Band of the Night Raven
 						i(50996),	-- Belt of Omission
@@ -1185,7 +1185,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						{"exclude", "headerID", -384, -385, -386, -322, -326, -328, -330, -319 },	-- Exclude Neck, Finger, Trinkets, Back, Wrist, Waist, Feet and Weapons
 					},
 				}),
-				n(38181, { 	-- Haragg the Unseen <Warlock Armor>
+				n(38181, {	-- Haragg the Unseen <Warlock Armor>
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(50240),	-- Dark Coven Gloves
@@ -1255,7 +1255,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						}),
 					},
 				}),
-				n(37991, { 	-- Ikfirus the Vile <Rogue Armor>
+				n(37991, {	-- Ikfirus the Vile <Rogue Armor>
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(51189, {	-- Sanctified Shadowblade Breastplate (N)
@@ -1325,7 +1325,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(50105),	-- Shadowblade Pauldrons
 					},
 				}),
-				n(38840, { 	-- Jedebia <Shaman Armor>
+				n(38840, {	-- Jedebia <Shaman Armor>
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(50830),	-- Frost Witch's Chestguard
@@ -1525,7 +1525,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						}),
 					},
 				}),
-				n(38283, { 	-- Malfus Grimfrost <Mage Armor>
+				n(38283, {	-- Malfus Grimfrost <Mage Armor>
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(50275),	-- Bloodmage Gloves
@@ -1595,7 +1595,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						}),
 					},
 				}),
-				n(38182, { 	-- Niby the Almighty <Warlock Armor>
+				n(38182, {	-- Niby the Almighty <Warlock Armor>
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(50240),	-- Dark Coven Gloves
@@ -1665,7 +1665,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						}),
 					},
 				}),
-				n(38316, { 	-- Ormus the Penitent <Death Knight Armor>
+				n(38316, {	-- Ormus the Penitent <Death Knight Armor>
 					i(51129, {	-- Sanctified Scourgelord Battleplate (N)
 						["cost"] = {
 							{ "i", 52025, 1 },	-- Vanquisher's Mark of Sanctification
@@ -1797,7 +1797,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(50853),	-- Scourgelord Pauldrons
 					i(50098),	-- Scourgelord Shoulderplates
 				}),
-				n(38054, { 	-- Scott the Merciful <Priest Armor>
+				n(38054, {	-- Scott the Merciful <Priest Armor>
 					i(50392),	-- Crimson Acolyte Cowl
 					i(50766),	-- Crimson Acolyte Gloves
 					i(50391),	-- Crimson Acolyte Handwraps
@@ -1929,7 +1929,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					}),
 				}),
-				n(37998, { 	-- Talan Moonstrike <Hunter Armor>
+				n(37998, {	-- Talan Moonstrike <Hunter Armor>
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(50114),	-- Ahn'Kahar Blood Hunter's Handguards
@@ -1999,7 +1999,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						}),
 					},
 				}),
-				n(37992, { 	-- Tortunok <Druid Armor>
+				n(37992, {	-- Tortunok <Druid Armor>
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(50821),	-- Lasherweave Cover
@@ -2199,7 +2199,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						}),
 					},
 				}),
-				n(38284, { 	-- Uvlus Banefire <Mage Armor>
+				n(38284, {	-- Uvlus Banefire <Mage Armor>
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(50275),	-- Bloodmage Gloves
@@ -2269,7 +2269,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						}),
 					},
 				}),
-				n(38841, { 	-- Vol'guk <Shaman Armor>
+				n(38841, {	-- Vol'guk <Shaman Armor>
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(50830),	-- Frost Witch's Chestguard
@@ -2469,7 +2469,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						}),
 					},
 				}),
-				n(37997, { 	-- Yili <Rogue Armor>
+				n(37997, {	-- Yili <Rogue Armor>
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(51189, {	-- Sanctified Shadowblade Breastplate (N)
@@ -2938,8 +2938,8 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							}),
 							ach(4537),	-- I've Gone and Made a Mess (10 player)
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
-							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
+							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
+							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(142095),	-- Remains of a Blood Beast (PET!)
 							i(51898),	-- Mag'hari Chieftain's Staff
 							i(51905),	-- Ramaladni's Blade of Culling
@@ -3020,8 +3020,8 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							}),
 							ach(4578),	-- Nausea, Heartburn, Indigestion... (10 player)
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
-							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
+							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
+							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(142096),	-- Putricide's Alchemy Supplies (PET!)
 							i(51868),	-- Flesh-Carving Scalpel
 							i(51869),	-- The Facelifter
@@ -3076,8 +3076,8 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 								crit(2),	-- Defeat Blood-Queen Lana'thel while a vampire
 							}),
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
-							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
+							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
+							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(51846),	-- Bloodsipper
 							i(51838),	-- Lana'thel's Bloody Nail
 							i(51845),	-- Stakethrower
@@ -3124,8 +3124,8 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							}),
 							ach(4580),	-- All You Can Eat (10 player)
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
-							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
+							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
+							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(142097),	-- Skull of a Frozen Whelp (PET!)
 							i(51815),	-- Bleak Coldarra Carver
 							i(51819),	-- Splintershard
@@ -3153,8 +3153,8 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							ach(4601),	-- Been Waiting a Long Time for This (10 player)
 							ach(4581),	-- Neck-Deep in Vile (10 player)
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
-							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
+							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
+							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(142099),	-- Call of the Frozen Blade (PET!)
 							i(138955),	-- Illusion: Rune of Razorice
 							i(51943),	-- Halion, Staff of Forgotten Love
@@ -3282,8 +3282,8 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							}),
 							ach(4613),	-- I've Gone and Made a Mess (25 player)
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
-							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
+							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
+							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(142095),	-- Remains of a Blood Beast (PET!)
 							i(50412),	-- Bloodvenom Blade
 							i(50014),	-- Greatcloak of the Turned Champion
@@ -3373,8 +3373,8 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							}),
 							ach(4616),	-- Nausea, Heartburn, Indigestion... (25 player)
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
-							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
+							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
+							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(142096),	-- Putricide's Alchemy Supplies (PET!)
 							i(50179),	-- Last Word
 							i(50068),	-- Rigormortis
@@ -3425,8 +3425,8 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 								crit(2),	-- Defeat Blood-Queen Lana'thel while a vampire
 							}),
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
-							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
+							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
+							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(50178),	-- Bloodfall
 							i(50181),	-- Divine Light
 							i(50065),	-- Icecrown Glacial Wall
@@ -3471,8 +3471,8 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							}),
 							ach(4620),	-- All You Can Eat (25 player)
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
-							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
+							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
+							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(142097),	-- Skull of a Frozen Whelp (PET!)
 							i(50423),	-- Sundial of Eternal Dusk
 							i(50421),	-- Sindragosa's Cruel Claw
@@ -3493,8 +3493,8 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 								title(140),	-- the Kingslayer
 							}),
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
-							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
-							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
+							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
+							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(142098),	-- Drudge Remains (PET!)
 							i(138955),	-- Illusion: Rune of Razorice
 							i(50429),	-- Archus, Greatstaff of Antonidas
@@ -3623,9 +3623,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							ach(4613),	-- I've Gone and Made a Mess (25 player)
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52030),	-- Conqueror's Mark of Sanctification (Heroic)
-							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
+							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
 							i(52029),	-- Protector's Mark of Sanctifaction (Heroic)
-							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
+							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(52028),	-- Vanquisher's Mark of Sanctification (Heroic)
 							i(142095),	-- Remains of a Blood Beast (PET!)
 							i(50672),	-- Bloodvenom Blade
@@ -3717,9 +3717,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							ach(4616),	-- Nausea, Heartburn, Indigestion... (25 player)
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52030),	-- Conqueror's Mark of Sanctification (Heroic)
-							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
+							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
 							i(52029),	-- Protector's Mark of Sanctifaction (Heroic)
-							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
+							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(52028),	-- Vanquisher's Mark of Sanctification (Heroic)
 							i(142096),	-- Putricide's Alchemy Supplies (PET!)
 							i(50708),	-- Last Word
@@ -3772,9 +3772,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							}),
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52030),	-- Conqueror's Mark of Sanctification (Heroic)
-							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
+							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
 							i(52029),	-- Protector's Mark of Sanctifaction (Heroic)
-							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
+							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(52028),	-- Vanquisher's Mark of Sanctification (Heroic)
 							i(50727),	-- Bloodfall
 							i(50725),	-- Dying Light
@@ -3821,9 +3821,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							ach(4620),	-- All You Can Eat (25 player)
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52030),	-- Conqueror's Mark of Sanctification (Heroic)
-							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
+							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
 							i(52029),	-- Protector's Mark of Sanctifaction (Heroic)
-							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
+							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(52028),	-- Vanquisher's Mark of Sanctification (Heroic)
 							i(142097),	-- Skull of a Frozen Whelp (PET!)
 							i(50635),	-- Sundial of Eternal Dusk
@@ -3847,9 +3847,9 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							i(50818),	-- Invincible's Reins (MOUNT!)
 							i(52027),	-- Conqueror's Mark of Sanctification (Normal)
 							i(52030),	-- Conqueror's Mark of Sanctification (Heroic)
-							i(52026), 	-- Protector's Mark of Sanctifaction (Normal)
+							i(52026),	-- Protector's Mark of Sanctifaction (Normal)
 							i(52029),	-- Protector's Mark of Sanctifaction (Heroic)
-							i(52025), 	-- Vanquisher's Mark of Sanctification (Normal)
+							i(52025),	-- Vanquisher's Mark of Sanctification (Normal)
 							i(52028),	-- Vanquisher's Mark of Sanctification (Heroic)
 							i(142099),	-- Call of the Frozen Blade (PET!)
 							i(138955),	-- Illusion: Rune of Razorice

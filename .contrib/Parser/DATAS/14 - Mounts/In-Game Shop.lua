@@ -4,7 +4,7 @@
 
 _.Mounts =
 {
-	n(-36, { 	-- In-Game Shop
+	n(-36, {	-- In-Game Shop
 		un(BLIZZARD_BALANCE, mount(302361, {	-- Alabaster Stormtalon		-- No in game item
 			["races"] = ALLIANCE_ONLY,
 		})),

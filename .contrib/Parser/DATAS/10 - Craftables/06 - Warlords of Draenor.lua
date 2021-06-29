@@ -136,12 +136,12 @@ _.Craftables =
 				i(116259),	-- Burnished Leather Bag
 				i(116260),	-- Burnished Mining Bag
 			}),
-			n(-322, { 	-- Cloak
+			n(-322, {	-- Cloak
 				WOD_CRAFTED_ITEM(116175, 128014),	-- Brilliant Burnished Cloak + Burnished Essence
 				WOD_CRAFTED_ITEM(116174, 128014),	-- Nimble Burnished Cloak + Burnished Essence
 				WOD_CRAFTED_ITEM(116171, 128014),	-- Powerful Burnished Cloak + Burnished Essence
 			}),
-			n(-44, { 	-- Leather
+			n(-44, {	-- Leather
 				i(116164),	-- Journeying Helm
 				i(116165),	-- Journeying Robes
 				i(116166),	-- Journeying Slacks
@@ -154,7 +154,7 @@ _.Craftables =
 				WOD_CRAFTED_ITEM(116180, 128014),	-- Supple Vest + Burnished Essence
 				WOD_CRAFTED_ITEM(116183, 128014),	-- Supple Waistguard + Burnished Essence
 			}),
-			n(-45, { 	-- Mail
+			n(-45, {	-- Mail
 				i(116167),	-- Traveling Helm
 				i(116169),	-- Traveling Leggings
 				i(116168),	-- Traveling Tunic
@@ -193,7 +193,7 @@ _.Craftables =
 			n(-160, {	-- Mounts
 				i(115363),	-- Creeping Carpet
 			}),
-			filter(101, { 	-- Pet Battle
+			filter(101, {	-- Pet Battle
 				i(113216),	-- Elekk Plushie
 			}),
 		}),

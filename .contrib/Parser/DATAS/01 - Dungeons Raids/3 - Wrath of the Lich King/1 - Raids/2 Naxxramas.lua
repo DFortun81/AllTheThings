@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(3, {	-- Wrath of the Lich King
-	inst(754, { 	-- Naxxramas
+	inst(754, {	-- Naxxramas
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 80,
@@ -100,7 +100,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					})),
 				}),
-				n(-370, { 	-- The Plague Quarter
+				n(-370, {	-- The Plague Quarter
 					ach(566),	-- The Plague Quarter (10 player)
 					cr(15954, e(1604, {	-- Noth the Plaguebringer
 						["description"] = "Responsible for the creation of the process that distills the souls of the living and places them within the cold cage of undeath, Noth was observed to be refining this process even now.",
@@ -173,7 +173,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					})),
 				}),
-				n(-369, { 	-- The Military Quarter
+				n(-369, {	-- The Military Quarter
 					ach(568),	-- The Military Quarter (10 player)
 					cr(16061, e(1607, {	-- Instructor Razuvious
 						["description"] = "Kel'Thuzad's appointed trainer of all death knights. It is said that his own technique is so potent, only a disciple of his could possibly withstand his might.",
@@ -240,7 +240,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					})),
 				}),
-				n(-367, { 	-- The Construct Quarter
+				n(-367, {	-- The Construct Quarter
 					ach(564),	-- The Construct Quarter (10 player)
 					cr(16028, e(1610, {	-- Patchwerk
 						["description"] = "When word of his existence first reached the ears of the Brotherhood, none believed the tales of an abomination with such immense speed and strength. Fewer still believed it when he fell the first time... Patchwerk want to play!",
@@ -441,7 +441,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					})),
 				}),
-				n(-371, { 	-- The Upper Necropolis
+				n(-371, {	-- The Upper Necropolis
 					cr(15989, e(1614, {	-- Sapphiron
 						["description"] = "Once a noble blue dragon within the mountains of Northrend, Sapphiron was slain by Arthas during his campaign through the frozen north. Resurrected to serve him, Sapphiron guards Kel'Thuzad's lair eternally, awaiting those who would dare trespass upon his master.",
 						["groups"] = {
@@ -524,7 +524,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(40406),	-- Inevitable Defeat
 					i(40412),	-- Ousted Bead Necklace
 				}),
-				n(-368, { 	-- The Arachnid Quarter
+				n(-368, {	-- The Arachnid Quarter
 					ach(563),	-- The Arachnid Quarter (25 player)
 					cr(15956, e(1601, {	-- Anub'Rekhan
 						["description"] = "Anub'Rekhan, one of the finest Spider Lords of Azjol'Nerub, was brought under control of the Scourge when he and his commander, Anub'Arak, were finally defeated by the Lich King many years ago. It is said he was the most loyal of Anub'Arak's commanders.",
@@ -638,7 +638,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					})),
 				}),
-				n(-370, { 	-- The Plague Quarter
+				n(-370, {	-- The Plague Quarter
 					ach(567),	-- The Plague Quarter (25 player)
 					cr(15954, e(1604, {	-- Noth the Plaguebringer
 						["description"] = "Responsible for the creation of the process that distills the souls of the living and places them within the cold cage of undeath, Noth was observed to be refining this process even now.",
@@ -741,7 +741,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					})),
 				}),
-				n(-369, { 	-- The Military Quarter
+				n(-369, {	-- The Military Quarter
 					ach(569),	-- The Military Quarter (25 player)
 					cr(16061, e(1607, {	-- Instructor Razuvious
 						["description"] = "Kel'Thuzad's appointed trainer of all death knights. It is said that his own technique is so potent, only a disciple of his could possibly withstand his might.",
@@ -840,7 +840,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					})),
 				}),
-				n(-367, { 	-- The Construct Quarter
+				n(-367, {	-- The Construct Quarter
 					ach(565),	-- The Construct Quarter (25 player)
 					cr(16028, e(1610, {	-- Patchwerk
 						["description"] = "When word of his existence first reached the ears of the Brotherhood, none believed the tales of an abomination with such immense speed and strength. Fewer still believed it when he fell the first time... Patchwerk want to play!",
@@ -1116,7 +1116,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					})),
 				}),
-				n(-371, { 	-- The Upper Necropolis
+				n(-371, {	-- The Upper Necropolis
 					cr(15989, e(1614, {	-- Sapphiron
 						["description"] = "Once a noble blue dragon within the mountains of Northrend, Sapphiron was slain by Arthas during his campaign through the frozen north. Resurrected to serve him, Sapphiron guards Kel'Thuzad's lair eternally, awaiting those who would dare trespass upon his master.",
 						["groups"] = {

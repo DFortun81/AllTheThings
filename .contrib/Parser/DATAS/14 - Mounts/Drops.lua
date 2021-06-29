@@ -4,7 +4,7 @@
 
 _.Mounts =
 {
-	n(-26, { 	-- Drop
+	n(-26, {	-- Drop
 		i(143643),	-- Abyss Worm
 		i(152904),	-- Acid Belcher
 		i(168830),	-- Aerial Unit R-21/X
@@ -43,7 +43,7 @@ _.Mounts =
 		i(43953),	-- Blue Drake
 		i(44151),	-- Blue Proto-Drake
 		i(21218),	-- Blue Qiraji Battle Tank
-		i(163578), 	-- Broken Highland Mustang
+		i(163578),	-- Broken Highland Mustang
 		i(43951),	-- Bronze Drake
 		i(184160),	-- Bulbous Necroray
 		i(181818),	-- Chewed Reins of the Callow Flayedwing
@@ -186,7 +186,7 @@ _.Mounts =
 		i(104269),	-- Thundering Onyx Cloud Serpent
 		i(90655),	-- Thundering Ruby Cloud Serpent
 		i(44168),	-- Time-Lost Proto-Drake
-		i(159921), 	-- Tomb Stalker
+		i(159921),	-- Tomb Stalker
 		i(116658),	-- Tundra Icehoof
 		i(163584),  -- Twilight Avenger
 		i(43954),	-- Twilight Drake

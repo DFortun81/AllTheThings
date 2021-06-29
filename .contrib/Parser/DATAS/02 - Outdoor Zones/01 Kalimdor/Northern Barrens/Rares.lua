@@ -84,7 +84,7 @@ _.Zones =
 						{ 40.0, 45.6, NORTHERN_BARRENS },
 					},
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(1355)), 	-- Buckskin Cape
+						un(REMOVED_FROM_GAME, i(1355)),	-- Buckskin Cape
 					},
 				}),
 				n(5831, {	-- Swiftmane
@@ -102,7 +102,7 @@ _.Zones =
 						--{ 56.0, 49.3, NORTHERN_BARRENS },	-- Wowhead notes this as another coord, but only before cataclysm
 					},
 					["g"] = {
-						i(48118),  	-- Leaping Hatchling
+						i(48118),	-- Leaping Hatchling
 					},
 				}),
 				n(5842, {	-- Takk the Leaper

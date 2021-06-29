@@ -1133,7 +1133,7 @@ _.ExpansionFeatures =
 						i(174760),	-- Mantid Relic Fragment
 					}),
 				}),
-				n(-169, { 	-- Emissary Quests
+				n(-169, {	-- Emissary Quests
 					q(58096, {	-- Supplies from the Rajani
 						["repeatable"] = true,
 						["g"] = {

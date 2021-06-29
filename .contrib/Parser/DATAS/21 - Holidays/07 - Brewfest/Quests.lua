@@ -15,7 +15,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 					["races"] = ALLIANCE_ONLY,
 					["maps"] = { DUN_MOROGH },
 					["g"] = {
-						i(56836), 	-- Overflowing Purple Brewfest Stein
+						i(56836),	-- Overflowing Purple Brewfest Stein
 					},
 					["isYearly"] = true,
 				}),

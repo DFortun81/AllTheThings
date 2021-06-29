@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(572, { 	-- Draenor
+	m(572, {	-- Draenor
 		m(550, {	-- Nagrand (Draenor)
 			n(QUESTS, {
 				q(34719, {	-- ... and My Hammer
@@ -207,7 +207,7 @@ _.Zones =
 						{ 66.9, 33.7, 550 },	-- If you finish "And Justice For Thrall" first
 					},
 				}),
-				q(34957, { 	-- Challenge of the Masters
+				q(34957, {	-- Challenge of the Masters
 					["provider"] = { "n", 80161 },	-- Lantresor of the Blade
 					["coord"] = { 44.8, 19.8, 551 },
 					["races"] = ALLIANCE_ONLY,
@@ -556,7 +556,7 @@ _.Zones =
 						34849,	-- The Blade Itself
 					},
 				}),
-				q(34716, { 	-- Mo'mor Might Know
+				q(34716, {	-- Mo'mor Might Know
 					["provider"] = { "n", 79722 },	-- Mo'mor Might Know
 					["coord"] = { 65.8, 68.6, 550 },
 					["races"] = ALLIANCE_ONLY,
@@ -611,7 +611,7 @@ _.Zones =
 					["sourceQuest"] = 34596,	-- Reglakk's Research
 					["isBreadcrumb"] = true,
 				}),
-				q(34955, { 	-- Not Without My Honor
+				q(34955, {	-- Not Without My Honor
 					["provider"] = { "n", 80161 },	-- Lantresor of the Blade
 					["coord"] = { 85.4, 54.6, 550 },
 					["races"] = ALLIANCE_ONLY,
@@ -852,7 +852,7 @@ _.Zones =
 					["coord"] = { 79.4, 50.2, 550 },
 					["sourceQuest"] = 34662,	-- Ring of Trials: Crushmaul
 				}),
-				q(34666, { 	-- Ring of Trials: Roakk the Zealot
+				q(34666, {	-- Ring of Trials: Roakk the Zealot
 					["provider"] = { "n", 79188 },	-- Dexyl Deadblade
 					["coord"] = { 79.4, 50.2, 550 },
 					["sourceQuest"] = 34665,	-- Ring of Trials: Captain Boomspark
@@ -863,7 +863,7 @@ _.Zones =
 						i(114708),	-- Windshaper Wristwraps
 					},
 				}),
-				q(34746, { 	-- Shields Down!
+				q(34746, {	-- Shields Down!
 					["provider"] = { "n", 79743 },	-- Vindicator Mo'mor
 					["coord"] = { 66.7, 68.6, 550 },
 					["races"] = ALLIANCE_ONLY,
@@ -1102,7 +1102,7 @@ _.Zones =
 					["coord"] = { 56.8, 13.0, 550 },
 					["sourceQuest"] = 36221,	-- Entry Fee
 				}),
-				q(35396, { 	-- The Dark Heart of Oshu'gun
+				q(35396, {	-- The Dark Heart of Oshu'gun
 					["provider"] = { "n", 82181 },	-- Vindicator Nobundo
 					["coord"] = { 46.0, 32.7, 553 },
 					["races"] = ALLIANCE_ONLY,
@@ -1144,7 +1144,7 @@ _.Zones =
 					["provider"] = { "n", 88500 },	-- Murgok
 					["coord"] = { 79.4, 30.2, 550 },
 				}),
-				q(34941, { 	-- The Debt We Share
+				q(34941, {	-- The Debt We Share
 					["provider"] = { "n", 80434 },	-- Gar'rok
 					["coord"] = { 75.0, 22.7, 550 },
 					["sourceQuest"] = 34932,	-- Guise of the Deceiver
@@ -1281,7 +1281,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 35232,	-- The Call of Oshu'gun
 				}),
-				q(35061, { 	-- The Pride of Lok-rath
+				q(35061, {	-- The Pride of Lok-rath
 					["provider"] = { "n", 81086 },	-- Uruk Foecleaver
 					["coord"] = { 55.5, 42.0, 550 },
 					["races"] = ALLIANCE_ONLY,
@@ -1305,7 +1305,7 @@ _.Zones =
 						i(118140),	-- Windshaper Waistwrap
 					},
 				}),
-				q(35330, { 	-- The Ritual of Binding
+				q(35330, {	-- The Ritual of Binding
 					["provider"] = { "n", 82138 },	-- Vindicator Nobundo
 					["coord"] = { 71.7, 19.6, 550 },
 					["races"] = ALLIANCE_ONLY,
@@ -1354,7 +1354,7 @@ _.Zones =
 				q(35390, {	-- The Shadow Over Oshu'gun	(replaced by 35088 before going live)
 					["u"] = NEVER_IMPLEMENTED,
 				}),
-				q(35088, { 	-- The Shadow of the Void
+				q(35088, {	-- The Shadow of the Void
 					--["objectID"] = 233263,	-- Shamanstone
 					["coords"] = {
 						{ 55.4, 55.9, 550 },

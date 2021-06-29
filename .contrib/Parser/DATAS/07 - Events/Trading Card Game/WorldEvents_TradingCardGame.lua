@@ -32,7 +32,7 @@ _.WorldEvents =
 				un(10, i(35225)),	-- X-51 Nether-Rocket
 				un(10, i(35226)),	-- X-51 Nether-Rocket X-TREME
 			}),
-			filter(101, { 	-- Pet Battle
+			filter(101, {	-- Pet Battle
 				un(10, i(50301, {	-- Landro's Pet Box
 					un(10, i(46779)),	-- Path of Cenarius
 					un(10, i(35223)),	-- Papa Hummel's Old-Fashioned Pet Biscuit

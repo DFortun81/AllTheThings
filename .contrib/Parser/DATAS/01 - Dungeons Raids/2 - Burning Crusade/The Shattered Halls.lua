@@ -110,9 +110,6 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 					["coord"] = { 56.6, 66.7, HELLFIRE_PENINSULA },
 					["timeline"] = { "removed 4.0.3.14732" },
 					["maps"] = { HELLFIRE_PENINSULA },
-					-- ["cost"] = {
-					-- 	{ "i", 31245, 1 },	-- Primed Key Mold
-					-- },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(68, 10, 68),
 					["groups"] = {
@@ -128,7 +125,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 					["timeline"] = { "removed 4.0.3.14732" },
 					["maps"] = { HELLFIRE_PENINSULA },
 					-- ["cost"] = {
-					-- 	{ "i", 31245, 1 },	-- Primed Key Mold
+					--	{ "i", 31245, 1 },	-- Primed Key Mold
 					-- },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(68, 10, 68),
@@ -150,7 +147,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 					["coord"] = { 51.1, 60.3, HELLFIRE_PENINSULA },
 					["maps"] = { HELLFIRE_PENINSULA },
 					-- ["cost"] = {
-					-- 	{ "i", 31252, 1 },	-- Charred Key Mold
+					--	{ "i", 31252, 1 },	-- Charred Key Mold
 					-- },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(68, 10, 68),
@@ -168,7 +165,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 					["coord"] = { 53.1, 38.2, HELLFIRE_PENINSULA },
 					["maps"] = { HELLFIRE_PENINSULA },
 					-- ["cost"] = {
-					-- 	{ "i", 31252, 1 },	-- Charred Key Mold
+					--	{ "i", 31252, 1 },	-- Charred Key Mold
 					-- },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(68, 10, 68),
@@ -184,7 +181,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 					["qg"] = 54933,	-- Advance Scout Chadwick
 					["timeline"] = { "added 4.3.0.14732" },
 					-- ["cost"] = {
-					-- 	{ "i", 23726, 1 },	-- Fel Ember
+					--	{ "i", 23726, 1 },	-- Fel Ember
 					-- },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(66, 20, 66),
@@ -203,7 +200,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 					["qg"] = 54933,	-- Advance Scout Chadwick
 					["timeline"] = { "added 4.3.0.14732" },
 					-- ["cost"] = {
-					-- 	{ "i", 72597, 1 },	-- O'mrogg's Warcloth
+					--	{ "i", 72597, 1 },	-- O'mrogg's Warcloth
 					-- },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(66, 20, 66),
@@ -242,9 +239,9 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 					["timeline"] = { "removed 4.0.3.14732" },
 					["maps"] = { HELLFIRE_PENINSULA },
 					-- ["cost"] = {
-					-- 	{ "i", 23445, 4 },	-- Fel Iron Bar
-					-- 	{ "i", 22445, 2 },	-- Arcane Dust
-					-- 	{ "i", 22574, 4 },	-- Mote of Fire
+					--	{ "i", 23445, 4 },	-- Fel Iron Bar
+					--	{ "i", 22445, 2 },	-- Arcane Dust
+					--	{ "i", 22574, 4 },	-- Mote of Fire
 					-- },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(68, 10, 68),
@@ -269,7 +266,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 					["coord"] = { 77.4, 38.6, TEROKKAR_FOREST },
 					["maps"] = { TEROKKAR_FOREST },
 					-- ["cost"] = {
-					-- 	{ "i", 30829, 1 },	-- Tear of the Earthmother
+					--	{ "i", 30829, 1 },	-- Tear of the Earthmother
 					-- },
 					["lvl"] = lvlsquish(67, 25, 67),
 					["groups"] = {
@@ -284,7 +281,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 					["timeline"] = { "removed 4.3.0.14732" },
 					["maps"] = { HELLFIRE_PENINSULA },
 					-- ["cost"] = {
-					-- 	{ "i", 23723, 1 },	-- Warchief Kargath's Fist
+					--	{ "i", 23723, 1 },	-- Warchief Kargath's Fist
 					-- },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(67, 20, 67),
@@ -304,7 +301,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 					["qg"] = 54931,	-- Stone Guard Stok'ton
 					["timeline"] = { "added 4.3.0.14732" },
 					-- ["cost"] = {
-					-- 	{ "i", 23723, 1 },	-- Warchief Kargath's Fist
+					--	{ "i", 23723, 1 },	-- Warchief Kargath's Fist
 					-- },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(66, 20, 66),
@@ -324,7 +321,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 					["coord"] = { 54.0, 44.8, SHATTRATH_CITY },
 					["maps"] = { SHATTRATH_CITY },
 					-- ["cost"] = {
-					-- 	{ "i", 31716, 1 },	-- Unused Axe of the Executioner
+					--	{ "i", 31716, 1 },	-- Unused Axe of the Executioner
 					-- },
 					["lvl"] = lvlsquish(70, 20, 70),
 					["groups"] = {
@@ -339,7 +336,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 					["timeline"] = { "removed 4.3.0.14732" },
 					["maps"] = { HELLFIRE_PENINSULA },
 					-- ["cost"] = {
-					-- 	{ "i", 23723, 1 },	-- Warchief Kargath's Fist
+					--	{ "i", 23723, 1 },	-- Warchief Kargath's Fist
 					-- },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(67, 20, 67),
@@ -359,7 +356,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 					["qg"] = 54933,	-- Advance Scout Chadwick
 					["timeline"] = { "added 4.3.0.14732" },
 					-- ["cost"] = {
-					-- 	{ "i", 23723, 1 },	-- Warchief Kargath's Fist
+					--	{ "i", 23723, 1 },	-- Warchief Kargath's Fist
 					-- },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(66, 20, 66),

@@ -26,9 +26,9 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15306 },	-- Bor Wildmane
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(20603, { 	-- Bag of Spoils
-							un(REMOVED_FROM_GAME, i(20694)), 	-- Glowing Black Orb
-							un(REMOVED_FROM_GAME, i(20693)), 	-- Weighted Cloak
+						un(REMOVED_FROM_GAME, i(20603, {	-- Bag of Spoils
+							un(REMOVED_FROM_GAME, i(20694)),	-- Glowing Black Orb
+							un(REMOVED_FROM_GAME, i(20693)),	-- Weighted Cloak
 							un(REMOVED_FROM_GAME, i(20692)),	-- Multicolored Band
 						})),
 					},
@@ -261,10 +261,10 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15306 },	-- Bor Wildmane
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(20602, { 	-- Chest of Spoils
+						un(REMOVED_FROM_GAME, i(20602, {	-- Chest of Spoils
 							un(REMOVED_FROM_GAME, i(20721)),	-- Band of the Cultist
-							un(REMOVED_FROM_GAME, i(20722)), 	-- Crystal Slugthrower
-							un(REMOVED_FROM_GAME, i(20720)), 	-- Dark Whisper Blade
+							un(REMOVED_FROM_GAME, i(20722)),	-- Crystal Slugthrower
+							un(REMOVED_FROM_GAME, i(20720)),	-- Dark Whisper Blade
 						})),
 					},
 				}),
@@ -281,21 +281,21 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15798 },	-- Colossus Researcher Nestor
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(21528)), 	-- Colossal Bag of Loot
+						un(REMOVED_FROM_GAME, i(21528)),	-- Colossal Bag of Loot
 					},
 				}),
 				q(8858,  {	-- Secrets of the Colossus - Regal - Was only possible during the 10 hours of AQ opening
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15799 },	-- Colossus Researcher Eazel
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(21528)), 	-- Colossal Bag of Loot
+						un(REMOVED_FROM_GAME, i(21528)),	-- Colossal Bag of Loot
 					},
 				}),
 				q(8859,  {	-- Secrets of the Colossus - Zora - Was only possible during the 10 hours of AQ opening
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15797 },	-- Colossus Researcher Sophia
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(21528)), 	-- Colossal Bag of Loot
+						un(REMOVED_FROM_GAME, i(21528)),	-- Colossal Bag of Loot
 					},
 				}),
 				q(8280,  {	-- Securing the Supply Lines
@@ -312,7 +312,7 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15306 },	-- Bor Wildmane
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(20601, { 	-- Sack of Spoils
+						un(REMOVED_FROM_GAME, i(20601, {	-- Sack of Spoils
 							un(REMOVED_FROM_GAME, i(20695)),	-- Abyssal War Beads
 							un(REMOVED_FROM_GAME, i(20696)),	-- Crystal Spiked Maul
 							un(REMOVED_FROM_GAME, i(20697)),	-- Crystalline Threaded Cape
@@ -498,14 +498,14 @@ _.Zones =
 					["provider"] = { "n", 15180 },	-- Baristolth of the Shifting Sands
 					["repeatable"] = true,
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(20403)),	-- 	Proxy of Nozdormu
+						un(REMOVED_FROM_GAME, i(20403)),	--	Proxy of Nozdormu
 					},
 				}),
 				q(8301,  {	-- The Path of the Righteous
 					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 15180 },	-- Baristolth of the Shifting Sands
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(20402)),	-- 	Agent of Nozdormu
+						un(REMOVED_FROM_GAME, i(20402)),	--	Agent of Nozdormu
 					},
 				}),
 				q(9023,  {	-- The Perfect Poison

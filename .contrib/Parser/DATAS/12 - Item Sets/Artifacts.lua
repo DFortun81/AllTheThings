@@ -2320,7 +2320,7 @@ _.GearSets =
 			prof(FISHING, {
 				i(133755, {	-- Underlight Angler
 					artifact(841),	-- Base Skin
-					ach(11725, { 	-- Fisherfriend of the Isles
+					ach(11725, {	-- Fisherfriend of the Isles
 						["providers"] = {
 							{ "n", 120456 },	-- Keeper Raynae
 							{ "n", 120457 },	-- Akule Riverhorn

@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(4, {	-- Cataclysm
-	inst(64, { 	-- Shadowfang Keep
+	inst(64, {	-- Shadowfang Keep
 		["coord"] = { 44.79, 67.82, 21 },	-- Shadowfang Keep, Silverpine Forest
 		["maps"] = {
 			SHADOWFANG_KEEP,

@@ -93,7 +93,7 @@ _.ExpansionFeatures =
 							},
 						}),
 						i(140590, {	-- Large Crate of Salvage
-							n(-140, { 	-- Communal
+							n(-140, {	-- Communal
 								["classes"] = { PRIEST },
 								["g"] = {
 									i(119689),	-- Communal Bindings
@@ -109,7 +109,7 @@ _.ExpansionFeatures =
 									i(119665),	-- Communal Wand
 								},
 							}),
-							n(-141, { 	-- Felsoul
+							n(-141, {	-- Felsoul
 								["classes"] = { WARLOCK },
 								["g"] = {
 									i(119762),	-- Felsoul Cowl
@@ -124,7 +124,7 @@ _.ExpansionFeatures =
 									i(119767),	-- Felsoul Wristwraps
 								},
 							}),
-							n(-142, { 	-- Heart-Lesion
+							n(-142, {	-- Heart-Lesion
 								["classes"] = { DEATHKNIGHT },
 								["g"] = {
 									i(119478),	-- Heart-Lesion Blade
@@ -140,7 +140,7 @@ _.ExpansionFeatures =
 									i(119477),	-- Heart-Lesion Vambraces
 								},
 							}),
-							n(-143, { 	-- Lightdrinker
+							n(-143, {	-- Lightdrinker
 								["classes"] = { ROGUE },
 								["g"] = {
 									i(119704),	-- Lightdrinker Bindings
@@ -156,7 +156,7 @@ _.ExpansionFeatures =
 									i(119703),	-- Lightdrinker Waistband
 								},
 							}),
-							n(-144, { 	-- Mistdancer
+							n(-144, {	-- Mistdancer
 								["classes"] = { MONK },
 								["g"] = {
 									i(119589),	-- Mistdancer Cord
@@ -172,7 +172,7 @@ _.ExpansionFeatures =
 									i(119583),	-- Mistdancer Vest
 								},
 							}),
-							n(-145, { 	-- Mountainsage
+							n(-145, {	-- Mountainsage
 								["classes"] = { MAGE },
 								["g"] = {
 									i(119572),	-- Mountainsage Cord
@@ -187,7 +187,7 @@ _.ExpansionFeatures =
 									i(119573),	-- Mountainsage Wristwraps
 								},
 							}),
-							n(-146, { 	-- Oathsworn
+							n(-146, {	-- Oathsworn
 								["classes"] = { WARRIOR },
 								["g"] = {
 									i(119781),	-- Oathsworn Axe
@@ -204,7 +204,7 @@ _.ExpansionFeatures =
 									i(119779),	-- Oathsworn Vambraces
 								},
 							}),
-							n(-147, { 	-- Springrain
+							n(-147, {	-- Springrain
 								["classes"] = { DRUID },
 								["g"] = {
 									i(119513),	-- Springrain Belt
@@ -220,7 +220,7 @@ _.ExpansionFeatures =
 									i(119506),	-- Springrain Tunic
 								},
 							}),
-							n(-148, { 	-- Streamtalker
+							n(-148, {	-- Streamtalker
 								["classes"] = { SHAMAN },
 								["g"] = {
 									i(119725),	-- Streamtalker Aegis
@@ -310,7 +310,7 @@ _.ExpansionFeatures =
 									}),
 								},
 							}),
-							n(-149, { 	-- Sunsoul
+							n(-149, {	-- Sunsoul
 								["classes"] = { PALADIN },
 								["g"] = {
 									i(119613),	-- Sunsoul Battleplate
@@ -328,7 +328,7 @@ _.ExpansionFeatures =
 									i(119639),	-- Sunsoul Warmaul
 								},
 							}),
-							n(-150, { 	-- Trailseeker
+							n(-150, {	-- Trailseeker
 								["classes"] = { HUNTER },
 								["g"] = {
 									i(119557),	-- Trailseeker Belt

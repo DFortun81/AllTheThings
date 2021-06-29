@@ -1636,7 +1636,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(166967),	-- Dread Gladiator's Plate Pauldrons
 					i(166968),	-- Dread Gladiator's Plate Girdle
 					i(166969),	-- Dread Gladiator's Plate Armguards
-				}),					
+				}),
 			}),
 		}),
 		n(-690, {	-- Sinister Gladiator: Battle for Azeroth Season 2
@@ -1659,7 +1659,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(166631),	-- Sinister Gladiator's Leather Harness (H)
 					i(166607),	-- Sinister Gladiator's Leather Headpiece (H)
 					i(166655),	-- Sinister Gladiator's Leather Shoulderpads (H)
-				}),	
+				}),
 				n(-45, {	-- Mail
 					i(166661),	-- Sinister Gladiator's Chain Epaulets (A)
 					i(166612),	-- Sinister Gladiator's Chain Skullcover (A)
@@ -1709,7 +1709,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(172715),	-- Corrupted Gladiator's Leather Harness (H)
 					i(172691),	-- Corrupted Gladiator's Leather Headpiece (H)
 					i(172739),	-- Corrupted Gladiator's Leather Shoulderpads (H)
-				}),	
+				}),
 				n(-45, {	-- Mail
 					i(172745),	-- Corrupted Gladiator's Chain Epaulets (A)
 					i(172696),	-- Corrupted Gladiator's Chain Skullcover (A)
@@ -1727,7 +1727,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(172717),	-- Corrupted Gladiator's Plate Chestplate (H)
 				}),
 				-- These were added 9.0.1??
-				n(-386, { 	-- Trinkets
+				n(-386, {	-- Trinkets
 					i(184055),	-- Corrupted Gladiator's Medallion
 					i(184056),	-- Corrupted Gladiator's Relentless Brooch
 					i(184057),	-- Corrupted Gladiator's Sigil of Adaptation

@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(876, { 	-- Kul'Tiras
+	m(876, {	-- Kul'Tiras
 		m(896, {	-- Drustvar
 			n(RARES, {
 				o(277333, {	-- Ancient Sarcophagus

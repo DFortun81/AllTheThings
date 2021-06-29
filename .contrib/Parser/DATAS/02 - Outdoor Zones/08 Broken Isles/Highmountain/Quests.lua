@@ -263,7 +263,7 @@ _.Zones =
 					["coord"] = { 49.4, 39.2, 650 },
 					["provider"] = { "n", 94068 },	-- Oren Windstrider
 					["g"] = {
-						i(129277), 		-- Skyhorn Nestling (PET!)
+						i(129277),	-- Skyhorn Nestling (PET!)
 					},
 				}),
 				q(42088, {	-- Evacuate Snowmane

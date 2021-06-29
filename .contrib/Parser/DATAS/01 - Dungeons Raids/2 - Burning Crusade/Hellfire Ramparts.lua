@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
-	inst(248, { 	-- Hellfire Ramparts
+	inst(248, {	-- Hellfire Ramparts
 		["coord"] = { 47.65, 53.57, HELLFIRE_PENINSULA },	-- Hellfire Ramparts, Hellfire Peninsula
 		["mapID"] = HELLFIRE_CITADEL_RAMPARTS,
 		["lvl"] = lvlsquish(57, 10, 57),
@@ -148,7 +148,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 				}),
 			}),
 			d(1, {		-- Normal
-				e(527, { 	-- Watchkeeper Gargolmar
+				e(527, {	-- Watchkeeper Gargolmar
 					["creatureID"] = 17306,
 					["groups"] = {
 						i(24020),	-- Shadowrend Longblade
@@ -217,7 +217,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 						n(17536, {	-- Nazan
 							i(23901),	-- Nazan's Head
 						}),
-						o(185168, { 	-- Reinforced Fel Iron Chest
+						o(185168, {	-- Reinforced Fel Iron Chest
 							i(24044),	-- Hellreaver
 							i(24155),	-- Ursol's Claw
 							-- #if AFTER 7.3.5
@@ -356,7 +356,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 								i(23901),	-- Nazan's Head
 								i(33833),	-- Nazan's Riding Crop
 							}),
-							o(185168, { 	-- Reinforced Fel Iron Chest
+							o(185168, {	-- Reinforced Fel Iron Chest
 								-- #if AFTER 7.3.5
 								i(24044),	-- Hellreaver
 								i(24155),	-- Ursol's Claw

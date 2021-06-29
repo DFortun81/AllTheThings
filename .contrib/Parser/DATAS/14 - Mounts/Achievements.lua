@@ -24,7 +24,7 @@ _.Mounts =
 		i(153041),	-- Bleakhoof Ruinstrider
 		i(51954),	-- Bloodbathed Frostbrood Vanquisher
 		i(168055),	-- Bloodflank Charger
-		i(163216), 	-- Bloodgorged Crawg
+		i(163216),	-- Bloodgorged Crawg
 		i(44843),	-- Blue Dragonhawk
 		i(174066, {	-- Caravan Hyena
 			["races"] = HORDE_ONLY,

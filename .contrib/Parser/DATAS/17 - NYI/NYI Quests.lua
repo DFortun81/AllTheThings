@@ -135,7 +135,7 @@ _.NeverImplemented =
 			q(53641),	-- LFGDungeons - BFA - Stromgarde (Arathi)
 			q(58707),	-- Sorting Through Visions
 			q(58089),	-- Test Quest
-			q(57112),	-- Tst Shared Quest
+			q(57112),	-- Test Shared Quest
 		}),
 		tier(9, {	-- Shadowlands -- These Quests might be ingame, very unlikely however.
 			q(62300),	-- Classic 20-49

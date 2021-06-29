@@ -93,7 +93,7 @@ _.Craftables =
 					}),
 				},
 			}),
-			filter(101, { 	-- Pet Battle
+			filter(101, {	-- Pet Battle
 				i(137599, {	-- Pulsating Sac
 					i(137608, {	-- Growling Sac
 						i(44822),	-- Albino Snake
@@ -173,7 +173,7 @@ _.Craftables =
 			}),
 		}),
 		prof(ENCHANTING, {
-			filter(101, { 	-- Pet Battle
+			filter(101, {	-- Pet Battle
 				i(128533),	-- Enchanted Cauldron
 				i(128535),	-- Enchanted Pen
 				i(128534),	-- Enchanted Torch
@@ -346,10 +346,10 @@ _.Craftables =
 			}),
 		}),
 		prof(LEATHERWORKING, {
-			n(-349, { 	-- Cosmetic
+			n(-349, {	-- Cosmetic
 				un(HOLIDAY_FEAST_OF_WINTER_VEIL, i(151791)),	-- Winter Boots
 			}),
-			n(-44, { 	-- Leather
+			n(-44, {	-- Leather
 				i(128890),	-- Dreadleather Belt
 				i(128891),	-- Dreadleather Bindings
 				i(128885),	-- Dreadleather Footpads
@@ -369,7 +369,7 @@ _.Craftables =
 				i(128880),	-- Warhide Pants
 				i(128881),	-- Warhide Shoulderguard
 			}),
-			n(-45, { 	-- Mail
+			n(-45, {	-- Mail
 				i(128899),	-- Battlebound Armbands
 				i(128898),	-- Battlebound Girdle
 				i(128894),	-- Battlebound Grips

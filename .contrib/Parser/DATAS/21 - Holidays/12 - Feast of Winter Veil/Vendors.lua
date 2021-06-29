@@ -27,7 +27,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 					i(70923),	-- Gaudy Winter Veil Sweater
 				},
 			}),
-			n(13435, { 	-- Khole Jinglepocket
+			n(13435, {	-- Khole Jinglepocket
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
 					-- Cooking
@@ -42,7 +42,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 					i(70923),	-- Gaudy Winter Veil Sweater
 				},
 			}),
-			n(23010, { 	-- Wolgren Jinglepocket
+			n(23010, {	-- Wolgren Jinglepocket
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
 					-- Cooking
@@ -57,7 +57,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 					i(70923),	-- Gaudy Winter Veil Sweater
 				},
 			}),
-			n(96304, { 	-- Tradurjo Jinglepocket
+			n(96304, {	-- Tradurjo Jinglepocket
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
 					-- Cooking
@@ -79,7 +79,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 					i(104324),	-- Foot Ball
 				},
 			}),
-			n(13420, { 	-- Penney Copperpinch
+			n(13420, {	-- Penney Copperpinch
 				["races"] = HORDE_ONLY,
 				["g"] = {
 					-- Cooking
@@ -94,7 +94,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 					i(70923),	-- Gaudy Winter Veil Sweater
 				},
 			}),
-			n(23012, { 	-- Hotoppik Jinglepocket
+			n(23012, {	-- Hotoppik Jinglepocket
 				["races"] = HORDE_ONLY,
 				["g"] = {
 					-- Cooking
@@ -109,7 +109,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 					i(70923),	-- Gaudy Winter Veil Sweater
 				},
 			}),
-			n(13432, { 	-- Seersa Jinglepocket
+			n(13432, {	-- Seersa Jinglepocket
 				["races"] = HORDE_ONLY,
 				["g"] = {
 					-- Cooking
@@ -124,7 +124,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 					i(70923),	-- Gaudy Winter Veil Sweater
 				},
 			}),
-			n(13429, { 	-- Nardstrum Copperpinch
+			n(13429, {	-- Nardstrum Copperpinch
 				["races"] = HORDE_ONLY,
 				["g"] = {
 					-- Cooking

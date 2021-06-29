@@ -465,7 +465,7 @@ _.GroupFinder =
 				-- From wowhead comments
 				i(89463),	-- Scarshell Greaves
 			},
-		}),	
+		}),
 		i(98134, {	-- Heroic Cache of Treasures
 			["description"] = "Rewarded for completing a random Mists of Pandaria heroic scenario.",
 			["g"] = {
@@ -699,7 +699,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(93061),	-- Stormshaper Legguards
 				i(93062),	-- Stormshaper Spaulders
 				i(93063),	-- Stormshaper Belt
-				i(93064),	-- Stormshaper brarcers
+				i(93064),	-- Stormshaper Bracers
 				i(93086),	-- Swashbuckling Vest
 				i(93087),	-- Swashbuckling Greaves
 				i(93088),	-- Swashbuckling Gauntlets
@@ -735,7 +735,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(93118),	-- Lightning Rod Helm
 				i(93120),	-- Lightning Rod Pauldrons
 				i(93121),	-- Lightning Rod Girdle
-				
 			}),
 			i(93113),	-- Lightning Rod Drape
 		}),

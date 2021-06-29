@@ -16,7 +16,7 @@ _.Zones =
 					34223 - Creature Treasure: Iron Horde Stable Master
 					34411 - Creature Treasure: King Slime
 				]]--
-				n(-358,  { 	-- Lumber Yard
+				n(-358,  {	-- Lumber Yard
 					q(36523,  {	-- A Green Ogron? (A)
 						["provider"] = { "n", 81601 },	-- Burrian Coalpart
 						["races"] = ALLIANCE_ONLY,
@@ -570,7 +570,7 @@ _.Zones =
 						["sourceQuest"] = 36488,	-- Thieving Dwarves
 					}),
 				}),
-				n(-357,  { 	-- Sparring Arena
+				n(-357,  {	-- Sparring Arena
 					q(35210,  {	-- A Great Escape
 						["coord"] = { 34.7, 66.9, 547 },
 						["description"] = "Available once you complete the objectives for |cFFFFD700Fair Warning|r and |cFFFFD700Leave Every Solder Behind|r.",

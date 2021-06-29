@@ -88,7 +88,7 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 101513 },	-- Lord Jorach Ravenholdt
 						["sourceQuests"] = {
 							45836,	-- Jorach's Calling (A)
-							46326, 	-- Jorach's Calling (H)
+							46326,	-- Jorach's Calling (H)
 						},
 					}),
 					q(43958, {	-- A Body of Evidence

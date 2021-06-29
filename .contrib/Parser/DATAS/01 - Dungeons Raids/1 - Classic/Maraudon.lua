@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(1, {	-- Classic
-	inst(232, { 	-- Maraudon
+	inst(232, {	-- Maraudon
 		["lvl"] = 25,
 		["mapID"] = 280,
 		["maps"] = { 281, 67, 68 },
@@ -90,7 +90,7 @@ _.Instances = { tier(1, {	-- Classic
 						i(17734),	-- Helm of the Mountain
 						i(17736),	-- Rockgrip Gauntlets
 						i(17713),	-- Blackstone Ring
-						un(REMOVED_FROM_GAME, i(17733)), 	-- Fist of Stone
+						un(REMOVED_FROM_GAME, i(17733)),	-- Fist of Stone
 					})),
 					cr(13596, e(430, {	-- Rotgrip
 						["modelScale"] = 1.5,
@@ -159,7 +159,7 @@ _.Instances = { tier(1, {	-- Classic
 						["u"] = REMOVED_FROM_GAME,
 						["races"] = HORDE_ONLY,
 						["g"] = {
-							un(REMOVED_FROM_GAME, i(17770)), 	-- Branchclaw Gauntlets
+							un(REMOVED_FROM_GAME, i(17770)),	-- Branchclaw Gauntlets
 							un(REMOVED_FROM_GAME, i(17778)),	-- Sagebrush Girdle
 							un(REMOVED_FROM_GAME, i(17768)),	-- Woodseed Hoop
 						},
@@ -168,7 +168,7 @@ _.Instances = { tier(1, {	-- Classic
 						["u"] = REMOVED_FROM_GAME,
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
-							un(REMOVED_FROM_GAME, i(17770)), 	-- Branchclaw Gauntlets
+							un(REMOVED_FROM_GAME, i(17770)),	-- Branchclaw Gauntlets
 							un(REMOVED_FROM_GAME, i(17778)),	-- Sagebrush Girdle
 							un(REMOVED_FROM_GAME, i(17768)),	-- Woodseed Hoop
 						},

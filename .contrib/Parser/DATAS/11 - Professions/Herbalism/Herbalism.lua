@@ -235,7 +235,7 @@ profession(HERBALISM, {
 			}),
 		}),
 	}),
-	filter(101, { 	-- Pet Battle
+	filter(101, {	-- Pet Battle
 		i(153045),	-- Fel Lasher
 		i(118595),	-- Nightshade Sproutling
 	}),

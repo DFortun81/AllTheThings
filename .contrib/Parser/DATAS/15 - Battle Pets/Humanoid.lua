@@ -5,7 +5,7 @@
 _.BattlePets =
 {
 	n(-797,	{	-- Journal
-		pa(238, { 	-- Humanoid
+		pa(238, {	-- Humanoid
 			p(2755),			-- Adventurous Hopling
 			p(1918, {			-- Alliance Enthusiast (Alliance)
 				["races"] = ALLIANCE_ONLY,
@@ -107,7 +107,7 @@ _.BattlePets =
 			p(122),				-- Peddlefeet
 			p(513),				-- Qiraji Guardling
 			p(2417),			-- Ranishu Runt
-			p(2135),		 	-- Rebellious Imp
+			p(2135),			-- Rebellious Imp
 			p(1349),			-- Rotten Little Helper
 			p(3042),			-- Ruffle
 			p(1628),			-- Sister of Temptation
@@ -126,7 +126,7 @@ _.BattlePets =
 			p(2901),			-- Trapped Stonefiend
 			un(REMOVED_FROM_GAME, p(1365)),		-- Treasure Goblin
 			p(2022),			-- Tylarr Gronnden
-			p(2136), 			-- Uuna
+			p(2136),			-- Uuna
 			p(2833),			-- Void-Scarred Anubisath
 			un(BLIZZARD_BALANCE, p(2184)),	-- Whomper
 			p(120),				-- Winter's Little Helper

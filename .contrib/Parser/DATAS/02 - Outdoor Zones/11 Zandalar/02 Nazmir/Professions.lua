@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(875, { 	-- Zandalar
+	m(875, {	-- Zandalar
 		m(863, {	-- Nazmir
 			n(-38, {	-- Professions
 				prof(ALCHEMY, {

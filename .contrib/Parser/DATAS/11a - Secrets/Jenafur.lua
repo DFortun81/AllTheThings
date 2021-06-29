@@ -4,7 +4,7 @@
 
 _.Secrets =
 {
-	n(159783, { 	-- Jenafur
+	n(159783, {	-- Jenafur
 		["description"] = "***Debug Mode is required to see all the steps.***\n",
 		["g"] = {
 			q(58076, {	-- Step 1: Speak to Amara

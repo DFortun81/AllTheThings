@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(1, {	-- Classic
-	inst(226, { 	-- Ragefire Chasm
+	inst(226, {	-- Ragefire Chasm
 		["lvl"] = 10,
 		["mapID"] = 213,
 		["coord"] = { 52.52, 57.83, 86 },	-- Ragefire Chasm, Orgrimmar [Cleft of Shadow]
@@ -58,13 +58,13 @@ _.Instances = { tier(1, {	-- Classic
 						31035,	-- Enemies Below
 					},
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(131614)), 	-- Chasm Linked Pants
-						un(REMOVED_FROM_GAME, i(66031)), 	-- Hide Vest of the Shaman
-						un(REMOVED_FROM_GAME, i(66022)), 	-- Ragefire Leggings
-						un(REMOVED_FROM_GAME, i(49541)), 	-- Robes of the Doomed Ritual
-						un(REMOVED_FROM_GAME, i(131613)), 	-- Scaled Vest of the Shaman
-						un(REMOVED_FROM_GAME, i(66040)), 	-- Searing Belt
-						un(REMOVED_FROM_GAME, i(66045)), 	-- Stone Guard Greaves
+						un(REMOVED_FROM_GAME, i(131614)),	-- Chasm Linked Pants
+						un(REMOVED_FROM_GAME, i(66031)),	-- Hide Vest of the Shaman
+						un(REMOVED_FROM_GAME, i(66022)),	-- Ragefire Leggings
+						un(REMOVED_FROM_GAME, i(49541)),	-- Robes of the Doomed Ritual
+						un(REMOVED_FROM_GAME, i(131613)),	-- Scaled Vest of the Shaman
+						un(REMOVED_FROM_GAME, i(66040)),	-- Searing Belt
+						un(REMOVED_FROM_GAME, i(66045)),	-- Stone Guard Greaves
 					},
 				}),
 				q(30996, {	-- The Dark Shaman
@@ -86,17 +86,17 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 			}),
 			cr(61408, e(694, {	-- Adarogg
-				i(82880), 	-- Fang of Adarogg
-				i(82879), 	-- Collarspike Bracers
+				i(82880),	-- Fang of Adarogg
+				i(82879),	-- Collarspike Bracers
 				i(151422),	-- Bonecoal Waistguard
-				i(82772), 	-- Snarlmouth Leggings
+				i(82772),	-- Snarlmouth Leggings
 				i(151421),	-- Scorched Blazehound Boots
 			})),
 			cr(61412, e(695, {	-- Dark Shaman Koranthal
-				i(82882), 	-- Dark Ritual Cape
-				i(132551), 	-- Dark Shaman's Jerkin
-				i(82877), 	-- Grasp of the Broken Totem
-				i(82881), 	-- Cuffs of Black Elements
+				i(82882),	-- Dark Ritual Cape
+				i(132551),	-- Dark Shaman's Jerkin
+				i(82877),	-- Grasp of the Broken Totem
+				i(82881),	-- Cuffs of Black Elements
 			})),
 			cr(61463, e(696, {	-- Slagmaw
 				i(82878),	-- Fireworm Robes

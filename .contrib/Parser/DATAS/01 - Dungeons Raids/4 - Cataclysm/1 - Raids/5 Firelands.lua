@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(4, {	-- Cataclysm
-	inst(78, { 	-- Firelands
+	inst(78, {	-- Firelands
 		["isRaid"] = true,
 		["coord"] = { 47.3, 78.1, 198 },
 		["maps"] = { 367, 368, 369 },
@@ -18,7 +18,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 				["lvl"] = 85,
 				["maps"] = {
 					TANARIS,
-					74, 	-- Tanaris: Caverns of Time Entrance
+					74,	-- Tanaris: Caverns of Time Entrance
 					CAVERNS_OF_TIME,
 					STORMWIND_CITY,
 					ORGRIMMAR,
@@ -294,7 +294,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(69958),	-- Plans: Eternal Elementium Handguards
 					i(69957),	-- Plans: Fists of Fury
 					i(69959),	-- Plans: Holy Flame Gauntlets
-					i(68972), 	-- Apparatus of Khaz'goroth
+					i(68972),	-- Apparatus of Khaz'goroth
 					i(71359),	-- Chelley's Sterilized Scalpel
 					i(70929),	-- Firebound Gorget
 					i(71365),	-- Hide-Bound Chains
@@ -303,8 +303,8 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(71361),	-- Ranseur of Hatred
 					i(71640),	-- Riplimb's Lost Collar
 					i(71360),	-- Spire of Scarlet Pain
-					i(68915), 	-- Scales of Life
-					i(71367), 	-- Theck's Emberseal
+					i(68915),	-- Scales of Life
+					i(71367),	-- Theck's Emberseal
 				},
 			}),
 			d(14, {	-- Normal
@@ -1062,7 +1062,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 })};
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-9979, {	-- Cataclysm
-		inst(78, { 	-- Firelands
+		inst(78, {	-- Firelands
 			i(71570),	-- Bracers of Forked Lightning
 		}),
 	}),

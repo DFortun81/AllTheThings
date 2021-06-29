@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(4, {	-- Cataclysm
-	inst(72, { 	-- The Bastion of Twilight
+	inst(72, {	-- The Bastion of Twilight
 		["sharedLockout"] = 1,
 		["isRaid"] = true,
 		["coord"] = { 34.2, 77.7, TWILIGHT_HIGHLANDS },
@@ -250,7 +250,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 })};
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-9979, {	-- Cataclysm
-		inst(72, { 	-- The Bastion of Twilight
+		inst(72, {	-- The Bastion of Twilight
 			i(65099),	-- Tsanga's Helm
 		}),
 	}),

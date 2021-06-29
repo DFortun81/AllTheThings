@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(4, {	-- Cataclysm
-	inst(68, { 	-- The Vortex Pinnacle
+	inst(68, {	-- The Vortex Pinnacle
 		["lvl"] = 80,
 		["mapID"] = 325,
 		["coord"] = { 76.76, 84.44, 249 },	-- Vortex Pinnacle, Uldum

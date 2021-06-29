@@ -150,20 +150,20 @@ _.Zones =
 							["coord"] = { 43.2, 77.6, REVENDRETH },	-- Dredhollow Bolt
 						}),
 						-- TODO: do they offer a quest to repair the ballista? have never seen it...
-						-- n(165325, {	-- Muckborn Craftsman
-						-- 	["coord"] = { 46.0, 79.0, REVENDRETH },	-- Muckborn Craftsman
-						-- 	["g"] = {
-						-- 		-- i(176396, {			-- Dredhollow Tools
-						-- 		-- 	["description"] = "Used to repair the Dredterror Ballista. Bring 2 of them to Muckborn Craftsman.",
-						-- 		-- 	["crs"] = { 165325 },	-- Muckborn Craftsman
-						-- 		-- 	["coords"] = {
-						-- 		-- 		{ 40.77, 72.70, REVENDRETH },	-- Tool1
-						-- 		-- 		{ 41.18, 74.67, REVENDRETH },	-- Tool2
-						-- 		-- 	},
-						-- 		-- 	["g"] = {
-						-- 		-- 	},
-						-- 		-- }),
-						-- 	},
+						--n(165325, {	-- Muckborn Craftsman
+						--	["coord"] = { 46.0, 79.0, REVENDRETH },	-- Muckborn Craftsman
+						--	["g"] = {
+						--		--i(176396, {			-- Dredhollow Tools
+						--		--	["description"] = "Used to repair the Dredterror Ballista. Bring 2 of them to Muckborn Craftsman.",
+						--		--	["crs"] = { 165325 },	-- Muckborn Craftsman
+						--		--	["coords"] = {
+						--		--		{ 40.77, 72.70, REVENDRETH },	-- Tool1
+						--		--		{ 41.18, 74.67, REVENDRETH },	-- Tool2
+						--		--	},
+						--		--	["g"] = {
+						--		--	},
+						--		--}),
+						--	},
 						-- }),
 						i(180713),	-- Shrieker's Voicebox
 						i(180461, {	-- Horrid Dredwing (MOUNT!)

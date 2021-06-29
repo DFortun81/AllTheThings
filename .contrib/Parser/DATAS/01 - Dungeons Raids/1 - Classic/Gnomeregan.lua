@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(1, {	-- Classic
-	inst(231, { 	-- Gnomeregan
+	inst(231, {	-- Gnomeregan
 		["lvl"] = 19,
 		["maps"] = {
 			226,
@@ -36,7 +36,7 @@ _.Instances = { tier(1, {	-- Classic
 						i(9362),	-- Brilliant Gold Ring
 					},
 				}),
-				q(2928, { 	-- Gyrodrillmatic Excavationators
+				q(2928, {	-- Gyrodrillmatic Excavationators
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -173,7 +173,7 @@ _.Instances = { tier(1, {	-- Classic
 					["requireSkill"] = ENGINEERING,
 					["g"] = {
 						i(9327, {	-- Security DELTA Data Access Card
-							i(4413),  	-- Schematic: Discombobulator Ray
+							i(4413),	-- Schematic: Discombobulator Ray
 						}),
 					},
 				}),
@@ -181,7 +181,7 @@ _.Instances = { tier(1, {	-- Classic
 					["requireSkill"] = ENGINEERING,
 					["description"] = "You can learn the schematic from the Matrix Punchograph 3005-B.",
 					["g"] = {
-						i(14639),  	-- Schematic: Minor Recombobulator
+						i(14639),	-- Schematic: Minor Recombobulator
 					},
 				}),
 				i(9308),	-- Grime-Encrusted Object
@@ -378,11 +378,11 @@ _.Instances = { tier(1, {	-- Classic
 				i(9458),	-- Thermaplugg's Central Core
 				i(9492),	-- Electromagnetic Gigaflux Reactivator
 				i(9461),	-- Charged Gear
-				i(4415), 	-- Schematic: Craftsman's Monocle
+				i(4415),	-- Schematic: Craftsman's Monocle
 				i(4413),	-- Schematic: Discombobulator Ray
 				i(6716),	-- Schematic: EZ-Thro Dynamite
-				i(4411), 	-- Schematic: Flame Deflector
-				i(6672),  	-- Schematic: Flash Bomb
+				i(4411),	-- Schematic: Flame Deflector
+				i(6672),	-- Schematic: Flash Bomb
 				i(7742),	-- Schematic: Gnomish Cloaking Device
 				i(7560),	-- Schematic: Gnomish Universal Remote
 				i(7561),	-- Schematic: Goblin Jumper Cables
@@ -390,7 +390,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(4417),	-- Schematic: Large Seaforium Charge
 				i(4408),	-- Schematic: Mechanical Squirrel Box
 				i(4412),	-- Schematic: Moonsight Rifle
-				i(11828), 	-- Schematic: Pet Bombling
+				i(11828),	-- Schematic: Pet Bombling
 				i(4414),	-- Schematic: Portable Bronze Mortar
 				i(4410),	-- Schematic: Shadow Goggles
 				i(4409),	-- Schematic: Small Seaforium Charge

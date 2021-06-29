@@ -234,7 +234,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 							i(178850),	-- Lingering Sunmote
 						},
 					}),
-					e(2407, {	-- 	General Kaal
+					e(2407, {	--	General Kaal
 						["crs"] = {
 							162133,	-- General Kaal (during gauntlet)
 							162099,	-- General Kaal

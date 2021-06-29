@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(4, {	-- Cataclysm
-	inst(187, { 	-- Dragon Soul
+	inst(187, {	-- Dragon Soul
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 85,
@@ -278,7 +278,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 								i(78412),	-- Heartblood Wristplates
 								i(78408),	-- Interrogator's Bloody Footpads
 								i(78411),	-- Mindstrainer Treads
-								i(77971), 	-- Insignia of the Corrupted Mind
+								i(77971),	-- Insignia of the Corrupted Mind
 								i(77970),	-- Soulshifter Vortex
 							})),
 							cr(55689, e(317, {	-- Hagara the Stormbinder
@@ -616,7 +616,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					})),
 				},
 			}),
-			d(2, { 	-- Heroic
+			d(2, {	-- Heroic
 				["ignoreBonus"] = true,
 				["difficulties"] = { 5, 6 },
 				["groups"] = {

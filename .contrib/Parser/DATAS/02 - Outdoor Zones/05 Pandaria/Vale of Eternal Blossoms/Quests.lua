@@ -108,7 +108,7 @@ _.Zones =
 				q(33231, {	-- Journey to the Timeless Isle
 					["hordeQuestID"] = 33232,	-- Journey to the Timeless Isle
 					["provider"] = { "n", 73691 },	-- Chromie <The Timewalkers>
-					["isBreadcrumb"] = true, 	-- Possible to skip if you just fly to the Isle after picking up Flash of Bronze
+					["isBreadcrumb"] = true,	-- Possible to skip if you just fly to the Isle after picking up Flash of Bronze
 					["sourceQuests"] = {
 						33229,	-- A Flash of Bronze...
 						33230,	-- A Flash of Bronze...

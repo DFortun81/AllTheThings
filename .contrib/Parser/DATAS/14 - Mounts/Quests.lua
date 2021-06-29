@@ -158,7 +158,7 @@ _.Mounts =
 		i(182077, {		--  War-Bred Tauralus
 			["customCollect"] = "SL_COV_NEC",	-- Necrolord covenant only
 		}),
-		i(163128), 		-- War-Torn Reins of the Undercity Plaguebat
+		i(163128),		-- War-Torn Reins of the Undercity Plaguebat
 		mount(13819, {	-- Warhorse
 			["classes"] = { PALADIN },
 		}),

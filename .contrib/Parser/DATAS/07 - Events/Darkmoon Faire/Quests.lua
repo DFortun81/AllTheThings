@@ -524,7 +524,7 @@ _.WorldEvents =
 				["g"] = {
 					i(19182),	-- Tattered Darkmoon Faire Prize Ticket
 				},
-			}),	
+			}),
 			q(29517, {	-- Eyes on the Prizes
 				["requireSkill"] = TAILORING,
 				["description"] = "Requires |CFFFFD7001 Coarse Thread|r, |CFFFFD7001 Red Dye|r, |CFFFFD7001 Blue Dye|r, to complete.",
@@ -575,7 +575,7 @@ _.WorldEvents =
 				["g"] = {
 					i(19182),	-- Tattered Darkmoon Faire Prize Ticket
 				},
-			}),	
+			}),
 			q(7896, {	-- Green Fireworks
 				["requireSkill"] = ENGINEERING,
 				["u"] = REMOVED_FROM_GAME,
@@ -1109,7 +1109,7 @@ _.WorldEvents =
 					i(93724),	-- Darkmoon Game Prize
 				},
 			}),
-			q(29464, { 	-- Tools of Divination
+			q(29464, {	-- Tools of Divination
 				["isMonthly"] = true,
 				["provider"] = { "i", 71716 },	-- Soothsayer's Runes
 				["coord"] = { 51.9, 60.9, 407 },

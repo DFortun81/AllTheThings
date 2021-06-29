@@ -287,7 +287,7 @@ _.NeverImplemented =
 			i(37316),	-- HF28 Leather Physical Legs4  (Says added in cata wowhead)
 			-- Cata
 			i(56701),	-- Jinxed Vest (never made it to live)
-			i(59796), 	-- Treads of Decapod Death
+			i(59796),	-- Treads of Decapod Death
 			i(63012),	-- Skull Kickers
 			-- WoD
 			-- Quest Set
@@ -736,7 +736,7 @@ _.NeverImplemented =
 			i(105393, {	-- Tusks of Mannoroth [Heroic Warforged]
 				["description"] = "|CFFFF0000If you had this item drop in SoO Heroic please screenshot and submit it to the ATT Discord.\n\nIf you have the item already and are running completionist mode please screenshot as well. Tag 105393",
 			}),
-			i(104646, { 	-- Tusks of Mannoroth [Mythic]
+			i(104646, {	-- Tusks of Mannoroth [Mythic]
 				["description"] = "|CFFFF0000If you had this item drop in SoO please screenshot and submit it to the ATT Discord.\n\nIf you have the item already and are running completionist mode please screenshot as well. Tag: 104646",
 			}),
 			i(105642, {	-- Tusks of Mannoroth [Mythic Warforged]
@@ -884,8 +884,8 @@ _.NeverImplemented =
 			i(163362),	-- Honorbound outrider cloak  (different version used with locked to specific classes)
 			i(163365),	-- Honorbound vanguard greatcloak (different version used with locked to specific classes)
 			i(163367),	-- Honorbound vanguard long cloak (different version used with locked to specific classes)
-			i(162640), 	-- Horde Toy Cape (used from Winter Veil 2018 Toy, but its just used to attach the look to you, you actually never get the item)
-			i(162641), 	-- Alliance Toy Cape (used from Winter Veil 2018 Toy, but its just used to attach the look to you, you actually never get the item)
+			i(162640),	-- Horde Toy Cape (used from Winter Veil 2018 Toy, but its just used to attach the look to you, you actually never get the item)
+			i(162641),	-- Alliance Toy Cape (used from Winter Veil 2018 Toy, but its just used to attach the look to you, you actually never get the item)
 			i(114297),	-- Feather-Cord Cloak
 			i(114298),	-- Cloak of Bent Dreams
 			i(114299),	-- Suture-Slice Cloak
@@ -895,26 +895,26 @@ _.NeverImplemented =
 		n(-349, {	-- Cosmetic
 			i(134110),	-- Hidden Helm
 			i(134111),	-- Hidden Cloak
-			i(81143), 	-- Avanced Deepdive Helmet (Mop Beta Only)
+			i(81143),	-- Avanced Deepdive Helmet (Mop Beta Only)
 			i(52488),	-- Jeweler's Sapphire Monocle (other version got added)
 			i(133996),	-- Was testing version, they added i(134022))	-- Burgy Blackheart's Handsome Hat
-			i(142503), 	-- Hidden Shirt
-			i(146305), 	-- Green Winter Hat										{STUCK ON RETRIEVING DATA)
-			i(146306), 	-- Green Winter Clothes 								(STUCK ON RETRIEVING DATA)
-			i(142504), 	-- Hidden Tabard
-			i(134112), 	-- Hidden Shoulder
-			i(143539), 	-- Hidden Belt
-			i(168659), 	-- Hidden Chestpiece
-			i(168664), 	-- Hidden Boots
-			i(168665), 	-- Hidden Bracers
+			i(142503),	-- Hidden Shirt
+			i(146305),	-- Green Winter Hat										{STUCK ON RETRIEVING DATA)
+			i(146306),	-- Green Winter Clothes									(STUCK ON RETRIEVING DATA)
+			i(142504),	-- Hidden Tabard
+			i(134112),	-- Hidden Shoulder
+			i(143539),	-- Hidden Belt
+			i(168659),	-- Hidden Chestpiece
+			i(168664),	-- Hidden Boots
+			i(168665),	-- Hidden Bracers
 			i(48945),	-- Gnomish Thinking Cap (Mind Amplification Disk was added for it)
-			i(158329), 	-- Hidden Gloves
+			i(158329),	-- Hidden Gloves
 			i(116399),	-- Emerald Sunglasses
-			i(162638), 	-- Wooden Toy Helm (used from Winter Veil 2018 Toy, but its just used to attach the look to you, you actually never get the item)
-			i(162639), 	-- Wooden Toy Helm (A) (used from Winter Veil 2018 Toy, but its just used to attach the look to you, you actually never get the item)
-			i(163922), 	-- Used for a toy, you never can get the actual item
-			i(163923), 	-- Used for a toy, you never can get the actual item
-			i(146307), 	-- Winter Boots (STUCK ON RETRIEVING DATA) (removed Beta)
+			i(162638),	-- Wooden Toy Helm (used from Winter Veil 2018 Toy, but its just used to attach the look to you, you actually never get the item)
+			i(162639),	-- Wooden Toy Helm (A) (used from Winter Veil 2018 Toy, but its just used to attach the look to you, you actually never get the item)
+			i(163922),	-- Used for a toy, you never can get the actual item
+			i(163923),	-- Used for a toy, you never can get the actual item
+			i(146307),	-- Winter Boots (STUCK ON RETRIEVING DATA) (removed Beta)
 		}),
 		n(-324, {	-- Shirts
 			i(53869),	-- War Paint (Shirt) NOT GOOD FOR THE LADIES (NYI)
@@ -923,10 +923,10 @@ _.NeverImplemented =
 			i(129294),	-- Bonespeaker Tatoos
 			i(137118),	-- The Crone's Shirt
 			i(137552),	-- Purple Shirt
-			i(62061), 	-- Irradiated Gnome Shirt
+			i(62061),	-- Irradiated Gnome Shirt
 			i(52548),	-- Initiate's Tunic
-			i(53879), 	-- Rugged Work Shirt
-			i(53880), 	-- Super Girly Shirt
+			i(53879),	-- Rugged Work Shirt
+			i(53880),	-- Super Girly Shirt
 		}),
 		n(-325, {	-- Tabard
 			i(147204),	-- Black Apron - TEST
@@ -1031,11 +1031,11 @@ _.NeverImplemented =
 			i(109512),	-- Unknown
 			i(109516),	-- Unknown
 			i(19065),	-- Emerald Circle
-			i(62035), 	-- Antique Myrmidon's Signet
-			i(62036), 	-- Ornate Band of Accuria
-			i(62037), 	-- Gleaming seal of the archmagus
-			i(69891), 	-- Burnished Dark Iron Ring
-			i(103825), 	-- 5.4 Raid - Normal - Siege of Orgrimmar - Wildcard - Int Hit Ring
+			i(62035),	-- Antique Myrmidon's Signet
+			i(62036),	-- Ornate Band of Accuria
+			i(62037),	-- Gleaming seal of the archmagus
+			i(69891),	-- Burnished Dark Iron Ring
+			i(103825),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Wildcard - Int Hit Ring
 			i(28044),	-- Band of the Demon Stalker
 			i(33957),	-- Witches Band (unused version)
 			i(33958),	-- The Horseman's Signet Ring (unused version)
@@ -1454,15 +1454,15 @@ _.NeverImplemented =
 		i(54781),	-- Thorbia's Gauntlets
 		i(54783),	-- Silvered Bronze Shoulders
 		i(54789),	-- Art Template Plate Belt - Plate_Common_C_01 - Rust
-		i(47058),  	-- Unknown
-		i(59791),  	-- Unknown
-		i(60221),  	-- Furlbrow Cloak
-		i(60774),  	-- Unknown
-		i(60775),  	-- Unknown
-		i(60777),  	-- Unknown
-		i(60780),  	-- Unknown
-		i(60781),  	-- Unknown
-		i(50329),  	-- Unknown
+		i(47058),	-- Unknown
+		i(59791),	-- Unknown
+		i(60221),	-- Furlbrow Cloak
+		i(60774),	-- Unknown
+		i(60775),	-- Unknown
+		i(60777),	-- Unknown
+		i(60780),	-- Unknown
+		i(60781),	-- Unknown
+		i(50329),	-- Unknown
 		i(55216),	-- Fiery Transform
 		i(55217),	-- Aqua Transform
 		i(55218),	-- Rocky Transform
@@ -1471,32 +1471,32 @@ _.NeverImplemented =
 	}),
 	n(-160, {	-- Mounts
 		a(model(9475, i(13325))),		-- Fluorescent Green Mechanostrider (Never added in Game)
-		h(model(11641, i(14062, {		-- Kodo Mount 						(Never added in Game)
+		h(model(11641, i(14062, {		-- Kodo Mount						(Never added in Game)
 			{ ["mountID"]= 18363, ["u"] = NEVER_IMPLEMENTED }
 		}))),
-		a(model(10662, n(11148, {	-- Purple Mechanostrider 				(Never added in Game)
+		a(model(10662, n(11148, {	-- Purple Mechanostrider				(Never added in Game)
 			{ ["mountID"]= 17455, ["u"] = NEVER_IMPLEMENTED }
 		}))),
-		a(model(10664, n(11149, {	-- Red and Blue Mechanostrider 			(Never added in Game)
+		a(model(10664, n(11149, {	-- Red and Blue Mechanostrider			(Never added in Game)
 			{ ["mountID"]= 17456, ["u"] = NEVER_IMPLEMENTED }
 		}))),
-		a(model(9476, n(10180, {	-- Unpainted Mechanostrider 			(Never added in Game)
+		a(model(9476, n(10180, {	-- Unpainted Mechanostrider				(Never added in Game)
 			{ ["mountID"]= 15781, ["u"] = NEVER_IMPLEMENTED }
 		}))),
 		i(168673),	-- keys to the silver mono-wheel (no mount in yet)
 		spell(215545),	-- Fel Bat (Test) (Actual name of the Item)
-		model(17890, i(25596)), 	-- Peep's Whistle	 					(Never added in Game)
+		model(17890, i(25596)),	-- Peep's Whistle						(Never added in Game)
 		i(8627),	-- Reins of the Nightsaber								(Never added in Game)
-		a(model(6447, i(8628))),	-- Reins of the Spotted Nightsaber 		(Never added in Game)
-		a(model(6443, i(8630, {		-- Reins of the Bengal Tiger 			(Never added in Game)
+		a(model(6447, i(8628))),	-- Reins of the Spotted Nightsaber		(Never added in Game)
+		a(model(6443, i(8630, {		-- Reins of the Bengal Tiger			(Never added in Game)
 			{ ["mountID"]= 10790 }
 		}))),
-		a(model(4805, i(8633, {		-- Reins of the Leopard 				(Never added in Game)
+		a(model(4805, i(8633, {		-- Reins of the Leopard					(Never added in Game)
 			{ ["mountID"]= 10788 }
 		}))),
-		a(model(4805, i(12325))),	-- Reins of the Primal Leopard 			(Never added in Game)
-		a(model(6442, i(12326))),	-- Reins of the Tawny Sabercat 			(Never added in Game)
-		a(model(9714, i(12327))),	-- Reins of the Golden Sabercat 		(Never added in Game)
+		a(model(4805, i(12325))),	-- Reins of the Primal Leopard			(Never added in Game)
+		a(model(6442, i(12326))),	-- Reins of the Tawny Sabercat			(Never added in Game)
+		a(model(9714, i(12327))),	-- Reins of the Golden Sabercat			(Never added in Game)
 		i(156885, {	-- Gold Gladiator's Proto-Drake
 			["mountID"] = 262028,
 		}),
@@ -1506,13 +1506,13 @@ _.NeverImplemented =
 		i(156882, {	-- Pale Gladiator's Proto-Drake
 			["mountID"] = 262025,
 		}),
-		model(41089, i(84753)),		-- Reins of the White Riding Yak 		(Never added in Game)
-		model(43707, i(87784)),		-- Reins of the Jungle Riding Crane 	(Never added in Game)
-		model(43709, i(87786)),		-- Reins of the Black Riding Yak 		(Never added in Game)
-		model(43710, i(87787)),		-- Reins of the Brown Riding Yak 		(Never added in Game)
-		model(43715, i(87792)),		-- Reins of the Orange Water Strider 	(Never added in Game)
-		model(43714, i(87793)),		-- Reins of the Jade Water Strider 		(Never added in Game)
-		model(51323, i(104011)),	-- Stormcrow 							(Never added in Game)
+		model(41089, i(84753)),		-- Reins of the White Riding Yak		(Never added in Game)
+		model(43707, i(87784)),		-- Reins of the Jungle Riding Crane		(Never added in Game)
+		model(43709, i(87786)),		-- Reins of the Black Riding Yak		(Never added in Game)
+		model(43710, i(87787)),		-- Reins of the Brown Riding Yak		(Never added in Game)
+		model(43715, i(87792)),		-- Reins of the Orange Water Strider	(Never added in Game)
+		model(43714, i(87793)),		-- Reins of the Jade Water Strider		(Never added in Game)
+		model(51323, i(104011)),	-- Stormcrow							(Never added in Game)
 		i(143752),	-- Sound Test Mount
 		i(37598),	-- Swift Zhevra OLD
 
@@ -1541,7 +1541,7 @@ _.NeverImplemented =
 		i(46101),	-- Blue Skeletal Warhorse
 	}),
 	n(-162, {	-- Pets
-		model(65527, i(129108, {	-- Son of Goredome		 				(Never added in Game)
+		model(65527, i(129108, {	-- Son of Goredome						(Never added in Game)
 			p(1751),
 		})),
 		i(130145),	-- Unknown
@@ -1576,18 +1576,18 @@ _.NeverImplemented =
 		i(119112),	-- Son of Sethe (unsed Version)
 		model(38311, n(51634)),	-- Bubbles
 		model(36583, n(51636)),	-- Lizzy
-		model(14657, n(14629)), 	-- Loggerhead Snapjaw
+		model(14657, n(14629)),	-- Loggerhead Snapjaw
 		model(36129, n(48376)),	-- Rumbling Rockling
-		model(57820, n(83592, { 	-- Sassy Sproutling
+		model(57820, n(83592, {	-- Sassy Sproutling
 				p(1433),
 		})),
 		model(36130, n(48377)),	-- Swirling Stormling
-		model(36131, n(48378)), 	-- Whirling Waveling
-		model(29060, n(34031)), 	-- XS-001 Constructor Bot
+		model(36131, n(48378)),	-- Whirling Waveling
+		model(29060, n(34031)),	-- XS-001 Constructor Bot
 		i(118600),	-- Forest Sproutling (unsed Version)
 		i(118597),	-- Never added
 		i(44972),	-- Alarming Clockbot (NOT IN USE)
-		model(49086, n(71700, { 	-- Crafty
+		model(49086, n(71700, {	-- Crafty
 			p(1257),
 		})),
 		model(57821, n(83589, {		-- Kelp Sproutling
@@ -1596,14 +1596,14 @@ _.NeverImplemented =
 		i(31665),	-- Toy RC Mortar Tank
 		i(13342),	-- Pet Fish
 		i(13343),	-- Pet Stone
-		i(82800), 	-- "Pet Cage"
-		i(62769, { 	-- Hardboiled Egg
+		i(82800),	-- "Pet Cage"
+		i(62769, {	-- Hardboiled Egg
 			["description"] = "Unable to find species for this pet, so using Black Piglet to make it so you can see the model for this pet.",
 			["groups"] = {				-- /dump C_PetJournal.FindPetIDByName("Hardboiled Egg")
 				p(1758),
 			},
 		}),
-		model(65670, i(136907, { 	-- Black Piglet
+		model(65670, i(136907, {	-- Black Piglet
 			p(1758),
 		})),
 		i(136897),	-- Northern Hawk Owl (wild pet catchable, item was never used)
@@ -1611,12 +1611,12 @@ _.NeverImplemented =
 		i(136913),	-- Red Broodling (wild pet catchable, item was never used)
 		i(136902),	-- Toxic Whelpling (wild pet catchable, item was never used)
 		i(136921),	-- Trigger (132519 is crafted from engineering, doesn't appear this version was ever used)
-		i(67600), 	-- Lil' Alexstrasza (Never added in Game)
+		i(67600),	-- Lil' Alexstrasza (Never added in Game)
 	}),
 	n(-38, {	-- Professions
 		prof(ALCHEMY, {
-			i(2556),    	-- Recipe: Elixir of Tongues
-			i(5641),		-- Recipe: Cowardly Flight Potion
+			i(2556),	-- Recipe: Elixir of Tongues
+			i(5641),	-- Recipe: Cowardly Flight Potion
 			i(34481),	-- Recipe: Mad Alchemist's Potion (Recipe was added to trainers instead of a usable item)
 			i(71955),	-- Recipe: Transmute Deepholm Iolite
 			i(71956),	-- Recipe: Transmute Elven Peridot
@@ -1714,9 +1714,9 @@ _.NeverImplemented =
 			},
 
 			-- Burning Crusade
-			{   	-- Plans: Elementium Shield Spike
-				["itemID"] = 66102,   	-- Plans: Elementium Shield Spike
-				["spellID"] = 0,  	 	-- This is available via the trainer, need to delink the unused plans from the recipe
+			{	-- Plans: Elementium Shield Spike
+				["itemID"] = 66102,	-- Plans: Elementium Shield Spike
+				["spellID"] = 0,	-- This is available via the trainer, need to delink the unused plans from the recipe
 				["u"] = NEVER_IMPLEMENTED,
 			},
 			i(35530, {	-- Plans: Dawnsteel Shoulders
@@ -2571,68 +2571,68 @@ _.NeverImplemented =
 		}),
 		prof(LEATHERWORKING, {
 			{	-- Pattern: Cloak of Beasts
-				["itemID"] = 67039,   	-- Pattern: Cloak of Beasts
-				["spellID"] = 0,   	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
+				["itemID"] = 67039,	-- Pattern: Cloak of Beasts
+				["spellID"] = 0,	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
 				["u"] = NEVER_IMPLEMENTED,
 			},
 			{	-- Pattern: Cloak of War
-				["itemID"] = 67041,   	-- Pattern: Cloak of War
-				["spellID"] = 0,   	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
+				["itemID"] = 67041,	-- Pattern: Cloak of War
+				["spellID"] = 0,	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
 				["u"] = NEVER_IMPLEMENTED,
 			},
 			{	-- Pattern: Dark Arctic Chestpiece
-				["itemID"] = 38599,   	-- Pattern: Dark Arctic Chestpiece
-				["spellID"] = 0,   	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
+				["itemID"] = 38599,	-- Pattern: Dark Arctic Chestpiece
+				["spellID"] = 0,	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
 				["u"] = NEVER_IMPLEMENTED,
 			},
 			{	-- Pattern: Darkbrand Belt
-				["itemID"] = 67015,   	-- Pattern: Darkbrand Belt
-				["spellID"] = 0,   	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
+				["itemID"] = 67015,	-- Pattern: Darkbrand Belt
+				["spellID"] = 0,	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
 				["u"] = NEVER_IMPLEMENTED,
 			},
 			{	-- Pattern: Darkbrand Boots
-				["itemID"] = 67007,   	-- Pattern: Darkbrand Boots
-				["spellID"] = 0,   	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
+				["itemID"] = 67007,	-- Pattern: Darkbrand Boots
+				["spellID"] = 0,	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
 				["u"] = NEVER_IMPLEMENTED,
 			},
 			{	-- Pattern: Darkbrand Bracers
-				["itemID"] = 66999,   	-- Pattern: Darkbrand Bracers
-				["spellID"] = 0,   	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
+				["itemID"] = 66999,	-- Pattern: Darkbrand Bracers
+				["spellID"] = 0,	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
 				["u"] = NEVER_IMPLEMENTED,
 			},
 			{	-- Pattern: Darkbrand Chestguard
-				["itemID"] = 67026,   	-- Pattern: Darkbrand Chestguard
-				["spellID"] = 0,   	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
+				["itemID"] = 67026,	-- Pattern: Darkbrand Chestguard
+				["spellID"] = 0,	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
 				["u"] = NEVER_IMPLEMENTED,
 			},
 			{	-- Pattern: Darkbrand Gloves
-				["itemID"] = 67000,   	-- Pattern: Darkbrand Gloves
-				["spellID"] = 0,   	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
+				["itemID"] = 67000,	-- Pattern: Darkbrand Gloves
+				["spellID"] = 0,	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
 				["u"] = NEVER_IMPLEMENTED,
 			},
 			{	-- Pattern: Darkbrand Helm
-				["itemID"] = 67021,   	-- Pattern: Darkbrand Helm
-				["spellID"] = 0,   	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
+				["itemID"] = 67021,	-- Pattern: Darkbrand Helm
+				["spellID"] = 0,	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
 				["u"] = NEVER_IMPLEMENTED,
 			},
 			{	-- Pattern: Darkbrand Leggings
-				["itemID"] = 67033,   	-- Pattern: Darkbrand Leggings
-				["spellID"] = 0,   	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
+				["itemID"] = 67033,	-- Pattern: Darkbrand Leggings
+				["spellID"] = 0,	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
 				["u"] = NEVER_IMPLEMENTED,
 			},
 			{	-- Pattern: Darkbrand Shoulders
-				["itemID"] = 67011,   	-- Pattern: Darkbrand Shoulders
-				["spellID"] = 0,   	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
+				["itemID"] = 67011,	-- Pattern: Darkbrand Shoulders
+				["spellID"] = 0,	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
 				["u"] = NEVER_IMPLEMENTED,
 			},
 			{	-- Pattern: Heavy Savage Armor Kit
-				["itemID"] = 67038,   	-- Pattern: Heavy Savage Armor Kit
-				["spellID"] = 0,   	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
+				["itemID"] = 67038,	-- Pattern: Heavy Savage Armor Kit
+				["spellID"] = 0,	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
 				["u"] = NEVER_IMPLEMENTED,
 			},
 			{	-- Pattern: Heavy Savage Leather
-				["itemID"] = 67036,   	-- Pattern: Heavy Savage Leather
-				["spellID"] = 0,   	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
+				["itemID"] = 67036,	-- Pattern: Heavy Savage Leather
+				["spellID"] = 0,	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
 				["u"] = NEVER_IMPLEMENTED,
 			},
 			i(15780),	-- Pattern: Onyxia Scale Breastplate [never made it out of Beta]
@@ -2645,67 +2645,67 @@ _.NeverImplemented =
 			i(67030),	-- Pattern: Razorshell Leggings (never made it into game)
 			i(67004),	-- Pattern: Razorshell Shoulders (never made it into game)
 			{	-- Pattern: Savage Cloak
-				["itemID"] = 66995,   	-- Pattern: Savage Cloak
-				["spellID"] = 0,   	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
+				["itemID"] = 66995,	-- Pattern: Savage Cloak
+				["spellID"] = 0,	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
 				["u"] = NEVER_IMPLEMENTED,
 			},
 			{	-- Pattern: Scorched Leg Armor
-				["itemID"] = 67018,   	-- Pattern: Scorched Leg Armor
-				["spellID"] = 0,   	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
+				["itemID"] = 67018,	-- Pattern: Scorched Leg Armor
+				["spellID"] = 0,	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
 				["u"] = NEVER_IMPLEMENTED,
 			},
 			{	-- Pattern: Shellscale Cloak
-				["itemID"] = 67005,   	-- Pattern: Shellscale Cloak (was changed to Hardened Scale Cloak and added to trainers)
-				["spellID"] = 0,   	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
+				["itemID"] = 67005,	-- Pattern: Shellscale Cloak (was changed to Hardened Scale Cloak and added to trainers)
+				["spellID"] = 0,	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
 				["u"] = NEVER_IMPLEMENTED,
 			},
 			{	-- Pattern: Swiftstrike Shoulders
-				["itemID"] = 35528,   	-- Pattern: Swiftstrike Shoulders
-				["u"] = NEVER_IMPLEMENTED,				-- There are two identical patterns.  32747 is the one that actually drops, 35528 does not.
+				["itemID"] = 35528,	-- Pattern: Swiftstrike Shoulders
+				["u"] = NEVER_IMPLEMENTED,	-- There are two identical patterns.  32747 is the one that actually drops, 35528 does not.
 			},
 			{	-- Pattern: Tsunami Belt
-				["itemID"] = 66997,   	-- Pattern: Tsunami Belt
-				["spellID"] = 0,   	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
+				["itemID"] = 66997,	-- Pattern: Tsunami Belt
+				["spellID"] = 0,	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
 				["u"] = NEVER_IMPLEMENTED,
 			},
 			{	-- Pattern: Tsunami Boots
-				["itemID"] = 67010,   	-- Pattern: Tsunami Boots
-				["spellID"] = 0,   	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
+				["itemID"] = 67010,	-- Pattern: Tsunami Boots
+				["spellID"] = 0,	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
 				["u"] = NEVER_IMPLEMENTED,
 			},
 			{	-- Pattern: Tsunami Bracers
-				["itemID"] = 66996,   	-- Pattern: Tsunami Bracers
-				["spellID"] = 0,   	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
+				["itemID"] = 66996,	-- Pattern: Tsunami Bracers
+				["spellID"] = 0,	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
 				["u"] = NEVER_IMPLEMENTED,
 			},
 			{	-- Pattern: Tsunami Chestguard
-				["itemID"] = 67020,   	-- Pattern: Tsunami Chestguard
-				["spellID"] = 0,   	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
+				["itemID"] = 67020,	-- Pattern: Tsunami Chestguard
+				["spellID"] = 0,	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
 				["u"] = NEVER_IMPLEMENTED,
 			},
 			{	-- Pattern: Tsunami Gloves
-				["itemID"] = 67006,   	-- Pattern: Tsunami Gloves
-				["spellID"] = 0,   	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
+				["itemID"] = 67006,	-- Pattern: Tsunami Gloves
+				["spellID"] = 0,	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
 				["u"] = NEVER_IMPLEMENTED,
 			},
 			{	-- Pattern: Tsunami Helm
-				["itemID"] = 67031,   	-- Pattern: Tsunami Helm
-				["spellID"] = 0,   	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
+				["itemID"] = 67031,	-- Pattern: Tsunami Helm
+				["spellID"] = 0,	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
 				["u"] = NEVER_IMPLEMENTED,
 			},
 			{	-- Pattern: Tsunami Leggings
-				["itemID"] = 67025,   	-- Pattern: Tsunami Leggings
-				["spellID"] = 0,   	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
+				["itemID"] = 67025,	-- Pattern: Tsunami Leggings
+				["spellID"] = 0,	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
 				["u"] = NEVER_IMPLEMENTED,
 			},
 			{	-- Pattern: Tsunami Shoulders
-				["itemID"] = 67014,   	-- Pattern: Tsunami Shoulders
-				["spellID"] = 0,   	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
+				["itemID"] = 67014,	-- Pattern: Tsunami Shoulders
+				["spellID"] = 0,	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
 				["u"] = NEVER_IMPLEMENTED,
 			},
 			{	-- Pattern: Twilight Leg Armor
-				["itemID"] = 67019,   	-- Pattern: Twilight Leg Armor
-				["spellID"] = 0,   	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
+				["itemID"] = 67019,	-- Pattern: Twilight Leg Armor
+				["spellID"] = 0,	-- This is available via the trainer, using spellID = 0 to delink the unused plans from the recipe
 				["u"] = NEVER_IMPLEMENTED,
 			},
 			i(67012),	-- Pattern: Windbound Belt (never made it into game)
@@ -2750,10 +2750,10 @@ _.NeverImplemented =
 		i(140779),	-- Falanaar Echo
 		i(136848),	-- Worn Doll Test
 		i(143545),	-- Fel Focusing Crystal
-		i(141300), 	-- Magi Focusing Crystal
-		i(38568), 	-- Drakkari Charm Bracelet
-		i(134017), 	-- Don Carlos' Famous Hat (testing version?)
-		i(38569), 	-- Unknown
+		i(141300),	-- Magi Focusing Crystal
+		i(38568),	-- Drakkari Charm Bracelet
+		i(134017),	-- Don Carlos' Famous Hat (testing version?)
+		i(38569),	-- Unknown
 		i(166851),	-- Kojo's Master Matching Set (PTR Only)
 		i(132132),	-- Glowing Runstone
 		i(157776),	-- Dire Missive
@@ -2762,7 +2762,7 @@ _.NeverImplemented =
 		i(170488),	-- dnt torn journal page #7
 		i(129111),	-- Kvaldir Raiding Horn
 		i(130249),	-- Waywatcher's Boon
-		i(38570), 	-- Unknown
+		i(38570),	-- Unknown
 		i(119220),	-- Alliance Gladiator's Banner
 		i(119221),	-- Horde Gladiator's Banner
 		i(100902),	-- Unknown
@@ -2823,11 +2823,11 @@ _.NeverImplemented =
 	n(-319, {	-- Weapons
 		n(-347, {	-- Bows
 			i(5748),	-- Centaur Longbow
-			i(108783),   	-- Unknown
-			i(167144),   	-- Unknown
+			i(108783),	-- Unknown
+			i(167144),	-- Unknown
 			i(154971),	-- Howdah-Rider's Bow
 			i(115294),	-- Spectral Longbow
-			i(109283),   	-- 6.0 QA Combat Test Hunter Bow
+			i(109283),	-- 6.0 QA Combat Test Hunter Bow
 			i(140717),	-- Marksman Recurve Bow
 			i(150612),	-- Marksman Recurve Bow
 			i(158562),	-- Howdah-Rider's Bow
@@ -2838,8 +2838,8 @@ _.NeverImplemented =
 			i(111783),	-- Irontree Bow (Cata version 55306 is in game but this version doesn't seem to have ever existed)
 		}),
 		n(-346, {	-- Crossbows
-			i(108784),   	-- Unknown
-			i(153400),   	-- [Scalawag's Bolt-Thrower]
+			i(108784),	-- Unknown
+			i(153400),	-- [Scalawag's Bolt-Thrower]
 			i(111073),	-- Unknown
 			i(165267),	-- Unknown
 			i(165271),	-- Unknown
@@ -2879,16 +2879,16 @@ _.NeverImplemented =
 			i(165268),	-- Unknown
 		}),
 		n(-348, {	-- Fist Weapons
-			i(38243),   	-- Ravaging Steelfist
-			i(108787),   	-- Unknown
-			i(171191),   	-- owen test
-			i(171192),   	-- owen test
+			i(38243),	-- Ravaging Steelfist
+			i(108787),	-- Unknown
+			i(171191),	-- owen test
+			i(171192),	-- owen test
 			i(115797),	-- test fist weapon
-			i(108788),   	-- Unknown
-			i(108789),   	-- Unknown
-			i(109361),   	-- Unknown
-			i(109535),   	-- Unknown
-			i(109534),   	-- Unknown
+			i(108788),	-- Unknown
+			i(108789),	-- Unknown
+			i(109361),	-- Unknown
+			i(109535),	-- Unknown
+			i(109534),	-- Unknown
 			i(165269),	-- unknown
 			i(159894),	-- honorable combatant's strikter
 			i(159895),	-- honorable combatant's cestus
@@ -2950,7 +2950,7 @@ _.NeverImplemented =
 			i(109536),	-- 6.0 QA Combat Test Offhand Agility Axe 2
 			i(147379),	-- Wooden Toy Axe (H) used to apply the mog
 		}),
-		n(-336, { 	-- One-Handed Maces
+		n(-336, {	-- One-Handed Maces
 			i(165262),	-- Unknown
 			i(182578),	-- NPE Weapon 1H Mace AGI
 			i(146304),	-- Fel Titan Hammer (test version for Maiden Mog Drop)
@@ -2979,7 +2979,7 @@ _.NeverImplemented =
 			i(109470),	-- Unknown
 			i(109533),	-- Unknown
 			i(90331),	-- Face Smasher Warhammer
-			i(136593), 	-- Doomhammer Offhand Appearance Record (referenced by actual item)
+			i(136593),	-- Doomhammer Offhand Appearance Record (referenced by actual item)
 		}),
 		n(-338, {	-- One-Handed Swords
 			i(134586),	-- Vanguard Hatchet
@@ -3007,10 +3007,10 @@ _.NeverImplemented =
 			i(147378),	-- Wooden Toy Sword(Visual usage for toy weapon set)
 			i(108805),	-- Unknown - was under Legion>1Handed Swords
 			i(109320),	-- 6.0 QA Combat Test Strength 1h Sword 2
-			i(109377),  	-- 6.0 QA Combat Test Strength 1H Sword 3
-			i(109445),  	-- 6.0 QA Combat Test Strength 1h Sword
-			i(109448),  	-- 7.0 QA Combat Test Caster DPS Sword
-			i(109458),  	-- 6.0 QA Combat Test Agility 1h Sword
+			i(109377),	-- 6.0 QA Combat Test Strength 1H Sword 3
+			i(109445),	-- 6.0 QA Combat Test Strength 1h Sword
+			i(109448),	-- 7.0 QA Combat Test Caster DPS Sword
+			i(109458),	-- 6.0 QA Combat Test Agility 1h Sword
 			i(124079),	-- Unknown - was under WoD>1Handed Swords
 			i(124084),	-- Unknown - was under WoD>1Handed Swords
 			i(127852),	-- Unknown - was under WoD>1Handed Swords
@@ -3219,12 +3219,12 @@ _.NeverImplemented =
 			i(165275),	-- Unknown
 		}),
 		n(-340, {	-- War Glaives
-			i(129735), 	-- Verus
-			i(129736), 	-- Verus
+			i(129735),	-- Verus
+			i(129736),	-- Verus
 			i(108807),	-- Unknown
 			i(158580),	-- Loa-Claimer's Wariglaives
-			i(151138), 	-- Warglaive of Azzinoth [This version not implemented; was testing for transmog]
-			i(129737), 	-- Verus
+			i(151138),	-- Warglaive of Azzinoth [This version not implemented; was testing for transmog]
+			i(129737),	-- Verus
 			i(165682),	-- Unknown
 		}),
 		--
@@ -3265,7 +3265,7 @@ _.NeverImplemented =
 		i(18303),	-- Nimble Buckler
 		i(18342),	-- Quel'dorei Guard [NPC Shield I believe]
 		i(20502),	-- Ironbark Shield [NPC Shield]
-		i(38244),   -- Valorous Exterminator (Never added)
+		i(38244),	-- Valorous Exterminator (Never added)
 		i(32482),	-- Touch of Victory
 		i(34138),	-- Enchanted White Wand
 		i(34139),	-- Enchanted Crimson Wand
@@ -3279,7 +3279,7 @@ _.NeverImplemented =
 		i(65878),	-- Charbelching Wand
 		i(109384),	-- 6.0 QA Combat Test Caster DPS Wand
 		i(153505),	-- Monelite Boomstick
-		i(138489), 	-- Kargath's Sacrified Hands
+		i(138489),	-- Kargath's Sacrified Hands
 		i(80981),	-- Scavenged Rotor Blade
 		i(81320),	-- Right-Handed Invis Knuckles
 		i(23420),	-- Engraved Axe
@@ -3287,14 +3287,14 @@ _.NeverImplemented =
 		i(20522),	-- Feral Staff
 		i(20003),	-- Devilsaur Claws
 		i(20005),	-- Devilsaur Claws
-		i(3222),		-- Wicked Dagger
+		i(3222),	-- Wicked Dagger
 		i(38245),	-- Crystalline Providence
 		i(38248),	-- Torch of the Fallen Souls
 		i(84085),	-- Dreadwaste Meditation Staff
 		i(84086),	-- Dreadwaste Diviner's Rod
 		i(84527),	-- Hidden Pass Meditation Staff
-		i(85588), 	-- Reflex Edges [This version never implemented]
-		i(117010),	-- Forester's Axe 										(Never added in Game)
+		i(85588),	-- Reflex Edges [This version never implemented]
+		i(117010),	-- Forester's Axe										(Never added in Game)
 		i(913),		-- Huge Ogre Sword
 		i(12469),	-- Mutilator
 		i(23432),	-- Engraved Greatsword
@@ -3308,7 +3308,7 @@ _.NeverImplemented =
 		i(17142),	-- Shard of the Defiler
 		i(2664),	-- Spinner Fang
 		i(3738),	-- Brewing Rod
-		i(128824), 	-- Tome of the Silver Hand
+		i(128824),	-- Tome of the Silver Hand
 	}),
 	-- Weapons end
 

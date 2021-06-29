@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(5, {	-- Mists of Pandaria
-	inst(324, { 	-- Siege of Niuzao Temple
+	inst(324, {	-- Siege of Niuzao Temple
 		["lvl"] = 88,
 		["maps"] = { 457, 458, 459},
 		["groups"] = {

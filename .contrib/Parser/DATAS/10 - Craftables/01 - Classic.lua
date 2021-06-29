@@ -1118,7 +1118,7 @@ _.Craftables = { tier(1, {	-- Classic
 			i(3719),	-- Hillman's Cloak
 			i(15138),	-- Onyxia Scale Cloak
 		}),
-		n(-44, { 	-- Leather
+		n(-44, {	-- Leather
 			n(-320, {	-- Head
 				i(22759),	-- Bramblewood Helm
 				i(16983),	-- Molten Helm

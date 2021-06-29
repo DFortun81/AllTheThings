@@ -217,7 +217,7 @@ _.BattlePets =
 					["provider"] = { "n", 147070 },	-- Micro Zoox
 					["coord"] = { 31.67, 71.61, 30 },
 					["sourceQuests"] = {
-						54184, 	-- Trouble in Gnomeregan (A)
+						54184,	-- Trouble in Gnomeregan (A)
 						54276,	-- Trouble in Gnomeregan (H)
 					},
 					["lvl"] = 120,
@@ -369,7 +369,7 @@ _.BattlePets =
 					},
 				}),
 				i(143753, {	-- Damp Pet Supplies
-					i(143754), 	-- Cavern Moccasin
+					i(143754),	-- Cavern Moccasin
 					i(143755),	-- Young Venomfang
 					i(143756),	-- Everliving Spore
 				}),

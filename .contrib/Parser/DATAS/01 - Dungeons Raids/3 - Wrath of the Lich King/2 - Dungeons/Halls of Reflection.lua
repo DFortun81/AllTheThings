@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(3, {	-- Wrath of the Lich King
-	inst(276, { 	-- Halls of Reflection
+	inst(276, {	-- Halls of Reflection
 		["mapID"] = 185,
 		["coord"] = { 52.3, 89.3, 118 },
 		["lvl"] = 78,
@@ -86,7 +86,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 				cr(36954, e(603, {	-- Escape from Arthas
 					{
 						["achievementID"] = 4518,	-- The Halls of Reflection
-						["criteriaID"] = 3,	-- 	Survive the encounter with the Lich King
+						["criteriaID"] = 3,	--	Survive the encounter with the Lich King
 					},
 					i(49839),	-- Mourning Malice
 					i(50303),	-- Black Icicle
@@ -187,7 +187,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						ach(4526),	-- We're Not Retreating; We're Advancing in a Different Direction.
 						{
 							["achievementID"] = 4521,	-- Heroic: The Halls of Reflection
-							["criteriaID"] = 3,	-- 	Survive the encounter with the Lich King
+							["criteriaID"] = 3,	--	Survive the encounter with the Lich King
 						},
 						i(49839),	-- Mourning Malice
 						i(50303),	-- Black Icicle

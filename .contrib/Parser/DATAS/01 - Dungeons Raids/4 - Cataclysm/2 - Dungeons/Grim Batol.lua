@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(4, {	-- Cataclysm
-	inst(71, { 	-- Grim Batol
+	inst(71, {	-- Grim Batol
 		["description"] = "Don't be fooled by Grim Batol's humble exterior; many of this mountain fortress's desecrated chambers are buried deep in the Twilight Highlands. Once the stronghold of the Wildhammer dwarves, and later seized by orcs as a prison for Alextrasza, the city is now in the clutches of the Twilight's Hammer cult. Heroes brave enough to infiltrate the brooding depths of the stronghold must confront Deathwing's agents to thwart the mysterious evil within.\n\n|CFFFF0000Need to finish off a Cataclysm rep?  Equip a tabard obtained from the faction quartermaster and clear the dungeon on normal for around 2k rep per clear.|r",
 		["lvl"] = 83,
 		["mapID"] = 293,
@@ -59,10 +59,10 @@ _.Instances = { tier(4, {	-- Cataclysm
 				}),
 				cr(39625, e(131, {	-- General Umbriss
 					i(56441),	-- Modgug's Blade
-					i(157612), 	-- Dragonkin Ward (Added 7.3.5)
+					i(157612),	-- Dragonkin Ward (Added 7.3.5)
 					i(56443),	-- Wildhammer Riding Helm
 					i(56442),	-- Cursed Skardyn Vest
-					i(157596), 	-- Glimmerthread Pantaloons (Added 7.3.5)
+					i(157596),	-- Glimmerthread Pantaloons (Added 7.3.5)
 					i(56444),	-- Umbriss Band
 					i(56440),	-- Skardyn's Grace
 					un(REMOVED_FROM_GAME, i(56116)),	-- Modgud's Blade [Replaced with 56441]
@@ -72,9 +72,9 @@ _.Instances = { tier(4, {	-- Cataclysm
 					un(REMOVED_FROM_GAME, i(56115)),	-- Skardyn's Grace [Replaced with 56440]
 				})),
 				cr(40177, e(132, {	-- Forgemaster Throngus
-					i(157613), 	-- Geomancy Slicer (Added 7.3.5)
+					i(157613),	-- Geomancy Slicer (Added 7.3.5)
 					i(56446),	-- Wand of Untainted Power
-					i(157597), 	-- Troggstitched Drape (Added 7.3.5)
+					i(157597),	-- Troggstitched Drape (Added 7.3.5)
 					i(56447),	-- Belt of the Forgemaster
 					i(56448),	-- Dark Iron Chain Boots
 					i(56445),	-- Ring of Dun Algaz
@@ -87,11 +87,11 @@ _.Instances = { tier(4, {	-- Cataclysm
 				})),
 				cr(40319, e(133, {	-- Drahga Shadowburner
 					i(56454),	-- Windwalker Blade
-					i(157598), 	-- Courier's Dragonriding Spaulders (Added 7.3.5)
+					i(157598),	-- Courier's Dragonriding Spaulders (Added 7.3.5)
 					i(56452),	-- Earthshape Pauldrons
 					i(56450),	-- Azureborne Cloak
 					i(56453),	-- Crimsonborne Bracers
-					i(157614), 	-- Flame Invoker's Treads (Added 7.3.5)
+					i(157614),	-- Flame Invoker's Treads (Added 7.3.5)
 					i(56451),	-- Red Scale Boots
 					un(REMOVED_FROM_GAME, i(56127)),	-- Windwalker Blade [Replaced with 56454]
 					un(REMOVED_FROM_GAME, i(56124)),	-- Earthshaper Pauldrons [Replaced with 56452]
@@ -107,7 +107,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					i(56460),	-- Crown of Enfeebled Bodies
 					i(56455),	-- Vest of Misshapen Hides
 					i(56464),	-- Bracers of Umbral Mending
-					i(157615), 	-- Flamescale Chain Leggings (Added 7.3.5)
+					i(157615),	-- Flamescale Chain Leggings (Added 7.3.5)
 					i(56457),	-- Circle of Bone
 					i(56463),	-- Corrupted Egg Shell
 					i(56462),	-- Gale of Shadows
@@ -131,17 +131,17 @@ _.Instances = { tier(4, {	-- Cataclysm
 					cr(39625, e(131, {	-- General Umbriss
 						ach(5297),	-- Umbrage for Umbriss
 						i(56441),	-- Modgug's Blade
-						i(157612), 	-- Dragonkin Ward (Added 7.3.5)
+						i(157612),	-- Dragonkin Ward (Added 7.3.5)
 						i(56443),	-- Wildhammer Riding Helm
 						i(56442),	-- Cursed Skardyn Vest
-						i(157596), 	-- Glimmerthread Pantaloons (Added 7.3.5)
+						i(157596),	-- Glimmerthread Pantaloons (Added 7.3.5)
 						i(56444),	-- Umbriss Band
 						i(56440),	-- Skardyn's Grace
 					})),
 					cr(40177, e(132, {	-- Forgemaster Throngus
-						i(157613), 	-- Geomancy Slicer (Added 7.3.5)
+						i(157613),	-- Geomancy Slicer (Added 7.3.5)
 						i(56446),	-- Wand of Untainted Power
-						i(157597), 	-- Troggstitched Drape (Added 7.3.5)
+						i(157597),	-- Troggstitched Drape (Added 7.3.5)
 						i(56447),	-- Belt of the Forgemaster
 						i(56448),	-- Dark Iron Chain Boots
 						i(56445),	-- Ring of Dun Algaz
@@ -149,11 +149,11 @@ _.Instances = { tier(4, {	-- Cataclysm
 					})),
 					cr(40319, e(133, {	-- Drahga Shadowburner
 						i(56454),	-- Windwalker Blade
-						i(157598), 	-- Courier's Dragonriding Spaulders (Added 7.3.5)
+						i(157598),	-- Courier's Dragonriding Spaulders (Added 7.3.5)
 						i(56452),	-- Earthshape Pauldrons
 						i(56450),	-- Azureborne Cloak
 						i(56453),	-- Crimsonborne Bracers
-						i(157614), 	-- Flame Invoker's Treads (Added 7.3.5)
+						i(157614),	-- Flame Invoker's Treads (Added 7.3.5)
 						i(56451),	-- Red Scale Boots
 					})),
 					cr(40484, e(134, {	-- Erudax
@@ -165,7 +165,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i(56460),	-- Crown of Enfeebled Bodies
 						i(56455),	-- Vest of Misshapen Hides
 						i(56464),	-- Bracers of Umbral Mending
-						i(157615), 	-- Flamescale Chain Leggings (Added 7.3.5)
+						i(157615),	-- Flamescale Chain Leggings (Added 7.3.5)
 						i(56457),	-- Circle of Bone
 						i(56463),	-- Corrupted Egg Shell
 						i(56462),	-- Gale of Shadows

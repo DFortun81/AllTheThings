@@ -995,7 +995,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(56708)),	-- Bow of Ire (old version)
 						un(REMOVED_FROM_GAME, i(56710)),	-- Unbountied Cloak (Replaced by Durak's Downfall in WoD)
 						i(119325),	-- Bow of Ire
-						i(119326), 	-- Ring of Pardons
+						i(119326),	-- Ring of Pardons
 						i(119327),	-- Durak's Downfall
 					},
 				}),

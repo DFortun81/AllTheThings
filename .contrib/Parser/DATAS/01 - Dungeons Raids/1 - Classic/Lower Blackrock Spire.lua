@@ -153,7 +153,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(12626),	-- Funeral Cuffs
 				i(13255),	-- Trueaim Gauntlets
 				i(151413),	-- Smolderthorn Greatbelt
-				un(REMOVED_FROM_GAME, i(16712)), 	-- Shadowcraft Gloves
+				un(REMOVED_FROM_GAME, i(16712)),	-- Shadowcraft Gloves
 			})),
 			n(16080, {	-- Mor Grayhoof Summonable Read Description
 				["description"] = "Brazier of Invocation (Dungeon Set 2 questline) is required to summon this boss.",
@@ -239,7 +239,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(13252),	-- Cloudrunner Girdle
 				i(151416),	-- Dark Horde Grunt's Legplates
 				i(151415),	-- Veteran Spearman's Chain Boots
-				i(21955),  	-- Design: Black Diamond Crab
+				i(21955),	-- Design: Black Diamond Crab
 				un(REMOVED_FROM_GAME, i(16680)),	-- Beaststalker's Belt
 				un(REMOVED_FROM_GAME, i(16735)),	-- Bracers of Valor
 				un(REMOVED_FROM_GAME, i(16673)),	-- Cord of Elements
@@ -284,7 +284,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(22321),	-- Heart of Wyrmthalak
 				i(142370),	-- Plans: Arcanite Champion
 				un(REMOVED_FROM_GAME, i(16679)),	-- Beaststalker's Mantle
-				un(REMOVED_FROM_GAME, i(13148)), 	-- Chillpike [Disappeared sometime around 3.0]
+				un(REMOVED_FROM_GAME, i(13148)),	-- Chillpike [Disappeared sometime around 3.0]
 				un(REMOVED_FROM_GAME, i(13164)),	-- Heart of the Scale
 				i(12337, {	-- Gemstone of Bloodaxe
 					un(REMOVED_FROM_GAME, q(4742)),	-- Seal of Ascension
@@ -297,73 +297,73 @@ _.Instances = { tier(1, {	-- Classic
 							9692,	-- Bloodaxe Raider
 							9259,	-- Firebrand Grunt
 							9260,	-- Firebrand Legionnaire
-							9258, 	-- Scarshield Raider
-							9241, 	-- Smolderthorn Headhunter
+							9258,	-- Scarshield Raider
+							9241,	-- Smolderthorn Headhunter
 						},
 					})),
 					un(REMOVED_FROM_GAME, i(16735, {	-- Bracers of Valor
 						["crs"] = {
-							9716, 	-- Bloodaxe Warmonger
+							9716,	-- Bloodaxe Warmonger
 							9259,	-- Firebrand Grunt
 							9260,	-- Firebrand Legionnaire
-							9097, 	-- Scarshield Legionnaire
-							9267, 	-- Smolderthorn Axe Thrower
-							9268, 	-- Smolderthorn Berserker
+							9097,	-- Scarshield Legionnaire
+							9267,	-- Smolderthorn Axe Thrower
+							9268,	-- Smolderthorn Berserker
 						},
 					})),
 					un(REMOVED_FROM_GAME, i(16673, {	-- Cord of Elements
 						["crs"] = {
-							9693, 	-- Bloodaxe Evoker
+							9693,	-- Bloodaxe Evoker
 							9262,	-- Firebrand Invoker
 							9264,	-- Firebrand Pyromancer
 							9257,	-- Scarshield Warlock
-							9266, 	-- Smolderthorn Witch Doctor
+							9266,	-- Smolderthorn Witch Doctor
 						},
 					})),
 					un(REMOVED_FROM_GAME, i(16696, {	-- Devout Belt
 						["crs"] = {
-							9717, 	-- Bloodaxe Summoner
-							9261, 	-- Firebrand Darkweaver
-							9263, 	-- Firebrand Dreadweaver
-							9098, 	-- Scarshield Spellbinder
-							9240, 	-- Smolderthorn Shadow Priest
+							9717,	-- Bloodaxe Summoner
+							9261,	-- Firebrand Darkweaver
+							9263,	-- Firebrand Dreadweaver
+							9098,	-- Scarshield Spellbinder
+							9240,	-- Smolderthorn Shadow Priest
 						},
 					})),
 					un(REMOVED_FROM_GAME, i(16703, {	-- Dreadmist Bracers
 						["crs"] = {
-							9717, 	-- Bloodaxe Summoner
-							9261, 	-- Firebrand Darkweaver
-							9263, 	-- Firebrand Dreadweaver
+							9717,	-- Bloodaxe Summoner
+							9261,	-- Firebrand Darkweaver
+							9263,	-- Firebrand Dreadweaver
 							9257,	-- Scarshield Warlock
-							9269, 	-- Smolderthorn Seer
+							9269,	-- Smolderthorn Seer
 						},
 					})),
 					un(REMOVED_FROM_GAME, i(16685, {	-- Magister's Belt
 						["crs"] = {
-							9239, 	-- Smolderthorn Mystic
+							9239,	-- Smolderthorn Mystic
 						},
 					})),
 					un(REMOVED_FROM_GAME, i(16683, {	-- Magister's Bindings
 						["crs"] = {
-							9693, 	-- Bloodaxe Evoker
+							9693,	-- Bloodaxe Evoker
 							9262,	-- Firebrand Invoker
 							9264,	-- Firebrand Pyromancer
-							9098, 	-- Scarshield Spellbinder
+							9098,	-- Scarshield Spellbinder
 						},
 					})),
 					un(REMOVED_FROM_GAME, i(16713, {	-- Shadowcraft Belt
 						["crs"] = {
-							9716, 	-- Bloodaxe Warmonger
+							9716,	-- Bloodaxe Warmonger
 							9259,	-- Firebrand Grunt
 							9260,	-- Firebrand Legionnaire
-							9097, 	-- Scarshield Legionnaire
-							9265, 	-- Smolderthorn Shadow Hunter
+							9097,	-- Scarshield Legionnaire
+							9265,	-- Smolderthorn Shadow Hunter
 						},
 					})),
 					un(REMOVED_FROM_GAME, i(16716, {	-- Wildheart Belt
 						["crs"] = {
 							9692,	-- Bloodaxe Raider
-							9258, 	-- Scarshield Raider
+							9258,	-- Scarshield Raider
 						},
 					})),
 				}),

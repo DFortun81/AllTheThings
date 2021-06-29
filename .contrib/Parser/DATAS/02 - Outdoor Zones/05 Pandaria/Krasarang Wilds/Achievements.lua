@@ -40,7 +40,7 @@ _.Zones =
 								i(87266),	-- Recipe: Banana Infused Rum
 							},
 						}),
-						o(213651, { 	-- Equipment Locker
+						o(213651, {	-- Equipment Locker
 							["coord"] = { 43.7, 92.3, 418 },
 							["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",
 							["questID"] = 31410,
@@ -144,7 +144,7 @@ _.Zones =
 						}),
 					},
 				}),
-				ach(7518),	-- Wanderers, Dreamers, and You 
+				ach(7518),	-- Wanderers, Dreamers, and You
 			}),
 		}),
 	}),

@@ -7,7 +7,7 @@ _.WorldEvents =
 	d(24, {  -- Timewalking
 		["u"] = 42,	--  Timewalking
 		["g"] = {
-			tier(3, { 	-- Wrath of the Lich King
+			tier(3, {	-- Wrath of the Lich King
 				q(50316, {	-- Disturbance Detected: Ulduar
 					["provider"] = { "n", 130654 },	-- Vormu
 					["isWeekly"] = true,
@@ -16,8 +16,8 @@ _.WorldEvents =
 					["provider"] = { "i", 129928 },	-- Frigid Timewarped Prism
 					["isWeekly"] = true,
 				}),
-				n(98690, { 	-- Auzin <Timewalking Vendor>
-					["maps"] = { 125 },	--  Dalaran: Northrend
+				n(98690, {	-- Auzin <Timewalking Vendor>
+					["maps"] = { 125 },	-- Dalaran: Northrend
 					["g"] = {
 						-- Mounts / Pets / Toys
 						i(129922, {	-- Bridle of the Ironbound Wraithcharger (MOUNT!)

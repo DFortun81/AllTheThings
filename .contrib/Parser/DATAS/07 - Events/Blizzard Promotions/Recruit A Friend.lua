@@ -5,31 +5,31 @@
 _.WorldEvents =
 {
 	n(-65, { -- Blizzard Promotions
-		n(-546, { 	-- Recruit A Friend
+		n(-546, {	-- Recruit A Friend
 			un(REMOVED_FROM_GAME, ach(1436, {	-- Friends In High Places
-				un(REMOVED_FROM_GAME, i(37719)), 	-- Swift Zhevra
+				un(REMOVED_FROM_GAME, i(37719)),	-- Swift Zhevra
 			})),
 			un(REMOVED_FROM_GAME, ach(4832, {	-- Friends In Even Higher Places
-				un(REMOVED_FROM_GAME, i(54860)), 	-- X-53 Touring Rocket
+				un(REMOVED_FROM_GAME, i(54860)),	-- X-53 Touring Rocket
 			})),
 			un(REMOVED_FROM_GAME, ach(8213, {	-- Friends In Places Higher Yet
-				un(REMOVED_FROM_GAME, i(83086)), 	-- Heart of the Nightwing
+				un(REMOVED_FROM_GAME, i(83086)),	-- Heart of the Nightwing
 			})),
 			un(REMOVED_FROM_GAME, ach(8794, {	-- Friends In Places Even Higher Than That
-				un(REMOVED_FROM_GAME, i(106246)), 	-- Emerald Hippogryph
+				un(REMOVED_FROM_GAME, i(106246)),	-- Emerald Hippogryph
 			})),
 			un(REMOVED_FROM_GAME, ach(9925, {	-- Friends In Places Yet Even Higher Than That
-				un(REMOVED_FROM_GAME, i(118515)), 	-- Cindermane Charger
+				un(REMOVED_FROM_GAME, i(118515)),	-- Cindermane Charger
 			})),
-			un(REMOVED_FROM_GAME, i(34518)), 	-- Golden Pig
-			un(REMOVED_FROM_GAME, i(34519)), 	-- Silver Pig
+			un(REMOVED_FROM_GAME, i(34518)),	-- Golden Pig
+			un(REMOVED_FROM_GAME, i(34519)),	-- Silver Pig
 			un(REMOVED_FROM_GAME, i(46894)),	-- Jade Tiger
 			n(-548, {	-- China Only
 				ach(3636, {	-- Jade Tiger
 					["collectible"] = false,
 				}),
 			}),
-			un(REMOVED_FROM_GAME, i(49664)), 	-- Zipao Tiger
+			un(REMOVED_FROM_GAME, i(49664)),	-- Zipao Tiger
 			un(BLIZZARD_BALANCE, i(173300, {	-- Ensemble: Renowned Explorer's Attire
 				["b"] = 1,	-- b for binding, to overcome Hide BoE items filter
 				["g"] = {

@@ -17,7 +17,7 @@ _.ExpansionFeatures =
 							}),
 							q(37569, {	-- Your First Blacksmithing Work Order
 								["provider"] = { "n", 79867 },	-- Orgek Ironhand
-								["races"] = HORDE_ONLY, 	-- triggers when turning in 'your first blacksmithing work order' quests
+								["races"] = HORDE_ONLY,	-- triggers when turning in 'your first blacksmithing work order' quests
 							}),
 							q(37564, {	-- Your First Blacksmithing Work Order
 								["_drop"] = { "g" },	-- drop Truesteel Ingot

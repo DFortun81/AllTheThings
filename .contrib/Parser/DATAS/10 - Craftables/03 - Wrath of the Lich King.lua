@@ -361,17 +361,17 @@ _.Craftables =
 				i(38371),	-- Jormungar Leg Armor
 				i(38372),	-- Nerubian Leg Armor
 				i(38376),	-- Heavy Borean Armor Kit
-				i(38373), 	-- Frosthide Leg Armor
-				i(38374), 	-- Icescale Leg Armor
-				i(44963), 	-- Earthen Leg Armor
+				i(38373),	-- Frosthide Leg Armor
+				i(38374),	-- Icescale Leg Armor
+				i(44963),	-- Earthen Leg Armor
 			}),
-			n(-322, { 	-- Cloak
+			n(-322, {	-- Cloak
 				i(38441),	-- Cloak of Harsh Winds
 				i(41238),	-- Cloak of Tormented Skies
 				i(43565),	-- Durable Nerubhide Cape
 				i(43566),	-- Ice Striker's Cloak
 			}),
-			n(-44, { 	-- Leather
+			n(-44, {	-- Leather
 				i(38405),	-- Arctic Belt
 				i(38404),	-- Arctic Boots
 				i(38400),	-- Arctic Chestpiece
@@ -442,7 +442,7 @@ _.Craftables =
 				i(44930),	-- Windripper Boots
 				i(44931),	-- Windripper Leggings
 			}),
-			n(-45, { 	-- Mail
+			n(-45, {	-- Mail
 				i(45553),	-- Belt of Dragons
 				i(47580),	-- Black Chitin Bracers
 				i(47579),	-- Black Chitin Bracers

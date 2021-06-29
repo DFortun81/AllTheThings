@@ -11,7 +11,7 @@ _.Zones =
 					["coord"] = { 28.0, 43.6, 49 },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(20576, { 	-- Pattern: Black Whelp Tunic
+						i(20576, {	-- Pattern: Black Whelp Tunic
 							["isLimited"] = true,
 						}),
 						i(5772, {	-- Pattern: Red Woolen Bag

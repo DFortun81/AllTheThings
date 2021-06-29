@@ -38,7 +38,7 @@ _.Instances = { tier(1, applyclassicphase(PHASE_THREE, {	-- Classic
 					["sourceQuest"] = 7781,	-- The Lord of Blackrock
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(19366), 	-- Master Dragonslayer's Orb
+						i(19366),	-- Master Dragonslayer's Orb
 						i(19383),	-- Master Dragonslayer's Medallion
 						i(19384),	-- Master Dragonslayer's Ring
 					},

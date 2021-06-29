@@ -43,7 +43,7 @@ _.Zones =
 						i(16221, {	-- Formula: Enchant Chest - Major Health
 							["isLimited"] = true,
 						}),
-						i(15740, { 	-- Pattern: Frostsaber Boots
+						i(15740, {	-- Pattern: Frostsaber Boots
 							["isLimited"] = true,
 						}),
 						i(14526),	-- Pattern: Mooncloth
@@ -57,7 +57,7 @@ _.Zones =
 					["coord"] = { 46.6, 17.6, WINTERSPRING },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(13086), 	-- Reins of the Winterspring Frostsaber (MOUNT!)
+						i(13086),	-- Reins of the Winterspring Frostsaber (MOUNT!)
 					},
 				}),
 				n(11184, {	-- Wixxrak <Weaponsmith & Gunsmith>

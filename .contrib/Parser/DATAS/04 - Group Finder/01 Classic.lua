@@ -31,8 +31,8 @@ _.GroupFinder =
 			i(51996),			-- Tumultuous Necklace		— 4/19/19
 			i(160608),			-- Tumultuous Necklace		— 9/13/19
 			i(160607),			-- Tumultuous Necklace		— 11/10/19
-			i(51992),			-- Tumultuous Ring [INT]    — confirmed by discord user on April 21, 2020
-			i(160601),			-- Tumultuous Ring [AGI] 	— 4/7/19
+			i(51992),			-- Tumultuous Ring [INT]	— confirmed by discord user on April 21, 2020
+			i(160601),			-- Tumultuous Ring [AGI]	— 4/7/19
 			i(160602),			-- Tumultuous Ring [STR]	— 9/13/19
 			i(51964),			-- Vigorous Belt			— 4/7/19
 			i(51962),			-- Vigorous Bracers			— 4/7/19

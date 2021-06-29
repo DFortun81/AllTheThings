@@ -503,7 +503,7 @@ u(145022, 14);	-- Cruel Gladiator's Plate Girdle
 u(145023, 14);	-- Cruel Gladiator's Plate Girdle
 u(145024, 14);	-- Cruel Gladiator's Plate Wristplates
 u(145025, 14);	-- Cruel Gladiator's Plate Wristplates
-u(146218, 14); 	-- Vindictive Gladiator's Satin Armor
+u(146218, 14);	-- Vindictive Gladiator's Satin Armor
 u(146219, 14);  -- Vindictive Gladiator's Satin Armor
 u(146220, 14);  -- Vindictive Gladiator's Satin Armor
 u(146221, 14);  -- Vindictive Gladiator's Satin Armor

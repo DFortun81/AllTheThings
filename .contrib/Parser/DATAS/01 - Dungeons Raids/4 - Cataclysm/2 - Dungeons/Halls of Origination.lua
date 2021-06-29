@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(4, {	-- Cataclysm
-	inst(70, { 	-- Halls of Origination
+	inst(70, {	-- Halls of Origination
 		["lvl"] = 83,
 		["maps"] = {
 			297,	-- The Vault of Lights
@@ -81,12 +81,12 @@ _.Instances = { tier(4, {	-- Cataclysm
 					un(REMOVED_FROM_GAME, i(56094)),	-- Underworld Cord (7.3.5 - Removed from Game!)
 				})),
 				cr(39788, e(126, {	-- Anraphet
-					i(157611),  	-- Crown of Patient Vigil
-					i(57866),  	-- Mantle of Soft Shadows
-					i(57868),  	-- Anraphet's Regalia
-					i(57869),  	-- Omega Breastplate
-					i(57870),  	-- Alpha Bracers
-					i(57867),  	-- Boots of Crumbling Ruin
+					i(157611),	-- Crown of Patient Vigil
+					i(57866),	-- Mantle of Soft Shadows
+					i(57868),	-- Anraphet's Regalia
+					i(57869),	-- Omega Breastplate
+					i(57870),	-- Alpha Bracers
+					i(57867),	-- Boots of Crumbling Ruin
 					un(REMOVED_FROM_GAME, i(57858)),	-- Mantle of Soft Shadows (7.3.5 - Removed from Game!)
 					un(REMOVED_FROM_GAME, i(57860)),	-- Anraphet's Regalia (7.3.5 - Removed from Game!)
 					un(REMOVED_FROM_GAME, i(57856)),	-- Omega Breastplate (7.3.5 - Removed from Game!)
@@ -94,7 +94,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					un(REMOVED_FROM_GAME, i(57857)),	-- Boots of Crumbling Ruin (7.3.5 - Removed from Game!)
 				})),
 				cr(39587, e(127, {	-- Isiset, Construct of Magic
-					i(157609), 	-- Scepter of Stargazing
+					i(157609),	-- Scepter of Stargazing
 					i(56416),	-- Armguards of Unearthly Light
 					i(56413),	-- Legwraps of Astral Rain
 					i(56415),	-- Nova Band
@@ -108,8 +108,8 @@ _.Instances = { tier(4, {	-- Cataclysm
 				})),
 				cr(39731, e(128, {	-- Ammunae, Construct of Life
 					i(56421),	-- Seedling Pod
-					i(56419), 	-- Bloodpetal Mantle
-					i(56417), 	-- Robes of Rampant Growth
+					i(56419),	-- Bloodpetal Mantle
+					i(56417),	-- Robes of Rampant Growth
 					i(56418),	-- Band of Life Energy
 					un(REMOVED_FROM_GAME, i(55999)),	-- Seedling Pod (7.3.5 - Removed from Game!)
 					un(REMOVED_FROM_GAME, i(55997)),	-- Bloodpetal Mantle (7.3.5 - Removed from Game!)
@@ -117,11 +117,11 @@ _.Instances = { tier(4, {	-- Cataclysm
 					un(REMOVED_FROM_GAME, i(56000)),	-- Band of Life Energy (7.3.5 - Removed from Game!)
 				})),
 				cr(39732, e(129, {	-- Setesh, Construct of Destruction
-					i(57872), 	-- Scepter of Power
-					i(57873), 	-- Helm of Setesh
-					i(57871), 	-- Helm of the Typhonic Beast
-					i(57874), 	-- Hieroglyphic Vest
-					i(57875), 	-- Chaotic Wrappings
+					i(57872),	-- Scepter of Power
+					i(57873),	-- Helm of Setesh
+					i(57871),	-- Helm of the Typhonic Beast
+					i(57874),	-- Hieroglyphic Vest
+					i(57875),	-- Chaotic Wrappings
 					un(REMOVED_FROM_GAME, i(57865)),	-- Scepter of Power (7.3.5 - Removed from Game!)
 					un(REMOVED_FROM_GAME, i(57861)),	-- Helm of Setesh (7.3.5 - Removed from Game!)
 					un(REMOVED_FROM_GAME, i(57864)),	-- Helm of the Typhonic Beast (7.3.5 - Removed from Game!)
@@ -132,13 +132,13 @@ _.Instances = { tier(4, {	-- Cataclysm
 					{	-- Halls of Origination
 						["achievementID"] = 4841,	-- Halls of Origination
 					},
-					i(56433), 	-- Blade of the Burning Sun
-					i(56430), 	-- Sun Strike
-					i(56434), 	-- Solar Wind Cloak
-					i(56428), 	-- Fingers of Light
-					i(56429), 	-- Red Beam Cord
-					i(56435), 	-- Legguards of Noon
-					i(56436), 	-- Hekatic Slippers
+					i(56433),	-- Blade of the Burning Sun
+					i(56430),	-- Sun Strike
+					i(56434),	-- Solar Wind Cloak
+					i(56428),	-- Fingers of Light
+					i(56429),	-- Red Beam Cord
+					i(56435),	-- Legguards of Noon
+					i(56436),	-- Hekatic Slippers
 					i(56432),	-- Band of Rays
 					i(56427),	-- Left Eye of Rajh
 					i(56431),	-- Right Eye of Rajh
@@ -219,27 +219,27 @@ _.Instances = { tier(4, {	-- Cataclysm
 					})),
 					cr(39731, e(128, {	-- Ammunae, Construct of Life
 						i(56421),	-- Seedling Pod
-						i(56419), 	-- Bloodpetal Mantle
-						i(56417), 	-- Robes of Rampant Growth
+						i(56419),	-- Bloodpetal Mantle
+						i(56417),	-- Robes of Rampant Growth
 						i(56418),	-- Band of Life Energy
 					})),
 					cr(39732, e(129, {	-- Setesh, Construct of Destruction
-						i(57872), 	-- Scepter of Power
-						i(57873), 	-- Helm of Setesh
-						i(57871), 	-- Helm of the Typhonic Beast
-						i(57874), 	-- Hieroglyphic Vest
-						i(57875), 	-- Chaotic Wrappings
+						i(57872),	-- Scepter of Power
+						i(57873),	-- Helm of Setesh
+						i(57871),	-- Helm of the Typhonic Beast
+						i(57874),	-- Hieroglyphic Vest
+						i(57875),	-- Chaotic Wrappings
 					})),
 					cr(39378, e(130, {	-- Rajh, Construct of Sun
 						ach(5065),	-- Heroic: Halls of Origination
 						ach(5295),	-- Sun of a...
-						i(56433), 	-- Blade of the Burning Sun
-						i(56430), 	-- Sun Strike
-						i(56434), 	-- Solar Wind Cloak
-						i(56428), 	-- Fingers of Light
-						i(56429), 	-- Red Beam Cord
-						i(56435), 	-- Legguards of Noon
-						i(56436), 	-- Hekatic Slippers
+						i(56433),	-- Blade of the Burning Sun
+						i(56430),	-- Sun Strike
+						i(56434),	-- Solar Wind Cloak
+						i(56428),	-- Fingers of Light
+						i(56429),	-- Red Beam Cord
+						i(56435),	-- Legguards of Noon
+						i(56436),	-- Hekatic Slippers
 						i(56432),	-- Band of Rays
 						i(56427),	-- Left Eye of Rajh
 						i(56431),	-- Right Eye of Rajh

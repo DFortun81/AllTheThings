@@ -5,7 +5,7 @@ end
 
 -- Stash of Dusty Music Rolls
 i(122201, 38069);		-- Music Roll: Stormwind (Unlocks Orgrimmar)
-i(122210, 38070); 		-- Music Roll: Orgrimmar (Unlocks Stormwind)
+i(122210, 38070);		-- Music Roll: Orgrimmar (Unlocks Stormwind)
 i(122203, 38073);		-- Music Roll: Ironforge (Unlocks Thunder Bluff)
 i(122213, 38074);		-- Music Roll: Thunder Bluff (Unlocks Ironforge)
 i(122205, 38077);		-- Music Roll: Night Song (Unlocks Undercity)

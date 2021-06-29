@@ -6,7 +6,7 @@ _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
 		m(582, {	-- Lunarfall
-			n(-299, { 	-- Missions
+			n(-299, {	-- Missions
 				["races"] = ALLIANCE_ONLY,
 				["description"] = "Various missions at your garrison, shipyard, or class hall offer these rewards.",
 				["g"] = {
@@ -47,7 +47,7 @@ _.ExpansionFeatures =
 								["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 								["g"] = {
 									i(111971),	-- Barracks, Level 3 [Blueprints]
-									ach(9146), 	-- Patrolling Mission Specialist
+									ach(9146),	-- Patrolling Mission Specialist
 								},
 							}),
 							ach(9143, {	-- The Rarer the Better

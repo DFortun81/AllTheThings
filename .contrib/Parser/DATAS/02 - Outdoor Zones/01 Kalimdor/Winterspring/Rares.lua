@@ -75,7 +75,7 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(21548)),	-- Pattern: Stormshroud Gloves
-						un(REMOVED_FROM_GAME, i(18678)), 	-- Tempestria's Frozen Necklace
+						un(REMOVED_FROM_GAME, i(18678)),	-- Tempestria's Frozen Necklace
 						un(REMOVED_FROM_GAME, i(18679)),	-- Frigid Ring
 					},
 				}),

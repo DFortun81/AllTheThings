@@ -278,7 +278,7 @@ _.PVP =
 						i(20210, {	-- Defiler's Plate Greaves
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 						}),
-						i(20211, { 	-- Defiler's Plate Greaves
+						i(20211, {	-- Defiler's Plate Greaves
 							["cost"] = { { "i", 137642, 1 } },	-- 1x Mark of Honor
 						}),
 						i(20220, {	-- Ironbark Staff
@@ -677,7 +677,7 @@ _.PVP =
 						i(77736),	-- Replica Blood Guard's Dragonhide Boots
 						i(77753),	-- Replica First Sergeant's Dragonhide Armguards
 						i(77788),	-- Replica First Sergeant's Silk Cuffs
-						i(77822), 	-- Replica First Sergeant's Leather Armguards
+						i(77822),	-- Replica First Sergeant's Leather Armguards
 
 						-- Horde mail + plate
 						i(77897),	-- Replica Warlord's Lamellar Pauldrons
@@ -1161,18 +1161,18 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(77586),	-- Replica High Warlord's Spellblade
 				i(77570),	-- Replica High Warlord's Battle Mace
 				i(77587),	-- Replica High Warlord's Destroyer
-				i(32187),  	-- Chancellor's Heavy Crossbow
-				i(32188),  	-- Chancellor's Fleshslicer
-				i(32189),  	-- Chancellor's Ripper
+				i(32187),	-- Chancellor's Heavy Crossbow
+				i(32188),	-- Chancellor's Fleshslicer
+				i(32189),	-- Chancellor's Ripper
 				i(32191),	-- Chancellor's Battletome
-				i(32185),   -- Chancellor's War Staff
+				i(32185),	-- Chancellor's War Staff
 				i(32178),	-- Chancellor's Shanker
 				i(32184),	-- Chancellor's Painsaw
 				i(32181),	-- Chancellor's Bonegrinder
-				i(32174),   -- Chancellor's Cleaver
-				i(32182),   -- Chancellor's Decapitator
-				i(32177),   -- Chancellor's Quickblade
-				i(32180),   -- Chancellor's Slicer
+				i(32174),	-- Chancellor's Cleaver
+				i(32182),	-- Chancellor's Decapitator
+				i(32177),	-- Chancellor's Quickblade
+				i(32180),	-- Chancellor's Slicer
 				i(32192),	-- Chancellor's Barricade
 				i(32175),	-- Chancellor's Hacker
 				i(32190),	-- Chancellor's Spellblade
@@ -1180,15 +1180,15 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(32186),	-- Chancellor's Warblade
 				i(32173),	-- Chancellor's Bonecracker
 				i(32176),	-- Chancellor's Pummeler
-				i(32179),   -- Chancellor's Shiv
-				i(23458),  	-- High Warlord's Spellblade (23466 was the added version)
+				i(32179),	-- Chancellor's Shiv
+				i(23458),	-- High Warlord's Spellblade (23466 was the added version)
 				i(23462),	-- High Warlord's Tome of Destruction
 				i(23463),	-- High Warlord's Tome of Mending
 				i(23457),	-- High Warlord's Destroyer
 				i(23461),	-- High Warlord's Quickblade [This was never actually added]
 				i(23459),	-- High Warlord's Battle Mace
-				i(120272), 	-- High Warlord's Razor [This version never implemented]
-				i(120273), 	-- High Warlord's Razor [This version never implemented]
+				i(120272),	-- High Warlord's Razor [This version never implemented]
+				i(120273),	-- High Warlord's Razor [This version never implemented]
 			}),
 			cl(DRUID, {
 				i(77751),	-- Replicate Knight Captains Dragonhide Chestpiece

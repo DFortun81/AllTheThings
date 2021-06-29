@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(619, { 	-- The Broken Isles
+	m(619, {	-- The Broken Isles
 		n(-171, {	-- Quest Chains
 			["g"] = {
 				n(ACHIEVEMENTS, {	-- Achievements
@@ -186,7 +186,7 @@ _.Zones =
 						q(40615, {	-- Halls of Valor: Odyn's Blessing
 							["sourceQuests"] = {
 								40613,	-- A Feast Fit for Odyn
-								40672, 	-- Neltharion's Lair: Presentation is Key
+								40672,	-- Neltharion's Lair: Presentation is Key
 							},
 							["provider"] = { "n", 100738 },	-- Ashildir
 							["coord"] = { 62.7, 68.1, 634 },
@@ -220,7 +220,7 @@ _.Zones =
 							["coord"] = { 37.8, 47.4, 680 },
 							["maps"] = { 680 },	-- Suramar
 						}),
-						q(43533, { 	-- Balance of Power
+						q(43533, {	-- Balance of Power
 							["sourceQuests"] = {
 								43530,	-- The Nighthold: Delusions of Grandeur
 								43531,	-- Into the Nighthold

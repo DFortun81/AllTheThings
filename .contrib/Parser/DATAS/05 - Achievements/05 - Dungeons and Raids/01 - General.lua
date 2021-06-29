@@ -708,10 +708,10 @@ _.Achievements =
 			}),
 			ach(4478, {		-- Looking For Multitudes
 				i(49912),		-- Perky Pug
-				ach(4477, { 	-- Looking For Many
-					title(137), 	-- the Patient
+				ach(4477, {		-- Looking For Many
+					title(137),		-- the Patient
 				}),
-				ach(4476), 		-- Looking For More
+				ach(4476),		-- Looking For More
 			}),
 			ach(1289, {		-- Northrend Dungeon Hero
 				crit(1),		-- Heroic: Utgarde Keep

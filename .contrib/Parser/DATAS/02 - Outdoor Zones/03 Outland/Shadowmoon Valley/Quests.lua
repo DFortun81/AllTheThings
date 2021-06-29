@@ -443,7 +443,7 @@ _.Zones =
 				}),
 				q(10651, {	-- Varedis Must Be Stopped (awarded "Borrowed Power" criteria)
 					["provider"] = { "n", 21860 },	-- Exarch Onaala
-					["sourceQuests"] = { 10650 },  	-- Return to the Aldor
+					["sourceQuests"] = { 10650 },	-- Return to the Aldor
 					["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
 					["groups"] = {
 						i(31013),	-- Ceremonial Kris
@@ -589,7 +589,7 @@ _.Zones =
 					["sourceQuests"] = { 10793 },	-- The Journal of Val'zareq: Portends of War
 					["groups"] = {
 						i(31380),	-- Acrobat's Mark of the Sha'tar
-						i(31381), 	-- Aggressor's Mark of the Sha'tar
+						i(31381),	-- Aggressor's Mark of the Sha'tar
 						i(31404),	-- Green Trophy Tabard of the Illidari
 						i(31382),	-- Mage's Mark of the Sha'tar
 						i(31405),	-- Purple Trophy Tabard of the Illidari
@@ -1210,7 +1210,7 @@ _.Zones =
 					["coord"] = { 58.1, 48.2, SHADOWMOON_VALLEY },
 					["sourceQuests"] = { 10947 },	-- An Artifact From the Past
 				})),
-				q(10793, { 	-- The Journal of Val'zareq: Portends of War
+				q(10793, {	-- The Journal of Val'zareq: Portends of War
 					["provider"] = { "n", 21979 },	-- Val'zareq the Conqueror
 					["itemID"] = 31345,	-- The Journal of Val'zareq
 					["coords"] = {	-- NPC pats
@@ -1391,7 +1391,7 @@ _.Zones =
 -- #if AFTER TBC
 -- These quests trigger after specific events occur in the zone.
 _.HiddenQuestTriggers = {
-	
+
 };
 
 -- These quests never made it in.

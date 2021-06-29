@@ -74,11 +74,11 @@ _.Zones =
 				}),
 				i(2175, {	-- Shadowhide Battle Axe
 					["u"] = REMOVED_FROM_GAME,
-					["crs"] = { 568 }, 	-- Shadowhide Warrior
+					["crs"] = { 568 },	-- Shadowhide Warrior
 				}),
 				i(1457, {	-- Shadowhide Mace
 					["u"] = REMOVED_FROM_GAME,
-					["crs"] = { 433 }, 	-- Shadowhide Gnoll
+					["crs"] = { 433 },	-- Shadowhide Gnoll
 				}),
 				i(1458, {	-- Shadowhide Maul
 					["u"] = REMOVED_FROM_GAME,

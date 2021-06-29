@@ -223,7 +223,7 @@ _.Achievements =
 					title(35),		-- Justicar
 					crit(1),		-- Hero of the Stormpike Guard
 					crit(2),		-- Knight of Arathor
-					crit(3),		-- 	Silverwing Sentinel
+					crit(3),		-- Silverwing Sentinel
 				},
 			}),
 			ach(604,  {	-- Wrath of the Alliance

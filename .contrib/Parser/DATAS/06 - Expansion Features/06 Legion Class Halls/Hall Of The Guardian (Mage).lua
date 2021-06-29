@@ -139,7 +139,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				n(QUESTS, {
-					q(41141, { 	-- A Conjuror's Duty
+					q(41141, {	-- A Conjuror's Duty
 						["coord"] = { 81.6, 60.2, 734 },
 						["classes"] = { MAGE },
 						["provider"] = { "n", 103092 },	-- The Great Akazamzarak

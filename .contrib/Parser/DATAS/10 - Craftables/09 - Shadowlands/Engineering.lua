@@ -12,7 +12,7 @@ _.Craftables =
 			filter(55, {	-- Consumable
 				i(172921),	-- Infra-green Reflex Sight
 			}),
-			n(-320,	{ 		-- Head
+			n(-320,	{		-- Head
 				filter(4, {	-- Cloth
 					i(172905),	-- Flexible Ectoplasmic Specs
 				}),

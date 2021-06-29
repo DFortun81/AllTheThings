@@ -291,7 +291,7 @@ _.Craftables =
 				i(77539),	-- Reinforced Retinal Armor*
 				i(77538),	-- Specialized Retinal Armor*
 				-- Trinkets
-				i(77530), 	-- Ghost Iron Dragonling*
+				i(77530),	-- Ghost Iron Dragonling*
 			}),
 			filter(113, {	-- Bags
 				i(92747),	-- Advanced Refrigeration Unit*
@@ -420,12 +420,12 @@ _.Craftables =
 			}),
 		}),
 		prof(LEATHERWORKING, {
-			n(-322, { 	-- Cloak
+			n(-322, {	-- Cloak
 				i(85851),	-- Misthide Drape
 				i(85852),	-- Quick Strike Cloak
 				i(85853),	-- Stormscale Drape
 			}),
-			n(-44, { 	-- Leather
+			n(-44, {	-- Leather
 				i(85788),	-- Chestguard of Nemeses
 				i(85797),	-- Contender's Leather Belt
 				i(85798),	-- Contender's Leather Boots
@@ -559,7 +559,7 @@ _.Craftables =
 				i(85849),	-- Wildblood Gloves
 				i(85850),	-- Wildblood Vest
 			}),
-			n(-45, { 	-- Mail
+			n(-45, {	-- Mail
 				i(85787),	-- Chestguard of Earthen Harmony
 				i(94276),	-- Cloud Serpent Helm
 				i(94275),	-- Cloud Serpent Sabatons
@@ -675,7 +675,7 @@ _.Craftables =
 			}),
 		}),
 		prof(TAILORING, {
-			filter(101, { 	-- Pet Battle
+			filter(101, {	-- Pet Battle
 				i(92960, {	-- Silkworm Cocoon
 					i(90900),	-- Imperial Moth
 					i(90902),	-- Imperial Silkworm

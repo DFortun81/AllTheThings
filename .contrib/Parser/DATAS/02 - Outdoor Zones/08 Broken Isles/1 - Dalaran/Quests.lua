@@ -4,8 +4,8 @@
 
 _.Zones =
 {
-	m(619, { 	-- The Broken Isles
-		m(627, { 	-- Dalaran
+	m(619, {	-- The Broken Isles
+		m(627, {	-- Dalaran
 			n(QUESTS, {
 				i(122293, {	-- Trans-Dimensional Bird Whistle
 					["description"] = "If you see this item listed and you know the toy, it is likely you need the Pepe appearance that spawns in this zone.",
@@ -25,7 +25,7 @@ _.Zones =
 						}),
 					},
 				}),
-				n(-176, { 	-- Weekly World Events
+				n(-176, {	-- Weekly World Events
 					["provider"] = { "n", 111246 },	-- Archmage Timear
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {

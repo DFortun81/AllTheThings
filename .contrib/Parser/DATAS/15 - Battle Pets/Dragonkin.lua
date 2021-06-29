@@ -5,7 +5,7 @@
 _.BattlePets =
 {
 	n(-797,	{	-- Journal
-		pa(245, { 	-- Dragonkin
+		pa(245, {	-- Dragonkin
 			p(2072),	-- Ageless Bronze Drake
 			p(1385),	-- Albino Chimaeraling
 			p(2779, {	-- Anima Wyrmling
@@ -17,12 +17,12 @@ _.BattlePets =
 			p(2719),	-- Bonebiter
 			p(2071),	-- Bronze Proto-Whelp
 			p(1563),	-- Bronze Whelpling
-			p(255), 	-- Celestial Dragon
+			p(255),		-- Celestial Dragon
 			p(1152),	-- Chrominius
 			p(58),		-- Crimson Whelpling
 			p(56),		-- Dark Whelpling
 			p(1153),	-- Death Talon Whelpguard
-			p(2079), 	-- Discarded Experiment
+			p(2079),	-- Discarded Experiment
 			p(1722),	-- Dream Whelpling
 			p(1167),	-- Emerald Proto-Whelp
 			p(59),		-- Emerald Whelpling
@@ -81,13 +81,13 @@ _.BattlePets =
 			p(758, {	-- Tiny Red Dragon
 				["u"] = REMOVED_FROM_GAME,
 			}),
-			p(2081), 	-- Twilight Clutch-Sister
+			p(2081),	-- Twilight Clutch-Sister
 			p(2677),	-- Twilight Whelpling
 			p(1151),	-- Untamed Hatchling
-			p(819), 	-- Wild Crimson Hatchling
-			p(818), 	-- Wild Golden Hatchling
-			p(817), 	-- Wild Jade Hatchling
-			p(1304), 	-- Yu'la, Broodling of Yu'lon
+			p(819),		-- Wild Crimson Hatchling
+			p(818),		-- Wild Golden Hatchling
+			p(817),		-- Wild Jade Hatchling
+			p(1304),	-- Yu'la, Broodling of Yu'lon
 		}),
 	}),
 };

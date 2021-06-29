@@ -11,7 +11,7 @@ _.Zones =
 			["maps"] = {
 				551,	-- The Master's Cavern
 				552,	-- Stonecrag Gorge
-				553, 	-- The Underpale
+				553,	-- The Underpale
 			},
 		}),
 	}),

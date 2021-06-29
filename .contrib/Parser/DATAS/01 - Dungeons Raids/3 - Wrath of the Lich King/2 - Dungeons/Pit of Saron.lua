@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(3, {	-- Wrath of the Lich King
-	inst(278, { 	-- Pit of Saron
+	inst(278, {	-- Pit of Saron
 		["mapID"] = 184,
 		["coord"] = { 52.3, 89.3, 118 },
 		["maps"] = { 823 },

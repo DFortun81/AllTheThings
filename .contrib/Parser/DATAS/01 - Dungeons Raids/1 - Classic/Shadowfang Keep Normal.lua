@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(1, {	-- Classic
-	inst(64, { 	-- Shadowfang Keep
+	inst(64, {	-- Shadowfang Keep
 		["coord"] = { 44.79, 67.82, 21 },	-- Shadowfang Keep, Silverpine Forest
 		["maps"] = {
 			SHADOWFANG_KEEP,
@@ -17,60 +17,60 @@ _.Instances = { tier(1, {	-- Classic
 		["lvl"] = 11,
 		["g"] = {
 			n(QUESTS, {
-				q(27917, { 	-- Sniffing Them Out
+				q(27917, {	-- Sniffing Them Out
 					["provider"] = { "n", 47706 },	-- Packleader Ivar Bloodfang
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(27920, { 	-- Armored to the Teeth
+				q(27920, {	-- Armored to the Teeth
 					["sourceQuests"] = { 27917 },	-- Sniffing Them Out
 					["provider"] = { "n", 47706 },	-- Packleader Ivar Bloodfang
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(27921, { 	-- Fighting Tooth and Claw
+				q(27921, {	-- Fighting Tooth and Claw
 					["sourceQuests"] = { 27920 },	-- Armored to the Teeth
 					["provider"] = { "n", 47706 },	-- Packleader Ivar Bloodfang
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(27968, { 	-- Fury of the Pack
+				q(27968, {	-- Fury of the Pack
 					["sourceQuests"] = { 27921 },	-- Fighting Tooth and Claw
 					["provider"] = { "n", 47706 },	-- Packleader Ivar Bloodfang
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(65984), 	-- Breastplate of the Terrible Price
-						i(66002), 	-- Packleader's Pauldrons
-						i(65960), 	-- Shadowfang Shoulderpads
-						i(65936), 	-- Sandals of Sacrifice
-						i(65910), 	-- Godfrey's Britches
-						i(131684), 	-- Packleader's Chain Spaulders
-						i(131685), 	-- Boots of Painful Cost
+						i(65984),	-- Breastplate of the Terrible Price
+						i(66002),	-- Packleader's Pauldrons
+						i(65960),	-- Shadowfang Shoulderpads
+						i(65936),	-- Sandals of Sacrifice
+						i(65910),	-- Godfrey's Britches
+						i(131684),	-- Packleader's Chain Spaulders
+						i(131685),	-- Boots of Painful Cost
 					},
 				}),
-				q(27974, { 	-- This Land is Our Land
+				q(27974, {	-- This Land is Our Land
 					["provider"] = { "n", 47293 },	-- Deathstalker Commander Belmont
 					["races"] = HORDE_ONLY,
 				}),
-				q(27988, { 	-- Plague...Plague Everywhere!
+				q(27988, {	-- Plague...Plague Everywhere!
 					["sourceQuests"] = { 27974 },	-- This Land is Our Land
 					["provider"] = { "n", 47293 },	-- Deathstalker Commander Belmont
 					["races"] = HORDE_ONLY,
 				}),
-				q(27996, { 	-- Orders Are For the Living
+				q(27996, {	-- Orders Are For the Living
 					["sourceQuests"] = { 27988 },	-- Plague...Plague Everywhere!
 					["provider"] = { "n", 47293 },	-- Deathstalker Commander Belmont
 					["races"] = HORDE_ONLY,
 				}),
-				q(27998, { 	-- Sweet, Merciless Revenge
+				q(27998, {	-- Sweet, Merciless Revenge
 					["sourceQuests"] = { 27988 },	-- Plague...Plague Everywhere!
 					["provider"] = { "n", 47293 },	-- Deathstalker Commander Belmont
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(66038), 	-- Breastplate of the Terrible Price
-						i(66044), 	-- Deathstalker Pauldrons
-						i(66029), 	-- Shadowfanger Shoulderpads
-						i(66020), 	-- Sandals of Sacrifice
-						i(66011), 	-- Godfrey's Britches
+						i(66038),	-- Breastplate of the Terrible Price
+						i(66044),	-- Deathstalker Pauldrons
+						i(66029),	-- Shadowfanger Shoulderpads
+						i(66020),	-- Sandals of Sacrifice
+						i(66011),	-- Godfrey's Britches
 						i(131686),	-- Packleader's Chain Spaulders
-						i(131687), 	-- Boots of Painful Cost
+						i(131687),	-- Boots of Painful Cost
 					},
 				}),
 			}),
@@ -240,7 +240,7 @@ _.Instances = { tier(1, {	-- Classic
 						},
 					}),
 				}),
-				cr(46962, e(96, { 	-- Baron Ashbury
+				cr(46962, e(96, {	-- Baron Ashbury
 					i(6323),	-- Baron's Scepter
 					i(6314),	-- Wolfmaster Cape
 					i(6324),	-- Robes of Arugal
@@ -249,7 +249,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(6341),	-- Eerie Stable Lantern
 					i(932),	-- Fel Steed Saddlebags
 				}),
-				cr(3887, e(97, { 	-- Baron Silverlaine
+				cr(3887, e(97, {	-- Baron Silverlaine
 					i(5254),	-- Rugged Spaulders
 					i(132568),	-- Shadowfang Pauldrons
 					i(5943),	-- Rift Bracers
@@ -257,7 +257,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(6319),	-- Girdle of the Blindwatcher
 					i(6321),	-- Silverlaine's Family Seal
 				})),
-				cr(4278, e(98, { 	-- Commander Springvale
+				cr(4278, e(98, {	-- Commander Springvale
 					i(3191),	-- Arced War Axe
 					i(6320),	-- Commander's Crest
 					i(151069),	-- Breastplate of the Stilled Heart
@@ -265,21 +265,21 @@ _.Instances = { tier(1, {	-- Classic
 					i(151067),	-- Boots of Lingering Sorrow
 					i(151068),	-- Boots of the Predator
 				})),
-				n(3872, { 		-- Deathsworn Captain
+				n(3872, {		-- Deathsworn Captain
 					["description"] = "This is a rare that is not always present.",
 					["g"] = {
 						i(6641),	-- Haunting Blade
 						i(6642),	-- Phantom Armor
 					},
 				}),
-				cr(46963, e(99, { 	-- Lord Walden
+				cr(46963, e(99, {	-- Lord Walden
 					i(1292),	-- Butcher's Cleaver
-					i(6341), 	-- Eerie Stable Lantern
+					i(6341),	-- Eerie Stable Lantern
 					i(6642),	-- Phantom Armor
 					i(3230),	-- Black Wolf Bracers
 					i(132566),	-- Dark Lupine Wraps
 				})),
-				cr(46964, e(100, { 	-- Lord Godfrey
+				cr(46964, e(100, {	-- Lord Godfrey
 					ach(631),	-- Shadowfang Keep
 					i(6641),	-- Haunting Blade
 					i(6318),	-- Odo's Ley Staff
@@ -290,7 +290,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(151073),	-- Greaves of the Misguided
 				})),
 			}),
-			n(-40, { 	-- Legacy
+			n(-40, {	-- Legacy
 				["description"] = "During the Third War, the wizards of the Kirin Tor battled against the undead armies of the Scourge. When the wizards of Dalaran died in battle, they would rise soon after - adding their former might to the growing Scourge. Frustrated by their lack of progress (and against the advice of his peers) the Archmage, Arugal elected to summon extra-dimensional entities to bolster Dalaran's diminishing ranks. Arugal's summoning brought the ravenous worgen into the world of Azeroth. The feral wolf-men slaughtered not only the Scourge, but quickly turned on the wizards themselves. The worgen sieged the keep of the noble, Baron Silverlaine. Situated above the tiny hamlet of Pyrewood, the keep quickly fell into shadow and ruin. Driven mad with guilt, Arugal adopted the worgen as his children and retreated to the newly dubbed 'Shadowfang Keep'. It's said he still resides there, protected by his massive pet, Fenrus - and haunted by the vengeful ghost of Baron Silverlaine.",
 				["g"] = {
 					n(QUESTS, {
@@ -355,7 +355,7 @@ _.Instances = { tier(1, {	-- Classic
 					un(REMOVED_FROM_GAME, n(4275, {	-- Archmage Arugal
 						un(REMOVED_FROM_GAME, i(6392)),	-- Belt of Arugal
 						i(6220),	-- Meteor Shard	NOTE: Drops from Lord Godfrey now and is still obtainable
-						i(6324), 	-- Robes of Arugal	NOTE: Drops from Baron Ashbury now and is still obtainable
+						i(6324),	-- Robes of Arugal	NOTE: Drops from Baron Ashbury now and is still obtainable
 					})),
 				},
 			}),

@@ -26,7 +26,7 @@ _.ExpansionFeatures =
 						["isBreadcrumb"] = true,
 						["altQuests"] = { 53220 },	-- Battle for Stromgarde unlock flag (H)
 					}),
-					q(53153, { 	-- Death to the Defilers
+					q(53153, {	-- Death to the Defilers
 						["u"] = REMOVED_FROM_GAME,
 						["coord"] = { 21.71, 64.88, ARATHI_HIGHLANDS },
 						["races"] = ALLIANCE_ONLY,
@@ -68,7 +68,7 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 53208,	-- To The Front
 						["lvl"] = 120,
 					}),
-					q(53154, { 	-- The League Will Lose [Horde]
+					q(53154, {	-- The League Will Lose [Horde]
 						["u"] = REMOVED_FROM_GAME,
 						["races"] = HORDE_ONLY,
 						["repeatable"] = true,
