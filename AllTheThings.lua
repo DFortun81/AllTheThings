@@ -14485,7 +14485,7 @@ function app:GetDataCache()
 		table.insert(g, db);
 		]]--
 
-		
+		--[[
 		-- SUPER SECRETTTT!
 		-- Artifacts (Dynamic)
 		db = app.CreateAchievement(11171, (function()
