@@ -1060,3 +1060,10 @@ _.Instances = { tier(4, {	-- Cataclysm
 		},
 	}),
 })};
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-9979, {	-- Cataclysm
+		inst(78, { 	-- Firelands
+			i(71570),	-- Bracers of Forked Lightning
+		}),
+	}),
+});

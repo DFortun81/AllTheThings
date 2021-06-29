@@ -685,6 +685,21 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(89464),	-- Scarshell Helm
 				i(89466),	-- Scarshell Spaulders
 				i(89467),	-- Scarshell Vest
+				i(92838),	-- Danio-Scale Belt
+				i(92839),	-- Danio-Scale Bracers
+				i(92840),	-- Danio-Scale Gauntlets
+				i(92841),	-- Danio-Scale Greaves
+				i(92842),	-- Danio-Scale Helm
+				i(92843),	-- Danio-Scale Legguards
+				i(92844),	-- Danio-Scale Spaulders
+				i(92845),	-- Danio-Scale Vest
+				i(93057),	-- Stormshaper Vest
+				i(93058),	-- Stormshaper Greaves
+				i(93059),	-- Stormshaper Gauntlets
+				i(93061),	-- Stormshaper Legguards
+				i(93062),	-- Stormshaper Spaulders
+				i(93063),	-- Stormshaper Belt
+				i(93064),	-- Stormshaper brarcers
 				i(93086),	-- Swashbuckling Vest
 				i(93087),	-- Swashbuckling Greaves
 				i(93088),	-- Swashbuckling Gauntlets

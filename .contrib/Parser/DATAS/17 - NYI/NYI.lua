@@ -19,6 +19,9 @@ _.NeverImplemented =
 		-- Dont tell the Users is actually obtainable but there is just no info
 		["description"] = "If this drops for you, please provide as much information as you can about how and where you got it.",
 	}),
+	i(106178, {	-- Rangari Initiate Wristwraps (Beta only)
+		["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.",
+	}),
 	tier(9,	{	-- Shadowlands -- Items that might get added after 9.0.5. If you are sure the item won't be added, please put it into the correct section
 
 		i(180491),	-- Wingdancer's Spire
@@ -269,6 +272,7 @@ _.NeverImplemented =
 				i(7949),	-- Leggings of Thero-Shan
 				-- Cata
 				i(54692),	-- Armor of Thero-Shan
+				-- Legion
 				-- Transmog set item that never became available
 				i(130327),	-- Artful Britches
 			}),
@@ -442,52 +446,38 @@ _.NeverImplemented =
 			}),
 			cl(HUNTER, {
 			}),
-			i(163286),	-- Honorbound Vanguard's Footguards
-			i(163291),	-- Honorbound Vanguard's Strikers
-			i(163293),	-- Honorbound Vanguard's Warhelm
-			i(163297),	-- Honorbound Vanguard's Legguards
-			i(163302),	-- Honorbound Vanguard's Spaulders
-			i(163304),	-- Honorbound Vanguard's Waistcord
-			i(179855),	-- Ardenweald Covenant Mail Waist
-			i(179856),	-- Ardenweald Covenant Mail Shoulders
-			i(179857),	-- Ardenweald Covenant Mail Legs
-			i(179858),	-- Ardenweald Covenant Mail Head
-			i(179859),	-- Ardenweald Covenant Mail Hand
-			i(179860),	-- Ardenweald Covenant Mail Feet
-			i(179861),	-- Ardenweald Covenant Mail Chest
-			i(179830),	-- Ardenweald Covenant Mail Chest
-			i(179831),	-- Ardenweald Covenant Mail Feet
-			i(179832),	-- Ardenweald Covenant Mail Hand
-			i(179833),	-- Ardenweald Covenant Mail Head
-			i(179834),	-- Ardenweald Covenant Mail Legs
-			i(179835),	-- Ardenweald Covenant Mail Shoulder
-			i(179836),	-- Ardenweald Covenant Mail Waist
-			i(179837),	-- Ardenweald Covenant Mail Wrist
-			i(179838),	-- Ardenweald Covenant Mail Wrist
-			i(179839),	-- Ardenweald Covenant Mail Waist
-			i(179840),	-- Ardenweald Covenant Mail Shoulder
-			i(179841),	-- Ardenweald Covenant Mail Legs
-			i(179842),	-- Ardenweald Covenant Mail Head
-			i(179843),	-- Ardenweald Covenant Mail Hand
-			i(179844),	-- Ardenweald Covenant Mail Feet
-			i(179845),	-- Ardenweald Covenant Mail Chest
-			i(179846),	-- Ardenweald Covenant Mail Wrist
-			i(179847),	-- Ardenweald Covenant Mail Waist
-			i(179848),	-- Ardenweald Covenant Mail Shoulder
-			i(179849),	-- Ardenweald Covenant Mail Legs
-			i(179850),	-- Ardenweald Covenant Mail Head
-			i(179851),	-- Ardenweald Covenant Mail Hand
-			i(179852),	-- Ardenweald Covenant Mail Feet
-			i(179853),	-- Ardenweald Covenant Mail Chest
-			i(179854),	-- Ardenweald Covenant Mail Wrist
-			i(92838),	-- Danio-Scale Belt
-			i(92839),	-- Danio-Scale Bracers
-			i(92840),	-- Danio-Scale Gauntlets
-			i(92841),	-- Danio-Scale Greaves
-			i(92842),	-- Danio-Scale Helm
-			i(92843),	-- Danio-Scale Legguards
-			i(92844),	-- Danio-Scale Spaulders
-			i(92845),	-- Danio-Scale Vest
+			-- Load in GAME
+			-- Vanilla
+			i(18320),	-- Demonheart Spaulders
+			i(18304),	-- Greenroot Mail (never added to live)
+			-- TBC
+			i(25794),	-- Bone Studded Girdle (not out of beta)
+			-- Wrath
+			i(37454),	-- HF28 Mail Physical Chest4
+			-- MoP
+			i(80987),	-- Scavenger's Chain Spaulders
+			i(80991),	-- Scavenger's Ringmail Spaulders
+			-- WoD
+			i(106166),	-- Frostwolf Ringmail Armor (Beta only, was reward from https://www.wowhead.com/quest=32985/fury-of-frostfire)
+			-- Quest sets?
+			i(114249),	-- Leafscale Bracers
+			i(114252),	-- Leafscale Chestguard
+			i(114257),	-- Leafscale Boots
+			i(114261),	-- Leafscale Gauntlets
+			i(114265),	-- Leafscale Helm
+			i(114269),	-- Leafscale Legguards
+			i(114273),	-- Leafscale Spaulders
+			i(114277),	-- Leafscale Belt
+			-- Legion
+			-- Questsets?
+			i(153381),	-- Aiguille-Scaler's Wristguards
+			i(153382),	-- Aiguille-Scaler's Gloves
+			i(153383),	-- Aiguille-Scaler's Leggings
+			i(153384),	-- Aiguille-Scaler's Coif
+			i(153385),	-- Aiguille-Scaler's Boots
+			i(153386),	-- Aiguille-Scaler's Girdle
+			i(153387),	-- Aiguille-Scaler's Chestguard
+			i(153388),	-- Aiguille-Scaler's Spaulders
 			i(154952),	-- Saurscale Wristguards
 			i(154953),	-- Saurscale Gloves
 			i(154954),	-- Saurscale Leggings
@@ -504,20 +494,6 @@ _.NeverImplemented =
 			i(158489),	-- Aiguille-Scaler's Girdle
 			i(158490),	-- Aiguille-Scaler's Chestguard
 			i(158491),	-- Aiguille-Scaler's Spaulders
-			i(93057),	-- Stormshaper Vest
-			i(93058),	-- Stormshaper Greaves
-			i(93059),	-- Stormshaper Gauntlets
-			i(93061),	-- Stormshaper Legguards
-			i(93062),	-- Stormshaper Spaulders
-			i(93063),	-- Stormshaper Belt
-			i(93064),	-- Stormshaper brarcers
-			i(109488),	-- unknown
-			i(109504),	-- unknown
-			i(109510),	-- unknown
-			i(109517),	-- unknown
-			i(109541),	-- unknown
-			i(109543),	-- unknown
-			i(109548),	-- unknown
 			i(158536),	-- Saurscale Wristguards
 			i(158537),	-- Saurscale Gloves
 			i(158538),	-- Saurscale Leggings
@@ -525,6 +501,14 @@ _.NeverImplemented =
 			i(158540),	-- Saurscale Boots
 			i(158541),	-- Saurscale Girdle
 			i(158542),	-- Saurscale Chestguard
+			-- BFA
+			-- War Effort
+			i(163286),	-- Honorbound Vanguard's Footguards
+			i(163291),	-- Honorbound Vanguard's Strikers
+			i(163293),	-- Honorbound Vanguard's Warhelm
+			i(163297),	-- Honorbound Vanguard's Legguards
+			i(163302),	-- Honorbound Vanguard's Spaulders
+			i(163304),	-- Honorbound Vanguard's Waistcord
 			i(163392),	-- 7th Legionnaire's Vestments
 			i(163393),	-- 7th Legionnaire's Raiment
 			i(163443),	-- Honorbound Vanguard's Vestments
@@ -535,124 +519,117 @@ _.NeverImplemented =
 			i(163447),	-- Honorbound Vanguard's Helm
 			i(163442),	-- Honorbound Vanguard's Pauldrons
 			i(163452),	-- Honorbound Vanguard's Chain Belt
+			-- ItemID/Retrieving
+			-- Vanilla
 			i(12105),	-- Pridemail Leggings
+			i(13090),	-- Breastplate of the Chosen
+			i(12615),	-- Savage Mail Tunic (never added to live)
+			i(12616),	-- Savage Boots (never added to live)
+			i(12617),	-- Savage Pauldrons (never added to live)
+			i(21584),	-- Bracers of Eternal Reckoning (never added to live)(Says added in cata wowhead)
+			i(21588),	-- Wristguards of Elemental Fury (never added to live)
+			i(21612),	-- Wormscale Stompers (never added to live)(Says added in cata wowhead)
+			-- TBC
+			i(30289),	-- Cenarion Warden's Belt (Says added in cata wowhead)
+			i(38387),	-- Grizzled Hat
+			i(38388),	-- Cap of the North
+			i(38389),	-- Comfy Raccoonskin Hat
+			i(38390),	-- The Rugged Marksman
+			-- Wrath
 			i(37420),	-- Sharkproof Boots
-			i(62715),	-- Unknown
-			i(62716),	-- Unknown
-			i(62717),	-- Unknown
-			i(62718),	-- Unknown
-			i(62719),	-- Unknown
-			i(62720),	-- Unknown
-			i(62721),	-- Unknown
-			i(62722),	-- Unknown
-			i(153381),	-- Aiguille-Scaler's Wristguards
-			i(153382),	-- Aiguille-Scaler's Gloves
-			i(153383),	-- Aiguille-Scaler's Leggings
-			i(153384),	-- Aiguille-Scaler's Coif
-			i(153385),	-- Aiguille-Scaler's Boots
-			i(153386),	-- Aiguille-Scaler's Girdle
-			i(153387),	-- Aiguille-Scaler's Chestguard
-			i(153388),	-- Aiguille-Scaler's Spaulders
-			i(54551),	-- Unknown
-			i(56492),	-- Unknown
-			i(65744),	-- Unknown
-			i(56493),	-- Unknown
-			i(56496),	-- Unknown
-			i(56497),	-- Unknown
-			i(56500),	-- Unknown
-			i(56501),	-- Unknown
-			i(56506),	-- Unknown
-			i(56510),	-- Unknown
-			i(106166),	-- Frostwolf Ringmail Armor (Beta only, was reward from https://www.wowhead.com/quest=32985/fury-of-frostfire)
-			i(30289),	-- Cenarion Warden's Belt
-			i(106178),	-- Rangari Initiate Wristwraps (Beta only)
-			i(68844),	-- Unknown
-			i(38527),	-- Onslaught Scaemail haubberk
-			i(39440),	-- Greaves of the Titan Protectorate
+			i(38527),	-- Onslaught Scalemail Hauberk (Says added in cata wowhead)
+			i(39440),	-- Greaves of the Titan Protectorate (Says added in cata wowhead)
 			i(41758),	-- Blood-Bond Helm
 			i(42886),	-- Gloves of the Howling Peaks
-			i(109265),	-- Unknown
 			i(43460),	-- Giantmaim Girdle
-			i(109270),	-- Unknown
-			i(43936),	-- Battlesurgeons Gauntlets
+			i(43936),	-- Battlesurgeon's Gauntlets
 			i(54549),	-- Saline-Soaked Spaulders
-			i(80987),	-- Scavenger's Chain Spaulders
-			i(80991),	-- Scavenger's Ringmail Spaulders
+			i(43475),	-- Grips of the Chilling Revenant (Says added in cata wowhead)
+			i(37433),	-- Layered Scale Boots
+			i(37444),	-- Wavekeeper's Helm (Says added in cata wowhead)
+			-- Cata
+			i(56493),	-- Razorshell Boots
+			i(56496),	-- Windbound Belt
+			i(56500),	-- Windbound Shoulders
+			i(56501),	-- Razorshell Belt
+			i(56506),	-- Windbound Leggings
+			i(56510),	-- Windbound Chest
+			i(54551),	-- Defiant Bracers
+			i(56492),	-- Windbound Boots
 			i(56485),	-- Windbound Bracers
-			i(109416),	-- Unknown
-			i(109425),	-- Unknown
-			i(109433),	-- Unknown
-			i(109441),	-- Unknown
-			i(109457),	-- Unknown
-			i(109484),	-- Unknown
 			i(56486),	-- Windbound Gloves
 			i(56487),	-- Razorshell Bracers
 			i(56488),	-- Razorshell Shoulders
-			i(109280),	-- Unknown
-			i(109313),	-- Unknown
-			i(109314),	-- Unknown
-			i(109315),	-- Unknown
-			i(109359),	-- Unknown
-			i(167119),	-- Unknown
-			i(167120),	-- Unknown
-			i(167121),	-- Unknown
-			i(167122),	-- Unknown
-			i(167123),	-- Unknown
-			i(167124),	-- Unknown
-			i(167125),	-- Unknown
-			i(167126),	-- Unknown
-			i(109371),	-- Unknown
-			i(109382),	-- Unknown
-			i(109393),	-- Unknown
-			i(109396),	-- Unknown
-			i(71570),	-- Bracers of Forked Lightning
-			i(109316),	-- Unknown
-			i(109317),	-- Unknown
-			i(109318),	-- Unknown
-			i(109350),	-- Unknown
-			i(43475),	-- Grips of the Chilling Revenant
-			i(109351),	-- Unknown
-			i(109352),	-- Unknown
-			i(109353),	-- Unknown
-			i(109354),	-- Unknown
-			i(114249),	-- Leafscale Bracers
-			i(114252),	-- Leafscale Chestguard
-			i(114257),	-- Leafscale Boots
-			i(114261),	-- Leafscale Gauntlets
-			i(114265),	-- Leafscale Helm
-			i(114269),	-- Leafscale Legguards
-			i(114273),	-- Leafscale Spaulders
-			i(114277),	-- Leafscale Belt
-			i(37433),	-- Layered Scale Boots
-			i(37444),	-- Wavekeeper's Helm
-			i(13090),	-- Breastplate of the Chosen
-			i(18320),	-- Demonheart Spaulders
 			i(56507),	-- Razorshell Helm
 			i(56514),	-- Windbound Helm
-			i(12615),	-- Savage Mail Tunic (never added to live)
-			i(12616),	-- Savage Boots (never added to live)
-			i(59789),	-- Unknown
-			i(12617),	-- Savage Pauldrons (never added to live)
-			i(18304),	-- Greenroot Mail (never added to live)
-			i(21584),	-- Bracers of Eternal Reckoning (never added to live)
-			i(21588),	-- Wristguards of Elemental Fury (never added to live)
-			i(21612),	-- Wormscale Stompers (never added to live)
-			i(38387),	-- Grizzled Hat
-			i(25794),	-- Bone Studded Girdle (not out of beta)
-			i(38388),	-- Cap of the North
-			i(107863),	-- Unknown
-			i(107867),	-- Unknown
-			i(107872),	-- Unknown
-			i(107875),	-- Unknown
-			i(107879),	-- Unknown
-			i(107885),	-- Unknown
-			i(107888),	-- Unknown
-			i(107892),	-- Unknown
-			i(38389),	-- Comfy Raccoonskin Hat
-			i(38390),	-- The Rugged Marksman
-			i(37454),	-- HF28 Mail Physical Chest4
-			i(2867),	-- Rough Bronze Bracers (crafted by NYI pattern)
+			i(59789),	-- Sea-Snack Footguards
+			i(65744),	-- Nimble Command Shoulderguards
+			-- Art Template
+			i(62715),	-- Art Template Mail Belt - Mail_Cataclysm_B_01 - Blue
+			i(62716),	-- Art Template Mail Boot - Mail_Cataclysm_B_01 - Blue
+			i(62717),	-- Art Template Mail Chest - Mail_Cataclysm_B_01 - Blue
+			i(62718),	-- Art Template Mail Hand - Mail_Cataclysm_B_01 - Blue
+			i(62719),	-- Art Template Mail Head - Mail_Cataclysm_B_01 - Blue
+			i(62720),	-- Art Template Mail Legs - Mail_Cataclysm_B_01 - Blue
+			i(62721),	-- Art Template Mail Shoulder - Mail_Cataclysm_B_01 - Blue
+			i(62722),	-- Art Template Mail Wrist - Mail_Cataclysm_B_01 - Blue
+			-- WoD
+			-- Testning Gear
+			i(107863),	-- 7.0 PH Mail Vest
+			i(107867),	-- 7.0 PH Mail Sabatons
+			i(107872),	-- 7.0 PH Mail Gauntlets
+			i(107875),	-- 7.0 PH Mail Helm
+			i(107879),	-- 7.0 PH Mail Leggings
+			i(107885),	-- 7.0 PH Mail Monnion
+			i(107888),	-- 7.0 PH Mail Belt
+			i(107892),	-- 7.0 PH Mail Wristwraps
+			i(109265),	-- 7.0 QA Combat Test Mail Helm
+			i(109270),	-- 7.0 QA Combat Test Mail Legs 1
+			i(109280),	-- 7.0 QA Combat Test Mail Bracer 1
+			i(109313),	-- 7.0 QA Combat Test Mail Belt 1
+			i(109314),	-- 7.0 QA Combat Test Mail Chest 1
+			i(109315),	-- 7.0 QA Combat Test Mail Gloves 1
+			i(109316),	-- 7.0 QA Combat Test Mail Helm 2
+			i(109317),	-- 7.0 QA Combat Test Mail Legs 2
+			i(109318),	-- 7.0 QA Combat Test Mail Shoulders 1
+			i(109350),	-- 7.0 QA Combat Test Mail Chest 2
+			i(109351),	-- 7.0 QA Combat Test Mail Gloves 2
+			i(109352),	-- 7.0 QA Combat Test Mail Helm 3
+			i(109353),	-- 7.0 QA Combat Test Mail Legs 3
+			i(109354),	-- 7.0 QA Combat Test Mail Shoulders 2
+			i(109359),	-- 7.0 QA Combat Test Mail Belt 2
+			i(109371),	-- 7.0 QA Combat Test Mail Bracer 2
+			i(109382),	-- 7.0 QA Combat Test Mail Helm 4
+			i(109393),	-- 7.0 QA Combat Test Mail Boots 1
+			i(109396),	-- 7.0 QA Combat Test Mail Boots 2
+			i(109416),	-- 7.0 QA Combat Test Mail Belt 3
+			i(109425),	-- 7.0 QA Combat Test Mail Shoulders 3
+			i(109433),	-- 7.0 QA Combat Test Mail Boots 3
+			i(109441),	-- 7.0 QA Combat Test Mail Legs 4
+			i(109457),	-- 7.0 QA Combat Test Mail Gloves 3
+			i(109484),	-- 7.0 QA Combat Test Mail Shoulders 4
+			i(109488),	-- 7.0 QA Combat Test Mail Belt 4
+			i(109504),	-- 7.0 QA Combat Test Mail Gloves 4
+			i(109510),	-- 7.0 QA Combat Test Mail Chest 3
+			i(109517),	-- 6.0 QA Combat Test Mail Chest 4
+			i(109541),	-- 7.0 QA Combat Test Mail Boots 4
+			i(109543),	-- 7.0 QA Combat Test Mail Bracer 3
+			i(109548),	-- 7.0 QA Combat Test Mail Bracer 4
+			-- Legion
 			i(140011),	-- Duskwatch Adjudicator's Pauldrons
+			-- 8.2.0
+			i(167119),	-- QA Combat Test Mail Helm
+			i(167120),	-- QA Combat Test Mail Legs 1
+			i(167121),	-- QA Combat Test Mail Bracer 1
+			i(167122),	-- QA Combat Test Mail Belt 1
+			i(167123),	-- QA Combat Test Mail Chest 1
+			i(167124),	-- QA Combat Test Mail Gloves 1
+			i(167125),	-- QA Combat Test Mail Shoulders 1
+			i(167126),	-- QA Combat Test Mail Boots 1
+			--
+			i(2867),	-- Rough Bronze Bracers (crafted by NYI pattern) (prof)
+			i(56497),	-- Razorshell Gloves (prof)
+			i(68844),	-- Unknown
 		}),
 		n(-46, {	-- Plate
 			cl(DEATHKNIGHT, {
