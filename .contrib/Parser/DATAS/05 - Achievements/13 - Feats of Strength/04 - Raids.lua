@@ -53,7 +53,7 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, ach(13785)),		-- Cutting Edge: Queen Azshara
 			un(REMOVED_FROM_GAME, ach(8260)),		-- Cutting Edge: Ra-den
 			un(REMOVED_FROM_GAME, ach(7487)),		-- Cutting Edge: Sha of Fear
-			un(REMOVED_FROM_GAME, ach(14461)),		-- Cutting Edge: Sire Denathrius
+			ach(14461),								-- Cutting Edge: Sire Denathrius
 			un(REMOVED_FROM_GAME, ach(10045)),		-- Cutting Edge: The Black Gate
 			un(REMOVED_FROM_GAME, ach(13419)),		-- Cutting Edge: Uu'nat, Harbinger of the Void
 			un(REMOVED_FROM_GAME, ach(7485)),		-- Cutting Edge: Will of the Emperor
