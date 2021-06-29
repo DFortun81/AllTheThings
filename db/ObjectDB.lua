@@ -1839,6 +1839,7 @@ select(2, ...).ObjectNames = {
 	[369135] = "Domination Seal #2",
 	[369138] = "Domination Chest Seal",
 	[369141] = "Mawsworn Cache",
+	[369143] = "Quartered Ancient Ring",
 	[369144] = "The Harrower's Key Ring",
 	[369145] = "Helgarde Supply Cache",
 	[369148] = "Glittering Nest Material",
