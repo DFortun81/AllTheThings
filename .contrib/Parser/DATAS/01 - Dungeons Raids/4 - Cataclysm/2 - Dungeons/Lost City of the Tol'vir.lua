@@ -299,3 +299,10 @@ _.Instances = { tier(4, {	-- Cataclysm
 		},
 	}),
 })};
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-9979, {	-- Cataclysm
+		inst(69, {	-- Lost City of the Tol'vir
+			i(56405),	-- Oasis Bracers (Lost City)
+		}),
+	}),
+});

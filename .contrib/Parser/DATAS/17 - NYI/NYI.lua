@@ -161,6 +161,7 @@ _.NeverImplemented =
 			-- Legion
 			i(153289),	-- Eredar Priestess' Tunic
 			-- BFA
+			-- War Effort?
 			i(163269),	-- 7th Legionnaire's Mantle
 			i(163340),	-- 7th Legionnaire's Circlet
 			i(163343),	-- 7th Legionnaire's Sash
@@ -201,6 +202,14 @@ _.NeverImplemented =
 			i(104355),	-- Titan Rocket Boots
 			i(105710),	-- Lasso Bracers, Humanoid
 			i(105928),	-- Magic Bunny Hat
+			-- Testing gear
+			i(107866),	-- 7.0 PH Cloth Treads
+			i(107871),	-- 7.0 PH Cloth Gloves
+			i(107874),	-- 7.0 PH Cloth Hood
+			i(107878),	-- 7.0 PH Cloth Leggings
+			i(107881),	-- 7.0 PH Cloth Robe
+			i(107884),	-- 7.0 PH Cloth Mantle
+			i(107887),	-- 7.0 PH Cloth Cord
 			i(107890),	-- 7.0 PH Cloth Wristwraps
 			-- Testing gear added 6.0.1 all are quest items also
 			i(109272),	-- 7.0 QA Combat Test Caster Belt 1
@@ -252,169 +261,32 @@ _.NeverImplemented =
 			cl(DRUID, {
 			}),
 			cl(ROGUE, {
-				i(7950),		-- Armor of Thero-Shan
-				i(7948),		-- Girdle of Thero-Shan
-				i(7952),		-- Boots of Thero-Shan
-				i(7951),		-- Hands of Thero-Shan
-				i(7953),		-- Mask of Thero-Shan
-				i(7949),		-- Leggings of Thero-Shan
+				i(7950),	-- Armor of Thero-Shan
+				i(7948),	-- Girdle of Thero-Shan
+				i(7952),	-- Boots of Thero-Shan
+				i(7951),	-- Hands of Thero-Shan
+				i(7953),	-- Mask of Thero-Shan
+				i(7949),	-- Leggings of Thero-Shan
+				-- Cata
+				i(54692),	-- Armor of Thero-Shan
 				-- Transmog set item that never became available
 				i(130327),	-- Artful Britches
 			}),
 			cl(MONK, {
 			}),
-			i(27719),	-- Aldor Leggings of Puissance (never made it to live)
-			i(54685),	-- Archer's Jerkin
-			i(54686),	-- Barbaric Harness
-			i(14550),	-- Bladebane Armguards (Leather)
-			i(54703),	-- Bogwalker Boots
-			i(159181),	-- Mistfall Spaulders
-			i(159182),	-- Mistfall Chainmail
-			i(159176),	-- Mistfall Bracers
-			i(159177),	-- Mistfall Gloves
-			i(159175),	-- Mistfall Belt
-			i(159180),	-- Mistfall Legguards
-			i(159178),	-- Mistfall Boots
-			i(163436),	-- Honorbound Outrider's Faceguard
-			i(163433),	-- Honorbound Outrider's Mantle
-			i(163440),	-- Honorbound Outrider's Belt
-			i(12104),	-- Brindlethorn Tunic (Leather)
-			i(54708),	-- Ceremonial Leather Gloves
-			i(54666),	-- Ceremonial Leather Harness
-			i(37176),	-- Cavern Leather Treads
-			i(30288),	-- Cenarion Warden's Gloves
-			i(54698),	-- Ceremonial Leather Loincloth
-			i(166403),	-- Flaskzertauren's Leather Vest
-			i(166404),	-- Flaskzertaurens Leather Tunic
-			i(5821),		-- Darkstalker Boots (Leather)
-			i(54683),	-- Dusky Leather Armor
-			i(39410),	-- Gauntlets of Rampant Destruction
-			i(54674),	-- Gloomshroud Armor
-			i(25795),	-- Gloves of Preservation (not added version)
-			i(54684),	-- Guardian Armor
-			i(38525),	-- Jailor's Padded Cover
+			-- Load in Game
+			--TBC
+			i(25795),	-- Gloves of Preservation (not added version)(Says added in cata wowhead)
+			i(25796),	-- Lurking Shadow Spaulders (only beta) (Says added in cata wowhead)
+			-- Wrath
+			i(37176),	-- Cavern Leather Treads (Says added in cata wowhead)
+			i(37316),	-- HF28 Leather Physical Legs4  (Says added in cata wowhead)
+			-- Cata
 			i(56701),	-- Jinxed Vest (never made it to live)
-			i(37316),	-- Leather Physical Legs
-			i(43895),	-- Leggings of Silent Echoes
-			i(54723),	-- Living Leggings
-			i(25796),	-- Lurking Shadow Spaulders (only beta)
-			i(22273),	-- Moonshadow Hood (Leather)
-			i(59790),	-- Unknown
-			i(62697),	-- Unknown
-			i(62698),	-- Unknown
-			i(62699),	-- Unknown
-			i(62700),	-- Unknown
-			i(62701),	-- Unknown
-			i(62702),	-- Unknown
-			i(62703),	-- Unknown
-			i(62704),	-- Unknown
-			i(65099),	-- Unknown
-			i(54691),	-- Nightscape Tunic
-			i(107864),	-- Unknown
-			i(107868),	-- Unknown
-			i(107869),	-- Unknown
-			i(107876),	-- Unknown
-			i(107880),	-- Unknown
-			i(107882),	-- Unknown
-			i(107889),	-- Unknown
-			i(107893),	-- Unknown
-			i(37385),	-- Unknown
-			i(37386),	-- Unknown
-			i(37400),	-- Unknown
-			i(39707),	-- Unknown
-			i(37385),	-- Unknown
-			i(37385),	-- Unknown
-			i(37385),	-- Unknown
-			i(37385),	-- Unknown
-			i(109264),	-- Unknown
-			i(19986),	-- Pirate's Eye Patch (Leather)
-			i(54696),	-- Scorpashi Breastplate
-			i(54687),	-- Sentinel Breastplate
-			i(54724),	-- Shadowcraft Bracers
-			i(54725),	-- Shadowcraft Gloves
-			i(63012),	-- Skull Kickers
-			i(109276),	-- Unknown
-			i(109287),	-- Unknown
-			i(109294),	-- Unknown
-			i(109305),	-- Unknown
-			i(109306),	-- Unknown
-			i(109307),	-- Unknown
-			i(109308),	-- Unknown
-			i(109345),	-- Unknown
-			i(109346),	-- Unknown
-			i(109347),	-- Unknown
-			i(109348),	-- Unknown
-			i(109349),	-- Unknown
-			i(20524),	-- Shadowhide Leggings (Leather)
-			i(54655),	-- Stormshroud Armor (Leather)
-			i(157693),	-- Ascetic's Helm
-			i(54681),	-- Thick Murloc Armor
-			i(28145),	-- Tranquillien Wraps (Leather)
-			i(54727),	-- Traveler's Boots
-			i(54543),	-- Orca-Tooth Treads
-			i(54649),	-- Cow King's Hide
-			i(54650),	-- Forest's Embrace
-			i(80946),	-- Peacebreaker's Leather Helm
-			i(80950),	-- Peacebreaker's Hide Helm
-			i(54652),	-- Righteous Armor
-			i(54658),	-- Lionfur Armor
-			i(54665),	-- Jessera's Fungus Lined Vest
-			i(54689),	-- Marshwarden's Tunic
-			i(54692),	-- Armor of Thero-Shan
-			i(54695),	-- Surveyor's Tunic
-			i(54707),	-- Researcher's Gloves
-			i(54716),	-- Juicy Bracers
-			i(54726),	-- Clouddrift Mantle
-			i(54667),	-- Vest of the Dragon Slayer
-			i(54731),	-- Unknown
-			i(107203),	-- Lasso Bracers, Powerup
-			i(107337),	-- Practice Power Bracers
-			i(107866),	-- Unknown
-			i(107871),	-- Unknown
-			i(107874),	-- Unknown
-			i(107878),	-- Unknown
-			i(107881),	-- Unknown
-			i(107884),	-- Unknown
-			i(107887),	-- Unknown
-			i(54668),	-- Murloc Scale Breastplate
-			i(54670),	-- Hillman's Leather Vest
-			i(54671),	-- Starsight Tunic
-			i(54673),	-- Barkshell Tunic
-			i(54677),	-- Raptorbane Armor
-			i(54680),	-- Raptor Hide Harness
-			i(41757),	-- Vest of Unyielding Companionship (was in Wrath beta)
-			i(26029),	-- Watchman's Bracers
-			i(54711),	-- Wendigo Collar
-			i(54694),	-- Wolf Rider's Padded Armor
-			i(42875),	-- Worg-Hide Pants
-			i(21613),	-- Wormhide Boots (Leather)
-			i(21614),	-- Wormhide Protector (Leather)
-			i(109358),	-- Unknown
-			i(109366),	-- Unknown
-			i(109375),	-- Unknown
-			i(109388),	-- Unknown
-			i(109400),	-- Unknown
-			i(109414),	-- Unknown
-			i(109415),	-- Unknown
-			i(109428),	-- Unknown
-			i(109432),	-- Unknown
-			i(109440),	-- Unknown
-			i(109444),	-- Unknown
-			i(109469),	-- Unknown
-			i(109475),	-- Unknown
-			i(109479),	-- Unknown
-			i(109486),	-- Unknown
-			i(109493),	-- Unknown
-			i(109513),	-- Unknown
-			i(109547),	-- Unknown
-			i(120363),	-- Unknown
-			i(163381),	-- 7th Legionnaire's Mask
-			i(163378),	-- 7th Legionnaire's Shoulderpads
-			i(163382),	-- 7th Legionnaire's Tunic
-			i(163385),	-- 7th Legionnaire's Belt
-			i(163379),	-- 7th Legionnaire's Pants
-			i(56405),	-- Oasis Bracers
 			i(59796), 	-- Treads of Decapod Death
+			i(63012),	-- Skull Kickers
+			-- WoD
+			-- Quest Set
 			i(114248),	-- Bloodthorn Bracers
 			i(114251),	-- Bloodthorn Chestguard
 			i(114256),	-- Bloodthorn Boots
@@ -423,13 +295,150 @@ _.NeverImplemented =
 			i(114268),	-- Bloodthorn Legguards
 			i(114272),	-- Bloodthorn Spaulders
 			i(114276),	-- Bloodthorn Belt
+			-- BFA
+			-- War Effort
+			i(163378),	-- 7th Legionnaire's Shoulderpads
+			i(163379),	-- 7th Legionnaire's Pants
+			i(163381),	-- 7th Legionnaire's Mask
+			i(163382),	-- 7th Legionnaire's Tunic
+			i(163385),	-- 7th Legionnaire's Belt
+			i(163433),	-- Honorbound Outrider's Mantle
+			i(163436),	-- Honorbound Outrider's Faceguard
+			i(163440),	-- Honorbound Outrider's Belt
+			-- ItemID/Retrieving
+			-- Vanilla
+			i(5821),	-- Darkstalker Boots
+			i(12104),	-- Brindlethorn Tunic
+			i(14550),	-- Bladebane Armguards
+			i(20524),	-- Shadowhide Leggings
+			i(21613),	-- Wormhide Boots (Says added in cata wowhead)
+			i(21614),	-- Wormhide Protector (Says added in cata wowhead)
+			-- TBC
+			i(19986),	-- Pirate's Eye Patch
+			i(22273),	-- Moonshadow Hood (Says added in cata wowhead)
+			i(26029),	-- Watchman's Bracers
+			i(27719),	-- Aldor Leggings of Puissance (never made it to live)(Says added in cata wowhead)
+			i(28145),	-- Tranquillien Wraps (Says added in cata wowhead)
+			i(30288),	-- Cenarion Warden's Gloves (Says added in cata wowhead)
+			-- Wrath
+			i(37385),	-- Seared Harness
+			i(37386),	-- Ruby Heart Spaulders
+			i(37400),	-- Whalehunter Cuffs
+			i(38525),	-- Jailor's Padded Cover (Says added in cata wowhead)
+			i(39410),	-- Gauntlets of Rampant Destruction (Says added in cata wowhead)
+			i(39707),	-- Verdant Tundra Cap
+			i(41757),	-- Vest of Unyielding Companionship (was in Wrath beta)
+			i(42875),	-- Worg-Hide Pants (Says added in cata wowhead)
+			i(43895),	-- Leggings of Silent Echoes (Says added in cata wowhead)
+			-- Cata
+			i(54543),	-- Orca-Tooth Treads
+			i(54649),	-- Cow King's Hide
+			i(54650),	-- Forest's Embrace
+			i(54652),	-- Righteous Armor
+			i(54655),	-- Stormshroud Armor (Leather) (prof
+			i(54658),	-- Lionfur Armor
+			i(54665),	-- Jessera's Fungus Lined Vest
+			i(54666),	-- Ceremonial Leather Harness
+			i(54667),	-- Vest of the Dragon Slayer
+			i(54668),	-- Murloc Scale Breastplate
+			i(54670),	-- Hillman's Leather Vest
+			i(54671),	-- Starsight Tunic
+			i(54673),	-- Barkshell Tunic
+			i(54674),	-- Gloomshroud Armor
+			i(54677),	-- Raptorbane Armor
+			i(54680),	-- Raptor Hide Harness
+			i(54681),	-- Thick Murloc Armor
+			i(54683),	-- Dusky Leather Armor (Prof)
+			i(54684),	-- Guardian Armor (Prof)
+			i(54685),	-- Archer's Jerkin
+			i(54686),	-- Barbaric Harness
+			i(54687),	-- Sentinel Breastplate
+			i(54689),	-- Marshwarden's Tunic
+			i(54691),	-- Nightscape Tunic(Prof)
+			i(54694),	-- Wolf Rider's Padded Armor
+			i(54695),	-- Surveyor's Tunic
+			i(54696),	-- Scorpashi Breastplate
+			i(54698),	-- Ceremonial Leather Loincloth
+			i(54703),	-- Bogwalker Boots
+			i(54708),	-- Ceremonial Leather Gloves
+			i(54707),	-- Researcher's Gloves
+			i(54711),	-- Wendigo Collar
+			i(54716),	-- Juicy Bracers
+			i(54723),	-- Living Leggings
+			i(54724),	-- Shadowcraft Bracers
+			i(54725),	-- Shadowcraft Gloves
+			i(54726),	-- Clouddrift Mantle
+			i(54727),	-- Traveler's Boots
+			i(54731),	-- not used
+			i(59790),	-- Gnash-Crusher Helm
+			-- Art Templates
+			i(62697),	-- Art Template Leather Belt - Leather_Cataclysm_B_01 - Brown
+			i(62698),	-- Art Template Leather Boot - Leather_Cataclysm_B_01 - Brown
+			i(62699),	-- Art Template Leather Chest - Leather_Cataclysm_B_01 - Brown
+			i(62700),	-- Art Template Leather Hand - Leather_Cataclysm_B_01 - Brown
+			i(62701),	-- Art Template Leather Head - Leather_Cataclysm_B_01 - Brown
+			i(62702),	-- Art Template Leather Legs - Leather_Cataclysm_B_01 - Brown
+			i(62703),	-- Art Template Leather Shoulder - Leather_Cataclysm_B_01 - Brown
+			i(62704),	-- Art Template Leather Wrist - Leather_Cataclysm_B_01 - Brown
+			-- WoD
+			i(107203),	-- Lasso Bracers, Powerup
+			-- added 6.0.3
+			i(107337),	-- Practice Power Bracers
+			-- Testing Gear
+			i(107864),	-- 7.0 PH Leather Vest
+			i(107868),	-- 7.0 PH Leather Boots
+			i(107869),	-- 7.0 PH Leather Gloves
+			i(107876),	-- 7.0 PH Leather Helm
+			i(107880),	-- 7.0 PH Leather Breeches
+			i(107882),	-- 7.0 PH Leather Spaulders
+			i(107889),	-- 7.0 PH Leather Belt
+			i(107893),	-- 7.0 PH Leather Wristwraps
+			-- Testing Gear (Quest item?)
+			i(109264),	-- 6.0 QA Combat Test Leather Bracer
+			i(109276),	-- 6.0 QA Combat Test Leather Legs
+			i(109287),	-- 6.0 QA Combat Test Leather Helm 2
+			i(109294),	-- 6.0 QA Combat Test Leather Belt
+			i(109305),	-- 6.0 QA Combat Test Leather Gloves
+			i(109306),	-- 6.0 QA Combat Test Leather Helm 3
+			i(109307),	-- 6.0 QA Combat Test Leather Legs 2
+			i(109308),	-- 6.0 QA Combat Test Leather Shoulders
+			i(109345),	-- 6.0 QA Combat Test Leather Chest
+			i(109346),	-- 6.0 QA Combat Test Leather Gloves
+			i(109347),	-- 6.0 QA Combat Test Leather Helm 4
+			i(109348),	-- 6.0 QA Combat Test Leather Legs 3
+			i(109349),	-- 6.0 QA Combat Test Leather Shoulders 2
+			i(109358),	-- 6.0 QA Combat Test Leather Belt 2
+			i(109366),	-- 6.0 QA Combat Test Leather Gloves 2
+			i(109375),	-- 6.0 QA Combat Test Leather Helm
+			i(109388),	-- 6.0 QA Combat Test Leather Robes
+			i(109400),	-- 6.0 QA Combat Test Leather Chest 2
+			i(109414),	-- 6.0 QA Combat Test Leather Boots
+			i(109415),	-- 6.0 QA Combat Test Leather Bracer 2
+			i(109428),	-- 6.0 QA Combat Test Leather Belt 3
+			i(109432),	-- 6.0 QA Combat Test Leather Shoulders 3
+			i(109440),	-- 6.0 QA Combat Test Leather Chest 3
+			i(109444),	-- 6.0 QA Combat Test Leather Belt 4
+			i(109469),	-- 6.0 QA Combat Test Leather Boots 3
+			i(109475),	-- 6.0 QA Combat Test Leather Legs 4
+			i(109479),	-- 6.0 QA Combat Test Leather Bracer 3
+			i(109486),	-- 6.0 QA Combat Test Leather Shoulders 4
+			i(109493),	-- 6.0 QA Combat Test Leather Gloves 2
+			i(109513),	-- 6.0 QA Combat Test Leather Boots 2
+			i(109547),	-- 6.0 QA Combat Test Leather Bracer 4
+			-- Testing Gear
+			i(120363),	-- 7.0 QA Combat Test Leather Boots 4
+			-- BFA
+			-- Tiragarde Sound BoE Set
+			i(159175),	-- Mistfall Belt
+			i(159176),	-- Mistfall Bracers
+			i(159177),	-- Mistfall Gloves
+			i(159178),	-- Mistfall Boots
+			i(159180),	-- Mistfall Legguards
+			i(159181),	-- Mistfall Spaulders
+			i(159182),	-- Mistfall Chainmail
 		}),
 		n(-45, {	-- Mail
 			cl(SHAMAN, {
-				i(157725),	-- Totem Caller Coif (Sham Future Boost Gear)
-				i(157727),	-- Totem Caller Pauldrons (Sham Future Boost Gear)
-				i(157677),	-- Hearthbonded Helm (Hunter Future Boost Gear)
-				i(157679),	-- Hearthbonded Spaulders (Hunter Future Boost Gear)
 			}),
 			cl(HUNTER, {
 			}),
@@ -526,8 +535,6 @@ _.NeverImplemented =
 			i(163447),	-- Honorbound Vanguard's Helm
 			i(163442),	-- Honorbound Vanguard's Pauldrons
 			i(163452),	-- Honorbound Vanguard's Chain Belt
-			i(166402),	-- Flaskzertauren Mail Hauberk
-			i(166410),	-- Flaskzertauren Mail Shoulderguards
 			i(12105),	-- Pridemail Leggings
 			i(37420),	-- Sharkproof Boots
 			i(62715),	-- Unknown
@@ -643,10 +650,6 @@ _.NeverImplemented =
 			i(107892),	-- Unknown
 			i(38389),	-- Comfy Raccoonskin Hat
 			i(38390),	-- The Rugged Marksman
-			i(80947),	-- Peacebreaker's Chain Helm
-			i(80951),	-- Peacebreaker's Ringmail Helm              
-			i(81000),	-- Ringmail Armor of Eminent Domain (not added version)
-			i(80996),	-- Chain Armor of Eminent Domain (not added version)
 			i(37454),	-- HF28 Mail Physical Chest4
 			i(2867),	-- Rough Bronze Bracers (crafted by NYI pattern)
 			i(140011),	-- Duskwatch Adjudicator's Pauldrons
@@ -655,12 +658,8 @@ _.NeverImplemented =
 			cl(DEATHKNIGHT, {
 			}),
 			cl(PALADIN, {
-				i(157701),	-- Light Soul Helm
-				i(157703),	-- Light Soul Pauldrons
 			}),
 			cl(WARRIOR, {
-				i(157741),	-- Warsinger's Helm
-				i(157743),	-- Warsinger's  Pauldrons
 			}),
 			-- Plate Blue Warfront Pieces
 			i(163412),	-- 7th Legionnaire's Helmet
@@ -688,10 +687,6 @@ _.NeverImplemented =
 			i(59768),	-- unknown
 			i(59772),	-- unknown
 			i(65743),	-- unknown
-			i(166400),	-- Flaskzertauren's Plate Chestguard
-			i(166401),	-- Flaskzertauren's Plate Cuirass
-			i(166411),	-- Flaskzertauren's Plate Shoulderguards
-			i(166412),	-- Flaskzertauren's Plate Pauldrons
 			i(27718),	-- Aldor Defender's Legplates
 			i(12106),	-- Boulderskin Breastplate
 			i(107877),	-- unknown
@@ -754,9 +749,6 @@ _.NeverImplemented =
 			i(37485),	-- Clam Collector Gauntlets
 			i(37510),	-- Wristguards of Edification
 			i(37511),	-- Crucible Waistguard
-			i(80952),	-- Peacebreaker's Burnished Headcover
-			i(80953),	-- Peacebreaker's Armored Helm
-			i(80954),	-- Peacebreaker's Heavy Helm
 			i(38524),	-- Carapace of the Scarlet Commander
 			i(5822),		-- Hedgeseed Gauntlets
 			i(26041),	-- Vigilant Vambraces

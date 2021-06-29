@@ -960,6 +960,16 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		inst(1031, { 	-- Uldir
 			i(166406),	-- Flaskzertauren's Cloth Robes
 			i(166407),	-- Flaskzertauren's Cloth Shoulders
+			i(166403),	-- Flaskzertauren's Leather Vest
+			i(166404),	-- Flaskzertauren's Leather Tunic
+			i(166408),	-- Flaskzertauren's Leather Spaulders
+			i(166409),	-- Flaskzertauren's Leather Shoulderpads
+			i(166402),	-- Flaskzertauren's Mail Hauberk
+			i(166410),	-- Flaskzertauren's Mail Shoulderguards
+			i(166400),	-- Flaskzertauren's Plate Chestguard
+			i(166401),	-- Flaskzertauren's Plate Cuirass
+			i(166411),	-- Flaskzertauren's Plate Shoulderguards
+			i(166412),	-- Flaskzertauren's Plate Pauldrons
 		}),
 	}),
 });

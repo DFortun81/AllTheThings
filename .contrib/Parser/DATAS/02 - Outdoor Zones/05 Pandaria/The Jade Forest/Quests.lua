@@ -1760,17 +1760,38 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(81016),	-- Landfall Satin Treads
 			}),
 			n(-44, {	-- Leather
+				i(80946),	-- Peacebreaker's Leather Helm
+				i(80950),	-- Peacebreaker's Hide Helm
+				i(80995),	-- Leather Tunic of Eniment Domain
+				i(80999),	-- Hide Tunic of Eminent Domain
 				i(81004),	-- Honorary Combat Engineer's Leather Trousers
 				i(81008), 	-- Honorary Combat Engineer's Hide Leggings
+				i(81013),	-- Landfall Leather Boots
+				i(81017),	-- Landfall Moccasins
 			}),
 			n(-45, {	-- Mail
+				i(80947),	-- Peacebreaker's Chain Helm
+				i(80951),	-- Peacebreaker's Ringmail Helm
+				i(80996),	-- Chain Armor of Eminent Domain (not added version)
+				i(81000),	-- Ringmail Armor of Eminent Domain (not added version)
 				i(81005),	-- Honorary Combat Engineer's Chain Leggings
 				i(81009),	-- Honorary Combat Engineer's Ringmail Leggings
+				i(81014),	-- Landfall Chain Boots
+				i(81018),	-- Landfall Sabatons
 			}),
 			n(-46, {	-- Plate
+				i(80952),	-- Peacebreaker's Burnished Headcover
+				i(80953),	-- Peacebreaker's Armored Helm
+				i(80954),	-- Peacebreaker's Heavy Helm
+				i(81001),	-- Burnished Chestguard of Eminent Domain
+				i(81002),	-- Armored Chestpiece of Eminent Domain
+				i(81003),	-- Heavy Chestpiece of Eminent Domain
 				i(81010),	-- Honorary Combat Engineer's Burnished Legplates
 				i(81011),	-- Honorary Combat Engineer's Legguards
 				i(81012),	-- Honorary Combat Engineer's Heavy Legplates
+				i(81019),	-- Landfall Burnished Greaves
+				i(81020),	-- Landfall Warboots
+				i(81021),	-- Landfall Plate Boots
 			}),
 		}),
 	}),
