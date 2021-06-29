@@ -877,12 +877,16 @@ for key,value in pairs({
 		--TODO: [-910] = "Hunt: Alpha Devourers",					-- Hunt: Alpha Devourers
 		--TODO: [-911] = "Hunt: Shadehounds",						-- Hunt: Shadehounds
 		--TODO: [-912] = "Hunt: Winged Soul Eaters",				-- Hunt: Winged Soul Eaters
+		--TODO: [-913] = "Tormentors of Torghast",					-- Tormentors of Torghast
 		--TODO: [-914] = "Adventures",								-- Adventures
 		[-915] = "心能导流器",										-- Anima Conductor
 		[-916] = "等级 1: 流动卷须",									-- Tier 1: Flowing Tendrils
 		[-917] = "等级 2: 涌动丝缕",									-- Tier 2: Streaming Threads
 		[-918] = "等级 3: 流动能量",									-- Tier 3: Flowing Power
 		[-919] = "梦魇骒马",											-- Night Mare
+		--TODO: [-977] = "Maelie the Wanderer",						-- Maelie the Wanderer
+		--TODO: [-979] = "Broker Ve'ken & Broker Ve'nott",			-- Broker Ve'ken & Broker Ve'nott
+		--TODO: [-980] = "Shared Treasures",						-- Shared Treasures
 
 		-- SL Maldraxxus/Necrolord
 			[-920] = "盟约: 通灵领主",								-- Covenant: Necrolord
@@ -1097,6 +1101,7 @@ for key,value in pairs({
 		[-10080] = "惊魂幻象",										-- Horrific Visions
 		[-10081] = "腐化区域",										-- Corrupted Area
 		[-10082] = "失落区域",										-- Lost Area
+		--TODO: [-10083] = "Covenant Assaults",						-- Covenant Assaults
 
 		-- Shadowlands Achievement Header
 			-- Achieve 14339 Sub-Criteira
