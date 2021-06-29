@@ -9993,13 +9993,13 @@ local function QueryCompletedQuests()
 	-- check if Blizzard is being dumb / should we print a summary instead of individual lines
 	local questDiff = #freshCompletes - (rawget(t, "_TOTAL") or 0);
 	if app.IsReady then
-		if oldReportSetting and questDiff > 25 then
+		if oldReportSetting and questDiff > 50 then
 			print(questDiff,"Quests Completed");
-		elseif oldReportSetting and questDiff < -25 then
+		elseif oldReportSetting and questDiff < -50 then
 			print(questDiff,"Quests Unflagged");
 		end
 	end
-	if math.abs(questDiff) > 25 then
+	if math.abs(questDiff) > 50 then
 		app.Settings:SetTooltipSetting("Report:CompletedQuests", false);
 	end
 	local completedKeys = {};
@@ -10015,7 +10015,7 @@ local function QueryCompletedQuests()
 			t[q] = false;	-- trigger the metatable function
 		end
 	end
-	if math.abs(questDiff) > 25 then
+	if math.abs(questDiff) > 50 then
 		app.Settings:SetTooltipSetting("Report:CompletedQuests", oldReportSetting);
 	end
 end
