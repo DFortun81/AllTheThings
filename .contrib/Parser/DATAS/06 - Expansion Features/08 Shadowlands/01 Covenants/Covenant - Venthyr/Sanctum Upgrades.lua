@@ -396,12 +396,11 @@ _.ExpansionFeatures =
 											i(179533),	-- Grove Warden's Harvester
 											i(179605),	-- Elderwood Barrier
 											i(181620),	-- Hard Boiled Gorm Egg
-											i(179585),	-- Nightwillow Shortbow	
+											i(179585),	-- Nightwillow Shortbow
 											i(183861),	-- The Winter Cycle: A Collection of Ardenweald Etiquettes and Parables
 											i(179548),	-- Elderwood Gavel
 											i(183846),	-- Orders to Gormsmith Cavina
 											i(181619),	-- Poached Gorm Eggs
-											
 										},
 									}),
 									o(356733, {	-- Kleia and Pelagos' Extravagant Tribute
@@ -2565,6 +2564,8 @@ _.HiddenQuestTriggers = {
 			-- q(61494),	-- using Building: Guardhouse
 			q(59436),	-- using Staff: Stage Crew
 			q(59433),	-- using Staff: Waiters
+			q(61452),	-- using 'Vanity Mirror' (181436)
+			q(61454),	-- using 'The Wild Drum' (181438)
 			q(61457),	-- using Altar of Accomplishment
 			q(59515),	-- using Contract: Stoneborn Reserves
 			q(59516),	-- using Contract: Stoneborn Reserves
