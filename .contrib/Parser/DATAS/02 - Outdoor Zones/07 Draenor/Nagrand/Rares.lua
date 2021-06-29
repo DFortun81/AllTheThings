@@ -290,7 +290,7 @@ _.Zones =
 					["description"] = "Must be on Assault on the Broken Precipice.  Click on blue crystals to transform into an ogre, and then click on the trophy in the middle of the pit.",
 					["questID"] = 37397,
 					["isDaily"] = true,
-					["coord"] = { 39.6, 14.6, 550 },	-- 	**Coords unconfirmed, relied on wowhead**
+					["coord"] = { 39.6, 14.6, 550 },	-- **Coords unconfirmed, relied on wowhead**
 					["lvl"] = 100,
 					["g"] = {
 						crit(3, {	-- Pit Slayer

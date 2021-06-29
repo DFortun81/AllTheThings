@@ -75,6 +75,9 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,	-- shared appearance only available from this quest
 						}),
 						i(90305),	-- Honorary Combat Engineer's Chain Leggings
+						i(90357, {	-- Honorary Combat Engineer's Chain Leggings
+							["races"] = ALLIANCE_ONLY,
+						}),
 						i(90312),	-- Honorary Combat Engineer's Heavy Legplates
 						i(90364, {	-- Honorary Combat Engineer's Heavy Legguards
 							["races"] = ALLIANCE_ONLY,	-- shared appearance only available from this quest
@@ -92,6 +95,9 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,	-- shared appearance only available from this quest
 						}),
 						i(90309),	-- Honorary Combat Engineer's Ringmail Leggings
+						i(90361, {	-- Honorary Combat Engineer's Ringmail Kilt
+							["races"] = ALLIANCE_ONLY,
+						}),
 						i(90307),	-- Honorary Combat Engineer's Satin Leggings
 						i(90359, {	-- Honorary Combat Engineer's Satin Leggings
 							["races"] = ALLIANCE_ONLY,	-- shared appearance only available from this quest
@@ -365,7 +371,7 @@ _.Zones =
 					["sourceQuests"] = { 31230 },	-- Welcome to Dawn's Blossom
 					["description"] = "Must be on or have completed |cFFFFD700The Double Hozen Dare|r to see this quest.  If you completed it without picking up this quest, you can find An Windfur running around Dawn's Blossom, rather than in the forest near the Lair of the Jade Witch.",
 					["provider"] = { "n", 55274 },	-- An Windfur
-					["coord"] = { 38.4, 46.2, 371 }, 	-- coordinates for the middle of the area where the quest is picked up.  not adding secondary Dawn's Blossom coordinates because i don't want it to look like you pick up both quests in town initially (description should suffice, since you only pick it up in town under specific circumstances)
+					["coord"] = { 38.4, 46.2, 371 },	-- coordinates for the middle of the area where the quest is picked up.  not adding secondary Dawn's Blossom coordinates because i don't want it to look like you pick up both quests in town initially (description should suffice, since you only pick it up in town under specific circumstances)
 					["g"] = {
 						i(88708),	-- An's Ring
 						i(88705),	-- Jade Smasher Band
@@ -1373,7 +1379,7 @@ _.Zones =
 						{ "n", 55234 },	-- An Windfur
 						{ "n", 55274 },	-- An Windfur
 					},
-					["coord"] = { 38.4, 46.2, 371 }, 	-- coordinates for the middle of the area where the quest is picked up
+					["coord"] = { 38.4, 46.2, 371 },	-- coordinates for the middle of the area where the quest is picked up
 					["g"] = {
 						i(82984),	-- Jade Raccoon
 					},
@@ -1740,3 +1746,53 @@ _.Zones =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10041, {	-- Mists of Pandaria
+		n(-163, {	-- Armor
+			n(-43, {	-- Cloth
+				i(80948),	-- Peacebreaker's Silk Cowl
+				i(80949),	-- Peacebreaker's Satin Hood
+				i(80997),	-- Silk Robe of Eminent Domain
+				i(80998),	-- Satin Robe of Eminent Domain
+				i(81006),	-- Honorary Combat Engineer's Silk Trousers
+				i(81007),	-- Honorary Combat Engineer's Satin Leggings
+				i(81015),	-- Landfall Silk Treads
+				i(81016),	-- Landfall Satin Treads
+			}),
+			n(-44, {	-- Leather
+				i(80946),	-- Peacebreaker's Leather Helm
+				i(80950),	-- Peacebreaker's Hide Helm
+				i(80995),	-- Leather Tunic of Eniment Domain
+				i(80999),	-- Hide Tunic of Eminent Domain
+				i(81004),	-- Honorary Combat Engineer's Leather Trousers
+				i(81008),	-- Honorary Combat Engineer's Hide Leggings
+				i(81013),	-- Landfall Leather Boots
+				i(81017),	-- Landfall Moccasins
+			}),
+			n(-45, {	-- Mail
+				i(80947),	-- Peacebreaker's Chain Helm
+				i(80951),	-- Peacebreaker's Ringmail Helm
+				i(80996),	-- Chain Armor of Eminent Domain (not added version)
+				i(81000),	-- Ringmail Armor of Eminent Domain (not added version)
+				i(81005),	-- Honorary Combat Engineer's Chain Leggings
+				i(81009),	-- Honorary Combat Engineer's Ringmail Leggings
+				i(81014),	-- Landfall Chain Boots
+				i(81018),	-- Landfall Sabatons
+			}),
+			n(-46, {	-- Plate
+				i(80952),	-- Peacebreaker's Burnished Headcover
+				i(80953),	-- Peacebreaker's Armored Helm
+				i(80954),	-- Peacebreaker's Heavy Helm
+				i(81001),	-- Burnished Chestguard of Eminent Domain
+				i(81002),	-- Armored Chestpiece of Eminent Domain
+				i(81003),	-- Heavy Chestpiece of Eminent Domain
+				i(81010),	-- Honorary Combat Engineer's Burnished Legplates
+				i(81011),	-- Honorary Combat Engineer's Legguards
+				i(81012),	-- Honorary Combat Engineer's Heavy Legplates
+				i(81019),	-- Landfall Burnished Greaves
+				i(81020),	-- Landfall Warboots
+				i(81021),	-- Landfall Plate Boots
+			}),
+		}),
+	}),
+});

@@ -2359,7 +2359,7 @@ profession(COOKING, {
 			}
 		}
 	})),
-	
+
 	-- #if AFTER WOD
 	n(DISCOVERY, {
 		["description"] = "These items have a chance to appear in your bag after cooking any recipe from Warlords of Draenor.",
@@ -2417,8 +2417,8 @@ profession(COOKING, {
 				i(133829),	-- Recipe: Hearty Feast [Rank 1]
 				i(133849),	-- Recipe: Hearty Feast [Rank 2]
 				i(133869),	-- Recipe: Hearty Feast [Rank 3]
-				i(133836), 	-- Recipe: Leybeque Ribs [Rank 2]
-				i(133856), 	-- Recipe: Leybeque Ribs [Rank 3]
+				i(133836),	-- Recipe: Leybeque Ribs [Rank 2]
+				i(133856),	-- Recipe: Leybeque Ribs [Rank 3]
 				i(133821),	-- Recipe: The Hungry Magister [Rank 1]
 				i(133841),	-- Recipe: The Hungry Magister [Rank 2]
 				i(133861),	-- Recipe: The Hungry Magister [Rank 3]
@@ -2474,8 +2474,8 @@ profession(COOKING, {
 				i(133822),	-- Recipe: Azshari Salad [Rank 1]
 				i(133842),	-- Recipe: Azshari Salad [Rank 2]
 				i(133862),	-- Recipe: Azshari Salad [Rank 3]
-				i(133836), 	-- Recipe: Leybeque Ribs [Rank 2]
-				i(133856), 	-- Recipe: Leybeque Ribs [Rank 3]
+				i(133836),	-- Recipe: Leybeque Ribs [Rank 2]
+				i(133856),	-- Recipe: Leybeque Ribs [Rank 3]
 				i(133821),	-- Recipe: The Hungry Magister [Rank 1]
 				i(133841),	-- Recipe: The Hungry Magister [Rank 2]
 				i(133861),	-- Recipe: The Hungry Magister [Rank 3]
@@ -3021,7 +3021,7 @@ profession(COOKING, {
 	})),
 	-- #endif
 	-- #if NOT ANYCLASSIC
-	filter(200, { 	-- Recipes
+	filter(200, {	-- Recipes
 		tier(1, {	-- Classic
 			un(REMOVED_FROM_GAME, i(16072, {	-- Expert Cookbook
 				["spellID"] = 0,	-- replacing the spellID that is automatically pulled from the itemDB, which shows this item as "unknown" when it's not collectible
@@ -3056,7 +3056,7 @@ local function cacheRecipes(g)
 		if g.g then cacheRecipes(g.g); end
 		local spellID = g.spellID or g.recipeID;
 		if spellID then
-			recipeCache[spellID] = true; 
+			recipeCache[spellID] = true;
 			if g.u then recipeCacheU[spellID] = g.u; end
 		end
 		for i,o in ipairs(g) do
@@ -3090,7 +3090,7 @@ local itemrecipe = function(name, itemID, spellID, phase, timeline)
 		o.name = name;
 	end
 	_.ItemDB[itemID] = phase and type(phase) ~= "boolean" and applyclassicphase(phase, o) or o;
-	
+
 	-- Ensure that this recipe's spellID exists in the profession database.
 	if recipeCache and (type(timeline) ~= "boolean" and type(phase) ~= "boolean") then
 		if recipeCache[o.spellID] then
@@ -3233,7 +3233,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		itemrecipe("Deprecated Recipe: Kodo Skin Bag", 4997),
 		itemrecipe("Recipe: Thistle Tea", 7678, 9513),
 		itemrecipe("Artisan Cookbook", 16073, 19887),
-		
+
 		-- #if AFTER WRATH
 		i(34126),	-- Recipe: Shoveltusk Soup
 		i(39692),	-- Recipe: Succulent Orca Stew
@@ -3242,15 +3242,15 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		-- #if AFTER MOP
 		i(101631),	-- Recipe: Noodle Cart Kit [Learned from the quest directly]
 		i(101664),	-- Recipe: Deluxe Noodle Cart Kit [Learned from the quest directly]
-		
+
 		recipe(145170),	-- Grand Deluxe Noodle Cart Kit
 		i(101739),	-- Recipe: Grand Deluxe Noodle Cart Kit
 		i(101729),	-- Grand Deluxe Noodle Cart Kit
-		
+
 		recipe(145167),	-- Grand Noodle Cart Kit
 		i(101728),	-- Recipe: Grand Noodle Cart Kit
 		i(101727),	-- Grand Noodle Cart Kit
-		
+
 		recipe(145197),	-- Grand Pandaren Treasure Noodle Cart Kit
 		i(101741),	-- Recipe: Grand Pandaren Treasure Noodle Cart Kit
 		i(101740),	-- Grand Pandaren Treasure Noodle Cart Kit

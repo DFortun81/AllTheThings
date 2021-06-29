@@ -54,7 +54,7 @@ _.ExpansionFeatures =
 					["DisablePartySync"] = true,
 					["altQuests"] = { 51994 },	-- Unlock the ability to go on Island Expeditions in search of Azerite
 				}),
-				q(53436, { 	-- Azerite for the Alliance
+				q(53436, {	-- Azerite for the Alliance
 					["isWeekly"] = true,
 					["provider"] = { "n", 131290 },	-- Flynn
 					["coord"] = { 66.6, 35.5, 1161 },

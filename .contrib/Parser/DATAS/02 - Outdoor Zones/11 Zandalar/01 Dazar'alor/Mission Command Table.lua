@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(875, { 	-- Zandalar
+	m(875, {	-- Zandalar
 		m(1163, {	-- Dazar'alor
 			n(138706, {	-- Mission Command Table
 				["modelScale"] = 3,

@@ -5478,7 +5478,7 @@ _.PVP =
 				n(-322, {	-- Back
 					un(REMOVED_FROM_GAME, i(98336)), -- Tyrannical Gladiator's Greatcloak
 				}),
-				n(-325, { 	-- Tabards
+				n(-325, {	-- Tabards
 					un(REMOVED_FROM_GAME, i(98162)), -- Tyrannical Gladiator's Tabard
 				}),
 			}),
@@ -6036,7 +6036,7 @@ _.PVP =
 									i(100413),	-- Grievous Gladiator's Mooncloth Mantle
 									i(100411),	-- Grievous Gladiator's Mooncloth Robe
 									i(100209),	-- Grievous Gladiator's Cord of Meditation	-- Priest Only
-									i(100415),	-- Grievous Gladiator's Satin Gloves 	-- Did not get via ally ensemble
+									i(100415),	-- Grievous Gladiator's Satin Gloves	-- Did not get via ally ensemble
 									i(100417),	-- Grievous Gladiator's Satin Hood		-- Did not get via ally ensemble
 									i(100419),	-- Grievous Gladiator's Satin Leggings	-- Did not get via ally ensemble
 									i(100423),	-- Grievous Gladiator's Satin Mantle	-- Did not get via ally ensemble
@@ -8638,7 +8638,7 @@ _.PVP =
 				n(-322, {	-- Back
 					un(REMOVED_FROM_GAME, i(101698)), -- Grievous Gladiator's Greatcloak
 				}),
-				n(-325, { 	-- Tabards
+				n(-325, {	-- Tabards
 					un(REMOVED_FROM_GAME, i(101697)), -- Grievous Gladiator's Tabard
 				}),
 			}),
@@ -10303,7 +10303,7 @@ _.PVP =
 				n(-322, {	-- Back
 					un(REMOVED_FROM_GAME, i(103635)), -- Prideful Gladiator's Greatcloak
 				}),
-				n(-325, { 	-- Tabards
+				n(-325, {	-- Tabards
 					un(REMOVED_FROM_GAME, i(103636)), -- Prideful Gladiator's Tabard
 				}),
 			}),
@@ -10617,7 +10617,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(103003),	-- Prideful Gladiator's Heavy Crossbow
 				i(103021),	-- Prideful Gladiator's Staff
 				i(105955),	-- Wrathful Gladiator's Razor (Elite, added in 5.4 ????)??
-				i(105956), 	-- Wrathful Gladiator's Razor [Not implemented, other version was instead]
+				i(105956),	-- Wrathful Gladiator's Razor [Not implemented, other version was instead]
 			}),
 		}),
 	}),

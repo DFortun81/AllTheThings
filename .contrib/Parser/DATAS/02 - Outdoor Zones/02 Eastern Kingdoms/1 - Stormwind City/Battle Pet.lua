@@ -158,7 +158,7 @@ _.Zones =
 						["sourceQuest"] = 31591,	-- Learning the Ropes
 						["races"] = ALLIANCE_ONLY,
 					}),
-					q(32863, { 	-- What We've Been Training For
+					q(32863, {	-- What We've Been Training For
 						["provider"] = { "n", 63596 },	-- Audrey Burnhelp
 						["coord"] = { 69.2, 25.0, STORMWIND_CITY },
 						["races"] = ALLIANCE_ONLY,

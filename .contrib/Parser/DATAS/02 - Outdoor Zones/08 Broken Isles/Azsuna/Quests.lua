@@ -625,7 +625,7 @@ _.Zones =
 					["coord"] = { 53.7, 16.7, 630 },
 					["provider"] = { "n", 90383 },	-- Runas the Shamed
 					["g"] = {
-						i(138876), 		-- Runas' Crystal Grinder (TOY!)
+						i(138876),	-- Runas' Crystal Grinder (TOY!)
 					},
 				}),
 				q(42271, {	-- Their Dying Breaths
@@ -877,7 +877,8 @@ _.Zones =
 				q(37930),	-- Whelp? That Happened.
 				q(38956),	-- Where's Lyndras Again?
 				q(38954),	-- Where's Lyndras?
-				q(41174),	-- Worth Its Weight 	--]]
+				q(41174),	-- Worth Its Weight
+				--]]
 			}),
 		}),
 	}),

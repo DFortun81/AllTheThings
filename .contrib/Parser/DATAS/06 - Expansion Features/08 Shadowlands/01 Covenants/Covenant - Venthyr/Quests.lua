@@ -760,12 +760,6 @@ _.ExpansionFeatures =
 						["isWeekly"] = true,
 						["coord"] = { 46.0, 28.1, 1699 },	-- Sinfall Reaches
 					}),
-
-					-- q(, {	--
-					-- 	["sourceQuests"] = {  },	--
-					-- 	["provider"] = { "n",  },	--
-					-- 	["coord"] = {  },	--
-					-- }),
 				})),
 			},
 		}),
@@ -784,7 +778,7 @@ _.HiddenQuestTriggers = {
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(60367),	-- Anima Crossing
-		q(59322),	-- Shared Souls		
+		q(59322),	-- Shared Souls
 		q(62917),	-- Shared Souls
 		q(59320),	-- Souls to Save
 		q(59604),	-- Takin' Down the Beast

@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(905, { 	-- Argus
+	m(905, {	-- Argus
 		m(830, {	-- Krokuun
 			n(VENDORS, {
 				n(125346, {	-- Alchemist Funen

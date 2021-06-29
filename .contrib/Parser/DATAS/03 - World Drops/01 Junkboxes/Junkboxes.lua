@@ -4,12 +4,12 @@
 
 _.WorldDrops =
 {
-	n(-165, { 	-- Junkboxes
+	n(-165, {	-- Junkboxes
 		["description"] = "These items have a small chance of dropping from junkboxes.",
 		["icon"] = "Interface\\Icons\\inv_box_01",
 		["g"] = {
 			i(169475),	-- Barnacled Lockbox
-			i(16882, { 	-- Battered Junkbox
+			i(16882, {	-- Battered Junkbox
 				i(11968),	-- Amber Hoop
 				i(4999),	-- Azora's Will
 				i(4446),	-- Blackvenom Blade
@@ -43,14 +43,14 @@ _.WorldDrops =
 				i(11967),	-- Zircon Band
 			}),
 			i(5760),	-- Eternium Lockbox
-			i(63349, { 	-- Flame-Scarred Junkbox
+			i(63349, {	-- Flame-Scarred Junkbox
 				i(68163),	-- The Twilight Blade
 				i(68161),	-- Krol Decapitator
 			}),
 			i(88567, {	-- Ghost Iron Lockbox
 				["timeline"] = { "added 5.0.1.15752" },
 			}),
-			i(16885, { 	-- Heavy Junkbox
+			i(16885, {	-- Heavy Junkbox
 				i(1728),	-- Teebu's Blazing Longsword [Discord Confirmation - Luce]
 				i(16215),	-- Formula: Enchant Boots Greater Stamina
 				i(16218),	-- Formula: Enchant Bracer Superior Versatility
@@ -114,7 +114,7 @@ _.WorldDrops =
 			i(5758),	-- Mithril Lockbox
 			i(179311),	-- Oxxein Lockbox
 			i(180522),	-- Phaedrum Lockbox
-			i(43575, { 	-- Reinforced Junkbox
+			i(43575, {	-- Reinforced Junkbox
 				i(43613),	-- The Dusk Blade
 				i(43611),	-- Krol Cleaver
 			}),
@@ -179,8 +179,8 @@ _.WorldDrops =
 				i(10606),	-- Schematic: Parachute Cloak
 				i(4414),	-- Schematic: Portable Bronze Mortar
 			}),
-			i(29569, { 	-- Strong Junkbox
-				i(4354), 	-- Pattern: Rich Purple Silk Shirt [Discord Confirmation - Luce]
+			i(29569, {	-- Strong Junkbox
+				i(4354),	-- Pattern: Rich Purple Silk Shirt [Discord Confirmation - Luce]
 				i(12002),	-- Formula: Enchant Bracer Superior Stamina
 				i(15746),	-- Plans: Radiant Leggings
 				i(2163),	-- The Night Blade
@@ -202,7 +202,7 @@ _.WorldDrops =
 				i(12695),	-- Swamp Pendant
 				i(12683),	-- Vermilion Necklace
 			}),
-			i(16884, { 	-- Sturdy Junkbox
+			i(16884, {	-- Sturdy Junkbox
 				i(11974),	-- Aquamarine Ring
 				i(12043),	-- Desert Choker
 				i(21947),	-- Design: Gem Studded Band
@@ -237,7 +237,7 @@ _.WorldDrops =
 				i(11975),	-- Topaz  Ring
 				i(12024),	-- Vanadium Talisman
 			}),
-			i(88165, { 	-- Vine-Cracked Junkbox
+			i(88165, {	-- Vine-Cracked Junkbox
 				i(88149),	-- The Gloaming Blade
 				i(88150),	-- Krol Scimitar
 			}),

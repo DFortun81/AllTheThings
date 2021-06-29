@@ -11,8 +11,8 @@ _.Zones =
 					["description"] = "This rare was only available during the Elemental Invasions.",
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(18671)), 	-- Baron Charr's Sceptre
-						un(REMOVED_FROM_GAME, i(18672)), 	-- Elemental Ember
+						un(REMOVED_FROM_GAME, i(18671)),	-- Baron Charr's Sceptre
+						un(REMOVED_FROM_GAME, i(18672)),	-- Elemental Ember
 					},
 				}),
 				n(6582,   {	-- Clutchmother Zavas
@@ -59,7 +59,7 @@ _.Zones =
 						{ 62.0, 73.6, UNGORO_CRATER },
 					},
 					["g"] = {
-						i(48122), 	-- Ravasaur Hatchling (PET!)
+						i(48122),	-- Ravasaur Hatchling (PET!)
 					},
 				}),
 				n(6585,   {	-- Uhk'loc

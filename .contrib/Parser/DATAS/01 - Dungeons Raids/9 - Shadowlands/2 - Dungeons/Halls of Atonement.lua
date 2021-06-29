@@ -65,8 +65,8 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(178826),	-- Sunblood Amethyst
 					},
 				}),
-				e(2413, {	-- 	Lord Chamberlain
-					["crs"] = { 164218 },	-- 	Lord Chamberlain
+				e(2413, {	--	Lord Chamberlain
+					["crs"] = { 164218 },	--	Lord Chamberlain
 					["g"] = {
 						ach(14370),	-- Halls of Atonement
 						i(182598),	-- Demon Muzzle
@@ -137,8 +137,8 @@ _.Instances = { tier(9, {	-- Shadowlands
 							i(178826),	-- Sunblood Amethyst
 						},
 					}),
-					e(2413, {	-- 	Lord Chamberlain
-						["crs"] = { 164218 },	-- 	Lord Chamberlain
+					e(2413, {	--	Lord Chamberlain
+						["crs"] = { 164218 },	--	Lord Chamberlain
 						["g"] = {
 							ach(14410),	-- Heroic: Halls of Atonement
 							i(182598),	-- Demon Muzzle
@@ -213,8 +213,8 @@ _.Instances = { tier(9, {	-- Shadowlands
 							i(178826),	-- Sunblood Amethyst
 						},
 					}),
-					e(2413, {	-- 	Lord Chamberlain
-						["crs"] = { 164218 },	-- 	Lord Chamberlain
+					e(2413, {	--	Lord Chamberlain
+						["crs"] = { 164218 },	--	Lord Chamberlain
 						["g"] = {
 							ach(14411),	-- Mythic: Halls of Atonement
 							ach(14352),	-- Nobody Puts Denathrius in a Corner

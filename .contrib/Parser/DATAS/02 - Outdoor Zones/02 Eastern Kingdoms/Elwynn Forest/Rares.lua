@@ -21,7 +21,7 @@ _.Zones =
 						i(5744),	-- Pale Skinner
 					},
 				}),
-				n(50926, { 	-- Grizzled Ben
+				n(50926, {	-- Grizzled Ben
 					["coord"] = { 27.2, 67.5, ELWYNN_FOREST },
 					["g"] = {
 						i(5571),	-- Small Black Pouch
@@ -34,10 +34,10 @@ _.Zones =
 				n(100, {	-- Gruff Swiftbite
 					["coord"] = { 25.9, 92.0, ELWYNN_FOREST },
 					["g"] = {
-						i(38513), 	-- Boarhide Leggings
+						i(38513),	-- Boarhide Leggings
 					},
 				}),
-				n(50916, { 	-- Lamepaw the Whimperer
+				n(50916, {	-- Lamepaw the Whimperer
 					["coord"] = { 51.3, 64.6, ELWYNN_FOREST },
 					["g"] = {
 						i(5571),	-- Small Black Pouch
@@ -50,7 +50,7 @@ _.Zones =
 				n(99,  {	-- Morgaine the Sly
 					["coord"] = { 30.8, 64.6, ELWYNN_FOREST },
 					["g"] = {
-						i(1917), 	-- Jeweled Dagger
+						i(1917),	-- Jeweled Dagger
 					},
 				}),
 				n(471, {	-- Mother Fang
@@ -65,7 +65,7 @@ _.Zones =
 				n(79,  {	-- Narg the Taskmaster
 					["coord"] = { 38.1, 83.3, ELWYNN_FOREST },
 				}),
-				n(50942, { 	-- Snoot the Rooter
+				n(50942, {	-- Snoot the Rooter
 					["coord"] = { 69.7, 80.0, ELWYNN_FOREST },
 					["g"] = {
 						i(5571),	-- Small Black Pouch
@@ -75,7 +75,7 @@ _.Zones =
 						i(5572),	-- Small Green Pouch
 					},
 				}),
-				n(50752, { 	-- Tarantis
+				n(50752, {	-- Tarantis
 					["coords"] = {
 						{ 65.8, 65.0, ELWYNN_FOREST },
 						{ 67.6, 63.2, ELWYNN_FOREST },
@@ -88,7 +88,7 @@ _.Zones =
 						i(5572),	-- Small Green Pouch
 					},
 				}),
-				n(51014, { 	-- Terrapis
+				n(51014, {	-- Terrapis
 					["coords"] = {
 						{ 73.5, 86.0, ELWYNN_FOREST },
 						{ 70.2, 85.4, ELWYNN_FOREST },

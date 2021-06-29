@@ -201,10 +201,6 @@ _.ExpansionFeatures =
 									ach(14723),		-- Be Our Guest
 									ach(14678, {	-- Court Favors
 									--	TODO: add remaining crit to the places From Whence They Come
-										crit(3, {	-- Bewitched Wardrobe
-										}),
-										crit(8, {	-- Dredger Party Supplies
-										}),
 										crit(11, {	-- Necrolord Arsenal
 										}),
 										crit(13, {	-- Kyrian Arsenal
@@ -416,12 +412,11 @@ _.ExpansionFeatures =
 											i(179533),	-- Grove Warden's Harvester
 											i(179605),	-- Elderwood Barrier
 											i(181620),	-- Hard Boiled Gorm Egg
-											i(179585),	-- Nightwillow Shortbow	
+											i(179585),	-- Nightwillow Shortbow
 											i(183861),	-- The Winter Cycle: A Collection of Ardenweald Etiquettes and Parables
 											i(179548),	-- Elderwood Gavel
 											i(183846),	-- Orders to Gormsmith Cavina
 											i(181619),	-- Poached Gorm Eggs
-											
 										},
 									}),
 									o(356733, {	-- Kleia and Pelagos' Extravagant Tribute
@@ -701,12 +696,19 @@ _.ExpansionFeatures =
 									},
 								}),
 								q(63694, {	-- Choofa's Best Friend
+									-- ["minReputation"] = { ,  }, -- TODO, Best Friend w/ Choofa?
 									["provider"] = { "n", 160814 },	-- Choofa
 									["coord"] = { 63.7, 36.6, ARDENWEALD },
 								}),
 								q(63685, {	-- Cryptkeeper Kassir's Best Friend
+									-- ["minReputation"] = { ,  }, -- TODO, Best Friend w/ Cryptkeeper Kassir?
 									["provider"] = { "n", 163073 },	-- Cryptkeeper Kassir
 									["coord"] = { 70.1, 56.1, REVENDRETH },
+								}),
+								q(63695, {	-- Droman Aliothe's Best Friend
+									-- ["minReputation"] = { ,  }, -- TODO, Best Friend w/ Droman Aliothe?
+									["provider"] = { "n", 160894 },	-- Droman Aliothe
+									["coord"] = { 60.0, 53.8, ARDENWEALD },
 								}),
 								q(61407, {	-- Ember Court: Atoning Rituals
 									["sourceQuests"] = {
@@ -951,6 +953,7 @@ _.ExpansionFeatures =
 									["coord"] = { 70.0, 56.2, REVENDRETH },
 								}),
 								q(63697, {	-- Kleia and Pelagos's Best Friend
+									-- ["minReputation"] = { 2457,  }, -- TODO, Best Friend w/ Kleia and Pelagos?
 									["provider"] = { "n", 174916 },	-- Kleia
 									["coord"] = { 55.8, 86.4, BASTION },
 								}),
@@ -967,6 +970,11 @@ _.ExpansionFeatures =
 										}),
 									},
 								}),
+								q(63698, {	-- Plague Deviser Marileth's Best Friend
+									-- ["minReputation"] = { ,  }, -- TODO, Best Friend w/ Plague Deviser Marileth?
+									["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
+									["coord"] = { 60.4, 71.6, MALDRAXXUS },
+								}),
 								q(62073, {	-- Restock: Band Shirts
 									["repeatable"] = true,
 									["altQuests"] = { 63765 },	-- Unseen Hero of the Party
@@ -975,7 +983,7 @@ _.ExpansionFeatures =
 									["cost"] = {
 										{ "i", 173202, 10 },	-- 10x Shrouded Cloth
 										{ "i", 172230, 5 },		-- 5x Soul Dust
-										{ "c", 1820, 20 }, 		-- 20x Infused Ruby
+										{ "c", 1820, 20 },		-- 20x Infused Ruby
 									},
 								}),
 								q(62064, {	-- Restock: Broken Mirrors
@@ -1016,7 +1024,7 @@ _.ExpansionFeatures =
 									["cost"] = {
 										{ "i", 173060, 20 },	-- 20x Aerated Water
 										{ "i", 171274, 1 },		-- 1x Potion of Spectral Stamina
-										{ "c", 1820, 20 }, 		-- 20x Infused Ruby
+										{ "c", 1820, 20 },		-- 20x Infused Ruby
 									},
 								}),
 								q(62078, {	-- Restock: Fashion Accessories
@@ -1026,7 +1034,7 @@ _.ExpansionFeatures =
 									["coord"] = { 30.7, 41.7, REVENDRETH },
 									["cost"] = {
 										{ "i", 173141, 1 },		-- 1x Masterful Laestrite Choker
-										{ "c", 1820, 20 }, 		-- 20x Infused Ruby
+										{ "c", 1820, 20 },		-- 20x Infused Ruby
 									},
 								}),
 								q(62084, {	-- Restock: Fine Cutlery
@@ -1046,7 +1054,7 @@ _.ExpansionFeatures =
 									["coord"] = { 29.8, 45.4, REVENDRETH },
 									["cost"] = {
 										{ "i", 173202, 10 },	-- 20x Shrouded Cloth
-										{ "c", 1820, 20 }, 		-- 20x Infused Ruby
+										{ "c", 1820, 20 },		-- 20x Infused Ruby
 									},
 								}),
 								q(62070, {	-- Restock: Fragrant Flowers
@@ -1056,7 +1064,7 @@ _.ExpansionFeatures =
 									["coord"] = { 30.7, 41.7, REVENDRETH },
 									["cost"] = {
 										{ "i", 170554, 1 },		-- 1x Vigil's Torch
-										{ "c", 1820, 20 }, 		-- 20x Infused Ruby
+										{ "c", 1820, 20 },		-- 20x Infused Ruby
 									},
 								}),
 								q(62076, {	-- Restock: Free Press
@@ -1067,7 +1075,7 @@ _.ExpansionFeatures =
 									["cost"] = {
 										{ "i", 173059, 1 },		-- 1x Luminous Ink
 										{ "i", 175886, 10 },	-- 10x Dark Parchment
-										{ "c", 1820, 20 }, 		-- 20x Infused Ruby
+										{ "c", 1820, 20 },		-- 20x Infused Ruby
 									},
 								}),
 								q(62080, {	-- Restock: Herbal Tea
@@ -1102,7 +1110,7 @@ _.ExpansionFeatures =
 									["cost"] = {
 										{ "i", 173192, 10 },	-- 10x Shrouded Cloth Bandage
 										{ "i", 171267, 1 },		-- 1x Spiritual Healing Potion
-										{ "c", 1820, 20 }, 		-- 20x Infused Ruby
+										{ "c", 1820, 20 },		-- 20x Infused Ruby
 									},
 								}),
 								q(62083, {	-- Restock: Medical Supplies
@@ -1135,7 +1143,7 @@ _.ExpansionFeatures =
 										{ "i", 172069, 1 },		-- 1x Banana Beef Pudding
 										{ "i", 172068, 1 },		-- 1x Pickled Meat Smoothie
 										{ "i", 172051, 1 },		-- 1x Steak a la Mode
-										{ "c", 1820, 20 }, 		-- 20x Infused Ruby
+										{ "c", 1820, 20 },		-- 20x Infused Ruby
 									},
 								}),
 								q(62069, {	-- Restock: Sinstones
@@ -1157,7 +1165,7 @@ _.ExpansionFeatures =
 									["cost"] = {
 										{ "i", 172089, 20 },	-- 20x Desolate Leather
 										{ "i", 171832, 1 },		-- 1x Sinvyr Ore
-										{ "c", 1820, 20 }, 		-- 20x Infused Ruby
+										{ "c", 1820, 20 },		-- 20x Infused Ruby
 									},
 								}),
 								q(62067, {	-- Restock: Statues
@@ -1188,7 +1196,7 @@ _.ExpansionFeatures =
 									["coord"] = { 32.1, 41.6, REVENDRETH },
 									["cost"] = {
 										{ "i", 171841, 10 },	-- 10x Shaded Stone
-										{ "c", 1820, 20 }, 		-- 20x Infused Ruby
+										{ "c", 1820, 20 },		-- 20x Infused Ruby
 									},
 								}),
 								q(62108, {	-- Restock: Strategic Codices
@@ -1198,7 +1206,7 @@ _.ExpansionFeatures =
 									["coord"] = { 32.1, 41.6, REVENDRETH },
 									["cost"] = {
 										{ "i", 184090, 1 },		-- 1x Potion of the Psychopomp's Speed
-										{ "c", 1820, 20 }, 		-- 20x Infused Ruby
+										{ "c", 1820, 20 },		-- 20x Infused Ruby
 									},
 								}),
 								q(62109, {	-- Restock: Surveillance Equipment
@@ -1209,7 +1217,7 @@ _.ExpansionFeatures =
 									["cost"] = {
 										{ "i", 171266, 5 },		-- 5x Potion of the Hidden Spirit
 										{ "i", 171264, 5 },		-- 5x Potion of Shaded Sight
-										{ "c", 1820, 20 }, 		-- 20x Infused Ruby
+										{ "c", 1820, 20 },		-- 20x Infused Ruby
 									},
 								}),
 								q(62105, {	-- Restock: Unconventional Weapons
@@ -1220,7 +1228,7 @@ _.ExpansionFeatures =
 									["cost"] = {
 										{ "i", 172903, 1 },		-- 1x Nutcracker Grenade
 										{ "i", 172904, 1 },		-- 1x Shadow Land Mine
-										{ "c", 1820, 20 }, 		-- 20x Infused Ruby
+										{ "c", 1820, 20 },		-- 20x Infused Ruby
 									},
 								}),
 								q(60236, {	-- RSVP: Cryptkeeper Kassir
@@ -1311,6 +1319,7 @@ _.ExpansionFeatures =
 									["coord"] = { 55.5, 27.0, 1699 },	-- Sinfall Reaches
 								}),
 								q(63699, {	-- Sika's Best Friend
+									-- ["minReputation"] = { ,  }, -- TODO, Best Friend w/ Sika?
 									["provider"] = { "n", 166577 },	-- Sika
 									["coord"] = { 52.6, 82.5, BASTION },
 								}),
@@ -1325,6 +1334,11 @@ _.ExpansionFeatures =
 											}),
 										}),
 									},
+								}),
+								q(63700, {	-- Stonehead's Best Friend
+									-- ["minReputation"] = { ,  }, -- TODO, Best Friend w/ Stonehead?
+									["provider"] = { "n", 157199 },	-- Stonehead
+									["coord"] = { 39.0, 66.0, REVENDRETH },
 								}),
 								q(61616, {	-- The Ember Court (Week 1)
 								--	got this as my Week 1 quest.  after the weekly rollover, IsQuestFlaggedCompleted is still returning 'true' for this, so possible it changes every week?
@@ -1599,6 +1613,7 @@ _.ExpansionFeatures =
 							}),
 							n(-963, {	-- Tier 3: Court Influencer
 								q(63690, {	-- Alexandros Mograine's Best Friend
+									-- ["minReputation"] = { ,  }, -- TODO, Best Friend w/ Alexandros Mograine?
 									["provider"] = { "n", 171933 },	-- Alexandros Mograine
 									["coord"] = { 50.4, 67.4, MALDRAXXUS },
 								}),
@@ -1622,6 +1637,21 @@ _.ExpansionFeatures =
 								}),
 								q(62601, {	-- Forgy
 									["provider"] = { "i", 183848 },	-- Hastily Scrawled Note to Forgy
+								}),
+								q(63691, {	-- Hunt-Captain Korayn's Best Friend
+									-- ["minReputation"] = { ,  }, -- TODO, Best Friend w/ Hunt-Captain Korayn?
+									["provider"] = { "n", 171319 },	-- Hunt-Captain Korayn
+									["coord"] = { 50.8, 70.4, ARDENWEALD },
+								}),
+								q(63692, {	-- Polemarch Adrestes's Best Friend
+									-- ["minReputation"] = { ,  }, -- TODO, Best Friend w/ Polemarch Adrestes?
+									["provider"] = { "n", 171385 },	-- Polemarch Adrestes
+									["coord"] = { 51.8, 47.6, BASTION },
+								}),
+								q(63693, {	-- Rendle and Cudgelface's Best Friend
+									-- ["minReputation"] = { ,  }, -- TODO, Best Friend w/ Rendle and Cudgelface?
+									["provider"] = { "n", 171190 },	-- Alexandros Mograine
+									["coord"] = { 31, 40, REVENDRETH },
 								}),
 								q(61255, {	-- RSVP: Alexandros Mograine
 									["sourceQuests"] = { 61943 },	-- Court Influencer
@@ -1726,6 +1756,11 @@ _.ExpansionFeatures =
 								}),
 							}),
 							n(-964, {	-- Tier 4: Discerning Taste
+								q(63686, {	-- Baroness Vashj's Best Friend
+									-- ["minReputation"] = { ,  }, -- TODO, Best Friend w/ Baroness Vashj?
+									["provider"] = { "n", 162487 },	-- Baroness Vashj
+									["coord"] = { 67.6, 45.9, MALDRAXXUS },
+								}),
 								q(61944, {	-- Discerning Taste
 									["sourceQuests"] = { 61943 },	-- Court Influencer (not confirmed, but very likely)
 									["provider"] = { "n", 165399 },	-- Lord Garridan
@@ -1737,6 +1772,16 @@ _.ExpansionFeatures =
 											}),
 										}),
 									},
+								}),
+								q(63687, {	-- Lady Moonberry's Best Friend
+									-- ["minReputation"] = { ,  }, -- TODO, Best Friend w/ Lady Moonberry?
+									["provider"] = { "n", 172098 },	-- Lady Moonberry
+									["coord"] = { 48.9, 51.0, ARDENWEALD },
+								}),
+								q(63688, {	-- Mikanikos's Best Friend
+									-- ["minReputation"] = { ,  }, -- TODO, Best Friend w/ Mikanikos?
+									["provider"] = { "n", 171647 },	-- Mikanikos
+									["coord"] = { 50.1, 21.0, BASTION },
 								}),
 								q(61174, {	-- RSVP: Baroness Vashj
 									-- ["sourceQuests"] = {  },	-- Tier 4 Unlock from Fourth Guest List Page...
@@ -1770,6 +1815,11 @@ _.ExpansionFeatures =
 									["g"] = {
 										i(176114),	-- RSVP: The Countess
 									},
+								}),
+								q(63689, {	-- The Countess's Best Friend
+									-- ["minReputation"] = { ,  }, -- TODO, Best Friend w/ The Countess?
+									["provider"] = { "n", 171106 },	-- The Countess
+									["coord"] = { 58.0, 27.4, REVENDRETH },
 								}),
 							}),
 							n(-965, {	-- Tier 5: The Professionals
@@ -2530,6 +2580,8 @@ _.HiddenQuestTriggers = {
 			-- q(61494),	-- using Building: Guardhouse
 			q(59436),	-- using Staff: Stage Crew
 			q(59433),	-- using Staff: Waiters
+			q(61452),	-- using 'Vanity Mirror' (181436)
+			q(61454),	-- using 'The Wild Drum' (181438)
 			q(61457),	-- using Altar of Accomplishment
 			q(59515),	-- using Contract: Stoneborn Reserves
 			q(59516),	-- using Contract: Stoneborn Reserves

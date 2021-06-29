@@ -7,16 +7,16 @@ _.Zones =
 	m(EASTERN_KINGDOMS, {
 		m(49, {	-- Redridge Mountains
 			n(RARES, {
-				n(14273, { 	-- Boulderheart
+				n(14273, {	-- Boulderheart
 					["coord"] = { 56.6, 51.6, 49 },
 				}),
-				n(616, { 	-- Chatter
+				n(616, {	-- Chatter
 					["coord"] = { 38.2, 35.8, 49 },
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(3229)), 	-- Tarantula Silk Sash
+						un(REMOVED_FROM_GAME, i(3229)),	-- Tarantula Silk Sash
 					},
 				}),
-				n(52146, { 	-- Chitter
+				n(52146, {	-- Chitter
 					["coord"] = { 63.8, 65.2, 49 },
 				}),
 				n(147222, {	-- Gnollfeaster
@@ -27,14 +27,14 @@ _.Zones =
 						i(165722),	-- Redridge Tarantula Egg (PET!)
 					},
 				}),
-				n(584, { 	-- Kazon
+				n(584, {	-- Kazon
 					["coord"] = { 34.8, 12.2, 49 },
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(3231)),		-- Cutthroat Pauldrons
 						un(REMOVED_FROM_GAME, i(2058)),		-- Kazon's Maul
 					},
 				}),
-				n(14271, { 	-- Ribchaser
+				n(14271, {	-- Ribchaser
 					["coords"] = {
 						{ 30.0, 57.6, 49 },
 						{ 30.0, 60.2, 49 },
@@ -56,7 +56,7 @@ _.Zones =
 				n(14270, {	-- Squiddic
 					["coord"] = { 37.4, 42.6, 49 },
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(1469)), 	-- Scimitar of Atun
+						un(REMOVED_FROM_GAME, i(1469)),	-- Scimitar of Atun
 					},
 				}),
 			}),

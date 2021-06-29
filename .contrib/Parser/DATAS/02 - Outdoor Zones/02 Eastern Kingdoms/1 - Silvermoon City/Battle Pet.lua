@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 		m(SILVERMOON_CITY, {
-			filter(101, { 	-- Pet Battle
+			filter(101, {	-- Pet Battle
 				p(459, {	-- Cat
 					["crs"] = { 62019 },	-- Cat
 				}),

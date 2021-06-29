@@ -99,7 +99,7 @@ _.ExpansionFeatures =
 										},
 									}),
 									i(118668),	-- Laughing Skull Elixir
-									i(119138), 	-- Laughing Skull Orc Tabard
+									i(119138),	-- Laughing Skull Orc Tabard
 									i(118684, {	-- Maniacal Grimace
 										["cost"] = 5000000,		-- 500g
 									}),

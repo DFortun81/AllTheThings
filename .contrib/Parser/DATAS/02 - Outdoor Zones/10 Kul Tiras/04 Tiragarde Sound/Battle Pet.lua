@@ -4,9 +4,9 @@
 
 _.Zones =
 {
-	m(876, { 	-- Kul'Tiras
+	m(876, {	-- Kul'Tiras
 		m(895, {	-- Tiragarde Sound
-			filter(101, { 	-- Pet Battle
+			filter(101, {	-- Pet Battle
 				p(487, {	-- Alpine Chipmunk
 					["crs"] = { 62189 },	-- Alpine Chipmunk
 				}),

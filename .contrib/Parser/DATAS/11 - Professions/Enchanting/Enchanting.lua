@@ -41,7 +41,7 @@ profession(ENCHANTING, {
 	gb(126, {	-- Enchanter's Study (Level 3)  --- Leaving here for now, but should really be moved to the garrison vendor files
 		["maps"] = {582, 590},	-- Both Garrisons
 		["g"] = {
-			n(77354, { 	-- Ayada the White [Alliance]
+			n(77354, {	-- Ayada the White [Alliance]
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
 					i(111922, {		-- Draenor Enchanting
@@ -128,7 +128,7 @@ profession(ENCHANTING, {
 					spell(175074),	-- Illusion: Windfury
 				},
 			}),
-			n(79821, { 	-- Yukla Greenshadow [Horde]
+			n(79821, {	-- Yukla Greenshadow [Horde]
 				["races"] = HORDE_ONLY,
 				["g"] = {
 					i(111922, {		-- Draenor Enchanting

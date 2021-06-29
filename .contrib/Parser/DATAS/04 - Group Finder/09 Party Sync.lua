@@ -99,7 +99,7 @@ _.GroupFinder =
 						i(173612),	-- Mistdancer Handguards
 						i(173613),	-- Mistdancer Helm
 						i(173614),	-- Mistdancer Legguards
-						i(173615), 	-- Mistdancer Pauldrons
+						i(173615),	-- Mistdancer Pauldrons
 						i(173610),	-- Mistdancer Vest
 						i(173547),	-- Staff of the Jade Mist
 						i(173548),	-- Sword of Singing Wind

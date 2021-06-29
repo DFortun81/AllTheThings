@@ -35,7 +35,7 @@ _.Achievements =
 			ach(13056, {	-- Giving a Scrap (H)
 				["races"] = HORDE_ONLY,
 			}),
-			ach(10587), 	-- Hot Swapper
+			ach(10587),	-- Hot Swapper
 			ach(9071, {		-- Inspector Gagetzan
 				i(114002, {	-- Encoded Message
 					crit(1),	-- Decoded Message 001-003
@@ -73,7 +73,7 @@ _.Achievements =
 				crit(5),		-- Inscription: Sanguine Feather Quill of Lana'thel
 				crit(6),		-- Jewelcrafting: Jewelhammer's Focus
 				crit(7),		-- Leatherworking: Mallet of Thunderous Skins
-				crit(8),		-- Tailoring: Synchronous Thread]]--  				--Only need one for achiev.
+				crit(8),		-- Tailoring: Synchronous Thread]]--	-- Only need one for achiev.
 			}),
 			ach(10586),		-- Mass Obliteration
 			ach(7379, {		-- Pandaren Master of All
@@ -112,7 +112,7 @@ _.Achievements =
 				crit(10),		-- Shadowlands Skinning
 				crit(11),		-- Shadowlands Tailoring
 			}),
-			ach(10588), 	-- The Shortest Distance
+			ach(10588),	-- The Shortest Distance
 			ach(6835),		-- Working For a Living
 			ach(9507),		-- Working in Draenor
 			ach(12734, {	-- Working in Kul Tiras (A)

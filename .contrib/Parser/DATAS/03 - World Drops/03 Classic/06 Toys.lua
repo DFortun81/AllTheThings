@@ -5,7 +5,7 @@
 _.WorldDrops =
 {
 	tier(1, {	-- Classic
-		n(-161, { 	-- Toys
+		n(-161, {	-- Toys
 			i(1973),	-- Orb of Deception
 		}),
 	}),

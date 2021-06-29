@@ -142,7 +142,7 @@ _.Zones =
 					["description"] = "You need to be on the quest above or have completed it to loot this item.",
 					["g"] = {
 						q(38560,{	-- Garrison Campaign: The Bane of the Bleeding Hollow
-							i(127709), 	-- Throbbing Blood Orb
+							i(127709),	-- Throbbing Blood Orb
 						}),
 					},
 				}),
@@ -210,7 +210,7 @@ _.Zones =
 					["description"] = "Click on Loose Soil and throw it into the tree to grab the strange fruit.",
 					["coord"] = { 64.7, 42.8, 534 },
 					["g"] = {
-						i(127396,{ 		-- Strange Green Fruit
+						i(127396,{	-- Strange Green Fruit
 							["description"] = "After 14 days, the fruit will ripen into the toy.",
 							["g"] = {
 								i(127395, {	-- Ripened Strange Fruit

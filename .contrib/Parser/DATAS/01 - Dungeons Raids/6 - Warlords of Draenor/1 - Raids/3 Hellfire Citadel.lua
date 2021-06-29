@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(6, {	-- Warlords of Draenor
-	inst(669, { 	-- Hellfire Citadel
+	inst(669, {	-- Hellfire Citadel
 		["isRaid"] = true,
 		["lvl"] = 100,
 		["mapID"] = 661,
@@ -87,7 +87,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						},
 					})),
 				}),
-				ach(10023, { 	-- Hellbreach
+				ach(10023, {	-- Hellbreach
 					["crs"] = {
 						94870,	-- Seer Kazal <Shadowmoon Exile>
 					},
@@ -113,7 +113,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 							}),
 							i(128094),	-- Spiked Torque Wrench
 							i(128118),	-- Demonhorn Buckler
-							i(128053), 	-- Liquid-Cooled Mantle
+							i(128053),	-- Liquid-Cooled Mantle
 							i(128060),	-- Double-Polished Chain Pauldrons
 							i(128102),	-- Unfired Ejection Parachute
 							i(128105),	-- Commander's Seat Cushion Cover
@@ -142,7 +142,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						})),
 					},
 				}),
-				ach(10024, { 	-- Halls of Blood
+				ach(10024, {	-- Halls of Blood
 					["crs"] = {
 						94870,	-- Seer Kazal <Shadowmoon Exile>
 					},
@@ -205,7 +205,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						})),
 					},
 				}),
-				ach(10025, { 	-- Bastion of Shadows
+				ach(10025, {	-- Bastion of Shadows
 					["crs"] = {
 						94870,	-- Seer Kazal <Shadowmoon Exile>
 					},
@@ -261,7 +261,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						})),
 					},
 				}),
-				ach(10020, { 	-- Destructor's Rise
+				ach(10020, {	-- Destructor's Rise
 					["crs"] = {
 						94870,	-- Seer Kazal <Shadowmoon Exile>
 					},
@@ -308,7 +308,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 						})),
 					},
 				}),
-				ach(10019, { 	-- The Black Gate
+				ach(10019, {	-- The Black Gate
 					["crs"] = {
 						94870,	-- Seer Kazal <Shadowmoon Exile>
 					},

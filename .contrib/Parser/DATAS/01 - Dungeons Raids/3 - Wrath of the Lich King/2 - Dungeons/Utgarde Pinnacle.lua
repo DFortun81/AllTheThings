@@ -3,23 +3,23 @@
 -----------------------------------------------------
 
 _.Instances = { tier(3, {	-- Wrath of the Lich King
-	inst(286, { 	-- Utgarde Pinnacle
+	inst(286, {	-- Utgarde Pinnacle
 		["lvl"] = 65,
 		["maps"] = { 136, 137 },
 		["groups"] = {
 			n(QUESTS, {
-				q(13131,{ 	-- Junk in My Trunk
-					i(44404), 	-- Bauble-Woven Gown
+				q(13131,{	-- Junk in My Trunk
+					i(44404),	-- Bauble-Woven Gown
 					i(44405),	-- Exotic Leather Tunic
-					i(44406), 	-- Gilded Ringmail Hauberk
-					i(44407), 	-- Silver-Plated Battlechest
+					i(44406),	-- Gilded Ringmail Hauberk
+					i(44407),	-- Silver-Plated Battlechest
 				}),
-				q(13132,{ 	-- Vengeance Be Mine!
-					i(44408), 	-- Cowl of the Vindictive Captain
+				q(13132,{	-- Vengeance Be Mine!
+					i(44408),	-- Cowl of the Vindictive Captain
 					i(44412),	-- Faceguard of Punishment
-					i(44409), 	-- Headguard of Retaliation
-					i(44410), 	-- Helmet of Just Retribution
-					i(44411), 	-- Platehelm of Irate Revenge
+					i(44409),	-- Headguard of Retaliation
+					i(44410),	-- Helmet of Just Retribution
+					i(44411),	-- Platehelm of Irate Revenge
 				}),
 				q(29864),	-- Working at the Source, No actual awards.
 			}),
@@ -131,7 +131,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(37374),	-- Ravenous Leggings of the Furbolg
 					i(37371),	-- Ring of the Frenzied Wolvar
 				})),
-				cr(26693, e(643, { 	-- Skadi the Ruthless
+				cr(26693, e(643, {	-- Skadi the Ruthless
 					{	-- Utgarde Pinnacle: Skadi the Ruthless
 						["achievementID"] = 488,	-- Utgarde Pinnacle
 						["criteriaID"] = 1,	-- Skadi the Ruthless
@@ -143,7 +143,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(37377),	-- Netherbreath Spellblade
 					i(37055),	-- Silken Amice of the Ymijar
 					i(37379),	-- Skadi's Iron Belt
-					i(157560), 	-- Skadi's Scaled Boots
+					i(157560),	-- Skadi's Scaled Boots
 					i(37384),	-- Staff of Wayward Principles
 				})),
 				cr(26861, e(644, {	-- King Ymiron
@@ -204,7 +204,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(37374),	-- Ravenous Leggings of the Furbolg
 						i(37371),	-- Ring of the Frenzied Wolvar
 					})),
-					cr(26693, e(643, { 	-- Skadi the Ruthless
+					cr(26693, e(643, {	-- Skadi the Ruthless
 						{	-- Lodi Dodi We Loves the Skadi
 							["achievementID"] = 1873,	-- Lodi Dodi We Loves the Skadi
 						},
@@ -224,7 +224,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(37379),	-- Skadi's Iron Belt
 						i(37389),	-- Crenelation Leggings
 						i(37056),	-- Harpooner's Striders
-						i(157560), 	-- Skadi's Scaled Boots
+						i(157560),	-- Skadi's Scaled Boots
 					})),
 					cr(26861, e(644, {	-- King Ymiron
 						{	-- King's Bane

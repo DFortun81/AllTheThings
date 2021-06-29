@@ -16,29 +16,29 @@ _.Zones =
 				n(619,  {	-- Defias Conjurer
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(1933)), 	-- Staff of Conjuring
+						un(REMOVED_FROM_GAME, i(1933)),	-- Staff of Conjuring
 					},
 				}),
-				n(1726, { 	-- Defias Magician
+				n(1726, {	-- Defias Magician
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(1928)), 	-- Defias Mage Staff
+						un(REMOVED_FROM_GAME, i(1928)),	-- Defias Mage Staff
 					},
 				}),
-				n(121,  { 	-- Defias Pathstalker
+				n(121,  {	-- Defias Pathstalker
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(832)),		-- Silver Defias Belt
 					},
 				}),
-				n(1725, { 	-- Defias Watchman
+				n(1725, {	-- Defias Watchman
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(1925)), 	-- Defias Rapier
+						un(REMOVED_FROM_GAME, i(1925)),	-- Defias Rapier
 					},
 				}),
-				n(832,  { 	-- Dust Devil (Reused ID is now Unbound Cyclone which is not attackable)
-					un(REMOVED_FROM_GAME, i(4290)), 	-- Dust Bowl
+				n(832,  {	-- Dust Devil (Reused ID is now Unbound Cyclone which is not attackable)
+					un(REMOVED_FROM_GAME, i(4290)),	-- Dust Bowl
 				}),
 				i(1405, {	-- Foamspittle Staff
 					["crs"] = { 517 },	-- Murloc Oracle
@@ -58,7 +58,7 @@ _.Zones =
 				i(2088, {	-- Long Crawler Limb
 					["crs"] = { 831 },	-- Sea Crawler
 				}),
-				n(171,  { 	-- Murloc Warrior
+				n(171,  {	-- Murloc Warrior
 					un(REMOVED_FROM_GAME, i(1394)),		-- Driftwood Club
 				}),
 				i(1958, {	-- Petrified Shinbone
@@ -80,7 +80,7 @@ _.Zones =
 				i(1391, {	-- Riverpaw Mystic Staff
 					["crs"] = { 453 },	-- Riverpaw Mystic
 				}),
-				n(125,  { 	-- Riverpaw Overseer
+				n(125,  {	-- Riverpaw Overseer
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(1190)),	-- Overseer's Cloak

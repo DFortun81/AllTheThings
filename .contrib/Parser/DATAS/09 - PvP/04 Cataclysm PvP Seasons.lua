@@ -1603,10 +1603,10 @@ _.PVP =
 				n(-331, {	-- Held In Offhand
 					un(REMOVED_FROM_GAME, i(61348)),	-- Vicious Gladiator's Hatchet (Throw wep)
 					un(REMOVED_FROM_GAME, i(61391)),	-- Vicious Gladiator's Relic of Conquest
-					un(REMOVED_FROM_GAME, i(61388)), 	-- Vicious Gladiator's Relic of Dominance
-					un(REMOVED_FROM_GAME, i(61389)), 	-- Vicious Gladiator's Relic of Salvation
-					un(REMOVED_FROM_GAME, i(61390)), 	-- Vicious Gladiator's Relic of Triumph
-					un(REMOVED_FROM_GAME, i(61347)), 	-- Vicious Gladiator's War Edge (Throw wep)
+					un(REMOVED_FROM_GAME, i(61388)),	-- Vicious Gladiator's Relic of Dominance
+					un(REMOVED_FROM_GAME, i(61389)),	-- Vicious Gladiator's Relic of Salvation
+					un(REMOVED_FROM_GAME, i(61390)),	-- Vicious Gladiator's Relic of Triumph
+					un(REMOVED_FROM_GAME, i(61347)),	-- Vicious Gladiator's War Edge (Throw wep)
 				}),
 				f(53,	{	-- Trinket
 					i(61033),	-- Vicious Gladiator's Badge of Conquest
@@ -1974,10 +1974,10 @@ _.PVP =
 					un(REMOVED_FROM_GAME, i(70637)),	-- Vicious Gladiator's Ring of Accuracy
 					un(REMOVED_FROM_GAME, i(70638)),	-- Vicious Gladiator's Ring of Cruelty
 					un(REMOVED_FROM_GAME, i(70653)),	-- Vicious Gladiator's Signet of Accuracy
-					un(REMOVED_FROM_GAME, i(70654)), 	-- Vicious Gladiator's Signet of Cruelty
+					un(REMOVED_FROM_GAME, i(70654)),	-- Vicious Gladiator's Signet of Cruelty
 				}),
 				n(-331, {	-- Held In Offhand
-					un(REMOVED_FROM_GAME, i(70628)), 	-- Vicious Gladiator's Relic of Conquest
+					un(REMOVED_FROM_GAME, i(70628)),	-- Vicious Gladiator's Relic of Conquest
 					un(REMOVED_FROM_GAME, i(70629)),	-- Vicious Gladiator's Relic of Dominance
 					un(REMOVED_FROM_GAME, i(70630)),	-- Vicious Gladiator's Relic of Salvation
 					un(REMOVED_FROM_GAME, i(70631)),	-- Vicious Gladiator's Relic of Triumph
@@ -4385,7 +4385,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(60610),	-- Vicious Gladiator's Boots of Dominance
 			}),
 			f(51, {	-- Neck
-				i(60666), 	-- Vicious Gladiator's Pendant of Conquest
+				i(60666),	-- Vicious Gladiator's Pendant of Conquest
 			}),
 		}),
 		n(-673, {	-- Ruthless Gladiator: Season 10

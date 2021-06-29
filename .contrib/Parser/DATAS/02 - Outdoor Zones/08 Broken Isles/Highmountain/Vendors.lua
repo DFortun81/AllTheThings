@@ -78,11 +78,11 @@ _.Zones =
 						i(136697, {	-- Recipe: Gleaming Iron Spike
 							["cost"] = 5500000,		-- 550g
 						}),
-						i(140576), 	-- Tabard of the Hightmountain Tribe
+						i(140576),	-- Tabard of the Hightmountain Tribe
 						i(140731, {	-- Treasure Map: Highmountain
 							["f"] = 55,	-- Consumable
 						}),
-						i(131814), 	-- Whitewater Carp (TOY!)
+						i(131814),	-- Whitewater Carp (TOY!)
 					},
 				}),
 				n(99574,  {	-- Slyhoof the Shameless Shaman <Used Totem Vendor>
@@ -99,11 +99,11 @@ _.Zones =
 				n(115887, {	-- Trinket
 					["coord"] = { 32.4, 66.8, 650 },
 					["g"] = pvp({
-						i(142364), 	-- Bag of Twigs
+						i(142364),	-- Bag of Twigs
 						i(142368, {	-- Cracked Falcosaur Beak
 							["cost"] = 10000000,	-- 1,000g
 						}),
-						i(142367, { 	-- Ivory Feather
+						i(142367, {	-- Ivory Feather
 							i(142363),	-- Mark of Prey
 						}),
 						i(142369, {	-- Ivory Hawkstrider (MOUNT!)
@@ -112,7 +112,7 @@ _.Zones =
 						i(142361, {	-- Ivory Talon
 							i(142363),	-- Mark of Prey
 						}),
-						i(142366), 	-- Regurgitated Leaf
+						i(142366),	-- Regurgitated Leaf
 					}),
 				}),
 			}),

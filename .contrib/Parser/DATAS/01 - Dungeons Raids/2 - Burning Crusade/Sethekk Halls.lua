@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
-	inst(252, { 	-- Sethekk Halls
+	inst(252, {	-- Sethekk Halls
 		["coord"] = { 44.93, 65.61, TEROKKAR_FOREST },	-- Sethekk Halls, Terokkar Forest
 		["maps"] = {
 			AUCHINDOUN_SETHEKK_HALLS,	-- Veil Sethekk

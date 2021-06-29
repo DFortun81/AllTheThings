@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(619, { 	-- The Broken Isles
+	m(619, {	-- The Broken Isles
 		m(897, {	-- Death's of Chromie Scenario
 			["lvl"] = 110,
 			["achievementID"] = 11941,
@@ -305,7 +305,7 @@ _.Zones =
 					ach(11941, {	-- Chromie Homie
 						title(361),		-- Title: Timelord
 					}),
-					q(47906, { 		-- The Deaths of Chromie
+					q(47906, {	-- The Deaths of Chromie
 						["coord"] = { 60.0, 54.5, 115 },
 						["provider"] = { "n", 27856 },	-- Chromie
 						["g"] = {
@@ -367,11 +367,11 @@ _.Zones =
 				n(ZONEDROPS, {	--
 					["g"] = {
 						i(151493, {	-- Sands of Time
-							i(151482, { 	-- Time-Lost Wallet
-								i(151829), 		-- Bronze Proto-Whelp (PET!)
-								i(151828), 		-- Ageless Bronze Drake (PET!)
+							i(151482, {	-- Time-Lost Wallet
+								i(151829),		-- Bronze Proto-Whelp (PET!)
+								i(151828),		-- Ageless Bronze Drake (PET!)
 							}),
-							i(151554, { 	-- Time-Lost Keepsake Box
+							i(151554, {	-- Time-Lost Keepsake Box
 								i(151547),		--	Brimstone Beacon - When you use this, last rare will instantly spawn
 								i(151549),		--	Cenarion Circle Documents - Speaking with Adrine Towhide will instantly finish that one.
 								i(151546),		--	Stratholme Gate Key

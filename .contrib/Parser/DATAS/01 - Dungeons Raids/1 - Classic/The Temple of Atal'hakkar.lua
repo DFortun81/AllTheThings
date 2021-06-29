@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(1, {	-- Classic
-	inst(237, { 	-- The Temple of Atal'hakkar
+	inst(237, {	-- The Temple of Atal'hakkar
 		["lvl"] = 45,
 		["mapID"] = 220,
 		["coord"] = { 76.04, 45.21, 51 },	-- The Temple of Atal'hakkar, Swamp of Sorrows
@@ -101,7 +101,7 @@ _.Instances = { tier(1, {	-- Classic
 				q(3447, {	-- Secret of the Circle
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(10773, { 		-- Hakkari Urn
+						un(REMOVED_FROM_GAME, i(10773, {		-- Hakkari Urn
 							un(REMOVED_FROM_GAME, i(10781)),	-- Hakkari Breastplate
 							un(REMOVED_FROM_GAME, i(10782)),	-- Hakkari Shroud
 							un(REMOVED_FROM_GAME, i(10780)),	-- Mark of Hakkar
@@ -328,7 +328,7 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 			}),
-			cr(8440, e(457, { 	-- Avatar of Hakkar
+			cr(8440, e(457, {	-- Avatar of Hakkar
 				i(10844),	-- Spire of Hakkar
 				i(10838),	-- Might of Hakkar
 				i(10843),	-- Featherskin Cape
@@ -337,7 +337,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(10842),	-- Windscale Sarong
 				i(10846),	-- Bloodshot Greaves
 			})),
-			cr(5710, e(458, { 	-- Jammal'an the Prophet
+			cr(5710, e(458, {	-- Jammal'an the Prophet
 				i(10803),	-- Blade of the Wretched
 				i(10805),	-- Eater of the Dead
 				i(10804),	-- Fist of the Damned
@@ -346,7 +346,7 @@ _.Instances = { tier(1, {	-- Classic
 				i(10808),	-- Gloves of the Atal'ai Prophet
 				i(10807),	-- Kilt of the Atal'ai Prophet
 			})),
-			e(459, { 			-- Wardens of the Dream
+			e(459, {			-- Wardens of the Dream
 				["crs"] = {
 					5721,	-- Dreamscythe
 					5722,	-- Hazzas
@@ -354,16 +354,16 @@ _.Instances = { tier(1, {	-- Classic
 					5720,	-- Weaver
 				},
 				["g"] = {
-					i(12463), 	-- Drakefang Butcher
-					i(12243), 	-- Smoldering Claw
-					i(10797), 	-- Firebreather
+					i(12463),	-- Drakefang Butcher
+					i(12243),	-- Smoldering Claw
+					i(10797),	-- Firebreather
 					i(10796),	-- Drakestone
 					i(12464),	-- Bloodfire Talons
 					i(12466),	-- Dawnspire Cord
 					i(10795),	-- Drakeclaw Band
 				},
 			}),
-			cr(5709, e(463, { 	-- Shade of Erankikus
+			cr(5709, e(463, {	-- Shade of Erankikus
 				ach(641),	-- Sunken Temple
 				i(10454, {	-- Essence of Eranikus
 					["questID"] = 3373,	-- The Essence of Eranikus

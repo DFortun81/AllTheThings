@@ -54,28 +54,28 @@ _.Holidays =
 							["u"] = 24,	-- Brewfest
 							["icon"] = "Interface\\Icons\\inv_misc_beer_01",
 							["g"] = bubbleDown({["u"] = 24}, {
-								i(33968, { 	-- Blue Brewfest Hat
+								i(33968, {	-- Blue Brewfest Hat
 									["cost"] = { { "i", 37829, 50 }, },		-- 50x Brewfest Prize Token
 								}),
 								i(33868, {	-- Brewfest Boots
 									["cost"] = { { "i", 37829, 100 }, },	-- 100x Brewfest Prize Token
 								}),
-								i(33863, { 	-- Brewfest Dress
+								i(33863, {	-- Brewfest Dress
 									["cost"] = { { "i", 37829, 200 }, },	-- 200x Brewfest Prize Token
 								}),
-								i(33862, { 	-- Brewfest Regalia
+								i(33862, {	-- Brewfest Regalia
 									["cost"] = { { "i", 37829, 200 }, },	-- 200x Brewfest Prize Token
 								}),
-								i(33966, { 	-- Brewfest Slippers
+								i(33966, {	-- Brewfest Slippers
 									["cost"] = { { "i", 37829, 100 }, },	-- 100x Brewfest Prize Token
 								}),
-								i(33864, { 	-- Brown Brewfest Hat
+								i(33864, {	-- Brown Brewfest Hat
 									["cost"] = { { "i", 37829, 50 }, },		-- 50x Brewfest Prize Token
 								}),
-								i(33967, { 	-- Green Brewfest Hat
+								i(33967, {	-- Green Brewfest Hat
 									["cost"] = { { "i", 37829, 50 }, },		-- 50x Brewfest Prize Token
 								}),
-								i(33969, { 	-- Purple Brewfest Hat
+								i(33969, {	-- Purple Brewfest Hat
 									["cost"] = { { "i", 37829, 50 }, },		-- 50x Brewfest Prize Token
 								}),
 							}),
@@ -223,28 +223,28 @@ _.Holidays =
 							["u"] = 24,	-- Brewfest
 							["icon"] = "Interface\\Icons\\inv_misc_beer_01",
 							["g"] = bubbleDown({["u"] = 24}, {
-								i(33968, { 	-- Blue Brewfest Hat
+								i(33968, {	-- Blue Brewfest Hat
 									["cost"] = { { "i", 37829, 50 }, },		-- 50x Brewfest Prize Token
 								}),
 								i(33868, {	-- Brewfest Boots
 									["cost"] = { { "i", 37829, 100 }, },	-- 100x Brewfest Prize Token
 								}),
-								i(33863, { 	-- Brewfest Dress
+								i(33863, {	-- Brewfest Dress
 									["cost"] = { { "i", 37829, 200 }, },	-- 200x Brewfest Prize Token
 								}),
-								i(33862, { 	-- Brewfest Regalia
+								i(33862, {	-- Brewfest Regalia
 									["cost"] = { { "i", 37829, 200 }, },	-- 200x Brewfest Prize Token
 								}),
-								i(33966, { 	-- Brewfest Slippers
+								i(33966, {	-- Brewfest Slippers
 									["cost"] = { { "i", 37829, 100 }, },	-- 100x Brewfest Prize Token
 								}),
-								i(33864, { 	-- Brown Brewfest Hat
+								i(33864, {	-- Brown Brewfest Hat
 									["cost"] = { { "i", 37829, 50 }, },		-- 50x Brewfest Prize Token
 								}),
-								i(33967, { 	-- Green Brewfest Hat
+								i(33967, {	-- Green Brewfest Hat
 									["cost"] = { { "i", 37829, 50 }, },		-- 50x Brewfest Prize Token
 								}),
-								i(33969, { 	-- Purple Brewfest Hat
+								i(33969, {	-- Purple Brewfest Hat
 									["cost"] = { { "i", 37829, 50 }, },		-- 50x Brewfest Prize Token
 								}),
 							}),

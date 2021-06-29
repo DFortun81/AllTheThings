@@ -58,7 +58,7 @@ _.Zones =
 							}),
 						},
 					}),
-					q(52944, { 	-- Call to Arms: Drustvar
+					q(52944, {	-- Call to Arms: Drustvar
 						["provider"] = { "n", 143559 },	-- Grand Marshal Tremblade
 						["isWeekly"] = true,
 						["coord"] = { 56.4, 26.0, 1161 },
@@ -110,7 +110,7 @@ _.Zones =
 							i(169614),	-- Call to Arms Distinction
 						},
 					}),
-					q(52949, { 	-- Call to Arms: Nazmir
+					q(52949, {	-- Call to Arms: Nazmir
 						["provider"] = { "n", 143559 },	-- Grand Marshal Tremblade
 						["isWeekly"] = true,
 						["coord"] = { 56.4, 26.0, 1161 },
@@ -127,7 +127,7 @@ _.Zones =
 							i(169614),	-- Call to Arms Distinction
 						},
 					}),
-					q(52782, { 	-- Call to Arms: Stormsong Valley
+					q(52782, {	-- Call to Arms: Stormsong Valley
 						["provider"] = { "n", 143559 },	-- Grand Marshal Tremblade
 						["isWeekly"] = true,
 						["coord"] = { 56.4, 26.0, 1161 },
@@ -161,7 +161,7 @@ _.Zones =
 							i(169614),	-- Call to Arms Distinction
 						},
 					}),
-					q(59019, { 	-- Call to Arms: Uldum
+					q(59019, {	-- Call to Arms: Uldum
 						["provider"] = { "n", 143559 },	-- Grand Marshal Tremblade
 						["isWeekly"] = true,
 						["coord"] = { 56.4, 26.0, 1161 },
@@ -178,7 +178,7 @@ _.Zones =
 							i(169614),	-- Call to Arms Distinction
 						},
 					}),
-					q(59018, { 	-- Call to Arms: Vale of Eternal Blossoms
+					q(59018, {	-- Call to Arms: Vale of Eternal Blossoms
 						["provider"] = { "n", 143559 },	-- Grand Marshal Tremblade
 						["isWeekly"] = true,
 						["coord"] = { 56.4, 26.0, 1161 },
@@ -195,7 +195,7 @@ _.Zones =
 							i(169614),	-- Call to Arms Distinction
 						},
 					}),
-					q(52950, { 	-- Call to Arms: Vol'dun
+					q(52950, {	-- Call to Arms: Vol'dun
 						["provider"] = { "n", 143559 },	-- Grand Marshal Tremblade
 						["isWeekly"] = true,
 						["coord"] = { 56.4, 26.0, 1161 },
@@ -229,7 +229,7 @@ _.Zones =
 							i(169614),	-- Call to Arms Distinction
 						},
 					}),
-					q(53295, { 	-- Do Your Part
+					q(53295, {	-- Do Your Part
 						["provider"] = { "n", 141698 },	--  Kort Ceefer
 						["isWeekly"] = true,
 						["races"] = ALLIANCE_ONLY,
@@ -657,7 +657,7 @@ _.Zones =
 					["coord"] = { 49.9, 87.3, 1161 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(51341, { 	-- Daughter of the Sea
+				q(51341, {	-- Daughter of the Sea
 					["sourceQuests"] = { 46728 },	-- The Nation of Kul Tiras
 					["provider"] = { "n", 120922 },	-- Lady Jaina Proudmoore
 					["coord"] = { 65.7, 50.6, 1161 },
@@ -680,7 +680,7 @@ _.Zones =
 					["coord"] = { 69.0, 24.7, 1161 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(52128, { 	-- Ferry Pass
+				q(52128, {	-- Ferry Pass
 					["sourceQuests"] = { 47186 },	-- Sanctum of Sages
 					["provider"] = { "n", 122370 },	-- Cyrus Crestfall
 					["coord"] = { 68.0, 21.9, 1161 },
@@ -703,7 +703,7 @@ _.Zones =
 					["provider"] = { "n", 135259 },	-- Taelia
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(52246, { 	-- Lost Shipment
+				q(52246, {	-- Lost Shipment
 					["sourceQuests"] = { 52194 },	-- Lost Shipment
 					["provider"] = { "n", 140495 },	-- Katherine Proudmoore
 					["coord"] = { 67.0, 36.2, 895 },
@@ -893,7 +893,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 69.2, 11.6, 1161 },
 				}),
-				q(52194, { 	-- What You May Regret
+				q(52194, {	-- What You May Regret
 					["provider"] = { "n", 122370 },	-- Cyrus Crestfall
 					["coord"] = { 67.9, 22.0, 1161 },
 					["races"] = ALLIANCE_ONLY,

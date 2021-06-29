@@ -13,7 +13,7 @@ _.Zones =
 						q(25771, {	-- One Draenei's Junk...
 							["repeatable"] = true,
 							["g"] = {
-								i(12122, { 	-- Kum'isha's Junk
+								i(12122, {	-- Kum'isha's Junk
 									i(9940),	-- Abjurer's Hood
 									i(9942),	-- Abjurer's Pants
 									i(10194),	-- Crusader's Cloak
@@ -77,10 +77,10 @@ _.Zones =
 				i(8244,  {	-- Flawless Draenethyst Sphere
 					["description"] = "This has a high chance (about 50%) to drop from rares in the zone, but can technically drop from any mob in the zone.",
 					["g"] = {
-						q(25772, { 	-- Kum'isha's Endeavors
+						q(25772, {	-- Kum'isha's Endeavors
 							["repeatable"] = true,
 							["g"] = {
-								i(10752, { 	-- Emerald Encrusted Chest
+								i(10752, {	-- Emerald Encrusted Chest
 									i(13009),	-- Cow King's Hide
 									i(13008),	-- Dalewind Trousers
 									i(6660),	-- Julie's Dagger

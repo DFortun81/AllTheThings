@@ -675,31 +675,31 @@ _.Achievements =
 				["races"] = HORDE_ONLY,
 			}),
 			ach(13690, {	-- Nazjatarget Eliminated
-				crit(1, { 	-- Szun, Breaker of Slaves
+				crit(1, {	-- Szun, Breaker of Slaves
 					["_quests"] = { 55897 },
 				}),
-				crit(2, { 	-- Frozen Winds of Zhiela
+				crit(2, {	-- Frozen Winds of Zhiela
 					["_quests"] = { 55895 },
 				}),
-				crit(3, { 	-- Zoko, Her Iron Defender
+				crit(3, {	-- Zoko, Her Iron Defender
 					["_quests"] = { 55894 },
 				}),
-				crit(4, { 	-- Tempest-Speaker Shalan'ali
+				crit(4, {	-- Tempest-Speaker Shalan'ali
 					["_quests"] = { 55898 },
 				}),
-				crit(5, { 	-- Starseeker of the Shirakess
+				crit(5, {	-- Starseeker of the Shirakess
 					["_quests"] = { 55899 },
 				}),
-				crit(6, { 	-- Azanz, the Slitherblade
+				crit(6, {	-- Azanz, the Slitherblade
 					["_quests"] = { 55893 },
 				}),
-				crit(7, { 	-- Undana, Chilling Assassin
+				crit(7, {	-- Undana, Chilling Assassin
 					["_quests"] = { 55896 },
 				}),
-				crit(8, { 	-- Kassar, Wielder of Dark Blades
+				crit(8, {	-- Kassar, Wielder of Dark Blades
 					["_quests"] = { 55900 },
 				}),
-				crit(9, { 	-- The Zanj'ir Brutalizer
+				crit(9, {	-- The Zanj'ir Brutalizer
 					["_quests"] = { 55886 },
 				}),
 				crit(10, {	-- Champion Aldrantiss, Defender of Her Kingdom
@@ -1575,7 +1575,7 @@ _.Achievements =
 				crit(1),	-- Complete an Emissary for your ally in Nazjatar
 				crit(2),	-- Defeat one of the World Bosses of Nazjatar
 				crit(3),	-- Learn about the Scrying Stones of Nazjatar
-				crit(4, { 	-- Defeat one of Azshara's Champions
+				crit(4, {	-- Defeat one of Azshara's Champions
 					["_quests"] = {
 						55893,	-- Azanz, the Slitherblade
 						55891,	-- Champion Aldrantiss, Defender of Her Kingdom

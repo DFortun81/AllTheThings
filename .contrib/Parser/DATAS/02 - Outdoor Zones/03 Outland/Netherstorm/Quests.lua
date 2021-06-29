@@ -164,7 +164,7 @@ _.Zones =
 					["provider"] = { "n", 22899 },	-- Protectorate Advisor Rahim
 					["coord"] = { 45.8, 36.2, NETHERSTORM },
 					["minReputation"] = { 933, HONORED },
-					["isBreadcrumb"] = true, 	-- for "A Mission of Mercy"
+					["isBreadcrumb"] = true,	-- for "A Mission of Mercy"
 				}),
 				q(10974, {	-- Stasis Chambers of Bash'ir
 					["provider"] = { "n", 20448 },	-- Commander Ameer
@@ -427,7 +427,7 @@ _.Zones =
 					["provider"] = { "n", 19880 },	-- Nether-Stalker Khay'ji
 					["coord"] = { 32.4, 64.2, NETHERSTORM },
 					["sourceQuests"] = {
-						10263, 	-- Assisting the Consortium (The Aldor)
+						10263,	-- Assisting the Consortium (The Aldor)
 						10264,	-- Assisting the Consortium (The Scryers)
 					},
 				}),
@@ -1057,7 +1057,7 @@ _.Zones =
 -- #if AFTER TBC
 -- These quests trigger after specific events occur in the zone.
 _.HiddenQuestTriggers = {
-	
+
 };
 
 -- These quests never made it in.

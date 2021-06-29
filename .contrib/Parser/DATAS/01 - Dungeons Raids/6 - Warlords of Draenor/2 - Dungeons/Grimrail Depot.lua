@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(6, {	-- Warlords of Draenor
-	inst(536, { 	-- Grimrail Depot
+	inst(536, {	-- Grimrail Depot
 		["coord"] = { 55.0, 31.3, 543 },	-- Gorgrond, Draenor
 		["maps"] = { 606, 607, 608, 609 },
 		["lvl"] = 100,

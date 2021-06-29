@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(905, { 	-- Argus
+	m(905, {	-- Argus
 		m(886, {	-- Vindicaar
 			["icon"] = "Interface\\Icons\\inv_lightforgedmechsuit",
 			["maps"] = {

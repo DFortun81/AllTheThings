@@ -35,7 +35,7 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, ach(9641)),		-- Chapter II: Gul'dan Strikes Back
 			un(REMOVED_FROM_GAME, a(ach(7534))),	-- Chapter II: Wrathion's War (Alliance)
 			un(REMOVED_FROM_GAME, h(ach(8008))),	-- Chapter II: Wrathion's War (Horde)
-			un(REMOVED_FROM_GAME, ach(9642)),	 	-- Chapter III: The Foundry Falls
+			un(REMOVED_FROM_GAME, ach(9642)),		-- Chapter III: The Foundry Falls
 			un(REMOVED_FROM_GAME, ach(7535)),		-- Chapter III: Two Princes
 			un(REMOVED_FROM_GAME, ach(7536)),		-- Chapter IV: Celestial Blessings
 			un(REMOVED_FROM_GAME, a(ach(10021))),	-- Chapter IV: Darkness Incarnate (Alliance)
@@ -114,7 +114,7 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, ach(2923)),		-- Iron Dwarf, Medium Rare (10 player)
 			un(REMOVED_FROM_GAME, ach(2924)),		-- Iron Dwarf, Medium Rare (25 player)
 			un(REMOVED_FROM_GAME, a(ach(11565, {	-- King of the Guild (Alliance)(Legion)
-				un(REMOVED_FROM_GAME, ach(11563)), 		-- The Second Rule of Brawler's Guild(Legion)
+				un(REMOVED_FROM_GAME, ach(11563)),		-- The Second Rule of Brawler's Guild(Legion)
 				un(REMOVED_FROM_GAME, ach(11560)),		-- You Are Not Your $#*@! Legplates(Legion)
 			}))),
 			un(REMOVED_FROM_GAME, h(ach(11566, {	-- King of the Guild (Horde)

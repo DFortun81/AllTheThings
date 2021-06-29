@@ -72,10 +72,10 @@ _.ExpansionFeatures =
 							}),
 						}),
 						n(VENDORS, {
-							n(85427, { 	-- Maaria <Sha'tari Defense Quartermaster>
+							n(85427, {	-- Maaria <Sha'tari Defense Quartermaster>
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
-									i(116665, { 	-- Armored Irontusk (MOUNT!)
+									i(116665, {	-- Armored Irontusk (MOUNT!)
 										["cost"] = {
 											{ "g", 50000000 },	-- 5,000g
 											{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
@@ -91,17 +91,17 @@ _.ExpansionFeatures =
 										["cost"] = 75000000,	-- 7,500g
 										["g"] = {
 											i(119425),  -- Belt of the Sha'tari Defense
-											i(119423), 	-- Boots of the Sha'tari Defense
-											i(119429), 	-- Bracers of the Sha'tari Defense
-											i(119422), 	-- Breastplate of the Sha'tari Defense
-											i(119426), 	-- Gauntlets of the Sha'tari Defense
-											i(119428), 	-- Greathelm of the Sha'tari Defense
-											i(119424), 	-- Legplates of the Sha'tari Defense
-											i(119427), 	-- Shoulderguards of the Sha'tari Defense
+											i(119423),	-- Boots of the Sha'tari Defense
+											i(119429),	-- Bracers of the Sha'tari Defense
+											i(119422),	-- Breastplate of the Sha'tari Defense
+											i(119426),	-- Gauntlets of the Sha'tari Defense
+											i(119428),	-- Greathelm of the Sha'tari Defense
+											i(119424),	-- Legplates of the Sha'tari Defense
+											i(119427),	-- Shoulderguards of the Sha'tari Defense
 										},
 									}),
-									i(119421), 	-- Sha'tari Defender's Medallion (TOY!)
-									i(119140), 	-- Sha'tari Defense Tabard
+									i(119421),	-- Sha'tari Defender's Medallion (TOY!)
+									i(119140),	-- Sha'tari Defense Tabard
 									i(118669),	-- Sha'tari Elixir
 									i(118685, {	-- Sha'tari Protector
 										["cost"] = 5000000,		-- 500g
@@ -112,16 +112,16 @@ _.ExpansionFeatures =
 											{ "c", 823, 2000 },	-- 2,000x Apexis Crystal
 										},
 									}),
-									i(119182), 	-- Soul Evacuation Crystal (TOY!)
+									i(119182),	-- Soul Evacuation Crystal (TOY!)
 									--[[ Note: Leaving this commented out as they removed the items from the vendor and ensembled. Leaving here in case they revert.
-									i(119428), 	-- Greathelm of the Sha'tari Defense
-									i(119427), 	-- Shoulderguards of the Sha'tari Defense
-									i(119422), 	-- Breastplate of the Sha'tari Defense
-									i(119429), 	-- Bracers of the Sha'tari Defense
-									i(119426), 	-- Gauntlets of the Sha'tari Defense
+									i(119428),	-- Greathelm of the Sha'tari Defense
+									i(119427),	-- Shoulderguards of the Sha'tari Defense
+									i(119422),	-- Breastplate of the Sha'tari Defense
+									i(119429),	-- Bracers of the Sha'tari Defense
+									i(119426),	-- Gauntlets of the Sha'tari Defense
 									i(119425),  -- Belt of the Sha'tari Defense
-									i(119424), 	-- Legplates of the Sha'tari Defense
-									i(119423), 	-- Boots of the Sha'tari Defense
+									i(119424),	-- Legplates of the Sha'tari Defense
+									i(119423),	-- Boots of the Sha'tari Defense
 									--]]
 								},
 							}),

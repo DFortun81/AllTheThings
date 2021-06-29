@@ -358,7 +358,7 @@ _.Zones =
 					["races"] = { DWARF },
 					["classes"] = { PALADIN },
 				}),
-				q(433,   { 	-- The Public Servant
+				q(433,   {	-- The Public Servant
 					["provider"] = { "n", 1977 },	-- Senator Mehr Stonehallow
 					["coord"] = { 75.9, 54.3, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,

@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(905, { 	-- Argus
+	m(905, {	-- Argus
 		m(882, {	-- Mac'Aree
 			n(FLIGHT_PATHS, {
 				fp(2003, {	-- City Center, Mac'Aree

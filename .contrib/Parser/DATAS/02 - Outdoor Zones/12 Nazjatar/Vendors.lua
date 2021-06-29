@@ -1219,7 +1219,7 @@ _.Zones =
 				["g"] = {
 				--	i(139776),	-- Horde Fanatic
 				--	i(142380),	-- Dutiful Gruntling
-				-- 	i(163974),	-- Bucketshell -- Listed under PvP w/ CRS
+				--	i(163974),	-- Bucketshell -- Listed under PvP w/ CRS
 				},
 			}),
 		}),

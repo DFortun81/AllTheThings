@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(1, {	-- Classic
-	inst(236, { 	-- Stratholme
+	inst(236, {	-- Stratholme
 		["lvl"] = 37,
 		["groups"] = {
 			ach(646),	-- Stratholme
@@ -115,15 +115,15 @@ _.Instances = { tier(1, {	-- Classic
 							i(13396),	-- Skul's Ghastly Touch
 						},
 					}),
-					cr(10558, e(443, { 	-- Hearthsinger Forresten
+					cr(10558, e(443, {	-- Hearthsinger Forresten
 						i(13379),	-- Piccolo of the Flaming Fire (TOY!)
 						i(12103),	-- Star of Mystaria
 						i(13378),	-- Songbird Blouse
 						i(13384),	-- Rainbow Girdle
-						i(13383),  	-- Woollies of the Prancing Minstrel
+						i(13383),	-- Woollies of the Prancing Minstrel
 						un(REMOVED_FROM_GAME, i(16682)),	-- Magister's Boots
 					})),
-					cr(10516, e(450, { 	-- The Unforgiven
+					cr(10516, e(450, {	-- The Unforgiven
 						i(22406),	-- Redemption
 						i(13408),	-- Soul Breaker
 						i(13404),	-- Mask of the Unforgiven
@@ -143,7 +143,7 @@ _.Instances = { tier(1, {	-- Classic
 							i(13392),	-- The Postmaster's Seal
 						},
 					}),
-					cr(10808, e(445, { 	-- Timmy the Cruel
+					cr(10808, e(445, {	-- Timmy the Cruel
 						i(13401),	-- The Cruel Hand of Timmy
 						i(13400),	-- Vambraces of the Sadist
 						i(151403),	-- Fetid Stranglers
@@ -151,7 +151,7 @@ _.Instances = { tier(1, {	-- Classic
 						i(13402),	-- Timmy's Galoshes
 						un(REMOVED_FROM_GAME, i(16724)),	-- Lightforge Gauntlets
 					})),
-					cr(10997, e(446, { 	-- Willey Hopebreaker
+					cr(10997, e(446, {	-- Willey Hopebreaker
 						--i(22406),	-- Redemption (Journal says only from The Unforgiven)
 						i(22404),	-- Willey's Back Scratcher
 						i(13380),	-- Willey's Portable Howitzer
@@ -164,14 +164,14 @@ _.Instances = { tier(1, {	-- Classic
 						i(22403),	-- Diana's Pearl Necklace
 						un(REMOVED_FROM_GAME, i(16708)),	-- Shadowcraft Spaulders
 					})),
-					cr(10811, e(448, { 	-- Instructor Galford
+					cr(10811, e(448, {	-- Instructor Galford
 						i(13385),	-- Tome of Knowledge
 						i(13386),	-- Archivist Cape
 						i(13387),	-- Foresight Girdle
 						i(18716),	-- Ash Covered Boots
 						un(REMOVED_FROM_GAME, i(16692)),	-- Devout Gloves
 					})),
-					cr(10813, e(449, { 	-- Balnazzar
+					cr(10813, e(449, {	-- Balnazzar
 						{
 							["achievementID"] = 646,	-- Stratholme
 							["criteriaID"] = 1,	-- Balnazzar slain
@@ -196,7 +196,7 @@ _.Instances = { tier(1, {	-- Classic
 					})),
 					n(-40, {	-- Legacy
 						n(ZONEDROPS, {
-							un(REMOVED_FROM_GAME, n(14684, { 	-- Balzaphon
+							un(REMOVED_FROM_GAME, n(14684, {	-- Balzaphon
 								["description"] = "This boss was only available during the Scourge Invasions.",
 								["groups"] = {
 									un(REMOVED_FROM_GAME, i(23125)),	-- Chains of the Lich
@@ -204,14 +204,14 @@ _.Instances = { tier(1, {	-- Classic
 									un(REMOVED_FROM_GAME, i(23126)),	-- Waistband of Balzaphon
 								},
 							})),
-							un(REMOVED_FROM_GAME, n(16102, { 	-- Sothos
+							un(REMOVED_FROM_GAME, n(16102, {	-- Sothos
 								["description"] = "Sothos and Jarien are a pair of elite ghosts summoned in the Scarlet Bastion by using Brazier of Beckoning.",
 								["groups"] = {
 									o(181083, {	-- Sothos and Jarien's Heirlooms
 										["modelID"] = 34286,
 										["groups"] = {
 											un(REMOVED_FROM_GAME, i(22327)),	-- Amulet of the Redeemed
-											un(REMOVED_FROM_GAME, i(22301)), 	-- Ironweave Robe
+											un(REMOVED_FROM_GAME, i(22301)),	-- Ironweave Robe
 											un(REMOVED_FROM_GAME, i(22328)),	-- Legplates of Vigilance
 											un(REMOVED_FROM_GAME, i(22329)),	-- Scepter of Interminable Focus
 											un(REMOVED_FROM_GAME, i(22334)),	-- Band of Mending
@@ -221,52 +221,52 @@ _.Instances = { tier(1, {	-- Classic
 							})),
 							un(REMOVED_FROM_GAME, i(16681, {	-- Beaststalker's Bindings
 								["crs"] = {
-									10421, 	-- Crimson Defender
+									10421,	-- Crimson Defender
 								},
 							})),
 							un(REMOVED_FROM_GAME, i(16736, {	-- Belt of Valor
 								["crs"] = {
-									10414, 	-- Patchwork Horror
+									10414,	-- Patchwork Horror
 								},
 							})),
-							un(REMOVED_FROM_GAME, i(16671, { 	-- Bindings of Elements
+							un(REMOVED_FROM_GAME, i(16671, {	-- Bindings of Elements
 								["crs"] = {
 									11043,	-- Risen Monk
 								},
 							})),
-							un(REMOVED_FROM_GAME, i(16697, { 	-- Devout Bracers
+							un(REMOVED_FROM_GAME, i(16697, {	-- Devout Bracers
 								["crs"] = {
-									10419, 	-- Crimson Conjuror
+									10419,	-- Crimson Conjuror
 									10420,	-- Crimson Initiate
-									10423, 	-- Crimson Priest
+									10423,	-- Crimson Priest
 								},
 							})),
 							un(REMOVED_FROM_GAME, i(16702, {	-- Dreadmist Belt
 								["crs"] = {
-									10419, 	-- Crimson Conjuror
+									10419,	-- Crimson Conjuror
 								},
 							})),
 							un(REMOVED_FROM_GAME, i(16723, {	-- Lightforge Belt
 								["crs"] = {
-									10424, 	-- Crimson Gallant
-									10418, 	-- Crimson Guardsman
+									10424,	-- Crimson Gallant
+									10418,	-- Crimson Guardsman
 								},
 							})),
 							un(REMOVED_FROM_GAME, i(16685, {	-- Magister's Belt
 								["crs"] = {
 									10425,	-- Crimson Battle Mage
-									10419, 	-- Crimson Conjuror
-									10422, 	-- Crimson Sorcerer
+									10419,	-- Crimson Conjuror
+									10422,	-- Crimson Sorcerer
 								},
 							})),
 							un(REMOVED_FROM_GAME, i(15777, {	-- Pattern: Runic Leather Shoulders (now learned from trainer)
 								["crs"] = {
-									10425, 	-- Crimson Battle Mage
+									10425,	-- Crimson Battle Mage
 								},
 							})),
 							un(REMOVED_FROM_GAME, i(16714, {	-- Wildheart Bracers
 								["crs"] = {
-									10426, 	-- Crimson Inquisitor
+									10426,	-- Crimson Inquisitor
 								},
 							})),
 						}),
@@ -378,7 +378,7 @@ _.Instances = { tier(1, {	-- Classic
 							i(13399),	-- Gargoyle Shredder Talons
 						},
 					}),
-					cr(10436, e(451, { 	-- Baroness Anastari
+					cr(10436, e(451, {	-- Baroness Anastari
 						i(13534),	-- Banshee Finger
 						i(18729),	-- Screeching Bow
 						i(18728),	-- Anastari Heirloom
@@ -389,7 +389,7 @@ _.Instances = { tier(1, {	-- Classic
 						i(18730),	-- Shadowy Laced Handwraps
 						un(REMOVED_FROM_GAME, i(16704)),	-- Dreadmist Sandals
 					})),
-					cr(10437, e(452, { 	-- Nerub'enkan
+					cr(10437, e(452, {	-- Nerub'enkan
 						i(18738),	-- Carapace Spine Crossbow
 						i(13529),	-- Husk of Nerub'enkan
 						i(13533),	-- Acid-Etched Pauldrons
@@ -400,7 +400,7 @@ _.Instances = { tier(1, {	-- Classic
 						i(13530),	-- Fangdrip Runners
 						un(REMOVED_FROM_GAME, i(16675)),	-- Beaststalker's Boots
 					})),
-					cr(10438, e(453, { 	-- Maleki the Pallid
+					cr(10438, e(453, {	-- Maleki the Pallid
 						i(18737),	-- Bone Slicing Hatchet
 						i(13524),	-- Skull of Burning Shadows
 						i(18734),	-- Pale Moon Cloak
@@ -412,14 +412,14 @@ _.Instances = { tier(1, {	-- Classic
 						i(12833),	-- Plans: Hammer of the Titans
 						un(REMOVED_FROM_GAME, i(16691)),	-- Devout Sandals
 					})),
-					cr(10435, e(454, { 	-- Magistrate Barthilas
+					cr(10435, e(454, {	-- Magistrate Barthilas
 						i(18725),	-- Peacemaker
 						i(18727),	-- Crimson Felt Hat
 						i(13376),	-- Royal Tribunal Cloak
 						i(18726),	-- Magistrate's Cuffs
 						i(18722),	-- Death Grips
 					})),
-					cr(10439, e(455, { 	-- Ramstein the Gorger
+					cr(10439, e(455, {	-- Ramstein the Gorger
 						i(13372),	-- Slavedriver's Cane
 						i(13375),	-- Crest of Retribution
 						i(18723),	-- Animated Chain Necklace
@@ -428,7 +428,7 @@ _.Instances = { tier(1, {	-- Classic
 						i(13515),	-- Ramstein's Lightning Bolts
 						un(REMOVED_FROM_GAME, i(16737)),	-- Gauntlets of Valor
 					})),
-					cr(45412, e(456, { 	-- Lord Aurius Rivendare
+					cr(45412, e(456, {	-- Lord Aurius Rivendare
 						{
 							["achievementID"] = 646,	-- Stratholme
 							["criteriaID"] = 2,	-- Lord Aurius Rivendare slain
@@ -460,59 +460,59 @@ _.Instances = { tier(1, {	-- Classic
 						n(ZONEDROPS, {
 							un(REMOVED_FROM_GAME, i(16681, {	-- Beaststalker's Bindings
 								["crs"] = {
-									10407, 	-- Fleshflayer Ghoul
-									10406, 	-- Ghoul Ravener
+									10407,	-- Fleshflayer Ghoul
+									10406,	-- Ghoul Ravener
 								},
 							})),
 							un(REMOVED_FROM_GAME, i(16736, {	-- Belt of Valor
 								["crs"] = {
-									10416, 	-- Bile Spewer
+									10416,	-- Bile Spewer
 									10417,	-- Venom Belcher
 								},
 							})),
-							un(REMOVED_FROM_GAME, i(16671, { 	-- Bindings of Elements
+							un(REMOVED_FROM_GAME, i(16671, {	-- Bindings of Elements
 								["crs"] = {
-									10413, 	-- Crypt Beast
+									10413,	-- Crypt Beast
 								},
 							})),
-							un(REMOVED_FROM_GAME, i(16697, { 	-- Devout Bracers
+							un(REMOVED_FROM_GAME, i(16697, {	-- Devout Bracers
 								["crs"] = {
-									10400, 	-- Thuzadin Necromancer
-									10398, 	-- Thuzadin Shadowcaster
+									10400,	-- Thuzadin Necromancer
+									10398,	-- Thuzadin Shadowcaster
 								},
 							})),
 							un(REMOVED_FROM_GAME, i(16702, {	-- Dreadmist Belt
 								["crs"] = {
-									10400, 	-- Thuzadin Necromancer
-									10398, 	-- Thuzadin Shadowcaster
+									10400,	-- Thuzadin Necromancer
+									10398,	-- Thuzadin Shadowcaster
 								},
 							})),
 							un(REMOVED_FROM_GAME, i(16723, {	-- Lightforge Belt
 								["crs"] = {
-									10408, 	-- Rockwing Gargoyle
-									10409, 	-- Rockwing Screecher
+									10408,	-- Rockwing Gargoyle
+									10409,	-- Rockwing Screecher
 								},
 							})),
 							un(REMOVED_FROM_GAME, i(16685, {	-- Magister's Belt
 								["crs"] = {
-									10400, 	-- Thuzadin Necromancer
-									10398, 	-- Thuzadin Shadowcaster
+									10400,	-- Thuzadin Necromancer
+									10398,	-- Thuzadin Shadowcaster
 								},
 							})),
 							un(REMOVED_FROM_GAME, i(15768, {	-- Pattern: Wicked Leather Belt
 								["crs"] = {
-									10406, 	-- Ghoul Ravener
+									10406,	-- Ghoul Ravener
 								},
 							})),
 							un(REMOVED_FROM_GAME, i(16710, {	-- Shadowcraft Bracers
 								["crs"] = {
-									10405, 	-- Plague Ghoul
+									10405,	-- Plague Ghoul
 								},
 							})),
 							un(REMOVED_FROM_GAME, i(16714, {	-- Wildheart Bracers
 								["crs"] = {
 									10463,	-- Shrieking Banshee
-									10464, 	-- Wailing Banshee
+									10464,	-- Wailing Banshee
 								},
 							})),
 						}),

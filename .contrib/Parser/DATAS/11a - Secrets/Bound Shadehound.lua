@@ -4,7 +4,7 @@
 
 _.Secrets =
 {
-	n(-808, { 	-- Bound Shadehound
+	n(-808, {	-- Bound Shadehound
 		["description"] = "Requires |cFF006812Appreciative|r reputation with Ve'nari and a total of 3,500 Stygia.\n\nEnable quest tracking to see all the steps.",
 		["maps"] = {	-- all Maw maps (if any of these wind up being specific scenario maps, remove them!)
 			THE_MAW,

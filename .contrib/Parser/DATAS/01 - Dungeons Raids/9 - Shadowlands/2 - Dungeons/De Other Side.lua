@@ -75,8 +75,8 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(179350),	-- Inscrutable Quantum Device
 					},
 				}),
-				e(2410, {	-- 	Mueh'zala
-					["crs"] = { 166608 },	-- 	Mueh'zala
+				e(2410, {	--	Mueh'zala
+					["crs"] = { 166608 },	--	Mueh'zala
 					["g"] = {
 						ach(14373),	-- De Other Side
 						i(182178),	-- Raptor Soul
@@ -156,8 +156,8 @@ _.Instances = { tier(9, {	-- Shadowlands
 							i(179350),	-- Inscrutable Quantum Device
 						},
 					}),
-					e(2410, {	-- 	Mueh'zala
-						["crs"] = { 166608 },	-- 	Mueh'zala
+					e(2410, {	--	Mueh'zala
+						["crs"] = { 166608 },	--	Mueh'zala
 						["g"] = {
 							ach(14408),	-- Heroic: De Other Side
 							i(182178),	-- Raptor Soul
@@ -244,8 +244,8 @@ _.Instances = { tier(9, {	-- Shadowlands
 							i(179350),	-- Inscrutable Quantum Device
 						},
 					}),
-					e(2410, {	-- 	Mueh'zala
-						["crs"] = { 166608 },	-- 	Mueh'zala
+					e(2410, {	--	Mueh'zala
+						["crs"] = { 166608 },	--	Mueh'zala
 						["g"] = {
 							ach(14409),	-- Mythic: De Other Side
 							i(182178),	-- Raptor Soul

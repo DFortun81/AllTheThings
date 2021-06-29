@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(424, { 	-- Pandaria
+	m(424, {	-- Pandaria
 		m(554, {	-- Timeless Isle
 			filter(101, {	-- Pet Battle
 				p(1324, {	-- Ashwing Moth

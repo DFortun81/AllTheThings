@@ -18,7 +18,7 @@ _.Zones =
 					["coord"] = { 35.2, 30.8, DUSTWALLOW_MARSH },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(4355, { 	-- Pattern: Icy Cloak
+						i(4355, {	-- Pattern: Icy Cloak
 							["isLimited"] = true,
 						}),
 					},

@@ -93,8 +93,8 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(180117),	-- Empyreal Ordnance
 					},
 				}),
-				e(2412, {	-- 	Devos, Paragon of Doubt
-					["crs"] = { 162061 },	-- 	Devos, Paragon of Doubt
+				e(2412, {	--	Devos, Paragon of Doubt
+					["crs"] = { 162061 },	--	Devos, Paragon of Doubt
 					["g"] = {
 						ach(14326),	-- Spires of Ascension
 						i(182649),	-- Brutal Projectiles
@@ -175,8 +175,8 @@ _.Instances = { tier(9, {	-- Shadowlands
 							i(180117),	-- Empyreal Ordnance
 						},
 					}),
-					e(2412, {	-- 	Devos, Paragon of Doubt
-						["crs"] = { 162061 },	-- 	Devos, Paragon of Doubt
+					e(2412, {	--	Devos, Paragon of Doubt
+						["crs"] = { 162061 },	--	Devos, Paragon of Doubt
 						["g"] = {
 							ach(14324),	-- Heroic: Spires of Ascension
 							i(182649),	-- Brutal Projectiles
@@ -263,8 +263,8 @@ _.Instances = { tier(9, {	-- Shadowlands
 							i(180117),	-- Empyreal Ordnance
 						},
 					}),
-					e(2412, {	-- 	Devos, Paragon of Doubt
-						["crs"] = { 162061 },	-- 	Devos, Paragon of Doubt
+					e(2412, {	--	Devos, Paragon of Doubt
+						["crs"] = { 162061 },	--	Devos, Paragon of Doubt
 						["g"] = {
 							ach(14325),	-- Mythic: Spires of Ascension
 							ach(14323),	-- ExSPEARiential

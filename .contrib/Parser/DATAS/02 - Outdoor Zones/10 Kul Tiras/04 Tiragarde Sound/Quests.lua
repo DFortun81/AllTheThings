@@ -222,8 +222,8 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 129003 },	-- Tagart
 				}),
-				q(48421, { 	-- Blood in the Tides (A)
-					["sourceQuests"] = { 47489 }, 	-- Stow and Go
+				q(48421, {	-- Blood in the Tides (A)
+					["sourceQuests"] = { 47489 },	-- Stow and Go
 					["provider"] = { "n", 125342 },	-- Captain Keelson
 					["coords"] = {
 						{ 85.6, 76.6, 895 },
@@ -238,7 +238,7 @@ _.Zones =
 						i(155086),	-- Keelson's Bloody Drape
 					},
 				}),
-				q(53439, { 	-- Blood in the Tides (H)
+				q(53439, {	-- Blood in the Tides (H)
 					["coord"] = { 85.21, 80.61, 895 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 143777 },	-- Tall Hasani
@@ -615,7 +615,7 @@ _.Zones =
 					["coord"] = { 78.6, 77.8, 895 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(49230, { 	-- Local Flavor (A)
+				q(49230, {	-- Local Flavor (A)
 					["sourceQuests"] = { 49218 },	-- The Castaways
 					["coord"] = { 85.4, 80.7, 895 },
 					["races"] = ALLIANCE_ONLY,
@@ -632,8 +632,8 @@ _.Zones =
 					["coord"] = { 65.5, 65.0, 895 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(48505, { 	-- Lovesick and Lost
-					["sourceQuests"] = { 48419 }, 	-- Lured and Allured
+				q(48505, {	-- Lovesick and Lost
+					["sourceQuests"] = { 48419 },	-- Lured and Allured
 					["coord"] = { 84.8, 76.0, 895 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 126158 },	-- Flynn Fairwind
@@ -643,8 +643,8 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 127586 },	-- Joma
 				}),
-				q(48419, { 	-- Lured and Allured
-					["sourceQuests"] = { 47489 }, 	-- Stow and Go
+				q(48419, {	-- Lured and Allured
+					["sourceQuests"] = { 47489 },	-- Stow and Go
 					["coord"] = { 85.7, 83.4, 895 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 128377 },	-- Beachcomber Bob
@@ -716,7 +716,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 125042 },	-- Gora Layton
 				}),
-				q(49178, { 	-- My Favorite Things (A)
+				q(49178, {	-- My Favorite Things (A)
 					["sourceQuests"] = { 49218 },	-- The Castaways
 					["coord"] = { 85.4, 80.8, 895 },
 					["races"] = ALLIANCE_ONLY,
@@ -953,7 +953,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 128353 },	-- Pendi Cranklefuse
 				}),
-				q(53041, { 	-- Sampling the Goods
+				q(53041, {	-- Sampling the Goods
 					["sourceQuests"] = { 50531 },	-- Under Their Noses
 					["coord"] = { 75.85, 49.08, 895 },
 					["races"] = ALLIANCE_ONLY,
@@ -992,7 +992,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 124802 },	-- Lord Aldruis Norwington
 				}),
-				q(49226, { 	-- Silencing the Sisters (A)
+				q(49226, {	-- Silencing the Sisters (A)
 					["sourceQuests"] = { 49218 },	-- The Castaways
 					["coord"] = { 85.4, 80.8, 895 },
 					["races"] = ALLIANCE_ONLY,
@@ -1027,8 +1027,8 @@ _.Zones =
 					["coord"] = { 56.1, 17.9, 895 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(47489, { 	-- Stow and Go
-					["sourceQuests"] = { 53041 }, 	-- Sampling the Goods
+				q(47489, {	-- Stow and Go
+					["sourceQuests"] = { 53041 },	-- Sampling the Goods
 					["coord"] = { 75.8, 49.0, 895 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 121239 },	-- Flynn Fairwind

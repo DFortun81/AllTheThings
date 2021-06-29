@@ -4567,9 +4567,6 @@ local function SearchForMissingItemNames(group)
 end
 local function UpdateSearchResults(searchResults)
 	if searchResults and #searchResults > 0 then
-		-- Attempt to cleanly refresh the data.
-		-- local fresh = false;
-
 		-- Mark all results as marked. This prevents a double +1 on parents.
 		for i,result in ipairs(searchResults) do
 			-- print("result",result.text,result.visible,result.parent and result.parent.total)
@@ -4598,13 +4595,9 @@ local function UpdateSearchResults(searchResults)
 					-- If we've collected the item, use the "Show Collected Items" filter.
 					result.visible = app.CollectedItemVisibilityFilter(result);
 				end
-				-- fresh = true;
 			end
 		end
 
-		-- If the data is fresh, don't force a refresh.
-		-- Can't think of any situation where this method would be called without having processed the proper result updates...
-		-- app:RefreshData(fresh, true);
 		-- Just need to update the windows now that the data is updated
 		app:RefreshData(true, true);
 	end
@@ -8876,32 +8869,21 @@ local RefreshMounts = function(newMountID)
 	-- would fail to update all the mounts, so probably just best to check all mounts if this is triggered
 	-- plus it's not laggy now to do that so it should be fine
 
-	-- if newMountID then
-	-- 	local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(newMountID);
-	-- 	if spellID and isCollected then
-	-- 		if not collectedSpells[spellID] then
-	-- 			collectedSpells[spellID] = 1;
-	-- 			app.CurrentCharacter.Spells[spellID] = 1;
-	-- 			newSpellIDResults = SearchForField("spellID", spellID);
-	-- 		end
-	-- 	end
-	-- else
-		for i,mountID in ipairs(C_MountJournal.GetMountIDs()) do
-			local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(mountID);
-			if spellID and isCollected then
-				if not collectedSpells[spellID] then
-					collectedSpells[spellID] = 1;
-					app.CurrentCharacter.Spells[spellID] = 1;
-					if not newSpellIDResults then newSpellIDResults = SearchForField("spellID", spellID);
-					else
-						for _,result in ipairs(SearchForField("spellID", spellID)) do
-							tinsert(newSpellIDResults, result);
-						end
+	for i,mountID in ipairs(C_MountJournal.GetMountIDs()) do
+		local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(mountID);
+		if spellID and isCollected then
+			if not collectedSpells[spellID] then
+				collectedSpells[spellID] = 1;
+				app.CurrentCharacter.Spells[spellID] = 1;
+				if not newSpellIDResults then newSpellIDResults = SearchForField("spellID", spellID);
+				else
+					for _,result in ipairs(SearchForField("spellID", spellID)) do
+						tinsert(newSpellIDResults, result);
 					end
 				end
 			end
 		end
-	-- end
+	end
 
 	if newSpellIDResults then
 		UpdateSearchResults(newSpellIDResults);
@@ -10014,13 +9996,13 @@ local function QueryCompletedQuests()
 	-- check if Blizzard is being dumb / should we print a summary instead of individual lines
 	local questDiff = #freshCompletes - (rawget(t, "_TOTAL") or 0);
 	if app.IsReady then
-		if oldReportSetting and questDiff > 25 then
+		if oldReportSetting and questDiff > 50 then
 			print(questDiff,"Quests Completed");
-		elseif oldReportSetting and questDiff < -25 then
+		elseif oldReportSetting and questDiff < -50 then
 			print(questDiff,"Quests Unflagged");
 		end
 	end
-	if math.abs(questDiff) > 25 then
+	if math.abs(questDiff) > 50 then
 		app.Settings:SetTooltipSetting("Report:CompletedQuests", false);
 	end
 	local completedKeys = {};
@@ -10036,7 +10018,7 @@ local function QueryCompletedQuests()
 			t[q] = false;	-- trigger the metatable function
 		end
 	end
-	if math.abs(questDiff) > 25 then
+	if math.abs(questDiff) > 50 then
 		app.Settings:SetTooltipSetting("Report:CompletedQuests", oldReportSetting);
 	end
 end
@@ -11166,6 +11148,7 @@ app.RequireCustomCollectFilter = app.FilterItemClass_CustomCollect;
 app.UnobtainableItemFilter = app.NoFilter;
 app.RequiredSkillFilter = app.NoFilter;
 app.ShowIncompleteThings = app.Filter;
+app.DefaultFilter = app.Filter;
 
 -- Recursive Checks
 app.VerifyCache = function()
@@ -11214,23 +11197,6 @@ end
 app.RecursiveGroupRequirementsFilter = function(group)
 	-- if not app.VerifyRecursion(group) then return; end
 	if app.GroupRequirementsFilter(group) and app.GroupFilter(group) then
-		-- this logic was to fix Blingtrons since they exist on their own, but are nested under Engineering
-		-- But it causes other situations where specific NPC sells an item but that NPC can only be accessible by a specific class/race/etc.
-		-- and the restriction is applied higher up. Instead of making those restrictions propgate to thousands of objects in the game, we just need
-		-- to fix source listings which are nested under inaccurate requirements
-
-		-- if this group is an actual in-game 'thing', there's no reason to continue checking the parents, since it can exist on its own
-		-- local key = group.key;
-		-- local id = key and tonumber(group[key]);
-		-- if id and id > 0 and
-		-- 	(key == "npcID" or
-		-- 	key == "creatureID" or
-		-- 	key == "objectID" or
-		-- 	key == "questID" --or
-		-- 	-- (key == "itemID" and app.FilterItemBind(group))
-		-- 	)
-		-- 	then return true;
-		-- elseif group.sourceParent or group.parent then
 		if group.sourceParent or group.parent then
 			return app.RecursiveGroupRequirementsFilter(group.sourceParent or group.parent)
 		end;
@@ -11280,115 +11246,49 @@ app.RecursiveIsDescendantOfParentWithValue = function(group, field, value)
 	return false;
 end
 
--- Processing Functions (Coroutines)
-local UpdateGroup, UpdateGroups;
---[[
-UpdateGroup = function(parent, group, defaultVisibility)
-	-- Determine if this user can enter the instance or acquire the item.
-	if app.GroupRequirementsFilter(group) then
-		-- Check if this is a group
-		if group.g then
-			-- If this item is collectible, then mark it as such.
-			-- TODO: items which are flagged as a 'cost' become collectible. But if they are also containers, then their total will be inaccurate
-			-- if the contained groups are the same as those for which the 'cost' has been applied
-			-- (i.e. tier tokens creating their tier piece + vendor selling tier peice for token cost)
-			-- feel like cost collectibility needs to remain a separate check to base collectibility
-			if group.collectible then
-				-- An item is a special case where it may have both an appearance and a set of items
-				group.progress = group.collected and 1 or 0;
-				group.total = 1;
-			elseif group.s and group.s < 1 then
-				-- This item is missing its source ID. :(
-				group.progress = 0;
-				group.total = 1;
-			else
-				-- Default to 0 for both
-				group.progress = 0;
-				group.total = 0;
-			end
-
-			-- If the 'can equip' filter says true
-			if app.GroupFilter(group) then
-				-- Update the subgroups recursively
-				UpdateGroups(group, group.g, defaultVisibility);
-
-				-- increment the parent group's stats
-				parent.total = (parent.total or 0) + group.total;
-				parent.progress = (parent.progress or 0) + group.progress;
-				-- If this group needs to be shown due to child groups, then make it visible and skip other logic
-				if group.visible == 1 then
-					group.visible = true;
-					-- if this group is visible ensure parent is also visible
-					parent.visible = 1;
-				elseif group.total > 0 and app.GroupVisibilityFilter(group) then
-					group.visible = true;
-				elseif group.trackable and app.ShowIncompleteThings(group) then
-					-- If this group is trackable, then we should show it.
-					group.visible = not group.saved or app.CollectedItemVisibilityFilter(group);
-					-- if this group is visible ensure parent is also visible
-					if group.visible then parent.visible = 1; end
-				else
-					-- Hide this group. We aren't filtering for it.
-					group.visible = defaultVisibility;
-				end
-			else
-				-- Hide this group. We aren't filtering for it.
-				group.visible = defaultVisibility;
+-- Processing Functions
+local function SetGroupVisibility(parent, group)
+	-- If this group is forced to be shown due to contained groups being shown without being collectible
+	if group.forceShow then
+		-- if app.DEBUG_LOG then print("UpdateGroup.g.forceShow",group.progress,group.total) end
+		group.visible = true;
+		group.forceShow = nil;
+	-- If this group contains Things, show based on visibility filter
+	elseif group.total > 0 and app.GroupVisibilityFilter(group) then
+		-- if app.DEBUG_LOG then print("UpdateGroup.g.total",group.progress,group.total) end
+		group.visible = true;
+	-- If this group is trackable, then we should show it.
+	elseif app.ShowIncompleteThings(group) then
+		-- if app.DEBUG_LOG then print("UpdateGroup.g.trackable",group.progress,group.total) end
+		group.visible = not group.saved or app.DefaultFilter();
+		parent.forceShow = group.visible or parent.forceShow;
+	else
+		group.visible = app.DefaultFilter();
+	end
+end
+local function SetThingVisibility(parent, group)
+	if group.total > 0 then
+		-- if app.DEBUG_LOG then print("UpdateGroup.total",group.progress,group.total) end
+		-- If we've collected the item, use the "Show Collected Items" filter.
+		if group.total == group.progress then
+			-- if app.DEBUG_LOG then print("UpdateGroup.complete",group.progress,group.total) end
+			if app.CollectedItemVisibilityFilter(group) then
+				-- if app.DEBUG_LOG then print("UpdateGroup.showcomplete",group.progress,group.total) end
+				group.visible = true;
 			end
 		else
-			-- If the 'can equip' filter says true
-			if app.GroupFilter(group) then
-				if group.collectible then
-					-- Increment the parent group's totals.
-					parent.total = (parent.total or 0) + (group.total or 1);
-
-					-- If we've collected the item, use the "Show Collected Items" filter.
-					if group.collected then
-						group.visible = app.CollectedItemVisibilityFilter(group);
-						parent.progress = (parent.progress or 0) + (group.progress or 1);
-					else
-						group.visible = true;
-						-- if this group is visible, ensure parent is also visible
-						parent.visible = 1;
-					end
-				elseif group.trackable and app.ShowIncompleteThings(group) then
-					-- If this group is trackable, then we should show it.
-					group.visible = not group.saved or app.CollectedItemVisibilityFilter(group);
-					-- if this group is visible, ensure parent is also visible
-					if group.visible then parent.visible = 1; end
-				else
-					-- Hide this group.
-					group.visible = defaultVisibility;
-				end
-			else
-				-- Hide this group. We aren't filtering for it.
-				group.visible = defaultVisibility;
-			end
+			group.visible = true;
 		end
+	elseif app.ShowIncompleteThings(group) then
+		-- if app.DEBUG_LOG then print("UpdateGroup.trackable",group.progress,group.total) end
+		-- If this group is trackable, then we should show it.
+		group.visible = not group.saved or app.DefaultFilter();
+		parent.forceShow = group.visible or parent.forceShow;
 	else
-		-- This group doesn't meet requirements.
-		group.visible = defaultVisibility;
-	end
-
-	if group.OnUpdate then group:OnUpdate(); end
-end
-]]
---[[
-UpdateGroups = function(parent, g, defaultVis)
-	if g then
-		-- whenever updating a group, ensure values are set if not
-		if not parent.total then parent.total = 0; end
-		if not parent.progress then parent.progress = 0; end
-		-- default visibility for group updates is debug mode itself
-		-- this way 'collected' stuff can be hidden while un-collectible stuff can be shown
-		local defaultVisibility = defaultVis or app.MODE_DEBUG or false;
-		-- print("updategroup",parent.text);
-		for key, group in ipairs(g) do
-			UpdateGroup(parent, group, defaultVisibility);
-		end
+		group.visible = app.DefaultFilter();
 	end
 end
-]]--
+local UpdateGroup, UpdateGroups;
 UpdateGroup = function(parent, group, window)
 	-- local shouldLog = group.key == "questID" and group[group.key] == 62691 and 62691;
 	-- if not app.DEBUG_LOG and shouldLog then
@@ -11409,7 +11309,7 @@ UpdateGroup = function(parent, group, window)
 	-- 	return group.visible;
 	-- end
 
-	local visible;
+	group.visible = nil;
 
 	-- Determine if this user can enter the instance or acquire the item.
 	if app.GroupRequirementsFilter(group) then
@@ -11427,99 +11327,17 @@ UpdateGroup = function(parent, group, window)
 				group.progress = group.progress + (group.collected and 1 or 0);
 				group.total = group.total + 1;
 				-- if app.DEBUG_LOG then print("UpdateGroup.Collectible",group.progress,group.total) end
-			-- else
-			-- 	-- Default to 0 for both
-			-- 	group.progress = 0;
-			-- 	group.total = 0;
 			end
 
 			-- Check if this is a group
 			if group.g then
 				-- if app.DEBUG_LOG then print("UpdateGroup.g",group.progress,group.total) end
-
-				-- if LOG or app.DEBUG_LOG then print(group.key,group.key and group[group.key],"Has g","t/p",group.total,group.progress) end
-
-				-- TODO: ideally the recursive update would be outside of the top group, and we only need to process the top group
-				-- if everything inside is hidden, otherwise it would obviously need to be shown.
-				-- BUT things have not been designed in this way entirely... plenty of things are 'visible' even though they are Within
-				-- otherwise filtered groups... maybe that's good...?
-
-				-- If the 'can equip' filter says true
-				-- if app.GroupFilter(group) then
-
-
-				-- -- If this item is collectible, then mark it as such.
-				-- if group.collectible then
-				-- 	-- An item is a special case where it may have both an appearance and a set of items
-				-- 	group.progress = group.progress + (group.collected and 1 or 0);
-				-- 	group.total = group.total + 1;
-				-- -- else
-				-- -- 	-- Default to 0 for both
-				-- -- 	group.progress = 0;
-				-- -- 	group.total = 0;
-				-- end
-
 				-- Update the subgroups recursively...
 				UpdateGroups(group, group.g, window);
 				-- if app.DEBUG_LOG then print("UpdateGroup.g.Updated",group.progress,group.total) end
-
-				-- if LOG or app.DEBUG_LOG then print(group.key,group.key and group[group.key],"After g","t/p",group.total,group.progress) end
-
-				-- Increment the parent group's totals.
-				-- parent.total = (parent.total or 0) + group.total;
-				-- parent.progress = (parent.progress or 0) + group.progress;
-
-				-- If this group is forced to be shown due to contained groups being shown without being collectible
-				if group.forceShow then
-					-- if app.DEBUG_LOG then print("UpdateGroup.g.forceShow",group.progress,group.total) end
-					visible = true;
-				-- If this group contains Things, show based on visibility filter
-				elseif group.total > 0 and app.GroupVisibilityFilter(group) then
-					-- if app.DEBUG_LOG then print("UpdateGroup.g.total",group.progress,group.total) end
-					visible = true;
-				-- If this group is trackable, then we should show it.
-				elseif app.ShowIncompleteThings(group) then
-					-- if app.DEBUG_LOG then print("UpdateGroup.g.trackable",group.progress,group.total) end
-					visible = not group.saved;
-					parent.forceShow = visible or parent.forceShow;
-				-- elseif group.itemID and app.CollectibleLoot and group.f then
-				-- 	visible = true;
-				end
-				group.forceShow = nil;
+				SetGroupVisibility(parent, group);
 			else
-				-- If the 'can equip' filter says true
-				-- if app.GroupFilter(group) then
-
-				if group.total > 0 then
-					-- if app.DEBUG_LOG then print("UpdateGroup.total",group.progress,group.total) end
-					-- Increment the parent group's totals.
-					-- group.total = group.total + 1;
-
-					-- If we've collected the item, use the "Show Collected Items" filter.
-					if group.total == group.progress then
-						-- if app.DEBUG_LOG then print("UpdateGroup.complete",group.progress,group.total) end
-						-- group.progress = group.progress + 1;
-						if app.CollectedItemVisibilityFilter(group) then
-							-- if app.DEBUG_LOG then print("UpdateGroup.showcomplete",group.progress,group.total) end
-							visible = true;
-						end
-					else
-						visible = true;
-					end
-				elseif app.ShowIncompleteThings(group) then
-					-- if app.DEBUG_LOG then print("UpdateGroup.trackable",group.progress,group.total) end
-					-- If this group is trackable, then we should show it.
-						-- if app.DEBUG_LOG then print("UpdateGroup.trackable.visible",group.progress,group.total) end
-					visible = not group.saved;
-					parent.forceShow = visible or parent.forceShow;
-				-- elseif group.itemID and app.CollectibleLoot and group.f then
-				-- 	visible = true;
-				end
-
-				--- Increment parent total/progress
-				-- parent.total = (parent.total or 0) + group.total;
-				-- parent.progress = (parent.progress or 0) + group.progress;
-				-- end
+				SetThingVisibility(parent, group);
 			end
 
 			-- Increment the parent group's totals
@@ -11527,58 +11345,39 @@ UpdateGroup = function(parent, group, window)
 			parent.progress = (parent.progress or 0) + group.progress;
 		end
 	end
-
-	-- Set the visibility
-	group.visible = visible;
-	-- if LOG or app.DEBUG_LOG then print(group.key,group.key and group[group.key],"Update Complete","t/p/v",group.total,group.progress,group.visible) end
-	-- if LOG then app.DEBUG_LOG = nil; end
-	-- if shouldLog then
-	-- 	print("---")
-	-- 	app.DEBUG_LOG = nil;
-	-- end
-	return visible;
 end
 UpdateGroups = function(parent, g, window)
 	if g then
-		local visible = false;
 		for key, group in ipairs(g) do
 			if group.OnUpdate then
 				if not group:OnUpdate() then
-					if UpdateGroup(parent, group, window) then
-						visible = true;
-					end
+					UpdateGroup(parent, group, window);
 				elseif group.visible then
 					group.total = 0;
 					group.progress = 0;
 					UpdateGroups(group, group.g, window);
-					visible = true;
 				end
 				-- some objects are able to populate themselves via OnUpdate and track if needing to do another update via 'doUpdate'
 				if window and group.doUpdate then window.doUpdate = true; end
-			elseif UpdateGroup(parent, group, window) then
-				visible = true;
+			else
+				UpdateGroup(parent, group, window);
 			end
 		end
-		return visible;
 	end
 end
 local function UpdateParentProgress(group)
 	group.progress = group.progress + 1;
+	-- print("new progress",group.progress,group.total,group.text)
 
 	-- Continue on to this object's parent.
 	if group.parent then
 		if group.visible then
+			-- print("visible",group.text)
 			-- If this is a collected collectible, update the parent.
-			UpdateParentProgress(group.parent)
-
-			-- If this group is trackable, then we should show it.
-			if app.GroupVisibilityFilter(group) then
-				group.visible = true;
-			elseif app.ShowIncompleteThings(group) then
-				group.visible = not group.saved;
-			else
-				group.visible = false;
-			end
+			UpdateParentProgress(group.parent);
+			-- Set visibility for this group as well
+			SetGroupVisibility(group.parent, group);
+			-- print("visible?",group.visible,group.text)
 		end
 	end
 end
@@ -17241,7 +17040,7 @@ app:GetWindow("Tradeskills", UIParent, function(self, force, got)
 					ATTAccountWideData.Spells[spellID] = 1;
 					if not app.CurrentCharacter.Spells[spellID] then
 						app.CurrentCharacter.Spells[spellID] = 1;
-						app:RefreshData(true, true);
+						UpdateSearchResults(SearchForField("spellID",spellID));
 						if not previousState or not app.Settings:Get("AccountWide:Recipes") then
 							app:PlayFanfare();
 							app:TakeScreenShot();

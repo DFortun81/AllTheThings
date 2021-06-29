@@ -175,7 +175,7 @@ _.Zones =
 							i(128948),	-- Nefarious Ring
 						},
 					}),
-					n(97370, { 	-- General Volroth
+					n(97370, {	-- General Volroth
 						["questID"] = 40234,
 						["coord"] = { 68.6, 27.6, 672 },
 						["g"] = {
@@ -183,7 +183,7 @@ _.Zones =
 							i(133313),	-- Pit Lord's Cuffs
 						},
 					}),
-					n(97059, { 	-- King Voras
+					n(97059, {	-- King Voras
 						["questID"] = 40232,
 						["coord"] = { 74.6, 57.5, 672 },
 						["g"] = {

@@ -16,7 +16,7 @@ _.Achievements =
 		n(-10003, {	-- The Burning Crusade
 			ach(896),		-- A Quest a  Day Keeps the Ogres at Bay
 			ach(893, {		-- Cenarion War Hippogryph
-				i(33999), 		-- Cenarion War Hippogryph
+				i(33999),		-- Cenarion War Hippogryph
 			}),
 			ach(902),		-- Chief Exalted Officer
 			ach(894),		-- Flying High Over Skettis
@@ -26,9 +26,9 @@ _.Achievements =
 			ach(899, {		-- Oh My, Kurenai
 				["races"] = ALLIANCE_ONLY,
 			}),
-			ach(898), 		-- On Wings of Nether
-			ach(903), 		-- Shattrath Divided
-			ach(1638), 		-- Skyshattered
+			ach(898),		-- On Wings of Nether
+			ach(903),		-- Shattrath Divided
+			ach(1638),		-- Skyshattered
 			ach(958),		-- Sworn to the Deathsworn
 			ach(764, {		-- The Burning Crusader (A)
 				["races"] = ALLIANCE_ONLY,
@@ -50,10 +50,10 @@ _.Achievements =
 					crit(5),	-- The Sha'tar
 				},
 			}),
-			ach(900), 		-- The Czar of Sporeggar
-			ach(959), 		-- The Scale of the Sands
-			ach(960), 		-- The Violent Eye
-			ach(897), 		-- You're So Offensive
+			ach(900),		-- The Czar of Sporeggar
+			ach(959),		-- The Scale of the Sands
+			ach(960),		-- The Violent Eye
+			ach(897),		-- You're So Offensive
 		}),
 	}),
 };

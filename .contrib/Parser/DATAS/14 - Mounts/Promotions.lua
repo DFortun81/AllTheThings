@@ -4,7 +4,7 @@
 
 _.Mounts =
 {
-	n(-31, { 	-- Promotion
+	n(-31, {	-- Promotion
 		un(REMOVED_FROM_GAME, i(43599)),	-- Big Blizzard Bear
 		un(REMOVED_FROM_GAME, i(118515)),	-- Cindermane Charger
 		un(REMOVED_FROM_GAME, i(109013)),	-- Dread Raven
@@ -14,7 +14,7 @@ _.Mounts =
 		un(REMOVED_FROM_GAME, i(173299)),	-- Explorer's Jungle Hopper
 		un(REMOVED_FROM_GAME, i(153540)),	-- Gilded Ravasaur
 		i(98618),			-- Hearthsteed
-		un(REMOVED_FROM_GAME, i(83086)), 	-- Heart of the Nightwing
+		un(REMOVED_FROM_GAME, i(83086)),	-- Heart of the Nightwing
 		un(REMOVED_FROM_GAME, i(128425)),	-- Illidari Felstalker
 		un(REMOVED_FROM_GAME, i(85870)),	-- Imperial Quilen
 		un(REMOVED_FROM_GAME, i(164571)),	-- Meat Wagon

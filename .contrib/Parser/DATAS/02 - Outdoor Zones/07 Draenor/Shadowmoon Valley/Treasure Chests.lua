@@ -319,7 +319,7 @@ _.Zones =
 					["questID"] = 35600,
 					["coord"] = { 55.8, 20.0, 539 },
 					["g"] = {
-						i(118104), 	-- Umbrafen Spore Pet
+						i(118104),	-- Umbrafen Spore Pet
 					},
 				}),
 				o(233101, {	-- Sunken Fishing Boat

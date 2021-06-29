@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(3, {	-- Wrath of the Lich King
-	inst(284, { 	-- Trial of the Champion
+	inst(284, {	-- Trial of the Champion
 		["mapID"] = 171,
 		["lvl"] = 65,
 		["g"] = {
@@ -444,7 +444,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 								["achievementID"] = 4297,	-- Heroic: Trial of the Champion (H)
 								["races"] = HORDE_ONLY,
 							}),
-							ach(3804), 	-- I've Had Worse
+							ach(3804),	-- I've Had Worse
 							i(49682),		-- Black Knight's Rondel
 							i(47569),		-- Spectral Kris
 							i(47568),		-- True-Aim Long Rifle

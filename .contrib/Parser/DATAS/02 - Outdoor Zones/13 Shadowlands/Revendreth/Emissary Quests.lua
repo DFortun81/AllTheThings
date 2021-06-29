@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(SHADOWLANDS, {
 		m(REVENDRETH, {
-			n(-169, { 	-- Emissary Quests
+			n(-169, {	-- Emissary Quests
 				q(61100, {	-- Supplies from the Court of Harvesters
 					["provider"] = { "n", 156822 },	-- Mistress Mihaela <Court of Harvesters Quartermaster>
 					["lvl"] = { 60 },

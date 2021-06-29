@@ -54,7 +54,7 @@ _.ExpansionFeatures =
 					}),
 					q(62433, {	-- Raptor Soul
 						["provider"] = { "i", 182178 },	-- Raptor Soul
-						["crs"] = { 169769 },	-- 	Mueh'zala
+						["crs"] = { 169769 },	-- Mueh'zala
 					}),
 					q(62434, {	-- Runestag Soul
 						["provider"] = { "i", 182179 },	-- Runestag Soul

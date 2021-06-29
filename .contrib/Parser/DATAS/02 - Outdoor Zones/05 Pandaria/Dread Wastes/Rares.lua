@@ -4,14 +4,14 @@
 
 _.Zones =
 {
-	m(424, { 	-- Pandaria
+	m(424, {	-- Pandaria
 		m(422, {	-- Dread Wastes
 			n(RARES, {
 				n(50821, {	-- Ai-Li Skymirror
 					["coord"] = { 34.8, 23.2, 422 },
 					["g"] = {
 						i(87629),	-- Chestplate of Manifest
-						i(86589), 	-- Ai-Li's Skymirror
+						i(86589),	-- Ai-Li's Skymirror
 						i(87632),	-- Fearsworn Chestpiece
 						i(87635),	-- Amber-Starched Robes
 						i(87630),	-- Chestpiece of Twinkling Stars
@@ -79,7 +79,7 @@ _.Zones =
 					["g"] = {
 						i(87634),	-- Mazu's Robe
 						i(87630),	-- Chestpiece of Twinkling Stars
-						i(86593), 	-- Hozen Beach Ball
+						i(86593),	-- Hozen Beach Ball
 						i(87635),	-- Amber-Starched Robes
 						i(87629),	-- Chestplate of Manifest Dread
 						i(87632),	-- Fearsworn Chestpiece

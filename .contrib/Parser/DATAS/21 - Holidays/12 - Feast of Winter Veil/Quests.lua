@@ -95,8 +95,8 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 							un(HOLIDAY_FEAST_OF_WINTER_VEIL, i(54438)),	-- Tiny Blue Ragdoll
 							un(HOLIDAY_FEAST_OF_WINTER_VEIL, i(54437)),	-- Tiny Green Ragdoll
 							un(HOLIDAY_FEAST_OF_WINTER_VEIL, i(44606)),	-- Toy Train Set
-							un(HOLIDAY_FEAST_OF_WINTER_VEIL, i(151349)), 	-- Toy Weapon Set [Alliance]
-							un(HOLIDAY_FEAST_OF_WINTER_VEIL, i(151348)), 	-- Toy Weapon Set [Horde]
+							un(HOLIDAY_FEAST_OF_WINTER_VEIL, i(151349)),	-- Toy Weapon Set [Alliance]
+							un(HOLIDAY_FEAST_OF_WINTER_VEIL, i(151348)),	-- Toy Weapon Set [Horde]
 							un(HOLIDAY_FEAST_OF_WINTER_VEIL, i(45057)),	-- Wind-Up Train Wrecker
 							un(HOLIDAY_FEAST_OF_WINTER_VEIL, i(116691)),	-- Zhevra Lounge Cushion
 							-- Illusions

@@ -7,7 +7,7 @@ _.ExpansionFeatures =
 	n(-9966, {	-- Draenor Garrisons
 		m(582, {	-- Lunarfall
 			n(VENDORS, {
-				n(90894, { 	-- Alexi Hackercam <Ore Trader>
+				n(90894, {	-- Alexi Hackercam <Ore Trader>
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(120945, {	-- Primal Spirit
@@ -81,7 +81,7 @@ _.ExpansionFeatures =
 						}),
 					},
 				}),
-				n(80159, { 	-- Arsenio Zerep <Cook>
+				n(80159, {	-- Arsenio Zerep <Cook>
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(122556),	-- Recipe: Buttered Sturgeon
@@ -92,7 +92,7 @@ _.ExpansionFeatures =
 						i(122560),	-- Recipe: Whiptail Fillet
 					},
 				}),
-				n(88779, { 	-- Benjamin Brode <Traveling Merchant>
+				n(88779, {	-- Benjamin Brode <Traveling Merchant>
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(119210, {	-- Hearthstone Board (TOY!)
@@ -203,7 +203,7 @@ _.ExpansionFeatures =
 						}),
 					},
 				}),
-				n(91020, { 	-- Enchantress Ismae <Dust Trader>
+				n(91020, {	-- Enchantress Ismae <Dust Trader>
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(122711, {	-- Formula: Temporal Binding
@@ -220,7 +220,7 @@ _.ExpansionFeatures =
 						}),
 					},
 				}),
-				n(80285, { 	-- Guh <Bladespire Trader>
+				n(80285, {	-- Guh <Bladespire Trader>
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "Must speak to him in |cFFFFD700Frostfire Ridge|r before he joins your garrison.",
 					["g"] = {
@@ -229,7 +229,7 @@ _.ExpansionFeatures =
 						}),
 					},
 				}),
-				n(91024, { 	-- Jake the Fox <Leather Trader>
+				n(91024, {	-- Jake the Fox <Leather Trader>
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(120945, {	-- Primal Spirit
@@ -359,7 +359,7 @@ _.ExpansionFeatures =
 						}),
 					},
 				}),
-				n(88223, { 	-- Sergeant Crowler <Garrison Quartermaster>
+				n(88223, {	-- Sergeant Crowler <Garrison Quartermaster>
 					["crs"] = {78564},
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -657,7 +657,7 @@ _.ExpansionFeatures =
 						}),
 					},
 				}),
-				n(95470, { 	-- Trader Araanda <Local Supplies>
+				n(95470, {	-- Trader Araanda <Local Supplies>
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(127868, {	-- Crusher (PET!)

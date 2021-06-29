@@ -8,13 +8,13 @@ _.WorldEvents =
 	d(24, {  -- Timewalking
 		["u"] = 42,	--  Timewalking
 		["g"] = {
-			tier(4, { 	-- Catacylsm
+			tier(4, {	-- Catacylsm
 				q(40786, {	-- The Smoldering Ember (A)
 					["provider"] = { "i", 133378 },	-- Smoldering Timewarped Ember
 					["isWeekly"] = true,
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(40787, { 	-- The Smoldering Ember (H)
+				q(40787, {	-- The Smoldering Ember (H)
 					["provider"] = { "i", 133377 },	-- Smoldering Timewarped Ember
 					["isWeekly"] = true,
 					["races"] = HORDE_ONLY,

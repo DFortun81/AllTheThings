@@ -32,7 +32,7 @@ _.Zones =
 					["coord"] = { 67.2, 84.6, 539 },
 					["isDaily"] = true,
 					["g"] = {
-						i(119400), 	-- Rugged Crystal Cudgel
+						i(119400),	-- Rugged Crystal Cudgel
 					},
 				}),
 				n(82326, {	-- Ba'ruun
@@ -84,7 +84,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"]= { 46.0, 71.8, 539 },	-- **Coords unconfirmed, relied on wowhead**
 					["g"] = {
-						i(119431), 	-- Servant of Demidos (PET!)
+						i(119431),	-- Servant of Demidos (PET!)
 						i(119377),	-- Void-Touched Diamond Necklace
 					},
 				}),
@@ -214,7 +214,7 @@ _.Zones =
 						{ 44.6, 43.6, 539 },
 					},
 					["g"] = {
-						i(116773), 	-- Swift Breezestrider (MOUNT!)
+						i(116773),	-- Swift Breezestrider (MOUNT!)
 					},
 				}),
 				n(84925, {	-- Quartermaster Hershak
@@ -222,7 +222,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 50.2, 72.6, 539 },
 					["g"] = {
-						i(119382), 	-- Hershak's Heavy Legguards
+						i(119382),	-- Hershak's Heavy Legguards
 					},
 				}),
 				n(82374, {	-- Rai'vosh

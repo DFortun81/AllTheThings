@@ -3587,7 +3587,7 @@ _.Zones =
 								}),
 							},
 						}),
-						n(87063, { 	-- Joao Calhandro <Inscription Recipes>
+						n(87063, {	-- Joao Calhandro <Inscription Recipes>
 							["coord"] = { 62.0, 33.5, 622 },
 							["g"] = {
 								i(111923, {	-- Draenor Inscription **Teaches laughing tarot, ocean tarot, savage tarot, war paints, card of omens, research warbinders ink, secrets of draenor inscription, Warbinder's ink
@@ -4279,7 +4279,7 @@ _.Zones =
 								}),
 							},
 						}),
-						n(87062, { 	-- Royce Bigbeard <Blacksmithing Plans>
+						n(87062, {	-- Royce Bigbeard <Blacksmithing Plans>
 							["coord"] = { 49.0, 48.7, 622 },
 							["g"] = {
 								i(115356, {	-- Draenor Blacksmithing

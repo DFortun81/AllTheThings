@@ -42,77 +42,77 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 158653 },	-- Prince Renathal
 						["coord"] = { 51.8, 37.4, 1699 },	-- Sinfall Reaches
 						["g"] = {
-							i(181372),	-- 	Tribute of the Ascended
+							i(181372),	-- Tribute of the Ascended
 						},
 					}),
 					q(60431, {	-- A Call to Maldraxxus
 						["provider"] = { "n", 158653 },	-- Prince Renathal
 						["coord"] = { 51.2, 37.8, 1699 },	-- Sinfall Reaches
 						["g"] = {
-							i(181732),	-- 	Tribute of the Ambitious
+							i(181732),	-- Tribute of the Ambitious
 						},
 					}),
 					q(60378, {	-- A Source of Sorrowvine
 						--["provider"] = { "n",  },	--
 						--["coord"] = { ,  },
 						["g"] = {
-							i(181556),	-- 	Tribute of the Court
+							i(181556),	-- Tribute of the Court
 						},
 					}),
 					q(60370, {	-- A Wealth of Wealdwood
 						--["provider"] = { "n",  },	--
 						--["coord"] = { ,  },
 						["g"] = {
-							i(181556),	-- 	Tribute of the Court
+							i(181556),	-- Tribute of the Court
 						},
 					}),
 					q(60389, {	-- Aiding Ardenweald
 						["provider"] = { "n", 165302 },	-- Rendle
 						["coord"] = { 62.2, 76.3, 1700 },	-- Sinfall Depths
 						["g"] = {
-							i(181475),	-- 	Bounty of the Grove Wardens
+							i(181475),	-- Bounty of the Grove Wardens
 						},
 					}),
 					q(60394, {	-- Aiding Bastion
 						["provider"] = { "n", 165302 },	-- Rendle
 						["coord"] = { 62.0, 76.2, 1700 },	-- Sinfall Depths
 						["g"] = {
-							i(181372),	-- 	Tribute of the Ascended
+							i(181372),	-- Tribute of the Ascended
 						},
 					}),
 					q(60397, {	-- Aiding Maldraxxus
 						["provider"] = { "n", 165302 },	-- Rendle
 						["coord"] = { 62.0, 76.1, 1700 },	-- Sinfall Depths
 						["g"] = {
-							i(181732),	-- 	Tribute of the Ambitious
+							i(181732),	-- Tribute of the Ambitious
 						},
 					}),
 					q(60399, {	-- Aiding Revendreth
 						["provider"] = { "n", 165302 },	-- Rendle
 						["coord"] = { 62.2, 76.3, 1700 },	-- Sinfall Depths
 						["g"] = {
-							i(181556),	-- 	Tribute of the Court
+							i(181556),	-- Tribute of the Court
 						},
 					}),
 					q(60462, {	-- Anima Appeal
 						["provider"] = { "n", 164739 },	-- Devahia
 						--["coord"] = { 48.9, 39.3, REVENDRETH },
 						["g"] = {
-							i(181556),	-- 	Tribute of the Court
+							i(181556),	-- Tribute of the Court
 						},
 					}),
 					q(60460, {	-- Anima Salvage
 						["provider"] = { "n", 164738 },	-- Tenaval
 						["coord"] = { 45.4, 28.5, 1699 },	-- Sinfall Reaches
 						["g"] = {
-							i(181556),	-- 	Tribute of the Court
+							i(181556),	-- Tribute of the Court
 						},
 					}),
 					q(60375, {	-- Bonemetal Bonanza
 						--["provider"] = { "n",  },	--
 						--["coord"] = { ,  },
 						["g"] = {
-							i(181556),	-- 	Tribute of the Court
+							i(181556),	-- Tribute of the Court
 						},
 					}),
 					q(60441, {	-- Challenges in Ardenweald
@@ -147,14 +147,14 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 158713 },	-- The Curator
 						--["coord"] = { ,  },
 						["g"] = {
-							i(181556),	-- 	Tribute of the Court
+							i(181556),	-- Tribute of the Court
 						},
 					}),
 					q(60417, {	-- Rare Resources
 						["provider"] = { "n", 158713 },	-- The Curator
 						["coord"] = { 61.3, 66.7, 1700 },	-- Sinfall Depths
 						["g"] = {
-							i(181556),	-- 	Tribute of the Court
+							i(181556),	-- Tribute of the Court
 						},
 					}),
 					q(60456, {	-- Storm the Maw
@@ -168,7 +168,7 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 164741 },	-- Tactician Sakaa
 						["coord"] = { 57.8, 59.5, 1699 },	-- Sinfall Reaches
 						["g"] = {
-							i(181556),	-- 	Tribute of the Court
+							i(181556),	-- Tribute of the Court
 						},
 					}),
 					q(60401, {	-- Training in Ardenweald
@@ -182,14 +182,14 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 164741 },	-- Tactician Sakaa
 						["coord"] = { 57.8, 59.5, 1699 },	-- Sinfall Reaches
 						["g"] = {
-							i(181372),	-- 	Tribute of the Ascended
+							i(181372),	-- Tribute of the Ascended
 						},
 					}),
 					q(60409, {	-- Training in Maldraxxus
 						["provider"] = { "n", 164741 },	-- Tactician Sakaa
 						["coord"] = { 57.8, 59.5, 1699 },	-- Sinfall Reaches
 						["g"] = {
-							i(181732),	-- 	Tribute of the Ambitious
+							i(181732),	-- Tribute of the Ambitious
 						},
 					}),
 					q(60432, {	-- Troubles at Home

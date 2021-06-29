@@ -419,7 +419,7 @@ _.Zones =
 					["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
 					["coord"] = { 56.4, 57.2, MALDRAXXUS },
 					["g"] = {
-						i(173891),	-- 	Plagueborn Slime (PET!)
+						i(173891),	--	Plagueborn Slime (PET!)
 					},
 				}),
 				q(58785, {	-- Smack And Grab
@@ -755,5 +755,19 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(59882),	-- Sure Bet
 		q(59175),	-- The Eternal Revenge
 		q(58261),	-- What's the Grub
+	}),
+	n(-10100, {	-- Shadowlands
+		n(-163, {	-- Armor
+			n(-43, {	-- Cloth
+				i(175512),	-- Corpse-Stitcher's Raiment
+				i(175528),	-- Corpse-Stitcher's Trousers
+			}),
+			n(-44, {	-- Leather
+			}),
+			n(-45, {	-- Mail
+			}),
+			n(-46, {	-- Plate
+			}),
+		}),
 	}),
 });

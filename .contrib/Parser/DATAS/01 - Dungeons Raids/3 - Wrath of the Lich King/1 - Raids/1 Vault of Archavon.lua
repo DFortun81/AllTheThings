@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(3, {	-- Wrath of the Lich King
-	inst(753, { 	-- Vault of Archavon
+	inst(753, {	-- Vault of Archavon
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 80,

@@ -705,9 +705,9 @@ _.Zones =
 						867,	-- Harpy Raiders
 					},
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(5321)),	-- 	Elegant Shortsword
-						un(REMOVED_FROM_GAME, i(5279)),	-- 	Harpy Skinner
-						un(REMOVED_FROM_GAME, i(5318)),	-- 	Zhovur Axe
+						un(REMOVED_FROM_GAME, i(5321)),	--	Elegant Shortsword
+						un(REMOVED_FROM_GAME, i(5279)),	--	Harpy Skinner
+						un(REMOVED_FROM_GAME, i(5318)),	--	Zhovur Axe
 					},
 				}),
 				q(29089, {	-- Sludge Beast!

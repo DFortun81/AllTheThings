@@ -10,7 +10,7 @@ _.Zones =
 				n(6648, {	-- Antilos
 					["coord"] = { 45.2, 27.2, AZSHARA },
 				}),
-				n(14464, { 	-- Avalanchion
+				n(14464, {	-- Avalanchion
 					["description"] = "This was only available during the Elemental Invasion.",
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
@@ -60,7 +60,7 @@ _.Zones =
 						{ 37.4, 74.6, AZSHARA },
 					},
 				}),
---				n(107477, { 	-- N.U.T.Z. -- mob to tame			}),
+--				n(107477, {	-- N.U.T.Z. -- mob to tame			}),
 			}),
 		}),
 	}),

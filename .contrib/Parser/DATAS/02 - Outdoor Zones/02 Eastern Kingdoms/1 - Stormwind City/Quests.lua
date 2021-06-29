@@ -578,7 +578,7 @@ _.Zones =
 					["coord"] = { 58.8, 52.8, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(72042), 	-- Alliance Balloon
+						i(72042),	-- Alliance Balloon
 					},
 				}),
 				q(1705,  {	-- Burning Blood
@@ -1319,11 +1319,11 @@ _.Zones =
 					["coord"] = { 64.6, 33.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(65640), 		-- Mask of the Farseer
-						i(65622), 		-- Headcover of the Farseer
+						i(65640),	-- Mask of the Farseer
+						i(65622),	-- Headcover of the Farseer
 					},
 				}),
-				q(2206,  { 	-- Snatch and Grab
+				q(2206,  {	-- Snatch and Grab
 					["provider"] = { "n", 332 },	-- Master Mathias Shaw
 					["classes"] = { ROGUE },
 					["coord"] = { 81.2, 63.2, STORMWIND_CITY },

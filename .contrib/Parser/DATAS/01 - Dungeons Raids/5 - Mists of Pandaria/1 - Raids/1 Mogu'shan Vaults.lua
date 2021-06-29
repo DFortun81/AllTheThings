@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(5, {	-- Mists of Pandaria
-	inst(317, { 	-- Mogu'shan Vaults
+	inst(317, {	-- Mogu'shan Vaults
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 90,
@@ -88,18 +88,18 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						},
 						--[[
 						["crs"] = {
-							60047, 	-- Amethyst Guardian
-							60051, 	-- Cobalt Guardian
-							60043, 	-- Jade Guardian
-							59915, 	-- Jasper Guardian
-							60009, 	-- Feng the Accursed
-							60143, 	-- Gara'jal the Spiritbindre
-							60701, 	-- Zian of the Endless Shadow <Sorcer King>
-							60708, 	-- Meng the Demented <Mad King>
-							60709, 	-- Qiang the Merciless <Warlord King>
-							60710, 	-- Subetai the Swift <Bandit King>
-							60410, 	-- Elegon
-							60400, 	-- Jan-xi <Emperor's Open Hand>
+							60047,	-- Amethyst Guardian
+							60051,	-- Cobalt Guardian
+							60043,	-- Jade Guardian
+							59915,	-- Jasper Guardian
+							60009,	-- Feng the Accursed
+							60143,	-- Gara'jal the Spiritbindre
+							60701,	-- Zian of the Endless Shadow <Sorcer King>
+							60708,	-- Meng the Demented <Mad King>
+							60709,	-- Qiang the Merciless <Warlord King>
+							60710,	-- Subetai the Swift <Bandit King>
+							60410,	-- Elegon
+							60400,	-- Jan-xi <Emperor's Open Hand>
 							60399,	-- Qin-xi <Emperor's Closed Fist>
 						},
 						]]--

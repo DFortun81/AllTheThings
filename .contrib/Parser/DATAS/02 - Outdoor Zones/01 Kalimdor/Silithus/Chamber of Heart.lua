@@ -381,7 +381,7 @@ _.Zones =
 							["description"] = "Your Heart of Azeroth needs to be 65 to start the questline.",
 							["maps"] = { 1474 },	-- Maelstrom (Scenario)
 						}),
-						q(55735, {	-- 	Defending the Maelstrom
+						q(55735, {	--	Defending the Maelstrom
 							["provider"] = { "n", 152815 },	-- Magni Bronzebeard
 							["coord"] = { 33.7, 54.6, 1474 },
 							["sourceQuest"] = 55732,	-- An Old Scar
@@ -390,7 +390,7 @@ _.Zones =
 						q(55737, {	-- At the Azerite Time
 							["provider"] = { "n", 152815 },	-- Magni Bronzebeard
 							["coord"] = { 33.7, 54.6, 1474 },
-							["sourceQuest"] = 55735,	-- 	Defending the Maelstrom
+							["sourceQuest"] = 55735,	--	Defending the Maelstrom
 							["maps"] = { 1474 },	-- Maelstrom (Scenario)
 						}),
 						-- Heart of Azeroth Level 70

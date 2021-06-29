@@ -36,7 +36,7 @@ _.Zones =
 					["lvl"] = 30,
 					["u"] = REMOVED_FROM_GAME,
 					["sourceQuests"] = {
-						1434, 	-- Befouled by Satyr
+						1434,	-- Befouled by Satyr
 						1435,	-- The Burning of Spirits
 					},
 					["g"] = {
@@ -92,10 +92,10 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 14337,	-- Shadowprey Village
 					["g"] = {
-						i(55955),  	-- Whalefang's Pendant
+						i(55955),	-- Whalefang's Pendant
 						i(55956),	-- Blubber-Stained Grips
 						i(55957),	-- Orca-Oiled Spaulders
-						i(55958),  	-- Orca-Tooth Ring
+						i(55958),	-- Orca-Tooth Ring
 					},
 				}),
 				q(5821,  {	-- Bodyguard for Hire
@@ -130,10 +130,10 @@ _.Zones =
 					["coord"] = { 58.7, 46.4, DESOLACE },
 					["sourceQuest"] = 14304,	-- Blood Theory
 					["g"] = {
-						i(55902), 	-- Kodo-Wrangler Cover
-						i(55903), 	-- Dusty Lasso
-						i(55904), 	-- The Tranquilizer
-						i(131344), 	-- Kodo Lead Chain
+						i(55902),	-- Kodo-Wrangler Cover
+						i(55903),	-- Dusty Lasso
+						i(55904),	-- The Tranquilizer
+						i(131344),	-- Kodo Lead Chain
 					},
 				}),
 				q(5386, {	-- Catch of the Day
@@ -272,10 +272,10 @@ _.Zones =
 						14316,	-- Cenarion Property
 					},
 					["g"] = {
-						i(55909), 	-- Drape of Centaur Dreams
-						i(55910), 	-- Defiant Spire Shoulderguard
-						i(55911), 	-- Stubborn Legguards
-						i(131345), 	-- Rebellious Epaulets
+						i(55909),	-- Drape of Centaur Dreams
+						i(55910),	-- Defiant Spire Shoulderguard
+						i(55911),	-- Stubborn Legguards
+						i(131345),	-- Rebellious Epaulets
 					},
 				}),
 				q(14339, {	-- Delivery Device
@@ -320,10 +320,10 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 14387,	-- Lay of the Land
 					["g"] = {
-						i(55951),  	-- Choker of Renewal
+						i(55951),	-- Choker of Renewal
 						i(55952),	-- Gloves of Nurture
 						i(55953),	-- Shoulderguards of Protection
-						i(55954),  	-- Demonslayer's Signet
+						i(55954),	-- Demonslayer's Signet
 					},
 				}),
 				q(14365, {	-- Ethel Rethor (A)
@@ -356,10 +356,10 @@ _.Zones =
 					["provider"] = { "n", 35757 },	-- Bizby
 					["coord"] = { 60.9, 29.0, DESOLACE },
 					["g"] = {
-						i(55891), 	-- Swoop-Tail Shoulders
-						i(55892), 	-- Feather Lined Legguards
-						i(55893), 	-- Talonrend Stompers
-						i(131337), 	-- Avian Oiled Greaves
+						i(55891),	-- Swoop-Tail Shoulders
+						i(55892),	-- Feather Lined Legguards
+						i(55893),	-- Talonrend Stompers
+						i(131337),	-- Avian Oiled Greaves
 					},
 				}),
 				q(14191, {	-- Furien's Footsteps
@@ -392,8 +392,8 @@ _.Zones =
 					["provider"] = { "n", 6019 },	-- Hornizz Brimbuzzle
 					["coord"] = { 47.8, 61.8, DESOLACE },
 					["g"] = {
-						i(15864), 	-- Condor Bracers
-						i(15865), 	-- Anchorhold Buckler
+						i(15864),	-- Condor Bracers
+						i(15865),	-- Anchorhold Buckler
 					},
 				}),
 				q(5943,  {	-- Gizelton Caravan
@@ -538,10 +538,10 @@ _.Zones =
 					["coord"] = { 38.7, 26.9, DESOLACE },
 					["sourceQuest"] = 14268,	-- Deep Impact
 					["g"] = {
-						i(55896), 	-- Emblazoned Girdle
-						i(55897), 	-- Stonegouge Headgear
-						i(55898), 	-- Rockgrab Crushers
-						i(131338), 	-- Earthhewn Helm
+						i(55896),	-- Emblazoned Girdle
+						i(55897),	-- Stonegouge Headgear
+						i(55898),	-- Rockgrab Crushers
+						i(131338),	-- Earthhewn Helm
 					},
 				}),
 				q(14251, {	-- New Beginnings
@@ -622,10 +622,10 @@ _.Zones =
 					["provider"] = { "n", 36060 },	-- Botanist Ferrah
 					["coord"] = { 58.5, 48.7, DESOLACE },
 					["g"] = {
-						i(55899), 	-- Lasherspike Wristguards
-						i(55900), 	-- Puncture-Binding Spaulder
-						i(55901), 	-- Phytoresistant Helm
-						i(131343), 	-- Thornwoven Epaulets
+						i(55899),	-- Lasherspike Wristguards
+						i(55900),	-- Puncture-Binding Spaulder
+						i(55901),	-- Phytoresistant Helm
+						i(131343),	-- Thornwoven Epaulets
 					},
 				}),
 				q(14364, {	-- Putting Their Heads Together (A)
@@ -634,8 +634,8 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 14363,	-- You'll Know it When You See It
 					["g"] = {
-						i(55924),  	-- Ring of Vigorous Interruption
-						i(55925),  	-- Grounding Choker
+						i(55924),	-- Ring of Vigorous Interruption
+						i(55925),	-- Grounding Choker
 						i(55926),	-- Skull-Scorched Cloak
 					},
 				}),
@@ -645,8 +645,8 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 14225,	-- You'll Know it When You See It
 					["g"] = {
-						i(55927),  	-- Ring of Vigorous Interruption
-						i(55928),  	-- Grounding Choker
+						i(55927),	-- Ring of Vigorous Interruption
+						i(55928),	-- Grounding Choker
 						i(55929),	-- Skull-Scorched Cloak
 					},
 				}),
@@ -676,11 +676,11 @@ _.Zones =
 					["coord"] = { 29.0, 8.1, DESOLACE },
 					["sourceQuest"] = 14284,	-- A Revenant's Vengeance
 					["g"] = {
-						i(55906), 	-- Balmy Wraps
-						i(55907), 	-- Vest of Flowing Water
-						i(55908), 	-- Crackling Girdle
-						i(55905), 	-- Spinescale Longbow
-						i(131342), 	-- Crashing Water Hauberk
+						i(55906),	-- Balmy Wraps
+						i(55907),	-- Vest of Flowing Water
+						i(55908),	-- Crackling Girdle
+						i(55905),	-- Spinescale Longbow
+						i(131342),	-- Crashing Water Hauberk
 						i(156967),	-- Spinescale Hammer
 					},
 				}),
@@ -703,7 +703,7 @@ _.Zones =
 					["g"] = {
 						i(55963),	-- Tranquility of Furien
 						i(55962),	-- Nimblefinger Cloak
-						i(55964),  	-- Flashfire Collar
+						i(55964),	-- Flashfire Collar
 					},
 				}),
 				q(14379, {	-- Rock Lobstrock!
@@ -940,10 +940,10 @@ _.Zones =
 					["coord"] = { 13.2, 46.7, 67 },	-- quest starts in Maraudon's mapID
 					["sourceQuest"] = 14330,	-- Behind Closed Doors
 					["g"] = {
-						i(55914), 	-- Silent Footpads
-						i(55913), 	-- Emissary's Chestpiece
-						i(55912), 	-- Wrought Formal Dagger
-						i(131347), 	-- Messenger's Greaves
+						i(55914),	-- Silent Footpads
+						i(55913),	-- Emissary's Chestpiece
+						i(55912),	-- Wrought Formal Dagger
+						i(131347),	-- Messenger's Greaves
 					},
 				}),
 				q(14357, {	-- To the Hilt! (A)

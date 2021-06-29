@@ -418,19 +418,19 @@ _.Zones =
 					["coord"] = { 44.2, 29.6, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(10314, { 	-- Pattern: Lavender Mageweave Shirt
+						i(10314, {	-- Pattern: Lavender Mageweave Shirt
 							["isLimited"] = true,
 						}),
-						i(10317, { 	-- Pattern: Pink Mageweave Shirt
+						i(10317, {	-- Pattern: Pink Mageweave Shirt
 							["isLimited"] = true,
 						}),
-						i(10326, { 	-- Pattern: Tuxedo Jacket
+						i(10326, {	-- Pattern: Tuxedo Jacket
 							["isLimited"] = true,
 						}),
-						i(10323, { 	-- Pattern: Tuxedo Pants
+						i(10323, {	-- Pattern: Tuxedo Pants
 							["isLimited"] = true,
 						}),
-						i(10321, { 	-- Pattern: Tuxedo Shirt
+						i(10321, {	-- Pattern: Tuxedo Shirt
 							["isLimited"] = true,
 						}),
 					},

@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(7, {	-- Legion
-	inst(767, { 	-- Neltharion's Lair
+	inst(767, {	-- Neltharion's Lair
 		["lvl"] = 98,
 		["mapID"] = 731,
 		["coord"] = { 49.5, 68.5, 650 },

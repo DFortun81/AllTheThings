@@ -1,8 +1,8 @@
 -- _.ItemDB = {};
 -- local i = function(itemID)
--- 	local item = { ["f"] = 58 };
--- 	_.ItemDB[itemID] = item;
--- 	return item;
+--	local item = { ["f"] = 58 };
+--	_.ItemDB[itemID] = item;
+--	return item;
 -- end
 
 -- i(47242);		-- Trophy of the Crusade

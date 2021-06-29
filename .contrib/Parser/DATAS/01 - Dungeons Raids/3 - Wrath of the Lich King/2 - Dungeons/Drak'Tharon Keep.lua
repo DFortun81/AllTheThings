@@ -3,28 +3,28 @@
 -----------------------------------------------------
 
 _.Instances = { tier(3, {	-- Wrath of the Lich King
-	inst(273, { 	-- Drak'Tharon Keep
+	inst(273, {	-- Drak'Tharon Keep
 		["lvl"] = 61,
 		["mapID"] = 160,
 		["maps"] = { 161 },
 		["groups"] = {
 			n(QUESTS, {
-				q(30120,{ 	-- Cleansing Drak'Tharon
+				q(30120,{	-- Cleansing Drak'Tharon
 					["provider"] = { "n", 58149 },	-- Image of Drakuru
 					["groups"] = {
-						i(40755), 	-- Enticing Sabatons
+						i(40755),	-- Enticing Sabatons
 						i(40757),	-- Shackles of Dark Whispers
-						i(40756), 	-- Shoulders of the Seducer
-						i(40758), 	-- Shroud of Temptation
+						i(40756),	-- Shoulders of the Seducer
+						i(40758),	-- Shroud of Temptation
 					},
 				}),
-				q(13129,{ 	-- Head Games
+				q(13129,{	-- Head Games
 					["provider"] = { "n", 26664 },	-- Kurzel
 					["groups"] = {
-						i(44368), 	-- Accused Wristguards
+						i(44368),	-- Accused Wristguards
 						i(44369),	-- Disavowed Bracers
-						i(44366), 	-- Shameful Cuffs
-						i(44367), 	-- Scorned Bands
+						i(44366),	-- Shameful Cuffs
+						i(44367),	-- Scorned Bands
 					},
 				}),
 				q(29828, {	-- What the Scourge Dred
@@ -156,7 +156,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					}),
 				}),
-				cr(26630, e(588, { 	-- Trollgore
+				cr(26630, e(588, {	-- Trollgore
 					{	-- Drak'Tharon Keep: Trollgore
 						["achievementID"] = 482,	-- Drak'Tharon Keep
 						["criteriaID"] = 1,	-- Trollgore
@@ -169,7 +169,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(37717),	-- Legs of Physical Regeneration
 					i(37712),	-- Terrace Defence Boots
 				})),
-				cr(26631, e(589, { 	-- Novos the Summoner
+				cr(26631, e(589, {	-- Novos the Summoner
 					{	-- Drak'Tharon Keep: Novos the Summoner
 						["achievementID"] = 482,	-- Drak'Tharon Keep
 						["criteriaID"] = 2,	-- Novos the Summoner
@@ -183,7 +183,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(35632),	-- Robes of Novos
 					i(40490),	-- Necromantic Wristguards
 				})),
-				cr(27483, e(590, { 	-- King Dred
+				cr(27483, e(590, {	-- King Dred
 					{	-- Drak'Tharon Keep: King Dred
 						["achievementID"] = 482,	-- Drak'Tharon Keep
 						["criteriaID"] = 3,	-- King Dred
@@ -328,7 +328,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							},
 						}),
 					}),
-					cr(26630, e(588, { 	-- Trollgore
+					cr(26630, e(588, {	-- Trollgore
 						{	-- Consumption Junction
 							["achievementID"] = 2151,	-- Consumption Junction
 						},
@@ -344,7 +344,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(37717),	-- Legs of Physical Regeneration
 						i(37712),	-- Terrace Defence Boots
 					})),
-					cr(26631, e(589, { 	-- Novos the Summoner
+					cr(26631, e(589, {	-- Novos the Summoner
 						{	-- Heroic: Drak'Tharon Keep: Novos the Summoner
 							["achievementID"] = 493,	-- Heroic: Drak'Tharon Keep
 							["criteriaID"] = 2,	-- Novos the Summoner
@@ -361,7 +361,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(35632),	-- Robes of Novos
 						i(40490),	-- Necromantic Wristguards
 					})),
-					cr(27483, e(590, { 	-- King Dred
+					cr(27483, e(590, {	-- King Dred
 						{	-- Better Off Dred
 							["achievementID"] = 2039,	-- Better Off Dred
 						},

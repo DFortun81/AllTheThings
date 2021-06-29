@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(424, { 	-- Pandaria
+	m(424, {	-- Pandaria
 		m(422, {	-- Dread Wastes
 			n(ACHIEVEMENTS, {
 				ach(7312, {	-- Amber is the Color of My Energy

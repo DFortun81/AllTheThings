@@ -125,17 +125,17 @@ _.Zones =
 					["coord"] = { 78.4, 62.0, ZANGARMARSH },
 					["lvl"] = lvlsquish(61, 10, 61),
 				}),
-				q(9896,  { 	-- Blacksting's Bane
+				q(9896,  {	-- Blacksting's Bane
 					["qg"] = 18295,	-- Prospector Conall
 					["sourceQuest"] = 9901,	-- Unfinished Business
 					["coord"] = { 68.6, 49.4, ZANGARMARSH },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(60, 10, 60),
 					["groups"] = {
-						i(31788), 	-- Blacksting Gloves
-						i(31786), 	-- Blacksting Shoulders
-						i(31789), 	-- Marshfang Boots
-						i(31787), 	-- Stalwart Girdle
+						i(31788),	-- Blacksting Gloves
+						i(31786),	-- Blacksting Shoulders
+						i(31789),	-- Marshfang Boots
+						i(31787),	-- Stalwart Girdle
 					},
 				}),
 				q(9785,  {	-- Blessings of the Ancients
@@ -308,15 +308,15 @@ _.Zones =
 						i(25601),	-- Murk-Darkened Bracers
 					},
 				}),
-				q(9817,  { 	-- Leader of the Bloodscale
+				q(9817,  {	-- Leader of the Bloodscale
 					["provider"] = { "o", 182115 },	-- Wanted Poster
 					["coord"] = { 79.1, 64.9, ZANGARMARSH },
 					["lvl"] = lvlsquish(58, 10, 58),
 					["groups"] = {
-						i(27723), 	-- Belt of the Moonkin
-						i(27721), 	-- Expedition Footgear
-						i(27722), 	-- Gloves of Marshmanship
-						i(27724), 	-- Wild Shoulderpads
+						i(27723),	-- Belt of the Moonkin
+						i(27721),	-- Expedition Footgear
+						i(27722),	-- Gloves of Marshmanship
+						i(27724),	-- Wild Shoulderpads
 					},
 				}),
 				q(9730,  {	-- Leader of the Darkcrest
@@ -371,17 +371,17 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(62, 10, 62),
 				}),
-				q(9803,  { 	-- Messenger to the Feralfen
+				q(9803,  {	-- Messenger to the Feralfen
 					["qg"] = 18003,	-- Anchorite Ahuurn
 					["sourceQuest"] = 9801,	-- Gathering the Reagents
 					["coord"] = { 68.2, 49.4, ZANGARMARSH },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(60, 10, 60),
 					["groups"] = {
-						i(25614), 	-- Feralfen Beastmaster's Hauberk
-						i(25615), 	-- Feralfen Champion's Boots
-						i(25613), 	-- Feralfen Mystic's Handwraps
-						i(31660), 	-- Feralfen Skulker's Belt
+						i(25614),	-- Feralfen Beastmaster's Hauberk
+						i(25615),	-- Feralfen Champion's Boots
+						i(25613),	-- Feralfen Mystic's Handwraps
+						i(31660),	-- Feralfen Skulker's Belt
 					},
 				}),
 				q(9807, {	-- More Fertile Spores
@@ -502,7 +502,7 @@ _.Zones =
 					["coord"] = { 23.3, 66.2, ZANGARMARSH },
 					["lvl"] = lvlsquish(60, 10, 60),
 				}),
-				q(9839,  { 	-- Overlord Gorefist
+				q(9839,  {	-- Overlord Gorefist
 					["qg"] = 18008,	-- Ikuti
 					["sourceQuest"] = 9835,	-- Ango'rosh Encroachment
 					["coord"] = { 41.8, 27.0, ZANGARMARSH },
@@ -594,7 +594,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(60, 10, 60),
 				}),
-				q(9848,  { 	-- Secrets of the Daggerfen
+				q(9848,  {	-- Secrets of the Daggerfen
 					["qg"] = 18019,	-- Timothy Daniels
 					["coord"] = { 41.2, 28.6, ZANGARMARSH },
 					["races"] = ALLIANCE_ONLY,
@@ -846,7 +846,7 @@ _.Zones =
 -- #if AFTER TBC
 -- These quests trigger after specific events occur in the zone.
 _.HiddenQuestTriggers = {
-	
+
 };
 
 -- These quests never made it in.

@@ -4,7 +4,7 @@
 
 _.Mounts =
 {
-	n(-32, { 	-- Trading Card Game
+	n(-32, {	-- Trading Card Game
 		un(10, i(68825)),	-- Amani Dragonhawk
 		un(10, i(49282)),	-- Big Battle Bear
 		un(10, i(54069)),	-- Blazing Hippogryph

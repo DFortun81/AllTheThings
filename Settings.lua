@@ -638,6 +638,7 @@ settings.UpdateMode = function(self, doRefresh)
 		app.RequiredSkillFilter = app.NoFilter;
 		app.RequireFactionFilter = app.NoFilter;
 		app.RequireCustomCollectFilter = app.NoFilter;
+		app.DefaultFilter = app.NoFilter;
 
 		app.AccountWideAchievements = true;
 		app.AccountWideAzeriteEssences = true;
@@ -678,6 +679,7 @@ settings.UpdateMode = function(self, doRefresh)
 	else
 		app.VisibilityFilter = app.ObjectVisibilityFilter;
 		app.GroupFilter = app.FilterItemClass;
+		app.DefaultFilter = app.Filter;
 		if app.GetDataMember("FilterSeasonal") then
 			app.SeasonalItemFilter = app.FilterItemClass_SeasonalItem;
 		else

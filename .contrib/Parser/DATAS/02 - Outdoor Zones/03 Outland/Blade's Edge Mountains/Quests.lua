@@ -831,7 +831,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(65, 20, 65),
 				}),
-				q(10657, { 	-- Ride the Lightning
+				q(10657, {	-- Ride the Lightning
 					["qg"] = 21691,	-- Toshley
 					["sourceQuest"] = 10584,	-- Picking Up Some Power Converters
 					["coord"] = { 60.5, 69.0, BLADES_EDGE_MOUNTAINS },
@@ -876,7 +876,7 @@ _.Zones =
 					["lvl"] = lvlsquish(65, 20, 65),
 					["groups"] = {
 						i(31456),	-- Gnomish Casting Boots
-						i(30690), 	-- Power Converter (Toy !)
+						i(30690),	-- Power Converter (Toy !)
 						i(31458),	-- Razaani-Buster Leggings
 						i(31459),	-- Soul Saver's Chest Plate
 						i(31457),	-- Toshley's Station Hero's Hat
@@ -1290,13 +1290,13 @@ _.Zones =
 					},
 					["coord"] = { 27.4, 52.7, BLADES_EDGE_MOUNTAINS },
 					["cost"] = {
-						{ "i", 32732, 1 },	-- 	Dragon Teeth
+						{ "i", 32732, 1 },	--	Dragon Teeth
 					},
 					["lvl"] = lvlsquish(70, 20, 70),
 				})),
 				q(10674, {	-- Trapping the Light Fantastic
 					["qg"] = 21691,	-- Toshley
-					["sourceQuest"] = 10657, 	-- Ride the Lightning
+					["sourceQuest"] = 10657,	-- Ride the Lightning
 					["coord"] = { 60.5, 69.0, BLADES_EDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(65, 20, 65),

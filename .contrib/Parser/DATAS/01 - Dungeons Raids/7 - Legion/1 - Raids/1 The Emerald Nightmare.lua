@@ -4,7 +4,7 @@
 
 dofile("./DATAS/06 - Expansion Features/Common/Raid Caches.lua");
 _.Instances = { tier(7, {	-- Legion
-	inst(768, { 	-- The Emerald Nightmare
+	inst(768, {	-- The Emerald Nightmare
 		["isRaid"] = true,
 		["coord"] = { 56.3, 36.9, 641 },
 		["maps"] = {
@@ -25,7 +25,7 @@ _.Instances = { tier(7, {	-- Legion
 		["lvl"] = 110,
 		["g"] = {
 			n(-68, {	-- The Emerald Dream
-				filter(101, { 	-- Pet Battle
+				filter(101, {	-- Pet Battle
 					p(1722, {	-- Dream Whelpling
 						["description"] = "Once you defeat Xavius these will spawn in the room after him."
 					}),
@@ -75,7 +75,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(141695),	-- Tarnished Dreamkeeper's Gauntlets
 					},
 				}),
-				ach(10818, { 	-- Darkbough
+				ach(10818, {	-- Darkbough
 					["crs"] = { 111246 },	-- Archmage Timear
 					["g"] = {
 						cr(102672, e(1703, {	-- Nythendra
@@ -145,7 +145,7 @@ _.Instances = { tier(7, {	-- Legion
 						})),
 					},
 				}),
-				ach(10819, { 	-- Tormented Guardians
+				ach(10819, {	-- Tormented Guardians
 					["crs"] = { 111246 },	-- Archmage Timear
 					["g"] = {
 						cr(100497, e(1667, {	-- Ursoc
@@ -230,7 +230,7 @@ _.Instances = { tier(7, {	-- Legion
 						})),
 					},
 				}),
-				ach(10820, { 	-- Rift of Aln
+				ach(10820, {	-- Rift of Aln
 					["crs"] = { 111246 },	-- Archmage Timear
 					["g"] = {
 						cr(103769, e(1726, {	-- Xavius <Nightmare Lord>
@@ -991,7 +991,7 @@ _.Instances = { tier(7, {	-- Legion
 })};
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-9982, {	-- Legion
-		inst(768, { 	-- The Emerald Nightmare
+		inst(768, {	-- The Emerald Nightmare
 				i(138229),	-- Nightmare Boss 3 Relic Storm
 		}),
 	}),

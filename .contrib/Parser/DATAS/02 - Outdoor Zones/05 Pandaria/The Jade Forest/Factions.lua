@@ -229,7 +229,7 @@ _.Zones =
 								["provider"] = { "n", 58564 },	-- Elder Anli
 								["coord"] = { 57.7, 45.0, 371 },
 								["g"] = {
-									i(85430), 	-- Reins of the Azure Cloud Serpent
+									i(85430),	-- Reins of the Azure Cloud Serpent
 								},
 							}),
 							q(31811, {	-- Riding the Skies (Golden)
@@ -238,7 +238,7 @@ _.Zones =
 								["provider"] = { "n", 58564 },	-- Elder Anli
 								["coord"] = { 57.7, 45.0, 371 },
 								["g"] = {
-									i(85429), 	-- Reins of the Golden Cloud Serpent
+									i(85429),	-- Reins of the Golden Cloud Serpent
 								},
 							}),
 							q(30188, {	-- Riding the Skies (Jade)
@@ -247,7 +247,7 @@ _.Zones =
 								["provider"] = { "n", 58564 },	-- Elder Anli
 								["coord"] = { 57.7, 45.0, 371 },
 								["g"] = {
-									i(79802), 	-- Reins of the Jade Cloud Serpent
+									i(79802),	-- Reins of the Jade Cloud Serpent
 								},
 							}),
 							q(31714, {	-- Saving the Serpents

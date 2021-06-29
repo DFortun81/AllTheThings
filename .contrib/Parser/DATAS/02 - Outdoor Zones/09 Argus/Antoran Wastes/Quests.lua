@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(905, { 	-- Argus
+	m(905, {	-- Argus
 		m(885, {	-- Antoran Wastes
 			n(QUESTS, {
 				q(48075, {	-- A Colorful Key

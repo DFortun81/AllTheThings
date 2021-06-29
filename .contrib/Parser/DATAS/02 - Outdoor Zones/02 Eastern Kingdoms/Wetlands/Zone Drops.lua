@@ -7,26 +7,26 @@ _.Zones =
 	m(EASTERN_KINGDOMS, {
 		m(56, {	-- Wetlands
 			n(ZONEDROPS, {
-				un(REMOVED_FROM_GAME, n(1028, { 	-- Bluegill Muckdweller
+				un(REMOVED_FROM_GAME, n(1028, {	-- Bluegill Muckdweller
 					un(REMOVED_FROM_GAME, i(3022)),	-- Bluegill Breeches
 				})),
-				n(1025, { 	-- Bluegill Puddlejumper
+				n(1025, {	-- Bluegill Puddlejumper
 					un(REMOVED_FROM_GAME, i(1560)),	-- Bluegill Sandals
 				}),
-				un(REMOVED_FROM_GAME, n(1027, { 	-- Bluegill Warrior
+				un(REMOVED_FROM_GAME, n(1027, {	-- Bluegill Warrior
 					un(REMOVED_FROM_GAME, i(2046)),	-- Bluegill Kukri
 				})),
-				un(REMOVED_FROM_GAME, n(1069, { 	-- Crimson Whelp
-					un(REMOVED_FROM_GAME, i(3073)), 	-- Smoldering Pants
+				un(REMOVED_FROM_GAME, n(1069, {	-- Crimson Whelp
+					un(REMOVED_FROM_GAME, i(3073)),	-- Smoldering Pants
 				})),
-				un(REMOVED_FROM_GAME, n(1054, { 	-- Dark Iron Demolitionist
-					un(REMOVED_FROM_GAME, i(2084)), 	-- Darksteel Bastard Sword
+				un(REMOVED_FROM_GAME, n(1054, {	-- Dark Iron Demolitionist
+					un(REMOVED_FROM_GAME, i(2084)),	-- Darksteel Bastard Sword
 				})),
 				un(REMOVED_FROM_GAME, n(6523, {	-- Dark Iron Rifleman
 					un(REMOVED_FROM_GAME, i(6315)),	-- Steelarrow Crossbow
 				})),
-				un(REMOVED_FROM_GAME, n(1053, { 	-- Dark Iron Tunneler
-					un(REMOVED_FROM_GAME, i(756)), 	-- Tunnel Pick
+				un(REMOVED_FROM_GAME, n(1053, {	-- Dark Iron Tunneler
+					un(REMOVED_FROM_GAME, i(756)),	-- Tunnel Pick
 				})),
 				i(10822, {	-- Dark Whelpling (PET!)
 					["crs"] = { 42042 },	-- Ebon Whelp
@@ -37,10 +37,10 @@ _.Zones =
 				n(1035, {	-- Dragonmaw Swamprunner
 					un(REMOVED_FROM_GAME, i(1955)),	-- Dragonmaw Chain Boots
 				}),
-				un(REMOVED_FROM_GAME, n(1044, { 	-- Flamesnorting Whelp
-					un(REMOVED_FROM_GAME, i(3072)), 	-- Smoldering Robe
+				un(REMOVED_FROM_GAME, n(1044, {	-- Flamesnorting Whelp
+					un(REMOVED_FROM_GAME, i(3072)),	-- Smoldering Robe
 				})),
-				un(REMOVED_FROM_GAME, n(1043, { 	-- Lost Whelp
+				un(REMOVED_FROM_GAME, n(1043, {	-- Lost Whelp
 					un(REMOVED_FROM_GAME, i(3074)),	-- Smoldering Gloves
 				})),
 				un(REMOVED_FROM_GAME, n(1009, {	-- Mosshide Mistweaver

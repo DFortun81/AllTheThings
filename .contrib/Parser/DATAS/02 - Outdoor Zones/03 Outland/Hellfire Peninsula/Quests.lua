@@ -451,7 +451,7 @@ _.Zones =
 							["cr"] = 17000,	-- Aggonis
 						}),
 						i(25485),	-- Amaan's Signet
-						i(25486), 	-- Demonslayer's Wristguards
+						i(25486),	-- Demonslayer's Wristguards
 						i(25484),	-- Telhamat Pendant
 					},
 				}),

@@ -5,7 +5,7 @@
 _.WorldEvents =
 {
 	n(-65, {	-- Blizzard Promotions
-		n(-540, { 	-- The Scourge Invasion
+		n(-540, {	-- The Scourge Invasion
 			n(-3222, {	-- Regalia of Undead Cleansing
 				["g"] = {
 					un(REMOVED_FROM_GAME, i(23084)),	-- Gloves of Undead Cleansing

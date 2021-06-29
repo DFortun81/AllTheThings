@@ -58,7 +58,7 @@ _.Zones =
 								},
 							}),
 						}),
-						q(52958, { 	-- Call to Arms: Drustvar
+						q(52958, {	-- Call to Arms: Drustvar
 							["provider"] = { "n", 143536 },	-- High Warlord Volrath
 							["isWeekly"] = true,
 							["coord"] = { 51.5, 58.1, 862 },
@@ -113,7 +113,7 @@ _.Zones =
 								i(169614),	-- Call to Arms Distinction
 							},
 						}),
-						q(52954, { 	-- Call to Arms: Nazmir
+						q(52954, {	-- Call to Arms: Nazmir
 							["provider"] = { "n", 143536 },	-- High Warlord Volrath
 							["isWeekly"] = true,
 							["coord"] = { 51.5, 58.1, 862 },
@@ -131,7 +131,7 @@ _.Zones =
 								i(169614),	-- Call to Arms Distinction
 							},
 						}),
-						q(52957, { 	-- Call to Arms: Stormsong Valley
+						q(52957, {	-- Call to Arms: Stormsong Valley
 							["provider"] = { "n", 143536 },	-- High Warlord Volrath
 							["isWeekly"] = true,
 							["coord"] = { 51.5, 58.1, 862 },
@@ -167,7 +167,7 @@ _.Zones =
 								i(169614),	-- Call to Arms Distinction
 							},
 						}),
-						q(59016, { 	-- Call to Arms: Uldum
+						q(59016, {	-- Call to Arms: Uldum
 							["provider"] = { "n", 143536 },	-- High Warlord Volrath
 							["isWeekly"] = true,
 							["coord"] = { 51.5, 58.1, 862 },
@@ -185,7 +185,7 @@ _.Zones =
 								i(169614),	-- Call to Arms Distinction
 							},
 						}),
-						q(59017, { 	-- Call to Arms: Vale of Eternal Blossoms
+						q(59017, {	-- Call to Arms: Vale of Eternal Blossoms
 							["provider"] = { "n", 143536 },	-- High Warlord Volrath
 							["isWeekly"] = true,
 							["coord"] = { 51.5, 58.1, 862 },
@@ -203,7 +203,7 @@ _.Zones =
 								i(169614),	-- Call to Arms Distinction
 							},
 						}),
-						q(52953, { 	-- Call to Arms: Vol'dun
+						q(52953, {	-- Call to Arms: Vol'dun
 							["provider"] = { "n", 143536 },	-- High Warlord Volrath
 							["isWeekly"] = true,
 							["coord"] = { 51.5, 58.1, 862 },
@@ -221,7 +221,7 @@ _.Zones =
 								i(169614),	-- Call to Arms Distinction
 							},
 						}),
-						q(52952, { 	-- Call to Arms: Zuldazar
+						q(52952, {	-- Call to Arms: Zuldazar
 							["provider"] = { "n", 143536 },	-- High Warlord Volrath
 							["isWeekly"] = true,
 							["coord"] = { 51.5, 58.1, 862 },
@@ -239,13 +239,13 @@ _.Zones =
 								i(169614),	-- Call to Arms Distinction
 							},
 						}),
-						q(53338, { 	-- Prove Your Worth
+						q(53338, {	-- Prove Your Worth
 							["isWeekly"] = true,
 							["coord"] = { 51.56, 58.06, 862 },
 							["races"] = HORDE_ONLY,
 							["provider"] = { "n", 143551 },	--  Centurion Firescream
 							["g"] = {
-								i(163604, { 	-- Net-O-Matic 5000
+								i(163604, {	-- Net-O-Matic 5000
 									["f"] = 55,	-- Consumable
 								}),
 							},
@@ -1110,7 +1110,7 @@ _.Zones =
 					["coord"] = { 42.7, 37.7, 862 },
 					["races"] = HORDE_ONLY,
 				}),
-				q(55506, { 	-- One Road Ends
+				q(55506, {	-- One Road Ends
 					["sourceQuests"] = { 55503 },	-- The Direhorn and the Saurid
 					["provider"] = { "n", 154607 },	-- Image of Torcali
 					["coord"] = { 52.4, 23.2, 1165 },	-- on the very edge of dazar'alor
@@ -1224,7 +1224,7 @@ _.Zones =
 					["coord"] = { 60.3, 22.0, 862 },
 					["races"] = HORDE_ONLY,
 				}),
-				q(55505, { 	-- Roo'li's Memory
+				q(55505, {	-- Roo'li's Memory
 					["sourceQuests"] = { 55506 },	-- One Road Ends
 					["provider"] = { "n", 152115 },	-- Koo'li
 					["coord"] = { 62.0, 49.6, 862 },
@@ -1395,7 +1395,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 120,
 				}),
-				q(55503, { 	-- The Direhorn and the Saurid
+				q(55503, {	-- The Direhorn and the Saurid
 					["sourceQuests"] = { 55504 },	-- Wayshrines of Zuldazar
 					["provider"] = { "n", 154607 },	-- Image of Torcali
 					["coord"] = { 52.4, 23.2, 862 },
@@ -1444,8 +1444,8 @@ _.Zones =
 						i(180030),	-- Bartered Vrykul Warhelm
 					},
 					["maps"] = {
-						863, 	-- Nazmir
-						864, 	-- Vol'dun
+						863,	-- Nazmir
+						864,	-- Vol'dun
 						895,	-- Tiragarde Sound
 						942,	-- Stormsong Valley
 						862,	-- Zuldazar
@@ -1578,7 +1578,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 120,
 				}),
-				q(55462, { 	-- The Wanderer's Call
+				q(55462, {	-- The Wanderer's Call
 					["sourceQuests"] = { 55258 },	-- Sleep, Eat, Repeat
 					["provider"] = { "n", 151999 },	-- Jo'nok, Bulwark of Torcali <Zanchuli Council>
 					["races"] = HORDE_ONLY,
@@ -1633,7 +1633,7 @@ _.Zones =
 						i(156871),	-- Spitzy (TOY!)
 					},
 				}),
-				q(55507, { 	-- Torcali's Blessing
+				q(55507, {	-- Torcali's Blessing
 					["sourceQuests"] = { 55505 },	-- Roo'li's Memory
 					["provider"] = { "n", 151257 },	-- Torcali <Loa of Wanderers>
 					["coord"] = { 68.2, 29.4, 862 },
@@ -1905,7 +1905,7 @@ _.Zones =
 					["coord"] = { 51.6, 45.4, 862 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(55504, { 	-- Wayshrines of Zuldazar
+				q(55504, {	-- Wayshrines of Zuldazar
 					["sourceQuests"] = { 55462 },	-- The Wanderer's Call
 					["provider"] = { "n", 151257 },	-- Torcali <Loa of Wanderers>
 					["races"] = HORDE_ONLY,

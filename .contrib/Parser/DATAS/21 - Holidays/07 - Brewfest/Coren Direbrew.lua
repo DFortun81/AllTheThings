@@ -5,7 +5,7 @@
 _.Holidays = bubbleDown({["u"] = 24},
 {
 	holiday(235442, {	-- Brewfest
-		n(23872, { 	-- Coren Direbrew
+		n(23872, {	-- Coren Direbrew
 			["description"] = "You can loot the keg once a day per character by queueing for the encounter in the Dungeon Finder.",
 			["maps"] = {
 				BLACKROCK_DEPTHS,
@@ -15,9 +15,9 @@ _.Holidays = bubbleDown({["u"] = 24},
 				i(149752, {	-- Keg-Shaped Treasure Box		(Uncommon Quality)
 					["lvl"] = 46,
 					["g"] = {
-						i(117378), 	-- Direbrew's Bloodied Shanker
-						i(150922), 	-- Terrific Tankard O'Terror
-						i(117379), 	-- Tremendous Tankard O'Terror
+						i(117378),	-- Direbrew's Bloodied Shanker
+						i(150922),	-- Terrific Tankard O'Terror
+						i(117379),	-- Tremendous Tankard O'Terror
 						i(37863),	-- Direbrew's Remote
 					},
 				}),
@@ -30,13 +30,13 @@ _.Holidays = bubbleDown({["u"] = 24},
 						i(33977, {	-- Swift Brewfest Ram
 							ach(3496),	-- A Brew-FAST Mount
 						}),
-						un(REMOVED_FROM_GAME, i(71331)), 	-- Direbrew's Bloodied Shanker [Level 85]
+						un(REMOVED_FROM_GAME, i(71331)),	-- Direbrew's Bloodied Shanker [Level 85]
 						un(REMOVED_FROM_GAME, i(107217)),	-- Direbrew's Bloodied Shanker [Level 90]
-						i(117378), 	-- Direbrew's Bloodied Shanker [Level 100+]
-						i(150922), 	-- Terrific Tankard O'Terror [Level 100+]
-						un(REMOVED_FROM_GAME, i(71332)), 	-- Tremendous Tankard O'Terror [Level 85]
-						un(REMOVED_FROM_GAME, i(107218)), 	-- Tremendous Tankard O'Terror [Level 90]
-						i(117379), 	-- Tremendous Tankard O'Terror [Level 100+]
+						i(117378),	-- Direbrew's Bloodied Shanker [Level 100+]
+						i(150922),	-- Terrific Tankard O'Terror [Level 100+]
+						un(REMOVED_FROM_GAME, i(71332)),	-- Tremendous Tankard O'Terror [Level 85]
+						un(REMOVED_FROM_GAME, i(107218)),	-- Tremendous Tankard O'Terror [Level 90]
+						i(117379),	-- Tremendous Tankard O'Terror [Level 100+]
 						i(37863),	-- Direbrew's Remote
 					},
 				}),
@@ -48,7 +48,7 @@ _.Holidays = bubbleDown({["u"] = 24},
 				un(REMOVED_FROM_GAME, i(38288)),	-- Direbrew Hops [Level 70]
 				un(REMOVED_FROM_GAME, i(38287)),	-- Empty Mug of Direbrew [Level 70]
 				un(REMOVED_FROM_GAME, i(49120)),	-- Direbrew's Bloody Shanker [Level 80]
-				un(REMOVED_FROM_GAME, i(48663)), 	-- Tankard O' Terror [Level 80]
+				un(REMOVED_FROM_GAME, i(48663)),	-- Tankard O' Terror [Level 80]
 				un(REMOVED_FROM_GAME, i(49078)),	-- Ancient Pickled Egg [Level 80]
 				un(REMOVED_FROM_GAME, i(49116)),	-- Bitter Balebrew Charm [Level 80]
 				un(REMOVED_FROM_GAME, i(49080)),	-- Brawler's Souvenir [Level 80]

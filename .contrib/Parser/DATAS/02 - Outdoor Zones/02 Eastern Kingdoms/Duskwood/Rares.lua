@@ -37,7 +37,7 @@ _.Zones =
 						{ 64.0, 51.2, DUSKWOOD },
 					},
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(4474)), 	-- Ravenwood Bow
+						un(REMOVED_FROM_GAME, i(4474)),	-- Ravenwood Bow
 						un(REMOVED_FROM_GAME, i(6204)),		-- Tribal Worg Helm
 					},
 				}),
@@ -65,10 +65,10 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(3227)),	-- Nightbane Staff
 					},
 				}),
-				n(45811, { 	-- Marina DeSirrus
+				n(45811, {	-- Marina DeSirrus
 					["coord"] = { 7.80, 34.2, DUSKWOOD },
 				}),
-				n(45771, { 	-- Marus
+				n(45771, {	-- Marus
 					["coords"] = {	--	pats and/or multiple spawnpoints, coords not exhaustive
 						{ 65.2, 68.0, DUSKWOOD },
 						{ 63.2, 70.6, DUSKWOOD },
@@ -91,10 +91,10 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(4476)),	-- Beastwalker Robe
 					},
 				}),
-				n(45739, { 	-- The Unknown Soldier
+				n(45739, {	-- The Unknown Soldier
 					["coord"] = { 90.6, 30.6, DUSKWOOD },
 				}),
-				n(45740, { 	-- Watcher Eva
+				n(45740, {	-- Watcher Eva
 					["coords"] = {	-- pats and/or multiple spawnpoints, coords not exhaustive
 						{ 81.4, 59.0, DUSKWOOD },
 						{ 80.8, 62.4, DUSKWOOD },

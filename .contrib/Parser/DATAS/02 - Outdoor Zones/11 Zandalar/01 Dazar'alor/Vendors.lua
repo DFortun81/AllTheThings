@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(875, { 	-- Zandalar
+	m(875, {	-- Zandalar
 		m(1163, {	-- Dazar'alor
 			n(VENDORS, {
 				n(132153, {	-- "Black Eye" Zenru
@@ -14,7 +14,7 @@ _.Zones =
 						i(156659, {	-- Counterfeit Rastakhan Mask
 							["description"] = "Return to |CFFCC33FFGriftah|r and trade him the |CFFFFD700Counterfeit Rastakhan Mask|r in exchange for the toy |cFFFFFFFF(53.0, 89.9)|r.",
 							["g"] = {
-								i(156649), 	-- Zandalari Effigy Amulet	Note!! We don't mark the item as Horde since Alliance can actually use it
+								i(156649),	-- Zandalari Effigy Amulet	Note!! We don't mark the item as Horde since Alliance can actually use it
 							},
 						}),
 					},
@@ -1050,7 +1050,7 @@ _.Zones =
 						i(156652, {	-- Centennial Blossom
 							["description"] = "Visit |CFFCC33FFTrader Nog|r and trade them the |CFFFFD700Centennial Blossom|r for a |CFFFFD700Preserved Night Elf Head|r |cFFFFFFFF(57.1, 91.4)|r.",
 							["g"] = {
-								i(156649), 	-- Zandalari Effigy Amulet	Note!! We don't mark the item as Horde since Alliance can actually use it
+								i(156649),	-- Zandalari Effigy Amulet	Note!! We don't mark the item as Horde since Alliance can actually use it
 							},
 						}),
 					},
@@ -1329,7 +1329,7 @@ _.Zones =
 						i(156650, {	-- Much-Too-Hot Pepper
 							["description"] = "Visit |CFFCC33FFTrader Haw'li|r and trade them the |CFFFFD700Much-Too-Hot-Pepper|r for some |CFFFFD700Golden Seeds|r |cFFFFFFFF[Coords: 37.8, 14.7]|r.",
 							["g"] = {
-								i(156649), 	-- Zandalari Effigy Amulet	Note!! We don't mark the item as Horde since Alliance can actually use it
+								i(156649),	-- Zandalari Effigy Amulet	Note!! We don't mark the item as Horde since Alliance can actually use it
 							},
 						}),
 					},
@@ -1576,7 +1576,7 @@ _.Zones =
 						i(156651, {	-- Golden Seeds
 							["description"] = "Visit |CFFCC33FFGranda Watae|r and trade them the |CFFFFD700Golden Seeds|r for a |CFFFFD700Centennial Blossom|r |cFFFFFFFF[Coords: 42.16, 35.78].",
 							["g"] = {
-								i(156649), 	-- Zandalari Effigy Amulet	Note!! We don't mark the item as Horde since Alliance can actually use it
+								i(156649),	-- Zandalari Effigy Amulet	Note!! We don't mark the item as Horde since Alliance can actually use it
 							},
 						}),
 						i(159749),	-- Haw'li's Hot & Spicy Chili
@@ -1589,7 +1589,7 @@ _.Zones =
 						i(156655, {	-- Preserved Night Elf Head
 							["description"] = "Visit |CFFCC33FF\"Black Eye\" Zenru|r and trade them the |CFFFFD700Preserved Night Elf Head|r for a |CFFFFD700Counterfeit Rastakhan Mask|r |cFFFFFFFF[Coords: 53.77, 85.97]|r.",
 							["g"] = {
-								i(156649), 	-- Zandalari Effigy Amulet	Note!! We don't mark the item as Horde since Alliance can actually use it
+								i(156649),	-- Zandalari Effigy Amulet	Note!! We don't mark the item as Horde since Alliance can actually use it
 							},
 						}),
 					},
@@ -1598,7 +1598,7 @@ _.Zones =
 					["coord"] = { 51.6, 57.8, 862 },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-					--	i(163974),	-- Bucketshell 	-- Listed under PvP w/ CRS
+					--	i(163974),	-- Bucketshell	-- Listed under PvP w/ CRS
 					--	i(142380),	-- Dutiful Squire
 					--	i(139776),	-- Horde Fanatic
 					},

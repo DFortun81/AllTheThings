@@ -222,7 +222,7 @@ _.ExpansionFeatures =
 										i(114564),	-- Sickened Scale Boots
 										i(114563),	-- Yeti-Hide Boots
 									}),
-									i(114112, { 	-- Grandiose Armament
+									i(114112, {	-- Grandiose Armament
 										i(115327),	-- Grandiose Axe
 										i(115330),	-- Grandiose Dagger
 										i(115328),	-- Grandiose Greataxe
@@ -232,38 +232,38 @@ _.ExpansionFeatures =
 										i(115333),	-- Grandiose Spire
 										i(115331),	-- Grandiose Warmace
 									}),
-									i(114082, { 	-- Grandiose Bracers
+									i(114082, {	-- Grandiose Bracers
 										i(114494),	-- Bracers Of Determined Resolve
 										i(114493),	-- Bracers of Volatile Ice
 										i(114496),	-- Crazed Bomber's Bracers
 										i(114495),	-- Undying Bracers
 									}),
-									i(119124, { 	-- Grandiose Cloak
+									i(119124, {	-- Grandiose Cloak
 										i(114544),	-- Drape of Surging Stars
 										i(114545),	-- Hearthhealer Cloak
 										i(114543),	-- Keen-Eye Forestcloak
 										i(114547),	-- Reinforced Moonsong Cloak
 										i(114546),	-- Warmonger's Bloodcloak
 									}),
-									i(119114, { 	-- Grandiose Gauntlets
+									i(119114, {	-- Grandiose Gauntlets
 										i(114508),	-- Crazed Bomber's Gauntlets
 										i(114506),	-- Gauntlets of Determined Resolve
 										i(114505),	-- Gloves of Volatile Ice
 										i(114507),	-- Undying Gauntlets
 									}),
-									i(119120, { 	-- Grandiose Girdle
+									i(119120, {	-- Grandiose Girdle
 										i(114522),	-- Belt of Determined Resolve
 										i(114521),	-- Cord of Volatile Ice
 										i(114524),	-- Crazed Bomber's Girdle
 										i(114523),	-- Undying Belt
 									}),
-									i(119116, { 	-- Grandiose Hood
+									i(119116, {	-- Grandiose Hood
 										i(114512),	-- Crazed Bomber's Greathelm
 										i(114510),	-- Hood of Determined Resolve
 										i(114509),	-- Hood of Volatile Ice
 										i(114511),	-- Undying Helm
 									}),
-									i(119118, { 	-- Grandiose Leggings
+									i(119118, {	-- Grandiose Leggings
 										i(114516),	-- Crazed Bomber's Legplates
 										i(114514),	-- Legguards of Determined Resolve
 										i(114513),	-- Trousers of Volatile Ice
@@ -276,19 +276,19 @@ _.ExpansionFeatures =
 										i(114535),	-- Officiant's Formidable Seal
 										i(114534),	-- Wrenchtooth Signet
 									}),
-									i(114083, { 	-- Grandiose Robes
+									i(114083, {	-- Grandiose Robes
 										i(114497),	-- Chestguard of Determined Resolve
 										i(114499),	-- Crazed Bomber's Breastplate
 										i(114500),	-- Robes of Volatile Ice
 										i(114498),	-- Undying Chestguard
 									}),
-									i(114085, { 	-- Grandiose Spaulders
+									i(114085, {	-- Grandiose Spaulders
 										i(114520),	-- Crazed Bomber's Shoulderguard
 										i(114517),	-- Mantle of Volatile Ice
 										i(114518),	-- Spaulders of Determined Resolve
 										i(114519),	-- Undying Spaulders
 									}),
-									i(114084, { 	-- Grandiose Treads
+									i(114084, {	-- Grandiose Treads
 										i(114502),	-- Boots of Determined Resolve
 										i(114504),	-- Crazed Bomber's Greaves
 										i(114501),	-- Sandals of Volatile Ice

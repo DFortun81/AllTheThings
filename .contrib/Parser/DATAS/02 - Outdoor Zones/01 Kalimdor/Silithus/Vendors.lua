@@ -57,7 +57,7 @@ _.Zones =
 				n(15179,  {	-- Mishta <Trade Supplies>
 					["coord"] = { 53.8, 34.4, SILITHUS },
 					["g"] = {
-						i(21952, { 	-- Design: Emerald Crown of Destruction
+						i(21952, {	-- Design: Emerald Crown of Destruction
 							["isLimited"] = true,
 						}),
 						i(22310),	-- Pattern: Cenarion Herb Bag

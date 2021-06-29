@@ -7,7 +7,7 @@ _.WorldEvents =
 	d(24, {  -- Timewalking
 		["u"] = 42,	--  Timewalking
 		["g"] = {
-			tier(2, { 	-- Burning Crusade
+			tier(2, {	-- Burning Crusade
 				["maps"] = { SHATTRATH_CITY },
 				["g"] = {
 					q(47523, {	-- Disturbance Detected: Black Temple

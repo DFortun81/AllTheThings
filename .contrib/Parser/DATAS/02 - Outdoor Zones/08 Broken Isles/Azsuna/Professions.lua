@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(619, {	-- The Broken Isles
 		m(630, {	-- Azsuna
-			n(-38, { 	-- Profession
+			n(-38, {	-- Profession
 				prof(ALCHEMY, {
 					q(39390, {	-- A Mysterious Text
 						["provider"] = { "o", 243392 },	-- Alchemy Book
@@ -251,7 +251,7 @@ _.Zones =
 							}),
 						},
 					}),
-					ach(11725, { 	-- Fisherfriend of the Isles
+					ach(11725, {	-- Fisherfriend of the Isles
 						["collectible"] = false,
 						["description"] = "The Fishing Masters are on a daily rotation, so only one is up at a time.  The order is:\n\n1. Sha'leth\n2. Impus\n3. Ilyssia of the Waters\n4. Keeper Raynae\n5. Akule Riverhorn\n6. Corbyn\n\nMake sure you're close enough to the Fishing Master to get the |cFFFFD700Something's Fishy|r buff, or you won't be able to fish up the items (the buff may not show up until you dismount).\n\nThe quickest way to reach Best Friend is to fish in a group.\n",
 						["g"] = {
@@ -323,7 +323,7 @@ _.Zones =
 							}),
 						},
 					}),
-					i(137695), 	-- Schematic: Reaves Module: Wormhole Generator Mode
+					i(137695),	-- Schematic: Reaves Module: Wormhole Generator Mode
 					i(137775, {	-- Vantus Rune Technique: Chronomatic Anomaly [Rank 3]
 						["description"] = "I got it after about ~20-30 min of fishing from a Cursed Queenfish pool in the lake near Narthalas Academy. No legendary pole equipped or any special lures.",
 					}),
@@ -510,7 +510,7 @@ _.Zones =
 						-- ["sourceQuests"] = { 40193 },	-- Getting the Kinks Out -- TODO verify
 						["g"] = {
 							i(137900),	-- Recipe: Battlebound Armbands (Rank 2)
-							i(137901), 	-- Recipe: Battlebound Girdle (Rank 2)
+							i(137901),	-- Recipe: Battlebound Girdle (Rank 2)
 						},
 					}),
 					q(40207, {	-- Scales of the Arcane

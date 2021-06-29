@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(876, { 	-- Kul'Tiras
+	m(876, {	-- Kul'Tiras
 		m(895, {	-- Tiragarde Sound
 			n(WORLD_QUESTS, {
 				n(QUESTS, {
@@ -99,15 +99,15 @@ _.Zones =
 						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
-					q(52874, { 	-- Azerite Mining
+					q(52874, {	-- Azerite Mining
 						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
-					q(51581, { 	-- Azerite Mining
+					q(51581, {	-- Azerite Mining
 						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
-					q(51583, { 	-- Azerite Wounds
+					q(51583, {	-- Azerite Wounds
 						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),

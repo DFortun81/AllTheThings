@@ -16,7 +16,7 @@ _.WorldDrops =
 				}),
 			}),
 			prof(ENGINEERING, {
-				i(100910, { 	-- Schematic: Chief Engineer Jard's Journal
+				i(100910, {	-- Schematic: Chief Engineer Jard's Journal
 					recipe(139197),	-- Advanced Refrigeration Unit
 					recipe(139176),	-- Jard's Peculiar Energy Source
 					recipe(139196),	-- Pierre

@@ -2936,7 +2936,7 @@ _.Zones =
 				n(6568,   {	-- Vizzklick <Tailoring Supplies>
 					["coord"] = { 50.6, 28.6, TANARIS },
 					["g"] = {
-						i(7088, { 	-- Pattern: Crimson Silk Robe
+						i(7088, {	-- Pattern: Crimson Silk Robe
 							["isLimited"] = true,
 						}),
 						i(21358),	-- Pattern: Soul Pouch

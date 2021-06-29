@@ -107,7 +107,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						ach(3797),		-- Upper Back Pain (10 player)
 						i(142083),		-- Giant Worm Egg (PET!)
 						i(142084),		-- Magnataur Hunting Horn (PET!)
-						a(i(47612)), 	-- Rod of Imprisoned Souls
+						a(i(47612)),	-- Rod of Imprisoned Souls
 						h(i(47856)),	-- Scepter of Imprisoned Souls
 						a(i(47607)),	-- Collar of Ceaseless Torment
 						h(i(47849)),	-- Collar of Unending Torment

@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(4, {	-- Cataclysm
-	inst(184, { 	-- End Time
+	inst(184, {	-- End Time
 		["lvl"] = 85,
 		["maps"] = { 401, 402, 403, 404, 405, 406 },
 		["coords"] = {
@@ -46,10 +46,10 @@ _.Instances = { tier(4, {	-- Cataclysm
 							54687,	-- Time-Twisted Footman
 							54511,	-- Time-Twisted Geist
 							54690,	-- Time-Twisted Priest
-							54693, 	-- Time-Twisted Rifleman
-							54507, 	-- Time-Twisted Scourge Beast
-							54553, 	-- Time-Twisted Seer
-							54691, 	-- Time-Twisted Sorceress
+							54693,	-- Time-Twisted Rifleman
+							54507,	-- Time-Twisted Scourge Beast
+							54553,	-- Time-Twisted Seer
+							54691,	-- Time-Twisted Sorceress
 						},
 					}),
 					i(76156, {	-- Bindings of The End Times
@@ -61,10 +61,10 @@ _.Instances = { tier(4, {	-- Cataclysm
 							54687,	-- Time-Twisted Footman
 							54511,	-- Time-Twisted Geist
 							54690,	-- Time-Twisted Priest
-							54693, 	-- Time-Twisted Rifleman
-							54507, 	-- Time-Twisted Scourge Beast
-							54553, 	-- Time-Twisted Seer
-							54691, 	-- Time-Twisted Sorceress
+							54693,	-- Time-Twisted Rifleman
+							54507,	-- Time-Twisted Scourge Beast
+							54553,	-- Time-Twisted Seer
+							54691,	-- Time-Twisted Sorceress
 						},
 					}),
 				}),
@@ -83,31 +83,31 @@ _.Instances = { tier(4, {	-- Cataclysm
 						i(72805),	-- Gloves of The Hollow
 						i(72798),	-- Cord of Lost Hope
 						i(72803),	-- Girdle of Lost Heroes
-						i(157606), 	-- Time-Dessicated Girdle (Added in 7.3.5)
+						i(157606),	-- Time-Dessicated Girdle (Added in 7.3.5)
 						i(72807),	-- Waistguard of Lost Time
 						i(72802),	-- Time Traveler's Leggings
 						i(72799),	-- Dead End Boots
 					},
 				}),
-				cr(54431, e(340, { 	-- Echo of Baine
+				cr(54431, e(340, {	-- Echo of Baine
 					i(72814),	-- Axe of The Tauren Chieftain
 					i(72815),	-- Bloodhoof Legguards
 				})),
-				cr(54445, e(285, { 	-- Echo of Jaina
+				cr(54445, e(285, {	-- Echo of Jaina
 					i(72808),	-- Jaina's Staff
 					i(72809),	-- Ward of Incantations
 				})),
-				cr(54123, e(323, { 	-- Echo of Sylvannas
+				cr(54123, e(323, {	-- Echo of Sylvannas
 					ach(6130),	-- Severed Ties
 					i(72810),	-- Windrunner's Bow
 					i(72811),	-- Cloak of the Banshee Queen
 				})),
-				cr(54544, e(283, { 	-- Echo of Tyrande
+				cr(54544, e(283, {	-- Echo of Tyrande
 					ach(5995),	-- Moon Guard
 					i(72812),	-- Crescent Moon
 					i(72813),	-- Whisperwind Robes
 				})),
-				cr(54432, e(289, { 	-- Murozond
+				cr(54432, e(289, {	-- Murozond
 					ach(6117),	-- Heroic: End Time
 					i(72822),	-- Jagged Edge of Time
 					i(72820),	-- Crown of Epochs

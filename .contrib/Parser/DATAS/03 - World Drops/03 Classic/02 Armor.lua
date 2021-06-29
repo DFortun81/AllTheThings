@@ -281,7 +281,7 @@ _.WorldDrops =
 				un(REMOVED_FROM_GAME, i(2273)),	-- Guerrilla Armor (No info on where this originally droppped)
 				i(13067),	-- Hydralick Armor
 				i(1981),	-- Icemail Jerkin
-				un(REMOVED_FROM_GAME, i(914)), 	-- Large Ogre Chain Vest
+				un(REMOVED_FROM_GAME, i(914)),	-- Large Ogre Chain Vest
 				un(REMOVED_FROM_GAME, i(2234)),	-- Nightwalker Armor (blue version seen on AH 5/26/2019 so this may be dropping again, but don't know for sure.)
 				i(1715),	-- Polished Jazeraint Armor
 				i(1716),	-- Robe of the Magi

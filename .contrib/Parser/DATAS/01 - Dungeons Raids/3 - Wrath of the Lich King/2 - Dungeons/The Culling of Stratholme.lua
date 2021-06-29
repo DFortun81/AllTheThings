@@ -122,7 +122,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(37682),	-- Bindings of Dark Will
 					i(37088),	-- Spiked Metal Cilice
 					i(37095),	-- Waistband of the Thuzadin
-					i(157563), 	-- Freshly Sewn Leggings
+					i(157563),	-- Freshly Sewn Leggings
 				})),
 				cr(26532, e(613, {	-- Chrono-Lord Epoch
 					crit(2, {	-- Chrono-Lord Epoch
@@ -192,7 +192,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(37682),	-- Bindings of Dark Will
 						i(37088),	-- Spiked Metal Cilice
 						i(37095),	-- Waistband of the Thuzadin
-						i(157563), 	-- Freshly Sewn Leggings
+						i(157563),	-- Freshly Sewn Leggings
 					})),
 					cr(26532, e(613, {	-- Chrono-Lord Epoch
 						crit(2, {	-- Chrono-Lord Epoch

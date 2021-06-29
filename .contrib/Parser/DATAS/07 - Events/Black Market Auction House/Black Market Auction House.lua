@@ -5,7 +5,7 @@
 -- TODO: refactor some items here according to new format standarts.
 _.WorldEvents =
 {
-	n(-94, { 	-- Black Market AH
+	n(-94, {	-- Black Market AH
 		["u"] = 9,
 		["description"] = "This list is close to what you can expect to find on the Black Market Auction House, but keep in mind other items could pop up.",
 		["maps"] = {
@@ -37,7 +37,7 @@ _.WorldEvents =
 		["g"] = {
 			filter(103, {	-- Illusions
 				un(21, i(138838)),	-- Illusion: Deathfrost
-				un(HOLIDAY_FEAST_OF_WINTER_VEIL, i(118572)), 	-- Illusion: Flame of Ragnaros
+				un(HOLIDAY_FEAST_OF_WINTER_VEIL, i(118572)),	-- Illusion: Flame of Ragnaros
 				un(HOLIDAY_FEAST_OF_WINTER_VEIL, i(128649)),	-- Illusion: Winter's Grasp
 			}),
 			n(-160, {	-- Mounts

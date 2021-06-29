@@ -231,10 +231,10 @@ _.Zones =
 					["provider"] = { "n", 26787 },	-- Image of Drakuru
 					["sourceQuest"] = 12068,	-- Voices From the Dust
 					["g"] = {
-						i(40755), 	-- Enticing Sabatons
+						i(40755),	-- Enticing Sabatons
 						i(40757),	-- Shackles of Dark Whispers
-						i(40756), 	-- Shoulders of the Seducer
-						i(40758), 	-- Shroud of Temptation
+						i(40756),	-- Shoulders of the Seducer
+						i(40758),	-- Shroud of Temptation
 					},
 				}),
 				q(12293, {	-- Close the Deal

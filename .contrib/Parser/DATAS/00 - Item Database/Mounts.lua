@@ -32,16 +32,16 @@ i(33225, 42777);	-- Reins of the Swift Spectral Tiger
 i(35225, 46197);	-- Reins of the Nether-Rocket
 i(35226, 46199);	-- Reins of the Nether-Rocket X-TREME
 i(38576, 51412);	-- Big Battle Bear
-i(46743, 65644); 	-- Swift Purple Raptor
-i(46744, 65638); 	-- Swift Moonsaber
-i(46745, 65637); 	-- Great Red Elekk
-i(46746, 65645); 	-- White Skeletal Warhorse
-i(46747, 65642); 	-- Turbostrider
-i(46748, 65643); 	-- Swift Violet Ram
-i(46749, 65646); 	-- Swift Burgundy Wolf
-i(46750, 65641); 	-- Great Golden Kodo
-i(46751, 65639); 	-- Swift Red Hawkstrider
-i(46752, 65640); 	-- Swift Gray Steed
+i(46743, 65644);	-- Swift Purple Raptor
+i(46744, 65638);	-- Swift Moonsaber
+i(46745, 65637);	-- Great Red Elekk
+i(46746, 65645);	-- White Skeletal Warhorse
+i(46747, 65642);	-- Turbostrider
+i(46748, 65643);	-- Swift Violet Ram
+i(46749, 65646);	-- Swift Burgundy Wolf
+i(46750, 65641);	-- Great Golden Kodo
+i(46751, 65639);	-- Swift Red Hawkstrider
+i(46752, 65640);	-- Swift Gray Steed
 i(46778, 65917);	-- Magic Rooster Egg
 i(63039, 88741).creatureID = 47647; --	Drake of the West Wind (Alliance)
 i(65356, 88741).creatureID = 47647; --	Drake of the West Wind (Horde)
@@ -63,7 +63,7 @@ i(120968, 179245);	-- Chauffeured Chopper (Alliance)
 i(122703, 179244);	-- Chauffeured Chopper (Horde)
 i(128480, 190690);	-- Bristling Hellboar
 i(128526, 190977);	-- Deathtusk Felboar
-i(142224, 229377); 	-- High Priest's Lightsworn Seeker
+i(142224, 229377);	-- High Priest's Lightsworn Seeker
 i(147901, 243512);	-- Luminous Starseeker
 i(151617, 245725);	-- Orgrimmar Interceptor
 i(151618, 245723);	-- Stormwind Skychaser

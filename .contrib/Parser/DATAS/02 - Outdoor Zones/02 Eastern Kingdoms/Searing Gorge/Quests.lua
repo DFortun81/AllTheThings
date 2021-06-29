@@ -77,7 +77,7 @@ _.Zones =
 					["sourceQuests"] = {
 						28028,	-- Siege!
 						28029,	-- Set Them Ablaze!
-						28030, 	-- They Build a Better Bullet
+						28030,	-- They Build a Better Bullet
 					},
 				}),
 				q(27964, {	-- Dig-Boss Dinwhisker

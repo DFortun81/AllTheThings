@@ -170,7 +170,7 @@ _.Instances = { tier(1, {	-- Classic
 						74549,	-- Razorfen Stonechanter
 					},
 				}),
-				i(776,  { 	-- Vendetta
+				i(776,  {	-- Vendetta
 					["crs"] = {
 						75467,	-- Cave Bat
 						74545,	-- Razorfen Geomagus
@@ -218,7 +218,7 @@ _.Instances = { tier(1, {	-- Classic
 				n(4517, {	-- Death's Head Priest
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(3569)), 	-- Vicar's Robe
+						un(REMOVED_FROM_GAME, i(3569)),	-- Vicar's Robe
 					},
 				}),
 				n(4428, {	-- Death Speaker Jargba <Death's Head Captain>
@@ -240,7 +240,7 @@ _.Instances = { tier(1, {	-- Classic
 				["crs"] = { 75001 },	-- Hunter Bonetusk
 				["g"] = {
 					i(6681),	-- Thornspike
-					i(151442), 	-- Bonetusk Cloak
+					i(151442),	-- Bonetusk Cloak
 				},
 			}),
 			e(895,   {	-- Roogug
@@ -257,7 +257,7 @@ _.Instances = { tier(1, {	-- Classic
 				["g"] = {
 					i(6687),	-- Corpsemaker
 					i(6686),	-- Tusken Helm
-					i(6685), 	-- Death Speaker Mantle
+					i(6685),	-- Death Speaker Mantle
 					i(151445),	-- Porcine-Warlord's Legplates
 				},
 			}),

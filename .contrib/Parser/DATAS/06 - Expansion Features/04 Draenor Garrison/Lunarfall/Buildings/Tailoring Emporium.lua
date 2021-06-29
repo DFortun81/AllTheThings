@@ -23,7 +23,7 @@ _.ExpansionFeatures =
 							}),
 						}),
 						n(VENDORS, {
-							n(77382, { 	-- Christopher Macdonald <Tailor>
+							n(77382, {	-- Christopher Macdonald <Tailor>
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									i(115357, {	-- Draenor Tailoring

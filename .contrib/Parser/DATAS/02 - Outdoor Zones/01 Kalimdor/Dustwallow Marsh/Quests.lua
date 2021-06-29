@@ -85,7 +85,7 @@ _.Zones =
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(33272)),	-- Biting Axe
 						i(33268),	-- Bone Dirk NOTE: Item is still available from new version of quest
-						i(33264), 	-- Glowing Tourmaline Ring NOTE: Item is still available from new version of quest
+						i(33264),	-- Glowing Tourmaline Ring NOTE: Item is still available from new version of quest
 					},
 				}),
 				q(1168,  {	-- Army of the Black Dragon
@@ -472,7 +472,7 @@ _.Zones =
 					["provider"] = { "o", 21042 },	-- Theramore Guard Badge
 					["sourceQuest"] = 27249,	-- Inspecting the Ruins
 				}),
-				q(27260, { 	-- Lieutenant Paval Reethe (H)
+				q(27260, {	-- Lieutenant Paval Reethe (H)
 					["coord"] = { 29.8, 48.2, DUSTWALLOW_MARSH },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 21042 },	-- Theramore Guard Badge
@@ -517,7 +517,7 @@ _.Zones =
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(33272)),	-- Biting Axe
 						i(33268),	-- Bone Dirk NOTE: Item is still available from new version of quest
-						i(33264), 	-- Glowing Tourmaline Ring NOTE: Item is still available from new version of quest
+						i(33264),	-- Glowing Tourmaline Ring NOTE: Item is still available from new version of quest
 					},
 				}),
 				q(27294, {	-- More than Coincidence
@@ -1236,7 +1236,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(33252)),	-- Gleaming Scale Breastplate
 					},
 				}),
-				q(27243, { 	-- Unleash the Raptors
+				q(27243, {	-- Unleash the Raptors
 					["provider"] = { "n", 23723 },	-- Sergeant Lukas
 					["coord"] = { 46.5, 22.9, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,

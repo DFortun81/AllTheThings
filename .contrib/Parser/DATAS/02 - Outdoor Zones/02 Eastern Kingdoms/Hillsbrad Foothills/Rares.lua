@@ -7,22 +7,22 @@ _.Zones =
 	m(EASTERN_KINGDOMS, {
 		m(HILLSBRAD_FOOTHILLS, {
 			n(RARES, {
-				n(50335, { 	-- Alitus
+				n(50335, {	-- Alitus
 					["coord"] = { 46.8, 66.8, HILLSBRAD_FOOTHILLS },
 				}),
-				n(14222, { 	-- Araga
+				n(14222, {	-- Araga
 					["coord"] = { 44.2, 54.0, HILLSBRAD_FOOTHILLS },
 				}),
-				n(14280, { 	-- Big Samras
+				n(14280, {	-- Big Samras
 					["coord"] = { 63.6, 52.6, HILLSBRAD_FOOTHILLS },
 				}),
-				n(50955, { 	-- Carcinak
+				n(50955, {	-- Carcinak
 					["coord"] = { 46.8, 76.0, HILLSBRAD_FOOTHILLS },
 				}),
-				n(51022, { 	-- Chordix
+				n(51022, {	-- Chordix
 					["coord"] = { 56.8, 54.8, HILLSBRAD_FOOTHILLS },
 				}),
-				n(14223, { 	-- Cranky Benj
+				n(14223, {	-- Cranky Benj
 					["coords"] = {
 						{ 68.4, 30.6, HILLSBRAD_FOOTHILLS },
 						{ 65.8, 36.4, HILLSBRAD_FOOTHILLS },
@@ -33,31 +33,31 @@ _.Zones =
 						{ 56.6, 61.6, HILLSBRAD_FOOTHILLS },
 					},
 				}),
-				n(50967, { 	-- Craw the Ravager
+				n(50967, {	-- Craw the Ravager
 					["coord"] = { 51.8, 87.2, HILLSBRAD_FOOTHILLS },
 				}),
-				n(14279, { 	-- Creepthess
+				n(14279, {	-- Creepthess
 					["coord"] = { 43.8, 74.4, HILLSBRAD_FOOTHILLS },
 				}),
-				n(50858, { 	-- Dustwing
+				n(50858, {	-- Dustwing
 					["coord"] = { 28.6, 84.0, HILLSBRAD_FOOTHILLS },
 				}),
-				n(14221, { 	-- Gravis Slipknot
+				n(14221, {	-- Gravis Slipknot
 					["coord"] = { 56.6, 23.6, HILLSBRAD_FOOTHILLS },
 				}),
-				n(47010, { 	-- Indigos
+				n(47010, {	-- Indigos
 					["coord"] = { 31.6, 40.0, HILLSBRAD_FOOTHILLS },
 				}),
-				n(14281, { 	-- Jimmy the Bleeder
+				n(14281, {	-- Jimmy the Bleeder
 					["coord"] = { 49.8, 50.6, HILLSBRAD_FOOTHILLS },
 				}),
-				n(14277, { 	-- Lady Zephris
+				n(14277, {	-- Lady Zephris
 					["coord"] = { 54.6, 76.6, HILLSBRAD_FOOTHILLS },
 				}),
-				n(50929, { 	-- Little Bjorn
+				n(50929, {	-- Little Bjorn
 					["coord"] = { 35.0, 78.4, HILLSBRAD_FOOTHILLS },
 				}),
-				n(2453, { 	-- Lo'Grosh
+				n(2453, {	-- Lo'Grosh
 					["coord"] = { 49.4, 18.4, HILLSBRAD_FOOTHILLS },
 					["g"] = {
 						i(6327),	-- The Pacifier
@@ -65,22 +65,22 @@ _.Zones =
 						i(1678),	-- Black Ogre Kickers
 					},
 				}),
-				n(51076, { 	-- Lopex
+				n(51076, {	-- Lopex
 					["coord"] = { 68.8, 56.0, HILLSBRAD_FOOTHILLS },
 				}),
-				n(2258, { 	-- Maggarrak
+				n(2258, {	-- Maggarrak
 					["coord"] = { 60.2, 28.8, HILLSBRAD_FOOTHILLS },
 				}),
-				n(50765, { 	-- Miasmiss
+				n(50765, {	-- Miasmiss
 					["coord"] = { 37.0, 68.2, HILLSBRAD_FOOTHILLS },
 				}),
-				n(14278, { 	-- Ro'Bark
+				n(14278, {	-- Ro'Bark
 					["coord"] = { 58.4, 75.6, HILLSBRAD_FOOTHILLS },
 				}),
-				n(14276, { 	-- Scargil
+				n(14276, {	-- Scargil
 					["coord"] = { 32.6, 79.8, HILLSBRAD_FOOTHILLS },
 				}),
-				n(2452, { 	-- Skhowl
+				n(2452, {	-- Skhowl
 					["coord"] = { 43.6, 38.8, HILLSBRAD_FOOTHILLS },
 					["g"] = {
 						i(3011),	-- Feathered Headdress
@@ -91,16 +91,16 @@ _.Zones =
 					["coord"] = { 63.2, 85.8, HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(3053), 	-- Humbert's Chestpiece
+						i(3053),	-- Humbert's Chestpiece
 					},
 				}),
-				n(50818, { 	-- The Dark Prowler
+				n(50818, {	-- The Dark Prowler
 					["coord"] = { 33.0, 55.0, HILLSBRAD_FOOTHILLS },
 				}),
-				n(51057, { 	-- Weevil
+				n(51057, {	-- Weevil
 					["coord"] = { 45.6, 53.8, HILLSBRAD_FOOTHILLS },
 				}),
-				n(50770, { 	-- Zorn
+				n(50770, {	-- Zorn
 					["coord"] = { 77.0, 60.0, HILLSBRAD_FOOTHILLS },
 				}),
 			}),

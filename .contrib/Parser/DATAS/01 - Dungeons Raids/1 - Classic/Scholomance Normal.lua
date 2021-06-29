@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(1, {	-- Classic
-	inst(246, { 	-- Scholomance
+	inst(246, {	-- Scholomance
 		["lvl"] = 33,
 		["mapID"] = SCHOLOMANCE,
 		["maps"] = { 477, 478, 479 },
@@ -35,9 +35,9 @@ _.Instances = { tier(1, {	-- Classic
 							10469,	-- Scholomance Adept
 						},
 					}),
-					i(18699), 	-- Icy Tomb Spaulders
-					i(18700), 	-- Malefic Bracers
-					i(18698), 	-- Tattered Leather Hood
+					i(18699),	-- Icy Tomb Spaulders
+					i(18700),	-- Malefic Bracers
+					i(18698),	-- Tattered Leather Hood
 					{
 						["itemID"] = 18701,	-- Innervating Band
 						["crs"] = {
@@ -46,7 +46,7 @@ _.Instances = { tier(1, {	-- Classic
 						},
 					}
 				}),
-				cr(58633, e(659, { 	-- Instructor Chillheart
+				cr(58633, e(659, {	-- Instructor Chillheart
 					n(58664, {	-- Instructor Chillheart's Phylactery
 						i(88339),	-- Gravetouch Greatsword
 						i(88335),	-- Anarchist's Pendant
@@ -55,14 +55,14 @@ _.Instances = { tier(1, {	-- Classic
 						i(88336),	-- Icewrath Belt
 					}),
 				})),
-				cr(59184, e(663, { 	-- Jandice Barov
+				cr(59184, e(663, {	-- Jandice Barov
 					i(88346),			-- Metanoia Shield
 					i(88345),			-- Barovian Ritual Hood
 					i(88349),			-- Phantasmal Drape
 					i(88347),			-- Ghostwoven Legguards
 					i(88348),			-- Wraithplate Treads
 				})),
-				cr(59153, e(665, { 	-- Rattlegore
+				cr(59153, e(665, {	-- Rattlegore
 					i(88344),	-- Goresoaked Headreaper
 					i(88341),	-- Necromantic Wand
 					i(88357),	-- Vigorsteel Spaulders
@@ -70,14 +70,14 @@ _.Instances = { tier(1, {	-- Classic
 					i(88342),	-- Rattling Gloves
 					i(88343),	-- Bone Golem Boots
 				})),
-				cr(58722, e(666, { 	-- Lilian Voss
+				cr(58722, e(666, {	-- Lilian Voss
 					i(88351),	-- Soulburner Crown
 					i(88354),	-- Necklace of the Dark Blaze
 					i(88352),	-- Shivbreaker Vest
 					i(88353),	-- Dark Blaze Gauntlets
 					i(88350),	-- Leggings of Unleashed Anguish
 				})),
-				cr(59080, e(684, { 	-- Darkmaster Gandling
+				cr(59080, e(684, {	-- Darkmaster Gandling
 					ach(645),	-- Scholomance
 					i(88362),	-- Shoulderguards of Painful Lessons
 					i(88361),	-- Gloves of Explosive Pain
@@ -100,21 +100,21 @@ _.Instances = { tier(1, {	-- Classic
 							["classes"] = { SHAMAN },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
-								un(REMOVED_FROM_GAME, i(20134)), 	-- Skyfury Helm
+								un(REMOVED_FROM_GAME, i(20134)),	-- Skyfury Helm
 							},
 						})),
-						q(4771, { 	-- Dawn's Gambit
+						q(4771, {	-- Dawn's Gambit
 							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
-								un(REMOVED_FROM_GAME, i(15854)), 	-- Dancing Sliver
-								un(REMOVED_FROM_GAME, i(15853)), 	-- Windreaper
+								un(REMOVED_FROM_GAME, i(15854)),	-- Dancing Sliver
+								un(REMOVED_FROM_GAME, i(15853)),	-- Windreaper
 							},
 						}),
-						q(5384, { 	-- Kirtonos the Herald
+						q(5384, {	-- Kirtonos the Herald
 							["u"] = REMOVED_FROM_GAME,
 							["g"] = {
-								un(REMOVED_FROM_GAME, i(15806)), 	-- Mirah's Song
-								un(REMOVED_FROM_GAME, i(15805)), 	-- Penelope's Rose
+								un(REMOVED_FROM_GAME, i(15806)),	-- Mirah's Song
+								un(REMOVED_FROM_GAME, i(15805)),	-- Penelope's Rose
 								un(REMOVED_FROM_GAME, i(13544)),	-- Spectral Essence
 							},
 						}),
@@ -140,7 +140,7 @@ _.Instances = { tier(1, {	-- Classic
 							["classes"] = { SHAMAN },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
-								un(REMOVED_FROM_GAME, i(18807)), 	-- Helm of Latent Power
+								un(REMOVED_FROM_GAME, i(18807)),	-- Helm of Latent Power
 							},
 						})),
 						un(REMOVED_FROM_GAME, q(8258, {	-- The Darkreaver Menace (Post 1.7, Phase 4)
@@ -153,7 +153,7 @@ _.Instances = { tier(1, {	-- Classic
 							["classes"] = { SHAMAN },
 							["races"] = HORDE_ONLY,
 							["groups"] = {
-								un(REMOVED_FROM_GAME, i(20134)), 	-- Skyfury Helm
+								un(REMOVED_FROM_GAME, i(20134)),	-- Skyfury Helm
 							},
 						})),
 						q(5262, {	-- The Truth Comes Crashing Down
@@ -165,45 +165,45 @@ _.Instances = { tier(1, {	-- Classic
 					}),
 					n(ZONEDROPS, {
 						un(REMOVED_FROM_GAME, i(16254)),	-- Formula: Enchant Weapon - Lifestealing [Scholomance, Removed from game with revamp? Might have been added back in 7.3.5, but not sure.]
-						n(10495, { 	-- Diseased Ghoul
+						n(10495, {	-- Diseased Ghoul
 							un(REMOVED_FROM_GAME, i(16714)),	-- Wildheart Bracers
 						}),
-						n(10488, { 	-- Risen Construct
+						n(10488, {	-- Risen Construct
 							un(REMOVED_FROM_GAME, i(16710)),	-- Shadowcraft Bracers
 						}),
-						n(10487, { 	-- Risen Protector
+						n(10487, {	-- Risen Protector
 							un(REMOVED_FROM_GAME, i(16722)),	-- Lightforge Bracers
 						}),
-						n(10486, { 	-- Risen Warrior
+						n(10486, {	-- Risen Warrior
 							un(REMOVED_FROM_GAME, i(16722)),	-- Lightforge Bracers
 						}),
-						n(10469, { 	-- Scholomance Adept
+						n(10469, {	-- Scholomance Adept
 							un(REMOVED_FROM_GAME, i(16685)),	-- Magister's Belt
 						}),
-						n(11582, { 	-- Scholomance Dark Summoner
+						n(11582, {	-- Scholomance Dark Summoner
 							un(REMOVED_FROM_GAME, i(15776)),	-- Pattern: Runic Leather Armor (now learned from trainer)
 						}),
-						n(11257, { 	-- Scholomance Handler
+						n(11257, {	-- Scholomance Handler
 							un(REMOVED_FROM_GAME, i(16716)),	-- Wildheart Belt
 						}),
-						n(10477, { 	-- Scholomance Necromancer
+						n(10477, {	-- Scholomance Necromancer
 							un(REMOVED_FROM_GAME, i(16702)),	-- Dreadmist Belt
 						}),
-						n(10472, { 	-- Scholomance Occultist
+						n(10472, {	-- Scholomance Occultist
 							un(REMOVED_FROM_GAME, i(16710)),	-- Shadowcraft Bracers
 						}),
-						n(10499, { 	-- Spectral Researcher
+						n(10499, {	-- Spectral Researcher
 							un(REMOVED_FROM_GAME, i(15773)),	-- Pattern: Wicked Leather Armor
 							un(REMOVED_FROM_GAME, i(16716)),	-- Wildheart Belt
 						}),
 						n(10500, {	-- Spectral Teacher
 							un(REMOVED_FROM_GAME, i(16716)),	-- Wildheart Belt
 						}),
-						n(10478, { 	-- Splintered Skelton
+						n(10478, {	-- Splintered Skelton
 							un(REMOVED_FROM_GAME, i(16671)),	-- Bindings of Elements
 						}),
 					}),
-					n(10506, { 	-- Kirtonos the Herald
+					n(10506, {	-- Kirtonos the Herald
 						un(REMOVED_FROM_GAME, i(16734)),	-- Boots of Valor
 						un(REMOVED_FROM_GAME, i(13956)),	-- Clutch of Andros
 						un(REMOVED_FROM_GAME, i(14024)),	-- Frightalon

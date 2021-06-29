@@ -782,7 +782,7 @@ _.ExpansionFeatures =
 									i(119037),	-- Supply of Storied Rarities
 								},
 							}),
-							q(37145, { 	-- Budd's Gambit
+							q(37145, {	-- Budd's Gambit
 								["provider"] = { "n", 88017 },	-- Budd
 								["repeatable"] = true,
 								["g"] = {
@@ -883,13 +883,13 @@ _.ExpansionFeatures =
 							q(37160, {	-- Cleaving Time
 								["provider"] = { "n", 88007 },	-- Gamon
 								["g"] = {
-									i(118937), 	-- Gamon's Braid
+									i(118937),	-- Gamon's Braid
 								},
 							}),
 							q(37151, {	-- Cold Steel
 								["provider"] = { "n", 88026 },	-- John J. Keeshan
 								["g"] = {
-									i(118918), 	-- Bloody Bandanna
+									i(118918),	-- Bloody Bandanna
 								},
 							}),
 							q(37209, {	-- Cold Steel Part II
@@ -897,13 +897,13 @@ _.ExpansionFeatures =
 								["sourceQuests"] = { 37151 },	-- Cold Steel
 								["repeatable"] = true,
 								["g"] = {
-									i(119036), 	-- Box of Storied Treasures
+									i(119036),	-- Box of Storied Treasures
 								},
 							}),
 							q(37152, {	-- Cro's Revenge
 								["provider"] = { "n", 87991 },	-- Cro Threadstrong
 								["g"] = {
-									i(119083), 	-- Fruit Basket
+									i(119083),	-- Fruit Basket
 								},
 							}),
 							q(37162, {	-- Damsels and Dragons
@@ -923,7 +923,7 @@ _.ExpansionFeatures =
 								["sourceQuests"] = { 37164 },	-- The Huntress
 								["repeatable"] = true,
 								["g"] = {
-									i(119037), 	-- Supply of Storied Rarities
+									i(119037),	-- Supply of Storied Rarities
 								},
 							}),
 							q(37157, {	-- Feeling A Bit Morose
@@ -937,7 +937,7 @@ _.ExpansionFeatures =
 								["sourceQuests"] = { 37148 },	-- Oralius' Adventure
 								["repeatable"] = true,
 								["g"] = {
-									i(119036), 	-- Box of Storied Treasures
+									i(119036),	-- Box of Storied Treasures
 								},
 							}),
 							q(37150, {	-- For the Birds
@@ -1134,7 +1134,7 @@ _.ExpansionFeatures =
 									}),
 								},
 							}),
-							q(37158, { 	-- Gloriously Incandescent
+							q(37158, {	-- Gloriously Incandescent
 								["provider"] = { "n", 87998 },	--  Sunwalker Dezco
 								["g"] = {
 									i(118928),	-- Faintly-Sparkling Cache
@@ -1145,7 +1145,7 @@ _.ExpansionFeatures =
 								["sourceQuests"] = { 37167 },	-- And No Maces!
 								["repeatable"] = true,
 								["g"] = {
-									i(119037), 	-- Supply of Storied Rarities
+									i(119037),	-- Supply of Storied Rarities
 								},
 							}),
 							q(37241, {	-- Lessons of the Past
@@ -1276,7 +1276,7 @@ _.ExpansionFeatures =
 								["sourceQuests"] = { 37150 },	-- For the Birds
 								["repeatable"] = true,
 								["g"] = {
-									i(119036), 	-- Box of Storied Treasures
+									i(119036),	-- Box of Storied Treasures
 								},
 							}),
 							q(37238, {	-- Secrets of Soulbinding
@@ -1489,10 +1489,10 @@ _.ExpansionFeatures =
 								["sourceQuests"] = { 37156 },	-- The Soulcutter
 								["repeatable"] = true,
 								["g"] = {
-									i(119037), 	-- Supply of Storied Rarities
+									i(119037),	-- Supply of Storied Rarities
 								},
 							}),
-							q(37155, { 	-- The Brass Compass
+							q(37155, {	-- The Brass Compass
 								["provider"] = { "n", 87995 },	--  Fleet Master Seahorn
 								["g"] = {
 									i(118925),	-- Plundered Booty
@@ -1509,7 +1509,7 @@ _.ExpansionFeatures =
 								["sourceQuests"] = { 37158 },	-- Gloriously Incandescent
 								["repeatable"] = true,
 								["g"] = {
-									i(119037), 	-- Supply of Storied Rarities
+									i(119037),	-- Supply of Storied Rarities
 								},
 							}),
 							q(37046, {	-- The Headhunter's Harvest
@@ -1527,7 +1527,7 @@ _.ExpansionFeatures =
 								["sourceQuests"] = { 37165 },	-- Cenarion Concerns
 								["repeatable"] = true,
 								["g"] = {
-									i(119037), 	-- Supply of Storied Rarities
+									i(119037),	-- Supply of Storied Rarities
 								},
 							}),
 							q(37231, {	-- The Search Continues

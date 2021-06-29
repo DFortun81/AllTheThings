@@ -32,11 +32,11 @@ _.Zones =
 					["coord"] = { 48.6, 50.0, 650 },
 					["crs"] = {
 						97215,	-- Beastmaster Pao'lek
-						97220, 	-- Arru <The Terror>
+						97220,	-- Arru <The Terror>
 					},
 					["g"] = {
-						o(244473, { 	-- Thunder Totem Stolen Goods (No Model)
-							i(131756), 	-- Fletcher's Nimble Grips
+						o(244473, {	-- Thunder Totem Stolen Goods (No Model)
+							i(131756),	-- Fletcher's Nimble Grips
 							crit(10, {	-- Beastmaster Pao'lek
 								["achievementID"] = 11264,	-- Adventurer of Highmountain
 							}),
@@ -169,7 +169,7 @@ _.Zones =
 						{ 45.4, 30.4, 650 },
 					},
 					["g"] = {
-						i(131900), 	-- Magestic Elderhorn Hoof (TOY!)
+						i(131900),	-- Magestic Elderhorn Hoof (TOY!)
 						crit(11, {	-- Majestic Elderhorn
 							["achievementID"] = 11264,	-- Adventurer of Highmountain
 						}),

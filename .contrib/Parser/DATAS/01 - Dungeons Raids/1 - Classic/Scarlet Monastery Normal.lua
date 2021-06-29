@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(1, {	-- Classic
-	inst(316, { 	-- Scarlet Monastery
+	inst(316, {	-- Scarlet Monastery
 		["lvl"] = 23,
 		["mapID"] = 435,
 		["maps"] = {
@@ -252,8 +252,8 @@ _.Instances = { tier(1, {	-- Classic
 								["races"] = HORDE_ONLY,
 								["g"] = {
 									un(REMOVED_FROM_GAME, i(66033)),	-- Band of the Arcanist
-									un(REMOVED_FROM_GAME, i(66015)), 	-- Houndmaster's Belt
-									un(REMOVED_FROM_GAME, i(66024)), 	-- Shield of Comrades
+									un(REMOVED_FROM_GAME, i(66015)),	-- Houndmaster's Belt
+									un(REMOVED_FROM_GAME, i(66024)),	-- Shield of Comrades
 								},
 							}),
 							q(26973, {	-- The Only True Path
@@ -261,8 +261,8 @@ _.Instances = { tier(1, {	-- Classic
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									un(REMOVED_FROM_GAME, i(65966)),	-- Band of the Arcanist
-									un(REMOVED_FROM_GAME, i(65916)), 	-- Houndmaster's Belt
-									un(REMOVED_FROM_GAME, i(65942)), 	-- Shield of the Righteous Cause
+									un(REMOVED_FROM_GAME, i(65916)),	-- Houndmaster's Belt
+									un(REMOVED_FROM_GAME, i(65942)),	-- Shield of the Righteous Cause
 								},
 							}),
 						}),
@@ -285,22 +285,22 @@ _.Instances = { tier(1, {	-- Classic
 								["u"] = REMOVED_FROM_GAME,
 								["races"] = HORDE_ONLY,
 								["g"] = {
-									un(REMOVED_FROM_GAME, i(66034)), 	-- Breastplate of the Scarlet Monastery
+									un(REMOVED_FROM_GAME, i(66034)),	-- Breastplate of the Scarlet Monastery
 									un(REMOVED_FROM_GAME, i(66047)),	-- Herod's Medallion
-									un(REMOVED_FROM_GAME, i(66016)), 	-- Monk's Leggings
-									un(REMOVED_FROM_GAME, i(66025)), 	-- Spaulder of the Untrained
-									un(REMOVED_FROM_GAME, i(66042)), 	-- Velonara's Cloak
+									un(REMOVED_FROM_GAME, i(66016)),	-- Monk's Leggings
+									un(REMOVED_FROM_GAME, i(66025)),	-- Spaulder of the Untrained
+									un(REMOVED_FROM_GAME, i(66042)),	-- Velonara's Cloak
 								},
 							}),
 							q(26974, {	-- The False Champion
 								["u"] = REMOVED_FROM_GAME,
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
-									un(REMOVED_FROM_GAME, i(65967)), 	-- Breastplate of the Scarlet Monastery
-									un(REMOVED_FROM_GAME, i(65990)), 	-- Cloak of the False Champion
+									un(REMOVED_FROM_GAME, i(65967)),	-- Breastplate of the Scarlet Monastery
+									un(REMOVED_FROM_GAME, i(65990)),	-- Cloak of the False Champion
 									un(REMOVED_FROM_GAME, i(66006)),	-- Herod's Medallion
-									un(REMOVED_FROM_GAME, i(65917)), 	-- Monk's Leggings
-									un(REMOVED_FROM_GAME, i(65943)), 	-- Shrug of the Crazed
+									un(REMOVED_FROM_GAME, i(65917)),	-- Monk's Leggings
+									un(REMOVED_FROM_GAME, i(65943)),	-- Shrug of the Crazed
 								},
 							}),
 						}),
@@ -318,7 +318,7 @@ _.Instances = { tier(1, {	-- Classic
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									un(REMOVED_FROM_GAME, i(65970)),	-- Band of Grandiose Delusions
-									un(REMOVED_FROM_GAME, i(65920)), 	-- Grasps of the Insane
+									un(REMOVED_FROM_GAME, i(65920)),	-- Grasps of the Insane
 									un(REMOVED_FROM_GAME, i(65946)),	-- Scarlet Necklace of Paradise
 								},
 							}),
@@ -328,7 +328,7 @@ _.Instances = { tier(1, {	-- Classic
 								["g"] = {
 									un(REMOVED_FROM_GAME, i(66035)),	-- Band of Wrath
 									un(REMOVED_FROM_GAME, i(66026)),	-- Gift of the Banshee Queen
-									un(REMOVED_FROM_GAME, i(66017)), 	-- Grasps of the Forsaken
+									un(REMOVED_FROM_GAME, i(66017)),	-- Grasps of the Forsaken
 								},
 							}),
 						}),

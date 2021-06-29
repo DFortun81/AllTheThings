@@ -170,7 +170,7 @@ _.Zones =
 						i(58905),	-- Kobold Basher
 						i(58903),	-- Kobold Candle
 						i(58902),	-- Kobold Sticker
-						i(156935), 	-- Kobold Torch
+						i(156935),	-- Kobold Torch
 						i(58904),	-- Wax Catcher
 					},
 				}),

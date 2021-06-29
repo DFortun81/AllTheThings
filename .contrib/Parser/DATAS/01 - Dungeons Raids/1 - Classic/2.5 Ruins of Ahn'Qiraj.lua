@@ -11,7 +11,7 @@ local WARDEN_LOCATION = { 59.4, 14.0, 327 };
 local WINDCALLER_LOCATION = { 59.4, 14.0, 327 };
 -- #endif
 _.Instances = { tier(1, applyclassicphase(PHASE_FIVE, {	-- Classic
-	inst(743, { 	-- Ruins of Ahn'Qiraj
+	inst(743, {	-- Ruins of Ahn'Qiraj
 		["description"] = "Deep within the deserts of Silithus lies an ancient and powerful race of beings known as the Qiraji. One thousand years ago, the Night Elves and Bronze Dragonflight combined their considerable powers to seal the Qiraji behind the scarab wall with the help of the children of some of the aspects. This is remembered as the \"War of the Shifting Sands\".\n\nRecently it was discovered that some of the Qiraji were finding ways past the wall. Anachronos, the bronze dragon, helped the adventurers of Azeroth open the Scarab Wall to prevent more incursions. The mortal races have now banded together to confront the evil Qiraji in their own land. A champion has opened the gate and the Horde and Alliance have driven the armies of the Qiraji back into the ruins in retreat. It now falls to heroes to delve into the lair of the Qiraji and put an end to their masters once and for all",
 		-- #if AFTER CATA
 		["coord"] = { 58.93, 14.26, 327 },	-- Ruins of Ahn'Qiraj, Ahn Qiraj: The Fallen Kingdom
@@ -24,7 +24,7 @@ _.Instances = { tier(1, applyclassicphase(PHASE_FIVE, {	-- Classic
 		["lvl"] = lvlsquish(50, 25, 50),
 		["groups"] = {
 			n(FACTIONS, {
-				faction(609, { 	-- Cenarion Circle
+				faction(609, {	-- Cenarion Circle
 					["icon"] = "Interface\\Icons\\Ability_Druid_Maul",
 					["maps"] = { SILITHUS },
 				}),
@@ -903,7 +903,7 @@ _.Instances = { tier(1, applyclassicphase(PHASE_FIVE, {	-- Classic
 					}),
 				},
 			}),
-			e(1537, { 	-- Kurinnaxx
+			e(1537, {	-- Kurinnaxx
 				["creatureID"] = 15348,
 				["groups"] = {
 					i(22217, {	-- Kurinnaxx's Venom Sac
@@ -927,18 +927,18 @@ _.Instances = { tier(1, applyclassicphase(PHASE_FIVE, {	-- Classic
 					i(22221),	-- Plans: Obsidian Mail Tunic
 				},
 			}),
-			e(1538, { 	-- General Rajaxx
+			e(1538, {	-- General Rajaxx
 				["description"] = "Speak with Lieutenant General Andorov in order to start the encounter. Andorov must survive the fight in order to defeat the encounter.",
 				["creatureID"] = 15341,
 				["groups"] = {
 					n(-21, {	-- Captains
 						["qgs"] = {
-							15390, 	-- Captain Xurrem
-							15391, 	-- Captain Qeez
-							15389, 	-- Captain Drenn
-							15392, 	-- Captain Tuubid
-							15386, 	-- Major Yeggeth
-							15385, 	-- Colonel Zarran
+							15390,	-- Captain Xurrem
+							15391,	-- Captain Qeez
+							15389,	-- Captain Drenn
+							15392,	-- Captain Tuubid
+							15386,	-- Major Yeggeth
+							15385,	-- Colonel Zarran
 						},
 						["groups"] = {
 							i(21806),	-- Gavel of Qiraji Athority
@@ -954,7 +954,7 @@ _.Instances = { tier(1, applyclassicphase(PHASE_FIVE, {	-- Classic
 					i(21493),	-- Boots of the Vanguard
 				},
 			}),
-			e(1540, { 	-- Buru the Gorger
+			e(1540, {	-- Buru the Gorger
 				["creatureID"] = 15370,
 				["groups"] = {
 					i(21485),	-- Buru's Skull Fragment
@@ -966,7 +966,7 @@ _.Instances = { tier(1, applyclassicphase(PHASE_FIVE, {	-- Classic
 					i(21488),	-- Fetish of Chitinous Spikes
 				},
 			}),
-			e(1541, { 	-- Ayamiss the Hunter
+			e(1541, {	-- Ayamiss the Hunter
 				["creatureID"] = 15369,
 				["groups"] = {
 					i(21466),	-- Stinger of Ayamiss
@@ -984,7 +984,7 @@ _.Instances = { tier(1, applyclassicphase(PHASE_FIVE, {	-- Classic
 					i(21483),	-- Ring of the Desert Winds
 				},
 			}),
-			e(1539, { 	-- Moam
+			e(1539, {	-- Moam
 				["creatureID"] = 15340,
 				["groups"] = {
 					i(21471),	-- Talon of Furious Concentration
@@ -1003,7 +1003,7 @@ _.Instances = { tier(1, applyclassicphase(PHASE_FIVE, {	-- Classic
 					i(22220),	-- Plans: Black Grasp of the Destroyer
 				},
 			}),
-			e(1542, { 	-- Ossirian the Unscarred
+			e(1542, {	-- Ossirian the Unscarred
 				["creatureID"] = 15339,
 				["groups"] = {
 					ach(689),	-- Ruins of Ahn'Qiraj

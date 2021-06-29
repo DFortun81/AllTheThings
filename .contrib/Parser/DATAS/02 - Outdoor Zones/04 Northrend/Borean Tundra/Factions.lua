@@ -44,7 +44,7 @@ _.Zones =
 										i(25471),	-- Ebon Gryphon Mount
 										i(25470),	-- Golden Gryphon Mount
 										i(25472),	-- Snowy Gryphon Mount
-										i(25473), 	-- Swift Blue Gryphon Mount
+										i(25473),	-- Swift Blue Gryphon Mount
 										i(25528),	-- Swift Green Gryphon Mount
 										i(25529),	-- Swift Purple Gryphon Mount
 										i(25527),	-- Swift Red Gryphon Mount

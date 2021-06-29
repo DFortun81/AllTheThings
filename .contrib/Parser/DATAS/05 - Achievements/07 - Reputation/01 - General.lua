@@ -6,31 +6,31 @@ _.Achievements =
 {
 	n(-9961, {	-- Reputation
 		n(-9955, {	-- General
-			ach(12866, { 	-- 100 Exalted Reputations
+			ach(12866, {	-- 100 Exalted Reputations
 				i(163982),		-- Pureheart Courser
-				title(379), 	-- Esteemed <Name>
-				ach(12865), 	-- 90 Exalted Reputations
-				ach(12864, { 	-- 80 Exalted Reputations
-					title(380), 	-- <Name> the Admired
+				title(379),		-- Esteemed <Name>
+				ach(12865),		-- 90 Exalted Reputations
+				ach(12864, {	-- 80 Exalted Reputations
+					title(380),		-- <Name> the Admired
 				}),
-				ach(11177), 	-- 70 Exalted Reputations
-				ach(6742, { 	-- 60 Exalted Reputations
-					title(197), 	-- <Name> the Beloved
+				ach(11177),		-- 70 Exalted Reputations
+				ach(6742, {		-- 60 Exalted Reputations
+					title(197),		-- <Name> the Beloved
 				}),
-				ach(6826), 		-- 55 Exalted Reputations
-				ach(5723), 		-- 50 Exalted Reputations
-				ach(5374), 		-- 45 Exalted Reputations
+				ach(6826),		-- 55 Exalted Reputations
+				ach(5723),		-- 50 Exalted Reputations
+				ach(5374),		-- 45 Exalted Reputations
 				ach(1015, {		-- 40 Exalted Reputations
-					title(46), 		-- <Name> the Exalted
+					title(46),		-- <Name> the Exalted
 				}),
 				ach(1014),		-- 35 Exalted Reputations
-				ach(518), 		-- 30 Exalted Reputations
-				ach(519), 		-- 25 Exalted Reputations
-				ach(521), 		-- 15 Exalted Reputations
-				ach(524), 		-- 10 Exalted Reputations
-				ach(520), 		-- 20 Exalted Reputations
-				ach(523), 		-- 5 Exalted Reputations
-				ach(522), 		-- Somebody Likes Me
+				ach(518),		-- 30 Exalted Reputations
+				ach(519),		-- 25 Exalted Reputations
+				ach(521),		-- 15 Exalted Reputations
+				ach(524),		-- 10 Exalted Reputations
+				ach(520),		-- 20 Exalted Reputations
+				ach(523),		-- 5 Exalted Reputations
+				ach(522),		-- Somebody Likes Me
 			}),
 			ach(12515, {	-- Allied Races: Dark Iron Dwarf
 				["races"] = ALLIANCE_ONLY,

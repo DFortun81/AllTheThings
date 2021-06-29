@@ -19,12 +19,12 @@ _.Zones =
 						i(19442),	-- Formula: Powerful Anti-Venom
 						i(18170),	-- Frost Mantle of the Dawn
 						i(18172),	-- Nature Mantle of the Dawn
-						i(19216), 	-- Pattern: Argent Boots
-						i(19217), 	-- Pattern: Argent Shoulders
-						i(19328), 	-- Pattern: Dawn Treaders
-						i(19329), 	-- Pattern: Golden Mantle of the Dawn
-						i(19203), 	-- Plans: Girdle of the Dawn
-						i(19205), 	-- Plans: Gloves of the Dawn
+						i(19216),	-- Pattern: Argent Boots
+						i(19217),	-- Pattern: Argent Shoulders
+						i(19328),	-- Pattern: Dawn Treaders
+						i(19329),	-- Pattern: Golden Mantle of the Dawn
+						i(19203),	-- Plans: Girdle of the Dawn
+						i(19205),	-- Plans: Gloves of the Dawn
 						i(13482),	-- Recipe: Transmute Air to Fire
 						i(18173),	-- Shadow Mantle of the Dawn
 					},
@@ -45,8 +45,8 @@ _.Zones =
 					["coord"] = { 68.0, 77.6, WESTERN_PLAGUELANDS },
 					["g"] = {
 						i(8030),	-- Plans: Ebon Shiv
-						i(12823), 	-- Plans: Huge Thorium Battleaxe
-						i(12819), 	-- Plans: Ornate Thorium Handaxe
+						i(12823),	-- Plans: Huge Thorium Battleaxe
+						i(12819),	-- Plans: Ornate Thorium Handaxe
 						i(12703),	-- Plans: Storm Gauntlets
 						i(13501),	-- Recipe: Major Mana Potion
 						i(13485),	-- Recipe: Transmute Water to Air

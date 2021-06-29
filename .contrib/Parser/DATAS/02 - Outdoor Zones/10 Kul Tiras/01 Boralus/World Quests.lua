@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(876, { 	-- Kul'Tiras
+	m(876, {	-- Kul'Tiras
 		m(1161, {	-- Boralus
 			n(WORLD_QUESTS, {
 				n(QUESTS, {
@@ -256,7 +256,7 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["requireSkill"] = INSCRIPTION,
 						["g"] = {
-							i(162360), 	-- Recipe: Contract: Proudmoore Admiralty [Rank 3]
+							i(162360),	-- Recipe: Contract: Proudmoore Admiralty [Rank 3]
 						},
 					}),
 					q(52368, {	-- Work Order: Crow's Nest Scope
@@ -265,7 +265,7 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["requireSkill"] = ENGINEERING,
 						["g"] = {
-							i(162343), 	-- Schematic: Crow's Nest Scope [Rank 3]
+							i(162343),	-- Schematic: Crow's Nest Scope [Rank 3]
 						},
 					}),
 					q(52355, {	-- Work Order: Enchant Weapon - Coastal Surge
@@ -274,7 +274,7 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["requireSkill"] = ENCHANTING,
 						["g"] = {
-							i(162315), 	-- Formula: Enchant Weapon - Coastal Surge [Rank 3]
+							i(162315),	-- Formula: Enchant Weapon - Coastal Surge [Rank 3]
 						},
 					}),
 					q(52356, {	-- Work Order: Enchant Weapon - Torrent of Elements
@@ -283,7 +283,7 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["requireSkill"] = ENCHANTING,
 						["g"] = {
-							i(162319), 	-- Formula: Enchant Weapon - Torrent of Elements [Rank 3]
+							i(162319),	-- Formula: Enchant Weapon - Torrent of Elements [Rank 3]
 						},
 					}),
 					q(52363, {	-- Work Order: Incendiary Ammunition
@@ -292,7 +292,7 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["requireSkill"] = ENGINEERING,
 						["g"] = {
-							i(162321), 	-- Schematic: Incendiary Ammunition [Rank 3]
+							i(162321),	-- Schematic: Incendiary Ammunition [Rank 3]
 						},
 					}),
 					q(52405, {	-- Work Order: Kubiline
@@ -355,7 +355,7 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["requireSkill"] = ENGINEERING,
 						["g"] = {
-							i(162339), 	-- Schematic: XA-1000 Surface Skimmer [Rank 3]
+							i(162339),	-- Schematic: XA-1000 Surface Skimmer [Rank 3]
 						},
 					}),
 				}),

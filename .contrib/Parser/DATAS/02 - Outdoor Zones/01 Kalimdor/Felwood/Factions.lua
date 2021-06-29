@@ -84,14 +84,14 @@ _.Zones =
 								["g"] = {
 									i(22392),	-- Formula: Enchant 2H Weapon - Agility
 									i(19445),	-- Formula: Enchant Weapon - Agility
-									i(19218), 	-- Pattern: Mantle of the Timbermaw
-									i(19326), 	-- Pattern: Might of the Timbermaw
-									i(19327),  	-- Pattern: Timbermaw Brawlers
-									i(20253), 	-- Pattern: Warbear Harness (BoP version)
-									i(20254), 	-- Pattern: Warbear Woolies
-									i(19215), 	-- Pattern: Wisdom of the Timbermaw
-									i(19202), 	-- Plans: Heavy Timbermaw Belt
-									i(19204), 	-- Plans: Heavy Timbermaw Boots
+									i(19218),	-- Pattern: Mantle of the Timbermaw
+									i(19326),	-- Pattern: Might of the Timbermaw
+									i(19327),	-- Pattern: Timbermaw Brawlers
+									i(20253),	-- Pattern: Warbear Harness (BoP version)
+									i(20254),	-- Pattern: Warbear Woolies
+									i(19215),	-- Pattern: Wisdom of the Timbermaw
+									i(19202),	-- Plans: Heavy Timbermaw Belt
+									i(19204),	-- Plans: Heavy Timbermaw Boots
 									i(13484),	-- Recipe: Transmute Earth to Water
 									i(66888),	-- Stave of Fur and Claw Toy
 								},

@@ -5,7 +5,7 @@ local AMANI_HEX_STICK = i(33865);	-- Amani Hex Stick
 local BADGE_OF_JUSTICE = i(29434);	-- Badge of Justice
 local EXECUTIONER_RECIPE = i(33307);	-- Formula: Enchant Weapon - Executioner
 local MOJO_PET = i(33993);	-- Mojo (PET!)
-local FOREST_FROG = n(24396, { 	-- Forest Frog
+local FOREST_FROG = n(24396, {	-- Forest Frog
 	["description"] = "Use an Amani Hex Stick on a Forest Frog for a chance to have Mojo spawn and hop into your bags.",
 	["cost"] = {
 		{ "i", 33865, 1 },	-- Amani Hex Stick
@@ -19,7 +19,7 @@ local FOREST_FROG = n(24396, { 	-- Forest Frog
 	},
 });
 _.Instances = { tier(2, applylegacyclassicphase(TBC_PHASE_FOUR, {	-- Burning Crusade
-	inst(77, { 	-- Zul'Aman
+	inst(77, {	-- Zul'Aman
 		["coord"] = { 81.8, 64.3, GHOSTLANDS },	-- Zul'Aman, Ghostlands
 		["mapID"] = ZULAMAN,
 		["isRaid"] = true,

@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(876, { 	-- Kul'Tiras
+	m(876, {	-- Kul'Tiras
 		m(895, {	-- Tiragarde Sound
 			n(ACHIEVEMENTS, {
 				ach(12473, {	-- A Sound Plan
@@ -35,7 +35,7 @@ _.Zones =
 							},
 						}),
 						crit(7, {	-- Castaways and Cutouts
-							["sourceQuests"] = { 	-- uncommented are definitely required (have turned both in as final quests to earn the criteria on separate playthroughs).  not sure if the commented-out ones are required.  'toxic community' and 'glimmering locket' definitely aren't required.
+							["sourceQuests"] = {	-- uncommented are definitely required (have turned both in as final quests to earn the criteria on separate playthroughs).  not sure if the commented-out ones are required.  'toxic community' and 'glimmering locket' definitely aren't required.
 								48421,	-- Blood in the Tides
 								49226,	-- Silencing the Sisters
 								--	49230,	-- Local Flavor

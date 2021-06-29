@@ -18,97 +18,97 @@ _.Achievements =
 				un(REMOVED_FROM_GAME, title(340, {	-- TITLE: Field Medic!
 					i(139534, {	-- Bloody Letter
 						["achievementID"] = 11139,	-- Field Medic
-						["criteriaID"] = 1, 		-- Bloody Letter
+						["criteriaID"] = 1,		-- Bloody Letter
 						--["questID"] = 42350,		-- Bloody Letter
 						["description"] = "Northwest Suramar."
 					}),
 					i(139522, {	-- Bloody Note
 						["achievementID"] = 11139,	-- Field Medic
-						["criteriaID"] = 2, 		-- Bloody Note
+						["criteriaID"] = 2,		-- Bloody Note
 						--["questID"] = 42255,		-- Bloody Note
 						["description"] = "Pirates in southern-east Azsuna."
 					}),
 					i(139527, {	-- Bloody Plea
 						["achievementID"] = 11139,	-- Field Medic
-						["criteriaID"] = 3, 		-- Bloody Plea
+						["criteriaID"] = 3,		-- Bloody Plea
 						--["questID"] = 42308,		-- Bloody Plea
 						["description"] = "Furbolgs in southern Val'sharah"
 					}),
 					i(139535, {	-- Bloody Prayer
 						["achievementID"] = 11139,	-- Field Medic
-						["criteriaID"] = 4, 		-- Bloody Prayer
+						["criteriaID"] = 4,		-- Bloody Prayer
 						--["questID"] = 42351,		-- Bloody Prayer
 						["description"] = "Southwest Suramar City."
 					}),
 					i(139528, {	-- Bloody Request
 						["achievementID"] = 11139,	-- Field Medic
-						["criteriaID"] = 5, 		-- Bloody Request
+						["criteriaID"] = 5,		-- Bloody Request
 						--["questID"] = 42309,		-- Bloody Request
 						["description"] = "Grizzleweald (68, 73) in Val'sharah"
 					}),
 					i(139524, {	-- Crumpled Letter
 						["achievementID"] = 11139,	-- Field Medic
-						["criteriaID"] = 6, 		-- Crumpled Letter
+						["criteriaID"] = 6,		-- Crumpled Letter
 						--["questID"] = 42333,		-- Crumpled Letter
 						["description"] = "Western Highmountain next to Skyhorn.",
 					}),
 					i(139525, {	-- Crumpled Note
 						["achievementID"] = 11139,	-- Field Medic
-						["criteriaID"] = 7, 		-- Crumpled Note
+						["criteriaID"] = 7,		-- Crumpled Note
 						--["questID"] = 42334,		-- Crumpled Note
 						["description"] = "Northern Highmountain."
 					}),
 					i(139531, {	-- Crumpled Request
 						["achievementID"] = 11139,	-- Field Medic
-						["criteriaID"] = 8, 		-- Crumpled Request
+						["criteriaID"] = 8,		-- Crumpled Request
 						--["questID"] = 42058,		-- Crumpled Request
 						["description"] = "Vampirates. (Stormheim)"
 					}),
 					i(139523, {	-- Fevered Letter
 						["achievementID"] = 11139,	-- Field Medic
-						["criteriaID"] = 9, 		-- Fevered Letter
+						["criteriaID"] = 9,		-- Fevered Letter
 						--["questID"] = 42323,		-- Fevered Letter
 						["description"] = "Southern Highmountain."
 					}),
 					i(139526, {	-- Fevered Note
 						["achievementID"] = 11139,	-- Field Medic
-						["criteriaID"] = 10, 		-- Fevered Note
+						["criteriaID"] = 10,		-- Fevered Note
 						--["questID"] = 42303,		-- Fevered Note
 						["description"] = "Southern Val'sharah"
 					}),
 					i(139520, {	-- Fevered Plea
 						["achievementID"] = 11139,	-- Field Medic
-						["criteriaID"] = 11, 		-- Fevered Plea
+						["criteriaID"] = 11,		-- Fevered Plea
 						--["questID"] = 42250,		-- Fevered Plea
 						["description"] = "Murlocs at the southern tip in Azsuna."
 					}),
 					i(139532, {	-- Fevered Prayer
 						["achievementID"] = 11139,	-- Field Medic
-						["criteriaID"] = 12, 		-- Fevered Prayer
+						["criteriaID"] = 12,		-- Fevered Prayer
 						--["questID"] = 42345,		-- Fevered Prayer
 						["description"] = "Northwest Suramar."
 					}),
 					i(139529, {	-- Fevered Request
 						["achievementID"] = 11139,	-- Field Medic
-						["criteriaID"] = 13, 		-- Fevered Request
+						["criteriaID"] = 13,		-- Fevered Request
 						--["questID"] = 41985,		-- Fevered Request
 						["description"] = "Murlocs at Morheim (eastern Stormheim)."
 					}),
 					i(139530, {	-- Singed Letter
 						["achievementID"] = 11139,	-- Field Medic
-						["criteriaID"] = 14, 		-- Singed Letter
+						["criteriaID"] = 14,		-- Singed Letter
 						--["questID"] = 42215,		-- Singed Letter
 						["description"] = "Southern Stormheim."
 					}),
 					i(139521, {	-- Singed Note
 						["achievementID"] = 11139,	-- Field Medic
-						["criteriaID"] = 15, 		-- Singed Note
+						["criteriaID"] = 15,		-- Singed Note
 						--["questID"] = 42245,		-- Singed Note
 						["description"] = "Murlocs on the left coast of the lake surrounding Nar'thalos Academy."
 					}),
 					i(139533, {	-- Singed Plea
 						["achievementID"] = 11139,	-- Field Medic
-						["criteriaID"] = 16, 		-- Singed Plea
+						["criteriaID"] = 16,		-- Singed Plea
 						--["questID"] = 42340,		-- Singed Plea
 						["description"] = "Fal'dorei Tunnels."
 					}),

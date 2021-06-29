@@ -747,8 +747,8 @@ _.HiddenQuestTriggers = {
 	q(42330),	-- Priest Order Hall - Tracking Quest: Lumenstone 3
 	q(42331),	-- Priest Order Hall - Tracking Quest: Lumenstone 4
 	q(42332),	-- Priest Order Hall - Tracking Quest: Lumenstone 5
-	q(43507), 	-- Priest Order Hall - Looting the priest altar
-	q(43941), 	-- Priest Order Hall - Discipline chosen second
+	q(43507),	-- Priest Order Hall - Looting the priest altar
+	q(43941),	-- Priest Order Hall - Discipline chosen second
 	q(44408),	-- Priest Order Hall - Shadow chosen third
 	q(44409),	-- Priest Order Hall - Discipline chosen third
 	q(44608),	-- Priest Order Hall - Tracking Quest: Holy Ground 1 — these 5 are for the missions done during the priest class hall quest "Awakening the Light"

@@ -30,7 +30,7 @@ _.Craftables =
 		}),
 		prof(BLACKSMITHING, {
 			f(55, {		-- Consumables
-				i(55054), 	-- Ebonsteel Belt Buckle
+				i(55054),	-- Ebonsteel Belt Buckle
 				i(55055),	-- Elementium Shield Spike
 				i(55057),	-- Pyrium Weapon Chain
 			}),
@@ -195,7 +195,7 @@ _.Craftables =
 					ill(4074),	-- Elemental Slayer
 				}),
 			}),
-			filter(101, { 	-- Pet Battle
+			filter(101, {	-- Pet Battle
 				i(67274),	-- Enchanted Lantern
 				i(67275),	-- Magic Lamp
 			}),
@@ -324,7 +324,7 @@ _.Craftables =
 				i(52486, {	-- Jeweler's Sapphire Monocle
 					["description"] = "In order to mark this item as collected you will need to do a Shift+Click on the header.",
 				}),
-				i(52489),  	-- Rhinestone Sunglasses
+				i(52489),	-- Rhinestone Sunglasses
 			}),
 			filter(51, {	-- Neck
 				i(52307, {	-- Alicite Pendant
@@ -374,7 +374,7 @@ _.Craftables =
 				i(56503),	-- Twilight Leg Armor
 				i(56517),	-- Heavy Savage Armor Kit
 			}),
-			n(-322, { 	-- Cloak
+			n(-322, {	-- Cloak
 				un(REMOVED_FROM_GAME, i(70068)),	-- Bloodthirsty Fur Cloak
 				un(REMOVED_FROM_GAME, i(70069)),	-- Bloodthirsty Hide Cloak
 				i(56518),	-- Cloak of Beasts
@@ -386,7 +386,7 @@ _.Craftables =
 				i(75076),	-- Vicious Fur Cloak
 				i(75077),	-- Vicious Hide Cloak
 			}),
-			n(-44, { 	-- Leather
+			n(-44, {	-- Leather
 				i(56562),	-- Assassin's Chestplate
 				i(56537),	-- Belt of Nefarious Whispers
 				i(71985),	-- Bladeshadow Leggings
@@ -456,7 +456,7 @@ _.Craftables =
 				i(75080),	-- Vicious Wyrmhide Legs
 				i(75099),	-- Vicious Wyrmhide Shoulders
 			}),
-			n(-45, { 	-- Mail
+			n(-45, {	-- Mail
 				un(REMOVED_FROM_GAME, i(56546)),	-- Bloodied Dragonscale Belt
 				un(REMOVED_FROM_GAME, i(56534)),	-- Bloodied Dragonscale Boots
 				un(REMOVED_FROM_GAME, i(56526)),	-- Bloodied Dragonscale Bracers
@@ -538,11 +538,11 @@ _.Craftables =
 			f(55, {		-- Consumables
 				i(54447),	-- Enchanted Spellthread
 				i(54449),	-- Ghostly Spellthread
-			}),	
+			}),
 			n(-323, {		-- Chest
 				un(REMOVED_FROM_GAME, i(70060)),	-- Bloodthirsty Embersilk Robe
 				un(REMOVED_FROM_GAME, i(70058)),	-- Bloodthirsty Fireweave Robe
-				i(54475),	 		-- Deathsilk Robe
+				i(54475),			-- Deathsilk Robe
 				un(REMOVED_FROM_GAME, i(54495)),	-- Emberfire Robe
 				un(REMOVED_FROM_GAME, i(54494)),	-- Fireweave Robe
 				i(54486),			-- Spiritmend Robe

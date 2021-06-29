@@ -146,7 +146,7 @@ _.Zones =
 						{ 63.4, 79.6, 525 },
 					},
 					["g"] = {
-						i(116674), 	-- Great Greytusk (MOUNT!)
+						i(116674),	-- Great Greytusk (MOUNT!)
 					},
 				}),
 				n(74585, {	-- Grizzled Frostwolf Veteran
@@ -247,7 +247,7 @@ _.Zones =
 				n(81001, {	-- Nok-Karosh <Warrior's Death>
 					["coord"] = { 13.1, 50.4, 525 },
 					["g"] = {
-						i(116794), 	-- Garn Nighthowl (MOUNT!)
+						i(116794),	-- Garn Nighthowl (MOUNT!)
 					},
 				}),
 				n(87622, {	-- Ogom the Mangler
@@ -270,7 +270,7 @@ _.Zones =
 					["questID"] = 33938,
 					["coord"] = { 36.9, 33.8, 525 },
 					["g"] = {
-						i(111576), 	-- Ritual Leggings of Mur'og
+						i(111576),	-- Ritual Leggings of Mur'og
 					},
 				}),
 				n(84392, {	-- Ragore Driftstalker
@@ -285,7 +285,7 @@ _.Zones =
 					["questID"] = 34132,
 					["coord"] = { 76.5, 63.5, 525 },
 					["g"] = {
-						i(112094), 	-- Goreseeker's Goresplattered Garb
+						i(112094),	-- Goreseeker's Goresplattered Garb
 					},
 				}),
 				n(82617, {	-- Slogtusk the Corpse-Eater
@@ -308,7 +308,7 @@ _.Zones =
 					["questID"] = 34133,
 					["coord"] = { 26.9, 31.9, 525 },
 					["g"] = {
-						i(111475), 	-- Beater's Beat Stick
+						i(111475),	-- Beater's Beat Stick
 					},
 				}),
 				n(78265, {	-- The Bone Crawler

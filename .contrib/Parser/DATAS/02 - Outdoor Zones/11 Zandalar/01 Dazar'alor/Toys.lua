@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(875, { 	-- Zandalar
+	m(875, {	-- Zandalar
 		m(1163, {	-- Dazar'alor
 			n(-161, {	-- Toys
 				i(122293, {	-- Trans-Dimensional Bird Whistle

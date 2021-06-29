@@ -46,7 +46,7 @@ _.Zones =
 						i(21894, {	-- Pattern: Bolt of Soulcloth
 							["isLimited"] = true,
 						}),
-						i(21902, { 	-- Pattern: Soulcloth Gloves
+						i(21902, {	-- Pattern: Soulcloth Gloves
 							["isLimited"] = true,
 						}),
 					},
@@ -121,7 +121,7 @@ _.Zones =
 							["isLimited"] = true,
 						}),
 						i(21893),	-- Pattern: Imbued Netherweave Bag
-						i(21902, { 	-- Pattern: Soulcloth Gloves
+						i(21902, {	-- Pattern: Soulcloth Gloves
 							["isLimited"] = true,
 						}),
 					},
@@ -173,9 +173,9 @@ _.Zones =
 						i(29457),	-- Nethershard
 						i(29116),	-- Nomad's Leggings
 						i(24314),	-- Pattern: Bag of Jewels
-						i(25733), 	-- Pattern: Fel Leather Boots
-						i(25732), 	-- Pattern: Fel Leather Gloves
-						i(25734), 	-- Pattern: Fel Leather Leggings
+						i(25733),	-- Pattern: Fel Leather Boots
+						i(25732),	-- Pattern: Fel Leather Gloves
+						i(25734),	-- Pattern: Fel Leather Leggings
 						applyclassicphase(TBC_PHASE_THREE, i(23874)),	-- Schematic: Elemental Seaforium Charge
 						i(29118, {	-- Smuggler's Ammo Pouch
 							["timeline"] = { "removed 4.0.1.12941" },

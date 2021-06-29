@@ -183,7 +183,7 @@ _.Zones =
 						["races"] = { GNOME },
 						["classes"] = { MAGE },
 						["g"] = {
-							i(59042), 	-- Electro-Staff NOTE: Item is still in game and obtainable via quest 26197 for Mages (do not flag as unobtainable), Monk quest listed here is not available upon testing
+							i(59042),	-- Electro-Staff NOTE: Item is still in game and obtainable via quest 26197 for Mages (do not flag as unobtainable), Monk quest listed here is not available upon testing
 						},
 					}),
 					q(26207, {	-- The Arts of a Rogue

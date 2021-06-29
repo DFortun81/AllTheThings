@@ -70,7 +70,7 @@ _.Zones =
 							{ "i", 147443, 1 },	-- 1x Carrying Case For Hammer of Forgotten Heroes
 						},
 						["g"] = {
-							i(146714),	-- 	Hammer of Forgotten Heroes
+							i(146714),	-- Hammer of Forgotten Heroes
 						},
 					}),
 					i(146667),	-- Rethu's Incessant Courage
@@ -145,7 +145,7 @@ _.Zones =
 							}),
 						},
 					}),
-					ach(11725, { 	-- Fisherfriend of the Isles
+					ach(11725, {	-- Fisherfriend of the Isles
 						["collectible"] = false,
 						["description"] = "The Fishing Masters are on a daily rotation, so only one is up at a time.  The order is:\n\n1. Sha'leth\n2. Impus\n3. Ilyssia of the Waters\n4. Keeper Raynae\n5. Akule Riverhorn\n6. Corbyn\n\nMake sure you're close enough to the Fishing Master to get the |cFFFFD700Something's Fishy|r buff, or you won't be able to fish up the items (the buff may not show up until you dismount).\n\nThe quickest way to reach Best Friend is to fish in a group.\n",
 						["g"] = {
@@ -233,7 +233,7 @@ _.Zones =
 						["repeatable"] = true,
 						["requireSkill"] = LEATHERWORKING,
 						["g"] = {
-							i(146712),	-- 	Wisp-Touched Elderhide
+							i(146712),	-- Wisp-Touched Elderhide
 						},
 					}),
 					i(146669),	-- The Sentinel's Eternal Refuge
@@ -335,7 +335,7 @@ _.Zones =
 							46682,	-- Drapings of the Ancients
 							46680,	-- The Thread of Starlight
 							46679,	-- The Thread of Shadow
-							46681, 	-- The Thread of Souls
+							46681,	-- The Thread of Souls
 						},
 						["repeatable"] = true,
 						["requireSkill"] = TAILORING,

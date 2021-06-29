@@ -4,7 +4,7 @@
 
 dofile("./DATAS/06 - Expansion Features/Common/Raid Caches.lua");
 _.Instances = { tier(7, {	-- Legion
-	inst(786, { 	-- The Nighthold
+	inst(786, {	-- The Nighthold
 		["isRaid"] = true,
 		["coords"] = {
 			{ 43.3, 62.3, 680 },	-- entrance that leads underground
@@ -79,7 +79,7 @@ _.Instances = { tier(7, {	-- Legion
 						i(144405),	-- Waistclasp of Unethical Power
 					},
 				}),
-				ach(10829, { 	-- Arcing Aqueducts
+				ach(10829, {	-- Arcing Aqueducts
 					["crs"] = { 111246 },	-- Archmage Timear
 					["g"] = {
 						cr(102263, e(1706, {	-- Skorpyron
@@ -153,7 +153,7 @@ _.Instances = { tier(7, {	-- Legion
 						})),
 					},
 				}),
-				ach(10837, { 	-- Royal Athenaeum
+				ach(10837, {	-- Royal Athenaeum
 					["crs"] = { 111246 },	-- Archmage Timear
 					["g"] = {
 						cr(104881, e(1751, {	-- Spellblade Aluriel
@@ -232,7 +232,7 @@ _.Instances = { tier(7, {	-- Legion
 						}),
 					},
 				}),
-				ach(10838, { 	-- Nightspire
+				ach(10838, {	-- Nightspire
 					["crs"] = { 111246 },	-- Archmage Timear
 					["g"] = {
 						cr(103685, e(1762, {	-- Tichondrius
@@ -320,7 +320,7 @@ _.Instances = { tier(7, {	-- Legion
 						})),
 					},
 				}),
-				ach(10839, { 	-- Betrayer's Rise
+				ach(10839, {	-- Betrayer's Rise
 					["crs"] = { 111246 },	-- Archmage Timear
 					["g"] = {
 						cr(104154, e(1737, {	-- Gul'dan

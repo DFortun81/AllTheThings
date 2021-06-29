@@ -35,7 +35,7 @@ _.Zones =
 					["provider"] = { "n", 2055 },	-- Master Apothecary Farenell
 					["sourceQuest"] = 447,	-- A Recipe for Death
 				}),
-				q(451,   { 	-- A Recipe for Death
+				q(451,   {	-- A Recipe for Death
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 1937 },	-- Apothecary Renferrel
@@ -87,7 +87,7 @@ _.Zones =
 					["provider"] = { "n", 1938 },	-- Dalar Dawnweaver
 					["sourceQuest"] = 423,	-- Arugal's Folly
 				}),
-				q(99,    { 	-- Arugal's Folly
+				q(99,    {	-- Arugal's Folly
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 1938 },	-- Dalar Dawnweaver
@@ -98,7 +98,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(3586)),	-- Logsplitter
 					},
 				}),
-				q(442,   { 	-- Assault on Fenris Isle
+				q(442,   {	-- Assault on Fenris Isle
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -112,7 +112,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27045 },	-- Waiting to Exsanguinate
 				}),
-				q(516,   { 	-- Beren's Peril
+				q(516,   {	-- Beren's Peril
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -410,7 +410,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 1938 },	-- Dalar Dawnweaver
 				}),
-				q(452,   { 	-- Pyrewood Ambush
+				q(452,   {	-- Pyrewood Ambush
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -597,7 +597,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27056 },	-- Belmont's Report
 				}),
-				q(27232, { 	-- The Waters Run Red...
+				q(27232, {	-- The Waters Run Red...
 					["coord"] = { 59.1, 34.2, 21 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 205350 },	-- Horde Communication Panel
@@ -608,7 +608,7 @@ _.Zones =
 						i(131661),	-- Treads of Red Waters
 					},
 				}),
-				q(480,   { 	-- The Weaver
+				q(480,   {	-- The Weaver
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -665,7 +665,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27472 },	-- Rise, Godfrey
 				}),
-				q(27045, { 	-- Waiting to Exsanguinate
+				q(27045, {	-- Waiting to Exsanguinate
 					["coord"] = { 53.8, 12.9, 21 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 205143 },	-- Abandoned Outhouse
@@ -677,7 +677,7 @@ _.Zones =
 						i(62832),	-- Yorick's Bequest
 					},
 				}),
-				q(491,   { 	-- Wand to Bethor
+				q(491,   {	-- Wand to Bethor
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {

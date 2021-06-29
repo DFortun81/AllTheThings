@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(5, {	-- Mists of Pandaria
-	inst(312, { 	-- Shado-Pan Monastery
+	inst(312, {	-- Shado-Pan Monastery
 		["lvl"] = 87,
 		["maps"] = { 443, 444, 445, 446 },
 		["groups"] = {

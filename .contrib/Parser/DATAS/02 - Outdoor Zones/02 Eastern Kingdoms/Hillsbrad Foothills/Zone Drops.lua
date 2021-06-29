@@ -8,27 +8,27 @@ _.Zones =
 		m(HILLSBRAD_FOOTHILLS, {
 			n(ZONEDROPS, {
 				i(8491),	-- Cat Carrier (Black Tabby)
-				n(2287, { 	-- Crushridge Warmonger
+				n(2287, {	-- Crushridge Warmonger
 					un(REMOVED_FROM_GAME, i(1602)),	-- Sickle Axe
 				}),
-				n(2358, { 	-- Dalaran Summoner
+				n(2358, {	-- Dalaran Summoner
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(5245)), 	-- Summoner's Wand
+						un(REMOVED_FROM_GAME, i(5245)),	-- Summoner's Wand
 					},
 				}),
-				n(2346, { 	-- Dun Garok Priest
+				n(2346, {	-- Dun Garok Priest
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(4723)),	-- Humbert's Pants
 					},
 				}),
-				n(2345, { 	-- Dun Garok Rifleman
+				n(2345, {	-- Dun Garok Rifleman
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(4724)), 	-- Humbert's Helm
+						un(REMOVED_FROM_GAME, i(4724)),	-- Humbert's Helm
 					},
 				}),
 				i(11152, {	-- Formula: Enchant Gloves - Fishing
@@ -39,25 +39,25 @@ _.Zones =
 						2377,	-- Torn Fin Tidehunter
 					},
 				}),
-				n(2427, { 	-- Jailor Eston
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(3429)), 	-- Guardsman Belt
-					},
-				}),
-				n(2428, { 	-- Jailor Marlgen
+				n(2427, {	-- Jailor Eston
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(3429)),	-- Guardsman Belt
 					},
 				}),
-				n(2372, { 	-- Mudsnout Gnoll
+				n(2428, {	-- Jailor Marlgen
+					["u"] = REMOVED_FROM_GAME,
+					["g"] = {
+						un(REMOVED_FROM_GAME, i(3429)),	-- Guardsman Belt
+					},
+				}),
+				n(2372, {	-- Mudsnout Gnoll
 					un(REMOVED_FROM_GAME, i(3204)),	-- Deepwood Bracers
 				}),
 				i(5775,  {	-- Pattern: Black Silk Pack
 					["crs"] = { 2242 },	-- Syndicate Spy
 				}),
-				n(2246, { 	-- Syndicate Assassin
+				n(2246, {	-- Syndicate Assassin
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(1280)),	-- Cloaked Hood

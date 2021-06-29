@@ -21,11 +21,11 @@ _.Zones =
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
-					q(52858, { 	-- Azerite Empowerment
+					q(52858, {	-- Azerite Empowerment
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
-					q(51444, { 	-- Azerite Empowerment
+					q(51444, {	-- Azerite Empowerment
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
@@ -263,11 +263,11 @@ _.Zones =
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
-					q(50859, { 	-- Kandak
+					q(50859, {	-- Kandak
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
-					q(50869, { 	-- Kiboku
+					q(50869, {	-- Kiboku
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
@@ -279,7 +279,7 @@ _.Zones =
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
-					q(50885, { 	-- Lei-zhi
+					q(50885, {	-- Lei-zhi
 						["lvl"] = 120,
 						["isWorldQuest"] = true,
 					}),
@@ -310,12 +310,12 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
-					q(50855, { 	-- Old R'gal
+					q(50855, {	-- Old R'gal
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 						["g"] = {
-							i(160509), 	-- Echoes of Rezan (TOY!)
+							i(160509),	-- Echoes of Rezan (TOY!)
 						},
 					}),
 					q(51495, {	-- Old Rotana
@@ -355,7 +355,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
 					}),
-					q(51821, { 	-- Quelling the Cove
+					q(51821, {	-- Quelling the Cove
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
@@ -401,7 +401,7 @@ _.Zones =
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
 					}),
-					q(51822, { 	-- Scrolls and Scales
+					q(51822, {	-- Scrolls and Scales
 						["lvl"] = 120,
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
@@ -634,12 +634,12 @@ _.Zones =
 							i(162291),	-- Recipe: Swamp Fish 'n Chips [Rank 3]
 						},
 					}),
-					q(50957, { 	-- Wrath of Rezan
+					q(50957, {	-- Wrath of Rezan
 						["lvl"] = 120,
 						["races"] = HORDE_ONLY,
 						["isWorldQuest"] = true,
 						["g"] = {
-							i(160509), 	-- Echoes of Rezan (TOY!)
+							i(160509),	-- Echoes of Rezan (TOY!)
 						},
 					}),
 					q(54701, {	-- Wrath of the Ravasaur (Faction Assault WQ)

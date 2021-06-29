@@ -185,7 +185,7 @@ _.Zones =
 					["coord"] = { 27.4, 42.0, NAGRAND },
 					["sourceQuest"] = 9991,	-- Survey the Land
 				}),
-				q(9955,  { 	-- Cho'war the Pillager (A)
+				q(9955,  {	-- Cho'war the Pillager (A)
 					["provider"] = { "n", 18445 },	-- Corki
 					["coord"] = { 31.4, 44.0, NAGRAND },
 					["races"] = ALLIANCE_ONLY,
@@ -613,7 +613,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 9864,	-- The Missing War Party
 				}),
-				q(9873,  { 	-- Ortor My Old Friend...
+				q(9873,  {	-- Ortor My Old Friend...
 					["provider"] = { "n", 18183 },	-- Arechron
 					["coord"] = { 55.4, 68.8, NAGRAND },
 					["races"] = ALLIANCE_ONLY,
@@ -696,7 +696,7 @@ _.Zones =
 					["coord"] = { 60.0, 22.0, NAGRAND },
 					["sourceQuest"] = 9821,	-- Eating Damnation
 				}),
-				q(9878,  { 	-- Solving the Problem
+				q(9878,  {	-- Solving the Problem
 					["provider"] = { "n", 18224 },	-- Poli'lukluk the Wiser
 					["coord"] = { 54.4, 72.2, NAGRAND },
 					["races"] = ALLIANCE_ONLY,
@@ -713,7 +713,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 9891,	-- Because Kilrath is a Coward
 				}),
-				q(9874,  { 	-- Stopping the Spread
+				q(9874,  {	-- Stopping the Spread
 					["provider"] = { "n", 18222 },	-- Otonbu the Sage
 					["coord"] = { 54.4, 72.0, NAGRAND },
 					["races"] = ALLIANCE_ONLY,
@@ -814,7 +814,7 @@ _.Zones =
 					["coord"] = { 55.4, 37.4, NAGRAND },
 					["races"] = HORDE_ONLY,
 				}),
-				q(9956,  { 	-- The Ravaged Caravan
+				q(9956,  {	-- The Ravaged Caravan
 					["provider"] = { "n", 18416 },	-- Huntress Kima
 					["coord"] = { 54.8, 70.6, NAGRAND },
 					["races"] = ALLIANCE_ONLY,
@@ -1099,7 +1099,7 @@ _.Zones =
 -- #if AFTER TBC
 -- These quests trigger after specific events occur in the zone.
 _.HiddenQuestTriggers = {
-	
+
 };
 
 -- These quests never made it in.

@@ -34,16 +34,16 @@ _.Zones =
 						11567,	-- The Ancient Armor of the Kvaldir
 					},
 				}),
-				q(11272, { 	-- A Score to Settle (Note: the version in the dungeon is a different ID so this needs to stay)
+				q(11272, {	-- A Score to Settle (Note: the version in the dungeon is a different ID so this needs to stay)
 					["coord"] = { 78.6, 31.2, 117 },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 23780 },	-- High Executor Anselm
 					["sourceQuest"] = 11234,	-- Report to Anselm
 					["groups"] = {
-						i(39679), 	-- Runecaster's Bracers
+						i(39679),	-- Runecaster's Bracers
 						i(39680),	-- Vambraces of the Vengeance Bringer
-						i(39678), 	-- Vendetta Bindings
-						i(39676), 	-- Wraps of the San'layn
+						i(39678),	-- Vendetta Bindings
+						i(39676),	-- Wraps of the San'layn
 					},
 				}),
 				q(11305, {	-- A Tailor-Made Formula

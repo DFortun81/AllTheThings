@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(875, { 	-- Zandalar
+	m(875, {	-- Zandalar
 		m(862, {	-- Zuldazar
 			n(-38, {	-- Professions
 				prof(HERBALISM, {

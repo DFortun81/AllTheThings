@@ -363,7 +363,7 @@ _.Zones =
 				}),
 				q(47601, {	-- Field Evaluation
 					["sourceQuests"] = {
-						47711, 	-- Head of the Viper
+						47711,	-- Head of the Viper
 						47598,	-- Pilfering and Fencing
 						47596,	-- There Is No Plan "B"
 					},

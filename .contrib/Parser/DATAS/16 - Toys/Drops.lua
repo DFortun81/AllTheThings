@@ -4,7 +4,7 @@
 
 _.Toys =
 {
-	n(-26, { 	-- Drop
+	n(-26, {	-- Drop
 		i(127670),		-- Accursed Tome of the Sargerei
 		i(86589),		-- Ai-Li's Skymirror
 		i(175140),		-- All-Seeing Eyes

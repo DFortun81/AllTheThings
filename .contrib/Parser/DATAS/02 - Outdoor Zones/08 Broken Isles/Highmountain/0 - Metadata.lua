@@ -17,7 +17,7 @@ _.Zones =
 				656,	-- Lifespring Cavern
 				657,	-- Path of Huln (Floor 1)
 				658,	-- Path of Huln (Floor 2)
-				659, 	-- Stonedark Grotto
+				659,	-- Stonedark Grotto
 				660,	-- Feltotem Caverns
 				750,	-- Thunder Totem
 				826,	-- Cave of the Bloodtotem (Probably was Artefact Scenario for Mage Tower)
