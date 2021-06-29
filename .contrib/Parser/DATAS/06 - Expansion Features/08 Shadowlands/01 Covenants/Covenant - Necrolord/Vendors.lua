@@ -1501,3 +1501,28 @@ _.ExpansionFeatures =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10100, {	-- Shadowlands
+		n(-920, {	-- Covenant: Necrolord
+			n(-163, {	-- Armor
+				n(-43, {	-- Cloth
+					i(179412),	-- 9.0 Covenant - Maldraxxus - Cloth - Head
+					i(179413),	-- 9.0 Covenant - Maldraxxus - Cloth - Chest
+					i(179414),	-- 9.0 Covenant - Maldraxxus - Cloth - Feet
+					i(179415),	-- 9.0 Covenant - Maldraxxus - Cloth - Hands
+					i(179416),	-- 9.0 Covenant - Maldraxxus - Cloth - Legs
+					i(179417),	-- 9.0 Covenant - Maldraxxus - Cloth - Shoulders
+					i(179418),	-- 9.0 Covenant - Maldraxxus - Cloth - Waist
+					i(179419),	-- 9.0 Covenant - Maldraxxus - Cloth - Wrists
+					i(179660),	-- Winterborn Tunic
+				}),
+				n(-44, {	-- Leather
+				}),
+				n(-45, {	-- Mail
+				}),
+				n(-46, {	-- Plate
+				}),
+			}),
+		}),
+	}),
+});

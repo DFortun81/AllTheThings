@@ -1747,11 +1747,17 @@ _.Zones =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-10041, {
+	n(-10041, {	-- Mists of Pandaria
 		n(-163, {	-- Armor
 			n(-43, {	-- Cloth
+				i(80948),	-- Peacebreaker's Silk Cowl
+				i(80949),	-- Peacebreaker's Satin Hood
+				i(80997),	-- Silk Robe of Eminent Domain
+				i(80998),	-- Satin Robe of Eminent Domain
 				i(81006),	-- Honorary Combat Engineer's Silk Trousers
 				i(81007),	-- Honorary Combat Engineer's Satin Leggings
+				i(81015),	-- Landfall Silk Treads
+				i(81016),	-- Landfall Satin Treads
 			}),
 			n(-44, {	-- Leather
 				i(81004),	-- Honorary Combat Engineer's Leather Trousers

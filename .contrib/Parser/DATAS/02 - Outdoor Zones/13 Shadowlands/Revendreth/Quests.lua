@@ -980,4 +980,20 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(60227),	-- TBD Soulguard Torch
 		q(57228),	-- The Assault on Dreadhollow
 	}),
+	n(-10100, {	-- Shadowlands
+		n(-163, {	-- Armor
+			n(-43, {	-- Cloth
+				i(175420),	-- Slippers of Pained Absolution
+				i(175490),	-- Gloves of Pained Absolution
+				i(175501),	-- Shoulders of Pained Absolution
+				i(178074),	-- Cover of Pained Absolution
+			}),
+			n(-44, {	-- Leather
+			}),
+			n(-45, {	-- Mail
+			}),
+			n(-46, {	-- Plate
+			}),
+		}),
+	}),
 });

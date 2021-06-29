@@ -1404,3 +1404,27 @@ _.ExpansionFeatures =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10100, {	-- Shadowlands
+		n(-949, {	-- Covenant: Venthyr
+			n(-163, {	-- Armor
+				n(-43, {	-- Cloth
+					i(179466),	-- 9.0 Covenant - Revendreth - Cloth - Head
+					i(179467),	-- 9.0 Covenant - Revendreth - Cloth - Chest
+					i(179468),	-- 9.0 Covenant - Revendreth - Cloth - Feet
+					i(179469),	-- 9.0 Covenant - Revendreth - Cloth - Hands
+					i(179470),	-- 9.0 Covenant - Revendreth - Cloth - Legs
+					i(179471),	-- 9.0 Covenant - Revendreth - Cloth - Shoulders
+					i(179472),	-- 9.0 Covenant - Revendreth - Cloth - Waist
+					i(179473),	-- 9.0 Covenant - Revendreth - Cloth - Wrists
+				}),
+				n(-44, {	-- Leather
+				}),
+				n(-45, {	-- Mail
+				}),
+				n(-46, {	-- Plate
+				}),
+			}),
+		}),
+	}),
+});

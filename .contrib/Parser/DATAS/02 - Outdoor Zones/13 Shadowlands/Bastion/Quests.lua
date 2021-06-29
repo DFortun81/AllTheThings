@@ -987,4 +987,21 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(62895),	-- Track Selection
 		q(62896),	-- Track Selection
 	}),
+	n(-10100, {	-- Shadowlands
+		n(-163, {	-- Armor
+			n(-43, {	-- Cloth
+				i(175608),	-- Pure Aspirant's Robe
+				i(175620),	-- Pure Aspirant's Hood
+				i(175629),	-- Pure Aspirant's Mantle
+				i(175632),	-- Pure Aspirant's Cord
+				i(178958),	-- Pure Aspirant's Handwraps
+			}),
+			n(-44, {	-- Leather
+			}),
+			n(-45, {	-- Mail
+			}),
+			n(-46, {	-- Plate
+			}),
+		}),
+	}),
 });

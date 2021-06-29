@@ -125,183 +125,31 @@ _.NeverImplemented =
 			}),
 			cl(WARLOCK, {
 			}),
-			i(153289),	-- Eredar Priestess' Tunic
-			i(105710),	-- Lasso Bracers, Humanoid
-			i(105928),	-- Magic Bunny Hat
-			i(159190),	-- Foxhollow Bracelets
-			i(159170),	-- Freehold Handwraps
-			i(159183),	-- Foxhollow Cord
-			i(179660),	-- Winterborn Tunic
-			i(175420),	--
-			i(175512),	--
-			i(175608),	--
-			i(175620),	--
-			i(175629),	--
-			i(175632),	--
-			i(175679),	--
-			i(175682),	--
-			i(175686),	--
-			i(175688),	--
-			i(175691),	--
-			i(175695),	--
-			i(175697),	--
-			i(175700),	--
-			i(179412),	--
-			i(179413),	--
-			i(179414),	--
-			i(179415),	--
-			i(179416),	--
-			i(179417),	--
-			i(179418),	--
-			i(179419),	--
-			i(179439),	--
-			i(179440),	--
-			i(179441),	--
-			i(179442),	--
-			i(179443),	--
-			i(179444),	--
-			i(179445),	--
-			i(179446),	--
-			i(179466),	--
-			i(179467),	--
-			i(179468),	--
-			i(179469),	--
-			i(179470),	--
-			i(179471),	--
-			i(179472),	--
-			i(179473),	--
-			i(179489),	--
-			i(179490),	--
-			i(179587),	--
-			i(179588),	--
-			i(179589),	--
-			i(179590),	--
-			i(179591),	--
-			i(179592),	--
-			i(179595),	--
-			i(179683),	--
-			i(179684),	--
-			i(179685),	--
-			i(179686),	--
-			i(179687),	--
-			i(179688),	--
-			i(179689),	--
-			i(179690),	--
-			i(179691),	--
-			i(179692),	--
-			i(179693),	--
-			i(179694),	--
-			i(179695),	--
-			i(179696),	--
-			i(179697),	--
-			i(179698),	--
-			i(179699),	--
-			i(179700),	--
-			i(179701),	--
-			i(179702),	--
-			i(179703),	--
-			i(179704),	--
-			i(179705),	--
-			i(179706),	--
-			i(179707),	--
-			i(179708),	--
-			i(179709),	--
-			i(179710),	--
-			i(179711),	--
-			i(179712),	--
-			i(179713),	--
-			i(179714),	--
-			i(179715),	--
-			i(179716),	--
-			i(179717),	--
-			i(179718),	--
-			i(4989),		-- Mage Dragon Robe (intended to be quest reward, never made it to live?)
-			i(4990),		-- Scorched Bands
-			i(163340),	-- 7th Legionnaire's Circlet
-			i(163269),	-- 7th Legionnaire's Mantle
-			i(163343),	-- 7th Legionnaire's Sash
-			i(163427),	-- Honorbound Artificer's Skullcap
-			i(163425),	-- Honorbound Artificer's Mantle
-			i(163431),	-- Honorbound Artificer's Sash
-			i(109344),	-- Unknown
-			i(109363),	-- Unknown
-			i(109379),	-- Unknown
-			i(147036),	-- Fel-Stippled Legguards 								(removed Beta)
-			i(147058),	-- Chaos-Calming Wristguards 							(removed Beta)
-			i(147074),	-- Vambraces of Resoulte Justice
-			i(109398),	-- Unknown
-			i(109405),	-- Unknown
-			i(109411),	-- Unknown
-			i(109419),	-- Unknown
-			i(109423),	-- Unknown
-			i(109437),	-- Unknown
-			i(109451),	-- Unknown
-			i(109463),	-- Unknown
-			i(109473),	-- Unknown
-			i(109477),	-- Unknown
-			i(109521),	-- Unknown
-			i(109540),	-- Unknown
-			i(109542),	-- Unknown
-			i(109546),	-- Unknown
-			i(166406),	-- Flaskzertauren's Cloth Robes
-			i(166407),	-- Flaskzertauren's Cloth Shoulders
-			i(104355),	-- Titan Rocket Boots
-			i(109303),	-- Unknown
-			i(109339),	-- Unknown
-			i(109340),	-- Unknown
-			i(109341),	-- Unknown
-			i(109342),	-- Unknown
-			i(109343),	-- Unknown
-			i(107890),	-- Unknown
-			i(109272),	-- Unknown
-			i(109278),	-- Unknown
-			i(109290),	-- Unknown
-			i(109296),	-- Unknown
-			i(109297),	-- Unknown
-			i(109298),	-- Unknown
-			i(109299),	-- Unknown
-			i(109302),	-- Unknown
-			i(6478),	-- Rat Stompers
-			i(47102),	-- Unknown
-			i(12107),	-- Whispersilk Leggings
-			i(13080),	-- Widow's Clutch
-			i(1216),		-- Frost Bracers
+			-- Load in Game
+			-- Vanilla
+			i(1216),	-- Frost Bracers
+			i(4990),	-- Scorched Bands
 			i(18341),	-- Quel'dorei Sash
-			i(23433),	-- Blood Robes
-			i(23434),	-- Robes of the Shard
-			i(25793),	-- Curate's Footwraps
-			i(26015),	-- Anchorite Neophyte's Cuffs
-			i(27720),	-- Robes of the Aldor
-			i(30287),	-- Mantle of Arcane Mastery
-			i(34107),	-- Tattered Shoulderpads
-			i(37210),	-- Seafarer Cinch (removed in beta)
-			i(37225),	-- Sweltering Sandals (removed in beta)
-			i(37273),	-- Crimson Keeper Mitts
-			i(37295),	-- HF28 Cloth Spell Head4
-			i(39364),	-- Hood of the Titan Defender
-			i(43878),	-- Mantle of Unholy Power
-			i(45629),	-- Shadoweave Belt
-			i(47103),	-- Rotting Handwraps
-			i(54542),	-- Robes of Restored Hope
-			i(54550),	-- Hood of Vigorous Defense
-			i(54977),	-- Revitalizing Sandals
-			i(57528),	-- Hogger's Mangy Handgrips
-			i(60728),	-- Keeshan's Burlap Vest
+			-- TBC
+			i(23433),	-- Blood Robes (Says added in cata wowhead)
+			i(23434),	-- Robes of the Shard (Says added in cata wowhead)
+			i(25793),	-- Curate's Footwraps (Says added in cata wowhead)
+			-- added 2.3.0
+			i(34107),	-- Tattered Shoulderpads (Says added in cata wowhead)
+			-- Cata
+			i(59797),	-- Abalone-Linked Robes
 			i(62988),	-- Sash of the Unhonored
-			i(65746),	-- Leggings of Valorous Defense
 			i(66013),	-- Mantle of the Glorious Song
-			i(80948),	-- Peacebreaker's Silk Cowl
-			i(80949),	-- Peacebreaker's Satin Hood
+			-- MOP
+			-- Quest set?
 			i(80988),	-- Scavenger's Silk Amice
 			i(80989),	-- Scavenger's Satin Mantle
-			i(80997),	-- Silk Robe of Eminent Domain
-			i(80998),	-- Satin Robe of Eminent Domain
-			i(81015),	-- Landfall Silk Treads
-			i(81016),	-- Landfall Satin Treads
 			i(81033),	-- Scavenger's Silk Handguards
 			i(81034),	-- Scavenger's Satin Gloves
 			i(81042),	-- Scavenger's Silk Cuffs
 			i(81043),	-- Scavenger's Satin Cuffs
+			-- WoD
+			-- Quest set never used
 			i(114247),	-- Firefly Bracers
 			i(114254),	-- Firefly Robes
 			i(114255),	-- Firefly Sandals
@@ -310,12 +158,87 @@ _.NeverImplemented =
 			i(114267),	-- Firefly Trousers
 			i(114271),	-- Firefly Mantle
 			i(114275),	-- Firefly Cord
-			i(114297),	-- Feather-Cord Cloak
-			i(114298),	-- Cloak of Bent Dreams
-			i(114299),	-- Suture-Slice Cloak
-			i(114300),	-- Grimchop Greatcloak
-			i(114301),	-- Axebreak Darkcloak
-			i(59797),	-- Abalone-Linked Robes
+			-- Legion
+			i(153289),	-- Eredar Priestess' Tunic
+			-- BFA
+			i(163269),	-- 7th Legionnaire's Mantle
+			i(163340),	-- 7th Legionnaire's Circlet
+			i(163343),	-- 7th Legionnaire's Sash
+			i(163425),	-- Honorbound Artificer's Mantle
+			i(163427),	-- Honorbound Artificer's Skullcap
+			i(163431),	-- Honorbound Artificer's Sash
+			-- ItemID/Retrieving
+			-- Vanilla
+			i(4989),	-- Mage Dragon Robe (intended to be quest reward, never made it to live?)
+			i(6478),	-- Rat Stompers
+			i(12107),	-- Whispersilk Leggings
+			i(13080),	-- Widow's Clutch
+			-- TBC
+			i(26015),	-- Anchorite Neophyte's Cuffs (Says added in cata wowhead)
+			i(27720),	-- Robes of the Aldor (Says added in cata wowhead)
+			i(30287),	-- Mantle of Arcane Mastery (Says added in cata wowhead)
+			-- Wrath
+			i(37210),	-- Seafarer Cinch (removed in beta)
+			i(37225),	-- Sweltering Sandals (removed in beta)
+			i(37273),	-- Crimson Keeper Mitts
+			i(37296),	-- BT59 Cloth Spell Gloves4 (Says added in cata wowhead)
+			i(37295),	-- HF28 Cloth Spell Head4 (Says added in cata wowhead)
+			i(39364),	-- Hood of the Titan Defender (Says added in cata wowhead)
+			-- added 3.0.2
+			i(43878),	-- Mantle of Unholy Power (Says added in cata wowhead)
+			-- added 3.1.0
+			i(45629),	-- Shadoweave Belt (Says added in cata wowhead)
+			-- added 3.2.0
+			i(47103),	-- Rotting Handwraps (Says added in cata wowhead)
+			-- Cata
+			i(54542),	-- Robes of Restored Hope
+			i(54550),	-- Hood of Vigorous Defense
+			i(54977),	-- Revitalizing Sandals
+			i(57528),	-- Hogger's Mangy Handgrips
+			i(60728),	-- Keeshan's Burlap Vest
+			i(65746),	-- Leggings of Valorous Defense
+			-- WoD
+			i(104355),	-- Titan Rocket Boots
+			i(105710),	-- Lasso Bracers, Humanoid
+			i(105928),	-- Magic Bunny Hat
+			i(107890),	-- 7.0 PH Cloth Wristwraps
+			-- Testing gear added 6.0.1 all are quest items also
+			i(109272),	-- 7.0 QA Combat Test Caster Belt 1
+			i(109278),	-- 7.0 QA Combat Test Caster Robes 1
+			i(109290),	-- 7.0 QA Combat Test Caster Shoulders 1
+			i(109296),	-- 7.0 QA Combat Test Caster Belt 2
+			i(109297),	-- 7.0 QA Combat Test Caster Gloves 1
+			i(109298),	-- 7.0 QA Combat Test Caster Helm 1
+			i(109299),	-- 7.0 QA Combat Test Caster Legs 1
+			i(109302),	-- 7.0 QA Combat Test Caster Robes 2
+			i(109303),	-- 7.0 QA Combat Test Caster Shoulders 2
+			i(109339),	-- 7.0 QA Combat Test Caster Belt 3
+			i(109340),	-- 7.0 QA Combat Test Caster Gloves 2
+			i(109341),	-- 7.0 QA Combat Test Caster Helm 2
+			i(109342),	-- 7.0 QA Combat Test Caster Legs 2
+			i(109343),	-- 7.0 QA Combat Test Caster Robes 3
+			i(109344),	-- 7.0 QA Combat Test Caster Shoulders 3
+			i(109363),	-- 7.0 QA Combat Test Caster Gloves 3
+			i(109379),	-- 7.0 QA Combat Test Caster Boots
+			i(109398),	-- 7.0 QA Combat Test Caster Bracer 1
+			i(109405),	-- 7.0 QA Combat Test Caster Helm 3
+			i(109411),	-- 7.0 QA Combat Test Caster Legs 3
+			i(109419),	-- 7.0 QA Combat Test Caster Legs 4
+			i(109423),	-- 7.0 QA Combat Test Caster Robes 4
+			i(109437),	-- 7.0 QA Combat Test Caster Helm 4
+			i(109451),	-- 7.0 QA Combat Test Caster Boots 2
+			i(109463),	-- 7.0 QA Combat Test Caster Bracer 2
+			i(109473),	-- 7.0 QA Combat Test Caster Shoulders 4
+			i(109477),	-- 7.0 QA Combat Test Caster Belt 4
+			i(109521),	-- 7.0 QA Combat Test Caster Gloves 4
+			i(109540),	-- 7.0 QA Combat Test Caster Boots 3
+			i(109542),	-- 7.0 QA Combat Test Caster Bracer 3
+			i(109546),	-- 7.0 QA Combat Test Caster Bracer 4
+			-- BFA
+			i(159170),	-- Freehold Handwraps
+			i(159183),	-- Foxhollow Cord
+			i(159190),	-- Foxhollow Bracelets
+			-- Testing 8.2.0
 			i(167111),	-- QA Combat Test Caster Belt 1
 			i(167112),	-- QA Combat Test Caster Robes 1
 			i(167113),	-- QA Combat Test Caster Shoulders 1
@@ -994,6 +917,11 @@ _.NeverImplemented =
 			i(163367),	-- Honorbound vanguard long cloak (different version used with locked to specific classes)
 			i(162640), 	-- Horde Toy Cape (used from Winter Veil 2018 Toy, but its just used to attach the look to you, you actually never get the item)
 			i(162641), 	-- Alliance Toy Cape (used from Winter Veil 2018 Toy, but its just used to attach the look to you, you actually never get the item)
+			i(114297),	-- Feather-Cord Cloak
+			i(114298),	-- Cloak of Bent Dreams
+			i(114299),	-- Suture-Slice Cloak
+			i(114300),	-- Grimchop Greatcloak
+			i(114301),	-- Axebreak Darkcloak
 		}),
 		n(-349, {	-- Cosmetic
 			i(134110),	-- Hidden Helm

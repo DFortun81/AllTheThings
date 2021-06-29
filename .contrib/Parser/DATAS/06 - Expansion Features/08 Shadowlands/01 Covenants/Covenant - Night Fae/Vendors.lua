@@ -1652,5 +1652,63 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 
 	}),
+	n(-10100, {	-- Shadowlands
+		n(-929, {	-- Covenant: Night Fae
+			n(-163, {	-- Armor
+				n(-43, {	-- Cloth
+					i(179439),	-- 9.0 Covenant - Ardenweald - Cloth - Head
+					i(179440),	-- 9.0 Covenant - Ardenweald - Cloth - Chest
+					i(179441),	-- 9.0 Covenant - Ardenweald - Cloth - Feet
+					i(179442),	-- 9.0 Covenant - Ardenweald - Cloth - Hands
+					i(179443),	-- 9.0 Covenant - Ardenweald - Cloth - Legs
+					i(179444),	-- 9.0 Covenant - Ardenweald - Cloth - Shoulders
+					i(179445),	-- 9.0 Covenant - Ardenweald - Cloth - Waist
+					i(179446),	-- 9.0 Covenant - Ardenweald - Cloth - Wrists
+					i(179683),	-- Ardenweald Covenant Cloth Robe
+					i(179684),	-- Ardenweald Covenant Cloth Feet
+					i(179685),	-- Ardenweald Covenant Cloth Hand
+					i(179686),	-- Ardenweald Covenant Cloth Head
+					i(179687),	-- Ardenweald Covenant Cloth Legs
+					i(179688),	-- Ardenweald Covenant Cloth Shoulder
+					i(179689),	-- Ardenweald Covenant Cloth Waist
+					i(179690),	-- Ardenweald Covenant Cloth Wrist
+					i(179691),	-- Ardenweald Covenant Cloth Robe
+					i(179692),	-- Ardenweald Covenant Cloth Robe
+					i(179693),	-- Ardenweald Covenant Cloth Robe
+					i(179694),	-- Ardenweald Covenant Cloth Chest
+					i(179695),	-- Ardenweald Covenant Cloth Chest
+					i(179696),	-- Ardenweald Covenant Cloth Chest
+					i(179697),	-- Ardenweald Covenant Cloth Chest
+					i(179698),	-- Ardenweald Covenant Cloth Feet
+					i(179699),	-- Ardenweald Covenant Cloth Feet
+					i(179700),	-- Ardenweald Covenant Cloth Feet
+					i(179701),	-- Ardenweald Covenant Cloth Hand
+					i(179702),	-- Ardenweald Covenant Cloth Hand
+					i(179703),	-- Ardenweald Covenant Cloth Hand
+					i(179704),	-- Ardenweald Covenant Cloth Head
+					i(179705),	-- Ardenweald Covenant Cloth Head
+					i(179706),	-- Ardenweald Covenant Cloth Head
+					i(179707),	-- Ardenweald Covenant Cloth Legs
+					i(179708),	-- Ardenweald Covenant Cloth Legs
+					i(179709),	-- Ardenweald Covenant Cloth Legs
+					i(179710),	-- Ardenweald Covenant Cloth Shoulder
+					i(179711),	-- Ardenweald Covenant Cloth Shoulder
+					i(179712),	-- Ardenweald Covenant Cloth Shoulder
+					i(179713),	-- Ardenweald Covenant Cloth Waist
+					i(179714),	-- Ardenweald Covenant Cloth Waist
+					i(179715),	-- Ardenweald Covenant Cloth Waist
+					i(179716),	-- Ardenweald Covenant Cloth Wrist
+					i(179717),	-- Ardenweald Covenant Cloth Wrist
+					i(179718),	-- Ardenweald Covenant Cloth Wrist
+				}),
+				n(-44, {	-- Leather
+				}),
+				n(-45, {	-- Mail
+				}),
+				n(-46, {	-- Plate
+				}),
+			}),
+		}),
+	}),
 });
 -- #endif

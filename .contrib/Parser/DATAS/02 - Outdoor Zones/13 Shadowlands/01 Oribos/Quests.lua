@@ -842,4 +842,26 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(60138),	-- Unlocking the Gates
 		q(60559),	-- Unused
 	}),
+	n(-10100, {	-- Shadowlands
+		n(-163, {	-- Armor
+			n(-43, {	-- Cloth
+				i(175679),	-- Oribos Quest Cloth Robe
+				i(175682),	-- Oribos Quest Cloth Feet
+				i(175686),	-- Oribos Quest Cloth Hand
+				i(175688),	-- Oribos Quest Cloth Head
+				i(175691),	-- Oribos Quest Cloth Legs
+				i(175695),	-- Oribos Quest Cloth Shoulder
+				i(175697),	-- Oribos Quest Cloth Waist
+				i(175700),	-- Oribos Quest Cloth Wrist
+				i(179489),	-- Oribos Quest Cloth Chest
+				i(179490),	-- Oribos Quest Cloth Chest
+			}),
+			n(-44, {	-- Leather
+			}),
+			n(-45, {	-- Mail
+			}),
+			n(-46, {	-- Plate
+			}),
+		}),
+	}),
 });
