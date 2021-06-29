@@ -546,6 +546,14 @@ _.NeverImplemented =
 			i(163379),	-- 7th Legionnaire's Pants
 			i(56405),	-- Oasis Bracers
 			i(59796), 	-- Treads of Decapod Death
+			i(114248),	-- Bloodthorn Bracers
+			i(114251),	-- Bloodthorn Chestguard
+			i(114256),	-- Bloodthorn Boots
+			i(114260),	-- Bloodthorn Gauntlets
+			i(114264),	-- Bloodthorn Hood
+			i(114268),	-- Bloodthorn Legguards
+			i(114272),	-- Bloodthorn Spaulders
+			i(114276),	-- Bloodthorn Belt
 		}),
 		n(-45, {	-- Mail
 			cl(SHAMAN, {
@@ -939,6 +947,14 @@ _.NeverImplemented =
 			}),
 			i(103785),	-- Tusks of Mannoroth [Heroic]
 			i(59795),	-- Harp Shell Shoulderplates
+			i(114250),	-- Ruby Plate Bracers
+			i(114253),	-- Ruby Plate Breastplate
+			i(114258),	-- Ruby Plate Greaves
+			i(114262),	-- Ruby Plate Gauntlets
+			i(114266),	-- Ruby Plate Greathelm
+			i(114270),	-- Ruby Plate Legplates
+			i(114274),	-- Ruby Plate Shoulderguard
+			i(114278),	-- Ruby Plate Girdle
 		}),
 		n(-322, {	-- Cloaks
 			i(22230),	-- Frightmaw Hide (Cloak)

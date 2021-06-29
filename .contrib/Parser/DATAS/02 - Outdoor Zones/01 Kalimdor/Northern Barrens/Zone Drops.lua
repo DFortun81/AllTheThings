@@ -69,7 +69,7 @@ _.Zones =
 					un(REMOVED_FROM_GAME, i(97746)),	-- Malcontent's Vest
 					un(REMOVED_FROM_GAME, i(97635)),	-- Malcontent's Vest
 					un(REMOVED_FROM_GAME, i(97636)),	-- Tallgrass Guerilla's Tunic
-					un(REMOVED_FROM_GAME, i(97669)),	--  Dissident's Robes
+					un(REMOVED_FROM_GAME, i(97671)),	-- Dissident's Robes
 					un(REMOVED_FROM_GAME, i(97688)),	-- Crimson Schism hestpiece
 					un(REMOVED_FROM_GAME, i(97747)),	-- Crimson Schism hestpiece
 					un(REMOVED_FROM_GAME, i(97754)),	-- Crimson Schism hestpiece
@@ -77,7 +77,7 @@ _.Zones =
 					un(REMOVED_FROM_GAME, i(97777)),	-- Secessionist's Breastplate
 					un(REMOVED_FROM_GAME, i(97782)),	-- Secessionist's Breastplate
 					un(REMOVED_FROM_GAME, i(97670)),	-- Reformationist's Robe
-					un(REMOVED_FROM_GAME, i(97633)),	-- Disowner's  Tunic
+					un(REMOVED_FROM_GAME, i(97633)),	-- Disowner's Tunic
 					un(REMOVED_FROM_GAME, i(97628)),	-- Unbending Spirit Vest
 					un(REMOVED_FROM_GAME, i(97771)),	-- Unbending Spirit Vest
 					un(REMOVED_FROM_GAME, i(97669)),	-- Perjurious Robe
@@ -94,7 +94,7 @@ _.Zones =
 					un(REMOVED_FROM_GAME, i(97693)),	-- Crimson Schism Mitts
 					un(REMOVED_FROM_GAME, i(97749)),	-- Crimson Schism Mitts
 					un(REMOVED_FROM_GAME, i(97756)),	-- Crimson Schism Mitts
-					un(REMOVED_FROM_GAME, i(97634)),	-- Secessionist's Gauntlets
+					un(REMOVED_FROM_GAME, i(97650)),	-- Secessionist's Gauntlets
 					un(REMOVED_FROM_GAME, i(97775)),	-- Secessionist's Gauntlets
 					un(REMOVED_FROM_GAME, i(97784)),	-- Secessionist's Gauntlets
 					un(REMOVED_FROM_GAME, i(97648)),	-- Reformationist's Gloves
