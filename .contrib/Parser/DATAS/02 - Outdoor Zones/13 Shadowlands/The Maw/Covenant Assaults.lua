@@ -358,6 +358,8 @@ _.Zones =
 							i(186188, {	-- Lil'Abom (PET!)
 							--	TODO: maybe move to battle pet section?  but idk because all the parts come from treasures :\
 							--	originally was not on PTR, then showed up during necrolord assault.  then was up without assault, the necrolord assault came back and pet parts all disappeared.  so i'm really not sure what the fuck the criteria are for seeing/looting these objects lol.  there is an assault quest that requires you to help build abominations so it may be tied to that, but it wasn't up last time the NL assault was active so i'm not sure
+							--	currently up on live during the Night Fae assault................ i hate this game
+								["description"] = "What controls the availability of parts is currently unknown.  They appear to spawn in Perdition Hold and the surrounding area, next to dead Prime Guards.  If you cannot find parts at any of the provided coordinates, try using |cFFFFFFFF/tar Prime Guard|r.",
 								["cost"] = {
 									{ "i", 186183, 1 },	-- Lil'Abom Head
 									{ "i", 186185, 1 },	-- Lil'Abom Legs
@@ -369,8 +371,11 @@ _.Zones =
 							o(368666, {	-- Lil'Abom's Head
 								["questID"] = 64010,
 								["isDaily"] = true,
-							--	["coord"] = { 30.3, 63.3, THE_MAW }, original coord
-								["coord"] = { 32.1, 56.0, THE_MAW },	-- new coord?  or possibly multiple spawnpoints
+								["coords"] = {
+									{ 27.4, 56.6, THE_MAW },
+									{ 30.3, 63.3, THE_MAW },
+									{ 32.1, 56.0, THE_MAW },
+								},
 								["g"] = {
 									i(186183),	-- Lil'Abom Head
 								},
@@ -387,8 +392,10 @@ _.Zones =
 							o(368665, {	-- Lil'Abom's Spare Arm
 								["questID"] = 64009,
 								["isDaily"] = true,
-							--	["coord"] = { 39.2, 66.5, THE_MAW },
-								["coord"] = { 33.3, 65.8, THE_MAW },
+								["coords"] = {
+									{ 33.3, 65.8, THE_MAW },
+									{ 39.2, 66.5, THE_MAW },
+								},
 								["g"] = {
 									i(186187),	-- Lil'Abom Spare Arm
 								},
@@ -396,8 +403,11 @@ _.Zones =
 							o(368667, {	-- Lil'Abom's Torso
 								["questID"] = 64011,
 								["isDaily"] = true,
-							--	["coord"] = { 39.9, 62.6, THE_MAW }, old coord?  possibly multiple spawnpoints
-								["coord"] = { 36.9, 67.4, THE_MAW },
+								["coords"] = {
+									{ 36.4, 64.4, THE_MAW },
+									{ 36.9, 67.4, THE_MAW },
+									{ 39.9, 62.6, THE_MAW },
+								},
 								["g"] = {
 									i(186184),	-- Lil'Abom Torso
 								},

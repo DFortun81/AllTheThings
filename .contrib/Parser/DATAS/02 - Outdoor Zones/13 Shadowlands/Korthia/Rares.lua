@@ -32,7 +32,7 @@ _.Zones =
 					["description"] = "Requires someone to enter the Rift and click the rare, at which point it will pull the player out into the normal phase of Korthia.\n\nWhen the rare has shifted into the normal Korthia phase, there is a zonewide announcement: |cFFff8040Deadsoul Hatcher breaks into Korthia from the Rift!|r",
 					["questID"] = 64285,
 					["isDaily"] = true,
-					["coord"] = { 60.0, 53.2, KORTHIA },	-- haven't killed personally, coords may need to be refined
+					["coord"] = { 59.2, 52.0, KORTHIA },
 					["g"] = {
 						crit(4, {	-- Deadsoul Hatcher
 							["achievementID"] = 15107,	-- Conquering Korthia

@@ -104,6 +104,7 @@ _.Zones =
 				i(187329),	-- Old God Specimen Jar
 				i(187467),	-- Perplexing Rune-Cube
 				i(187332),	-- Recovered Page of Voices
+				i(186685),	-- Relic Fragment
 				i(187328),	-- Ripped Cosmology Chart
 				i(187323),	-- Runic Diagram
 				i(187462),	-- Scroll of Shadowlands Fables

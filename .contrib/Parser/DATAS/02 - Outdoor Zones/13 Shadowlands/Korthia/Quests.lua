@@ -7,6 +7,8 @@ _.Zones =
 	m(SHADOWLANDS, {
 		m(KORTHIA, {
 			n(QUESTS, {
+			--	TODO: 64567, "The Missing Scholar," triggered when turning in #63732, "Interrupt the Interrogations."  based on quest text on wowhead, this appears to be an alternate way to start the research chain - not sure if that means at a certain point if you haven't looted a single treasure/rare to get "Researching Korthian Relics," you will at some point receive this alternate version?????  it's also possible it's just an NYI quest.  i never ran into it on PTR; originally you picked up "Interrupt the Interrogations" without a preceding quest and then at one point they added "Researching Korthian Relics" to get you there more naturally.
+			
 			--	confirmed on live
 				q(63848, {	-- A Show of Gratitude
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
@@ -23,6 +25,11 @@ _.Zones =
 					["provider"] = { "n", 178793 },	-- Kael'thas Sunstrider
 					["isDaily"] = true,
 					["coord"] = { 61.8, 25.6, KORTHIA },
+				}),
+				q(63733, {	-- Carving Out a Path
+					["sourceQuests"] = { 63732 },	-- Interrupt the Interrogations
+					["provider"] = { "n", 178713 },	-- Archivist Roh-Dahl
+					["coord"] = { 58.9, 58.1, KORTHIA },
 				}),
 				q(63855, {	-- Ease of Passage
 					["sourceQuests"] = { 63848 },	-- A Show of Gratitude
@@ -42,6 +49,11 @@ _.Zones =
 					["g"] = {
 						i(187543),	-- Death's Advance War Chest
 					},
+				}),
+				q(63732, {	-- Interrupt the Interrogations
+					["sourceQuests"] = { 63731 },	-- Shattered Relics
+					["provider"] = { "n", 178694 },	-- Scholar Roh-Suir
+					["coord"] = { 59.0, 58.1, KORTHIA },
 				}),
 				q(63663, {	-- Korthia, the City of Secrets
 					["sourceQuests"] = { 63662 },	-- Mysteries of the Maw
@@ -80,6 +92,11 @@ _.Zones =
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 177228 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 62.8, 24.9, KORTHIA },
+				}),
+				q(63734, {	-- The Sundered Staff
+					["sourceQuests"] = { 63732 },	-- Interrupt the Interrogations
+					["provider"] = { "n", 178713 },	-- Archivist Roh-Dahl
+					["coord"] = { 58.9, 58.1, KORTHIA },
 				}),
 				q(64562, {	-- We Need a Healer - You! (intro version)
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance (must be on quest)
@@ -146,11 +163,6 @@ _.Zones =
 					["description"] = "Requires having purchased |cFF0070ddResearch Report: Ancient Shrines|r, allowing you to interact with the phasing swords.",
 					["provider"] = { "i", 186014 },	-- Bulwark of Divine Intent
 					["coord"] = { 18.5, 38.0, KORTHIA },
-				}),
-				q(63733, {	-- Carving Out a Path
-					["sourceQuests"] = { 63732 },	-- Interrupt the Interrogations
-					["provider"] = { "n", 178713 },	-- Archivist Roh-Dahl
-					["coord"] = { 58.9, 58.1, KORTHIA },
 				}),
 				q(63912, {	-- Celestial Shadowlands Chart
 					["sourceQuests"] = { 64506 },	-- What Must Be Found
@@ -231,11 +243,6 @@ _.Zones =
 					},
 					["provider"] = { "n", 177928 },	-- Archivist Roh-Dahl
 					["coord"] = { 39.4, 51.3, KORTHIA },
-				}),
-				q(63732, {	-- Interrupt the Interrogations
-					["sourceQuests"] = { 63731 },	-- Shattered Relics
-					["provider"] = { "n", 178694 },	-- Scholar Roh-Suir
-					["coord"] = { 59.0, 58.1, KORTHIA },
 				}),
 				q(63725, {	-- Into the Vault
 					["sourceQuests"] = {
@@ -409,11 +416,6 @@ _.Zones =
 					["provider"] = { "n", 177610 },	-- Caretaker Kah-Than
 					["coord"] = { 56.2, 38.8, KORTHIA },
 				}),
-				q(63734, {	-- The Sundered Staff
-					["sourceQuests"] = { 63732 },	-- Interrupt the Interrogations
-					["provider"] = { "n", 178713 },	-- Archivist Roh-Dahl
-					["coord"] = { 58.9, 58.1, KORTHIA },
-				}),
 				q(64305, {	-- The Tormentors of Torghast
 				--	TODO: not 100% on this SQ - i did the chain through "Good News, Everyone!" and picked up all the one-time quests that were up, then logged out.  when i logged back in later that day, this quest was up.  i'm PRETTY SURE i had picked up all the yellow quests in the area already but i guess maybe i missed one (even though it was literally right next to me lol)?  anyway, could use verification
 					["sourceQuests"] = { 63902 },	-- Good News, Everyone!
@@ -463,6 +465,27 @@ _.Zones =
 				}),
 
 				-- Korthia Daily
+			--	confirmed on live
+				q(63934, {	-- Assail Mail
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
+					["provider"] = { "n", 178802 },	-- Messenger Mnemis
+					["isDaily"] = true,
+					["coord"] = { 61.4, 22.4, KORTHIA },
+				}),
+				q(63964, {	-- Broker's Bounty: Grimtalon
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
+					["provider"] = { "o", 368772 },	-- Sigilscored Scroll
+					["isDaily"] = true,
+					["coord"] = { 64.7, 25.6, KORTHIA },
+				}),
+				q(63782, {	-- Mawsworn Rituals
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
+					["provider"] = { "n", 178799 },	-- Arios Riftbearer
+					["isDaily"] = true,
+					["coord"] = { 61.5, 23.5, KORTHIA },
+				}),
+
+			--	ptr data
 				i(186017),	-- Korthite Crystal - rewarded by some dailies and found in some treasures, but does not seem statically attached to anything specific.  acquisition/availability may be based on having completed the campaign questline to the point where you get to the Vault of Secrets
 				q(64271, {	-- A More Civilized Way
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
@@ -482,19 +505,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 61.8, 25.6, KORTHIA },
 				}),
-				q(63934, {	-- Assail Mail
-					["sourceQuests"] = { 64556 },	-- In Need of Assistance
-					["provider"] = { "n", 178802 },	-- Messenger Mnemis
-					["isDaily"] = true,
-					["coord"] = { 61.4, 22.4, KORTHIA },
-				}),
 				q(63793, {	-- Broker's Bounty: Ensydius the Defiler
-					["sourceQuests"] = { 64556 },	-- In Need of Assistance
-					["provider"] = { "o", 368772 },	-- Sigilscored Scroll
-					["isDaily"] = true,
-					["coord"] = { 64.7, 25.6, KORTHIA },
-				}),
-				q(63964, {	-- Broker's Bounty: Grimtalon
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "o", 368772 },	-- Sigilscored Scroll
 					["isDaily"] = true,
@@ -630,12 +641,6 @@ _.Zones =
 					["provider"] = { "n", 178795 },	-- Nadjia the Mistblade
 					["isDaily"] = true,
 					["coord"] = { 61.8, 25.1, KORTHIA },
-				}),
-				q(63782, {	-- Mawsworn Rituals
-					["sourceQuests"] = { 64556 },	-- In Need of Assistance
-					["provider"] = { "n", 178799 },	-- Arios Riftbearer
-					["isDaily"] = true,
-					["coord"] = { 61.5, 23.5, KORTHIA },
 				}),
 				q(63937, {	-- Nasty, Big, Pointy Teeth
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance

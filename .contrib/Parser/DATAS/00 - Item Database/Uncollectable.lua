@@ -11,6 +11,7 @@ i(186472);	-- Wisps of Memory
 -- Anima Items
 i(184147);	-- Agony Enrichment Device
 i(186201);	-- Ancient Anima Vessel
+i(186204);	-- Anima-Stained Glass Shards
 i(187349);	-- Anima Laden Egg
 i(181540);	-- Animaflower Bud
 i(181477);	-- Ardendew Pearl
@@ -50,6 +51,7 @@ i(184384);	-- Hibernal Sproutling
 i(181550);	-- Hopebreaker's Field Injector
 i(181621);	-- Hyper-Reactive Slime Sample
 i(181377);	-- Illustrated Combat Meditation Aid
+i(186200);	-- Infused Dendrite
 i(184774);	-- Juvenile Sporespindle
 i(184382);	-- Luminous Sylberry
 i(184307);	-- Maldraxxi Armor Scraps
