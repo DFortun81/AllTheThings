@@ -429,6 +429,9 @@ settings.CreateCheckBox = function(self, text, OnRefresh, OnClick)
 	cb:SetScript("OnClick", OnClick);
 	cb.OnRefresh = OnRefresh;
 	cb.Text:SetText(text);
+	-- TODO: wtb dynamic width back pls blizzard wtf
+	-- default is 275 now, crazy
+	cb.Text:SetWidth(150);
 	cb:SetHitRectInsets(0,0 - cb.Text:GetWidth(),0,0);
 	return cb;
 end
@@ -1099,6 +1102,7 @@ function(self)
 	settings:UpdateMode(1);
 end);
 AchievementsAccountWideCheckBox:SetATTTooltip(L["ACCOUNT_WIDE_ACHIEVEMENTS_TOOLTIP"]);
+AchievementsAccountWideCheckBox.Text:SetWidth(75);
 AchievementsAccountWideCheckBox:SetPoint("TOPLEFT", AchievementsCheckBox, "TOPLEFT", 220, 0);
 
 local TransmogCheckBox = settings:CreateCheckBox(L["TMOG_CHECKBOX"],
@@ -1284,6 +1288,7 @@ function(self)
 	settings:UpdateMode(1);
 end);
 HeirloomsCheckBox:SetATTTooltip(L["HEIRLOOMS_CHECKBOX_TOOLTIP"]);
+HeirloomsCheckBox.Text:SetWidth(60);
 HeirloomsCheckBox:SetPoint("TOPLEFT", FollowersCheckBox, "BOTTOMLEFT", 0, 4);
 
 local HeirloomUpgradesCheckBox = settings:CreateCheckBox(L["HEIRLOOMS_UPGRADES_CHECKBOX"],
@@ -2571,6 +2576,7 @@ function(self)
 end);
 TooltipModifierNoneCheckBox:SetPoint("TOP", EnableTooltipInformationCheckBox, "BOTTOM", 0, 4);
 TooltipModifierNoneCheckBox:SetPoint("LEFT", TooltipModifierLabel, "RIGHT", 5, 0);
+TooltipModifierNoneCheckBox.Text:SetWidth(40);
 
 local TooltipModifierShiftCheckBox = settings:CreateCheckBox(L["TOOLTIP_MOD_SHIFT"],
 function(self)
@@ -2595,6 +2601,7 @@ function(self)
 end);
 TooltipModifierShiftCheckBox:SetPoint("TOP", TooltipModifierNoneCheckBox, "TOP", 0, 0);
 TooltipModifierShiftCheckBox:SetPoint("LEFT", TooltipModifierNoneCheckBox.Text, "RIGHT", 5, 0);
+TooltipModifierShiftCheckBox.Text:SetWidth(40);
 
 local TooltipModifierCtrlCheckBox = settings:CreateCheckBox(L["TOOLTIP_MOD_CTRL"],
 function(self)
@@ -2619,6 +2626,7 @@ function(self)
 end);
 TooltipModifierCtrlCheckBox:SetPoint("TOP", TooltipModifierShiftCheckBox, "TOP", 0, 0);
 TooltipModifierCtrlCheckBox:SetPoint("LEFT", TooltipModifierShiftCheckBox.Text, "RIGHT", 5, 0);
+TooltipModifierCtrlCheckBox.Text:SetWidth(40);
 
 local TooltipModifierAltCheckBox = settings:CreateCheckBox(L["TOOLTIP_MOD_ALT"],
 function(self)
@@ -2643,6 +2651,7 @@ function(self)
 end);
 TooltipModifierAltCheckBox:SetPoint("TOP", TooltipModifierCtrlCheckBox, "TOP", 0, 0);
 TooltipModifierAltCheckBox:SetPoint("LEFT", TooltipModifierCtrlCheckBox.Text, "RIGHT", 5, 0);
+TooltipModifierAltCheckBox.Text:SetWidth(40);
 
 local TooltipShowLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
 TooltipShowLabel:SetJustifyH("LEFT");
