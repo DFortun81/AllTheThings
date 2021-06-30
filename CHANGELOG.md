@@ -9,3 +9,4 @@
 - Fixed Settings page
 - Harvested quests/items, we won't ask to report stuff as often
 - Various fixes to new content (quests, drops, etc)
+- You still have time until next reset to get your Shadowlands Keystone: Season One achievements
