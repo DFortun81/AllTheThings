@@ -5,11 +5,11 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(49, {	-- Redridge Mountains
+		m(REDRIDGE_MOUNTAINS, {
 			n(QUESTS, {
 				q(26708, {	-- AHHHHHHHHHHHH! AHHHHHHHHH!!!
 					["provider"] = { "n", 43733 },	-- Colonel Troteman
-					["coord"] = { 77.2, 65.9, 49 },
+					["coord"] = { 77.2, 65.9, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26694,	-- The Grand Magus Doane
 					["g"] = {
@@ -23,24 +23,24 @@ _.Zones =
 				}),
 				q(26509, {	-- An Unwelcome Guest
 					["provider"] = { "n", 342 },	-- Martie Jainrose
-					["coord"] = { 22.0, 42.7, 49 },
+					["coord"] = { 22.0, 42.7, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26562, {	-- And Last But Not Least... Danforth
 					["provider"] = { "n", 43303 },	-- Krakauer
-					["coord"] = { 25.9, 10.4, 49 },
+					["coord"] = { 25.9, 10.4, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26561,	-- Krakauer
 				}),
 				q(26636, {	-- Bravo Company Field Kit: Camouflage
 					["provider"] = { "n", 43461 },	-- Krakauer
-					["coord"] = { 52.4, 55.4, 49 },
+					["coord"] = { 52.4, 55.4, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26616,	-- It's Never Over
 				}),
 				q(26637, {	-- Bravo Company Field Kit: Chloroform
 					["provider"] = { "n", 43459 },	-- Messner
-					["coord"] = { 52.4, 55.5, 49 },
+					["coord"] = { 52.4, 55.5, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26616,	-- It's Never Over
 					["g"] = {
@@ -52,25 +52,25 @@ _.Zones =
 				}),
 				q(26587, {	-- Breaking Out is Hard to Do
 					["provider"] = { "n", 43270 },	-- Messner
-					["coord"] = { 47.5, 41.8, 49 },
+					["coord"] = { 47.5, 41.8, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 26586 },	-- In Search of Bravo Company
 				}),
 				q(26514, {	-- Canyon Romp
 					["provider"] = { "n", 344 },	-- Magistrate Solomon
-					["coord"] = { 32.3, 39.5, 49 },
+					["coord"] = { 32.3, 39.5, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26512,	-- Tuning the Gnomecorder
 				}),
 				q(26714, {	-- Darkblaze, Brood of the Worldbreaker
 					["provider"] = { "n", 43733 },	-- Colonel Troteman
-					["coord"] = { 60.6, 36.6, 49 },
+					["coord"] = { 60.6, 36.6, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26713,	-- Showdown at Stonewatch
 				}),
 				q(26668, {	-- Detonation
 					["provider"] = { "n", 43611 },	-- John J. Keeshan
-					["coord"] = { 77.6, 65.5, 49 },
+					["coord"] = { 77.6, 65.5, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26651,	-- To Win a War, You Gotta Become War
 					["g"] = {
@@ -91,7 +91,7 @@ _.Zones =
 				}),
 				q(26506, {	-- Franks and Beans
 					["provider"] = { "n", 379 },	-- Darchy Parker
-					["coord"] = { 15.6, 65.3, 49 },
+					["coord"] = { 15.6, 65.3, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26519, {	-- He Who Controls the Ettins
@@ -106,13 +106,13 @@ _.Zones =
 				}),
 				q(26728, {	-- Hero's Call: Duskwood!
 					["provider"] = { "n", 900 },	-- Bailiff Conacher
-					["coord"] = { 28.7, 40.9, 49 },
+					["coord"] = { 28.7, 40.9, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(26573, {	-- His Heart Must Be In It
 					["provider"] = { "n", 43221 },	-- Colonel Troteman
-					["coord"] = { 28.6, 40.7, 49 },
+					["coord"] = { 28.6, 40.7, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26571,	-- Weapons of War
 					["g"] = {
@@ -131,43 +131,43 @@ _.Zones =
 				}),
 				q(26638, {	-- Hunting the Hunters
 					["provider"] = { "n", 43462 },	-- Danforth
-					["coord"] = { 52.5, 55.5, 49 },
+					["coord"] = { 52.5, 55.5, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26616,	-- It's Never Over
 				}),
 				q(26586, {	-- In Search of Bravo Company
 					["provider"] = { "n", 43221 },	-- Colonel Troteman
-					["coord"] = { 28.6, 40.7, 49 },
+					["coord"] = { 28.6, 40.7, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26568,	-- This Ain't My War
 				}),
 				q(26616, {	-- It's Never Over
 					["provider"] = { "n", 43184 },	-- John J. Keeshan
-					["coord"] = { 26.3, 40.1, 49 },
+					["coord"] = { 26.3, 40.1, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26607,	-- They Drew First Blood
 				}),
 				q(26567, {	-- John J. Keeshan
 					["provider"] = { "n", 43221 },	-- Colonel Troteman
-					["coord"] = { 28.6, 40.7, 49 },
+					["coord"] = { 28.6, 40.7, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26545,	-- Yowler Must Die!
 				}),
 				q(26560, {	-- Jorgensen
 					["provider"] = { "n", 43300 },	-- Messner
-					["coord"] = { 47.5, 41.6, 49 },
+					["coord"] = { 47.5, 41.6, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26587,	-- Breaking Out is Hard to Do
 				}),
 				q(26561, {	-- Krakauer
 					["provider"] = { "n", 43305 },	-- Jorgensen
-					["coord"] = { 33.5, 11.8, 49 },
+					["coord"] = { 33.5, 11.8, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26560,	-- Jorgensen
 				}),
 				q(26511, {	-- Lake Everstill Clean Up
 					["provider"] = { "n", 900 },	-- Bailiff Conacher
-					["coord"] = { 28.6, 40.9, 49 },
+					["coord"] = { 28.6, 40.9, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(60699),	-- Bailiff's Gloves
@@ -180,7 +180,7 @@ _.Zones =
 				}),
 				q(26513, {	-- Like a Fart in the Wind
 					["provider"] = { "n", 382 },	-- Marshal Marris
-					["coord"] = { 31.8, 44.9, 49 },
+					["coord"] = { 31.8, 44.9, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26510,	-- We Must Prepare!
 					["g"] = {
@@ -219,24 +219,24 @@ _.Zones =
 				}),
 				q(26508, {	-- Nida's Necklace
 					["provider"] = { "n", 8965 },	-- Shawn
-					["coord"] = { 28.3, 48.8, 49 },
+					["coord"] = { 28.3, 48.8, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26505, {	-- Parker's Report
 					["provider"] = { "n", 464 },	-- Watch Captain Parker
-					["coord"] = { 15.3, 64.5, 49 },
+					["coord"] = { 15.3, 64.5, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26503,	-- Still Assessing the Threat
 				}),
 				q(26639, {	-- Point of Contact: Brubaker
 					["provider"] = { "n", 43458 },	-- John J. Keeshan
-					["coord"] = { 52.5, 55.4, 49 },
+					["coord"] = { 52.5, 55.4, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26616,	-- It's Never Over
 				}),
 				q(26646, {	-- Prisoners of War
 					["provider"] = { "n", 43458 },	-- John J. Keeshan
-					["coord"] = { 52.5, 55.4, 49 },
+					["coord"] = { 52.5, 55.4, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						26637,	-- Bravo Company Field Kit: Chloroform
@@ -247,19 +247,19 @@ _.Zones =
 				}),
 				q(26570, {	-- Render's Army
 					["provider"] = { "n", 382 },	-- Marshal Marris
-					["coord"] = { 31.8, 44.8, 49 },
+					["coord"] = { 31.8, 44.8, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26568,	-- This Ain't My War
 				}),
 				q(26563, {	-- Return of the Bravo Company
 					["provider"] = { "n", 43302 },	-- Danforth
-					["coord"] = { 28.3, 17.0, 49 },
+					["coord"] = { 28.3, 17.0, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26562,	-- And Last But Not Least... Danforth
 				}),
 				q(26520, {	-- Saving Foreman Oslow
 					["model"] = 203892,
-					["coord"] = { 17.8, 18.6, 49 },
+					["coord"] = { 17.8, 18.6, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 204351 },	-- Ettin Control Orb
 					["sourceQuest"] = 26519,	-- He Who Controls the Ettins
@@ -272,7 +272,7 @@ _.Zones =
 				}),
 				q(26692, {	-- Shadowhide Extinction
 					["provider"] = { "n", 43607 },	-- Danforth
-					["coord"] = { 77.6, 65.3, 49 },
+					["coord"] = { 77.6, 65.3, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26668,	-- Detonation
 					["g"] = {
@@ -283,13 +283,13 @@ _.Zones =
 				}),
 				q(26713, {	-- Showdown at Stonewatch
 					["provider"] = { "n", 43733 },	-- Colonel Troteman
-					["coord"] = { 60.6, 36.6, 49 },
+					["coord"] = { 60.6, 36.6, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26708,	-- AHHHHHHHHHHHH! AHHHHHHHHH!!!
 				}),
 				q(26503, {	-- Still Assessing the Threat
 					["provider"] = { "n", 464 },	-- Watch Captain Parker
-					["coord"] = { 15.3, 64.5, 49 },
+					["coord"] = { 15.3, 64.5, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {26365},	-- Hero's Call: Redridge Mountains!
 					["g"] = {
@@ -301,7 +301,7 @@ _.Zones =
 				}),
 				q(26569, {	-- Surveying Equipment
 					["provider"] = { "n", 43194 },	-- Foreman Oslow
-					["coord"] = { 29.6, 44.5, 49 },
+					["coord"] = { 29.6, 44.5, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26568,	-- This Ain't My War
 					["g"] = {
@@ -321,7 +321,7 @@ _.Zones =
 				}),
 				q(26693, {	-- The Dark Tower
 					["provider"] = { "n", 43611 },	-- John J. Keeshan
-					["coord"] = { 77.6, 65.5, 49 },
+					["coord"] = { 77.6, 65.5, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26668,	-- Detonation
 				}),
@@ -336,7 +336,7 @@ _.Zones =
 				}),
 				q(26694, {	-- The Grand Magus Doane
 					["provider"] = { "n", 43611 },	-- John J. Keeshan
-					["coord"] = { 77.6, 65.5, 49 },
+					["coord"] = { 77.6, 65.5, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26693,	-- The Dark Tower
 					["g"] = {
@@ -347,7 +347,7 @@ _.Zones =
 				}),
 				q(1699,  {	-- The Rethban Gauntlet
 					["provider"] = { "n", 6166 },	-- Yorus Barleybrew
-					["coord"] = { 26.8, 44.8, 49 },
+					["coord"] = { 26.8, 44.8, REDRIDGE_MOUNTAINS },
 					["sourceQuests"] = {
 						1698,	-- Yorus Barleybrew
 						10371,	-- Yorus Barleybrew (Draenei)
@@ -359,7 +359,7 @@ _.Zones =
 				}),
 				q(1702,  {	-- The Shieldsmith
 					["provider"] = { "n", 6166 },	-- Yorus Barleybrew
-					["coord"] = { 26.8, 44.8, 49 },
+					["coord"] = { 26.8, 44.8, REDRIDGE_MOUNTAINS },
 					["sourceQuest"] = 1699,	-- The Rethban Gauntlet
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
@@ -371,7 +371,7 @@ _.Zones =
 				}),
 				q(26607, {	-- They Drew First Blood
 					["provider"] = { "n", 43221 },	-- Colonel Troteman
-					["coord"] = { 28.6, 40.7, 49 },
+					["coord"] = { 28.6, 40.7, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						26573,	-- His Heart Must Be In It
@@ -380,25 +380,25 @@ _.Zones =
 				}),
 				q(26544, {	-- They've Wised Up...
 					["provider"] = { "n", 344 },	-- Magistrate Solomon
-					["coord"] = { 28.9, 41.1, 49 },
+					["coord"] = { 28.9, 41.1, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26514,	-- Canyon Romp
 				}),
 				q(26568, {	-- This Ain't My War
 					["provider"] = { "n", 43184 },	-- John J. Keeshan
-					["coord"] = { 26.3, 40.1, 49 },
+					["coord"] = { 26.3, 40.1, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26567,	-- John J. Keeshan
 				}),
 				q(26651, {	-- To Win a War, You Gotta Become War
 					["provider"] = { "n", 43458 },	-- John J. Keeshan
-					["coord"] = { 52.5, 55.3, 49 },
+					["coord"] = { 52.5, 55.3, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26646,	-- Prisoners of War
 				}),
 				q(26726, {	-- Triumphant Return
 					["provider"] = { "n", 43733 },	-- Colonel Troteman
-					["coord"] = { 60.6, 36.6, 49 },
+					["coord"] = { 60.6, 36.6, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26714,	-- Darkblaze, Brood of the Worldbreaker
 					["g"] = {
@@ -409,7 +409,7 @@ _.Zones =
 				}),
 				q(26512, {	-- Tuning the Gnomecorder
 					["provider"] = { "n", 344 },	-- Magistrate Solomon
-					["coord"] = { 28.9, 41.1, 49 },
+					["coord"] = { 28.9, 41.1, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26510,	-- We Must Prepare!
 				}),
@@ -423,14 +423,14 @@ _.Zones =
 				}),
 				q(26640, {	-- Unspeakable Atrocities
 					["provider"] = { "n", 43508 },	-- Brubaker
-					["coord"] = { 53.0, 67.8, 49 },
+					["coord"] = { 53.0, 67.8, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26639,	-- Point of Contact: Brubaker
 				}),
 				q(26504, {	-- Wanted: Redridge Gnolls
 					["provider"] = { "o", 204344 },	-- Wanted!
 					["model"] = 198409,
-					["coord"] = { 16.0, 64.6, 49 },
+					["coord"] = { 16.0, 64.6, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(60684),	-- Royal Guard Breastplate
@@ -440,18 +440,18 @@ _.Zones =
 				}),
 				q(26510, {	-- We Must Prepare!
 					["provider"] = { "n", 344 },	-- Magistrate Solomon
-					["coord"] = { 28.9, 41.1, 49 },
+					["coord"] = { 28.9, 41.1, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26571, {	-- Weapons of War
 					["provider"] = { "n", 43221 },	-- Colonel Troteman
-					["coord"] = { 28.6, 40.7, 49 },
+					["coord"] = { 28.6, 40.7, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26568,	-- This Ain't My War
 				}),
 				q(26545, {	-- Yowler Must Die!
 					["provider"] = { "n", 344 },	-- Magistrate Solomon
-					["coord"] = { 28.9, 41.1, 49 },
+					["coord"] = { 28.9, 41.1, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26544,	-- They've Wised Up...
 					["g"] = {

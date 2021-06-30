@@ -5,16 +5,16 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(49, {	-- Redridge Mountains
+		m(REDRIDGE_MOUNTAINS, {
 			n(FLIGHT_PATHS, {
 				fp(615, {	-- Camp Everstill, Redridge
-					["coord"] = { 52.8, 54.6, 49 },
+					["coord"] = { 52.8, 54.6, REDRIDGE_MOUNTAINS },
 				}),
 				fp(5, {	-- Lakeshire, Redridge
-					["coord"] = { 29.4, 53.6, 49 },
+					["coord"] = { 29.4, 53.6, REDRIDGE_MOUNTAINS },
 				}),
 				fp(596, {	-- Shalewind Canyon, Redridge
-					["coord"] = { 77.8, 65.8, 49 },
+					["coord"] = { 77.8, 65.8, REDRIDGE_MOUNTAINS },
 				}),
 			}),
 		}),

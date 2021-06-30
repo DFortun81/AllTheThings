@@ -362,8 +362,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { 50 },	-- Northern Stranglethorn
 										}),
 										crit(17, {	-- Redridge Mountains, Lakeshire
-											["coord"] = { 26.4, 41.6, 49 },
-											["maps"] = { 49 },	-- Redridge Mountains
+											["coord"] = { 26.4, 41.6, REDRIDGE_MOUNTAINS },
+											["maps"] = { REDRIDGE_MOUNTAINS },
 										}),
 										crit(18, {	-- Searing Gorge, Iron Summit
 											["coord"] = { 39.4, 66.1, SEARING_GORGE },

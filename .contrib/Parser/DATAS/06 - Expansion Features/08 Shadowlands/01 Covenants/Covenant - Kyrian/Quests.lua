@@ -33,7 +33,7 @@ _.ExpansionFeatures =
 					q(58791, {	-- A Day in the Life
 						["sourceQuests"] = { 58790 },
 						["provider"] = { "n", 162558 },	-- Alithea
-						["coord"] = { 32.5, 39.7, 49 }, -- Redridge Mountains
+						["coord"] = { 32.5, 39.7, REDRIDGE_MOUNTAINS },
 					}),
 					q(61697, {	-- A New Age
 						["sourceQuests"] = { 61135 },	-- Heart of the Crest
@@ -294,7 +294,7 @@ _.ExpansionFeatures =
 					q(58948, {	-- Food on the Table
 						["sourceQuests"] = { 58791 },	-- A Day in the Life
 						["provider"] = { "n", 162953 },	-- Sarah Howell
-						["coord"] = { 21.6, 42.0, 49 },	-- Redridge Mountains
+						["coord"] = { 21.6, 42.0, REDRIDGE_MOUNTAINS },
 					}),
 					q(58797, {	-- Forged by Trial
 					--	Unlocks Soulbind: Kleia (344757)
@@ -430,7 +430,7 @@ _.ExpansionFeatures =
 					q(58951, {	-- Lakeshire's Last Stand
 						["sourceQuests"] = { 58950 },	-- Lumber for Lakeshire
 						["provider"] = { "n", 163111 },	-- Magistrate Solomon
-						["coord"] = { 28.9, 41.1, 49 },	-- Redridge Mountains
+						["coord"] = { 28.9, 41.1, REDRIDGE_MOUNTAINS },
 					}),
 					q(58565, {	-- Land of Light
 						["sourceQuests"] = { 58564 },	-- Sins of the Past
@@ -448,7 +448,7 @@ _.ExpansionFeatures =
 							58949,	-- Millie's Garden
 						},
 						["provider"] = { "n", 162953 },	-- Sarah Howell
-						["coord"] = { 21.6, 42.0, 49 },	-- Redridge Mountains
+						["coord"] = { 21.6, 42.0, REDRIDGE_MOUNTAINS },
 					}),
 					q(57207, {	-- Lysonia's Plan
 						["sourceQuests"] = {
@@ -472,7 +472,7 @@ _.ExpansionFeatures =
 					q(58949, {	-- Millie's Garden
 						["sourceQuests"] = { 58791 },	-- A Day in the Life
 						["provider"] = { "n", 162953 },	-- Sarah Howell
-						["coord"] = { 21.6, 42.0, 49 },	-- Redridge Mountains
+						["coord"] = { 21.6, 42.0, REDRIDGE_MOUNTAINS },
 					}),
 					q(58789, {	-- Misguiding Mentors
 						["sourceQuests"] = { 58787 },	-- Trial of Ascension
@@ -803,7 +803,7 @@ _.ExpansionFeatures =
 					q(58792, {	-- Where a Soul Belongs
 						["sourceQuests"] = { 58951 },	-- Lakeshire's Last Stand
 						["provider"] = { "n", 162558 },	-- Alithea
-						["coord"] = { 32.5, 39.7, 49 }, -- Redridge Mountains
+						["coord"] = { 32.5, 39.7, REDRIDGE_MOUNTAINS },
 					}),
 					q(58856, {	-- Who Are You Fooling?
 						["sourceQuests"] = { 58775 },	-- Meet the Queen

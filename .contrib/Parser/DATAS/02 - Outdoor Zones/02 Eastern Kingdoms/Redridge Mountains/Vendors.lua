@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(49, {	-- Redridge Mountains
+		m(REDRIDGE_MOUNTAINS, {
 			n(VENDORS, {
 				n(777, {	-- Amy Davenport <Tradeswoman>
-					["coord"] = { 28.0, 43.6, 49 },
+					["coord"] = { 28.0, 43.6, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(20576, {	-- Pattern: Black Whelp Tunic
@@ -35,7 +35,7 @@ _.Zones =
 					},
 				}),
 				n(2697, {	-- Clyde Ranthal <Leatherworking Supplies>
-					["coord"] = { 78.8, 63.5, 49 },
+					["coord"] = { 78.8, 63.5, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(7289, {	-- Pattern: Black Whelp Cloak
@@ -44,7 +44,7 @@ _.Zones =
 					},
 				}),
 				n(3091, {	-- Franklin Hamar <Tailoring Supplies>
-					["coord"] = { 26.5, 42.0, 49 },
+					["coord"] = { 26.5, 42.0, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(4782, {	-- Solstice Robe
@@ -59,7 +59,7 @@ _.Zones =
 					},
 				}),
 				n(3085, {	-- Gloria Femmel <Cooking Supplies>
-					["coord"] = { 26.1, 40.3, 49 },
+					["coord"] = { 26.1, 40.3, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(21219),	-- Recipe: Sagefish Delight
@@ -67,7 +67,7 @@ _.Zones =
 					},
 				}),
 				n(793, {	-- Kara Adams <Shield Crafter>
-					["coord"] = { 29.4, 42.9, 49 },
+					["coord"] = { 29.4, 42.9, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(4821, {	-- Bear Buckler

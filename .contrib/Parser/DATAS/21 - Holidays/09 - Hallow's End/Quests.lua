@@ -1321,9 +1321,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12342, {	-- Candy Bucket — Redridge Mountains, Lakeshire, Alliance
 				["isYearly"] = true,
-				["coord"] = { 26.4, 41.6, 49 },
+				["coord"] = { 26.4, 41.6, REDRIDGE_MOUNTAINS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 49 },	-- Redridge Mountains
+				["maps"] = { REDRIDGE_MOUNTAINS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
