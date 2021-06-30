@@ -185,9 +185,7 @@ _.Zones =
 						crit(2, {	-- Dartanos
 							["achievementID"] = 14660,	-- It's About Sending a Message
 						}),
-						q(59230, {	-- Bonus Objective
-							["isDaily"] = true,
-						}),
+						i(186619),	-- Bloodspattered Shoulders of the Flayer
 					},
 				}),
 				n(162844, {	-- Dath Rezara
@@ -247,6 +245,7 @@ _.Zones =
 						crit(7, {	-- Dolos
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
 						}),
+						i(186209),	-- Blood-Spattered Gloves of Death
 					},
 				}),
 				n(158314, {	-- Drifting Sorrow
@@ -397,9 +396,7 @@ _.Zones =
 						crit(9, {	-- Krala
 							["achievementID"] = 14660,	-- It's About Sending a Message
 						}),
-						q(60903, {	-- Bonus Objective
-							["isDaily"] = true,
-						}),
+						i(186624),	-- Death Wing Drape
 					},
 				}),
 				n(171316, {	-- Malevolent Stygia
@@ -417,7 +414,8 @@ _.Zones =
 					},
 				}),
 				n(162849, {	-- Morguliax <Lord of Decapitation>
-					["coord"] = { 16.6, 50.6, THE_MAW },
+				--	["coord"] = { 16.6, 50.6, THE_MAW },	-- TODO; verify that this is a perm move and not just during NF assault
+					["coord"] = { 19.0, 43.8, THE_MAW },
 					["questID"] = 60987,
 					["isDaily"] = true,
 					["g"] = {
@@ -754,6 +752,8 @@ _.Zones =
 
 _.HiddenQuestTriggers = {
 	q(61136),	-- Agonix bonus objective
+	q(59230),	-- Dartanos bonus objective
+	q(60903),	-- Krala bonus objective
 	q(61125),	-- Malevolent Stygia bonus objective
 	q(60991),	-- Orrholyn bonus objective
 	q(62211),	-- Skittering Broodmother bonus objective

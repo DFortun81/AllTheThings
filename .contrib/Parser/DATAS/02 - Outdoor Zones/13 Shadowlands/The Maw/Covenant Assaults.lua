@@ -387,7 +387,8 @@ _.Zones =
 							o(368665, {	-- Lil'Abom's Spare Arm
 								["questID"] = 64009,
 								["isDaily"] = true,
-								["coord"] = { 39.2, 66.5, THE_MAW },
+							--	["coord"] = { 39.2, 66.5, THE_MAW },
+								["coord"] = { 33.3, 65.8, THE_MAW },
 								["g"] = {
 									i(186187),	-- Lil'Abom Spare Arm
 								},
@@ -395,7 +396,8 @@ _.Zones =
 							o(368667, {	-- Lil'Abom's Torso
 								["questID"] = 64011,
 								["isDaily"] = true,
-								["coord"] = { 39.9, 62.6, THE_MAW },
+							--	["coord"] = { 39.9, 62.6, THE_MAW }, old coord?  possibly multiple spawnpoints
+								["coord"] = { 36.9, 67.4, THE_MAW },
 								["g"] = {
 									i(186184),	-- Lil'Abom Torso
 								},
