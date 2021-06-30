@@ -25,10 +25,10 @@ _.Zones =
 							["questID"] = 64205,
 						}),
 						o(369134, {	-- Domination Sealed Cage
-							["questID"] = 64206,
+							["questID"] = 64208,
 						}),
 						o(369138, {	-- Domination Chest Seal
-							["questID"] = 64208,
+							["questID"] = 64206,
 						}),
 						i(186607),	-- Nilganihmaht's Silver Ring
 					},
@@ -107,6 +107,11 @@ _.Zones =
 					},
 				}),
 				o(369144, {	-- The Harrower's Key Ring
+					["description"] = "Entrance at 66.9, 55.9.\n\nKey Ring is hanging on the right side wall.",
+					["coords"] = {
+						{ 65.6, 60.0, THE_MAW },	-- Key Ring
+						{ 66.9, 55.9, THE_MAW },	-- Entrance
+					},
 					["questID"] = 62680,
 					["g"] = {
 						i(186727),	-- Seal Breaker Key

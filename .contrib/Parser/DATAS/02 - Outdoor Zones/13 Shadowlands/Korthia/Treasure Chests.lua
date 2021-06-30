@@ -30,6 +30,7 @@ _.Zones =
 						crit(4, {	-- Dislodged Nest
 							["achievementID"] = 15099,	-- Treasures of Korthia
 						}),
+						i(187339),	-- Silver Shardhide Whistle (TOY!)
 					},
 				}),
 				o(369204, {	-- Displaced Relic

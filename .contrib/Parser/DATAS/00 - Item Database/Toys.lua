@@ -739,11 +739,12 @@ t(178530);	-- Wreath-A-Rang
 t(187154);	-- Ancient Korthian Runes
 t(187139);	-- Bottled Shade Heart
 t(187051);	-- Forgotten Feather
+t(187155);	-- Guise of the Changeling
 t(187344);	-- Offering Kit Maker
 t(187113);	-- Personal Ball and Chain
 t(187140);	-- Ring of Duplicity
 t(187174);	-- Shaded Judgment Stone
 t(187159);	-- Shadow Slicing Shortsword
+t(187339);	-- Silver Shardhide Whistle
 t(187176);	-- Vesper of Harmony
 t(187184);	-- Vesper of Clarity
-t(187155);	-- Guise of the Changeling

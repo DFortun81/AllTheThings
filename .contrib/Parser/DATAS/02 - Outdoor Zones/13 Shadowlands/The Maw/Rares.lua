@@ -235,6 +235,7 @@ _.Zones =
 						crit(5, {	-- Deomen the Vortex
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
+						i(187385),	-- Vortex Piercing Headgear
 					},
 				}),
 				n(170711, {	-- Dolos
@@ -410,7 +411,6 @@ _.Zones =
 						i(186625, {	-- Hood of Malevolence
 							["timeline"] = { "added 9.1.0.38312" },
 						}),
-						
 					},
 				}),
 				n(162849, {	-- Morguliax <Lord of Decapitation>
@@ -633,6 +633,9 @@ _.Zones =
 						}),
 						q(62539, {	-- Bonus Objective
 							["isDaily"] = true,
+						}),
+						i(186631, {	-- Emberfused Band
+							["timeline"] = { "added 9.1.0.38312" },
 						}),
 					},
 				}),

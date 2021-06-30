@@ -63,6 +63,7 @@ _.Zones =
 							},
 							["g"] = {
 								i(187251),	-- Shaded Skull Shoulderguards
+								i(187243),	-- Shadehunter's Crescent
 								i(185050),	-- Spider Soul
 								i(187421),	-- Ashen Linament
 							},
@@ -77,6 +78,7 @@ _.Zones =
 							},
 							["g"] = {
 								i(187251),	-- Shaded Skull Shoulderguards
+								i(187243),	-- Shadehunter's Crescent
 								i(185050),	-- Spider Soul
 								i(187421),	-- Ashen Linament
 							},
@@ -90,6 +92,7 @@ _.Zones =
 							},
 							["g"] = {
 								i(187251),	-- Shaded Skull Shoulderguards
+								i(187243),	-- Shadehunter's Crescent
 								i(185050),	-- Spider Soul
 								i(187421),	-- Ashen Linament
 							},
@@ -103,6 +106,7 @@ _.Zones =
 							},
 							["g"] = {
 								i(187251),	-- Shaded Skull Shoulderguards
+								i(187243),	-- Shadehunter's Crescent
 								i(185050),	-- Spider Soul
 								i(187421),	-- Ashen Linament
 							},

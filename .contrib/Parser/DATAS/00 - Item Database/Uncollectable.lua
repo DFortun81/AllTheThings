@@ -92,6 +92,7 @@ i(184776);	-- Urn of Arena Soil
 i(186206);	-- Vault Emberstone
 i(184765);	-- Vesper Strikehammer
 i(184371);	-- Vivacity of Collaboration
+i(186202);	-- Wafting Koricone
 i(181643);	-- Weeping Corpseshroom
 i(184149);	-- Widowbloom-Infused Fragrance
 i(181648);	-- Ziggurat Focusing Crystal
