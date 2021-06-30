@@ -619,9 +619,7 @@ _.Zones =
 						crit(6, {	-- Soulsmith Yol-Mattar
 							["achievementID"] = 14660,	-- It's About Sending a Message
 						}),
-						q(59441, {	-- Bonus Objective
-							["isDaily"] = true,
-						}),
+						i(186630),	-- Spark-Deflecting Girdle
 					},
 				}),
 				n(156203, {	-- Stygian Incinerator
@@ -756,5 +754,6 @@ _.HiddenQuestTriggers = {
 	q(61125),	-- Malevolent Stygia bonus objective
 	q(60991),	-- Orrholyn bonus objective
 	q(62211),	-- Skittering Broodmother bonus objective
+	q(59441),	-- Soulsmith Yol-Mattar bonus objective
 	q(61728),	-- Valis bonus objective
 };

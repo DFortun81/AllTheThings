@@ -101,6 +101,11 @@ _.Zones =
 					["provider"] = { "n", 169031 },	-- Lady Moonberry
 					["coord"] = { 63.5, 36.2, ARDENWEALD },
 				}),
+				q(63638, {	-- Can't Turn Our Backs
+					["sourceQuests"] = { 63578 },	-- The Battle of Ardenweald
+					["provider"] = { "n", 177148 },	-- Lady Moonberry
+					["coord"] = { 48.7, 43.3, ARDENWEALD },
+				}),
 				q(58592, {	-- Caring for the Caretakers
 					["sourceQuests"] = { 60572 },	-- For the Sake of Spirit
 					["provider"] = { "n", 160962 },	-- Dreamweaver
@@ -609,6 +614,12 @@ _.Zones =
 					["provider"] = { "n", 160121 },	-- Master Sha'lor
 					["coord"] = { 62.9, 36.2, ARDENWEALD },
 				}),
+				q(63904, {	-- The Heart of Ardenweald
+					["sourceQuests"] = { 63638 },	-- Can't Turn Our Backs
+					["provider"] = { "n", 177460 },	-- Winter Queen
+					["coord"] = { 47.1, 48.5, ARDENWEALD },
+					["_drop"] = { "g" },	-- drop anima trash
+				}),
 				q(60628, {	-- The Missing Hunters
 					["sourceQuests"] = { 60521 },	-- Call of the Hunt
 					["provider"] = { "n", 169584 },	-- Hunt-Captain Korayn
@@ -831,18 +842,8 @@ _.Zones =
 				}),
 
 				-- PTR - TODO: merge with regular quests
-				q(63638, {	-- Can't Turn Our Backs
-					["sourceQuests"] = { 63578 },	-- The Battle of Ardenweald
-					["provider"] = { "n", 177148 },	-- Lady Moonberry
-					["coord"] = { 48.7, 43.3, ARDENWEALD },
-				}),
 				q(63639, {	-- Report to Oribos
 					["sourceQuests"] = { 63904 },	-- The Heart of Ardenweald
-					["provider"] = { "n", 177460 },	-- Winter Queen
-					["coord"] = { 47.1, 48.5, ARDENWEALD },
-				}),
-				q(63904, {	-- The Heart of Ardenweald
-					["sourceQuests"] = { 63638 },	-- Can't Turn Our Backs
 					["provider"] = { "n", 177460 },	-- Winter Queen
 					["coord"] = { 47.1, 48.5, ARDENWEALD },
 				}),

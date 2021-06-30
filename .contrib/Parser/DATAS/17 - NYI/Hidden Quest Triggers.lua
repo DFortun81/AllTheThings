@@ -3580,6 +3580,7 @@ _.HiddenQuestTriggers = {
 		q(64067),	-- generic quest for hitting Renown 46 (any covenant) - WQ reward upgrade #4
 		q(64073),	-- generic quest for hitting Renown 47 (any covenant)
 		q(64068),	-- generic quest for hitting Renown 61 (any covenant)
+		q(64655),	-- unsure precisely what triggers this - it was added late in the PTR cycle and popped originally in Korthia.  popped soon after i logged in on my main on retail
 
 		-- Exile's Reach
 		q(58418),	-- Triggers shortly after login. Possibly some kind of indicator for the account having done it at least once per faction?
