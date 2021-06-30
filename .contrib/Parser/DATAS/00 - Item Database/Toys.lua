@@ -746,3 +746,4 @@ t(187174);	-- Shaded Judgment Stone
 t(187159);	-- Shadow Slicing Shortsword
 t(187176);	-- Vesper of Harmony
 t(187184);	-- Vesper of Clarity
+t(187155);	-- Guise of the Changeling

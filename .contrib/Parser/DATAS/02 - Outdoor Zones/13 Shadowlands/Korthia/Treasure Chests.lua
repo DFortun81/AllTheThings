@@ -173,7 +173,7 @@ _.Zones =
 				o(369185, {	-- Korthian Relic Box
 					["description"] = "In the cave.",
 					["coord"] = { 41.2, 43.2, KORTHIA },
-					["cost"] = { { "i", 186984, 1 } },	-- Korthian Archivists' Key
+					["cost"] = { { "i", 187613, 1 } },	-- Key of the Inner Chambers
 					["g"] = {
 						i(187119, {	-- Ring of Self Reflection
 							["sourceQuests"] = { 64511 },	-- Missing Relics
@@ -202,13 +202,16 @@ _.Zones =
 						i(187047, {	-- Guise of the Changeling
 							["sourceQuests"] = { 64511 },	-- Missing Relics
 							["questID"] = 63909,	-- Guise of the Changeling
+							["g"] = {
+								i(187155),	-- Guise of the Changeling (TOY!)
+							},
 						}),
 					},
 				}),
 				o(369340, {	-- Korthian Relic Box
 					["description"] = "In the cave.",
 					["coord"] = { 43.5, 57.4, KORTHIA },
-					["cost"] = { { "i", 186984, 1 } },	-- Korthian Archivists' Key
+					["cost"] = { { "i", 187614, 1 } },	-- Key of Many Thoughts
 					["g"] = {
 						i(187150, {	-- Gorak Claw Fetish
 							["sourceQuests"] = { 64511 },	-- Missing Relics

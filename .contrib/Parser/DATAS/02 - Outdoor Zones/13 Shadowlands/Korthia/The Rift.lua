@@ -11,19 +11,19 @@ _.Zones =
 				["g"] = {
 					n(QUESTS, {
 						q(63919, {	-- Book of Binding: The Tormented Sorceror
-							["sourceQuests"] = { 64526 },	-- Mysterious Rifts
+							["sourceQuests"] = { 64506 },	-- What Must Be Found
 							["provider"] = { "i", 187210 },	-- Book of Binding: The Tormented Sorceror
 							["coord"] = { 60.8, 34.8, KORTHIA },
 							["cr"] = 179956,	-- Blue Book
 						}),
 						q(63914, {	-- Cipher of Understanding
-							["sourceQuests"] = { 64526 },	-- Mysterious Rifts
+							["sourceQuests"] = { 64506 },	-- What Must Be Found
 							["provider"] = { "i", 187203 },	-- Cipher of Understanding
 							["coord"] = { 28.9, 54.2, KORTHIA },
 							["cr"] = 179922,	-- Cipher of Understanding
 						}),
 						q(63920, {	-- Enigmatic Decrypting Device
-							["sourceQuests"] = { 64526 },	-- Mysterious Rifts
+							["sourceQuests"] = { 64506 },	-- What Must Be Found
 							["provider"] = { "i", 187207 },	-- Enigmatic Decrypting Device
 							["coord"] = { 51.9, 52.6, KORTHIA },
 							["cr"] = 179968,	-- Enigmatic Decrypting Device
@@ -35,7 +35,7 @@ _.Zones =
 							["cr"] = 178757,	-- Hungering Manifestation (dropped from 1st thing i killed in the Rift)
 						}),
 						q(63913, {	-- Unstable Sin'dorei Explosive
-							["sourceQuests"] = { 64526 },	-- Mysterious Rifts
+							["sourceQuests"] = { 64506 },	-- What Must Be Found
 							["provider"] = { "i", 187202 },	-- Unstable Sin'dorei Explosive
 							["coord"] = { 51.4, 20.1, KORTHIA },
 							["cr"] = 179902,	-- Unstable Sin'dorei Explosive

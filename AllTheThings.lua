@@ -8743,7 +8743,7 @@ local mapFields = {
 		return select(1, C_Map_GetMapLevels(t.mapID));
 	end,
 	["iconForAchievement"] = function(t)
-		return select(10, GetAchievementInfo(t.achievementID)) or app.asset("Category_Zones");
+		return t.achievementID and select(10, GetAchievementInfo(t.achievementID)) or app.asset("Category_Zones");
 	end,
 	["linkForAchievement"] = function(t)
 		return GetAchievementLink(t.achievementID);
