@@ -439,6 +439,14 @@ _.Zones =
 					["coord"] = { 24.4, 35.9, 1648 },
 					["maps"] = { 1648 },	-- pre-SL scenario
 				}),
+				q(63901, {	-- Focusing the Eye
+					["sourceQuests"] = {
+						63867,	-- Anger Management
+						63896,	-- Tears of the Damned
+					},
+					["provider"] = { "n", 179078 },	-- Projection of Ve'nari
+					["coord"] = { 37.4, 27.0, THE_MAW },
+				}),
 				q(62214, {	-- Forces of Perdition
 					["sourceQuests"] = { 60284 },	-- Rule 5: Be Audacious
 					["provider"] = { "n", 162804 },	-- Ve'nari
@@ -459,6 +467,11 @@ _.Zones =
 					["provider"] = { "n", 177726 },	-- Odyn
 					["coord"] = { 58.3, 83.8, 1971 },	-- Skyhold (scenario)
 					["maps"] = { 1971 },	-- Skyhold (scenario)
+				}),
+				q(63902, {	-- Good News, Everyone!
+					["sourceQuests"] = { 63901 },	-- Focusing the Eye
+					["provider"] = { "n", 178950 },	-- Danica
+					["coord"] = { 37.0, 19.3, THE_MAW },
 				}),
 				q(63895, {	-- Grab Bag
 					["sourceQuests"] = { 63855 },	-- Ease of Passage
@@ -816,14 +829,6 @@ _.Zones =
 					["provider"] = { "n", 177586 },	-- Baroness Draka
 					["coord"] = { 62.8, 66.0, THE_MAW },
 				}),
-				q(63901, {	-- Focusing the Eye
-					["sourceQuests"] = {
-						63867,	-- Anger Management
-						63896,	-- Tears of the Damned
-					},
-					["provider"] = { "n", 179078 },	-- Projection of Ve'nari
-					["coord"] = { 37.4, 27.0, THE_MAW },
-				}),
 				q(63619, {	-- Forsworn and Forgotten
 					["sourceQuests"] = { 63617 },	-- Bending Bars
 					["provider"] = { "n", 177288 },	-- Fallen Disciple Nikolon
@@ -833,11 +838,6 @@ _.Zones =
 					["sourceQuests"] = { 63612 },	-- The Chains of Command
 					["provider"] = { "n", 177560 },	-- Baroness Draka
 					["coord"] = { 62.8, 66.0, THE_MAW },
-				}),
-				q(63902, {	-- Good News, Everyone!
-					["sourceQuests"] = { 63901 },	-- Focusing the Eye
-					["provider"] = { "n", 178950 },	-- Danica
-					["coord"] = { 40.9, 21.9, THE_MAW },
 				}),
 				q(64521, {	-- Helsworn Battle Plans
 					["sourceQuests"] = { 63612 },	-- The Chains of Command

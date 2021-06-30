@@ -13,6 +13,11 @@ _.Zones =
 					["provider"] = { "n", 177927 },	-- Tal-Galan
 					["coord"] = { 62.7, 24.8, KORTHIA },
 				}),
+				q(64106, {	-- A Unified Effort
+					["sourceQuests"] = { 63902 },	-- Good News, Everyone!
+					["provider"] = { "n", 177228 },	-- Highlord Bolvar Fordragon
+					["coord"] = { 63.0, 25.6, KORTHIA },
+				}),
 				q(64560, {	-- Anima Reclamation (intro version)
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance (must be on quest)
 					["provider"] = { "n", 178793 },	-- Kael'thas Sunstrider
@@ -23,6 +28,11 @@ _.Zones =
 					["sourceQuests"] = { 63848 },	-- A Show of Gratitude
 					["provider"] = { "n", 178470 },	-- Ve'nari
 					["coord"] = { 65.9, 23.0, KORTHIA },
+				}),
+				q(64557, {	-- In Darkness, Found
+					["sourceQuests"] = { 63902 },	-- Good News, Everyone!
+					["provider"] = { "n", 178845 },	-- Xy'lony
+					["coord"] = { 64.5, 25.4, KORTHIA },
 				}),
 				q(64556, {	-- In Need of Assistance
 					["sourceQuests"] = { 64555 },	-- Surveying Secrets
@@ -53,6 +63,18 @@ _.Zones =
 					["sourceQuests"] = { 63662 },	-- Mysteries of the Maw
 					["description"] = "The item that starts this quest can be looted from any treasure chest or rare in Korthia.",
 					["provider"] = { "i", 187177 },	-- Researching Korthian Relics
+				}),
+				q(63949, {	-- Shaping Fate
+					["sourceQuests"] = { 63902 },	-- Good News, Everyone!
+					["provider"] = { "n", 177927 },	-- Tal-Galan
+					["isWeekly"] = true,
+					["coord"] = { 62.7, 24.8, KORTHIA },
+					["g"] = {
+					--	TODO: figure out the contents of this chest and how/where to display it (if it comes from multiple things)
+						i(186196, {	-- Death's Advance War Chest
+							i(186197),	-- Seal of Death's Unity (TODO: add rep item if this makes it to live, it wouldn't let me use it while in Korthia on PTR)
+						}),
+					},
 				}),
 				q(64555, {	-- Surveying Secrets
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
@@ -91,11 +113,6 @@ _.Zones =
 						1967,	-- TG106_Floor
 						1969,	-- TG108_Floor
 					},
-				}),
-				q(64106, {	-- A Unified Effort
-					["sourceQuests"] = { 63902 },	-- Good News, Everyone!
-					["provider"] = { "n", 177228 },	-- Highlord Bolvar Fordragon
-					["coord"] = { 63.0, 25.6, KORTHIA },
 				}),
 				q(63736, {	-- An Infusion of Anima
 					["sourceQuests"] = {
@@ -214,11 +231,6 @@ _.Zones =
 					},
 					["provider"] = { "n", 177928 },	-- Archivist Roh-Dahl
 					["coord"] = { 39.4, 51.3, KORTHIA },
-				}),
-				q(64557, {	-- In Darkness, Found
-				--	["sourceQuests"] = {  },	-- 
-					["provider"] = { "n", 178845 },	-- Xy'lony
-					["coord"] = { 64.5, 25.4, KORTHIA },
 				}),
 				q(63732, {	-- Interrupt the Interrogations
 					["sourceQuests"] = { 63731 },	-- Shattered Relics
@@ -448,22 +460,6 @@ _.Zones =
 					["sourceQuests"] = { 63861 },	-- Beginning the Collection
 					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 					["coord"] = { 62.6, 22.5, KORTHIA },
-				}),
-
-				--	PTR - Death's Advance repeatable quests
-				-- Korthia Weekly
-				q(63949, {	-- Shaping Fate
-				--	TODO: double-check SQ
-					["sourceQuests"] = { 64556 },	-- In Need of Assistance
-					["provider"] = { "n", 177927 },	-- Tal-Galan
-					["isWeekly"] = true,
-					["coord"] = { 62.7, 24.8, KORTHIA },
-					["g"] = {
-					--	TODO: figure out the contents of this chest and how/where to display it (if it comes from multiple things)
-						i(186196, {	-- Death's Advance War Chest
-							i(186197),	-- Seal of Death's Unity (TODO: add rep item if this makes it to live, it wouldn't let me use it while in Korthia on PTR)
-						}),
-					},
 				}),
 
 				-- Korthia Daily

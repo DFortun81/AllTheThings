@@ -71,6 +71,8 @@ _.Zones =
 				i(187252, {	-- Ritualist's Spiked Mantle
 					["crs"] = { 180030 },	-- Opportunistic Corruptor (also dropped from *i think* a mawsworn cleaver, but not positive)
 				}),
+			--	Blues
+				i(186969),	-- Collapsing Riftstone
 			--	Greens
 				i(186153),	-- Foresworn Seal
 				i(186559, {	-- Grappling Gauntlet (PET!)
