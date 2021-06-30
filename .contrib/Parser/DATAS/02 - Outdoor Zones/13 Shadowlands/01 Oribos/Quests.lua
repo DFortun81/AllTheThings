@@ -203,9 +203,6 @@ _.Zones =
 					},
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 39.9, 68.5, ORIBOS },
-					["g"] = {
-						spell(334746),	-- Access to Torghast
-					},
 				}),
 				q(60338, {	-- Journey to Ardenweald
 					["sourceQuests"] = { 61715 },	-- Request of the Highlord
