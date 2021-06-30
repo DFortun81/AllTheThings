@@ -168,11 +168,11 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, ach(8903, {		-- Mistwalker
 				un(REMOVED_FROM_GAME, title(255)),	-- Mistwalker
 			})),
-			un(REMOVED_FROM_GAME, ach(14938, {	-- Shadowlands Keystone Explorer: Season One
+			ach(14938, {	-- Shadowlands Keystone Explorer: Season One
 				-- There's no criteria here because it's messed up in-game as of 9.0.5 (only 2-6 work, the others are blank or give error msgs).  Blame Blizz.
-			})),
-			un(REMOVED_FROM_GAME, ach(14531, {	-- Shadowlands Keystone Conqueror: Season One
-				un(REMOVED_FROM_GAME, title(431)),	-- 'the Proud'
+			}),
+			ach(14531, {	-- Shadowlands Keystone Conqueror: Season One
+				title(431),	-- 'the Proud'
 				crit(1),	-- Necrotic Wake
 				crit(2),	-- Plaguefall
 				crit(3),	-- Mists of Tirna Scithe
@@ -181,9 +181,9 @@ _.Achievements =
 				crit(6),	-- Theater of Pain
 				crit(7),	-- De Other Side
 				crit(8),	-- Sanguine Depths
-			})),
-			un(REMOVED_FROM_GAME, ach(14532, {	-- Shadowlands Keystone Master: Season One
-				un(REMOVED_FROM_GAME, i(182717)),	-- Sintouched Deathwalker
+			}),
+			ach(14532, {	-- Shadowlands Keystone Master: Season One
+				i(182717),	-- Sintouched Deathwalker
 				crit(1),	-- Necrotic Wake
 				crit(2),	-- Plaguefall
 				crit(3),	-- Mists of Tirna Scithe
@@ -192,7 +192,7 @@ _.Achievements =
 				crit(6),	-- Theater of Pain
 				crit(7),	-- De Other Side
 				crit(8),	-- Sanguine Depths
-			})),
+			}),
 			ach(15051),		-- Keystone Hero: De Other Side
 			ach(15048),		-- Keystone Hero: Halls of Atonement
 			ach(15047),		-- Keystone Hero: Mists of Tirna Scithe
