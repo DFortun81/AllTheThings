@@ -10043,7 +10043,7 @@ local function QueryCompletedQuests()
 	end
 end
 local function RefreshQuestCompletionState(questID)
-	print("QuestRefresh",questID)
+	-- print("QuestRefresh",questID)
 	if questID then
 		CompletedQuests[questID] = true;
 	else
