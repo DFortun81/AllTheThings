@@ -10,3 +10,4 @@
 - Harvested quests/items, we won't ask to report stuff as often
 - Various fixes to new content (quests, drops, etc)
 - You still have time until next reset to get your Shadowlands Keystone: Season One achievements
+- Fixed bug where a map without an attached achievement would have an error showing an icon
