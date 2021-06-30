@@ -19757,13 +19757,9 @@ end
 app.events.TOYS_UPDATED = function(itemID, new)
 	if itemID and not ATTAccountWideData.Toys[itemID] and PlayerHasToy(itemID) then
 		ATTAccountWideData.Toys[itemID] = 1;
-		-- TODO: remember to test this logic with a toy collect...
-		-- UpdateSearchResults(SearchForField("itemID", itemID));
-		--[[]]-- uncomment to test
-		app:RefreshData(false, true);
+		UpdateSearchResults(SearchForField("itemID", itemID));
 		app:PlayFanfare();
 		app:TakeScreenShot();
-		--]]
 		wipe(searchCache);
 
 		if app.Settings:GetTooltipSetting("Report:Collected") then
