@@ -19,6 +19,11 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 61.8, 25.6, KORTHIA },
 				}),
+				q(63855, {	-- Ease of Passage
+					["sourceQuests"] = { 63848 },	-- A Show of Gratitude
+					["provider"] = { "n", 178470 },	-- Ve'nari
+					["coord"] = { 65.9, 23.0, KORTHIA },
+				}),
 				q(64556, {	-- In Need of Assistance
 					["sourceQuests"] = { 64555 },	-- Surveying Secrets
 					["provider"] = { "n", 177228 },	-- Highlord Bolvar Fordragon
@@ -178,11 +183,6 @@ _.Zones =
 					["provider"] = { "i", 187204 },	-- Drum of Driving
 					["coord"] = { 39.3, 52.4, KORTHIA },
 					["cost"] = { { "i", 186718, 1 } },	-- Teleporter Repair Kit
-				}),
-				q(63855, {	-- Ease of Passage
-					["sourceQuests"] = { 63848 },	-- A Show of Gratitude
-					["provider"] = { "n", 178470 },	-- Ve'nari
-					["coord"] = { 65.9, 23.0, KORTHIA },
 				}),
 				q(63760, {	-- Echoes of Fate
 					["sourceQuests"] = { 63759 },	-- Redirect the Search

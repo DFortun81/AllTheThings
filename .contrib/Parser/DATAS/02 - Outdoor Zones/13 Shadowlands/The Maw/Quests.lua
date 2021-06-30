@@ -275,6 +275,12 @@ _.Zones =
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, THE_MAW },
 				}),
+				q(63811, {	-- A Hate, Hate Relationship
+					["sourceQuests"] = { 63764 },	-- Claim the Sky
+					["provider"] = { "n", 177603 },	-- Danica the Reclaimer
+					["coord"] = { 58.0, 58.8, 1971 },	-- Skyhold (scenario)
+					["maps"] = { 1971 },	-- Skyhold (scenario)
+				}),
 				q(59756, {	-- A Moment's Respite
 					["sourceQuests"] = { 59755 },	-- A Flight from Darkness
 					["provider"] = { "n", 166980 },	-- Lady Jaina Proudmoore
@@ -332,6 +338,16 @@ _.Zones =
 					["coord"] = { 25.0, 13.3, 1648 },
 					["maps"] = { 1648 },	-- pre-SL scenario
 				}),
+				q(63867, {	-- Anger Management
+					["sourceQuests"] = { 64014 },	-- Mawsplaining
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.8, 41.7, THE_MAW },
+				}),
+				q(63810, {	-- Birds of a Feather
+					["sourceQuests"] = { 63849 },	-- Hearing Aid
+					["provider"] = { "n", 179078 },	-- Projection of Ve'nari
+					["coord"] = { 64.3, 50.6, THE_MAW },
+				}),
 				q(59762, {	-- By and Down the River
 					["sourceQuests"] = { 59776 },	-- From the Mouths of Madness
 					["provider"] = { "n", 166980 },	-- Lady Jaina Proudmoore
@@ -342,6 +358,12 @@ _.Zones =
 					["sourceQuests"] = { 57689 },	-- Prince Renathal
 					["provider"] = { "n", 158649 },	-- Vorpalia
 					["coord"] = { 38.7, 28.3, THE_MAW },
+				}),
+				q(63764, {	-- Claim the Sky
+					["sourceQuests"] = { 63754 },	-- The Caged Bird
+					["provider"] = { "n", 177597 },	-- Danica the Reclaimer
+					["coord"] = { 67.0, 55.9, THE_MAW },
+					["maps"] = { 1971 },	-- Skyhold (scenario)
 				}),
 				q(63135, {	-- Coldheart Flight Routes
 					["provider"] = { "i", 180801 },	-- Coldheart Flight Routes
@@ -432,6 +454,18 @@ _.Zones =
 					["coord"] = { 25.0, 13.4, 1648 },
 					["maps"] = { 1648 },	-- pre-SL scenario
 				}),
+				q(63831, {	-- Fury Given Voice
+					["sourceQuests"] = { 63811 },	-- A Hate, Hate Relationship
+					["provider"] = { "n", 177726 },	-- Odyn
+					["coord"] = { 58.3, 83.8, 1971 },	-- Skyhold (scenario)
+					["maps"] = { 1971 },	-- Skyhold (scenario)
+				}),
+				q(63895, {	-- Grab Bag
+					["sourceQuests"] = { 63855 },	-- Ease of Passage
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.8, 41.7, THE_MAW },
+					["_drop"] = { "g" },	-- drop anima trash
+				}),
 				q(61104, {	-- Grathalax, the Extractor
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["isWeekly"] = true,
@@ -448,6 +482,11 @@ _.Zones =
 					["provider"] = { "n", 175797 },	-- Deceased Broker
 					["isDaily"] = true,
 					["coord"] = { 30.7, 58.3, THE_MAW },
+				}),
+				q(63849, {	-- Hearing Aid
+					["sourceQuests"] = { 63895 },	-- Grab Bag
+					["provider"] = { "n", 179078 },	-- Projection of Ve'nari
+					["coord"] = { 61.6, 59.0, THE_MAW },
 				}),
 				q(59962, {	-- Hope Never Dies
 					["sourceQuests"] = { 59959 },	-- The Brand Holds the Key
@@ -472,6 +511,12 @@ _.Zones =
 						i(175524),	-- Risen Journeyman's Visage
 						i(175526),	-- Vicious Reclaimer's Cover
 					},
+				}),
+				q(64014, {	-- Mawsplaining
+					["sourceQuests"] = { 63845 },	-- Wrath of Odyn
+					["provider"] = { "n", 177726 },	-- Odyn
+					["coord"] = { 58.3, 83.8, 1971 },	-- Skyhold (scenario)
+					["maps"] = { 1971 },	-- Skyhold (scenario)
 				}),
 				q(59907, {	-- Mawsworn Menace
 					["sourceQuests"] = { 59751 },	-- Through the Shattered Sky
@@ -616,6 +661,11 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 28.2, 14.6, THE_MAW },
 				}),
+				q(63896, {	-- Tears of the Damned
+					["sourceQuests"] = { 64014 },	-- Mawsplaining
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.8, 41.7, THE_MAW },
+				}),
 				q(59760, {	-- The Afflictor's Key
 					["sourceQuests"] = { 59759 },	-- The Lion's Cage
 					["provider"] = { "n", 167833 },	-- Anduin Wrynn
@@ -626,6 +676,17 @@ _.Zones =
 					["sourceQuests"] = { 59960 },	-- A Cooling Trail
 					["provider"] = { "o", 355798 },	-- Cage
 					["coord"] = { 38.3, 48.5, THE_MAW },
+				}),
+				q(63754, {	-- The Caged Bird
+					["sourceQuests"] = { 63810 },	-- Birds of a Feather
+					["provider"] = { "n", 177597 },	-- Danica the Reclaimer
+					["coord"] = { 67.2, 55.7, THE_MAW },
+				}),
+				q(63844, {	-- The Chosen Few
+					["sourceQuests"] = { 63811 },	-- A Hate, Hate Relationship
+					["provider"] = { "n", 177726 },	-- Odyn
+					["coord"] = { 58.3, 83.8, 1971 },	-- Skyhold (scenario)
+					["maps"] = { 1971 },	-- Skyhold (scenario)
 				}),
 				q(60972, {	-- The Hunt for the Baron
 					["sourceQuests"] = { 59897 },	-- Seeking the Baron
@@ -719,14 +780,17 @@ _.Zones =
 					["coord"] = { 29.6, 43.6, 1648 },
 					["maps"] = { 1648 },	-- pre-SL scenario
 				}),
-
-			--	PTR - TODO: merge with regular quests once this stuff makes it to live
-				q(63811, {	-- A Hate, Hate Relationship
-					["sourceQuests"] = { 63764 },	-- Claim the Sky
-					["provider"] = { "n", 177603 },	-- Danica the Reclaimer
-					["coord"] = { 58.0, 58.8, 1971 },	-- Skyhold (scenario)
+				q(63845, {	-- Wrath of Odyn
+					["sourceQuests"] = {
+						63831,	-- Fury Given Voice
+						63844,	-- The Chosen Few
+					},
+					["provider"] = { "n", 177726 },	-- Odyn
+					["coord"] = { 58.3, 83.8, 1971 },	-- Skyhold (scenario)
 					["maps"] = { 1971 },	-- Skyhold (scenario)
 				}),
+
+			--	PTR - TODO: merge with regular quests once this stuff makes it to live
 				q(63616, {	-- A Job Done Right
 					["sourceQuests"] = {
 						63615,	-- Clip Their Wings
@@ -742,26 +806,10 @@ _.Zones =
 					},
 					["provider"] = { "n", 177586 },	-- Baroness Draka
 				}),
-				q(63867, {	-- Anger Management
-					["sourceQuests"] = { 64014 },	-- Mawsplaining
-					["provider"] = { "n", 162804 },	-- Ve'nari
-					["coord"] = { 46.8, 41.7, THE_MAW },
-				}),
 				q(63617, {	-- Bending Bars
 					["sourceQuests"] = { 63616 },	-- A Job Done Right
 					["provider"] = { "n", 177586 },	-- Baroness Draka
 					["coord"] = { 68.6, 52.9, THE_MAW },
-				}),
-				q(63810, {	-- Birds of a Feather
-					["sourceQuests"] = { 63849 },	-- Hearing Aid
-					["provider"] = { "n", 179078 },	-- Projection of Ve'nari
-					["coord"] = { 64.3, 50.6, THE_MAW },
-				}),
-				q(63764, {	-- Claim the Sky
-					["sourceQuests"] = { 63754 },	-- The Caged Bird
-					["provider"] = { "n", 177597 },	-- Danica the Reclaimer
-					["coord"] = { 67.0, 55.9, THE_MAW },
-					["maps"] = { 1971 },	-- Skyhold (scenario)
 				}),
 				q(63615, {	-- Clip Their Wings
 					["sourceQuests"] = { 63612 },	-- The Chains of Command
@@ -781,12 +829,6 @@ _.Zones =
 					["provider"] = { "n", 177288 },	-- Fallen Disciple Nikolon
 					["coord"] = { 65.5, 46.1, THE_MAW },
 				}),
-				q(63831, {	-- Fury Given Voice
-					["sourceQuests"] = { 63811 },	-- A Hate, Hate Relationship
-					["provider"] = { "n", 177726 },	-- Odyn
-					["coord"] = { 58.3, 83.8, 1971 },	-- Skyhold (scenario)
-					["maps"] = { 1971 },	-- Skyhold (scenario)
-				}),
 				q(63613, {	-- Gates of the Damned
 					["sourceQuests"] = { 63612 },	-- The Chains of Command
 					["provider"] = { "n", 177560 },	-- Baroness Draka
@@ -797,42 +839,10 @@ _.Zones =
 					["provider"] = { "n", 178950 },	-- Danica
 					["coord"] = { 40.9, 21.9, THE_MAW },
 				}),
-				q(63895, {	-- Grab Bag
-					["sourceQuests"] = { 63855 },	-- Ease of Passage
-					["provider"] = { "n", 162804 },	-- Ve'nari
-					["coord"] = { 46.8, 41.7, THE_MAW },
-				}),
-				q(63849, {	-- Hearing Aid
-					["sourceQuests"] = { 63895 },	-- Grab Bag
-					["provider"] = { "n", 179078 },	-- Projection of Ve'nari
-					["coord"] = { 61.6, 59.0, THE_MAW },
-				}),
 				q(64521, {	-- Helsworn Battle Plans
 					["sourceQuests"] = { 63612 },	-- The Chains of Command
 					["provider"] = { "i", 187275 },	-- Helsworn Battle Plans
 				--	["crs"] = {  },	-- TODO: multilooted so not sure what dropped it, something in desmotaeron as i was doing the other 3 quests after 'the chains of command'
-				}),
-				q(64014, {	-- Mawsplaining
-					["sourceQuests"] = { 63845 },	-- Wrath of Odyn
-					["provider"] = { "n", 177726 },	-- Odyn
-					["coord"] = { 58.3, 83.8, 1971 },	-- Skyhold (scenario)
-					["maps"] = { 1971 },	-- Skyhold (scenario)
-				}),
-				q(63896, {	-- Tears of the Damned
-					["sourceQuests"] = { 64014 },	-- Mawsplaining
-					["provider"] = { "n", 162804 },	-- Ve'nari
-					["coord"] = { 46.8, 41.7, THE_MAW },
-				}),
-				q(63754, {	-- The Caged Bird
-					["sourceQuests"] = { 63810 },	-- Birds of a Feather
-					["provider"] = { "n", 177597 },	-- Danica the Reclaimer
-					["coord"] = { 67.2, 55.7, THE_MAW },
-				}),
-				q(63844, {	-- The Chosen Few
-					["sourceQuests"] = { 63811 },	-- A Hate, Hate Relationship
-					["provider"] = { "n", 177726 },	-- Odyn
-					["coord"] = { 58.3, 83.8, 1971 },	-- Skyhold (scenario)
-					["maps"] = { 1971 },	-- Skyhold (scenario)
 				}),
 				q(64541, {	-- The Cost of Death
 				--	not flagged daily/weekly in API - you trade 800 Stygia to Ve'nari in return for 1,000 reputation with her.  TODO: verify this is a one-time quest.  quest text makes it seem like it will be repeatable in one way or another.  ETA: this popped up again on my priest but i'm not sure if it's daily/weekly still
@@ -854,15 +864,6 @@ _.Zones =
 					["sourceQuests"] = { 63617 },	-- Bending Bars
 					["provider"] = { "n", 177586 },	-- Baroness Draka
 					["coord"] = { 65.2, 48.4, THE_MAW },
-				}),
-				q(63845, {	-- Wrath of Odyn
-					["sourceQuests"] = {
-						63831,	-- Fury Given Voice
-						63844,	-- The Chosen Few
-					},
-					["provider"] = { "n", 177726 },	-- Odyn
-					["coord"] = { 58.3, 83.8, 1971 },	-- Skyhold (scenario)
-					["maps"] = { 1971 },	-- Skyhold (scenario)
 				}),
 				-- End PTR quests
 				q(62838, {	-- Soulful Recovery

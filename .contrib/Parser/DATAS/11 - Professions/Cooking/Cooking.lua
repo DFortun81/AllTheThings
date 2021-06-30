@@ -2353,6 +2353,10 @@ profession(COOKING, {
 					["recipeID"] = 308414
 				},
 				{
+					["name"] = "Porous Rock Candy",
+					["recipeID"] = 354768
+				},
+				{
 					["name"] = "Sweet Silvergill Sausages",
 					["recipeID"] = 308425
 				}

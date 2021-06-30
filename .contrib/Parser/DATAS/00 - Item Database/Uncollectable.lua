@@ -10,6 +10,7 @@ i(186472);	-- Wisps of Memory
 
 -- Anima Items
 i(184147);	-- Agony Enrichment Device
+i(186201);	-- Ancient Anima Vessel
 i(181540);	-- Animaflower Bud
 i(181477);	-- Ardendew Pearl
 i(184381);	-- Astral Sapwood
