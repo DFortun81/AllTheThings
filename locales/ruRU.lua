@@ -810,7 +810,7 @@ for key,value in pairs({
 		[-910] = "Охота: пожиратели душ",							-- Hunt: Alpha Devourers
 		[-911] = "Охота: темные гончие",							-- Hunt: Shadehounds
 		[-912] = "Охота: крылатые пожиратели душ",					-- Hunt: Winged Soul Eaters
-		--TODO: [-913] = "Tormentors of Torghast",					-- Tormentors of Torghast
+		[-913] = "Мучители из Торгаста",							-- Tormentors of Torghast
 		[-914] = "Приключения",										-- Adventures
 		[-915] = "Проводник анимы",									-- Anima Conductor
 		[-916] = "1-й уровень: Растущая паутина",					-- Tier 1: Flowing Tendrils
@@ -818,7 +818,7 @@ for key,value in pairs({
 		[-918] = "3-й уровень: Текущая энергия",					-- Tier 3: Flowing Power
 		[-919] = "Ночная кобыла",									-- Night Mare
 		--TODO: [-977] = "Maelie the Wanderer",						-- Maelie the Wanderer
-		--TODO: [-979] = "Broker Ve'ken & Broker Ve'nott",			-- Broker Ve'ken & Broker Ve'nott
+		[-979] = "Брокер Ве'кен & Брокер Ве'нотт",					-- Broker Ve'ken & Broker Ve'nott
 		[-980] = "Общие Сокровища",									-- Shared Treasures
 
 		-- SL Maldraxxus/Necrolord

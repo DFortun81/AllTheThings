@@ -835,7 +835,7 @@ for key,value in pairs({
 		--TODO: [-918] = "Tier 3: Flowing Power",					-- Tier 3: Flowing Power
 		--TODO: [-919] = "Night Mare",								-- Night Mare
 		--TODO: [-977] = "Maelie the Wanderer",						-- Maelie the Wanderer
-		--TODO: [-979] = "Broker Ve'ken & Broker Ve'nott",			-- Broker Ve'ken & Broker Ve'nott
+		[-979] = "Mittler Ve'ken & Mittler Ve'nott",				-- Broker Ve'ken & Broker Ve'nott
 		--TODO: [-980] = "Shared Treasures",						-- Shared Treasures
 
 		-- SL Maldraxxus/Necrolord
