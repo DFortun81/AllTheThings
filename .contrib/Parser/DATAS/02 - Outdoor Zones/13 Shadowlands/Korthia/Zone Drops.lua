@@ -40,6 +40,52 @@ _.Zones =
 						179565,	-- Relic Gorger
 					},
 				}),
+				-- probably clean these up too, maybe not worth tracking? idk
+				-- first 11 mobs per day which will drop additional relic fragments (they show purple with the archivist upgrade, but still trigger beforehand if a matching mob is looted)
+				q(64747, {	-- Bonus Relic Loot #1
+					["name"] = "Bonus Relic Loot #1",
+					["isDaily"] = true,
+				}),
+				q(64748, {	-- Bonus Relic Loot #2
+					["name"] = "Bonus Relic Loot #2",
+					["isDaily"] = true,
+				}),
+				q(64749, {	-- Bonus Relic Loot #3
+					["name"] = "Bonus Relic Loot #3",
+					["isDaily"] = true,
+				}),
+				q(64750, {	-- Bonus Relic Loot #4
+					["name"] = "Bonus Relic Loot #4",
+					["isDaily"] = true,
+				}),
+				q(64751, {	-- Bonus Relic Loot #5
+					["name"] = "Bonus Relic Loot #5",
+					["isDaily"] = true,
+				}),
+				q(64752, {	-- Bonus Relic Loot #6
+					["name"] = "Bonus Relic Loot #6",
+					["isDaily"] = true,
+				}),
+				q(64753, {	-- Bonus Relic Loot #7
+					["name"] = "Bonus Relic Loot #7",
+					["isDaily"] = true,
+				}),
+				q(64754, {	-- Bonus Relic Loot #8
+					["name"] = "Bonus Relic Loot #8",
+					["isDaily"] = true,
+				}),
+				q(64755, {	-- Bonus Relic Loot #9
+					["name"] = "Bonus Relic Loot #9",
+					["isDaily"] = true,
+				}),
+				q(64756, {	-- Bonus Relic Loot #10
+					["name"] = "Bonus Relic Loot #10",
+					["isDaily"] = true,
+				}),
+				q(64757, {	-- Bonus Relic Loot #11
+					["name"] = "Bonus Relic Loot #11",
+					["isDaily"] = true,
+				}),
 			--	Korthian Relics (putting here barring a better place for them)
 				i(187311),	-- Azgoth's Tattered Maps
 				i(187465),	-- Complicated Organism Harvester
