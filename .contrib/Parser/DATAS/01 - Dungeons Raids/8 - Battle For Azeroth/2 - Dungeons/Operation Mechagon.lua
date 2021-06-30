@@ -4,7 +4,7 @@
 
 _.Instances = { tier(8, {	-- Battle For Azeroth
 	inst(1178, {	-- Operation: Mechagon
-		["coord"] = { 73.1, 36.3, 1462 },
+		["coord"] = { 73.1, 36.3, MECHAGON },
 		["maps"] = {
 			1490,	-- Mechagon Island
 			1491,	-- The Robodrome

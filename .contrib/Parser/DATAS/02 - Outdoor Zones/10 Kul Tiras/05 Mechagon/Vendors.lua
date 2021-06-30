@@ -8,7 +8,7 @@ _.Zones =
 		m(1462, {	-- Mechagon
 			n(VENDORS, {
 				n(152321, {	-- Cork Stuttguard
-					["coord"] = { 63.3, 42.9, 1462 },
+					["coord"] = { 63.3, 42.9, MECHAGON },
 					["g"] = {
 						i(167787, {	-- Blueprint: Mechanocat Laser Pointer
 							["questID"] = 55056,
@@ -27,7 +27,7 @@ _.Zones =
 					},
 				}),
 				n(150359, {	-- Pascal-K1N6
-					["coord"] = { 71.4, 32.3, 1462 },
+					["coord"] = { 71.4, 32.3, MECHAGON },
 					["g"] = {
 						i(168843, {	-- Perfectly Timed Differential (Rank 2)
 							az(22, 2),	-- Vision of Perfection (Rank 2)
@@ -95,7 +95,7 @@ _.Zones =
 					},
 				}),
 				n(150716, {	-- Stolen Royal Vendorbot
-					["coord"] = { 73.7, 36.9, 1462 },
+					["coord"] = { 73.7, 36.9, MECHAGON },
 					["g"] = {
 						i(168400, {	-- Null Force Containment Unit (Rank 1)
 							["minReputation"] = { 2391, FRIENDLY },

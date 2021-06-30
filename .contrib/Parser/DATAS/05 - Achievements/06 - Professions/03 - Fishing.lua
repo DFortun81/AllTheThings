@@ -469,7 +469,7 @@ _.Achievements =
 					crit(27, {	-- Green Roughy
 						["itemID"] = 169884,	-- Green Roughy
 						["description"] = "Can be caught anywhere, but requires the |cffffffff[Painted Green]|r buff from Mechagon. Head over to the painting station at |cffffffff63, 42|r and get the buff.",
-						["coord"] = { 63.0, 42.0, 1462 },
+						["coord"] = { 63.0, 42.0, MECHAGON },
 					}),
 					crit(28, {	-- Displaced Scrapfin
 						["itemID"] = 169870,	-- Displaced Scrapfin

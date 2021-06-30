@@ -236,7 +236,7 @@ _.Zones =
 										},
 										["coords"] = {
 											{ 52.6, 13.8, STORMWIND_CITY },
-											{ 74.0, 36.8, 1462 },	-- Mechagon Island
+											{ 74.0, 36.8, MECHAGON },	-- Mechagon Island
 										},
 										["races"] = ALLIANCE_ONLY,
 										["maps"] = { 1462 },	-- Mechagon Island
@@ -257,49 +257,49 @@ _.Zones =
 									q(57488, {	-- The Current Schematic
 										["sourceQuests"] = { 57487 },	-- Someone Who Can Help
 										["provider"] = { "n", 150555 },	-- Waren Gearhart
-										["coord"] = { 73.1, 33.3, 1462 },
+										["coord"] = { 73.1, 33.3, MECHAGON },
 										["races"] = ALLIANCE_ONLY,
 										["maps"] = { 1462 },	-- Mechagon Island
 									}),
 									q(57490, {	-- Voyage to Safety
 										["sourceQuests"] = { 57488 },	-- The Current Schematic
 										["provider"] = { "n", 158145 },	-- Prince Erazmin
-										["coord"] = { 73.0, 33.4, 1462 },
+										["coord"] = { 73.0, 33.4, MECHAGON },
 										["races"] = ALLIANCE_ONLY,
 										["maps"] = { 1462 },	-- Mechagon Island
 									}),
 									q(57491, {	-- Better... Stronger... Less Dead
 										["sourceQuests"] = { 57490 },	-- Voyage to Safety
 										["provider"] = { "n", 160232 },	-- Christy Punchcog
-										["coord"] = { 73.1, 33.4, 1462 },
+										["coord"] = { 73.1, 33.4, MECHAGON },
 										["races"] = ALLIANCE_ONLY,
 										["maps"] = { 1462 },	-- Mechagon Island
 									}),
 									q(57492, {	-- Him?
 										["sourceQuests"] = { 57491 },	-- Better... Stronger... Less Dead
 										["provider"] = { "n", 158145 },	-- Prince Erazmin
-										["coord"] = { 73.0, 33.4, 1462 },
+										["coord"] = { 73.0, 33.4, MECHAGON },
 										["races"] = ALLIANCE_ONLY,
 										["maps"] = { 1462 },	-- Mechagon Island
 									}),
 									q(57493, {	-- Mental Attunement
 										["sourceQuests"] = { 57492 },	-- Him?
 										["provider"] = { "n", 160232 },	-- Christy Punchcog
-										["coord"] = { 73.5, 31.8, 1462 },
+										["coord"] = { 73.5, 31.8, MECHAGON },
 										["races"] = ALLIANCE_ONLY,
 										["maps"] = { 1462 },	-- Mechagon Island
 									}),
 									q(57494, {	-- A Strong heart
 										["sourceQuests"] = { 57493 },	-- Mental Attunement
 										["provider"] = { "n", 160232 },	-- Christy Punchcog
-										["coord"] = { 73.5, 31.8, 1462 },
+										["coord"] = { 73.5, 31.8, MECHAGON },
 										["races"] = ALLIANCE_ONLY,
 										["maps"] = { 1462 },	-- Mechagon Island
 									}),
 									q(57496, {	-- Ascension
 										["sourceQuests"] = { 57494 },	-- A Strong Heart
 										["provider"] = { "n", 159587 },	-- Gelbin Mekkatorque
-										["coord"] = { 73.0, 33.6, 1462 },
+										["coord"] = { 73.0, 33.6, MECHAGON },
 										["races"] = ALLIANCE_ONLY,
 										["maps"] = {
 											1462,	-- Mechagon Island
