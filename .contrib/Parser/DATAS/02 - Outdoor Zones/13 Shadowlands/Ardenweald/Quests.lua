@@ -427,6 +427,11 @@ _.Zones =
 						i(175114),	-- Renny (PET!)
 					},
 				}),
+				q(63639, {	-- Report to Oribos
+					["sourceQuests"] = { 63904 },	-- The Heart of Ardenweald
+					["provider"] = { "n", 177460 },	-- Winter Queen
+					["coord"] = { 47.1, 48.5, ARDENWEALD },
+				}),
 				q(60522, {	-- Return to Tirna Vaal
 					["sourceQuests"] = { 60632 },	-- I Know Your Face
 					["provider"] = { "n", 169935 },	-- Ara'lon
@@ -839,13 +844,6 @@ _.Zones =
 				q(62774, {	-- Tranquil Pools (pre-60)
 					["customCollect"] = "SL_SKIP",	-- SL Skip Character
 					["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
-				}),
-
-				-- PTR - TODO: merge with regular quests
-				q(63639, {	-- Report to Oribos
-					["sourceQuests"] = { 63904 },	-- The Heart of Ardenweald
-					["provider"] = { "n", 177460 },	-- Winter Queen
-					["coord"] = { 47.1, 48.5, ARDENWEALD },
 				}),
 			}),
 		}),

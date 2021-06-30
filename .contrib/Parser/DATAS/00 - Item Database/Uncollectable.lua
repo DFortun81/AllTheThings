@@ -27,6 +27,7 @@ i(184766);	-- Chronicles of the Paragons
 i(181552);	-- Collected Tithe
 i(184764);	-- Colossus Actuator
 i(184148);	-- Concealed Sinvyr Flask
+i(187347);	-- Concentrated Anima
 i(181544);	-- Confessions of Misdeed
 i(184363);	-- Considerations on Courage
 i(181478);	-- Cornucopia of the Winter Court
@@ -71,7 +72,9 @@ i(184771);	-- Remembrance Parchment Ash
 i(183727);	-- Resonance of Conflict
 i(184772);	-- Ritual Maldracite Crystal
 i(184770);	-- Roster of the Forgotten
+i(187175);	-- Runekeeper's Ingot
 i(184293);	-- Sanctified Skylight Leaf
+i(186205);	-- Scholarly Attendant's Bangle
 i(184146);	-- Singed Soul Shackles
 i(181622);	-- Slightly Irradiated Slime Sample
 i(184389);	-- Slumbering Starseed
@@ -84,6 +87,7 @@ i(181479);	-- Starlight Catcher
 i(184519);	-- Totem of Stolen Mojo
 i(181644);	-- Unlabeled Culture Jars
 i(184776);	-- Urn of Arena Soil
+i(186206);	-- Vault Emberstone
 i(184765);	-- Vesper Strikehammer
 i(184371);	-- Vivacity of Collaboration
 i(181643);	-- Weeping Corpseshroom

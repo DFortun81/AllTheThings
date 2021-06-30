@@ -35,6 +35,9 @@ _.Zones =
 							170302,	-- Talaporas, Herald of Pain
 							172862,	-- Yero the Skittish
 						--	Korthia
+							179769,	-- Consumption
+							179755,	-- Consumption (Rare, non-Elite version)
+							179768,	-- Consumption (Rare Elite version)
 							179931,	-- Relic Breaker Krelva
 							179985,	-- Stygian Stonecrusher
 							179760,	-- Towering Exterminator

@@ -7,6 +7,66 @@ _.Zones =
 	m(SHADOWLANDS, {
 		m(KORTHIA, {
 			n(QUESTS, {
+			--	confirmed on live
+				q(63848, {	-- A Show of Gratitude
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
+					["provider"] = { "n", 177927 },	-- Tal-Galan
+					["coord"] = { 62.7, 24.8, KORTHIA },
+				}),
+				q(64560, {	-- Anima Reclamation (intro version)
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance (must be on quest)
+					["provider"] = { "n", 178793 },	-- Kael'thas Sunstrider
+					["isDaily"] = true,
+					["coord"] = { 61.8, 25.6, KORTHIA },
+				}),
+				q(64556, {	-- In Need of Assistance
+					["sourceQuests"] = { 64555 },	-- Surveying Secrets
+					["provider"] = { "n", 177228 },	-- Highlord Bolvar Fordragon
+					["coord"] = { 62.8, 24.9, KORTHIA },
+					["_drop"] = { "g" },	-- drop anima trash
+					["g"] = {
+						i(187543),	-- Death's Advance War Chest
+					},
+				}),
+				q(63663, {	-- Korthia, the City of Secrets
+					["sourceQuests"] = { 63662 },	-- Mysteries of the Maw
+					["provider"] = { "n", 177202 },	-- Ve'nari
+					["coord"] = { 58.3, 14.3, KORTHIA },
+				}),
+				q(64561, {	-- Observational Records (intro version)
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance (must be on quest)
+					["provider"] = { "n", 178844 },	-- Ta'nasi
+					["isDaily"] = true,
+					["coord"] = { 64.6, 25.4, KORTHIA },
+				}),
+				q(63665, {	-- Opening to Oribos
+					["sourceQuests"] = { 63994 },	-- Who is the Maw Walker?
+					["provider"] = { "n", 177227 },	-- Tal-Galan
+					["coord"] = { 63.8, 23.7, KORTHIA },
+				}),
+				q(63731, {	-- Researching Korthian Relics
+					["sourceQuests"] = { 63662 },	-- Mysteries of the Maw
+					["description"] = "The item that starts this quest can be looted from any treasure chest or rare in Korthia.",
+					["provider"] = { "i", 187177 },	-- Researching Korthian Relics
+				}),
+				q(64555, {	-- Surveying Secrets
+					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
+					["provider"] = { "n", 177228 },	-- Highlord Bolvar Fordragon
+					["coord"] = { 62.8, 24.9, KORTHIA },
+				}),
+				q(64562, {	-- We Need a Healer - You! (intro version)
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance (must be on quest)
+					["provider"] = { "n", 179216 },	-- Mikanikos
+					["isDaily"] = true,
+					["coord"] = { 61.4, 23.2, KORTHIA },
+				}),
+				q(63994, {	-- Who is the Maw Walker?
+					["sourceQuests"] = { 63663 },	-- Korthia, the City of Secrets
+					["provider"] = { "n", 177227 },	-- Tal-Galan
+					["coord"] = { 63.8, 23.7, KORTHIA },
+				}),
+
+			--	ptr data
 				q(63672, {	-- A Cry From the Heart
 					["sourceQuests"] = { 63656 },	-- The Meaning of Wrath
 					["provider"] = { "n", 177919 },	-- Urgent Message from Ardenweald
@@ -26,11 +86,6 @@ _.Zones =
 						1967,	-- TG106_Floor
 						1969,	-- TG108_Floor
 					},
-				}),
-				q(63848, {	-- A Show of Gratitude
-					["sourceQuests"] = { 64556 },	-- In Need of Assistance
-					["provider"] = { "n", 177927 },	-- Tal-Galan
-					["coord"] = { 62.7, 24.8, KORTHIA },
 				}),
 				q(64106, {	-- A Unified Effort
 					["sourceQuests"] = { 63902 },	-- Good News, Everyone!
@@ -165,14 +220,6 @@ _.Zones =
 					["provider"] = { "n", 178845 },	-- Xy'lony
 					["coord"] = { 64.5, 25.4, KORTHIA },
 				}),
-				q(64556, {	-- In Need of Assistance
-					["sourceQuests"] = { 64555 },	-- Surveying Secrets
-					["provider"] = { "n", 177228 },	-- Highlord Bolvar Fordragon
-					["coord"] = { 62.8, 24.9, KORTHIA },
-					["g"] = {
-						i(187187),	-- Korthian Armaments
-					},
-				}),
 				q(63732, {	-- Interrupt the Interrogations
 					["sourceQuests"] = { 63731 },	-- Shattered Relics
 					["provider"] = { "n", 178694 },	-- Scholar Roh-Suir
@@ -194,11 +241,6 @@ _.Zones =
 						{ "n", 178640 },	-- Protector Kah-Rev (pet version)
 					},
 					["coord"] = { 49.5, 65.0, KORTHIA },
-				}),
-				q(63663, {	-- Korthia, the City of Secrets
-					["sourceQuests"] = { 63662 },	-- Mysteries of the Maw
-					["provider"] = { "n", 177202 },	-- Ve'nari
-					["coord"] = { 58.3, 14.3, KORTHIA },
 				}),
 				q(63923, {	-- Lang Family Wood-Carving
 					["sourceQuests"] = { 64532 },	-- The Final Relics
@@ -253,11 +295,6 @@ _.Zones =
 					},
 					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 					["coord"] = { 62.7, 22.5, KORTHIA },
-				}),
-				q(63665, {	-- Opening to Oribos
-					["sourceQuests"] = { 63994 },	-- Who is the Maw Walker?
-					["provider"] = { "n", 177227 },	-- Tal-Galan
-					["coord"] = { 63.8, 23.7, KORTHIA },
 				}),
 				q(64289, {	-- Picking Up the Pieces
 					["sourceQuests"] = { 63738 },	-- Establishing the Archive
@@ -314,21 +351,10 @@ _.Zones =
 						i(187159),	-- Shadow Slicing Shortsword (TOY!)
 					},
 				}),
-				q(63731, {	-- Shattered Relics
-				--	TODO: not sure if this is available any earlier than the 2nd 9.1 skip
-					["isBreadcrumb"] = true,
-					["description"] = "The item that starts this quest can be looted from any treasure chest or rare in Korthia.",
-					["provider"] = { "i", 187177 },	-- Researching Korthian Relics
-				}),
 				q(63911, {	-- Singing Steel Ingot
 					["sourceQuests"] = { 64506 },	-- What Must Be Found
 					["provider"] = { "i", 187200 },	-- Singing Steel Ingot
 					["coord"] = { 62.1, 56.8, KORTHIA },
-				}),
-				q(64555, {	-- Surveying Secrets
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
-					["provider"] = { "n", 177228 },	-- Highlord Bolvar Fordragon
-					["coord"] = { 62.8, 24.9, KORTHIA },
 				}),
 				q(63860, {	-- Talisman of the Eternal Scholar
 					["sourceQuests"] = { 64506 },	-- What Must Be Found
@@ -423,17 +449,12 @@ _.Zones =
 					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 					["coord"] = { 62.6, 22.5, KORTHIA },
 				}),
-				q(63994, {	-- Who is the Maw Walker?
-					["sourceQuests"] = { 63663 },	-- Korthia, the City of Secrets
-					["provider"] = { "n", 177227 },	-- Tal-Galan
-					["coord"] = { 63.8, 23.7, KORTHIA },
-				}),
 
 				--	PTR - Death's Advance repeatable quests
 				-- Korthia Weekly
 				q(63949, {	-- Shaping Fate
 				--	TODO: double-check SQ
-					["sourceQuests"] = { 64556 },	-- Charge of the Covenants
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 177927 },	-- Tal-Galan
 					["isWeekly"] = true,
 					["coord"] = { 62.7, 24.8, KORTHIA },
@@ -460,12 +481,6 @@ _.Zones =
 					["coord"] = { 61.7, 24.0, KORTHIA },
 				}),
 				q(63783, {	-- Anima Reclamation
-					["sourceQuests"] = { 64556 },	-- In Need of Assistance
-					["provider"] = { "n", 178793 },	-- Kael'thas Sunstrider
-					["isDaily"] = true,
-					["coord"] = { 61.8, 25.6, KORTHIA },
-				}),
-				q(64560, {	-- Anima Reclamation
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178793 },	-- Kael'thas Sunstrider
 					["isDaily"] = true,
@@ -656,13 +671,6 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 64.6, 25.4, KORTHIA },
 				}),
-				q(64561, {	-- Observational Records
-				--	TODO - this version was picked up after picking up 'in need of assistance' - not sure if that's going to be a daily/weekly???  picked up on 6/2
-					["sourceQuests"] = { 64556 },	-- In Need of Assistance
-					["provider"] = { "n", 178844 },	-- Ta'nasi
-					["isDaily"] = true,
-					["coord"] = { 64.6, 25.4, KORTHIA },
-				}),
 				q(64103, {	-- Old Tricks Work Best
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178808 },	-- Baroness Draka
@@ -817,12 +825,6 @@ _.Zones =
 					["coord"] = { 61.1, 21.2, KORTHIA },
 				}),
 				q(64043, {	-- We Need a Healer - You!
-					["sourceQuests"] = { 64556 },	-- In Need of Assistance
-					["provider"] = { "n", 179216 },	-- Mikanikos
-					["isDaily"] = true,
-					["coord"] = { 61.4, 23.2, KORTHIA },
-				}),
-				q(64562, {	-- We Need a Healer - You!
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 179216 },	-- Mikanikos
 					["isDaily"] = true,

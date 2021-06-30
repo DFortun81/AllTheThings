@@ -489,6 +489,11 @@ _.Zones =
 					["isWeekly"] = true,
 					["coord"] = { 46.9, 41.7, THE_MAW },
 				}),
+				q(63662, {	-- Mysteries of the Maw
+					["sourceQuests"] = { 63661 },	-- Link to the Maw
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.8, 41.7, THE_MAW },
+				}),
 				q(59754, {	-- On Blackened Wings
 					["sourceQuests"] = { 59914 },	-- Fear to Tread
 					["provider"] = { "n", 166980 },	-- Lady Jaina Proudmoore
@@ -812,11 +817,6 @@ _.Zones =
 					["provider"] = { "n", 177726 },	-- Odyn
 					["coord"] = { 58.3, 83.8, 1971 },	-- Skyhold (scenario)
 					["maps"] = { 1971 },	-- Skyhold (scenario)
-				}),
-				q(63662, {	-- Mysteries of the Maw
-					["sourceQuests"] = { 63661 },	-- Link to the Maw
-					["provider"] = { "n", 162804 },	-- Ve'nari
-					["coord"] = { 46.8, 41.7, THE_MAW },
 				}),
 				q(63896, {	-- Tears of the Damned
 					["sourceQuests"] = { 64014 },	-- Mawsplaining

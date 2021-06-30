@@ -168,6 +168,11 @@ _.Zones =
 					["provider"] = { "n", 167486 },	-- Tal-Inara
 					["coord"] = { 40.5, 65.9, ORIBOS },
 				}),
+				q(64007, {	-- Charge of the Covenants
+					["sourceQuests"] = { 63665 },	-- Opening to Oribos
+					["provider"] = { "n", 177230 },	-- Highlord Bolvar Fordragon
+					["coord"] = { 39.5, 36.5, 1671 },	-- Ring of Transference
+				}),
 				q(57878, {	-- Choosing Your Purpose
 					["sourceQuests"] = { 57877 },	-- The Looming Dark
 					["altQuests"] = { 62704 },	-- The Threads of Fate (can't do this version on a Skip character)
@@ -212,10 +217,20 @@ _.Zones =
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 39.9, 68.5, ORIBOS },
 				}),
+				q(63661, {	-- Link to the Maw
+					["sourceQuests"] = { 63660 },	-- Opening the Maw
+					["provider"] = { "n", 159478 },	-- Tal-Inara
+					["coord"] = { 39.2, 69.4, ORIBOS },	-- Ring of Fates
+				}),
 				q(60148, {	-- No Place for the Living
 					["sourceQuests"] = { 60129 },	-- Stranger in an Even Stranger Land
 					["provider"] = { "n", 167425 },	-- Overseer Kah-Delen
 					["coord"] = { 39.7, 66.1, ORIBOS },
+				}),
+				q(63660, {	-- Opening the Maw
+					["sourceQuests"] = { 63639 },	-- Report to Oribos
+					["provider"] = { "n", 159478 },	-- Tal-Inara
+					["coord"] = { 39.2, 69.4, ORIBOS },	-- Ring of Fates
 				}),
 				q(62043, {	-- Prove Your Worth
 					["description"] = "Available while switching back to Kyrian Covenant",
@@ -848,11 +863,6 @@ _.Zones =
 					["coord"] = { 34.7, 55.7, ORIBOS },	-- Ring of Fates
 				}),
 				-- regular ol' quests
-				q(64007, {	-- Charge of the Covenants
-					["sourceQuests"] = { 63665 },	-- Opening to Oribos
-					["provider"] = { "n", 177230 },	-- Highlord Bolvar Fordragon
-					["coord"] = { 39.5, 36.5, 1671 },	-- Ring of Transference
-				}),
 				q(63977, {	-- Insider Trading
 					["sourceQuests"] = { 63976 },	-- The Al'ley Cat of Oribos
 					["provider"] = { "n", 178908 },	-- Al'dalil
@@ -863,16 +873,6 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 40.3, 67.9, ORIBOS },	-- Ring of Fates
-				}),
-				q(63661, {	-- Link to the Maw
-					["sourceQuests"] = { 63660 },	-- Opening the Maw
-					["provider"] = { "n", 159478 },	-- Tal-Inara
-					["coord"] = { 39.1, 69.5, ORIBOS },	-- Ring of Fates
-				}),
-				q(63660, {	-- Opening the Maw
-					["sourceQuests"] = { 63639 },	-- Report to Oribos
-					["provider"] = { "n", 159478 },	-- Tal-Inara
-					["coord"] = { 39.1, 69.5, ORIBOS },	-- Ring of Fates
 				}),
 				q(63980, {	-- Seeking Smugglers
 					["sourceQuests"] = {
