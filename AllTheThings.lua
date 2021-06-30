@@ -11831,7 +11831,7 @@ app.RefreshCustomCollectibility = function()
 		-- settings override
 		if app.Settings:GetFilter("CC:NPE") then return true; end
 		-- needs mapID to check this
-		if not app.CurrentMapID then return; end
+		if not app.GetCurrentMapID() then return; end
 		-- print("first check");
 		-- check if the current MapID is in Exile's Reach
 		local maps = { [1409] = 1, [1609] = 1, [1610] = 1, [1611] = 1, [1726] = 1, [1727] = 1 };
