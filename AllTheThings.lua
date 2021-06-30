@@ -11280,7 +11280,7 @@ local function SetGroupVisibility(parent, group)
 	-- If this group is trackable, then we should show it.
 	elseif app.ShowIncompleteThings(group) then
 		-- if app.DEBUG_LOG then print("UpdateGroup.g.trackable",group.progress,group.total) end
-		group.visible = not group.saved or app.GroupVisibilityFilter(group) or app.DefaultFilter();
+		group.visible = not group.saved or app.GroupVisibilityFilter(group);
 		parent.forceShow = group.visible or parent.forceShow;
 	else
 		group.visible = app.DefaultFilter();
@@ -11302,7 +11302,7 @@ local function SetThingVisibility(parent, group)
 	elseif app.ShowIncompleteThings(group) then
 		-- if app.DEBUG_LOG then print("UpdateGroup.trackable",group.progress,group.total) end
 		-- If this group is trackable, then we should show it.
-		group.visible = not group.saved or app.CollectedItemVisibilityFilter(group) or app.DefaultFilter();
+		group.visible = not group.saved or app.CollectedItemVisibilityFilter(group);
 		parent.forceShow = group.visible or parent.forceShow;
 	else
 		group.visible = app.DefaultFilter();
