@@ -112,6 +112,9 @@ _.Craftables =
 					i(172243),	-- Desolate Scale Treads
 				}),
 			}),
+			filter(102, {	-- Toys
+				i(186702),	-- Pallid Bone Flute
+			}),
 		}),
 	}),
 };

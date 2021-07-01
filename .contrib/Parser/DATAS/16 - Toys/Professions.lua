@@ -102,6 +102,7 @@ _.Toys =
 			i(129960),		-- Leather Pet Bed
 			i(129958),		-- Leather Pet Leash
 			i(130102),		-- Mother's Skinning Knife
+			i(186702),		-- Pallid Bone Flute
 		}),
 	}),
 };
