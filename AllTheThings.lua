@@ -19474,6 +19474,7 @@ app.events.VARIABLES_LOADED = function()
 		app:RegisterEvent("HEIRLOOMS_UPDATED");
 		app:RegisterEvent("ARTIFACT_UPDATE");
 		app:RegisterEvent("TOYS_UPDATED");
+		app:RegisterEvent("LOOT_OPENED");
 
 		local needRefresh;
 
@@ -19624,6 +19625,12 @@ app.events.LOOT_CLOSED = function()
 	app:UnregisterEvent("UPDATE_INSTANCE_INFO");
 	app:RegisterEvent("UPDATE_INSTANCE_INFO");
 	RequestRaidInfo();
+end
+app.events.LOOT_OPENED = function()
+	-- print("LOOT_OPENED")
+	-- When the player loots something, trigger a refresh of quest info (for treasures/rares/etc.)
+	-- Since quest refresh is 1/sec max and not during combat, it should be fine
+	app.RefreshQuestInfo();
 end
 app.events.UPDATE_INSTANCE_INFO = function()
 	-- We got new information, now refresh the saves. :D

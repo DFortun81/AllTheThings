@@ -189,7 +189,7 @@ _.Zones =
 				o(369245, {	-- Korthian Relic Box
 					["description"] = "On the edge of the lower cliff.",
 					["coord"] = { 33.0, 41.9, KORTHIA },
-					["cost"] = { { "i", 186984, 1 } },	-- Korthian Archivists' Key
+					["cost"] = { { "i", 187612, 1 } },	-- Key of Flowing Waters
 					["g"] = {
 						i(187052, {	-- The Netherstar
 							["sourceQuests"] = { 64511 },	-- Missing Relics
@@ -199,7 +199,7 @@ _.Zones =
 				}),
 				o(369304, {	-- Korthian Relic Box
 					["coord"] = { 43.8, 76.9, KORTHIA },
-					["cost"] = { { "i", 186984, 1 } },	-- Korthian Archivists' Key
+					["cost"] = { { "i", 186984, 1 } },	-- Korthite Crystal Key
 					["g"] = {
 						i(187047, {	-- Guise of the Changeling
 							["sourceQuests"] = { 64511 },	-- Missing Relics

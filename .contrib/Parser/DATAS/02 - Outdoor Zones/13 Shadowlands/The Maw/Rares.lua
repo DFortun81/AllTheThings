@@ -171,6 +171,9 @@ _.Zones =
 						crit(6, {	-- Darklord Taraxis
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
 						}),
+						i(183901, {	-- Bonestorm Top (TOY!)
+							["timeline"] = { "added 9.1.0.38312" },
+						}),
 						i(186611, {	-- Taraxis' Treads
 							["timeline"] = { "added 9.1.0.38312" },
 						}),
@@ -422,7 +425,10 @@ _.Zones =
 						crit(12, {	-- Morguliax
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
 						}),
-						i(184292),		-- Ancient Elethium Coin
+						i(184292),	-- Ancient Elethium Coin
+						i(185892, {	-- Stygia-Etched Decapitator
+							["timeline"] = { "added 9.1.0.38312" },
+						}),
 					},
 				}),
 				n(158278, {	-- Nascent Devourer

@@ -737,6 +737,7 @@ t(178530);	-- Wreath-A-Rang
 -- PATCH 9.1.0 --
 -----------------
 t(187154);	-- Ancient Korthian Runes
+t(183901);	-- Bonestorm Top
 t(187139);	-- Bottled Shade Heart
 t(187051);	-- Forgotten Feather
 t(187155);	-- Guise of the Changeling

@@ -61,6 +61,10 @@ _.ExpansionFeatures =
 						166143,	-- Command Table [Venthyr]
 					},
 					["g"] = {
+						-- Follower XP Items
+						i(187413, {	-- Crystalline Memory Repository
+							["timeline"] = { "added 9.1.0.38312" },
+						}),
 						-- Mounts
 						i(183617),	-- Chittering Animite
 						i(183052),	-- Darkwarren Hardshell
@@ -79,6 +83,9 @@ _.ExpansionFeatures =
 						i(184635),	-- Adventurer's Mining Cache
 						i(184636),	-- Adventurer's Skinning Cache
 						i(184630),	-- Adventurer's Tailoring Cache
+						i(187569, {	-- Broker's Tailoring Mote of Potentiation
+							["timeline"] = { "added 9.1.0.38312" },
+						}),
 						i(184643),	-- Champion's Enchanting Cache
 						i(184632),	-- Champion's Fish Cache
 						i(184642),	-- Champion's Herbalism Cache
