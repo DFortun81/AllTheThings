@@ -255,6 +255,7 @@ i(169250);	-- Crude Eating Utensil
 i(9265);	-- Cuergo's Hidden Treasure
 i(182955);	-- Cypher of Dampening
 i(182688);	-- Cypher of Obfuscation
+i(185963);	-- Diviner's Rune Chit
 i(169232);	-- Dud Blast Canister
 i(143656);	-- Echo of Time (N)
 i(143657);	-- Echo of Time (H)

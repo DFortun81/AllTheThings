@@ -136,8 +136,6 @@ _.Zones =
 				}),
 			--	Blues
 				i(186969),	-- Collapsing Riftstone
-			--	Greens
-				i(186153),	-- Foresworn Seal
 				i(186559, {	-- Grappling Gauntlet (PET!)
 					["crs"] = {	-- probably from other Mawsworn mobs
 						177292,	-- Mawsworn Mutilator
@@ -145,6 +143,8 @@ _.Zones =
 						177293,	-- Mawsworn Torturer
 					},
 				}),
+			--	Greens
+				i(186153),	-- Foresworn Seal
 				i(186151),	-- Mawsworn Assasin's Twinblade
 				i(186143),	-- Mawsworn Assassin's Backstabber*
 				i(186118),	-- Mawsworn Assassin's Belt
@@ -186,6 +186,7 @@ _.Zones =
 				i(186123),	-- Mawsworn Scout's Coif
 				i(186124),	-- Mawsworn Scout's Greaves*
 				i(186122),	-- Mawsworn Scout's Grips
+				i(186141),	-- Mawsworn Scout's Quickshot Bow*
 				i(186125),	-- Mawsworn Scout's Shoulderguards
 				i(186121),	-- Mawsworn Scout's Striders
 				i(186148),	-- Mawsworn Vanquisher's Spire*

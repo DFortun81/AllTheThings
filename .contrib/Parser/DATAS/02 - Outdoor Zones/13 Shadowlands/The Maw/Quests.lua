@@ -155,6 +155,7 @@ _.Zones =
 									i(186218),	-- Fire-Tempered Armor Cinch (looted from Zul'gath near the start of PTR - drops may have been changed, not sure if this is CBD or specific to Zul'gath - apparently most tormentors have at least 1 dedicated drop, but this guy isn't especially fiery so i'm not sure)
 									i(185972, {	-- Tormentor's Cache
 										i(186977),	-- Beastcaller's Skull Crescent
+										i(186562),	-- Tormentor's Manacled Backplate
 										i(185756),	-- Warped Phantasma (TODO: add rep item if this makes it to live)
 									}),
 								},

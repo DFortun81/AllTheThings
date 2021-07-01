@@ -34,6 +34,11 @@ _.Zones =
 						}),
 					},
 				}),
+				i(187252, {	-- Ritualist's Spiked Mantle
+					["crs"] = {
+						168977,	-- Mawsworn Thaumaturge
+					},
+				}),
 				i(186727, {	-- Seal Breaker Key
 					["questID"] = 62679,
 					["cr"] = 177134,	-- Maldraxxi Defector

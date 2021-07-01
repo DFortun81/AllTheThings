@@ -591,13 +591,17 @@ _.Zones =
 								n(TREASURES, {
 									i(186190, {	-- Etherwyrm Cage Key
 										["questID"] = 64003,	-- tracking quest triggered when looting key
+										["isDaily"] = true,
 										["coord"] = { 19.1, 43.6, THE_MAW },
 										["cr"] = 179030,	-- Elusive Keybinder
 									}),
 									o(368645, {	-- Rift Hidden Cache
 										["questID"] = 63993,
 										["isDaily"] = true,
-										["coord"] = { 20.5, 47.4, THE_MAW },
+										["coords"] = {
+											{ 20.5, 47.4, THE_MAW },
+											{ 22.6, 46.2, THE_MAW },
+										},
 										["g"] = {
 											i(187251),	-- Shaded Skull Shoulderguards
 										},
@@ -611,10 +615,12 @@ _.Zones =
 										},
 									}),
 									o(368347, {	-- Rift Hidden Cache
-										["description"] = "In a small cave.",
 										["questID"] = 63996,
 										["isDaily"] = true,
-										["coord"] = { 20.7, 29.8, THE_MAW },
+										["coords"] = {
+											{ 20.7, 29.8, THE_MAW },	-- in a small cave
+											{ 25.1, 27.1, THE_MAW },
+										},
 										["g"] = {
 											i(187251),	-- Shaded Skull Shoulderguards
 										},
@@ -631,7 +637,10 @@ _.Zones =
 									o(368649, {	-- Rift Hidden Cache
 										["questID"] = 63998,
 										["isDaily"] = true,
-										["coord"] = { 19.0, 43.9, THE_MAW },
+										["coords"] = {
+											{ 19.0, 33.4, THE_MAW },
+											{ 19.0, 43.9, THE_MAW },
+										},
 										["g"] = {
 											i(187251),	-- Shaded Skull Shoulderguards
 										},
@@ -651,6 +660,7 @@ _.Zones =
 							o(368653, {	-- Etherwyrm Cage
 								["description"] = "At the back of the cave.",
 								["questID"] = 64000,
+								["isDaily"] = true,
 								["coord"] = { 20.7, 39.7, THE_MAW },
 								["cost"] = { { "i", 186190, 1 } },	-- Etherwyrm Cage Key
 								["g"] = {
@@ -663,7 +673,9 @@ _.Zones =
 								["achievementID"] = 15000,	-- United Front
 							}),
 							i(185991, {	-- War Chest of the Wild Hunt
+							--	TODO: battlefield drape may be from any covenant assault chest?  on PTR it was sold by a vendor
 								i(186000),	-- Wild Hunt Legsplitter (MOUNT!)
+								i(187410),	-- Death's Advance Battlefield Drape
 								i(186547),	-- Invasive Buzzer (PET!)
 							}),
 						}),

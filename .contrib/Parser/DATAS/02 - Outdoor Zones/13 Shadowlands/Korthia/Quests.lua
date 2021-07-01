@@ -10,6 +10,11 @@ _.Zones =
 			--	TODO: 64567, "The Missing Scholar," triggered when turning in #63732, "Interrupt the Interrogations."  based on quest text on wowhead, this appears to be an alternate way to start the research chain - not sure if that means at a certain point if you haven't looted a single treasure/rare to get "Researching Korthian Relics," you will at some point receive this alternate version?????  it's also possible it's just an NYI quest.  i never ran into it on PTR; originally you picked up "Interrupt the Interrogations" without a preceding quest and then at one point they added "Researching Korthian Relics" to get you there more naturally.
 			
 			--	confirmed on live
+				q(63755, {	-- A Matter of Urgency
+					["sourceQuests"] = { 64106 },	-- A Unified Effort
+					["provider"] = { "n", 177155 },	-- Pathscribe Roh-Vess
+					["coord"] = { 65.1, 23.1, KORTHIA },
+				}),
 				q(63848, {	-- A Show of Gratitude
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 177927 },	-- Tal-Galan
@@ -74,6 +79,11 @@ _.Zones =
 					["provider"] = { "n", 178470 },	-- Ve'nari
 					["coord"] = { 65.9, 23.0, KORTHIA },
 				}),
+				q(63760, {	-- Echoes of Fate
+					["sourceQuests"] = { 63759 },	-- Redirect the Search
+					["provider"] = { "n", 177610 },	-- Caretaker Kah-Than
+					["coord"] = { 56.9, 22.3, KORTHIA },
+				}),
 				q(64438, {	-- Empowering Equipment
 					["sourceQuests"] = { 64290 },	-- Collecting Research
 					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
@@ -121,6 +131,11 @@ _.Zones =
 					["provider"] = { "n", 177202 },	-- Ve'nari
 					["coord"] = { 58.3, 14.3, KORTHIA },
 				}),
+				q(63757, {	-- Looting the Looters
+					["sourceQuests"] = { 63755 },	-- A Matter of Urgency
+					["provider"] = { "i", 185915 },	-- Korthian Artifact
+					["crs"] = { 177204 },	-- Mawsworn Interrogator
+				}),
 				q(64511, {	-- Missing Relics
 					["sourceQuests"] = { 64506 },	-- What Must Be Found
 					["description"] = "Requires Tier 2 Research.",
@@ -143,10 +158,28 @@ _.Zones =
 					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 					["coord"] = { 62.7, 22.5, KORTHIA },
 				}),
+				q(63759, {	-- Redirect the Search
+					["sourceQuests"] = {
+						63757,	-- Looting the Looters
+						63756,	-- Rescued from Torment
+						63758,	-- The Last Place You Look
+					},
+					["provider"] = { "n", 177924 },	-- Caretaker Kah-Than
+				}),
+				q(63756, {	-- Rescued from Torment
+					["sourceQuests"] = { 63755 },	-- A Matter of Urgency
+					["provider"] = { "n", 177610 },	-- Caretaker Kah-Than
+					["coord"] = { 56.2, 38.8, KORTHIA },
+				}),
 				q(63731, {	-- Researching Korthian Relics
 					["sourceQuests"] = { 63662 },	-- Mysteries of the Maw
 					["description"] = "The item that starts this quest can be looted from any treasure chest or rare in Korthia.",
 					["provider"] = { "i", 187177 },	-- Researching Korthian Relics
+				}),
+				q(63761, {	-- Revenge Delayed
+					["sourceQuests"] = { 63759 },	-- Redirect the Search
+					["provider"] = { "n", 177850 },	-- Protector Rih-Mat
+					["coord"] = { 55.6, 22.2, KORTHIA },
 				}),
 				q(63949, {	-- Shaping Fate
 					["sourceQuests"] = { 63902 },	-- Good News, Everyone!
@@ -164,10 +197,26 @@ _.Zones =
 					["provider"] = { "n", 177228 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 62.8, 24.9, KORTHIA },
 				}),
+				q(63758, {	-- The Last Place You Look
+					["sourceQuests"] = { 63755 },	-- A Matter of Urgency
+					["provider"] = { "n", 177610 },	-- Caretaker Kah-Than
+					["coord"] = { 56.2, 38.8, KORTHIA },
+				}),
 				q(63734, {	-- The Sundered Staff
 					["sourceQuests"] = { 63732 },	-- Interrupt the Interrogations
 					["provider"] = { "n", 178713 },	-- Archivist Roh-Dahl
 					["coord"] = { 58.9, 58.1, KORTHIA },
+				}),
+				q(63763, {	-- They Could Be Anyone
+					["sourceQuests"] = { 63762 },	-- Under the Illusion
+					["provider"] = { "i", 185740 },	-- Head of Azodius
+					["coord"] = { 56.5, 17.4, KORTHIA },
+					["crs"] = { 177243 },	-- Azodius
+				}),
+				q(63762, {	-- Under the Illusion
+					["sourceQuests"] = { 63760 },	-- Echoes of Fate
+					["provider"] = { "n", 177610 },	-- Caretaker Kah-Than
+					["coord"] = { 56.5, 17.4, KORTHIA },
 				}),
 				q(64562, {	-- We Need a Healer - You! (intro version)
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance (must be on quest)
@@ -191,11 +240,6 @@ _.Zones =
 					["sourceQuests"] = { 63656 },	-- The Meaning of Wrath
 					["provider"] = { "n", 177919 },	-- Urgent Message from Ardenweald
 					["coord"] = { 63.4, 24.6, KORTHIA },
-				}),
-				q(63755, {	-- A Matter of Urgency
-					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
-					["provider"] = { "n", 177155 },	-- Pathscribe Roh-Vess
-					["coord"] = { 65.1, 23.1, KORTHIA },
 				}),
 				q(63579, {	-- A Paladin's Soul
 					["sourceQuests"] = { 63683 },	-- Winter's Sigil
@@ -263,11 +307,6 @@ _.Zones =
 					["coord"] = { 39.3, 52.4, KORTHIA },
 					["cost"] = { { "i", 186718, 1 } },	-- Teleporter Repair Kit
 				}),
-				q(63760, {	-- Echoes of Fate
-					["sourceQuests"] = { 63759 },	-- Redirect the Search
-					["provider"] = { "n", 177610 },	-- Caretaker Kah-Than
-					["coord"] = { 56.9, 22.3, KORTHIA },
-				}),
 				q(63713, {	-- Hooking Over
 					["sourceQuests"] = {
 						63711,	-- Bone Tools
@@ -304,13 +343,6 @@ _.Zones =
 					["provider"] = { "n", 177449 },	-- Bonesmith Heirmir
 					["coord"] = { 57.2, 29.8, KORTHIA },
 				}),
-				q(63757, {	-- Looting the Looters
-				--	TODO: verify SQ.  i had already killed a ton of mobs so i think it is dependent on turning this in, but you may also need to have picked up "the last place you look" and "rescued from torment"
-				--	also add crs for mob(s) that drop it, mob i looted had already despawned so i wasn't able to verify the npcid
-					["sourceQuests"] = { 63755 },	-- A Matter of Urgency
-					["provider"] = { "i", 185915 },	-- Korthian Artifact
-				--	["crs"] = {  },	--
-				}),
 				q(63712, {	-- Lost Records
 					["sourceQuests"] = { 63710 },	-- The Anima Trail
 					["provider"] = { "n", 177451 },	-- Tal-Galan - TODO: verify NPC once on live, it's currently named "Tal-Galan (temp)"
@@ -336,24 +368,6 @@ _.Zones =
 					},
 					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 					["coord"] = { 62.7, 22.5, KORTHIA },
-				}),
-				q(63759, {	-- Redirect the Search
-					["sourceQuests"] = {
-						63757,	-- Looting the Looters
-						63756,	-- Rescued from Torment
-						63758,	-- The Last Place You Look
-					},
-					["provider"] = { "n", 177924 },	-- Caretaker Kah-Than
-				}),
-				q(63756, {	-- Rescued from Torment
-					["sourceQuests"] = { 63755 },	-- A Matter of Urgency
-					["provider"] = { "n", 177610 },	-- Caretaker Kah-Than
-					["coord"] = { 56.2, 38.8, KORTHIA },
-				}),
-				q(63761, {	-- Revenge Delayed
-					["sourceQuests"] = { 63759 },	-- Redirect the Search
-					["provider"] = { "n", 177850 },	-- Protector Rih-Mat
-					["coord"] = { 55.6, 22.2, KORTHIA },
 				}),
 				q(63916, {	-- Sack of Strange Soil
 					["sourceQuests"] = { 64506 },	-- What Must Be Found
@@ -416,33 +430,16 @@ _.Zones =
 					["provider"] = { "n", 177423 },	-- Tal-Galan
 					["coord"] = { 57.4, 29.9, KORTHIA },
 				}),
-				q(63758, {	-- The Last Place You Look
-					["sourceQuests"] = { 63755 },	-- A Matter of Urgency
-					["provider"] = { "n", 177610 },	-- Caretaker Kah-Than
-					["coord"] = { 56.2, 38.8, KORTHIA },
-				}),
 				q(64305, {	-- The Tormentors of Torghast
 				--	TODO: not 100% on this SQ - i did the chain through "Good News, Everyone!" and picked up all the one-time quests that were up, then logged out.  when i logged back in later that day, this quest was up.  i'm PRETTY SURE i had picked up all the yellow quests in the area already but i guess maybe i missed one (even though it was literally right next to me lol)?  anyway, could use verification
 					["sourceQuests"] = { 63902 },	-- Good News, Everyone!
 					["provider"] = { "n", 179321 },	-- Duchess Mynx
 					["coord"] = { 63.4, 23.3, KORTHIA },
 				}),
-				q(63763, {	-- They Could Be Anyone
-				--	TODO: verify that quest still exists on live.  all quest text lines are listed as "DEPRECATED" atm and there's another newer quest where you learn the nathrezim are in korthia
-					["sourceQuests"] = { 63762 },	-- Under the Illusion
-					["provider"] = { "i", 185740 },	-- Head of Azodius
-					["coord"] = { 56.5, 17.4, KORTHIA },
-					["crs"] = { 177243 },	-- Azodius
-				}),
 				q(63714, {	-- To the Vault
 					["sourceQuests"] = { 63713 },	-- Hooking Over
 					["provider"] = { "n", 177451 },	-- Tal-Galan - TODO: verify NPC once on live, it's currently named "Tal-Galan (temp)"
 					["coord"] = { 34.9, 35.3, KORTHIA },
-				}),
-				q(63762, {	-- Under the Illusion
-					["sourceQuests"] = { 63760 },	-- Echoes of Fate
-					["provider"] = { "n", 177610 },	-- Caretaker Kah-Than
-					["coord"] = { 56.5, 17.4, KORTHIA },
 				}),
 				q(63726, {	-- Untangling the Sigil
 					["sourceQuests"] = { 63725 },	-- Into the Vault
