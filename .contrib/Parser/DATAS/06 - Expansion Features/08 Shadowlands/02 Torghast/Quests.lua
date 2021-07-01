@@ -33,7 +33,7 @@ _.ExpansionFeatures =
 					["coord"] = { 50.6, 57.2, 1912 },
 				}),
 				q(64210, {	-- The Box of Many Things
-				--	i think it actually might be available earlier?  the quest showed up before i turned in 'in darkness,' picked up while i was in the 'a paladin's soul' scenario.  
+				--	i think it actually might be available earlier?  the quest showed up before i turned in 'in darkness,' picked up while i was in the 'a paladin's soul' scenario.
 				--	'in darkness' doesn't LOOK like a breadcrumb quest (because it doesn't hide 'the box of many things' until after it's turned in, but if 'the box' IS available earlier then your character may get locked out of picking up 'in darkness' if they overlooked it... so it may be a breadcrumb.  i do not knoooooow
 					["sourceQuests"] = { 64557 },	-- In Darkness, Found
 					["provider"] = { "n", 179598 },	-- Ve'nish
@@ -318,7 +318,7 @@ _.ExpansionFeatures =
 					["coord"] = { 39.9, 68.5, ORIBOS },
 				}),
 				]]--
-				
+
 				-- 9.1 PTR QUESTS -- TODO: SORT ON LIVE
 				q(63727, {	-- The Primus Returns
 				--	TODO: maybe move to korthia for visibility?
@@ -331,7 +331,7 @@ _.ExpansionFeatures =
 						}),
 					},
 				}),
-				
+
 
 
 
@@ -640,6 +640,10 @@ _.ExpansionFeatures =
 					["isWeekly"] = true,
 					["name"] = "Skoldus Hall, Layer 8",
 				}),
+				q(63868, {	-- Skoldus Hall, Layer 9
+					["isWeekly"] = true,
+					["name"] = "Skoldus Hall, Layer 9",
+				}),
 
 				-- Soulforges
 				q(58192, {	-- Soulforges, Layer 1
@@ -707,6 +711,10 @@ _.ExpansionFeatures =
 				q(61980, {	-- Upper Reaches, Layer 8
 					["isWeekly"] = true,
 					["name"] = "Upper Reaches, Layer 8",
+				}),
+				q(63888, {	-- Upper Reaches, Layer 9
+					["isWeekly"] = true,
+					["name"] = "Upper Reaches, Layer 9",
 				}),
 			}),
 		}),

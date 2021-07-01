@@ -32,6 +32,7 @@ _.Zones =
 								crit(1, {	-- Blinding Shadow
 									["achievementID"] = 15107,	-- Conquering Korthia
 								}),
+								i(187406),	-- Band of Blinding Shadows
 							},
 						}),
 						n(179851, {	-- Guard Orguluus
@@ -54,6 +55,7 @@ _.Zones =
 									["achievementID"] = 15107,	-- Conquering Korthia
 								}),
 								i(187139),	-- Bottled Shade Heart (TOY!)
+								i(187389),	-- Lord of Shade's Binders
 								i(187360),	-- Orb of Enveloping Rifts
 								i(186605),	-- Nilganihmaht's Runed Band
 							},

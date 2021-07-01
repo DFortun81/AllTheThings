@@ -166,6 +166,9 @@ _.Zones =
 							n(177979, {	-- Gralebboih
 								i(186449),	-- Amaranthine Stinger (PET!)
 							}),
+							n(177972, {	-- Malleus Grakizz
+								i(186012),	-- Inferno Blast Shield
+							}),
 							n(178899, {	-- Manifestation of Pain
 								i(186213),	-- Bindings of Manifest Pain
 							}),

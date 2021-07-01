@@ -50,6 +50,7 @@ _.Zones =
 								crit(14, {	-- Observer Yorik
 									["achievementID"] = 15107,	-- Conquering Korthia
 								}),
+								i(187405),	-- Choker of the Hidden Observer
 							},
 						}),
 					}),
