@@ -19,6 +19,15 @@ _.Zones =
 					["sourceQuests"] = { 63902 },	-- Good News, Everyone!
 					["provider"] = { "n", 177228 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 63.0, 25.6, KORTHIA },
+					["_drop"] = { "g" },	-- drop anima trash
+				}),
+				q(63736, {	-- An Infusion of Anima
+					["sourceQuests"] = {
+						63733,	-- Carving Out a Path
+						63734,	-- The Sundered Staff
+					},
+					["provider"] = { "n", 177928 },	-- Archivist Roh-Dahl
+					["coord"] = { 39.4, 51.3, KORTHIA },
 				}),
 				q(64560, {	-- Anima Reclamation (intro version)
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance (must be on quest)
@@ -26,15 +35,67 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 61.8, 25.6, KORTHIA },
 				}),
+				q(63861, {	-- Beginning the Collection
+					["sourceQuests"] = { 63738 },	-- Establishing the Archive
+					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+					["coord"] = { 62.7, 22.5, KORTHIA },
+					["g"] = {
+						i(185636),	-- The Archivist's Codex
+					},
+				}),
 				q(63733, {	-- Carving Out a Path
 					["sourceQuests"] = { 63732 },	-- Interrupt the Interrogations
 					["provider"] = { "n", 178713 },	-- Archivist Roh-Dahl
 					["coord"] = { 58.9, 58.1, KORTHIA },
 				}),
+				q(64290, {	-- Collecting Research
+					["sourceQuests"] = { 64289 },	-- Picking Up the Pieces
+					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+					["coord"] = { 61.6, 21.7, KORTHIA },
+					["g"] = {	-- TODO: there are no plate rewards currently linked - are there any or is plate just...left out?
+						i(186664),	-- Korthian Caretaker's Sandals
+						i(186665),	-- Korthian Caretaker's Mitts
+						i(186734),	-- Shardhide Leather Treads
+						i(186735),	-- Shardhide Leather Handlers
+						i(186741),	-- Razorwing Scale Footguards
+						i(186742),	-- Razorwing Scale Fists
+					},
+				}),
+				q(63740, {	-- Consulting the Experts
+					["sourceQuests"] = {
+						63733,	-- Carving Out a Path
+						63734,	-- The Sundered Staff
+					},
+					["provider"] = { "n", 177928 },	-- Archivist Roh-Dahl
+					["coord"] = { 39.4, 51.3, KORTHIA },
+				}),
 				q(63855, {	-- Ease of Passage
 					["sourceQuests"] = { 63848 },	-- A Show of Gratitude
 					["provider"] = { "n", 178470 },	-- Ve'nari
 					["coord"] = { 65.9, 23.0, KORTHIA },
+				}),
+				q(64438, {	-- Empowering Equipment
+					["sourceQuests"] = { 64290 },	-- Collecting Research
+					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+					["coord"] = { 61.6, 21.7, KORTHIA },
+				}),
+				q(63738, {	-- Establishing the Archive
+					["sourceQuests"] = { 63737 },	-- Finding One's True Purpose
+					["provider"] = { "n", 178992 },	-- Scholar Roh-Suir
+					["coord"] = { 36.0, 32.3, KORTHIA },
+				}),
+				q(63737, {	-- Finding One's True Purpose
+					["sourceQuests"] = { 63739 },	-- Hope Ascending
+					["provider"] = { "n", 178991 },	-- Archivist Roh-Dahl
+					["coord"] = { 35.8, 32.2, KORTHIA },
+				}),
+				q(63739, {	-- Hope Ascending
+					["sourceQuests"] = {
+						63736,	-- An Infusion of Anima
+						63740,	-- Consulting the Experts
+					},
+					["provider"] = { "n", 177928 },	-- Archivist Roh-Dahl
+					["coord"] = { 39.4, 51.3, KORTHIA },
 				}),
 				q(64557, {	-- In Darkness, Found
 					["sourceQuests"] = { 63902 },	-- Good News, Everyone!
@@ -71,6 +132,11 @@ _.Zones =
 					["provider"] = { "n", 177227 },	-- Tal-Galan
 					["coord"] = { 63.8, 23.7, KORTHIA },
 				}),
+				q(64289, {	-- Picking Up the Pieces
+					["sourceQuests"] = { 63738 },	-- Establishing the Archive
+					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+					["coord"] = { 62.7, 22.5, KORTHIA },
+				}),
 				q(63731, {	-- Researching Korthian Relics
 					["sourceQuests"] = { 63662 },	-- Mysteries of the Maw
 					["description"] = "The item that starts this quest can be looted from any treasure chest or rare in Korthia.",
@@ -84,7 +150,6 @@ _.Zones =
 					["g"] = {
 					--	TODO: figure out the contents of this chest and how/where to display it (if it comes from multiple things)
 						i(186196, {	-- Death's Advance War Chest
-							i(186197),	-- Seal of Death's Unity (TODO: add rep item if this makes it to live, it wouldn't let me use it while in Korthia on PTR)
 						}),
 					},
 				}),
@@ -131,22 +196,6 @@ _.Zones =
 						1969,	-- TG108_Floor
 					},
 				}),
-				q(63736, {	-- An Infusion of Anima
-					["sourceQuests"] = {
-						63733,	-- Carving Out a Path
-						63734,	-- The Sundered Staff
-					},
-					["provider"] = { "n", 177928 },	-- Archivist Roh-Dahl
-					["coord"] = { 39.4, 51.3, KORTHIA },
-				}),
-				q(63861, {	-- Beginning the Collection
-					["sourceQuests"] = { 63738 },	-- Establishing the Archive
-					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
-					["coord"] = { 62.7, 22.5, KORTHIA },
-					["g"] = {
-						i(185636),	-- The Archivist's Codex
-					},
-				}),
 				q(63899, {	-- Book of Binding: The Mad Witch
 					["sourceQuests"] = { 64506 },	-- What Must Be Found
 					["description"] = "At the end of the top level of the cave.",
@@ -168,19 +217,6 @@ _.Zones =
 					["sourceQuests"] = { 64506 },	-- What Must Be Found
 					["provider"] = { "i", 187201 },	-- Celestial Shadowlands Chart
 					["coord"] = { 45.5, 56.0, KORTHIA },
-				}),
-				q(64290, {	-- Collecting Research
-					["sourceQuests"] = { 64289 },	-- Picking Up the Pieces
-					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
-					["coord"] = { 61.6, 21.7, KORTHIA },
-				}),
-				q(63740, {	-- Consulting the Experts
-					["sourceQuests"] = {
-						63733,	-- Carving Out a Path
-						63734,	-- The Sundered Staff
-					},
-					["provider"] = { "n", 177928 },	-- Archivist Roh-Dahl
-					["coord"] = { 39.4, 51.3, KORTHIA },
 				}),
 				q(63717, {	-- Defending the Vault
 					["sourceQuests"] = { 63714 },	-- To the Vault
@@ -218,16 +254,6 @@ _.Zones =
 					["provider"] = { "n", 177610 },	-- Caretaker Kah-Than
 					["coord"] = { 56.9, 22.3, KORTHIA },
 				}),
-				q(63738, {	-- Establishing the Archive
-					["sourceQuests"] = { 63737 },	-- Finding One's True Purpose
-					["provider"] = { "n", 178992 },	-- Scholar Roh-Suir
-					["coord"] = { 36.0, 32.3, KORTHIA },
-				}),
-				q(63737, {	-- Finding One's True Purpose
-					["sourceQuests"] = { 63739 },	-- Hope Ascending
-					["provider"] = { "n", 178991 },	-- Archivist Roh-Dahl
-					["coord"] = { 35.8, 32.2, KORTHIA },
-				}),
 				q(63713, {	-- Hooking Over
 					["sourceQuests"] = {
 						63711,	-- Bone Tools
@@ -235,14 +261,6 @@ _.Zones =
 					},
 					["provider"] = { "n", 177452 },	-- Bonesmith Heirmir
 					["coord"] = { 34.9, 35.3, KORTHIA },
-				}),
-				q(63739, {	-- Hope Ascending
-					["sourceQuests"] = {
-						63736,	-- An Infusion of Anima
-						63740,	-- Consulting the Experts
-					},
-					["provider"] = { "n", 177928 },	-- Archivist Roh-Dahl
-					["coord"] = { 39.4, 51.3, KORTHIA },
 				}),
 				q(63725, {	-- Into the Vault
 					["sourceQuests"] = {
@@ -314,18 +332,6 @@ _.Zones =
 					},
 					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 					["coord"] = { 62.7, 22.5, KORTHIA },
-				}),
-				q(64289, {	-- Picking Up the Pieces
-					["sourceQuests"] = { 63738 },	-- Establishing the Archive
-					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
-					["coord"] = { 61.6, 21.7, KORTHIA },
-					["g"] = { -- TODO: unsure if these rewards vary from class to class + if they don't, remainder of armor class rewards need to be added
-					--	NOT DONE: death knight, demon hunter, druid, hunter, mage, monk, paladin, rogue, warlock, warrior
-						i(186665),	-- Korthian Caretaker's Mitts
-						i(186664),	-- Korthian Caretaker's Sandals
-						i(186742),	-- Razorwing Scale Fists
-						i(186741),	-- Razorwing Scale Footguards
-					},
 				}),
 				q(63759, {	-- Redirect the Search
 					["sourceQuests"] = {
@@ -400,11 +406,6 @@ _.Zones =
 					},
 					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 					["coord"] = { 62.7, 22.5, KORTHIA },
-				}),
-				q(64438, {	-- The Fruits of Research
-					["sourceQuests"] = { 64290 },	-- Collecting Research
-					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
-					["coord"] = { 61.6, 21.7, KORTHIA },
 				}),
 				q(63705, {	-- The Knowledge Keepers
 					["sourceQuests"] = { 63703 },	-- Vault of Secrets

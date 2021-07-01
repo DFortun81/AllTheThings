@@ -139,6 +139,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coords"] = {
 						{ 35.7, 31.1, KORTHIA },
+						{ 37.4, 34.7, KORTHIA },
 						{ 39.5, 30.7, KORTHIA },
 						{ 39.7, 34.8, KORTHIA },
 					},
