@@ -14,6 +14,14 @@ _.Achievements =
 {
 	n(-9968, {	-- Legacy
 		n(-9960, {	-- Professions
+			ach(10585, {	-- Fel-Smelter
+				["u"] = REMOVED_FROM_GAME,
+				["g"] = { 
+					crit(1, {	-- Firing Up the Forge
+						["u"] = REMOVED_FROM_GAME,
+					}),
+				}
+			}),
 			un(REMOVED_FROM_GAME, ach(11139, {	-- Field Medic!
 				un(REMOVED_FROM_GAME, title(340, {	-- TITLE: Field Medic!
 					i(139534, {	-- Bloody Letter
@@ -156,6 +164,9 @@ _.Achievements =
 				ach(6838),	-- Zen Master Medic (600)
 				ach(9505),	-- Draenor Medic (700)
 			})),
+			ach(10586, {	-- Mass Obliteration
+				["u"] = REMOVED_FROM_GAME,
+			}),
 			ach(5480, {	-- Preparing for Disaster
 				["requireSkill"] = TAILORING,
 			}),

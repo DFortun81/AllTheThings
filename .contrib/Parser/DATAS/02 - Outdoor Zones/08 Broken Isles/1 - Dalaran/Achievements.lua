@@ -233,7 +233,14 @@ _.Zones =
 						}),
 					},
 				}),
-				ach(10585),		-- Fel-Smelter
+				ach(10585, {	-- Fel-Smelter
+					["u"] = REMOVED_FROM_GAME,
+					["g"] = { 
+						crit(1, {	-- Firing Up the Forge
+							["u"] = REMOVED_FROM_GAME,
+						}),
+					}
+				}),
 				ach(11139, {	-- Field Medic!
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
