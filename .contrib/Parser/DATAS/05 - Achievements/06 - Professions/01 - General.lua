@@ -22,14 +22,6 @@ _.Achievements =
 				h(i(116249)),	-- Frostwall Mines, Level 3 [Blueprints]
 			}),
 			ach(9087),		-- Draenor Master of All
-			ach(10585, {	-- Fel-Smelter
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = { 
-						crit(1, {	-- Firing Up the Forge
-							["u"] = REMOVED_FROM_GAME,
-						}),
-					}
-				}),
 			ach(12740, {	-- Full of Scrap!
 				ach(12739),		-- Scraptastic!
 				ach(12738),		-- Holy Scrap!
@@ -79,9 +71,6 @@ _.Achievements =
 				crit(6),		-- Jewelcrafting: Jewelhammer's Focus
 				crit(7),		-- Leatherworking: Mallet of Thunderous Skins
 				crit(8),		-- Tailoring: Synchronous Thread]]--	-- Only need one for achiev.
-			}),
-			ach(10586, {	-- Mass Obliteration
-				["u"] = REMOVED_FROM_GAME,
 			}),
 			ach(7379, {		-- Pandaren Master of All
 				ach(7378),		-- Jack of All Trades

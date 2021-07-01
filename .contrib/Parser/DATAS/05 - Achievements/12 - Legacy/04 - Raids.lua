@@ -15,6 +15,7 @@ _.Achievements =
 	n(-9968, {	-- Legacy
 		n(-10044, {	-- Raids
 			un(REMOVED_FROM_GAME, ach(2919)),	-- A Quick Shave (10 player)
+			un(REMOVED_FROM_GAME, ach(2921)),	-- A Quick Shave (25 player)
 			un(REMOVED_FROM_GAME, ach(4080, {	-- A Tribute to Dedicated Insanity
 				un(REMOVED_FROM_GAME, title(136)),	-- the Argent Defender
 				un(REMOVED_FROM_GAME, ach(3810)),	-- A Tribute to Insanity (10 player)

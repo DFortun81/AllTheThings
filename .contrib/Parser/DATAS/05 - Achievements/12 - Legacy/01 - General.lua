@@ -14,7 +14,6 @@ _.Achievements =
 {
 	n(-9968, {	-- Legacy
 		n(-9955, {	-- General
-			un(REMOVED_FROM_GAME, ach(2921)),		-- A Quick Shave (25 player)
 			un(REMOVED_FROM_GAME, a(ach(8030))),	-- A Test of Valor (Alliance)
 			un(REMOVED_FROM_GAME, h(ach(8031))),	-- A Test of Valor (Horde)
 			un(REMOVED_FROM_GAME, ach(7944)),		-- Bottle Service (Season 2) **Comments on wowhead indicate this might still available in Legion, this needs to be tested.**
