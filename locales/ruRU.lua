@@ -817,7 +817,7 @@ for key,value in pairs({
 		[-917] = "2-й уровень: Тянущиеся нити",						-- Tier 2: Streaming Threads
 		[-918] = "3-й уровень: Текущая энергия",					-- Tier 3: Flowing Power
 		[-919] = "Ночная кобыла",									-- Night Mare
-		--TODO: [-977] = "Maelie the Wanderer",						-- Maelie the Wanderer
+		[-977] = "Маэли Странница",									-- Maelie the Wanderer
 		[-979] = "Брокер Ве'кен & Брокер Ве'нотт",					-- Broker Ve'ken & Broker Ve'nott
 		[-980] = "Общие Сокровища",									-- Shared Treasures
 

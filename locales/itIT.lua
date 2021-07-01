@@ -834,7 +834,7 @@ for key,value in pairs({
 		--TODO: [-917] = "Tier 2: Streaming Threads",				-- Tier 2: Streaming Threads
 		--TODO: [-918] = "Tier 3: Flowing Power",					-- Tier 3: Flowing Power
 		--TODO: [-919] = "Night Mare",								-- Night Mare
-		--TODO: [-977] = "Maelie the Wanderer",						-- Maelie the Wanderer
+		[-977] = "Maelie la Girovaga",								-- Maelie the Wanderer
 		[-979] = "Alienatore Ve'ken & Alienatore Ve'nott",			-- Broker Ve'ken & Broker Ve'nott
 		--TODO: [-980] = "Shared Treasures",						-- Shared Treasures
 
