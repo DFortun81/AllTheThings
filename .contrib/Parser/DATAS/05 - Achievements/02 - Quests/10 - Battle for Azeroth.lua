@@ -177,7 +177,7 @@ _.Achievements =
 				["_quests"] = { 52798 },	-- A Few More Charges
 			})),
 			a(ach(13251)),	-- In Teldrassil's Shadow
-			ach(13023, { 	-- It's Really Getting Out of Hand
+			ach(13023, {	-- It's Really Getting Out of Hand
 				["_quests"] = { 51127 },	-- Getting Out of Hand (A)
 			}),
 			a(ach(13060, {	-- Kul Runnings
@@ -310,7 +310,7 @@ _.Achievements =
 			ach(13011),		-- Scourge of Zem'lan
 			h(ach(12719, {	-- Spirits Be With You
 				crit(1),		-- The Fallen Chieftain
-				crit(2), 		-- Justice For The Fallen
+				crit(2),		-- Justice For The Fallen
 			})),
 			a(ach(13710, {	-- Sunken Ambitions
 				crit(1),		-- Welcome to Nazjatar

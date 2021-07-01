@@ -331,7 +331,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(94417),	-- Tyrannical Gladiator's Signet of Cruelty
 				},
 			}),
-			e(826, { 	-- Oondasta
+			e(826, {	-- Oondasta
 				["isWeekly"] = true,
 				["questID"] = 32519,
 				["isRaid"] = true,
@@ -411,7 +411,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(95163),	-- Ring of Shamuru
 				},
 			}),
-			e(861, { 	-- Ordos, Fire-God of the Yaungol
+			e(861, {	-- Ordos, Fire-God of the Yaungol
 				["sourceQuests"] = { 33104 },	-- A Pandaren Legend
 				["isWeekly"] = true,
 				["questID"] = 33118,
@@ -514,7 +514,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					un(38, i(105757)),	-- Shipley's Shady Silks
 				},
 			}),
-			e(725, { 	-- Saylis's Warband [Galleon]
+			e(725, {	-- Saylis's Warband [Galleon]
 				["isWeekly"] = true,
 				["questID"] = 32098,
 				["isRaid"] = true,
@@ -640,7 +640,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					i(90434),	-- Steaming Seal of Flame
 				},
 			}),
-			e(691, { 	-- Sha of Anger
+			e(691, {	-- Sha of Anger
 				["isWeekly"] = true,
 				["questID"] = 32099,
 				["isRaid"] = true,

@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(2, applyclassicphase(TBC_PHASE_FIVE, {	-- Burning Crusade
-	inst(752, { 	-- Sunwell Plateau
+	inst(752, {	-- Sunwell Plateau
 		["coord"] = { 44.28, 45.71, ISLE_OF_QUELDANAS },	-- Sunwell Plateau, Isle of Quel'Danas
 		["maps"] = {
 			SUNWELL_PLATEAU,

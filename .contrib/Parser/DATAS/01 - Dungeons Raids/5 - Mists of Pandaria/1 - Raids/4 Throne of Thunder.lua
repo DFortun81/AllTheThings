@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(5, {	-- Mists of Pandaria
-	inst(362, { 	-- Throne of Thunder
+	inst(362, {	-- Throne of Thunder
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 90,
@@ -166,7 +166,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 					69911,	-- Zandalari Warlord
 					69455,	-- Zandalari Water-Binder
 				},
-				["g"] =  {
+				["g"] = {
 					i(95202),	-- Necklace of the Terra-Cotta Archer
 					i(95203),	-- Necklace of the Terra-Cotta Invoker
 					i(95204),	-- Necklace of the Terra-Cotta Mender
@@ -278,7 +278,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						},
 						["g"] = {
 							cr(69465, e(827, {	-- Jin'rokh the Breaker
-								i(95343), 	-- Treasures of the Thunder King
+								i(95343),	-- Treasures of the Thunder King
 								i(95640),	-- Soulblade of the Breaking Storm
 								i(95632),	-- Worldbreaker's Stormscythe
 								i(95626),	-- Lightning-Eye Hood
@@ -301,7 +301,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								i(95625),	-- Renataki's Soul Charm
 							})),
 							cr(68476, e(819, {	-- Horridon
-								i(95343), 	-- Treasures of the Thunder King
+								i(95343),	-- Treasures of the Thunder King
 								i(94574),	-- Pygmy Direhorn (PET!)
 								i(95657),	-- Dinomancer's Spiritbinding Spire
 								i(95647),	-- Jalak's Maelstrom Staff
@@ -333,36 +333,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 									69078,	-- Sul the Sandrawler
 								},
 								["g"] = {
-									i(95856, {		-- Gauntlets of the Crackling Conqueror
-										i(95911),	-- Lightning Emperor's Gauntlets
-										i(95916),	-- Lightning Emperor's Gloves
-										i(95921),	-- Lightning Emperor's Handguards
-										i(95930),	-- Gloves of the Exorcist
-										i(95925),	-- Handwraps of the Exorcist
-										i(95981),	-- Gloves of the Thousandfold Hells
-									}),
-									i(95857, {		-- Gauntlets of the Crackling Protector
-										i(95883),	-- Saurok Stalker's Gloves
-										i(95906),	-- Fire-Charm Gauntlets
-										i(95896),	-- Fire-Charm Grips
-										i(95900),	-- Fire-Charm Handwraps
-										i(95951),	-- Gloves of the Witch Doctor
-										i(95946),	-- Grips of the Witch Doctor
-										i(95941),	-- Handwraps of the Witch Doctor
-										i(95988),	-- Gauntlets of the Last Mogu
-										i(95992),	-- Handguards of the Last Mogu
-									}),
-									i(95855, {		-- Gauntlets of the Crackling Vanquisher
-										i(95826),	-- Gauntlets of the All-Consuming Maw
-										i(95831),	-- Handguards of the All-Consuming Maw
-										i(95845),	-- Gloves of the Haunted Forest
-										i(95836),	-- Grips of the Haunted Forest
-										i(95851),	-- Handguards of the Haunted Forest
-										i(95840),	-- Handwraps of the Haunted Forest
-										i(95890),	-- Gloves of the Chromatic Hydra
-										i(95936),	-- Nine-Tailed Gloves
-									}),
-									i(95343), 	-- Treasures of the Thunder King
+									i(95856),		-- Gauntlets of the Crackling Conqueror
+									i(95857),		-- Gauntlets of the Crackling Protector
+									i(95855),		-- Gauntlets of the Crackling Vanquisher
+									i(95343),	-- Treasures of the Thunder King
 									i(95675),	-- Zerat, Malakk's Soulburning Greatsword
 									i(95670),	-- Amun-Thoth, Sul's Spiritrending Talons
 									i(95666),	-- Kura-Kura, Kazra'jin's Skullcleaver
@@ -389,7 +363,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								["description"] = "Must obtain 250 stacks of Spray Water from the geysers before Tortos.",
 							}),
 							cr(67977, e(825, {	-- Tortos
-								i(95343), 	-- Treasures of the Thunder King
+								i(95343),	-- Treasures of the Thunder King
 								i(95686),	-- Shellsplitter Greataxe
 								i(95678),	-- Shattered Tortoiseshell Longbow
 								i(95692),	-- Tortos' Discarded Shell
@@ -419,7 +393,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 									70247,	-- Venomous Head <Head of Megaera>
 								},
 								["g"] = {
-									i(95343), 	-- Treasures of the Thunder King
+									i(95343),	-- Treasures of the Thunder King
 									i(95698),	-- Megaera's Poisoned Fang
 									i(95710),	-- Fetish of the Hydra
 									i(95713),	-- Hood of Smoldering Flesh
@@ -448,36 +422,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								},
 							}),
 							cr(69712, e(828, {	-- Ji-Kun
-								i(95888, {	-- Leggings of the Crackling Conqueror
-									i(95913),	-- Lightning Emperor's Legplates
-									i(95918),	-- Lightning Emperor's Greaves
-									i(95923),	-- Lightning Emperor's Legguards
-									i(95927),	-- Legwraps of the Exorcist
-									i(95932),	-- Leggings of the Exorcist
-									i(95983),	-- Leggings of the Thousandfold Hells
-								}),
-								i(95889, {	-- Leggings of the Crackling Protector
-									i(95948),	-- Legguards of the Witch Doctor
-									i(95953),	-- Kilt of the Witch Doctor
-									i(95989),	-- Legplates of the Last Mogu
-									i(95994),	-- Legguards of the Last Mogu
-									i(95885),	-- Saurok Stalker's Legguards
-									i(95898),	-- Fire-Charm Leggings
-									i(95902),	-- Fire-Charm Legwraps
-									i(95908),	-- Fire-Charm Legguards
-									i(95943),	-- Legwraps of the Witch Doctor
-								}),
-								i(95887, {	-- Leggings of the Crackling Vanquisher
-									i(95892),	-- Leggings of the Chromatic Hydra
-									i(95938),	-- Nine-Tailed Legguards
-									i(95828),	-- Greaves of the All-Consuming Maw
-									i(95833),	-- Legguards of the All-Consuming Maw
-									i(95838),	-- Legguards of the Haunted Forest
-									i(95842),	-- Legwraps of the Haunted Forest
-									i(95847),	-- Leggings of the Haunted Forest
-									i(95853),	-- Breeches of the Haunted Forest
-								}),
-								i(95343), 	-- Treasures of the Thunder King
+								i(95888),	-- Leggings of the Crackling Conqueror
+								i(95889),	-- Leggings of the Crackling Protector
+								i(95887),	-- Leggings of the Crackling Vanquisher
+								i(95343),	-- Treasures of the Thunder King
 								i(94835),	-- Ji-Kun Hatchling (PET!)
 								i(95720),	-- Giorgio's Caduceus of Pure Moods
 								i(95723),	-- Crown of Potentiated Birth
@@ -499,7 +447,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						},
 						["g"] = {
 							cr(68036, e(818, {	-- Durumu the Forgotten
-								i(95343), 	-- Treasures of the Thunder King
+								i(95343),	-- Treasures of the Thunder King
 								i(95743),	-- Ritual Dagger of the Mind's Eye
 								i(95728),	-- Durumu's Baleful Gaze
 								i(95740),	-- Chilblain Spaulders
@@ -522,7 +470,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								i(95737),	-- Durumu's Severed Tentacle
 							})),
 							cr(69017, e(820, {	-- Primordius
-								i(95343), 	-- Treasures of the Thunder King
+								i(95343),	-- Treasures of the Thunder King
 								i(97959),	-- Quivering Blob (PET!)
 								i(97960),	-- Dark Quivering Blob
 								i(95758),	-- Acid-Spine Bonemace
@@ -552,36 +500,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 									69756,	-- Anima Orb
 								},
 								["g"] = {
-									i(95823, {	-- Chest of the Crackling Conqueror
-										i(95910),	-- Lightning Emperor's Battleplate
-										i(95915),	-- Lightning Emperor's Breastplate
-										i(95920),	-- Lightning Emperor's Chestguard
-										i(95933),	-- Raiment of the Exorcist
-										i(95928),	-- Robes of the Exorcist
-										i(95984),	-- Robes of the Thousandfold Hells
-									}),
-									i(95824, {	-- Chest of the Crackling Protector
-										i(95882),	-- Saurok Stalker's Tunic
-										i(95905),	-- Fire-Charm Chestguard
-										i(95895),	-- Fire-Charm Tunic
-										i(95903),	-- Fire-Charm Vest
-										i(95945),	-- Cuirass of the Witch Doctor
-										i(95950),	-- Hauberk of the Witch Doctor
-										i(95940),	-- Tunic of the Witch Doctor
-										i(95987),	-- Battleplate of the Last Mogu
-										i(95991),	-- Chestguard of the Last Mogu
-									}),
-									i(95822, {	-- Chest of the Crackling Vanquisher
-										i(95825),	-- Breastplate of the All-Consuming Maw
-										i(95830),	-- Chestguard of the All-Consuming Maw
-										i(95835),	-- Raiment of the Haunted Forest
-										i(95843),	-- Robes of the Haunted Forest
-										i(95850),	-- Tunic of the Haunted Forest
-										i(95848),	-- Vestment of the Haunted Forest
-										i(95893),	-- Robes of the Chromatic Hydra
-										i(95935),	-- Nine-Tailed Tunic
-									}),
-									i(95343), 	-- Treasures of the Thunder King
+									i(95823),	-- Chest of the Crackling Conqueror
+									i(95824),	-- Chest of the Crackling Protector
+									i(95822),	-- Chest of the Crackling Vanquisher
+									i(95343),	-- Treasures of the Thunder King
 									i(94152),	-- Son of Animus (PET!)
 									i(95774),	-- Athame of the Sanguine Ritual
 									i(95770),	-- Hand of the Dark Animus
@@ -611,36 +533,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 									68079,	-- Ro'shak <The Molten Flare>
 								},
 								["g"] = {
-									i(95956, {	-- Shoulders of the Crackling Conqueror
-										i(95919),	-- Lightning Emperor's Mantle
-										i(95914),	-- Lightning Emperor's Pauldrons
-										i(95924),	-- Lightning Emperor's Shoulderguards
-										i(95929),	-- Mantle of the Exorcist
-										i(95934),	-- Shoulderguards of the Exorcist
-										i(95985),	-- Mantle of the Thousandfold Hells
-									}),
-									i(95957, {	-- Shoulders of the Crackling Protector
-										i(95886),	-- Saurok Stalker's Spaulders
-										i(95904),	-- Fire-Charm Mantle
-										i(95909),	-- Fire-Charm Shoulderguards
-										i(95899),	-- Fire-Charm Spaulders
-										i(95944),	-- Mantle of the Witch Doctor
-										i(95954),	-- Shoulderwraps of the Witch Doctor
-										i(95949),	-- Spaulders of the Witch Doctor
-										i(95990),	-- Pauldrons of the Last Mogu
-										i(95995),	-- Shoulderguards of the Last Mogu
-									}),
-									i(95955, {	-- Shoulders of the Crackling Vanquisher
-										i(95829),	-- Pauldrons of the All-Consuming Maw
-										i(95834),	-- Shoulderguards of the All-Consuming Maw
-										i(95844),	-- Mantle of the Haunted Forest
-										i(95854),	-- Shoulderguards of the Haunted Forest
-										i(95849),	-- Shoulderwraps of the Haunted Forest
-										i(95839),	-- Spaulders of the Haunted Forest
-										i(95894),	-- Mantle of the Chromatic Hydra
-										i(95939),	-- Nine-Tailed Spaulders
-									}),
-									i(95343), 	-- Treasures of the Thunder King
+									i(95956),	-- Shoulders of the Crackling Conqueror
+									i(95957),	-- Shoulders of the Crackling Protector
+									i(95955),	-- Shoulders of the Crackling Vanquisher
+									i(95343),	-- Treasures of the Thunder King
 									i(95780),	-- Iron Qon's Boot Knife
 									i(95790),	-- Qon's Flaming Scimitar
 									i(95781),	-- Voice of the Quilen
@@ -660,36 +556,10 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 									68905,	-- Lu'lin <Mistress of Solitude>
 								},
 								["g"] = {
-									i(95880, {	-- Helm of the Crackling Conqueror
-										i(95922),	-- Lightning Emperor's Faceguard
-										i(95917),	-- Lightning Emperor's Headguard
-										i(95912),	-- Lightning Emperor's Helmet
-										i(95926),	-- Cowl of the Exorcist
-										i(95931),	-- Hood of the Exorcist
-										i(95982),	-- Hood of the Thousandfold Hells
-									}),
-									i(95881, {	-- Helm of the Crackling Protector
-										i(95884),	-- Saurok Stalker's Headguard
-										i(95907),	-- Fire-Charm Crown
-										i(95897),	-- Fire-Charm Headpiece
-										i(95901),	-- Fire-Charm Helm
-										i(95942),	-- Faceguard of the Witch Doctor
-										i(95952),	-- Headpiece of the Witch Doctor
-										i(95947),	-- Helmet of the Witch Doctor
-										i(95993),	-- Faceguard of the Last Mogu
-										i(95986),	-- Helmet of the Last Mogu
-									}),
-									i(95879, {	-- Helm of the Crackling Vanquisher
-										i(95832),	-- Faceguard of the All-Consuming Maw
-										i(95827),	-- Helmet of the All-Consuming Maw
-										i(95846),	-- Cover of the Haunted Forest
-										i(95852),	-- Headguard of the Haunted Forest
-										i(95837),	-- Headpiece of the Haunted Forest
-										i(95841),	-- Helm of the Haunted Forest
-										i(95891),	-- Hood of the Chromatic Hydra
-										i(95937),	-- Nine-Tailed Helmet
-									}),
-									i(95343), 	-- Treasures of the Thunder King
+									i(95880),	-- Helm of the Crackling Conqueror
+									i(95881),	-- Helm of the Crackling Protector
+									i(95879),	-- Helm of the Crackling Vanquisher
+									i(95343),	-- Treasures of the Thunder King
 									i(95795),	-- Suen-Wo, Spire of the Falling Sun
 									i(95791),	-- Wu-Lai, Bladed Fan of the Consorts
 									i(95794),	-- Shield of Twinned Despair
@@ -704,7 +574,7 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								},
 							})),
 							cr(68397, e(832, {	-- Lei Shen
-								i(95343), 	-- Treasures of the Thunder King
+								i(95343),	-- Treasures of the Thunder King
 								i(95803),	-- Shan-Dun, Breaker of Hope
 								i(95809),	-- Uroe, Harbinger of Terror
 								i(95815),	-- Torall, Rod of the Shattered Throne
@@ -916,35 +786,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						},
 						["g"] = {
 							ach(8073),	-- Cage Match
-							i(95575, {	-- Gauntlets of the Crackling Conqueror
-								i(95281),	-- Lightning Emperor's Gauntlets
-								i(95286),	-- Lightning Emperor's Gloves
-								i(95291),	-- Lightning Emperor's Handguards
-								i(95300),	-- Gloves of the Exorcist
-								i(95295),	-- Handwraps of the Exorcist
-								i(95325),	-- Gloves of the Thousandfold Hells
-							}),
-							i(95580, {	-- Gauntlets of the Crackling Protector
-								i(95256),	-- Saurok Stalker's Gloves
-								i(95276),	-- Fire-Charm Gauntlets
-								i(95266),	-- Fire-Charm Grips
-								i(95270),	-- Fire-Charm Handwraps
-								i(95321),	-- Gloves of the Witch Doctor
-								i(95316),	-- Grips of the Witch Doctor
-								i(95311),	-- Handwraps of the Witch Doctor
-								i(95332),	-- Gauntlets of the Last Mogu
-								i(95336),	-- Handguards of the Last Mogu
-							}),
-							i(95570, {	-- Gauntlets of the Crackling Vanquisher
-								i(95226),	-- Gauntlets of the All-Consuming Maw
-								i(95231),	-- Handguards of the All-Consuming Maw
-								i(95245),	-- Gloves of the Haunted Forest
-								i(95236),	-- Grips of the Haunted Forest
-								i(95251),	-- Handguards of the Haunted Forest
-								i(95240),	-- Handwraps of the Haunted Forest
-								i(95260),	-- Gloves of the Chromatic Hydra
-								i(95306),	-- Nine-Tailed Gloves
-							}),
+							i(95575),	-- Gauntlets of the Crackling Conqueror
+							i(95580),	-- Gauntlets of the Crackling Protector
+							i(95570),	-- Gauntlets of the Crackling Vanquisher
 							i(94758),	-- Zerat, Malakk's Soulburning Greatsword
 							i(94760),	-- Amun-Thoth, Sul's Spiritrending Talons
 							i(94759),	-- Kura-Kura, Kazra'jin's Skullcleaver
@@ -1085,35 +929,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						ach(8097),	-- Soft Hands
 						i(95059),	-- Clutch of Ji-Kun (MOUNT!)
 						i(94835),	-- Ji-Kun Hatchling (PET!)
-						i(95576, {	-- Leggings of the Crackling Conqueror
-							i(95288),	-- Lightning Emperor's Greaves
-							i(95293),	-- Lightning Emperor's Legguards
-							i(95283),	-- Lightning Emperor's Legplates
-							i(95302),	-- Leggings of the Exorcist
-							i(95297),	-- Legwraps of the Exorcist
-							i(95327),	-- Leggings of the Thousandfold Hells
-						}),
-						i(95581, {	-- Leggings of the Crackling Protector
-							i(95258),	-- Saurok Stalker's Legguards
-							i(95268),	-- Fire-Charm Leggings
-							i(95278),	-- Fire-Charm Legguards
-							i(95272),	-- Fire-Charm Legwraps
-							i(95323),	-- Kilt of the Witch Doctor
-							i(95318),	-- Legguards of the Witch Doctor
-							i(95313),	-- Legwraps of the Witch Doctor
-							i(95338),	-- Legguards of the Last Mogu
-							i(95333),	-- Legplates of the Last Mogu
-						}),
-						i(95572, {	-- Leggings of the Crackling Vanquisher
-							i(95228),	-- Greaves of the All-Consuming Maw
-							i(95233),	-- Legguards of the All-Consuming Maw
-							i(95253),	-- Breeches of the Haunted Forest
-							i(95247),	-- Leggings of the Haunted Forest
-							i(95238),	-- Legguards of the Haunted Forest
-							i(95242),	-- Legwraps of the Haunted Forest
-							i(95262),	-- Leggings of the Chromatic Hydra
-							i(95308),	-- Nine-Tailed Legguards
-						}),
+						i(95576),	-- Leggings of the Crackling Conqueror
+						i(95581),	-- Leggings of the Crackling Protector
+						i(95572),	-- Leggings of the Crackling Vanquisher
 						i(94805),	-- Giorgio's Caduceus of Pure Moods
 						i(94809),	-- Crown of Potentiated Birth
 						i(94812),	-- Pinionfeather Greatcloak
@@ -1238,35 +1056,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						},
 						["g"] = {
 							ach(8081),	-- Ritualist Who?
-							i(95574, {	-- Chest of the Crackling Conqueror
-								i(95280),	-- Lightning Emperor's Battleplate
-								i(95285),	-- Lightning Emperor's Breastplate
-								i(95290),	-- Lightning Emperor's Chestguard
-								i(95303),	-- Raiment of the Exorcist
-								i(95298),	-- Robes of the Exorcist
-								i(95328),	-- Robes of the Thousandfold Hells
-							}),
-							i(95579, {	-- Chest of the Crackling Protector
-								i(95255),	-- Saurok Stalker's Tunic
-								i(95275),	-- Fire-Charm Chestguard
-								i(95265),	-- Fire-Charm Tunic
-								i(95273),	-- Fire-Charm Vest
-								i(95315),	-- Cuirass of the Witch Doctor
-								i(95320),	-- Hauberk of the Witch Doctor
-								i(95310),	-- Tunic of the Witch Doctor
-								i(95331),	-- Battleplate of the Last Mogu
-								i(95335),	-- Chestguard of the Last Mogu
-							}),
-							i(95569, {	-- Chest of the Crackling Vanquisher
-								i(95225),	-- Breastplate of the All-Consuming Maw
-								i(95230),	-- Chestguard of the All-Consuming Maw
-								i(95235),	-- Raiment of the Haunted Forest
-								i(95243),	-- Robes of the Haunted Forest
-								i(95250),	-- Tunic of the Haunted Forest
-								i(95248),	-- Vestment of the Haunted Forest
-								i(95263),	-- Robes of the Chromatic Hydra
-								i(95305),	-- Nine-Tailed Tunic
-							}),
+							i(95574),	-- Chest of the Crackling Conqueror
+							i(95579),	-- Chest of the Crackling Protector
+							i(95569),	-- Chest of the Crackling Vanquisher
 							i(94152),	-- Son of Animus (PET!)
 							i(94955),	-- Athame of the Sanguine Ritual
 							i(94954),	-- Hand of the Dark Animus
@@ -1303,35 +1095,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						},
 						["g"] = {
 							ach(8087),	-- Can't Touch This
-							i(95578, {	-- Shoulders of the Crackling Conqueror
-								i(95289),	-- Lightning Emperor's Mantle
-								i(95284),	-- Lightning Emperor's Pauldrons
-								i(95294),	-- Lightning Emperor's Shoulderguards
-								i(95299),	-- Mantle of the Exorcist
-								i(95304),	-- Shoulderguards of the Exorcist
-								i(95329),	-- Mantle of the Thousandfold Hells
-							}),
-							i(95583, {	-- Shoulders of the Crackling Protector
-								i(95259),	-- Saurok Stalker's Spaulders
-								i(95274),	-- Fire-Charm Mantle
-								i(95279),	-- Fire-Charm Shoulderguards
-								i(95269),	-- Fire-Charm Spaulders
-								i(95314),	-- Mantle of the Witch Doctor
-								i(95324),	-- Shoulderwraps of the Witch Doctor
-								i(95319),	-- Spaulders of the Witch Doctor
-								i(95334),	-- Pauldrons of the Last Mogu
-								i(95339),	-- Shoulderguards of the Last Mogu
-							}),
-							i(95573, {	-- Shoulders of the Crackling Vanquisher
-								i(95229),	-- Pauldrons of the All-Consuming Maw
-								i(95234),	-- Shoulderguards of the All-Consuming Maw
-								i(95244),	-- Mantle of the Haunted Forest
-								i(95254),	-- Shoulderguards of the Haunted Forest
-								i(95249),	-- Shoulderwraps of the Haunted Forest
-								i(95239),	-- Spaulders of the Haunted Forest
-								i(95264),	-- Mantle of the Chromatic Hydra
-								i(95309),	-- Nine-Tailed Spaulders
-							}),
+							i(95578),	-- Shoulders of the Crackling Conqueror
+							i(95583),	-- Shoulders of the Crackling Protector
+							i(95573),	-- Shoulders of the Crackling Vanquisher
 							i(94971),	-- Iron Qon's Boot Knife
 							i(94964),	-- Qon's Flaming Scimitar
 							i(94963),	-- Voice of the Quilen
@@ -1367,35 +1133,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 							{	-- From Dusk 'til Dawn
 								["achievementID"] = 8086,	-- From Dusk 'til Dawn
 							},
-							i(95577, {	-- Helm of the Crackling Conqueror
-								i(95292),	-- Lightning Emperor's Faceguard
-								i(95287),	-- Lightning Emperor's Headguard
-								i(95282),	-- Lightning Emperor's Helmet
-								i(95296),	-- Cowl of the Exorcist
-								i(95301),	-- Hood of the Exorcist
-								i(95326),	-- Hood of the Thousandfold Hells
-							}),
-							i(95582, {	-- Helm of the Crackling Protector
-								i(95257),	-- Saurok Stalker's Headguard
-								i(95277),	-- Fire-Charm Crown
-								i(95267),	-- Fire-Charm Headpiece
-								i(95271),	-- Fire-Charm Helm
-								i(95312),	-- Faceguard of the Witch Doctor
-								i(95322),	-- Headpiece of the Witch Doctor
-								i(95317),	-- Helmet of the Witch Doctor
-								i(95337),	-- Faceguard of the Last Mogu
-								i(95330),	-- Helmet of the Last Mogu
-							}),
-							i(95571, {	-- Helm of the Crackling Vanquisher
-								i(95232),	-- Faceguard of the All-Consuming Maw
-								i(95227),	-- Helmet of the All-Consuming Maw
-								i(95246),	-- Cover of the Haunted Forest
-								i(95252),	-- Headguard of the Haunted Forest
-								i(95237),	-- Headpiece of the Haunted Forest
-								i(95241),	-- Helm of the Haunted Forest
-								i(95261),	-- Hood of the Chromatic Hydra
-								i(95307),	-- Nine-Tailed Helmet
-							}),
+							i(95577),	-- Helm of the Crackling Conqueror
+							i(95582),	-- Helm of the Crackling Protector
+							i(95571),	-- Helm of the Crackling Vanquisher
 							i(94974),	-- Suen-Wo, Spire of the Falling Sun
 							i(94973),	-- Wu-Lai, Bladed Fan of the Consorts
 							i(95515),	-- Shield of Twinned Despair
@@ -1659,35 +1399,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						["g"] = {
 							ach(8073),	-- Cage Match
 							ach(8058),	-- Heroic: Council of Elders
-							i(96600, {	-- Gauntlets of the Crackling Conqueror
-								i(96655),	-- Lightning Emperor's Gauntlets
-								i(96660),	-- Lightning Emperor's Gloves
-								i(96665),	-- Lightning Emperor's Handguards
-								i(96674),	-- Gloves of the Exorcist
-								i(96669),	-- Handwraps of the Exorcist
-								i(96725),	-- Gloves of the Thousandfold Hells
-							}),
-							i(96601, {	-- Gauntlets of the Crackling Protector
-								i(96627),	-- Saurok Stalker's Gloves
-								i(96650),	-- Fire-Charm Gauntlets
-								i(96640),	-- Fire-Charm Grips
-								i(96644),	-- Fire-Charm Handwraps
-								i(96695),	-- Gloves of the Witch Doctor
-								i(96690),	-- Grips of the Witch Doctor
-								i(96685),	-- Handwraps of the Witch Doctor
-								i(96732),	-- Gauntlets of the Last Mogu
-								i(96736),	-- Handguards of the Last Mogu
-							}),
-							i(96599, {	-- Gauntlets of the Crackling Vanquisher
-								i(96570),	-- Gauntlets of the All-Consuming Maw
-								i(96575),	-- Handguards of the All-Consuming Maw
-								i(96589),	-- Gloves of the Haunted Forest
-								i(96580),	-- Grips of the Haunted Forest
-								i(96595),	-- Handguards of the Haunted Forest
-								i(96584),	-- Handwraps of the Haunted Forest
-								i(96634),	-- Gloves of the Chromatic Hydra
-								i(96680),	-- Nine-Tailed Gloves
-							}),
+							i(96600),	-- Gauntlets of the Crackling Conqueror
+							i(96601),	-- Gauntlets of the Crackling Protector
+							i(96599),	-- Gauntlets of the Crackling Vanquisher
 							i(96419),	-- Zerat, Malakk's Soulburning Greatsword
 							i(96414),	-- Amun-Thoth, Sul's Spiritrending Talons
 							i(96410),	-- Kura-Kura, Kazra'jin's Skullcleaver
@@ -1830,35 +1544,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						ach(8097),	-- Soft Hands
 						i(95059),	-- Clutch of Ji-Kun (MOUNT!)
 						i(94835),	-- Ji-Kun Hatchling (PET!)
-						i(96632, {	-- Leggings of the Crackling Conqueror
-							i(96662),	-- Lightning Emperor's Greaves
-							i(96667),	-- Lightning Emperor's Legguards
-							i(96657),	-- Lightning Emperor's Legplates
-							i(96676),	-- Leggings of the Exorcist
-							i(96671),	-- Legwraps of the Exorcist
-							i(96727),	-- Leggings of the Thousandfold Hells
-						}),
-						i(96633, {	-- Leggings of the Crackling Protector
-							i(96629),	-- Saurok Stalker's Legguards
-							i(96642),	-- Fire-Charm Leggings
-							i(96652),	-- Fire-Charm Legguards
-							i(96646),	-- Fire-Charm Legwraps
-							i(96697),	-- Kilt of the Witch Doctor
-							i(96692),	-- Legguards of the Witch Doctor
-							i(96687),	-- Legwraps of the Witch Doctor
-							i(96738),	-- Legguards of the Last Mogu
-							i(96733),	-- Legplates of the Last Mogu
-						}),
-						i(96631, {	-- Leggings of the Crackling Vanquisher
-							i(96572),	-- Greaves of the All-Consuming Maw
-							i(96577),	-- Legguards of the All-Consuming Maw
-							i(96597),	-- Breeches of the Haunted Forest
-							i(96591),	-- Leggings of the Haunted Forest
-							i(96582),	-- Legguards of the Haunted Forest
-							i(96586),	-- Legwraps of the Haunted Forest
-							i(96636),	-- Leggings of the Chromatic Hydra
-							i(96682),	-- Nine-Tailed Leggings
-						}),
+						i(96632),	-- Leggings of the Crackling Conqueror
+						i(96633),	-- Leggings of the Crackling Protector
+						i(96631),	-- Leggings of the Crackling Vanquisher
 						i(96464),	-- Giorgio's Caduceus of Pure Moods
 						i(96467),	-- Crown of Potentiated Birth
 						i(96461),	-- Pinionfeather Greatcloak
@@ -1986,35 +1674,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						["g"] = {
 							ach(8064),	-- Heroic: Dark Animus
 							ach(8081),	-- Ritualist Who?
-							i(96567, {	-- Chest of the Crackling Conqueror
-								i(96654),	-- Lightning Emperor's Battleplate
-								i(96659),	-- Lightning Emperor's Breastplate
-								i(96664),	-- Lightning Emperor's Chestguard
-								i(96677),	-- Raiment of the Exorcist
-								i(96672),	-- Robes of the Exorcist
-								i(96728),	-- Robes of the Thousandfold Hells
-							}),
-							i(96568, {	-- Chest of the Crackling Protector
-								i(96626),	-- Saurok Stalker's Tunic
-								i(96649),	-- Fire-Charm Chestguard
-								i(96639),	-- Fire-Charm Tunic
-								i(96647),	-- Fire-Charm Vest
-								i(96689),	-- Cuirass of the Witch Doctor
-								i(96694),	-- Hauberk of the Witch Doctor
-								i(96684),	-- Tunic of the Witch Doctor
-								i(96731),	-- Battleplate of the Last Mogu
-								i(96735),	-- Chestguard of the Last Mogu
-							}),
-							i(96566, {	-- Chest of the Crackling Vanquisher
-								i(96569),	-- Breastplate of the All-Consuming Maw
-								i(96574),	-- Chestguard of the All-Consuming Maw
-								i(96579),	-- Raiment of the Haunted Forest
-								i(96587),	-- Robes of the Haunted Forest
-								i(96594),	-- Tunic of the Haunted Forest
-								i(96592),	-- Vestment of the Haunted Forest
-								i(96637),	-- Robes of the Chromatic Hydra
-								i(96679),	-- Nine-Tailed Tunic
-							}),
+							i(96567),	-- Chest of the Crackling Conqueror
+							i(96568),	-- Chest of the Crackling Protector
+							i(96566),	-- Chest of the Crackling Vanquisher
 							i(94152),	-- Son of Animus (PET!)
 							i(96518),	-- Athame of the Sanguine Ritual
 							i(96514),	-- Hand of the Dark Animus
@@ -2052,35 +1714,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						["g"] = {
 							ach(8087),	-- Can't Touch This
 							ach(8065),	-- Heroic: Iron Qon
-							i(96700, {	-- Shoulders of the Crackling Conqueror
-								i(96663),	-- Lightning Emperor's Mantle
-								i(96658),	-- Lightning Emperor's Pauldrons
-								i(96668),	-- Lightning Emperor's Shoulderguards
-								i(96673),	-- Mantle of the Exorcist
-								i(96678),	-- Shoulderguards of the Exorcist
-								i(96729),	-- Mantle of the Thousandfold Hells
-							}),
-							i(96701, {	-- Shoulders of the Crackling Protector
-								i(96630),	-- Saurok Stalker's Spaulders
-								i(96648),	-- Fire-Charm Mantle
-								i(96653),	-- Fire-Charm Shoulderguards
-								i(96643),	-- Fire-Charm Spaulders
-								i(96688),	-- Mantle of the Witch Doctor
-								i(96698),	-- Shoulderwraps of the Witch Doctor
-								i(96693),	-- Spaulders of the Witch Doctor
-								i(96734),	-- Pauldrons of the Last Mogu
-								i(96739),	-- Shoulderguards of the Last Mogu
-							}),
-							i(96699, {	-- Shoulders of the Crackling Vanquisher
-								i(96573),	-- Pauldrons of the All-Consuming Maw
-								i(96578),	-- Shoulderguards of the All-Consuming Maw
-								i(96588),	-- Mantle of the Haunted Forest
-								i(96598),	-- Shoulderguards of the Haunted Forest
-								i(96593),	-- Shoulderwraps of the Haunted Forest
-								i(96583),	-- Spaulders of the Haunted Forest
-								i(96638),	-- Mantle of the Chromatic Hydra
-								i(96683),	-- Nine-Tailed Spaulders
-							}),
+							i(96700),	-- Shoulders of the Crackling Conqueror
+							i(96701),	-- Shoulders of the Crackling Protector
+							i(96699),	-- Shoulders of the Crackling Vanquisher
 							i(96524),	-- Iron Qon's Boot Knife
 							i(96534),	-- Qon's Flaming Scimitar
 							i(96525),	-- Voice of the Quilen
@@ -2117,35 +1753,9 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 								["achievementID"] = 8086,	-- From Dusk 'til Dawn
 							},
 							ach(8066),	-- Heroic: Twin Consorts
-							i(96624, {	-- Helm of the Crackling Conqueror
-								i(96666),	-- Lightning Emperor's Faceguard
-								i(96661),	-- Lightning Emperor's Headguard
-								i(96656),	-- Lightning Emperor's Helmet
-								i(96670),	-- Cowl of the Exorcist
-								i(96675),	-- Hood of the Exorcist
-								i(96726),	-- Hood of the Thousandfold Hells
-							}),
-							i(96625, {	-- Helm of the Crackling Protector
-								i(96628),	-- Saurok Stalker's Headguard
-								i(96651),	-- Fire-Charm Crown
-								i(96641),	-- Fire-Charm Headpiece
-								i(96645),	-- Fire-Charm Helm
-								i(96686),	-- Faceguard of the Witch Doctor
-								i(96696),	-- Headpiece of the Witch Doctor
-								i(96691),	-- Helmet of the Witch Doctor
-								i(96737),	-- Faceguard of the Last Mogu
-								i(96730),	-- Helmet of the Last Mogu
-							}),
-							i(96623, {	-- Helm of the Crackling Vanquisher
-								i(96576),	-- Faceguard of the All-Consuming Maw
-								i(96571),	-- Helmet of the All-Consuming Maw
-								i(96590),	-- Cover of the Haunted Forest
-								i(96596),	-- Headguard of the Haunted Forest
-								i(96581),	-- Headpiece of the Haunted Forest
-								i(96585),	-- Helm of the Haunted Forest
-								i(96635),	-- Hood of the Chromatic Hydra
-								i(96681),	-- Nine-Tailed Helmet
-							}),
+							i(96624),	-- Helm of the Crackling Conqueror
+							i(96625),	-- Helm of the Crackling Protector
+							i(96623),	-- Helm of the Crackling Vanquisher
 							i(96539),	-- Suen-Wo, Spire of the Falling Sun
 							i(96535),	-- Wu-Lai, Bladed Fan of the Consorts
 							i(96538),	-- Shield of Twinned Despair
@@ -2282,3 +1892,317 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 		},
 	}),
 })};
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10041, {
+		inst(362, {
+			-- T15 Thunderforged & Heroic Thunderforged (Throne of Thunder)
+			cl(DEATHKNIGHT, {
+				i(96941),	-- Breastplate of the All-Consuming Maw
+				i(96942),	-- Gauntlets of the All-Consuming Maw
+				i(96943),	-- Helmet of the All-Consuming Maw
+				i(96944),	-- Greaves of the All-Consuming Maw
+				i(96945),	-- Pauldrons of the All-Consuming Maw
+				i(96946),	-- Chestguard of the All-Consuming Maw
+				i(96947),	-- Handguards of the All-Consuming Maw
+				i(96948),	-- Faceguard of the All-Consuming Maw
+				i(96949),	-- Legguards of the All-Consuming Maw
+				i(96950),	-- Shoulderguards of the All-Consuming Maw
+				i(96197),	-- Breastplate of the All-Consuming Maw
+				i(96198),	-- Gauntlets of the All-Consuming Maw
+				i(96199),	-- Helmet of the All-Consuming Maw
+				i(96200),	-- Greaves of the All-Consuming Maw
+				i(96201),	-- Pauldrons of the All-Consuming Maw
+				i(96202),	-- Chestguard of the All-Consuming Maw
+				i(96203),	-- Handguards of the All-Consuming Maw
+				i(96204),	-- Faceguard of the All-Consuming Maw
+				i(96205),	-- Legguards of the All-Consuming Maw
+				i(96206),	-- Shoulderguards of the All-Consuming Maw
+			}),
+			cl(DRUID, {
+				i(96951),	-- Raiment of the Haunted Forest
+				i(96952),	-- Grips of the Haunted Forest
+				i(96953),	-- Headpiece of the Haunted Forest
+				i(96954),	-- Legguards of the Haunted Forest
+				i(96955),	-- Spaulders of the Haunted Forest
+				i(96956),	-- Handwraps of the Haunted Forest
+				i(96957),	-- Helm of the Haunted Forest
+				i(96958),	-- Legwraps of the Haunted Forest
+				i(96959),	-- Robes of the Haunted Forest
+				i(96960),	-- Mantle of the Haunted Forest
+				i(96961),	-- Gloves of the Haunted Forest
+				i(96962),	-- Cover of the Haunted Forest
+				i(96963),	-- Leggings of the Haunted Forest
+				i(96964),	-- Vestment of the Haunted Forest
+				i(96965),	-- Shoulderwraps of the Haunted Forest
+				i(96966),	-- Tunic of the Haunted Forest
+				i(96967),	-- Handguards of the Haunted Forest
+				i(96968),	-- Headguard of the Haunted Forest
+				i(96969),	-- Breeches of the Haunted Forest
+				i(96970),	-- Shoulderguards of the Haunted Forest
+				i(96207),	-- Raiment of the Haunted Forest
+				i(96208),	-- Grips of the Haunted Forest
+				i(96209),	-- Headpiece of the Haunted Forest
+				i(96210),	-- Legguards of the Haunted Forest
+				i(96211),	-- Spaulders of the Haunted Forest
+				i(96212),	-- Handwraps of the Haunted Forest
+				i(96213),	-- Helm of the Haunted Forest
+				i(96214),	-- Legwraps of the Haunted Forest
+				i(96215),	-- Robes of the Haunted Forest
+				i(96216),	-- Mantle of the Haunted Forest
+				i(96217),	-- Gloves of the Haunted Forest
+				i(96218),	-- Cover of the Haunted Forest
+				i(96219),	-- Leggings of the Haunted Forest
+				i(96220),	-- Vestment of the Haunted Forest
+				i(96221),	-- Shoulderwraps of the Haunted Forest
+				i(96222),	-- Tunic of the Haunted Forest
+				i(96223),	-- Handguards of the Haunted Forest
+				i(96224),	-- Headguard of the Haunted Forest
+				i(96225),	-- Breeches of the Haunted Forest
+				i(96226),	-- Shoulderguards of the Haunted Forest
+			}),
+			cl(HUNTER, {
+				i(96998),	-- Saurok Stalker's Tunic
+				i(96999),	-- Saurok Stalker's Gloves
+				i(97000),	-- Saurok Stalker's Headguard
+				i(97001),	-- Saurok Stalker's Legguards
+				i(97002),	-- Saurok Stalker's Spaulders
+				i(96254),	-- Saurok Stalker's Tunic
+				i(96255),	-- Saurok Stalker's Gloves
+				i(96256),	-- Saurok Stalker's Headguard
+				i(96257),	-- Saurok Stalker's Legguards
+				i(96258),	-- Saurok Stalker's Spaulders
+			}),
+			cl(MAGE, {
+				i(97006),	-- Gloves of the Chromatic Hydra
+				i(97007),	-- Hood of the Chromatic Hydra
+				i(97008),	-- Leggings of the Chromatic Hydra
+				i(97009),	-- Robes of the Chromatic Hydra
+				i(97010),	-- Mantle of the Chromatic Hydra
+				i(96262),	-- Gloves of the Chromatic Hydra
+				i(96263),	-- Hood of the Chromatic Hydra
+				i(96264),	-- Leggings of the Chromatic Hydra
+				i(96265),	-- Robes of the Chromatic Hydra
+				i(96266),	-- Mantle of the Chromatic Hydra
+			}),
+			cl(MONK, {
+				i(97011),	-- Fire-Charm Tunic
+				i(97012),	-- Fire-Charm Grips
+				i(97013),	-- Fire-Charm Headpiece
+				i(97014),	-- Fire-Charm Leggings
+				i(97015),	-- Fire-Charm Spaulders
+				i(97016),	-- Fire-Charm Handwraps
+				i(97017),	-- Fire-Charm Helm
+				i(97018),	-- Fire-Charm Legwraps
+				i(97019),	-- Fire-Charm Vest
+				i(97020),	-- Fire-Charm Mantle
+				i(97021),	-- Fire-Charm Chestguard
+				i(97022),	-- Fire-Charm Gauntlets
+				i(97023),	-- Fire-Charm Crown
+				i(97024),	-- Fire-Charm Legguards
+				i(97025),	-- Fire-Charm Shoulderguards
+				i(96267),	-- Fire-Charm Tunic
+				i(96268),	-- Fire-Charm Grips
+				i(96269),	-- Fire-Charm Headpiece
+				i(96270),	-- Fire-Charm Leggings
+				i(96271),	-- Fire-Charm Spaulders
+				i(96272),	-- Fire-Charm Handwraps
+				i(96273),	-- Fire-Charm Helm
+				i(96274),	-- Fire-Charm Legwraps
+				i(96275),	-- Fire-Charm Vest
+				i(96276),	-- Fire-Charm Mantle
+				i(96277),	-- Fire-Charm Chestguard
+				i(96278),	-- Fire-Charm Gauntlets
+				i(96279),	-- Fire-Charm Crown
+				i(96280),	-- Fire-Charm Legguards
+				i(96281),	-- Fire-Charm Shoulderguards
+			}),
+			cl(PALADIN, {
+				i(97026),	-- Lightning Emperor's Battleplate
+				i(97027),	-- Lightning Emperor's Gauntlets
+				i(97028),	-- Lightning Emperor's Helmet
+				i(97029),	-- Lightning Emperor's Legplates
+				i(97030),	-- Lightning Emperor's Pauldrons
+				i(97031),	-- Lightning Emperor's Breastplate
+				i(97032),	-- Lightning Emperor's Gloves
+				i(97033),	-- Lightning Emperor's Headguard
+				i(97034),	-- Lightning Emperor's Greaves
+				i(97035),	-- Lightning Emperor's Mantle
+				i(97036),	-- Lightning Emperor's Chestguard
+				i(97037),	-- Lightning Emperor's Handguards
+				i(97038),	-- Lightning Emperor's Faceguard
+				i(97039),	-- Lightning Emperor's Legguards
+				i(97040),	-- Lightning Emperor's Shoulderguards
+				i(96282),	-- Lightning Emperor's Battleplate
+				i(96283),	-- Lightning Emperor's Gauntlets
+				i(96284),	-- Lightning Emperor's Helmet
+				i(96285),	-- Lightning Emperor's Legplates
+				i(96286),	-- Lightning Emperor's Pauldrons
+				i(96287),	-- Lightning Emperor's Breastplate
+				i(96288),	-- Lightning Emperor's Gloves
+				i(96289),	-- Lightning Emperor's Headguard
+				i(96290),	-- Lightning Emperor's Greaves
+				i(96291),	-- Lightning Emperor's Mantle
+				i(96292),	-- Lightning Emperor's Chestguard
+				i(96293),	-- Lightning Emperor's Handguards
+				i(96294),	-- Lightning Emperor's Faceguard
+				i(96295),	-- Lightning Emperor's Legguards
+				i(96296),	-- Lightning Emperor's Shoulderguards
+			}),
+			cl(PRIEST, {
+				i(97041),	-- Handwraps of the Exorcist
+				i(97042),	-- Cowl of the Exorcist
+				i(97043),	-- Legwraps of the Exorcist
+				i(97044),	-- Robes of the Exorcist
+				i(97045),	-- Mantle of the Exorcist
+				i(97046),	-- Gloves of the Exorcist
+				i(97047),	-- Hood of the Exorcist
+				i(97048),	-- Leggings of the Exorcist
+				i(97049),	-- Raiment of the Exorcist
+				i(97050),	-- Shoulderguards of the Exorcist
+				i(96297),	-- Handwraps of the Exorcist
+				i(96298),	-- Cowl of the Exorcist
+				i(96299),	-- Legwraps of the Exorcist
+				i(96300),	-- Robes of the Exorcist
+				i(96301),	-- Mantle of the Exorcist
+				i(96302),	-- Gloves of the Exorcist
+				i(96303),	-- Hood of the Exorcist
+				i(96304),	-- Leggings of the Exorcist
+				i(96305),	-- Raiment of the Exorcist
+				i(96306),	-- Shoulderguards of the Exorcist
+			}),
+			cl(ROGUE, {
+				i(97051),	-- Nine-Tailed Tunic
+				i(97052),	-- Nine-Tailed Gloves
+				i(97053),	-- Nine-Tailed Helmet
+				i(97054),	-- Nine-Tailed Legguards
+				i(97055),	-- Nine-Tailed Spaulders
+				i(97051),	-- Nine-Tailed Tunic
+				i(97052),	-- Nine-Tailed Gloves
+				i(97053),	-- Nine-Tailed Helmet
+				i(97054),	-- Nine-Tailed Legguards
+				i(97055),	-- Nine-Tailed Spaulders
+				i(96307),	-- Nine-Tailed Tunic
+				i(96308),	-- Nine-Tailed Gloves
+				i(96309),	-- Nine-Tailed Helmet
+				i(96310),	-- Nine-Tailed Legguards
+				i(96311),	-- Nine-Tailed Spaulders
+			}),
+			cl(SHAMAN, {
+				i(97056),	-- Tunic of the Witch Doctor
+				i(97057),	-- Handwraps of the Witch Doctor
+				i(97058),	-- Faceguard of the Witch Doctor
+				i(97059),	-- Legwraps of the Witch Doctor
+				i(97060),	-- Mantle of the Witch Doctor
+				i(97061),	-- Cuirass of the Witch Doctor
+				i(97062),	-- Grips of the Witch Doctor
+				i(97063),	-- Helmet of the Witch Doctor
+				i(97064),	-- Legguards of the Witch Doctor
+				i(97065),	-- Spaulders of the Witch Doctor
+				i(97066),	-- Hauberk of the Witch Doctor
+				i(97067),	-- Gloves of the Witch Doctor
+				i(97068),	-- Headpiece of the Witch Doctor
+				i(97069),	-- Kilt of the Witch Doctor
+				i(97070),	-- Shoulderwraps of the Witch Doctor
+				i(96312),	-- Tunic of the Witch Doctor
+				i(96313),	-- Handwraps of the Witch Doctor
+				i(96314),	-- Faceguard of the Witch Doctor
+				i(96315),	-- Legwraps of the Witch Doctor
+				i(96316),	-- Mantle of the Witch Doctor
+				i(96317),	-- Cuirass of the Witch Doctor
+				i(96318),	-- Grips of the Witch Doctor
+				i(96319),	-- Helmet of the Witch Doctor
+				i(96320),	-- Legguards of the Witch Doctor
+				i(96321),	-- Spaulders of the Witch Doctor
+				i(96322),	-- Hauberk of the Witch Doctor
+				i(96323),	-- Gloves of the Witch Doctor
+				i(96324),	-- Headpiece of the Witch Doctor
+				i(96325),	-- Kilt of the Witch Doctor
+				i(96326),	-- Shoulderwraps of the Witch Doctor
+			}),
+			cl(WARLOCK, {
+				i(97097),	-- Gloves of the Thousandfold Hells
+				i(97098),	-- Hood of the Thousandfold Hells
+				i(97099),	-- Leggings of the Thousandfold Hells
+				i(97100),	-- Robes of the Thousandfold Hells
+				i(97101),	-- Mantle of the Thousandfold Hells
+				i(96353),	-- Gloves of the Thousandfold Hells
+				i(96354),	-- Hood of the Thousandfold Hells
+				i(96355),	-- Leggings of the Thousandfold Hells
+				i(96356),	-- Robes of the Thousandfold Hells
+				i(96357),	-- Mantle of the Thousandfold Hells
+			}),
+			cl(WARRIOR, {
+				i(97102), -- Helmet of the Last Mogu
+				i(97103), -- Battleplate of the Last Mogu
+				i(97104), -- Gauntlets of the Last Mogu
+				i(97105), -- Legplates of the Last Mogu
+				i(97106), -- Pauldrons of the Last Mogu
+				i(97107), -- Chestguard of the Last Mogu
+				i(97108), -- Handguards of the Last Mogu
+				i(97109), -- Faceguard of the Last Mogu
+				i(97110), -- Legguards of the Last Mogu
+				i(97111), -- Shoulderguards of the Last Mogu
+				i(96358), -- Helmet of the Last Mogu
+				i(96359), -- Battleplate of the Last Mogu
+				i(96360), -- Gauntlets of the Last Mogu
+				i(96361), -- Legplates of the Last Mogu
+				i(96362), -- Pauldrons of the Last Mogu
+				i(96363), -- Chestguard of the Last Mogu
+				i(96364), -- Handguards of the Last Mogu
+				i(96365), -- Faceguard of the Last Mogu
+				i(96366), -- Legguards of the Last Mogu
+				i(96367), -- Shoulderguards of the Last Mogu
+			}),
+			f(55, {	-- Consumables
+				i(96194),	-- Chest of the Crackling Vanquisher
+				i(96195),	-- Chest of the Crackling Conqueror
+				i(96196),	-- Chest of the Crackling Protector
+				i(96227),	-- Gauntlets of the Crackling Vanquisher
+				i(96228),	-- Gauntlets of the Crackling Conqueror
+				i(96229),	-- Gauntlets of the Crackling Protector
+				i(96251),	-- Helm of the Crackling Vanquisher
+				i(96252),	-- Helm of the Crackling Conqueror
+				i(96253),	-- Helm of the Crackling Protector
+				i(96259),	-- Leggings of the Crackling Vanquisher
+				i(96260),	-- Leggings of the Crackling Conqueror
+				i(96261),	-- Leggings of the Crackling Protector
+				i(96327),	-- Shoulders of the Crackling Vanquisher
+				i(96328),	-- Shoulders of the Crackling Conqueror
+				i(96329),	-- Shoulders of the Crackling Protector
+				i(96938),	-- Chest of the Crackling Vanquisher
+				i(96939),	-- Chest of the Crackling Conqueror
+				i(96940),	-- Chest of the Crackling Protector
+				i(96971),	-- Gauntlets of the Crackling Vanquisher
+				i(96972),	-- Gauntlets of the Crackling Conqueror
+				i(96973),	-- Gauntlets of the Crackling Protector
+				i(96995),	-- Helm of the Crackling Vanquisher
+				i(96996),	-- Helm of the Crackling Conqueror
+				i(96997),	-- Helm of the Crackling Protector
+				i(97003),	-- Leggings of the Crackling Vanquisher
+				i(97004),	-- Leggings of the Crackling Conqueror
+				i(97005),	-- Leggings of the Crackling Protector
+				i(97071),	-- Shoulders of the Crackling Vanquisher
+				i(97072),	-- Shoulders of the Crackling Conqueror
+				i(97073),	-- Shoulders of the Crackling Protector
+			}),
+			i(97075),	-- Spiderweb Tabi
+			i(97082),	-- Deeproot Treads
+			i(97086),	-- Abandoned Zandalari Silentbelt
+			i(97087),	-- Abandoned Zandalari Moonstrap
+			i(97077),	-- Abandoned Zandalari Firecord (Heroic Thunderforged)
+			i(97078),	-- Abandoned Zandalari Shadowgirdle (Heroic Thunderforged)
+			i(97079),	-- Silentflame Sandals (Heroic Thunderforged)
+			i(97081),	-- Home-Warding Slippers (Heroic Thunderforged)
+			i(97076),	-- Scalehide Spurs
+			i(97083),	-- Spiritbound Boots
+			i(97088),	-- Abandoned Zandalari Arrowlinks
+			i(97089),	-- Abandoned Zandalari Waterchain
+			i(97084),	-- Vaultwalker Sabatons
+			i(97090),	-- Abandoned Zandalari Greatbelt
+			i(97091),	-- Abandoned Zandalari Goreplate
+			i(97092),	-- Abandoned Zandalari Bucklebreaker
+			i(97094),	-- Locksmasher Greaves
+			i(97095),	-- Columnbreaker Stompers
+		}),
+	}),
+});

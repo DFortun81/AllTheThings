@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(1, {	-- Classic
-	inst(230, { 	-- Dire Maul
+	inst(230, {	-- Dire Maul
 		["lvl"] = 31,
 		["mapID"] = DIRE_MAUL,
 		["g"] = {
@@ -171,10 +171,10 @@ _.Instances = { tier(1, {	-- Classic
 							{ "i", 22057, 1 },	-- Brazier of Invocation
 						},
 						["g"] = {
-							un(11, i(22472)), 	-- Boots of Ferocity
-							un(11, i(22315)), 	-- Hammer of Revitalization
-							un(11, i(22314)), 	-- Huntsman's Harpoon
-							un(11, i(22304)), 	-- Ironweave Gloves
+							un(11, i(22472)),	-- Boots of Ferocity
+							un(11, i(22315)),	-- Hammer of Revitalization
+							un(11, i(22314)),	-- Huntsman's Harpoon
+							un(11, i(22304)),	-- Ironweave Gloves
 						},
 					}),
 					cr(11492, e(405, {	-- Alzzin the Wildshaper
@@ -447,7 +447,7 @@ _.Instances = { tier(1, {	-- Classic
 						["description"] = "Speak with Mizzle after killing |cFFFFD700King Gordok|r to spawn the Tribute Chest.",
 						["g"] = {
 							o(179564, {	-- Gordok Tribute Chest (No Localization)
-								["description"] =  "A full Tribute Run (5 items) requires leaving all bosses alive except King Gordok, and also requires activating the Frost Trap & fooling Kromcrush with the Ogre Suit, granted by the Goblin near the trap.",
+								["description"] = "A full Tribute Run (5 items) requires leaving all bosses alive except King Gordok, and also requires activating the Frost Trap & fooling Kromcrush with the Ogre Suit, granted by the Goblin near the trap.",
 								["model"] = 200953,
 								["modelScale"] = 3,
 								["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",
@@ -542,7 +542,7 @@ _.Instances = { tier(1, {	-- Classic
 						q(27113, {	-- The Shen'dralar Ancient
 							["provider"] = { "n", 44991 },
 						}),
-						q(7462, { 	-- The Treasure of the Shen'dralar
+						q(7462, {	-- The Treasure of the Shen'dralar
 							["u"] = REMOVED_FROM_GAME,
 							["provider"] = { "n", 14358 },	-- Shen'dralar Ancient
 							["races"] = ALLIANCE_ONLY,
@@ -553,7 +553,7 @@ _.Instances = { tier(1, {	-- Classic
 								un(REMOVED_FROM_GAME, i(18424)),	-- Sedge Boots
 							},
 						}),
-						q(7877, { 	-- The Treasure of the Shen'dralar
+						q(7877, {	-- The Treasure of the Shen'dralar
 							["u"] = REMOVED_FROM_GAME,
 							["provider"] = { "n", 14358 },	-- Shen'dralar Ancient
 							["races"] = HORDE_ONLY,
@@ -687,10 +687,10 @@ _.Instances = { tier(1, {	-- Classic
 					n(14506, {			-- Lord Hel'nurath
 						["description"] = "|cff3399ffSTEP 1:|r Warlock with (Dreadsteed of Xoroth) FOS\n|cff3399ffSTEP 2:|r Warlock buys Xorothian Glyphs,  Black Lodestone & J'eevee's Jar from Gorzeeki Wildeyes. (Burning Steppes - 8.2,35.8)\n|cff3399ffSTEP 3:|r Kill Immol'thar.\n|cff3399ffSTEP 4:|r Warlock uses J'eevee's Jar while standing on platform summoning Wheel of the Black March, Doomsday Candle, & Bell of Dethmoora.\n|cff3399ffSTEP 5:|r Kill stuff & use Black Lodestone to keep 3 artifacts active, this requires soul shards to do.\n|cff3399ffSTEP 6:|r Once mobs stop spawning, use Xorothian Glyphs to summon the dreadsteed.\n|cff3399ffSTEP 7:|r Kill Lord Hel'nurath & collect loot.",
 						["g"] = {
-							un(11, i(18757)), 	-- Diabolic Mantle
-							un(11, i(18755)), 	-- Xorothian Firestick
-							un(11, i(18756)), 	-- Dreadguard Protector
-							un(11, i(18754)), 	-- Fel Hardened Bracers
+							un(11, i(18757)),	-- Diabolic Mantle
+							un(11, i(18755)),	-- Xorothian Firestick
+							un(11, i(18756)),	-- Dreadguard Protector
+							un(11, i(18754)),	-- Fel Hardened Bracers
 						},
 					}),
 					cr(11486, e(410, {	-- Prince Tortheldrin

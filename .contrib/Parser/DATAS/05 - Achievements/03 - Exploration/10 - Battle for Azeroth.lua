@@ -675,50 +675,50 @@ _.Achievements =
 				["races"] = HORDE_ONLY,
 			}),
 			ach(13690, {	-- Nazjatarget Eliminated
-				crit(1, { 	-- Szun, Breaker of Slaves
-					["_quests"]  = { 55897 },
+				crit(1, {	-- Szun, Breaker of Slaves
+					["_quests"] = { 55897 },
 				}),
-				crit(2, { 	-- Frozen Winds of Zhiela
-					["_quests"]  = { 55895 },
+				crit(2, {	-- Frozen Winds of Zhiela
+					["_quests"] = { 55895 },
 				}),
-				crit(3, { 	-- Zoko, Her Iron Defender
-					["_quests"]  = { 55894 },
+				crit(3, {	-- Zoko, Her Iron Defender
+					["_quests"] = { 55894 },
 				}),
-				crit(4, { 	-- Tempest-Speaker Shalan'ali
-					["_quests"]  = { 55898 },
+				crit(4, {	-- Tempest-Speaker Shalan'ali
+					["_quests"] = { 55898 },
 				}),
-				crit(5, { 	-- Starseeker of the Shirakess
-					["_quests"]  = { 55899 },
+				crit(5, {	-- Starseeker of the Shirakess
+					["_quests"] = { 55899 },
 				}),
-				crit(6, { 	-- Azanz, the Slitherblade
-					["_quests"]  = { 55893 },
+				crit(6, {	-- Azanz, the Slitherblade
+					["_quests"] = { 55893 },
 				}),
-				crit(7, { 	-- Undana, Chilling Assassin
-					["_quests"]  = { 55896 },
+				crit(7, {	-- Undana, Chilling Assassin
+					["_quests"] = { 55896 },
 				}),
-				crit(8, { 	-- Kassar, Wielder of Dark Blades
-					["_quests"]  = { 55900 },
+				crit(8, {	-- Kassar, Wielder of Dark Blades
+					["_quests"] = { 55900 },
 				}),
-				crit(9, { 	-- The Zanj'ir Brutalizer
-					["_quests"]  = { 55886 },
+				crit(9, {	-- The Zanj'ir Brutalizer
+					["_quests"] = { 55886 },
 				}),
 				crit(10, {	-- Champion Aldrantiss, Defender of Her Kingdom
-					["_quests"]  = { 55891 },
+					["_quests"] = { 55891 },
 				}),
 				crit(11, {	-- Champion Alzana, Arrow of Thunder
-					["_quests"]  = { 55887 },
+					["_quests"] = { 55887 },
 				}),
 				crit(12, {	-- Champion Eldanar, Shield of Her Glory
-					["_quests"]  = { 55892 },
+					["_quests"] = { 55892 },
 				}),
 				crit(13, {	-- Champion Kyx'zhul the Deepspeaker
-					["_quests"]  = { 55889 },
+					["_quests"] = { 55889 },
 				}),
 				crit(14, {	-- Champion Qalina, Spear of Ice
-					["_quests"]  = { 55888 },
+					["_quests"] = { 55888 },
 				}),
 				crit(15, {	-- Champion Vyz'olgo the Mind-Taker
-					["_quests"]  = { 55890 },
+					["_quests"] = { 55890 },
 				}),
 			}),
 			ach(13713),		-- Nothing to Scry About
@@ -1575,8 +1575,8 @@ _.Achievements =
 				crit(1),	-- Complete an Emissary for your ally in Nazjatar
 				crit(2),	-- Defeat one of the World Bosses of Nazjatar
 				crit(3),	-- Learn about the Scrying Stones of Nazjatar
-				crit(4, { 	-- Defeat one of Azshara's Champions
-					["_quests"]  = {
+				crit(4, {	-- Defeat one of Azshara's Champions
+					["_quests"] = {
 						55893,	-- Azanz, the Slitherblade
 						55891,	-- Champion Aldrantiss, Defender of Her Kingdom
 						55887,	-- Champion Alzana, Arrow of Thunder

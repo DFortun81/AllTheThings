@@ -268,8 +268,12 @@ _.PVP =
 		n(-664, {	-- Gladiator: Season 1
 			n(-661, {	-- Gladiator PvP Gear
 				n(-319, {	-- Weapons
-					-- -- Never added, combined with Season 2
-					-- i(146651, {	-- Arsenal: Gladiator's Weapons
+					i(146651, {	-- Arsenal: Gladiator's Weapons
+						["timeline"] = { -- combined with Season 2
+							"added 7.2.0.23436",
+							"removed 7.2.5.10000",
+						},
+					}),
 					i(28302, {	-- Gladiator's Bonecracker
 						["cost"] = { { "i", 137642, 5 } },	-- 5x Mark of Honor
 					}),

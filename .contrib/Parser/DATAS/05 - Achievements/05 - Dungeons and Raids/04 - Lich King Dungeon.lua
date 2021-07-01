@@ -344,7 +344,7 @@ _.Achievements =
 			ach(4522),	-- Soul Power
 			ach(2150),	-- Split Personality
 			ach(1817),	-- The Culling of Time
-			ach(3803), 	-- The Faceroller
+			ach(3803),	-- The Faceroller
 			ach(2043),	-- The Incredible Hulk
 			ach(4523),	-- Three Faced
 			ach(1867),	-- Timely Death

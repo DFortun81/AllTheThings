@@ -8,7 +8,7 @@ _.WorldEvents =
 		["races"] = ALLIANCE_ONLY,
 		["lvl"] = 120,
 		["maps"] = {
-			499,	-- Deeprun Tram
+			DEEPRUN_TRAM,
 			500,	-- Bizmo's Brawlpub
 		},
 		["u"] = REMOVED_FROM_GAME,

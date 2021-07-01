@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(5, {	-- Mists of Pandaria
-	inst(313, { 	-- Temple of the Jade Serpent
+	inst(313, {	-- Temple of the Jade Serpent
 		["maps"] = { 429, 430 },
 		["lvl"] = { 10 },
 		["g"] = {

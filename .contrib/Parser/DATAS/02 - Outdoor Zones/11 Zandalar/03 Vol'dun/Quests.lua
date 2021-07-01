@@ -567,7 +567,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = { { "i", 168970, 1 } },	-- Trashmaster's Mantle
 					["g"] = {
-						i(169394), 	-- Richly Appointed Drape
+						i(169394),	-- Richly Appointed Drape
 						title(324),	-- Trashmaster
 					},
 				}),

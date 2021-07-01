@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(37, {	-- Elwynn Forest
+		m(ELWYNN_FOREST, {
 			m(425, {	-- Northshire
 				n(QUESTS, {
 					q(28762, {	-- Beating Them Back!

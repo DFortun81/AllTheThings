@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(619, { 	-- The Broken Isles
+	m(619, {	-- The Broken Isles
 		m(680, {	-- Suramar
 			i(141409, {	-- Candrael's Charm
 				["description"] = "Find this item on mobs in Suramar.",
@@ -26,7 +26,7 @@ _.Zones =
 					}),
 				},
 			}),
-			n(-214, { 	-- Nightborne Home
+			n(-214, {	-- Nightborne Home
 				["g"] = {
 					n(QUESTS, {
 						q(49933, {	-- For the Horde

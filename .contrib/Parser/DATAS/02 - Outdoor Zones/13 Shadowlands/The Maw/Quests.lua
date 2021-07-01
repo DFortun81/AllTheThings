@@ -9,29 +9,45 @@ _.Zones =
 			n(QUESTS, {
 				n(-229, {	-- Weekly
 					-- TODO: use 'crs' when the mobs don't drop anything, otherwise 'g' with nested n()
-					n(-909, {	-- Hunt: Death Elementals
+					-- TODO: add icon for "weekly" header (can't figure out where the blue ! comes from on daily quests)
+					-- ^ added 'cr' to shadehound hunt because it was the only one without an icon and i couldn't get a model to work :(
+					n(-909,  {	-- Hunt: Death Elementals
 						["isWeekly"] = true,
 						["questID"] = 63198,
 						["crs"] = {
 							172962,	-- Tempered Stygia
 						},
+						["g"] = {
+							crit(3, {	-- Death Elementals
+								["achievementID"] = 14738,	-- Hunting Party
+							}),
+						},
 					}),
-					n(-910, {	-- Hunt: Alpha Devourers
+					n(-910,  {	-- Hunt: Alpha Devourers
 						["isWeekly"] = true,
 						["questID"] = 63199,
 						["crs"] = {
 							175851,	-- Alpha Anima Devourer
 						},
+						["g"] = {
+							crit(2, {	-- Soul Eaters
+								["achievementID"] = 14738,	-- Hunting Party
+							}),
+						},
 					}),
-					n(-911, {	-- Hunt: Shadehounds
+					n(-911,  {	-- Hunt: Shadehounds
 						["isWeekly"] = true,
 						["questID"] = 63433,
+						["cr"] = 174861,	-- Gorged Shadehound
 						["g"] = {
 							n(174861, {	-- Gorged Shadehound
 								["isWeekly"] = true,
 								["questID"] = 63433,
 								["coord"] = { 53.4, 79.3, THE_MAW },
 								["g"] = {
+									crit(1, {	-- Shadehounds
+										["achievementID"] = 14738,	-- Hunting Party
+									}),
 									i(184167),	-- Mawsworn Soulhunter (MOUNT!)
 									i(183057, {	-- Shadehound Armor Plating
 										["questID"] = 63154,	-- Shadehound Armor Plating
@@ -45,28 +61,153 @@ _.Zones =
 							}),
 						},
 					}),
-					n(-912, {	-- Hunt: Winged Soul Eaters
+					n(-912,  {	-- Hunt: Winged Soul Eaters
 						["isWeekly"] = true,
 						["questID"] = 63194,
 						["crs"] = {
 							-- TODO: another NPC is part of the final objective
 							173195,	-- Undying Soulbinder
 						},
+						["g"] = {
+							crit(4, {	-- Winged Soul Eaters
+								["achievementID"] = 14738,	-- Hunting Party
+							}),
+						},
 					}),
-					n(-904, {	-- Wrath of the Jailer
+					q(63708, {	-- Phantasmagoria
+						["provider"] = { "i", 185756 },	-- Warped Phantasma
+						["isWeekly"] = true,
+					}),
+					n(-913,  {	-- Tormentors of Torghast
+						["description"] = "You can only get the cache once a week, but you can continue to participate in the events for achievement credit and |cFF0070ddBahmeht Chain Links|r.",
+						["isWeekly"] = true,
+						["questID"] = 63854,
+						["g"] = {
+							ach(15054, {	-- Minions of the Cold Dark
+								crit(1,  {	-- Versya the Damned slain
+									["cr"] = 177981,	-- Versya the Damned <Tormentor of Torghast>
+								}),
+								crit(2,  {	-- Gralebboih slain
+									["cr"] = 177979,	-- Gralebboih <Tormentor of Torghast>
+								}),
+								crit(3,  {	-- Promathiz slain
+									["cr"] = 177330,	-- Promathiz <Tormentor of Torghast>
+								}),
+								crit(4,  {	-- Sentinel Pyrophus slain
+									["cr"] = 177331,	-- Sentinel Pyrophus <Tormentor of Torghast>
+								}),
+								crit(5,  {	-- Gruukuuek the Elder slain
+									["cr"] = 177980,	-- Gruukuuek the Elder <Tormentor of Torghast>
+								}),
+								crit(6,  {	-- Zul'gath the Flayer slain
+									["cr"] = 178886,	-- Zul'gath the Flayer <Tormentor of Torghast>
+								}),
+								crit(7,  {	-- Mugrem the Soul Devourer slain
+									["cr"] = 178002,	-- Mugrem the Soul Devourer <Tormentor of Torghast>
+								}),
+								crit(8,  {	-- The Mass of Souls slain
+									["cr"] = 177427,	-- The Mass of Souls <Tormentor of Torghast>
+								}),
+								crit(9,  {	-- Algel the Hunter slain
+									["cr"] = 178897,	-- Algel the Haunter <Tormentor of Torghast>
+								}),
+								crit(10, {	-- Sentinel Shakorzeth slain
+									["cr"] = 178883,	-- Sentinel Shakorzeth <Tormentor of Torghast>
+								}),
+								crit(11, {	-- Kazj the Sentinel slain
+									["cr"] = 178882,	-- Kazj The Sentinel <Tormentor of Torghast>
+								}),
+								crit(12, {	-- Intercessor Razzram slain
+									["cr"] = 178004,	-- Intercessor Razzram <Tormentor of Torghast>
+								}),
+								crit(13, {	-- Malleus Grakizz slain
+									["cr"] = 177972,	-- Malleus Grakizz <Tormentor of Torghast>
+								}),
+								crit(14, {	-- Manifestation of Pain slain
+									["cr"] = 178899,	-- Manifestation of Pain <Tormentor of Torghast>
+								}),
+								crit(15, {	-- Golmak the Monstrosity slain
+									["cr"] = 178898,	-- Golmak The Monstrosity <Tormentor of Torghast>
+								}),
+							}),
+							n(COMMON_BOSS_DROPS, {
+								["crs"] = {
+									178897,	-- Algel the Haunter <Tormentor of Torghast>
+									178898,	-- Golmak The Monstrosity <Tormentor of Torghast>
+									177979,	-- Gralebboih <Tormentor of Torghast>
+									177980,	-- Gruukuuek the Elder <Tormentor of Torghast>
+									178004,	-- Intercessor Razzram <Tormentor of Torghast>
+									178882,	-- Kazj The Sentinel <Tormentor of Torghast>
+									177972,	-- Malleus Grakizz <Tormentor of Torghast>
+									178899,	-- Manifestation of Pain <Tormentor of Torghast>
+									178002,	-- Mugrem the Soul Devourer <Tormentor of Torghast>
+									177330,	-- Promathiz <Tormentor of Torghast>
+									177331,	-- Sentinel Pyrophus <Tormentor of Torghast>
+									178883,	-- Sentinel Shakorzeth <Tormentor of Torghast>
+									177427,	-- The Mass of Souls <Tormentor of Torghast>
+									177981,	-- Versya the Damned <Tormentor of Torghast>
+									178886,	-- Zul'gath the Flayer <Tormentor of Torghast>
+								},
+								["g"] = {
+									i(185974, {	-- Bahmeht Chain Link
+										["description"] = "A guaranteed drop from the Tormentor, and a possible drop from its lieutenants.",
+									}),
+									i(186218),	-- Fire-Tempered Armor Cinch (looted from Zul'gath near the start of PTR - drops may have been changed, not sure if this is CBD or specific to Zul'gath - apparently most tormentors have at least 1 dedicated drop, but this guy isn't especially fiery so i'm not sure)
+									i(185972, {	-- Tormentor's Cache
+										i(186977),	-- Beastcaller's Skull Crescent
+										i(186562),	-- Tormentor's Manacled Backplate
+										i(185756),	-- Warped Phantasma (TODO: add rep item if this makes it to live)
+									}),
+								},
+							}),
+							n(178897, {	-- Algel the Haunter
+								i(186239),	-- Drape of the Phantasm
+							}),
+							n(177979, {	-- Gralebboih
+								i(186449),	-- Amaranthine Stinger (PET!)
+							}),
+							n(177972, {	-- Malleus Grakizz
+								i(186012),	-- Inferno Blast Shield
+							}),
+							n(178899, {	-- Manifestation of Pain
+								i(186213),	-- Bindings of Manifest Pain
+							}),
+							n(177330, {	-- Promathiz
+								i(186007),	-- Cudgel of the Tin Sentinel
+							}),
+							n(177331, {	-- Sentinel Pyrophus
+								i(186219),	-- Pyrophus' Wrist Ties
+							}),
+							n(178883, {	-- Sentinel Shakorzeth
+								i(186244),	-- Shakorzeth's Gorget
+							}),
+							i(185973, {	-- Chain of Bahmethra
+								["cost"] = { { "i", 185974, 200 } },	-- 200x Bahmet Chain Link
+							}),
+						},
+					}),
+					n(-904,  {	-- Wrath of the Jailer
 						["isWeekly"] = true,
 						["questID"] = 63414,
 						["g"] = {
 							n(COMMON_BOSS_DROPS, {
-								i(183228),	-- Memory of Arcane Pulsars
-								i(184657),	-- Armguard of the Unseen Assailant
-								i(184661),	-- Bracers of the Tenebrous Retinue
-								i(184658),	-- Dread Harrier's Pauldrons
-								i(184660),	-- Dreadguard's Greathelm
-								i(184654),	-- Forgotten Shade's Shawl
-								i(184659),	-- Grips of the Dreadhound Tamer
-								i(184656),	-- Mawsworn Assassin's Doublet
-								i(184655),	-- Sash of the Ethereal Servant
+								["crs"] = {
+									175846,	-- Dathlane the Herald <Torghast Executioner>
+									175877,	-- Lumisende <Torghast Executioner>
+									175881,	-- Naelcrotix <Torghast Executioner>
+									176173,	-- Zograthos <Torghast Executioner>
+								},
+								["g"] = {
+									i(183228),	-- Memory of Arcane Pulsars
+									i(184657),	-- Armguard of the Unseen Assailant
+									i(184661),	-- Bracers of the Tenebrous Retinue
+									i(184658),	-- Dread Harrier's Pauldrons
+									i(184660),	-- Dreadguard's Greathelm
+									i(184654),	-- Forgotten Shade's Shawl
+									i(184659),	-- Grips of the Dreadhound Tamer
+									i(184656),	-- Mawsworn Assassin's Doublet
+									i(184655),	-- Sash of the Ethereal Servant
+								},
 							}),
 							n(175846, {	-- Dathlane the Herald <Torghast Executioner>
 								["description"] = "A possible boss for the 'Wrath of the Jailer' event.",
@@ -141,6 +282,12 @@ _.Zones =
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.9, 41.7, THE_MAW },
 				}),
+				q(63811, {	-- A Hate, Hate Relationship
+					["sourceQuests"] = { 63764 },	-- Claim the Sky
+					["provider"] = { "n", 177603 },	-- Danica the Reclaimer
+					["coord"] = { 58.0, 58.8, 1971 },	-- Skyhold (scenario)
+					["maps"] = { 1971 },	-- Skyhold (scenario)
+				}),
 				q(59756, {	-- A Moment's Respite
 					["sourceQuests"] = { 59755 },	-- A Flight from Darkness
 					["provider"] = { "n", 166980 },	-- Lady Jaina Proudmoore
@@ -198,6 +345,16 @@ _.Zones =
 					["coord"] = { 25.0, 13.3, 1648 },
 					["maps"] = { 1648 },	-- pre-SL scenario
 				}),
+				q(63867, {	-- Anger Management
+					["sourceQuests"] = { 64014 },	-- Mawsplaining
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.8, 41.7, THE_MAW },
+				}),
+				q(63810, {	-- Birds of a Feather
+					["sourceQuests"] = { 63849 },	-- Hearing Aid
+					["provider"] = { "n", 179078 },	-- Projection of Ve'nari
+					["coord"] = { 64.3, 50.6, THE_MAW },
+				}),
 				q(59762, {	-- By and Down the River
 					["sourceQuests"] = { 59776 },	-- From the Mouths of Madness
 					["provider"] = { "n", 166980 },	-- Lady Jaina Proudmoore
@@ -208,6 +365,12 @@ _.Zones =
 					["sourceQuests"] = { 57689 },	-- Prince Renathal
 					["provider"] = { "n", 158649 },	-- Vorpalia
 					["coord"] = { 38.7, 28.3, THE_MAW },
+				}),
+				q(63764, {	-- Claim the Sky
+					["sourceQuests"] = { 63754 },	-- The Caged Bird
+					["provider"] = { "n", 177597 },	-- Danica the Reclaimer
+					["coord"] = { 67.0, 55.9, THE_MAW },
+					["maps"] = { 1971 },	-- Skyhold (scenario)
 				}),
 				q(63135, {	-- Coldheart Flight Routes
 					["provider"] = { "i", 180801 },	-- Coldheart Flight Routes
@@ -283,6 +446,14 @@ _.Zones =
 					["coord"] = { 24.4, 35.9, 1648 },
 					["maps"] = { 1648 },	-- pre-SL scenario
 				}),
+				q(63901, {	-- Focusing the Eye
+					["sourceQuests"] = {
+						63867,	-- Anger Management
+						63896,	-- Tears of the Damned
+					},
+					["provider"] = { "n", 179078 },	-- Projection of Ve'nari
+					["coord"] = { 37.4, 27.0, THE_MAW },
+				}),
 				q(62214, {	-- Forces of Perdition
 					["sourceQuests"] = { 60284 },	-- Rule 5: Be Audacious
 					["provider"] = { "n", 162804 },	-- Ve'nari
@@ -297,6 +468,23 @@ _.Zones =
 					["provider"] = { "n", 167826 },	-- Lady Jaina Proudmoore
 					["coord"] = { 25.0, 13.4, 1648 },
 					["maps"] = { 1648 },	-- pre-SL scenario
+				}),
+				q(63831, {	-- Fury Given Voice
+					["sourceQuests"] = { 63811 },	-- A Hate, Hate Relationship
+					["provider"] = { "n", 177726 },	-- Odyn
+					["coord"] = { 58.3, 83.8, 1971 },	-- Skyhold (scenario)
+					["maps"] = { 1971 },	-- Skyhold (scenario)
+				}),
+				q(63902, {	-- Good News, Everyone!
+					["sourceQuests"] = { 63901 },	-- Focusing the Eye
+					["provider"] = { "n", 178950 },	-- Danica
+					["coord"] = { 37.0, 19.3, THE_MAW },
+				}),
+				q(63895, {	-- Grab Bag
+					["sourceQuests"] = { 63855 },	-- Ease of Passage
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.8, 41.7, THE_MAW },
+					["_drop"] = { "g" },	-- drop anima trash
 				}),
 				q(61104, {	-- Grathalax, the Extractor
 					["provider"] = { "n", 162804 },	-- Ve'nari
@@ -314,6 +502,11 @@ _.Zones =
 					["provider"] = { "n", 175797 },	-- Deceased Broker
 					["isDaily"] = true,
 					["coord"] = { 30.7, 58.3, THE_MAW },
+				}),
+				q(63849, {	-- Hearing Aid
+					["sourceQuests"] = { 63895 },	-- Grab Bag
+					["provider"] = { "n", 179078 },	-- Projection of Ve'nari
+					["coord"] = { 61.6, 59.0, THE_MAW },
 				}),
 				q(59962, {	-- Hope Never Dies
 					["sourceQuests"] = { 59959 },	-- The Brand Holds the Key
@@ -339,6 +532,12 @@ _.Zones =
 						i(175526),	-- Vicious Reclaimer's Cover
 					},
 				}),
+				q(64014, {	-- Mawsplaining
+					["sourceQuests"] = { 63845 },	-- Wrath of Odyn
+					["provider"] = { "n", 177726 },	-- Odyn
+					["coord"] = { 58.3, 83.8, 1971 },	-- Skyhold (scenario)
+					["maps"] = { 1971 },	-- Skyhold (scenario)
+				}),
 				q(59907, {	-- Mawsworn Menace
 					["sourceQuests"] = { 59751 },	-- Through the Shattered Sky
 					["provider"] = { "n", 166723 },	-- Highlord Darion Morgraine
@@ -354,6 +553,11 @@ _.Zones =
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["isWeekly"] = true,
 					["coord"] = { 46.9, 41.7, THE_MAW },
+				}),
+				q(63662, {	-- Mysteries of the Maw
+					["sourceQuests"] = { 63661 },	-- Link to the Maw
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.8, 41.7, THE_MAW },
 				}),
 				q(59754, {	-- On Blackened Wings
 					["sourceQuests"] = { 59914 },	-- Fear to Tread
@@ -477,6 +681,11 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 28.2, 14.6, THE_MAW },
 				}),
+				q(63896, {	-- Tears of the Damned
+					["sourceQuests"] = { 64014 },	-- Mawsplaining
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.8, 41.7, THE_MAW },
+				}),
 				q(59760, {	-- The Afflictor's Key
 					["sourceQuests"] = { 59759 },	-- The Lion's Cage
 					["provider"] = { "n", 167833 },	-- Anduin Wrynn
@@ -487,6 +696,17 @@ _.Zones =
 					["sourceQuests"] = { 59960 },	-- A Cooling Trail
 					["provider"] = { "o", 355798 },	-- Cage
 					["coord"] = { 38.3, 48.5, THE_MAW },
+				}),
+				q(63754, {	-- The Caged Bird
+					["sourceQuests"] = { 63810 },	-- Birds of a Feather
+					["provider"] = { "n", 177597 },	-- Danica the Reclaimer
+					["coord"] = { 67.2, 55.7, THE_MAW },
+				}),
+				q(63844, {	-- The Chosen Few
+					["sourceQuests"] = { 63811 },	-- A Hate, Hate Relationship
+					["provider"] = { "n", 177726 },	-- Odyn
+					["coord"] = { 58.3, 83.8, 1971 },	-- Skyhold (scenario)
+					["maps"] = { 1971 },	-- Skyhold (scenario)
 				}),
 				q(60972, {	-- The Hunt for the Baron
 					["sourceQuests"] = { 59897 },	-- Seeking the Baron
@@ -580,66 +800,79 @@ _.Zones =
 					["coord"] = { 29.6, 43.6, 1648 },
 					["maps"] = { 1648 },	-- pre-SL scenario
 				}),
+				q(63845, {	-- Wrath of Odyn
+					["sourceQuests"] = {
+						63831,	-- Fury Given Voice
+						63844,	-- The Chosen Few
+					},
+					["provider"] = { "n", 177726 },	-- Odyn
+					["coord"] = { 58.3, 83.8, 1971 },	-- Skyhold (scenario)
+					["maps"] = { 1971 },	-- Skyhold (scenario)
+				}),
 
-
-
-
-
-
-
-
-
-
-
-				-- Do not think these made it into the release version of the game
-				-- q(60232, {	-- Souls of the Damned (Bastion)
-					-- ["provider"] = { "n", 160212 },	-- Soulguide Daelia
-					-- ["coord"] = { 33.9, 43.5, BASTION },
-					-- ["sourceQuests"] = { 57905 },	-- A Unique Opportunity
-				-- }),
-				-- q(60130, {	-- Souls of the Damned (Maldraxxus)
-					-- ["provider"] = { "n", 167748 },	-- Osbourne Black
-					-- --["coord"] = { 33.9, 43.5, MALDRAXXUS },
-					-- ["sourceQuests"] = { 61397 },	-- Opportunity Strikes
-				-- }),
-				-- q(60234, {	-- Souls of the Damned (Revendreth)
-					-- ["provider"] = { "n", 164738 },	-- Tenaval
-					-- ["coord"] = { 46.6, 28.6, REVENDRETH },
-					-- ["sourceQuests"] = { 59320 },	-- Souls to Save
-				-- }),
-				-- q(61508, {	-- Soul Salvation (Bastion)
-					-- --["provider"] = { "n", 158553 },	-- Flutterby
-					-- --["coord"] = { 33.9, 43.5, BASTION },
-					-- ["sourceQuests"] = { 60232 },	-- Souls of the Damned (Bastion)
-				-- }),
-				-- q(61513, {	-- Soul Salvation (Maldraxxus)
-					-- --["provider"] = { "n", 158553 },	-- Flutterby
-					-- --["coord"] = { 33.9, 43.5, MALDRAXXUS },
-					-- ["sourceQuests"] = { 60130 },	-- Souls of the Damned (Maldraxxus)
-				-- }),
-				-- q(61515, {	-- Soul Salvation (Revendreth)
-					-- ["provider"] = { "n", 158553 },	-- Tenaval
-					-- ["coord"] = { 33.9, 43.5, REVENDRETH },
-					-- ["sourceQuests"] = { 60234 },	-- Souls of the Damned (Revendreth)
-				-- }),
-				-- q(61496, {	-- A Familiar Energy
-					-- ["provider"] = { "n", 172543 },	-- Rescued Soul
-					-- ["coords"] = {
-						-- { 33.8, 42.5, ARDENWEALD },
-						-- --{ 33.8, 42.5, BASTION },
-						-- --{ 33.8, 42.5, MALDRAXXUS },
-						-- --{ 33.8, 42.5, REVENDRETH },
-					-- },
-					-- ["sourceQuests"] = {
-						-- 61508,	-- Soul Salvation (Ardenweald)REVENDRETH
-						-- 61508,	-- Soul Salvation (Bastion)
-						-- 61513,	-- Soul Salvation (Maldraxxus)
-						-- 61515,	-- Soul Salvation (Revendreth)
-					-- },
-				-- }),
-				-- q(61391, {	-- The Eye of the Jailer
-					-- ["sourceQuests"] = { 62882 },	-- Setting the Ground Rules
-				-- }),
+			--	PTR - TODO: merge with regular quests once this stuff makes it to live
+				q(63616, {	-- A Job Done Right
+					["sourceQuests"] = {
+						63615,	-- Clip Their Wings
+						63613,	-- Gates of the Damned
+						63614,	-- Weapon in Hand
+					},
+					["provider"] = { "n", 177586 },	-- Baroness Draka
+				}),
+				q(63620, {	-- A Traitor's Due
+					["sourceQuests"] = {
+						63619,	-- Forsworn and Forgotten
+						63618,	-- What Maldraxxus Does Best
+					},
+					["provider"] = { "n", 177586 },	-- Baroness Draka
+				}),
+				q(63617, {	-- Bending Bars
+					["sourceQuests"] = { 63616 },	-- A Job Done Right
+					["provider"] = { "n", 177586 },	-- Baroness Draka
+					["coord"] = { 68.6, 52.9, THE_MAW },
+				}),
+				q(63615, {	-- Clip Their Wings
+					["sourceQuests"] = { 63612 },	-- The Chains of Command
+					["provider"] = { "n", 177586 },	-- Baroness Draka
+					["coord"] = { 62.8, 66.0, THE_MAW },
+				}),
+				q(63619, {	-- Forsworn and Forgotten
+					["sourceQuests"] = { 63617 },	-- Bending Bars
+					["provider"] = { "n", 177288 },	-- Fallen Disciple Nikolon
+					["coord"] = { 65.5, 46.1, THE_MAW },
+				}),
+				q(63613, {	-- Gates of the Damned
+					["sourceQuests"] = { 63612 },	-- The Chains of Command
+					["provider"] = { "n", 177560 },	-- Baroness Draka
+					["coord"] = { 62.8, 66.0, THE_MAW },
+				}),
+				q(64521, {	-- Helsworn Battle Plans
+					["sourceQuests"] = { 63612 },	-- The Chains of Command
+					["provider"] = { "i", 187275 },	-- Helsworn Battle Plans
+				--	["crs"] = {  },	-- TODO: multilooted so not sure what dropped it, something in desmotaeron as i was doing the other 3 quests after 'the chains of command'
+				}),
+				q(64541, {	-- The Cost of Death
+				--	not flagged daily/weekly in API - you trade 800 Stygia to Ve'nari in return for 1,000 reputation with her.  TODO: verify this is a one-time quest.  quest text makes it seem like it will be repeatable in one way or another.  ETA: this popped up again on my priest but i'm not sure if it's daily/weekly still
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["coord"] = { 46.8, 41.7, THE_MAW },
+					["cost"] = { { "c", 1767, 800 } },	-- 800x Stygia
+				}),
+				q(63622, {	-- Victory in Our Name
+					["sourceQuests"] = { 63620 },	-- A Traitor's Due
+					["provider"] = { "n", 178103 },	-- Baroness Draka
+					["coord"] = { 62.0, 41.6, THE_MAW },
+				}),
+				q(63614, {	-- Weapon in Hand
+					["sourceQuests"] = { 63612 },	-- The Chains of Command
+					["provider"] = { "n", 177589 },	-- Thrall
+					["coord"] = { 62.8, 66.0, THE_MAW },
+				}),
+				q(63618, {	-- What Maldraxxus Does Best
+					["sourceQuests"] = { 63617 },	-- Bending Bars
+					["provider"] = { "n", 177586 },	-- Baroness Draka
+					["coord"] = { 65.2, 48.4, THE_MAW },
+				}),
+				-- End PTR quests
 				q(62838, {	-- Soulful Recovery
 					["sourceQuests"] = { 60289 },	-- Rule 3: Trust is Earned
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
@@ -674,3 +907,65 @@ _.Zones =
 		}),
 	}),
 };
+_.HiddenQuestTriggers = {
+	q(62907),	-- triggered after collecting all stygia during "Rule 1: Have an Escape Plan" (triggers dialogue from The Jailer + the Eye of the Jailer counter...thing)
+	q(64107),	-- triggered when killing Algel the Haunter
+	q(64695),	-- triggered when killing Algel the Haunter / Gruukuuek the Elder
+	q(64698),	-- triggered when killing Intercessor Razzra
+	q(64118),	-- triggered when killing Manifestation of Pain
+	q(64692),	-- triggered when killing Manifestation of Pain
+	q(64696),	-- triggered when killing Promathiz / Sentinel Shakorzeth
+	q(64697),	-- triggered when killing Malleus Grakizz / Sentinel Shakorzeth
+	q(64693),	-- triggered when killing Manifestation of Pain
+	q(64121),	-- triggered when killing Sentinel Shakorzeth (somehow it + Kazj the Sentinel were both up at once, this was only after killing Shakorzeth, and then Kazj did not trigger an additional questID at all)
+	q(64697),	-- triggered when killing Versya the Damned
+};
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(60902),	-- A Dark Song
+		q(61496),	-- A Familiar Energy
+		q(60141),	-- Coldheart Interstitia
+		q(60132),	-- Constellan Writs and Stygia
+		q(62855),	-- Edict of the Eternal Ones
+		q(60182),	-- Feasting Soul Eater
+		q(60769),	-- Flames of Torment
+		q(60645),	-- Gargantuan Seeker
+		q(62593),	-- Hunt: Death Elementals
+		q(57506),	-- Light Lost
+		q(60140),	-- Mort'regar
+		q(57692),	-- Prisoner Transfers
+		q(62074),	-- Professions - Reuse
+		q(62086),	-- Professions - Reuse
+		q(62088),	-- Professions - Reuse
+		q(62089),	-- Professions - Reuse
+		q(62090),	-- Professions - Reuse
+		q(62091),	-- Professions - Reuse
+		q(62092),	-- Professions - Reuse
+		q(62093),	-- Professions - Reuse
+		q(62096),	-- Professions - Reuse
+		q(62097),	-- Professions - Reuse
+		q(62098),	-- Professions - Reuse
+		q(62099),	-- Professions - Reuse
+		q(62100),	-- Professions - Reuse
+		q(62101),	-- Professions - Reuse
+		q(62102),	-- Professions - Reuse
+		q(62103),	-- Professions - Reuse
+		q(60161),	-- Quest #60161		-- I can't even find a name for this quest.
+		q(61314),	-- REUSE ME - SCS
+		q(60757),	-- Skeleton Key
+		q(59168),	-- Soul Hole
+		q(59169),	-- Soul Hole
+		q(61495),	-- Soul Salvation
+		q(61508),	-- Soul Salvation
+		q(61513),	-- Soul Salvation
+		q(61515),	-- Soul Salvation
+		q(60130),	-- Souls of the Damned
+		q(60232),	-- Souls of the Damned
+		q(60233),	-- Souls of the Damned
+		q(60234),	-- Souls of the Damned
+		q(61736),	-- Stolen Away
+		q(61737),	-- Stolen Away
+		q(61391),	-- The Eye of the Jailer
+		q(60137),	-- The Fractured Chambers
+	}),
+});

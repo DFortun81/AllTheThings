@@ -31,7 +31,7 @@ _.Toys =
 		i(122293, {		-- Trans-Dimensional Bird Whistle
 			i(170151, {	-- A Tiny Clockwork Key
 				["questID"] = 56911,	-- Pepe can be sometimes be summoned with this mask
-				["coord"] = { 68.5, 47.9, 1462 },	-- Pepe Location
+				["coord"] = { 68.5, 47.9, MECHAGON },	-- Pepe Location
 				["description"] = "Located in the alternate Timeline.",
 			}),
 			i(161451, {	-- A Tiny Diving Helmet

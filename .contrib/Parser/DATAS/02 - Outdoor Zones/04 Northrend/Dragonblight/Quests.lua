@@ -599,6 +599,7 @@ _.Zones =
 				}),
 				q(12789, {	-- Into the Breach!
 					["coord"] = { 83.9, 26.0, 115 },
+					-- ["altQuests"] = { 12770 },	-- Reallocating Resources -- TODO: confirm this
 					["provider"] = { "n", 28228 },	-- Crusader Valus
 					["sourceQuest"] = 12545,	-- The Cleansing of Jintha'kalar
 					["isBreadcrumb"] = true,
@@ -1855,3 +1856,8 @@ _.Zones =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(12051),	-- Rustling Some Feathers
+	}),
+});

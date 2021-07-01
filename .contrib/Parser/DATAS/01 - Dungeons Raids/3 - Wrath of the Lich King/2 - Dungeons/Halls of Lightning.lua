@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(3, {	-- Wrath of the Lich King
-	inst(275, { 	-- Halls of Lightning
+	inst(275, {	-- Halls of Lightning
 		["description"] = "Upon departing Azeroth, the titans entrusted loyal protectors with safeguarding Ulduar, an enigmatic city nestled in the mountains of the Storm Peaks. Designated supreme among his brethren was the guardian known as Loken, but with the power of the titan complex in his hands, he turned to darkness and plunged the region into chaos.\n\n|CFFFF0000Need to finish off a WotLK rep?  Equip a tabard obtained from the faction quartermaster and clear the dungeon on normal for around 2k rep per clear.|r",
 		["lvl"] = 65,
 		["maps"] = { 138, 139 },
@@ -103,7 +103,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						["criteriaID"] = 1,			-- General Bjarngrim
 					},
 					i(36980),	-- Hewn Sparring Quarterstaff
-					i(157580), 	-- Spark of the Forge
+					i(157580),	-- Spark of the Forge
 					i(37814),	-- Iron Dwarf Smith Pauldrons
 					i(36982),	-- Mantle of Electrical Charges
 					i(37825),	-- Traditionally Dyed Handguards
@@ -123,7 +123,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(37843),	-- Giant-Hair Woven Gloves
 					i(37842),	-- Belt of Vivacity
 					i(36986),	-- Kilt of Molten Golems
-					i(157579), 	-- Slag-Stained Legplates
+					i(157579),	-- Slag-Stained Legplates
 					i(37841),	-- Slag Footguards
 				})),
 				cr(28546, e(599, {	-- Ionar
@@ -234,7 +234,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							["achievementID"] = 1834,	-- Lightning Struck
 						},
 						i(36980),	-- Hewn Sparring Quarterstaff
-						i(157580), 	-- Spark of the Forge
+						i(157580),	-- Spark of the Forge
 						i(37814),	-- Iron Dwarf Smith Pauldrons
 						i(36982),	-- Mantle of Electrical Charges
 						i(37825),	-- Traditionally Dyed Handguards
@@ -257,7 +257,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(37843),	-- Giant-Hair Woven Gloves
 						i(37842),	-- Belt of Vivacity
 						i(36986),	-- Kilt of Molten Golems
-						i(157579), 	-- Slag-Stained Legplates
+						i(157579),	-- Slag-Stained Legplates
 						i(37841),	-- Slag Footguards
 					})),
 					cr(28546, e(599, {	-- Ionar

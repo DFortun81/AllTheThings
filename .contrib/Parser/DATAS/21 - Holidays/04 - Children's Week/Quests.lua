@@ -18,7 +18,7 @@ _.Holidays =
 						["provider"] = { "n", 22818 },			-- Draenei Orphan
 						["description"] = "If you are missing this quest resummon your Draenei child to pick it up.",
 						["sourceQuests"] = {
-							10943, 	-- Children's Week
+							10943,	-- Children's Week
 						},
 						["coords"] = {
 							{ 88.56, 50.23, HELLFIRE_PENINSULA },
@@ -287,7 +287,7 @@ _.Holidays =
 						["provider"] = { "n", 22818 },			-- Draenei Orphan
 						["description"] = "If you are missing this quest resummon your Draenei child to pick it up.",
 						["sourceQuests"] = {
-							10943, 	-- Children's Week
+							10943,	-- Children's Week
 						},
 						["isYearly"] = true,
 						["coords"] = {
@@ -596,7 +596,7 @@ _.Holidays =
 						["isYearly"] = true,
 					},
 					{	-- Bird Friends [Alliance - Kul Tiran]
-						["questID"] = 53863, 	-- Bird Friends
+						["questID"] = 53863,	-- Bird Friends
 						["u"] = 20,				-- Children's Week Filter
 						["provider"] = { "n", 145394 },		-- Liam
 						["description"] = "If you are missing this quest resummon your Kul Tiran child to pick it up.",
@@ -799,7 +799,7 @@ _.Holidays =
 						["provider"] = { "n", 22818 },			-- Draenei Orphan
 						["description"] = "If you are missing this quest resummon your Draenei child to pick it up.",
 						["sourceQuests"] = {
-							10943, 	-- Children's Week
+							10943,	-- Children's Week
 						},
 						["coords"] = {
 							{ 31.44, 57.46, NAGRAND },	-- Dornaa taken to Aeris Landing
@@ -1122,7 +1122,7 @@ _.Holidays =
 						["isYearly"] = true,
 					},
 					{	-- Return to the Orphanage [Alliance - Kul Tiran - FINAL]
-						["questID"] = 53865, 	-- Return to the Orphanage
+						["questID"] = 53865,	-- Return to the Orphanage
 						["u"] = 20,				-- Children's Week Filter
 						["provider"] = { "n", 145394 },		-- Liam
 						["crs"] = {
@@ -1130,7 +1130,7 @@ _.Holidays =
 						},
 						["description"] = "If you are missing this quest resummon your Kul Tiran child to pick it up.",
 						["sourceQuests"] = {
-							53863, 	-- Bird Friends
+							53863,	-- Bird Friends
 							53864,	-- Shapeshifters
 						},
 						["coords"] = {
@@ -1450,7 +1450,7 @@ _.Holidays =
 						["isYearly"] = true,
 					},
 					{	-- The Mountain Folk [Alliance - Kul Tiran]
-						["questID"] = 53859, 	-- The Mountain Folk
+						["questID"] = 53859,	-- The Mountain Folk
 						["u"] = 20,				-- Children's Week Filter
 						["provider"] = { "n", 145394 },		-- Liam
 						["description"] = "If you are missing this quest resummon your Kul Tiran child to pick it up.",
@@ -1534,7 +1534,7 @@ _.Holidays =
 						["isYearly"] = true,
 					},
 					{	-- The Squid Shrine [Alliance - Kul Tiran]
-						["questID"] = 53862, 	-- The Squid Shrine
+						["questID"] = 53862,	-- The Squid Shrine
 						["u"] = 20,				-- Children's Week Filter
 						["provider"] = { "n", 145394 },		-- Liam
 						["description"] = "If you are missing this quest resummon your Kul Tiran child to pick it up.",
@@ -1612,7 +1612,7 @@ _.Holidays =
 						["isYearly"] = true,
 					},
 					{	-- Yo Ho, Yo Ho! [Alliance - Kul Tiran]
-						["questID"] = 53861, 	-- Yo Ho, Yo Ho!
+						["questID"] = 53861,	-- Yo Ho, Yo Ho!
 						["u"] = 20,				-- Children's Week Filter
 						["provider"] = { "n", 145394 },		-- Liam
 						["description"] = "If you are missing this quest resummon your Kul Tiran child to pick it up.",

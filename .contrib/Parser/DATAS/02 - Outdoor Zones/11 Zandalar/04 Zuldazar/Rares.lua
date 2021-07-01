@@ -52,7 +52,7 @@ _.Zones =
 					["questID"] = 50269,
 					["coord"] = { 74.2, 39.6, 862 },
 					["g"] = {
-						i(160952, {	--  Daggerjaw's Incisor
+						i(160952, {	-- Daggerjaw's Incisor
 							["bonusID"] = 4776,
 							["lvl"] = 110,
 						}),
@@ -156,7 +156,7 @@ _.Zones =
 				}),
 				n(131233, {	-- Lei-zhi
 					["questID"] = 49911,
-					["coord"] =  { 58.80, 74.21, 862 },
+					["coord"] = { 58.80, 74.21, 862 },
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
 						i(161033),	-- Jolting Leap Legguards
 						crit(6, {	-- Lei-zhi

@@ -614,10 +614,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11745, {	-- Desecrate this Fire! — Elwynn Forest
 				["isYearly"] = true,
 				["provider"] = { "o", 187564 },	-- Alliance Bonfire
-				["coord"] = { 43.2, 63.0, 37 },
+				["coord"] = { 43.2, 63.0, ELWYNN_FOREST },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-				["maps"] = { 37 },	-- Elwynn Forest
+				["maps"] = { ELWYNN_FOREST },
 			}),
 			q(11746, {	-- Desecrate this Fire! — Feralas
 				["isYearly"] = true,
@@ -686,10 +686,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11751, {	-- Desecrate this Fire! — Redridge Mountains
 				["isYearly"] = true,
 				["provider"] = { "o", 187934 },	-- Alliance Bonfire
-				["coord"] = { 24.4, 53.9, 49 },
+				["coord"] = { 24.4, 53.9, REDRIDGE_MOUNTAINS },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-				["maps"] = { 49 },	-- Redridge Mountains
+				["maps"] = { REDRIDGE_MOUNTAINS },
 			}),
 			q(11752, {	-- Desecrate this Fire! — Shadowmoon Valley (Outland)
 				["isYearly"] = true,
@@ -1044,9 +1044,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11816, {	-- Honor the Flame — Elwynn Forest
 				["provider"] = { "n", 25898 },	-- Elwynn Forest Flame Warden
 				["isYearly"] = true,
-				["coord"] = { 43.5, 62.7, 37 },
+				["coord"] = { 43.5, 62.7, ELWYNN_FOREST },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 37 },	-- Elwynn Forest
+				["maps"] = { ELWYNN_FOREST },
 			}),
 			q(11817, {	-- Honor the Flame — Feralas
 				["provider"] = { "n", 25899 },	-- Feralas Flame Warden
@@ -1114,9 +1114,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11822, {	-- Honor the Flame — Redridge Mountains
 				["provider"] = { "n", 25904 },	-- Redridge Flame Warden
 				["isYearly"] = true,
-				["coord"] = { 25.0, 53.5, 49 },
+				["coord"] = { 25.0, 53.5, REDRIDGE_MOUNTAINS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 49 },	-- Redridge Mountains
+				["maps"] = { REDRIDGE_MOUNTAINS },
 			}),
 			q(11823, {	-- Honor the Flame — Shadowmoon Valley (Outland)
 				["provider"] = { "n", 25905 },	-- Shadowmoon Valley Flame Warden
@@ -1909,10 +1909,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 					THE_HINTERLANDS,
 					DUN_MOROGH,
 					BURNING_STEPPES,
-					37,		-- Elwynn Forest
+					ELWYNN_FOREST,
 					DUSKWOOD,
 					LOCH_MODAN,
-					49,		-- Redridge Mountains
+					REDRIDGE_MOUNTAINS,
 					50,		-- Northern Stranglethorn
 					51,		-- Swamp of Sorrows
 					52,		-- Westfall

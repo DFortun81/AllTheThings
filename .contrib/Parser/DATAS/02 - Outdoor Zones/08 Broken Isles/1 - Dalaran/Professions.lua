@@ -198,8 +198,8 @@ local THE_WISH_REMOVER = {
 
 _.Zones =
 {
-	m(619, { 	-- The Broken Isles
-		m(627, { 	-- Dalaran
+	m(619, {	-- The Broken Isles
+		m(627, {	-- Dalaran
 			n(-38,  {	-- Profession
 				prof(ALCHEMY, {
 					q(39329, {	-- A Dormant Burner
@@ -715,7 +715,7 @@ _.Zones =
 					}),
 				}),
 				prof(FISHING, {
-					n(-10067, { 	-- Artifact
+					n(-10067, {	-- Artifact
 						["description"] = "Prerequisites:\n\n  Be level 45.\n  Have level 800 Fishing.\n  Complete the achievement Bigger Fish to Fry.\n\nOnce you have all of these things, you can fish from any Fishing Pool on the Broken Isles for the quest item linked below.",
 						["lvl"] = { 45 },
 						["g"] = {
@@ -730,7 +730,7 @@ _.Zones =
 								["description"] = "If you can't find Nat Pagle to give you this quest, going into the bank just south of the fountain seems to force him to spawn right on you.",
 								["g"] = {
 									artifact(841),	-- Base Skin
-									ach(11725, { 	-- Fisherfriend of the Isles
+									ach(11725, {	-- Fisherfriend of the Isles
 										["description"] = "When you complete this achievement, you get an item that unlocks the two remaining appearances. See the other Broken Isles zones for more information.",
 										["providers"] = {
 											{ "n", 120456 },	-- Keeper Raynae
@@ -776,7 +776,7 @@ _.Zones =
 						},
 					}),
 					n(95844, {	-- Marcia Chase <Fishing Trainer & Supplies>
-						ach(10722, { 	-- The Wish Remover
+						ach(10722, {	-- The Wish Remover
 							["description"] = "You need to use the special lures sold by the trainer to earn this achievement.",
 							["requireSkill"] = FISHING,
 							["g"] = THE_WISH_REMOVER,

@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(SHADOWLANDS, {
 		m(ARDENWEALD, {
-			n(-169, { 	-- Emissary Quests
+			n(-169, {	-- Emissary Quests
 				q(61098, {	-- Supplies from The Wild Hunt
 					["provider"] = { "n", 158556 },	-- Aithlyn <Wild Hunt Quartermaster>
 					["lvl"] = { 60 },

@@ -359,7 +359,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 1340 },	-- Mountaineer Kadrell
 				}),
-				q(309,   { 	-- Protecting the Shipment
+				q(309,   {	-- Protecting the Shipment
 					["sourceQuests"] = { 13639 },	-- Resupplying the Excavation
 					["coord"] = { 56.4, 65.8, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
@@ -377,10 +377,10 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(58977)), 	-- Algaz Shield
+						un(REMOVED_FROM_GAME, i(58977)),	-- Algaz Shield
 						un(REMOVED_FROM_GAME, i(3217)),	-- Foreman Belt
 						un(REMOVED_FROM_GAME, i(6188)),	-- Mud Stompers
-						un(REMOVED_FROM_GAME, i(58976)), 	-- Rat Ear Cloak
+						un(REMOVED_FROM_GAME, i(58976)),	-- Rat Ear Cloak
 					},
 				}),
 				q(301,   {	-- Report to Ironforge
@@ -558,10 +558,10 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(59028)),	-- Bluntnose's Signet
-						un(REMOVED_FROM_GAME, i(59026)), 	-- Bounty Hunter's Bracers
+						un(REMOVED_FROM_GAME, i(59026)),	-- Bounty Hunter's Bracers
 						un(REMOVED_FROM_GAME, i(6191)),		-- Kimbra Boots
 						un(REMOVED_FROM_GAME, i(1449)),		-- Minor Channeling Ring
-						un(REMOVED_FROM_GAME, i(59027)), 	-- Thelsamar Chainmail
+						un(REMOVED_FROM_GAME, i(59027)),	-- Thelsamar Chainmail
 					},
 				}),
 				q(13648, {	-- WANTED: The Dark Iron Spy

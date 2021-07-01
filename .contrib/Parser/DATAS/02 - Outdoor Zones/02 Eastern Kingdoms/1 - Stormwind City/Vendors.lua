@@ -1662,6 +1662,17 @@ _.Zones =
 						}),
 					},
 				}),
+				n(179896, {	-- Finn
+					["coord"] = { 61.0, 65.0, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(187009),	-- Dazzling Spectacles
+						i(186092),	-- Historical Perspective Shifters
+						i(186091),	-- Onyx Glare-Reducers
+						i(186090),	-- Simple Glasses
+						i(187010),	-- Tasteful Eyeglasses
+					},
+				}),
 				n(1298,   {	-- Frederick Stover
 					["coord"] = { 58.6, 69.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
@@ -2654,7 +2665,7 @@ _.Zones =
 								{ "i", 71679, 1 },	-- Chest of the Fiery Conqueror
 							},
 						}),
-						i(71150), 	-- Scorchvine Wand
+						i(71150),	-- Scorchvine Wand
 						i(71208),	-- Serrated Brimstone Signet
 						i(70941),	-- Shoulderguards of the Molten Giant
 						i(71608, {	-- Shoulderguards of the Molten Giant
@@ -2793,16 +2804,16 @@ _.Zones =
 					["coord"] = { 67.8, 18.4, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						i(87795), 	-- Black Dragon Turtle
-						i(91008, { 	-- Black Dragon Turtle (Panda)
+						i(87795),	-- Black Dragon Turtle
+						i(91008, {	-- Black Dragon Turtle (Panda)
 							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
-						i(87796), 	-- Blue Dragon Turtle
+						i(87796),	-- Blue Dragon Turtle
 						i(91009, {	-- Blue Dragon Turtle (Panda)
 							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
-						i(87797), 	-- Brown Dragon Turtle
-						i(91005, { 	-- Brown Dragon Turtle (Panda)
+						i(87797),	-- Brown Dragon Turtle
+						i(91005, {	-- Brown Dragon Turtle (Panda)
 							["races"] = { PANDAREN_ALLIANCE, PANDAREN_HORDE },
 						}),
 						i(87802),	-- Great Black Dragon Turtle

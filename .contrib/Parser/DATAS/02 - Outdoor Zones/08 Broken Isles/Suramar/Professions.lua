@@ -4,9 +4,9 @@
 
 _.Zones =
 {
-	m(619, { 	-- The Broken Isles
+	m(619, {	-- The Broken Isles
 		m(680, {	-- Suramar
-			n(-38, { 	-- Profession
+			n(-38, {	-- Profession
 				prof(ARCHAEOLOGY, {
 					q(41173, {	-- A Beacon of Hope
 						["isWeekly"] = true,
@@ -74,13 +74,13 @@ _.Zones =
 					i(141011, {	-- Recipe: Surf
 						["description"] = "Drops from any marine mob in the zone.",
 						["g"] = {
-							i(133817), 	-- Recipe: Suramar Surf and Turf
+							i(133817),	-- Recipe: Suramar Surf and Turf
 						},
 					}),
 					i(141012, {	-- Recipe: Turf
 						["description"] = "Fly to Crimson Thicket, Suramar. Kill the Heartwood stag. 3-4 and you should have it.",
 						["g"] = {
-							i(133817), 	-- Recipe: Suramar Surf and Turf
+							i(133817),	-- Recipe: Suramar Surf and Turf
 						},
 					}),
 				}),
@@ -213,7 +213,7 @@ _.Zones =
 							}),
 						},
 					}),
-					ach(11725, { 	-- Fisherfriend of the Isles
+					ach(11725, {	-- Fisherfriend of the Isles
 						["collectible"] = false,
 						["description"] = "The Fishing Masters are on a daily rotation, so only one is up at a time.  The order is:\n\n1. Sha'leth\n2. Impus\n3. Ilyssia of the Waters\n4. Keeper Raynae\n5. Akule Riverhorn\n6. Corbyn\n\nMake sure you're close enough to the Fishing Master to get the |cFFFFD700Something's Fishy|r buff, or you won't be able to fish up the items (the buff may not show up until you dismount).\n\nThe quickest way to reach Best Friend is to fish in a group.\n",
 						["g"] = {

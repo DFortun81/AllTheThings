@@ -17,7 +17,7 @@ end
 
 _.WorldEvents =
 {
-	n(-520, { 	-- Expansion Prelaunch Events
+	n(-520, {	-- Expansion Prelaunch Events
 		["icon"] = "Interface\\Icons\\inv_misc_missilesmallcluster_green",
 		["groups"] = {
 			n(-526, {	-- Legion
@@ -243,13 +243,13 @@ _.WorldEvents =
 						q(43298),	-- Defend (Azshara)
 						q(43291),	-- Defend (Dun Morogh)
 						q(43296),	-- Defend (Hillsbrad Foothills)
-						q(43289), 	-- Defend (Northern Barrens)
-						q(43293), 	-- Defend (Tanaris)
+						q(43289),	-- Defend (Northern Barrens)
+						q(43293),	-- Defend (Tanaris)
 						q(43299),	-- Demon Commander (Azshara)
 						q(43283),	-- Demon Commander (Dun Morogh)
 						q(43286),	-- Demon Commander (Hillsbrad Foothills)
 						-- try to find ID for Demon Commander (Northern Barrens)
-						q(43243), 	-- Demon Commander (Tanaris)
+						q(43243),	-- Demon Commander (Tanaris)
 						q(40755, {	-- Hiding in the Stacks
 							["provider"] = { "n", 101547 },	-- Archmage Khadgar
 							["sourceQuests"] = { 42970 },	-- The Diamond King
@@ -277,8 +277,8 @@ _.WorldEvents =
 						q(43300),	-- Repel (Azshara)
 						q(43292),	-- Repel (Dun Morogh)
 						q(43297),	-- Repel (Hillsbrad Foothills)
-						q(43290), 	-- Repel (Northern Barrens)
-						q(43294), 	-- Repel (Tanaris)
+						q(43290),	-- Repel (Northern Barrens)
+						q(43294),	-- Repel (Tanaris)
 						q(42970, {	-- The Diamond King
 							["provider"] = { "n", 113655 },	-- Brann Bronzebeard
 							["sourceQuests"] = { 40717, 40718 },	-- Calling of the Council
@@ -352,7 +352,7 @@ _.WorldEvents =
 						})),
 					}),
 					n(ZONEDROPS, {
-						n(112315, { 	-- Dread Infiltrator
+						n(112315, {	-- Dread Infiltrator
 							["description"] = "Players with some sort of Sense Demons ability could get this mob to spawn from Doomsayers.",
 							["groups"] = {
 								un(REMOVED_FROM_GAME, i(140363)),	-- Pocket Fel Spreader Toy

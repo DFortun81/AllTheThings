@@ -53,3 +53,18 @@ _.Zones =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10100, {	-- Shadowlands	
+		n(-163, {	-- Armor
+			n(-43, {	-- Cloth
+				i(179587),	-- Drust Mask
+				i(179588),	-- Drust Mask
+				i(179589),	-- Drust Mask
+				i(179590),	-- Drust Mask
+				i(179591),	-- Drust Mask
+				i(179592),	-- Drust Mask
+				i(179595),	-- Drust Mask
+			}),
+		}),
+	}),
+});

@@ -25,14 +25,14 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					["provider"] = { "n", 28012 },	-- Image of Belgaristrasz
 					["sourceQuest"] = 13126,
 				}),
-				q(13128, { 	-- A Wing and a Prayer
+				q(13128, {	-- A Wing and a Prayer
 					["provider"] = { "n", 28012 },	-- Image of Belgaristrasz
 					["sourceQuest"] = 13127,
 					["groups"] = {
-						i(44340), 	-- Bindings of Raelorasz
+						i(44340),	-- Bindings of Raelorasz
 						i(44341),	-- Bracers of Reverence
-						i(44338), 	-- Cuffs of Gratitude
-						i(44339), 	-- Soaring Wristwraps
+						i(44338),	-- Cuffs of Gratitude
+						i(44339),	-- Soaring Wristwraps
 					},
 				}),
 			}),

@@ -192,7 +192,7 @@ _.PVP =
 						["races"] = HORDE_ONLY,
 						["g"] = {
 							title(285),	-- <Name>, Spear of Vol'jin
-							faction(1681), 	-- Vol'jin's Spear
+							faction(1681),	-- Vol'jin's Spear
 						},
 					}),
 					ach(9474, {	-- Wrynn's Vanguard

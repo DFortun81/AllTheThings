@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(876, { 	-- Kul'Tiras
+	m(876, {	-- Kul'Tiras
 		m(942, {	-- Stormsong Valley
 			n(-34,  {	-- World Quests
 				n(QUESTS, {
@@ -97,7 +97,7 @@ _.Zones =
 						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
-					q(51618, { 	-- Azerite Madness
+					q(51618, {	-- Azerite Madness
 						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
@@ -127,7 +127,7 @@ _.Zones =
 						["npcID"] = 134147,		-- Beehemoth
 						["isWorldQuest"] = true,
 						["g"] = {
-							i(160459, { 	-- Apiarist's Stingproof Belt
+							i(160459, {	-- Apiarist's Stingproof Belt
 								["bonusID"] = 4803,		-- WQ Bonus ID
 							}),
 						},
@@ -548,7 +548,7 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
-					q(51974, { 	-- Sabertron (COPPER)
+					q(51974, {	-- Sabertron (COPPER)
 						["isWorldQuest"] = true,
 						["g"] = {
 							crit(5, {	-- Copper Sabertron
@@ -863,7 +863,7 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["requireSkill"] = INSCRIPTION,
 						["g"] = {
-							i(162364), 	-- Recipe: Contract: Storm's Wake (Rank 3)
+							i(162364),	-- Recipe: Contract: Storm's Wake (Rank 3)
 						},
 					}),
 					q(52347, {	-- Work Order: Honey-Glazed Haunchs (Rank 3)
@@ -890,7 +890,7 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["requireSkill"] = ENCHANTING,
 						["g"] = {
-							i(162299), 	-- Formula: Enchant Ring - Seal of Haste (Rank 3)
+							i(162299),	-- Formula: Enchant Ring - Seal of Haste (Rank 3)
 						},
 					}),
 					q(52354, {	-- Work Order: Enchant Ring - Seal of Mastery
@@ -899,7 +899,7 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["requireSkill"] = ENCHANTING,
 						["g"] = {
-							i(162300), 	-- Formula: Enchant Ring - Seal of Mastery (Rank 3)
+							i(162300),	-- Formula: Enchant Ring - Seal of Mastery (Rank 3)
 						},
 					}),
 					q(52344, {	-- Work Order: Kul Tiramisu (Rank 3)

@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(7, {	-- Legion
-	inst(762, { 	-- Darkheart Thicket
+	inst(762, {	-- Darkheart Thicket
 		["mapID"] = 733,
 		["coord"] = { 59.0, 31.3, 641 },
 		["lvl"] = 98,

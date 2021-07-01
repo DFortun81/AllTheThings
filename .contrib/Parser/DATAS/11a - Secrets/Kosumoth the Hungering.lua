@@ -4,7 +4,7 @@
 
 _.Secrets =
 {
-	n(111573, { 	-- Kosumoth the Hungering
+	n(111573, {	-- Kosumoth the Hungering
 		["description"] = "***Quest tracking enabled is required to see all the steps.***\n\nThis will show you how to unlock |cFFFFD700Kosumoth the Hungering|r, which has a world quest that awards the |cFFFFD700Hungering Claw|r pet or the |cFFFFD700Fathom Dweller|r mount.",
 		["g"] = {
 			n(102695, {	-- Drak'thul
@@ -110,7 +110,7 @@ _.Secrets =
 				["description"] = "You can now head to |cFFFFD700Eye of Azshara|r, the zone, and kill |cFFFFD700Kosumoth the Hungering|r when |cFFFFD700DANGER: Kosumoth the Hungering|r world quest is active to get your pet and mount.",
 				["isWeekly"] = true,
 				["g"] = {
-					i(140261), 	-- Hungering Claw (PET!)
+					i(140261),	-- Hungering Claw (PET!)
 					i(138201),	-- Fathom Dweller (MOUNT!)
 				},
 			}),

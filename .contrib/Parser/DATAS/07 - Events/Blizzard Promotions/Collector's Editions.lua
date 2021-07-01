@@ -52,6 +52,11 @@ _.WorldEvents =
 						["races"] = { BLOODELF },
 						["u"] = REMOVED_FROM_GAME,
 					}),
+					q(12781, {	-- Welcome! (Death Knight)
+						["provider"] = { "i", 39713 },	-- Ebon Hold Gift Voucher
+						["classes"] = { DEATHKNIGHT },
+						["u"] = REMOVED_FROM_GAME,
+					}),
 					q(9278, {	-- Welcome! (Draenei)
 						["provider"] = { "i", 22888 },	-- Azure Watch Gift Voucher
 						["races"] = { DRAENEI },

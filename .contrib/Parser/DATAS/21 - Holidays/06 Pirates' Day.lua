@@ -46,7 +46,7 @@ _.Holidays = bubbleDown({["u"] = 23},
 				n(122396, {	-- Edward Techt
 					["description"] = "To purchase the |cFFFFD700Jolly Roger|r toy, you must have earned the achievement |cFFFFD700Avast Ye, Admiral|r.",
 					["coord"] = { 39.6, 84.2, 210 },
-					["g"] =  {
+					["g"] = {
 						i(150547, {	-- Jolly Roger (Toy)
 							["description"] = "To purchase this toy, you must have earned the achievement |cFFFFD700Avast Ye, Admiral|r.",
 						}),

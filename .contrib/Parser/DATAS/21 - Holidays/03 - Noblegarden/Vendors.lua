@@ -86,12 +86,12 @@ _.Holidays = bubbleDown({ ["u"] = HOLIDAY_NOBLEGARDEN }, {
 				["coords"] = {
 					{ 49.01, 51.19, AZUREMYST_ISLE },	-- Azure Watch, Azuremyst Isle
 					{ 55.72, 51.31, TELDRASSIL },	-- Dolanaar
-					{ 43.03, 65.32, 37 },	-- Goldshire, Elwynn Forest
+					{ 43.03, 65.32, ELWYNN_FOREST },	-- Goldshire
 					{ 54.11, 50.81, DUN_MOROGH },	-- Kharanos
 				},
 				["maps"] = {
 					DUN_MOROGH,
-					37,	-- Elwynn Forest
+					ELWYNN_FOREST,
 					TELDRASSIL,
 					AZUREMYST_ISLE,
 				},

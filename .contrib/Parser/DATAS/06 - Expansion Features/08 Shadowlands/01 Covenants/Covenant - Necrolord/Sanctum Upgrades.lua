@@ -676,12 +676,57 @@ _.ExpansionFeatures =
 							}),
 						}),
 						n(-917, {	-- Tier 2: Streaming Threads
+							q(62563, {	-- Back Again!
+								["isDaily"] = true,
+								["provider"] = { "n", 160523 },	-- Cyrin Smirk
+								["coord"] = { 51.4, 16.2, MALDRAXXUS },
+							}),
+							q(62403, {	-- Boared to Death
+								["isDaily"] = true,
+								["provider"] = { "n", 167603 },	-- Fixer Bixie
+								["coord"] = { 49.0, 36.0, MALDRAXXUS },
+							}),
+							q(62390, {	-- Body Count
+								["isDaily"] = true,
+								["provider"] = { "n", 167603 },	-- Fixer Bixie
+								["coord"] = { 49.0, 36.0, MALDRAXXUS },
+							}),
 							q(62364, {	-- Dire Learning
 								["isDaily"] = true,
 								["provider"] = { "n", 167603 },	-- Fixer Bixie
 								["coord"] = { 49.0, 36.0, MALDRAXXUS },
 							}),
+							q(62363, {	-- Heavy Lifting
+								["isDaily"] = true,
+								["provider"] = { "n", 167603 },	-- Fixer Bixie
+								["coord"] = { 49.0, 36.0, MALDRAXXUS },
+							}),
+							q(58211, {	-- Pumped Up
+								["isDaily"] = true,
+								["provider"] = { "n", 168675 },	-- Varzisk Lidless
+								["coord"] = { 51.2, 16.8, MALDRAXXUS },
+							}),
 							q(58260, {	-- Queens and Future Kings
+								["isDaily"] = true,
+								["provider"] = { "n", 167603 },	-- Fixer Bixie
+								["coord"] = { 49.0, 36.0, MALDRAXXUS },
+							}),
+							q(57964, {	-- Revenge Is Easy
+								["isDaily"] = true,
+								["provider"] = { "n", 160523 },	-- Cyrin Smirk
+								["coord"] = { 51.4, 16.2, MALDRAXXUS },
+							}),
+							q(60482, {	-- See With My Eyes
+								["isDaily"] = true,
+								["provider"] = { "n", 168675 },	-- Varzisk Lidless
+								["coord"] = { 51.2, 16.8, MALDRAXXUS },
+							}),
+							q(60505, {	-- Spider's Lair
+								["isDaily"] = true,
+								["provider"] = { "n", 168675 },	-- Varzisk Lidless
+								["coord"] = { 51.2, 16.8, MALDRAXXUS },
+							}),
+							q(62362, {	-- Volatile Reactions
 								["isDaily"] = true,
 								["provider"] = { "n", 167603 },	-- Fixer Bixie
 								["coord"] = { 49.0, 36.0, MALDRAXXUS },
@@ -697,51 +742,67 @@ _.ExpansionFeatures =
 					}),
 					n(-905, {	-- Command Table
 						n(-906, {	-- Tier 1: Tactical Insight
-							q(62312, {	-- Adventurer: Gunn Gorgebone
+							q(64465, {	-- Adventurer: Enceladus
+								["description"] = "Requires Renown 62.",
 								["provider"] = { "n", 165321 },	-- Merick Feldscar
 								["coord"] = { 38.8, 48.2, 1698 },
-								["description"] = "Becomes available at Renown 12",
+								["g"] = {
+									follower(1335),	-- Enceladus
+								},
+							}),
+							q(62312, {	-- Adventurer: Gunn Gorgebone
+								["description"] = "Requires Renown 12.",
+								["provider"] = { "n", 165321 },	-- Merick Feldscar
+								["coord"] = { 38.8, 48.2, 1698 },
 								["g"] = {
 									follower(1301),	-- Gunn Gorgebone
 								},
 							}),
 							q(62314, {	-- Adventurer: Khaliiq
+								["description"] = "Requires Renown 27.",
 								["provider"] = { "n", 165321 },	-- Merick Feldscar
 								["coord"] = { 38.8, 48.2, 1698 },
-								["description"] = "Becomes available at Renown 27",
 								["g"] = {
 									follower(1303),	-- Khaliiq
 								},
 							}),
-							q(62315, {	-- Adventurer: Plaguey
+							q(64464, {	-- Adventurer: Lyra Hailstorm
+								["description"] = "Requires Renown 44.",
 								["provider"] = { "n", 165321 },	-- Merick Feldscar
 								["coord"] = { 38.8, 48.2, 1698 },
-								["description"] = "Becomes available at Renown 33",
+								["g"] = {
+									follower(1334),	-- Lyra Hailstorm
+								},
+							}),
+							q(62315, {	-- Adventurer: Plaguey
+								["description"] = "Requires Renown 33.",
+								["provider"] = { "n", 165321 },	-- Merick Feldscar
+								["coord"] = { 38.8, 48.2, 1698 },
 								["g"] = {
 									follower(1304),	-- Plaguey
 								},
 							}),
 							q(62316, {	-- Adventurer: Rathan
+								["description"] = "Requires Renown 38.",
 								["provider"] = { "n", 165321 },	-- Merick Feldscar
 								["coord"] = { 38.8, 48.2, 1698 },
-								["description"] = "Becomes available at Renown 38",
 								["g"] = {
 									follower(1305),	-- Rathan
 								},
 							}),
 							q(62313, {	-- Adventurer: Rencissa the Dynamo
+								["description"] = "Requires Renown 17.",
 								["provider"] = { "n", 165321 },	-- Merick Feldscar
 								["coord"] = { 38.8, 48.2, 1698 },
-								["description"] = "Becomes available at Renown 17",
 								["g"] = {
 									follower(1302),	-- Rencissa the Dynamo
 								},
 							}),
 							q(62309, {	-- Adventurer: Secutor Mevix
 								["sourceQuests"] = { 59603 },	-- In Shadowlands Service
+								["description"] = "Requires Renown 4.",
 								["provider"] = { "n", 165321 },	-- Merick Feldscar
 								["coord"] = { 38.8, 48.2, 1698 },
-								["description"] = "Becomes available at Renown 4",
 								["g"] = {
 									follower(1300),	-- Secutor Mevix
 								},
@@ -790,7 +851,15 @@ _.ExpansionFeatures =
 	}),
 };
 
-_.HiddenQuestTriggers =
-{
+_.HiddenQuestTriggers = {
 	q(60773),	-- Triggered shortly after completing 'Dude, Where's My Necropolis' (60184) after NPC RP
+	q(60780),	-- triggered the first time i channeled anima to the daily quest hub
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(58377),	-- Abomination Part: Magnificent Skin
+		q(58378),	-- Abomination Part: Regenerative Frame
+		q(58596),	-- Specter Of War: Visectus
+		q(58664),	-- Ultimate Makeover
+	}),
+});

@@ -27,7 +27,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 			}),
 			d(1, {	-- Normal
 				e(2153, {	-- Aqu'sirr
-					["crs"]  = {
+					["crs"] = {
 						134056,	-- Aqu'sirr
 						134828,	-- Aqualing
 					},
@@ -41,7 +41,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 				}),
 				e(2154, {	-- Tidesage Council
-					["crs"]  = {
+					["crs"] = {
 						134063,	-- Brother Ironhull
 						134058,	-- Galecaller Faye
 					},
@@ -56,7 +56,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 				}),
 				e(2155, {	-- Lord Stormsong
-					["crs"]  = {
+					["crs"] = {
 						134060,	-- Lord Stormsong
 					},
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
@@ -69,7 +69,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 					}),
 				}),
 				e(2156, {	-- Vol'zith the Whisperer
-					["crs"]  = {
+					["crs"] = {
 						134069,	-- Vol'zith the Whisperer
 					},
 					["g"] = bubbleDown({["bonusID"] = 4776, ["lvl"] = 110}, {
@@ -91,7 +91,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				["lvl"] = 120,
 				["g"] = {
 					e(2153, {	-- Aqu'sirr
-						["crs"]  = {
+						["crs"] = {
 							134056,	-- Aqu'sirr
 						},
 						["g"] = {
@@ -104,7 +104,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						},
 					}),
 					e(2154, {	-- Tidesage Council
-						["crs"]  = {
+						["crs"] = {
 							134063,	-- Brother Ironhull
 							134058,	-- Galecaller Faye
 						},
@@ -119,7 +119,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						},
 					}),
 					e(2155, {	-- Lord Stormsong
-						["crs"]  = {
+						["crs"] = {
 							134060,	-- Lord Stormsong
 						},
 						["g"] = {
@@ -132,7 +132,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						},
 					}),
 					e(2156, {	-- Vol'zith the Whisperer
-						["crs"]  = {
+						["crs"] = {
 							134069,	-- Vol'zith the Whisperer
 						},
 						["g"] = {
@@ -157,7 +157,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				["g"] = {
 					ach(12600),	-- Breath of the Shrine
 					e(2153, {	-- Aqu'sirr
-						["crs"]  = {
+						["crs"] = {
 							134056,	-- Aqu'sirr
 						},
 						["g"] = {
@@ -197,7 +197,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						},
 					}),
 					e(2155, {	-- Lord Stormsong
-						["crs"]  = {
+						["crs"] = {
 							134060,	-- Lord Stormsong
 						},
 						["g"] = {
@@ -223,7 +223,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 						},
 					}),
 					e(2156, {	-- Vol'zith the Whisperer
-						["crs"]  = {
+						["crs"] = {
 							134069,	-- Vol'zith the Whisperer
 						},
 						["g"] = {

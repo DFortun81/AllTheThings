@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(875, { 	-- Zandalar
+	m(875, {	-- Zandalar
 		m(1163, {	-- Dazar'alor
 			n(FLIGHT_PATHS, {
 				fp(1957, {	-- Port of Zandalar, Zuldazar [Horde]

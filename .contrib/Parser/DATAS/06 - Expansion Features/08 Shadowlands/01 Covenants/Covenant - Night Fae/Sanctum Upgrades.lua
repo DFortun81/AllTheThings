@@ -103,50 +103,66 @@ _.ExpansionFeatures =
 						}),
 					}),
 					n(-905, {	-- Command Table
-						q(61857, {	-- Adventurer: Groonoomcrooek
+						q(64459, {	-- Adventurer: Elwyn
+							["description"] = "Requires Renown 62.",
 							["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
 							["coord"] = { 44.7, 56.3, ARDENWEALD },
+							["g"] = {
+								follower(1338),	-- Elwyn
+							},
+						}),
+						q(61857, {	-- Adventurer: Groonoomcrooek
 							["description"] = "Requires Renown 38.",
+							["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+							["coord"] = { 44.7, 56.3, ARDENWEALD },
 							["g"] = {
 								follower(1288),	-- Groonoomcrooek
 							},
 						}),
 						q(61854, {	-- Adventurer: Master Sha'lor
+							["description"] = "Requires Renown 17.",
 							["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
 							["coord"] = { 44.7, 56.3, ARDENWEALD },
-							["description"] = "Requires Renown 17.",
 							["g"] = {
 								follower(1284),	-- Master Sha'lor
 							},
 						}),
 						q(61852, {	-- Adventurer: Guardian Kota
+							["description"] = "Requires Renown 4.",
 							["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
 							["coord"] = { 44.7, 56.3, ARDENWEALD },
-							["description"] = "Requires Renown 4.",
 							["g"] = {
 								follower(1283),	-- Guardian Kota
 							},
 						}),
 						q(61855, {	-- Adventurer: Qadarin
+							["description"] = "Requires Renown 27.",
 							["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
 							["coord"] = { 44.7, 56.3, ARDENWEALD },
-							["description"] = "Requires Renown 27.",
 							["g"] = {
 								follower(1286),	-- Qadarin
 							},
 						}),
-						q(61853, {	-- Adventurer: Te'zan
+						q(64458, {	-- Adventurer: Sulanoom
+							["description"] = "Requires Renown 44.",
 							["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
 							["coord"] = { 44.7, 56.3, ARDENWEALD },
+							["g"] = {
+								follower(1337),	-- Sulanoom
+							},
+						}),
+						q(61853, {	-- Adventurer: Te'zan
 							["description"] = "Requires Renown 12.",
+							["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+							["coord"] = { 44.7, 56.3, ARDENWEALD },
 							["g"] = {
 								follower(1285),	-- Te'zan
 							},
 						}),
 						q(61856, {	-- Adventurer: Watcher Vesperbloom
+							["description"] = "Requires Renown 33.",
 							["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
 							["coord"] = { 44.7, 56.3, ARDENWEALD },
-							["description"] = "Requires Renown 33.",
 							["g"] = {
 								follower(1287),	-- Watcher Vesperbloom
 							},
@@ -189,10 +205,10 @@ _.ExpansionFeatures =
 										i(181316),	-- Silvertip Dredwing
 										i(180414, {	-- Wakener's Runestag
 											["description"] = "Use |cFFFFD7002x|r |cffd05f10Wildseed Root Grain|r on an Anima Catalyst Plot & use |cff6778ffDivine Untamed Spirit|r on Wildseed of Regrowth with |cFFFFD7002x|r or more Anima Catalyst Plots nearby.",
-											-- ["cost"] = {	-- TODO: waiting to verify...
-											-- 	{ "i", 177699, 1 },	-- Divine Untamed Spirit Ardenweald
-											-- 	{ "i", 176832, 2 },	-- Wildseed Root Grain
-											-- },
+											--["cost"] = {	-- TODO: waiting to verify...
+											--	{ "i", 177699, 1 },	-- Divine Untamed Spirit Ardenweald
+											--	{ "i", 176832, 2 },	-- Wildseed Root Grain
+											--},
 										}),
 									},
 								}),
@@ -256,6 +272,12 @@ _.ExpansionFeatures =
 									["isWeekly"] = true,
 								}),
 								q(62452, {	-- A Spirit's Might
+									["sourceQuests"] = { 62454 },	-- A Rare and Unusual Spirit (2)
+									["provider"] = { "n", 174329 },	-- Falir the Shifting
+									["coord"] = { 24.0, 53.3, 1662 },
+									["isWeekly"] = true,
+								}),
+								q(62445, {	-- A Spirit's Pride
 									["sourceQuests"] = { 62454 },	-- A Rare and Unusual Spirit (2)
 									["provider"] = { "n", 174329 },	-- Falir the Shifting
 									["coord"] = { 24.0, 53.3, 1662 },
@@ -666,3 +688,14 @@ _.ExpansionFeatures =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(59870),	-- [OLD NOT USED]
+		q(59912),	-- [OLD NOT USED]
+		q(59925),	-- [OLD NOT USED]
+		q(60643),	-- [OLD NOT USED]
+		q(60726),	-- [OLD NOT USED]
+		q(59840),	-- Divine Gratitude
+		q(59986),	-- Wide Worlds of Catalysts
+	}),
+});

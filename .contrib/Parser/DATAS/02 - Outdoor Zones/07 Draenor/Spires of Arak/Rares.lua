@@ -90,7 +90,7 @@ _.Zones =
 						crit(2, {	-- Gluttonous Giant
 							["achievementID"] = 9600,	-- Monster Mash
 						}),
-						i(119404), 	-- Glowing Morel
+						i(119404),	-- Glowing Morel
 					},
 				}),
 				n(86724, {	-- Hermit Palefur

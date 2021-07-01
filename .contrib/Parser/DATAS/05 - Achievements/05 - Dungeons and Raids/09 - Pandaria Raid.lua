@@ -352,7 +352,7 @@ _.Achievements =
 				["achievementID"] = 6724,	-- Heroic: Will of the Emperor
 				["groups"] = {
 					{	-- ,Delver of the Vaults
-						["titleID"] =  204,	-- ,Delver of the Vaults
+						["titleID"] = 204,	-- ,Delver of the Vaults
 					},
 				},
 			},

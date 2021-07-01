@@ -1286,7 +1286,7 @@ _.Zones =
 							}),
 						},
 					}),
-					n(29538, { 	-- Hexil Garrot <Tools of the Trade>
+					n(29538, {	-- Hexil Garrot <Tools of the Trade>
 						["coord"] = { 60.6, 11.9, 126 },
 						["g"] = {
 							i(40739),	-- Bands of the Great Tree
@@ -1311,7 +1311,7 @@ _.Zones =
 							i(40738),	-- Wristwraps of the Cutthroat
 						},
 					}),
-					n(69318, { 	-- Kylo Kelwin <Furious Gladiator>
+					n(69318, {	-- Kylo Kelwin <Furious Gladiator>
 						["coord"] = { 59.0, 57.6, 126 },
 						["itemID"] = 137642,	-- Mark of Honor
 						["g"] = {
@@ -1938,7 +1938,7 @@ _.Zones =
 							}),
 						},
 					}),
-					n(33921, { 	-- Nargle Lashcord <Veteran Arena Vendor> // Original S6 Vendor // Furious Gladiator: Season 6 Gladiator Gear
+					n(33921, {	-- Nargle Lashcord <Veteran Arena Vendor> // Original S6 Vendor // Furious Gladiator: Season 6 Gladiator Gear
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					n(40211, {	-- Nargle Lashcord
@@ -2055,7 +2055,7 @@ _.Zones =
 						--]]
 						},
 					}),
-					n(40212, { 	-- Trapjaw Rix <Savage Gladiator>
+					n(40212, {	-- Trapjaw Rix <Savage Gladiator>
 						["coord"] = { 59.3, 57.3, 126 },
 						["itemID"] = 137642,	-- Mark of Honor
 						["g"] = {
@@ -2433,10 +2433,10 @@ _.Zones =
 							}),
 						},
 					}),
-					n(31864, { 	-- Xazi Smolderpipe
+					n(31864, {	-- Xazi Smolderpipe
 						["u"] = REMOVED_FROM_GAME,
 					}),
-					n(69971, { 	-- Xazi Smolderpipe <Wrathful Gladiator>
+					n(69971, {	-- Xazi Smolderpipe <Wrathful Gladiator>
 						["coord"] = { 58.5, 58.3, 126 },
 						["itemID"] = 137642,	-- Mark of Honor
 						["g"] = {
@@ -3079,7 +3079,7 @@ _.Zones =
 					n(54651, {	-- Zom Bocom Original Cata S10 Vendor // Ruthless Gladiator
 						["u"] = REMOVED_FROM_GAME,
 					}),
-					n(69973, { 	-- Zom Bocom <Relentless Gladiator>
+					n(69973, {	-- Zom Bocom <Relentless Gladiator>
 						["coord"] = { 59.0, 58.8, 126 },
 						["itemID"] = 137642,	-- Mark of Honor
 						["g"] = {

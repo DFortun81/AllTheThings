@@ -6,7 +6,7 @@ _.ExpansionFeatures =
 {
 	n(-9966, {	-- Draenor Garrisons
 		m(590, {	-- Frostwall
-			n(-136, { 	-- Invasions
+			n(-136, {	-- Invasions
 				["races"] = HORDE_ONLY,
 				["description"] = "To trigger an invasion, you need to do an assault quest or purchase a scouting missive from the garrison quartermaster. \n\nBotani Invasion -- Assault on Lost Veil Anzu, Assault on the Everbloom Wilds \n\nGoren Invasion -- Assault on Magnarok, Assault on the Broken Precipice \n\nIron Horde Invasion -- Assault on Mok'gol Watchpost, Assault on the Iron Siegeworks, Assault on the Pit, Battle in Ashran \n\nOgre Invasion -- Assault on Stonefury Cliffs, Assault on the Gorian Proving Grounds, Challenge at the Ring of Blood \n\nShadow Council Invasion -- Assault on Shattrath Harbor, Assault on the Heart of Shattrath \n\nShadowmoon Invasion -- Assault on Darktide Roost, Assault on Pillars of Fate, Assault on Skettis, Assault on Socrethar's Rise \n\nYou can earn Bronze, Silver, Gold, and Platinum rewards once per week per toon.",
 				["g"] = {
@@ -29,7 +29,7 @@ _.ExpansionFeatures =
 								crit(6),		-- Shadowmoon
 							}),
 						}),
-						ach(9543, { 	-- Invasion? What Invasion? (50)
+						ach(9543, {	-- Invasion? What Invasion? (50)
 							ach(9167),		-- Invasion Specialist (10)
 							ach(9152),		-- It's an Invasion! (1)
 						}),

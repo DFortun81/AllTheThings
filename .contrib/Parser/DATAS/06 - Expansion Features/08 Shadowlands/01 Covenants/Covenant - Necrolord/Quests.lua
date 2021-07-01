@@ -402,10 +402,20 @@ _.ExpansionFeatures =
 					q(63343, {	-- Necrolord Tactician
 						["description"] = "Requires Renown 22.",
 						["provider"] = { "n", 175998 },    -- Elspeth Larink
-						["coord"] = { 46.5, 40.2, 1698 },
+						["coord"] = { 46.5, 40.2, 1698 },	-- Seat of the Primus
+					}),
+					q(64084, {	-- Necrolord Tactician
+						["description"] = "Requires Renown 59.",
+						["provider"] = { "n", 175998 },    -- Elspeth Larink
+						["coord"] = { 46.5, 40.2, 1698 },	-- Seat of the Primus
 					}),
 					q(63342, {	-- Necrolord Veteran
 						["description"] = "Requires Renown 7.",
+						["provider"] = { "n", 175998 },    -- Elspeth Larink
+						["coord"] = { 46.5, 40.2, 1698 },	-- Seat of the Primus
+					}),
+					q(64324, {	-- Necrolord Veteran #2
+						["description"] = "Requires Renown 43.",
 						["provider"] = { "n", 175998 },    -- Elspeth Larink
 						["coord"] = { 46.5, 40.2, 1698 },	-- Seat of the Primus
 					}),
@@ -866,7 +876,6 @@ _.ExpansionFeatures =
 		}),
 	}),
 };
-
 _.HiddenQuestTriggers = {
 --	Campaign quests
 	q(62982),	-- triggers when searching the storeroom on "Gharmal's Tower" (#57530)
@@ -880,3 +889,11 @@ _.HiddenQuestTriggers = {
 --	Unity Transmog
 	q(63407),	-- Leather Chest
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(62696),	-- A Call to Service
+		q(59598),	-- Good for the Soul
+		q(63061),	-- Helping Hand
+		q(61690),	-- The Honor of Service
+	}),
+});

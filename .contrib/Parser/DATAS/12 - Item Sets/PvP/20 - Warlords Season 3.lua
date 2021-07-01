@@ -125,7 +125,7 @@
 					}),
 				})),
 			},
-			["achievementID"]  = 11722,	-- War-Mog-ering
+			["achievementID"] = 11722,	-- War-Mog-ering
 		}),
 	}),
 };--]]

@@ -431,7 +431,7 @@ _.Zones =
 						i(52641),	-- Cerellean's Dagger
 						i(55132),	-- Darkshore Bow
 						i(156966),	-- Cerellean's Spellsword
-						i(46325), 	-- Withers (PET!)
+						i(46325),	-- Withers (PET!)
 					},
 				}),
 				q(13505, {	-- Remnants of the Highborne
@@ -604,7 +604,7 @@ _.Zones =
 						i(52592),	-- Woolgathering Gloves
 						i(52600),	-- Oblivious Leggings
 						i(131318),	-- Absentminded Legguards
-						i(52671), 	-- Bahrum's Bad Mood Ring
+						i(52671),	-- Bahrum's Bad Mood Ring
 					},
 				}),
 				q(13514, {	-- The Ancients' Ire
@@ -812,7 +812,7 @@ _.Zones =
 						i(52610),	-- Strap of the Ancient Horn
 						i(52630),	-- Horn Sounder's Bracers
 						i(131317),	-- Cord of the Ancient Horn
-						i(55135), 	-- Tia's Ring
+						i(55135),	-- Tia's Ring
 					},
 				}),
 				q(13569, {	-- The Ritual Bond
@@ -872,7 +872,7 @@ _.Zones =
 					["g"] = {
 						i(52644),	-- Scaling Knife
 						i(52640),	-- Grove Keeper's Branch
-						i(52673),  	-- Felros' Signet
+						i(52673),	-- Felros' Signet
 					},
 				}),
 				q(13918, {	-- The Titans' Terminal

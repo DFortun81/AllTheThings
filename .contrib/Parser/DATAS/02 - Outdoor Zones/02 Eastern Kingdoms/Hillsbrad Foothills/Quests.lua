@@ -881,13 +881,13 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(9649)),	-- Royal Highmark Vestments
 					},
 				}),
-				q(1051,  { 	-- Vorrel's Revenge
+				q(1051,  {	-- Vorrel's Revenge
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(4643)), 	-- Grimsteel Cape
-						un(REMOVED_FROM_GAME, i(7750)), 	-- Mantle of Woe
-						un(REMOVED_FROM_GAME, i(7751)), 	-- Vorrel's Boots
+						un(REMOVED_FROM_GAME, i(4643)),	-- Grimsteel Cape
+						un(REMOVED_FROM_GAME, i(7750)),	-- Mantle of Woe
+						un(REMOVED_FROM_GAME, i(7751)),	-- Vorrel's Boots
 					},
 				}),
 				q(566,   {	-- WANTED: Baron Vardus

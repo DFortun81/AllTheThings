@@ -404,7 +404,7 @@ _.Zones =
 						["coord"] = { 46.6, 88.0, 864 },
 						["cr"] = 132662,	-- Mine Cart
 					}),
-					crit(2,  { 	-- Grayal's Last Offering
+					crit(2,  {	-- Grayal's Last Offering
 						["sourceQuests"] = { 50617 },	-- Atul'Aman
 						["objectID"] = 287239,	-- Grayal's Last Offering
 						["questID"] = 51093,

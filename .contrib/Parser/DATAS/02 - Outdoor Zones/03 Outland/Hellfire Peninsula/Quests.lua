@@ -224,8 +224,7 @@ _.Zones =
 						49862,	-- To Outland [Breadcrumb]
 						-- #endif
 						-- #if AFTER 9.0.1.36230
-						60959,	-- Burning Crusade: Onward to Adventure in Outland [Alliance?]
-						60961,	-- Burning Crusade: Onward to Adventure in Outland [Horde?]
+						60959,	-- Burning Crusade: Onward to Adventure in Outland [Alliance]
 						-- #endif
 					},
 					["coord"] = { 87.3, 50.7, HELLFIRE_PENINSULA },
@@ -246,8 +245,7 @@ _.Zones =
 						49816,	-- To Outland [Breadcrumb]
 						-- #endif
 						-- #if AFTER 9.0.1.36230
-						60959,	-- Burning Crusade: Onward to Adventure in Outland [Alliance?]
-						60961,	-- Burning Crusade: Onward to Adventure in Outland [Horde?]
+						60961,	-- Burning Crusade: Onward to Adventure in Outland [Horde]
 						-- #endif
 					},
 					["coord"] = { 87.3, 49.8, HELLFIRE_PENINSULA },
@@ -428,20 +426,6 @@ _.Zones =
 						i(29928),	-- Wanderer's Stitched Trousers
 					},
 				}),
-				q(60959, {	-- Burning Crusade: Onward to Adventure in Outland [Alliance?]
-					["timeline"] = { "added 9.0.1.36230" },
-					--["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,
-					["repeatable"] = true,
-					["lvl"] = lvlsquish(58, 10, 58),
-				}),
-				q(60961, {	-- Burning Crusade: Onward to Adventure in Outland [Horde?]
-					["timeline"] = { "added 9.0.1.36230" },
-					--["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
-					["repeatable"] = true,
-					["lvl"] = lvlsquish(58, 10, 58),
-				}),
 				q(10391, {	-- Cannons of Rage
 					["qg"] = 3230,	-- Nazgrel
 					["sourceQuest"] = 10390,	-- Forge Camp: Mageddon
@@ -467,7 +451,7 @@ _.Zones =
 							["cr"] = 17000,	-- Aggonis
 						}),
 						i(25485),	-- Amaan's Signet
-						i(25486), 	-- Demonslayer's Wristguards
+						i(25486),	-- Demonslayer's Wristguards
 						i(25484),	-- Telhamat Pendant
 					},
 				}),

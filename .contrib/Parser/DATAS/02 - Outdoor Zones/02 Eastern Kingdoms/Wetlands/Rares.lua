@@ -47,8 +47,8 @@ _.Zones =
 				n(2108,   {	-- Garneg Charskull
 					["coord"] = { 38.6, 46.2, 56 },
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(6200)), 	-- Garneg's War Belt
-						un(REMOVED_FROM_GAME, i(3392)), 	-- Ringed Helm
+						un(REMOVED_FROM_GAME, i(6200)),	-- Garneg's War Belt
+						un(REMOVED_FROM_GAME, i(3392)),	-- Ringed Helm
 					},
 				}),
 				n(44227,  {	-- Gazz the Loch-Hunter
@@ -99,7 +99,7 @@ _.Zones =
 					["coord"] = { 69.9, 29.1, 56 },
 					["description"] = "Located inside the cave south of the coords.",
 					["g"] = {
-						i(48124), 	-- Razormaw Hatchling Pet
+						i(48124),	-- Razormaw Hatchling Pet
 					},
 				}),
 				n(44225,  {	-- Rufus Darkshot

@@ -55,12 +55,12 @@ _.Zones =
 						i(19442),	-- Formula: Powerful Anti-Venom
 						i(18170),	-- Frost Mantle of the Dawn
 						i(18172),	-- Nature Mantle of the Dawn
-						i(19216), 	-- Pattern: Argent Boots
-						i(19217), 	-- Pattern: Argent Shoulders
-						i(19328), 	-- Pattern: Dawn Treaders
-						i(19329), 	-- Pattern: Golden Mantle of the Dawn
-						i(19203), 	-- Plans: Girdle of the Dawn
-						i(19205), 	-- Plans: Gloves of the Dawn
+						i(19216),	-- Pattern: Argent Boots
+						i(19217),	-- Pattern: Argent Shoulders
+						i(19328),	-- Pattern: Dawn Treaders
+						i(19329),	-- Pattern: Golden Mantle of the Dawn
+						i(19203),	-- Plans: Girdle of the Dawn
+						i(19205),	-- Plans: Gloves of the Dawn
 						i(13482),	-- Recipe: Transmute Air to Fire
 						i(18173),	-- Shadow Mantle of the Dawn
 						i(136928),	-- Thaumaturgist's Orb (TOY!) — Priest only

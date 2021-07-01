@@ -690,6 +690,7 @@ _.Zones =
 					["sourceQuests"] = {
 						28525,	-- Hero's Call: Un'Goro Crater!
 						28526,	-- Warchief's Command: Un'Goro Crater!
+						24911,	-- Tropical Paradise Beckons
 					},
 				}),
 				q(3884,  {	-- Williden's Journal

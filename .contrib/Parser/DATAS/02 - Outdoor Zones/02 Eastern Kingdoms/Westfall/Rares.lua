@@ -62,7 +62,7 @@ _.Zones =
 					},
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(3019)),		-- Noble's Robe
-						un(REMOVED_FROM_GAME, i(4660)), 	-- Walking Boots
+						un(REMOVED_FROM_GAME, i(4660)),	-- Walking Boots
 					},
 				}),
 				n(1424, {	-- Master Digger

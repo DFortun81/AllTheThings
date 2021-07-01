@@ -3,20 +3,20 @@
 -----------------------------------------------------
 
 _.Instances = { tier(3, {	-- Wrath of the Lich King
-	inst(285, { 	-- Utgarde Keep
+	inst(285, {	-- Utgarde Keep
 		["lvl"] = 57,
 		["mapID"] = 133,
 		["maps"] = { 134, 135 },
 		["groups"] = {
 			n(QUESTS, {
-				q(30112,{ 	-- A Score to Settle
+				q(30112,{	-- A Score to Settle
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 24137 },	-- Dark Ranger Marrah
 					["groups"] = {
-						i(39679), 	-- Runecaster's Bracers
+						i(39679),	-- Runecaster's Bracers
 						i(39680),	-- Vambraces of the Vengeance Bringer
-						i(39678), 	-- Vendetta Bindings
-						i(39676), 	-- Wraps of the San'layn
+						i(39678),	-- Vendetta Bindings
+						i(39676),	-- Wraps of the San'layn
 					},
 				}),
 				q(29764, {	-- Disarmament
@@ -39,14 +39,14 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(44403),	-- Amulet of Constrained Power
 					},
 				}),
-				q(29803,{ 	-- Ears of the Lich King
+				q(29803,{	-- Ears of the Lich King
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 24111 },	-- Defender Mordun
 					["groups"] = {
-						i(39679), 	-- Runecaster's Bracers
+						i(39679),	-- Runecaster's Bracers
 						i(39680),	-- Vambraces of the Vengeance Bringer
-						i(39678), 	-- Vendetta Bindings
-						i(39676), 	-- Wraps of the San'layn
+						i(39678),	-- Vendetta Bindings
+						i(39676),	-- Wraps of the San'layn
 					},
 				}),
 				q(11262, {	-- Ingvar Must Die!

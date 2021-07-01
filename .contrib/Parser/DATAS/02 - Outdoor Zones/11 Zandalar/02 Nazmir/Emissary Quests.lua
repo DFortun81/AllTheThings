@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(875, {	-- Zandalar
 		m(863, {	-- Nazmir
-			n(-169, { 	-- Emissary Quests
+			n(-169, {	-- Emissary Quests
 				q(54460, {	-- Supplies from Talanji's Expedition
 					["provider"] = { "n", 135459 },	-- Provisioner Lija
 					["lvl"] = 120,

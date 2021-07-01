@@ -2607,6 +2607,12 @@ select(2, ...).FlightPathDB = {
 		["name"] = "Gao-Ran Battlefront, Townlong Steppes",
 		["faction"] = 0,
 	},
+	[2698] = {
+		["name"] = "Keeper's Respite, Korthia",
+	},
+	[2700] = {
+		["name"] = "Ve'nari's Refuge, The Maw",
+	},
 	-- Kyrian Travel Network Nodes
 	[2626] = {
 		["name"] = "Hero's Rest, Bastion",

@@ -59,33 +59,33 @@ _.Toys =
 					{ 82.6, 66.1, ZANGARMARSH },  -- Zangarmarsh/Hellfire Peninsula (Outland) Boarder between Hellfire and Zangarmarsh 82.59 66.13
 				}
 			}),
-			i(151016), 	-- Fractured Necrolyte Skull
-			i(129965), 	-- Grizzlesnout's Fang
-			i(133511), 	-- Gurboggle's Gleaming Bauble
+			i(151016),	-- Fractured Necrolyte Skull
+			i(129965),	-- Grizzlesnout's Fang
+			i(133511),	-- Gurboggle's Gleaming Bauble
 			i(129952),	-- Hourglass of Eternity
-			i(129926), 	-- Mark of the Ashtongue
-			i(144393), 	-- Portable Yak Wash
+			i(129926),	-- Mark of the Ashtongue
+			i(144393),	-- Portable Yak Wash
 			i(133542),	-- Tosselwrench's Mega-Accurate Simulation Viewfinder
-			i(151184), 	-- Verdant Throwing Sphere
+			i(151184),	-- Verdant Throwing Sphere
 			i(129938),	-- Will of Northrend
 		}),
 		n(-174, {	-- Darkmoon Faire
-			i(122126), 	-- Attraction Sign
+			i(122126),	-- Attraction Sign
 			i(116115),	-- Blazing Wings
-			i(151265), 	-- Blight Boar Microphone
-			i(122121), 	-- Darkmoon Gazer
+			i(151265),	-- Blight Boar Microphone
+			i(122121),	-- Darkmoon Gazer
 			i(122123),	-- Darkmoon Ring-Flinger
 			i(97994),	-- Darkmoon Seesaw
-			i(122122), 	-- Darkmoon Tonk Controller
+			i(122122),	-- Darkmoon Tonk Controller
 			i(90899),	-- Darkmoon Whistle
 			i(122119),	-- Everlasting Darkmoon Firework
 			i(122129),	-- Fire-Eater's Vial
-			i(75042), 	-- Flimsy Yellow Balloon
+			i(75042),	-- Flimsy Yellow Balloon
 			i(122120),	-- Gaze of the Darkmoon
 			i(116139),	-- Haunting Memento
 			i(162539),	-- Hot Buttered Popcorn (added in 8.0.1)
 			i(101571),	-- Moonfang Shroud
-			i(105898), 	-- Moonfang's Paw
+			i(105898),	-- Moonfang's Paw
 			i(116067),	-- Ring of Broken Promises
 			i(126931),	-- Seafarer's Slidewhistle
 			i(138202),	-- Sparklepony XL
@@ -96,7 +96,7 @@ _.Toys =
 			["g"] = {
 				i(116758),	-- Brewfest Banner
 				i(169865),	-- Brewfest Chowdown Trophy
-				i(71137), 	-- Brewfest Keg Pony
+				i(71137),	-- Brewfest Keg Pony
 				i(33927),	-- Brewfest Pony Keg
 				i(166747),	-- Brewfest Reveler's Hearthstone
 				i(138900),	-- Gravil Goldbraid's Famous Sausage Hat
@@ -108,8 +108,8 @@ _.Toys =
 			["achievementID"] = 1793,	-- For The Children
 			["u"] = 20,
 			["g"] = {
-				i(69895), 	-- Green Balloon
-				i(69896), 	-- Yellow Balloon
+				i(69895),	-- Green Balloon
+				i(69896),	-- Yellow Balloon
 			},
 		}),
 		n(-59, {    -- Day of the Dead
@@ -127,35 +127,35 @@ _.Toys =
 			["achievementID"] = 1691,	-- Merrymaker
 			["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL,
 			["g"] = {
-				i(54343), 	-- Blue Crashin' Thrashin' Racer Controller
+				i(54343),	-- Blue Crashin' Thrashin' Racer Controller
 				i(172223),	-- Crashin' Thrashin' Battleship [A]
 				i(108632, {	-- Crashin' Thrashin' Flamer Controller
 					crit(1, {	-- Crashin' Thrashin' Flamer
 						["achievementID"] = 10353,	-- Iron Armada
 					}),
 				}),
-				i(104318), 	-- Crashin' Thrashin' Flyer Controller
+				i(104318),	-- Crashin' Thrashin' Flyer Controller
 				i(172222),	-- Crashin' Thrashin' Juggernaught [H]
 				i(108635, {	-- Crashin' Thrashin' Killdozer Controller
 					crit(2, {	-- Crashin' Thrashin' Killdozer
 						["achievementID"] = 10353,	-- Iron Armada
 					}),
 				}),
-				i(37710), 	-- Crashin' Thrashin' Racer Controller
-				i(116763), 	-- Crashin' Thrashin' Shredder Controller
+				i(37710),	-- Crashin' Thrashin' Racer Controller
+				i(116763),	-- Crashin' Thrashin' Shredder Controller
 				i(172223),	-- Crashin' Thrashin' Battleship [Alliance]
 				i(139337),	-- Disposable Winter Veil Suits
 				i(128636),	-- Endothermic Blaster
 				i(90888),	-- Foot Ball
 				i(104324),	-- Foot Ball
-				i(116692), 	-- Fuzzy Green Lounge Cushion
+				i(116692),	-- Fuzzy Green Lounge Cushion
 				i(162973),	-- Greatfather Winter's Hearthstone
-				i(151343), 	-- Hearthstation [Alliance]
-				i(151344), 	-- Hearthstation [Horde]
-				i(46709), 	-- MiniZep Controller
-				i(116689), 	-- Pineapple Lounge Cushion
+				i(151343),	-- Hearthstation [Alliance]
+				i(151344),	-- Hearthstation [Horde]
+				i(46709),	-- MiniZep Controller
+				i(116689),	-- Pineapple Lounge Cushion
 				i(128776),	-- Red Wooden Sled
-				i(116690), 	-- Safari Lounge Cushion
+				i(116690),	-- Safari Lounge Cushion
 				i(116456),	-- Scroll of Storytelling
 				i(90883),	-- The Pigskin
 				i(104323),	-- The Pigskin
@@ -164,13 +164,13 @@ _.Toys =
 				i(162643),	-- Toy Armor Set [Alliance]
 				i(162642),	-- Toy Armor Set [Horde]
 				i(44606),	-- Toy Train Set
-				i(151349), 	-- Toy Weapon Set [Alliance]
-				i(151348), 	-- Toy Weapon Set [Horde]
+				i(151349),	-- Toy Weapon Set [Alliance]
+				i(151348),	-- Toy Weapon Set [Horde]
 				i(172219),	-- Wild Holly
-				i(45057), 	-- Wind-Up Train Wrecker
-				i(17712), 	-- Winter Veil Disguise Kit
+				i(45057),	-- Wind-Up Train Wrecker
+				i(17712),	-- Winter Veil Disguise Kit
 				i(178530),	-- Wreath-A-Rang
-				i(116691), 	-- Zhevra Lounge Cushion
+				i(116691),	-- Zhevra Lounge Cushion
 			},
 		}),
 		n(-58, {	-- Hallow's End
@@ -188,10 +188,10 @@ _.Toys =
 		holiday(235468, {	-- Love is in the Air
 			["u"] = HOLIDAY_LOVEINTHEAIR,
 			["g"] = sharedData({["u"] = HOLIDAY_LOVEINTHEAIR,}, {
-				i(142341), 	-- Love Boat
+				i(142341),	-- Love Boat
 				i(165670),	-- Peddlefeet's Lovely Hearthstone
 				i(34480),	-- Romantic Picnic Basket
-				i(144339), 	-- Sturdy Love Fool
+				i(144339),	-- Sturdy Love Fool
 				i(50471),	-- The Heartbreaker
 				i(116651),	-- True Love Prism
 			}),
@@ -203,9 +203,9 @@ _.Toys =
 				i(165672),	-- Blue Dragon Body Costume
 				i(165671),	-- Blue Dragon Head Costume
 				i(165673),	-- Blue Dragon Tail Costume
-				i(143828), 	-- Dragon Body Costume
-				i(143827), 	-- Dragon Head Costume
-				i(143829), 	-- Dragon Tail Costume
+				i(143828),	-- Dragon Body Costume
+				i(143827),	-- Dragon Head Costume
+				i(143829),	-- Dragon Tail Costume
 				i(21540),	-- Elune's Lantern
 				i(89999),	-- Everlasting Alliance Firework (Alliance)
 				i(90000),	-- Everlasting Horde Firework (Horde)
@@ -215,12 +215,12 @@ _.Toys =
 				i(165669),	-- Lunar Elder's Hearthstone
 			},
 		}),
-		n(-53, {  	-- Midsummer Fire Festival
+		n(-53, {	-- Midsummer Fire Festival
 			["icon"] = "Interface\\Icons\\inv_summerfest_firespirit",
 			["u"] = 21,
 			["g"] = {
-				i(34686), 	-- Brazier of Dancing Flames
-				i(116440), 	-- Burning Defender's Medallion
+				i(34686),	-- Brazier of Dancing Flames
+				i(116440),	-- Burning Defender's Medallion
 				i(116435),	-- Cozy Bonfire
 				i(166746),	-- Fire Eater's Hearthstone
 				i(141649),	-- Set of Matches
@@ -236,7 +236,7 @@ _.Toys =
 			["achievementID"] = 3478,	-- Pilgrim
 			["u"] = HOLIDAY_PILGRIMS_BOUNTY,
 			["g"] = {
-				un(HOLIDAY_PILGRIMS_BOUNTY, i(116400)), 	-- Silver-Plated Turkey Shooter
+				un(HOLIDAY_PILGRIMS_BOUNTY, i(116400)),	-- Silver-Plated Turkey Shooter
 			},
 		}),
 		n(-55, {    -- Pirates' Day

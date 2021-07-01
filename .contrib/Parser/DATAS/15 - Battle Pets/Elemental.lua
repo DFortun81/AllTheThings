@@ -5,36 +5,36 @@
 _.BattlePets =
 {
 	n(-797,	{	-- Journal
-		pa(241, { 	-- Elemental
+		pa(241, {	-- Elemental
 			p(2433),	-- Aldrusian Sproutling
-			p(2093), 	-- Amalgam of Destruction
+			p(2093),	-- Amalgam of Destruction
 			p(838),		-- Amethyst Shale Hatchling
 			p(212),		-- Ammen Vale Lashling
 			p(1150),	-- Ashstone Core
 			p(1429),	-- Autumnal Sproutling
 			p(2429),	-- Azeriti
-			p(2086), 	-- Blazehound
+			p(2086),	-- Blazehound
 			p(1517),	-- Blazing Cindercrawler
 			un(BLIZZARD_BALANCE, p(1248)),	-- Blossoming Ancient
 			p(2892),	-- Bound Lightspawn
-			p(2082), 	-- Bound Stream
+			p(2082),	-- Bound Stream
 			p(2706),	-- Brinestone Algan
 			p(1777),	-- Broot
 			p(2707),	-- Budding Algan
 			p(2428),	-- Carnivorous Lasher
 			p(3024),	-- Char
 			un(BLIZZARD_BALANCE, p(1117)),	-- Cinder Kitten
-			p(2087), 	-- Cinderweb Recluse
+			p(2087),	-- Cinderweb Recluse
 			p(2708),	-- Coral Lashling
 			p(244),		-- Core Hound Pup
-			p(2091), 	-- Corrupted Blood
+			p(2091),	-- Corrupted Blood
 			p(1396),	-- Crazy Carrot
 			p(559),		-- Crimson Geode
 			p(318),		-- Crimson Lasher
 			p(554),		-- Crimson Shale Hatchling
 			p(270),		-- Dark Phoenix Hatchling
 			p(1564),	-- Doom Bloom
-			p(2085), 	-- Drafty
+			p(2085),	-- Drafty
 			p(3037),	-- Dread
 			p(1331),	-- Droplet of Y'Shaarj
 			p(1179),	-- Electrified Razortooth
@@ -43,7 +43,7 @@ _.BattlePets =
 			p(2548),	-- Everburning Treant
 			p(1998),	-- Everliving Spore
 			p(519),		-- Fel Flame
-			p(2117), 	-- Fel Lasher
+			p(2117),	-- Fel Lasher
 			p(1802),	-- Fetid Waveling
 			p(2127),	-- Flickering Argunite
 			p(1430),	-- Forest Sproutling
@@ -53,11 +53,11 @@ _.BattlePets =
 			p(2466),	-- Giggling Flame
 			p(1332),	-- Gooey Sha-ling
 			p(834),		-- Grinder
-			p(2545), 	-- Gust of Cyclarus
+			p(2545),	-- Gust of Cyclarus
 			p(2591),	-- Happiness
 			un(REMOVED_FROM_GAME, p(1544)),	-- Hatespark the Tiny
 			p(2003),	-- Hearthy
-			p(2547), 	-- Hydrath Droplet
+			p(2547),	-- Hydrath Droplet
 			p(1949),	-- Igneous Flameling
 			p(2756),	-- Irradiated Elementaling
 			p(856),		-- Jade Tentacle
@@ -108,7 +108,7 @@ _.BattlePets =
 			p(2702),	-- Stormwrath
 			p(1518),	-- Stout Alemental
 			p(1434),	-- Sun Sproutling
-			p(2088), 	-- Surger
+			p(2088),	-- Surger
 			p(1231),	-- Tainted Waveling
 			p(204),		-- Teldrassil Sproutling
 			p(650),		-- Terrible Turnip
@@ -120,7 +120,7 @@ _.BattlePets =
 			p(445),		-- Tiny Twister
 			p(480),		-- Topaz Shale Hatchling
 			p(3018),	-- Trootie
-			p(2092), 	-- Unstable Tendril
+			p(2092),	-- Unstable Tendril
 			p(855),		-- Venus
 			p(2870),	-- Wailing Lasher
 			p(535),		-- Water Waveling
@@ -128,7 +128,7 @@ _.BattlePets =
 			p(3015),	-- Withering Mire Creeper
 			p(220),		-- Withers
 			p(2897),	-- Wrathling
-			p(2084), 	-- Zephyrian Prince
+			p(2084),	-- Zephyrian Prince
 		}),
 	}),
 };

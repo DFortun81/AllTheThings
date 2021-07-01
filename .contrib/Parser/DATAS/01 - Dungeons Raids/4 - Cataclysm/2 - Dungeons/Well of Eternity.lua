@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(4, {	-- Cataclysm
-	inst(185, { 	-- Well of Eternity
+	inst(185, {	-- Well of Eternity
 		["lvl"] = 85,
 		["mapID"] = 398,
 		["coords"] = {

@@ -11,11 +11,11 @@ _.Zones =
 					["description"] = "As of 7.3, Dark Iron Steamsmiths drop |cff3399ffPattern: Shadoweave Mask|r, which is required for the |cff3399ffLucid Nightmare|r mount.",
 					["crs"] = { 5840 },	-- Dark Iron Steamsmith
 				}),
-				n(47463, { 	-- Searing Flamewraith
+				n(47463, {	-- Searing Flamewraith
 					["description"] = "To get the Blacksmithing plans for Blazing Rapier, kill Searing Flamewraiths until you get Lava Oil. Do not use it yet. Go to the metal bridge before the Quarry Gate. The Time Lost Chest is in the lava below in the alcove. Use the Fire Oil, jump down, open the chest, and hearth.",
 					["g"] = {
-						i(142359, { 	-- Lava Oil
-							o(266289, { 	-- Time Lost Chest
+						i(142359, {	-- Lava Oil
+							o(266289, {	-- Time Lost Chest
 								["modelScale"] = 2,
 								["modelID"] = 446679,
 								["g"] = {

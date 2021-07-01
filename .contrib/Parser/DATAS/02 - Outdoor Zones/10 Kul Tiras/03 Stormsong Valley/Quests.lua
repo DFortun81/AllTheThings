@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(876, { 	-- Kul'Tiras
+	m(876, {	-- Kul'Tiras
 		m(942, {	-- Stormsong Valley
 			n(QUESTS, {
 				q(50616, {	-- A Bit of a Bind
@@ -1430,8 +1430,8 @@ _.Zones =
 						i(180030),	-- Bartered Vrykul Warhelm
 					},
 					["maps"] = {
-						863, 	-- Nazmir
-						864, 	-- Vol'dun
+						863,	-- Nazmir
+						864,	-- Vol'dun
 						895,	-- Tiragarde Sound
 						--942,	-- Stormsong Valley
 						862,	-- Zuldazar

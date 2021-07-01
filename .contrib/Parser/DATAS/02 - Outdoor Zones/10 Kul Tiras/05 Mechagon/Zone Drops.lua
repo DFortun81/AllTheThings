@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(876, {	-- Kul'Tiras
-		m(1462, {	-- Mechagon
+		m(MECHAGON, {
 			n(ZONEDROPS, {
 				i(159164),  -- Ashvane Company Sabatons
 				i(168491, {	-- Blueprint: Personal Time Displacer

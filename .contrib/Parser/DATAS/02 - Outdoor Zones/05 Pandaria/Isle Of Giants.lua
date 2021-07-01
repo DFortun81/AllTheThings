@@ -18,7 +18,7 @@ _.Zones =
 					}),
 				}),
 				n(RARES, {
-					n(70096, { 		-- War-God Dokah
+					n(70096, {	-- War-God Dokah
 						["coords"] = {
 							{ 77.6, 82.6, 507 },
 							{ 78.6, 80.6, 507 },
@@ -94,7 +94,7 @@ _.Zones =
 							}),
 						},
 					}),
-					i(94295, { 	-- Primal Egg
+					i(94295, {	-- Primal Egg
 						["description"] = "This egg can be obtained from the Treasures/Spoils of the Thunder King or zone wide on the Isle of Giants.",
 						["g"] = {
 							i(94296, {  -- Cracked Primal Egg

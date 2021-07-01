@@ -71,7 +71,7 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, ach(12454)),		-- Salute to Starcraft
 			un(REMOVED_FROM_GAME, ach(3536)),		-- The Marine Marine
 			un(REMOVED_FROM_GAME, ach(414)),		-- Tyrael's Hilt
-			un(REMOVED_FROM_GAME, ach(9496, { 		-- Warlord's Deathwheel
+			un(REMOVED_FROM_GAME, ach(9496, {		-- Warlord's Deathwheel
 				["races"] = HORDE_ONLY,
 				["g"] = {
 					i(116788),			-- Warlord's Deathwheel

@@ -32,11 +32,11 @@ _.Zones =
 					["provider"] = { "n", 45429 },	-- Tarenar Sunstrike
 					["coord"] = { 8.9, 66.5, EASTERN_PLAGUELANDS },
 					["g"] = {
-						i(62943), 	-- Helm of Thoughtful Gifts
-						i(62942), 	-- Gentling Breastplate
-						i(62941), 	-- Plaguehound Armbands
-						i(62940), 	-- Belt of Appeasement
-						i(62939), 	-- Caravan Sash
+						i(62943),	-- Helm of Thoughtful Gifts
+						i(62942),	-- Gentling Breastplate
+						i(62941),	-- Plaguehound Armbands
+						i(62940),	-- Belt of Appeasement
+						i(62939),	-- Caravan Sash
 						i(131669),	-- Plaguehound Bracers
 						i(131670),	-- Cinch of Good Will
 					},
@@ -436,10 +436,10 @@ _.Zones =
 					["provider"] = { "n", 45428 },	-- Gidwin Goldbraids
 					["coord"] = { 4.1, 36.0, EASTERN_PLAGUELANDS },
 					["g"] = {
-						i(62938), 	-- Giddy's Old Gloves
-						i(62937), 	-- Thorondoril River Boots
-						i(62936), 	-- Treads of Banshee Bells
-						i(62935), 	-- Flower Picker's Gloves
+						i(62938),	-- Giddy's Old Gloves
+						i(62937),	-- Thorondoril River Boots
+						i(62936),	-- Treads of Banshee Bells
+						i(62935),	-- Flower Picker's Gloves
 						i(131668),	-- Stem-Laced Boots
 					},
 				}),
@@ -478,10 +478,10 @@ _.Zones =
 					["provider"] = { "n", 10926 },	-- Pamela Redpath
 					["coord"] = { 32.4, 83.5, EASTERN_PLAGUELANDS },
 					["g"] = {
-						i(62961),  	-- Redpath Bracers
-						i(62960),  	-- Brightening Wand
-						i(62959),  	-- Hidden Treasure
-						i(62958),  	-- Militia Hatchet
+						i(62961),	-- Redpath Bracers
+						i(62960),	-- Brightening Wand
+						i(62959),	-- Hidden Treasure
+						i(62958),	-- Militia Hatchet
 						i(157007),	-- Militia Dagger
 					},
 				}),
@@ -557,9 +557,9 @@ _.Zones =
 					["provider"] = { "n", 11035 },	-- Betina Bigglezink
 					["coord"] = { 53.2, 54.5, EASTERN_PLAGUELANDS },
 					["g"] = {
-						i(62977), 	-- Light's Shield
-						i(62976), 	-- Breastplate of the Droplet
-						i(62975), 	-- Plaguefix Launcher
+						i(62977),	-- Light's Shield
+						i(62976),	-- Breastplate of the Droplet
+						i(62975),	-- Plaguefix Launcher
 						i(156978),	-- Cauldron Cracker
 						i(156979),	-- Cauldron Dredger
 					},
@@ -998,15 +998,15 @@ _.Zones =
 					["provider"] = { "i", 22723 },	-- A Letter from the Keeper of the Rolls
 					["u"] = REMOVED_FROM_GAME,
 				}),
-				q(5466,  { 	-- The Lich, Ras Frostwhisper
+				q(5466,  {	-- The Lich, Ras Frostwhisper
 					["sourceQuests"] = { 5465 },	-- Soulbound Keepsake
 					["provider"] = { "n", 11286 },	-- Magistrate Marduke
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						un(REMOVED_FROM_GAME, i(13986)), 	-- Crown of Caer Darrow
-						un(REMOVED_FROM_GAME, i(14002)), 	-- Darrowshire Strongguard
-						un(REMOVED_FROM_GAME, i(13984)), 	-- Darrowspike
-						un(REMOVED_FROM_GAME, i(13982)), 	-- Warblade of Caer Darrow
+						un(REMOVED_FROM_GAME, i(13986)),	-- Crown of Caer Darrow
+						un(REMOVED_FROM_GAME, i(14002)),	-- Darrowshire Strongguard
+						un(REMOVED_FROM_GAME, i(13984)),	-- Darrowspike
+						un(REMOVED_FROM_GAME, i(13982)),	-- Warblade of Caer Darrow
 					},
 				}),
 				q(27532, {	-- The Plaguewood Tower
@@ -1142,7 +1142,7 @@ _.Zones =
 					["provider"] = { "n", 11034 },	-- Lord Maxwell Tyrosus
 					["coord"] = { 43.3, 87.2, 24 },
 				}),
-				q(27371, { 	-- What I Do Best
+				q(27371, {	-- What I Do Best
 					["sourceQuests"] = { 27370 },	-- Tarenar Sunstrike
 					["provider"] = { "n", 45429 },	-- Tarenar Sunstrike
 					["coord"] = { 18.3, 74.8, EASTERN_PLAGUELANDS },

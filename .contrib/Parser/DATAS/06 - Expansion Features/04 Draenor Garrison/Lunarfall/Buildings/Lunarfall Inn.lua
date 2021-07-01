@@ -786,7 +786,7 @@ _.ExpansionFeatures =
 									i(119037),	-- Supply of Storied Rarities
 								},
 							}),
-							q(37145, { 	-- Budd's Gambit
+							q(37145, {	-- Budd's Gambit
 								["provider"] = { "n", 88017 },	-- Budd
 								-- ["modID"] = 2,
 								["repeatable"] = true,
@@ -881,7 +881,7 @@ _.ExpansionFeatures =
 							}),
 							q(37165, {	-- Cenrion Concerns
 								["provider"] = { "n", 88004 },	--  Zen'kiki
-								["g"]  = {
+								["g"] = {
 									i(118935),	-- Ever-Blooming Frond
 								},
 							}),
@@ -1149,7 +1149,7 @@ _.ExpansionFeatures =
 									}),
 								},
 							}),
-							q(37158, { 	-- Gloriously Incandescent
+							q(37158, {	-- Gloriously Incandescent
 								["provider"] = { "n", 87998 },	--  Sunwalker Dezco
 								["g"] = {
 									i(118928),	-- Faintly-Sparkling Cache
@@ -1515,7 +1515,7 @@ _.ExpansionFeatures =
 									i(119037),  -- Supply of Storied Rarities
 								},
 							}),
-							q(37155, { 	-- The Brass Compass
+							q(37155, {	-- The Brass Compass
 								["provider"] = { "n", 87995 },	--  Fleet Master Seahorn
 								["g"] = {
 									i(118925),	-- Plundered Booty

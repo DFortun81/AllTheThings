@@ -32,16 +32,16 @@ i(33225, 42777);	-- Reins of the Swift Spectral Tiger
 i(35225, 46197);	-- Reins of the Nether-Rocket
 i(35226, 46199);	-- Reins of the Nether-Rocket X-TREME
 i(38576, 51412);	-- Big Battle Bear
-i(46743, 65644); 	-- Swift Purple Raptor
-i(46744, 65638); 	-- Swift Moonsaber
-i(46745, 65637); 	-- Great Red Elekk
-i(46746, 65645); 	-- White Skeletal Warhorse
-i(46747, 65642); 	-- Turbostrider
-i(46748, 65643); 	-- Swift Violet Ram
-i(46749, 65646); 	-- Swift Burgundy Wolf
-i(46750, 65641); 	-- Great Golden Kodo
-i(46751, 65639); 	-- Swift Red Hawkstrider
-i(46752, 65640); 	-- Swift Gray Steed
+i(46743, 65644);	-- Swift Purple Raptor
+i(46744, 65638);	-- Swift Moonsaber
+i(46745, 65637);	-- Great Red Elekk
+i(46746, 65645);	-- White Skeletal Warhorse
+i(46747, 65642);	-- Turbostrider
+i(46748, 65643);	-- Swift Violet Ram
+i(46749, 65646);	-- Swift Burgundy Wolf
+i(46750, 65641);	-- Great Golden Kodo
+i(46751, 65639);	-- Swift Red Hawkstrider
+i(46752, 65640);	-- Swift Gray Steed
 i(46778, 65917);	-- Magic Rooster Egg
 i(63039, 88741).creatureID = 47647; --	Drake of the West Wind (Alliance)
 i(65356, 88741).creatureID = 47647; --	Drake of the West Wind (Horde)
@@ -63,7 +63,7 @@ i(120968, 179245);	-- Chauffeured Chopper (Alliance)
 i(122703, 179244);	-- Chauffeured Chopper (Horde)
 i(128480, 190690);	-- Bristling Hellboar
 i(128526, 190977);	-- Deathtusk Felboar
-i(142224, 229377); 	-- High Priest's Lightsworn Seeker
+i(142224, 229377);	-- High Priest's Lightsworn Seeker
 i(147901, 243512);	-- Luminous Starseeker
 i(151617, 245725);	-- Orgrimmar Interceptor
 i(151618, 245723);	-- Stormwind Skychaser
@@ -374,3 +374,52 @@ i(180415, 332245);	-- Winterborn Runestag
 -- PATCH 9.0.5 --
 -----------------
 i(184168, 344577);	-- Bound Shadehound
+
+-----------------
+-- PATCH 9.1.0 --
+-----------------
+i(186647, 354356);	-- Amber Shardhide
+i(186493, 353856);	-- Ardenweald Wilderling
+i(186485, 353880);	-- Ascendant's Aquilon
+i(186494, 353857);	-- Autumnal Wilderling
+i(186480, 343550);	-- Battle-Hardened Aquilon
+i(186490, 353885);	-- Battlefield Swarmer
+i(186644, 347810);	-- Beryl Shardhide
+i(186638, 353263);	-- Cartel Master's Gearglider
+i(186645, 354357);	-- Crimson Shardhide
+i(186646, 354358);	-- Darkmaul
+i(186651, 354361);	-- Dusklight Razorwing
+i(186482, 353875);	-- Elysian Aquilon
+i(186659, 354353);	-- Fallen Charger
+i(186649, 354359);	-- Fierce Razorwing
+i(186483, 353877);	-- Foresworn Aquilon
+i(186652, 354360);	-- Garnet Razorwing
+i(185973, 352309);	-- Hand of Bahmethra
+i(186653, 339957);	-- Hand of Hrestimorak
+i(186713, 354354);	-- Hand of Nilganihmaht
+i(186654, 354355);	-- Hand of Salaranga
+i(185996, 332904);	-- Harvester's Dredwing
+i(186489, 347250);	-- Lord of the Corpseflies
+i(186643, 354362);	-- Maelie The Wanderer
+i(186487, 353883);	-- Maldraxxian Corpsefly
+i(186479, 215545);	-- Masterwork Gravewing
+i(186655, 339956);	-- Mawsworn Charger
+i(186478, 353866);	-- Obsidian Gravewing
+i(186477, 353873);	-- Pale Gravewing
+i(187183, 356501);	-- Rampaging Mauler
+i(186488, 353884);	-- Regal Corpsefly
+i(186656, 354351);	-- Sanctum Gloomcharger
+i(186476, 353872);	-- Sinfall Gravewing
+i(186648, 347251);	-- Soaring Razorwing
+i(186657, 354352);	-- Soulbound Gloomcharger
+i(187525, 358319);	-- Soultwisted Deathwalker
+i(186492, 353859);	-- Summer Wilderling
+i(186641, 347536);	-- Tamed Mauler
+i(186637, 346554);	-- Tazavesh Gearglider
+i(186177, 353036);	-- Unchained Gladiator's Soul Eater
+i(186103, 352742);	-- Undying Darkhound
+i(186642, 351195);	-- Vengeance
+i(186178, 348770);	-- Vicious War Gorm (A)
+i(186179, 348769);	-- Vicious War Gorm (H)
+i(186000, 352441);	-- Wild Hunt Legsplitter
+i(186495, 353858);	-- Winter Wilderling

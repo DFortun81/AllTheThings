@@ -100,7 +100,7 @@ _.Secrets =
 				["coord"] = { 66.1, 74.5, 115 },
 				["icon"] = "Interface\\Icons\\inv_misc_toy_02",
 			}),
-			o(9999938, { 	-- Uuna's World Tour
+			o(9999938, {	-- Uuna's World Tour
 				["description"] = "Congrats on making it this far!  Now it's time to take your favorite li'l ghost on a world tour.",
 				["icon"] = "Interface\\Icons\\inv_misc_toy_03",
 				["g"] = {

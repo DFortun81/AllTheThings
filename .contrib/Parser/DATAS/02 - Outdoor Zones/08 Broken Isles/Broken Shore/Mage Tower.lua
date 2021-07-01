@@ -98,19 +98,19 @@ _.Zones =
 							119474,	-- Corrupted Risen Soldier
 						},
 						["g"] = {
-							artifact(875, { 	-- G'Hanir, the Mother Tree
+							artifact(875, {	-- G'Hanir, the Mother Tree
 								["classes"] = { DRUID },
 							}),
-							artifact(584, { 	-- The Silver Hand
+							artifact(584, {	-- The Silver Hand
 								["classes"] = { PALADIN },
 							}),
-							artifact(933, { 	-- Sheilun, Staff of the Mists
+							artifact(933, {	-- Sheilun, Staff of the Mists
 								["classes"] = { MONK },
 							}),
-							artifact(758, { 	-- T'uure, Beacon of the Naaru
+							artifact(758, {	-- T'uure, Beacon of the Naaru
 								["classes"] = { PRIEST },
 							}),
-							artifact(787, { 	-- Sharas'dal, Scepter of Tides
+							artifact(787, {	-- Sharas'dal, Scepter of Tides
 								["classes"] = { SHAMAN },
 							}),
 						},

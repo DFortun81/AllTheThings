@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(3, {	-- Wrath of the Lich King
-	inst(280, { 	-- The Forge of Souls
+	inst(280, {	-- The Forge of Souls
 		["mapID"] = 183,
 		["coord"] = { 52.3, 89.3, 118 },
 		["lvl"] = 75,

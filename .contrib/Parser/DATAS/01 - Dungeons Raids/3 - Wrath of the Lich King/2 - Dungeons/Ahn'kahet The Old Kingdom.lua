@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(3, {	-- Wrath of the Lich King
-	inst(271, { 	-- Ahn'kahet: The Old Kingdom
+	inst(271, {	-- Ahn'kahet: The Old Kingdom
 		["lvl"] = 61,
 		["mapID"] = 132,
 		["coord"] = { 28.3, 51.6, 115 },
@@ -15,20 +15,20 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					["provider"] = { "i", 43512 },	-- Ooze-Covered Fungus
 				}),
 				q(29825),	-- Pupil No More, No actual awards.
-				q(29826), 	-- Reclaiming Ahn'Kahet, No actual awards.
-				q(13187,{ 	-- The Faceless Ones
-					i(44353), 	-- Epaulets of the Faceless Ones
+				q(29826),	-- Reclaiming Ahn'Kahet, No actual awards.
+				q(13187,{	-- The Faceless Ones
+					i(44353),	-- Epaulets of the Faceless Ones
 					i(44350),	-- Mantle of Thwarted Evil
-					i(44351), 	-- Shoulderpads of Abhorrence
-					i(44352), 	-- Shoulderplates of the Abolished
+					i(44351),	-- Shoulderpads of Abhorrence
+					i(44352),	-- Shoulderplates of the Abolished
 				}),
 				q(29810, {	-- The Faceless Ones
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {
-						i(44353), 	-- Epaulets of the Faceless Ones
+						i(44353),	-- Epaulets of the Faceless Ones
 						i(44350),	-- Mantle of Thwarted Evil
-						i(44351), 	-- Shoulderpads of Abhorrence
-						i(44352), 	-- Shoulderplates of the Abolished
+						i(44351),	-- Shoulderpads of Abhorrence
+						i(44352),	-- Shoulderplates of the Abolished
 					},
 				}),
 			}),

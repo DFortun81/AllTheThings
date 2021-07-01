@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(SHADOWLANDS, {
 		m(BASTION, {
-			n(-169, { 	-- Emissary Quests
+			n(-169, {	-- Emissary Quests
 				q(61097, {	-- Supplies from The Ascended
 					["provider"] = { "n", 160470 },	-- Adjutant Nikos
 					["coord"] = { 52.2, 47.0, BASTION },

@@ -4,7 +4,7 @@
 
 _.WorldEvents =
 {
-	n(-543, { 	-- Broken Isles: Legion Invasions
+	n(-543, {	-- Broken Isles: Legion Invasions
 		["achievementID"] = 11544,	-- Defender of the Broken Isles
 		["maps"] = { 641, 650, 634, 630 },
 		["groups"] = {

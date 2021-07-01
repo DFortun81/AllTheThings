@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(1, {	-- Classic
-	inst(239, { 	-- Uldaman
+	inst(239, {	-- Uldaman
 		["lvl"] = 35,
 		["mapID"] = 230,
 		["maps"] = { 231 },
@@ -425,7 +425,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(8196),	-- Ebon Scimitar
 					i(5215),	-- Ember Wand
 					i(15251),	-- Headstriker Sword
-					i(10301), 	-- Pattern: White Bandit Mask
+					i(10301),	-- Pattern: White Bandit Mask
 					i(3187),	-- Sacrificial Kris
 					i(15287),	-- Crusader Bow
 					i(1625),	-- Exquisite Flamberge
@@ -441,13 +441,13 @@ _.Instances = { tier(1, {	-- Classic
 					i(8142),	-- Chromite Barbute
 					i(9970),	-- Embossed Plate Leggings
 					i(4045),	-- Mistscape Bracers
-					i(8029), 	-- Plans: Wicked Mithril Blade
+					i(8029),	-- Plans: Wicked Mithril Blade
 					i(7485),	-- Ranger Cord
 					i(9930),	-- Brigade Gauntlets
 					i(7525),	-- Gossamer Bracers
 					i(4735),	-- Mistscape Cloak
 					i(4736),	-- Mistscape Sash
-					i(7975), 	-- Plans: Heavy Mithril Pants
+					i(7975),	-- Plans: Heavy Mithril Pants
 					i(7479),	-- Ranger Helm
 					i(7470),	-- Regal Wizard Hat
 					i(9881),	-- Sorcerer Mantle
@@ -488,7 +488,7 @@ _.Instances = { tier(1, {	-- Classic
 					i(10302),	-- Pattern: Red Mageweave Pants
 					i(7471),	-- Regal Gloves
 					i(9906),	-- Royal Sash
-					i(10604), 	-- Plans: Heavy Mithril Helm
+					i(10604),	-- Plans: Heavy Mithril Helm
 					i(9920),	-- Tracker's Gloves
 					i(9925),	-- Tracker's Wristguards
 					i(8385),	-- Pattern: Turtle Scale Gloves

@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(875, { 	-- Zandalar
+	m(875, {	-- Zandalar
 		m(1163, {	-- Dazar'alor
 			n(QUESTS, {
 			-- TODO: TO SOLVE:
@@ -460,7 +460,7 @@ _.Zones =
 					["provider"] = { "n", 126334 },	-- Jani <Loa of Scavengers>
 					["cost"] = { { "i", 168970, 1 } },	-- Trashmaster's Mantle
 					["g"] = {
-						i(169394), 	-- Richly Appointed Drape
+						i(169394),	-- Richly Appointed Drape
 						title(324),	-- Trashmaster
 					},
 				}),

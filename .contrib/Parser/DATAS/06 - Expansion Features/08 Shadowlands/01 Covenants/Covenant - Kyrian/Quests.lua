@@ -13,8 +13,8 @@ _.ExpansionFeatures =
 			},
 			["g"] = {
 				n(QUESTS, sharedData({
-						["customCollect"] = { "SL_COV_KYR", },	-- Kyrian
-						}, {
+					["customCollect"] = { "SL_COV_KYR", },	-- Kyrian
+					}, {
 					q(58997, {	-- A Bittersweet Prize
 						["sourceQuests"] = { 58995 },	-- I Dreamed A Dream
 						["provider"] = { "n", 163328 },	-- Pelagos
@@ -33,7 +33,7 @@ _.ExpansionFeatures =
 					q(58791, {	-- A Day in the Life
 						["sourceQuests"] = { 58790 },
 						["provider"] = { "n", 162558 },	-- Alithea
-						["coord"] = { 32.5, 39.7, 49 }, -- Redridge Mountains
+						["coord"] = { 32.5, 39.7, REDRIDGE_MOUNTAINS },
 					}),
 					q(61697, {	-- A New Age
 						["sourceQuests"] = { 61135 },	-- Heart of the Crest
@@ -294,7 +294,7 @@ _.ExpansionFeatures =
 					q(58948, {	-- Food on the Table
 						["sourceQuests"] = { 58791 },	-- A Day in the Life
 						["provider"] = { "n", 162953 },	-- Sarah Howell
-						["coord"] = { 21.6, 42.0, 49 },	-- Redridge Mountains
+						["coord"] = { 21.6, 42.0, REDRIDGE_MOUNTAINS },
 					}),
 					q(58797, {	-- Forged by Trial
 					--	Unlocks Soulbind: Kleia (344757)
@@ -394,17 +394,24 @@ _.ExpansionFeatures =
 						["coord"] = { 33.8, 55.7, THE_MAW },
 					}),
 					q(63345, {	-- Kyrian Tactician
-						-- TODO: confirm SQ, assumed
-						["sourceQuests"] = { 63344 },	-- Kyrian Veteran
-						["description"] = "Becomes available at Renown 22.",
+						["description"] = "Requires Renown 22.",
 						["provider"] = { "n", 176100 },	-- Iona Skyblade
-						["coord"] = { 42.7, 70.3, 1707 },
+						["coord"] = { 42.7, 70.3, 1707 },	-- Archon's Rise
+					}),
+					q(64086, {	-- Kyrian Tactician #2
+						["description"] = "Requires Renown 59.",
+						["provider"] = { "n", 176100 },	-- Iona Skyblade
+						["coord"] = { 42.7, 70.3, 1707 },	-- Archon's Rise
 					}),
 					q(63344, {	-- Kyrian Veteran
-					--	["sourceQuests"] = {  },	-- unsure what unlocks the ability to pick up "return lost souls," which gives renown
 						["description"] = "Requires Renown 7.",
 						["provider"] = { "n", 176100 },	-- Iona Skyblade
-						["coord"] = { 42.7, 70.3, 1707 },
+						["coord"] = { 42.7, 70.3, 1707 },	-- Archon's Rise
+					}),
+					q(64323, {	-- Kyrian Veteran #2
+						["description"] = "Requires Renown 43.",
+						["provider"] = { "n", 176100 },	-- Iona Skyblade
+						["coord"] = { 42.7, 70.3, 1707 },	-- Archon's Rise
 					}),
 					q(58847, {	-- Kyrestia's Grace
 						["sourceQuests"] = { 58846 },	-- The Greater Good
@@ -423,7 +430,7 @@ _.ExpansionFeatures =
 					q(58951, {	-- Lakeshire's Last Stand
 						["sourceQuests"] = { 58950 },	-- Lumber for Lakeshire
 						["provider"] = { "n", 163111 },	-- Magistrate Solomon
-						["coord"] = { 28.9, 41.1, 49 },	-- Redridge Mountains
+						["coord"] = { 28.9, 41.1, REDRIDGE_MOUNTAINS },
 					}),
 					q(58565, {	-- Land of Light
 						["sourceQuests"] = { 58564 },	-- Sins of the Past
@@ -441,7 +448,7 @@ _.ExpansionFeatures =
 							58949,	-- Millie's Garden
 						},
 						["provider"] = { "n", 162953 },	-- Sarah Howell
-						["coord"] = { 21.6, 42.0, 49 },	-- Redridge Mountains
+						["coord"] = { 21.6, 42.0, REDRIDGE_MOUNTAINS },
 					}),
 					q(57207, {	-- Lysonia's Plan
 						["sourceQuests"] = {
@@ -465,7 +472,7 @@ _.ExpansionFeatures =
 					q(58949, {	-- Millie's Garden
 						["sourceQuests"] = { 58791 },	-- A Day in the Life
 						["provider"] = { "n", 162953 },	-- Sarah Howell
-						["coord"] = { 21.6, 42.0, 49 },	-- Redridge Mountains
+						["coord"] = { 21.6, 42.0, REDRIDGE_MOUNTAINS },
 					}),
 					q(58789, {	-- Misguiding Mentors
 						["sourceQuests"] = { 58787 },	-- Trial of Ascension
@@ -796,7 +803,7 @@ _.ExpansionFeatures =
 					q(58792, {	-- Where a Soul Belongs
 						["sourceQuests"] = { 58951 },	-- Lakeshire's Last Stand
 						["provider"] = { "n", 162558 },	-- Alithea
-						["coord"] = { 32.5, 39.7, 49 }, -- Redridge Mountains
+						["coord"] = { 32.5, 39.7, REDRIDGE_MOUNTAINS },
 					}),
 					q(58856, {	-- Who Are You Fooling?
 						["sourceQuests"] = { 58775 },	-- Meet the Queen

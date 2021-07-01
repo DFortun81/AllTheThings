@@ -28,8 +28,8 @@ local L = app.L;
 	L.ITEM_GIVES_REP = "Улучшает Репутацию с '";
 	L.COST = "Стоимость";
 	L.COST_DESC = "Содержит визуальную справку о предметах, необходимых для покупки или получения данной Штучки";
-	--TODO: L.SOURCES = "Source(s)";
-	--TODO: L.SOURCES_DESC = "Shows the Source of this Thing.\n\nParticularly, a specific Vendor/NPC, Quest, Encounter, etc.";
+	L.SOURCES = "Источник(и)";
+	L.SOURCES_DESC = "Показывает Источник этой Штучки.\n\nВ частности, конкретный торговец/НИП, Задание, Событие и т.д.";
 	L.WRONG_FACTION = "Вы должны быть за другую фракцию, чтобы видеть это.";
 	L.ARTIFACT_INTRO_REWARD = "Выдаётся в награду за выполнение вводного задания для данного Артефакта.";
 	L.WE_JUST_HATE_TIMEWALKING = "Путешествия во времени без надобности создают новые ID Источников для предметов, несмотря на то, что они имеют те же имена, облики и отображение в Коллекции.\n\nУбедительная просьба разработчикам Blizzard: Пожалуйста, почистите базу данных ID Источников и сделайте варианты предметов из Путешествий во времени/Кованные титанами с тем же ID Источника, что и оригинал, поскольку названия и облики абсолютно идентичны. Не только сделает вашу базу данных чище, но и позволит Собирателям относиться к новым Путешествиям во времени с воодушевлением, нежели с раздражением.\n\n - Crieve, Очень Огорченный Собиратель, у которого теперь всего лишь 64% выполнение Ульдуара, когда было 99%, потому что ваша команда продублировала ID Источников вместо использования уже имеющихся.";
@@ -485,7 +485,7 @@ local L = app.L;
 	-- About tab
 		L.ABOUT = "Об аддоне";
 		L.ABOUT_1 = " |CFFFFFFFF- модификация для отслеживания коллекции, которая показывает Вам где и как получить всё в игре! У нас большое сообщество в Discord (ссылка внизу), где Вы можете спрашивать, оставлять предложения, а также сообщать об ошибках и пропавших предметах. Если Вы нашли предмет или задание, которые не задокументированы, Вы можете сказать нам в Discord, для более технически подкованных у нас Git, в котором Вы можете участвовать.\n\nПока мы стремимся к выполнению, есть множество вещей, что добавляются в игру с каждым патчем, и если что-то отсутствует, пожалуйста, поймите, у нас небольшая команда, пытающаяся держать темп с изменениями, в то же время собирая Штучки. :D\n\nНе стесняйтесь спрашивать меня во время трансляций, даже если вопрос не связан напрямую с ATT (стандартное программирование аддонов WoW тоже).\nПримечание переводчика: на английском языке.\n\n- |r|Cffff8000Crieve|CFFFFFFFF\n\nPS: Зацените версию All The Things Classic и TBC Classic!\n\nНет, ATT не тот аддон, который ставит иконки в Ваших сумках. Это CanIMogIt и Caerdon Wardrobe!\n\nРекомендуем сайт для сравнения коллекций DataForAzeroth.com от shoogen!|r";
-		L.ABOUT_2 = "Дополнительные Участники: |CFFFFFFFF(в произвольном порядке)\nDaktar, Lucetia, Slumber, Gold, Avella, Aiue, Dead Serious, Oiche, Oxlotus, Eiltherune, Blueyleader, Iyanden, Pr3vention, BigBlaris, Talonzor, Mogwai, Heallie, Eckhardt, Boohyaka, Sadidorf, Sanctuari, Molkree, Runawaynow, Braghe, Myrhial и весь остальной ALL THE THINGS Discord!\n\nОсобая Благодарность AmiYuy (CanIMogIt) и Caerdon (Caerdon Wardrobe).|r  ";
+		L.ABOUT_2 = "Дополнительные Участники: |CFFFFFFFF(в произвольном порядке)\nDaktar, Lucetia, Slumber, Gold, Avella, Aiue, Dead Serious, Oiche, Oxlotus, Eiltherune, Blueyleader, Iyanden, Pr3vention, BigBlaris, Talonzor, Mogwai, Heallie, Eckhardt, Boohyaka, Sadidorf, Sanctuari, Molkree, Runawaynow, Braghe, Myrhial, Darkal и весь остальной ALL THE THINGS Discord!\n\nОсобая Благодарность AmiYuy (CanIMogIt) и Caerdon (Caerdon Wardrobe).|r  ";
 		L.ABOUT_3 = "\n|CFFFFFFFFВы просто обязаны загрузить их аддоны для иконок коллекций в Ваших сумках!|r";
 
 	-- Binding Localizations
@@ -810,12 +810,16 @@ for key,value in pairs({
 		[-910] = "Охота: пожиратели душ",							-- Hunt: Alpha Devourers
 		[-911] = "Охота: темные гончие",							-- Hunt: Shadehounds
 		[-912] = "Охота: крылатые пожиратели душ",					-- Hunt: Winged Soul Eaters
+		[-913] = "Мучители из Торгаста",							-- Tormentors of Torghast
 		[-914] = "Приключения",										-- Adventures
 		[-915] = "Проводник анимы",									-- Anima Conductor
 		[-916] = "1-й уровень: Растущая паутина",					-- Tier 1: Flowing Tendrils
 		[-917] = "2-й уровень: Тянущиеся нити",						-- Tier 2: Streaming Threads
 		[-918] = "3-й уровень: Текущая энергия",					-- Tier 3: Flowing Power
 		[-919] = "Ночная кобыла",									-- Night Mare
+		--TODO: [-977] = "Maelie the Wanderer",						-- Maelie the Wanderer
+		[-979] = "Брокер Ве'кен & Брокер Ве'нотт",					-- Broker Ve'ken & Broker Ve'nott
+		[-980] = "Общие Сокровища",									-- Shared Treasures
 
 		-- SL Maldraxxus/Necrolord
 			[-920] = "Ковенант: Некролорды",						-- Covenant: Necrolord
@@ -884,6 +888,7 @@ for key,value in pairs({
 			[-970] = "Набор C",										-- Set C
 			[-971] = "Набор D",										-- Set D
 
+			--TODO: [-976] = "Korthian Sets",						-- Korthian Sets
 			[-1001] = "Черный ящик",
 
 	-- Warrior order hall lore items TODO: localize
@@ -1031,6 +1036,7 @@ for key,value in pairs({
 		[-10080] = "Жуткие Видения",
 		[-10081] = "Заражённая область",
 		[-10082] = "Захваченная область",
+		[-10083] = "Нападения Ковенантов",							-- Covenant Assaults
 
 		-- Shadowlands Achievement Header
 			-- Achieve 14339 Sub-Criteira

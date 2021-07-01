@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(7, {	-- Legion
-	inst(727, { 	-- Maw of Souls
+	inst(727, {	-- Maw of Souls
 		["lvl"] = 110,
 		["maps"] = { 706, 707, 708 },
 		["coord"] = { 52.5, 45.3, 634 },	-- Maw of Souls, Stormheim

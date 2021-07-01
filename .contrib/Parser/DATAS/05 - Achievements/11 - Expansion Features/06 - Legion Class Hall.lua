@@ -94,8 +94,8 @@ _.Achievements =
 					}),
 				}),
 				ach(11136, {		-- An Epic Campaign
-					ach(11135), 	-- A Heroic Campaign
-					ach(10994), 	-- A Glorious Campaign
+					ach(11135),	-- A Heroic Campaign
+					ach(10994),	-- A Glorious Campaign
 				}),
 				ach(11171),			-- Arsenal of Power
 				ach(11222, {		-- Champions of Power
@@ -152,7 +152,7 @@ _.Achievements =
 					ach(11212),		-- Raise an Army (20)
 					ach(10706),		-- Training the Troops (5)
 				}),
-				ach(11223), 		-- Legendary Research
+				ach(11223),			-- Legendary Research
 				un(NEVER_IMPLEMENTED, ach(11339)),	-- Legion's Bane — Appears this was not introduced but still showing on WoWhead, flagging as NYI and leaving here to be safe
 				ach(11217, {		-- Many Many Missions, Handle It! (500)
 					ach(11216),		-- So Many Missions (100)

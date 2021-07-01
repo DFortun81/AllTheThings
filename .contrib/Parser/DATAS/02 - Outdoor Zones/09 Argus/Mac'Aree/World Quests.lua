@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(905, { 	-- Argus
+	m(905, {	-- Argus
 		m(882, {	-- Mac'Aree
 			n(WORLD_QUESTS, {
 				q(48729, {	-- Ataxon

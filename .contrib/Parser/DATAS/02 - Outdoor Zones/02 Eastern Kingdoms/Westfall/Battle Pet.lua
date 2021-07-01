@@ -31,7 +31,7 @@ _.Zones =
 				p(389, {	-- Tiny Harvester
 					["crs"] = { 61160 },	-- Tiny Harvester
 				}),
-				q(3861, { 	-- CLUCK!
+				q(3861, {	-- CLUCK!
 					["description"] = "Spam the macro '/chicken' at a Chicken for it to grant you this quest. The vendor, Farmer Saldean, sells the Special Chicken Feed you need.",
 					["repeatable"] = true,
 					["g"] = {

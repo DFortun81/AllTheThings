@@ -995,7 +995,7 @@ _.Zones =
 						un(REMOVED_FROM_GAME, i(56708)),	-- Bow of Ire (old version)
 						un(REMOVED_FROM_GAME, i(56710)),	-- Unbountied Cloak (Replaced by Durak's Downfall in WoD)
 						i(119325),	-- Bow of Ire
-						i(119326), 	-- Ring of Pardons
+						i(119326),	-- Ring of Pardons
 						i(119327),	-- Durak's Downfall
 					},
 				}),
@@ -1917,6 +1917,12 @@ _.Zones =
 					["provider"] = { "n", 4566 },	-- Kaelystia Hatebringer
 					["classes"] = { MAGE },
 					["coord"] = { 85.2, 14.2, UNDERCITY },
+					["races"] = HORDE_ONLY,
+				}),
+				q(60964, {	-- Mists of Pandaria: Onward to Adventure in Pandaria
+					["repeatable"] = true,
+					["provider"] = { "n", 167032 },	-- Chromie <Emissary of the Bronze Dragonflight>
+					["coord"] = { 40.8, 79.9, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27298, {	-- Seek Out Master Pyreanor

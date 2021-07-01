@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(1, {	-- Classic
-	inst(754, { 	-- Naxxramas
+	inst(754, {	-- Naxxramas
 		["u"] = REMOVED_FROM_GAME,
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
@@ -1041,7 +1041,7 @@ _.Instances = { tier(1, {	-- Classic
 						un(REMOVED_FROM_GAME, i(23668)),	-- Leggings of the Grand Crusader
 						un(REMOVED_FROM_GAME, i(23237)),	-- Ring of the Eternal Flame
 					}),
-					n(-368, { 	-- The Arachnid Quarter
+					n(-368, {	-- The Arachnid Quarter
 						["groups"] = {
 							n(15956, {	-- Anub'Rekhan
 								un(REMOVED_FROM_GAME, i(22937)),	-- Gem of Nerubis
@@ -1076,7 +1076,7 @@ _.Instances = { tier(1, {	-- Classic
 						},
 						["icon"] = "Interface\\Icons\\inv_trinket_naxxramas04",
 					}),
-					n(-370, { 	-- The Plague Quarter
+					n(-370, {	-- The Plague Quarter
 						["groups"] = {
 							n(15954, {	-- Noth the Plaguebringer
 								un(REMOVED_FROM_GAME, i(22816)),	-- Hatchet of Sundered Bone
@@ -1113,7 +1113,7 @@ _.Instances = { tier(1, {	-- Classic
 						},
 						["icon"] = "Interface\\Icons\\inv_misc_cauldron_nature",
 					}),
-					n(-369, { 	-- The Military Quarter
+					n(-369, {	-- The Military Quarter
 						["groups"] = {
 							n(16365, {	-- Master Craftsman Omarion <Brotherhood of the Light>
 								["description"] = "Omarion is an artisan Blacksmithing, Leatherworking, and Tailoring craftsman. Unfortunately, he was gravely injured inside Naxxramas and doesn't have much time left. He is willing to teach other master crafters his knowledge so it doesn't die with him.\n\nOmarion can teach the following plans and patterns to master craftsmen who have the required reputation with the Argent Dawn.",
@@ -1121,7 +1121,7 @@ _.Instances = { tier(1, {	-- Classic
 									un(REMOVED_FROM_GAME, i(22685)),	-- Pattern: Glacial Cloak
 									un(REMOVED_FROM_GAME, i(22684)),	-- Pattern: Glacial Gloves
 									un(REMOVED_FROM_GAME, i(22686)),	-- Pattern: Glacial Vest
-									un(REMOVED_FROM_GAME, i(22687)), 	-- Pattern: Glacial Wrists
+									un(REMOVED_FROM_GAME, i(22687)),	-- Pattern: Glacial Wrists
 									un(REMOVED_FROM_GAME, i(22705)),	-- Pattern: Icebane Bracers
 									un(REMOVED_FROM_GAME, i(22703)),	-- Pattern: Icebane Breastplate
 									un(REMOVED_FROM_GAME, i(22704)),	-- Pattern: Icebane Gauntlets
@@ -1178,7 +1178,7 @@ _.Instances = { tier(1, {	-- Classic
 						},
 						["icon"] = "Interface\\Icons\\spell_deathknight_classicon",
 					}),
-					n(-367, { 	-- The Construct Quarter
+					n(-367, {	-- The Construct Quarter
 						["groups"] = {
 							n(16028, {	-- Patchwerk
 								un(REMOVED_FROM_GAME, i(22815)),	-- Severance
@@ -1232,7 +1232,7 @@ _.Instances = { tier(1, {	-- Classic
 						},
 						["icon"] = "Interface\\Icons\\ability_rogue_deviouspoisons",
 					}),
-					n(-371, { 	-- The Upper Necropolis
+					n(-371, {	-- The Upper Necropolis
 						["groups"] = {
 							n(15989, {	-- Sapphiron
 								un(REMOVED_FROM_GAME, i(23242)),	-- Claw of the Frost Wyrm

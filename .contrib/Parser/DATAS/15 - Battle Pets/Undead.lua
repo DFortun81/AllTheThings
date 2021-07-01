@@ -5,7 +5,7 @@
 _.BattlePets =
 {
 	n(-797,	{	-- Journal
-		pa(242, { 	-- Undead
+		pa(242, {	-- Undead
 			p(2958),	-- Backbone
 			p(2456),	-- Barnaby
 			p(2408),	-- Bilefang Skitter
@@ -19,6 +19,7 @@ _.BattlePets =
 			p(2767),	-- Burnout
 			p(2455),	-- Captain Nibs
 			p(3025),	-- Carpal
+			p(3115),	-- Clinging Remains
 			p(2950),	-- Clutch
 			p(264),		-- Crawling Claw
 			p(321),		-- Creepy Crate
@@ -29,6 +30,7 @@ _.BattlePets =
 			p(1967),	-- Drudge Ghoul
 			un(10, p(348)),	-- Eye of the Legion
 			un(REMOVED_FROM_GAME, p(346)),	-- Fetish Shaman
+			p(3114),	-- Fodder
 			p(266),		-- Fossilized Hatchling
 			p(1625),	-- Fragment of Anger
 			p(1627),	-- Fragment of Desire
@@ -43,31 +45,36 @@ _.BattlePets =
 			p(190),		-- Ghostly Skull
 			p(2754),	-- Ghostly Whelpling
 			p(1143),	-- Giant Bone Spider
+			p(3121),	-- Grappling Gauntlet
 			p(1639),	-- Graves
+			p(3120),	-- Grip of Terror
 			p(1622),	-- Grotesque
 			p(2747),	-- Gruesome Belcher
 			p(628),		-- Infected Fawn
 			p(627),		-- Infected Squirrel
 			p(453),		-- Infested Bear Cub
 			p(3045),	-- Iridescent Ooze
+			p(3122),	-- Irongrasp
 			un(10, p(302)),	-- Landro's Lichling
 			p(2532),	-- Leper Rat
+			p(3098),	-- Lil'Abom
 			un(10, p(249)),		-- Lil' K.T.
+			p(3119),	-- Lost Limb
 			p(458),		-- Lost of Lordaeron
 			p(2895),	-- Lost Soul
 			p(3066),	-- Lucy
 			p(1351),	-- Macabre Marionette
 			p(3029),	-- Maw Crawler
 			p(2959),	-- Micromancer
-			p(2202), 	-- Miimii
+			p(2202),	-- Miimii
 			p(2638),	-- Minimancer
 			p(1145),	-- Mr. Bigglesworth
 			p(2963),	-- Mu'dud
-			p(2002), 	-- Naxxy
+			p(2002),	-- Naxxy
 			p(1954),	-- Nerubian Swarmer
 			p(2944),	-- Oonar's Arm
 			p(3046),	-- Putrid Geist
-			p(2080), 	-- Rattlejaw
+			p(2080),	-- Rattlejaw
 			p(439),		-- Restless Shadeling
 			p(2199),	-- Restored Revenant
 			p(2394),	-- Returned Hatchling

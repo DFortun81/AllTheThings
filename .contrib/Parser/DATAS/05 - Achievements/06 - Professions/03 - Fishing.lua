@@ -101,7 +101,7 @@ _.Achievements =
 			ach(12990),		-- Catchin' Some Rays
 			ach(3217,  {	-- Chasing Marcia
 				crit(1),		-- The Ghostfish
-				crit(2), 		-- Jewel Of The Sewers
+				crit(2),		-- Jewel Of The Sewers
 				crit(3),		-- Dangerously Delicious
 				crit(4),		-- Blood Is Thicker
 				crit(5),		-- Disarmed!
@@ -469,7 +469,7 @@ _.Achievements =
 					crit(27, {	-- Green Roughy
 						["itemID"] = 169884,	-- Green Roughy
 						["description"] = "Can be caught anywhere, but requires the |cffffffff[Painted Green]|r buff from Mechagon. Head over to the painting station at |cffffffff63, 42|r and get the buff.",
-						["coord"] = { 63.0, 42.0, 1462 },
+						["coord"] = { 63.0, 42.0, MECHAGON },
 					}),
 					crit(28, {	-- Displaced Scrapfin
 						["itemID"] = 169870,	-- Displaced Scrapfin

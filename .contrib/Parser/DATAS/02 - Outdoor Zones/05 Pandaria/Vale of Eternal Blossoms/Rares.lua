@@ -304,7 +304,7 @@ _.Zones =
 						i(86568),	-- Mr. Smite's Brass Compass
 					},
 				}),
-				--n(50843, { 		-- Portent	}),
+				--n(50843, {	-- Portent	}),
 			}),
 		}),
 	}),

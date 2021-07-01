@@ -363,7 +363,7 @@ _.Zones =
 				}),
 				q(47601, {	-- Field Evaluation
 					["sourceQuests"] = {
-						47711, 	-- Head of the Viper
+						47711,	-- Head of the Viper
 						47598,	-- Pilfering and Fencing
 						47596,	-- There Is No Plan "B"
 					},
@@ -1330,7 +1330,7 @@ _.Zones =
 					["provider"] = { "n", 127215 },	-- Shadow Hunter Da'jul
 					["coord"] = { 31.0, 52.0, 863 },
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] =  { 48854 },	-- Offer of Power
+					["sourceQuests"] = { 48854 },	-- Offer of Power
 				}),
 				q(54145, {	-- The Loa of Death
 					["provider"] = { "n", 146824 },	-- Princess Talanji

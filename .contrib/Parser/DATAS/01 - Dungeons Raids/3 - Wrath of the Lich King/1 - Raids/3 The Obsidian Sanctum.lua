@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(3, {	-- Wrath of the Lich King
-	inst(755, { 	-- The Obsidian Sanctum
+	inst(755, {	-- The Obsidian Sanctum
 		["isRaid"] = true,
 		["sharedLockout"] = 1,
 		["lvl"] = 80,
@@ -42,7 +42,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					}),
 					ach(2051, {	-- The Twilight Zone [10 player]
 						title(107),	-- of the Nightfall
-						i(43986)	-- Reins of the Black Drake 	//** Confirmed Drop 4/19/19 [3 Drakes up]
+						i(43986)	-- Reins of the Black Drake	//** Confirmed Drop 4/19/19 [3 Drakes up]
 					}),
 					crit(1, {	-- Sartharion (10 or 25 player) slain
 						["achievementID"] = 1658,	-- Champion of the Frozen Wastes

@@ -35,7 +35,7 @@ _.Zones =
 					["coord"] = { 57.6, 45.2, HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(6330), 	-- Recipe: Bristle Whisker Catfish
+						i(6330),	-- Recipe: Bristle Whisker Catfish
 						i(21219),	-- Recipe: Sagefish Delight
 						i(21099),	-- Recipe: Smoked Sagefish
 					},
@@ -125,7 +125,7 @@ _.Zones =
 					["coord"] = { 76.6, 58.6, HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(7613, { 	-- Pattern: Green Leather Armor
+						i(7613, {	-- Pattern: Green Leather Armor
 							["isLimited"] = true,
 						}),
 					},

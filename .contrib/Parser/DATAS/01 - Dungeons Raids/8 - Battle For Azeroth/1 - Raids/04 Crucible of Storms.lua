@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(8, {	-- Battle for Azeroth
-	inst(1177, { 	-- Crucible of Storms
+	inst(1177, {	-- Crucible of Storms
 		["isRaid"] = true,
 		["coord"] = { 83.8, 47.0, 942 },
 		["maps"] = {

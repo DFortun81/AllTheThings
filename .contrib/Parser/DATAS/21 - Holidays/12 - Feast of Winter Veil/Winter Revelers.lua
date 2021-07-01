@@ -5,7 +5,7 @@
 _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 {
 	holiday(235485, {	-- Feast of Winter Veil
-		n(-7776, { 	-- Winter Revelers
+		n(-7776, {	-- Winter Revelers
 			["description"] = "Type /kiss while targeting any Winter Reveler to receive one of the following items.\n\nNOTE: While the debuff persists, you will be unable to kiss another one.",
 			["crs"] = {
 				22998,	-- Blood Elf Female Winter Reveler
@@ -60,7 +60,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 								["coord"] = { 47.25, 11.10, 50 },
 							}),
 							crit(2, {	-- Brother Wilhelm in Goldshire
-								["coord"] = { 41.07, 65.95, 37 },
+								["coord"] = { 41.07, 65.95, ELWYNN_FOREST },
 							}),
 							crit(3, {	-- Brother Karman in Theramore
 								["description"] = "If Theramore is phased, talk to Zidormi to the west of the city.",

@@ -334,8 +334,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { EASTERN_PLAGUELANDS },
 										}),
 										crit(10, {	-- Elwynn Forest, Goldshire
-											["coord"] = { 43.7, 66.0, 37 },
-											["maps"] = { 37 },	-- Elwynn Forest
+											["coord"] = { 43.7, 66.0, ELWYNN_FOREST },
+											["maps"] = { ELWYNN_FOREST },
 										}),
 										crit(11, {	-- The Hinterlands, Aerie Peak
 											["coord"] = { 14.2, 44.7, THE_HINTERLANDS },
@@ -362,8 +362,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { 50 },	-- Northern Stranglethorn
 										}),
 										crit(17, {	-- Redridge Mountains, Lakeshire
-											["coord"] = { 26.4, 41.6, 49 },
-											["maps"] = { 49 },	-- Redridge Mountains
+											["coord"] = { 26.4, 41.6, REDRIDGE_MOUNTAINS },
+											["maps"] = { REDRIDGE_MOUNTAINS },
 										}),
 										crit(18, {	-- Searing Gorge, Iron Summit
 											["coord"] = { 39.4, 66.1, SEARING_GORGE },

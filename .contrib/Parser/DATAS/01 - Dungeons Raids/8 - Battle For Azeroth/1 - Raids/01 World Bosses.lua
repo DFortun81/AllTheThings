@@ -220,7 +220,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 				["lvl"] = { 50 },
 				["maps"] = { 863 },	-- Nazmir
 				["cr"] = 132701,	-- T'zane <Tehe Soul Terror>
-				["g"] =  bubbleDown({["modID"] = 3}, {
+				["g"] = bubbleDown({["modID"] = 3}, {
 					crit(3, {	-- T'zane
 						["achievementID"] = 12587,	-- Unbound Monstrosities
 					}),

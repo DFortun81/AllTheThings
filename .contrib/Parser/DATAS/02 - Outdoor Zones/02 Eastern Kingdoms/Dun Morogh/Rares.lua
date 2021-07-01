@@ -15,7 +15,7 @@ _.Zones =
 						{ 66.2, 59.8, DUN_MOROGH },
 					},
 				}),
-				n(1137, { 	-- Edan the Howler
+				n(1137, {	-- Edan the Howler
 				}),
 				n(1119, {	-- Hammerspine
 					["description"] = "Spawns at the very end of the cave.",

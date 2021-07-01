@@ -1,10 +1,9 @@
 -----------------------------------------------------
 --     W O R L D   E V E N T S   M O D U L E       --
 -----------------------------------------------------
-
 _.WorldEvents =
 {
-	n(-520, { 	-- Expansion Prelaunch Events
+	n(-520, {	-- Expansion Prelaunch Events
 		["icon"] = "Interface\\Icons\\inv_misc_missilesmallcluster_green",
 		["groups"] = {
 			n(-527, {	-- Battle For Azeroth

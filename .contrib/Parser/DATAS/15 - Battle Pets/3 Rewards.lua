@@ -10,8 +10,8 @@ _.BattlePets =
 		}),
 		i(94207, {	-- Fabled Pandaren Pet Supplies
 			["crs"] = {
-				64582, 	-- Gentle San
-				64572, 	-- Sara Finkleswitch
+				64582,	-- Gentle San
+				64572,	-- Sara Finkleswitch
 			},
 			["g"] = {
 				i(92679),	-- Flawless Aquatic Battle-Stone
@@ -88,8 +88,8 @@ _.BattlePets =
 		i(98095, {	-- Brawler's Pet Supplies
 			["crs"] = {
 				63596,	-- Audrey Burnhep
-				64582, 	-- Gentle San
-				64572, 	-- Sara Finkleswitch
+				64582,	-- Gentle San
+				64572,	-- Sara Finkleswitch
 				63626,	-- Varzok
 			},
 			["g"] = {

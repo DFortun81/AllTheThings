@@ -419,7 +419,7 @@ _.Zones =
 					["provider"] = { "n", 159930 },	-- Plague Deviser Marileth
 					["coord"] = { 56.4, 57.2, MALDRAXXUS },
 					["g"] = {
-						i(173891),	-- 	Plagueborn Slime (PET!)
+						i(173891),	--	Plagueborn Slime (PET!)
 					},
 				}),
 				q(58785, {	-- Smack And Grab
@@ -742,3 +742,32 @@ _.Zones =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(58625),	-- Connecting the Dots
+		q(57537),	-- Covering our Tracks
+		q(57513),	-- Enemy of My Enemy
+		q(59204),	-- Foreign Contamination
+		q(57978),	-- Forward and Back
+		q(62394),	-- House in Decline
+		q(60736),	-- Quest 02
+		q(59903),	-- Split Blob Test
+		q(59882),	-- Sure Bet
+		q(59175),	-- The Eternal Revenge
+		q(58261),	-- What's the Grub
+	}),
+	n(-10100, {	-- Shadowlands
+		n(-163, {	-- Armor
+			n(-43, {	-- Cloth
+				i(175512),	-- Corpse-Stitcher's Raiment
+				i(175528),	-- Corpse-Stitcher's Trousers
+			}),
+			n(-44, {	-- Leather
+			}),
+			n(-45, {	-- Mail
+			}),
+			n(-46, {	-- Plate
+			}),
+		}),
+	}),
+});

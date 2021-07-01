@@ -139,7 +139,7 @@ _.Achievements =
 			ach(10843),		-- Mythic: Trilliax
 			ach(10824),		-- Mythic: Ursoc
 			ach(11999),		-- Mythic: Varimathras
-			ach(10827,	{ 	-- Mythic: Xavius
+			ach(10827,	{	-- Mythic: Xavius
 				title(341),		-- the Dreamer
 			}),
 			ach(10838, {	-- Nightspire

@@ -136,7 +136,7 @@ _.Zones =
 					["sourceQuest"] = 9176,	-- The Twin Ziggurats	[TODO: Confirm this!]
 					["coord"] = { 54.8, 48.3, GHOSTLANDS },
 					["cost"] = {
-						{ "i", 22628, 1 },	-- 	Janeda's Restorative Draught
+						{ "i", 22628, 1 },	-- Janeda's Restorative Draught
 					},
 					-- #else
 					["qg"] = 16198,	-- Apothecary Renzithen
@@ -737,7 +737,7 @@ _.Zones =
 				}),
 				q(9161, {	-- The Traitor's Shadow
 					["qg"] = 16203,	-- Ranger Vynna
-					["sourceQuest"] = 9282, 	-- The Farstrider Enclave
+					["sourceQuest"] = 9282,	-- The Farstrider Enclave
 					["coord"] = { 71.9, 32.6, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(15, 1, 15),
@@ -761,7 +761,7 @@ _.Zones =
 							["provider"] = { "i", 22598 },	-- Stone of Light
 							["coord"] = { 34.3, 47.7, GHOSTLANDS },
 						}),
-						i(22783), 	-- Sunwell Blade
+						i(22783),	-- Sunwell Blade
 						i(22784)	-- Sunwell Orb
 					},
 				}),

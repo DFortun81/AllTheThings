@@ -1596,8 +1596,8 @@ _.HiddenQuestTriggers = {
 		q(34562),	-- Talador - Trigger Teron'gor Defense Spawns),	-- triggers in a cave with Soulbind Nyami at Gul'Rok
 		q(34574),	-- Talador - Unused. Triggered when choosing the Arcane Sanctum
 		q(34101),	-- Talador - Vignette: Aruumel's Worn Mace	-- triggers when looting "Lightbearer"
-		q(34112), 	-- Talador - Vignette: Guy 1 Found,	-- triggers breaking a deathweb cocoon in Deathweb Hollow (A)
-		q(34114), 	-- Talador - Vignette: Four Friends Found,	-- triggers when all 4 citizens are freed from deathweb cocoons, making the Deathweb Toxin Vial treasure lootable (A)
+		q(34112),	-- Talador - Vignette: Guy 1 Found,	-- triggers breaking a deathweb cocoon in Deathweb Hollow (A)
+		q(34114),	-- Talador - Vignette: Four Friends Found,	-- triggers when all 4 citizens are freed from deathweb cocoons, making the Deathweb Toxin Vial treasure lootable (A)
 		q(34115),	-- Talador - Vignette: Four Friends Found,	-- triggers when all 4 citizens are freed from deathweb cocoons, making the Deathweb Toxin Vial treasure lootable
 		q(34110),	-- Talador - Vignette: Girl 1 Found,	-- triggers breaking a a deathweb cocoon in Deathweb Hollow
 		q(34116),	-- Talador - Vignette: Girl 1 Found,	-- triggers breaking a a deathweb cocoon in Deathweb Hollow
@@ -1747,8 +1747,8 @@ _.HiddenQuestTriggers = {
 		q(54705),	-- Level 17 human monk looting mailbox in garrisson
 
 		-- ASSAULTS
-		q(36808), 	-- Missive completion: Assault on Shattrath Harbour
-		q(36809), 	-- Missive completion: Assault on the Heart of Shattrath
+		q(36808),	-- Missive completion: Assault on Shattrath Harbour
+		q(36809),	-- Missive completion: Assault on the Heart of Shattrath
 		q(36534),	-- Garrison Max-level Choice Tracker: (GROUP) Talador Shattrath City, West (When picking up Assault on the Heart of Shattrath on Horde character)
 		q(36547),	-- Garrison Max-level Choice Tracker: (GROUP) Talador Shattrath City, West (When picking up Assault on the Heart of Shattrath on Horde character)
 		q(36663),	-- Garrison Max-level Choice Tracker: ANY CHOICE MADE (When picking up Assault on the Heart of Shattrath on Horde character)
@@ -1969,7 +1969,7 @@ _.HiddenQuestTriggers = {
 		q(38420),	-- triggered when turning in #38624, "Cry Thunder!"
 		q(42860),	-- Tracking - God-King Scene — something happened around turning in #38811/39791 that triggered some /yells from God-King Skovald
 		q(45365),	-- Treasure: Wand of Simulated Life – part of some legion engineering quest
-		q(47255), 	-- Triggers after completing "Mark of the Sentinax" (47139)
+		q(47255),	-- Triggers after completing "Mark of the Sentinax" (47139)
 		q(39017, {	-- Triggered when turning in first DK artifact completion quest (likely triggers after any first artifact quest for DK)
 			-- Added sourcequests in here since this HQT unlocks the Legion DK Flight Path...
 			["name"] = "Flight Path Unlock",
@@ -2073,7 +2073,7 @@ _.HiddenQuestTriggers = {
 		--  Engineering
 		q(41100),	-- FLAG - Swap Didis - triggered after completing Endless Possibilities (40854)
 		--	Jewelcrafting
-		q(40557), 	-- FLAG: Clive Cozen Leave - Triggers after completing Hidden Intentions (40539)
+		q(40557),	-- FLAG: Clive Cozen Leave - Triggers after completing Hidden Intentions (40539)
 		--	Leatherworking
 		q(44351),	-- FLAG: Upgrade First Crafted Item - triggers when you craft the first legion armour item (may not be LW specific)
 		q(47094),	-- Broken Shore - Choice: Leatherworking (L) - triggers when you choose to craft the leather legendary at Eliezer Hammerbeard (Nether Disruptor)
@@ -2539,8 +2539,8 @@ _.HiddenQuestTriggers = {
 		q(57726),	-- triggers on Honey Smasher kill together with 57674 so putting it here
 		--	( 57.1, 51.2 )	-- looting honey triggered 56170, 56414, 57702, 57703
 		q(56170),	-- \
-		q(56414),	-- 	\	all 4 triggered at the same time after i looted the jelly at the end of the Lush Flower Bed event.  appears to be repeatable
-		q(57702),	-- 	/
+		q(56414),	--	\	all 4 triggered at the same time after i looted the jelly at the end of the Lush Flower Bed event.  appears to be repeatable
+		q(57702),	--	/
 		q(57703),	-- /
 		q(56113),	-- triggered after Honeyback Harvester event that got to round 23 or 24
 		q(57700),	-- triggered after Honeyback Harvester event that got to round 23 or 24
@@ -3572,6 +3572,16 @@ _.HiddenQuestTriggers = {
 		-----------------
 		-- SHADOWLANDS --
 		-----------------
+		-- Generic SL tracking quests (cannot be placed in a single file)
+		q(64508),	-- generic Renown quest - triggers multiple times for all covenants
+		q(63220),	-- generic quest for hitting Renown 10 (any covenant) - WQ reward upgrade #1
+		q(63221),	-- generic quest for hitting Renown 19 (any covenant) - WQ reward upgrade #2
+		q(63350),	-- generic quest for hitting Renown 29 (any covenant) - WQ reward upgrade #3
+		q(64067),	-- generic quest for hitting Renown 46 (any covenant) - WQ reward upgrade #4
+		q(64073),	-- generic quest for hitting Renown 47 (any covenant)
+		q(64068),	-- generic quest for hitting Renown 61 (any covenant)
+		q(64655),	-- unsure precisely what triggers this - it was added late in the PTR cycle and popped originally in Korthia.  popped soon after i logged in on my main on retail
+
 		-- Exile's Reach
 		q(58418),	-- Triggers shortly after login. Possibly some kind of indicator for the account having done it at least once per faction?
 		q(54927),	-- Triggers after the cinematic. You can't move until this quest triggers
@@ -3612,10 +3622,7 @@ _.HiddenQuestTriggers = {
 		q(61858),	-- taking the portal to Acherus during "Shadowlands: A Chilling Summons"
 		q(62686),	-- triggers when entering a zone with a 'Training' Calling active and your companion spawns (repeatable)
 		q(62713),	-- triggers when chosing to Skip the SL Storyline. Using this as the source of whether a character is a 'Skip' character
-		q(57622),	-- triggered when turning in #58609, "Taking a Seat" (idk if this is covenant-related or skip-related or something else)
-		q(63220),	-- triggered when hitting Renown 10 (all covenants appear to get the same quest trigger) - WQ reward upgrade #1
-		q(63221),	-- triggered when hitting Renown 19 (all covenants appear to get the same quest trigger) - WQ reward upgrade #2
-		q(63350),	-- triggered when hitting Renown 29 (all covenants appear to get the same quest trigger) - WQ reward upgrade #3
+		q(57622),	-- triggered when turning in #58609, "Taking a Seat" (idk if this is covenant-related or skip-related or something else
 		q(62744),	-- initially chose to quest through SL, then swapped to Threads of Fate
 		q(62151),	-- triggered when accepting #62275, "Bastion" for Threads of Fate
 		q(62152),	-- triggered when accepting #62278, "Maldraxxus" for Threads of Fate
@@ -3626,7 +3633,7 @@ _.HiddenQuestTriggers = {
 		-- Illusions
 		q(63004),	-- triggered when learning Illusion: Devoted Spirit
 		q(62964),	-- triggered when learning Illusion: Undying Spirit
-		q(61727), 	-- triggered when learning Illusion: Sinsedge
+		q(61727),	-- triggered when learning Illusion: Sinsedge
 
 		-- Adventures
 		-- Completing mi(2174), "Tutorial: Dispose of the Detritus"
@@ -4030,9 +4037,6 @@ _.HiddenQuestTriggers = {
 		q(62290),	-- Triggered when turning in 'Corpse Run' (61523)
 		q(62215),	-- Triggered when turning in Training Program (62216)
 		q(62596),	-- Triggered when completing 'The Great Luckydo'
-		q(62753),	-- Reaching Renown 19 Necrolord / unlocking Deepening Bond 4% stam increase
-		q(62754),	-- Reaching Renown 35 Necrolord / unlocking Deepening Bond 6% stam increase
-		q(62926),	-- Reaching Renown 39 Necrolord / unlocking Armored Plaguerot Tauralus
 		q(62404),	-- using Ashen Ink (Crypt Couture)
 		q(62408),	-- using Jagged Bonesaw (Crypt Couture)
 		q(62405),	-- using Mucosal Pigment (Crypt Couture)
@@ -4105,12 +4109,8 @@ _.HiddenQuestTriggers = {
 		q(60768),	-- opening the cage to get Dal's Courier Badge on "A Stolen Stone Fiend"
 		q(62940),	-- opening the crate while on #61619, "Alchemy: Elixir of Humility"
 		-- Venthyr Covenant
-		q(62699),	-- triggered when turning in #62691, "A Calling in Revendreth"
-		q(62924),	-- triggered when turning in #62691, "A Calling in Revendreth"
 		q(62827),	-- uhhhhh i killed myself by jumping into nothingness from one of the platforms / while on FP through Oribos
-		q(59316),	-- turning in quest #62918, "Binding Power"
 		q(62950),	-- clicking "Activate" after putting "Thrill Seeker" in Nadjia's soulbind tree
-		q(59317),	-- triggered when turning in #62919, "Strengthening the Bond"
 		q(62749),	-- triggered when turning in #62921, "Our True Purpose"
 		q(63063),	-- looks like an unused version of #63056, "Sanctum Upgrade: Mirror Network"
 		q(60300),	-- appears to trigger with every anima conduit
@@ -4226,7 +4226,6 @@ _.HiddenQuestTriggers = {
 		q(62510),	-- ""
 		q(61534),	-- triggered when looting Mikanikos' Extravagant Tribute for the first time, all i got was Decree: Mikanikos's Boon -- did NOT trigger with the rest of the ending quests, was only after i looted the chest
 		q(61731),	-- Ember Court - after completing Magical Curios
-		q(62208),	-- Ember Court - after Maldraxxi Protocols
 
 		q(62668),	-- after looting a Dirty Glinting Object -- someone on discord got this when turning in Favor: She Had a Stone Heart, but i did not
 		q(58059),	-- when choosing House Briarbane while on "Enacting Immediate Justice"
@@ -4252,9 +4251,6 @@ _.HiddenQuestTriggers = {
 		q(62460),	-- triggered when completing #60601, "Darkwing Drills," Anima Conductor Rank 2 WQ (as aggressor)
 		-- q(61531),	-- learning the toy (The Countess's Parasol) ?? maybe?
 		q(63454),	-- triggered when turning in #62867, "Return Lost Souls" (Venthyr 10-soul weekly)
-		q(62750),	-- hitting Renown 19 on Venthyr / unlocking Deepening Bond 4% stam increase
-		q(62751),	-- hitting Renown 35 on Venthyr / unlocking Deepening Bond 6% stam increase
-		q(62925),	-- hitting Renown 39 on Venthyr / received mount Gravestone Battle Gargon
 		q(59744),	-- when opening the Battered Chest while on Repair and Restore
 		q(60302),	-- when channeling anima to Dominance Keep for the first time
 		q(61502),	-- when using Invitation: Choofa
@@ -4287,7 +4283,6 @@ _.HiddenQuestTriggers = {
 		q(60507),	-- triggered shortly after picking up The Lion's Cage (picked up quest, refreshed, walked out of the cave, killed a Malice Shadow, the quest popped)
 		q(62939),	-- triggered after watching the cutscene for Stand as One / landing in Oribos
 		q(57678),	-- triggered after watching the cutscene for Stand as One / landing in Oribos (second character to go thru the scenario, didn't see this on my first)
-		q(62907),	-- triggered after collecting all stygia during "Rule 1: Have an Escape Plan" (triggers dialogue from The Jailer + the Eye of the Jailer counter...thing)
 		q(62908),	-- triggered after collecting 5 souls during "Rule 1: Have an Escape Plan"
 		q(62913),	-- triggered when turning in #60281, "Rule 4: Make a List"
 		q(63446),	-- triggered when landing in The Maw on 12/9/20
@@ -4305,7 +4300,6 @@ _.HiddenQuestTriggers = {
 
 
 		-- Eye of the Jailer Levels
-		q(63382),	-- Mortars/Missiles (1)
 		q(63379),	-- Assassins (2)
 		-- q(),	-- Chains (3)
 		q(63376),	-- Abductors (4)
@@ -4338,5 +4332,38 @@ _.HiddenQuestTriggers = {
 		q(62878),	-- Sludgefist
 		q(62879),	-- Stone Legion Generals
 		q(62880),	-- Sire Denthrius
+
+		-- 9.1 PTR
+		q(63820),	-- triggered when completing the final step of the Kyrian Assault, quest #63824
+		q(64077),	-- triggered when completing the final step of the Kyrian Assault, quest #63824
+		q(64153),	-- dancing near a forge for The Zovaal Shuffle
+		q(64154),	-- dancing near a forge for The Zovaal Shuffle
+		q(64155),	-- dancing near a forge for The Zovaal Shuffle
+		q(64161),	-- dancing near a forge for The Zovaal Shuffle
+		q(64158),	-- dancing near a forge for The Zovaal Shuffle
+		q(64147),	-- triggered when turning in #63621, "Pulling His Chain"
+		q(63544),	-- triggered when completing #63543, "Necrolord Assault"
+		q(64274),	-- triggered when logging in on 4/30/21 - ptr.wowhead.com says this is a tracking quest for "NPC #179868 slain (5)" and "Dusklight Matriarch [id #179871] slain."  i couldn't see anything on the map that was attached to this quest ID so idk!!  there IS a WQ up in the maw, but it's 64273, not 64274.  but possibly this is tied to the active status of a maw wq, not sure
+		q(64253),	-- triggered when walking through a Maw Mirror on the last part of the Venthyr Assault (possibly for riding Draven up to the top area)
+		q(63819),	-- triggered when completing #63822, "Venthyr Assault"
+		q(64148),	-- triggered when completing ##63621, "Pulling His Chain"
+		q(64280),	-- looting a Lost Razorwing Egg
+		q(64281),	-- looting a second Lost Razorwing Egg
+		q(64376),	-- tracking quest that automatically accepted when i flew in to Korthia on 5/11/21 - supposedly related to the Darkmaul mount
+		q(64262),	-- triggered when turning in #64007, "Charge of the Covenants"
+		q(64536),	-- looting Maldraxxus Larva Shell (300 Catalogued Research)
+		q(63601),	-- this was either learning Aspiring Aspirant's ensemble or pulling a legendary out of the mailbox that i hadn't had bagspace for earlier
+
+		-- Treasures of Korthia achievement
+		q(64244),	-- Korthia treasure - Anima Laden Egg
+		q(64241),	-- Korthia treasure - Dislodged Nest
+		q(64252),	-- Korthia treasure - Displaced Relic
+		q(64234),	-- Korthia treasure - Forgotten Feather
+		q(64222),	-- Korthia treasure - Glittering Nest Material
+		q(64264),	-- Korthia treasure - Infested Vestige
+		q(64238),	-- Korthia treasure - Lost Memento
+		q(64268),	-- Korthia treasure - Offering Box
+		q(64045),	-- The Maw repeatable treasure, Stolen Anima Vessel
+		q(64044),	-- The Maw repeatable treasure, Stolen Anima Vessel (34.2, 64.6) / (30.6, 58.4)
 	}),
 };

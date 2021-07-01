@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(49, {	-- Redridge Mountains
+		m(REDRIDGE_MOUNTAINS, {
 			n(ZONEDROPS, {
 				i(1446, {	-- Blackrock Boots
 					["u"] = REMOVED_FROM_GAME,
@@ -74,11 +74,11 @@ _.Zones =
 				}),
 				i(2175, {	-- Shadowhide Battle Axe
 					["u"] = REMOVED_FROM_GAME,
-					["crs"] = { 568 }, 	-- Shadowhide Warrior
+					["crs"] = { 568 },	-- Shadowhide Warrior
 				}),
 				i(1457, {	-- Shadowhide Mace
 					["u"] = REMOVED_FROM_GAME,
-					["crs"] = { 433 }, 	-- Shadowhide Gnoll
+					["crs"] = { 433 },	-- Shadowhide Gnoll
 				}),
 				i(1458, {	-- Shadowhide Maul
 					["u"] = REMOVED_FROM_GAME,

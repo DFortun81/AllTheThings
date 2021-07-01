@@ -58,46 +58,61 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, ach(13419)),		-- Cutting Edge: Uu'nat, Harbinger of the Void
 			un(REMOVED_FROM_GAME, ach(7485)),		-- Cutting Edge: Will of the Emperor
 			un(REMOVED_FROM_GAME, ach(11191)),		-- Cutting Edge: Xavius
-			ach(5839, {				-- Dragonwrath, Tarecgosa's Rest
+			ach(5839, {								-- Dragonwrath, Tarecgosa's Rest
 				["classes"] = { PRIEST, SHAMAN, MAGE, WARLOCK, MONK, DRUID },
 			}),
-			un(9, ach(11744)),		-- Drop Dead, Gorgeous
-			ach(6181, {				-- Fangs of the Father
+			un(9, ach(11744)),						-- Drop Dead, Gorgeous
+			ach(6181, {								-- Fangs of the Father
 				["classes"] = { ROGUE },
+			}),
+			ach(15197, {							-- Hall of Fame: Sylvanas (Alliance)
+				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					title(448),	-- <Name>, Famed Bane of the Banshee Queen
+				},
+			}),
+			ach(15196, {							-- Hall of Fame: Sylvanas (Horde)
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					title(448),	-- <Name>, Famed Bane of the Banshee Queen
+				},
 			}),
 			un(REMOVED_FROM_GAME, ach(3004)),		-- He Feeds On Your Tears (10 player)
 			un(REMOVED_FROM_GAME, ach(3005)),		-- He Feeds On Your Tears (25 player)
-			ach(3316, {				-- Herald of the Titans
+			ach(3316, {								-- Herald of the Titans
 				title(131),			-- ,Herald of the Titans
 			}),
 			un(REMOVED_FROM_GAME, ach(5313)),		-- I Can't Hear You Over the Sound of How Awesome I Am
 			un(REMOVED_FROM_GAME, ach(8089)),		-- I Thought He Was Supposed to Be Hard?
-			ach(11869, {			-- I'll Hold These For You Until You Get Out
+			ach(11869, {							-- I'll Hold These For You Until You Get Out
 				i(150372, {				-- Arsenal: The Warglaives of Azzinoth
 					["classes"] = { DEMONHUNTER },
 				}),
 			}),
-			ach(4623, {				-- Shadowmourne
+			ach(15191, {							-- Rae'shalare, Death's Whisper
+				["classes"] = { HUNTER },
+			}),
+			ach(4623, {								-- Shadowmourne
 				["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 			}),
-			ach(429, {				-- Sulfuras, Hand of Ragnaros
+			ach(429, {								-- Sulfuras, Hand of Ragnaros
 				["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 			}),
 			un(REMOVED_FROM_GAME, ach(11387, {		-- The Chosen
 				un(REMOVED_FROM_GAME, title(347)),	-- the Chosen
 			})),
 			un(REMOVED_FROM_GAME, ach(2496)),		-- The Fifth Element
-			ach(725, {				-- Thori'dal, the Stars' Fury
+			ach(725, {								-- Thori'dal, the Stars' Fury
 				["classes"] = { HUNTER },
 			}),
-			ach(428, {				-- Thunderfury, Blessed Blade of the Windseeker
+			ach(428, {								-- Thunderfury, Blessed Blade of the Windseeker
 				["classes"] = { ROGUE, MONK, DEMONHUNTER },
 			}),
 			un(REMOVED_FROM_GAME, ach(9680)),		-- Time is a Flat Circle
-			ach(3142, {				-- Val'anyr, Hammer of Ancient Kings
+			ach(3142, {								-- Val'anyr, Hammer of Ancient Kings
 				["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID },
 			}),
-			ach(426, {				-- Warglaives of Azzinoth
+			ach(426, {								-- Warglaives of Azzinoth
 				["classes"] = { WARRIOR, ROGUE, DEATHKNIGHT, MONK, DEMONHUNTER },
 			}),
 		}),

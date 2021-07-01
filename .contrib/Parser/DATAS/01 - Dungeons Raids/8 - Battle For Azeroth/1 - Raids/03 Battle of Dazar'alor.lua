@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(8, {	-- Battle for Azeroth
-	inst(1176, { 	-- Battle of Dazar'alor
+	inst(1176, {	-- Battle of Dazar'alor
 		["isRaid"] = true,
 		["coords"] = {
 			{ 70.5, 35.3, 1161 },	-- Alliance, Boralus

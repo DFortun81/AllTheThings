@@ -256,7 +256,7 @@ _.Zones =
 									n(102347, {
 										["description"] = "After the short buff expires, this mob spawns. Kill it for the lure.",
 										["g"] = {
-											i(133710), 	-- Salmon Lure
+											i(133710),	-- Salmon Lure
 										},
 									}),
 								},
@@ -296,7 +296,7 @@ _.Zones =
 							}),
 						},
 					}),
-					ach(11725, { 	-- Fisherfriend of the Isles
+					ach(11725, {	-- Fisherfriend of the Isles
 						["collectible"] = false,
 						["description"] = "The Fishing Masters are on a daily rotation, so only one is up at a time.  The order is:\n\n1. Sha'leth\n2. Impus\n3. Ilyssia of the Waters\n4. Keeper Raynae\n5. Akule Riverhorn\n6. Corbyn\n\nMake sure you're close enough to the Fishing Master to get the |cFFFFD700Something's Fishy|r buff, or you won't be able to fish up the items (the buff may not show up until you dismount).\n\nThe quickest way to reach Best Friend is to fish in a group.\n",
 						["g"] = {
@@ -331,7 +331,7 @@ _.Zones =
 							}),
 						},
 					}),
-					i(137695), 	-- Schematic: Reaves Module: Wormhole Generator Mode
+					i(137695),	-- Schematic: Reaves Module: Wormhole Generator Mode
 				}),
 				prof(HERBALISM, {
 					q(40040, {	-- Felwort Sample

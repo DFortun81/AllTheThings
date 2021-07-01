@@ -1990,3 +1990,9 @@ _.Zones =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(11939),	-- ?????
+		q(12490),	-- Veehja's Revenge
+	}),
+});

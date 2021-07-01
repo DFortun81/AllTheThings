@@ -175,7 +175,7 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = lvlsquish(2, 1, 2),
 							["groups"] = {
-								objective(1, {	-- 	Nestlewood Owlkin inoculated
+								objective(1, {	--	Nestlewood Owlkin inoculated
 									["provider"] = { "i", 22962 },	-- Inoculating Crystal
 									["cr"] = 16518,	-- Nestlewood Owlkin
 								}),
@@ -189,7 +189,7 @@ _.Zones =
 							["races"] = ALLIANCE_ONLY,
 							["timeline"] = { "added 6.0.2.18816" },
 							["groups"] = {
-								objective(1, {	-- 	Nestlewood Owlkin inoculated
+								objective(1, {	--	Nestlewood Owlkin inoculated
 									["provider"] = { "i", 22962 },	-- Inoculating Crystal
 									["cr"] = 16518,	-- Nestlewood Owlkin
 								}),

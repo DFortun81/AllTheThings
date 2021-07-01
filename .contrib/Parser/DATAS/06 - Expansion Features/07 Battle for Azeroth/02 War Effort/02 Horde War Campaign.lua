@@ -1542,60 +1542,60 @@ _.ExpansionFeatures =
 						q(54101, {	-- On Track
 							["sourceQuests"] = { 54100 },	-- A Way Out
 							["provider"] = { "n", 146010 },	-- Dark Ranger Lyana
-							["coord"] = { 30.5, 57.6, 37 },
+							["coord"] = { 30.5, 57.6, ELWYNN_FOREST },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 37 },	-- Elwynn Forest
+							["maps"] = { ELWYNN_FOREST },
 						}),
 						q(54102, {	-- Eastern Escape
 							["sourceQuests"] = { 54101 },	-- On Track
 							["provider"] = { "n", 146791 },	-- Dark Ranger
-							["coord"] = { 34.5, 63.3, 37 },
+							["coord"] = { 34.5, 63.3, ELWYNN_FOREST },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 37 },	-- Elwynn Forest
+							["maps"] = { ELWYNN_FOREST },
 						}),
 						q(54103, {	-- Corner Crossing
 							["sourceQuests"] = { 54102 },	-- Eastern Escape
 							["provider"] = { "n", 146806 },	-- Dark Ranger Lyana
-							["coord"] = { 11.3, 66.8, 49 },
+							["coord"] = { 11.3, 66.8, REDRIDGE_MOUNTAINS },
 							["races"] = HORDE_ONLY,
 						}),
 						q(54104, {	-- Signs of Saurfang
 							["sourceQuests"] = { 54103 },	-- Corner Crossing
 							["provider"] = { "n", 146937 },	-- Dark Ranger
-							["coord"] = { 25.9, 39.8, 49 },
+							["coord"] = { 25.9, 39.8, REDRIDGE_MOUNTAINS },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 49 },	-- Redridge Mountains
+							["maps"] = { REDRIDGE_MOUNTAINS },
 						}),
 						q(54105, {	-- Ever Eastward
 							["sourceQuests"] = { 54104 },	-- Signs of Saurfang
 							["provider"] = { "n", 146937 },	-- Dark Ranger
-							["coord"] = { 29.0, 68.1, 49 },
+							["coord"] = { 29.0, 68.1, REDRIDGE_MOUNTAINS },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 49 },	-- Redridge Mountains
+							["maps"] = { REDRIDGE_MOUNTAINS },
 						}),
 						q(54106, {	-- Tracking Tipoff
 							["sourceQuests"] = { 54105 },	-- Ever Eastward
 							["provider"] = { "n", 147210 },	-- Dark Ranger Lyana
-							["coord"] = { 80.6, 46.9, 49 },
+							["coord"] = { 80.6, 46.9, REDRIDGE_MOUNTAINS },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 49 },	-- Redridge Mountains
+							["maps"] = { REDRIDGE_MOUNTAINS },
 						}),
 						q(54754, {	-- For the Queen
 							["sourceQuests"] = { 54106 },	-- Tracking Tipoff
 							["description"] = "Your options are remaining loyal to Sylvanas or betraying her to help Saurfang.  |cfffd1818You can only get the \"Worn Cloak\" toy if you betray Sylvanas.|r\n\nTo help Sylvanas, choose \"I won't betray my Warchief, Troll.\" when you speak to Zekhan.\n\nTo help Saurfang, pick up the quest \"Grim Tidings\".\n",
 							["altQuests"] = { 54107 },  -- Grim Tidings
-							["coord"] = { 81.4, 52.4, 49 },
+							["coord"] = { 81.4, 52.4, REDRIDGE_MOUNTAINS },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 49 },	-- Redridge Mountains
+							["maps"] = { REDRIDGE_MOUNTAINS },
 						}),
 						q(54107, {	-- Grim Tidings
 							["sourceQuests"] = { 54106 },	-- Tracking Tipoff
 							["description"] = "Your options are remaining loyal to Sylvanas or betraying her to help Saurfang.  |cfffd1818You can only get the \"Worn Cloak\" toy if you betray Sylvanas.|r\n\nTo help Sylvanas, choose \"I won't betray my Warchief, Troll.\" when you speak to Zekhan.\n\nTo help Saurfang, pick up the quest \"Grim Tidings\".\n",
 							["altQuests"] = { 54754 },  -- For the Queen
 							["provider"] = { "n", 146012 },	-- Zekhan
-							["coord"] = { 81.4, 52.4, 49 },
+							["coord"] = { 81.4, 52.4, REDRIDGE_MOUNTAINS },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 49 },	-- Redridge Mountains
+							["maps"] = { REDRIDGE_MOUNTAINS },
 						}),
 						q(54108, {	-- A Warrior's Death
 							["sourceQuests"] = { 54107 },	-- Grim Tidings

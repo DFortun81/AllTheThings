@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(5, {	-- Mists of Pandaria
-	inst(302, { 	-- Stormstout Brewery
+	inst(302, {	-- Stormstout Brewery
 		["lvl"] = 85,
 		["maps"] = {
 			439,

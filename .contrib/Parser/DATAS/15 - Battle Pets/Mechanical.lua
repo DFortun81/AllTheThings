@@ -5,7 +5,7 @@
 _.BattlePets =
 {
 	n(-797,	{	-- Journal
-		pa(244, { 	-- Mechanical
+		pa(244, {	-- Mechanical
 			p(1805),	-- Alarm-o-Bot
 			p(2533),	-- Alarm-O-Dog
 			p(2672),	-- Alloyed Alleyrat
@@ -26,7 +26,7 @@ _.BattlePets =
 			p(338),		-- Darkmoon Tonk
 			p(339),		-- Darkmoon Zeppelin
 			p(262),		-- De-Weaponized Mechanical Companion
-			p(2001), 	-- Dibbler
+			p(2001),	-- Dibbler
 			p(1450),	-- Draenei Micro Defender
 			p(2868),	-- Experiment 13
 			p(2449),	-- False Knucklebump

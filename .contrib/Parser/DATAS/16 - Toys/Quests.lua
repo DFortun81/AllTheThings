@@ -8,6 +8,7 @@ _.Toys =
 		i(183847),		-- Acolyte's Guise
 		i(147838),		-- Akazamzarak's Spare Hat
 		i(119217),		-- Alliance Flag of Victory (Alliance)
+		i(187154),		-- Ancient Korthian Runes
 		i(175063),		-- Aqir Egg Cluster
 		i(118191),		-- Archmage Vargoth's Spare Staff
 		i(118427),		-- Autographed Hearthstone Card
@@ -59,6 +60,8 @@ _.Toys =
 		i(130209),		-- Never Ending Toy Chest
 		i(173727),		-- Nomi's Vintage
 		i(44820),		-- Red Ribbon Pet Leash
+		i(187140),		-- Ring of Duplicity
+		i(187113),		-- Personal Ball and Chain (drops from a treasure that is the objective of a quest)
 		i(123851),		-- Photo B.O.M.B.
 		i(30690),		-- Power Converter (Alliance)
 		i(88370),		-- Puntable Marmot
@@ -69,6 +72,7 @@ _.Toys =
 		i(82467),		-- Ruthers' Harness
 		i(119134),		-- Sargerei Disguise
 		i(122674),		-- S.E.L.F.I.E. Camera MkII
+		i(187159),		-- Shadow Slicing Shortsword
 		i(88387),		-- Shushen's Spittoon
 		i(88381),		-- Silversage Incense
 		i(156871),		-- Spitzy
@@ -83,6 +87,7 @@ _.Toys =
 		i(88377),		-- Turnip Paint \"Gun\"
 		i(88375),		-- Turnip Punching Bag
 		i(168123),		-- Twitching Eyeball
+		i(187184),		-- Vesper of Clarity
 		i(119003),		-- Void Totem
 		i(165791),		-- Worn Cloak
 		i(134021),		-- X-52 Rocket Helmet

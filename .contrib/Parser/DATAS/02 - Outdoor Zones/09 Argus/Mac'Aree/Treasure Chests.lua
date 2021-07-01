@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(905, { 	-- Argus
+	m(905, {	-- Argus
 		m(882, {	-- Mac'Aree
 			n(TREASURES, {
 				o(273301, {	-- Ancient Eredar Cache

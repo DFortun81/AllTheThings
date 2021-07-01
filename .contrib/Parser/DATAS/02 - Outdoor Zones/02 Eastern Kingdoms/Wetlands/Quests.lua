@@ -216,7 +216,7 @@ _.Zones =
 				q(26139, {	-- Into Arathi
 					["sourceQuests"] = { 26128 },	-- The Battle of Thandol Span
 					["isBreadcrumb"] = true,	-- for Northfold Manor in Arathi Highlands
-					["coord"] = { 51.1, 9.78, 56 },
+					["coord"] = { 49.5, 17.2, 56 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 42160 },	-- Thargas Anvilmar
 				}),

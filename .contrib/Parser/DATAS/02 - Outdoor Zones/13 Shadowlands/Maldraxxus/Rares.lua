@@ -150,7 +150,9 @@ _.Zones =
 							["achievementID"] = 14308,	-- Adventurer of Maldraxxus
 						}),
 						i(184174),	-- Clasp of Death
-						i(181810),	-- Phylactery of the Dead Conniver
+						i(181810, {	-- Phylactery of the Dead Conniver
+							["customCollect"] = { "SL_COV_NEC" },	-- Necrolord
+						}),
 					},
 				}),
 				n(162690, {	-- Nerissa Heartless
@@ -388,7 +390,9 @@ _.Zones =
 							},
 						}),
 						i(184285),	-- Boneclutched Shackles
-						i(181804),	-- Trophy of the Reborn Bonelord
+						i(181804, {	-- Trophy of the Reborn Bonelord
+							["customCollect"] = { "SL_COV_NEC" },	-- Necrolord
+						}),
 					},
 				}),
 			}),

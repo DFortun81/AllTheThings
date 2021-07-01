@@ -96,13 +96,16 @@ BLACKROCK_MOUNTAIN_LEVEL3 = 35;
 BLASTED_LANDS = 17;	-- Confirmed!
 BURNING_STEPPES = 36;
 DEADWIND_PASS = 42;	-- Confirmed!
+DEEPRUN_TRAM = 499;
 DUN_MOROGH = 27;
 DUSKWOOD = 47;	-- Confirmed!
 EASTERN_KINGDOMS = 13;	-- Confirmed!
 EASTERN_PLAGUELANDS = 23;
+ELWYNN_FOREST = 37;
 HILLSBRAD_FOOTHILLS = 25;
 IRONFORGE = 87;
 LOCH_MODAN = 48;
+REDRIDGE_MOUNTAINS = 49;
 RUINS_OF_GILNEAS = 217;
 SEARING_GORGE = 32;
 SHADOWFANG_KEEP = 310;
@@ -146,6 +149,7 @@ VALLEY_OF_TRIALS = 461;
 -- Battle for Azeroth
 CHAMBER_OF_HEART = 1021;
 REPAIRED_CHAMBER_OF_HEART = 1473;
+MECHAGON = 1462;
 
 -- Shadowlands
 REVENDRETH = 1525;
@@ -155,6 +159,7 @@ THE_MAW = 1543;
 SHADOWLANDS = 1550;
 ARDENWEALD = 1565;
 ORIBOS = 1670;
+KORTHIA = 1961;
 
 -- Helper Tables
 local DifficultyDB = {
@@ -941,6 +946,9 @@ holiday = function(id, t)								-- Create an HOLIDAY Object
 	return struct("holidayID", id, t);
 end
 ho = holiday;											-- Create an HOLIDAY Object (alternative shortcut)
+illusion = function(id, t)								-- Create an ILLUSION Object (only necessary for illusions without itemIDs)
+	return struct("illusionID", id, t);
+end
 inst = function(id, t)									-- Create an INSTANCE Object
 	t = struct("instanceID", id, t);
 

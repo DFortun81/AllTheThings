@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 _.Instances = { tier(2, applyclassicphase(TBC_PHASE_THREE, {	-- Burning Crusade
-	inst(750, { 	-- The Battle for Mount Hyjal
+	inst(750, {	-- The Battle for Mount Hyjal
 		["mapID"] = THE_BATTLE_FOR_MOUNT_HYJAL,
 		["coords"] = {
 			{ 36.0, 16.1, CAVERNS_OF_TIME },	-- raid entrance

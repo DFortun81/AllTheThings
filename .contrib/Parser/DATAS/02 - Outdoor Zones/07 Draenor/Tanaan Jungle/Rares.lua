@@ -38,7 +38,7 @@ _.Zones =
 						crit(35, {	-- Belgork slain
 							["achievementID"] = 10070,	-- Jungle Stalker
 						}),
-						i(127650), 	-- Belgork's Bastion
+						i(127650),	-- Belgork's Bastion
 						i(126950, {	-- Equipment Blueprint: Bilge Pump
 							["questID"] = 38932,	-- Equipment Blueprint: Bilge Pump
 						}),
@@ -52,7 +52,7 @@ _.Zones =
 						crit(23, {	-- Bilkor the Thrower slain
 							["achievementID"] = 10070,	-- Jungle Stalker
 						}),
-						i(127307), 	-- Battle-Scuffed Spaulders
+						i(127307),	-- Battle-Scuffed Spaulders
 					},
 				}),
 				n(92657, {	-- Bleeding Hollow Horror
@@ -80,7 +80,7 @@ _.Zones =
 						crit(27, {	-- Bloodhunter Zulk slain
 							["achievementID"] = 10070,	-- Jungle Stalker
 						}),
-						i(127303), 	-- Zulk's Sneaky Slippers
+						i(127303),	-- Zulk's Sneaky Slippers
 					},
 				}),
 				n(91093, {	-- Bramblefell
@@ -94,7 +94,7 @@ _.Zones =
 						crit(2, {	-- Bramblefell slain
 							["achievementID"] = 10070,	-- Jungle Stalker
 						}),
-						i(127652), 	-- Felflame Campfire Toy
+						i(127652),	-- Felflame Campfire Toy
 					},
 				}),
 				n(92429, {	-- Broodlord Ixkor
@@ -195,9 +195,9 @@ _.Zones =
 							["achievementID"] = 10061,	-- Hellbane
 						}),
 						i(128025, {	-- Rattling Iron Cage
-							i(116669), 	-- Armored Razorback Mount
-							i(116658), 	-- Tundra Icehoof Mount
-							i(116780), 	-- Warsong Direfang Mount
+							i(116669),	-- Armored Razorback Mount
+							i(116658),	-- Tundra Icehoof Mount
+							i(116780),	-- Warsong Direfang Mount
 						}),
 						i(128315),	-- Medallion of thee Legion
 					},
@@ -211,9 +211,9 @@ _.Zones =
 							["achievementID"] = 10061,	-- Hellbane
 						}),
 						i(128025, {	-- Rattling Iron Cage
-							i(116669), 	-- Armored Razorback Mount
-							i(116658), 	-- Tundra Icehoof Mount
-							i(116780), 	-- Warsong Direfang Mount
+							i(116669),	-- Armored Razorback Mount
+							i(116658),	-- Tundra Icehoof Mount
+							i(116780),	-- Warsong Direfang Mount
 						}),
 						i(128315),	-- Medallion of thee Legion
 					},
@@ -749,9 +749,9 @@ _.Zones =
 							["achievementID"] = 10061,	-- Hellbane
 						}),
 						i(128025, {	-- Rattling Iron Cage
-							i(116669), 	-- Armored Razorback Mount
-							i(116658), 	-- Tundra Icehoof Mount
-							i(116780), 	-- Warsong Direfang Mount
+							i(116669),	-- Armored Razorback Mount
+							i(116658),	-- Tundra Icehoof Mount
+							i(116780),	-- Warsong Direfang Mount
 						}),
 						i(128315),	-- Medallion of thee Legion
 					},
@@ -855,9 +855,9 @@ _.Zones =
 							["achievementID"] = 10061,	-- Hellbane
 						}),
 						i(128025, {	-- Rattling Iron Cage
-							i(116669), 	-- Armored Razorback Mount
-							i(116658), 	-- Tundra Icehoof Mount
-							i(116780), 	-- Warsong Direfang Mount
+							i(116669),	-- Armored Razorback Mount
+							i(116658),	-- Tundra Icehoof Mount
+							i(116780),	-- Warsong Direfang Mount
 						}),
 						i(128315),	-- Medallion of thee Legion
 					},

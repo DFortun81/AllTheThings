@@ -245,6 +245,17 @@ _.GroupFinder =
 				i(92880),	-- Stormcrier Cloak
 				i(92882),	-- Stormcrier Ring
 				i(93060),	-- Stormshaper Helm*				— 10/25/19
+				-- From wowhead comments
+				i(93122),	-- Lightning Rod Vambraces
+				i(93119),	-- Lightning Rod Legplates
+				i(93092),	-- Swashbuckling Belt
+				i(93054),	-- Mogubreaker Shoulders
+				i(93079),	-- Hozen-Stitched Boots
+				i(93080),	-- Hozen-Stitched Gloves
+				i(93071),	-- Yak Wool Cowl
+				i(93103),	-- Brewfather Robe
+				i(93112),	-- Brewfather Signet
+				i(93111),	-- Brewfather Necklace
 			},
 		}),
 		i(92813, {	-- Greater Cache of Treasures [Looks like this was deprecated in favor of #98133)
@@ -383,6 +394,78 @@ _.GroupFinder =
 				i(92882),	-- Stormcrier Ring
 			},
 		}),
+		i(89613, {	-- Cache of Treasures
+			["timeline"] = {
+				"added 5.0.3.15851",
+				"removed 5.1.0.10000",
+			},
+			["g"] = {
+				i(89501),	-- Brewmoon Cloak
+				i(89492),	-- Brewmoon Cord
+				i(89493),	-- Brewmoon Cowl
+				i(89494),	-- Brewmoon Handwraps
+				i(89495),	-- Brewmoon Leggings
+				i(89496),	-- Brewmoon Robe
+				i(89497),	-- Brewmoon Sandals
+				i(89498),	-- Brewmoon Shoulderpads
+				i(89499),	-- Brewmoon Wristwraps
+				i(89509),	-- Brewmoon Necklace
+				i(89507),	-- Brewmoon Signet
+				i(89491),	-- Firewool Cord
+				i(89490),	-- Firewool Cowl
+				i(89485),	-- Firewool Shoulderpads
+				i(89489),	-- Firewool Handwraps
+				i(89488),	-- Firewool Leggings
+				i(89487),	-- Firewool Robe
+				i(89486),	-- Firewool Sandals
+				i(89484),	-- Firewool Wristwraps
+				i(89475),	-- Forgotten Bindings
+				i(89474),	-- Forgotten Boots
+				i(89473),	-- Forgotten Britches
+				i(89472),	-- Forgotten Gloves
+				i(89471),	-- Forgotten Hood
+				i(89470),	-- Forgotten Jerkin
+				i(89469),	-- Forgotten Shoulders
+				i(89468),	-- Forgotten Waistband
+				i(89443),	-- Greenstone Breastplate
+				i(89503),	-- Greenstone Drape
+				i(89442),	-- Greenstone Gauntlets
+				i(89441),	-- Greenstone Girdle
+				i(89440),	-- Greenstone Helm
+				i(89439),	-- Greenstone Legplates
+				i(89511),	-- Greenstone Neck
+				i(89438),	-- Greenstone Pauldrons
+				i(89437),	-- Greenstone Sabatons
+				i(89505),	-- Greenstone Seal
+				i(89435),	-- Greenstone Vambraces
+				i(89477),	-- Hozen-Crafted Boots
+				i(89476),	-- Hozen-Crafted Bindings
+				i(89479),	-- Hozen-Crafted Gloves
+				i(89478),	-- Hozen-Crafted Britches
+				i(89480),	-- Hozen-Crafted Hood
+				i(89481),	-- Hozen-Crafted Jerkin
+				i(89482),	-- Hozen-Crafted Shoulders
+				i(89483),	-- Hozen-Crafted Waistband
+				i(89447),	-- Mogu-Wrought Helm
+				i(89448),	-- Mogu-Wrought Legplates
+				i(89449),	-- Mogu-Wrought Pauldrons
+				i(89450),	-- Mogu-Wrought Sabatons
+				i(89465),	-- Scarshell Legguards
+				i(89510),	-- Stormbound Choker
+				i(89502),	-- Stormbound Cloak
+				i(89504),	-- Stormbound Ring
+				i(89459),	-- Stormbrew Belt
+				i(89458),	-- Stormbrew Bracers
+				i(89457),	-- Stormbrew Gauntlets
+				i(89456),	-- Stormbrew Greaves
+				i(89455),	-- Stormbrew Helm
+				i(89454),	-- Stormbrew Legguards
+				i(89453),	-- Stormbrew Spaulders
+				i(89452),	-- Stormbrew Vest
+				-- From wowhead comments
+				i(89463),	-- Scarshell Greaves
+			},
+		}),
 		i(98134, {	-- Heroic Cache of Treasures
 			["description"] = "Rewarded for completing a random Mists of Pandaria heroic scenario.",
 			["g"] = {
@@ -508,122 +591,6 @@ _.GroupFinder =
 				i(98173),	-- Tidesplitter Jerkin
 				i(98178),	-- Tidesplitter Shoulders
 				i(98179),	-- Tidesplitter Waistband
-				--[[
-				-- Bulging Heroic Cache of Treasures
-				-- Not sure whose data this was, but it was originally on the Bulging Heroic Cache of Treasures. - Crieve
-				i(98209),	-- Druid B,R - Monk M
-				i(98203),	-- Druid B,R - Monk M
-				i(98206),	-- Druid B,R - Monk M
-				i(98204),	-- Druid B,R - Monk M
-				i(98205),	-- Druid B,R - Monk M
-				i(98202),	-- Druid B,R - Monk M
-				i(98207),	-- Druid B,R - Monk M
-				i(98208),	-- Druid B,R - Monk M
-				i(98239),	-- Pal R,P - War - DK
-				i(98237),	-- Pal R,P - War - DK
-				i(98241),	-- Pal R,P - War - DK
-				i(98245),	-- Pal R,P - War - DK
-				i(98242),	-- Pal R,P - War - DK
-				i(98243),	-- Pal R,P - War - DK
-				i(98244),	-- Pal R,P - War - DK
-				i(98240),	-- Pal R,P - War - DK
-				i(98246),	-- Pal R,P - War - DK
-				i(98250),	-- Pal R,P - War - DK
-				i(98248),	-- Pal R,P - War - DK
-				i(98252),	-- Pal R,P - War - DK
-				i(98256),	-- Pal R,P - War - DK
-				i(98253),	-- Pal R,P - War - DK
-				i(98254),	-- Pal R,P - War - DK
-				i(98255),	-- Pal R,P - War - DK
-				i(98251),	-- Pal R,P - War - DK
-				i(98257),	-- Pal R,P - War - DK
-				i(98233),	-- Mage - Priest - Lock
-				i(98230),	-- Mage - Priest - Lock
-				i(98229),	-- Mage - Priest - Lock
-				i(98231),	-- Mage - Priest - Lock
-				i(98227),	-- Mage - Priest - Lock
-				i(98228),	-- Mage - Priest - Lock
-				i(98232),	-- Mage - Priest - Lock
-				i(98234),	-- Mage - Priest - Lock
-				i(98268),	-- Mage - Priest - Lock
-				i(98320),	-- Mage - Priest - Lock
-				i(98198),	-- Mage - Priest - Lock
-				i(98195),	-- Mage - Priest - Lock
-				i(98194),	-- Mage - Priest - Lock
-				i(98196),	-- Mage - Priest - Lock
-				i(98192),	-- Mage - Priest - Lock
-				i(98193),	-- Mage - Priest - Lock
-				i(98197),	-- Mage - Priest - Lock
-				i(98199),	-- Mage - Priest - Lock
-				i(98278),	-- Pal P - War P - DK F
-				i(98318),	-- Pal P - War P - DK F
-				i(98265),	-- Pal R - War A,F - DK B,U
-				i(98314),	-- Pal R - War A,F - DK B,U
-				i(98262),	-- Pal R - War A,F - DK B,U
-				i(98312),	-- Pal R - War A,F - DK B,U
-				i(98263),	-- Pal R - War A,F - DK B,U
-				i(98313),	-- Pal R - War A,F - DK B,U
-				i(98274),	-- Pal P - War P - DK F
-				i(98266),	-- Pal R - War A,F - DK B,U
-				i(98315),	-- Pal R - War A,F - DK B,U
-				i(98273),	-- Pal P - War P - DK F
-				i(98316),	-- Pal P - War P - DK F
-				i(98218),	-- Pal H
-				i(98220),	-- Pal H
-				i(98224),	-- Pal H
-				i(98221),	-- Pal H
-				i(98222),	-- Pal H
-				i(98223),	-- Pal H
-				i(98219),	-- Pal H
-				i(98225),	-- Pal H
-				i(98216),	-- Shaman Ele,R
-				i(98217),	-- Shaman Ele,R
-				i(98212),	-- Shaman Ele,R
-				i(98211),	-- Shaman Ele,R
-				i(98213),	-- Shaman Ele,R
-				i(98214),	-- Shaman Ele,R
-				i(98215),	-- Shaman Ele,R
-				i(98210),	-- Shaman Ele,R
-				i(98187),	-- Hunter - Shaman Enh
-				i(98188),	-- Hunter - Shaman Enh
-				i(98183),	-- Hunter - Shaman Enh
-				i(98182),	-- Hunter - Shaman Enh
-				i(98184),	-- Hunter - Shaman Enh
-				i(98185),	-- Hunter - Shaman Enh
-				i(98186),	-- Hunter - Shaman Enh
-				i(98181),	-- Hunter - Shaman Enh
-				i(98180),	-- Druid F,G - Rogue - Monk B,W - DH
-				i(98174),	-- Druid F,G - Rogue - Monk B,W - DH
-				i(98177),	-- Druid F,G - Rogue - Monk B,W - DH
-				i(98175),	-- Druid F,G - Rogue - Monk B,W - DH
-				i(98176),	-- Druid F,G - Rogue - Monk B,W - DH
-				i(98173),	-- Tidesplitter Jerkin*
-				i(98178),	-- Druid F,G - Rogue - Monk B,W - DH
-				i(98179),	-- Druid F,G - Rogue - Monk B,W - DH
-				i(98226),	-- Mage - Pal H - Druid B,R - Priest - Shaman Ele,R - Lock - Monk M
-				i(98191),	-- Mage - Pal H - Druid B,R - Priest - Shaman Ele,R - Lock - Monk M
-				i(98325),	-- Mage - Pal H - Druid B,R - Priest - Shaman Ele,R - Lock - Monk M
-				i(98279),	-- Rogue O - Shaman Enh - Monk W - DH
-				i(98280),	-- Rogue O - Shaman Enh - Monk W - DH
-				i(98324),	-- Druid B,R - Priest
-				i(98267),	-- Hunter B,M
-				i(98269),	-- Hunter B,M
-				i(98275),	-- Rogue A,S
-				i(98277),	-- War P
-				i(98317),	-- War P
-				i(98271),	-- Rogue O - Shaman Enh - Monk W
-				i(98323),	-- Pal P - War P
-				i(98276),	-- Pal H - Druid B,R - Priest - Shaman Ele, R - Monk M
-				i(98322),	-- Pal H - Shaman Ele,R
-				i(98260),	-- Druid F,G - Hunter S - Monk B
-				i(98264),	-- Druid F,G - Hunter S - Monk B
-				i(98270),	-- Mage - Druid B,R - Priest - Shaman Ele,R - Lock
-				i(98321),	-- Mage - Druid B,R - Priest - Shaman Ele,R - Lock
-				i(98261),	-- Mage - Druid B,R - Priest - Shaman Ele,R - Lock - Monk M
-				i(98319),	-- Mage - Druid B,R - Priest - Shaman Ele,R - Lock - Monk M
-				i(98272),	-- Rogue O - Monk W - DH
-				i(98172),	-- Druid F,G - Hunter - Rogue - Shaman Enh - Monk B,W - DH
-				]]
 			},
 		}),
 		i(69903, {	-- Satchel of Exotic Mysteries
@@ -680,3 +647,96 @@ _.GroupFinder =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10041, {
+		n(-163, {	-- Armor
+			n(-43, {	-- Cloth
+				i(93068),	-- Yak Wool Robe
+				i(93069),	-- Yak Wool Sandals
+				i(93070),	-- Yak Wool Handwraps
+				i(93072),	-- Yak Wool Leggings
+				i(93073),	-- Yak Wool Shoulderpads
+				i(93074),	-- Yak Wool Cord
+				i(93075),	-- Yak Wool Wristwraps
+				i(93104),	-- Brewfather Sandals
+				i(93105),	-- Brewfather Handwraps
+				i(93106),	-- Brewfather Cowl
+				i(93107),	-- Brewfather Leggings
+				i(93108),	-- Brewfather Shoulderpads
+				i(93109),	-- Brewfather Cord
+			}),
+			n(-44, {	-- Leather
+				i(93049),	-- Mogubreaker Jerkin
+				i(93050),	-- Mogubreaker Boots
+				i(93051),	-- Mogubreaker Gloves
+				i(93053),	-- Mogubreaker Britches
+				i(93055),	-- Mogubreaker Waistband
+				i(93056),	-- Mogubreaker Bindings
+				i(93078),	-- Hozen-Stitched Jerkin
+				i(93081),	-- Hozen-Stitched Hood
+				i(93082),	-- Hozen-Stitched Britches
+				i(93083),	-- Hozen-Stitched Shoulders
+				i(93084),	-- Hozen-Stitched Waistband
+			}),
+			n(-45, {	-- Mail
+				i(89460),	-- Scarshell Belt
+				i(89461),	-- Scarshell Bracers
+				i(89462),	-- Scarshell Gauntlets
+				i(89464),	-- Scarshell Helm
+				i(89466),	-- Scarshell Spaulders
+				i(89467),	-- Scarshell Vest
+				i(92838),	-- Danio-Scale Belt
+				i(92839),	-- Danio-Scale Bracers
+				i(92840),	-- Danio-Scale Gauntlets
+				i(92841),	-- Danio-Scale Greaves
+				i(92842),	-- Danio-Scale Helm
+				i(92843),	-- Danio-Scale Legguards
+				i(92844),	-- Danio-Scale Spaulders
+				i(92845),	-- Danio-Scale Vest
+				i(93057),	-- Stormshaper Vest
+				i(93058),	-- Stormshaper Greaves
+				i(93059),	-- Stormshaper Gauntlets
+				i(93061),	-- Stormshaper Legguards
+				i(93062),	-- Stormshaper Spaulders
+				i(93063),	-- Stormshaper Belt
+				i(93064),	-- Stormshaper Bracers
+				i(93086),	-- Swashbuckling Vest
+				i(93087),	-- Swashbuckling Greaves
+				i(93088),	-- Swashbuckling Gauntlets
+				i(93089),	-- Swashbuckling Helm
+				i(93090),	-- Swashbuckling Legguards
+				i(93091),	-- Swashbuckling Spaulders
+				i(93093),	-- Swashbuckling Bracers
+			}),
+			n(-46, {	-- Plate
+				i(89444),	-- Mogu-Wrought Breastplate
+				i(89445),	-- Mogu-Wrought Gauntlets
+				i(89446),	-- Mogu-Wrought Girdle
+				i(89451),	-- Mogu-Wrought Vambraces
+				i(92822),	-- Jinyu-Forged Breastplate
+				i(92823),	-- Jinyu-Forged Gauntlets
+				i(92824),	-- Jinyu-Forged Girdle
+				i(92825),	-- Jinyu-Forged Helm
+				i(92826),	-- Jinyu-Forged Legplates
+				i(92827),	-- Jinyu-Forged Pauldrons
+				i(92828),	-- Jinyu-Forged Sabatons
+				i(92829),	-- Jinyu-Forged Vambraces
+				i(93094),	-- Yaungolian Breastplate
+				i(93095),	-- Yaungolian Sabatons
+				i(93096),	-- Yaungolian Gauntlets
+				i(93097),	-- Yaungolian Helm
+				i(93098),	-- Yaungolian Legplates
+				i(93099),	-- Yaungolian Pauldrons
+				i(93100),	-- Yaungolian Girdle
+				i(93101),	-- Yaungolian Vambraces
+				i(93115),	-- Lightning Rod Breastplate
+				i(93116),	-- Lightning Rod Sabatons
+				i(93117),	-- Lightning Rod Gauntlets
+				i(93118),	-- Lightning Rod Helm
+				i(93120),	-- Lightning Rod Pauldrons
+				i(93121),	-- Lightning Rod Girdle
+			}),
+			i(93113),	-- Lightning Rod Drape
+		}),
+	}),
+});

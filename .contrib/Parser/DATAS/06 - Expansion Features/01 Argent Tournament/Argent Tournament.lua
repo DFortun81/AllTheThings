@@ -1107,7 +1107,7 @@ _.ExpansionFeatures =
 					["coord"] = { 76.6, 19.1, 118 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 33225 },	-- Marshal Jacob Alerius
-					["sourceQuest"] = 13718 	-- The Valiant's Charge (A)
+					["sourceQuest"] = 13718	-- The Valiant's Charge (A)
 				}),
 				q(13726, {	-- The Valiant's Challenge (H)
 					["coord"] = { 76.5, 24.6, 118 },
@@ -1336,30 +1336,30 @@ _.ExpansionFeatures =
 						["cost"] = { { "c", 241, 150 }, },	-- 150x Champion's Seal
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-							33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-							33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-							33555, 	-- Eliza Killian <Undercity Quartermaster>
-							33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-							33657, 	-- Irisee <Exodar Quartermaster>
-							33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
+							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+							33555,	-- Eliza Killian <Undercity Quartermaster>
+							33553,	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+							33657,	-- Irisee <Exodar Quartermaster>
+							33650,	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 							33653,	-- Rook Hawkfist <Darnassus Quartermaster>
-							33554, 	-- Samamba <Sen'jin Quartermaster>
-							33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+							33554,	-- Samamba <Sen'jin Quartermaster>
+							33557,	-- Trellis Morningsun <Silvermoon Quartermaster>
 						},
 					}),
 					i(122232, {	-- Music Roll: The Argent Tournament
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-							33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-							33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-							33555, 	-- Eliza Killian <Undercity Quartermaster>
-							33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-							33657, 	-- Irisee <Exodar Quartermaster>
-							33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
+							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+							33555,	-- Eliza Killian <Undercity Quartermaster>
+							33553,	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+							33657,	-- Irisee <Exodar Quartermaster>
+							33650,	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 							33653,	-- Rook Hawkfist <Darnassus Quartermaster>
-							33554, 	-- Samamba <Sen'jin Quartermaster>
-							33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+							33554,	-- Samamba <Sen'jin Quartermaster>
+							33557,	-- Trellis Morningsun <Silvermoon Quartermaster>
 						},
 					}),
 					-- Alliance Only Items
@@ -1368,9 +1368,9 @@ _.ExpansionFeatures =
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-							33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-							33657, 	-- Irisee <Exodar Quartermaster>
-							33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
+							33657,	-- Irisee <Exodar Quartermaster>
+							33650,	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 							33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 						},
 					}),
@@ -1379,9 +1379,9 @@ _.ExpansionFeatures =
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-							33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-							33657, 	-- Irisee <Exodar Quartermaster>
-							33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
+							33657,	-- Irisee <Exodar Quartermaster>
+							33650,	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 							33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 						},
 						["g"] = {
@@ -1395,9 +1395,9 @@ _.ExpansionFeatures =
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-							33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-							33657, 	-- Irisee <Exodar Quartermaster>
-							33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
+							33657,	-- Irisee <Exodar Quartermaster>
+							33650,	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 							33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 						},
 					}),
@@ -1406,9 +1406,9 @@ _.ExpansionFeatures =
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-							33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-							33657, 	-- Irisee <Exodar Quartermaster>
-							33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
+							33657,	-- Irisee <Exodar Quartermaster>
+							33650,	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 							33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 						},
 					}),
@@ -1417,9 +1417,9 @@ _.ExpansionFeatures =
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-							33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-							33657, 	-- Irisee <Exodar Quartermaster>
-							33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
+							33657,	-- Irisee <Exodar Quartermaster>
+							33650,	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 							33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 						},
 					}),
@@ -1428,9 +1428,9 @@ _.ExpansionFeatures =
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-							33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-							33657, 	-- Irisee <Exodar Quartermaster>
-							33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
+							33657,	-- Irisee <Exodar Quartermaster>
+							33650,	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 							33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 						},
 					}),
@@ -1439,9 +1439,9 @@ _.ExpansionFeatures =
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-							33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-							33657, 	-- Irisee <Exodar Quartermaster>
-							33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
+							33657,	-- Irisee <Exodar Quartermaster>
+							33650,	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 							33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 						},
 					}),
@@ -1450,9 +1450,9 @@ _.ExpansionFeatures =
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-							33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-							33657, 	-- Irisee <Exodar Quartermaster>
-							33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
+							33657,	-- Irisee <Exodar Quartermaster>
+							33650,	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 							33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 						},
 					}),
@@ -1461,9 +1461,9 @@ _.ExpansionFeatures =
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-							33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-							33657, 	-- Irisee <Exodar Quartermaster>
-							33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
+							33657,	-- Irisee <Exodar Quartermaster>
+							33650,	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 							33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 						},
 					}),
@@ -1472,9 +1472,9 @@ _.ExpansionFeatures =
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-							33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-							33657, 	-- Irisee <Exodar Quartermaster>
-							33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
+							33657,	-- Irisee <Exodar Quartermaster>
+							33650,	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 							33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 						},
 					}),
@@ -1483,9 +1483,9 @@ _.ExpansionFeatures =
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-							33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-							33657, 	-- Irisee <Exodar Quartermaster>
-							33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
+							33657,	-- Irisee <Exodar Quartermaster>
+							33650,	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 							33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 						},
 					}),
@@ -1494,9 +1494,9 @@ _.ExpansionFeatures =
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-							33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-							33657, 	-- Irisee <Exodar Quartermaster>
-							33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
+							33657,	-- Irisee <Exodar Quartermaster>
+							33650,	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 							33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 						},
 					}),
@@ -1505,9 +1505,9 @@ _.ExpansionFeatures =
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-							33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-							33657, 	-- Irisee <Exodar Quartermaster>
-							33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
+							33657,	-- Irisee <Exodar Quartermaster>
+							33650,	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 							33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 						},
 					}),
@@ -1516,9 +1516,9 @@ _.ExpansionFeatures =
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-							33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-							33657, 	-- Irisee <Exodar Quartermaster>
-							33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
+							33657,	-- Irisee <Exodar Quartermaster>
+							33650,	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 							33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 						},
 					}),
@@ -1527,9 +1527,9 @@ _.ExpansionFeatures =
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-							33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-							33657, 	-- Irisee <Exodar Quartermaster>
-							33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
+							33657,	-- Irisee <Exodar Quartermaster>
+							33650,	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 							33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 						},
 					}),
@@ -1538,9 +1538,9 @@ _.ExpansionFeatures =
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-							33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-							33657, 	-- Irisee <Exodar Quartermaster>
-							33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
+							33657,	-- Irisee <Exodar Quartermaster>
+							33650,	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 							33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 						},
 					}),
@@ -1549,9 +1549,9 @@ _.ExpansionFeatures =
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-							33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-							33657, 	-- Irisee <Exodar Quartermaster>
-							33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
+							33657,	-- Irisee <Exodar Quartermaster>
+							33650,	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 							33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 						},
 					}),
@@ -1560,9 +1560,9 @@ _.ExpansionFeatures =
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-							33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-							33657, 	-- Irisee <Exodar Quartermaster>
-							33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
+							33657,	-- Irisee <Exodar Quartermaster>
+							33650,	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 							33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 						},
 					}),
@@ -1571,9 +1571,9 @@ _.ExpansionFeatures =
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-							33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-							33657, 	-- Irisee <Exodar Quartermaster>
-							33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
+							33657,	-- Irisee <Exodar Quartermaster>
+							33650,	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 							33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 						},
 					}),
@@ -1582,9 +1582,9 @@ _.ExpansionFeatures =
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-							33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-							33657, 	-- Irisee <Exodar Quartermaster>
-							33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
+							33657,	-- Irisee <Exodar Quartermaster>
+							33650,	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 							33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 						},
 					}),
@@ -1593,9 +1593,9 @@ _.ExpansionFeatures =
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-							33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-							33657, 	-- Irisee <Exodar Quartermaster>
-							33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
+							33657,	-- Irisee <Exodar Quartermaster>
+							33650,	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 							33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 						},
 					}),
@@ -1603,9 +1603,9 @@ _.ExpansionFeatures =
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
 							33307,	-- Corporal Arthur Flew <Stormwind Quartermaster>
-							33310, 	-- Derrick Brindlebeard <Ironforge Quartermaster>
-							33657, 	-- Irisee <Exodar Quartermaster>
-							33650, 	-- Rillie Spindlenut <Gnomeregan Quartermaster>
+							33310,	-- Derrick Brindlebeard <Ironforge Quartermaster>
+							33657,	-- Irisee <Exodar Quartermaster>
+							33650,	-- Rillie Spindlenut <Gnomeregan Quartermaster>
 							33653,	-- Rook Hawkfist <Darnassus Quartermaster>
 						},
 					}),
@@ -1614,231 +1614,231 @@ _.ExpansionFeatures =
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
 						["crs"] = {
-							33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-							33555, 	-- Eliza Killian <Undercity Quartermaster>
-							33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-							33554, 	-- Samamba <Sen'jin Quartermaster>
-							33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+							33555,	-- Eliza Killian <Undercity Quartermaster>
+							33553,	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+							33554,	-- Samamba <Sen'jin Quartermaster>
+							33557,	-- Trellis Morningsun <Silvermoon Quartermaster>
 						},
 					}),
 					i(45208, {	-- Blade of the Keening Banshee
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
 						["crs"] = {
-							33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-							33555, 	-- Eliza Killian <Undercity Quartermaster>
-							33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-							33554, 	-- Samamba <Sen'jin Quartermaster>
-							33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+							33555,	-- Eliza Killian <Undercity Quartermaster>
+							33553,	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+							33554,	-- Samamba <Sen'jin Quartermaster>
+							33557,	-- Trellis Morningsun <Silvermoon Quartermaster>
 						},
 					}),
 					i(45205, {	-- Greatsword of the Sin'dorei
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
 						["crs"] = {
-							33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-							33555, 	-- Eliza Killian <Undercity Quartermaster>
-							33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-							33554, 	-- Samamba <Sen'jin Quartermaster>
-							33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+							33555,	-- Eliza Killian <Undercity Quartermaster>
+							33553,	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+							33554,	-- Samamba <Sen'jin Quartermaster>
+							33557,	-- Trellis Morningsun <Silvermoon Quartermaster>
 						},
 					}),
 					i(45203, {	-- Grimhorn Crusher
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
 						["crs"] = {
-							33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-							33555, 	-- Eliza Killian <Undercity Quartermaster>
-							33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-							33554, 	-- Samamba <Sen'jin Quartermaster>
-							33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+							33555,	-- Eliza Killian <Undercity Quartermaster>
+							33553,	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+							33554,	-- Samamba <Sen'jin Quartermaster>
+							33557,	-- Trellis Morningsun <Silvermoon Quartermaster>
 						},
 					}),
 					i(45214, {	-- Scalpel of the Royal Apothecary
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
 						["crs"] = {
-							33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-							33555, 	-- Eliza Killian <Undercity Quartermaster>
-							33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-							33554, 	-- Samamba <Sen'jin Quartermaster>
-							33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+							33555,	-- Eliza Killian <Undercity Quartermaster>
+							33553,	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+							33554,	-- Samamba <Sen'jin Quartermaster>
+							33557,	-- Trellis Morningsun <Silvermoon Quartermaster>
 						},
 					}),
 					i(45210, {	-- Sen'jin Beakblade Longrifle
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
 						["crs"] = {
-							33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-							33555, 	-- Eliza Killian <Undercity Quartermaster>
-							33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-							33554, 	-- Samamba <Sen'jin Quartermaster>
-							33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+							33555,	-- Eliza Killian <Undercity Quartermaster>
+							33553,	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+							33554,	-- Samamba <Sen'jin Quartermaster>
+							33557,	-- Trellis Morningsun <Silvermoon Quartermaster>
 						},
 					}),
 					i(45222, {	-- Spinal Destroyer
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
 						["crs"] = {
-							33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-							33555, 	-- Eliza Killian <Undercity Quartermaster>
-							33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-							33554, 	-- Samamba <Sen'jin Quartermaster>
-							33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+							33555,	-- Eliza Killian <Undercity Quartermaster>
+							33553,	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+							33554,	-- Samamba <Sen'jin Quartermaster>
+							33557,	-- Trellis Morningsun <Silvermoon Quartermaster>
 						},
 					}),
 					i(45212, {	-- Staff of Feral Furies
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 25 }, },	-- 25x Champion's Seal
 						["crs"] = {
-							33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-							33555, 	-- Eliza Killian <Undercity Quartermaster>
-							33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-							33554, 	-- Samamba <Sen'jin Quartermaster>
-							33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+							33555,	-- Eliza Killian <Undercity Quartermaster>
+							33553,	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+							33554,	-- Samamba <Sen'jin Quartermaster>
+							33557,	-- Trellis Morningsun <Silvermoon Quartermaster>
 						},
 					}),
 					i(45206, {	-- Choker of Feral Fury
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
-							33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-							33555, 	-- Eliza Killian <Undercity Quartermaster>
-							33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-							33554, 	-- Samamba <Sen'jin Quartermaster>
-							33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+							33555,	-- Eliza Killian <Undercity Quartermaster>
+							33553,	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+							33554,	-- Samamba <Sen'jin Quartermaster>
+							33557,	-- Trellis Morningsun <Silvermoon Quartermaster>
 						},
 					}),
 					i(45207, {	-- Necklace of Stolen Skulls
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
-							33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-							33555, 	-- Eliza Killian <Undercity Quartermaster>
-							33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-							33554, 	-- Samamba <Sen'jin Quartermaster>
-							33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+							33555,	-- Eliza Killian <Undercity Quartermaster>
+							33553,	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+							33554,	-- Samamba <Sen'jin Quartermaster>
+							33557,	-- Trellis Morningsun <Silvermoon Quartermaster>
 						},
 					}),
 					i(45213, {	-- Pendant of Emerald Crusader
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
-							33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-							33555, 	-- Eliza Killian <Undercity Quartermaster>
-							33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-							33554, 	-- Samamba <Sen'jin Quartermaster>
-							33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+							33555,	-- Eliza Killian <Undercity Quartermaster>
+							33553,	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+							33554,	-- Samamba <Sen'jin Quartermaster>
+							33557,	-- Trellis Morningsun <Silvermoon Quartermaster>
 						},
 					}),
 					i(45223, {	-- Razor's Edge Pendant
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
-							33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-							33555, 	-- Eliza Killian <Undercity Quartermaster>
-							33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-							33554, 	-- Samamba <Sen'jin Quartermaster>
-							33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+							33555,	-- Eliza Killian <Undercity Quartermaster>
+							33553,	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+							33554,	-- Samamba <Sen'jin Quartermaster>
+							33557,	-- Trellis Morningsun <Silvermoon Quartermaster>
 						},
 					}),
 					i(45216, {	-- Gauntlets of Mending Touch
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
-							33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-							33555, 	-- Eliza Killian <Undercity Quartermaster>
-							33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-							33554, 	-- Samamba <Sen'jin Quartermaster>
-							33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+							33555,	-- Eliza Killian <Undercity Quartermaster>
+							33553,	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+							33554,	-- Samamba <Sen'jin Quartermaster>
+							33557,	-- Trellis Morningsun <Silvermoon Quartermaster>
 						},
 					}),
 					i(45217, {	-- Clinch of Savage Fury
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
-							33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-							33555, 	-- Eliza Killian <Undercity Quartermaster>
-							33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-							33554, 	-- Samamba <Sen'jin Quartermaster>
-							33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+							33555,	-- Eliza Killian <Undercity Quartermaster>
+							33553,	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+							33554,	-- Samamba <Sen'jin Quartermaster>
+							33557,	-- Trellis Morningsun <Silvermoon Quartermaster>
 						},
 					}),
 					i(45215, {	-- Links of Unquenched Savagery
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
-							33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-							33555, 	-- Eliza Killian <Undercity Quartermaster>
-							33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-							33554, 	-- Samamba <Sen'jin Quartermaster>
-							33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+							33555,	-- Eliza Killian <Undercity Quartermaster>
+							33553,	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+							33554,	-- Samamba <Sen'jin Quartermaster>
+							33557,	-- Trellis Morningsun <Silvermoon Quartermaster>
 						},
 					}),
 					i(45209, {	-- Sash of Trumpeted Pride
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
-							33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-							33555, 	-- Eliza Killian <Undercity Quartermaster>
-							33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-							33554, 	-- Samamba <Sen'jin Quartermaster>
-							33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+							33555,	-- Eliza Killian <Undercity Quartermaster>
+							33553,	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+							33554,	-- Samamba <Sen'jin Quartermaster>
+							33557,	-- Trellis Morningsun <Silvermoon Quartermaster>
 						},
 					}),
 					i(45211, {	-- Waistguard of Equine Fury
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
-							33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-							33555, 	-- Eliza Killian <Undercity Quartermaster>
-							33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-							33554, 	-- Samamba <Sen'jin Quartermaster>
-							33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+							33555,	-- Eliza Killian <Undercity Quartermaster>
+							33553,	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+							33554,	-- Samamba <Sen'jin Quartermaster>
+							33557,	-- Trellis Morningsun <Silvermoon Quartermaster>
 						},
 					}),
 					i(45218, {	-- Blood-Caked Stompers
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
-							33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-							33555, 	-- Eliza Killian <Undercity Quartermaster>
-							33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-							33554, 	-- Samamba <Sen'jin Quartermaster>
-							33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+							33555,	-- Eliza Killian <Undercity Quartermaster>
+							33553,	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+							33554,	-- Samamba <Sen'jin Quartermaster>
+							33557,	-- Trellis Morningsun <Silvermoon Quartermaster>
 						},
 					}),
 					i(45220, {	-- Treads of the Earnest Squire
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
-							33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-							33555, 	-- Eliza Killian <Undercity Quartermaster>
-							33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-							33554, 	-- Samamba <Sen'jin Quartermaster>
-							33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+							33555,	-- Eliza Killian <Undercity Quartermaster>
+							33553,	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+							33554,	-- Samamba <Sen'jin Quartermaster>
+							33557,	-- Trellis Morningsun <Silvermoon Quartermaster>
 						},
 					}),
 					i(45221, {	-- Treads of Whispering Dreams
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
-							33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-							33555, 	-- Eliza Killian <Undercity Quartermaster>
-							33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-							33554, 	-- Samamba <Sen'jin Quartermaster>
-							33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+							33555,	-- Eliza Killian <Undercity Quartermaster>
+							33553,	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+							33554,	-- Samamba <Sen'jin Quartermaster>
+							33557,	-- Trellis Morningsun <Silvermoon Quartermaster>
 						},
 					}),
 					i(45219, {	-- Jouster's Fury
 						["races"] = HORDE_ONLY,
 						["cost"] = { { "c", 241, 10 }, },	-- 10x Champion's Seal
 						["crs"] = {
-							33556, 	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
-							33555, 	-- Eliza Killian <Undercity Quartermaster>
-							33553, 	-- Freka Bloodaxe <Orgrimmar Quartermaster>
-							33554, 	-- Samamba <Sen'jin Quartermaster>
-							33557, 	-- Trellis Morningsun <Silvermoon Quartermaster>
+							33556,	-- Doru Thunderhorn <Thunder Bluff Quartermaster>
+							33555,	-- Eliza Killian <Undercity Quartermaster>
+							33553,	-- Freka Bloodaxe <Orgrimmar Quartermaster>
+							33554,	-- Samamba <Sen'jin Quartermaster>
+							33557,	-- Trellis Morningsun <Silvermoon Quartermaster>
 						},
 					}),
 				}),
@@ -1883,7 +1883,7 @@ _.ExpansionFeatures =
 						i(47712),	-- Shoulders of the Fateful Accord
 						i(48724),	-- Talisman of Resurgence
 					},
-					-- We have a different Vendor with the same PvP Items in Dalaran listed. Both of them sell the Furious Gladiator Items for Gold. 
+					-- We have a different Vendor with the same PvP Items in Dalaran listed. Both of them sell the Furious Gladiator Items for Gold.
 					-- For sake of numbers we use Symlink on the 2nd NPC. First NPC under Outdoor>Northrend>Dalaran>Factions
 					["sym"] = {
 						{"sub", "pvp_gear_base", -10014, -669, -661 },	-- Furious Gladiator: Season 6 Gladiator Gear
@@ -2920,7 +2920,7 @@ _.ExpansionFeatures =
 						i(47706),	-- Shoulders of the Groundbreaker
 						i(48724),	-- Talisman of Resurgence
 					},
-					-- We have a different Vendor with the same PvP Items in Dalaran listed. Both of them sell the Furious Gladiator Items for Gold. 
+					-- We have a different Vendor with the same PvP Items in Dalaran listed. Both of them sell the Furious Gladiator Items for Gold.
 					-- For sake of numbers we use Symlink on the 2nd NPC. First NPC under Outdoor>Northrend>Dalaran>Factions
 					["sym"] = {
 						{"sub", "pvp_gear_base", -10014, -669, -661 },	-- Furious Gladiator: Season 6 Gladiator Gear

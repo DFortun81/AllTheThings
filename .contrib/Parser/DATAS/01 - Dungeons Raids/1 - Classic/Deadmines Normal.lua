@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(1, {	-- Classic
-	inst(63, { 	-- Deadmines
+	inst(63, {	-- Deadmines
 		["lvl"] = 10,
 		["mapID"] = 291,
 		["maps"] = { 292 },
@@ -39,13 +39,13 @@ _.Instances = { tier(1, {	-- Classic
 					["provider"] = { "n", 46889 },	-- Kagtha
 					["races"] = HORDE_ONLY,
 				}),
-				q(214, { 	-- Red Silk Bandanas
+				q(214, {	-- Red Silk Bandanas
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(6094)),		-- Piercing Axe
-						un(REMOVED_FROM_GAME, i(2089)), 	-- Scrimshaw Dagger
-						un(REMOVED_FROM_GAME, i(2074)), 	-- Solid Shortblade
+						un(REMOVED_FROM_GAME, i(2089)),	-- Scrimshaw Dagger
+						un(REMOVED_FROM_GAME, i(2074)),	-- Solid Shortblade
 					},
 				}),
 				q(27785, {	-- The Admiral
@@ -56,7 +56,7 @@ _.Instances = { tier(1, {	-- Classic
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = { 27756 },	-- The Foreman
 				}),
-				q(166, { 	-- The Defias Brotherhood
+				q(166, {	-- The Defias Brotherhood
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -95,7 +95,7 @@ _.Instances = { tier(1, {	-- Classic
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 27842 },	-- Only the Beginning
 				}),
-				q(2040, { 	-- Underground Assault
+				q(2040, {	-- Underground Assault
 					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -153,7 +153,7 @@ _.Instances = { tier(1, {	-- Classic
 						i(2169),	-- Buzzer Blade
 						i(5444),	-- Miner's Cape
 						i(5195),	-- Gold-Flecked Gloves
-					--	i(157628), 	-- Gold-Flecked Gloves (NOTE: This ID only drops on Heroic Mode.)
+					--	i(157628),	-- Gold-Flecked Gloves (NOTE: This ID only drops on Heroic Mode.)
 					},
 				}),
 				e(90, {	-- Helix Gearbreaker
@@ -166,7 +166,7 @@ _.Instances = { tier(1, {	-- Classic
 						i(151063),	-- Gear-Marked Gauntlets
 						i(132556),	-- Smelter's Britches
 						i(5199),	-- Smelting Pants
-					--	i(157752), 	-- Armbands of Exiled Architects (NOTE: This ID only drops on Heroic Mode.)
+					--	i(157752),	-- Armbands of Exiled Architects (NOTE: This ID only drops on Heroic Mode.)
 					},
 				}),
 				e(91, {	-- Foe Reaper 5000
@@ -178,9 +178,9 @@ _.Instances = { tier(1, {	-- Classic
 						i(151066),	-- Missing Diplomat's Pauldrons
 						i(151064),	-- Vest of the Curious Visitor
 						i(151065),	-- Old Friend's Gloves
-					--	i(157753), 	-- Vest of the Curious Visitor (NOTE: This ID only drops on Heroic Mode.)
-					--	i(157754), 	-- Old Friend's Gloves (NOTE: This ID only drops on Heroic Mode.)
-					--	i(157755), 	-- Missing Diplomat's Pauldrons (NOTE: This ID only drops on Heroic Mode.)
+					--	i(157753),	-- Vest of the Curious Visitor (NOTE: This ID only drops on Heroic Mode.)
+					--	i(157754),	-- Old Friend's Gloves (NOTE: This ID only drops on Heroic Mode.)
+					--	i(157755),	-- Missing Diplomat's Pauldrons (NOTE: This ID only drops on Heroic Mode.)
 					},
 				}),
 				e(92, {	-- Admiral Ripsnarl
@@ -204,37 +204,37 @@ _.Instances = { tier(1, {	-- Classic
 				}),
 				n(-40, {	-- Legacy
 					n(ZONEDROPS, {	-- TODO:: These are all from the original version of deadmines. Should these be merged into the rest of this file or left in a dedicated header?
-						un(REMOVED_FROM_GAME, n(647, { 	-- Captain Greenskin
+						un(REMOVED_FROM_GAME, n(647, {	-- Captain Greenskin
 							i(10403, {	-- Blackened Defias Belt **NOTE: Only the npc should be marked unobtainable as the item is still available via quest 44930
 								["description"] = "You can obtain this appearance by doing a Rogue-only quest in the current Deadmines instance.",
 							}),
 						})),
-						un(REMOVED_FROM_GAME, n(4416, { 	-- Defias Strip Miner
+						un(REMOVED_FROM_GAME, n(4416, {	-- Defias Strip Miner
 							i(10402, {	-- Blackend Defias Boots **NOTE: Only the npc should be marked unobtainable as the item is still available via quest 44930
 								["description"] = "You can obtain this appearance by doing a Rogue-only quest in the current Deadmines instance.",
 							}),
 						})),
-						un(REMOVED_FROM_GAME, n(639, { 	-- Edwin Van Cleef
+						un(REMOVED_FROM_GAME, n(639, {	-- Edwin Van Cleef
 							i(10399, {	-- Blackened Defias Armor **NOTE: Only the npc should be marked unobtainable as the item is still available via quest 44930
 								["description"] = "You can obtain this appearance by doing a Rogue-only quest in the current Deadmines instance.",
 							}),
 						})),
-						un(REMOVED_FROM_GAME, n(1731, { 	-- Goblin Craftsman
-							un(REMOVED_FROM_GAME, i(1944)), 	-- Metalworking Gloves
+						un(REMOVED_FROM_GAME, n(1731, {	-- Goblin Craftsman
+							un(REMOVED_FROM_GAME, i(1944)),	-- Metalworking Gloves
 						})),
-						un(REMOVED_FROM_GAME, n(622, { 	-- Goblin Engineer
-							un(REMOVED_FROM_GAME, i(1936)), 	-- Goblin Screwdriver
+						un(REMOVED_FROM_GAME, n(622, {	-- Goblin Engineer
+							un(REMOVED_FROM_GAME, i(1936)),	-- Goblin Screwdriver
 						})),
-						un(REMOVED_FROM_GAME, n(3947, { 	-- Goblin Shipbuilder
-							un(REMOVED_FROM_GAME, i(1943)), 	-- Goblin Mail Leggings
+						un(REMOVED_FROM_GAME, n(3947, {	-- Goblin Shipbuilder
+							un(REMOVED_FROM_GAME, i(1943)),	-- Goblin Mail Leggings
 						})),
-						un(REMOVED_FROM_GAME, n(641, { 	-- Goblin Woodcarver
-							un(REMOVED_FROM_GAME, i(1945)), 	-- Woodworking Gloves
+						un(REMOVED_FROM_GAME, n(641, {	-- Goblin Woodcarver
+							un(REMOVED_FROM_GAME, i(1945)),	-- Woodworking Gloves
 						})),
-						un(REMOVED_FROM_GAME, n(646, { 	-- Mr. Smite
+						un(REMOVED_FROM_GAME, n(646, {	-- Mr. Smite
 							un(REMOVED_FROM_GAME, i(7230)),	-- Smite's Mighty Hammer
 						})),
-						un(REMOVED_FROM_GAME, n(643, { 	-- Sneed
+						un(REMOVED_FROM_GAME, n(643, {	-- Sneed
 							un(REMOVED_FROM_GAME, i(5194)),	-- Taskmaster Axe
 						})),
 					}),

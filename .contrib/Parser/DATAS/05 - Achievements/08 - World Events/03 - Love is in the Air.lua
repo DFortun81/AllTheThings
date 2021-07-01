@@ -82,7 +82,7 @@ _.Achievements = {
 				crit(4),	-- Very Berry Cream
 			}),
 			ach(1696),	-- The Rocket's Pink Glare
-			ach(9394, {	-- 	They Really Love Me! (50)
+			ach(9394, {	-- They Really Love Me! (50)
 				i(116651),	-- True Love Prism
 				ach(9393),	-- Beacon of Love (25)
 				ach(9392),	-- Love Magnet (10)

@@ -307,7 +307,7 @@ _.ExpansionFeatures =
 							}),
 						},
 					}),
-					n(89753, { 	-- High Overlord Saurfang
+					n(89753, {	-- High Overlord Saurfang
 						["description"] = "High Overlord Saurfang has a chance to spawn in your garrison daily, or you can find someone with him spawned and join their garrison. He starts a weekly raid quest which will either have Greater Bounty Spoils or Apexis Crystals as a reward.",
 						["coord"] = { 40.2, 56.7, 590 },
 						["races"] = HORDE_ONLY,

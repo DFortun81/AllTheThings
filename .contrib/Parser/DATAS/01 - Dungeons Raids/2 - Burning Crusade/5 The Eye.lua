@@ -26,7 +26,7 @@ local legendary = function(itemID, creatureID)
 	end
 end;
 _.Instances = { tier(2, applyclassicphase(TBC_PHASE_TWO, {	-- Burning Crusade
-	inst(749, { 	-- The Eye
+	inst(749, {	-- The Eye
 		["coord"] = { 73.73, 63.71, NETHERSTORM },	-- The Eye, Netherstorm
 		["mapID"] = TEMPEST_KEEP_THE_EYE,
 		-- #if BEFORE WRATH
@@ -39,7 +39,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_TWO, {	-- Burning Crusade
 			n(QUESTS, {
 				q(11007, {	-- Kael'thas and the Verdant Sphere
 					["provider"] = { "i", 32405 },	-- Verdant Sphere
-					["groups"] =  {
+					["groups"] = {
 						i(30018),	-- Lord Sanguinar's Claim
 						i(30017),	-- Telonicus' Pendant of Mayhem
 						i(30007),	-- The Darkener's Grasp

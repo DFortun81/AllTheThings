@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(49, {	-- Redridge Mountains
+		m(REDRIDGE_MOUNTAINS, {
 			n(ACHIEVEMENTS, {
 				ach(4902, {	-- Redridge Mountain Quests
 					["races"] = ALLIANCE_ONLY,

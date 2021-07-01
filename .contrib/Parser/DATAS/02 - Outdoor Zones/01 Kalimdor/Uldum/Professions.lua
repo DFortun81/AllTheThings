@@ -38,7 +38,7 @@ _.Zones =
 				prof(MINING, {
 					["description"] = "Elementium Veins (0.05% Drop Rate) and Rich Elementium Veins (0.08% Drop Rate) require a mining skill of 475-500.",
 					["g"] = {
-						i(67282), 	-- Elementium Geode (PET!)
+						i(67282),	-- Elementium Geode (PET!)
 					},
 				}),
 			}),

@@ -169,21 +169,21 @@ _.Zones =
 							["g"] = {
 								i(139522, {	-- Bloody Note
 									["achievementID"] = 11139,	-- Field Medic
-									["criteriaID"] = 2, 		-- Bloody Note
+									["criteriaID"] = 2,			-- Bloody Note
 									--["questID"] = 42255,		-- Bloody Note
 									["description"] = "Pirates in southern-east Azsuna.",
 									["crs"] = {108133, 108139, 108153, 108146}
 								}),
 								i(139520, {	-- Fevered Plea
 									["achievementID"] = 11139,	-- Field Medic
-									["criteriaID"] = 11, 		-- Fevered Plea
+									["criteriaID"] = 11,		-- Fevered Plea
 									--["questID"] = 42250,		-- Fevered Plea
 									["description"] = "Murlocs at the southern tip in Azsuna.",
 									["crs"] = {111598, 111630, 111586 }
 								}),
 								i(139521, {	-- Singed Note
 									["achievementID"] = 11139,	-- Field Medic
-									["criteriaID"] = 15, 		-- Singed Note
+									["criteriaID"] = 15,		-- Singed Note
 									--["questID"] = 42245,		-- Singed Note
 									["description"] = "Murlocs on the left coast of the lake surrounding Nar'thalos Academy.",
 									["crs"] = {88101, 88099, 108146}

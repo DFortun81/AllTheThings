@@ -588,7 +588,6 @@ _.Zones =
 						25392,	-- Oh, Deer!
 						25428,	-- Black Heart of Flame
 					},
-					["isBreadcrumb"] = true,
 				}),
 				q(29200, {	-- Leyara
 					["provider"] = { "n", 52838 },	-- Archdruid Hamuul Runetotem

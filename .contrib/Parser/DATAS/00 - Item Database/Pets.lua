@@ -11,7 +11,7 @@ end
 -- For example, for A Jubling's Tiny Home, the first number is the item that teaches you how to summon the companion.
 -- This number can be found in the "Summoned by" tab on Wowhead.
 -- To manually collect the speciesID in-game (live or PTR):
-	-- /dump C_PetJournal.FindPetIDByName("petName")
+	-- /run print(select(1, C_PetJournal.FindPetIDByName("")))
 -- The speciesID can also be found via various addons — the slumber-approved addon is Rematch.
 	-- In the Rematch options, make sure "Show Species ID & Ability ID" is checked.
 	-- The speciesID is the number by the icon that looks like a cogwheel on the card that pops up when you hover over a pet.
@@ -998,3 +998,28 @@ pet(180636, 2915);	-- Willowbreeze
 pet(184512, 3079);	-- Winterleaf Spriggan
 pet(181267, 2957);	-- Writhing Spine
 
+-----------------
+-- PATCH 9.1.0 --
+-----------------
+pet(186449, 3117);	-- Amaranthine Stinger
+pet(186546, 3103);	-- Copperback Etherwyrm
+pet(186543, 3138);	-- Domestic Aunian
+pet(186554, 3128);	-- Eye of Allseeing
+pet(186555, 3129);	-- Eye of Extermination
+pet(185919, 3097);	-- Flawless Amethyst Baubleworm
+pet(186557, 3114);	-- Fodder
+pet(186564, 3125);	-- Golden Eye
+pet(186559, 3121);	-- Grappling Gauntlet
+pet(186191, 3099);	-- Infused Etherwyrm
+pet(186547, 3116);	-- Invasive Buzzer
+pet(186558, 3122);	-- Irongrasp
+pet(186188, 3098);	-- Lil'Abom
+pet(186550, 3131);	-- Mawsworn Minion
+pet(186551, 3132);	-- Mord'al Eveningstar
+pet(186541, 3137);	-- Mosscoated Gromit
+pet(186552, 3133);	-- Rook
+pet(186537, 3104);	-- Ruby Baubleworm
+pet(186544, 3010);	-- Sinfall Screecher
+pet(186539, 3101);	-- Sly
+pet(186535, 3106);	-- Topaz Baubleworm
+pet(186536, 3105);	-- Turquoise Baubleworm

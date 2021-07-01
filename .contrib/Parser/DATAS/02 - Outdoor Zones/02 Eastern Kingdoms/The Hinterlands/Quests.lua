@@ -583,7 +583,7 @@ _.Zones =
 					["coord"] = { 63.7, 59.9, THE_HINTERLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
-						26498, 	-- Death to the Vilebranch
+						26498,	-- Death to the Vilebranch
 						26515,	-- Ongo'longo's Revenge
 					},
 				}),

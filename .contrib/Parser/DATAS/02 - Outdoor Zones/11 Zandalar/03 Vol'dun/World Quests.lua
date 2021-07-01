@@ -709,7 +709,7 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["requireSkill"] = ENGINEERING,
 						["g"] = {
-							i(162331), 	-- Schematic: F.R.I.E.D. [Rank 3]
+							i(162331),	-- Schematic: F.R.I.E.D. [Rank 3]
 						},
 					}),
 					q(52413, {	-- Work Order: Golden Beryl
@@ -757,7 +757,7 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["requireSkill"] = ENGINEERING,
 						["g"] = {
-							i(162736), 	-- Schematic: Thermo-Accelerated Plague Spreader [Rank 3]
+							i(162736),	-- Schematic: Thermo-Accelerated Plague Spreader [Rank 3]
 						},
 					}),
 					q(51003, {	-- Work Order: Winter's Kiss

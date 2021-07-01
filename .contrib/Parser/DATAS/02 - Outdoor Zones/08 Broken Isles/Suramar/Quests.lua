@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(619, { 	-- The Broken Isles
+	m(619, {	-- The Broken Isles
 		m(680, {	-- Suramar
 			n(QUESTS, {
 			--	POSSIBLE TRACKING QUESTS!  commenting out for now, so if they pop we can document exactly what they're for in the NYI file/it'll be more apparent that we don't have any data for them.  if, after someone quests through the zone, they have not been discovered, we can mark them NYI instead.
@@ -1718,7 +1718,7 @@ _.Zones =
 				q(45486, {	-- The Reluctant Queen
 					["sourceQuests"] = {
 						45482,	-- Arcane: Fate of the Tideskorn
-						47051, 	-- Assassination: Fate of the Tideskorn
+						47051,	-- Assassination: Fate of the Tideskorn
 						47049,	-- Demonology: Fate of the Tideskorn
 						47050,	-- Enhancement: Fate of the Tideskorn
 						47052,	-- Retribution: Fate of the Tideskorn

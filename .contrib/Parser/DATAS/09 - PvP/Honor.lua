@@ -92,7 +92,7 @@ _.PVP =
 		ach(12915, {	-- Honor Level 300
 			title(369),	-- %s the Tactician
 		}),
-		ach(12916, { 	-- Honor Level 400
+		ach(12916, {	-- Honor Level 400
 			i(163974, {	-- Bucketshell
 				["races"] = HORDE_ONLY,
 				["crs"] = {

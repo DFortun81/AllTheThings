@@ -12,8 +12,8 @@ _.ExpansionFeatures =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						n(ACHIEVEMENTS, {
-							ach(7274, { 	-- Learning From The Best
-								i(86596), 	-- Nat's Fishing Chair
+							ach(7274, {	-- Learning From The Best
+								i(86596),	-- Nat's Fishing Chair
 							}),
 						}),
 						n(QUESTS, {
@@ -167,8 +167,8 @@ _.ExpansionFeatures =
 						n(RARES, {
 							i(112633, {	-- Frostdeep Minnow
 								n(81171, {	-- Frostdeep Cavedweller
-									i(23720), 	-- Riding Turtle
-									i(46109), 	-- Sea Turtle
+									i(23720),	-- Riding Turtle
+									i(46109),	-- Sea Turtle
 									i(118380, {	-- Hightfish Cap
 										["collectible"] = false,
 										["u"] = 15,

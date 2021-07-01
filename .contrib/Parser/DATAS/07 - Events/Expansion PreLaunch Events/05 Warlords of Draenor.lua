@@ -4,7 +4,7 @@
 -- TODO: do we even need this file? there's nothing listed
 _.WorldEvents =
 {
-	n(-520, { 	-- Expansion Prelaunch Events
+	n(-520, {	-- Expansion Prelaunch Events
 		["icon"] = "Interface\\Icons\\inv_misc_missilesmallcluster_green",
 		["groups"] = {
 			n(-525, {	-- Warlords of Draenor

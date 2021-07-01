@@ -670,7 +670,7 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["requireSkill"] = ENGINEERING,
 						["g"] = {
-							i(162339), 	-- Schematic: XA-1000 Surface Skimmer [Rank 3]
+							i(162339),	-- Schematic: XA-1000 Surface Skimmer [Rank 3]
 						},
 					}),
 					q(50489, {	-- Xu'ba

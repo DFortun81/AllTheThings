@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(5, {	-- Mists of Pandaria
-	inst(316, { 	-- Scarlet Monastery
+	inst(316, {	-- Scarlet Monastery
 		["mapID"] = 435,
 		["maps"] = {
 			--435,	-- Scarlet Monastery: Forlorn Cloister (First Boss

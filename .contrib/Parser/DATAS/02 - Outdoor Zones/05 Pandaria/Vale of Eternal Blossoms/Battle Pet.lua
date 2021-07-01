@@ -78,13 +78,13 @@ _.Zones =
 						i(98095),	-- Brawler's Pet Supplies
 					},
 				}),
-				p(751), 	-- Dancing Water Skimmer
-				p(747), 	-- Effevescent Glowfly
-				p(383), 	-- Eternal Strider
-				p(748), 	-- Gilded Moth
-				p(749), 	-- Golden Civet
-				p(750), 	-- Golden Civet Kitten
-				p(752), 	-- Yellow-Bellied Bullfrog
+				p(751),	-- Dancing Water Skimmer
+				p(747),	-- Effevescent Glowfly
+				p(383),	-- Eternal Strider
+				p(748),	-- Gilded Moth
+				p(749),	-- Golden Civet
+				p(750),	-- Golden Civet Kitten
+				p(752),	-- Yellow-Bellied Bullfrog
 			}),
 		}),
 	}),

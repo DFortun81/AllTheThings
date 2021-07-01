@@ -132,7 +132,7 @@ _.Secrets =
 							}),
 							n(958, {	-- Dawn Brightstar <Arcane Goods>
 								["description"] = "Elwynn Forest",
-								["coord"] = { 64.8, 69.2, 37 },
+								["coord"] = { 64.8, 69.2, ELWYNN_FOREST },
 								["races"] = ALLIANCE_ONLY,
 							}),
 							n(16224, {	-- Rathis Tomber <Trade Supplies>

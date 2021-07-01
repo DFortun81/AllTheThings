@@ -323,7 +323,7 @@ _.Zones =
 						i(20855, {	-- Design: Wicked Moonstone Ring
 							["isLimited"] = true,
 						}),
-						i(6272, { 	-- Pattern: Blue Linen Robe
+						i(6272, {	-- Pattern: Blue Linen Robe
 							["isLimited"] = true,
 						}),
 						i(6275, {	-- Pattern: Greater Adept's Robe
@@ -425,7 +425,7 @@ _.Zones =
 					["coord"] = { 50.6, 57.8, NORTHERN_BARRENS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						i(3735), 	-- Recipe: Hot Lion Chops
+						i(3735),	-- Recipe: Hot Lion Chops
 					},
 				}),
 			}),

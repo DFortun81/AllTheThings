@@ -11,6 +11,14 @@ _.Zones =
 					q(62910, {	-- Against Overwhelming Odds
 						["provider"] = { "n", 168011 },	-- Zo'sorg
 						["isWeekly"] = true,
+						["races"] = ALLIANCE_ONLY,
+						["coord"] = { 34.7, 56.5, ORIBOS },
+						["_drop"] = { "g" },	-- drop anima trash
+					}),
+					q(62911, {	-- Against Overwhelming Odds
+						["provider"] = { "n", 168011 },	-- Zo'sorg
+						["isWeekly"] = true,
+						["races"] = HORDE_ONLY,
 						["coord"] = { 34.7, 56.5, ORIBOS },
 						["_drop"] = { "g" },	-- drop anima trash
 					}),
@@ -44,19 +52,16 @@ _.Zones =
 						["coord"] = { 34.7, 56.5, ORIBOS },
 						["_drop"] = { "g" },	-- drop anima trash
 					}),
-					--[[
-				--	TODO: these are the rest of the PVP quests from Unsorted.  if they show up, it'll be easier to move them/add information.  if they don't show up they can be moved to the NYI > NYI Quests file.
-					q(62289, {	-- Observing Conflict
-						["provider"] = { "n",  },	--
-						["isWeekly"] = true,
-						["coord"] = { , , ORIBOS },
-						["_drop"] = { "g" },	-- drop anima trash
-					}),--]]
 				}),
 				q(60151, {	-- A Doorway Through the Veil
 					["sourceQuests"] = { 60150 },	-- Tether to Home
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 40.0, 65.3, ORIBOS },
+				}),
+				q(63856, {	-- A Gathering of Covenants
+					["sourceQuests"] = { 63576 },	-- The First Move
+					["provider"] = { "n", 159478 },	-- Tal-Inara
+					["coord"] = { 39.2, 69.4, ORIBOS },	-- Ring of Fates
 				}),
 				q(61716, {	-- A Glimpse into Darkness
 					["sourceQuests"] = { 61715 },	-- Request of the Highlord
@@ -163,6 +168,11 @@ _.Zones =
 					["provider"] = { "n", 167486 },	-- Tal-Inara
 					["coord"] = { 40.5, 65.9, ORIBOS },
 				}),
+				q(64007, {	-- Charge of the Covenants
+					["sourceQuests"] = { 63665 },	-- Opening to Oribos
+					["provider"] = { "n", 177230 },	-- Highlord Bolvar Fordragon
+					["coord"] = { 39.5, 36.5, 1671 },	-- Ring of Transference
+				}),
 				q(57878, {	-- Choosing Your Purpose
 					["sourceQuests"] = { 57877 },	-- The Looming Dark
 					["altQuests"] = { 62704 },	-- The Threads of Fate (can't do this version on a Skip character)
@@ -193,9 +203,6 @@ _.Zones =
 					},
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 39.9, 68.5, ORIBOS },
-					["g"] = {
-						spell(334746),	-- Access to Torghast
-					},
 				}),
 				q(60338, {	-- Journey to Ardenweald
 					["sourceQuests"] = { 61715 },	-- Request of the Highlord
@@ -207,10 +214,72 @@ _.Zones =
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 39.9, 68.5, ORIBOS },
 				}),
+				q(63661, {	-- Link to the Maw
+					["sourceQuests"] = { 63660 },	-- Opening the Maw
+					["provider"] = { "n", 159478 },	-- Tal-Inara
+					["coord"] = { 39.2, 69.4, ORIBOS },	-- Ring of Fates
+				}),
 				q(60148, {	-- No Place for the Living
 					["sourceQuests"] = { 60129 },	-- Stranger in an Even Stranger Land
 					["provider"] = { "n", 167425 },	-- Overseer Kah-Delen
 					["coord"] = { 39.7, 66.1, ORIBOS },
+				}),
+				q(63660, {	-- Opening the Maw
+					["sourceQuests"] = { 63639 },	-- Report to Oribos
+					["provider"] = { "n", 159478 },	-- Tal-Inara
+					["coord"] = { 39.2, 69.4, ORIBOS },	-- Ring of Fates
+				}),
+				q(62043, {	-- Prove Your Worth
+					["description"] = "Available while switching back to Kyrian Covenant",
+					["provider"] = { "n", 171787 },	-- Polemarch Adrestes
+					["isWeekly"] = true,
+					["coord"] = { 36.2, 64.2, ORIBOS },
+				}),
+				q(62061, {	-- Prove Your Worth
+					["description"] = "Available while switching back to Venthyr Covenant",
+					["provider"] = { "n", 171589 },	-- General Draven
+					["isWeekly"] = true,
+					["coord"] = { 44.9, 68.9, ORIBOS },
+				}),
+				q(62060, {	-- Prove Your Worth
+					["description"] = "Available while switching back to Night Fae Covenant",
+					["provider"] = { "n", 171795 },	-- Lady Moonberry
+					["isWeekly"] = true,
+					["coord"] = { 39.8, 60.9, ORIBOS },
+				}),
+				q(62059, {	-- Prove Your Worth
+					["description"] = "Available while switching back to Necrolords Covenant",
+					["provider"] = { "n", 171821 },	-- Secutor Mevix
+					["isWeekly"] = true,
+					["coord"] = { 43.0, 74.3, ORIBOS },
+				}),
+				q(62368, {	-- Rebuild Our Trust
+					["sourceQuests"] = { 62043 },	-- Prove Your Worth
+					["description"] = "Available while switching back to Kyrian Covenant",
+					["provider"] = { "n", 171787 },	-- Polemarch Adrestes
+					["isWeekly"] = true,
+					["coord"] = { 36.2, 64.2, ORIBOS },
+				}),
+				q(62389, {	-- Rebuild Our Trust
+					["sourceQuests"] = { 62061 },	-- Prove Your Worth
+					["description"] = "Available while switching back to Venthyr Covenant",
+					["provider"] = { "n", 171589 },	-- General Draven
+					["isWeekly"] = true,
+					["coord"] = { 44.9, 68.9, ORIBOS },
+				}),
+				q(62392, {	-- Rebuild Our Trust
+					["sourceQuests"] = { 62060 },	-- Prove Your Worth
+					["description"] = "Available while switching back to Night Fae Covenant",
+					["provider"] = { "n", 171795 },	-- Lady Moonberry
+					["isWeekly"] = true,
+					["coord"] = { 39.8, 60.9, ORIBOS },
+				}),
+				q(62393, {	-- Rebuild Our Trust
+					["sourceQuests"] = { 62059 },	-- Prove Your Worth
+					["description"] = "Available while switching back to Necrolords Covenant",
+					["provider"] = { "n", 171821 },	-- Secutor Mevix
+					["isWeekly"] = true,
+					["coord"] = { 43.0, 74.3, ORIBOS },
 				}),
 				q(62935, {	-- Remnants of Hope
 					["sourceQuests"] = { 62932 },	-- Explore Torghast
@@ -256,6 +325,24 @@ _.Zones =
 					["provider"] = { "n", 159478 },	-- Tal-Inara
 					["coord"] = { 38.9, 69.9, ORIBOS },
 				}),
+				q(63578, {	-- The Battle of Ardenweald
+					["sourceQuests"] = { 63857 },	-- Voices of the Eternal
+					["provider"] = { "n", 177141 },	-- Lady Moonberry
+					["coord"] = { 40.9, 66.2, ORIBOS },	-- Ring of Fates
+					["maps"] = { 2005 },	-- Ardenweald (scenario)
+					["g"] = {
+						i(179498),	-- Faesworn Barb
+						i(179564),	-- Faesworn Channeling Root
+						i(179515),	-- Faesworn Falchion
+						i(182322),	-- Faesworn Gavel
+						i(179511),	-- Faesworn Glaive
+						i(179531),	-- Faesworn Reaper
+						i(182323),	-- Faesworn Spellblade
+						i(179583),	-- Faesworn Warbow
+						i(179546),	-- Faesworn Warclub
+						i(179536),	-- Faesworn Warmaul
+					},
+				}),
 				q(61730, {	-- The Captive King
 					["sourceQuests"] = { 62836 },	-- Signs of the Lion
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
@@ -266,6 +353,9 @@ _.Zones =
 					["provider"] = { "n", 167424 },	-- Overseer Kah-Sher
 					["coord"] = { 39.7, 66.1, ORIBOS },
 				}),
+				q(63576, {	-- The First Move
+					["sourceQuests"] = { 62569 },	-- The Jailer's Grasp
+				}),
 				q(62457, {	-- The Great Vault
 					["provider"] = { "n", 173350 },	-- Ba'vol
 					["coord"] = { 64.4, 35.8, ORIBOS },
@@ -275,7 +365,9 @@ _.Zones =
 					},
 				}),
 				q(61558, {	-- The Highlord's Vision
-					["sourceQuests"] = { 61557 },	-- An Echo in the Darkness
+				--	unsure when these SQs were changed, but this is the correct SQ in 9.1
+				--	["sourceQuests"] = { 61557 },	-- An Echo in the Darkness
+					["sourceQuests"] = { 61730 },	-- The Captive King
 					["providers"] = {
 						{ "n", 171362 },	-- Thrall (this NPC gives the quest but the RP does not properly progress)
 						{ "n", 175912 },	-- Thrall (this NPC gives the quest and triggers the RP properly)
@@ -377,6 +469,11 @@ _.Zones =
 					["sourceQuests"] = { 60152 },	-- The Eternal City
 					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 40.0, 64.8, ORIBOS },
+				}),
+				q(63857, {	-- Voices of the Eternal
+					["sourceQuests"] = { 63856 },	-- A Gathering of Covenants
+					["provider"] = { "n", 159475 },	-- Highlord Bolvar Fordragon
+					["coord"] = { 50.5, 45.1, 1673 },	-- The Crucible
 				}),
 
 				-- Skip Quests
@@ -754,20 +851,104 @@ _.Zones =
 					-- ["isBreadcrumb"] = true, -- don't think this is breadcrumb for Skip characters
 					["lvl"] = { 60 },
 				}),
-				-- Revendreth
 
 
-				--[[ quest was in beta but still has not been seen in game
-				q(60286, {	-- A Token of Our Admiration
-					["provider"] = { "n", 168432 },	-- Ve'rayn
-					["coord"] = { 33.2, 48.9, ORIBOS },
+				-- PTR - TODO: move into alphabetized quests once we know there aren't changes/everything has made it to live.  keeping them in one place for now for ease of culling any data if necessary
+				-- PVP quests
+				q(64527, {	-- Observing the Chase
+					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
+					["coord"] = { 34.7, 55.7, ORIBOS },	-- Ring of Fates
 				}),
-				--]]
+				-- regular ol' quests
+				q(63977, {	-- Insider Trading
+					["sourceQuests"] = { 63976 },	-- The Al'ley Cat of Oribos
+					["provider"] = { "n", 178908 },	-- Al'dalil
+					["coord"] = { 57.1, 31.1, ORIBOS },	-- Ring of Fates
+				}),
+				q(63944, {	-- Korthia Awaits
+					["description"] = "Only available to characters who choose to skip ahead to Korthia.",
+					["isBreadcrumb"] = true,
+					["provider"] = { "n", 164079 },	-- Highlord Bolvar Fordragon
+					["coord"] = { 40.3, 67.9, ORIBOS },	-- Ring of Fates
+				}),
+				q(63980, {	-- Seeking Smugglers
+					["sourceQuests"] = {
+						63977,	-- Insider Trading
+						63979,	-- Things Best Kept Dark
+					},
+					["provider"] = { "n", 178908 },	-- Al'dalil
+					["coord"] = { 57.1, 31.1, ORIBOS },	-- Ring of Fates
+				}),
+				q(63976, {	-- The Al'ley Cat of Oribos
+					["provider"] = { "n", 156688 },	-- Host Ta'rela
+					["coord"] = { 67.0, 50.3, ORIBOS },	-- Ring of Fates
+				}),
+				q(63985, {	-- The Veiled Market
+					["sourceQuests"] = { 63984 },	-- Coins for the Ferryman
+					["provider"] = { "n", 178792 },	-- Ta'meri
+					["coord"] = { 29.6, 66.1, ORIBOS },	-- Ring of Fates
+				}),
+				q(63979, {	-- Things Best Kept Dark
+					["sourceQuests"] = { 63976 },	-- The Al'ley Cat of Oribos
+					["provider"] = { "n", 178908 },	-- Al'dalil
+					["coord"] = { 57.1, 31.1, ORIBOS },	-- Ring of Fates
+				}),
 			}),
 		}),
 	}),
 };
 
 _.HiddenQuestTriggers = {
+	q(64254),	-- triggers when using the second 9.1 skip (the one to Korthia) - returns info for "Supplies from Death's Advance" paragon quest, but text/reward are for Court of Harvesters
+	q(64514),	-- triggered while doing The Battle of Ardenweald scenario
 	q(63416),	-- triggers when accepting the first of your 'Zone Meta Quests' on a Skip Character
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(60286),	-- A Token of Our Admiration
+		q(60157),	-- Answers from the Ascended
+		q(59084),	-- Bybeen Dreadweaver
+		q(59080),	-- Demons!
+		q(62072),	-- Familiar Faces
+		q(59086),	-- Manor of Minions
+		q(59082),	-- Next Realm!
+		q(62289),	-- Observing Conflict
+		q(59079),	-- Portal to Paradise
+		q(59081),	-- Scum Scrape
+		q(59083),	-- Sticky Getaway
+		q(62165),	-- Tal-Inara's Call
+		q(62166),	-- Tal-Inara's Call
+		q(59078),	-- The Hook
+		q(60499),	-- The Light's Retribution
+		q(59076),	-- The Minions of Mayhem
+		q(59077),	-- The Plan
+		q(59085),	-- Third Time is a Charm
+		q(60172),	-- This Quest is Temporary
+		q(60155),	-- To Open the Way
+		q(62077),	-- To the Chase
+		q(60138),	-- Unlocking the Gates
+		q(60559),	-- Unused
+	}),
+	n(-10100, {	-- Shadowlands
+		n(-163, {	-- Armor
+			n(-43, {	-- Cloth
+				i(175679),	-- Oribos Quest Cloth Robe
+				i(175682),	-- Oribos Quest Cloth Feet
+				i(175686),	-- Oribos Quest Cloth Hand
+				i(175688),	-- Oribos Quest Cloth Head
+				i(175691),	-- Oribos Quest Cloth Legs
+				i(175695),	-- Oribos Quest Cloth Shoulder
+				i(175697),	-- Oribos Quest Cloth Waist
+				i(175700),	-- Oribos Quest Cloth Wrist
+				i(179489),	-- Oribos Quest Cloth Chest
+				i(179490),	-- Oribos Quest Cloth Chest
+			}),
+			n(-44, {	-- Leather
+			}),
+			n(-45, {	-- Mail
+			}),
+			n(-46, {	-- Plate
+			}),
+		}),
+	}),
+});

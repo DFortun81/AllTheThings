@@ -116,7 +116,7 @@ _.Zones =
 							["cr"] = 17326,	-- Blacksilt Scout
 							["coord"] = { 42.7, 95.8, BLOODMYST_ISLE },
 							["cost"] = {
-								{ "i", 23995, 1 },	-- 	Murloc Tagger
+								{ "i", 23995, 1 },	--	Murloc Tagger
 							},
 						}),
 						-- #if AFTER LEGION
@@ -284,7 +284,7 @@ _.Zones =
 					-- #endif
 					["lvl"] = lvlsquish(18, 1, 18),
 					["groups"] = {
-						objective(1, {	-- 	Vector Coil Destroyed and Sironas Slain
+						objective(1, {	--	Vector Coil Destroyed and Sironas Slain
 							["cr"] = 17678,	-- Sironas
 							["coord"] = { 15, 55.5, BLOODMYST_ISLE },
 						}),

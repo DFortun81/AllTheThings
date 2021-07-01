@@ -498,7 +498,7 @@ _.ExpansionFeatures =
 						["sourceQuest"] = 43574, -- Maw of Souls: Maul of the Dead
 						["g"] = {
 							title(328),	-- Deathlord
-							i(139673), 	-- Deathlord's Chestguard
+							i(139673),	-- Deathlord's Chestguard
 						},
 					}),
 					q(42537, {	-- The King Rises

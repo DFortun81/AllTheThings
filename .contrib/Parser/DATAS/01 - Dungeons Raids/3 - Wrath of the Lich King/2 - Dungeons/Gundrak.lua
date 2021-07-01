@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(3, {	-- Wrath of the Lich King
-	inst(274, { 	-- Gundrak
+	inst(274, {	-- Gundrak
 		["lvl"] = 63,
 		["maps"] = { 153, 154 },
 		["g"] = {
@@ -100,7 +100,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						},
 					}),
 				}),
-				cr(29304, e(592, { 	-- Slad'ran
+				cr(29304, e(592, {	-- Slad'ran
 					{	-- Gundrak: Slad'ran
 						["achievementID"] = 484,	-- Gundrak
 						["criteriaID"] = 1,	-- Slad'ran
@@ -127,7 +127,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 					i(37634),	-- Bracers of the Divine Elemental
 					i(37637),	-- Living Mojo Belt
 				})),
-				cr(29305, e(594, { 	-- Moorabi
+				cr(29305, e(594, {	-- Moorabi
 					{	-- Gundrak: Moorabi
 						["achievementID"] = 484,	-- Gundrak
 						["criteriaID"] = 2,	-- Moorabi
@@ -211,7 +211,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 							},
 						}),
 					}),
-					cr(29304, e(592, { 	-- Slad'ran
+					cr(29304, e(592, {	-- Slad'ran
 						{	-- Heroic: Gundrak: Slad'ran
 							["achievementID"] = 495,	-- Heroic: Gundrak
 							["criteriaID"] = 1,	-- Slad'ran
@@ -241,7 +241,7 @@ _.Instances = { tier(3, {	-- Wrath of the Lich King
 						i(37634),	-- Bracers of the Divine Elemental
 						i(37637),	-- Living Mojo Belt
 					})),
-					cr(29305, e(594, { 	-- Moorabi
+					cr(29305, e(594, {	-- Moorabi
 						{	-- Less-rabi
 							["achievementID"] = 2040,	-- Less-rabi
 						},

@@ -82,7 +82,7 @@ _.Instances = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 					["maps"] = { BLADES_EDGE_MOUNTAINS },
 					["lvl"] = lvlsquish(70, 25, 70),
 					["groups"] = {
-						objective(1, {	-- 	Mana-Tombs Stasis Chamber Investigated
+						objective(1, {	--	Mana-Tombs Stasis Chamber Investigated
 							["provider"] = { "i", 32069 },	-- Mana-Tombs Stasis Chamber Key
 							["description"] = "Stasis Chamber is in the room to the left after the first boss.\n\nThis can only be completed on Heroic difficulty.",
 						}),

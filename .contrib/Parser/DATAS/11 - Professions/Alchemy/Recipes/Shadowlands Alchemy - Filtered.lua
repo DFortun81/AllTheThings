@@ -58,6 +58,16 @@ profession(ALCHEMY, {
 						},
 					},
 				},
+				{
+					["name"] = "Transmutation",
+					["categoryID"] = 1300,
+					["g"] = {
+						{
+							["name"] = "Stones to Ore",
+							["recipeID"] = 307144
+						},
+					},
+				},
 			}
 		},
 	}),

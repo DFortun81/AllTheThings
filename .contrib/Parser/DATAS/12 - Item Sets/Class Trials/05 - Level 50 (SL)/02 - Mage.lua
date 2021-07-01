@@ -11,7 +11,6 @@ _.GearSets =
 				["groups"] = {
 					i(170646),	-- Mountainsage Staff	*LA0207
 					i(170809),	-- Mountainsage Hood	*LA0207
-					un(NEVER_IMPLEMENTED, i(170640)),	-- Mountainsage Medallion
 					i(170812),	-- Mountainsage Shoulderpads	*LA0207
 					i(170645),	-- Mountainsage Cloak of Destruction	*LA0207
 					i(170811),	-- Mountainsage Robe	*LA0207
@@ -29,3 +28,38 @@ _.GearSets =
 		})),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10052, {	-- Battle for Azeroth
+		n(-5350, {	-- Class Trial Item Sets
+			n(-145, {	-- Mountainsage
+				["classes"] = { MAGE },
+				["groups"] = {
+					-- added 8.2.5/Confirmed
+					i(170640),	-- Mountainsage Medallion
+				},
+			}),
+		}),
+	}),
+	n(-10100, {	-- Shadowlands
+		n(-5350, {	-- Class Trial Item Sets
+			n(-145, {	-- Mountainsage
+				["classes"] = { MAGE },
+				["groups"] = {
+					-- added 9.0.1/No Info
+					i(177473),	-- Mountainsage Sandals
+					i(177474),	-- Mountainsage Handwraps
+					i(177476),	-- Mountainsage Leggings
+					i(177479),	-- Mountainsage Cord
+					i(177480),	-- Mountainsage Wristwraps
+					i(177336),	-- Mountainsage Band of Destruction
+					i(177337),	-- Mountainsage Ring of Destruction
+					i(177335),	-- Mountainsage Idol of Destruction
+					i(177338),	-- Mountainsage Stone of Destruction
+					i(177339),	-- Mountainsage Cloak of Destruction
+					i(177334),	-- Mountainsage Medallion
+					i(177340),	-- Mountainsage Staff
+				},
+			}),
+		}),
+	}),
+});

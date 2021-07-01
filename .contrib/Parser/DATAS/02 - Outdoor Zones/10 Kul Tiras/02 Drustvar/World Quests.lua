@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(876, { 	-- Kul'Tiras
+	m(876, {	-- Kul'Tiras
 		m(896, {	-- Drustvar
 			n(WORLD_QUESTS, {
 				n(QUESTS, {
@@ -125,7 +125,7 @@ _.Zones =
 						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
-					q(51612, { 	-- Azerite Empowerment
+					q(51612, {	-- Azerite Empowerment
 						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
@@ -221,7 +221,7 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
-					q(50369, { 	-- Bruin Potions (A)
+					q(50369, {	-- Bruin Potions (A)
 						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
@@ -252,12 +252,12 @@ _.Zones =
 						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
-					q(51706, { 	-- Deadwood
+					q(51706, {	-- Deadwood
 						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
-					q(51461, { 	-- Deathcap
+					q(51461, {	-- Deathcap
 						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
@@ -319,7 +319,7 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["requireSkill"] = HERBALISM,
 					}),
-					q(51658, { 	-- Fly the Coop!
+					q(51658, {	-- Fly the Coop!
 						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
@@ -554,7 +554,7 @@ _.Zones =
 						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
-					q(51906, { 	-- Sister Martha
+					q(51906, {	-- Sister Martha
 						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
@@ -563,7 +563,7 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
-					q(51431, { 	-- Soul Goliath
+					q(51431, {	-- Soul Goliath
 						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
@@ -605,15 +605,15 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
-					q(51970, { 	-- The Caterer
+					q(51970, {	-- The Caterer
 						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
-					q(55215, { 	-- The Cycle of Life
+					q(55215, {	-- The Cycle of Life
 						["lvl"] = { 50 },
 						["isWorldQuest"] = true,
 					}),
-					q(51690, { 	-- The Shadows of Corlain
+					q(51690, {	-- The Shadows of Corlain
 						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
@@ -640,7 +640,7 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
 					}),
-					q(51397, { 	-- Up In Your Drill
+					q(51397, {	-- Up In Your Drill
 						["lvl"] = { 50 },
 						["races"] = ALLIANCE_ONLY,
 						["isWorldQuest"] = true,
@@ -746,7 +746,7 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["requireSkill"] = ENGINEERING,
 						["g"] = {
-							i(162331), 	-- Schematic: F.R.I.E.D. [Rank 3]
+							i(162331),	-- Schematic: F.R.I.E.D. [Rank 3]
 						},
 					}),
 					q(52407, {	-- Work Order: Golden Beryl
@@ -793,7 +793,7 @@ _.Zones =
 						["isWorldQuest"] = true,
 						["requireSkill"] = ENGINEERING,
 						["g"] = {
-							i(162332), 	-- Schematic: Thermo-Accelerated Plague Spreader [Rank 3]
+							i(162332),	-- Schematic: Thermo-Accelerated Plague Spreader [Rank 3]
 						},
 					}),
 					q(54711, {	-- Zillie Wunderwrench and Grizzwald (Faction Assault WQ)

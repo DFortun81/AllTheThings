@@ -606,14 +606,14 @@ _.Craftables = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 				},
 			}),
 		}),
-		n(-322, { 	-- Cloak
+		n(-322, {	-- Cloak
 			i(33122, {	-- Cloak of Darkness
 				["timeline"] = {
 					"added 2.2.0.6983",
 				},
 			}),
 		}),
-		n(-44, { 	-- Leather
+		n(-44, {	-- Leather
 			i(29526, {	-- Primalstrike Belt
 				["timeline"] = {
 					"added 2.0.1.6180",
@@ -701,7 +701,7 @@ _.Craftables = { tier(2, applyclassicphase(TBC_PHASE_ONE, {	-- Burning Crusade
 			i(29504),	-- Windscale Hood
 			i(29507),	-- Windslayer Wraps
 		}),
-		n(-45, { 	-- Mail
+		n(-45, {	-- Mail
 			i(29516, {	-- Ebon Netherscale Belt
 				["timeline"] = {
 					"added 2.0.1.6180",

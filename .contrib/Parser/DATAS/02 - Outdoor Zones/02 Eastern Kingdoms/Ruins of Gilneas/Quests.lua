@@ -56,7 +56,7 @@ _.Zones =
 					["crs"] = { 45301, 46657 },	-- Korok the Colossus
 					["races"] = HORDE_ONLY,
 					["provider"] = { "i", 60956 },	-- Korok's Second Head
-					["sourceQuests"] = { 27290 }, 	-- To Forsaken Forward Command
+					["sourceQuests"] = { 27290 },	-- To Forsaken Forward Command
 					["description"] = "If Forward Commander Onslaught is dead, you can turn this quest in to |cFFFFD700Deathguard Podrig|r at |cFFFFD700The Sepulcher|r.",
 					["g"] = {
 						i(62867),	-- Belt of the Second Head

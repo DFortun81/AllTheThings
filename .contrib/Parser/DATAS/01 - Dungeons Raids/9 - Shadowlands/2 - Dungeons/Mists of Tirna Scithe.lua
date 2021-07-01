@@ -58,8 +58,8 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(178715),	-- Mistcaller Ocarina
 					},
 				}),
-				e(2405, {	-- 	Tred'ova
-					["crs"] = { 164517 },	-- 	Tred'ova
+				e(2405, {	--	Tred'ova
+					["crs"] = { 164517 },	--	Tred'ova
 					["g"] = {
 						ach(14371),	-- Mists of Tirna Scithe
 						i(182206),	-- Convocation of the Dead
@@ -127,8 +127,8 @@ _.Instances = { tier(9, {	-- Shadowlands
 							i(178715),	-- Mistcaller Ocarina
 						},
 					}),
-					e(2405, {	-- 	Tred'ova
-						["crs"] = { 164517 },	-- 	Tred'ova
+					e(2405, {	--	Tred'ova
+						["crs"] = { 164517 },	--	Tred'ova
 						["g"] = {
 							ach(14371),	-- Mists of Tirna Scithe
 							i(182206),	-- Convocation of the Dead
@@ -209,8 +209,8 @@ _.Instances = { tier(9, {	-- Shadowlands
 							i(178715),	-- Mistcaller Ocarina
 						},
 					}),
-					e(2405, {	-- 	Tred'ova
-						["crs"] = { 164517 },	-- 	Tred'ova
+					e(2405, {	--	Tred'ova
+						["crs"] = { 164517 },	--	Tred'ova
 						["g"] = {
 							ach(14413),	-- Mythic: Mists of Tirna Scithe
 							ach(14375),	-- Hunger for Knowledge

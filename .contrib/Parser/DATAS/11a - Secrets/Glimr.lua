@@ -4,7 +4,7 @@
 
 _.Secrets =
 {
-	n(169514, { 	-- Glimr
+	n(169514, {	-- Glimr
 		["g"] = {
 			q(60605, {	-- Glimmerfin Scale
 				--["provider"] = { "o", 352909 },  -- Glimmerfin Scale	-- Wowhead has this one, but it shows like a general bagsack in game

@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(37, {	-- Elwynn Forest
+		m(ELWYNN_FOREST, {
 			filter(101, {	-- Pet Battle
 				p(374, {	-- Black Lamb
 					["crs"] = { 60649 },	-- Black Lamb
@@ -61,31 +61,31 @@ _.Zones =
 				}),
 				q(31550, {	-- Got one!
 					["provider"] = { "n", 63014 },	-- Marcus Jensen
-					["coord"] = { 40.3, 66.0, 37 },
+					["coord"] = { 40.3, 66.0, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 31785,	-- Level Up!
 				}),
 				q(31693, {	-- Julia Stevens
 					["provider"] = { "n", 64330 },	-- Julia Stevens
-					["coord"] = { 41.6, 83.6, 37 },
+					["coord"] = { 41.6, 83.6, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(31308, {	-- Learning the Ropes
 					["provider"] = { "n", 63014 },	-- Marcus Jensen
-					["coord"] = { 40.3, 66.0, 37 },
+					["coord"] = { 40.3, 66.0, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "This quest is part of a chain initiated by learning Battle Pet Training.",
 				}),
 				q(31785, {	-- Level Up!
 					["provider"] = { "n", 63014 },	-- Marcus Jensen
-					["coord"] = { 40.3, 66.0, 37 },
+					["coord"] = { 40.3, 66.0, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 31309,	-- On The Mend
 				}),
 				q(31724, {	-- Old MacDonald
 					["provider"] = { "n", 64330 },	-- Julia Stevens
-					["coord"] = { 41.6, 83.6, 37 },
+					["coord"] = { 41.6, 83.6, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 31316,	-- Julia, The Pet Tamer
 					["g"] = {
@@ -94,7 +94,7 @@ _.Zones =
 				}),
 				q(31309, {	-- On The Mend
 					["provider"] = { "n", 63014 },	-- Marcus Jensen
-					["coord"] = { 40.3, 66.0, 37 },
+					["coord"] = { 40.3, 66.0, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 31308,	-- Learning the Ropes
 				}),

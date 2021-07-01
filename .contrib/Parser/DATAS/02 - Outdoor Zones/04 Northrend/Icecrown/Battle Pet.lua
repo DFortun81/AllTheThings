@@ -34,7 +34,7 @@ _.Zones =
 					["provider"] = { "n", 66675 },	-- Major Payne
 					["isBreadcrumb"] = true,
 				}),
-				q(31928, { 	-- Grand Master Payne
+				q(31928, {	-- Grand Master Payne
 					["coord"] = { 77.4, 19.6, 118 },
 					["provider"] = { "n", 66675 },	-- Major Payne
 					["g"] = {

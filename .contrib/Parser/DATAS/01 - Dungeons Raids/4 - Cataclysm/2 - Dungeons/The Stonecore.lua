@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = { tier(4, {	-- Cataclysm
-	inst(67, { 	-- The Stonecore
+	inst(67, {	-- The Stonecore
 		["lvl"] = 80,
 		["mapID"] = 324,
 		["groups"] = {

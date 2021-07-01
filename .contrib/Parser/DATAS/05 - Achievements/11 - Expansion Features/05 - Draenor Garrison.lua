@@ -331,7 +331,7 @@ _.Achievements =
 					crit(6),	-- Shadowmoon
 				}),
 			}),
-			ach(9543,  { 	-- Invasion? What Invasion? (50)
+			ach(9543,  {	-- Invasion? What Invasion? (50)
 				ach(9167),	-- Invasion Specialist (10)
 				ach(9152),	-- It's an Invasion! (1)
 			}),
@@ -403,9 +403,9 @@ _.Achievements =
 				crit(4),	-- Naval Bonus Expert
 				crit(5),	-- Naval Siege Expert
 			}),
-			ach(9147,  { 	-- Mission Specialist
+			ach(9147,  {	-- Mission Specialist
 				ach(9146),	-- Patrolling Mission Specialist
-				ach(9145), 	-- Treasure Mission Specialist
+				ach(9145),	-- Treasure Mission Specialist
 			}),
 			ach(9098,  {	-- Movin' On Up (Lvl 3)
 				ach(9099),	-- Time for an Upgrade (Lvl 2)
@@ -488,16 +488,16 @@ _.Achievements =
 			}),
 			ach(9204),		-- Ogre Invasion
 			ach(9140,  {	-- On A Metric Ton of Missions
-				ach(9133), 	-- On a Mission
-				ach(9134), 	-- On a Few Missions
-				ach(9138), 	-- On a Lot of Missions
-				ach(9139), 	-- On a Massive Numbeer of Missions
+				ach(9133),	-- On a Mission
+				ach(9134),	-- On a Few Missions
+				ach(9138),	-- On a Lot of Missions
+				ach(9139),	-- On a Massive Numbeer of Missions
 			}),
 			ach(9523,  {	-- Patrolling Draenor
 				["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 				["g"] = {
 					i(111971),	-- Barracks, Level 3 (Garrison Blueprint)
-					ach(9146), 	-- Patrolling Mission Specialist
+					ach(9146),	-- Patrolling Mission Specialist
 				},
 			}),
 			ach(9826,  {	-- Platinum Defender
@@ -585,9 +585,9 @@ _.Achievements =
 					i(111981),	-- Gladiator's Sanctum, Level 3 (Garrison Blueprint)
 				},
 			}),
-			ach(9143,  { 	-- The Rarer the Better
-				ach(9142), 	-- Keeping It Rare
-				ach(9141), 	-- A Rare Mission
+			ach(9143,  {	-- The Rarer the Better
+				ach(9142),	-- Keeping It Rare
+				ach(9141),	-- A Rare Mission
 			}),
 			ach(9540,  {	-- The Stable Master (A)
 				["races"] = ALLIANCE_ONLY,
@@ -625,14 +625,14 @@ _.Achievements =
 				}),
 				ach(9450),	-- The Trap Game (50)
 			}),
-			ach(9524,  { 	-- Treasure Master
-				ach(9145), 	-- Treasure Mission Specialist
+			ach(9524,  {	-- Treasure Master
+				ach(9145),	-- Treasure Mission Specialist
 			}),
 			ach(9429,  {	-- Upgrading the Mill
 				["description"] = "Unlocks the ability to purchase the blueprint from Blueprints Vendors.",
 				["g"] = {
 					i(109255),	-- Lumber Mill, Level 3 (Garrison Blueprint)
-					crit(1), 	-- Place 75 Work Order at the Lumber Mill
+					crit(1),	-- Place 75 Work Order at the Lumber Mill
 					crit(2),	-- Legacy of the Ancients
 					crit(3),	-- Reduction in Force
 				},

@@ -354,10 +354,10 @@ _.Zones =
 					["g"] = {
 						i(112623, {	-- Pack of Fishing Supplies
 							i(34834),	-- Recipe: Captain Rumsey's Lager
-							i(33820), 	-- Weather-Beaten Fishing Hat
+							i(33820),	-- Weather-Beaten Fishing Hat
 							i(44983),	-- Strand Crawler Pet
-							i(45991), 	-- Bone Fishing Pole
-							i(45992), 	-- Jeweled Fishing Pole
+							i(45991),	-- Bone Fishing Pole
+							i(45992),	-- Jeweled Fishing Pole
 						}),
 					},
 				}),
