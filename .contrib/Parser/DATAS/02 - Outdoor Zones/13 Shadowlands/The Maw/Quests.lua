@@ -175,6 +175,9 @@ _.Zones =
 							n(177330, {	-- Promathiz
 								i(186007),	-- Cudgel of the Tin Sentinel
 							}),
+							n(177331, {	-- Sentinel Pyrophus
+								i(186219),	-- Pyrophus' Wrist Ties
+							}),
 							n(178883, {	-- Sentinel Shakorzeth
 								i(186244),	-- Shakorzeth's Gorget
 							}),
