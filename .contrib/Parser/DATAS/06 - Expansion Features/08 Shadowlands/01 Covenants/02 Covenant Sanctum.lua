@@ -110,6 +110,8 @@ _.ExpansionFeatures =
 						i(184645),	-- Hero's Skinning Cache
 						i(184644),	-- Hero's Tailoring Cache
 						i(181468),	-- Veiled Augment Rune
+						-- Gear
+						i(185854),	-- Stone-Etched Shawl
 					},
 				}),
 				n(-901, {	-- Covenant Callings
