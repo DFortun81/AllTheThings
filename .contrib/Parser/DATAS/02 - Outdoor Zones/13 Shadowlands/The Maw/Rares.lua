@@ -352,7 +352,6 @@ _.Zones =
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 						i(186659),	-- Fallen Charger (MOUNT!)
-						i(186042),	-- Forsaken Crusader's Blade
 					},
 				}),
 				n(172523, {	-- Houndmaster Vasanok
@@ -769,3 +768,11 @@ _.HiddenQuestTriggers = {
 	q(59441),	-- Soulsmith Yol-Mattar bonus objective
 	q(61728),	-- Valis bonus objective
 };
+
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10100, {	-- Shadowlands
+		n(-319, {	-- Weapons
+			i(186042),	-- Forsaken Crusader's Blade (PTR Only)
+		}),
+	}),
+});
