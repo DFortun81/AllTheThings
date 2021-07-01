@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(876, {	-- Kul'Tiras
-		m(1462, {	-- Mechagon
+		m(MECHAGON, {
 			n(-161, {	-- Toys
 				i(122293, {	-- Trans-Dimensional Bird Whistle
 					["collectible"] = false,

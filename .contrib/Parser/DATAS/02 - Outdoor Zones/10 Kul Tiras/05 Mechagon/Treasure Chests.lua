@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(876, {	-- Kul'Tiras
-		m(1462, {	-- Mechagon
+		m(MECHAGON, {
 			n(TREASURES, {
 				n(-851, {	-- Irontide Lockbox
 					["coords"] = {		-- Coords need verification as they were just taken from wowhead

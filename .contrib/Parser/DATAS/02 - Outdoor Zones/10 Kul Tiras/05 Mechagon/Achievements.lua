@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(876, {	-- Kul'Tiras
-		m(1462, {	-- Mechagon
+		m(MECHAGON, {
 			n(ACHIEVEMENTS, {
 				ach(13473, {	-- Diversed Investments
 					crit(1),	-- Flame Turret

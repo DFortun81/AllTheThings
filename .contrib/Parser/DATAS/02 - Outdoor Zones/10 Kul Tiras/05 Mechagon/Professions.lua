@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(876, {	-- Kul'Tiras
-		m(1462, {	-- Mechagon
+		m(MECHAGON, {
 			n(-38, {	-- Professions
 				prof(FISHING, {
 					i(167661, {	-- Energized Lightning Cod

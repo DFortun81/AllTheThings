@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(876, {	-- Kul'Tiras
-		m(1462, {	-- Mechagon
+		m(MECHAGON, {
 			n(VENDORS, {
 				n(152321, {	-- Cork Stuttguard
 					["coord"] = { 63.3, 42.9, MECHAGON },

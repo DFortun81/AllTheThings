@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(876, {	-- Kul'Tiras
-		m(1462, {	-- Mechagon
+		m(MECHAGON, {
 			n(-34,  {	-- World Quests
 				q(56396, {	-- Creakclank
 					["isWorldQuest"] = true,
