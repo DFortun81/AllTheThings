@@ -1266,10 +1266,7 @@ local function VerifySourceID(item)
 	return true;
 end
 local function GetSourceID(itemLink)
-	--[[ 9.1 TEST ]
-	IsDressableItem = C_Item.IsDressableItemByID;
-	--]]
-	if IsDressableItem(itemLink) then
+	if C_Item.IsDressableItemByID(itemLink) then
 		-- Updated function courtesy of CanIMogIt, Thanks AmiYuy and Team! :D
 		local sourceID = select(2, C_TransmogCollection.GetItemInfo(itemLink));
 		if sourceID then return sourceID, true; end
