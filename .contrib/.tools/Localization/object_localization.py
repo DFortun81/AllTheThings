@@ -35,6 +35,9 @@ def get_localized_obj_name(obj_id, lang_code="en", game_flavor="retail"):
     if "notFound" in page.url:
         logging.warning(f"Can't find {obj_id} at {URL}!")
         return ""
+    if "ptr" in page.url:
+        logging.warning(f"{URL} redirects to {URL.replace(lang_code, 'ptr')}")
+        return ""
     soup = BeautifulSoup(page.content, "html.parser")
     heading = soup.find("h1", class_="heading-size-1")
     if heading is None:
