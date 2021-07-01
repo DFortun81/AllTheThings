@@ -2889,7 +2889,7 @@ for key,value in pairs({
 	--TODO: [356728] = "Mikanikos' Extravagant Tribute",	-- Mikanikos' Extravagant Tribute
 	[356733] = "Tributo Extravagante de Kleia e Pelagos",	-- Kleia and Pelagos' Extravagant Tribute
 	[356737] = "Tributo Extravagante de Sika",	-- Sika's Extravagant Tribute
-	--TODO: [356741] = "The Countess' Extravagant Tribute",	-- The Countess' Extravagant Tribute
+	[356741] = "Tributo Extravagante da Condessa",	-- The Countess' Extravagant Tribute
 	[356744] = "Tributo Extravagante de Rasgão e Cara-de-clava",	-- Rendle and Cudgelface's Extravagant Tribute
 	[356748] = "Tributo Extravagante de Cabeça-de-pedra",	-- Stonehead's Extravagant Tribute
 	[356752] = "Tributo Extravagante do Guardião da Cripta Kassir",	-- Cryptkeeper Kassir's Extravagant Tribute
