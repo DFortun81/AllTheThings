@@ -322,6 +322,7 @@ _.Zones =
 							["questID"] = 63918,	-- Obelisk of Dark Tidings
 						}),
 						i(187387),	-- Pauldrons of the Unknown Beyond
+						i(187368),	-- Xyraxz's Controlling Rod
 					},
 				}),
 				n(179802, {	-- Yarxhov the Pillager
