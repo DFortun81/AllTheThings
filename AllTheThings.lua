@@ -3996,6 +3996,7 @@ app.BuildSourceParent = function(group)
 			or parent.key == "itemID"
 			or parent.key == "s"
 			or parent.key == "questID"
+			or parent.key == "objectID"
 			or parent.key == "encounterID")
 			-- TODO: maybe handle mapID in a different way as a fallback for things nested under headers within a zone....?
 		and parent[parent.key] then

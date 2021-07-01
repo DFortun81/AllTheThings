@@ -432,6 +432,7 @@ settings.CreateCheckBox = function(self, text, OnRefresh, OnClick)
 	-- TODO: wtb dynamic width back pls blizzard wtf
 	-- default is 275 now, crazy
 	cb.Text:SetWidth(150);
+	-- TODO: the hit rect insets is also weird in 9.1
 	cb:SetHitRectInsets(0,0 - cb.Text:GetWidth(),0,0);
 	return cb;
 end

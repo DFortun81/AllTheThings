@@ -28,6 +28,18 @@ _.Zones =
 				pet(3124, {	-- Vile Deathroach
 					["cr"] = 179227,	-- Vile Deathroach
 				}),
+				i(186188, {	-- Lil'Abom (PET!)
+				--	originally was not on PTR, then showed up during necrolord assault.  then was up without assault, the necrolord assault came back and pet parts all disappeared.  so i'm really not sure what the fuck the criteria are for seeing/looting these objects lol.  there is an assault quest that requires you to help build abominations so it may be tied to that, but it wasn't up last time the NL assault was active so i'm not sure
+				--	currently up on live during the Night Fae assault................ i hate this game
+					["description"] = "What controls the availability of parts is currently unknown.  They appear to spawn in Perdition Hold and the surrounding area, next to dead Prime Guards.  If you cannot find parts at any of the provided coordinates, try using |cFFFFFFFF/tar Prime Guard|r.",
+					["cost"] = {
+						{ "i", 186183, 1 },	-- Lil'Abom Head
+						{ "i", 186185, 1 },	-- Lil'Abom Legs
+						{ "i", 186186, 1 },	-- Lil'Abom Right Hand
+						{ "i", 186187, 1 },	-- Lil'Abom Spare Arm
+						{ "i", 186184, 1 },	-- Lil'Abom Torso
+					},
+				}),
 			}),
 		}),
 	}),

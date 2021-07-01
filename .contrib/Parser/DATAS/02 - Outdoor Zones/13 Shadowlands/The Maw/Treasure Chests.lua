@@ -131,6 +131,58 @@ _.Zones =
 						}),
 					},
 				}),
+				o(368666, {	-- Lil'Abom's Head
+					["questID"] = 64010,
+					["isDaily"] = true,
+					["coords"] = {
+						{ 27.4, 56.6, THE_MAW },
+						{ 30.3, 63.3, THE_MAW },
+						{ 32.1, 56.0, THE_MAW },
+					},
+					["g"] = {
+						i(186183),	-- Lil'Abom Head
+					},
+				}),
+				o(368663, {	-- Lil'Abom's Right Hand
+					["description"] = "At the back of the cave, behind a rock on the left side.",
+					["questID"] = 64008,
+					["isDaily"] = true,
+					["coord"] = { 38.5, 58.5, THE_MAW },
+					["g"] = {
+						i(186186),	-- Lil'Abom Right Hand
+					},
+				}),
+				o(368665, {	-- Lil'Abom's Spare Arm
+					["questID"] = 64009,
+					["isDaily"] = true,
+					["coords"] = {
+						{ 33.3, 65.8, THE_MAW },
+						{ 39.2, 66.5, THE_MAW },
+					},
+					["g"] = {
+						i(186187),	-- Lil'Abom Spare Arm
+					},
+				}),
+				o(368667, {	-- Lil'Abom's Torso
+					["questID"] = 64011,
+					["isDaily"] = true,
+					["coords"] = {
+						{ 36.4, 64.4, THE_MAW },
+						{ 36.9, 67.4, THE_MAW },
+						{ 39.9, 62.6, THE_MAW },
+					},
+					["g"] = {
+						i(186184),	-- Lil'Abom Torso
+					},
+				}),
+				o(368668, {	-- Lil'Abom's Trunk
+					["questID"] = 64013,
+					["isDaily"] = true,
+					["coord"] = { 29.4, 67.2, THE_MAW },
+					["g"] = {
+						i(186185),	-- Lil'Abom Legs
+					},
+				}),
 			}),
 		}),
 	}),
