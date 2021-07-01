@@ -121,6 +121,12 @@ _.Zones =
 					["provider"] = { "n", 177202 },	-- Ve'nari
 					["coord"] = { 58.3, 14.3, KORTHIA },
 				}),
+				q(64511, {	-- Missing Relics
+					["sourceQuests"] = { 64506 },	-- What Must Be Found
+					["description"] = "Requires Tier 2 Research.",
+					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+					["coord"] = { 62.7, 22.5, KORTHIA },
+				}),
 				q(64561, {	-- Observational Records (intro version)
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance (must be on quest)
 					["provider"] = { "n", 178844 },	-- Ta'nasi
@@ -168,6 +174,11 @@ _.Zones =
 					["provider"] = { "n", 179216 },	-- Mikanikos
 					["isDaily"] = true,
 					["coord"] = { 61.4, 23.2, KORTHIA },
+				}),
+				q(64506, {	-- What Must Be Found
+					["sourceQuests"] = { 63861 },	-- Beginning the Collection
+					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+					["coord"] = { 62.6, 22.5, KORTHIA },
 				}),
 				q(63994, {	-- Who is the Maw Walker?
 					["sourceQuests"] = { 63663 },	-- Korthia, the City of Secrets
@@ -227,8 +238,11 @@ _.Zones =
 					["sourceQuests"] = { 64506 },	-- What Must Be Found
 					["description"] = "The item that starts this quest and the Rune Chits themselves can drop from the daily Korthian treasure chests.",
 					["provider"] = { "i", 187055 },	-- Pouch of Rune Chits
-					["cost"] = { { "i", 185962, 20 } },	-- 20x Rune Chit
+				--	["cost"] = { { "i", 185962, 20 } },	-- 20x Rune Chit
 					["g"] = {
+						objective(1, {    -- 0/20 Rune Chits
+							["cost"] = { { "i", 185962, 20 } },    -- 20x Rune Chit
+						}),
 						i(187154),	-- Ancient Korthian Runes (TOY!)
 					},
 				}),
@@ -309,16 +323,6 @@ _.Zones =
 					--	not sure if the quests are the prerequisite, the research, or both.  fragment turn-ins are SUPER janky atm on PTR so i can't test trying to get the rep without turning in any reliquaries
 						63915,	-- Drum of Driving
 						63917,	-- Everliving Statuette
-					},
-					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
-					["coord"] = { 62.7, 22.5, KORTHIA },
-				}),
-				q(64511, {	-- Missing Relics
-					["sourceQuests"] = {	-- TODO: not sure if the prereq is these quests (contextually it makes sense) or Tier 2 research, or both.  i had also picked up, but not finished, 63892, "Diviner's Rune Chits."  these 5 are the first set of research that he directed me to collect, so at least having discovered the diviner's rune chits quest may also be required
-						63899,	-- Book of Binding: The Mad Witch
-						63912,	-- Celestial Shadowlands Chart
-						63911,	-- Singing Steel Ingot
-						63860,	-- Talisman of the Eternal Scholar
 					},
 					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 					["coord"] = { 62.7, 22.5, KORTHIA },
@@ -458,11 +462,6 @@ _.Zones =
 					["sourceQuests"] = { 63703 },	-- Vault of Secrets
 					["provider"] = { "n", 177423 },	-- Tal-Galan
 					["coord"] = { 57.4, 29.9, KORTHIA },
-				}),
-				q(64506, {	-- What Must Be Found
-					["sourceQuests"] = { 63861 },	-- Beginning the Collection
-					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
-					["coord"] = { 62.6, 22.5, KORTHIA },
 				}),
 
 				-- Korthia Daily

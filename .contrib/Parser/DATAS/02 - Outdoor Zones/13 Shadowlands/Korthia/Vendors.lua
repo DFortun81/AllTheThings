@@ -97,7 +97,6 @@ _.Zones =
 				n(179321, {	-- Duchess Mynx <Death's Advance Quartermaster>
 					["coord"] = { 63.5, 23.3, KORTHIA },
 					["g"] = {
-					--	TODO: venthyr has two "Renathal's ..." ensembles but the other covenants i've checked only have 1.  unsure if the second ensemble is unlocked after doing something specific or if venthyr just get 2 for some reason?
 						i(186647, {	-- Amber Shardhide (MOUNT!)
 							["cost"] = { { "c", 1767, 5000 } },	-- 5,000x Stygia
 						}),
@@ -319,9 +318,11 @@ _.Zones =
 							},
 						}),
 						--
+						--[[ not visible on the vendor on second day of live at neutral rep - uncomment if visibility is based on rep/other factors
 						i(187410, {	-- Death's Advance Battlefield Drape
 							["cost"] = { { "c", 1767, 500 } },	-- 500x Stygia
 						}),
+						--]]
 						i(186543, {	-- Domestic Aunian (PET!)
 							["cost"] = {
 								{ "i", 163036, 50 },	-- 50x Polished Pet Charm

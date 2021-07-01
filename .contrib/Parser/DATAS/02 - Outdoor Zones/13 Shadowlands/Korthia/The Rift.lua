@@ -58,6 +58,7 @@ _.Zones =
 							["questID"] = 64456,
 							["isDaily"] = true,
 							["coords"] = {
+								{ 33.4, 39.3, KORTHIA },
 								{ 37.9, 35.8, KORTHIA },
 								{ 39.8, 42.9, KORTHIA },
 							},
@@ -87,6 +88,7 @@ _.Zones =
 							["questID"] = 64472,
 							["isDaily"] = true,
 							["coords"] = {
+								{ 46.1, 31.9, KORTHIA },
 								{ 56.3, 18.4, KORTHIA },
 								{ 64.3, 30.3, KORTHIA },
 							},

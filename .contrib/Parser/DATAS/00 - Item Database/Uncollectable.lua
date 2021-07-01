@@ -246,6 +246,7 @@ i(169391);	-- Bubble-eyed Rolly
 i(169292);	-- Charged Scale of the Blue Aspect
 i(146694);	-- Chipped Felsong Mantle
 i(163212);	-- Cleansing Thurible
+i(185916);	-- Codex of Memories
 i(146686);	-- Colorless Shroud of Xavius
 i(183042);	-- Colossal Power Core
 i(169235);	-- Confusing Spring Box

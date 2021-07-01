@@ -4,6 +4,15 @@ profession(INSCRIPTION, {
 			["categoryID"] = 1406,	-- Shadowlands Inscription
 			["g"] = {
 				{
+					["categoryID"] = 1410,	-- Contracts
+					["g"] = {
+						{
+							["recipeID"] = 354000,
+							["name"] = "Contract: Death's Advance",
+						},
+					},
+				},
+				{
 					-- All Quest Recipes marked unobtainable(training) because they are only learned temporarily
 					-- for world quests then disappear from the spellbook after the quest is completed.
 					["categoryID"] = 1529,	-- Quest Recipes
