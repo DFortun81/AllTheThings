@@ -900,6 +900,19 @@ _.Zones =
 		}),
 	}),
 };
+_.HiddenQuestTriggers = {
+	q(62907),	-- triggered after collecting all stygia during "Rule 1: Have an Escape Plan" (triggers dialogue from The Jailer + the Eye of the Jailer counter...thing)
+	q(64107),	-- triggered when killing Algel the Haunter
+	q(64695),	-- triggered when killing Algel the Haunter / Gruukuuek the Elder
+	q(64698),	-- triggered when killing Intercessor Razzra
+	q(64118),	-- triggered when killing Manifestation of Pain
+	q(64692),	-- triggered when killing Manifestation of Pain
+	q(64696),	-- triggered when killing Promathiz / Sentinel Shakorzeth
+	q(64697),	-- triggered when killing Malleus Grakizz / Sentinel Shakorzeth
+	q(64693),	-- triggered when killing Manifestation of Pain
+	q(64121),	-- triggered when killing Sentinel Shakorzeth (somehow it + Kazj the Sentinel were both up at once, this was only after killing Shakorzeth, and then Kazj did not trigger an additional questID at all)
+	q(64697),	-- triggered when killing Versya the Damned
+};
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(60902),	-- A Dark Song
@@ -946,17 +959,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(61736),	-- Stolen Away
 		q(61737),	-- Stolen Away
 		q(61391),	-- The Eye of the Jailer
-		q(62907),	-- triggered after collecting all stygia during "Rule 1: Have an Escape Plan" (triggers dialogue from The Jailer + the Eye of the Jailer counter...thing)
-		q(64107),	-- triggered when killing Algel the Haunter
-		q(64695),	-- triggered when killing Algel the Haunter / Gruukuuek the Elder
-		q(64698),	-- triggered when killing Intercessor Razzra
-		q(64118),	-- triggered when killing Manifestation of Pain
-		q(64692),	-- triggered when killing Manifestation of Pain
-		q(64696),	-- triggered when killing Promathiz / Sentinel Shakorzeth
-		q(64697),	-- triggered when killing Malleus Grakizz / Sentinel Shakorzeth
-		q(64693),	-- triggered when killing Manifestation of Pain
-		q(64121),	-- triggered when killing Sentinel Shakorzeth (somehow it + Kazj the Sentinel were both up at once, this was only after killing Shakorzeth, and then Kazj did not trigger an additional questID at all)
-		q(64697),	-- triggered when killing Versya the Damned
 		q(60137),	-- The Fractured Chambers
 	}),
 });
