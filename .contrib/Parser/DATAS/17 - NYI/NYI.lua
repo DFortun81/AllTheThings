@@ -23,6 +23,66 @@ _.NeverImplemented =
 		["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.",
 	}),
 	tier(9,	{	-- Shadowlands -- Items that might get added after 9.0.5. If you are sure the item won't be added, please put it into the correct section
+		
+		-- Possibly WoW's 17th Anniversary
+		i(186459),	-- Archaic Charm of Presence
+		i(186460),	-- Anger-Spark Gloves
+		i(186461),	-- Gilded Trousers of Benediction
+		i(186462),	-- Black-Iron Battlecloak
+		i(186463),	-- Terrorweave Tunic
+		i(186475),	-- Hellstiched Mantle
+		i(186464),	-- Fathom-Helm of the Deeps
+		i(186481),	-- Darkcrest Waistguard
+		i(186465),	-- Faceguard of the Endless Watch
+		i(186484),	-- Voidforged Greaves
+		i(186466),	-- Ethereum Nexus-Reaver
+		i(186467),	-- Barrel-Blade Longrifle
+		i(186468),	-- Talon of the Tempest
+		i(186469),	-- Illidari Doomhawk (MOUNT!)
+		i(186506),	-- Akama's Edge
+		-- Possibly Timewalking Legion
+		cl(DEATHKNIGHT, {
+			i(180553),	-- Dreadwake Bonecage
+			i(180554),	-- Dreadwake Legplates
+			i(180555),	-- Dreadwake Pauldrons
+		}),
+		cl(DEMONHUNTER, {
+			i(180615),	-- Tunic of Second Sight
+			i(180616),	-- Legwraps of Second Sight
+			i(180617),	-- Shoulderguards of Second Sight
+		}),
+		cl(MONK, {
+			i(180562),	-- Tunic of Enveloped Dissonance
+			i(180563),	-- Leggings of Enveloped Dissonance
+			i(180564),	-- Pauldrons of Enveloped 
+		}),
+		cl(PALADIN, {
+			i(180535),	-- Breastplate of the Highlord
+			i(180540),	-- Light's Vanguard Breastplate
+			i(180541),	-- Light's Vanguard Legplates
+			i(180542),	-- Light's Vanguard Shoulderplates
+		}),
+		cl(ROGUE, {
+			i(180556),	-- Doomblade Tunic
+			i(180557),	-- Doomblade Pants
+			i(180558),	-- Doomblade Spaulders
+		}),
+		i(180537),	-- Eredar Warcouncil Sabatons
+		i(180538),	-- Nathrezim Battle Girdle
+		i(180539),	-- Vambraces of Life's Assurance
+		i(180550),	-- Doomwalker Warboots
+		i(180551),	-- Flamelicked Girdle
+		i(180552),	-- Wristguards of the Dark Keepers
+		i(180559),	-- Boots of Endless Betrayal
+		i(180560),	-- Girdle of Nefarious Strategy
+		i(180561),	-- Bracers of Impossible Choices
+		i(180565),	-- Lifeless Buckled Girdle
+		i(180566),	-- Well-Flattened Wristguards
+		i(180567),	-- Stutterstep Treads
+		i(180618),	-- Stained Maggot Squishers
+		i(180619),	-- Wristwraps of Broken Trust
+		i(180620),	-- High Shadow Councilor's Wrap
+		--
 		i(180491),	-- Wingdancer's Spire
 		-- Mounts
 		i(182083),	-- Bonecleaver's Skullboar
@@ -33,7 +93,6 @@ _.NeverImplemented =
 		i(175942),	-- Spiritual Alchemy Stone (171323 is the version in game)
 		i(175943),	-- Spiritual Alchemy Stone (171323 is the version in game)
 		i(179775),	-- Conservator's Leather Tunic (reported as not being awarded from ensemble 184112)
-		i(179660),	-- Winterborn Tunic (reported as not being awarded from ensemble 184114)
 		-- Pets
 		i(180838),	-- Blue Etherwyrm (Wild Etherwyrm is the equivalent wild pet in game, item was never used)
 		i(180837),	-- Blue Glimmerfly (Fluttering Glimmerfly is the equivalent wild pet in game, item was never used)
