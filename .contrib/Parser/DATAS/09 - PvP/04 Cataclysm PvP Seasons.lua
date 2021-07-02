@@ -4385,7 +4385,24 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(60610),	-- Vicious Gladiator's Boots of Dominance
 			}),
 			f(51, {	-- Neck
+				i(60660),	-- Vicious Gladiator's Pendant of Dominance
+				i(60663),	-- Vicious Gladiator's Pendant of Dominance
+				i(60665),	-- Vicious Gladiator's Pendant of Conquest
 				i(60666),	-- Vicious Gladiator's Pendant of Conquest
+				i(60667),	-- Vicious Gladiator's Pendant of Conquest
+				i(60671),	-- Vicious Gladiator's Pendant of Victory
+				i(60672),	-- Vicious Gladiator's Pendant of Victory
+				i(60674),	-- Vicious Gladiator's Pendant of Victory
+			}),
+			f(52, {	-- Finger
+				i(60646),	-- Vicious Gladiator's Band of Dominance
+				i(60648),	-- Vicious Gladiator's Band of Dominance
+				i(60652),	-- Vicious Gladiator's Band of Triumph
+				i(60653),	-- Vicious Gladiator's Band of Triumph
+				i(60654),	-- Vicious Gladiator's Band of Triumph
+				i(60655),	-- Vicious Gladiator's Band of Triumph
+				i(60656),	-- Vicious Gladiator's Band of Triumph
+				i(60657),	-- Vicious Gladiator's Band of Triumph
 			}),
 		}),
 		n(-673, {	-- Ruthless Gladiator: Season 10

@@ -635,5 +635,8 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		prof(LEATHERWORKING, {
 			i(38378)	-- Wyrmscale Leg Armor
 		}),
+		prof(ENGINEERING, {
+			i(48945),	-- Gnomish Thinking Cap (Mind Amplification Disk was added for it)
+		}),
 	}),
 });

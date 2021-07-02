@@ -2800,3 +2800,12 @@ _.Zones =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10002, {	-- Classic
+		n(-163, {	-- Armor
+			f(51,	{	-- Neck
+				i(49314),	-- Sparkling Onyxia Tooth Pendant
+			}),
+		}),
+	}),
+});

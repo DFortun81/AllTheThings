@@ -522,3 +522,11 @@ _.ExpansionFeatures =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10052, {	-- Battle for Azeroth
+		n(-3338, {	-- Island Expeditions
+			i(163922),	-- Used for a toy, you never can get the actual item
+			i(163923),	-- Used for a toy, you never can get the actual item
+		}),
+	}),
+});

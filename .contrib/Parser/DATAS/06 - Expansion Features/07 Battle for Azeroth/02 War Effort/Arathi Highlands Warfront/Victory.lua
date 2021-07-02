@@ -125,3 +125,86 @@ _.ExpansionFeatures =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10052, {	-- Battle for Azeroth
+		n(-10057, {	-- War Effort
+			n(-163, {	-- Armor
+				n(-43, {	-- Cloth
+					i(163269),	-- 7th Legionnaire's Mantle
+					i(163340),	-- 7th Legionnaire's Circlet
+					i(163343),	-- 7th Legionnaire's Sash
+					i(163425),	-- Honorbound Artificer's Mantle
+					i(163427),	-- Honorbound Artificer's Skullcap
+					i(163431),	-- Honorbound Artificer's Sash
+				}),
+				n(-44, {	-- Leather
+					i(163378),	-- 7th Legionnaire's Shoulderpads
+					i(163379),	-- 7th Legionnaire's Pants
+					i(163381),	-- 7th Legionnaire's Mask
+					i(163382),	-- 7th Legionnaire's Tunic
+					i(163385),	-- 7th Legionnaire's Belt
+					i(163433),	-- Honorbound Outrider's Mantle
+					i(163436),	-- Honorbound Outrider's Faceguard
+					i(163440),	-- Honorbound Outrider's Belt
+				}),
+				n(-45, {	-- Mail
+					i(163286),	-- Honorbound Vanguard's Footguards
+					i(163291),	-- Honorbound Vanguard's Strikers
+					i(163293),	-- Honorbound Vanguard's Warhelm
+					i(163297),	-- Honorbound Vanguard's Legguards
+					i(163302),	-- Honorbound Vanguard's Spaulders
+					i(163304),	-- Honorbound Vanguard's Waistcord
+					i(163392),	-- 7th Legionnaire's Vestments
+					i(163393),	-- 7th Legionnaire's Raiment
+					i(163443),	-- Honorbound Vanguard's Vestments
+					i(163450),	-- Honorbound Vanguard's Raiment
+					i(163396),	-- 7th Legionnaire's Skullcap
+					i(163390),	-- 7th Legionnaire's Spaulders
+					i(163402),	-- 7th Legionnaire's Chain Belt
+					i(163447),	-- Honorbound Vanguard's Helm
+					i(163442),	-- Honorbound Vanguard's Pauldrons
+					i(163452),	-- Honorbound Vanguard's Chain Belt
+				}),
+				n(-46, {	-- Plate
+					i(163406),	-- 7th Legionnaire's Shoulderplates
+					i(163408),	-- 7th Legionnaire's Legplates
+					i(163412),	-- 7th Legionnaire's Helmet
+					i(163413),	-- 7th Legionnaire's Strikers
+					i(163420),	-- 7th Legionnaire's Stompers
+					i(163423),	-- 7th Legionnaire's Girdle
+					i(163454),	-- Honorbound Centurion's Pauldrons
+					i(163457),	-- Honorbound Centurion's Helmet
+					i(163462),	-- Honorbound Centurion's Girdle
+				}),
+				n(-322, {	-- Cloaks
+					i(163245),	-- 7th Legionnaire's Satin Cloak
+					i(163311),	-- 7th Legionnaire's Shroud
+					i(163312),	-- 7th Legionnaire's Shawl
+					i(163416),	-- 7th Legionnaire's Drape
+					i(163344),	-- 7th Legionnarie's Cape
+					i(163345),	-- 7th Legionnarie's Leather Drape
+					i(163346),	-- Warfront Gear Drape
+					i(163348),	-- Warfront Gear Cloak
+					i(163349),	-- 7th Legionnaire's Chain Cloak
+					i(163350),	-- 7th Legionnaire's Cloak
+					i(163352),	-- 7th Legionnaire's Steel Cloak
+					i(163354),	-- 7th Legionnaire's War Cloak
+					i(163353),	-- 7th Legionnarie's Greatcloak
+					i(163356),	-- Honorbound Artificier Drape (different version used with locked to specific classes)
+					i(163358),	-- Honorbound Artificier greatcloak (different version used with locked to specific classes)
+					i(163359),	-- Warfront Gear Cape
+					i(163361),	-- Honorbound outrider greatcloak (different version used with locked to specific classes)
+					i(163362),	-- Honorbound outrider cloak  (different version used with locked to specific classes)
+					i(163363),	-- Warfront Gear Cape
+					i(163364),	-- Warfront Gear Cloak
+					i(163365),	-- Honorbound vanguard greatcloak (different version used with locked to specific classes)
+					i(163367),	-- Honorbound vanguard long cloak (different version used with locked to specific classes)
+					i(163369),	-- Honorbound Centurion's Greatcloak
+					i(163370),	-- Warfront Gear Drape
+					i(163371),	-- Honorbound Centurions Cloak
+					i(163415),	-- 7th Legionnarie's Iron Cloak
+				}),
+			}),
+		}),
+	}),
+});

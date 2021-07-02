@@ -713,3 +713,10 @@ _.Holidays = bubbleDown({["u"] = 26},
 		}),
 	}),
 });
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	holiday(235462, {	-- Hallow's End
+		i(33957),	-- Witches Band (unused version)
+		i(33958),	-- The Horseman's Signet Ring (unused version)
+		i(33959),	-- Ring of Ghoulish Delight (unused version)
+	}),
+});

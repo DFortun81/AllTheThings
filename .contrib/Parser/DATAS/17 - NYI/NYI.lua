@@ -238,14 +238,6 @@ _.NeverImplemented =
 			i(114275),	-- Firefly Cord
 			-- Legion
 			i(153289),	-- Eredar Priestess' Tunic
-			-- BFA
-			-- War Effort?
-			i(163269),	-- 7th Legionnaire's Mantle
-			i(163340),	-- 7th Legionnaire's Circlet
-			i(163343),	-- 7th Legionnaire's Sash
-			i(163425),	-- Honorbound Artificer's Mantle
-			i(163427),	-- Honorbound Artificer's Skullcap
-			i(163431),	-- Honorbound Artificer's Sash
 			-- ItemID/Retrieving
 			-- Vanilla
 			i(4989),	-- Mage Dragon Robe (intended to be quest reward, never made it to live?)
@@ -325,6 +317,15 @@ _.NeverImplemented =
 			i(159170),	-- Freehold Handwraps
 			i(159183),	-- Foxhollow Cord
 			i(159190),	-- Foxhollow Bracelets
+			i(159216),	-- Sagehold Sash
+			i(159221),	-- Sagehold Slippers
+			i(154866),	-- Heartsbane Cord
+			i(154867),	-- Heartsbane Crown
+			i(154868),	-- Heartsbane Gloves
+			i(154869),	-- Heartsbane Leggings
+			i(154870),	-- Heartsbane Robes
+			i(154871),	-- Heartsbane Sandals
+			i(154873),	-- Heartsbane Cuffs
 			-- Testing 8.2.0
 			i(167111),	-- QA Combat Test Caster Belt 1
 			i(167112),	-- QA Combat Test Caster Robes 1
@@ -374,16 +375,6 @@ _.NeverImplemented =
 			i(114268),	-- Bloodthorn Legguards
 			i(114272),	-- Bloodthorn Spaulders
 			i(114276),	-- Bloodthorn Belt
-			-- BFA
-			-- War Effort
-			i(163378),	-- 7th Legionnaire's Shoulderpads
-			i(163379),	-- 7th Legionnaire's Pants
-			i(163381),	-- 7th Legionnaire's Mask
-			i(163382),	-- 7th Legionnaire's Tunic
-			i(163385),	-- 7th Legionnaire's Belt
-			i(163433),	-- Honorbound Outrider's Mantle
-			i(163436),	-- Honorbound Outrider's Faceguard
-			i(163440),	-- Honorbound Outrider's Belt
 			-- ItemID/Retrieving
 			-- Vanilla
 			i(5821),	-- Darkstalker Boots
@@ -507,6 +498,11 @@ _.NeverImplemented =
 			-- Testing Gear
 			i(120363),	-- 7.0 QA Combat Test Leather Boots 4
 			-- BFA
+			i(154849),	-- Crimsonwood Bracers
+			i(154852),	-- Crimsonwood Gloves
+			i(154856),	-- Crimsonwood Belt
+			i(159201),	-- Briarback Treads
+			i(159203),	-- Briarback Gloves
 			-- Tiragarde Sound BoE Set
 			i(159175),	-- Mistfall Belt
 			i(159176),	-- Mistfall Bracers
@@ -576,24 +572,6 @@ _.NeverImplemented =
 			i(158540),	-- Saurscale Boots
 			i(158541),	-- Saurscale Girdle
 			i(158542),	-- Saurscale Chestguard
-			-- BFA
-			-- War Effort
-			i(163286),	-- Honorbound Vanguard's Footguards
-			i(163291),	-- Honorbound Vanguard's Strikers
-			i(163293),	-- Honorbound Vanguard's Warhelm
-			i(163297),	-- Honorbound Vanguard's Legguards
-			i(163302),	-- Honorbound Vanguard's Spaulders
-			i(163304),	-- Honorbound Vanguard's Waistcord
-			i(163392),	-- 7th Legionnaire's Vestments
-			i(163393),	-- 7th Legionnaire's Raiment
-			i(163443),	-- Honorbound Vanguard's Vestments
-			i(163450),	-- Honorbound Vanguard's Raiment
-			i(163396),	-- 7th Legionnaire's Skullcap
-			i(163390),	-- 7th Legionnaire's Spaulders
-			i(163402),	-- 7th Legionnaire's Chain Belt
-			i(163447),	-- Honorbound Vanguard's Helm
-			i(163442),	-- Honorbound Vanguard's Pauldrons
-			i(163452),	-- Honorbound Vanguard's Chain Belt
 			-- ItemID/Retrieving
 			-- Vanilla
 			i(12105),	-- Pridemail Leggings
@@ -692,6 +670,11 @@ _.NeverImplemented =
 			i(109548),	-- 7.0 QA Combat Test Mail Bracer 4
 			-- Legion
 			i(140011),	-- Duskwatch Adjudicator's Pauldrons
+			-- Bfa
+			i(154861),	-- Barrowknoll Boots
+			i(159208),	-- Eventide Cinch
+			i(159210),	-- Eventide Gloves
+			i(159213),	-- Eventide Leggings
 			-- 8.2.0
 			i(167119),	-- QA Combat Test Mail Helm
 			i(167120),	-- QA Combat Test Mail Legs 1
@@ -702,8 +685,6 @@ _.NeverImplemented =
 			i(167125),	-- QA Combat Test Mail Shoulders 1
 			i(167126),	-- QA Combat Test Mail Boots 1
 			--
-			i(2867),	-- Rough Bronze Bracers (crafted by NYI pattern) (prof)
-			i(56497),	-- Razorshell Gloves (prof)
 			i(68844),	-- Unknown
 		}),
 		n(-46, {	-- Plate
@@ -743,17 +724,6 @@ _.NeverImplemented =
 			i(114270),	-- Ruby Plate Legplates
 			i(114274),	-- Ruby Plate Shoulderguard
 			i(114278),	-- Ruby Plate Girdle
-			-- BFA
-			-- Plate Blue Warfront Pieces
-			i(163406),	-- 7th Legionnaire's Shoulderplates
-			i(163408),	-- 7th Legionnaire's Legplates
-			i(163412),	-- 7th Legionnaire's Helmet
-			i(163413),	-- 7th Legionnaire's Strikers
-			i(163420),	-- 7th Legionnaire's Stompers
-			i(163423),	-- 7th Legionnaire's Girdle
-			i(163454),	-- Honorbound Centurion's Pauldrons
-			i(163457),	-- Honorbound Centurion's Helmet
-			i(163462),	-- Honorbound Centurion's Girdle
 			-- ItemID/Retrieving
 			-- Vanilla
 			i(5822),	-- Hedgeseed Gauntlets
@@ -922,33 +892,6 @@ _.NeverImplemented =
 			i(158582),	-- Wickerweave Cloak (Bfa Beta Only)
 			i(165792),	-- Worn Cloak (future WQ?)
 			i(174857),	-- Hidden Cloak (Vulpera?)
-			-- Warfront
-			i(163245),	-- 7th Legionnaire's Satin Cloak
-			i(163311),	-- 7th Legionnaire's Shroud
-			i(163312),	-- 7th Legionnaire's Shawl
-			i(163416),	-- 7th Legionnaire's Drape
-			i(163344),	-- 7th Legionnarie's Cape
-			i(163345),	-- 7th Legionnarie's Leather Drape
-			i(163346),	-- Warfront Gear Drape
-			i(163348),	-- Warfront Gear Cloak
-			i(163349),	-- 7th Legionnaire's Chain Cloak
-			i(163350),	-- 7th Legionnaire's Cloak
-			i(163352),	-- 7th Legionnaire's Steel Cloak
-			i(163354),	-- 7th Legionnaire's War Cloak
-			i(163353),	-- 7th Legionnarie's Greatcloak
-			i(163356),	-- Honorbound Artificier Drape (different version used with locked to specific classes)
-			i(163358),	-- Honorbound Artificier greatcloak (different version used with locked to specific classes)
-			i(163359),	-- Warfront Gear Cape
-			i(163361),	-- Honorbound outrider greatcloak (different version used with locked to specific classes)
-			i(163362),	-- Honorbound outrider cloak  (different version used with locked to specific classes)
-			i(163363),	-- Warfront Gear Cape
-			i(163364),	-- Warfront Gear Cloak
-			i(163365),	-- Honorbound vanguard greatcloak (different version used with locked to specific classes)
-			i(163367),	-- Honorbound vanguard long cloak (different version used with locked to specific classes)
-			i(163369),	-- Honorbound Centurion's Greatcloak
-			i(163370),	-- Warfront Gear Drape
-			i(163371),	-- Honorbound Centurions Cloak
-			i(163415),	-- 7th Legionnarie's Iron Cloak
 			--SL
 			i(169822),	-- Flowing Cloak
 			-- ItemID/Retrieving
@@ -968,179 +911,176 @@ _.NeverImplemented =
 			i(109496),	-- 7.0 QA Combat Test Cloak 4
 			i(109538),	-- 7.0 QA Combat Test Cloak 3
 			-- BFA
+			i(154841),	-- Corlain Gauntlets
+			i(154846),	-- Corlain Sabatons
+			i(159195),	-- Brineworks Greaves
+			i(159197),	-- Brineworks Stompers
 			i(165261),	-- Fallback Armor - Cloak
 			--SL
 			i(167150),	-- QA Combat Test Cloak 1(9.0.5?)
 		}),
 		n(-349, {	-- Cosmetic
+			i(52488),	-- Jeweler's Sapphire Monocle (other version got added)
+			i(116399),	-- Emerald Sunglasses (WoD Beta)
+			i(133996),	-- Was testing version, they added i(134022))	-- Burgy Blackheart's Handsome Hat
+			-- Hidden
 			i(134110),	-- Hidden Helm
 			i(134111),	-- Hidden Cloak
-			i(81143),	-- Avanced Deepdive Helmet (Mop Beta Only)
-			i(52488),	-- Jeweler's Sapphire Monocle (other version got added)
-			i(133996),	-- Was testing version, they added i(134022))	-- Burgy Blackheart's Handsome Hat
-			i(142503),	-- Hidden Shirt
-			i(146305),	-- Green Winter Hat										{STUCK ON RETRIEVING DATA)
-			i(146306),	-- Green Winter Clothes									(STUCK ON RETRIEVING DATA)
 			i(142504),	-- Hidden Tabard
 			i(134112),	-- Hidden Shoulder
 			i(143539),	-- Hidden Belt
 			i(168659),	-- Hidden Chestpiece
 			i(168664),	-- Hidden Boots
 			i(168665),	-- Hidden Bracers
-			i(48945),	-- Gnomish Thinking Cap (Mind Amplification Disk was added for it)
+			i(142503),	-- Hidden Shirt
+			i(168665),	-- Hidden Bracers
 			i(158329),	-- Hidden Gloves
-			i(116399),	-- Emerald Sunglasses
-			i(162638),	-- Wooden Toy Helm (used from Winter Veil 2018 Toy, but its just used to attach the look to you, you actually never get the item)
-			i(162639),	-- Wooden Toy Helm (A) (used from Winter Veil 2018 Toy, but its just used to attach the look to you, you actually never get the item)
-			i(163922),	-- Used for a toy, you never can get the actual item
-			i(163923),	-- Used for a toy, you never can get the actual item
-			i(146307),	-- Winter Boots (STUCK ON RETRIEVING DATA) (removed Beta)
 		}),
 		n(-324, {	-- Shirts
+			i(52548),	-- Initiate's Tunic
 			i(53869),	-- War Paint (Shirt) NOT GOOD FOR THE LADIES (NYI)
+			i(53879),	-- Rugged Work Shirt
+			i(53880),	-- Super Girly Shirt
 			i(60619),	-- No Shirt
+			i(62061),	-- Irradiated Gnome Shirt
 			i(63074),	-- "Behind You!" Shirt
 			i(129294),	-- Bonespeaker Tatoos
 			i(137118),	-- The Crone's Shirt
 			i(137552),	-- Purple Shirt
-			i(62061),	-- Irradiated Gnome Shirt
-			i(52548),	-- Initiate's Tunic
-			i(53879),	-- Rugged Work Shirt
-			i(53880),	-- Super Girly Shirt
 		}),
 		n(-325, {	-- Tabard
-			i(147204),	-- Black Apron - TEST
 			i(23388),	-- Tranquillen Tabard
+			i(147204),	-- Black Apron - TEST
 		}),
 		filter(51, {	-- Neck
-			i(7550),		-- Warrior's Honor
+			-- Load In Game
+			-- Vanilla
 			i(13811),	-- Necklace of the Dawn
-			i(18023),	-- Blood Ruby Pendant
-			i(157750),	-- Pendant of Good Fortune
-			i(23058),	-- Life Channeling Necklace
-			i(28043),	-- Demon Stalker Pendant
+			i(23058),	-- Life Channeling Necklace (Says added in cata wowhead)
+			-- Wrath
+			i(33197),	-- Mossy Necklace (Says added in cata wowhead)
+			-- Mop
 			i(81049),	-- Scavenger's Necklace
 			i(81050),	-- Scavenger's Choker
 			i(81051),	-- Scavenger's Locket
 			i(81052),	-- Scavenger's Amulet
 			i(81053),	-- Scavenger's Pendant
-			i(108812),	-- Unknown
-			i(108818),	-- Unknown
-			i(108819),	-- Unknown
-			i(109267),	-- Unknown
-			i(33197),	-- Mossy Necklace
-			i(109293),	-- Unknown
-			i(109295),	-- Unknown
-			i(31930),	-- Unknown
-			i(31931),	-- Unknown
-			i(31932),	-- Unknown
-			i(31933),	-- Unknown
-			i(31934),	-- Unknown
-			i(33198),	-- Unknown
-			i(33199),	-- Unknown
-			i(33200),	-- Unknown
-			i(33201),	-- Unknown
-			i(37544),	-- Unknown
-			i(109300),	-- Unknown
-			i(109369),	-- Unknown
-			i(109427),	-- Unknown
-			i(109452),	-- Unknown
-			i(109459),	-- Unknown
-			i(109522),	-- Unknown
-			i(109526),	-- Unknown
-			i(42856),	-- Unknown (might be Frosthowl Amulet)
-			i(44389),	-- Unknown (might be Curative Necklace)
-			i(44390),	-- Unknown (might be Venomous Pendant)
-			i(44391),	-- Unknown (might be Cast Steel Choker)
-			i(44392),	-- Unknown (might be Necklace of Permeation)
-			i(49314),	-- Sparkling Onyxia Tooth Pendant
-			i(59665),	-- Unknown
-			i(60660),	-- Unknown
-			i(60663),	-- Unknown
-			i(60665),	-- Unknown
-			i(60667),	-- Unknown
-			i(60671),	-- Unknown
-			i(60672),	-- Unknown
-			i(60674),	-- Unknown
+			-- Legion
+			i(157750),	-- Pendant of Good Fortune
+			-- ItemID/Retrieving
+			-- Vanilla
+			i(7550),	-- Warrior's Honor
+			i(18023),	-- Blood Ruby Pendant
+			-- TBC
+			i(28043),	-- Demon Stalker Pendant (Says added in cata wowhead)
+			i(31930),	-- Enigmatic Charm (Says added in cata wowhead)
+			i(31931),	-- Fiery Charm (Says added in cata wowhead)
+			i(31932),	-- Living Charm (Says added in cata wowhead)
+			i(31933),	-- Dark Charm (Says added in cata wowhead)
+			i(31934),	-- Frigid Charm (Says added in cata wowhead)
+			i(33198),	-- Necklace of Decay (Says added in cata wowhead)
+			i(33199),	-- Pendant of Old (Says added in cata wowhead)
+			i(33200),	-- Ancient Ceremonial Necklace (Says added in cata wowhead)
+			i(33201),	-- Silver Moonstone Pendant (Says added in cata wowhead)
+			-- Wrath
+			i(37544),	-- Drakebone Necklace (Says added in cata wowhead)
+			i(42856),	-- Frosthowl Amulet (Says added in cata wowhead)
+			i(44389),	-- Curative Necklace (Says added in cata wowhead)
+			i(44390),	-- Venomous Pendant (Says added in cata wowhead)
+			i(44391),	-- Cast Steel Choker
+			i(44392),	-- Necklace of Permeation
+			-- Cata
+			i(59665),	-- Emerald Dragonet Choker
+			-- WoD
+			i(108812),	-- 6.0 PH Neck Agi
+			i(108818),	-- 6.0 PH Neck Str
+			i(108819),	-- 6.0 PH Neck Int
+			i(109267),	-- 6.0 QA Combat Test Healer Neck
+			i(109293),	-- 6.0 QA Combat Test Healer Neck 2
+			i(109295),	-- 6.0 QA Combat Test Agility DPS Neck
+			i(109300),	-- 6.0 QA Combat Test Caster DPS Neck
+			i(109369),	-- 6.0 QA Combat Test Agility DPS Neck 2
+			i(109427),	-- 6.0 QA Combat Test Agility DPS Neck 3
+			i(109452),	-- 6.0 QA Combat Test Caster DPS Neck 2
+			i(109459),	-- 6.0 QA Combat Test Caster DPS Neck 3
+			i(109522),	-- 6.0 QA Combat Test Caster DPS Neck 4
+			i(109526),	-- 7.0 QA Combat Test Neck 4
+			-- BFA
+			i(167137),	-- QA Combat Test Neck 1
 		}),
 		filter(52, {	-- Finger
-			i(4988),		-- Burning Obsidian Band
-			i(17000),	-- Band of the Wraith
-			i(17108),	-- Mark of Deflection
-			i(173421),	-- Black Empire Signet
-			i(33097),	-- Mushroom Ring
-			i(33193),	-- Mossy Band
-			i(33194),	-- Ancient Ceremonial Band
-			i(33195),	-- Cracked Stone Band
-			i(167135),	-- Unknown
-			i(167136),	-- Unknown
-			i(33196),	-- Softly-Glowing Ring
+			-- Load In Game
+			-- Vanilla
 			i(13812),	-- Ring of the Dawn
+			i(19065),	-- Emerald Circle
+			-- Mop
 			i(80955),	-- Scavenger's Loop
 			i(80956),	-- Scavenger's Ring
 			i(80957),	-- Scavenger's Band
 			i(80958),	-- Scavenger's Seal
 			i(80959),	-- Scavenger's Signet
-			i(109391),	-- 6.0 QA Combat Test Agility DPS Ring 2
-			i(110704),	-- unknown
+			-- Legion
+			i(141907),	-- Arena Victory Bonus
+			i(143604),	-- Rating Min Item Level Reward
+			i(144455),	-- Rating Min Item Level Reward
+			i(147397),	-- Rating Min Item Level Reward
+			i(147421),	-- Rating Min Item Level Reward
+			i(150368),	-- Rating Min Item Level Reward
+			i(150369),	-- Rating Min Item Level Reward
+			i(150370),	-- Rating Min Item Level Reward
+			i(157748),	-- Simple Golden Ring
+			i(157749),	-- Ornate Silver Loop
+			-- BFA
+			i(174050),	-- Corrupted Ring - Revel in Violence
+			i(174051),	-- Corrupted Ring - Spontaneous Fury
+			i(174056),	-- Corrupted Ring - Face the Truth
+			i(174057),	-- Corrupted Ring - Mesmerizing
+			-- ItemID/Retrieving
+			-- Vanilla
+			i(4988),	-- Burning Obsidian Band
+			i(17000),	-- Band of the Wraith
+			i(17108),	-- Mark of Deflection
+			-- TBC
+			i(28044),	-- Band of the Demon Stalker
+			i(33097),	-- Mushroom Ring (Says added in cata wowhead)
+			i(33193),	-- Mossy Band (Says added in cata wowhead)
+			i(33194),	-- Ancient Ceremonial Band (Says added in cata wowhead)
+			i(33195),	-- Cracked Stone Band (Says added in cata wowhead)
+			i(33196),	-- Softly-Glowing Ring (Says added in cata wowhead)
+			-- Wrath
+			i(34712),	-- Prismatic Signet (Says added in cata wowhead)
+			i(37531),	-- Circle of Frigid Wind (Says added in cata wowhead)
+			i(41756),	-- Heart's Blood Signet
+			i(46842),	-- Crusader's Band
+			-- Cata
+			i(57708),	-- QA Test Finger 500 Strength
+			i(57709),	-- QA Test Finger Strength
+			i(57710),	-- QA Test Finger 2000 Strength
+			i(57713),	-- QA Test Finger 500 Agility
+			i(57721),	-- QA Test Finger 10000 attack power
+			i(57723),	-- QA Test Finger 500 intellect
+			i(57727),	-- QA Test Finger Spell Power
+			i(57738),	-- QA Test Finger 250 Mastery
+			i(58816),	-- QA Test Finger 250 Hit
+			-- WoD
 			i(108813),	-- 6.0 PH Ring Agi
 			i(108820),	-- 6.0 PH Ring Str
 			i(108821),	-- 6.0 PH Ring Int
 			i(109277),	-- 7.0 QA Combat Test Ring 1
-			i(157748),	-- Simple Golden Ring
-			i(157749),	-- Ornate Silver Loop
-			i(174050),	-- Corrupted Ring - revel in violence
-			i(174051),	-- Corrupted Ring - spontaneous fury
-			i(174056),	-- Corrupted Ring - face the truth
-			i(174057),	-- Corrupted Ring - mesmerizing
-			i(141907),	-- Arena Victory Bonus
-			i(143604),	-- rating min item level reward
-			i(144455),	-- rating min item level reward
-			i(147397),	-- rating min item level reward
-			i(147421),	-- rating min item level reward
-			i(150368),	-- rating min item level reward
-			i(109365),	-- Unknown
-			i(109410),	-- Unknown
-			i(150369),	-- rating min item level reward
-			i(150370),	-- rating min item level reward
-			i(109418),	-- Unknown
-			i(109447),	-- Unknown
-			i(109454),	-- Unknown
-			i(167137),	-- Unknown
-			i(109478),	-- Unknown
-			i(109512),	-- Unknown
-			i(109516),	-- Unknown
-			i(19065),	-- Emerald Circle
-			i(62035),	-- Antique Myrmidon's Signet
-			i(62036),	-- Ornate Band of Accuria
-			i(62037),	-- Gleaming seal of the archmagus
-			i(69891),	-- Burnished Dark Iron Ring
-			i(103825),	-- 5.4 Raid - Normal - Siege of Orgrimmar - Wildcard - Int Hit Ring
-			i(28044),	-- Band of the Demon Stalker
-			i(33957),	-- Witches Band (unused version)
-			i(33958),	-- The Horseman's Signet Ring (unused version)
-			i(33959),	-- Ring of Ghoulish Delight (unused version)
-			i(34712),	-- Unknown (might be Prismatic Signet)
-			i(37531),	-- Unknown (might be Circle of Frigid Wind)
-			i(46842),	-- Unknown
-			i(41756),	-- Unknown (might be Heart's Blood Signet)
-			i(57708),	-- Unknown
-			i(57709),	-- Unknown
-			i(57710),	-- Unknown
-			i(57713),	-- Unknown
-			i(57721),	-- Unknown
-			i(57723),	-- Unknown
-			i(57727),	-- Unknown
-			i(57738),	-- Unknown
-			i(58816),	-- Unknown
-			i(60646),	-- Unknown
-			i(60648),	-- Unknown
-			i(60652),	-- Unknown
-			i(60653),	-- Unknown
-			i(60654),	-- Unknown
-			i(60655),	-- Unknown
-			i(60656),	-- Unknown
-			i(60657),	-- Unknown
+			i(109365),	-- 6.0 QA Combat Test Caster DPS Ring
+			i(109391),	-- 6.0 QA Combat Test Agility DPS Ring 2
+			i(109410),	-- 6.0 QA Combat Test Caster DPS Ring 2
+			i(109418),	-- 6.0 QA Combat Test Agility DPS Ring 3
+			i(109447),	-- 6.0 QA Combat Test Caster DPS Ring 3
+			i(109454),	-- 6.0 QA Combat Test Caster DPS Ring 4
+			i(109478),	-- 6.0 QA Combat Test Agility DPS Ring 4
+			i(109512),	-- 6.0 QA Combat Test Caster DPS Ring 5
+			i(109516),	-- 7.0 QA Combat Test Ring 5
+			i(110704),	-- QA Test Finger Versatility
+			-- BFA
+			i(167135),	-- QA Combat Test Ring 1
+			i(167136),	-- QA Combat Test Ring 2
+			i(173421),	-- Black Empire Signet
 		}),
 		n(-386, {	-- Trinket
 			i(12805),	-- Orb of Fire
@@ -1201,28 +1141,6 @@ _.NeverImplemented =
 			i(109515),	-- Unknown
 			i(114960),	-- spires unused
 		}),
-		i(154861),	-- Unknown
-		i(154841),	-- Unknown
-		i(154846),	-- Unknown
-		i(159216),	-- Unknown
-		i(159221),	-- Unknown
-		i(159203),	-- Unknown
-		i(159201),	-- Unknown
-		i(159210),	-- Unknown
-		i(159208),	-- Unknown
-		i(159213),	-- Unknown
-		i(159195),	-- Unknown
-		i(159197),	-- Unknown
-		i(154867),	-- Unknown
-		i(154870),	-- Unknown
-		i(154873),	-- Unknown
-		i(154868),	-- Unknown
-		i(154866),	-- Unknown
-		i(154869),	-- Unknown
-		i(154871),	-- Unknown
-		i(154849),	-- Unknown
-		i(154852),	-- Unknown
-		i(154856),	-- Unknown
 	}),
 	n(-494, {	-- Misc
 		filter(113, {	-- Bags

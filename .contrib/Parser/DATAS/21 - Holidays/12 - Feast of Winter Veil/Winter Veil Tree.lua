@@ -303,6 +303,11 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 });
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	holiday(235485, {	-- Feast of Winter Veil
+		i(146305),	-- Green Winter Hat	{STUCK ON RETRIEVING DATA)
+		i(146306),	-- Green Winter Clothes	(STUCK ON RETRIEVING DATA)
+		i(146307),	-- Winter Boots (STUCK ON RETRIEVING DATA) (removed Beta)
+		i(162638),	-- Wooden Toy Helm (used from Winter Veil 2018 Toy, but its just used to attach the look to you, you actually never get the item)
+		i(162639),	-- Wooden Toy Helm (A) (used from Winter Veil 2018 Toy, but its just used to attach the look to you, you actually never get the item)
 		i(162640),	-- Horde Toy Cape (used from Winter Veil 2018 Toy, but its just used to attach the look to you, you actually never get the item)
 		i(162641),	-- Alliance Toy Cape (used from Winter Veil 2018 Toy, but its just used to attach the look to you, you actually never get the item)
 	}),

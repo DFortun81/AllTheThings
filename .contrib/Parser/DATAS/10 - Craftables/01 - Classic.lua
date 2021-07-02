@@ -1586,5 +1586,8 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		prof(LEATHERWORKING, {
 				i(8195),	-- Nightscape Cloak	(Pattern never actually went live)
 		}),
+		prof(BLACKSMITHING, {
+			i(2867),	-- Rough Bronze Bracers (crafted by NYI pattern) (prof)
+		}),
 	}),
 });

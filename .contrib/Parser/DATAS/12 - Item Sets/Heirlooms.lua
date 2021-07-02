@@ -440,3 +440,11 @@ _.GearSets =
 		},
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-365, {	-- Heirlooms
+		i(62035),	-- Antique Myrmidon's Signet
+		i(62036),	-- Ornate Band of Accuria
+		i(62037),	-- Gleaming seal of the archmagus
+		i(69891),	-- Burnished Dark Iron Ring
+	}),
+});
