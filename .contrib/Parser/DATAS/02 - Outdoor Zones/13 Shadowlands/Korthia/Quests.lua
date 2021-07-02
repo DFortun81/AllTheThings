@@ -280,7 +280,7 @@ _.Zones =
 				}),
 				q(63892, {	-- Diviner's Rune Chits
 					["sourceQuests"] = { 64506 },	-- What Must Be Found
-					["description"] = "The item that starts this quest and the Rune Chits themselves can drop from the daily Korthian treasure chests.",
+					["description"] = "The item that starts this quest and the Rune Chits themselves can drop from Korthian treasures.",
 					["provider"] = { "i", 187055 },	-- Pouch of Rune Chits
 				--	["cost"] = { { "i", 185962, 20 } },	-- 20x Rune Chit
 					["g"] = {
@@ -461,8 +461,14 @@ _.Zones =
 					["coord"] = { 57.4, 29.9, KORTHIA },
 				}),
 
-				-- Korthia Daily
+			--	Korthia Daily
 			--	confirmed on live
+				q(63783, {	-- Anima Reclamation
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
+					["provider"] = { "n", 178793 },	-- Kael'thas Sunstrider
+					["isDaily"] = true,
+					["coord"] = { 61.8, 25.6, KORTHIA },
+				}),
 				q(63934, {	-- Assail Mail
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178802 },	-- Messenger Mnemis
@@ -475,11 +481,23 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 64.7, 25.6, KORTHIA },
 				}),
+				q(63791, {	-- Broker's Bounty: Valdinar the Curseborn
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
+					["provider"] = { "o", 368772 },	-- Sigilscored Scroll
+					["isDaily"] = true,
+					["coord"] = { 64.7, 25.6, KORTHIA },
+				}),
 				q(63782, {	-- Mawsworn Rituals
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178799 },	-- Arios Riftbearer
 					["isDaily"] = true,
 					["coord"] = { 61.5, 23.5, KORTHIA },
+				}),
+				q(64101, {	-- The Proper Procedures
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
+					["provider"] = { "n", 178790 },	-- The Accuser
+					["isDaily"] = true,
+					["coord"] = { 61.8, 25.3, KORTHIA },
 				}),
 
 			--	ptr data
@@ -495,12 +513,6 @@ _.Zones =
 					["provider"] = { "n", 179134 },	-- Pelagos
 					["isDaily"] = true,
 					["coord"] = { 61.7, 24.0, KORTHIA },
-				}),
-				q(63783, {	-- Anima Reclamation
-					["sourceQuests"] = { 64556 },	-- In Need of Assistance
-					["provider"] = { "n", 178793 },	-- Kael'thas Sunstrider
-					["isDaily"] = true,
-					["coord"] = { 61.8, 25.6, KORTHIA },
 				}),
 				q(63793, {	-- Broker's Bounty: Ensydius the Defiler
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
@@ -527,12 +539,6 @@ _.Zones =
 					["coord"] = { 64.7, 25.6, KORTHIA },
 				}),
 				q(63963, {	-- Broker's Bounty: Ripmaul
-					["sourceQuests"] = { 64556 },	-- In Need of Assistance
-					["provider"] = { "o", 368772 },	-- Sigilscored Scroll
-					["isDaily"] = true,
-					["coord"] = { 64.7, 25.6, KORTHIA },
-				}),
-				q(63791, {	-- Broker's Bounty: Valdinar the Curseborn
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "o", 368772 },	-- Sigilscored Scroll
 					["isDaily"] = true,
@@ -791,12 +797,6 @@ _.Zones =
 					["provider"] = { "n", 179218 },	-- Theotar
 					["isDaily"] = true,
 					["coord"] = { 61.6, 25.7, KORTHIA },
-				}),
-				q(64101, {	-- The Proper Procedures
-					["sourceQuests"] = { 64556 },	-- In Need of Assistance
-					["provider"] = { "n", 178790 },	-- The Accuser
-					["isDaily"] = true,
-					["coord"] = { 61.8, 25.3, KORTHIA },
 				}),
 				q(64018, {	-- The Weight of Stone
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance

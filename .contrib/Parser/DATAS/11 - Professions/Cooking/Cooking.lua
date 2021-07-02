@@ -2337,6 +2337,10 @@ profession(COOKING, {
 					["recipeID"] = 308410
 				},
 				{
+					["name"] = "Bonemeal Bread",
+					["recipeID"] = 354766
+				},
+				{
 					["name"] = "Butterscotch Marinated Ribs",
 					["recipeID"] = 308397
 				},

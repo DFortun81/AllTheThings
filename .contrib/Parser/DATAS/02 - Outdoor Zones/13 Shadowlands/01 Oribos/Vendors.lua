@@ -226,6 +226,9 @@ _.Zones =
 								{ "i", 6150, 1 },	-- A Frayed Knot
 							},
 						}),
+						i(186992, {	-- Formula: Anima-ted Leash
+							["cost"] = { { "i", 163036, 15 } },	-- 15x Polished Pet Charm
+						}),
 					},
 				}),
 				n(176065, {	-- Liawyn <Wild Hunt Quartermaster>

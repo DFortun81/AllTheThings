@@ -125,6 +125,7 @@ _.Zones =
 				i(187323),	-- Runic Diagram
 				i(187462),	-- Scroll of Shadowlands Fables
 				i(187334),	-- Shattered Void Tablet
+				i(187460),	-- Strangely Intricate Key
 				i(187331),	-- Tattered Fae Designs
 				i(187478),	-- White Razorwing Talon
 			--	Cosmetics

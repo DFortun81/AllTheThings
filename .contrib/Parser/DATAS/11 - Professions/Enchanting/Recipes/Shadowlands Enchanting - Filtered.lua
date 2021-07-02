@@ -4,6 +4,15 @@ profession(ENCHANTING, {
 			["categoryID"] = 1364,	-- Shadowlands Enchanting
 			["g"] = {
 				{
+					["categoryID"] = 354,	-- Other
+					["g"] = {
+						{
+							["recipeID"] = 355184,	-- Anima-ted Leash
+							["name"] = "Anima-ted Leash",
+						},
+					},
+				},
+				{
 					-- All Quest Recipes marked unobtainable(training) because they are only learned temporarily
 					-- for world quests then disappear from the spellbook after the quest is completed.
 					["categoryID"] = 1527,	-- Quest Recipes

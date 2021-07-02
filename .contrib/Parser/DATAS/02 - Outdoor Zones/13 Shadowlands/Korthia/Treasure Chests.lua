@@ -10,7 +10,8 @@ _.Zones =
 			--	TODO: (?) korthian relic boxes currently do not have questIDs and don't actually even disappear immediately when you open them - if quests for them get implemented, they need to be added
 				i(187216),	-- Soultwining Crescent
 				i(185962, {	-- Rune Chit
-					["sourceQuests"] = { 64506 },	-- What Must Be Found
+				--	["sourceQuests"] = { 64506 },	-- What Must Be Found
+				--	["questID"] = 63892,	-- Diviner's Rune Chits
 				}),
 				o(369194, {	-- Anima Laden Egg
 					["description"] = "In a tree.",
@@ -123,6 +124,7 @@ _.Zones =
 						{ 42.3, 34.6, KORTHIA },
 						{ 43.6, 36.6, KORTHIA },
 						{ 45.6, 34.3, KORTHIA },
+						{ 52.4, 25.0, KORTHIA },
 						{ 55.1, 16.4, KORTHIA },
 					},
 					["g"] = {
@@ -176,7 +178,7 @@ _.Zones =
 					["description"] = "In the cave.",
 					["coord"] = { 41.2, 43.2, KORTHIA },
 					["cost"] = { { "i", 186984, 1 } },	-- Korthite Crystal Key
-					["g"] = {	-- TODO opened this today and it had guise of the changeling inside instead of ring of self reflection, so i assume the ring was moved to 369304, needs verification (haven't progressed in the campaign enough to get to the island)
+					["g"] = {
 						i(187047, {	-- Guise of the Changeling
 							["sourceQuests"] = { 64511 },	-- Missing Relics
 							["questID"] = 63909,	-- Guise of the Changeling
@@ -199,7 +201,7 @@ _.Zones =
 				}),
 				o(369304, {	-- Korthian Relic Box
 					["coord"] = { 43.8, 76.9, KORTHIA },
-					["cost"] = { { "i", 186984, 1 } },	-- Korthian Archivists' Key
+					["cost"] = { { "i", 187613, 1 } },	-- Key of the Inner Chambers
 					["g"] = {
 						i(187119, {	-- Ring of Self Reflection
 							["sourceQuests"] = { 64511 },	-- Missing Relics
@@ -405,6 +407,8 @@ _.Zones =
 						{ 38.2, 51.7, KORTHIA },
 						{ 39.6, 50.2, KORTHIA },
 						{ 41.0, 50.5, KORTHIA },
+						{ 44.6, 75.8, KORTHIA },
+						{ 49.2, 54.5, KORTHIA },
 					},
 					["g"] = {
 						i(186999),	-- Pattern: Pallid Bone Flute
@@ -440,6 +444,9 @@ _.Zones =
 						{ 61.0, 32.9, KORTHIA },
 						{ 61.4, 38.1, KORTHIA },
 						{ 62.4, 37.5, KORTHIA },
+					},
+					["g"] = {
+						i(186993),	-- Design: Porous Stone Statue
 					},
 				}),
 				o(369296, {	-- Shardhide Stash
