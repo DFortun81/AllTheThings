@@ -44,6 +44,8 @@ _.Zones =
 								crit(10, {	-- Guard Orguluus
 									["achievementID"] = 15107,	-- Conquering Korthia
 								}),
+								i(187398),	-- Chestguard of the Shadeguard
+								i(187363),	-- Orguluus' Spear
 							},
 						}),
 						n(179735, {	-- Torglluun

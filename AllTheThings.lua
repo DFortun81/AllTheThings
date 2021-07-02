@@ -15947,7 +15947,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 			local switchDungeonDifficulty = function(row, button)
 				self.data = raidassistant;
 				SetDungeonDifficultyID(row.ref.difficultyID);
-				self:Update(true);
+				Callback(self.Update, self);
 				return true;
 			end
 			local switchRaidDifficulty = function(row, button)
@@ -15977,9 +15977,9 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 						else
 							SetRaidDifficultyID(difficultyID);
 						end
+						Callback(self.Update, self);
 					end
 				end);
-				self:Update(true);
 				return true;
 			end
 			local switchLegacyRaidDifficulty = function(row, button)
@@ -16008,9 +16008,9 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 						else
 							SetLegacyRaidDifficultyID(difficultyID);
 						end
+						Callback(self.Update, self);
 					end
 				end);
-				self:Update(true);
 				return true;
 			end
 			raidassistant = {
@@ -16028,7 +16028,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							self.data = lootspecialization;
-							self:Update(true);
+							Callback(self.Update, self);
 							return true;
 						end,
 						['OnUpdate'] = function(data)
@@ -16048,7 +16048,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							self.data = dungeondifficulty;
-							self:Update(true);
+							Callback(self.Update, self);
 							return true;
 						end,
 						['OnUpdate'] = function(data)
@@ -16070,7 +16070,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 							-- Don't allow you to change difficulties when you're in LFR / Raid Finder
 							if app.RaidDifficulty == 7 or app.RaidDifficulty == 17 then return true; end
 							self.data = raiddifficulty;
-							self:Update(true);
+							Callback(self.Update, self);
 							return true;
 						end,
 						['OnUpdate'] = function(data)
@@ -16093,7 +16093,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 							-- Don't allow you to change difficulties when you're in LFR / Raid Finder
 							if app.RaidDifficulty == 7 or app.RaidDifficulty == 17 then return true; end
 							self.data = legacyraiddifficulty;
-							self:Update(true);
+							Callback(self.Update, self);
 							return true;
 						end,
 						['OnUpdate'] = function(data)
@@ -16123,7 +16123,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 						['OnClick'] = function(row, button)
 							if IsAltKeyDown() then
 								row.ref.saved = not row.ref.saved;
-								self:Update();
+								Callback(self.Update, self);
 							else
 								ResetInstances();
 							end
@@ -16152,7 +16152,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 								PVEFrame_ToggleFrame("GroupFinderFrame")
 							end
 							self.data = raidassistant;
-							self:BaseUpdate(true);
+							Callback(self.BaseUpdate, self, true);
 							return true;
 						end,
 						['OnUpdate'] = function(data)
@@ -16170,7 +16170,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 								PVEFrame_ToggleFrame("GroupFinderFrame")
 							end
 							self.data = raidassistant;
-							self:BaseUpdate(true);
+							Callback(self.BaseUpdate, self, true);
 							return true;
 						end,
 						['OnUpdate'] = function(data)
@@ -16185,7 +16185,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 				["description"] = L["LOOT_SPEC_DESC_2"],
 				['OnClick'] = function(row, button)
 					self.data = raidassistant;
-					self:Update(true);
+					Callback(self.Update, self);
 					return true;
 				end,
 				['OnUpdate'] = function(data)
@@ -16202,7 +16202,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 							['OnClick'] = function(row, button)
 								self.data = raidassistant;
 								SetLootSpecialization(row.ref.id);
-								self:Update(true);
+								Callback(self.Update, self);
 							end,
 						});
 						for i=1,numSpecializations,1 do
@@ -16216,7 +16216,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 								['OnClick'] = function(row, button)
 									self.data = raidassistant;
 									SetLootSpecialization(row.ref.id);
-									self:Update(true);
+									Callback(self.Update, self);
 								end,
 							});
 						end
@@ -16233,7 +16233,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 				["description"] = L["DUNGEON_DIFF_DESC_2"],
 				['OnClick'] = function(row, button)
 					self.data = raidassistant;
-					self:Update(true);
+					Callback(self.Update, self);
 					return true;
 				end,
 				['visible'] = true,
@@ -16266,7 +16266,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 				["description"] = L["RAID_DIFF_DESC_2"],
 				['OnClick'] = function(row, button)
 					self.data = raidassistant;
-					self:Update(true);
+					Callback(self.Update, self);
 					return true;
 				end,
 				['visible'] = true,
@@ -16296,7 +16296,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 				["description"] = L["LEGACY_RAID_DIFF_DESC_2"],
 				['OnClick'] = function(row, button)
 					self.data = raidassistant;
-					self:Update(true);
+					Callback(self.Update, self);
 					return true;
 				end,
 				['visible'] = true,
@@ -16328,7 +16328,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 			self.data = raidassistant;
 
 			-- Setup Event Handlers and register for events
-			self:SetScript("OnEvent", function(self, e, ...) self:Update(); end);
+			self:SetScript("OnEvent", function(self, e, ...) Callback(self.Update, self); end);
 			self:RegisterEvent("PLAYER_LOOT_SPEC_UPDATED");
 			self:RegisterEvent("PLAYER_DIFFICULTY_CHANGED");
 			self:RegisterEvent("ACTIVE_TALENT_GROUP_CHANGED");
