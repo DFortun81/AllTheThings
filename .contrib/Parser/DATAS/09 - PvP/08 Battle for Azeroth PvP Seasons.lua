@@ -1726,6 +1726,18 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(172693),	-- Corrupted Gladiator's Plate Skullguard (H)
 					i(172717),	-- Corrupted Gladiator's Plate Chestplate (H)
 				}),
+				n(-322, {	-- Cloaks
+					i(172655),	-- Corrupted Gladiator's Shawl
+					i(172656),	-- Corrupted Gladiator's Greatcloak
+					i(172657),	-- Corrupted Gladiator's Drape
+					i(172658),	-- Corrupted Gladiator's Cape
+					i(172659),	-- Corrupted Gladiator's Shawl
+					i(172660),	-- Corrupted Gladiator's Greatcloak
+					i(172661),	-- Corrupted Gladiator's Drape
+					i(172662),	-- Corrupted Gladiator's Cape
+					i(172851),	-- Corrupted Aspirant's Greatcloak
+					i(172855),	-- Corrupted Aspirant's Greatcloak
+				}),
 				-- These were added 9.0.1??
 				n(-386, {	-- Trinkets
 					i(184055),	-- Corrupted Gladiator's Medallion

@@ -886,115 +886,91 @@ _.NeverImplemented =
 			-- Load In Game
 			-- TBC
 			i(28045),	-- Cloak of the Demon Stalker (Patch 3.3.3?)
-			
-			
-			-- Legion
-			i(134693),	-- Enveloping Cape
-			i(157751),	-- Drape of New Beginnings
-			i(134699),	-- Enveloping Drape
-			i(134609),	-- Scorching Cape
-			
-			-- BFA
-			i(165792),	-- Worn Cloak (future WQ?)
-			
-			-- ItemID/Retrieving
-			-- Vanilla
-			i(22230),	-- Frightmaw Hide (Cloak)
-			
-			
-			
-
-
-			-- Prof
-			i(161988),	-- Tidespray Linen Cloak of the Feather
-			i(161991),	-- Tidespray Linen Cloak of Resilience
-			
-			
-			
-			i(165261),	-- Unknown Cloak
-			
-			
-
-			
-			
-
-			i(163311),	-- 7th Legionnaire's Shroud
-			i(163312),	-- 7th Legionnaire's Shawl
-			i(163348),	-- Warfront Gear Cloak
-			i(163364),	-- Warfront Gear Cloak
-			i(153397),	-- Salt Starched Shawl
-			i(156755),	-- Drape of Revengeance
-			i(154968),	-- Drape of the Golden City
-			i(134617),	-- Scorching Drape
-			i(163245),	-- 7th Legionnaire's Satin Cloak
-			i(150489),	-- Shroud of Forgiveness
-			i(150714),	-- Travel-Worn Shawl
-			i(134579),	-- Vanguard Cape
-			i(167150),	-- Unknown
-			i(163354),	-- 7th Legionnaire's War Cloak
-			i(163416),	-- 7th Legionnaire's Drape
-			i(158582),	-- Wickerweave Cloak (Bfa Beta Only)
-			i(108814),	-- 6.0 PH Cloak Agi
-			i(108822),	-- 6.0 PH Cloak STR
-			i(39828),	-- Punisher's Cloak
+			-- Wratb
+			i(37174),	-- Rippling Azure Cloak (Says added in cata wowhead)
+			-- Cata
+			i(56355),	-- Skin of Stone
+			-- Mop
 			i(80965),	-- Scavenger's cape
 			i(80966),	-- Scavenger's drape
-			i(56355),	-- Skin of Stone
-			i(65815),	-- Drape of the mortal guardians beta only
 			i(80967),	-- Scavenger's shawl
 			i(80968),	-- Scavenger's cloak
 			i(80969),	-- Scavenger's manteua
-			i(35876),	-- Talbuk Cape
-			i(37174),	-- Rippling Azure Cloak
-			i(155384),	-- Singed Skycaller Drape (NEver added)
-			i(108823),	-- 6.0 PH Cloak Int
-			i(109282),	-- 7.0 QA Combat Test Cloak 1
-			i(109453),	-- 7.0 QA Combat Test Cloak 2
-			i(109496),	-- 7.0 QA Combat Test Cloak 4
-			i(109538),	-- 7.0 QA Combat Test Cloak 3
-			i(163344),	-- 7th Legionnarie's Cape
-			i(163345),	-- 7th Legionnarie's Leather Drape
-			i(163353),	-- 7th Legionnarie's Greatcloak
-			i(163415),	-- 7th Legionnarie's Iron Cloak
-			i(134605),	-- Vanguard Cloak
-			i(154698),	-- Tidespray Linen Cloak of the Feather (Doesnt load ingame)
-			i(154701),	-- Tidespray Linen Cloak of Resilience (Doesnt load ingame)
-			i(172655),	-- Unknown
-			i(172656),	-- Unknown
-			i(172657),	-- Unknown
-			i(172658),	-- Unknown
-			i(172659),	-- Unknown
-			i(172660),	-- Unknown
-			i(172661),	-- Unknown
-			i(172662),	-- Unknown
-			i(172851),	-- Unknown
-			i(172855),	-- Unknown
-			i(158500),	-- [Salt Starched Shawl]
-			i(158552),	-- [Drape of the Golden City]
-			i(163346),	-- [Warfront Gear Drape]
-			i(163349),	-- [7th Legionnaire's Chain Cloak]
-			i(163350),	-- [7th Legionnaire's Cloak]
-			i(163352),	-- [7th Legionnaire's Steel Cloak]
-			i(163359),	-- [Warfront Gear Cape]
-			i(163363),	-- [Warfront Gear Cape]
-			i(163369),	-- [Honorbound Centurion's Greatcloak]
-			i(163370),	-- [Warfront Gear Drape]
-			i(169822),	-- Flowing Cloak
-			i(174857),	-- Hidden Cloak (Vulpera?)
-			i(163371),	-- Honorbound Centurions Cloak
-			i(163356),	-- Honorbound Artificier Drape (different version used with locked to specific classes)
-			i(163358),	-- Honorbound Artificier greatcloak (different version used with locked to specific classes)
-			i(163361),	-- Honorbound outrider greatcloak (different version used with locked to specific classes)
-			i(163362),	-- Honorbound outrider cloak  (different version used with locked to specific classes)
-			i(163365),	-- Honorbound vanguard greatcloak (different version used with locked to specific classes)
-			i(163367),	-- Honorbound vanguard long cloak (different version used with locked to specific classes)
-			i(162640),	-- Horde Toy Cape (used from Winter Veil 2018 Toy, but its just used to attach the look to you, you actually never get the item)
-			i(162641),	-- Alliance Toy Cape (used from Winter Veil 2018 Toy, but its just used to attach the look to you, you actually never get the item)
+			-- WoD
 			i(114297),	-- Feather-Cord Cloak
 			i(114298),	-- Cloak of Bent Dreams
 			i(114299),	-- Suture-Slice Cloak
 			i(114300),	-- Grimchop Greatcloak
 			i(114301),	-- Axebreak Darkcloak
+			-- Legion
+			i(134579),	-- Vanguard Cape
+			i(134605),	-- Vanguard Cloak
+			i(134609),	-- Scorching Cape
+			i(134617),	-- Scorching Drape
+			i(134693),	-- Enveloping Cape
+			i(134699),	-- Enveloping Drape
+			i(150489),	-- Shroud of Forgiveness
+			i(150714),	-- Travel-Worn Shawl
+			i(157751),	-- Drape of New Beginnings
+			-- BFA
+			i(153397),	-- Salt Starched Shawl
+			i(154968),	-- Drape of the Golden City
+			i(155384),	-- Singed Skycaller Drape (Never added)
+			i(156755),	-- Drape of Revengeance
+			i(158500),	-- Salt Starched Shawl
+			i(158552),	-- Drape of the Golden City
+			i(158582),	-- Wickerweave Cloak (Bfa Beta Only)
+			i(165792),	-- Worn Cloak (future WQ?)
+			i(174857),	-- Hidden Cloak (Vulpera?)
+			-- Warfront
+			i(163245),	-- 7th Legionnaire's Satin Cloak
+			i(163311),	-- 7th Legionnaire's Shroud
+			i(163312),	-- 7th Legionnaire's Shawl
+			i(163416),	-- 7th Legionnaire's Drape
+			i(163344),	-- 7th Legionnarie's Cape
+			i(163345),	-- 7th Legionnarie's Leather Drape
+			i(163346),	-- Warfront Gear Drape
+			i(163348),	-- Warfront Gear Cloak
+			i(163349),	-- 7th Legionnaire's Chain Cloak
+			i(163350),	-- 7th Legionnaire's Cloak
+			i(163352),	-- 7th Legionnaire's Steel Cloak
+			i(163354),	-- 7th Legionnaire's War Cloak
+			i(163353),	-- 7th Legionnarie's Greatcloak
+			i(163356),	-- Honorbound Artificier Drape (different version used with locked to specific classes)
+			i(163358),	-- Honorbound Artificier greatcloak (different version used with locked to specific classes)
+			i(163359),	-- Warfront Gear Cape
+			i(163361),	-- Honorbound outrider greatcloak (different version used with locked to specific classes)
+			i(163362),	-- Honorbound outrider cloak  (different version used with locked to specific classes)
+			i(163363),	-- Warfront Gear Cape
+			i(163364),	-- Warfront Gear Cloak
+			i(163365),	-- Honorbound vanguard greatcloak (different version used with locked to specific classes)
+			i(163367),	-- Honorbound vanguard long cloak (different version used with locked to specific classes)
+			i(163369),	-- Honorbound Centurion's Greatcloak
+			i(163370),	-- Warfront Gear Drape
+			i(163371),	-- Honorbound Centurions Cloak
+			i(163415),	-- 7th Legionnarie's Iron Cloak
+			--SL
+			i(169822),	-- Flowing Cloak
+			-- ItemID/Retrieving
+			-- Vanilla
+			i(22230),	-- Frightmaw Hide (Says added in cata wowhead)
+			-- Wrath
+			i(35876),	-- Talbuk Cape (Says added in cata wowhead)
+			i(39828),	-- Punisher's Cloak (Says added in cata wowhead)
+			-- Cata
+			i(65815),	-- Drape of the mortal guardians beta only
+			-- WoD
+			i(108814),	-- 6.0 PH Cloak Agi
+			i(108822),	-- 6.0 PH Cloak STR
+			i(108823),	-- 6.0 PH Cloak Int
+			i(109282),	-- 7.0 QA Combat Test Cloak 1
+			i(109453),	-- 7.0 QA Combat Test Cloak 2
+			i(109496),	-- 7.0 QA Combat Test Cloak 4
+			i(109538),	-- 7.0 QA Combat Test Cloak 3
+			-- BFA
+			i(165261),	-- Fallback Armor - Cloak
+			--SL
+			i(167150),	-- QA Combat Test Cloak 1(9.0.5?)
 		}),
 		n(-349, {	-- Cosmetic
 			i(134110),	-- Hidden Helm
