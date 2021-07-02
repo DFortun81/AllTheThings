@@ -22,6 +22,18 @@ _.NeverImplemented =
 	i(106178, {	-- Rangari Initiate Wristwraps (Beta only)
 		["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.",
 	}),
+	i(103785, {	-- Tusks of Mannoroth [Heroic]
+		["description"] = "|CFFFF0000If you had this item drop in SoO Heroic please screenshot and submit it to the ATT Discord.\n\nIf you have the item already and are running completionist mode please screenshot as well. Tag 105393",
+	}),
+	i(105393, {	-- Tusks of Mannoroth [Heroic Warforged]
+		["description"] = "|CFFFF0000If you had this item drop in SoO Heroic please screenshot and submit it to the ATT Discord.\n\nIf you have the item already and are running completionist mode please screenshot as well. Tag 105393",
+	}),
+	i(104646, {	-- Tusks of Mannoroth [Mythic]
+		["description"] = "|CFFFF0000If you had this item drop in SoO please screenshot and submit it to the ATT Discord.\n\nIf you have the item already and are running completionist mode please screenshot as well. Tag: 104646",
+	}),
+	i(105642, {	-- Tusks of Mannoroth [Mythic Warforged]
+		["description"] = "|CFFFF0000If you had this item drop in SoO please screenshot and submit it to the ATT Discord.\n\nIf you have the item already and are running completionist mode please screenshot as well. Tag: 105642",
+	}),
 	tier(9,	{	-- Shadowlands -- Items that might get added after 9.0.5. If you are sure the item won't be added, please put it into the correct section
 		
 		-- Possibly WoW's 17th Anniversary
@@ -201,6 +213,11 @@ _.NeverImplemented =
 			i(59797),	-- Abalone-Linked Robes
 			i(62988),	-- Sash of the Unhonored
 			i(66013),	-- Mantle of the Glorious Song
+			i(62641),	-- Fallback Armor - Cloth Feet
+			i(62645),	-- Fallback Armor - Cloth Legs
+			i(62646),	-- Fallback Armor - Cloth Robe
+			i(62647),	-- Fallback Armor - Cloth Shoulder
+			i(62648),	-- Fallback Armor - Cloth Wrist
 			-- MOP
 			-- Quest set?
 			i(80988),	-- Scavenger's Silk Amice
@@ -696,112 +713,28 @@ _.NeverImplemented =
 			}),
 			cl(WARRIOR, {
 			}),
-			-- Plate Blue Warfront Pieces
-			i(163412),	-- 7th Legionnaire's Helmet
-			i(163406),	-- 7th Legionnaire's Shoulderplates
-			i(163413),	-- 7th Legionnaire's Strikers
-			i(163423),	-- 7th Legionnaire's Girdle
-			i(163408),	-- 7th Legionnaire's Legplates
-			i(163420),	-- 7th Legionnaire's Stompers
-			i(159165),	-- Ashvane Company Bracers
-			i(159159),	-- Ashvane Company Gauntlets
-			i(159160),	-- Ashvane Company Girdle
-			i(163457),	-- Honorbound Centurion's Helmet
-			i(163454),	-- Honorbound Centurion's Pauldrons
-			i(163462),	-- Honorbound Centurion's Girdle
+			-- Load In Game
+			-- TBC
+			i(25797),	-- Crushing Grasp Says (added in cata wowhead)
+			i(26041),	-- Vigilant Vambraces (added in cata wowhead)
+			i(27965),	-- TEST 130 Epic Paladin DPS Chest
+			i(29237),	-- Warpath Bracers Says (added in cata wowhead)
+			-- Ramparts?
+			i(24137),	-- PH Plate Ramparts Reward (Says added in cata wowhead)
+			-- Wrath
+			i(37175),	-- Glassy Silver Bracers (Says added in cata wowhead)
+			i(37468),	-- HF28 Plate Physical Boots Says added in cata wowhead)
+			i(38524),	-- Carapace of the Scarlet Commander (Says added in cata wowhead)
+			-- Cata
+			i(59795),	-- Harp Shell Shoulderplates
+			-- Mop
+			-- Recolors added in mop of ICC gear
+			i(81709),	-- Belt of Broken Bones
+			i(81710),	-- Grinning Skull Greatboots
+			-- WoD
 			i(106147),	-- Forstwolf Stalwart Chestpiece (beta only)
 			i(106155),	-- karabor honor guard wristwraps (green version, beta only)
-			i(41759),	-- unknown
-			i(42885),	-- unknown
-			i(43848),	-- unknown
-			i(39460),	-- unknown
-			i(54552),	-- unknown
-			i(54751),	-- unknown
-			i(43938),	-- unknown
-			i(54544),	-- unknown
-			i(59768),	-- unknown
-			i(59772),	-- unknown
-			i(65743),	-- unknown
-			i(27718),	-- Aldor Defender's Legplates
-			i(12106),	-- Boulderskin Breastplate
-			i(107877),	-- unknown
-			i(107862),	-- Unknown
-			i(107865),	-- Unknown
-			i(107870),	-- Unknown
-			i(107873),	-- Unknown
-			i(107883),	-- unknown
-			i(107886),	-- unknown
-			i(107891),	-- unknown
-			i(107985),	-- unknown
-			i(107986),	-- unknown
-			i(107987),	-- unknown
-			i(107988),	-- unknown
-			i(107989),	-- unknown
-			i(107990),	-- unknown
-			i(107991),	-- unknown
-			i(107992),	-- unknown
-			i(107993),	-- unknown
-			i(107994),	-- unknown
-			i(107995),	-- unknown
-			i(107996),	-- unknown
-			i(107997),	-- unknown
-			i(107998),	-- unknown
-			i(107999),	-- unknown
-			i(108000),	-- unknown
-			i(108001),	-- unknown
-			i(108002),	-- unknown
-			i(108003),	-- unknown
-			i(108004),	-- unknown
-			i(108005),	-- unknown
-			i(108006),	-- unknown
-			i(108007),	-- unknown
-			i(108008),	-- unknown
-			i(108009),	-- unknown
-			i(108010),	-- unknown
-			i(108011),	-- unknown
-			i(108012),	-- unknown
-			i(108013),	-- unknown
-			i(108014),	-- unknown
-			i(108015),	-- unknown
-			i(108016),	-- unknown
-			i(108017),	-- unknown
-			i(108018),	-- unknown
-			i(108019),	-- unknown
-			i(108020),	-- unknown
-			i(108021),	-- unknown
-			i(108022),	-- unknown
-			i(108023),	-- unknown
-			i(108024),	-- unknown
-			i(108025),	-- unknown
-			i(108026),	-- unknown
-			i(108027),	-- unknown
-			i(108028),	-- unknown
-			i(108029),	-- unknown
-			i(25797),	-- Crushing Grasp
-			i(29237),	-- Warpath Bracers
-			i(37175),	-- Glassy Silver Bracers
-			i(37477),	-- Lost Crusader Chestplate
-			i(37485),	-- Clam Collector Gauntlets
-			i(37510),	-- Wristguards of Edification
-			i(37511),	-- Crucible Waistguard
-			i(38524),	-- Carapace of the Scarlet Commander
-			i(5822),		-- Hedgeseed Gauntlets
-			i(26041),	-- Vigilant Vambraces
-			i(21587),	-- Wristguards of Castigation (never made it off test)
-			i(24137),	-- PH Plate Ramparts Reward
-			i(27965),	-- TEST 130 Epic Paladin DPS Chest
-			i(37468),	-- HF28 Plate Physical Boots
-			i(105393, {	-- Tusks of Mannoroth [Heroic Warforged]
-				["description"] = "|CFFFF0000If you had this item drop in SoO Heroic please screenshot and submit it to the ATT Discord.\n\nIf you have the item already and are running completionist mode please screenshot as well. Tag 105393",
-			}),
-			i(104646, {	-- Tusks of Mannoroth [Mythic]
-				["description"] = "|CFFFF0000If you had this item drop in SoO please screenshot and submit it to the ATT Discord.\n\nIf you have the item already and are running completionist mode please screenshot as well. Tag: 104646",
-			}),
-			i(105642, {	-- Tusks of Mannoroth [Mythic Warforged]
-				["description"] = "|CFFFF0000If you had this item drop in SoO please screenshot and submit it to the ATT Discord.\n\nIf you have the item already and are running completionist mode please screenshot as well. Tag: 105642",
-			}),
-			i(103785),	-- Tusks of Mannoroth [Heroic]
-			i(59795),	-- Harp Shell Shoulderplates
+			-- Questing Set
 			i(114250),	-- Ruby Plate Bracers
 			i(114253),	-- Ruby Plate Breastplate
 			i(114258),	-- Ruby Plate Greaves
@@ -810,6 +743,144 @@ _.NeverImplemented =
 			i(114270),	-- Ruby Plate Legplates
 			i(114274),	-- Ruby Plate Shoulderguard
 			i(114278),	-- Ruby Plate Girdle
+			-- BFA
+			-- Plate Blue Warfront Pieces
+			i(163406),	-- 7th Legionnaire's Shoulderplates
+			i(163408),	-- 7th Legionnaire's Legplates
+			i(163412),	-- 7th Legionnaire's Helmet
+			i(163413),	-- 7th Legionnaire's Strikers
+			i(163420),	-- 7th Legionnaire's Stompers
+			i(163423),	-- 7th Legionnaire's Girdle
+			i(163454),	-- Honorbound Centurion's Pauldrons
+			i(163457),	-- Honorbound Centurion's Helmet
+			i(163462),	-- Honorbound Centurion's Girdle
+			-- ItemID/Retrieving
+			-- Vanilla
+			i(5822),	-- Hedgeseed Gauntlets
+			i(12106),	-- Boulderskin Breastplate
+			i(21587),	-- Wristguards of Castigation (added in cata wowhead)
+			-- TBC
+			i(27718),	-- Aldor Defender's Legplates (Says added in cata wowhead)
+			-- Wrath
+			i(37477),	-- Lost Crusader Chestplate (Says added in cata wowhead)
+			i(37485),	-- Clam Collector Gauntlets
+			i(37510),	-- Wristguards of Edification
+			i(37511),	-- Crucible Waistguard
+			i(38524),	-- Carapace of the Scarlet Commander (Says added in cata wowhead)
+			i(39460),	-- Sabatons of the Rampaging Construct (Says added in cata wowhead)
+			i(41759),	-- Shackles of Perpetual Friendship
+			i(42885),	-- Mountaineer's Helm (Says added in cata wowhead)
+			i(43848),	-- Bracers of Icy Resolve (Says added in cata wowhead)
+			i(43938),	-- Belt of Rising Hope
+			-- Cata
+			i(54544),	-- Scrapped Spaulders
+			i(54552),	-- Retaliation Gauntlets
+			i(54751),	-- Silverscale Chestguard
+			i(59768),	-- Bracers of Burbling Freedom
+			i(59772),	-- Bracers of Burbling Freedom (Yes, Same name)
+			i(65743),	-- Helm of Vicious Direction
+			-- WoD
+			-- Testing Gear
+			i(107862),	-- 7.0 PH Plate Chestplate
+			i(107865),	-- 7.0 PH Plate Warboots
+			i(107870),	-- 7.0 PH Plate Gauntlets
+			i(107873),	-- 7.0 PH Plate Helm
+			i(107877),	-- 7.0 PH Plate Legguards
+			i(107883),	-- 7.0 PH Plate Shoulders
+			i(107886),	-- 7.0 PH Plate Girdle
+			i(107891),	-- 7.0 PH Plate Wristwraps
+			-- Draenic Set (Quest items?)
+			i(107985),	-- Draenic Steel Warboots
+			i(107986),	-- Draenic Steel Gauntlets
+			i(107987),	-- Draenic Steel Helm
+			i(107988),	-- Draenic Steel Legguards
+			i(107989),	-- Draenic Steel Shoulders
+			i(107990),	-- Draenic Steel Girdle
+			i(107991),	-- Draenic Steel Wristwraps
+			i(107992),	-- Draenic Steel Chestplate
+			i(107993),	-- Draenic Steel Warboots
+			i(107994),	-- Draenic Steel Gauntlets
+			i(107995),	-- Draenic Steel Helm
+			i(107996),	-- Draenic Steel Legguards
+			i(107997),	-- Draenic Steel Shoulders
+			i(107998),	-- Draenic Steel Girdle
+			i(107999),	-- Draenic Steel Wristwraps
+			i(108000),	-- Draenic Steel Chestplate
+			i(108001),	-- Draenic Steel Warboots
+			i(108002),	-- Draenic Steel Gauntlets
+			i(108003),	-- Draenic Steel Helm
+			i(108004),	-- Draenic Steel Legguards
+			i(108005),	-- Draenic Steel Shoulders
+			i(108006),	-- Draenic Steel Girdle
+			i(108007),	-- Draenic Steel Wristwraps
+			i(108008),	-- Draenic Steel Chestplate
+			i(108009),	-- Draenic Steel Warboots
+			i(108010),	-- Draenic Steel Gauntlets
+			i(108011),	-- Draenic Steel Helm
+			i(108012),	-- Draenic Steel Legguards
+			i(108013),	-- Draenic Steel Shoulders
+			i(108014),	-- Draenic Steel Girdle
+			i(108015),	-- Draenic Steel Wristwraps
+			i(108016),	-- Draenic Steel Chestplate
+			i(108017),	-- Draenic Steel Warboots
+			i(108018),	-- Draenic Steel Gauntlets
+			i(108019),	-- Draenic Steel Helm
+			i(108020),	-- Draenic Steel Legguards
+			i(108021),	-- Draenic Steel Shoulders
+			i(108022),	-- Draenic Steel Girdle
+			i(108023),	-- Draenic Steel Wristwraps
+			i(108024),	-- Draenic Steel Chestplate
+			i(108025),	-- Draenic Steel Warboots
+			i(108026),	-- Draenic Steel Gauntlets
+			i(108027),	-- Draenic Steel Helm
+			i(108028),	-- Draenic Steel Legguards
+			i(108029),	-- Draenic Steel Shoulders
+			i(108030),	-- Draenic Steel Girdle
+			i(108031),	-- Draenic Steel Wristwraps
+			i(108032),	-- Draenic Steel Chestplate
+			i(108033),	-- Draenic Steel Warboots
+			i(108034),	-- Draenic Steel Gauntlets
+			i(108035),	-- Draenic Steel Helm
+			i(108036),	-- Draenic Steel Legguards
+			i(108037),	-- Draenic Steel Shoulders
+			i(108038),	-- Draenic Steel Girdle
+			i(108039),	-- Draenic Steel Wristwraps
+			-- Testing Gear
+			i(109268),	-- 7.0 QA Combat Test Plate Bracer 1
+			i(109275),	-- 7.0 QA Combat Test Plate Chest 1
+			i(109284),	-- 7.0 QA Combat Test Plate Shoulders 1
+			i(109289),	-- 7.0 QA Combat Test Plate Gloves 1
+			i(109321),	-- 7.0 QA Combat Test Plate Belt 1
+			i(109322),	-- 7.0 QA Combat Test Plate Chest 2
+			i(109323),	-- 7.0 QA Combat Test Plate Gloves 2
+			i(109324),	-- 7.0 QA Combat Test Plate Helm 1
+			i(109325),	-- 7.0 QA Combat Test Plate Legs 1
+			i(109326),	-- 7.0 QA Combat Test Plate Shoulders 2
+			i(109327),	-- 7.0 QA Combat Test Plate Belt 2
+			i(109328),	-- 7.0 QA Combat Test Plate Chest 3
+			i(109329),	-- 7.0 QA Combat Test Plate Gloves 3
+			i(109330),	-- 7.0 QA Combat Test Plate Helm 2
+			i(109331),	-- 7.0 QA Combat Test Plate Legs 2
+			i(109332),	-- 7.0 QA Combat Test Plate Shoulders 3
+			i(109333),	-- 7.0 QA Combat Test Plate Belt 3
+			i(109334),	-- 7.0 QA Combat Test Plate Chest 4
+			i(109335),	-- 7.0 QA Combat Test Plate Gloves 4
+			i(109336),	-- 7.0 QA Combat Test Plate Helm 3
+			i(109337),	-- 7.0 QA Combat Test Plate Legs 3
+			i(109338),	-- 7.0 QA Combat Test Plate Shoulders 4
+			i(109372),	-- 7.0 QA Combat Test Plate Belt 4
+			i(109409),	-- 7.0 QA Combat Test Plate Bracer 2
+			i(109422),	-- 7.0 QA Combat Test Plate Bracer 3
+			i(109436),	-- 7.0 QA Combat Test Plate Bracer 4
+			i(109439),	-- 7.0 QA Combat Test Plate Helm 4
+			i(109450),	-- 7.0 QA Combat Test Plate Legs 4
+			i(109455),	-- 7.0 QA Combat Test Plate Boots
+			i(109461),	-- 7.0 QA Combat Test Plate Boots 2
+			i(109501),	-- 7.0 QA Combat Test Plate Boots 3
+			-- BFA
+			i(159159),	-- Ashvane Company Gauntlets
+			i(159160),	-- Ashvane Company Girdle
+			i(159165),	-- Ashvane Company Bracers
 		}),
 		n(-322, {	-- Cloaks
 			i(22230),	-- Frightmaw Hide (Cloak)
