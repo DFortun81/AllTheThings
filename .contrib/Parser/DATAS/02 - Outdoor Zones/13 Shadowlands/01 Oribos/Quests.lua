@@ -944,10 +944,43 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(179490),	-- Oribos Quest Cloth Chest
 			}),
 			n(-44, {	-- Leather
+				i(175681),	-- Oribos Quest Leather Chest
+				i(175684),	-- Oribos Quest Leather Feet
+				i(175685),	-- Oribos Quest Leather Hand
+				i(175690),	-- Oribos Quest Leather Head
+				i(175693),	-- Oribos Quest Leather Legs
+				i(175694),	-- Oribos Quest Leather Shoulder
+				i(175699),	-- Oribos Quest Leather Waist
+				i(175702),	-- Oribos Quest Leather Wrist
 			}),
 			n(-45, {	-- Mail
+				i(175680),	-- Oribos Quest Mail Chest
+				i(175683),	-- Oribos Quest Mail Feet
+				i(175687),	-- Oribos Quest Mail Hand
+				i(175689),	-- Oribos Quest Mail Head
+				i(175692),	-- Oribos Quest Mail Legs
+				i(175696),	-- Oribos Quest Mail Shoulder
+				i(175698),	-- Oribos Quest Mail Waist
+				i(175701),	-- Oribos Quest Mail Wrist
 			}),
 			n(-46, {	-- Plate
+				i(175639),	-- Oribos Quest Plate Head
+				i(175640),	-- Oribos Quest Plate Chest
+				i(175641),	-- Oribos Quest Plate Feet
+				i(175642),	-- Oribos Quest Plate Hand
+				i(175643),	-- Oribos Quest Plate Legs
+				i(175644),	-- Oribos Quest Plate Shoulder
+				i(175645),	-- Oribos Quest Plate Waist
+				i(175646),	-- Oribos Quest Plate Wrist
+			}),
+			n(-322, {	-- Cloaks	
+				i(179612),	-- Oribos Quest Cloth Cloak
+				i(179614),	-- Oribos Quest Leather Cloak
+				i(179615),	-- Oribos Quest Mail Cloak
+				i(179616),	-- Oribos Quest Plate Cloak
+				i(179617),	-- Oribos Quest Leather Cloak
+				i(179618),	-- Oribos Quest Mail Cloak
+				i(179619),	-- Oribos Quest Plate Cloak
 			}),
 		}),
 	}),

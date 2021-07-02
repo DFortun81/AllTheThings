@@ -883,66 +883,41 @@ _.NeverImplemented =
 			i(159165),	-- Ashvane Company Bracers
 		}),
 		n(-322, {	-- Cloaks
-			i(22230),	-- Frightmaw Hide (Cloak)
-			i(28045),	-- Cloak of the Demon Stalker
-			i(157751),	-- Drape of New Beginnings
+			-- Load In Game
+			-- TBC
+			i(28045),	-- Cloak of the Demon Stalker (Patch 3.3.3?)
+			
+			
+			-- Legion
 			i(134693),	-- Enveloping Cape
-			i(165792),	-- Worn Cloak (future WQ?)
-			i(166700),	-- Durable Sailor's Duffel
-			i(161988),	-- Tidespray Linen Cloak of the Feather
-			i(161991),	-- Tidespray Linen Cloak of Resilience
-			i(165261),	-- Unknown Cloak
+			i(157751),	-- Drape of New Beginnings
 			i(134699),	-- Enveloping Drape
 			i(134609),	-- Scorching Cape
-			i(179615),	-- Oribos Quest Mail Cloak
-			i(179621),	-- Ardenweald Covenant Mail Cloak
-			i(179630),	-- Ardenweald Covenant Mail Cloak
-			i(179631),	-- Ardenweald Covenant Mail Cloak
-			i(179632),	-- Ardenweald Covenant Mail Cloak
-			i(173926),	--
-			i(174193),	--
-			i(174206),	--
-			i(177692),	--
-			i(179402),	--
-			i(179411),	--
-			i(179420),	--
-			i(179429),	--
-			i(179438),	--
-			i(179447),	--
-			i(179456),	--
-			i(179465),	--
-			i(179474),	--
-			i(179483),	--
-			i(179612),	--
-			i(179614),	--
-			i(179616),	--
-			i(179617),	--
-			i(179618),	--
-			i(179619),	--
-			i(179636),	--
-			i(179637),	--
-			i(179639),	--
-			i(179640),	--
-			i(179641),	--
-			i(179642),	--
-			i(179644),	--
-			i(179645),	--
-			i(179646),	--
-			i(179647),	--
-			i(179648),	--
-			i(179649),	--
-			i(179650),	--
-			i(179651),	--
-			i(179732),	--
-			i(179738),	--
-			i(180578),	--
-			i(181812),	--
-			i(181813),	--
-			i(181814),	--
-			i(181881),	--
-			i(181882),	--
-			i(181883),	--
-			i(181884),	--
+			
+			-- BFA
+			i(165792),	-- Worn Cloak (future WQ?)
+			
+			-- ItemID/Retrieving
+			-- Vanilla
+			i(22230),	-- Frightmaw Hide (Cloak)
+			
+			
+			
+
+
+			-- Prof
+			i(161988),	-- Tidespray Linen Cloak of the Feather
+			i(161991),	-- Tidespray Linen Cloak of Resilience
+			
+			
+			
+			i(165261),	-- Unknown Cloak
+			
+			
+
+			
+			
+
 			i(163311),	-- 7th Legionnaire's Shroud
 			i(163312),	-- 7th Legionnaire's Shawl
 			i(163348),	-- Warfront Gear Cloak
@@ -1279,6 +1254,7 @@ _.NeverImplemented =
 			i(166699),	-- Desert Rucksack
 			i(92746),	-- Portable Refrigerator
 			i(38307),	-- Crafty's Bottomless Inscription Bag
+			i(166700),	-- Durable Sailor's Duffel
 		}),
 		f(55, {		-- Consumables
 			i(44871),	-- Greater Inscription of the Axe

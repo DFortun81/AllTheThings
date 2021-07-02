@@ -1462,6 +1462,15 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				}),
 				n(-46, {	-- Plate
 				}),
+				n(-322, {	-- Cloaks
+					i(174206),	-- 9.0 Covenant - Revendreth - Plate Cloak
+					i(179465),	-- 9.0 Covenant - Revendreth - Leather - Cloak
+					i(179474),	-- 9.0 Covenant - Revendreth - Cloth - Cloak
+					i(179483),	-- 9.0 Covenant - Revendreth - Mail Cloak
+					i(181812),	-- 9.0 Covenant - Revendreth - Accessory - Special Back - 1 - Red
+					i(181813),	-- 9.0 Covenant - Revendreth - Accessory - Special Back - 2 - Black
+					i(181814),	-- 9.0 Covenant - Revendreth - Accessory - Special Back - 3 - Red
+				}),
 			}),
 		}),
 	}),

@@ -775,4 +775,40 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(61554),	-- The Play's The Thing
 		q(63101),	-- XX REUSEME
 	}),
+	n(-10100, {	-- Shadowlands
+		n(-163, {	-- Armor
+			n(-319, {	-- Weapons
+				i(176017),	-- Ardenweald Quest 2H Mace
+				i(176018),	-- Ardenweald Quest 2H Mace
+				i(176019),	-- Ardenweald Quest 2H Mace
+				i(176020),	-- Ardenweald Quest 2H Mace
+				i(176021),	-- Ardenweald Quest 2H Mace
+				i(176047),	-- Ardenweald Quest Warglaives
+				i(176048),	-- Ardenweald Quest Warglaives
+				i(176049),	-- Ardenweald Quest Warglaives
+				i(176050),	-- Ardenweald Quest Warglaives
+				i(176051),	-- Ardenweald Quest Warglaives
+				i(176037),	-- Ardenweald Quest Shield
+				i(176038),	-- Ardenweald Quest Shield
+				i(176039),	-- Ardenweald Quest Shield
+				i(176040),	-- Ardenweald Quest Shield
+				i(176041),	-- Ardenweald Quest Shield
+				i(176027),	-- Ardenweald Quest Polearm
+				i(176028),	-- Ardenweald Quest Polearm
+				i(176029),	-- Ardenweald Quest Polearm
+				i(176030),	-- Ardenweald Quest Polearm
+				i(176031),	-- Ardenweald Quest Polearm
+				i(176022),	-- Ardenweald Quest Bow
+				i(176023),	-- Ardenweald Quest Bow
+				i(176024),	-- Ardenweald Quest Bow
+				i(176025),	-- Ardenweald Quest Bow
+				i(176026),	-- Ardenweald Quest Bow
+				i(176032),	-- Ardenweald Quest Sword
+				i(176033),	-- Ardenweald Quest Sword
+				i(176034),	-- Ardenweald Quest Sword
+				i(176035),	-- Ardenweald Quest Sword
+				i(176036),	-- Ardenweald Quest Sword
+			}),
+		}),
+	}),
 });

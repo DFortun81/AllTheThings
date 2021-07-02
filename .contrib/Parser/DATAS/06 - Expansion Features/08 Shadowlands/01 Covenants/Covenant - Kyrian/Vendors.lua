@@ -1529,3 +1529,23 @@ _.ExpansionFeatures =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10100, {	-- Shadowlands
+		n(-939, {	-- Covenant: Kyrian
+			n(-163, {	-- Armor
+				n(-43, {	-- Cloth
+				}),
+				n(-44, {	-- Leather
+				}),
+				n(-45, {	-- Mail
+				}),
+				n(-46, {	-- Plate
+				}),
+				n(-322, {	-- Cloaks
+					i(177692),	-- 9.0 Covenant - Bastion - Plate - Base - Cloak
+					i(179402),	-- 9.0 Covenant - Bastion - Mail - Base - Cloak
+				}),
+			}),
+		}),
+	}),
+});
