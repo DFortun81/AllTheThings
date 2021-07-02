@@ -719,7 +719,7 @@ _.Zones =
 					["coord"] = { 46.9, 41.7, THE_MAW },
 				}),
 				q(61079, {	-- The Jailer's Share
-					["sourceQuests"] = { 64541 },	-- The Cost of Death
+				--	["sourceQuests"] = {  },	-- no clue
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["isWeekly"] = true,
 					["coord"] = { 46.8, 41.6, THE_MAW },
