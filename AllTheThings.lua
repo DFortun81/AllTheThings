@@ -8010,25 +8010,83 @@ end)();
 
 -- Item Lib
 (function()
+-- TODO: Once Item information is stored in a single source table, this mechanism can reference that instead of using a cache table here
+local cache = {};
+local function GetCached(t)
+	local id = t.modItemID;
+	if not id then return nil; end
+	if not rawget(cache, id) then rawset(cache, id, {}); end
+	return rawget(cache, id), id;
+end
+local function GetCachedField(t, field)
+	--[[ Debug Prints ]
+	-- local t, id = GetCached(t);
+	-- if t[field] then
+	-- 	print("GetCachedField",id,field,t[field]);
+	-- end
+	--]]
+	t = GetCached(t);
+	return t[field];
+end
+-- Consolidated function to handle how many retries for information an Item may have
+local function HandleItemRetries(t)
+	if rawget(t, "retries") then
+		rawset(t, "retries", rawget(t, "retries") + 1);
+		if t.retries > app.MaximumItemInfoRetries then
+			local itemName = "Item #" .. t.itemID .. "*";
+			rawset(t, "title", L["FAILED_ITEM_INFO"]);
+			rawset(t, "text", itemName);
+			rawset(t, "retries", nil);
+			rawset(t, "link", nil);
+			rawset(t, "s", nil);
+			return itemName;
+		end
+	else
+		rawset(t, "retries", 1);
+	end
+end
+-- Consolidated function to cache available Item information
+local function RawSetItemInfoFromLink(t, link)
+	local name, link, quality, _, _, _, _, _, _, icon, _, _, _, b = GetItemInfo(link);
+	if link then
+		--[[ Debug Prints ]
+		-- local t, id = GetCached(t);
+		-- print("rawset item",id)
+		--]]
+		t = GetCached(t);
+		rawset(t, "retries", nil);
+		rawset(t, "name", name);
+		rawset(t, "link", link);
+		rawset(t, "icon", icon);
+		rawset(t, "q", quality);
+		if quality > 6 then
+			-- heirlooms return as 1 but are technically BoE for our concern
+			rawset(t, "b", 2);
+		else
+			rawset(t, "b", b);
+		end
+		return link;
+	else
+		HandleItemRetries(t);
+	end
+end
 local itemFields = {
 	["key"] = function(t)
 		return "itemID";
 	end,
 	["text"] = function(t)
-		return t.link;
+		return GetCachedField(t, "text") or t.link;
 	end,
 	["icon"] = function(t)
-		return t.itemID and select(5, GetItemInfoInstant(t.itemID)) or "Interface\\Icons\\INV_Misc_QuestionMark";
+		return GetCachedField(t, "icon") or (t.itemID and select(5, GetItemInfoInstant(t.itemID))) or "Interface\\Icons\\INV_Misc_QuestionMark";
 	end,
 	["link"] = function(t)
-		if t.rawlink then
-			local _, link, quality, _, _, _, _, _, _, icon = GetItemInfo(t.rawlink);
-			rawset(t, "retries", nil);
-			rawset(t, "link", link);
-			rawset(t, "icon", icon);
-			rawset(t, "q", quality);
-			return link;
-		end
+		local cachedLink = GetCachedField(t, "link");
+		if cachedLink then return cachedLink; end
+
+		-- item already has a pre-determined itemLink so use that
+		if t.rawlink then return RawSetItemInfoFromLink(t, t.rawlink); end
+		-- need to 'create' a valid accurate link for this item
 		local itemLink = t.itemID;
 		if itemLink then
 			local bonusID = t.bonusID;
@@ -8048,48 +8106,62 @@ local itemFields = {
 			else
 				itemLink = string.format("item:%d:::::::::::::", itemLink);
 			end
-			local _, link, quality, _, _, _, _, _, _, icon, _, _, _, b = GetItemInfo(itemLink);
-			-- print("Retry", rawget(t, "retries"), itemLink, link)
-			if link then
-				rawset(t, "retries", nil);
-				rawset(t, "link", link);
-				rawset(t, "icon", icon);
-				rawset(t, "q", quality);
-				-- TODO: can't rawset 'b' until determine if it's heirloom or not since that shows as 1
-				-- rawset(t, "b", b);
-				return link;
-			else
-				if rawget(t, "retries") then
-					rawset(t, "retries", rawget(t, "retries") + 1);
-					if t.retries > app.MaximumItemInfoRetries then
-						local itemName = "Item #" .. t.itemID .. "*";
-						rawset(t, "title", L["FAILED_ITEM_INFO"]);
-						rawset(t, "text", itemName);
-						rawset(t, "retries", nil);
-						rawset(t, "link", nil);
-						rawset(t, "s", nil);
-						return itemName;
-					end
-				else
-					rawset(t, "retries", 1);
-				end
-			end
+			-- save this link so it doesn't need to be built again
+			rawset(t, "rawlink", itemLink);
+			return RawSetItemInfoFromLink(t, itemLink);
+			-- local _, link, quality, _, _, _, _, _, _, icon, _, _, _, b = GetItemInfo(itemLink);
+			-- -- print("Retry", rawget(t, "retries"), itemLink, link)
+			-- if link then
+			-- 	rawset(t, "retries", nil);
+			-- 	rawset(t, "link", link);
+			-- 	rawset(t, "icon", icon);
+			-- 	rawset(t, "q", quality);
+			-- 	if quality > 6 then
+			-- 		-- heirlooms return as 1 but are technically BoE for our concern
+			-- 		rawset(t, "b", 2);
+			-- 	else
+			-- 		rawset(t, "b", b);
+			-- 	end
+			-- 	return link;
+			-- else
+			-- 	HandleItemRetries(t);
+			-- 	-- if rawget(t, "retries") then
+			-- 	-- 	rawset(t, "retries", rawget(t, "retries") + 1);
+			-- 	-- 	if t.retries > app.MaximumItemInfoRetries then
+			-- 	-- 		local itemName = "Item #" .. t.itemID .. "*";
+			-- 	-- 		rawset(t, "title", L["FAILED_ITEM_INFO"]);
+			-- 	-- 		rawset(t, "text", itemName);
+			-- 	-- 		rawset(t, "retries", nil);
+			-- 	-- 		rawset(t, "link", nil);
+			-- 	-- 		rawset(t, "s", nil);
+			-- 	-- 		return itemName;
+			-- 	-- 	end
+			-- 	-- else
+			-- 	-- 	rawset(t, "retries", 1);
+			-- 	-- end
+			-- end
 		end
 	end,
 	["name"] = function(t)
-		local link = t.link;
-		return link and GetItemInfo(link);
+		return GetCachedField(t, "name") or RETRIEVING_DATA;
+		-- local link = t.link;
+		-- return link and GetItemInfo(link);
 	end,
 	["specs"] = function(t)
 		return GetFixedItemSpecInfo(t.itemID);
 	end,
 	["b"] = function(t)
-		local link = t.link;
-		if link then
-			return select(14, GetItemInfo(link));
-		end
+		return GetCachedField(t, "b") or 2;
+		-- local link = t.link;
+		-- -- return link and select(14, GetItemInfo(link)) or 2;
+		-- if link then
+		-- 	-- rawset(t, "b", select(14, GetItemInfo(link)));
+		-- 	print("rawset.b",t.modItemID,rawget(t, "b"))
+		-- 	return rawget(t, "b");
+		-- end
 		-- assume BoE item since it is unsourced
-		return 2;
+		-- print("default BoE",t.modItemID)
+		-- return 2;
 	end,
 	["f"] = function(t)
 		-- TODO: this logic causes tons of lag. why do we need to determine if an item is a quest item for filtering?
@@ -8108,7 +8180,7 @@ local itemFields = {
 		-- end
 		-- Unknown item type after Parser, so make sure we save the filter for later references
 		rawset(t, "f", 50);
-		return rawget(t, "t");
+		return rawget(t, "f");
 	end,
 	["tsm"] = function(t)
 		local itemLink = t.itemID;
