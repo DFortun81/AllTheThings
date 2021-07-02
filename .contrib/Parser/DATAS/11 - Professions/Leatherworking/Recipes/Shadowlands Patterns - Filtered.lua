@@ -54,6 +54,16 @@ profession(LEATHERWORKING, {
 						},
 					},
 				},
+
+			},
+		},
+		{
+			["categoryID"] = 1335,	-- Other
+			["g"] = {
+				{
+					["recipeID"] = 354800,	-- Pallid Bone Flute
+					["name"] = "Pallid Bone Flute",
+				},
 			},
 		},
 	}),

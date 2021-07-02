@@ -4,6 +4,31 @@ profession(ALCHEMY, {
 			["categoryID"] = 1294,	-- Shadowlands Alchemy
 			["g"] = {
 				{
+					["categoryID"] = 1517,	-- Other
+					["g"] = {
+						{
+							["recipeID"] = 354885,	-- Blossom Burst
+							["name"] = "Blossom Burst",
+						},
+						{
+							["recipeID"] = 354881,	-- Glory Burst
+							["name"] = "Glory Burst",
+						},
+						{
+							["recipeID"] = 354880,	-- Marrow Burst
+							["name"] = "Marrow Burst",
+						},
+						{
+							["recipeID"] = 354884,	-- Torch Burst
+							["name"] = "Torch Burst",
+						},
+						{
+							["recipeID"] = 354882,	-- Widow Burst
+							["name"] = "Widow Burst",
+						},
+					},
+				},
+				{
 					-- All Quest Recipes marked unobtainable(training) because they are only learned temporarily
 					-- for world quests then disappear from the spellbook after the quest is completed.
 					["categoryID"] = 1525,	-- Quest Recipes

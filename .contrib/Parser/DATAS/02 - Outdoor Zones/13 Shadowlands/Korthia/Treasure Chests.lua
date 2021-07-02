@@ -407,6 +407,7 @@ _.Zones =
 						{ 41.0, 50.5, KORTHIA },
 					},
 					["g"] = {
+						i(186999),	-- Pattern: Pallid Bone Flute
 						i(187007),	-- Recipe: Bonemeal Bread
 						i(187442),	-- Scholar's Ancient Pack
 					},
