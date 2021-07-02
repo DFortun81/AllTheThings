@@ -708,6 +708,7 @@ _.Zones =
 						crit(20, {	-- Yero the Skittish
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
 						}),
+						i(186228),	-- Helm of the Skittish Hero
 					},
 				}),
 				n(177444, {	-- Ylva <Mate of Guarm>
@@ -760,6 +761,7 @@ _.Zones =
 
 _.HiddenQuestTriggers = {
 	q(61136),	-- Agonix bonus objective
+	q(60920),	-- Akros bonus objective
 	q(59230),	-- Dartanos bonus objective
 	q(60903),	-- Krala bonus objective
 	q(61125),	-- Malevolent Stygia bonus objective
