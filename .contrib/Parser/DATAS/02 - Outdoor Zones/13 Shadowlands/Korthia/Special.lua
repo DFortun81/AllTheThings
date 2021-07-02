@@ -32,6 +32,7 @@ _.Zones =
 						{ 49.3, 41.8, KORTHIA },
 						{ 50.6, 22.9, KORTHIA },
 						{ 59.8, 15.1, KORTHIA },
+						{ 61.3, 40.3, KORTHIA },
 						{ 62.4, 49.7, KORTHIA },
 					},
 					["icon"] = 3155422,
