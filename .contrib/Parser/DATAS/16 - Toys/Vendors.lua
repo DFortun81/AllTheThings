@@ -49,6 +49,7 @@ _.Toys =
 		i(129279),		-- Enchanted Stone Whistle
 		i(134007),		-- Eternal Black Diamond Ring
 		i(45020),		-- Exodar Banner (Alliance)
+		i(186974),		-- Experimental Anima Cell
 		i(136846),		-- Familiar Stone
 		i(104324),		-- Foot Ball
 		i(88802),		-- Foxicopter Controller

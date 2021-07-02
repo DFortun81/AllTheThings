@@ -739,6 +739,7 @@ t(178530);	-- Wreath-A-Rang
 t(187154);	-- Ancient Korthian Runes
 t(183901);	-- Bonestorm Top
 t(187139);	-- Bottled Shade Heart
+t(186974);	-- Experimental Anima Cell
 t(187051);	-- Forgotten Feather
 t(187155);	-- Guise of the Changeling
 t(187344);	-- Offering Kit Maker

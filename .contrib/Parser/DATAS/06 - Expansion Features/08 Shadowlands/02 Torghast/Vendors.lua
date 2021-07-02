@@ -14,15 +14,15 @@ _.ExpansionFeatures =
 						170257,	-- Broker Ve'nott
 					},
 					["g"] = {
+						i(187086, {	-- Deathsworn's Sterling Shoulderguards
+							["cost"] = { { "c", 1728, 300 } },	-- 300x Phantasma
+						}),
+						i(186974),	-- Experimental Anima Cell (TOY!)
 						i(187034, {	-- Gilded Agony Cage
 							["cost"] = { { "c", 1728, 1000 } },	-- 1,000x Phantasma
 						}),
 						i(187083, {	-- Gilded Eye Crescent
 							["cost"] = { { "c", 1728, 1000 } },	-- 1,000x Phantasma
-						}),
-						--
-						i(187086, {	-- Deathsworn's Sterling Shoulderguards
-							["cost"] = { { "c", 1728, 300 } },	-- 300x Phantasma
 						}),
 						i(187089, {	-- Sterling Blade-Tipped Spaulders
 							["cost"] = { { "c", 1728, 300 } },	-- 300x Phantasma
