@@ -1611,1098 +1611,771 @@ _.Zones =
 						i(87112, {	-- White Tiger Greaves
 							["cost"] = { { "i", 89253, 1 }, },	-- Leggings of the Shadowy Conqueror (Heroic)
 						}),
-						{	-- [LFR] Helm of the Shadowy Protector [Monk / Hunter / Shaman / Warrior]
-							["itemID"] = 89275,	-- Helm of the Shadowy Protector
-							["classes"] = {
-								MONK,
-								HUNTER,
-								SHAMAN,
-								WARRIOR,
-							},
-							["g"] = {
-								{	-- Red Crane Crown
-									["itemID"] = 86726,	-- Red Crane Crown
-								},
-								{	-- Red Crane Helm
-									["itemID"] = 86730,	-- Red Crane Helm
-								},
-								{	-- Red Crane Headpiece
-									["itemID"] = 86736,	-- Red Crane Headpiece
-								},
-								{	-- Yaungol Slayer's Headguard
-									["itemID"] = 86636,	-- Yaungol Slayer's Headguard
-								},
-								{	-- Firebird's Helmet
-									["itemID"] = 86626,	-- Firebird's Helmet
-								},
-								{	-- Firebird's Headpiece
-									["itemID"] = 86631,	-- Firebird's Headpiece
-								},
-								{	-- Firebird's Faceguard
-									["itemID"] = 86691,	-- Firebird's Faceguard
-								},
-								{	-- Faceguard of Resounding Rings
-									["itemID"] = 86666,	-- Faceguard of Resounding Rings
-								},
-								{	-- Helmet of Resounding Rings
-									["itemID"] = 86673,	-- Helmet of Resounding Rings
-								},
-							},
-						},
-						{	-- [LFR] Shoulders of the Shadowy Protector [Monk / Hunter / Shaman / Warrior]
-							["itemID"] = 89278,	-- Shoulders of the Shadowy Protector
-							["classes"] = {
-								MONK,
-								HUNTER,
-								SHAMAN,
-								WARRIOR,
-							},
-							["g"] = {
-								{	-- Red Crane Shoulderguards
-									["itemID"] = 86724,	-- Red Crane Shoulderguards
-								},
-								{	-- Red Crane Mantle
-									["itemID"] = 86733,	-- Red Crane Mantle
-								},
-								{	-- Red Crane Spaulders
-									["itemID"] = 86738,	-- Red Crane Spaulders
-								},
-								{	-- Yaungol Slayer's Spaulders
-									["itemID"] = 86634,	-- Yaungol Slayer's Spaulders
-								},
-								{	-- Firebird's Spaulders
-									["itemID"] = 86624,	-- Firebird's Spaulders
-								},
-								{	-- Firebird's Shoulderwraps
-									["itemID"] = 86633,	-- Firebird's Shoulderwraps
-								},
-								{	-- Firebird's Mantle
-									["itemID"] = 86689,	-- Firebird's Mantle
-								},
-								{	-- Shoulderguards of Resounding Rings
-									["itemID"] = 86664,	-- Shoulderguards of Resounding Rings
-								},
-								{	-- Pauldrons of Resounding Rings
-									["itemID"] = 86669,	-- Pauldrons of Resounding Rings
-								},
-							},
-						},
-						{	-- [LFR] Chest of the Shadowy Protector [Monk / Hunter / Shaman / Warrior]
-							["itemID"] = 89266,	-- Chest of the Shadowy Protector
-							["classes"] = {
-								MONK,
-								HUNTER,
-								SHAMAN,
-								WARRIOR,
-							},
-							["g"] = {
-								{	-- Red Crane Chestguard
-									["itemID"] = 86728,	-- Red Crane Chestguard
-								},
-								{	-- Red Crane Vest
-									["itemID"] = 86732,	-- Red Crane Vest
-								},
-								{	-- Red Crane Tunic
-									["itemID"] = 86734,	-- Red Crane Tunic
-								},
-								{	-- Yaungol Slayer's Tunic
-									["itemID"] = 86638,	-- Yaungol Slayer's Tunic
-								},
-								{	-- Firebird's Cuirass
-									["itemID"] = 86628,	-- Firebird's Cuirass
-								},
-								{	-- Firebird's Hauberk
-									["itemID"] = 86629,	-- Firebird's Hauberk
-								},
-								{	-- Firebird's Tunic
-									["itemID"] = 86693,	-- Firebird's Tunic
-								},
-								{	-- Chestguard of Resounding Rings
-									["itemID"] = 86668,	-- Chestguard of Resounding Rings
-								},
-								{	-- Battleplate of Resounding Rings
-									["itemID"] = 86672,	-- Battleplate of Resounding Rings
-								},
-							},
-						},
-						{	-- [LFR] Gauntlets of the Shadowy Protector [Monk / Hunter / Shaman / Warrior]
-							["itemID"] = 89272,	-- Gauntlets of the Shadowy Protector
-							["classes"] = {
-								MONK,
-								HUNTER,
-								SHAMAN,
-								WARRIOR,
-							},
-							["g"] = {
-								{	-- Red Crane Gauntlets
-									["itemID"] = 86727,	-- Red Crane Gauntlets
-								},
-								{	-- Red Crane Handwraps
-									["itemID"] = 86729,	-- Red Crane Handwraps
-								},
-								{	-- Red Crane Grips
-									["itemID"] = 86735,	-- Red Crane Grips
-								},
-								{	-- Yaungol Slayer's Gloves
-									["itemID"] = 86637,	-- Yaungol Slayer's Gloves
-								},
-								{	-- Firebird's Grips
-									["itemID"] = 86627,	-- Firebird's Grips
-								},
-								{	-- Firebird's Gloves
-									["itemID"] = 86630,	-- Firebird's Gloves
-								},
-								{	-- Firebird's Handwraps
-									["itemID"] = 86692,	-- Firebird's Handwraps
-								},
-								{	-- Handguards of Resounding Rings
-									["itemID"] = 86667,	-- Handguards of Resounding Rings
-								},
-								{	-- Gauntlets of Resounding Rings
-									["itemID"] = 86671,	-- Gauntlets of Resounding Rings
-								},
-							},
-						},
-						{	-- [LFR] Leggings of the Shadowy Protector [Monk / Hunter / Shaman / Warrior]
-							["itemID"] = 89269,	-- Leggings of the Shadowy Protector
-							["classes"] = {
-								MONK,
-								HUNTER,
-								SHAMAN,
-								WARRIOR,
-							},
-							["g"] = {
-								{	-- Red Crane Legguards
-									["itemID"] = 86725,	-- Red Crane Legguards
-								},
-								{	-- Red Crane Legwraps
-									["itemID"] = 86731,	-- Red Crane Legwraps
-								},
-								{	-- Red Crane Leggings
-									["itemID"] = 86737,	-- Red Crane Leggings
-								},
-								{	-- Yaungol Slayer's Legguards
-									["itemID"] = 86635,	-- Yaungol Slayer's Legguards
-								},
-								{	-- Firebird's Legguards
-									["itemID"] = 86625,	-- Firebird's Legguards
-								},
-								{	-- Firebird's Kilt
-									["itemID"] = 86632,	-- Firebird's Kilt
-								},
-								{	-- Firebird's Legwraps
-									["itemID"] = 86690,	-- Firebird's Legwraps
-								},
-								{	-- Legguards of Resounding Rings
-									["itemID"] = 86665,	-- Legguards of Resounding Rings
-								},
-								{	-- Legplates of Resounding Rings
-									["itemID"] = 86670,	-- Legplates of Resounding Rings
-								},
-							},
-						},
-						{	-- [Normal] Helm of the Shadowy Protector [Monk / Hunter / Shaman / Warrior]
-							["itemID"] = 89236,	-- Helm of the Shadowy Protector
-							["classes"] = {
-								MONK,
-								HUNTER,
-								SHAMAN,
-								WARRIOR,
-							},
-							["g"] = {
-								{	-- Red Crane Crown
-									["itemID"] = 85386,	-- Red Crane Crown
-								},
-								{	-- Red Crane Helm
-									["itemID"] = 85390,	-- Red Crane Helm
-								},
-								{	-- Red Crane Headpiece
-									["itemID"] = 85396,	-- Red Crane Headpiece
-								},
-								{	-- Yaungol Slayer's Headguard
-									["itemID"] = 85296,	-- Yaungol Slayer's Headguard
-								},
-								{	-- Firebird's Helmet
-									["itemID"] = 85286,	-- Firebird's Helmet
-								},
-								{	-- Firebird's Headpiece
-									["itemID"] = 85291,	-- Firebird's Headpiece
-								},
-								{	-- Firebird's Faceguard
-									["itemID"] = 85351,	-- Firebird's Faceguard
-								},
-								{	-- Faceguard of Resounding Rings
-									["itemID"] = 85326,	-- Faceguard of Resounding Rings
-								},
-								{	-- Helmet of Resounding Rings
-									["itemID"] = 85333,	-- Helmet of Resounding Rings
-								},
-							},
-						},
-						{	-- [Normal] Shoulders of the Shadowy Protector [Monk / Hunter / Shaman / Warrior]
-							["itemID"] = 89247,	-- Shoulders of the Shadowy Protector
-							["classes"] = {
-								MONK,
-								HUNTER,
-								SHAMAN,
-								WARRIOR,
-							},
-							["g"] = {
-								{	-- Red Crane Shoulderguards
-									["itemID"] = 85384,	-- Red Crane Shoulderguards
-								},
-								{	-- Red Crane Mantle
-									["itemID"] = 85393,	-- Red Crane Mantle
-								},
-								{	-- Red Crane Spaulders
-									["itemID"] = 85398,	-- Red Crane Spaulders
-								},
-								{	-- Yaungol Slayer's Spaulders
-									["itemID"] = 85294,	-- Yaungol Slayer's Spaulders
-								},
-								{	-- Firebird's Spaulders
-									["itemID"] = 85284,	-- Firebird's Spaulders
-								},
-								{	-- Firebird's Shoulderwraps
-									["itemID"] = 85293,	-- Firebird's Shoulderwraps
-								},
-								{	-- Firebird's Mantle
-									["itemID"] = 85349,	-- Firebird's Mantle
-								},
-								{	-- Shoulderguards of Resounding Rings
-									["itemID"] = 85324,	-- Shoulderguards of Resounding Rings
-								},
-								{	-- Pauldrons of Resounding Rings
-									["itemID"] = 85329,	-- Pauldrons of Resounding Rings
-								},
-							},
-						},
-						{	-- [Normal] Chest of the Shadowy Protector [Monk / Hunter / Shaman / Warrior]
-							["itemID"] = 89238,	-- Chest of the Shadowy Protector
-							["classes"] = {
-								MONK,
-								HUNTER,
-								SHAMAN,
-								WARRIOR,
-							},
-							["g"] = {
-								{	-- Red Crane Chestguard
-									["itemID"] = 85388,	-- Red Crane Chestguard
-								},
-								{	-- Red Crane Vest
-									["itemID"] = 85392,	-- Red Crane Vest
-								},
-								{	-- Red Crane Tunic
-									["itemID"] = 85394,	-- Red Crane Tunic
-								},
-								{	-- Yaungol Slayer's Tunic
-									["itemID"] = 85298,	-- Yaungol Slayer's Tunic
-								},
-								{	-- Firebird's Cuirass
-									["itemID"] = 85288,	-- Firebird's Cuirass
-								},
-								{	-- Firebird's Hauberk
-									["itemID"] = 85289,	-- Firebird's Hauberk
-								},
-								{	-- Firebird's Tunic
-									["itemID"] = 85353,	-- Firebird's Tunic
-								},
-								{	-- Chestguard of Resounding Rings
-									["itemID"] = 85328,	-- Chestguard of Resounding Rings
-								},
-								{	-- Battleplate of Resounding Rings
-									["itemID"] = 85332,	-- Battleplate of Resounding Rings
-								},
-							},
-						},
-						{	-- [Normal] Gauntlets of the Shadowy Protector [Monk / Hunter / Shaman / Warrior]
-							["itemID"] = 89241,	-- Gauntlets of the Shadowy Protector
-							["classes"] = {
-								MONK,
-								HUNTER,
-								SHAMAN,
-								WARRIOR,
-							},
-							["g"] = {
-								{	-- Red Crane Gauntlets
-									["itemID"] = 85387,	-- Red Crane Gauntlets
-								},
-								{	-- Red Crane Handwraps
-									["itemID"] = 85389,	-- Red Crane Handwraps
-								},
-								{	-- Red Crane Grips
-									["itemID"] = 85395,	-- Red Crane Grips
-								},
-								{	-- Yaungol Slayer's Gloves
-									["itemID"] = 85297,	-- Yaungol Slayer's Gloves
-								},
-								{	-- Firebird's Grips
-									["itemID"] = 85287,	-- Firebird's Grips
-								},
-								{	-- Firebird's Gloves
-									["itemID"] = 85290,	-- Firebird's Gloves
-								},
-								{	-- Firebird's Handwraps
-									["itemID"] = 85352,	-- Firebird's Handwraps
-								},
-								{	-- Handguards of Resounding Rings
-									["itemID"] = 85327,	-- Handguards of Resounding Rings
-								},
-								{	-- Gauntlets of Resounding Rings
-									["itemID"] = 85331,	-- Gauntlets of Resounding Rings
-								},
-							},
-						},
-						{	-- [Normal] Leggings of the Shadowy Protector [Monk / Hunter / Shaman / Warrior]
-							["itemID"] = 89244,	-- Leggings of the Shadowy Protector
-							["classes"] = {
-								MONK,
-								HUNTER,
-								SHAMAN,
-								WARRIOR,
-							},
-							["g"] = {
-								{	-- Red Crane Legguards
-									["itemID"] = 85385,	-- Red Crane Legguards
-								},
-								{	-- Red Crane Legwraps
-									["itemID"] = 85391,	-- Red Crane Legwraps
-								},
-								{	-- Red Crane Leggings
-									["itemID"] = 85397,	-- Red Crane Leggings
-								},
-								{	-- Yaungol Slayer's Legguards
-									["itemID"] = 85295,	-- Yaungol Slayer's Legguards
-								},
-								{	-- Firebird's Legguards
-									["itemID"] = 85285,	-- Firebird's Legguards
-								},
-								{	-- Firebird's Kilt
-									["itemID"] = 85292,	-- Firebird's Kilt
-								},
-								{	-- Firebird's Legwraps
-									["itemID"] = 85350,	-- Firebird's Legwraps
-								},
-								{	-- Legguards of Resounding Rings
-									["itemID"] = 85325,	-- Legguards of Resounding Rings
-								},
-								{	-- Legplates of Resounding Rings
-									["itemID"] = 85330,	-- Legplates of Resounding Rings
-								},
-							},
-						},
-						{	-- [Heroic] Helm of the Shadowy Protector [Monk / Hunter / Shaman / Warrior]
-							["itemID"] = 89260,	-- Helm of the Shadowy Protector
-							["classes"] = {
-								MONK,
-								HUNTER,
-								SHAMAN,
-								WARRIOR,
-							},
-							["g"] = {
-								{	-- Red Crane Headpiece
-									["itemID"] = 87086,	-- Red Crane Headpiece
-								},
-								{	-- Red Crane Helm
-									["itemID"] = 87090,	-- Red Crane Helm
-								},
-								{	-- Red Crane Crown
-									["itemID"] = 87096,	-- Red Crane Crown
-								},
-								{	-- Yaungol Slayer's Headguard
-									["itemID"] = 87004,	-- Yaungol Slayer's Headguard
-								},
-								{	-- Firebird's Faceguard
-									["itemID"] = 87131,	-- Firebird's Faceguard
-								},
-								{	-- Firebird's Helmet
-									["itemID"] = 87136,	-- Firebird's Helmet
-								},
-								{	-- Firebird's Headpiece
-									["itemID"] = 87141,	-- Firebird's Headpiece
-								},
-								{	-- Helmet of Resounding Rings
-									["itemID"] = 87192,	-- Helmet of Resounding Rings
-								},
-								{	-- Faceguard of Resounding Rings
-									["itemID"] = 87199,	-- Faceguard of Resounding Rings
-								},
-							},
-						},
-						{	-- [Heroic] Shoulders of the Shadowy Protector [Monk / Hunter / Shaman / Warrior]
-							["itemID"] = 89263,	-- Shoulders of the Shadowy Protector
-							["classes"] = {
-								MONK,
-								HUNTER,
-								SHAMAN,
-								WARRIOR,
-							},
-							["g"] = {
-								{	-- Red Crane Spaulders
-									["itemID"] = 87088,	-- Red Crane Spaulders
-								},
-								{	-- Red Crane Mantle
-									["itemID"] = 87093,	-- Red Crane Mantle
-								},
-								{	-- Red Crane Shoulderguards
-									["itemID"] = 87098,	-- Red Crane Shoulderguards
-								},
-								{	-- Yaungol Slayer's Spaulders
-									["itemID"] = 87006,	-- Yaungol Slayer's Spaulders
-								},
-								{	-- Firebird's Mantle
-									["itemID"] = 87133,	-- Firebird's Mantle
-								},
-								{	-- Firebird's Spaulders
-									["itemID"] = 87138,	-- Firebird's Spaulders
-								},
-								{	-- Firebird's Shoulderwraps
-									["itemID"] = 87143,	-- Firebird's Shoulderwraps
-								},
-								{	-- Pauldrons of Resounding Rings
-									["itemID"] = 87196,	-- Pauldrons of Resounding Rings
-								},
-								{	-- Shoulderguards of Resounding Rings
-									["itemID"] = 87201,	-- Shoulderguards of Resounding Rings
-								},
-							},
-						},
-						{	-- [Heroic] Chest of the Shadowy Protector [Monk / Hunter / Shaman / Warrior]
-							["itemID"] = 89251,	-- Chest of the Shadowy Protector
-							["classes"] = {
-								MONK,
-								HUNTER,
-								SHAMAN,
-								WARRIOR,
-							},
-							["g"] = {
-								{	-- Red Crane Tunic
-									["itemID"] = 87084,	-- Red Crane Tunic
-								},
-								{	-- Red Crane Vest
-									["itemID"] = 87092,	-- Red Crane Vest
-								},
-								{	-- Red Crane Chestguard
-									["itemID"] = 87094,	-- Red Crane Chestguard
-								},
-								{	-- Yaungol Slayer's Tunic
-									["itemID"] = 87002,	-- Yaungol Slayer's Tunic
-								},
-								{	-- Firebird's Tunic
-									["itemID"] = 87129,	-- Firebird's Tunic
-								},
-								{	-- Firebird's Cuirass
-									["itemID"] = 87134,	-- Firebird's Cuirass
-								},
-								{	-- Firebird's Hauberk
-									["itemID"] = 87139,	-- Firebird's Hauberk
-								},
-								{	-- Battleplate of Resounding Rings
-									["itemID"] = 87193,	-- Battleplate of Resounding Rings
-								},
-								{	-- Chestguard of Resounding Rings
-									["itemID"] = 87197,	-- Chestguard of Resounding Rings
-								},
-							},
-						},
-						{	-- [Heroic] Gauntlets of the Shadowy Protector [Monk / Hunter / Shaman / Warrior]
-							["itemID"] = 89257,	-- Gauntlets of the Shadowy Protector
-							["classes"] = {
-								MONK,
-								HUNTER,
-								SHAMAN,
-								WARRIOR,
-							},
-							["g"] = {
-								{	-- Red Crane Grips
-									["itemID"] = 87085,	-- Red Crane Grips
-								},
-								{	-- Red Crane Handwraps
-									["itemID"] = 87089,	-- Red Crane Handwraps
-								},
-								{	-- Red Crane Gauntlets
-									["itemID"] = 87095,	-- Red Crane Gauntlets
-								},
-								{	-- Yaungol Slayer's Gloves
-									["itemID"] = 87003,	-- Yaungol Slayer's Gloves
-								},
-								{	-- Firebird's Handwraps
-									["itemID"] = 87130,	-- Firebird's Handwraps
-								},
-								{	-- Firebird's Grips
-									["itemID"] = 87135,	-- Firebird's Grips
-								},
-								{	-- Firebird's Gloves
-									["itemID"] = 87140,	-- Firebird's Gloves
-								},
-								{	-- Gauntlets of Resounding Rings
-									["itemID"] = 87194,	-- Gauntlets of Resounding Rings
-								},
-								{	-- Handguards of Resounding Rings
-									["itemID"] = 87198,	-- Handguards of Resounding Rings
-								},
-							},
-						},
-						{	-- [Heroic] Leggings of the Shadowy Protector [Monk / Hunter / Shaman / Warrior]
-							["itemID"] = 89254,	-- Leggings of the Shadowy Protector
-							["classes"] = {
-								MONK,
-								HUNTER,
-								SHAMAN,
-								WARRIOR,
-							},
-							["g"] = {
-								{	-- Red Crane Leggings
-									["itemID"] = 87087,	-- Red Crane Leggings
-								},
-								{	-- Red Crane Legwraps
-									["itemID"] = 87091,	-- Red Crane Legwraps
-								},
-								{	-- Red Crane Legguards
-									["itemID"] = 87097,	-- Red Crane Legguards
-								},
-								{	-- Yaungol Slayer's Legguards
-									["itemID"] = 87005,	-- Yaungol Slayer's Legguards
-								},
-								{	-- Firebird's Legwraps
-									["itemID"] = 87132,	-- Firebird's Legwraps
-								},
-								{	-- Firebird's Legguards
-									["itemID"] = 87137,	-- Firebird's Legguards
-								},
-								{	-- Firebird's Kilt
-									["itemID"] = 87142,	-- Firebird's Kilt
-								},
-								{	-- Legplates of Resounding Rings
-									["itemID"] = 87195,	-- Legplates of Resounding Rings
-								},
-								{	-- Legguards of Resounding Rings
-									["itemID"] = 87200,	-- Legguards of Resounding Rings
-								},
-							},
-						},
-						{	-- [LFR] Helm of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
-							["itemID"] = 89273,	-- Helm of the Shadowy Vanquisher
-							["classes"] = {
-								MAGE,
-								DRUID,
-								ROGUE,
-								DEATHKNIGHT,
-							},
-							["g"] = {
-								{	-- Hood of the Burning Scroll
-									["itemID"] = 86717,	-- Hood of the Burning Scroll
-								},
-								{	-- Eternal Blossom Cover
-									["itemID"] = 86647,	-- Eternal Blossom Cover
-								},
-								{	-- Eternal Blossom Headpiece
-									["itemID"] = 86651,	-- Eternal Blossom Headpiece
-								},
-								{	-- Eternal Blossom Helm
-									["itemID"] = 86697,	-- Eternal Blossom Helm
-								},
-								{	-- Eternal Blossom Headguard
-									["itemID"] = 86721,	-- Eternal Blossom Headguard
-								},
-								{	-- Helmet of the Thousandfold Blades
-									["itemID"] = 86641,	-- Helmet of the Thousandfold Blades
-								},
-								{	-- Faceguard of the Lost Catacomb
-									["itemID"] = 86656,	-- Faceguard of the Lost Catacomb
-								},
-								{	-- Helmet of the Lost Catacomb
-									["itemID"] = 86676,	-- Helmet of the Lost Catacomb
-								},
-							},
-						},
-						{	-- [LFR] Shoulders of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
-							["itemID"] = 89276,	-- Shoulders of the Shadowy Vanquisher
-							["classes"] = {
-								MAGE,
-								DRUID,
-								ROGUE,
-								DEATHKNIGHT,
-							},
-							["g"] = {
-								{	-- Mantle of the Burning Scroll
-									["itemID"] = 86714,	-- Mantle of the Burning Scroll
-								},
-								{	-- Eternal Blossom Shoulderwraps
-									["itemID"] = 86644,	-- Eternal Blossom Shoulderwraps
-								},
-								{	-- Eternal Blossom Spaulders
-									["itemID"] = 86649,	-- Eternal Blossom Spaulders
-								},
-								{	-- Eternal Blossom Mantle
-									["itemID"] = 86694,	-- Eternal Blossom Mantle
-								},
-								{	-- Eternal Blossom Shoulderguards
-									["itemID"] = 86723,	-- Eternal Blossom Shoulderguards
-								},
-								{	-- Spaulders of the Thousandfold Blades
-									["itemID"] = 86639,	-- Spaulders of the Thousandfold Blades
-								},
-								{	-- Shoulderguards of the Lost Catacomb
-									["itemID"] = 86654,	-- Shoulderguards of the Lost Catacomb
-								},
-								{	-- Pauldrons of the Lost Catacomb
-									["itemID"] = 86674,	-- Pauldrons of the Lost Catacomb
-								},
-							},
-						},
-						{	-- [LFR] Chest of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
-							["itemID"] = 89264,	-- Chest of the Shadowy Vanquisher
-							["classes"] = {
-								MAGE,
-								DRUID,
-								ROGUE,
-								DEATHKNIGHT,
-							},
-							["g"] = {
-								{	-- Robes of the Burning Scroll
-									["itemID"] = 86715,	-- Robes of the Burning Scroll
-								},
-								{	-- Eternal Blossom Vestment
-									["itemID"] = 86645,	-- Eternal Blossom Vestment
-								},
-								{	-- Eternal Blossom Raiment
-									["itemID"] = 86653,	-- Eternal Blossom Raiment
-								},
-								{	-- Eternal Blossom Robes
-									["itemID"] = 86695,	-- Eternal Blossom Robes
-								},
-								{	-- Eternal Blossom Tunic
-									["itemID"] = 86719,	-- Eternal Blossom Tunic
-								},
-								{	-- Tunic of the Thousandfold Blades
-									["itemID"] = 86643,	-- Tunic of the Thousandfold Blades
-								},
-								{	-- Chestguard of the Lost Catacomb
-									["itemID"] = 86658,	-- Chestguard of the Lost Catacomb
-								},
-								{	-- Breastplate of the Lost Catacomb
-									["itemID"] = 86678,	-- Breastplate of the Lost Catacomb
-								},
-							},
-						},
-						{	-- [LFR] Gloves of the Burning Scroll [Mage / Druid / Rogue / Death Knight]
-							["itemID"] = 86718,	-- Gloves of the Burning Scroll
-							["classes"] = {
-								MAGE,
-								DRUID,
-								ROGUE,
-								DEATHKNIGHT,
-							},
-							["g"] = {
-								{	-- Eternal Blossom Gloves
-									["itemID"] = 86648,	-- Eternal Blossom Gloves
-								},
-								{	-- Eternal Blossom Grips
-									["itemID"] = 86652,	-- Eternal Blossom Grips
-								},
-								{	-- Eternal Blossom Handwraps
-									["itemID"] = 86698,	-- Eternal Blossom Handwraps
-								},
-								{	-- Eternal Blossom Handguards
-									["itemID"] = 86720,	-- Eternal Blossom Handguards
-								},
-								{	-- Gloves of the Thousandfold Blades
-									["itemID"] = 86642,	-- Gloves of the Thousandfold Blades
-								},
-								{	-- Handguards of the Lost Catacomb
-									["itemID"] = 86657,	-- Handguards of the Lost Catacomb
-								},
-								{	-- Gauntlets of the Lost Catacomb
-									["itemID"] = 86677,	-- Gauntlets of the Lost Catacomb
-								},
-							},
-						},
-						{	-- [LFR] Leggings of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
-							["itemID"] = 89267,	-- Leggings of the Shadowy Vanquisher
-							["classes"] = {
-								MAGE,
-								DRUID,
-								ROGUE,
-								DEATHKNIGHT,
-							},
-							["g"] = {
-								{	-- Leggings of the Burning Scroll
-									["itemID"] = 86716,	-- Leggings of the Burning Scroll
-								},
-								{	-- Eternal Blossom Leggings
-									["itemID"] = 86646,	-- Eternal Blossom Leggings
-								},
-								{	-- Eternal Blossom Legguards
-									["itemID"] = 86650,	-- Eternal Blossom Legguards
-								},
-								{	-- Eternal Blossom Legwraps
-									["itemID"] = 86696,	-- Eternal Blossom Legwraps
-								},
-								{	-- Eternal Blossom Breeches
-									["itemID"] = 86722,	-- Eternal Blossom Breeches
-								},
-								{	-- Legguards of the Thousandfold Blades
-									["itemID"] = 86640,	-- Legguards of the Thousandfold Blades
-								},
-								{	-- Legguards of the Lost Catacomb
-									["itemID"] = 86655,	-- Legguards of the Lost Catacomb
-								},
-								{	-- Greaves of the Lost Catacomb
-									["itemID"] = 86675,	-- Greaves of the Lost Catacomb
-								},
-							},
-						},
-						{	-- [Normal] Helm of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
-							["itemID"] = 89234,	-- Helm of the Shadowy Vanquisher
-							["classes"] = {
-								MAGE,
-								DRUID,
-								ROGUE,
-								DEATHKNIGHT,
-							},
-							["g"] = {
-								{	-- Hood of the Burning Scroll
-									["itemID"] = 85377,	-- Hood of the Burning Scroll
-								},
-								{	-- Eternal Blossom Cover
-									["itemID"] = 85307,	-- Eternal Blossom Cover
-								},
-								{	-- Eternal Blossom Headpiece
-									["itemID"] = 85311,	-- Eternal Blossom Headpiece
-								},
-								{	-- Eternal Blossom Helm
-									["itemID"] = 85357,	-- Eternal Blossom Helm
-								},
-								{	-- Eternal Blossom Headguard
-									["itemID"] = 85381,	-- Eternal Blossom Headguard
-								},
-								{	-- Helmet of the Thousandfold Blades
-									["itemID"] = 85301,	-- Helmet of the Thousandfold Blades
-								},
-								{	-- Faceguard of the Lost Catacomb
-									["itemID"] = 85316,	-- Faceguard of the Lost Catacomb
-								},
-								{	-- Helmet of the Lost Catacomb
-									["itemID"] = 85336,	-- Helmet of the Lost Catacomb
-								},
-							},
-						},
-						{	-- [Normal] Shoulders of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
-							["itemID"] = 89248,	-- Shoulders of the Shadowy Vanquisher
-							["classes"] = {
-								MAGE,
-								DRUID,
-								ROGUE,
-								DEATHKNIGHT,
-							},
-							["g"] = {
-								{	-- Mantle of the Burning Scroll
-									["itemID"] = 85374,	-- Mantle of the Burning Scroll
-								},
-								{	-- Eternal Blossom Shoulderwraps
-									["itemID"] = 85304,	-- Eternal Blossom Shoulderwraps
-								},
-								{	-- Eternal Blossom Spaulders
-									["itemID"] = 85309,	-- Eternal Blossom Spaulders
-								},
-								{	-- Eternal Blossom Mantle
-									["itemID"] = 85354,	-- Eternal Blossom Mantle
-								},
-								{	-- Eternal Blossom Shoulderguards
-									["itemID"] = 85383,	-- Eternal Blossom Shoulderguards
-								},
-								{	-- Spaulders of the Thousandfold Blades
-									["itemID"] = 85299,	-- Spaulders of the Thousandfold Blades
-								},
-								{	-- Shoulderguards of the Lost Catacomb
-									["itemID"] = 85314,	-- Shoulderguards of the Lost Catacomb
-								},
-								{	-- Pauldrons of the Lost Catacomb
-									["itemID"] = 85334,	-- Pauldrons of the Lost Catacomb
-								},
-							},
-						},
-						{	-- [Normal] Chest of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
-							["itemID"] = 89239,	-- Chest of the Shadowy Vanquisher
-							["classes"] = {
-								MAGE,
-								DRUID,
-								ROGUE,
-								DEATHKNIGHT,
-							},
-							["g"] = {
-								{	-- Robes of the Burning Scroll
-									["itemID"] = 85375,	-- Robes of the Burning Scroll
-								},
-								{	-- Eternal Blossom Vestment
-									["itemID"] = 85305,	-- Eternal Blossom Vestment
-								},
-								{	-- Eternal Blossom Raiment
-									["itemID"] = 85313,	-- Eternal Blossom Raiment
-								},
-								{	-- Eternal Blossom Robes
-									["itemID"] = 85355,	-- Eternal Blossom Robes
-								},
-								{	-- Eternal Blossom Tunic
-									["itemID"] = 85379,	-- Eternal Blossom Tunic
-								},
-								{	-- Tunic of the Thousandfold Blades
-									["itemID"] = 85303,	-- Tunic of the Thousandfold Blades
-								},
-								{	-- Chestguard of the Lost Catacomb
-									["itemID"] = 85318,	-- Chestguard of the Lost Catacomb
-								},
-								{	-- Breastplate of the Lost Catacomb
-									["itemID"] = 85338,	-- Breastplate of the Lost Catacomb
-								},
-							},
-						},
-						{	-- [Normal] Gauntlets of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
-							["itemID"] = 89242,	-- Gauntlets of the Shadowy Vanquisher
-							["classes"] = {
-								MAGE,
-								DRUID,
-								ROGUE,
-								DEATHKNIGHT,
-							},
-							["g"] = {
-								{	-- Gloves of the Burning Scroll
-									["itemID"] = 85378,	-- Gloves of the Burning Scroll
-								},
-								{	-- Eternal Blossom Gloves
-									["itemID"] = 85308,	-- Eternal Blossom Gloves
-								},
-								{	-- Eternal Blossom Grips
-									["itemID"] = 85312,	-- Eternal Blossom Grips
-								},
-								{	-- Eternal Blossom Handwraps
-									["itemID"] = 85358,	-- Eternal Blossom Handwraps
-								},
-								{	-- Eternal Blossom Handguards
-									["itemID"] = 85380,	-- Eternal Blossom Handguards
-								},
-								{	-- Gloves of the Thousandfold Blades
-									["itemID"] = 85302,	-- Gloves of the Thousandfold Blades
-								},
-								{	-- Handguards of the Lost Catacomb
-									["itemID"] = 85317,	-- Handguards of the Lost Catacomb
-								},
-								{	-- Gauntlets of the Lost Catacomb
-									["itemID"] = 85337,	-- Gauntlets of the Lost Catacomb
-								},
-							},
-						},
-						{	-- [Normal] Leggings of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
-							["itemID"] = 89245,	-- Leggings of the Shadowy Vanquisher
-							["classes"] = {
-								MAGE,
-								DRUID,
-								ROGUE,
-								DEATHKNIGHT,
-							},
-							["g"] = {
-								{	-- Leggings of the Burning Scroll
-									["itemID"] = 85376,	-- Leggings of the Burning Scroll
-								},
-								{	-- Eternal Blossom Leggings
-									["itemID"] = 85306,	-- Eternal Blossom Leggings
-								},
-								{	-- Eternal Blossom Legguards
-									["itemID"] = 85310,	-- Eternal Blossom Legguards
-								},
-								{	-- Eternal Blossom Legwraps
-									["itemID"] = 85356,	-- Eternal Blossom Legwraps
-								},
-								{	-- Eternal Blossom Breeches
-									["itemID"] = 85382,	-- Eternal Blossom Breeches
-								},
-								{	-- Legguards of the Thousandfold Blades
-									["itemID"] = 85300,	-- Legguards of the Thousandfold Blades
-								},
-								{	-- Legguards of the Lost Catacomb
-									["itemID"] = 85315,	-- Legguards of the Lost Catacomb
-								},
-								{	-- Greaves of the Lost Catacomb
-									["itemID"] = 85335,	-- Greaves of the Lost Catacomb
-								},
-							},
-						},
-						{	-- [Heroic] Helm of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
-							["itemID"] = 89258,	-- Helm of the Shadowy Vanquisher
-							["classes"] = {
-								MAGE,
-								DRUID,
-								ROGUE,
-								DEATHKNIGHT,
-							},
-							["g"] = {
-								{	-- Hood of the Burning Scroll
-									["itemID"] = 87008,	-- Hood of the Burning Scroll
-								},
-								{	-- Eternal Blossom Headpiece
-									["itemID"] = 86925,	-- Eternal Blossom Headpiece
-								},
-								{	-- Eternal Blossom Helm
-									["itemID"] = 86929,	-- Eternal Blossom Helm
-								},
-								{	-- Eternal Blossom Cover
-									["itemID"] = 86934,	-- Eternal Blossom Cover
-								},
-								{	-- Eternal Blossom Headguard
-									["itemID"] = 86940,	-- Eternal Blossom Headguard
-								},
-								{	-- Helmet of the Thousandfold Blades
-									["itemID"] = 87126,	-- Helmet of the Thousandfold Blades
-								},
-								{	-- Helmet of the Lost Catacomb
-									["itemID"] = 86915,	-- Helmet of the Lost Catacomb
-								},
-								{	-- Faceguard of the Lost Catacomb
-									["itemID"] = 86920,	-- Faceguard of the Lost Catacomb
-								},
-							},
-						},
-						{	-- [Heroic] Shoulders of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
-							["itemID"] = 89261,	-- Shoulders of the Shadowy Vanquisher
-							["classes"] = {
-								MAGE,
-								DRUID,
-								ROGUE,
-								DEATHKNIGHT,
-							},
-							["g"] = {
-								{	-- Mantle of the Burning Scroll
-									["itemID"] = 87011,	-- Mantle of the Burning Scroll
-								},
-								{	-- Eternal Blossom Spaulders
-									["itemID"] = 86927,	-- Eternal Blossom Spaulders
-								},
-								{	-- Eternal Blossom Mantle
-									["itemID"] = 86932,	-- Eternal Blossom Mantle
-								},
-								{	-- Eternal Blossom Shoulderwraps
-									["itemID"] = 86937,	-- Eternal Blossom Shoulderwraps
-								},
-								{	-- Eternal Blossom Shoulderguards
-									["itemID"] = 86942,	-- Eternal Blossom Shoulderguards
-								},
-								{	-- Spaulders of the Thousandfold Blades
-									["itemID"] = 87128,	-- Spaulders of the Thousandfold Blades
-								},
-								{	-- Pauldrons of the Lost Catacomb
-									["itemID"] = 86917,	-- Pauldrons of the Lost Catacomb
-								},
-								{	-- Shoulderguards of the Lost Catacomb
-									["itemID"] = 86922,	-- Shoulderguards of the Lost Catacomb
-								},
-							},
-						},
-						{	-- [Heroic] Chest of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
-							["itemID"] = 89249,	-- Chest of the Shadowy Vanquisher
-							["classes"] = {
-								MAGE,
-								DRUID,
-								ROGUE,
-								DEATHKNIGHT,
-							},
-							["g"] = {
-								{	-- Robes of the Burning Scroll
-									["itemID"] = 87010,	-- Robes of the Burning Scroll
-								},
-								{	-- Eternal Blossom Raiment
-									["itemID"] = 86923,	-- Eternal Blossom Raiment
-								},
-								{	-- Eternal Blossom Robes
-									["itemID"] = 86931,	-- Eternal Blossom Robes
-								},
-								{	-- Eternal Blossom Vestment
-									["itemID"] = 86936,	-- Eternal Blossom Vestment
-								},
-								{	-- Eternal Blossom Tunic
-									["itemID"] = 86938,	-- Eternal Blossom Tunic
-								},
-								{	-- Tunic of the Thousandfold Blades
-									["itemID"] = 87124,	-- Tunic of the Thousandfold Blades
-								},
-								{	-- Breastplate of the Lost Catacomb
-									["itemID"] = 86913,	-- Breastplate of the Lost Catacomb
-								},
-								{	-- Chestguard of the Lost Catacomb
-									["itemID"] = 86918,	-- Chestguard of the Lost Catacomb
-								},
-							},
-						},
-						{	-- [Heroic] Gauntlets of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
-							["itemID"] = 89255,	-- Gauntlets of the Shadowy Vanquisher
-							["classes"] = {
-								MAGE,
-								DRUID,
-								ROGUE,
-								DEATHKNIGHT,
-							},
-							["g"] = {
-								{	-- Gloves of the Burning Scroll
-									["itemID"] = 87007,	-- Gloves of the Burning Scroll
-								},
-								{	-- Eternal Blossom Grips
-									["itemID"] = 86924,	-- Eternal Blossom Grips
-								},
-								{	-- Eternal Blossom Handwraps
-									["itemID"] = 86928,	-- Eternal Blossom Handwraps
-								},
-								{	-- Eternal Blossom Gloves
-									["itemID"] = 86933,	-- Eternal Blossom Gloves
-								},
-								{	-- Eternal Blossom Handguards
-									["itemID"] = 86939,	-- Eternal Blossom Handguards
-								},
-								{	-- Gloves of the Thousandfold Blades
-									["itemID"] = 87125,	-- Gloves of the Thousandfold Blades
-								},
-								{	-- Gauntlets of the Lost Catacomb
-									["itemID"] = 86914,	-- Gauntlets of the Lost Catacomb
-								},
-								{	-- Handguards of the Lost Catacomb
-									["itemID"] = 86919,	-- Handguards of the Lost Catacomb
-								},
-							},
-						},
-						{	-- [Heroic] Leggings of the Shadowy Vanquisher [Mage / Druid / Rogue / Death Knight]
-							["itemID"] = 89252,	-- Leggings of the Shadowy Vanquisher
-							["classes"] = {
-								MAGE,
-								DRUID,
-								ROGUE,
-								DEATHKNIGHT,
-							},
-							["g"] = {
-								{	-- Leggings of the Burning Scroll
-									["itemID"] = 87009,	-- Leggings of the Burning Scroll
-								},
-								{	-- Legguards of the Thousandfold Blades
-									["itemID"] = 87127,	-- Legguards of the Thousandfold Blades
-								},
-								{	-- Eternal Blossom Legguards
-									["itemID"] = 86926,	-- Eternal Blossom Legguards
-								},
-								{	-- Eternal Blossom Legwraps
-									["itemID"] = 86930,	-- Eternal Blossom Legwraps
-								},
-								{	-- Eternal Blossom Leggings
-									["itemID"] = 86935,	-- Eternal Blossom Leggings
-								},
-								{	-- Eternal Blossom Breeches
-									["itemID"] = 86941,	-- Eternal Blossom Breeches
-								},
-								{	-- Greaves of the Lost Catacomb
-									["itemID"] = 86916,	-- Greaves of the Lost Catacomb
-								},
-								{	-- Legguards of the Lost Catacomb
-									["itemID"] = 86921,	-- Legguards of the Lost Catacomb
-								},
-							},
-						},
+						i(86726, {	-- Red Crane Crown
+							["cost"] = { { "i", 89275, 1 }, },	-- Helm of the Shadowy Protector (LFR)
+						}),
+						i(86730, {	-- Red Crane Helm
+							["cost"] = { { "i", 89275, 1 }, },	-- Helm of the Shadowy Protector (LFR)
+						}),
+						i(86736, {	-- Red Crane Headpiece
+							["cost"] = { { "i", 89275, 1 }, },	-- Helm of the Shadowy Protector (LFR)
+						}),
+						i(86636, {	-- Yaungol Slayer's Headguard
+							["cost"] = { { "i", 89275, 1 }, },	-- Helm of the Shadowy Protector (LFR)
+						}),
+						i(86626, {	-- Firebird's Helmet
+							["cost"] = { { "i", 89275, 1 }, },	-- Helm of the Shadowy Protector (LFR)
+						}),
+						i(86631, {	-- Firebird's Headpiece
+							["cost"] = { { "i", 89275, 1 }, },	-- Helm of the Shadowy Protector (LFR)
+						}),
+						i(86691, {	-- Firebird's Faceguard
+							["cost"] = { { "i", 89275, 1 }, },	-- Helm of the Shadowy Protector (LFR)
+						}),
+						i(86666, {	-- Faceguard of Resounding Rings
+							["cost"] = { { "i", 89275, 1 }, },	-- Helm of the Shadowy Protector (LFR)
+						}),
+						i(86673, {	-- Helmet of Resounding Rings
+							["cost"] = { { "i", 89275, 1 }, },	-- Helm of the Shadowy Protector (LFR)
+						}),
+						i(86724, {	-- Red Crane Shoulderguards
+							["cost"] = { { "i", 89278, 1 }, },	-- Shoulders of the Shadowy Protector (LFR)
+						}),
+						i(86733, {	-- Red Crane Mantle
+							["cost"] = { { "i", 89278, 1 }, },	-- Shoulders of the Shadowy Protector (LFR)
+						}),
+						i(86738, {	-- Red Crane Spaulders
+							["cost"] = { { "i", 89278, 1 }, },	-- Shoulders of the Shadowy Protector (LFR)
+						}),
+						i(86634, {	-- Yaungol Slayer's Spaulders
+							["cost"] = { { "i", 89278, 1 }, },	-- Shoulders of the Shadowy Protector (LFR)
+						}),
+						i(86624, {	-- Firebird's Spaulders
+							["cost"] = { { "i", 89278, 1 }, },	-- Shoulders of the Shadowy Protector (LFR)
+						}),
+						i(86633, {	-- Firebird's Shoulderwraps
+							["cost"] = { { "i", 89278, 1 }, },	-- Shoulders of the Shadowy Protector (LFR)
+						}),
+						i(86689, {	-- Firebird's Mantle
+							["cost"] = { { "i", 89278, 1 }, },	-- Shoulders of the Shadowy Protector (LFR)
+						}),
+						i(86664, {	-- Shoulderguards of Resounding Rings
+							["cost"] = { { "i", 89278, 1 }, },	-- Shoulders of the Shadowy Protector (LFR)
+						}),
+						i(86669, {	-- Pauldrons of Resounding Rings
+							["cost"] = { { "i", 89278, 1 }, },	-- Shoulders of the Shadowy Protector (LFR)
+						}),
+						i(86728, {	-- Red Crane Chestguard
+							["cost"] = { { "i", 89266, 1 }, },	-- Chest of the Shadowy Protector (LFR)
+						}),
+						i(86732, {	-- Red Crane Vest
+							["cost"] = { { "i", 89266, 1 }, },	-- Chest of the Shadowy Protector (LFR)
+						}),
+						i(86734, {	-- Red Crane Tunic
+							["cost"] = { { "i", 89266, 1 }, },	-- Chest of the Shadowy Protector (LFR)
+						}),
+						i(86638, {	-- Yaungol Slayer's Tunic
+							["cost"] = { { "i", 89266, 1 }, },	-- Chest of the Shadowy Protector (LFR)
+						}),
+						i(86628, {	-- Firebird's Cuirass
+							["cost"] = { { "i", 89266, 1 }, },	-- Chest of the Shadowy Protector (LFR)
+						}),
+						i(86629, {	-- Firebird's Hauberk
+							["cost"] = { { "i", 89266, 1 }, },	-- Chest of the Shadowy Protector (LFR)
+						}),
+						i(86693, {	-- Firebird's Tunic
+							["cost"] = { { "i", 89266, 1 }, },	-- Chest of the Shadowy Protector (LFR)
+						}),
+						i(86668, {	-- Chestguard of Resounding Rings
+							["cost"] = { { "i", 89266, 1 }, },	-- Chest of the Shadowy Protector (LFR)
+						}),
+						i(86672, {	-- Battleplate of Resounding Rings
+							["cost"] = { { "i", 89266, 1 }, },	-- Chest of the Shadowy Protector (LFR)
+						}),
+						i(86727, {	-- Red Crane Gauntlets
+							["cost"] = { { "i", 89272, 1 }, },	-- Gauntlets of the Shadowy Protector (LFR)
+						}),
+						i(86729, {	-- Red Crane Handwraps
+							["cost"] = { { "i", 89272, 1 }, },	-- Gauntlets of the Shadowy Protector (LFR)
+						}),
+						i(86735, {	-- Red Crane Grips
+							["cost"] = { { "i", 89272, 1 }, },	-- Gauntlets of the Shadowy Protector (LFR)
+						}),
+						i(86637, {	-- Yaungol Slayer's Gloves
+							["cost"] = { { "i", 89272, 1 }, },	-- Gauntlets of the Shadowy Protector (LFR)
+						}),
+						i(86627, {	-- Firebird's Grips
+							["cost"] = { { "i", 89272, 1 }, },	-- Gauntlets of the Shadowy Protector (LFR)
+						}),
+						i(86630, {	-- Firebird's Gloves
+							["cost"] = { { "i", 89272, 1 }, },	-- Gauntlets of the Shadowy Protector (LFR)
+						}),
+						i(86692, {	-- Firebird's Handwraps
+							["cost"] = { { "i", 89272, 1 }, },	-- Gauntlets of the Shadowy Protector (LFR)
+						}),
+						i(86667, {	-- Handguards of Resounding Rings
+							["cost"] = { { "i", 89272, 1 }, },	-- Gauntlets of the Shadowy Protector (LFR)
+						}),
+						i(86671, {	-- Gauntlets of Resounding Rings
+							["cost"] = { { "i", 89272, 1 }, },	-- Gauntlets of the Shadowy Protector (LFR)
+						}),
+						i(86725, {	-- Red Crane Legguards
+							["cost"] = { { "i", 89269, 1 }, },	-- Leggings of the Shadowy Protector (LFR)
+						}),
+						i(86731, {	-- Red Crane Legwraps
+							["cost"] = { { "i", 89269, 1 }, },	-- Leggings of the Shadowy Protector (LFR)
+						}),
+						i(86737, {	-- Red Crane Leggings
+							["cost"] = { { "i", 89269, 1 }, },	-- Leggings of the Shadowy Protector (LFR)
+						}),
+						i(86635, {	-- Yaungol Slayer's Legguards
+							["cost"] = { { "i", 89269, 1 }, },	-- Leggings of the Shadowy Protector (LFR)
+						}),
+						i(86625, {	-- Firebird's Legguards
+							["cost"] = { { "i", 89269, 1 }, },	-- Leggings of the Shadowy Protector (LFR)
+						}),
+						i(86632, {	-- Firebird's Kilt
+							["cost"] = { { "i", 89269, 1 }, },	-- Leggings of the Shadowy Protector (LFR)
+						}),
+						i(86690, {	-- Firebird's Legwraps
+							["cost"] = { { "i", 89269, 1 }, },	-- Leggings of the Shadowy Protector (LFR)
+						}),
+						i(86665, {	-- Legguards of Resounding Rings
+							["cost"] = { { "i", 89269, 1 }, },	-- Leggings of the Shadowy Protector (LFR)
+						}),
+						i(86670, {	-- Legplates of Resounding Rings
+							["cost"] = { { "i", 89269, 1 }, },	-- Leggings of the Shadowy Protector (LFR)
+						}),
+						i(85386, {	-- Red Crane Crown
+							["cost"] = { { "i", 89236, 1 }, },	-- Helm of the Shadowy Protector (Normal)
+						}),
+						i(85390, {	-- Red Crane Helm
+							["cost"] = { { "i", 89236, 1 }, },	-- Helm of the Shadowy Protector (Normal)
+						}),
+						i(85396, {	-- Red Crane Headpiece
+							["cost"] = { { "i", 89236, 1 }, },	-- Helm of the Shadowy Protector (Normal)
+						}),
+						i(85296, {	-- Yaungol Slayer's Headguard
+							["cost"] = { { "i", 89236, 1 }, },	-- Helm of the Shadowy Protector (Normal)
+						}),
+						i(85286, {	-- Firebird's Helmet
+							["cost"] = { { "i", 89236, 1 }, },	-- Helm of the Shadowy Protector (Normal)
+						}),
+						i(85291, {	-- Firebird's Headpiece
+							["cost"] = { { "i", 89236, 1 }, },	-- Helm of the Shadowy Protector (Normal)
+						}),
+						i(85351, {	-- Firebird's Faceguard
+							["cost"] = { { "i", 89236, 1 }, },	-- Helm of the Shadowy Protector (Normal)
+						}),
+						i(85326, {	-- Faceguard of Resounding Rings
+							["cost"] = { { "i", 89236, 1 }, },	-- Helm of the Shadowy Protector (Normal)
+						}),
+						i(85333, {	-- Helmet of Resounding Rings
+							["cost"] = { { "i", 89236, 1 }, },	-- Helm of the Shadowy Protector (Normal)
+						}),
+						i(85384, {	-- Red Crane Shoulderguards
+							["cost"] = { { "i", 89247, 1 }, },	-- Shoulders of the Shadowy Protector (Normal)
+						}),
+						i(85393, {	-- Red Crane Mantle
+							["cost"] = { { "i", 89247, 1 }, },	-- Shoulders of the Shadowy Protector (Normal)
+						}),
+						i(85398, {	-- Red Crane Spaulders
+							["cost"] = { { "i", 89247, 1 }, },	-- Shoulders of the Shadowy Protector (Normal)
+						}),
+						i(85294, {	-- Yaungol Slayer's Spaulders
+							["cost"] = { { "i", 89247, 1 }, },	-- Shoulders of the Shadowy Protector (Normal)
+						}),
+						i(85284, {	-- Firebird's Spaulders
+							["cost"] = { { "i", 89247, 1 }, },	-- Shoulders of the Shadowy Protector (Normal)
+						}),
+						i(85293, {	-- Firebird's Shoulderwraps
+							["cost"] = { { "i", 89247, 1 }, },	-- Shoulders of the Shadowy Protector (Normal)
+						}),
+						i(85349, {	-- Firebird's Mantle
+							["cost"] = { { "i", 89247, 1 }, },	-- Shoulders of the Shadowy Protector (Normal)
+						}),
+						i(85324, {	-- Shoulderguards of Resounding Rings
+							["cost"] = { { "i", 89247, 1 }, },	-- Shoulders of the Shadowy Protector (Normal)
+						}),
+						i(85329, {	-- Pauldrons of Resounding Rings
+							["cost"] = { { "i", 89247, 1 }, },	-- Shoulders of the Shadowy Protector (Normal)
+						}),
+						i(85388, {	-- Red Crane Chestguard
+							["cost"] = { { "i", 89238, 1 }, },	-- Chest of the Shadowy Protector (Normal)
+						}),
+						i(85392, {	-- Red Crane Vest
+							["cost"] = { { "i", 89238, 1 }, },	-- Chest of the Shadowy Protector (Normal)
+						}),
+						i(85394, {	-- Red Crane Tunic
+							["cost"] = { { "i", 89238, 1 }, },	-- Chest of the Shadowy Protector (Normal)
+						}),
+						i(85298, {	-- Yaungol Slayer's Tunic
+							["cost"] = { { "i", 89238, 1 }, },	-- Chest of the Shadowy Protector (Normal)
+						}),
+						i(85288, {	-- Firebird's Cuirass
+							["cost"] = { { "i", 89238, 1 }, },	-- Chest of the Shadowy Protector (Normal)
+						}),
+						i(85289, {	-- Firebird's Hauberk
+							["cost"] = { { "i", 89238, 1 }, },	-- Chest of the Shadowy Protector (Normal)
+						}),
+						i(85353, {	-- Firebird's Tunic
+							["cost"] = { { "i", 89238, 1 }, },	-- Chest of the Shadowy Protector (Normal)
+						}),
+						i(85328, {	-- Chestguard of Resounding Rings
+							["cost"] = { { "i", 89238, 1 }, },	-- Chest of the Shadowy Protector (Normal)
+						}),
+						i(85332, {	-- Battleplate of Resounding Rings
+							["cost"] = { { "i", 89238, 1 }, },	-- Chest of the Shadowy Protector (Normal)
+						}),
+						i(85387, {	-- Red Crane Gauntlets
+							["cost"] = { { "i", 89241, 1 }, },	-- Gauntlets of the Shadowy Protector (Normal)
+						}),
+						i(85389, {	-- Red Crane Handwraps
+							["cost"] = { { "i", 89241, 1 }, },	-- Gauntlets of the Shadowy Protector (Normal)
+						}),
+						i(85395, {	-- Red Crane Grips
+							["cost"] = { { "i", 89241, 1 }, },	-- Gauntlets of the Shadowy Protector (Normal)
+						}),
+						i(85297, {	-- Yaungol Slayer's Gloves
+							["cost"] = { { "i", 89241, 1 }, },	-- Gauntlets of the Shadowy Protector (Normal)
+						}),
+						i(85287, {	-- Firebird's Grips
+							["cost"] = { { "i", 89241, 1 }, },	-- Gauntlets of the Shadowy Protector (Normal)
+						}),
+						i(85290, {	-- Firebird's Gloves
+							["cost"] = { { "i", 89241, 1 }, },	-- Gauntlets of the Shadowy Protector (Normal)
+						}),
+						i(85352, {	-- Firebird's Handwraps
+							["cost"] = { { "i", 89241, 1 }, },	-- Gauntlets of the Shadowy Protector (Normal)
+						}),
+						i(85327, {	-- Handguards of Resounding Rings
+							["cost"] = { { "i", 89241, 1 }, },	-- Gauntlets of the Shadowy Protector (Normal)
+						}),
+						i(85331, {	-- Gauntlets of Resounding Rings
+							["cost"] = { { "i", 89241, 1 }, },	-- Gauntlets of the Shadowy Protector (Normal)
+						}),
+						i(85385, {	-- Red Crane Legguards
+							["cost"] = { { "i", 89244, 1 }, },	-- Leggings of the Shadowy Protector (Normal)
+						}),
+						i(85391, {	-- Red Crane Legwraps
+							["cost"] = { { "i", 89244, 1 }, },	-- Leggings of the Shadowy Protector (Normal)
+						}),
+						i(85397, {	-- Red Crane Leggings
+							["cost"] = { { "i", 89244, 1 }, },	-- Leggings of the Shadowy Protector (Normal)
+						}),
+						i(85295, {	-- Yaungol Slayer's Legguards
+							["cost"] = { { "i", 89244, 1 }, },	-- Leggings of the Shadowy Protector (Normal)
+						}),
+						i(85285, {	-- Firebird's Legguards
+							["cost"] = { { "i", 89244, 1 }, },	-- Leggings of the Shadowy Protector (Normal)
+						}),
+						i(85292, {	-- Firebird's Kilt
+							["cost"] = { { "i", 89244, 1 }, },	-- Leggings of the Shadowy Protector (Normal)
+						}),
+						i(85350, {	-- Firebird's Legwraps
+							["cost"] = { { "i", 89244, 1 }, },	-- Leggings of the Shadowy Protector (Normal)
+						}),
+						i(85325, {	-- Legguards of Resounding Rings
+							["cost"] = { { "i", 89244, 1 }, },	-- Leggings of the Shadowy Protector (Normal)
+						}),
+						i(85330, {	-- Legplates of Resounding Rings
+							["cost"] = { { "i", 89244, 1 }, },	-- Leggings of the Shadowy Protector (Normal)
+						}),
+						i(87096, {	-- Red Crane Crown
+							["cost"] = { { "i", 89260, 1 }, },	-- Helm of the Shadowy Protector (Heroic)
+						}),
+						i(87090, {	-- Red Crane Helm
+							["cost"] = { { "i", 89260, 1 }, },	-- Helm of the Shadowy Protector (Heroic)
+						}),
+						i(87086, {	-- Red Crane Headpiece
+							["cost"] = { { "i", 89260, 1 }, },	-- Helm of the Shadowy Protector (Heroic)
+						}),
+						i(87004, {	-- Yaungol Slayer's Headguard
+							["cost"] = { { "i", 89260, 1 }, },	-- Helm of the Shadowy Protector (Heroic)
+						}),
+						i(87136, {	-- Firebird's Helmet
+							["cost"] = { { "i", 89260, 1 }, },	-- Helm of the Shadowy Protector (Heroic)
+						}),
+						i(87141, {	-- Firebird's Headpiece
+							["cost"] = { { "i", 89260, 1 }, },	-- Helm of the Shadowy Protector (Heroic)
+						}),
+						i(87131, {	-- Firebird's Faceguard
+							["cost"] = { { "i", 89260, 1 }, },	-- Helm of the Shadowy Protector (Heroic)
+						}),
+						i(87199, {	-- Faceguard of Resounding Rings
+							["cost"] = { { "i", 89260, 1 }, },	-- Helm of the Shadowy Protector (Heroic)
+						}),
+						i(87192, {	-- Helmet of Resounding Rings
+							["cost"] = { { "i", 89260, 1 }, },	-- Helm of the Shadowy Protector (Heroic)
+						}),
+						i(87098, {	-- Red Crane Shoulderguards
+							["cost"] = { { "i", 89263, 1 }, },	-- Shoulders of the Shadowy Protector (Heroic)
+						}),
+						i(87093, {	-- Red Crane Mantle
+							["cost"] = { { "i", 89263, 1 }, },	-- Shoulders of the Shadowy Protector (Heroic)
+						}),
+						i(87088, {	-- Red Crane Spaulders
+							["cost"] = { { "i", 89263, 1 }, },	-- Shoulders of the Shadowy Protector (Heroic)
+						}),
+						i(87006, {	-- Yaungol Slayer's Spaulders
+							["cost"] = { { "i", 89263, 1 }, },	-- Shoulders of the Shadowy Protector (Heroic)
+						}),
+						i(87138, {	-- Firebird's Spaulders
+							["cost"] = { { "i", 89263, 1 }, },	-- Shoulders of the Shadowy Protector (Heroic)
+						}),
+						i(87143, {	-- Firebird's Shoulderwraps
+							["cost"] = { { "i", 89263, 1 }, },	-- Shoulders of the Shadowy Protector (Heroic)
+						}),
+						i(87133, {	-- Firebird's Mantle
+							["cost"] = { { "i", 89263, 1 }, },	-- Shoulders of the Shadowy Protector (Heroic)
+						}),
+						i(87201, {	-- Shoulderguards of Resounding Rings
+							["cost"] = { { "i", 89263, 1 }, },	-- Shoulders of the Shadowy Protector (Heroic)
+						}),
+						i(87196, {	-- Pauldrons of Resounding Rings
+							["cost"] = { { "i", 89263, 1 }, },	-- Shoulders of the Shadowy Protector (Heroic)
+						}),
+						i(87094, {	-- Red Crane Chestguard
+							["cost"] = { { "i", 89251, 1 }, },	-- Chest of the Shadowy Protector (Heroic)
+						}),
+						i(87092, {	-- Red Crane Vest
+							["cost"] = { { "i", 89251, 1 }, },	-- Chest of the Shadowy Protector (Heroic)
+						}),
+						i(87084, {	-- Red Crane Tunic
+							["cost"] = { { "i", 89251, 1 }, },	-- Chest of the Shadowy Protector (Heroic)
+						}),
+						i(87002, {	-- Yaungol Slayer's Tunic
+							["cost"] = { { "i", 89251, 1 }, },	-- Chest of the Shadowy Protector (Heroic)
+						}),
+						i(87134, {	-- Firebird's Cuirass
+							["cost"] = { { "i", 89251, 1 }, },	-- Chest of the Shadowy Protector (Heroic)
+						}),
+						i(87139, {	-- Firebird's Hauberk
+							["cost"] = { { "i", 89251, 1 }, },	-- Chest of the Shadowy Protector (Heroic)
+						}),
+						i(87129, {	-- Firebird's Tunic
+							["cost"] = { { "i", 89251, 1 }, },	-- Chest of the Shadowy Protector (Heroic)
+						}),
+						i(87197, {	-- Chestguard of Resounding Rings
+							["cost"] = { { "i", 89251, 1 }, },	-- Chest of the Shadowy Protector (Heroic)
+						}),
+						i(87193, {	-- Battleplate of Resounding Rings
+							["cost"] = { { "i", 89251, 1 }, },	-- Chest of the Shadowy Protector (Heroic)
+						}),
+						i(87095, {	-- Red Crane Gauntlets
+							["cost"] = { { "i", 89257, 1 }, },	-- Gauntlets of the Shadowy Protector (Heroic)
+						}),
+						i(87089, {	-- Red Crane Handwraps
+							["cost"] = { { "i", 89257, 1 }, },	-- Gauntlets of the Shadowy Protector (Heroic)
+						}),
+						i(87085, {	-- Red Crane Grips
+							["cost"] = { { "i", 89257, 1 }, },	-- Gauntlets of the Shadowy Protector (Heroic)
+						}),
+						i(87003, {	-- Yaungol Slayer's Gloves
+							["cost"] = { { "i", 89257, 1 }, },	-- Gauntlets of the Shadowy Protector (Heroic)
+						}),
+						i(87135, {	-- Firebird's Grips
+							["cost"] = { { "i", 89257, 1 }, },	-- Gauntlets of the Shadowy Protector (Heroic)
+						}),
+						i(87140, {	-- Firebird's Gloves
+							["cost"] = { { "i", 89257, 1 }, },	-- Gauntlets of the Shadowy Protector (Heroic)
+						}),
+						i(87130, {	-- Firebird's Handwraps
+							["cost"] = { { "i", 89257, 1 }, },	-- Gauntlets of the Shadowy Protector (Heroic)
+						}),
+						i(87198, {	-- Handguards of Resounding Rings
+							["cost"] = { { "i", 89257, 1 }, },	-- Gauntlets of the Shadowy Protector (Heroic)
+						}),
+						i(87194, {	-- Gauntlets of Resounding Rings
+							["cost"] = { { "i", 89257, 1 }, },	-- Gauntlets of the Shadowy Protector (Heroic)
+						}),
+						i(87097, {	-- Red Crane Legguards
+							["cost"] = { { "i", 89254, 1 }, },	-- Leggings of the Shadowy Protector (Heroic)
+						}),
+						i(87091, {	-- Red Crane Legwraps
+							["cost"] = { { "i", 89254, 1 }, },	-- Leggings of the Shadowy Protector (Heroic)
+						}),
+						i(87087, {	-- Red Crane Leggings
+							["cost"] = { { "i", 89254, 1 }, },	-- Leggings of the Shadowy Protector (Heroic)
+						}),
+						i(87005, {	-- Yaungol Slayer's Legguards
+							["cost"] = { { "i", 89254, 1 }, },	-- Leggings of the Shadowy Protector (Heroic)
+						}),
+						i(87137, {	-- Firebird's Legguards
+							["cost"] = { { "i", 89254, 1 }, },	-- Leggings of the Shadowy Protector (Heroic)
+						}),
+						i(87142, {	-- Firebird's Kilt
+							["cost"] = { { "i", 89254, 1 }, },	-- Leggings of the Shadowy Protector (Heroic)
+						}),
+						i(87132, {	-- Firebird's Legwraps
+							["cost"] = { { "i", 89254, 1 }, },	-- Leggings of the Shadowy Protector (Heroic)
+						}),
+						i(87200, {	-- Legguards of Resounding Rings
+							["cost"] = { { "i", 89254, 1 }, },	-- Leggings of the Shadowy Protector (Heroic)
+						}),
+						i(87195, {	-- Legplates of Resounding Rings
+							["cost"] = { { "i", 89254, 1 }, },	-- Leggings of the Shadowy Protector (Heroic)
+						}),
+						i(86717, {	-- Hood of the Burning Scroll
+							["cost"] = { { "i", 89273, 1 }, },	-- Helm of the Shadowy Vanquisher (LFR)
+						}),
+						i(86647, {	-- Eternal Blossom Cover
+							["cost"] = { { "i", 89273, 1 }, },	-- Helm of the Shadowy Vanquisher (LFR)
+						}),
+						i(86651, {	-- Eternal Blossom Headpiece
+							["cost"] = { { "i", 89273, 1 }, },	-- Helm of the Shadowy Vanquisher (LFR)
+						}),
+						i(86697, {	-- Eternal Blossom Helm
+							["cost"] = { { "i", 89273, 1 }, },	-- Helm of the Shadowy Vanquisher (LFR)
+						}),
+						i(86721, {	-- Eternal Blossom Headguard
+							["cost"] = { { "i", 89273, 1 }, },	-- Helm of the Shadowy Vanquisher (LFR)
+						}),
+						i(86641, {	-- Helmet of the Thousandfold Blades
+							["cost"] = { { "i", 89273, 1 }, },	-- Helm of the Shadowy Vanquisher (LFR)
+						}),
+						i(86656, {	-- Faceguard of the Lost Catacomb
+							["cost"] = { { "i", 89273, 1 }, },	-- Helm of the Shadowy Vanquisher (LFR)
+						}),
+						i(86676, {	-- Helmet of the Lost Catacomb
+							["cost"] = { { "i", 89273, 1 }, },	-- Helm of the Shadowy Vanquisher (LFR)
+						}),
+						i(86714, {	-- Mantle of the Burning Scroll
+							["cost"] = { { "i", 89276, 1 }, },	-- Shoulders of the Shadowy Vanquisher (LFR)
+						}),
+						i(86644, {	-- Eternal Blossom Shoulderwraps
+							["cost"] = { { "i", 89276, 1 }, },	-- Shoulders of the Shadowy Vanquisher (LFR)
+						}),
+						i(86649, {	-- Eternal Blossom Spaulders
+							["cost"] = { { "i", 89276, 1 }, },	-- Shoulders of the Shadowy Vanquisher (LFR)
+						}),
+						i(86694, {	-- Eternal Blossom Mantle
+							["cost"] = { { "i", 89276, 1 }, },	-- Shoulders of the Shadowy Vanquisher (LFR)
+						}),
+						i(86723, {	-- Eternal Blossom Shoulderguards
+							["cost"] = { { "i", 89276, 1 }, },	-- Shoulders of the Shadowy Vanquisher (LFR)
+						}),
+						i(86639, {	-- Spaulders of the Thousandfold Blades
+							["cost"] = { { "i", 89276, 1 }, },	-- Shoulders of the Shadowy Vanquisher (LFR)
+						}),
+						i(86654, {	-- Shoulderguards of the Lost Catacomb
+							["cost"] = { { "i", 89276, 1 }, },	-- Shoulders of the Shadowy Vanquisher (LFR)
+						}),
+						i(86674, {	-- Pauldrons of the Lost Catacomb
+							["cost"] = { { "i", 89276, 1 }, },	-- Shoulders of the Shadowy Vanquisher (LFR)
+						}),
+						i(86715, {	-- Robes of the Burning Scroll
+							["cost"] = { { "i", 89264, 1 }, },	-- Chest of the Shadowy Vanquisher (LFR)
+						}),
+						i(86645, {	-- Eternal Blossom Vestment
+							["cost"] = { { "i", 89264, 1 }, },	-- Chest of the Shadowy Vanquisher (LFR)
+						}),
+						i(86653, {	-- Eternal Blossom Raiment
+							["cost"] = { { "i", 89264, 1 }, },	-- Chest of the Shadowy Vanquisher (LFR)
+						}),
+						i(86695, {	-- Eternal Blossom Robes
+							["cost"] = { { "i", 89264, 1 }, },	-- Chest of the Shadowy Vanquisher (LFR)
+						}),
+						i(86719, {	-- Eternal Blossom Tunic
+							["cost"] = { { "i", 89264, 1 }, },	-- Chest of the Shadowy Vanquisher (LFR)
+						}),
+						i(86643, {	-- Tunic of the Thousandfold Blades
+							["cost"] = { { "i", 89264, 1 }, },	-- Chest of the Shadowy Vanquisher (LFR)
+						}),
+						i(86658, {	-- Chestguard of the Lost Catacomb
+							["cost"] = { { "i", 89264, 1 }, },	-- Chest of the Shadowy Vanquisher (LFR)
+						}),
+						i(86678, {	-- Breastplate of the Lost Catacomb
+							["cost"] = { { "i", 89264, 1 }, },	-- Chest of the Shadowy Vanquisher (LFR)
+						}),
+						i(86718, {	-- Gloves of the Burning Scroll
+							["cost"] = { { "i", 89270, 1 }, },	-- Gauntlets of the Shadowy Vanquisher (LFR)
+						}),
+						i(86648, {	-- Eternal Blossom Gloves
+							["cost"] = { { "i", 89270, 1 }, },	-- Gauntlets of the Shadowy Vanquisher (LFR)
+						}),
+						i(86652, {	-- Eternal Blossom Grips
+							["cost"] = { { "i", 89270, 1 }, },	-- Gauntlets of the Shadowy Vanquisher (LFR)
+						}),
+						i(86698, {	-- Eternal Blossom Handwraps
+							["cost"] = { { "i", 89270, 1 }, },	-- Gauntlets of the Shadowy Vanquisher (LFR)
+						}),
+						i(86720, {	-- Eternal Blossom Handguards
+							["cost"] = { { "i", 89270, 1 }, },	-- Gauntlets of the Shadowy Vanquisher (LFR)
+						}),
+						i(86642, {	-- Gloves of the Thousandfold Blades
+							["cost"] = { { "i", 89270, 1 }, },	-- Gauntlets of the Shadowy Vanquisher (LFR)
+						}),
+						i(86657, {	-- Handguards of the Lost Catacomb
+							["cost"] = { { "i", 89270, 1 }, },	-- Gauntlets of the Shadowy Vanquisher (LFR)
+						}),
+						i(86677, {	-- Gauntlets of the Lost Catacomb
+							["cost"] = { { "i", 89270, 1 }, },	-- Gauntlets of the Shadowy Vanquisher (LFR)
+						}),
+						i(86716, {	-- Leggings of the Burning Scroll
+							["cost"] = { { "i", 89267, 1 }, },	-- Leggings of the Shadowy Vanquisher (LFR)
+						}),
+						i(86646, {	-- Eternal Blossom Leggings
+							["cost"] = { { "i", 89267, 1 }, },	-- Leggings of the Shadowy Vanquisher (LFR)
+						}),
+						i(86650, {	-- Eternal Blossom Legguards
+							["cost"] = { { "i", 89267, 1 }, },	-- Leggings of the Shadowy Vanquisher (LFR)
+						}),
+						i(86696, {	-- Eternal Blossom Legwraps
+							["cost"] = { { "i", 89267, 1 }, },	-- Leggings of the Shadowy Vanquisher (LFR)
+						}),
+						i(86722, {	-- Eternal Blossom Breeches
+							["cost"] = { { "i", 89267, 1 }, },	-- Leggings of the Shadowy Vanquisher (LFR)
+						}),
+						i(86640, {	-- Legguards of the Thousandfold Blades
+							["cost"] = { { "i", 89267, 1 }, },	-- Leggings of the Shadowy Vanquisher (LFR)
+						}),
+						i(86655, {	-- Legguards of the Lost Catacomb
+							["cost"] = { { "i", 89267, 1 }, },	-- Leggings of the Shadowy Vanquisher (LFR)
+						}),
+						i(86675, {	-- Greaves of the Lost Catacomb
+							["cost"] = { { "i", 89267, 1 }, },	-- Leggings of the Shadowy Vanquisher (LFR)
+						}),
+						i(85377, {	-- Hood of the Burning Scroll
+							["cost"] = { { "i", 89234, 1 }, },	-- Helm of the Shadowy Vanquisher (Normal)
+						}),
+						i(85307, {	-- Eternal Blossom Cover
+							["cost"] = { { "i", 89234, 1 }, },	-- Helm of the Shadowy Vanquisher (Normal)
+						}),
+						i(85311, {	-- Eternal Blossom Headpiece
+							["cost"] = { { "i", 89234, 1 }, },	-- Helm of the Shadowy Vanquisher (Normal)
+						}),
+						i(85357, {	-- Eternal Blossom Helm
+							["cost"] = { { "i", 89234, 1 }, },	-- Helm of the Shadowy Vanquisher (Normal)
+						}),
+						i(85381, {	-- Eternal Blossom Headguard
+							["cost"] = { { "i", 89234, 1 }, },	-- Helm of the Shadowy Vanquisher (Normal)
+						}),
+						i(85301, {	-- Helmet of the Thousandfold Blades
+							["cost"] = { { "i", 89234, 1 }, },	-- Helm of the Shadowy Vanquisher (Normal)
+						}),
+						i(85316, {	-- Faceguard of the Lost Catacomb
+							["cost"] = { { "i", 89234, 1 }, },	-- Helm of the Shadowy Vanquisher (Normal)
+						}),
+						i(85336, {	-- Helmet of the Lost Catacomb
+							["cost"] = { { "i", 89234, 1 }, },	-- Helm of the Shadowy Vanquisher (Normal)
+						}),
+						i(85374, {	-- Mantle of the Burning Scroll
+							["cost"] = { { "i", 89248, 1 }, },	-- Shoulders of the Shadowy Vanquisher (Normal)
+						}),
+						i(85304, {	-- Eternal Blossom Shoulderwraps
+							["cost"] = { { "i", 89248, 1 }, },	-- Shoulders of the Shadowy Vanquisher (Normal)
+						}),
+						i(85309, {	-- Eternal Blossom Spaulders
+							["cost"] = { { "i", 89248, 1 }, },	-- Shoulders of the Shadowy Vanquisher (Normal)
+						}),
+						i(85354, {	-- Eternal Blossom Mantle
+							["cost"] = { { "i", 89248, 1 }, },	-- Shoulders of the Shadowy Vanquisher (Normal)
+						}),
+						i(85383, {	-- Eternal Blossom Shoulderguards
+							["cost"] = { { "i", 89248, 1 }, },	-- Shoulders of the Shadowy Vanquisher (Normal)
+						}),
+						i(85299, {	-- Spaulders of the Thousandfold Blades
+							["cost"] = { { "i", 89248, 1 }, },	-- Shoulders of the Shadowy Vanquisher (Normal)
+						}),
+						i(85314, {	-- Shoulderguards of the Lost Catacomb
+							["cost"] = { { "i", 89248, 1 }, },	-- Shoulders of the Shadowy Vanquisher (Normal)
+						}),
+						i(85334, {	-- Pauldrons of the Lost Catacomb
+							["cost"] = { { "i", 89248, 1 }, },	-- Shoulders of the Shadowy Vanquisher (Normal)
+						}),
+						i(85375, {	-- Robes of the Burning Scroll
+							["cost"] = { { "i", 89239, 1 }, },	-- Chest of the Shadowy Vanquisher (Normal)
+						}),
+						i(85305, {	-- Eternal Blossom Vestment
+							["cost"] = { { "i", 89239, 1 }, },	-- Chest of the Shadowy Vanquisher (Normal)
+						}),
+						i(85313, {	-- Eternal Blossom Raiment
+							["cost"] = { { "i", 89239, 1 }, },	-- Chest of the Shadowy Vanquisher (Normal)
+						}),
+						i(85355, {	-- Eternal Blossom Robes
+							["cost"] = { { "i", 89239, 1 }, },	-- Chest of the Shadowy Vanquisher (Normal)
+						}),
+						i(85379, {	-- Eternal Blossom Tunic
+							["cost"] = { { "i", 89239, 1 }, },	-- Chest of the Shadowy Vanquisher (Normal)
+						}),
+						i(85303, {	-- Tunic of the Thousandfold Blades
+							["cost"] = { { "i", 89239, 1 }, },	-- Chest of the Shadowy Vanquisher (Normal)
+						}),
+						i(85318, {	-- Chestguard of the Lost Catacomb
+							["cost"] = { { "i", 89239, 1 }, },	-- Chest of the Shadowy Vanquisher (Normal)
+						}),
+						i(85338, {	-- Breastplate of the Lost Catacomb
+							["cost"] = { { "i", 89239, 1 }, },	-- Chest of the Shadowy Vanquisher (Normal)
+						}),
+						i(85378, {	-- Gloves of the Burning Scroll
+							["cost"] = { { "i", 89242, 1 }, },	-- Gauntlets of the Shadowy Vanquisher (Normal)
+						}),
+						i(85308, {	-- Eternal Blossom Gloves
+							["cost"] = { { "i", 89242, 1 }, },	-- Gauntlets of the Shadowy Vanquisher (Normal)
+						}),
+						i(85312, {	-- Eternal Blossom Grips
+							["cost"] = { { "i", 89242, 1 }, },	-- Gauntlets of the Shadowy Vanquisher (Normal)
+						}),
+						i(85358, {	-- Eternal Blossom Handwraps
+							["cost"] = { { "i", 89242, 1 }, },	-- Gauntlets of the Shadowy Vanquisher (Normal)
+						}),
+						i(85380, {	-- Eternal Blossom Handguards
+							["cost"] = { { "i", 89242, 1 }, },	-- Gauntlets of the Shadowy Vanquisher (Normal)
+						}),
+						i(85302, {	-- Gloves of the Thousandfold Blades
+							["cost"] = { { "i", 89242, 1 }, },	-- Gauntlets of the Shadowy Vanquisher (Normal)
+						}),
+						i(85317, {	-- Handguards of the Lost Catacomb
+							["cost"] = { { "i", 89242, 1 }, },	-- Gauntlets of the Shadowy Vanquisher (Normal)
+						}),
+						i(85337, {	-- Gauntlets of the Lost Catacomb
+							["cost"] = { { "i", 89242, 1 }, },	-- Gauntlets of the Shadowy Vanquisher (Normal)
+						}),
+						i(85376, {	-- Leggings of the Burning Scroll
+							["cost"] = { { "i", 89245, 1 }, },	-- Leggings of the Shadowy Vanquisher (Normal)
+						}),
+						i(85306, {	-- Eternal Blossom Leggings
+							["cost"] = { { "i", 89245, 1 }, },	-- Leggings of the Shadowy Vanquisher (Normal)
+						}),
+						i(85310, {	-- Eternal Blossom Legguards
+							["cost"] = { { "i", 89245, 1 }, },	-- Leggings of the Shadowy Vanquisher (Normal)
+						}),
+						i(85356, {	-- Eternal Blossom Legwraps
+							["cost"] = { { "i", 89245, 1 }, },	-- Leggings of the Shadowy Vanquisher (Normal)
+						}),
+						i(85382, {	-- Eternal Blossom Breeches
+							["cost"] = { { "i", 89245, 1 }, },	-- Leggings of the Shadowy Vanquisher (Normal)
+						}),
+						i(85300, {	-- Legguards of the Thousandfold Blades
+							["cost"] = { { "i", 89245, 1 }, },	-- Leggings of the Shadowy Vanquisher (Normal)
+						}),
+						i(85315, {	-- Legguards of the Lost Catacomb
+							["cost"] = { { "i", 89245, 1 }, },	-- Leggings of the Shadowy Vanquisher (Normal)
+						}),
+						i(85335, {	-- Greaves of the Lost Catacomb
+							["cost"] = { { "i", 89245, 1 }, },	-- Leggings of the Shadowy Vanquisher (Normal)
+						}),
+						i(87008, {	-- Hood of the Burning Scroll
+							["cost"] = { { "i", 89258, 1 }, },	-- Helm of the Shadowy Vanquisher (Heroic)
+						}),
+						i(86934, {	-- Eternal Blossom Cover
+							["cost"] = { { "i", 89258, 1 }, },	-- Helm of the Shadowy Vanquisher (Heroic)
+						}),
+						i(86925, {	-- Eternal Blossom Headpiece
+							["cost"] = { { "i", 89258, 1 }, },	-- Helm of the Shadowy Vanquisher (Heroic)
+						}),
+						i(86929, {	-- Eternal Blossom Helm
+							["cost"] = { { "i", 89258, 1 }, },	-- Helm of the Shadowy Vanquisher (Heroic)
+						}),
+						i(86940, {	-- Eternal Blossom Headguard
+							["cost"] = { { "i", 89258, 1 }, },	-- Helm of the Shadowy Vanquisher (Heroic)
+						}),
+						i(87126, {	-- Helmet of the Thousandfold Blades
+							["cost"] = { { "i", 89258, 1 }, },	-- Helm of the Shadowy Vanquisher (Heroic)
+						}),
+						i(86920, {	-- Faceguard of the Lost Catacomb
+							["cost"] = { { "i", 89258, 1 }, },	-- Helm of the Shadowy Vanquisher (Heroic)
+						}),
+						i(86915, {	-- Helmet of the Lost Catacomb
+							["cost"] = { { "i", 89258, 1 }, },	-- Helm of the Shadowy Vanquisher (Heroic)
+						}),
+						i(87011, {	-- Mantle of the Burning Scroll
+							["cost"] = { { "i", 89261, 1 }, },	-- Shoulders of the Shadowy Vanquisher (Heroic)
+						}),
+						i(86937, {	-- Eternal Blossom Shoulderwraps
+							["cost"] = { { "i", 89261, 1 }, },	-- Shoulders of the Shadowy Vanquisher (Heroic)
+						}),
+						i(86927, {	-- Eternal Blossom Spaulders
+							["cost"] = { { "i", 89261, 1 }, },	-- Shoulders of the Shadowy Vanquisher (Heroic)
+						}),
+						i(86932, {	-- Eternal Blossom Mantle
+							["cost"] = { { "i", 89261, 1 }, },	-- Shoulders of the Shadowy Vanquisher (Heroic)
+						}),
+						i(86942, {	-- Eternal Blossom Shoulderguards
+							["cost"] = { { "i", 89261, 1 }, },	-- Shoulders of the Shadowy Vanquisher (Heroic)
+						}),
+						i(87128, {	-- Spaulders of the Thousandfold Blades
+							["cost"] = { { "i", 89261, 1 }, },	-- Shoulders of the Shadowy Vanquisher (Heroic)
+						}),
+						i(86922, {	-- Shoulderguards of the Lost Catacomb
+							["cost"] = { { "i", 89261, 1 }, },	-- Shoulders of the Shadowy Vanquisher (Heroic)
+						}),
+						i(86917, {	-- Pauldrons of the Lost Catacomb
+							["cost"] = { { "i", 89261, 1 }, },	-- Shoulders of the Shadowy Vanquisher (Heroic)
+						}),
+						i(87010, {	-- Robes of the Burning Scroll
+							["cost"] = { { "i", 89249, 1 }, },	-- Chest of the Shadowy Vanquisher (Heroic)
+						}),
+						i(86936, {	-- Eternal Blossom Vestment
+							["cost"] = { { "i", 89249, 1 }, },	-- Chest of the Shadowy Vanquisher (Heroic)
+						}),
+						i(86923, {	-- Eternal Blossom Raiment
+							["cost"] = { { "i", 89249, 1 }, },	-- Chest of the Shadowy Vanquisher (Heroic)
+						}),
+						i(86931, {	-- Eternal Blossom Robes
+							["cost"] = { { "i", 89249, 1 }, },	-- Chest of the Shadowy Vanquisher (Heroic)
+						}),
+						i(86938, {	-- Eternal Blossom Tunic
+							["cost"] = { { "i", 89249, 1 }, },	-- Chest of the Shadowy Vanquisher (Heroic)
+						}),
+						i(87124, {	-- Tunic of the Thousandfold Blades
+							["cost"] = { { "i", 89249, 1 }, },	-- Chest of the Shadowy Vanquisher (Heroic)
+						}),
+						i(86918, {	-- Chestguard of the Lost Catacomb
+							["cost"] = { { "i", 89249, 1 }, },	-- Chest of the Shadowy Vanquisher (Heroic)
+						}),
+						i(86913, {	-- Breastplate of the Lost Catacomb
+							["cost"] = { { "i", 89249, 1 }, },	-- Chest of the Shadowy Vanquisher (Heroic)
+						}),
+						i(87007, {	-- Gloves of the Burning Scroll
+							["cost"] = { { "i", 89255, 1 }, },	-- Gauntlets of the Shadowy Vanquisher (Heroic)
+						}),
+						i(86933, {	-- Eternal Blossom Gloves
+							["cost"] = { { "i", 89255, 1 }, },	-- Gauntlets of the Shadowy Vanquisher (Heroic)
+						}),
+						i(86924, {	-- Eternal Blossom Grips
+							["cost"] = { { "i", 89255, 1 }, },	-- Gauntlets of the Shadowy Vanquisher (Heroic)
+						}),
+						i(86928, {	-- Eternal Blossom Handwraps
+							["cost"] = { { "i", 89255, 1 }, },	-- Gauntlets of the Shadowy Vanquisher (Heroic)
+						}),
+						i(86939, {	-- Eternal Blossom Handguards
+							["cost"] = { { "i", 89255, 1 }, },	-- Gauntlets of the Shadowy Vanquisher (Heroic)
+						}),
+						i(87125, {	-- Gloves of the Thousandfold Blades
+							["cost"] = { { "i", 89255, 1 }, },	-- Gauntlets of the Shadowy Vanquisher (Heroic)
+						}),
+						i(86919, {	-- Handguards of the Lost Catacomb
+							["cost"] = { { "i", 89255, 1 }, },	-- Gauntlets of the Shadowy Vanquisher (Heroic)
+						}),
+						i(86914, {	-- Gauntlets of the Lost Catacomb
+							["cost"] = { { "i", 89255, 1 }, },	-- Gauntlets of the Shadowy Vanquisher (Heroic)
+						}),
+						i(87009, {	-- Leggings of the Burning Scroll
+							["cost"] = { { "i", 89252, 1 }, },	-- Leggings of the Shadowy Vanquisher (Heroic)
+						}),
+						i(86935, {	-- Eternal Blossom Leggings
+							["cost"] = { { "i", 89252, 1 }, },	-- Leggings of the Shadowy Vanquisher (Heroic)
+						}),
+						i(86926, {	-- Eternal Blossom Legguards
+							["cost"] = { { "i", 89252, 1 }, },	-- Leggings of the Shadowy Vanquisher (Heroic)
+						}),
+						i(86930, {	-- Eternal Blossom Legwraps
+							["cost"] = { { "i", 89252, 1 }, },	-- Leggings of the Shadowy Vanquisher (Heroic)
+						}),
+						i(86941, {	-- Eternal Blossom Breeches
+							["cost"] = { { "i", 89252, 1 }, },	-- Leggings of the Shadowy Vanquisher (Heroic)
+						}),
+						i(87127, {	-- Legguards of the Thousandfold Blades
+							["cost"] = { { "i", 89252, 1 }, },	-- Leggings of the Shadowy Vanquisher (Heroic)
+						}),
+						i(86921, {	-- Legguards of the Lost Catacomb
+							["cost"] = { { "i", 89252, 1 }, },	-- Leggings of the Shadowy Vanquisher (Heroic)
+						}),
+						i(86916, {	-- Greaves of the Lost Catacomb
+							["cost"] = { { "i", 89252, 1 }, },	-- Leggings of the Shadowy Vanquisher (Heroic)
+						}),
 						i(88741),	-- Gloves of Red Feathers
 						i(88742),	-- Sunspeaker's Flared Gloves
 						i(88743),	-- Ogo's Elder Gloves
