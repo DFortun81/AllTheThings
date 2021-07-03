@@ -160,26 +160,90 @@ _.Zones =
 									}),
 								},
 							}),
+							-- TODO: are individual boss loots weekly/daily?
+							-- Need more questID's from existing Tormentors/repeat Tormentors... they cant repeat in the same daily lockout so idk about that
+							-- currently have 64692 - 64694 saved, no Tormentors killed today, but 3 for the week
 							n(178897, {	-- Algel the Haunter
-								i(186239),	-- Drape of the Phantasm
+								["questID"] = 64107,
+								["g"] = {
+									i(186239),	-- Drape of the Phantasm
+								},
+							}),
+							n(178898, {	-- Golmak The Monstrosity
+								-- ["questID"] = ,
+								-- ["g"] = {
+								-- },
 							}),
 							n(177979, {	-- Gralebboih
-								i(186449),	-- Amaranthine Stinger (PET!)
+								["questID"] = 64113,
+								["g"] = {
+									i(186449),	-- Amaranthine Stinger (PET!)
+								},
+							}),
+							n(177980, {	-- Gruukuuek the Elder
+								-- ["questID"] = ,
+								-- ["g"] = {
+								-- },
+							}),
+							n(178004, {	-- Intercessor Razzram
+								-- ["questID"] = ,
+								-- ["g"] = {
+								-- },
+							}),
+							n(178882, {	-- Kazj The Sentinel
+								-- ["questID"] = ,
+								-- ["g"] = {
+								-- },
 							}),
 							n(177972, {	-- Malleus Grakizz
-								i(186012),	-- Inferno Blast Shield
+								["questID"] = 64119,
+								["g"] = {
+									i(186012),	-- Inferno Blast Shield
+								},
 							}),
 							n(178899, {	-- Manifestation of Pain
-								i(186213),	-- Bindings of Manifest Pain
+								["questID"] = 64118,
+								["g"] = {
+									i(186213),	-- Bindings of Manifest Pain
+								},
+							}),
+							n(178002, {	-- Mugrem the Soul Devourer
+								-- ["questID"] = ,
+								-- ["g"] = {
+								-- },
 							}),
 							n(177330, {	-- Promathiz
-								i(186007),	-- Cudgel of the Tin Sentinel
+								-- ["questID"] = ,
+								["g"] = {
+									i(186007),	-- Cudgel of the Tin Sentinel
+								},
 							}),
 							n(177331, {	-- Sentinel Pyrophus
-								i(186219),	-- Pyrophus' Wrist Ties
+								-- ["questID"] = ,
+								["g"] = {
+									i(186219),	-- Pyrophus' Wrist Ties
+								},
 							}),
 							n(178883, {	-- Sentinel Shakorzeth
-								i(186244),	-- Shakorzeth's Gorget
+								["questID"] = 64121,
+								["g"] = {
+									i(186244),	-- Shakorzeth's Gorget
+								},
+							}),
+							n(177427, {	-- The Mass of Souls
+								-- ["questID"] = ,
+								-- ["g"] = {
+								-- },
+							}),
+							n(177981, {	-- Versya the Damned
+								-- ["questID"] = ,
+								-- ["g"] = {
+								-- },
+							}),
+							n(178886, {	-- Zul'gath the Flayer
+								-- ["questID"] = ,
+								-- ["g"] = {
+								-- },
 							}),
 							i(185973, {	-- Chain of Bahmethra
 								["cost"] = { { "i", 185974, 200 } },	-- 200x Bahmet Chain Link
@@ -907,19 +971,21 @@ _.Zones =
 		}),
 	}),
 };
+
 _.HiddenQuestTriggers = {
 	q(62907),	-- triggered after collecting all stygia during "Rule 1: Have an Escape Plan" (triggers dialogue from The Jailer + the Eye of the Jailer counter...thing)
-	q(64107),	-- triggered when killing Algel the Haunter
-	q(64695),	-- triggered when killing Algel the Haunter / Gruukuuek the Elder
-	q(64698),	-- triggered when killing Intercessor Razzra
-	q(64118),	-- triggered when killing Manifestation of Pain
-	q(64692),	-- triggered when killing Manifestation of Pain
-	q(64696),	-- triggered when killing Promathiz / Sentinel Shakorzeth
-	q(64697),	-- triggered when killing Malleus Grakizz / Sentinel Shakorzeth
+	-- these seem shared... ? some sort of incremental counter?
+	q(64692),	-- triggered when killing Manifestation of Pain / Zul'gath the Flayer
 	q(64693),	-- triggered when killing Manifestation of Pain
-	q(64121),	-- triggered when killing Sentinel Shakorzeth (somehow it + Kazj the Sentinel were both up at once, this was only after killing Shakorzeth, and then Kazj did not trigger an additional questID at all)
-	q(64697),	-- triggered when killing Versya the Damned
+	q(64694),	-- triggered when killing Malleus Grakizz
+	q(64695),	-- triggered when killing Algel the Haunter / Gruukuuek the Elder
+	q(64696),	-- triggered when killing Promathiz / Sentinel Shakorzeth
+	q(64697),	-- triggered when killing Malleus Grakizz / Sentinel Shakorzeth / Versya the Damned
+	q(64698),	-- triggered when killing Intercessor Razzra
+
+	-- q(64121),	-- triggered when killing Sentinel Shakorzeth (somehow it + Kazj the Sentinel were both up at once, this was only after killing Shakorzeth, and then Kazj did not trigger an additional questID at all)
 };
+
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(60902),	-- A Dark Song
