@@ -8150,6 +8150,9 @@ local itemFields = {
 	["specs"] = function(t)
 		return GetFixedItemSpecInfo(t.itemID);
 	end,
+	["retries"] = function(t)
+		return GetCachedField(t, "retries");
+	end,
 	["b"] = function(t)
 		return GetCachedField(t, "b") or 2;
 		-- local link = t.link;
@@ -17048,8 +17051,9 @@ app:GetWindow("Tradeskills", UIParent, function(self, force, got)
 			end
 		end
 		self.RefreshRecipes = function(self)
+			-- print("RefreshRecipes")
 			if app.CollectibleRecipes then
-				DelayedCallback(self.CacheAndUpdate, 1, self);
+				DelayedCallback(self.CacheAndUpdate, 0.5, self);
 			end
 		end
 		self.CacheAndUpdate = function(self)
@@ -17098,11 +17102,7 @@ app:GetWindow("Tradeskills", UIParent, function(self, force, got)
 				end);
 				return;
 			end
-			StartCoroutine("UpdateTradeSkills", function()
-				while InCombatLockdown() do coroutine.yield(); end
-				coroutine.yield();
-				self:Update();
-			end);
+			AfterCombatCallback(self.Update, self);
 		end
 		-- Setup Event Handlers and register for events
 		self:SetScript("OnEvent", function(self, e, ...)
@@ -17192,16 +17192,13 @@ app:GetWindow("Tradeskills", UIParent, function(self, force, got)
 					self.gettinMadAtDumbNamingConventions = true;
 					self.OldNewElement = TSMAPI_FOUR.UI.NewElement;
 					TSMAPI_FOUR.UI.NewElement = function(...)
-						StartCoroutine("UpdateTradeSkills", function()
-							while InCombatLockdown() do coroutine.yield(); end
-							coroutine.yield();
-							self:Update();
-						end);
+						AfterCombatCallback(self.Update, self);
 						return self.OldNewElement(...);
 					end
 				end
 			end
 		elseif TSMCraftingTradeSkillFrame then
+			-- print("TSMCraftingTradeSkillFrame")
 			if not self.cachedTSMFrame then
 				local f = TSMCraftingTradeSkillFrame;
 				self.cachedTSMFrame = f;
