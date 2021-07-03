@@ -160,88 +160,103 @@ _.Zones =
 									}),
 								},
 							}),
-							-- TODO: are individual boss loots weekly/daily?
+							-- TODO: are individual boss loots weekly/daily? shows as all un-flagged for me when i killed them before, so assuming daily
 							-- Need more questID's from existing Tormentors/repeat Tormentors... they cant repeat in the same daily lockout so idk about that
 							-- currently have 64692 - 64694 saved, no Tormentors killed today, but 3 for the week
 							n(178897, {	-- Algel the Haunter
 								["questID"] = 64107,
+								["isDaily"] = true,
 								["g"] = {
 									i(186239),	-- Drape of the Phantasm
 								},
 							}),
 							n(178898, {	-- Golmak The Monstrosity
 								-- ["questID"] = ,
+								["isDaily"] = true,
 								-- ["g"] = {
 								-- },
 							}),
 							n(177979, {	-- Gralebboih
 								["questID"] = 64113,
+								["isDaily"] = true,
 								["g"] = {
 									i(186449),	-- Amaranthine Stinger (PET!)
 								},
 							}),
 							n(177980, {	-- Gruukuuek the Elder
 								-- ["questID"] = ,
+								["isDaily"] = true,
 								-- ["g"] = {
 								-- },
 							}),
 							n(178004, {	-- Intercessor Razzram
 								-- ["questID"] = ,
+								["isDaily"] = true,
 								-- ["g"] = {
 								-- },
 							}),
 							n(178882, {	-- Kazj The Sentinel
 								-- ["questID"] = ,
+								["isDaily"] = true,
 								-- ["g"] = {
 								-- },
 							}),
 							n(177972, {	-- Malleus Grakizz
 								["questID"] = 64119,
+								["isDaily"] = true,
 								["g"] = {
 									i(186012),	-- Inferno Blast Shield
 								},
 							}),
 							n(178899, {	-- Manifestation of Pain
 								["questID"] = 64118,
+								["isDaily"] = true,
 								["g"] = {
 									i(186213),	-- Bindings of Manifest Pain
 								},
 							}),
 							n(178002, {	-- Mugrem the Soul Devourer
 								-- ["questID"] = ,
+								["isDaily"] = true,
 								-- ["g"] = {
 								-- },
 							}),
 							n(177330, {	-- Promathiz
 								-- ["questID"] = ,
+								["isDaily"] = true,
 								["g"] = {
 									i(186007),	-- Cudgel of the Tin Sentinel
 								},
 							}),
 							n(177331, {	-- Sentinel Pyrophus
 								-- ["questID"] = ,
+								["isDaily"] = true,
 								["g"] = {
 									i(186219),	-- Pyrophus' Wrist Ties
 								},
 							}),
 							n(178883, {	-- Sentinel Shakorzeth
 								["questID"] = 64121,
+								["isDaily"] = true,
 								["g"] = {
 									i(186244),	-- Shakorzeth's Gorget
 								},
 							}),
 							n(177427, {	-- The Mass of Souls
 								-- ["questID"] = ,
+								["isDaily"] = true,
 								-- ["g"] = {
 								-- },
 							}),
 							n(177981, {	-- Versya the Damned
 								-- ["questID"] = ,
+								["isDaily"] = true,
 								-- ["g"] = {
 								-- },
 							}),
 							n(178886, {	-- Zul'gath the Flayer
 								-- ["questID"] = ,
+								["isDaily"] = true,
 								-- ["g"] = {
 								-- },
 							}),
