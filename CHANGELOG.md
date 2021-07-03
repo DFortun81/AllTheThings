@@ -1,36 +1,30 @@
 # AllTheThings
 
-## [SL-2.3.5a](https://github.com/DFortun81/AllTheThings/tree/SL-2.3.5a) (2021-06-30)
-[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.3.5...SL-2.3.5a) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
-
-### Hotfix to the 2.3.5 update
-
-- Disabled some developer functionality that we forgot about after PTR cycle
-- Fixed Settings page
-- Harvested quests/items, we won't ask to report stuff as often
-- Various fixes to new content (quests, drops, etc)
-- You still have time until next reset to get your Shadowlands Keystone: Season One achievements
-- Fixed bug where a map without an attached achievement would have an error showing an icon
-
+## [SL-2.3.6](https://github.com/DFortun81/AllTheThings/tree/SL-2.3.6) (2021-07-03)
+[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.3.5a...SL-2.3.6) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
 
 ### Highlight of this update
 
-#### Chains of Domination ⛓
+#### Xyraxz's Controlling Rod
 
-The long wait is over! After 218 days of 9.0 the first major patch of Shadowlands has arrived and we have updated ATT accordingly.
+Xyraxz's Controlling Rod was finally added to the addon, thanks everyone for reporting it!
 
-New zone, questlines, achievements, mounts and everything else should be in this patch but you can expect a new update over the weekend (Tazavesh and fixes).
+#### Fixes!
+
+Lots of post-9.1 release fixes including but not limited to:
+
+- huge lag on login, rendering the game unplayable for a long period of time
+- empty tooltip for paragon rewards in currency tab
+- broken Mark of Honor window
 
 ### Other notable changes:
 
-- Currencies now use new diamond icon instead of star icon (to avoid confusion with CanIMogIt)
-- If you right-click a Thing to open popout window for it, we will now show Source(s) header with Vendors/Quests/etc
-- Modified Contains & Search logic to properly utilize the 'Ignore BoE Filters' option for the nested content of BoE Items
-- Ongoing fixes for stuff from Burning Crusade
-- Fixed a bug causing script timeouts in some maps
-- Lots of quest fixes/additions by Darkal (and others!)
-- Now when you complete a quest that we think is not in a game we will ask you to report it
-- Descriptions should no longer be duplicated (we fixed this at least twice before)
-- PvP fixes
-- Different fixes for window updates (when you complete quests, when you learn recipes, etc)
-- Various fixes
+- Added an auto-quest refresh which will trigger after looting & leaving combat (Please let us know if this causes any noticeable lag! Can turn it into a setting otherwise)
+- Fixed Quest Chain Requirements from sometimes cutting-off when the quest switches from faction-specific to Neutral quests and vice versa
+- Various small 9.1 updates: drops, quests, coords, recipes, adventure rewards, etc
+- Ongoing conversion of cost/token items to new format
+- More performance improvements (profession lists, raid assistant, etc)
+- Slight adjustment to waypoint plotting via TomTom to only plot visible groups which the player is not 'saved' to, unless it is the specific Thing which was clicked
+- Marked 'Fel-Smelter' and 'Mass Obliteration' achievements as unobtainable and moved them to legacy. RIP anyone who didn't get them
+- More stuff like treasure names should be localized now
+- Various fixes to old content
