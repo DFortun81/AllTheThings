@@ -266,3 +266,13 @@ _.Zones =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10014, {	-- Wrath of the Lich King
+		n(-163, {	-- Armor
+			f(53,	{	-- Trinket
+				i(44869),	-- Frenzyheart Insignia of Fury
+				i(44870),	-- Oracle Talisman of Ablution
+			}),
+		}),
+	}),
+});

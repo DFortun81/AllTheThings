@@ -1439,6 +1439,8 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(147036),	-- Fel-Stippled Legguards		(removed Beta)
 			i(147058),	-- Chaos-Calming Wristguards	(removed Beta)
 			i(147074),	-- Vambraces of Resoulte Justice
+			i(157761),	-- Barbaric Mindslaver
+			i(157763),	-- Engine of Eradication
 		}),
 	}),
 });

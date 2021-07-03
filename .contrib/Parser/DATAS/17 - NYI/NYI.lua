@@ -497,6 +497,8 @@ _.NeverImplemented =
 			i(109547),	-- 6.0 QA Combat Test Leather Bracer 4
 			-- Testing Gear
 			i(120363),	-- 7.0 QA Combat Test Leather Boots 4
+			-- Legion
+			i(129046),	-- 7.0 PH Leather Helm
 			-- BFA
 			i(154849),	-- Crimsonwood Bracers
 			i(154852),	-- Crimsonwood Gloves
@@ -1083,63 +1085,65 @@ _.NeverImplemented =
 			i(173421),	-- Black Empire Signet
 		}),
 		n(-386, {	-- Trinket
+			-- Load In Game
+			-- Wrath
+			i(38572),	-- Bounty Procurement Enhancer (Says added in cata wowhead)
+			i(39819),	-- Bloodbinder's Runestone (Says added in cata wowhead)
+			-- Cata
+			i(54547),	-- Cracked Jewelry Box
+			-- WoD
+			i(114960),	-- Spires unused
+			-- Legion
+			i(157746),	-- Graven Keepsake
+			i(157747),	-- Illuminated Charm
+			-- BFA
+			i(161222),	-- Latency Manipulator
+			i(161223),	-- Agency Manipulator
+			i(161289),	-- Rikal's Shark Teeth
+			-- ItemID/Retrieving
+			-- Vanilla
 			i(12805),	-- Orb of Fire
-			i(37561),	-- Unknown
-			i(173426),	-- Black Empire trinkets
 			i(18355),	-- Ferras Collar
 			i(18438),	-- Sergeant's Mark
 			i(20084),	-- Hunting Net
 			i(20525),	-- Earthen Sigil
-			i(38572),	-- Bounty Procurement enhancer
-			i(161222),	-- latency manipulator
-			i(161223),	-- agency manipulator
-			i(161289),	-- rikals shark teeth
-			i(157761),	-- Unknown
-			i(38383),	-- Unknown
-			i(38526),	-- Unknown
-			i(167138),	-- Unknown
-			i(157746),	-- Graven Keepsake
-			i(157747),	-- Illuminated Charm
-			i(167139),	-- Unknown
-			i(46839),	-- Unknown
-			i(46840),	-- Unknown
-			i(65015),	-- Donstusefury of angerforge
-			i(157763),	-- ENgine of Eradication
-			i(157764),	-- Claw of the crystaline scropid
-			i(157765),	-- draught of souls
-			i(157766),	-- vial of nightmare fog
-			i(109263),	-- Unknown
-			i(109286),	-- Unknown
-			i(109360),	-- Unknown
-			i(150367),	-- Unknown
-			i(151967),	-- Unknown
-			i(109370),	-- Unknown
-			i(109376),	-- Unknown
-			i(109378),	-- Unknown
-			i(109386),	-- Unknown
-			i(109394),	-- Unknown
-			i(44869),	-- Frenzyheart Insignia of Fury
-			i(44870),	-- Oracle Talisman of Ablution
-			i(39819),	-- Bloodbinder's Runestone
-			i(49312),	-- Purified Onyxia Blood Talisman
-			i(54547),	-- Cracked Jewelry Box
-			i(60802),	-- Unknown
-			i(60803),	-- Unknown
-			i(60804),	-- Unknown
-			i(60805),	-- Unknown
-			i(61027),	-- Unknown
-			i(61028),	-- Unknown
-			i(61029),	-- Unknown
-			i(109403),	-- Unknown
-			i(109407),	-- Unknown
-			i(109413),	-- Unknown
-			i(109442),	-- Unknown
-			i(109446),	-- Unknown
-			i(109467),	-- Unknown
-			i(109480),	-- Unknown
-			i(109495),	-- Unknown
-			i(109515),	-- Unknown
-			i(114960),	-- spires unused
+			--Wrath
+			i(37561),	-- Touch of the Elements (Says added in cata wowhead)
+			i(38383),	-- Valonforth's Folly (Says added in cata wowhead)
+			i(38526),	--Binding of the Imprisoned Soul (Says added in cata wowhead)
+			i(46839),	-- Frostwolf Insignia Rank 7
+			i(46840),	-- Frostwolf Insignia Rank 7
+			-- WoD
+			i(109263),	-- 6.0 QA Combat Test Agility DPS Trinket
+			i(109286),	-- 7.0 QA Combat Test Caster DPS Trinket 1
+			i(109360),	-- 6.0 QA Combat Test Agility DPS Trinket 2
+			i(109370),	-- 7.0 QA Combat Test Caster DPS Trinket 2
+			i(109376),	-- 6.0 QA Combat Test Strength DPS Trinket
+			i(109378),	-- 6.0 QA Combat Test Tank Trinket
+			i(109386),	-- 6.0 QA Combat Test Agility DPS Trinket 3
+			i(109394),	-- 6.0 QA Combat Test Tank Trinket 2
+			i(109403),	-- 6.0 QA Combat Test Strength DPS Trinket 2
+			i(109407),	-- 6.0 QA Combat Test Caster DPS Trinket 3
+			i(109413),	-- 7.0 QA Combat Test Caster DPS Trinket 4
+			i(109442),	-- 6.0 QA Combat Test Agility DPS Trinket 4
+			i(109446),	-- 6.0 QA Combat Test Strength DPS Trinket 3
+			i(109467),	-- 6.0 QA Combat Test Strength DPS Trinket 4
+			i(109480),	-- 6.0 QA Combat Test Tank Trinket 3
+			i(109495),	-- 6.0 QA Combat Test Tank Trinket 4
+			i(109515),	-- 6.0 QA Combat Test Tank Trinket 5
+			i(113017),	-- 7.0 QRP Template PH Int Trinket #2
+			i(113018),	-- 7.0 QRP Template PH Str Trinket #1
+			i(113019),	-- 7.0 QRP Template PH Str Trinket #2
+			i(113020),	-- 7.0 QRP Template PH Agi Trinket #1
+			i(113021),	-- 7.0 QRP Template PH Agi Trinket #2
+			i(113022),	-- 7.0 QRP Template PH Int Trinket #1
+			-- Legion
+			i(150367),	-- Test Trinket
+			i(151967),	-- Electrostatic Lasso
+			-- BFA
+			i(167138),	-- QA Combat Test Trinket 1 (SL?)
+			i(167139),	-- QA Combat Test Trinket 2 (SL?)
+			i(173426),	-- Black Empire trinkets
 		}),
 	}),
 	n(-494, {	-- Misc

@@ -4404,6 +4404,15 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(60656),	-- Vicious Gladiator's Band of Triumph
 				i(60657),	-- Vicious Gladiator's Band of Triumph
 			}),
+			f(53, {	-- Trinket
+				i(60802),	-- Vicious Gladiator's Medallion of Accuracy
+				i(60803),	-- Vicious Gladiator's Medallion of Alacrity
+				i(60804),	-- Vicious Gladiator's Medallion of Prowess
+				i(60805),	-- Vicious Gladiator's Medallion of Command
+				i(61027),	-- Vicious Gladiator's Emblem of Accuracy
+				i(61028),	-- Vicious Gladiator's Emblem of Alacrity
+				i(61029),	-- Vicious Gladiator's Emblem of Prowess
+			}),
 		}),
 		n(-673, {	-- Ruthless Gladiator: Season 10
 			n(-662, {	-- Elite

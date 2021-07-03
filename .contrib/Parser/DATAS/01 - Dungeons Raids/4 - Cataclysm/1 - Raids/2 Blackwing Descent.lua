@@ -291,3 +291,10 @@ _.Instances = { tier(4, {	-- Cataclysm
 		},
 	}),
 })};
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-9979, {	-- Cataclysm
+		inst(73, {	-- Blackwing Descent
+			i(65015),	-- DONTUSEFury of Angerforge
+		}),
+	}),
+});

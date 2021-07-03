@@ -1516,3 +1516,11 @@ _.Instances = { tier(7, {	-- Legion
 		},
 	}),
 })};
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-9982, {	-- Legion
+		inst(786, {	-- The Nighthold
+			i(157764),	-- Claw of the Crystalline Scorpid
+			i(157765),	-- Draught of Souls
+		}),
+	}),
+});

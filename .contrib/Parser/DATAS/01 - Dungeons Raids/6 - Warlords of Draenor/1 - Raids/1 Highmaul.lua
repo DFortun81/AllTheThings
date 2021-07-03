@@ -769,3 +769,12 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 		},
 	}),
 })};
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-9981, {	-- Draenor
+		inst(477, {	-- Highmaul
+			i(116207),	-- 6.0 LFR - Highmaul Raid - UNUSED - Leather Belt 1
+			i(116031),	-- 6.0 LFR - Highmaul Raid - UNUSED - Mail Versatile Belt 1
+			i(116232),	-- 6.0 LFR - Highmaul Raid - UNUSED - Plate Versatile Belt 1
+		}),
+	}),
+});
