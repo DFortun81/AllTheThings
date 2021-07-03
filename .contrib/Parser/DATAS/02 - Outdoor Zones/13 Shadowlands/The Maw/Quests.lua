@@ -227,6 +227,7 @@ _.Zones =
 								["isDaily"] = true,
 								["g"] = {
 									i(186007),	-- Cudgel of the Tin Sentinel
+									i(186208),	-- Padded Insouls
 								},
 							}),
 							n(177331, {	-- Sentinel Pyrophus

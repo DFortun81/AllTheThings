@@ -198,6 +198,7 @@ _.Zones =
 						crit(17, {	-- Screaming Shade
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
+						i(187400),	-- Mantle of Screaming Shadows
 					},
 				}),
 				n(179911, {	-- Silent Soulstalker

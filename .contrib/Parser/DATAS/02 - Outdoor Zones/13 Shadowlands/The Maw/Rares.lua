@@ -390,6 +390,7 @@ _.Zones =
 						crit(21, {	-- Ikras the Devourer
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
 						}),
+						i(186214),	-- Maw Snakeskin Boots
 					},
 				}),
 				n(170692, {	-- Krala <Death's Wings>
