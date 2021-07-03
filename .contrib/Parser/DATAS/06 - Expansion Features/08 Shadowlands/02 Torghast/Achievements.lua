@@ -211,9 +211,15 @@ _.ExpansionFeatures =
 					}),
 				}),
 				ach(15075, {	-- Infiltrators
-					crit(1),	-- Karthazel
-					crit(2),	-- Sath'zuul
-					crit(3),	-- Vil'thras
+					crit(1, {	-- Karthazel
+						["cr"] = 179136,	-- Karthazel
+					}),
+					crit(2, {	-- Sath'zuul
+						["cr"] = 179135,	-- Sath'zuul
+					}),
+					crit(3, {	-- Vil'thras
+						["cr"] = 179133,	-- Vil'thras
+					}),
 				}),
 				ach(14755),		-- Legendary Accord
 				ach(15079, {	-- Many, Many Things

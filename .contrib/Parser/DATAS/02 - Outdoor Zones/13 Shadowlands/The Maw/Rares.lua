@@ -154,9 +154,10 @@ _.Zones =
 					},
 				}),
 				n(160770, {	-- Darithis the Bleak
+					["description"] = "At the back of the cave.",
 					["questID"] = 62281,
 					["isDaily"] = true,
-					["coord"] = { 61.0, 48.6, THE_MAW },
+					["coord"] = { 59.3, 51.9, THE_MAW },
 					["g"] = {
 						crit(5, {	-- Darithis the Bleak
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead

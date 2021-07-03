@@ -427,6 +427,7 @@ _.Zones =
 						{ 45.6, 81.4, KORTHIA },
 						{ 46.3, 56.7, KORTHIA },
 						{ 47.2, 76.8, KORTHIA },
+						{ 48.8, 52.1, KORTHIA },
 						{ 50.6, 67.1, KORTHIA },
 						{ 53.9, 76.1, KORTHIA },
 						{ 54.2, 72.3, KORTHIA },
