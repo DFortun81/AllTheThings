@@ -912,7 +912,9 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(62072),	-- Familiar Faces
 		q(59086),	-- Manor of Minions
 		q(59082),	-- Next Realm!
-		q(62289),	-- Observing Conflict
+		q(62289, {	-- Observing Conflict
+			["_drop"] = { "g" },	-- drop anima trash
+		}),
 		q(59079),	-- Portal to Paradise
 		q(59081),	-- Scum Scrape
 		q(59083),	-- Sticky Getaway

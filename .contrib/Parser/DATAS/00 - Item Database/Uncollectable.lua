@@ -149,6 +149,7 @@ i(13508);	-- Eye of Arachnida
 i(129210);	-- Fel Crystal Fragments
 i(127768);	-- Fel Petal
 i(37431);	-- Fetch Ball
+i(116984);	-- Frost Wyrm Egg
 i(139792);	-- Fruitful Bauble
 i(180874);	-- Gargon Whistle
 i(44618);	-- Glass of Aged Dalaran Red
