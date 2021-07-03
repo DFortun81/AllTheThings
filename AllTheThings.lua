@@ -5689,41 +5689,42 @@ end
 	]]--
 
 	-- Paragon Hook
-	local paragonCacheID = {
+	-- local paragonCacheID = {
 		-- Paragon Cache Rewards
 		-- [QuestID] = [ItemCacheID"]	-- Faction // Quest Title
-		[54454] = 166300,	-- 7th Legion // Supplies from the 7th Legion
-		[48976] = 152922,	-- Argussian Reach // Paragon of the Argussian Reach
-		[46777] = 152108,	-- Armies of Legionfall // The Bounties of Legionfall
-		[48977] = 152923,	-- Army of the Light // Paragon of the Army of the Light
-		[54453] = 166298,	-- Champions of Azeroth // Supplies from Magni
-		[46745] = 152102,	-- Court of Farondis // Supplies from the Court
-		[46747] = 152103,	-- Dreamweavers // Supplies from the Dreamweavers
-		[46743] = 152104,	-- Highmountain Tribes // Supplies from Highmountain
-		[54455] = 166299,	-- Honorbound // Supplies from the Honorbound
-		[54456] = 166297,	-- Order of Embers // Supplies from the Order of Embers
-		[54458] = 166295,	-- Proudmoore Admiralty // Supplies from the Proudmoore Admiralty
-		[54457] = 166294,	-- Storm's Wake // Supplies from Storm's Wake
-		[54460] = 166282,	-- Talanji's Expedition // Supplies from Talanji's Expedition
-		[46748] = 152105,	-- The Nightfallen // Supplies from the Nightfallen
-		[46749] = 152107,	-- The Wardens // Supplies from the Wardens
-		[54451] = 166245,	-- Tortollan Seekers // Baubles from the Seekers
-		[46746] = 152106,	-- Valarjar // Supplies from the Valarjar
-		[54461] = 166290,	-- Voldunai // Supplies from the Voldunai
-		[54462] = 166292,	-- Zandalari Empire // Supplies from the Zandalari Empire
-		[55976] = 169939,	-- Waveblade Ankoan // Supplies From the Waveblade Ankoan
-		[53982] = 169940,	-- Unshackled // Supplies From The Unshackled
-		[55348] = 170061,	-- Rustbolt // Supplies from the Rustbolt Resistance
-		[58096] = 174483,	-- Rajani // Supplies from the Rajani
-		[58097] = 174484,	-- Uldum Accord // Supplies from the Uldum Accord
-		[61095] = 180646,	-- Undying Army // Supplies from The Undying Army
-		[61098] = 180649,	-- Wild Hunt // Supplies from The Wild Hunt
-		[61100] = 180648,	-- Court of Harvesters // Supplies from the Court of Harvesters
-		[61097] = 180647,	-- The Ascended // Supplies from The Ascended
-	};
-	hooksecurefunc("ReputationParagonFrame_SetupParagonTooltip",function(frame)
+		-- [54454] = 166300,	-- 7th Legion // Supplies from the 7th Legion
+		-- [48976] = 152922,	-- Argussian Reach // Paragon of the Argussian Reach
+		-- [46777] = 152108,	-- Armies of Legionfall // The Bounties of Legionfall
+		-- [48977] = 152923,	-- Army of the Light // Paragon of the Army of the Light
+		-- [54453] = 166298,	-- Champions of Azeroth // Supplies from Magni
+		-- [46745] = 152102,	-- Court of Farondis // Supplies from the Court
+		-- [46747] = 152103,	-- Dreamweavers // Supplies from the Dreamweavers
+		-- [46743] = 152104,	-- Highmountain Tribes // Supplies from Highmountain
+		-- [54455] = 166299,	-- Honorbound // Supplies from the Honorbound
+		-- [54456] = 166297,	-- Order of Embers // Supplies from the Order of Embers
+		-- [54458] = 166295,	-- Proudmoore Admiralty // Supplies from the Proudmoore Admiralty
+		-- [54457] = 166294,	-- Storm's Wake // Supplies from Storm's Wake
+		-- [54460] = 166282,	-- Talanji's Expedition // Supplies from Talanji's Expedition
+		-- [46748] = 152105,	-- The Nightfallen // Supplies from the Nightfallen
+		-- [46749] = 152107,	-- The Wardens // Supplies from the Wardens
+		-- [54451] = 166245,	-- Tortollan Seekers // Baubles from the Seekers
+		-- [46746] = 152106,	-- Valarjar // Supplies from the Valarjar
+		-- [54461] = 166290,	-- Voldunai // Supplies from the Voldunai
+		-- [54462] = 166292,	-- Zandalari Empire // Supplies from the Zandalari Empire
+		-- [55976] = 169939,	-- Waveblade Ankoan // Supplies From the Waveblade Ankoan
+		-- [53982] = 169940,	-- Unshackled // Supplies From The Unshackled
+		-- [55348] = 170061,	-- Rustbolt // Supplies from the Rustbolt Resistance
+		-- [58096] = 174483,	-- Rajani // Supplies from the Rajani
+		-- [58097] = 174484,	-- Uldum Accord // Supplies from the Uldum Accord
+		-- [61095] = 180646,	-- Undying Army // Supplies from The Undying Army
+		-- [61098] = 180649,	-- Wild Hunt // Supplies from The Wild Hunt
+		-- [61100] = 180648,	-- Court of Harvesters // Supplies from the Court of Harvesters
+		-- [61097] = 180647,	-- The Ascended // Supplies from The Ascended
+	-- };
+	-- hooksecurefunc("ReputationParagonFrame_SetupParagonTooltip",function(frame)
+		-- print("ReputationParagonFrame_SetupParagonTooltip")
 		-- Let's make sure the user isn't in combat and if they are do they have In Combat turned on.  Finally check to see if Tootltips are turned on.
-		if CanAttachTooltips() then
+		-- if CanAttachTooltips() then
 			-- Source: //Interface//FrameXML//ReputationFrame.lua Line 360
 			-- Using hooksecurefunc because of how Blizzard coded the frame.  Couldn't get GameTooltip to work like the above ones.
 			-- //Interface//FrameXML//ReputationFrame.lua Segment code
@@ -5763,26 +5764,29 @@ end
 					EmbeddedItemTooltip:Show();
 				end
 			--]]
-			local paragonQuestID = select(3, C_Reputation.GetFactionParagonInfo(frame.factionID));
-			if paragonQuestID then
-				local itemID = paragonCacheID[paragonQuestID];
-				if itemID then
-					local link = select(2, GetItemInfo(itemID));
-					if link then
-						-- Attach tooltip to the Paragon Frame
-						GameTooltip:SetOwner(EmbeddedItemTooltip, "ANCHOR_NONE")
-						GameTooltip:SetPoint("TOPLEFT", EmbeddedItemTooltip, "TOPRIGHT");
-						GameTooltip:SetHyperlink(link);
-					end
-				end
-			end
-		end
-	end);
+			-- local paragonQuestID = select(3, C_Reputation.GetFactionParagonInfo(frame.factionID));
+			-- print("info",frame.factionID,paragonQuestID,C_Reputation.GetFactionParagonInfo(frame.factionID))
+			-- if paragonQuestID then
+			-- 	local itemID = paragonCacheID[paragonQuestID];
+			-- 	print("itemID",itemID)
+			-- 	if itemID then
+			-- 		local link = select(2, GetItemInfo(itemID));
+			-- 		print("link",link)
+			-- 		if link then
+			-- 			-- Attach tooltip to the Paragon Frame
+			-- 			-- GameTooltip:SetOwner(EmbeddedItemTooltip, "ANCHOR_NONE")
+			-- 			-- GameTooltip:SetPoint("TOPLEFT", EmbeddedItemTooltip, "TOPRIGHT");
+			-- 			GameTooltip:SetHyperlink(link);
+			-- 		end
+			-- 	end
+			-- end
+	-- 	end
+	-- end);
 
 	-- Hide Paragon Tooltip when cleared
-	hooksecurefunc("ReputationParagonFrame_OnLeave",function(self)
-		GameTooltip:Hide();
-	end);
+	-- hooksecurefunc("ReputationParagonFrame_OnLeave",function(self)
+	-- 	GameTooltip:Hide();
+	-- end);
 end)();
 
 -- Lib Helpers
