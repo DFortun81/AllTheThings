@@ -4347,8 +4347,6 @@ _.HiddenQuestTriggers = {
 		q(64253),	-- triggered when walking through a Maw Mirror on the last part of the Venthyr Assault (possibly for riding Draven up to the top area)
 		q(63819),	-- triggered when completing #63822, "Venthyr Assault"
 		q(64148),	-- triggered when completing ##63621, "Pulling His Chain"
-		q(64280),	-- looting a Lost Razorwing Egg
-		q(64281),	-- looting a second Lost Razorwing Egg
 		q(64376),	-- tracking quest that automatically accepted when i flew in to Korthia on 5/11/21 - supposedly related to the Darkmaul mount
 		q(64262),	-- triggered when turning in #64007, "Charge of the Covenants"
 		q(64536),	-- looting Maldraxxus Larva Shell (300 Catalogued Research)

@@ -194,6 +194,7 @@ _.Zones =
 				i(186145),	-- Stygian Thorn Loop
 				--
 				i(187054, {	-- Lost Razorwing Egg
+					["questID"] = 64281,	-- 2nd daily drop
 					["crs"] = {
 						177295,	-- Colossal Worldeater
 						177913,	-- Hungering Behemoth
@@ -205,6 +206,16 @@ _.Zones =
 						177198,	-- Ravenous Scavenger
 						180032,	-- Wild Worldcracker
 						179859,	-- Xyraxz the Unknowable
+					},
+					["g"] = {
+						q(64280, {	-- Daily Drop #1
+							["name"] = "Daily Drop #1",
+							["isDaily"] = true,
+						}),
+						q(64281, {	-- Daily Drop #2
+							["name"] = "Daily Drop #2",
+							["isDaily"] = true,
+						}),
 					},
 				}),
 				i(186995, {	-- Pattern: Shrouded Hand Towel
