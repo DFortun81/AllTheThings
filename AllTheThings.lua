@@ -16949,7 +16949,7 @@ app:GetWindow("Tradeskills", UIParent, function(self, force, got)
 				end
 
 				-- Cache learned recipes
-				local learned, recipeID = 0;
+				local learned, recipeID = {};
 				local reagentCache = app.GetDataMember("Reagents", {});
 				local recipeIDs = C_TradeSkillUI.GetAllRecipeIDs();
 				for i = 1,#recipeIDs do
@@ -16974,7 +16974,7 @@ app:GetWindow("Tradeskills", UIParent, function(self, force, got)
 								app.CurrentCharacter.Spells[recipeID] = 1;
 								if not ATTAccountWideData.Spells[recipeID] then
 									ATTAccountWideData.Spells[recipeID] = 1;
-									learned = learned + 1;
+									tinsert(learned, recipeID);
 								end
 							end
 						end
@@ -17036,9 +17036,13 @@ app:GetWindow("Tradeskills", UIParent, function(self, force, got)
 				end
 
 				-- If something new was "learned", then refresh the data.
-				if learned > 0 then
-					app:RefreshData(false, true);
-					app.print(L["CACHED_RECIPES_1"] .. learned .. L["CACHED_RECIPES_2"]);
+				local learnedRecipes = {};
+				for _,recipeID in ipairs(learned) do
+					MergeObjects(learnedRecipes, app.SearchForField("spellID", recipeID));
+				end
+				UpdateSearchResults(learnedRecipes);
+				if #learned > 0 then
+					app.print(L["CACHED_RECIPES_1"] .. #learned .. L["CACHED_RECIPES_2"]);
 					wipe(searchCache);
 				end
 			end
