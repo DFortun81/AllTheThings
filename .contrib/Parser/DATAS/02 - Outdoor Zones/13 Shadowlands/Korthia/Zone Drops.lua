@@ -7,7 +7,8 @@ _.Zones =
 	m(SHADOWLANDS, {
 		m(KORTHIA, {
 			n(ZONEDROPS, {
-			--	if these Relic Fragment loot dailies make it to live, we could change them to custom headers for localization of 'Relic Fragment.'  they may require having purchased Research Report: All-Seeing Crystal
+			-- Special Loot/Tracking
+				--	if these Relic Fragment loot dailies make it to live, we could change them to custom headers for localization of 'Relic Fragment.'  they may require having purchased Research Report: All-Seeing Crystal
 				q(64433, {	-- 30 Relic Fragments
 					["isDaily"] = true,
 					["name"] = "30 Relic Fragments",
@@ -102,6 +103,37 @@ _.Zones =
 					["name"] = "Bonus Relic Loot #15",
 					["isDaily"] = true,
 				}),
+				i(187054, {	-- Lost Razorwing Egg
+					["questID"] = 64281,	-- 2nd daily drop
+					["crs"] = {
+						177295,	-- Colossal Worldeater
+						177913,	-- Hungering Behemoth
+						179472,	-- Konthrogz the Obliterator
+						177645,	-- Melded Gorger
+						177646,	-- Mindseize Controller
+						177582,	-- Nimble Scavenger
+						177245,	-- Ravenous Gorger
+						177198,	-- Ravenous Scavenger
+						180032,	-- Wild Worldcracker
+						179859,	-- Xyraxz the Unknowable
+					},
+					["g"] = {
+						q(64280, {	-- Daily Drop #1
+							["name"] = "Daily Drop #1",
+							["isDaily"] = true,
+						}),
+						q(64281, {	-- Daily Drop #2
+							["name"] = "Daily Drop #2",
+							["isDaily"] = true,
+						}),
+					},
+				}),
+			-- Patterns
+				i(186995, {	-- Pattern: Shrouded Hand Towel
+					["crs"] = {	-- probably drops from many more (or any mawsworn); this is a mob specific to the Wild Worldcracker event
+						180030,	-- Opportunistic Corruptor
+					},
+				}),
 			--	Korthian Relics (putting here barring a better place for them)
 				i(187311),	-- Azgoth's Tattered Maps
 				i(187465),	-- Complicated Organism Harvester
@@ -193,37 +225,6 @@ _.Zones =
 				i(186121),	-- Mawsworn Scout's Striders
 				i(186148),	-- Mawsworn Vanquisher's Spire*
 				i(186145),	-- Stygian Thorn Loop
-				--
-				i(187054, {	-- Lost Razorwing Egg
-					["questID"] = 64281,	-- 2nd daily drop
-					["crs"] = {
-						177295,	-- Colossal Worldeater
-						177913,	-- Hungering Behemoth
-						179472,	-- Konthrogz the Obliterator
-						177645,	-- Melded Gorger
-						177646,	-- Mindseize Controller
-						177582,	-- Nimble Scavenger
-						177245,	-- Ravenous Gorger
-						177198,	-- Ravenous Scavenger
-						180032,	-- Wild Worldcracker
-						179859,	-- Xyraxz the Unknowable
-					},
-					["g"] = {
-						q(64280, {	-- Daily Drop #1
-							["name"] = "Daily Drop #1",
-							["isDaily"] = true,
-						}),
-						q(64281, {	-- Daily Drop #2
-							["name"] = "Daily Drop #2",
-							["isDaily"] = true,
-						}),
-					},
-				}),
-				i(186995, {	-- Pattern: Shrouded Hand Towel
-					["crs"] = {	-- probably drops from many more (or any mawsworn); this is a mob specific to the Wild Worldcracker event
-						180030,	-- Opportunistic Corruptor
-					},
-				}),
 			}),
 		}),
 	}),

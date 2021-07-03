@@ -628,7 +628,7 @@ _.Zones =
 								["coord"] = { 29.6, 17.9, THE_MAW },
 								["g"] = {
 									crit(5, {	-- A Tea for Every Occasion
-										["achievementID"] = 15034,	-- Wings Against the Flames
+										["achievementID"] = 15033,	-- Taking the Tremaculum
 									}),
 									ach(15042, {	-- Tea for the Troubled
 										crit(1, {	-- Simone
