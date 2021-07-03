@@ -2953,7 +2953,7 @@ for key,value in pairs({
 	[368668] = "Tronco do Abominito",	-- Lil'Abom's Trunk
 	[368772] = "Pergaminho Signomarcado",	-- Sigilscored Scroll
 	[368876] = "Cabedal Górjuro",	-- Mawsworn Cache
-	--TODO: [369129] = "Nilganihmaht's Gold Band",	-- Nilganihmaht's Gold Band
+	[369129] = "Elo de Ouro de Nilganihmaht",	-- Nilganihmaht's Gold Band
 	[369132] = "Baú da Dominação Lacrado",	-- Domination Sealed Chest
 	[369133] = "Selo da Dominação #1",	-- Domination Seal #1
 	[369134] = "Jaula da Dominação Trancada",	-- Domination Sealed Cage
@@ -2969,13 +2969,13 @@ for key,value in pairs({
 	[369183] = "Ninho Deslocado",	-- Dislodged Nest
 	[369185] = "Caixa de Relíquias Korthianas",	-- Korthian Relic Box
 	[369194] = "Ovo Coberto de Ânima",	-- Anima Laden Egg
-	--TODO: [369204] = "Displaced Relic",	-- Displaced Relic
+	[369204] = "Relíquia Deslocada",	-- Displaced Relic
 	[369216] = "Baú Avérjuro",	-- Helsworn Chest
 	[369224] = "Coração de Ezequiel Adornado",	-- Jeweled Heart of Ezekiel
 	[369225] = "Vestígio Infestado",	-- Infested Vestige
-	--TODO: [369232] = "Offering Box",	-- Offering Box
+	[369232] = "Caixa de Oferenda",	-- Offering Box
 	[369245] = "Caixa de Relíquias Korthianas",	-- Korthian Relic Box
-	--TODO: [369292] = "Relic Cache",	-- Relic Cache
+	[369292] = "Baú de Relíquias",	-- Relic Cache
 	[369296] = "Covil de Couraça-de-cristal",	-- Shardhide Stash
 	[369297] = "Pilha de Ossos",	-- Pile of Bones
 	[369304] = "Caixa de Relíquias Korthianas",	-- Korthian Relic Box

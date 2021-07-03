@@ -2876,7 +2876,7 @@ for key,value in pairs({
 	[355886] = "Coffre de la peste",	-- Plaguefallen Chest
 	[355947] = "Planque de Glutharn",	-- Glutharn's Stash
 	[356555] = "Collier d’Eurydéa",	-- Eurydea's Necklace
-	--TODO: [356693] = "Baroness Vashj's Extravagant Tribute",	-- Baroness Vashj's Extravagant Tribute
+	[356693] = "Tribut extravagant de la baronne Vashj",	-- Baroness Vashj's Extravagant Tribute
 	--TODO: [356697] = "Alexandros Mograine's Extravagant Tribute",	-- Alexandros Mograine's Extravagant Tribute
 	[356700] = "Tribut extravagant du grand maître Vole",	-- Grandmaster Vole's Extravagant Tribute
 	[356705] = "Tribut extravagant de Marileth, catalyseur de peste",	-- Plague Deviser Marileth's Extravagant Tribute

@@ -2948,12 +2948,12 @@ for key,value in pairs({
 	[368653] = "Gabbia del Dragone dell'Etere",	-- Etherwyrm Cage
 	--TODO: [368663] = "Lil'Abom's Right Hand",	-- Lil'Abom's Right Hand
 	--TODO: [368665] = "Lil'Abom's Spare Arm",	-- Lil'Abom's Spare Arm
-	--TODO: [368666] = "Lil'Abom's Head",	-- Lil'Abom's Head
+	[368666] = "Testa di Abominietto",	-- Lil'Abom's Head
 	--TODO: [368667] = "Lil'Abom's Torso",	-- Lil'Abom's Torso
 	--TODO: [368668] = "Lil'Abom's Trunk",	-- Lil'Abom's Trunk
 	[368772] = "Pergamena con Sigillo",	-- Sigilscored Scroll
 	[368876] = "Scrigno dei Giurafauce",	-- Mawsworn Cache
-	--TODO: [369129] = "Nilganihmaht's Gold Band",	-- Nilganihmaht's Gold Band
+	[369129] = "Vera d'Oro di Nilganihmaht",	-- Nilganihmaht's Gold Band
 	[369132] = "Cassa Sigillata del Dominio",	-- Domination Sealed Chest
 	[369133] = "Sigillo del Dominio #1",	-- Domination Seal #1
 	[369134] = "Gabbia Sigillata del Dominio",	-- Domination Sealed Cage
