@@ -31,7 +31,6 @@ _.Zones =
 					}),
 					ach(15033, {	-- Taking the Tremaculum
 						crit(4),	-- Fangcrack's Fan Club
-						crit(8),	-- They Grow Up So Quickly
 					}),
 					ach(15034, {	-- Wings Against the Flames
 						crit(9),	-- Kill The Flame
@@ -717,6 +716,16 @@ _.Zones =
 									}),
 								},
 							}),
+							q(63840, {	-- They Grow Up So Quickly
+								["provider"] = { "n", 178179 },	-- Niya
+								["isWeekly"] = true,
+								["coord"] = { 29.5, 18.0, THE_MAW },
+								["g"] = {
+									crit(8, {	-- They Grow Up So Quickly
+										["achievementID"] = 15033,	-- Taking the Tremaculum
+									}),
+								},
+							}),
 							q(63834, {	-- Weapons of the Tremaculum
 								["provider"] = { "n", 178066 },	-- General Draven
 								["isWeekly"] = true,
@@ -770,4 +779,8 @@ _.HiddenQuestTriggers = {
 --	Night Fae
 	q(63821),	-- triggered when completing the assault (#63823)
 	q(64060),	-- Stolen Anima Vessel (19.0, 50.2) - 368953
+
+--	Venthyr
+	q(63938),	-- triggered when returning Shadow to Reldorn on "They Grow Up So Quickly"
+	q(63942),	-- triggered when returning Bubbles to Reldorn on "They Grow Up So Quickly"
 };
