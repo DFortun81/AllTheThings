@@ -13364,7 +13364,7 @@ RowOnEnter = function (self)
 			else
 				GameTooltip:AddLine(title, 1, 1, 1);
 			end
-		elseif reference.questID and reference.retries then
+		elseif reference.questID and reference.retries and not reference.itemID then
 			GameTooltip:AddLine(L["QUEST_MAY_BE_REMOVED"] .. tostring(reference.retries), 1, 1, 1);
 		end
 		if reference.lvl then
