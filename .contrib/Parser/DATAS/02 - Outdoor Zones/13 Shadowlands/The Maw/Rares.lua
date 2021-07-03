@@ -281,7 +281,7 @@ _.Zones =
 					},
 				}),
 				n(169827, {	-- Ekphoras, Herald of Grief
-				--	["questID"] = 61125,	-- Malevolent Stygia
+					["questID"] = 60666,
 					["isDaily"] = true,
 					["coord"] = { 42.2, 21.0, THE_MAW },
 					["g"] = {
