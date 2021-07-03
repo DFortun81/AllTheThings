@@ -884,7 +884,7 @@ for key,value in pairs({
 		[-917] = "等级 2: 涌动丝缕",									-- Tier 2: Streaming Threads
 		[-918] = "等级 3: 流动能量",									-- Tier 3: Flowing Power
 		[-919] = "梦魇骒马",											-- Night Mare
-		--TODO: [-977] = "Maelie the Wanderer",						-- Maelie the Wanderer
+		[-977] = "游荡者梅莉",											-- Maelie the Wanderer
 		[-979] = "掮灵威·肯 & 掮灵威·诺特",									-- Broker Ve'ken & Broker Ve'nott
 		--TODO: [-980] = "Shared Treasures",						-- Shared Treasures
 
