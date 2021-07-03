@@ -2950,7 +2950,7 @@ for key,value in pairs({
 	[368665] = "Brazo de repuesto de la pequeña abominación",	-- Lil'Abom's Spare Arm
 	[368666] = "Cabeza de la pequeña abominación",	-- Lil'Abom's Head
 	[368667] = "Torso de la pequeña abominación",	-- Lil'Abom's Torso
-	--TODO: [368668] = "Lil'Abom's Trunk",	-- Lil'Abom's Trunk
+	[368668] = "Tronco de la pequeña abominación",	-- Lil'Abom's Trunk
 	[368772] = "Pergamino con marca de sigilo",	-- Sigilscored Scroll
 	[368876] = "Alijo jurafauces",	-- Mawsworn Cache
 	[369129] = "Sortija de oro de Nilganihmaht",	-- Nilganihmaht's Gold Band
@@ -2969,13 +2969,13 @@ for key,value in pairs({
 	[369183] = "Nido desprendido",	-- Dislodged Nest
 	[369185] = "Caja de reliquias korthiana",	-- Korthian Relic Box
 	[369194] = "Huevo cargado de ánima",	-- Anima Laden Egg
-	--TODO: [369204] = "Displaced Relic",	-- Displaced Relic
+	[369204] = "Reliquia desplazada",	-- Displaced Relic
 	--TODO: [369216] = "Helsworn Chest",	-- Helsworn Chest
 	[369224] = "Corazón enjoyado de Ezekiel",	-- Jeweled Heart of Ezekiel
 	[369225] = "Vestigio infectado",	-- Infested Vestige
-	--TODO: [369232] = "Offering Box",	-- Offering Box
+	[369232] = "Caja de ofrendas",	-- Offering Box
 	[369245] = "Caja de reliquias korthiana",	-- Korthian Relic Box
-	--TODO: [369292] = "Relic Cache",	-- Relic Cache
+	[369292] = "Alijo de reliquias",	-- Relic Cache
 	[369296] = "Alijo de pellejosquirla",	-- Shardhide Stash
 	[369297] = "Montón de huesos",	-- Pile of Bones
 	[369304] = "Caja de reliquias korthiana",	-- Korthian Relic Box
