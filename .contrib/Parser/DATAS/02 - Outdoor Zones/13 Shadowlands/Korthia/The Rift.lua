@@ -51,6 +51,7 @@ _.Zones =
 									["achievementID"] = 15107,	-- Conquering Korthia
 								}),
 								i(187405),	-- Choker of the Hidden Observer
+								i(187420),	-- Maw-Ocular Viewfinder
 							},
 						}),
 					}),

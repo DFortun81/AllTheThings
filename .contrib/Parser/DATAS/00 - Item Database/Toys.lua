@@ -742,6 +742,7 @@ t(187139);	-- Bottled Shade Heart
 t(186974);	-- Experimental Anima Cell
 t(187051);	-- Forgotten Feather
 t(187155);	-- Guise of the Changeling
+t(187420);	-- Maw-Ocular Viewfinder
 t(187344);	-- Offering Kit Maker
 t(187113);	-- Personal Ball and Chain
 t(187140);	-- Ring of Duplicity
