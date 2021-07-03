@@ -18,6 +18,7 @@ _.Zones =
 				n(179871, {	-- Dusklight Matriarch
 					["description"] = "Bring 6 |cFFFFFFFFLost Razorwing Eggs|r to the Razorwing Nest to receive the mount.",
 					["cost"] = { { "i", 187054, 6 } },	-- 6x Lost Razorwing Egg
+					["coord"] = { 25.7, 51.1, KORTHIA },
 					["g"] = {
 						i(186651),	-- Dusklight Razorwing (MOUNT!)
 					},
@@ -65,7 +66,7 @@ _.Zones =
 							},
 						}),
 						--[[
-						q(, {	-- 
+						q(, {	--
 							["name"] = "",
 						}),
 						--]]

@@ -107,6 +107,15 @@ _.Zones =
 							},
 						}),
 					}),
+					n(TREASURES, {
+						-- TODO: objectID instead of quest
+						q(64269, {	-- Stolen Anima Vessel Loot trigger
+							["name"] = "Looted a Stolen Anima Vessel.",
+							["isDaily"] = true,
+							-- ["coords"] = {
+							-- },
+						}),
+					}),
 				},
 			}),
 		}),

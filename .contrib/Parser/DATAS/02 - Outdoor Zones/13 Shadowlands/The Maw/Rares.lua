@@ -769,6 +769,10 @@ _.HiddenQuestTriggers = {
 	q(62211),	-- Skittering Broodmother bonus objective
 	q(59441),	-- Soulsmith Yol-Mattar bonus objective
 	q(61728),	-- Valis bonus objective
+
+	q(64258),	-- Carriage Crusher / Traitor Balthier
+	q(64439),	-- Carriage Crusher / Traitor Balthier
+	q(64701),	-- Stolen Anima Supplies 2nd trigger ?
 };
 
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
