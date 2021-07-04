@@ -198,10 +198,11 @@ _.Zones =
 								-- },
 							}),
 							n(178882, {	-- Kazj The Sentinel
-								-- ["questID"] = ,
+								["questID"] = 64110,
 								["isDaily"] = true,
-								-- ["g"] = {
-								-- },
+								["g"] = {
+									i(186450),	-- Crude Stygian Fastener
+								},
 							}),
 							n(177972, {	-- Malleus Grakizz
 								["questID"] = 64119,
