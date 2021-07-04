@@ -235,6 +235,7 @@ _.Zones =
 								-- ["questID"] = ,
 								["isDaily"] = true,
 								["g"] = {
+									i(186241),	-- Insulated Thermal Leggings
 									i(186219),	-- Pyrophus' Wrist Ties
 								},
 							}),
@@ -246,10 +247,11 @@ _.Zones =
 								},
 							}),
 							n(177427, {	-- The Mass of Souls
-								-- ["questID"] = ,
+								--["questID"] = ,
 								["isDaily"] = true,
-								-- ["g"] = {
-								-- },
+								["g"] = {
+									i(186210),	-- Diabolic Soul Veil
+								},
 							}),
 							n(177981, {	-- Versya the Damned
 								-- ["questID"] = ,

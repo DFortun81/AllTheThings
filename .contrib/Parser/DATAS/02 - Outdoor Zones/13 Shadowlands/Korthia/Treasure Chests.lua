@@ -242,7 +242,9 @@ _.Zones =
 						{ 62.9, 34.9, KORTHIA },
 					},
 					["g"] = {
+						i(187097),	-- Construct's Shoulderplates
 						i(187026),	-- Field Warden's Torture Kit
+						i(187018),	-- Ritualist's Shoulder-Scythes
 						i(187431),	-- Sleeping Armament
 					},
 				}),
@@ -257,7 +259,9 @@ _.Zones =
 						{ 62.3, 58.6, KORTHIA },
 					},
 					["g"] = {
+						i(187097),	-- Construct's Shoulderplates
 						i(187026),	-- Field Warden's Torture Kit
+						i(187018),	-- Ritualist's Shoulder-Scythes
 						i(187431),	-- Sleeping Armament
 					},
 				}),
@@ -273,7 +277,9 @@ _.Zones =
 						{ 56.5, 74.7, KORTHIA },
 					},
 					["g"] = {
+						i(187097),	-- Construct's Shoulderplates
 						i(187026),	-- Field Warden's Torture Kit
+						i(187018),	-- Ritualist's Shoulder-Scythes
 						i(187431),	-- Sleeping Armament
 					},
 				}),

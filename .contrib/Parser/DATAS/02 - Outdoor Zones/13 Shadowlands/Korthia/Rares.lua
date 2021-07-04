@@ -210,6 +210,7 @@ _.Zones =
 						crit(18, {	-- Silent Soulstalker
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
+						i(187381),	-- Rift-Touched Bindings
 					},
 				}),
 				n(179985, {	-- Stygian Stonecrusher
