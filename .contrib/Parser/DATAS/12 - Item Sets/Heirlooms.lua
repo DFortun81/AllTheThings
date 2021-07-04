@@ -446,5 +446,15 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		i(62036),	-- Ornate Band of Accuria
 		i(62037),	-- Gleaming seal of the archmagus
 		i(69891),	-- Burnished Dark Iron Ring
+		i(183150),	-- Heirloom Trinket
+		i(183160),	-- Heirloom Trinket
+		i(183149),	-- Heirloom Ring
+		i(183159),	-- Heirloom Ring
+		i(183148),	-- Heirloom Necklace
+		i(183143),	-- Heirloom Chestpiece
+		i(183144),	-- Heirloom Helm
+		i(183145),	-- Heirloom Shoulders
+		i(183147),	-- Heirloom Legs
+		i(183146),	-- Heirloom Cloak
 	}),
 });

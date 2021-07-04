@@ -1471,3 +1471,37 @@ _.Zones =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10052, {	-- Battle for Azeroth
+		n(-163, {	-- Armor
+			n(-43, {	-- Cloth
+				i(155045),	-- Navigator's Sash
+				i(155048),	-- Navigator's Cuffs
+				i(158231),	-- Navigator's Slippers
+				i(160078),	-- Navigator's Pantaloons
+				i(160088),	-- Navigator's Mittens
+			}),
+			n(-44, {	-- Leather
+				i(158233),	-- Freebooter Treads
+				i(160079),	-- Freebooter Britches
+				i(160089),	-- Freebooter Handcovers
+				i(155047),	-- Freebooter Belt
+				i(155051),	-- Freebooter Bracers
+			}),
+			n(-45, {	-- Mail
+				i(155046),	-- Outrigger Belt
+				i(155050),	-- Outrigger Bracers
+				i(158232),	-- Outrigger Footguards
+				i(160080),	-- Outrigger Chain Leggings
+				i(160090),	-- Outrigger Graspers
+			}),
+			n(-46, {	-- Plate
+				i(158230),	-- Sea Raider's Warboots
+				i(160081),	-- Sea Raider's Pants
+				i(160091),	-- Sea Raider's Grips
+				i(155044),	-- Sea Raider's Girdle
+				i(155049),	-- Sea Raider's Bracers
+			}),
+		}),
+	}),
+});

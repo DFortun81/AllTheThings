@@ -141,3 +141,43 @@ _.ExpansionFeatures =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10052, {	-- Battle for Azeroth
+		n(-10057, {	-- War Effort
+			n(-163, {	-- Armor
+				n(-43, {	-- Cloth
+					i(183762),	-- Moonpriest's Coronet
+					i(183763),	-- Moonpriest's Mantle
+					i(183772),	-- Moonpriest's Vestments
+					i(183774),	-- Plaguebringer's Cowl
+					i(183775),	-- Plaguebringer's Shoulderguards
+					i(183784),	-- Plaguebringer's Robe
+				}),
+				n(-44, {	-- Leather
+					i(183764),	-- Darkwood Sentinel's Tunic
+					i(183765),	-- Darkwood Sentinel's Cowl
+					i(183766),	-- Darkwood Sentinel's Monnions
+					i(183776),	-- Deathstalker's Chestpiece
+					i(183777),	-- Deathstalker's Collar
+					i(183778),	-- Deathstalker's Shoulderguards
+				}),
+				n(-45, {	-- Mail
+					i(183767),	-- Kaldorei Archer's Chainmail
+					i(183768),	-- Kaldorei Archer's Hood
+					i(183769),	-- Kaldorei Archer's Shoulderguards
+					i(183779),	-- Blightguard's Harness
+					i(183780),	-- Blightguard's Helmet
+					i(183781),	-- Blightguard's Shoulderguards
+				}),
+				n(-46, {	-- Plate
+					i(183770),	-- Wardenguard's Chestplate
+					i(183771),	-- Wardenguard's Greathelm
+					i(183773),	-- Wardenguard's Pauldrons
+					i(183782),	-- Deathguard's Chestplate
+					i(183783),	-- Deathguard's Helm
+					i(183785),	-- Deathguard's Pauldrons
+				}),
+			}),
+		}),
+	}),
+});

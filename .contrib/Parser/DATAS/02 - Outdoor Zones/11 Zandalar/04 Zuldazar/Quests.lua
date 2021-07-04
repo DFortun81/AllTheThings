@@ -1985,4 +1985,42 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(59225),	-- [DNT] Azerite Reward Test Quest - BJI
 	}),
+	n(-10052, {	-- Battle for Azeroth
+		n(-163, {	-- Armor
+			n(-43, {	-- Cloth
+				i(158657),	-- Zanchuli Shoes
+				i(158663),	-- Zanchuli Grasps
+				i(158675),	-- Zanchuli Bracelets
+				i(161236),	-- Zanchuli Bracers
+				i(161242),	-- Zanchuli Belt
+				i(161246),	-- Zanchuli Woolies
+				i(161248),	-- Zanchuli Pantaloons
+			}),
+			n(-44, {	-- Leather
+				i(158655),	-- Jambani Boots
+				i(158665),	-- Jambani Grasps
+				i(161243),	-- Jambani Cincture
+				i(161249),	-- Jambani Britches
+				i(161250),	-- Jambani Leggings
+			}),
+			n(-45, {	-- Mail
+				i(158656),	-- Torcalin Striders
+				i(158662),	-- Torcalin Grasps
+				i(158673),	-- Torcalin Armguards
+				i(161238),	-- Torcalin Bands
+				i(161244),	-- Torcalin Cincture
+				i(161251),	-- Torcalin Leggings
+				i(161252),	-- Torcalin Pants
+			}),
+			n(-46, {	-- Plate
+				i(158658),	-- Rastari Greatboots
+				i(158664),	-- Rastari Grips
+				i(158674),	-- Rastari Wristwraps
+				i(161239),	-- Rastari Armbands
+				i(161245),	-- Rastari Cincture
+				i(161253),	-- Rastari Greaves
+				i(161254),	-- Rastari Pants
+			}),
+		}),
+	}),
 });

@@ -2203,6 +2203,24 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(97092),	-- Abandoned Zandalari Bucklebreaker
 			i(97094),	-- Locksmasher Greaves
 			i(97095),	-- Columnbreaker Stompers
+			i(96703),	-- Spiderweb Tabi
+			i(96710),	-- Deeproot Treads
+			i(96714),	-- Abandoned Zandalari Silentbelt
+			i(96715),	-- Abandoned Zandalari Moonstrap
+			i(96704),	-- Scalehide Spurs
+			i(96711),	-- Spiritbound Boots
+			i(96716),	-- Abandoned Zandalari Arrowlinks
+			i(96717),	-- Abandoned Zandalari Waterchain
+			i(96705),	-- Abandoned Zandalari Firecord
+			i(96706),	-- Abandoned Zandalari Shadowgirdle
+			i(96707),	-- Silentflame Sandals
+			i(96709),	-- Home-Warding Slippers
+			i(96712),	-- Vaultwalker Sabatons
+			i(96718),	-- Abandoned Zandalari Greatbelt
+			i(96719),	-- Abandoned Zandalari Goreplate
+			i(96720),	-- Abandoned Zandalari Bucklebreaker
+			i(96722),	-- Locksmasher Greaves
+			i(96723),	-- Columnbreaker Stompers
 		}),
 	}),
 });

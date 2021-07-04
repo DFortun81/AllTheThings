@@ -136,6 +136,21 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(163425),	-- Honorbound Artificer's Mantle
 					i(163427),	-- Honorbound Artificer's Skullcap
 					i(163431),	-- Honorbound Artificer's Sash
+					i(163258),	-- 7th Legionnaire's Mitts
+					i(163260),	-- 7th Legionnaire's Cowl
+					i(163272),	-- 7th Legionnaire's Waistwrap
+					i(163290),	-- Honorbound Artificer's Handwraps
+					i(163292),	-- Honorbound Artificer's Crown
+					i(163301),	-- Honorbound Artificer's Shoulderpads
+					i(163310),	-- Honorbound Artificer's Waistwrap
+					i(163338),	-- 7th Legionnaire's Epaulettes
+					i(163429),	-- Honorbound Artificer's Wrap
+					-- SL:Possibly now rewards
+					i(174025),	-- 7th Legionnaire's Garb
+					i(174026),	-- 7th Legionnaire's Footcover
+					i(174031),	-- Honorbound Artificer's Toeslips
+					i(174032),	-- Honorbound Artificer's Pantaloons
+					i(174033),	-- Honorbound Artificer's Wristwraps
 				}),
 				n(-44, {	-- Leather
 					i(163378),	-- 7th Legionnaire's Shoulderpads
@@ -146,6 +161,30 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(163433),	-- Honorbound Outrider's Mantle
 					i(163436),	-- Honorbound Outrider's Faceguard
 					i(163440),	-- Honorbound Outrider's Belt
+					i(163262),	-- 7th Legionnaire's Guise
+					i(163267),	-- 7th Legionnaire's Shoulderguards
+					i(163274),	-- 7th Legionnaire's Strap
+					i(163287),	-- Honorbound Outrider's Treads
+					i(163288),	-- Honorbound Outrider's Grasps
+					i(163294),	-- Honorbound Outrider's Headcover
+					i(163299),	-- Honorbound Outrider's Shoulderpads
+					i(163305),	-- Honorbound Outrider's Strap
+					i(163434),	-- Honorbound Outrider's Vestments
+					-- SL:Possibly now rewards
+					i(174027),	-- 7th Legionnaire's Gloves
+					i(174028),	-- 7th Legionnaire's Vambraces
+					i(174034),	-- Honorbound Outrider's Wristcover
+					i(174035),	-- Honorbound Outrider's Chestcover
+					i(177092),	-- 7th Legionnaire's Legwraps
+					i(177094),	-- 7th Legionnaire's Cuffs
+					i(177095),	-- Honorbound Artificer's Sandals
+					i(177096),	-- Honorbound Artificer's Legwraps
+					i(177098),	-- Honorbound Artificer's Cuffs
+					i(177104),	-- Honorbound Artificer's Mitts
+					i(177097),	-- Honorbound Outrider's Pants
+					i(177101),	-- Honorbound Outrider's Bracers
+					i(177105),	-- Honorbound Outrider's Gloves
+					i(177106),	-- Honorbound Outrider's Boots
 				}),
 				n(-45, {	-- Mail
 					i(163286),	-- Honorbound Vanguard's Footguards
@@ -164,6 +203,24 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(163447),	-- Honorbound Vanguard's Helm
 					i(163442),	-- Honorbound Vanguard's Pauldrons
 					i(163452),	-- Honorbound Vanguard's Chain Belt
+					i(163250),	-- 7th Legionnaire's Hauberk
+					i(163254),	-- 7th Legionnaire's Footguards
+					i(163259),	-- 7th Legionnaire's Grasps
+					i(163261),	-- 7th Legionnaire's Warhelm
+					i(163270),	-- 7th Legionnaire's Chain Mantle
+					i(163273),	-- 7th Legionnaire's Clasp
+					i(163444),	-- Honorbound Vanguard's Vestments
+					-- SL:Possibly now rewards
+					i(174029),	-- 7th Legionnaire's Wristbangles
+					i(174030),	-- 7th Legionnaire's Britches
+					i(174036),	-- Honorbound Vanguard's Bracers
+					i(177159),	-- Honorbound Vanguard's Chainmail
+					i(177160),	-- 7th Legionnaire's Chainmail
+					i(177093),	-- 7th Legionnaire's Leggings
+					i(177100),	-- Honorbound Vanguard's Bindings
+					i(177107),	-- Honorbound Vanguard's Leggings
+					i(177108),	-- Honorbound Vanguard's Handguards
+					i(177109),	-- Honorbound Vanguard's Sabatons
 				}),
 				n(-46, {	-- Plate
 					i(163406),	-- 7th Legionnaire's Shoulderplates
@@ -175,6 +232,31 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(163454),	-- Honorbound Centurion's Pauldrons
 					i(163457),	-- Honorbound Centurion's Helmet
 					i(163462),	-- Honorbound Centurion's Girdle
+					i(163247),	-- 7th Legionnaire's Greathelm
+					i(163249),	-- 7th Legionnaire's Chestpiece
+					i(163252),	-- 7th Legionnaire's Wargreaves
+					i(163257),	-- 7th Legionnaire's Crushers
+					i(163263),	-- 7th Legionnaire's Chausses
+					i(163268),	-- 7th Legionnaire's Plate Mantle
+					i(163271),	-- 7th Legionnaire's Waistguard
+					i(163276),	-- 7th Legionnaire's Wristguards
+					i(163279),	-- Honorbound Centurion's Warhelm
+					i(163281),	-- Honorbound Centurion's Chestguard
+					i(163284),	-- Honorbound Centurion's Stompers
+					i(163289),	-- Honorbound Centurion's Crushers
+					i(163295),	-- Honorbound Centurion's Chausses
+					i(163300),	-- Honorbound Centurion's Spaulders
+					i(163303),	-- Honorbound Centurion's Waistguard
+					i(163404),	-- 7th Legionnaire's Vambraces
+					i(163419),	-- 7th Legionnaire's Breastplate
+					-- SL:Possibly now rewards
+					i(174037),	-- Honorbound Centurion's Wristplates
+					i(177099),	-- Honorbound Centurion's Vambraces
+					i(177102),	-- 7th Legionnaire's Legguards
+					i(177103),	-- 7th Legionnaire's Greaves
+					i(177110),	-- Honorbound Centurion's Legplates
+					i(177111),	-- Honorbound Centurion's Gauntlets
+					i(177112),	-- Honorbound Centurion's Greaves
 				}),
 				n(-322, {	-- Cloaks
 					i(163245),	-- 7th Legionnaire's Satin Cloak
@@ -190,20 +272,51 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(163352),	-- 7th Legionnaire's Steel Cloak
 					i(163354),	-- 7th Legionnaire's War Cloak
 					i(163353),	-- 7th Legionnarie's Greatcloak
-					i(163356),	-- Honorbound Artificier Drape (different version used with locked to specific classes)
-					i(163358),	-- Honorbound Artificier greatcloak (different version used with locked to specific classes)
+					i(163356),	-- Honorbound Artificier's Drape (different version used with locked to specific classes)
+					i(163358),	-- Honorbound Artificier's Greatcloak (different version used with locked to specific classes)
 					i(163359),	-- Warfront Gear Cape
-					i(163361),	-- Honorbound outrider greatcloak (different version used with locked to specific classes)
-					i(163362),	-- Honorbound outrider cloak  (different version used with locked to specific classes)
+					i(163361),	-- Honorbound Outrider's Greatcloak (different version used with locked to specific classes)
+					i(163362),	-- Honorbound Outrider's Cloak  (different version used with locked to specific classes)
 					i(163363),	-- Warfront Gear Cape
 					i(163364),	-- Warfront Gear Cloak
-					i(163365),	-- Honorbound vanguard greatcloak (different version used with locked to specific classes)
-					i(163367),	-- Honorbound vanguard long cloak (different version used with locked to specific classes)
+					i(163365),	-- Honorbound Vanguard's Greatcloak (different version used with locked to specific classes)
+					i(163367),	-- Honorbound Vanguard's Long Cloak (different version used with locked to specific classes)
 					i(163369),	-- Honorbound Centurion's Greatcloak
 					i(163370),	-- Warfront Gear Drape
-					i(163371),	-- Honorbound Centurions Cloak
+					i(163371),	-- Honorbound Centurion's Cloak
 					i(163415),	-- 7th Legionnarie's Iron Cloak
 				}),
+			}),
+			n(-319, {	-- Weapons
+				i(177118),	-- Honorbound Pigsticker
+				i(177132),	-- 7th Legionnaire's Halberd
+				i(177113),	-- Honorbound Skullcleaver
+				i(177143),	-- 7th Legionnaire's Skullcleaver
+				i(177115),	-- Honorbound Dagger
+				i(177129),	-- 7th Legionnaire's Dagger
+				i(177116),	-- Honorbound Skullcrusher
+				i(177130),	-- 7th Legionnaire's Warhammer
+				i(177141),	-- 7th Legionnaire's Spellhammer
+				i(177144),	-- Honorbound Warhammer
+				i(177117),	-- Honorbound Bonebreaker
+				i(177131),	-- 7th Legionnaire's Battle Hammer
+				i(177119),	-- Honorbound War Staff
+				i(177133),	-- 7th Legionnaire's Stave
+				i(177120),	-- Honorbound Wand
+				i(177135),	-- 7th Legionnaire's Wand
+				i(177122),	-- Honorbound Protectorate
+				i(177125),	-- Honorbound Barrier
+				i(177138),	-- 7th Legionnaire's Aegis
+				i(177142),	-- 7th Legionnaire's Shield
+				i(177123),	-- Honorbound Focus
+				i(177139),	-- 7th Legionnaire's Censer
+				i(177124),	-- Honorbound Warglaive
+				i(177140),	-- 7th Legionnaire's Warglaive
+				i(177126),	-- Honorbound Portable Cannon
+				i(177136),	-- 7th Legionnaire's Hand Cannon
+				i(177127),	-- Honorbound Gladius
+				i(177134),	-- 7th Legionnaire's Longsword
+				i(177137),	-- 7th Legionnaire's Claymore
 			}),
 		}),
 	}),

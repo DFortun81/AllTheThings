@@ -1703,3 +1703,29 @@ _.Zones =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10052, {	-- Battle for Azeroth
+		n(-163, {	-- Armor
+			n(-43, {	-- Cloth
+				i(160372),	-- Tidespeaker Cinch
+			}),
+			n(-44, {	-- Leather
+				i(158694),	-- Darkwater Grips
+				i(158706),	-- Darkwater Trousers
+				i(160375),	-- Darkwater Waistwrap
+				i(160388),	-- Darkwater Bands
+			}),
+			n(-45, {	-- Mail
+				i(158697),	-- Stormchaser Grips
+				i(158705),	-- Stormchaser Links
+				i(160391),	-- Stormchaser Coils
+			}),
+			n(-46, {	-- Plate
+				i(158695),	-- Dread Corsair Handguards
+				i(158703),	-- Dread Corsair Chausses
+				i(160381),	-- Dread Corsair Clasp
+				i(160394),	-- Dread Corsair Shackles
+			}),
+		}),
+	}),
+});

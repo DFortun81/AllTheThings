@@ -1717,6 +1717,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(179716),	-- Ardenweald Covenant Cloth Wrist
 					i(179717),	-- Ardenweald Covenant Cloth Wrist
 					i(179718),	-- Ardenweald Covenant Cloth Wrist
+					i(179660),	-- Winterborn Tunic
 				}),
 				n(-44, {	-- Leather
 					i(175579),	-- Ardenweald Covenant Leather Chest

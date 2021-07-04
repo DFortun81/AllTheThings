@@ -1538,3 +1538,18 @@ _.Zones =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10052, {	-- Battle for Azeroth
+		n(-163, {	-- Armor
+			n(-44, {	-- Leather
+				i(161277),	-- Scorching Sands Britches
+				i(161281),	-- Scorching Sands Treads
+				i(161302),	-- Scorching Sands Mace
+				i(161303),	-- Scorching Sands Bludgeon
+			}),
+			n(-46, {	-- Plate
+				i(161279),	-- Exiled Veteran's Greaves
+			}),
+		}),
+	}),
+});

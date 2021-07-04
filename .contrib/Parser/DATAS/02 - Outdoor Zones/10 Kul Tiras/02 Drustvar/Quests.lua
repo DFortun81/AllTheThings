@@ -1539,3 +1539,38 @@ _.Zones =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10052, {	-- Battle for Azeroth
+		n(-163, {	-- Armor
+			n(-43, {	-- Cloth
+				i(155465),	-- Wickerwoven Cord
+				i(158603),	-- Wickerwoven Handwraps
+				i(160197),	-- Wickerwoven Pantaloons
+			}),
+			n(-44, {	-- Leather
+				i(158589),	-- Banisher Striders
+				i(158604),	-- Banisher Mitts
+				i(158620),	-- Banisher Waistwrap
+				i(158632),	-- Banisher Bindings
+				i(160198),	-- Banisher Britches
+				i(155473),	-- Banisher Cinch
+			}),
+			n(-45, {	-- Mail
+				i(158590),	-- Crone-Seeker's Striders
+				i(158605),	-- Crone-Seeker's Grips
+				i(158621),	-- Crone-Seeker's Cincture
+				i(158633),	-- Crone-Seeker's Bindings
+				i(160199),	-- Crone-Seeker's Leggings
+				i(155481),	-- Crone-Seeker's Chain
+			}),
+			n(-46, {	-- Plate
+				i(158591),	-- Waycrest Militia Footguards
+				i(158606),	-- Waycrest Militia Gloves
+				i(158622),	-- Waycrest Militia Buckle
+				i(158634),	-- Waycrest Militia Wristguards
+				i(160200),	-- Waycrest Militia Pants
+				i(155489),	-- Waycrest Militia Belt
+			}),
+		}),
+	}),
+});
