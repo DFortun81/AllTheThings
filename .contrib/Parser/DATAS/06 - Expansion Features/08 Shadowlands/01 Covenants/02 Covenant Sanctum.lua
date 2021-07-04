@@ -68,6 +68,9 @@ _.ExpansionFeatures =
 						i(187414, {	-- Fractal Thoughtbinder
 							["timeline"] = { "added 9.1.0.38312" },
 						}),
+						i(187415, {	-- Mind-Expanding Prism
+							["timeline"] = { "added 9.1.0.38312" },
+						}),
 						-- Mounts
 						i(183617),	-- Chittering Animite
 						i(183052),	-- Darkwarren Hardshell
@@ -93,6 +96,9 @@ _.ExpansionFeatures =
 							["timeline"] = { "added 9.1.0.38312" },
 						}),
 						i(187569, {	-- Broker's Tailoring Mote of Potentiation
+							["timeline"] = { "added 9.1.0.38312" },
+						}),
+						i(187574, {	-- Broker's Overflowing Bucket
 							["timeline"] = { "added 9.1.0.38312" },
 						}),
 						i(184643),	-- Champion's Enchanting Cache
