@@ -222,6 +222,10 @@ i(85266);	-- Winter Blossom Tree
 i(128851);	-- Roasted juicycrunch carrots
 
 
+-- "Mount Equipment"
+i(174767);	-- Mogu Relic
+
+
 -- Quest Items
 i(175154);	-- A Secret Never Spoken
 i(175152);	-- A Slime-Covered Book of Secrets

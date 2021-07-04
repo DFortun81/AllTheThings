@@ -30,6 +30,7 @@ _.Zones =
 					["coords"] = {
 						{ 39.7, 34.8, KORTHIA },
 						{ 41.1, 39.8, KORTHIA },
+						{ 41.3, 27.8, KORTHIA },
 						{ 49.3, 41.8, KORTHIA },
 						{ 50.6, 22.9, KORTHIA },
 						{ 59.8, 15.1, KORTHIA },

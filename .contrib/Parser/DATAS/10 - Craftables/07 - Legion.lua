@@ -422,6 +422,9 @@ _.Craftables =
 				i(132541),	-- Spritescale Wraps
 				i(146668),	-- Vigilance Perch
 			}),
+			n(55, {	-- Consumables
+				i(142406),	-- Drums of the Mountain
+			}),
 		}),
 		prof(TAILORING, {
 			filter(113, {	-- Bags

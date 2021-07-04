@@ -28,6 +28,7 @@ _.Toys =
 		i(119178),		-- Black Whirlwind
 		i(104302),		-- Blackflame Daggers
 		i(153179),		-- Blue Conservatory Scroll
+		i(183901),		-- Bonestorm Top
 		i(184312),		-- Borr-Geth's Fiery Brimstone
 		i(119432),		-- Botani Camouflage
 		i(187139),		-- Bottled Shade Heart
