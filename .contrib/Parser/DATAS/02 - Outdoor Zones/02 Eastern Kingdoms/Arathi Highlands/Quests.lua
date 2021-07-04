@@ -246,24 +246,6 @@ _.Zones =
 					["altQuests"] = { 26944 },	-- Exploring Gnomeregan
 					["isBreadcrumb"] = true,
 				}),
-				-- #if AFTER BFA
-				q(6623, {	-- Horde Trauma
-					-- #if AFTER CATA
-					["qg"] = 45540,	-- Krenk Choplimb
-					["coord"] = { 36.9, 87.5, ORGRIMMAR },
-					-- #else
-					["qg"] = 3373,	-- Arnok
-					["coord"] = { 34, 84.6, ORGRIMMAR },
-					-- #endif
-					["maps"] = { ORGRIMMAR },
-					-- #if BEFORE BFA
-					["requireSkill"] = FIRST_AID,
-					-- #endif
-					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
-					["lvl"] = lvlsquish(35, 10, 35),
-				}),
-				-- #endif
 				q(26110, {	-- Just Like Old Times
 					["provider"] = { "n", 2712 },	-- Quae
 					["coord"] = { 54.8, 55.3, ARATHI_HIGHLANDS },

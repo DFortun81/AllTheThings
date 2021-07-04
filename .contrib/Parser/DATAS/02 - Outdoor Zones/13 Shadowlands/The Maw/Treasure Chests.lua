@@ -190,4 +190,6 @@ _.Zones =
 
 _.HiddenQuestTriggers = {
 	q(64261),	-- Desmotaeron treasure - Jeweled Heart of Ezekiel
+	q(64055),	-- Stolen Anima Vessel
+	q(64056),	-- Stolen Anima Vessel
 };

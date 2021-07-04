@@ -1157,6 +1157,24 @@ _.Zones =
 					["provider"] = { "n", 168545 },	-- Cork Fizzlepop
 					["races"] = HORDE_ONLY,
 				}),
+				q(6623, {	-- Horde Trauma
+					-- #if AFTER CATA
+					["qg"] = 45540,	-- Krenk Choplimb
+					["coord"] = { 36.9, 87.5, ORGRIMMAR },
+					-- #else
+					["qg"] = 3373,	-- Arnok
+					["coord"] = { 34, 84.6, ORGRIMMAR },
+					-- #endif
+					-- #if BEFORE BFA
+					["requireSkill"] = FIRST_AID,
+					-- #else
+					["requireSkill"] = TAILORING,
+					["u"] = REMOVED_FROM_GAME,	-- TODO: maybe timeline if figured out eventually
+					-- #endif
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(35, 10, 35),
+				}),
 				q(53372, {	-- Hour of Reckoning
 				--	TODO: level is obviously incorrect.  whether this quest is still available is disputed.  potential ways to get, per wowhead comments:
 					-- "If you are looking for how to get your Heart of Azeroth, post Shadowlands pre-patch (9.0) you can only get it once you have hit level 50, it will then be automatically pushed through as soon as you ding to go visit Magni in Silithus."
