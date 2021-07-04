@@ -2193,6 +2193,12 @@ namespace ATT
                             }
                         }
                     }
+
+                    // capture Raw Quest listing which appear multiple times, ignore Quests tied to Items, or removed Quests (because it's chaos)
+                    if (mostSignificantID == "questID" && ProcessingSourceData && AllQuests.ContainsKey(id))
+                    {
+                        DuplicateSourceQuests.Add(id);
+                    }
                 }
 
                 // If no object matched the data, then we need to create a new entry.
@@ -2233,15 +2239,6 @@ namespace ATT
                         if (entry.TryGetValue("isBreadcrumb", out bool isBreadcrumb))
                         {
                             Merge(quest, "isBreadcrumb", isBreadcrumb);
-                        }
-
-                        // capture Raw Quest listing which appear multiple times, ignore Quests tied to Items, or removed Quests (because it's chaos)
-                        if (ProcessingSourceData)
-                        {
-                            if (IsImportantQuestListing(quest) || IsImportantQuestListing(entry))
-                            {
-                                DuplicateSourceQuests.Add(questID);
-                            }
                         }
                     }
                 }
@@ -2285,11 +2282,11 @@ namespace ATT
                     // not tied to an Item
                     !quest.ContainsKey("itemID") &&
                     // not repeatable
-                    !quest.ContainsKey("repeatable") &&
-                    !quest.ContainsKey("isDaily") &&
-                    !quest.ContainsKey("isWeekly") &&
-                    !quest.ContainsKey("isMonthly") &&
-                    !quest.ContainsKey("isYearly") &&
+                    //!quest.ContainsKey("repeatable") &&
+                    //!quest.ContainsKey("isDaily") &&
+                    //!quest.ContainsKey("isWeekly") &&
+                    //!quest.ContainsKey("isMonthly") &&
+                    //!quest.ContainsKey("isYearly") &&
                     // not unobtainable
                     (!quest.ContainsKey("u") || Convert.ToInt64(quest["u"]) > 3);
             }
