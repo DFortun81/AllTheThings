@@ -753,3 +753,4 @@ t(187339);	-- Silver Shardhide Whistle
 t(187176);	-- Vesper of Harmony
 t(187184);	-- Vesper of Clarity
 t(186702);	-- Pallid Bone Flute
+t(186686);	-- Pallid Oracle Bones

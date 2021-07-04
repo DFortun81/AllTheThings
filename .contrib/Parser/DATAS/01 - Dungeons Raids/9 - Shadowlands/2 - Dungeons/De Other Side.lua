@@ -256,6 +256,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 							i(183329),	-- Memory of a Prism of Shadow and Fire
 							i(183282),	-- Memory of the Fatal Touch
 							i(183350),	-- Memory of the Great Sundering
+							i(186998),	-- Pattern: Pallid Oracle Bones
 							i(182138),	-- Mind Devourer
 							i(182684),	-- Resolute Defender
 							i(182736),	-- Rolling Agony

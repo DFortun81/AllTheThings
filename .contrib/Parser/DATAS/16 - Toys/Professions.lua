@@ -104,6 +104,7 @@ _.Toys =
 			i(129958),		-- Leather Pet Leash
 			i(130102),		-- Mother's Skinning Knife
 			i(186702),		-- Pallid Bone Flute
+			i(186686),		-- Pallid Oracle Bones
 		}),
 	}),
 };

@@ -18,6 +18,7 @@ profession(LEATHERWORKING, {
 			})),
 			category(1335, {	-- Other
 				recipe(354800),	-- Pallid Bone Flute
+				recipe(354797),	-- Pallid Oracle Bones
 			}),
 		}),
 	}),
