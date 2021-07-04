@@ -335,6 +335,12 @@ _.NeverImplemented =
 			i(167116),	-- QA Combat Test Caster Legs 1
 			i(167117),	-- QA Combat Test Caster Boots
 			i(167118),	-- QA Combat Test Caster Bracer 1
+			
+			
+			i(62640),	-- Fallback Armor - Cloth Waist
+			i(62642),	-- Fallback Armor - Cloth Chest
+			i(62643),	-- Fallback Armor - Cloth Hand
+			i(62644),	-- Fallback Armor - Cloth Head
 		}),
 		n(-44, {	-- Leather
 			cl(DRUID, {
@@ -527,6 +533,8 @@ _.NeverImplemented =
 			i(25794),	-- Bone Studded Girdle (not out of beta)
 			-- Wrath
 			i(37454),	-- HF28 Mail Physical Chest4
+			-- Cata
+			i(63002),	-- Bat Claw Boots
 			-- MoP
 			i(80987),	-- Scavenger's Chain Spaulders
 			i(80991),	-- Scavenger's Ringmail Spaulders
@@ -709,6 +717,7 @@ _.NeverImplemented =
 			i(37468),	-- HF28 Plate Physical Boots Says added in cata wowhead)
 			i(38524),	-- Carapace of the Scarlet Commander (Says added in cata wowhead)
 			-- Cata
+			i(49450),	-- Defusing Cinch
 			i(59795),	-- Harp Shell Shoulderplates
 			-- Mop
 			-- Recolors added in mop of ICC gear
@@ -745,11 +754,20 @@ _.NeverImplemented =
 			i(43848),	-- Bracers of Icy Resolve (Says added in cata wowhead)
 			i(43938),	-- Belt of Rising Hope
 			-- Cata
+			i(47091),	-- Unfaltering Armguards (4.0)
 			i(54544),	-- Scrapped Spaulders
 			i(54552),	-- Retaliation Gauntlets
 			i(54751),	-- Silverscale Chestguard
 			i(59768),	-- Bracers of Burbling Freedom
 			i(59772),	-- Bracers of Burbling Freedom (Yes, Same name)
+			i(63054),	-- Fallback Armor - Plate Waist
+			i(63055),	-- Fallback Armor - Plate Feet
+			i(63056),	-- Fallback Armor - Plate Chest
+			i(63057),	-- Fallback Armor - Plate Hand
+			i(63058),	-- Fallback Armor - Plate Head
+			i(63059),	-- Fallback Armor - Plate Legs
+			i(63060),	-- Fallback Armor - Plate Shoulder
+			i(63061),	-- Fallback Armor - Plate Wrist
 			i(65743),	-- Helm of Vicious Direction
 			-- WoD
 			-- Testing Gear

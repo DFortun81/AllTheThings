@@ -1064,6 +1064,14 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-9979, {	-- Cataclysm
 		inst(78, {	-- Firelands
 			i(71570),	-- Bracers of Forked Lightning
+			i(71400),	-- Girdle of the Indomitable Flame
+			i(71583),	-- Bracers of Imperious Truths
+			i(71584),	-- Gigantiform Bracers
+			i(71585),	-- Bracers of Regal Force
+			i(71582),	-- Bracers of Misting Ash
+			i(71394),	-- Flamebinding Girdle
+			i(71569),	-- Flamebinder Bracers
+			i(71581),	-- Smolderskull Bindings
 		}),
 	}),
 });
