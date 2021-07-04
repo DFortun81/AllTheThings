@@ -30,6 +30,7 @@ _.Toys =
 			i(88801),		-- Flippable Table
 		}),
 		prof(ENCHANTING, {
+			i(186973),		-- Anima-ted Leash
 			i(128536),		-- Leylight Brazier
 		}),
 		prof(ENGINEERING, {
