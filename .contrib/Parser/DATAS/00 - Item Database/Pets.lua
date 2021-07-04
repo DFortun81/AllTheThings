@@ -1013,6 +1013,7 @@ pet(186559, 3121);	-- Grappling Gauntlet
 pet(186191, 3099);	-- Infused Etherwyrm
 pet(186547, 3116);	-- Invasive Buzzer
 pet(186558, 3122);	-- Irongrasp
+pet(186542, 3136);	-- Korthian Specimen
 pet(186188, 3098);	-- Lil'Abom
 pet(186550, 3131);	-- Mawsworn Minion
 pet(186551, 3132);	-- Mord'al Eveningstar

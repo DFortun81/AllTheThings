@@ -91,6 +91,7 @@ _.BattlePets =
 			p(1040),	-- Imperial Silkworm
 			p(442),		-- Irradiated Roach
 			p(2663),	-- Junkheap Roach
+			p(3136),	-- Korthian Specimen
 			p(429),		-- Lava Beetle
 			p(3035),	-- Lavender Nibbler
 			p(203),		-- Little Fawn
