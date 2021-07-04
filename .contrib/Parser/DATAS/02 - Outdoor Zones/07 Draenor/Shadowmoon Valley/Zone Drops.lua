@@ -18,3 +18,14 @@ _.Zones =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-9981, {	-- Draenor
+		n(-163, {	-- Armor
+			n(-322, {	-- Cloaks
+				i(117494),	-- Windfang Drape
+				i(117495),	-- Windfang Greatcloak
+				i(117496),	-- Windfang Cloak
+			}),
+		}),
+	}),
+});

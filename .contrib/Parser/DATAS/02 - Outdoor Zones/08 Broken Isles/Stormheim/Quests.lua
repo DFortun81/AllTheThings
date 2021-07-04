@@ -1183,3 +1183,25 @@ _.Zones =
 _.HiddenQuestTriggers = {
 	q(43350),	-- triggered when turning in #40072, "Halls of Valor: Securing the Aegis"
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-9982, {	-- Legion
+		n(-163, {	-- Armor
+			n(-43, {	-- Cloth
+				i(121507),	-- Runespeaker's Crown
+				i(121511),	-- Runespeaker's Leggings
+			}),
+			n(-44, {	-- Leather
+				i(121509),	-- Runesworn Crown
+				i(121513),	-- Runesworn Breeches
+			}),
+			n(-45, {	-- Mail
+				i(121508),	-- Stormborn Crown
+				i(121512),	-- Stormborn Leggings
+			}),
+			n(-46, {	-- Plate
+				i(121506),	-- Dreadsworn Crown
+				i(121510),	-- Dreadsworn Legguards
+			}),
+		}),	
+	}),
+});

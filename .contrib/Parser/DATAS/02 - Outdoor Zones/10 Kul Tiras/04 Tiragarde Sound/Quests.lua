@@ -1503,5 +1503,9 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(155049),	-- Sea Raider's Bracers
 			}),
 		}),
+		n(-319, {	-- Weapons
+			i(153414),	-- Hatch-Cover Bulwark
+			i(158517),	-- Hatch-Cover Bulwark
+		}),
 	}),
 });

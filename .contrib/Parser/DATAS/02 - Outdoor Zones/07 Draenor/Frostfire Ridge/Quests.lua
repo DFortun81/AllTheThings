@@ -1263,3 +1263,24 @@ _.Zones =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-9981, {	-- Draenor
+		n(-163, {	-- Armor
+			n(-43, {	-- Cloth
+				i(106163),	-- Frostwolf Wind-Talker Robe
+			}),
+			n(-44, {	-- Leather
+				i(106142),	-- Frostwolf Scout's Tunic
+			}),
+			n(-45, {	-- Mail
+				i(106166),	-- Frostwolf Ringmail Armor (Beta only, was reward from https://www.wowhead.com/quest=32985/fury-of-frostfire)
+			}),
+			n(-46, {	-- Plate
+				i(106147),	-- Forstwolf Stalwart Chestpiece (beta only)
+			}),
+		}),
+		n(-319, {	-- Weapons
+			i(118186),	-- Frostwolf Wisdom Stick
+		}),
+	}),
+});

@@ -1752,6 +1752,12 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			n(-43, {	-- Cloth
 				i(80948),	-- Peacebreaker's Silk Cowl
 				i(80949),	-- Peacebreaker's Satin Hood
+				i(80988),	-- Scavenger's Silk Amice
+				i(80989),	-- Scavenger's Satin Mantle
+				i(81033),	-- Scavenger's Silk Handguards
+				i(81034),	-- Scavenger's Satin Gloves
+				i(81042),	-- Scavenger's Silk Cuffs
+				i(81043),	-- Scavenger's Satin Cuffs
 				i(80997),	-- Silk Robe of Eminent Domain
 				i(80998),	-- Satin Robe of Eminent Domain
 				i(81006),	-- Honorary Combat Engineer's Silk Trousers
@@ -1762,6 +1768,12 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			n(-44, {	-- Leather
 				i(80946),	-- Peacebreaker's Leather Helm
 				i(80950),	-- Peacebreaker's Hide Helm
+				i(80986),	-- Scavenger's Leather Spaulders
+				i(80990),	-- Scavenger's Hide Spaulders
+				i(81031),	-- Scavenger's Leather Gloves
+				i(81035),	-- Scavenger's Hide Gloves
+				i(81040),	-- Scavenger's Leather Armwraps
+				i(81044),	-- Scavenger's Hide Bindings
 				i(80995),	-- Leather Tunic of Eniment Domain
 				i(80999),	-- Hide Tunic of Eminent Domain
 				i(81004),	-- Honorary Combat Engineer's Leather Trousers
@@ -1772,6 +1784,12 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			n(-45, {	-- Mail
 				i(80947),	-- Peacebreaker's Chain Helm
 				i(80951),	-- Peacebreaker's Ringmail Helm
+				i(80987),	-- Scavenger's Chain Spaulders
+				i(80991),	-- Scavenger's Ringmail Spaulders
+				i(81032),	-- Scavenger's Chain Gauntlets
+				i(81036),	-- Scavenger's Ringmail Gauntlets
+				i(81041),	-- Scavenger's Chain Wristguards
+				i(81045),	-- Scavenger's Ringmail Armbands
 				i(80996),	-- Chain Armor of Eminent Domain (not added version)
 				i(81000),	-- Ringmail Armor of Eminent Domain (not added version)
 				i(81005),	-- Honorary Combat Engineer's Chain Leggings
@@ -1783,6 +1801,15 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(80952),	-- Peacebreaker's Burnished Headcover
 				i(80953),	-- Peacebreaker's Armored Helm
 				i(80954),	-- Peacebreaker's Heavy Helm
+				i(80992),	-- Scavenger's Burnished Spaulders
+				i(80993),	-- Scavenger's Armored Shoulders
+				i(80994),	-- Scavenger's Heavy Shoulders
+				i(81037),	-- Scavenger's Burnished Gloves
+				i(81038),	-- Scavenger's Armored Gauntlets
+				i(81039),	-- Scavenger's Heavy Gauntlets
+				i(81046),	-- Scavenger's Burnished Bracers
+				i(81047),	-- Scavenger's Armored Bracers
+				i(81048),	-- Scavenger's Heavy Armplates
 				i(81001),	-- Burnished Chestguard of Eminent Domain
 				i(81002),	-- Armored Chestpiece of Eminent Domain
 				i(81003),	-- Heavy Chestpiece of Eminent Domain
@@ -1793,6 +1820,38 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(81020),	-- Landfall Warboots
 				i(81021),	-- Landfall Plate Boots
 			}),
+			n(-322, {	-- Cloaks
+				i(80965),	-- Scavenger's Cape
+				i(80966),	-- Scavenger's Drape
+				i(80967),	-- Scavenger's Shawl
+				i(80968),	-- Scavenger's Cloak
+				i(80969),	-- Scavenger's Manteau
+			}),
+			f(51, {	-- Neck
+				i(81049),	-- Scavenger's Necklace
+				i(81050),	-- Scavenger's Choker
+				i(81051),	-- Scavenger's Locket
+				i(81052),	-- Scavenger's Amulet
+				i(81053),	-- Scavenger's Pendant
+			}),
+			f(52, {	-- Finger
+				i(80955),	-- Scavenger's Loop
+				i(80956),	-- Scavenger's Ring
+				i(80957),	-- Scavenger's Band
+				i(80958),	-- Scavenger's Seal
+				i(80959),	-- Scavenger's Signet
+			}),
+			f(53, {	-- Trinket
+				i(80960),	-- Scavenger's Medal
+				i(80961),	-- Scavenger's Emblem
+				i(80962),	-- Scavenger's Medallion
+				i(80963),	-- Scavenger's Badge
+				i(80964),	-- Scavenger's Insignia
+			}),
+		}),
+		n(-319, {	-- Weapons
+			i(80982),	-- Scavenger's Shield
+			i(80985),	-- Scavenger's Barrier
 		}),
 	}),
 });

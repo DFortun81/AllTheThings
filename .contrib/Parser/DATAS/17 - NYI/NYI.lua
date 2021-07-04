@@ -19,9 +19,6 @@ _.NeverImplemented =
 		-- Dont tell the Users is actually obtainable but there is just no info
 		["description"] = "If this drops for you, please provide as much information as you can about how and where you got it.",
 	}),
-	i(106178, {	-- Rangari Initiate Wristwraps (Beta only)
-		["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.",
-	}),
 	i(103785, {	-- Tusks of Mannoroth [Heroic]
 		["description"] = "|CFFFF0000If you had this item drop in SoO Heroic please screenshot and submit it to the ATT Discord.\n\nIf you have the item already and are running completionist mode please screenshot as well. Tag 105393",
 	}),
@@ -213,19 +210,15 @@ _.NeverImplemented =
 			i(59797),	-- Abalone-Linked Robes
 			i(62988),	-- Sash of the Unhonored
 			i(66013),	-- Mantle of the Glorious Song
+			i(62640),	-- Fallback Armor - Cloth Waist
 			i(62641),	-- Fallback Armor - Cloth Feet
+			i(62642),	-- Fallback Armor - Cloth Chest
+			i(62643),	-- Fallback Armor - Cloth Hand
+			i(62644),	-- Fallback Armor - Cloth Head
 			i(62645),	-- Fallback Armor - Cloth Legs
 			i(62646),	-- Fallback Armor - Cloth Robe
 			i(62647),	-- Fallback Armor - Cloth Shoulder
 			i(62648),	-- Fallback Armor - Cloth Wrist
-			-- MOP
-			-- Quest set?
-			i(80988),	-- Scavenger's Silk Amice
-			i(80989),	-- Scavenger's Satin Mantle
-			i(81033),	-- Scavenger's Silk Handguards
-			i(81034),	-- Scavenger's Satin Gloves
-			i(81042),	-- Scavenger's Silk Cuffs
-			i(81043),	-- Scavenger's Satin Cuffs
 			-- WoD
 			-- Quest set never used
 			i(114247),	-- Firefly Bracers
@@ -236,8 +229,45 @@ _.NeverImplemented =
 			i(114267),	-- Firefly Trousers
 			i(114271),	-- Firefly Mantle
 			i(114275),	-- Firefly Cord
+			--
+			i(116001),	-- Cord of Skulls
 			-- Legion
-			i(153289),	-- Eredar Priestess' Tunic
+			i(138420),	-- Pilfered Ettin String
+			-- BFA
+			-- Quest Set
+			i(153389),	-- Galetorn Crown
+			i(153390),	-- Galetorn Gloves
+			i(153391),	-- Galetorn Sash
+			i(153392),	-- Galetorn Cuffs
+			i(153393),	-- Galetorn Slippers
+			i(153394),	-- Galetorn Robes
+			i(153395),	-- Galetorn Leggings
+			i(153396),	-- Galetorn Mantle
+			i(154960),	-- Loa-Shaper's Crown
+			i(154961),	-- Loa-Shaper's Gloves
+			i(154962),	-- Loa-Shaper's Cinch
+			i(154963),	-- Loa-Shaper's Cuffs
+			i(154964),	-- Loa-Shaper's Sandals
+			i(154965),	-- Loa-Shaper's Robe
+			i(154966),	-- Loa-Shaper's Kilt
+			i(154967),	-- Loa-Shaper's Mantle
+			i(158467),	-- Loa-Shaper's Cinch
+			i(158492),	-- Galetorn Crown
+			i(158493),	-- Galetorn Gloves
+			i(158494),	-- Galetorn Sash
+			i(158495),	-- Galetorn Cuffs
+			i(158496),	-- Galetorn Slippers
+			i(158497),	-- Galetorn Robes
+			i(158498),	-- Galetorn Leggings
+			i(158499),	-- Galetorn Mantle
+			i(158544),	-- Loa-Shaper's Crown
+			i(158545),	-- Loa-Shaper's Gloves
+			i(158546),	-- Loa-Shaper's Cinch
+			i(158547),	-- Loa-Shaper's Cuffs
+			i(158548),	-- Loa-Shaper's Sandals
+			i(158549),	-- Loa-Shaper's Robe
+			i(158550),	-- Loa-Shaper's Kilt
+			i(158551),	-- Loa-Shaper's Mantle
 			-- ItemID/Retrieving
 			-- Vanilla
 			i(4989),	-- Mage Dragon Robe (intended to be quest reward, never made it to live?)
@@ -246,27 +276,27 @@ _.NeverImplemented =
 			i(13080),	-- Widow's Clutch
 			-- TBC
 			i(26015),	-- Anchorite Neophyte's Cuffs (Says added in cata wowhead)
-			i(27720),	-- Robes of the Aldor (Says added in cata wowhead)
+			i(27720),	-- Robes of the Aldor (Says added in cata wowhead)<-- Maggy/Shattra
 			i(30287),	-- Mantle of Arcane Mastery (Says added in cata wowhead)
 			-- Wrath
-			i(37210),	-- Seafarer Cinch (removed in beta)
-			i(37225),	-- Sweltering Sandals (removed in beta)
-			i(37273),	-- Crimson Keeper Mitts
+			i(37210),	-- Seafarer Cinch (removed in beta) <-- Borean Tundra
+			i(37225),	-- Sweltering Sandals (removed in beta) <-- Borean Tundra
+			i(37273),	-- Crimson Keeper Mitts <-- Borean Tundra
 			i(37296),	-- BT59 Cloth Spell Gloves4 (Says added in cata wowhead)
 			i(37295),	-- HF28 Cloth Spell Head4 (Says added in cata wowhead)
 			i(39364),	-- Hood of the Titan Defender (Says added in cata wowhead)
 			-- added 3.0.2
 			i(43878),	-- Mantle of Unholy Power (Says added in cata wowhead)
 			-- added 3.1.0
-			i(45629),	-- Shadoweave Belt (Says added in cata wowhead)
+			i(45629),	-- Shadoweave Belt (Says added in cata wowhead) <-- Proof
 			-- added 3.2.0
 			i(47103),	-- Rotting Handwraps (Says added in cata wowhead)
 			-- Cata
 			i(54542),	-- Robes of Restored Hope
 			i(54550),	-- Hood of Vigorous Defense
 			i(54977),	-- Revitalizing Sandals
-			i(57528),	-- Hogger's Mangy Handgrips
-			i(60728),	-- Keeshan's Burlap Vest
+			i(57528),	-- Hogger's Mangy Handgrips <-- Ewlynn
+			i(60728),	-- Keeshan's Burlap Vest <-- Redridge
 			i(65746),	-- Leggings of Valorous Defense
 			-- WoD
 			i(104355),	-- Titan Rocket Boots
@@ -313,6 +343,8 @@ _.NeverImplemented =
 			i(109540),	-- 7.0 QA Combat Test Caster Boots 3
 			i(109542),	-- 7.0 QA Combat Test Caster Bracer 3
 			i(109546),	-- 7.0 QA Combat Test Caster Bracer 4
+			--
+			i(120318),	-- Sol-Shaper's Sandals
 			-- BFA
 			i(159170),	-- Freehold Handwraps
 			i(159183),	-- Foxhollow Cord
@@ -335,12 +367,8 @@ _.NeverImplemented =
 			i(167116),	-- QA Combat Test Caster Legs 1
 			i(167117),	-- QA Combat Test Caster Boots
 			i(167118),	-- QA Combat Test Caster Bracer 1
-			
-			
-			i(62640),	-- Fallback Armor - Cloth Waist
-			i(62642),	-- Fallback Armor - Cloth Chest
-			i(62643),	-- Fallback Armor - Cloth Hand
-			i(62644),	-- Fallback Armor - Cloth Head
+			-- Legion
+			i(153289),	-- Eredar Priestess' Tunic
 		}),
 		n(-44, {	-- Leather
 			cl(DRUID, {
@@ -362,16 +390,17 @@ _.NeverImplemented =
 			}),
 			-- Load in Game
 			--TBC
-			i(25795),	-- Gloves of Preservation (not added version)(Says added in cata wowhead)
-			i(25796),	-- Lurking Shadow Spaulders (only beta) (Says added in cata wowhead)
+			i(25795),	-- Gloves of Preservation (not added version)(Says added in cata wowhead) <-- Shattered Halls
+			i(25796),	-- Lurking Shadow Spaulders (only beta) (Says added in cata wowhead)<-- Shattered Halls
 			-- Wrath
 			i(37176),	-- Cavern Leather Treads (Says added in cata wowhead)
 			i(37316),	-- HF28 Leather Physical Legs4  (Says added in cata wowhead)
 			-- Cata
 			i(56701),	-- Jinxed Vest (never made it to live)
-			i(59796),	-- Treads of Decapod Death
+			i(59796),	-- Treads of Decapod Death <-- Vashir
 			i(63012),	-- Skull Kickers
 			-- WoD
+			i(107660),	-- Battle Aged Leather Pauldrons (didnt make it out of beta)
 			-- Quest Set
 			i(114248),	-- Bloodthorn Bracers
 			i(114251),	-- Bloodthorn Chestguard
@@ -381,6 +410,44 @@ _.NeverImplemented =
 			i(114268),	-- Bloodthorn Legguards
 			i(114272),	-- Bloodthorn Spaulders
 			i(114276),	-- Bloodthorn Belt
+			-- Legion
+			i(129127),	-- Ebon Stalker's Boots
+			-- BFA
+			-- Test Set
+			i(166239),	-- Testus Maximus Breastplate
+			-- Quest Sets
+			i(153373),	-- Sea-Treated Armbands
+			i(153374),	-- Sea-Treated Grips
+			i(153375),	-- Sea-Treated Belt
+			i(153376),	-- Sea-Treated Boots
+			i(153377),	-- Sea-Treated Vest
+			i(153378),	-- Sea-Treated Mask
+			i(153379),	-- Sea-Treated Shoulderguards
+			i(153380),	-- Sea-Treated Trousers
+			i(154944),	-- Dinohide Armbands
+			i(154945),	-- Dinohide Grips
+			i(154946),	-- Dinohide Belt
+			i(154947),	-- Dinohide Boots
+			i(154948),	-- Dinohide Vest
+			i(154949),	-- Dinohide Mask
+			i(154950),	-- Dinohide Shoulderguards
+			i(154951),	-- Dinohide Trousers
+			i(158476),	-- Sea-Treated Armbands
+			i(158477),	-- Sea-Treated Grips
+			i(158478),	-- Sea-Treated Belt
+			i(158479),	-- Sea-Treated Boots
+			i(158480),	-- Sea-Treated Vest
+			i(158481),	-- Sea-Treated Mask
+			i(158482),	-- Sea-Treated Shoulderguards
+			i(158483),	-- Sea-Treated Trousers
+			i(158528),	-- Dinohide Armbands
+			i(158529),	-- Dinohide Grips
+			i(158530),	-- Dinohide Belt
+			i(158531),	-- Dinohide Boots
+			i(158532),	-- Dinohide Vest
+			i(158533),	-- Dinohide Mask
+			i(158534),	-- Dinohide Shoulderguards
+			i(158535),	-- Dinohide Trousers
 			-- ItemID/Retrieving
 			-- Vanilla
 			i(5821),	-- Darkstalker Boots
@@ -553,11 +620,6 @@ _.NeverImplemented =
 			i(37454),	-- HF28 Mail Physical Chest4
 			-- Cata
 			i(63002),	-- Bat Claw Boots
-			-- MoP
-			i(80987),	-- Scavenger's Chain Spaulders
-			i(80991),	-- Scavenger's Ringmail Spaulders
-			-- WoD
-			i(106166),	-- Frostwolf Ringmail Armor (Beta only, was reward from https://www.wowhead.com/quest=32985/fury-of-frostfire)
 			-- Quest sets?
 			i(114249),	-- Leafscale Bracers
 			i(114252),	-- Leafscale Chestguard
@@ -568,6 +630,8 @@ _.NeverImplemented =
 			i(114273),	-- Leafscale Spaulders
 			i(114277),	-- Leafscale Belt
 			-- Legion
+			i(129152),	-- Boulderfall Stompers
+			-- BFA
 			-- Questsets?
 			i(153381),	-- Aiguille-Scaler's Wristguards
 			i(153382),	-- Aiguille-Scaler's Gloves
@@ -600,6 +664,7 @@ _.NeverImplemented =
 			i(158540),	-- Saurscale Boots
 			i(158541),	-- Saurscale Girdle
 			i(158542),	-- Saurscale Chestguard
+			i(158543),	-- Saurscale Spaulders
 			-- ItemID/Retrieving
 			-- Vanilla
 			i(12105),	-- Pridemail Leggings
@@ -699,6 +764,7 @@ _.NeverImplemented =
 			-- Legion
 			i(140011),	-- Duskwatch Adjudicator's Pauldrons
 			-- Bfa
+			i(152745),	-- REUSE ME
 			i(154861),	-- Barrowknoll Boots
 			i(159208),	-- Eventide Cinch
 			i(159210),	-- Eventide Gloves
@@ -741,9 +807,6 @@ _.NeverImplemented =
 			-- Recolors added in mop of ICC gear
 			i(81709),	-- Belt of Broken Bones
 			i(81710),	-- Grinning Skull Greatboots
-			-- WoD
-			i(106147),	-- Forstwolf Stalwart Chestpiece (beta only)
-			i(106155),	-- karabor honor guard wristwraps (green version, beta only)
 			-- Questing Set
 			i(114250),	-- Ruby Plate Bracers
 			i(114253),	-- Ruby Plate Breastplate
@@ -753,6 +816,46 @@ _.NeverImplemented =
 			i(114270),	-- Ruby Plate Legplates
 			i(114274),	-- Ruby Plate Shoulderguard
 			i(114278),	-- Ruby Plate Girdle
+			-- BFA
+			-- Test Gear
+			i(160673),	-- Primus Breastplate
+			i(160674),	-- Secondus Breastplate
+			i(160675),	-- Tertius Breastplate
+			i(160676),	-- Quartius Breastplate
+			i(160677),	-- Pentius Breastplate
+			-- Questing Set
+			i(153365),	-- Dead-Watcher Greaves
+			i(153366),	-- Dead-Watcher Helmet
+			i(153367),	-- Dead-Watcher Breastplate
+			i(153368),	-- Dead-Watcher Waistplate
+			i(153369),	-- Dead-Watcher Pauldrons
+			i(153370),	-- Dead-Watcher Gauntlets
+			i(153371),	-- Dead-Watcher Vambraces
+			i(153372),	-- Dead-Watcher Sabatons
+			i(154936),	-- Dead-Watcher Greaves
+			i(154937),	-- Dead-Watcher Helmet
+			i(154938),	-- Dead-Watcher Breastplate
+			i(154939),	-- Dead-Watcher Waistplate
+			i(154940),	-- Dead-Watcher Pauldrons
+			i(154941),	-- Dead-Watcher Gauntlets
+			i(154942),	-- Dead-Watcher Vambraces
+			i(154943),	-- Dead-Watcher Sabatons
+			i(158468),	-- Dead-Watcher Greaves
+			i(158469),	-- Dead-Watcher Helmet
+			i(158470),	-- Dead-Watcher Breastplate
+			i(158471),	-- Dead-Watcher Waistplate
+			i(158472),	-- Dead-Watcher Pauldrons
+			i(158473),	-- Dead-Watcher Gauntlets
+			i(158474),	-- Dead-Watcher Vambraces
+			i(158475),	-- Dead-Watcher Sabatons
+			i(158520),	-- Dead-Watcher Greaves
+			i(158521),	-- Dead-Watcher Helmet
+			i(158522),	-- Dead-Watcher Breastplate
+			i(158523),	-- Dead-Watcher Waistplate
+			i(158524),	-- Dead-Watcher Pauldrons
+			i(158525),	-- Dead-Watcher Gauntlets
+			i(158526),	-- Dead-Watcher Vambraces
+			i(158527),	-- Dead-Watcher Sabatons
 			-- ItemID/Retrieving
 			-- Vanilla
 			i(5822),	-- Hedgeseed Gauntlets
@@ -907,18 +1010,26 @@ _.NeverImplemented =
 			i(37174),	-- Rippling Azure Cloak (Says added in cata wowhead)
 			-- Cata
 			i(56355),	-- Skin of Stone
-			-- Mop
-			i(80965),	-- Scavenger's cape
-			i(80966),	-- Scavenger's drape
-			i(80967),	-- Scavenger's shawl
-			i(80968),	-- Scavenger's cloak
-			i(80969),	-- Scavenger's manteua
 			-- WoD
+			i(112230),	-- Storm Scale Cloak
+			i(112231),	-- Drape of Nimble Deflection
+			i(112232),	-- Three-Kodohide Cloak
+			i(112233),	-- Cloak of Bloody Forces
 			i(114297),	-- Feather-Cord Cloak
 			i(114298),	-- Cloak of Bent Dreams
 			i(114299),	-- Suture-Slice Cloak
 			i(114300),	-- Grimchop Greatcloak
 			i(114301),	-- Axebreak Darkcloak
+			i(114360),	-- Eagle Eye Windcloak
+			i(114361),	-- Drape of Dark Shadows
+			i(114362),	-- Cloak of Keening Spirits
+			i(114363),	-- Gutwrencher's Greatcloak
+			i(114364),	-- Towerkin Cloak
+			i(114421),	-- Arrowleaf Longcloak
+			i(114422),	-- Mindbreaker Drape
+			i(114423),	-- Drape of Mindmending
+			i(114424),	-- Blade-Ring Greatcloak
+			i(114425),	-- Bleak Shore Cloak
 			-- Legion
 			i(134579),	-- Vanguard Cape
 			i(134605),	-- Vanguard Cloak
@@ -1006,12 +1117,6 @@ _.NeverImplemented =
 			i(23058),	-- Life Channeling Necklace (Says added in cata wowhead)
 			-- Wrath
 			i(33197),	-- Mossy Necklace (Says added in cata wowhead)
-			-- Mop
-			i(81049),	-- Scavenger's Necklace
-			i(81050),	-- Scavenger's Choker
-			i(81051),	-- Scavenger's Locket
-			i(81052),	-- Scavenger's Amulet
-			i(81053),	-- Scavenger's Pendant
 			-- Legion
 			i(157750),	-- Pendant of Good Fortune
 			-- ItemID/Retrieving
@@ -1060,12 +1165,6 @@ _.NeverImplemented =
 			-- Vanilla
 			i(13812),	-- Ring of the Dawn
 			i(19065),	-- Emerald Circle
-			-- Mop
-			i(80955),	-- Scavenger's Loop
-			i(80956),	-- Scavenger's Ring
-			i(80957),	-- Scavenger's Band
-			i(80958),	-- Scavenger's Seal
-			i(80959),	-- Scavenger's Signet
 			-- Legion
 			i(141907),	-- Arena Victory Bonus
 			i(143604),	-- Rating Min Item Level Reward
@@ -2918,7 +3017,6 @@ _.NeverImplemented =
 			i(180863),	--
 			i(109269),	-- Unknown
 			i(109292),	-- Unknown
-			i(117993),	-- RENAME RANGARI BOOT KNIFE
 			i(38247),	-- Entrail Render
 			i(52969),	-- Heartache Dagger	-- 52965 got added
 			i(62329),	-- Dire Slasher (never added)
@@ -3146,6 +3244,7 @@ _.NeverImplemented =
 			i(93441),	-- Crafted Dreadful Gladiator's Barrier
 			i(93483),	-- Crafted Dreadful Gladiator's Redoubt
 			i(93614),	-- Crafted Dreadful Gladiator's Shield Wall
+			i(107644),	-- Napmaster's Sleep Mask (Shadowmoon Valley Draenor)
 		}),
 		n(-342, {	-- Staves
 			i(132474),	-- Unknown - was under Legion>Staves
@@ -3242,7 +3341,6 @@ _.NeverImplemented =
 			i(183432),	--
 			i(115293),	-- Spectral Greataxe
 			i(80984),	-- Expropriator's Greataxe
-			i(117994),	-- RENAME Karabor Honor Guard Axe
 		}),
 		n(-337, {	-- Two Handed Maces
 			i(137660),	-- The Silver Hand
@@ -3271,6 +3369,7 @@ _.NeverImplemented =
 			i(109373),	-- 6.0 QA Combat Test Strength 2h Sword
 			i(122747),	-- Unknown
 			i(165274),	-- Unknown
+			i(182337),	-- Unholy Weapon
 		}),
 		n(-341, {	-- Wands
 			i(161924),	-- Seapriest's Wand (never addedd)
