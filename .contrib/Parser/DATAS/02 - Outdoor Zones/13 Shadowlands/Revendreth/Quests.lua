@@ -1150,10 +1150,22 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(178074),	-- Cover of Pained Absolution
 			}),
 			n(-44, {	-- Leather
+				i(175422),	-- Nightcloaked Boots
+				i(175488),	-- Nightcloaked Grips
+				i(175499),	-- Nightcloaked Shoulderpads
+				i(178076),	-- Nightcloaked Cover
 			}),
 			n(-45, {	-- Mail
+				i(175421),	-- Soul Hunter's  Sabatons
+				i(175491),	-- Soul Hunter's Grips
+				i(175502),	-- Soul Hunter's Mantle
+				i(178075),	-- Soul Hunter's Cover
 			}),
 			n(-46, {	-- Plate
+				i(175419),	-- Stoneforged Greatboots
+				i(175489),	-- Stoneforged Gauntlets
+				i(175500),	-- Stoneforged Shoulderguards
+				i(178073),	-- Stoneforged Helm
 			}),
 		}),
 	}),

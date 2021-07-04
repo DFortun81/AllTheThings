@@ -1063,10 +1063,25 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(178958),	-- Pure Aspirant's Handwraps
 			}),
 			n(-44, {	-- Leather
+				i(175611),	-- Courageous Aspirant's Vest
+				i(175622),	-- Courageous Aspirant's Helm
+				i(175627),	-- Courageous Aspirant's Spaulders
+				i(175634),	-- Courageous Aspirant's Belt
+				i(178956),	-- Courageous Aspirant's Mitts
 			}),
 			n(-45, {	-- Mail
+				i(175610),	-- Humble Aspirant's Vest
+				i(175621),	-- Humble Aspirant's Helm
+				i(175630),	-- Humble Aspirant's Monnion
+				i(175633),	-- Humble Aspirant's Belt
+				i(178959),	-- Humble Aspirant's Handguards
 			}),
 			n(-46, {	-- Plate
+				i(175607),	-- Judicious Aspirant's Helm
+				i(175609),	-- Judicious Aspirant's Chestplate
+				i(175628),	-- Judicious Aspirant's Shoulders
+				i(175631),	-- Judicious Aspirant's Girdle
+				i(178957),	-- Judicious Aspirant's Gloves
 			}),
 		}),
 	}),

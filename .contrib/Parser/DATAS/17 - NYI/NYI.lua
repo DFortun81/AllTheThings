@@ -519,6 +519,24 @@ _.NeverImplemented =
 			i(159180),	-- Mistfall Legguards
 			i(159181),	-- Mistfall Spaulders
 			i(159182),	-- Mistfall Chainmail
+			-- ??(They are leather even tho name is cloth)
+			i(165253),	-- Fallback Armor - Cloth Waist
+			i(165254),	-- Fallback Armor - Cloth Feet
+			i(165255),	-- Fallback Armor - Cloth Chest
+			i(165256),	-- Fallback Armor - Cloth Hand
+			i(165257),	-- Fallback Armor - Cloth Head
+			i(165258),	-- Fallback Armor - Cloth Legs
+			i(165259),	-- Fallback Armor - Cloth Shoulder
+			i(165260),	-- Fallback Armor - Cloth Wrist
+			-- Testing Set
+			i(167103),	-- QA Combat Test Leather Bracer
+			i(167104),	-- QA Combat Test Leather Legs
+			i(167105),	-- QA Combat Test Leather Belt
+			i(167106),	-- QA Combat Test Leather Gloves 1
+			i(167107),	-- QA Combat Test Leather Shoulders
+			i(167108),	-- QA Combat Test Leather Chest
+			i(167109),	-- QA Combat Test Leather Helm
+			i(167110),	-- QA Combat Test Leather Boots
 		}),
 		n(-45, {	-- Mail
 			cl(SHAMAN, {
@@ -871,6 +889,15 @@ _.NeverImplemented =
 			i(159159),	-- Ashvane Company Gauntlets
 			i(159160),	-- Ashvane Company Girdle
 			i(159165),	-- Ashvane Company Bracers
+			-- Testing Set
+			i(167127),	-- QA Combat Test Plate Bracer 1
+			i(167128),	-- QA Combat Test Plate Chest 1
+			i(167129),	-- QA Combat Test Plate Shoulders 1
+			i(167130),	-- QA Combat Test Plate Gloves 1
+			i(167131),	-- QA Combat Test Plate Belt 1
+			i(167132),	-- QA Combat Test Plate Helm 1
+			i(167133),	-- QA Combat Test Plate Legs 1
+			i(167134),	-- QA Combat Test Plate Boots
 		}),
 		n(-322, {	-- Cloaks
 			-- Load In Game
@@ -1082,6 +1109,9 @@ _.NeverImplemented =
 			i(57727),	-- QA Test Finger Spell Power
 			i(57738),	-- QA Test Finger 250 Mastery
 			i(58816),	-- QA Test Finger 250 Hit
+			-- MoP
+			i(98037),	-- QA Test Finger Dodge
+			i(98038),	-- QA Test Finger Parry
 			-- WoD
 			i(108813),	-- 6.0 PH Ring Agi
 			i(108820),	-- 6.0 PH Ring Str
@@ -3077,6 +3107,25 @@ _.NeverImplemented =
 			i(140416),	-- Conscience of the Victorious
 			i(140420),	-- Battering Tempest
 			i(133018),	-- Azsuna Packe 3 Holy 1 Unused
+			i(144446),	-- 7.2 QA Functionality Test Relic - Not For Playtesting - Bronze 1 +3
+			i(144447),	-- 7.2 QA Functionality Test Relic - Not For Playtesting - Bronze 2 +3
+			i(144448),	-- 7.2 QA Functionality Test Relic - Not For Playtesting - Bronze 3 +3
+			i(144449),	-- 7.2 QA Functionality Test Relic - Not For Playtesting - Bronze 4 +3
+			i(144450),	-- 7.2 QA Functionality Test Relic - Not For Playtesting - Bronze 5 +3
+			i(144451),	-- 7.2 QA Functionality Test Relic - Not For Playtesting - Bronze 6 +3
+			i(144452),	-- 7.2 QA Functionality Test Relic - Not For Playtesting - Bronze 7 +3
+			i(144453),	-- 7.2 QA Functionality Test Relic - Not For Playtesting - Bronze 8 +3
+			i(144454),	-- 7.2 QA Functionality Test Relic - Not For Playtesting - Bronze 9 +3
+			i(146735),	-- 7.2 QA Combat Test Relic Arcane 1
+			i(146739),	-- 7.2 QA Combat Test Relic Frost 1
+			i(146740),	-- 7.2 QA Combat Test Relic Iron 1
+			i(146741),	-- 7.2 QA Combat Test Relic Life 1
+			i(146742),	-- 7.2 QA Combat Test Relic Shadow 1
+			i(146743),	-- 7.2 QA Combat Test Relic Wind 1
+			i(146734),	-- 7.2 QA Combat Test Relic Holy 1
+			i(146736),	-- 7.2 QA Combat Test Relic Blood 1
+			i(146737),	-- 7.2 QA Combat Test Relic Fel 1
+			i(146738),	-- 7.2 QA Combat Test Relic Fire 1
 		}),
 		n(-332, {	-- Shields
 			i(165617),	-- Unknown

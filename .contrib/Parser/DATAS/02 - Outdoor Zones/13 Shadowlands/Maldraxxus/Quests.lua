@@ -763,10 +763,16 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(175528),	-- Corpse-Stitcher's Trousers
 			}),
 			n(-44, {	-- Leather
+				i(175515),	-- Deceitful Agent's Tunic
+				i(175530),	-- Deceitful Agent's Legwraps
 			}),
 			n(-45, {	-- Mail
+				i(175514),	-- Flesh Architect's Hauberk
+				i(175529),	-- Flesh Architect's Greaves
 			}),
 			n(-46, {	-- Plate
+				i(175513),	-- Cruel Executioner's Breastplate
+				i(175527),	-- Cruel Executioner's Greaves
 			}),
 		}),
 	}),

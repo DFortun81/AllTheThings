@@ -1533,13 +1533,25 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-10100, {	-- Shadowlands
 		n(-939, {	-- Covenant: Kyrian
 			n(-163, {	-- Armor
-				n(-43, {	-- Cloth
-				}),
-				n(-44, {	-- Leather
-				}),
 				n(-45, {	-- Mail
+					i(179394),	-- 9.0 Covenant - Bastion - Mail - Base - Head
+					i(179395),	-- 9.0 Covenant - Bastion - Mail - Base - Chest
+					i(179396),	-- 9.0 Covenant - Bastion - Mail - Base - Feet
+					i(179397),	-- 9.0 Covenant - Bastion - Mail - Base - Hands
+					i(179398),	-- 9.0 Covenant - Bastion - Mail - Base - Legs
+					i(179399),	-- 9.0 Covenant - Bastion - Mail - Base - Shoulders
+					i(179400),	-- 9.0 Covenant - Bastion - Mail - Base - Waist
+					i(179401),	-- 9.0 Covenant - Bastion - Mail - Base - Wrists
 				}),
 				n(-46, {	-- Plate
+					i(177684),	-- 9.0 Covenant - Bastion - Plate - Head
+					i(177685),	-- 9.0 Covenant - Bastion - Plate - Chest
+					i(177686),	-- 9.0 Covenant - Bastion - Plate - Feet
+					i(177687),	-- 9.0 Covenant - Bastion - Plate - Hands
+					i(177688),	-- 9.0 Covenant - Bastion - Plate - Legs
+					i(177689),	-- 9.0 Covenant - Bastion - Plate - Shoulders
+					i(177690),	-- 9.0 Covenant - Bastion - Plate - Waist
+					i(177691),	-- 9.0 Covenant - Bastion - Plate - Wrists
 				}),
 				n(-322, {	-- Cloaks
 					i(177692),	-- 9.0 Covenant - Bastion - Plate - Base - Cloak

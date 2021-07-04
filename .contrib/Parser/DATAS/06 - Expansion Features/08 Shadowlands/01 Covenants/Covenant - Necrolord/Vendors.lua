@@ -1530,13 +1530,36 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(179417),	-- 9.0 Covenant - Maldraxxus - Cloth - Shoulders
 					i(179418),	-- 9.0 Covenant - Maldraxxus - Cloth - Waist
 					i(179419),	-- 9.0 Covenant - Maldraxxus - Cloth - Wrists
-					i(179660),	-- Winterborn Tunic
 				}),
 				n(-44, {	-- Leather
+					i(179403),	-- 9.0 Covenant - Maldraxxus - Leather - Head
+					i(179404),	-- 9.0 Covenant - Maldraxxus - Leather - Chest
+					i(179405),	-- 9.0 Covenant - Maldraxxus - Leather - Feet
+					i(179406),	-- 9.0 Covenant - Maldraxxus - Leather - Hands
+					i(179407),	-- 9.0 Covenant - Maldraxxus - Leather - Legs
+					i(179408),	-- 9.0 Covenant - Maldraxxus - Leather - Shoulders
+					i(179409),	-- 9.0 Covenant - Maldraxxus - Leather - Waist
+					i(179410),	-- 9.0 Covenant - Maldraxxus - Leather - Wrists
 				}),
 				n(-45, {	-- Mail
+					i(179421),	-- 9.0 Covenant - Maldraxxus - Mail Head
+					i(179422),	-- 9.0 Covenant - Maldraxxus - Mail Chest
+					i(179423),	-- 9.0 Covenant - Maldraxxus - Mail Feet
+					i(179424),	-- 9.0 Covenant - Maldraxxus - Mail Hands
+					i(179425),	-- 9.0 Covenant - Maldraxxus - Mail Legs
+					i(179426),	-- 9.0 Covenant - Maldraxxus - Mail Shoulders
+					i(179427),	-- 9.0 Covenant - Maldraxxus - Mail Waist
+					i(179428),	-- 9.0 Covenant - Maldraxxus - Mail Wrists
 				}),
 				n(-46, {	-- Plate
+					i(174185),	-- 9.0 Covenant - Maldraxxus - Plate Head
+					i(174186),	-- 9.0 Covenant - Maldraxxus - Plate Chest
+					i(174187),	-- 9.0 Covenant - Maldraxxus - Plate Feet
+					i(174188),	-- 9.0 Covenant - Maldraxxus - Plate Hands
+					i(174189),	-- 9.0 Covenant - Maldraxxus - Plate Legs
+					i(174190),	-- 9.0 Covenant - Maldraxxus - Plate Shoulders
+					i(174191),	-- 9.0 Covenant - Maldraxxus - Plate Waist
+					i(174192),	-- 9.0 Covenant - Maldraxxus - Plate Wrists
 				}),
 				n(-322, {	-- Cloaks
 					i(174193),	-- 9.0 Covenant - Maldraxxus - Plate Cloak

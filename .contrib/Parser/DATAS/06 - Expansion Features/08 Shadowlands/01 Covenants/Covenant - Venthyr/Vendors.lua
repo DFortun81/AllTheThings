@@ -1457,10 +1457,34 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(179473),	-- 9.0 Covenant - Revendreth - Cloth - Wrists
 				}),
 				n(-44, {	-- Leather
+					i(179457),	-- 9.0 Covenant - Revendreth - Leather - Head
+					i(179458),	-- 9.0 Covenant - Revendreth - Leather - Chest
+					i(179459),	-- 9.0 Covenant - Revendreth - Leather - Feet
+					i(179460),	-- 9.0 Covenant - Revendreth - Leather - Hands
+					i(179461),	-- 9.0 Covenant - Revendreth - Leather - Legs
+					i(179462),	-- 9.0 Covenant - Revendreth - Leather - Shoulders
+					i(179463),	-- 9.0 Covenant - Revendreth - Leather - Waist
+					i(179464),	-- 9.0 Covenant - Revendreth - Leather - Wrists
 				}),
 				n(-45, {	-- Mail
+					i(179475),	-- 9.0 Covenant - Revendreth - Mail Head
+					i(179476),	-- 9.0 Covenant - Revendreth - Mail Chest
+					i(179477),	-- 9.0 Covenant - Revendreth - Mail Feet
+					i(179478),	-- 9.0 Covenant - Revendreth - Mail Hands
+					i(179479),	-- 9.0 Covenant - Revendreth - Mail Legs
+					i(179480),	-- 9.0 Covenant - Revendreth - Mail Shoulders
+					i(179481),	-- 9.0 Covenant - Revendreth - Mail Waist
+					i(179482),	-- 9.0 Covenant - Revendreth - Mail Wrists
 				}),
 				n(-46, {	-- Plate
+					i(174198),	-- 9.0 Covenant - Revendreth - Plate Head
+					i(174199),	-- 9.0 Covenant - Revendreth - Plate Chest
+					i(174200),	-- 9.0 Covenant - Revendreth - Plate Feet
+					i(174201),	-- 9.0 Covenant - Revendreth - Plate Hands
+					i(174202),	-- 9.0 Covenant - Revendreth - Plate Legs
+					i(174203),	-- 9.0 Covenant - Revendreth - Plate Shoulders
+					i(174204),	-- 9.0 Covenant - Revendreth - Plate Waist
+					i(174205),	-- 9.0 Covenant - Revendreth - Plate Wrists
 				}),
 				n(-322, {	-- Cloaks
 					i(174206),	-- 9.0 Covenant - Revendreth - Plate Cloak
