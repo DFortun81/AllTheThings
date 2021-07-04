@@ -108,6 +108,7 @@ _.Zones =
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
 						}),
 						i(184312),	-- Borr-Geth's Fiery Brimstone
+						i(186223),	-- Coif of the Molten Terror
 					},
 				}),
 				n(180246, {	-- Carriage Crusher
