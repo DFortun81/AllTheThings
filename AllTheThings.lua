@@ -1957,7 +1957,7 @@ MergeProperties = function(g, o, noReplace)
 	end
 end
 MergeObjects = function(g, g2, cloneOnAdd)
-	if #g2 > 25 then
+	if g2 and #g2 > 25 then
 		local hashTable,t = {};
 		for i,o in ipairs(g) do
 			local hash = GetHash(o);
@@ -4603,6 +4603,16 @@ local function UpdateSearchResults(searchResults)
 		app:RefreshData(true, true);
 	end
 end
+-- Pulls the field search results for the rawID's and passes the results into UpdateSearchResults
+local function UpdateRawIDs(field, ids)
+	if ids and #ids > 0 then
+		local groups = {};
+		for _,id in ipairs(ids) do
+			MergeObjects(groups, SearchForField(field, id));
+		end
+		UpdateSearchResults(groups);
+	end
+end
 app.SearchForLink = SearchForLink;
 
 -- Map Information Lib
@@ -7149,7 +7159,7 @@ end
 app.events.TAXIMAP_OPENED = function()
 	local allNodeData = C_TaxiMap_GetAllTaxiNodes(app.GetCurrentMapID());
 	if allNodeData then
-		local updates, searchResults, nodeID = {};
+		local newFPs, nodeID;
 		local currentCharFPs, acctFPs = app.CurrentCharacter.FlightPaths, ATTAccountWideData.FlightPaths;
 		for j,nodeData in ipairs(allNodeData) do
 			if nodeData.state and nodeData.state < 2 then
@@ -7157,18 +7167,14 @@ app.events.TAXIMAP_OPENED = function()
 				if not currentCharFPs[nodeID] then
 					acctFPs[nodeID] = 1;
 					currentCharFPs[nodeID] = 1;
-					searchResults = SearchForField("flightPathID", nodeID);
-					if searchResults then
-						for j,searchResult in ipairs(searchResults) do
-							table.insert(updates, searchResult);
-						end
-					end
+					if not newFPs then newFPs = { nodeID }
+					else tinsert(newFPs, nodeID); end
 				end
 			end
 		end
 		-- Need to update the dynamic Flight Paths category as well
 		app.UpdateGroup(app.Categories, app.FlightPathsCategory);
-		UpdateSearchResults(updates);
+		UpdateRawIDs("flightPathID", newFPs);
 	end
 end
 end)();
@@ -8966,7 +8972,7 @@ end
 
 -- Refresh a specific Mount or all Mounts if not provided with a specific ID
 local RefreshMounts = function(newMountID)
-	local collectedSpells, newSpellIDResults = ATTAccountWideData.Spells;
+	local collectedSpells, newMounts = ATTAccountWideData.Spells;
 	-- Think learning multiple mounts at once or multiple mounts without leaving combat
 	-- would fail to update all the mounts, so probably just best to check all mounts if this is triggered
 	-- plus it's not laggy now to do that so it should be fine
@@ -8977,20 +8983,15 @@ local RefreshMounts = function(newMountID)
 			if not collectedSpells[spellID] then
 				collectedSpells[spellID] = 1;
 				app.CurrentCharacter.Spells[spellID] = 1;
-				if not newSpellIDResults then newSpellIDResults = SearchForField("spellID", spellID);
-				else
-					for _,result in ipairs(SearchForField("spellID", spellID)) do
-						tinsert(newSpellIDResults, result);
-					end
-				end
+				if not newMounts then newMounts = { spellID }
+				else tinsert(newMounts, spellID); end
 			end
 		end
 	end
-
-	if newSpellIDResults then
-		UpdateSearchResults(newSpellIDResults);
-		app:TakeScreenShot();
+	UpdateRawIDs("spellID", newMounts);
+	if #newMounts > 0 then
 		app:PlayRareFindSound();
+		app:TakeScreenShot();
 	end
 end
 app.events.NEW_MOUNT_ADDED = function(newMountID, ...)
@@ -17047,16 +17048,11 @@ app:GetWindow("Tradeskills", UIParent, function(self, force, got)
 						end
 					end
 				end
-
 				-- If something new was "learned", then refresh the data.
-				local learnedRecipes = {};
-				for _,recipeID in ipairs(learned) do
-					MergeObjects(learnedRecipes, app.SearchForField("spellID", recipeID));
-				end
-				UpdateSearchResults(learnedRecipes);
+				UpdateRawIDs("spellID", learned);
 				if #learned > 0 then
-					app.print(L["CACHED_RECIPES_1"] .. #learned .. L["CACHED_RECIPES_2"]);
-					wipe(searchCache);
+					app:PlayRareFindSound();
+					app:TakeScreenShot();
 				end
 			end
 		end
