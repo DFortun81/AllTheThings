@@ -475,4 +475,9 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(25474),	-- BETA Once More, With Eeling [DEPRICATED]
 	}),
+	n(-9979, {	-- Cataclysm
+		n(-319, {	-- Weapons
+			i(54554),	-- Bejeweled Ship's Wheel 
+		}),
+	}),
 });

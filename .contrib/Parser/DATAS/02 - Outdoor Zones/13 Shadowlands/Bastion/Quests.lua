@@ -1108,6 +1108,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(184530),	-- Greatsword of the Elysian Guard
 			i(184463),	-- Doubt Tinged Crossbow
 			i(184523),	-- Elysian Ironbolt Gastraphetes
+			i(179007),	-- 9.0 Monster - Bastion - Weapon - Dark
 		}),
 	}),
 });

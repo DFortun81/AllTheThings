@@ -2346,6 +2346,9 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		n(-10067, {	-- Artifacts
 			n(-319, {	-- Weapons
 				i(137661),	-- Truthguard
+				i(136593),	-- Doomhammer Offhand Appearance Record (referenced by actual item)
+				i(134562),	-- Odyns Fury
+				i(139439),	-- The Highkeeper's Ward
 			}),
 		}),
 	}),

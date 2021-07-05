@@ -828,6 +828,22 @@ _.Craftables =
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-10041, {
+		prof(BLACKSMITHING, {
+			i(93441),	-- Crafted Dreadful Gladiator's Barrier
+			i(93483),	-- Crafted Dreadful Gladiator's Redoubt
+			i(93614),	-- Crafted Dreadful Gladiator's Shield Wall
+		}),
+		prof(ENGINEERING, {
+			i(81143),	-- Avanced Deepdive Helmet (Mop Beta Only)
+		}),
+		prof(INSCRIPTION, {
+			i(93440),	-- Crafted Dreadful Gladiator's Endgame
+			i(93450),	-- Crafted Dreadful Gladiator's Reprieve
+		}),
+		prof(JEWELCRAFTING, {
+			i(93597),	-- Crafted Dreadful Gladiator's Fleshslicer
+			i(93599),	-- Crafted Dreadful Gladiator's Slasher
+		}),
 		prof(LEATHERWORKING, {
 			i(93508),	-- Crafted Gladiator's Ironskin Gloves
 			i(93510),	-- Crafted Gladiator's Ironskin Helm
@@ -839,17 +855,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(93522),	-- Crafted Gladiator's Copperskin Legguards
 			i(93524),	-- Crafted Gladiator's Copperskin Spaulders
 			i(93526),	-- Crafted Gladiator's Copperskin Tunic
-		}),
-		prof(JEWELCRAFTING, {
-			i(93597),	-- Crafted Dreadful Gladiator's Fleshslicer
-			i(93599),	-- Crafted Dreadful Gladiator's Slasher
-		}),
-		prof(ENGINEERING, {
-			i(81143),	-- Avanced Deepdive Helmet (Mop Beta Only)
-		}),
-		prof(INSCRIPTION, {
-			i(93440),	-- Crafted Dreadful Gladiator's Endgame
-			i(93450),	-- Crafted Dreadful Gladiator's Reprieve
 		}),
 	}),
 });

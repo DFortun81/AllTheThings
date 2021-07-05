@@ -1441,6 +1441,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(147074),	-- Vambraces of Resoulte Justice
 			i(157761),	-- Barbaric Mindslaver
 			i(157763),	-- Engine of Eradication
+			i(146304),	-- Fel Titan Hammer (test version for Maiden Mog Drop)
 		}),
 	}),
 });

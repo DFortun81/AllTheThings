@@ -883,3 +883,10 @@ _.Zones =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-9982, {	-- Legion
+		n(-387,	{	-- Relics
+			i(133018),	-- Azsuna Package 3 - Holy 1 - Unused
+		}),
+	}),
+});

@@ -1982,6 +1982,12 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(178099),	-- Ardenweald Covenant 2H Mace
 				i(178100),	-- Ardenweald Covenant 2H Mace
 				i(178101),	-- Ardenweald Covenant 2H Mace
+				i(179550),	-- Ardenweald Covenant Mace
+				i(179551),	-- Ardenweald Covenant Mace
+				i(179552),	-- Ardenweald Covenant Mace
+				i(179553),	-- Ardenweald Covenant Mace
+				i(179554),	-- Ardenweald Covenant Mace
+				i(179555),	-- Ardenweald Covenant Mace
 				i(180250),	-- Ardenweald Covenant Warglaives
 				i(180251),	-- Ardenweald Covenant Warglaives
 				i(180252),	-- Ardenweald Covenant Warglaives
@@ -2002,6 +2008,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(180078),	-- Ardenweald Covenant Bow
 				i(180080),	-- Ardenweald Covenant Bow
 				i(180082),	-- Ardenweald Covenant Bow
+				i(182350),	-- Ardenweald Raid Mace STR
 			}),
 		}),
 	}),

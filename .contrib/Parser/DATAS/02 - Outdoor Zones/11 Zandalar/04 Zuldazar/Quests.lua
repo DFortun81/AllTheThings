@@ -2046,7 +2046,12 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(161286),	-- Faithless Dinorider's Shield
 			i(161287),	-- Faithless Wingrider's Shield
 			i(158562),	-- Howdah-Rider's Bow
+			i(154971),	-- Howdah-Rider's Bow
 			i(153642),	-- Manual of Reverse Wounding
+			i(158567),	-- Necropolis Sentry's Sword
+			i(166889),	-- Zandalari Prelate's Lightblade
+			i(158563),	-- Tomb-Rustler's Polearm
+			i(154972),	-- Tomb-Rustler's Polearm
 		}),
 	}),
 });

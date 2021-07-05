@@ -3998,6 +3998,9 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(81707),	-- Ymirjar Lord's Legplates
 				i(81708),	-- Ymirjar Lord's Shoulderplates
 			}),
+			n(-319, {	-- Weapons
+				i(50251),	-- Shadow's Edge One-Hander
+			}),
 		}),
 	}),
 });

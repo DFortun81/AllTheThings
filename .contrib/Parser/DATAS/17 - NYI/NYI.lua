@@ -1169,6 +1169,8 @@ _.NeverImplemented =
 			i(142503),	-- Hidden Shirt
 			i(168665),	-- Hidden Bracers
 			i(158329),	-- Hidden Gloves
+			-- SL
+			i(185774),	-- PH Green Head Candle
 		}),
 		n(-324, {	-- Shirts
 			i(52548),	-- Initiate's Tunic
@@ -3122,137 +3124,110 @@ _.NeverImplemented =
 			i(167146),	-- QA Combat Test Caster Offhand 1
 		}),
 		n(-334, {	-- One-Handed Axes
+			-- Load In Game
 			i(68050),	-- Shatterscale Mightfish
+			i(115292),	-- Spectral Axe
+			i(134586),	-- Vanguard Hatchet
+			i(134755),	-- Covert Hatchet
+			i(182562),	-- NPE Weapon 1H Axe AGI
+			i(182577),	-- NPE Weapon 1H Axe AGI 2
+			-- ItemID/Retrieving
 			i(49456),	-- Will of the Earth
-			i(50251),	-- Unknown
-			i(115292),	-- spectral axe
-			i(108779),	-- Unknown
-			i(108780),	-- Unknown
-			i(108781),	-- Unknown
-			i(159483),	--Unknown
-			i(159484),	--Unknown
-			i(164967),	--Unknown
-			i(165264),	--Unknown
+			i(108779),	-- 7.0 PH Weapon - 1H Axe Agi
+			i(108780),	-- 7.0 PH Weapon - 1H Axe Str
+			i(108781),	-- 7.0 PH Weapon - 1H Axe Int
 			i(109319),	-- 6.0 QA Combat Test Agility 1h Axe 2
 			i(109502),	-- 6.0 QA Combat Test Agility 1h Axe
 			i(109536),	-- 6.0 QA Combat Test Offhand Agility Axe 2
-			i(147379),	-- Wooden Toy Axe (H) used to apply the mog
-			i(182562),	-- NPE Weapon 1H Axe AGI
-			i(182577),	-- NPE Weapon 1H Axe AGI 2
+			i(159483),	-- 8.0 PH - Weapon - 1H Axe
+			i(159484),	-- 8.0 PH - Weapon - 1H Axe
+			i(164967),	-- Steelforged Axe (CREATURE USE - TIER 2 VISUAL ONLY)
+			i(165264),	-- Fallback Weapon - 1H Axe
 		}),
 		n(-336, {	-- One-Handed Maces
-			i(165262),	-- Unknown
-			i(182578),	-- NPE Weapon 1H Mace AGI
-			i(146304),	-- Fel Titan Hammer (test version for Maiden Mog Drop)
-			i(159550),	-- Unknown
-			i(108791),	-- Unknown
-			i(108792),	-- Unknown
-			i(108793),	-- Unknown
-			i(176012),	--
-			i(182350),	-- Ardenweald Raid Mace STR
-			i(176013),	--
-			i(176014),	--
-			i(176015),	--
-			i(176016),	--
-			i(179007),	--
-			i(179550),	--
-			i(179551),	--
-			i(179552),	--
-			i(179553),	--
-			i(179554),	--
-			i(179555),	--
+			-- Load In Game
 			i(163930),	-- Kovork's Rattle
-			i(109279),	-- Unknown
-			i(109383),	-- Unknown
-			i(109404),	-- Unknown
-			i(109438),	-- Unknown
-			i(109470),	-- Unknown
-			i(109533),	-- Unknown
-			i(90331),	-- Face Smasher Warhammer
-			i(136593),	-- Doomhammer Offhand Appearance Record (referenced by actual item)
 			i(174228),	-- Gavel of the Oasis
+			i(182578),	-- NPE Weapon 1H Mace AGI
+			-- ItemID/Retrieving
+			i(108791),	-- 7.0 PH Weapon - 1H Mace Agi
+			i(108792),	-- 7.0 PH Weapon - 1H Mace Str
+			i(108793),	-- 7.0 PH Weapon - 1H Mace Int
+			i(109279),	-- 7.0 QA Combat Test Caster 1H Mace 2
+			i(109383),	-- 6.0 QA Combat Test Agility 1h Mace
+			i(109404),	-- 6.0 QA Combat Test Strength 1h Mace 2
+			i(109438),	-- 7.0 QA Combat Test Caster 1h Mace 1
+			i(109470),	-- 6.0 QA Combat Test Strength 1h Mace
+			i(109533),	-- 7.0 QA Combat Test Caster 1H Mace 3
+			i(159550),	-- 8.0 PH - Weapon - 1H Mace
+			i(165262),	-- Fallback Weapon - 1H Mace
 			i(167141),	-- QA Combat Test 1h Mace
 		}),
 		n(-338, {	-- One-Handed Swords
-			i(134586),	-- Vanguard Hatchet
-			i(134755),	-- Covert Hatchet
+			-- Load In Game
 			i(18582),	-- The Twin Blades of Azzinoth
 			i(18583),	-- Warglaive of Azzinoth (Right)
 			i(18584),	-- Warglaive of Azzinoth (Left)
-			i(108803),	-- Unknown - was under Legion>1Handed Swords
-			i(108804),	-- Unknown - was under Legion>1Handed Swords
-			i(134562),	-- Odyns Fury
-			i(166889),	-- Unknown
-			i(134067),	-- Unknown
-			i(167143),	-- Unknown
-			i(43922),	-- Honed Lightblade
-			--i(134067),	-- Unknown
-			i(162447),	-- Marrow Render
-			i(158508),	-- Scalawag's Cutlass
-			i(158567),	-- Necropolis Sentry's Sword
-			i(161305),	-- Ashvane Captain's Shortsword
-			i(161308),	-- Ashvane Captain's Quickblade
-			i(161309),	-- Ashvane Captain's Gladius
-			i(93145),	-- Scavenged Pandaren Sword
+			i(134613),	-- Scorching Quickblade
 			i(137225),	-- Thunderfury, Blessed Blade of the Windseeker (mog testing)
+			i(162447),	-- Marrow Render
+			i(182567),	-- NPE Weapon 1H Sword AGI
+			i(182574),	-- NPE Weapon 1H Sword AGI 2
+			i(182575),	-- NPE Weapon 1H Sword AGI 3
+			-- ItemID/Retrieving
+			i(43922),	-- Honed Lightblade
 			i(47846),	-- Cruel Barb (Glow, Purple - Low)
-			i(147378),	-- Wooden Toy Sword(Visual usage for toy weapon set)
-			i(108805),	-- Unknown - was under Legion>1Handed Swords
+			i(108803),	-- 7.0 PH Weapon - 1H Sword Agi
+			i(108804),	-- 7.0 PH Weapon - 1H Sword Str
+			i(108805),	-- 7.0 PH Weapon - 1H Sword Int
 			i(109320),	-- 6.0 QA Combat Test Strength 1h Sword 2
 			i(109377),	-- 6.0 QA Combat Test Strength 1H Sword 3
 			i(109445),	-- 6.0 QA Combat Test Strength 1h Sword
 			i(109448),	-- 7.0 QA Combat Test Caster DPS Sword
 			i(109458),	-- 6.0 QA Combat Test Agility 1h Sword
-			i(124079),	-- Unknown - was under WoD>1Handed Swords
-			i(124084),	-- Unknown - was under WoD>1Handed Swords
-			i(127852),	-- Unknown - was under WoD>1Handed Swords
-			i(165273),	-- Unknown - was under Legion>1Handed Swords
-			i(134613),	-- Scorching Quickblade
-			i(182567),	-- NPE Weapon 1H Sword AGI
-			i(182574),	-- NPE Weapon 1H Sword AGI 2
-			i(182575),	-- NPE Weapon 1H Sword AGI 3
+			i(124079),	-- Bloodthirsty Blade
+			i(124084),	-- Bloodslaked Blade
+			i(127852),	-- Armaments of the Black Wyrm [TEMP]
+			i(134067),	-- Blackswell Scalemender's Mace
+			i(165273),	-- Fallback Weapon - 1H Sword
+			i(167143),	-- QA Combat Test 1h Sword
 		}),
 		n(-343,	{	-- Polearms
-			i(158504),	-- Whaler's Pike
-			i(158563),	-- Tomb-Rustler's Polearm
-			i(108797),	-- Unknown
-			i(108798),	-- Unknown
-			i(54965),	-- Unknown
-			i(108799),	-- Unknown
-			i(109456),	-- Unknown
-			i(153401),	-- [Whaler's Pike]
-			i(154972),	-- [Tomb-Rustler's Polearm]
+			-- ItemID/Retrieving
+			i(54965),	-- Stormwind Spear
+			i(108797),	-- 7.0 PH Weapon - 2H Polearm Agi
+			i(108798),	-- 7.0 PH Weapon - 2H Polearm Str
+			i(108799),	-- 7.0 PH Weapon - 2H Polearm Int
+			i(109456),	-- 6.0 QA Combat Test Agility Polearm
 			i(165271),	-- Fallback Weapon - Polearm
 		}),
 		n(-387,	{	-- Relics
+			-- Load In Game
 			i(132252),	-- Owen Test Relic
-			i(130162),	-- Val-Sharah Artifact Gem #1
-			i(140070),	-- Deep cave ice crystal (ptr only)
-			i(136988),	-- qa combat test relic holy 1
-			i(136989),	-- qa combat test relic arcane 1
-			i(136990),	-- qa combat test relic blood 1
-			i(136991),	-- qa combat test relic fel 1
-			i(136992),	-- qa combat test relic fire 1
-			i(136993),	-- qa combat test relic frost 1
-			i(136994),	-- qa combat test relic iron 1
-			i(136995),	-- qa combat test relic life 1
-			i(136996),	-- qa combat test relic shadow 1
-			i(136998),	-- qa combat test relic wind 1
-			i(136999),	-- qa combat test relic holy 2
-			i(137000),	-- qa combat test relic arcane 2
-			i(137001),	-- qa combat test relic blood 2
-			i(137002),	-- qa combat test relic fel 2
-			i(137003),	-- qa combat test relic fire 2
-			i(137004),	-- qa combat test relic frost 2
-			i(137005),	-- qa combat test relic iron 2
-			i(137006),	-- qa combat test relic life 2
-			i(137007),	-- qa combat test relic shadow 2
-			i(137009),	-- qa combat test relic wind 2
-			i(140411),	-- clarity of voncivtion
-			i(140412),	-- Reactive Intuition
+			i(136988),	-- QA Combat Test Relic Holy 1
+			i(136989),	-- QA Combat Test Relic Arcane 1
+			i(136990),	-- QA Combat Test Relic Blood 1
+			i(136991),	-- QA Combat Test Relic Fel 1
+			i(136992),	-- QA Combat Test Relic Fire 1
+			i(136993),	-- QA Combat Test Relic Frost 1
+			i(136994),	-- QA Combat Test Relic Iron 1
+			i(136995),	-- QA Combat Test Relic Life 1
+			i(136996),	-- QA Combat Test Relic Shadow 1
+			i(136998),	-- QA Combat Test Relic Wind 1
+			i(136999),	-- QA Combat Test Relic Holy 2
+			i(137000),	-- QA Combat Test Relic Arcane 2
+			i(137001),	-- QA Combat Test Relic Blood 2
+			i(137002),	-- QA Combat Test Relic Fel 2
+			i(137003),	-- QA Combat Test Relic Fire 2
+			i(137004),	-- QA Combat Test Relic Frost 2
+			i(137005),	-- QA Combat Test Relic Iron 2
+			i(137006),	-- QA Combat Test Relic Life 2
+			i(137007),	-- QA Combat Test Relic Shadow 2
+			i(137009),	-- QA Combat Test Relic Wind 2
+			i(140411),	-- Clarity of Conviction
+			i(140412),	-- Reactive Intuition <-- BGs????
 			i(140416),	-- Conscience of the Victorious
 			i(140420),	-- Battering Tempest
-			i(133018),	-- Azsuna Packe 3 Holy 1 Unused
 			i(144446),	-- 7.2 QA Functionality Test Relic - Not For Playtesting - Bronze 1 +3
 			i(144447),	-- 7.2 QA Functionality Test Relic - Not For Playtesting - Bronze 2 +3
 			i(144448),	-- 7.2 QA Functionality Test Relic - Not For Playtesting - Bronze 3 +3
@@ -3272,29 +3247,26 @@ _.NeverImplemented =
 			i(146736),	-- 7.2 QA Combat Test Relic Blood 1
 			i(146737),	-- 7.2 QA Combat Test Relic Fel 1
 			i(146738),	-- 7.2 QA Combat Test Relic Fire 1
+			-- ItemID/Retrieving
+			i(140070),	-- Deep Cave Ice Crystal (ptr only)
 		}),
 		n(-332, {	-- Shields
-			i(165617),	-- Unknown
-			i(139439),	-- Highkeepers' Ward
-			i(108808),	-- Unknown
-			i(108809),	-- Unknown
-			i(109288),	-- Unknown
-			i(109312),	-- Unknown
-			i(109476),	-- Unknown
-			i(109550),	-- Unknown
-			i(34415),	-- Crystaline Shard Shield
-			i(54554),	-- Bejeweled Ship's Wheel
-			i(60220),	-- Unknown
-			i(159814),	-- Unknown
-			i(159815),	-- Unknown
-			i(165276),	-- Unknown
-			i(167140),	-- Unknown
-			i(93441),	-- Crafted Dreadful Gladiator's Barrier
-			i(93483),	-- Crafted Dreadful Gladiator's Redoubt
-			i(93614),	-- Crafted Dreadful Gladiator's Shield Wall
-			i(107644),	-- Napmaster's Sleep Mask (Shadowmoon Valley Draenor)
+			-- Load In Game
 			i(182570),	-- NPE Weapon Shield
 			i(182576),	-- NPE Weapon Shield 2
+			-- ItemID/Retrieving
+			i(34415),	-- Crystaline Shard Shield
+			i(60220),	-- Theodore's Heirloom Buckler
+			i(108808),	-- 7.0 PH Shield - Shield Str
+			i(108809),	-- 7.0 PH Shield - Shield Int
+			i(109288),	-- 7.0 QA Combat Test Shield 1
+			i(109312),	-- 7.0 QA Combat Test Shield 2
+			i(109476),	-- 7.0 QA Combat Test Shield 3
+			i(109550),	-- 7.0 QA Combat Test Shield 4
+			i(159814),	-- 8.0 PH - Shield
+			i(159815),	-- 8.0 PH - Shield
+			i(165276),	-- Fallback Weapon - Shield
+			i(167140),	-- QA Combat Test  Shield 1
 		}),
 		n(-342, {	-- Staves
 			i(132474),	-- Unknown - was under Legion>Staves
