@@ -5853,6 +5853,10 @@ app.BaseObjectFields = function(fields)
 	return {
 	__index = function(t, key)
 		_cache = rawget(fields, key);
+		-- cloned groups will not directly have a parent, but they will instead have a sourceParent, so fill in with that instead
+		if not _cache and key == "parent" then
+			return t.sourceParent;
+		end
 		return _cache and _cache(t);
 	end
 };
