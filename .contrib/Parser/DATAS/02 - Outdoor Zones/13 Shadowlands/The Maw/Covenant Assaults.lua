@@ -653,12 +653,12 @@ _.Zones =
 											["cr"] = 179475,	-- Kael'thas Sunstrider
 										}),
 										crit(6, {	-- Lost Sybille
-										--	["coord"] = { , , THE_MAW },
-										--	["cr"] = ,	--
+											["coord"] = { 31.3, 20.5, THE_MAW },
+											["cr"] = 179476,	-- Lost Sybille
 										}),
 										crit(7, {	-- Vulca
-										--	["coord"] = { , , THE_MAW },
-										--	["cr"] = ,	--
+											["coord"] = { 27.3, 20.1, THE_MAW },
+											["cr"] = 179477,	-- Vulca
 										}),
 										crit(8, {	-- Iven
 											["coord"] = { 32.7, 14.8, THE_MAW },

@@ -126,9 +126,13 @@ _.Zones =
 					},
 				}),
 				n(171317, {	-- Conjured Death
+					["description"] = "Spawns outside the Tremaculum when the Venthyr assault is active.",
 					["questID"] = 61106,
 					["isDaily"] = true,
-					["coord"] = { 27.8, 13.2, THE_MAW },
+					["coords"] = {
+						{ 27.8, 13.2, THE_MAW },
+						{ 28.6, 19.4, THE_MAW },	-- Venthyr assault spawnpoint
+					},
 					["g"] = {
 						crit(4, {	-- Conjured Death
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
