@@ -359,6 +359,7 @@ _.GearSets =
 					i(180001),	-- Winterborn Staff
 					i(180018),	-- Winterborn Wand
 					i(180256),	-- Winterborn Warglaive
+					i(179607),	-- Winterborn Bulwark (According to Wowhead comments 9.0.5 hotfix this)
 				},
 			}),
 		},

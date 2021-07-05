@@ -2341,3 +2341,12 @@ _.GearSets =
 		},
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-9982, {	-- Legion
+		n(-10067, {	-- Artifacts
+			n(-319, {	-- Weapons
+				i(137661),	-- Truthguard
+			}),
+		}),
+	}),
+});

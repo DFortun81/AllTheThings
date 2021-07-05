@@ -33,6 +33,72 @@ _.NeverImplemented =
 	}),
 	tier(9,	{	-- Shadowlands -- Items that might get added after 9.0.5. If you are sure the item won't be added, please put it into the correct section
 		
+		
+		-- Reverent Set (Kyrian?)
+		i(184452),	-- Reverent Helm
+		i(184453),	-- Reverent Cloak
+		i(184454),	-- Reverent Gauntlets
+		i(184455),	-- Reverent Girdle
+		i(184456),	-- Reverent Chestpiece
+		i(184457),	-- Reverent Legguards
+		i(184458),	-- Reverent Shoulders
+		i(184459),	-- Reverent Boots
+		i(184460),	-- Reverent Bracer
+		-- Set added in 9.1.0
+		-- Night Fae -- of the Twilight Grove -- Korthia Dailies?
+		i(186500),	-- Ensemble: Garb of the Twilight Grove
+		i(184948),	-- Vestments of the Twilight Grove
+		i(184949),	-- Slippers of the Twilight Grove
+		i(184950),	-- Handwraps of the Twilight Grove
+		i(184951),	-- Hood of the Twilight Grove
+		i(184952),	-- Leggings of the Twilight Grove
+		i(184953),	-- Mantle of the Twilight Grove
+		i(184954),	-- Sash of the Twilight Grove
+		i(184955),	-- Wraps of the Twilight Grove
+		i(184956),	-- Drape of the Twilight Grove
+		-- Kyrian -- Foresworn Aspirant's -- Korthia Dailies?
+		i(186518),	-- Ensemble: Foresworn Aspirant's Regalia
+		i(184983),	-- Foresworn Aspirant's Vestments
+		i(184984),	-- Foresworn Aspirant's Slippers
+		i(184985),	-- Foresworn Aspirant's Handwraps
+		i(184986),	-- Foresworn Aspirant's Hood
+		i(184987),	-- Foresworn Aspirant's Leggings
+		i(184988),	-- Foresworn Aspirant's Sash
+		i(184989),	-- Foresworn Aspirant's Wraps
+		i(185009),	-- Foresworn Aspirant's Robes
+		i(184990),	-- Foresworn Aspirant's Drape
+		-- Necrolord -- Rogue Necromancer's -- Korthia Dailies?
+		i(186505),	-- Ensemble: Rogue Necromancer's Vestments
+		i(185011),	-- Rogue Necromancer's Vestments
+		i(185012),	-- Rogue Necromancer's Slippers
+		i(185013),	-- Rogue Necromancer's Handwraps
+		i(185014),	-- Rogue Necromancer's Hood
+		i(185015),	-- Rogue Necromancer's Leggings
+		i(185016),	-- Rogue Necromancer's Mantle
+		i(185017),	-- Rogue Necromancer's Sash
+		i(185018),	-- Rogue Necromancer's Wraps
+		i(185019),	-- Rogue Necromancer's Drape
+		-- Venthyr -- Radiant Court -- Korthia Dailies?
+		i(186513),	-- Ensemble: Radiant Court Attire
+		i(185074),	-- Radiant Court Wraps
+		i(185075),	-- Radiant Court Sash
+		i(185076),	-- Radiant Court Leggings
+		i(185077),	-- Radiant Court Hood
+		i(185078),	-- Radiant Court Handwraps
+		i(185079),	-- Radiant Court Slippers
+		i(185080),	-- Radiant Court Vestments
+		i(185073),	-- Radiant Court Cape
+		-- Venthyr -- Redeemed Inquisitor's  -- Korthia Dailies?
+		i(186514),	-- Ensemble: Redeemed Inquisitor's Vestments
+		i(185107),	-- Redeemed Inquisitor's Robes
+		i(185108),	-- Redeemed Inquisitor's Slippers
+		i(185109),	-- Redeemed Inquisitor's Handwraps
+		i(185110),	-- Redeemed Inquisitor's Hood
+		i(185111),	-- Redeemed Inquisitor's Leggings
+		i(185112),	-- Redeemed Inquisitor's Mantle
+		i(185113),	-- Redeemed Inquisitor's Sash
+		i(185114),	-- Redeemed Inquisitor's Wraps
+		i(185115),	-- Redeemed Inquisitor's Drape
 		-- Possibly WoW's 17th Anniversary
 		i(186459),	-- Archaic Charm of Presence
 		i(186460),	-- Anger-Spark Gloves
@@ -234,6 +300,7 @@ _.NeverImplemented =
 			-- Legion
 			i(138420),	-- Pilfered Ettin String
 			-- BFA
+			i(156753),	-- Turnabout Gloves
 			-- Quest Set
 			i(153389),	-- Galetorn Crown
 			i(153390),	-- Galetorn Gloves
@@ -413,6 +480,8 @@ _.NeverImplemented =
 			-- Legion
 			i(129127),	-- Ebon Stalker's Boots
 			-- BFA
+			i(156751),	-- Nightbinder Grips
+			i(166786),	-- Disenchant Test Item
 			-- Test Set
 			i(166239),	-- Testus Maximus Breastplate
 			-- Quest Sets
@@ -604,6 +673,8 @@ _.NeverImplemented =
 			i(167108),	-- QA Combat Test Leather Chest
 			i(167109),	-- QA Combat Test Leather Helm
 			i(167110),	-- QA Combat Test Leather Boots
+			-- SL
+			i(178148),	-- 9.0 Dungeon - PH Item
 		}),
 		n(-45, {	-- Mail
 			cl(SHAMAN, {
@@ -632,6 +703,7 @@ _.NeverImplemented =
 			-- Legion
 			i(129152),	-- Boulderfall Stompers
 			-- BFA
+			i(156754),	-- Throatcrusher Grips
 			-- Questsets?
 			i(153381),	-- Aiguille-Scaler's Wristguards
 			i(153382),	-- Aiguille-Scaler's Gloves
@@ -817,6 +889,7 @@ _.NeverImplemented =
 			i(114274),	-- Ruby Plate Shoulderguard
 			i(114278),	-- Ruby Plate Girdle
 			-- BFA
+			i(156752),	-- Skullbreaker Gauntlets
 			-- Test Gear
 			i(160673),	-- Primus Breastplate
 			i(160674),	-- Secondus Breastplate
@@ -856,6 +929,9 @@ _.NeverImplemented =
 			i(158525),	-- Dead-Watcher Gauntlets
 			i(158526),	-- Dead-Watcher Vambraces
 			i(158527),	-- Dead-Watcher Sabatons
+			-- SL
+			i(170051),	-- Lost Pauldron of Might
+			i(170052),	-- Lost Helm of Might
 			-- ItemID/Retrieving
 			-- Vanilla
 			i(5822),	-- Hedgeseed Gauntlets
@@ -2986,6 +3062,8 @@ _.NeverImplemented =
 			i(177128),	-- [7th Legionnaire's Longbow]
 			i(178469),	--
 			i(111783),	-- Irontree Bow (Cata version 55306 is in game but this version doesn't seem to have ever existed)
+			i(181374),	-- Sylvanas Shadowlands Bow
+			i(182563),	-- NPE Weapon Bow
 		}),
 		n(-346, {	-- Crossbows
 			i(108784),	-- Unknown
@@ -3026,6 +3104,7 @@ _.NeverImplemented =
 			i(147908),	-- 6.0 Weapon - Knife
 			i(159534),	-- Unknown
 			i(165268),	-- Unknown
+			i(115446),	-- Brianium Dagger
 		}),
 		n(-348, {	-- Fist Weapons
 			i(38243),	-- Ravaging Steelfist
@@ -3098,6 +3177,8 @@ _.NeverImplemented =
 			i(109502),	-- 6.0 QA Combat Test Agility 1h Axe
 			i(109536),	-- 6.0 QA Combat Test Offhand Agility Axe 2
 			i(147379),	-- Wooden Toy Axe (H) used to apply the mog
+			i(182562),	-- NPE Weapon 1H Axe AGI
+			i(182577),	-- NPE Weapon 1H Axe AGI 2
 		}),
 		n(-336, {	-- One-Handed Maces
 			i(165262),	-- Unknown
@@ -3129,6 +3210,7 @@ _.NeverImplemented =
 			i(109533),	-- Unknown
 			i(90331),	-- Face Smasher Warhammer
 			i(136593),	-- Doomhammer Offhand Appearance Record (referenced by actual item)
+			i(174228),	-- Gavel of the Oasis
 		}),
 		n(-338, {	-- One-Handed Swords
 			i(134586),	-- Vanguard Hatchet
@@ -3164,6 +3246,10 @@ _.NeverImplemented =
 			i(124084),	-- Unknown - was under WoD>1Handed Swords
 			i(127852),	-- Unknown - was under WoD>1Handed Swords
 			i(165273),	-- Unknown - was under Legion>1Handed Swords
+			i(134613),	-- Scorching Quickblade
+			i(182567),	-- NPE Weapon 1H Sword AGI
+			i(182574),	-- NPE Weapon 1H Sword AGI 2
+			i(182575),	-- NPE Weapon 1H Sword AGI 3
 		}),
 		n(-343,	{	-- Polearms
 			i(158504),	-- Whaler's Pike
@@ -3245,6 +3331,8 @@ _.NeverImplemented =
 			i(93483),	-- Crafted Dreadful Gladiator's Redoubt
 			i(93614),	-- Crafted Dreadful Gladiator's Shield Wall
 			i(107644),	-- Napmaster's Sleep Mask (Shadowmoon Valley Draenor)
+			i(182570),	-- NPE Weapon Shield
+			i(182576),	-- NPE Weapon Shield 2
 		}),
 		n(-342, {	-- Staves
 			i(132474),	-- Unknown - was under Legion>Staves
@@ -3350,6 +3438,10 @@ _.NeverImplemented =
 			i(108795),	-- Unknown
 			i(108796),	-- Unknown
 			i(109401),	-- Unknown
+			i(169818),	-- Quilboar Club
+			i(182565),	-- NPE Weapon 2H Mace STR
+			i(182569),	-- NPE Weapon 2H Sword STR
+			i(182579),	-- NPE Weapon 2H Sword STR 2
 		}),
 		n(-339, {	-- Two Handed Swords
 			i(33475),	-- Artefact Frostmourne
@@ -3395,6 +3487,7 @@ _.NeverImplemented =
 			i(151138),	-- Warglaive of Azzinoth [This version not implemented; was testing for transmog]
 			i(129737),	-- Verus
 			i(165682),	-- Unknown
+			i(182571),	-- NPE Weapon Warglaive AGI
 		}),
 		--
 		i(159538),	-- Coldscale Cudgel

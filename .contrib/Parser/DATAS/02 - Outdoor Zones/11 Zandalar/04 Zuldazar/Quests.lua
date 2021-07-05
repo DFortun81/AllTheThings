@@ -2025,6 +2025,26 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		n(-319, {	-- Weapons
 			i(154985),	-- Golden Protectorate
 			i(158576),	-- Golden Protectorate
+			i(154976),	-- Necropolis Sentry's Sword
+			i(154973),	-- Golden Devilsaur Fang
+			i(154975),	-- Scalebeast Claws
+			i(154977),	-- Mojo-Drainer's Staff
+			i(154978),	-- Dinomancy Cudgel
+			i(153641),	-- Manual of Elemental Enchancement
+			i(154986),	-- Devilsaur Voodoo Figure
+			i(154974),	-- Tiki-Thumper
+			i(155272),	-- Loa-Defender's Waraxe
+			i(155582),	-- Loa-Claimer's Warglaives
+			i(158564),	-- Golden Devilsaur Fang
+			i(158566),	-- Scalebeast Claws
+			i(158569),	-- Dinomancy Cudgel
+			i(158577),	-- Devilsaur Voodoo Figure
+			i(161284),	-- Faithless Dinorider's Focus
+			i(161285),	-- Faithless Wingrider's Focus
+			i(158565),	-- Tiki-Thumper
+			i(161311),	-- Crescent of Zak'rajan
+			i(161286),	-- Faithless Dinorider's Shield
+			i(161287),	-- Faithless Wingrider's Shield
 		}),
 	}),
 });

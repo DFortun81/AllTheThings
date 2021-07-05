@@ -2592,6 +2592,11 @@ _.Zones =
 					["races"] = { TAUREN },
 					["groups"] = {
 						i(65635),	-- Crown of the Earthmother
+						-- You get these when completing the quest
+						i(141979),	-- Crown of the Hallowed
+						i(141980),	-- Crown of the Hallowed
+						i(141981),	-- Crown of the Hallowed
+						i(141982),	-- Crown of the Hallowed
 					},
 				}),
 				q(28477, {	-- Twilight Scheming
@@ -2642,6 +2647,10 @@ _.Zones =
 						i(65631),	-- Helm of the Sunwalker
 						i(65644),	-- Faceguard of the Sunwalker
 						i(65647),	-- Headguard of the Sunwalker
+						-- You get these when completing the quest
+						i(141976),	-- Headguard of the Order
+						i(141977),	-- Faceguard of the Order
+						i(141978),	-- Helm of the Order
 					},
 				}),
 				q(28473, {	-- Weapons of Darkness

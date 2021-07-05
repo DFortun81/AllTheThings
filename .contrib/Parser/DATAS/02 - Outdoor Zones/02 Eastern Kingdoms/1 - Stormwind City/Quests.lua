@@ -1606,6 +1606,11 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(65616),	-- Crown of the Hallowed
+						-- You get these when completing the quest
+						i(141979),	-- Crown of the Hallowed
+						i(141980),	-- Crown of the Hallowed
+						i(141981),	-- Crown of the Hallowed
+						i(141982),	-- Crown of the Hallowed
 					},
 				}),
 				q(28238, {	-- Twilight Shores
@@ -1657,6 +1662,10 @@ _.Zones =
 						i(65623),	-- Helm of the Order
 						i(65641),	-- Faceguard of the Order
 						i(65646),	-- Headguard of the Order
+						-- You get these when completing the quest
+						i(141976),	-- Headguard of the Order
+						i(141977),	-- Faceguard of the Order
+						i(141978),	-- Helm of the Order
 					},
 				}),
 				q(59583, {	-- Welcome to Stormwind

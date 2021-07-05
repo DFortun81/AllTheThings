@@ -119,3 +119,15 @@ _.GroupFinder =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-9979, {	-- Cataclysm
+		n(-163, {	-- Armor
+			n(-44, {	-- Leather
+				i(113710),	-- Ravaged Leather Leggings
+			}),
+			n(-45, {	-- Mail
+				i(113715),	-- Sparkmail Vest
+			}),
+		}),
+	}),
+});

@@ -38,6 +38,7 @@ _.Zones =
 						crit(17, {	-- Dustbrawl (crit 18 is also Dustbrawl, why??)
 							["achievementID"] = 14309,	-- Adventurer of Ardenweald
 						}),
+						i(181395)	-- Dustbreak Maul
 					},
 				}),
 				n(167851, {	-- Egg-Tender Leh'go

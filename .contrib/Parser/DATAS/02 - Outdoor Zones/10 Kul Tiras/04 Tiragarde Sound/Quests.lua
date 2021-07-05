@@ -1506,6 +1506,30 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		n(-319, {	-- Weapons
 			i(153414),	-- Hatch-Cover Bulwark
 			i(158517),	-- Hatch-Cover Bulwark
+			i(153405),	-- Scalawag's Cutlass
+			i(155227),	-- Proudmoore Battalion Shield
+			i(153402),	-- Scalawag's Sail Slicer
+			i(153403),	-- Scalawag's Claymore
+			i(153404),	-- Scalawag's Spikefist
+			i(153406),	-- Tideshaper Staff
+			i(153407),	-- Repurposed Dinghy Anchor
+			i(153415),	-- Harbormaster's Lantern
+			i(161932),	-- Manual of Elemental Enchancement
+			i(155581),	-- Scalawag's Warglaive
+			i(158505),	-- Scalawag's Sail Slicer
+			i(158507),	-- Scalawag's Spikefist
+			i(161299),	-- Stoat-Trapper's Bladefist
+			i(161300),	-- Stoat-Trapper's Striker
+			i(158510),	-- Repurposed Dinghy Anchor
+			i(158518),	-- Harbormaster's Lantern
+			i(159079),	-- Captivating Glowfly Lantern
+			i(161290),	-- Grimestone Greatmace
+			i(161291),	-- Grimestone Spellmace
+			i(161292),	-- Grimestone Spellmaul
+			i(158579),	-- Scalawag's Warglaive
+		}),
+		n(-322, { -- Cloaks
+			i(155091),	-- Thovas-Explorer's Cape
 		}),
 	}),
 });

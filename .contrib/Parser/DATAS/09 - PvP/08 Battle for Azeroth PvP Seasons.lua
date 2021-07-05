@@ -1642,6 +1642,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		n(-690, {	-- Sinister Gladiator: Battle for Azeroth Season 2
 			n(-319, {	-- Weapons
 				i(165036),	-- Sinister Gladiator's Halberd (A)
+				i(165201),	-- Sinister Aspirant's Halberd (A)
 			}),
 			n(-163, {	-- Armor
 				n(-43, {	-- Cloth

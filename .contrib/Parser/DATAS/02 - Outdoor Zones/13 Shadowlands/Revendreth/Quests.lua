@@ -1168,5 +1168,17 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(178073),	-- Stoneforged Helm
 			}),
 		}),
+		n(-319, {	-- Weapons
+			i(184325),	-- Sinfall Quickblade
+			i(184514),	-- Sinfall Spellbinder's Kris
+			i(184330),	-- Sinfall Enchanted Elixir Bottle
+			i(184327),	-- Sinfall Redeemer's Morningstar
+			i(184323),	-- Sinfall Wing-Glaive
+			i(184329),	-- Sinfall Kite Shield
+			i(184321),	-- Sinfall Skirmisher's Poleaxe
+			i(184328),	-- Sinfall Defender's Halberd
+			i(184324),	-- Sinfall Fencer's Rapier
+			i(184322),	-- Sinfall Blunderbus
+		}),
 	}),
 });
