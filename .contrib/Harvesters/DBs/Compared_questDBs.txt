@@ -49,6 +49,18 @@ Comparing .\questDB-20210203.json
 41783, 49813, 49816, 49817, 49846, 49851, 49852, 49860, 49862, 49863, 49864, 49865, 49866, 51403, 52946, 53030, 53031, 53032, 53033, 53034, 53035, 53036, 53037, 53038, 53039, 54995, 57671, 57681, 57682, 57683, 57684, 57685, 57820, 57821, 57896, 57961, 57962, 58261, 58377, 58378, 58399, 58954, 59168, 59169, 59204, 59318, 59320, 59324, 59539, 59548, 59549, 59550, 59551, 59552, 59606, 59608, 60093, 60130, 60134, 60137, 60140, 60141, 60232, 60233, 60234, 60235, 60499, 60757, 60769, 60885, 60888, 60902, 61324, 61325, 61440, 61495, 61508, 61513, 61515, 61608, 61630, 61690, 61881, 62696, 63024, 63025, 63026, 63027
 0 Brand New IDs in the New DB compared to the Old DB.
 
+------
+Comparing .\questDB-20210629.json
+103 Missing IDs in the New DB compared to the Old DB.
+8330, 8336, 8345, 8346, 25134, 41778, 41783, 46810, 46946, 48375, 48376, 49813, 49816, 49817, 49846, 49851, 49852, 49860, 49862, 49863, 49864, 49865, 49866, 51403, 52946, 53030, 53031, 53032, 53033, 53034, 53035, 53036, 53037, 53038, 53039, 54084, 54995, 57671, 57681, 57682, 57683, 57684, 57685, 57820, 57821, 57896, 57961, 57962, 58261, 58377, 58378, 58399, 58954, 58991, 59168, 59169, 59204, 59318, 59320, 59324, 59539, 59548, 59549, 59550, 59551, 59552, 59606, 59608, 60093, 60130, 60134, 60137, 60140, 60141, 60232, 60233, 60234, 60235, 60499, 60757, 60769, 60885, 60888, 60902, 61324, 61325, 61440, 61495, 61508, 61513, 61515, 61554, 61608, 61630, 61690, 61881, 62696, 62886, 63024, 63025, 63026, 63027, 63101
+395 Brand New IDs in the New DB compared to the Old DB.
+59004, 63418, 63419, 63420, 63430, 63431, 63432, 63435, 63447, 63455, 63545, 63576, 63578, 63579, 63580, 63581, 63582, 63583, 63584, 63585, 63586, 63587, 63588, 63589, 63590, 63591, 63592, 63593, 63594, 63603, 63604, 63605, 63606, 63607, 63608, 63609, 63610, 63612, 63613, 63614, 63615, 63616, 63617, 63618, 63619, 63620, 63621, 63622, 63623, 63624, 63625, 63638, 63639, 63644, 63645, 63646, 63647, 63648, 63649, 63650, 63651, 63652, 63653, 63654, 63655, 63656, 63659, 63660, 63661, 63662, 63663, 63664, 63665, 63669, 63671, 63672, 63673, 63674, 63675, 63676, 63677, 63678, 63679, 63680, 63681, 63682, 63683, 63684, 63685, 63686, 63687, 63688, 63689, 63690, 63691, 63692, 63693, 63694, 63695, 63696, 63697, 63698, 63699, 63700, 63703, 63704, 63705, 63706, 63708, 63709, 63710, 63711, 63712, 63713, 63714, 63717, 63718, 63719, 63720, 63721, 63722, 63725, 63726, 63727, 63728, 63729, 63731, 63732, 63733, 63734, 63735, 63736, 63737, 63738, 63739, 63740, 63751, 63753, 63754, 63755, 63756, 63757, 63758, 63759, 63760, 63761, 63762, 63763, 63764, 63765, 63771, 63772, 63773, 63774, 63775, 63776, 63777, 63778, 63779, 63780, 63781, 63782, 63783, 63784, 63785, 63786, 63787, 63788, 63789, 63790, 63791, 63792, 63793, 63794, 63810, 63811, 63827, 63828, 63829, 63831, 63833, 63834, 63835, 63836, 63837, 63838, 63839, 63840, 63841, 63842, 63843, 63844, 63845, 63846, 63848, 63849, 63853, 63855, 63856, 63857, 63858, 63859, 63860, 63861, 63862, 63863, 63864, 63867, 63892, 63895, 63896, 63899, 63901, 63902, 63903, 63904, 63908, 63909, 63910, 63911, 63912, 63913, 63914, 63915, 63916, 63917, 63918, 63919, 63920, 63921, 63922, 63923, 63924, 63934, 63935, 63936, 63937, 63944, 63945, 63946, 63947, 63948, 63949, 63950, 63951, 63952, 63954, 63955, 63956, 63957, 63958, 63959, 63960, 63961, 63962, 63963, 63964, 63965, 63968, 63969, 63970, 63971, 63972, 63973, 63974, 63976, 63977, 63979, 63980, 63982, 63983, 63984, 63985, 63986, 63989, 63990, 63994, 64007, 64014, 64015, 64016, 64017, 64018, 64040, 64042, 64043, 64065, 64070, 64080, 64083, 64084, 64085, 64086, 64089, 64090, 64091, 64092, 64101, 64103, 64104, 64106, 64129, 64166, 64168, 64169, 64170, 64171, 64172, 64173, 64174, 64175, 64194, 64202, 64210, 64211, 64212, 64213, 64214, 64216, 64231, 64235, 64240, 64255, 64271, 64282, 64286, 64287, 64288, 64289, 64290, 64292, 64304, 64306, 64314, 64322, 64323, 64324, 64325, 64340, 64368, 64430, 64432, 64437, 64438, 64441, 64458, 64459, 64460, 64461, 64462, 64463, 64464, 64465, 64466, 64467, 64468, 64469, 64506, 64509, 64511, 64513, 64517, 64518, 64519, 64521, 64522, 64526, 64527, 64528, 64529, 64530, 64532, 64541, 64546, 64549, 64551, 64552, 64553, 64555, 64556, 64557, 64560, 64561, 64562, 64567, 64569, 64571, 64597, 64598, 64599, 64607, 64640, 64650, 64651, 64654
+------
+Comparing .\questDB-20210630.json
+103 Missing IDs in the New DB compared to the Old DB.
+8330, 8336, 8345, 8346, 25134, 41778, 41783, 46810, 46946, 48375, 48376, 49813, 49816, 49817, 49846, 49851, 49852, 49860, 49862, 49863, 49864, 49865, 49866, 51403, 52946, 53030, 53031, 53032, 53033, 53034, 53035, 53036, 53037, 53038, 53039, 54084, 54995, 57671, 57681, 57682, 57683, 57684, 57685, 57820, 57821, 57896, 57961, 57962, 58261, 58377, 58378, 58399, 58954, 58991, 59168, 59169, 59204, 59318, 59320, 59324, 59539, 59548, 59549, 59550, 59551, 59552, 59606, 59608, 60093, 60130, 60134, 60137, 60140, 60141, 60232, 60233, 60234, 60235, 60499, 60757, 60769, 60885, 60888, 60902, 61324, 61325, 61440, 61495, 61508, 61513, 61515, 61554, 61608, 61630, 61690, 61881, 62696, 62886, 63024, 63025, 63026, 63027, 63101
+0 Brand New IDs in the New DB compared to the Old DB.
+
 
 == Per Item Differences Breakdown ==
 #2
@@ -120,6 +132,8 @@ Comparing .\questDB-20210203.json
 #54
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- ADDED: r = 2
 #59
 .\questDB-20201014.json
 - EMPTY: lvl
@@ -21080,15 +21094,23 @@ Comparing .\questDB-20210203.json
 #13265
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: lvl: [1] --> [10]
 #13268
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: lvl: [1] --> [10]
 #13269
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: lvl: [1] --> [10]
 #13270
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: lvl: [1] --> [10]
 #13271
 .\questDB-20201014.json
 - CHANGE: lvl: 67 --> 25
@@ -21097,6 +21119,8 @@ Comparing .\questDB-20210203.json
 #13272
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: lvl: [1] --> [10]
 #13273
 .\questDB-20201014.json
 - CHANGE: lvl: 67 --> 25
@@ -27802,6 +27826,8 @@ Comparing .\questDB-20210203.json
 - ADDED: repeatable = 1
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: lvl: [1] --> [10]
 #24804
 .\questDB-20201024.json
 - ADDED: lvl = [1]
@@ -27813,6 +27839,8 @@ Comparing .\questDB-20210203.json
 - ADDED: repeatable = 1
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: lvl: [1] --> [10]
 #24807
 .\questDB-20201014.json
 - CHANGE: lvl: 25 --> 10
@@ -28652,6 +28680,8 @@ Comparing .\questDB-20210203.json
 #25047
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: lvl: [1] --> [10]
 #25048
 .\questDB-20201014.json
 - CHANGE: lvl: 40 --> 15
@@ -28877,6 +28907,8 @@ Comparing .\questDB-20210203.json
 - ADDED: isDaily = 1
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: lvl: [1] --> [30]
 #25106
 .\questDB-20201014.json
 - CHANGE: lvl: 25 --> 10
@@ -28950,36 +28982,54 @@ Comparing .\questDB-20210203.json
 #25126
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- ADDED: r = 1
 #25127
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- ADDED: r = 1
 #25128
 .\questDB-20201024.json
 - ADDED: lvl = [1]
 #25129
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- ADDED: r = 1
 #25130
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- ADDED: r = 1
 #25131
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- ADDED: r = 1
 #25132
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- ADDED: r = 1
 #25133
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- ADDED: r = 1
 #25134
 .\questDB-20201024.json
 - ADDED: lvl = [1]
 #25135
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- ADDED: r = 1
 #25136
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- ADDED: r = 1
 #25151
 .\questDB-20201014.json
 - CHANGE: lvl: 25 --> 10
@@ -28988,6 +29038,8 @@ Comparing .\questDB-20210203.json
 #25152
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- ADDED: r = 1
 #25153
 .\questDB-20201014.json
 - CHANGE: lvl: 25 --> 10
@@ -28998,46 +29050,64 @@ Comparing .\questDB-20210203.json
 - ADDED: isDaily = 1
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: lvl: [1] --> [30]
 #25155
 .\questDB-20201014.json
 - ADDED: isDaily = 1
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: lvl: [1] --> [30]
 #25156
 .\questDB-20201014.json
 - ADDED: isDaily = 1
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: lvl: [1] --> [30]
 #25157
 .\questDB-20201014.json
 - ADDED: isDaily = 1
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: lvl: [1] --> [30]
 #25158
 .\questDB-20201014.json
 - ADDED: isDaily = 1
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: lvl: [1] --> [30]
 #25159
 .\questDB-20201014.json
 - ADDED: isDaily = 1
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: lvl: [1] --> [30]
 #25160
 .\questDB-20201014.json
 - ADDED: isDaily = 1
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: lvl: [1] --> [30]
 #25161
 .\questDB-20201014.json
 - ADDED: isDaily = 1
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: lvl: [1] --> [30]
 #25162
 .\questDB-20201014.json
 - ADDED: isDaily = 1
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: lvl: [1] --> [30]
 #25163
 .\questDB-20201014.json
 - CHANGE: lvl: 25 --> 10
@@ -29074,6 +29144,8 @@ Comparing .\questDB-20210203.json
 #25172
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- ADDED: r = 1
 #25173
 .\questDB-20201024.json
 - ADDED: lvl = [1]
@@ -34449,12 +34521,16 @@ Comparing .\questDB-20210203.json
 #26389
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- ADDED: r = 2
 #26390
 .\questDB-20201024.json
 - ADDED: lvl = [1]
 #26391
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- ADDED: r = 2
 #26393
 .\questDB-20201014.json
 - EMPTY: lvl
@@ -40132,6 +40208,8 @@ Comparing .\questDB-20210203.json
 #27675
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: lvl: [1] --> [10]
 #27676
 .\questDB-20201014.json
 - CHANGE: lvl: 40 --> 15
@@ -40180,6 +40258,8 @@ Comparing .\questDB-20210203.json
 #27686
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: lvl: [1] --> [10]
 #27687
 .\questDB-20201014.json
 - CHANGE: lvl: 80 --> 30
@@ -45340,6 +45420,8 @@ Comparing .\questDB-20210203.json
 - CHANGE: races: [1,31] --> [1,32]
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: g: [{"itemID":57253}] --> [{"itemID":57255},{"itemID":118532},{"itemID":57253},{"itemID":131899}]
 #28758
 .\questDB-20201014.json
 - CHANGE: lvl: 84 --> 30
@@ -45350,6 +45432,8 @@ Comparing .\questDB-20210203.json
 - CHANGE: races: [1,31] --> [1,32]
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: g: [{"itemID":131875}] --> [{"itemID":131875},{"itemID":57388},{"itemID":57387},{"itemID":57386}]
 #28760
 .\questDB-20201014.json
 - CHANGE: lvl: 81 --> 30
@@ -45360,31 +45444,43 @@ Comparing .\questDB-20210203.json
 - CHANGE: races: [1,31] --> [1,32]
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: g: [{"itemID":57255}] --> [{"itemID":57255},{"itemID":118532},{"itemID":57253},{"itemID":131899}]
 #28763
 .\questDB-20201014.json
 - CHANGE: races: [1,31] --> [1,32]
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: g: [{"itemID":57253}] --> [{"itemID":57255},{"itemID":118532},{"itemID":57253},{"itemID":131899}]
 #28764
 .\questDB-20201014.json
 - CHANGE: races: [1,31] --> [1,32]
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: g: [{"itemID":118532}] --> [{"itemID":57255},{"itemID":118532},{"itemID":57253},{"itemID":131899}]
 #28765
 .\questDB-20201014.json
 - CHANGE: races: [1,31] --> [1,32]
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: g: [{"itemID":57253}] --> [{"itemID":57255},{"itemID":118532},{"itemID":57253},{"itemID":131899}]
 #28766
 .\questDB-20201014.json
 - CHANGE: races: [1,31] --> [1,32]
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: g: [{"itemID":57255}] --> [{"itemID":57255},{"itemID":118532},{"itemID":57253},{"itemID":131899}]
 #28767
 .\questDB-20201014.json
 - CHANGE: races: [1,31] --> [1,32]
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: g: [{"itemID":131899}] --> [{"itemID":57255},{"itemID":118532},{"itemID":57253},{"itemID":131899}]
 #28768
 .\questDB-20201014.json
 - CHANGE: lvl: 40 --> 15
@@ -45395,43 +45491,63 @@ Comparing .\questDB-20210203.json
 - CHANGE: races: [1,31] --> [1,32]
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: g: [{"itemID":57386}] --> [{"itemID":131875},{"itemID":57388},{"itemID":57387},{"itemID":57386}]
 #28770
 .\questDB-20201014.json
 - CHANGE: races: [1,31] --> [1,32]
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: g: [{"itemID":57388}] --> [{"itemID":131875},{"itemID":57388},{"itemID":57387},{"itemID":57386}]
 #28771
 .\questDB-20201014.json
 - CHANGE: races: [1,31] --> [1,32]
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: g: [{"itemID":57386}] --> [{"itemID":131875},{"itemID":57388},{"itemID":57387},{"itemID":57386}]
 #28772
 .\questDB-20201014.json
 - CHANGE: races: [1,31] --> [1,32]
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: g: [{"itemID":57387}] --> [{"itemID":131875},{"itemID":57388},{"itemID":57387},{"itemID":57386}]
 #28773
 .\questDB-20201014.json
 - CHANGE: races: [1,31] --> [1,32]
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: g: [{"itemID":57386}] --> [{"itemID":131875},{"itemID":57388},{"itemID":57387},{"itemID":57386}]
 #28774
 .\questDB-20201014.json
 - CHANGE: races: [1,31] --> [1,32]
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: g: [{"itemID":57388}] --> [{"itemID":131875},{"itemID":57388},{"itemID":57387},{"itemID":57386}]
 #28775
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: lvl: [1] --> [10]
 #28776
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: lvl: [1] --> [10]
 #28777
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: lvl: [1] --> [10]
 #28778
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: lvl: [1] --> [10]
 #28779
 .\questDB-20201014.json
 - CHANGE: lvl: 81 --> 30
@@ -45497,36 +45613,50 @@ Comparing .\questDB-20210203.json
 - CHANGE: races: [1,31] --> [1,32]
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: g: [{"itemID":131924}] --> [{"itemID":131924},{"itemID":2186},{"itemID":11192},{"itemID":2691}]
 #28792
 .\questDB-20201014.json
 - CHANGE: races: [1,31] --> [1,32]
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: g: [{"itemID":11192}] --> [{"itemID":131924},{"itemID":2186},{"itemID":11192},{"itemID":2691}]
 #28793
 .\questDB-20201014.json
 - CHANGE: races: [1,31] --> [1,32]
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: g: [{"itemID":2691}] --> [{"itemID":131924},{"itemID":2186},{"itemID":11192},{"itemID":2691}]
 #28794
 .\questDB-20201014.json
 - CHANGE: races: [1,31] --> [1,32]
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: g: [{"itemID":11192}] --> [{"itemID":131924},{"itemID":2186},{"itemID":11192},{"itemID":2691}]
 #28795
 .\questDB-20201014.json
 - CHANGE: races: [1,31] --> [1,32]
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: g: [{"itemID":2186}] --> [{"itemID":131924},{"itemID":2186},{"itemID":11192},{"itemID":2691}]
 #28796
 .\questDB-20201014.json
 - CHANGE: races: [1,31] --> [1,32]
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: g: [{"itemID":11192}] --> [{"itemID":131924},{"itemID":2186},{"itemID":11192},{"itemID":2691}]
 #28797
 .\questDB-20201014.json
 - CHANGE: races: [1,31] --> [1,32]
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: g: [{"itemID":2691}] --> [{"itemID":131924},{"itemID":2186},{"itemID":11192},{"itemID":2691}]
 #28798
 .\questDB-20201014.json
 - ADDED: isDaily = 1, lvl = 30
@@ -45572,36 +45702,50 @@ Comparing .\questDB-20210203.json
 - CHANGE: races: [1,31] --> [1,32]
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: g: [{"itemID":131874}] --> [{"itemID":57256},{"itemID":57257},{"itemID":131874},{"itemID":57258}]
 #28808
 .\questDB-20201014.json
 - CHANGE: races: [1,31] --> [1,32]
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: g: [{"itemID":57256}] --> [{"itemID":57256},{"itemID":57257},{"itemID":131874},{"itemID":57258}]
 #28809
 .\questDB-20201014.json
 - CHANGE: races: [1,31] --> [1,32]
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: g: [{"itemID":57258}] --> [{"itemID":57256},{"itemID":57257},{"itemID":131874},{"itemID":57258}]
 #28810
 .\questDB-20201014.json
 - CHANGE: races: [1,31] --> [1,32]
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: g: [{"itemID":57256}] --> [{"itemID":57256},{"itemID":57257},{"itemID":131874},{"itemID":57258}]
 #28811
 .\questDB-20201014.json
 - CHANGE: races: [1,31] --> [1,32]
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: g: [{"itemID":57257}] --> [{"itemID":57256},{"itemID":57257},{"itemID":131874},{"itemID":57258}]
 #28812
 .\questDB-20201014.json
 - CHANGE: races: [1,31] --> [1,32]
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: g: [{"itemID":57256}] --> [{"itemID":57256},{"itemID":57257},{"itemID":131874},{"itemID":57258}]
 #28813
 .\questDB-20201014.json
 - CHANGE: races: [1,31] --> [1,32]
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: g: [{"itemID":57258}] --> [{"itemID":57256},{"itemID":57257},{"itemID":131874},{"itemID":57258}]
 #28814
 .\questDB-20201014.json
 - CHANGE: lvl: 81 --> 30
@@ -46538,18 +46682,26 @@ Comparing .\questDB-20210203.json
 #29078
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: g: [{"itemID":57254},{"itemID":131873}] --> [{"itemID":57255},{"itemID":118532},{"itemID":57253},{"itemID":131899}]
 #29079
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: g: [{"itemID":57387},{"itemID":131875}] --> [{"itemID":131875},{"itemID":57388},{"itemID":57387},{"itemID":57386}]
 #29080
 .\questDB-20201024.json
 - ADDED: lvl = [1]
 #29081
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: g: [{"itemID":2691},{"itemID":2186},{"itemID":131924}] --> [{"itemID":131924},{"itemID":2186},{"itemID":11192},{"itemID":2691}]
 #29082
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: g: [{"itemID":131874},{"itemID":57257}] --> [{"itemID":57256},{"itemID":57257},{"itemID":131874},{"itemID":57258}]
 #29083
 .\questDB-20201024.json
 - ADDED: lvl = [1]
@@ -50525,6 +50677,8 @@ Comparing .\questDB-20210203.json
 #30122
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: lvl: [1] --> [10]
 #30123
 .\questDB-20201014.json
 - CHANGE: lvl: 81 --> 15
@@ -54416,11 +54570,15 @@ Comparing .\questDB-20210203.json
 - CHANGE: races: [1,31] --> [1,32]
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: g: [{"itemID":118532}] --> [{"itemID":57255},{"itemID":118532},{"itemID":57253},{"itemID":131899}]
 #31140
 .\questDB-20201014.json
 - CHANGE: races: [1,31] --> [1,32]
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: g: [{"itemID":57387}] --> [{"itemID":131875},{"itemID":57388},{"itemID":57387},{"itemID":57386}]
 #31143
 .\questDB-20201014.json
 - CHANGE: races: [1,31] --> [1,32]
@@ -54431,6 +54589,8 @@ Comparing .\questDB-20210203.json
 - CHANGE: races: [1,31] --> [1,32]
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: g: [{"itemID":2186}] --> [{"itemID":131924},{"itemID":2186},{"itemID":11192},{"itemID":2691}]
 #31145
 .\questDB-20201014.json
 - CHANGE: races: [1,31] --> [1,32]
@@ -55806,6 +55966,8 @@ Comparing .\questDB-20210203.json
 - ADDED: isDaily = 1
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: lvl: [1] --> [10]
 #31548
 .\questDB-20201024.json
 - ADDED: lvl = [1]
@@ -55835,56 +55997,78 @@ Comparing .\questDB-20210203.json
 - ADDED: isDaily = 1
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: lvl: [1] --> [10]
 #31558
 .\questDB-20201014.json
 - ADDED: isDaily = 1
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: lvl: [1] --> [10]
 #31559
 .\questDB-20201014.json
 - ADDED: isDaily = 1
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: lvl: [1] --> [10]
 #31560
 .\questDB-20201014.json
 - ADDED: isDaily = 1
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: lvl: [1] --> [10]
 #31561
 .\questDB-20201014.json
 - ADDED: isDaily = 1
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: lvl: [1] --> [10]
 #31562
 .\questDB-20201014.json
 - ADDED: isDaily = 1
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: lvl: [1] --> [10]
 #31563
 .\questDB-20201014.json
 - ADDED: isDaily = 1
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: lvl: [1] --> [10]
 #31564
 .\questDB-20201014.json
 - ADDED: isDaily = 1
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: lvl: [1] --> [10]
 #31565
 .\questDB-20201014.json
 - ADDED: isDaily = 1
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: lvl: [1] --> [10]
 #31566
 .\questDB-20201014.json
 - ADDED: isDaily = 1
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: lvl: [1] --> [10]
 #31567
 .\questDB-20201014.json
 - ADDED: isDaily = 1
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: lvl: [1] --> [10]
 #31568
 .\questDB-20201024.json
 - ADDED: lvl = [1]
@@ -56586,6 +56770,8 @@ Comparing .\questDB-20210203.json
 - ADDED: isDaily = 1
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: lvl: [1] --> [10]
 #31754
 .\questDB-20201014.json
 - ADDED: isDaily = 1
@@ -63472,6 +63658,8 @@ Comparing .\questDB-20210203.json
 - ADDED: isDaily = 1
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: lvl: [1] --> [10]
 #34775
 .\questDB-20201014.json
 - CHANGE: lvl: 90 --> 10
@@ -70819,6 +71007,8 @@ Comparing .\questDB-20210203.json
 - ADDED: isDaily = 1
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: lvl: [1] --> [10]
 #37276
 .\questDB-20201014.json
 - CHANGE: lvl: 96 --> 30
@@ -71055,6 +71245,8 @@ Comparing .\questDB-20210203.json
 #37446
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- ADDED: r = 1
 #37447
 .\questDB-20201014.json
 - CHANGE: lvl: 103 --> 10
@@ -73467,6 +73659,8 @@ Comparing .\questDB-20210203.json
 - ADDED: isDaily = 1
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: lvl: [1] --> [10]
 #38402
 .\questDB-20201014.json
 - CHANGE: lvl: 100 --> 40
@@ -79266,6 +79460,8 @@ Comparing .\questDB-20210203.json
 - ADDED: isDaily = 1
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: lvl: [1] --> [45]
 #40755
 .\questDB-20201014.json
 - CHANGE: lvl: 98 --> 10
@@ -85244,6 +85440,8 @@ Comparing .\questDB-20210203.json
 - ADDED: repeatable = 1
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: lvl: [1] --> [45]
 #43750
 .\questDB-20201014.json
 - CHANGE: lvl: 101 --> 10
@@ -87245,6 +87443,8 @@ Comparing .\questDB-20210203.json
 - CHANGE: lvl: 15 --> 7
 .\questDB-20201024.json
 - CHANGE: lvl: 7 --> [7]
+.\questDB-20210629.json
+- CHANGE: lvl: [7] --> [10]
 #44940
 .\questDB-20201014.json
 - CHANGE: lvl: 98 --> 10
@@ -106947,6 +107147,8 @@ Comparing .\questDB-20210203.json
 - EMPTY: lvl
 .\questDB-20210203.json
 - CHANGE: lvl: 120 --> [60]
+.\questDB-20210629.json
+- CHANGE: g: [{"itemID":168195},{"itemID":168197},{"itemID":168196}] --> [{"itemID":168195},{"itemID":168196}]
 #55661
 .\questDB-20201014.json
 - ADDED: isDaily = 1
@@ -107953,6 +108155,8 @@ Comparing .\questDB-20210203.json
 - ADDED: isDaily = 1
 .\questDB-20201024.json
 - ADDED: lvl = [1]
+.\questDB-20210629.json
+- CHANGE: lvl: [1] --> [50]
 #56043
 .\questDB-20201014.json
 - CHANGE: lvl: 120 --> 50
@@ -114013,12 +114217,16 @@ Comparing .\questDB-20210203.json
 #59076
 .\questDB-20201024.json
 - CHANGE: lvl: 50 --> [50]
+.\questDB-20210629.json
+- CHANGE: lvl: [50] --> [60]
 #59077
 .\questDB-20201024.json
 - CHANGE: lvl: 50 --> [50]
 #59078
 .\questDB-20201024.json
 - CHANGE: lvl: 50 --> [50]
+.\questDB-20210629.json
+- CHANGE: lvl: [50] --> [60]
 #59079
 .\questDB-20201024.json
 - CHANGE: lvl: 50 --> [50]
@@ -115810,6 +116018,8 @@ Comparing .\questDB-20210203.json
 .\questDB-20201216.json
 - EMPTY: _area
 - ADDED: _category = "Legendary Crafting"
+.\questDB-20210629.json
+- EMPTY: _category
 #60269
 .\questDB-20201024.json
 - CHANGE: lvl: 50 --> [50]
@@ -115819,6 +116029,8 @@ Comparing .\questDB-20210203.json
 .\questDB-20201216.json
 - EMPTY: _area
 - ADDED: _category = "Legendary Crafting"
+.\questDB-20210629.json
+- EMPTY: _category
 #60270
 .\questDB-20201024.json
 - CHANGE: lvl: 50 --> [50]
@@ -115846,6 +116058,8 @@ Comparing .\questDB-20210203.json
 .\questDB-20201216.json
 - EMPTY: _area
 - ADDED: _category = "Legendary Crafting"
+.\questDB-20210629.json
+- EMPTY: _category
 #60274
 .\questDB-20201024.json
 - CHANGE: lvl: 60 --> [60]
@@ -118716,26 +118930,36 @@ Comparing .\questDB-20210203.json
 - CHANGE: lvl: 60 --> [60]
 .\questDB-20201123.json
 - ADDED: g = [{"itemID":184315}]
+.\questDB-20210629.json
+- EMPTY: g
 #62285
 .\questDB-20201024.json
 - CHANGE: lvl: 60 --> [60]
 .\questDB-20201123.json
 - ADDED: g = [{"itemID":184315}]
+.\questDB-20210629.json
+- EMPTY: g
 #62286
 .\questDB-20201024.json
 - CHANGE: lvl: 60 --> [60]
 .\questDB-20201123.json
 - ADDED: g = [{"itemID":184315}]
+.\questDB-20210629.json
+- EMPTY: g
 #62287
 .\questDB-20201024.json
 - CHANGE: lvl: 60 --> [60]
 .\questDB-20201123.json
 - ADDED: g = [{"itemID":184315}]
+.\questDB-20210629.json
+- EMPTY: g
 #62288
 .\questDB-20201024.json
 - CHANGE: lvl: 60 --> [60]
 .\questDB-20201123.json
 - ADDED: g = [{"itemID":184315}]
+.\questDB-20210629.json
+- EMPTY: g
 #62289
 .\questDB-20201024.json
 - CHANGE: lvl: 60 --> [60]
@@ -119484,6 +119708,8 @@ Comparing .\questDB-20210203.json
 .\questDB-20201216.json
 - EMPTY: _area
 - ADDED: _category = "Legendary Crafting"
+.\questDB-20210629.json
+- EMPTY: _category
 #62704
 .\questDB-20201024.json
 - CHANGE: lvl: 50 --> [50]
@@ -119516,6 +119742,8 @@ Comparing .\questDB-20210203.json
 .\questDB-20201216.json
 - EMPTY: _area
 - ADDED: _category = "Legendary Crafting"
+.\questDB-20210629.json
+- EMPTY: _category
 #62723
 .\questDB-20201024.json
 - CHANGE: lvl: 50 --> [50]
