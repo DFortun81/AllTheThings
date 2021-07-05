@@ -423,8 +423,11 @@ _.Zones =
 					},
 				}),
 				n(162849, {	-- Morguliax <Lord of Decapitation>
-				--	["coord"] = { 16.6, 50.6, THE_MAW },	-- TODO; verify that this is a perm move and not just during NF assault
-					["coord"] = { 19.0, 43.8, THE_MAW },
+					["description"] = "Spawns next to the Herald of Loss when the Night Fae assault is active.",
+					["coords"] = {
+						{ 16.6, 50.6, THE_MAW },
+						{ 19.0, 43.8, THE_MAW },	-- Night Fae assault spawnpoint
+					},
 					["questID"] = 60987,
 					["isDaily"] = true,
 					["g"] = {
