@@ -9643,6 +9643,8 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(111076),	-- Primal Gladiator's Staff (H), none elite
 				i(115603),	-- Primal Gladiator's Staff (A), none elite
 				i(115854),	-- Primal Gladiator's Staff
+				i(111073),	-- Primal Gladiator's Heavy Crossbow
+				i(115600),	-- Primal Gladiator's Heavy Crossbow
 			}),
 			-- All class gear is added 6.2.0 but have Primal tagged
 			cl(DEATHKNIGHT, {

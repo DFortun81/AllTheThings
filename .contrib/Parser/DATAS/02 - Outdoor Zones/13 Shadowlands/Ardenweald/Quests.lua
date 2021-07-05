@@ -875,4 +875,18 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(58732),	-- The Stuff of Memories
 		q(58173),	-- What Are They Hiding?
 	}),
+	n(-10100, {	-- Shadowlands
+		n(-319, {	-- Weapons
+			i(179503),	-- Ardenweald Quest Dagger
+			i(179504),	-- Ardenweald Quest Dagger
+			i(179505),	-- Ardenweald Quest Dagger
+			i(179506),	-- Ardenweald Quest Dagger
+			i(179507),	-- Ardenweald Quest Dagger
+			i(176042),	-- Ardenweald Quest Offhand
+			i(176043),	-- Ardenweald Quest Offhand
+			i(176044),	-- Ardenweald Quest Offhand
+			i(176045),	-- Ardenweald Quest Offhand
+			i(176046),	-- Ardenweald Quest Offhand
+		}),
+	}),
 });

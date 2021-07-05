@@ -3047,119 +3047,79 @@ _.NeverImplemented =
 		i(161118),	-- Marrow Shatter (TW Vendor/Tw drop?)
 	}),
 	n(-319, {	-- Weapons
-		n(-347, {	-- Bows
+		n(-346, {	-- Bows
+			-- Load In Game
 			i(5748),	-- Centaur Longbow
-			i(108783),	-- Unknown
-			i(167144),	-- Unknown
-			i(154971),	-- Howdah-Rider's Bow
 			i(115294),	-- Spectral Longbow
-			i(109283),	-- 6.0 QA Combat Test Hunter Bow
-			i(140717),	-- Marksman Recurve Bow
-			i(150612),	-- Marksman Recurve Bow
-			i(158562),	-- Howdah-Rider's Bow
-			i(167141),	-- Unknown
-			i(177114),	-- [Honorbound Longbow]
-			i(177128),	-- [7th Legionnaire's Longbow]
-			i(178469),	--
-			i(111783),	-- Irontree Bow (Cata version 55306 is in game but this version doesn't seem to have ever existed)
-			i(181374),	-- Sylvanas Shadowlands Bow
 			i(182563),	-- NPE Weapon Bow
+			-- ItemID/Retrieving
+			i(108783),	-- 7.0 PH Weapon - Bow Agi
+			i(165266),	-- Fallback Weapon - Bow
+			i(167144),	-- QA Combat Test Hunter Bow
+			i(109283),	-- 6.0 QA Combat Test Hunter Bow
+			i(111783),	-- Irontree Bow (Cata version 55306 is in game but this version doesn't seem to have ever existed)
 		}),
-		n(-346, {	-- Crossbows
-			i(108784),	-- Unknown
-			i(153400),	-- [Scalawag's Bolt-Thrower]
-			i(111073),	-- Unknown
-			i(165267),	-- Unknown
-			i(165271),	-- Unknown
-			i(115600),	-- Unknown
-			i(158503),	-- Scalawag's Bolt Thrower
+		n(-347, {	-- Crossbows
+			-- ItemID/Retrieving
+			i(108784),	-- 7.0 PH Weapon - Crossbow Agi
+			i(165267),	-- Fallback Weapon - Crossbow
 		}),
 		n(-333, {	-- Daggers
-			i(108785),	-- Unknown
+			-- Load In Game
+			i(62329),	-- Dire Slasher (never added)
+			i(115295),	-- Spectral Dagger
+			i(115446),	-- Brianium Dagger
+			i(147908),	-- 6.0 Weapon - Knife_1h_DraenorRaid_D_01 - Jade (added i BFA)
 			i(182564),	-- NPE Weapon Dagger AGI
 			i(182573),	-- NPE Weapon Dagger AGI 2
-			i(115295),	-- Spectral Dagger
-			i(108786),	-- Unknown
-			i(167148),	-- Unknown
-			i(177719),	--
-			i(177720),	--
-			i(177721),	--
-			i(177722),	--
-			i(177723),	--
-			i(177724),	--
-			i(179503),	--
-			i(179504),	--
-			i(179505),	--
-			i(179506),	--
-			i(179507),	--
-			i(180863),	--
-			i(109269),	-- Unknown
-			i(109292),	-- Unknown
+			-- ItemID/Retrieving
 			i(38247),	-- Entrail Render
-			i(52969),	-- Heartache Dagger	-- 52965 got added
-			i(62329),	-- Dire Slasher (never added)
-			i(109309),	-- Unknown
-			i(109387),	-- Unknown
-			i(109482),	-- Unknown
-			i(147908),	-- 6.0 Weapon - Knife
-			i(159534),	-- Unknown
-			i(165268),	-- Unknown
-			i(115446),	-- Brianium Dagger
+			i(108785),	-- 7.0 PH Weapon - 1H Dagger Agi
+			i(108786),	-- 7.0 PH Weapon - 1H Dagger Int
+			i(109269),	-- QA Combat Test Agility Dagger 2
+			i(109292),	-- QA Combat Test Agility Dagger 3
+			i(109309),	-- QA Combat Test Agility Dagger 1
+			i(109387),	-- QA Combat Test Caster Dagger 2
+			i(109482),	-- QA Combat Test Caster Dagger 1
+			i(159534),	-- 8.0 PH - Weapon - Dagger
+			i(165268),	-- Fallback Weapon - 1H Dagger
+			i(167148),	-- QA Combat Test Dagger 1
+			i(180863),	-- Silent Lady's Kiss
 		}),
 		n(-348, {	-- Fist Weapons
-			i(38243),	-- Ravaging Steelfist
-			i(108787),	-- Unknown
-			i(171191),	-- owen test
-			i(171192),	-- owen test
+			-- Load In Game
 			i(115797),	-- test fist weapon
-			i(108788),	-- Unknown
-			i(108789),	-- Unknown
-			i(109361),	-- Unknown
-			i(109535),	-- Unknown
-			i(109534),	-- Unknown
-			i(165269),	-- unknown
-			i(159894),	-- honorable combatant's strikter
-			i(159895),	-- honorable combatant's cestus
-			i(161973),	-- honorable combatant's striker
-			i(161974),	-- honorable combatant's cestus
+			-- ItemID/Retrieving
+			i(38243),	-- Ravaging Steelfist
+			i(108787),	-- 7.0 PH Weapon - 1H Fist Int
+			i(171191),	-- Owen Test (Season 8 Elite? Added 8.2.5)
+			i(171192),	-- Owen Test (Season 8 Elite? Added 8.2.5)
+			i(108788),	-- 7.0 PH Weapon - 1H Fist Str
+			i(108789),	-- 7.0 PH Weapon - 1H Fist Agi
+			i(109361),	-- 6.0 QA Combat Test Agility Fist Weapon (MH)
+			i(109535),	-- 6.0 QA Combat Test Agility Fist Weapon (MH) 3
+			i(109534),	-- 6.0 QA Combat Test Agility Fist Weapon (MH) 2
+			i(165269),	-- Fallback Weapon - Fist
 		}),
 		n(-345, {	-- Guns
-			i(49455),	-- Blunderbuss of Deforestation
+			-- ItemID/Retrieving
 			i(38246),	-- Skull-Forged Blunderbuss
-			i(161296),	-- Autumnvale Hunting Rifle (they added a different version)
-			i(165270),	-- Unknown
-			i(165266),	-- Unknown
-			i(108790),	-- Unknown
-			i(109491),	-- Unknown
-			i(109529),	-- Unknown
+			i(49455),	-- Blunderbuss of Deforestation
+			i(108790),	-- 7.0 PH Weapon - Gun Agi
+			i(109491),	-- 6.0 QA Combat Test Hunter Gun
+			i(109529),	-- 6.0 QA Combat Test Hunter Gun No Variance
+			i(165270),	-- Fallback Weapon - Gun
 
 		}),
 		n(-331, {	-- Held in Offhand
-			i(176042),	--
-			i(176043),	--
-			i(176044),	--
-			i(176045),	--
-			i(176046),	--
-			i(177725),	--
-			i(177726),	--
-			i(177727),	--
-			i(177728),	--
-			i(177729),	--
-			i(177730),	--
-			i(93440),	-- Crafted Dreadful Gladiator's Endgame
-			i(93450),	-- Crafted Dreadful Gladiator's Reprieve
-			i(159941),	-- Unknown
-			i(153642),	-- Unknown
-			i(161933),	-- Unknown
-			i(161937),	-- Unknown
-			i(165277),	-- Unknown
-			i(108810),	-- Unknown
-			i(109273),	-- Unknown
-			i(109301),	-- Unknown
-			i(109311),	-- Unknown
-			i(109380),	-- Unknown
-			i(167146),	-- Unknown
-			i(167998),	-- Dark Iron Tankard
+			-- ItemID/Retrieving
+			i(108810),	-- 7.0 PH Offhand - Offhand Int
+			i(109273),	-- QA Combat Test Caster Offhand 1
+			i(109301),	-- QA Combat Test Caster Offhand 2
+			i(109311),	-- QA Combat Test Caster Offhand 3
+			i(109380),	-- QA Combat Test Caster Offhand 4
+			i(165277),	-- Fallback Weapon - Offhand
+			i(167146),	-- QA Combat Test Caster Offhand 1
 		}),
 		n(-334, {	-- One-Handed Axes
 			i(68050),	-- Shatterscale Mightfish
@@ -3211,6 +3171,7 @@ _.NeverImplemented =
 			i(90331),	-- Face Smasher Warhammer
 			i(136593),	-- Doomhammer Offhand Appearance Record (referenced by actual item)
 			i(174228),	-- Gavel of the Oasis
+			i(167141),	-- QA Combat Test 1h Mace
 		}),
 		n(-338, {	-- One-Handed Swords
 			i(134586),	-- Vanguard Hatchet
@@ -3261,6 +3222,7 @@ _.NeverImplemented =
 			i(109456),	-- Unknown
 			i(153401),	-- [Whaler's Pike]
 			i(154972),	-- [Tomb-Rustler's Polearm]
+			i(165271),	-- Fallback Weapon - Polearm
 		}),
 		n(-387,	{	-- Relics
 			i(132252),	-- Owen Test Relic

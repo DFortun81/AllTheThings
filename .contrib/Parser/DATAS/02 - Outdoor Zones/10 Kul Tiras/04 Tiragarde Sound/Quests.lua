@@ -1527,6 +1527,9 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(161291),	-- Grimestone Spellmace
 			i(161292),	-- Grimestone Spellmaul
 			i(158579),	-- Scalawag's Warglaive
+			i(153400),	-- Scalawag's Bolt-Thrower
+			i(158503),	-- Scalawag's Bolt Thrower
+			i(161933),	-- Manual of Reverse Wounding
 		}),
 		n(-322, { -- Cloaks
 			i(155091),	-- Thovas-Explorer's Cape

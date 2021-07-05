@@ -2045,6 +2045,8 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(161311),	-- Crescent of Zak'rajan
 			i(161286),	-- Faithless Dinorider's Shield
 			i(161287),	-- Faithless Wingrider's Shield
+			i(158562),	-- Howdah-Rider's Bow
+			i(153642),	-- Manual of Reverse Wounding
 		}),
 	}),
 });

@@ -847,5 +847,9 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		prof(ENGINEERING, {
 			i(81143),	-- Avanced Deepdive Helmet (Mop Beta Only)
 		}),
+		prof(INSCRIPTION, {
+			i(93440),	-- Crafted Dreadful Gladiator's Endgame
+			i(93450),	-- Crafted Dreadful Gladiator's Reprieve
+		}),
 	}),
 });

@@ -96,9 +96,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_LOVEINTHEAIR}, {
 });
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	holiday(235468, {	-- Love is in the Air
-		n(-319, {	-- Weapons
-			i(147374),	-- Wooden Toy Shield
-			i(147377),	-- Wooden Toy Shield
-		}),
+		i(147374),	-- Wooden Toy Shield
+		i(147377),	-- Wooden Toy Shield
 	}),
 });

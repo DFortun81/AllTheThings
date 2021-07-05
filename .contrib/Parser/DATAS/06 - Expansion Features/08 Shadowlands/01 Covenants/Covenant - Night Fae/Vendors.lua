@@ -1958,6 +1958,18 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				}),
 			}),
 			n(-319, {	-- Weapons
+				i(177719),	-- Ardenweald Covenant Dagger
+				i(177720),	-- Ardenweald Covenant Dagger
+				i(177721),	-- Ardenweald Covenant Dagger
+				i(177722),	-- Ardenweald Covenant Dagger
+				i(177723),	-- Ardenweald Covenant Dagger
+				i(177724),	-- Ardenweald Covenant Dagger
+				i(177725),	-- Ardenweald Covenant Offhand
+				i(177726),	-- Ardenweald Covenant Offhand
+				i(177727),	-- Ardenweald Covenant Offhand
+				i(177728),	-- Ardenweald Covenant Offhand
+				i(177729),	-- Ardenweald Covenant Offhand
+				i(177730),	-- Ardenweald Covenant Offhand
 				i(173932),	-- Ardenweald Covenant Fist Weapon
 				i(179572),	-- Ardenweald Covenant Fist Weapon
 				i(179573),	-- Ardenweald Covenant Fist Weapon

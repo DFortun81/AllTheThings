@@ -357,5 +357,9 @@ _.HiddenQuestTriggers = {
 };
 
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	i(187137),	-- Research Report: Relic Finding Techniques (this effect is now granted from a spell learned from quest 64368)
+	n(-10100, {	-- Shadowlands
+		n(-494, {	-- Misc
+			i(187137),	-- Research Report: Relic Finding Techniques (this effect is now granted from a spell learned from quest 64368)
+		}),
+	}),
 });

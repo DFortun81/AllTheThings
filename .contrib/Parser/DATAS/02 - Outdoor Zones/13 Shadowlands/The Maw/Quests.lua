@@ -1030,8 +1030,10 @@ _.HiddenQuestTriggers = {
 };
 
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	f(55, {		-- Consumables
-		i(185974),	-- Bahmeht Chain Link (PTR only)
+	n(-10100, {	-- Shadowlands
+		f(55, {		-- Consumables
+			i(185974),	-- Bahmeht Chain Link (PTR only)
+		}),
 	}),
 	n(QUESTS, {
 		q(60902),	-- A Dark Song

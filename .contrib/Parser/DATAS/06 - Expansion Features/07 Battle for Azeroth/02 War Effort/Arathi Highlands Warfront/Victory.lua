@@ -288,6 +288,8 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				}),
 			}),
 			n(-319, {	-- Weapons
+				i(177114),	-- Honorbound Longbow
+				i(177128),	-- 7th Legionnaire's Longbow
 				i(177118),	-- Honorbound Pigsticker
 				i(177132),	-- 7th Legionnaire's Halberd
 				i(177113),	-- Honorbound Skullcleaver

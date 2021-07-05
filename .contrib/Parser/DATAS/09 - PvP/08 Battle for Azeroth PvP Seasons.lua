@@ -1638,6 +1638,14 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(166969),	-- Dread Gladiator's Plate Armguards
 				}),
 			}),
+			n(-319, {	-- Weapons
+				i(159894),	-- Honorable Combatant's Striker
+				i(159895),	-- Honorable Combatant's Cestus
+				i(161973),	-- Honorable Combatant's Striker
+				i(161974),	-- Honorable Combatant's Cestus
+				i(159941),	-- Honorable Combatant's Inked Vessel
+				i(161937),	-- Honorable Combatant's Inked Vessel
+			}),
 		}),
 		n(-690, {	-- Sinister Gladiator: Battle for Azeroth Season 2
 			n(-319, {	-- Weapons

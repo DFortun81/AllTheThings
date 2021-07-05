@@ -467,3 +467,8 @@ _.Holidays =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	holiday(235442, {	-- Brewfest
+		i(167998),	-- Dark Iron Tankard
+	}),
+});

@@ -211,3 +211,11 @@ _.GroupFinder =
 		},
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10, {	-- Party Sync
+		n(-319, {	-- Weapons
+			i(140717),	-- Marksman's Recurve Bow
+			i(150612),	-- Marksman's Recurve Bow
+		}),
+	}),
+});
