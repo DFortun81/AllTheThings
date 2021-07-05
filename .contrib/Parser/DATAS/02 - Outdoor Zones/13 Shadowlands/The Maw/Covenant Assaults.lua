@@ -657,7 +657,7 @@ _.Zones =
 											["cr"] = 179476,	-- Lost Sybille
 										}),
 										crit(7, {	-- Vulca
-											["coord"] = { 27.3, 20.1, THE_MAW },
+											["coord"] = { 27.3, 20.2, THE_MAW },
 											["cr"] = 179477,	-- Vulca
 										}),
 										crit(8, {	-- Iven

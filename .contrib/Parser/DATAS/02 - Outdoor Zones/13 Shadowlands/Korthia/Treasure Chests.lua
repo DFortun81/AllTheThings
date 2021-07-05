@@ -281,6 +281,7 @@ _.Zones =
 						{ 54.0, 72.8, KORTHIA },
 						{ 56.4, 69.5, KORTHIA },
 						{ 56.5, 74.7, KORTHIA },
+						{ 47.9, 66.8, KORTHIA },
 					},
 					["g"] = {
 						i(187097),	-- Construct's Shoulderplates
@@ -301,7 +302,7 @@ _.Zones =
 						--	TODO: commented are unconfirmed
 							i(185858),	-- Korthian Caretaker's Crest
 							i(186666),	-- Korthian Caretaker's Crown
-						--	i(185871),	-- Razorwing Scale Coif
+							i(185871),	-- Razorwing Scale Coif
 						--	i(186743),	-- Razorwing Scale Hood
 							i(186736),	-- Shardhide Leather Cowl
 							i(185864),	-- Shardhide Leather Hood

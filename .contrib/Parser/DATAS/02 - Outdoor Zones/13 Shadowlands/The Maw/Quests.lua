@@ -1024,7 +1024,7 @@ _.HiddenQuestTriggers = {
 	q(64695),	-- triggered when killing Algel the Haunter / Gruukuuek the Elder
 	q(64696),	-- triggered when killing Promathiz / Sentinel Shakorzeth
 	q(64697),	-- triggered when killing Malleus Grakizz / Sentinel Shakorzeth / Versya the Damned
-	q(64698),	-- triggered when killing Intercessor Razzra
+	q(64698),	-- triggered when killing Intercessor Razzra / Zul'gath the Flayer (4th Tormentor of week?)
 
 	-- q(64121),	-- triggered when killing Sentinel Shakorzeth (somehow it + Kazj the Sentinel were both up at once, this was only after killing Shakorzeth, and then Kazj did not trigger an additional questID at all)
 };

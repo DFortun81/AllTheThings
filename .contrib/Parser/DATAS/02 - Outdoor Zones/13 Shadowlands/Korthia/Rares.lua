@@ -252,6 +252,7 @@ _.Zones =
 						}),
 						i(187035),	-- Cold Burden of the Damned
 						i(187242),	-- Exterminator's Crest of the Damned
+						i(187382),	-- Mawsworn Exterminator's Hauberk
 						i(187241),	-- Watchful Eye of the Damned
 						--
 						i(187382),	-- Mawsworn Exterminator's Hauberk
