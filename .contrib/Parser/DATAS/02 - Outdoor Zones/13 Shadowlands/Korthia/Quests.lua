@@ -8,7 +8,7 @@ _.Zones =
 		m(KORTHIA, {
 			n(QUESTS, {
 			--	TODO: 64567, "The Missing Scholar," triggered when turning in #63732, "Interrupt the Interrogations."  based on quest text on wowhead, this appears to be an alternate way to start the research chain - not sure if that means at a certain point if you haven't looted a single treasure/rare to get "Researching Korthian Relics," you will at some point receive this alternate version?????  it's also possible it's just an NYI quest.  i never ran into it on PTR; originally you picked up "Interrupt the Interrogations" without a preceding quest and then at one point they added "Researching Korthian Relics" to get you there more naturally.
-			
+
 			--	confirmed on live
 				q(63755, {	-- A Matter of Urgency
 					["sourceQuests"] = { 64106 },	-- A Unified Effort
@@ -366,6 +366,13 @@ _.Zones =
 						63918,	-- Obelisk of Dark Tidings
 						63916,	-- Sack of Strange Soil
 					},
+					["minReputation"] = { 2472, 14000 },	-- Tier 4
+					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+					["coord"] = { 62.7, 22.5, KORTHIA },
+				}),
+				q(64368, {	-- Relic Efficiency
+					-- no known source quests, would need to reach tier 4 without doing other quests I assume...
+					["minReputation"] = { 2472, 14000 },	-- Tier 4
 					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 					["coord"] = { 62.7, 22.5, KORTHIA },
 				}),

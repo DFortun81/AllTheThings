@@ -49,12 +49,6 @@ _.Zones =
 						i(187138, {	-- Research Report: First Alloys
 							["cost"] = { { "c", 1931, 8000 } },	-- 8,000x Catalogued Research
 						}),
-						--[[ does not show on the vendor after first unlocking rep.  uncomment if its visibility is determined by reaching higher rep levels or some other factor
-						i(187137, {	-- Research Report: Relic Finding Techniques
-							["questID"] = 64368,
-							["cost"] = { { "c", 1931, 5000 } },	-- 5,000x Catalogued Research
-						}),
-						--]]
 						i(187145, {	-- Treatise: Recognizing Stygia and its Uses
 							["questID"] = 64307,
 							["cost"] = { { "c", 1931, 800 } },	-- 800x Catalogued Research
@@ -92,6 +86,8 @@ _.Zones =
 						i(186991, {	-- Transmute: Stones to Ore
 							["cost"] = { { "c", 1931, 2000 } },	-- 2,000x Catalogued Research
 						}),
+						-- Gear
+						i(187534),	-- Korthite Crystal Waistguard
 					},
 				}),
 				n(179321, {	-- Duchess Mynx <Death's Advance Quartermaster>
@@ -359,3 +355,7 @@ _.HiddenQuestTriggers = {
 --	q(),	-- learning Ensemble: Renathal's Battlefield Attire
 	q(63635),	-- learning Ensemble: Renathal's Field Inquisitor's Vestments
 };
+
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	i(187137),	-- Research Report: Relic Finding Techniques (this effect is now granted from a spell learned from quest 64368)
+});

@@ -257,5 +257,11 @@ _.Factions =
 		faction(2446),	-- Baroness Vashj
 		faction(2454),	-- Choofa
 		]]
+		faction(2470, {	-- Death's Advance
+			["timeline"] = { "added 9.1.0.38312" },
+		}),
+		faction(2472, {	-- The Archivist's Codex
+			["timeline"] = { "added 9.1.0.38312" },
+		}),
 	}),
 };
