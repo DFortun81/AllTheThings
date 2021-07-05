@@ -15293,9 +15293,10 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 						if group.achievementID then
 							if group.criteriaID then
 								if group.parent.achievementID then
-									group = app.CreateAchievement(group.parent.achievementID,
+									local parent = group.parent;
+									group = app.CreateAchievement(parent.achievementID,
 										{ g = { group }, total = group.total, progress = group.progress,
-											u = group.parent.u, races = group.parent.races, r = group.r, c = group.parent.c, nmc = group.parent.nmc, nmr = group.parent.nmr });
+											u = parent.u, races = parent.races, r = group.r, c = parent.c, nmc = parent.nmc, nmr = parent.nmr });
 								else
 									group = app.CreateAchievement(group.achievementID,
 										{ g = { group }, total = group.total, progress = group.progress,
@@ -15303,8 +15304,9 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 								end
 							end
 						elseif group.criteriaID and group.parent.achievementID then
-							group = app.CreateAchievement(group.parent.achievementID, { g = { group }, total = group.total, progress = group.progress,
-								u = group.parent.u, races = group.parent.races, r = group.r, c = group.parent.c, nmc = group.parent.nmc, nmr = group.parent.nmr });
+							local parent = group.parent;
+							group = app.CreateAchievement(parent.achievementID, { g = { group }, total = group.total, progress = group.progress,
+								u = parent.u, races = parent.races, r = group.r, c = parent.c, nmc = parent.nmc, nmr = parent.nmr });
 						end
 
 						-- Common Custom NPCs used for headers
