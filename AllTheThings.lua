@@ -1196,18 +1196,164 @@ local function BuildSourceTextForTSM(group, l)
 	end
 	return L["TITLE"];
 end
-local CreateObject;
--- does not actually Clone Data, but rather returns a new table whose __index is the source table
-local function CloneData(data)
-	local clone = {};
-	if data then
-		clone = setmetatable(clone, getmetatable(data));
-		for key,value in pairs(data) do
-			rawset(clone, key, value);
-			if key == "parent" then
-				rawset(clone, "sourceParent", value);
+-- merges the properties of the t group into the g group, making sure not to alter the filterability of the group
+local MergeProperties = function(g, t, noReplace)
+	if g and t then
+		if noReplace then
+			for k,v in pairs(t) do
+				-- certain keys should never transfer to the merge group directly
+				if k == "parent" then
+					if not rawget(g, "sourceParent") then
+						rawset(g, "sourceParent", v);
+					end
+				elseif k ~= "expanded" and
+					k ~= "indent" and
+					k ~= "g" then
+					if not rawget(g, k) then
+						rawset(g, k, v);
+					end
+				end
+			end
+		else
+			for k,v in pairs(t) do
+				-- certain keys should never transfer to the merge group directly
+				if k == "parent" then
+					rawset(g, "sourceParent", v);
+				elseif k ~= "expanded" and
+					k ~= "indent" and
+					k ~= "g" then
+					rawset(g, k, v);
+				end
 			end
 		end
+		-- only copy metatable to g if another hasn't been set already
+		if not getmetatable(g) and getmetatable(t) then
+			setmetatable(g, getmetatable(t));
+		end
+	end
+end
+-- The base logic for turning a Table of data into an 'object' that provides dynamic information concerning the type of object which was identified
+-- based on the priority of possible key values
+local CreateObject;
+CreateObject = function(t)
+	if not t then return {}; end
+
+	-- already an object, so need to create a new instance of the same data
+	if t.key then
+		local s = {};
+		-- if app.DEBUG_PRINT then print("CreateObject from key via merge",t.key,t[t.key], t, s); end
+		MergeProperties(s, t);
+		-- include the raw g since it will be replaced at the end with new objects
+		s.g = t.g;
+		t = s;
+		-- if app.DEBUG_PRINT then print("Merge done",s.key,s[s.key], t, s); end
+	-- is it an array of raw datas which needs to be turned into ana rray of usable objects
+	elseif t[1] then
+		local s = {};
+		-- array
+		-- if app.DEBUG_PRINT then print("CreateObject on array",#t); end
+		for _,o in ipairs(t) do
+			tinsert(s, CreateObject(o));
+		end
+		return s;
+	-- use the highest-priority piece of data which exists in the table to turn it into an object
+	else
+		if t.mapID then
+			t = app.CreateMap(t.mapID, t);
+		elseif t.s then
+			t = app.CreateItemSource(t.s, t.itemID, t);
+		elseif t.encounterID then
+			t = app.CreateEncounter(t.encounterID, t);
+		elseif t.instanceID then
+			t = app.CreateInstance(t.instanceID, t);
+		elseif t.currencyID then
+			t = app.CreateCurrencyClass(t.currencyID, t);
+		elseif t.speciesID then
+			t = app.CreateSpecies(t.speciesID, t);
+		elseif t.objectID then
+			t = app.CreateObject(t.objectID, t);
+		elseif t.followerID then
+			t = app.CreateFollower(t.followerID, t);
+		elseif t.illusionID then
+			t = app.CreateIllusion(t.illusionID, t);
+		elseif t.professionID then
+			t = app.CreateProfession(t.professionID, t);
+		elseif t.categoryID then
+			t = app.CreateCategory(t.categoryID, t);
+		elseif t.criteriaID then
+			t = app.CreateAchievementCriteria(t.criteriaID, t);
+		elseif t.achID or t.achievementID then
+			t = app.CreateAchievement(t.achID or t.achievementID, t);
+		elseif t.recipeID then
+			t = app.CreateRecipe(t.recipeID, t);
+		elseif t.spellID then
+			t = app.CreateRecipe(t.spellID, t);
+		elseif t.itemID then
+			if t.isToy then
+				t = app.CreateToy(t.itemID, t);
+			else
+				t = app.CreateItem(t.itemID, t);
+			end
+		elseif t.classID then
+			t = app.CreateCharacterClass(t.classID, t);
+		elseif t.npcID or t.creatureID then
+			t = app.CreateNPC(t.npcID or t.creatureID, t);
+		elseif t.headerID then
+			t = app.CreateNPC(t.headerID, t);
+		elseif t.questID then
+			if t.isVignette then
+				t = app.CreateVignette(t.questID, t);
+			else
+				t = app.CreateQuest(t.questID, t);
+			end
+		elseif t.tierID then
+			t = app.CreateTier(t.tierID, t);
+		elseif t.unit then
+			t = app.CreateUnit(t.unit, t);
+		else
+			-- if app.DEBUG_PRINT then print("CreateObject by value, no specific object type"); app.PrintTable(t); end
+			t = setmetatable({}, { __index = t });
+		end
+	end
+
+	-- if app.DEBUG_PRINT then print("CreateObject key/value",t.key,t[t.key]); end
+	-- if g, then replace each object in all sub groups with an object version of the table
+	if t.g then
+		local sourceg = t.g;
+		t.g = {};
+		-- if app.DEBUG_PRINT then print("CreateObject for sub-groups of",t.key,t[t.key]); end
+		for i,o in pairs(sourceg) do
+			t.g[i] = CreateObject(o);
+		end
+	end
+
+	return t;
+end
+-- Clones the data within the group without any sub-groups
+-- local function CloneDataShallow(data)
+-- 	local clone = {};
+-- 	if data then
+-- 		clone = setmetatable(clone, getmetatable(data));
+-- 	end
+-- 	return clone;
+-- end
+-- Clones the data and attempts to create all sub-groups into cloned objects as well
+local function CloneData(data)
+	return CreateObject(data);
+	--[[]
+	local clone = {};
+	if data then
+		if app.DEBUG_PRINT then print("CloneData for",data.key,data[data.key],data,clone); end
+		MergeProperties(clone, data);
+		if data.parent then clone.sourceParent = data.parent; end
+		-- clone = setmetatable(clone, getmetatable(data));
+		-- for key,value in pairs(data) do
+		-- 	rawset(clone, key, value);
+		-- 	if key == "parent" then
+		-- 		rawset(clone, "sourceParent", value);
+		-- 	end
+		-- end
+		if app.DEBUG_PRINT then print("CloneData done",clone.key,clone[clone.key],data,clone); end
 		if data.g then
 			clone.g = {};
 			for i,group in ipairs(data.g) do
@@ -1219,6 +1365,7 @@ local function CloneData(data)
 		end
 	end
 	return clone;
+	--]]
 end
 local function RawCloneData(data)
 	local clone = {};
@@ -1753,7 +1900,7 @@ local NPCNameFromID = setmetatable({}, { __index = function(t, id)
 end});
 
 -- Search Caching
-local searchCache, MergeObject, MergeObjects, MergeProperties, RefreshAchievementCollection = {};
+local searchCache, MergeObject, MergeObjects, RefreshAchievementCollection = {};
 app.searchCache = searchCache;
 (function()
 local keysByPriority = {	-- Sorted by frequency of use.
@@ -1851,108 +1998,37 @@ local function GetHash(t)
 	return t.hash or CreateHash(t);
 end
 app.GetHash = GetHash;
--- The base logic for turning a Table of data into an 'object' that provides dynamic information concerning the type of object which was identified
--- based on the priority of possible key values
-CreateObject = function(t)
-	-- t can be anything, so if it is already a valid 'object', simply use CloneData
-	if t and t.key or getmetatable(t) then
-		-- if app.DEBUG_PRINT then print("CloneData used for",t.key,t[t.key]); end
-		return CloneData(t);
-	end
-	-- otherwise it is a set of raw data or array of raw data which needs to be turned into usable objects
-	if t[1] then
-		local s = {};
-		-- array
-		-- if app.DEBUG_PRINT then print("CreateObject on array",#t); end
-		for _,o in ipairs(t) do
-			tinsert(s, CreateObject(o));
-		end
-		return s;
-	else
-		if t.mapID then
-			t = app.CreateMap(t.mapID, t);
-		elseif t.s then
-			t = app.CreateItemSource(t.s, t.itemID, t);
-		elseif t.encounterID then
-			t = app.CreateEncounter(t.encounterID, t);
-		elseif t.instanceID then
-			t = app.CreateInstance(t.instanceID, t);
-		elseif t.currencyID then
-			t = app.CreateCurrencyClass(t.currencyID, t);
-		elseif t.speciesID then
-			t = app.CreateSpecies(t.speciesID, t);
-		elseif t.objectID then
-			t = app.CreateObject(t.objectID, t);
-		elseif t.followerID then
-			t = app.CreateFollower(t.followerID, t);
-		elseif t.illusionID then
-			t = app.CreateIllusion(t.illusionID, t);
-		elseif t.professionID then
-			t = app.CreateProfession(t.professionID, t);
-		elseif t.categoryID then
-			t = app.CreateCategory(t.categoryID, t);
-		elseif t.criteriaID then
-			t = app.CreateAchievementCriteria(t.criteriaID, t);
-		elseif t.achID then
-			t = app.CreateAchievement(t.achID, t);
-		elseif t.recipeID then
-			t = app.CreateRecipe(t.recipeID, t);
-		elseif t.spellID then
-			t = app.CreateRecipe(t.spellID, t);
-		elseif t.itemID then
-			if t.isToy then
-				t = app.CreateToy(t.itemID, t);
-			else
-				t = app.CreateItem(t.itemID, t);
-			end
-		elseif t.classID then
-			t = app.CreateCharacterClass(t.classID, t);
-		elseif t.npcID or t.creatureID then
-			t = app.CreateNPC(t.npcID or t.creatureID, t);
-		elseif t.headerID then
-			t = app.CreateNPC(t.headerID, t);
-		elseif t.questID then
-			if t.isVignette then
-				t = app.CreateVignette(t.questID, t);
-			else
-				t = app.CreateQuest(t.questID, t);
-			end
-		elseif t.tierID then
-			t = app.CreateTier(t.tierID, t);
-		elseif t.unit then
-			t = app.CreateUnit(t.unit, t);
-		else
-			-- if app.DEBUG_PRINT then print("CreateObject no specific object type"); app.PrintTable(t); end
-			t = setmetatable({}, { __index = t });
-		end
-		-- if app.DEBUG_PRINT then print("CreateObject key/value",t.key,t[t.key]); end
-
-		-- if g, then replace each objects in all sub groups with an object version of the table
-		if t.g then
-			-- if app.DEBUG_PRINT then print("CreateObject for sub-groups of",t.key,t[t.key]); end
-			for i,o in pairs(t.g) do
-				t.g[i] = CreateObject(o);
-			end
-		end
-
-		return t;
-	end
-end
--- merges the properties of the o group into the g group, making sure not to alter the filterability of the group
-MergeProperties = function(g, o, noReplace)
-	if g and o and type(o) == "table" then
-		for k,v in pairs(o) do
-			if k ~= "expanded" and
-				k ~= "g" and
-				k ~= "parent" then
-				if not noReplace or not rawget(g, k) then
-					rawset(g, k, v);
+MergeObject = function(g, t, index, cloneOnAdd)
+	if g and t then
+		local hash = GetHash(t);
+		-- print("_",hash);
+		if hash then
+			for i,o in ipairs(g) do
+				if GetHash(o) == hash then
+					if t.g then
+						if o.g then
+							MergeObjects(o.g, t.g, cloneOnAdd);
+						elseif cloneOnAdd then
+							o.g = {};
+							for _,s in ipairs(t.g) do
+								tinsert(o.g, CloneData(s));
+							end
+						else
+							o.g = t.g;
+						end
+					end
+					MergeProperties(o, t);
+					return o;
 				end
 			end
 		end
-		-- if o is a metadata clone of another table, then copy those properties as well without replacing any existing properties of the table
-		if getmetatable(o) then
-			MergeProperties(g, getmetatable(o).__index, true);
+		if cloneOnAdd then
+			t = CloneData(t);
+		end
+		if index then
+			tinsert(g, index, t);
+		else
+			tinsert(g, t);
 		end
 	end
 end
@@ -2020,38 +2096,6 @@ MergeObjects = function(g, g2, cloneOnAdd)
 		for i,o in ipairs(g2) do
 			MergeObject(g, o, nil, cloneOnAdd);
 		end
-	end
-end
-MergeObject = function(g, t, index, cloneOnAdd)
-	local hash = GetHash(t);
-	-- print("_",hash);
-	if hash then
-		for i,o in ipairs(g) do
-			if GetHash(o) == hash then
-				if t.g then
-					if o.g then
-						MergeObjects(o.g, t.g, cloneOnAdd);
-					elseif cloneOnAdd then
-						o.g = {};
-						for _,s in ipairs(t.g) do
-							tinsert(o.g, CloneData(s));
-						end
-					else
-						o.g = t.g;
-					end
-				end
-				MergeProperties(o, t);
-				return o;
-			end
-		end
-	end
-	if cloneOnAdd then
-		t = CloneData(t);
-	end
-	if index then
-		tinsert(g, index, t);
-	else
-		tinsert(g, t);
 	end
 end
 end)();
@@ -3990,16 +4034,17 @@ app.BuildSourceParent = function(group)
 	if group.key == "headerID" then return; end
 	local parent = group.sourceParent or group.parent;
 	-- only show certain types of parents as sources.. typically 'Game World Things'
-	if parent.key
-		and (parent.key == "npcID"
-			or parent.key == "creatureID"
-			or parent.key == "itemID"
-			or parent.key == "s"
-			or parent.key == "questID"
-			or parent.key == "objectID"
-			or parent.key == "encounterID")
+	local parentKey = parent.key;
+	if parentKey
+		and (parentKey == "npcID"
+			or parentKey == "creatureID"
+			or parentKey == "itemID"
+			or parentKey == "s"
+			or parentKey == "questID"
+			or parentKey == "objectID"
+			or parentKey == "encounterID")
 			-- TODO: maybe handle mapID in a different way as a fallback for things nested under headers within a zone....?
-		and parent[parent.key] then
+		and parent[parentKey] then
 		local sourceGroup = {
 			["text"] = L["SOURCES"],
 			["description"] = L["SOURCES_DESC"],
@@ -4007,15 +4052,18 @@ app.BuildSourceParent = function(group)
 			["OnUpdate"] = app.AlwaysShowUpdate,
 			["g"] = {},
 		};
-		local sources = app.SearchForLink(parent.key .. ":" .. parent[parent.key]);
+		local sources = app.SearchForLink(parentKey .. ":" .. parent[parentKey]);
 		if sources then
 			local clonedSource;
 			for _,source in pairs(sources) do
-				clonedSource = CloneData(source);
-				clonedSource.g = nil;
-				clonedSource.collectible = false;
-				clonedSource.OnUpdate = app.AlwaysShowUpdate;
-				MergeObject(sourceGroup.g, clonedSource);
+				-- make sure the group being included is of the same type as the direct parent of the group
+				if source.key == parentKey then
+					clonedSource = CloneData(source);
+					clonedSource.g = nil;
+					clonedSource.collectible = false;
+					clonedSource.OnUpdate = app.AlwaysShowUpdate;
+					MergeObject(sourceGroup.g, clonedSource);
+				end
 			end
 			if not group.g then group.g = { sourceGroup };
 			else tinsert(group.g, 1, sourceGroup); end
@@ -4754,7 +4802,7 @@ local function PopulateQuestObject(questObject)
 				MergeProperties(questObject, data);
 				if data.g then
 					for _,entry in ipairs(data.g) do
-						MergeObject(questObject.g, CloneData(entry));
+						MergeObject(questObject.g, entry, nil, true);
 					end
 				end
 			-- otherwise this is a non-quest object flagged with this questID so it should be added under the quest
@@ -4776,7 +4824,7 @@ local function PopulateQuestObject(questObject)
 						MergeProperties(questObject, data);
 						if data.g then
 							for _,entry in ipairs(data.g) do
-								MergeObject(questObject.g, CloneData(entry));
+								MergeObject(questObject.g, entry, nil, true);
 							end
 						end
 					end
@@ -7754,7 +7802,7 @@ app.CacheHeirlooms = function()
 				for _,heirloom in ipairs(item.g) do
 					-- merge the cloned heirloom with upgrade into the source token listing
 					if not token.g then token.g = { CloneData(heirloom) }
-					else MergeObject(token.g, CloneData(heirloom)); end
+					else MergeObject(token.g, heirloom, nil, true); end
 				end
 				BuildGroups(token, token.g);
 			end
@@ -7769,7 +7817,7 @@ app.CacheHeirlooms = function()
 				for _,heirloom in ipairs(item.g) do
 					-- merge the cloned heirloom with upgrade into the source token listing
 					if not token.g then token.g = { CloneData(heirloom) }
-					else MergeObject(token.g, CloneData(heirloom)); end
+					else MergeObject(token.g, heirloom, nil, true); end
 				end
 				BuildGroups(token, token.g);
 			end
@@ -9926,7 +9974,7 @@ app.TryPopulateQuestRewards = function(questObject)
 							-- cache record is associated with the item
 							else
 								if not item.g then item.g = { CloneData(data) };
-								else MergeObject(item.g, CloneData(data)); end
+								else MergeObject(item.g, data, nil, true); end
 							end
 						end
 					end
@@ -13951,13 +13999,15 @@ RowOnEnter = function (self)
 		end
 
 		-- DEBUGGING
+		-- GameTooltip:AddDoubleLine("LUA .sourceParent Table ID",tostring(reference.sourceParent));
+		-- GameTooltip:AddDoubleLine("LUA .parent Table ID",tostring(reference.parent));
 		-- GameTooltip:AddDoubleLine("LUA Table ID",tostring(reference));
-		-- GameTooltip:AddDoubleLine("LUA Parent Table ID",tostring(reference.parent));
+		-- GameTooltip:AddDoubleLine(".sourceParent Text",tostring(reference.sourceParent and reference.sourceParent.text));
+		-- GameTooltip:AddDoubleLine(".parent Text",tostring(reference.parent and reference.parent.text));
+		-- GameTooltip:AddDoubleLine("Row Indent",tostring(CalculateRowIndent(reference)));
 		-- GameTooltip:AddDoubleLine("Completed AltQuest ID",tostring(reference.altcompleted));
 		-- GameTooltip:AddDoubleLine("Breadcrumb Locking QuestID",tostring(reference.breadcrumbLockedBy));
 		-- GameTooltip:AddDoubleLine("Completed All SourceQuests",tostring(reference.sourceQuestsCompleted));
-		-- GameTooltip:AddDoubleLine("Parent Text",tostring(reference.parent and reference.parent.text));
-		-- GameTooltip:AddDoubleLine("Row Indent",tostring(CalculateRowIndent(reference)));
 
 		-- print("OnRowEnter-Show");
 		GameTooltip.MiscFieldsComplete = true;
@@ -14994,6 +15044,21 @@ function app:ApplyLockedWindows()
 			end
 		end
 	end
+end
+-- Given a group listing, returns a cloned group from the highest level which matches a generic header
+function app:BuildRecursiveLocation(group)
+	local parentCopy, parent = {}, group.parent;
+	while parent do
+		-- set the same metatable
+		setmetatable(parentCopy, getmetatable(parent));
+		-- copy direct group values only
+		MergeProperties(parentCopy, parent);
+		parentCopy.g = { CloneData(group) };
+		if not t then t = { groupCopy };
+		else tinsert(t, groupCopy); end
+		parent = group.parent;
+	end
+	return group;
 end
 function app:BuildSearchResponse(groups, field, value)
 	if groups then
@@ -17673,7 +17738,7 @@ app:GetWindow("WorldQuests", UIParent, function(self, force, got)
 											else
 												-- TODO: re-design this again eventually to reduce fake bloated numbers
 												if not item.g then item.g = { CloneData(data) };
-												else MergeObject(item.g, CloneData(data)); end
+												else MergeObject(item.g, data, nil, true); end
 											end
 										end
 									end--]]
