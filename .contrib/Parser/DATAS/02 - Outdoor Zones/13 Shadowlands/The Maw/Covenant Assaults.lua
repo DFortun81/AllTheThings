@@ -611,6 +611,7 @@ _.Zones =
 								i(186000),	-- Wild Hunt Legsplitter (MOUNT!)
 								i(187410),	-- Death's Advance Battlefield Drape
 								i(186547),	-- Invasive Buzzer (PET!)
+								i(185052),	-- Hippo Soul
 							}),
 						}),
 					},

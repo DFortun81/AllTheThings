@@ -144,6 +144,7 @@ _.Zones =
 						crit(7, {	-- Cyrixia
 							["achievementID"] = 14660,	-- It's About Sending a Message
 						}),
+						i(186618),	-- Willbreaker's Chain
 						i(183070, {	-- Mawsworn Orders
 							["questID"] = 63164,	-- Mawsworn Orders
 							["g"] = {
@@ -240,6 +241,7 @@ _.Zones =
 						crit(5, {	-- Deomen the Vortex
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
+						i(187367),	-- Deomen's Vortex Blade
 						i(187385),	-- Vortex Piercing Headgear
 					},
 				}),
@@ -364,9 +366,7 @@ _.Zones =
 						crit(13, {	-- Houndmaster Vasanok
 							["achievementID"] = 14660,	-- It's About Sending a Message
 						}),
-						q(62209, {	-- Bonus Objective
-							["isDaily"] = true,
-						}),
+						i(186224),	-- Beastwarren Houndmaster's Treads
 					},
 				}),
 				n(162965, {	-- Huwerath
@@ -536,9 +536,7 @@ _.Zones =
 						crit(3, {	-- Razkazzar
 							["achievementID"] = 14660,	-- It's About Sending a Message
 						}),
-						q(60992, {	-- Bonus Objective
-							["isDaily"] = true,
-						}),
+						i(186628),	-- Razkazzar's Axe Grippers
 					},
 				}),
 				n(172521, {	-- Sanngror the Torturer
@@ -561,6 +559,7 @@ _.Zones =
 						crit(16, {	-- Shadeweaver Zeris
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
 						}),
+						i(185945),	-- Shadeweaver's Spire
 						i(183066, {	-- Korrath's Grimoire: Aleketh
 							["questID"] = 63160,	-- Korrath's Grimoire: Aleketh
 							["g"] = {
@@ -667,6 +666,7 @@ _.Zones =
 						crit(19, {	-- Thanassos
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
 						}),
+						i(186234),	-- Girdle of the Death Speaker
 					},
 				}),
 				n(179805, {	-- Traitor Balthier
@@ -681,6 +681,7 @@ _.Zones =
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 						i(187374),	-- Balthier's Waistcord
+						i(187364),	-- Maldraxxi Traitor's Blade
 					},
 				}),
 				n(173086, {	-- Valis the Cruel
@@ -692,6 +693,7 @@ _.Zones =
 						crit(15, {	-- Valis the Cruel
 							["achievementID"] = 14660,	-- It's About Sending a Message
 						}),
+						i(186632),	-- Rune Covered Bindings
 						n(174810, {	-- Rune of Cruelty (1)
 							["description"] = "Click 1st.",
 						}),
@@ -745,6 +747,7 @@ _.Zones =
 								i(186727),	-- Seal Breaker Key
 							},
 						}),
+						i(187393),	-- Sterling Hound-Handler's Gauntlets
 						i(186217),	-- Supple Helhound Leather Pants
 						i(187359),	-- Ylva's Water Dish
 					},
@@ -766,9 +769,11 @@ _.HiddenQuestTriggers = {
 	q(61136),	-- Agonix bonus objective
 	q(60920),	-- Akros bonus objective
 	q(59230),	-- Dartanos bonus objective
+	q(62209),	-- Houndmaster Vasanok bonus objective
 	q(60903),	-- Krala bonus objective
 	q(61125),	-- Malevolent Stygia bonus objective
 	q(60991),	-- Orrholyn bonus objective
+	q(60992),	-- Razkazzar bonus objective
 	q(62211),	-- Skittering Broodmother bonus objective
 	q(59441),	-- Soulsmith Yol-Mattar bonus objective
 	q(61728),	-- Valis bonus objective

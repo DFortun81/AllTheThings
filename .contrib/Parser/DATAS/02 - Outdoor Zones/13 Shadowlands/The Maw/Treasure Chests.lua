@@ -64,8 +64,13 @@ _.Zones =
 						crit(7, {	-- Helsworn Chest
 							["achievementID"] = 15099,	-- Treasures of Korthia
 						}),
-						i(185902),	-- Iron Maiden's Toolkit
+					--	Epics
+						i(187019),	-- Infiltrator's Shoulderguards
+						i(187014),	-- Shackler's Spiked Shoulders
+					--	Consumable (pale blue/special)
 						i(187351),	-- Stygic Cluster
+					--	Blues
+						i(185902),	-- Iron Maiden's Toolkit
 					},
 				}),
 				o(369224, {	-- Jeweled Heart of Ezekiel

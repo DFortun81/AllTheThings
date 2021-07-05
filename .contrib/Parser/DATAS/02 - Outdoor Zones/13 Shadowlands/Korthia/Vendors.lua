@@ -198,6 +198,7 @@ _.Zones =
 									i(186748),	-- Vault Guardian's Visor*
 								}),
 								n(-319, {	-- Weapons
+									i(185889),	-- Gromit Tendon Longbow
 									i(186762),	-- Korthian Anima Slicer
 									i(186759),	-- Korthian Anima Vessel*
 									i(185899),	-- Korthian Archivist's Gavel
@@ -227,10 +228,11 @@ _.Zones =
 								f(52,   {	-- Finger
 									i(185894),	-- Attendant's Loop*
 									i(185941),	-- Korthian Scholar's Signet*
-									i(185895),	-- Lost Wayfairer's Band*
+									i(185895),	-- Lost Wayfarer's Band*
 									i(185903),	-- Soul-Seeker's Ring*
 								}),
 								f(53,   {	-- Trinkets
+									i(186976),	-- Fine Razorwing Quill
 									i(186155),	-- Harmonic Crowd Breaker
 									i(186156),	-- Tome of Insight
 								}),

@@ -149,11 +149,8 @@ _.Zones =
 									178886,	-- Zul'gath the Flayer <Tormentor of Torghast>
 								},
 								["g"] = {
-									i(185974, {	-- Bahmeht Chain Link
-										["description"] = "A guaranteed drop from the Tormentor, and a possible drop from its lieutenants.",
-									}),
-									i(186218),	-- Fire-Tempered Armor Cinch (looted from Zul'gath near the start of PTR - drops may have been changed, not sure if this is CBD or specific to Zul'gath - apparently most tormentors have at least 1 dedicated drop, but this guy isn't especially fiery so i'm not sure)
 									i(185972, {	-- Tormentor's Cache
+										i(185973),	-- Chain of Bahmethra (MOUNT!)
 										i(186977),	-- Beastcaller's Skull Crescent
 										i(186978),	-- Borrowed Eye Crescent
 										i(186562),	-- Tormentor's Manacled Backplate
@@ -169,6 +166,7 @@ _.Zones =
 								["isDaily"] = true,
 								["g"] = {
 									i(186239),	-- Drape of the Phantasm
+									i(186227),	-- Jangling Chain Manacles
 								},
 							}),
 							n(178898, {	-- Golmak The Monstrosity
@@ -176,38 +174,46 @@ _.Zones =
 								["isDaily"] = true,
 								["g"] = {
 									i(186229),	-- Lavafused Breastplate
+									i(186221),	-- Seared-Link Sabatons
 								},
 							}),
 							n(177979, {	-- Gralebboih
 								["questID"] = 64113,
 								["isDaily"] = true,
 								["g"] = {
+									i(186237),	-- Gormhide Pauldrons
 									i(186449),	-- Amaranthine Stinger (PET!)
 								},
 							}),
 							n(177980, {	-- Gruukuuek the Elder
 								-- ["questID"] = ,
 								["isDaily"] = true,
-								-- ["g"] = {
-								-- },
+								["g"] = {
+									i(186226),	-- Cinch of Petrified Vines
+									i(186009),	-- Corrupted Elder Branch
+								},
 							}),
 							n(178004, {	-- Intercessor Razzram
 								-- ["questID"] = ,
 								["isDaily"] = true,
-								-- ["g"] = {
-								-- },
+								["g"] = {
+									i(186231),	-- Gloves of Fervent Intercession
+									i(186004),	-- Kris of Dark Temptation
+								},
 							}),
 							n(178882, {	-- Kazj The Sentinel
 								["questID"] = 64110,
 								["isDaily"] = true,
 								["g"] = {
 									i(186450),	-- Crude Stygian Fastener
+									i(186006),	-- Kazj's Stygian Splitter
 								},
 							}),
 							n(177972, {	-- Malleus Grakizz
 								["questID"] = 64119,
 								["isDaily"] = true,
 								["g"] = {
+									i(186218),	-- Fire-Tempered Armor Cinch
 									i(186012),	-- Inferno Blast Shield
 								},
 							}),
@@ -221,8 +227,9 @@ _.Zones =
 							n(178002, {	-- Mugrem the Soul Devourer
 								-- ["questID"] = ,
 								["isDaily"] = true,
-								-- ["g"] = {
-								-- },
+								["g"] = {
+									i(186010),	-- Lost Attendant's Scepter
+								},
 							}),
 							n(177330, {	-- Promathiz
 								-- ["questID"] = ,
@@ -252,22 +259,23 @@ _.Zones =
 								["isDaily"] = true,
 								["g"] = {
 									i(186210),	-- Diabolic Soul Veil
+									i(186215),	-- Soul Stranglers
 								},
 							}),
 							n(177981, {	-- Versya the Damned
 								-- ["questID"] = ,
 								["isDaily"] = true,
-								-- ["g"] = {
-								-- },
+								["g"] = {
+									i(186233),	-- Spaulders of the Skyborn Damned
+								},
 							}),
 							n(178886, {	-- Zul'gath the Flayer
 								-- ["questID"] = ,
 								["isDaily"] = true,
-								-- ["g"] = {
-								-- },
-							}),
-							i(185973, {	-- Chain of Bahmethra
-								["cost"] = { { "i", 185974, 200 } },	-- 200x Bahmet Chain Link
+								["g"] = {
+									i(186235),	-- Shadow-Wreathed Vambraces
+									i(186242),	-- Zul'gath's Chain Coif
+								},
 							}),
 						},
 					}),
@@ -298,21 +306,35 @@ _.Zones =
 								["description"] = "A possible boss for the 'Wrath of the Jailer' event.",
 								["isWeekly"] = true,
 								["questID"] = 63414,
+								["g"] = {
+									i(186207),	-- Mawsworn Herald's Vestments
+								},
 							}),
 							n(175877, {	-- Lumisende <Torghast Executioner>
 								["description"] = "A possible boss for the 'Wrath of the Jailer' event.",
 								["isWeekly"] = true,
 								["questID"] = 63414,
+								["g"] = {
+									i(186011),	-- Lumisende's Twin-Blade
+									i(186230),	-- Mawsworn Warboots
+								},
 							}),
 							n(175881, {	-- Naelcrotix <Torghast Executioner>
 								["description"] = "A possible boss for the 'Wrath of the Jailer' event.",
 								["isWeekly"] = true,
 								["questID"] = 63414,
+								["g"] = {
+									i(186243),	-- Helm of Necrotic Sight
+									i(186013),	-- Vessel of Primordial Death
+								},
 							}),
 							n(176173, {	-- Zograthos <Torghast Executioner>
 								["description"] = "A possible boss for the 'Wrath of the Jailer' event.",
 								["isWeekly"] = true,
 								["questID"] = 63414,
+								["g"] = {
+									i(186232),	-- Phantom-Stalker's Legplates
+								},
 							}),
 						},
 					}),
@@ -1008,6 +1030,9 @@ _.HiddenQuestTriggers = {
 };
 
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	f(55, {		-- Consumables
+		i(185974),	-- Bahmeht Chain Link (PTR only)
+	}),
 	n(QUESTS, {
 		q(60902),	-- A Dark Song
 		q(61496),	-- A Familiar Energy

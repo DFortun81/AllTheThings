@@ -243,7 +243,9 @@ _.Zones =
 					},
 					["g"] = {
 						i(187097),	-- Construct's Shoulderplates
+						i(187016),	-- Eviscerator's Spiked Mantle
 						i(187026),	-- Field Warden's Torture Kit
+						i(187013),	-- Interceptor's Pauldrons
 						i(187020),	-- Necrobinder's Shoulderpads
 						i(187018),	-- Ritualist's Shoulder-Scythes
 						i(187431),	-- Sleeping Armament
@@ -261,7 +263,9 @@ _.Zones =
 					},
 					["g"] = {
 						i(187097),	-- Construct's Shoulderplates
+						i(187016),	-- Eviscerator's Spiked Mantle
 						i(187026),	-- Field Warden's Torture Kit
+						i(187013),	-- Interceptor's Pauldrons
 						i(187020),	-- Necrobinder's Shoulderpads
 						i(187018),	-- Ritualist's Shoulder-Scythes
 						i(187431),	-- Sleeping Armament
@@ -280,7 +284,9 @@ _.Zones =
 					},
 					["g"] = {
 						i(187097),	-- Construct's Shoulderplates
+						i(187016),	-- Eviscerator's Spiked Mantle
 						i(187026),	-- Field Warden's Torture Kit
+						i(187013),	-- Interceptor's Pauldrons
 						i(187020),	-- Necrobinder's Shoulderpads
 						i(187018),	-- Ritualist's Shoulder-Scythes
 						i(187431),	-- Sleeping Armament
@@ -516,6 +522,7 @@ _.Zones =
 							},
 							["name"] = "Third Chain",
 						}),
+						i(187016),	-- Eviscerator's Spiked Mantle
 						i(187240),	-- Field Warden's Watchful Eye
 						i(187023),	-- Instructor's Mantle
 						i(187020),	-- Necrobinder's Shoulderpads

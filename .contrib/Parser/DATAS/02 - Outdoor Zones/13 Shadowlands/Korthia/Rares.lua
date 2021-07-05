@@ -37,6 +37,7 @@ _.Zones =
 						crit(4, {	-- Deadsoul Hatcher
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
+						i(187396),	-- Girdle of the Deadsoul
 					},
 				}),
 				n(177903, {	-- Dominated Protector
@@ -211,6 +212,7 @@ _.Zones =
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 						i(187381),	-- Rift-Touched Bindings
+						i(187383),	-- Silent Soulstalker Sabatons
 					},
 				}),
 				n(179985, {	-- Stygian Stonecrusher
@@ -252,6 +254,7 @@ _.Zones =
 						i(187242),	-- Exterminator's Crest of the Damned
 						i(187241),	-- Watchful Eye of the Damned
 						--
+						i(187382),	-- Mawsworn Exterminator's Hauberk
 						i(187376),	-- Mawsworn Lieutenant's Treads
 						i(187392),	-- Sabatons of the Towering Construct
 						i(187373),	-- Soul-Enveloping Leggings

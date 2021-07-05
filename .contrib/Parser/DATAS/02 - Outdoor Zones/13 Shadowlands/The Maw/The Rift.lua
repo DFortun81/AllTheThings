@@ -33,6 +33,7 @@ _.Zones =
 									["achievementID"] = 15107,	-- Conquering Korthia
 								}),
 								i(187406),	-- Band of Blinding Shadows
+								i(187361),	-- Rift-Bound Shadow Piercer
 							},
 						}),
 						n(179851, {	-- Guard Orguluus

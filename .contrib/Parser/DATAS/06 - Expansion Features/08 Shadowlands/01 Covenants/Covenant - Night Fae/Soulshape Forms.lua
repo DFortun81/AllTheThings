@@ -34,6 +34,9 @@ _.ExpansionFeatures =
 					q(62421, {	-- Gulper Soul
 						["provider"] = { "i", 181314 },	-- Gulper Soul
 					}),
+					q(63608, {	-- Hippo Soul
+						["provider"] = { "i", 185052 },	-- Hippo Soul
+					}),
 					q(62427, {	-- Hippogryph Soul
 						["provider"] = { "i", 182171 },	-- Hippogryph Soul
 					}),

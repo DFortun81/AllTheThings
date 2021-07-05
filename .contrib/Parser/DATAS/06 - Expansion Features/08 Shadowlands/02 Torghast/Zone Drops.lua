@@ -14,16 +14,76 @@ _.ExpansionFeatures =
 					},
 				}),
 				i(187044, {	-- Deathbringer's Epaulettes
-				--	["crs"] = {  },	-- 
+					["crs"] = {
+						151331,	-- Cellblock Sentinel
+						170418,	-- Goxul the Devourer
+						159190,	-- Synod
+					},
 				}),
 				i(187030, {	-- Deathsworn Shoulderguards
 					["crs"] = {
 						151329,	-- Warden Skoldus
 					},
 				}),
+				i(187039, {	-- Malleare's Stygian Pauldrons
+					["crs"] = {
+						151331,	-- Cellblock Sentinel
+						153165,	-- Custodian Thonar
+						170418,	-- Goxul the Devourer
+						157122,	-- Patrician Cromwell
+						159190,	-- Synod
+					},
+				}),
+				i(187042, {	-- Occultist's Ornamental Gorget
+					["crs"] = {
+						151331,	-- Cellblock Sentinel
+						153165,	-- Custodian Thonar
+						170418,	-- Goxul the Devourer
+						159190,	-- Synod
+						151329,	-- Warden Skoldus
+					},
+				}),
+				i(187046, {	-- Pauldrons of Immaculate Laceration
+					["crs"] = {
+						151331,	-- Cellblock Sentinel
+						151329,	-- Warden Skoldus
+					},
+				}),
 				i(187041, {	-- Shoulders of Unbreakable Demise
 					["crs"] = {
 						155250,	-- Decayspeaker
+					},
+				}),
+				i(187038, {	-- Shoulders of Vehement Slicing
+					["crs"] = {
+						151331,	-- Cellblock Sentinel
+						157122,	-- Patrician Cromwell
+						159190,	-- Synod
+					},
+				}),
+				i(187027, {	-- Skoldus' Shoulder Skewers
+					["crs"] = {
+						151331,	-- Cellblock Sentinel
+						153165,	-- Custodian Thonar
+						170418,	-- Goxul the Devourer
+						159190,	-- Synod
+						151329,	-- Warden Skoldus
+					},
+				}),
+				i(187032, {	-- Spaulders of Prophetic Death
+					["crs"] = {
+						151331,	-- Cellblock Sentinel
+						170418,	-- Goxul the Devourer
+						151329,	-- Warden Skoldus
+					},
+				}),
+				i(187043, {	-- Spiked Citadel Shoulderguards
+					["crs"] = {
+						151331,	-- Cellblock Sentinel
+						153165,	-- Custodian Thonar
+						170418,	-- Goxul the Devourer
+						159190,	-- Synod
+						151329,	-- Warden Skoldus
 					},
 				}),
 				i(187031, {	-- Towering Mantle of the Maw
@@ -34,6 +94,14 @@ _.ExpansionFeatures =
 				i(187040, {	-- Twin-Scythe Spaulders
 					["crs"] = {
 					--	no drop data yet, just reported by players
+					},
+				}),
+				i(187045, {	-- Veiled Tormentor's Mantle
+					["crs"] = {
+						151331,	-- Cellblock Sentinel
+						153165,	-- Custodian Thonar
+						159190,	-- Synod
+						151329,	-- Warden Skoldus
 					},
 				}),
 			--	Blues
