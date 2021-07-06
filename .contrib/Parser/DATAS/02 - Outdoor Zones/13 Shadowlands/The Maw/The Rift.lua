@@ -104,6 +104,7 @@ _.Zones =
 								{ 47.2, 79.6, THE_MAW },
 							},
 							["g"] = {
+								i(187416),	-- Jailer's Cage
 								i(187113),	-- Personal Ball and Chain (TOY!)
 							},
 						}),

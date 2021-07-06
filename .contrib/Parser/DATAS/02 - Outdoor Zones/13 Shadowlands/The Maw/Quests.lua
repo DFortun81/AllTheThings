@@ -1021,7 +1021,7 @@ _.HiddenQuestTriggers = {
 	q(64692),	-- triggered when killing Manifestation of Pain / Zul'gath the Flayer
 	q(64693),	-- triggered when killing Manifestation of Pain
 	q(64694),	-- triggered when killing Malleus Grakizz
-	q(64695),	-- triggered when killing Algel the Haunter / Gruukuuek the Elder
+	q(64695),	-- triggered when killing Algel the Haunter / Gruukuuek the Elder / Gralebboih (5th of week)
 	q(64696),	-- triggered when killing Promathiz / Sentinel Shakorzeth
 	q(64697),	-- triggered when killing Malleus Grakizz / Sentinel Shakorzeth / Versya the Damned
 	q(64698),	-- triggered when killing Intercessor Razzra / Zul'gath the Flayer (4th Tormentor of week?)

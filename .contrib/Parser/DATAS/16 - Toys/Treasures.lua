@@ -16,10 +16,11 @@ _.Toys =
 		i(187051),	-- Forgotten Feather
 		i(187155),	-- Guise of the Changeling
 		i(182729),	-- Hearty Dragon Plume
-		i(184447);	-- Kevin's Party Supplies
+		i(187416),	-- Jailer's Cage
+		i(184447),	-- Kevin's Party Supplies
 		i(179393),	-- Mirror of Envious Dreams
 		i(182780),	-- Muckpool Cookpot
-		i(187344);	-- Offering Kit Maker
+		i(187344),	-- Offering Kit Maker
 		i(181825),	-- Phial of Ravenous Slime
 		i(173984),	-- Scroll of Aeons
 		i(187339),	-- Silver Shardhide Whistle
