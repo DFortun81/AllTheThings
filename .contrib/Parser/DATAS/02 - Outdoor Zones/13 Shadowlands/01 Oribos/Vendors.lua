@@ -231,6 +231,18 @@ _.Zones =
 						}),
 					},
 				}),
+				n(177829, {	-- Ko'tul <Exchange Specialist>
+					["coord"] = { 63.8, 36.0, ORIBOS },
+					["g"] = {
+						i(187222),	-- Stygic Singularity
+						i(187221),	-- Soul Ash Cache
+						i(187254),	-- Arrangement of Anima
+						i(187503),	-- Bundle of Archived Research
+						i(185765),	-- Shipment of Heavy Callous Hide
+						i(185832),	-- Shipment of Elethium Ore
+						i(185833),	-- Shipment of Lightless Silk
+					},
+				}),
 				n(176065, {	-- Liawyn <Wild Hunt Quartermaster>
 					["coord"] = { 47.0, 76.8, ORIBOS },
 					["g"] = {
