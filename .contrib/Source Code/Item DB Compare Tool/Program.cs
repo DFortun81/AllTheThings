@@ -395,6 +395,7 @@ namespace ATT
                                 switch(key)
                                 {
                                     case "b":
+                                    case "lvl":
                                         RemovedObjectKey(sourceDB, id, key);
                                         RemovedObjectKey(diffDB, id, key);
                                         break;
