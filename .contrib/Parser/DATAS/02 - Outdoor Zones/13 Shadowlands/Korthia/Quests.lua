@@ -7,8 +7,6 @@ _.Zones =
 	m(SHADOWLANDS, {
 		m(KORTHIA, {
 			n(QUESTS, {
-			--	TODO: 64567, "The Missing Scholar," triggered when turning in #63732, "Interrupt the Interrogations."  based on quest text on wowhead, this appears to be an alternate way to start the research chain - not sure if that means at a certain point if you haven't looted a single treasure/rare to get "Researching Korthian Relics," you will at some point receive this alternate version?????  it's also possible it's just an NYI quest.  i never ran into it on PTR; originally you picked up "Interrupt the Interrogations" without a preceding quest and then at one point they added "Researching Korthian Relics" to get you there more naturally.
-
 			--	confirmed on live
 				q(63755, {	-- A Matter of Urgency
 					["sourceQuests"] = { 64106 },	-- A Unified Effort
@@ -122,7 +120,10 @@ _.Zones =
 					},
 				}),
 				q(63732, {	-- Interrupt the Interrogations
-					["sourceQuests"] = { 63731 },	-- Shattered Relics
+					["sourceQuests"] = {
+						63731,	-- Researching Korthian Relics
+						64567,	-- The Missing Scholar
+					},
 					["provider"] = { "n", 178694 },	-- Scholar Roh-Suir
 					["coord"] = { 59.0, 58.1, KORTHIA },
 				}),
@@ -173,8 +174,10 @@ _.Zones =
 				}),
 				q(63731, {	-- Researching Korthian Relics
 					["sourceQuests"] = { 63662 },	-- Mysteries of the Maw
+					["altQuests"] = { 64567 },	-- The Missing Scholar
 					["description"] = "The item that starts this quest can be looted from any treasure chest or rare in Korthia.",
 					["provider"] = { "i", 187177 },	-- Researching Korthian Relics
+					["isBreadcrumb"] = true,
 				}),
 				q(63761, {	-- Revenge Delayed
 					["sourceQuests"] = { 63759 },	-- Redirect the Search
@@ -201,6 +204,13 @@ _.Zones =
 					["sourceQuests"] = { 63755 },	-- A Matter of Urgency
 					["provider"] = { "n", 177610 },	-- Caretaker Kah-Than
 					["coord"] = { 56.2, 38.8, KORTHIA },
+				}),
+				q(64567, {	-- The Missing Scholar
+					["sourceQuests"] = { 64106 },	-- A Unified Effort
+					["altQuests"] = { 63731 },	-- Researching Korthian Relics
+					["provider"] = { "n", 177927 },	-- Tal-Galan
+					["isBreadcrumb"] = true,
+					["coord"] = { 62.7, 24.8, KORTHIA },
 				}),
 				q(63734, {	-- The Sundered Staff
 					["sourceQuests"] = { 63732 },	-- Interrupt the Interrogations

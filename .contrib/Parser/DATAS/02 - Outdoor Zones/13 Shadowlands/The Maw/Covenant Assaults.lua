@@ -783,5 +783,6 @@ _.HiddenQuestTriggers = {
 
 --	Venthyr
 	q(63938),	-- triggered when returning Shadow to Reldorn on "They Grow Up So Quickly"
+	q(63941),	-- triggered when returning Creep to Reldorn on "They Grow Up So Quickly"
 	q(63942),	-- triggered when returning Bubbles to Reldorn on "They Grow Up So Quickly"
 };
