@@ -4674,8 +4674,8 @@ app.SearchForLink = SearchForLink;
 -- Map Information Lib
 local function AddTomTomWaypoint(group, auto, recur)
 	if TomTom
-		-- only plot visible things
-		and group.visible
+		-- only plot visible things or if being
+		and (group.visible or auto)
 		-- which aren't saved, unless this is the Thing that was directly clicked
 		and (not recur or not group.saved)
 		then
@@ -4710,6 +4710,8 @@ local function AddTomTomWaypoint(group, auto, recur)
 			end
 		end
 		if group.g then
+			-- if plotting waypoints of a 'repeated' object, inherently plot the contained object waypoints even when not visible
+			local auto = group.objectID and not group.coord and not group.coords;
 			for i,subgroup in ipairs(group.g) do
 				-- only automatically plot subGroups if they are not quests with incomplete source quests
 				-- TODO: use 'isLockedBy' property for quests
@@ -13121,7 +13123,7 @@ local function RowOnClick(self, button)
 		-- All non-Shift Right Clicks open a mini list or the settings.
 		if button == "RightButton" then
 			if IsAltKeyDown() and (self.index > 0 or window.isQuestChain) then
-				AddTomTomWaypoint(reference, false);
+				AddTomTomWaypoint(reference);
 			elseif IsShiftKeyDown() then
 				if app.Settings:GetTooltipSetting("Sort:Progress") then
 					app.print("Sorting selection by total progress...");

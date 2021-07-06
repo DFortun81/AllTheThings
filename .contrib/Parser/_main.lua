@@ -1021,6 +1021,22 @@ obj = function(id, t)									-- Create a WORLD OBJECT Object (an interactable, 
 	return struct("objectID", id, t);
 end
 o = obj;												-- Create a WORLD OBJECT Object (alternative shortcut)
+o_repeated = function(t)								-- Create a group which represents the shared contents for multiple, identically-named WORLD OBJECTS
+	if t[1] then
+		-- move the raw array of objects into a .g group
+		t = { g = t };
+	end
+	if t.groups or t.g then
+		for i,group in ipairs(t.groups or t.g) do
+			-- first existing objectID value of the sub-groups will be used to show the localized name in-game instead of creating a new custom category as well
+			if group.objectID and not t.objectID then
+				-- is it really this simple
+				return struct("objectID", group.objectID, t);
+			end
+		end
+	end
+	print("Could not find a group with an objectID value");
+end
 prof = function(skillID, t)								-- Create a PROFESSION Object
 	return struct("professionID", skillID, t);
 end

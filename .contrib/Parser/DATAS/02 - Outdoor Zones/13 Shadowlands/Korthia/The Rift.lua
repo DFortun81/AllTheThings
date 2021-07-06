@@ -57,15 +57,8 @@ _.Zones =
 						}),
 					}),
 					n(TREASURES, {	-- TODO: at least some of these appear to have multiple spawnpoints, which i am sure i have not captured all of myself
-						o(369437, {	-- Riftbound Cache
-							["questID"] = 64456,
-							["isDaily"] = true,
-							["coords"] = {
-								{ 33.4, 39.3, KORTHIA },
-								{ 37.9, 35.8, KORTHIA },
-								{ 39.8, 42.9, KORTHIA },
-							},
-							["g"] = {
+						o_repeated({	-- Riftbound Cache
+							-- Contains
 							--	Epics
 								i(187251),	-- Shaded Skull Shoulderguards
 								i(187243),	-- Shadehunter's Crescent
@@ -75,71 +68,48 @@ _.Zones =
 								i(185050),	-- Spider Soul
 							--	Whites
 								i(186994),	-- Design: Shaded Stone Statue
-							},
-						}),
-						o(369438, {	-- Riftbound Cache
-							["description"] = "If this cache spawns in Zelnithop's cave, it is on the lowest level and the opposite side from where the rare spawns.",
-							["questID"] = 64470,
-							["isDaily"] = true,
-							["coords"] = {
-								{ 24.8, 56.1, KORTHIA },
-								{ 26.0, 55.7, KORTHIA },
-							},
-							["g"] = {
-							--	Epics
-								i(187251),	-- Shaded Skull Shoulderguards
-								i(187243),	-- Shadehunter's Crescent
-							--	Blues
-								i(187421),	-- Ashen Liniment
-							--	Greens
-								i(185050),	-- Spider Soul
-							--	Whites
-								i(186994),	-- Design: Shaded Stone Statue
-							},
-						}),
-						o(369440, {	-- Riftbound Cache
-							["questID"] = 64472,
-							["isDaily"] = true,
-							["coords"] = {
-								{ 46.1, 31.9, KORTHIA },
-								{ 56.3, 18.4, KORTHIA },
-								{ 64.3, 30.3, KORTHIA },
-							},
-							["g"] = {
-							--	Epics
-								i(187251),	-- Shaded Skull Shoulderguards
-								i(187243),	-- Shadehunter's Crescent
-							--	Blues
-								i(187421),	-- Ashen Liniment
-							--	Greens
-								i(185050),	-- Spider Soul
-							--	Whites
-								i(186994),	-- Design: Shaded Stone Statue
-							},
-						}),
-						o(369439, {	-- Riftbound Cache
-							["questID"] = 64471,
-							["isDaily"] = true,
-							["coords"] = {
-								{ 54.1, 54.7, KORTHIA },
-								{ 54.8, 42.3, KORTHIA },
-								{ 55.5, 65.0, KORTHIA },
-								{ 61.0, 35.4, KORTHIA },
-							},
-							["g"] = {
-							--	Epics
-								i(187251),	-- Shaded Skull Shoulderguards
-								i(187243),	-- Shadehunter's Crescent
-							--	Blues
-								i(187421),	-- Ashen Liniment
-							--	Greens
-								i(185050),	-- Spider Soul
-							--	Whites
-								i(186994),	-- Design: Shaded Stone Statue
-							},
+							-- Objects
+							o(369437, {	-- Riftbound Cache
+								["questID"] = 64456,
+								["isDaily"] = true,
+								["coords"] = {
+									{ 33.4, 39.3, KORTHIA },
+									{ 37.9, 35.8, KORTHIA },
+									{ 39.8, 42.9, KORTHIA },
+								},
+							}),
+							o(369438, {	-- Riftbound Cache
+								["description"] = "If this cache spawns in Zelnithop's cave, it is on the lowest level and the opposite side from where the rare spawns.",
+								["questID"] = 64470,
+								["isDaily"] = true,
+								["coords"] = {
+									{ 24.8, 56.1, KORTHIA },
+									{ 26.0, 55.7, KORTHIA },
+								},
+							}),
+							o(369440, {	-- Riftbound Cache
+								["questID"] = 64472,
+								["isDaily"] = true,
+								["coords"] = {
+									{ 46.1, 31.9, KORTHIA },
+									{ 56.3, 18.4, KORTHIA },
+									{ 64.3, 30.3, KORTHIA },
+								},
+							}),
+							o(369439, {	-- Riftbound Cache
+								["questID"] = 64471,
+								["isDaily"] = true,
+								["coords"] = {
+									{ 54.1, 54.7, KORTHIA },
+									{ 54.8, 42.3, KORTHIA },
+									{ 55.5, 65.0, KORTHIA },
+									{ 61.0, 35.4, KORTHIA },
+								},
+							}),
 						}),
 					}),
 					n(ZONEDROPS, {
+						-- TODO: this might be from screaming shade, which has been bugged on live the entire first week
 						i(187174, {	-- Shaded Judgment Stone (TOY!)
 							["crs"] = {
 								178757,	-- Hungering Manifestation
