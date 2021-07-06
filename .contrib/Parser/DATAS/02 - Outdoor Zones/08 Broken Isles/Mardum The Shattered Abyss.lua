@@ -170,7 +170,7 @@ _.Zones =
 				n(RARES, {
 					n(97058,  { -- Count Nefarious
 						["questID"] = 40231,	-- Nefarious Ring
-						["coord"] = { 51.5, 56.4, 672 },
+						["coord"] = { 51.6, 56.2, 672 },
 						["g"] = {
 							i(128948),	-- Nefarious Ring
 						},

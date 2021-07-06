@@ -104,7 +104,7 @@ _.Zones =
 					["isDaily"] = true,
 				}),
 				i(187054, {	-- Lost Razorwing Egg
-					["questID"] = 64281,	-- 2nd daily drop
+					-- ["questID"] = 64280,	-- 1st daily drop / people report multiple per day & have received the mount, so idk what this questID is then...
 					["crs"] = {
 						177295,	-- Colossal Worldeater
 						177913,	-- Hungering Behemoth
@@ -122,7 +122,7 @@ _.Zones =
 							["name"] = "Daily Drop #1",
 							["isDaily"] = true,
 						}),
-						q(64281, {	-- Daily Drop #2 -- Don't think this exists... will wait a day or so if no one confirms the #bounty post and move to NYI, or maybe it's for receiving the mount?
+						q(64281, {	-- Daily Drop #2 -- probably collecting the mount, will confirm if no one else does prior
 							["name"] = "Daily Drop #2",
 							["isDaily"] = true,
 						}),
