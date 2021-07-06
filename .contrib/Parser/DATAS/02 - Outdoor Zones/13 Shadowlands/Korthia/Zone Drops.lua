@@ -159,6 +159,7 @@ _.Zones =
 				i(187334),	-- Shattered Void Tablet
 				i(187460),	-- Strangely Intricate Key
 				i(187331),	-- Tattered Fae Designs
+				i(187458),	-- Unearthed Teleporter Sigil
 				i(187459),	-- Vial of Mysterious Liquid
 				i(187478),	-- White Razorwing Talon
 			--	Cosmetics

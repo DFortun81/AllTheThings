@@ -142,6 +142,7 @@ _.Zones =
 					["coords"] = {
 						{ 35.7, 31.1, KORTHIA },
 						{ 37.4, 34.7, KORTHIA },
+						{ 38.8, 33.8, KORTHIA },
 						{ 39.5, 30.7, KORTHIA },
 						{ 39.7, 34.8, KORTHIA },
 					},
@@ -421,6 +422,7 @@ _.Zones =
 						{ 34.7, 45.8, KORTHIA },
 						{ 37.1, 53.7, KORTHIA },
 						{ 38.2, 51.7, KORTHIA },
+						{ 39.0, 54.7, KORTHIA },
 						{ 39.6, 50.2, KORTHIA },
 						{ 41.0, 50.5, KORTHIA },
 						{ 44.6, 75.8, KORTHIA },
