@@ -13,7 +13,7 @@ _.Zones =
 						i(186648, {	-- Soaring Razorwing (MOUNT!)
 							["cost"] = { { "c", 1931, 5000 } },	-- 5,000x Stygia
 						}),
-						--
+					--	Epics
 						i(187134, {	-- Alloy-Warping Facetor
 							["cost"] = { { "c", 1931, 5000 } },	-- 5,000x Catalogued Research
 						}),
@@ -23,7 +23,16 @@ _.Zones =
 						i(187148, {	-- Death-Bound Shard
 							["cost"] = { { "c", 1931, 3000 } },	-- 3,000x Catalogued Research
 						}),
-						--
+						i(187534, {	-- Korthite Crystal Waistguard
+							["cost"] = { { "c", 1931, 4000 } },	-- 4,000x Catalogued Research
+						}),
+						i(187536, {	-- Prototype Guardian Grips
+							["cost"] = { { "c", 1931, 4000 } },	-- 4,000x Catalogued Research
+						}),
+						i(187537, {	-- Subtle Mortality Manipulators
+							["cost"] = { { "c", 1931, 4000 } },	-- 4,000x Catalogued Research
+						}),
+					--	Blues
 						i(187409, {	-- Cloak of the Korthian Scholar
 							["cost"] = { { "c", 1931, 500 } },	-- 500x Catalogued Research
 						}),
@@ -60,7 +69,7 @@ _.Zones =
 							["questID"] = 64027,
 							["cost"] = { { "c", 1931, 1500 } },	-- 1,500x Catalogued Research
 						}),
-						--
+					--	Greens
 						i(187612, {	-- Key of Flowing Waters
 							["cost"] = { { "c", 1931, 25 } },	-- 25x Catalogued Research
 						}),
@@ -82,12 +91,10 @@ _.Zones =
 						i(187508, {	-- Trained Gromit Carrier
 							["cost"] = { { "c", 1931, 35 } },	-- 35x Catalogued Research
 						}),
-						--
+					--	Whites
 						i(186991, {	-- Transmute: Stones to Ore
 							["cost"] = { { "c", 1931, 2000 } },	-- 2,000x Catalogued Research
 						}),
-						-- Gear
-						i(187534),	-- Korthite Crystal Waistguard
 					},
 				}),
 				n(179321, {	-- Duchess Mynx <Death's Advance Quartermaster>
@@ -234,7 +241,10 @@ _.Zones =
 								}),
 							},
 						}),
-						--
+					--	Epics
+						i(187541, {	-- Chain of Encircling Death
+							["cost"] = { { "c", 1767, 2000 } },	-- 2,000x Stygia
+						}),
 						i(187540, {	-- Cincture of Enveloping Death
 							["cost"] = { { "c", 1767, 2000 } },	-- 2,000x Stygia
 						}),
@@ -315,12 +325,13 @@ _.Zones =
 								i(185099),	-- Renathal's Field Inquisitor's Wraps
 							},
 						}),
-						--
-						--[[ not visible on the vendor on second day of live at neutral rep - uncomment if visibility is based on rep/other factors
-						i(187410, {	-- Death's Advance Battlefield Drape
-							["cost"] = { { "c", 1767, 500 } },	-- 500x Stygia
+						i(187539, {	-- Gauntlets of Death's Guardian
+							["cost"] = { { "c", 1767, 2000 } },	-- 2,000x Stygia
 						}),
-						--]]
+						i(187538, {	-- Gloves of Advancing Death
+							["cost"] = { { "c", 1767, 2000 } },	-- 2,000x Stygia
+						}),
+					--	Blues
 						i(186543, {	-- Domestic Aunian (PET!)
 							["cost"] = {
 								{ "i", 163036, 50 },	-- 50x Polished Pet Charm
@@ -337,7 +348,7 @@ _.Zones =
 							["questID"] = 64061,
 							["cost"] = { { "c", 1767, 1000 } },	-- 1,000x Stygia
 						}),
-						--
+					--	Greens
 						i(186724, {	-- Technique: Contract: Death's Advance
 							["cost"] = { { "c", 1767, 2500 } },	-- 2,500x Stygia
 						}),

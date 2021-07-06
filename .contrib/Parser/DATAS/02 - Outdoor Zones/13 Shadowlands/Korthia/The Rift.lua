@@ -66,10 +66,15 @@ _.Zones =
 								{ 39.8, 42.9, KORTHIA },
 							},
 							["g"] = {
+							--	Epics
 								i(187251),	-- Shaded Skull Shoulderguards
 								i(187243),	-- Shadehunter's Crescent
+							--	Blues
+								i(187421),	-- Ashen Liniment
+							--	Greens
 								i(185050),	-- Spider Soul
-								i(187421),	-- Ashen Linament
+							--	Whites
+								i(186994),	-- Design: Shaded Stone Statue
 							},
 						}),
 						o(369438, {	-- Riftbound Cache
@@ -81,10 +86,15 @@ _.Zones =
 								{ 26.0, 55.7, KORTHIA },
 							},
 							["g"] = {
+							--	Epics
 								i(187251),	-- Shaded Skull Shoulderguards
 								i(187243),	-- Shadehunter's Crescent
+							--	Blues
+								i(187421),	-- Ashen Liniment
+							--	Greens
 								i(185050),	-- Spider Soul
-								i(187421),	-- Ashen Linament
+							--	Whites
+								i(186994),	-- Design: Shaded Stone Statue
 							},
 						}),
 						o(369440, {	-- Riftbound Cache
@@ -96,10 +106,15 @@ _.Zones =
 								{ 64.3, 30.3, KORTHIA },
 							},
 							["g"] = {
+							--	Epics
 								i(187251),	-- Shaded Skull Shoulderguards
 								i(187243),	-- Shadehunter's Crescent
+							--	Blues
+								i(187421),	-- Ashen Liniment
+							--	Greens
 								i(185050),	-- Spider Soul
-								i(187421),	-- Ashen Linament
+							--	Whites
+								i(186994),	-- Design: Shaded Stone Statue
 							},
 						}),
 						o(369439, {	-- Riftbound Cache
@@ -112,10 +127,15 @@ _.Zones =
 								{ 61.0, 35.4, KORTHIA },
 							},
 							["g"] = {
+							--	Epics
 								i(187251),	-- Shaded Skull Shoulderguards
 								i(187243),	-- Shadehunter's Crescent
+							--	Blues
+								i(187421),	-- Ashen Liniment
+							--	Greens
 								i(185050),	-- Spider Soul
-								i(187421),	-- Ashen Linament
+							--	Whites
+								i(186994),	-- Design: Shaded Stone Statue
 							},
 						}),
 					}),

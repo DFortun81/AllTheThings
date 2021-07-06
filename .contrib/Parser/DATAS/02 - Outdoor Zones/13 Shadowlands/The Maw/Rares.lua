@@ -285,6 +285,7 @@ _.Zones =
 						crit(8, {	-- Eketra
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
 						}),
+						i(186563),	-- Spear of the Impaler
 					},
 				}),
 				n(169827, {	-- Ekphoras, Herald of Grief
@@ -529,9 +530,7 @@ _.Zones =
 						crit(19, {	-- Ratgusher
 							["achievementID"] = 14660,	-- It's About Sending a Message
 						}),
-						q(63044, {	-- Bonus Objective
-							["isDaily"] = true,
-						}),
+						i(186627),	-- Belt of Ten Thousand Tails
 						i(183136),	-- Incendiary Mawrat
 					},
 				}),
@@ -748,15 +747,15 @@ _.Zones =
 								177443,	-- Vargir
 							},
 						}),
+						i(187393),	-- Sterling Hound-Handler's Gauntlets
+						i(186217),	-- Supple Helhound Leather Pants
+						i(187359),	-- Ylva's Water Dish
 						i(186970, {	-- Feeder's Hand and Key
 							["questID"] = 62683,
 							["g"] = {
 								i(186727),	-- Seal Breaker Key
 							},
 						}),
-						i(187393),	-- Sterling Hound-Handler's Gauntlets
-						i(186217),	-- Supple Helhound Leather Pants
-						i(187359),	-- Ylva's Water Dish
 					},
 				}),
 				i(182329, {	-- Domination's Calling
@@ -780,6 +779,7 @@ _.HiddenQuestTriggers = {
 	q(60903),	-- Krala bonus objective
 	q(61125),	-- Malevolent Stygia bonus objective
 	q(60991),	-- Orrholyn bonus objective
+	q(63044),	-- Ratgusher bonus objective
 	q(60992),	-- Razkazzar bonus objective
 	q(62211),	-- Skittering Broodmother bonus objective
 	q(59441),	-- Soulsmith Yol-Mattar bonus objective

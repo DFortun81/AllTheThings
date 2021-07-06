@@ -28,15 +28,16 @@ _.Zones =
 					["questID"] = 64298,	-- daily Maelie find
 					["isDaily"] = true,	-- seems this may have been changed to weekly on live... found Maelie on tuesday and the quest has not reset for me yet
 					["coords"] = {
+						{ 38.5, 31.5, KORTHIA },
 						{ 39.7, 34.8, KORTHIA },
 						{ 41.1, 39.8, KORTHIA },
 						{ 41.3, 27.8, KORTHIA },
+						{ 43.2, 31.3, KORTHIA },
 						{ 49.3, 41.8, KORTHIA },
 						{ 50.6, 22.9, KORTHIA },
 						{ 59.8, 15.1, KORTHIA },
 						{ 61.3, 40.3, KORTHIA },
 						{ 62.4, 49.7, KORTHIA },
-						{ 43.2, 31.3, KORTHIA },
 					},
 					["icon"] = 3155422,
 					["cr"] = 179912,	-- Maelie the Wanderer

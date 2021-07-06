@@ -232,4 +232,5 @@ _.Zones =
 
 _.HiddenQuestTriggers = {
 	q(64534),	-- triggered when looting Korthian Relic - i(187311), "Azgoth's Tattered Maps"
+	q(64535),	-- triggered when looting Korthian Relic - i(187333), "Core of an Unknown Titan"
 };
