@@ -3712,6 +3712,12 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					group = item.group;
 					left = group.text or RETRIEVING_DATA;
 					if not working and (left == RETRIEVING_DATA or left:find("%[]")) then working = true; end
+
+					-- If this group has a specific Class requirement, tack that on as well
+					if group.c and #group.c == 1 then
+						local class = GetClassInfo(group.c[1]);
+						left = left .. " " .. app.TryColorizeName(group, class);
+					end
 					if group.icon then item.prefix = item.prefix .. "|T" .. group.icon .. ":0|t "; end
 
 					-- If this group has specialization requirements, let's attempt to show the specialization icons.
@@ -9380,7 +9386,7 @@ local objectFields = {
 		return IsQuestFlaggedCompletedForObject(t);
 	end,
 	["savedAsQuest"] = function(t)
-		return IsQuestFlaggedCompletedForObject(t) == 1;
+		return IsQuestFlaggedCompleted(t.questID);
 	end,
 	["trackableAsQuest"] = app.ReturnTrue,
 	["repeatableAsQuest"] = function(t)
