@@ -1,5 +1,6 @@
 ﻿using NLua;
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -22,12 +23,12 @@ namespace ATT
             /// <summary>
             /// A list of fields that have already warned the programmer.
             /// </summary>
-            private static IDictionary<string, bool> WARNED_FIELDS = new Dictionary<string, bool>();
+            private static IDictionary<string, bool> WARNED_FIELDS = new ConcurrentDictionary<string, bool>();
 
             /// <summary>
             /// All of the containers that are in the database.
             /// </summary>
-            public static IDictionary<string, List<object>> AllContainers { get; } = new Dictionary<string, List<object>>();
+            public static IDictionary<string, List<object>> AllContainers { get; } = new ConcurrentDictionary<string, List<object>>();
 
             /// <summary>
             /// Get a container by its name.

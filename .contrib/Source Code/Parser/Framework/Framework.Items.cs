@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
 using NLua;
+using System.Collections.Concurrent;
 
 namespace ATT
 {
@@ -22,17 +23,17 @@ namespace ATT
             /// <summary>
             /// All of the items that have been parsed sorted by Item ID.
             /// </summary>
-            private static IDictionary<long, Dictionary<string, object>> ITEMS = new Dictionary<long, Dictionary<string, object>>();
+            private static IDictionary<long, Dictionary<string, object>> ITEMS = new ConcurrentDictionary<long, Dictionary<string, object>>();
 
             /// <summary>
             /// All of the item IDs that have been referenced somewhere in the database.
             /// </summary>
-            private static IDictionary<long, bool> ITEMS_WITH_REFERENCES = new Dictionary<long, bool>();
+            private static IDictionary<long, bool> ITEMS_WITH_REFERENCES = new ConcurrentDictionary<long, bool>();
 
             /// <summary>
             /// A list of fields that have already warned the programmer.
             /// </summary>
-            private static IDictionary<string, bool> WARNED_FIELDS = new Dictionary<string, bool>();
+            private static IDictionary<string, bool> WARNED_FIELDS = new ConcurrentDictionary<string, bool>();
 
             /// <summary>
             /// All of the item IDs that are in the database.

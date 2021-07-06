@@ -10,6 +10,8 @@ namespace ATT
 {
     class Program
     {
+        private static bool Errored { get; set; }
+
         static void Main(string[] args)
         {
             // Setup tracing to the console.
@@ -18,7 +20,7 @@ namespace ATT
             // Determine if running in Debug Mode or not.
             if (args != null && args.Length > 0)
             {
-                foreach(var arg in args)
+                foreach (var arg in args)
                 {
                     if (arg == "debug") Framework.DebugMode = true;
                 }
@@ -35,27 +37,23 @@ namespace ATT
 
                 Directory.CreateDirectory("../Debugging");
 
-                // Load all of the RAW JSON Data into the database.
-                var files = Directory.EnumerateFiles(databaseRootFolder, "*.json", SearchOption.AllDirectories).ToList();
-                files.Sort();
-                foreach (var fileName in files)
+                do
                 {
-                    Trace.Write(fileName);
-                    Trace.Write("... ");
+                    Errored = false;
+                    // Load all of the RAW JSON Data into the database.
+                    var files = Directory.EnumerateFiles(databaseRootFolder, "*.json", SearchOption.AllDirectories).ToList();
+                    Trace.WriteLine("Parsing JSON files...");
+                    files.AsParallel().ForAll(f => ParseJSONFile(f));
+                    Trace.WriteLine("Done parsing JSON files.");
 
-                    // Load the text and then convert it to a common JSON data format.
-                    var data = Framework.ToDictionary(File.ReadAllText(fileName));
-                    if (data == null)
+                    if (Errored)
                     {
-                        Trace.WriteLine("Invalid format!");
-                        continue;
+                        Trace.WriteLine("Please fix the formatting of the above Invalid JSON file(s)");
+                        Trace.WriteLine("Press Enter once you have resolved the issue.");
+                        Console.ReadLine();
                     }
-                    else Trace.WriteLine("");
-
-                    // Attempt to merge the data into the Database.
-                    Framework.Merge(data);
                 }
-                Trace.WriteLine("Done parsing JSON files...");
+                while (Errored);
 
                 // Load all of the Lua files into the database.
                 var mainFileName = $"{databaseRootFolder}\\_main.lua";
@@ -116,53 +114,16 @@ namespace ATT
                     Trace.WriteLine("Press Enter once you have resolved the issue.");
                     Console.ReadLine();
                 }
-                string content = "";
+                //string content = "";
                 Framework.Objects.ProcessingSourceData = true;
+                //Trace.WriteLine("Parsing LUA files in Parallel: Start");
+                //luaFiles.AsParallel().ForAll(f => ParseLUAFile(lua, f));
+                Trace.WriteLine("Parsing LUA files...");
                 foreach (var fileName in luaFiles)
                 {
-                    //Trace.WriteLine(fileName);
-                    do
-                    {
-                        try
-                        {
-                            lua.DoString("AllTheThings = {};_ = AllTheThings;");
-                            lua.DoString(content = ProcessContent(File.ReadAllText(fileName)));
-                            Framework.Merge(lua.GetTable("AllTheThings"));
-                            break;
-                        }
-                        // Invalid data are thrown on purpose when ATT-specific formatting issues are encountered in LUA files
-                        catch(InvalidDataException e)
-                        {
-                            Trace.WriteLine(fileName);
-                            Trace.WriteLine(e.Message);
-                            Trace.WriteLine("Press Enter once you have resolved the issue.");
-                            Console.ReadLine();
-                        }
-                        catch (Exception e)
-                        {
-                            Trace.WriteLine(fileName);
-                            Trace.WriteLine(e.Message);
-                            var line = GetLineNumber(e);
-                            if (line > -1)
-                            {
-                                var lines = content.Split(new char[] { '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
-                                for (int i = Math.Max(0, line - 2), count = 0; count < 4 && i < lines.Length; ++count)
-                                {
-                                    Trace.Write(i);
-                                    Trace.Write(":");
-                                    if (i == line) Trace.Write(">");
-                                    Trace.WriteLine(lines[i]);
-                                    ++i;
-                                }
-                            }
-                            else Trace.WriteLine(e);
-                            Trace.WriteLine("Press Enter once you have resolved the issue.");
-                            Console.ReadLine();
-                        }
-                    }
-                    while (true);
+                    ParseLUAFile(lua, fileName);
                 }
-                Trace.WriteLine("Done parsing LUA files...");
+                Trace.WriteLine("Done parsing LUA files.");
                 Framework.Objects.ProcessingSourceData = false;
 
                 do
@@ -214,7 +175,7 @@ namespace ATT
 
                 //}
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 Trace.WriteLine(e);
             }
@@ -317,7 +278,7 @@ namespace ATT
                         int j = 0;
                         var newCommand = new string[command.Length - 1];
                         newCommand[0] = command[0];
-                        for (int i = 2;i < command.Length; ++i)
+                        for (int i = 2; i < command.Length; ++i)
                         {
                             newCommand[++j] = command[i];
                         }
@@ -441,6 +402,71 @@ namespace ATT
             // Reset the index to the previous index.
             index = previousIndex;
             return false;
+        }
+
+        private static void ParseJSONFile(string fileName)
+        {
+            // Load the text and then convert it to a common JSON data format.
+            var data = Framework.ToDictionary(File.ReadAllText(fileName));
+            if (data == null)
+            {
+                Trace.WriteLine(fileName + ": Invalid format!");
+                Errored = true;
+            }
+            else
+            {
+                Trace.WriteLine(fileName + ": Complete");
+
+                // Attempt to merge the data into the Database.
+                Framework.Merge(data);
+            }
+        }
+
+        private static void ParseLUAFile(Lua lua, string fileName)
+        {
+            // copy the base LUA state for use on this file due to shared access issues
+            //Lua lua = new Lua(mainLua.State);
+            string content = string.Empty;
+            do
+            {
+                try
+                {
+                    lua.DoString("AllTheThings = {};_ = AllTheThings;");
+                    lua.DoString(content = ProcessContent(File.ReadAllText(fileName)));
+                    Framework.Merge(lua.GetTable("AllTheThings"));
+                    break;
+                }
+                // Invalid data are thrown on purpose when ATT-specific formatting issues are encountered in LUA files
+                catch (InvalidDataException e)
+                {
+                    Trace.WriteLine(fileName);
+                    Trace.WriteLine(e.Message);
+                    Trace.WriteLine("Press Enter once you have resolved the issue.");
+                    Console.ReadLine();
+                }
+                catch (Exception e)
+                {
+                    Trace.WriteLine(fileName);
+                    Trace.WriteLine(e.Message);
+                    var line = GetLineNumber(e);
+                    if (line > -1)
+                    {
+                        var lines = content.Split(new char[] { '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
+                        for (int i = Math.Max(0, line - 2), count = 0; count < 4 && i < lines.Length; ++count)
+                        {
+                            Trace.Write(i);
+                            Trace.Write(":");
+                            if (i == line) Trace.Write(">");
+                            Trace.WriteLine(lines[i]);
+                            ++i;
+                        }
+                    }
+                    else Trace.WriteLine(e);
+                    Trace.WriteLine("Press Enter once you have resolved the issue.");
+                    Console.ReadLine();
+                }
+            }
+            while (true);
         }
     }
 }
