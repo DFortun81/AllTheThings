@@ -3068,6 +3068,8 @@ _.NeverImplemented =
 		}),
 		n(-333, {	-- Daggers
 			-- Load In Game
+			i(2664),	-- Spinner Fang
+			i(17142),	-- Shard of the Defiler
 			i(62329),	-- Dire Slasher (never added)
 			i(115295),	-- Spectral Dagger
 			i(115446),	-- Brianium Dagger
@@ -3075,6 +3077,7 @@ _.NeverImplemented =
 			i(182564),	-- NPE Weapon Dagger AGI
 			i(182573),	-- NPE Weapon Dagger AGI 2
 			-- ItemID/Retrieving
+			i(23422),	-- Engraved Dagger
 			i(38247),	-- Entrail Render
 			i(108785),	-- 7.0 PH Weapon - 1H Dagger Agi
 			i(108786),	-- 7.0 PH Weapon - 1H Dagger Int
@@ -3090,8 +3093,12 @@ _.NeverImplemented =
 		}),
 		n(-348, {	-- Fist Weapons
 			-- Load In Game
+			i(81320),	-- Right-Handed Invis Knuckles
+			i(85588),	-- Reflex Edges [This version never implemented]
 			i(115797),	-- test fist weapon
 			-- ItemID/Retrieving
+			i(20003),	-- Devilsaur Claws
+			i(20005),	-- Devilsaur Claws
 			i(38243),	-- Ravaging Steelfist
 			i(108787),	-- 7.0 PH Weapon - 1H Fist Int
 			i(171191),	-- Owen Test (Season 8 Elite? Added 8.2.5)
@@ -3115,6 +3122,8 @@ _.NeverImplemented =
 		}),
 		n(-331, {	-- Held in Offhand
 			-- ItemID/Retrieving
+			i(18316),	-- Obsidian Bauble
+			i(19989),	-- Tome of Devouring Shadows
 			i(108810),	-- 7.0 PH Offhand - Offhand Int
 			i(109273),	-- QA Combat Test Caster Offhand 1
 			i(109301),	-- QA Combat Test Caster Offhand 2
@@ -3125,8 +3134,11 @@ _.NeverImplemented =
 		}),
 		n(-334, {	-- One-Handed Axes
 			-- Load In Game
+			i(5255),	-- Quilboar Tomahawk
 			i(68050),	-- Shatterscale Mightfish
+			i(80983),	-- Extravagant Tree Chopper (Never made it to Live, yet into our Appearances Tab)
 			i(115292),	-- Spectral Axe
+			i(117010),	-- Forester's Axe	(Never added in Game)
 			i(134586),	-- Vanguard Hatchet
 			i(134755),	-- Covert Hatchet
 			i(182562),	-- NPE Weapon 1H Axe AGI
@@ -3146,10 +3158,14 @@ _.NeverImplemented =
 		}),
 		n(-336, {	-- One-Handed Maces
 			-- Load In Game
+			i(107390),	-- Obliterator Firing Lever
+			i(115296),	-- Spectral Warmace
+			i(115299),	-- Spectral Scepter
 			i(163930),	-- Kovork's Rattle
 			i(174228),	-- Gavel of the Oasis
 			i(182578),	-- NPE Weapon 1H Mace AGI
 			-- ItemID/Retrieving
+			i(38468),	-- Kalu'ak Peacebringer
 			i(108791),	-- 7.0 PH Weapon - 1H Mace Agi
 			i(108792),	-- 7.0 PH Weapon - 1H Mace Str
 			i(108793),	-- 7.0 PH Weapon - 1H Mace Int
@@ -3193,6 +3209,8 @@ _.NeverImplemented =
 			i(167143),	-- QA Combat Test 1h Sword
 		}),
 		n(-343,	{	-- Polearms
+			-- Load In Game
+			i(115297),	-- Spectral Polearm
 			-- ItemID/Retrieving
 			i(54965),	-- Stormwind Spear
 			i(108797),	-- 7.0 PH Weapon - 2H Polearm Agi
@@ -3252,9 +3270,12 @@ _.NeverImplemented =
 		}),
 		n(-332, {	-- Shields
 			-- Load In Game
+			i(18303),	-- Nimble Buckler
+			i(18342),	-- Quel'dorei Guard [NPC Shield I believe]
 			i(182570),	-- NPE Weapon Shield
 			i(182576),	-- NPE Weapon Shield 2
 			-- ItemID/Retrieving
+			i(20502),	-- Ironbark Shield [NPC Shield]
 			i(34415),	-- Crystaline Shard Shield
 			i(60220),	-- Theodore's Heirloom Buckler
 			i(108808),	-- 7.0 PH Shield - Shield Str
@@ -3269,242 +3290,108 @@ _.NeverImplemented =
 			i(167140),	-- QA Combat Test  Shield 1
 		}),
 		n(-342, {	-- Staves
-			i(132474),	-- Unknown - was under Legion>Staves
-			i(132475),	-- Unknown - was under Legion>Staves
-			i(132476),	-- Unknown - was under Legion>Staves
-			i(49458),	-- Unknown
+			-- Load In Game
+			i(115298),	-- Spectral Spire
 			i(182566),	-- NPE Weapon Staff AGI
 			i(182572),	-- NPE Weapon Staff INT
-			i(157626),	-- Staff of Sining mists (Lv20 Start Gear?)
-			i(176841),	--
-			i(176842),	--
-			i(176843),	--
-			i(176844),	--
-			i(178117),	--
-			i(178118),	--
-			i(179519),	--
-			i(179520),	--
-			i(179521),	--
-			i(179522),	--
-			i(179523),	--
-			i(179524),	--
-			i(179994),	--
-			i(179995),	--
-			i(179996),	--
-			i(179997),	--
-			i(179998),	--
-			i(179999),	--
-			i(180157),	--
-			i(180158),	--
-			i(180159),	--
-			i(180160),	--
-			i(180161),	--
-			i(115298),	-- Spectral Spire
-			i(132477),	-- Unknown - was under Legion>Staves
-			i(132478),	-- Unknown - was under Legion>Staves
-			i(132479),	-- Unknown - was under Legion>Staves
-			i(132480),	-- Unknown - was under Legion>Staves
-			i(132481),	-- Unknown - was under Legion>Staves
-			i(132482),	-- Unknown - was under Legion>Staves
-			i(132483),	-- Unknown - was under Legion>Staves
-			i(134066),	-- Unknown - was under Legion>Staves
-			i(134068),	-- Unknown - was under Legion>Staves
-			i(108800),	-- Unknown - was under Legion>Staves
-			i(108801),	-- Unknown - was under Legion>Staves
-			i(108802),	-- Unknown - was under Legion>Staves
-			i(109291),	-- Unknown - was under Legion>Staves
-			i(109374),	-- Unknown - was under Legion>Staves
-			i(109406),	-- Unknown - was under Legion>Staves
-			i(109429),	-- Unknown - was under Legion>Staves
-			i(109507),	-- Unknown - was under Legion>Staves
-			i(109531),	-- Unknown - was under Legion>Staves
-			i(109532),	-- Unknown - was under Legion>Staves
-			i(166887),	-- Unknown
-			i(118180),	-- Aluneth
-			i(158509),	-- Tideshaper Staff
-			i(158568),	-- Mojo-Drainer Staff
-			i(129752),	-- Aluneth
-			i(129753),	-- Aluneth
-			i(129754),	-- Aluneth
-			i(129755),	-- Aluneth
-			i(129967),	-- Sheilun
-			i(129968),	-- Sheilun
-			i(129969),	-- Sheilun
-			i(129970),	-- Sheilun
+			-- ItemID/Retrieving
+			i(3738),	-- Brewing Rod
+			i(20522),	-- Feral Staff
+			i(38245),	-- Crystalline Providence
+			i(38248),	-- Torch of the Fallen Souls
+			i(49458),	-- Insight of the Water
+			i(108800),	-- 7.0 PH Weapon - 2H Staff Agi
+			i(108801),	-- 7.0 PH Weapon - 2H Staff Str
+			i(108802),	-- 7.0 PH Weapon - 2H Staff Int
+			i(109291),	-- QA Combat Test Agility Staff 1
+			i(109374),	-- QA Combat Test Agility Staff 2
+			i(109406),	-- QA Combat Test Caster Staff 1
+			i(109429),	-- QA Combat Test Caster Staff 2
+			i(109507),	-- QA Combat Test Caster Staff 3
+			i(109531),	-- QA Combat Test Agility Staff 3
+			i(109532),	-- QA Combat Test Caster Staff 4
+			i(134066),	-- Blackswell Staff
+			i(134068),	-- Blackswell Obliterator's Staff
 			i(159579),	-- 8.0 PH - Weapon - Staff
 			i(159580),	-- 8.0 PH - Weapon - Staff
 			i(159581),	-- 8.0 PH - Weapon - Staff
 			i(159582),	-- 8.0 PH - Weapon - Staff
 			i(159583),	-- 8.0 PH - Weapon - Staff
-			i(136858),	-- Wierd Testing Stuff for Artefact Weapons
-			i(139275),	-- Wierd Testing Stuff for Artefact Weapons
-			i(139891),	-- Wierd Testing Stuff for Artefact Weapons
-			i(165272),	--
+			i(165272),	-- Fallback Weapon - Staff
+			i(167145),	-- QA Combat Test Caster Staff 1
+			i(167147),	-- QA Combat Test Staff 1
 		}),
 		n(-335, {	-- Two Handed Axes
-			i(134563),	-- Unknown
-			i(108782),	-- Unknown
-			i(151377),	-- Arne Test Heirloom - Bloodied Arcanite Reaper
+			-- Load In Game
+			i(69916),	-- Trollbane (Daakara)
 			i(80980),	-- Axe of Aborted Deforestation (Never made it to Live, yet into our Appearances Tab)
-			i(167142),	-- Unknown (probably discarded idea of crucible of storms loot)
-			i(167145),	-- Unknown (probably discarded idea of crucible of storms loot)
-			i(167147),	-- Unknown (probably discarded idea of crucible of storms loot)
-			i(69916),	-- Trollbane (Test)
-			i(109519),	-- Unknown
-			i(165265),	-- Unknown
-			i(182568),	-- NPE Weapon 2H Axe STR
-			i(177121),	-- Honorbound Decapitator
-			i(180147),	--
-			i(180148),	--
-			i(180149),	--
-			i(180150),	--
-			i(180151),	--
-			i(180152),	-- Drust 2H Axe
-			i(183432),	--
-			i(115293),	-- Spectral Greataxe
 			i(80984),	-- Expropriator's Greataxe
+			i(115293),	-- Spectral Greataxe
+			i(182568),	-- NPE Weapon 2H Axe STR
+			-- ItemID/Retrieving
+			i(23420),	-- Engraved Axe
+			i(38244),	-- Valorous Exterminator (Never added)
+			i(108782),	-- 7.0 PH Weapon - 2H Axe Str
+			i(109519),	-- 6.0 QA Combat Test Strength 2H Axe
+			i(134563),	-- Death's Smile
+			i(151377),	-- Arne Test Heirloom - Bloodied Arcanite Reaper
+			i(165265),	-- Fallback Weapon - 2H Axe
+			i(167142),	-- QA Combat Test 2H Axe
 		}),
 		n(-337, {	-- Two Handed Maces
-			i(137660),	-- The Silver Hand
-			i(159555),	-- Unknown
-			i(165263),	-- Unknown
-			i(108794),	-- Unknown
-			i(108795),	-- Unknown
-			i(108796),	-- Unknown
-			i(109401),	-- Unknown
+			-- Load In Game
 			i(169818),	-- Quilboar Club
 			i(182565),	-- NPE Weapon 2H Mace STR
 			i(182569),	-- NPE Weapon 2H Sword STR
 			i(182579),	-- NPE Weapon 2H Sword STR 2
+			-- ItemID/Retrieving
+			i(108794),	-- 7.0 PH Weapon - 2H Mace Agi
+			i(108795),	-- 7.0 PH Weapon - 2H Mace Str
+			i(108796),	-- 7.0 PH Weapon - 2H Mace Int
+			i(109401),	-- 6.0 QA Combat Test Strength 2H Mace
+			i(159555),	-- 8.0 PH - Weapon - 2H Mace
+			i(165263),	-- Fallback Weapon - 2H Mace
 		}),
 		n(-339, {	-- Two Handed Swords
-			i(33475),	-- Artefact Frostmourne
-			i(137581),	-- Test Ashbringer 1
-			i(49457),	-- Unknown
-			i(81703),	-- Glorenzelg, added in 5.0.1 ??
-			i(139621),	-- The Watcher's Hammer. Used for Lost Edicts of the Watcher Paladin Appearance, actual appearance is gained via a different item
-			i(137582),	-- Test Ashbringer 2
-			i(49547),	-- Unknown
-			i(158506),	-- Scalawags Claymore
-			i(161293),	-- Thrasneck Greatblade
-			i(131738),	-- Unknown, tagged as 2Hand Sword
-			i(131739),	-- Unknown, tagged as 2Hand Sword
-			i(131741),	-- Unknown, tagged as 2Hand Sword
-			i(131742),	-- Unknown, tagged as 2Hand Sword
-			i(108806),	-- Unknown, tagged as 2Hand Sword
-			i(109373),	-- 6.0 QA Combat Test Strength 2h Sword
-			i(122747),	-- Unknown
-			i(165274),	-- Unknown
+			-- Load In Game
+			i(33475),	-- Frostmourne
+			i(56702),	-- Saw Blade (never made it to live)
+			i(81703),	-- Glorenzelg, High-Blade of the Silver Hand, added in 5.0.1 ??
 			i(182337),	-- Unholy Weapon
+			-- ItemID/Retrieving
+			i(913),		-- Huge Ogre Sword
+			i(12469),	-- Mutilator
+			i(23432),	-- Engraved Greatsword
+			i(49457),	-- Fury of the Flame
+			i(108806),	-- 7.0 PH Weapon - 2H Sword Str
+			i(109373),	-- 6.0 QA Combat Test Strength 2h Sword
+			i(165274),	-- Fallback Weapon - 2H Sword
+			--
+			i(49547),	-- Unknown
 		}),
 		n(-341, {	-- Wands
-			i(161924),	-- Seapriest's Wand (never addedd)
+			-- ItemID/Retrieving
+			i(32482),	-- Touch of Victory
+			i(34144),	-- Branch of Destruction
+			i(34146),	-- Red Death
+			i(34145),	-- Rod of Devastation
+			i(34147),	-- Silverstave
+			i(34148),	-- Purified Silverstave
+			i(34149),	-- Lightstave
+			i(58505),	-- ObsoleteQA Combat Test Caster DPS Wand 2
+			i(108807),	-- 7.0 PH Weapon - 1H Wand Int
+			i(109384),	-- 6.0 QA Combat Test Caster DPS Wand
+			i(165275),	-- Fallback Weapon - Wand
+			--
 			i(165883),	-- Unknown
-			i(161926),	-- Talanji's Salutary Scepter (never added)
-			i(159923),	-- Unknown
-			i(161929),	-- Unknown
-			i(180012),	--
-			i(180013),	--
-			i(180014),	--
-			i(180015),	--
-			i(180016),	--
-			i(180017),	--
-			i(152871),	-- Seapriest's Wand
-			i(152873),	-- Talanji's Salutary Scepter
-			i(165275),	-- Unknown
 		}),
 		n(-340, {	-- War Glaives
-			i(129735),	-- Verus
-			i(129736),	-- Verus
-			i(108807),	-- Unknown
-			i(158580),	-- Loa-Claimer's Wariglaives
+			-- Load In Game
 			i(151138),	-- Warglaive of Azzinoth [This version not implemented; was testing for transmog]
-			i(129737),	-- Verus
-			i(165682),	-- Unknown
 			i(182571),	-- NPE Weapon Warglaive AGI
+			-- ItemID/Retrieving
+			i(165682),	-- Fallback Weapon - Warglaives
 		}),
-		--
-		i(159538),	-- Coldscale Cudgel
-		i(159498),	-- Coldscale Pistol
-		i(159586),	-- Coralshell Blade
-		i(159559),	-- Coralshell Halberd
-		i(159513),	-- Deepwarden Fangs
-		i(159603),	-- Deepwarden Spark
-		i(159541),	-- Dockyard Mace
-		i(159500),	-- Dockyard Sidearm
-		i(159591),	-- Gnarlwood Cutlass
-		i(159553),	-- Gnarlwood Hammer
-		i(159567),	-- Gnarlwood Staff
-		i(159512),	-- Gol Osigr Handblade
-		i(159801),	-- Gol Osigr Targe
-		i(159817),	-- Gol Osigr Torch
-		i(159499),	-- Ironcrest Longrifle
-		i(159552),	-- Shipwrecker Maul
-		i(159588),	-- Stagheart Falchion
-		i(159542),	-- Stagheart Gavel
-		i(159472),	-- Stagheart Hatchet
-		i(159561),	-- Stagheart Poleaxe
-		i(159562),	-- Tideguard Pike
-		i(159503),	-- Tideguard Slicers
-		i(159565),	-- Tideguard Spire
-		i(159495),	-- Wavecaller Speargun
-		i(159526),	-- Wintersail Dirk
-		i(159554),	-- Wintersail Hammer
-		i(159592),	-- Wintersail Sabre
-		i(159510),	-- Wintersail Strikers
-		i(80983),	-- Extravagant Tree Chopper (Never made it to Live, yet into our Appearances Tab)
-		i(129899),	-- The Eagle Spear
-		i(119408),	-- Foereaver Polearm [This version wasn't added]
-		i(115297),	-- Spectral Polearm
-		i(18316),	-- Obsidian Bauble
-		i(19989),	-- Tome of Devouring Shadows
-		i(18303),	-- Nimble Buckler
-		i(18342),	-- Quel'dorei Guard [NPC Shield I believe]
-		i(20502),	-- Ironbark Shield [NPC Shield]
-		i(38244),	-- Valorous Exterminator (Never added)
-		i(32482),	-- Touch of Victory
-		i(34138),	-- Enchanted White Wand
-		i(34139),	-- Enchanted Crimson Wand
-		i(34144),	-- Branch of Destruction
-		i(34145),	-- Rod of Devastation
-		i(34146),	-- Red Death
-		i(34147),	-- Silverstave
-		i(34148),	-- Purified Silverstave
-		i(34149),	-- Lightstave
-		i(58505),	-- ObsoleteQA Combat Test Caster DPS Wand 2
-		i(65878),	-- Charbelching Wand
-		i(109384),	-- 6.0 QA Combat Test Caster DPS Wand
-		i(153505),	-- Monelite Boomstick
-		i(138489),	-- Kargath's Sacrified Hands
-		i(80981),	-- Scavenged Rotor Blade
-		i(81320),	-- Right-Handed Invis Knuckles
-		i(23420),	-- Engraved Axe
-		i(23422),	-- Engraved Dagger
-		i(20522),	-- Feral Staff
-		i(20003),	-- Devilsaur Claws
-		i(20005),	-- Devilsaur Claws
-		i(3222),	-- Wicked Dagger
-		i(38245),	-- Crystalline Providence
-		i(38248),	-- Torch of the Fallen Souls
-		i(84085),	-- Dreadwaste Meditation Staff
-		i(84086),	-- Dreadwaste Diviner's Rod
-		i(84527),	-- Hidden Pass Meditation Staff
-		i(85588),	-- Reflex Edges [This version never implemented]
-		i(117010),	-- Forester's Axe										(Never added in Game)
-		i(913),		-- Huge Ogre Sword
-		i(12469),	-- Mutilator
-		i(23432),	-- Engraved Greatsword
-		i(54553),	-- Kliklak's Fearsome Greatsword (never made it to live)
-		i(38468),	-- Kalu'ak Peacebringer
-		i(107390),	-- Obliterator Firing Lever
-		i(115296),	-- Spectral Warmace
-		i(115299),	-- Spectral Scepter
-		i(56702),	-- Saw Blade (never made it to live)
-		i(5255),	-- Quilboar Tomahawk
-		i(17142),	-- Shard of the Defiler
-		i(2664),	-- Spinner Fang
-		i(3738),	-- Brewing Rod
-		i(128824),	-- Tome of the Silver Hand
 	}),
 	-- Weapons end
 

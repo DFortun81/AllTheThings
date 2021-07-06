@@ -160,3 +160,10 @@ _.Craftables =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10052, {	-- Battle for Azeroth
+		prof(ENGINEERING, {
+			i(153505),	-- Monelite Boomstick
+		}),
+	}),
+});

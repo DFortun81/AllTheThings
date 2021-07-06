@@ -112,3 +112,10 @@ _.Instances = { tier(1, {	-- Classic
 		},
 	}),
 })};
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10002, {	-- Classic
+		inst(238, {	-- The Stockade
+			i(3222),	-- Wicked Dagger
+		}),
+	}),
+});

@@ -1645,6 +1645,8 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(161974),	-- Honorable Combatant's Cestus
 				i(159941),	-- Honorable Combatant's Inked Vessel
 				i(161937),	-- Honorable Combatant's Inked Vessel
+				i(159923),	-- Honorable Combatant's Salutary Scepter
+				i(161929),	-- Honorable Combatant's Salutary Scepter
 			}),
 		}),
 		n(-690, {	-- Sinister Gladiator: Battle for Azeroth Season 2

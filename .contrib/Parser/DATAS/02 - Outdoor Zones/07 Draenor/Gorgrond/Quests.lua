@@ -2105,3 +2105,10 @@ _.Zones =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-9981, {	-- Draenor
+		n(-319, {	-- Weapons
+			i(119408),	-- Foereaver Polearm [This version wasn't added]
+		}),
+	}),
+});

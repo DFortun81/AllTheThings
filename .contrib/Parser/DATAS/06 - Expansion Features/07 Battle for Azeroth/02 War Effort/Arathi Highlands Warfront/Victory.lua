@@ -320,6 +320,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(177127),	-- Honorbound Gladius
 				i(177134),	-- 7th Legionnaire's Longsword
 				i(177137),	-- 7th Legionnaire's Claymore
+				i(177121),	-- Honorbound Decapitator
 			}),
 		}),
 	}),

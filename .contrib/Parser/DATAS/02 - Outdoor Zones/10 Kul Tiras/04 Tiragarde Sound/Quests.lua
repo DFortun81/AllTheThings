@@ -1536,6 +1536,11 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(161309),	-- Ashvane Captain's Gladius
 			i(158504),	-- Whaler's Pike
 			i(153401),	-- Whaler's Pike
+			i(158509),	-- Tideshaper Staff
+			i(158506),	-- Scalawags Claymore
+			i(161293),	-- Thrasneck Greatblade
+			i(161924),	-- Seapriest's Wand (A) (never addedd)
+			i(161926),	-- Talanji's Salutary Scepter (A) (never added)
 		}),
 		n(-322, { -- Cloaks
 			i(155091),	-- Thovas-Explorer's Cape

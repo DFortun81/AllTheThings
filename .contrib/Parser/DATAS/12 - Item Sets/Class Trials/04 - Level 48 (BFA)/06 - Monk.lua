@@ -75,6 +75,8 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 						i(150590),	-- Staff of the Jade Mist
 						i(150591),	-- Sword of Singing Wind
 						i(150589),	-- Brewmasher's Staff
+						-- added 7.3.5/Confirmed
+						i(157626),	-- Staff of Singing Mists (Lv20 Start Gear?)
 					},
 				}),
 				-- added 7.0.3/No Info

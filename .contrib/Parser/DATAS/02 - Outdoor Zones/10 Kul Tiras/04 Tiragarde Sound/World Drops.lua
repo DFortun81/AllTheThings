@@ -131,3 +131,37 @@ _.Zones =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10052, {	-- Battle for Azeroth
+		n(-319, {	-- Weapons
+			i(159538),	-- Coldscale Cudgel
+		i(159498),	-- Coldscale Pistol
+		i(159586),	-- Coralshell Blade
+		i(159559),	-- Coralshell Halberd
+		i(159513),	-- Deepwarden Fangs
+		i(159603),	-- Deepwarden Spark
+		i(159541),	-- Dockyard Mace
+		i(159500),	-- Dockyard Sidearm
+		i(159591),	-- Gnarlwood Cutlass
+		i(159553),	-- Gnarlwood Hammer
+		i(159567),	-- Gnarlwood Staff
+		i(159512),	-- Gol Osigr Handblade
+		i(159801),	-- Gol Osigr Targe
+		i(159817),	-- Gol Osigr Torch
+		i(159499),	-- Ironcrest Longrifle
+		i(159552),	-- Shipwrecker Maul
+		i(159588),	-- Stagheart Falchion
+		i(159542),	-- Stagheart Gavel
+		i(159472),	-- Stagheart Hatchet
+		i(159561),	-- Stagheart Poleaxe
+		i(159562),	-- Tideguard Pike
+		i(159503),	-- Tideguard Slicers
+		i(159565),	-- Tideguard Spire
+		i(159495),	-- Wavecaller Speargun
+		i(159526),	-- Wintersail Dirk
+		i(159554),	-- Wintersail Hammer
+		i(159592),	-- Wintersail Sabre
+		i(159510),	-- Wintersail Strikers
+		}),
+	}),
+});

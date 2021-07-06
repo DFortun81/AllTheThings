@@ -829,7 +829,7 @@ _.Craftables =
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-10041, {
 		prof(BLACKSMITHING, {
-			i(93441),	-- Crafted Dreadful Gladiator's Barrier
+			i(93441),	-- Crafted Dreadful Gladiator's Barrier - UNUSED
 			i(93483),	-- Crafted Dreadful Gladiator's Redoubt
 			i(93614),	-- Crafted Dreadful Gladiator's Shield Wall
 		}),

@@ -892,6 +892,12 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(176044),	-- Ardenweald Quest Offhand
 			i(176045),	-- Ardenweald Quest Offhand
 			i(176046),	-- Ardenweald Quest Offhand
+			i(176841),	-- Ardenweald Quest Staff
+			i(176842),	-- Ardenweald Quest Staff
+			i(176843),	-- Ardenweald Quest Staff
+			i(176844),	-- Ardenweald Quest Staff
+			i(178117),	-- Ardenweald NPC Staff
+			i(178118),	-- Ardenweald NPC Staff
 		}),
 	}),
 });

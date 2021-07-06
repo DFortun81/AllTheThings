@@ -705,6 +705,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-10100, {	-- Shadowlands
 		n(-693, {	-- Sinful Gladiator: Shadowlands Season 1
 			n(-319, {	-- Weapons
+				i(183432),	-- Sinful Aspirant's Reaver
 				i(178469),	-- Sinful Aspirant's Bow
 				i(178671),	-- Sinful Aspirant's Broadsword
 				i(178672),	-- Sinful Aspirant's Bulwark

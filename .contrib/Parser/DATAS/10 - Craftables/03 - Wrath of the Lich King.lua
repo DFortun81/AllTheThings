@@ -632,11 +632,15 @@ _.Craftables =
 -- The items never made it in.
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-10014, {	-- Wrath of the Lich King
-		prof(LEATHERWORKING, {
-			i(38378)	-- Wyrmscale Leg Armor
+		prof(ENCHANTING, {
+			i(34138),	-- Enchanted White Wand
+			i(34139),	-- Enchanted Crimson Wand
 		}),
 		prof(ENGINEERING, {
 			i(48945),	-- Gnomish Thinking Cap (Mind Amplification Disk was added for it)
+		}),
+		prof(LEATHERWORKING, {
+			i(38378)	-- Wyrmscale Leg Armor
 		}),
 	}),
 });

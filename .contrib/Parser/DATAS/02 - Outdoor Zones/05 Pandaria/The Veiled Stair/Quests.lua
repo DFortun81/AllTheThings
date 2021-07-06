@@ -46,3 +46,10 @@ _.Zones =
 		}),
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10041, {	-- Mists of Pandaria
+		n(-319, {	-- Weapons
+			i(84527),	-- Hidden Pass Meditation Staff
+		}),
+	}),
+});

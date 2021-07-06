@@ -477,7 +477,8 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	}),
 	n(-9979, {	-- Cataclysm
 		n(-319, {	-- Weapons
-			i(54554),	-- Bejeweled Ship's Wheel 
+			i(54554),	-- Bejeweled Ship's Wheel
+			i(54553),	-- Kliklak's Fearsome Greatsword (never made it to live)
 		}),
 	}),
 });

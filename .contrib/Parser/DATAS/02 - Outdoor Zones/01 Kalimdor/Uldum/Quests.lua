@@ -899,4 +899,9 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(28240),	-- Tapped Out
 		q(28255),	-- Vhat's Next?
 	}),
+	n(-9979, {	-- Cataclysm
+		n(-319, {	-- Weapons
+			i(65878),	-- Charbelching Wand
+		}),
+	}),
 });

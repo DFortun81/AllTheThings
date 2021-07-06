@@ -2009,6 +2009,35 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(180080),	-- Ardenweald Covenant Bow
 				i(180082),	-- Ardenweald Covenant Bow
 				i(182350),	-- Ardenweald Raid Mace STR
+				i(179519),	-- Ardenweald Covenant Staff
+				i(179520),	-- Ardenweald Covenant Staff
+				i(179521),	-- Ardenweald Covenant Staff
+				i(179522),	-- Ardenweald Covenant Staff
+				i(179523),	-- Ardenweald Covenant Staff
+				i(179524),	-- Ardenweald Covenant Staff
+				i(179994),	-- Ardenweald Covenant Staff 2
+				i(179995),	-- Ardenweald Covenant Staff 2
+				i(179996),	-- Ardenweald Covenant Staff 2
+				i(179997),	-- Ardenweald Covenant Staff 2
+				i(179998),	-- Ardenweald Covenant Staff 2
+				i(179999),	-- Ardenweald Covenant Staff 2
+				i(180157),	-- Drust Staff
+				i(180158),	-- Drust Staff
+				i(180159),	-- Drust Staff
+				i(180160),	-- Drust Staff
+				i(180161),	-- Drust Staff
+				i(180147),	-- Drust 2H Axe
+				i(180148),	-- Drust 2H Axe
+				i(180149),	-- Drust 2H Axe
+				i(180150),	-- Drust 2H Axe
+				i(180151),	-- Drust 2H Axe
+				i(180152),	-- Drust 2H Axe
+				i(180012),	-- Ardenweald Covenant Wand
+				i(180013),	-- Ardenweald Covenant Wand
+				i(180014),	-- Ardenweald Covenant Wand
+				i(180015),	-- Ardenweald Covenant Wand
+				i(180016),	-- Ardenweald Covenant Wand
+				i(180017),	-- Ardenweald Covenant Wand
 			}),
 		}),
 	}),

@@ -2052,6 +2052,11 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 			i(166889),	-- Zandalari Prelate's Lightblade
 			i(158563),	-- Tomb-Rustler's Polearm
 			i(154972),	-- Tomb-Rustler's Polearm
+			i(166887),	-- Pakura Priest Staff
+			i(158568),	-- Mojo-Drainer Staff
+			i(152871),	-- Seapriest's Wand (H)
+			i(152873),	-- Talanji's Salutary Scepter (H)
+			i(158580),	-- Loa-Claimer's Wariglaives
 		}),
 	}),
 });
