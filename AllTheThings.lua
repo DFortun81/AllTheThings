@@ -1374,6 +1374,40 @@ local function RawCloneData(data)
 	end
 	return clone;
 end
+local function GetSourceID(itemLink)
+	if C_Item.IsDressableItemByID(itemLink) then
+		-- Updated function courtesy of CanIMogIt, Thanks AmiYuy and Team! :D
+		local sourceID = select(2, C_TransmogCollection.GetItemInfo(itemLink));
+		if sourceID then return sourceID, true; end
+
+		-- if app.DEBUG_PRINT then print("Failed to directly retrieve SourceID",itemLink) end
+		local itemID, _, _, slotName = GetItemInfoInstant(itemLink);
+		if slotName then
+			local slots = inventorySlotsMap[slotName];
+			if slots then
+				DressUpModel:SetUnit('player');
+				DressUpModel:Undress();
+				for _,slot in pairs(slots) do
+					DressUpModel:TryOn(itemLink, slot);
+					local tmogInfo = DressUpModel:GetItemTransmogInfo(slot);
+					-- print("SlotInfo",slot)
+					-- app.PrintTable(tmogInfo)
+					local sourceID = tmogInfo and tmogInfo.appearanceID;
+					if sourceID and sourceID ~= 0 then
+						-- Added 5/4/2018 - Account for DressUpModel lag... sigh
+						local sourceItemLink = select(6, C_TransmogCollection.GetAppearanceSourceInfo(sourceID));
+						-- print("SourceID from DressUpModel",sourceID,sourceItemLink)
+						if sourceItemLink and tonumber(sourceItemLink:match("item:(%d+)")) == itemID then
+							return sourceID, true;
+						end
+					end
+				end
+			end
+		end
+		return nil, true;
+	end
+	return nil, false;
+end
 -- verifies that an item group either has no sourceID or that its sourceID matches what the in-game API returns
 -- based on the itemID and modID of the item
 local function VerifySourceID(item)
@@ -1400,7 +1434,7 @@ local function VerifySourceID(item)
 		-- quality below UNCOMMON means no source
 		if item.q and item.q < 2 then return true; end
 
-		local linkInfoSourceID = app.GetSourceID(item.link);
+		local linkInfoSourceID = GetSourceID(item.link);
 		if linkInfoSourceID and linkInfoSourceID ~= item.s then
 			print("Mismatched SourceID",item.link,item.s,"=>",linkInfoSourceID);
 			return;
@@ -1411,38 +1445,6 @@ local function VerifySourceID(item)
 	end
 	-- at this point the game source information matches the information for this item group
 	return true;
-end
-local function GetSourceID(itemLink)
-	if C_Item.IsDressableItemByID(itemLink) then
-		-- Updated function courtesy of CanIMogIt, Thanks AmiYuy and Team! :D
-		local sourceID = select(2, C_TransmogCollection.GetItemInfo(itemLink));
-		if sourceID then return sourceID, true; end
-
-		-- in PTR this doesn't exist anymore?
-		if DressUpModel.GetSlotTransmogSources then
-			local itemID, _, _, slotName = GetItemInfoInstant(itemLink);
-			if slotName then
-				local slots = inventorySlotsMap[slotName];
-				if slots then
-					DressUpModel:SetUnit('player');
-					DressUpModel:Undress();
-					for i, slot in pairs(slots) do
-						DressUpModel:TryOn(itemLink, slot);
-						local sourceID = DressUpModel:GetSlotTransmogSources(slot);
-						if sourceID and sourceID ~= 0 then
-							-- Added 5/4/2018 - Account for DressUpModel lag... sigh
-							local sourceItemLink = select(6, C_TransmogCollection.GetAppearanceSourceInfo(sourceID));
-							if sourceItemLink and tonumber(sourceItemLink:match("item:(%d+)")) == itemID then
-								return sourceID, true;
-							end
-						end
-					end
-				end
-			end
-		end
-		return nil, true;
-	end
-	return nil, false;
 end
 app.IsComplete = function(o)
 	if o.total then return o.total == o.progress; end
@@ -8215,6 +8217,9 @@ local itemFields = {
 	["retries"] = function(t)
 		return GetCachedField(t, "retries");
 	end,
+	["q"] = function(t)
+		return GetCachedField(t, "q");
+	end,
 	["b"] = function(t)
 		return GetCachedField(t, "b") or 2;
 		-- local link = t.link;
@@ -12843,12 +12848,13 @@ local function SetRowData(self, row, data)
 		-- no or bad sourceID or requested to reSource and is of a proper source-able quality
 		elseif data.reSource and (not data.q or data.q > 1) then
 			-- If it doesn't, the source ID will need to be harvested.
-			local s = GetSourceID(text) or (data.artifactID and data.s);
+			local s, success = GetSourceID(text) or (data.artifactID and data.s);
 			if s and s > 0 then
 				data.reSource = nil;
 				-- only save the source if it is different than what we already have
 				if not data.s or data.s < 1 or data.s ~= s or (data.artifactID and data.s) then
 					print("SourceID Update",data.text,data.s,"=>",s);
+					-- print(GetItemInfo(text))
 					data.s = s;
 					if data.collected then
 						data.parent.progress = data.parent.progress + 1;
@@ -12884,8 +12890,10 @@ local function SetRowData(self, row, data)
 						AllTheThingsHarvestItems[data.itemID] = item;
 					end
 				end
+			elseif success then
+				print("Success without a SourceID", text);
 			else
-				--print("NARP", text);
+				-- print("NARP", text);
 				data.s = nil;
 				data.reSource = nil;
 				data.parent.total = data.parent.total - 1;
@@ -18257,7 +18265,7 @@ app:GetWindow("Debugger", UIParent, function(self, force)
 					-- print("Looted Item",itemString)
 					local itemID = GetItemInfoInstant(itemString);
 					-- app.DEBUG_PRINT = true;
-					AddObject({ ["unit"] = j, ["g"] = { { ["itemID"] = itemID, ["rawlink"] = itemString, ["s"] = app.GetSourceID(itemString) } } });
+					AddObject({ ["unit"] = j, ["g"] = { { ["itemID"] = itemID, ["rawlink"] = itemString, ["s"] = GetSourceID(itemString) } } });
 					-- app.DEBUG_PRINT = nil;
 				end
 			end

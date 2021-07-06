@@ -122,7 +122,7 @@ _.Zones =
 							["name"] = "Daily Drop #1",
 							["isDaily"] = true,
 						}),
-						q(64281, {	-- Daily Drop #2
+						q(64281, {	-- Daily Drop #2 -- Don't think this exists... will wait a day or so if no one confirms the #bounty post and move to NYI, or maybe it's for receiving the mount?
 							["name"] = "Daily Drop #2",
 							["isDaily"] = true,
 						}),
