@@ -1769,7 +1769,7 @@ _.Zones =
 					["provider"] = { "n", 129589 },	-- The Monkey King
 					["coord"] = { 47.0, 88.4, 1165 },
 					["races"] = ALLIANCE_ONLY,
-					["maps"] = { 1165 },	-- Dazar'alortsfak
+					["maps"] = { 1165 },	-- Dazar'alor
 				}),
 				q(50044, {	-- Archaeological Efficiency (A)
 					["coord"] = { 44.4, 73.4, 862 },
