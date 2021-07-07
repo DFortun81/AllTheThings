@@ -2877,7 +2877,7 @@ for key,value in pairs({
 	[355947] = "Planque de Glutharn",	-- Glutharn's Stash
 	[356555] = "Collier d’Eurydéa",	-- Eurydea's Necklace
 	[356693] = "Tribut extravagant de la baronne Vashj",	-- Baroness Vashj's Extravagant Tribute
-	--TODO: [356697] = "Alexandros Mograine's Extravagant Tribute",	-- Alexandros Mograine's Extravagant Tribute
+	[356697] = "Tribut extravagant d’Alexandros Mograine",	-- Alexandros Mograine's Extravagant Tribute
 	[356700] = "Tribut extravagant du grand maître Vole",	-- Grandmaster Vole's Extravagant Tribute
 	[356705] = "Tribut extravagant de Marileth, catalyseur de peste",	-- Plague Deviser Marileth's Extravagant Tribute
 	--TODO: [356709] = "Lady Moonberry's Extravagant Tribute",	-- Lady Moonberry's Extravagant Tribute
@@ -2885,7 +2885,7 @@ for key,value in pairs({
 	[356716] = "Tribut extravagant de la dromane Aliothe",	-- Droman Aliothe's Extravagant Tribute
 	[356720] = "Tribut extravagant de Choufa",	-- Choofa's Extravagant Tribute
 	--TODO: [356725] = "Polemarch Adrestes' Extravagant Tribute",	-- Polemarch Adrestes' Extravagant Tribute
-	--TODO: [356728] = "Mikanikos' Extravagant Tribute",	-- Mikanikos' Extravagant Tribute
+	[356728] = "Tribut extravagant de Mikanikos",	-- Mikanikos' Extravagant Tribute
 	[356733] = "Tribut extravagant de Kléia et Pélagos",	-- Kleia and Pelagos' Extravagant Tribute
 	[356737] = "Tribut extravagant de Sika",	-- Sika's Extravagant Tribute
 	[356741] = "Tribut extravagant de la comtesse",	-- The Countess' Extravagant Tribute
@@ -2919,7 +2919,7 @@ for key,value in pairs({
 	[357937] = "Cache enfouie",	-- Burried Cache
 	[358298] = "Coffre de la chambre Interdite",	-- Forbidden Chamber Lockbox
 	[358315] = "Fragments de main squelettique",	-- Skeletal Hand Fragments
-	--TODO: [358318] = "R. Suavel Dredger Portrait",	-- R. Suavel Dredger Portrait
+	[358318] = "Portrait purotin de R. Suavel",	-- R. Suavel Dredger Portrait
 	[358319] = "Message de l’ensorceleur",	-- Sorceror's Note
 	[358382] = "Avis de recherche : Chélicère",	-- Wanted: Chelicera
 	[358533] = "Fournitures oubliées",	-- Forgotten Supplies
