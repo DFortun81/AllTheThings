@@ -9404,6 +9404,23 @@ local objectFields = {
 			end
 		end
 	end,
+	["repeatable"] = function(t)
+		-- only used for generic objects with no other way of being tracked as repeatable
+		if not t.g then return; end
+		for _,group in ipairs(t.g) do
+			if group.objectID and group.repeatable then return true; end
+		end
+		-- every contained sub-object is not repeatable, so the repeated object should also be marked as not repeatable
+	end,
+	["saved"] = function(t)
+		-- only used for generic objects with no other way of being tracked as saved
+		if not t.g then return; end
+		for _,group in ipairs(t.g) do
+			if group.objectID and not group.saved then return; end
+		end
+		-- every contained sub-object is already saved, so the repeated object should also be marked as saved
+		return true;
+	end,
 };
 app.BaseObject = app.BaseObjectFields(objectFields);
 
