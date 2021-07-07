@@ -14,6 +14,7 @@ i(186201);	-- Ancient Anima Vessel
 i(186204);	-- Anima-Stained Glass Shards
 i(187349);	-- Anima Laden Egg
 i(181540);	-- Animaflower Bud
+i(187517);	-- Animaswell Prism
 i(181477);	-- Ardendew Pearl
 i(184381);	-- Astral Sapwood
 i(184773);	-- Battle-Tested Armor Component

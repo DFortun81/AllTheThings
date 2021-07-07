@@ -64,6 +64,7 @@ _.Zones =
 								i(187243),	-- Shadehunter's Crescent
 							--	Blues
 								i(187421),	-- Ashen Liniment
+								i(187276),	-- Stolen Korthian Supplies
 							--	Greens
 								i(185050),	-- Spider Soul
 							--	Whites
