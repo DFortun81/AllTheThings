@@ -2993,9 +2993,9 @@ for key,value in pairs({
 	[369340] = "Scatola di Reliquie di Korthia",	-- Korthian Relic Box
 	[369341] = "Scrigno dei Giurafauce",	-- Mawsworn Cache
 	[369437] = "Cassa Vincolata alla Fenditura",	-- Riftbound Cache
-	--TODO: [369438] = "Riftbound Cache",	-- Riftbound Cache
-	--TODO: [369439] = "Riftbound Cache",	-- Riftbound Cache
-	--TODO: [369440] = "Riftbound Cache",	-- Riftbound Cache
+	[369438] = "Cassa Vincolata alla Fenditura",	-- Riftbound Cache
+	[369439] = "Cassa Vincolata alla Fenditura",	-- Riftbound Cache
+	[369440] = "Cassa Vincolata alla Fenditura",	-- Riftbound Cache
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only
 	--TODO: [9999892] = "Main Objective + 2 Bonus Areas",	-- Main Objective + 2 Bonus Areas

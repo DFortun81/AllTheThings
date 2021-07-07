@@ -3045,7 +3045,7 @@ for key, value in pairs({
 	[369340] = "刻希亚圣物箱",	-- Korthian Relic Box
 	[369341] = "渊誓之箱",	-- Mawsworn Cache
 	[369437] = "隙缚宝箱",	-- Riftbound Cache
-	--TODO: [369438] = "Riftbound Cache",	-- Riftbound Cache
+	[369438] = "隙缚宝箱",	-- Riftbound Cache
 	[369439] = "隙缚宝箱",	-- Riftbound Cache
 	[369440] = "隙缚宝箱",	-- Riftbound Cache
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
