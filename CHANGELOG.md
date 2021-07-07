@@ -1,30 +1,25 @@
 # AllTheThings
 
-## [SL-2.3.6](https://github.com/DFortun81/AllTheThings/tree/SL-2.3.6) (2021-07-03)
-[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.3.5a...SL-2.3.6) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
+## [SL-2.3.7](https://github.com/DFortun81/AllTheThings/tree/SL-2.3.7) (2021-07-07)
+[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.3.6...SL-2.3.7) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
 
-### Highlight of this update
+### Tip of the day
 
-#### Xyraxz's Controlling Rod
+You can right-click practically everything in ATT lists and it will open new window, often with more information about the Thing!
 
-Xyraxz's Controlling Rod was finally added to the addon, thanks everyone for reporting it!
+### Another tip of the day
 
-#### Fixes!
+You can Alt+right-click some things to plot coordinates to them, this should work with quests, NPCs, treasures, etc. We support both TomTom and game navigation system.
 
-Lots of post-9.1 release fixes including but not limited to:
+### Notable changes:
 
-- huge lag on login, rendering the game unplayable for a long period of time
-- empty tooltip for paragon rewards in currency tab
-- broken Mark of Honor window
-
-### Other notable changes:
-
-- Added an auto-quest refresh which will trigger after looting & leaving combat (Please let us know if this causes any noticeable lag! Can turn it into a setting otherwise)
-- Fixed Quest Chain Requirements from sometimes cutting-off when the quest switches from faction-specific to Neutral quests and vice versa
-- Various small 9.1 updates: drops, quests, coords, recipes, adventure rewards, etc
-- Ongoing conversion of cost/token items to new format
-- More performance improvements (profession lists, raid assistant, etc)
-- Slight adjustment to waypoint plotting via TomTom to only plot visible groups which the player is not 'saved' to, unless it is the specific Thing which was clicked
-- Marked 'Fel-Smelter' and 'Mass Obliteration' achievements as unobtainable and moved them to legacy. RIP anyone who didn't get them
-- More stuff like treasure names should be localized now
-- Various fixes to old content
+- To help viewing Tier Tokens (and other Currency-type Items) while in Account Mode, the Class constraint of any Contained Thing will additionally be shown next to that Thing in the tooltip
+- Lots of items from WoD+ that had their required level in ATT set to 100+ were fixed. This should help people playing with "Filter Things By Level" on. Unfortunatelly, some items still report high levels (even when you can get them from level 10 using Timewalking Campaigns), nothing we can do about this. However, there shouldn't be any items "requiring" level 60+ anymore but Free Trial characters are still screwed.
+- We will now group together treasures that have same loot while still alowing you to see if you looted individual chests. Plotting coordinates to the whole group of objects still works. You can see this in action in Maw/Korthia.
+- Overall slight decrease in memory usage on start up depending on loaded Zone (~3-5%). Popout windows now require slightly less memory as well.
+- Fixed rare errors when learning new mounts/flight points
+- Fixed an issue where the minilist would not populate sometimes
+- More rare/Adventure drops, treasure/rare coordinates/descriptions, recipes, etc
+- Harvested more items (Tazavesh, etc)
+- Added Death's Advance and The Archivist's Codex to the Factions section
+- Various fixes
