@@ -4311,12 +4311,6 @@ _.HiddenQuestTriggers = {
 		q(62658),	-- Shadowlands Dungeon Reward Quest
 		q(62079),	-- triggered at the end of Mythic Tirna Scithe (+2)
 
-		-- World Bosses
-		q(62810),	-- Mortanis kill questID
-		q(62812),	-- Nurgash Muckformed kill questID
-		q(62811),	-- Oranomonos kill questID
-		q(62809),	-- Valinor kill questID
-
 		-- Castle Nathria
 		q(60680),	-- LFR 'The Leeching Vaults' Completed
 

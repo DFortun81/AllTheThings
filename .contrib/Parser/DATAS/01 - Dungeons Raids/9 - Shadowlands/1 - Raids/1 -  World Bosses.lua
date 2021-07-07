@@ -68,10 +68,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 			}),
 			e(2456, {	-- Mor'geth <Tormentor of the Damned>
 				["isWeekly"] = true,
-			--	["questID"] = ,	-- Mor'geth (WQ)
+				["questID"] = 64531,	-- Mor'geth (WQ)
 				["isRaid"] = true,
 			--	["coord"] = { , ,  },
-			--	["maps"] = {  },
+				["maps"] = { 1543, 1820, 1821, 1822, 1823 },	-- all maps in the Maw
 				["cr"] = 178958,	-- Mor'geth <Tormentor of the Damned>
 				["g"] = bubbleDown({ ["modID"] = 3 }, {
 					i(187507),	-- Adaptive Armor Fragment
@@ -167,3 +167,11 @@ _.Instances = { tier(9, {	-- Shadowlands
 		},
 	}),
 })};
+
+_.HiddenQuestTriggers = {
+	q(64547),	-- Mor'geth kill questID
+	q(62810),	-- Mortanis kill questID
+	q(62812),	-- Nurgash Muckformed kill questID
+	q(62811),	-- Oranomonos kill questID
+	q(62809),	-- Valinor kill questID
+};
