@@ -2742,7 +2742,7 @@ for key,value in pairs({
 	[350978] = "Tesouro do Conservatório da Rainha",	-- Queen's Conservatory Cache
 	[351467] = "Epitáfio Esmaecido",	-- Faded Epitaph
 	[351487] = "Tesouro Secreto",	-- Secret Treasure
-	--TODO: [351540] = "Secret Treasure",	-- Secret Treasure
+	[351540] = "Tesouro Secreto",	-- Secret Treasure
 	[351541] = "Tesouro Secreto",	-- Secret Treasure
 	[351542] = "Tesouro Secreto",	-- Secret Treasure
 	[351543] = "Tesouro Secreto",	-- Secret Treasure
@@ -2882,7 +2882,7 @@ for key,value in pairs({
 	[356700] = "Tributo Extravagante do Grão-mestre Vole",	-- Grandmaster Vole's Extravagant Tribute
 	[356705] = "Tributo Extravagante do Arquiteto da Peste Marileth",	-- Plague Deviser Marileth's Extravagant Tribute
 	--TODO: [356709] = "Lady Moonberry's Extravagant Tribute",	-- Lady Moonberry's Extravagant Tribute
-	--TODO: [356712] = "Hunt-Captain Korayn's Extravagant Tribute",	-- Hunt-Captain Korayn's Extravagant Tribute
+	[356712] = "Tributo Extravagante da Capitã de Caça Korayn",	-- Hunt-Captain Korayn's Extravagant Tribute
 	[356716] = "Tributo Extravagante da Droman Aliothe",	-- Droman Aliothe's Extravagant Tribute
 	[356720] = "Tributo Extravagante de Xufa",	-- Choofa's Extravagant Tribute
 	--TODO: [356725] = "Polemarch Adrestes' Extravagant Tribute",	-- Polemarch Adrestes' Extravagant Tribute

@@ -2970,7 +2970,7 @@ for key,value in pairs({
 	[369185] = "Caja de reliquias korthiana",	-- Korthian Relic Box
 	[369194] = "Huevo cargado de ánima",	-- Anima Laden Egg
 	[369204] = "Reliquia desplazada",	-- Displaced Relic
-	--TODO: [369216] = "Helsworn Chest",	-- Helsworn Chest
+	[369216] = "Cofre jurainfierno",	-- Helsworn Chest
 	[369224] = "Corazón enjoyado de Ezekiel",	-- Jeweled Heart of Ezekiel
 	[369225] = "Vestigio infectado",	-- Infested Vestige
 	[369232] = "Caja de ofrendas",	-- Offering Box

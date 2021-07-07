@@ -2878,7 +2878,7 @@ for key,value in pairs({
 	[355947] = "Glutherns Vorrat",	-- Glutharn's Stash
 	[356555] = "Eurydeas Halskette",	-- Eurydea's Necklace
 	[356693] = "Baronin Vashjs extravaganter Tribut",	-- Baroness Vashj's Extravagant Tribute
-	--TODO: [356697] = "Alexandros Mograine's Extravagant Tribute",	-- Alexandros Mograine's Extravagant Tribute
+	[356697] = "Alexandros Mograines extravaganter Tribut",	-- Alexandros Mograine's Extravagant Tribute
 	[356700] = "Großmeister Voles extravaganter Tribut",	-- Grandmaster Vole's Extravagant Tribute
 	[356705] = "Seuchenerfinder Marileths extravaganter Tribut",	-- Plague Deviser Marileth's Extravagant Tribute
 	--TODO: [356709] = "Lady Moonberry's Extravagant Tribute",	-- Lady Moonberry's Extravagant Tribute
