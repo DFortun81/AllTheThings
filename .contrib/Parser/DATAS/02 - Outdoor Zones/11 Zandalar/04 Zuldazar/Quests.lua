@@ -1769,7 +1769,7 @@ _.Zones =
 					["provider"] = { "n", 129589 },	-- The Monkey King
 					["coord"] = { 47.0, 88.4, 1165 },
 					["races"] = ALLIANCE_ONLY,
-					["maps"] = { 1165 },	-- Dazar'alor
+					["maps"] = { 1165 },	-- Dazar'alortsfak
 				}),
 				q(50044, {	-- Archaeological Efficiency (A)
 					["coord"] = { 44.4, 73.4, 862 },
@@ -1802,6 +1802,7 @@ _.Zones =
 				q(53450, {	-- King Da'ka (A)
 					["provider"] = { "n", 129589 },	-- The Monkey King
 					["coord"] = { 51.4, 53.0, 862 },
+					["sourceQuests"] = { 53449 },	-- Apes of Wrath
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(49282, {	-- Morgrum's Extended Survey
