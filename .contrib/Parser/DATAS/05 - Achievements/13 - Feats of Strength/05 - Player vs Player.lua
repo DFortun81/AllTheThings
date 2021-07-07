@@ -659,15 +659,13 @@ _.Achievements =
 					title(411),	-- Corrupted Gladiator <Name>
 				}),
 			})),
-			n(-693, {	-- Sinful Gladiator: Shadowlands Season 1
+			n(-693, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Sinful Gladiator: Shadowlands Season 1
 				ach(14686),		-- Challenger: Shadowlands Season 1
 				ach(14685, {	-- Combatant: Shadowlands Season 1
 					title(78),	-- Combatant <Name>
 				}),
 				ach(14688, {	-- Duelist: Shadowlands Season 1
-					illusion(6266, {	-- Sinful Flame
-						["u"] = REMOVED_FROM_GAME,
-					}),
+					illusion(6266),	-- Sinful Flame
 					i(180424),	-- Sinful Gladiator's Prestigious Cloak
 				}),
 				ach(14691, {	-- Elite: Shadowlands Season 1
@@ -684,7 +682,7 @@ _.Achievements =
 				ach(14690, {	-- Sinful Gladiator: Shadowlands Season 1
 					title(434),	-- Sinful Gladiator <Name>
 				}),
-			}),
+			})),
 			n(-694, {	-- Unchained Gladiator: Shadowlands Season 2
 				ach(14969),		-- Challenger: Shadowlands Season 2
 				ach(14968),		-- Combatant: Shadowlands Season 2

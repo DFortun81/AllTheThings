@@ -1091,7 +1091,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 						crit(10, {	-- Sire Denathrius
 							["achievementID"] = 14717,	-- Heroic: Castle Nathria
 						}),
-						ach(14460),	-- Ahead of the Curve: Sire Denathrius
+						ach(14460, {	-- Ahead of the Curve: Sire Denathrius
+							["u"] = REMOVED_FROM_GAME,
+						}),
 						ach(14610),	-- Clear Conscience
 						-- TODO: obtained in Normal, assuming it drops on first kill of any difficulty
 						i(179358),	-- Remornia
@@ -1492,8 +1494,12 @@ _.Instances = { tier(9, {	-- Shadowlands
 						crit(10, {	-- Sire Denathrius
 							["achievementID"] = 14717,	-- Heroic: Castle Nathria
 						}),
-						ach(14461),	-- Cutting Edge: Sire Denathrius
-						ach(14460),	-- Ahead of the Curve: Sire Denathrius
+						ach(14461, {	-- Cutting Edge: Sire Denathrius
+							["u"] = REMOVED_FROM_GAME,
+						}),
+						ach(14460, {	-- Ahead of the Curve: Sire Denathrius
+							["u"] = REMOVED_FROM_GAME,
+						}),
 						ach(14365, {	-- Mythic: Sire Denathrius
 							title(432),	-- Sinbreaker <Name>
 						}),

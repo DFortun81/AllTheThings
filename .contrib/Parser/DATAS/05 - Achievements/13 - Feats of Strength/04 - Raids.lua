@@ -31,7 +31,7 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, ach(14068)),		-- Ahead of the Curve: N'Zoth, the Corruptor
 			un(REMOVED_FROM_GAME, ach(13784)),		-- Ahead of the Curve: Queen Azshara
 			un(REMOVED_FROM_GAME, ach(8248)),		-- Ahead of the Curve: Sha of Fear
-			ach(14460),								-- Ahead of the Curve: Sire Denathrius
+			un(REMOVED_FROM_GAME, ach(14460)),		-- Ahead of the Curve: Sire Denathrius
 			un(REMOVED_FROM_GAME, ach(10044)),		-- Ahead of the Curve: The Black Gate
 			un(REMOVED_FROM_GAME, ach(13418)),		-- Ahead of the Curve: Uu'nat, Harbinger of the Void
 			un(REMOVED_FROM_GAME, ach(6954)),		-- Ahead of the Curve: Will of the Emperor
@@ -53,7 +53,7 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, ach(13785)),		-- Cutting Edge: Queen Azshara
 			un(REMOVED_FROM_GAME, ach(8260)),		-- Cutting Edge: Ra-den
 			un(REMOVED_FROM_GAME, ach(7487)),		-- Cutting Edge: Sha of Fear
-			ach(14461),								-- Cutting Edge: Sire Denathrius
+			un(REMOVED_FROM_GAME, ach(14461)),		-- Cutting Edge: Sire Denathrius
 			un(REMOVED_FROM_GAME, ach(10045)),		-- Cutting Edge: The Black Gate
 			un(REMOVED_FROM_GAME, ach(13419)),		-- Cutting Edge: Uu'nat, Harbinger of the Void
 			un(REMOVED_FROM_GAME, ach(7485)),		-- Cutting Edge: Will of the Emperor
