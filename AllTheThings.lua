@@ -8525,8 +8525,8 @@ fields.metaAfterFailure = function(t) return newMeta; end;
 end)();
 
 local fields = RawCloneData(itemFields);
--- fields.collectible = itemFields.collectibleAsQuest;
--- fields.collected = itemFields.collectedAsQuest;
+fields.collectible = itemFields.collectibleAsQuest;
+fields.collected = itemFields.collectedAsQuest;
 fields.trackable = itemFields.trackableAsQuest;
 fields.saved = itemFields.savedAsQuest;
 app.BaseItemWithQuestID = app.BaseObjectFields(fields);
