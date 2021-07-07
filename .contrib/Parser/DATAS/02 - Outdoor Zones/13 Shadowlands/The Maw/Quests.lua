@@ -961,6 +961,7 @@ _.Zones =
 				q(64541, {	-- The Cost of Death
 				--	not flagged daily/weekly in API - you trade 800 Stygia to Ve'nari in return for 1,000 reputation with her.  TODO: verify this is a one-time quest.  quest text makes it seem like it will be repeatable in one way or another.  ETA: this popped up again on my priest but i'm not sure if it's daily/weekly still
 					["provider"] = { "n", 162804 },	-- Ve'nari
+					["isWeekly"] = true,
 					["coord"] = { 46.8, 41.7, THE_MAW },
 					["cost"] = { { "c", 1767, 800 } },	-- 800x Stygia
 				}),
