@@ -201,8 +201,6 @@ _.ExpansionFeatures =
 									ach(14723),		-- Be Our Guest
 									ach(14678, {	-- Court Favors
 									--	TODO: add remaining crit to the places From Whence They Come
-										crit(11, {	-- Necrolord Arsenal
-										}),
 										crit(13, {	-- Kyrian Arsenal
 										}),
 									}),
@@ -1642,6 +1640,18 @@ _.ExpansionFeatures =
 									-- ["minReputation"] = { ,  }, -- TODO, Best Friend w/ Hunt-Captain Korayn?
 									["provider"] = { "n", 171319 },	-- Hunt-Captain Korayn
 									["coord"] = { 50.8, 70.4, ARDENWEALD },
+								}),
+								q(62609, {	-- Necrolord Arsenal
+									["sourceQuests"] = { 62597 },	-- Bonesmith Heirmir
+									["provider"] = { "n", 157676 },	-- Bonesmith Heirmir
+									["coord"] = { 53.0, 68.2, MALDRAXXUS },
+									["g"] = {
+										i(177241, {	-- Necrolord Arsenal
+											crit(11, {	-- Necrolord Arsenal
+												["achievementID"] = 14678,	-- Court Favors
+											}),
+										}),
+									},
 								}),
 								q(63692, {	-- Polemarch Adrestes's Best Friend
 									-- ["minReputation"] = { ,  }, -- TODO, Best Friend w/ Polemarch Adrestes?
