@@ -17,8 +17,12 @@ profession(LEATHERWORKING, {
 				recipe(338264),	-- Tortured Sole
 			})),
 			category(1335, {	-- Other
-				recipe(354800),	-- Pallid Bone Flute
-				recipe(354797),	-- Pallid Oracle Bones
+				recipe(354800, {	-- Pallid Bone Flute
+					["name"] = "Pallid Bone Flute",
+				}),
+				recipe(354797, {	-- Pallid Oracle Bones
+					["name"] = "Pallid Oracle Bones",
+				}),
 			}),
 		}),
 	}),
