@@ -8,50 +8,70 @@ _.Zones =
 		m(ORIBOS, {
 			n(QUESTS, {
 				n(-9, {	-- PvP
-					q(62910, {	-- Against Overwhelming Odds
-						["provider"] = { "n", 168011 },	-- Zo'sorg
-						["isWeekly"] = true,
-						["races"] = ALLIANCE_ONLY,
-						["coord"] = { 34.7, 56.5, ORIBOS },
-						["_drop"] = { "g" },	-- drop anima trash
-					}),
-					q(62911, {	-- Against Overwhelming Odds
-						["provider"] = { "n", 168011 },	-- Zo'sorg
-						["isWeekly"] = true,
-						["races"] = HORDE_ONLY,
-						["coord"] = { 34.7, 56.5, ORIBOS },
-						["_drop"] = { "g" },	-- drop anima trash
-					}),
-					q(62287, {	-- Observing Arenas
-						["provider"] = { "n", 174922 },	-- Strategist Zo'rak
-						["isWeekly"] = true,
-						["coord"] = { 34.3, 55.8, ORIBOS },
-						["_drop"] = { "g" },	-- drop anima trash
-					}),
-					q(62284, {	-- Observing Battle
-						["provider"] = { "n", 174922 },	-- Strategist Zo'rak
-						["isWeekly"] = true,
-						["coord"] = { 34.7, 56.5, ORIBOS },
-						["_drop"] = { "g" },	-- drop anima trash
-					}),
-					q(62286, {	-- Observing Skirmishes
-						["provider"] = { "n", 174922 },	-- Strategist Zo'rak
-						["isWeekly"] = true,
-						["coord"] = { 34.7, 56.5, ORIBOS },
-						["_drop"] = { "g" },	-- drop anima trash
-					}),
-					q(62288, {	-- Observing Teamwork
-						["provider"] = { "n", 174922 },	-- Strategist Zo'rak
-						["isWeekly"] = true,
-						["coord"] = { 34.7, 56.5, ORIBOS },
-						["_drop"] = { "g" },	-- drop anima trash
-					}),
-					q(62285, {	-- Observing War
-						["provider"] = { "n", 174922 },	-- Strategist Zo'rak
-						["isWeekly"] = true,
-						["coord"] = { 34.7, 56.5, ORIBOS },
-						["_drop"] = { "g" },	-- drop anima trash
-					}),
+					["pvp"] = true,
+					["g"] = {
+						q(62910, {	-- Against Overwhelming Odds
+							["provider"] = { "n", 168011 },	-- Zo'sorg
+							["isWeekly"] = true,
+							["races"] = ALLIANCE_ONLY,
+							["coord"] = { 34.7, 56.5, ORIBOS },
+							["_drop"] = { "g" },	-- drop anima trash
+							["pvp"] = true,
+						}),
+						q(62911, {	-- Against Overwhelming Odds
+							["provider"] = { "n", 168011 },	-- Zo'sorg
+							["isWeekly"] = true,
+							["races"] = HORDE_ONLY,
+							["coord"] = { 34.7, 56.5, ORIBOS },
+							["_drop"] = { "g" },	-- drop anima trash
+							["pvp"] = true,
+						}),
+						q(64304, {	-- New Opportunities Await
+							["provider"] = { "n", 168011 },	-- Zo'sorg
+							["coord"] = { 34.7, 57.3, ORIBOS },
+							["pvp"] = true,
+							["g"] = {
+								i(186980, {	-- Unchained Gladiator's Shackles of Malediction
+									["pvp"] = true,
+								}),
+							},
+						}),
+						q(62287, {	-- Observing Arenas
+							["provider"] = { "n", 174922 },	-- Strategist Zo'rak
+							["isWeekly"] = true,
+							["coord"] = { 34.3, 55.8, ORIBOS },
+							["_drop"] = { "g" },	-- drop anima trash
+							["pvp"] = true,
+						}),
+						q(62284, {	-- Observing Battle
+							["provider"] = { "n", 174922 },	-- Strategist Zo'rak
+							["isWeekly"] = true,
+							["coord"] = { 34.7, 56.5, ORIBOS },
+							["_drop"] = { "g" },	-- drop anima trash
+							["pvp"] = true,
+						}),
+						q(62286, {	-- Observing Skirmishes
+							["provider"] = { "n", 174922 },	-- Strategist Zo'rak
+							["isWeekly"] = true,
+							["coord"] = { 34.7, 56.5, ORIBOS },
+							["_drop"] = { "g" },	-- drop anima trash
+							["pvp"] = true,
+						}),
+						q(62288, {	-- Observing Teamwork
+							["provider"] = { "n", 174922 },	-- Strategist Zo'rak
+							["isWeekly"] = true,
+							["coord"] = { 34.7, 56.5, ORIBOS },
+							["_drop"] = { "g" },	-- drop anima trash
+							["pvp"] = true,
+						}),
+						q(62285, {	-- Observing War
+							["provider"] = { "n", 174922 },	-- Strategist Zo'rak
+							["isWeekly"] = true,
+							["coord"] = { 34.7, 56.5, ORIBOS },
+							["_drop"] = { "g" },	-- drop anima trash
+							["pvp"] = true,
+						}),
+					},
 				}),
 				q(60151, {	-- A Doorway Through the Veil
 					["sourceQuests"] = { 60150 },	-- Tether to Home

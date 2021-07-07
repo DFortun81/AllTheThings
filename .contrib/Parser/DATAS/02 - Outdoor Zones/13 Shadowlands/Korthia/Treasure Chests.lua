@@ -444,5 +444,6 @@ _.HiddenQuestTriggers = {
 	q(64311),	-- looting a Teleporter Repair Kit (also pops looting one from rares)
 	q(64700),	-- looting 100-research item Ripped Cosmology Chart
 	q(64702),	-- looting 48-research item Scroll of Shadowlands Fables
+	q(64791),	-- looting 48-research item Faded Razorwing Anatomy Illustration
 	q(64705),	-- looting 150-research item from a treasure
 };
