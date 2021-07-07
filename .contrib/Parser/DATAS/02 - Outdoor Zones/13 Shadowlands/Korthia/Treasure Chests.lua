@@ -343,6 +343,7 @@ _.Zones =
 						{ 45.3, 49.5, KORTHIA },
 						{ 45.6, 81.4, KORTHIA },
 						{ 46.3, 56.7, KORTHIA },
+						{ 46.4, 49.7, KORTHIA },
 						{ 47.2, 76.8, KORTHIA },
 						{ 48.8, 52.1, KORTHIA },
 						{ 50.6, 67.1, KORTHIA },
@@ -444,6 +445,9 @@ _.HiddenQuestTriggers = {
 	q(64311),	-- looting a Teleporter Repair Kit (also pops looting one from rares)
 	q(64700),	-- looting 100-research item Ripped Cosmology Chart
 	q(64702),	-- looting 48-research item Scroll of Shadowlands Fables
-	q(64791),	-- looting 48-research item Faded Razorwing Anatomy Illustration
 	q(64705),	-- looting 150-research item from a treasure
+	q(64788),	-- Pile of Bones repeatable quest (37.1, 53.6)
+	q(64790),	-- Relic Cache repeatable quest (61.4, 38.1)
+	q(64791),	-- Relic Cache repeatable quest
+	q(64789),	-- Shardhide Stash repeatable quest (49.6, 26.8)
 };

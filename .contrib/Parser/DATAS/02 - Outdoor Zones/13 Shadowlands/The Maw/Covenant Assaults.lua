@@ -158,6 +158,7 @@ _.Zones =
 							i(185993, {	-- Ascended War Chest
 						--	TODO: figure out the contents of this chest
 								i(186546),	-- Copperback Etherwyrm (PET!)
+								i(187185),	-- Vesper of Faith (TOY!)
 							}),
 						}),
 						n(-77, {	-- Special

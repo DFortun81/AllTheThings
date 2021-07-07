@@ -230,9 +230,6 @@ _.Zones =
 								}),
 							},
 						}),
-						q(61140, {	-- Bonus Objective
-							["isDaily"] = true,
-						}),
 					},
 				}),
 				n(179791, {	-- Deomen the Vortex
@@ -271,9 +268,6 @@ _.Zones =
 						}),
 						i(186622, {	-- Robe of Drifting Sorrow
 							["timeline"] = { "added 9.1.0.38312" },
-						}),
-						q(59183, {	-- Bonus Objective
-							["isDaily"] = true,
 						}),
 					},
 				}),
@@ -644,9 +638,6 @@ _.Zones =
 						crit(17, {	-- Stygian Incinerator
 							["achievementID"] = 14660,	-- It's About Sending a Message
 						}),
-						q(62539, {	-- Bonus Objective
-							["isDaily"] = true,
-						}),
 						i(186631, {	-- Emberfused Band
 							["timeline"] = { "added 9.1.0.38312" },
 						}),
@@ -775,6 +766,8 @@ _.HiddenQuestTriggers = {
 	q(61136),	-- Agonix bonus objective
 	q(60920),	-- Akros bonus objective
 	q(59230),	-- Dartanos bonus objective
+	q(61140),	-- Dath Rezara bonus objective
+	q(59183),	-- Drifting Sorrow bonus objective
 	q(62209),	-- Houndmaster Vasanok bonus objective
 	q(60903),	-- Krala bonus objective
 	q(61125),	-- Malevolent Stygia bonus objective
@@ -783,6 +776,7 @@ _.HiddenQuestTriggers = {
 	q(60992),	-- Razkazzar bonus objective
 	q(62211),	-- Skittering Broodmother bonus objective
 	q(59441),	-- Soulsmith Yol-Mattar bonus objective
+	q(62539),	-- Stygian Incinerator bonus objective
 	q(61728),	-- Valis bonus objective
 
 	q(64258),	-- Carriage Crusher / Traitor Balthier

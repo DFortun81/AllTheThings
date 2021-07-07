@@ -46,6 +46,11 @@ _.Zones =
 						i(185636),	-- The Archivist's Codex
 					},
 				}),
+				q(63711, {	-- Bone Tools
+					["sourceQuests"] = { 63710 },	-- The Anima Trail
+					["provider"] = { "n", 177452 },	-- Bonesmith Heirmir
+					["coord"] = { 34.9, 35.3, KORTHIA },
+				}),
 				q(63733, {	-- Carving Out a Path
 					["sourceQuests"] = { 63732 },	-- Interrupt the Interrogations
 					["provider"] = { "n", 178713 },	-- Archivist Roh-Dahl
@@ -72,6 +77,11 @@ _.Zones =
 					["provider"] = { "n", 177928 },	-- Archivist Roh-Dahl
 					["coord"] = { 39.4, 51.3, KORTHIA },
 				}),
+				q(63717, {	-- Defending the Vault
+					["sourceQuests"] = { 63714 },	-- To the Vault
+					["provider"] = { "n", 177459 },	-- Protector Kah-Rev
+					["coord"] = { 49.5, 65.0, KORTHIA },
+				}),
 				q(63855, {	-- Ease of Passage
 					["sourceQuests"] = { 63848 },	-- A Show of Gratitude
 					["provider"] = { "n", 178470 },	-- Ve'nari
@@ -96,6 +106,14 @@ _.Zones =
 					["sourceQuests"] = { 63739 },	-- Hope Ascending
 					["provider"] = { "n", 178991 },	-- Archivist Roh-Dahl
 					["coord"] = { 35.8, 32.2, KORTHIA },
+				}),
+				q(63713, {	-- Hooking Over
+					["sourceQuests"] = {
+						63711,	-- Bone Tools
+						63712,	-- Lost Records
+					},
+					["provider"] = { "n", 177452 },	-- Bonesmith Heirmir
+					["coord"] = { 34.9, 35.3, KORTHIA },
 				}),
 				q(63739, {	-- Hope Ascending
 					["sourceQuests"] = {
@@ -127,15 +145,42 @@ _.Zones =
 					["provider"] = { "n", 178694 },	-- Scholar Roh-Suir
 					["coord"] = { 59.0, 58.1, KORTHIA },
 				}),
+				q(63725, {	-- Into the Vault
+					["sourceQuests"] = {
+						63717,	-- Defending the Vault
+						63722,	-- Keepers of Korthia
+					},
+					["provider"] = { "n", 178676 },	-- Tal-Galan
+					["coord"] = { 50.2, 75.7, KORTHIA },
+					["maps"] = { 2008 },	-- Chamber of the Sigil
+				}),
+				q(63722, {	-- Keepers of Korthia
+					["sourceQuests"] = { 63714 },	-- To the Vault
+					["providers"] = {
+						{ "n", 177459 },	-- Protector Kah-Rev
+						{ "n", 178640 },	-- Protector Kah-Rev (pet version)
+					},
+					["coord"] = { 49.5, 65.0, KORTHIA },
+				}),
 				q(63663, {	-- Korthia, the City of Secrets
 					["sourceQuests"] = { 63662 },	-- Mysteries of the Maw
 					["provider"] = { "n", 177202 },	-- Ve'nari
 					["coord"] = { 58.3, 14.3, KORTHIA },
 				}),
+				q(63706, {	-- Let the Anima Flow
+					["sourceQuests"] = { 63703 },	-- Vault of Secrets
+					["provider"] = { "n", 177449 },	-- Bonesmith Heirmir
+					["coord"] = { 57.2, 29.8, KORTHIA },
+				}),
 				q(63757, {	-- Looting the Looters
 					["sourceQuests"] = { 63755 },	-- A Matter of Urgency
 					["provider"] = { "i", 185915 },	-- Korthian Artifact
 					["crs"] = { 177204 },	-- Mawsworn Interrogator
+				}),
+				q(63712, {	-- Lost Records
+					["sourceQuests"] = { 63710 },	-- The Anima Trail
+					["provider"] = { "n", 177451 },	-- Tal-Galan - TODO: verify NPC once on live, it's currently named "Tal-Galan (temp)"
+					["coord"] = { 34.9, 35.3, KORTHIA },
 				}),
 				q(64511, {	-- Missing Relics
 					["sourceQuests"] = { 64506 },	-- What Must Be Found
@@ -184,6 +229,15 @@ _.Zones =
 					["provider"] = { "n", 177850 },	-- Protector Rih-Mat
 					["coord"] = { 55.6, 22.2, KORTHIA },
 				}),
+				q(63709, {	-- Secrets of the Vault
+					["sourceQuests"] = {
+						63706,	-- Let the Anima Flow
+						63705,	-- The Knowledge Keepers
+						63704,	-- Vengeance for Korthia
+					},
+					["provider"] = { "n", 177423 },	-- Tal-Galan
+					["coord"] = { 57.4, 29.8, KORTHIA },
+				}),
 				q(63949, {	-- Shaping Fate
 					["sourceQuests"] = { 63902 },	-- Good News, Everyone!
 					["provider"] = { "n", 177927 },	-- Tal-Galan
@@ -195,10 +249,25 @@ _.Zones =
 						}),
 					},
 				}),
+				q(63903, {	-- Storming the Sanctum
+					["sourceQuests"] = { 63727 },	-- The Primus Returns
+					["provider"] = { "n", 177228 },	-- Highlord Bolvar Fordragon
+					["coord"] = { 62.8, 24.9, KORTHIA },
+				}),
 				q(64555, {	-- Surveying Secrets
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants
 					["provider"] = { "n", 177228 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 62.8, 24.9, KORTHIA },
+				}),
+				q(63710, {	-- The Anima Trail
+					["sourceQuests"] = { 63709 },	-- Secrets of the Vault
+					["provider"] = { "n", 177423 },	-- Tal-Galan
+					["coord"] = { 57.4, 29.8, KORTHIA },
+				}),
+				q(63705, {	-- The Knowledge Keepers
+					["sourceQuests"] = { 63703 },	-- Vault of Secrets
+					["provider"] = { "n", 177423 },	-- Tal-Galan
+					["coord"] = { 57.4, 29.9, KORTHIA },
 				}),
 				q(63758, {	-- The Last Place You Look
 					["sourceQuests"] = { 63755 },	-- A Matter of Urgency
@@ -223,10 +292,31 @@ _.Zones =
 					["coord"] = { 56.5, 17.4, KORTHIA },
 					["crs"] = { 177243 },	-- Azodius
 				}),
+				q(63714, {	-- To the Vault
+					["sourceQuests"] = { 63713 },	-- Hooking Over
+					["provider"] = { "n", 177451 },	-- Tal-Galan
+					["coord"] = { 34.9, 35.3, KORTHIA },
+				}),
 				q(63762, {	-- Under the Illusion
 					["sourceQuests"] = { 63760 },	-- Echoes of Fate
 					["provider"] = { "n", 177610 },	-- Caretaker Kah-Than
 					["coord"] = { 56.5, 17.4, KORTHIA },
+				}),
+				q(63726, {	-- Untangling the Sigil
+					["sourceQuests"] = { 63725 },	-- Into the Vault
+					["provider"] = { "n", 177228 },	-- Highlord Bolvar Fordragon
+					["coord"] = { 63.0, 25.6, KORTHIA },
+				}),
+				q(63703, {	-- Vault of Secrets
+					["sourceQuests"] = { 63902 },	-- Good News, Everyone!
+					["description"] = "Requires Renown 44 and completion of the original 9 chapters of your covenant's campaign.",
+					["provider"] = { "n", 177927 },	-- Tal-Galan
+					["coord"] = { 63.0, 24.8, KORTHIA },
+				}),
+				q(63704, {	-- Vengeance for Korthia
+					["sourceQuests"] = { 63703 },	-- Vault of Secrets
+					["provider"] = { "n", 177423 },	-- Tal-Galan
+					["coord"] = { 57.4, 29.9, KORTHIA },
 				}),
 				q(64562, {	-- We Need a Healer - You! (intro version)
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance (must be on quest)
@@ -267,11 +357,6 @@ _.Zones =
 					["provider"] = { "i", 187206 },	-- Book of Binding: The Mad Witch
 					["coord"] = { 27.2, 56.8, KORTHIA },
 				}),
-				q(63711, {	-- Bone Tools
-					["sourceQuests"] = { 63710 },	-- The Anima Trail
-					["provider"] = { "n", 177452 },	-- Bonesmith Heirmir
-					["coord"] = { 34.9, 35.3, KORTHIA },
-				}),
 				q(63908, {	-- Bulwark of Divine Intent
 					["sourceQuests"] = { 64532 },	-- The Final Relics
 					["description"] = "Requires having purchased |cFF0070ddResearch Report: Ancient Shrines|r, allowing you to interact with the phasing swords.",
@@ -282,11 +367,6 @@ _.Zones =
 					["sourceQuests"] = { 64506 },	-- What Must Be Found
 					["provider"] = { "i", 187201 },	-- Celestial Shadowlands Chart
 					["coord"] = { 45.5, 56.0, KORTHIA },
-				}),
-				q(63717, {	-- Defending the Vault
-					["sourceQuests"] = { 63714 },	-- To the Vault
-					["provider"] = { "n", 177459 },	-- Protector Kah-Rev
-					["coord"] = { 49.5, 65.0, KORTHIA },
 				}),
 				q(63892, {	-- Diviner's Rune Chits
 					["sourceQuests"] = { 64506 },	-- What Must Be Found
@@ -317,46 +397,11 @@ _.Zones =
 					["coord"] = { 39.3, 52.4, KORTHIA },
 					["cost"] = { { "i", 186718, 1 } },	-- Teleporter Repair Kit
 				}),
-				q(63713, {	-- Hooking Over
-					["sourceQuests"] = {
-						63711,	-- Bone Tools
-						63712,	-- Lost Records
-					},
-					["provider"] = { "n", 177452 },	-- Bonesmith Heirmir
-					["coord"] = { 34.9, 35.3, KORTHIA },
-				}),
-				q(63725, {	-- Into the Vault
-					["sourceQuests"] = {
-						63717,	-- Defending the Vault
-						63722,	-- Keepers of Korthia
-					},
-					["provider"] = { "n", 178676 },	-- Tal-Galan
-					["coord"] = { 50.2, 75.7, KORTHIA },
-					["maps"] = { 2008 },	-- Korthia_Micro_C
-				}),
-				q(63722, {	-- Keepers of Korthia
-					["sourceQuests"] = { 63714 },	-- To the Vault
-					["providers"] = {
-						{ "n", 177459 },	-- Protector Kah-Rev
-						{ "n", 178640 },	-- Protector Kah-Rev (pet version)
-					},
-					["coord"] = { 49.5, 65.0, KORTHIA },
-				}),
 				q(63923, {	-- Lang Family Wood-Carving
 					["sourceQuests"] = { 64532 },	-- The Final Relics
 					["description"] = "Requires having purchased |cFF0070ddResearch Report: Ancient Shrines|r, allowing you to interact with the phasing swords.",
 					["provider"] = { "i", 187209 },	-- Lang Family Wood-Carving
 					["coord"] = { 24.3, 56.6, KORTHIA },
-				}),
-				q(63706, {	-- Let the Anima Flow
-					["sourceQuests"] = { 63703 },	-- Vault of Secrets
-					["provider"] = { "n", 177449 },	-- Bonesmith Heirmir
-					["coord"] = { 57.2, 29.8, KORTHIA },
-				}),
-				q(63712, {	-- Lost Records
-					["sourceQuests"] = { 63710 },	-- The Anima Trail
-					["provider"] = { "n", 177451 },	-- Tal-Galan - TODO: verify NPC once on live, it's currently named "Tal-Galan (temp)"
-					["coord"] = { 34.9, 35.3, KORTHIA },
 				}),
 				q(64519, {	-- Lost Vaults
 					["sourceQuests"] = {
@@ -393,15 +438,6 @@ _.Zones =
 					["coord"] = { 45.0, 35.5, KORTHIA },
 					["cost"] = { { "i", 186718, 1 } },	-- Teleporter Repair Kit
 				}),
-				q(63709, {	-- Secrets of the Vault
-					["sourceQuests"] = {
-						63706,	-- Let the Anima Flow
-						63705,	-- The Knowledge Keepers
-						63704,	-- Vengeance for Korthia
-					},
-					["provider"] = { "n", 177423 },	-- Tal-Galan
-					["coord"] = { 57.4, 29.8, KORTHIA },
-				}),
 				q(63922, {	-- Shadow Slicing Shortsword
 					["sourceQuests"] = { 64532 },	-- The Final Relics
 					["description"] = "Requires having purchased |cFF0070ddResearch Report: Ancient Shrines|r, allowing you to interact with the phasing swords.",
@@ -421,11 +457,6 @@ _.Zones =
 					["provider"] = { "i", 185914 },	-- Damaged Talisman
 					["coord"] = { 40.6, 41.3, KORTHIA },
 				}),
-				q(63710, {	-- The Anima Trail
-					["sourceQuests"] = { 63709 },	-- Secrets of the Vault
-					["provider"] = { "n", 177423 },	-- Tal-Galan
-					["coord"] = { 57.4, 29.8, KORTHIA },
-				}),
 				q(63612, {	-- The Chains of Command
 					["sourceQuests"] = { 63727 },	-- The Primus Returns
 					["description"] = "Requires Renown 47.",	-- on Kyrian, presume all covenants are the same
@@ -442,40 +473,11 @@ _.Zones =
 					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 					["coord"] = { 62.7, 22.5, KORTHIA },
 				}),
-				q(63705, {	-- The Knowledge Keepers
-					["sourceQuests"] = { 63703 },	-- Vault of Secrets
-					["provider"] = { "n", 177423 },	-- Tal-Galan
-					["coord"] = { 57.4, 29.9, KORTHIA },
-				}),
 				q(64305, {	-- The Tormentors of Torghast
 				--	TODO: not 100% on this SQ - i did the chain through "Good News, Everyone!" and picked up all the one-time quests that were up, then logged out.  when i logged back in later that day, this quest was up.  i'm PRETTY SURE i had picked up all the yellow quests in the area already but i guess maybe i missed one (even though it was literally right next to me lol)?  anyway, could use verification
 					["sourceQuests"] = { 63902 },	-- Good News, Everyone!
 					["provider"] = { "n", 179321 },	-- Duchess Mynx
 					["coord"] = { 63.4, 23.3, KORTHIA },
-				}),
-				q(63714, {	-- To the Vault
-					["sourceQuests"] = { 63713 },	-- Hooking Over
-					["provider"] = { "n", 177451 },	-- Tal-Galan - TODO: verify NPC once on live, it's currently named "Tal-Galan (temp)"
-					["coord"] = { 34.9, 35.3, KORTHIA },
-				}),
-				q(63726, {	-- Untangling the Sigil
-					["sourceQuests"] = { 63725 },	-- Into the Vault
-					["provider"] = { "n", 177228 },	-- Highlord Bolvar Fordragon
-					["coord"] = { 63.0, 25.6, KORTHIA },
-					["g"] = {
-						i(187218),	-- Tome of Origins
-					},
-				}),
-				q(63703, {	-- Vault of Secrets
-					["sourceQuests"] = { 63902 },	-- Good News, Everyone!
-					["description"] = "Requires Renown 44 and completion of the original 9 chapters of your covenant's campaign.",
-					["provider"] = { "n", 177927 },	-- Tal-Galan
-					["coord"] = { 63.0, 24.8, KORTHIA },
-				}),
-				q(63704, {	-- Vengeance for Korthia
-					["sourceQuests"] = { 63703 },	-- Vault of Secrets
-					["provider"] = { "n", 177423 },	-- Tal-Galan
-					["coord"] = { 57.4, 29.9, KORTHIA },
 				}),
 
 			--	Korthia Daily

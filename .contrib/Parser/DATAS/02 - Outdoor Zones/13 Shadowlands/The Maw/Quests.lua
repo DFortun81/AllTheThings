@@ -79,7 +79,7 @@ _.Zones =
 						["isWeekly"] = true,
 					}),
 					n(-913,  {	-- Tormentors of Torghast
-						["description"] = "You can only get the cache once a week, but you can continue to participate in the events for achievement credit and |cFF0070ddBahmeht Chain Links|r.",
+						["description"] = "You can only get the cache once a week, but you can continue to participate in the events for achievement credit individual boss loot.",
 						["isWeekly"] = true,
 						["questID"] = 63854,
 						["g"] = {
@@ -1037,6 +1037,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		}),
 	}),
 	n(QUESTS, {
+		q(64126),	-- triggered when killing Dathlane the Herald, WotJ boss - TODO - move questIDs to individual bosses if they've been separated since they have new drops
 		q(60902),	-- A Dark Song
 		q(61496),	-- A Familiar Energy
 		q(60141),	-- Coldheart Interstitia
