@@ -447,7 +447,7 @@ _.HiddenQuestTriggers = {
 	q(64702),	-- looting 48-research item Scroll of Shadowlands Fables
 	q(64705),	-- looting 150-research item from a treasure
 	q(64788),	-- Pile of Bones repeatable quest (37.1, 53.6)
-	q(64790),	-- Relic Cache repeatable quest (61.4, 38.1)
+	q(64790),	-- Relic Cache repeatable quest (59.8, 36.0; 61.4, 38.1)
 	q(64791),	-- Relic Cache repeatable quest
-	q(64789),	-- Shardhide Stash repeatable quest (49.6, 26.8)
+	q(64789),	-- Shardhide Stash repeatable quest (49.6, 26.8; 50.4, 31.2)
 };

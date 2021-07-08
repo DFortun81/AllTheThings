@@ -142,6 +142,10 @@ _.Zones =
 				n(160084, {	-- Ta'rmoro <Purveyor of Arms>
 					["coord"] = { 50.4, 81.4, REVENDRETH },
 					["g"] = {
+						i(183977, {	-- House Renathal Ceremonial Dagger
+							["customCollect"] = "SL_COV_VEN",
+							["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
+						}),
 						i(183982, {	-- Devourer Mite Sticker
 							["cost"] = { { "c", 1813, 3000 } },	-- 3,000x Reservoir Anima
 						}),
@@ -166,11 +170,6 @@ _.Zones =
 						i(183968, {	-- Venthyr Ritualist's Kris
 							["cost"] = { { "c", 1813, 3500 } },	-- 3,500x Reservoir Anima
 						}),
-						n(-949, sharedData({["customCollect"] = { "SL_COV_VEN" }},{	-- Covenant: Venthyr
-							i(183977, {	-- House Renathal Ceremonial Dagger
-								["cost"] = { { "c", 1813, 1750 } },	-- 1,750x Reservoir Anima
-							}),
-						})),
 					},
 				}),
 				n(160091, {	-- Ta'ruca
