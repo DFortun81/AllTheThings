@@ -94,8 +94,8 @@ _.Zones =
 							},
 							["coords"] = {	-- i found it at the first one for Horde; apparently it can show up in both, but i'm not sure what governs which location it's available at
 								{ 75.0, 15.0, 1161 },	-- Boralus, Alliance
-								{ 50.3, 41.7, 1165 },	-- Dazar'alor, Horde
-								{ 51.0, 88.8, 1165 },	-- Dazar'alor, Horde
+								{ 50.3, 41.7, DAZARALOR },	-- Horde
+								{ 51.0, 88.8, DAZARALOR },	-- Horde
 							},
 							["_drop"] = { "r" },	-- API claims this is Horde-only, but it's neutral
 						}),
@@ -305,11 +305,11 @@ _.Zones =
 						}),
 						q(55522, {	-- Return to the Heart (H)
 							["provider"] = { "n", 154465 },	-- Earthen Guardian <Messenger of the Speaker>
-							["coord"] = { 51.0, 88.8, 1165 },
+							["coord"] = { 51.0, 88.8, DAZARALOR },
 							["description"] = "Your Heart of Azeroth needs to be 55 to start the questline.",
 							["isBreadcrumb"] = true,
 							["races"] = HORDE_ONLY,
-							["maps"] = { 1165 },	-- Dazar'alor
+							["maps"] = { DAZARALOR },
 						}),
 						q(55519, {	-- A Fresh Trauma
 							["provider"] = { "n", 152206 },	-- Magni Bronzebeard
@@ -364,11 +364,11 @@ _.Zones =
 						}),
 						q(55739, {	-- Back to the Chamber (H)
 							["provider"] = { "n", 154465 },	-- Earthen Guardian
-							["coord"] = { 51.0, 88.8, 1165 },
+							["coord"] = { 51.0, 88.8, DAZARALOR },
 							["description"] = "Your Heart of Azeroth needs to be 65 to start the questline.",
 							["isBreadcrumb"] = true,
 							["races"] = HORDE_ONLY,
-							["maps"] = { 1165 },	-- Dazar'alor
+							["maps"] = { DAZARALOR },
 						}),
 						q(55732, {	-- An Old Scar
 							["provider"] = { "n", 152206 },	-- Magni Bronzebeard
@@ -404,11 +404,11 @@ _.Zones =
 						}),
 						q(56260, {	-- Unlocking the Power (H)
 							["provider"] = { "n", 154464 },	-- Earthen Guardian
-							["coord"] = { 51.0, 88.8, 1165 },
+							["coord"] = { 51.0, 88.8, DAZARALOR },
 							["description"] = "Your Heart of Azeroth needs to be 70 to start the questline.",
 							["isBreadcrumb"] = true,
 							["races"] = HORDE_ONLY,
-							["maps"] = { 1165 },	-- Dazar'alor
+							["maps"] = { DAZARALOR },
 						}),
 						q(56401, {	-- A Bolt from the Blue
 							["provider"] = { "n", 152365 },	-- Kalecgos
@@ -446,14 +446,14 @@ _.Zones =
 						}),
 						q(56267, {	-- Whispers of N'zoth (H)
 							["provider"] = { "n", 154465 },	-- Earthen Guardian
-							["coord"] = { 51.0, 88.8, 1165 },
+							["coord"] = { 51.0, 88.8, DAZARALOR },
 							["sourceQuests"] = {
 								57095,	-- Old Soldier
 								57152,	-- Most Loyal (Sylvanas Version)
 							},
 							["description"] = "This quest requires finishing the War Campaign and defeating Azshara on any difficulty.",
 							["races"] = HORDE_ONLY,
-							["maps"] = { 1165 },	-- Dazar'alor
+							["maps"] = { DAZARALOR },
 							["u"] = REMOVED_FROM_GAME,	-- (removed with 8.3)
 						}),
 						q(56186, {	-- Spies to the Left and Right

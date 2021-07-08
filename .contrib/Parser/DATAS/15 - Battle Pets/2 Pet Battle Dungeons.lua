@@ -84,16 +84,16 @@ _.BattlePets =
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 120,
-					["maps"] = { 1161 },	-- Dazar'alor
+					["maps"] = { 1161 },	-- Boralus
 				}),
 				q(58456, {	-- Shadowy Showdown (H)
 					["provider"] = { "n", 147641 },	-- Radek Fuselock
 					-- ["sourceQuests"] = {  },	-- TODO, this has a source quest... unknown, maybe other pet battle dungeon completion?
-					["coord"] = { 56.3, 30.8, 1165 },
+					["coord"] = { 56.3, 30.8, DAZARALOR },
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 120,
-					["maps"] = { 1165 },	-- Dazar'alor
+					["maps"] = { DAZARALOR },
 				}),
 				q(58457, {	-- Shadows of Blackrock
 					["provider"] = { "n", 161782 },	-- Burt Macklyn
@@ -207,11 +207,11 @@ _.BattlePets =
 				}),
 				q(54276, {	-- Trouble in Gnomeregan (H)
 					["provider"] = { "n", 147641 },	-- Radek Fuselock
-					["coord"] = { 56.3, 30.8, 1165 },
+					["coord"] = { 56.3, 30.8, DAZARALOR },
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 120,
-					["maps"] = { 1165 },	-- Dazar'alor
+					["maps"] = { DAZARALOR },
 				}),
 				q(54185, {	-- Gnomeregan's New Guardians
 					["provider"] = { "n", 147070 },	-- Micro Zoox
@@ -286,10 +286,10 @@ _.BattlePets =
 				}),
 				q(56490, {	-- Restless Dead (H)
 					["provider"] = { "n", 147641 },	-- Radek Fuselock
-					["coord"] = { 56.3, 30.8, 1165 },
+					["coord"] = { 56.3, 30.8, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 120,
-					["maps"] = { 1165 },	-- Dazar'alor
+					["maps"] = { DAZARALOR },
 				}),
 				q(56491, {	-- Tiny Terrors of Stratholme
 					["provider"] = { "n", 150987 },	-- Sean Wilkers

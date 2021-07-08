@@ -287,7 +287,7 @@ _.Zones =
 						}),
 						q(53053, {	-- To The Mugambala!
 							["provider"] = { "n", 138708 },	-- Garona Halforcen
-							["coord"] = { 58.4, 62.6, 1165 },
+							["coord"] = { 58.4, 62.6, DAZARALOR },
 							["description"] = "You have to enable War Mode to get this quest.",
 							["races"] = HORDE_ONLY,
 							["lvl"] = 110,
@@ -1113,7 +1113,7 @@ _.Zones =
 				q(55506, {	-- One Road Ends
 					["sourceQuests"] = { 55503 },	-- The Direhorn and the Saurid
 					["provider"] = { "n", 154607 },	-- Image of Torcali
-					["coord"] = { 52.4, 23.2, 1165 },	-- on the very edge of dazar'alor
+					["coord"] = { 52.4, 23.2, DAZARALOR },	-- on the very edge
 					["races"] = HORDE_ONLY,
 					["lvl"] = 120,
 				}),
@@ -1753,23 +1753,12 @@ _.Zones =
 					["coord"] = { 64.4, 28.5, 862 },
 					["races"] = HORDE_ONLY,
 				}),
-
-
-
-
-
-
-
-
-
-
-
 				q(53449, {	-- Apes of Wrath
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 129589 },	-- The Monkey King
-					["coord"] = { 47.0, 88.4, 1165 },
+					["coord"] = { 47.0, 88.4, DAZARALOR },
 					["races"] = ALLIANCE_ONLY,
-					["maps"] = { 1165 },	-- Dazar'alor
+					["maps"] = { DAZARALOR },
 				}),
 				q(50044, {	-- Archaeological Efficiency (A)
 					["coord"] = { 44.4, 73.4, 862 },

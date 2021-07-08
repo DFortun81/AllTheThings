@@ -10,14 +10,14 @@ _.Zones =
 				q(50606, {	-- Horde War Effort [The Honorbound] [Tier 2]
 					["provider"] = { "n", 135447 },	-- Ransa Greyfeather
 					["lvl"] = 120,
-					["coord"] = { 58.0, 62.6, 1165 },
+					["coord"] = { 58.0, 62.6, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 				}),
 				q(54455, {	-- Supplies from the Honorbound
 					["provider"] = { "n", 135447 },	-- Ransa Greyfeather
 					["lvl"] = 120,
-					["coord"] = { 58.0, 62.6, 1165 },
+					["coord"] = { 58.0, 62.6, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["g"] = {

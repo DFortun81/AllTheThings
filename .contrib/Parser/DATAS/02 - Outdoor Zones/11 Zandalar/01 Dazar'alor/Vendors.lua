@@ -8,7 +8,7 @@ _.Zones =
 		m(1163, {	-- Dazar'alor
 			n(VENDORS, {
 				n(132153, {	-- "Black Eye" Zenru
-					["coord"] = { 53.7, 85.9, 1165 },
+					["coord"] = { 53.7, 85.9, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(156659, {	-- Counterfeit Rastakhan Mask
@@ -20,7 +20,7 @@ _.Zones =
 					},
 				}),
 				n(148923, {	-- Captain Zen'taga <Dubloons Trader>
-					["coord"] = { 44.4, 94.4, 1165 },
+					["coord"] = { 44.4, 94.4, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(166491, {	-- Albino Duskwatcher (PET!)
@@ -116,7 +116,7 @@ _.Zones =
 				}),
 				n(161067, {	-- Captain Kitt
 					["description"] = "We've compiled these lists from Wowhead, personal experience, and reports from ATT users, but they are incomplete (there isn't much to go on, and we can only collect so many Seafarer's Dubloons ourselves).\n\nIf you get an item from a box it's not listed under, please report it to the ATT Discord in the #errors or #bounty channel.  Thanks!\n",
-					["coord"] = { 44.4, 94.3, 1165 },
+					["coord"] = { 44.4, 94.3, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["g"] = bubbleDown({["modID"] = 0}, {
 						n(-11, {	-- Common Box Drops
@@ -1009,7 +1009,7 @@ _.Zones =
 					}),
 				}),
 				n(122703, {	-- Clever Kumali <Alchemist Trainer>
-					["coord"] = { 42.2, 38.0, 1165 },
+					["coord"] = { 42.2, 38.0, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(166422, {	-- Recipe: Silas' Sphere of Transmutation
@@ -1018,7 +1018,7 @@ _.Zones =
 					},
 				}),
 				n(138033, {	-- Elly Fraze <Toys and Curiosities>
-					["coord"] = { 48.4, 89.5, 1165 },
+					["coord"] = { 48.4, 89.5, DAZARALOR },
 					-- Note!! Both factions can interact despite being marked unfriendly in-game to Alliance
 					["g"] = {
 						i(104324),	-- Foot Ball (TOY!)
@@ -1026,7 +1026,7 @@ _.Zones =
 					},
 				}),
 				n(122702, {	-- Enchantress Quinni <Enchanting Trainer>
-					["coord"] = { 47.0, 35.8, 1165 },
+					["coord"] = { 47.0, 35.8, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(168024, {	-- Recipe: Iwen's Enchanting Rod
@@ -1035,7 +1035,7 @@ _.Zones =
 					},
 				}),
 				n(127112, {	-- Forgemaster Zak'aal <Blacksmithing Trainer>
-					["coord"] = { 43.4, 38.3, 1165 },
+					["coord"] = { 43.4, 38.3, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(168022, {	-- Recipe: Khaz'gorian Smithing Hammer
@@ -1044,7 +1044,7 @@ _.Zones =
 					},
 				}),
 				n(132130, {	-- Granda Watae
-					["coord"] = { 42.2, 35.8, 1165 },
+					["coord"] = { 42.2, 35.8, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(156652, {	-- Centennial Blossom
@@ -1057,12 +1057,12 @@ _.Zones =
 				}),
 				n(132114, {	-- Griftah <Amazing Amulets>
 					["coords"] = {
-						{ 53.0, 89.9, 1165 },	-- Griftah
-						{ 34.7, 11.5, 1165 },	-- Much-Too-Hot Pepper
-						{ 37.8, 14.7, 1165 },	-- Golden Seeds
-						{ 42.1, 35.7, 1165 },	-- Centennial Blossom
-						{ 57.1, 91.4, 1165 },	-- Preserved Night Elf Head
-						{ 53.7, 85.9, 1165 },	-- Counterfeit Rastakhan Mask
+						{ 53.0, 89.9, DAZARALOR },	-- Griftah
+						{ 34.7, 11.5, DAZARALOR },	-- Much-Too-Hot Pepper
+						{ 37.8, 14.7, DAZARALOR },	-- Golden Seeds
+						{ 42.1, 35.7, DAZARALOR },	-- Centennial Blossom
+						{ 57.1, 91.4, DAZARALOR },	-- Preserved Night Elf Head
+						{ 53.7, 85.9, DAZARALOR },	-- Counterfeit Rastakhan Mask
 					},
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -1077,7 +1077,7 @@ _.Zones =
 					},
 				}),
 				n(132097, {	-- Happy Holaua <Pet Vendor>
-					["coord"] = { 56.0, 32.2, 1165 },
+					["coord"] = { 56.0, 32.2, DAZARALOR },
 					["g"] = {
 						i(163508, {	-- Butterfly in a Jar (PET!)
 							["cost"] = { { "i", 163036, 100 }, },	-- 100x Polished Pet Charm
@@ -1229,7 +1229,7 @@ _.Zones =
 				}),
 				n(148080, {	-- Olly <Pet Smuggler>
 					["description"] = "To unlock this vendor, win PvP pet battles until the mission \"A Shady Message\" spawns.  Complete the mission, and you'll be able to purchase items from the vendor.  It could take 1, 10, 100 or 1,000 PvP pet battles before it spawns.",
-					["coord"] = { 45.51, 86.45, 1165 },
+					["coord"] = { 45.51, 86.45, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(163489, {	-- Abyssal Eel (PET!)
@@ -1253,7 +1253,7 @@ _.Zones =
 					},
 				}),
 				n(122700, {	-- Pin'jin the Patient <Tailoring Trainer>
-					["coord"] = { 44.5, 33.9, 1165 },
+					["coord"] = { 44.5, 33.9, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(168029, {	-- Recipe: Synchronous Thread
@@ -1267,14 +1267,14 @@ _.Zones =
 					},
 				}),
 				n(122463, {	-- Plen <Unusual and Remarkable Wares>
-					["coord"] = { 47.7, 91.6, 1165 },
+					["coord"] = { 47.7, 91.6, DAZARALOR },
 					["g"] = {
 						i(63044),	-- Reins of the Brown Riding Camel
 						i(63045),	-- Reins of the Tan Riding Camel
 					},
 				}),
 				n(148924, {	-- Provisioner Mukra
-					["coord"] = { 51.22, 95.08, 1165 },
+					["coord"] = { 51.22, 95.08, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(166743, {	-- Blight Bomber (TOY!)
@@ -1323,7 +1323,7 @@ _.Zones =
 					},
 				}),
 				n(126330, {	-- Rakle the Wretched
-					["coord"] = { 34.7, 11.5, 1165 },
+					["coord"] = { 34.7, 11.5, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(156650, {	-- Much-Too-Hot Pepper
@@ -1435,7 +1435,7 @@ _.Zones =
 					},
 				}),
 				n(122695, {	-- Seshuli <Jewelcrafting Trainer>
-					["coord"] = { 47.0, 37.8, 1165 },
+					["coord"] = { 47.0, 37.8, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(168027, {	-- Recipe: Jewelhammer's Focus
@@ -1444,7 +1444,7 @@ _.Zones =
 					},
 				}),
 				n(131840, {	-- Shuga Blastcaps <Engineering Trainer>
-					["coord"] = { 45.0, 40.6, 1165 },
+					["coord"] = { 45.0, 40.6, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(168025, {	-- Book of Schematics: Ub3r-Spanner
@@ -1454,7 +1454,7 @@ _.Zones =
 					},
 				}),
 				n(125879, {	-- Talutu <Mount Vendor>
-					["coord"] = { 48.5, 87.0, 1165 },
+					["coord"] = { 48.5, 87.0, DAZARALOR },
 					["g"] = {
 						i(163568, {	-- Lost Platysaur (PET!)
 							["cost"] = 1000000000,	-- 100,000g
@@ -1465,7 +1465,7 @@ _.Zones =
 					},
 				}),
 				n(149045, {	-- Thaumaturge Vashreen <Purveyor of Exquisite Furnishings>
-					["coord"] = { 53.9, 88.9, 1165 },
+					["coord"] = { 53.9, 88.9, DAZARALOR },
 					["g"] = {
 						i(168623, {	-- Biconcavic Lens of the Focusing Iris (Rank 4)
 							["u"] = REMOVED_FROM_GAME,
@@ -1570,7 +1570,7 @@ _.Zones =
 					},
 				}),
 				n(129597, {	-- Trader Haw'li <Food & Drink>
-					["coord"] = { 37.8, 14.7, 1165 },
+					["coord"] = { 37.8, 14.7, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(156651, {	-- Golden Seeds
@@ -1583,7 +1583,7 @@ _.Zones =
 					},
 				}),
 				n(125311, {	-- Trader Nog
-					["coord"] = { 57.1, 91.4, 1165 },
+					["coord"] = { 57.1, 91.4, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(156655, {	-- Preserved Night Elf Head
@@ -1604,7 +1604,7 @@ _.Zones =
 					},
 				}),
 				n(122698, {	-- Xanjo <Leatherworking Trainer>
-					["coord"] = { 44.0, 34.6, 1165 },
+					["coord"] = { 44.0, 34.6, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(168028, {	-- Recipe: Mallet of Thunderous Skins

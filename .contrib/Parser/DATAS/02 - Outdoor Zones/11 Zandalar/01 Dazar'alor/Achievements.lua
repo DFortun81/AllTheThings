@@ -13,7 +13,7 @@ _.Zones =
 					["g"] = {
 						crit(15, {	-- Tales of de Loa: Zandalar
 							["itemID"] = 163682,	-- Tales of de Loa: Zandalar
-							["coord"] = { 53.2, 9.3, 1165 },
+							["coord"] = { 53.2, 9.3, DAZARALOR },
 						}),
 					},
 				}),
@@ -31,7 +31,7 @@ _.Zones =
 				ach(12614, {	-- Loa Expectations
 				--	NEEDS CONFIRMATION: for gonk/pa'ku, do you need to do any other quests in the zuldazar storyline, or can you get both buffs right after you choose?  i didn't do the achievement until after i had completely finished zuldazar/nazmir, so i'm not sure.
 					["description"] = "The best place to get this is in the \"Council Chambers\", where all six shrines are in one room.  Head to the coordinates provided and enter the building.  Turn left and go upstairs.  There are shrines around the perimeter of the room for each loa.",
-					["coord"] = { 40.8, 11.4, 1165 },
+					["coord"] = { 40.8, 11.4, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						crit(1, {	-- Boon of Gonk
@@ -63,29 +63,29 @@ _.Zones =
 				ach(13039, {	-- Paku'ai
 					["description"] = "Travel to the coordinates provided and click the totems for the easiest method to get the achievement.\n\nRequires alignment with Pa'ku.  You can switch loa by speaking to Chronicler Ash'tari in Dazar'alor (50.7, 35.2).\n",
 					["coords"] = {
-						{ 45.1, 5.28, 1165 },
-						{ 46.5, 19.9, 1165 },
-						{ 49.5, 32.8, 1165 },
-						{ 51.3, 40.9, 1165 },
-						{ 58.3, 32.6, 1165 },
-						{ 53.2, 18.9, 1165 },
-						{ 42.8, 22.9, 1165 },
-						{ 40.7, 11.0, 1165 },
-						{ 41.3, 37.8, 1165 },
-						{ 46.8, 85.5, 1165 },
-						{ 44.6, 5.90, 1165 },
-						{ 52.8, 12.4, 1165 },
-						{ 52.9, 11.3, 1165 },
-						{ 59.1, 10.6, 1165 },
-						{ 41.3, 39.0, 1165 },
-						{ 40.6, 84.3, 1165 },
+						{ 45.1, 5.28, DAZARALOR },
+						{ 46.5, 19.9, DAZARALOR },
+						{ 49.5, 32.8, DAZARALOR },
+						{ 51.3, 40.9, DAZARALOR },
+						{ 58.3, 32.6, DAZARALOR },
+						{ 53.2, 18.9, DAZARALOR },
+						{ 42.8, 22.9, DAZARALOR },
+						{ 40.7, 11.0, DAZARALOR },
+						{ 41.3, 37.8, DAZARALOR },
+						{ 46.8, 85.5, DAZARALOR },
+						{ 44.6, 5.90, DAZARALOR },
+						{ 52.8, 12.4, DAZARALOR },
+						{ 52.9, 11.3, DAZARALOR },
+						{ 59.1, 10.6, DAZARALOR },
+						{ 41.3, 39.0, DAZARALOR },
+						{ 40.6, 84.3, DAZARALOR },
 						{ 65.3, 33.9, 862 },
 					},
 					["races"] = HORDE_ONLY,
 				}),
 				ach(13038, {	-- Raptari Rider
 					["description"] = "You can get this achievement easily by running between the two totems at the coordinates provided.\n\nRequires alignment with Gonk.  You can switch loa by speaking to Chronicler Ash'tari in Dazar'alor (50.7, 35.2).\n",
-					["coord"] = { 49.9, 33.3, 1165 },
+					["coord"] = { 49.9, 33.3, DAZARALOR },
 					["races"] = HORDE_ONLY,
 				}),
 				ach(11861, {	-- The Throne of Zuldazar
@@ -117,19 +117,19 @@ _.Zones =
 						crit(1, {	-- Offerings of the Chosen
 							["objectID"] = 276735,	-- Offerings of the Chosen
 							["questID"] = 48938,
-							["coord"] = { 38.3, 7.2, 1165 },
+							["coord"] = { 38.3, 7.2, DAZARALOR },
 						}),
 						crit(7, {	-- Da White Shark's Bounty
 							["sourceQuests"] = { 50948 },	-- Da White Shark kill
 							["questID"] = 50947,
-							["coord"] = { 59.5, 88.8, 1165 },
+							["coord"] = { 59.5, 88.8, DAZARALOR },
 							["cr"] = 133208,	-- Da White Shark
 						}),
 						crit(9, {	-- Cache of Secrets
 							["description"] = "Located in a cave behind a waterfall.",
 							["objectID"] = 288596,	-- Cache of Secrets
 							["questID"] = 51338,
-							["coord"] = { 46.3, 26.6, 1165 },
+							["coord"] = { 46.3, 26.6, DAZARALOR },
 						}),
 					},
 				}),

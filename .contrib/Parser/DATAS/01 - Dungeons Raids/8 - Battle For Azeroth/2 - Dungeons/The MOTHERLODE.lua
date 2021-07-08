@@ -6,7 +6,7 @@ _.Instances = { tier(8, {	-- Battle For Azeroth
 	inst(1012, {	-- The MOTHERLODE!!
 		["coords"] = {
 			{ 39.2, 71.5, 862 },	-- Alliance, Zuldazar
-			{ 44.3, 92.6, 1165 },	-- Horde, Dazar'alor
+			{ 44.3, 92.6, DAZARALOR },	-- Horde
 		},
 		["maps"] = { 1010 },	-- The Motherlode
 		["lvl"] = 110,

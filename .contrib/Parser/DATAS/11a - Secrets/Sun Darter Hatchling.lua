@@ -60,7 +60,7 @@ _.Secrets =
 							}),
 							n(141614, {	-- Koari <Pet Supplies>
 								["description"] = "Dazar'alor",
-								["coord"] = { 34.8, 13.1, 1165 },
+								["coord"] = { 34.8, 13.1, DAZARALOR },
 								["races"] = HORDE_ONLY,
 							}),
 							n(115287, {	-- Serr'ah <Battle Pet Master>

@@ -705,11 +705,11 @@ _.Holidays =
 						["maps"] = {
 							1163,	-- The Great Seal [Dazar'alor]
 							1164,	-- Hall of Chroniclers [Dazar'alor]
-							1165,	-- Dazar'alor
+							DAZARALOR,
 						},
 						["coords"] = {
-							{ 53.46, 84.91, 1165 },	-- Entrance to Hall of Castes
-							{ 54.64, 84.61, 1165 },	-- Caretaker Padae
+							{ 53.46, 84.91, DAZARALOR },	-- Entrance to Hall of Castes
+							{ 54.64, 84.61, DAZARALOR },	-- Caretaker Padae
 						},
 						["races"] = HORDE_ONLY,
 						["isYearly"] = true,
@@ -785,7 +785,7 @@ _.Holidays =
 							864,	-- Vol'dun
 							1163,	-- The Great Seal [Dazar'alor]
 							1164,	-- Hall of Chroniclers [Dazar'alor]
-							1165,	-- Dazar'alor
+							DAZARALOR,
 						},
 						["coords"] = {
 							{ 28.91, 88.76, 864 },	-- The Golden Isle
@@ -891,7 +891,7 @@ _.Holidays =
 							862,	-- Zuldazar
 							1163,	-- The Great Seal [Dazar'alor]
 							1164,	-- Hall of Chroniclers [Dazar'alor]
-							1165,	-- Dazar'alor
+							DAZARALOR,
 						},
 						["coords"] = {
 							{ 65.77, 45.01, 865 },	-- Path Starts to Pteroor Rise
@@ -1049,11 +1049,11 @@ _.Holidays =
 						["maps"] = {
 							1163,	-- The Great Seal [Dazar'alor]
 							1164,	-- Hall of Chroniclers [Dazar'alor]
-							1165,	-- Dazar'alor
+							DAZARALOR,
 						},
 						["coords"] = {
-							{ 53.46, 84.91, 1165 },	-- Entrance to Hall of Castes
-							{ 54.64, 84.61, 1165 },	-- Caretaker Padae
+							{ 53.46, 84.91, DAZARALOR },	-- Entrance to Hall of Castes
+							{ 54.64, 84.61, DAZARALOR },	-- Caretaker Padae
 						},
 						["races"] = HORDE_ONLY,
 						["g"] = {
@@ -1421,7 +1421,7 @@ _.Holidays =
 							863,	-- Nazmir
 							1163,	-- The Great Seal [Dazar'alor]
 							1164,	-- Hall of Chroniclers [Dazar'alor]
-							1165,	-- Dazar'alor
+							DAZARALOR,
 						},
 						["coords"] = {
 							{ 71.18, 49.19, 863 },	-- Path Starts
@@ -1502,7 +1502,7 @@ _.Holidays =
 							864,	-- Vol'dun
 							1163,	-- The Great Seal [Dazar'alor]
 							1164,	-- Hall of Chroniclers [Dazar'alor]
-							1165,	-- Dazar'alor
+							DAZARALOR,
 						},
 						["coords"] = {
 							{ 27.01, 53.15, 864 },	-- Path to Sanctuary of the Devoted
@@ -1524,7 +1524,7 @@ _.Holidays =
 							862,	-- Zuldazar
 							1163,	-- The Great Seal [Dazar'alor]
 							1164,	-- Hall of Chroniclers [Dazar'alor]
-							1165,	-- Dazar'alor
+							DAZARALOR,
 						},
 						["coords"] = {
 							{ 49.39, 31.22, 862 },	-- Path Starts

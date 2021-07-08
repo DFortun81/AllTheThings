@@ -12,7 +12,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						crit(4, {	-- Gonk Respected
-							["coord"] = { 49.2, 44.3, 1165 },
+							["coord"] = { 49.2, 44.3, DAZARALOR },
 							["cr"] = 129740,	-- Gonk
 						}),
 						crit(6, {	-- Jani Respected
@@ -20,15 +20,15 @@ _.Zones =
 								51145,	-- Curse of Jani (A)
 								47442,	-- Curse of Jani (H)
 							},
-							["coord"] = { 35.4, 7.81, 1165 },
+							["coord"] = { 35.4, 7.81, DAZARALOR },
 							["cr"] = 126334,	-- Jani
 						}),
 						crit(7, {	-- Pa'ku Respected
-							["coord"] = { 71.5, 49.4, 1165 },
+							["coord"] = { 71.5, 49.4, DAZARALOR },
 							["cr"] = 127377,	-- Pa'ku
 						}),
 						crit(8, {	-- Rezan Respected
-							["coord"] = { 70.8, 29.8, 1165 },
+							["coord"] = { 70.8, 29.8, DAZARALOR },
 							["cr"] = 124948,	-- Rezan
 						}),
 					}

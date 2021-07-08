@@ -1149,12 +1149,12 @@ _.Achievements =
 					},
 					["maps"] = {
 						1161,	-- Boralus
-						1165,	-- Dazar'alor
+						DAZARALOR,
 						942,	-- Stormsong Valley
 					},
 					["coords"] = {
 						{ 47.61, 47.36, 1161 },	-- Joespeh Stephens
-						{ 47.04, 91.55, 1165 },	-- Lenne
+						{ 47.04, 91.55, DAZARALOR },	-- Lenne
 						{ 41.22, 50.21, 942 },	-- Rebecca Barnes
 						{ 50.82, 33.46, 942 },	-- Rusty Blade Waitress
 					},
@@ -1179,7 +1179,7 @@ _.Achievements =
 					},
 					["maps"] = {
 						1161,	-- Boralus
-						1165,	-- Dazar'alor
+						DAZARALOR,
 						895,	-- Tiragarde Sound
 					},
 					["coords"] = {
@@ -1197,7 +1197,7 @@ _.Achievements =
 						{ 49.77, 25.13, 895 },	-- Sarella Griffin
 						{ 73.27, 16.02, 1161 },	-- Victor Esquivias [Patrols]
 						{ 74.12, 12.66, 1161 },	-- Wesley Rockhold
-						{ 35.42, 16.66, 1165 },	-- Zuaba Sonja
+						{ 35.42, 16.66, DAZARALOR },	-- Zuaba Sonja
 					},
 				}),
 				i(158927, {	-- Foaming Turtle Broth
@@ -1407,7 +1407,7 @@ _.Achievements =
 					},
 					["maps"] = {
 						1161,	-- Boralus
-						1165,	-- Dazar'alor
+						DAZARALOR,
 						895,	-- Tiragarde Sound
 					},
 					["coords"] = {
@@ -1422,7 +1422,7 @@ _.Achievements =
 						{ 52.78, 17.27, 1161 },	-- Monica Winters
 						{ 49.77, 25.13, 895 },	-- Sarella Griffin
 						{ 73.27, 16.02, 1161 },	-- Victor Esquivias [Patrols]
-						{ 35.42, 16.66, 1165 },	-- Zuaba Sonja
+						{ 35.42, 16.66, DAZARALOR },	-- Zuaba Sonja
 					},
 				}),
 				i(163651, {	-- Sausage Martini

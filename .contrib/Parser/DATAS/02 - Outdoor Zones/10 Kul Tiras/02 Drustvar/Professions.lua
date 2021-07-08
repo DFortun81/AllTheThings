@@ -200,7 +200,7 @@ _.Zones =
 					}),
 					q(51971, {	-- An Exquisite Brooch
 						["provider"] = { "i", 160944 },	-- An Exquisite Brooch
-						["coord"] = { 44.0, 39.0, 1165 },
+						["coord"] = { 44.0, 39.0, DAZARALOR },
 						["description"] = "This can drop from |cFFFFD700Monelite Seam|r at any mining level.  You can only turn it in at Level 150 Zandalari Mining.",
 						["requireSkill"] = MINING,
 						["races"] = HORDE_ONLY,

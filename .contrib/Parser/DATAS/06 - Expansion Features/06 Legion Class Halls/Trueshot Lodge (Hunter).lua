@@ -770,11 +770,11 @@ _.ExpansionFeatures =
 					}),
 					q(54913, {	-- Spark of Genius (H)
 						["provider"] = { "n", 152002 },	-- Image of Mimiron
-						["coord"] = { 47.8, 89.4, 1165 },
+						["coord"] = { 47.8, 89.4, DAZARALOR },
 						["races"] = HORDE_ONLY,
 						["classes"] = { HUNTER },
 						["lvl"] = 120,
-						["maps"] = { 1165 },	-- Dazar'alor
+						["maps"] = { DAZARALOR },
 					}),
 					q(54915, {	-- Telemetry Online
 						["provider"] = { "n", 149736 },	-- Image of Mimiron

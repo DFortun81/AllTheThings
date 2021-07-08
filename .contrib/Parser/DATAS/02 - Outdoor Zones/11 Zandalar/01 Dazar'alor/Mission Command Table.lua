@@ -10,7 +10,7 @@ _.Zones =
 				["modelScale"] = 3,
 				["crs"] = { 147244 },	-- Dazar'alor: The Great Seal Location
 				["coords"] = {
-					{ 51.59, 99.58, 1165 },	-- The Banshee's Wail Location [Original]
+					{ 51.59, 99.58, DAZARALOR },	-- The Banshee's Wail Location [Original]
 					{ 58.42, 70.63, 1164 },	-- Dazar'alor: The Great Seal Location
 				},
 				["races"] = HORDE_ONLY,

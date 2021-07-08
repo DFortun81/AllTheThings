@@ -2013,7 +2013,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 				["maps"] = {
 					1163,	-- Dazar'alor
 					1164,	-- Dazar'alor
-					1165,	-- Dazar'alor
+					DAZARALOR,
 				},
 				["g"] = {
 					i(37586),	-- Handful of Treats

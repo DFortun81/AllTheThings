@@ -7,7 +7,7 @@ _.Instances = { tier(8, {	-- Battle for Azeroth
 		["isRaid"] = true,
 		["coords"] = {
 			{ 70.5, 35.3, 1161 },	-- Alliance, Boralus
-			{ 38.8, 2.40, 1165 },	-- Horde, Dazar'alor
+			{ 38.8, 2.40, DAZARALOR },	-- Horde
 		},
 		["maps"] = {
 			--1348,	-- Zandalari Treasury (i think this is a scenario-only map, and that 1353 is used inside the instance)

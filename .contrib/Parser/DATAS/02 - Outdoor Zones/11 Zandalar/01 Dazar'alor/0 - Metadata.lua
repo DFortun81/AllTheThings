@@ -12,7 +12,7 @@ _.Zones =
 			["maps"] = {
 				--1163,	-- Dazar'alor
 				1164,	-- Dazar'alor
-				1165,	-- Dazar'alor
+				DAZARALOR,
 				1166,	-- Zanchul
 				1167,	-- Zanchul 2
 			},

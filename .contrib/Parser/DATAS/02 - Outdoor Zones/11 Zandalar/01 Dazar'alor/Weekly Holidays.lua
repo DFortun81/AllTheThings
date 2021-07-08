@@ -140,7 +140,7 @@ _.Zones =
 				q(53037, {	-- Emissary of War (Mythic dungeons)
 					["provider"] = { "n", 144384 },		-- Chronicler Shoopa
 					["isWeekly"] = true,
-					["coord"] = { 56.63, 88.61, 1165 },
+					["coord"] = { 56.63, 88.61, DAZARALOR },
 					["g"] = {
 						i(164257, {	-- Cache of Uldir Treasures (Heroic Quality)
 							["u"] = REMOVED_FROM_GAME,
@@ -162,7 +162,7 @@ _.Zones =
 				q(47148, {	-- Something Different
 					["provider"] = { "n", 144384 },	-- Chronicler Shoopa
 					["isWeekly"] = true,
-					["coord"] = { 56.63, 88.61, 1165 },
+					["coord"] = { 56.63, 88.61, DAZARALOR },
 					["g"] = {
 						i(154992, {	-- Brawler's Footlocker
 							["sym"] = {
@@ -177,7 +177,7 @@ _.Zones =
 				q(53039, {	-- The Arena Calls
 					["provider"] = { "n", 144384 },	-- Chronicler Shoopa
 					["isWeekly"] = true,
-					["coord"] = { 56.63, 88.61, 1165 },
+					["coord"] = { 56.63, 88.61, DAZARALOR },
 					["g"] = {
 						i(164262),	-- Steel Strongbox
 					},
@@ -185,12 +185,12 @@ _.Zones =
 				q(53038, {	-- The Very Best (pet battles)
 					["provider"] = { "n", 144384 },	-- Chronicler Shoopa
 					["isWeekly"] = true,
-					["coord"] = { 56.63, 88.61, 1165 },
+					["coord"] = { 56.63, 88.61, DAZARALOR },
 				}),
 				q(53030, {	-- The World Awaits
 					["provider"] = { "n", 144384 },	-- Chronicler Shoopa
 					["isWeekly"] = true,
-					["coord"] = { 56.63, 88.61, 1165 },
+					["coord"] = { 56.63, 88.61, DAZARALOR },
 				}),
 			})),
 		}),

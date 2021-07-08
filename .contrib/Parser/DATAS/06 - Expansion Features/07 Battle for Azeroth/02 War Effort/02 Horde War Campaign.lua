@@ -12,7 +12,7 @@ _.ExpansionFeatures =
 					n(ACHIEVEMENTS, {
 						ach(12509, {	-- Ready for War
 							["races"] = HORDE_ONLY,
-							["maps"] = { 1163, 1164, 1165 },	-- Dazar'alor
+							["maps"] = { 1163, 1164, DAZARALOR },	-- Dazar'alor
 							["g"] = {
 								crit(1, {	-- Drustvar Foothold
 									["sourceQuests"] = { 51985 },	-- Return to Zuldazar (Drustvar Foothold)
@@ -1119,7 +1119,7 @@ _.ExpansionFeatures =
 						q(54140, {	-- Ride of the Zandalari
 							["sourceQuests"] = { 54139 },	-- War Is Here
 							["provider"] = { "n", 133050 },	-- Princess Talanji
-							["coord"] = { 41.1, 66.5, 1165 },
+							["coord"] = { 41.1, 66.5, DAZARALOR },
 							["races"] = HORDE_ONLY,
 						}),
 						q(54156, {	-- A Path of Blood
@@ -1249,7 +1249,7 @@ _.ExpansionFeatures =
 						q(54165, {	-- The Return of Derek Proudmoore
 							["sourceQuests"] = { 54164 },	-- The King's Death
 							["provider"] = { "n", 145411 },	-- Lady Sylvanas Windrunner
-							["coord"] = { 49.8, 38.8, 1165 },
+							["coord"] = { 49.8, 38.8, DAZARALOR },
 							["races"] = HORDE_ONLY,
 						}),
 						-- The Message to the Lord Admiral (Returning Derek Proudmoore to Jaina)
@@ -1261,7 +1261,7 @@ _.ExpansionFeatures =
 							},
 							["altQuests"] = { 54961 },	-- Righting Wrongs (Sylvanas Version)
 							["provider"] = { "n", 150433 },	-- Bluffwatcher Proudscar
-							["coord"] = { 49.8, 95.9, 1165 },
+							["coord"] = { 49.8, 95.9, DAZARALOR },
 							["races"] = HORDE_ONLY,
 						}),
 						q(54961, {	-- Righting Wrongs (Sylvanas Version)
@@ -1272,7 +1272,7 @@ _.ExpansionFeatures =
 							},
 							["altQuests"] = { 55124 },	-- Righting Wrongs
 							["provider"] = { "n", 150433 },	-- Bluffwatcher Proudscar
-							["coord"] = { 49.8, 95.9, 1165 },
+							["coord"] = { 49.8, 95.9, DAZARALOR },
 							["races"] = HORDE_ONLY,
 						}),
 						q(54958, {	-- Ships in the Night
@@ -1440,9 +1440,9 @@ _.ExpansionFeatures =
 								55782,	-- Stay of Execution (Sylvanas Version)
 							},
 							["provider"] = { "n", 155789 },	-- Lor'themar Theron
-							["coord"] = { 50.2, 96.0, 1165 },
+							["coord"] = { 50.2, 96.0, DAZARALOR },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 1165 },	-- Dazar'alor
+							["maps"] = { DAZARALOR },
 						}),
 						q(57088, {	-- This Ain't Mine
 							["sourceQuests"] = { 56496 },	-- The Eve of Battle

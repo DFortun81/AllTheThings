@@ -284,19 +284,19 @@ _.Zones =
 									q(53824, {	-- The Rite of Kings and Queens
 										["sourceQuests"] = { 53823 },	-- A Queen's Entourage
 										["provider"] = { "n", 148096 },	-- High Prelate Rata
-										["coord"] = { 42.57, 22.54, 1165 },
+										["coord"] = { 42.57, 22.54, DAZARALOR },
 										["races"] = HORDE_ONLY,
 									}),
 									q(54419, {	-- Quelling the Masses
 										["sourceQuests"] = { 53824 },	-- The Rite of Kings and Queens
 										["provider"] = { "n", 145360 },	-- Zolani
-										["coord"] = { 40.28, 12.45, 1165 },
+										["coord"] = { 40.28, 12.45, DAZARALOR },
 										["races"] = HORDE_ONLY,
 									}),
 									q(53826, {	-- The Instigator Among Us
 										["sourceQuests"] = { 53824 },	-- The Rite of Kings and Queens
 										["provider"] = { "n", 145360 },	-- Zolani
-										["coord"] = { 40.28, 12.45, 1165 },
+										["coord"] = { 40.28, 12.45, DAZARALOR },
 										["races"] = HORDE_ONLY,
 									}),
 									q(54301, {	-- Talanji's Mercy
@@ -305,7 +305,7 @@ _.Zones =
 											53826,	-- The Instigator Among Us
 										},
 										["provider"] = { "n", 145359 },	-- Princess Talanji
-										["coord"] = { 40.5, 11.9, 1165 },
+										["coord"] = { 40.5, 11.9, DAZARALOR },
 										["races"] = HORDE_ONLY,
 									}),
 									q(54925, {	-- Heresy!
@@ -314,7 +314,7 @@ _.Zones =
 											53826,	-- The Instigator Among Us
 										},
 										["provider"] = { "n", 148096 },	-- High Prelate Rata
-										["coord"] = { 40.2, 11.9, 1165 },
+										["coord"] = { 40.2, 11.9, DAZARALOR },
 										["races"] = HORDE_ONLY,
 									}),
 									q(54300, {	-- Breaking the Faith
@@ -323,7 +323,7 @@ _.Zones =
 											53826,	-- The Instigator Among Us
 										},
 										["provider"] = { "n", 145360 },	-- Zolani
-										["coord"] = { 40.5, 12.4, 1165 },
+										["coord"] = { 40.5, 12.4, DAZARALOR },
 										["races"] = HORDE_ONLY,
 									}),
 									q(53825, {	-- The New Zanchuli Council
@@ -333,55 +333,55 @@ _.Zones =
 											54300,	-- Breaking the Faith
 										},
 										["provider"] = { "n", 145359 },	-- Princess Talanji
-										["coord"] = { 40.6, 12.0, 1165 },
+										["coord"] = { 40.6, 12.0, DAZARALOR },
 										["races"] = HORDE_ONLY,
 									}),
 									q(53827, {	-- The Council Has Spoken
 										["sourceQuests"] = { 53825 },	-- The New Zanchuli Council
 										["provider"] = { "n", 145359 },	-- Princess Talanji
-										["coord"] = { 60.4, 38.9, 1165 },
+										["coord"] = { 60.4, 38.9, DAZARALOR },
 										["races"] = HORDE_ONLY,
 									}),
 									q(53828, {	-- Gaze of the Loa
 										["sourceQuests"] = { 53827 },	-- The Council Has Spoken
 										["provider"] = { "n", 145359 },	-- Princess Talanji
-										["coord"] = { 60.4, 38.9, 1165 },
+										["coord"] = { 60.4, 38.9, DAZARALOR },
 										["races"] = HORDE_ONLY,
 									}),
 									q(54031, {	-- Gaze of the Loa: Krag'wa
 										["sourceQuests"] = { 53828 },	-- Gaze of the Loa
 										["provider"] = { "n", 146208 },	-- Krag'wa the Huge
-										["coord"] = { 44.2, 15.0, 1165 },
+										["coord"] = { 44.2, 15.0, DAZARALOR },
 										["races"] = HORDE_ONLY,
 									}),
 									q(54033, {	-- Gaze of the Loa: Gonk
 										["sourceQuests"] = { 54031 },	-- Gaze of the Loa: Krag'wa
 										["provider"] = { "n", 146208 },	-- Krag'wa the Huge
-										["coord"] = { 44.2, 15.0, 1165 },
+										["coord"] = { 44.2, 15.0, DAZARALOR },
 										["races"] = HORDE_ONLY,
 									}),
 									q(54032, {	-- Gaze of the Loa: Pa'ku
 										["sourceQuests"] = { 54033 },	-- Gaze of the Loa: Gonk
 										["provider"] = { "n", 146214 },	-- Gonk
-										["coord"] = { 46.5, 12.0, 1165 },
+										["coord"] = { 46.5, 12.0, DAZARALOR },
 										["races"] = HORDE_ONLY,
 									}),
 									q(54034, {	-- Gaze of the Loa: Bwonsamdi
 										["sourceQuests"] = { 54032 },	-- Gaze of the Loa: Pa'ku
 										["provider"] = { "n", 146209 },	-- Pa'ku <Lord of Winds>
-										["coord"] = { 44.5, 8.8, 1165 },
+										["coord"] = { 44.5, 8.8, DAZARALOR },
 										["races"] = HORDE_ONLY,
 									}),
 									q(53830, {	-- Queen of the Zandalari
 										["sourceQuests"] = { 54034 },	-- Gaze of the Loa: Bwonsamdi
 										["provider"] = { "n", 145359 },	-- Princess Talanji
-										["coord"] = { 42.7, 8.7, 1165 },
+										["coord"] = { 42.7, 8.7, DAZARALOR },
 										["races"] = HORDE_ONLY,
 									}),
 									q(53719, {	-- Allegiance of the Zandalari
 										["sourceQuests"] = { 53830 },	-- Queen of the Zandalari
 										["provider"] = { "n", 146335 },	-- Queen Talanji
-										["coord"] = { 42.4, 9.2, 1165 },
+										["coord"] = { 42.4, 9.2, DAZARALOR },
 										["races"] = HORDE_ONLY,
 										["g"] = {
 											ach(13161),	-- Allied Races: Zandalari Troll
@@ -390,7 +390,7 @@ _.Zones =
 									-- Zandalari Troll Starter Quest
 									q(55137, {	-- For the Horde
 										["provider"] = { "n", 146335 },	--  Queen Talanji
-										["coord"] = { 42.2, 9.4, 1165 },
+										["coord"] = { 42.2, 9.4, DAZARALOR },
 										["races"] = { ZANDALARI },
 										["g"] = {
 											i(165001),	-- Tabard of the Zandalari

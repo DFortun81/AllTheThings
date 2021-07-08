@@ -9,15 +9,15 @@ _.Zones =
 			n(FLIGHT_PATHS, {
 				fp(1957, {	-- Port of Zandalar, Zuldazar [Horde]
 					["description"] = "Port of Zandalar, Zuldazar",
-					["coord"] = { 52.0, 90.0, 1165 },
+					["coord"] = { 52.0, 90.0, DAZARALOR },
 				}),
 				fp(1959, {	-- The Great Seal [Horde]
 					["description"] = "The Great Seal",
-					["coord"] = { 51.92, 41.21, 1165 },
+					["coord"] = { 51.92, 41.21, DAZARALOR },
 				}),
 				fp(2061, {	-- The Sliver, Zuldazar [Horde]
 					["description"] = "The Sliver, Zuldazar",
-					["coord"] = { 53.0, 19.2, 1165 },
+					["coord"] = { 53.0, 19.2, DAZARALOR },
 				}),
 			}),
 		}),

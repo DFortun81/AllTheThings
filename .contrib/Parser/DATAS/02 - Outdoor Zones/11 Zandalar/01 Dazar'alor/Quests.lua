@@ -26,7 +26,7 @@ _.Zones =
 										q(54225, {	-- Mission Report: The Great Seal
 											["provider"] = { "n", 138706 },	-- Mission Command Table
 											["races"] = HORDE_ONLY,
-											["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location
+											["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
 										}),
 									},
 								}),
@@ -49,7 +49,7 @@ _.Zones =
 										q(54258, {	-- Mission Report: Vulpera Hideaway
 											["provider"] = { "n", 138704 },	-- Mission Command Table
 											["races"] = HORDE_ONLY,
-											["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location
+											["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
 										}),
 									},
 								}),
@@ -72,7 +72,7 @@ _.Zones =
 										q(54239, {	-- Mission Report: Zul'jan Ruins
 											["provider"] = { "n", 138704 },		-- Mission Command Table
 											["races"] = HORDE_ONLY,
-											["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location
+											["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
 										}),
 									},
 								}),
@@ -94,7 +94,7 @@ _.Zones =
 									["g"] = {
 										q(52478, {	-- Mission Report: Hillcrest Pasture
 											["provider"] = { "n", 138704 },	-- Mission Command Table
-											["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location
+											["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
 											["races"] = HORDE_ONLY,
 										}),
 									},
@@ -117,7 +117,7 @@ _.Zones =
 									["g"] = {
 										q(52313, {	-- Mission Report: Mudfisher Cove
 											["provider"] = { "n", 138704 },	-- Mission Command Table
-											["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location
+											["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
 											["races"] = HORDE_ONLY,
 										}),
 									},
@@ -134,7 +134,7 @@ _.Zones =
 									["g"] = {
 										q(53125, {	-- Mission Report: Into The Wicker (Per Character)
 											["provider"] = { "n", 138704 },	-- Mission Command Table
-											["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location
+											["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
 											["races"] = HORDE_ONLY,
 										}),
 									},
@@ -157,7 +157,7 @@ _.Zones =
 									["g"] = {
 										q(52221, {	-- Mission Report: Stonefist Watch
 											["provider"] = { "n", 138704 },	-- Mission Command Table
-											["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location
+											["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
 											["races"] = HORDE_ONLY,
 										}),
 									},
@@ -174,7 +174,7 @@ _.Zones =
 									["g"] = {
 										q(53081, {	-- Mission Report: Spare Parts (Per Character)
 											["provider"] = { "n", 138704 },	-- Mission Command Table
-											["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location
+											["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
 											["races"] = HORDE_ONLY,
 										}),
 									},
@@ -198,7 +198,7 @@ _.Zones =
 										q(52776, {	-- Mission Report: Stonetusk Watch
 											["provider"] = { "n", 138704 },	-- Mission Command Table
 											["races"] = HORDE_ONLY,
-											["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location
+											["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
 										}),
 									},
 								}),
@@ -214,7 +214,7 @@ _.Zones =
 									["g"] = {
 										q(53100, {	-- Mission Report: Giant Slaying (Per Character)
 											["provider"] = { "n", 138704 },	-- Mission Command Table
-											["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location
+											["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
 											["races"] = HORDE_ONLY,
 										}),
 									},
@@ -238,7 +238,7 @@ _.Zones =
 										q(52275, {	-- Mission Report: Swiftwind Post
 											["provider"] = { "n", 138704 },	-- Mission Command Table
 											["races"] = HORDE_ONLY,
-											["coord"] = { 51.59, 99.58, 1165 },	-- The Banshee's Wail Location
+											["coord"] = { 51.59, 99.58, DAZARALOR },	-- The Banshee's Wail Location
 										}),
 									},
 								}),
@@ -255,7 +255,7 @@ _.Zones =
 										q(53102, {	-- Mission Report: Nature Calls (Per Character)
 											["provider"] = { "n", 138704 },	-- Mission Command Table
 											["races"] = HORDE_ONLY,
-											["coord"] = { 51.59, 99.58, 1165 },	-- The Banshee's Wail Location
+											["coord"] = { 51.59, 99.58, DAZARALOR },	-- The Banshee's Wail Location
 										}),
 									},
 								}),
@@ -277,7 +277,7 @@ _.Zones =
 									["g"] = {
 										q(52319, {	-- Mission Report: Windfall Cavern
 											["provider"] = { "n", 138704 },	-- Mission Command Table
-											["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location
+											["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
 											["races"] = HORDE_ONLY,
 										}),
 									},
@@ -301,7 +301,7 @@ _.Zones =
 									["g"] = {
 										q(52005, {	-- Mission Report: Wolf's Den
 											["provider"] = { "n", 138704 },		-- Mission Command Table
-											["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location
+											["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
 											["races"] = HORDE_ONLY,
 										}),
 									},
@@ -320,7 +320,7 @@ _.Zones =
 										q(53151, {	-- Mission Report: Wolves For The Den
 											["provider"] = { "n", 138704 },	-- Mission Command Table
 											["races"] = HORDE_ONLY,
-											["coord"] = { 51.5, 99.5, 1165 },	-- The Banshee's Wail Location
+											["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
 										}),
 									},
 								}),
@@ -342,7 +342,7 @@ _.Zones =
 				}),
 				q(51465, {	-- A Load of Scrap
 					["sourceQuests"] = { 46931 },	-- Speaker of the Horde
-					["coord"] = { 44.9, 39.6, 1165 },
+					["coord"] = { 44.9, 39.6, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 137818 },	-- Myxle "The Searat" Gutwrench
 				}),
@@ -354,12 +354,12 @@ _.Zones =
 						49663,	-- False Prophecies
 					},
 					["provider"] = { "n", 127815 },	-- Zolani
-					["coord"] = { 49.9, 46.6, 1165 },
+					["coord"] = { 49.9, 46.6, DAZARALOR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(50240, {	-- A Slip of the Tongue
 					["provider"] = { "n", 132989 },	-- Blind Tra'wala
-					["coord"] = { 53.6, 9.4, 1165 },
+					["coord"] = { 53.6, 9.4, DAZARALOR },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(47437, {	-- Competitive Devotion
@@ -367,19 +367,19 @@ _.Zones =
 						47434,	-- Restraining Order
 						47435,	-- Pterrortorial Dispute
 					},
-					["coord"] = { 40.8, 11.4, 1165 },
+					["coord"] = { 40.8, 11.4, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 126564 },	-- Hexlord Raal
 				}),
 				q(47442, {	-- Curse of Jani
 					["sourceQuests"] = { 47441 },	-- Pests
-					["coord"] = { 35.4, 7.7, 1165 },
+					["coord"] = { 35.4, 7.7, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 126334 },	-- Jani
 				}),
 				q(46929, {	-- Deterrent
 					["sourceQuests"] = { 46926 },	-- Shakedown
-					["coord"] = { 50.0, 84.9, 1165 },
+					["coord"] = { 50.0, 84.9, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 135441 },	-- Zolani
 					["g"] = {
@@ -392,7 +392,7 @@ _.Zones =
 				}),
 				q(47422, {	-- Dire Situation
 					["sourceQuests"] = { 47437 },	-- Competitive Devotion
-					["coord"] = { 46.0, 13.0, 1165 },
+					["coord"] = { 46.0, 13.0, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 126560 },	-- Wardruid Loti
 					["g"] = {
@@ -414,7 +414,7 @@ _.Zones =
 				}),
 				q(48454, {	-- Evidence of Evil
 					["sourceQuests"] = { 48452 },	-- The Red Market
-					["coord"] = { 44.3, 82.1, 1165 },
+					["coord"] = { 44.3, 82.1, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 126148 },	-- Witch Doctor Jala
 				}),
@@ -432,14 +432,14 @@ _.Zones =
 				q(47423, {	-- Forbidden Practices
 					["sourceQuests"] = { 47445 },	-- The Zanchuli Council
 					["provider"] = { "n", 126560 },	-- Wardruid Loti
-					["coord"] = { 45.0, 23.9, 1165 },
+					["coord"] = { 45.0, 23.9, DAZARALOR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47439, {	-- Gonk, Lord of the Pack
 					["sourceQuests"] = { 47438 },	-- Picking a Side
 					["altQuests"] = { 47440 },	-- Pa'ku, Master of Winds
 					["provider"] = { "n", 126560 },	-- Wardruid Loti
-					["coord"] = { 42.4, 9.00, 1165 },
+					["coord"] = { 42.4, 9.00, DAZARALOR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49421, {	-- Hunting Zul
@@ -455,7 +455,7 @@ _.Zones =
 				q(56249, {	-- I Am the Trashmaster
 					--["sourceQuests"] = { },
 					["description"] = "You need to get Trashmaster's Mantle from K.U.-J.0. boss in Mechagon for this quest.",
-					["coord"] = { 35.3, 7.70, 1165 },
+					["coord"] = { 35.3, 7.70, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 126334 },	-- Jani <Loa of Scavengers>
 					["cost"] = { { "i", 168970, 1 } },	-- Trashmaster's Mantle
@@ -466,7 +466,7 @@ _.Zones =
 				}),
 				q(47315, {	-- Into the Dunes
 					["sourceQuests"] = { 47314 },	-- Rumors of Exile
-					["coord"] = { 49.9, 31.6, 1165 },
+					["coord"] = { 49.9, 31.6, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 122320 },	-- Bladeguard Kaja
 				}),
@@ -490,7 +490,7 @@ _.Zones =
 				}),
 				q(52472, {	-- Make Loh Go
 					["sourceQuests"] = { 52131 },	-- We Need Each Other
-					["coord"] = { 56.3, 91.5, 1165 },
+					["coord"] = { 56.3, 91.5, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 134346 },	-- Toki
 				}),
@@ -500,12 +500,12 @@ _.Zones =
 						47520,	-- Walls Have Ears
 					},
 					["provider"] = { "n", 133324 },	-- Hexlord Raal
-					["coord"] = { 42.5, 9.5, 1165 },
+					["coord"] = { 42.5, 9.5, DAZARALOR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48405, {	-- Mista Nice
 					["sourceQuests"] = { 48404 },	-- The Scamps
-					["coord"] = { 55.9, 88.8, 1165 },
+					["coord"] = { 55.9, 88.8, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 125312 },	-- Scrollsage Rooka
 				}),
@@ -516,12 +516,12 @@ _.Zones =
 					},
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 130785 },	-- Huntmaster Kil'ja
-					["coord"] = { 51.9, 41.5, 1165 },
+					["coord"] = { 51.9, 41.5, DAZARALOR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47440, {	-- Pa'ku, Master of Winds
 					["sourceQuests"] = { 47438 },	-- Picking a Side
-					["coord"] = { 42.5, 9.30, 1165 },
+					["coord"] = { 42.5, 9.30, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 126564 },	-- Hexlord Raal
 					["altQuests"] = {
@@ -529,31 +529,31 @@ _.Zones =
 					},
 				}),
 				q(47441, {	-- Pests
-					["coord"] = { 40.2, 19.0, 1165 },
+					["coord"] = { 40.2, 19.0, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 127665 },	-- Nokano
 				}),
 				q(47438, {	-- Picking a Side
 					["sourceQuests"] = { 47422 },	-- Dire Situation
-					["coord"] = { 42.1, 9.00, 1165 },
+					["coord"] = { 42.1, 9.00, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 126560 },	-- Wardruid Loti
 				}),
 				q(47435, {	-- Pterrortorial Dispute
 					["sourceQuests"] = { 47433 },	-- Offensively Defensive
-					["coord"] = { 46.2, 19.1, 1165 },
+					["coord"] = { 46.2, 19.1, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 126560 },	-- Wardruid Loti
 				}),
 				q(46927, {	-- Punishment of Tal'aman
 					["sourceQuests"] = { 46846 },	-- The Word of Zul
-					["coord"] = { 50.0, 84.9, 1165 },
+					["coord"] = { 50.0, 84.9, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 126684 },	-- Yazma
 				}),
 				q(46928, {	-- Punishment of Tal'farrak
 					["sourceQuests"] = { 46926 },	-- Shakedown
-					["coord"] = { 50.0, 84.9, 1165 },
+					["coord"] = { 50.0, 84.9, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 126684 },	-- Yazma
 				}),
@@ -566,7 +566,7 @@ _.Zones =
 						{ "n", 123335 },	-- Wardruid Loti
 						{ "n", 133302 },	-- Druid of Gonk (Wardruid Loti)
 					},
-					["coord"] = { 39.4, 13.8, 1165 },
+					["coord"] = { 39.4, 13.8, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(158399),	-- Rastari Wargreaves
@@ -581,19 +581,19 @@ _.Zones =
 				}),
 				q(46930, {	-- Rastakhan
 					["sourceQuests"] = { 46957 },	-- Welcome to Zuldazar
-					["coord"] = { 49.9, 82.5, 1165 },
+					["coord"] = { 49.9, 82.5, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 122661 },	-- General Jakra'zet
 				}),
 				q(47915, {	-- Rescuing the Taken
 					["sourceQuests"] = { 47509 },	-- Terrace of the Chosen
 					["provider"] = { "n", 124629 },	-- Kaza'jin the Wavebinder
-					["coord"] = { 42.6, 21.4, 1165 },
+					["coord"] = { 42.6, 21.4, DAZARALOR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47434, {	-- Restraining Order
 					["sourceQuests"] = { 47433 },	-- Offensively Defensive
-					["coord"] = { 46.2, 19.1, 1165 },
+					["coord"] = { 46.2, 19.1, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 126560 },	-- Wardruid Loti
 				}),
@@ -608,13 +608,13 @@ _.Zones =
 						46927,	-- Punishment of Tal'aman
 						46928,	-- Punishment of Tal'farrak
 					},
-					["coord"] = { 50.0, 85.2, 1165 },
+					["coord"] = { 50.0, 85.2, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 135441 },	-- Zolani
 				}),
 				q(47314, {	-- Rumors of Exile
 					["sourceQuests"] = { 47313 },	-- Discreet Discussions
-					["coord"] = { 51.5, 31.8, 1165 },
+					["coord"] = { 51.5, 31.8, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 122817 },	-- Bladeguard Kaja
 				}),
@@ -635,44 +635,44 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(52834, {	-- Seal of Wartorn Fate: Gold
-					["coord"] = { 53.9, 88.4, 1165 },
+					["coord"] = { 53.9, 88.4, DAZARALOR },
 					--["races"] = HORDE_ONLY,
 					["provider"] = { "n", 141584 },	-- Zurvan
 					["isWeekly"] = true,
 				}),
 				q(52838, {	-- Seal of Wartorn Fate: Piles of Gold
-					["coord"] = { 53.9, 88.4, 1165 },
+					["coord"] = { 53.9, 88.4, DAZARALOR },
 					--["races"] = HORDE_ONLY,
 					["provider"] = { "n", 141584 },	-- Zurvan
 					["isWeekly"] = true,
 				}),
 				q(52835, {	-- Seal of Wartorn Fate: Marks of Honor
-					["coord"] = { 53.9, 88.4, 1165 },
+					["coord"] = { 53.9, 88.4, DAZARALOR },
 					--["races"] = HORDE_ONLY,
 					["provider"] = { "n", 141584 },	-- Zurvan
 					["isWeekly"] = true,
 				}),
 				q(52839, {	-- Seal of Wartorn Fate: Additional Marks of Honor
-					["coord"] = { 53.9, 88.4, 1165 },
+					["coord"] = { 53.9, 88.4, DAZARALOR },
 					--["races"] = HORDE_ONLY,
 					["provider"] = { "n", 141584 },	-- Zurvan
 					["isWeekly"] = true,
 				}),
 				q(52837, {	-- Seal of Wartorn Fate: War Resources
-					["coord"] = { 53.9, 88.4, 1165 },
+					["coord"] = { 53.9, 88.4, DAZARALOR },
 					--["races"] = HORDE_ONLY,
 					["provider"] = { "n", 141584 },	-- Zurvan
 					["isWeekly"] = true,
 				}),
 				q(52840, {	-- Seal of Wartorn Fate: Stashed War Resources
-					["coord"] = { 53.9, 88.4, 1165 },
+					["coord"] = { 53.9, 88.4, DAZARALOR },
 					--["races"] = HORDE_ONLY,
 					["provider"] = { "n", 141584 },	-- Zurvan
 					["isWeekly"] = true,
 				}),
 				q(56044, {	-- Send the Fleet
 					["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
-					["coord"] = { 58.4, 62.6, 1165 },
+					["coord"] = { 58.4, 62.6, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 56030,	-- The Warchief's Order
 				}),
@@ -682,11 +682,11 @@ _.Zones =
 						49310,	-- The Prophet's Ploy (last real quest required)
 					},
 					["provider"] = { "n", 140590 },	-- Captain Grez'ko
-					["coord"] = { 46.1, 94.5, 1165 },
+					["coord"] = { 46.1, 94.5, DAZARALOR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(57198, {	-- Sense of Obligation
-					["coord"] = { 51.5, 99.4, 1165 },
+					["coord"] = { 51.5, 99.4, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 141961 },	-- Lilian Voss
 					["sourceQuests"] = {
@@ -696,19 +696,19 @@ _.Zones =
 				}),
 				q(46926, {	-- Shakedown
 					["sourceQuests"] = { 50835 },	-- The Port of Zandalar
-					["coord"] = { 50.0, 85.0, 1165 },
+					["coord"] = { 50.0, 85.0, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 135441 },	-- Zolani
 				}),
 				q(46931, {	-- Speaker of the Horde
 					["sourceQuests"] = { 46930 },	-- Rastakhan
-					["coord"] = { 50.0, 42.7, 1165 },
+					["coord"] = { 50.0, 42.7, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 120740 },	-- King Rastakhan
 				}),
 				q(49488, {	-- Tal'gurub
 					["sourceQuests"] = { 49615 },	-- Trust of a King
-					["coord"] = { 49.9, 46.6, 1165 },
+					["coord"] = { 49.9, 46.6, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 120740 },	-- King Rastakhan
 				}),
@@ -720,14 +720,14 @@ _.Zones =
 				}),
 				q(47432, {	-- The Bargain is Struck (Paku)
 					["sourceQuests"] = { 47440 },	-- Pa'ku, Master of Winds
-					["coord"] = { 49.9, 33.5, 1165 },
+					["coord"] = { 49.9, 33.5, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 127489 },	-- Hexlord Raal
 				}),
 				q(48897, {	-- The Bargain is Struck (Gonk)
 					["sourceQuests"] = { 47439 },	-- Gonk, Lord of the Pack
 					["provider"] = { "n", 127489 },	-- Hexlord Raal
-					["coord"] = { 49.9, 33.5, 1165 },
+					["coord"] = { 49.9, 33.5, DAZARALOR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47199, {	-- The Blood Gate
@@ -746,37 +746,37 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(57376, {	-- The Hidden Need
-					["coord"] = { 51.5, 99.4, 1165 },
+					["coord"] = { 51.5, 99.4, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 141961 },	-- Lilian Voss
 				}),
 				q(51518, {	-- The Lost Spirit
 					["provider"] = { "n", 140907 },	-- Bwonsamdi
-					["coord"] = { 45.0, 19.8, 1165 },
+					["coord"] = { 45.0, 19.8, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = { 51517 },	-- You Owe Me a Spirit
 				}),
 				q(53437, {	-- The MOTHERLODE!!: Raw Deal
 					["provider"] = { "n", 136683 },	-- Trade Prince Gallywix
-					["coord"] = { 58.4, 62.6, 1165 },
+					["coord"] = { 58.4, 62.6, DAZARALOR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(50835, {	-- The Port of Zandalar
 					["sourceQuests"] = { 47514 },	-- Zuldazar
 					["isBreadcrumb"] = true,	-- for "Shakedown"
-					["coord"] = { 49.8, 46.5, 1165 },
+					["coord"] = { 49.8, 46.5, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 122915 },	-- Zolani
 				}),
 				q(48452, {	-- The Red Market
 					["sourceQuests"] = { 46926 },	-- Shakedown
 					["provider"] = { "n", 126148 },	-- Witch Doctor Jala
-					["coord"] = { 44.3, 82.1, 1165 },
+					["coord"] = { 44.3, 82.1, DAZARALOR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48404, {	-- The Scamps
 					["sourceQuests"] = { 52131 },	-- We Need Each Other
-					["coord"] = { 55.9, 88.8, 1165 },
+					["coord"] = { 55.9, 88.8, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 125312 },	-- Scrollsage Rooka
 				}),
@@ -793,12 +793,12 @@ _.Zones =
 						47741,	-- To Sacrifice a Loa
 					},
 					["provider"] = { "n", 129491 },	-- King Rastakhan
-					["coord"] = { 38.9, 27.2, 1165 },
+					["coord"] = { 38.9, 27.2, DAZARALOR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(46846, {	-- The Word of Zul
 					["sourceQuests"] = { 47514 },	-- zuldazar
-					["coord"] = { 50.0, 84.7, 1165 },
+					["coord"] = { 50.0, 84.7, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 126684 },	-- Yazma
 				}),
@@ -810,7 +810,7 @@ _.Zones =
 				}),
 				q(47445, {	-- The Zanchuli Council
 					["sourceQuests"] = { 47514 },	-- Zuldazar
-					["coord"] = { 49.7, 46.5, 1165 },
+					["coord"] = { 49.7, 46.5, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 122641 },	-- Yazma
 				}),
@@ -824,7 +824,7 @@ _.Zones =
 				}),
 				q(54042, {	-- Trouble in Darkshore
 					["provider"] = { "n", 149471 },	-- Dark Ranger Velonara
-					["coord"] = { 53.0, 94.3, 1165 },
+					["coord"] = { 53.0, 94.3, DAZARALOR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(49615, {	-- Trust of a King
@@ -848,7 +848,7 @@ _.Zones =
 						{ "n", 123335 },	-- Wardruid Loti
 						{ "n", 133302 },	-- Druid of Gonk (Wardruid Loti)
 					},
-					["coord"] = { 39.4, 13.8, 1165 },
+					["coord"] = { 39.4, 13.8, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["maps"] = { 1164 },	-- Dazar'alor
 				}),
@@ -879,21 +879,21 @@ _.Zones =
 					["sourceQuests"] = { 49310 },	-- The Prophet's Ploy -- TODO: verify this. It was the earliest i've seen it become available but have additional requirements
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 128909 },	-- Shalo
-					["coord"] = { 57.8, 92.3, 1165 },
+					["coord"] = { 57.8, 92.3, DAZARALOR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48456, {	-- Witch Doctor Jala
 					["sourceQuests"] = { 46926 },	-- Shakedown
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 135441 },	-- Zolani
-					["coord"] = { 50.0, 84.9, 1165 },
+					["coord"] = { 50.0, 84.9, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(47897, {	-- Zanchuli Traitors
 					["sourceQuests"] = { 47509 },	-- Terrace of the Chosen
 					["provider"] = { "n", 124629 },	-- Kaza'jin the Wavebinder
-					["coord"] = { 42.6, 21.4, 1165 },
+					["coord"] = { 42.6, 21.4, DAZARALOR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(47514, {	-- Zuldazar
@@ -921,7 +921,7 @@ _.Zones =
 					["sourceQuests"] = { 47103 },	-- Journey to Nazmir
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 126549 },
-					["coord"] = { 51.6, 41.2, 1165 },
+					["coord"] = { 51.6, 41.2, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(179383),	-- Royal Zandalari Pendant
@@ -944,7 +944,7 @@ _.Zones =
 				}),
 				q(55650, {	-- Only the Best Will Do
 					["provider"] = { "n", 152505 },	-- Skaggit
-					["coord"] = { 42.1, 87.8, 1165 },
+					["coord"] = { 42.1, 87.8, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 55649,	-- Machinations for Mechagon
 				}),
@@ -956,7 +956,7 @@ _.Zones =
 				}),
 				q(55646, {	-- The Legend of Mechagon
 					["provider"] = { "n", 152522 },	-- Gazlowe
-					["coord"] = { 53.0, 43.2, 1165 },
+					["coord"] = { 53.0, 43.2, DAZARALOR },
 					["races"] = HORDE_ONLY,
 				}),
 				q(56379, {	-- The Missing Crew
@@ -976,7 +976,7 @@ _.Zones =
 				}),
 				q(55651, {	-- To Mechagon!
 					["provider"] = { "n", 152504 },	-- Gazlowe
-					["coord"] = { 42.0, 87.8, 1165 },
+					["coord"] = { 42.0, 87.8, DAZARALOR },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 55650,	-- Only the Best Will Do
 				}),
