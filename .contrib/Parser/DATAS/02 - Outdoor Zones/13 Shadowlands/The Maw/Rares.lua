@@ -168,6 +168,7 @@ _.Zones =
 						crit(5, {	-- Darithis the Bleak
 							["achievementID"] = 14744,	-- Better to Be Lucky Than Dead
 						}),
+						i(186220),	-- Stygian Chestcage
 					},
 				}),
 				n(158025, {	-- Darklord Taraxis
@@ -230,6 +231,7 @@ _.Zones =
 								}),
 							},
 						}),
+						i(186620),	-- Rezara's Fencing Grips
 					},
 				}),
 				n(179791, {	-- Deomen the Vortex

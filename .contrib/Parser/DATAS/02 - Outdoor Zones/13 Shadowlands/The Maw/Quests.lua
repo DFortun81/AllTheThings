@@ -252,6 +252,7 @@ _.Zones =
 								["isDaily"] = true,
 								["g"] = {
 									i(186244),	-- Shakorzeth's Gorget
+									i(186225),	-- Shoulder Joint Spindles
 								},
 							}),
 							n(177427, {	-- The Mass of Souls
@@ -267,6 +268,7 @@ _.Zones =
 								["isDaily"] = true,
 								["g"] = {
 									i(186233),	-- Spaulders of the Skyborn Damned
+									i(186003),	-- Versya's Stygian Longbow
 								},
 							}),
 							n(178886, {	-- Zul'gath the Flayer
