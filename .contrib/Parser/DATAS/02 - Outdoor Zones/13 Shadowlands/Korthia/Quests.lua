@@ -512,6 +512,12 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 61.5, 23.5, KORTHIA },
 				}),
+				q(63958, {	-- Observational Records
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
+					["provider"] = { "n", 178844 },	-- Ta'nasi
+					["isDaily"] = true,
+					["coord"] = { 64.6, 25.4, KORTHIA },
+				}),
 				q(64016, {	-- Oozing with Character (Ooz)
 					["sourceQuests"] = { 63727 },	-- The Primus Returns
 					["provider"] = { "n", 178806 },	-- Plague Deviser Marileth
@@ -523,6 +529,30 @@ _.Zones =
 							["customCollect"] = "SL_COV_NEC",	-- Necrolord
 						}),
 					},
+				}),
+				q(63935, {	-- Precious Roots
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
+					["provider"] = { "n", 178842 },	-- Zayhad, The Builder
+					["isDaily"] = true,
+					["coord"] = { 60.9, 21.3, KORTHIA },
+				}),
+				q(63950, {	-- Razorwing Talons
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
+					["provider"] = { "n", 178837 },	-- Lord Herne
+					["isDaily"] = true,
+					["coord"] = { 61.3, 21.3, KORTHIA },
+				}),
+				q(64070, {	-- Staying Scrappy
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
+					["provider"] = { "n", 179214 },	-- Bonesmith Heirmir
+					["isDaily"] = true,
+					["coord"] = { 63.3, 25.2, KORTHIA },
+				}),
+				q(64432, {	-- Strength to Weakness
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
+					["provider"] = { "n", 179214 },	-- Bonesmith Heirmir
+					["isDaily"] = true,
+					["coord"] = { 63.3, 25.2, KORTHIA },
 				}),
 				q(64101, {	-- The Proper Procedures
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
@@ -625,12 +655,6 @@ _.Zones =
 					["provider"] = { "n", 178841 },	-- Hunt-Captain Korayn
 					["isDaily"] = true,
 					["coord"] = { 60.9, 21.7, KORTHIA },
-				}),
-				q(63958, {	-- Encrypted Databanks
-					["sourceQuests"] = { 64556 },	-- In Need of Assistance
-					["provider"] = { "n", 178844 },	-- Ta'nasi
-					["isDaily"] = true,
-					["coord"] = { 64.6, 25.4, KORTHIA },
 				}),
 				q(63960, {	-- Encrypted Databanks
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
@@ -736,23 +760,11 @@ _.Zones =
 						ach(15057),		-- Friend of Plaguey
 					},
 				}),
-				q(63935, {	-- Precious Roots
-					["sourceQuests"] = { 64556 },	-- In Need of Assistance
-					["provider"] = { "n", 178842 },	-- Zayhad, The Builder
-					["isDaily"] = true,
-					["coord"] = { 60.9, 21.3, KORTHIA },
-				}),
 				q(64166, {	-- Random Memory Access
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 179134 },	-- Pelagos
 					["isDaily"] = true,
 					["coord"] = { 61.7, 24.0, KORTHIA },
-				}),
-				q(63950, {	-- Razorwing Talons
-					["sourceQuests"] = { 64556 },	-- In Need of Assistance
-					["provider"] = { "n", 178837 },	-- Lord Herne
-					["isDaily"] = true,
-					["coord"] = { 61.3, 21.3, KORTHIA },
 				}),
 				q(63777, {	-- Sealed Secrets
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
@@ -801,12 +813,6 @@ _.Zones =
 					["provider"] = { "n", 179218 },	-- Theotar
 					["isDaily"] = true,
 					["coord"] = { 61.6, 25.7, KORTHIA },
-				}),
-				q(64070, {	-- Staying Scrappy
-					["sourceQuests"] = { 64556 },	-- In Need of Assistance
-					["provider"] = { "n", 179214 },	-- Bonesmith Heirmir
-					["isDaily"] = true,
-					["coord"] = { 60.1, 27.5, KORTHIA },
 				}),
 				q(63786, {	-- Sweep the Windswept Aerie
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
