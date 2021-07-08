@@ -9404,7 +9404,7 @@ local objectFields = {
 			end
 		end
 	end,
-	["repeatable"] = function(t)
+	["repeatableAsRepeated"] = function(t)
 		-- only used for generic objects with no other way of being tracked as repeatable
 		if not t.g then return; end
 		for _,group in ipairs(t.g) do
@@ -9412,7 +9412,7 @@ local objectFields = {
 		end
 		-- every contained sub-object is not repeatable, so the repeated object should also be marked as not repeatable
 	end,
-	["saved"] = function(t)
+	["savedAsRepeated"] = function(t)
 		-- only used for generic objects with no other way of being tracked as saved
 		if not t.g then return; end
 		for _,group in ipairs(t.g) do
@@ -9428,6 +9428,11 @@ local fields = RawCloneData(objectFields);
 fields.icon = objectFields.iconAsAchievement;
 --fields.link = objectFields.linkAsAchievement;
 app.BaseObjectWithAchievement = app.BaseObjectFields(fields);
+
+local fields = RawCloneData(objectFields);
+fields.saved = objectFields.savedAsRepeated;
+fields.repeatable = objectFields.repeatableAsRepeated;
+app.BaseObjectAsRepeated = app.BaseObjectFields(fields);
 
 local fields = RawCloneData(objectFields);
 fields.altcollected = objectFields.altcollectedAsQuest;
@@ -9461,12 +9466,17 @@ app.CreateObject = function(id, t)
 			if rawget(t, "questID") then
 				return setmetatable(constructor(id, t, "objectID"), app.BaseObjectWithQuest);
 			else
-				return setmetatable(constructor(id, t, "objectID"), app.BaseObject);
+				if t.g then
+					for _,group in ipairs(t.g) do
+						if group.objectID and group.trackable then
+							return setmetatable(constructor(id, t, "objectID"), app.BaseObjectAsRepeated);
+						end
+					end
+				end
 			end
 		end
-	else
-		return setmetatable(constructor(id, t, "objectID"), app.BaseObject);
 	end
+	return setmetatable(constructor(id, t, "objectID"), app.BaseObject);
 end
 end)();
 
