@@ -118,6 +118,9 @@ _.ExpansionFeatures =
 						i(187577, {	-- Korthian Meat Cache
 							["timeline"] = { "added 9.1.0.39185" },
 						}),
+						i(187576, {	-- Korthian Skinning Cache
+							["timeline"] = { "added 9.1.0.39185" },
+						}),
 						i(181468),	-- Veiled Augment Rune
 						-- Gear
 						i(185854),	-- Stone-Etched Shawl
