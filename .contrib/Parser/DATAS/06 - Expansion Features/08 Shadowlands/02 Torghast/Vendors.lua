@@ -24,6 +24,9 @@ _.ExpansionFeatures =
 						i(187083, {	-- Gilded Eye Crescent
 							["cost"] = { { "c", 1728, 1000 } },	-- 1,000x Phantasma
 						}),
+						i(187082, {	-- Gilded Skull Crescent – Adamant Vaults
+							["cost"] = { { "c", 1728, 1000 } },	-- 1,000x Phantasma
+						}),
 						i(187089, {	-- Sterling Blade-Tipped Spaulders
 							["cost"] = { { "c", 1728, 300 } },	-- 300x Phantasma
 						}),

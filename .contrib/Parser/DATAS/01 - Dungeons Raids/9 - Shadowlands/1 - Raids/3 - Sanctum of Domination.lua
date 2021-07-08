@@ -16,6 +16,16 @@ _.Instances = { tier(9, {	-- Shadowlands
 		},
 		["g"] = {
 			d(17, {	-- LFR
+				n(ZONEDROPS, {
+					i(186371),	-- Ancient Brokensoul Bands
+					i(186362),	-- Bindings of the Subjugated
+					i(186367),	-- Bonded Soulsmelt Greaves
+					i(186364),	-- Cord of Coerced Spirits
+					i(186356),	-- Forlorn Prisoner's Strap
+					i(186359),	-- Scoundrel's Harrowed Leggings
+					i(186358),	-- Soulcaster's Woven Grips
+					i(186373),	-- Towering Shadowghast Greatboots
+				}),
 				ach(15122, {	-- The Jailer's Vanguard
 					["collectible"] = false,
 					["g"] = {
@@ -362,6 +372,22 @@ _.Instances = { tier(9, {	-- Shadowlands
 				}),
 			}),
 			d(14, {	-- Normal
+				n(QUESTS, {
+					q(64597, {	-- Sanctum of Domination - Damned If You Don't
+					--	TODO: add Mythic quest (not listed on WH), add providers for all quests, add altQuests and description (see WoD/Legion raids) if quests are mutually exclusive per character
+					--	["provider"] = { "n",  },	--
+					}),
+				}),
+				n(ZONEDROPS, {
+					i(186371),	-- Ancient Brokensoul Bands
+					i(186362),	-- Bindings of the Subjugated
+					i(186367),	-- Bonded Soulsmelt Greaves
+					i(186364),	-- Cord of Coerced Spirits
+					i(186356),	-- Forlorn Prisoner's Strap
+					i(186359),	-- Scoundrel's Harrowed Leggings
+					i(186358),	-- Soulcaster's Woven Grips
+					i(186373),	-- Towering Shadowghast Greatboots
+				}),
 				e(2435, {	-- The Tarragrue
 					["crs"] = { 175611 },	-- The Tarragrue
 					["g"] = {
@@ -704,6 +730,21 @@ _.Instances = { tier(9, {	-- Shadowlands
 				}),
 			}),
 			d(15, {	-- Heroic
+				n(ZONEDROPS, {
+					i(186371),	-- Ancient Brokensoul Bands
+					i(186362),	-- Bindings of the Subjugated
+					i(186367),	-- Bonded Soulsmelt Greaves
+					i(186364),	-- Cord of Coerced Spirits
+					i(186356),	-- Forlorn Prisoner's Strap
+					i(186359),	-- Scoundrel's Harrowed Leggings
+					i(186358),	-- Soulcaster's Woven Grips
+					i(186373),	-- Towering Shadowghast Greatboots
+				}),
+				n(QUESTS, {
+					q(64598, {	-- Sanctum of Domination - Damned If You Don't
+					--	["provider"] = { "n",  },	--
+					}),
+				}),
 				e(2435, {	-- The Tarragrue
 					["crs"] = { 175611 },	-- The Tarragrue
 					["g"] = {
@@ -1047,6 +1088,16 @@ _.Instances = { tier(9, {	-- Shadowlands
 				}),
 			}),
 			d(16, {	-- Mythic
+				n(ZONEDROPS, {
+					i(186371),	-- Ancient Brokensoul Bands
+					i(186362),	-- Bindings of the Subjugated
+					i(186367),	-- Bonded Soulsmelt Greaves
+					i(186364),	-- Cord of Coerced Spirits
+					i(186356),	-- Forlorn Prisoner's Strap
+					i(186359),	-- Scoundrel's Harrowed Leggings
+					i(186358),	-- Soulcaster's Woven Grips
+					i(186373),	-- Towering Shadowghast Greatboots
+				}),
 				e(2435, {	-- The Tarragrue
 					["crs"] = { 175611 },	-- The Tarragrue
 					["g"] = {

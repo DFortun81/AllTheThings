@@ -786,8 +786,5 @@ _.HiddenQuestTriggers = {
 
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-10100, {	-- Shadowlands
-		n(-319, {	-- Weapons
-			i(186042),	-- Forsaken Crusader's Blade (PTR Only)
-		}),
 	}),
 });

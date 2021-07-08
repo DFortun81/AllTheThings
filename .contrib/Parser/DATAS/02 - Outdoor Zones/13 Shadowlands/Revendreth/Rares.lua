@@ -116,7 +116,9 @@ _.Zones =
 					["coord"] = { 32.6, 14.7, REVENDRETH },	-- Madalav's Hammer (to summon rare)
 					["g"] = {
 						i(180489),	-- Forgemaster's Many-Fold Rapier
-						i(180939),	-- Mantle of the Forgemaster's Dark Blades
+						i(180939, {	-- Mantle of the Forgemaster's Dark Blades
+							["customCollect"] = "SL_COV_VEN",	-- Venthyr
+						}),
 					},
 				}),
 				n(167464, {	-- Grand Arcanist Dimitri

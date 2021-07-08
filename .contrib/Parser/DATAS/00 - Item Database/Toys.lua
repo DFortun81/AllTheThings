@@ -736,6 +736,7 @@ t(178530);	-- Wreath-A-Rang
 -----------------
 -- PATCH 9.1.0 --
 -----------------
+t(187417);	-- Adamant Vaults Cell
 t(187154);	-- Ancient Korthian Runes
 t(186973);	-- Anima-ted Leash
 t(183901);	-- Bonestorm Top

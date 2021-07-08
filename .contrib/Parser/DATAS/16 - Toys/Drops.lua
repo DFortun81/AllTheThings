@@ -6,6 +6,7 @@ _.Toys =
 {
 	n(-26, {	-- Drop
 		i(127670),		-- Accursed Tome of the Sargerei
+		i(187417),		-- Adamant Vaults Cell
 		i(86589),		-- Ai-Li's Skymirror
 		i(175140),		-- All-Seeing Eyes
 		i(153204),		-- All-Seer's Eye

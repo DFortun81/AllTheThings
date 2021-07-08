@@ -512,6 +512,18 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 61.5, 23.5, KORTHIA },
 				}),
+				q(64016, {	-- Oozing with Character (Ooz)
+					["sourceQuests"] = { 63727 },	-- The Primus Returns
+					["provider"] = { "n", 178806 },	-- Plague Deviser Marileth
+					["isDaily"] = true,
+					["coord"] = { 60.5, 27.6, KORTHIA },
+					["g"] = {
+						ach(15055),		-- Friend of Ooz
+						i(185019, {	-- Rogue Necromancer's Drape
+							["customCollect"] = "SL_COV_NEC",	-- Necrolord
+						}),
+					},
+				}),
 				q(64101, {	-- The Proper Procedures
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178790 },	-- The Accuser
@@ -713,15 +725,6 @@ _.Zones =
 					["coord"] = { 60.5, 27.6, KORTHIA },
 					["g"] = {
 						ach(15056),		-- Friend of Bloop
-					},
-				}),
-				q(64016, {	-- Oozing with Character (Ooz)
-					["sourceQuests"] = { 64556 },	-- In Need of Assistance
-					["provider"] = { "n", 178806 },	-- Plague Deviser Marileth
-					["isDaily"] = true,
-					["coord"] = { 60.5, 27.6, KORTHIA },
-					["g"] = {
-						ach(15055),		-- Friend of Ooz
 					},
 				}),
 				q(63989, {	-- Oozing with Character (Plaguey)

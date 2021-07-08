@@ -6,7 +6,7 @@ _.Zones =
 {
 	m(424, {	-- Pandaria
 		m(379, {	-- Kun-Lai Summit
-			filter(101, {	-- Pet Battle
+			f(101, {	-- Pet Battle
 				p(724, {	-- Alpine Foxling
 					["crs"] = { 63550 },	-- Alpine Foxling
 				}),
@@ -50,6 +50,17 @@ _.Zones =
 					["provider"] = { "n", 66738 },	-- Courageous Yon
 					["g"] = {
 						i(89125),	-- Sack of Pet Supplies
+					},
+				}),
+				q(63435, {	-- Temple Throwdown
+					["timeline"] = { "added 9.1.0.39226" },
+					["provider"] = { "n", 176655 },	-- Anthea <Carefree Pet Tamer>
+					["isDaily"] = true,
+					["coord"] = { 70.4, 51.4, 379 },
+					["g"] = {
+						i(184866, {	-- Grummlepouch
+							i(184867),	-- Squibbles (PET!)
+						}),
 					},
 				}),
 				q(32441, {	-- Thundering Pandaren Spirit

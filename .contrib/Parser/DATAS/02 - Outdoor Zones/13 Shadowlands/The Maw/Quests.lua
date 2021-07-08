@@ -297,6 +297,7 @@ _.Zones =
 									i(184658),	-- Dread Harrier's Pauldrons
 									i(184660),	-- Dreadguard's Greathelm
 									i(184654),	-- Forgotten Shade's Shawl
+									i(186042),	-- Forsaken Crusader's Blade (drop data on wh from Naelcrotix + Lumisende, i assume it's shared across all)
 									i(184659),	-- Grips of the Dreadhound Tamer
 									i(184656),	-- Mawsworn Assassin's Doublet
 									i(184655),	-- Sash of the Ethereal Servant

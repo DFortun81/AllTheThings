@@ -105,6 +105,11 @@ _.ExpansionFeatures =
 					},
 				}),
 			--	Blues
+				i(187417, {	-- Adamant Vaults Cell
+					["crs"] = {
+						176578,	-- Vault Sentinel
+					},
+				}),
 				i(183192, {	-- Frenzied Mawrat
 					["crs"] = {
 						151331,	-- Cellblock Sentinel

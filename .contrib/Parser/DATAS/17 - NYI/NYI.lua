@@ -77,7 +77,6 @@ _.NeverImplemented =
 		i(185016),	-- Rogue Necromancer's Mantle
 		i(185017),	-- Rogue Necromancer's Sash
 		i(185018),	-- Rogue Necromancer's Wraps
-		i(185019),	-- Rogue Necromancer's Drape
 		-- Venthyr -- Radiant Court -- Korthia Dailies?
 		i(186513),	-- Ensemble: Radiant Court Attire
 		i(185074),	-- Radiant Court Wraps
