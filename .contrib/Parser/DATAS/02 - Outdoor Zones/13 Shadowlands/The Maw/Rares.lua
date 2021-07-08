@@ -477,9 +477,6 @@ _.Zones =
 								}),
 							},
 						}),
-						q(62618, {	-- Bonus Objective
-							["isDaily"] = true,
-						}),
 					},
 				}),
 				n(162845, {	-- Orrholyn <Lord of Bloodletting>
@@ -771,6 +768,7 @@ _.HiddenQuestTriggers = {
 	q(62209),	-- Houndmaster Vasanok bonus objective
 	q(60903),	-- Krala bonus objective
 	q(61125),	-- Malevolent Stygia bonus objective
+	q(62618),	-- Odalrik bonus objective
 	q(60991),	-- Orrholyn bonus objective
 	q(63044),	-- Ratgusher bonus objective
 	q(60992),	-- Razkazzar bonus objective

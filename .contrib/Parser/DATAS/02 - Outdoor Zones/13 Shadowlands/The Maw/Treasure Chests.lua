@@ -66,6 +66,7 @@ _.Zones =
 						}),
 					--	Epics
 						i(187019),	-- Infiltrator's Shoulderguards
+						i(187024),	-- Necromancer's Mantle
 						i(187014),	-- Shackler's Spiked Shoulders
 					--	Consumable (pale blue/special)
 						i(187351),	-- Stygic Cluster

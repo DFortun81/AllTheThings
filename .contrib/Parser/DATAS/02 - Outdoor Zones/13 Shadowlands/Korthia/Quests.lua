@@ -188,6 +188,17 @@ _.Zones =
 					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 					["coord"] = { 62.7, 22.5, KORTHIA },
 				}),
+				q(64526, {	-- Mysterious Rifts
+					["sourceQuests"] = {	-- TODO: not sure if the prereq is simply Tier 4 research, or if previous relics are required
+						63915,	-- Drum of Driving
+						63917,	-- Everliving Statuette
+						63918,	-- Obelisk of Dark Tidings
+						63916,	-- Sack of Strange Soil
+					},
+					["minReputation"] = { 2472, 14000 },	-- Tier 4
+					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+					["coord"] = { 62.7, 22.5, KORTHIA },
+				}),
 				q(64561, {	-- Observational Records (intro version)
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance (must be on quest)
 					["provider"] = { "n", 178844 },	-- Ta'nasi
@@ -211,6 +222,12 @@ _.Zones =
 						63758,	-- The Last Place You Look
 					},
 					["provider"] = { "n", 177924 },	-- Caretaker Kah-Than
+				}),
+				q(64368, {	-- Relic Efficiency
+					-- no known source quests, would need to reach tier 4 without doing other quests I assume...
+					["minReputation"] = { 2472, 14000 },	-- Tier 4
+					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+					["coord"] = { 62.7, 22.5, KORTHIA },
 				}),
 				q(63756, {	-- Rescued from Torment
 					["sourceQuests"] = { 63755 },	-- A Matter of Urgency
@@ -411,23 +428,6 @@ _.Zones =
 						63915,	-- Drum of Driving
 						63917,	-- Everliving Statuette
 					},
-					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
-					["coord"] = { 62.7, 22.5, KORTHIA },
-				}),
-				q(64526, {	-- Mysterious Rifts
-					["sourceQuests"] = {	-- TODO: not sure if the prereq is simply Tier 4 research, or if previous relics are required
-						63915,	-- Drum of Driving
-						63917,	-- Everliving Statuette
-						63918,	-- Obelisk of Dark Tidings
-						63916,	-- Sack of Strange Soil
-					},
-					["minReputation"] = { 2472, 14000 },	-- Tier 4
-					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
-					["coord"] = { 62.7, 22.5, KORTHIA },
-				}),
-				q(64368, {	-- Relic Efficiency
-					-- no known source quests, would need to reach tier 4 without doing other quests I assume...
-					["minReputation"] = { 2472, 14000 },	-- Tier 4
 					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 					["coord"] = { 62.7, 22.5, KORTHIA },
 				}),
