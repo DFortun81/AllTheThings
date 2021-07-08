@@ -741,6 +741,7 @@ t(187154);	-- Ancient Korthian Runes
 t(186973);	-- Anima-ted Leash
 t(183901);	-- Bonestorm Top
 t(187139);	-- Bottled Shade Heart
+t(187075);	-- Box of Rattling Chains
 t(186974);	-- Experimental Anima Cell
 t(187051);	-- Forgotten Feather
 t(187155);	-- Guise of the Changeling

@@ -35,6 +35,7 @@ _.Toys =
 		i(187139),		-- Bottled Shade Heart
 		i(134023),		-- Bottled Tornado
 		i(128223),		-- Bottomless Stygana Mushroom Brew
+		i(187075),		-- Box of Rattling Chains
 		i(163713),		-- Brazier Cap
 		i(116113),		-- Breath of Talador
 		i(114227),		-- Bubble Wand
