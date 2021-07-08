@@ -81,6 +81,7 @@ local HORDE_ONLY = {
 -- Coroutine Helper Functions
 app.refreshing = {};
 app.EmptyTable = {};
+app.EmptyFunction = function() end;
 local function OnUpdate(self)
 	for i=#self.__stack,1,-1 do
 		-- print("Running Stack " .. i .. ":" .. self.__stack[i][2])
@@ -3603,36 +3604,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		-- print(group.g and #group.g,"Merge total");
 		-- print("Final Group",group.key,group[group.key],group.collectible,group.collected);
 
-		-- Resolve Cost
-		if paramA == "currencyID" then
-			local costResults = app.SearchForField("currencyIDAsCost", paramB);
-			if costResults and #costResults > 0 then
-				if not root.g then root.g = {} end
-				local usedToBuy = app.CreateNPC(-2);
-				usedToBuy.text = L["CURRENCY_FOR"];
-				if not usedToBuy.g then usedToBuy.g = {}; end
-				for i,o in ipairs(costResults) do
-					-- Currencies need to meet the group requirements as well since the character itself needs to meet those requirements to buy it
-					if app.RecursiveGroupRequirementsFilter(o) then
-						MergeObject(usedToBuy.g, CreateObject(o));
-					end
-				end
-				MergeObject(root.g, usedToBuy);
-			end
-		elseif paramA == "itemID" or (paramA == "s" and group.itemID) then
-			local costResults = group.modItemID and app.SearchForField("itemIDAsCost", group.modItemID) or app.SearchForField("itemIDAsCost", group.itemID or paramB);
-			if costResults and #costResults > 0 then
-				if not root.g then root.g = {} end
-				local usedToBuy = app.CreateNPC(-2);
-				usedToBuy.text = L["CURRENCY_FOR"];
-				if not usedToBuy.g then usedToBuy.g = {}; end
-				for i,o in ipairs(costResults) do
-					MergeObject(usedToBuy.g, CreateObject(o));
-				end
-				MergeObject(root.g, usedToBuy);
-			end
-		end
-
 		-- Special cases
 		-- Don't show nested criteria of achievements
 		if group.g and group.key == "achievementID" then
@@ -3647,16 +3618,48 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			-- print("achieve nocrits",#group.g)
 		end
 
-		-- Append any crafted things using this group
-		app.BuildCrafted(group);
+		-- Resolve Cost, but not if the search itself was skipped (Mark of Honor)
+		if method ~= app.EmptyFunction then
+			if paramA == "currencyID" then
+				local costResults = app.SearchForField("currencyIDAsCost", paramB);
+				if costResults and #costResults > 0 then
+					if not root.g then root.g = {} end
+					local usedToBuy = app.CreateNPC(-2);
+					usedToBuy.text = L["CURRENCY_FOR"];
+					if not usedToBuy.g then usedToBuy.g = {}; end
+					local filteredObjects = {};
+					for i,o in ipairs(costResults) do
+						-- Currencies need to meet the group requirements as well since the character itself needs to meet those requirements to buy it
+						if app.RecursiveGroupRequirementsFilter(o) then
+							tinsert(filteredObjects, o);
+						end
+					end
+					MergeObjects(usedToBuy.g, filteredObjects, true);
+					MergeObject(root.g, usedToBuy);
+				end
+			elseif paramA == "itemID" or (paramA == "s" and group.itemID) then
+				local costResults = group.modItemID and app.SearchForField("itemIDAsCost", group.modItemID) or app.SearchForField("itemIDAsCost", group.itemID or paramB);
+				if costResults and #costResults > 0 then
+					if not root.g then root.g = {} end
+					local usedToBuy = app.CreateNPC(-2);
+					usedToBuy.text = L["CURRENCY_FOR"];
+					if not usedToBuy.g then usedToBuy.g = {}; end
+					MergeObjects(usedToBuy.g, costResults, true);
+					MergeObject(root.g, usedToBuy);
+				end
+			end
 
-		-- Expand any things requiring this group
-		-- TODO: is this necessary anymore? can't think of a situation to properly test it
-		-- it causes weird nesting results for ToV Ensembles due to non-modID items
-		-- app.ExpandSubGroups(group);
+			-- Append any crafted things using this group
+			app.BuildCrafted(group);
 
-		-- Append currency info to any orphan currency groups
-		app.BuildCurrencies(group);
+			-- Expand any things requiring this group
+			-- TODO: is this necessary anymore? can't think of a situation to properly test it
+			-- it causes weird nesting results for ToV Ensembles due to non-modID items
+			-- app.ExpandSubGroups(group);
+
+			-- Append currency info to any orphan currency groups
+			app.BuildCurrencies(group);
+		end
 
 		-- Only need to build/update groups from the top level
 		if topLevelSearch then
@@ -4406,9 +4409,9 @@ fieldConverters = {
 		else
 			for k,v in pairs(value) do
 				if v[1] == "i" and v[2] > 0 then
-					if v[2] ~= 137642 then	-- NO MARKS OF HONOR!
+					-- if v[2] ~= 137642 then	-- NO MARKS OF HONOR!
 						CacheField(group, "itemIDAsCost", v[2]);
-					end
+					-- end
 				elseif v[1] == "c" and v[2] > 0 then
 					CacheField(group, "currencyIDAsCost", v[2]);
 				end
@@ -5509,7 +5512,7 @@ local function AttachTooltip(self)
 			-- print("Search Item",itemID);
 			local mohIndex = link:find("item:137642");
 			if mohIndex and mohIndex > 0 then -- skip Mark of Honor for now
-				AttachTooltipSearchResults(self, link, function() end, "itemID", 137642);
+				AttachTooltipSearchResults(self, link, app.EmptyFunction, "itemID", 137642);
 			else
 				AttachTooltipSearchResults(self, link, SearchForLink, link);
 			end
@@ -9315,6 +9318,11 @@ fields.trackable = headerFields.trackableAsQuest;
 app.BaseHeaderWithQuest = app.BaseObjectFields(fields);
 app.CreateNPC = function(id, t)
 	if t then
+		-- TEMP: clean MoH tagging from random Vendors
+		if rawget(t, "itemID") == 137642 then
+			rawset(t, "itemID", nil);
+			-- print("ItemID",rawget(t, "itemID"),"used on NPC/Header group... Don't do that!",id);
+		end
 		if id < 1 then
 			if rawget(t, "achID") then
 				rawset(t, "achievementID", app.FactionID == Enum.FlightPathFaction.Horde and rawget(t, "altAchID") or rawget(t, "achID"));
