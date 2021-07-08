@@ -263,6 +263,7 @@ _.Zones =
 					["g"] = {
 					--	TODO: figure out the contents of this chest and how/where to display it (if it comes from multiple things)
 						i(186196, {	-- Death's Advance War Chest
+							i(187506),	-- Condensed Anima Sphere
 						}),
 					},
 				}),

@@ -888,6 +888,7 @@ _.HiddenQuestTriggers = {
 	
 --	Unity Transmog
 	q(63407),	-- Leather Chest
+	q(60782),	-- Renown 41
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
