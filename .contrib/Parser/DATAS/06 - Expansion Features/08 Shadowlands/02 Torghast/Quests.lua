@@ -570,6 +570,14 @@ _.ExpansionFeatures =
 					["isWeekly"] = true,
 					["name"] = "Fracture Chambers, Layer 8",
 				}),
+				q(63872, {	-- Fracture Chambers, Layer 9
+					["isWeekly"] = true,
+					["name"] = "Fracture Chambers, Layer 9",
+				}),
+				q(63873, {	-- Fracture Chambers, Layer 10
+					["isWeekly"] = true,
+					["name"] = "Fracture Chambers, Layer 10",
+				}),
 
 				-- Mort'regar
 				q(58204, {	-- Mort'regar, Layer 1
