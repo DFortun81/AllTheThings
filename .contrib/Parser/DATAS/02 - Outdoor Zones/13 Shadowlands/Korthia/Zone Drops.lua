@@ -226,6 +226,7 @@ _.Zones =
 				i(186121),	-- Mawsworn Scout's Striders
 				i(186148),	-- Mawsworn Vanquisher's Spire*
 				i(186145),	-- Stygian Thorn Loop
+				i(186146),	-- Mawsworn Sentry's Cudgel
 			}),
 		}),
 	}),

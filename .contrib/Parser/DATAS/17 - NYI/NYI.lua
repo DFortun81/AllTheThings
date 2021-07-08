@@ -674,6 +674,7 @@ _.NeverImplemented =
 			i(167110),	-- QA Combat Test Leather Boots
 			-- SL
 			i(178148),	-- 9.0 Dungeon - PH Item
+			i(178305),	-- unused
 		}),
 		n(-45, {	-- Mail
 			cl(SHAMAN, {
@@ -849,6 +850,8 @@ _.NeverImplemented =
 			i(167124),	-- QA Combat Test Mail Gloves 1
 			i(167125),	-- QA Combat Test Mail Shoulders 1
 			i(167126),	-- QA Combat Test Mail Boots 1
+			-- SL
+			i(178304),	-- unused
 			--
 			i(68844),	-- Unknown
 		}),
@@ -3217,6 +3220,7 @@ _.NeverImplemented =
 			i(108799),	-- 7.0 PH Weapon - 2H Polearm Int
 			i(109456),	-- 6.0 QA Combat Test Agility Polearm
 			i(165271),	-- Fallback Weapon - Polearm
+			i(176904),	-- Bonegrafted Spear
 		}),
 		n(-387,	{	-- Relics
 			-- Load In Game

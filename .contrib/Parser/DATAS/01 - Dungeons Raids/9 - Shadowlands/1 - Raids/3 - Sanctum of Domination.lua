@@ -1433,6 +1433,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-10100, {	-- Shadowlands
 		inst(1193, {	-- Sanctum of Domination
 			i(181374),	-- Sylvanas Shadowlands Bow
+			i(186410),	-- Jaithys, the Prison Blade
 		}),
 	}),
 });

@@ -2038,6 +2038,11 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(180015),	-- Ardenweald Covenant Wand
 				i(180016),	-- Ardenweald Covenant Wand
 				i(180017),	-- Ardenweald Covenant Wand
+				i(180137),	-- Drust 1H Axe
+				i(180138),	-- Drust 1H Axe
+				i(180139),	-- Drust 1H Axe
+				i(180140),	-- Drust 1H Axe
+				i(180141),	-- Drust 1H Axe
 			}),
 		}),
 	}),

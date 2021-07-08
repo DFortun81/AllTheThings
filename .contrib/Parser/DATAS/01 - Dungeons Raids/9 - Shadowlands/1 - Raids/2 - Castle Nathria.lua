@@ -1559,3 +1559,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 		},
 	}),
 })};
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(-10100, {	-- Shadowlands
+		inst(1190, {	-- Castle Nathria
+			i(184873),	-- Soul Igniter (Test)
+		}),
+	}),
+});

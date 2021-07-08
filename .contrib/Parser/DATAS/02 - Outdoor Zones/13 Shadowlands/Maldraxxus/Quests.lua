@@ -775,5 +775,21 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(175527),	-- Cruel Executioner's Greaves
 			}),
 		}),
+		n(-319, {	-- Weapons
+			i(183086),	-- Battle Tested Warglaive
+			i(183077),	-- Battle Tested Shank
+			i(183088),	-- Battle Tested Dagger
+			i(183078),	-- Battle Tested Basher
+			i(183079),	-- Battle Tested Stave
+			i(183090),	-- Battle Tested Staff
+			i(183080),	-- Battle Tested Shortsword
+			i(183087),	-- Battle Tested Longsword
+			i(183089),	-- Battle Tested Spellblade
+			i(183081),	-- Battle Tested Crossbow
+			i(183082),	-- Battle Tested Wand
+			i(183083),	-- Battle Tested Greatsword
+			i(183084),	-- Battle Tested Bulwark
+			i(183085),	-- Battle Tested Tome
+		}),
 	}),
 });
