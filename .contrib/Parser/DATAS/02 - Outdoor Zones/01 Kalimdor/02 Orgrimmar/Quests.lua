@@ -225,21 +225,21 @@ _.Zones =
 									q(52943, {	-- Calling Out the Clans
 										["sourceQuests"] = { 52942 },	-- Restoring Old Bonds
 										["provider"] = { "n", 142422 },	-- Eitrigg
-										["coord"] = { 44.8, 53.0, 543 },
+										["coord"] = { 44.8, 53.0, GORGROND },
 										["races"] = HORDE_ONLY,
 										["maps"] = { 1170 },	-- Gorgrond (Mag'har scenario)
 									}),
 									q(52945, {	-- Bonds Forged Through Battle
 										["sourceQuests"] = { 52943 },	-- Calling Out the Clans
 										["provider"] = { "n", 142275 },	-- Grommash Hellscream
-										["coord"] = { 45.2, 52.0, 543 },
+										["coord"] = { 45.2, 52.0, GORGROND },
 										["races"] = HORDE_ONLY,
 										["maps"] = { 1170 },	-- Gorgrond (Mag'har scenario)
 									}),
 									q(52955, {	-- Tyranny of the Light
 										["sourceQuests"] = { 52945 },	-- Bonds Forged Through Battle
 										["provider"] = { "n", 137837 },	-- Overlord Geya'rah
-										["coord"] = { 44.4, 71.4, 543 },
+										["coord"] = { 44.4, 71.4, GORGROND },
 										["races"] = HORDE_ONLY,
 										["maps"] = { 1170 },	-- Gorgrond (Mag'har scenario)
 									}),

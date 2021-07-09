@@ -11,9 +11,9 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				["isWeekly"] = true,
 				["questID"] = 37462,
 				["isRaid"] = true,
-				["coord"] = { 44.1, 39.9, 543 },
+				["coord"] = { 44.1, 39.9, GORGROND },
 				["maps"] = {	-- all Gorgrond maps
-					543,	-- Gorgrond
+					GORGROND,
 					544,	-- Moira's Reach
 					545,	-- Moira's Reach
 					546,	-- Fissure of Fury
@@ -120,9 +120,9 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				["isWeekly"] = true,
 				["questID"] = 37462,
 				["isRaid"] = true,
-				["coord"] = { 47.0, 86.7, 543 },
+				["coord"] = { 47.0, 86.7, GORGROND },
 				["maps"] = {	-- all Gorgrond maps
-					543,	-- Gorgrond
+					GORGROND,
 					544,	-- Moira's Reach
 					545,	-- Moira's Reach
 					546,	-- Fissure of Fury

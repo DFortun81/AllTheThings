@@ -5,7 +5,7 @@
 _.Instances = { tier(6, {	-- Warlords of Draenor
 	inst(558, {	-- Iron Docks
 		["mapID"] = 595,
-		["coord"] = { 45.36, 13.52, 543 },	-- Gorgrond, Draenor
+		["coord"] = { 45.36, 13.52, GORGROND },
 		["lvl"] = 92,
 		["g"] = {
 			n(ACHIEVEMENTS, {

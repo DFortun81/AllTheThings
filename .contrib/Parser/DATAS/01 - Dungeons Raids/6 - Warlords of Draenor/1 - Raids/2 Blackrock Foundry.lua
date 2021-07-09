@@ -8,7 +8,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 		["lvl"] = 100,
 		["mapID"] = 598,
 		["maps"] = { 596, 597, 599, 600 },
-		["coord"] = { 51.55, 27.23, 543 },	-- Gorgrond, Draenor
+		["coord"] = { 51.55, 27.23, GORGROND },
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(9838, {	-- What A Strange, Interdimensional Trip It's Been

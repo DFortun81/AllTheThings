@@ -1704,8 +1704,8 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(44573, {	-- Honor the Flame — Gorgrond
 				["provider"] = { "n", 114491 },	-- Gorgrond Flame Guardian
 				["isYearly"] = true,
-				["coord"] = { 43.8, 93.8, 543 },
-				["maps"] = { 543 },	-- Gorgrond
+				["coord"] = { 43.8, 93.8, GORGROND },
+				["maps"] = { GORGROND },
 			}),
 			q(44576, {	-- Honor the Flame — Highmountain
 				["provider"] = { "n", 114494 },	-- Highmountain Flame Guardian

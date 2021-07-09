@@ -82,8 +82,8 @@ _.Achievements =
 				crit(11, {	-- Courageous Yon (Kun-Lai Summit)
 					["coord"] = { 35.8, 73.6, 379 },
 				}),
-				crit(12, {	-- Cymre Brightblade (Gorgrond)
-					["coord"] = { 51.0, 70.6, 543 },
+				crit(12, {	-- Cymre Brightblade
+					["coord"] = { 51.0, 70.6, GORGROND },
 				}),
 				crit(13, {	-- Dr. Ion Goldbloom (Celestial Tournament)
 					["coord"] = { 34.8, 59.6, 554 },

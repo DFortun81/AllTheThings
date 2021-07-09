@@ -156,10 +156,10 @@ _.Zones =
 						}),
 						q(53588, {	-- The Pit
 							["name"] = "The Pit",
-							["coord"] = { 46.69, 38.75, 543 },
+							["coord"] = { 46.69, 38.75, GORGROND },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-							["maps"] = { 543 },	-- Gorgrond
+							["maps"] = { GORGROND },
 						}),
 					},
 				}),

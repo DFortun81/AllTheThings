@@ -5,14 +5,14 @@
 _.Zones =
 {
 	m(572, {	-- Draenor
-		m(543, {	-- Gorgrond
+		m(GORGROND, {
 			n(ACHIEVEMENTS, {
 				ach(9069,  {	-- An Awfully Big Adventure
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
 					["g"] = {
 						crit(12, {	-- Cymre Brightblade
-							["coord"] = { 51.0, 70.6, 543 },
+							["coord"] = { 51.0, 70.6, GORGROND },
 							["cr"] = 83837,	-- Cymre Brightblade <Grand Master Pet Tamer>
 						}),
 					},
@@ -60,7 +60,7 @@ _.Zones =
 					["g"] = {
 						i(127867, {	-- A Tiny Ninja Shroud
 							["questID"] = 39267,
-							["coord"] = { 47.5, 41.3, 543 },
+							["coord"] = { 47.5, 41.3, GORGROND },
 							["g"] = {
 								crit(4),	-- Ninja Pepe
 							},
@@ -69,10 +69,10 @@ _.Zones =
 				}),
 				ach(9656,  {	-- In Plain Sight (The Pit)
 					["coords"] = {
-						{ 45.8, 27.2, 543 },
-						{ 48.2, 27.0, 543 },
-						{ 45.2, 25.2, 543 },
-						{ 49.0, 24.0, 543 },
+						{ 45.8, 27.2, GORGROND },
+						{ 48.2, 27.0, GORGROND },
+						{ 45.2, 25.2, GORGROND },
+						{ 49.0, 24.0, GORGROND },
 					},
 				}),
 				ach(9659),		-- Iron Wings (The Pit)

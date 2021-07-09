@@ -145,6 +145,9 @@ SHADOWMOON_VALLEY = 104;	-- Confirmed!
 ECHO_ISLES = 463;
 VALLEY_OF_TRIALS = 461;
 
+-- Warlords of Draenor
+GORGROND = 543;
+
 -- Battle for Azeroth
 CHAMBER_OF_HEART = 1021;
 DAZARALOR = 1165;

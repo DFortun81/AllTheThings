@@ -5,16 +5,16 @@
 _.Zones =
 {
 	m(572, {	-- Draenor
-		m(543, {	-- Gorgrond
+		m(GORGROND, {
 			n(RARES, {
 				-- Coords have been confirmed on rares except for Edge of Reality, Poundfist, and few longer spawning rares in The Pit.
 				n(86268, {	-- Alkali
 					["questID"] = 37371,
 					["isDaily"] = true,
 					["coords"] = {
-						{ 56.2, 40.8, 543 },
-						{ 58.6, 41.2, 543 },
-						{ 71.4, 40.2, 543 },
+						{ 56.2, 40.8, GORGROND },
+						{ 58.6, 41.2, GORGROND },
+						{ 71.4, 40.2, GORGROND },
 					},
 					["g"] = {
 						crit(5, {	-- Alkali
@@ -26,7 +26,7 @@ _.Zones =
 				n(82085, {	-- Bashiok
 					["questID"] = 35335,
 					["isDaily"] = true,
-					["coord"] = { 40.0, 79.0, 543 },
+					["coord"] = { 40.0, 79.0, GORGROND },
 					["g"] = {
 						i(118222),	-- Spirit of Bashiok Toy
 					},
@@ -36,7 +36,7 @@ _.Zones =
 					["modelID"]	= 57964,
 					["questID"] = 37369,
 					["isDaily"] = true,
-					["coord"] = { 69.2, 44.6, 543 },
+					["coord"] = { 69.2, 44.6, GORGROND },
 					["crs"] = {
 						86258,	-- Nultra
 						86259,	-- Valstil
@@ -52,7 +52,7 @@ _.Zones =
 				n(85907, {	-- Berthora
 					["questID"] = 36597,
 					["isDaily"] = true,
-					["coord"] = { 39.4, 74.6, 543 },
+					["coord"] = { 39.4, 74.6, GORGROND },
 					["g"] = {
 						i(118232),	-- Scaled Riverbeast Spaulders
 					},
@@ -61,8 +61,8 @@ _.Zones =
 					["questID"] = 37368,
 					["isDaily"] = true,
 					["coords"] = {
-						{ 46.0, 31.4, 543 },
-						{ 45.8, 33.2, 543 },
+						{ 46.0, 31.4, GORGROND },
+						{ 45.8, 33.2, GORGROND },
 					},
 					["lvl"] = 100,
 					["g"] = {
@@ -75,7 +75,7 @@ _.Zones =
 				n(82311, {	-- Char the Burning
 					["questID"] = 35503,
 					["isDaily"] = true,
-					["coord"] = { 53.4, 44.6, 543 },
+					["coord"] = { 53.4, 44.6, GORGROND },
 					["g"] = {
 						i(118212),	-- Char's Smoldering Fist
 					},
@@ -83,7 +83,7 @@ _.Zones =
 				n(86566, {	-- Defector Dazgo
 					["questID"] = 37362,
 					["isDaily"] = true,
-					["coord"] = { 48.25, 20.83, 543 },
+					["coord"] = { 48.25, 20.83, GORGROND },
 					["lvl"] = 100,
 					["g"] = {
 						crit(2, {	-- Defector Dazgo
@@ -95,7 +95,7 @@ _.Zones =
 				n(82058, {	-- Depthroot
 					["questID"] = 37370,
 					["isDaily"] = true,
-					["coord"] = { 72.6, 40.8, 543 },
+					["coord"] = { 72.6, 40.8, GORGROND },
 					["g"] = {
 						crit(6, {	-- Depthroot
 							["achievementID"] = 9678,	-- Ancient No More
@@ -106,7 +106,7 @@ _.Zones =
 				n(86571, {	-- Durp the Hated
 					["questID"] = 37366,
 					["isDaily"] = true,
-					["coord"] = { 49.8, 23.8, 543 },	-- **Coords unconfirmed, relied on wowhead**
+					["coord"] = { 49.8, 23.8, GORGROND },	-- **Coords unconfirmed, relied on wowhead**
 					["lvl"] = 100,
 					["g"] = {
 						crit(3, {	-- Durp the Hated
@@ -120,8 +120,8 @@ _.Zones =
 					["questID"] = 37373,
 					["isDaily"] = true,
 					["coords"] = {
-						{ 57.8, 36.6, 543 },
-						{ 72.8, 35.8, 543 },
+						{ 57.8, 36.6, GORGROND },
+						{ 72.8, 35.8, GORGROND },
 					},
 					["g"] = {
 						crit(7, {	-- Firestarter Grash
@@ -133,7 +133,7 @@ _.Zones =
 				n(85250, {	-- Fossilwood the Petrified
 					["questID"] = 36387,
 					["isDaily"] = true,
-					["coord"] = { 57.4, 68.6, 543 },
+					["coord"] = { 57.4, 68.6, GORGROND },
 					["g"] = {
 						i(118221),	-- Petrification Stone Toy
 					},
@@ -143,7 +143,7 @@ _.Zones =
 					["questID"] = 36391,
 					["isDaily"] = true,
 					["coords"] = {
-						{ 43.5, 48.1, 543 },	-- Cave Entrance
+						{ 43.5, 48.1, GORGROND },	-- Cave Entrance
 						{ 32.6, 38.2, 546 },	-- Gelgor
 					},
 					["g"] = {
@@ -154,8 +154,8 @@ _.Zones =
 					["questID"] = 36204,
 					["isDaily"] = true,
 					["coords"] = {
-						{ 44.5, 50.8, 543 },	-- Cave Entrance
-						{ 46.0, 50.8, 543 },	-- Glut
+						{ 44.5, 50.8, GORGROND },	-- Cave Entrance
+						{ 46.0, 50.8, GORGROND },	-- Glut
 					},
 					["g"] = {
 						i(118229),	-- Resonant Hidecrystal of the Gorger
@@ -166,7 +166,7 @@ _.Zones =
 					["questID"] = 37413,
 					["isDaily"] = true,
 					["coords"] = {
-						{ 53.9, 55.7, 543 },	-- Cave Entrance
+						{ 53.9, 55.7, GORGROND },	-- Cave Entrance
 						{ 54.8, 35.6, 549 },
 					},
 					["g"] = {
@@ -177,8 +177,8 @@ _.Zones =
 					["questID"] = 36186,
 					["isDaily"] = true,
 					["coords"] = {
-						{ 46.4, 45.4, 543 },	-- Cave Entrance
-						{ 46.8, 43.2, 543 },	-- Greldrok the Cunning
+						{ 46.4, 45.4, GORGROND },	-- Cave Entrance
+						{ 46.8, 43.2, GORGROND },	-- Greldrok the Cunning
 					},
 					["g"] = {
 						i(118210),	-- Greldrok's Facesmasher
@@ -187,7 +187,7 @@ _.Zones =
 				n(88583, {	-- Grove Warden Yal
 					["questID"] = 37375,
 					["isDaily"] = true,
-					["coord"] = { 59.6, 43.0, 543 },
+					["coord"] = { 59.6, 43.0, GORGROND },
 					["g"] = {
 						crit(8, {	-- Grove Warden Yal
 							["achievementID"] = 9678,	-- Ancient No More
@@ -198,7 +198,7 @@ _.Zones =
 				n(83522, {	-- Hive Queen Skrikka
 					["questID"] = 35908,
 					["isDaily"] = true,
-					["coord"] = { 52.2, 70.2, 543 },
+					["coord"] = { 52.2, 70.2, GORGROND },
 					["g"] = {
 						i(118209),	-- Skrikka's Mandible
 					},
@@ -207,8 +207,8 @@ _.Zones =
 					["questID"] = 37365,
 					["isDaily"] = true,
 					["coords"] = {
-						{ 46.0, 27.8, 543 },
-						{ 45.6, 25.4, 543 },
+						{ 46.0, 27.8, GORGROND },
+						{ 45.6, 25.4, GORGROND },
 					},
 					["lvl"] = 100,
 					["g"] = {
@@ -221,7 +221,7 @@ _.Zones =
 				n(88672, {	-- Hunter Bal'ra
 					["questID"] = 37377,
 					["isDaily"] = true,
-					["coord"] = { 55.0, 46.2, 543 },
+					["coord"] = { 55.0, 46.2, GORGROND },
 					["g"] = {
 						crit(9, {	-- Hunter Bal'ra
 							["achievementID"] = 9678,	-- Ancient No More
@@ -232,7 +232,7 @@ _.Zones =
 				n(86574, {	-- Inventor Blammo
 					["questID"] = 37367,
 					["isDaily"] = true,
-					["coord"] = { 47.6, 30.8, 543 },	-- **Coords unconfirmed, relied on wowhead**
+					["coord"] = { 47.6, 30.8, GORGROND },	-- **Coords unconfirmed, relied on wowhead**
 					["lvl"] = 100,
 					["g"] = {
 						crit(4, {	-- Inventor Blammo
@@ -246,7 +246,7 @@ _.Zones =
 					["questID"] = 37412,
 					["isDaily"] = true,
 					["coords"] = {
-						{ 53.9, 55.7, 543 },	-- Cave Entrance
+						{ 53.9, 55.7, GORGROND },	-- Cave Entrance
 						{ 41.6, 75.7, 549 },
 					},
 					["g"] = {
@@ -256,7 +256,7 @@ _.Zones =
 				n(84406, {	-- Mandrakor
 					["questID"] = 36178,
 					["isDaily"] = true,
-					["coord"] = { 50.6, 53.2, 543 },
+					["coord"] = { 50.6, 53.2, GORGROND },
 					["g"] = {
 						i(118709),	-- Doom Bloom Pet
 					},
@@ -264,7 +264,7 @@ _.Zones =
 				n(86562, {	-- Maniacal Madgard
 					["questID"] = 37363,
 					["isDaily"] = true,
-					["coord"] = { 49.17, 33.11, 543 },
+					["coord"] = { 49.17, 33.11, GORGROND },
 					["lvl"] = 100,
 					["g"] = {
 						crit(1, {	-- Maniacal Madgard
@@ -276,7 +276,7 @@ _.Zones =
 				n(88586, {	-- Mogamago
 					["questID"] = 37376,
 					["isDaily"] = true,
-					["coord"] = { 61.6, 39.2, 543 },
+					["coord"] = { 61.6, 39.2, GORGROND },
 					["g"] = {
 						crit(2, {	-- Mogamago
 							["achievementID"] = 9678,	-- Ancient No More
@@ -288,8 +288,8 @@ _.Zones =
 					["questID"] = 37364,
 					["isDaily"] = true,
 					["coords"] = {
-						{ 46.6, 23.2, 543 },
-						{ 45.8, 24.2, 543 },
+						{ 46.6, 23.2, GORGROND },
+						{ 45.8, 24.2, GORGROND },
 					},
 					["lvl"] = 100,
 					["g"] = {
@@ -303,8 +303,8 @@ _.Zones =
 					["questID"] = 34726,
 					["isDaily"] = true,
 					["coords"] = {
-						{ 53.4, 78.2, 543 },	-- Mother Araneae
-						{ 52.2, 76.7, 543 },	-- Cave Entrance
+						{ 53.4, 78.2, GORGROND },	-- Mother Araneae
+						{ 52.2, 76.7, GORGROND },	-- Cave Entrance
 					},
 					["g"] = {
 						i(118208),	-- Broodmother's Kiss
@@ -312,11 +312,11 @@ _.Zones =
 				}),
 				n(50985, {	-- Poundfist
 					["coords"] = {
-						{ 42.0, 25.0, 543 },
-						{ 51.4, 43.1, 543 },
-						{ 45.4, 47.5, 543 },
-						{ 47.0, 54.1, 543 },
-						{ 43.2, 55.5, 543 },
+						{ 42.0, 25.0, GORGROND },
+						{ 51.4, 43.1, GORGROND },
+						{ 45.4, 47.5, GORGROND },
+						{ 47.0, 54.1, GORGROND },
+						{ 43.2, 55.5, GORGROND },
 					},
 					["g"] = {
 						i(116792),	-- Sunhide Gronnling (MOUNT!)
@@ -325,7 +325,7 @@ _.Zones =
 				n(85970, {	-- Riptar
 					["questID"] = 36600,
 					["isDaily"] = true,
-					["coord"] = { 37.6, 81.4, 543 },
+					["coord"] = { 37.6, 81.4, GORGROND },
 					["g"] = {
 						i(118231),	-- Riptar's Clever Claw
 					},
@@ -333,7 +333,7 @@ _.Zones =
 				n(85264, {	-- Rolkor
 					["questID"] = 36393,
 					["isDaily"] = true,
-					["coord"] = { 47.8, 41.6, 543 },
+					["coord"] = { 47.8, 41.6, GORGROND },
 					["g"] = {
 						i(118211),	-- Rolkor's Rage
 					},
@@ -342,9 +342,9 @@ _.Zones =
 					["questID"] = 36837,
 					["isDaily"] = true,
 					["coords"] = {
-						{ 55.0, 71.0, 543 },
-						{ 54.3, 72.0, 543 },
-						{ 53.9, 73.4, 543 },
+						{ 55.0, 71.0, GORGROND },
+						{ 54.3, 72.0, GORGROND },
+						{ 53.9, 73.4, GORGROND },
 					},
 					["g"] = {
 						i(118228),	-- Smashalupagus
@@ -353,7 +353,7 @@ _.Zones =
 				n(79629, {	-- Stomper Kreego
 					["questID"] = 35910,
 					["isDaily"] = true,
-					["coord"] = { 38.2, 66.2, 543 },
+					["coord"] = { 38.2, 66.2, GORGROND },
 					["g"] = {
 						i(118224),	-- Ogre Brewing Kit
 					},
@@ -362,8 +362,8 @@ _.Zones =
 					["questID"] = 36394,
 					["isDaily"] = true,
 					["coords"] = {
-						{ 39.4, 60.6, 543 },
-						{ 41.2, 60.8, 543 },
+						{ 39.4, 60.6, GORGROND },
+						{ 41.2, 60.8, GORGROND },
 					},
 					["g"] = {
 						i(114227),	-- Bubble Wand (TOY!)
@@ -372,7 +372,7 @@ _.Zones =
 				n(86137, {	-- Sunclaw
 					["questID"] = 36656,
 					["isDaily"] = true,
-					["coord"] = { 44.6, 92.2, 543 },
+					["coord"] = { 44.6, 92.2, GORGROND },
 					["g"] = {
 						i(118223),	-- Sunclaw
 					},
@@ -380,7 +380,7 @@ _.Zones =
 				n(88582, {	-- Swift Onyx Flayer
 					["questID"] = 37374,
 					["isDaily"] = true,
-					["coord"] = { 59.52, 31.97, 543 },
+					["coord"] = { 59.52, 31.97, GORGROND },
 					["g"] = {
 						crit(1, {	-- Swift Onyx Flayer
 							["achievementID"] = 9678,	-- Ancient No More
@@ -392,9 +392,9 @@ _.Zones =
 					["questID"] = 36794,
 					["isDaily"] = true,
 					["coords"] = {
-						{ 63.0, 61.6, 543 },
-						{ 63.9, 61.8, 543 },
-						{ 65.4, 60.8, 543 },
+						{ 63.0, 61.6, GORGROND },
+						{ 63.9, 61.8, GORGROND },
+						{ 65.4, 60.8, GORGROND },
 					},
 					["g"] = {
 						i(118213),	-- Slimy Sea Serpent Skin Sabatons
@@ -403,12 +403,12 @@ _.Zones =
 				n(80371, {	-- Typhon
 					["questID"] = 37405,
 					["isDaily"] = true,
-					["coord"] = { 75.6, 42.6, 543 },
+					["coord"] = { 75.6, 42.6, GORGROND },
 				}),
 				n(86266, {	-- Venolasix
 					["questID"] = 37372,
 					["isDaily"] = true,
-					["coord"] = { 63.4, 30.8, 543 },
+					["coord"] = { 63.4, 30.8, GORGROND },
 					["g"] = {
 						crit(4, {	-- Venolasix
 							["achievementID"] = 9678,	-- Ancient No More

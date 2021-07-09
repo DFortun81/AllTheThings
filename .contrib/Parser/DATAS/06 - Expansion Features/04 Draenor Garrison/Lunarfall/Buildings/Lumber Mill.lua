@@ -82,7 +82,7 @@ _.ExpansionFeatures =
 									{ 73.0, 28.0, 535 },	-- Talador
 									{ 73.7, 64.0, 535 },	-- Talador
 									{ 46.0, 31.5, 539 },	-- SMV
-									{ 45.5, 66.3, 543 },	-- Gorgrond
+									{ 45.5, 66.3, GORGROND },
 								},
 								["g"] = {
 									follower(195),	-- Weldon Barov / Alexi Barov

@@ -14,7 +14,7 @@ profession(ENCHANTING, {
 			["races"] = ALLIANCE_ONLY,
 			["maps"] = {
 				525,	-- Frostfire Ridge
-				543,	-- Gorgrond
+				GORGROND,
 				550,	-- Nagrand
 				539,	-- Shadowmoon Valley
 				542,	-- Spires of Arak
@@ -29,7 +29,7 @@ profession(ENCHANTING, {
 			["races"] = HORDE_ONLY,
 			["maps"] = {
 				525,	-- Frostfire Ridge
-				543,	-- Gorgrond
+				GORGROND,
 				550,	-- Nagrand
 				539,	-- Shadowmoon Valley
 				542,	-- Spires of Arak

@@ -625,9 +625,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 						["maps"] = { 550 },	-- Nagrand
 					}),
 					crit(4, {	-- Gorgrond
-						["coord"] = { 43.8, 93.8, 543 },
+						["coord"] = { 43.8, 93.8, GORGROND },
 						["races"] = ALLIANCE_ONLY,
-						["maps"] = { 543 },	-- Gorgrond
+						["maps"] = { GORGROND },
 					}),
 					crit(5, {	-- Shadowmoon Valley
 						["coord"] = { 42.6, 36.0, 539 },
@@ -1331,9 +1331,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 						["maps"] = { 550 },	-- Nagrand
 					}),
 					crit(4, {	-- Gorgrond
-						["coord"] = { 43.8, 93.8, 543 },
+						["coord"] = { 43.8, 93.8, GORGROND },
 						["races"] = HORDE_ONLY,
-						["maps"] = { 543 },	-- Gorgrond
+						["maps"] = { GORGROND },
 					}),
 					crit(5, {	-- Frostfire Ridge
 						["coord"] = { 72.6, 65.0, 525 },

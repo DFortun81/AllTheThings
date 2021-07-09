@@ -41,7 +41,7 @@ _.Toys =
 			}),
 			i(127867, {	-- A Tiny Ninja Shroud
 				["questID"] = 39267,	-- Pepe can be sometimes be summoned with this mask
-				["coord"] = { 47.51, 41.31, 543 },
+				["coord"] = { 47.51, 41.31, GORGROND },
 			}),
 			i(139632, {	-- A Tiny Pair of Goggles
 				["questID"] = 43695,	-- Pepe can be sometimes be summoned with this mask

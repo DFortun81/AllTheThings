@@ -17,11 +17,11 @@ _.Zones =
 				{ 47.7, 27.57, 525 },
 
 				-- Gorgrond
-				{ 51.6, 38.8, 543 },
-				{ 54.0, 45.8, 543 },
-				{ 56.0, 40.7, 543 },
-				{ 43.3, 34.2, 543 },
-				{ 46.9, 21.2, 543 },
+				{ 51.6, 38.8, GORGROND },
+				{ 54.0, 45.8, GORGROND },
+				{ 56.0, 40.7, GORGROND },
+				{ 43.3, 34.2, GORGROND },
+				{ 46.9, 21.2, GORGROND },
 
 				-- Nagrand (Draenor)
 				{ 40.5, 47.6, 550 },
@@ -54,7 +54,7 @@ _.Zones =
 			},
 			["maps"] = {
 				525,	-- Frostfire Ridge
-				543,	-- Gorgrond
+				GORGROND,
 				550,	-- Nagrand (Draenor)
 				539,	-- Shadowmoon Valley (Draenor)
 				542,	-- Spires of Arak

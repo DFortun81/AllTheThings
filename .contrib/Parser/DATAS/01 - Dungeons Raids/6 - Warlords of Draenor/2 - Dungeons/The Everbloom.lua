@@ -4,7 +4,7 @@
 
 _.Instances = { tier(6, {	-- Warlords of Draenor
 	inst(556, {	-- The Everbloom
-		["coord"] = { 59.55, 45.45, 543 },	-- Gorgrond, Draenor
+		["coord"] = { 59.55, 45.45, GORGROND },
 		["maps"] = { 620, 621 },
 		["lvl"] = 100,
 		["g"] = {
