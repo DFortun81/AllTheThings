@@ -1,30 +1,32 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+-- #if ANYCLASSIC
 local legendary = function(itemID, creatureID)
 	if creatureID then
-		-- #if ANYCLASSIC
 		return i(itemID, {
 			["cr"] = creatureID,
 		});
-		-- #else
-		return i(itemID, {
-			["collectible"] = false,
-			["cr"] = creatureID,
-			["u"] = 15,
-		});
-		-- #endif
 	else
-		-- #if ANYCLASSIC
 		return i(itemID);
-		-- #else
-		return i(itemID, {
-			["collectible"] = false,
-			["u"] = 15,
-		});
-		-- #endif
 	end
 end;
+-- #else
+local legendary = function(itemID, creatureID)
+	if creatureID then
+		return i(itemID, {
+			["collectible"] = false,
+			["cr"] = creatureID,
+			["u"] = 15,
+		});
+	else
+		return i(itemID, {
+			["collectible"] = false,
+			["u"] = 15,
+		});
+	end
+end;
+-- #endif
 _.Instances = { tier(2, applyclassicphase(TBC_PHASE_TWO, {	-- Burning Crusade
 	inst(749, {	-- The Eye
 		["coord"] = { 73.73, 63.71, NETHERSTORM },	-- The Eye, Netherstorm
