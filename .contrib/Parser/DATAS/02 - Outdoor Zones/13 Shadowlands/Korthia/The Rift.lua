@@ -77,6 +77,7 @@ _.Zones =
 									{ 33.4, 39.3, KORTHIA },
 									{ 37.9, 35.8, KORTHIA },
 									{ 39.8, 42.9, KORTHIA },
+									{ 36.0, 32.5, KORTHIA },
 								},
 							}),
 							o(369438, {	-- Riftbound Cache
@@ -86,6 +87,7 @@ _.Zones =
 								["coords"] = {
 									{ 24.8, 56.1, KORTHIA },
 									{ 26.0, 55.7, KORTHIA },
+									{ 43.5, 72.9, KORTHIA },
 								},
 							}),
 							o(369440, {	-- Riftbound Cache
