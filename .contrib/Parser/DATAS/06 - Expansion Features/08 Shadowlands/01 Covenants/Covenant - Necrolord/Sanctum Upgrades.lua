@@ -524,7 +524,7 @@ _.ExpansionFeatures =
 								})
 							}),
 							o(360054, {	-- Sticky Cat
-								["coord"] = { 67.9, 79.3, 1698 },
+								["coord"] = { 67.9, 79.3, MALDRAXXUS },
 								["g"] = {
 									i(183829),	-- Slime Cat
 								},

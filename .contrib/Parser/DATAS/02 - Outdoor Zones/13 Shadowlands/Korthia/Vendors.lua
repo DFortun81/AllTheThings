@@ -119,6 +119,7 @@ _.Zones =
 							["customCollect"] = "SL_COV_NFA",	-- Night Fae-only
 							["cost"] = { { "c", 1767, 1000 } },	-- 1,000x Stygia
 						}),
+						i(187218),	-- Tome of Origins
 						--
 						i(187187, {	-- Korthian Armaments
 							["description"] = "These items can also drop from War Chests awarded by Covenant Assaults, the Death's Advance War Chest, and occasionally from Korthian dailies.\n\nKorthian Armaments also have a chance to drop from Korthia rares and treasures.",

@@ -325,6 +325,9 @@ _.Zones =
 					["sourceQuests"] = { 63725 },	-- Into the Vault
 					["provider"] = { "n", 177228 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 63.0, 25.6, KORTHIA },
+					["g"] = {
+						i(187218),	-- Tome of Origins
+					},
 				}),
 				q(63703, {	-- Vault of Secrets
 					["sourceQuests"] = { 63902 },	-- Good News, Everyone!
