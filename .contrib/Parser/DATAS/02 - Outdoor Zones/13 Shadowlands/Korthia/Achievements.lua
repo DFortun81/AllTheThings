@@ -11,9 +11,15 @@ _.Zones =
 					["collectible"] = false,
 					["g"] = {
 						crit(2, {	-- Maw Walkers
+							["sourceQuests"] = { 64556 },	-- In Need of Assistance
+						}),
+						crit(3, {	-- Focusing the Eye
 							["sourceQuests"] = { 63902 },	-- Good News, Everyone!
 						}),
-						crit(4, {	-- An Army of Bone and Steel
+						--[[crit(4, {	-- The Last Sigil
+							["sourceQuests"] = { 63727 },	-- The Primus Returns
+						}),]]
+						crit(5, {	-- An Army of Bone and Steel
 							["sourceQuests"] = { 63622 },	-- Victory in Our Name
 						}),
 					},

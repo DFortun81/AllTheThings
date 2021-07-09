@@ -13,7 +13,7 @@ _.ExpansionFeatures =
 				--	TODO: this quest is picked up in runecarver's oubliette, which is technically torghast, but it might make more sense to list it in Korthia for visibility?
 					["collectible"] = false,
 					["g"] = {
-						crit(3, {	-- The Last Sigil
+						crit(4, {	-- The Last Sigil
 							["sourceQuests"] = { 63727 },	-- The Primus Returns (technically in Torghast/Runecarver's Oubliette)
 						}),
 					},

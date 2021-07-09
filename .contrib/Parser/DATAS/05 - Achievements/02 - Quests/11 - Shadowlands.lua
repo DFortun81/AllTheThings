@@ -51,12 +51,13 @@ _.Achievements =
 				ach(14961, {	-- Chains of Domination
 					crit(1),	-- Battle of Ardenweald
 					crit(2),	-- Maw Walkers
-					crit(3),	-- The Last Sigil
-					crit(4),	-- An Army of Bone and Steel
-					crit(5),	-- The Unseen Guests
-					crit(6),	-- The Power of Night
-					crit(7),	-- A New Path
-					crit(8),	-- What Lies Ahead
+					crit(3),	-- Focusing the Eye
+					crit(4),	-- The Last Sigil
+					crit(5),	-- An Army of Bone and Steel
+					crit(6),	-- The Unseen Guests
+					crit(7),	-- The Power of Night
+					crit(8),	-- A New Path
+					crit(9),	-- What Lies Ahead
 				}),
 				ach(15035, {	-- On the Offensive
 					ach(15000, {	-- United Front
