@@ -753,6 +753,7 @@ _.HiddenQuestTriggers = {
 		q(62978),	-- Twisting Corridors, Layer 4
 		q(62979),	-- Twisting Corridors, Layer 6
 		q(62980),	-- Twisting Corridors, Layer 8
+		q(64347),	-- Adamant Vaults
 
 	-- Follower Access Triggers
 		q(61951),	-- Triggered when completing 61958 (Champion: Gorgelimb)
