@@ -10,7 +10,7 @@ _.Zones =
 				n(180063, {	-- Darkmaul
 					["description"] = "Collect |cFFFFFFFFTasty Mawshrooms|r from the daily Invasive Mawshroom treasures in Korthia and feed them to Darkmaul.",
 					["coord"] = { 42.8, 32.7, KORTHIA },
-					["cost"] = { { "i", 187153, 5 } },	-- TODO: not sure if 5 is the correct number!  i am bad at counting!
+					["cost"] = { { "i", 187153, 10 } },
 					["g"] = {
 						i(186646),	-- Darkmaul (MOUNT!)
 					},
