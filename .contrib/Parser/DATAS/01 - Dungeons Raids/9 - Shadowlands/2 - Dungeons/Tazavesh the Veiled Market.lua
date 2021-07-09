@@ -148,6 +148,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 							i(185794),	-- Gavel Pounders
 							i(185809),	-- Venza's Powderbelt
 							i(185840),	-- Seal of the Panoply
+							i(185051),	-- Direhorn Soul
 						},
 					}),
 					e(2436, {	-- Mailroom Mayhem
@@ -267,6 +268,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 							i(185799),	-- Hyperlight Leggings
 							i(185813),	-- Signet of Collapsing Stars
 							i(185818),	-- So'leah's Secret Technique
+							i(185047, {	-- Yak Soul
+								["description"] = "Only confirmed drop on Hard Mode.",
+							}),
 						},
 					}),
 				},
