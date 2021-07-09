@@ -5312,7 +5312,15 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 					["recipeID"] = 334548
 				}
 			}
-		}
+		},
+		category(178, {	-- Statues
+			recipe(355187, {	-- Porous Stone Statue
+				["name"] = "Porous Stone Statue",
+			}),
+			recipe(355189, {	-- Shaded Stone Statue
+				["name"] = "Shaded Stone Statue",
+			}),
+		}),
 	})),
 	-- #if AFTER CATA
 	n(QUESTS, applyclassicphase(CATA_PHASE_ONE, {
