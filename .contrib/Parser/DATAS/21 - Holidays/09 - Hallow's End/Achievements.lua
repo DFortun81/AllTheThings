@@ -358,8 +358,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { LOCH_MODAN },
 										}),
 										crit(16, {	-- Northern Stranglethorn, Fort Livingston
-											["coord"] = { 53.1, 66.9, 50 },
-											["maps"] = { 50 },	-- Northern Stranglethorn
+											["coord"] = { 53.1, 66.9, NORTHERN_STRANGLETHORN },
+											["maps"] = { NORTHERN_STRANGLETHORN },
 										}),
 										crit(17, {	-- Redridge Mountains, Lakeshire
 											["coord"] = { 26.4, 41.6, REDRIDGE_MOUNTAINS },
@@ -463,8 +463,8 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { THE_HINTERLANDS },
 										}),
 										crit(15, {	-- Northern Stranglethorn, Grom'gol Base Camp
-											["coord"] = { 37.3, 51.7, 50 },
-											["maps"] = { 50 },	-- Northern Stranglethorn
+											["coord"] = { 37.3, 51.7, NORTHERN_STRANGLETHORN },
+											["maps"] = { NORTHERN_STRANGLETHORN },
 										}),
 										crit(16, {	-- Searing Gorge, Iron Summit
 											["coord"] = { 39.4, 66.1, SEARING_GORGE },

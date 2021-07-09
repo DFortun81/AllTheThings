@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(50, {	-- Northern Stranglethorn
+		m(NORTHERN_STRANGLETHORN, {
 			n(ACHIEVEMENTS, {
 				ach(4906, {		-- Northern Stranglethorn Quests
 					crit(1, {	-- Ohgan'aka (A)

@@ -14,7 +14,7 @@ _.Holidays = bubbleDown({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL},
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						crit(1, {	-- Brother Nimetz in Stranglethorn Vale
-							["coord"] = { 47.25, 11.10, 50 },
+							["coord"] = { 47.25, 11.10, NORTHERN_STRANGLETHORN },
 						}),
 						crit(2, {	-- Brother Wilhelm in Goldshire
 							["coord"] = { 41.07, 65.95, ELWYNN_FOREST },

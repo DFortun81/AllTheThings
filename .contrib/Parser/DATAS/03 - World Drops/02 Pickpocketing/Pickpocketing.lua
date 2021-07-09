@@ -23,26 +23,26 @@ _.WorldDrops =
 		}),
 		n(-9982, {	-- Legion
 			i(151165),	-- Verbellin Tourbillion Chronometer	20000
-			i(151164),	--Sparkling Sin'dorei Signet	10000
-			i(151163),	--Locket of Magical Memories	5000
-			i(151162),	--Glitzy Mana-Chain	2500
-			i(151161),	--Subtle Chronometer	1000
-			i(151160),	--Elegant Manabraid	800
-			i(151159),	--Managraphic Card	600
-			i(151158),	--Manaforged Worry-Chain	400
-			i(151115),	--Mana-Cloaked Choker	250
-			i(151157),	--Flashy Chronometer	200
-			i(151156),	--Manaweft Bracelet	100
-			i(151155),	--Mana-Etched Signet	90
-			i(151154),	--Managleam Pendant	80
-			i(151153),	--Glinting Manaseal	70
-			i(151152),	--Star-Etched Ring	60
-			i(151151),	--Tacky Chronometer	50
-			i(151150),	--Charmed Bracelet	40
-			i(151149),	--Charmed Ring	30
-			i(151148),	--Charmed Choker	20
-			i(151147),	--Charmed Pendant	10
-			i(151146),	--Charmed Band
+			i(151164),	-- Sparkling Sin'dorei Signet	10000
+			i(151163),	-- Locket of Magical Memories	5000
+			i(151162),	-- Glitzy Mana-Chain	2500
+			i(151161),	-- Subtle Chronometer	1000
+			i(151160),	-- Elegant Manabraid	800
+			i(151159),	-- Managraphic Card	600
+			i(151158),	-- Manaforged Worry-Chain	400
+			i(151115),	-- Mana-Cloaked Choker	250
+			i(151157),	-- Flashy Chronometer	200
+			i(151156),	-- Manaweft Bracelet	100
+			i(151155),	-- Mana-Etched Signet	90
+			i(151154),	-- Managleam Pendant	80
+			i(151153),	-- Glinting Manaseal	70
+			i(151152),	-- Star-Etched Ring	60
+			i(151151),	-- Tacky Chronometer	50
+			i(151150),	-- Charmed Bracelet	40
+			i(151149),	-- Charmed Ring	30
+			i(151148),	-- Charmed Choker	20
+			i(151147),	-- Charmed Pendant	10
+			i(151146),	-- Charmed Band
 		}),
 		n(-10100, {	-- Shadowlands
 			i(180868, {	-- Fear's Heartpiercer

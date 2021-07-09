@@ -432,8 +432,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8716,  {	-- Starglade the Elder
 				["provider"] = { "n", 15596 },	-- Elder Starglade
 				["isYearly"] = true,
-				["coord"] = { 71.0, 34.2, 50 },
-				["maps"] = { 50 },	-- Northern Stranglethorn
+				["coord"] = { 71.0, 34.2, NORTHERN_STRANGLETHORN },
+				["maps"] = { NORTHERN_STRANGLETHORN },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(5, {	-- Elder Starglade in Zul'Gurub

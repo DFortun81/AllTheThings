@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(50, {	-- Northern Stranglethorn
+		m(NORTHERN_STRANGLETHORN, {
 			filter(101, {	-- Pet Battle
 				p(406, {	-- Beetle
 					["crs"] = { 61319 },	-- Beetle
@@ -36,7 +36,7 @@ _.Zones =
 				}),
 				q(31728, {	-- Bill Buckler
 					["provider"] = { "n", 63194 },	-- Steven Lisbane
-					["coord"] = { 46.0, 40.4, 50 },
+					["coord"] = { 46.0, 40.4, NORTHERN_STRANGLETHORN },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 31729,	-- Steven Lisbane
 					["g"] = {
@@ -45,7 +45,7 @@ _.Zones =
 				}),
 				q(31852, {	-- Steven Lisbane
 					["provider"] = { "n", 63194 },	-- Steven Lisbane
-					["coord"] = { 46.0, 40.4, 50 },
+					["coord"] = { 46.0, 40.4, NORTHERN_STRANGLETHORN },
 					["isDaily"] = true,
 				}),
 			}),

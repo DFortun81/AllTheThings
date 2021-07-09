@@ -66,9 +66,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { LOCH_MODAN },
 									}),
 									crit(9,  {	-- Northern Stranglethorn
-										["coord"] = { 52.0, 63.6, 50 },
+										["coord"] = { 52.0, 63.6, NORTHERN_STRANGLETHORN },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 50 },	-- Northern Stranglethorn
+										["maps"] = { NORTHERN_STRANGLETHORN },
 									}),
 									crit(10, {	-- Redridge Mountains
 										["coord"] = { 25.0, 53.5, REDRIDGE_MOUNTAINS },
@@ -341,9 +341,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { HILLSBRAD_FOOTHILLS },
 									}),
 									crit(8,  {	-- Northern Stranglethorn
-										["coord"] = { 40.7, 52.0, 50 },
+										["coord"] = { 40.7, 52.0, NORTHERN_STRANGLETHORN },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 50 },	-- Northern Stranglethorn
+										["maps"] = { NORTHERN_STRANGLETHORN },
 									}),
 									crit(9,  {	-- Silverpine Forest
 										["coord"] = { 49.6, 38.7, 21 },
@@ -767,9 +767,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { HILLSBRAD_FOOTHILLS },
 									}),
 									crit(8,  {	-- Northern Stranglethorn
-										["coord"] = { 40.6, 50.9, 50 },
+										["coord"] = { 40.6, 50.9, NORTHERN_STRANGLETHORN },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 50 },	-- Northern Stranglethorn
+										["maps"] = { NORTHERN_STRANGLETHORN },
 									}),
 									crit(9,  {	-- Silverpine Forest
 										["coord"] = { 49.6, 38.2, 21 },
@@ -1042,9 +1042,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { LOCH_MODAN },
 									}),
 									crit(9,  {	-- Northern Stranglethorn
-										["coord"] = { 51.6, 63.3, 50 },
+										["coord"] = { 51.6, 63.3, NORTHERN_STRANGLETHORN },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 50 },	-- Northern Stranglethorn
+										["maps"] = { NORTHERN_STRANGLETHORN },
 									}),
 									crit(10, {	-- Redridge Mountains
 										["coord"] = { 24.4, 53.9, REDRIDGE_MOUNTAINS },

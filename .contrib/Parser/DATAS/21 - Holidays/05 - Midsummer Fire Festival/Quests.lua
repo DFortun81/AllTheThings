@@ -276,10 +276,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(28911, {	-- Desecrate this Fire! — Northern Stranglethorn
 				["isYearly"] = true,
 				["provider"] = { "o", 207983 },	-- Horde Bonfire
-				["coord"] = { 40.7, 52.0, 50 },
+				["coord"] = { 40.7, 52.0, NORTHERN_STRANGLETHORN },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
-				["maps"] = { 50 },	-- Northern Stranglethorn
+				["maps"] = { NORTHERN_STRANGLETHORN },
 			}),
 			q(11779, {	-- Desecrate this Fire! — Shadowmoon Valley (Outland)
 				["isYearly"] = true,
@@ -678,10 +678,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(28910, {	-- Desecrate this Fire! — Northern Stranglethorn
 				["isYearly"] = true,
 				["provider"] = { "o", 207982 },	-- Alliance Bonfire
-				["coord"] = { 51.6, 63.3, 50 },
+				["coord"] = { 51.6, 63.3, NORTHERN_STRANGLETHORN },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-				["maps"] = { 50 },	-- Northern Stranglethorn
+				["maps"] = { NORTHERN_STRANGLETHORN },
 			}),
 			q(11751, {	-- Desecrate this Fire! — Redridge Mountains
 				["isYearly"] = true,
@@ -1107,9 +1107,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(28922, {	-- Honor the Flame — Northern Stranglethorn
 				["provider"] = { "n", 51574 },	-- Northern Stranglethorn Flame Warden
 				["isYearly"] = true,
-				["coord"] = { 52.0, 63.6, 50 },
+				["coord"] = { 52.0, 63.6, NORTHERN_STRANGLETHORN },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 50 },	-- Northern Stranglethorn
+				["maps"] = { NORTHERN_STRANGLETHORN },
 			}),
 			q(11822, {	-- Honor the Flame — Redridge Mountains
 				["provider"] = { "n", 25904 },	-- Redridge Flame Warden
@@ -1508,9 +1508,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(28924, {	-- Honor the Flame — Northern Stranglethorn
 				["provider"] = { "n", 51582 },	-- Northern Stranglethorn Vale Flame Keeper
 				["isYearly"] = true,
-				["coord"] = { 40.6, 50.9, 50 },
+				["coord"] = { 40.6, 50.9, NORTHERN_STRANGLETHORN },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 50 },	-- Northern Stranglethorn
+				["maps"] = { NORTHERN_STRANGLETHORN },
 			}),
 			q(11855, {	-- Honor the Flame — Shadowmoon Valley (Outland)
 				["provider"] = { "n", 25938 },	-- Shadowmoon Valley Flame Keeper
@@ -1913,7 +1913,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					DUSKWOOD,
 					LOCH_MODAN,
 					REDRIDGE_MOUNTAINS,
-					50,		-- Northern Stranglethorn
+					NORTHERN_STRANGLETHORN,
 					51,		-- Swamp of Sorrows
 					52,		-- Westfall
 					56,		-- Wetlands

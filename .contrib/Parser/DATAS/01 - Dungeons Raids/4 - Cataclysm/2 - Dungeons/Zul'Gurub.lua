@@ -7,7 +7,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 		["maps"] = {
 			ZULGURUB,
 		},
-		["coord"] = { 72.0, 32.9, 50 },	-- Zul'Gurub, Northern Stranglethorn
+		["coord"] = { 72.0, 32.9, NORTHERN_STRANGLETHORN },	-- Zul'Gurub
 		["g"] = {
 			d(2, {	-- Heroic
 				["lvl"] = 85,

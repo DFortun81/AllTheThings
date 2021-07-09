@@ -1294,18 +1294,18 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(28964, {	-- Candy Bucket — Northern Stranglethorn, Fort Livingston, Alliance
 				["isYearly"] = true,
-				["coord"] = { 53.1, 66.9, 50 },
+				["coord"] = { 53.1, 66.9, NORTHERN_STRANGLETHORN },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 50 },	-- Northern Stranglethorn
+				["maps"] = { NORTHERN_STRANGLETHORN },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12382, {	-- Candy Bucket — Northern Stranglethorn, Grom'gol Base Camp, Horde
 				["isYearly"] = true,
-				["coord"] = { 37.3, 51.7, 50 },
+				["coord"] = { 37.3, 51.7, NORTHERN_STRANGLETHORN },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 50 },	-- Northern Stranglethorn
+				["maps"] = { NORTHERN_STRANGLETHORN },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
