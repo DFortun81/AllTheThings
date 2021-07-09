@@ -68,6 +68,9 @@ _.ExpansionFeatures =
 						["provider"] = { "i", 182179 },	-- Runestag Soul
 						["crs"] = { 164547 },	-- Mystic Rainbowhorn
 					}),
+					q(63605, {	-- Saurolisk Soul
+						["provider"] = { "i", 185049 },	-- Saurolisk Soul
+					}),
 					q(62431, {	-- Shadowstalker Soul
 						["provider"] = { "i", 182176 },	-- Shadowstalker Soul
 						["crs"] = { 168647 },	-- Valfir the Unrelenting

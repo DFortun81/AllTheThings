@@ -185,6 +185,7 @@ _.ExpansionFeatures =
 						155251,	-- Elder Longbranch
 					},
 				}),
+				i(185049),	-- Saurolisk Soul (AV)
 
 				-- TODO: are legendaries specific to Zone/Level/Floor? categorize?
 
