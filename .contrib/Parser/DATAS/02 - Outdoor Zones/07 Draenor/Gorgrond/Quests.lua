@@ -1286,10 +1286,10 @@ _.Zones =
 					},
 				}),
 				q(36383, {	-- Assault on the Pit (A) (bonus objectives)
-					["coord"] = { 48.4, 25.8 },
+					["coord"] = { 48.4, 25.8, 543 },
 				}),
 				q(36489, {	-- Assault on the Pit (H) (bonus objectives)
-					["coord"] = { 48.4, 25.8 },
+					["coord"] = { 48.4, 25.8, 543 },
 				}),
 				q(35016, {	-- Basic Skulltaking
 					["provider"] = { "n", 81218 },	-- Grulkor
