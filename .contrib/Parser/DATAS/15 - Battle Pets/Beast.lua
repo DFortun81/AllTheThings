@@ -119,6 +119,8 @@ _.BattlePets =
 			p(1542),	-- Frostwolf Pup
 			p(2432),	-- Fuzzy Creepling
 			p(475),		-- Giraffe Calf
+			p(3110),	-- Gizmo
+			p(3140),	-- Gnashtooth
 			p(2711),	-- Golden Snorf
 			p(2934),	-- Goldenpaw Kit
 			p(571),		-- Grove Viper

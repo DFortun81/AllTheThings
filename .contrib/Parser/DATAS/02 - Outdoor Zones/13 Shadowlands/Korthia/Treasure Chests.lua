@@ -130,6 +130,7 @@ _.Zones =
 							{ 38.8, 33.8, KORTHIA },
 							{ 39.5, 30.7, KORTHIA },
 							{ 39.7, 34.8, KORTHIA },
+							{ 42.0, 32.5, KORTHIA },
 						},
 					}),
 					o(369332, {	-- Invasive Mawshroom

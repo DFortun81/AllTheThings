@@ -18,7 +18,9 @@ _.BattlePets =
 			p(1738),	-- Auburn Ringtail
 			p(706),		-- Bandicoon
 			p(707),		-- Bandicoon Kit
-			un(REMOVED_FROM_GAME, p(903)),	-- Baneling
+			p(903, {	-- Baneling
+				["u"] = REMOVED_FROM_GAME,
+			}),
 			p(406),		-- Beetle
 			p(374),		-- Black Lamb
 			p(398),		-- Black Rat
@@ -53,7 +55,9 @@ _.BattlePets =
 			p(3138),	-- Domestic Aunian
 			p(467),		-- Dung Beetle
 			p(1778),	-- Dust Bunny
-			un(20, p(158)),		-- Egbert
+			p(158, {	-- Egbert
+				["u"] = 20,	-- Children's Week
+			}),
 			p(479),		-- Elfin Rabbit
 			p(209),		-- Elwynn Lamb
 			p(2664),	-- Experimental Roach
@@ -76,7 +80,9 @@ _.BattlePets =
 			p(430),		-- Gold Beetle
 			p(2387),	-- Golden Beetle
 			p(2867),	-- Golden Chirper
-			un(REMOVED_FROM_GAME, p(170)),	-- Golden Pig
+			p(170, {	-- Golden Pig
+				["u"] = REMOVED_FROM_GAME,
+			}),
 			p(733),		-- Grassland Hopper
 			p(443),		-- Grasslands Cottontail
 			p(647),		-- Grizzly Squirrel
@@ -99,8 +105,12 @@ _.BattlePets =
 			p(543),		-- Locust
 			p(404),		-- Long-tailed Mole
 			p(1511),	-- Lovebird Hatchling
-			un(REMOVED_FROM_GAME, p(155)),	-- Lucky
-			un(REMOVED_FROM_GAME, p(671)),	-- Lucky Quilen Cub
+			p(155, {	-- Lucky
+				["u"] = REMOVED_FROM_GAME,
+			}),
+			p(671, {	-- Lucky Quilen Cub
+				["u"] = REMOVED_FROM_GAME,
+			}),
 			p(708),		-- Malayan Quillrat
 			p(709),		-- Malayan Quillrat Pup
 			p(710),		-- Marsh Fiddler
@@ -111,18 +121,24 @@ _.BattlePets =
 			p(391),		-- Mountain Cottontail
 			p(633),		-- Mountain Skunk
 			p(385),		-- Mouse
-			un(20, p(126)),		-- Mr. Wiggles
+			p(126, {	-- Mr. Wiggles
+				["u"] = 20,	-- Children's Week
+			}),
 			p(2660),	-- Muck Slug
 			p(1776),	-- Mudshell Conch
 			p(210),		-- Mulgore Hatchling
 			p(2554),	-- Needleback Pup
 			p(638),		-- Nether Roach
-			un(REMOVED_FROM_GAME, p(1691)),	-- Nibbles
+			p(1691, {	-- Nibbles
+				["u"] = REMOVED_FROM_GAME,
+			}),
 			p(1943),	-- Noblegarden Bunny
 			p(323),		-- Nuts
 			p(1729),	-- Olivetail Hare
 			p(2116),	-- Orphaned Marsuul
-			un(20, p(159)),		-- Peanut
+			p(159, {	-- Peanut
+				["u"] = 20,	-- Children's Week
+			}),
 			p(250),		-- Perky Pug
 			p(166),		-- Pint-Sized Pink Pachyderm
 			p(2954),	-- Plaguelouse Larva
@@ -135,6 +151,7 @@ _.BattlePets =
 			p(2133),	-- Pygmy Marsuul
 			p(378),		-- Rabbit
 			p(743),		-- Rapana Whelk
+			p(3113),	-- Rarity
 			p(417),		-- Rat
 			p(1042),	-- Red Cricket
 			p(452),		-- Red-Tailed Chipmunk
@@ -144,18 +161,24 @@ _.BattlePets =
 			p(424),		-- Roach
 			p(3020),	-- Runelight Leaper
 			p(496),		-- Rusty Snail
-			un(10, p(665)),		-- Sand Scarab
+			p(665, {	-- Sand Scarab
+				["u"] = 10,	-- TCG
+			}),
 			p(2463),	-- Sandshell Chitterer
 			p(717),		-- Savory Beetle
 			p(512),		-- Scarab Hatchling
 			p(3112),	-- Scavenging Skrat
-			un(20, p(289)),		-- Scooter the Snail
+			p(289, {	-- Scooter the Snail
+				["u"] = 20,	-- Children's Week
+			}),
 			p(3118),	-- Scurrying Mawrat
 			p(3022),	-- Shimmerbough Hoarder
 			p(493),		-- Shimmershell Snail
 			p(677),		-- Shy Bandicoon
 			p(568),		-- Silkbead Snail
-			un(REMOVED_FROM_GAME, p(171)),	-- Silver Pig
+			p(171, {	-- Silver Pig
+				["u"] = REMOVED_FROM_GAME,
+			}),
 			p(820),		-- Singing Cricket
 			p(3023),	-- Sir Reginald
 			p(397),		-- Skunk
@@ -190,14 +213,18 @@ _.BattlePets =
 			p(2864),	-- Void-Scarred Locust
 			p(2841),	-- Void-Scarred Rat
 			p(410),		-- Wharf Rat
-			un(20, p(127)),		-- Whiskers the Rat
+			p(127, {	-- Whiskers the Rat
+				["u"] = 20,	-- Children's Week
+			}),
 			p(118),		-- Winter Reindeer
 			p(153),		-- Wolpertinger
 			p(2700),	-- Wriggler
 			p(740),		-- Yakrat
 			p(549),		-- Yellow-Bellied Marmot
 			p(3135),	-- Young Garnetgullet
-			un(REMOVED_FROM_GAME, p(94)),	-- Zergling
+			p(94, {		-- Zergling
+				["u"] = REMOVED_FROM_GAME,
+			}),
 			p(1903),	-- Zoom
 		}),
 	}),

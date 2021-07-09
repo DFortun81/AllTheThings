@@ -37,6 +37,7 @@ _.Zones =
 						crit(4, {	-- Deadsoul Hatcher
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
+						i(187401),	-- Band of the Shaded Rift
 						i(187396),	-- Girdle of the Deadsoul
 					},
 				}),

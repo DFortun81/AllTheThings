@@ -13,6 +13,7 @@ _.Zones =
 						i(186650, {	-- Death's Advance Supplies
 							i(186644),	-- Beryl Shardhide (MOUNT!)
 							i(186649),	-- Fierce Razorwing (MOUNT!)
+							i(186541),	-- Mosscoated Gromit (PET!)
 						}),
 					},
 				}),
@@ -21,7 +22,7 @@ _.Zones =
 					["g"] = {
 						i(187028, {	-- Supplies of the Archivist's Codex
 							i(186641),	-- Tamed Mauler (MOUNT!)
-							i(186541),	-- Mosscoated Gromit (PET!)
+							i(186538),	-- Gnashtooth (PET!)
 						}),
 					},
 				}),

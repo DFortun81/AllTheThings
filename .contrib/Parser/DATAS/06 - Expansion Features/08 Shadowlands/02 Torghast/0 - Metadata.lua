@@ -39,6 +39,8 @@ _.ExpansionFeatures =
 				--
 				1615,	-- Fracture Chambers - Layer 6, Floor 1
 				--
+				1982,	-- Fracture Chambers - Layer 9, Floor 2
+				--
 				1780,	-- Mort'regar - Layer 1, Floor 1
 				1802,	-- Mort'regar - Layer 1, Floor 2
 				1777,	-- Mort'regar - Layer 1, Floor 3

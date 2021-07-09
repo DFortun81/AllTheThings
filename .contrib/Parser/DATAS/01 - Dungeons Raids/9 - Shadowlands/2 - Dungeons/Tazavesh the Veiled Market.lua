@@ -69,7 +69,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 				}),
 			}),
 			n(VENDORS, {
-				["description"] = "All these vendors can be found just inside the entrance to the dungeon.",
+				["description"] = "All these vendors can be found just inside the entrance to the dungeon.",	-- TODO: not sure if this is accurate re: Shopkeeper, edit desc if not
 				["g"] = {
 					n(180130, {	-- Antique Vendor
 						i(187179),	-- Glow Sticks
@@ -80,6 +80,19 @@ _.Instances = { tier(9, {	-- Shadowlands
 					n(180117, {	-- Meat Vendor
 						i(187173),	-- Wriggling Tentacle
 					}),
+				--	n(, {	-- Shopkeeper TODO: there are 2 NPCs with this name, both added in the same build, not sure which one it is - either 179945 or 180161
+					--	["description"] = "When the NPC whispers you, |cFFFFFFFF/nod|r at them.",
+					--	["g"] = {
+							i(186540, {	-- Rarity (PET!)
+								["cost"] = {
+									{ "g", 21430000 },	-- 2,143g
+									{ "i", 180532, 1 },	-- 1x Oxxein Lockbox
+									{ "i", 180522, 1 },	-- 1x Phaedrum Lockbox
+									{ "i", 180533, 1 },	-- 1x Solenium Lockbox
+								},
+							}),
+					--	},
+				--	}),
 					n(180129, {	-- Toy Vendor
 						i(104324),	-- Foot Ball (TOY!)
 						i(187178),	-- Sc'ootie's Favorite Plushie
@@ -144,6 +157,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 							i(182584),	-- Cheetah's Vigor
 							i(181837),	-- Clear Mind
 							i(182461),	-- Echoing Blessings
+							i(186534),	-- Gizmo (PET!)
 							i(182325),	-- Ravenous Consumption
 							i(183497),	-- Recuperator
 							i(183465),	-- Ursine Vigor

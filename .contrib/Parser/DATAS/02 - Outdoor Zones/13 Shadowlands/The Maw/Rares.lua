@@ -547,7 +547,8 @@ _.Zones =
 						crit(12, {	-- Sanngror the Torturer
 							["achievementID"] = 14660,	-- It's About Sending a Message
 						}),
-						i(183410),	-- Sharpclaw
+						i(186629),	-- Sanngor's Spiked Band
+						i(183410),	-- Sharpclaw (PET!)
 					},
 				}),
 				n(170634, {	-- Shadeweaver Zeris

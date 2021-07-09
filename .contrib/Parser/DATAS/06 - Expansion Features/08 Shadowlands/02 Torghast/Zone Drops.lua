@@ -125,6 +125,10 @@ _.ExpansionFeatures =
 						151329,	-- Warden Skoldus
 					},
 				}),
+				i(186549, {	-- Gilded Darknight (PET!)
+				--	["crs"] = { TODO: drops in adamant vaults but no specific crs data yet
+				--	},
+				}),
 				i(183116, {	-- Hissing Deathroach
 					["crs"] = {
 						156239,	-- Dark Ascended Corrus

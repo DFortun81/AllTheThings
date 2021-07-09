@@ -1002,12 +1002,16 @@ pet(181267, 2957);	-- Writhing Spine
 -- PATCH 9.1.0 --
 -----------------
 pet(186449, 3117);	-- Amaranthine Stinger
+pet(186548, 3127);	-- Chompy
 pet(186546, 3103);	-- Copperback Etherwyrm
 pet(186543, 3138);	-- Domestic Aunian
 pet(186554, 3128);	-- Eye of Allseeing
 pet(186555, 3129);	-- Eye of Extermination
 pet(185919, 3097);	-- Flawless Amethyst Baubleworm
 pet(186557, 3114);	-- Fodder
+pet(186549, 3130);	-- Gilded Darknight
+pet(186534, 3110);	-- Gizmo
+pet(186538, 3140);	-- Gnashtooth
 pet(186564, 3125);	-- Golden Eye
 pet(186559, 3121);	-- Grappling Gauntlet
 pet(186191, 3099);	-- Infused Etherwyrm
@@ -1018,6 +1022,7 @@ pet(186188, 3098);	-- Lil'Abom
 pet(186550, 3131);	-- Mawsworn Minion
 pet(186551, 3132);	-- Mord'al Eveningstar
 pet(186541, 3137);	-- Mosscoated Gromit
+pet(186540, 3113);	-- Rarity
 pet(186552, 3133);	-- Rook
 pet(186537, 3104);	-- Ruby Baubleworm
 pet(186544, 3010);	-- Sinfall Screecher

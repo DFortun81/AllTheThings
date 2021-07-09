@@ -155,8 +155,6 @@ _.Zones =
 								}),
 								n(159155, {	-- High Inquisitor Dacian
 									["description"] = "Requires |cff0c5baeHigh Inquisitor Dacian's Sinstone|r to summon.  Sinstones have a chance of dropping from the Depraved mobs around Halls of Atonement.",
-								--	["questID"] = ,
-									["isDaily"] = true,
 									["coord"] = { 72.0, 53.0, REVENDRETH },
 									["g"] = {
 										crit(5, {	-- High Inquisitor Dacian
@@ -168,8 +166,7 @@ _.Zones =
 								}),
 								n(159152, {	-- High Inquisitor Gabi
 									["description"] = "Requires |cff0c5baeHigh Inquisitor Gabi's Sinstone|r to summon.  Sinstones have a chance of dropping from the Depraved mobs around Halls of Atonement.",
-									["questID"] = 59887,
-									["isDaily"] = true,
+								--	["questID"] = 59887, – commenting because i don't think this is related to this inquisitor specifically - seems to be flagged permanently while all inquisitors are repeatable - if it is a "first time kill" quest it should be put in HQT, but since the other inquisitors did not have them idk if that's what it is.  hoping to get a more accurate report
 									["coord"] = { 75.2, 44.2, REVENDRETH },
 									["g"] = {
 										crit(6, {	-- High Inquisitor Gabi
@@ -181,8 +178,6 @@ _.Zones =
 								}),
 								n(159154, {	-- High Inquisitor Magda
 									["description"] = "Requires |cff0c5baeHigh Inquisitor Magda's Sinstone|r to summon.  Sinstones have a chance of dropping from the Depraved mobs around Halls of Atonement.",
-								--	["questID"] = ,
-									["isDaily"] = true,
 									["coord"] = { 69.6, 52.0, REVENDRETH },
 									["g"] = {
 										crit(7, {	-- High Inquisitor Magda
@@ -193,8 +188,6 @@ _.Zones =
 								}),
 								n(159153, {	-- High Inquisitor Radu
 									["description"] = "Requires |cff0c5baeHigh Inquisitor Radu's Sinstone|r to summon.  Sinstones have a chance of dropping from the Depraved mobs around Halls of Atonement.",
-								--	["questID"] = ,
-									["isDaily"] = true,
 									["coord"] = { 71.4, 42.2, REVENDRETH },
 									["g"] = {
 										crit(8, {	-- High Inquisitor Radu

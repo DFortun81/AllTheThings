@@ -7,6 +7,7 @@ _.Zones =
 	m(SHADOWLANDS, {
 		m(KORTHIA, {
 			n(QUESTS, {
+			--	i(186548),	-- Chompy (PET!) TODO: apparently an 'oozing with character' reward but no idea from which one, never saw it on PTR - maybe achieve-related?
 			--	confirmed on live
 				q(63755, {	-- A Matter of Urgency
 					["sourceQuests"] = { 64106 },	-- A Unified Effort
@@ -519,6 +520,18 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 64.6, 25.4, KORTHIA },
 				}),
+				q(63962, {	-- Observational Records
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
+					["provider"] = { "n", 178844 },	-- Ta'nasi
+					["isDaily"] = true,
+					["coord"] = { 64.6, 25.4, KORTHIA },
+				}),
+				q(64103, {	-- Old Tricks Work Best
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
+					["provider"] = { "n", 178808 },	-- Baroness Draka
+					["isDaily"] = true,
+					["coord"] = { 60.7, 27.9, KORTHIA },
+				}),
 				q(64016, {	-- Oozing with Character (Ooz)
 					["sourceQuests"] = { 63727 },	-- The Primus Returns
 					["provider"] = { "n", 178806 },	-- Plague Deviser Marileth
@@ -542,6 +555,12 @@ _.Zones =
 					["provider"] = { "n", 178837 },	-- Lord Herne
 					["isDaily"] = true,
 					["coord"] = { 61.3, 21.3, KORTHIA },
+				}),
+				q(63780, {	-- See How THEY Like It!
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
+					["provider"] = { "n", 178838 },	-- Lady Moonberry
+					["isDaily"] = true,
+					["coord"] = { 61.2, 21.2, KORTHIA },
 				}),
 				q(64070, {	-- Staying Scrappy
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
@@ -725,18 +744,6 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 64.6, 25.4, KORTHIA },
 				}),
-				q(63962, {	-- Observational Records
-					["sourceQuests"] = { 64556 },	-- In Need of Assistance
-					["provider"] = { "n", 178844 },	-- Ta'nasi
-					["isDaily"] = true,
-					["coord"] = { 64.6, 25.4, KORTHIA },
-				}),
-				q(64103, {	-- Old Tricks Work Best
-					["sourceQuests"] = { 64556 },	-- In Need of Assistance
-					["provider"] = { "n", 178808 },	-- Baroness Draka
-					["isDaily"] = true,
-					["coord"] = { 60.7, 27.9, KORTHIA },
-				}),
 				q(64040, {	-- Once More, With Healing
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 179194 },	-- Kleia
@@ -796,12 +803,6 @@ _.Zones =
 					["provider"] = { "n", 178845 },	-- Ve'lonu
 					["isDaily"] = true,
 					["coord"] = { 64.6, 25.4, KORTHIA },
-				}),
-				q(63780, {	-- See How THEY Like It!
-					["sourceQuests"] = { 64556 },	-- In Need of Assistance
-					["provider"] = { "n", 178838 },	-- Lady Moonberry
-					["isDaily"] = true,
-					["coord"] = { 61.2, 21.2, KORTHIA },
 				}),
 				q(63965, {	-- Slitherwing Egg Rescue
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
