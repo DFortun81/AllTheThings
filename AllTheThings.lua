@@ -12830,10 +12830,11 @@ function app:CreateMiniListForGroup(group)
 		self:RegisterEvent("QUEST_REMOVED");
 	elseif not showing then
 		-- print("Unregistered Quest Window events")
-		self:UnregisterEvent("QUEST_LOG_UPDATE");
-		self:UnregisterEvent("QUEST_TURNED_IN");
-		self:UnregisterEvent("QUEST_ACCEPTED");
-		self:UnregisterEvent("QUEST_REMOVED");
+		-- TODO: for some reason this also unregisters events for 'app' as well...
+		-- self:UnregisterEvent("QUEST_LOG_UPDATE");
+		-- self:UnregisterEvent("QUEST_TURNED_IN");
+		-- self:UnregisterEvent("QUEST_ACCEPTED");
+		-- self:UnregisterEvent("QUEST_REMOVED");
 	end
 	popout:Toggle(true);
 end
