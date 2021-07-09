@@ -95,7 +95,19 @@ _.Instances = { tier(9, {	-- Shadowlands
 							},
 						}),
 						e(2439, {	-- The Nine
-						--	["crs"] = {  },	--
+							["crs"] = {
+								-- Main bosses
+								177094,	-- Signe
+								177095,	-- Kyra
+								177094,	-- Signe
+								-- "adds"
+								177100,	-- Aradne
+								177099,	-- Daschla
+								177096,	-- Agatha
+								177101,	-- Bryjna
+								177097,	-- Annhylde
+								177098,	-- Arthura
+							},
 							["g"] = {
 								crit(3, {	-- The Nine
 									["achievementID"] = 15126,	-- Sanctum of Domination
@@ -132,7 +144,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					["collectible"] = false,
 					["g"] = {
 						e(2444, {	-- Remnant of Ner'zhul
-						--	["crs"] = {  },	--
+							["crs"] = { 175729 },	-- Remnant of Ner'zhul
 							["g"] = {
 								crit(4, {	-- Remnant of Ner'zhul
 									["achievementID"] = 15126,	-- Sanctum of Domination
@@ -195,7 +207,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 							},
 						}),
 						e(2443, {	-- Painsmith Raznal
-						--	["crs"] = {  },	--
+							["crs"] = { 176523 },	-- Painsmith Raznal
 							["g"] = {
 								crit(6, {	-- Painsmith Raznal
 									["achievementID"] = 15126,	-- Sanctum of Domination
@@ -232,7 +244,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					["collectible"] = false,
 					["g"] = {
 						e(2446, {	-- Guardian of the First Ones
-						--	["crs"] = {  },	--
+							["crs"] = { 175731 },	-- Guardian of the First Ones
 							["g"] = {
 								crit(7, {	-- Guardian of the First Ones
 									["achievementID"] = 15126,	-- Sanctum of Domination
@@ -265,7 +277,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 							},
 						}),
 						e(2447, {	-- Fatescribe Roh-Kalo
-						--	["crs"] = {  },	--
+							["crs"] = { 175730 },	-- Fatescribe Roh-Kalo
 							["g"] = {
 								crit(8, {	-- Fatescribe Roh-Kalo
 									["achievementID"] = 15126,	-- Sanctum of Domination
@@ -296,7 +308,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 							},
 						}),
 						e(2440, {	-- Kel'Thuzad
-						--	["crs"] = {  },	--
+							["crs"] = { 175559 },	-- Kel'Thuzad
 							["g"] = {
 								crit(9, {	-- Kel'Thuzad
 									["achievementID"] = 15126,	-- Sanctum of Domination
@@ -336,7 +348,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					["collectible"] = false,
 					["g"] = {
 						e(2441, {	-- Sylvanas Windrunner
-						--	["crs"] = {  },	--
+							["crs"] = { 175732 },	-- Sylvanas Windrunner
 							["g"] = {
 								crit(10, {	-- Sylvanas Windrunner
 									["achievementID"] = 15126,	-- Sanctum of Domination
@@ -459,7 +471,19 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2439, {	-- The Nine
-				--	["crs"] = {  },	--
+					["crs"] = {
+						-- Main bosses
+						177094,	-- Signe
+						177095,	-- Kyra
+						177094,	-- Signe
+						-- "adds"
+						177100,	-- Aradne
+						177099,	-- Daschla
+						177096,	-- Agatha
+						177101,	-- Bryjna
+						177097,	-- Annhylde
+						177098,	-- Arthura
+					},
 					["g"] = {
 						crit(3, {	-- The Nine
 							["achievementID"] = 15126,	-- Sanctum of Domination
@@ -492,7 +516,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2444, {	-- Remnant of Ner'zhul
-				--	["crs"] = {  },	--
+					["crs"] = { 175729 },	-- Remnant of Ner'zhul
 					["g"] = {
 						crit(4, {	-- Remnant of Ner'zhul
 							["achievementID"] = 15126,	-- Sanctum of Domination
@@ -557,7 +581,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2443, {	-- Painsmith Raznal
-				--	["crs"] = {  },	--
+					["crs"] = { 176523 },	-- Painsmith Raznal
 					["g"] = {
 						crit(6, {	-- Painsmith Raznal
 							["achievementID"] = 15126,	-- Sanctum of Domination
@@ -590,7 +614,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2446, {	-- Guardian of the First Ones
-				--	["crs"] = {  },	--
+					["crs"] = { 175731 },	-- Guardian of the First Ones
 					["g"] = {
 						crit(7, {	-- Guardian of the First Ones
 							["achievementID"] = 15126,	-- Sanctum of Domination
@@ -624,7 +648,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2447, {	-- Fatescribe Roh-Kalo
-				--	["crs"] = {  },	--
+					["crs"] = { 175730 },	-- Fatescribe Roh-Kalo
 					["g"] = {
 						crit(8, {	-- Fatescribe Roh-Kalo
 							["achievementID"] = 15126,	-- Sanctum of Domination
@@ -656,7 +680,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2440, {	-- Kel'Thuzad
-				--	["crs"] = {  },	--
+					["crs"] = { 175559 },	-- Kel'Thuzad
 					["g"] = {
 						crit(9, {	-- Kel'Thuzad
 							["achievementID"] = 15126,	-- Sanctum of Domination
@@ -692,7 +716,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2441, {	-- Sylvanas Windrunner
-				--	["crs"] = {  },	--
+					["crs"] = { 175732 },	-- Sylvanas Windrunner
 					["g"] = {
 						crit(10, {	-- Sylvanas Windrunner
 							["achievementID"] = 15126,	-- Sanctum of Domination
@@ -816,7 +840,19 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2439, {	-- The Nine
-				--	["crs"] = {  },	--
+					["crs"] = {
+						-- Main bosses
+						177094,	-- Signe
+						177095,	-- Kyra
+						177094,	-- Signe
+						-- "adds"
+						177100,	-- Aradne
+						177099,	-- Daschla
+						177096,	-- Agatha
+						177101,	-- Bryjna
+						177097,	-- Annhylde
+						177098,	-- Arthura
+					},
 					["g"] = {
 						crit(3, {	-- The Nine
 							["achievementID"] = 15127,	-- Heroic: Sanctum of Domination
@@ -849,7 +885,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2444, {	-- Remnant of Ner'zhul
-				--	["crs"] = {  },	--
+					["crs"] = { 175729 },	-- Remnant of Ner'zhul
 					["g"] = {
 						crit(5, {	-- Remnant of Ner'zhul
 							["achievementID"] = 15127,	-- Heroic: Sanctum of Domination
@@ -914,7 +950,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2443, {	-- Painsmith Raznal
-				--	["crs"] = {  },	--
+					["crs"] = { 176523 },	-- Painsmith Raznal
 					["g"] = {
 						crit(6, {	-- Painsmith Raznal
 							["achievementID"] = 15127,	-- Heroic: Sanctum of Domination
@@ -947,7 +983,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2446, {	-- Guardian of the First Ones
-				--	["crs"] = {  },	--
+					["crs"] = { 175731 },	-- Guardian of the First Ones
 					["g"] = {
 						crit(7, {	-- Guardian of the First Ones
 							["achievementID"] = 15127,	-- Heroic: Sanctum of Domination
@@ -981,7 +1017,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2447, {	-- Fatescribe Roh-Kalo
-				--	["crs"] = {  },	--
+					["crs"] = { 175730 },	-- Fatescribe Roh-Kalo
 					["g"] = {
 						crit(8, {	-- Fatescribe Roh-Kalo
 							["achievementID"] = 15127,	-- Heroic: Sanctum of Domination
@@ -1013,7 +1049,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2440, {	-- Kel'Thuzad
-				--	["crs"] = {  },	--
+					["crs"] = { 175559 },	-- Kel'Thuzad
 					["g"] = {
 						crit(9, {	-- Kel'Thuzad
 							["achievementID"] = 15127,	-- Heroic: Sanctum of Domination
@@ -1049,7 +1085,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2441, {	-- Sylvanas Windrunner
-				--	["crs"] = {  },	--
+					["crs"] = { 175732 },	-- Sylvanas Windrunner
 					["g"] = {
 						crit(10, {	-- Sylvanas Windrunner
 							["achievementID"] = 15127,	-- Heroic: Sanctum of Domination
@@ -1171,7 +1207,19 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2439, {	-- The Nine
-				--	["crs"] = {  },	--
+					["crs"] = {
+						-- Main bosses
+						177094,	-- Signe
+						177095,	-- Kyra
+						177094,	-- Signe
+						-- "adds"
+						177100,	-- Aradne
+						177099,	-- Daschla
+						177096,	-- Agatha
+						177101,	-- Bryjna
+						177097,	-- Annhylde
+						177098,	-- Arthura
+					},
 					["g"] = {
 						ach(15114),	-- Mythic: The Nine
 						ach(15003),	-- To the Nines
@@ -1202,7 +1250,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2444, {	-- Remnant of Ner'zhul
-				--	["crs"] = {  },	--
+					["crs"] = { 175729 },	-- Remnant of Ner'zhul
 					["g"] = {
 						ach(15115),	-- Mythic: Remnant of Ner'zhul
 						ach(15058),	-- I Used to Bullseye Deeprun Rats Back Home
@@ -1263,7 +1311,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2443, {	-- Painsmith Raznal
-				--	["crs"] = {  },	--
+					["crs"] = { 176523 },	-- Painsmith Raznal
 					["g"] = {
 						ach(15117),	-- Mythic: Painsmith Raznal
 						ach(15131),	-- Whack-A-Soul
@@ -1294,7 +1342,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2446, {	-- Guardian of the First Ones
-				--	["crs"] = {  },	--
+					["crs"] = { 175731 },	-- Guardian of the First Ones
 					["g"] = {
 						ach(15118),	-- Mythic: Guardian of the First Ones
 						ach(15132),	-- Knowledge is Power
@@ -1326,7 +1374,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2447, {	-- Fatescribe Roh-Kalo
-				--	["crs"] = {  },	--
+					["crs"] = { 175730 },	-- Fatescribe Roh-Kalo
 					["g"] = {
 						ach(15119),	-- Mythic: Fatescribe Roh-Kalo
 						ach(15040),	-- Flawless Fate
@@ -1356,7 +1404,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2440, {	-- Kel'Thuzad
-				--	["crs"] = {  },	--
+					["crs"] = { 175559 },	-- Kel'Thuzad
 					["g"] = {
 						ach(15120),	-- Mythic: Kel'Thuzad
 						ach(15108),	-- Together Forever
@@ -1390,7 +1438,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2441, {	-- Sylvanas Windrunner
-				--	["crs"] = {  },	--
+					["crs"] = { 175732 },	-- Sylvanas Windrunner
 					["g"] = {
 						ach(15121, {	-- Mythic: Sylvanas Windrunner
 							title(447),	-- Breaker of Chains
@@ -1442,3 +1490,89 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		}),
 	}),
 });
+_.HiddenQuestTriggers = {
+	q(64604),	-- Stygian Ember from trash #1 (Normal / Heroic)
+	q(64616),	-- Stygian Ember from trash #1 (Normal / Heroic)
+	q(64683),	-- Stygian Ember from trash #1 (Normal)
+	q(64617),	-- Stygian Ember from trash #1 (Heroic)
+	q(64684),	-- Stygian Ember from trash #1 (Heroic)
+
+	q(64603),	-- Stygian Ember from trash #2 (Normal / Heroic)
+	q(64613),	-- Stygian Ember from trash #2 (Normal / Heroic)
+	q(64680),	-- Stygian Ember from trash #2 (Normal)
+	q(64614),	-- Stygian Ember from trash #2 (Heroic)
+	q(64681),	-- Stygian Ember from trash #2 (Heroic)
+
+	q(64602),	-- Stygian Ember from trash #3 (Normal / Heroic)
+	q(64610),	-- Stygian Ember from trash #3 (Normal / Heroic)
+	q(64677),	-- Stygian Ember from trash #3 (Normal)
+	q(64611),	-- Stygian Ember from trash #3 (Heroic)
+	q(64678),	-- Stygian Ember from trash #3 (Heroic)
+
+	q(64605),	-- Stygian Ember from trash #4 (Normal / Heroic)
+	q(64619),	-- Stygian Ember from trash #4 (Normal / Heroic)
+	q(64686),	-- Stygian Ember from trash #4 (Normal)
+	q(64620),	-- Stygian Ember from trash #4 (Heroic)
+	q(64687),	-- Stygian Ember from trash #4 (Heroic)
+
+	q(64326),	-- The Tarragrue (Normal / Heroic)
+	q(64327),	-- The Tarragrue (Normal / Heroic)
+	q(64329),	-- The Tarragrue (Normal / Heroic)
+	q(64653),	-- The Tarragrue (Normal / Heroic)
+	q(64328),	-- The Tarragrue (Heroic)
+
+	q(64330),	-- Eye of the Jailer (Normal / Heroic)
+	q(64331),	-- Eye of the Jailer (Normal / Heroic)
+	q(64630),	-- Eye of the Jailer (Normal / Heroic)
+	q(64657),	-- Eye of the Jailer (Normal / Heroic)
+	q(64632),	-- Eye of the Jailer (Heroic)
+
+	q(64334),	-- The Nine (Normal / Heroic)
+	q(64474),	-- The Nine (Normal / Heroic)
+	q(64631),	-- The Nine (Normal / Heroic)
+	q(64658),	-- The Nine (Normal / Heroic)
+	q(64475),	-- The Nine (Heroic)
+
+	q(64481),	-- Soulrender Dormazain (Normal / Heroic)
+	q(64482),	-- Soulrender Dormazain (Normal / Heroic)
+	q(64633),	-- Soulrender Dormazain (Normal / Heroic)
+	q(64660),	-- Soulrender Dormazain (Normal / Heroic)
+	q(64483), 	-- Soulrender Dormazain (Heroic)
+
+	q(64608),	-- Garrosh cinematic (Normal / Heroic)
+
+	q(64477),	-- Remnant of Ner'zhul (Normal / Heroic)
+	q(64478),	-- Remnant of Ner'zhul (Normal / Heroic)
+	q(64632),	-- Remnant of Ner'zhul (Normal / Heroic)
+	q(64659),	-- Remnant of Ner'zhul (Normal / Heroic)
+	q(64479),	-- Remnant of Ner'zhul (Heroic)
+
+	q(64485),	-- Painsmith Raznal (Normal / Heroic)
+	q(64486),	-- Painsmith Raznal (Normal / Heroic)
+	q(64634),	-- Painsmith Raznal (Normal / Heroic)
+	q(64661),	-- Painsmith Raznal (Normal / Heroic)
+	q(64487),	-- Painsmith Raznal (Heroic)
+
+	q(64489),	-- Guardian of the First Ones (Normal / Heroic)
+	q(64490),	-- Guardian of the First Ones (Normal / Heroic)
+	q(64635),	-- Guardian of the First Ones (Normal / Heroic)
+	q(64662),	-- Guardian of the First Ones (Normal / Heroic)
+	q(94491),	-- Guardian of the First Ones (Heroic)
+	
+	q(64493),	-- Fatescribe Roh-Kalo (Normal)?
+	q(64494),	-- Fatescribe Roh-Kalo (Normal)?
+	q(64663),	-- Fatescribe Roh-Kalo (Normal)?
+	q(64663),	-- Fatescribe Roh-Kalo (Normal)?
+	
+	q(64497),	-- Kel'Thuzad (Normal)?
+	q(64498),	-- Kel'Thuzad (Normal)?
+	q(64637),	-- Kel'Thuzad (Normal)?
+	q(64664),	-- Kel'Thuzad (Normal)?
+	
+	q(64501),	-- Sylvanas Windrunner (Normal)?
+	q(64502),	-- Sylvanas Windrunner (Normal)?
+	q(64638),	-- Sylvanas Windrunner (Normal)?
+	q(64665),	-- Sylvanas Windrunner (Normal)?
+	
+	q(64707),	-- Sylvanas Windrunner Cinematic?
+};
