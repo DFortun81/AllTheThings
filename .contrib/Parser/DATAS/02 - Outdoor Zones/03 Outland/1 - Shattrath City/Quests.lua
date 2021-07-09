@@ -600,7 +600,7 @@ _.Zones =
 				q(11354, {	-- WANTED: Nazan's Riding Crop
 					["provider"] = { "n", 24369 },	-- Wind Trader Zhareem
 					["coord"] = { 75, 37, SHATTRATH_CITY },
-					["maps"] = { HELLFIRE_RAMPARTS },
+					["maps"] = { HELLFIRE_CITADEL_RAMPARTS },
 					["isDaily"] = true,
 					["cost"] = {
 						{ "i", 33833, 1 },	-- Nazan's Riding Crop
