@@ -1647,3 +1647,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(55338),	-- Vehicle: TK20[DNT]
 	}),
 });
+_.HiddenQuestTriggers = {
+	q(55480),	-- After charging very first Energy Cell during quest Your First Charge is Free!(56320)
+};

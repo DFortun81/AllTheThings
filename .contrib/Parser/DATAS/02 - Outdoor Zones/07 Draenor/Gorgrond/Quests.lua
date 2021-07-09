@@ -1285,6 +1285,12 @@ _.Zones =
 						34335,	-- Garrison Campaign: Crows In The Field
 					},
 				}),
+				q(36383, {	-- Assault on the Pit (A) (bonus objectives)
+					["coord"] = { 48.4, 25.8 },
+				}),
+				q(36489, {	-- Assault on the Pit (H) (bonus objectives)
+					["coord"] = { 48.4, 25.8 },
+				}),
 				q(35016, {	-- Basic Skulltaking
 					["provider"] = { "n", 81218 },	-- Grulkor
 					["coord"] = { 54.4, 66.6, 543 },

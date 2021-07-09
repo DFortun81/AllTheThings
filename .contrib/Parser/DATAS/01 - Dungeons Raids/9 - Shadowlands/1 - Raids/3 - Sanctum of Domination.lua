@@ -1120,6 +1120,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(186353),	-- Greaves of Haunting Ruination
 						i(186377),	-- Tarnished Insignia of Quel'Thalas
 						i(186438),	-- Old Warrior's Soul
+						i(187592),	-- Wraithwisp Sinew (Upgrade Legendary)
 					},
 				}),
 			}),
@@ -1475,10 +1476,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(186353),	-- Greaves of Haunting Ruination
 						i(186377),	-- Tarnished Insignia of Quel'Thalas
 						i(186438),	-- Old Warrior's Soul
+						i(187593),	-- Ethereal Fletching (Upgrade Legendary)
 					},
 				}),
 			}),
-		--]]
 		},
 	}),
 })};
