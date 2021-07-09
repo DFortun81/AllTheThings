@@ -92,9 +92,9 @@ _.ExpansionFeatures =
 					},
 				}),
 				i(187040, {	-- Twin-Scythe Spaulders
-					["crs"] = {
+					-- ["crs"] = {
 					--	no drop data yet, just reported by players
-					},
+					-- },
 				}),
 				i(187045, {	-- Veiled Tormentor's Mantle
 					["crs"] = {

@@ -441,7 +441,7 @@ _.ExpansionFeatures =
 						["maps"] = { WESTERN_PLAGUELANDS },
 					}),
 					q(45561, {	-- Seek Me Out
-						["sourceQuests"] = { },	-- TBD
+						-- ["sourceQuests"] = { },	-- TODO
 						["classes"] = { PALADIN },
 					}),
 					q(42000, {	-- Seeker of Truth

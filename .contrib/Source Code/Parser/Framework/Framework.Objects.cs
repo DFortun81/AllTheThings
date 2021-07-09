@@ -1326,6 +1326,12 @@ namespace ATT
 
                 // Sort the old list to ensure that the order is consistent.
                 oldList.Sort();
+
+                if (oldList.Count == 0)
+                {
+                    Trace.WriteLine("int-array field: '" + field + "' contained no data after merge.");
+                    Trace.WriteLine(MiniJSON.Json.Serialize(item));
+                }
             }
 
             /// <summary>
@@ -1365,6 +1371,12 @@ namespace ATT
                     }
                     if (oldList.Contains(index)) continue;
                     oldList.Add(index);
+                }
+
+                if (oldList.Count == 0)
+                {
+                    Trace.WriteLine("string-array field: '" + field + "' contained no data after merge.");
+                    Trace.WriteLine(MiniJSON.Json.Serialize(item));
                 }
             }
 

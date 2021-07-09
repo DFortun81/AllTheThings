@@ -95,7 +95,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 							},
 						}),
 						e(2439, {	-- The Nine
-						--	["crs"] = {  },	-- 
+						--	["crs"] = {  },	--
 							["g"] = {
 								crit(3, {	-- The Nine
 									["achievementID"] = 15126,	-- Sanctum of Domination
@@ -132,7 +132,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					["collectible"] = false,
 					["g"] = {
 						e(2444, {	-- Remnant of Ner'zhul
-						--	["crs"] = {  },	-- 
+						--	["crs"] = {  },	--
 							["g"] = {
 								crit(4, {	-- Remnant of Ner'zhul
 									["achievementID"] = 15126,	-- Sanctum of Domination
@@ -181,7 +181,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 								i(186599),	-- Stygian Ember
 								i(182107),	-- Vital Accretion
 								i(186407),	-- Hellscream's Requiem
-								i(186387),	-- Dormazain's Tenderizer 
+								i(186387),	-- Dormazain's Tenderizer
 								i(186411),	-- Soulrent Outrider's Recurve
 								i(186305),	-- Pauldrons of Tyrannical Defiance
 								i(186314),	-- Ruinous Warchief's Shoulderguards
@@ -195,7 +195,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 							},
 						}),
 						e(2443, {	-- Painsmith Raznal
-						--	["crs"] = {  },	-- 
+						--	["crs"] = {  },	--
 							["g"] = {
 								crit(6, {	-- Painsmith Raznal
 									["achievementID"] = 15126,	-- Sanctum of Domination
@@ -232,7 +232,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					["collectible"] = false,
 					["g"] = {
 						e(2446, {	-- Guardian of the First Ones
-						--	["crs"] = {  },	-- 
+						--	["crs"] = {  },	--
 							["g"] = {
 								crit(7, {	-- Guardian of the First Ones
 									["achievementID"] = 15126,	-- Sanctum of Domination
@@ -265,7 +265,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 							},
 						}),
 						e(2447, {	-- Fatescribe Roh-Kalo
-						--	["crs"] = {  },	-- 
+						--	["crs"] = {  },	--
 							["g"] = {
 								crit(8, {	-- Fatescribe Roh-Kalo
 									["achievementID"] = 15126,	-- Sanctum of Domination
@@ -296,7 +296,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 							},
 						}),
 						e(2440, {	-- Kel'Thuzad
-						--	["crs"] = {  },	-- 
+						--	["crs"] = {  },	--
 							["g"] = {
 								crit(9, {	-- Kel'Thuzad
 									["achievementID"] = 15126,	-- Sanctum of Domination
@@ -336,7 +336,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					["collectible"] = false,
 					["g"] = {
 						e(2441, {	-- Sylvanas Windrunner
-						--	["crs"] = {  },	-- 
+						--	["crs"] = {  },	--
 							["g"] = {
 								crit(10, {	-- Sylvanas Windrunner
 									["achievementID"] = 15126,	-- Sanctum of Domination
@@ -373,7 +373,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 			}),
 			d(14, {	-- Normal
 				n(QUESTS, {
-					q(64597, {	-- Sanctum of Domination - Damned If You Don't
+					q(64597, {	-- Sanctum of Domination - Damned If You Don't [N]
 					--	TODO: add Mythic quest (not listed on WH), add providers for all quests, add altQuests and description (see WoD/Legion raids) if quests are mutually exclusive per character
 					--	["provider"] = { "n",  },	--
 					}),
@@ -459,7 +459,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2439, {	-- The Nine
-				--	["crs"] = {  },	-- 
+				--	["crs"] = {  },	--
 					["g"] = {
 						crit(3, {	-- The Nine
 							["achievementID"] = 15126,	-- Sanctum of Domination
@@ -492,7 +492,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2444, {	-- Remnant of Ner'zhul
-				--	["crs"] = {  },	-- 
+				--	["crs"] = {  },	--
 					["g"] = {
 						crit(4, {	-- Remnant of Ner'zhul
 							["achievementID"] = 15126,	-- Sanctum of Domination
@@ -543,7 +543,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(186599),	-- Stygian Ember
 						i(182107),	-- Vital Accretion
 						i(186407),	-- Hellscream's Requiem
-						i(186387),	-- Dormazain's Tenderizer 
+						i(186387),	-- Dormazain's Tenderizer
 						i(186411),	-- Soulrent Outrider's Recurve
 						i(186305),	-- Pauldrons of Tyrannical Defiance
 						i(186314),	-- Ruinous Warchief's Shoulderguards
@@ -557,7 +557,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2443, {	-- Painsmith Raznal
-				--	["crs"] = {  },	-- 
+				--	["crs"] = {  },	--
 					["g"] = {
 						crit(6, {	-- Painsmith Raznal
 							["achievementID"] = 15126,	-- Sanctum of Domination
@@ -590,7 +590,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2446, {	-- Guardian of the First Ones
-				--	["crs"] = {  },	-- 
+				--	["crs"] = {  },	--
 					["g"] = {
 						crit(7, {	-- Guardian of the First Ones
 							["achievementID"] = 15126,	-- Sanctum of Domination
@@ -624,7 +624,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2447, {	-- Fatescribe Roh-Kalo
-				--	["crs"] = {  },	-- 
+				--	["crs"] = {  },	--
 					["g"] = {
 						crit(8, {	-- Fatescribe Roh-Kalo
 							["achievementID"] = 15126,	-- Sanctum of Domination
@@ -656,7 +656,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2440, {	-- Kel'Thuzad
-				--	["crs"] = {  },	-- 
+				--	["crs"] = {  },	--
 					["g"] = {
 						crit(9, {	-- Kel'Thuzad
 							["achievementID"] = 15126,	-- Sanctum of Domination
@@ -692,7 +692,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2441, {	-- Sylvanas Windrunner
-				--	["crs"] = {  },	-- 
+				--	["crs"] = {  },	--
 					["g"] = {
 						crit(10, {	-- Sylvanas Windrunner
 							["achievementID"] = 15126,	-- Sanctum of Domination
@@ -730,6 +730,11 @@ _.Instances = { tier(9, {	-- Shadowlands
 				}),
 			}),
 			d(15, {	-- Heroic
+				n(QUESTS, {
+					q(64598, {	-- Sanctum of Domination - Damned If You Don't [H]
+					--	["provider"] = { "n",  },	--
+					}),
+				}),
 				n(ZONEDROPS, {
 					i(186371),	-- Ancient Brokensoul Bands
 					i(186362),	-- Bindings of the Subjugated
@@ -739,11 +744,6 @@ _.Instances = { tier(9, {	-- Shadowlands
 					i(186359),	-- Scoundrel's Harrowed Leggings
 					i(186358),	-- Soulcaster's Woven Grips
 					i(186373),	-- Towering Shadowghast Greatboots
-				}),
-				n(QUESTS, {
-					q(64598, {	-- Sanctum of Domination - Damned If You Don't
-					--	["provider"] = { "n",  },	--
-					}),
 				}),
 				e(2435, {	-- The Tarragrue
 					["crs"] = { 175611 },	-- The Tarragrue
@@ -816,7 +816,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2439, {	-- The Nine
-				--	["crs"] = {  },	-- 
+				--	["crs"] = {  },	--
 					["g"] = {
 						crit(3, {	-- The Nine
 							["achievementID"] = 15127,	-- Heroic: Sanctum of Domination
@@ -849,7 +849,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2444, {	-- Remnant of Ner'zhul
-				--	["crs"] = {  },	-- 
+				--	["crs"] = {  },	--
 					["g"] = {
 						crit(5, {	-- Remnant of Ner'zhul
 							["achievementID"] = 15127,	-- Heroic: Sanctum of Domination
@@ -900,7 +900,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(186599),	-- Stygian Ember
 						i(182107),	-- Vital Accretion
 						i(186407),	-- Hellscream's Requiem
-						i(186387),	-- Dormazain's Tenderizer 
+						i(186387),	-- Dormazain's Tenderizer
 						i(186411),	-- Soulrent Outrider's Recurve
 						i(186305),	-- Pauldrons of Tyrannical Defiance
 						i(186314),	-- Ruinous Warchief's Shoulderguards
@@ -914,7 +914,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2443, {	-- Painsmith Raznal
-				--	["crs"] = {  },	-- 
+				--	["crs"] = {  },	--
 					["g"] = {
 						crit(6, {	-- Painsmith Raznal
 							["achievementID"] = 15127,	-- Heroic: Sanctum of Domination
@@ -947,7 +947,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2446, {	-- Guardian of the First Ones
-				--	["crs"] = {  },	-- 
+				--	["crs"] = {  },	--
 					["g"] = {
 						crit(7, {	-- Guardian of the First Ones
 							["achievementID"] = 15127,	-- Heroic: Sanctum of Domination
@@ -981,7 +981,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2447, {	-- Fatescribe Roh-Kalo
-				--	["crs"] = {  },	-- 
+				--	["crs"] = {  },	--
 					["g"] = {
 						crit(8, {	-- Fatescribe Roh-Kalo
 							["achievementID"] = 15127,	-- Heroic: Sanctum of Domination
@@ -1013,7 +1013,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2440, {	-- Kel'Thuzad
-				--	["crs"] = {  },	-- 
+				--	["crs"] = {  },	--
 					["g"] = {
 						crit(9, {	-- Kel'Thuzad
 							["achievementID"] = 15127,	-- Heroic: Sanctum of Domination
@@ -1049,7 +1049,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2441, {	-- Sylvanas Windrunner
-				--	["crs"] = {  },	-- 
+				--	["crs"] = {  },	--
 					["g"] = {
 						crit(10, {	-- Sylvanas Windrunner
 							["achievementID"] = 15127,	-- Heroic: Sanctum of Domination
@@ -1088,6 +1088,11 @@ _.Instances = { tier(9, {	-- Shadowlands
 				}),
 			}),
 			d(16, {	-- Mythic
+				n(QUESTS, {
+					-- q(, {	-- Sanctum of Domination - Damned If You Don't [M]
+					-- --	["provider"] = { "n",  },	--
+					-- }),
+				}),
 				n(ZONEDROPS, {
 					i(186371),	-- Ancient Brokensoul Bands
 					i(186362),	-- Bindings of the Subjugated
@@ -1166,7 +1171,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2439, {	-- The Nine
-				--	["crs"] = {  },	-- 
+				--	["crs"] = {  },	--
 					["g"] = {
 						ach(15114),	-- Mythic: The Nine
 						ach(15003),	-- To the Nines
@@ -1197,7 +1202,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2444, {	-- Remnant of Ner'zhul
-				--	["crs"] = {  },	-- 
+				--	["crs"] = {  },	--
 					["g"] = {
 						ach(15115),	-- Mythic: Remnant of Ner'zhul
 						ach(15058),	-- I Used to Bullseye Deeprun Rats Back Home
@@ -1244,7 +1249,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(186599),	-- Stygian Ember
 						i(182107),	-- Vital Accretion
 						i(186407),	-- Hellscream's Requiem
-						i(186387),	-- Dormazain's Tenderizer 
+						i(186387),	-- Dormazain's Tenderizer
 						i(186411),	-- Soulrent Outrider's Recurve
 						i(186305),	-- Pauldrons of Tyrannical Defiance
 						i(186314),	-- Ruinous Warchief's Shoulderguards
@@ -1258,7 +1263,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2443, {	-- Painsmith Raznal
-				--	["crs"] = {  },	-- 
+				--	["crs"] = {  },	--
 					["g"] = {
 						ach(15117),	-- Mythic: Painsmith Raznal
 						ach(15131),	-- Whack-A-Soul
@@ -1289,7 +1294,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2446, {	-- Guardian of the First Ones
-				--	["crs"] = {  },	-- 
+				--	["crs"] = {  },	--
 					["g"] = {
 						ach(15118),	-- Mythic: Guardian of the First Ones
 						ach(15132),	-- Knowledge is Power
@@ -1321,7 +1326,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2447, {	-- Fatescribe Roh-Kalo
-				--	["crs"] = {  },	-- 
+				--	["crs"] = {  },	--
 					["g"] = {
 						ach(15119),	-- Mythic: Fatescribe Roh-Kalo
 						ach(15040),	-- Flawless Fate
@@ -1351,7 +1356,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2440, {	-- Kel'Thuzad
-				--	["crs"] = {  },	-- 
+				--	["crs"] = {  },	--
 					["g"] = {
 						ach(15120),	-- Mythic: Kel'Thuzad
 						ach(15108),	-- Together Forever
@@ -1385,7 +1390,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					},
 				}),
 				e(2441, {	-- Sylvanas Windrunner
-				--	["crs"] = {  },	-- 
+				--	["crs"] = {  },	--
 					["g"] = {
 						ach(15121, {	-- Mythic: Sylvanas Windrunner
 							title(447),	-- Breaker of Chains

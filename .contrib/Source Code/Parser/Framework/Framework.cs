@@ -488,6 +488,13 @@ namespace ATT
             // Cache whether or not this entry had an explicit spellID assignment already.
             bool hasSpellID = data.ContainsKey("spellID");
 
+            // Remove any fields which contain 'empty' data
+            if (data.TryGetValue("customCollect", out List<object> cc))
+            {
+                if (cc.Count == 0)
+                    data.Remove("customCollect");
+            }
+
             // Merge all relevant Item Data into the data container.
             Items.Merge(data);
             Items.MergeInto(data);
