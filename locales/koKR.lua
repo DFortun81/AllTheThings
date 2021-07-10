@@ -2993,8 +2993,8 @@ for key,value in pairs({
 	[369340] = "코르시아 유물 상자",	-- Korthian Relic Box
 	[369341] = "나락살이 보관함",	-- Mawsworn Cache
 	[369437] = "균열결속 보관함",	-- Riftbound Cache
-	--TODO: [369438] = "Riftbound Cache",	-- Riftbound Cache
-	--TODO: [369439] = "Riftbound Cache",	-- Riftbound Cache
+	[369438] = "균열결속 보관함",	-- Riftbound Cache
+	[369439] = "균열결속 보관함",	-- Riftbound Cache
 	[369440] = "균열결속 보관함",	-- Riftbound Cache
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only
