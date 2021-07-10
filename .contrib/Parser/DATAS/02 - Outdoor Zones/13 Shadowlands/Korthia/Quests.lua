@@ -511,6 +511,18 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 64.7, 25.6, KORTHIA },
 				}),
+				q(63789, {	-- Continued Efforts: Scholar's Den
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
+					["provider"] = { "n", 178807 },	-- Alexandros Mograine
+					["isDaily"] = true,
+					["coord"] = { 60.4, 28.5, KORTHIA },
+				}),
+				q(63775, {	-- Cryptograms and Keys
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
+					["provider"] = { "n", 179082 },	-- Tal-Rahl
+					["isDaily"] = true,
+					["coord"] = { 64.1, 23.0, KORTHIA },
+				}),
 				q(63782, {	-- Mawsworn Rituals
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178799 },	-- Arios Riftbearer
@@ -558,6 +570,12 @@ _.Zones =
 					["provider"] = { "n", 178837 },	-- Lord Herne
 					["isDaily"] = true,
 					["coord"] = { 61.3, 21.3, KORTHIA },
+				}),
+				q(63961, {	-- Sealed Secrets
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
+					["provider"] = { "n", 178845 },	-- Ve'lonu
+					["isDaily"] = true,
+					["coord"] = { 64.6, 25.4, KORTHIA },
 				}),
 				q(63780, {	-- See How THEY Like It!
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
@@ -646,23 +664,11 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 61.7, 23.7, KORTHIA },
 				}),
-				q(63789, {	-- Continued Efforts: Scholar's Den
-					["sourceQuests"] = { 64556 },	-- In Need of Assistance
-					["provider"] = { "n", 178807 },	-- Alexandros Mograine
-					["isDaily"] = true,
-					["coord"] = { 60.4, 28.5, KORTHIA },
-				}),
 				q(63785, {	-- Continued Efforts: Seeker's Quorum
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178841 },	-- Hunt-Captain Korayn
 					["isDaily"] = true,
 					["coord"] = { 60.9, 21.7, KORTHIA },
-				}),
-				q(63775, {	-- Cryptograms and Keys
-					["sourceQuests"] = { 64556 },	-- In Need of Assistance
-					["provider"] = { "n", 179082 },	-- Tal-Rahl
-					["isDaily"] = true,
-					["coord"] = { 64.1, 23.0, KORTHIA },
 				}),
 				q(63936, {	-- Devoured Anima
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
@@ -796,12 +802,6 @@ _.Zones =
 					["coord"] = { 64.6, 25.4, KORTHIA },
 				}),
 				q(63956, {	-- Sealed Secrets
-					["sourceQuests"] = { 64556 },	-- In Need of Assistance
-					["provider"] = { "n", 178845 },	-- Ve'lonu
-					["isDaily"] = true,
-					["coord"] = { 64.6, 25.4, KORTHIA },
-				}),
-				q(63961, {	-- Sealed Secrets
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178845 },	-- Ve'lonu
 					["isDaily"] = true,

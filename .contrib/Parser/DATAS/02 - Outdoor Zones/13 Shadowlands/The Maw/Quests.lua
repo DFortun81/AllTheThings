@@ -1020,6 +1020,7 @@ _.Zones =
 };
 
 _.HiddenQuestTriggers = {
+	q(64126),	-- triggered when killing Dathlane the Herald, WotJ boss - TODO - move questIDs to individual bosses if they've been separated since they have new drops
 	q(62907),	-- triggered after collecting all stygia during "Rule 1: Have an Escape Plan" (triggers dialogue from The Jailer + the Eye of the Jailer counter...thing)
 	-- these seem shared... ? some sort of incremental counter?
 	q(64692),	-- triggered when killing Manifestation of Pain / Zul'gath the Flayer
@@ -1029,7 +1030,7 @@ _.HiddenQuestTriggers = {
 	q(64696),	-- triggered when killing Promathiz / Sentinel Shakorzeth
 	q(64697),	-- triggered when killing Malleus Grakizz / Sentinel Shakorzeth / Versya the Damned
 	q(64698),	-- triggered when killing Intercessor Razzra / Zul'gath the Flayer (4th Tormentor of week?)
-
+	q(64120),	-- triggered when killing Versya the Damned
 	-- q(64121),	-- triggered when killing Sentinel Shakorzeth (somehow it + Kazj the Sentinel were both up at once, this was only after killing Shakorzeth, and then Kazj did not trigger an additional questID at all)
 };
 
@@ -1040,7 +1041,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		}),
 	}),
 	n(QUESTS, {
-		q(64126),	-- triggered when killing Dathlane the Herald, WotJ boss - TODO - move questIDs to individual bosses if they've been separated since they have new drops
 		q(60902),	-- A Dark Song
 		q(61496),	-- A Familiar Energy
 		q(60141),	-- Coldheart Interstitia
