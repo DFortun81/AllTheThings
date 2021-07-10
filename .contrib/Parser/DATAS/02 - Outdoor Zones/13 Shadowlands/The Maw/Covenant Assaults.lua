@@ -361,7 +361,7 @@ _.Zones =
 								["questID"] = 64209,
 								["isDaily"] = true,
 								["coords"] = {
-									{ 27.7, 61.6, THE_MAW },
+									{ 27.7, 61.6, THE_MAW },	-- found ring here once 9.1 went live, not sure if other coord is still accurate
 									{ 35.1, 69.7, THE_MAW },
 								},
 								["g"] = {
@@ -391,7 +391,8 @@ _.Zones =
 							o(368214, {	-- Mawsworn Cache
 								["questID"] = 63826,
 								["isDaily"] = true,
-								["coord"] = { 32.0, 56.3, THE_MAW },
+							--	["coord"] = { 32.0, 56.3, THE_MAW }, old coord?
+								["coord"] = { 33.8, 57.3, THE_MAW },
 							}),
 							i(186603, {	-- Nilganihmaht's Stone Ring
 								["cost"] = {
@@ -404,6 +405,7 @@ _.Zones =
 							o(369143, {	-- Quartered Ancient Ring
 								["description"] = "This ring can be found in Perdition Hold once you've looted another |cFF1eff00Quartered Ancient Ring|r.",
 								["coords"] = {
+									{ 30.8, 58.3, THE_MAW },
 									{ 33.7, 66.2, THE_MAW },
 									{ 34.6, 59.7, THE_MAW },
 								},
@@ -412,7 +414,12 @@ _.Zones =
 								},
 							}),
 							i(186602, {	-- Quartered Ancient Ring
-								["description"] = "Mad Maw Construct will spawn in Perdition Hold once you've looted another |cFF1eff00Quartered Ancient Ring|r.  Kill it before it reaches Seeker Xeros's tower, or it will despawn.",
+								["description"] = "Mad Maw Construct will spawn in or around Perdition Hold once you've looted another |cFF1eff00Quartered Ancient Ring|r.  Once it spawns, you have a short amount of time to kill it before it despawns.",
+								["coords"] = {
+									{ 27.0, 57.0, THE_MAW },
+									{ 33.0, 57.0, THE_MAW },
+									{ 33.0, 71.0, THE_MAW },
+								},
 								["cr"] = 179601,	-- Mad Maw Construct
 							}),
 						}),
