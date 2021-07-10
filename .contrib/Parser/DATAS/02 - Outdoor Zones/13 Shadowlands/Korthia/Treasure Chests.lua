@@ -220,6 +220,7 @@ _.Zones =
 						["questID"] = 64021,
 						["isDaily"] = true,
 						["coords"] = {
+							{ 57.6, 37.6, KORTHIA },
 							{ 58.8, 33.6, KORTHIA },
 							{ 60.2, 39.1, KORTHIA },
 							{ 62.9, 34.9, KORTHIA },
