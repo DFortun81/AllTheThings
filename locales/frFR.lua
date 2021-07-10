@@ -2884,7 +2884,7 @@ for key,value in pairs({
 	[356712] = "Tribut extravagant du capitaine de l’Hallali Korayn",	-- Hunt-Captain Korayn's Extravagant Tribute
 	[356716] = "Tribut extravagant de la dromane Aliothe",	-- Droman Aliothe's Extravagant Tribute
 	[356720] = "Tribut extravagant de Choufa",	-- Choofa's Extravagant Tribute
-	--TODO: [356725] = "Polemarch Adrestes' Extravagant Tribute",	-- Polemarch Adrestes' Extravagant Tribute
+	[356725] = "Tribut extravagant du marchedroit Adrestès",	-- Polemarch Adrestes' Extravagant Tribute
 	[356728] = "Tribut extravagant de Mikanikos",	-- Mikanikos' Extravagant Tribute
 	[356733] = "Tribut extravagant de Kléia et Pélagos",	-- Kleia and Pelagos' Extravagant Tribute
 	[356737] = "Tribut extravagant de Sika",	-- Sika's Extravagant Tribute
