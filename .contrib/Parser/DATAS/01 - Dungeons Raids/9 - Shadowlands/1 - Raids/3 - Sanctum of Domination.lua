@@ -4,7 +4,6 @@
 
 _.Instances = { tier(9, {	-- Shadowlands
 	inst(1193, {	-- Sanctum of Domination
-	--	TODO: add maps
 		["isRaid"] = true,
 		["coord"] = { 69.8, 31.8, THE_MAW },
 		["order"] = "02",
@@ -99,7 +98,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 								-- Main bosses
 								177094,	-- Signe
 								177095,	-- Kyra
-								177094,	-- Signe
+								175726,	-- Skyja
 								-- "adds"
 								177100,	-- Aradne
 								177099,	-- Daschla
@@ -475,7 +474,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						-- Main bosses
 						177094,	-- Signe
 						177095,	-- Kyra
-						177094,	-- Signe
+						175726,	-- Skyja
 						-- "adds"
 						177100,	-- Aradne
 						177099,	-- Daschla
@@ -844,7 +843,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						-- Main bosses
 						177094,	-- Signe
 						177095,	-- Kyra
-						177094,	-- Signe
+						175726,	-- Skyja
 						-- "adds"
 						177100,	-- Aradne
 						177099,	-- Daschla
@@ -1212,7 +1211,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						-- Main bosses
 						177094,	-- Signe
 						177095,	-- Kyra
-						177094,	-- Signe
+						175726,	-- Skyja
 						-- "adds"
 						177100,	-- Aradne
 						177099,	-- Daschla
@@ -1559,21 +1558,21 @@ _.HiddenQuestTriggers = {
 	q(64635),	-- Guardian of the First Ones (Normal / Heroic)
 	q(64662),	-- Guardian of the First Ones (Normal / Heroic)
 	q(94491),	-- Guardian of the First Ones (Heroic)
-	
+
 	q(64493),	-- Fatescribe Roh-Kalo (Normal)?
 	q(64494),	-- Fatescribe Roh-Kalo (Normal)?
 	q(64663),	-- Fatescribe Roh-Kalo (Normal)?
 	q(64663),	-- Fatescribe Roh-Kalo (Normal)?
-	
+
 	q(64497),	-- Kel'Thuzad (Normal)?
 	q(64498),	-- Kel'Thuzad (Normal)?
 	q(64637),	-- Kel'Thuzad (Normal)?
 	q(64664),	-- Kel'Thuzad (Normal)?
-	
+
 	q(64501),	-- Sylvanas Windrunner (Normal)?
 	q(64502),	-- Sylvanas Windrunner (Normal)?
 	q(64638),	-- Sylvanas Windrunner (Normal)?
 	q(64665),	-- Sylvanas Windrunner (Normal)?
-	
+
 	q(64707),	-- Sylvanas Windrunner Cinematic?
 };
