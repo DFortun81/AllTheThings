@@ -10,6 +10,10 @@ _.ExpansionFeatures =
 			["icon"] = 3642306,
 			["maps"] = {
 				-- Tracking which mapID is which Zone name might not be necessary for Layer/Floor since they seem to be repeated within the Named 'Tower'
+				1969,	-- Adamant Vaults - Floor 6
+				1966,	-- Adamant Vaults - Floor 7 (Lower)
+				1965,	-- Adamant Vaults - Floor 7 (Upper)
+				--
 				1769,	-- Arkoban Hall - Floor 6 / Skoldus Hall - Layer 1, Floor 6 / Layer 2, Floor 6 / Layer 3, Floor 6
 				--
 				1779,	-- Coldheart Interstitia - Layer 1, Floor 1
