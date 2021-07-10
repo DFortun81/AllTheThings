@@ -13,6 +13,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 			1992,	-- The Speak Easy
 			1995,	-- Stormheim
 			1997,	-- Aggramar's Vault
+			1993,	-- The Opulent Nexus
 		--	,	-- Boralus
 		--	,	-- The Upper City
 		},
@@ -66,6 +67,12 @@ _.Instances = { tier(9, {	-- Shadowlands
 					["sourceQuests"] = { 63985 },	-- The Veiled Market
 					["provider"] = { "n", 178908 },	-- Al'dalil
 					["coord"] = { 86.7, 48.3, 2016 },
+				}),
+				q(64607, {	-- Tazavesh: A Hard Bargain
+					["description"] = "Requires the 'On Use' effect of the neck to be able to accept the quest.",
+					["sourceQuests"] = { 63985 },	-- The Veiled Market
+					["provider"] = { "n", 180750 },	-- ??
+					["cost"] = { { "i", 185954, 1 } },	-- Passably-Forged Credentials
 				}),
 			}),
 			n(VENDORS, {
@@ -228,7 +235,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						},
 					}),
 					e(2449, {	-- Timecap'n Hooktail
-					--	["crs"] = {  },	-- 
+					--	["crs"] = {  },	--
 						["g"] = {
 							i(181498),	-- Grounding Surge
 							i(181975),	-- Hardened Bones
@@ -246,7 +253,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 						},
 					}),
 					e(2455, {	-- So'leah
-					--	["crs"] = {  },	-- 
+					--	["crs"] = {  },	--
 						["g"] = {
 							ach(15178, {	-- Fake It 'Til You Make It
 								i(186637),	-- Tazavesh Gearglider (MOUNT!)
