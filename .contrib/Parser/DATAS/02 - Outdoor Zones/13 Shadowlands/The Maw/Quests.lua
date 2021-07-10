@@ -337,6 +337,7 @@ _.Zones =
 								["questID"] = 63414,
 								["g"] = {
 									i(186232),	-- Phantom-Stalker's Legplates
+									i(186216),	-- Zograthos' Visage
 								},
 							}),
 						},

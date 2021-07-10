@@ -17,6 +17,9 @@ profession(LEATHERWORKING, {
 				recipe(338264),	-- Tortured Sole
 			})),
 			category(1335, {	-- Other
+				recipe(355354, {	-- Elusive Pet Treat
+					["name"] = "Elusive Pet Treat",
+				}),
 				recipe(354800, {	-- Pallid Bone Flute
 					["name"] = "Pallid Bone Flute",
 				}),

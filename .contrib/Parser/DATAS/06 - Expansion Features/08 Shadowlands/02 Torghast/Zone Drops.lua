@@ -13,6 +13,11 @@ _.ExpansionFeatures =
 						155945,	-- Gherus the Chained
 					},
 				}),
+				i(187081, {	-- Blackflame Skull Crescent
+					["crs"] = {
+						179526,	-- Troz'igal the Oppressor
+					},
+				}),
 				i(187044, {	-- Deathbringer's Epaulettes
 					["crs"] = {
 						151331,	-- Cellblock Sentinel
@@ -23,6 +28,22 @@ _.ExpansionFeatures =
 				i(187030, {	-- Deathsworn Shoulderguards
 					["crs"] = {
 						151329,	-- Warden Skoldus
+					},
+				}),
+				i(187093, {	-- Gilded Ornamental Mantle
+					["crs"] = {
+						179433,	-- Vault Aegis
+						176578,	-- Vault Sentinel
+					},
+				}),
+				i(187091, {	-- Gilded Twin-Scythe Shoulders
+					["crs"] = {
+						179526,	-- Troz'igal the Oppressor
+					},
+				}),
+				i(187084, {	-- Jailer's Eye Crescent
+					["crs"] = {
+						179526,	-- Troz'igal the Oppressor
 					},
 				}),
 				i(187039, {	-- Malleare's Stygian Pauldrons

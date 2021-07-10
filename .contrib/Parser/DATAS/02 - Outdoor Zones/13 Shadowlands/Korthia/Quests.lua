@@ -553,10 +553,8 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 60.5, 27.6, KORTHIA },
 					["g"] = {
-						ach(15055),		-- Friend of Ooz
-						i(185019, {	-- Rogue Necromancer's Drape
-							["customCollect"] = "SL_COV_NEC",	-- Necrolord
-						}),
+						ach(15055),	-- Friend of Ooz
+						i(187000),	-- Pattern: Elusive Pet Treat
 					},
 				}),
 				q(63935, {	-- Precious Roots
