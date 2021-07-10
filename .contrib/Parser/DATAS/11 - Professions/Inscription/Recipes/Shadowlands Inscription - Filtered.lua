@@ -67,6 +67,14 @@ profession(INSCRIPTION, {
 						},
 					},
 				},
+				category(1416, {	-- Vantus Runes
+					recipe(311453, {	-- Vantus Rune: Castle Nathria
+						["name"] = "Castle Nathria",
+					}),
+					recipe(354394, {	-- Vantus Rune: Sanctum of Domination
+						["name"] = "Sanctum of Domination",
+					}),
+				}),
 			},
 		},
 	}),

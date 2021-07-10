@@ -14,6 +14,27 @@ _.Instances = { tier(9, {	-- Shadowlands
 			2001,	-- TorghastRaidD
 		},
 		["g"] = {
+			n(COMMON_BOSS_DROPS, {
+				i(186671, {	-- Vantus Rune Technique: Sanctum of Domination
+					["crs"] = {
+						175611,	-- The Tarragrue
+						175725,	-- Eye of the Jailer
+						176531,	-- Deathseeker Eye
+						177094,	-- Signe
+						177095,	-- Kyra
+						175726,	-- Skyja
+						177100,	-- Aradne
+						177099,	-- Daschla
+						177096,	-- Agatha
+						177101,	-- Bryjna
+						177097,	-- Annhylde
+						177098,	-- Arthura
+						175729,	-- Remnant of Ner'zhul
+						175727,	-- Soulrender Dormazain
+						175731,	-- Guardian of the First Ones
+					},
+				}),
+			}),
 			d(17, {	-- LFR
 				n(ZONEDROPS, {
 					i(186371),	-- Ancient Brokensoul Bands
