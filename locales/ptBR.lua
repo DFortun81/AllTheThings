@@ -2881,7 +2881,7 @@ for key,value in pairs({
 	--TODO: [356697] = "Alexandros Mograine's Extravagant Tribute",	-- Alexandros Mograine's Extravagant Tribute
 	[356700] = "Tributo Extravagante do Grão-mestre Vole",	-- Grandmaster Vole's Extravagant Tribute
 	[356705] = "Tributo Extravagante do Arquiteto da Peste Marileth",	-- Plague Deviser Marileth's Extravagant Tribute
-	--TODO: [356709] = "Lady Moonberry's Extravagant Tribute",	-- Lady Moonberry's Extravagant Tribute
+	[356709] = "Tributo Extravagante da Lady Lunamora",	-- Lady Moonberry's Extravagant Tribute
 	[356712] = "Tributo Extravagante da Capitã de Caça Korayn",	-- Hunt-Captain Korayn's Extravagant Tribute
 	[356716] = "Tributo Extravagante da Droman Aliothe",	-- Droman Aliothe's Extravagant Tribute
 	[356720] = "Tributo Extravagante de Xufa",	-- Choofa's Extravagant Tribute
