@@ -58,6 +58,8 @@ _.ExpansionFeatures =
 				1757,	-- Mort'regar - Layer 2, Floor 5
 				1781,	-- Mort'regar - Layer 2, Floor 6
 				--
+				1987,	-- Mort'regar -- Layer/Floor?
+				--
 				1810,	-- Skoldus Hall - Layer 1, Floor 1
 				1758,	-- Skoldus Hall - Layer 1, Floor 3 / Layer 2, Floor 3 / Layer 3, Floor 3
 				1766,	-- Skoldus Hall - Layer 1, Floor 4 / Layer 2, Floor 5 / Layer 3, Floor 2

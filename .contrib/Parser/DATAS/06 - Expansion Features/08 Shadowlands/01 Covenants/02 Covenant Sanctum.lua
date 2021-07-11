@@ -326,3 +326,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(59318),	-- Work Not Wasted
 	}),
 });
+_.HiddenQuestTriggers = {
+	q(60635),	-- Night Fae Mission Table
+};

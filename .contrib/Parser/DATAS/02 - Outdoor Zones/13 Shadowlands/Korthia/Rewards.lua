@@ -52,6 +52,7 @@ _.Zones =
 								i(185016),	-- Rogue Necromancer's Mantle
 								i(185017),	-- Rogue Necromancer's Sash
 								i(185018),	-- Rogue Necromancer's Wraps
+								i(185019),	-- Rogue Necromancer's Drape
 							},
 						}),
 						n(-949, {	-- Covenant: Venthyr
