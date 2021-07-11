@@ -278,3 +278,7 @@ _.Instances = { tier(7, {	-- Legion
 		},
 	}),
 })};
+
+_.HiddenQuestTriggers = {
+	q(48566),	-- learning Ensemble: Venerated Triumvirate Battleplate
+};

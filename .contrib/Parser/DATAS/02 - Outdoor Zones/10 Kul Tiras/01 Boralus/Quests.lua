@@ -921,6 +921,8 @@ _.HiddenQuestTriggers = {
 	q(54292),	-- Brennadam completed
 	q(54261),	-- Upgrade: Brennadam started
 	q(54296),	-- Castaway Point completed
+	q(54305),	-- Mission Report: Arom's Stand
+	q(54293),	-- Mission Report: Castaway Point
 	q(54283),	-- Upgrade: Castaway Point started
 	q(54304),	-- Upgrade: Arom's Stand started
 };

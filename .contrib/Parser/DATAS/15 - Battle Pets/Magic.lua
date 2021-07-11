@@ -18,7 +18,9 @@ _.BattlePets =
 			p(2352),	-- Baa'l
 			p(2582),	-- Baoh-Xi
 			p(1964),	-- Blood Boil
-			un(BLIZZARD_BALANCE, p(1466)),	-- Brightpaw
+			p(1466, {	-- Brightpaw
+				["u"] = BLIZZARD_BALANCE,
+			}),
 			p(2952),	-- Bubbling Pustule
 			p(1888),	-- Celestial Calf
 			p(1633),	-- Chaos Pup
@@ -44,7 +46,9 @@ _.BattlePets =
 			p(1700),	-- Enchanted Torch
 			p(1764),	-- Energized Manafiend
 			p(1773),	-- Erudite Manafiend
-			un(10, p(183)),		-- Ethereal Soul-Trader
+			p(183, {	-- Ethereal Soul-Trader
+				["u"] = 10,	-- TCG
+			}),
 			p(1717),	-- Extinguished Eye
 			p(3126),	-- Eye of Affliction
 			p(3128),	-- Eye of Allseeing
@@ -61,7 +65,9 @@ _.BattlePets =
 			p(2837),	-- Gloop
 			p(3125),	-- Golden Eye
 			p(2120),	-- Grasping Manifestation
-			un(10, p(1174)),	-- Gusting Grimoire
+			p(1174, {	-- Gusting Grimoire
+				["u"] = 10,	-- TCG
+			}),
 			p(1346),	-- Harmonious Porcupette
 			p(1718),	-- Hateful Eye
 			p(1926),	-- Hungering Claw
@@ -70,10 +76,14 @@ _.BattlePets =
 			p(3045),	-- Iridescent Ooze
 			p(446),		-- Jade Oozeling
 			p(845),		-- Jade Owl
-			un(REMOVED_FROM_GAME, p(231)),	-- Jade Tiger
+			p(231, {	-- Jade Tiger
+				["u"] = REMOVED_FROM_GAME,
+			}),
 			p(3043),	-- Jiggles
 			p(1635),	-- K'ute
-			un(20, p(308)),		-- Legs
+			p(308, {	-- Legs
+				["u"] = 20,	-- Children's Week
+			}),
 			p(1234),	-- Lesser Voidcaller
 			p(1395),	-- Lil' Leftovers
 			p(2589),	-- Living Amber
@@ -86,7 +96,9 @@ _.BattlePets =
 			p(136),		-- Mana Wyrmling
 			p(3033),	-- Maw Stalker
 			p(500),		-- Minfernal
-			un(REMOVED_FROM_GAME, p(93)),	-- Mini Diablo
+			p(93, {		-- Mini Diablo
+				["u"] = REMOVED_FROM_GAME,
+			}),
 			p(1156),	-- Mini Mindslayer
 			p(2832),	-- Muar
 			p(1604),	-- Nethaera's Light
@@ -95,21 +107,29 @@ _.BattlePets =
 			p(1664),	-- Nightmare Bell
 			p(547),		-- Nordrassil Wisp
 			p(530),		-- Oily Slimeling
-			un(REMOVED_FROM_GAME, p(240)),	-- Onyx Panther
+			p(240, {	-- Onyx Panther
+				["u"] = REMOVED_FROM_GAME,
+			}),
 			p(2798),	-- Plagueborn Slime
 			p(2896),	-- Primordial Bogling
 			p(2844),	-- Reek
 			p(1958),	-- Sanctum Cub
 			p(846),		-- Sapphire Cub
 			p(1601),	-- Servant of Demidos
-			un(BLIZZARD_BALANCE, p(2062)),	-- Shadow
+			p(2062, {	-- Shadow
+				["u"] = BLIZZARD_BALANCE,
+			}),
 			p(229),		-- Shimmering Wyrmling
 			p(2750),	-- Shrieker
 			p(2953),	-- Shy Melvin
 			p(2961),	-- Sludge Feeler
-			un(REMOVED_FROM_GAME, p(1127)),	-- Spectral Cub
+			p(1127, {	-- Spectral Cub
+				["u"] = REMOVED_FROM_GAME,
+			}),
 			p(1185),	-- Spectral Porcupette
-			un(10, p(242)),		-- Spectral Tiger Cub
+			p(242, {	-- Spectral Tiger Cub
+				["u"] = 10,	-- TCG
+			}),
 			p(1969),	-- Stardust
 			p(2393),	-- Sticky Oozeling
 			p(2959),	-- Suspended Corpse
@@ -125,12 +145,18 @@ _.BattlePets =
 			p(2549),	-- Void Jelly
 			p(2130),	-- Void Shardling
 			p(2434),	-- Voidwiggle
-			un(20, p(157)),		-- Willy
+			p(157, {	-- Willy
+				["u"] = 20,	-- Children's Week
+			}),
 			p(2535),	-- Wicker Wraith
 			p(3036),	-- Will of Remornia
 			p(1937),	-- Wondrous Wisdomball
-			un(REMOVED_FROM_GAME, p(1255)),	-- Zeradar
-			un(REMOVED_FROM_GAME, p(247)),	-- Zipao Tiger
+			p(1255, {	-- Zeradar
+				["u"] = REMOVED_FROM_GAME,
+			}),
+			p(247, {	-- Zipao Tiger
+				["u"] = REMOVED_FROM_GAME,
+			}),
 			p(2550),	-- Zur'aj the Depleted
 		}),
 	}),

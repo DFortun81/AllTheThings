@@ -102,9 +102,13 @@ _.Zones =
 								{ 33.0, 66.3, THE_MAW },
 								{ 41.6, 46.7, THE_MAW },	-- first place i found it, not sure if someone else had dragged it there.  but it appears to have multiple spawnpoints
 								{ 47.2, 79.6, THE_MAW },
+								{ 62.2, 64.2, THE_MAW },
 							},
 							["g"] = {
-								i(187416),	-- Jailer's Cage
+							--	Epics
+								i(187251),	-- Shaded Skull Shoulderguards
+							--	Blues
+								i(187416),	-- Jailer's Cage (TOY!)
 								i(187113),	-- Personal Ball and Chain (TOY!)
 							},
 						}),

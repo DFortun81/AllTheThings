@@ -282,7 +282,7 @@ _.Zones =
 										},
 										["g"] = {
 											i(186573, {	-- Defense Map
-												["description"] = "This item will not drop if |cFF349cffPutting A Plan Together|r is not an active quest.  Furthermore, looting it may require that you are actually in the Overcharged Centurion, as the quest cannot be completed otherwise.",
+												["description"] = "This item will not drop if |cFF349cffPutting A Plan Together|r is not an active quest.",
 												["questID"] = 63594,	-- Clearing the Walls
 												["g"] = {
 													i(186601),	-- Quartered Ancient Ring

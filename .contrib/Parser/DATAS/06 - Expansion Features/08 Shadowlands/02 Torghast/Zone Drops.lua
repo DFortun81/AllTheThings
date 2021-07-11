@@ -36,6 +36,11 @@ _.ExpansionFeatures =
 						176578,	-- Vault Sentinel
 					},
 				}),
+				i(187094, {	-- Gilded Spike Fortresses
+					["crs"] = {
+						179526,	-- Troz'igal the Oppressor
+					},
+				}),
 				i(187091, {	-- Gilded Twin-Scythe Shoulders
 					["crs"] = {
 						179526,	-- Troz'igal the Oppressor
@@ -62,6 +67,11 @@ _.ExpansionFeatures =
 						170418,	-- Goxul the Devourer
 						159190,	-- Synod
 						151329,	-- Warden Skoldus
+					},
+				}),
+				i(187025, {	-- Painbringer's Back-Prison
+					["crs"] = {
+						179526,	-- Troz'igal the Oppressor
 					},
 				}),
 				i(187046, {	-- Pauldrons of Immaculate Laceration

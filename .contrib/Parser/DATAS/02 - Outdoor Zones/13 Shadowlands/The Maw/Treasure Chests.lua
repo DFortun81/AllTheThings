@@ -65,6 +65,8 @@ _.Zones =
 							["achievementID"] = 15099,	-- Treasures of Korthia
 						}),
 					--	Epics
+						i(187240),	-- Field Warden's Watchful Eye
+						i(187026),	-- Field Warden's Torture Kit
 						i(187019),	-- Infiltrator's Shoulderguards
 						i(187024),	-- Necromancer's Mantle
 						i(187014),	-- Shackler's Spiked Shoulders

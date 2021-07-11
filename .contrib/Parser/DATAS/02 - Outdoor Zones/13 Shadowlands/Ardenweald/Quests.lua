@@ -193,7 +193,7 @@ _.Zones =
 				q(58022, {	-- Finish What He Started
 					["sourceQuests"] = { 61051 },	-- The Absent-Minded Artisan
 					["provider"] = { "n", 171099 },	-- Guardian Kota
-					["coord"] = { 62,8, 32.1, ARDENWEALD },
+					["coord"] = { 62.8, 32.1, ARDENWEALD },
 				}),
 				q(60341, {	-- First on the Agenda
 					["sourceQuests"] = { 60763 },	-- I Moustache You to Lend a Hand
@@ -344,7 +344,7 @@ _.Zones =
 				q(58023, {	-- One Big Problem
 					["sourceQuests"] = { 61051 },	-- The Absent-Minded Artisan
 					["provider"] = { "n", 171099 },	-- Guardian Kota
-					["coord"] = { 62,8, 32.1, ARDENWEALD },
+					["coord"] = { 62.8, 32.1, ARDENWEALD },
 				}),
 				q(60594, {	-- One Special Spirit
 					["sourceQuests"] = {
