@@ -511,6 +511,12 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 64.7, 25.6, KORTHIA },
 				}),
+				q(63787, {	-- Continued Efforts: Mauler's Outlook
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
+					["provider"] = { "n", 179149 },	-- Baroness Vashj
+					["isDaily"] = true,
+					["coord"] = { 60.9, 28.0, KORTHIA },
+				}),
 				q(63789, {	-- Continued Efforts: Scholar's Den
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178807 },	-- Alexandros Mograine
@@ -523,11 +529,23 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 64.1, 23.0, KORTHIA },
 				}),
+				q(63936, {	-- Devoured Anima
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
+					["provider"] = { "n", 178797 },	-- Sika
+					["isDaily"] = true,
+					["coord"] = { 61.7, 23.9, KORTHIA },
+				}),
 				q(63782, {	-- Mawsworn Rituals
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178799 },	-- Arios Riftbearer
 					["isDaily"] = true,
 					["coord"] = { 61.5, 23.5, KORTHIA },
+				}),
+				q(63957, {	-- Observational Records
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
+					["provider"] = { "n", 178844 },	-- Ta'nasi
+					["isDaily"] = true,
+					["coord"] = { 64.6, 25.4, KORTHIA },
 				}),
 				q(63958, {	-- Observational Records
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
@@ -599,6 +617,21 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 61.8, 25.3, KORTHIA },
 				}),
+				q(64194, {	-- War Prototype
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
+					["provider"] = { "n", 179216 },	-- Mikanikos
+					["isDaily"] = true,
+					["coord"] = { 61.4, 23.9, KORTHIA },
+				}),
+				q(64043, {	-- We Need a Healer - You!
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
+					["provider"] = { "n", 179216 },	-- Mikanikos
+					["isDaily"] = true,
+					["coord"] = { 61.4, 23.2, KORTHIA },
+					["g"] = {	-- TODO: may be a generic 'kyrian questgiver' reward?  was on a different quest during PTR, was on this one for me on 7/11
+						i(187184),	-- Vesper of Clarity (TOY!) 
+					},
+				}),
 
 			--	ptr data
 				i(186017),	-- Korthite Crystal - rewarded by some dailies and found in some treasures, but does not seem statically attached to anything specific.  acquisition/availability may be based on having completed the campaign questline to the point where you get to the Vault of Secrets
@@ -650,12 +683,6 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 61.1, 21.2, KORTHIA },
 				}),
-				q(63787, {	-- Continued Efforts: Mauler's Outlook
-					["sourceQuests"] = { 64556 },	-- In Need of Assistance
-					["provider"] = { "n", 179149 },	-- Baroness Vashj
-					["isDaily"] = true,
-					["coord"] = { 60.9, 28.0, KORTHIA },
-				}),
 				q(63788, {	-- Continued Efforts: Sanctuary of Guidance
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178800 },	-- Voitha
@@ -667,15 +694,6 @@ _.Zones =
 					["provider"] = { "n", 178841 },	-- Hunt-Captain Korayn
 					["isDaily"] = true,
 					["coord"] = { 60.9, 21.7, KORTHIA },
-				}),
-				q(63936, {	-- Devoured Anima
-					["sourceQuests"] = { 64556 },	-- In Need of Assistance
-					["provider"] = { "n", 178797 },	-- Sika
-					["isDaily"] = true,
-					["coord"] = { 61.7, 23.9, KORTHIA },
-					["g"] = { -- TODO: unsure if this item will be up every time, it was added
-						i(187184),	-- Vesper of Clarity (TOY!)
-					},
 				}),
 				q(64080, {	-- Down to Earth
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
@@ -734,12 +752,6 @@ _.Zones =
 					["coord"] = { 59.9, 27.0, KORTHIA },
 				}),
 				q(63776, {	-- Observational Records
-					["sourceQuests"] = { 64556 },	-- In Need of Assistance
-					["provider"] = { "n", 178844 },	-- Ta'nasi
-					["isDaily"] = true,
-					["coord"] = { 64.6, 25.4, KORTHIA },
-				}),
-				q(63957, {	-- Observational Records
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178844 },	-- Ta'nasi
 					["isDaily"] = true,
@@ -841,23 +853,11 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 61.4, 21.4, KORTHIA },
 				}),
-				q(64194, {	-- War Prototype
-					["sourceQuests"] = { 64556 },	-- In Need of Assistance
-					["provider"] = { "n", 179216 },	-- Mikanikos
-					["isDaily"] = true,
-					["coord"] = { 61.4, 23.9, KORTHIA },
-				}),
 				q(63778, {	-- We Move Forward
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178840 },	-- Niya
 					["isDaily"] = true,
 					["coord"] = { 61.1, 21.2, KORTHIA },
-				}),
-				q(64043, {	-- We Need a Healer - You!
-					["sourceQuests"] = { 64556 },	-- In Need of Assistance
-					["provider"] = { "n", 179216 },	-- Mikanikos
-					["isDaily"] = true,
-					["coord"] = { 61.4, 23.2, KORTHIA },
 				}),
 			}),
 		}),

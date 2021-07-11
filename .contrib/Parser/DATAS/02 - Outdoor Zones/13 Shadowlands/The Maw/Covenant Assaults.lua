@@ -276,7 +276,10 @@ _.Zones =
 									o(368205, {	-- Mawsworn Cache
 										["questID"] = 63815,
 										["isDaily"] = true,
-										["coord"] = { 30.3, 55.8, THE_MAW },
+										["coords"] = {
+											{ 30.3, 55.8, THE_MAW },
+											{ 32.2, 67.4, THE_MAW },
+										},
 										["g"] = {
 											i(186573, {	-- Defense Map
 												["description"] = "This item will not drop if |cFF349cffPutting A Plan Together|r is not an active quest.  Furthermore, looting it may require that you are actually in the Overcharged Centurion, as the quest cannot be completed otherwise.",
@@ -391,8 +394,10 @@ _.Zones =
 							o(368214, {	-- Mawsworn Cache
 								["questID"] = 63826,
 								["isDaily"] = true,
-							--	["coord"] = { 32.0, 56.3, THE_MAW }, old coord?
-								["coord"] = { 33.8, 57.3, THE_MAW },
+								["coords"] = {
+									{ 32.0, 56.3, THE_MAW },
+									{ 33.8, 57.3, THE_MAW },
+								},
 							}),
 							i(186603, {	-- Nilganihmaht's Stone Ring
 								["cost"] = {
