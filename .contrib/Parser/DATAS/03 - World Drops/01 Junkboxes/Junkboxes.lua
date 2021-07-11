@@ -47,6 +47,7 @@ _.WorldDrops =
 				i(68163),	-- The Twilight Blade
 				i(68161),	-- Krol Decapitator
 			}),
+			i(43622),	-- Froststeel Lockbox
 			i(88567, {	-- Ghost Iron Lockbox
 				["timeline"] = { "added 5.0.1.15752" },
 			}),
