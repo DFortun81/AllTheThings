@@ -14905,7 +14905,7 @@ function app:GetDataCache()
 		allData.texcoord = {429 / 512, (429 + 36) / 512, 217 / 256, (217 + 36) / 256};
 		allData.previewtexcoord = {1 / 512, (1 + 72) / 512, 75 / 256, (75 + 72) / 256};
 		allData.font = "GameFontNormalLarge";
-		allData.text = L["TITLE"] .. " (Unsorted)";
+		allData.text = L["TITLE"] .. " (Unsorted) " .. app.Version .. "";
 		allData.title = L["UNSORTED_1"];
 		allData.description = L["UNSORTED_DESC"];
 		allData.visible = true;
