@@ -827,7 +827,7 @@ _.Zones =
 				q(10709, {	-- Reunion
 					["qg"] = 22004,	-- Leoroxx
 					["sourceQuest"] = 10614,	-- Whispers on the Wind
-					["coord"] = { 75,3, 60.9, BLADES_EDGE_MOUNTAINS },
+					["coord"] = { 75.3, 60.9, BLADES_EDGE_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(65, 20, 65),
 				}),
@@ -921,7 +921,7 @@ _.Zones =
 				q(10843, {	-- Since Time Forgotten...
 					["qg"] = 22004,	-- Leoroxx
 					["sourceQuest"] = 10846,	-- Understanding the Mok'Nathal
-					["coord"] = { 75,3, 60.9, BLADES_EDGE_MOUNTAINS },
+					["coord"] = { 75.3, 60.9, BLADES_EDGE_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(65, 20, 65),
 				}),
@@ -942,7 +942,7 @@ _.Zones =
 				q(10845, {	-- Slay the Brood Mother
 					["qg"] = 22004,	-- Leoroxx
 					["sourceQuest"] = 10843,	-- Since Time Forgotten...
-					["coord"] = { 75,3, 60.9, BLADES_EDGE_MOUNTAINS },
+					["coord"] = { 75.3, 60.9, BLADES_EDGE_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(65, 20, 65),
 					["groups"] = {
@@ -1257,7 +1257,7 @@ _.Zones =
 				q(10867, {	-- There Can Be Only One Response
 					["qg"] = 22004,	-- Leoroxx
 					["sourceQuest"] = 10865,	-- Inform Leoroxx!
-					["coord"] = { 75,3, 60.9, BLADES_EDGE_MOUNTAINS },
+					["coord"] = { 75.3, 60.9, BLADES_EDGE_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(65, 20, 65),
 					["groups"] = {
@@ -1317,7 +1317,7 @@ _.Zones =
 				q(10846, {	-- Understanding the Mok'Nathal
 					["qg"] = 22004,	-- Leoroxx
 					["sourceQuest"] = 10565,	-- The Stones of Vekh'nir
-					["coord"] = { 75,3, 60.9, BLADES_EDGE_MOUNTAINS },
+					["coord"] = { 75.3, 60.9, BLADES_EDGE_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(65, 20, 65),
 				}),

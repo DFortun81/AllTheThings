@@ -611,7 +611,7 @@ _.Zones =
 				}),
 				q(9919,  {	-- Sporeggar
 					["qg"] = 17923,	-- Fahssn
-					["coord"] = { 19.0, 63,4, ZANGARMARSH },
+					["coord"] = { 19.0, 63.4, ZANGARMARSH },
 					["minReputation"] = { 970, NEUTRAL },	-- Sporeggar, Neutral.
 					["lvl"] = lvlsquish(60, 10, 60),
 				}),

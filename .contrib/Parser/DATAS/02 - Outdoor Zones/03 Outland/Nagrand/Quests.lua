@@ -885,7 +885,7 @@ _.Zones =
 				}),
 				q(9870,  {	-- The Throne of the Elements (H)
 					["provider"] = { "n", 18234 },	-- Elementalist Yal'hah <The Earthen Ring>
-					["coord"] = { 55,8, 37.6, NAGRAND },
+					["coord"] = { 55.8, 37.6, NAGRAND },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
@@ -951,7 +951,7 @@ _.Zones =
 				}),
 				q(9818,  {	-- The Underneath
 					["provider"] = { "n", 18071 },	-- Elementalist Untrag <The Earthen Ring>
-					["coord"] = { 60.6, 22,6, NAGRAND },
+					["coord"] = { 60.6, 22.6, NAGRAND },
 					["sourceQuests"] = {
 						9869,	-- The Throne of the Elements (A)
 						9870,	-- The Throne of the Elements (H)

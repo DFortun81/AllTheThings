@@ -134,7 +134,7 @@ _.Zones =
 					}),
 					q(29290, {	-- Fire in the Skies
 						["provider"] = { "n", 52491 },	-- Morthis Whisperwing
-						["coord"] = { 34.6, 56,4, 338 },
+						["coord"] = { 34.6, 56.4, 338 },
 						["sourceQuests"] = {
 							29293,	-- Singed Wings
 							29296,	-- Territorial Birds
@@ -199,7 +199,7 @@ _.Zones =
 					}),
 					q(29289, {	-- Mother's Malice
 						["provider"] = { "n", 52491 },	-- Morthis Whisperwing
-						["coord"] = { 34.6, 56,4, 338 },
+						["coord"] = { 34.6, 56.4, 338 },
 						["sourceQuests"] = {
 							29293,	-- Singed Wings
 							29296,	-- Territorial Birds
@@ -216,7 +216,7 @@ _.Zones =
 					}),
 					q(29287, {	-- Peaked Interest
 						["provider"] = { "n", 52491 },	-- Morthis Whisperwing
-						["coord"] = { 34.6, 56,4, 338 },
+						["coord"] = { 34.6, 56.4, 338 },
 						["sourceQuests"] = {
 							29265,	-- Fire Flowers
 							29264,	-- Flamewakers of the Molten Flow
@@ -254,7 +254,7 @@ _.Zones =
 					}),
 					q(29288, {	-- Starting Young
 						["provider"] = { "n", 52491 },	-- Morthis Whisperwing
-						["coord"] = { 34.6, 56,4, 338 },
+						["coord"] = { 34.6, 56.4, 338 },
 						["sourceQuests"] = {
 							29293,	-- Singed Wings
 							29296,	-- Territorial Birds
