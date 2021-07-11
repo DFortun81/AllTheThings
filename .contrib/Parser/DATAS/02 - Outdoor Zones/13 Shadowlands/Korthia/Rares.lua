@@ -201,6 +201,7 @@ _.Zones =
 							["achievementID"] = 15107,	-- Conquering Korthia
 						}),
 						i(187400),	-- Mantle of Screaming Shadows
+						i(187362),	-- Stinging Shadow Screamer
 					},
 				}),
 				n(179911, {	-- Silent Soulstalker
