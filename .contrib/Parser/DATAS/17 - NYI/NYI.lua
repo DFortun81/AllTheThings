@@ -14,6 +14,9 @@ _.NeverImplemented =
 		["description"] = "There's been a lot of discussion about this item and whether or not it exists. If this drops for you, please provide as much information as you can about how and where you got it. It does not commonly drop like the other items in Arathi and it is suspected not to be available from the Warfront Victory or Warfront Victory Quest Crate either.\n\n - Crieve",
 		["modID"] = 5,
 	}),
+	i(186656, {	-- Sanctum Gloomcharger (MOUNT!) TODO not sure where this falls in the dungeon journal because the game crashes when i scroll to it, so just throwing it at the top for now
+		["description"] = "|CFF00FFDEIf this did drop for you, please provide as much information as you can, such as the difficult mode, your renown and campaign progress. \n\nAs of July 12th 2021 there are not confirmed drops.|r",
+	}),
 	i(108905, {	-- Jagged Turtleshell Blade
 		-- Keep this here until we get solid and an accurate source.
 		-- Dont tell the Users is actually obtainable but there is just no info

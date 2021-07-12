@@ -132,7 +132,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 								crit(3, {	-- The Nine
 									["achievementID"] = 15126,	-- Sanctum of Domination
 								}),
-								i(186656),	-- Sanctum Gloomcharger (MOUNT!) TODO not sure where this falls in the dungeon journal because the game crashes when i scroll to it, so just throwing it at the top for now
+								i(186656, {	-- Sanctum Gloomcharger (MOUNT!) TODO not sure where this falls in the dungeon journal because the game crashes when i scroll to it, so just throwing it at the top for now
+									["description"] = "|CFF00FFDEIf this did drop for you, please provide as much information as you can, such as the difficult mode, your renown and campaign progress. \n\nAs of July 12th 2021 there are not confirmed drops.|r",
+								}),
 								i(182657),	-- Deadly Chain
 								i(181845),	-- Exaltation
 								i(182340),	-- Fel Celerity
