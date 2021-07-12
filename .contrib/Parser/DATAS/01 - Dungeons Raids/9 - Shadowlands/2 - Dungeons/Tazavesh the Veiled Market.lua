@@ -24,21 +24,27 @@ _.Instances = { tier(9, {	-- Shadowlands
 				ach(15190, {	-- Mischief!	-- TODO: may need to be moved to specific bosses depending on where these criteria can be found
 					crit(1, {	-- Pickle
 						["cr"] = 180817,	-- Pickle
+						["coord"] = { 39.91, 38.78, 1990 },
 					}),
 					crit(2, {	-- Oswald
 						["cr"] = 180818,	-- Oswald
+						["coord"] = { 36.63, 33.37, 1989 },
 					}),
 					crit(3, {	-- Sassafras
 						["cr"] = 180821,	-- Sassafras
+						["coord"] = { 39.48, 65.67, 1989 },
 					}),
 					crit(4, {	-- Goblin
 						["cr"] = 180822,	-- Goblin
+						["coord"] = { 59.59, 45.99, 1989 },
 					}),
 					crit(5, {	-- Pancake
 						["cr"] = 180823,	-- Pancake
+						["coord"] = { 55.43, 64.69, 1989 },
 					}),
 					crit(6, {	-- Waffle
 						["cr"] = 180824,	-- Waffle
+						["coord"] = { 77.29, 45.70, 1989 }
 					}),
 				}),
 			}),
