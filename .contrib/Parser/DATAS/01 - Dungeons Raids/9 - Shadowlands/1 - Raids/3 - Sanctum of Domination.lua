@@ -12,6 +12,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 			1999,	-- TorghastRaidB
 			2000,	-- TorghastRaidC
 			2001,	-- TorghastRaidD
+			2002,	-- ??
+			2003,	-- ??
+			2004,	-- The Crucible
 		},
 		["g"] = {
 			n(COMMON_BOSS_DROPS, {
@@ -408,8 +411,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 			d(14, {	-- Normal
 				n(QUESTS, {
 					q(64597, {	-- Sanctum of Domination - Damned If You Don't [N]
-					--	TODO: add Mythic quest (not listed on WH), add providers for all quests, add altQuests and description (see WoD/Legion raids) if quests are mutually exclusive per character
-					--	["provider"] = { "n",  },	--
+						["provider"] = { "n", 178592 },	-- Highlord Bolvar Fordragon
+						-- ["altQuests"] = {
+						--	TODO: add Mythic quest (not listed on WH), add providers for all quests, add altQuests and description (see WoD/Legion raids) if quests are mutually exclusive per character
+						-- },
 					}),
 				}),
 				n(ZONEDROPS, {
@@ -778,7 +783,10 @@ _.Instances = { tier(9, {	-- Shadowlands
 			d(15, {	-- Heroic
 				n(QUESTS, {
 					q(64598, {	-- Sanctum of Domination - Damned If You Don't [H]
-					--	["provider"] = { "n",  },	--
+						["provider"] = { "n", 178592 },	-- Highlord Bolvar Fordragon
+						-- ["altQuests"] = {
+						--	TODO: add Mythic quest (not listed on WH), add providers for all quests, add altQuests and description (see WoD/Legion raids) if quests are mutually exclusive per character
+						-- },
 					}),
 				}),
 				n(ZONEDROPS, {
