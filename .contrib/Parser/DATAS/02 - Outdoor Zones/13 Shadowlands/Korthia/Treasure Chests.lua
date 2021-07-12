@@ -425,6 +425,7 @@ _.Zones =
 								{ 57.5, 49.3, KORTHIA },	-- next to a leaning pillar
 								{ 59.1, 48.7, KORTHIA },	-- north side of the chain
 								{ 59.2, 56.7, KORTHIA },	-- by a bush
+								{ 61.5, 47.3, KORTHIA },	-- on the ground sort of disguised by similarly-colored anima vein
 								{ 62.8, 51.4, KORTHIA },	-- next to a cage, between two packs of mawrats
 							},
 							["name"] = "Third Chain",
