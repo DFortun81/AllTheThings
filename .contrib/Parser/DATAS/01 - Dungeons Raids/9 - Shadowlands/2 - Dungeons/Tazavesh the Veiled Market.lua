@@ -4,18 +4,18 @@
 
 _.Instances = { tier(9, {	-- Shadowlands
 	inst(1194, {	-- Tazavesh, the Veiled Market
-		["coord"] = { 88.9, 44.3, 2016 },
-		["maps"] = {	-- TODO: assign maps their proper names
-			1989,	-- The Veiled Market
-			2016,	-- Tazavesh, the Veiled Market
-			1990,	-- The Menagerie
-			1991,	-- The Mail Room
-			1992,	-- The Speak Easy
-			1995,	-- Stormheim
-			1997,	-- Aggramar's Vault
-			1993,	-- The Opulent Nexus
-		--	,	-- Boralus
-		--	,	-- The Upper City
+		["coord"] = { 88.9, 44.3, TAZAVESH_THE_VEILED_MARKET_WORLD },
+		["maps"] = {
+			TAZAVESH_THE_VEILED_MARKET,
+			TAZAVESH_THE_MENAGERIE,
+			TAZAVESH_THE_POST,
+			TAZAVESH_MYZAS_OASIS,
+			TAZAVESH_THE_OPULENT_NEXUS,
+			TAZAVESH_STORMHEIM,
+			TAZAVESH_BORALUS_HARBOR,
+			TAZAVESH_AGGRAMARS_VAULT,
+			TAZAVESH_THE_VEILED_MARKET_WORLD,
+			--,	-- The Upper City
 		},
 		["lvl"] = { 60 },
 		["g"] = {
@@ -24,27 +24,27 @@ _.Instances = { tier(9, {	-- Shadowlands
 				ach(15190, {	-- Mischief!	-- TODO: may need to be moved to specific bosses depending on where these criteria can be found
 					crit(1, {	-- Pickle
 						["cr"] = 180817,	-- Pickle
-						["coord"] = { 39.91, 38.78, 1990 },
+						["coord"] = { 39.91, 38.78, TAZAVESH_THE_MENAGERIE },
 					}),
 					crit(2, {	-- Oswald
 						["cr"] = 180818,	-- Oswald
-						["coord"] = { 36.63, 33.37, 1989 },
+						["coord"] = { 36.63, 33.37, TAZAVESH_THE_VEILED_MARKET },
 					}),
 					crit(3, {	-- Sassafras
 						["cr"] = 180821,	-- Sassafras
-						["coord"] = { 39.48, 65.67, 1989 },
+						["coord"] = { 39.48, 65.67, TAZAVESH_THE_VEILED_MARKET },
 					}),
 					crit(4, {	-- Goblin
 						["cr"] = 180822,	-- Goblin
-						["coord"] = { 59.59, 45.99, 1989 },
+						["coord"] = { 59.59, 45.99, TAZAVESH_THE_VEILED_MARKET },
 					}),
 					crit(5, {	-- Pancake
 						["cr"] = 180823,	-- Pancake
-						["coord"] = { 55.43, 64.69, 1989 },
+						["coord"] = { 55.43, 64.69, TAZAVESH_THE_VEILED_MARKET },
 					}),
 					crit(6, {	-- Waffle
 						["cr"] = 180824,	-- Waffle
-						["coord"] = { 77.29, 45.70, 1989 }
+						["coord"] = { 77.29, 45.70, TAZAVESH_THE_VEILED_MARKET }
 					}),
 				}),
 			}),
@@ -64,7 +64,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 			}),
 			n(FLIGHT_PATHS, {
 				fp(2703, {	-- 9.1, Tazavesh (Broker Dungeon)
-					["coord"] = { 91.9, 41.9, 2016 },
+					["coord"] = { 91.9, 41.9, TAZAVESH_THE_VEILED_MARKET_WORLD },
 					["cr"] = 178796,	-- Ta'rellano
 				}),
 			}),
@@ -72,7 +72,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 				q(63986, {	-- Tazavesh: Raiders of the Lost Artifact
 					["sourceQuests"] = { 63985 },	-- The Veiled Market
 					["provider"] = { "n", 178908 },	-- Al'dalil
-					["coord"] = { 86.7, 48.3, 2016 },
+					["coord"] = { 86.7, 48.3, TAZAVESH_THE_VEILED_MARKET_WORLD },
 				}),
 				q(64607, {	-- Tazavesh: A Hard Bargain
 					["description"] = "Requires the 'On Use' effect of the neck to be able to accept the quest.",
