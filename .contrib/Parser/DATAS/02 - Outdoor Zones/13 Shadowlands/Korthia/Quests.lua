@@ -629,7 +629,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 61.4, 23.2, KORTHIA },
 					["g"] = {	-- TODO: may be a generic 'kyrian questgiver' reward?  was on a different quest during PTR, was on this one for me on 7/11
-						i(187184),	-- Vesper of Clarity (TOY!) 
+						i(187184),	-- Vesper of Clarity (TOY!)
 					},
 				}),
 
@@ -714,18 +714,21 @@ _.Zones =
 					["coord"] = { 61.6, 23.9, KORTHIA },
 				}),
 				q(63784, {	-- Gold's No Object
-				--	different characters can have different rewards for this quest on the same day.  checked all 3 back to back on 5/18, priest had Paint Brush Cup, shaman had Wheelbarrow, and mage had Chalice
-				--	i(186693),	-- Gold Filled Wheelbarrow on 5/4 but hadn't before, so perhaps not every time?  contained ~893g
-				--	i(186707),	-- Gold Filled Crate on 5/14.  contained ~401g
-				--	i(186708),	-- Gold Filled Paint Brush Cup on 5/18.  contained ~251g
-				--	i(186705),	-- Gold Filled Chalice (didn't do daily on this character so not sure how much it contains)
-				--	i(186688),	-- Gold Filled Wash Bucket
-				--	i(186691),	-- Gold Filled Satchel
-				--	i(186706),	-- Gold Filled Hat
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 179221 },	-- Rendle
 					["isDaily"] = true,
 					["coord"] = { 61.6, 26.0, KORTHIA },
+					["g"] = {
+						--	different characters can have different rewards for this quest on the same day.  checked all 3 back to back on 5/18, priest had Paint Brush Cup, shaman had Wheelbarrow, and mage had Chalice
+						i(186690),	-- Gold Filled Barrel
+						i(186693),	-- Gold Filled Wheelbarrow on 5/4 but hadn't before, so perhaps not every time?  contained ~893g
+						i(186707),	-- Gold Filled Crate on 5/14.  contained ~401g
+						i(186708),	-- Gold Filled Paint Brush Cup on 5/18.  contained ~251g
+						i(186705),	-- Gold Filled Chalice (didn't do daily on this character so not sure how much it contains)
+						i(186688),	-- Gold Filled Wash Bucket
+						i(186691),	-- Gold Filled Satchel
+						i(186706),	-- Gold Filled Hat
+					},
 				}),
 				q(64015, {	-- Into the Meat Grinder
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance

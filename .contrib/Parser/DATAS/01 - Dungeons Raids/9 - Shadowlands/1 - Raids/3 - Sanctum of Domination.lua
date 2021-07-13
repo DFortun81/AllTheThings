@@ -1592,18 +1592,21 @@ _.HiddenQuestTriggers = {
 
 	q(64493),	-- Fatescribe Roh-Kalo (Normal)?
 	q(64494),	-- Fatescribe Roh-Kalo (Normal)?
+	q(64636),	-- Fatescribe Roh-Kalo (Normal)?
 	q(64663),	-- Fatescribe Roh-Kalo (Normal)?
-	q(64663),	-- Fatescribe Roh-Kalo (Normal)?
+	q(64495),	-- Fatescribe Roh-Kalo (Heroic)
 
 	q(64497),	-- Kel'Thuzad (Normal)?
 	q(64498),	-- Kel'Thuzad (Normal)?
 	q(64637),	-- Kel'Thuzad (Normal)?
 	q(64664),	-- Kel'Thuzad (Normal)?
+	q(64499),	-- Kel'Thuzad (Heroic)
 
 	q(64501),	-- Sylvanas Windrunner (Normal)?
 	q(64502),	-- Sylvanas Windrunner (Normal)?
 	q(64638),	-- Sylvanas Windrunner (Normal)?
 	q(64665),	-- Sylvanas Windrunner (Normal)?
+	-- q( ),	-- Sylvanas Windrunner (Heroic)
 
 	q(64707),	-- Sylvanas Windrunner Cinematic?
 };
