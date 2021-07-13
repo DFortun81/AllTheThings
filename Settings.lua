@@ -635,7 +635,7 @@ settings.UpdateMode = function(self, doRefresh)
 		app.SeasonalItemFilter = app.NoFilter;
 		app.UnobtainableItemFilter = app.NoFilter;
 		app.VisibilityFilter = app.ObjectVisibilityFilter;
-		app.ShowIncompleteThings = app.NoFilter;
+		app.ShowTrackableThings = app.NoFilter;
 		app.ItemTypeFilter = app.NoFilter;
 		app.ClassRequirementFilter = app.NoFilter;
 		app.RaceRequirementFilter = app.NoFilter;
@@ -694,10 +694,10 @@ settings.UpdateMode = function(self, doRefresh)
 		else
 			app.UnobtainableItemFilter = app.NoFilter;
 		end
-		if self:Get("Show:IncompleteThings") then
-			app.ShowIncompleteThings = app.FilterItemTrackable;
+		if self:Get("Show:TrackableThings") then
+			app.ShowTrackableThings = app.FilterItemTrackable;
 		else
-			app.ShowIncompleteThings = app.Filter;
+			app.ShowTrackableThings = app.Filter;
 		end
 
 		app.AccountWideAchievements = self:Get("AccountWide:Achievements");
@@ -1662,9 +1662,9 @@ end);
 ShowCollectedThingsCheckBox:SetATTTooltip(L["SHOW_COLLECTED_THINGS_CHECKBOX_TOOLTIP"]);
 ShowCollectedThingsCheckBox:SetPoint("TOPLEFT", ShowCompletedGroupsCheckBox, "BOTTOMLEFT", 0, 4);
 
-local ShowIncompleteThingsCheckBox = settings:CreateCheckBox(L["SHOW_INCOMPLETE_THINGS_CHECKBOX"],
+local ShowTrackableThingsCheckBox = settings:CreateCheckBox(L["SHOW_INCOMPLETE_THINGS_CHECKBOX"],
 function(self)
-	self:SetChecked(settings:Get("Show:IncompleteThings"));
+	self:SetChecked(settings:Get("Show:TrackableThings"));
 	if settings:Get("DebugMode") then
 		self:Disable();
 		self:SetAlpha(0.2);
@@ -1674,11 +1674,11 @@ function(self)
 	end
 end,
 function(self)
-	settings:Set("Show:IncompleteThings", self:GetChecked());
+	settings:Set("Show:TrackableThings", self:GetChecked());
 	settings:UpdateMode(1);
 end);
-ShowIncompleteThingsCheckBox:SetATTTooltip(L["SHOW_INCOMPLETE_THINGS_CHECKBOX_TOOLTIP"]);
-ShowIncompleteThingsCheckBox:SetPoint("TOPLEFT", ShowCollectedThingsCheckBox, "BOTTOMLEFT", 0, 4);
+ShowTrackableThingsCheckBox:SetATTTooltip(L["SHOW_INCOMPLETE_THINGS_CHECKBOX_TOOLTIP"]);
+ShowTrackableThingsCheckBox:SetPoint("TOPLEFT", ShowCollectedThingsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local ShowRepeatableThingsCheckBox = settings:CreateCheckBox(L["SHOW_REPEATABLE_THINGS_CHECKBOX"],
 function(self)
@@ -1696,7 +1696,7 @@ function(self)
 	settings:UpdateMode(1);
 end);
 ShowRepeatableThingsCheckBox:SetATTTooltip(L["SHOW_REPEATABLE_THINGS_CHECKBOX_TOOLTIP"]);
-ShowRepeatableThingsCheckBox:SetPoint("TOPLEFT", ShowIncompleteThingsCheckBox, "BOTTOMLEFT", 0, 4);
+ShowRepeatableThingsCheckBox:SetPoint("TOPLEFT", ShowTrackableThingsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local ShowRepeatableThingsFirstTimeCheckBox = settings:CreateCheckBox(L["FIRST_TIME_CHECKBOX"],
 function(self)

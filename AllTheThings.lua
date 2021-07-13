@@ -2822,7 +2822,7 @@ local function BuildContainsInfo(item, entries, paramA, paramB, indent, layer)
 						if app.CollectedItemVisibilityFilter(group) then
 							right = true;
 						end
-					elseif app.ShowIncompleteThings(group) then
+					elseif app.ShowTrackableThings(group) then
 						right = true;
 					end
 				elseif group.visible then
@@ -2842,7 +2842,7 @@ local function BuildContainsInfo(item, entries, paramA, paramB, indent, layer)
 						if app.CollectedItemVisibilityFilter(group) then
 							right = true;
 						end
-					elseif app.ShowIncompleteThings(group) then
+					elseif app.ShowTrackableThings(group) then
 						right = true;
 					end
 				elseif group.visible then
@@ -11354,7 +11354,7 @@ app.RequireFactionFilter = app.FilterItemClass_RequireFaction;
 app.RequireCustomCollectFilter = app.FilterItemClass_CustomCollect;
 app.UnobtainableItemFilter = app.NoFilter;
 app.RequiredSkillFilter = app.NoFilter;
-app.ShowIncompleteThings = app.Filter;
+app.ShowTrackableThings = app.Filter;
 app.DefaultFilter = app.Filter;
 
 -- Recursive Checks
@@ -11468,7 +11468,7 @@ local function SetGroupVisibility(parent, group)
 		group.visible = true;
 		-- if app.DEBUG_PRINT then print("SetGroupVisibility.total",group.progress,group.total,group.visible) end
 	-- If this group is trackable, then we should show it.
-	elseif app.ShowIncompleteThings(group) then
+	elseif app.ShowTrackableThings(group) then
 		group.visible = not group.saved or app.GroupVisibilityFilter(group);
 		parent.forceShow = group.visible or parent.forceShow;
 		-- if app.DEBUG_PRINT then print("SetGroupVisibility.trackable",group.progress,group.total,group.visible) end
@@ -11489,7 +11489,7 @@ local function SetThingVisibility(parent, group)
 			group.visible = true;
 		end
 		-- if app.DEBUG_PRINT then print("SetThingVisibility.total",group.progress,group.total,group.visible) end
-	elseif app.ShowIncompleteThings(group) then
+	elseif app.ShowTrackableThings(group) then
 		-- If this group is trackable, then we should show it.
 		group.visible = not group.saved or app.CollectedItemVisibilityFilter(group);
 		parent.forceShow = group.visible or parent.forceShow;
