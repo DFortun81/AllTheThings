@@ -117,9 +117,16 @@ _.Zones =
 						-- TODO: objectID instead of quest
 						q(64269, {	-- Stolen Anima Vessel Loot trigger
 							["name"] = "Looted a Stolen Anima Vessel.",
-							["isDaily"] = true,
+							["isWeekly"] = true,
 							-- ["coords"] = {
 							-- },
+						}),
+						q(64270, {	-- Stolen Anima Vessel Loot trigger
+							["name"] = "Looted a Stolen Anima Vessel.",
+							["isWeekly"] = true,
+							["coords"] = {
+								{ 27.5, 49.5, THE_MAW },
+							},
 						}),
 					}),
 				},
