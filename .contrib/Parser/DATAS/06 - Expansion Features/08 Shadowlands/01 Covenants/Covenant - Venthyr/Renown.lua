@@ -60,8 +60,9 @@ _.HiddenQuestTriggers = {
 	q(62925),	-- hitting Renown 39
 	q(64131),	-- hitting Renown 45
 	q(64076),	-- hitting Renown 46
-	q(64381),	-- hitting Renown 48 (received Memory of Insatiable Hunger)
-	q(64410),	-- hitting Renown 48 (received Memory of Shadow Word: Manipulation)
+	q(64381),	-- hitting Renown 48 [Death Knight] (received Memory of Insatiable Hunger)
+	q(64410),	-- hitting Renown 48 [Priest] (received Memory of Shadow Word: Manipulation)
+	q(64415),	-- hitting Renown 48 [Shaman] (received Memory of the Elemental Conduit)
 	q(64134),	-- hitting Renown 50
 	q(64452),	-- hitting Renown 52
 	q(64133),	-- hitting Renown 56

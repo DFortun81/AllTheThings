@@ -272,6 +272,7 @@ _.Zones =
 					["sourceQuests"] = { 63727 },	-- The Primus Returns
 					["provider"] = { "n", 177228 },	-- Highlord Bolvar Fordragon
 					["coord"] = { 62.8, 24.9, KORTHIA },
+					["isWeekly"] = true,
 				}),
 				q(64555, {	-- Surveying Secrets
 					["sourceQuests"] = { 64007 },	-- Charge of the Covenants

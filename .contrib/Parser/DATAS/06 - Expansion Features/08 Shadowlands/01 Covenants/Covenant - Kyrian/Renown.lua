@@ -58,7 +58,8 @@ _.ExpansionFeatures =
 
 _.HiddenQuestTriggers = {
 	q(64138),	-- hitting Renown 45
-	q(64409),	-- hitting Renown 48 (received Memory of the Raging Vesper Vortex, possibly tied to specific legendary item and not Renown)
+	q(64409),	-- hitting Renown 48 [Shaman] (received Memory of the Raging Vesper Vortex)
+	q(64392),	-- hitting Renown 48 [Hunter] (received Memory of the Pact of the Soulstalkers)
 	q(64145),	-- hitting Renown 50
 	q(64443),	-- hitting Renown 52
 	q(64137),	-- hitting Renown 56
