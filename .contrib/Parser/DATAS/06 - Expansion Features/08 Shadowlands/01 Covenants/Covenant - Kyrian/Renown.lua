@@ -58,8 +58,18 @@ _.ExpansionFeatures =
 
 _.HiddenQuestTriggers = {
 	q(64138),	-- hitting Renown 45
-	q(64409),	-- hitting Renown 48 [Shaman] (received Memory of the Raging Vesper Vortex)
+	-- q( ),	-- hitting Renown 48 [Death Knight] (received Memory of ??)
+	-- q( ),	-- hitting Renown 48 [Demon Hunter] (received Memory of ??)
+	-- q( ),	-- hitting Renown 48 [Druid] (received Memory of ??)
 	q(64392),	-- hitting Renown 48 [Hunter] (received Memory of the Pact of the Soulstalkers)
+	-- q( ),	-- hitting Renown 48 [Mage] (received Memory of ??)
+	-- q( ),	-- hitting Renown 48 [Monk] (received Memory of ??)
+	-- q( ),	-- hitting Renown 48 [Paladin] (received Memory of ??)
+	-- q( ),	-- hitting Renown 48 [Priest] (received Memory of ??)
+	-- q( ),	-- hitting Renown 48 [Rogue] (received Memory of ??)
+	q(64409),	-- hitting Renown 48 [Shaman] (received Memory of the Raging Vesper Vortex)
+	-- q( ),	-- hitting Renown 48 [Warlock] (received Memory of ??)
+	-- q( ),	-- hitting Renown 48 [Warrior] (received Memory of ??)
 	q(64145),	-- hitting Renown 50
 	q(64443),	-- hitting Renown 52
 	q(64137),	-- hitting Renown 56

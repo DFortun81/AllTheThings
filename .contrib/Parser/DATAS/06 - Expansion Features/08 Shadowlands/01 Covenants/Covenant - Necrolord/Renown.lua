@@ -57,7 +57,18 @@ _.HiddenQuestTriggers = {
 	q(62754),	-- hitting Renown 35
 	q(62926),	-- hitting Renown 39
 	q(64097),	-- hitting Renown 45
-	q(64391),	-- hitting Renown 48 (may be related to specific legendary item Memory of Death's Fathom rather than the Renown level)
+	-- q( ),	-- hitting Renown 48 [Death Knight] (received Memory of ??)
+	-- q( ),	-- hitting Renown 48 [Demon Hunter] (received Memory of ??)
+	-- q( ),	-- hitting Renown 48 [Druid] (received Memory of ??)
+	-- q( ),	-- hitting Renown 48 [Hunter] (received Memory of the Pact of the Soulstalkers)
+	q(64391),	-- hitting Renown 48 [Mage] (received Memory of Death's Fathom)
+	-- q( ),	-- hitting Renown 48 [Monk] (received Memory of ??)
+	-- q( ),	-- hitting Renown 48 [Paladin] (received Memory of ??)
+	-- q( ),	-- hitting Renown 48 [Priest] (received Memory of ??)
+	-- q( ),	-- hitting Renown 48 [Rogue] (received Memory of ??)
+	-- q( ),	-- hitting Renown 48 [Shaman] (received Memory of the Raging Vesper Vortex)
+	-- q( ),	-- hitting Renown 48 [Warlock] (received Memory of ??)
+	-- q( ),	-- hitting Renown 48 [Warrior] (received Memory of ??)
 	q(64100),	-- hitting Renown 50
 	q(64446),	-- hitting Renown 52
 	q(64099),	-- hitting Renown 56
