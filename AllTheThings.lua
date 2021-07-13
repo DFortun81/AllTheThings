@@ -11455,51 +11455,55 @@ end
 
 -- Processing Functions
 local function SetGroupVisibility(parent, group)
+	-- if app.DEBUG_PRINT then print("SetGroupVisibility",group.key,group[group.key]) end
 	-- If this group is forced to be shown due to contained groups being shown without being collectible
 	if group.forceShow then
-		-- if app.DEBUG_LOG then print("UpdateGroup.g.forceShow",group.progress,group.total) end
 		group.visible = true;
 		group.forceShow = nil;
+		-- Continue the forceShow visibility outward
+		parent.forceShow = true;
+		-- if app.DEBUG_PRINT then print("SetGroupVisibility.forceShow",group.progress,group.total,group.visible) end
 	-- If this group contains Things, show based on visibility filter
 	elseif group.total > 0 and app.GroupVisibilityFilter(group) then
-		-- if app.DEBUG_LOG then print("UpdateGroup.g.total",group.progress,group.total) end
 		group.visible = true;
+		-- if app.DEBUG_PRINT then print("SetGroupVisibility.total",group.progress,group.total,group.visible) end
 	-- If this group is trackable, then we should show it.
 	elseif app.ShowIncompleteThings(group) then
-		-- if app.DEBUG_LOG then print("UpdateGroup.g.trackable",group.progress,group.total) end
 		group.visible = not group.saved or app.GroupVisibilityFilter(group);
 		parent.forceShow = group.visible or parent.forceShow;
+		-- if app.DEBUG_PRINT then print("SetGroupVisibility.trackable",group.progress,group.total,group.visible) end
 	else
 		group.visible = app.DefaultFilter();
+		-- if app.DEBUG_PRINT then print("SetGroupVisibility.default",group.progress,group.total,group.visible) end
 	end
 end
 local function SetThingVisibility(parent, group)
+	-- if app.DEBUG_PRINT then print("SetThingVisibility",group.key,group[group.key]) end
 	if group.total > 0 then
-		-- if app.DEBUG_LOG then print("UpdateGroup.total",group.progress,group.total) end
 		-- If we've collected the item, use the "Show Collected Items" filter.
 		if group.total == group.progress then
-			-- if app.DEBUG_LOG then print("UpdateGroup.complete",group.progress,group.total) end
 			if app.CollectedItemVisibilityFilter(group) then
-				-- if app.DEBUG_LOG then print("UpdateGroup.showcomplete",group.progress,group.total) end
 				group.visible = true;
 			end
 		else
 			group.visible = true;
 		end
+		-- if app.DEBUG_PRINT then print("SetThingVisibility.total",group.progress,group.total,group.visible) end
 	elseif app.ShowIncompleteThings(group) then
-		-- if app.DEBUG_LOG then print("UpdateGroup.trackable",group.progress,group.total) end
 		-- If this group is trackable, then we should show it.
 		group.visible = not group.saved or app.CollectedItemVisibilityFilter(group);
 		parent.forceShow = group.visible or parent.forceShow;
+		-- if app.DEBUG_PRINT then print("SetThingVisibility.trackable",group.progress,group.total,group.visible) end
 	else
 		group.visible = app.DefaultFilter();
+		-- if app.DEBUG_PRINT then print("SetThingVisibility.default",group.progress,group.total,group.visible) end
 	end
 end
 local UpdateGroup, UpdateGroups;
 UpdateGroup = function(parent, group, window)
-	-- local shouldLog = group.key == "questID" and group[group.key] == 62691 and 62691;
-	-- if not app.DEBUG_LOG and shouldLog then
-	-- 	app.DEBUG_LOG = shouldLog;
+	-- if group.key == "objectID" and group[group.key] == 369437 then app.DEBUG_PRINT = 369437; end
+	-- if not app.DEBUG_PRINT and shouldLog then
+	-- 	app.DEBUG_PRINT = shouldLog;
 	-- end
 
 	-- -- Only update a group ONCE per update cycle...
@@ -11526,22 +11530,22 @@ UpdateGroup = function(parent, group, window)
 			group.total = group.costTotal or 0;
 			group.progress = group.total > 0 and group.costProgress or 0
 
-			-- if app.DEBUG_LOG then print("UpdateGroup.Initial",group.key,group.key and group[group.key],group.progress,group.total) end
+			-- if app.DEBUG_PRINT then print("UpdateGroup.Initial",group.key,group.key and group[group.key],group.progress,group.total) end
 
 			-- If this item is collectible, then mark it as such.
 			if group.collectible then
 				-- An item is a special case where it may have both an appearance and a set of items
 				group.progress = group.progress + (group.collected and 1 or 0);
 				group.total = group.total + 1;
-				-- if app.DEBUG_LOG then print("UpdateGroup.Collectible",group.progress,group.total) end
+				-- if app.DEBUG_PRINT then print("UpdateGroup.Collectible",group.progress,group.total) end
 			end
 
 			-- Check if this is a group
 			if group.g then
-				-- if app.DEBUG_LOG then print("UpdateGroup.g",group.progress,group.total) end
+				-- if app.DEBUG_PRINT then print("UpdateGroup.g",group.progress,group.total) end
 				-- Update the subgroups recursively...
 				UpdateGroups(group, group.g, window);
-				-- if app.DEBUG_LOG then print("UpdateGroup.g.Updated",group.progress,group.total) end
+				-- if app.DEBUG_PRINT then print("UpdateGroup.g.Updated",group.progress,group.total) end
 				SetGroupVisibility(parent, group);
 			else
 				SetThingVisibility(parent, group);
@@ -11552,6 +11556,9 @@ UpdateGroup = function(parent, group, window)
 			parent.progress = (parent.progress or 0) + group.progress;
 		end
 	end
+
+	-- if app.DEBUG_PRINT then print("UpdateGroup.Done",group.progress,group.total,group.visible) end
+	-- if app.DEBUG_PRINT == 369437 then app.DEBUG_PRINT = nil; end
 end
 UpdateGroups = function(parent, g, window)
 	if g then
