@@ -87,7 +87,8 @@ _.Zones =
 								["coords"] = {
 									{ 24.8, 56.1, KORTHIA },
 									{ 26.0, 55.7, KORTHIA },
-									{ 43.5, 72.9, KORTHIA },
+									{ 29.7, 39.3, 2007 },	-- In the cave
+									{ 43.5, 72.9, 2007 },	-- In the cave
 								},
 							}),
 							o(369440, {	-- Riftbound Cache
