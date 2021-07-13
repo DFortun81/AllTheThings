@@ -8,11 +8,11 @@ _.Instances = { tier(9, {	-- Shadowlands
 		["coord"] = { 69.8, 31.8, THE_MAW },
 		["order"] = "02",
 		["maps"] = {
-			1998,	-- TorghastRaidA
-			1999,	-- TorghastRaidB
-			2000,	-- TorghastRaidC
-			2001,	-- TorghastRaidD
-			2002,	-- ??
+			1998,	-- Tower of the Damned
+			1999,	-- Shadowsteel Foundry
+			2000,	-- The Torment Chambers
+			2001,	-- Crown of Gorgoa
+			2002,	-- Pinnacle of Domination
 			2003,	-- ??
 			2004,	-- The Crucible
 		},
@@ -783,7 +783,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					q(64598, {	-- Sanctum of Domination - Damned If You Don't [H]
 						["provider"] = { "n", 178592 },	-- Highlord Bolvar Fordragon
 						-- ["altQuests"] = {
-						--	TODO: add Mythic quest (not listed on WH), add providers for all quests, add altQuests and description (see WoD/Legion raids) if quests are mutually exclusive per character
+						--	TODO: add Mythic quest (not listed on WH), add altQuests and description (see WoD/Legion raids) if quests are mutually exclusive per character
 						-- },
 					}),
 				}),
@@ -1154,9 +1154,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 			}),
 			d(16, {	-- Mythic
 				n(QUESTS, {
-					-- q(, {	-- Sanctum of Domination - Damned If You Don't [M]
-					-- --	["provider"] = { "n",  },	--
-					-- }),
+					q(64599, {	-- Sanctum of Domination - Damned If You Don't [M]
+						["provider"] = { "n", 178592 },	-- Highlord Bolvar Fordragon
+					}),
 				}),
 				n(ZONEDROPS, {
 					i(186371),	-- Ancient Brokensoul Bands
