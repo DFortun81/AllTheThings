@@ -201,6 +201,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 							i(185804),	-- Harmonious Spaulders
 							i(185806),	-- Improvisational Cinch
 							i(185789),	-- Sabatons of Measured Time
+							i(187256, {	-- Hip's Spare Fedora
+								["customCollect"] = "SL_COV_VEN",
+							}),
 						},
 					}),
 					e(2451, {	-- So'azmi

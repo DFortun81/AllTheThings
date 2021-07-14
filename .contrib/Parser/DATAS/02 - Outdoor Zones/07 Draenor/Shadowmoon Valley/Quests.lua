@@ -286,6 +286,10 @@ _.Zones =
 				}),
 				q(33814, {	-- Fast Expansion
 					["isBreadcrumb"] = true,
+					["sourceQuests"] = {
+						33059,	-- The Fate of Karabor
+						33081,	-- Escape From Shaz'gul
+					},
 					["coord"] = { 40.6, 54.8, 539 },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 81153 },	-- Scout Valdez

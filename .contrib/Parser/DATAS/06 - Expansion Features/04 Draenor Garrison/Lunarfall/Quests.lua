@@ -746,7 +746,10 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(36592, {	-- Bigger is Better
-						["sourceQuest"] = 34692,	-- Delegating on Draenor
+						["sourceQuests"] = {
+							34692,	-- Delegating on Draenor
+							33814,	-- Fast Expansion
+						},
 						["coord"] = { 41.2, 49.3, 582 },
 						["provider"] = { "n", 77209 },	-- Baros Alexston
 						["races"] = ALLIANCE_ONLY,

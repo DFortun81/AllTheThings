@@ -516,6 +516,9 @@ _.Zones =
 						["description"] = "Use the Mushroom at |cFFFFFFFF37.6, 61.5|r and jump into the broken tree.",
 						["g"] = {
 							i(180155),	-- Darkreach Splitter (potentially a ZR or ZD instead?)
+							i(180156),	-- Witherscorn Greataxe
+							i(180153),	-- Drustwrought Executioner
+							i(180163),	-- Blackthorn Harvester
 						},
 					}),
 				}),

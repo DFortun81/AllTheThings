@@ -332,3 +332,8 @@ _.ExpansionFeatures =
 		},
 	}),
 };
+_.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
+	n(QUESTS, {
+		q(49620),	-- completed some missions on the Legion Mission Board
+	}),
+});
