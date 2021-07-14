@@ -1132,7 +1132,7 @@ local inventorySlotsMap = {	-- Taken directly from CanIMogIt (Thanks!)
 	["INVTYPE_HOLDABLE"] = {17},
 	["INVTYPE_TABARD"] = {19},
 };
-local function BuildGroups(parent, g, noRecur)
+local function BuildGroups(parent, g)
 	if g then
 		-- Iterate through the groups
 		for key, group in ipairs(g) do
@@ -1140,10 +1140,7 @@ local function BuildGroups(parent, g, noRecur)
 			group.parent = parent;
 			group.indent = nil;
 			group.back = nil;
-			-- Build the sub-groups by default
-			if not noRecur then
-				BuildGroups(group, group.g);
-			end
+			BuildGroups(group, group.g);
 		end
 	end
 end
@@ -4871,9 +4868,15 @@ local function PopulateQuestObject(questObject)
 			questObject.repeatable = true;
 	end
 end
--- Returns a questObject containing a lot of Quest information for displaying in a row
+-- Returns a Quest or Vignette Object containing a lot of Quest information for displaying in a row
 local function GetPopulatedQuestObject(questID)
-	local questObject = app.CreateQuest(questID, { g = {}, progress = 0, total = 0});
+	local cachedVersion, createQuest = app.SearchForObject("questID", questID);
+	if cachedVersion and cachedVersion.isVignette then
+		createQuest = app.CreateVignette;
+	else
+		createQuest = app.CreateQuest;
+	end
+	local questObject =  createQuest(questID, { g = {}, progress = 0, total = 0});
 	PopulateQuestObject(questObject);
 	return questObject;
 end
@@ -9825,7 +9828,7 @@ app.TryPopulateQuestRewards = function(questObject)
 	-- numQuestRewards will often be 0 for fresh questID API calls...
 	-- pre-emptively call the following API method as well to get cached data earlier for the next refresh
 	GetQuestLogRewardInfo(1, questObject.questID);
-	-- app.DEBUG_PRINT = questObject.questID == 47566 and 47566;
+	-- app.DEBUG_PRINT = questObject.questID == 47063 and 47063;
 	-- if app.DEBUG_PRINT then print("TryPopulateQuestRewards",questObject.questID) end
 	if questObject.missingItem > 0 then
 		-- if app.DEBUG_PRINT then print("TryPopulateQuestRewards:numQuestRewards",questObject.questID,numQuestRewards,questObject.missingItem) end
@@ -9896,6 +9899,7 @@ app.TryPopulateQuestRewards = function(questObject)
 							questObject.missingItem = 0;
 							-- don't let cached groups pollute potentially inaccurate raw Data
 							item.link = nil;
+							if not questObject.g then questObject.g = {}; end
 							MergeObject(questObject.g, CreateObject(item));
 						end
 					end
@@ -9936,6 +9940,7 @@ app.TryPopulateQuestRewards = function(questObject)
 						end
 					end
 					questObject.missingCurr = 0;
+					if not questObject.g then questObject.g = {}; end
 					MergeObject(questObject.g, CreateObject(item));
 				end
 			end
@@ -9948,10 +9953,19 @@ app.TryPopulateQuestRewards = function(questObject)
 		questObject.OnUpdate = nil;
 		questObject.doUpdate = true;
 
+		-- Finally ensure that any cached entries for the quest are copied into this version of the object
+		local cachedQuest = app.SearchForObject("questID", questObject.questID);
+		if cachedQuest and cachedQuest.g then
+			-- print("Cloning in cached quest rewards",#cachedQuest.g)
+			MergeObjects(questObject.g, cachedQuest.g, true);
+		end
+
 		-- Resolve all symbolic links now that the quest contains items
+		FillSymLinks(questObject, true);
+
+		-- Special logic for Torn Invitation... maybe can clean up sometime
 		if questObject.g and #questObject.g > 0 then
 			for _,item in ipairs(questObject.g) do
-				FillSymLinks(item);
 				if item.g then
 					for k,o in ipairs(item.g) do
 						if o.itemID == 140495 then	-- Torn Invitation
@@ -9970,7 +9984,7 @@ app.TryPopulateQuestRewards = function(questObject)
 		questObject.doUpdate = questObject.OnUpdate;
 	end
 
-	app.DEBUG_PRINT = nil;
+	-- app.DEBUG_PRINT = nil;
 end
 -- Given an Object, will return the indicator (asset name) if this Object should show one
 app.GetIndicator = function(t)
@@ -17421,7 +17435,8 @@ app:GetWindow("WorldQuests", UIParent, function(self, force, got)
 					for i,poi in ipairs(pois) do
 						-- only include Tasks on this actual mapID since each Zone mapID is checked individually
 						if poi.mapID == mapID then
-							local questObject = GetPopulatedQuestObject(poi.questId);
+							local questObject = { questID = poi.questId };
+							PopulateQuestObject(questObject);
 							if includeAll or
 								-- include the quest in the list if holding shift and tracking quests
 								(includePermanent and includeQuests) or
@@ -17450,7 +17465,8 @@ app:GetWindow("WorldQuests", UIParent, function(self, force, got)
 					for id,questLine in pairs(questLines) do
 						-- dont show 'hidden' quest lines... not sure what this is exactly
 						if not questLine.hidden then
-							local questObject = GetPopulatedQuestObject(questLine.questID);
+							local questObject = { questID = questLine.questID };
+							PopulateQuestObject(questObject);
 							if includeAll or
 								-- include the quest in the list if holding shift and tracking quests
 								(includePermanent and includeQuests) or
@@ -17541,7 +17557,8 @@ app:GetWindow("WorldQuests", UIParent, function(self, force, got)
 										if timeLeft and timeLeft > 0 then
 											local mapID = arr[1];
 											local subMapObject = app.CreateMapWithStyle(mapID);
-											local questObject = GetPopulatedQuestObject(questID);
+											local questObject = { questID = questID };
+											PopulateQuestObject(questObject);
 
 											-- Custom time remaining based on the map POI since the quest itself does not indicate time remaining
 											if not questObject.timeRemaining then
@@ -17589,7 +17606,8 @@ app:GetWindow("WorldQuests", UIParent, function(self, force, got)
 					local bounties = C_QuestLog.GetBountiesForMapID(pair[2]);
 					if bounties and #bounties > 0 then
 						for i,bounty in ipairs(bounties) do
-							local questObject = GetPopulatedQuestObject(bounty.questID);
+							local questObject = { questID = bounty.questID };
+							PopulateQuestObject(questObject);
 							MergeObject(mapObject.g, questObject);
 						end
 					end
@@ -17609,7 +17627,7 @@ app:GetWindow("WorldQuests", UIParent, function(self, force, got)
 					_cache = SearchForField("questID", app.FactionID == Enum.FlightPathFaction.Alliance and 32900 or 32901);
 					if _cache then
 						for _,data in ipairs(_cache) do
-							MergeObject(mapObject.g, FillSymLinks(CreateObject(data), true));
+							MergeObject(mapObject.g, data, nil, true);
 						end
 					end
 					MergeObject(temp, mapObject);
@@ -17708,8 +17726,8 @@ app:GetWindow("WorldQuests", UIParent, function(self, force, got)
 											-- cache record is associated with the item
 											else
 												-- TODO: re-design this again eventually to reduce fake bloated numbers
-												if not item.g then item.g = { CloneData(data) };
-												else MergeObject(item.g, data, nil, true); end
+												if not item.g then item.g = {}; end
+												MergeObject(item.g, data, nil, true);
 											end
 										end
 									end--]]
@@ -17782,6 +17800,8 @@ app:GetWindow("WorldQuests", UIParent, function(self, force, got)
 				end
 				-- Build the heirarchy
 				BuildGroups(self.data, self.data.g);
+				-- Fill Symlinks in the list
+				FillSymLinks(self.data, true);
 				-- Force Update Callback
 				Callback(self.Update, self, true);
 			end
