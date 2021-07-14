@@ -60,7 +60,7 @@ _.HiddenQuestTriggers = {
 	q(64138),	-- hitting Renown 45
 	-- q( ),	-- hitting Renown 48 [Death Knight] (received Memory of ??)
 	-- q( ),	-- hitting Renown 48 [Demon Hunter] (received Memory of ??)
-	-- q( ),	-- hitting Renown 48 [Druid] (received Memory of ??)
+	q(64395),	-- hitting Renown 48 [Druid] (received Memory of Kindred Affinity)
 	q(64392),	-- hitting Renown 48 [Hunter] (received Memory of the Pact of the Soulstalkers)
 	-- q( ),	-- hitting Renown 48 [Mage] (received Memory of ??)
 	-- q( ),	-- hitting Renown 48 [Monk] (received Memory of ??)
