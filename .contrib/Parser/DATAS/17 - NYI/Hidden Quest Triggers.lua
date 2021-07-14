@@ -3946,7 +3946,6 @@ _.HiddenQuestTriggers = {
 		q(59677),	-- Triggered when looting the Battlefront Rations Key (180277)
 		q(57619),	-- triggered while on "In Death We Are Truly Tested" -- not sure if from using the extra action button to summon Vyraz, during the encounter, or when Draka picks you up
 		q(59843),	-- triggered when turning in "A Sure Bet"
-		q(62255),	-- triggered when using Simple Tome of Bone-Binding
 		q(61127),	-- Triggered after getting Oonar's Arm
 		q(61128),	-- Triggered after getting Sorrowbane
 		q(62411),	-- First time turning in Ani-Matter Animator (57245)
