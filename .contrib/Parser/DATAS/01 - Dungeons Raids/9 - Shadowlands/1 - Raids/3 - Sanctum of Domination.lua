@@ -1519,24 +1519,30 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		}),
 	}),
 });
+
 _.HiddenQuestTriggers = {
-	q(64604),	-- Stygian Ember from trash #1 (Normal / Heroic)
-	q(64616),	-- Stygian Ember from trash #1 (Normal / Heroic)
-	q(64683),	-- Stygian Ember from trash #1 (Normal)
-	q(64617),	-- Stygian Ember from trash #1 (Heroic)
-	q(64684),	-- Stygian Ember from trash #1 (Heroic)
+	q(64604),	-- Stygian Ember from Bonesteel [] (Normal / Heroic)
+	q(64616),	-- Stygian Ember from Bonesteel (Normal / Heroic)
+	q(64683),	-- Stygian Ember from Bonesteel (Normal)
+	q(64617),	-- Stygian Ember from Bonesteel (Heroic)
+	q(64684),	-- Stygian Ember from Bonesteel (Heroic)
 
-	q(64603),	-- Stygian Ember from trash #2 (Normal / Heroic)
-	q(64613),	-- Stygian Ember from trash #2 (Normal / Heroic)
-	q(64680),	-- Stygian Ember from trash #2 (Normal)
-	q(64614),	-- Stygian Ember from trash #2 (Heroic)
-	q(64681),	-- Stygian Ember from trash #2 (Heroic)
+	q(64603),	-- Stygian Ember from Soulember [176940] (Normal / Heroic)
+	q(64613),	-- Stygian Ember from Soulember (Normal / Heroic)
+	q(64680),	-- Stygian Ember from Soulember (Normal)
+	q(64614),	-- Stygian Ember from Soulember (Heroic)
+	q(64681),	-- Stygian Ember from Soulember (Heroic)
 
-	q(64602),	-- Stygian Ember from trash #3 (Normal / Heroic)
-	q(64610),	-- Stygian Ember from trash #3 (Normal / Heroic)
-	q(64677),	-- Stygian Ember from trash #3 (Normal)
-	q(64611),	-- Stygian Ember from trash #3 (Heroic)
-	q(64678),	-- Stygian Ember from trash #3 (Heroic)
+	q(64602),	-- Stygian Ember from Hollowsoul [176879] (Normal / Heroic)
+	q(64610),	-- Stygian Ember from Hollowsoul (Normal / Heroic)
+	q(64677),	-- Stygian Ember from Hollowsoul (Normal)
+	q(64611),	-- Stygian Ember from Hollowsoul (Heroic)
+	q(64678),	-- Stygian Ember from Hollowsoul (Heroic)
+
+	q(64606),	-- Stygian Ember from Borr-Gahn [178824] (Heroic)
+	q(64622),	-- Stygian Ember from Borr-Gahn (Heroic)
+	q(64623),	-- Stygian Ember from Borr-Gahn (Heroic)
+	q(64690),	-- Stygian Ember from Borr-Gahn (Heroic)
 
 	q(64605),	-- Stygian Ember from trash #4 (Normal / Heroic)
 	q(64619),	-- Stygian Ember from trash #4 (Normal / Heroic)
@@ -1544,61 +1550,63 @@ _.HiddenQuestTriggers = {
 	q(64620),	-- Stygian Ember from trash #4 (Heroic)
 	q(64687),	-- Stygian Ember from trash #4 (Heroic)
 
-	q(64326),	-- The Tarragrue (Normal / Heroic)
-	q(64327),	-- The Tarragrue (Normal / Heroic)
+	q(64326),	-- The Tarragrue (Normal / Heroic) (Heroic-Week 2)
+	q(64327),	-- The Tarragrue (Normal / Heroic) (Heroic-Week 2)
+	q(64328),	-- The Tarragrue (Heroic) (Heroic-Week 2)
 	q(64329),	-- The Tarragrue (Normal / Heroic)
-	q(64653),	-- The Tarragrue (Normal / Heroic)
-	q(64328),	-- The Tarragrue (Heroic)
+	q(64629),	-- The Tarragrue (Heroic-Week 2)
+	q(64653),	-- The Tarragrue (Normal / Heroic) (Heroic-Week 2)
 
-	q(64330),	-- Eye of the Jailer (Normal / Heroic)
-	q(64331),	-- Eye of the Jailer (Normal / Heroic)
-	q(64630),	-- Eye of the Jailer (Normal / Heroic)
-	q(64657),	-- Eye of the Jailer (Normal / Heroic)
+	q(64330),	-- Eye of the Jailer (Normal / Heroic) (Heroic-Week 2)
+	q(64331),	-- Eye of the Jailer (Normal / Heroic) (Heroic-Week 2)
+	q(64332),	-- Eye of the Jailer (Heroic-Week 2)
+	q(64630),	-- Eye of the Jailer (Normal / Heroic) (Heroic-Week 2)
 	q(64632),	-- Eye of the Jailer (Heroic)
+	q(64657),	-- Eye of the Jailer (Normal / Heroic) (Heroic-Week 2)
 
-	q(64334),	-- The Nine (Normal / Heroic)
-	q(64474),	-- The Nine (Normal / Heroic)
-	q(64631),	-- The Nine (Normal / Heroic)
-	q(64658),	-- The Nine (Normal / Heroic)
-	q(64475),	-- The Nine (Heroic)
+	q(64334),	-- The Nine (Normal / Heroic) (Heroic-Week 2)
+	q(64474),	-- The Nine (Normal / Heroic) (Heroic-Week 2)
+	q(64475),	-- The Nine (Heroic) (Heroic-Week 2)
+	q(64631),	-- The Nine (Normal / Heroic) (Heroic-Week 2)
+	q(64658),	-- The Nine (Normal / Heroic) (Heroic-Week 2)
 
-	q(64481),	-- Soulrender Dormazain (Normal / Heroic)
-	q(64482),	-- Soulrender Dormazain (Normal / Heroic)
-	q(64633),	-- Soulrender Dormazain (Normal / Heroic)
-	q(64660),	-- Soulrender Dormazain (Normal / Heroic)
-	q(64483), 	-- Soulrender Dormazain (Heroic)
+	q(64481),	-- Soulrender Dormazain (Normal / Heroic) (Heroic-Week 2)
+	q(64482),	-- Soulrender Dormazain (Normal / Heroic) (Heroic-Week 2)
+	q(64483), 	-- Soulrender Dormazain (Heroic) (Heroic-Week 2)
+	q(64633),	-- Soulrender Dormazain (Normal / Heroic) (Heroic-Week 2)
+	q(64660),	-- Soulrender Dormazain (Normal / Heroic) (Heroic-Week 2)
 
 	q(64608),	-- Garrosh cinematic (Normal / Heroic)
 
-	q(64477),	-- Remnant of Ner'zhul (Normal / Heroic)
-	q(64478),	-- Remnant of Ner'zhul (Normal / Heroic)
-	q(64632),	-- Remnant of Ner'zhul (Normal / Heroic)
-	q(64659),	-- Remnant of Ner'zhul (Normal / Heroic)
-	q(64479),	-- Remnant of Ner'zhul (Heroic)
+	q(64477),	-- Remnant of Ner'zhul (Normal / Heroic) (Heroic-Week 2)
+	q(64478),	-- Remnant of Ner'zhul (Normal / Heroic) (Heroic-Week 2)
+	q(64479),	-- Remnant of Ner'zhul (Heroic) (Heroic-Week 2)
+	q(64632),	-- Remnant of Ner'zhul (Normal / Heroic) (Heroic-Week 2)
+	q(64659),	-- Remnant of Ner'zhul (Normal / Heroic) (Heroic-Week 2)
 
-	q(64485),	-- Painsmith Raznal (Normal / Heroic)
-	q(64486),	-- Painsmith Raznal (Normal / Heroic)
-	q(64634),	-- Painsmith Raznal (Normal / Heroic)
-	q(64661),	-- Painsmith Raznal (Normal / Heroic)
-	q(64487),	-- Painsmith Raznal (Heroic)
+	q(64485),	-- Painsmith Raznal (Normal / Heroic) (Heroic-Week 2)
+	q(64486),	-- Painsmith Raznal (Normal / Heroic) (Heroic-Week 2)
+	q(64487),	-- Painsmith Raznal (Heroic) (Heroic-Week 2)
+	q(64634),	-- Painsmith Raznal (Normal / Heroic) (Heroic-Week 2)
+	q(64661),	-- Painsmith Raznal (Normal / Heroic) (Heroic-Week 2)
 
-	q(64489),	-- Guardian of the First Ones (Normal / Heroic)
-	q(64490),	-- Guardian of the First Ones (Normal / Heroic)
-	q(64635),	-- Guardian of the First Ones (Normal / Heroic)
-	q(64662),	-- Guardian of the First Ones (Normal / Heroic)
-	q(94491),	-- Guardian of the First Ones (Heroic)
+	q(64489),	-- Guardian of the First Ones (Normal / Heroic) (Heroic-Week 2)
+	q(64490),	-- Guardian of the First Ones (Normal / Heroic) (Heroic-Week 2)
+	q(64491),	-- Guardian of the First Ones (Heroic) (Heroic-Week 2)
+	q(64635),	-- Guardian of the First Ones (Normal / Heroic) (Heroic-Week 2)
+	q(64662),	-- Guardian of the First Ones (Normal / Heroic) (Heroic-Week 2)
 
-	q(64493),	-- Fatescribe Roh-Kalo (Normal)?
-	q(64494),	-- Fatescribe Roh-Kalo (Normal)?
-	q(64636),	-- Fatescribe Roh-Kalo (Normal)?
-	q(64663),	-- Fatescribe Roh-Kalo (Normal)?
-	q(64495),	-- Fatescribe Roh-Kalo (Heroic)
+	q(64493),	-- Fatescribe Roh-Kalo (Normal)? / (Heroic-Week 2)
+	q(64494),	-- Fatescribe Roh-Kalo (Normal)? / (Heroic-Week 2)
+	q(64495),	-- Fatescribe Roh-Kalo (Heroic) / (Heroic-Week 2)
+	q(64636),	-- Fatescribe Roh-Kalo (Normal)? / (Heroic-Week 2)
+	q(64663),	-- Fatescribe Roh-Kalo (Normal)? / (Heroic-Week 2)
 
 	q(64497),	-- Kel'Thuzad (Normal)?
 	q(64498),	-- Kel'Thuzad (Normal)?
+	q(64499),	-- Kel'Thuzad (Heroic)
 	q(64637),	-- Kel'Thuzad (Normal)?
 	q(64664),	-- Kel'Thuzad (Normal)?
-	q(64499),	-- Kel'Thuzad (Heroic)
 
 	q(64501),	-- Sylvanas Windrunner (Normal)?
 	q(64502),	-- Sylvanas Windrunner (Normal)?
