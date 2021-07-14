@@ -1288,8 +1288,8 @@ _.HiddenQuestTriggers = {
 		q(31301),	-- Kun-lai Summit - Shomi Strand Tracking - triggers when you find Sage Liao in Zouchin Strand
 		q(30854),	-- Kun-lai Summit - Lha-Po Tracking Quest - triggers after turning in "One Traveler's Misfortune"
 		q(31205),	-- Kun-lai Summit - Lorewalker Cho Tracking Quest - triggers after turning in "Fisherman's Tale"
-		q(31298),	-- Kun-lai Summit - Zouchin Village intro tracking - triggers after turning in "Fisherman's Tale"
-		q(31299),	-- Kun-lai Summit - Shomi Ruins Tracking - triggers while on "Make a Fighter Out of Me" and you walk into the zandalari vanguard ruins
+		q(31298),	-- Kun-lai Summit - Zouchin Village intro tracking
+		q(31299),	-- Kun-lai Summit - Shomi Ruins Tracking - triggers when you walk into the zandalari vanguard ruins/Zouchin Village
 		q(31310),	-- Kun-lai Summit - Interrogation tracking - triggers when doing "Revelations"
 		q(31300),	-- Kun-lai Summit - Shomi Beach Tracking - triggered while on "Justice" shortly after killing Captain Ripflesh
 		q(31461),	-- Kun-lai Summit - Spoke to Xuen - part of "A Celestial Experience"
