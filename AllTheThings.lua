@@ -8095,20 +8095,33 @@ local function GetCached(t)
 end
 local function GetCachedField(t, field)
 	--[[ Debug Prints ]
-	-- local t, id = GetCached(t);
-	-- if t[field] then
-	-- 	print("GetCachedField",id,field,t[field]);
-	-- end
+	local _t, id = GetCached(t);
+	if _t[field] then
+		print("GetCachedField",id,field,_t[field]);
+	end
 	--]]
 	t = GetCached(t);
 	return t[field];
 end
+local function SetCachedField(t, field, value)
+	--[[ Debug Prints ]
+	local _t, id = GetCached(t);
+	if _t[field] then
+		print("SetCachedField",id,field,"Old",t[field],"New",value);
+	else
+		print("SetCachedField",id,field,"New",value);
+	end
+	--]]
+	t = GetCached(t);
+	rawset(t, field, value);
+end
 -- Consolidated function to handle how many retries for information an Item may have
 local function HandleItemRetries(t)
+	local t, id = GetCached(t);
 	if rawget(t, "retries") then
 		rawset(t, "retries", rawget(t, "retries") + 1);
-		if t.retries > app.MaximumItemInfoRetries then
-			local itemName = "Item #" .. t.itemID .. "*";
+		if rawget(t, "retries") > app.MaximumItemInfoRetries then
+			local itemName = "Item #" .. tostring(id) .. "*";
 			rawset(t, "title", L["FAILED_ITEM_INFO"]);
 			rawset(t, "text", itemName);
 			rawset(t, "retries", nil);
@@ -8125,7 +8138,7 @@ local function RawSetItemInfoFromLink(t, link)
 	local name, link, quality, _, _, _, _, _, _, icon, _, _, _, b = GetItemInfo(link);
 	if link then
 		--[[ Debug Prints ]
-		-- local t, id = GetCached(t);
+		-- local _t, id = GetCached(t);
 		-- print("rawset item",id)
 		--]]
 		t = GetCached(t);
@@ -8184,43 +8197,10 @@ local itemFields = {
 			-- save this link so it doesn't need to be built again
 			rawset(t, "rawlink", itemLink);
 			return RawSetItemInfoFromLink(t, itemLink);
-			-- local _, link, quality, _, _, _, _, _, _, icon, _, _, _, b = GetItemInfo(itemLink);
-			-- -- print("Retry", rawget(t, "retries"), itemLink, link)
-			-- if link then
-			-- 	rawset(t, "retries", nil);
-			-- 	rawset(t, "link", link);
-			-- 	rawset(t, "icon", icon);
-			-- 	rawset(t, "q", quality);
-			-- 	if quality > 6 then
-			-- 		-- heirlooms return as 1 but are technically BoE for our concern
-			-- 		rawset(t, "b", 2);
-			-- 	else
-			-- 		rawset(t, "b", b);
-			-- 	end
-			-- 	return link;
-			-- else
-			-- 	HandleItemRetries(t);
-			-- 	-- if rawget(t, "retries") then
-			-- 	-- 	rawset(t, "retries", rawget(t, "retries") + 1);
-			-- 	-- 	if t.retries > app.MaximumItemInfoRetries then
-			-- 	-- 		local itemName = "Item #" .. t.itemID .. "*";
-			-- 	-- 		rawset(t, "title", L["FAILED_ITEM_INFO"]);
-			-- 	-- 		rawset(t, "text", itemName);
-			-- 	-- 		rawset(t, "retries", nil);
-			-- 	-- 		rawset(t, "link", nil);
-			-- 	-- 		rawset(t, "s", nil);
-			-- 	-- 		return itemName;
-			-- 	-- 	end
-			-- 	-- else
-			-- 	-- 	rawset(t, "retries", 1);
-			-- 	-- end
-			-- end
 		end
 	end,
 	["name"] = function(t)
 		return GetCachedField(t, "name") or RETRIEVING_DATA;
-		-- local link = t.link;
-		-- return link and GetItemInfo(link);
 	end,
 	["specs"] = function(t)
 		return GetFixedItemSpecInfo(t.itemID);
@@ -8233,32 +8213,8 @@ local itemFields = {
 	end,
 	["b"] = function(t)
 		return GetCachedField(t, "b") or 2;
-		-- local link = t.link;
-		-- -- return link and select(14, GetItemInfo(link)) or 2;
-		-- if link then
-		-- 	-- rawset(t, "b", select(14, GetItemInfo(link)));
-		-- 	print("rawset.b",t.modItemID,rawget(t, "b"))
-		-- 	return rawget(t, "b");
-		-- end
-		-- assume BoE item since it is unsourced
-		-- print("default BoE",t.modItemID)
-		-- return 2;
 	end,
 	["f"] = function(t)
-		-- TODO: this logic causes tons of lag. why do we need to determine if an item is a quest item for filtering?
-		-- if t.questID then return 104; end
-		-- local results = SearchForField("itemID", t.itemID);
-		-- if results then
-		-- 	for i,o in ipairs(results) do
-		-- 		if o.questID then return 104; end
-		-- 	end
-		-- end
-		-- local results = SearchForField("itemIDAsCost", t.itemID);
-		-- if results then
-		-- 	for i,o in ipairs(results) do
-		-- 		if o.questID then return 104; end
-		-- 	end
-		-- end
 		-- Unknown item type after Parser, so make sure we save the filter for later references
 		rawset(t, "f", 50);
 		return rawget(t, "f");
@@ -8292,38 +8248,34 @@ local itemFields = {
 	["collectibleAsAchievement"] = function(t)
 		return app.CollectibleAchievements;
 	end,
+	["costCollectibles"] = function(t)
+		return GetCachedField(t, "costCollectibles");
+	end,
 	["collectibleAsCost"] = function(t)
 		-- Quick escape if current-character only and comes from something saved
 		if not app.MODE_DEBUG_OR_ACCOUNT and t.parent and t.parent.saved then return false; end
-		-- TODO: convert this into a common cache table since cost items are obviously listed multiple times, we shouldn't have to generate
-		-- results for every instance of a group
 		if not t.costCollectibles then
-			local results, id;-- = rawget(t, "collectibleResults");
-			-- if results then
-			-- 	print("Existing collectibleAsCost Results",t.key,t[t.key],#results)
-			-- end
+			local results, id;
 			-- Search by modItemID if possible for accuracy
 			if t.modItemID and t.modItemID ~= t.itemID then
 				id = t.modItemID;
 				results = app.SearchForField("itemIDAsCost", id);
-				-- rawset(t, "collectibleResults", results);
 			end
 			-- If no results, search by plain itemID
 			if not results and t.itemID then
 				id = t.itemID;
 				results = app.SearchForField("itemIDAsCost", id);
-				-- rawset(t, "collectibleResults", results);
 			end
 			if results and #results > 0 then
-				local filteredCost;
+				local costCollectibles, filteredCost = {};
+				SetCachedField(t, "costCollectibles", costCollectibles);
 				for _,ref in pairs(results) do
 					-- different itemID, OR same itemID with different modID is allowed
 					if (ref.itemID ~= id or (ref.modItemID and ref.modItemID ~= t.modItemID)) and
 						-- is not a parent of the cost group itself
 						not GetRelativeField(t, "parent", ref) then
 						-- track this item as a cost collectible
-						if not t.costCollectibles then t.costCollectibles = { ref }
-						else tinsert(t.costCollectibles, ref); end
+						tinsert(costCollectibles, ref);
 						-- account or debug, skip filter/exclusion logic, or else make sure not altcollected
 						if (app.MODE_DEBUG_OR_ACCOUNT or not GetRelativeValue(t, "altcollected"))
 							-- don't include groups which do not meet the current filter requirements
@@ -8397,56 +8349,6 @@ local itemFields = {
 			end
 		end
 		return true;
-
-
-		-- -- local LOG = t.itemID == 23247 and t.itemID;
-		-- -- if LOG then print("Logging Costs for",LOG) end
-		-- local results, id;-- = rawget(t, "collectibleResults");
-		-- -- if results then
-		-- -- 	print("Existing collectedAsCost Results",t.key,t[t.key],#results)
-		-- -- end
-		-- -- Search by modItemID if possible for accuracy
-		-- if not results and t.modItemID and t.modItemID ~= t.itemID then
-		-- 	id = t.modItemID;
-		-- 	results = app.SearchForField("itemIDAsCost", id);
-		-- end
-		-- -- If no results, search by plain itemID
-		-- if not results and t.itemID then
-		-- 	id = t.itemID;
-		-- 	results = app.SearchForField("itemIDAsCost", id);
-		-- end
-		-- if results and #results > 0 then
-		-- 	-- if LOG then print("Found Cost Results",#results) end
-		-- 	for _,ref in pairs(results) do
-		-- 		-- TODO: why is this so weird
-		-- 		-- ensure this result has updated itself prior to determining if a cost is required for it
-		-- 		-- if ref.parent then app.UpdateGroup(ref.parent, ref); end
-		-- 		-- if LOG then print("Cost Result",ref.key,ref[ref.key]) end
-		-- 		-- if LOG then print("-- Info: total",ref.total,"prog",ref.progress,"altcollected",ref.altcollected,"collectible",ref.collectible,"collected",ref.collected) end
-		-- 		-- different itemID, OR same itemID with different modID is allowed
-		-- 		if (ref.itemID ~= id or (ref.modItemID and ref.modItemID ~= t.modItemID)) and app.RecursiveGroupRequirementsFilter(ref) then
-		-- 			-- TODO: maybe use this instead eventually
-		-- 			-- if not app.IsComplete(ref) then
-		-- 			-- 	return false;
-		-- 			-- end
-		-- 			-- Used as a cost for something which is collectible itself and not collected
-		-- 			-- print("check collectible/collected")
-		-- 			if ref.collectible and not ref.collected then
-		-- 				-- if LOG then print("Cost Required via Collectible") end
-		-- 				return false;
-		-- 			-- Used as a cost for something which has an incomplete progress
-		-- 			elseif ref.total and ref.total > 0 and ref.progress < ref.total and
-		-- 				-- is account or debug mode or the thing is not altcollected
-		-- 				(app.MODE_DEBUG_OR_ACCOUNT or not ref.altcollected) and
-		-- 				-- is not a parent of the cost group itself
-		-- 				not GetRelativeField(t, "parent", ref) then
-		-- 				-- if LOG then print("Cost Required via Total/Prog") end
-		-- 				return false;
-		-- 			end
-		-- 		end
-		-- 	end
-		-- 	return true;
-		-- end
 	end,
 	["collectedAsCostAfterFailure"] = function(t)
 
