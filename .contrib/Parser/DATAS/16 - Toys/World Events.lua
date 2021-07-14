@@ -69,7 +69,7 @@ _.Toys =
 			i(151184),	-- Verdant Throwing Sphere
 			i(129938),	-- Will of Northrend
 		}),
-		n(-174, {	-- Darkmoon Faire
+		holiday(235448, {	-- Darkmoon Faire
 			i(122126),	-- Attraction Sign
 			i(116115),	-- Blazing Wings
 			i(151265),	-- Blight Boar Microphone
@@ -90,10 +90,9 @@ _.Toys =
 			i(126931),	-- Seafarer's Slidewhistle
 			i(138202),	-- Sparklepony XL
 		}),
-		n(-56, {    -- Brewfest
-			["achievementID"] = 1683,	-- Brewmaster
+		holiday(235442, {    -- Brewfest
 			["u"] = 24,
-			["g"] = {
+			["g"] = sharedData({["u"] = 24,}, {
 				i(116758),	-- Brewfest Banner
 				i(169865),	-- Brewfest Chowdown Trophy
 				i(71137),	-- Brewfest Keg Pony
@@ -102,31 +101,28 @@ _.Toys =
 				i(138900),	-- Gravil Goldbraid's Famous Sausage Hat
 				i(90427),	-- Pandaren Brewpack
 				i(116757),	-- Steamworks Sausage Grill
-			},
+			}),
 		}),
-		n(-52, {    -- Children's Week
-			["achievementID"] = 1793,	-- For The Children
+		holiday(235445, {    -- Children's Week
 			["u"] = 20,
-			["g"] = {
+			["g"] = sharedData({["u"] = 20,}, {
 				i(69895),	-- Green Balloon
 				i(69896),	-- Yellow Balloon
-			},
+			}),
 		}),
-		n(-59, {    -- Day of the Dead
-			["achievementID"] = 3456,	-- Dead Man's Party
+		holiday(307365, {    -- Day of the Dead
 			["u"] = HOLIDAY_DAY_OF_THE_DEAD,
-			["g"] = {
+			["g"] = sharedData({["u"] = HOLIDAY_DAY_OF_THE_DEAD,}, {
 				i(116856),	-- "Blooming Rose" Contender's Costume
 				i(116888),	-- "Night Demon" Contender's Costume
 				i(116889),	-- "Purple Phantom" Contender's Costume
 				i(116890),	-- "Santo's Sun" Contender's Costume
 				i(116891),	-- "Snowy Owl" Contender's Costume
-			},
+			}),
 		}),
-		n(-61, {    -- Feast of Winter Veil
-			["achievementID"] = 1691,	-- Merrymaker
+		holiday(235485, {    -- Feast of Winter Veil
 			["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL,
-			["g"] = {
+			["g"] = sharedData({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL,}, {
 				i(54343),	-- Blue Crashin' Thrashin' Racer Controller
 				i(172223),	-- Crashin' Thrashin' Battleship [A]
 				i(108632, {	-- Crashin' Thrashin' Flamer Controller
@@ -171,19 +167,18 @@ _.Toys =
 				i(17712),	-- Winter Veil Disguise Kit
 				i(178530),	-- Wreath-A-Rang
 				i(116691),	-- Zhevra Lounge Cushion
-			},
+			}),
 		}),
-		n(-58, {	-- Hallow's End
-			["achievementID"] = 1656,	-- Hallowed Be Thy Name
+		holiday(235462, {	-- Hallow's End
 			["u"] = 26,
-			["g"] = {
-				un(26, i(128807)),	-- Coin of Many Faces
+			["g"] = sharedData({["u"] = 26,}, {
+				i(128807),	-- Coin of Many Faces
 				i(163045),	-- Headless Horseman's Hearthstone
-				un(26, i(151271)),	-- Horse Head Costume
-				un(26, i(151270)),	-- Horse Tail Costume
-				un(26, i(70722)),	-- Little Wickerman
-				un(26, i(128794)),	-- Sack of Spectral Spiders
-			},
+				i(151271),	-- Horse Head Costume
+				i(151270),	-- Horse Tail Costume
+				i(70722),	-- Little Wickerman
+				i(128794),	-- Sack of Spectral Spiders
+			}),
 		}),
 		holiday(235468, {	-- Love is in the Air
 			["u"] = HOLIDAY_LOVEINTHEAIR,
@@ -196,10 +191,9 @@ _.Toys =
 				i(116651),	-- True Love Prism
 			}),
 		}),
-		n(-47, {    -- Lunar Festival
-			["achievementID"] = 913,	-- To Honor One's Elders
+		holiday(235471, {    -- Lunar Festival
 			["u"] = 17,
-			["g"] = {
+			["g"] = sharedData({["u"] = 17,}, {
 				i(165672),	-- Blue Dragon Body Costume
 				i(165671),	-- Blue Dragon Head Costume
 				i(165673),	-- Blue Dragon Tail Costume
@@ -213,18 +207,17 @@ _.Toys =
 				i(165674),	-- Green Dragon Head Costume
 				i(165676),	-- Green Dragon Tail Costume
 				i(165669),	-- Lunar Elder's Hearthstone
-			},
+			}),
 		}),
-		n(-53, {	-- Midsummer Fire Festival
-			["icon"] = "Interface\\Icons\\inv_summerfest_firespirit",
+		holiday(235474, {	-- Midsummer Fire Festival
 			["u"] = 21,
-			["g"] = {
+			["g"] = sharedData({["u"] = 21,}, {
 				i(34686),	-- Brazier of Dancing Flames
 				i(116440),	-- Burning Defender's Medallion
 				i(116435),	-- Cozy Bonfire
 				i(166746),	-- Fire Eater's Hearthstone
 				i(141649),	-- Set of Matches
-			},
+			}),
 		}),
 		holiday(235477, {	-- Noblegarden
 			["u"] = HOLIDAY_NOBLEGARDEN,
@@ -232,20 +225,18 @@ _.Toys =
 				i(165802),	-- Noble Gardener's Hearthstone
 			}),
 		}),
-		n(-60, {    -- Pilgrim's Bounty
-			["achievementID"] = 3478,	-- Pilgrim
+		holiday(235466, {    -- Pilgrim's Bounty
 			["u"] = HOLIDAY_PILGRIMS_BOUNTY,
-			["g"] = {
-				un(HOLIDAY_PILGRIMS_BOUNTY, i(116400)),	-- Silver-Plated Turkey Shooter
-			},
+			["g"] = sharedData({["u"] = HOLIDAY_PILGRIMS_BOUNTY,}, {
+				i(116400),	-- Silver-Plated Turkey Shooter
+			}),
 		}),
-		n(-55, {    -- Pirates' Day
-			["achievementID"] = 3457,	-- The Captain's Booty
+		holiday(235481, {    -- Pirates' Day
 			["u"] = 23,
-			["g"] = {
+			["g"] = sharedData({["u"] = 23,}, {
 				i(150547),	-- Jolly Roger
 				i(138415),	-- Slightly-Chewed Insult Book
-			},
+			}),
 		}),
 	}),
 };
