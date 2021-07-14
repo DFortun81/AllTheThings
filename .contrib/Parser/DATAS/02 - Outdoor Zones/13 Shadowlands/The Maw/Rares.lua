@@ -126,7 +126,7 @@ _.Zones =
 					},
 				}),
 				n(171317, {	-- Conjured Death
-					-- ["description"] = "Spawns outside the Tremaculum when the Venthyr assault is active.",
+					["description"] = "Spawns outside the Tremaculum when the Venthyr assault is active and inside the Tremaculum at all other times.",
 					["questID"] = 61106,
 					["isDaily"] = true,
 					["coords"] = {
