@@ -19445,7 +19445,7 @@ app.events.VARIABLES_LOADED = function()
 		for i,itemID in ipairs({ 31892, 31900, 31899, 31895, 31894, 31898, 31896, 31893 }) do reagentCache[itemID] = craftedItem; end
 	end
 
-	Push(app, "WaitOnMountData", function()
+	StartCoroutine("DataLoad", function()
 		-- First, load the addon data
 		app:GetDataCache();
 
@@ -19708,10 +19708,16 @@ app.events.VARIABLES_LOADED = function()
 
 		RefreshSaves();
 
+		-- Let a frame go before hitting the initial refresh to make sure as much time as possible is allowed for the operation
+		-- print("Yield prior to Refresh")
+		coroutine.yield();
+
 		if needRefresh then
+			-- print("Force Refresh")
 			-- collection refresh includes data refresh
 			RefreshCollections();
 		else
+			-- print("Refresh")
 			app:RefreshData(false);
 		end
 
