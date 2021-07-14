@@ -506,6 +506,12 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 64.7, 25.6, KORTHIA },
 				}),
+				q(63790, {	-- Broker's Bounty: Lord Azzorak
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
+					["provider"] = { "o", 368772 },	-- Sigilscored Scroll
+					["isDaily"] = true,
+					["coord"] = { 64.7, 25.6, KORTHIA },
+				}),
 				q(63791, {	-- Broker's Bounty: Valdinar the Curseborn
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "o", 368772 },	-- Sigilscored Scroll
@@ -655,12 +661,6 @@ _.Zones =
 					["coord"] = { 64.7, 25.6, KORTHIA },
 				}),
 				q(63794, {	-- Broker's Bounty: Hungering Behemoth
-					["sourceQuests"] = { 64556 },	-- In Need of Assistance
-					["provider"] = { "o", 368772 },	-- Sigilscored Scroll
-					["isDaily"] = true,
-					["coord"] = { 64.7, 25.6, KORTHIA },
-				}),
-				q(63790, {	-- Broker's Bounty: Lord Azzorak
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "o", 368772 },	-- Sigilscored Scroll
 					["isDaily"] = true,
