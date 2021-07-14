@@ -901,3 +901,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		}),
 	}),
 });
+_.HiddenQuestTriggers = {
+	q(63427),	-- Intro Skip
+	q(63007),	-- Intro Skip
+};

@@ -2614,6 +2614,9 @@ _.HiddenQuestTriggers = {
 			q(61497),	-- using Stock: Greeting Kits
 			q(59690),	-- triggered when using "Racing Permit," reward from "It's Race Day in the Ramparts!" WQ
 			q(59695),	-- triggered when using "Maldraxxi Challenge Banner"
+			
+		-- Misson Table
+			q(60635),	-- Unknown
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {

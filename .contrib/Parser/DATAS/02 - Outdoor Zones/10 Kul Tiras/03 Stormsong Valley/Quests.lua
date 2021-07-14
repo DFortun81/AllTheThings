@@ -1729,3 +1729,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		}),
 	}),
 });
+_.HiddenQuestTriggers = {
+	q(52296),	-- Killing Whiplash and completing corresponding WQ
+};

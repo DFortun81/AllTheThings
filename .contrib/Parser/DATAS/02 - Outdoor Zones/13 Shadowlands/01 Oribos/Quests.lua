@@ -910,6 +910,7 @@ _.HiddenQuestTriggers = {
 	q(64514),	-- triggered while doing The Battle of Ardenweald scenario
 	q(64515),	-- triggered while doing The Battle of Ardenweald scenario
 	q(63416),	-- triggers when accepting the first of your 'Zone Meta Quests' on a Skip Character
+	q(64782),	-- Unknown (Hearthstone to Oribos)
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {

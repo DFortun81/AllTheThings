@@ -34,6 +34,7 @@ _.ExpansionFeatures =
 					["crs"] = {
 						179433,	-- Vault Aegis
 						176578,	-- Vault Sentinel
+						179526,	-- Troz'igal the Oppressor
 					},
 				}),
 				i(187094, {	-- Gilded Spike Fortresses
@@ -45,6 +46,9 @@ _.ExpansionFeatures =
 					["crs"] = {
 						179526,	-- Troz'igal the Oppressor
 					},
+				}),
+				i(187092, {	-- Gilded Shoulder-Shields
+					["cr"] = 176578	-- Vault Sentinel
 				}),
 				i(187084, {	-- Jailer's Eye Crescent
 					["crs"] = {
@@ -157,8 +161,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				i(186549, {	-- Gilded Darknight (PET!)
-				--	["crs"] = { TODO: drops in adamant vaults but no specific crs data yet
-				--	},
+					["cr"] = 176578 -- Vault Sentinel { TODO: drops in adamant vaults but no specific crs data yet
 				}),
 				i(183116, {	-- Hissing Deathroach
 					["crs"] = {
