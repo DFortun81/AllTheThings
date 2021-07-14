@@ -116,7 +116,9 @@ _.Zones =
 				i(176968),	-- Ossein Scale Sabatons
 				i(176984),	-- Ossein Scale Spaulders
 				i(183124, {	-- Simple Tome of Bone-Binding
+					["questID"] = 62255,
 					["classes"] = { HUNTER },
+					["_drop"] = { "spellID" },
 				}),
 				i(178947),	-- Steeljaw Crossbow
 				i(178951),	-- Vellum-Bound Tome
