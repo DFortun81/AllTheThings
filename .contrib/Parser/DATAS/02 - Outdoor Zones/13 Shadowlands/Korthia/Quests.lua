@@ -476,6 +476,7 @@ _.Zones =
 						63913,	-- Unstable Sin'dorei Explosive
 					},
 					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
+					["minReputation"] = { 2472, 25000 },	-- Tier 5
 					["coord"] = { 62.7, 22.5, KORTHIA },
 				}),
 				q(64305, {	-- The Tormentors of Torghast

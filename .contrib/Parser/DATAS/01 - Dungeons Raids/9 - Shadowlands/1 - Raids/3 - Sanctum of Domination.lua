@@ -1553,7 +1553,7 @@ _.HiddenQuestTriggers = {
 	q(64326),	-- The Tarragrue (Normal / Heroic) (Heroic-Week 2)
 	q(64327),	-- The Tarragrue (Normal / Heroic) (Heroic-Week 2)
 	q(64328),	-- The Tarragrue (Heroic) (Heroic-Week 2)
-	q(64329),	-- The Tarragrue (Normal / Heroic)
+	q(64329),	-- The Tarragrue (Normal / Heroic) (Mythic-Week2)
 	q(64629),	-- The Tarragrue (Heroic-Week 2)
 	q(64653),	-- The Tarragrue (Normal / Heroic) (Heroic-Week 2)
 

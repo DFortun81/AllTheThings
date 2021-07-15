@@ -9957,6 +9957,7 @@ app.TryPopulateQuestRewards = function(questObject)
 		local cachedQuest = app.SearchForObject("questID", questObject.questID);
 		if cachedQuest and cachedQuest.g then
 			-- print("Cloning in cached quest rewards",#cachedQuest.g)
+			if not questObject.g then questObject.g = {}; end
 			MergeObjects(questObject.g, cachedQuest.g, true);
 		end
 
