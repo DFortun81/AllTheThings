@@ -59,7 +59,7 @@ _.HiddenQuestTriggers = {
 	-- q( ),	-- hitting Renown 48 [Demon Hunter] (received Memory of ??)
 	q(64397),	-- hitting Renown 48 [Druid] (received Memory of Celestial Spirits)
 	-- q( ),	-- hitting Renown 48 [Hunter] (received Memory of the Pact of the Soulstalkers)
-	-- q( ),	-- hitting Renown 48 [Mage] (received Memory of Death's Fathom)
+	q(64403),	-- hitting Renown 48 [Mage] (received Memory of the Fae Heart)
 	-- q( ),	-- hitting Renown 48 [Monk] (received Memory of ??)
 	-- q( ),	-- hitting Renown 48 [Paladin] (received Memory of ??)
 	-- q( ),	-- hitting Renown 48 [Priest] (received Memory of ??)

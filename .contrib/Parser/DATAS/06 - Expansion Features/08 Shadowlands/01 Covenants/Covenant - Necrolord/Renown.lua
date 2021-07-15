@@ -57,7 +57,7 @@ _.HiddenQuestTriggers = {
 	q(62754),	-- hitting Renown 35
 	q(62926),	-- hitting Renown 39
 	q(64097),	-- hitting Renown 45
-	-- q( ),	-- hitting Renown 48 [Death Knight] (received Memory of ??)
+	q(64404),	-- hitting Renown 48 [Death Knight] (received Memory of an Abomination's Frenzy)
 	-- q( ),	-- hitting Renown 48 [Demon Hunter] (received Memory of ??)
 	-- q( ),	-- hitting Renown 48 [Druid] (received Memory of ??)
 	-- q( ),	-- hitting Renown 48 [Hunter] (received Memory of the Pact of the Soulstalkers)
