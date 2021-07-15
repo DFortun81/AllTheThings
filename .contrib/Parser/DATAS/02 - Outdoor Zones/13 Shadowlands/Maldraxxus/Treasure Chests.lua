@@ -170,45 +170,38 @@ _.Zones =
 						i(184447);	-- Kevin's Party Supplies (TOY!)
 					},
 				}),
-				o(354853, {	-- Sprouting Growth
-					["questID"] = 61089,
-					["isDaily"] = true,
-					["coords"] = {
-						{ 45.0, 35.5, MALDRAXXUS },
-						{ 46.8, 31.7, MALDRAXXUS },
-					},
-					["g"] = {
-						i(181697),	-- Gorewrought Spellblade
-						i(182318),	-- Viscous Ink
-						i(181173),	-- Skittering Venomspitter???
-					},
-				}),
-				o(354852, {	-- Sprouting Growth
-					["questID"] = 61090,
-					["isDaily"] = true,
-					["coords"] = {
-						{ 73.5, 49.7, MALDRAXXUS },
-						{ 75.6, 45.5, MALDRAXXUS },
-						{ 76.0, 49.4, MALDRAXXUS },
-					},
-					["g"] = {
-						i(181173),	-- Skittering Venomspitter???
-					},
-				}),
-				o(352596, {	-- Sprouting Growth
-					["questID"] = 60556,
-					["isDaily"] = true,
-					["coords"] = {
-						{ 34.8, 55.0, MALDRAXXUS },
-						{ 36.5, 49.9, MALDRAXXUS },
-						{ 38.6, 47.0, MALDRAXXUS },
-						{ 40.0, 43.9, MALDRAXXUS },
-						{ 40.9, 47.1, MALDRAXXUS },
-					},
-					["g"] = {
-						i(182441),	-- Markman's Advantage
-						i(181173),	-- Skittering Venomspitter???
-					},
+				o_repeated({
+				-- Rewards
+					i(181173),	-- Skittering Venomspitter
+				-- Objects
+					o(354853, {	-- Sprouting Growth
+						["questID"] = 61089,
+						["isDaily"] = true,
+						["coords"] = {
+							{ 45.0, 35.5, MALDRAXXUS },
+							{ 46.8, 31.7, MALDRAXXUS },
+						},
+					}),
+					o(354852, {	-- Sprouting Growth
+						["questID"] = 61090,
+						["isDaily"] = true,
+						["coords"] = {
+							{ 73.5, 49.7, MALDRAXXUS },
+							{ 75.6, 45.5, MALDRAXXUS },
+							{ 76.0, 49.4, MALDRAXXUS },
+						},
+					}),
+					o(352596, {	-- Sprouting Growth
+						["questID"] = 60556,
+						["isDaily"] = true,
+						["coords"] = {
+							{ 34.8, 55.0, MALDRAXXUS },
+							{ 36.5, 49.9, MALDRAXXUS },
+							{ 38.6, 47.0, MALDRAXXUS },
+							{ 40.0, 43.9, MALDRAXXUS },
+							{ 40.9, 47.1, MALDRAXXUS },
+						},
+					}),
 				}),
 				o(348521, {	-- Strange Growth
 					["questID"] = 59428,	-- 59429 also triggered simultaneously; adding it to HQT for now

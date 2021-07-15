@@ -174,65 +174,43 @@ _.Zones =
 						i(180339),	-- Shadow-Lined Chalice
 					},
 				}),
-				o(354115, {	-- Pugilist's Prize
-					["description"] = "Defeat the mobs to make the treasure lootable.",
-					["questID"] = 60956,
-					["isDaily"] = true,
-					["coord"] = { 38.4, 29.8, REVENDRETH },
-					["g"] = {
-						i(182687),	-- Biggun Wollopper
-						i(182712, {	-- Dredger's Short-Sleeved Doublet
-							["customCollect"] = "SL_COV_VEN",
-						}),
-					},
-				}),
-				o(354116, {	-- Pugilist's Prize
-					["description"] = "Defeat the mobs to make the treasure lootable.",
-					["questID"] = 60705,
-					["isDaily"] = true,	-- repeatable?
-					["coord"] = { 35.8, 67.5, REVENDRETH },
-					["g"] = {
-						i(182687),	-- Biggun Wollopper
-						i(182712, {	-- Dredger's Short-Sleeved Doublet
-							["customCollect"] = "SL_COV_VEN",
-						}),
-					},
-				}),
-				o(354121, {	-- Pugilist's Prize
-					["description"] = "Defeat the mobs to make the treasure lootable.",
-					["questID"] = 60951,
-					["isDaily"] = true,	-- repeatable?
-					["coord"] = { 71.3, 80.2, REVENDRETH },
-					["g"] = {
-						i(182687),	-- Biggun Wollopper
-						i(182712, {	-- Dredger's Short-Sleeved Doublet
-							["customCollect"] = "SL_COV_VEN",
-						}),
-					},
-				}),
-				o(354122, {	-- Pugilist's Prize
-					["description"] = "Defeat the mobs to make the treasure lootable.",
-					["questID"] = 60952,
-					["isDaily"] = true,
-					["coord"] = { 66.6, 36.3, REVENDRETH },
-					["g"] = {
-						i(182687),	-- Biggun Wollopper
-						i(182712, {	-- Dredger's Short-Sleeved Doublet
-							["customCollect"] = "SL_COV_VEN",
-						}),
-					},
-				}),
-				o(354123, {	-- Pugilist's Prize
-					["description"] = "Defeat the mobs to make the treasure lootable.",
-					["questID"] = 60953,
-					["isDaily"] = true,	-- repeatable?
-					["coord"] = { 48.7, 63.8, REVENDRETH },
-					["g"] = {
-						i(182687),	-- Biggun Wollopper
-						i(182712, {	-- Dredger's Short-Sleeved Doublet
-							["customCollect"] = "SL_COV_VEN",
-						}),
-					},
+				o_repeated({
+				-- Rewards
+					i(182687),	-- Biggun Wollopper
+					i(182712, {	-- Dredger's Short-Sleeved Doublet
+						["customCollect"] = "SL_COV_VEN",
+					}),
+				-- Objects
+					o(354115, {	-- Pugilist's Prize
+						["description"] = "Defeat the mobs to make the treasure lootable.",
+						["questID"] = 60956,
+						["isDaily"] = true,
+						["coord"] = { 38.4, 29.8, REVENDRETH },
+					}),
+					o(354116, {	-- Pugilist's Prize
+						["description"] = "Defeat the mobs to make the treasure lootable.",
+						["questID"] = 60705,
+						["isDaily"] = true,	-- repeatable?
+						["coord"] = { 35.8, 67.5, REVENDRETH },
+					}),
+					o(354121, {	-- Pugilist's Prize
+						["description"] = "Defeat the mobs to make the treasure lootable.",
+						["questID"] = 60951,
+						["isDaily"] = true,	-- repeatable?
+						["coord"] = { 71.3, 80.2, REVENDRETH },
+					}),
+					o(354122, {	-- Pugilist's Prize
+						["description"] = "Defeat the mobs to make the treasure lootable.",
+						["questID"] = 60952,
+						["isDaily"] = true,
+						["coord"] = { 66.6, 36.3, REVENDRETH },
+					}),
+					o(354123, {	-- Pugilist's Prize
+						["description"] = "Defeat the mobs to make the treasure lootable.",
+						["questID"] = 60953,
+						["isDaily"] = true,	-- repeatable?
+						["coord"] = { 48.7, 63.8, REVENDRETH },
+					}),
 				}),
 				o(358318, {	-- R. Suavel Dredger Portrait
 					i(182971, {	-- Fabius's Portrait
@@ -340,127 +318,87 @@ _.Zones =
 						i(180398),	-- Stonewrought Legion Halberd
 					},
 				}),
-				o(354108, {	-- Stoneborn Satchel
-					["questID"] = 60938,
-					["isDaily"] = true,
-					["coord"] = { 43.8, 57.1, REVENDRETH },
-					["g"] = {
-						i(182716),	-- Messenger's Satchel
-					},
-				}),
-				o(354109, {	-- Stoneborn Satchel
-					["questID"] = 60944,
-					["isDaily"] = true,
-					["coord"] = { 57.7, 29.4, REVENDRETH },
-					["g"] = {
-						i(182716),	-- Messenger's Satchel
-					},
-				}),
-				o(354110, {	-- Stoneborn Satchel
-					["questID"] = 60943,
-					["isDaily"] = true,
-					["coord"] = { 80.4, 70.8, REVENDRETH },
-					["g"] = {
-						i(182716),	-- Messenger's Satchel
-					},
-				}),
-				o(354111, {	-- Stoneborn Satchel
-					["questID"] = 60942,
-					["isDaily"] = true,
-					["coord"] = { 55.3, 42.3, REVENDRETH },
-					["g"] = {
-						i(182716),	-- Messenger's Satchel
-					},
-				}),
-				o(354112, {	-- Stoneborn Satchel
-					["questID"] = 60941,
-					["isDaily"] = true,
-					["coord"] = { 75.4, 39.0, REVENDRETH },
-					["g"] = {
-						i(182716),	-- Messenger's Satchel
-					},
-				}),
-				o(354113, {	-- Stoneborn Satchel
-					["questID"] = 60852,	-- also triggered 60940, put that one in HQT
-					["isDaily"] = true,
-					["coord"] = { 76.6, 51.0, REVENDRETH },
-					["g"] = {
-						i(182716),	-- Messenger's Satchel
-					},
-				}),
-				o(354114, {	-- Stoneborn Satchel
-					["questID"] = 60939,
-					["isDaily"] = true,
-					["coord"] = { 76.3, 64.1, REVENDRETH },
-					["g"] = {
-						i(182716),	-- Messenger's Satchel
-					},
-				}),
-				o(354186, {	-- Stoneborn Satchel
-					["questID"] = 60979,
-					["isDaily"] = true,	-- repeatable?
-					["coord"] = { 75.8, 77.3, REVENDRETH },
-					["g"] = {
-						i(182716),	-- Messenger's Satchel
-					},
-				}),
-				o(354187, {	-- Stoneborn Satchel
-					["questID"] = 60980,
-					["isDaily"] = true,
-					["coord"] = { 44.3, 77.9, REVENDRETH },
-					["g"] = {
-						i(182716),	-- Messenger's Satchel
-					},
-				}),
-				o(354188, {	-- Stoneborn Satchel
-					["questID"] = 60981,
-					["isDaily"] = true,
-					["coord"] = { 66.4, 65.4, REVENDRETH },
-					["g"] = {
-						i(182716),	-- Messenger's Satchel
-					},
-				}),
-				o(354189, {	-- Stoneborn Satchel
-					["altQuests"] = { 60982 },	-- shrug emoji, had these coordinates+this name linked up with two separate questIDs, so who knows what's going on there
-					["questID"] = 60896,
-					["isDaily"] = true,
-					["coord"] = { 58.0, 67.2, REVENDRETH },
-					["g"] = {
-						i(182716),	-- Messenger's Satchel
-					},
-				}),
-				o(354190, {	-- Stoneborn Satchel
-					["description"] = "You can jump down from the ledge above or use the Bounding Shroom at |cFFFFFFFF52.5, 59.2|r to reach the treasure.",
-					["questID"] = 60983,
-					["isDaily"] = true,	-- repeatable?
-					["coord"] = { 53.6, 57.3, REVENDRETH },
-					["g"] = {
-						i(182716),	-- Messenger's Satchel
-					},
-				}),
-				o(354191, {	-- Stoneborn Satchel
-					["questID"] = 60986,
-					["isDaily"] = true,
-					["coord"] = { 29.9, 37.4, REVENDRETH },
-					["g"] = {
-						i(182716),	-- Messenger's Satchel
-					},
-				}),
-				o(354192, {	-- Stoneborn Satchel
-					["questID"] = 60984,
-					["isDaily"] = true,
-					["coord"] = { 23.5, 48.8, REVENDRETH },
-					["g"] = {
-						i(182716),	-- Messenger's Satchel
-					},
-				}),
-				o(354193, {	-- Stoneborn Satchel
-					["questID"] = 60985,
-					["isDaily"] = true,
-					["coord"] = { 36.5, 51.5, REVENDRETH },
-					["g"] = {
-						i(182716),	-- Messenger's Satchel
-					},
+				o_repeated({
+				-- Rewards
+					i(182716),	-- Messenger's Satchel
+				-- Objects
+					o(354108, {	-- Stoneborn Satchel
+						["questID"] = 60938,
+						["isDaily"] = true,
+						["coord"] = { 43.8, 57.1, REVENDRETH },
+					}),
+					o(354109, {	-- Stoneborn Satchel
+						["questID"] = 60944,
+						["isDaily"] = true,
+						["coord"] = { 57.7, 29.4, REVENDRETH },
+					}),
+					o(354110, {	-- Stoneborn Satchel
+						["questID"] = 60943,
+						["isDaily"] = true,
+						["coord"] = { 80.4, 70.8, REVENDRETH },
+					}),
+					o(354111, {	-- Stoneborn Satchel
+						["questID"] = 60942,
+						["isDaily"] = true,
+						["coord"] = { 55.3, 42.3, REVENDRETH },
+					}),
+					o(354112, {	-- Stoneborn Satchel
+						["questID"] = 60941,
+						["isDaily"] = true,
+						["coord"] = { 75.4, 39.0, REVENDRETH },
+					}),
+					o(354113, {	-- Stoneborn Satchel
+						["questID"] = 60852,	-- also triggered 60940, put that one in HQT
+						["isDaily"] = true,
+						["coord"] = { 76.6, 51.0, REVENDRETH },
+					}),
+					o(354114, {	-- Stoneborn Satchel
+						["questID"] = 60939,
+						["isDaily"] = true,
+						["coord"] = { 76.3, 64.1, REVENDRETH },
+					}),
+					o(354186, {	-- Stoneborn Satchel
+						["questID"] = 60979,
+						["isDaily"] = true,	-- repeatable?
+						["coord"] = { 75.8, 77.3, REVENDRETH },
+					}),
+					o(354187, {	-- Stoneborn Satchel
+						["questID"] = 60980,
+						["isDaily"] = true,
+						["coord"] = { 44.3, 77.9, REVENDRETH },
+					}),
+					o(354188, {	-- Stoneborn Satchel
+						["questID"] = 60981,
+						["isDaily"] = true,
+						["coord"] = { 66.4, 65.4, REVENDRETH },
+					}),
+					o(354189, {	-- Stoneborn Satchel
+						["altQuests"] = { 60982 },	-- shrug emoji, had these coordinates+this name linked up with two separate questIDs, so who knows what's going on there
+						["questID"] = 60896,
+						["isDaily"] = true,
+						["coord"] = { 58.0, 67.2, REVENDRETH },
+					}),
+					o(354190, {	-- Stoneborn Satchel
+						["description"] = "You can jump down from the ledge above or use the Bounding Shroom at |cFFFFFFFF52.5, 59.2|r to reach the treasure.",
+						["questID"] = 60983,
+						["isDaily"] = true,	-- repeatable?
+						["coord"] = { 53.6, 57.3, REVENDRETH },
+					}),
+					o(354191, {	-- Stoneborn Satchel
+						["questID"] = 60986,
+						["isDaily"] = true,
+						["coord"] = { 29.9, 37.4, REVENDRETH },
+					}),
+					o(354192, {	-- Stoneborn Satchel
+						["questID"] = 60984,
+						["isDaily"] = true,
+						["coord"] = { 23.5, 48.8, REVENDRETH },
+					}),
+					o(354193, {	-- Stoneborn Satchel
+						["questID"] = 60985,
+						["isDaily"] = true,
+						["coord"] = { 36.5, 51.5, REVENDRETH },
+					}),
 				}),
 				o(352703, {	-- The Harvest
 				--	TODO: apparently this has multiple notes/locations, add them as they pop up
