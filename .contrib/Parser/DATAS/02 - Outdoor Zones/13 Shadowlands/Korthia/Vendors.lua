@@ -58,6 +58,10 @@ _.Zones =
 						i(187138, {	-- Research Report: First Alloys
 							["cost"] = { { "c", 1931, 8000 } },	-- 8,000x Catalogued Research
 						}),
+						i(187706, {	-- Treatise: Bonds of Stygia in Mortals
+							["questID"] = 64828,
+							["cost"] = { { "c", 1931, 1000 } },	-- 1000x Catalogued Research
+						}),
 						i(187145, {	-- Treatise: Recognizing Stygia and its Uses
 							["questID"] = 64307,
 							["cost"] = { { "c", 1931, 800 } },	-- 800x Catalogued Research
