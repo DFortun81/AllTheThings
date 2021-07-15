@@ -8104,7 +8104,7 @@ local function GetCachedField(t, field)
 	end
 	--]]
 	t = GetCached(t);
-	return t[field];
+	return t and t[field];
 end
 local function SetCachedField(t, field, value)
 	--[[ Debug Prints ]
