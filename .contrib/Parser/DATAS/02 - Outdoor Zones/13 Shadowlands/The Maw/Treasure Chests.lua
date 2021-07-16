@@ -58,13 +58,13 @@ _.Zones =
 				o(369216, {	-- Helsworn Chest
 					["questID"] = 64256,
 					["isDaily"] = true,
-				--	["coord"] = { 66.0, 48.3, THE_MAW }, old coord?
 					["coord"] = { 69.2, 45.2, THE_MAW },
 					["g"] = {
 						crit(7, {	-- Helsworn Chest
 							["achievementID"] = 15099,	-- Treasures of Korthia
 						}),
 					--	Epics
+						i(187017),	-- Brutalizer's Mantle
 						i(187240),	-- Field Warden's Watchful Eye
 						i(187026),	-- Field Warden's Torture Kit
 						i(187019),	-- Infiltrator's Shoulderguards

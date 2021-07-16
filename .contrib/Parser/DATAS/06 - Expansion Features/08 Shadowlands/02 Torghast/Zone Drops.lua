@@ -48,7 +48,10 @@ _.ExpansionFeatures =
 					},
 				}),
 				i(187092, {	-- Gilded Shoulder-Shields
-					["cr"] = 176578	-- Vault Sentinel
+					["crs"] = {
+						179526,	-- Troz'igal the Oppressor
+						176578,	-- Vault Sentinel
+					},
 				}),
 				i(187084, {	-- Jailer's Eye Crescent
 					["crs"] = {
