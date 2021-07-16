@@ -1192,24 +1192,24 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(29000, {	-- Candy Bucket — Mount Hyjal, Grove of Aessina, neutral
 				["isYearly"] = true,
-				["coord"] = { 18.7, 37.3, 198 },
-				["maps"] = { 198 },	-- Mount Hyjal
+				["coord"] = { 18.7, 37.3, MOUNT_HYJAL },
+				["maps"] = { MOUNT_HYJAL },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(28999, {	-- Candy Bucket — Mount Hyjal, Nordrassil, neutral
 				["isYearly"] = true,
-				["coord"] = { 63.0, 24.1, 198 },
-				["maps"] = { 198 },	-- Mount Hyjal
+				["coord"] = { 63.0, 24.1, MOUNT_HYJAL },
+				["maps"] = { MOUNT_HYJAL },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(29001, {	-- Candy Bucket — Mount Hyjal, Shrine of Aviana, neutral
 				["isYearly"] = true,
-				["coord"] = { 42.7, 45.6, 198 },
-				["maps"] = { 198 },	-- Mount Hyjal
+				["coord"] = { 42.7, 45.6, MOUNT_HYJAL },
+				["maps"] = { MOUNT_HYJAL },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},

@@ -151,6 +151,9 @@ SUNSTRIDER_ISLE = 467;	-- Confirmed!
 BLADES_EDGE_MOUNTAINS = 105;	-- Confirmed!
 SHADOWMOON_VALLEY = 104;	-- Confirmed!
 
+-- Cataclysm
+MOUNT_HYJAL = 198;
+
 -- MOP Additions to Old World
 ECHO_ISLES = 463;
 VALLEY_OF_TRIALS = 461;

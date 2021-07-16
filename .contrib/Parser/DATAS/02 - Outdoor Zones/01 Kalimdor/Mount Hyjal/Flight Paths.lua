@@ -4,22 +4,22 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(198, {	-- Mount Hyjal
+		m(MOUNT_HYJAL, {
 			n(FLIGHT_PATHS, {
-				fp(616, {	-- Gates of Sothann, Hyjal
-					["coord"] = { 71.6, 75.3, 198 },
+				fp(616, {	-- Gates of Sothann
+					["coord"] = { 71.6, 75.3, MOUNT_HYJAL },
 				}),
-				fp(558, {	-- Grove of Aessina, Hyjal
-					["coord"] = { 19.6, 36.3, 198 },
+				fp(558, {	-- Grove of Aessina
+					["coord"] = { 19.6, 36.3, MOUNT_HYJAL },
 				}),
-				fp(559, {	-- Nordrassil, Hyjal
-					["coord"] = { 62.1, 21.5, 198 },
+				fp(559, {	-- Nordrassil
+					["coord"] = { 62.1, 21.5, MOUNT_HYJAL },
 				}),
-				fp(781, {	-- Sanctuary of Malorne, Hyjal
-					["coord"] = { 27.7, 63.6, 198 },
+				fp(781, {	-- Sanctuary of Malorne
+					["coord"] = { 27.7, 63.6, MOUNT_HYJAL },
 				}),
-				fp(557, {	-- Shrine of Aviana, Hyjal
-					["coord"] = { 41.1, 42.5, 198 },
+				fp(557, {	-- Shrine of Aviana
+					["coord"] = { 41.1, 42.5, MOUNT_HYJAL },
 				}),
 			}),
 		}),

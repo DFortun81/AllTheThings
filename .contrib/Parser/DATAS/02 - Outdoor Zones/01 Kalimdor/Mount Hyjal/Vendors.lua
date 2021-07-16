@@ -4,10 +4,10 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(198, {	-- Mount Hyjal
+		m(MOUNT_HYJAL, {
 			n(VENDORS, {
 				n(50314, {	-- Provisioner Whitecloud <Guardians of Hyjal Quartermaster>
-					["coord"] = { 62.7, 23.8, 198 },
+					["coord"] = { 62.7, 23.8, MOUNT_HYJAL },
 					["g"] = {
 						i(62378),	-- Acorn of the Daughter Tree
 						i(62381),	-- Aessina- Blessed Gloves
@@ -28,7 +28,7 @@ _.Zones =
 				n(71304, {	-- Iris Moondreamer <Quartermaster>
 					["description"] = "These were originally obtained by using the Scroll of Resurrection Character Boost. They were later added to vendors in Mount Hyjal and Vash'jir once the Scroll of Resurrection Service was retired.",
 					["lvl"] = lvlsquish(80, 30, 80),
-					["coord"] = { 62.8, 24.2, 198 },
+					["coord"] = { 62.8, 24.2, MOUNT_HYJAL },
 					["g"] = {
 						cl(DEATHKNIGHT, {
 							i(72994),	-- Ebonsoul Blade

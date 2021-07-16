@@ -1079,9 +1079,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(29030, {	-- Honor the Flame — Hyjal
 				["provider"] = { "n", 51682 },	-- Hyjal Flame Guardian
 				["isYearly"] = true,
-				["coord"] = { 62.8, 22.6, 198 },
+				["coord"] = { 62.8, 22.6, MOUNT_HYJAL },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 198 },	-- Hyjal
+				["maps"] = { MOUNT_HYJAL },
 			}),
 			q(11820, {	-- Honor the Flame — Loch Modan
 				["provider"] = { "n", 25902 },	-- Loch Modan Flame Warden
@@ -1466,9 +1466,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(29030, {	-- Honor the Flame — Hyjal
 				["provider"] = { "n", 51682 },	-- Hyjal Flame Guardian
 				["isYearly"] = true,
-				["coord"] = { 62.8, 22.6, 198 },
+				["coord"] = { 62.8, 22.6, MOUNT_HYJAL },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 198 },	-- Hyjal
+				["maps"] = { MOUNT_HYJAL },
 			}),
 			q(11852, {	-- Honor the Flame — Mulgore
 				["provider"] = { "n", 25936 },	-- Mulgore Flame Keeper

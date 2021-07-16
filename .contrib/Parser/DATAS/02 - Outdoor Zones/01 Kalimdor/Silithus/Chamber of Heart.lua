@@ -322,15 +322,15 @@ _.Zones =
 						}),
 						q(55520, {	-- Healing Nordrassil
 							["provider"] = { "n", 152095 },	-- Magni Bronzebeard
-							["coord"] = { 62.0, 24.9, 198 },
+							["coord"] = { 62.0, 24.9, MOUNT_HYJAL },
 							["sourceQuest"] = 55519,	-- A Fresh Trauma
-							["maps"] = { 198 },	-- Mount Hyjal
+							["maps"] = { MOUNT_HYJAL },
 						}),
 						q(55521, {	-- Do It the Azerite Way
 							["provider"] = { "n", 152095 },	-- Magni Bronzebeard
-							["coord"] = { 62.0, 24.9, 198 },
+							["coord"] = { 62.0, 24.9, MOUNT_HYJAL },
 							["sourceQuest"] = 55520,	-- Healing Nordrassil
-							["maps"] = { 198 },	-- Mount Hyjal
+							["maps"] = { MOUNT_HYJAL },
 						}),
 						-- Heart of Azeroth Level 60
 						q(56167, {	-- Investigating the Highlands

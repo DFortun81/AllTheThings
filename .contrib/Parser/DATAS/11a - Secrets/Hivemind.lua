@@ -14,7 +14,7 @@ _.Secrets =
 			THOUSAND_NEEDLES,
 			114,
 			118,
-			198,
+			MOUNT_HYJAL,
 			201,
 			204,
 			205,
@@ -71,7 +71,7 @@ _.Secrets =
 							o(280842, {	-- Letter 5: Shrine of Aviana, Mount Hyjal
 								["model"] = 1661948,
 								["questID"] = 40293,
-								["coord"] = { 44.3, 47.3, 198 },	-- Mount Hyjal
+								["coord"] = { 44.3, 47.3, MOUNT_HYJAL },
 								["sourceQuest"] = 40252,	-- Letter 4: Razorfen Downs
 								["description"] = "|cFFFFFFFFLetter 5:|r Go to |cFFFFFFFF44.3, 47.3|r in |cFFFFD700Mount Hyjal|r. The next |cFFFFD700Letter from Ms. Graham|r is on a table at the highest floor of the tree that serves as her shrine. Click it.  The note reads...\r\r|cFFFFFFFFThe Elite champions will rule the World with the mightiest F.C.|r\n",
 							}),

@@ -189,8 +189,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(29740, {	-- Evershade the Elder
 				["provider"] = { "n", 55227 },	-- Elder Evershade
 				["isYearly"] = true,
-				["coord"] = { 62.5, 22.8, 198 },
-				["maps"] = { 198 },	-- Mount Hyjal
+				["coord"] = { 62.5, 22.8, MOUNT_HYJAL },
+				["maps"] = { MOUNT_HYJAL },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(7, {	-- Elder Evershade in Nordrassil
@@ -261,8 +261,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(29739, {	-- Windsong the Elder
 				["provider"] = { "n", 55224 },	-- Elder Windsong
 				["isYearly"] = true,
-				["coord"] = { 26.7, 62.0, 198 },
-				["maps"] = { 198 },	-- Mount Hyjal
+				["coord"] = { 26.7, 62.0, MOUNT_HYJAL },
+				["maps"] = { MOUNT_HYJAL },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(6, {	-- Elder Windsong in Hyjal

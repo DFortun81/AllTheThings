@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(198, {	-- Mount Hyjal
+		m(MOUNT_HYJAL, {
 			filter(101, {	-- Pet Battle
 				p(487, {	-- Alpine Chipmunk
 					["crs"] = { 62189 },	-- Alpine Chipmunk
@@ -48,7 +48,7 @@ _.Zones =
 				}),
 				q(31972, {	-- Brok
 					["provider"] = { "n", 66819 },	-- Brok
-					["coord"] = { 61.4, 32.7, 198 },
+					["coord"] = { 61.4, 32.7, MOUNT_HYJAL },
 					["isDaily"] = true,
 				}),
 			}),

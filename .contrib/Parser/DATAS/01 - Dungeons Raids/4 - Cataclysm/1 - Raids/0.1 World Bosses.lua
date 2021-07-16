@@ -51,7 +51,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 			}),
 			n(50056, {	-- Garr
 				["maps"] = {	-- all Mount Hyjal maps
-					198,	-- Mount Hyjal
+					MOUNT_HYJAL,
 					738,	-- Firelands
 					760,	-- Malorne's Nightmare
 				},

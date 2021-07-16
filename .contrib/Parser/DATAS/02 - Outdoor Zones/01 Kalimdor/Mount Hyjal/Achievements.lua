@@ -5,14 +5,14 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(198, {	-- Mount Hyjal
+		m(MOUNT_HYJAL, {
 			n(ACHIEVEMENTS, {
 				ach(9069, {	-- An Awfully Big Adventure
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
 					["g"] = {
 						crit(7, {	-- Brok
-							["coord"] = { 61.4, 32.8, 198 },
+							["coord"] = { 61.4, 32.8, MOUNT_HYJAL },
 							["cr"] = 66819,	-- Brok <Master Pet Tamer>
 						}),
 					},

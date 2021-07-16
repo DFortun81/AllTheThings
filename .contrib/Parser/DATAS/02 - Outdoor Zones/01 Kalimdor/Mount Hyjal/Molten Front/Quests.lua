@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(198, {	-- Mount Hyjal
+		m(MOUNT_HYJAL, {
 			m(338, {	-- Molten Front
 				n(QUESTS, {
 					q(29263, {	-- A Bitter Pill
@@ -368,7 +368,7 @@ _.Zones =
 					}),
 					q(29282, {	-- Well Armed
 						["provider"] = { "n", 52669 },	-- Matoclaw
-						["coord"] = { 27.2, 62.6, 198 },
+						["coord"] = { 27.2, 62.6, MOUNT_HYJAL },
 						["sourceQuest"] = 29281,	-- Additional Armaments
 					}),
 					q(29189, {	-- Wicked Webs

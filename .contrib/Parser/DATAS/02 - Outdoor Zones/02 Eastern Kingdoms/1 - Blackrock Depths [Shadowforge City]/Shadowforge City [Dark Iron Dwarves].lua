@@ -54,10 +54,10 @@ _.Zones =
 						}),
 						q(53601, {	-- Sulfuron Spire
 							["name"] = "Sulfuron Spire",
-							["coord"] = { 57.16, 77.09, 198 },
+							["coord"] = { 57.16, 77.09, MOUNT_HYJAL },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-							["maps"] = { 198 },	-- Mount Hyjal
+							["maps"] = { MOUNT_HYJAL },
 						}),
 					},
 				}),

@@ -5,7 +5,7 @@
 _.Instances = { tier(4, {	-- Cataclysm
 	inst(78, {	-- Firelands
 		["isRaid"] = true,
-		["coord"] = { 47.3, 78.1, 198 },
+		["coord"] = { 47.3, 78.1, MOUNT_HYJAL },
 		["maps"] = { 367, 368, 369 },
 		["lvl"] = 85,
 		["g"] = {
@@ -24,7 +24,7 @@ _.Instances = { tier(4, {	-- Cataclysm
 					ORGRIMMAR,
 					86,		-- Orgrimmar: The Drag
 					129,	-- The Nexus
-					198,	-- Mount Hyjal
+					MOUNT_HYJAL,
 					114,	-- Borean Tundra
 				},
 				["g"] = sharedData({["classes"] = { PRIEST, SHAMAN, MAGE, WARLOCK, DRUID }},{

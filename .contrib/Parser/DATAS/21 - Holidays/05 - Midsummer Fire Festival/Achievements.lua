@@ -291,9 +291,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { 203, 205 },	-- Vashj'ir + Shimmering Expanse
 									}),
 									crit(5, {	-- Hyjal
-										["coord"] = { 62.8, 22.6, 198 },
+										["coord"] = { 62.8, 22.6, MOUNT_HYJAL },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 198 },	-- Hyjal
+										["maps"] = { MOUNT_HYJAL },
 									}),
 								},
 							}),
@@ -977,9 +977,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { TWILIGHT_HIGHLANDS },
 									}),
 									crit(3, {	-- Hyjal
-										["coord"] = { 62.8, 22.6, 198 },
+										["coord"] = { 62.8, 22.6, MOUNT_HYJAL },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 198 },	-- Hyjal
+										["maps"] = { MOUNT_HYJAL },
 									}),
 									crit(4, {	-- Deepholm
 										["coord"] = { 49.4, 51.4, 207 },

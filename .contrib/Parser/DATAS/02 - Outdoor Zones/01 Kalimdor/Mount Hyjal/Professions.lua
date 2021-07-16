@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(198, {	-- Mount Hyjal
+		m(MOUNT_HYJAL, {
 			n(-38, {	-- Profession
 				prof(FISHING, {
 					o(202776, {	-- Mountain Trout School

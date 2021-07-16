@@ -1115,16 +1115,16 @@ _.Holidays = bubbleDown({["u"] = 26},
 							["maps"] = { 207 },	-- Deepholm
 						}),
 						crit(2,  {	-- Mount Hyjal, Grove of Aessina
-							["coord"] = { 18.7, 37.3, 198 },
-							["maps"] = { 198 },	-- Mount Hyjal
+							["coord"] = { 18.7, 37.3, MOUNT_HYJAL },
+							["maps"] = { MOUNT_HYJAL },
 						}),
 						crit(3,  {	-- Mount Hyjal, Nordrassil
-							["coord"] = { 63.0, 24.1, 198 },
-							["maps"] = { 198 },	-- Mount Hyjal
+							["coord"] = { 63.0, 24.1, MOUNT_HYJAL },
+							["maps"] = { MOUNT_HYJAL },
 						}),
 						crit(4,  {	-- Mount Hyjal, Shrine of Aviana
-							["coord"] = { 42.7, 45.6, 198 },
-							["maps"] = { 198 },	-- Mount Hyjal
+							["coord"] = { 42.7, 45.6, MOUNT_HYJAL },
+							["maps"] = { MOUNT_HYJAL },
 						}),
 						crit(5,  {	-- Twilight Highlands, Firebeard's Patrol
 							["coord"] = { 60.4, 58.2,TWILIGHT_HIGHLANDS },
@@ -1176,16 +1176,16 @@ _.Holidays = bubbleDown({["u"] = 26},
 							["maps"] = { 207 },	-- Deepholm
 						}),
 						crit(2,  {	-- Mount Hyjal, Grove of Aessina
-							["coord"] = { 18.7, 37.3, 198 },
-							["maps"] = { 198 },	-- Mount Hyjal
+							["coord"] = { 18.7, 37.3, MOUNT_HYJAL },
+							["maps"] = { MOUNT_HYJAL },
 						}),
 						crit(3,  {	-- Mount Hyjal, Nordrassil
-							["coord"] = { 63.0, 24.1, 198 },
-							["maps"] = { 198 },	-- Mount Hyjal
+							["coord"] = { 63.0, 24.1, MOUNT_HYJAL },
+							["maps"] = { MOUNT_HYJAL },
 						}),
 						crit(4,  {	-- Mount Hyjal, Shrine of Aviana
-							["coord"] = { 42.7, 45.6, 198 },
-							["maps"] = { 198 },	-- Mount Hyjal
+							["coord"] = { 42.7, 45.6, MOUNT_HYJAL },
+							["maps"] = { MOUNT_HYJAL },
 						}),
 						crit(5,  {	-- Twilight Highlands, Bloodgulch
 							["coord"] = { 53.4, 42.9,TWILIGHT_HIGHLANDS },

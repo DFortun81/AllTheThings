@@ -13,7 +13,7 @@ _.Secrets =
 			BURNING_STEPPES,
 			SHATTRATH_CITY,
 			115,
-			198,
+			MOUNT_HYJAL,
 			379,
 			390,
 			539,
@@ -132,7 +132,7 @@ _.Secrets =
 					q(50144, {	-- Step 5: Mount Hyjal
 						["sourceQuests"] = { 50143 },	-- Step 4: Dragonblight
 						["name"] = "Step 5: Mount Hyjal",
-						["coord"] = { 59.0, 24.1, 198 },
+						["coord"] = { 59.0, 24.1, MOUNT_HYJAL },
 						["icon"] = "Interface\\Icons\\inv_misc_toy_02",
 					}),
 					q(50145, {	-- Step 6: Kun-Lai Summit

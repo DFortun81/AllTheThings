@@ -68,9 +68,9 @@ _.ExpansionFeatures =
 					q(42046, {	-- A New Beginning
 						["classes"] = { DRUID },
 						["provider"] = { "n", 106250 },	-- Keeper Remulos
-						["coord"] = { 60.5, 23.6, 198 },
+						["coord"] = { 60.5, 23.6, MOUNT_HYJAL },
 						["sourceQuests"] = { 42045 },	-- Communing with Malorne
-						["maps"] = { 198 },	-- Mount Hyjal
+						["maps"] = { MOUNT_HYJAL },
 						["g"] = {
 							i(139730),	-- Bracers of the Dreamgrove
 						},
@@ -116,9 +116,9 @@ _.ExpansionFeatures =
 							{ "n", 115802 },	-- Thisalee Crow
 							{ "n", 119982 },	-- Druid of the Talon
 						},
-						["coord"] = { 40.9, 42.6, 198 },
+						["coord"] = { 40.9, 42.6, MOUNT_HYJAL },
 						["sourceQuest"]	= 44869,	-- Talon Terror
-						["maps"] = { 198 },	-- Shrine of Aviana, Mount Hyjal
+						["maps"] = { MOUNT_HYJAL },	-- Shrine of Aviana
 					}),
 					q(44888, {	-- Aviana's Grace
 						["classes"] = { DRUID },
@@ -126,12 +126,12 @@ _.ExpansionFeatures =
 							{ "n", 115802 },	-- Thisalee Crow
 							{ "n", 119982 },	-- Druid of the Talon
 						},
-						["coord"] = { 40.9, 42.6, 198 },
+						["coord"] = { 40.9, 42.6, MOUNT_HYJAL },
 						["sourceQuests"] = {
 							44877,	-- Attack on the Roost
 							45532,	-- Mother's Orders
 						},
-						["maps"] = { 198 },	-- Shrine of Aviana, Mount Hyjal
+						["maps"] = { MOUNT_HYJAL },	-- Shrine of Aviana
 				}),
 					q(42588, {	-- Branching Out
 						["classes"] = { DRUID },
@@ -280,9 +280,9 @@ _.ExpansionFeatures =
 					q(43403, {	-- Defending the Isles
 						["classes"] = { DRUID },
 						["provider"] = { "n", 106250 },	-- Keeper Remulos
-						["coord"] = { 60.5, 23.6, 198 },
+						["coord"] = { 60.5, 23.6, MOUNT_HYJAL },
 						["sourceQuests"] = { 42046 },	-- A New Beginning
-						["maps"] = { 198 },	-- The Dreamway
+						["maps"] = { MOUNT_HYJAL },	-- The Dreamway
 					}),
 					q(42031, {	-- Dire Growth
 						["classes"] = { DRUID },
@@ -467,9 +467,9 @@ _.ExpansionFeatures =
 					q(44921, {	-- Lone Wolf
 						["classes"] = { DRUID },
 						["provider"] = { "n", 115749 },	-- Aviana
-						["coord"] = { 44.3, 48.0, 198 },
+						["coord"] = { 44.3, 48.0, MOUNT_HYJAL },
 						["sourceQuest"]	= 44888,	-- Aviana's Grace
-						["maps"] = { 198 },
+						["maps"] = { MOUNT_HYJAL },
 					}),
 					q(42033, {	-- Malorne's Refuge
 						["classes"] = { DRUID },
@@ -506,9 +506,9 @@ _.ExpansionFeatures =
 							{ "n", 115802 },	-- Thisalee Crow
 							{ "n", 119982 },	-- Druid of the Talon
 						},
-						["coord"] = { 40.9, 42.6, 198 },
+						["coord"] = { 40.9, 42.6, MOUNT_HYJAL },
 						["sourceQuest"]	= 44869,	-- Talon Terror
-						["maps"] = { 198 },	-- Shrine of Aviana, Mount Hyjal
+						["maps"] = { MOUNT_HYJAL },	-- Shrine of Aviana
 					}),
 					q(45426, {	-- Nature's Advance
 						["classes"] = { DRUID },

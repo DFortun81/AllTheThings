@@ -35,7 +35,7 @@ _.Achievements =
 					--["coord"] = { 49.8, 57.0, 207 },
 				}),
 				crit(7,  {	-- Digallo
-					--["coord"] = { 61.4, 32.8, 198 },
+					--["coord"] = { 61.4, 32.8, MOUNT_HYJAL },
 				}),
 				crit(8,  {	-- Gelatinous
 					--["coord"] = { 57.0, 42.2, 388 },
@@ -67,8 +67,8 @@ _.Achievements =
 				crit(6,  {	-- Bordin Steadyfist (Deepholm)
 					["coord"] = { 49.8, 57.0, 207 },
 				}),
-				crit(7,  {	-- Brok (Mount Hyjal)
-					["coord"] = { 61.4, 32.8, 198 },
+				crit(7,  {	-- Brok
+					["coord"] = { 61.4, 32.8, MOUNT_HYJAL },
 				}),
 				crit(8,  {	-- Burning Pandaren Spirit (Townlong Steppes)
 					["coord"] = { 57.0, 42.2, 388 },

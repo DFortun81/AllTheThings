@@ -27,7 +27,7 @@ _.Secrets =
 			o(245216, {	-- Step 3: Page 161
 				["model"] = 305393,
 				["questID"] = 47208,
-				["coord"] = { 47.3, 78.1, 198 },	-- Firelands
+				["coord"] = { 47.3, 78.1, MOUNT_HYJAL },	-- Firelands
 				["sourceQuest"] = 47207,	-- Step 2: Page 78
 				["description"] = "|cFFFFFFFFStep 3:|r This step will take us to |cFFFFD700Firelands|r.  |cFFFFD700Page 161|r will be found on the left rear side of the |cFFFFD700Ragnaros|r platform.  Click this to continue.  The page reads...\n\n|cFFFFFFFF...the wind, the eye...|r",
 				["isWeekly"] = true,
