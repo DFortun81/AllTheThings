@@ -668,28 +668,120 @@ _.PVP =
 					i(185315),	-- Unchained Gladiator's Xiphos
 				}),
 			}),
-			n(-662, {	-- Elite Gear
-				--[[ TODO
+			n(-662, bubbleDown({["modID"] = 45}, {	-- Elite Gear. Do not use more filters, Elite Gear has same ItemID has Gladiator Gear.
 				n(-322, {	-- Cloak
+					i(185164),	-- Unchained Gladiator's Cloak
+					i(185245),	-- Unchained Gladiator's Drape
+					i(185313),	-- Unchained Gladiator's Greatcloak
+					i(185280),	-- Unchained Gladiator's Shawl
 				}),
 				n(-43,  {	-- Cloth
+					i(185267),	-- Unchained Gladiator's Silk Amice
+					i(185274),	-- Unchained Gladiator's Silk Armbands
+					i(185270),	-- Unchained Gladiator's Silk Belt
+					i(185189),	-- Unchained Gladiator's Silk Cord
+					i(185175),	-- Unchained Gladiator's Silk Gloves
+					i(185258),	-- Unchained Gladiator's Silk Guise
+					i(185256),	-- Unchained Gladiator's Silk Handwraps
+					i(185177),	-- Unchained Gladiator's Silk Hood
+					i(185181),	-- Unchained Gladiator's Silk Leggings
+					i(185186),	-- Unchained Gladiator's Silk Mantle
+					i(185165),	-- Unchained Gladiator's Silk Robe
+					i(185170),	-- Unchained Gladiator's Silk Slippers
+					i(185251),	-- Unchained Gladiator's Silk Treads
+					i(185262),	-- Unchained Gladiator's Silk Trousers
+					i(185246),	-- Unchained Gladiator's Silk Vestments
+					i(185193),	-- Unchained Gladiator's Silk Wristwraps
 				}),
 				n(-385, {	-- Finger
+					i(185273),	-- Unchained Gladiator's Band
+					i(185192),	-- Unchained Gladiator's Ring
+					i(185281),	-- Unchained Gladiator's Signet
 				}),
 				n(-44,  {	-- Leather
+					i(185191),	-- Unchained Gladiator's Leather Belt
+					i(185172),	-- Unchained Gladiator's Leather Boots
+					i(185183),	-- Unchained Gladiator's Leather Breeches
+					i(185173),	-- Unchained Gladiator's Leather Gloves
+					i(185254),	-- Unchained Gladiator's Leather Grips
+					i(185179),	-- Unchained Gladiator's Leather Helm
+					i(185249),	-- Unchained Gladiator's Leather Jerkin
+					i(185264),	-- Unchained Gladiator's Leather Legwraps
+					i(185260),	-- Unchained Gladiator's Leather Mask
+					i(185265),	-- Unchained Gladiator's Leather Shoulderpads
+					i(185184),	-- Unchained Gladiator's Leather Spaulders
+					i(185272),	-- Unchained Gladiator's Leather Strap
+					i(185253),	-- Unchained Gladiator's Leather Treads
+					i(185168),	-- Unchained Gladiator's Leather Vest
+					i(185277),	-- Unchained Gladiator's Leather Wristguards
+					i(185196),	-- Unchained Gladiator's Leather Wristwraps
 				}),
 				n(-45,  {	-- Mail
+					i(185190),	-- Unchained Gladiator's Chain Belt
+					i(185252),	-- Unchained Gladiator's Chain Boots
+					i(185276),	-- Unchained Gladiator's Chain Bracers
+					i(185263),	-- Unchained Gladiator's Chain Breeches
+					i(185259),	-- Unchained Gladiator's Chain Faceguard
+					i(185176),	-- Unchained Gladiator's Chain Gauntlets
+					i(185271),	-- Unchained Gladiator's Chain Girdle
+					i(185257),	-- Unchained Gladiator's Chain Handguards
+					i(185178),	-- Unchained Gladiator's Chain Helm
+					i(185182),	-- Unchained Gladiator's Chain Leggings
+					i(185187),	-- Unchained Gladiator's Chain Monnion
+					i(185171),	-- Unchained Gladiator's Chain Sabatons
+					i(185268),	-- Unchained Gladiator's Chain Shoulderguard
+					i(185248),	-- Unchained Gladiator's Chain Tunic
+					i(185167),	-- Unchained Gladiator's Chain Vest
+					i(185195),	-- Unchained Gladiator's Chain Wristguards
 				}),
 				n(-384, {	-- Neck
+					i(185283),	-- Unchained Gladiator's Amulet
+					i(185198),	-- Unchained Gladiator's Necklace
+					i(185279),	-- Unchained Gladiator's Pendant
 				}),
 				n(-46,  {	-- Plate
+					i(185166),	-- Unchained Gladiator's Plate Chestguard
+					i(185247),	-- Unchained Gladiator's Plate Chestplate
+					i(185174),	-- Unchained Gladiator's Plate Gauntlets
+					i(185188),	-- Unchained Gladiator's Plate Girdle
+					i(185269),	-- Unchained Gladiator's Plate Greatbelt
+					i(185255),	-- Unchained Gladiator's Plate Handguards
+					i(185163),	-- Unchained Gladiator's Plate Helm
+					i(185244),	-- Unchained Gladiator's Plate Helmet
+					i(185180),	-- Unchained Gladiator's Plate Legguards
+					i(185266),	-- Unchained Gladiator's Plate Pauldrons
+					i(185185),	-- Unchained Gladiator's Plate Shoulders
+					i(185250),	-- Unchained Gladiator's Plate Stompers
+					i(185275),	-- Unchained Gladiator's Plate Vambraces
+					i(185169),	-- Unchained Gladiator's Plate Warboots
+					i(185261),	-- Unchained Gladiator's Plate Wargreaves
+					i(185194),	-- Unchained Gladiator's Plate Wristguards
 				}),
 				n(-386, {	-- Trinket
+					i(185197),	-- Unchained Gladiator's Badge of Ferocity
+					i(185282),	-- Unchained Gladiator's Emblem
+					i(185278),	-- Unchained Gladiator's Insignia of Alacrity
+					i(185304),	-- Unchained Gladiator's Medallion
+					i(185305),	-- Unchained Gladiator's Relentless Brooch
+					i(185306),	-- Unchained Gladiator's Sigil of Adaptation
 				}),
 				n(-319, {	-- Weapons
+					i(185200),	-- Unchained Gladiator's Ceremonial Sword
+					i(185203),	-- Unchained Gladiator's Chalice
+					i(185317),	-- Unchained Gladiator's Dory
+					i(185199),	-- Unchained Gladiator's Gladius
+					i(185301),	-- Unchained Gladiator's Greataxe
+					i(185126),	-- Unchained Gladiator's Guard
+					i(185314),	-- Unchained Gladiator's Hacker
+					i(185202),	-- Unchained Gladiator's Knife
+					i(185201),	-- Unchained Gladiator's Lightbow
+					i(185316),	-- Unchained Gladiator's Ritual Dagger
+					i(185125),	-- Unchained Gladiator's Splitter
+					i(185300),	-- Unchained Gladiator's Vesper
+					i(185312),	-- Unchained Gladiator's Warglaive
+					i(185315),	-- Unchained Gladiator's Xiphos
 				}),
-			--]]
-			}),
+			})),
 			filter(100, {	-- Mounts
 				i(186178, {	-- Vicious War Gorm (A)
 					["races"] = ALLIANCE_ONLY,
