@@ -256,7 +256,7 @@ _.Zones =
 								},
 							}),
 							n(177427, {	-- The Mass of Souls
-								--["questID"] = ,
+								["questID"] = 64117,
 								["isDaily"] = true,
 								["g"] = {
 									i(186210),	-- Diabolic Soul Veil

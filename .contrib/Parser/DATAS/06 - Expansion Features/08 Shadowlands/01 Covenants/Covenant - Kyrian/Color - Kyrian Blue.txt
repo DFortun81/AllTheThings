@@ -1,1 +1,2 @@
+["customCollect"] = "SL_COV_KYR",	-- Kyrian
 ["description"] = "|cFF516bfeKyrian Covenant|r only.",

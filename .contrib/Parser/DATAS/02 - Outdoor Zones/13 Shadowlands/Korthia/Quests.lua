@@ -488,6 +488,7 @@ _.Zones =
 
 			--	Korthia Daily
 			--	confirmed on live
+				i(186017),	-- Korthite Crystal - rewarded by some dailies and found in some treasures, but does not seem statically attached to anything specific.  acquisition/availability may be based on having completed the campaign questline to the point where you get to the Vault of Secrets
 				q(63783, {	-- Anima Reclamation
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178793 },	-- Kael'thas Sunstrider
@@ -506,7 +507,19 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 64.7, 25.6, KORTHIA },
 				}),
+				q(63794, {	-- Broker's Bounty: Hungering Behemoth
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
+					["provider"] = { "o", 368772 },	-- Sigilscored Scroll
+					["isDaily"] = true,
+					["coord"] = { 64.7, 25.6, KORTHIA },
+				}),
 				q(63790, {	-- Broker's Bounty: Lord Azzorak
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
+					["provider"] = { "o", 368772 },	-- Sigilscored Scroll
+					["isDaily"] = true,
+					["coord"] = { 64.7, 25.6, KORTHIA },
+				}),
+				q(63963, {	-- Broker's Bounty: Ripmaul
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "o", 368772 },	-- Sigilscored Scroll
 					["isDaily"] = true,
@@ -559,6 +572,12 @@ _.Zones =
 						i(186706),	-- Gold Filled Hat
 					},
 				}),
+				q(64065, {	-- Local Reagents
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
+					["provider"] = { "n", 178806 },	-- Plague Deviser Marileth
+					["isDaily"] = true,
+					["coord"] = { 60.5, 27.7, KORTHIA },
+				}),
 				q(63782, {	-- Mawsworn Rituals
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178799 },	-- Arios Riftbearer
@@ -597,6 +616,15 @@ _.Zones =
 					["g"] = {
 						ach(15055),	-- Friend of Ooz
 						i(187000),	-- Pattern: Elusive Pet Treat
+					},
+				}),
+				q(63989, {	-- Oozing with Character (Plaguey)
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
+					["provider"] = { "n", 178806 },	-- Plague Deviser Marileth
+					["isDaily"] = true,
+					["coord"] = { 60.5, 27.6, KORTHIA },
+					["g"] = {
+						ach(15057),		-- Friend of Plaguey
 					},
 				}),
 				q(63935, {	-- Precious Roots
@@ -658,7 +686,6 @@ _.Zones =
 				}),
 
 			--	ptr data
-				i(186017),	-- Korthite Crystal - rewarded by some dailies and found in some treasures, but does not seem statically attached to anything specific.  acquisition/availability may be based on having completed the campaign questline to the point where you get to the Vault of Secrets
 				q(64271, {	-- A More Civilized Way
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178795 },	-- Nadjia the Mistblade
@@ -677,19 +704,7 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 64.7, 25.6, KORTHIA },
 				}),
-				q(63794, {	-- Broker's Bounty: Hungering Behemoth
-					["sourceQuests"] = { 64556 },	-- In Need of Assistance
-					["provider"] = { "o", 368772 },	-- Sigilscored Scroll
-					["isDaily"] = true,
-					["coord"] = { 64.7, 25.6, KORTHIA },
-				}),
 				q(63792, {	-- Broker's Bounty: Nocturnus the Unraveler
-					["sourceQuests"] = { 64556 },	-- In Need of Assistance
-					["provider"] = { "o", 368772 },	-- Sigilscored Scroll
-					["isDaily"] = true,
-					["coord"] = { 64.7, 25.6, KORTHIA },
-				}),
-				q(63963, {	-- Broker's Bounty: Ripmaul
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "o", 368772 },	-- Sigilscored Scroll
 					["isDaily"] = true,
@@ -737,12 +752,6 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 60.1, 27.5, KORTHIA },
 				}),
-				q(64065, {	-- Local Reagents
-					["sourceQuests"] = { 64556 },	-- In Need of Assistance
-					["provider"] = { "n", 178806 },	-- Plague Deviser Marileth
-					["isDaily"] = true,
-					["coord"] = { 60.5, 27.7, KORTHIA },
-				}),
 				q(63781, {	-- Mawsworn Battle Plans
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178795 },	-- Nadjia the Mistblade
@@ -780,15 +789,6 @@ _.Zones =
 					["coord"] = { 60.5, 27.6, KORTHIA },
 					["g"] = {
 						ach(15056),		-- Friend of Bloop
-					},
-				}),
-				q(63989, {	-- Oozing with Character (Plaguey)
-					["sourceQuests"] = { 64556 },	-- In Need of Assistance
-					["provider"] = { "n", 178806 },	-- Plague Deviser Marileth
-					["isDaily"] = true,
-					["coord"] = { 60.5, 27.6, KORTHIA },
-					["g"] = {
-						ach(15057),		-- Friend of Plaguey
 					},
 				}),
 				q(64166, {	-- Random Memory Access

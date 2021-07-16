@@ -92,6 +92,7 @@ _.Zones =
 						174129,	-- Agonized Soul
 						175897,	-- Aimless Soul
 						174182,	-- Caged Soul
+						175938,	-- Drained Soul
 						178270,	-- Helya's Grasp (for Imprisoned Soul)
 						176149,	-- Imprisoned Soul
 						175910,	-- Scavenged Soul

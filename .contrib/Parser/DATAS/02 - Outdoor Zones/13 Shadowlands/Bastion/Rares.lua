@@ -275,7 +275,10 @@ _.Zones =
 						crit(28, {	-- Orstus and Sotiros
 							["achievementID"] = 14307,	-- Adventurer of Bastion
 						}),
-						i(184401),	-- Larion Pouncer (PET!)
+						i(184401, {	-- Larion Pouncer (PET!)
+							["customCollect"] = "SL_COV_KYR",	-- Kyrian
+							["description"] = "To be eligible to receive the pet, your Anima Conductor must be upgraded to Rank 3.",
+						}),
 						i(184365),	-- Aegis of Salvation
 					},
 				}),
