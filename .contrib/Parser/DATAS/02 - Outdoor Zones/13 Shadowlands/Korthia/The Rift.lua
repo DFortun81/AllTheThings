@@ -7,7 +7,7 @@ _.Zones =
 	m(SHADOWLANDS, {
 		m(KORTHIA, {
 			n(-978, {	-- The Rift
-				["description"] = "The things in this section are only accessible when you are in the Rift, a version of the Maw populated by shades.\n\nIn Korthia, this phase can be accessed by using a |cFF1eff00Repaired Riftkey|r on a |cFFFFFFFFMaw Rift|r. To get there in the Maw, you can either walk to the Maw after entering a |cFFFFFFFFMaw Rift|r in Korthia, or use the |cFFFFFFFFUnbalanced Riftstone|r from the Night Fae covenant assault quest |cFF349cffA Shady Place|r.",
+				["description"] = "The things in this section are only accessible when you are in The Rift, a version of the Maw populated by shades.\n\nThis phase can be accessed by using a |cFF1eff00Repaired Riftkey|r on a |cFFFFFFFFMaw Rift|r in Korthia or by using a |cFF0070ddCollapsing Riftstone|r.",
 				["g"] = {
 					n(QUESTS, {
 						q(63919, {	-- Book of Binding: The Tormented Sorceror

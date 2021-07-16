@@ -240,7 +240,7 @@ _.Zones =
 								},
 							}),
 							n(177331, {	-- Sentinel Pyrophus
-								-- ["questID"] = ,
+								["questID"] = 64127,
 								["isDaily"] = true,
 								["g"] = {
 									i(186241),	-- Insulated Thermal Leggings
@@ -400,6 +400,14 @@ _.Zones =
 					["coord"] = { 58.0, 58.8, 1971 },	-- Skyhold (scenario)
 					["maps"] = { 1971 },	-- Skyhold (scenario)
 				}),
+				q(63616, {	-- A Job Done Right
+					["sourceQuests"] = {
+						63615,	-- Clip Their Wings
+						63613,	-- Gates of the Damned
+						63614,	-- Weapon in Hand
+					},
+					["provider"] = { "n", 177586 },	-- Baroness Draka
+				}),
 				q(59756, {	-- A Moment's Respite
 					["sourceQuests"] = { 59755 },	-- A Flight from Darkness
 					["provider"] = { "n", 166980 },	-- Lady Jaina Proudmoore
@@ -430,6 +438,13 @@ _.Zones =
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["isWeekly"] = true,
 					["coord"] = { 46.9, 41.7, THE_MAW },
+				}),
+				q(63620, {	-- A Traitor's Due
+					["sourceQuests"] = {
+						63619,	-- Forsworn and Forgotten
+						63618,	-- What Maldraxxus Does Best
+					},
+					["provider"] = { "n", 177586 },	-- Baroness Draka
 				}),
 				q(63050, {	-- Acquisition: Blazing Ingots
 					["provider"] = { "o", 364932 },	-- Blazing Ingot
@@ -462,6 +477,11 @@ _.Zones =
 					["provider"] = { "n", 162804 },	-- Ve'nari
 					["coord"] = { 46.8, 41.7, THE_MAW },
 				}),
+				q(63617, {	-- Bending Bars
+					["sourceQuests"] = { 63616 },	-- A Job Done Right
+					["provider"] = { "n", 177586 },	-- Baroness Draka
+					["coord"] = { 68.6, 52.9, THE_MAW },
+				}),
 				q(63810, {	-- Birds of a Feather
 					["sourceQuests"] = { 63849 },	-- Hearing Aid
 					["provider"] = { "n", 179078 },	-- Projection of Ve'nari
@@ -484,13 +504,13 @@ _.Zones =
 					["coord"] = { 67.0, 55.9, THE_MAW },
 					["maps"] = { 1971 },	-- Skyhold (scenario)
 				}),
+				q(63615, {	-- Clip Their Wings
+					["sourceQuests"] = { 63612 },	-- The Chains of Command
+					["provider"] = { "n", 177586 },	-- Baroness Draka
+					["coord"] = { 62.8, 66.0, THE_MAW },
+				}),
 				q(63135, {	-- Coldheart Flight Routes
 					["provider"] = { "i", 180801 },	-- Coldheart Flight Routes
-				}),
-				-- TODO: bonus objective is the same ID as the Rare kill daily?
-				q(61346, {	-- Cyrixia the Willbreaker (Bonus Objective)
-					["isDaily"] = true,
-					["coord"] = { 27.6, 28.2, THE_MAW },
 				}),
 				q(60762, {	-- Death Motes
 					["provider"] = { "n", 162804 },	-- Ve'nari
@@ -572,6 +592,11 @@ _.Zones =
 					["isWeekly"] = true,
 					["coord"] = { 46.9, 41.7, THE_MAW },
 				}),
+				q(63619, {	-- Forsworn and Forgotten
+					["sourceQuests"] = { 63617 },	-- Bending Bars
+					["provider"] = { "n", 177288 },	-- Fallen Disciple Nikolon
+					["coord"] = { 65.5, 46.1, THE_MAW },
+				}),
 				q(59776, {	-- From the Mouths of Madness
 					["sourceQuests"] = {
 						59760,	-- The Afflictor's Key
@@ -586,6 +611,11 @@ _.Zones =
 					["provider"] = { "n", 177726 },	-- Odyn
 					["coord"] = { 58.3, 83.8, 1971 },	-- Skyhold (scenario)
 					["maps"] = { 1971 },	-- Skyhold (scenario)
+				}),
+				q(63613, {	-- Gates of the Damned
+					["sourceQuests"] = { 63612 },	-- The Chains of Command
+					["provider"] = { "n", 177560 },	-- Baroness Draka
+					["coord"] = { 62.8, 66.0, THE_MAW },
 				}),
 				q(63902, {	-- Good News, Everyone!
 					["sourceQuests"] = { 63901 },	-- Focusing the Eye
@@ -619,6 +649,18 @@ _.Zones =
 					["sourceQuests"] = { 63895 },	-- Grab Bag
 					["provider"] = { "n", 179078 },	-- Projection of Ve'nari
 					["coord"] = { 61.6, 59.0, THE_MAW },
+				}),
+				q(64521, {	-- Helsworn Battle Plans
+					["sourceQuests"] = { 63612 },	-- The Chains of Command
+					["provider"] = { "i", 187275 },	-- Helsworn Battle Plans
+					["crs"] = {
+						177413,	-- Avowed Soulbreaker
+						177418,	-- Chained Bonesculpter
+						177135,	-- Helsworn Beastlord
+						177131,	-- Helsworn Inquisitor
+						177134,	-- Maldraxxi Defector
+						177133,	-- Mawsworn Deathsinger
+					},
 				}),
 				q(59962, {	-- Hope Never Dies
 					["sourceQuests"] = { 59959 },	-- The Brand Holds the Key
@@ -820,6 +862,12 @@ _.Zones =
 					["coord"] = { 58.3, 83.8, 1971 },	-- Skyhold (scenario)
 					["maps"] = { 1971 },	-- Skyhold (scenario)
 				}),
+				q(64541, {	-- The Cost of Death
+					["provider"] = { "n", 162804 },	-- Ve'nari
+					["isWeekly"] = true,
+					["coord"] = { 46.8, 41.7, THE_MAW },
+					["cost"] = { { "c", 1767, 800 } },	-- 800x Stygia
+				}),
 				q(60972, {	-- The Hunt for the Baron
 					["sourceQuests"] = { 59897 },	-- Seeking the Baron
 					["coord"] = { 44.9, 40.9, THE_MAW },
@@ -886,10 +934,26 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 28.0, 47.0, THE_MAW },
 				}),
+				q(63622, {	-- Victory in Our Name
+					["sourceQuests"] = { 63620 },	-- A Traitor's Due
+					["provider"] = { "n", 178103 },	-- Baroness Draka
+					["coord"] = { 62.0, 41.6, THE_MAW },
+					["_drop"] = { "g" },	-- drop anima trash
+				}),
 				q(61190, {	-- Wake of Ashes
 					["sourceQuests"] = { 59973 },	-- A Bond Beyond Death
 					["provider"] = { "n", 172414 },	-- Highlord Darion Mograine
 					["coord"] = { 32.9, 66.4, THE_MAW },
+				}),
+				q(63614, {	-- Weapon in Hand
+					["sourceQuests"] = { 63612 },	-- The Chains of Command
+					["provider"] = { "n", 177589 },	-- Thrall
+					["coord"] = { 62.8, 66.0, THE_MAW },
+				}),
+				q(63618, {	-- What Maldraxxus Does Best
+					["sourceQuests"] = { 63617 },	-- Bending Bars
+					["provider"] = { "n", 177586 },	-- Baroness Draka
+					["coord"] = { 65.2, 48.4, THE_MAW },
 				}),
 				q(63069, {	-- What They Know
 					["sourceQuests"] = { 60285 },	-- Rule 6: Concealment is Everything
@@ -922,69 +986,6 @@ _.Zones =
 					["maps"] = { 1971 },	-- Skyhold (scenario)
 				}),
 
-			--	PTR - TODO: merge with regular quests once this stuff makes it to live
-				q(63616, {	-- A Job Done Right
-					["sourceQuests"] = {
-						63615,	-- Clip Their Wings
-						63613,	-- Gates of the Damned
-						63614,	-- Weapon in Hand
-					},
-					["provider"] = { "n", 177586 },	-- Baroness Draka
-				}),
-				q(63620, {	-- A Traitor's Due
-					["sourceQuests"] = {
-						63619,	-- Forsworn and Forgotten
-						63618,	-- What Maldraxxus Does Best
-					},
-					["provider"] = { "n", 177586 },	-- Baroness Draka
-				}),
-				q(63617, {	-- Bending Bars
-					["sourceQuests"] = { 63616 },	-- A Job Done Right
-					["provider"] = { "n", 177586 },	-- Baroness Draka
-					["coord"] = { 68.6, 52.9, THE_MAW },
-				}),
-				q(63615, {	-- Clip Their Wings
-					["sourceQuests"] = { 63612 },	-- The Chains of Command
-					["provider"] = { "n", 177586 },	-- Baroness Draka
-					["coord"] = { 62.8, 66.0, THE_MAW },
-				}),
-				q(63619, {	-- Forsworn and Forgotten
-					["sourceQuests"] = { 63617 },	-- Bending Bars
-					["provider"] = { "n", 177288 },	-- Fallen Disciple Nikolon
-					["coord"] = { 65.5, 46.1, THE_MAW },
-				}),
-				q(63613, {	-- Gates of the Damned
-					["sourceQuests"] = { 63612 },	-- The Chains of Command
-					["provider"] = { "n", 177560 },	-- Baroness Draka
-					["coord"] = { 62.8, 66.0, THE_MAW },
-				}),
-				q(64521, {	-- Helsworn Battle Plans
-					["sourceQuests"] = { 63612 },	-- The Chains of Command
-					["provider"] = { "i", 187275 },	-- Helsworn Battle Plans
-				--	["crs"] = {  },	-- TODO: multilooted so not sure what dropped it, something in desmotaeron as i was doing the other 3 quests after 'the chains of command'
-				}),
-				q(64541, {	-- The Cost of Death
-				--	not flagged daily/weekly in API - you trade 800 Stygia to Ve'nari in return for 1,000 reputation with her.  TODO: verify this is a one-time quest.  quest text makes it seem like it will be repeatable in one way or another.  ETA: this popped up again on my priest but i'm not sure if it's daily/weekly still
-					["provider"] = { "n", 162804 },	-- Ve'nari
-					["isWeekly"] = true,
-					["coord"] = { 46.8, 41.7, THE_MAW },
-					["cost"] = { { "c", 1767, 800 } },	-- 800x Stygia
-				}),
-				q(63622, {	-- Victory in Our Name
-					["sourceQuests"] = { 63620 },	-- A Traitor's Due
-					["provider"] = { "n", 178103 },	-- Baroness Draka
-					["coord"] = { 62.0, 41.6, THE_MAW },
-				}),
-				q(63614, {	-- Weapon in Hand
-					["sourceQuests"] = { 63612 },	-- The Chains of Command
-					["provider"] = { "n", 177589 },	-- Thrall
-					["coord"] = { 62.8, 66.0, THE_MAW },
-				}),
-				q(63618, {	-- What Maldraxxus Does Best
-					["sourceQuests"] = { 63617 },	-- Bending Bars
-					["provider"] = { "n", 177586 },	-- Baroness Draka
-					["coord"] = { 65.2, 48.4, THE_MAW },
-				}),
 				-- End PTR quests
 				q(62838, {	-- Soulful Recovery
 					["sourceQuests"] = { 60289 },	-- Rule 3: Trust is Earned

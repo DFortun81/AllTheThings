@@ -283,6 +283,12 @@ _.Zones =
 					["provider"] = { "n", 177423 },	-- Tal-Galan
 					["coord"] = { 57.4, 29.8, KORTHIA },
 				}),
+				q(63612, {	-- The Chains of Command
+					["sourceQuests"] = { 63727 },	-- The Primus Returns
+					["description"] = "Requires Renown 47.",	-- on Kyrian, presume all covenants are the same
+					["provider"] = { "n", 177194 },	-- The Primus
+					["coord"] = { 63.1, 25.3, KORTHIA },
+				}),
 				q(63705, {	-- The Knowledge Keepers
 					["sourceQuests"] = { 63703 },	-- Vault of Secrets
 					["provider"] = { "n", 177423 },	-- Tal-Galan
@@ -462,12 +468,6 @@ _.Zones =
 					["provider"] = { "i", 185914 },	-- Damaged Talisman
 					["coord"] = { 40.6, 41.3, KORTHIA },
 				}),
-				q(63612, {	-- The Chains of Command
-					["sourceQuests"] = { 63727 },	-- The Primus Returns
-					["description"] = "Requires Renown 47.",	-- on Kyrian, presume all covenants are the same
-					["provider"] = { "n", 177194 },	-- The Primus
-					["coord"] = { 63.1, 25.3, KORTHIA },
-				}),
 				q(64532, {	-- The Final Relics
 				--	TODO: unsure if reqs are these 3 quests, Tier 5 research, or both
 					["sourceQuests"] = {
@@ -541,6 +541,23 @@ _.Zones =
 					["provider"] = { "n", 178797 },	-- Sika
 					["isDaily"] = true,
 					["coord"] = { 61.7, 23.9, KORTHIA },
+				}),
+				q(63784, {	-- Gold's No Object
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
+					["provider"] = { "n", 179221 },	-- Rendle
+					["isDaily"] = true,
+					["coord"] = { 61.6, 26.0, KORTHIA },
+					["g"] = {
+						--	different characters can have different rewards for this quest on the same day.  checked all 3 back to back on 5/18, priest had Paint Brush Cup, shaman had Wheelbarrow, and mage had Chalice
+						i(186690),	-- Gold Filled Barrel
+						i(186693),	-- Gold Filled Wheelbarrow on 5/4 but hadn't before, so perhaps not every time?  contained ~893g
+						i(186707),	-- Gold Filled Crate on 5/14.  contained ~401g
+						i(186708),	-- Gold Filled Paint Brush Cup on 5/18.  contained ~251g
+						i(186705),	-- Gold Filled Chalice (didn't do daily on this character so not sure how much it contains)
+						i(186688),	-- Gold Filled Wash Bucket
+						i(186691),	-- Gold Filled Satchel
+						i(186706),	-- Gold Filled Hat
+					},
 				}),
 				q(63782, {	-- Mawsworn Rituals
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
@@ -713,23 +730,6 @@ _.Zones =
 					["provider"] = { "n", 179194 },	-- Kleia
 					["isDaily"] = true,
 					["coord"] = { 61.6, 23.9, KORTHIA },
-				}),
-				q(63784, {	-- Gold's No Object
-					["sourceQuests"] = { 64556 },	-- In Need of Assistance
-					["provider"] = { "n", 179221 },	-- Rendle
-					["isDaily"] = true,
-					["coord"] = { 61.6, 26.0, KORTHIA },
-					["g"] = {
-						--	different characters can have different rewards for this quest on the same day.  checked all 3 back to back on 5/18, priest had Paint Brush Cup, shaman had Wheelbarrow, and mage had Chalice
-						i(186690),	-- Gold Filled Barrel
-						i(186693),	-- Gold Filled Wheelbarrow on 5/4 but hadn't before, so perhaps not every time?  contained ~893g
-						i(186707),	-- Gold Filled Crate on 5/14.  contained ~401g
-						i(186708),	-- Gold Filled Paint Brush Cup on 5/18.  contained ~251g
-						i(186705),	-- Gold Filled Chalice (didn't do daily on this character so not sure how much it contains)
-						i(186688),	-- Gold Filled Wash Bucket
-						i(186691),	-- Gold Filled Satchel
-						i(186706),	-- Gold Filled Hat
-					},
 				}),
 				q(64015, {	-- Into the Meat Grinder
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
