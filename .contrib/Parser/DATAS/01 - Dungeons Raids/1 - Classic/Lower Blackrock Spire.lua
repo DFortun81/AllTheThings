@@ -5,7 +5,14 @@
 _.Instances = { tier(1, {	-- Classic
 	inst(229, {	-- Lower Blackrock Spire
 		["lvl"] = 50,
-		["maps"] = { 250, 251, 252, 253, 254, 255 },
+		["maps"] = {
+			LBRS_TAZZALOR,
+			LBRS_SKITTERWEB_TUNNELS,
+			LBRS_HORDEMAR_CITY,
+			LBRS_HALL_OF_BLACKHAND,
+			LBRS_HALYCONS_LAIR,
+			LBRS_CHAMBER_OF_BATTLE,
+		},
 		["coord"] = { 80.46, 40.65, BLACKROCK_MOUNTAIN },
 		["groups"] = {
 			n(QUESTS, {
@@ -105,7 +112,7 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			n(9218, {	-- Spirestone Battle Lord (Rare)
 				["coords"] = {
-					{ 39.0, 64.0, 252 },	-- Mok'Doom
+					{ 39.0, 64.0, LBRS_HORDEMAR_CITY },	-- Mok'Doom
 				},
 				["description"] = "This is a rare that is not always present.",
 				["groups"] = {
@@ -115,7 +122,7 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			n(9219, {	-- Spirestone Butcher (Rare)
 				["coords"] = {
-					{ 54.0, 58.0, 252 },	-- Hordemar City (Upper)
+					{ 54.0, 58.0, LBRS_HORDEMAR_CITY },	-- Upper
 				},
 				["description"] = "This is a rare that is not always present.",
 				["groups"] = {
@@ -125,7 +132,7 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			n(9217, {	-- Spirestone Lord Magus (Rare)
 				["coords"] = {
-					{ 39.0, 64.0, 252 },	-- Mok'Doom
+					{ 39.0, 64.0, LBRS_HORDEMAR_CITY },	-- Mok'Doom
 				},
 				["description"] = "This is a rare that is not always present.",
 				["groups"] = {
@@ -193,8 +200,8 @@ _.Instances = { tier(1, {	-- Classic
 			})),
 			n(9596, {	-- Bannok Grimaxe (Rare)
 				["coords"] = {
-					{ 53.0, 67.0, 250 },	-- Hordemar City (Lower)
-					{ 49.0, 55.0, 250 },	-- Hordemar City (Lower)
+					{ 53.0, 67.0, LBRS_TAZZALOR },
+					{ 49.0, 55.0, LBRS_TAZZALOR },
 				},
 				["description"] = "This is a rare that is not always present.",
 				["groups"] = {
@@ -205,9 +212,7 @@ _.Instances = { tier(1, {	-- Classic
 				},
 			}),
 			n(10376, {	-- Crystal Fang (Rare)
-				["coords"] = {
-					{ 55.0, 75.0, 251 },	-- Skitterweb Tunnels
-				},
+				["coord"] = { 55.0, 75.0, LBRS_SKITTERWEB_TUNNELS },
 				["description"] = "This is a rare that is not always present.",
 				["groups"] = {
 					i(13185),	-- Sunderseer Mantle
@@ -265,8 +270,8 @@ _.Instances = { tier(1, {	-- Classic
 			})),
 			n(9718, {	-- Ghok Bashguud (Rare)
 				["coords"] = {
-					{ 36.0, 72.0, 254 },	-- Hordemar City (Upper)
-					{ 36.0, 60.0, 254 },	-- Hordemar City (Upper)
+					{ 36.0, 72.0, LBRS_HALYCONS_LAIR },
+					{ 36.0, 60.0, LBRS_HALYCONS_LAIR },
 				},
 				["description"] = "This is a rare that is not always present.",
 				["groups"] = {

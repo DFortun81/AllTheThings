@@ -1158,7 +1158,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["coord"] = { 21.1, 38.5, BURNING_STEPPES },	-- entrance to Blackrock Mountain
 				["maps"] = {
 					BURNING_STEPPES,
-					252,	-- Lower Blackrock Spire
+					LBRS_HORDEMAR_CITY,
 				},
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
