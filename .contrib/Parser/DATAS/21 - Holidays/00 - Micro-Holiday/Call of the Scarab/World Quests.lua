@@ -16,7 +16,7 @@ _.Holidays =
 					a(q(45737, {	-- Ahn'Qiraj: C'thun [A]
 						["lvl"] = 60,
 						["coords"] = {
-							{ 46.76, 7.53, 327 },	-- Temple of Ahn'Qiraj, Ahn Qiraj: The Fallen Kingdom
+							{ 46.76, 7.53, AHNQIRAJ_THE_FALLEN_KINGDOM },	-- Temple of Ahn'Qiraj
 						},
 						["maps"] = {	-- AQ40 Maps
 							319,	-- The Hive Undergrounds
@@ -27,7 +27,7 @@ _.Holidays =
 					h(q(45654, {	-- Ahn'Qiraj: C'thun [H]
 						["lvl"] = 60,
 						["coords"] = {
-							{ 46.76, 7.53, 327 },	-- Temple of Ahn'Qiraj, Ahn Qiraj: The Fallen Kingdom
+							{ 46.76, 7.53, AHNQIRAJ_THE_FALLEN_KINGDOM },	-- Temple of Ahn'Qiraj
 						},
 						["maps"] = {	-- AQ40 Maps
 							319,	-- The Hive Undergrounds
@@ -38,7 +38,7 @@ _.Holidays =
 					a(q(45736, {	-- The Ruins of Ahn'Qiraj: Ossirian [A]
 						["lvl"] = 60,
 						["coords"] = {
-							{ 58.93, 14.26, 327 },	-- Ruins of Ahn'Qiraj, Ahn Qiraj: The Fallen Kingdom
+							{ 58.93, 14.26, AHNQIRAJ_THE_FALLEN_KINGDOM },	-- Ruins of Ahn'Qiraj
 						},
 						["maps"] = {
 							RUINS_OF_AHNQIRAJ,
@@ -47,7 +47,7 @@ _.Holidays =
 					h(q(45651, {	-- The Ruins of Ahn'Qiraj: Ossirian [H]
 						["lvl"] = 60,
 						["coords"] = {
-							{ 58.93, 14.26, 327 },	-- Ruins of Ahn'Qiraj, Ahn Qiraj: The Fallen Kingdom
+							{ 58.93, 14.26, AHNQIRAJ_THE_FALLEN_KINGDOM },	-- Ruins of Ahn'Qiraj
 						},
 						["maps"] = {
 							RUINS_OF_AHNQIRAJ,

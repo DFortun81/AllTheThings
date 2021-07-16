@@ -35,7 +35,7 @@ _.Secrets =
 			o(272046, {	-- Step 3: Mind Larva
 				["model"] = 202390,
 				["questID"] = 47840,
-				["coord"] = { 46.76, 7.53, 327 },	-- Temple of Ahn'Qiraj
+				["coord"] = { 46.76, 7.53, AHNQIRAJ_THE_FALLEN_KINGDOM },	-- Temple of Ahn'Qiraj
 				["sourceQuest"] = 47837,	-- Step 2: Inconspicuous Note
 				["description"] = "|cFFFFFFFFStep 3:|r This step requires visiting |cFFFFD700Temple of Ahn'Qiraj|r. Go all the way through the instance, past |cFFFFD700C'thun|r's room into the room with three vendors.  Once you see the three vendors, go up the stairs and you will see a table that has a glowing |cFFFFD700Mind Larva|r on it.  Click the |cFFFFD700Mind Larva|r to activate a game similar to the |cFFFFD700Jewelcraft|r toy.\n\n|cffcc33ffTips: Hit Alt+Z to hide your interface and then scroll into first-person view.  You can also use the right mouse button to turn your character around for easier viewing.|r\n\nYou need to play until you can line up five brains horizontally or vertically, or until you reach an unknown point cap.  Just keep playing, and you'll eventually trigger it.|r\n",
 			}),

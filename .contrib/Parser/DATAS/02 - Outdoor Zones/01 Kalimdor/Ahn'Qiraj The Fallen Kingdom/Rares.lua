@@ -4,10 +4,10 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(327, {	-- Ahn'Qiraj: The Fallen Kingdom
+		m(AHNQIRAJ_THE_FALLEN_KINGDOM, {
 			n(RARES, {
 				-- n(50747, {	-- Tix
-					-- ["coord"] = { 60.8, 6.6, 327 },
+					-- ["coord"] = { 60.8, 6.6, AHNQIRAJ_THE_FALLEN_KINGDOM },
 				-- }),
 			}),
 		}),
