@@ -111,7 +111,7 @@ function app:ShowPopupDialogWithEditBox(msg, text, callback, timeout)
 			enterClicksFirstButton = true,
 			hasEditBox = true,
 			OnAccept = function(self)
-				if popup.callback then
+				if popup.callback and type(popup.callback) == "function" then
 					popup.callback(self.editBox:GetText());
 				end
 			end,
@@ -123,8 +123,9 @@ function app:ShowPopupDialogWithEditBox(msg, text, callback, timeout)
 		self.editBox:SetText(text);
 		self.editBox:SetJustifyH("CENTER");
 		self.editBox:SetWidth(240);
+		self.editBox:HighlightText();
 	end;
-	popup.text = msg or "Ctrl+A, Ctrl+C to Copy to your Clipboard.";
+	popup.text = msg or "Ctrl+C to Copy to your Clipboard.";
 	popup.callback = callback;
 	StaticPopup_Hide ("ALL_THE_THINGS_EDITBOX");
 	StaticPopup_Show ("ALL_THE_THINGS_EDITBOX");
@@ -204,4 +205,7 @@ function app:ShowPopupDialogWithMultiLineEditBox(text, onclick)
 		ATTEditBoxEditBox:SetFocus();
 	end
 	ATTEditBox:Show()
+end
+function app:ShowPopupDialogToReport(reportReason, text)
+	app:ShowPopupDialogWithEditBox((reportReason or "Missing Data") .. app.L["PLEASE_REPORT_MESSAGE"], text);
 end

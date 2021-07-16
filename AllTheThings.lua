@@ -1687,9 +1687,16 @@ end
 -- Quest Completion Lib
 local PrintQuestInfo = function(questID, new, info)
 	if app.IsReady and app.Settings:GetTooltipSetting("Report:CompletedQuests") then
-		local searchResults = app.SearchForField("questID", questID)
+		local searchResults = app.SearchForField("questID", questID);
+		local id = questID;
 		if not searchResults or #searchResults <= 0 or GetRelativeField(searchResults[1], "text", L["UNSORTED_1"]) then
-			questID = questID .. " |cffff5c6c(Not in ATT " .. app.Version .. ")|r";
+			questID = questID .. " (Not in ATT " .. app.Version .. ")";
+			-- Linkify the output
+			local popupID = "quest-" .. id;
+			questID = app:Linkify(questID, "ff5c6c", "dialog:" .. popupID);
+			app:SetupReportDialog(popupID, "Missing Quest: " .. id,
+				"missing-quest:" .. questID	-- TODO: put more info in here as it will be copy-paste into Discord
+			);
 		else
 			if app.Settings:GetTooltipSetting("Report:UnsortedQuests") then
 				return true;
@@ -1699,16 +1706,27 @@ local PrintQuestInfo = function(questID, new, info)
 			-- so when a quest flagged as HQT is accepted/completed directly, it will be more noticable of being incorrectly sourced
 			if GetRelativeField(searchResults[1], "text", L["HIDDEN_QUEST_TRIGGERS"]) then
 				questID = questID .. " [HQT]";
+				-- Linkify the output
+				questID = app:Linkify(questID, "7aff92", "search:questID:" .. id);
 			elseif GetRelativeField(searchResults[1], "text", L["NEVER_IMPLEMENTED"]) then
-				questID = questID .. " |cffff5c6c(Not in ATT " .. app.Version .. " [NYI])|r";
+				questID = questID .. " (Not in ATT " .. app.Version .. " [NYI])";
+				-- Linkify the output
+				local popupID = "quest-" .. id;
+				questID = app:Linkify(questID, "ff5c6c", "dialog:" .. popupID);
+				app:SetupReportDialog(popupID, "NYI Quest: " .. id,
+					"nyi-quest:" .. questID	-- TODO: put more info in here as it will be copy-paste into Discord
+				);
+			else
+				-- Linkify the output
+				questID = app:Linkify(questID, "149bfd", "search:questID:" .. id);
 			end
 		end
 		if new == true then
-			print("Quest accepted #" .. questID .. (info or ""));
+			print("Quest accepted " .. questID .. (info or ""));
 		elseif new == false then
-			print("Quest unflagged #" .. questID .. (info or ""));
+			print("Quest unflagged " .. questID .. (info or ""));
 		else
-			print("Quest completed #" .. questID .. (info or ""));
+			print("Quest completed " .. questID .. (info or ""));
 		end
 	end
 end
@@ -18993,6 +19011,58 @@ SLASH_AllTheThingsWQ1 = "/attwq";
 SlashCmdList["AllTheThingsWQ"] = function(cmd)
 	app:GetWindow("WorldQuests"):Toggle();
 end
+
+-- Clickable ATT Chat Link Handling
+(function()
+	-- Replace the default link-click handler since custom links otherwise cause it to break...?
+	local SetItemRef_orig = SetItemRef;
+	local function ClickURL_SetItemRef(...)
+		local op = ...;
+		if (string.sub(op, 1, 7) == "attlink") then
+			op = string.sub(op, 9);
+			local type, paramA, paramB = strsplit(":", op);
+			if type == "search" then
+				local cmd = paramA .. ":" .. paramB;
+				local group = GetCachedSearchResults(cmd, SearchForLink, cmd);
+				app:CreateMiniListForGroup(group);
+				return true;
+			elseif type == "dialog" then
+				return app:TriggerReportDialog(paramA);
+			end
+		else
+			SetItemRef_orig(...);
+		end
+	end
+	SetItemRef = ClickURL_SetItemRef;
+
+	-- Turns a bit of text into a colored link which ATT will attempt to understand
+	function app:Linkify(text, color, operation)
+		text = "|cff"..color.."|Hattlink:"..operation.."|h["..text.."]|h|r";
+		return text;
+	end
+
+	-- Stores some information for use by a report popup by id
+	function app:SetupReportDialog(id, reportMessage, text)
+		if not app.popups then app.popups = {}; end
+		if not app.popups[id] then
+			local popupID = { ["msg"] = reportMessage, ["text"] = text };
+			-- print("Setup PopupID",id)
+			-- app.PrintTable(popupID);
+			app.popups[id] = popupID;
+		end
+	end
+
+	-- Retrieves stored information for a report dialog and attempts to display the dialog if possible
+	function app:TriggerReportDialog(id)
+		if app.popups then
+			local popupID = app.popups[id];
+			if popupID then
+				app:ShowPopupDialogToReport(popupID.msg, popupID.text);
+				return true;
+			end
+		end
+	end
+end)();
 
 -- Register Events required at the start
 app:RegisterEvent("ADDON_LOADED");
