@@ -415,7 +415,7 @@ _.Zones =
 					["isDaily"] = true,
 				}),
 				q(38603, {	-- Setting the Signal
-					["provider"] = { "n", 90963 },	-- Angar Steelbellow
+					["provider"] = { "n", 92545 },	-- Norman Powerspark
 					["coord"] = { 58.1, 58.5, 534 },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 38445,	-- The Assault Base

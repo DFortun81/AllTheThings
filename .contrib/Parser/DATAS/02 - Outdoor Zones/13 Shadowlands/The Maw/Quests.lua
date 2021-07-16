@@ -1035,6 +1035,8 @@ _.HiddenQuestTriggers = {
 	q(64698),	-- triggered when killing Intercessor Razzra / Zul'gath the Flayer (4th Tormentor of week?)
 	q(64120),	-- triggered when killing Versya the Damned
 	-- q(64121),	-- triggered when killing Sentinel Shakorzeth (somehow it + Kazj the Sentinel were both up at once, this was only after killing Shakorzeth, and then Kazj did not trigger an additional questID at all)
+	q(64151),	-- Completed at the same time as 63669 (Somebody Feed Kevin)
+	q(64315),	-- Ve'nari paragon chest
 };
 
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {

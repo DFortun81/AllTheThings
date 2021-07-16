@@ -1271,3 +1271,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		}),	
 	}),
 });
+_.HiddenQuestTriggers = {
+	q(36885),	-- Ogre Waygate
+};

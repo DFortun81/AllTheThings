@@ -306,7 +306,23 @@ _.ExpansionFeatures =
 						follower(1282)	-- Yira'lya
 					},
 				}),
-
+				-- 9.1
+				q(64170 , {	-- Champion: ELGU - 007 [Kyrian]
+					["customCollect"] = "SL_COV_KYR",	-- Kyrian
+					["sourceQuests"] = { 64186 },	-- ELGU - 007's Missing Power Core
+					["provider"] = { "n", 179666 },	-- ELGU - 007
+					["g"] = {
+						follower(1328),	-- ELGU - 007
+					},
+				}),
+				q(64168 , {	-- Champion: Spore of Marasmius [Night Fae]
+					["customCollect"] = "SL_COV_NFA",	-- Night Fae
+					["sourceQuests"] = { 64184 },	-- Missing Friend
+					["provider"] = { "n", 179670 },	-- Spore of Marasmius
+					["g"] = {
+						follower(1326),	-- Spore of Marasmius
+					},
+				}),
 				-------- unverifed on live yet; adding to alphabetized list above as they are verified in game
 				--[[
 				q(60137, {	-- The Fracture Chambers
@@ -501,7 +517,17 @@ _.ExpansionFeatures =
 					["provider"] = { "n", 173753 },	-- Velkein
 					-- Coldheart 8 / 5
 				}),
-
+				-- 9.1
+				q(64186, {	-- ELGU - 007's Missing Power Core [Double check]
+					["sourceQuests"] = { 60136 },	-- Into Torghast
+					["repeatable"] = true,
+					["provider"] = { "n", 179665 },	-- ELGU - 007
+				}),
+				q(64184, {	-- Missing Friend [Double check]
+					["sourceQuests"] = { 60136 },	-- Into Torghast
+					["repeatable"] = true,
+					["provider"] = { "n", 179762 },	-- Friend? [Might be Spore of Marasmius]
+				}),
 				--------------
 				-- Lockouts --
 				--------------
@@ -757,6 +783,9 @@ _.HiddenQuestTriggers = {
 		q(62979),	-- Twisting Corridors, Layer 6
 		q(62980),	-- Twisting Corridors, Layer 8
 		q(64347),	-- Adamant Vaults
+		q(63880),	-- Triggered at the end
+		q(63881),	-- Triggered at the end
+		q(63882),	-- Triggered at the end
 
 	-- Follower Access Triggers
 		q(61951),	-- Triggered when completing 61958 (Champion: Gorgelimb)
@@ -785,6 +814,8 @@ _.HiddenQuestTriggers = {
 		q(62991),	-- triggered when completing #62993, "The Riddle of Death"
 		q(61953),	-- triggered when completing #62231, "Velkein's Blade"
 		q(61954),	-- triggered when completing #62227, "Xertora's Construct"
+		q(64176),	-- New Night Fae Follower triggered when completing 64184, "Missing Friend".
+		q(64178),	-- New Kyrian Follower Triggered when completing 64186, "ELGU - 007's Missing Power Core"
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {

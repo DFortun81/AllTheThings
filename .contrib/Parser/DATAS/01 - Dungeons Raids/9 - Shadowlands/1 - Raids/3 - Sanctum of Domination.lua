@@ -1167,6 +1167,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 					i(186359),	-- Scoundrel's Harrowed Leggings
 					i(186358),	-- Soulcaster's Woven Grips
 					i(186373),	-- Towering Shadowghast Greatboots
+					i(187252),	-- Ritualist's Spiked Mantle
 				}),
 				e(2435, {	-- The Tarragrue
 					["crs"] = { 175611 },	-- The Tarragrue

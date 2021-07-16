@@ -1224,6 +1224,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					q(37290, {	-- Upgrades in Ashran
+						["description"] = "You need to have Comprehensive Construction Outpost Guide (item 116395) in your inventory",
 						["provider"] = { "n", 78466 },	-- Gazlowe
 						["coord"] = { 37.5, 50.3, 590 },	-- lvl 3
 						["races"] = HORDE_ONLY,

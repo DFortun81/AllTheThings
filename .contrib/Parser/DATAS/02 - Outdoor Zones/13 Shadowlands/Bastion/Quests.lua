@@ -1112,3 +1112,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		}),
 	}),
 });
+_.HiddenQuestTriggers = {
+	q(60625),	-- Triggerd when looting chest at 41,67
+};

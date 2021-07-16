@@ -311,6 +311,7 @@ _.ExpansionFeatures =
 											i(180243),	-- Reverent Collector's Legguards
 											i(179972),	-- Reverent Forgelite's Breeches
 											i(178192),	-- Reverent Watcher's Legguards
+											i(184457),	-- Reverent Legguards
 										}),
 									},
 								}),
@@ -328,6 +329,7 @@ _.ExpansionFeatures =
 									n(-974, {	-- Wisdom
 									}),
 									n(-975, {	-- Humility
+										i(184456),	-- Reverent Chestpiece
 									}),
 								}),
 								n(172333, {	-- Azaruux
@@ -381,6 +383,7 @@ _.ExpansionFeatures =
 										i(180242),	-- Reverent Collector's Gauntlets
 										i(179970),	-- Reverent Forgelite's Gloves
 										i(178191),	-- Reverent Watcher's Gauntlets
+										i(184454),	-- Reverent Gauntlets
 									}),
 								}),
 								n(172177, {	-- Echthra
@@ -427,6 +430,7 @@ _.ExpansionFeatures =
 										i(180245),	-- Reverent Collector's Girdle
 										i(179974),	-- Reverent Forgelite's Belt
 										i(178194),	-- Reverent Watcher's Girdle
+										i(184455),	-- Reverent Girdle
 									}),
 								}),
 								n(170654, {	-- Kalisthene
@@ -474,6 +478,7 @@ _.ExpansionFeatures =
 										i(180239),	-- Reverent Collector's Helm
 										i(177204),	-- Reverent Bearer's Helm
 										i(178188),	-- Reverent Watcher's Helm
+										i(184452),	-- Reverent Helm
 									}),
 								}),
 								n(172099, {	-- Mort
@@ -493,6 +498,7 @@ _.ExpansionFeatures =
 										n(-974, {	-- Wisdom
 										}),
 										n(-975, {	-- Humility
+											i(184460),	-- Reverent Bracer
 										}),
 									},
 								}),
@@ -525,6 +531,7 @@ _.ExpansionFeatures =
 										i(180241),	-- Reverent Collector's Warboots
 										i(179969),	-- Reverent Forgelite's Boots
 										i(178190),	-- Reverent Watcher's Warboots
+										i(184459),	-- Reverent Boots
 									}),
 								}),
 								n(172682, {	-- Splinterbark Nightmare
@@ -563,6 +570,7 @@ _.ExpansionFeatures =
 										i(180244),	-- Reverent Collector's Shoulders
 										i(179973),	-- Reverent Forgelite's Spaulders
 										i(178193),	-- Reverent Watcher's Shoulders
+										i(184458),	-- Reverent Shoulders
 									}),
 								}),
 								n(172411, {	-- Thran'tiok
@@ -579,6 +587,7 @@ _.ExpansionFeatures =
 									n(-974, {	-- Wisdom
 									}),
 									n(-975, {	-- Humility
+										i(184453),	-- Reverent Cloak
 									}),
 								}),
 								--[[

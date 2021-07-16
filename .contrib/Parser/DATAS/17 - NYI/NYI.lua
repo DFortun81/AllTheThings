@@ -32,16 +32,6 @@ _.NeverImplemented =
 		["description"] = "|CFFFF0000If you had this item drop in SoO please screenshot and submit it to the ATT Discord.\n\nIf you have the item already and are running completionist mode please screenshot as well. Tag: 105642",
 	}),
 	tier(9,	{	-- Shadowlands -- Items that might get added after 9.0.5. If you are sure the item won't be added, please put it into the correct section
-		-- Reverent Set (Kyrian?)
-		i(184452),	-- Reverent Helm
-		i(184453),	-- Reverent Cloak
-		i(184454),	-- Reverent Gauntlets
-		i(184455),	-- Reverent Girdle
-		i(184456),	-- Reverent Chestpiece
-		i(184457),	-- Reverent Legguards
-		i(184458),	-- Reverent Shoulders
-		i(184459),	-- Reverent Boots
-		i(184460),	-- Reverent Bracer
 		-- Set added in 9.1.0
 		-- Night Fae -- of the Twilight Grove -- Korthia Dailies?
 		i(186500),	-- Ensemble: Garb of the Twilight Grove
