@@ -723,11 +723,11 @@ _.Holidays =
 							1468,	-- Children's Week
 						},
 						["coords"] = {
-							{ 57.71, 53.27, 52 },	-- Rental Chopper
-							{ 57.78, 53.06, 52 },	-- Rental Chopper
+							{ 57.71, 53.27, WESTFALL },	-- Rental Chopper
+							{ 57.78, 53.06, WESTFALL },	-- Rental Chopper
 						},
 						["maps"] = {
-							52,	-- Westfall
+							WESTFALL,
 							STORMWIND_CITY,
 						},
 						["races"] = ALLIANCE_ONLY,

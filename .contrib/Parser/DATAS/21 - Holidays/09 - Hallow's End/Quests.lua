@@ -1947,9 +1947,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12340, {	-- Candy Bucket — Westfall, Sentinel Hill, Alliance
 				["isYearly"] = true,
-				["coord"] = { 52.9, 53.6, 52 },
+				["coord"] = { 52.9, 53.6, WESTFALL },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 52 },	-- Westfall
+				["maps"] = { WESTFALL },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},

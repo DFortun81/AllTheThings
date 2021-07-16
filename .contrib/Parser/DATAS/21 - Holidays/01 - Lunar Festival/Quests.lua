@@ -408,8 +408,8 @@ _.Holidays = bubbleDown({["u"] = 17},
 			q(8675,  {	-- Skychaser the Elder
 				["provider"] = { "n", 15577 },	-- Elder Skychaser
 				["isYearly"] = true,
-				["coord"] = { 56.7, 47.1, 52 },
-				["maps"] = { 52 },	-- Westfall
+				["coord"] = { 56.7, 47.1, WESTFALL },
+				["maps"] = { WESTFALL },
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {
 					crit(8, {	-- Elder Skychaser in Sentinel Hill

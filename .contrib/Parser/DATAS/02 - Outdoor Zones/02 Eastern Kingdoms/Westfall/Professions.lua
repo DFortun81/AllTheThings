@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(52, {	-- Westfall
+		m(WESTFALL, {
 			n(-38, {	-- Professions
 				prof(FISHING, {
 					i(68795, {	-- Stendel's Bane

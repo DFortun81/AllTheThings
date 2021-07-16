@@ -78,7 +78,7 @@ _.Secrets =
 			o(269830, {	-- Step 9: Gift of the Mind-Seekers
 				["model"] = 942865,
 				["questID"] = 47214,
-				["coord"] = { 30.5, 27.5, 52 },
+				["coord"] = { 30.5, 27.5, WESTFALL },
 				["sourceQuest"] = 47213,	-- Step 8: Page 5555
 				["description"] = "|cFFFFFFFFStep 9:|r This step will take us to |cFFFFD700Westfall|r.  Head to |cFFFFFFFF30.53, 27.56|r.  |cFFFFD700Gift of the Mind-Seekers|r will be on the ground here in a broken boat.  Click this to obtain your mount.  Congratulations on getting the |cFFFFD700Riddler's Mind-Worm|r.\n\nWe would like to thank the |cFFFFD700Secret Finding Discord|r again for solving this puzzle.",
 				["isWeekly"] = true,

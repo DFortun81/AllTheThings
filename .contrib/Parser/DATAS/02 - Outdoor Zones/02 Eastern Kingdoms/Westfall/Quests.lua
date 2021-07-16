@@ -5,24 +5,24 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(52, {	-- Westfall
+		m(WESTFALL, {
 			n(QUESTS, {
 				q(6181, {	-- A Swift Message
 					["provider"] = { "n", 491 },	-- Quartermaster Lewis
-					["coord"] = { 56.8, 47.2, 52 },
+					["coord"] = { 56.8, 47.2, WESTFALL },
 					["races"] = { HUMAN },
 					["lvl"] = 10,
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(26320, {	-- A Vision of the Past
 					["sourceQuests"] = { 26319 },	-- Secrets Revealed
-					["coord"] = { 42.8, 65.1, 52 },
+					["coord"] = { 42.8, 65.1, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 42651 },	-- Thoralius the Wise
 				}),
 				q(26291, {	-- Big Trouble in Moonbrook
 					["sourceQuests"] = { 26290 },	-- Secrets of the Tower
-					["coord"] = { 68.2, 70.4, 52 },
+					["coord"] = { 68.2, 70.4, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 7024 },	-- Agent Kearnen
 					["g"] = {
@@ -34,7 +34,7 @@ _.Zones =
 				}),
 				q(26353, {	-- Captain Sanders' Hidden Treasure (#1)
 					["provider"] = { "i", 1357 },	-- Captain Sanders' Treasure Map
-					["coord"] = { 49.2, 9.80, 52 },	-- center of the area where the mobs spawn
+					["coord"] = { 49.2, 9.80, WESTFALL },	-- center of the area where the mobs spawn
 					["races"] = ALLIANCE_ONLY,
 					["crs"] = {
 						515,	-- Murloc Raider
@@ -45,19 +45,19 @@ _.Zones =
 				q(26354, {	-- Captain Sanders' Hidden Treasure (#2)
 					["sourceQuests"] = { 26353 },	-- Captain Sanders' Hidden Treasure (#1)
 					["provider"] = { "o", 307330 },	-- Captain's Footlocker -- object 35 for pre-cata
-					["coord"] = { 25.9, 47.7, 52 },
+					["coord"] = { 25.9, 47.7, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26355, {	-- Captain Sanders' Hidden Treasure (#3)
 					["sourceQuests"] = { 26354 },	-- Captain Sanders' Hidden Treasure (#2)
 					["provider"] = { "o", 307307 },	-- broken barrel -- object 36 (Captain's Footlocker) possibly pre-cata?
-					["coord"] = { 40.6, 47.8, 52 },
+					["coord"] = { 40.6, 47.8, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(26356, {	-- Captain Sanders' Hidden Treasure (#4)
 					["sourceQuests"] = { 26355 },	-- Captain Sanders' Hidden Treasure (#3)
 					["provider"] = { "o", 307277 },	-- Old Jug -- object 34 (old jug) possibly pre-cata?
-					["coord"] = { 40.5, 16.8, 52 },
+					["coord"] = { 40.5, 16.8, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(3344),	-- Captain Sanders' Sash
@@ -67,7 +67,7 @@ _.Zones =
 				}),
 				q(6281, {	-- Continue to Stormwind
 					["provider"] = { "n", 523 },	-- Thor
-					["coord"] = { 56.6, 49.4, 52 },
+					["coord"] = { 56.6, 49.4, WESTFALL },
 					["races"] = { HUMAN },
 					["sourceQuest"] = 6181,	-- A Swift Message
 					["lvl"] = 10,
@@ -85,7 +85,7 @@ _.Zones =
 				q(26296, {	-- Evidence Collection
 					["sourceQuests"] = { 26292 },	-- To Moonbrook
 					["provider"] = { "i", 58117 },	-- Red Bandana
-					["coord"] = { 42.6, 69.4, 52 },	-- center of area where Moonbrook Thugs spawn
+					["coord"] = { 42.6, 69.4, WESTFALL },	-- center of area where Moonbrook Thugs spawn
 					["races"] = ALLIANCE_ONLY,
 					["crs"] = { 42677 },	-- Moonbrook Thug
 					["g"] = {
@@ -97,13 +97,13 @@ _.Zones =
 				}),
 				q(26230, {	-- Feast or Famine
 					["sourceQuests"] = { 26215 },	-- Meet Two-Shoed Lou
-					["coord"] = { 49.4, 19.2, 52 },
+					["coord"] = { 49.4, 19.2, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 42497 },	-- Mama Celeste
 				}),
 				q(26271, {	-- Feeding the Hungry and the Hopeless
 					["sourceQuests"] = { 26266 },	-- Hope for the People
-					["coord"] = { 56.9, 47.1, 52 },
+					["coord"] = { 56.9, 47.1, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 42575 },	-- Hope Saldean
 				}),
@@ -112,7 +112,7 @@ _.Zones =
 						26271,	-- Feeding the Hungry and the Hopeless
 						26286,	-- In Defense of Westfall
 					},
-					["coord"] = { 56.3, 47.6, 52 },
+					["coord"] = { 56.3, 47.6, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 234 },	-- Marshal Gryan Stoutmantle
 				}),
@@ -120,32 +120,32 @@ _.Zones =
 					["sourceQuests"] = { 26236 },	-- Shakedown at the Saldean's
 				--	SQ needs verification.  might only be available when "Times are Tough" is in log, or might have 0 prereqs
 					["provider"] = { "i", 57935 },	-- Harvest Watcher Heart
-					["coord"] = { 54.4, 33.2, 52 },	-- center of area where Harvest Watchers spawn
+					["coord"] = { 54.4, 33.2, WESTFALL },	-- center of area where Harvest Watchers spawn
 					["races"] = ALLIANCE_ONLY,
 					["crs"] = { 114 },	-- Harvest Watcher
 					["lvl"] = 10,
 				}),
 				q(26266, {	-- Hope for the People
 					["sourceQuests"] = { 26270 },	-- You Have Our Thanks
-					["coord"] = { 56.3, 30.5, 52 },
+					["coord"] = { 56.3, 30.5, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 235 },	-- Salma Saldean
 				}),
 				q(26214, {	-- Hot On the Trail: Murlocs
 					["sourceQuests"] = { 26209 },	-- Murder Was The Case That They Gave Me
-					["coord"] = { 60.1, 19.4, 52 },
+					["coord"] = { 60.1, 19.4, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 42308 },	-- Lieutenant Horatio Laine
 				}),
 				q(26213, {	-- Hot On the Trail: The Riverpaw Clan
 					["sourceQuests"] = { 26209 },	-- Murder Was The Case That They Gave Me
-					["coord"] = { 60.1, 19.4, 52 },
+					["coord"] = { 60.1, 19.4, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 42308 },	-- Lieutenant Horatio Laine
 				}),
 				q(26286, {	-- In Defense of Westfall
 					["sourceQuests"] = { 26266 },	-- Hope for the People
-					["coord"] = { 56.3, 47.6, 52 },
+					["coord"] = { 56.3, 47.6, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 234 },	-- Marshal Gryan Stoutmantle
 					["g"] = {
@@ -163,7 +163,7 @@ _.Zones =
 				}),
 				q(26229, {	-- "I TAKE Candle!"
 					["sourceQuests"] = { 26215 },	-- Meet Two-Shoed Lou
-					["coord"] = { 49.7, 19.5, 52 },
+					["coord"] = { 49.7, 19.5, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 42498 },	-- Jimb "Candles" McHannigan
 					["g"] = {
@@ -176,7 +176,7 @@ _.Zones =
 				}),
 				q(26257, {	-- It's Alive!
 					["sourceQuests"] = { 26252 },	-- Heart of the Watcher
-					["coord"] = { 55.9, 31.3, 52 },
+					["coord"] = { 55.9, 31.3, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 233 },	-- Farmer Saldean
 					["g"] = {
@@ -188,7 +188,7 @@ _.Zones =
 				}),
 				q(26288, {	-- Jango Spothide
 					["sourceQuests"] = { 26287 },	-- The Westfall Brigade
-					["coord"] = { 56.3, 47.6, 52 },
+					["coord"] = { 56.3, 47.6, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 821 },	-- Captain Danuvin
 					["g"] = {
@@ -199,7 +199,7 @@ _.Zones =
 					},
 				}),
 				q(26347, {	-- Keeper of the Flame
-					["coord"] = { 30.5, 85.4, 52 },
+					["coord"] = { 30.5, 85.4, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 392 },	-- Captain Grayson
 				}),
@@ -216,13 +216,13 @@ _.Zones =
 				}),
 				q(26228, {	-- Livin' the Life
 					["sourceQuests"] = { 26215 },	-- Meet Two-Shoed Lou
-					["coord"] = { 49.7, 19.5, 52 },
+					["coord"] = { 49.7, 19.5, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 42405 },	-- Two-Shoed Lou
 				}),
 				q(26232, {	-- Lou's Parting Thoughts
 					["sourceQuests"] = { 26228 },	-- Livin' the Life
-					["coord"] = { 49.7, 19.5, 52 },
+					["coord"] = { 49.7, 19.5, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 42405 },	-- Two-Shoed Lou
 				}),
@@ -231,13 +231,13 @@ _.Zones =
 						26214,	-- Hot On the Trail: Murlocs
 						26213,	-- Hot On the Trail: The Riverpaw Clan
 					},
-					["coord"] = { 60.1, 19.4, 52 },
+					["coord"] = { 60.1, 19.4, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 42308 },	-- Lieutenant Horatio Laine
 				}),
 				q(26209, {	-- Murder Was The Case That They Gave Me
 					["sourceQuests"] = { 28562 },	-- Hero's Call: Westfall!
-					["coord"] = { 60.1, 19.4, 52 },
+					["coord"] = { 60.1, 19.4, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 42308 },	-- Lieutenant Horatio Laine
 					["g"] = {
@@ -248,7 +248,7 @@ _.Zones =
 				}),
 				q(26295, {	-- Propaganda
 					["sourceQuests"] = { 26292 },	-- To Moonbrook!
-					["coord"] = { 42.2, 64.0, 52 },
+					["coord"] = { 42.2, 64.0, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 42425 },	-- Captain Alpert
 				}),
@@ -271,7 +271,7 @@ _.Zones =
 				}),
 				q(26322, {	-- Rise of the Brotherhood (secondary QG ID 234)
 					["sourceQuests"] = { 26320 },	-- A Vision of the Past
-					["coord"] = { 56.2, 47.6, 52 },
+					["coord"] = { 56.2, 47.6, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 234 },	-- Marshal Gryan Stoutmantle
 					["g"] = {
@@ -285,19 +285,19 @@ _.Zones =
 				}),
 				q(26290, {	-- Secrets of the Tower
 					["sourceQuests"] = { 26289 },	-- Find Agent Kearnen
-					["coord"] = { 68.2, 70.4, 52 },
+					["coord"] = { 68.2, 70.4, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 7024 },	-- Agent Kearnen
 				}),
 				q(26319, {	-- Secrets Revealed
 					["sourceQuests"] = { 26297 },	-- The Dawning of a New Day
-					["coord"] = { 42.2, 64.0, 52 },
+					["coord"] = { 42.2, 64.0, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 42425 },	-- Captain Alpert
 				}),
 				q(26236, {	-- Shakedown at the Saldean's
 					["sourceQuests"] = { 26232 },	-- Lou's Parting Thoughts
-					["coord"] = { 49.8, 19.5, 52 },
+					["coord"] = { 49.8, 19.5, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 42558 },	-- Lieutenant Horatio Laine
 				}),
@@ -311,7 +311,7 @@ _.Zones =
 					},
 				}),
 				q(26349, {	-- The Coastal Menace
-					["coord"] = { 30.5, 85.4, 52 },
+					["coord"] = { 30.5, 85.4, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 392 },	-- Captain Grayson
 					["g"] = {
@@ -322,13 +322,13 @@ _.Zones =
 				}),
 				q(26348, {	-- The Coast Isn't Clear
 					["sourceQuests"] = { 26371 },	-- The Legend of Captain Grayson
-					["coord"] = { 30.5, 85.4, 52 },
+					["coord"] = { 30.5, 85.4, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 392 },	-- Captain Grayson
 				}),
 				q(26297, {	-- The Dawning of a New Day
 					["sourceQuests"] = { 26295 },	-- Propaganda
-					["coord"] = { 42.2, 64.0, 52 },
+					["coord"] = { 42.2, 64.0, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 42425 },	-- Captain Alpert
 				}),
@@ -345,7 +345,7 @@ _.Zones =
 				}),
 				q(26371, {	-- The Legend of Captain Grayson
 					["isBreadcrumb"] = true,	-- for "The Coast Isn't Clear"
-					["coord"] = { 56.2, 47.4, 52 },
+					["coord"] = { 56.2, 47.4, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 878 },	-- Scout Galiaan
 				}),
@@ -376,32 +376,32 @@ _.Zones =
 				}),
 				q(26287, {	-- The Westfall Brigade
 					["sourceQuests"] = { 26266 },	-- Hope for the People
-					["coord"] = { 56.3, 47.6, 52 },
+					["coord"] = { 56.3, 47.6, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 821 },	-- Captain Danuvin
 				}),
 				q(26761, {	-- Threat to the Kingdom
 					["sourceQuests"] = { 26370 },	-- Return to Sentinel Hill
 				--	["isBreadcrumb"] = true,	-- not sure!
-					["coord"] = { 56.3, 49.5, 52 },
+					["coord"] = { 56.3, 49.5, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 234 },	-- Marshal Gryan Stoutmantle
 				}),
 				q(26237, {	-- Times are Tough
 					["sourceQuests"] = { 26236 },	-- Shakedown at the Saldean's
-					["coord"] = { 55.9, 31.3, 52 },
+					["coord"] = { 55.9, 31.3, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 233 },	-- Farmer Saldean
 				}),
 				q(26292, {	-- To Moonbrook!
 					["sourceQuests"] = { 26291 },	-- Big Trouble in Moonbrook
-					["coord"] = { 56.3, 47.6, 52 },
+					["coord"] = { 56.3, 47.6, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 234 },	-- Marshal Gryan Stoutmantle
 				}),
 				q(26241, {	-- Westfall Stew
 					["sourceQuests"] = { 26236 },	-- Shakedown at the Saldean's
-					["coord"] = { 56.3, 30.6, 52 },
+					["coord"] = { 56.3, 30.6, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 235 },	-- Salma Saldean
 					["g"] = {
@@ -416,7 +416,7 @@ _.Zones =
 						26237,	-- Times are Tough
 						26241,	-- Westfall Stew
 					},
-					["coord"] = { 55.9, 31.3, 52 },
+					["coord"] = { 55.9, 31.3, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 233 },	-- Farmer Saldean
 				}),

@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(52, {	-- Westfall
+		m(WESTFALL, {
 			filter(101, {	-- Pet Battle
 				p(646, {	-- Chicken
 					["crs"] = { 62664 },	-- Chicken
@@ -40,7 +40,7 @@ _.Zones =
 				}),
 				q(31725, {	-- Lindsay
 					["provider"] = { "n", 65648 },	-- Old MacDonald
-					["coord"] = { 80.6, 18.4, 52 },
+					["coord"] = { 80.6, 18.4, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 31724,	-- Old MacDonald
 					["g"] = {
@@ -49,7 +49,7 @@ _.Zones =
 				}),
 				q(31780, {	-- Old MacDonald
 					["provider"] = { "n", 65648 },	-- Old MacDonald
-					["coord"] = { 80.6, 18.4, 52 },
+					["coord"] = { 80.6, 18.4, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 				}),

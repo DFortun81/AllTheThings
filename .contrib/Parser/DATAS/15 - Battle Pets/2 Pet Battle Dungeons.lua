@@ -133,12 +133,12 @@ _.BattlePets =
 		}),
 		q(46292, {	-- Pet Battle Challenge: Deadmines
 			["provider"] = { "n", 119390 },	-- Marcus "Bagman" Brown
-			["coord"] = { 41.6, 71.2, 52 },
+			["coord"] = { 41.6, 71.2, WESTFALL },
 			["sourceQuest"] = 46291,	-- The Deadmines Strike Back
 			["isWeekly"] = true,
 			["lvl"] = 110,
 			["maps"] = {
-				52,		-- Westfall
+				WESTFALL,
 				835,	-- Pet Dungeon 1
 				836,	-- Pet Dungeon 2
 			},
@@ -154,7 +154,7 @@ _.BattlePets =
 				}),
 				q(46291, {	-- The Deadmines Strike Back
 					["provider"] = { "n", 119390 },	-- Marcus "Bagman" Brown
-					["coord"] = { 41.6, 71.2, 52 },
+					["coord"] = { 41.6, 71.2, WESTFALL },
 					["sourceQuest"] = 46263,	-- Deadmines, Part Three?
 					["lvl"] = 110,
 					["g"] = {
@@ -163,7 +163,7 @@ _.BattlePets =
 					},
 				}),
 				n(119390, {	-- Marcus "Bagman" Brown
-					["coord"] = { 41.6, 71.2, 52 },	-- Westfall
+					["coord"] = { 41.6, 71.2, WESTFALL },
 					["g"] = {
 						i(150742, {	-- Pet Reaper 0.9
 							["cost"] = { { "i", 151191, 1 } },	-- 1x Old Bottle Cap

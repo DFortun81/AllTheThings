@@ -592,7 +592,7 @@ _.Zones =
 				["coords"] = {
 					{ 85.6, 31.8, STORMWIND_CITY },	-- Anduin Wrynn <King of Stormwind> -- not sure about this one
 					{ 85.8, 32.4, STORMWIND_CITY },	-- Grand Admiral Jes-Tereth
-					{ 56.3, 47.6, 52 },	-- Captain Danuvin
+					{ 56.3, 47.6, WESTFALL },	-- Captain Danuvin
 				},
 				["isBreadcrumb"] = true,
 				["races"] = ALLIANCE_ONLY,
