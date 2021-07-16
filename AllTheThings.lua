@@ -14188,7 +14188,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 		window.Refresh = Refresh;
 		window.Toggle = Toggle;
 		window.BaseUpdate = UpdateWindow;
-		window.Update = onUpdate or UpdateWindow;
+		window.Update = onUpdate or app:CustomWindowUpdate(suffix) or UpdateWindow;
 		window.SetVisible = SetVisible;
 		if AllTheThingsSettings then
 			if suffix == "Prime" then
@@ -15089,10 +15089,186 @@ function app:BuildSearchResponse(groups, field, value)
 	end
 end
 
--- Create the Primary Collection Window (this allows you to save the size and location)
-app:GetWindow("Prime"):SetSize(425, 305);
-app:GetWindow("Unsorted");
-app:GetWindow("Bounty", UIParent, function(self, force, got)
+-- Store the Custom Windows Update functions which are required by specific Windows
+(function()
+local customWindowUpdates = {};
+-- Returns the Custom Update function based on the Window suffix if existing
+function app:CustomWindowUpdate(suffix)
+	return customWindowUpdates[suffix];
+end
+customWindowUpdates["AuctionData"] = function(self)
+	if not self.initialized then
+		self.shouldFullRefresh = false;
+		self.initialized = true;
+		self.data = {
+			["text"] = "Auction Module",
+			["visible"] = true,
+			["back"] = 1,
+			["icon"] = "INTERFACE/ICONS/INV_Misc_Coin_01",
+			["description"] = "This is a debug window for all of the auction data that was returned. Turn on 'Account Mode' to show items usable on any character on your account!",
+			["options"] = {
+				{
+					["text"] = "Wipe Scan Data",
+					["icon"] = "INTERFACE/ICONS/INV_FIRSTAID_SUN-BLEACHED LINEN",
+					["description"] = "Click this button to wipe out all of the previous scan data.",
+					["visible"] = true,
+					["priority"] = -4,
+					["OnClick"] = function()
+						if AllTheThingsAuctionData then
+							local window = app:GetWindow("AuctionData");
+							wipe(AllTheThingsAuctionData);
+							wipe(window.data.g);
+							for i,option in ipairs(window.data.options) do
+								table.insert(window.data.g, option);
+							end
+							window:Update();
+						end
+					end,
+					['OnUpdate'] = function(data)
+						local window = app:GetWindow("AuctionData");
+						data.visible = #window.data.g > #window.data.options;
+						return true;
+					end,
+				},
+				{
+					["text"] = "Scan or Load Last Save",
+					["icon"] = "INTERFACE/ICONS/INV_DARKMOON_EYE",
+					["description"] = "Click this button to perform a full scan of the auction house or load the last scan conducted within 15 minutes. The game may or may not freeze depending on the size of your auction house.\n\nData should populate automatically.",
+					["visible"] = true,
+					["priority"] = -3,
+					["OnClick"] = function()
+						if AucAdvanced and AucAdvanced.API then AucAdvanced.API.CompatibilityMode(1, ""); end
+
+						-- Only allow a scan once every 15 minutes.
+						local cooldown, now = GetDataMember("AuctionScanCooldownTime", 0), time();
+						if cooldown - now < 0 then
+							SetDataMember("AuctionScanCooldownTime", time() + 900);
+							auctionFrame:RegisterEvent("REPLICATE_ITEM_LIST_UPDATE");
+							C_AuctionHouse_ReplicateItems();
+						else
+							app.print(": Throttled scan! Please wait " .. RoundNumber(cooldown - now, 0) .. " before running another. Loading last save instead...");
+							StartCoroutine("ProcessAuctionData", ProcessAuctionData, 1);
+						end
+					end,
+					['OnUpdate'] = app.AlwaysShowUpdate,
+				},
+				{
+					["text"] = "Toggle Debug Mode",
+					["icon"] = "INTERFACE/ICONS/INV_MISC_WRENCH_02",
+					["description"] = "Click this button to toggle debug mode to show everything regardless of filters!",
+					["visible"] = true,
+					["priority"] = -2,
+					["OnClick"] = function()
+						app.Settings:ToggleDebugMode();
+					end,
+					['OnUpdate'] = function(data)
+						data.visible = true;
+						if app.MODE_DEBUG then
+							-- Novaplane made me do it
+							data.trackable = true;
+							data.saved = true;
+						else
+							data.trackable = nil;
+							data.saved = nil;
+						end
+						return true;
+					end,
+				},
+				{
+					["text"] = "Toggle Account Mode",
+					["icon"] = "INTERFACE/ICONS/ACHIEVEMENT_GUILDPERK_HAVEGROUP WILLTRAVEL",
+					["description"] = "Turn this setting on if you want to track all of the Things for all of your characters regardless of class and race filters.\n\nUnobtainable filters still apply.",
+					["visible"] = true,
+					["priority"] = -1,
+					["OnClick"] = function()
+						app.Settings:ToggleAccountMode();
+					end,
+					['OnUpdate'] = function(data)
+						data.visible = true;
+						if app.MODE_ACCOUNT then
+							data.trackable = true;
+							data.saved = true;
+						else
+							data.trackable = nil;
+							data.saved = nil;
+						end
+						return true;
+					end,
+				},
+				{
+					["text"] = "Toggle Faction Mode",
+					["icon"] = "INTERFACE/ICONS/INV_Scarab_Crystal",
+					["description"] = "Click this button to toggle faction mode to show everything for your faction!",
+					["visible"] = true,
+					["OnClick"] = function()
+						app.Settings:ToggleFactionMode();
+					end,
+					['OnUpdate'] = function(data)
+						if app.MODE_DEBUG or not app.MODE_ACCOUNT then
+							data.visible = false;
+						else
+							data.visible = true;
+							if app.Settings:Get("FactionMode") then
+								data.trackable = true;
+								data.saved = true;
+							else
+								data.trackable = nil;
+								data.saved = nil;
+							end
+						end
+						return true;
+					end,
+				},
+				{
+					["text"] = "Toggle Unobtainable Items",
+					["icon"] = "INTERFACE/ICONS/SPELL_BROKENHEART",
+					["description"] = "Click this button to see currently unobtainable items in the auction data.",
+					["visible"] = true,
+					["priority"] = 0,
+					["OnClick"] = function()
+						local val = app.GetDataMember("UnobtainableItemFilters")
+						if val[7] then val[7] = false else val[7] = true end
+						for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
+							if v[1] == 1 or v[1] == 2 or v[1] == 3 then
+								if k == 7 then -- Do nothing for id 7
+								elseif val[k] then val[k] = not val[k] else val[k] = true end
+							end
+						end
+						app.Settings:Refresh();
+						app:RefreshData();
+					end,
+					['OnUpdate'] = function(data)
+						data.visible = true;
+						local val = app.GetDataMember("UnobtainableItemFilters");
+						if val[7] then
+							data.trackable = true;
+							data.saved = true;
+						else
+							data.trackable = nil;
+							data.saved = nil;
+						end
+						return true;
+					end,
+				},
+			},
+			["g"] = {}
+		};
+		for i,option in ipairs(self.data.options) do
+			table.insert(self.data.g, option);
+		end
+	end
+
+	-- Update the window and all of its row data
+	self.data.progress = 0;
+	self.data.total = 0;
+	self.data.indent = 0;
+	self.data.back = 1;
+	BuildGroups(self.data, self.data.g);
+	UpdateGroups(self.data, self.data.g);
+	self.data.visible = true;
+	self:BaseUpdate(true);
+end;
+customWindowUpdates["Bounty"] = function(self, force, got)
 	if not self.initialized then
 		self.initialized = true;
 		self.data = {
@@ -15162,8 +15338,8 @@ app:GetWindow("Bounty", UIParent, function(self, force, got)
 		self.data.visible = true;
 		self:BaseUpdate(true, got);
 	end
-end);
-app:GetWindow("CosmicInfuser", UIParent, function(self, force)
+end;
+customWindowUpdates["CosmicInfuser"] = function(self, force)
 	if self:IsVisible() then
 		if not self.initialized then
 			self.initialized = true;
@@ -15235,8 +15411,8 @@ app:GetWindow("CosmicInfuser", UIParent, function(self, force)
 		BuildGroups(self.data, self.data.g);
 		self:BaseUpdate(force);
 	end
-end);
-app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
+end;
+customWindowUpdates["CurrentInstance"] = function(self, force, got)
 	if not self.initialized then
 		force = true;
 		self.initialized = true;
@@ -15688,8 +15864,169 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 		self.data.visible = true;
 		self:BaseUpdate(force or got, got);
 	end
-end);
-app:GetWindow("Harvester", UIParent, function(self)
+end;
+customWindowUpdates["ItemFilter"] = function(self)
+	if self:IsVisible() then
+		if not self.initialized then
+			self.initialized = true;
+			self.dirty = true;
+
+			-- Item Filter
+			local actions = {
+				['text'] = L["ITEM_FILTER_TEXT"],
+				['icon'] = "Interface\\Icons\\Achievement_Dungeon_HEROIC_GloryoftheRaider",
+				["description"] = L["ITEM_FILTER_DESCRIPTION"],
+				['visible'] = true,
+				['expanded'] = true,
+				['back'] = 1,
+				['OnUpdate'] = function(data)
+					if not self.dirty then return nil; end
+					self.dirty = nil;
+
+					local g = {};
+					table.insert(g, 1, data.setItemFilter);
+					if #data.results > 0 then
+						for i,result in ipairs(data.results) do
+							table.insert(g, result);
+						end
+					end
+					data.g = g;
+					if #g > 0 then
+						for i,entry in ipairs(g) do
+							entry.indent = nil;
+						end
+						data.indent = 0;
+						data.visible = true;
+						BuildGroups(data, data.g);
+						if not data.expanded then
+							data.expanded = true;
+							ExpandGroupsRecursively(data, true);
+						end
+					end
+
+					-- Update the groups without forcing Debug Mode.
+					local visibilityFilter = app.VisibilityFilter;
+					app.VisibilityFilter = app.ObjectVisibilityFilter;
+					data.progress = 0;
+					data.total = 0;
+					BuildGroups(data, data.g);
+					self:BaseUpdate(true);
+					app.VisibilityFilter = visibilityFilter;
+				end,
+				['g'] = {},
+				['results'] = {},
+				['setItemFilter'] = {
+					['text'] = L["ITEM_FILTER_BUTTON_TEXT"],
+					['icon'] = "Interface\\Icons\\INV_MISC_KEY_12",
+					['description'] = L["ITEM_FILTER_BUTTON_DESCRIPTION"],
+					['visible'] = true,
+					['OnClick'] = function(row, button)
+						app:ShowPopupDialogWithEditBox(L["ITEM_FILTER_POPUP_TEXT"], "", function(text)
+							text = string.lower(text);
+							local f = tonumber(text);
+							if tostring(f) ~= text then
+								-- The string form did not match, the filter must have been by name.
+								for id,filter in pairs(L["FILTER_ID_TYPES"]) do
+									if string.match(string.lower(filter), text) then
+										f = tonumber(id);
+										break;
+									end
+								end
+							end
+							if f then
+								self.data.results = app:BuildSearchResponse(app:GetWindow("Prime").data.g, "f", f);
+								row.ref.f = f;
+								self.dirty = true;
+							end
+							wipe(searchCache);
+							self:Update();
+						end);
+						return true;
+					end,
+					['OnUpdate'] = app.AlwaysShowUpdate,
+				},
+			};
+
+			self.Reset = function()
+				self.data = actions;
+			end
+
+			-- Setup Event Handlers and register for events
+			self:SetScript("OnEvent", function(self, e, ...)
+				self.dirty = true;
+				self:Update();
+			end);
+			self:Reset();
+		end
+
+		-- Update the window and all of its row data
+		if self.data.OnUpdate then self.data.OnUpdate(self.data, self); end
+		-- soft update since collection content isn't changing within the window normally
+		self:BaseUpdate();
+	end
+end;
+customWindowUpdates["ItemFinder"] = function(self, ...)
+	if self:IsVisible() then
+		if not self.initialized then
+			self.initialized = true;
+			self.shouldFullRefresh = true;
+			local db = {};
+			db.g = {
+				{
+					['text'] = "Update Now",
+					['icon'] = "Interface\\Icons\\ability_monk_roll",
+					["description"] = "Click this to update the listing. Doing so shall remove all invalid, grey, or white items.",
+					['visible'] = true,
+					['fails'] = 0,
+					['OnClick'] = function(row, button)
+						self:Update(true);
+						return true;
+					end,
+					['OnUpdate'] = app.AlwaysShowUpdate,
+				},
+			};
+			db.OnUpdate = function(t)
+				local g = t.g;
+				if g and #g > 0 then
+					local count = #g;
+					if count > 0 then
+						for i=count,1,-1 do
+							if g[i].collected then
+								table.remove(g, i);
+							end
+						end
+					end
+					for count=#g,100 do
+						local i = db.currentItemID - 1;
+						if i > 0 then
+							db.currentItemID = i;
+							local t = app.CreateItemHarvester(i);
+							t.parent = db;
+							tinsert(g, t);
+						end
+					end
+					db.text = string.format("Item Finder [%d]", db.currentItemID);
+					DelayedCallback(self.Update, 0.25, self, true);
+					-- /run AllTheThings:GetWindow("ItemFinder"):Toggle()
+				end
+			end;
+			db.icon = "Interface\\Icons\\Achievement_Dungeon_GloryoftheRaider";
+			db.description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.\n\nUsing this tool will lag your WoW every 5 seconds. Not sure why - likely a bad Blizzard Database thing.";
+			db.visible = true;
+			db.expanded = true;
+			db.progress = 0;
+			db.total = 0;
+			db.back = 1;
+			db.currentItemID = 200001;
+			self.data = db;
+		end
+		self.data.progress = 0;
+		self.data.total = 0;
+		if self.data.OnUpdate then self.data.OnUpdate(self.data); end
+		self:BaseUpdate(true);
+	end
+end;
+customWindowUpdates["Harvester"] = function(self)
 	if self:IsVisible() then
 		if not self.initialized then
 			self.initialized = true;
@@ -15821,169 +16158,8 @@ app:GetWindow("Harvester", UIParent, function(self)
 		end
 		self:BaseUpdate(true);
 	end
-end);
-app:GetWindow("ItemFilter", UIParent, function(self)
-	if self:IsVisible() then
-		if not self.initialized then
-			self.initialized = true;
-			self.dirty = true;
-
-			-- Item Filter
-			local actions = {
-				['text'] = L["ITEM_FILTER_TEXT"],
-				['icon'] = "Interface\\Icons\\Achievement_Dungeon_HEROIC_GloryoftheRaider",
-				["description"] = L["ITEM_FILTER_DESCRIPTION"],
-				['visible'] = true,
-				['expanded'] = true,
-				['back'] = 1,
-				['OnUpdate'] = function(data)
-					if not self.dirty then return nil; end
-					self.dirty = nil;
-
-					local g = {};
-					table.insert(g, 1, data.setItemFilter);
-					if #data.results > 0 then
-						for i,result in ipairs(data.results) do
-							table.insert(g, result);
-						end
-					end
-					data.g = g;
-					if #g > 0 then
-						for i,entry in ipairs(g) do
-							entry.indent = nil;
-						end
-						data.indent = 0;
-						data.visible = true;
-						BuildGroups(data, data.g);
-						if not data.expanded then
-							data.expanded = true;
-							ExpandGroupsRecursively(data, true);
-						end
-					end
-
-					-- Update the groups without forcing Debug Mode.
-					local visibilityFilter = app.VisibilityFilter;
-					app.VisibilityFilter = app.ObjectVisibilityFilter;
-					data.progress = 0;
-					data.total = 0;
-					BuildGroups(data, data.g);
-					self:BaseUpdate(true);
-					app.VisibilityFilter = visibilityFilter;
-				end,
-				['g'] = {},
-				['results'] = {},
-				['setItemFilter'] = {
-					['text'] = L["ITEM_FILTER_BUTTON_TEXT"],
-					['icon'] = "Interface\\Icons\\INV_MISC_KEY_12",
-					['description'] = L["ITEM_FILTER_BUTTON_DESCRIPTION"],
-					['visible'] = true,
-					['OnClick'] = function(row, button)
-						app:ShowPopupDialogWithEditBox(L["ITEM_FILTER_POPUP_TEXT"], "", function(text)
-							text = string.lower(text);
-							local f = tonumber(text);
-							if tostring(f) ~= text then
-								-- The string form did not match, the filter must have been by name.
-								for id,filter in pairs(L["FILTER_ID_TYPES"]) do
-									if string.match(string.lower(filter), text) then
-										f = tonumber(id);
-										break;
-									end
-								end
-							end
-							if f then
-								self.data.results = app:BuildSearchResponse(app:GetWindow("Prime").data.g, "f", f);
-								row.ref.f = f;
-								self.dirty = true;
-							end
-							wipe(searchCache);
-							self:Update();
-						end);
-						return true;
-					end,
-					['OnUpdate'] = app.AlwaysShowUpdate,
-				},
-			};
-
-			self.Reset = function()
-				self.data = actions;
-			end
-
-			-- Setup Event Handlers and register for events
-			self:SetScript("OnEvent", function(self, e, ...)
-				self.dirty = true;
-				self:Update();
-			end);
-			self:Reset();
-		end
-
-		-- Update the window and all of its row data
-		if self.data.OnUpdate then self.data.OnUpdate(self.data, self); end
-		-- soft update since collection content isn't changing within the window normally
-		self:BaseUpdate();
-	end
-end);
-app:GetWindow("ItemFinder", UIParent, function(self, ...)
-	if self:IsVisible() then
-		if not self.initialized then
-			self.initialized = true;
-			self.shouldFullRefresh = true;
-			local db = {};
-			db.g = {
-				{
-					['text'] = "Update Now",
-					['icon'] = "Interface\\Icons\\ability_monk_roll",
-					["description"] = "Click this to update the listing. Doing so shall remove all invalid, grey, or white items.",
-					['visible'] = true,
-					['fails'] = 0,
-					['OnClick'] = function(row, button)
-						self:Update(true);
-						return true;
-					end,
-					['OnUpdate'] = app.AlwaysShowUpdate,
-				},
-			};
-			db.OnUpdate = function(t)
-				local g = t.g;
-				if g and #g > 0 then
-					local count = #g;
-					if count > 0 then
-						for i=count,1,-1 do
-							if g[i].collected then
-								table.remove(g, i);
-							end
-						end
-					end
-					for count=#g,100 do
-						local i = db.currentItemID - 1;
-						if i > 0 then
-							db.currentItemID = i;
-							local t = app.CreateItemHarvester(i);
-							t.parent = db;
-							tinsert(g, t);
-						end
-					end
-					db.text = string.format("Item Finder [%d]", db.currentItemID);
-					DelayedCallback(self.Update, 0.25, self, true);
-					-- /run AllTheThings:GetWindow("ItemFinder"):Toggle()
-				end
-			end;
-			db.icon = "Interface\\Icons\\Achievement_Dungeon_GloryoftheRaider";
-			db.description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.\n\nUsing this tool will lag your WoW every 5 seconds. Not sure why - likely a bad Blizzard Database thing.";
-			db.visible = true;
-			db.expanded = true;
-			db.progress = 0;
-			db.total = 0;
-			db.back = 1;
-			db.currentItemID = 200001;
-			self.data = db;
-		end
-		self.data.progress = 0;
-		self.data.total = 0;
-		if self.data.OnUpdate then self.data.OnUpdate(self.data); end
-		self:BaseUpdate(true);
-	end
-end);
-app:GetWindow("SourceFinder", UIParent, function(self)
+end;
+customWindowUpdates["SourceFinder"] = function(self)
 	if self:IsVisible() then
 		if not self.initialized then
 			self.initialized = true;
@@ -16078,8 +16254,8 @@ app:GetWindow("SourceFinder", UIParent, function(self)
 		if self.data.OnUpdate then self.data.OnUpdate(self.data); end
 		self:BaseUpdate(true);
 	end
-end);
-app:GetWindow("RaidAssistant", UIParent, function(self)
+end;
+customWindowUpdates["RaidAssistant"] = function(self)
 	if self:IsVisible() then
 		if not self.initialized then
 			self.initialized = true;
@@ -16516,8 +16692,8 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 		self:BaseUpdate(true);
 		app.VisibilityFilter = visibilityFilter;
 	end
-end);
-app:GetWindow("Random", UIParent, function(self)
+end;
+customWindowUpdates["Random"] = function(self)
 	if self:IsVisible() then
 		if not self.initialized then
 			self.initialized = true;
@@ -16982,8 +17158,8 @@ app:GetWindow("Random", UIParent, function(self)
 		BuildGroups(self.data, self.data.g);
 		self:BaseUpdate(true);
 	end
-end);
-app:GetWindow("Tradeskills", UIParent, function(self, force, got)
+end;
+customWindowUpdates["Tradeskills"] = function(self, force, got)
 	if not self.initialized then
 		self.initialized = true;
 		force = true;
@@ -17326,8 +17502,8 @@ app:GetWindow("Tradeskills", UIParent, function(self, force, got)
 		end
 		self:BaseUpdate(force or got, got);
 	end
-end);
-app:GetWindow("WorldQuests", UIParent, function(self, force, got)
+end;
+customWindowUpdates["WorldQuests"] = function(self, force, got)
 	if self:IsVisible() then
 		if not self.initialized then
 			self.initialized = true;
@@ -17916,7 +18092,16 @@ app:GetWindow("WorldQuests", UIParent, function(self, force, got)
 
 		self:BaseUpdate(force or got);
 	end
-end);
+end;
+
+-- Only need to immediately load any Windows which are able to be immediately visible on load depending on settings
+app:GetWindow("Prime"):SetSize(425, 305);
+app:GetWindow("Bounty");
+app:GetWindow("CurrentInstance");
+app:GetWindow("RaidAssistant");
+app:GetWindow("Tradeskills");
+app:GetWindow("WorldQuests");
+end)();
 
 -- WARNING: DEV ONLY START
 --[[--
@@ -18582,178 +18767,7 @@ app.OpenAuctionModule = function(self)
 		app.AuctionModuleTabID = tabID;
 
 		-- Create the movable Auction Data window.
-		window = app:GetWindow("AuctionData", AuctionHouseFrame, function(self)
-			if not self.initialized then
-				self.shouldFullRefresh = false;
-				self.initialized = true;
-				self.data = {
-					["text"] = "Auction Module",
-					["visible"] = true,
-					["back"] = 1,
-					["icon"] = "INTERFACE/ICONS/INV_Misc_Coin_01",
-					["description"] = "This is a debug window for all of the auction data that was returned. Turn on 'Account Mode' to show items usable on any character on your account!",
-					["options"] = {
-						{
-							["text"] = "Wipe Scan Data",
-							["icon"] = "INTERFACE/ICONS/INV_FIRSTAID_SUN-BLEACHED LINEN",
-							["description"] = "Click this button to wipe out all of the previous scan data.",
-							["visible"] = true,
-							["priority"] = -4,
-							["OnClick"] = function()
-								if AllTheThingsAuctionData then
-									local window = app:GetWindow("AuctionData");
-									wipe(AllTheThingsAuctionData);
-									wipe(window.data.g);
-									for i,option in ipairs(window.data.options) do
-										table.insert(window.data.g, option);
-									end
-									window:Update();
-								end
-							end,
-							['OnUpdate'] = function(data)
-								local window = app:GetWindow("AuctionData");
-								data.visible = #window.data.g > #window.data.options;
-								return true;
-							end,
-						},
-						{
-							["text"] = "Scan or Load Last Save",
-							["icon"] = "INTERFACE/ICONS/INV_DARKMOON_EYE",
-							["description"] = "Click this button to perform a full scan of the auction house or load the last scan conducted within 15 minutes. The game may or may not freeze depending on the size of your auction house.\n\nData should populate automatically.",
-							["visible"] = true,
-							["priority"] = -3,
-							["OnClick"] = function()
-								if AucAdvanced and AucAdvanced.API then AucAdvanced.API.CompatibilityMode(1, ""); end
-
-								-- Only allow a scan once every 15 minutes.
-								local cooldown, now = GetDataMember("AuctionScanCooldownTime", 0), time();
-								if cooldown - now < 0 then
-									SetDataMember("AuctionScanCooldownTime", time() + 900);
-									auctionFrame:RegisterEvent("REPLICATE_ITEM_LIST_UPDATE");
-									C_AuctionHouse_ReplicateItems();
-								else
-									app.print(": Throttled scan! Please wait " .. RoundNumber(cooldown - now, 0) .. " before running another. Loading last save instead...");
-									StartCoroutine("ProcessAuctionData", ProcessAuctionData, 1);
-								end
-							end,
-							['OnUpdate'] = app.AlwaysShowUpdate,
-						},
-						{
-							["text"] = "Toggle Debug Mode",
-							["icon"] = "INTERFACE/ICONS/INV_MISC_WRENCH_02",
-							["description"] = "Click this button to toggle debug mode to show everything regardless of filters!",
-							["visible"] = true,
-							["priority"] = -2,
-							["OnClick"] = function()
-								app.Settings:ToggleDebugMode();
-							end,
-							['OnUpdate'] = function(data)
-								data.visible = true;
-								if app.MODE_DEBUG then
-									-- Novaplane made me do it
-									data.trackable = true;
-									data.saved = true;
-								else
-									data.trackable = nil;
-									data.saved = nil;
-								end
-								return true;
-							end,
-						},
-						{
-							["text"] = "Toggle Account Mode",
-							["icon"] = "INTERFACE/ICONS/ACHIEVEMENT_GUILDPERK_HAVEGROUP WILLTRAVEL",
-							["description"] = "Turn this setting on if you want to track all of the Things for all of your characters regardless of class and race filters.\n\nUnobtainable filters still apply.",
-							["visible"] = true,
-							["priority"] = -1,
-							["OnClick"] = function()
-								app.Settings:ToggleAccountMode();
-							end,
-							['OnUpdate'] = function(data)
-								data.visible = true;
-								if app.MODE_ACCOUNT then
-									data.trackable = true;
-									data.saved = true;
-								else
-									data.trackable = nil;
-									data.saved = nil;
-								end
-								return true;
-							end,
-						},
-						{
-							["text"] = "Toggle Faction Mode",
-							["icon"] = "INTERFACE/ICONS/INV_Scarab_Crystal",
-							["description"] = "Click this button to toggle faction mode to show everything for your faction!",
-							["visible"] = true,
-							["OnClick"] = function()
-								app.Settings:ToggleFactionMode();
-							end,
-							['OnUpdate'] = function(data)
-								if app.MODE_DEBUG or not app.MODE_ACCOUNT then
-									data.visible = false;
-								else
-									data.visible = true;
-									if app.Settings:Get("FactionMode") then
-										data.trackable = true;
-										data.saved = true;
-									else
-										data.trackable = nil;
-										data.saved = nil;
-									end
-								end
-								return true;
-							end,
-						},
-						{
-							["text"] = "Toggle Unobtainable Items",
-							["icon"] = "INTERFACE/ICONS/SPELL_BROKENHEART",
-							["description"] = "Click this button to see currently unobtainable items in the auction data.",
-							["visible"] = true,
-							["priority"] = 0,
-							["OnClick"] = function()
-								local val = app.GetDataMember("UnobtainableItemFilters")
-								if val[7] then val[7] = false else val[7] = true end
-								for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
-									if v[1] == 1 or v[1] == 2 or v[1] == 3 then
-										if k == 7 then -- Do nothing for id 7
-										elseif val[k] then val[k] = not val[k] else val[k] = true end
-									end
-								end
-								app.Settings:Refresh();
-								app:RefreshData();
-							end,
-							['OnUpdate'] = function(data)
-								data.visible = true;
-								local val = app.GetDataMember("UnobtainableItemFilters");
-								if val[7] then
-									data.trackable = true;
-									data.saved = true;
-								else
-									data.trackable = nil;
-									data.saved = nil;
-								end
-								return true;
-							end,
-						},
-					},
-					["g"] = {}
-				};
-				for i,option in ipairs(self.data.options) do
-					table.insert(self.data.g, option);
-				end
-			end
-
-			-- Update the window and all of its row data
-			self.data.progress = 0;
-			self.data.total = 0;
-			self.data.indent = 0;
-			self.data.back = 1;
-			BuildGroups(self.data, self.data.g);
-			UpdateGroups(self.data, self.data.g);
-			self.data.visible = true;
-			self:BaseUpdate(true);
-		end);
+		window = app:GetWindow("AuctionData", AuctionHouseFrame);
 		auctionFrame:SetScript("OnEvent", function(self, e, ...)
 			if e == "REPLICATE_ITEM_LIST_UPDATE" then
 				self:UnregisterEvent("REPLICATE_ITEM_LIST_UPDATE");
