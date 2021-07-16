@@ -1083,12 +1083,15 @@ _.Zones =
 				q(25412, {	-- The Name Never Spoken
 					["provider"] = { "n", 40093 },	-- Subjugated Inferno Lord
 					["sourceQuest"] = 25411,	-- A New Master
+					["altQuest"] = 25443,	-- The Name Never Spoken
 				}),
 				q(25443, {	-- The Name Never Spoken
 					["provider"] = { "n", 39933 },	-- Tyrus Blackhorn
+					["coord"] = { 22.2, 44.8, 198 },
 					["sourceQuest"] = 25411,	-- A New Master
-					["u"] = REMOVED_FROM_GAME,
-				}),				
+					["altQuest"] = 25412,	-- The Name Never Spoken
+					["description"] = "To get this quest DO NOT accept another version from Subjugated Inferno Lord after \"A New Master\", instead head back to Tyrus Blackhorn.",
+				}),
 				q(29326, {	-- The Nordrassil Summit
 					["provider"] = { "n", 54313 },	-- Thrall
 					["coord"] = { 60.6, 31.4, 198 },
