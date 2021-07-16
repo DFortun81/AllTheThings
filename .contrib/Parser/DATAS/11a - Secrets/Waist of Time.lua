@@ -17,7 +17,7 @@ _.Secrets =
 			ELWYNN_FOREST,
 			DEADWIND_PASS,
 			DUSKWOOD,
-			51,
+			SWAMP_OF_SORROWS,
 			DESOLACE,
 			FERALAS,
 			SHADOWMOON_VALLEY,
@@ -97,7 +97,7 @@ _.Secrets =
 				["questID"] = 52903,
 				["sourceQuests"] = { 52902 },
 				["description"] = "Swamp of Sorrows\n\nUnder the tree, on top of the water.\n\nThe Blooming Lily reads:\n\n\"<Something is written here.>\n\nJaws open nooks!\"",
-				["coord"] = { 58.0, 31.6, 51 },	-- Blooming Lily
+				["coord"] = { 58.0, 31.6, SWAMP_OF_SORROWS },	-- Blooming Lily
 			}),
 			o(294104, {	-- Pretty Flower
 				["model"] = 1124095,

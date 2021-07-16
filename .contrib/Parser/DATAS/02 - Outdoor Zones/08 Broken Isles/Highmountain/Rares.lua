@@ -226,7 +226,7 @@ _.Zones =
 				n(97102,  {	-- Ram'Pag <The Treasure Worm>
 					["description"] = "Click on the Totally Safe Treasure Chest to spawn Ram'Pag.",
 					["questID"] = 39766,
-					["coord"] = { 52.3,	51.4, 650 },
+					["coord"] = { 52.3, 51.4, 650 },
 					["g"] = {
 						crit(15, {	-- Totally Safe Treasure Chest
 							["achievementID"] = 11264,	-- Adventurer of Highmountain

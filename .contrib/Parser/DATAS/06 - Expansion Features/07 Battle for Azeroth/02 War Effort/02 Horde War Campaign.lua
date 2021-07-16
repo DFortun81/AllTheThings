@@ -1601,9 +1601,9 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 54107 },	-- Grim Tidings
 							["altQuests"] = { 54754 },  -- For the Queen
 							["provider"] = { "n", 147297 },	-- Zekhan
-							["coord"] = { 79.7, 74.7, 51 },
+							["coord"] = { 79.7, 74.7, SWAMP_OF_SORROWS },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 51 },	-- Swamp of Sorrows
+							["maps"] = { SWAMP_OF_SORROWS },
 							["g"] = {
 								i(165791),	-- Worn Cloak
 							},
@@ -1612,9 +1612,9 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 54108 },	-- A Warrior's Death
 							["altQuests"] = { 54754 },  -- For the Queen
 							["provider"] = { "n", 146011 },	-- Varok Saurfang
-							["coord"] = { 80.8, 78.7, 51 },
+							["coord"] = { 80.8, 78.7, SWAMP_OF_SORROWS },
 							["races"] = HORDE_ONLY,
-							["maps"] = { 51 },	-- Swamp of Sorrows
+							["maps"] = { SWAMP_OF_SORROWS },
 						}),
 					--	TODO: Sylvanas Loyalist questline reported by Niixten in #errors, all needs to be completed - apparently there are various quests you can get based on choices you make along the way
 					--	all needs to be altQuested to the 'choice' quest since only one version of the campaign questline can be completed per character.  not sure if 'queen's favor' is the best quest to set as altQuests or if it should be an earlier one (i haven't done the campaign in a while)

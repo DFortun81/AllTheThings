@@ -348,10 +348,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11781, {	-- Desecrate this Fire! — Swamp of Sorrows
 				["isYearly"] = true,
 				["provider"] = { "o", 187969 },	-- Horde Bonfire
-				["coord"] = { 76.7, 14.4, 51 },
+				["coord"] = { 76.7, 14.4, SWAMP_OF_SORROWS },
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_fire",
-				["maps"] = { 51 },	-- Swamp of Sorrows
+				["maps"] = { SWAMP_OF_SORROWS },
 			}),
 			q(11802, {	-- Desecrate this Fire! — Tanaris
 				["isYearly"] = true,
@@ -766,10 +766,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(28916, {	-- Desecrate this Fire! — Swamp of Sorrows
 				["isYearly"] = true,
 				["provider"] = { "o", 207988 },	-- Alliance Bonfire
-				["coord"] = { 70.1, 14.8, 51 },
+				["coord"] = { 70.1, 14.8, SWAMP_OF_SORROWS },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-				["maps"] = { 51 },	-- Swamp of Sorrows
+				["maps"] = { SWAMP_OF_SORROWS },
 			}),
 			q(11762, {	-- Desecrate this Fire! — Tanaris
 				["isYearly"] = true,
@@ -1184,9 +1184,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(28929, {	-- Honor the Flame — Swamp of Sorrows
 				["provider"] = { "n", 51602 },	-- Swamp of Sorrows Flame Warden
 				["isYearly"] = true,
-				["coord"] = { 70.1, 15.4, 51 },
+				["coord"] = { 70.1, 15.4, SWAMP_OF_SORROWS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 51 },	-- Swamp of Sorrows
+				["maps"] = { SWAMP_OF_SORROWS },
 			}),
 			q(11833, {	-- Honor the Flame — Tanaris
 				["provider"] = { "n", 25916 },	-- Tanaris Flame Warden
@@ -1571,9 +1571,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11857, {	-- Honor the Flame — Swamp of Sorrows
 				["provider"] = { "n", 25941 },	-- Swamp of Sorrows Flame Keeper
 				["isYearly"] = true,
-				["coord"] = { 76.3, 13.8, 51 },
+				["coord"] = { 76.3, 13.8, SWAMP_OF_SORROWS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 51 },	-- Swamp of Sorrows
+				["maps"] = { SWAMP_OF_SORROWS },
 			}),
 			q(11838, {	-- Honor the Flame — Tanaris
 				["provider"] = { "n", 25921 },	-- Tanaris Flame Keeper
@@ -1764,7 +1764,8 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(32502, {	-- Honor the Flame — Valley of the Four Winds
 				["provider"] = { "n", 69550 },	-- Valley of the Four Winds Flame Guardian
 				["isYearly"] = true,
-				["coord"] = { 51.8, 51.4, 376 },["maps"] = { 376 },	-- Valley of the Four Winds
+				["coord"] = { 51.8, 51.4, 376 },
+				["maps"] = { 376 },	-- Valley of the Four Winds
 			}),
 			q(44575, {	-- Honor the Flame — Val'sharah
 				["provider"] = { "n", 114493 },	-- Val'sharah Flame Guardian
@@ -1914,7 +1915,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					LOCH_MODAN,
 					REDRIDGE_MOUNTAINS,
 					NORTHERN_STRANGLETHORN,
-					51,		-- Swamp of Sorrows
+					SWAMP_OF_SORROWS,
 					52,		-- Westfall
 					56,		-- Wetlands
 					TELDRASSIL,

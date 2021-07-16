@@ -6,7 +6,7 @@ _.Instances = { tier(1, {	-- Classic
 	inst(237, {	-- The Temple of Atal'hakkar
 		["lvl"] = 45,
 		["mapID"] = 220,
-		["coord"] = { 76.04, 45.21, 51 },	-- The Temple of Atal'hakkar, Swamp of Sorrows
+		["coord"] = { 76.04, 45.21, SWAMP_OF_SORROWS },
 		["g"] = {
 			n(COMMON_BOSS_DROPS, {
 				["providers"] = {

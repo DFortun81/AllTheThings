@@ -76,9 +76,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { REDRIDGE_MOUNTAINS },
 									}),
 									crit(11, {	-- Swamp of Sorrows
-										["coord"] = { 70.1, 15.4, 51 },
+										["coord"] = { 70.1, 15.4, SWAMP_OF_SORROWS },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 51 },	-- Swamp of Sorrows
+										["maps"] = { SWAMP_OF_SORROWS },
 									}),
 									crit(12, {	-- The Cape of Stranglethorn
 										["coord"] = { 51.9, 67.8, 210 },
@@ -351,9 +351,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { 21 },	-- Silverpine Forest
 									}),
 									crit(10, {	-- Swamp of Sorrows
-										["coord"] = { 76.7, 14.4, 51 },
+										["coord"] = { 76.7, 14.4, SWAMP_OF_SORROWS },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 51 },	-- Swamp of Sorrows
+										["maps"] = { SWAMP_OF_SORROWS },
 									}),
 									crit(11, {	-- The Cape of Stranglethorn
 										["coord"] = { 50.6, 70.8, 210 },
@@ -777,9 +777,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { 21 },	-- Silverpine Forest
 									}),
 									crit(10, {	-- Swamp of Sorrows
-										["coord"] = { 76.3, 13.8, 51 },
+										["coord"] = { 76.3, 13.8, SWAMP_OF_SORROWS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 51 },	-- Swamp of Sorrows
+										["maps"] = { SWAMP_OF_SORROWS },
 									}),
 									crit(11, {	-- The Cape of Stranglethorn
 										["coord"] = { 50.4, 70.4, 210 },
@@ -1052,9 +1052,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { REDRIDGE_MOUNTAINS },
 									}),
 									crit(11, {	-- Swamp of Sorrows
-										["coord"] = { 70.1, 14.8, 51 },
+										["coord"] = { 70.1, 14.8, SWAMP_OF_SORROWS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 51 },	-- Swamp of Sorrows
+										["maps"] = { SWAMP_OF_SORROWS },
 									}),
 									crit(12, {	-- The Cape of Stranglethorn
 										["coord"] = { 51.7, 67.3, 210 },

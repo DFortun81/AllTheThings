@@ -1139,9 +1139,9 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["description"] = "Once inside Sunken Temple, turn left.  Elder Starsong is in the small alcove to the northeast.",
 				["provider"] = { "n", 15593 },	-- Elder Starsong
 				["isYearly"] = true,
-				["coord"] = { 69.6, 53.8, 51 },	-- Start of path leading down to Sunken Temple
+				["coord"] = { 69.6, 53.8, SWAMP_OF_SORROWS },	-- Start of path leading down to Sunken Temple
 				["maps"] = {
-					51,		-- Swamp of Sorrows
+					SWAMP_OF_SORROWS,
 					220,	-- Sunken Temple
 				},
 				["u"] = 17,	-- Lunar Festival

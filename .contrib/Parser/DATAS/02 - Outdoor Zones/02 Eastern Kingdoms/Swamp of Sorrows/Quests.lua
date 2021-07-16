@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(51, {	-- Swamp of Sorrows
+		m(SWAMP_OF_SORROWS, {
 			n(QUESTS, {
 				q(2801,  {	-- A Tale of Sorrow
 					["u"] = REMOVED_FROM_GAME,
@@ -14,7 +14,7 @@ _.Zones =
 				}),
 				q(27849, {	-- Assault on Stonard
 					["provider"] = { "n", 46676 },	-- Joanna Blueheart
-					["coord"] = { 68.2, 36.1, 51 },
+					["coord"] = { 68.2, 36.1, SWAMP_OF_SORROWS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						27845,	-- Marking the Fallen
@@ -31,12 +31,12 @@ _.Zones =
 				}),
 				q(27740, {	-- Baba Bogbrew
 					["provider"] = { "n", 45948 },	-- Crazy Larry
-					["coord"] = { 84.0, 40.1, 51 },
+					["coord"] = { 84.0, 40.1, SWAMP_OF_SORROWS },
 					["sourceQuest"] = 27600,	-- In With a Bang
 				}),
 				q(27914, {	-- Blessing of the Green Dragonflight
 					["provider"] = { "n", 46071 },	-- Lord Itharius
-					["coord"] = { 69.4, 54.5, 51 },
+					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
 					["sourceQuest"] = 27773,	-- Step Three: Prophet
 					["g"] = {
 						i(64596),	-- Dream Pendant
@@ -46,7 +46,7 @@ _.Zones =
 				}),
 				q(27904, {	-- Breath of Mist
 					["provider"] = { "n", 17127 },	-- Anchorite Avuun
-					["coord"] = { 26.8, 33.5, 51 },
+					["coord"] = { 26.8, 33.5, SWAMP_OF_SORROWS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						27875,	-- Prayerblossom
@@ -55,7 +55,7 @@ _.Zones =
 				}),
 				q(27599, {	-- Can't Take It With Them
 					["provider"] = { "n", 45948 },	-- Crazy Larry
-					["coord"] = { 84.0, 40.1, 51 },
+					["coord"] = { 84.0, 40.1, SWAMP_OF_SORROWS },
 					["sourceQuest"] = 27597,	-- Crazy Larry
 					["g"] = {
 						i(64590),	-- Crazy Cap
@@ -77,7 +77,7 @@ _.Zones =
 				}),
 				q(27597, {	-- Crazy Larry
 					["provider"] = { "n", 45786 },	-- Trade Baron Silversnap
-					["coord"] = { 73.1, 14.9, 51 },
+					["coord"] = { 73.1, 14.9, SWAMP_OF_SORROWS },
 					["sourceQuests"] = {
 						27536,	-- Mostly Harmless
 						27656,	-- Croc-Out
@@ -85,12 +85,12 @@ _.Zones =
 				}),
 				q(27656, {	-- Croc-Out
 					["provider"] = { "n", 45786 },	-- Trade Baron Silversnap
-					["coord"] = { 73.1, 14.9, 51 },
+					["coord"] = { 73.1, 14.9, SWAMP_OF_SORROWS },
 					["sourceQuest"] = 27587,	-- Maliciously Delicious
 				}),
 				q(27851, {	-- Cutting Supply
 					["provider"] = { "n", 46676 },	-- Joanna Blueheart
-					["coord"] = { 68.2, 36.1, 51 },
+					["coord"] = { 68.2, 36.1, SWAMP_OF_SORROWS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						27845,	-- Marking the Fallen
@@ -104,12 +104,12 @@ _.Zones =
 				}),
 				q(27840, {	-- Draenethyst Crystals
 					["provider"] = { "n", 18221 },	-- Holaaru
-					["coord"] = { 69.8, 36.5, 51 },
+					["coord"] = { 69.8, 36.5, SWAMP_OF_SORROWS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27592, {	-- Drinks on the Rocks
 					["provider"] = { "n", 46010 },	-- Brono Goodgroove
-					["coord"] = { 73.6, 9.1, 51 },
+					["coord"] = { 73.6, 9.1, SWAMP_OF_SORROWS },
 					["g"] = {
 						i(64622),	-- Silversnap Bottle Opener
 						i(64588),	-- Beach Party Thong
@@ -153,7 +153,7 @@ _.Zones =
 				}),
 				q(27600, {	-- In With a Bang
 					["provider"] = { "n", 45948 },	-- Crazy Larry
-					["coord"] = { 84.0, 40.1, 51 },
+					["coord"] = { 84.0, 40.1, SWAMP_OF_SORROWS },
 					["sourceQuests"] = {
 						27598,	-- Kill Gil
 						27599,	-- Can't Take It With Them
@@ -167,7 +167,7 @@ _.Zones =
 				}),
 				q(27598, {	-- Kill Gil
 					["provider"] = { "n", 45948 },	-- Crazy Larry
-					["coord"] = { 84.0, 40.1, 51 },
+					["coord"] = { 84.0, 40.1, SWAMP_OF_SORROWS },
 					["sourceQuest"] = 27597,	-- Crazy Larry
 				}),
 				q(2721, {	-- Kirith
@@ -188,7 +188,7 @@ _.Zones =
 				}),
 				q(27910, {	-- Last Regrets
 					["provider"] = { "n", 47041 },	-- Neeka Bloodscar
-					["coord"] = { 21.2, 51.7, 51 },
+					["coord"] = { 21.2, 51.7, SWAMP_OF_SORROWS },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						27907,	-- Prayerblossom
@@ -197,7 +197,7 @@ _.Zones =
 				}),
 				q(27704, {	-- Legends of the Sunken Temple
 					["provider"] = { "n", 46071 },	-- Lord Itharius
-					["coord"] = { 69.4, 54.5, 51 },
+					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
 					["sourceQuest"] = 27694,	-- Pool of Tears
 				}),
 				q(9440, {	-- [DEPRECATED]Little Morsels
@@ -207,7 +207,7 @@ _.Zones =
 				}),
 				q(27822, {	-- Lumbering Oafs
 					["provider"] = { "n", 46676 },	-- Joanna Blueheart
-					["coord"] = { 68.2, 36.1, 51 },
+					["coord"] = { 68.2, 36.1, SWAMP_OF_SORROWS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(64593),	-- Helm of the Gatherer
@@ -217,7 +217,7 @@ _.Zones =
 				}),
 				q(27853, {	-- Lumbering Oafs
 					["provider"] = { "n", 7623 },	-- Dispatch Commander Ruag
-					["coord"] = { 49.3, 55.3, 51 },
+					["coord"] = { 49.3, 55.3, SWAMP_OF_SORROWS },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(64624),	-- Helm of the Gatherer
@@ -227,7 +227,7 @@ _.Zones =
 				}),
 				q(27587, {	-- Maliciously Delicious
 					["provider"] = { "n", 45786 },	-- Trade Baron Silversnap
-					["coord"] = { 73.1, 14.9, 51 },
+					["coord"] = { 73.1, 14.9, SWAMP_OF_SORROWS },
 					["sourceQuests"] = {
 						28569,	-- The Bogpaddle Bullet (alliance)
 						28570,	-- The Bogpaddle Bullet (horde)
@@ -237,7 +237,7 @@ _.Zones =
 				}),
 				q(27845, {	-- Marking the Fallen
 					["provider"] = { "n", 46676 },	-- Joanna Blueheart
-					["coord"] = { 68.1, 36.1, 51 },
+					["coord"] = { 68.1, 36.1, SWAMP_OF_SORROWS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						27821,	-- Orcs and Humans
@@ -246,7 +246,7 @@ _.Zones =
 				}),
 				q(27856, {	-- Marking the Fallen
 					["provider"] = { "n", 7623 },	-- Dispatch Commander Ruag
-					["coord"] = { 49.3, 55.3, 51 },
+					["coord"] = { 49.3, 55.3, SWAMP_OF_SORROWS },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						27853,	-- Lumbering Oafs
@@ -255,11 +255,11 @@ _.Zones =
 				}),
 				q(27691, {	-- Marshfin Madness
 					["provider"] = { "n", 46172 },	-- Baba Bogbrew
-					["coord"] = { 69.0, 76.5, 51 },
+					["coord"] = { 69.0, 76.5, SWAMP_OF_SORROWS },
 				}),
 				q(27536, {	-- Mostly Harmless
 					["provider"] = { "n", 45786 },	-- Trade Baron Silversnap
-					["coord"] = { 73.1, 14.9, 51 },
+					["coord"] = { 73.1, 14.9, SWAMP_OF_SORROWS },
 					["sourceQuest"] = 27587,	-- Maliciously Delicious
 					["g"] = {
 						i(64589),	-- Bogpaddle Leggings
@@ -274,7 +274,7 @@ _.Zones =
 				}),
 				q(27906, {	-- Neeka Bloodscar
 					["provider"] = { "n", 7623 },	-- Dispatch Commander Ruag
-					["coord"] = { 49.3, 55.3, 51 },
+					["coord"] = { 49.3, 55.3, SWAMP_OF_SORROWS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27857,	-- We're Under Attack!
 				}),
@@ -283,27 +283,27 @@ _.Zones =
 				}),
 				q(28553, {	-- Okrilla and the Blasted Lands
 					["provider"] = { "n", 7623 },	-- Dispatch Commander Ruag
-					["coord"] = { 49.3, 55.3, 51 },
+					["coord"] = { 49.3, 55.3, SWAMP_OF_SORROWS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27916,	-- Ruag's Report
 					["isBreadcrumb"] = true,
 				}),
 				q(27919, {	-- Onward to the Blasted Lands
 					["provider"] = { "n", 17127 },	-- Anchorite Avuun
-					["coord"] = { 26.9, 33.6, 51 },
+					["coord"] = { 26.9, 33.6, SWAMP_OF_SORROWS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 24913,	-- Remember the Light
 					["isBreadcrumb"] = true,
 				}),
 				q(27821, {	-- Orcs and Humans
 					["provider"] = { "n", 46676 },	-- Joanna Blueheart
-					["coord"] = { 68.2, 36.1, 51 },
+					["coord"] = { 68.2, 36.1, SWAMP_OF_SORROWS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 27870,	-- To Marshtide Watch
 				}),
 				q(27852, {	-- Orcs and Humans
 					["provider"] = { "n", 7623 },	-- Dispatch Commander Ruag
-					["coord"] = { 49.3, 55.3, 51 },
+					["coord"] = { 49.3, 55.3, SWAMP_OF_SORROWS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27871,	-- To Stonard
 				}),
@@ -319,22 +319,22 @@ _.Zones =
 				}),
 				q(27694, {	-- Pool of Tears
 					["provider"] = { "n", 46071 },	-- Lord Itharius
-					["coord"] = { 69.4, 54.5, 51 },
+					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
 					["sourceQuest"] = 27869,	-- The Dragon and the Temple
 				}),
 				q(27875, {	-- Prayerblossom
 					["provider"] = { "n", 17127 },	-- Anchorite Avuun
-					["coord"] = { 26.8, 33.5, 51 },
+					["coord"] = { 26.8, 33.5, SWAMP_OF_SORROWS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27907, {	-- Prayerblossom
 					["provider"] = { "n", 47041 },	-- Neeka Bloodscar
-					["coord"] = { 21.2, 51.7, 51 },
+					["coord"] = { 21.2, 51.7, SWAMP_OF_SORROWS },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27843, {	-- Reinforcements Denied
 					["provider"] = { "n", 46676 },	-- Joanna Blueheart
-					["coord"] = { 68.1, 36.1, 51 },
+					["coord"] = { 68.1, 36.1, SWAMP_OF_SORROWS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						27821,	-- Orcs and Humans
@@ -343,7 +343,7 @@ _.Zones =
 				}),
 				q(27855, {	-- Reinforcements Denied
 					["provider"] = { "n", 7623 },	-- Dispatch Commander Ruag
-					["coord"] = { 49.3, 55.3, 51 },
+					["coord"] = { 49.3, 55.3, SWAMP_OF_SORROWS },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						27853,	-- Lumbering Oafs
@@ -358,7 +358,7 @@ _.Zones =
 				}),
 				q(24913, {	-- Remember the Light
 					["provider"] = { "n", 17127 },	-- Anchorite Avuun
-					["coord"] = { 26.8, 33.5, 51 },
+					["coord"] = { 26.8, 33.5, SWAMP_OF_SORROWS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						27902,	-- The Purespring
@@ -370,44 +370,44 @@ _.Zones =
 				}),
 				q(27916, {	-- Ruag's Report
 					["provider"] = { "n", 47041 },	-- Neeka Bloodscar
-					["coord"] = { 21.2, 51.7, 51 },
+					["coord"] = { 21.2, 51.7, SWAMP_OF_SORROWS },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 27911,	-- With Dying Breath
 					["isBreadcrumb"] = true,
 				}),
 				q(27876, {	-- Secrets of the Mire
 					["provider"] = { "n", 17127 },	-- Anchorite Avuun
-					["coord"] = { 26.8, 33.5, 51 },
+					["coord"] = { 26.8, 33.5, SWAMP_OF_SORROWS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27908, {	-- Secrets of the Mire
 					["provider"] = { "n", 47041 },	-- Neeka Bloodscar
-					["coord"] = { 21.2, 51.7, 51 },
+					["coord"] = { 21.2, 51.7, SWAMP_OF_SORROWS },
 					["races"] = HORDE_ONLY,
 				}),
 				q(27818, {	-- Slithering Signs
 					["provider"] = { "n", 46172 },	-- Baba Bogbrew
-					["coord"] = { 69.0, 76.5, 51 },
+					["coord"] = { 69.0, 76.5, SWAMP_OF_SORROWS },
 					["sourceQuest"] = 27757,	-- The Darkest Depths
 				}),
 				q(27705, {	-- Step One: The Priestess
 					["provider"] = { "n", 46071 },	-- Lord Itharius
-					["coord"] = { 69.4, 54.5, 51 },
+					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
 					["sourceQuest"] = 27704,	-- Legends of the Sunken Temple
 				}),
 				q(27773, {	-- Step Three: Prophet
 					["provider"] = { "n", 46071 },	-- Lord Itharius
-					["coord"] = { 69.4, 54.5, 51 },
+					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
 					["sourceQuest"] = 27768,	-- Step Two: The Bloodletter
 				}),
 				q(27768, {	-- Step Two: The Bloodletter
 					["provider"] = { "n", 46071 },	-- Lord Itharius
-					["coord"] = { 69.4, 54.5, 51 },
+					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
 					["sourceQuest"] = 27705,	-- Step One: The Priestess
 				}),
 				q(27663, {	-- Tastes Like Strider
 					["provider"] = { "n", 46182 },	-- Pierre Fishflay
-					["coord"] = { 74.2, 12.1, 51 },
+					["coord"] = { 74.2, 12.1, SWAMP_OF_SORROWS },
 					["sourceQuest"] = 27587,	-- Maliciously Delicious
 				}),
 				q(1429, {	-- The Atal'ai Exile
@@ -418,7 +418,7 @@ _.Zones =
 				}),
 				q(27757, {	-- The Darkest Depths
 					["provider"] = { "n", 46172 },	-- Baba Bogbrew
-					["coord"] = { 69.0, 76.5, 51 },
+					["coord"] = { 69.0, 76.5, SWAMP_OF_SORROWS },
 					["sourceQuest"] = 27691,	-- Marshfin Madness
 					["g"] = {
 						i(64592),	-- Baba's Leg Warmers
@@ -441,12 +441,12 @@ _.Zones =
 				q(27869, {	-- The Dragon and the Temple
 					["isBreadcrumb"] = true,
 					["provider"] = { "n", 46172 },	-- Baba Bogbrew
-					["coord"] = { 69.0, 76.5, 51 },
+					["coord"] = { 69.0, 76.5, SWAMP_OF_SORROWS },
 					["sourceQuest"] = 27818,	-- Slithering Signs
 				}),
 				q(27918, {	-- The Harborage
 					["provider"] = { "n", 18221 },	-- Holaaru
-					["coord"] = { 69.9, 36.5, 51 },
+					["coord"] = { 69.9, 36.5, SWAMP_OF_SORROWS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						27840,	-- Draenethyst Crystals
@@ -455,13 +455,13 @@ _.Zones =
 				}),
 				q(27915, {	-- The Heart of the Temple
 					["provider"] = { "n", 46071 },	-- Lord Itharius
-					["coord"] = { 69.4, 54.5, 51 },
+					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
 					["sourceQuest"] = 27914,	-- Blessing of the Green Dragonflight
 					["isBreadcrumb"] = true,
 				}),
 				q(27860, {	-- The Lost Ones
 					["provider"] = { "n", 18221 },	-- Holaaru
-					["coord"] = { 69.8, 36.5, 51 },
+					["coord"] = { 69.8, 36.5, SWAMP_OF_SORROWS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(2622,  {	-- The Missing Orders
@@ -472,7 +472,7 @@ _.Zones =
 				}),
 				q(27902, {	-- The Purespring
 					["provider"] = { "n", 17127 },	-- Anchorite Avuun
-					["coord"] = { 26.8, 33.5, 51 },
+					["coord"] = { 26.8, 33.5, SWAMP_OF_SORROWS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						27875,	-- Prayerblossom
@@ -481,7 +481,7 @@ _.Zones =
 				}),
 				q(27909, {	-- The Purespring
 					["provider"] = { "n", 47041 },	-- Neeka Bloodscar
-					["coord"] = { 21.2, 51.7, 51 },
+					["coord"] = { 21.2, 51.7, SWAMP_OF_SORROWS },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						27907,	-- Prayerblossom
@@ -524,7 +524,7 @@ _.Zones =
 				}),
 				q(27795, {	-- Tides of Darkness
 					["provider"] = { "n", 46676 },	-- Joanna Blueheart
-					["coord"] = { 68.1, 36.1, 51 },
+					["coord"] = { 68.1, 36.1, SWAMP_OF_SORROWS },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuests"] = {
 						27821,	-- Orcs and Humans
@@ -540,7 +540,7 @@ _.Zones =
 				}),
 				q(27854, {	-- Tides of Darkness
 					["provider"] = { "n", 7623 },	-- Dispatch Commander Ruag
-					["coord"] = { 49.3, 55.3, 51 },
+					["coord"] = { 49.3, 55.3, SWAMP_OF_SORROWS },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						27853,	-- Lumbering Oafs
@@ -556,21 +556,21 @@ _.Zones =
 				}),
 				q(27870, {	-- To Marshtide Watch
 					["provider"] = { "n", 46071 },	-- Lord Itharius
-					["coord"] = { 69.4, 54.5, 51 },
+					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["sourceQuest"] = 27914,	-- Blessing of the Green Dragonflight
 				}),
 				q(27871, {	-- To Stonard
 					["provider"] = { "n", 46071 },	-- Lord Itharius
-					["coord"] = { 69.4, 54.5, 51 },
+					["coord"] = { 69.4, 54.5, SWAMP_OF_SORROWS },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["sourceQuest"] = 27914,	-- Blessing of the Green Dragonflight
 				}),
 				q(27857, {	-- We're Under Attack!
 					["provider"] = { "n", 7623 },	-- Dispatch Commander Ruag
-					["coord"] = { 49.3, 55.3, 51 },
+					["coord"] = { 49.3, 55.3, SWAMP_OF_SORROWS },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						27856,	-- Marking the Fallen
@@ -587,7 +587,7 @@ _.Zones =
 				}),
 				q(27911, {	-- With Dying Breath
 					["provider"] = { "n", 47041 },	-- Neeka Bloodscar
-					["coord"] = { 21.2, 51.7, 51 },
+					["coord"] = { 21.2, 51.7, SWAMP_OF_SORROWS },
 					["races"] = HORDE_ONLY,
 					["sourceQuests"] = {
 						27910,	-- Last Regrets

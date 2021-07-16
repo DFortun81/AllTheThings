@@ -485,7 +485,7 @@ _.Zones =
 						["description"] = "Click the inactive torches.",
 						["questID"] = 53472,
 						["icon"] = "Interface\\Icons\\garrison_bronzechest",
-						["coord"] = { 55.60,  51.80, 896 },
+						["coord"] = { 55.60, 51.80, 896 },
 						["g"] = {
 							i(163790, {	-- Spooky Incantation
 								["questID"] = 53448,	-- Spooky Bundle of Sticks Crafting [Wicker Pup]

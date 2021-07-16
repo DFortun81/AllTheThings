@@ -374,12 +374,12 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { STORMWIND_CITY },
 										}),
 										crit(20, {	-- Swamp of Sorrows, Bogpaddle
-											["coord"] = { 71.7, 14.0, 51 },
-											["maps"] = { 51 },	-- Swamp of Sorrows
+											["coord"] = { 71.7, 14.0, SWAMP_OF_SORROWS },
+											["maps"] = { SWAMP_OF_SORROWS },
 										}),
 										crit(21, {	-- Swamp of Sorrows, The Harborage
-											["coord"] = { 29.0, 32.6, 51 },
-											["maps"] = { 51 },	-- Swamp of Sorrows
+											["coord"] = { 29.0, 32.6, SWAMP_OF_SORROWS },
+											["maps"] = { SWAMP_OF_SORROWS },
 										}),
 										crit(22, {	-- Western Plaguelands, Chillwind Camp
 											["coord"] = { 43.4, 84.5, WESTERN_PLAGUELANDS },
@@ -487,12 +487,12 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { 21 },	-- Silverpine Forest
 										}),
 										crit(21, {	-- Swamp of Sorrows, Bogpaddle
-											["coord"] = { 71.7, 14.0, 51 },
-											["maps"] = { 51 },	-- Swamp of Sorrows
+											["coord"] = { 71.7, 14.0, SWAMP_OF_SORROWS },
+											["maps"] = { SWAMP_OF_SORROWS },
 										}),
 										crit(22, {	-- Swamp of Sorrows, Stonard
-											["coord"] = { 46.9, 56.7, 51 },
-											["maps"] = { 51 },	-- Swamp of Sorrows
+											["coord"] = { 46.9, 56.7, SWAMP_OF_SORROWS },
+											["maps"] = { SWAMP_OF_SORROWS },
 										}),
 										crit(23, {	-- Tirisfal Glades, Brill
 											["coord"] = { 60.9, 51.5, TIRISFAL_GLADES },

@@ -1590,26 +1590,26 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(28967, {	-- Candy Bucket — Swamp of Sorrows, Bogpaddle, neutral
 				["isYearly"] = true,
-				["coord"] = { 71.7, 14.0, 51 },
-				["maps"] = { 51 },	-- Swamp of Sorrows
+				["coord"] = { 71.7, 14.0, SWAMP_OF_SORROWS },
+				["maps"] = { SWAMP_OF_SORROWS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(12384, {	-- Candy Bucket — Swamp of Sorrows, Stonard, Horde
 				["isYearly"] = true,
-				["coord"] = { 46.9, 56.7, 51 },
+				["coord"] = { 46.9, 56.7, SWAMP_OF_SORROWS },
 				["races"] = HORDE_ONLY,
-				["maps"] = { 51 },	-- Swamp of Sorrows
+				["maps"] = { SWAMP_OF_SORROWS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(28968, {	-- Candy Bucket — Swamp of Sorrows, The Harborage, Alliance
 				["isYearly"] = true,
-				["coord"] = { 29.0, 32.6, 51 },
+				["coord"] = { 29.0, 32.6, SWAMP_OF_SORROWS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 51 },	-- Swamp of Sorrows
+				["maps"] = { SWAMP_OF_SORROWS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},

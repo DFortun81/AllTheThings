@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(51, {	-- Swamp of Sorrows
+		m(SWAMP_OF_SORROWS, {
 			filter(101, {	-- Pet Battle
 				p(648, {	-- Huge Toad
 					["crs"] = { 61368 },	-- Huge Toad
@@ -30,7 +30,7 @@ _.Zones =
 				}),
 				q(31913, {	-- Everessa
 					["provider"] = { "n", 66518 },	-- Everessa
-					["coord"] = { 76.8, 41.4, 51 },
+					["coord"] = { 76.8, 41.4, SWAMP_OF_SORROWS },
 					["isDaily"] = true,
 				}),
 			}),
