@@ -131,7 +131,10 @@ _.Zones =
 				q(25428, {	-- Black Heart of Flame
 					["provider"] = { "n", 39933 },	-- Tyrus Blackhorn
 					["coord"] = { 22.2, 44.9, MOUNT_HYJAL },
-					["sourceQuest"] = 25412,	-- The Name Never Spoken
+					["sourceQuests"] = {
+						25412,	-- The Name Never Spoken
+						25443,	-- The Name Never Spoken
+					},
 					["g"] = {
 						i(57321),	-- Charbite Hood
 						i(57320),	-- Embercrusher Grips
