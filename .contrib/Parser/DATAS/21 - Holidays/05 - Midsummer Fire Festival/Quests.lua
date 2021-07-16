@@ -870,10 +870,10 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11757, {	-- Desecrate this Fire! — Wetlands
 				["isYearly"] = true,
 				["provider"] = { "o", 187940 },	-- Alliance Bonfire
-				["coord"] = { 13.3, 47.3, 56 },
+				["coord"] = { 13.3, 47.3, WETLANDS },
 				["races"] = HORDE_ONLY,
 				["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-				["maps"] = { 56 },	-- Wetlands
+				["maps"] = { WETLANDS },
 			}),
 			q(11763, {	-- Desecrate this Fire! — Winterspring
 				["isYearly"] = true,
@@ -1282,9 +1282,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 			q(11828, {	-- Honor the Flame — Wetlands
 				["provider"] = { "n", 25911 },	-- Wetlands Flame Warden
 				["isYearly"] = true,
-				["coord"] = { 13.5, 47.1, 56 },
+				["coord"] = { 13.5, 47.1, WETLANDS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 56 },	-- Wetlands
+				["maps"] = { WETLANDS },
 			}),
 			q(11834, {	-- Honor the Flame — Winterspring
 				["provider"] = { "n", 25917 },	-- Winterspring Flame Warden
@@ -1917,7 +1917,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 					NORTHERN_STRANGLETHORN,
 					SWAMP_OF_SORROWS,
 					WESTFALL,
-					56,		-- Wetlands
+					WETLANDS,
 					TELDRASSIL,
 					DARKSHORE,
 					ASHENVALE,

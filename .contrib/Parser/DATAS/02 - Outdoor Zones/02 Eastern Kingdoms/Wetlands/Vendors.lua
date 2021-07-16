@@ -5,10 +5,10 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(56, {	-- Wetlands
+		m(WETLANDS, {
 			n(VENDORS, {
 				n(1441, {	-- Brak Durnad <Weaponsmith>
-					["coord"] = { 11.6, 59.6, 56 },
+					["coord"] = { 11.6, 59.6, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(4817, {	-- Blessed Claymore
@@ -20,7 +20,7 @@ _.Zones =
 					},
 				}),
 				n(41435, {	-- Fradd Swiftgear <Engineering Supplies>
-					["coord"] = { 26.8, 25.9, 56 },
+					["coord"] = { 26.8, 25.9, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(14639, {	-- Schematic: Minor Recombobulator
@@ -29,7 +29,7 @@ _.Zones =
 					},
 				}),
 				n(1454, {	-- Jennabink Powerseam <Tailoring Supplies & Specialty Goods>
-					["coord"] = { 10.0, 59.0, 56 },
+					["coord"] = { 10.0, 59.0, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(4829, {	-- Dreamer's Belt
@@ -59,7 +59,7 @@ _.Zones =
 					},
 				}),
 				n(1459, {	-- Naela Trance <Bowyer>
-					["coord"] = { 11.0, 57.8, 56 },
+					["coord"] = { 11.0, 57.8, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(11304, {	-- Fine Longbow
@@ -68,7 +68,7 @@ _.Zones =
 					},
 				}),
 				n(1448, {	-- Neal Allen <Engineering Supplies & General Goods>
-					["coord"] = { 11.8, 52.6, 56 },
+					["coord"] = { 11.8, 52.6, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(20970, {	-- Design: Pendant of the Agate Shield (Removed in Cata and available through trainer now)
@@ -78,7 +78,7 @@ _.Zones =
 					},
 				}),
 				n(3178, {	-- Stuart Fleming <Fishing Supplies>
-					["coord"] = { 6.4, 57.6, 56 },
+					["coord"] = { 6.4, 57.6, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(17062),	-- Recipe: Mithril Head Trout
@@ -87,7 +87,7 @@ _.Zones =
 					},
 				}),
 				n(1460, {	-- Unger Statforth <Horse Breeder>
-					["coord"] = { 9.2, 56.6, 56 },
+					["coord"] = { 9.2, 56.6, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(2411),	-- Black Stallion Bridle Mount
@@ -97,7 +97,7 @@ _.Zones =
 					},
 				}),
 				n(2679, {	-- Wenna Silkbeard <Special Goods Dealer>
-					["coord"] = { 25.6, 25.8, 56 },
+					["coord"] = { 25.6, 25.8, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(4829, {	-- Dreamer's Belt

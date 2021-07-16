@@ -101,9 +101,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { WESTFALL },
 									}),
 									crit(16, {	-- Wetlands
-										["coord"] = { 13.5, 47.1, 56 },
+										["coord"] = { 13.5, 47.1, WETLANDS },
 										["races"] = ALLIANCE_ONLY,
-										["maps"] = { 56 },	-- Wetlands
+										["maps"] = { WETLANDS },
 									}),
 								},
 							}),
@@ -111,7 +111,7 @@ _.Holidays = bubbleDown({["u"] = 21},
 								["races"] = ALLIANCE_ONLY,
 								["g"] = {
 									crit(1,  {	-- Ashenvale
-										["coord"] = { 13.0, 47.0, 56 },
+										["coord"] = { 13.0, 47.0, ASHENVALE },
 										["races"] = ALLIANCE_ONLY,
 										["maps"] = { ASHENVALE },
 									}),
@@ -1077,9 +1077,9 @@ _.Holidays = bubbleDown({["u"] = 21},
 										["maps"] = { WESTFALL },
 									}),
 									crit(16, {	-- Wetlands
-										["coord"] = { 13.3, 47.3, 56 },
+										["coord"] = { 13.3, 47.3, WETLANDS },
 										["races"] = HORDE_ONLY,
-										["maps"] = { 56 },	-- Wetlands
+										["maps"] = { WETLANDS },
 									}),
 								},
 							}),

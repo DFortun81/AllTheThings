@@ -1929,18 +1929,18 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(12343, {	-- Candy Bucket — Wetlands, Menethil Harbor, Alliance
 				["isYearly"] = true,
-				["coord"] = { 10.8, 60.9, 56 },
+				["coord"] = { 10.8, 60.9, WETLANDS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 56 },	-- Wetlands
+				["maps"] = { WETLANDS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
 			}),
 			q(28990, {	-- Candy Bucket — Wetlands, Swiftgear Station, Alliance
 				["isYearly"] = true,
-				["coord"] = { 26.1, 25.9, 56 },
+				["coord"] = { 26.1, 25.9, WETLANDS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 56 },	-- Wetlands
+				["maps"] = { WETLANDS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},
@@ -1956,9 +1956,9 @@ _.Holidays = bubbleDown({["u"] = 26},
 			}),
 			q(28991, {	-- Candy Bucket — Wetlands, Greenwarden's Grove, Alliance
 				["isYearly"] = true,
-				["coord"] = { 58.1, 39.2, 56 },
+				["coord"] = { 58.1, 39.2, WETLANDS },
 				["races"] = ALLIANCE_ONLY,
-				["maps"] = { 56 },	-- Wetlands
+				["maps"] = { WETLANDS },
 				["g"] = {
 					i(37586),	-- Handful of Treats
 				},

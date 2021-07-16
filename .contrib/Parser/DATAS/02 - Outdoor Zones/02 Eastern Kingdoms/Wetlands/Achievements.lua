@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(56, { -- Wetlands
+		m(WETLANDS, {
 			n(ACHIEVEMENTS, {
 				ach(12429, {	-- Wetlands Quests
 					["races"] = ALLIANCE_ONLY,

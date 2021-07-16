@@ -5,11 +5,11 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(56, {	-- Wetlands
+		m(WETLANDS, {
 			n(QUESTS, {
 				q(25726, {	-- A Dumpy Job
 					["sourceQuests"] = { 25722 },	-- Sedimentary, My Dear
-					["coord"] = { 57.4, 71.4, 56 },
+					["coord"] = { 57.4, 71.4, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 41129 },	-- Surveyor Thurdan
 				}),
@@ -21,13 +21,13 @@ _.Zones =
 					},
 				}),
 				q(25820, {	-- A Mother's Worries
-					["coord"] = { 11.8, 57.9, 56 },
+					["coord"] = { 11.8, 57.9, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 1484 },	-- Derina Rumdnul
 				}),
 				q(26327, {	-- Anvilmar the Hero
 					["isBreadcrumb"] = true,	-- for The Twilight's Hammer Revealed
-					["coord"] = { 49.8, 18.2, 56 },
+					["coord"] = { 49.8, 18.2, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 1071 },	-- Longbraid the Grim
 				}),
@@ -42,7 +42,7 @@ _.Zones =
 				}),
 				q(25780, {	-- Assault on Menethil Keep
 					["sourceQuests"] = { 25777 },	-- Onwards to Menethil
-					["coord"] = { 10.5, 55.7, 56 },
+					["coord"] = { 10.5, 55.7, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 2104 },	-- Captain Stoutfist
 					["g"] = {
@@ -64,7 +64,7 @@ _.Zones =
 				}),
 				q(25801, {	-- Claws from the Deep
 					["sourceQuests"] = { 25800 },	-- When Life Gives You Crabs
-					["coord"] = { 11.0, 57.7, 56 },
+					["coord"] = { 11.0, 57.7, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 41297 },	-- Karl Boran
 					["g"] = {
@@ -77,7 +77,7 @@ _.Zones =
 					},
 				}),
 				q(25211, {	-- Cleaning Hovel
-					["coord"] = { 49.9, 79.2, 56 },
+					["coord"] = { 49.9, 79.2, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 41074 },	-- Mountaineer Grugelm
 				}),
@@ -89,19 +89,19 @@ _.Zones =
 					},
 				}),
 				q(25856, {	-- Crocolisk Hides
-					["coord"] = { 26.7, 26.7, 56 },
+					["coord"] = { 26.7, 26.7, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 41433 },	-- James Halloran
 				}),
 				q(25816, {	-- Cursed to Roam
 					["sourceQuests"] = { 25815 },	-- The Third Fleet
-					["coord"] = { 10.9, 59.7, 56 },
+					["coord"] = { 10.9, 59.7, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 1239 },	-- First Mate Fitzsimmons
 				}),
 				q(25866, {	-- Dark Iron Trappers
 					["sourceQuests"] = { 25865 },	-- The Mosshide Job
-					["coord"] = { 26.9, 26.0, 56 },
+					["coord"] = { 26.9, 26.0, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 41415 },	-- Shilah Slabchisel
 				}),
@@ -115,7 +115,7 @@ _.Zones =
 				}),
 				q(25864, {	-- Dinosaur Crisis
 					["sourceQuests"] = { 26980 },	-- Swiftgear Station
-					["coord"] = { 26.9, 26.0, 56 },
+					["coord"] = { 26.9, 26.0, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 41415 },	-- Shilah Slabchisel
 					["g"] = {
@@ -127,13 +127,13 @@ _.Zones =
 				}),
 				q(25734, {	-- Down In Thelgen Rock
 					["sourceQuests"] = { 25726 },	-- A Dumpy Job
-					["coord"] = { 57.4, 71.4, 56 },
+					["coord"] = { 57.4, 71.4, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 41129 },	-- Surveyor Thurdan
 				}),
 				q(25727, {	-- Drungeld Glowerglare
 					["sourceQuests"] = { 25721 },	-- Fight the Flood
-					["coord"] = { 57.5, 71.7, 56 },
+					["coord"] = { 57.5, 71.7, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 41086 },	-- Forba Slabchisel
 					["g"] = {
@@ -145,7 +145,7 @@ _.Zones =
 				}),
 				q(25725, {	-- Fenbush Berries
 					["sourceQuests"] = { 25723 },	-- Thresh Out of Luck
-					["coord"] = { 57.8, 71.4, 56 },
+					["coord"] = { 57.8, 71.4, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 41128 },	-- Dunlor Marblebeard
 				}),
@@ -154,13 +154,13 @@ _.Zones =
 				}),
 				q(25721, {	-- Fight the Flood
 					["sourceQuests"] = { 25770 },	-- Keg Run
-					["coord"] = { 57.5, 71.7, 56 },
+					["coord"] = { 57.5, 71.7, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 41086 },	-- Forba Slabchisel
 				}),
 				q(25939, {	-- For Peat's Sake
 					["sourceQuests"] = { 25926 },	-- Mired in Hatred
-					["coord"] = { 56.4, 39.9, 56 },
+					["coord"] = { 56.4, 39.9, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 41615 },	-- Ferilon Leafborn
 					["g"] = {
@@ -174,36 +174,36 @@ _.Zones =
 				}),
 				q(25733, {	-- Get Out Of Here, Stalkers
 					["sourceQuests"] = { 25727 },	-- Drungeld Glowerglare
-					["coord"] = { 57.5, 71.7, 56 },
+					["coord"] = { 57.5, 71.7, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 41086 },	-- Forba Slabchisel
 				}),
 				q(25855, {	-- Gizmos and Gadgets
 					["sourceQuests"] = { 25854 },	-- I'll Call Him Bitey
-					["coord"] = { 26.8, 25.8, 56 },
+					["coord"] = { 26.8, 25.8, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 41435 },	-- Fradd Swiftgear
 				}),
 				q(25867, {	-- Gnoll Escape
 					["sourceQuests"] = { 25865 },	-- The Mosshide Job
-					["coord"] = { 26.9, 26.0, 56 },
+					["coord"] = { 26.9, 26.0, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 41415 },	-- Shilah Slabchisel
 				}),
 				q(25857, {	-- Hunting Horrorjaw
 					["sourceQuests"] = { 25856 },	-- Crocolisk Hides
-					["coord"] = { 26.7, 26.7, 56 },
+					["coord"] = { 26.7, 26.7, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 41433 },	-- James Halloran
 				}),
 				q(25854, {	-- I'll Call Him Bitey
-					["coord"] = { 26.8, 25.8, 56 },
+					["coord"] = { 26.8, 25.8, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 41435 },	-- Fradd Swiftgear
 				}),
 				q(25735, {	-- Incendicite Ore
 					["sourceQuests"] = { 25725 },	-- Fenbush Berries
-					["coord"] = { 57.8, 71.5, 56 },
+					["coord"] = { 57.8, 71.5, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 41128 },	-- Dunlor Marblebeard
 					["g"] = {
@@ -216,27 +216,27 @@ _.Zones =
 				q(26139, {	-- Into Arathi
 					["sourceQuests"] = { 26128 },	-- The Battle of Thandol Span
 					["isBreadcrumb"] = true,	-- for Northfold Manor in Arathi Highlands
-					["coord"] = { 49.5, 17.2, 56 },
+					["coord"] = { 49.5, 17.2, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 42160 },	-- Thargas Anvilmar
 				}),
 				q(25770, {	-- Keg Run
 					["sourceQuests"] = { 25395 },	-- The Stolen Keg
 					["isBreadcrumb"] = true,	-- for "Fight the Flood"
-					["coord"] = { 49.9, 79.2, 56 },
+					["coord"] = { 49.9, 79.2, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 41075 },	-- Mountaineer Rharen
 				}),
 				q(25818, {	-- Lifting the Curse
 					["sourceQuests"] = { 25817 },	-- The Cursed Crew
-					["coord"] = { 15.2, 29.4, 56 },
+					["coord"] = { 15.2, 29.4, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 41307 },	-- First Mate Snellig
 				}),
 				q(26196, {	-- Longbraid the Grim
 					["sourceQuests"] = { 25939 },	-- For Peat's Sake
 				--	possibly requires The Threat of Flame?
-					["coord"] = { 56.4, 40.0, 56 },
+					["coord"] = { 56.4, 40.0, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 41615 },	-- Ferilon Leafborn
 				}),
@@ -244,7 +244,7 @@ _.Zones =
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(25926, {	-- Mired in Hatred
-					["coord"] = { 56.3, 40.4, 56 },
+					["coord"] = { 56.3, 40.4, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 41503 },	-- Rethiel the Greenwarden
 				}),
@@ -255,7 +255,7 @@ _.Zones =
 						25735,	-- Incendicite Ore
 					},
 					["isBreadcrumb"] = true,
-					["coord"] = { 57.4, 71.7, 56 },
+					["coord"] = { 57.4, 71.7, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 41086 },	-- Forba Slabchisel
 				}),
@@ -270,14 +270,14 @@ _.Zones =
 				}),
 				q(25802, {	-- Reclaiming Goods
 					["sourceQuests"] = { 25800 },	-- When Life Gives You Crabs
-					["coord"] = { 11.0, 57.7, 56 },
+					["coord"] = { 11.0, 57.7, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 41297 },	-- Karl Boran
 				}),
 				q(25805, {	-- Return the Statuette
 					["sourceQuests"] = { 25804 },	-- Search More Hovels
 					["provider"] = { "o", 259 },	-- Half-Buried Barrel
-					["coord"] = { 13.9, 34.7, 56 },
+					["coord"] = { 13.9, 34.7, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(59085),	-- Breastplate of the Lost Paladin
@@ -297,11 +297,11 @@ _.Zones =
 				q(25804, {	-- Search More Hovels
 					["sourceQuests"] = { 25803 },	-- The Search Continues
 					["provider"] = { "o", 142151 },	-- Sealed Barrel
-					["coord"] = { 13.6, 38.2, 56 },
+					["coord"] = { 13.6, 38.2, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25722, {	-- Sedimentary, My Dear
-					["coord"] = { 57.4, 71.4, 56 },
+					["coord"] = { 57.4, 71.4, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 41129 },	-- Surveyor Thurdan
 					["g"] = {
@@ -312,7 +312,7 @@ _.Zones =
 					},
 				}),
 				q(25850, {	-- Strike the Earth!
-					["coord"] = { 38.6, 39.5, 56 },
+					["coord"] = { 38.6, 39.5, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 41412 },	-- Ormer Ironbraid
 				}),
@@ -324,19 +324,19 @@ _.Zones =
 						25819,	-- The Eye of Paleth (definitely required)
 					},
 					["isBreadcrumb"] = true,	-- for Dinosaur Crisis
-					["coord"] = { 10.5, 55.6, 56 },
+					["coord"] = { 10.5, 55.6, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 2104 },	-- Captain Stoutfist
 				}),
 				q(26189, {	-- The Angerfang Menace
 					["sourceQuests"] = { 25849 },	-- When Archaeology Attacks
-					["coord"] = { 38.9, 39.3, 56 },
+					["coord"] = { 38.9, 39.3, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 41411 },	-- Prospector Whelgar
 				}),
 				q(26128, {	-- The Battle of Thandol Span
 					["sourceQuests"] = { 26127 },	-- The Twilight's Hammer Revealed
-					["coord"] = { 49.4, 17.2, 56 },
+					["coord"] = { 49.4, 17.2, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 42160 },	-- Thargas Anvilmar
 					["g"] = {
@@ -349,7 +349,7 @@ _.Zones =
 					},
 				}),
 				q(26120, {	-- The Crazed Dragonmaw
-					["coord"] = { 56.3, 39.8, 56 },
+					["coord"] = { 56.3, 39.8, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 41612 },	-- Huntress Iczelia
 					["g"] = {
@@ -360,7 +360,7 @@ _.Zones =
 				}),
 				q(25817, {	-- The Cursed Crew
 					["sourceQuests"] = { 25816 },	-- Cursed to Roam
-					["coord"] = { 15.2, 29.4, 56 },
+					["coord"] = { 15.2, 29.4, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 41307 },	-- First Mate Snellig
 					["g"] = {
@@ -374,7 +374,7 @@ _.Zones =
 				q(25819, {	-- The Eye of Paleth
 					["sourceQuests"] = { 25818 },	-- Lifting the Curse
 					["provider"] = { "o", 112948 },	-- Intrepid's Locked Strongbox
-					["coord"] = { 14.3, 24.0, 56 },
+					["coord"] = { 14.3, 24.0, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(2944),	-- Cursed Eye of Paleth (NOTE: unsure if you permanently learn this after the quest or not.)
@@ -387,7 +387,7 @@ _.Zones =
 				q(25736, {	-- The Floodsurge Core
 					["sourceQuests"] = { 25734 },	-- Down in Thelgen Rock
 					["provider"] = { "i", 55243 },	-- Floodsurge Core
-					["coord"] = { 47.6, 65.6, 56 },
+					["coord"] = { 47.6, 65.6, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["crs"] = { 41167 },	-- Torrention
 					["g"] = {
@@ -399,7 +399,7 @@ _.Zones =
 				}),
 				q(25865, {	-- The Mosshide Job
 					["sourceQuests"] = { 25864 },	-- Dinosaur Crisis
-					["coord"] = { 26.9, 26.0, 56 },
+					["coord"] = { 26.9, 26.0, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 41415 },	-- Shilah Slabchisel
 					["g"] = {
@@ -412,7 +412,7 @@ _.Zones =
 				q(25803, {	-- The Search Continues
 					["sourceQuests"] = { 25802 },	-- Reclaiming Goods
 					["provider"] = { "o", 261 },	-- Damaged Crate
-					["coord"] = { 13.5, 41.3, 56 },
+					["coord"] = { 13.5, 41.3, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(25395, {	-- The Stolen Keg
@@ -421,7 +421,7 @@ _.Zones =
 						28565,	-- Hero's Call: Wetlands!
 					},
 					["isBreadcrumb"] = true,
-					["coord"] = { 49.9, 79.2, 56 },
+					["coord"] = { 49.9, 79.2, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 41075 },	-- Mountaineer Rharen
 				}),
@@ -434,29 +434,29 @@ _.Zones =
 					},
 				}),
 				q(25815, {	-- The Third Fleet
-					["coord"] = { 10.9, 59.7, 56 },
+					["coord"] = { 10.9, 59.7, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 1239 },	-- First Mate Fitzsimmons
 				}),
 				q(25927, {	-- The Threat of Flame
 					["sourceQuests"] = { 25926 },	-- Mired in Hatred
-					["coord"] = { 56.3, 40.4, 56 },
+					["coord"] = { 56.3, 40.4, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 41503 },	-- Rethiel the Greenwarden
 				}),
 				q(26127, {	-- The Twilight's Hammer Revealed
 					["sourceQuests"] = { 26327 },	-- Anvilmar the Hero
-					["coord"] = { 49.4, 17.2, 56 },
+					["coord"] = { 49.4, 17.2, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 42160 },	-- Thargas Anvilmar
 				}),
 				q(25723, {	-- Thresh Out of Luck
-					["coord"] = { 57.8, 71.4, 56 },
+					["coord"] = { 57.8, 71.4, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 41128 },	-- Dunlor Marblebeard
 				}),
 				q(25853, {	-- Tooling Around
-					["coord"] = { 38.8, 39.7, 56 },
+					["coord"] = { 38.8, 39.7, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 41413 },	-- Merrin Rockweaver
 					["g"] = {
@@ -478,18 +478,18 @@ _.Zones =
 				q(26981, {	-- Whelgar's Retreat
 					["sourceQuests"] = { 25868 },	-- Yorla Darksnare
 					["isBreadcrumb"] = true,	-- for When Archaeology Attacks
-					["coord"] = { 26.9, 26.0, 56 },
+					["coord"] = { 26.9, 26.0, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 41415 },	-- Shilah Slabchisel
 				}),
 				q(25849, {	-- When Archaeology Attacks
 					["sourceQuests"] = { 26981 },	-- Whelgar's Retreat
-					["coord"] = { 38.9, 39.3, 56 },
+					["coord"] = { 38.9, 39.3, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 41411 },	-- Prospector Whelgar
 				}),
 				q(25800, {	-- When Life Gives You Crabs
-					["coord"] = { 11.0, 57.7, 56 },
+					["coord"] = { 11.0, 57.7, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 41297 },	-- Karl Boran
 				}),
@@ -499,7 +499,7 @@ _.Zones =
 						26189,	-- The Angerfang Menace
 						25853,	-- Tooling Around
 					},
-					["coord"] = { 38.8, 39.3, 56 },
+					["coord"] = { 38.8, 39.3, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 41411 },	-- Prospector Whelgar
 				}),
@@ -508,7 +508,7 @@ _.Zones =
 						25866,	-- Dark Iron Trappers
 						25867,	-- Gnoll Escape
 					},
-					["coord"] = { 26.9, 26.0, 56 },
+					["coord"] = { 26.9, 26.0, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 41415 },	-- Shilah Slabchisel
 					["g"] = {

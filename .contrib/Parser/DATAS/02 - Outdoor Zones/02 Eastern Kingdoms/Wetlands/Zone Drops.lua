@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(56, {	-- Wetlands
+		m(WETLANDS, {
 			n(ZONEDROPS, {
 				un(REMOVED_FROM_GAME, n(1028, {	-- Bluegill Muckdweller
 					un(REMOVED_FROM_GAME, i(3022)),	-- Bluegill Breeches

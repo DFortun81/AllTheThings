@@ -386,20 +386,20 @@ _.Holidays = bubbleDown({["u"] = 26},
 											["maps"] = { WESTERN_PLAGUELANDS },
 										}),
 										crit(23, {	-- Wetlands, Menethil Harbor
-											["coord"] = { 10.8, 60.9, 56 },
-											["maps"] = { 56 },	-- Wetlands
+											["coord"] = { 10.8, 60.9, WETLANDS },
+											["maps"] = { WETLANDS },
 										}),
 										crit(24, {	-- Wetlands, Swiftgear Station
-											["coord"] = { 26.1, 25.9, 56 },
-											["maps"] = { 56 },	-- Wetlands
+											["coord"] = { 26.1, 25.9, WETLANDS },
+											["maps"] = { WETLANDS },
 										}),
 										crit(25, {	-- Westfall, Sentinel Hill
 											["coord"] = { 52.9, 53.6, WESTFALL },
 											["maps"] = { WESTFALL },
 										}),
 										crit(26, {	-- Wetlands, Greenwarden's Grove
-											["coord"] = { 58.1, 39.2, 56 },
-											["maps"] = { 56 },	-- Wetlands
+											["coord"] = { 58.1, 39.2, WETLANDS },
+											["maps"] = { WETLANDS },
 										}),
 									},
 								}),
