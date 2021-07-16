@@ -565,6 +565,18 @@ _.ExpansionFeatures =
 					["isWeekly"] = true,
 					["name"] = "Coldheart Interstitia, Layer 8",
 				}),
+				q(63880, {	-- Coldheart Interstitia, Layer 9
+					["isWeekly"] = true,
+					["name"] = "Coldheart Interstitia, Layer 9",
+				}),
+				q(63881, {	-- Coldheart Interstitia, Layer 10
+					["isWeekly"] = true,
+					["name"] = "Coldheart Interstitia, Layer 10",
+				}),
+				q(63882, {	-- Coldheart Interstitia, Layer 11
+					["isWeekly"] = true,
+					["name"] = "Coldheart Interstitia, Layer 11",
+				}),
 
 				-- Fracture Chambers
 				q(58186, {	-- Fracture Chambers, Layer 1
@@ -759,6 +771,14 @@ _.ExpansionFeatures =
 					["isWeekly"] = true,
 					["name"] = "Upper Reaches, Layer 9",
 				}),
+				q(63889, {	-- Upper Reaches, Layer 10
+					["isWeekly"] = true,
+					["name"] = "Upper Reaches, Layer 10",
+				}),
+				q(63890, {	-- Upper Reaches, Layer 11
+					["isWeekly"] = true,
+					["name"] = "Upper Reaches, Layer 11",
+				}),
 			}),
 		}),
 	}),
@@ -783,9 +803,6 @@ _.HiddenQuestTriggers = {
 		q(62979),	-- Twisting Corridors, Layer 6
 		q(62980),	-- Twisting Corridors, Layer 8
 		q(64347),	-- Adamant Vaults
-		q(63880),	-- Triggered at the end
-		q(63881),	-- Triggered at the end
-		q(63882),	-- Triggered at the end
 
 	-- Follower Access Triggers
 		q(61951),	-- Triggered when completing 61958 (Champion: Gorgelimb)

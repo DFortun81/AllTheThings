@@ -46,8 +46,8 @@ _.Zones =
 							34422,	-- Blaze of Glory
 							34421,	-- Bled Dry
 							35240,	-- Bled Dry
-							35241,	-- Vengeance for the Fallen
-							35241,	-- Vengeance for the Fallen
+							35242,	-- Vengeance for the Fallen (A)
+							35241,	-- Vengeance for the Fallen	(H)
 						},
 					}),
 					q(34817, {	-- Altar Altercation - never implemented but gets flagged completed

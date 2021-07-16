@@ -59,7 +59,7 @@ _.HiddenQuestTriggers = {
 	q(64097),	-- hitting Renown 45
 	q(64404),	-- hitting Renown 48 [Death Knight] (received Memory of an Abomination's Frenzy)
 	-- q( ),	-- hitting Renown 48 [Demon Hunter] (received Memory of ??)
-	-- q( ),	-- hitting Renown 48 [Druid] (received Memory of ??)
+	q(64425),	-- hitting Renown 48 [Druid] (received Memory of Unbridled Swarm)
 	-- q( ),	-- hitting Renown 48 [Hunter] (received Memory of the Pact of the Soulstalkers)
 	q(64391),	-- hitting Renown 48 [Mage] (received Memory of Death's Fathom)
 	-- q( ),	-- hitting Renown 48 [Monk] (received Memory of ??)
