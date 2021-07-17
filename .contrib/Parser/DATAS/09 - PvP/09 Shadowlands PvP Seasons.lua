@@ -668,7 +668,7 @@ _.PVP =
 					i(185315),	-- Unchained Gladiator's Xiphos
 				}),
 			}),
-			n(-662, bubbleDown({["modID"] = 45}, {	-- Elite Gear. Do not use more filters, Elite Gear has same ItemID has Gladiator Gear.
+			n(-662, bubbleDown({["modID"] = 49}, {	-- Elite Gear. Do not use more filters, Elite Gear has same ItemID has Gladiator Gear.
 				n(-322, {	-- Cloak
 					i(185164),	-- Unchained Gladiator's Cloak
 					i(185245),	-- Unchained Gladiator's Drape
