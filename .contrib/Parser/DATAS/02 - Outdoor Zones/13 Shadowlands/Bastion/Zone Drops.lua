@@ -7,8 +7,8 @@ _.Zones =
 	m(SHADOWLANDS, {
 		m(BASTION, {
 			n(ZONEDROPS, {
-				i(184397, {	-- Lost Featherling (PET)
-					["description"] = "This pet seems to only drop for Kyrian players, but can be used by non-Kyrians",
+				i(184397, {	-- Lost Featherling (PET!)
+					["customCollect"] = "SL_COV_KYR",	-- Kyrian
 					["crs"] = {
 						156559,	-- Ardent Warrior
 						157212,	-- Assuming Scholar
