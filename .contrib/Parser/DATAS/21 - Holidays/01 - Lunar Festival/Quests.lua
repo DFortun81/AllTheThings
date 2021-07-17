@@ -1126,7 +1126,7 @@ _.Holidays = bubbleDown({["u"] = 17},
 				["coord"] = { 29.1, 62.5, DESOLACE },	-- Maraudon path entrance
 				["maps"] = {
 					DESOLACE,
-					280,	-- Maraudon
+					MARAUDON,
 				},
 				["u"] = 17,	-- Lunar Festival
 				["g"] = {

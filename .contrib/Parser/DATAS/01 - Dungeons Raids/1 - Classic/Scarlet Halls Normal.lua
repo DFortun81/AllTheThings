@@ -4,7 +4,7 @@
 
 _.Instances = { tier(1, {	-- Classic
 	inst(311, {	-- Scarlet Halls
-		["coord"] = { 78.0, 56.8, 19 },	-- Scarlet Halls, Scarlet Monastery [Tirisfal Glades]
+		["coord"] = { 78.0, 56.8, SCARLET_MONASTERY_ENTRANCE },
 		["mapID"] = 431,
 		["maps"] = { 432 },
 		["lvl"] = 21,

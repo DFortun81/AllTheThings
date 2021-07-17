@@ -4,7 +4,7 @@
 
 _.Instances = { tier(5, {	-- Mists of Pandaria
 	inst(311, {	-- Scarlet Halls
-		["coord"] = { 78.0, 56.8, 19 },
+		["coord"] = { 78.0, 56.8, SCARLET_MONASTERY_ENTRANCE },
 		["mapID"] = 431,
 		["maps"] = { 432 },
 		["g"] = {

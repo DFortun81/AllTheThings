@@ -78,7 +78,7 @@ _.ExpansionFeatures =
 									["description"] = "Run through the instance to Flameweaver Koegler's room. on the left-hand side of the room there's a table with a candelabra. Volume 7 is on the bench between the table and the bookshelf.",
 									["provider"] = { "n", 59150 },	-- Flameweaver Koegler
 									["coords"] = {
-										{ 69.0, 24.9, 19 },		-- Scarlet Halls entrance
+										{ 69.0, 24.9, SCARLET_MONASTERY_ENTRANCE },	-- Scarlet Halls entrance
 										{ 35.7, 14.2, 432 },	-- Actual volume inside instance
 									},
 								}),

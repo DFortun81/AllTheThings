@@ -11,7 +11,7 @@ _.Instances = { tier(1, {	-- Classic
 			436,	-- Scarlet Monasatery: Crusaader's Chapel (Last two bosses)
 			804,	-- Scarlet Monastery: Death Knight Campaign
 		},
-		["coord"] = { 69.2, 24.9, 19 },	-- Scarlet Monastery, Scarlet Monastery [Tirisfal Glades]
+		["coord"] = { 69.2, 24.9, SCARLET_MONASTERY_ENTRANCE },
 		["g"] = {
 			n(QUESTS, {
 				q(31513, {	-- Blades of the Anointed

@@ -5,8 +5,8 @@
 _.Instances = { tier(1, {	-- Classic
 	inst(232, {	-- Maraudon
 		["lvl"] = 25,
-		["mapID"] = 280,
-		["maps"] = { 281, 67, 68 },
+		["mapID"] = MARAUDON,
+		["maps"] = { MARAUDON_LEVEL2, 67, 68 },
 		["groups"] = {
 			n(-70, {	-- Foulspore Cavern [Orange]
 				["coord"] = { 78.01, 55.68, 67 },	-- Maraudon [Orange], The Wicked Grotto [Desolace]
@@ -54,7 +54,7 @@ _.Instances = { tier(1, {	-- Classic
 					n(12237, {		-- Meshlok the Harvester
 						["description"] = "This is a rare that is not always present.",
 						["coords"] = {
-							{ 24.0, 75.0, 280 },
+							{ 24.0, 75.0, MARAUDON },
 						},
 						["groups"] = {
 							i(17741),	-- Nature's Embrace

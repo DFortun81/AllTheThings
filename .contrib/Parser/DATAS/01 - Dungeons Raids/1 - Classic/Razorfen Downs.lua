@@ -5,7 +5,7 @@
 _.Instances = { tier(1, {	-- Classic
 	inst(233, {	-- Razorfen Downs
 		["coord"] = { 43.5, 25.2, THOUSAND_NEEDLES },	-- Razorfen Downs
-		["mapID"] = 300,
+		["mapID"] = RAZORFEN_DOWNS,
 		["lvl"] = 35,
 		["g"] = {
 			n(QUESTS, {
@@ -190,7 +190,7 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			n(75813, {	-- Sah'rhee
 				["description"] = "Sah'rhee doesn't spawn in every instance run. Whenever he spawns, he's trackable as a green dot on the mini-map, and you can click his body to start the encounter.",
-				["coord"] = { 80.0, 26.0, 300 },	-- The Murder Pens
+				["coord"] = { 80.0, 26.0, RAZORFEN_DOWNS },	-- The Murder Pens
 				["crs"] = { 75329 },	-- Sah'rhee (prior to clicking)
 				["g"] = {
 					i(10766),	-- Plaguerot Sprig
