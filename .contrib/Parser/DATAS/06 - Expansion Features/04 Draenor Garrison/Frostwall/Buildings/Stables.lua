@@ -51,7 +51,7 @@ _.ExpansionFeatures =
 								crit(6),		-- Karak Killed
 							}),
 						}),
-						n(QUESTS, {
+						n(QUESTS, sharedData({ ["_drop"] = { "isDaily" } },{
 							q(36944, {	-- Besting a Boar
 								["provider"] = { "n", 86979 },	-- Tormak the Scarred
 								["races"] = HORDE_ONLY,
@@ -387,7 +387,7 @@ _.ExpansionFeatures =
 								["provider"] = { "n", 87242 },	-- Sage Paluna
 								["races"] = HORDE_ONLY,
 							}),
-						}),
+						})),
 					},
 				}),
 			}),

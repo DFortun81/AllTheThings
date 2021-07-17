@@ -51,7 +51,7 @@ _.ExpansionFeatures =
 								crit(6),		-- Karak Killed
 							}),
 						}),
-						n(QUESTS, {
+						n(QUESTS, sharedData({ ["_drop"] = { "isDaily" } },{
 							q(36913, {	-- Besting a Boar
 								["provider"] = { "n", 86973 },	-- Keegan Firebeard
 								["races"] = ALLIANCE_ONLY,
@@ -387,7 +387,7 @@ _.ExpansionFeatures =
 								["provider"] = { "n", 86974 },	-- Fanny Firebeard
 								["races"] = ALLIANCE_ONLY,
 							}),
-						}),
+						})),
 					},
 				}),
 			}),
