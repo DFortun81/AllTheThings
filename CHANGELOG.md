@@ -1,17 +1,18 @@
 # AllTheThings
 
-## [SL-2.3.8](https://github.com/DFortun81/AllTheThings/tree/SL-2.3.8) (2021-07-10)
-[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.3.7...SL-2.3.8) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
+## [SL-2.3.9](https://github.com/DFortun81/AllTheThings/tree/SL-2.3.9) (2021-07-17)
+[Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.3.8...SL-2.3.9) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
 
-### Highlight of this update
+### Highlights of this update
 
-Sanctum of Domination Bind-on-Equip items are here, thanks for reports, everyone!
+- Fixed Settings page broken with 9.1 patch, you can click where you want to once again.
+- If you have 'Report Quests' enabled, message in chat will be clickable now! This is super helpful if you report missing quests on our Discord because we will create copypastable report for you.
 
 ### Notable changes:
 
-- In a follow up to the previous update, repeated groups of treasures will now have a checkmark when you have opened all treasures in the group until next reset
-- Also fixed a bug that put checkmark on treasures that you haven't opened
-- Recipes which are BoE will properly 'pretend' they are BoP if not collecting Recipes Account-Wide (this is behaviour pre-2.3.5)
-- Some Mark of Honor logic improvements, feel free to do `/att item:137642` (or `/att ` and Shift+Left-click on the MoH to create a link!) and tell us if anything is wrong
+- Changed some logic so that when loading ATT (reload UI / login) the data will be loaded into the ATT windows after the loading screen has completed and the player is not in combat. Maybe this will fix some of the 'script ran too long' issues/disconnects that some users have been experiencing
+- Fixed incomplete trackable Things not properly showing sometimes when using 'Show All Trackable Things'
+- Due to some internal changes 'Show All Trackable Things' has been reset, you can turn it on again in Settings
+- Some performance improvements
 - More rare/Adventure drops, treasure/rare coordinates/descriptions, recipes, dailies, etc
 - Various fixes
