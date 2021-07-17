@@ -134,3 +134,7 @@ _.Zones =
 		}),
 	}),
 };
+
+_.HiddenQuestTriggers = {
+	q(64265),	-- this was for a hidden anima vessel in the beastwarrens, didn't get coords
+},
