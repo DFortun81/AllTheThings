@@ -81,7 +81,7 @@ _.WorldEvents =
 						}),
 						i(122340, {	-- Timeworn Heirloom Armor Casing
 							["cost"] = {
-								{ "g", 15000000 },		-- 1,500g
+								{ "g", 10000000 },		-- 1,000g
 								{ "i", 23247, 600 },	-- 600x   Burning Blossom
 								{ "i", 21100, 75 },		-- 75x    Coin of Ancestry
 								{ "c", 1166, 1000 },	-- 1,000x Timewarped Badge
@@ -199,7 +199,7 @@ _.WorldEvents =
 						}),
 						i(122340, {	-- Timeworn Heirloom Armor Casing
 							["cost"] = {
-								{ "g", 15000000 },		-- 1,500g
+								{ "g", 10000000 },		-- 1,000g
 								{ "i", 23247, 600 },	-- 600x   Burning Blossom
 								{ "i", 21100, 75 },		-- 75x    Coin of Ancestry
 								{ "c", 1166, 1000 },	-- 1,000x Timewarped Badge
