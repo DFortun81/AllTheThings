@@ -242,6 +242,14 @@ _.ExpansionFeatures =
 						follower(1310),	-- Rattlebag
 					},
 				}),
+				q(64174, {	-- Champion: Steadyhands [Venthyr]
+					["customCollect"] = "SL_COV_VEN",	-- Venthyr
+					["sourceQuests"] = { 64190 },	-- Steadyhands' Platter
+					["provider"] = { "n", 179680 },	-- Steadyhands
+					["g"] = {
+						follower(1332),	-- Steadyhands
+					},
+				}),
 				q(61221, {	-- Champion: Stonehuck [Venthyr]
 					["customCollect"] = "SL_COV_VEN",	-- Venthyr
 					["sourceQuests"] = { 61234 },	-- Stonehuck's Sinstone
@@ -450,6 +458,11 @@ _.ExpansionFeatures =
 					["sourceQuests"] = { 60136 },	-- Into Torghast
 					["repeatable"] = true,
 					["provider"] = { "n", 172031 },	-- Molako
+				}),
+				q(64190, {	-- Steadyhands' Platter
+					["sourceQuests"] = { 60136 },	-- Into Torghast
+					["repeatable"] = true,
+					["provider"] = { "n", 179679 },	-- Steadyhands
 				}),
 				q(61340, {	-- Telethakas' Revenge
 					["sourceQuests"] = { 60136 },	-- Into Torghast
@@ -833,6 +846,7 @@ _.HiddenQuestTriggers = {
 		q(61954),	-- triggered when completing #62227, "Xertora's Construct"
 		q(64176),	-- New Night Fae Follower triggered when completing 64184, "Missing Friend".
 		q(64178),	-- New Kyrian Follower Triggered when completing 64186, "ELGU - 007's Missing Power Core"
+		q(64182),	-- triggered when completing #64174, "Champion: Steadyhands"
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {

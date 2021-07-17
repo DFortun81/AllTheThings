@@ -13,6 +13,8 @@ _.ExpansionFeatures =
 				1969,	-- Adamant Vaults - Floor 6
 				1966,	-- Adamant Vaults - Floor 7 (Lower)
 				1965,	-- Adamant Vaults - Floor 7 (Upper)
+				1974,	-- Adamant Vaults - Floor 6 (Lower)
+				1975,	-- Adamant Vaults - Floor 6 (Upper)
 				--
 				1769,	-- Arkoban Hall - Floor 6 / Skoldus Hall - Layer 1, Floor 6 / Layer 2, Floor 6 / Layer 3, Floor 6
 				--
@@ -26,8 +28,11 @@ _.ExpansionFeatures =
 				1631,	-- Coldheart Interstitia - Layer 2, Floor 2 / Layer 2, Floor 4
 				1776,	-- Coldheart Interstitia - Layer 2, Floor 5
 				--
-				1912,	-- Coldheart Interstitia - Layer 6, Floor 1
 				1913,	-- Coldheart Interstitia - Layer 4, Floor 2
+				--
+				1912,	-- Coldheart Interstitia - Layer 6, Floor 1
+				--
+				1988,	-- Coldheart Interstitia - Layer 9, Floor 2
 				--
 				1641,	-- Fracture Chambers - Layer 1, Floor 2
 				1624,	-- Fracture Chambers - Layer 1, Floor 3 / Layer 2, Floor 3
