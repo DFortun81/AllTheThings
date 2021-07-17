@@ -331,7 +331,8 @@ _.Zones =
 					["coord"] = { 72.5, 73.2, REVENDRETH },
 				}),
 				q(62190, {	-- It's a Dirty Job
-					["description"] = "This quest is available for Venthyr players with Ember Court rank 2 while doing Dredger quest-line before doing Dirty Jobs quest-line in Revendreth",
+					["customCollect"] = "SL_COV_VEN",	-- Venthyr
+					["description"] = "This quest is available to players with Ember Court rank 2 while doing Dredger quest-line before doing Dirty Jobs quest-line in Revendreth",
 					["altQuests"] = { 57471 },		-- It's a Dirty Job
 					["sourceQuests"] = { 60509 },	-- Not My Job
 					["provider"] = { "n", 157846 },	-- Rendle
