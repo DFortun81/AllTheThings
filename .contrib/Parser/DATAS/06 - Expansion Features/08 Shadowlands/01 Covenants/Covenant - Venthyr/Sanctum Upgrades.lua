@@ -12,7 +12,7 @@ _.ExpansionFeatures =
 			-- But it is complete for my main, as well as 62921... /shrug
 			["maps"] = {
 				SINFALL_REACHES,
-				1700,	-- Sinfall Depths
+				SINFALL_DEPTHS,
 			},
 			["g"] = {
 				n(-957, {	-- Sanctum Upgrades
@@ -25,7 +25,7 @@ _.ExpansionFeatures =
 							q(60721, {	-- The Anima Must Flow
 								["sourceQuests"] = { 63066 },	-- Sanctum Upgrade: Anima Conductor
 								["provider"] = { "n", 164739 },	-- Devahia
-								["coord"] = { 48.3, 56.3, 1700 },	-- Sinfall Depths
+								["coord"] = { 48.3, 56.3, SINFALL_DEPTHS },
 							}),
 							o(356757, {	-- Greed's Desire
 								["description"] = "Part of the Greater Greedstone treasure.  Requires focusing the Anima Conductor at Crypt of the Forgotten.",
@@ -1699,7 +1699,7 @@ _.ExpansionFeatures =
 									["sourceQuests"] = { 61943 },	-- Court Influencer
 									["description"] = "To get Rendle and Cudgelface's RSVP, you need to do one of the Sootible Hat quests.  If you want to collect the |cffffff00Rendle's Big Day|r criteria more quickly, you can abandon the RSVP quest and pick it up again to complete more Sootible Hat quests.",
 									["provider"] = { "n", 171190 },	-- Cudgelface
-									["coord"] = { 61.9, 77.0, 1700 },	-- Sinfall Depths
+									["coord"] = { 61.9, 77.0, SINFALL_DEPTHS },
 									["g"] = {
 										q(62559, {	-- Sootible Hat: Crown of the Righteous
 										--	initially picked up right after picking up RSVP: Rendle and Cudgelface
@@ -1707,7 +1707,7 @@ _.ExpansionFeatures =
 										--	["sourceQuests"] = {  },	-- TODO: unknown
 											["repeatable"] = true,
 											["provider"] = { "n", 165302 },	-- Rendle
-											["coord"] = { 62.5, 76.6, 1700 },	-- Sinfall Depths
+											["coord"] = { 62.5, 76.6, SINFALL_DEPTHS },
 											["cost"] = { { "i", 180760, 1 } },	-- Crown of the Righteous
 											["g"] = {
 												crit(1, {	-- Crown of the Righteous
@@ -1721,7 +1721,7 @@ _.ExpansionFeatures =
 										--	["sourceQuests"] = {  },	-- TODO: unknown
 											["repeatable"] = true,
 											["provider"] = { "n", 165302 },	-- Rendle
-											["coord"] = { 62.5, 76.6, 1700 },	-- Sinfall Depths
+											["coord"] = { 62.5, 76.6, SINFALL_DEPTHS },
 											["cost"] = { { "i", 180755, 1 } },	-- Fae Revel Masque
 											["g"] = {
 												crit(2, {	-- Fae Revel Masque
@@ -1735,7 +1735,7 @@ _.ExpansionFeatures =
 										--	["sourceQuests"] = {  },	-- TODO: unknown
 											["repeatable"] = true,
 											["provider"] = { "n", 165302 },	-- Rendle
-											["coord"] = { 62.5, 76.6, 1700 },	-- Sinfall Depths
+											["coord"] = { 62.5, 76.6, SINFALL_DEPTHS },
 											["cost"] = { { "i", 180752, 1 } },	-- Pink Party Hat
 											["g"] = {
 												crit(3, {	-- Pink Party Hat
@@ -1749,7 +1749,7 @@ _.ExpansionFeatures =
 										--	["sourceQuests"] = {  },	-- TODO: unknown
 											["repeatable"] = true,
 											["provider"] = { "n", 165302 },	-- Rendle
-											["coord"] = { 62.5, 76.6, 1700 },	-- Sinfall Depths
+											["coord"] = { 62.5, 76.6, SINFALL_DEPTHS },
 											["cost"] = { { "i", 180751, 1 } },	-- Red Noggin Candle
 											["g"] = {
 												crit(4, {	-- Red Noggin Candle

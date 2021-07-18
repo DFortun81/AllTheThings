@@ -12,7 +12,7 @@ _.ExpansionFeatures =
 			-- But it is complete for my main, as well as 62921... /shrug
 			["maps"] = {
 				SINFALL_REACHES,
-				1700,	-- Sinfall Depths
+				SINFALL_DEPTHS,
 			},
 			["g"] = {
 				n(-901, sharedData({	-- Covenant Callings
@@ -26,7 +26,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 62695 },	-- A Call to Service
 						["description"] = "Will only be offered as the initial 'Calling' during the Covenant introduction.",
 						["provider"] = { "n", 165302 },	-- Rendle
-						["coord"] = { 61.6, 75.6, 1700 },	-- Sinfall Depths
+						["coord"] = { 61.6, 75.6, SINFALL_DEPTHS },
 						["g"] = {
 							i(181556), -- Tribute of the Court
 						},
@@ -68,28 +68,28 @@ _.ExpansionFeatures =
 					}),
 					q(60389, {	-- Aiding Ardenweald
 						["provider"] = { "n", 165302 },	-- Rendle
-						["coord"] = { 62.2, 76.3, 1700 },	-- Sinfall Depths
+						["coord"] = { 62.2, 76.3, SINFALL_DEPTHS },
 						["g"] = {
 							i(181475),	-- Bounty of the Grove Wardens
 						},
 					}),
 					q(60394, {	-- Aiding Bastion
 						["provider"] = { "n", 165302 },	-- Rendle
-						["coord"] = { 62.0, 76.2, 1700 },	-- Sinfall Depths
+						["coord"] = { 62.0, 76.2, SINFALL_DEPTHS },
 						["g"] = {
 							i(181372),	-- Tribute of the Ascended
 						},
 					}),
 					q(60397, {	-- Aiding Maldraxxus
 						["provider"] = { "n", 165302 },	-- Rendle
-						["coord"] = { 62.0, 76.1, 1700 },	-- Sinfall Depths
+						["coord"] = { 62.0, 76.1, SINFALL_DEPTHS },
 						["g"] = {
 							i(181732),	-- Tribute of the Ambitious
 						},
 					}),
 					q(60399, {	-- Aiding Revendreth
 						["provider"] = { "n", 165302 },	-- Rendle
-						["coord"] = { 62.2, 76.3, 1700 },	-- Sinfall Depths
+						["coord"] = { 62.2, 76.3, SINFALL_DEPTHS },
 						["g"] = {
 							i(181556),	-- Tribute of the Court
 						},
@@ -117,28 +117,28 @@ _.ExpansionFeatures =
 					}),
 					q(60441, {	-- Challenges in Ardenweald
 						["provider"] = { "n", 165291 },	-- The Accuser
-						["coord"] = { 55.6, 76.6, 1700 },	-- Sinfall Depths
+						["coord"] = { 55.6, 76.6, SINFALL_DEPTHS },
 						["g"] = {
 							i(181476),	-- Tribute of the Wild Hunt
 						},
 					}),
 					q(60444, {	-- Challenges in Bastion
 						["provider"] = { "n", 165291 },	-- The Accuser
-						["coord"] = { 55.9, 78.0, 1700 },	-- Sinfall Depths
+						["coord"] = { 55.9, 78.0, SINFALL_DEPTHS },
 						["g"] = {
 							i(181741),	-- Tribute of the Paragon
 						},
 					}),
 					q(60446, {	-- Challenges in Maldraxxus
 						["provider"] = { "n", 165291 },	-- The Accuser
-						["coord"] = { 55.6, 76.6, 1700 },	-- Sinfall Depths
+						["coord"] = { 55.6, 76.6, SINFALL_DEPTHS },
 						["g"] = {
 							i(181733),	-- Tribute of the Duty-Bound
 						},
 					}),
 					q(60448, {	-- Challenges in Revendreth
 						["provider"] = { "n", 165291 },	-- The Accuser
-						["coord"] = { 55.6, 76.6, 1700 },	-- Sinfall Depths
+						["coord"] = { 55.6, 76.6, SINFALL_DEPTHS },
 						["g"] = {
 							i(181557),	-- Favor of the Court
 						},
@@ -152,7 +152,7 @@ _.ExpansionFeatures =
 					}),
 					q(60417, {	-- Rare Resources
 						["provider"] = { "n", 158713 },	-- The Curator
-						["coord"] = { 61.3, 66.7, 1700 },	-- Sinfall Depths
+						["coord"] = { 61.3, 66.7, SINFALL_DEPTHS },
 						["g"] = {
 							i(181556),	-- Tribute of the Court
 						},

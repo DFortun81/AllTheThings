@@ -9,7 +9,7 @@ _.ExpansionFeatures =
 			["customCollect"] = "SL_COV_VEN",	-- Venthyr
 			["maps"] = {
 				SINFALL_REACHES,
-				1700,	-- Sinfall Depths
+				SINFALL_DEPTHS,
 			},
 			["g"] = {
 				n(-902, {	-- Renown

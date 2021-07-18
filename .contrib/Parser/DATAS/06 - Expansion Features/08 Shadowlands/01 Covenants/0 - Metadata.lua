@@ -19,7 +19,7 @@ _.ExpansionFeatures =
 				1703,	-- Heart of the Forest - The Canopy
 				-- Venthyr
 				SINFALL_REACHES,
-				1700,	-- Sinfall Depths
+				SINFALL_DEPTHS,
 			},
 		}),
 	}),

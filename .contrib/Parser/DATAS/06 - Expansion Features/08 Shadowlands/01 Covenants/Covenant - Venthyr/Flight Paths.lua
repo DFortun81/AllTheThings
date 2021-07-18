@@ -14,7 +14,7 @@ _.ExpansionFeatures =
 			-- But it is complete for my main, as well as 62921... /shrug
 			["maps"] = {
 				SINFALL_REACHES,
-				1700,	-- Sinfall Depths
+				SINFALL_DEPTHS,
 			},
 			["g"] = {
 				n(FLIGHT_PATHS, {

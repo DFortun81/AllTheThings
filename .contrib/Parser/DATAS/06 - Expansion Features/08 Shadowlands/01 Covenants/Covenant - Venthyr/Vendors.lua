@@ -12,7 +12,7 @@ _.ExpansionFeatures =
 			-- But it is complete for my main, as well as 62921... /shrug
 			["maps"] = {
 				SINFALL_REACHES,
-				1700,	-- Sinfall Depths
+				SINFALL_DEPTHS,
 			},
 			["g"] = {
 				n(VENDORS, {
@@ -411,7 +411,7 @@ _.ExpansionFeatures =
 						}),
 					}),
 					n(175406, {	-- Gregor the Pallidblade <Sinfall Quartermaster>
-						["coord"] = { 70.6, 27.3, 1700 },	-- Sinfall Depths
+						["coord"] = { 70.6, 27.3, SINFALL_DEPTHS },
 						["g"] = {
 							i(181143, {	-- Claw of the Stoneborn Executioner
 								["cost"] = {
@@ -603,7 +603,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					n(175407, {	-- Lord Afanas <Normal Nathrian Weaponsmith>
-						["coord"] = { 55.2, 54.1, 1700 },
+						["coord"] = { 55.2, 54.1, SINFALL_DEPTHS },
 						["g"] = bubbleDown({
 							["modID"] = 3,	-- Normal
 							["customCollect"] = { "SL_COV_VEN" }	-- Venthyr Covenant
@@ -811,7 +811,7 @@ _.ExpansionFeatures =
 						}),
 					}),
 					n(174183, {	-- Solivane <Raid Finder Nathrian Weaponsmith>
-						["coord"] = { 55.1, 46.1, 1700 },
+						["coord"] = { 55.1, 46.1, SINFALL_DEPTHS },
 						["g"] = bubbleDown({
 							["customCollect"] = { "SL_COV_VEN" },	-- Venthyr Covenant
 							["modID"] = 4,	-- LFR
@@ -1022,7 +1022,7 @@ _.ExpansionFeatures =
 						}),
 					}),
 					n(174709, {	-- Stoneweaver McConnell <Heroic Nathrian Weaponsmith>
-						["coord"] = { 45.4, 65.0, 1700 },
+						["coord"] = { 45.4, 65.0, SINFALL_DEPTHS },
 						["g"] = bubbleDown({
 							["modID"] = 5,	-- Heroic
 							["customCollect"] = { "SL_COV_VEN" }	-- Venthyr Covenant
@@ -1230,7 +1230,7 @@ _.ExpansionFeatures =
 						}),
 					}),
 					n(175369, {	-- Vorpalia <Mythic Nathrian Weaponsmith>
-						["coord"] = { 40.3, 46.1, 1700 },
+						["coord"] = { 40.3, 46.1, SINFALL_DEPTHS },
 						["g"] = bubbleDown({
 							["modID"] = 6,	-- Mythic
 							["customCollect"] = { "SL_COV_VEN" }	-- Venthyr Covenant

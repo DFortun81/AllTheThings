@@ -12,7 +12,7 @@ _.ExpansionFeatures =
 			-- But it is complete for my main, as well as 62921... /shrug
 			["maps"] = {
 				SINFALL_REACHES,
-				1700,	-- Sinfall Depths
+				SINFALL_DEPTHS,
 			},
 			["g"] = {
 				n(QUESTS, sharedData({
@@ -113,12 +113,12 @@ _.ExpansionFeatures =
 					q(59323, {	-- Anima Awakening
 						["sourceQuests"] = { 59321 },	-- Sacred Covenant
 						["provider"] = { "n", 171934 },	-- Prince Renathal
-						["coord"] = { 45.3, 30.3, 1700 },	-- Sinfall Depths
+						["coord"] = { 45.3, 30.3, SINFALL_DEPTHS },
 					}),
 					q(62902, {	-- Anima is Power
 						["description"] = "Becomes available after you complete your first Calling quest.",
 						["provider"] = { "n", 165302 },	-- Rendle
-						["coord"] = { 61.6, 75.7, 1700 },	-- Sinfall Depths
+						["coord"] = { 61.6, 75.7, SINFALL_DEPTHS },
 					}),
 					q(62905, {	-- Back into the Darkness
 						["sourceQuests"] = { 62904 },	-- The Souls Plight
@@ -148,7 +148,7 @@ _.ExpansionFeatures =
 					q(62856, {	-- Building Your Renown
 						["sourceQuests"] = { 59323 },	-- Anima Awakening
 						["provider"] = { "n", 171934 },	-- Prince Renathal
-						["coord"] = { 45.5, 28.7, 1700 },	-- Sinfall Depths
+						["coord"] = { 45.5, 28.7, SINFALL_DEPTHS },
 					}),
 					q(60993, {	-- Citadel of Loyalty
 						["sourceQuests"] = { 58656 },	-- Heavy is the Head...
@@ -285,7 +285,7 @@ _.ExpansionFeatures =
 					q(58426, {	-- In the Shadow of our Failures
 						["sourceQuests"] = { 58383 },	-- The Many Sins of Kael'thas Sunstrider
 						["provider"] = { "n", 161160 },	-- The Accuser
-						["coord"] = { 46.5, 32.2, 1700 },	-- Sinfall Depths
+						["coord"] = { 46.5, 32.2, SINFALL_DEPTHS },
 					}),
 					q(62903, {	-- Into the Reservoir
 						["sourceQuests"] = { 62902 },	-- Anima is Power
@@ -527,7 +527,7 @@ _.ExpansionFeatures =
 					q(58382, {	-- Someone Worth Saving
 						["sourceQuests"] = { 61077 },	-- Confronting Sin
 						["provider"] = { "n", 165291 },	-- The Accuser
-						["coord"] = { 55.8, 78.7, 1700 },	-- Sinfall Depths
+						["coord"] = { 55.8, 78.7, SINFALL_DEPTHS },
 					}),
 					q(62870, {	-- Souls for Sinfall
 						["sourceQuests"] = { 62837 },	-- Hopeful News
@@ -575,7 +575,7 @@ _.ExpansionFeatures =
 						["isBreadcrumb"] = true,
 						["altQuests"] = { 58093 },	-- Our Forgotten Purpose
 						["provider"] = { "n", 165291 },	-- The Accuser
-						["coord"] = { 55.6, 76.6, 1700 },	-- Sinfall Depths
+						["coord"] = { 55.6, 76.6, SINFALL_DEPTHS },
 					}),
 					q(59719, {	-- The Court
 						["sourceQuests"] = {
@@ -621,7 +621,7 @@ _.ExpansionFeatures =
 					q(58383, {	-- The Many Sins of Kael'thas Sunstrider
 						["sourceQuests"] = { 58382 },	-- Someone Worth Saving
 						["provider"] = { "n", 161158 },	-- The Accuser
-						["coord"] = { 46.4, 32.3, 1700 },	-- Sinfall Depths
+						["coord"] = { 46.4, 32.3, SINFALL_DEPTHS },
 					}),
 					q(58407, {	-- The Medallion of Dominion
 						["sourceQuests"] = { 58406 },	-- Mirror to Maldraxxus
