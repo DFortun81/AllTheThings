@@ -2562,7 +2562,7 @@ profession(COOKING, {
 			}),
 			{
 				["itemID"] = 151653,	-- Broken Isles Recipe Scrap
-				["description"] = "Use 10 of these to create an unlearned recipe. It appears as though you can only get Rank 2+ recipes from this item.",
+				["description"] = "Use 10 of these to create an unlearned recipe.",
 				["sym"] = {
 					{ "select", "itemID", 133842 },	-- Recipe: Azshari Salad [Rank 2]
 					{ "select", "itemID", 133862 },	-- Recipe: Azshari Salad [Rank 3]

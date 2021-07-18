@@ -689,12 +689,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 10000,	-- An Unwelcome Presence
 				}),
-				q(10992, bubbleDown({ ["timeline"] = { "removed 4.0.1.13287" } }, {	-- The Hawk's Essence
-					["classes"] = { DRUID },
-					["groups"] = {
-						i(32481),	-- Charm of Swift Flight
-					},
-				})),
 				q(10896, {	-- The Infested Protectors -- aa
 					["provider"] = { "n", 22420 },	-- Lakotae
 					["coord"] = { 37.9, 51.7, TEROKKAR_FOREST },
@@ -928,7 +922,7 @@ _.Zones =
 -- #if AFTER TBC
 -- These quests trigger after specific events occur in the zone.
 _.HiddenQuestTriggers = {
-	
+
 };
 
 -- These quests never made it in.

@@ -1115,18 +1115,22 @@ _.Zones =
 					},
 					["lvl"] = 70,
 				})),
-				applyclassicphase(TBC_PHASE_THREE_SWIFTFLIGHTFORM, q(10992, {	-- The Hawk's Essence
-					["qg"] = 22924,	-- Arthorn Windsong
-					["sourceQuest"] = 10991,	-- The Falcon's Essence
-					["coord"] = { 61.5, 38.3, BLADES_EDGE_MOUNTAINS },
-					["maps"] = { TEROKKAR_FOREST },
-					["classes"] = { DRUID },
-					["cost"] = {
-						{ "i", 32657, 1 },	-- Arthorn's Sparrowhawk Whistle (Provided)
-						{ "i", 32356, 1 },	-- Essence of the Hawk
-					},
-					["lvl"] = 70,
-				})),
+				applyclassicphase(TBC_PHASE_THREE_SWIFTFLIGHTFORM, q(10992,	-- The Hawk's Essence
+					bubbleDown({ ["timeline"] = { "removed 4.0.1.13287" } }, {
+						["qg"] = 22924,	-- Arthorn Windsong
+						["sourceQuest"] = 10991,	-- The Falcon's Essence
+						["coord"] = { 61.5, 38.3, BLADES_EDGE_MOUNTAINS },
+						["maps"] = { TEROKKAR_FOREST },
+						["classes"] = { DRUID },
+						["cost"] = {
+							{ "i", 32657, 1 },	-- Arthorn's Sparrowhawk Whistle (Provided)
+							{ "i", 32356, 1 },	-- Essence of the Hawk
+						},
+						["lvl"] = 70,
+						["groups"] = {
+							i(32481),	-- Charm of Swift Flight
+						},
+				}))),
 				q(10912, {	-- The Hound-Master
 					["qg"] = 22423,	-- Evergrove Druid
 					["sourceQuest"] = 10911,	-- Fire At Will!
