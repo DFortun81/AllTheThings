@@ -242,14 +242,6 @@ _.ExpansionFeatures =
 						follower(1310),	-- Rattlebag
 					},
 				}),
-				q(64174, {	-- Champion: Steadyhands [Venthyr]
-					["customCollect"] = "SL_COV_VEN",	-- Venthyr
-					["sourceQuests"] = { 64190 },	-- Steadyhands' Platter
-					["provider"] = { "n", 179680 },	-- Steadyhands
-					["g"] = {
-						follower(1332),	-- Steadyhands
-					},
-				}),
 				q(61221, {	-- Champion: Stonehuck [Venthyr]
 					["customCollect"] = "SL_COV_VEN",	-- Venthyr
 					["sourceQuests"] = { 61234 },	-- Stonehuck's Sinstone
@@ -331,6 +323,61 @@ _.ExpansionFeatures =
 						follower(1326),	-- Spore of Marasmius
 					},
 				}),
+				q(64174, {	-- Champion: Steadyhands [Venthyr]
+					["customCollect"] = "SL_COV_VEN",	-- Venthyr
+					["sourceQuests"] = { 64190 },	-- Steadyhands' Platter
+					["provider"] = { "n", 179680 },	-- Steadyhands
+					["g"] = {
+						follower(1332),	-- Steadyhands
+					},
+				}),
+				-------- unverifed on live yet 9.1 Champions
+				--[[
+				q(64654 , {	-- Champion: Ben Howell
+					["customCollect"] = "",	-- 
+					["sourceQuests"] = {  },	-- 
+					["provider"] = { "n",  },	-- 
+					["g"] = {
+						follower(1344),	-- Ben Howell
+					},
+				}),
+				
+				q(64171 , {	-- Champion: Kiaranyka
+					["customCollect"] = "",	-- 
+					["sourceQuests"] = {  },	-- 
+					["provider"] = { "n",  },	-- 
+					["g"] = {
+						follower(1329),	-- Kiaranyka
+					},
+				}),
+				
+				q(64175 , {	-- Champion: Lassik Spinebender
+					["customCollect"] = "",	-- 
+					["sourceQuests"] = {  },	-- 
+					["provider"] = { "n",  },	-- 
+					["g"] = {
+						follower(1333),	-- Lassik Spinebender
+					},
+				}),
+				
+				q(64172 , {	-- Champion: Ryuja Shockfist
+					["customCollect"] = "",	-- 
+					["sourceQuests"] = {  },	-- 
+					["provider"] = { "n",  },	-- 
+					["g"] = {
+						follower(1330),	-- Ryuja Shockfist
+					},
+				}),
+				q(64173 , {	-- Champion: Kinessa the Absorbent
+					["customCollect"] = "",	-- 
+					["sourceQuests"] = {  },	-- 
+					["provider"] = { "n",  },	-- 
+					["g"] = {
+						follower(1331),	-- Kinessa the Absorbent
+					},
+				}),
+				--]]
+				
 				-------- unverifed on live yet; adding to alphabetized list above as they are verified in game
 				--[[
 				q(60137, {	-- The Fracture Chambers

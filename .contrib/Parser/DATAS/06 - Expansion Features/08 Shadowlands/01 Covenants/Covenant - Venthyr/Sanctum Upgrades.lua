@@ -156,6 +156,14 @@ _.ExpansionFeatures =
 								follower(1254),	-- Lost Sybille
 							},
 						}),
+						q(64469, {	-- Adventurer: Lucia
+							["description"] = "Requires Renown 71.",
+							["provider"] = { "n", 164741 },	-- Tactician Sakaa
+							["coord"] = { 57.8, 58.6, 1699 },	-- Sinfall Reaches
+							["g"] = {
+								follower(1347),	-- Lucia
+							},
+						}),
 						q(64468, {	-- Adventurer: Madame Iza
 							["description"] = "Requires Renown 62.",
 							["provider"] = { "n", 164741 },	-- Tactician Sakaa

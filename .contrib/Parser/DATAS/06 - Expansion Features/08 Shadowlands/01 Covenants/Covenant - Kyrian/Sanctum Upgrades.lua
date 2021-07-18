@@ -116,6 +116,14 @@ _.ExpansionFeatures =
 									follower(1276),	-- Apolon
 								},
 							}),
+							q(64463, {	-- Adventurer: Auric Spiritguide
+								["description"] = "Requires Renown 71.",
+								["provider"] = { "n", 160389 },    -- Koros
+								["coord"] = { 43.8, 40.7, 1707 },	-- Archon's Rise
+								["g"] = {
+									follower(1343),	-- Auric Spiritguide
+								},
+							}),
 							q(61864, {	-- Adventurer: Bron
 								["description"] = "Requires Renown 33.",
 								["provider"] = { "n", 160389 },    -- Koros

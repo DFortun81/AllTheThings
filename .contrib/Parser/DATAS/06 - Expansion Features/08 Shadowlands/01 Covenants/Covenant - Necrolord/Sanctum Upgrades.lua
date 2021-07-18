@@ -750,6 +750,14 @@ _.ExpansionFeatures =
 									follower(1335),	-- Enceladus
 								},
 							}),
+							q(64466, {	-- Adventurer: Deathfang
+								["description"] = "Requires Renown 71.",
+								["provider"] = { "n", 165321 },	-- Merick Feldscar
+								["coord"] = { 38.8, 48.2, 1698 },
+								["g"] = {
+									follower(1336),	-- Deathfang
+								},
+							}),
 							q(62312, {	-- Adventurer: Gunn Gorgebone
 								["description"] = "Requires Renown 12.",
 								["provider"] = { "n", 165321 },	-- Merick Feldscar

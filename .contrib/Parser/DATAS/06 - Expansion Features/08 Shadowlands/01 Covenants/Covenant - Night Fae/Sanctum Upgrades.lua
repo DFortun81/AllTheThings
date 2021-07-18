@@ -167,6 +167,14 @@ _.ExpansionFeatures =
 								follower(1287),	-- Watcher Vesperbloom
 							},
 						}),
+						q(64460, {	-- Adventurer: Yanlar
+							["description"] = "Requires Renown 71.",
+							["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
+							["coord"] = { 44.7, 56.3, ARDENWEALD },
+							["g"] = {
+								follower(1339),	-- Yanlar
+							},
+						}),
 						q(61553, {	-- Know Where to Strike
 							["sourceQuests"] = { 61552 },	-- The Hunt Watches
 							["provider"] = { "n", 164023 },	-- Watcher Vesperbloom
