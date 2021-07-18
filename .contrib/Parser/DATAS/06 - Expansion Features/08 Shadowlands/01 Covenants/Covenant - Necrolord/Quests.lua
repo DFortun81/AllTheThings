@@ -871,6 +871,12 @@ _.ExpansionFeatures =
 						["coord"] = { 46.5, 42.2, 1698 },
 						["isWeekly"] = true,
 					}),
+					-- 9.1
+					q(63624, {	-- The Roads We Walk
+						["sourceQuests"] = { 63623 },	-- Filling an Empty Throne
+						["provider"] = { "n", 177975 },	-- The Primus
+						["coord"] = { 49.7, 51.4, 1698 },
+					}),
 				})),
 			},
 		}),

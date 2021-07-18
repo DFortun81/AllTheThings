@@ -103,6 +103,12 @@ _.Zones =
 					["provider"] = { "n", 178992 },	-- Scholar Roh-Suir
 					["coord"] = { 36.0, 32.3, KORTHIA },
 				}),
+				q(63623, {	-- Filling an Empty Throne
+					["customCollect"] = "SL_COV_NEC",	-- Necrolord
+					["sourceQuests"] = { 63622 },	-- Victory in Our Name
+					["provider"] = { "n", 177194 },	-- The Primus
+					["coord"] = { 63.1, 25.3, KORTHIA },
+				}),
 				q(63737, {	-- Finding One's True Purpose
 					["sourceQuests"] = { 63739 },	-- Hope Ascending
 					["provider"] = { "n", 178991 },	-- Archivist Roh-Dahl
