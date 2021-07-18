@@ -2799,7 +2799,7 @@ for key,value in pairs({
 	[353683] = "달빛 깍지",	-- Lunarlight Pod
 	[353684] = "달빛 깍지",	-- Lunarlight Pod
 	[353685] = "달빛 깍지",	-- Lunarlight Pod
-	--TODO: [353687] = "Broken Bell",	-- Broken Bell
+	[353687] = "망가진 종",	-- Broken Bell
 	[353688] = "망가진 종",	-- Broken Bell
 	[353691] = "하늘맞이 종",	-- Skyward Bell
 	[353792] = "촌락 금고",	-- Village Strongbox
@@ -2813,7 +2813,7 @@ for key,value in pairs({
 	--TODO: [353871] = "Hidden Hoard",	-- Hidden Hoard
 	[353872] = "숨겨진 비축물",	-- Hidden Hoard
 	[353873] = "숨겨진 비축물",	-- Hidden Hoard
-	--TODO: [353876] = "Virtue of Penitence",	-- Virtue of Penitence
+	[353876] = "참회의 미덕",	-- Virtue of Penitence
 	[353940] = "베시포네의 선물",	-- Gift of Vesiphone
 	[353941] = "카이러스의 선물",	-- Gift of Chyrus
 	[353942] = "아그티아의 선물",	-- Gift of Agthia
@@ -2953,14 +2953,14 @@ for key,value in pairs({
 	[368668] = "꼬마 누더기의 하체",	-- Lil'Abom's Trunk
 	[368772] = "인장이 들어간 두루마리",	-- Sigilscored Scroll
 	[368876] = "나락살이 보관함",	-- Mawsworn Cache
-	--TODO: [369129] = "Nilganihmaht's Gold Band",	-- Nilganihmaht's Gold Band
+	[369129] = "닐간니흐마트의 황금 고리",	-- Nilganihmaht's Gold Band
 	[369132] = "지배의 봉인 궤짝",	-- Domination Sealed Chest
 	[369133] = "지배의 봉인 #1",	-- Domination Seal #1
 	[369134] = "지배의 봉인 우리",	-- Domination Sealed Cage
 	[369135] = "지배의 봉인 #2",	-- Domination Seal #2
 	[369138] = "지배의 상자 봉인",	-- Domination Chest Seal
 	[369141] = "나락살이 보관함",	-- Mawsworn Cache
-	--TODO: [369143] = "Quartered Ancient Ring",	-- Quartered Ancient Ring
+	[369143] = "사등분된 고대의 반지",	-- Quartered Ancient Ring
 	[369144] = "박해자의 열쇠고리",	-- The Harrower's Key Ring
 	[369145] = "헬가드 보급품 상자",	-- Helgarde Supply Cache
 	[369148] = "반짝이는 둥지 재료",	-- Glittering Nest Material

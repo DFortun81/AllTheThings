@@ -2878,10 +2878,10 @@ for key,value in pairs({
 	[355947] = "Cassa di Glutharn",	-- Glutharn's Stash
 	[356555] = "La Collana di Eurydea",	-- Eurydea's Necklace
 	--TODO: [356693] = "Baroness Vashj's Extravagant Tribute",	-- Baroness Vashj's Extravagant Tribute
-	--TODO: [356697] = "Alexandros Mograine's Extravagant Tribute",	-- Alexandros Mograine's Extravagant Tribute
+	[356697] = "Tributo Smodato di Alexandros Mograine",	-- Alexandros Mograine's Extravagant Tribute
 	[356700] = "Tributo Smodato del Gran Maestro Vole",	-- Grandmaster Vole's Extravagant Tribute
-	--TODO: [356705] = "Plague Deviser Marileth's Extravagant Tribute",	-- Plague Deviser Marileth's Extravagant Tribute
-	--TODO: [356709] = "Lady Moonberry's Extravagant Tribute",	-- Lady Moonberry's Extravagant Tribute
+	[356705] = "Tributo Smodato dell'Architetto della Piaga Marileth",	-- Plague Deviser Marileth's Extravagant Tribute
+	[356709] = "Tributo Smodato di Dama Baccaluna",	-- Lady Moonberry's Extravagant Tribute
 	[356712] = "Tributo Smodato del Capitano della Caccia Korayn",	-- Hunt-Captain Korayn's Extravagant Tribute
 	--TODO: [356716] = "Droman Aliothe's Extravagant Tribute",	-- Droman Aliothe's Extravagant Tribute
 	--TODO: [356720] = "Choofa's Extravagant Tribute",	-- Choofa's Extravagant Tribute
@@ -2960,7 +2960,7 @@ for key,value in pairs({
 	[369135] = "Sigillo del Dominio #2",	-- Domination Seal #2
 	[369138] = "Sigillo della Cassa del Dominio",	-- Domination Chest Seal
 	[369141] = "Scrigno dei Giurafauce",	-- Mawsworn Cache
-	--TODO: [369143] = "Quartered Ancient Ring",	-- Quartered Ancient Ring
+	[369143] = "Anello Antico Diviso in Quattro",	-- Quartered Ancient Ring
 	[369144] = "Mazzo di Chiavi della Straziatrice",	-- The Harrower's Key Ring
 	[369145] = "Cassa di Rifornimenti di Helgarde",	-- Helgarde Supply Cache
 	[369148] = "Materiale del Nido Scintillante",	-- Glittering Nest Material
