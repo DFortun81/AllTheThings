@@ -1,6 +1,6 @@
 # AllTheThings
 
-## [SL-2.3.9](https://github.com/DFortun81/AllTheThings/tree/SL-2.3.9) (2021-07-17)
+## [SL-2.3.9](https://github.com/DFortun81/AllTheThings/tree/SL-2.3.9) (2021-07-18)
 [Full Changelog](https://github.com/DFortun81/AllTheThings/compare/SL-2.3.8...SL-2.3.9) [Previous Releases](https://github.com/DFortun81/AllTheThings/releases)
 
 ### Highlights of this update
