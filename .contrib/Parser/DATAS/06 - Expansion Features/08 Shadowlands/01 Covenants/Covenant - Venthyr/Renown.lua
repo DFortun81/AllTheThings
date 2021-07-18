@@ -64,7 +64,7 @@ _.HiddenQuestTriggers = {
 	-- q( ),	-- hitting Renown 48 [Demon Hunter] (received Memory of ??)
 	q(64389),	-- hitting Renown 48 [Druid] (received Memory of ??)
 	-- q( ),	-- hitting Renown 48 [Hunter] (received Memory of ??)
-	q(64390),	-- hitting Renown 48 [Mage] (received Memory of ??)
+	q(64390),	-- hitting Renown 48 [Mage] (received Memory of Sinful Delight)
 	-- q( ),	-- hitting Renown 48 [Monk] (received Memory of ??)
 	-- q( ),	-- hitting Renown 48 [Paladin] (received Memory of ??)
 	q(64410),	-- hitting Renown 48 [Priest] (received Memory of Shadow Word: Manipulation)
