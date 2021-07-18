@@ -1776,7 +1776,6 @@ _.Holidays = bubbleDown({["u"] = 21},
 		--	NEUTRAL "HONOR THE FLAME" QUESTS END HERE.
 			q(11966, {	-- Incense for the Festival Scorchlings
 				["provider"] = { "n", 16818 },	-- Festival Talespinner
-				["isYearly"] = true,
 				["coords"] = {
 					{ 47.8, 38.4, ORGRIMMAR },
 					{ 21.4, 27.8, THUNDER_BLUFF },
@@ -1795,7 +1794,6 @@ _.Holidays = bubbleDown({["u"] = 21},
 			}),
 			q(11964, {	-- Incense for the Summer Scorchlings
 				["provider"] = { "n", 16817 },	-- Festival Loremaster
-				["isYearly"] = true,
 				["coords"] = {
 					{ 49.6, 72.0, STORMWIND_CITY },
 					{ 64.0, 25.8, IRONFORGE },
@@ -2221,7 +2219,6 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ "n", 19173 },	-- Night Elf Commoner
 					{ "n", 20102 },	-- Goblin Commoner
 				},
-				["isYearly"] = true,
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = {
 					NORTHERN_BARRENS,
@@ -2246,7 +2243,6 @@ _.Holidays = bubbleDown({["u"] = 21},
 					{ "n", 19178 },	-- Forsaken Commoner
 					{ "n", 20102 },	-- Goblin Commoner
 				},
-				["isYearly"] = true,
 				["races"] = HORDE_ONLY,
 				["maps"] = {
 					NORTHERN_BARRENS,
