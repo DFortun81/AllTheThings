@@ -8,14 +8,14 @@ _.ExpansionFeatures =
 		n(-929, {	-- Covenant: Night Fae
 			["customCollect"] = "SL_COV_NFA",	-- Night Fae
 			["maps"] = {
-				1701,	-- Heart of the Forest (The Trunk)
-				1702,	-- Heart of the Forest (The Roots)
-				1703,	-- Heart of the Forest (The Canopy
+				THE_TRUNK,	-- Heart of the Forest
+				THE_ROOTS,	-- Heart of the Forest
+				THE_CANOPY,	-- Heart of the Forest
 			},
 			["g"] = {
 				n(VENDORS, {
 					n(175414, {	-- Adera <Normal Nathrian Weaponsmith>
-						["coord"] = { 48.1, 53.5, 1702 },
+						["coord"] = { 48.1, 53.5, THE_ROOTS },
 						["g"] = bubbleDown({
 							["customCollect"] = "SL_COV_NFA",	-- Night Fae Covenant
 							["modID"] = 3,	-- Normal
@@ -268,7 +268,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					n(174914, {	-- Elwyn <Renown Quartermaster>
-						["coord"] = { 60.2, 33.2, 1701 },	-- Heart of the Forest
+						["coord"] = { 60.2, 33.2, THE_TRUNK },
 						["g"] = sharedData(
 							{ ["customCollect"] = "SL_COV_NFA", }	-- Night Fae
 							, {
@@ -638,7 +638,7 @@ _.ExpansionFeatures =
 						}),
 					}),
 					n(175415, {	-- Harkoth <Heroic Nathrian Weaponsmith>
-						["coord"] = { 49.4, 54.4, 1702 },
+						["coord"] = { 49.4, 54.4, THE_ROOTS },
 						["g"] = bubbleDown({
 							["customCollect"] = "SL_COV_NFA",	-- Night Fae Covenant
 							["modID"] = 5,	-- Heroic
@@ -842,7 +842,7 @@ _.ExpansionFeatures =
 						}),
 					}),
 					n(175418, {	-- Mar'lan <Night Fae Armor Trader>
-						["coord"] = { 45.9, 56.4, 1701 },
+						["coord"] = { 45.9, 56.4, THE_TRUNK },
 						["g"] = {
 							i(179602, {	-- Bulwark of the Wild Hunt
 								["cost"] = {
@@ -1105,7 +1105,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					n(175413, {	-- Sparklebreeze <Raid Finder Nathrian Weaponsmith>
-						["coord"] = { 46.9, 54.3, 1702 },	-- The Roots
+						["coord"] = { 46.9, 54.3, THE_ROOTS },
 						["g"] = bubbleDown({
 							["customCollect"] = "SL_COV_NFA",	-- Night Fae Covenant
 							["modID"] = 4,	-- LFR
@@ -1441,7 +1441,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					n(175417, {	-- Sulanoom <Mythic Nathrian Weaponsmith>
-						["coord"] = { 49.4, 54.4, 1702 },	-- The Roots
+						["coord"] = { 49.4, 54.4, THE_ROOTS },
 						["g"] = bubbleDown({
 							["customCollect"] = "SL_COV_NFA",	-- Night Fae Covenant
 							["modID"] = 6,	-- Mythic
@@ -1929,7 +1929,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 					i(179630),	-- Ardenweald Covenant Mail Cloak
 					i(179631),	-- Ardenweald Covenant Mail Cloak
 					i(179632),	-- Ardenweald Covenant Mail Cloak
-					
+
 					i(173926),	-- 9.0 Covenant - Ardenweald - Plate Cloak
 					i(179438),	-- 9.0 Covenant - Ardenweald - Leather - Cloak
 					i(179447),	-- 9.0 Covenant - Ardenweald - Cloth - Cloak

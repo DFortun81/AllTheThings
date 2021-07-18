@@ -8,9 +8,9 @@ _.ExpansionFeatures =
 		n(-929, {	-- Covenant: Night Fae
 			["customCollect"] = "SL_COV_NFA",	-- Night Fae
 			["maps"] = {
-				1701,	-- Heart of the Forest (The Trunk)
-				1702,	-- Heart of the Forest (The Roots)
-				1703,	-- Heart of the Forest (The Canopy
+				THE_TRUNK,	-- Heart of the Forest
+				THE_ROOTS,	-- Heart of the Forest
+				THE_CANOPY,	-- Heart of the Forest
 			},
 			["g"] = {
 				n(-935, {	-- Sanctum Upgrades
@@ -18,12 +18,12 @@ _.ExpansionFeatures =
 						n(-916, {	-- Tier 1: Flowing Tendrils
 							q(63067, {	-- Root Restoration
 								["provider"] = { "n", 165702 },	-- Zayhad, The Builder
-								["coord"] = { 39.6, 55.0, 1702 },	-- The Roots
+								["coord"] = { 39.6, 55.0, THE_ROOTS },
 							}),
 							q(60723, {	-- The Roots Thirst
 								["sourceQuests"] = { 63067 },	-- Root Restoration
 								["provider"] = { "n", 167196 },	-- Sesselie
-								["coord"] = { 50.1, 63.7, 1702 },	-- The Roots
+								["coord"] = { 50.1, 63.7, THE_ROOTS },
 							}),
 							o(356820, {	-- Large Lunarlight Pod
 								["description"] = "Requires channeling the Anima Conductor to Glitterfall Basin.  To unlock the chest, run over 5 nearby Lunarlight Buds.",
@@ -182,7 +182,7 @@ _.ExpansionFeatures =
 						}),
 						q(61552, {	-- The Hunt Watches
 							["provider"] = { "n", 165702 },	-- Zayhad, The Builder
-							["coord"] = { 39.7, 55.7, 1701 },	-- The Trunk
+							["coord"] = { 39.7, 55.7, THE_TRUNK },
 						}),
 						-- think these headers are unneccessary, unless we find quests later that require tier 2/3
 						-- n(-906, {	-- Tier 1: Tactical Insight
@@ -415,7 +415,7 @@ _.ExpansionFeatures =
 								q(63046, {	-- The End and the Beginning
 									["sourceQuests"] = { 62624 },	-- The Queen's Conservatory
 									["provider"] = { "n", 173171 },	-- Conservator Starry Night
-									["coord"] = { 56.0, 68.2, 1702 },	-- The Roots
+									["coord"] = { 56.0, 68.2, THE_ROOTS },
 								}),
 								q(60642, {	-- The Grove Resplendent
 									["sourceQuests"] = { 60641 },	-- Blossoming of the Grove
@@ -424,7 +424,7 @@ _.ExpansionFeatures =
 								}),
 								q(62624, {	-- The Queen's Conservatory
 									["provider"] = { "n", 173171 },	-- Conservator Starry Night
-									["coord"] = { 56.0, 68.2, 1702 },	-- The Roots
+									["coord"] = { 56.0, 68.2, THE_ROOTS },
 								}),
 							}),
 							-- Spirits/Transmog
@@ -540,7 +540,7 @@ _.ExpansionFeatures =
 						}),
 						q(63073, {	-- A Mycelial Network
 							["provider"] = { "n", 165702 },	-- Zayhad, The Builder
-							["coord"] = { 39.6, 55.0, 1702 },	-- The Roots
+							["coord"] = { 39.6, 55.0, THE_ROOTS },
 						}),
 						q(62608, {	-- A Royal Treat
 							["sourceQuests"] = { 57583 },	-- Through the Veil
@@ -683,7 +683,7 @@ _.ExpansionFeatures =
 						q(57454, {	-- Silence in the Stalks
 							["sourceQuests"] = { 63073 },	-- A Mycelial Network
 							["provider"] = { "n", 174609 },	-- Zaki
-							["coord"] = { 53.2, 33.2, 1702 },	-- The Roots
+							["coord"] = { 53.2, 33.2, THE_ROOTS },
 						}),
 						q(57583, {	-- Through the Veil
 							["sourceQuests"] = { 57463 },	-- My Way or the Hyphae

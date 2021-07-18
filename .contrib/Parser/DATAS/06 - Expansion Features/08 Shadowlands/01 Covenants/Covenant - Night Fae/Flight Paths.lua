@@ -10,14 +10,14 @@ _.ExpansionFeatures =
 		},{
 		n(-929, {	-- Covenant: Night Fae
 			["maps"] = {
-				1701,	-- Heart of the Forest (The Trunk)
-				1702,	-- Heart of the Forest (The Roots)
-				1703,	-- Heart of the Forest (The Canopy
+				THE_TRUNK,	-- Heart of the Forest
+				THE_ROOTS,	-- Heart of the Forest
+				THE_CANOPY,	-- Heart of the Forest
 			},
 			["g"] = {
 				n(FLIGHT_PATHS, {
 					fp(2587, {	-- Ardenweald, Heart of the Forest
-						["coord"] = { 51.2, 7.8, 1701 },
+						["coord"] = { 51.2, 7.8, THE_TRUNK },
 					}),
 				}),
 			};

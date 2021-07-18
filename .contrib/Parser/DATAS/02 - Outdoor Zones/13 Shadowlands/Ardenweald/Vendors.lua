@@ -10,7 +10,7 @@ _.Zones =
 				n(158556, {	-- Aithlyn <Wild Hunt Quartermaster>
 					["coords"] = {
 						{ 48.4, 50.4, ARDENWEALD },
-						{ 59.6, 31.8, 1701 },	-- Heart of the Forest (covenant)
+						{ 59.6, 31.8, THE_TRUNK },	-- Heart of the Forest (covenant)
 					},
 					["g"] = {
 						i(180729, {	-- Duskflutter Ardenmoth (MOUNT)

@@ -8,9 +8,9 @@ _.ExpansionFeatures =
 		n(-929, {	-- Covenant: Night Fae
 			["customCollect"] = "SL_COV_NFA",	-- Night Fae
 			["maps"] = {
-				1701,	-- Heart of the Forest (The Trunk)
-				1702,	-- Heart of the Forest (The Roots)
-				1703,	-- Heart of the Forest (The Canopy
+				THE_TRUNK,	-- Heart of the Forest
+				THE_ROOTS,	-- Heart of the Forest
+				THE_CANOPY,	-- Heart of the Forest
 			},
 			["g"] = {
 				n(QUESTS, sharedData({
@@ -19,7 +19,7 @@ _.ExpansionFeatures =
 					q(63673, {	-- Hunting Amid Houses
 						["sourceQuests"] = { 63672 },	-- A Cry From the Heart
 						["provider"] = { "n", 160262 },	-- Ysera
-						["coord"] = { 44.3, 38.8, 1701 },	-- The Trunk
+						["coord"] = { 44.3, 38.8, THE_TRUNK },
 					}),
 					-- These quests are not part of the covenant questline chapters, but are Night Fae only
 					q(61058, {	-- Bound in Dreams
@@ -27,7 +27,7 @@ _.ExpansionFeatures =
 						-- If someone quests on a new Night Fae character they might be able to figure out the SQ(s)
 						["sourceQuests"] = { 59242 },	-- Their New Home
 						["provider"] = { "n", 160482 },	-- Dreamweaver
-						["coord"] = { 33.7, 47.6, 1701 },
+						["coord"] = { 33.7, 47.6, THE_TRUNK },
 						["g"] = {
 							follower(1264),	-- Dreamweaver
 						},
@@ -35,7 +35,7 @@ _.ExpansionFeatures =
 					q(61057, {	-- By Trials Forged
 						["sourceQuests"] = { 60108 },	-- Drust and Ashes
 						["provider"] = { "n", 165659 },	-- Hunt-Captain Korayn
-						["coord"] = { 35.2, 47.4, 1701 },
+						["coord"] = { 35.2, 47.4, THE_TRUNK },
 						["g"] = {
 							follower(1266),	-- Hunt-Captain Korayn
 						},
@@ -43,55 +43,55 @@ _.ExpansionFeatures =
 					q(62544, {	-- From a Dark Place
 						["sourceQuests"] = { 62536 },	-- The Lost of Teldrassil
 						["provider"] = { "n", 160262 },	-- Ysera
-						["coord"] = { 44.6, 39.0, 1701 },
+						["coord"] = { 44.6, 39.0, THE_TRUNK },
 					}),
 					q(62561, {	-- My Heart is Full
 						["sourceQuests"] = { 60108 },	-- Drust and Ashes
 						["provider"] = { "n", 161509 },	-- Lady Moonberry
-						["coord"] = { 47.6, 36.4, 1701 },	-- The Trunk
+						["coord"] = { 47.6, 36.4, THE_TRUNK },
 					}),
 					q(63347, {	-- Night Fae Tactician
 						["description"] = "Requires Renown 22.",
 						["provider"] = { "n", 176096 },	-- Laurel
-						["coord"] = { 34.0, 37.0, 1701 },	-- The Trunk
+						["coord"] = { 34.0, 37.0, THE_TRUNK },
 					}),
 					q(64085, {	-- Night Fae Tactician #2
 						["description"] = "Requires Renown 59.",
 						["provider"] = { "n", 176096 },	-- Laurel
-						["coord"] = { 34.0, 37.0, 1701 },	-- The Trunk
+						["coord"] = { 34.0, 37.0, THE_TRUNK },
 					}),
 					q(63346, {	-- Night Fae Veteran
 						["sourceQuests"] = { 62899 },	-- The Endless Forest
 						["description"] = "Requires Renown 7.",
 						["provider"] = { "n", 176096 },	-- Laurel
-						["coord"] = { 34.0, 37.0, 1701 },	-- The Trunk
+						["coord"] = { 34.0, 37.0, THE_TRUNK },
 					}),
 					q(64322, {	-- Night Fae Veteran #2
 						["description"] = "Requires Renown 43.",
 						["provider"] = { "n", 176096 },	-- Laurel
-						["coord"] = { 34.0, 37.0, 1701 },	-- The Trunk
+						["coord"] = { 34.0, 37.0, THE_TRUNK },
 					}),
 					q(62546, {	-- No Wisp Left Behind (1)
 						["sourceQuests"] = { 62544 },	-- From a Dark Place
 						["provider"] = { "n", 160262 },	-- Ysera
-						["coord"] = { 44.6, 39.0, 1701 },
+						["coord"] = { 44.6, 39.0, THE_TRUNK },
 					}),
 					q(62549, {	-- No Wisp Left Behind (2)
 						["sourceQuests"] = { 62546 },	-- No Wisp Left Behind (1)
 						["provider"] = { "n", 160262 },	-- Ysera
-						["coord"] = { 44.6, 39.0, 1701 },
+						["coord"] = { 44.6, 39.0, THE_TRUNK },
 					}),
 					q(61984, {	-- Replenish the Reservoir
 						["sourceQuests"] = { 58160 },	-- For Queen and Grove!
 						["provider"] = { "n", 158553 },	-- Flutterby
 						["isWeekly"] = true,
-						["coord"] = { 33.9, 43.5, 1702 },	-- The Roots
+						["coord"] = { 33.9, 43.5, THE_ROOTS },
 					}),
 					q(61331, {	-- Return Lost Souls (5 soul version)
 						["sourceQuests"] = { 58160 },	-- For Queen and Grove!
 						["provider"] = { "n", 158553 },	-- Flutterby
 						["isWeekly"] = true,
-						["coord"] = { 33.9, 43.5, 1701 },	-- The Trunk
+						["coord"] = { 33.9, 43.5, THE_TRUNK },
 					}),
 					q(62858, {	-- Return Lost Souls (10 soul version)
 						["sourceQuests"] = { 58160 },	-- For Queen and Grove!
@@ -119,7 +119,7 @@ _.ExpansionFeatures =
 						-- i *think* this requires doing "their new home" and then waiting for a daily (or weekly?) reset.  it was the last campaign quest i did, and the next day (which was a weekly reset day) this quest was there
 						["sourceQuests"] = { 59242 },	-- Their New Home
 						["provider"] = { "n", 160262 },	-- Ysera
-						["coord"] = { 44.6, 39.0, 1701 },	-- The Trunk
+						["coord"] = { 44.6, 39.0, THE_TRUNK },
 					}),
 
 					-- currently in order of the chapters / quest sequence, will alphabetize after verifying all
@@ -133,7 +133,7 @@ _.ExpansionFeatures =
 					q(58104, {	-- Show, Don't Tell
 						["sourceQuests"] = { 61479 },	-- The Boon of Shapes
 						["provider"] = { "n", 161509 },	-- Lady Moonberry
-						["coord"] = { 49.5, 40.1, 1701 },
+						["coord"] = { 49.5, 40.1, THE_TRUNK },
 					}),
 					q(58157, {	-- Break a Leg
 						["sourceQuests"] = { 58104 },	-- Show, Don't Tell
@@ -165,32 +165,32 @@ _.ExpansionFeatures =
 					q(62884, {	-- The Forest Will Sing Your Name
 						["sourceQuests"] = { 62883 },	-- Keeper of Great Renown
 						["provider"] = { "n", 176096 },	-- Laurel
-						["coord"] = { 34.3, 36.8, 1701 },
+						["coord"] = { 34.3, 36.8, THE_TRUNK },
 					}),
 					q(62697, {	-- A Call to Service
 						["sourceQuests"] = { 62884 },	-- The Forest Will Sing Your Name
 						["provider"] = { "n", 176096 },	-- Laurel
-						["coord"] = { 34.3, 36.8, 1701 },
+						["coord"] = { 34.3, 36.8, THE_TRUNK },
 					}),
 					q(62890, {	-- Who Shapes the Forest
 						["sourceQuests"] = { 62697 },	-- A Call to Service
 						["provider"] = { "n", 167195 },	-- Blodwyn
-						["coord"] = { 53.8, 6.2, 1701 },
+						["coord"] = { 53.8, 6.2, THE_TRUNK },
 					}),
 					q(62891, {	-- Into the Reservoir
 						["sourceQuests"] = { 62890 },	-- Who Shapes the Forest
 						["provider"] = { "n", 165702 },	-- Zayhad, The Builder
-						["coord"] = { 39.7, 55.7, 1701 },
+						["coord"] = { 39.7, 55.7, THE_TRUNK },
 					}),
 					q(62892, {	-- Recover the Lost
 						["sourceQuests"] = { 62891 },	-- Into the Reservoir
 						["provider"] = { "n", 165702 },	-- Zayhad, The Builder
-						["coord"] = { 39.7, 55.7, 1701 },
+						["coord"] = { 39.7, 55.7, THE_TRUNK },
 					}),
 					q(62893, {	-- Do What We Cannot
 						["sourceQuests"] = { 62892 },	-- Recover the Lost
 						["provider"] = { "n", 158553 },	-- Flutterby
-						["coord"] = { 34.1, 43.6, 1701 },
+						["coord"] = { 34.1, 43.6, THE_TRUNK },
 					}),
 					q(62894, {	-- Flutterback
 						["sourceQuests"] = { 62837 },	-- Hopeful News
@@ -201,17 +201,17 @@ _.ExpansionFeatures =
 					q(62897, {	-- Recovered Souls
 						["sourceQuests"] = { 62894 },	-- Flutterback
 						["provider"] = { "n", 158553 },	-- Flutterby
-						["coord"] = { 34.1, 43.6, 1701 },
+						["coord"] = { 34.1, 43.6, THE_TRUNK },
 					}),
 					q(62898, {	-- The First New Growth
 						["sourceQuests"] = { 62897 },	-- Recovered Souls (technically can be acquired after 62837 Hopeful News, but requires Souls reward from 62897 anyway...)
 						["provider"] = { "n", 165702 },	-- Zayhad, The Builder
-						["coord"] = { 39.7, 55.7, 1701 },
+						["coord"] = { 39.7, 55.7, THE_TRUNK },
 					}),
 					q(61541, {	-- The Forge of Bonds
 						["sourceQuests"] = { 62898 },	-- The First New Growth
 						["provider"] = { "n", 172431 },	-- Lady Moonberry
-						["coord"] = { 49.5, 40.0, 1701 },
+						["coord"] = { 49.5, 40.0, THE_TRUNK },
 					}),
 					q(63008, {	-- The Forge of Bonds
 					--	TODO: unsure how to pick up this version.  it automatically turned in with 61541
@@ -222,12 +222,12 @@ _.ExpansionFeatures =
 					q(61542, {	-- The Boon of Binding
 						["sourceQuests"] = { 61541 },	-- The Forge of Bonds
 						["provider"] = { "n", 158553 },	-- Flutterby
-						["coord"] = { 34.1, 43.6, 1701 },
+						["coord"] = { 34.1, 43.6, THE_TRUNK },
 					}),
 					q(61550, {	-- Strengthening the Bond
 						["sourceQuests"] = { 61542 },	-- The Boon of Binding
 						["provider"] = { "n", 172677 },	-- Niya
-						["coord"] = { 33.7, 45.0, 1701 },
+						["coord"] = { 33.7, 45.0, THE_TRUNK },
 						["g"] = {
 							i(183473),	-- Conflux of Elements
 							i(183466),	-- Innate Resolve
@@ -238,32 +238,32 @@ _.ExpansionFeatures =
 					q(62900, {	-- A Conduit for Growth
 						["sourceQuests"] = { 61550 },	-- Strengthening the Bond
 						["provider"] = { "n", 172677 },	-- Niya
-						["coord"] = { 33.7, 45.0, 1701 },
+						["coord"] = { 33.7, 45.0, THE_TRUNK },
 					}),
 					q(62899, {	-- The Endless Forest
 						["sourceQuests"] = { 62900 },	-- A Conduit for Growth
 						["provider"] = { "n", 158553 },	-- Flutterby
-						["coord"] = { 34.1, 43.6, 1701 },
+						["coord"] = { 34.1, 43.6, THE_TRUNK },
 					}),
 
 					-- Chapter 2: Torghast (almost all quests in this chapter are shared among all covenants and can be found in the Torghast quest file)
 					q(63030, {	-- The Highlord Calls
 						["sourceQuests"] = { 62899 },	-- The Endless Forest
 						["provider"] = { "n", 161509 },	-- Lady Moonberry
-						["coord"] = { 47.4, 36.2, 1701 },
+						["coord"] = { 47.4, 36.2, THE_TRUNK },
 					}),
 
 					-- Chapter 3: The Night Warrior (Renown 5 required to start)
 					q(59179, {	-- Daughter of the Night Warrior (A)
 						["sourceQuests"] = { 60272 },	-- The Weak Link
 						["provider"] = { "n", 160262 },	-- Ysera
-						["coord"] = { 44.9, 38.8, 1701 },
+						["coord"] = { 44.9, 38.8, THE_TRUNK },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					q(59246, {	-- Daughter of the Night Warrior (H)
 						["sourceQuests"] = { 60272 },	-- The Weak Link
 						["provider"] = { "n", 160262 },	-- Ysera
-						["coord"] = { 44.9, 38.8, 1701 },
+						["coord"] = { 44.9, 38.8, THE_TRUNK },
 						["races"] = HORDE_ONLY,
 					}),
 					q(59181, {	-- Into the Maw
@@ -346,7 +346,7 @@ _.ExpansionFeatures =
 					q(59818, {	-- Gathering The Hunt
 						["sourceQuests"] = { 59817 },	-- Winter Be Comin'
 						["provider"] = { "n", 156634 },	-- Winter Queen
-						["coord"] = { 50.9, 29.4, 1703 },	-- The Canopy
+						["coord"] = { 50.9, 29.4, THE_CANOPY },
 					}),
 					q(59819, {	-- Cleansing the Forest
 						["sourceQuests"] = { 59818 },	-- Gathering The Hunt
@@ -364,7 +364,7 @@ _.ExpansionFeatures =
 					q(58610, {	-- The Speaker of Elune
 						["sourceQuests"] = { 59821 },	-- Report to the Queen
 						["provider"] = { "n", 160262 },	-- Ysera
-						["coord"] = { 44.7, 39.0, 1701 },	-- The Trunk
+						["coord"] = { 44.7, 39.0, THE_TRUNK },
 					}),
 					q(58647, {	-- Broken Webs
 						["sourceQuests"] = { 58610 },	-- The Speaker of Elune
@@ -403,7 +403,7 @@ _.ExpansionFeatures =
 					q(59725, {	-- Archivist on the Edge
 						["sourceQuests"] = { 58871 },	-- Broken Harts
 						["provider"] = { "n", 161509 },	-- Lady Moonberry
-						["coord"] = { 44.0, 37.1, 1701 },	-- The Trunk
+						["coord"] = { 44.0, 37.1, THE_TRUNK },
 					}),
 					q(59063, {	-- Curses!
 						["sourceQuests"] = { 59725 },	-- Archivist on the Edge
@@ -413,17 +413,17 @@ _.ExpansionFeatures =
 					q(59068, {	-- A Secret Never Spoken
 						["sourceQuests"] = { 59063 },	-- Curses!
 						["provider"] = { "n", 161509 },	-- Lady Moonberry
-						["coord"] = { 44.0, 37.1, 1701 },	-- The Trunk
+						["coord"] = { 44.0, 37.1, THE_TRUNK },
 					}),
 					q(59070, {	-- A Sacrifice of Anima
 						["sourceQuests"] = { 59063 },	-- Curses!
 						["provider"] = { "n", 161509 },	-- Lady Moonberry
-						["coord"] = { 44.0, 37.1, 1701 },	-- The Trunk
+						["coord"] = { 44.0, 37.1, THE_TRUNK },
 					}),
 					q(59069, {	-- A Token of Lost Love
 						["sourceQuests"] = { 59063 },	-- Curses!
 						["provider"] = { "n", 160262 },	-- Ysera
-						["coord"] = { 44.7, 39.0, 1701 },	-- The Trunk
+						["coord"] = { 44.7, 39.0, THE_TRUNK },
 					}),
 					q(59071, {	-- Mending a Broken Hart
 						["sourceQuests"] = {
@@ -432,7 +432,7 @@ _.ExpansionFeatures =
 							59069,	-- A Token of Lost Love
 						},
 						["provider"] = { "n", 161509 },	-- Lady Moonberry
-						["coord"] = { 44.0, 37.1, 1701 },	-- The Trunk
+						["coord"] = { 44.0, 37.1, THE_TRUNK },
 						["g"] = {
 							i(181301),	-- Faewoven Branches
 							i(182172),	-- Equine Soul
@@ -442,14 +442,14 @@ _.ExpansionFeatures =
 					--	TODO: this SQ is wrong, but i'm not sure what the exact prereq is.  i hadn't done 'mending a broken heart,' but i had just done a 'return lost souls' weekly and gotten to 12 Renown when this appeared.  so maybe a strict renown unlock? - quest text says "you have gathered enough anima," so maybe tied to turning in anima weeklies or something?
 						["sourceQuests"] = { 59071 },	-- Mending a Broken Hart
 						["provider"] = { "n", 161509 },	-- Lady Moonberry
-						["coord"] = { 47.4, 36.1, 1701 },
+						["coord"] = { 47.4, 36.1, THE_TRUNK },
 					}),
 
 					-- Chapter 6: Drust to Drust (Renown 13 required to start)
 					q(60898, {	-- The Fate of Ara'lon
 						["sourceQuests"] = { 62560 },	-- Growing in Power
 						["provider"] = { "n", 158544 },	-- Lord Herne
-						["coord"] = { 40.9, 72.4, 1701 },	-- The Trunk
+						["coord"] = { 40.9, 72.4, THE_TRUNK },
 					}),
 					q(60910, {	-- Masks of Deception
 						["sourceQuests"] = { 60898 },	-- The Fate of Ara'lon
@@ -475,7 +475,7 @@ _.ExpansionFeatures =
 					q(61061, {	-- Ulfar's Guidance
 						["sourceQuests"] = { 60934 },	-- Report to Lord Herne
 						["provider"] = { "n", 171138 },	-- Ysera
-						["coord"] = { 53.2, 78.3, 1701 },
+						["coord"] = { 53.2, 78.3, THE_TRUNK },
 					}),
 					q(61076, {	-- Into the Flame
 						["sourceQuests"] = { 61061 },	-- Ulfar's Guidance
@@ -490,7 +490,7 @@ _.ExpansionFeatures =
 					q(61113, {	-- Kivarr's Den
 						["sourceQuests"] = { 61102 },	-- Kivarr the Thornspeaker
 						["provider"] = { "n", 170848 },	-- Lord Herne
-						["coord"] = { 50.9, 80.8, 1701 },	-- The Trunk
+						["coord"] = { 50.9, 80.8, THE_TRUNK },
 					}),
 					q(61701, {	-- Searching the Grove
 						["sourceQuests"] = { 61113 },	-- Kivarr's Den
@@ -557,12 +557,12 @@ _.ExpansionFeatures =
 					q(58445, {	-- Containing the Night
 						["sourceQuests"] = { 61171 },	-- Unbroken Bonds
 						["provider"] = { "n", 160262 },	-- Ysera
-						["coord"] = { 44.5, 39.1, 1701 }, -- The Trunk
+						["coord"] = { 44.5, 39.1, THE_TRUNK },
 					}),
 					q(58446, {	-- Tracker Tracking
 						["sourceQuests"] = { 58445 },	-- Containing the Night
 						["provider"] = { "n", 160262 },	-- Ysera
-						["coord"] = { 44.5, 39.1, 1701 }, -- The Trunk
+						["coord"] = { 44.5, 39.1, THE_TRUNK },
 					}),
 					q(59258, {	-- Home of the Tirnenn
 						["sourceQuests"] = { 58446 },	-- Tracker Tracking
@@ -619,7 +619,7 @@ _.ExpansionFeatures =
 					q(59731, {	-- An Expected Guest
 						["sourceQuests"] = { 58452 },	-- Tracking the Shadows
 						["provider"] = { "n", 160262 },	-- Ysera
-						["coord"] = { 44.5, 39.1, 1701 },
+						["coord"] = { 44.5, 39.1, THE_TRUNK },
 					}),
 					q(59732, {	-- Something Extra for the Winter Queen
 						["sourceQuests"] = { 59731 },	-- An Expected Guest
@@ -692,7 +692,7 @@ _.ExpansionFeatures =
 					q(60189, {	-- We Strike Now
 						["sourceQuests"] = { 59866 },	-- Parting Ways
 						["provider"] = { "n", 160262 },	-- Ysera
-						["coord"] = { 44.5, 39.1, 1701 },	-- The Trunk
+						["coord"] = { 44.5, 39.1, THE_TRUNK },
 					}),
 					q(60190, {	-- Assault on Darkreach
 						["sourceQuests"] = { 60189 },	-- We Strike Now

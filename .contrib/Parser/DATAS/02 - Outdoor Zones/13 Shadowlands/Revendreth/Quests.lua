@@ -948,7 +948,7 @@ _.Zones =
 				q(64437, {	-- Inform the Primus
 					["sourceQuests"] = { 63683 },	-- Winter's Sigil
 					["provider"] = { "n", 177434 },	-- Ysera
-					["coord"] = { 47.8, 53.6, 1701 },	-- Heart of the Forest
+					["coord"] = { 47.8, 53.6, THE_TRUNK },	-- Heart of the Forest
 				}),
 				q(63679, {	-- Magical Mystery Tour!
 					["sourceQuests"] = { 63678 },	-- Akarek Avenged

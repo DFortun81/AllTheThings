@@ -8,9 +8,9 @@ _.ExpansionFeatures =
 		n(-929, {	-- Covenant: Night Fae
 			["customCollect"] = "SL_COV_NFA",	-- Night Fae
 			["maps"] = {
-				1701,	-- Heart of the Forest (The Trunk)
-				1702,	-- Heart of the Forest (The Roots)
-				1703,	-- Heart of the Forest (The Canopy
+				THE_TRUNK,	-- Heart of the Forest
+				THE_ROOTS,	-- Heart of the Forest
+				THE_CANOPY,	-- Heart of the Forest
 			},
 			["g"] = {
 				n(-901, sharedData({	-- Covenant Callings
@@ -21,7 +21,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 62697 },	-- A Call to Service
 						["description"] = "Will only be offered as the initial 'Calling' during the Covenant introduction.",
 						["provider"] = { "n", 165702 },	-- Blodwyn
-						["coord"] = { 53.8, 6.2, 1701 },	-- The Trunk
+						["coord"] = { 53.8, 6.2, THE_TRUNK },
 						["g"] = {
 							i(181475),	-- Bounty of the Grove Wardens
 						},
@@ -35,14 +35,14 @@ _.ExpansionFeatures =
 					}),
 					q(60421, {	-- A Call to Revendreth
 						["provider"] = { "n", 167193 },	-- Featherlight
-						["coord"] = { 59.9, 32.4, 1701 },	-- The Trunk
+						["coord"] = { 59.9, 32.4, THE_TRUNK },
 						["g"] = {
 							i(181556),	-- Tribute of the Court
 						},
 					}),
 					q(60420, {	-- A Call to Maldraxxus
 						["provider"] = { "n", 167193 },	-- Featherlight
-						["coord"] = { 59.9, 32.1, 1701 },	-- The Trunk
+						["coord"] = { 59.9, 32.1, THE_TRUNK },
 						["g"] = {
 							i(181732),	-- Tribute of the Ambitious
 						},
@@ -63,14 +63,14 @@ _.ExpansionFeatures =
 					}),
 					q(60381, {	-- Aiding Ardenweald
 						["provider"] = { "n", 167195 },	-- Blodwyn
-						["coord"] = { 53.7, 6.20, 1701 },	-- The Trunk
+						["coord"] = { 53.7, 6.20, THE_TRUNK },
 						["g"] = {
 							i(181475),	-- Bounty of the Grove Wardens
 						},
 					}),
 					q(60384, {	-- Aiding Bastion
 						["provider"] = { "n", 167195 },	-- Blodwyn
-						["coord"] = { 53.7, 6.53, 1701 },	-- The Trunk
+						["coord"] = { 53.7, 6.53, THE_TRUNK },
 						["g"] = {
 							i(181372),	-- Tribute of the Ascended
 						},
@@ -84,7 +84,7 @@ _.ExpansionFeatures =
 					}),
 					q(60382, {	-- Aiding Revendreth
 						["provider"] = { "n", 167195 },	-- Blodwyn
-						["coord"] = { 53.7, 6.42, 1701 },	-- The Trunk
+						["coord"] = { 53.7, 6.42, THE_TRUNK },
 						["g"] = {
 							i(181556),	-- Tribute of the Court
 						},
@@ -112,21 +112,21 @@ _.ExpansionFeatures =
 					}),
 					q(60438, {	-- Challenges in Ardenweald
 						["provider"] = { "n", 167206 },	-- Yanlar
-						["coord"] = { 37.0, 25.3, 1701 },	-- The Trunk
+						["coord"] = { 37.0, 25.3, THE_TRUNK },
 						["g"] = {
 							i(181476),	-- Tribute of the Wild Hunt
 						},
 					}),
 					q(60437, {	-- Challenges in Bastion
 						["provider"] = { "n", 167206 },	-- Yanlar
-						["coord"] = { 37.1, 25.5, 1701 },	-- The Trunk
+						["coord"] = { 37.1, 25.5, THE_TRUNK },
 						["g"] = {
 							i(181741),	-- Tribute of the Paragon
 						},
 					}),
 					q(60436, {	-- Challenges in Maldraxxus
 						["provider"] = { "n", 167206 },	-- Yanlar
-						["coord"] = { 37.1, 25.5, 1701 },	-- The Trunk
+						["coord"] = { 37.1, 25.5, THE_TRUNK },
 						["g"] = {
 							i(181733),	-- Tribute of the Duty-Bound
 						},
@@ -154,42 +154,42 @@ _.ExpansionFeatures =
 					}),
 					q(60452, {	-- Storm the Maw
 						["provider"] = { "n", 158553 },	-- Flutterby
-						["coord"] = { 33.9, 43.5, 1701 },	-- The Trunk
+						["coord"] = { 33.9, 43.5, THE_TRUNK },
 						["g"] = {
 							i(181476),	-- Tribute of the Wild Hunt
 						},
 					}),
 					q(60388, {	-- Training Our Forces
 						["provider"] = { "n", 158544 },	-- Lord Herne
-						["coord"] = { 38.5, 70.7, 1701 },	-- The Trunk
+						["coord"] = { 38.5, 70.7, THE_TRUNK },
 						["g"] = {
 							i(181475),	-- Bounty of the Grove Wardens
 						},
 					}),
 					q(60387, {	-- Training in Bastion
 						["provider"] = { "n", 158544 },	-- Lord Herne
-						["coord"] = { 40.1, 71.5, 1701 },	-- The Trunk
+						["coord"] = { 40.1, 71.5, THE_TRUNK },
 						["g"] = {
 							i(181372),	-- Tribute of the Ascended
 						},
 					}),
 					q(60386, {	-- Training in Maldraxxus
 						["provider"] = { "n", 158544 },	-- Lord Herne
-						["coord"] = { 42.0, 73.5, 1701 },	-- The Trunk
+						["coord"] = { 42.0, 73.5, THE_TRUNK },
 						["g"] = {
 							i(181732),	-- Tribute of the Ambitious
 						},
 					}),
 					q(60385, {	-- Training in Revendreth
 						["provider"] = { "n", 158544 },	-- Lord Herne
-						["coord"] = { 40.9, 72.4, 1701 },	-- The Trunk
+						["coord"] = { 40.9, 72.4, THE_TRUNK },
 						["g"] = {
 							i(181556),	-- Tribute of the Court
 						},
 					}),
 					q(60419, {	-- Troubles at Home
 						["provider"] = { "n", 167193 },	-- Featherlight
-						["coord"] = { 59.7, 31.3, 1701 },	-- The Trunk
+						["coord"] = { 59.7, 31.3, THE_TRUNK },
 						["g"] = {
 							i(181475),	-- Bounty of the Grove Wardens
 						},
