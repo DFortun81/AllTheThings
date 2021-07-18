@@ -1949,3 +1949,6 @@ profession(ARCHAEOLOGY, {
 		}),
 	}),
 });
+_.HiddenQuestTriggers = {
+	q(33823),	-- Tracking Quest - Archaeology - Frostfire - Dig Map #1
+};

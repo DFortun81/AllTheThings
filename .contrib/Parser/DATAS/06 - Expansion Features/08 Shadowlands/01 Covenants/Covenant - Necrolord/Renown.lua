@@ -66,7 +66,7 @@ _.HiddenQuestTriggers = {
 	-- q( ),	-- hitting Renown 48 [Paladin] (received Memory of ??)
 	-- q( ),	-- hitting Renown 48 [Priest] (received Memory of ??)
 	-- q( ),	-- hitting Renown 48 [Rogue] (received Memory of ??)
-	-- q( ),	-- hitting Renown 48 [Shaman] (received Memory of the Raging Vesper Vortex)
+	q(64384),	-- hitting Renown 48 [Shaman] (received Memory of the Splintered Elementals)
 	-- q( ),	-- hitting Renown 48 [Warlock] (received Memory of ??)
 	-- q( ),	-- hitting Renown 48 [Warrior] (received Memory of ??)
 	q(64100),	-- hitting Renown 50

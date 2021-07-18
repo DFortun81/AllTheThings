@@ -83,7 +83,10 @@ _.Zones =
 					["provider"] = { "n", 79576 },	-- Rangari D'kaan
 					["coord"] = { 63.5, 61.8, 550 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 34596,	-- Reglakk's Research
+					["sourceQuests"] = {
+						34596,	-- Reglakk's Research
+						34957,	-- Challenge of the Masters
+					},
 					["isBreadcrumb"] = true,
 				}),
 				q(35095, {	-- Along the Riverside
