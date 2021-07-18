@@ -7,7 +7,7 @@ _.ExpansionFeatures =
 	tier(9, {	-- Shadowlands
 		n(-920, {	-- Covenant: Necrolord
 			["customCollect"] = "SL_COV_NEC",	-- Necrolord
-			["maps"] = { 1698 },	-- Seat of the Primus
+			["maps"] = { SEAT_OF_THE_PRIMUS },
 			["g"] = {
 				n(-921, {	-- Sanctum Upgrades
 					n(-923, {	-- Abomination Factory
@@ -125,7 +125,7 @@ _.ExpansionFeatures =
 								q(63058, {	-- Abominable Stitching and Me
 									-- TODO: is this a breadcrumb to 60041?
 									["provider"] = { "n", 161909 },	-- Arkadia Moa
-									["coord"] = { 52.4, 38.4, 1698 },
+									["coord"] = { 52.4, 38.4, SEAT_OF_THE_PRIMUS },
 									["description"] = "Becomes available after you research Abomination Factory Tier 1 in your sanctum.",
 								}),
 								q(62232, {	-- Arboreal Tactics
@@ -225,7 +225,7 @@ _.ExpansionFeatures =
 								q(58665, {	-- Rebellious Souls
 									["sourceQuests"] = { 59609 },	-- No Rest For the Dead
 									["provider"] = { "n", 162222 },	-- Rathan
-									["coord"] = { 48.0, 50.2, 1698 },	-- Seat of the Primus
+									["coord"] = { 48.0, 50.2, SEAT_OF_THE_PRIMUS },
 								}),
 								q(61509, {	-- Shinies of Bastion
 									["sourceQuests"] = { 60041 },	-- Build-A-Bomination
@@ -646,12 +646,12 @@ _.ExpansionFeatures =
 							q(63057, {	-- Restoring Power
 								["description"] = "Becomes available after you build Anima Conductor tier 1 in your sanctum.",
 								["provider"] = { "n", 161909 },	-- Arkadia Moa
-								["coord"] = { 52.4, 38.4, 1698 },	-- Seat of the Primus
+								["coord"] = { 52.4, 38.4, SEAT_OF_THE_PRIMUS },
 							}),
 							q(60722, {	-- Tower Power
 								["sourceQuests"] = { 63057 },	-- Restoring Power
 								["provider"] = { "n", 167205 },	-- Yondare Hex
-								["coord"] = { 49.0, 36.0, 1698 },	-- Seat of the Primus
+								["coord"] = { 49.0, 36.0, SEAT_OF_THE_PRIMUS },
 							}),
 							o(355035, {	-- Treasure: House of the Chosen -- TODO: proper objectID
 								["description"] = "Becomes accessible when selecting the Anima Conduit to 'The House of the Chosen'\nRequires clicking the 3 Runes in the area to unlock",
@@ -745,7 +745,7 @@ _.ExpansionFeatures =
 							q(64465, {	-- Adventurer: Enceladus
 								["description"] = "Requires Renown 62.",
 								["provider"] = { "n", 165321 },	-- Merick Feldscar
-								["coord"] = { 38.8, 48.2, 1698 },
+								["coord"] = { 38.8, 48.2, SEAT_OF_THE_PRIMUS },
 								["g"] = {
 									follower(1335),	-- Enceladus
 								},
@@ -753,7 +753,7 @@ _.ExpansionFeatures =
 							q(64466, {	-- Adventurer: Deathfang
 								["description"] = "Requires Renown 71.",
 								["provider"] = { "n", 165321 },	-- Merick Feldscar
-								["coord"] = { 38.8, 48.2, 1698 },
+								["coord"] = { 38.8, 48.2, SEAT_OF_THE_PRIMUS },
 								["g"] = {
 									follower(1336),	-- Deathfang
 								},
@@ -761,7 +761,7 @@ _.ExpansionFeatures =
 							q(62312, {	-- Adventurer: Gunn Gorgebone
 								["description"] = "Requires Renown 12.",
 								["provider"] = { "n", 165321 },	-- Merick Feldscar
-								["coord"] = { 38.8, 48.2, 1698 },
+								["coord"] = { 38.8, 48.2, SEAT_OF_THE_PRIMUS },
 								["g"] = {
 									follower(1301),	-- Gunn Gorgebone
 								},
@@ -769,7 +769,7 @@ _.ExpansionFeatures =
 							q(62314, {	-- Adventurer: Khaliiq
 								["description"] = "Requires Renown 27.",
 								["provider"] = { "n", 165321 },	-- Merick Feldscar
-								["coord"] = { 38.8, 48.2, 1698 },
+								["coord"] = { 38.8, 48.2, SEAT_OF_THE_PRIMUS },
 								["g"] = {
 									follower(1303),	-- Khaliiq
 								},
@@ -777,7 +777,7 @@ _.ExpansionFeatures =
 							q(64464, {	-- Adventurer: Lyra Hailstorm
 								["description"] = "Requires Renown 44.",
 								["provider"] = { "n", 165321 },	-- Merick Feldscar
-								["coord"] = { 38.8, 48.2, 1698 },
+								["coord"] = { 38.8, 48.2, SEAT_OF_THE_PRIMUS },
 								["g"] = {
 									follower(1334),	-- Lyra Hailstorm
 								},
@@ -785,7 +785,7 @@ _.ExpansionFeatures =
 							q(62315, {	-- Adventurer: Plaguey
 								["description"] = "Requires Renown 33.",
 								["provider"] = { "n", 165321 },	-- Merick Feldscar
-								["coord"] = { 38.8, 48.2, 1698 },
+								["coord"] = { 38.8, 48.2, SEAT_OF_THE_PRIMUS },
 								["g"] = {
 									follower(1304),	-- Plaguey
 								},
@@ -793,7 +793,7 @@ _.ExpansionFeatures =
 							q(62316, {	-- Adventurer: Rathan
 								["description"] = "Requires Renown 38.",
 								["provider"] = { "n", 165321 },	-- Merick Feldscar
-								["coord"] = { 38.8, 48.2, 1698 },
+								["coord"] = { 38.8, 48.2, SEAT_OF_THE_PRIMUS },
 								["g"] = {
 									follower(1305),	-- Rathan
 								},
@@ -801,7 +801,7 @@ _.ExpansionFeatures =
 							q(62313, {	-- Adventurer: Rencissa the Dynamo
 								["description"] = "Requires Renown 17.",
 								["provider"] = { "n", 165321 },	-- Merick Feldscar
-								["coord"] = { 38.8, 48.2, 1698 },
+								["coord"] = { 38.8, 48.2, SEAT_OF_THE_PRIMUS },
 								["g"] = {
 									follower(1302),	-- Rencissa the Dynamo
 								},
@@ -810,7 +810,7 @@ _.ExpansionFeatures =
 								["sourceQuests"] = { 59603 },	-- In Shadowlands Service
 								["description"] = "Requires Renown 4.",
 								["provider"] = { "n", 165321 },	-- Merick Feldscar
-								["coord"] = { 38.8, 48.2, 1698 },
+								["coord"] = { 38.8, 48.2, SEAT_OF_THE_PRIMUS },
 								["g"] = {
 									follower(1300),	-- Secutor Mevix
 								},
@@ -818,11 +818,11 @@ _.ExpansionFeatures =
 							q(59603, {	-- In Shadowlands Service
 								["sourceQuests"] = { 63054 },	-- Strength in Numbers
 								["provider"] = { "n", 165321 },	-- Merick Feldscar
-								["coord"] = { 38.8, 48.2, 1698 },
+								["coord"] = { 38.8, 48.2, SEAT_OF_THE_PRIMUS },
 							}),
 							q(63054, {	-- Strength in Numbers
 								["provider"] = { "n", 161909 },	-- Arkadia Moa
-								["coord"] = { 52.4, 38.4, 1698 },
+								["coord"] = { 52.4, 38.4, SEAT_OF_THE_PRIMUS },
 								["description"] = "Becomes available after you build Command Table tier 1 in your sanctum.",
 							}),
 						}),
@@ -834,11 +834,11 @@ _.ExpansionFeatures =
 							q(63059, {	-- Blink of an Eye
 								["sourceQuests"] = { 63055 },	-- Powering the Portals
 								["provider"] = { "n", 175963 },	-- Serafina Von
-								["coord"] = { 59.8, 31.8, 1698 },
+								["coord"] = { 59.8, 31.8, SEAT_OF_THE_PRIMUS },
 							}),
 							q(63055, {	-- Powering the Portals
 								["provider"] = { "n", 161909 },	-- Arkadia Moa
-								["coord"] = { 52.4, 38.4, 1698 },
+								["coord"] = { 52.4, 38.4, SEAT_OF_THE_PRIMUS },
 								["description"] = "Becomes available after you build Transport Network tier 1 in your sanctum.",
 							}),
 						-- Tier 2: A Keep Above

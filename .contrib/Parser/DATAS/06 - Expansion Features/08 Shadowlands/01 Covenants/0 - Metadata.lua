@@ -12,7 +12,7 @@ _.ExpansionFeatures =
 				ELYSIAN_HOLD_ARCHONS_RISE,
 				1708,	-- Elysian Hold
 				-- Necrolord
-				1698,	-- Seat of the Primus
+				SEAT_OF_THE_PRIMUS,
 				-- Night Fae
 				1701,	-- Heart of the Forest - The Trunk
 				1702,	-- Heart of the Forest - The Roots

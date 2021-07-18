@@ -7,7 +7,7 @@ _.ExpansionFeatures =
 	tier(9, {	-- Shadowlands
 		n(-920, {	-- Covenant: Necrolord
 			["customCollect"] = "SL_COV_NEC",	-- Necrolord
-			["maps"] = { 1698 },	-- Seat of the Primus
+			["maps"] = { SEAT_OF_THE_PRIMUS },
 			["g"] = {
 				n(ACHIEVEMENTS, {
 					ach(14763),		-- Crypt Couture

@@ -7,7 +7,7 @@ _.ExpansionFeatures =
 	tier(9, {	-- Shadowlands
 		n(-920, {	-- Covenant: Necrolord
 			["customCollect"] = "SL_COV_NEC",	-- Necrolord
-			["maps"] = { 1698 },	-- Seat of the Primus
+			["maps"] = { SEAT_OF_THE_PRIMUS },
 			["g"] = {
 				n(-901, sharedData({	-- Covenant Callings
 						["sourceQuests"] = { 59609 },	-- No Rest For the Dead
@@ -17,14 +17,14 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 62835 },	-- A Call to Service
 						["description"] = "Will only be offered as the initial 'Calling' during the Covenant introduction.",
 						["provider"] = { "n", 158339 },	-- Sergeant Romark
-						["coord"] = { 47.7, 29.1, 1698 },	-- Seat of the Primus
+						["coord"] = { 47.7, 29.1, SEAT_OF_THE_PRIMUS },
 						["g"] = {
 							i(181732),	-- Tribute of the Ambitious
 						},
 					}),
 					q(60423, {	-- A Call to Ardenweald
 						["provider"] = { "n", 167210 },	-- Tabulator Killham
-						["coord"] = { 59.6, 43.5, 1698 },
+						["coord"] = { 59.6, 43.5, SEAT_OF_THE_PRIMUS },
 						["g"] = {
 							i(181475),	-- Bounty of the Grove Wardens
 						},
@@ -94,7 +94,7 @@ _.ExpansionFeatures =
 					}),
 					q(60459, {	-- Anima Salvage
 						["provider"] = { "n", 167207 },	-- Sabbath Nightshade
-						["coord"] = { 43.2, 47.8, 1698 },
+						["coord"] = { 43.2, 47.8, SEAT_OF_THE_PRIMUS },
 						["g"] = {
 							i(181732),	-- Tribute of the Ambitious
 						},
@@ -108,28 +108,28 @@ _.ExpansionFeatures =
 					}),
 					q(60440, {	-- Challenges in Ardenweald
 						["provider"] = { "n", 167208 },	-- Grandmaster Vole
-						["coord"] = { 56.5, 44.0, 1698 },
+						["coord"] = { 56.5, 44.0, SEAT_OF_THE_PRIMUS },
 						["g"] = {
 							i(181733),	-- Tribute of the Duty-Bound
 						},
 					}),
 					q(60443, {	-- Challenges in Bastion
 						["provider"] = { "n", 167208 },	-- Grandmaster Vole
-						["coord"] = { 56.5, 44.0, 1698 },
+						["coord"] = { 56.5, 44.0, SEAT_OF_THE_PRIMUS },
 						["g"] = {
 							i(181733),	-- Tribute of the Duty-Bound
 						},
 					}),
 					q(60445, {	-- Challenges in Maldraxxus
 						["provider"] = { "n", 167208 },	-- Grandmaster Vole
-						["coord"] = { 56.5, 44.0, 1698 },
+						["coord"] = { 56.5, 44.0, SEAT_OF_THE_PRIMUS },
 						["g"] = {
 							i(181733),	-- Tribute of the Duty-Bound
 						},
 					}),
 					q(60449, {	-- Challenges in Revendreth
 						["provider"] = { "n", 167208 },	-- Grandmaster Vole
-						["coord"] = { 56.5, 44.0, 1698 },
+						["coord"] = { 56.5, 44.0, SEAT_OF_THE_PRIMUS },
 						["g"] = {
 							i(181733),	-- Tribute of the Duty-Bound
 						},
@@ -150,7 +150,7 @@ _.ExpansionFeatures =
 					}),
 					q(60455, {	-- Storm the Maw
 						["provider"] = { "n", 167207 },	-- Sabbath Nightshade
-						["coord"] = { 43.2, 47.8, 1698 },
+						["coord"] = { 43.2, 47.8, SEAT_OF_THE_PRIMUS },
 						["g"] = {
 							i(181733),	-- Tribute of the Duty-Bound
 						},

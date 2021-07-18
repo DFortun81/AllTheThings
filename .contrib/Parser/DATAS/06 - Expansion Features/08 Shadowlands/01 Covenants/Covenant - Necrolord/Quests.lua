@@ -7,7 +7,7 @@ _.ExpansionFeatures =
 	tier(9, {	-- Shadowlands
 		n(-920, {	-- Covenant: Necrolord
 			["customCollect"] = "SL_COV_NEC",	-- Necrolord
-			["maps"] = { 1698 },	-- Seat of the Primus
+			["maps"] = { SEAT_OF_THE_PRIMUS },
 			["g"] = {
 				n(QUESTS, sharedData({
 					["customCollect"] = { "SL_COV_NEC", },	-- Necrolord
@@ -15,7 +15,7 @@ _.ExpansionFeatures =
 					q(62835, {	-- A Call to Service
 						["sourceQuests"] = { 62834 },	-- Glorious Ambition
 						["provider"] = { "n", 175998 },	-- Elspeth Larink
-						["coord"] = { 46.7, 40.4, 1698 },	-- Seat of the Primus
+						["coord"] = { 46.7, 40.4, SEAT_OF_THE_PRIMUS },
 					}),
 					q(58472, {	-- A Farewell to Arms
 						["sourceQuests"] = { 58523 },	-- You're Dead To Me
@@ -38,12 +38,12 @@ _.ExpansionFeatures =
 						-- TODO: Draka offers an alternate 'skip' option with this quest... not sure what that triggers
 						["sourceQuests"] = { 61359 },	-- Power of the Primus
 						["provider"] = { "n", 165182 },	-- Baroness Draka
-						["coord"] = { 49.7, 43.4, 1698 },	-- Seat of the Primus
+						["coord"] = { 49.7, 43.4, SEAT_OF_THE_PRIMUS },
 					}),
 					q(61388, {	-- A Journey Made Together
 						["sourceQuests"] = { 59597 },	-- Come On, We're Simpatico!
 						["provider"] = { "n", 161904 },	-- Plague Deviser Marileth
-						["coord"] = { 38.8, 32.4, 1698 },	-- Seat of the Primus
+						["coord"] = { 38.8, 32.4, SEAT_OF_THE_PRIMUS },
 						["g"] = {
 							follower(1261),	-- Plague Deviser Marileth
 						},
@@ -52,7 +52,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 62161 },	-- Blood from a Bone
 						["description"] = "Requires Renown 17.",
 						["provider"] = { "n", 161907 },	-- Baroness Draka
-						["coord"] = { 49.8, 50.6, 1698 },	-- Seat of the Primus
+						["coord"] = { 49.8, 50.6, SEAT_OF_THE_PRIMUS },
 					}),
 					q(59659, {	-- Aerial Absolution
 						["sourceQuests"] = { 59653 },	-- Don't Cross Courage
@@ -91,7 +91,7 @@ _.ExpansionFeatures =
 					q(62839, {	-- Anima is Strength
 						["sourceQuests"] = { 62835 },	-- A Call to Service
 						["provider"] = { "n", 158339 },	-- Sergeant Romark
-						["coord"] = { 47.7, 29.1, 1698 },	-- Seat of the Primus
+						["coord"] = { 47.7, 29.1, SEAT_OF_THE_PRIMUS },
 					}),
 					q(58820, {	-- Bindings of Fleshcrafting
 						["sourceQuests"] = {
@@ -99,7 +99,7 @@ _.ExpansionFeatures =
 							61869,	-- Search the Place
 						},
 						["provider"] = { "n", 161907 },	-- Baroness Draka
-						["coord"] = { 49.7, 50.7, 1698 },	-- Seat of the Primus
+						["coord"] = { 49.7, 50.7, SEAT_OF_THE_PRIMUS },
 						["g"] = {
 							i(182275),	-- Bladesworn Conjurer's Wristwraps
 							i(182257),	-- Bladesworn Harbinger's Vambraces
@@ -114,12 +114,12 @@ _.ExpansionFeatures =
 					q(62161, {	-- Blood from a Bone
 						["sourceQuests"] = { 57636 },	-- Pride of Place
 						["provider"] = { "n", 161907 },	-- Baroness Draka
-						["coord"] = { 49.8, 50.6, 1698 },	-- Seat of the Primus
+						["coord"] = { 49.8, 50.6, SEAT_OF_THE_PRIMUS },
 					}),
 					q(62845, {	-- Bringing It All Together
 						["sourceQuests"] = { 62844 },	-- Return to Draka
 						["provider"] = { "n", 161907 },	-- Baroness Draka
-						["coord"] = { 49.7, 50.1, 1698 },	-- Seat of the Primus
+						["coord"] = { 49.7, 50.1, SEAT_OF_THE_PRIMUS },
 						["g"] = {
 							i(182272),	-- Bladesworn Conjurer's Leggings
 							i(182254),	-- Bladesworn Harbinger's Greaves
@@ -155,7 +155,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 62391 },	-- Mobilize Maldraxxus
 						["description"] = "Requires Renown 20.",
 						["provider"] = { "n", 161907 },	-- Baroness Draka
-						["coord"] = { 49.6, 50.6, 1698 },	-- Seat of the Primus
+						["coord"] = { 49.6, 50.6, SEAT_OF_THE_PRIMUS },
 					}),
 					q(61746, {	-- Cantrip Collections
 						["sourceQuests"] = { 61745 },	-- Mistress of Tomes
@@ -191,7 +191,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 62846 },	-- Sanctum Improvements
 						["altQuests"] = { 63003 },	-- Collective Soul
 						["provider"] = { "n", 161909 },	-- Arkadia Moa <Sanctum Upgrades>
-						["coord"] = { 52.4, 38.4, 1698 },	-- Seat of the Primus
+						["coord"] = { 52.4, 38.4, SEAT_OF_THE_PRIMUS },
 					}),
 					q(63003, {	-- Collective Soul
 						["sourceQuests"] = { 62846 },	-- Sanctum Improvements
@@ -201,12 +201,12 @@ _.ExpansionFeatures =
 					q(59597, {	-- Come On, We're Simpatico!
 						["sourceQuests"] = { 59596, 63003 },	-- Collective Soul
 						["provider"] = { "n", 161904 },	-- Plague Deviser Marileth
-						["coord"] = { 38.8, 32.4, 1698 },	-- Seat of the Primus
+						["coord"] = { 38.8, 32.4, SEAT_OF_THE_PRIMUS },
 					}),
 					q(62848, {	-- Conduits, What Are They For?
 						["sourceQuests"] = { 61388 },	-- A Journey Made Together
 						["provider"] = { "n", 161904 },	-- Plague Deviser Marileth
-						["coord"] = { 38.8, 32.4, 1698 },	-- Seat of the Primus
+						["coord"] = { 38.8, 32.4, SEAT_OF_THE_PRIMUS },
 					}),
 					q(61551, {	-- Crush 'Em All
 						["sourceQuests"] = { 61548 },	-- Set Me Free
@@ -274,7 +274,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 62448 },	-- Securing the House
 						["description"] = "Requires Renown 5.",
 						["provider"] = { "n", 161907 },	-- Baroness Draka
-						["coord"] = { 49.6, 50.7, 1698 },	-- Seat of the Primus
+						["coord"] = { 49.6, 50.7, SEAT_OF_THE_PRIMUS },
 						["g"] = {
 							i(182077),		-- War-Bred Tauralus (MOUNT!)
 						},
@@ -300,7 +300,7 @@ _.ExpansionFeatures =
 					q(58007, {	-- Eyes on the Problem
 						["sourceQuests"] = { 59555 },	-- Enemy at the Door
 						["provider"] = { "n", 161907 },	-- Baroness Draka
-						["coord"] = { 49.7, 50.6, 1698 },	-- Seat of the Primus
+						["coord"] = { 49.7, 50.6, SEAT_OF_THE_PRIMUS },
 					}),
 					q(62169, {	-- Eyes to the Sky
 						["sourceQuests"] = { 57648, },	-- The Impossible Plan
@@ -326,7 +326,7 @@ _.ExpansionFeatures =
 					q(62834, {	-- Glorious Ambition
 						["sourceQuests"] = { 62833 },	-- A Hero of Great Renown
 						["provider"] = { "n", 175998 },	-- Elspeth Larink
-						["coord"] = { 46.7, 40.4, 1698 },	-- Seat of the Primus
+						["coord"] = { 46.7, 40.4, SEAT_OF_THE_PRIMUS },
 					}),
 					q(59722, {	-- Grand Theft Necropolis
 						["sourceQuests"] = { 61594 },	-- This Way Out
@@ -346,7 +346,7 @@ _.ExpansionFeatures =
 					q(62388, {	-- House of Rituals
 						["sourceQuests"] = { 58624 },	-- Pauldrons of Imperium
 						["provider"] = { "n", 161907 },	-- Baroness Draka
-						["coord"] = { 49.8, 50.6, 1698 },	-- Seat of the Primus
+						["coord"] = { 49.8, 50.6, SEAT_OF_THE_PRIMUS },
 					}),
 					q(61485, {	-- I'll Only Say This Once
 						["sourceQuests"] = { 57778 },	-- The Maldraxxian Job
@@ -360,7 +360,7 @@ _.ExpansionFeatures =
 					q(62840, {	-- Into the Reservoir
 						["sourceQuests"] = { 62839 },	-- Anima is Strength
 						["provider"] = { "n", 161909 },	-- Arkadia Moa
-						["coord"] = { 52.4, 38.4, 1698 },	-- Seat of the Primus
+						["coord"] = { 52.4, 38.4, SEAT_OF_THE_PRIMUS },
 					}),
 					q(58608, {	-- It's Treason, Then
 						["sourceQuests"] = {
@@ -392,7 +392,7 @@ _.ExpansionFeatures =
 					q(62391, {	-- Mobilize Maldraxxus
 						["sourceQuests"] = { 61761 },	-- The Better Part of Valor
 						["provider"] = { "n", 161907 },	-- Baroness Draka
-						["coord"] = { 49.6, 50.6, 1698 },	-- Seat of the Primus
+						["coord"] = { 49.6, 50.6, SEAT_OF_THE_PRIMUS },
 					}),
 					q(61749, {	-- Necessary Ingredients
 						["sourceQuests"] = { 61748 },	-- The Hall of Tomes
@@ -402,27 +402,27 @@ _.ExpansionFeatures =
 					q(63343, {	-- Necrolord Tactician
 						["description"] = "Requires Renown 22.",
 						["provider"] = { "n", 175998 },    -- Elspeth Larink
-						["coord"] = { 46.5, 40.2, 1698 },	-- Seat of the Primus
+						["coord"] = { 46.5, 40.2, SEAT_OF_THE_PRIMUS },
 					}),
 					q(64084, {	-- Necrolord Tactician
 						["description"] = "Requires Renown 59.",
 						["provider"] = { "n", 175998 },    -- Elspeth Larink
-						["coord"] = { 46.5, 40.2, 1698 },	-- Seat of the Primus
+						["coord"] = { 46.5, 40.2, SEAT_OF_THE_PRIMUS },
 					}),
 					q(63342, {	-- Necrolord Veteran
 						["description"] = "Requires Renown 7.",
 						["provider"] = { "n", 175998 },    -- Elspeth Larink
-						["coord"] = { 46.5, 40.2, 1698 },	-- Seat of the Primus
+						["coord"] = { 46.5, 40.2, SEAT_OF_THE_PRIMUS },
 					}),
 					q(64324, {	-- Necrolord Veteran #2
 						["description"] = "Requires Renown 43.",
 						["provider"] = { "n", 175998 },    -- Elspeth Larink
-						["coord"] = { 46.5, 40.2, 1698 },	-- Seat of the Primus
+						["coord"] = { 46.5, 40.2, SEAT_OF_THE_PRIMUS },
 					}),
 					q(60110, {	-- Never Had A Friend Like Me
 						["sourceQuests"] = { 60049 },	-- At Your Service
 						["provider"] = { "n", 161906 },	-- Emeni <The Slaughter Daughter>
-						["coord"] = { 38.3, 36.7, 1698 },	-- Seat of the Primus
+						["coord"] = { 38.3, 36.7, SEAT_OF_THE_PRIMUS },
 						["g"] = {
 							follower(1263),	-- Emeni
 						},
@@ -450,12 +450,12 @@ _.ExpansionFeatures =
 					q(59609, {	-- No Rest For the Dead
 						["sourceQuests"] = { 62848 },	-- Conduits, What Are They For?
 						["provider"] = { "n", 161904 },	-- Plague Deviser Marileth
-						["coord"] = { 38.8, 32.4, 1698 },	-- Seat of the Primus
+						["coord"] = { 38.8, 32.4, SEAT_OF_THE_PRIMUS },
 					}),
 					q(61397, {	-- Opportunity Strikes
 						["sourceQuests"] = { 62840 },	-- Into the Reservoir
 						["provider"] = { "n", 161909 },	-- Arkadia Moa
-						["coord"] = { 52.4, 38.4, 1698 },	-- Seat of the Primus
+						["coord"] = { 52.4, 38.4, SEAT_OF_THE_PRIMUS },
 					}),
 					q(61230, {	-- Outside Influence
 						["sourceQuests"] = {
@@ -504,12 +504,12 @@ _.ExpansionFeatures =
 					q(61359, {	-- Power of the Primus
 						["sourceQuests"] = { 59556 },	-- Welcome To Our House
 						["provider"] = { "n", 165182 },	-- Baroness Draka
-						["coord"] = { 49.7, 43.4, 1698 },	-- Seat of the Primus
+						["coord"] = { 49.7, 43.4, SEAT_OF_THE_PRIMUS },
 					}),
 					q(57636, {	-- Pride of Place
 						["sourceQuests"] = { 57475 },	-- The Mantle Returned
 						["provider"] = { "n", 161907 },	-- Baroness Draka
-						["coord"] = { 49.8, 50.6, 1698 },	-- Seat of the Primus
+						["coord"] = { 49.8, 50.6, SEAT_OF_THE_PRIMUS },
 						["g"] = {
 							i(182276),	-- Bladesworn Conjurer's Cape
 							i(182258),	-- Bladesworn Harbinger's Greatcloak
@@ -541,13 +541,13 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 59609 },	-- No Rest For the Dead
 						["provider"] = { "n", 161909 },	-- Arkadia Moa <Sanctum Upgrades>
 						["isWeekly"] = true,
-						["coord"] = { 52.4, 38.4, 1698 },	-- Seat of the Primus
+						["coord"] = { 52.4, 38.4, SEAT_OF_THE_PRIMUS },
 					}),
 					q(61333, {	-- Return Lost Souls (5 soul version)
 						["sourceQuests"] = { 59609 },	-- No Rest For the Dead
 						["provider"] = { "n", 167748 },	-- Osbourne Black <Soul Warden>
 						["isWeekly"] = true,
-						["coord"] = { 46.5, 42.2, 1698 },	-- Seat of the Primus
+						["coord"] = { 46.5, 42.2, SEAT_OF_THE_PRIMUS },
 					}),
 					q(62844, {	-- Return to Draka
 						["sourceQuests"] = { 62837 },	-- Hopeful News
@@ -557,7 +557,7 @@ _.ExpansionFeatures =
 					q(62846, {	-- Sanctum Improvements
 						["sourceQuests"] = { 62845 },	-- Bringing It All Together
 						["provider"] = { "n", 161909 },	-- Arkadia Moa <Sanctum Upgrades>
-						["coord"] = { 52.4, 38.4, 1698 },	-- Seat of the Primus
+						["coord"] = { 52.4, 38.4, SEAT_OF_THE_PRIMUS },
 					}),
 					q(61869, {	-- Search the Place
 						["sourceQuests"] = { 61594 },	-- This Way Out
@@ -567,7 +567,7 @@ _.ExpansionFeatures =
 					q(62448, {	-- Securing the House
 						["sourceQuests"] = { 60272 },	-- The Weak Link
 						["provider"] = { "n", 161907 },	-- Baroness Draka
-						["coord"] = { 49.7, 50.6, 1698 },	-- Seat of the Primus
+						["coord"] = { 49.7, 50.6, SEAT_OF_THE_PRIMUS },
 					}),
 					q(61323, {	-- See What You've Done
 						["sourceQuests"] = {
@@ -592,7 +592,7 @@ _.ExpansionFeatures =
 					q(62406, {	-- Staff of the Primus
 						["sourceQuests"] = { 59020 },	-- The Third Fall of Kel'Thuzad
 						["provider"] = { "n", 161907 },	-- Baroness Draka
-						["coord"] = { 49.6, 50.6, 1698 },	-- Seat of the Primus
+						["coord"] = { 49.6, 50.6, SEAT_OF_THE_PRIMUS },
 						["g"] = {
 							i(183893, {["modID"] = 4, }),	-- Abominable Anima Spherule
 							i(183892, {["modID"] = 4, }),	-- Mystic Anima Spherule
@@ -609,7 +609,7 @@ _.ExpansionFeatures =
 					q(61145, {	-- Take The Fight To Them
 						["sourceQuests"] = { 61586 },	-- Machinations of War
 						["provider"] = { "n", 161907 },	-- Baroness Draka
-						["coord"] = { 49.7, 50.7, 1698 },	-- Seat of the Primus
+						["coord"] = { 49.7, 50.7, SEAT_OF_THE_PRIMUS },
 					}),
 					q(58609, {	-- Taking The Seat
 						["sourceQuests"] = {
@@ -659,7 +659,7 @@ _.ExpansionFeatures =
 					q(59894, {	-- The Golden Dawn
 						["sourceQuests"] = { 59922 },	-- Do Not Forget
 						["provider"] = { "n", 161988 },	-- Alexandros Mograine
-						["coord"] = { 49.0, 51.6, 1698 },	-- Seat of the Primus
+						["coord"] = { 49.0, 51.6, SEAT_OF_THE_PRIMUS },
 						["g"] = {
 							i(181803),	-- Bladesworn Battle Standard
 						},
@@ -675,7 +675,7 @@ _.ExpansionFeatures =
 					q(63032, {	-- The Highlord Calls
 						["sourceQuests"] = { 59609 },	-- No Rest For the Dead
 						["provider"] = { "n", 161907 },	-- Baroness Draka
-						["coord"] = { 49.7, 50.6, 1698 },	-- Seat of the Primus
+						["coord"] = { 49.7, 50.6, SEAT_OF_THE_PRIMUS },
 					}),
 					q(57648, {	-- The Impossible Plan
 						["sourceQuests"] = { 61323 },	-- See What You've Done
@@ -696,7 +696,7 @@ _.ExpansionFeatures =
 					q(57778, {	-- The Maldraxxian Job
 						["sourceQuests"] = { 62169, },	-- Eyes to the Sky
 						["provider"] = { "n", 161907 },	-- Baroness Draka
-						["coord"] = { 49.7, 50.6, 1698 },	-- Seat of the Primus
+						["coord"] = { 49.7, 50.6, SEAT_OF_THE_PRIMUS },
 					}),
 					q(57475, {	-- The Mantle Returned
 						["sourceQuests"] = { 57473 },	-- Prized Possession
@@ -707,7 +707,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 58820 },	-- Bindings of Fleshcrafting
 						["description"] = "Requires Renown 11.",
 						["provider"] = { "n", 161988 },	-- Alexandros Mograine
-						["coord"] = { 49.0, 51.6, 1698 },	-- Seat of the Primus
+						["coord"] = { 49.0, 51.6, SEAT_OF_THE_PRIMUS },
 					}),
 					q(61227, {	-- The Other Foot
 						["sourceQuests"] = {
@@ -725,7 +725,7 @@ _.ExpansionFeatures =
 					q(62843, {	-- The Soul Contact
 						["sourceQuests"] = { 61397 },	-- Opportunity Strikes
 						["provider"] = { "n", 167748 },	-- Osbourne Black <Soul Warden>
-						["coord"] = { 46.5, 42.2, 1698 },	-- Seat of the Primus
+						["coord"] = { 46.5, 42.2, SEAT_OF_THE_PRIMUS },
 					}),
 					q(59020, {	-- The Third Fall of Kel'Thuzad
 						["sourceQuests"] = { 58833 },	-- Calling in All Favors
@@ -751,7 +751,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 62388 },	-- House of Rituals
 						["description"] = "Requires Renown 20.",
 						["provider"] = { "n", 173172 },	-- Balmedar
-						["coord"] = { 49.7, 49.8, 1698 },	-- Seat of the Primus
+						["coord"] = { 49.7, 49.8, SEAT_OF_THE_PRIMUS },
 					}),
 					q(61594, {	-- This Way Out
 						["sourceQuests"] = { 61569 },	-- Keys to the Ruin
@@ -770,7 +770,7 @@ _.ExpansionFeatures =
 					q(59556, {	-- Welcome To Our House
 						["sourceQuests"] = { 58609 },	-- Taking The Seat
 						["provider"] = { "n", 158453 },	-- Baroness Draka
-						["coord"] = { 49.5, 21.9, 1698 },	-- Seat of the Primus
+						["coord"] = { 49.5, 21.9, SEAT_OF_THE_PRIMUS },
 					}),
 					q(57649, {	-- Whisper of Hope
 						["sourceQuests"] = { 58007 },	-- Eyes on the Problem
@@ -793,7 +793,7 @@ _.ExpansionFeatures =
 					q(60111, {	-- Forging a Friendship
 						["sourceQuests"] = { 62406 },	-- Staff of the Primus
 						["provider"] = { "n", 161905 },	-- Bonesmith Heirmir
-						["coord"] = { 42.8, 32.2, 1698 },
+						["coord"] = { 42.8, 32.2, SEAT_OF_THE_PRIMUS },
 						["g"] = {
 							follower(1262),	-- Bonesmith Heirmir
 						},
@@ -854,28 +854,28 @@ _.ExpansionFeatures =
 						-- ["sourceQuests"] = {  },	-- TODO
 						["description"] = "Requires Renown 15.",
 						["provider"] = { "n", 167748 },	-- Osbourne Black <Soul Warden>
-						["coord"] = { 46.5, 42.2, 1698 },
+						["coord"] = { 46.5, 42.2, SEAT_OF_THE_PRIMUS },
 						["isWeekly"] = true,
 					}),
 					q(62865, {	-- Return Lost Souls (15 soul version)
 						-- ["sourceQuests"] = {  },	-- TODO
 						["description"] = "Requires Renown 24.",
 						["provider"] = { "n", 167748 },	-- Osbourne Black <Soul Warden>
-						["coord"] = { 46.5, 42.2, 1698 },
+						["coord"] = { 46.5, 42.2, SEAT_OF_THE_PRIMUS },
 						["isWeekly"] = true,
 					}),
 					q(62866, {	-- Return Lost Souls (20 soul version)
 						-- ["sourceQuests"] = {  },	-- TODO
 						["description"] = "Requires Renown 32.",
 						["provider"] = { "n", 167748 },	-- Osbourne Black <Soul Warden>
-						["coord"] = { 46.5, 42.2, 1698 },
+						["coord"] = { 46.5, 42.2, SEAT_OF_THE_PRIMUS },
 						["isWeekly"] = true,
 					}),
 					-- 9.1
 					q(63624, {	-- The Roads We Walk
 						["sourceQuests"] = { 63623 },	-- Filling an Empty Throne
 						["provider"] = { "n", 177975 },	-- The Primus
-						["coord"] = { 49.7, 51.4, 1698 },
+						["coord"] = { 49.7, 51.4, SEAT_OF_THE_PRIMUS },
 					}),
 				})),
 			},
@@ -891,7 +891,7 @@ _.HiddenQuestTriggers = {
 	q(62306),	-- using "Sorcerer's Blade"
 --	Unknown
 	q(60773),	-- Renown 30/Channeling anima
-	
+
 --	Unity Transmog
 	q(63407),	-- Leather Chest
 	q(60782),	-- Renown 41

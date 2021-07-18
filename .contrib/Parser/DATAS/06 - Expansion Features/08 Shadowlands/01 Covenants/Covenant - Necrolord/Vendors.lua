@@ -7,7 +7,7 @@ _.ExpansionFeatures =
 	tier(9, {	-- Shadowlands
 		n(-920, {	-- Covenant: Necrolord
 			["customCollect"] = "SL_COV_NEC",	-- Necrolord
-			["maps"] = { 1698 },	-- Seat of the Primus
+			["maps"] = { SEAT_OF_THE_PRIMUS },
 			["g"] = {
 				n(VENDORS, {
 					n(159238, {	-- Atticus <Supplies & Acquisitions>
@@ -108,7 +108,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					n(175310, {	-- Mellisa Fate <Raid Finder Nathrian Warsmith>
-						["coord"] = { 60.8, 44.3, 1698 },
+						["coord"] = { 60.8, 44.3, SEAT_OF_THE_PRIMUS },
 						["g"] = bubbleDown({
 							["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
 							["modID"] = 4,	-- LFR
@@ -324,7 +324,7 @@ _.ExpansionFeatures =
 						}),
 					}),
 					n(175371, {	-- Mortis Elfsen <Normal Nathrian Warsmith>
-						["coord"] = { 61.1, 45.7, 1698 },
+						["coord"] = { 61.1, 45.7, SEAT_OF_THE_PRIMUS },
 						["g"] = bubbleDown({
 							["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
 							["modID"] = 3,	-- Normal
@@ -541,7 +541,7 @@ _.ExpansionFeatures =
 					}),
 					n(175370, {	-- Odious Gwor <Mythic Nathrian Warsmith>
 						-- TODO: Fill in "cost". Currently it's acting really weird in that the currency displays the itemid of the last item previously hovered over.
-						["coord"] = { 60.5, 48.6, 1698 },
+						["coord"] = { 60.5, 48.6, SEAT_OF_THE_PRIMUS },
 						["g"] = bubbleDown({
 							["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
 							["modID"] = 6,	-- Mythic
@@ -756,7 +756,7 @@ _.ExpansionFeatures =
 						}),
 					}),
 					n(175311, {	-- Slayer Araya <Covenant Armor>
-						["coord"] = { 57.1, 48.3, 1698 },
+						["coord"] = { 57.1, 48.3, SEAT_OF_THE_PRIMUS },
 						["g"] = {
 							i(182276, {	-- Bladesworn Conjurer's Cape
 								["cost"] = { { "c", 1813, 100 } },
@@ -948,7 +948,7 @@ _.ExpansionFeatures =
 					n(172176, {	-- Su Zettai <Renown Quartermaster>
 						["coords"] = {
 							{ 50.68, 71.38, MALDRAXXUS },
-							{ 52.5, 41.2, 1698 },	-- Seat of the Primus
+							{ 52.5, 41.2, SEAT_OF_THE_PRIMUS },
 						},
 						["g"] = sharedData(
 							{ ["customCollect"] = "SL_COV_NEC", }	-- Necrolord
@@ -1298,7 +1298,7 @@ _.ExpansionFeatures =
 						}),
 					}),
 					n(175312, {	-- Taiya Tacere <Heroic Nathrian Warsmith>
-						["coord"] = { 61.2, 47.4, 1698 },
+						["coord"] = { 61.2, 47.4, SEAT_OF_THE_PRIMUS },
 						["g"] = bubbleDown({
 							["customCollect"] = "SL_COV_NEC",	-- Necrolord Covenant
 							["modID"] = 5,	-- Heroic
