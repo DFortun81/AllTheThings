@@ -994,7 +994,7 @@ namespace ATT
             /// <param name="directory">The directory to file the debug files to.</param>
             public static void Export(string directory)
             {
-                var AllContainerClones = new Dictionary<string, List<object>>(AllContainers);
+                var AllContainerClones = new SortedDictionary<string, List<object>>(AllContainers);
                 AllContainerClones.Remove("Uncollectable");
 
                 var filename = Path.Combine(directory, "Categories.lua");
