@@ -115,6 +115,9 @@ _.ExpansionFeatures =
 						i(184646),	-- Hero's Mining Cache
 						i(184645),	-- Hero's Skinning Cache
 						i(184644),	-- Hero's Tailoring Cache
+						i(187575, {	-- Korthian Fishing Cache
+							["timeline"] = { "added 9.1.0.39185" },
+						}),
 						i(187577, {	-- Korthian Meat Cache
 							["timeline"] = { "added 9.1.0.39185" },
 						}),
