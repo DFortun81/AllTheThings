@@ -9,12 +9,12 @@ _.ExpansionFeatures =
 			["customCollect"] = "SL_COV_KYR",	-- Kyrian
 			["maps"] = {
 				ARCHONS_RISE,
-				1708,	-- Elysian Hold
+				SANCTUM_OF_BINDING,
 			},
 			["g"] = {
 				n(VENDORS, {
 					n(174937, {	-- Adjutant Galos <Renown Quartermaster>
-						["coord"] = { 63.3, 30.6, 1708 },
+						["coord"] = { 63.3, 30.6, SANCTUM_OF_BINDING },
 						["g"] = sharedData(
 							{ ["customCollect"] = "SL_COV_KYR", }	-- Kyrian
 							, {
@@ -847,7 +847,7 @@ _.ExpansionFeatures =
 						}),
 					}),
 					n(175823, {	-- Forgelite Neptira <Kyrian Armorsmith>
-						["coord"] = { 56.9, 30.9, 1708 },
+						["coord"] = { 56.9, 30.9, SANCTUM_OF_BINDING },
 						["g"] = {
 							i(181290, {	-- Harmonious Sigil of the Archon
 								["cost"] = { { "c", 1813, 20 } },	-- 20x Reservoir Anima

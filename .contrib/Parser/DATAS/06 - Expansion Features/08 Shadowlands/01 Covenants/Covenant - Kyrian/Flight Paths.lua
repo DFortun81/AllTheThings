@@ -11,7 +11,7 @@ _.ExpansionFeatures =
 		n(-939, {	-- Covenant: Kyrian
 			["maps"] = {
 				ARCHONS_RISE,
-				1708,	-- Elysian Hold
+				SANCTUM_OF_BINDING,
 			},
 			["g"] = {
 				n(FLIGHT_PATHS, {

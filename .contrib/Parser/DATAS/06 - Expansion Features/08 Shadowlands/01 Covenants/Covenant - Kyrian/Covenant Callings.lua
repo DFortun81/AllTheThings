@@ -9,7 +9,7 @@ _.ExpansionFeatures =
 			["customCollect"] = "SL_COV_KYR",	-- Kyrian
 			["maps"] = {
 				ARCHONS_RISE,
-				1708,	-- Elysian Hold
+				SANCTUM_OF_BINDING,
 			},
 			["g"] = {
 				n(-901, sharedData({	-- Covenant Callings
@@ -97,7 +97,7 @@ _.ExpansionFeatures =
 					}),
 					q(60458, {	-- Anima Salvage
 						["provider"] = { "n", 160212 },	-- Soulguide Daelia
-						["coord"] = { 59.4, 34.7, 1708 },	-- Sanctum of Binding
+						["coord"] = { 59.4, 34.7, SANCTUM_OF_BINDING },
 						["g"] = {
 							i(181372),	-- Tribute of the Ascended
 						},
@@ -153,7 +153,7 @@ _.ExpansionFeatures =
 					}),
 					q(60454, {	-- Storm the Maw
 						["provider"] = { "n", 160212 },	-- Soulguide Daelia
-						["coord"] = { 59.4, 34.4, 1708 },	-- Sanctum of Binding
+						["coord"] = { 59.4, 34.4, SANCTUM_OF_BINDING },
 						["g"] = {
 							i(181741),	-- Tribute of the Paragon
 						},

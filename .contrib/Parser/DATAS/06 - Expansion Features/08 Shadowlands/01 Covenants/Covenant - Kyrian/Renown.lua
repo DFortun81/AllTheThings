@@ -9,7 +9,7 @@ _.ExpansionFeatures =
 			["customCollect"] = "SL_COV_KYR",	-- Kyrian
 			["maps"] = {
 				ARCHONS_RISE,
-				1708,	-- Elysian Hold
+				SANCTUM_OF_BINDING,
 			},
 			["g"] = {
 				n(-902, {	-- Renown

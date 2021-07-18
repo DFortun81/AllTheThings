@@ -10,7 +10,7 @@ _.ExpansionFeatures =
 			["maps"] = {
 				-- Kyrian
 				ARCHONS_RISE,
-				1708,	-- Elysian Hold
+				SANCTUM_OF_BINDING,
 				-- Necrolord
 				SEAT_OF_THE_PRIMUS,
 				-- Night Fae

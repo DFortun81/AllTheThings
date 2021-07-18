@@ -9,7 +9,7 @@ _.ExpansionFeatures =
 			["customCollect"] = "SL_COV_KYR",	-- Kyrian
 			["maps"] = {
 				ARCHONS_RISE,
-				1708,	-- Elysian Hold
+				SANCTUM_OF_BINDING,
 			},
 			["g"] = {
 				n(QUESTS, sharedData({
@@ -28,7 +28,7 @@ _.ExpansionFeatures =
 					q(62795, {	-- A Conduit for Good
 						["sourceQuests"] = { 60504 },	-- Strengthen the Bond
 						["provider"] = { "n", 160212 },	-- Soulguide Daelia
-						["coord"] = { 59.5, 34.2, 1708 },	-- Sanctum of Binding
+						["coord"] = { 59.5, 34.2, SANCTUM_OF_BINDING },
 					}),
 					q(58791, {	-- A Day in the Life
 						["sourceQuests"] = { 58790 },
@@ -314,7 +314,7 @@ _.ExpansionFeatures =
 					q(62832, {	-- Friends in Dark Places
 						["sourceQuests"] = { 57905 },	-- A Unique Opportunity
 						["provider"] = { "n", 160212 },	-- Soulguide Daelia
-						["coord"] = { 59.5, 34.2, 1708 },	-- Sanctum of Binding
+						["coord"] = { 59.5, 34.2, SANCTUM_OF_BINDING },
 					}),
 					q(58816, {	-- Getting Backstage
 						-- no coords, is your 'pet'
@@ -498,7 +498,7 @@ _.ExpansionFeatures =
 					q(57904, {	-- Our Eternal Charge
 						["sourceQuests"] = { 62795 },	-- A Conduit for Good
 						["provider"] = { "n", 160212 },	-- Soulguide Daelia
-						["coord"] = { 59.5, 34.2, 1708 },	-- Sanctum of Binding
+						["coord"] = { 59.5, 34.2, SANCTUM_OF_BINDING },
 					}),
 					q(62791, {	-- Our Most Precious Resource
 						["description"] = "Becomes available after you complete your first Calling quest.",
@@ -574,25 +574,25 @@ _.ExpansionFeatures =
 					q(61332, {	-- Return Lost Souls (5 Souls)
 						["provider"] = { "n", 160212 },	-- Soulguide Daelia
 						["isWeekly"] = true,
-						["coord"] = { 59.5, 34.2, 1708 },	-- Sanctum of Binding
+						["coord"] = { 59.5, 34.2, SANCTUM_OF_BINDING },
 					}),
 					q(62861, {	-- Return Lost Souls (10 Souls)
 						["description"] = "Requires Renown 15.",
 						["provider"] = { "n", 160212 },	-- Soulguide Daelia
 						["isWeekly"] = true,
-						["coord"] = { 59.5, 34.2, 1708 },	-- Sanctum of Binding
+						["coord"] = { 59.5, 34.2, SANCTUM_OF_BINDING },
 					}),
 					q(62862, {	-- Return Lost Souls (15 Souls)
 						["description"] = "Requires Renown 24.",
 						["provider"] = { "n", 160212 },	-- Soulguide Daelia
 						["isWeekly"] = true,
-						["coord"] = { 59.5, 34.2, 1708 },	-- Sanctum of Binding
+						["coord"] = { 59.5, 34.2, SANCTUM_OF_BINDING },
 					}),
 					q(62863, {	-- Return Lost Souls (20 Souls)
 						["description"] = "Requires Renown 32.",
 						["provider"] = { "n", 160212 },	-- Soulguide Daelia
 						["isWeekly"] = true,
-						["coord"] = { 59.5, 34.2, 1708 },	-- Sanctum of Binding
+						["coord"] = { 59.5, 34.2, SANCTUM_OF_BINDING },
 					}),
 					q(62796, {	-- Return to Adrestes
 						["sourceQuests"] = { 62837 },	-- Hopeful News
@@ -646,7 +646,7 @@ _.ExpansionFeatures =
 					q(57898, {	-- Soul Meets Body
 						["sourceQuests"] = { 57897 },	-- Dangerous to Go Alone
 						["provider"] = { "n", 160212 },	-- Soulguide Daelia
-						["coord"] = { 59.5, 34.2, 1708 },	-- Sanctum of Binding
+						["coord"] = { 59.5, 34.2, SANCTUM_OF_BINDING },
 					}),
 					q(58176, {	-- Stewards of a Feather
 						["sourceQuests"] = { 58175 },	-- The Eternal Forge
@@ -656,7 +656,7 @@ _.ExpansionFeatures =
 					q(60504, {	-- Strengthen the Bond
 						["sourceQuests"] = { 57898 },	-- Soul Meets Body
 						["provider"] = { "n", 160212 },	-- Soulguide Daelia
-						["coord"] = { 59.5, 34.2, 1708 },	-- Sanctum of Binding
+						["coord"] = { 59.5, 34.2, SANCTUM_OF_BINDING },
 						["g"] = {
 						--	TODO: keep conduits here or Uncollectable?
 							i(182584),	-- Cheetah's Vigor
@@ -754,7 +754,7 @@ _.ExpansionFeatures =
 					q(58798, {	-- The Spires of Ascension
 						["sourceQuests"] = { 58797 },	-- Forged by Trial
 						["provider"] = { "n", 163650 },	-- Kleia
-						["coord"] = { 59.9, 36.2, 1708 },	-- Sanctum of Binding
+						["coord"] = { 59.9, 36.2, SANCTUM_OF_BINDING },
 						["_drop"] = { "g" },	-- drop anima trash
 					}),
 					q(58563, {	-- Through Glass
