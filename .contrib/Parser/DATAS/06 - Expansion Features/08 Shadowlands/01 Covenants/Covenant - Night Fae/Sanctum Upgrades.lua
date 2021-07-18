@@ -688,6 +688,11 @@ _.ExpansionFeatures =
 		}),
 	}),
 };
+
+_.HiddenQuestTriggers = {
+	q(62962),	-- triggered when turning in 'Into the Unknown' (62296)
+};
+
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(59870),	-- [OLD NOT USED]

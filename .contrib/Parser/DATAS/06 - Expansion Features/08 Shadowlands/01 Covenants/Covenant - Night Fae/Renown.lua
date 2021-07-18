@@ -62,7 +62,7 @@ _.HiddenQuestTriggers = {
 	q(64403),	-- hitting Renown 48 [Mage] (received Memory of the Fae Heart)
 	-- q( ),	-- hitting Renown 48 [Monk] (received Memory of ??)
 	-- q( ),	-- hitting Renown 48 [Paladin] (received Memory of ??)
-	-- q( ),	-- hitting Renown 48 [Priest] (received Memory of ??)
+	q(64408),	-- hitting Renown 48 [Priest] (received Memory of ??)
 	-- q( ),	-- hitting Renown 48 [Rogue] (received Memory of ??)
 	-- q( ),	-- hitting Renown 48 [Shaman] (received Memory of the Raging Vesper Vortex)
 	-- q( ),	-- hitting Renown 48 [Warlock] (received Memory of ??)

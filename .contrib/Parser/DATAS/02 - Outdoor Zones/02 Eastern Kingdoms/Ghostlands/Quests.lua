@@ -635,6 +635,7 @@ _.Zones =
 				q(9282, {	-- The Farstrider Enclave
 					["qg"] = 16239,	-- Magister Kaendris
 					["sourceQuest"] = 9151,	-- The Sanctum of the Sun
+					["isBreadcrumb"] = true,
 					["coord"] = { 55.0, 48.8, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(15, 1, 15),

@@ -17,12 +17,14 @@ _.Zones =
 				q(8891, {	-- Abandoned Investigations
 					["provider"] = { "o", 181011 },	-- Magister Duskwither's Journal
 					["coord"] = { 69.2, 52.1, EVERSONG_WOODS },
-					["cost"] = {
-						{ "i", 21783, 1 },	-- Magister Duskwither's Journal
-					},
 					["model"] = 191948,
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(8, 1, 8),
+					["groups"] = {
+						objective(1, {	-- Magister Duskwither's Journal
+							["provider"] = { "i", 21783 },	-- Magister Duskwither's Journal
+						}),
+					},
 				}),
 				q(8476, {	-- Amani Encroachment
 					["qg"] = 15399,	-- Lieutenant Dawnrunner
@@ -94,21 +96,25 @@ _.Zones =
 					["qg"] = 15301,	-- Outrunner Alarion
 					["sourceQuest"] = 9705,	-- Package Recovery
 					["coord"] = { 40.4, 32.2, EVERSONG_WOODS },
-					["cost"] = {
-						{ "i", 20804, 1 },	-- Erona's Package
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(4, 1, 4),
+					["groups"] = {
+						objective(1, {	-- Erona's Package
+							["provider"] = { "i", 20804 },	-- Erona's Package
+						}),
+					},
 				}),
 				q(8487, {	-- Corrupted Soil
 					["qg"] = 15402,	-- Apprentice Mirveda
 					["sourceQuest"] = 9254,	-- The Wayward Apprentice
 					["coord"] = { 54.2, 70.9, EVERSONG_WOODS },
-					["cost"] = {
-						{ "i", 20771, 8 },	-- Tainted Soil Sample
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(7, 1, 7),
+					["groups"] = {
+						objective(1, {	-- Tainted Soil Sample
+							["cost"] = { { "i", 20771, 8 } },	-- 8x Tainted Soil Sample
+						}),
+					},
 				}),
 				q(9352, {	-- Darnassian Intrusions
 					["qg"] = 15403,	-- Aeldon Sunbrand
@@ -122,11 +128,13 @@ _.Zones =
 					["qg"] = 15924,	-- Apprentice Loralthalis
 					["sourceQuest"] = 8888,	-- The Magister's Apprentice
 					["coord"] = { 67.8, 56.5, EVERSONG_WOODS },
-					["cost"] = {
-						{ "i", 24337, 1 },	-- Deactivating Jewel
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(8, 1, 8),
+					["groups"] = {
+						objective(1, {	-- Deactivating Jewel
+							["provider"] = { "i", 24337 },	-- Deactivating Jewel
+						}),
+					},
 				}),
 				q(9252, {	-- Defending Fairbreeze Village
 					["qg"] = 15942,	-- Ranger Sareyn
@@ -139,22 +147,24 @@ _.Zones =
 					["qg"] = 15418,	-- Magister Jaronis
 					["sourceQuest"] = 8472,	-- Major Malfunction
 					["coord"] = { 47.2, 46.3, EVERSONG_WOODS },
-					["cost"] = {
-						{ "i", 21807, 1 },	-- Unmarked Letter
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(4, 1, 4),
+					["groups"] = {
+						objective(1, {	-- Unmarked Letter
+							["provider"] = { "i", 21807 },	-- Unmarked Letter
+						}),
+					},
 				}),
 				q(9148, {	-- Delivery to Tranquillien
 					["qg"] = 16183,	-- Courier Dawnstrider
 					["sourceQuest"] = 9147,	-- The Fallen Courier
 					["coord"] = { 48.9, 88.9, EVERSONG_WOODS },
-					["cost"] = {
-						{ "i", 22717, 1 },	-- Letter from Silvermoon
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(9, 1, 9),
 					["groups"] = {
+						objective(1, {	-- Letter from Silvermoon
+							["provider"] = { "i", 22717 },	-- Letter from Silvermoon
+						}),
 						i(28148),	-- Bronze Plate Bracers
 						i(28146),	-- Courier's Wraps
 						-- #if AFTER LEGION
@@ -183,14 +193,12 @@ _.Zones =
 				q(9402, {	-- Fetch!
 					["qg"] = 15970,	-- Instructor Antheol
 					["coord"] = { 55.7, 54.5, EVERSONG_WOODS },
-					["cost"] = {
-						{ "i", 23551, 1 },	-- Azure Phial
-					},
 					["classes"] = { MAGE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(10, 1, 10),
 					["groups"] = {
-						i(23551, {	-- Azure Phial
+						objective(1, {	-- Azure Phial
+							["provider"] = { "i", 23551 },	-- Azure Phial
 							["coord"] = { 54.9, 56.4, EVERSONG_WOODS },
 						}),
 					},
@@ -198,42 +206,51 @@ _.Zones =
 				q(8884, {	-- Fish Heads, Fish Heads...
 					["qg"] = 15920,	-- Hathvelion Sungaze
 					["coord"] = { 30.2, 58.3, EVERSONG_WOODS },
-					["cost"] = {
-						{ "i", 21757, 8 },	-- Grimscale Murloc Head
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(5, 1, 5),
+					["groups"] = {
+						objective(1, {	-- Grimscale Murloc Head
+							["cost"] = { { "i", 21757, 8 } },	-- Grimscale Murloc Head
+						}),
+					},
 				}),
-				-- #if AFTER WRATH
 				-- Before Wrath, this quest was in the Ghostlands and has a higher level requirement.
 				q(9133, {	-- Fly to Silvermoon City
 					["qg"] = 44036,	-- Skymaster Brightdawn
+					-- This source quest wasn't added until 8.0. Will a WOTLK Parser do this properly?
 					["sourceQuest"] = 9130,	-- Goods from Silvermoon City
 					["coord"] = { 43.9, 69.9, EVERSONG_WOODS },
-					["cost"] = {
-						{ "i", 22549, 1 },	-- Sathiel's Request
-					},
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(5, 1, 5),
+					["timeline"] = { "added 3.3.0.10772" },
+					["groups"] = {
+						objective(1, {	-- Sathiel's Request
+							["provider"] = { "i", 22549 },	-- Sathiel's Request
+						}),
+					},
 				}),
 				q(9130, {	-- Goods from Silvermoon City
 					["qg"] = 16261,	-- Sathiel
 					["coord"] = { 43.6, 71.5, EVERSONG_WOODS },
-					["cost"] = {
-						{ "i", 22549, 1 },	-- Sathiel's Request
-					},
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(5, 1, 5),
+					["timeline"] = { "added 8.0.1.27101" },
+					["groups"] = {
+						objective(1, {	-- Sathiel's Request
+							["provider"] = { "i", 22549 },	-- Sathiel's Request
+						}),
+					},
 				}),
-				-- #endif
 				q(8886, {	-- Grimscale Pirates!
 					["qg"] = 15921,	-- Captain Kelisendra
 					["coord"] = { 36.3, 66.6, EVERSONG_WOODS },
-					["cost"] = {
-						{ "i", 21771, 6 },	-- Captain Kelisendra's Cargo
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(5, 1, 5),
+					["groups"] = {
+						objective(1, {	-- Captain Kelisendra's Cargo
+							["cost"] = { { "i", 21771, 6 } },	-- 6x Captain Kelisendra's Cargo
+						}),
+					},
 				}),
 				q(8482, {	-- Incriminating Documents
 					["provider"] = { "i", 20765 },	-- Incriminating Documents
@@ -262,12 +279,12 @@ _.Zones =
 				q(8480, {	-- Lost Armaments
 					["qg"] = 15404,	-- Velendris Whitemorn
 					["coord"] = { 36.3, 66.7, EVERSONG_WOODS },
-					["cost"] = {
-						{ "i", 22413, 6 },	-- Sin'dorei Armaments
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(5, 1, 5),
 					["groups"] = {
+						objective(1, {	-- Sin'dorei Armaments
+							["cost"] = { { "i", 22413, 6 } },	-- 6x Sin'dorei Armaments
+						}),
 						i(22956),	-- Rusty Mace
 						-- #if AFTER LEGION
 						i(133696),	-- Rusty Sin'dorei Stiletto
@@ -278,11 +295,13 @@ _.Zones =
 				q(8472, {	-- Major Malfunction
 					["qg"] = 15418,	-- Magister Jaronis
 					["coord"] = { 47.2, 46.3, EVERSONG_WOODS },
-					["cost"] = {
-						{ "i", 21808, 6 },	-- Arcane Core
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(4, 1, 4),
+					["groups"] = {
+						objective(1, {	-- Arcane Core
+							["cost"] = { { "i", 21808, 6 } },	-- 6x Arcane Core
+						}),
+					},
 				}),
 				q(9119, {	-- Malfunction at the West Sanctum
 					["qg"] = 15405,	-- Ley-Keeper Caidanis
@@ -307,21 +326,23 @@ _.Zones =
 					["qg"] = 17849,	-- Slain Outrunner
 					["sourceQuest"] = 9704,	-- Slain by the Wretched
 					["coord"] = { 42.0, 35.6, EVERSONG_WOODS },
-					["cost"] = {
-						{ "i", 20804, 1 },	-- Erona's Package
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(4, 1, 4),
+					["groups"] = {
+						objective(1, {	-- Erona's Package
+							["provider"] = { "i", 20804 },	-- Erona's Package
+						}),
+					},
 				}),
 				q(8491, {	-- Pelt Collection
 					["qg"] = 15417,	-- Velan Brightoak
 					["coord"] = { 44.7, 69.6, EVERSONG_WOODS },
-					["cost"] = {
-						{ "i", 20772, 6 },	-- Springpaw Pelt
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(4, 1, 4),
 					["groups"] = {
+						objective(1, {	-- Springpaw Pelt
+							["cost"] = { { "i", 20772, 6 } },	-- 6x Springpaw Pelt
+						}),
 						i(22953),	-- Fur Lined Chain Shirt
 						i(22952),	-- Springpaw Hide Cloak
 						i(22951),	-- Springpaw Hide Leggings
@@ -334,13 +355,11 @@ _.Zones =
 					["qg"] = 16362,	-- Runewarden Deryan
 					["sourceQuest"] = 9253,	-- Runewarden Deryan
 					["coord"] = { 44.1, 85.4, EVERSONG_WOODS },
-					["cost"] = {
-						{ "i", 22693, 1 },	-- Infused Crystal
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(8, 1, 8),
 					["groups"] = {
 						objective(1, {
+							["provider"] = { "i", 22693 },	-- Infused Crystal
 							["cr"] = 16364,	-- Runestone Energized
 							["coord"] = { 55.2, 84.2, EVERSONG_WOODS },
 						}),
@@ -357,14 +376,12 @@ _.Zones =
 					["qg"] = 15970,	-- Instructor Antheol
 					["sourceQuest"] = 9403,	-- The Purest Water
 					["coord"] = { 55.7, 54.5, EVERSONG_WOODS },
-					["cost"] = {
-						{ "i", 23553, 1 },	-- Living Branch
-					},
 					["classes"] = { MAGE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(10, 1, 10),
 					["groups"] = {
-						i(23553, {	-- Living Branch
+						objective(1, {	-- Living Branch
+							["provider"] = { "i", 23553 },	-- Living Branch
 							["cr"] = 15636,	-- Eversong Green Keeper
 							["coord"] = { 48.1, 71.3, EVERSONG_WOODS },
 						}),
@@ -376,11 +393,13 @@ _.Zones =
 					["qg"] = 15402,	-- Apprentice Mirveda
 					["sourceQuest"] = 8488,	-- Unexpected Results
 					["coord"] = { 54.2, 70.9, EVERSONG_WOODS },
-					["cost"] = {
-						{ "i", 22735, 1 },	-- Research Notes
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(7, 1, 7),
+					["groups"] = {
+						objective(1, {	-- Research Notes
+							["provider"] = { "i", 22735 },	-- Research Notes
+						}),
+					},
 				}),
 				-- #if BEFORE WRATH
 				-- Before Wrath, this quest chain was in the Ghostlands and has a higher level requirement.
@@ -389,22 +408,26 @@ _.Zones =
 					["sourceQuest"] = 9134,	-- Skymistress Gloaming
 					["coord"] = { 54.3, 50.7, EVERSONG_WOODS },
 					["maps"] = { GHOSTLANDS },
-					["cost"] = {
-						{ "i", 22550, 1 },	-- Quartermaster Lymel's Goods
-					},
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(10, 1, 10),
+					["groups"] = {
+						objective(1, {	-- Quartermaster Lymel's Goods
+							["provider"] = { "i", 22550 },	-- Quartermaster Lymel's Goods
+						}),
+					},
 				}),
 				-- #else
 				q(9135, {	-- Return to Sathiel
 					["qg"] = 16192,	-- Skymistress Gloaming
 					["sourceQuest"] = 9134,	-- Skymistress Gloaming
 					["coord"] = { 54.3, 50.7, EVERSONG_WOODS },
-					["cost"] = {
-						{ "i", 22550, 1 },	-- Sathiel's Goods
-					},
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(5, 1, 5),
+					["groups"] = {
+						objective(1, {	-- Sathiel's Goods
+							["provider"] = { "i", 22550 },	-- Sathiel's Goods
+						}),
+					},
 				}),
 				-- #endif
 				q(9691, {	-- Return to Silvermoon
@@ -461,13 +484,11 @@ _.Zones =
 					["qg"] = 15945,	-- Apprentice Meledor
 					["sourceQuest"] = 9035,	-- Roadside Ambush
 					["coord"] = { 44.8, 61.0, EVERSONG_WOODS },
-					["cost"] = {
-						{ "i", 22414, 1 },	-- Antheol's Elemental Grimoire
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(4, 1, 4),
 					["groups"] = {
-						i(22414, {	-- Antheol's Elemental Grimoire
+						objective(1, {	-- Antheol's Elemental Grimoire
+							["provider"] = { "i", 22414 },	-- Antheol's Elemental Grimoire
 							["coord"] = { 44.3, 62.0, EVERSONG_WOODS },
 						}),
 					},
@@ -485,17 +506,16 @@ _.Zones =
 					["qg"] = 15970,	-- Instructor Antheol
 					["sourceQuest"] = 9064,	-- Taking the Fall
 					["coord"] = { 55.6, 54.5, EVERSONG_WOODS },
-					["cost"] = {
-						{ "i", 22473, 1 },	-- Antheol's Disciplinary Rod
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(4, 1, 4),
 					["groups"] = {
 						objective(1, {	-- Apprentice Meledor Disciplined
+							["provider"] = { "i", 22473 },	-- Antheol's Disciplinary Rod
 							["cr"] = 15945,	-- Apprentice Meledor
 							["coord"] = { 44.8, 61.0, EVERSONG_WOODS },
 						}),
 						objective(2, {	-- Apprentice Ralen Disciplined
+							["provider"] = { "i", 22473 },	-- Antheol's Disciplinary Rod
 							["cr"] = 15941,	-- Apprentice Ralen
 							["coord"] = { 45.2, 56.4, EVERSONG_WOODS },
 						}),
@@ -506,11 +526,14 @@ _.Zones =
 					["qg"] = 15945,	-- Apprentice Meledor
 					["sourceQuest"] = 9062,	-- Soaked Pages
 					["coord"] = { 44.8, 61.0, EVERSONG_WOODS },
-					["cost"] = {
-						{ "i", 22414, 1 },	-- Antheol's Elemental Grimoire
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(4, 1, 4),
+					["groups"] = {
+						objective(1, {	-- Antheol's Elemental Grimoire
+							["provider"] = { "i", 22414 },	-- Antheol's Elemental Grimoire
+							["coord"] = { 44.3, 62.0, EVERSONG_WOODS },
+						}),
+					},
 				}),
 				q(8475, {	-- The Dead Scar
 					["qg"] = 15416,	-- Ranger Jaela
@@ -531,12 +554,10 @@ _.Zones =
 					["sourceQuest"] = 8482,	-- Incriminating Documents
 					["coord"] = { 48.1, 46.0, EVERSONG_WOODS },
 					["races"] = HORDE_ONLY,
-					["cost"] = {
-						{ "i", 20764, 1 },	-- Prospector Anvilward's Head
-					},
 					["lvl"] = lvlsquish(4, 1, 4),
 					["groups"] = {
-						i(20764, {	-- Prospector Anvilward's Head
+						objective(1, {	-- Prospector Anvilward's Head
+							["provider"] = { "i", 20764 },	-- Prospector Anvilward's Head
 							["cr"] = 15420,	-- Prospector Anvilward
 							["coord"] = { 44.6, 53.3, EVERSONG_WOODS },
 						}),
@@ -552,11 +573,13 @@ _.Zones =
 					["sourceQuest"] = 9144,	-- Missing in the Ghostlands
 					["coord"] = { 49.0, 89.0, EVERSONG_WOODS },
 					["maps"] = { GHOSTLANDS },
-					["cost"] = {
-						{ "i", 22570, 4 },	-- Plagued Blood Sample
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(9, 1, 9),
+					["groups"] = {
+						objective(1, {	-- Plagued Blood Sample
+							["cost"] = { { "i", 22570, 4 } },	-- 4x Plagued Blood Sample
+						}),
+					},
 				}),
 				q(8888, {	-- The Magister's Apprentice
 					["qg"] = 15951,	-- Magister Duskwither
@@ -569,14 +592,18 @@ _.Zones =
 					["qg"] = 16144,	-- Lord Saltheril
 					["sourceQuest"] = 9395,	-- Saltheril's Haven
 					["coord"] = { 38.1, 73.5, EVERSONG_WOODS },
-					["cost"] = {
-						{ "i", 22775, 1 },	-- Suntouched Special Reserve
-						{ "i", 22776, 1 },	-- Springpaw Appetizers
-						{ "i", 22777, 1 },	-- Bundle of Fireworks
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(7, 1, 7),
 					["groups"] = {
+						objective(1, {	--
+							["provider"] = { "i", 22775 },	-- Suntouched Special Reserve
+						}),
+						objective(2, {	--
+							["provider"] = { "i", 22776 },	-- Springpaw Appetizers
+						}),
+						objective(3, {	--
+							["provider"] = { "i", 22777 },	-- Bundle of Fireworks
+						}),
 						i(23500),	-- Saltheril's Haven Party Invitation
 					},
 				}),
@@ -584,13 +611,13 @@ _.Zones =
 					["qg"] = 15970,	-- Instructor Antheol
 					["sourceQuest"] = 9402,	-- Fetch!
 					["coord"] = { 55.7, 54.5, EVERSONG_WOODS },
-					["cost"] = {
-						{ "i", 23552, 1 },	-- Filled Azure Phial
-					},
 					["classes"] = { MAGE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(10, 1, 10),
 					["groups"] = {
+						objective(1, {	--
+							["provider"] = { "i", 23552 },	-- Filled Azure Phial
+						}),
 						i(23566, {	-- Azure Phial
 							["coord"] = { 64, 72, EVERSONG_WOODS },
 							["groups"] = {
@@ -603,13 +630,13 @@ _.Zones =
 					["qg"] = 15920,	-- Hathvelion Sungaze
 					["sourceQuest"] = 8884,	-- Fish Heads, Fish Heads...
 					["coord"] = { 30.2, 58.3, EVERSONG_WOODS },
-					["cost"] = {
-						{ "i", 21770, 1 },	-- Ring of Mmmrrrggglll
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(5, 1, 5),
 					["groups"] = {
-						i(21770, {	-- Ring of Mmmrrrggglll
+					},
+					["groups"] = {
+						objective(1, {	--
+							["provider"] = { "i", 21770 },	-- Ring of Mmmrrrggglll
 							["races"] = HORDE_ONLY,
 							["cr"] = 15937,	-- Mmmrrrggglll <Grimscale Chieftain>
 							["coord"] = { 25.2, 70.8, EVERSONG_WOODS },
@@ -642,13 +669,11 @@ _.Zones =
 				q(8477, {	-- The Spearcrafter's Hammer
 					["qg"] = 15400,	-- Arathel Sunforge
 					["coord"] = { 59.5, 62.6, EVERSONG_WOODS },
-					["cost"] = {
-						{ "i", 20759, 1 },	-- Otembe's Hammer
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(7, 1, 7),
 					["groups"] = {
-						i(20759, {	-- Otembe's Hammer
+						objective(1, {	--
+							["provider"] = { "i", 20759 },	-- Otembe's Hammer
 							["cr"] = 15408,	-- Spearcrafter Otembe
 							["coord"] = { 70.1, 72.3, EVERSONG_WOODS },
 						}),
@@ -674,23 +699,23 @@ _.Zones =
 				q(8463, {	-- Unstable Mana Crystals
 					["qg"] = 15403,	-- Aeldon Sunbrand
 					["coord"] = { 48.1, 45.9, EVERSONG_WOODS },
-					["cost"] = {
-						{ "i", 20743, 6 },	-- Unstable Mana Crystal
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(4, 1, 4),
+					["groups"] = {
+						objective(1, {	--
+							["cost"] = { { "i", 20743, 6 } },	-- 6x Unstable Mana Crystal
+						}),
+					},
 				}),
 				q(8468, {	-- Wanted: Thaelis the Hungerer
 					["provider"] = { "o", 180918 },	-- Wanted: Thaelis the Hungerer
 					["coord"] = { 48.1, 46.3, EVERSONG_WOODS },
-					["cost"] = {
-						{ "i", 21781, 1 },	-- Thaelis's Head
-					},
 					["races"] = HORDE_ONLY,
 					["model"] = 192133,
 					["lvl"] = lvlsquish(4, 1, 4),
 					["groups"] = {
-						i(21781, {	-- Thaelis's Head
+						objective(1, {	--
+							["provider"] = { "i", 21781 },	-- Thaelis's Head
 							["cr"] = 15949,	-- Thaelis the Hungerer
 							["coord"] = { 44.4, 37.8, EVERSONG_WOODS },
 						}),
@@ -722,11 +747,13 @@ _.Zones =
 					["qg"] = 15398,	-- Larianna Riverwind
 					["sourceQuest"] = 8474,	-- Old Whitebark's Pendant
 					["coord"] = { 34.0, 80.0, EVERSONG_WOODS },
-					["cost"] = {
-						{ "i", 28209, 1 },	-- Old Whitebark's Pendant
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(7, 1, 7),
+					["groups"] = {
+						objective(1, {	--
+							["provider"] = { "i", 28209 },	-- Old Whitebark's Pendant
+						}),
+					},
 				}),
 				q(8890, {	-- Word from the Spire
 					["qg"] = 15924,	-- Apprentice Loralthalis
@@ -742,13 +769,11 @@ _.Zones =
 					["qg"] = 15404,	-- Velendris Whitemorn
 					["sourceQuest"] = 8480,	-- Lost Armaments
 					["coord"] = { 36.3, 66.7, EVERSONG_WOODS },
-					["cost"] = {
-						{ "i", 22487, 1 },	-- Aldaron's Head
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(5, 1, 5),
 					["groups"] = {
-						i(22487, {	-- Aldaron's Head
+						objective(1, {	--
+							["provider"] = { "i", 22487 },	-- Aldaron's Head
 							["cr"] = 16294,	--Aldaron the Reckless
 							["coord"] = { 32.8, 69.4, EVERSONG_WOODS },
 						}),
@@ -763,13 +788,11 @@ _.Zones =
 				q(8479, {	-- Zul'Marosh
 					["qg"] = 15406,	-- Ven'jashi
 					["coord"] = { 70.4, 72.3, EVERSONG_WOODS },
-					["cost"] = {
-						{ "i", 20760, 1 },	-- Chieftain Zul'Marosh's Head
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(8, 1, 8),
 					["groups"] = {
-						i(20760, {	-- Chieftain Zul'Marosh's Head
+						objective(1, {	--
+							["provider"] = { "i", 20760 },	-- Chieftain Zul'Marosh's Head
 							["cr"] = 15407,	-- Chieftain Zul'Marosh
 							["coord"] = { 62.5, 79.7, EVERSONG_WOODS },
 						}),

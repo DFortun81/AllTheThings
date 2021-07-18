@@ -337,7 +337,11 @@ _.Zones =
 				q(25031, {	-- Head for the Mills
 					["provider"] = { "n", 38977 },	-- Apothecary Jerrod
 					["races"] = HORDE_ONLY,
-					["sourceQuests"] = { 24999 },	-- Planting the Seed of Fear
+					["sourceQuests"] = {
+						24999,	-- Planting the Seed of Fear
+						24998,	-- Maggot Eye
+						24995,	-- Off the Scales
+					},
 					["isBreadcrumb"] = true,
 				}),
 				q(1822,  {	-- Heirloom Weapon

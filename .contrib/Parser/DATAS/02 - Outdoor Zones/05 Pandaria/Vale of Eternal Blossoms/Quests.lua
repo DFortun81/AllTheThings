@@ -168,6 +168,11 @@ _.Zones =
 					["isDaily"] = true,
 					["provider"] = { "n", 58962 },	-- Hai-Me Heavyhands
 				}),
+				q(30277, {	-- The Crumbling Hall
+					["coord"] = { 21.4, 71.5, 390 },
+					["isDaily"] = true,
+					["provider"] = { "n", 58919 },	-- Anji Autumnlight
+				}),
 				q(31095, {	-- The Dark Heart of the Mogu
 					["provider"] = { "i", 83772 },	-- The Dark Heart of the Mogu
 					["description"] = "Complete achievement with the same name and you will get the item that starts the quest in the mail.",

@@ -272,7 +272,7 @@ _.Zones =
 								},
 							}),
 							n(178886, {	-- Zul'gath the Flayer
-								-- ["questID"] = ,
+								["questID"] = 64122,
 								["isDaily"] = true,
 								["g"] = {
 									i(186235),	-- Shadow-Wreathed Vambraces
