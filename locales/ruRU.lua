@@ -2947,7 +2947,7 @@ for key,value in pairs({
 	[369135] = "Печать Господства #2",	-- Domination Seal #2
 	[369138] = "Печать Господства на сундуке",	-- Domination Chest Seal
 	[369141] = "Тайник Верных Утробе",	-- Mawsworn Cache
-	--TODO: [369143] = "Quartered Ancient Ring",	-- Quartered Ancient Ring
+	[369143] = "Древнее кольцо с четырехугольной оправой",	-- Quartered Ancient Ring
 	[369144] = "Кольцо с ключами боронителя душ",	-- The Harrower's Key Ring
 	[369145] = "Хельгардский тайник с припасами",	-- Helgarde Supply Cache
 	[369148] = "Блестящий материал для гнезда",	-- Glittering Nest Material

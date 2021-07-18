@@ -2959,7 +2959,7 @@ for key,value in pairs({
 	[369135] = "Sceau de domination #2",	-- Domination Seal #2
 	[369138] = "Sceau de domination du coffre",	-- Domination Chest Seal
 	[369141] = "Cache antrelige",	-- Mawsworn Cache
-	--TODO: [369143] = "Quartered Ancient Ring",	-- Quartered Ancient Ring
+	[369143] = "Anneau ancien morcelé",	-- Quartered Ancient Ring
 	[369144] = "Trousseau de clés de la Persécutrice",	-- The Harrower's Key Ring
 	[369145] = "Cache de fournitures de Helgarde",	-- Helgarde Supply Cache
 	[369148] = "Matériau de nid scintillant",	-- Glittering Nest Material

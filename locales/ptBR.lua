@@ -2885,8 +2885,8 @@ for key,value in pairs({
 	[356712] = "Tributo Extravagante da Capitã de Caça Korayn",	-- Hunt-Captain Korayn's Extravagant Tribute
 	[356716] = "Tributo Extravagante da Droman Aliothe",	-- Droman Aliothe's Extravagant Tribute
 	[356720] = "Tributo Extravagante de Xufa",	-- Choofa's Extravagant Tribute
-	--TODO: [356725] = "Polemarch Adrestes' Extravagant Tribute",	-- Polemarch Adrestes' Extravagant Tribute
-	--TODO: [356728] = "Mikanikos' Extravagant Tribute",	-- Mikanikos' Extravagant Tribute
+	[356725] = "Tributo Extravagante do Polemarco Adrestes",	-- Polemarch Adrestes' Extravagant Tribute
+	[356728] = "Tributo Extravagante de Mikâniko",	-- Mikanikos' Extravagant Tribute
 	[356733] = "Tributo Extravagante de Kleia e Pelagos",	-- Kleia and Pelagos' Extravagant Tribute
 	[356737] = "Tributo Extravagante de Sika",	-- Sika's Extravagant Tribute
 	[356741] = "Tributo Extravagante da Condessa",	-- The Countess' Extravagant Tribute
@@ -2960,7 +2960,7 @@ for key,value in pairs({
 	[369135] = "Selo da Dominação #2",	-- Domination Seal #2
 	[369138] = "Selo do Baú da Dominação",	-- Domination Chest Seal
 	[369141] = "Cabedal Górjuro",	-- Mawsworn Cache
-	--TODO: [369143] = "Quartered Ancient Ring",	-- Quartered Ancient Ring
+	[369143] = "Anel Antigo Fendido em Quatro",	-- Quartered Ancient Ring
 	[369144] = "Molho de Chaves da Consternadora",	-- The Harrower's Key Ring
 	[369145] = "Baú de Suprimentos de Infergarde",	-- Helgarde Supply Cache
 	[369148] = "Material de Ninho Brilhante",	-- Glittering Nest Material

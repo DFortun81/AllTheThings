@@ -2960,7 +2960,7 @@ for key,value in pairs({
 	[369135] = "Sello de dominación #2",	-- Domination Seal #2
 	[369138] = "Sello de cofre de dominación",	-- Domination Chest Seal
 	[369141] = "Alijo jurafauces",	-- Mawsworn Cache
-	--TODO: [369143] = "Quartered Ancient Ring",	-- Quartered Ancient Ring
+	[369143] = "Anillo antiguo agrietado",	-- Quartered Ancient Ring
 	[369144] = "Llavero de la Lacerante",	-- The Harrower's Key Ring
 	[369145] = "Alijo de suministros de Helgarde",	-- Helgarde Supply Cache
 	[369148] = "Material de nido relumbrante",	-- Glittering Nest Material

@@ -2881,7 +2881,7 @@ for key,value in pairs({
 	[356697] = "Alexandros Mograines extravaganter Tribut",	-- Alexandros Mograine's Extravagant Tribute
 	[356700] = "Großmeister Voles extravaganter Tribut",	-- Grandmaster Vole's Extravagant Tribute
 	[356705] = "Seuchenerfinder Marileths extravaganter Tribut",	-- Plague Deviser Marileth's Extravagant Tribute
-	--TODO: [356709] = "Lady Moonberry's Extravagant Tribute",	-- Lady Moonberry's Extravagant Tribute
+	[356709] = "Lady Mondbeeres extravaganter Tribut",	-- Lady Moonberry's Extravagant Tribute
 	[356712] = "Jagdhauptmann Korayns extravaganter Tribut",	-- Hunt-Captain Korayn's Extravagant Tribute
 	[356716] = "Dromanin Aliothes extravaganter Tribut",	-- Droman Aliothe's Extravagant Tribute
 	[356720] = "Choofas extravaganter Tribut",	-- Choofa's Extravagant Tribute
@@ -2960,7 +2960,7 @@ for key,value in pairs({
 	[369135] = "Herrschaftssiegel #2",	-- Domination Seal #2
 	[369138] = "Siegel der Herrschaftstruhe",	-- Domination Chest Seal
 	[369141] = "Schlundgebundene Truhe",	-- Mawsworn Cache
-	--TODO: [369143] = "Quartered Ancient Ring",	-- Quartered Ancient Ring
+	[369143] = "Viertel eines uralten Rings",	-- Quartered Ancient Ring
 	[369144] = "Schlüsselring der Plagerin",	-- The Harrower's Key Ring
 	[369145] = "Vorratskiste von Helgarde",	-- Helgarde Supply Cache
 	[369148] = "Glitzerndes Nestmaterial",	-- Glittering Nest Material
