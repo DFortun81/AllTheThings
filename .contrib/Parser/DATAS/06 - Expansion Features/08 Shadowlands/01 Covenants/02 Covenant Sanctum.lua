@@ -275,12 +275,12 @@ _.ExpansionFeatures =
 					--	TODO: grants "a new path" criteria of "chains of domination" achievement, add to whichever zone these quests wind up being in
 						["sourceQuests"] = { 63584 },	-- A Triumphant Return
 						["provider"] = { "n", 168517 },	-- Polemarch Kalisthene
-						["coord"] = { 64.0, 19.1, ELYSIAN_HOLD_ARCHONS_RISE },
+						["coord"] = { 64.0, 19.1, ARCHONS_RISE },
 					}),
 					q(63586, {	-- Compassion in Devotion
 						["sourceQuests"] = { 63585 },	-- Blind Loyalty
 						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
-						["coord"] = { 66.5, 16.5, ELYSIAN_HOLD_ARCHONS_RISE },
+						["coord"] = { 66.5, 16.5, ARCHONS_RISE },
 					}),
 					q(63728, {	-- Hunting Amid Houses
 					--	TODO - not sure if this is non-NF or Venthyr-only.  will verify on Kyrian/Necrolord

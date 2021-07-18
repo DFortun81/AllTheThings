@@ -10,7 +10,7 @@ _.ExpansionFeatures =
 		},{
 		n(-939, {	-- Covenant: Kyrian
 			["maps"] = {
-				ELYSIAN_HOLD_ARCHONS_RISE,
+				ARCHONS_RISE,
 				1708,	-- Elysian Hold
 			},
 			["g"] = {
@@ -33,7 +33,7 @@ _.ExpansionFeatures =
 					fp(2625, {	-- Elysian Hold, Bastion
 						["description"] = "Part of the Kyrian Rank 1 Transport Network.",
 						["creatureID"] = 171036,	-- Eternal Gateway
-						["coord"] = { 48.7, 61.8, ELYSIAN_HOLD_ARCHONS_RISE },
+						["coord"] = { 48.7, 61.8, ARCHONS_RISE },
 					}),
 					fp(2631, {	-- Xandaria's Vigil, Bastion
 						["description"] = "Part of the Kyrian Rank 1 Transport Network.",

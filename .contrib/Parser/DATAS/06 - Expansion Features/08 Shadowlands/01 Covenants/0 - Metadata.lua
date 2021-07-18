@@ -9,7 +9,7 @@ _.ExpansionFeatures =
 			["icon"] = 3726261, -- Inv_misc_covenant_renown
 			["maps"] = {
 				-- Kyrian
-				ELYSIAN_HOLD_ARCHONS_RISE,
+				ARCHONS_RISE,
 				1708,	-- Elysian Hold
 				-- Necrolord
 				SEAT_OF_THE_PRIMUS,

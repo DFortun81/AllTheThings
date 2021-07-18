@@ -8,7 +8,7 @@ _.ExpansionFeatures =
 		n(-939, {	-- Covenant: Kyrian
 			["customCollect"] = "SL_COV_KYR",	-- Kyrian
 			["maps"] = {
-				ELYSIAN_HOLD_ARCHONS_RISE,
+				ARCHONS_RISE,
 				1708,	-- Elysian Hold
 			},
 			["g"] = {
@@ -23,7 +23,7 @@ _.ExpansionFeatures =
 					q(62698, {	-- A Call to Service
 						["sourceQuests"] = { 62790 },	-- The Path Provides
 						["provider"] = { "n", 176100 },	-- Iona Skyblade
-						["coord"] = { 42.7, 69.8, ELYSIAN_HOLD_ARCHONS_RISE },
+						["coord"] = { 42.7, 69.8, ARCHONS_RISE },
 					}),
 					q(62795, {	-- A Conduit for Good
 						["sourceQuests"] = { 60504 },	-- Strengthen the Bond
@@ -38,7 +38,7 @@ _.ExpansionFeatures =
 					q(61697, {	-- A New Age
 						["sourceQuests"] = { 61135 },	-- Heart of the Crest
 						["provider"] = { "n", 174177 },	-- Polemarch Adrestes
-						["coord"] = { 43.7, 66.6, ELYSIAN_HOLD_ARCHONS_RISE },
+						["coord"] = { 43.7, 66.6, ARCHONS_RISE },
 						["g"] = {
 							i(180766),	-- Eternal Phalynx of Courage (mount)
 							i(180633),	-- Grubby (pet)
@@ -53,7 +53,7 @@ _.ExpansionFeatures =
 					q(61767, {	-- A Perilous Journey
 						["sourceQuests"] = { 61785 },	-- An Expected Visitor
 						["provider"] = { "n", 154627 },	-- Xandria
-						["coord"] = { 61.8, 37.5, ELYSIAN_HOLD_ARCHONS_RISE },
+						["coord"] = { 61.8, 37.5, ARCHONS_RISE },
 					}),
 					q(60492, {	-- A Proper Reception
 						["sourceQuests"] = { 60491 },	-- Among the Kyrian
@@ -68,12 +68,12 @@ _.ExpansionFeatures =
 					q(62555, {	-- A Touch of Humility
 						["sourceQuests"] = { 57125 },	-- Time to Reflect
 						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
-						["coord"] = { 55.6, 42.0, ELYSIAN_HOLD_ARCHONS_RISE },
+						["coord"] = { 55.6, 42.0, ARCHONS_RISE },
 					}),
 					q(57905, {	-- A Unique Opportunity
 						["sourceQuests"] = { 62792 },	-- Into the Reservoir
 						["provider"] = { "n", 167745 },	-- Haephus
-						["coord"] = { 42.6, 53.1, ELYSIAN_HOLD_ARCHONS_RISE },
+						["coord"] = { 42.6, 53.1, ARCHONS_RISE },
 					}),
 					q(58566, {	-- Actions Speak Louder than Words
 						["sourceQuests"] = { 58565 },	-- Land of Light
@@ -102,7 +102,7 @@ _.ExpansionFeatures =
 					q(59919, {	-- An Earned Bond
 						["sourceQuests"] = { 58847 },	-- Kyrestia's Grace
 						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
-						["coord"] = { 55.6, 42.0, ELYSIAN_HOLD_ARCHONS_RISE },
+						["coord"] = { 55.6, 42.0, ARCHONS_RISE },
 						["g"] = {
 							follower(1258),	-- Mikanikos
 						},
@@ -110,12 +110,12 @@ _.ExpansionFeatures =
 					q(61785, {	-- An Expected Visitor
 						["description"] = "Requires Renown 11.",
 						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
-						["coord"] = { 55.6, 42.2, ELYSIAN_HOLD_ARCHONS_RISE },
+						["coord"] = { 55.6, 42.2, ARCHONS_RISE },
 					}),
 					q(58795, {	-- Ascended
 						["sourceQuests"] = { 58793 },	-- Faith Through the Darkness
 						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
-						["coord"] = { 47.8, 53.6, ELYSIAN_HOLD_ARCHONS_RISE },
+						["coord"] = { 47.8, 53.6, ARCHONS_RISE },
 						["g"] = {
 							i(178157),	-- Selfless Watcher's Legguards
 							i(177054),	-- Selfless Bearer's Legs
@@ -127,17 +127,17 @@ _.ExpansionFeatures =
 					--	["sourceQuests"] = { 61878 },	-- Creat of Greatness
 						["description"] = "Requires Renown 13.",
 						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
-						["coord"] = { 45.0, 56.9, ELYSIAN_HOLD_ARCHONS_RISE },
+						["coord"] = { 45.0, 56.9, ARCHONS_RISE },
 					}),
 					q(58844, {	-- Before the Dawn
 						["sourceQuests"] = { 58854 },	-- Convene the Paragons
 						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
-						["coord"] = { 55.6, 42.0, ELYSIAN_HOLD_ARCHONS_RISE },
+						["coord"] = { 55.6, 42.0, ARCHONS_RISE },
 					}),
 					q(58181, {	-- Building the Base
 						["sourceQuests"] = { 58183 },	-- Friend to the Forgelite
 						["provider"] = { "n", 160280 },	-- Mikanikos
-						["coord"] = { 45.2, 56.7, ELYSIAN_HOLD_ARCHONS_RISE },
+						["coord"] = { 45.2, 56.7, ARCHONS_RISE },
 						["g"] = {
 							i(180763),	-- Phalynx of Courage (MOUNT!)
 						},
@@ -179,23 +179,23 @@ _.ExpansionFeatures =
 						["description"] = "Requires Renown 22.",
 						["sourceQuests"] = { 62555 },	-- A Touch of Humility
 						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
-						["coord"] = { 55.6, 42.0, ELYSIAN_HOLD_ARCHONS_RISE },
+						["coord"] = { 55.6, 42.0, ARCHONS_RISE },
 					}),
 					q(61878, {	-- Crest of Greatness
 						["sourceQuests"] = { 61877 },	-- Return to the Hold
 						["provider"] = { "n", 173313 },	-- Xandria
-						["coord"] = { 38.9, 59.8, ELYSIAN_HOLD_ARCHONS_RISE },
+						["coord"] = { 38.9, 59.8, ARCHONS_RISE },
 					}),
 					q(57897, {	-- Dangerous to Go Alone
 						["sourceQuests"] = { 62794 },	-- Enhancing the Hold
 						["provider"] = { "n", 167745 },	-- Haephus
-						["coord"] = { 42.6, 53.1, ELYSIAN_HOLD_ARCHONS_RISE },
+						["coord"] = { 42.6, 53.1, ARCHONS_RISE },
 					}),
 					q(63002, {	-- Dangerous to Go Alone
 					--	TODO: verify coordinates and SQs for this version (possibly when you bypass the 'tour' of Elysian Hold and say you already know your way around?)
 					--	["sourceQuests"] = {  },	--
 						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
-						["coord"] = { 55.6, 42.0, ELYSIAN_HOLD_ARCHONS_RISE },
+						["coord"] = { 55.6, 42.0, ARCHONS_RISE },
 					}),
 					q(61772, {	-- Dark Developments
 						["sourceQuests"] = { 61769 },	-- Fight and Flight
@@ -242,7 +242,7 @@ _.ExpansionFeatures =
 						-- Specific requirement unknown, available immediately after returning from the maw
 						["sourceQuests"] = { 62837 },	-- Hopeful News
 						["provider"] = { "n", 167745 },    -- Haephus
-						["coord"] = { 42.6, 53.1, ELYSIAN_HOLD_ARCHONS_RISE },
+						["coord"] = { 42.6, 53.1, ARCHONS_RISE },
 						["g"] = {
 							i(177053),	-- Selfless Bearer's Hands
 							i(174292),	-- Selfless Collector's Gauntlets
@@ -300,7 +300,7 @@ _.ExpansionFeatures =
 					--	Unlocks Soulbind: Kleia (344757)
 						["sourceQuests"] = { 58796 },	-- The Forsworn Onslaught
 						["provider"] = { "n", 163650 },	-- Kleia
-						["coord"] = { 51.6, 47.7, ELYSIAN_HOLD_ARCHONS_RISE },
+						["coord"] = { 51.6, 47.7, ARCHONS_RISE },
 						["g"] = {
 						--	follower is unlocked even if you haven't built the command table yet
 							follower(1260),	-- Kleia
@@ -345,7 +345,7 @@ _.ExpansionFeatures =
 					q(61135, {	-- Heart of the Crest
 						["sourceQuests"] = { 58997 },	-- A Bittersweet Prize
 						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
-						["coord"] = { 55.6, 42.0, ELYSIAN_HOLD_ARCHONS_RISE },
+						["coord"] = { 55.6, 42.0, ARCHONS_RISE },
 						["_drop"] = { "g" },	-- fix Grubby showing up as a reward when it is not a reward for this quest
 					}),
 					q(57124, {	-- Her Will, Inflicted
@@ -370,7 +370,7 @@ _.ExpansionFeatures =
 					q(62792, {	-- Into the Reservoir
 						["sourceQuests"] = { 62791 },	-- Our Most Precious Resource
 						["provider"] = { "n", 167745 },	-- Haephus
-						["coord"] = { 42.6, 53.1, ELYSIAN_HOLD_ARCHONS_RISE },
+						["coord"] = { 42.6, 53.1, ARCHONS_RISE },
 					}),
 					q(58179, {	-- Instruments of Perfection
 						["sourceQuests"] = { 58175 },	-- The Eternal Forge
@@ -380,7 +380,7 @@ _.ExpansionFeatures =
 					q(62793, {	-- It's All Coming Together
 						["sourceQuests"] = { 62796 },	-- Return to Adrestes
 						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
-						["coord"] = { 55.6, 42.0, ELYSIAN_HOLD_ARCHONS_RISE },
+						["coord"] = { 55.6, 42.0, ARCHONS_RISE },
 						["_drop"] = { "g" },	-- make items stop showing up that are not actually rewarded by this quest
 					}),
 					q(61771, {	-- Justice from Above
@@ -396,22 +396,22 @@ _.ExpansionFeatures =
 					q(63345, {	-- Kyrian Tactician
 						["description"] = "Requires Renown 22.",
 						["provider"] = { "n", 176100 },	-- Iona Skyblade
-						["coord"] = { 42.7, 70.3, ELYSIAN_HOLD_ARCHONS_RISE },
+						["coord"] = { 42.7, 70.3, ARCHONS_RISE },
 					}),
 					q(64086, {	-- Kyrian Tactician #2
 						["description"] = "Requires Renown 59.",
 						["provider"] = { "n", 176100 },	-- Iona Skyblade
-						["coord"] = { 42.7, 70.3, ELYSIAN_HOLD_ARCHONS_RISE },
+						["coord"] = { 42.7, 70.3, ARCHONS_RISE },
 					}),
 					q(63344, {	-- Kyrian Veteran
 						["description"] = "Requires Renown 7.",
 						["provider"] = { "n", 176100 },	-- Iona Skyblade
-						["coord"] = { 42.7, 70.3, ELYSIAN_HOLD_ARCHONS_RISE },
+						["coord"] = { 42.7, 70.3, ARCHONS_RISE },
 					}),
 					q(64323, {	-- Kyrian Veteran #2
 						["description"] = "Requires Renown 43.",
 						["provider"] = { "n", 176100 },	-- Iona Skyblade
-						["coord"] = { 42.7, 70.3, ELYSIAN_HOLD_ARCHONS_RISE },
+						["coord"] = { 42.7, 70.3, ARCHONS_RISE },
 					}),
 					q(58847, {	-- Kyrestia's Grace
 						["sourceQuests"] = { 58846 },	-- The Greater Good
@@ -462,12 +462,12 @@ _.ExpansionFeatures =
 						-- ["sourceQuests"] = {  },	--
 						["description"] = "Requires Renown 20.",
 						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
-						["coord"] = { 55.6, 42.0, ELYSIAN_HOLD_ARCHONS_RISE },
+						["coord"] = { 55.6, 42.0, ARCHONS_RISE },
 					}),
 					q(58775, {	-- Meet the Queen
 						["description"] = "Requires Renown 17.",
 						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
-						["coord"] = { 55.6, 42.0, ELYSIAN_HOLD_ARCHONS_RISE },
+						["coord"] = { 55.6, 42.0, ARCHONS_RISE },
 					}),
 					q(58949, {	-- Millie's Garden
 						["sourceQuests"] = { 58791 },	-- A Day in the Life
@@ -493,7 +493,7 @@ _.ExpansionFeatures =
 					q(62789, {	-- Of Great Renown
 						["sourceQuests"] = { 57895 },	-- Elysian Hold
 						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
-						["coord"] = { 55.5, 42.1, ELYSIAN_HOLD_ARCHONS_RISE },
+						["coord"] = { 55.5, 42.1, ARCHONS_RISE },
 					}),
 					q(57904, {	-- Our Eternal Charge
 						["sourceQuests"] = { 62795 },	-- A Conduit for Good
@@ -503,12 +503,12 @@ _.ExpansionFeatures =
 					q(62791, {	-- Our Most Precious Resource
 						["description"] = "Becomes available after you complete your first Calling quest.",
 						["provider"] = { "n", 160387 },	-- Hermestes
-						["coord"] = { 40.9, 40.9, ELYSIAN_HOLD_ARCHONS_RISE },
+						["coord"] = { 40.9, 40.9, ARCHONS_RISE },
 					}),
 					q(62557, {	-- Our Realm Reclaimed
 						["sourceQuests"] = { 59919 },	-- An Earned Bond
 						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
-						["coord"] = { 55.6, 42.0, ELYSIAN_HOLD_ARCHONS_RISE },
+						["coord"] = { 55.6, 42.0, ARCHONS_RISE },
 					}),
 					q(58558, {	-- Overhead Intelligence
 						["sourceQuests"] = { 58557 },	-- Assistance from Sinfall
@@ -569,7 +569,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 57904 },	-- Our Eternal Charge
 						["provider"] = { "n", 167745 },	-- Haephus
 						["isWeekly"] = true,
-						["coord"] = { 42.6, 53.1, ELYSIAN_HOLD_ARCHONS_RISE },
+						["coord"] = { 42.6, 53.1, ARCHONS_RISE },
 					}),
 					q(61332, {	-- Return Lost Souls (5 Souls)
 						["provider"] = { "n", 160212 },	-- Soulguide Daelia
@@ -704,7 +704,7 @@ _.ExpansionFeatures =
 						-- Requires Kyrian, Renown 8
 						["sourceQuests"] = { 58798 },	-- The Spires of Ascension
 						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
-						["coord"] = { 55.5, 42.0, ELYSIAN_HOLD_ARCHONS_RISE },
+						["coord"] = { 55.5, 42.0, ARCHONS_RISE },
 					}),
 					q(58569, {	-- The Folly of Envy
 						["sourceQuests"] = {
@@ -718,7 +718,7 @@ _.ExpansionFeatures =
 					q(58796, {	-- The Forsworn Onslaught
 						["sourceQuests"] = { 58795 },	-- Ascended
 						["provider"] = { "n", 163650 },	-- Kleia
-						["coord"] = { 51.6, 47.7, ELYSIAN_HOLD_ARCHONS_RISE },
+						["coord"] = { 51.6, 47.7, ARCHONS_RISE },
 					}),
 					q(58846, {	-- The Greater Good
 						["sourceQuests"] = { 58844 },	-- Before the Dawn
@@ -728,12 +728,12 @@ _.ExpansionFeatures =
 					q(63029, {	-- The Highlord Calls
 						["sourceQuests"] = { 57904 },	-- Our Eternal Charge
 						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
-						["coord"] = { 55.6, 42.0, ELYSIAN_HOLD_ARCHONS_RISE },
+						["coord"] = { 55.6, 42.0, ARCHONS_RISE },
 					}),
 					q(62790, {	-- The Path Provides
 						["sourceQuests"] = { 62789 },	-- Of Great Renown
 						["provider"] = { "n", 176100 },	-- Iona Skyblade
-						["coord"] = { 42.7, 69.8, ELYSIAN_HOLD_ARCHONS_RISE },
+						["coord"] = { 42.7, 69.8, ARCHONS_RISE },
 					}),
 					q(57121, {	-- The Power of the Maw
 						["sourceQuests"] = { 57207 },	-- Lysonia's Plan
@@ -743,7 +743,7 @@ _.ExpansionFeatures =
 					q(58571, {	-- The Seal of Contrition
 						["sourceQuests"] = { 58570 },	-- Parting Words
 						["provider"] = { "n", 162149 },	-- Mikanikos
-						["coord"] = { 45.7, 56.5, ELYSIAN_HOLD_ARCHONS_RISE },
+						["coord"] = { 45.7, 56.5, ARCHONS_RISE },
 						["g"] = {
 							i(177050),	-- Selfless Bearer's Head
 							i(174289),	-- Selfless Collector's GreatHelm
@@ -784,7 +784,7 @@ _.ExpansionFeatures =
 					q(58787, {	-- Trial of Ascension
 						["description"] = "Requires Renown 5.",
 						["provider"] = { "n", 160037 },	-- Polemarch Adrestes
-						["coord"] = { 55.6, 42.0, ELYSIAN_HOLD_ARCHONS_RISE },
+						["coord"] = { 55.6, 42.0, ARCHONS_RISE },
 					}),
 					q(58832, {	-- Trinkle Trinkle Little Twerp
 						["sourceQuests"] = { 58775 },	-- Meet the Queen

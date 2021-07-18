@@ -8,7 +8,7 @@ _.ExpansionFeatures =
 		n(-939, {	-- Covenant: Kyrian
 			["customCollect"] = "SL_COV_KYR",	-- Kyrian
 			["maps"] = {
-				ELYSIAN_HOLD_ARCHONS_RISE,
+				ARCHONS_RISE,
 				1708,	-- Elysian Hold
 			},
 			["g"] = {
@@ -17,7 +17,7 @@ _.ExpansionFeatures =
 						n(-916, {	-- Tier 1: Flowing Tendrils
 							q(57901, {	-- All That Remains
 								["provider"] = { "n", 167745 },	-- Haephus
-								["coord"] = { 42.6, 53.1, ELYSIAN_HOLD_ARCHONS_RISE },
+								["coord"] = { 42.6, 53.1, ARCHONS_RISE },
 							}),
 							o(356818, {	-- Penitence of Purity
 								["description"] = "Requires channeling anima to the Temple of Purity.  The mount is not a guaranteed drop.",
@@ -32,7 +32,7 @@ _.ExpansionFeatures =
 							q(57903, {	-- Power in the Sky
 								["sourceQuests"] = { 57901 },	-- All That Remains
 								["provider"] = { "n", 158773 },	-- Capheus
-								["coord"] = { 37.9, 67.5, ELYSIAN_HOLD_ARCHONS_RISE },
+								["coord"] = { 37.9, 67.5, ARCHONS_RISE },
 							}),
 						}),
 						n(-917, {	-- Tier 2: Streaming Threads
@@ -102,7 +102,7 @@ _.ExpansionFeatures =
 							q(57900, {	-- Across the Shadowlands
 								["sourceQuests"] = { 57899 },	-- More Work?
 								["provider"] = { "n", 160389 },	-- Koros
-								["coord"] = { 43.8, 40.7, ELYSIAN_HOLD_ARCHONS_RISE },
+								["coord"] = { 43.8, 40.7, ARCHONS_RISE },
 								["g"] = {
 								--	follower is granted upon accepting the quest
 									follower(1259),	-- Pelagos
@@ -111,7 +111,7 @@ _.ExpansionFeatures =
 							q(61863, {	-- Adventurer: Apolon
 								["description"] = "Requires Renown 27.",
 								["provider"] = { "n", 160389 },    -- Koros
-								["coord"] = { 43.8, 40.7, ELYSIAN_HOLD_ARCHONS_RISE },
+								["coord"] = { 43.8, 40.7, ARCHONS_RISE },
 								["g"] = {
 									follower(1276),	-- Apolon
 								},
@@ -119,7 +119,7 @@ _.ExpansionFeatures =
 							q(64463, {	-- Adventurer: Auric Spiritguide
 								["description"] = "Requires Renown 71.",
 								["provider"] = { "n", 160389 },    -- Koros
-								["coord"] = { 43.8, 40.7, ELYSIAN_HOLD_ARCHONS_RISE },
+								["coord"] = { 43.8, 40.7, ARCHONS_RISE },
 								["g"] = {
 									follower(1343),	-- Auric Spiritguide
 								},
@@ -127,7 +127,7 @@ _.ExpansionFeatures =
 							q(61864, {	-- Adventurer: Bron
 								["description"] = "Requires Renown 33.",
 								["provider"] = { "n", 160389 },    -- Koros
-								["coord"] = { 43.8, 40.7, ELYSIAN_HOLD_ARCHONS_RISE },
+								["coord"] = { 43.8, 40.7, ARCHONS_RISE },
 								["g"] = {
 									follower(1275),	-- Bron
 								},
@@ -135,7 +135,7 @@ _.ExpansionFeatures =
 							q(61862, {	-- Adventurer: Clora
 								["description"] = "Requires Renown 17.",
 								["provider"] = { "n", 160389 },    -- Koros
-								["coord"] = { 43.8, 40.7, ELYSIAN_HOLD_ARCHONS_RISE },
+								["coord"] = { 43.8, 40.7, ARCHONS_RISE },
 								["g"] = {
 									follower(1273),	-- Clora
 								},
@@ -143,7 +143,7 @@ _.ExpansionFeatures =
 							q(64462, {	-- Adventurer: Cromas the Mystic
 								["description"] = "Requires Renown 62.",
 								["provider"] = { "n", 160389 },    -- Koros
-								["coord"] = { 43.8, 40.7, ELYSIAN_HOLD_ARCHONS_RISE },
+								["coord"] = { 43.8, 40.7, ARCHONS_RISE },
 								["g"] = {
 									follower(1342),	-- Cromas the Mystic
 								},
@@ -151,7 +151,7 @@ _.ExpansionFeatures =
 							q(61865, {	-- Adventurer: Disciple Kosmas
 								["description"] = "Requires Renown 38.",
 								["provider"] = { "n", 160389 },    -- Koros
-								["coord"] = { 43.8, 40.7, ELYSIAN_HOLD_ARCHONS_RISE },
+								["coord"] = { 43.8, 40.7, ARCHONS_RISE },
 								["g"] = {
 									follower(1274),	-- Disciple Kosmas
 								},
@@ -159,7 +159,7 @@ _.ExpansionFeatures =
 							q(64461, {	-- Adventurer: Hermestes
 								["description"] = "Requires Renown 44.",
 								["provider"] = { "n", 160389 },	-- Koros
-								["coord"] = { 43.8, 40.7, ELYSIAN_HOLD_ARCHONS_RISE },
+								["coord"] = { 43.8, 40.7, ARCHONS_RISE },
 								["g"] = {
 									follower(1341),	-- Hermestes
 								},
@@ -168,7 +168,7 @@ _.ExpansionFeatures =
 								["sourceQuests"] = { 58103 },    -- Pride or Unit
 								["description"] = "Requires Renown 4. Must choose Nemea in the Pride or Unit quest to get this follower.",
 								["provider"] = { "n", 160389 },    -- Koros
-								["coord"] = { 43.8, 40.7, ELYSIAN_HOLD_ARCHONS_RISE },
+								["coord"] = { 43.8, 40.7, ARCHONS_RISE },
 								["g"] = {
 									follower(1270),	-- Nemea
 								},
@@ -177,7 +177,7 @@ _.ExpansionFeatures =
 								["sourceQuests"] = { 58103 },    -- Pride or Unit
 								["description"] = "Requires Renown 4. Must choose Pelodis in the Pride or Unit quest to get this follower.",
 								["provider"] = { "n", 160389 },    -- Koros
-								["coord"] = { 43.8, 40.7, ELYSIAN_HOLD_ARCHONS_RISE },
+								["coord"] = { 43.8, 40.7, ARCHONS_RISE },
 								["g"] = {
 									follower(1271),	-- Pelodis
 								},
@@ -185,14 +185,14 @@ _.ExpansionFeatures =
 							q(61861, {	-- Adventurer: Sika
 								["description"] = "Requires Renown 12.",
 								["provider"] = { "n", 160389 },    -- Koros
-								["coord"] = { 43.8, 40.7, ELYSIAN_HOLD_ARCHONS_RISE },
+								["coord"] = { 43.8, 40.7, ARCHONS_RISE },
 								["g"] = {
 									follower(1272),	-- Sika
 								},
 							}),
 							q(57899, {	-- More Work?
 								["provider"] = { "n", 167745 },	-- Haephus
-								["coord"] = { 42.6, 53.1, ELYSIAN_HOLD_ARCHONS_RISE },
+								["coord"] = { 42.6, 53.1, ARCHONS_RISE },
 							}),
 							q(63068, {	-- Settling Disputes
 							--	TODO: is altQuests necessary or do they complete each other?
@@ -202,7 +202,7 @@ _.ExpansionFeatures =
 								["description"] = "Requires Renown 4.",
 								["altQuests"] = { 59674 },    -- A Friendly Rivalry
 								["provider"] = { "n", 160389 },    -- Koros
-								["coord"] = { 43.8, 40.7, ELYSIAN_HOLD_ARCHONS_RISE },
+								["coord"] = { 43.8, 40.7, ARCHONS_RISE },
 							}),
 						}),
 						-- TODO: create headers for these
@@ -631,7 +631,7 @@ _.ExpansionFeatures =
 										-- Grants Ascension Crafting recipe: Herald's Footpads (spell 346680)
 										["sourceQuests"] = { 60496 },	-- Into the Coliseum
 										["provider"] = { "n", 168427 },	-- Artemede
-										["coord"] = { 28.2, 42.4, ELYSIAN_HOLD_ARCHONS_RISE },
+										["coord"] = { 28.2, 42.4, ARCHONS_RISE },
 									}),
 									q(60974, {	-- Phial of Serenity
 										["sourceQuests"] = { 60973 },	-- Blueprint: Phial of Serenity
@@ -674,22 +674,22 @@ _.ExpansionFeatures =
 									q(62218, {	-- A Fountain for Fae
 										["sourceQuests"] = { 61361 },	-- Nuuminuuru
 										["provider"] = { "n", 168430 },	-- Dactylis
-										["coord"] = { 29.9, 38.8, ELYSIAN_HOLD_ARCHONS_RISE },
+										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
 									}),
 									q(60495, {	-- A Suitable Opponent
 										["sourceQuests"] = { 60494 },	-- Your Friend, Dactylis
 										["provider"] = { "n", 168485 },	-- Apolon
-										["coord"] = { 27.8, 41.7, ELYSIAN_HOLD_ARCHONS_RISE },
+										["coord"] = { 27.8, 41.7, ARCHONS_RISE },
 									}),
 									q(61358, {	-- Alderyn and Myn'ir
 										["sourceQuests"] = { 60498 },	-- Overcoming the Trial
 										["provider"] = { "n", 168430 },	-- Dactylis
-										["coord"] = { 29.9, 38.8, ELYSIAN_HOLD_ARCHONS_RISE },
+										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
 									}),
 									q(61963, {	-- Called to the Hunt
 										["sourceQuests"] = { 61358 },	-- Alderyn and Myn'ir
 										["provider"] = { "n", 168430 },	-- Dactylis
-										["coord"] = { 29.9, 38.8, ELYSIAN_HOLD_ARCHONS_RISE },
+										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
 									}),
 									q(61362, {	-- Caretaker of Faeries
 										-- Rewards spell 340388 (Trial: Nuuminuuru)
@@ -700,12 +700,12 @@ _.ExpansionFeatures =
 									q(61369, {	-- Craven Corinth
 										["description"] = "Available after defeating Kalisthene, Echthra, and Aldryn & Myn'ir on 'Courage' difficulty.",
 										["provider"] = { "n", 168430 },	-- Dactylis
-										["coord"] = { 29.9, 38.8, ELYSIAN_HOLD_ARCHONS_RISE },
+										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
 									}),
 									q(61356, {	-- Echthra, Dame of Hated
 										["sourceQuests"] = { 60498 },	-- Overcoming the Trial
 										["provider"] = { "n", 168430 },	-- Dactylis
-										["coord"] = { 29.9, 38.8, ELYSIAN_HOLD_ARCHONS_RISE },
+										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
 									}),
 									q(62219, {	-- Fanciful Distractions
 										["sourceQuests"] = { 62218 },	-- A Fountain for Fae
@@ -721,12 +721,12 @@ _.ExpansionFeatures =
 									q(60493, {	-- Humble Gatherer
 										["sourceQuests"] = { 60489 },	-- The Path of Ascension
 										["provider"] = { "n", 168485 },	-- Apolon
-										["coord"] = { 27.8, 41.7, ELYSIAN_HOLD_ARCHONS_RISE },
+										["coord"] = { 27.8, 41.7, ARCHONS_RISE },
 									}),
 									q(60496, {	-- Into the Coliseum
 										["sourceQuests"] = { 60495 },	-- A Suitable Opponent
 										["provider"] = { "n", 168427 },	-- Artemede
-										["coord"] = { 28.2, 42.4, ELYSIAN_HOLD_ARCHONS_RISE },
+										["coord"] = { 28.2, 42.4, ARCHONS_RISE },
 										["g"] = {
 											i(180481),	-- Curious Blueprint
 										},
@@ -735,22 +735,22 @@ _.ExpansionFeatures =
 										-- Rewards spell 340105 (Trial: Craven Corinth)
 										["sourceQuests"] = { 61369 },	-- Craven Corinth
 										["provider"] = { "n", 168430 },	-- Dactylis
-										["coord"] = { 29.9, 38.8, ELYSIAN_HOLD_ARCHONS_RISE },
+										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
 									}),
 									q(61361, {	-- Nuuminuuru
 										["description"] = "Available after defeating Kalisthene, Echthra, and Aldryn & Myn'ir on 'Courage' difficulty.",
 										["provider"] = { "n", 168430 },	-- Dactylis
-										["coord"] = { 29.9, 38.8, ELYSIAN_HOLD_ARCHONS_RISE },
+										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
 									}),
 									q(61489, {	-- Of Hearsay and Heresy
 										["sourceQuests"] = { 61356 },	-- Echthre, Dame of Hatred
 										["provider"] = { "n", 168430 },	-- Dactylis
-										["coord"] = { 29.9, 38.8, ELYSIAN_HOLD_ARCHONS_RISE },
+										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
 									}),
 									q(60498, {	-- Overcoming the Trial
 										["sourceQuests"] = { 61473 },	-- Sourcing Your Own Materials
 										["provider"] = { "n", 168427 },	-- Artemede
-										["coord"] = { 28.2, 42.4, ELYSIAN_HOLD_ARCHONS_RISE },
+										["coord"] = { 28.2, 42.4, ARCHONS_RISE },
 									}),
 									q(61965, {	-- Piercing the Shell
 										["sourceQuests"] = { 61963 },	-- Called to the Hunt
@@ -760,18 +760,18 @@ _.ExpansionFeatures =
 									q(61473, {	-- Sourcing Your Own Materials
 										["sourceQuests"] = { 60497 },	-- Herald's Footpads
 										["provider"] = { "n", 168430 },	-- Dactylis
-										["coord"] = { 29.9, 38.8, ELYSIAN_HOLD_ARCHONS_RISE },
+										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
 									}),
 									q(61365, {	-- Splinterbark Nightmare
 										["description"] = "Available after defeating Kalisthene, Echthra, and Aldryn & Myn'ir on 'Courage' difficulty.",
 										["provider"] = { "n", 168430 },	-- Dactylis
-										["coord"] = { 29.9, 38.8, ELYSIAN_HOLD_ARCHONS_RISE },
+										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
 									}),
 									q(61366, {	-- Tactical Operation
 										-- Rewards spell 340108 (Trial: Splinterbark Nightmare)
 										["sourceQuests"] = { 61365 },	-- Splinterbark Nightmare
 										["provider"] = { "n", 168430 },	-- Dactylis
-										["coord"] = { 29.9, 38.8, ELYSIAN_HOLD_ARCHONS_RISE },
+										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
 									}),
 									q(61360, {	-- The Hunt's Gratitude
 										-- Rewards: spell 339523 "Trial: Alderyn and Myn'ir"
@@ -781,7 +781,7 @@ _.ExpansionFeatures =
 									}),
 									q(60489, {	-- The Path of Ascension
 										["provider"] = { "n", 167745 },	-- Haephus
-										["coord"] = { 42.6, 53.1, ELYSIAN_HOLD_ARCHONS_RISE },
+										["coord"] = { 42.6, 53.1, ARCHONS_RISE },
 									}),
 									q(61490, {	-- War of Information
 										["sourceQuests"] = { 61489 },	-- Of Hearsay and Heresy
@@ -791,7 +791,7 @@ _.ExpansionFeatures =
 									q(60494, {	-- Your Friend, Dactylis
 										["sourceQuests"] = { 60493 },	-- Humble Gatherer
 										["provider"] = { "n", 168485 },	-- Apolon
-										["coord"] = { 27.8, 41.7, ELYSIAN_HOLD_ARCHONS_RISE },
+										["coord"] = { 27.8, 41.7, ARCHONS_RISE },
 									}),
 								}),
 							}),
@@ -802,12 +802,12 @@ _.ExpansionFeatures =
 										-- TODO: not 100% sure of the requirements
 										["description"] = "Available after defeating Kalisthene, Echthra, Alderyn and Myn'ir, and Nuuminuuru on 'Loyalty' difficulties.",
 										["provider"] = { "n", 168430 },	-- Dactylis
-										["coord"] = { 29.9, 38.8, ELYSIAN_HOLD_ARCHONS_RISE },
+										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
 									}),
 									q(61373, {	-- Azaruux, the Realm Ender
 										["description"] = "Available after defeating Athanos, Mad Mortimer, and Thran'tiok on 'Courage' difficulty.",
 										["provider"] = { "n", 168430 },	-- Dactylis
-										["coord"] = { 29.9, 38.8, ELYSIAN_HOLD_ARCHONS_RISE },
+										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
 									}),
 									q(61372, {	-- Back to Him
 										["sourceQuests"] = { 61478 },	-- Humble Beginnings
@@ -817,12 +817,12 @@ _.ExpansionFeatures =
 									q(62052, {	-- Exiled by Paranoia
 										["sourceQuests"] = { 61367 },	-- Thran'tiok
 										["provider"] = { "n", 168430 },	-- Dactylis
-										["coord"] = { 29.9, 38.8, ELYSIAN_HOLD_ARCHONS_RISE },
+										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
 									}),
 									q(61436, {	-- Field Trip
 										["sourceQuests"] = { 61363 },	-- Mad Mortimer
 										["provider"] = { "n", 168430 },	-- Dactylis
-										["coord"] = { 29.9, 38.8, ELYSIAN_HOLD_ARCHONS_RISE },
+										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
 									}),
 									q(61368, {	-- Filching Phylacteries
 										["sourceQuests"] = { 62053 },	-- Necromantic Power
@@ -832,13 +832,13 @@ _.ExpansionFeatures =
 									q(61478, {	-- Humble Beginnings
 										["sourceQuests"] = { 61371 },	-- Athanos
 										["provider"] = { "n", 168430 },	-- Dactylis
-										["coord"] = { 29.9, 38.8, ELYSIAN_HOLD_ARCHONS_RISE },
+										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
 									}),
 									q(61363, {	-- Mad Mortimer
 										-- TODO: not 100% sure of the requirements
 										["description"] = "Available after defeating Kalisthene, Echthra, Alderyn and Myn'ir, and Nuuminuuru on 'Loyalty' difficulties.",
 										["provider"] = { "n", 168430 },	-- Dactylis
-										["coord"] = { 29.9, 38.8, ELYSIAN_HOLD_ARCHONS_RISE },
+										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
 									}),
 									q(62053, {	-- Necromantic Power
 										["sourceQuests"] = { 62052 },	-- Exiled by Paranoia
@@ -853,7 +853,7 @@ _.ExpansionFeatures =
 									q(63169, {	-- Path of Ascension: Alderyn and Myn'ir
 										-- ["sourceQuests"] = {  },	-- TODO: ?
 										["provider"] = { "n", 168485 },	-- Apolon
-										["coord"] = { 27.8, 41.7, ELYSIAN_HOLD_ARCHONS_RISE },
+										["coord"] = { 27.8, 41.7, ARCHONS_RISE },
 										["isWeekly"] = true,
 										["g"] = {
 											i(184812),	-- Apolon's Bounty
@@ -862,7 +862,7 @@ _.ExpansionFeatures =
 									q(63175, {	-- Path of Ascension: Athanos
 										["provider"] = { "n", 168485 },	-- Apolon
 										["isWeekly"] = true,
-										["coord"] = { 28.1, 41.7, ELYSIAN_HOLD_ARCHONS_RISE },
+										["coord"] = { 28.1, 41.7, ARCHONS_RISE },
 										["g"] = {
 											i(184812),	-- Apolon's Bounty
 										},
@@ -870,7 +870,7 @@ _.ExpansionFeatures =
 									q(63176, {	-- Path of Ascension: Azaruux
 										["provider"] = { "n", 168485 },	-- Apolon
 										["isWeekly"] = true,
-										["coord"] = { 28.1, 41.7, ELYSIAN_HOLD_ARCHONS_RISE },
+										["coord"] = { 28.1, 41.7, ARCHONS_RISE },
 										["g"] = {
 											i(184812),	-- Apolon's Bounty
 										},
@@ -878,7 +878,7 @@ _.ExpansionFeatures =
 									q(63171, {	-- Path of Ascension: Craven Corinth
 										-- ["sourceQuests"] = {  },	-- TODO: ?
 										["provider"] = { "n", 168485 },	-- Apolon
-										["coord"] = { 27.8, 41.7, ELYSIAN_HOLD_ARCHONS_RISE },
+										["coord"] = { 27.8, 41.7, ARCHONS_RISE },
 										["isWeekly"] = true,
 										["g"] = {
 											i(184812),	-- Apolon's Bounty
@@ -887,7 +887,7 @@ _.ExpansionFeatures =
 									q(63168, {	-- Path of Ascension: Echthra
 										["provider"] = { "n", 168485 },	-- Apolon
 										["isWeekly"] = true,
-										["coord"] = { 28.1, 41.7, ELYSIAN_HOLD_ARCHONS_RISE },
+										["coord"] = { 28.1, 41.7, ARCHONS_RISE },
 										["g"] = {
 											i(184812),	-- Apolon's Bounty
 										},
@@ -895,7 +895,7 @@ _.ExpansionFeatures =
 									q(62954, {	-- Path of Ascension: Kalisthene
 										["provider"] = { "n", 168485 },	-- Apolon
 										["isWeekly"] = true,
-										["coord"] = { 28.1, 41.7, ELYSIAN_HOLD_ARCHONS_RISE },
+										["coord"] = { 28.1, 41.7, ARCHONS_RISE },
 										["g"] = {
 											i(184812),	-- Apolon's Bounty
 										},
@@ -903,7 +903,7 @@ _.ExpansionFeatures =
 									q(62951, {	-- Path of Ascension: Kleia
 										-- ["sourceQuests"] = {  },	-- TODO: ?
 										["provider"] = { "n", 168485 },	-- Apolon
-										["coord"] = { 27.8, 41.7, ELYSIAN_HOLD_ARCHONS_RISE },
+										["coord"] = { 27.8, 41.7, ARCHONS_RISE },
 										["isWeekly"] = true,
 										["g"] = {
 											i(184812),	-- Apolon's Bounty
@@ -912,7 +912,7 @@ _.ExpansionFeatures =
 									q(63174, {	-- Path of Ascension: Mad Mortimer
 										["provider"] = { "n", 168485 },	-- Apolon
 										["isWeekly"] = true,
-										["coord"] = { 28.1, 41.7, ELYSIAN_HOLD_ARCHONS_RISE },
+										["coord"] = { 28.1, 41.7, ARCHONS_RISE },
 										["g"] = {
 											i(184812),	-- Apolon's Bounty
 										},
@@ -920,7 +920,7 @@ _.ExpansionFeatures =
 									q(62953, {	-- Path of Ascension: Mikanikos
 										["provider"] = { "n", 168485 },	-- Apolon
 										["isWeekly"] = true,
-										["coord"] = { 28.1, 41.7, ELYSIAN_HOLD_ARCHONS_RISE },
+										["coord"] = { 28.1, 41.7, ARCHONS_RISE },
 										["g"] = {
 											i(184812),	-- Apolon's Bounty
 										},
@@ -928,7 +928,7 @@ _.ExpansionFeatures =
 									q(63170, {	-- Path of Ascension: Nuuminuuru
 										["provider"] = { "n", 168485 },	-- Apolon
 										["isWeekly"] = true,
-										["coord"] = { 28.1, 41.7, ELYSIAN_HOLD_ARCHONS_RISE },
+										["coord"] = { 28.1, 41.7, ARCHONS_RISE },
 										["g"] = {
 											i(184812),	-- Apolon's Bounty
 										},
@@ -936,7 +936,7 @@ _.ExpansionFeatures =
 									q(62952, {	-- Path of Ascension: Pelagos
 										-- ["sourceQuests"] = {  },	-- TODO: ?
 										["provider"] = { "n", 168485 },	-- Apolon
-										["coord"] = { 27.8, 41.7, ELYSIAN_HOLD_ARCHONS_RISE },
+										["coord"] = { 27.8, 41.7, ARCHONS_RISE },
 										["isWeekly"] = true,
 										["g"] = {
 											i(184812),	-- Apolon's Bounty
@@ -946,7 +946,7 @@ _.ExpansionFeatures =
 									--	this was the first weekly that showed up for me, as soon as i came back to turn in Oozing with Opportunity, Filching Phylacteries, and Back to Him (prior to turn-in)
 										["provider"] = { "n", 168485 },	-- Apolon
 										["isWeekly"] = true,
-										["coord"] = { 28.1, 41.7, ELYSIAN_HOLD_ARCHONS_RISE },
+										["coord"] = { 28.1, 41.7, ARCHONS_RISE },
 										["g"] = {
 											i(184812),	-- Apolon's Bounty
 										},
@@ -954,7 +954,7 @@ _.ExpansionFeatures =
 									q(63173, {	-- Path of Ascension: Thran'tiok
 										["provider"] = { "n", 168485 },	-- Apolon
 										["isWeekly"] = true,
-										["coord"] = { 28.1, 41.7, ELYSIAN_HOLD_ARCHONS_RISE },
+										["coord"] = { 28.1, 41.7, ARCHONS_RISE },
 										["g"] = {
 											i(184812),	-- Apolon's Bounty
 										},
@@ -963,7 +963,7 @@ _.ExpansionFeatures =
 										-- TODO: not 100% sure of the requirements
 										["description"] = "Available after defeating Kalisthene, Echthra, Alderyn and Myn'ir, and Nuuminuuru on 'Loyalty' difficulties.",
 										["provider"] = { "n", 168430 },	-- Dactylis
-										["coord"] = { 29.9, 38.8, ELYSIAN_HOLD_ARCHONS_RISE },
+										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
 									}),
 								}),
 							}),
@@ -972,7 +972,7 @@ _.ExpansionFeatures =
 									q(63181, {	-- Path of Ascension: Artemede's Challenge
 										["provider"] = { "n", 168427 },	-- Artemede
 										["isWeekly"] = true,
-										["coord"] = { 28.2, 42.3, ELYSIAN_HOLD_ARCHONS_RISE },
+										["coord"] = { 28.2, 42.3, ARCHONS_RISE },
 										["g"] = {
 											i(184811),	-- Artemede's Bounty
 										},
@@ -980,7 +980,7 @@ _.ExpansionFeatures =
 									q(63182, {	-- Path of Ascension: Artemede's Challenge
 										["provider"] = { "n", 168427 },	-- Artemede
 										["isWeekly"] = true,
-										["coord"] = { 28.2, 42.3, ELYSIAN_HOLD_ARCHONS_RISE },
+										["coord"] = { 28.2, 42.3, ARCHONS_RISE },
 										["g"] = {
 											i(184811),	-- Artemede's Bounty
 										},
@@ -988,7 +988,7 @@ _.ExpansionFeatures =
 									q(63184, {	-- Path of Ascension: Artemede's Challenge
 										["provider"] = { "n", 168427 },	-- Artemede
 										["isWeekly"] = true,
-										["coord"] = { 28.2, 42.3, ELYSIAN_HOLD_ARCHONS_RISE },
+										["coord"] = { 28.2, 42.3, ARCHONS_RISE },
 										["g"] = {
 											i(184811),	-- Artemede's Bounty
 										},
@@ -996,7 +996,7 @@ _.ExpansionFeatures =
 									q(63185, {	-- Path of Ascension: Artemede's Challenge
 										["provider"] = { "n", 168427 },	-- Artemede
 										["isWeekly"] = true,
-										["coord"] = { 28.2, 42.3, ELYSIAN_HOLD_ARCHONS_RISE },
+										["coord"] = { 28.2, 42.3, ARCHONS_RISE },
 										["g"] = {
 											i(184811),	-- Artemede's Bounty
 										},
@@ -1004,7 +1004,7 @@ _.ExpansionFeatures =
 									q(63186, {	-- Path of Ascension: Artemede's Challenge
 										["provider"] = { "n", 168427 },	-- Artemede
 										["isWeekly"] = true,
-										["coord"] = { 28.2, 42.3, ELYSIAN_HOLD_ARCHONS_RISE },
+										["coord"] = { 28.2, 42.3, ARCHONS_RISE },
 										["g"] = {
 											i(184811),	-- Artemede's Bounty
 										},
@@ -1012,7 +1012,7 @@ _.ExpansionFeatures =
 									q(63187, {	-- Path of Ascension: Artemede's Challenge
 										["provider"] = { "n", 168427 },	-- Artemede
 										["isWeekly"] = true,
-										["coord"] = { 28.2, 42.3, ELYSIAN_HOLD_ARCHONS_RISE },
+										["coord"] = { 28.2, 42.3, ARCHONS_RISE },
 										["g"] = {
 											i(184811),	-- Artemede's Bounty
 										},
@@ -1020,7 +1020,7 @@ _.ExpansionFeatures =
 									q(63188, {	-- Path of Ascension: Artemede's Challenge
 										["provider"] = { "n", 168427 },	-- Artemede
 										["isWeekly"] = true,
-										["coord"] = { 28.2, 42.3, ELYSIAN_HOLD_ARCHONS_RISE },
+										["coord"] = { 28.2, 42.3, ARCHONS_RISE },
 										["g"] = {
 											i(184811),	-- Artemede's Bounty
 										},
@@ -1028,7 +1028,7 @@ _.ExpansionFeatures =
 									q(63189, {	-- Path of Ascension: Artemede's Challenge
 										["provider"] = { "n", 168427 },	-- Artemede
 										["isWeekly"] = true,
-										["coord"] = { 28.2, 42.3, ELYSIAN_HOLD_ARCHONS_RISE },
+										["coord"] = { 28.2, 42.3, ARCHONS_RISE },
 										["g"] = {
 											i(184811),	-- Artemede's Bounty
 										},
@@ -1036,7 +1036,7 @@ _.ExpansionFeatures =
 									q(63190, {	-- Path of Ascension: Artemede's Challenge
 										["provider"] = { "n", 168427 },	-- Artemede
 										["isWeekly"] = true,
-										["coord"] = { 28.2, 42.3, ELYSIAN_HOLD_ARCHONS_RISE },
+										["coord"] = { 28.2, 42.3, ARCHONS_RISE },
 										["g"] = {
 											i(184811),	-- Artemede's Bounty
 										},
@@ -1044,7 +1044,7 @@ _.ExpansionFeatures =
 									q(63191, {	-- Path of Ascension: Artemede's Challenge
 										["provider"] = { "n", 168427 },	-- Artemede
 										["isWeekly"] = true,
-										["coord"] = { 28.2, 42.3, ELYSIAN_HOLD_ARCHONS_RISE },
+										["coord"] = { 28.2, 42.3, ARCHONS_RISE },
 										["g"] = {
 											i(184811),	-- Artemede's Bounty
 										},
@@ -1080,7 +1080,7 @@ _.ExpansionFeatures =
 							}),
 							n(VENDORS, {
 								n(171973, {	-- Binkiros <Mount Vendor>
-									["coord"] = { 31.6, 48.0, ELYSIAN_HOLD_ARCHONS_RISE },
+									["coord"] = { 31.6, 48.0, ARCHONS_RISE },
 									["g"] = {
 										i(180768, {	-- Eternal Phalynx of Humility
 											["customCollect"] = "SL_COV_KYR",	-- Kyrian
@@ -1102,7 +1102,7 @@ _.ExpansionFeatures =
 									},
 								}),
 								n(171959, {	-- Orluna <Armor Vendor>
-									["coord"] = { 27.1, 40.9, ELYSIAN_HOLD_ARCHONS_RISE },
+									["coord"] = { 27.1, 40.9, ARCHONS_RISE },
 									["g"] = {
 										i(177222, {	-- Discordant Bearer's Cloak
 											["cost"] = { { "c", 1813, 750 } },	-- 750x Reservoir Anima
@@ -1184,7 +1184,7 @@ _.ExpansionFeatures =
 									},
 								}),
 								n(171958, {	-- Phixin <Weapon Vendor>
-									["coord"] = { 30.4, 39.7, ELYSIAN_HOLD_ARCHONS_RISE },
+									["coord"] = { 30.4, 39.7, ARCHONS_RISE },
 									["g"] = {
 									--	TODO: verify prices of items marked with * (these items are not on wowhead but were reported as coming from this vendor by nohh on discord.  i think the ability to purchase the items is unlocked via completing specific PoA achievements, so they may not be visible for all kyrians immediately)
 										i(181322, {	-- Bonebound Tome*
@@ -1328,7 +1328,7 @@ _.ExpansionFeatures =
 									},
 								}),
 								n(171981, {	-- Zeleskos <Pet Vendor>
-									["coord"] = { 31.1, 47.3, ELYSIAN_HOLD_ARCHONS_RISE },
+									["coord"] = { 31.1, 47.3, ARCHONS_RISE },
 									["g"] = {
 										i(181315, {	-- Bloodfeaster Spiderling
 											["cost"] = { { "i", 163036, 250 } },	-- 250x Polished Pet Charm
@@ -1358,11 +1358,11 @@ _.ExpansionFeatures =
 							q(63053, {	-- At a Moment's Notice
 								["sourceQuests"] = { 63052 },	-- Step of Faith
 								["provider"] = { "n", 175907 },	-- Khamsius
-								["coord"] = { 48.9, 62.7, ELYSIAN_HOLD_ARCHONS_RISE },
+								["coord"] = { 48.9, 62.7, ARCHONS_RISE },
 							}),
 							q(63052, {	-- Step of Faith
 								["provider"] = { "n", 167745 },	-- Haephus
-								["coord"] = { 42.6, 53.1, ELYSIAN_HOLD_ARCHONS_RISE },
+								["coord"] = { 42.6, 53.1, ARCHONS_RISE },
 							}),
 						}),
 						n(-3349, {	-- Tier 2: Leap of Power
