@@ -741,7 +741,7 @@ _.Zones =
 						{ "n", 175056 },	-- Prince Renathal [at Darkhaven, for non-Venthyr]
 					},
 					["coords"] = {
-						{ 52.0, 38.6, 1699 },	-- Prince Renathal [in Sinfall, for Venthyr]
+						{ 52.0, 38.6, SINFALL_REACHES },	-- Prince Renathal [for Venthyr]
 						{ 61.4, 60.2, REVENDRETH },	-- Prince Renathal [at Darkhaven, for non-Venthyr]
 					},
 					["sourceQuests"] = {
@@ -798,7 +798,7 @@ _.Zones =
 						{ "n", 175056 },	-- Prince Renathal [at Darkhaven, for non-Venthyr]
 					},
 					["coords"] = {
-						{ 52.0, 38.6, 1699 },	-- Prince Renathal [in Sinfall, for Venthyr]
+						{ 52.0, 38.6, SINFALL_REACHES },	-- Prince Renathal [for Venthyr]
 						{ 61.4, 60.2, REVENDRETH },	-- Prince Renathal [at Darkhaven, for non-Venthyr]
 					},
 					["sourceQuests"] = { 62778 },	-- Reinforcing Revendreth

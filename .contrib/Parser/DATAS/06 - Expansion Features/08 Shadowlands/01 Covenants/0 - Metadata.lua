@@ -18,7 +18,7 @@ _.ExpansionFeatures =
 				1702,	-- Heart of the Forest - The Roots
 				1703,	-- Heart of the Forest - The Canopy
 				-- Venthyr
-				1699,	-- Sinfall Reaches
+				SINFALL_REACHES,
 				1700,	-- Sinfall Depths
 			},
 		}),

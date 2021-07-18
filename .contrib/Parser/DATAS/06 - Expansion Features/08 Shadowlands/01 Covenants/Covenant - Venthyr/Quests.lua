@@ -11,7 +11,7 @@ _.ExpansionFeatures =
 			-- "Our True Purpose" 59324 no longer shows as a 'valid Quest' from the server (2020-12-04), meaning likely no character has acquired it this week (2) of the expac?
 			-- But it is complete for my main, as well as 62921... /shrug
 			["maps"] = {
-				1699,	-- Sinfall Reaches
+				SINFALL_REACHES,
 				1700,	-- Sinfall Depths
 			},
 			["g"] = {
@@ -33,17 +33,17 @@ _.ExpansionFeatures =
 					q(62695, {	-- A Call to Service
 						["sourceQuests"] = { 62857 },	-- The Court's Bounty
 						["provider"] = { "n", 175772 },	-- Rahel
-						["coord"] = { 54.0, 27.2, 1699 },	-- Sinfall Reaches
+						["coord"] = { 54.0, 27.2, SINFALL_REACHES },
 					}),
 					q(62914, {	-- A Coalition of the Willing
 						["sourceQuests"] = { 62870 },	-- Souls for Sinfall
 						["provider"] = { "n", 164738 },	-- Tenaval
-						["coord"] = { 45.9, 27.6, 1699 },	-- Sinfall Reaches
+						["coord"] = { 45.9, 27.6, SINFALL_REACHES },
 					}),
 					q(62920, {	-- A Conduit For Change
 						["sourceQuests"] = { 62919 },	-- Strengthening the Bond
 						["provider"] = { "n", 171950 },	-- The Accuser
-						["coord"] = { 44.6, 20.1, 1699 },	-- Sinfall Reaches
+						["coord"] = { 44.6, 20.1, SINFALL_REACHES },
 					}),
 					q(57885, {	-- A Discreet Entrance
 						["sourceQuests"] = { 57884 },	-- Reclaiming Thornhill Manor
@@ -67,7 +67,7 @@ _.ExpansionFeatures =
 					q(59325, {	-- A Stalwart Ally
 						["sourceQuests"] = { 58407 },	-- The Medallion of Dominion
 						["provider"] = { "n", 161977 },	-- General Draven
-						["coord"] = { 46.2, 14.7, 1699 },	-- Sinfall
+						["coord"] = { 46.2, 14.7, SINFALL_REACHES },
 						["g"] = {
 							follower(1209),	-- General Draven
 						},
@@ -90,7 +90,7 @@ _.ExpansionFeatures =
 					q(57880, {	-- An Estate Within the Old Gate
 						["sourceQuests"] = { 60904 },	-- Medallion of Desire
 						["provider"] = { "n", 161979 },	-- Theotar
-						["coord"] = { 50.2, 18.6, 1699 },	-- Sinfall Reaches
+						["coord"] = { 50.2, 18.6, SINFALL_REACHES },
 					}),
 					q(58424, {	-- An Eye for an Amulet
 						["sourceQuests"] = { 58372 },	-- Lead the Way
@@ -123,7 +123,7 @@ _.ExpansionFeatures =
 					q(62905, {	-- Back into the Darkness
 						["sourceQuests"] = { 62904 },	-- The Souls Plight
 						["provider"] = { "n", 164738 },	-- Tenaval
-						["coord"] = { 46.0, 27.9, 1699 },	-- Sinfall Reaches
+						["coord"] = { 46.0, 27.9, SINFALL_REACHES },
 					}),
 					q(57890, {	-- Beautiful, But Deadly
 						["sourceQuests"] = { 57887 },	-- Killing the Messenger
@@ -133,7 +133,7 @@ _.ExpansionFeatures =
 					q(62918, {	-- Binding Power
 						["sourceQuests"] = { 62915 },	-- Home Improvement
 						["provider"] = { "n", 171950 },	-- The Accuser
-						["coord"] = { 46.2, 21.6, 1699 },	-- Sinfall Reaches
+						["coord"] = { 46.2, 21.6, SINFALL_REACHES },
 					}),
 					q(58388, {	-- Blackbale Betrayers
 						["sourceQuests"] = { 58443 },	-- Continued Care of Kael'thas
@@ -164,13 +164,13 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 						["description"] = "Requires Renown 5.",
 						["provider"] = { "n", 158653 },	-- Prince Renathal
-						["coord"] = { 51.0, 38.0, 1699 },	-- Sinfall Reaches
+						["coord"] = { 51.0, 38.0, SINFALL_REACHES },
 					}),
 					q(61077, {	-- Confronting Sin
 						-- ["sourceQuests"] = {  },	--
 						["description"] = "Requires Renown 17.",
 						["provider"] = { "n", 158653 },	-- Prince Renathal
-						["coord"] = { 52.0, 37.6, 1699 },	-- Sinfall Reaches
+						["coord"] = { 52.0, 37.6, SINFALL_REACHES },
 					}),
 					q(58443, {	-- Continued Care of Kael'thas
 						["sourceQuests"] = { 58387 },	-- We Each Must Carry Our Own Sins
@@ -244,7 +244,7 @@ _.ExpansionFeatures =
 					q(60500, {	-- Halls of Atonement: Medallion of Pride
 						["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 						["provider"] = { "o", 352520 },	-- Medallion of Pride
-						["coord"] = { 56.8, 30.8, 1699 },	-- Sinfall Reaches
+						["coord"] = { 56.8, 30.8, SINFALL_REACHES },
 					}),
 					q(59676, {	-- Harvester of Desire
 						["sourceQuests"] = { 59706 },	-- Invitation for the Countess
@@ -269,18 +269,18 @@ _.ExpansionFeatures =
 					q(58530, {	-- Hidden Mirror
 						["sourceQuests"] = { 61050 },	-- How to Wear Seven Medallions
 						["provider"] = { "n", 161514 },	-- General Draven
-						["coord"] = { 43.8, 46.4, 1699 },
+						["coord"] = { 43.8, 46.4, SINFALL_REACHES },
 					}),
 					q(62915, {	-- Home Improvement
 						["sourceQuests"] = { 62837 },	-- Hopeful News
 						["provider"] = { "n", 172605 },	-- Foreman Flatfinger
-						["coord"] = { 55.3, 27.4, 1699 },	-- Sinfall Reaches
+						["coord"] = { 55.3, 27.4, SINFALL_REACHES },
 					}),
 					q(61050, {	-- How to Wear Seven Medallions
 						["sourceQuests"] = { 58444 },	-- Return to Sinfall
 						["description"] = "Requires Renown 13.",
 						["provider"] = { "n", 158653 },	-- Prince Renathal
-						["coord"] = { 51.3, 38.0, 1699 },	-- Sinfall Reaches
+						["coord"] = { 51.3, 38.0, SINFALL_REACHES },
 					}),
 					q(58426, {	-- In the Shadow of our Failures
 						["sourceQuests"] = { 58383 },	-- The Many Sins of Kael'thas Sunstrider
@@ -290,7 +290,7 @@ _.ExpansionFeatures =
 					q(62903, {	-- Into the Reservoir
 						["sourceQuests"] = { 62902 },	-- Anima is Power
 						["provider"] = { "n", 172605 },	-- Foreman Flatfinger
-						["coord"] = { 54.9, 26.3, 1699 },	-- Sinfall Reaches
+						["coord"] = { 54.9, 26.3, SINFALL_REACHES },
 					}),
 					q(59706, {	-- Invitation for the Countess
 						["sourceQuests"] = {
@@ -324,7 +324,7 @@ _.ExpansionFeatures =
 					q(59343, {	-- Kindred Spirits
 						["sourceQuests"] = { 59719 },	-- The Court
 						["provider"] = { "n", 172042 },	-- Theotar
-						["coord"] = { 50.3, 18.8, 1699 },	-- Sinfall Reaches
+						["coord"] = { 50.3, 18.8, SINFALL_REACHES },
 					}),
 					q(58394, {	-- Lady Ouix'Ara
 						["sourceQuests"] = {
@@ -375,19 +375,19 @@ _.ExpansionFeatures =
 					q(60935, {	-- Medallion of Avarice
 						["description"] = "Requires Renown 11.",
 						["provider"] = { "o", 353949 },	-- Medallion of Avarice
-						["coord"] = { 54.9, 30.9, 1699 },	-- Sinfall Reaches
+						["coord"] = { 54.9, 30.9, SINFALL_REACHES },
 					}),
 					q(60904, {	-- Medallion of Desire
 						-- ["sourceQuests"] = { 59343 },	-- Kindred Spirits
 						["description"] = "Requires Renown 8.",
 						["provider"] = { "o", 353948 },	-- Medallion of Desire
-						["coord"] = { 53.6, 32.9, 1699 },	-- Sinfall Reaches
+						["coord"] = { 53.6, 32.9, SINFALL_REACHES },
 					}),
 					q(58406, {	-- Mirror to Maldraxxus
 						["description"] = "Requires Renown 22.",
 						-- ["sourceQuests"] = {  },	--
 						["provider"] = { "n", 158653 },	-- Prince Renethal
-						["coord"] = { 51.8, 37.5, 1699 },	-- Sinfall
+						["coord"] = { 51.8, 37.5, SINFALL_REACHES },
 					}),
 					q(58440, {	-- Mirror, Mirror...
 						["sourceQuests"] = {
@@ -423,12 +423,12 @@ _.ExpansionFeatures =
 					q(62921, {	-- Our True Purpose
 						["sourceQuests"] = { 62920 },	-- A Conduit For Change
 						["provider"] = { "n", 171950 },	-- The Accuser
-						["coord"] = { 44.6, 20.1, 1699 },	-- Sinfall Reaches
+						["coord"] = { 44.6, 20.1, SINFALL_REACHES },
 					}),
 					q(59324, {	-- Our True Purpose
 					--	["sourceQuests"] = {  },	-- TODO: unknown.  i think you get this version of "Our True Purpose" if you pursue the Adventures Scouting Map first, instead of Mirror Network?
 						["provider"] = { "n", 164741 },	-- Tactician Sakaa
-						["coord"] = { 57.6, 58.8, 1699 },	-- Sinfall Reaches
+						["coord"] = { 57.6, 58.8, SINFALL_REACHES },
 					}),
 					q(58603, {	-- Phaestus, Genesis of Aeons
 						["sourceQuests"] = {
@@ -465,7 +465,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 						["provider"] = { "n", 172605 },	-- Foreman Flatfinger <Sanctum Upgrades>
 						["isWeekly"] = true,
-						["coord"] = { 55.0, 26.8, 1699 },	-- Sinfall Reaches
+						["coord"] = { 55.0, 26.8, SINFALL_REACHES },
 					}),
 					q(63215, {	-- Report to Draven
 						["sourceQuests"] = { 57878 },	-- Choosing Your Purpose
@@ -493,7 +493,7 @@ _.ExpansionFeatures =
 					q(59321, {	-- Sacred Covenant
 						["sourceQuests"] = { 59315 },	-- The Court of Harvesters
 						["provider"] = { "n", 164796 },	-- Prince Renathal
-						["coord"] = { 50.9, 38.1, 1699 },	-- Sinfall Reaches
+						["coord"] = { 50.9, 38.1, SINFALL_REACHES },
 					}),
 					q(59314, {	-- Sinfall
 						["sourceQuests"] = { 63215 },	-- Report to Draven
@@ -506,23 +506,23 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 63340 },	-- Sinfall Veteran
 						["description"] = "Requires Renown 22.",
 						["provider"] = { "n", 175772 },	-- Rahel
-						["coord"] = { 54.0, 27.2, 1699 },	-- Sinfall Reaches
+						["coord"] = { 54.0, 27.2, SINFALL_REACHES },
 					}),
 					q(64083, {	-- Sinfall Tactician #2
 						["description"] = "Requires Renown 59.",
 						["provider"] = { "n", 175772 },	-- Rahel
-						["coord"] = { 54.0, 27.2, 1699 },	-- Sinfall Reaches
+						["coord"] = { 54.0, 27.2, SINFALL_REACHES },
 					}),
 					q(63340, {	-- Sinfall Veteran
 					--	["sourceQuests"] = {  },	-- probably requires something between "our true purpose" and "ashes of the tower," unsure what unlocks the ability to pick up "return lost souls," which gives renown
 						["description"] = "Requires Renown 7.",
 						["provider"] = { "n", 175772 },	-- Rahel
-						["coord"] = { 54.1, 26.8, 1699 },	-- Sinfall Reaches
+						["coord"] = { 54.1, 26.8, SINFALL_REACHES },
 					}),
 					q(64325, {	-- Sinfall Veteran #2
 						["description"] = "Requires Renown 43.",
 						["provider"] = { "n", 175772 },	-- Rahel
-						["coord"] = { 54.1, 26.8, 1699 },	-- Sinfall Reaches
+						["coord"] = { 54.1, 26.8, SINFALL_REACHES },
 					}),
 					q(58382, {	-- Someone Worth Saving
 						["sourceQuests"] = { 61077 },	-- Confronting Sin
@@ -551,7 +551,7 @@ _.ExpansionFeatures =
 						["description"] = "Requires Renown 20.",
 						-- ["sourceQuests"] = {  },	--
 						["provider"] = { "n", 158653 },	-- Prince Renethal
-						["coord"] = { 51.8, 37.5, 1699 },	-- Sinfall
+						["coord"] = { 51.8, 37.5, SINFALL_REACHES },
 					}),
 					q(58393, {	-- Strategic Executions
 						["sourceQuests"] = { 58391 },	-- Reconnaissance... for my, uh, Recovery
@@ -561,7 +561,7 @@ _.ExpansionFeatures =
 					q(62919, {	-- Strengthening the Bond
 						["sourceQuests"] = { 62918 },	-- Binding Power
 						["provider"] = { "n", 171979 },	-- Nadjia the Mistblade
-						["coord"] = { 43.9, 17.9, 1699 },	-- Sinfall Reaches
+						["coord"] = { 43.9, 17.9, SINFALL_REACHES },
 						["g"] = {	-- TODO: keep rewards here or put in Uncollectable?  unsure of how to get rewards for other classes (beyond playing through on each one)
 							i(182130),	-- Shattered Perceptions
 							i(181840),	-- Light's Inspiration
@@ -596,22 +596,22 @@ _.ExpansionFeatures =
 					q(62857, {	-- The Court's Bounty
 						["sourceQuests"] = { 62856 },	-- Building Your Renown
 						["provider"] = { "n", 175772 },	-- Rahel
-						["coord"] = { 54.0, 27.2, 1699 },	-- Sinfall Reaches
+						["coord"] = { 54.0, 27.2, SINFALL_REACHES },
 					}),
 					q(59315, {	-- The Court of Harvesters
 						["sourceQuests"] = { 59314 },	-- Sinfall
 						["provider"] = { "n", 164742 },	-- Prince Renathal
-						["coord"] = { 25.4, 56.1, 1699 },	-- Sinfall Reaches
+						["coord"] = { 25.4, 56.1, SINFALL_REACHES },
 					}),
 					q(58842, {	-- The Curator
 						["sourceQuests"] = { 60935 },	-- Medallion of Avarice
 						["provider"] = { "n", 158653 },	-- Prince Renathal
-						["coord"] = { 51.7, 37.6, 1699 },	-- Sinfall Reaches
+						["coord"] = { 51.7, 37.6, SINFALL_REACHES },
 					}),
 					q(63033, {	-- The Highlord Calls
 						["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 						["provider"] = { "n", 158653 },	-- Prince Renathal
-						["coord"] = { 51.2, 37.8, 1699 },	-- Sinfall Reaches
+						["coord"] = { 51.2, 37.8, SINFALL_REACHES },
 					}),
 					q(57881, {	-- The Key to Rebuilding
 						["sourceQuests"] = { 57880 },	-- An Estate Within the Old Gate
@@ -654,7 +654,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 59324, 62921 },	-- Our True Purpose
 						["description"] = "Requires Renown 5.",
 						["provider"] = { "n", 161977 },	-- General Draven
-						["coord"] = { 46.3, 15.7, 1699 },	-- Sinfall Reaches
+						["coord"] = { 46.3, 15.7, SINFALL_REACHES },
 					}),
 					q(58586, {	-- The Right Stuff
 						["sourceQuests"] = { 58555 },	-- A Tense Reunion
@@ -664,7 +664,7 @@ _.ExpansionFeatures =
 					q(62904, {	-- The Souls Plight
 						["sourceQuests"] = { 62903 },	-- Into the Reservoir
 						["provider"] = { "n", 172605 },	-- Foreman Flatfinger
-						["coord"] = { 54.9, 26.3, 1699 },	-- Sinfall Reaches
+						["coord"] = { 54.9, 26.3, SINFALL_REACHES },
 					}),
 					q(57646, {	-- The Tithelord
 						["sourceQuests"] = { 57729 },	-- To the Estate
@@ -737,28 +737,28 @@ _.ExpansionFeatures =
 						-- ["sourceQuests"] = {  },	-- TODO
 						["provider"] = { "n", 164738 },	-- Tenaval
 						["isWeekly"] = true,
-						["coord"] = { 46.0, 28.1, 1699 },	-- Sinfall Reaches
+						["coord"] = { 46.0, 28.1, SINFALL_REACHES },
 					}),
 					q(62867, {	-- Return Lost Souls (10)
 						-- ["sourceQuests"] = {  },	-- TODO
 						["description"] = "Requires Renown 15.",
 						["provider"] = { "n", 164738 },	-- Tenaval
 						["isWeekly"] = true,
-						["coord"] = { 46.0, 28.1, 1699 },	-- Sinfall Reaches
+						["coord"] = { 46.0, 28.1, SINFALL_REACHES },
 					}),
 					q(62868, {	-- Return Lost Souls (15)
 						-- ["sourceQuests"] = {  },	-- TODO
 						["description"] = "Requires Renown 24.",
 						["provider"] = { "n", 164738 },	-- Tenaval
 						["isWeekly"] = true,
-						["coord"] = { 46.0, 28.1, 1699 },	-- Sinfall Reaches
+						["coord"] = { 46.0, 28.1, SINFALL_REACHES },
 					}),
 					q(62869, {	-- Return Lost Souls (20)
 						-- ["sourceQuests"] = {  },	-- TODO
 						["description"] = "Requires Renown 32.",
 						["provider"] = { "n", 164738 },	-- Tenaval
 						["isWeekly"] = true,
-						["coord"] = { 46.0, 28.1, 1699 },	-- Sinfall Reaches
+						["coord"] = { 46.0, 28.1, SINFALL_REACHES },
 					}),
 				})),
 			},

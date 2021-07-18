@@ -13,13 +13,13 @@ _.ExpansionFeatures =
 			-- "Our True Purpose" 59324 no longer shows as a 'valid Quest' from the server (2020-12-04), meaning likely no character has acquired it this week (2) of the expac?
 			-- But it is complete for my main, as well as 62921... /shrug
 			["maps"] = {
-				1699,	-- Sinfall Reaches
+				SINFALL_REACHES,
 				1700,	-- Sinfall Depths
 			},
 			["g"] = {
 				n(FLIGHT_PATHS, {
 					fp(2548, {	-- Sinfall, Revendreth
-						["coord"] = { 67.1, 21.9, 1699 },	-- Sinfall Reaches
+						["coord"] = { 67.1, 21.9, SINFALL_REACHES },
 					}),
 				}),
 			},

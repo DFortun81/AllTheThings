@@ -11,13 +11,13 @@ _.ExpansionFeatures =
 			-- "Our True Purpose" 59324 no longer shows as a 'valid Quest' from the server (2020-12-04), meaning likely no character has acquired it this week (2) of the expac?
 			-- But it is complete for my main, as well as 62921... /shrug
 			["maps"] = {
-				1699,	-- Sinfall Reaches
+				SINFALL_REACHES,
 				1700,	-- Sinfall Depths
 			},
 			["g"] = {
 				n(VENDORS, {
 					n(174710, {	-- Chachi the Artiste <Renown Quartermaster>
-						["coord"] = { 54.0, 25.6, 1699 },
+						["coord"] = { 54.0, 25.6, SINFALL_REACHES },
 						["g"] = sharedData(
 							{ ["customCollect"] = "SL_COV_VEN", }	-- Venthyr
 							, {

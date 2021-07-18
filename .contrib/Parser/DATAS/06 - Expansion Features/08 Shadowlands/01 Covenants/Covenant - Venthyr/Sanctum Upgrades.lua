@@ -11,7 +11,7 @@ _.ExpansionFeatures =
 			-- "Our True Purpose" 59324 no longer shows as a 'valid Quest' from the server (2020-12-04), meaning likely no character has acquired it this week (2) of the expac?
 			-- But it is complete for my main, as well as 62921... /shrug
 			["maps"] = {
-				1699,	-- Sinfall Reaches
+				SINFALL_REACHES,
 				1700,	-- Sinfall Depths
 			},
 			["g"] = {
@@ -20,7 +20,7 @@ _.ExpansionFeatures =
 						n(-916, {	-- Tier 1: Flowing Tendrils
 							q(63066, {	-- Sanctum Upgrade: Anima Conductor
 								["provider"] = { "n", 172605 },	-- Foreman Flatfinger
-								["coord"] = { 55.4, 27.0, 1699 },	-- Sinfall Reaches
+								["coord"] = { 55.4, 27.0, SINFALL_REACHES },
 							}),
 							q(60721, {	-- The Anima Must Flow
 								["sourceQuests"] = { 63066 },	-- Sanctum Upgrade: Anima Conductor
@@ -112,17 +112,17 @@ _.ExpansionFeatures =
 							q(59319, {	-- Advancing Our Efforts
 								["sourceQuests"] = { 63064 },	-- Sanctum Upgrade: Adventures Scouting Map
 								["provider"] = { "n", 164741 },	-- Tactician Sakaa
-								["coord"] = { 57.8, 58.6, 1699 },	-- Sinfall Reaches
+								["coord"] = { 57.8, 58.6, SINFALL_REACHES },
 							}),
 							q(63064, {	-- Sanctum Upgrade: Adventures Scouting Map
 								["provider"] = { "n", 172605 },	-- Foreman Flatfinger
-								["coord"] = { 55.4, 27.0, 1699 },	-- Sinfall Reaches
+								["coord"] = { 55.4, 27.0, SINFALL_REACHES },
 							}),
 							q(61729, {	-- Adventurer: Rahel
 								["sourceQuests"] = { 63064 },	-- Sanctum Upgrade: Adventures Scouting Map
 								["description"] = "Requires Renown 4.",
 								["provider"] = { "n", 164741 },	-- Tactician Sakaa
-								["coord"] = { 57.8, 58.6, 1699 },	-- Sinfall Reaches
+								["coord"] = { 57.8, 58.6, SINFALL_REACHES },
 								["g"] = {
 									follower(1250),	-- Rahel
 								},
@@ -135,7 +135,7 @@ _.ExpansionFeatures =
 						q(61792, {	-- Adventurer: Bogdan
 							["description"] = "Requires Renown 38.",
 							["provider"] = { "n", 164741 },	-- Tactician Sakaa
-							["coord"] = { 57.8, 58.6, 1699 },	-- Sinfall Reaches
+							["coord"] = { 57.8, 58.6, SINFALL_REACHES },
 							["g"] = {
 								follower(1253),	-- Bogdan
 							},
@@ -143,7 +143,7 @@ _.ExpansionFeatures =
 						q(64467, {	-- Adventurer: Chachi the Artiste
 							["description"] = "Requires Renown 44.",
 							["provider"] = { "n", 164741 },	-- Tactician Sakaa
-							["coord"] = { 57.8, 58.6, 1699 },	-- Sinfall Reaches
+							["coord"] = { 57.8, 58.6, SINFALL_REACHES },
 							["g"] = {
 								follower(1345),	-- Chachi the Artists
 							},
@@ -151,7 +151,7 @@ _.ExpansionFeatures =
 						q(61789, {	-- Adventurer: Lost Sybille
 							["description"] = "Requires Renown 27.",
 							["provider"] = { "n", 164741 },	-- Tactician Sakaa
-							["coord"] = { 57.8, 58.6, 1699 },	-- Sinfall Reaches
+							["coord"] = { 57.8, 58.6, SINFALL_REACHES },
 							["g"] = {
 								follower(1254),	-- Lost Sybille
 							},
@@ -159,7 +159,7 @@ _.ExpansionFeatures =
 						q(64469, {	-- Adventurer: Lucia
 							["description"] = "Requires Renown 71.",
 							["provider"] = { "n", 164741 },	-- Tactician Sakaa
-							["coord"] = { 57.8, 58.6, 1699 },	-- Sinfall Reaches
+							["coord"] = { 57.8, 58.6, SINFALL_REACHES },
 							["g"] = {
 								follower(1347),	-- Lucia
 							},
@@ -167,7 +167,7 @@ _.ExpansionFeatures =
 						q(64468, {	-- Adventurer: Madame Iza
 							["description"] = "Requires Renown 62.",
 							["provider"] = { "n", 164741 },	-- Tactician Sakaa
-							["coord"] = { 57.8, 58.6, 1699 },	-- Sinfall Reaches
+							["coord"] = { 57.8, 58.6, SINFALL_REACHES },
 							["g"] = {
 								follower(1346),	-- Madame Iza
 							},
@@ -177,7 +177,7 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 58444 },	-- Return to Sinfall
 							["description"] = "Requires Renown 12.",
 							["provider"] = { "n", 164741 },	-- Tactician Sakaa
-							["coord"] = { 57.8, 58.6, 1699 },	-- Sinfall Reaches
+							["coord"] = { 57.8, 58.6, SINFALL_REACHES },
 							["g"] = {
 								follower(1251),	-- Stonehead
 							},
@@ -185,7 +185,7 @@ _.ExpansionFeatures =
 						q(61788, {	-- Adventurer: Simone
 							["description"] = "Requires Renown 17.",
 							["provider"] = { "n", 164741 },	-- Tactician Sakaa
-							["coord"] = { 57.8, 58.6, 1699 },	-- Sinfall Reaches
+							["coord"] = { 57.8, 58.6, SINFALL_REACHES },
 							["g"] = {
 								follower(1252),	-- Simone
 							},
@@ -193,7 +193,7 @@ _.ExpansionFeatures =
 						q(61790, {	-- Adventurer: Vulca
 							["description"] = "Requires Renown 33.",
 							["provider"] = { "n", 164741 },	-- Tactician Sakaa
-							["coord"] = { 57.8, 58.6, 1699 },	-- Sinfall Reaches
+							["coord"] = { 57.8, 58.6, SINFALL_REACHES },
 							["g"] = {
 								follower(1255),	-- Vulca
 							},
@@ -668,7 +668,7 @@ _.ExpansionFeatures =
 								q(59660, {	-- A New Court
 									["sourceQuests"] = { 63065 },	-- Sanctum Upgrade: The Ember Court
 									["provider"] = { "n", 161979 },	-- Theotar
-									["coord"] = { 49.9, 19.3, 1699 },	-- Sinfall Reaches
+									["coord"] = { 49.9, 19.3, SINFALL_REACHES },
 								}),
 								q(61351, {	-- Ancient Sinstone (+Formal)
 									["provider"] = { "n", 164965 },	-- Prince Renathal
@@ -1322,7 +1322,7 @@ _.ExpansionFeatures =
 								}),
 								q(63065, {	-- Sanctum Upgrade: The Ember Court
 									["provider"] = { "n", 172605 },	-- Foreman Flatfinger
-									["coord"] = { 55.5, 27.0, 1699 },	-- Sinfall Reaches
+									["coord"] = { 55.5, 27.0, SINFALL_REACHES },
 								}),
 								q(63699, {	-- Sika's Best Friend
 									-- ["minReputation"] = { ,  }, -- TODO, Best Friend w/ Sika?
@@ -2059,7 +2059,7 @@ _.ExpansionFeatures =
 								n(164966, {	-- Temel <The Party Herald> (with a hat)
 									["coords"] = {
 										{ 28.0, 43.0, REVENDRETH },	-- with hat, outside Sinfall
-										{ 58.8, 80.0, 1699},	-- without hat, inside Sinfall
+										{ 58.8, 80.0, SINFALL_REACHES },	-- without hat
 									},
 									["crs"] = { 172531 },	-- Temel <The Party Herald> (with no hat - combining these because they sell the same stuff)
 									["g"] = {
@@ -2161,24 +2161,24 @@ _.ExpansionFeatures =
 							["sourceQuests"] = { 63056 },	-- Sanctum Upgrade: Mirror Network
 							["isBreadcrumb"] = true,
 							["provider"] = { "n", 158653 },	-- Prince Renathal
-							["coord"] = { 51.1, 38.0, 1699 },	-- Sinfall Reaches
+							["coord"] = { 51.1, 38.0, SINFALL_REACHES },
 						}),
 						q(63056, {	-- Sanctum Upgrade: Mirror Network
 							["sourceQuests"] = { 62915 },	-- Home Improvement
 							["provider"] = { "n", 172605 },	-- Foreman Flatfinger
-							["coord"] = { 55.3, 27.1, 1699 },	-- Sinfall Reaches
+							["coord"] = { 55.3, 27.1, SINFALL_REACHES },
 						}),
 						-- TODO: Add Questline for each Mirror Tier
 						n(-951, {	-- Tier 1: Mirror Mirror
 							q(60060, {	-- Mirror Attunement: Pridefall Hamlet
 								["sourceQuests"] = { 57536 },	-- Mirror Making, Not Breaking
 								["provider"] = { "n", 167160 },	-- Laurent
-								["coord"] = { 47.2, 57.3, 1699 },	-- Sinfall Reaches
+								["coord"] = { 47.2, 57.3, SINFALL_REACHES },
 							}),
 							q(60147, {	-- Mirror Attunement: The Eternal Terrace
 								["sourceQuests"] = { 57536 },	-- Mirror Making, Not Breaking
 								["provider"] = { "n", 167160 },	-- Laurent
-								["coord"] = { 47.2, 57.3, 1699 },	-- Sinfall Reaches
+								["coord"] = { 47.2, 57.3, SINFALL_REACHES },
 							}),
 						}),
 						n(-952, {	-- Tier 2: Looking Glass
@@ -2190,7 +2190,7 @@ _.ExpansionFeatures =
 										60147,	-- Mirror Attunement: The Eternal Terrace
 									},
 									["provider"] = { "n", 167160 },	-- Laurent
-									["coord"] = { 47.6, 57.3, 1699 },	-- Sinfall Reaches
+									["coord"] = { 47.6, 57.3, SINFALL_REACHES },
 								}),
 								q(60160, {	-- Mirror Attunement: The Banewood
 									["sourceQuests"] = {
@@ -2198,7 +2198,7 @@ _.ExpansionFeatures =
 										60147,	-- Mirror Attunement: The Eternal Terrace
 									},
 									["provider"] = { "n", 167160 },	-- Laurent
-									["coord"] = { 47.6, 57.3, 1699 },	-- Sinfall Reaches
+									["coord"] = { 47.6, 57.3, SINFALL_REACHES },
 								}),
 							},
 						}),
@@ -2432,7 +2432,7 @@ _.ExpansionFeatures =
 										60160,	-- Mirror Attunement: The Banewood
 									},
 									["provider"] = { "n", 167160 },	-- Laurent
-									["coord"] = { 47.3, 57.5, 1699 },	-- Sinfall Reaches
+									["coord"] = { 47.3, 57.5, SINFALL_REACHES },
 								}),
 								q(60165, {	-- Mirror Attunement: Feeders' Thicket
 									["sourceQuests"] = {
@@ -2440,7 +2440,7 @@ _.ExpansionFeatures =
 										60160,	-- Mirror Attunement: The Banewood
 									},
 									["provider"] = { "n", 167160 },	-- Laurent
-									["coord"] = { 47.3, 57.5, 1699 },	-- Sinfall Reaches
+									["coord"] = { 47.3, 57.5, SINFALL_REACHES },
 								}),
 								q(59740, {	-- Repair and Restore
 									["sourceQuests"] = {
@@ -2448,7 +2448,7 @@ _.ExpansionFeatures =
 										60165,	-- Mirror Attunement: Feeders' Thicket
 									},
 									["provider"] = { "n", 167160 },	-- Laurent
-									["coord"] = { 47.3, 57.5, 1699 },	-- Sinfall Reaches
+									["coord"] = { 47.3, 57.5, SINFALL_REACHES },
 								}),
 							},
 						}),
@@ -2622,7 +2622,7 @@ _.HiddenQuestTriggers = {
 			q(61497),	-- using Stock: Greeting Kits
 			q(59690),	-- triggered when using "Racing Permit," reward from "It's Race Day in the Ramparts!" WQ
 			q(59695),	-- triggered when using "Maldraxxi Challenge Banner"
-			
+
 		-- Misson Table
 			q(60635),	-- Unknown
 };

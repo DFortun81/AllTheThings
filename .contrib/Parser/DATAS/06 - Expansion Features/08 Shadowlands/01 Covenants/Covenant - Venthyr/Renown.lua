@@ -8,7 +8,7 @@ _.ExpansionFeatures =
 		n(-949, {	-- Covenant: Venthyr
 			["customCollect"] = "SL_COV_VEN",	-- Venthyr
 			["maps"] = {
-				1699,	-- Sinfall Reaches
+				SINFALL_REACHES,
 				1700,	-- Sinfall Depths
 			},
 			["g"] = {

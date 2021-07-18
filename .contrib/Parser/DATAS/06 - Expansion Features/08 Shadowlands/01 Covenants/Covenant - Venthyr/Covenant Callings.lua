@@ -11,7 +11,7 @@ _.ExpansionFeatures =
 			-- "Our True Purpose" 59324 no longer shows as a 'valid Quest' from the server (2020-12-04), meaning likely no character has acquired it this week (2) of the expac?
 			-- But it is complete for my main, as well as 62921... /shrug
 			["maps"] = {
-				1699,	-- Sinfall Reaches
+				SINFALL_REACHES,
 				1700,	-- Sinfall Depths
 			},
 			["g"] = {
@@ -33,21 +33,21 @@ _.ExpansionFeatures =
 					}),
 					q(60422, {	-- A Call to Ardenweald
 						["provider"] = { "n", 158653 },	-- Prince Renathal
-						["coord"] = { 51.2, 37.7, 1699 },	-- Sinfall Reaches
+						["coord"] = { 51.2, 37.7, SINFALL_REACHES },
 						["g"] = {
 							i(181475),	-- Bounty of the Grove Wardens
 						},
 					}),
 					q(60427, {	-- A Call to Bastion
 						["provider"] = { "n", 158653 },	-- Prince Renathal
-						["coord"] = { 51.8, 37.4, 1699 },	-- Sinfall Reaches
+						["coord"] = { 51.8, 37.4, SINFALL_REACHES },
 						["g"] = {
 							i(181372),	-- Tribute of the Ascended
 						},
 					}),
 					q(60431, {	-- A Call to Maldraxxus
 						["provider"] = { "n", 158653 },	-- Prince Renathal
-						["coord"] = { 51.2, 37.8, 1699 },	-- Sinfall Reaches
+						["coord"] = { 51.2, 37.8, SINFALL_REACHES },
 						["g"] = {
 							i(181732),	-- Tribute of the Ambitious
 						},
@@ -103,7 +103,7 @@ _.ExpansionFeatures =
 					}),
 					q(60460, {	-- Anima Salvage
 						["provider"] = { "n", 164738 },	-- Tenaval
-						["coord"] = { 45.4, 28.5, 1699 },	-- Sinfall Reaches
+						["coord"] = { 45.4, 28.5, SINFALL_REACHES },
 						["g"] = {
 							i(181556),	-- Tribute of the Court
 						},
@@ -159,42 +159,42 @@ _.ExpansionFeatures =
 					}),
 					q(60456, {	-- Storm the Maw
 						["provider"] = { "n", 164738 },	-- Tenaval
-						["coord"] = { 45.4, 28.5, 1699 },	-- Sinfall Reaches
+						["coord"] = { 45.4, 28.5, SINFALL_REACHES },
 						["g"] = {
 							i(181557),	-- Favor of the Court
 						},
 					}),
 					q(60410, {	-- Training Our Forces
 						["provider"] = { "n", 164741 },	-- Tactician Sakaa
-						["coord"] = { 57.8, 59.5, 1699 },	-- Sinfall Reaches
+						["coord"] = { 57.8, 59.5, SINFALL_REACHES },
 						["g"] = {
 							i(181556),	-- Tribute of the Court
 						},
 					}),
 					q(60401, {	-- Training in Ardenweald
 						["provider"] = { "n", 164741 },	-- Tactician Sakaa
-						["coord"] = { 57.8, 58.7, 1699 },	-- Sinfall Reaches
+						["coord"] = { 57.8, 58.7, SINFALL_REACHES },
 						["g"] = {
 							i(181475),	-- Bounty of the Grove Wardens
 						},
 					}),
 					q(60406, {	-- Training in Bastion
 						["provider"] = { "n", 164741 },	-- Tactician Sakaa
-						["coord"] = { 57.8, 59.5, 1699 },	-- Sinfall Reaches
+						["coord"] = { 57.8, 59.5, SINFALL_REACHES },
 						["g"] = {
 							i(181372),	-- Tribute of the Ascended
 						},
 					}),
 					q(60409, {	-- Training in Maldraxxus
 						["provider"] = { "n", 164741 },	-- Tactician Sakaa
-						["coord"] = { 57.8, 59.5, 1699 },	-- Sinfall Reaches
+						["coord"] = { 57.8, 59.5, SINFALL_REACHES },
 						["g"] = {
 							i(181732),	-- Tribute of the Ambitious
 						},
 					}),
 					q(60432, {	-- Troubles at Home
 						["provider"] = { "n", 158653 },	-- Prince Renathal
-						["coord"] = { 51.8, 37.4, 1699 },	-- Sinfall Reaches
+						["coord"] = { 51.8, 37.4, SINFALL_REACHES },
 						["g"] = {
 							i(181556),	-- Tribute of the Court
 						},

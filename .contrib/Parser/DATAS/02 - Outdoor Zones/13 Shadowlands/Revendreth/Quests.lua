@@ -519,7 +519,7 @@ _.Zones =
 				q(57694, {	-- Refuge of Revendreth
 					["sourceQuests"] = { 57693 },	-- Torghast, Tower of the Damned
 					["provider"] = { "n", 162688 },	-- Prince Renathal
-					["coord"] = { 25.8, 57.1, 1699 },	-- Sinfall Reaches
+					["coord"] = { 25.8, 57.1, SINFALL_REACHES },
 				}),
 				q(57923, {	-- Ritual of Absolution
 					["sourceQuests"] = {
@@ -892,7 +892,7 @@ _.Zones =
 				})),
 
 				-- PTR QUESTS - TODO: MERGE INTO MAIN QUESTS AFTER CONFIRMATION ON LIVE
-				
+
 				-- part of tazavesh unlock, unrelated to campaign
 				q(63982, {	-- Above My Station
 					["sourceQuests"] = { 63980 },	-- Seeking Smugglers
@@ -900,7 +900,7 @@ _.Zones =
 					["coord"] = { 51.4, 82.7, REVENDRETH },
 				}),
 				-------------------------------------------------
-				
+
 				q(63678, {	-- Akarek Avenged
 					["sourceQuests"] = {
 						63677,	-- You Can Only Die
@@ -930,7 +930,7 @@ _.Zones =
 				q(63651, {	-- Cryptograms
 					["sourceQuests"] = { 63650 },	-- De-Infiltration
 					["provider"] = { "n", 178260 },	-- The Stonewright
-					["coord"] = { 54.6, 40.3, 1699 },	-- Sinfall Reaches
+					["coord"] = { 54.6, 40.3, SINFALL_REACHES },
 				}),
 				q(63650, {	-- De-Infiltration
 					["sourceQuests"] = {
@@ -989,7 +989,7 @@ _.Zones =
 				q(63652, {	-- The "Unwelcome" Guests
 					["sourceQuests"] = { 63650 },	-- De-Infiltration
 					["provider"] = { "n", 158653 },	-- Prince Renathal
-					["coord"] = { 51.3, 38.1, 1699 },	-- Sinfall Reaches
+					["coord"] = { 51.3, 38.1, SINFALL_REACHES },
 				}),
 				q(64090, {	-- The Big Squeeze
 					["sourceQuests"] = { 64091 },	-- Mal'appropriated
@@ -1023,7 +1023,7 @@ _.Zones =
 						63652,	-- The "Unwelcome Guests",
 					},
 					["provider"] = { "n", 158653 },	-- Prince Renathal
-					["coord"] = { 51.1, 38.0, 1699 },	-- Sinfall Reaches
+					["coord"] = { 51.1, 38.0, SINFALL_REACHES },
 				}),
 				q(63682, {	-- The Power of Elune
 					["sourceQuests"] = { 64042 },	-- Rituals of Night
