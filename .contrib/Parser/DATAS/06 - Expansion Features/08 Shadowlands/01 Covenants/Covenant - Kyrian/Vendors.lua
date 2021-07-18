@@ -8,7 +8,7 @@ _.ExpansionFeatures =
 		n(-939, {	-- Covenant: Kyrian
 			["customCollect"] = "SL_COV_KYR",	-- Kyrian
 			["maps"] = {
-				1707,	-- Elysian Hold
+				ELYSIAN_HOLD_ARCHONS_RISE,
 				1708,	-- Elysian Hold
 			},
 			["g"] = {
@@ -371,7 +371,7 @@ _.ExpansionFeatures =
 						}),
 					}),
 					n(175521, {	-- Alisius <Normal Nathrian Weaponsmith>
-						["coord"] = { 56.1, 84.5, 1707 },	-- Archon's Rise
+						["coord"] = { 56.1, 84.5, ELYSIAN_HOLD_ARCHONS_RISE },
 						["g"] = bubbleDown({
 							["customCollect"] = "SL_COV_KYR",	-- Kyrian
 							["modID"] = 3,	-- Normal
@@ -609,7 +609,7 @@ _.ExpansionFeatures =
 						}),
 					}),
 					n(175524, {	-- Battlemaster Endios <Mythic Nathrian Weaponsmith>
-						["coord"] = { 58.0, 81.4, 1707 },	-- Archon's Rise
+						["coord"] = { 58.0, 81.4, ELYSIAN_HOLD_ARCHONS_RISE },
 						["g"] = bubbleDown({
 							["customCollect"] = "SL_COV_KYR",	-- Kyrian
 							["modID"] = 6,	-- Mythic
@@ -1047,7 +1047,7 @@ _.ExpansionFeatures =
 						},
 					}),
 					n(175522, {	-- Kelli Hoo <Raid Finder Nathrian Weaponsmith>
-						["coord"] = { 55.0, 82.9, 1707 },	-- Archon's Rise
+						["coord"] = { 55.0, 82.9, ELYSIAN_HOLD_ARCHONS_RISE },
 						["g"] = bubbleDown({
 							["customCollect"] = "SL_COV_KYR",	-- Kyrian
 							["modID"] = 4,	-- LFR
@@ -1285,7 +1285,7 @@ _.ExpansionFeatures =
 						}),
 					}),
 					n(175523, {	-- Provisioner Prothos <Heroic Nathrian Weaponsmith>
-						["coord"] = { 57.0, 79.8, 1707 },	-- Archon's Rise
+						["coord"] = { 57.0, 79.8, ELYSIAN_HOLD_ARCHONS_RISE },
 						["g"] = bubbleDown({
 							["customCollect"] = "SL_COV_KYR",	-- Kyrian
 							["modID"] = 5,	-- Heroic

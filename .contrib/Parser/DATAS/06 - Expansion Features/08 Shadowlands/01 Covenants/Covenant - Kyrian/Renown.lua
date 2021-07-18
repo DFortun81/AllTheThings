@@ -8,7 +8,7 @@ _.ExpansionFeatures =
 		n(-939, {	-- Covenant: Kyrian
 			["customCollect"] = "SL_COV_KYR",	-- Kyrian
 			["maps"] = {
-				1707,	-- Elysian Hold
+				ELYSIAN_HOLD_ARCHONS_RISE,
 				1708,	-- Elysian Hold
 			},
 			["g"] = {
