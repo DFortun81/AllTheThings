@@ -45,6 +45,7 @@ _.ExpansionFeatures =
 				i(187091, {	-- Gilded Twin-Scythe Shoulders
 					["crs"] = {
 						179526,	-- Troz'igal the Oppressor
+						176578,	-- Vault Sentinel
 					},
 				}),
 				i(187092, {	-- Gilded Shoulder-Shields

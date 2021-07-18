@@ -15,6 +15,7 @@ _.ExpansionFeatures =
 				1965,	-- Adamant Vaults - Floor 7 (Upper)
 				1974,	-- Adamant Vaults - Floor 6 (Lower)
 				1975,	-- Adamant Vaults - Floor 6 (Upper)
+				1979,	-- Adamant Vaults - Floor 6 (Lower)
 				--
 				1769,	-- Arkoban Hall - Floor 6 / Skoldus Hall - Layer 1, Floor 6 / Layer 2, Floor 6 / Layer 3, Floor 6
 				--
@@ -30,7 +31,7 @@ _.ExpansionFeatures =
 				--
 				1913,	-- Coldheart Interstitia - Layer 4, Floor 2
 				--
-				1912,	-- Coldheart Interstitia - Layer 6, Floor 1
+				1912,	-- Coldheart Interstitia - Layer 6, Floor 1 -- TODO: this is the Runecarver's area... seems weird to list all Torghast stuff in there
 				--
 				1988,	-- Coldheart Interstitia - Layer 9, Floor 2
 				--

@@ -101,6 +101,20 @@ _.Zones =
 						}),
 					},
 				}),
+				n(179214, {	-- Bonesmith Heirmir
+					["coord"] = { 63.5, 25.3, KORTHIA },
+					["g"] = {
+						i(187077, {	-- Packaged Soul Ash
+							["cost"] = { { "c", 1828, 300 } },	-- 300x Soul Ash
+						}),
+						i(187532, {	-- Soulfire Chisel
+							["cost"] = { { "c", 1767, 2500 } },	-- 2,500x Stygia
+						}),
+						i(187134, {	-- Alloy-Warping Facetor
+							["cost"] = { { "c", 1906, 1000 } },	-- 1,000x Soul Cinders
+						}),
+					},
+				}),
 				n(179321, {	-- Duchess Mynx <Death's Advance Quartermaster>
 					["coord"] = { 63.5, 23.3, KORTHIA },
 					["g"] = {
