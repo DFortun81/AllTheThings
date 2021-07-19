@@ -273,10 +273,9 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(21, 7, 21),
 				}),
-				q(26893, {	-- Blackfathom Deeps [This might be NYI]
+				q(26893, {	-- Blackfathom Deeps [More Checking Needed]
 					["timeline"] = {
 						"added 4.0.3.13277",
-						"removed 8.3.7.10000",
 					},
 				}),
 				q(26894, {	-- Blackfathom Deeps
