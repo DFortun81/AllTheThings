@@ -44,6 +44,19 @@ _.Zones =
 						i(157003),	-- Corpseweed Hewer
 					},
 				}),
+				q(1044,  {	-- Answered Questions
+					["u"] = REMOVED_FROM_GAME,
+					["provider"] = { "n", 661 },	-- Jonathan Carevin
+					["coord"] = { 75.2, 48.8, DUSKWOOD },
+					["sourceQuest"] = 1043,	-- The Scythe of Elune
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 25,
+					
+					["g"] = {
+						un(REMOVED_FROM_GAME, i(5817)),	-- Lunaris Bow
+						un(REMOVED_FROM_GAME, i(5818)),	-- Moonbeam Wand
+					},
+				}),
 				q(54980, {	-- Bane of the Nightbane
 					["provider"] = { "n", 151761 },	-- Vassandra Stormclaw
 					["coord"] = { 18.1, 57.2, DUSKWOOD },

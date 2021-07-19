@@ -9,13 +9,30 @@ _.Instances = { tier(1, {	-- Classic
 		["coord"] =	{ 16.53, 11.01, ASHENVALE },
 		["groups"] = {
 			n(QUESTS, {
-				q(6922, {	-- Baron Aquanis
-					["u"] = REMOVED_FROM_GAME,
+				q(909,   {	-- Baron Aquanis
+					["provider"] = { "i", 16782 },	-- Strange Water Globe
+					["crs"] = { 12876 },	-- Baron Aquanis
 					["races"] = HORDE_ONLY,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(16886)),	-- Outlaw Sabre
-						un(REMOVED_FROM_GAME, i(16887)),	-- Witch's Finger
+					["timeline"] = {
+						"added 1.13.2.31687",
+						"removed 4.0.3.10000",
 					},
+					["g"] = bubbleDown({ ["timeline"] = { "added 1.13.2.31687", "removed 4.0.3.10000", }}, {
+						i(16886),	-- Outlaw Sabre
+						i(16887),	-- Witch's Finger
+					}),
+				}),
+				q(6922, {	-- Baron Aquanis
+					["provider"] = { "i", 16782 },	-- Strange Water Globe
+					["races"] = HORDE_ONLY,
+					["timeline"] = {
+						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
+					},
+					["g"] = bubbleDown({ ["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000", }}, {
+						i(16886),	-- Outlaw Sabre
+						i(16887),	-- Witch's Finger
+					}),
 				}),
 				q(1200, {	-- Blackfathom Villainy
 					["u"] = REMOVED_FROM_GAME,

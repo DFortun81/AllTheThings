@@ -6,10 +6,24 @@ _.Zones =
 	m(KALIMDOR, {
 		m(ASHENVALE, {
 			n(QUESTS, {
+				q(9533, {	-- A Helping Hand
+					["qg"] = 17106,	-- Vindicator Palanaar
+					["coord"] = { 34.9, 49.7, ASHENVALE },
+					["races"] = ALLIANCE_ONLY,
+					["u"] = TBC_PHASE_ONE,
+					["timeline"] = {
+						"added 2.0.1.10000",
+						"removed 4.0.3.10000",
+					},
+					["lvl"] = 22,
+				}),
 				q(26453, {	-- A Helping Hand
 					["provider"] = { "n", 17106 },	-- Vindicator Palanaar
 					["coord"] = { 35.0, 49.9, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 					["isBreadcrumb"] = true,
 				}),
 				q(26481, {	-- A New Adornment
@@ -17,12 +31,37 @@ _.Zones =
 					["coord"] = { 50.8, 75.0, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13989,	-- King of the Foulweald
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(13874, {	-- A Not-So-Charmed Life
 					["provider"] = { "n", 34239 },	-- Hephaestus Pilgrim
 					["coord"] = { 36.4, 49.8, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13872,	-- Worgen Wisdom
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
+				}),
+				q(9517, {	-- A Shameful Waste
+					["qg"] = 17291,	-- Architect Nemos
+					["coord"] = { 86.8, 44.8, ASHENVALE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 24,
+					["u"] = TBC_PHASE_ONE,
+					["timeline"] = {
+						"added 2.0.5.10000",
+						"removed 4.0.3.10000",
+					},
+					["groups"] = {
+						objective(1, {	-- 0/15 Warsong Lumber
+							["provider"] = { "i", 23776 },	-- Warsong Lumber
+						}),
+						objective(2, {	-- 0/5 Satyrnaar Fel Wood
+							["provider"] = { "i", 24081 },	-- Satyrnaar Fel Wood
+						}),
+					},
 				}),
 				q(26454, {	-- A Shameful Waste
 					["provider"] = { "n", 17291 },	-- Architect Nemos
@@ -35,79 +74,106 @@ _.Zones =
 					["coord"] = { 26.6, 36.8, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26473,	-- Bathran's Hair
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(13919, {	-- A Trip to the Moonwell
 					["provider"] = { "n", 3894 },	-- Pelturas Whitemoon
 					["coord"] = { 37.3, 51.7, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26475,	-- Elune's Tear
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
+				}),
+				q(9518, {	-- Agents of Destruction
+					["qg"] = 17287,	-- Sentinel Luciel Starwhisper <Silverwing Sentinels>
+					["coord"] = { 86.0, 44.4, ASHENVALE },
+					["races"] = ALLIANCE_ONLY,
+					["u"] = TBC_PHASE_ONE,
+					["timeline"] = {
+						"added 2.0.1.10000",
+						"removed 4.0.3.10000",
+					},
+					["lvl"] = 24,
 				}),
 				q(26457, {	-- Agents of Destruction
 					["provider"] = { "n", 17287 },	-- Sentinel Luciel Starwhisper
 					["coord"] = { 83.8, 62.6, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
+					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13277" } },{
 						i(56642),	-- Starwhisper Monnions
 						i(56643),	-- Woodguard Vest
 						i(131532),	-- Starwhisper Spaulders
-					},
+					}),
 				}),
 				q(13841, {	-- All Apologies
 					["provider"] = { "n", 33726 },	-- Splintertree Demolisher
 					["coord"] = { 73.3, 62.1, ASHENVALE },
 					["sourceQuest"] = 13798,	-- Rain of Destruction
 					["races"] = HORDE_ONLY,
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(13924, {	-- All's Well
 					["provider"] = { "n", 34358 },	-- Avrus the Redeemed
 					["coord"] = { 59.0, 59.9, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13922,	-- In the Hands of the Perverse
-					["g"] = {
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
+					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13277" } },{
 						i(56676),	-- Whitemoon Gloves
 						i(56677),	-- Belt of Healing Charms
 						i(56678),	-- Boots of the Deliverer
 						i(131320),	-- Whitemoon Mender Cord
-					},
+					}),
 				}),
 				q(6564, {	-- Allegiance to the Old Gods
-					["u"] = REMOVED_FROM_GAME,
 					["crs"] = { 4802 },	-- Blackfathom Tide Priestess
 					["races"] = HORDE_ONLY,
 					["provider"] = { "i", 16790 },	-- Damp Note
+					["timeline"] = {
+						"added 1.11.1.10958",
+						"removed 4.0.3.10000",
+					},
 				}),
-				q(6565,  {	-- Allegiance to the Old Gods
-					["u"] = REMOVED_FROM_GAME,
+				q(6565, {	-- Allegiance to the Old Gods
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 12736 },	-- Je'neu Sancrea
 					["sourceQuest"] = 6564,	-- Allegiance to the Old Gods
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(17694)),	-- Band of the Fist
-						un(REMOVED_FROM_GAME, i(17695)),	-- Chestnut Mantle
+					["timeline"] = {
+						"added 1.11.1.10958",
+						"removed 4.0.3.10000",
 					},
+					["g"] = bubbleDown({ ["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000", } },{
+						i(17694),	-- Band of the Fist
+						i(17695),	-- Chestnut Mantle
+					}),
 				}),
 				q(6921, {	-- Amongst the Ruins
-					["u"] = REMOVED_FROM_GAME,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "n", 12736 },	-- Je'neu Sancrea
+					["timeline"] = {
+						"added 1.11.1.10958",
+						"removed 4.0.3.10000",
+					},
 				}),
-				q(1025,  {	-- An Aggressive Defense
-					["u"] = REMOVED_FROM_GAME,
+				q(1025, {	-- An Aggressive Defense
 					["provider"] = { "n", 3691 },	-- Raene Wolfrunner
 					["coord"] = { 36.6, 49.6, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 1023,	-- Raene's Cleansing
-				}),
-				q(1044,  {	-- Answered Questions
-					["provider"] = { "n", 661 },	-- Jonathan Carevin
-					["coord"] = { 75.2, 48.8, DUSKWOOD },
-					["sourceQuest"] = 1043,	-- The Scythe of Elune
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 25,
-					["u"] = REMOVED_FROM_GAME,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(5817)),	-- Lunaris Bow
-						un(REMOVED_FROM_GAME, i(5818)),	-- Moonbeam Wand
+					["lvl"] = 18,
+					["timeline"] = {
+						"added 1.11.1.10958",
+						"removed 4.0.3.10000",
 					},
 				}),
 				q(13870, {	-- As Good as it Gets
@@ -118,126 +184,176 @@ _.Zones =
 						13815,	-- Making Stumps
 						13865,	-- Wet Work
 					},
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(6503,  {	-- Ashenvale Outrunners
 					["provider"] = { "n", 12867 },	-- Kuray'bin
 					["coord"] = { 73.5, 60.8, ASHENVALE },
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(19, 7, 19),
 				}),
 				q(13646, {	-- Astranaar Bound
 					["provider"] = { "n", 33445 },	-- Sentinel Avana
 					["coord"] = { 26.8, 35.9, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13642,	-- Bathed in Light
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(13849, {	-- Astranaar's Burning!
 					["provider"] = { "n", 4079 },	-- Sentinel Thenysil
 					["coord"] = { 34.8, 49.7, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(13848, {	-- Bad News Bear-er
 					["provider"] = { "n", 33837 },	-- Kadrak
 					["coord"] = { 73.6, 62.1, ASHENVALE },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 13805,	-- Pierce Their Heart!
-				}),
-				q(909,   {	-- Baron Aquanis
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "i", 16782 },	-- Strange Water Globe
-					["crs"] = { 12876 },	-- Baron Aquanis
-					["races"] = HORDE_ONLY,
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(13642, {	-- Bathed in Light
 					["provider"] = { "n", 3847 },	-- Orendil Broadleaf
 					["coord"] = { 26.8, 36.6, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13623,	-- Delivery for Orendil
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(1010,  {	-- Bathran's Hair
-					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3847 },	-- Orendil Broadleaf
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
+					["timeline"] = {
+						"added 1.11.1.10958",
+						"removed 4.0.3.10000",
+					},
+					["groups"] = {
+						objective(1, {	-- 0/8 Bathran's Hair
+							["provider"] = { "i", 5437 },	-- Bathran's Hair
+							["coord"] = { 31.8, 22.9, ASHENVALE },
+						}),
+					},
 				}),
 				q(26473, {	-- Bathran's Hair
 					["provider"] = { "n", 33204 },	-- Evenar Stillwhisper
 					["coord"] = { 26.7, 21.9, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(13920, {	-- Before You Go...
 					["provider"] = { "n", 34122 },	-- Commander Grimfang
 					["coord"] = { 12.1, 33.8, ASHENVALE },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 13890,	-- Keep the Fires Burning
-					["g"] = {
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
+					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13277" } },{
 						i(56721),	-- Meat Packer Ribbon
 						i(56722),	-- Je'neu's Hunting Vest
 						i(56723),	-- Deerstalker Leggings
 						i(131319),	-- Je'neu's Ringmail Jerkin
-					},
+					}),
 				}),
 				q(216,   {	-- Between a Rock and a Thistlefur
 					["provider"] = { "n", 12757 },	-- Karang Amakkar
 					["coord"] = { 37.7, 43.5, ASHENVALE },
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(21, 7, 21),
 				}),
-				q(26893, {	-- Blackfathom Deeps
-					["u"] = REMOVED_FROM_GAME,
+				q(26893, {	-- Blackfathom Deeps [This might be NYI]
+					["timeline"] = {
+						"added 4.0.3.13277",
+						"removed 8.3.7.10000",
+					},
 				}),
 				q(26894, {	-- Blackfathom Deeps
 					["provider"] = { "n", 34122 },	-- Commander Grimfang
 					["coord"] = { 12.1, 33.8, ASHENVALE },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(26897, {	-- Blackfathom Deeps
 					["provider"] = { "n", 3845 },	-- Shindrell Swiftfire
 					["coord"] = { 18.2, 20.4, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(26898, {	-- Blackfathom Deeps
-					["u"] = REMOVED_FROM_GAME,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 3691 },	-- Raene Wolfrunner
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(13947, {	-- Blastranaar!
 					["provider"] = { "n", 34359 },	-- Captain Goggath
 					["coord"] = { 38.1, 43.8, ASHENVALE },
 					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(56661),	-- Preemptive Striker
-						i(56662),	-- Staff of Fiery Fate
-						i(56663),	-- Leggings of Hellscream's Watch
-						i(131323),	-- Tweedle's Blastproof Legguards
-					},
 					["sourceQuests"] = {
 						13943,	-- Breathing Room
 						13944,	-- Small Hands, Short Fuse
 					},
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
+					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13277" } },{
+						i(56661),	-- Preemptive Striker
+						i(56662),	-- Staff of Fiery Fate
+						i(56663),	-- Leggings of Hellscream's Watch
+						i(131323),	-- Tweedle's Blastproof Legguards
+					}),
 				}),
 				q(13803, {	-- Blood of the Weak
 					["provider"] = { "n", 33837 },	-- Kadrak
 					["coord"] = { 73.6, 62.1, ASHENVALE },
 					["sourceQuest"] = 13712,	-- To The Rescue!
 					["races"] = HORDE_ONLY,
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(13943, {	-- Breathing Room
 					["provider"] = { "n", 34359 },	-- Captain Goggath
 					["coord"] = { 38.1, 43.8, ASHENVALE },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 13936,	-- Tweedle's Dumb
-					["g"] = {
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
+					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13277" } },{
 						i(56667),	-- Cloak of Readiness
 						i(56668),	-- Bracers of Humility
 						i(56669),	-- Groundwork Shield
 						i(131322),	-- Preparation Wristguards
-					},
+					}),
 				}),
 				q(13983, {	-- Building Your Own Coffin
 					["provider"] = { "n", 34596 },	-- Foreman Jinx
 					["coord"] = { 46.1, 63.2, ASHENVALE },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 13977,	-- Mass Production
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(13965, {	-- Check in on the Edunes
 					["provider"] = { "n", 3996 },	-- Faldreas Goeth'Shael
@@ -245,24 +361,36 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26478,	-- Playing Possum
 					["isBreadcrumb"] = true,
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(13985, {	-- Clear the Shrine
 					["provider"] = { "n", 34599 },	-- Bolyun
 					["coord"] = { 17.9, 60.0, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13982,	-- In a Bind
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(13766, {	-- Closure is Only Natural
 					["provider"] = { "n", 17310 },	-- Gnarl
 					["coord"] = { 83.7, 63.1, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26446,	-- Reclaiming Felfire Hill
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(13958, {	-- Condition Critical!
 					["provider"] = { "n", 34359 },	-- Captain Goggath
 					["coord"] = { 38.0, 43.8, ASHENVALE },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 13947,	-- Blastranaar!
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(13868, {	-- Corrupting Influence?
 					["provider"] = { "i", 46128 },	-- Troll Charm
@@ -274,102 +402,167 @@ _.Zones =
 						3922,	-- Thistlefur Totemic
 					},
 					["races"] = ALLIANCE_ONLY,
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(13653, {	-- Crisis at Splintertree
 					["provider"] = { "n", 33421 },	-- Gorka
 					["coord"] = { 72.9, 80.4, ASHENVALE },
 					["sourceQuest"] = 13651,	-- Needs a Little Lubrication
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
+					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13277" } },{
 						i(56639),	-- Mourner's Stole
 						i(56640),	-- Leggings of Loss
 						i(56641),	-- Burden of Sacrifice
 						i(131299),	-- Griefbearer Leggings
-					},
+					}),
 				}),
 				q(13867, {	-- Culling the Furbolg Threat
 					["provider"] = { "n", 3691 },	-- Raene Wolfrunner
 					["coord"] = { 36.6, 49.5, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(1054,  {	-- Culling the Threat
-					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3691 },	-- Raene Wolfrunner
+					["coord"] = { 36.6, 49.6, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 18,
+					["timeline"] = {
+						"added 1.11.1.10958",
+						"removed 4.0.3.10000",
+					},
+					["groups"] = bubbleDown({ ["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000", } },{
+						objective(1, {	-- 0/1 Dal Bloodclaw's Skull
+							["provider"] = { "i", 5544 },	-- Dal Bloodclaw's Skull
+							["cr"] = 3987,	--  Dal Bloodclaw
+							["coord"] = { 37.6, 35.4, ASHENVALE },
+						}),
+						i(1970),	-- Restoring Balm
+					}),
 				}),
 				q(26480, {	-- Dartol's Rod
 					["provider"] = { "n", 3691 },	-- Raene Wolfrunner
 					["coord"] = { 36.6, 49.5, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26479,	-- Return to Raene
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(13801, {	-- Dead Elves Walking
 					["provider"] = { "n", 12724 },	-- Pixel
 					["coord"] = { 73.8, 62.4, ASHENVALE },
 					["sourceQuest"] = 13803,	-- Blood of the Weak
 					["races"] = HORDE_ONLY,
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(13901, {	-- Deep Despair
 					["provider"] = { "n", 12719 },	-- Marukai
 					["coord"] = { 12.6, 35.3, ASHENVALE },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 6442,	-- Naga at the Zoram Strand
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(13935, {	-- Defend the Tree!
 					["provider"] = { "n", 34377 },	-- Halannia
 					["coord"] = { 62.2, 51.0, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13928,	-- Recover the Fallen
-					["g"] = {
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
+					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13277" } },{
 						i(56670),	-- Raynewood Shield
 						i(56671),	-- Shadumbra's Wrath
 						i(56672),	-- Frostshadow Crossbow
 						i(131321),	-- Shadumbra's Might
-					},
+					}),
 				}),
 				q(13623, {	-- Delivery for Orendil
 					["provider"] = { "n", 33204 },	-- Evenar Stillwhisper
 					["coord"] = { 26.7, 22.0, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26473,	-- Bathran's Hair
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(13806, {	-- Demon Duty
 					["provider"] = { "n", 11820 },	-- Locke Okarr
 					["coord"] = { 73.8, 61.6, ASHENVALE },
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 26449,	-- Never Again!
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
-				q(9534, {	-- Destroy the Legion
-					["u"] = REMOVED_FROM_GAME,
+				q(9516, {	-- Destroy the Legion [Alliance]
+					["qg"] = 17303,	-- Vindicator Vedaar <Hand of Argus>
+					["coord"] = { 86.5, 44.2, ASHENVALE },
+					["races"] = ALLIANCE_ONLY,
+					["u"] = TBC_PHASE_ONE,
+					["lvl"] = 26,
+					["timeline"] = {
+						"added 2.0.6.10000",
+						"removed 4.0.3.10000",
+					},
+				}),
+				q(9534, {	-- Destroy the Legion [Horde]
+					["qg"] = 17355,	-- Valusha
+					["coord"] = { 73.2, 60.4, ASHENVALE },
 					["races"] = HORDE_ONLY,
-					["provider"] = { "n", 17355 },	-- Valusha
+					["u"] = TBC_PHASE_ONE,
+					["lvl"] = 26,
+					["timeline"] = {
+						"added 2.0.6.10000",
+						"removed 4.0.3.10000",
+					},
 				}),
-				q(26448, {	-- Destroy the Legion
-					["provider"] = { "n", 17355 },	-- Valusha
-					["coord"] = { 73.1, 60.1, ASHENVALE },
-					["races"] = HORDE_ONLY,
-				}),
-				q(26444, {	-- Destroy the Legion
+				q(26444, {	-- Destroy the Legion [Alliance]
 					["provider"] = { "n", 17303 },	-- Vindicator Vedaar
 					["coord"] = { 84.0, 62.7, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
-				q(9520, {	-- Diabolical Plans (A)
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "i", 23777 },	-- Diabolical Plans
-				}),
-				q(9535, {	-- Diabolical Plans (H)
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "i", 23797 },	-- Diabolical Plans
-				}),
-				q(26447, {	-- Diabolical Plans
-					["provider"] = { "i", 23798 },	-- Diabolical Plans
-					["coord"] = { 81.5, 69.1, ASHENVALE },
+				q(26448, {	-- Destroy the Legion [Horde]
+					["provider"] = { "n", 17355 },	-- Valusha
+					["coord"] = { 73.1, 60.1, ASHENVALE },
 					["races"] = HORDE_ONLY,
-					["crs"] = {
-						11697,	-- Mannoroc Lasher
-						6115,	-- Roaming Felguard
-						6073,	-- Searing Felguard
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
+				}),
+				q(9520, {	-- Diabolical Plans [Alliance]
+					["provider"] = { "i", 23780 },	-- Diabolical Plans
+					["races"] = HORDE_ONLY,
+					["u"] = TBC_PHASE_ONE,
+					["lvl"] = 27,
+					["timeline"] = {
+						"added 2.0.6.10000",
+						"removed 4.0.3.10000",
+					},
+				}),
+				q(9535, {	-- Diabolical Plans [Horde]
+					["provider"] = { "i", 23798 },	-- Diabolical Plans
+					["races"] = HORDE_ONLY,
+					["u"] = TBC_PHASE_ONE,
+					["lvl"] = 27,
+					["timeline"] = {
+						"added 2.0.6.10000",
+						"removed 4.0.3.10000",
 					},
 				}),
 				q(26443, {	-- Diabolical Plans
@@ -380,12 +573,31 @@ _.Zones =
 						6115,	-- Roaming Felguard
 						6073,	-- Searing Felguard
 					},
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
+				}),
+				q(26447, {	-- Diabolical Plans
+					["provider"] = { "i", 23798 },	-- Diabolical Plans
+					["coord"] = { 81.5, 69.1, ASHENVALE },
+					["races"] = HORDE_ONLY,
+					["crs"] = {
+						11697,	-- Mannoroc Lasher
+						6115,	-- Roaming Felguard
+						6073,	-- Searing Felguard
+					},
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(13797, {	-- Dirty Deeds
 					["provider"] = { "n", 33760 },	-- Durak
 					["coord"] = { 72.2, 57.6, ASHENVALE },
 					["sourceQuest"] = 13751,	-- Tell No One!
 					["races"] = HORDE_ONLY,
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(25613, {	-- Do Yourself a Favor
 					["provider"] = { "n", 40894 },	-- Gnombus the X-Terminator
@@ -394,6 +606,9 @@ _.Zones =
 					["sourceQuests"] = {
 						13913,	-- They Took Our Gnomes
 						25607,	-- Ze Gnomecorder
+					},
+					["timeline"] = {
+						"added 4.0.3.13277",
 					},
 				}),
 				q(13594, {	-- Don't Forget the Horde
@@ -404,112 +619,203 @@ _.Zones =
 						26408,	-- Ashes in Ashenvale
 						28492,	-- Hero's Call: Ashenvale!
 					},
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(26476, {	-- Dryad Delivery
 					["provider"] = { "n", 3691 },	-- Raene Wolfrunner
 					["coord"] = { 36.6, 49.5, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26475,	-- Elune's Tear
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
-				q(1016,  {	-- Elemental Bracers
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 3885 },	-- Sentinel Velene Starstrike
+				-- #if BEFORE CATA
+				q(1016, {	-- Elemental Bracers
+					["qg"] = 3885,	-- Sentinel Velene Starstrike
+					["coord"] = { 49.8, 67.2, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
+					["timeline"] = {
+						"added 1.11.1.10958",
+						"removed 4.0.3.10000",
+					},
+					["groups"] = {
+						objective(1, {	-- 0/1 Divined Scroll
+							["provider"] = { "i", 5455 },	-- Divined Scroll
+						}),
+						objective(2, {	-- 0/5 Intact Elemental Bracer
+							["provider"] = { "i", 12220 },	-- Intact Elemental Bracer
+						}),
+					},
 				}),
-				q(1033,  {	-- Elune's Tear
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 3894 },	-- Pelturas Whitemoon
-					["races"] = ALLIANCE_ONLY,
+				-- #else
+				q(1016, {	-- Retaking Mystral Lake
+					["timeline"] = {
+						"added 1.11.1.10958",
+						"removed 4.0.3.10000",
+					},
+				}),
+				-- #end
+				q(1033, {	-- Elune's Tear
+					["qg"] = 3894,	-- Pelturas Whitemoon
 					["sourceQuest"] = 1020,	-- Orendil's Cure
+					["coord"] = { 37.3, 51.8, ASHENVALE },
+					["races"] = ALLIANCE_ONLY,
+					["timeline"] = {
+						"added 1.11.1.10958",
+						"removed 4.0.3.10000",
+					},
+					["lvl"] = 20,
+					["groups"] = {
+						objective(1, { 	-- 0/1 Elune's Tear
+							["provider"] = { "i", 5493 },	-- Elune's Tear
+							["coord"] = { 46, 46.5, ASHENVALE },
+						}),
+					},
 				}),
 				q(26475, {	-- Elune's Tear
 					["provider"] = { "n", 3894 },	-- Pelturas Whitemoon
 					["coord"] = { 37.3, 51.7, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26474,	-- Orendil's Cure
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(13698, {	-- Explosives Shredding
 					["provider"] = { "n", 17287 },	-- Sentinel Luciel Starwhisper
 					["coord"] = { 83.8, 62.6, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 26457,	-- Agents of Destruction
-					["g"] = {
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
+					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13277" } },{
 						i(56646),	-- Shredder Blade
 						i(56647),	-- Powder Burn Vest
 						i(56648),	-- Forestkeeper Legguards
 						i(131301),	-- Soot-Stained Chainmail Breastplate
 						i(156957),	-- Shredder Piston
-					},
+					}),
 				}),
-				q(1035,  {	-- Fallen Sky Lake
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 3894 },	-- Pelturas Whitemoon
-					["races"] = ALLIANCE_ONLY,
+				q(1035, {	-- Fallen Sky Lake
+					["qg"] = 3894,	-- Pelturas Whitemoon
 					["sourceQuest"] = 1034,	-- The Ruins of Stardust
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(5814)),	-- Snapbrook Armor
-						un(REMOVED_FROM_GAME, i(6722)),	-- Beastial Manacles
-						un(REMOVED_FROM_GAME, i(17047)),	-- Luminescent Amice
+					["coord"] = { 37.3, 51.8, ASHENVALE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
+					["timeline"] = {
+						"added 1.11.1.10958",
+						"removed 4.0.3.10000",
 					},
+					["groups"] = bubbleDown({ ["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000", } },{
+						objective(1, {	-- 0/1 Fallen Moonstone
+							["provider"] = { "i", 5508 },	-- Fallen Moonstone
+							["cr"] = 3931,	-- Shadethicket Oracle
+							["coord"] = { 66.6, 82.0, ASHENVALE },
+						}),
+						i(5814),	-- Snapbrook Armor
+						i(6722),	-- Beastial Manacles
+						i(17047),	-- Luminescent Amice
+					}),
 				}),
 				q(25621, {	-- Field Test: Gnomecorder
 					["provider"] = { "n", 40895 },	-- Professor Xakxak Gyromate
 					["coord"] = { 35.4, 71.1, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25615,	-- Return to Stardust
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(13619, {	-- Final Report
 					["provider"] = { "n", 33294 },	-- Gorat
 					["coord"] = { 64.2, 84.4, ASHENVALE },
 					["sourceQuest"] = 13618,	-- Find Gorat!
 					["races"] = HORDE_ONLY,
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(26463, {	-- Finding Teronis
 					["provider"] = { "n", 3847 },	-- Orendil Broadleaf
 					["coord"] = { 26.8, 36.6, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13623,	-- Delivery For Orendil
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
-				q(1011,  {	-- Forsaken Diseases
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 3848 },	-- Kayneth Stillwind
-					["races"] = ALLIANCE_ONLY,
+				q(1011, {	-- Forsaken Diseases
+					["qg"] = 3848,	-- Kayneth Stillwind
 					["sourceQuest"] = 4581,	-- Kayneth Stillwind
+					["coord"] = { 85.3, 44.7, ASHENVALE },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5440, 1 },	-- Bottle of Disease
+					},
+					["lvl"] = 24,
+					["groups"] = {
+						objective(1, {	-- 0/1 Bottle of Disease
+							["provider"] = { "i", 5440 },	-- Bottle of Disease
+							["coord"] = { 75.3, 72.3, ASHENVALE },
+						}),
+					},
 				}),
-				q(6482,  {	-- Freedom to Ruul
-					["provider"] = { "n", 12818 },	-- Ruul Snowhoof
-					["coord"] = { 41.4, 34.6, ASHENVALE },
+				q(6482, {	-- Freedom to Ruul
+					["qg"] = 12818,	-- Ruul Snowhoof
+					["coord"] = { 41.4, 34.4, ASHENVALE },
 					["races"] = HORDE_ONLY,
+					["lvl"] = 19,
+					["timeline"] = {
+						"added 1.11.1.10958",
+						"removed 4.0.3.10000",
+					},
 				}),
 				q(25729, {	-- Gerenzo the Traitor
 					["provider"] = { "n", 40895 },	-- Professor Xakxak Gyromate
 					["sourceQuest"] = 25652,	-- Commandeer That Balloon!
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 35.4, 71.2, ASHENVALE },
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(13877, {	-- Go With The Flow
 					["provider"] = { "n", 34239 },	-- Hephaestus Pilgrim
 					["coord"] = { 36.4, 49.8, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13874,	-- A Not-So-Charmed Life
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(13875, {	-- Gurtar's Request
 					["provider"] = { "n", 34242 },	-- Guardian Gurtar
 					["races"] = HORDE_ONLY,
 					["coord"] = { 89.5, 48.6, ASHENVALE },
-					--	["sourceQuest"] = 13873,	-- Sheelah's Last Wish
-					["g"] = {
+					["sourceQuest"] = 13873,	-- Sheelah's Last Wish
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
+					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13277" } },{
 						i(56655),	-- Bloodcup Slippers
 						i(56656),	-- Faithful Treads
 						i(56657),	-- Gloves of Unforgotten Vows
 						i(131309),	-- Faithful Footguards
-					},
+					}),
 				}),
 				q(13921, {	-- He Who Would Be Forgiven
 					["coord"] = { 71.3, 60.5, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "This quest is auto given to you once completing |cFFFFD700A Trip To The Moonwell|r.",
 					["sourceQuest"] = 13919,	-- A Trip to the Moonwell
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(14018, {	-- He Who Would Be Forgiven
 					["provider"] = { "n", 3894 },	-- Pelturas Whitemoon
@@ -517,19 +823,28 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["description"] = "You can pick this quest up if you abandon the quest by the same name.",
 					["sourceQuest"] = 13919,	-- A Trip to the Moonwell
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(25616, {	-- Hellscream's Legacy
 					["provider"] = { "n", 34354 },	-- Huntress Jalin
 					["coord"] = { 35.1, 71.6, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 25615,	-- Return to Stardust
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(13880, {	-- Hot Lava
 					["provider"] = { "n", 34290 },	-- Core
 					["coord"] = { 52.3, 56.5, ASHENVALE },
 					["sourceQuests"] = {
-						13877,	-- Go With The Flow (alliance)
-						13879,	-- Thunder Peak (horde)
+						13877,	-- Go With The Flow (A)
+						13879,	-- Thunder Peak (H)
+					},
+					["timeline"] = {
+						"added 4.0.3.13277",
 					},
 				}),
 				q(13982, {	-- In a Bind
@@ -537,6 +852,9 @@ _.Zones =
 					["coord"] = { 17.9, 60.0, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13976,	-- Three Fiends of the Forest
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(13922, {	-- In the Hands of the Perverse
 					["provider"] = { "n", 34335 },	-- Avrus Illwhisper
@@ -546,14 +864,21 @@ _.Zones =
 						13921,	-- He Who Would Be Forgiven
 						14018,	-- He Who Would Be Forgiven
 					},
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
 				}),
 				q(1012,  {	-- Insane Druids
-					["u"] = REMOVED_FROM_GAME,
 					["provider"] = { "n", 3848 },	-- Kayneth Stillwind
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 1011,	-- Forsaken Diseases
+					["timeline"] = {
+						"added 1.11.1.10958",
+						"removed 4.0.3.10000",
+					},
+					["lvl"] = 24,
 					["g"] = {
-						i(5813),	-- Emil's Brand -- still obtainable despite the quest being removed
+						i(5813),	-- Emil's Brand -- Still obtainable via Insane Druids (26472)
 					},
 				}),
 				q(26472, {	-- Insane Druids
@@ -561,10 +886,13 @@ _.Zones =
 					["coord"] = { 75.6, 75.3, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 13792,	-- The Shadewalker
-					["g"] = {
+					["timeline"] = {
+						"added 4.0.3.13277",
+					},
+					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13277" } },{
 						i(5813),	-- Emil's Brand
 						i(156959),	-- Emil's Staff
-					},
+					}),
 				}),
 				q(824,   {	-- Je'neu of the Earthen Ring
 					["provider"] = { "n", 12737 },	-- Mastok Wrilehiss
