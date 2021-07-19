@@ -51,7 +51,7 @@ _.Zones =
 					["lvl"] = 24,
 					["u"] = TBC_PHASE_ONE,
 					["timeline"] = {
-						"added 2.0.5.10000",
+						"added 2.0.1.10000",
 						"removed 4.0.3.10000",
 					},
 					["groups"] = {
@@ -105,10 +105,14 @@ _.Zones =
 					["timeline"] = {
 						"added 4.0.3.13277",
 					},
-					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13277" } },{
+					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13287" } },{
 						i(56642),	-- Starwhisper Monnions
 						i(56643),	-- Woodguard Vest
-						i(131532),	-- Starwhisper Spaulders
+						i(131532, {	-- Starwhisper Spaulders
+							["timeline"] = {
+								"added 7.0.3.22248",
+							},
+						}),
 					}),
 				}),
 				q(13841, {	-- All Apologies
@@ -128,11 +132,15 @@ _.Zones =
 					["timeline"] = {
 						"added 4.0.3.13277",
 					},
-					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13277" } },{
+					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13287" } },{
 						i(56676),	-- Whitemoon Gloves
 						i(56677),	-- Belt of Healing Charms
 						i(56678),	-- Boots of the Deliverer
-						i(131320),	-- Whitemoon Mender Cord
+						i(131320, {	-- Whitemoon Mender Cord
+							["timeline"] = {
+								"added 7.0.3.22248",
+							},
+						}),
 					}),
 				}),
 				q(6564, {	-- Allegiance to the Old Gods
@@ -152,7 +160,7 @@ _.Zones =
 						"added 1.11.1.10958",
 						"removed 4.0.3.10000",
 					},
-					["g"] = bubbleDown({ ["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000", } },{
+					["g"] = bubbleDown({ ["timeline"] = { "added 1.11.1.5462", "removed 4.0.3.10000", } },{
 						i(17694),	-- Band of the Fist
 						i(17695),	-- Chestnut Mantle
 					}),
@@ -260,11 +268,15 @@ _.Zones =
 					["timeline"] = {
 						"added 4.0.3.13277",
 					},
-					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13277" } },{
+					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13287" } },{
 						i(56721),	-- Meat Packer Ribbon
 						i(56722),	-- Je'neu's Hunting Vest
 						i(56723),	-- Deerstalker Leggings
-						i(131319),	-- Je'neu's Ringmail Jerkin
+						i(131319, {	-- Je'neu's Ringmail Jerkin
+							["timeline"] = {
+								"added 7.0.3.22248",
+							},
+						}),
 					}),
 				}),
 				q(216,   {	-- Between a Rock and a Thistlefur
@@ -314,11 +326,15 @@ _.Zones =
 					["timeline"] = {
 						"added 4.0.3.13277",
 					},
-					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13277" } },{
+					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13287" } },{
 						i(56661),	-- Preemptive Striker
 						i(56662),	-- Staff of Fiery Fate
 						i(56663),	-- Leggings of Hellscream's Watch
-						i(131323),	-- Tweedle's Blastproof Legguards
+						i(131323, {	-- Tweedle's Blastproof Legguards
+							["timeline"] = {
+								"added 7.0.3.22248",
+							},
+						}),
 					}),
 				}),
 				q(13803, {	-- Blood of the Weak
@@ -338,11 +354,15 @@ _.Zones =
 					["timeline"] = {
 						"added 4.0.3.13277",
 					},
-					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13277" } },{
+					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13287" } },{
 						i(56667),	-- Cloak of Readiness
 						i(56668),	-- Bracers of Humility
 						i(56669),	-- Groundwork Shield
-						i(131322),	-- Preparation Wristguards
+						i(131322, {	-- Preparation Wristguards
+							["timeline"] = {
+								"added 7.0.3.22248",
+							},
+						}),
 					}),
 				}),
 				q(13983, {	-- Building Your Own Coffin
@@ -413,11 +433,15 @@ _.Zones =
 					["timeline"] = {
 						"added 4.0.3.13277",
 					},
-					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13277" } },{
+					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13287" } },{
 						i(56639),	-- Mourner's Stole
 						i(56640),	-- Leggings of Loss
 						i(56641),	-- Burden of Sacrifice
-						i(131299),	-- Griefbearer Leggings
+						i(131299, {	-- Griefbearer Leggings
+							["timeline"] = {
+								"added 7.0.3.22248",
+							},
+						}),
 					}),
 				}),
 				q(13867, {	-- Culling the Furbolg Threat
@@ -437,14 +461,19 @@ _.Zones =
 						"added 1.11.1.10958",
 						"removed 4.0.3.10000",
 					},
-					["groups"] = bubbleDown({ ["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000", } },{
+					["groups"] = {
 						objective(1, {	-- 0/1 Dal Bloodclaw's Skull
 							["provider"] = { "i", 5544 },	-- Dal Bloodclaw's Skull
 							["cr"] = 3987,	--  Dal Bloodclaw
 							["coord"] = { 37.6, 35.4, ASHENVALE },
 						}),
-						i(1970),	-- Restoring Balm
-					}),
+						i(1970,	{	-- Restoring Balm
+							["timeline"] = {
+								"added 1.11.1.5462",
+								"removed 4.0.3.10000",
+							},
+						}),
+					},
 				}),
 				q(26480, {	-- Dartol's Rod
 					["provider"] = { "n", 3691 },	-- Raene Wolfrunner
@@ -481,11 +510,15 @@ _.Zones =
 					["timeline"] = {
 						"added 4.0.3.13277",
 					},
-					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13277" } },{
+					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13287" } },{
 						i(56670),	-- Raynewood Shield
 						i(56671),	-- Shadumbra's Wrath
 						i(56672),	-- Frostshadow Crossbow
-						i(131321),	-- Shadumbra's Might
+						i(131321, {	-- Shadumbra's Might
+							["timeline"] = {
+								"added 7.0.3.22248",
+							},
+						}),
 					}),
 				}),
 				q(13623, {	-- Delivery for Orendil
@@ -513,7 +546,7 @@ _.Zones =
 					["u"] = TBC_PHASE_ONE,
 					["lvl"] = 26,
 					["timeline"] = {
-						"added 2.0.6.10000",
+						"added 2.0.1.10000",
 						"removed 4.0.3.10000",
 					},
 				}),
@@ -524,7 +557,7 @@ _.Zones =
 					["u"] = TBC_PHASE_ONE,
 					["lvl"] = 26,
 					["timeline"] = {
-						"added 2.0.6.10000",
+						"added 2.0.1.10000",
 						"removed 4.0.3.10000",
 					},
 				}),
@@ -550,7 +583,7 @@ _.Zones =
 					["u"] = TBC_PHASE_ONE,
 					["lvl"] = 27,
 					["timeline"] = {
-						"added 2.0.6.10000",
+						"added 2.0.1.10000",
 						"removed 4.0.3.10000",
 					},
 				}),
@@ -560,7 +593,7 @@ _.Zones =
 					["u"] = TBC_PHASE_ONE,
 					["lvl"] = 27,
 					["timeline"] = {
-						"added 2.0.6.10000",
+						"added 2.0.1.10000",
 						"removed 4.0.3.10000",
 					},
 				}),
@@ -631,8 +664,7 @@ _.Zones =
 						"added 4.0.3.13277",
 					},
 				}),
-				-- #if BEFORE CATA
-				q(1016, {	-- Elemental Bracers
+				q(1016, {	-- Elemental Bracers [Vanilla] / Retaking Mystral Lake [CATA]
 					["qg"] = 3885,	-- Sentinel Velene Starstrike
 					["coord"] = { 49.8, 67.2, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
@@ -650,14 +682,6 @@ _.Zones =
 						}),
 					},
 				}),
-				-- #else
-				q(1016, {	-- Retaking Mystral Lake
-					["timeline"] = {
-						"added 1.11.1.10958",
-						"removed 4.0.3.10000",
-					},
-				}),
-				-- #endif
 				q(1033, {	-- Elune's Tear
 					["qg"] = 3894,	-- Pelturas Whitemoon
 					["sourceQuest"] = 1020,	-- Orendil's Cure
@@ -692,12 +716,20 @@ _.Zones =
 					["timeline"] = {
 						"added 4.0.3.13277",
 					},
-					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13277" } },{
+					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13287" } },{
 						i(56646),	-- Shredder Blade
 						i(56647),	-- Powder Burn Vest
 						i(56648),	-- Forestkeeper Legguards
-						i(131301),	-- Soot-Stained Chainmail Breastplate
-						i(156957),	-- Shredder Piston
+						i(131301, {	-- Soot-Stained Chainmail Breastplate
+							["timeline"] = {
+								"added 7.0.3.22248",
+							},
+						}),
+						i(156957, {	-- Shredder Piston
+							["timeline"] = {
+								"added 7.3.5.25716",
+							},
+						}),
 					}),
 				}),
 				q(1035, {	-- Fallen Sky Lake
@@ -710,11 +742,15 @@ _.Zones =
 						"added 1.11.1.10958",
 						"removed 4.0.3.10000",
 					},
-					["groups"] = bubbleDown({ ["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000", } },{
+					["groups"] = bubbleDown({ ["timeline"] = { "added 1.11.1.5462", "removed 4.0.3.10000", } },{
 						objective(1, {	-- 0/1 Fallen Moonstone
 							["provider"] = { "i", 5508 },	-- Fallen Moonstone
 							["cr"] = 3931,	-- Shadethicket Oracle
 							["coord"] = { 66.6, 82.0, ASHENVALE },
+							["timeline"] = {
+								"added 1.11.1.10958",
+								"removed 4.0.3.10000",
+							},
 						}),
 						i(5814),	-- Snapbrook Armor
 						i(6722),	-- Beastial Manacles
@@ -753,9 +789,6 @@ _.Zones =
 					["sourceQuest"] = 4581,	-- Kayneth Stillwind
 					["coord"] = { 85.3, 44.7, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
-					["cost"] = {
-						{ "i", 5440, 1 },	-- Bottle of Disease
-					},
 					["lvl"] = 24,
 					["groups"] = {
 						objective(1, {	-- 0/1 Bottle of Disease
@@ -800,11 +833,15 @@ _.Zones =
 					["timeline"] = {
 						"added 4.0.3.13277",
 					},
-					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13277" } },{
+					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13287" } },{
 						i(56655),	-- Bloodcup Slippers
 						i(56656),	-- Faithful Treads
 						i(56657),	-- Gloves of Unforgotten Vows
-						i(131309),	-- Faithful Footguards
+						i(131309, {	-- Faithful Footguards
+							["timeline"] = {
+								"added 7.0.3.22248",
+							},
+						}),
 					}),
 				}),
 				q(13921, {	-- He Who Would Be Forgiven
@@ -877,7 +914,11 @@ _.Zones =
 					},
 					["lvl"] = 24,
 					["g"] = {
-						i(5813),	-- Emil's Brand -- Still obtainable via Insane Druids (26472)
+						i(5813, {	-- Emil's Brand -- Still obtainable via Insane Druids (26472)
+							["timeline"] = {
+								"added 1.11.1.5462",
+							},
+						}),
 					},
 				}),
 				q(26472, {	-- Insane Druids
@@ -888,10 +929,18 @@ _.Zones =
 					["timeline"] = {
 						"added 4.0.3.13277",
 					},
-					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13277" } },{
-						i(5813),	-- Emil's Brand
-						i(156959),	-- Emil's Staff
-					}),
+					["g"] = {
+						i(5813, {	-- Emil's Brand
+							["timeline"] = {
+								"added 1.11.1.5462",
+							},
+						}),
+						i(156959, {	-- Emil's Staff
+							["timeline"] = {
+								"added 7.3.5.25716",
+							},
+						}),
+					},
 				}),
 				q(824, {	-- Je'neu of the Earthen Ring
 					["qg"] = 12737,	-- Mastok Wrilehiss
@@ -902,14 +951,22 @@ _.Zones =
 					["timeline"] = {
 						"added 1.11.1.10772",
 					},
-					["groups"] = {
+					["groups"] = bubbleDown({ ["timeline"] = { "added 1.11.1.5462" } },{
 						objective(1, {	-- 0/1 Befouled Water Globe
 							["provider"] = { "i", 16408 },	-- Befouled Water Globe
+							["timeline"] = {
+								"added 1.11.1.10772",
+							},
 						}),
 						i(16659),	-- Deftkin Belt
 						i(16660),	-- Driftmire Shield
 						i(16661),	-- Soft Willow Cape
-					},
+						i(131216, {	-- Nimblereed Chain
+							["timeline"] = {
+								"added 7.0.3.22248",
+							},
+						}),
+					}),
 				}),
 				q(1056,  {	-- Journey to Stonetalon Peak
 					["provider"] = { "n", 3996 },	-- Faldreas Goeth'Shael
@@ -942,11 +999,15 @@ _.Zones =
 					["timeline"] = {
 						"added 4.0.3.13277",
 					},
-					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13277" } },{
+					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13287" } },{
 						i(56715),	-- Oily Bracers
 						i(56716),	-- Alighted Boots
 						i(56717),	-- Mystlash Bracers
-						i(131314),	-- Darkbreaker Treads
+						i(131314, {	-- Darkbreaker Treads
+							["timeline"] = {
+								"added 7.0.3.22248",
+							},
+						}),
 					}),
 				}),
 				q(13989, {	-- King of the Foulweald
@@ -957,7 +1018,7 @@ _.Zones =
 					["timeline"] = {
 						"added 4.0.3.13277",
 					},
-					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13277" } },{
+					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13287" } },{
 						i(56706),	-- Greenpaw Belt
 						i(56707),	-- Band of Perserverence
 					}),
@@ -1030,6 +1091,10 @@ _.Zones =
 							["coord"] = { 48.2, 19.0, THE_BARRENS },
 						}),
 						i(5816, {	-- Light of Elune
+							["timeline"] = {
+								"added 1.11.1.5462",
+								"removed 4.0.3.10000",
+							},
 							["description"] = "Single use. Save this for AQ40 or Naxx.",
 						}),
 					},
@@ -1051,12 +1116,16 @@ _.Zones =
 					["timeline"] = {
 						"added 4.0.3.13277",
 					},
-					["g"] = {
+					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13287" } },{
 						i(56627),	-- Labor Camp Frock
 						i(56628),	-- Manager's Mantle
 						i(56629),	-- Hands of Encouragement
-						i(131297),	-- Gorka's Brass Shoulderguards
-					},
+						i(131297, {	-- Gorka's Brass Shoulderguards
+							["timeline"] = {
+								"added 7.0.3.22248",
+							},
+						}),
+					}),
 				}),
 				q(13977, {	-- Mass Production
 					["provider"] = { "n", 34569 },	-- Flooz
@@ -1115,14 +1184,14 @@ _.Zones =
 					["u"] = TBC_PHASE_ONE,
 					["lvl"] = 27,
 					["timeline"] = {
-						"added 2.0.6.10000",
+						"added 2.0.1.10000",
 						"removed 4.0.3.10000",
 					},
-					["groups"] = {	-- All these items are obtainable via cata-equivalent
+					["groups"] = bubbleDown({ ["timeline"] = { "added 2.0.1.6180" } },{	-- All these items are obtainable via cata-equivalent
 						i(24119),	-- Band of Argas
 						i(24120),	-- Seal of Argas
 						i(24118),	-- Signet of Argas
-					},
+					}),
 				}),
 				q(9536, {	-- Never Again! [Horde]
 					["qg"] = 17355,	-- Valusha
@@ -1132,14 +1201,14 @@ _.Zones =
 					["u"] = TBC_PHASE_ONE,
 					["lvl"] = 27,
 					["timeline"] = {
-						"added 2.0.6.10000",
+						"added 2.0.1.10000",
 						"removed 4.0.3.10000",
 					},
-					["groups"] = { -- All these items are obtainable via cata-equivalent
+					["groups"] = bubbleDown({ ["timeline"] = { "added 2.0.1.6180" } },{ -- All these items are obtainable via cata-equivalent
 						i(24119),	-- Band of Argas
 						i(24120),	-- Seal of Argas
 						i(24118),	-- Signet of Argas
-					},
+					}),
 				}),
 				q(26445, {	-- Never Again! [Alliance]
 					["provider"] = { "n", 17303 },	-- Vindicator Vedaar
@@ -1149,11 +1218,11 @@ _.Zones =
 					["timeline"] = {
 						"added 4.0.3.13277",
 					},
-					["g"] = {
+					["g"] = bubbleDown({ ["timeline"] = { "added 2.0.1.6180" } },{
 						i(24119),	-- Band of Argus
 						i(24120),	-- Seal of Argus
 						i(24118),	-- Signet of Argus
-					},
+					}),
 				}),
 				q(26449, {	-- Never Again! [Horde]
 					["provider"] = { "n", 17355 },	-- Valusha
@@ -1163,11 +1232,11 @@ _.Zones =
 					["timeline"] = {
 						"added 4.0.3.13277",
 					},
-					["g"] = {
+					["g"] = bubbleDown({ ["timeline"] = { "added 2.0.1.6180" } },{
 						i(24119),	-- Band of Argus
 						i(24120),	-- Seal of Argus
 						i(24118),	-- Signet of Argus
-					},
+					}),
 				}),
 				q(13595, {	-- Of Their Own Design
 					["provider"] = { "n", 33182 },	-- Bathran
@@ -1222,12 +1291,16 @@ _.Zones =
 					["timeline"] = {
 						"added 4.0.3.13277",
 					},
-					["g"] = {
+					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13287" } },{
 						i(56727),	-- Scrupleless Bracers
 						i(56728),	-- Bloodtaint Boots
 						i(56729),	-- Forest Heart Piercer
-						i(131304),	-- Heart-Corruptor Wristguards
-					},
+						i(131304, {	-- Heart-Corruptor Wristguards
+							["timeline"] = {
+								"added 7.0.3.22248",
+							},
+						}),
+					}),
 				}),
 				q(13730, {	-- Playing with Felfire
 					["provider"] = { "n", 33726 },	-- Splintertree Demolisher
@@ -1237,13 +1310,21 @@ _.Zones =
 					["timeline"] = {
 						"added 4.0.3.13277",
 					},
-					["g"] = {
+					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13287" } },{
 						i(56649),	-- Folly's Edge
 						i(56650),	-- Felfire-Tainted Vest
 						i(56651),	-- Legguards of Abandoned Virtue
-						i(131302),	-- Felfire-Scorched Chesteguard
-						i(156958),	-- Scepter of Questionable Decision Making
-					},
+						i(131302, {	-- Felfire-Scorched Chesteguard
+							["timeline"] = {
+								"added 7.0.3.22248",
+							},
+						}),
+						i(156958, {	-- Scepter of Questionable Decision Making
+							["timeline"] = {
+								"added 7.3.5.25716",
+							},
+						}),
+					}),
 				}),
 				q(26478, {	-- Playing Possum
 					["provider"] = { "n", 3916 },	-- Shael'dryn
@@ -1253,12 +1334,16 @@ _.Zones =
 					["timeline"] = {
 						"added 4.0.3.13277",
 					},
-					["g"] = {
+					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13287" } },{
 						i(56664),	-- Shael'dryn's Bracers
 						i(56665),	-- Possumfoot Boots
 						i(56666),	-- Dissembling Bracers
-						i(131534),	-- Possumfoot Treads
-					},
+						i(131534, {	-- Possumfoot Treads
+							["timeline"] = {
+								"added 7.0.3.22248",
+							},
+						}),
+					}),
 				}),
 				q(1134, {	-- Pridewings of Stonetalon
 					["qg"] = 3845,	-- Shindrell Swiftfire
@@ -1288,8 +1373,7 @@ _.Zones =
 						"added 4.0.3.13277",
 					},
 				}),
-				-- #if BEFORE CATA
-				q(991, {	-- Raene's Cleansing (1)
+				q(991, {	-- Raene's Cleansing (1) [Vanilla] / Finding Teronis [CATA]
 					["qg"] = 3691,	-- Raene Wolfrunner
 					-- #if AFTER TBC
 					["sourceQuest"] = 10752,	-- Onward to Ashenvale
@@ -1302,7 +1386,7 @@ _.Zones =
 						"removed 4.0.3.10000",
 					},
 				}),
-				q(1023, {	-- Raene's Cleansing (2)
+				q(1023, {	-- Raene's Cleansing (2) [Vanilla] / The Lost Gem [CATA]
 					["qg"] = 3891,	-- Teronis' Corpse
 					["sourceQuest"] = 991,	-- Raene's Cleansing (1)
 					["coord"] = { 20.2, 42.2, ASHENVALE },
@@ -1319,9 +1403,24 @@ _.Zones =
 						objective(2, {	-- 0/1 Glowing Gem
 							["provider"] = { "i", 5463 },	-- Glowing Gem
 						}),
+						i(56624, {	-- Falathim-Washed Robes
+							["timeline"] = {
+								"added 4.0.3.13287",
+							},
+						}),
+						i(56625, {	-- Broadleaf Mantle
+							["timeline"] = {
+								"added 4.0.3.13287",
+							},
+						}),
+						i(56626, {	-- Maestra's Gloves
+							["timeline"] = {
+								"added 4.0.3.13287",
+							},
+						}),
 					},
 				}),
-				q(1024, {	-- Raene's Cleansing (3)
+				q(1024, {	-- Raene's Cleansing (3) [Vanilla] / Dryad Delivery [CATA]
 					["qg"] = 3691,	-- Raene Wolfrunner
 					["sourceQuest"] = 1023,	-- Raene's Cleansing (2)
 					["coord"] = { 36.6, 49.6, ASHENVALE },
@@ -1337,7 +1436,7 @@ _.Zones =
 						}),
 					},
 				}),
-				q(1026, {	-- Raene's Cleansing (4)
+				q(1026, {	-- Raene's Cleansing (4) [Vanilla] / Search the Bole [CATA]
 					["qg"] = 3916,	-- Shael'dryn
 					["sourceQuest"] = 1024,	-- Raene's Cleansing (3)
 					["coord"] = { 53.5, 46.3, ASHENVALE },
@@ -1353,9 +1452,10 @@ _.Zones =
 							["provider"] = { "o", 19022 },	-- Worn Chest
 							["coord"] = { 54.4, 35.3, ASHENVALE },
 						}),
+						i(5475),	-- Wooden Key
 					},
 				}),
-				q(1027, {	-- Raene's Cleansing (5)
+				q(1027, {	-- Raene's Cleansing (5) [Vanilla] / Playing Possum [CATA]
 					["qg"] = 3916,	-- Shael'dryn
 					["sourceQuest"] = 1026,	-- Raene's Cleansing (4)
 					["coord"] = { 53.5, 46.3, ASHENVALE },
@@ -1371,9 +1471,24 @@ _.Zones =
 							["cr"] = 3928,	-- Rotting Slime
 							["description"] = "When you kill a slime, it can drop a Rusty Chest which can contain this item.",
 						}),
+						i(56664, {	-- Shael'dryn's Bracers
+							["timeline"] = {
+								"added 4.0.3.13287",
+							},
+						}),
+						i(56665, {	-- Possumfoot Boots
+							["timeline"] = {
+								"added 4.0.3.13287",
+							},
+						}),
+						i(56666, {	-- Dissembling Bracers
+							["timeline"] = {
+								"added 4.0.3.13287",
+							},
+						}),
 					},
 				}),
-				q(1028, {	-- Raene's Cleansing (6)
+				q(1028, {	-- Raene's Cleansing (6) [Vanilla] / Raene's Cleansing [CATA]
 					["qg"] = 3916,	-- Shael'dryn
 					["sourceQuest"] = 1027,	-- Raene's Cleansing (5)
 					["coord"] = { 53.5, 46.3, ASHENVALE },
@@ -1387,10 +1502,15 @@ _.Zones =
 						objective(1, {	-- 0/1 Reconstructed Rod
 							["provider"] = { "i", 5547 },	-- Reconstructed Rod
 						}),
-						i(5462),	-- Dartol's Rod of Transformation
+						i(5462, {	-- Dartol's Rod of Transformation
+							["timeline"] = {
+								"added 1.11.1.5462",
+								"removed 4.0.3.10000",
+							},
+						}),
 					},
 				}),
-				q(1055, {	-- Raene's Cleansing (7)
+				q(1055, {	-- Raene's Cleansing (7) [Vanilla] / Raene's Cleansing (2) [CATA]
 					["provider"] = { "o", 19024 },	-- Hidden Shrine
 					["sourceQuest"] = 1028,	-- Raene's Cleansing (6)
 					["coord"] = { 56.38, 49.24, ASHENVALE },
@@ -1401,7 +1521,7 @@ _.Zones =
 						"removed 4.0.3.10000",
 					},
 				}),
-				q(1029, {	-- Raene's Cleansing (8)
+				q(1029, {	-- Raene's Cleansing (8) [Vanilla] / Return to Raene [CATA]
 					["qg"] = 3916,	-- Shael'dryn
 					["sourceQuest"] = 1055,	-- Raene's Cleansing (7)
 					["coord"] = { 53.5, 46.3, ASHENVALE },
@@ -1417,7 +1537,7 @@ _.Zones =
 						}),
 					},
 				}),
-				q(1030, {	-- Raene's Cleansing (9)
+				q(1030, {	-- Raene's Cleansing (9) [Vanilla] / Dartol's Rod [CATA]
 					["qg"] = 3691,	-- Raene Wolfrunner
 					["sourceQuest"] = 1029,	-- Raene's Cleansing (8)
 					["coord"] = { 36.6, 49.6, ASHENVALE },
@@ -1433,7 +1553,7 @@ _.Zones =
 						}),
 					},
 				}),
-				q(1045, {	-- Raene's Cleansing (10)
+				q(1045, {	-- Raene's Cleansing (10) [Vanilla] /  A New Adornment [CATA]
 					["qg"] = 3897,	-- Krolg
 					["sourceQuest"] = 1030,	-- Raene's Cleansing (9)
 					["coord"] = { 50.8, 75.0, ASHENVALE },
@@ -1456,7 +1576,7 @@ _.Zones =
 						}),
 					},
 				}),
-				q(1046, {	-- Raene's Cleansing (11)
+				q(1046, {	-- Raene's Cleansing (11) [Vanilla] / True Power of the Rod [CATA]
 					["qg"] = 3897,	-- Krolg
 					["sourceQuest"] = 1045,	-- Raene's Cleansing (10)
 					["coord"] = { 50.8, 75.0, ASHENVALE },
@@ -1466,106 +1586,32 @@ _.Zones =
 						"added 1.11.1.10958",
 						"removed 4.0.3.10000",
 					},
-					["groups"] = bubbleDown({ ["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000", } },{
+					["groups"] = {
 						objective(1, { -- 0/1 Dartol's Rod of Transformation
 							["provider"] = { "i", 5462 },	-- Dartol's Rod of Transformation
 							["description"] = "There's a trick to keep this item forever:\nBefore turning in the quest to Raene, destroy the item. Ask Raene for it back. Then turn in the quest. The item will be removed from your inventory. However, since you destroyed the first one, you can then use the Blizzard Item Restoration tool to get your destroyed rod back.",
 						}),
+						-- #if BEFORE CATA
 						objective(2, { -- 0/1 Ran Bloodtooth's Skull
-							["provider"] =  "i", 5388 },	-- Ran Bloodtooth's Skull
+							["provider"] = { "i", 5388 },	-- Ran Bloodtooth's Skull
 							["coord"] = { 54.6, 79.4, ASHENVALE },
 						}),
-						i(5815),	-- Glacial Stone
-						i(17046),	-- Gutterblade
-						i(1116),	-- Ring of Pure Silver
-					}),
-				}),
-				-- #else
-				q(991, {	-- Finding Teronis
-					["timeline"] = {
-						"added 1.11.1.10772",
-						"removed 4.0.3.10000",
-					},
-				}),
-				q(1023, {	-- The Lost Gem
-					["timeline"] = {
-						"added 1.11.1.10958",
-						"removed 4.0.3.10000",
-					},
-				}),
-				q(1023, {	-- Dryad Delivery
-					["timeline"] = {
-						"added 1.11.1.10958",
-						"removed 4.0.3.10000",
-					},
-				}),
-				q(1026, {	-- Search the Bole
-					["timeline"] = {
-						"added 1.11.1.10958",
-						"removed 4.0.3.10000",
-					},
-				}),
-				q(1027, {	-- Playing Possum
-					["timeline"] = {
-						"added 1.11.1.10958",
-						"removed 4.0.3.10000",
-					},
-				}),
-				q(1028, {	-- Raene's Cleansing
-					["timeline"] = {
-						"added 1.11.1.10958",
-						"removed 4.0.3.10000",
-					},
-				}),
-				q(1055, {	-- Raene's Cleansing (2)
-					["timeline"] = {
-						"added 1.11.1.10958",
-						"removed 4.0.3.10000",
-					},
-				}),
-				q(1029, {	-- Return to Raene
-					["timeline"] = {
-						"added 1.11.1.10958",
-						"removed 4.0.3.10000",
-					},
-				}),
-				q(1030, {	-- Dartol's Rod
-					["timeline"] = {
-						"added 1.11.1.10958",
-						"removed 4.0.3.10000",
-					},
-				}),
-				q(1045, {	-- A New Adornment
-					["timeline"] = {
-						"added 1.11.1.10958",
-						"removed 4.0.3.10000",
-					},
-				}),
-				q(1046, {	-- True Power of the Rod
-					["qg"] = 3897,	-- Krolg
-					["timeline"] = {
-						"added 1.11.1.10958",
-						"removed 4.0.3.10000",
-					},
-					["groups"] = {
-						objective(1, { -- 0/1 Dartol's Rod of Transformation
-							["provider"] = { "i", 5462 },	-- Dartol's Rod of Transformation
-						}),
+						-- #endif
 						i(5815, {	-- Glacial Stone
 							["timeline"] = {
-								"added 1.11.1.10958",
+								"added 1.11.1.5462",
 								"removed 4.0.3.10000",
 							},
 						}),
 						i(17046, {	-- Gutterblade
 								["timeline"] = {
-								"added 1.11.1.10958",
+								"added 1.11.1.5462",
 								"removed 4.0.3.10000",
 							},
 						}),
 						i(1116, {	-- Ring of Pure Silver
 							["timeline"] = {
-								"added 1.11.1.10958",
+								"added 1.11.1.5462",
 								"removed 4.0.3.10000",
 							},
 						}),
@@ -1586,7 +1632,6 @@ _.Zones =
 						}),
 					},
 				}),
-				-- #endif
 				q(13798, {	-- Rain of Destruction
 					["provider"] = { "n", 33760 },	-- Durak
 					["coord"] = { 72.2, 57.6, ASHENVALE },
@@ -1595,12 +1640,12 @@ _.Zones =
 					["timeline"] = {
 						"added 4.0.3.13277",
 					},
-					["g"] = {
+					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13287" } },{
 						i(56711),	-- Impish Blade
 						i(56712),	-- Accursed Mace
 						i(56713),	-- Durak's Wand
 						i(56714),	-- Band of Foul Strength
-					},
+					}),
 				}),
 				q(13632, {	-- Rear Guard Duty
 					["provider"] = { "n", 11219 },	-- Liladris Moonriver
@@ -1626,7 +1671,7 @@ _.Zones =
 					["u"] = TBC_PHASE_ONE,
 					["lvl"] = 24,
 					["timeline"] = {
-						"added 2.0.6.10000",
+						"added 2.0.1.10000",
 						"removed 4.0.3.10000",
 					},
 					["groups"] = {
@@ -1668,7 +1713,7 @@ _.Zones =
 					["u"] = TBC_PHASE_ONE,
 					["lvl"] = 21,
 					["timeline"] = {
-						"added 2.0.6.10000",
+						"added 2.0.1.10000",
 						"removed 4.0.3.10000",
 					},
 					["groups"] = {
@@ -1693,7 +1738,7 @@ _.Zones =
 					["races"] = { BLOODELF },
 					["lvl"] = 18,
 					["timeline"] = {
-						"added 2.0.6.10000",
+						"added 2.0.1.10000",
 						"removed 4.0.3.10000",
 					},
 				}),
@@ -1705,12 +1750,16 @@ _.Zones =
 					["timeline"] = {
 						"added 4.0.3.13277",
 					},
-					["g"] = {
+					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13287" } },{
 						i(56630),	-- Delgren's Leggings
 						i(56631),	-- Onaeya's Gloves
 						i(56632),	-- Feero's Pauldrons
-						i(131296),	-- Feero's Ringmail Grips
-					},
+						i(131296, {	-- Feero's Ringmail Grips
+							["timeline"] = {
+								"added 7.0.3.22248",
+							},
+						}),
+					}),
 				}),
 				q(26470, {	-- Retaking Mystral Lake
 					["provider"] = { "n", 3885 },	-- Sentinel Velene Starstrike
@@ -1729,12 +1778,16 @@ _.Zones =
 					["timeline"] = {
 						"added 4.0.3.13277",
 					},
-					["g"] = {
+					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13287" } },{
 						i(56673),	-- Fiery Loop
 						i(56674),	-- Thenysil's Vest
 						i(56675),	-- Astranaar Legguards
-						i(131306),	-- Glaivethrower Expert's Chestpiece
-					},
+						i(131306, {	-- Glaivethrower Expert's Chestpiece
+							["timeline"] = {
+								"added 7.0.3.22248",
+							},
+						}),
+					}),
 				}),
 				q(26479, {	-- Return to Raene
 					["provider"] = { "n", 3916 },	-- Raene Wolfrunner
@@ -1761,7 +1814,11 @@ _.Zones =
 							["cr"] = 3943,	-- Ruuzel
 							["coord"] = { 7.6, 13.6, ASHENVALE },
 						}),
-						i(5812),	-- Robes of Antiquity 	Still obtainable via Ruuzel (26466)
+						i(5812, {	-- Robes of Antiquity 	Still obtainable via Ruuzel (26466)
+							["timeline"] = {
+								"added 1.11.1.5462",
+							},
+						}),
 					},
 				}),
 				q(26466, {	-- Ruuzel
@@ -1837,12 +1894,16 @@ _.Zones =
 					["timeline"] = {
 						"added 4.0.3.13277",
 					},
-					["g"] = {
+					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13287" } },{
 						i(56718),	-- Detective Buckler
 						i(56719),	-- Pilfered Kaldorei Belt
 						i(56720),	-- Security Crossbow
-						i(131308),	-- Gorthak's Tool Belt
-					},
+						i(131308, {	-- Gorthak's Tool Belt
+							["timeline"] = {
+								"added 7.0.3.22248",
+							},
+						}),
+					}),
 				}),
 				q(13942, {	-- Set Us Up the Bomb
 					["provider"] = { "n", 34395 },	-- Tweedle
@@ -1944,7 +2005,7 @@ _.Zones =
 						"added 1.11.1.10958",
 						"removed 4.0.3.10000",
 					},
-					["groups"] = bubbleDown({ ["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000", } },{
+					["groups"] = bubbleDown({ ["timeline"] = { "added 1.11.1.5462", "removed 4.0.3.10000", } },{
 						i(5323),	-- Everglow Lantern
 						i(6721),	-- Chestplate of Kor
 					}),
@@ -1965,12 +2026,16 @@ _.Zones =
 					["timeline"] = {
 						"added 4.0.3.13277",
 					},
-					["g"] = {
+					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13287" } },{
 						i(56652),	-- Ablution Slippers
 						i(56653),	-- Somber Treads
 						i(56654),	-- Heartwise Boon
-						i(131298),	-- Somber Boots
-					},
+						i(131298, {	-- Somber Boots
+							["timeline"] = {
+								"added 7.0.3.22248",
+							},
+						}),
+					}),
 				}),
 				q(1007, {	-- The Ancient Statuette
 					["qg"] = 3846,	-- Talen
@@ -2033,16 +2098,20 @@ _.Zones =
 						"added 1.11.1.10958",
 						"removed 4.0.3.10000",
 					},
-					["groups"] = {
+					["groups"] = bubbleDown({ ["timeline"] = { "added 1.11.1.5462" } },{
 						objective(1, {	-- 0/1 Branch of Cenarius
 							["provider"] = { "i", 5461 },	-- Branch of Cenarius
 							["cr"] = 4619,	-- Geltharis
 							["coord"] = { 78.6, 42.8, ASHENVALE },
+							["timeline"] = {
+								"added 1.11.1.10958",
+								"removed 4.0.3.10000",
+							},
 						}),
 						-- These items are obtainable from The Branch of Cenarius (26468)
 						i(5820),	-- Faerie Mantle
 						i(11229),	-- Brightscale Girdle
-					},
+					}),
 				}),
 				q(26468, {	-- The Branch of Cenarius
 					["provider"] = { "n", 3920 },	-- Anilia
@@ -2080,12 +2149,16 @@ _.Zones =
 					["timeline"] = {
 						"added 4.0.3.13277",
 					},
-					["g"] = {
+					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13287" } },{
 						i(56636),	-- Forest Grace Mantle
 						i(56637),	-- Severed Druid's Leggings
 						i(56638),	-- Gnarlbark Shoulders
-						i(131303),	-- Barkburn Legguards
-					},
+						i(131303, {	-- Barkburn Legguards
+							["timeline"] = {
+								"added 7.0.3.22248",
+							},
+						}),
+					}),
 				}),
 				q(13979, {	-- The Goblin Braintrust
 					["provider"] = { "n", 34354 },	-- Huntress Jalin
@@ -2094,12 +2167,16 @@ _.Zones =
 					["timeline"] = {
 						"added 4.0.3.13277",
 					},
-					["g"] = {
+					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13287" } },{
 						i(56703),	-- Jalin's Recompense
 						i(56704),	-- Braintrust Vest
 						i(56705),	-- Skunkworks Sword
-						i(131326),	-- Bombgineer Blasting Vest
-					},
+						i(131326, {	-- Bombgineer Blasting Vest
+							["timeline"] = {
+								"added 7.0.3.22248",
+							},
+						}),
+					}),
 				}),
 				q(1022, {	-- The Howling Vale
 					["qg"] = 3880,	-- Sentinel Melyria Frostshadow
@@ -2128,8 +2205,9 @@ _.Zones =
 					["lvl"] = 20,
 					["timeline"] = {
 						"added 1.11.1.10772",
+						"removed 4.0.3.10000",
 					},
-					["groups"] = bubbleDown({ ["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000", } },{
+					["groups"] = bubbleDown({ ["timeline"] = { "added 1.11.1.5462", "removed 4.0.3.10000", } },{
 						i(16658),	-- Wildhunter Cloak
 					}),
 				}),
@@ -2141,12 +2219,16 @@ _.Zones =
 					["timeline"] = {
 						"added 4.0.3.13277",
 					},
-					["g"] = {
+					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13287" } },{
 						i(56689),	-- Adansonian Cloak
 						i(56690),	-- Unringed Bands
 						i(56691),	-- Baobab Fruit Shell
-						i(131327),	-- Sheltered Aessina Wristguards
-					},
+						i(131327, {	-- Sheltered Aessina Wristguards
+							["timeline"] = {
+								"added 7.0.3.22248",
+							},
+						}),
+					}),
 				}),
 				q(9519, {	-- The Lost Chalice
 					["qg"] = 3848,	-- Kayneth Stillwind
@@ -2155,7 +2237,7 @@ _.Zones =
 					["u"] = TBC_PHASE_ONE,
 					["lvl"] = 23,
 					["timeline"] = {
-						"added 2.0.6.10000",
+						"added 2.0.1.10000",
 						"removed 4.0.3.10000",
 					},
 					["groups"] = {
@@ -2181,12 +2263,16 @@ _.Zones =
 					["timeline"] = {
 						"added 4.0.3.13277",
 					},
-					["g"] = {
+					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13287" } },{
 						i(56624),	-- Falathim-Washed Robes
 						i(56625),	-- Broadleaf Mantle
 						i(56626),	-- Maestra's Gloves
-						i(131533),	-- Broadleaf Spaulders
-					},
+						i(131533, {	-- Broadleaf Spaulders
+							["timeline"] = {
+								"added 7.0.3.22248",
+							},
+						}),
+					}),
 				}),
 				q(6504, {	-- The Lost Pages
 					["qg"] = 12718,	-- Gurda Ragescar
@@ -2197,7 +2283,7 @@ _.Zones =
 						"added 1.11.1.10958",
 						"removed 4.0.3.10000",
 					},
-					["groups"] = bubbleDown({ ["timeline"] = { "added 1.11.1.10772", "removed 4.0.3.10000", } },{
+					["groups"] = bubbleDown({ ["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000", } },{
 						objective(1, {	-- 0/1 Shredder Operating Manual - Chapter 1
 							["provider"] = { "i", 16642 },	-- Shredder Operating Manual - Chapter 1
 							["cost"] = {
@@ -2225,8 +2311,18 @@ _.Zones =
 								{ "i", 16656, 1 },	-- Shredder Operating Manual - Page 12
 							},
 						}),
-						i(16740),	-- Shredder Operating Gloves
-						i(16741),	-- Oilrag Handwraps
+						i(16740, {	-- Shredder Operating Gloves
+							["timeline"] = {
+								"added 1.11.1.5462",
+								"removed 4.0.3.10000",
+							},
+						}),
+						i(16741, {	-- Oilrag Handwraps
+							["timeline"] = {
+								"added 1.11.1.5462",
+								"removed 4.0.3.10000",
+							},
+						}),
 					}),
 				}),
 				q(13630, {	-- The Reason Why
@@ -2236,12 +2332,6 @@ _.Zones =
 					["timeline"] = {
 						"added 4.0.3.13277",
 					},
-				}),
-				q(1034,  {	-- The Ruins of Stardust
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 3894 },	-- Pelturas Whitemoon
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 1033,	-- Elune's Tear
 				}),
 				q(1034, {	-- The Ruins of Stardust
 					["qg"] = 3894,	-- Pelturas Whitemoon
@@ -2303,11 +2393,15 @@ _.Zones =
 						"added 1.11.1.10958",
 						"removed 4.0.3.10000",
 					},
-					["groups"] = bubbleDown({ ["timeline"] = { "added 1.11.1.10958", "removed 4.0.3.10000", } },{
+					["groups"] = bubbleDown({ ["timeline"] = { "added 1.11.1.5462", "removed 4.0.3.10000", } },{
 						objective(1, {	-- 0/1 Ilkrud Magthrull's Tome
 							["provider"] = { "i", 5533 },	-- Ilkrud Magthrull's Tome
 							["cr"] = 3664,	-- Ilkrud Magthrull
 							["coord"] = { 25.2, 60.6, ASHENVALE },
+							["timeline"] = {
+								"added 1.11.1.10958",
+								"removed 4.0.3.10000",
+							},
 						}),
 						i(5622),	-- Clergy Ring
 						i(5613),	-- Staff of the Purifier
@@ -2376,10 +2470,10 @@ _.Zones =
 					["timeline"] = {
 						"added 4.0.3.13277",
 					},
-					["g"] = {
+					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13287" } },{
 						i(56692),	-- Weaponized Belt
 						i(56693),	-- Backwatcher's Ring
-					},
+					}),
 				}),
 				q(13967, {	-- Thinning the... Herd?
 					["provider"] = { "n", 12696 },	-- Senani Thunderheart
@@ -2454,10 +2548,10 @@ _.Zones =
 					["timeline"] = {
 						"added 4.0.3.13277",
 					},
-					["g"] = {
+					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13287" } },{
 						i(56622),	-- Thistle Ring
 						i(56623),	-- Zoram'gar Cloak
-					},
+					}),
 				}),
 				q(6544,  {	-- Torek's Assault
 					["provider"] = { "n", 12858 },	-- Torek
@@ -2467,23 +2561,15 @@ _.Zones =
 					["timeline"] = {
 						"added 1.11.1.10958",
 					},
-					["g"] = {
-						i(16889, {	-- Polished Walking Staff
-							["timeline"] = {
-								"added 1.11.1.5462",
-							},
-						}),
-						i(16890, {	-- Slatemetal Cutlass
-							["timeline"] = {
-								"added 1.11.1.5462",
-							},
-						}),
+					["g"] = bubbleDown({ ["timeline"] = { "added 1.11.1.5462" } },{
+						i(16889),	-- Polished Walking Staff
+						i(16890),	-- Slatemetal Cutlass
 						i(156956, {	-- Rugged Walking Staff
 							["timeline"] = {
 								"added 7.3.5.25716",
 							},
 						}),
-					},
+					}),
 				}),
 				q(6462, {	-- Troll Charm
 					["qg"] = 12721,	-- Mitsuwa
@@ -2510,12 +2596,16 @@ _.Zones =
 					["timeline"] = {
 						"added 4.0.3.13277",
 					},
-					["g"] = {
+					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13287" } },{
 						i(56694),	-- Silverwind Bracers
 						i(56695),	-- Wolfrunner Boots
 						i(56696),	-- Legacy of Teronis
-						i(131535),	-- Wolfrunner Wristbands
-					},
+						i(131535, {	-- Wolfrunner Wristbands
+							["timeline"] = {
+								"added 7.0.3.22248",
+							},
+						}),
+					}),
 				}),
 				q(13936, {	-- Tweedle's Dumb
 					["provider"] = { "n", 34359 },	-- Captain Goggath
@@ -2598,12 +2688,16 @@ _.Zones =
 					["timeline"] = {
 						"added 4.0.3.13277",
 					},
-					["g"] = {
+					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13287" } },{
 						i(56683),	-- Blossom of the Earthen Ring
 						i(56684),	-- Subduer's Gloves
 						i(56685),	-- Belt of Equilibrium
-						i(131312),	-- Subduer's Gauntlets
-					},
+						i(131312, {	-- Subduer's Gauntlets
+							["timeline"] = {
+								"added 7.0.3.22248",
+							},
+						}),
+					}),
 				}),
 				q(13888, {	-- Vortex
 					["provider"] = { "n", 34289 },	-- The Vortex
@@ -2616,12 +2710,16 @@ _.Zones =
 					["timeline"] = {
 						"added 4.0.3.13277",
 					},
-					["g"] = {
+					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13287" } },{
 						i(56686),	-- Blossom of the Earthen Ring
 						i(56687),	-- Subduer's Gloves
 						i(56688),	-- Belt of Equilibrium
-						i(131313),	-- Subduer's Gauntlets
-					},
+						i(131313, {	-- Subduer's Gauntlets
+							["timeline"] = {
+								"added 7.0.3.22248",
+							},
+						}),
+					}),
 				}),
 				q(6546, {	-- Warsong Outrider Update
 					["qg"] = 12864,	-- Warsong Outrider
@@ -2695,16 +2793,6 @@ _.Zones =
 						i(16764),	-- Warsong Scout Update
 					},
 				}),
-				q(6571,  {	-- Warsong Supplies
-					["u"] = REMOVED_FROM_GAME,
-					["provider"] = { "n", 11820 },	-- Locke Okarr
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						un(REMOVED_FROM_GAME, i(16977)),	-- Warsong Boots
-						un(REMOVED_FROM_GAME, i(16978)),	-- Warsong Gauntlets
-						un(REMOVED_FROM_GAME, i(16975)),	-- Warsong Supplies
-					},
-				}),
 				q(6571, {	-- Warsong Supplies
 					["qg"] = 11820,	-- Locke Okarr
 					["coord"] = { 71.40, 67.64, ASHENVALE },
@@ -2734,9 +2822,24 @@ _.Zones =
 						objective(4, {	-- 0/1 Warsong Saw Blades
 							["provider"] = { "i", 16742 },	-- Warsong Saw Blades
 						}),
-						i(16975),	-- Warsong Sash
-						i(16977),	-- Warsong Boots
-						i(16978),	-- Warsong Gauntlets
+						i(16975, {	-- Warsong Sash
+							["timeline"] = {
+								"added 1.11.1.5462",
+								"removed 4.0.3.10000",
+							},
+						}),
+						i(16977, {	-- Warsong Boots
+							["timeline"] = {
+								"added 1.11.1.5462",
+								"removed 4.0.3.10000",
+							},
+						}),
+						i(16978, {	-- Warsong Gauntlets
+							["timeline"] = {
+								"added 1.11.1.5462",
+								"removed 4.0.3.10000",
+							},
+						}),
 					}),
 				}),
 				q(25945, {	-- We're Here to Do One Thing, Maybe Two...
@@ -2774,12 +2877,16 @@ _.Zones =
 					["timeline"] = {
 						"added 4.0.3.13277",
 					},
-					["g"] = {
+					["g"] = bubbleDown({ ["timeline"] = { "added 4.0.3.13287" } },{
 						i(56724),	-- Wet Work Gloves
 						i(56725),	-- Belt of Secret Signs
 						i(56726),	-- Disarray Boots
-						i(131307),	-- Krokk's Notched Belt
-					},
+						i(131307, {	-- Krokk's Notched Belt
+							["timeline"] = {
+								"added 7.0.3.22248",
+							},
+						}),
+					}),
 				}),
 				q(13872, {	-- Worgen Wisdom
 					["provider"] = { "n", 3691 },	-- Raene Wolfrunner
