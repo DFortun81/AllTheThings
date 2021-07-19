@@ -1034,12 +1034,12 @@ _.Zones =
 						"added 4.0.3.13277",
 					},
 					["providers"] = {
-						-- if AFTER CATA
+						-- #if AFTER CATA
 						{ "n", 39609 },	-- Kor'kron Loyalist (Cata)
-						-- endif
-						-- if AFTER WOD
+						-- #endif
+						-- #if AFTER WOD
 						{ "n", 86884 },	-- Darkspear Loyalist (Wod, Legion)
-						-- endif
+						-- #endif
 					},
 					["groups"] = {
 						i(67154, {	-- Staff of the Unwelcome
@@ -2102,9 +2102,9 @@ _.Zones =
 						5843,	-- Welcome! [Durotar]
 						5844,	-- Welcome! [Mulgore]
 						5847,	-- Welcome! [Tirisfal Glades]
-						-- if AFTER TBC
+						-- #if AFTER TBC
 						8547,	-- Welcome! [Eversong Woods]
-						-- endif
+						-- #endif
 					},
 					["races"] = HORDE_ONLY,
 					["g"] = bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
