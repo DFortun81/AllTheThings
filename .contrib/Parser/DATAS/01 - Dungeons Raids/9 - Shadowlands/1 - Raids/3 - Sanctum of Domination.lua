@@ -1543,6 +1543,7 @@ _.HiddenQuestTriggers = {
 	q(64606),	-- Stygian Ember from Borr-Gahn [178824] (Heroic)
 	q(64622),	-- Stygian Ember from Borr-Gahn (Heroic)
 	q(64623),	-- Stygian Ember from Borr-Gahn (Heroic)
+	q(64689),	-- Stygian Ember from Borr-Gahn (Normal)
 	q(64690),	-- Stygian Ember from Borr-Gahn (Heroic)
 
 	q(64605),	-- Stygian Ember from trash #4 (Normal / Heroic)
