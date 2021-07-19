@@ -2796,7 +2796,14 @@ ResolveSymbolicLink = function(o)
 		-- If we have any pending finalizations to make, then merge them into the finalized table. [Equivalent to a "finalize" instruction]
 		if #searchResults > 0 then
 			for k,s in ipairs(searchResults) do
-				table.insert(finalized, s);
+				-- if somehow the symlink pulls in the same item as used as the source of the symlink, then 'pop' that item
+				if s == o or (s.itemID and s.g and s.key == o.key and s[s.key] == o[o.key]) then
+					for _,g in ipairs(s.g) do
+						tinsert(finalized, g);
+					end
+				else
+					tinsert(finalized, s);
+				end
 			end
 		end
 		-- if app.DEBUG_PRINT then print("Forced Finalize",o.key,o.key and o[o.key],#finalized) end

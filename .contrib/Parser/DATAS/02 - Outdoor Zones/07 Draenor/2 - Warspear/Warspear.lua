@@ -1100,7 +1100,7 @@ _.Zones =
 										["cost"] = { { "i", 137642, 80 } },	-- 80x Mark of Honor
 										["sym"] = {
 											{"sub", "pvp_weapons_faction_ensemble", -9981, -680, -9913, -661 },
-											{"exclude", "itemID", 138633 },	-- Exclude itself to stop duplicating
+											{"exclude", "itemID", 138634 },	-- Exclude itself to stop duplicating
 										},
 									}),
 									i(125228, {	-- Wild Gladiator's Barrier (H)
