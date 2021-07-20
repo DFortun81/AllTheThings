@@ -82,6 +82,17 @@ _.Zones =
 					["provider"] = { "n", 177459 },	-- Protector Kah-Rev
 					["coord"] = { 49.5, 65.0, KORTHIA },
 				}),
+				q(63644, {	-- Dread Tidings
+					["sourceQuests"] = { 63659 },	-- Dreadlords!
+					["provider"] = { "n", 177194 },	-- The Primus
+					["coord"] = { 62.8, 26.2, KORTHIA },
+				}),
+				q(63659, {	-- Dreadlords!
+					["sourceQuests"] = { 63622 },	-- Victory in Our Name
+					["description"] = "Requires Renown 50.",
+					["provider"] = { "n", 177167 },	-- Baroness Vashj
+					["coord"] = { 60.6, 27.5, KORTHIA },
+				}),
 				q(63855, {	-- Ease of Passage
 					["sourceQuests"] = { 63848 },	-- A Show of Gratitude
 					["provider"] = { "n", 178470 },	-- Ve'nari
@@ -413,16 +424,6 @@ _.Zones =
 						i(187154),	-- Ancient Korthian Runes (TOY!)
 					},
 				}),
-				q(63644, {	-- Dread Tidings
-					["sourceQuests"] = { 63659 },	-- Dreadlords!
-					["provider"] = { "n", 177194 },	-- The Primus
-					["coord"] = { 63.0, 25.3, KORTHIA },
-				}),
-				q(63659, {	-- Dreadlords!
-					["sourceQuests"] = { 63622 },	-- Victory in Our Name
-					["provider"] = { "n", 177167 },	-- Baroness Vashj
-					["coord"] = { 65.0, 23.0, KORTHIA },
-				}),
 				q(63915, {	-- Drum of Driving
 					["sourceQuests"] = { 64506 },	-- What Must Be Found
 					["description"] = "Requires someone with Tier 3 Archivist's Codex reputation to repair the teleportation pad.",
@@ -644,6 +645,12 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 61.3, 21.3, KORTHIA },
 				}),
+				q(63777, {	-- Sealed Secrets
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
+					["provider"] = { "n", 178845 },	-- Ve'lonu
+					["isDaily"] = true,
+					["coord"] = { 64.6, 25.4, KORTHIA },
+				}),
 				q(63961, {	-- Sealed Secrets
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178845 },	-- Ve'lonu
@@ -801,12 +808,6 @@ _.Zones =
 					["provider"] = { "n", 179134 },	-- Pelagos
 					["isDaily"] = true,
 					["coord"] = { 61.7, 24.0, KORTHIA },
-				}),
-				q(63777, {	-- Sealed Secrets
-					["sourceQuests"] = { 64556 },	-- In Need of Assistance
-					["provider"] = { "n", 178845 },	-- Ve'lonu
-					["isDaily"] = true,
-					["coord"] = { 64.6, 25.4, KORTHIA },
 				}),
 				q(63954, {	-- Sealed Secrets
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance

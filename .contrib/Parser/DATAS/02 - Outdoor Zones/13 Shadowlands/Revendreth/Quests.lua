@@ -184,6 +184,19 @@ _.Zones =
 						i(175416),	-- Stoneforged Chestplate
 					},
 				}),
+				q(63646, {	-- Convoy of the Covenants
+					["sourceQuests"] = { 63644 },	-- Dread Tidings
+					["provider"] = { "n", 168898 },	-- Prince Renathal
+					["coord"] = { 22.9, 43.7, REVENDRETH },
+				}),
+				q(63650, {	-- De-Infiltration
+					["sourceQuests"] = {
+						63648,	-- Nal'ragas
+						63649,	-- Spy vs Spy
+					},
+					["provider"] = { "n", 177644 },	-- Prince Renathal
+					["coord"] = { 25.0, 27.9, REVENDRETH },
+				}),
 				q(57164, {	-- Devour This
 					["sourceQuests"] = { 57131 },	-- Let the Hunt Begin
 					["provider"] = { "n", 168664 },	-- The Fearstalker
@@ -421,6 +434,11 @@ _.Zones =
 						i(175424),	-- Stoneforged Grips
 					},
 				}),
+				q(63648, {	-- Nal'ragas
+					["sourceQuests"] = { 63647 },	-- The Unseen Guests
+					["provider"] = { "n", 177628 },	-- Kael'thas Sunstrider
+					["coord"] = { 36.0, 22.4, REVENDRETH },
+				}),
 				q(61839, {	-- Nipping at the Undergrowth
 					["description"] = "Becomes available in the Endmire north of Darkhaven, after looting Impressionable Gorger Spawn from the Worldedge Gorger.",
 					["provider"] = { "n", 174482 },	-- Impressionable Gorger Spawn
@@ -612,6 +630,11 @@ _.Zones =
 					["description"] = "Pick up the Hollow Rock at |cFFFFFFFF38.8, 64.3|r, or Stonehead will fling you away when you try to approach the quest.",
 					["coord"] = { 39.2, 65.2, REVENDRETH },
 				}),
+				q(63649, {	-- Spy vs Spy
+					["sourceQuests"] = { 63647 },	-- The Unseen Guests
+					["provider"] = { "n", 177637 },	-- Baroness Vashj
+					["coord"] = { 36.0, 22.4, REVENDRETH },
+				}),
 				q(62044, {	-- Standing Toe To Toe
 					["sourceQuests"] = { 61844 },	-- Hungry Hungry Gorger
 					["provider"] = { "n", 174482 },	-- Impressionable Gorger Spawn
@@ -723,6 +746,17 @@ _.Zones =
 						i(175479),	-- Stoneforged Cover
 					},
 				}),
+				q(63656, {	-- The Meaning of Wrath
+					["sourceQuests"] = { 63654 },	-- The Nathrezim
+					["provider"] = { "n", 179978 },	-- The Accuser
+					["coord"] = { 23.1, 45.9, REVENDRETH },
+				}),
+				q(63654, {	-- The Nathrezim
+					["sourceQuests"] = { 63653 },	-- The Power of a Crown
+					["provider"] = { "n", 178337 },	-- The Stonewright
+					["coord"] = { 25.2, 45.1, REVENDRETH },
+					["_drop"] = { "g" },	-- drop anima trash
+				}),
 				q(58060, {	-- The Night Market
 					["provider"] = { "n", 160100 },	-- Provisioner Dracho
 					["coord"] = { 61.0, 39.6, REVENDRETH },
@@ -764,6 +798,11 @@ _.Zones =
 					["sourceQuests"] = { 56978 },	-- To Darkhaven
 					["provider"] = { "n", 156374 },	-- Lord Chamberlain
 					["coord"] = { 63.2, 62.1, REVENDRETH },
+				}),
+				q(63647, {	-- The Unseen Guests
+					["sourceQuests"] = { 63646 },	-- Convoy of the Covenants
+					["provider"] = { "n", 165866 },	-- The Stonewright
+					["coord"] = { 34.3, 22.0, REVENDRETH },
 				}),
 				q(57428, {	-- Theotar's Mission
 					["sourceQuests"] = { 57405 },	-- Chasing Madness
@@ -884,12 +923,13 @@ _.Zones =
 						i(177665),	-- Spectral Hankerchief
 					},
 				}),
-				h(q(62653, {	-- Stop the Inquisition
+				q(62653, {	-- Stop the Inquisition
 					-- ["provider"] = { "n", ### },	--
 					-- ["coord"] = { ##, ##, REVENDRETH },
 					-- ["sourceQuests"] = { },
 					["isWeekly"] = true,
-				})),
+					["races"] = HORDE_ONLY,
+				}),
 
 				-- PTR QUESTS - TODO: MERGE INTO MAIN QUESTS AFTER CONFIRMATION ON LIVE
 
@@ -922,24 +962,6 @@ _.Zones =
 					["provider"] = { "n", 177435 },	-- Khaliiq
 					["coord"] = { 42.1, 23.2, MALDRAXXUS },
 				}),
-				q(63646, {	-- Convoy of the Covenants
-					["sourceQuests"] = { 63644 },	-- Dread Tidings
-					["provider"] = { "n", 168898 },	-- Prince Renathal
-					["coord"] = { 22.9, 43.7, REVENDRETH },
-				}),
-				q(63651, {	-- Cryptograms
-					["sourceQuests"] = { 63650 },	-- De-Infiltration
-					["provider"] = { "n", 178260 },	-- The Stonewright
-					["coord"] = { 54.6, 40.3, SINFALL_REACHES },
-				}),
-				q(63650, {	-- De-Infiltration
-					["sourceQuests"] = {
-						63648,	-- Nal'ragas
-						63649,	-- Spy vs Spy
-					},
-					["provider"] = { "n", 177644 },	-- Prince Renathal
-					["coord"] = { 25.0, 27.9, REVENDRETH },
-				}),
 				q(64092, {	-- Hunting Huln
 					["sourceQuests"] = { 63679 },	-- Magical Mystery Tour!
 					["provider"] = { "n", 177962 },	-- Lady Moonberry
@@ -966,11 +988,6 @@ _.Zones =
 					["provider"] = { "n", 179978 },	-- The Accuser
 					["coord"] = { 23.1, 45.9, REVENDRETH },
 				}),
-				q(63648, {	-- Nal'ragas
-					["sourceQuests"] = { 63647 },	-- The Unseen Guests
-					["provider"] = { "n", 177628 },	-- Kael'thas Sunstrider
-					["coord"] = { 36.0, 22.4, REVENDRETH },
-				}),
 				q(63680, {	-- Out On the Edge
 					["sourceQuests"] = { 64090 },	-- The Big Squeeze
 					["provider"] = { "n", 177967 },	-- Lady Moonberry
@@ -980,16 +997,6 @@ _.Zones =
 					["sourceQuests"] = { 63681 },	-- Back to The Heart
 					["provider"] = { "n", 177434 },	-- Ysera
 					["coord"] = { 48.0, 53.9, ARDENWEALD },
-				}),
-				q(63649, {	-- Spy vs Spy
-					["sourceQuests"] = { 63647 },	-- The Unseen Guests
-					["provider"] = { "n", 177637 },	-- Baroness Vashj
-					["coord"] = { 36.0, 22.4, REVENDRETH },
-				}),
-				q(63652, {	-- The "Unwelcome" Guests
-					["sourceQuests"] = { 63650 },	-- De-Infiltration
-					["provider"] = { "n", 158653 },	-- Prince Renathal
-					["coord"] = { 51.3, 38.1, SINFALL_REACHES },
 				}),
 				q(64090, {	-- The Big Squeeze
 					["sourceQuests"] = { 64091 },	-- Mal'appropriated
@@ -1007,33 +1014,10 @@ _.Zones =
 					["provider"] = { "n", 168898 },	-- Prince Renathal
 					["coord"] = { 22.9, 43.7, REVENDRETH },
 				}),
-				q(63656, {	-- The Meaning of Wrath
-					["sourceQuests"] = { 63654 },	-- The Nathrezim
-					["provider"] = { "n", 179978 },	-- The Accuser
-					["coord"] = { 23.1, 45.9, REVENDRETH },
-				}),
-				q(63654, {	-- The Nathrezim
-					["sourceQuests"] = { 63653 },	-- The Power of a Crown
-					["provider"] = { "n", 178337 },	-- The Stonewright
-					["coord"] = { 25.2, 45.1, REVENDRETH },
-				}),
-				q(63653, {	-- The Power of a Crown
-					["sourceQuests"] = {
-						63651,	-- Cryptograms
-						63652,	-- The "Unwelcome Guests",
-					},
-					["provider"] = { "n", 158653 },	-- Prince Renathal
-					["coord"] = { 51.1, 38.0, SINFALL_REACHES },
-				}),
 				q(63682, {	-- The Power of Elune
 					["sourceQuests"] = { 64042 },	-- Rituals of Night
 					["provider"] = { "n", 177434 },	-- Ysera
 					["coord"] = { 45.3, 64.8, ARDENWEALD },
-				}),
-				q(63647, {	-- The Unseen Guests
-					["sourceQuests"] = { 63646 },	-- Convoy of the Covenants
-					["provider"] = { "n", 165866 },	-- The Stonewright
-					["coord"] = { 34.3, 22.0, REVENDRETH },
 				}),
 				q(63683, {	-- Winter's Sigil
 					["sourceQuests"] = { 63682 },	-- The Power of Elune

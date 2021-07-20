@@ -273,6 +273,27 @@ _.ExpansionFeatures =
 					},
 				}),
 				n(QUESTS, {
+				--	LIVE DATA
+					q(63651, {	-- Cryptograms
+						["sourceQuests"] = { 63650 },	-- De-Infiltration
+						["provider"] = { "n", 178260 },	-- The Stonewright
+						["coord"] = { 54.6, 40.3, SINFALL_REACHES },
+					}),
+					q(63652, {	-- The "Unwelcome" Guests
+						["sourceQuests"] = { 63650 },	-- De-Infiltration
+						["provider"] = { "n", 158653 },	-- Prince Renathal
+						["coord"] = { 51.3, 38.1, SINFALL_REACHES },
+					}),
+					q(63653, {	-- The Power of a Crown
+						["sourceQuests"] = {
+							63651,	-- Cryptograms
+							63652,	-- The "Unwelcome Guests"
+						},
+						["provider"] = { "n", 158653 },	-- Prince Renathal
+						["coord"] = { 51.1, 38.0, SINFALL_REACHES },
+					}),
+
+				--	PTR DATA
 					q(63592, {	-- A New Path
 					--	currently takes place on a 'nil' map, may need another mapID added via ["maps"] later
 					--	TODO: grants "a new path" criteria of "chains of domination" achievement, add to whichever zone these quests wind up being in

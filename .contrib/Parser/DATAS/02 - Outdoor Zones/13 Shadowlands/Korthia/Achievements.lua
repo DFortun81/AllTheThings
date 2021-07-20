@@ -22,6 +22,9 @@ _.Zones =
 						crit(5, {	-- An Army of Bone and Steel
 							["sourceQuests"] = { 63622 },	-- Victory in Our Name
 						}),
+						crit(6, {	-- The Unseen Guests
+							["sourceQuests"] = { 63656 },	-- The Meaning of Wrath
+						}),
 					},
 				}),
 				ach(15107),	-- Conquering Korthia
