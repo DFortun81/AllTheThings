@@ -354,6 +354,7 @@ _.Zones =
 				q(29836, {	-- Just Checkin' -- aa
 					["coord"] = { 59.9, 57.9, 121 },
 					["provider"] = { "n", 28527 },	-- Chronicler To'kini
+					["altQuests"] = { 29833 },	-- Unfinished Business
 				}),
 				q(12630, {	-- Kickin' Nass and Takin' Manes
 					["coord"] = { 14.0, 73.8, 121 },
@@ -899,6 +900,7 @@ _.Zones =
 					["coord"] = { 60.2, 57.7, 121 },
 					["provider"] = { "n", 28401 },	-- Har'koa
 					["sourceQuest"] = 12730,	-- Convocation at Zol'Heb -- TODO: verify
+					["altQuests"] = { 29836 },	-- Just Checkin'
 				}),
 				q(12857, {	-- Wanted: Ragemane's Flipper
 					["coord"] = { 32.2, 75.6, 121 },

@@ -698,7 +698,9 @@ _.ExpansionFeatures =
 };
 
 _.HiddenQuestTriggers = {
+	q(62958),	-- triggered during Marasmius dailies
 	q(62962),	-- triggered when turning in 'Into the Unknown' (62296)
+	q(62963),	-- triggered when turning in 'Go Beyond' (??)
 };
 
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {

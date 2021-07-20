@@ -33,12 +33,19 @@ _.Zones =
 										["provider"] = { "n", 133197 },	-- Moira Thaurissan
 										["coord"] = { 52.0, 13.8, STORMWIND_CITY },
 										["races"] = ALLIANCE_ONLY,
+										["maps"] = {
+											1160,	-- Blackrock Depths
+										},
 									}),
 									q(53352, {	-- Firelands
 										["sourceQuests"] = { 53342 },	-- Molten Core
 										["provider"] = { "n", 133197 },	-- Moira Thaurissan
 										["coord"] = { 52.0, 13.8, STORMWIND_CITY },
 										["races"] = ALLIANCE_ONLY,
+										["maps"] = {
+											1958,	-- Firelands
+											1959,	-- Firelands
+										},
 									}),
 									q(51474, {	-- Forged in Fire an'Flame
 										["sourceQuests"] = { 53352 },	-- Firelands
@@ -1833,6 +1840,11 @@ _.Zones =
 		}),
 	}),
 };
+
+_.HiddenQuestTriggers = {
+	q(53645),	-- triggered during 'Molten Core' (53342) when porting to Molten Core
+};
+
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(QUESTS, {
 		q(60362),	-- Blank

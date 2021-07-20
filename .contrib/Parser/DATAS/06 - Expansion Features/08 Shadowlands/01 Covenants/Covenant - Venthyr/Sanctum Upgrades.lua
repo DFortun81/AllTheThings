@@ -1774,6 +1774,12 @@ _.ExpansionFeatures =
 								}),
 							}),
 							n(-964, {	-- Tier 4: Discerning Taste
+								q(60825, {	-- Amateur Spies
+									["isDaily"] = true,
+									["g"] = {
+										i(180296),	-- Shrouded Necromancer Head
+									},
+								}),
 								q(63686, {	-- Baroness Vashj's Best Friend
 									-- ["minReputation"] = { ,  }, -- TODO, Best Friend w/ Baroness Vashj?
 									["provider"] = { "n", 162487 },	-- Baroness Vashj
@@ -1865,7 +1871,6 @@ _.ExpansionFeatures =
 								}),
 							}),
 							-- Random, non-collectible items which go into your bags while in the Ember Court
-							i(180296),	-- Shrouded Necromancer Head
 							i(182211),	-- Stone Brick
 							n(VENDORS, {
 								n(174711, {	-- Freeman

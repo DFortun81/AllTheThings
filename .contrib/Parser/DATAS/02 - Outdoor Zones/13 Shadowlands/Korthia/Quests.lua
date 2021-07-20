@@ -7,7 +7,6 @@ _.Zones =
 	m(SHADOWLANDS, {
 		m(KORTHIA, {
 			n(QUESTS, {
-			--	i(186548),	-- Chompy (PET!) TODO: apparently an 'oozing with character' reward but no idea from which one, never saw it on PTR - maybe achieve-related?
 			--	confirmed on live
 				q(63755, {	-- A Matter of Urgency
 					["sourceQuests"] = { 64106 },	-- A Unified Effort

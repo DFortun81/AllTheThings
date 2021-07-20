@@ -79,6 +79,7 @@ _.Zones =
 								i(185115),	-- Redeemed Inquisitor's Drape
 							},
 						}),
+						i(186548),	-- Chompy (PET!) TODO: apparently an 'oozing with character' reward but no idea from which one, never saw it on PTR - maybe achieve-related?
 					},
 				}),
 			}),

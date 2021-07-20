@@ -293,3 +293,7 @@ _.Instances = { tier(7, {	-- Legion
 		},
 	}),
 })};
+
+_.HiddenQuestTriggers = {
+	q(43675),	-- triggered when learning 'Coil of the Drowned Queen' (139574)
+};
