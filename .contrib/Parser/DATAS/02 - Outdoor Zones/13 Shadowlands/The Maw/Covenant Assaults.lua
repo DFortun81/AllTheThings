@@ -794,6 +794,7 @@ _.HiddenQuestTriggers = {
 
 --	Night Fae
 	q(63821),	-- triggered when completing the assault (#63823)
+	q(64059),	-- Stolen Anima Vessel (25.3, 38.3)
 	q(64060),	-- Stolen Anima Vessel (19.0, 50.2) - 368953
 
 --	Venthyr
