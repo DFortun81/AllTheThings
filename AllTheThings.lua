@@ -1338,7 +1338,7 @@ end
 -- Clones the data and attempts to create all sub-groups into cloned objects as well
 local function CloneData(data)
 	return CreateObject(data);
-	--[[]
+	--[[
 	local clone = {};
 	if data then
 		if app.DEBUG_PRINT then print("CloneData for",data.key,data[data.key],data,clone); end
@@ -7438,7 +7438,7 @@ end)();
 -- Gear Set Lib
 (function()
 local C_TransmogSets_GetSetInfo = C_TransmogSets.GetSetInfo;
---[[ 9.1 TEST ]
+--[[ 9.1 TEST
 C_TransmogSets.GetSetSources = function(setID)
 	local setAppearances = C_TransmogSets.GetSetPrimaryAppearances(setID);
 	if not setAppearances then
@@ -8027,7 +8027,7 @@ local fields = {
 		return ATTAccountWideData.Illusions[t.illusionID];
 	end,
 	["silentLink"] = function(t)
-		--[[ 9.1 TEST ]
+		--[[ 9.1 TEST
 		local _, hyperlink = C_TransmogCollection.GetIllusionStrings(t.illusionID);
 		return hyperlink;
 		--]]
@@ -8122,7 +8122,7 @@ local function GetCached(t)
 	return rawget(cache, id), id;
 end
 local function GetCachedField(t, field)
-	--[[ Debug Prints ]
+	--[[ -- Debug Prints
 	local _t, id = GetCached(t);
 	if _t[field] then
 		print("GetCachedField",id,field,_t[field]);
@@ -8132,7 +8132,7 @@ local function GetCachedField(t, field)
 	return t and t[field];
 end
 local function SetCachedField(t, field, value)
-	--[[ Debug Prints ]
+	--[[ Debug Prints
 	local _t, id = GetCached(t);
 	if _t[field] then
 		print("SetCachedField",id,field,"Old",t[field],"New",value);
@@ -8165,7 +8165,7 @@ end
 local function RawSetItemInfoFromLink(t, link)
 	local name, link, quality, _, _, _, _, _, _, icon, _, _, _, b = GetItemInfo(link);
 	if link then
-		--[[ Debug Prints ]
+		--[[ -- Debug Prints
 		-- local _t, id = GetCached(t);
 		-- print("rawset item",id)
 		--]]
@@ -14614,7 +14614,7 @@ function app:GetDataCache()
 		--]]
 
 		-- Illusions (Dynamic)
-		--[[ 9.1 TEST ]
+		--[[ 9.1 TEST
 		local illusionInfo = C_TransmogCollection.GetIllusionInfo(illusionID);
 		local name, hyperlink = C_TransmogCollection.GetIllusionStrings(illusionID);
 		if illusionInfo then
