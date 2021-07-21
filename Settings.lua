@@ -2081,20 +2081,14 @@ table.insert(settings.MostRecentTab.objects, CustomCollectFilterExplainLabel);
 local customCollects, ccCheckbox = L["CUSTOM_COLLECTS_REASONS"];
 local previousCheckbox = CustomCollectFilterExplainLabel;
 local xInitalOffset, yInitialOffset, inital = -5, -6, true;
-
-for cc,ccInfo in pairs(customCollects) do
+for i,cc in ipairs({"NPE","SL_SKIP","SL_COV_KYR","SL_COV_NEC","SL_COV_NFA","SL_COV_VEN"}) do
 	local filterID = "CC:" .. cc;
+	local ccInfo = customCollects[cc];
 	ccCheckbox = settings:CreateCheckBox(ccInfo[1],
 	function(self)
 		self:SetChecked(settings:GetFilter(filterID));
-		-- TODO: add a 'Enable/Disable All checkbox'
-		-- if not settings:GetTooltipSetting("Enabled") then
-		-- 	self:Disable();
-		-- 	self:SetAlpha(0.2);
-		-- else
-			self:Enable();
-			self:SetAlpha(1);
-		-- end
+		self:Enable();
+		self:SetAlpha(1);
 	end,
 	function(self)
 		settings:SetFilter(filterID, self:GetChecked());
