@@ -63,7 +63,7 @@ _.HiddenQuestTriggers = {
 	-- q( ),	-- hitting Renown 48 [Monk] (received Memory of ??)
 	-- q( ),	-- hitting Renown 48 [Paladin] (received Memory of ??)
 	q(64408),	-- hitting Renown 48 [Priest] (received Memory of ??)
-	-- q( ),	-- hitting Renown 48 [Rogue] (received Memory of ??)
+	q(64401),	-- hitting Renown 48 [Rogue] (received Memory of Toxic Onslaught)
 	-- q( ),	-- hitting Renown 48 [Shaman] (received Memory of the Raging Vesper Vortex)
 	-- q( ),	-- hitting Renown 48 [Warlock] (received Memory of ??)
 	-- q( ),	-- hitting Renown 48 [Warrior] (received Memory of ??)

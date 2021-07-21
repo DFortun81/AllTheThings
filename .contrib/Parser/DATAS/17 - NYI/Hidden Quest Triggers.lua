@@ -4023,6 +4023,7 @@ _.HiddenQuestTriggers = {
 		q(57575),	-- Triggered after recruiting Naxx
 		q(57603),	-- Triggered after recruiting Neena
 		q(57606),	-- Triggered after recruiting Roseboil
+		q(57607),	-- Triggered after recruiting Unity
 		q(57854),	-- Triggered after recruiting Sabrina
 		q(57857),	-- Triggered after recruiting Toothpick
 		q(57612),	-- Triggered after recruiting The Professor

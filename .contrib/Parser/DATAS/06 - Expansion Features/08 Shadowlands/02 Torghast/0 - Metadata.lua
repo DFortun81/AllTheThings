@@ -11,6 +11,7 @@ _.ExpansionFeatures =
 			["maps"] = {
 				-- Tracking which mapID is which Zone name might not be necessary for Layer/Floor since they seem to be repeated within the Named 'Tower'
 				1969,	-- Adamant Vaults - Floor 6
+				1962,	-- Adamant Vaults
 				1966,	-- Adamant Vaults - Floor 7 (Lower)
 				1965,	-- Adamant Vaults - Floor 7 (Upper)
 				1974,	-- Adamant Vaults - Floor 6 (Lower)

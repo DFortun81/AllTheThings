@@ -133,8 +133,12 @@ _.Zones =
 					["coord"] = { 44.4, 75.9, 680 },
 				}),
 				o(252813, {	-- Small Treasure Chest
+					["description"] = "Located in a cave (19.4, 19.4).",
 					["questID"] = 43845,
-					["coord"] = { 19.8, 16.0, 680 },
+					["coords"] = {
+						{ 19.8, 16.0, 680 },	-- Object
+						{ 19.4, 19.4, 680 },	-- Cave Entrance
+					},
 				}),
 				o(252807, {	-- Small Treasure Chest
 					["questID"] = 43838,

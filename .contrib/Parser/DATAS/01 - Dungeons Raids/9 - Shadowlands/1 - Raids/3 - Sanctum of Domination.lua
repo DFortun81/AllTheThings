@@ -349,6 +349,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 								i(182675),	-- Untempered Dedication
 								i(182747),	-- Withering Bolt
 								i(187542),	-- Jaithys, the Prison Blade
+								i(186410, {	-- Jaithys, the Prison Blade
+									["description"] = "This version is only available as a 'Great Vault' reward.",
+								}),
 								i(186406),	-- Maledict Opus
 								i(187056),	-- The Devouring Cold
 								i(186350),	-- Valorous Visage of Krexus
@@ -724,6 +727,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(182675),	-- Untempered Dedication
 						i(182747),	-- Withering Bolt
 						i(187542),	-- Jaithys, the Prison Blade
+						i(186410, {	-- Jaithys, the Prison Blade
+							["description"] = "This version is only available as a 'Great Vault' reward.",
+						}),
 						i(186406),	-- Maledict Opus
 						i(187056),	-- The Devouring Cold
 						i(186350),	-- Valorous Visage of Krexus
@@ -1096,6 +1102,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(182675),	-- Untempered Dedication
 						i(182747),	-- Withering Bolt
 						i(187542),	-- Jaithys, the Prison Blade
+						i(186410, {	-- Jaithys, the Prison Blade
+							["description"] = "This version is only available as a 'Great Vault' reward.",
+						}),
 						i(186406),	-- Maledict Opus
 						i(187056),	-- The Devouring Cold
 						i(186350),	-- Valorous Visage of Krexus
@@ -1451,6 +1460,9 @@ _.Instances = { tier(9, {	-- Shadowlands
 						i(182675),	-- Untempered Dedication
 						i(182747),	-- Withering Bolt
 						i(187542),	-- Jaithys, the Prison Blade
+						i(186410, {	-- Jaithys, the Prison Blade
+							["description"] = "This version is only available as a 'Great Vault' reward.",
+						}),
 						i(186406),	-- Maledict Opus
 						i(187056),	-- The Devouring Cold
 						i(186350),	-- Valorous Visage of Krexus
@@ -1516,7 +1528,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-10100, {	-- Shadowlands
 		inst(1193, {	-- Sanctum of Domination
 			i(181374),	-- Sylvanas Shadowlands Bow
-			i(186410),	-- Jaithys, the Prison Blade
 		}),
 	}),
 });
@@ -1524,12 +1535,14 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 _.HiddenQuestTriggers = {
 	q(64604),	-- Stygian Ember from Bonesteel [] (Normal / Heroic)
 	q(64616),	-- Stygian Ember from Bonesteel (Normal / Heroic)
+	q(64674),	-- 1x Styigan Ember from Bonesteel (LFR)
 	q(64683),	-- Stygian Ember from Bonesteel (Normal)
 	q(64617),	-- Stygian Ember from Bonesteel (Heroic)
 	q(64684),	-- Stygian Ember from Bonesteel (Heroic)
 
 	q(64603),	-- Stygian Ember from Soulember [176940] (Normal / Heroic)
 	q(64613),	-- Stygian Ember from Soulember (Normal / Heroic)
+	q(64673),	-- 1x Styigan Ember from Soulember (LFR)
 	q(64680),	-- Stygian Ember from Soulember (Normal)
 	q(64614),	-- Stygian Ember from Soulember (Heroic)
 	q(64681),	-- Stygian Ember from Soulember (Heroic)
