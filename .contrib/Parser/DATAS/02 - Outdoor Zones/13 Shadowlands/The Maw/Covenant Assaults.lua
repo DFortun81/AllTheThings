@@ -791,6 +791,7 @@ _.HiddenQuestTriggers = {
 	q(63806),	-- selecting Flytrap to accompany you on You and What Army
 	q(63808),	-- selecting Kearnen the Blade to accompany you on You and What Army
 	q(63805),	-- selecting Winslow Swain to accompany you on You and What Army
+	q(64150),	-- turning in 'Centurion's March' (63753)
 
 --	Night Fae
 	q(63821),	-- triggered when completing the assault (#63823)

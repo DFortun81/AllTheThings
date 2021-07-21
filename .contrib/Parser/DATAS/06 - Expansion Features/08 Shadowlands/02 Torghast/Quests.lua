@@ -334,50 +334,50 @@ _.ExpansionFeatures =
 				-------- unverifed on live yet 9.1 Champions
 				--[[
 				q(64654 , {	-- Champion: Ben Howell
-					["customCollect"] = "",	-- 
-					["sourceQuests"] = {  },	-- 
-					["provider"] = { "n",  },	-- 
+					["customCollect"] = "",	--
+					["sourceQuests"] = {  },	--
+					["provider"] = { "n",  },	--
 					["g"] = {
 						follower(1344),	-- Ben Howell
 					},
 				}),
-				
+
 				q(64171 , {	-- Champion: Kiaranyka
-					["customCollect"] = "",	-- 
-					["sourceQuests"] = {  },	-- 
-					["provider"] = { "n",  },	-- 
+					["customCollect"] = "",	--
+					["sourceQuests"] = {  },	--
+					["provider"] = { "n",  },	--
 					["g"] = {
 						follower(1329),	-- Kiaranyka
 					},
 				}),
-				
+
 				q(64175 , {	-- Champion: Lassik Spinebender
-					["customCollect"] = "",	-- 
-					["sourceQuests"] = {  },	-- 
-					["provider"] = { "n",  },	-- 
+					["customCollect"] = "",	--
+					["sourceQuests"] = {  },	--
+					["provider"] = { "n",  },	--
 					["g"] = {
 						follower(1333),	-- Lassik Spinebender
 					},
 				}),
-				
+
 				q(64172 , {	-- Champion: Ryuja Shockfist
-					["customCollect"] = "",	-- 
-					["sourceQuests"] = {  },	-- 
-					["provider"] = { "n",  },	-- 
+					["customCollect"] = "",	--
+					["sourceQuests"] = {  },	--
+					["provider"] = { "n",  },	--
 					["g"] = {
 						follower(1330),	-- Ryuja Shockfist
 					},
 				}),
 				q(64173 , {	-- Champion: Kinessa the Absorbent
-					["customCollect"] = "",	-- 
-					["sourceQuests"] = {  },	-- 
-					["provider"] = { "n",  },	-- 
+					["customCollect"] = "",	--
+					["sourceQuests"] = {  },	--
+					["provider"] = { "n",  },	--
 					["g"] = {
 						follower(1331),	-- Kinessa the Absorbent
 					},
 				}),
 				--]]
-				
+
 				-------- unverifed on live yet; adding to alphabetized list above as they are verified in game
 				--[[
 				q(60137, {	-- The Fracture Chambers
@@ -759,6 +759,18 @@ _.ExpansionFeatures =
 					["isWeekly"] = true,
 					["name"] = "Skoldus Hall, Layer 9",
 				}),
+				q(63869, {	-- Skoldus Hall, Layer 10
+					["isWeekly"] = true,
+					["name"] = "Skoldus Hall, Layer 10",
+				}),
+				q(63870, {	-- Skoldus Hall, Layer 11
+					["isWeekly"] = true,
+					["name"] = "Skoldus Hall, Layer 11",
+				}),
+				q(63871, {	-- Skoldus Hall, Layer 12
+					["isWeekly"] = true,
+					["name"] = "Skoldus Hall, Layer 12",
+				}),
 
 				-- Soulforges
 				q(58192, {	-- Soulforges, Layer 1
@@ -792,6 +804,22 @@ _.ExpansionFeatures =
 				q(61974, {	-- Soulforges, Layer 8
 					["isWeekly"] = true,
 					["name"] = "Soulforges, Layer 8",
+				}),
+				q(63876, {	-- Soulforges, Layer 9
+					["isWeekly"] = true,
+					["name"] = "Soulforges, Layer 9",
+				}),
+				q(63877, {	-- Soulforges, Layer 10
+					["isWeekly"] = true,
+					["name"] = "Soulforges, Layer 10",
+				}),
+				q(63878, {	-- Soulforges, Layer 11
+					["isWeekly"] = true,
+					["name"] = "Soulforges, Layer 11",
+				}),
+				q(63879, {	-- Soulforges, Layer 12
+					["isWeekly"] = true,
+					["name"] = "Soulforges, Layer 12",
 				}),
 
 				-- Upper Reaches
