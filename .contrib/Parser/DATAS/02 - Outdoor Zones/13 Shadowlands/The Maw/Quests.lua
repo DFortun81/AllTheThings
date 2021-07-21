@@ -222,6 +222,7 @@ _.Zones =
 								["isDaily"] = true,
 								["g"] = {
 									i(186213),	-- Bindings of Manifest Pain
+									i(186005),	-- Stygian Pain Borer
 								},
 							}),
 							n(178002, {	-- Mugrem the Soul Devourer
