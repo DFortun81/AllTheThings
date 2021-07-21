@@ -1962,6 +1962,26 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, holiday(235474, {	-- Midsum
 				249,	-- Uldum
 			},
 		}),
+		q(11972, {	-- Shards of Ahune
+			["provider"] = { "i", 35723 },	-- Shards of Ahune
+			["altQuests"] = { 11976 },	-- Ice Shards (Never Implemented?)
+			["timeline"] = { "added 2.4.0.7994" },
+			-- #if BEFORE WRATH
+			["lvl"] = 65,
+			-- #elseif BEFORE CATA
+			["lvl"] = 75,
+			-- #elseif BEFORE MOP
+			["lvl"] = 75,
+			-- #elseif BEFORE WOD
+			["lvl"] = 75,
+			-- #else
+			["lvl"] = 1,	-- Documentation suggests the level requirement was removed with WOD.
+			-- #endif
+			["groups"] = {
+				i(35279),	-- Tabard of Summer Skies
+				i(35280),	-- Tabard of Summer Flames
+			},
+		}),
 		q(9332,  {	-- Stealing Darnassus's Flame
 			["isYearly"] = true,
 			["provider"] = { "o", 181334 },	-- Flame of Darnassus
