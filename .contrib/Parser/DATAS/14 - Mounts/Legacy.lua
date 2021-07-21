@@ -120,11 +120,11 @@ _.Mounts =
 			["u"] = REMOVED_FROM_GAME, -- unobtainable as of BFA prepatch
 		}),
 		i(98405, {			-- Brawler's Burly Mushan Beast
-			["u"] = 4,
+			["u"] = REMOVED_FROM_GAME,
 			["description"] = "If you completed rank 8 in Season 1 or 2 of the Brawler's Guild, you can purchase this mount from Quartermaster in Brawler's Guild.",
 		}),
 		i(33976, {			-- Brewfest Ram
-			["u"] = 4,
+			["u"] = REMOVED_FROM_GAME,
 			["description"] = "If you completed the Brewfest Riding Rams quest in 2007, you are eligible to buy this mount from Brewfest vendors. You cannot purchase this mount otherwise.",
 		}),
 		un(REMOVED_FROM_GAME, ach(6375, {	-- Challenge Conqueror: Silver

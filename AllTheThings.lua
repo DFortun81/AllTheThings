@@ -10885,18 +10885,29 @@ function app.FilterItemClass_RequireRacesCurrentFaction(item)
 	end
 end
 function app.FilterItemClass_SeasonalItem(item)
-   if item.u and L["UNOBTAINABLE_ITEM_REASONS"][item.u][1] == 4 then
-	  return GetDataSubMember("SeasonalFilters", item.u);
+   if item.u then
+	  if L["UNOBTAINABLE_ITEM_REASONS"][item.u] then
+			if L["UNOBTAINABLE_ITEM_REASONS"][item.u][1] == 4 then
+				return GetDataSubMember("SeasonalFilters", item.u);
+			end
+		else
+			print("Invalid Unobtainable", item.key, item[item.key], item.text, item.u);
+		end
    else
 	  return true
    end
 end
 function app.FilterItemClass_UnobtainableItem(item)
-	if item.u and L["UNOBTAINABLE_ITEM_REASONS"][item.u][1] < 4 then
-	   return GetDataSubMember("UnobtainableItemFilters", item.u);
-	else
-		return true;
+	if item.u then
+		if L["UNOBTAINABLE_ITEM_REASONS"][item.u] then
+			if L["UNOBTAINABLE_ITEM_REASONS"][item.u][1] < 4 then
+				return GetDataSubMember("UnobtainableItemFilters", item.u);
+			end
+		else
+			print("Invalid Unobtainable", item.u);
+		end
 	end
+	return true;
 end
 function app.FilterItemClass_RequireBinding(item)
 	return not item.itemID or app.IsBoP(item);

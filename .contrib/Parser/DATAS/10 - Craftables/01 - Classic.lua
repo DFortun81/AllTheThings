@@ -289,7 +289,7 @@ _.Craftables = { tier(1, {	-- Classic
 		n(-321, {		-- Shoulders
 			i(7913),	-- Barbaric Iron Shoulders
 			i(19691, {	-- Bloodsoul Shoulders
-				["u"]= 8,
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			i(11605),	-- Dark Iron Shoulders
 			i(19695, {	-- Darksoul Shoulders
