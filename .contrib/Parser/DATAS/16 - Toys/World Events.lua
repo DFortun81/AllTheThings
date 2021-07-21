@@ -209,16 +209,13 @@ _.Toys =
 				i(165669),	-- Lunar Elder's Hearthstone
 			}),
 		}),
-		holiday(235474, {	-- Midsummer Fire Festival
-			["u"] = 21,
-			["g"] = sharedData({["u"] = 21,}, {
-				i(34686),	-- Brazier of Dancing Flames
-				i(116440),	-- Burning Defender's Medallion
-				i(116435),	-- Cozy Bonfire
-				i(166746),	-- Fire Eater's Hearthstone
-				i(141649),	-- Set of Matches
-			}),
-		}),
+		applyholiday(MIDSUMMER_FIRE_FESTIVAL, holiday(235474, {	-- Midsummer Fire Festival
+			i(34686),	-- Brazier of Dancing Flames
+			i(116440),	-- Burning Defender's Medallion
+			i(116435),	-- Cozy Bonfire
+			i(166746),	-- Fire Eater's Hearthstone
+			i(141649),	-- Set of Matches
+		})),
 		holiday(235477, {	-- Noblegarden
 			["u"] = HOLIDAY_NOBLEGARDEN,
 			["g"] = sharedData({["u"] = HOLIDAY_NOBLEGARDEN,}, {
