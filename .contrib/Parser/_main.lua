@@ -394,6 +394,7 @@ TBC_PHASE_THREE = 19;
 TBC_PHASE_THREE_NETHERWING = 1901;
 TBC_PHASE_THREE_SKYGUARD = 1902;
 TBC_PHASE_THREE_OGRILA = 1903;
+TBC_PHASE_THREE_SWIFTFLIGHTFORM = 1904;
 TBC_PHASE_FOUR = 20;
 TBC_PHASE_FIVE = 21;
 TBC_PHASE_SIX = 22;
@@ -858,6 +859,9 @@ end
 applylegacyclassicphase = function(phase, data)
 	return bubbleDown({ ["u"] = phase }, data);
 end
+applyholiday = function(holiday, data)
+	return bubbleDown({ ["u"] = holiday }, data);
+end
 lvlsquish = function(originalLvl, shadowlandsLvl, retailLvl)
 	return originalLvl;
 end
@@ -870,6 +874,9 @@ applyclassicphase = function(phase, data)
 end
 applylegacyclassicphase = function(phase, data)
 	return bubbleDown({ ["u"] = REMOVED_FROM_GAME }, data);
+end
+applyholiday = function(holiday, data)
+	return bubbleDown({ ["u"] = holiday }, data);
 end
 -- #if AFTER SHADOWLANDS
 lvlsquish = function(originalLvl, shadowlandsLvl, retailLvl)

@@ -2045,21 +2045,6 @@ f.OnRefresh = function(self)
 end;
 table.insert(settings.MostRecentTab.objects, f);
 
--- local LegacyFiltersLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
--- LegacyFiltersLabel:SetPoint("TOPRIGHT", line, "BOTTOMRIGHT", -150, -8);
--- LegacyFiltersLabel:SetJustifyH("LEFT");
--- LegacyFiltersLabel:SetText(L["LEGACY_FILTERS_LABEL"]);
--- LegacyFiltersLabel:Show();
--- table.insert(settings.MostRecentTab.objects, LegacyFiltersLabel);
-
--- local LegacyFiltersTempLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
--- LegacyFiltersTempLabel:SetPoint("TOPLEFT", LegacyFiltersLabel, "BOTTOMLEFT", 0, -8);
--- LegacyFiltersTempLabel:SetPoint("TOPRIGHT", LegacyFiltersLabel, "BOTTOMRIGHT", 0, -8);
--- LegacyFiltersTempLabel:SetJustifyH("LEFT");
--- LegacyFiltersTempLabel:SetText(L["LEGACY_FILTERS_TEMP_LABEL"]);
--- LegacyFiltersTempLabel:Show();
--- table.insert(settings.MostRecentTab.objects, LegacyFiltersTempLabel);
-
 -- Custom Collect filtering
 local CustomCollectFilterLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 CustomCollectFilterLabel:SetPoint("LEFT", line, "LEFT", 275, 0);
@@ -2263,7 +2248,7 @@ for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
 			val[k]= not self:GetChecked()
 			app.SetDataMember("SeasonalFilters", val);
 			settings:Refresh();
-	settings:UpdateMode(1);
+			settings:UpdateMode(1);
 		end);
 		seasonalFilter:SetATTTooltip(v[2]);
 		seasonalFilter:SetPoint("TOPLEFT",last,x,-y)
