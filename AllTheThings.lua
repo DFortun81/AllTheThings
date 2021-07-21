@@ -10885,14 +10885,14 @@ function app.FilterItemClass_RequireRacesCurrentFaction(item)
 	end
 end
 function app.FilterItemClass_SeasonalItem(item)
-   if item.u and L["UNOBTAINABLE_ITEM_REASONS"][item.u][1] > 4 then
+   if item.u and L["UNOBTAINABLE_ITEM_REASONS"][item.u][1] == 4 then
 	  return GetDataSubMember("SeasonalFilters", item.u);
    else
 	  return true
    end
 end
 function app.FilterItemClass_UnobtainableItem(item)
-	if item.u and L["UNOBTAINABLE_ITEM_REASONS"][item.u][1] < 5 then
+	if item.u and L["UNOBTAINABLE_ITEM_REASONS"][item.u][1] < 4 then
 	   return GetDataSubMember("UnobtainableItemFilters", item.u);
 	else
 		return true;
@@ -15235,7 +15235,7 @@ customWindowUpdates["AuctionData"] = function(self)
 					["OnClick"] = function()
 						local val = app.GetDataMember("UnobtainableItemFilters")
 						if val[7] then val[7] = false else val[7] = true end
-						for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
+						for k,v in pairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
 							if v[1] == 1 or v[1] == 2 or v[1] == 3 then
 								if k == 7 then -- Do nothing for id 7
 								elseif val[k] then val[k] = not val[k] else val[k] = true end

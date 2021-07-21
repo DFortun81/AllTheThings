@@ -2194,8 +2194,8 @@ local seasonalAll = child:CreateCheckBox(L["SEASONAL_ALL"],
 function(self)
 	local isTrue = true
 	local val = app.GetDataMember("SeasonalFilters")
-	for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
-		if v[1] > 4 then
+	for k,v in pairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
+		if v[1] == 4 then
 			isTrue = isTrue and not val[k]
 		end
 	end
@@ -2210,8 +2210,8 @@ function(self)
 end,
 function(self)
 	local val = app.GetDataMember("SeasonalFilters")
-	for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
-		if v[1] > 4 then
+	for k,v in pairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
+		if v[1] == 4 then
 			val[k] = not self:GetChecked()
 		end
 	end
@@ -2230,8 +2230,8 @@ local last = seasonalSubFrame;
 local x = 5;
 local y = 5;
 local count = 0;
-for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
-	if v[1] > 4 then
+for k,v in pairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
+	if v[1] == 4 then
 		local seasonalFilter = child:CreateCheckBox(v[3],
 		function(self)
 			self:SetChecked(not app.GetDataMember("SeasonalFilters")[k]);
@@ -2298,8 +2298,8 @@ local unobtainableAll = child:CreateCheckBox(L["UNOBTAINABLE_ALL"],
 function(self)
 	local isTrue = true
 	local val = app.GetDataMember("UnobtainableItemFilters")
-	for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
-		if v[1] < 5 then
+	for k,v in pairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
+		if v[1] < 4 then
 			isTrue = isTrue and not val[k]
 		end
 	end
@@ -2314,8 +2314,8 @@ function(self)
 end,
 function(self)
 	local val = app.GetDataMember("UnobtainableItemFilters")
-	for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
-		if v[1] < 5 then
+	for k,v in pairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
+		if v[1] < 4 then
 			val[k] = not self:GetChecked()
 		end
 	end
@@ -2341,7 +2341,7 @@ local noChanceAll = child:CreateCheckBox(L["NO_CHANCE_ALL"],
 function(self)
 	local isTrue = true
 	local val = app.GetDataMember("UnobtainableItemFilters")
-	for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
+	for k,v in pairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
 		if v[1] == 1 then
 			isTrue = isTrue and not val[k]
 		end
@@ -2357,7 +2357,7 @@ function(self)
 end,
 function(self)
 	local val = app.GetDataMember("UnobtainableItemFilters")
-	for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
+	for k,v in pairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
 		if v[1] == 1 then
 			val[k] = not self:GetChecked()
 		end
@@ -2372,7 +2372,7 @@ local last = noChanceFrame;
 local x = 5;
 local y = 5;
 local count = 0;
-for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
+for k,v in pairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
 	if v[1] == 1 then
 		local filter = child:CreateCheckBox(v[3],
 		function(self)
@@ -2422,7 +2422,7 @@ local highChanceAll = child:CreateCheckBox(L["HIGH_CHANCE_ALL"],
 function(self)
 	local isTrue = true
 	local val = app.GetDataMember("UnobtainableItemFilters");
-	for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
+	for k,v in pairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
 		if v[1] == 3 then
 			isTrue = isTrue and not val[k];
 		end
@@ -2438,7 +2438,7 @@ function(self)
 end,
 function(self)
 	local val = app.GetDataMember("UnobtainableItemFilters");
-	for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
+	for k,v in pairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
 		if v[1] == 3 then
 			val[k] = not self:GetChecked();
 		end
@@ -2453,7 +2453,7 @@ local last = highChanceFrame;
 local x = 5;
 local y = 5;
 local count = 0;
-for k,v in ipairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
+for k,v in pairs(L["UNOBTAINABLE_ITEM_REASONS"]) do
 	if v[1] == 3 then
 		local filter = child:CreateCheckBox(v[3],
 		function(self)

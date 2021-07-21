@@ -3113,57 +3113,13 @@ for key,value in pairs({
 })
 do a[key] = value; end
 
--- TODO:
+--[[
 local a = L.UNOBTAINABLE_ITEM_REASONS;
 for key,value in pairs({
-	-- {header, description, name}, header: header id, 1-3 as above, 4 is legacy.
-	{1, "|CFFFF0000This was never available to players.|r", "Never Available (1)"}, -- No Hope -- 1
-	{1, "|CFFFF0000This has been removed from the game.|r", "Removed From Game (2)"}, -- No Hope -- 2
-	{0, "", ""}, -- 3
-	{0, "", ""}, -- 4
-	{0, "", ""}, -- 5
-	{0, "", ""}, -- 6
-	{0, "", ""}, -- 7
-	{0, "", ""}, -- 8
-	{3, "|CFFFF0000此物品的获得方式已被移除，只能从黑市拍卖行获得。|r", "黑市拍卖行 (9)"}, -- There is Hope -- 9
-	{3, "|CFFFF0000此物品通过TCG卡牌获得，卡牌不再发行，但网络上、黑市拍卖行甚至交易行仍可能出现。国服也可能有积分兑换活动。|r", "TCG卡牌 (10)"}, -- There is Hope -- 10
-	{3, "|CFFFF0000此物品拾取后绑定，但是如果你有召唤首领所需的物品仍可获得。|r", "需要召唤道具 (11)"}, -- There is Hope -- 11
-	{0, "|CFF00FFDEThis item or achievement requires Player vs Player activities or a currency related to those activities. |r", "Requires PvP (12)"}, -- There is Hope --, ""}, -- 12
-	{1, "|CFFFF0000你的追随者等级过高，奖励此物品的任务不再刷新。|r", "绝版物资 (13)"}, -- 13
-	{3, "|CFFFF0000此物品无法购买，除非你在对应赛季的PvP评分或排名达标。|r", "PvP Elite/Gladiator (14)"}, -- 14
-	{1, "|CFFFF0000This item has a Source ID (Tempest Keep Legendaries), but can't be learned (training recipes). |r", "Training Recipes / Unlearnable (15)"}, -- 15
-	{0, "", ""}, -- 16
-	{6, "|CFF00FFDE只能在春节期间获得。|r", "春节 (17)"}, -- 17
-	{7, "|CFF00FFDE只能在情人节期间获得。|r", "情人节 (18)"}, -- 18
-	{8, "|CFF00FFDE只能在复活节期间获得。|r", "复活节 (19)"}, -- 19
-	{9, "|CFF00FFDE只能在儿童周期间获得。|r", "儿童周 (20)"}, -- 20
-	{10, "|CFF00FFDE只能在仲夏火焰节期间获得。|r", "仲夏火焰节 (21)"}, -- 21
-	{11, "", "小节日 (22)"}, -- 22 Description written on item
-	{12, "|CFF00FFDE只能在海盗日获得。|r", "海盗日 (23)"}, -- 23
-	{13, "|CFF00FFDE只能在美酒节期间获得。|r", "美酒节 (24)"}, -- 24
-	{14, "|CFF00FFDE只能在收获节期间获得。|r", "收获节 (25)"}, -- 25
-	{15, "|CFF00FFDE只能在万圣节期间获得。|r", "万圣节 (26)"}, -- 26
-	{16, "|CFF00FFDE只能在亡灵节期间获得。国服可能无法获得。|r", "亡灵节 (27)"}, -- 27
-	{17, "|CFF00FFDE只能在感恩节期间获得。|r", "感恩节 (28)"}, -- 28
-	{18, "|CFF00FFDE只能在冬幕节期间获得。|r", "冬幕节 (29)"}, -- 29
-	{19, "|CFF00FFDE只能在荆棘谷钓鱼大赛获得。|r", "荆棘谷钓鱼大赛 (30) "}, -- 30
-	{20, "|CFF00FFDE只能在魔兽世界周年庆期间获得。\n未来的周年庆中可能也可获得。|r\n", "魔兽世界周年庆 (31)"}, -- 31
-	{0, "", ""}, -- 32
-	{0, "", ""}, -- 33
-	{0, "", ""}, -- 34
-	{3, "|CFFFF0000在游戏内商城出售。|r", "游戏内商城 (35)"}, -- 35
-	{21, "|CFFFF0000只能在曾经的魔兽世界周年庆期间获得，不再可得。|r\n", "魔兽世界周年庆 [已移除] (36)"}, -- 36
-	{0, "", ""}, -- 37
-	{1, "|CFFFF0000此项只有在熊猫人之谜资料片完成了传说披风任务线的玩家才能获得。|r", "斡耳朵斯－传说披风 (38)"}, --38
-	{0, "", ""}, -- 39
-	{0, "", ""}, -- 40
-	{1, "|CFFFF0000这些外观只有完成了法师塔神器挑战，获得了基础配色的玩家才能获得。|r", "法师塔外观 (41)"}, -- 41
-	{21, "|CFFFF0000这些外观只有在对应资料片的时空漫游周才能获得。|r", "时空漫游 (42)"}, -- 42
-	{0, "", ""}, -- 43
-	{0, "", ""}, -- 44
-	{1, "|CFFFF0000暴雪在7.3.2和8.0中的拾取改动使得一些物品无法掉落。目前影响的包括格鲁尔（TBC）、怒炉将军（黑石深渊）和、特迪斯·扭木（厄运之槌西）的掉落。|r", "拾取机制损坏 (45)"}, -- 45
+	
 })
 do a[key] = value; end
+]]
 
 -- TODO:
 local a = L.CUSTOM_COLLECTS_REASONS;
