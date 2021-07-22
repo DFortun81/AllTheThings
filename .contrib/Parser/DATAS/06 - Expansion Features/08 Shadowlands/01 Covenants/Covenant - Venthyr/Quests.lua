@@ -383,6 +383,11 @@ _.ExpansionFeatures =
 						["provider"] = { "o", 353948 },	-- Medallion of Desire
 						["coord"] = { 53.6, 32.9, SINFALL_REACHES },
 					}),
+					q(63655, {	-- Medallion of Wrath
+						["sourceQuests"] = { 63654 },	-- The Nathrezim
+						["provider"] = { "n", 179978 },	-- The Accuser
+						["coord"] = { 23.1, 45.9, REVENDRETH },
+					}),
 					q(58406, {	-- Mirror to Maldraxxus
 						["description"] = "Requires Renown 22.",
 						-- ["sourceQuests"] = {  },	--

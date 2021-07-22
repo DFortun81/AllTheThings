@@ -949,6 +949,7 @@ _.Zones =
 
 _.HiddenQuestTriggers = {
 	q(64563),	-- triggered when turning in #64556, "In Need of Assistance"
+	q(64737),	-- triggered when turning in #64271, "A More Civilized Way" - received i(185115), Redeemed Inquisitor's Drape
 };
 
 _NeverImplemented = {

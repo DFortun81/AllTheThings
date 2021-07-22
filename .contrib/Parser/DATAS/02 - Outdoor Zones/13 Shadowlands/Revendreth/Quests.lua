@@ -982,12 +982,6 @@ _.Zones =
 					["provider"] = { "n", 179327 },	-- Mal'Ganis
 					["coord"] = { 37.9, 23.4, REVENDRETH },
 				}),
-				q(63655, {	-- Medallion of Wrath
-				--	TODO: this quest may change, it's not fully implemented/cannot be turned in
-					["sourceQuests"] = { 63654 },	-- The Nathrezim
-					["provider"] = { "n", 179978 },	-- The Accuser
-					["coord"] = { 23.1, 45.9, REVENDRETH },
-				}),
 				q(63680, {	-- Out On the Edge
 					["sourceQuests"] = { 64090 },	-- The Big Squeeze
 					["provider"] = { "n", 177967 },	-- Lady Moonberry
