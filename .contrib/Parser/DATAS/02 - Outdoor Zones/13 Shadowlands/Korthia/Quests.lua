@@ -7,6 +7,82 @@ _.Zones =
 	m(SHADOWLANDS, {
 		m(KORTHIA, {
 			n(QUESTS, {
+				n(-908, {	-- Rewards
+					["description"] = "These pieces can be rewarded from covenant dailies in Korthia.",
+					["g"] = {
+						n(-929, {	-- Covenant: Night Fae
+							["customCollect"] = "SL_COV_NFA",	-- Night Fae
+							["g"] = {
+								-- Night Fae -- of the Twilight Grove -- Korthia Dailies
+								i(184948),	-- Vestments of the Twilight Grove
+								i(184949),	-- Slippers of the Twilight Grove
+								i(184950),	-- Handwraps of the Twilight Grove
+								i(184951),	-- Hood of the Twilight Grove
+								i(184952),	-- Leggings of the Twilight Grove
+								i(184953),	-- Mantle of the Twilight Grove
+								i(184954),	-- Sash of the Twilight Grove
+								i(184955),	-- Wraps of the Twilight Grove
+								i(184956),	-- Drape of the Twilight Grove
+							},
+						}),
+						n(-939, {	-- Covenant: Kyrian
+							["customCollect"] = "SL_COV_KYR",	-- Kyrian
+							["g"] = {
+								-- Kyrian -- Foresworn Aspirant's -- Korthia Dailies
+								i(184983),	-- Foresworn Aspirant's Vestments
+								i(184984),	-- Foresworn Aspirant's Slippers
+								i(184985),	-- Foresworn Aspirant's Handwraps
+								i(184986),	-- Foresworn Aspirant's Hood
+								i(184987),	-- Foresworn Aspirant's Leggings
+								i(184988),	-- Foresworn Aspirant's Sash
+								i(184989),	-- Foresworn Aspirant's Wraps
+								i(185009),	-- Foresworn Aspirant's Robes
+								i(184990),	-- Foresworn Aspirant's Drape
+							},
+						}),
+						n(-920, {	-- Covenant: Necrolord
+							["customCollect"] = "SL_COV_NEC",	-- Necrolord
+							["g"] = {
+								-- Necrolord -- Rogue Necromancer's -- Korthia Dailies
+								i(185011),	-- Rogue Necromancer's Vestments
+								i(185012),	-- Rogue Necromancer's Slippers
+								i(185013),	-- Rogue Necromancer's Handwraps
+								i(185014),	-- Rogue Necromancer's Hood
+								i(185015),	-- Rogue Necromancer's Leggings
+								i(185016),	-- Rogue Necromancer's Mantle
+								i(185017),	-- Rogue Necromancer's Sash
+								i(185018),	-- Rogue Necromancer's Wraps
+								i(185019),	-- Rogue Necromancer's Drape
+							},
+						}),
+						n(-949, {	-- Covenant: Venthyr
+							["customCollect"] = "SL_COV_VEN",	-- Venthyr
+							["g"] = {
+								-- Venthyr -- Radiant Court -- Korthia Dailies?
+								i(185074),	-- Radiant Court Wraps
+								i(185075),	-- Radiant Court Sash
+								i(185076),	-- Radiant Court Leggings
+								i(185077),	-- Radiant Court Hood
+								i(185078),	-- Radiant Court Handwraps
+								i(185079),	-- Radiant Court Slippers
+								i(185080),	-- Radiant Court Vestments
+								i(185073),	-- Radiant Court Cape
+								-- Venthyr -- Redeemed Inquisitor's  -- Korthia Dailies?
+								i(185107),	-- Redeemed Inquisitor's Robes
+								i(185108),	-- Redeemed Inquisitor's Slippers
+								i(185109),	-- Redeemed Inquisitor's Handwraps
+								i(185110),	-- Redeemed Inquisitor's Hood
+								i(185111),	-- Redeemed Inquisitor's Leggings
+								i(185112),	-- Redeemed Inquisitor's Mantle
+								i(185113),	-- Redeemed Inquisitor's Sash
+								i(185114),	-- Redeemed Inquisitor's Wraps
+								i(185115),	-- Redeemed Inquisitor's Drape
+							},
+						}),
+						i(186548),	-- Chompy (PET!)
+						i(187184),	-- Vesper of Clarity (TOY!)
+					},
+				}),
 			--	confirmed on live
 				q(63755, {	-- A Matter of Urgency
 					["sourceQuests"] = { 64106 },	-- A Unified Effort
@@ -495,6 +571,12 @@ _.Zones =
 			--	Korthia Daily
 			--	confirmed on live
 				i(186017),	-- Korthite Crystal - rewarded by some dailies and found in some treasures, but does not seem statically attached to anything specific.  acquisition/availability may be based on having completed the campaign questline to the point where you get to the Vault of Secrets
+				q(64271, {	-- A More Civilized Way
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
+					["provider"] = { "n", 178795 },	-- Nadjia the Mistblade
+					["isDaily"] = true,
+					["coord"] = { 61.8, 25.2, KORTHIA },
+				}),
 				q(63783, {	-- Anima Reclamation
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178793 },	-- Kael'thas Sunstrider
@@ -584,6 +666,12 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 60.5, 27.7, KORTHIA },
 				}),
+				q(63781, {	-- Mawsworn Battle Plans
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
+					["provider"] = { "n", 178795 },	-- Nadjia the Mistblade
+					["isDaily"] = true,
+					["coord"] = { 61.8, 25.1, KORTHIA },
+				}),
 				q(63782, {	-- Mawsworn Rituals
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178799 },	-- Arios Riftbearer
@@ -651,6 +739,12 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 64.6, 25.4, KORTHIA },
 				}),
+				q(63956, {	-- Sealed Secrets
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
+					["provider"] = { "n", 178845 },	-- Ve'lonu
+					["isDaily"] = true,
+					["coord"] = { 64.6, 25.4, KORTHIA },
+				}),
 				q(63961, {	-- Sealed Secrets
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178845 },	-- Ve'lonu
@@ -692,18 +786,9 @@ _.Zones =
 					["provider"] = { "n", 179216 },	-- Mikanikos
 					["isDaily"] = true,
 					["coord"] = { 61.4, 23.2, KORTHIA },
-					["g"] = {	-- TODO: may be a generic 'kyrian questgiver' reward?  was on a different quest during PTR, was on this one for me on 7/11
-						i(187184),	-- Vesper of Clarity (TOY!)
-					},
 				}),
 
 			--	ptr data
-				q(64271, {	-- A More Civilized Way
-					["sourceQuests"] = { 64556 },	-- In Need of Assistance
-					["provider"] = { "n", 178795 },	-- Nadjia the Mistblade
-					["isDaily"] = true,
-					["coord"] = { 61.8, 25.2, KORTHIA },
-				}),
 				q(63779, {	-- A Semblance of Normal
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 179134 },	-- Pelagos
@@ -764,12 +849,6 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 60.1, 27.5, KORTHIA },
 				}),
-				q(63781, {	-- Mawsworn Battle Plans
-					["sourceQuests"] = { 64556 },	-- In Need of Assistance
-					["provider"] = { "n", 178795 },	-- Nadjia the Mistblade
-					["isDaily"] = true,
-					["coord"] = { 61.8, 25.1, KORTHIA },
-				}),
 				q(63937, {	-- Nasty, Big, Pointy Teeth
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178805 },	-- Emeni
@@ -816,12 +895,6 @@ _.Zones =
 					["coord"] = { 64.6, 25.4, KORTHIA },
 				}),
 				q(63955, {	-- Sealed Secrets
-					["sourceQuests"] = { 64556 },	-- In Need of Assistance
-					["provider"] = { "n", 178845 },	-- Ve'lonu
-					["isDaily"] = true,
-					["coord"] = { 64.6, 25.4, KORTHIA },
-				}),
-				q(63956, {	-- Sealed Secrets
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178845 },	-- Ve'lonu
 					["isDaily"] = true,

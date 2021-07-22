@@ -186,7 +186,7 @@ _.Zones =
 								},
 							}),
 							n(177980, {	-- Gruukuuek the Elder
-								-- ["questID"] = ,
+								["questID"] = 64112,
 								["isDaily"] = true,
 								["g"] = {
 									i(186226),	-- Cinch of Petrified Vines
@@ -1025,6 +1025,7 @@ _.Zones =
 
 _.HiddenQuestTriggers = {
 	q(64126),	-- triggered when killing Dathlane the Herald, WotJ boss - TODO - move questIDs to individual bosses if they've been separated since they have new drops
+	q(64124),	-- triggered when killing Naelcrotix, WotJ boss - weirdly this triggered for me but not carb, first WotJ for both of us for the week
 	q(62907),	-- triggered after collecting all stygia during "Rule 1: Have an Escape Plan" (triggers dialogue from The Jailer + the Eye of the Jailer counter...thing)
 	-- these seem shared... ? some sort of incremental counter?
 	q(64692),	-- triggered when killing Manifestation of Pain / Zul'gath the Flayer
