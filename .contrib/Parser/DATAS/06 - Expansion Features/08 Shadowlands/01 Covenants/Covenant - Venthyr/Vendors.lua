@@ -810,8 +810,9 @@ _.ExpansionFeatures =
 							}),
 						}),
 					}),
-					n(174183, {	-- Solivane <Raid Finder Nathrian Weaponsmith>
+					n(178176, {	-- Night Guardian Jethraasa <Raid Finder Nathrian Weaponsmith>
 						["coord"] = { 55.1, 46.1, SINFALL_DEPTHS },
+						["cr"] = 174183,	-- Solivane <Raid Finder Nathrian Weaponsmith> (no longer the vendor for anyone who has progressed through Chapter 5/9 of Chains of Domination)
 						["g"] = bubbleDown({
 							["customCollect"] = { "SL_COV_VEN" },	-- Venthyr Covenant
 							["modID"] = 4,	-- LFR
