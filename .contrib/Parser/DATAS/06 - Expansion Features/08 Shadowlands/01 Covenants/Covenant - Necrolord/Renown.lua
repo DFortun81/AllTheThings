@@ -64,7 +64,7 @@ _.HiddenQuestTriggers = {
 	q(64391),	-- hitting Renown 48 [Mage] (received Memory of Death's Fathom)
 	q(64398),	-- hitting Renown 48 [Monk] (received Memory of ??)
 	-- q( ),	-- hitting Renown 48 [Paladin] (received Memory of ??)
-	-- q( ),	-- hitting Renown 48 [Priest] (received Memory of ??)
+	q(64414),	-- hitting Renown 48 [Priest] (received Memory of ??)
 	-- q( ),	-- hitting Renown 48 [Rogue] (received Memory of ??)
 	q(64384),	-- hitting Renown 48 [Shaman] (received Memory of the Splintered Elementals)
 	-- q( ),	-- hitting Renown 48 [Warlock] (received Memory of ??)

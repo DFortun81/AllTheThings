@@ -521,6 +521,7 @@ _.Zones =
 						63915,	-- Drum of Driving
 						63917,	-- Everliving Statuette
 					},
+					["minReputation"] = { 2472, 7500 },	-- Tier 3
 					["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 					["coord"] = { 62.7, 22.5, KORTHIA },
 				}),

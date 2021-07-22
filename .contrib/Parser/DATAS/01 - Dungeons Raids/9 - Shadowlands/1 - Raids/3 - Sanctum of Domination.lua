@@ -1539,6 +1539,8 @@ _.HiddenQuestTriggers = {
 	q(64683),	-- Stygian Ember from Bonesteel (Normal)
 	q(64617),	-- Stygian Ember from Bonesteel (Heroic)
 	q(64684),	-- Stygian Ember from Bonesteel (Heroic)
+	q(64618),	-- Bonesteel (Mythic)
+	q(64685),	-- Bonesteel (Mythic)
 
 	q(64603),	-- Stygian Ember from Soulember [176940] (Normal / Heroic)
 	q(64613),	-- Stygian Ember from Soulember (Normal / Heroic)
@@ -1546,6 +1548,8 @@ _.HiddenQuestTriggers = {
 	q(64680),	-- Stygian Ember from Soulember (Normal)
 	q(64614),	-- Stygian Ember from Soulember (Heroic)
 	q(64681),	-- Stygian Ember from Soulember (Heroic)
+	q(64615),	-- Soulember (Mythic)
+	q(64682),	-- Soulember (Mythic)
 
 	q(64602),	-- Stygian Ember from Hollowsoul [176879] (Normal / Heroic)
 	q(64610),	-- Stygian Ember from Hollowsoul (Normal / Heroic)
@@ -1575,6 +1579,7 @@ _.HiddenQuestTriggers = {
 	q(64330),	-- Eye of the Jailer (Normal / Heroic) (Heroic-Week 2)
 	q(64331),	-- Eye of the Jailer (Normal / Heroic) (Heroic-Week 2)
 	q(64332),	-- Eye of the Jailer (Heroic-Week 2)
+	q(64333),	-- Eye of the Jailer (Mythic)
 	q(64630),	-- Eye of the Jailer (Normal / Heroic) (Heroic-Week 2)
 	q(64632),	-- Eye of the Jailer (Heroic)
 	q(64657),	-- Eye of the Jailer (Normal / Heroic) (Heroic-Week 2)
