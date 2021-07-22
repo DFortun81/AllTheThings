@@ -1134,6 +1134,9 @@ end
 recipe = function(id, t)								-- Create a RECIPE Object
 	return struct("recipeID", id, t);
 end
+--[[rf = function(id, t)									-- Create a RUNEFORGE LENDGARY Object
+	return struct("runeforgePowerID", id, t);
+]]
 spell = function(id, t)									-- Create a SPELL Object
 	return struct("spellID", id, t);
 end
