@@ -1286,4 +1286,5 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 });
 _.HiddenQuestTriggers = {
 	q(37585),	-- Completing "These Look Familiar"
+	q(36904),	-- Actived Ogre Waygate at 59.6, 47.5
 };
