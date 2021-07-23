@@ -210,11 +210,12 @@ _.Zones =
 					i(187097),	-- Construct's Shoulderplates
 					i(187016),	-- Eviscerator's Spiked Mantle
 					i(187026),	-- Field Warden's Torture Kit
+					i(187240),	-- Field Warden's Watchful Eye
 					i(187013),	-- Interceptor's Pauldrons
 					i(187020),	-- Necrobinder's Shoulderpads
+					i(187021),	-- Punisher's Spiked Mantle
 					i(187018),	-- Ritualist's Shoulder-Scythes
 					i(187431),	-- Sleeping Armament
-					i(187240),	-- Field Warden's Watchful Eye
 					-- Objects
 					o(368876, {	-- Mawsworn Cache
 						["questID"] = 64021,
