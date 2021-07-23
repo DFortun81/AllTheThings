@@ -1,59 +1,275 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
+local EARTHEN_RING_ELDER_ID = 26221;	-- Earthen Ring Elder
+local EARTHEN_RING_ELDER_COORDS = {
+	{ 49.4, 72.0, STORMWIND_CITY },
+	{ 47.2, 37.6, ORGRIMMAR },
+	{ 64.8, 27.4, IRONFORGE },
+	{ 21.4, 24.4, THUNDER_BLUFF },
+	{ 62.2, 49.2, DARNASSUS },
+	{ 67.0, 13.0, UNDERCITY },
+	{ 43.2, 25.8, THE_EXODAR },
+	{ 68.8, 42.6, SILVERMOON_CITY },
+	{ 60.4, 30.8, SHATTRATH_CITY },
+};
+local EARTHEN_RING_ELDER_MAPS = {
+	STORMWIND_CITY,
+	ORGRIMMAR,
+	IRONFORGE,
+	THUNDER_BLUFF,
+	DARNASSUS,
+	UNDERCITY,
+	THE_EXODAR,
+	SILVERMOON_CITY,
+	SHATTRATH_CITY,
+};
+
+local FESTIVAL_FLAMEKEEPER_ID = 16788;	-- Festival Flamekeeper
+local FESTIVAL_FLAMEKEEPER_COORDS = {
+	{ 38.5, 61.1, STORMWIND_CITY },
+	{ 63.6, 24.7, IRONFORGE },
+	{ 56.5, 92.0, TELDRASSIL },
+	{ 21.6, 26.2, THUNDER_BLUFF },
+	{ 62.1, 66.8, TIRISFAL_GLADES },
+	{ 46.2, 37.7, ORGRIMMAR },
+};
+local FESTIVAL_FLAMEKEEPER_MAPS = {
+	STORMWIND_CITY,
+	IRONFORGE,
+	DARNASSUS,
+	TELDRASSIL,
+	THUNDER_BLUFF,
+	ORGRIMMAR,
+	UNDERCITY,
+	TIRISFAL_GLADES,
+};
+
+local FESTIVAL_LOREMASTER_ID = 16817;	-- Festival Loremaster
+local FESTIVAL_LOREMASTER_COORDS = {
+	-- #if AFTER CATA
+	{ 49.6, 72.0, STORMWIND_CITY },
+	{ 64.0, 25.8, IRONFORGE },
+	{ 62.2, 48.6, DARNASSUS },
+	-- #else
+	{ 38.5, 61.1, STORMWIND_CITY },
+	{ 63.6, 24.7, IRONFORGE },
+	{ 56.6, 92.3, TELDRASSIL },
+	-- #endif
+	-- #if AFTER TBC
+	{ 61.4, 31.9, SHATTRATH_CITY },
+	{ 41.6, 25.3, THE_EXODAR },
+	-- #endif
+};
+local FESTIVAL_LOREMASTER_MAPS = {
+	STORMWIND_CITY,
+	IRONFORGE,
+	TELDRASSIL,
+	DARNASSUS,
+	-- #if AFTER TBC
+	SHATTRATH_CITY,
+	THE_EXODAR,
+	-- #endif
+};
+
+local FESTIVAL_TALESPINNER_ID = 16818;	-- Festival Talespinner
+local FESTIVAL_TALESPINNER_COORDS = {
+	-- #if AFTER CATA
+	{ 47.8, 38.4, ORGRIMMAR },
+	{ 21.4, 27.8, THUNDER_BLUFF },
+	-- #else
+	{ 46.8, 38.0, ORGRIMMAR },
+	{ 21.3, 26.4, THUNDER_BLUFF },
+	-- #endif
+	{ 67.6,  8.3, UNDERCITY },
+	-- #if AFTER TBC
+	{ 62.2, 32.0, SHATTRATH_CITY },
+	{ 69.8, 43.0, SILVERMOON_CITY },
+	-- #endif
+};
+local FESTIVAL_TALESPINNER_MAPS = {
+	THUNDER_BLUFF,
+	ORGRIMMAR,
+	UNDERCITY,
+	-- #if AFTER TBC
+	SHATTRATH_CITY,
+	SILVERMOON_CITY,
+	-- #endif
+};
+
+local FIRE_EATER_ALLIANCE_ID = 25962;	-- Fire Eater (A)
+local FIRE_EATER_ALLIANCE_MAPS = {
+	ARATHI_HIGHLANDS,
+	BADLANDS,
+	BLASTED_LANDS,
+	WESTERN_PLAGUELANDS,
+	THE_HINTERLANDS,
+	DUN_MOROGH,
+	BURNING_STEPPES,
+	ELWYNN_FOREST,
+	DUSKWOOD,
+	LOCH_MODAN,
+	REDRIDGE_MOUNTAINS,
+	NORTHERN_STRANGLETHORN,
+	SWAMP_OF_SORROWS,
+	WESTFALL,
+	WETLANDS,
+	TELDRASSIL,
+	DARKSHORE,
+	ASHENVALE,
+	STONETALON_MOUNTAINS,
+	DESOLACE,
+	DUSTWALLOW_MARSH,
+	TANARIS,
+	WINTERSPRING,
+	AZUREMYST_ISLE,
+	HELLFIRE_PENINSULA,
+	ZANGARMARSH,
+	TEROKKAR_FOREST,
+	NETHERSTORM,
+	SHATTRATH_CITY,
+	114,	-- Borean Tundra
+	115,	-- Dragonblight
+	116,	-- Grizzly Hills
+	117,	-- Howling Fjord
+	119,	-- Sholazar Basin
+	120,	-- The Storm Peaks
+	121,	-- Zul'Drak
+	127,	-- Crystalsong Forest
+	SOUTHERN_BARRENS,
+	210,	-- The Cape of Stranglethorn
+	TWILIGHT_HIGHLANDS,
+	249,	-- Uldum
+};
+
+local FIRE_EATER_HORDE_ID = 25994;	-- Fire Eater (H)
+local FIRE_EATER_HORDE_MAPS = {
+	DUROTAR,
+	MULGORE,
+	NORTHERN_BARRENS,
+	TIRISFAL_GLADES,
+	ASHENVALE,
+	TANARIS,
+	AZSHARA,
+	UNGORO_CRATER,
+	WINTERSPRING,
+	EVERSONG_WOODS,
+	HELLFIRE_PENINSULA,
+	ZANGARMARSH,
+	117,	-- Howling Fjord
+	119,	-- Sholazar Basin
+	249,	-- Uldum
+};
+
+-- #if AFTER WRATH
+local FLAME_STEAL_LEVEL_REQUIREMENT = 1;	-- Level requirement reduced to 1 after Wrath. (haha have fun with that!)
+-- #else
+local FLAME_STEAL_LEVEL_REQUIREMENT = 50;
+-- #endif
+local FLAME_STEAL_REWARDS = {
+	i(23247),	-- Burning Blossom x25
+	i(23211),	-- Toasted Smorc
+	i(23326),	-- Midsummer Sausage
+	i(23327),	-- Fire-toasted Bun
+	i(23435),	-- Elderberry Pie
+	-- #if AFTER WRATH
+	i(23246),	-- Fiery Festival Brew
+	i(34684),	-- Handful of Summer Petals
+	-- #endif
+};
+
 _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, holiday(235474, {	-- Midsummer Fire Festival
 	n(QUESTS, {
-		q(9319,  {	-- A Light in Dark Places
-			["provider"] = { "n", 16788 },	-- Festival Flamekeeper
-			["u"] = REMOVED_FROM_GAME,
+		q(9319, {	-- A Light in Dark Places
+			["qg"] = FESTIVAL_FLAMEKEEPER_ID,
+			-- #if BEFORE TBC
+			["coords"] = FESTIVAL_FLAMEKEEPER_COORDS,
+			["maps"] = appendGroups(FESTIVAL_FLAMEKEEPER_MAPS, {
+				DIRE_MAUL,
+				BLACKROCK_SPIRE,
+				STRATHOLME,
+				SCHOLOMANCE,
+			}),
+			-- #endif
+			["timeline"] = { "removed 2.4.0" },
+			["isYearly"] = true,	-- NOTE: Crieve tested the flags for this quest with the ATT guild, it was not reset. (meaning it's a yearly repeatable)
+			["lvl"] = lvlsquish(50, 1, 1),
+			["groups"] = {
+				-- #if BEFORE TBC
+				objective(1),	-- Flame of Dire Maul
+				objective(2),	-- Flame of Blackrock Spire
+				objective(3),	-- Flame of Stratholme
+				objective(4),	-- Flame of the Scholomance
+				-- #endif
+				i(23083),	-- Captured Flame
+				i(23247),	-- Burning Blossom
+			},
 		}),
-		q(9386,  {	-- A Light in Dark Places
-			["provider"] = { "n", 16788 },	-- Festival Flamekeeper
-			["u"] = REMOVED_FROM_GAME,
+		q(9386, {	-- A Light in Dark Places
+			["qg"] = FESTIVAL_FLAMEKEEPER_ID,
+			-- #if BEFORE TBC
+			["coords"] = FESTIVAL_FLAMEKEEPER_COORDS,
+			["maps"] = appendGroups(FESTIVAL_FLAMEKEEPER_MAPS, {
+				DIRE_MAUL,
+				BLACKROCK_SPIRE,
+				STRATHOLME,
+				SCHOLOMANCE,
+			}),
+			-- #endif
+			["sourceQuest"] = 9319,	-- A Light in Dark Places
+			["timeline"] = { "removed 2.4.0" },
+			["isYearly"] = true,
+			["lvl"] = lvlsquish(50, 1, 1),
+			["groups"] = {
+				-- #if BEFORE TBC
+				objective(1),	-- Flame of Dire Maul
+				objective(2),	-- Flame of Blackrock Spire
+				objective(3),	-- Flame of Stratholme
+				objective(4),	-- Flame of the Scholomance
+				-- #endif
+				i(23247),	-- Burning Blossom
+			},
 		}),
-		q(9365,  {	-- A Thief's Reward (A)
+		q(9365, {	-- A Thief's Reward (A)
+			["qg"] = FESTIVAL_LOREMASTER_ID,
+			["coords"] = FESTIVAL_LOREMASTER_COORDS,
+			["maps"] = FESTIVAL_LOREMASTER_MAPS,
 			["sourceQuests"] = {
 				9324,	-- Stealing Orgrimmar's Flame
 				9325,	-- Stealing Thunder Bluff's Flame
-				9326,	-- Stealing the Undercity's Flame
+				-- #if AFTER TBC
 				11935,	-- Stealing Silvermoon's Flame
+				-- #endif
+				9326,	-- Stealing the Undercity's Flame
 			},
-			["provider"] = { "n", 16817 },	-- Festival Loremaster
-			["isYearly"] = true,
 			["races"] = ALLIANCE_ONLY,
-			["maps"] = {
-				STORMWIND_CITY,
-				IRONFORGE,
-				DARNASSUS,
-				THE_EXODAR,
-			},
-			["g"] = {
-				i(23323),	-- Crown of the Fire Festival
-			},
-		}),
-		q(9339,  {	-- A Thief's Reward (H)
-			["sourceQuests"] = {
-				9330,	-- Stealing Stormwind's Flame
-				9331,	-- Stealing Ironforge's Flame
-				9332,	-- Stealing Darnassus's Flame
-				11933,	-- Stealing the Exodar's Flame
-			},
-			["provider"] = { "n", 16818 },	-- Festival Talespinner
 			["isYearly"] = true,
-			["races"] = HORDE_ONLY,
-			["maps"] = {
-				ORGRIMMAR,
-				THUNDER_BLUFF,
-				UNDERCITY,
-				SILVERMOON_CITY,
-				SHATTRATH_CITY,
-			},
-			["g"] = {
+			["lvl"] = lvlsquish(50, 1, 1),
+			["groups"] = {
 				i(23323),	-- Crown of the Fire Festival
 			},
 		}),
-	--	q(11696),	-- Ahune is Here!
-	--	q(11955),	-- Ahune, the Frost Lord
+		q(9339, {	-- A Thief's Reward (H)
+			["qg"] = FESTIVAL_TALESPINNER_ID,
+			["coords"] = FESTIVAL_TALESPINNER_COORDS,
+			["maps"] = FESTIVAL_TALESPINNER_MAPS,
+			["sourceQuests"] = {
+				9332,	-- Stealing Darnassus's Flame
+				9331,	-- Stealing Ironforge's Flame
+				9330,	-- Stealing Stormwind's Flame
+				-- #if AFTER TBC
+				11933,	-- Stealing the Exodar's Flame
+				-- #endif
+			},
+			["races"] = HORDE_ONLY,
+			["isYearly"] = true,
+			["lvl"] = lvlsquish(50, 1, 1),
+			["groups"] = {
+				i(23323),	-- Crown of the Fire Festival
+			},
+		}),
+		-- q(11696),	-- Ahune is Here!
+		-- q(11955),	-- Ahune, the Frost Lord
 		q(11891, {	-- An Innocent Disguise
 			["sourceQuests"] = { 11886, },	-- Unusual Activity
 			["description"] = "Use your Totemic Beacon while in Zoram Strand to summon the questgiver.  Coordinates are approximate.",
@@ -897,19 +1113,83 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, holiday(235474, {	-- Midsum
 			["maps"] = { 121 },	-- Zul'Drak
 		}),
 	--	HORDE "DESECRATE THIS FIRE!" QUESTS END HERE.
-		q(9388,  {	-- Flickering Flames in Kalimdor
-			["providers"] = {
-				{ "n", 16817 },	-- Festival Loremaster (A)
-				{ "n", 16818 },	-- Festival Talespinner (H)
+		q(9389, {	-- Flickering Flames in Eastern Kingdoms
+			["qgs"] = {
+				FESTIVAL_LOREMASTER_ID,
+				FESTIVAL_TALESPINNER_ID,
 			},
-			["u"] = REMOVED_FROM_GAME,
+			-- #if BEFORE TBC
+			["coords"] = appendGroups(FESTIVAL_TALESPINNER_COORDS, appendGroups(FESTIVAL_LOREMASTER_COORDS, {})),
+			["maps"] = appendGroups(FESTIVAL_TALESPINNER_MAPS, appendGroups(FESTIVAL_LOREMASTER_MAPS, {
+				HILLSBRAD_FOOTHILLS,
+				SILVERPINE_FOREST,
+				WESTFALL,
+				WETLANDS
+			})),
+			["icon"] = "Interface/Icons/Inv_Misc_SummerFest_BrazierGreen",
+			-- #endif
+			["timeline"] = { "removed 2.4.0" },
+			["isYearly"] = true,
+			["lvl"] = 1,
+			-- #if BEFORE TBC
+			["groups"] = {
+				objective(1, {	-- Flame of Hillsbrad
+					["coord"] = { 54.2, 34.9, HILLSBRAD_FOOTHILLS },
+				}),
+				objective(2, {	-- Flame of Silverpine
+					["coord"] = { 54.3, 69.6, SILVERPINE_FOREST },
+				}),
+				objective(3, {	-- Flame of Westfall
+					["coord"] = { 33.2, 80.4, WESTFALL },
+				}),
+				objective(4, {	-- Flame of the Wetlands
+					["coord"] = { 51.1, 17.2, WETLANDS },
+				}),
+				i(23211),	-- Toasted Smorc
+				i(23326),	-- Midsummer Sausage
+				i(23327),	-- Fire-toasted Bun
+				i(23435),	-- Elderberry Pie
+			},
+			-- #endif
 		}),
-		q(9389,  {	-- Flickering Flames in the Eastern Kingdoms
-			["providers"] = {
-				{ "n", 16817 },	-- Festival Loremaster (A)
-				{ "n", 16818 },	-- Festival Talespinner (H)
+		q(9388, {	-- Flickering Flames in Kalimdor
+			["qgs"] = {
+				FESTIVAL_LOREMASTER_ID,
+				FESTIVAL_TALESPINNER_ID,
 			},
-			["u"] = REMOVED_FROM_GAME,
+			-- #if BEFORE TBC
+			["coords"] = appendGroups(FESTIVAL_TALESPINNER_COORDS, appendGroups(FESTIVAL_LOREMASTER_COORDS, {})),
+			["maps"] = appendGroups(FESTIVAL_TALESPINNER_MAPS, appendGroups(FESTIVAL_LOREMASTER_MAPS, {
+				ASHENVALE,
+				THE_BARRENS,
+				DARKSHORE,
+				STONETALON_MOUNTAINS,
+			})),
+			["icon"] = "Interface/Icons/Inv_Misc_SummerFest_BrazierGreen",
+			-- #endif
+			["timeline"] = { "removed 2.4.0" },
+			["isYearly"] = true,
+			["lvl"] = 1,
+			-- #if BEFORE TBC
+			["groups"] = {
+				objective(1, {	-- Flame of Ashenvale
+					["coord"] = { 64.7, 71.7, ASHENVALE },
+				}),
+				objective(2, {	-- Flame of the Barrens
+					["coord"] = { 58.9, 37.4, THE_BARRENS },
+				}),
+				objective(3, {	-- Flame of Darkshore
+					["coord"] = { 41.4, 90.9, DARKSHORE },
+				}),
+				objective(4, {	-- Flame of Stonetalon
+					["coord"] = { 59.6, 70.0, STONETALON_MOUNTAINS },
+				}),
+				i(23211),	-- Toasted Smorc
+				i(23326),	-- Midsummer Sausage
+				i(23327),	-- Fire-toasted Bun
+				i(23435),	-- Elderberry Pie
+			},
+			-- #endif
 		}),
 	--	ALLIANCE "HONOR THE FLAME" QUESTS START HERE.
 		q(11804, {	-- Honor the Flame — Arathi Highlands
@@ -1771,40 +2051,30 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, holiday(235474, {	-- Midsum
 			["maps"] = { 641 },	-- Val'sharah
 		}),
 	--	NEUTRAL "HONOR THE FLAME" QUESTS END HERE.
-		q(11966, {	-- Incense for the Festival Scorchlings
-			["provider"] = { "n", 16818 },	-- Festival Talespinner
-			["coords"] = {
-				{ 47.8, 38.4, ORGRIMMAR },
-				{ 21.4, 27.8, THUNDER_BLUFF },
-				{ 67.4, 8.00, UNDERCITY },
-				{ 70.0, 42.8, SILVERMOON_CITY },
-				{ 62.0, 32.2, SHATTRATH_CITY },
-			},
-			["races"] = HORDE_ONLY,
-			["maps"] = {
-				ORGRIMMAR,
-				THUNDER_BLUFF,
-				UNDERCITY,
-				SILVERMOON_CITY,
-				SHATTRATH_CITY,
-			},
-		}),
-		q(11964, {	-- Incense for the Summer Scorchlings
-			["provider"] = { "n", 16817 },	-- Festival Loremaster
-			["coords"] = {
-				{ 49.6, 72.0, STORMWIND_CITY },
-				{ 64.0, 25.8, IRONFORGE },
-				{ 62.2, 48.6, DARNASSUS },
-				{ 41.4, 25.2, THE_EXODAR },
-				{ 61.2, 32.2, SHATTRATH_CITY },
+		q(11964, {	-- Incense for the Summer Scorchlings (A)
+			["qg"] = FESTIVAL_LOREMASTER_ID,
+			["coords"] = FESTIVAL_LOREMASTER_COORDS,
+			["maps"] = FESTIVAL_LOREMASTER_MAPS,
+			["timeline"] = { "added 2.4.0.7994" },
+			["cost"] = {
+				{ "i", 35725, 1 },	-- Summer Incense (Provided)
 			},
 			["races"] = ALLIANCE_ONLY,
-			["maps"] = {
-				STORMWIND_CITY,
-				IRONFORGE,
-				DARNASSUS,
-				THE_EXODAR,
-				SHATTRATH_CITY,
+			["groups"] = {
+				i(23247),	-- Burning Blossom
+			},
+		}),
+		q(11966, {	-- Incense for the Festival Scorchlings (H)
+			["qg"] = FESTIVAL_TALESPINNER_ID,
+			["coords"] = FESTIVAL_TALESPINNER_COORDS,
+			["maps"] = FESTIVAL_TALESPINNER_MAPS,
+			["timeline"] = { "added 2.4.0.7994" },
+			["cost"] = {
+				{ "i", 35725, 1 },	-- Summer Incense (Provided)
+			},
+			["races"] = HORDE_ONLY,
+			["groups"] = {
+				i(23247),	-- Burning Blossom
 			},
 		}),
 		q(29092, {	-- Inform the Elder (A)
@@ -1895,72 +2165,16 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, holiday(235474, {	-- Midsum
 			},
 		}),
 		q(11882, {	-- Playing with Fire (A)
-			["provider"] = { "n", 25962 },	-- Fire Eater
+			["qg"] = FIRE_EATER_ALLIANCE_ID,
+			["maps"] = FIRE_EATER_HALLIANCE_MAPS,
+			["timeline"] = { "added 2.4.0.7994" },
 			["races"] = ALLIANCE_ONLY,
-			["maps"] = {
-				ARATHI_HIGHLANDS,
-				BADLANDS,
-				BLASTED_LANDS,
-				WESTERN_PLAGUELANDS,
-				THE_HINTERLANDS,
-				DUN_MOROGH,
-				BURNING_STEPPES,
-				ELWYNN_FOREST,
-				DUSKWOOD,
-				LOCH_MODAN,
-				REDRIDGE_MOUNTAINS,
-				NORTHERN_STRANGLETHORN,
-				SWAMP_OF_SORROWS,
-				WESTFALL,
-				WETLANDS,
-				TELDRASSIL,
-				DARKSHORE,
-				ASHENVALE,
-				STONETALON_MOUNTAINS,
-				DESOLACE,
-				DUSTWALLOW_MARSH,
-				TANARIS,
-				WINTERSPRING,
-				AZUREMYST_ISLE,
-				HELLFIRE_PENINSULA,
-				ZANGARMARSH,
-				TEROKKAR_FOREST,
-				NETHERSTORM,
-				SHATTRATH_CITY,
-				114,	-- Borean Tundra
-				115,	-- Dragonblight
-				116,	-- Grizzly Hills
-				117,	-- Howling Fjord
-				119,	-- Sholazar Basin
-				120,	-- The Storm Peaks
-				121,	-- Zul'Drak
-				127,	-- Crystalsong Forest
-				SOUTHERN_BARRENS,
-				210,	-- The Cape of Stranglethorn
-				TWILIGHT_HIGHLANDS,
-				249,	-- Uldum
-			},
 		}),
 		q(11915, {	-- Playing with Fire (H)
-			["provider"] = { "n", 25994 },	-- Fire Eater
+			["qg"] = FIRE_EATER_HORDE_ID,
+			["maps"] = FIRE_EATER_HORDE_MAPS,
+			["timeline"] = { "added 2.4.0.7994" },
 			["races"] = HORDE_ONLY,
-			["maps"] = {
-				DUROTAR,
-				MULGORE,
-				NORTHERN_BARRENS,
-				TIRISFAL_GLADES,
-				ASHENVALE,
-				TANARIS,
-				AZSHARA,
-				UNGORO_CRATER,
-				WINTERSPRING,
-				EVERSONG_WOODS,
-				HELLFIRE_PENINSULA,
-				ZANGARMARSH,
-				117,	-- Howling Fjord
-				119,	-- Sholazar Basin
-				249,	-- Uldum
-			},
 		}),
 		q(11972, {	-- Shards of Ahune
 			["provider"] = { "i", 35723 },	-- Shards of Ahune
@@ -1982,399 +2196,573 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, holiday(235474, {	-- Midsum
 				i(35280),	-- Tabard of Summer Flames
 			},
 		}),
-		q(9332,  {	-- Stealing Darnassus's Flame
-			["isYearly"] = true,
-			["provider"] = { "o", 181334 },	-- Flame of Darnassus
-			--["itemID"] = 23184,	-- Flame of Darnassus
+		q(9332, {	-- Stealing Darnassus's Flame
+			["provider"] = { "i", 23184 },	-- Flame of Darnassus (Provided)
+			-- #if AFTER CATA
 			["coord"] = { 64.1, 46.7, DARNASSUS },
-			["races"] = HORDE_ONLY,
-			["icon"] = "Interface\\Icons\\spell_fire_flameshock",
 			["maps"] = { DARNASSUS },
-		}),
-		q(11933, {	-- Stealing the Exodar's Flame
-			["isYearly"] = true,
-			["provider"] = { "o", 188128 },	-- Flame of the Exodar
-			--["itemID"] = 35569,	-- Flame of the Exodar
-			["coord"] = { 40.8, 26.3, THE_EXODAR },
+			-- #else
+			["coord"] = { 56.6, 92.3, TELDRASSIL },
+			["maps"] = { DARNASSUS, TELDRASSIL },
+			-- #endif
 			["races"] = HORDE_ONLY,
-			["icon"] = "Interface\\Icons\\spell_fire_flameshock",
-			["maps"] = { THE_EXODAR },
-		}),
-		q(9331,  {	-- Stealing Ironforge's Flame
 			["isYearly"] = true,
-			["provider"] = { "o", 181333 },	-- Flame of Ironforge
-			--["itemID"] = 23183,	-- Flame of Ironforge
+			["lvl"] = FLAME_STEAL_LEVEL_REQUIREMENT,
+			["groups"] = FLAME_STEAL_REWARDS,
+		}),
+		q(9331, {	-- Stealing Ironforge's Flame
+			["provider"] = { "i", 23183 },	-- Flame of Ironforge (Provided)
+			-- #if AFTER CATA
 			["coord"] = { 65.2, 24.7, IRONFORGE },
-			["races"] = HORDE_ONLY,
-			["icon"] = "Interface\\Icons\\spell_fire_flameshock",
+			-- #else
+			["coord"] = { 64.6, 24.8, IRONFORGE },
+			-- #endif
 			["maps"] = { IRONFORGE },
-		}),
-		q(9324,  {	-- Stealing Orgrimmar's Flame
-			["isYearly"] = true,
-			["provider"] = { "o", 181336 },	-- Flame of Orgrimmar
-			--["itemID"] = 23179,	-- Flame of Orgrimmar
-			["coord"] = { 46.5, 37.6, ORGRIMMAR },
-			["races"] = ALLIANCE_ONLY,
-			["icon"] = "Interface\\Icons\\spell_fire_flameshock",
-			["maps"] = { ORGRIMMAR },
-		}),
-		q(9330,  {	-- Stealing Stormwind's Flame
-			["isYearly"] = true,
-			["provider"] = { "o", 181332 },	-- Flame of
-			--["itemID"] = 23182,	-- Flame of Stormwind
-			["coord"] = { 49.8, 72.9, STORMWIND_CITY },
 			["races"] = HORDE_ONLY,
-			["icon"] = "Interface\\Icons\\spell_fire_flameshock",
-			["maps"] = { STORMWIND_CITY },
-		}),
-		q(9325,  {	-- Stealing Thunder Bluff's Flame
 			["isYearly"] = true,
-			["provider"] = { "o", 181337 },	-- Flame of
-			--["itemID"] = 23180,	-- Flame of Thunder Bluff
-			["coord"] = { 21.9, 27.3, THUNDER_BLUFF },
-			["races"] = ALLIANCE_ONLY,
-			["icon"] = "Interface\\Icons\\spell_fire_flameshock",
-			["maps"] = { THUNDER_BLUFF },
+			["lvl"] = FLAME_STEAL_LEVEL_REQUIREMENT,
+			["groups"] = FLAME_STEAL_REWARDS,
 		}),
-		q(9326,  {	-- Stealing the Undercity's Flame
-			["isYearly"] = true,
-			["provider"] = { "o", 181335 },	-- Flame of the Undercity
-			--["itemID"] = 23181,	-- Flame of the Undercity
-			["coord"] = { 68.7, 8.50, UNDERCITY },
+		q(9324, {	-- Stealing Orgrimmar's Flame
+			["provider"] = { "i", 23179 },	-- Flame of Orgrimmar (Provided)
+			-- #if AFTER CATA
+			["coord"] = { 46.5, 37.6, ORGRIMMAR },
+			-- #else
+			["coord"] = { 46.9, 38.7, ORGRIMMAR },
+			-- #endif
+			["maps"] = { ORGRIMMAR },
 			["races"] = ALLIANCE_ONLY,
-			["icon"] = "Interface\\Icons\\spell_fire_flameshock",
-			["maps"] = { UNDERCITY },
+			["isYearly"] = true,
+			["lvl"] = FLAME_STEAL_LEVEL_REQUIREMENT,
+			["groups"] = FLAME_STEAL_REWARDS,
 		}),
 		q(11935, {	-- Stealing Silvermoon's Flame
-			["isYearly"] = true,
-			["provider"] = { "o", 188129 },	-- Flame of
-			--["itemID"] = 35568,	-- Flame of Silvermoon
+			["provider"] = { "i", 35568 },	-- Flame of Silvermoon (Provided)
 			["coord"] = { 69.7, 42.7, SILVERMOON_CITY },
-			["races"] = ALLIANCE_ONLY,
-			["icon"] = "Interface\\Icons\\spell_fire_flameshock",
+			["timeline"] = { "added 2.0.1" },
 			["maps"] = { SILVERMOON_CITY },
-		}),
-		q(11917, {	-- Striking Back
-			["sourceQuests"] = { 29092, 12012 },	-- Inform the Elder (A, H)
-			["provider"] = { "n", 26221 },	-- Earthen Ring Elder
-			["isDaily"] = true,
-			["coords"] = {
-				{ 49.4, 72.0, STORMWIND_CITY },
-				{ 47.2, 37.6, ORGRIMMAR },
-				{ 64.8, 27.4, IRONFORGE },
-				{ 21.4, 24.4, THUNDER_BLUFF },
-				{ 62.2, 49.2, DARNASSUS },
-				{ 67.0, 13.0, UNDERCITY },
-				{ 43.2, 25.8, THE_EXODAR },
-				{ 68.8, 42.6, SILVERMOON_CITY },
-				{ 60.4, 30.8, SHATTRATH_CITY },
-			},
-			["maps"] = {
-				STORMWIND_CITY,
-				ORGRIMMAR,
-				IRONFORGE,
-				THUNDER_BLUFF,
-				DARNASSUS,
-				UNDERCITY,
-				THE_EXODAR,
-				SILVERMOON_CITY,
-				SHATTRATH_CITY,
-			},
-		}),
-		q(11947, {	-- Striking Back
-			["sourceQuests"] = { 29092, 12012 },	-- Inform the Elder (A, H)
-			["provider"] = { "n", 26221 },	-- Earthen Ring Elder
-			["isDaily"] = true,
-			["coords"] = {
-				{ 49.4, 72.0, STORMWIND_CITY },
-				{ 47.2, 37.6, ORGRIMMAR },
-				{ 64.8, 27.4, IRONFORGE },
-				{ 21.4, 24.4, THUNDER_BLUFF },
-				{ 62.2, 49.2, DARNASSUS },
-				{ 67.0, 13.0, UNDERCITY },
-				{ 43.2, 25.8, THE_EXODAR },
-				{ 68.8, 42.6, SILVERMOON_CITY },
-				{ 60.4, 30.8, SHATTRATH_CITY },
-			},
-			["maps"] = {
-				STORMWIND_CITY,
-				ORGRIMMAR,
-				IRONFORGE,
-				THUNDER_BLUFF,
-				DARNASSUS,
-				UNDERCITY,
-				THE_EXODAR,
-				SILVERMOON_CITY,
-				SHATTRATH_CITY,
-			},
-		}),
-		q(11948, {	-- Striking Back
-			["sourceQuests"] = { 29092, 12012 },	-- Inform the Elder (A, H)
-			["provider"] = { "n", 26221 },	-- Earthen Ring Elder
-			["isDaily"] = true,
-			["coords"] = {
-				{ 49.4, 72.0, STORMWIND_CITY },
-				{ 47.2, 37.6, ORGRIMMAR },
-				{ 64.8, 27.4, IRONFORGE },
-				{ 21.4, 24.4, THUNDER_BLUFF },
-				{ 62.2, 49.2, DARNASSUS },
-				{ 67.0, 13.0, UNDERCITY },
-				{ 43.2, 25.8, THE_EXODAR },
-				{ 68.8, 42.6, SILVERMOON_CITY },
-				{ 60.4, 30.8, SHATTRATH_CITY },
-			},
-			["maps"] = {
-				STORMWIND_CITY,
-				ORGRIMMAR,
-				IRONFORGE,
-				THUNDER_BLUFF,
-				DARNASSUS,
-				UNDERCITY,
-				THE_EXODAR,
-				SILVERMOON_CITY,
-				SHATTRATH_CITY,
-			},
-		}),
-		q(11952, {	-- Striking Back
-			["sourceQuests"] = { 29092, 12012 },	-- Inform the Elder (A, H)
-			["provider"] = { "n", 26221 },	-- Earthen Ring Elder
-			["isDaily"] = true,
-			["coords"] = {
-				{ 49.4, 72.0, STORMWIND_CITY },
-				{ 47.2, 37.6, ORGRIMMAR },
-				{ 64.8, 27.4, IRONFORGE },
-				{ 21.4, 24.4, THUNDER_BLUFF },
-				{ 62.2, 49.2, DARNASSUS },
-				{ 67.0, 13.0, UNDERCITY },
-				{ 43.2, 25.8, THE_EXODAR },
-				{ 68.8, 42.6, SILVERMOON_CITY },
-				{ 60.4, 30.8, SHATTRATH_CITY },
-			},
-			["maps"] = {
-				STORMWIND_CITY,
-				ORGRIMMAR,
-				IRONFORGE,
-				THUNDER_BLUFF,
-				DARNASSUS,
-				UNDERCITY,
-				THE_EXODAR,
-				SILVERMOON_CITY,
-				SHATTRATH_CITY,
-			},
-		}),
-		q(11953, {	-- Striking Back
-			["sourceQuests"] = { 29092, 12012 },	-- Inform the Elder (A, H)
-			["provider"] = { "n", 26221 },	-- Earthen Ring Elder
-			["isDaily"] = true,
-			["coords"] = {
-				{ 49.4, 72.0, STORMWIND_CITY },
-				{ 47.2, 37.6, ORGRIMMAR },
-				{ 64.8, 27.4, IRONFORGE },
-				{ 21.4, 24.4, THUNDER_BLUFF },
-				{ 62.2, 49.2, DARNASSUS },
-				{ 67.0, 13.0, UNDERCITY },
-				{ 43.2, 25.8, THE_EXODAR },
-				{ 68.8, 42.6, SILVERMOON_CITY },
-				{ 60.4, 30.8, SHATTRATH_CITY },
-			},
-			["maps"] = {
-				STORMWIND_CITY,
-				ORGRIMMAR,
-				IRONFORGE,
-				THUNDER_BLUFF,
-				DARNASSUS,
-				UNDERCITY,
-				THE_EXODAR,
-				SILVERMOON_CITY,
-				SHATTRATH_CITY,
-			},
-		}),
-		q(11954, {	-- Striking Back
-			["sourceQuests"] = { 29092, 12012 },	-- Inform the Elder (A, H)
-			["provider"] = { "n", 26221 },	-- Earthen Ring Elder
-			["isDaily"] = true,
-			["coords"] = {
-				{ 49.4, 72.0, STORMWIND_CITY },
-				{ 47.2, 37.6, ORGRIMMAR },
-				{ 64.8, 27.4, IRONFORGE },
-				{ 21.4, 24.4, THUNDER_BLUFF },
-				{ 62.2, 49.2, DARNASSUS },
-				{ 67.0, 13.0, UNDERCITY },
-				{ 43.2, 25.8, THE_EXODAR },
-				{ 68.8, 42.6, SILVERMOON_CITY },
-				{ 60.4, 30.8, SHATTRATH_CITY },
-			},
-			["maps"] = {
-				STORMWIND_CITY,
-				ORGRIMMAR,
-				IRONFORGE,
-				THUNDER_BLUFF,
-				DARNASSUS,
-				UNDERCITY,
-				THE_EXODAR,
-				SILVERMOON_CITY,
-				SHATTRATH_CITY,
-			},
-		}),
-	--	q(11691),	-- Summon Ahune
-		q(9367,  {	-- The Festival of Fire (A)
-			["provider"] = { "n", 16817 },	-- Festival Loremaster
 			["races"] = ALLIANCE_ONLY,
-			["u"] = REMOVED_FROM_GAME,
+			["isYearly"] = true,
+			["lvl"] = FLAME_STEAL_LEVEL_REQUIREMENT,
+			["groups"] = FLAME_STEAL_REWARDS,
 		}),
-		q(9368,  {	-- The Festival of Fire (H)
-			["provider"] = { "n", 16818 },	-- Festival Talespinner
-			["races"] = ALLIANCE_ONLY,
-			["u"] = REMOVED_FROM_GAME,
-		}),
-		q(11970, {	-- The Master of Summer Lore
-			["providers"] = {
-				{ "n", 18927 },	-- Human Commoner
-				{ "n", 19148 },	-- Dwarf Commoner
-				{ "n", 19171 },	-- Draenei Commoner
-				{ "n", 19172 },	-- Gnome Commoner
-				{ "n", 19173 },	-- Night Elf Commoner
-				{ "n", 20102 },	-- Goblin Commoner
-			},
-			["races"] = ALLIANCE_ONLY,
-			["maps"] = {
-				NORTHERN_BARRENS,
-				TANARIS,
-				WINTERSPRING,
-				STORMWIND_CITY,
-				IRONFORGE,
-				DARNASSUS,
-				THE_EXODAR,
-				NETHERSTORM,
-				120,	-- The Storm Peaks
-				210,	-- The Cape of Stranglethorn
-				504,	-- Isle of Thunder
-			},
-		}),
-		q(11971, {	-- The Spinner of Summer Tales
-			["providers"] = {
-				{ "n", 19169 },	-- Blood Elf Commoner
-				{ "n", 19175 },	-- Orc Commoner
-				{ "n", 19176 },	-- Tauren Commoner
-				{ "n", 19177 },	-- Troll Commoner
-				{ "n", 19178 },	-- Forsaken Commoner
-				{ "n", 20102 },	-- Goblin Commoner
-			},
+		q(9330, {	-- Stealing Stormwind's Flame
+			["provider"] = { "i", 23182 },	-- Flame of Stormwind (Provided)
+			-- #if AFTER CATA
+			["coord"] = { 49.8, 72.9, STORMWIND_CITY },
+			-- #else
+			["coord"] = { 38.9, 62.3, STORMWIND_CITY },
+			-- #endif
+			["maps"] = { STORMWIND_CITY },
 			["races"] = HORDE_ONLY,
+			["isYearly"] = true,
+			["lvl"] = FLAME_STEAL_LEVEL_REQUIREMENT,
+			["groups"] = FLAME_STEAL_REWARDS,
+		}),
+		q(11933, {	-- Stealing the Exodar's Flame
+			["provider"] = { "i", 35569 },	-- Flame of the Exodar (Provided)
+			["coord"] = { 40.8, 26.3, THE_EXODAR },
+			["timeline"] = { "added 2.0.1" },
+			["maps"] = { THE_EXODAR },
+			["races"] = HORDE_ONLY,
+			["isYearly"] = true,
+			["lvl"] = FLAME_STEAL_LEVEL_REQUIREMENT,
+			["groups"] = FLAME_STEAL_REWARDS,
+		}),
+		q(9326, {	-- Stealing the Undercity's Flame
+			["provider"] = { "i", 23181 },	-- Flame of the Undercity (Provided)
+			-- #if AFTER CATA
+			["coord"] = { 68.7, 8.50, UNDERCITY },
+			-- #else
+			["coord"] = { 62.6, 66.9, UNDERCITY },
+			-- #endif
+			["maps"] = { UNDERCITY },
+			["races"] = ALLIANCE_ONLY,
+			["isYearly"] = true,
+			["lvl"] = FLAME_STEAL_LEVEL_REQUIREMENT,
+			["groups"] = FLAME_STEAL_REWARDS,
+		}),
+		q(9325, {	-- Stealing Thunder Bluff's Flame
+			["provider"] = { "i", 23180 },	-- Flame of Thunder Bluff (Provided)
+			-- #if AFTER CATA
+			["coord"] = { 21.9, 27.3, THUNDER_BLUFF },
+			-- #else
+			["coord"] = { 21.1, 25.6, THUNDER_BLUFF },
+			-- #endif
+			["maps"] = { THUNDER_BLUFF },
+			["races"] = ALLIANCE_ONLY,
+			["isYearly"] = true,
+			["lvl"] = FLAME_STEAL_LEVEL_REQUIREMENT,
+			["groups"] = FLAME_STEAL_REWARDS,
+		}),
+		q(11917, {	-- Striking Back [Level 22]
+			["qg"] = EARTHEN_RING_ELDER_ID,
+			-- #if AFTER CATA
+			["sourceQuests"] = { 29092, 12012 },	-- Inform the Elder (A, H)
+			-- #else
+			["sourceQuest"] = 12012,	-- Inform the Elder (Both)
+			-- #endif
+			["coords"] = EARTHEN_RING_ELDER_COORDS,
+			["timeline"] = { "added 2.4.0.7994" },
+			["maps"] = appendGroups(EARTHEN_RING_ELDER_MAPS, {
+				ASHENVALE,
+			}),
+			["isDaily"] = true,
+			["lvl"] = lvlsquish(16, 1, 16),
+			["groups"] = {
+				objective(1, {	-- Frostwave Lieutenant slain
+					["provider"] = { "n", 26116 },	-- Frostwave Lieutenant
+					["coord"] = { 9.6, 12.2, ASHENVALE },
+				}),
+				i(23247),	-- Burning Blossom
+			},
+		}),
+		q(11947, {	-- Striking Back [Level 32]
+			["qg"] = EARTHEN_RING_ELDER_ID,
+			-- #if AFTER CATA
+			["sourceQuests"] = { 29092, 12012 },	-- Inform the Elder (A, H)
+			-- #else
+			["sourceQuest"] = 12012,	-- Inform the Elder (Both)
+			-- #endif
+			["coords"] = EARTHEN_RING_ELDER_COORDS,
+			["timeline"] = { "added 2.4.0.7994" },
+			["maps"] = appendGroups(EARTHEN_RING_ELDER_MAPS, {
+				DESOLACE,
+			}),
+			["isDaily"] = true,
+			["lvl"] = lvlsquish(26, 1, 26),
+			["groups"] = {
+				objective(1, {	-- Hailstone Lieutenant slain
+					["provider"] = { "n", 26178 },	-- Hailstone Lieutenant
+					["coord"] = { 39.2, 30.6, DESOLACE },
+				}),
+				i(23247),	-- Burning Blossom
+			},
+		}),
+		q(11948, {	-- Striking Back [Level 43]
+			["qg"] = EARTHEN_RING_ELDER_ID,
+			-- #if AFTER CATA
+			["sourceQuests"] = { 29092, 12012 },	-- Inform the Elder (A, H)
+			-- #else
+			["sourceQuest"] = 12012,	-- Inform the Elder (Both)
+			-- #endif
+			["coords"] = EARTHEN_RING_ELDER_COORDS,
+			["timeline"] = { "added 2.4.0.7994" },
+			["maps"] = appendGroups(EARTHEN_RING_ELDER_MAPS, {
+				-- #if BEFORE CATA
+				STRANGLETHORN_VALE,
+				-- #else
+				NORTHERN_STRANGLETHORN,
+				-- #endif
+			}),
+			["isDaily"] = true,
+			["lvl"] = lvlsquish(39, 1, 39),
+			["groups"] = {
+				objective(1, {	-- Chillwind Lieutenant slain
+					["provider"] = { "n", 26204 },	-- Chillwind Lieutenant
+					-- #if BEFORE CATA
+					["coord"] = { 21, 22, STRANGLETHORN_VALE },
+					-- #else
+					["coord"] = { 21.6, 41.4, NORTHERN_STRANGLETHORN },
+					-- #endif
+				}),
+				i(23247),	-- Burning Blossom
+			},
+		}),
+		q(11952, {	-- Striking Back [Level 51]
+			["qg"] = EARTHEN_RING_ELDER_ID,
+			-- #if AFTER CATA
+			["sourceQuests"] = { 29092, 12012 },	-- Inform the Elder (A, H)
+			-- #else
+			["sourceQuest"] = 12012,	-- Inform the Elder (Both)
+			-- #endif
+			["coords"] = EARTHEN_RING_ELDER_COORDS,
+			["timeline"] = { "added 2.4.0.7994" },
+			["maps"] = appendGroups(EARTHEN_RING_ELDER_MAPS, {
+				BURNING_STEPPES,
+			}),
+			["isDaily"] = true,
+			["lvl"] = lvlsquish(45, 1, 45),
+			["groups"] = {
+				objective(1, {	-- Frigid Lieutenant slain
+					["provider"] = { "n", 26214 },	-- Frigid Lieutenant
+					["coord"] = { 15.6, 33.2, BURNING_STEPPES },
+				}),
+				i(23247),	-- Burning Blossom
+			},
+		}),
+		q(11953, {	-- Striking Back [Level 60]
+			["qg"] = EARTHEN_RING_ELDER_ID,
+			-- #if AFTER CATA
+			["sourceQuests"] = { 29092, 12012 },	-- Inform the Elder (A, H)
+			-- #else
+			["sourceQuest"] = 12012,	-- Inform the Elder (Both)
+			-- #endif
+			["coords"] = EARTHEN_RING_ELDER_COORDS,
+			["timeline"] = { "added 2.4.0.7994" },
+			["maps"] = appendGroups(EARTHEN_RING_ELDER_MAPS, {
+				SILITHUS,
+			}),
+			["isDaily"] = true,
+			["lvl"] = lvlsquish(54, 1, 54),
+			["groups"] = {
+				objective(1, {	-- Glacial Lieutenant slain
+					["provider"] = { "n", 26215 },	-- Glacial Lieutenant
+					["coord"] = { 69.0, 20.6, SILITHUS },
+				}),
+				i(23247),	-- Burning Blossom
+			},
+		}),
+		q(11954, {	-- Striking Back [Level 67]
+			["qg"] = EARTHEN_RING_ELDER_ID,
+			-- #if AFTER CATA
+			["sourceQuests"] = { 29092, 12012 },	-- Inform the Elder (A, H)
+			-- #else
+			["sourceQuest"] = 12012,	-- Inform the Elder (Both)
+			-- #endif
+			["coords"] = EARTHEN_RING_ELDER_COORDS,
+			["timeline"] = { "added 2.4.0.7994" },
+			["maps"] = appendGroups(EARTHEN_RING_ELDER_MAPS, {
+				HELLFIRE_PENINSULA,
+			}),
+			["isDaily"] = true,
+			["lvl"] = lvlsquish(61, 1, 61),
+			["groups"] = {
+				objective(1, {	-- Glacial Templar slain
+					["provider"] = { "n", 26216 },	-- Glacial Templar
+					["coords"] = {
+						{ 84.2, 47.0, HELLFIRE_PENINSULA },
+						{ 84.2, 53.4, HELLFIRE_PENINSULA },
+					},
+				}),
+				i(23247),	-- Burning Blossom
+			},
+		}),
+		-- q(11691),	-- Summon Ahune
+		q(9367, {	-- The Festival of Fire (A)
+			["qg"] = FESTIVAL_LOREMASTER_ID,
+			-- #if BEFORE TBC
+			["coords"] = FESTIVAL_LOREMASTER_COORDS,
+			["maps"] = FESTIVAL_LOREMASTER_MAPS,
+			-- #endif
+			["timeline"] = { "removed 2.4.0" },
+			["races"] = ALLIANCE_ONLY,
+			["isYearly"] = true,
+			["lvl"] = 1,
+			-- #if BEFORE TBC
+			["icon"] = "Interface/Icons/Inv_Misc_SummerFest_BrazierGreen",
+			["groups"] = {
+				objective(1, {	-- Flame of Stormwind
+					["coord"] = { 38.9, 62.3, STORMWIND_CITY },
+				}),
+				objective(2, {	-- Flame of Ironforge
+					["coord"] = { 64.6, 24.8, IRONFORGE },
+				}),
+				objective(3, {	-- Flame of Darnassus
+					["coord"] = { 56.6, 92.3, TELDRASSIL },
+				}),
+				i(23246),	-- Fiery Festival Brew
+				i(23247),	-- Burning Blossom
+			},
+			-- #endif
+		}),
+		q(9368, {	-- The Festival of Fire (H)
+			["qg"] = FESTIVAL_TALESPINNER_ID,
+			-- #if BEFORE TBC
+			["coords"] = FESTIVAL_TALESPINNER_COORDS,
+			["maps"] = FESTIVAL_TALESPINNER_MAPS,
+			-- #endif
+			["timeline"] = { "removed 2.4.0" },
+			["races"] = ALLIANCE_ONLY,
+			["isYearly"] = true,
+			["lvl"] = 1,
+			-- #if BEFORE TBC
+			["icon"] = "Interface/Icons/Inv_Misc_SummerFest_BrazierGreen",
+			["groups"] = {
+				objective(1, {	-- Flame of Orgrimmar
+					["coord"] = { 46.9, 38.7, ORGRIMMAR },
+				}),
+				objective(2, {	-- Flame of Thunder Bluff
+					["coord"] = { 21.1, 25.6, THUNDER_BLUFF },
+				}),
+				objective(3, {	-- Flame of the Undercity
+					["coord"] = { 62.6, 66.9, UNDERCITY },
+				}),
+				i(23246),	-- Fiery Festival Brew
+				i(23247),	-- Burning Blossom
+			},
+			-- #endif
+		}),
+		q(11970, {	-- The Master of Summer Lore (A)
+			["qgs"] = {
+				18927,	-- Human Commoner
+				19148,	-- Dwarf Commoner
+				19171,	-- Draenei Commoner
+				19172,	-- Gnome Commoner
+				19173,	-- Night Elf Commoner
+				20102,	-- Goblin Commoner
+			},
 			["maps"] = {
-				NORTHERN_BARRENS,
+				STORMWIND_CITY,
+				IRONFORGE,
+				DARNASSUS,
+				THE_EXODAR,
 				TANARIS,
 				WINTERSPRING,
+				NETHERSTORM,
+				-- #if BEFORE CATA
+				THE_BARRENS,
+				STRANGLETHORN_VALE,
+				-- #else
+				NORTHERN_BARRENS,
+				210,	-- The Cape of Stranglethorn
+				-- #endif
+				-- #if AFTER WRATH
+				120,	-- The Storm Peaks
+				125,	-- Dalaran (Northrend)
+				-- #endif
+				-- #if AFTER MOP
+				504,	-- Isle of Thunder
+				-- #endif
+			},
+			["timeline"] = { "added 2.4.0.7994" },
+			["races"] = ALLIANCE_ONLY,
+			["lvl"] = 1,
+			["groups"] = {
+				i(23247),	-- Burning Blossom
+			},
+		}),
+		q(11971, {	-- The Spinner of Summer Tales (H)
+			["qgs"] = {
+				19169,	-- Blood Elf Commoner
+				19175,	-- Orc Commoner
+				19176,	-- Tauren Commoner
+				19177,	-- Troll Commoner
+				19178,	-- Forsaken Commoner
+				20102,	-- Goblin Commoner
+			},
+			["maps"] = {
 				ORGRIMMAR,
 				THUNDER_BLUFF,
 				UNDERCITY,
 				EVERSONG_WOODS,
-				NETHERSTORM,
 				SILVERMOON_CITY,
 				SHATTRATH_CITY,
+				TANARIS,
+				WINTERSPRING,
+				NETHERSTORM,
+				-- #if BEFORE CATA
+				THE_BARRENS,
+				STRANGLETHORN_VALE,
+				-- #else
+				NORTHERN_BARRENS,
+				210,	-- The Cape of Stranglethorn
+				-- #endif
+				-- #if AFTER WRATH
 				120,	-- The Storm Peaks
 				125,	-- Dalaran (Northrend)
-				210,	-- The Cape of Stranglethorn
+				-- #endif
+				-- #if AFTER MOP
+				504,	-- Isle of Thunder
+				-- #endif
+			},
+			["timeline"] = { "added 2.4.0.7994" },
+			["races"] = HORDE_ONLY,
+			["lvl"] = 1,
+			["groups"] = {
+				i(23247),	-- Burning Blossom
 			},
 		}),
 		q(11657, {	-- Torch Catching (A)
-			["sourceQuests"] = { 11731 },	-- Torch Tossing
-			["provider"] = { "n", 25975 },	-- Master Fire Eater
+			["qg"] = 25975,	-- Master Fire Eater
+			["sourceQuest"] = 11731,	-- Torch Tossing (A)
 			["coords"] = {
 				{ 49.8, 72.0, STORMWIND_CITY },
 				{ 65.2, 25.4, IRONFORGE },
 				{ 63.0, 47.6, DARNASSUS },
 				{ 41.2, 24.4, THE_EXODAR },
 			},
-			["races"] = ALLIANCE_ONLY,
+			["timeline"] = { "added 2.4.0.7994" },
 			["maps"] = {
 				STORMWIND_CITY,
 				IRONFORGE,
 				DARNASSUS,
 				THE_EXODAR,
+			},
+			["races"] = ALLIANCE_ONLY,
+			["groups"] = {
+				objective(1, {	-- 	Catch 4 torches in a row.
+					["provider"] = { "i", 34599 },	-- Juggling Torch
+					["cost"] = {
+						{ "i", 34833, 1 },	-- Unlit Torches
+					},
+				}),
+				i(23247),	-- Burning Blossom
 			},
 		}),
 		q(11923, {	-- Torch Catching (H)
-			["sourceQuests"] = { 11922 },	-- Torch Tossing
-			["provider"] = { "n", 26113 },	-- Master Flame Eater
+			["qg"] = 26113,	-- Master Flame Eater
+			["sourceQuest"] = 11922,	-- Torch Tossing (H)
 			["coords"] = {
 				{ 46.6, 37.2, ORGRIMMAR },
 				{ 21.2, 26.2, THUNDER_BLUFF },
 				{ 68.6, 8.00, UNDERCITY },
 				{ 69.6, 42.4, SILVERMOON_CITY },
 			},
-			["races"] = HORDE_ONLY,
+			["timeline"] = { "added 2.4.0.7994" },
 			["maps"] = {
 				ORGRIMMAR,
 				THUNDER_BLUFF,
 				UNDERCITY,
 				SILVERMOON_CITY,
 			},
+			["races"] = HORDE_ONLY,
+			["groups"] = {
+				objective(1, {	-- 	Catch 4 torches in a row.
+					["provider"] = { "i", 34599 },	-- Juggling Torch
+					["cost"] = {
+						{ "i", 34833, 1 },	-- Unlit Torches
+					},
+				}),
+				i(23247),	-- Burning Blossom
+			},
 		}),
 		q(11731, {	-- Torch Tossing (A)
-			["provider"] = { "n", 25975 },	-- Master Fire Eater
+			["qg"] = 25975,	-- Master Fire Eater
 			["coords"] = {
 				{ 49.8, 72.0, STORMWIND_CITY },
 				{ 65.2, 25.4, IRONFORGE },
 				{ 63.0, 47.6, DARNASSUS },
 				{ 41.2, 24.4, THE_EXODAR },
 			},
-			["races"] = ALLIANCE_ONLY,
+			["timeline"] = { "added 2.4.0.7994" },
 			["maps"] = {
 				STORMWIND_CITY,
 				IRONFORGE,
 				DARNASSUS,
 				THE_EXODAR,
 			},
+			["races"] = ALLIANCE_ONLY,
+			["groups"] = {
+				objective(1, {	-- Hit 8 braziers.
+					["provider"] = { "i", 34862 },	-- Practice Torches
+				}),
+				i(23247),	-- Burning Blossom
+			},
 		}),
 		q(11922, {	-- Torch Tossing (H)
-			["provider"] = { "n", 26113 },	-- Master Flame Eater
+			["qg"] = 26113,	-- Master Flame Eater
 			["coords"] = {
 				{ 46.6, 37.2, ORGRIMMAR },
 				{ 21.2, 26.2, THUNDER_BLUFF },
 				{ 68.6, 8.00, UNDERCITY },
 				{ 69.6, 42.4, SILVERMOON_CITY },
 			},
-			["races"] = HORDE_ONLY,
+			["timeline"] = { "added 2.4.0.7994" },
 			["maps"] = {
 				ORGRIMMAR,
 				THUNDER_BLUFF,
 				UNDERCITY,
 				SILVERMOON_CITY,
+			},
+			["races"] = HORDE_ONLY,
+			["groups"] = {
+				objective(1, {	-- Hit 8 braziers.
+					["provider"] = { "i", 34862 },	-- Practice Torches
+				}),
+				i(23247),	-- Burning Blossom
 			},
 		}),
 		q(11886, {	-- Unusual Activity
-			["provider"] = { "n", 26221 },	-- Earthen Ring Elder
-			["coords"] = {
-				{ 49.4, 72.0, STORMWIND_CITY },
-				{ 47.2, 37.6, ORGRIMMAR },
-				{ 64.8, 27.4, IRONFORGE },
-				{ 21.4, 24.4, THUNDER_BLUFF },
-				{ 62.2, 49.2, DARNASSUS },
-				{ 67.0, 13.0, UNDERCITY },
-				{ 43.2, 25.8, THE_EXODAR },
-				{ 68.8, 42.6, SILVERMOON_CITY },
-				{ 60.4, 30.8, SHATTRATH_CITY },
+			["qg"] = EARTHEN_RING_ELDER_ID,
+			["coords"] = EARTHEN_RING_ELDER_COORDS,
+			["timeline"] = { "added 2.4.0.7994" },
+			["maps"] = appendGroups(EARTHEN_RING_ELDER_MAPS, {
+				ASHENVALE,
+			}),
+			["cost"] = {
+				{ "i", 35828, 1 },	-- Totemic Beacon
 			},
-			["maps"] = {
-				STORMWIND_CITY,
-				ORGRIMMAR,
-				IRONFORGE,
-				THUNDER_BLUFF,
-				DARNASSUS,
-				UNDERCITY,
-				THE_EXODAR,
-				SILVERMOON_CITY,
-				SHATTRATH_CITY,
+			["lvl"] = lvlsquish(16, 1, 1),
+			["groups"] = {
+				objective(1, {	-- 0/1 Twilight Correspondence
+					["provider"] = { "i", 35277 },	-- Twilight Correspondence
+					["coord"] = { 16.0, 20.8, ASHENVALE },
+					["crs"] = {
+						25863,	-- Twilight Firesworn <Twilight's Hammer>
+						25866,	-- Twilight Flameguard <Twilight's Hammer>
+						25924,	-- Twilight Speaker Viktor <Twilight's Hammer>
+					},
+				}),
 			},
 		}),
-		q(9322,  {	-- Wild Fires in Kalimdor
-			["provider"] = { "n", 16788 },	-- Festival Flamekeeper
-			["u"] = REMOVED_FROM_GAME,
+		q(9322, {	-- Wild Fires in Kalimdor
+			["qg"] = FESTIVAL_FLAMEKEEPER_ID,
+			-- #if BEFORE TBC
+			["coords"] = FESTIVAL_FLAMEKEEPER_COORDS,
+			["maps"] = appendGroups(FESTIVAL_FLAMEKEEPER_MAPS, {
+				AZSHARA,
+				SILITHUS,
+				UNGORO_CRATER,
+				WINTERSPRING,
+			}),
+			-- #endif
+			["timeline"] = { "removed 2.4.0" },
+			["isYearly"] = true,
+			["lvl"] = 1,
+			-- #if BEFORE TBC
+			["icon"] = "Interface/Icons/Inv_Misc_SummerFest_BrazierGreen",
+			["groups"] = {
+				objective(1, {	-- Flame of Azshara
+					["coord"] = { 41.5, 43.3, AZSHARA },
+				}),
+				objective(2, {	-- Flame of Silithus
+					["coord"] = { 81.2, 18.4, SILITHUS },
+				}),
+				objective(3, {	-- Flame of Un'Goro
+					["coord"] = { 70.1, 76.2, UNGORO_CRATER },
+				}),
+				objective(4, {	-- Flame of Winterspring
+					["coord"] = { 30.6, 43.2, WINTERSPRING },
+				}),
+				i(23379),	-- Cinder Bracers
+				i(23247),	-- Burning Blossom
+			},
+			-- #endif
 		}),
-		q(9323,  {	-- Wild Fires in the Eastern Kingdoms
-			["provider"] = { "n", 16788 },	-- Festival Flamekeeper
-			["u"] = REMOVED_FROM_GAME,
+		q(9323, {	-- Wild Fires in the Eastern Kingdoms
+			["qg"] = FESTIVAL_FLAMEKEEPER_ID,
+			-- #if BEFORE TBC
+			["coords"] = FESTIVAL_FLAMEKEEPER_COORDS,
+			["maps"] = appendGroups(FESTIVAL_FLAMEKEEPER_MAPS, {
+				BLASTED_LANDS,
+				EASTERN_PLAGUELANDS,
+				THE_HINTERLANDS,
+				SEARING_GORGE,
+			}),
+			-- #endif
+			["timeline"] = { "removed 2.4.0" },
+			["isYearly"] = true,
+			["lvl"] = 1,
+			-- #if BEFORE TBC
+			["icon"] = "Interface/Icons/Inv_Misc_SummerFest_BrazierGreen",
+			["groups"] = {
+				objective(1, {	-- Flame of the Blasted Lands
+					["coord"] = { 54.4, 31.8, BLASTED_LANDS },
+				}),
+				objective(2, {	-- Flame of the Plaguelands
+					["coord"] = { 57.6, 73.2, EASTERN_PLAGUELANDS },
+				}),
+				objective(3, {	-- Flame of the Hinterlands
+					["coord"] = { 62.2, 53.5, THE_HINTERLANDS },
+				}),
+				objective(4, {	-- Flame of Searing Gorge
+					["coord"] = { 33.0, 73.5, SEARING_GORGE },
+				}),
+				i(23324),	-- Mantle of the Fire Festival
+				i(23247),	-- Burning Blossom
+			},
+			-- #endif
 		}),
 	}),
 }))};
