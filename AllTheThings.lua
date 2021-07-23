@@ -2008,7 +2008,7 @@ local function GetKey(t)
 	for key,value in pairs(t) do
 		print(key, value);
 	end
-	]]--
+	--]]
 end
 local function CreateHash(t)
 	local key = t.key or GetKey(t);
@@ -4102,47 +4102,72 @@ app.BuildCost = function(group)
 		else tinsert(group.g, 1, costGroup); end
 	end
 end
--- Builds a 'Source' group from the sourceParent or parent of the group and lists it under the group itself for
+-- Builds a 'Source' group from the parent of the group (or other listings of this group) and lists it under the group itself for
 -- visibility in popouts
 app.BuildSourceParent = function(group)
-	if not group.sourceParent and not group.parent then return; end
 	-- only show sources for Things and not 'headers'
-	if group.key == "headerID" then return; end
-	local parent = group.sourceParent or group.parent;
-	-- only show certain types of parents as sources.. typically 'Game World Things'
-	local parentKey = parent.key;
-	if parentKey
-		and (parentKey == "npcID"
-			or parentKey == "creatureID"
-			or parentKey == "itemID"
-			or parentKey == "s"
-			or parentKey == "questID"
-			or parentKey == "objectID"
-			or parentKey == "encounterID")
-			-- TODO: maybe handle mapID in a different way as a fallback for things nested under headers within a zone....?
-		and parent[parentKey] then
-		local sourceGroup = {
-			["text"] = L["SOURCES"],
-			["description"] = L["SOURCES_DESC"],
-			["icon"] = "Interface\\Icons\\inv_misc_spyglass_02",
-			["OnUpdate"] = app.AlwaysShowUpdate,
-			["g"] = {},
-		};
-		local sources = app.SearchForLink(parentKey .. ":" .. parent[parentKey]);
-		if sources then
-			local clonedSource;
-			for _,source in pairs(sources) do
-				-- make sure the group being included is of the same type as the direct parent of the group
-				if source.key == parentKey then
-					clonedSource = CloneData(source);
-					clonedSource.g = nil;
-					clonedSource.collectible = false;
-					clonedSource.OnUpdate = app.AlwaysShowUpdate;
-					MergeObject(sourceGroup.g, clonedSource);
+	if not group or group.key == "headerID" then return; end
+
+	-- pull all listings of this 'Thing'
+	local things = app.SearchForLink(group.key .. ":" .. group[group.key]);
+	if things then
+		-- print("Found things",#things)
+		local parents;
+		-- collect all possible parent groups for all instances of this Thing
+		for _,thing in pairs(things) do
+			local parent = thing.parent;
+			if parent then
+				-- print("parent",parent.text,parent.key)
+				-- only show certain types of parents as sources.. typically 'Game World Things'
+				local parentKey = parent.key;
+				if parentKey
+					and (parentKey == "npcID"
+						or parentKey == "creatureID"
+						or parentKey == "itemID"
+						or parentKey == "s"
+						or (parentKey == "questID" and group.key ~= "questID")	-- don't show a quest as a source for a quest...
+						or parentKey == "objectID"
+						or parentKey == "encounterID"
+						or parentKey == "achID"
+						or parentKey == "achievementID")
+						-- TODO: maybe handle mapID in a different way as a fallback for things nested under headers within a zone....?
+					and parent[parentKey] then
+					if parents then tinsert(parents, parent);
+					else parents = { parent }; end
 				end
 			end
-			if not group.g then group.g = { sourceGroup };
-			else tinsert(group.g, 1, sourceGroup); end
+		end
+		-- if there are valid parent groups for sources, merge them into a 'Source(s)' group
+		if parents then
+			-- print("Found parents",#parents)
+			local sourceGroup = {
+				["text"] = L["SOURCES"],
+				["description"] = L["SOURCES_DESC"],
+				["icon"] = "Interface\\Icons\\inv_misc_spyglass_02",
+				["OnUpdate"] = app.AlwaysShowUpdate,
+				["g"] = {},
+			};
+			local parentKey;
+			for _,parent in ipairs(parents) do
+				parentKey = parent.key;
+				local sources = app.SearchForLink(parentKey .. ":" .. parent[parentKey]);
+				if sources then
+					local clonedSource;
+					for _,source in pairs(sources) do
+						-- make sure the group being included is of the same type as the direct parent of the group
+						if source.key == parentKey then
+							clonedSource = CloneData(source);
+							clonedSource.g = nil;
+							clonedSource.collectible = false;
+							clonedSource.OnUpdate = app.AlwaysShowUpdate;
+							-- print("Merged Source",clonedSource.text)
+							MergeObject(sourceGroup.g, clonedSource);
+						end
+					end
+				end
+			end
+			if group.g then tinsert(group.g, 1, sourceGroup);
+			else group.g = { sourceGroup }; end
 		end
 	end
 end
@@ -12499,7 +12524,6 @@ function app:CreateMiniListForGroup(group)
 		app.BuildCost(group);
 
 		popout = app:GetWindow(suffix);
-		-- popout.shouldFullRefresh = true;
 		-- custom Update method for the popout so we don't have to force refresh
 		popout.Update = function(self, force, got)
 			self:BaseUpdate(force or got, got)
@@ -12515,15 +12539,6 @@ function app:CreateMiniListForGroup(group)
 		-- end
 		-- Create groups showing Appearance information
 		if group.s then
-			-- popout.data = group;
-			-- popout.data.collectible = true;
-			-- popout.data.visible = true;
-			-- popout.data.progress = 0;
-			-- popout.data.total = 0;
-			-- popout.data.expanded = nil;
-			-- if not popout.data.g then
-			-- 	popout.data.g = {};
-			-- end
 
 			-- Attempt to get information about the source ID.
 			local sourceInfo = C_TransmogCollection_GetSourceInfo(group.s);
@@ -12639,20 +12654,6 @@ function app:CreateMiniListForGroup(group)
 					else tinsert(group.g, app.CreateGearSet(setID, { ["OnUpdate"] = app.AlwaysShowUpdate, ["g"] = g })) end
 				end
 			end
-			-- local oldUpdate = popout.Update;
-			-- popout.Update = function(self, ...)
-			-- 	-- Turn off all filters momentarily.
-			-- 	local GroupFilter = app.GroupFilter;
-			-- 	local GroupVisibilityFilter = app.GroupVisibilityFilter;
-			-- 	local CollectedItemVisibilityFilter = app.CollectedItemVisibilityFilter;
-			-- 	app.GroupFilter = app.NoFilter;
-			-- 	app.GroupVisibilityFilter = app.NoFilter;
-			-- 	app.CollectedItemVisibilityFilter = app.NoFilter;
-			-- 	oldUpdate(self, ...);
-			-- 	app.GroupFilter = GroupFilter;
-			-- 	app.GroupVisibilityFilter = GroupVisibilityFilter;
-			-- 	app.CollectedItemVisibilityFilter = CollectedItemVisibilityFilter;
-			-- end;
 		end
 		if showing and ((group.key == "questID" and group.questID) or group.sourceQuests) then
 			-- if the group was created from a popout and thus contains its own pre-req quests already, then clean out direct quest entries from the group
