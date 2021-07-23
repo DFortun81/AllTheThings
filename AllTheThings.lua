@@ -6282,7 +6282,7 @@ local fields = {
 		if t.info != {} then	-- will show nil/empty resualt if not obtain
 			return 1;
 		end
-		--[[
+
 		if (app.CurrentCharacter.ConduitRanks[t.conduitID] or 0) >= t.rank then
 			return 1;
 		end
@@ -6303,7 +6303,6 @@ local fields = {
 		if app.AccountWideConduits and accountRank >= t.rank then
 			return 2;
 		end
-		]]
 	end,
 	["text"] = function(t)
 		return t.link;
