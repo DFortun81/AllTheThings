@@ -79,6 +79,7 @@ _.Zones =
 								i(185115),	-- Redeemed Inquisitor's Drape
 							},
 						}),
+						i(186017),	-- Korthite Crystal - rewarded by some dailies and found in some treasures, but does not seem statically attached to anything specific.  acquisition/availability may be based on having completed the campaign questline to the point where you get to the Vault of Secrets
 						i(186548),	-- Chompy (PET!)
 						i(187184),	-- Vesper of Clarity (TOY!)
 					},
@@ -571,7 +572,6 @@ _.Zones =
 
 			--	Korthia Daily
 			--	confirmed on live
-				i(186017),	-- Korthite Crystal - rewarded by some dailies and found in some treasures, but does not seem statically attached to anything specific.  acquisition/availability may be based on having completed the campaign questline to the point where you get to the Vault of Secrets
 				q(64271, {	-- A More Civilized Way
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178795 },	-- Nadjia the Mistblade
@@ -678,6 +678,12 @@ _.Zones =
 					["provider"] = { "n", 178799 },	-- Arios Riftbearer
 					["isDaily"] = true,
 					["coord"] = { 61.5, 23.5, KORTHIA },
+				}),
+				q(63776, {	-- Observational Records
+					["sourceQuests"] = { 64556 },	-- In Need of Assistance
+					["provider"] = { "n", 178844 },	-- Ta'nasi
+					["isDaily"] = true,
+					["coord"] = { 64.6, 25.4, KORTHIA },
 				}),
 				q(63957, {	-- Observational Records
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
@@ -856,12 +862,6 @@ _.Zones =
 					["isDaily"] = true,
 					["coord"] = { 59.9, 27.0, KORTHIA },
 				}),
-				q(63776, {	-- Observational Records
-					["sourceQuests"] = { 64556 },	-- In Need of Assistance
-					["provider"] = { "n", 178844 },	-- Ta'nasi
-					["isDaily"] = true,
-					["coord"] = { 64.6, 25.4, KORTHIA },
-				}),
 				q(63959, {	-- Observational Records
 					["sourceQuests"] = { 64556 },	-- In Need of Assistance
 					["provider"] = { "n", 178844 },	-- Ta'nasi
@@ -950,7 +950,7 @@ _.Zones =
 
 _.HiddenQuestTriggers = {
 	q(64563),	-- triggered when turning in #64556, "In Need of Assistance"
-	q(64737),	-- triggered when turning in #64271, "A More Civilized Way" - received i(185115), Redeemed Inquisitor's Drape
+	q(64737),	-- triggered when turning in #64271, "A More Civilized Way" - received i(185115), Redeemed Inquisitor's Drape - perhaps a universal 'received covenant transmog' tracking quest?  got it the next day on my Kyrian shaman, who received i(184989), Foresworn Aspirant's Wraps.  was the first covenant mog for both characters ever but perhaps could be a weekly lockout or something?
 };
 
 _NeverImplemented = {

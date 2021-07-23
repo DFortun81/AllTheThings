@@ -91,7 +91,7 @@ _.Zones =
 				}),
 				o(364483, {	-- Empty Nightcap Cask
 					["description"] = "Coordinates are to the entrance of Molten Forge. The cask is found at 50.3, 17.4 once you enter the Molten Forge.",
-					["coord"] = { 39.3, 74.7, MALDRAXXUS },
+					["coord"] = { 37.9, 76.3, MALDRAXXUS },
 					["g"] = {
 						i(183752),	-- Empty Nightcap Cask
 					},

@@ -687,6 +687,7 @@ _.Achievements =
 				ach(14969),		-- Challenger: Shadowlands Season 2
 				ach(14968),		-- Combatant: Shadowlands Season 2
 				ach(14971, {	-- Duelist: Shadowlands Season 2
+					i(185302),	-- Unchained Gladiator's Prestigious Cloak
 					illusion(6344),	-- Unchained Fury
 				}),
 				ach(14974, {	-- Elite: Shadowlands Season 2

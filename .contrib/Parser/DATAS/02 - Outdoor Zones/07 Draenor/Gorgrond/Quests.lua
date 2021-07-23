@@ -1286,9 +1286,13 @@ _.Zones =
 					},
 				}),
 				q(36383, {	-- Assault on the Pit (A) (bonus objectives)
+					["isDaily"] = true,
+					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 48.4, 25.8, GORGROND },
 				}),
 				q(36489, {	-- Assault on the Pit (H) (bonus objectives)
+					["isDaily"] = true,
+					["races"] = HORDE_ONLY,
 					["coord"] = { 48.4, 25.8, GORGROND },
 				}),
 				q(35016, {	-- Basic Skulltaking
