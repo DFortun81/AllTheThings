@@ -10,7 +10,7 @@ _.Zones =
 			n(TREASURES, {
 				o(214403, {	-- Stack of Papers
 					["questID"] = 31863,
-					["coord"] = { 54.3, 72.3, 418 },
+					["coord"] = { 52.16, 73.42, 418 },
 				}),
 			}),
 		}),

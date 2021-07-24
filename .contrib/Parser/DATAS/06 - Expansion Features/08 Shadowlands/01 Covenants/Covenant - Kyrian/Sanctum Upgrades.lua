@@ -1385,3 +1385,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(61265),	-- Blueprint: Charm of Alacrity
 	}),
 });
+_.HiddenQuestTriggers = {
+	q(61268),	-- Triggered from buff recieved from Kyrian Conductor Tier 3
+	q(61267),	-- Triggered from buff recieved from Kyrian Conductor Tier 3
+};

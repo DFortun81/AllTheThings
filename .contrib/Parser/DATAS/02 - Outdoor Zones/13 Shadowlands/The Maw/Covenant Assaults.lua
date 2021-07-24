@@ -80,6 +80,16 @@ _.Zones =
 									}),
 								},
 							}),
+							q(63853, {	-- Kill The Flame
+								["provider"] = { "n", 178005 },	-- Theotar
+								["isWeekly"] = true,
+								["coord"] = { 43.0, 44.5, THE_MAW },
+								["g"] = {
+									crit(9, {	-- Kill The Flame
+										["achievementID"] = 15034,	-- Wings Against the Flames
+									}),
+								},
+							});
 							q(63828, {	-- Mine's Bigger
 								["provider"] = { "n", 177175 },	-- Mikanikos
 								["isWeekly"] = true,

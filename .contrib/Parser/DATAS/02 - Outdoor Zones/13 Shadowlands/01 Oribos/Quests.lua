@@ -53,6 +53,10 @@ _.Zones =
 						["coord"] = { 34.7, 56.5, ORIBOS },
 						["_drop"] = { "g" },	-- drop anima trash
 					}),
+					q(64527, {	-- Observing the Chase
+						["provider"] = { "n", 174922 },	-- Strategist Zo'rak
+						["coord"] = { 34.7, 55.7, ORIBOS },	-- Ring of Fates
+					}),
 					q(62285, {	-- Observing War
 						["provider"] = { "n", 174922 },	-- Strategist Zo'rak
 						["isWeekly"] = true,
@@ -862,11 +866,6 @@ _.Zones =
 
 
 				-- PTR - TODO: move into alphabetized quests once we know there aren't changes/everything has made it to live.  keeping them in one place for now for ease of culling any data if necessary
-				-- PVP quests
-				q(64527, {	-- Observing the Chase
-					["provider"] = { "n", 174922 },	-- Strategist Zo'rak
-					["coord"] = { 34.7, 55.7, ORIBOS },	-- Ring of Fates
-				}),
 				-- regular ol' quests
 				q(63977, {	-- Insider Trading
 					["sourceQuests"] = { 63976 },	-- The Al'ley Cat of Oribos
