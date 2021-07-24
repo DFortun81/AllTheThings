@@ -59,6 +59,10 @@ _.Zones =
 						garrisonBuilding(64),	-- Fishing Shack
 					},
 				}),
+				q(37631, {	-- Assault on Socrethar's Rise
+					["coord"] = { 48, 73, 539 },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(35014, {	-- Blademoon Bloom
 					["sourceQuests"] = { 33788 },	-- Cooking With Unstable Herbs
 					["coord"] = { 53.7, 57.2, 539 },

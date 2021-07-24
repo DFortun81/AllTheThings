@@ -247,6 +247,7 @@ _.Zones =
 					["coord"] = { 66.5, 42.8, REVENDRETH },
 					["g"] = {
 						i(180589),	-- Soullocked Sinstone (PET!)
+						i(180395),	-- Nathrezim Crusader's Hauberk
 					},
 				}),
 				o(351540, {	-- Secret Treasure
