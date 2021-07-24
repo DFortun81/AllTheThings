@@ -230,6 +230,7 @@ _.Zones =
 								["isDaily"] = true,
 								["g"] = {
 									i(186010),	-- Lost Attendant's Scepter
+									i(186560),	-- Semi-Permeable Gelatinous Storage Pouch
 								},
 							}),
 							n(177330, {	-- Promathiz
@@ -654,6 +655,7 @@ _.Zones =
 				q(64521, {	-- Helsworn Battle Plans
 					["sourceQuests"] = { 63612 },	-- The Chains of Command
 					["provider"] = { "i", 187275 },	-- Helsworn Battle Plans
+					["isWeekly"] = true,
 					["crs"] = {
 						177413,	-- Avowed Soulbreaker
 						177418,	-- Chained Bonesculpter
