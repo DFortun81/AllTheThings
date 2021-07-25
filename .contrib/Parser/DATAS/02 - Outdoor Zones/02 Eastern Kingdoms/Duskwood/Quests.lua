@@ -51,7 +51,6 @@ _.Zones =
 					["sourceQuest"] = 1043,	-- The Scythe of Elune
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
-					
 					["g"] = {
 						un(REMOVED_FROM_GAME, i(5817)),	-- Lunaris Bow
 						un(REMOVED_FROM_GAME, i(5818)),	-- Moonbeam Wand

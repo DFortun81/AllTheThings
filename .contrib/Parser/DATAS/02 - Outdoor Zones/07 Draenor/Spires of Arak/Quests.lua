@@ -1268,7 +1268,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 	n(-9981, {	-- Draenor
 		n(-319, {	-- Weapons
 			i(114946),	-- Admiral Taylor's Spellguard
-		}),	
+		}),
 	}),
 });
 _.HiddenQuestTriggers = {

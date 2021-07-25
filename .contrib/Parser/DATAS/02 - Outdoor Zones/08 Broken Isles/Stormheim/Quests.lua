@@ -1202,6 +1202,6 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 				i(121506),	-- Dreadsworn Crown
 				i(121510),	-- Dreadsworn Legguards
 			}),
-		}),	
+		}),
 	}),
 });

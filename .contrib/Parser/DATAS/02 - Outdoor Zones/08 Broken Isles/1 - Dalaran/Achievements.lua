@@ -235,7 +235,7 @@ _.Zones =
 				}),
 				ach(10585, {	-- Fel-Smelter
 					["u"] = REMOVED_FROM_GAME,
-					["g"] = { 
+					["g"] = {
 						crit(1, {	-- Firing Up the Forge
 							["u"] = REMOVED_FROM_GAME,
 						}),

@@ -953,7 +953,7 @@ _.Zones =
 						i(181577),	-- Soulbearer's Vest [monk]
 					},
 				}),
-				
+
 				-- PTR - todo: merge with regular quests
 				q(63584, {	-- A Triumphant Return
 					["sourceQuests"] = { 63590 },	-- The Vesper Rings

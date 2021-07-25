@@ -269,7 +269,6 @@ namespace ATT
                         }
                         File.WriteAllText(Path.Combine(recipesDirectory.FullName, $"{requireSkillPair.Key}.json"), builder.ToString());
                     }
-                    
                 }
             }
             #endregion

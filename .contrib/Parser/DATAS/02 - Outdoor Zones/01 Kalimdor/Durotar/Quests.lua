@@ -1400,7 +1400,7 @@ _.Zones =
 						}),
 						objective(2, {	-- 0/8 Dustwind Storm Witch
 							["cr"] = 3118,	-- Dustwind Storm Witch
-						}),	
+						}),
 						i(4932),	-- Harpy Wing Clipper
 						i(4931),	-- Hickory Shortbow
 						i(4938),	-- Blemished Wooden Staff

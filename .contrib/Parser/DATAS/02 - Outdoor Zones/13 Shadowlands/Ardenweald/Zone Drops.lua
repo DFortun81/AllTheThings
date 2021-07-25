@@ -54,7 +54,7 @@ _.Zones =
 	}),
 };
 _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
-	n(-10100, {	-- Shadowlands	
+	n(-10100, {	-- Shadowlands
 		n(-163, {	-- Armor
 			n(-43, {	-- Cloth
 				i(179587),	-- Drust Mask

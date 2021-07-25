@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -93,7 +93,7 @@ namespace ATT
                 {
                     // Considerations: Yeah, I realize it won't parse again if they delete the data files,
                     // buuut, just login again and the next sync should grab it. Non-issue. - Crieve
-                    return null;  
+                    return null;
                 }
                 break;
             }

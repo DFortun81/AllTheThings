@@ -20,14 +20,13 @@ _.Zones =
 					["cr"] = 179229,	-- Eye of Affliction
 				}),
 				pet(3141, {	-- Wild Corpsefly
-				--	["cr"] = ,	-- 
+				--["cr"] = ,	--
 				}),
 				pet(3135, {	-- Young Garnetgullet
 					["cr"] = 179250,	-- Young Garnetgullet
 				}),
 				-- chompy = visitor dailies: oozing with character & local reagents (possibly hidden reward for ooz/bloop/plaguey achievements?)
 				-- korthian specimen = no info/tooltip on mouseover in pet journal
-				-- 
 			}),
 		}),
 	}),

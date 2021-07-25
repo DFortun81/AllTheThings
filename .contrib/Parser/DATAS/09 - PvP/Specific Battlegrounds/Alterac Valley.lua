@@ -776,7 +776,7 @@ _.NeverImplemented = bubbleDown({ ["u"] = NEVER_IMPLEMENTED }, {
 		q(6846),	-- Begin the Attack!
 		q(7421),	-- Darkspear Defense
 		q(7423),	-- I've Got A Fever For More Bone Chips
-		q(6901),	-- Launch the Attack!		
+		q(6901),	-- Launch the Attack!
 		q(7426),	-- One Man's Love
 		q(7425),	-- Staghelm's Mojo Jamboree
 		q(7422),	-- Tuft it Out

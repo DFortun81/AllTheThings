@@ -442,7 +442,7 @@ _.Zones =
 					["provider"] = { "n", 129642 },	-- Lucille Waycrest
 					["coord"] = { 36.8, 50.1, 896 },
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuests"] = { 
+					["sourceQuests"] = {
 						50533,	-- Stick It To 'Em!
 						50639,	-- Waycrest Manor: The Fallen Mother
 					},

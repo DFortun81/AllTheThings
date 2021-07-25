@@ -63,7 +63,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, holiday(235474, {	-- Midsum
 					["timeline"] = { "added 7.0.3.22248" },
 				}),
 				i(35498),	-- Formula: Enchant Weapon - Deathfrost
-				
+
 				-- #if BEFORE 4.2.0
 				-- This item was apparently a drop from Ahune originally, but was removed and added to the Molten Front with 4.2.0.
 				-- Between Patch 3.3.3 and 4.2.0 it had no available source.
@@ -71,7 +71,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, holiday(235474, {	-- Midsum
 					["timeline"] = { "removed 3.3.3", "added 4.2.0" },
 				}),
 				-- #endif
-				
+
 				-- WoD+ Rewards (Scalable)
 				i(117372, {	-- Cloak of the Frigid Winds
 					["timeline"] = { "added 6.0.1.18594" },
@@ -88,7 +88,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, holiday(235474, {	-- Midsum
 				i(117377, {	-- The Frost Lord's War Cloak
 					["timeline"] = { "added 6.0.1.18594" },
 				}),
-				
+
 				-- Pandaria Rewards
 				i(95425, {	-- Cloak of the Frigid Winds [Level 90]
 					["timeline"] = { "added 5.0.1", "removed 6.0.1" },
@@ -105,7 +105,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, holiday(235474, {	-- Midsum
 				i(95430, {	-- The Frost Lord's War Cloak [Level 90]
 					["timeline"] = { "added 5.0.1", "removed 6.0.1" },
 				}),
-				
+
 				-- Cataclysm Rewards
 				i(69769, {	-- Cloak of the Frigid Winds [Level 85]
 					["timeline"] = { "added 4.0.1", "removed 5.0.1" },
@@ -122,7 +122,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, holiday(235474, {	-- Midsum
 				i(69766, {	-- The Frost Lord's War Cloak [Level 85]
 					["timeline"] = { "added 4.0.1", "removed 5.0.1" },
 				}),
-				
+
 				i(54805, {	-- Cloak of the Frigid Winds [Level 80]
 					["timeline"] = { "added 3.3.3.11723", "removed 4.0.1" },
 				}),
@@ -138,7 +138,7 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, holiday(235474, {	-- Midsum
 				i(54802, {	-- The Frost Lord's War Cloak [Level 80]
 					["timeline"] = { "added 3.3.3.11723", "removed 4.0.1" },
 				}),
-				
+
 				-- Original Rewards
 				i(35514, {	-- Frostscythe of Lord Ahune [Level 70]
 					["timeline"] = { "removed 3.3.3.11723" },
