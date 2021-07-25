@@ -30,14 +30,13 @@ _.Zones =
 				{ 57.3, 26.7, 550 },
 				{ 59.5, 10.2, 550 },
 
-				-- Shadowmoon Valley (Draenor)
-				{ 41.9, 75.7, 539 },
-				{ 43.7, 70.9, 539 },
-				{ 48.9, 70.2, 539 },
-				{ 50.3, 71.5, 539 },
-				{ 49.6, 71.6, 539 },
-				{ 50.9, 72.5, 539 },
-				{ 51.6, 74.8, 539 },
+				{ 41.9, 75.7, DRAENOR_SHADOWMOON_VALLEY },
+				{ 43.7, 70.9, DRAENOR_SHADOWMOON_VALLEY },
+				{ 48.9, 70.2, DRAENOR_SHADOWMOON_VALLEY },
+				{ 50.3, 71.5, DRAENOR_SHADOWMOON_VALLEY },
+				{ 49.6, 71.6, DRAENOR_SHADOWMOON_VALLEY },
+				{ 50.9, 72.5, DRAENOR_SHADOWMOON_VALLEY },
+				{ 51.6, 74.8, DRAENOR_SHADOWMOON_VALLEY },
 
 				-- Spires of Arak
 				{ 36.4, 18.3, 542 },
@@ -56,7 +55,7 @@ _.Zones =
 				525,	-- Frostfire Ridge
 				GORGROND,
 				550,	-- Nagrand (Draenor)
-				539,	-- Shadowmoon Valley (Draenor)
+				DRAENOR_SHADOWMOON_VALLEY,
 				542,	-- Spires of Arak
 				535,	-- Talador
 			},

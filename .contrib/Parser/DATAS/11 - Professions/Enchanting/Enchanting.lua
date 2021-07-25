@@ -16,7 +16,7 @@ profession(ENCHANTING, {
 				525,	-- Frostfire Ridge
 				GORGROND,
 				550,	-- Nagrand
-				539,	-- Shadowmoon Valley
+				DRAENOR_SHADOWMOON_VALLEY,
 				542,	-- Spires of Arak
 				535,	-- Talador
 			},
@@ -31,7 +31,7 @@ profession(ENCHANTING, {
 				525,	-- Frostfire Ridge
 				GORGROND,
 				550,	-- Nagrand
-				539,	-- Shadowmoon Valley
+				DRAENOR_SHADOWMOON_VALLEY,
 				542,	-- Spires of Arak
 				535,	-- Talador
 			},

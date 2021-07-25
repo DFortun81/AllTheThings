@@ -31,25 +31,25 @@ _.ExpansionFeatures =
 							q(35188, {    -- Pesky Podlings
 								["sourceQuests"] = { 35187 },    -- Infiltrating the Sargerei
 								["provider"] = { "n", 81499 },    -- Soulbinder Zamaya
-								["coord"] = { 49.8, 81.4, 539 },    -- Shadowmoon Valley
+								["coord"] = { 49.8, 81.4,  DRAENOR_SHADOWMOON_VALLEY },
 							}),
 							-- 3rd/4th/5th/6th quest of Garrison Campaign: The Sargerei (N) questchain
 							q(35189, {    -- The Word of Socrethar
 								["sourceQuests"] = { 35187 },    -- Infiltrating the Sargerei
 								["provider"] = { "n", 81530 },    -- Anchorite Laanda
-								["coord"] = { 50.0, 81.2, 539 },    -- Shadowmoon Valley
+								["coord"] = { 50.0, 81.2,  DRAENOR_SHADOWMOON_VALLEY },
 							}),
 							-- 3rd/4th/5th/6th quest of Garrison Campaign: The Sargerei (N) questchain
 							q(35190, {    -- An Ancient Threat
 								["sourceQuests"] = { 35187 },    -- Infiltrating the Sargerei
 								["provider"] = { "n", 81499 },    -- Soulbinder Zamaya
-								["coord"] = { 49.8, 81.4, 539 },    -- Shadowmoon Valley
+								["coord"] = { 49.8, 81.4,  DRAENOR_SHADOWMOON_VALLEY },
 							}),
 							-- 3rd/4th/5th/6th quest of Garrison Campaign: The Sargerei (N) questchain
 							q(35191, {    -- Shattering the Enemy
 								["sourceQuests"] = { 35187 },    -- Infiltrating the Sargerei
 								["provider"] = { "n", 81530 },    -- Anchorite Laanda
-								["coord"] = { 50.0, 81.2, 539 },    -- Shadowmoon Valley
+								["coord"] = { 50.0, 81.2,  DRAENOR_SHADOWMOON_VALLEY },
 							}),
 							-- 7th quest of Garrison Campaign: The Sargerei (N) questchain
 							q(35194, {    -- Facing Demons
@@ -60,13 +60,13 @@ _.ExpansionFeatures =
 									35191,	  -- Shattering the Enemy
 								},
 								["provider"] = { "n", 81530 },    -- Anchorite Laanda
-								["coord"] = { 50.0, 81.2, 539 },    -- Shadowmoon Valley
+								["coord"] = { 50.0, 81.2,  DRAENOR_SHADOWMOON_VALLEY },
 							}),
 							-- 8th quest of Garrison Campaign: The Sargerei (N) questchain
 							q(35195, {    -- Socrethar's Fury
 								["sourceQuests"] = { 35194 },    -- Facing Demons
 								["provider"] = { "o", 231918 },    -- Laanda's Scroll -- I guess "o" is for object
-								["coord"] = { 50.0, 81.2, 539 },    -- Shadowmoon Valley
+								["coord"] = { 50.0, 81.2,  DRAENOR_SHADOWMOON_VALLEY },
 								["g"] = {
 									i(119134),    -- Sargerei Disguise
 								},
@@ -76,7 +76,7 @@ _.ExpansionFeatures =
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuests"] = { 35195 },    -- Socrethar's Fury
 								["provider"] = { "n", 81530 },    -- Anchorite Laanda
-								["coord"] = { 50.6, 82.2, 539 },    -- Shadowmoon Valley
+								["coord"] = { 50.6, 82.2,  DRAENOR_SHADOWMOON_VALLEY },
 							}),
 							q(35679, {	-- Garrison Campaign: The Fall of Shattrath
 								["races"] = ALLIANCE_ONLY,
@@ -915,7 +915,7 @@ _.ExpansionFeatures =
 						["races"] = ALLIANCE_ONLY,
 						["coords"] = {
 							{ 30.2, 18.1, 582 },	-- level 2 garrison
-							{ 39.8, 29.4, 539 },	-- Lost Packmule
+							{ 39.8, 29.4, DRAENOR_SHADOWMOON_VALLEY },	-- Lost Packmule
 						},
 						["icon"] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
 						--["objectID"] = 230865,	-- List of Ingredients

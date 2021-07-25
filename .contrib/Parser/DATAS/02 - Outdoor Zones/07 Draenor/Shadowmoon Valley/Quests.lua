@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(572, {	-- Draenor
-		m(539, {	-- Shadowmoon Valley (Draenor)
+		m(DRAENOR_SHADOWMOON_VALLEY, {
 			n(QUESTS, {
 				q(36176, {	-- A Call for Huntsman
 					["providers"] = {
@@ -17,18 +17,18 @@ _.Zones =
 				}),
 				q(33795, {	-- Across the Stars
 					["sourceQuests"] = { 34043 },	-- Darkest Night
-					["coord"] = { 35.4, 36.8, 539 },
+					["coord"] = { 35.4, 36.8, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 81173 },	-- Illuminate Praavi
 				}),
 				q(33120, {	-- A Curse Upon the Woods
 					["sourceQuests"] = { 33113 },	-- Shadowmoonwell
-					["coord"] = { 29.4, 24.6, 539 },
+					["coord"] = { 29.4, 24.6, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 72623 },	-- Delas Moonfang
 				}),
 				q(33077, {	-- A Grandmother's Remedy
-					["coord"] = { 41.2, 55.0, 539 },
+					["coord"] = { 41.2, 55.0, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 71641 },	-- Old Loola
 				}),
@@ -39,7 +39,7 @@ _.Zones =
 				}),
 				q(33082, {	-- Ancestor's Memory
 					["sourceQuests"] = { 33586 },	-- Chasing Shadows
-					["coord"] = { 45.7, 26.3, 539 },
+					["coord"] = { 45.7, 26.3, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 75884 },	-- Rulkan
 					["g"] = {
@@ -52,7 +52,7 @@ _.Zones =
 				q(36202, {	-- Anglin' In Our Garrison
 					["sourceQuests"] = { 36201 },	-- Proving Your Worth
 					["requireSkill"] = FISHING,
-					["coord"] = { 26.9, 6.6, 539 },
+					["coord"] = { 26.9, 6.6, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 84372 },	-- Madari
 					["g"] = {
@@ -60,12 +60,12 @@ _.Zones =
 					},
 				}),
 				q(37631, {	-- Assault on Socrethar's Rise
-					["coord"] = { 48, 73, 539 },
+					["coord"] = { 48.0, 73.0, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(35014, {	-- Blademoon Bloom
 					["sourceQuests"] = { 33788 },	-- Cooking With Unstable Herbs
-					["coord"] = { 53.7, 57.2, 539 },
+					["coord"] = { 53.7, 57.2, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 80727 },	-- Rangari Arepheon
 				}),
@@ -75,13 +75,13 @@ _.Zones =
 				}),
 				q(34995, {	-- Botani Beatdown
 					["sourceQuests"] = { 33788 },	-- Cooking With Unstable Herbs
-					["coord"] = { 53.7, 57.2, 539 },
+					["coord"] = { 53.7, 57.2, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 80865 },	-- Tarenar Sunstrike
 				}),
 				q(33331, {	-- Captured Critters
 					["sourceQuests"] = { 33263 },	-- Gloomshade Grove
-					["coord"] = { 46.2, 15.9, 539 },
+					["coord"] = { 46.2, 15.9, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 77270 },	-- Captured Critter
 				}),
@@ -90,7 +90,7 @@ _.Zones =
 						34587,	-- Build Your Barracks
 						33359,	-- Meet Us at Starfall Post
 					},
-					["coord"] = { 29.2, 25.7, 539 },
+					["coord"] = { 29.2, 25.7, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 77184 },	-- Archmage Khadgar
 				}),
@@ -99,13 +99,13 @@ _.Zones =
 						33081,	-- Escape From Shaz'gul
 						33059,	-- The Fate of Karabor
 					},
-					["coord"] = { 40.5, 55.0, 539 },
+					["coord"] = { 40.5, 55.0, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 79043 },	-- Prophet Velen
 				}),
 				q(34779, {	-- Circle the Wagon
 					["sourceQuests"] = { 34778 },	-- Migrant Workers
-					["coord"] = { 55.9, 32.6, 539 },
+					["coord"] = { 55.9, 32.6, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 81912 },	-- Foreman Zipfizzle
 					["g"] = {
@@ -117,19 +117,19 @@ _.Zones =
 				}),
 				q(33135, {	-- Cleaning Up Gul'var
 					["sourceQuests"] = { 33112 },	-- Ominous Portents
-					["coord"] = { 19.0, 28.5, 539 },
+					["coord"] = { 19.0, 28.5, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 77417 },	-- Image of Archmage Khadgar
 				}),
 				q(33269, {	-- Cleaning Up Gul'var
 					["sourceQuests"] = { 33112 },	-- Ominous Portents
-					["coord"] = { 29.2, 25.6, 539 },
+					["coord"] = { 29.2, 25.6, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 72637 },	-- Cordana Felsong
 				}),
 				q(33905, {	-- Closing the Door
 					["sourceQuests"] = { 33075 },	-- A Hero's Welcome
-					["coord"] = { 46.6, 37.3, 539 },
+					["coord"] = { 46.6, 37.3, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 74343 },	-- Vindicator Tenuum
 				}),
@@ -138,14 +138,14 @@ _.Zones =
 						33787,	-- Fiona's Solution
 						33808,	-- Swamplighter Queen
 					},
-					["coord"] = { 53.6, 57.2, 539 },
+					["coord"] = { 53.6, 57.2, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 76204 },	-- Fiona
 				}),
 				q(44488, {	-- Cursed Tome
 					["lvl"] = 110,
 					["provider"] = { "o", 258980 },	-- Cursed Tome
-					["coord"] = { 37.6, 59.3, 539 },
+					["coord"] = { 37.6, 59.3, DRAENOR_SHADOWMOON_VALLEY },
 					["icon"] = "Interface\\Icons\\inv_misc_book_06",
 					["g"] = {
 						crit(3, {	-- Cursed Tome
@@ -155,7 +155,7 @@ _.Zones =
 				}),
 				q(33765, {	-- Dark Enemies
 					["sourceQuests"] = { 33075 },	-- A Hero's Welcome
-					["coord"] = { 45.9, 38.9, 539 },
+					["coord"] = { 45.9, 38.9, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 75005 },	-- Samaara
 					["g"] = {
@@ -166,7 +166,7 @@ _.Zones =
 				}),
 				q(34043, {	-- Darkest Night
 					["sourceQuests"] = { 33082 },	-- Ancestor's Memory
-					["coord"] = { 45.7, 25.5, 539 },
+					["coord"] = { 45.7, 25.5, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 75884 },	-- Rulkan
 				}),
@@ -179,7 +179,7 @@ _.Zones =
 						35093,	-- The Dark Side of the Moon (replacement if you abandon the original quest)
 						33794,	-- The Great Salvation
 					},
-					["coord"] = { 46.3, 38.6, 539 },
+					["coord"] = { 46.3, 38.6, DRAENOR_SHADOWMOON_VALLEY },
 					["provider"] = { "n", 77282 },	-- Prophet Velen
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -198,12 +198,12 @@ _.Zones =
 						35861,	-- Garrison Campaign: Darktide Roost (A)
 						35876,	-- Garrison Campaign: Darktide Roost (H)
 					},
-					["coord"] = { 59.0, 82.2, 539 },
+					["coord"] = { 59.0, 82.2, DRAENOR_SHADOWMOON_VALLEY },
 					["provider"] = { "n", 83494 },	-- Darktide Pilferer
 				}),
 				q(34781, {	-- Defenstrations
 					["sourceQuests"] = { 34780 },	-- Invisible Ramparts
-					["coord"] = { 56.9, 34.6, 539 },
+					["coord"] = { 56.9, 34.6, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["icon"] = "Interface\\Icons\\INV_DataCrystal11",
 					--["objectID"] = 230933,	-- Defense Pylon Central Control Console
@@ -215,19 +215,19 @@ _.Zones =
 					["sourceQuests"] = {
 						34353,	-- Shredder Suppressor
 					},
-					["coord"] = { 59.2, 82.2, 539 },
+					["coord"] = { 59.2, 82.2, DRAENOR_SHADOWMOON_VALLEY },
 					["provider"] = { "n", 77982 },	-- Rexxar
 				}),
 				q(34397, {	-- Downsizing the Darktide
 					["sourceQuests"] = {
 						34355,	-- Dirty Rats
 					},
-					["coord"] = { 58.1, 93.9, 539 },
+					["coord"] = { 58.1, 93.9, DRAENOR_SHADOWMOON_VALLEY },
 					["provider"] = { "n", 78258 },	-- Rexxar
 				}),
 				q(34786, {	-- Engorged Goren
 					["sourceQuests"] = { 34785 },	-- Hataaru, the Artificer
-					["coord"] = { 61.8, 29.1, 539 },
+					["coord"] = { 61.8, 29.1, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 81140 },	-- Apprentice Artificer Andren
 					["g"] = {
@@ -238,7 +238,7 @@ _.Zones =
 				}),
 				q(33081, {	-- Escape From Shaz'gul
 					["sourceQuests"] = { 33080 },	-- Going Undercover
-					["coord"] = { 34.2, 63.3, 539 },
+					["coord"] = { 34.2, 63.3, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 74877 },	-- Yrel
 					["g"] = {
@@ -254,7 +254,7 @@ _.Zones =
 						35070,	-- Shut 'er Down
 						34790,	-- The Sting
 					},
-					["coord"] = { 56.5, 23.5, 539 },
+					["coord"] = { 56.5, 23.5, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 80078 },	-- Exarch Akama
 				}),
@@ -262,14 +262,14 @@ _.Zones =
 					["requireSkill"] = ENCHANTING,
 					["sourceQuests"] = { 36310 },	-- The Arakkoan Enchanter
 					["provider"] = { "n", 84966 },	-- Arcanist Delath
-					["coord"] = { 37.4, 72.6, 539 },
+					["coord"] = { 37.4, 72.6, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(36185, {	-- Fair Trade
 					["requireSkill"] = LEATHERWORKING,
 					["sourceQuests"] = { 36177 },	-- Friendly Competition
 					["provider"] = { "n", 84385 },	-- Fanara
-					["coord"] = { 44.2, 40.9, 539 },
+					["coord"] = { 44.2, 40.9, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(115358, {	-- Draenor Leatherworking
@@ -294,7 +294,7 @@ _.Zones =
 						33059,	-- The Fate of Karabor
 						33081,	-- Escape From Shaz'gul
 					},
-					["coord"] = { 40.6, 54.8, 539 },
+					["coord"] = { 40.6, 54.8, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 81153 },	-- Scout Valdez
 				}),
@@ -315,13 +315,13 @@ _.Zones =
 						34575,	-- Step Three: Prophet!
 						49562	-- Hero's Call: Shadowmoon Valley!
 					},
-					["coord"] = { 26.9, 8.00, 539 },
+					["coord"] = { 26.9, 8.00, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 79206 },	-- Prophet Velen
 				}),
 				q(35617, {	-- Fiona
 					["sourceQuests"] = { 35015 },	-- Gestating Genesaur
-					["coord"] = { 53.6, 57.2, 539 },
+					["coord"] = { 53.6, 57.2, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 76204 },	-- Fiona
 					["g"] = {
@@ -329,18 +329,18 @@ _.Zones =
 					},
 				}),
 				q(33787, {	-- Fiona's Solution
-					["coord"] = { 53.5, 57.2, 539 },
+					["coord"] = { 53.5, 57.2, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 76204 },	-- Fiona
 				}),
 				q(33114, {	-- Forging the Soul Trap
 					["sourceQuests"] = { 33168 },	-- Heart On Fire
-					["coord"] = { 19.1, 28.5, 539 },
+					["coord"] = { 19.1, 28.5, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 77417 },	-- Image of Archmage Khadgar
 				}),
 				q(34847, {	-- Forbidden Love
-					["coord"] = { 46.1, 25.5, 539 },
+					["coord"] = { 46.1, 25.5, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 77211 },	-- Dulga
 					["g"] = {
@@ -351,19 +351,19 @@ _.Zones =
 				}),
 				q(34994, {	-- Forever Young
 					["sourceQuests"] = { 33788 },	-- Cooking With Unstable Herbs
-					["coord"] = { 53.4, 57.2, 539 },
+					["coord"] = { 53.4, 57.2, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 80761 },	-- Beezil Linkspanner
 				}),
 				q(34455, {	-- Free Their Minds
 					["provider"] = { "n", 89158 },	-- Goblin Mind Control Device
 					--["objectID"] = 229314,	-- Goblin Mind Control Device
-					["coord"] = { 59.8, 94.4, 539 },
+					["coord"] = { 59.8, 94.4, DRAENOR_SHADOWMOON_VALLEY },
 				}),
 				q(34788, {	-- Friend of the Exarchs
 					["sourceQuests"] = { 34792 },	-- The Traitor's True Name
 					["description"] = "You can only pick one of these followers per character.",
-					["coord"] = { 62.5, 26.2, 539 },
+					["coord"] = { 62.5, 26.2, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 80079 },	-- Exarch Naielle
 					["g"] = {
@@ -376,7 +376,7 @@ _.Zones =
 					["requireSkill"] = LEATHERWORKING,
 					["sourceQuests"] = { 36176 },	-- A Call for Huntsman
 					["provider"] = { "n", 84385 },	-- Fanara
-					["coord"] = { 44.2, 40.9, 539 },
+					["coord"] = { 44.2, 40.9, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(37332, {	-- Fungal Bundle
@@ -385,20 +385,20 @@ _.Zones =
 						{ "n", 82318 },		-- Umbraspore Giant
 					},
 					["coords"] = {
-						{ 51.8, 19.0, 539 },
-						{ 57.4, 21.6, 539 },
+						{ 51.8, 19.0, DRAENOR_SHADOWMOON_VALLEY },
+						{ 57.4, 21.6, DRAENOR_SHADOWMOON_VALLEY },
 					},
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(34784, {	-- Fun with Fungus
 					["sourceQuests"] = { 34783 },	-- Naielle, the Rangari
-					["coord"] = { 56.5, 23.5, 539 },
+					["coord"] = { 56.5, 23.5, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 80079 },	-- Exarch Naielle
 				}),
 				q(33271, {	-- Game of Thorns
 					["sourceQuests"] = { 33263 },	-- Gloomshade Grove
-					["coord"] = { 47.0, 14.4, 539 },
+					["coord"] = { 47.0, 14.4, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 73877 },	-- Jarrod Hamby
 					["g"] = {
@@ -410,7 +410,7 @@ _.Zones =
 				}),
 				q(35015, {	-- Gestating Genesaur
 					["sourceQuests"] = { 35014 },	-- Blademoon Bloom
-					["coord"] = { 55.6, 72.0, 539 },
+					["coord"] = { 55.6, 72.0, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 80635 },	-- Rangari Arepheon
 					["g"] = {
@@ -422,31 +422,31 @@ _.Zones =
 				}),
 				q(33263, {	-- Gloomshade Grove
 					["sourceQuests"] = { 34820 },	-- Lost Lumberjacks
-					["coord"] = { 39.5, 29.8, 539 },
+					["coord"] = { 39.5, 29.8, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 79966 },	-- Lost Packmule
 				}),
 				q(33080, {	-- Going Undercover
 					["sourceQuests"] = { 33072 },	-- Into Twilight
-					["coord"] = { 40.6, 54.9, 539 },
+					["coord"] = { 40.6, 54.9, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 73425 },	-- Rangari Veka
 				}),
 				q(33793, {	-- Harbingers of the Void
 					["sourceQuests"] = { 34043 },	-- Darkest Night
-					["coord"] = { 35.7, 36.8, 539 },
+					["coord"] = { 35.7, 36.8, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 81176 },	-- Rangari Saa'to
 				}),
 				q(34785, {	-- Hataaru, the Artificer
 					["sourceQuests"] = { 34782 },	-- The Exarch Council
-					["coord"] = { 59.3, 26.5, 539 },
+					["coord"] = { 59.3, 26.5, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 80076 },	-- Exarch Othaar
 				}),
 				q(33168, {	-- Heart On Fire
 					["sourceQuests"] = { 33066 },	-- Soul Shards of Summoning
-					["coord"] = { 19.1, 28.5, 539 },
+					["coord"] = { 19.1, 28.5, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 77417 },	-- Image of Archmage Khadgar
 				}),
@@ -454,7 +454,7 @@ _.Zones =
 					["requireSkill"] = TAILORING,
 					["sourceQuests"] = { 36266 },	-- The Clothes on Their Backs
 					["provider"] = { "n", 84523 },	-- Ameeka
-					["coord"] = { 58.2, 26.6, 539 },
+					["coord"] = { 58.2, 26.6, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(115357, {	-- Draenor Tailoring
@@ -473,35 +473,35 @@ _.Zones =
 				}),
 				q(33813, {	-- In Need of a Hero
 					["sourceQuests"] = { 33070 },	-- Think of the Children! (must have picked up)
-					["coord"] = { 52.0, 32.7, 539 },
+					["coord"] = { 52.0, 32.7, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 71502 },	-- Ariaana
 				}),
 				q(35032, {	-- Into Anguish
 					["sourceQuests"] = { 34043 },	-- Darkest Night
-					["coord"] = { 35.7, 36.8, 539 },
+					["coord"] = { 35.7, 36.8, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 77282 },	-- Prophet Velen
 				}),
 				q(33072, {	-- Into Twilight
 					["sourceQuests"] = { 34019 },	-- Shadows Awaken
-					["coord"] = { 49.3, 37.3, 539 },
+					["coord"] = { 49.3, 37.3, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 74043 },	-- Prophet Velen
 				}),
 				q(34780, {	-- Invisible Ramparts
 					["sourceQuests"] = { 34779 },	-- Circle the Wagon
-					["coord"] = { 56.2, 32.6, 539 },
+					["coord"] = { 56.2, 32.6, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 80075 },	-- Exarch Hataaru
 				}),
 				q(34876, {	-- Loola's Lost Love
-					["coord"] = { 41.2, 55.0, 539 },
+					["coord"] = { 41.2, 55.0, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 71641 },	-- Old Loola
 				}),
 				q(34836, {	-- Lunarblossom
-					["coord"] = { 46.3, 25.3, 539 },
+					["coord"] = { 46.3, 25.3, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 80248 },	-- Zukaza
 				}),
@@ -509,18 +509,18 @@ _.Zones =
 					["sourceQuests"] = { 34194 },	-- Looking For Help
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 26.9, 6.6, 539 },
+					["coord"] = { 26.9, 6.6, DRAENOR_SHADOWMOON_VALLEY },
 					["provider"] = { "n", 84372 },	-- Madari
 				}),
 				q(34783, {	-- Naielle, The Rangari
 					["sourceQuests"] = { 34782 },	-- The Exarch Council
-					["coord"] = { 59.3, 26.5, 539 },
+					["coord"] = { 59.3, 26.5, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 80076 },	-- Exarch Othaar
 				}),
 				q(33112, {	-- Ominous Portents
 					["sourceQuests"] = { 33115 },	-- Shrouding Stones
-					["coord"] = { 29.2, 25.6, 539 },
+					["coord"] = { 29.2, 25.6, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 77184 },	-- Archmage Khadgar
 					["g"] = {
@@ -531,7 +531,7 @@ _.Zones =
 				}),
 				q(33083, {	-- On the Offensive
 					["sourceQuests"] = { 34043 },	-- Darkest Night
-					["coord"] = { 35.7, 36.8, 539 },
+					["coord"] = { 35.7, 36.8, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 81176 },	-- Rangari Saa'to
 				}),
@@ -539,7 +539,7 @@ _.Zones =
 					["requireSkill"] = ENCHANTING,
 					["sourceQuests"] = { 36313 },	-- Failed Apprentice
 					["provider"] = { "n", 84963 },	-- Deema
-					["coord"] = { 35.6, 72.2, 539 },
+					["coord"] = { 35.6, 72.2, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(111922, {		-- Draenor Enchanting
@@ -564,7 +564,7 @@ _.Zones =
 				}),
 				q(35006, {	-- Poison Paralysis
 					["sourceQuests"] = { 33788 },	-- Cooking With Unstable Herbs
-					["coord"] = { 53.6, 57.2, 539 },
+					["coord"] = { 53.6, 57.2, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 76204 },	-- Fiona
 				}),
@@ -572,17 +572,17 @@ _.Zones =
 					["sourceQuests"] = { 36199 },	-- Moonshell Claws
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 26.9, 6.6, 539 },
+					["coord"] = { 26.9, 6.6, DRAENOR_SHADOWMOON_VALLEY },
 					["provider"] = { "n", 84372 },	-- Madari
 				}),
 				q(34806, {	-- Prune the Podlings
 					["sourceQuests"] = { 33263 },	-- Gloomshade Grove
-					["coord"] = { 47.0, 14.4, 539 },
+					["coord"] = { 47.0, 14.4, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 74547 },	-- Ryan Metcalf
 				}),
 				q(34897, {	-- Rangari Roundup
-					["coord"] = { 43.6, 51.6, 539 },
+					["coord"] = { 43.6, 51.6, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 80378 },	-- Rangari Navra
 				}),
@@ -590,18 +590,18 @@ _.Zones =
 					["sourceQuests"] = {
 						34355,	-- Dirty Rats
 					},
-					["coord"] = { 58.1, 93.9, 539 },
+					["coord"] = { 58.1, 93.9, DRAENOR_SHADOWMOON_VALLEY },
 					["provider"] = { "n", 78258 },	-- Rexxar
 				}),
 				q(36409, {	-- Restoration
-					["coord"] = { 47.0, 38.6, 539 },
+					["coord"] = { 47.0, 38.6, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 84830 },	-- Artificer Baleera
 					["sourceQuest"] = 36408,	-- A Power Lost
 					["requireSkill"] = JEWELCRAFTING,
 				}),
 				q(34996, {	-- Rotting Riverbeasts
-					["coord"] = { 52.6, 59.6, 539 },
+					["coord"] = { 52.6, 59.6, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 80859 },	-- Rangari Duula
 					["g"] = {
@@ -613,7 +613,7 @@ _.Zones =
 				}),
 				q(35631, {	-- Rulkan
 					["sourceQuests"] = { 33082 },	-- Ancestor's Memory
-					["coord"] = { 45.7, 25.5, 539 },
+					["coord"] = { 45.7, 25.5, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 75884 },	-- Rulkan
 					["g"] = {
@@ -625,7 +625,7 @@ _.Zones =
 						34365,	-- Releasing Rylak
 						34397,	-- Downsizing the Darktide
 					},
-					["coord"] = { 58.1, 93.9, 539 },
+					["coord"] = { 58.1, 93.9, DRAENOR_SHADOWMOON_VALLEY },
 					["provider"] = { "n", 78258 },	-- Rexxar
 				}),
 				q(33113, {	-- Shadowmoonwell
@@ -633,7 +633,7 @@ _.Zones =
 						34587,	-- Build Your Barracks
 						33359,	-- Meet Us at Starfall Post
 					},
-					["coord"] = { 29.4, 24.5, 539 },
+					["coord"] = { 29.4, 24.5, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 72623 },	-- Delas Moonfang
 				}),
@@ -643,7 +643,7 @@ _.Zones =
 						33765,	-- Dark Enemies
 						33070,	-- Think of the Children!
 					},
-					["coord"] = { 49.1, 38.6, 539 },
+					["coord"] = { 49.1, 38.6, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 74043 },	-- Prophet Velen
 					["g"] = {
@@ -655,7 +655,7 @@ _.Zones =
 				}),
 				q(35625, {	-- Shelly Hamby
 					["sourceQuests"] = { 33271 },	-- Game of Thorns
-					["coord"] = { 36.3, 19.3, 539 },
+					["coord"] = { 36.3, 19.3, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 76748 },	-- Shelly Hamby
 					["g"] = {
@@ -666,7 +666,7 @@ _.Zones =
 					["sourceQuests"] = { 35344 },	-- The Missing Father
 					["requireSkill"] = ALCHEMY,
 					["provider"] = { "n", 82496 },	-- Telos
-					["coord"] = { 54.0, 45.6, 539 },
+					["coord"] = { 54.0, 45.6, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(109558, {		-- A Treatise on the Alchemy of Draenor
@@ -694,18 +694,18 @@ _.Zones =
 						35861,	-- Garrison Campaign: Darktide Roost (A)
 						35876,	-- Garrison Campaign: Darktide Roost (H)
 					},
-					["coord"] = { 59.2, 82.2, 539 },
+					["coord"] = { 59.2, 82.2, DRAENOR_SHADOWMOON_VALLEY },
 					["provider"] = { "n", 77982 },	-- Rexxar
 				}),
 				q(33115, {	-- Shrouding Stones
 					["sourceQuests"] = { 33062 },	-- Catching his Eye
-					["coord"] = { 29.2, 25.6, 539 },
+					["coord"] = { 29.2, 25.6, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 77184 },	-- Archmage Khadgar
 				}),
 				q(35070, {	-- Shut 'er Down
 					["sourceQuests"] = { 34785 },	-- Hataaru, the Artificer
-					["coord"] = { 61.8, 29.6, 539 },
+					["coord"] = { 61.8, 29.6, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 80075 },	-- Exarch Hataaru
 				}),
@@ -713,16 +713,16 @@ _.Zones =
 					["sourceQuests"] = { 36239 },	-- A Mysterious Satchel
 					["requireSkill"] = INSCRIPTION,
 					["provider"] = { "n", 84724 },	-- Sha'la
-					["coord"] = { 57.8, 21.6, 539 },
+					["coord"] = { 57.8, 21.6, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(34997, {	-- Slumberbloom
-					["coord"] = { 53.0, 65.3, 539 },
+					["coord"] = { 53.0, 65.3, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 80707 },	-- Sleepy Rangari
 				}),
 				q(36287, {	-- Snatch 'n' Grab
-					["coord"] = { 60.8, 32.6, 539 },
+					["coord"] = { 60.8, 32.6, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 84825 },	-- Goggles
 					["sourceQuest"] = 36286,	-- Transponder 047-B
@@ -736,13 +736,13 @@ _.Zones =
 				}),
 				q(33066, {	-- Soul Shards of Summoning
 					["sourceQuests"] = { 33112 },	-- Ominous Portents
-					["coord"] = { 29.2, 25.6, 539 },
+					["coord"] = { 29.2, 25.6, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 77184 },	-- Archmage Khadgar
 				}),
 				q(34789, {	-- Speaker for the Dead
 					["sourceQuests"] = { 34791 },	-- Warning the Exarchs
-					["coord"] = { 62.3, 26.2, 539 },
+					["coord"] = { 62.3, 26.2, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 80073 },	-- Exarch Maladaar
 				}),
@@ -752,12 +752,12 @@ _.Zones =
 				}),
 				q(35905, {	-- Supply Drop
 					["sourceQuests"] = { 34788 },	-- Friend of the Exarchs
-					["coord"] = { 62.5, 26.2, 539 },
+					["coord"] = { 62.5, 26.2, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 80079 },	-- Exarch Naielle
 				}),
 				q(33808, {	-- Swamplighter Queen
-					["coord"] = { 53.5, 57.2, 539 },
+					["coord"] = { 53.5, 57.2, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 76204 },	-- Fiona
 					["g"] = {
@@ -768,17 +768,17 @@ _.Zones =
 					},
 				}),
 				q(33084, {	-- The Big Haul
-					["coord"] = { 62.4, 36.7, 539 },
+					["coord"] = { 62.4, 36.7, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 74233 },	-- Traevar Gunnermark
 				}),
 				q(34076, {	-- The Burial Fields (bonus objective)
-					["coord"] = { 44.9, 60.6, 539 },
+					["coord"] = { 44.9, 60.6, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(33076, {	-- The Clarity Elixir
 					["sourceQuests"] = { 33072 },	-- Into Twilight
-					["coord"] = { 40.6, 54.9, 539 },
+					["coord"] = { 40.6, 54.9, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 79043 },	-- Prophet Velen
 				}),
@@ -786,7 +786,7 @@ _.Zones =
 					["requireSkill"] = TAILORING,
 					["sourceQuests"] = { 36262 },	-- Ameeka, Master Tailor
 					["provider"] = { "n", 84523 },	-- Ameeka
-					["coord"] = { 58.2, 26.6, 539 },
+					["coord"] = { 58.2, 26.6, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(34054, {	-- The Dark Side of the Moon
@@ -802,7 +802,7 @@ _.Zones =
 				}),
 				q(35093, {	-- The Dark Side of the Moon
 					["provider"] = { "n", 77282 },	-- Prophet Velen
-					["coord"] = { 35.7, 36.8, 539 },
+					["coord"] = { 35.7, 36.8, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 35032,	-- Into Anguish
 					["description"] = "This version is offered if you abandon the quest and return to |cFFFFD700Prophet Velen|r.",
@@ -814,13 +814,13 @@ _.Zones =
 					},
 				}),
 				q(33078, {	-- The Dark that Blinds Us
-					["coord"] = { 42.1, 57.4, 539 },
+					["coord"] = { 42.1, 57.4, DRAENOR_SHADOWMOON_VALLEY },
 					["provider"] = { "n", 74121 },	-- Loreseeker Heidii
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(33256, {	-- The Defense of Karabor
 					["sourceQuests"] = { 33255 },	-- The Righteous March
-					["coord"] = { 77.3, 38.1, 539 },
+					["coord"] = { 77.3, 38.1, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 72413 },	-- Exarch Akama
 					["g"] = {
@@ -832,7 +832,7 @@ _.Zones =
 				}),
 				q(34782, {	-- The Exarch Council
 					["sourceQuests"] = { 34781 },	-- Defenstrations
-					["coord"] = { 56.1, 32.4, 539 },
+					["coord"] = { 56.1, 32.4, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 82348 },	-- Vindicator Maraad
 					["g"] = {
@@ -846,32 +846,32 @@ _.Zones =
 				}),
 				q(33059, {	-- The Fate of Karabor
 					["sourceQuests"] = { 33076 },	-- The Clarity Elixir
-					["coord"] = { 35.2, 49.1, 539 },
+					["coord"] = { 35.2, 49.1, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 79043 },	-- Prophet Velen
 				}),
 				q(33794, {	-- The Great Salvation
 					["sourceQuests"] = { 34043 },	-- Darkest Night
-					["coord"] = { 35.7, 36.8, 539 },
+					["coord"] = { 35.7, 36.8, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 81176 },	-- Rangari Saa'to
 				}),
 				q(34496, {	-- The Hills of Valuun (bonus objective)
-					["coord"] = { 65.1, 33.6, 539 },
+					["coord"] = { 65.1, 33.6, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(35344, {	-- The Missing Father
 					["requireSkill"] = ALCHEMY,
 					["sourceQuests"] = { 35343 },	-- The Young Alchemist
 					["provider"] = { "n", 82497 },	-- Abatha
-					["coord"] = { 55.8, 41.2, 539 },
+					["coord"] = { 55.8, 41.2, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(36241, {	-- The Power of Preservation
 					["sourceQuests"] = { 36240 },	-- Slow and Steady
 					["requireSkill"] = INSCRIPTION,
 					["provider"] = { "n", 84724 },	-- Sha'la
-					["coord"] = { 57.8, 21.6, 539 },
+					["coord"] = { 57.8, 21.6, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(111815),	-- Scribe's Quarters, Level 1
@@ -900,38 +900,38 @@ _.Zones =
 				}),
 				q(33255, {	-- The Righteous March
 					["sourceQuests"] = { 33837 },	-- Darkness Falls
-					["coord"] = { 52.2, 46.1, 539 },
+					["coord"] = { 52.2, 46.1, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 77312 },	-- Vindicator Maraad
 				}),
 				q(33533, {	-- The Secrets of Gorgrond
 					["sourceQuests"] = { 33256 },	-- The Defense of Karabor
 					["isBreadcrumb"] = true,
-					["coord"] = { 46.3, 38.6, 539 },
+					["coord"] = { 46.3, 38.6, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 73395 },	-- Yrel
 				}),
 				q(34728, {	-- The Shimmer Moor (bonus objective)
-					["coord"] = { 60.3, 65.0, 539 },
+					["coord"] = { 60.3, 65.0, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(35450, {	-- The Southern Wilds
 					["sourceQuests"] = { 34019 },	-- Shadows Awaken
 					["provider"] = { "n", 81126 },	-- Prelate Luari
-					["coord"] = { 45.8, 37.4, 539 },
+					["coord"] = { 45.8, 37.4, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
 				q(35444, {	-- The Southern Wilds
 					["sourceQuests"] = { 34019 },	-- Shadows Awaken
-					["coord"] = { 49.1, 37.1, 539 },
+					["coord"] = { 49.1, 37.1, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 82256 },	-- Farmer Gehaar
 					["isBreadcrumb"] = true,
 				}),
 				q(34790, {	-- The Sting
 					["sourceQuests"] = { 34783 },	-- Naielle, The Rangari
-					["coord"] = { 56.7, 23.0, 539 },
+					["coord"] = { 56.7, 23.0, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 82537 },	-- Rangari Chel
 				}),
@@ -944,7 +944,7 @@ _.Zones =
 				}),
 				q(34792, {	-- The Traitor's True Name
 					["sourceQuests"] = { 34789 },	-- Speaker for the Dead
-					["coord"] = { 66.3, 26.1, 539 },
+					["coord"] = { 66.3, 26.1, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 88972 },	-- Exarch Maladaar
 					["g"] = {
@@ -955,7 +955,7 @@ _.Zones =
 					},
 				}),
 				q(36169, {	-- The Trial of Champions
-					["coord"] = { 75.0, 57.8, 539 },
+					["coord"] = { 75.0, 57.8, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 84974 },	-- Exarch Maladaar
 					["sourceQuests"] = {
@@ -970,32 +970,32 @@ _.Zones =
 					},
 				}),
 				q(36164, {	-- The Trial of Courage
-					["coord"] = { 55.8, 32.8, 539 },
+					["coord"] = { 55.8, 32.8, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 80078 },	-- Exarch Akama
 					["sourceQuest"] = 36163,	-- Garrison Campaign: The Exarch's Call
 				}),
 				q(36168, {	-- The Trial of Faith
-					["coord"] = { 62.4, 26.2, 539 },
+					["coord"] = { 62.4, 26.2, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 80073 },	-- Exarch Maladaar
 					["sourceQuest"] = 36163,	-- Garrison Campaign: The Exarch's Call
 				}),
 				q(36167, {	-- The Trial of Heart
-					["coord"] = { 62.4, 26.2, 539 },
+					["coord"] = { 62.4, 26.2, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 80079 },	-- Exarch Naielle
 					["sourceQuest"] = 36163,	-- Garrison Campaign: The Exarch's Call
 				}),
 				q(33070, {	-- Think of the Children!
 					["sourceQuests"] = { 33075 },	-- A Hero's Welcome
-					["coord"] = { 46.5, 37.7, 539 },
+					["coord"] = { 46.5, 37.7, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 80196 },	-- Efee
 				}),
 				q(33116, {	-- To Catch a Shadow
 					["sourceQuests"] = { 33114 },	-- Forging the Soul Trap
-					["coord"] = { 19.1, 28.5, 539 },
+					["coord"] = { 19.1, 28.5, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 77417 },	-- Image of Archmage Khadgar
 					["g"] = {
@@ -1011,13 +1011,13 @@ _.Zones =
 				}),
 				q(35552, {	-- Trust No One
 					["sourceQuests"] = { 34787 },	-- Exarch Maladaar
-					["coord"] = { 59.5, 30.3, 539 },
+					["coord"] = { 59.5, 30.3, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "n", 80073 },	-- Exarch Maladaar
 				}),
 				q(33834, {	-- WANTED: Kliaa's Stinger
 					--["objectID"] = 237021,	-- Wanted: Kliaa's Stinger
-					["coord"] = { 26.4, 32.7, 539 },
+					["coord"] = { 26.4, 32.7, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["icon"] = "Interface\\Icons\\INV_Misc_ScrollRolled02c",
 					["g"] = {
@@ -1027,13 +1027,13 @@ _.Zones =
 					},
 				}),
 				q(33833, {	-- WANTED: Kuu'rat's Tusks
-					["coord"] = { 33.2, 30.7, 539 },
+					["coord"] = { 33.2, 30.7, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["icon"] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
 					--["objectID"] = 237016,	-- Wanted: Kuu'rat
 				}),
 				q(33836, {	-- WANTED: Maa'run's Hoof
-					["coord"] = { 57.5, 57.2, 539 },
+					["coord"] = { 57.5, 57.2, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["icon"] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
 					--["objectID"] = 232405,	-- Wanted Poster
@@ -1045,7 +1045,7 @@ _.Zones =
 				}),
 				q(34791, {	-- Warning the Exarchs
 					["sourceQuests"] = { 35552 },	-- Trust No One
-					["coord"] = { 60.9, 24.4, 539 },
+					["coord"] = { 60.9, 24.4, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["icon"] = "Interface\\Icons\\INV_Artifact_tome01",
 					--["objectID"] = 233229,	-- Shadow Council Tome of Curses

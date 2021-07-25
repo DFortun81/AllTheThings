@@ -915,10 +915,10 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, holiday(235474, {	-- Midsum
 		q(44582, {	-- Desecrate this Fire! — Shadowmoon Valley (WoD)
 			["isYearly"] = true,
 			["provider"] = { "o", 259871 },	-- Alliance Bonfire
-			["coord"] = { 42.8, 35.9, 539 },
+			["coord"] = { 42.8, 35.9, DRAENOR_SHADOWMOON_VALLEY },
 			["races"] = HORDE_ONLY,
 			["icon"] = "Interface\\Icons\\spell_fire_bluefire",
-			["maps"] = { 539 },	-- Shadowmoon Valley
+			["maps"] = { DRAENOR_SHADOWMOON_VALLEY },
 		}),
 		q(13442, {	-- Desecrate this Fire! — Sholazar Basin
 			["isYearly"] = true,
@@ -1405,9 +1405,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, holiday(235474, {	-- Midsum
 		q(44579, {	-- Honor the Flame — Shadowmoon Valley (WoD)
 			["provider"] = { "n", 114500 },	-- Shadowmoon Valley Flame Warden
 			["isYearly"] = true,
-			["coord"] = { 42.6, 36.0, 539 },
+			["coord"] = { 42.6, 36.0, DRAENOR_SHADOWMOON_VALLEY },
 			["races"] = ALLIANCE_ONLY,
-			["maps"] = { 539 },	-- Shadowmoon Valley
+			["maps"] = { DRAENOR_SHADOWMOON_VALLEY },
 		}),
 		q(13486, {	-- Honor the Flame — Sholazar Basin
 			["provider"] = { "n", 32802 },	-- Sholazar Basin Flame Warden

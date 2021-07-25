@@ -625,9 +625,9 @@ _.Holidays = applyholiday(MIDSUMMER_FIRE_FESTIVAL, { holiday(235474, {	-- Midsum
 					["maps"] = { GORGROND },
 				}),
 				crit(5, {	-- Shadowmoon Valley
-					["coord"] = { 42.6, 36.0, 539 },
+					["coord"] = { 42.6, 36.0, DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
-					["maps"] = { 539 },	-- Shadowmoon Valley
+					["maps"] = { DRAENOR_SHADOWMOON_VALLEY },
 				}),
 			},
 		}),
@@ -1393,9 +1393,9 @@ _.Holidays = applyholiday(MIDSUMMER_FIRE_FESTIVAL, { holiday(235474, {	-- Midsum
 			["maps"] = { 390, },	-- Vale of Eternal Blossoms
 		}),
 		ach(11277, {	-- Extinguishing Draenor
-			["coord"] = { 42.8, 35.9, 539 },
+			["coord"] = { 42.8, 35.9, DRAENOR_SHADOWMOON_VALLEY },
 			["races"] = HORDE_ONLY,
-			["maps"] = { 539, },	-- Shadowmoon Valley
+			["maps"] = { DRAENOR_SHADOWMOON_VALLEY },
 		}),
 		ach(11279, {	-- Extinguishing the Broken Isles
 			["coord"] = { 22.8, 58.2, 680 },

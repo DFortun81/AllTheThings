@@ -173,6 +173,7 @@ ECHO_ISLES = 463;
 VALLEY_OF_TRIALS = 461;
 
 -- Warlords of Draenor
+DRAENOR_SHADOWMOON_VALLEY = 539;
 GORGROND = 543;
 
 -- Battle for Azeroth

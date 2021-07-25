@@ -8,7 +8,7 @@ _.ExpansionFeatures =
 		m(582, {	-- Lunarfall
 			n(-99, {	-- Buildings
 				garrisonBuilding(207, {	-- Frostwall Shipyard (rank 1: 205, rank 2: 206, rank 3: 207)
-					["maps"] = { 539 },	-- Shadowmoon Valley
+					["maps"] = { DRAENOR_SHADOWMOON_VALLEY },
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						n(ACHIEVEMENTS, {
@@ -40,7 +40,7 @@ _.ExpansionFeatures =
 						n(QUESTS, {
 							q(39665, {	-- A True Naval Commander
 								["provider"] = { "n", 93812 },	-- Salty Jorren
-								["coord"] = { 28.6, 10.8, 539 },
+								["coord"] = { 28.6, 10.8, DRAENOR_SHADOWMOON_VALLEY },
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuest"] = 39666,	-- Equipping Our Fleet
 							}),
@@ -66,31 +66,31 @@ _.ExpansionFeatures =
 							}),
 							q(39404, {	-- Destroying the Competition
 								["provider"] = { "n", 93822 },	-- Merreck Vonder
-								["coord"] = { 28.2, 11.6, 539 },
+								["coord"] = { 28.2, 11.6, DRAENOR_SHADOWMOON_VALLEY },
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuest"] = 39056,	-- Naval Commander
 							}),
 							q(39666, {	-- Equipping Our Fleet
 								["provider"] = { "n", 93822 },	-- Merreck Vonder
-								["coord"] = { 28.2, 11.6, 539 },
+								["coord"] = { 28.2, 11.6, DRAENOR_SHADOWMOON_VALLEY },
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuest"] = 39655,	-- If At First You Fail, Try Again!
 							}),
 							q(39601, {	-- I Sunk Your Battleship
 								["provider"] = { "n", 93822 },	-- Merreck Vonder
-								["coord"] = { 28.2, 11.6, 539 },
+								["coord"] = { 28.2, 11.6, DRAENOR_SHADOWMOON_VALLEY },
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuest"] = 39665,	-- A True Naval Commander
 							}),
 							q(39655, {	-- If At First You Fail, Try Again!
 								["provider"] = { "n", 93822 },	-- Merreck Vonder
-								["coord"] = { 28.2, 11.6, 539 },
+								["coord"] = { 28.2, 11.6, DRAENOR_SHADOWMOON_VALLEY },
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuest"] = 39404,	-- Destroying the Competition
 							}),
 							q(39082, {	-- Let's Get To Work
 								["provider"] = { "n", 93822 },	-- Merreck Vonder
-								["coord"] = { 28.1, 10.6, 539 },
+								["coord"] = { 28.1, 10.6, DRAENOR_SHADOWMOON_VALLEY },
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuest"] = 38259,	-- All Hands on Deck
 							}),
@@ -116,19 +116,19 @@ _.ExpansionFeatures =
 							}),
 							q(39056, {	-- Naval Commander
 								["provider"] = { "n", 93822 },	-- Merreck Vonder
-								["coord"] = { 28.2, 10.6, 539 },
+								["coord"] = { 28.2, 10.6, DRAENOR_SHADOWMOON_VALLEY },
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuest"] = 39422,	-- Shipyard Report
 							}),
 							q(39055, {	-- Ship Shape
 								["provider"] = { "n", 95002 },	-- Yanas Seastrike
-								["coord"] = { 29.8, 10.6, 539 },
+								["coord"] = { 29.8, 10.6, DRAENOR_SHADOWMOON_VALLEY },
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuest"] = 39276,	-- Strange Tools
 							}),
 							q(39054, {	-- Shipbuilding
 								["provider"] = { "n", 94429 },	-- Solog Roark
-								["coord"] = { 29.7, 10.6, 539 },
+								["coord"] = { 29.7, 10.6, DRAENOR_SHADOWMOON_VALLEY },
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuest"] = 39082,	-- Let's Get To Work
 								["g"] = {
@@ -137,7 +137,7 @@ _.ExpansionFeatures =
 							}),
 							q(39276, {	-- Strange Tools
 								["provider"] = { "n", 94429 },	-- Solog Roark
-								["coord"] = { 29.7, 10.6, 539 },
+								["coord"] = { 29.7, 10.6, DRAENOR_SHADOWMOON_VALLEY },
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuest"] = 39054,	-- Shipbuilding
 							}),
@@ -148,7 +148,7 @@ _.ExpansionFeatures =
 							}),
 							q(38435, {	-- The Invasion of Tanaan
 								["provider"] = { "n", 95002 },	-- Yanas Seastrike
-								["coord"] = { 29.8, 10.6, 539 },
+								["coord"] = { 29.8, 10.6, DRAENOR_SHADOWMOON_VALLEY },
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuest"] = 39055,	-- Ship Shape
 							}),
@@ -158,7 +158,7 @@ _.ExpansionFeatures =
 							}),
 							q(39067, {	-- Upgrading The Fleet
 								["provider"] = { "n", 93822 },	-- Merreck Vonder
-								["coord"] = { 28.2, 11.6, 539 },
+								["coord"] = { 28.2, 11.6, DRAENOR_SHADOWMOON_VALLEY },
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuest"] = 39665,	-- A True Naval Commander
 							}),

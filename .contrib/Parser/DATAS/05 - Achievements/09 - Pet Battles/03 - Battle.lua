@@ -20,7 +20,7 @@ _.Achievements =
 					--["coord"] = { 31.2, 74.2, 390 },
 				}),
 				crit(2,  {	-- Briarpaw
-					--["coord"] = { 50.0, 31.2, 539 },
+					--["coord"] = { 50.0, 31.2, DRAENOR_SHADOWMOON_VALLEY },
 				}),
 				crit(3,  {	-- Chittermaw
 					--["coord"] = { 28.6, 33.8, 117 },
@@ -53,7 +53,7 @@ _.Achievements =
 					["coord"] = { 31.2, 74.2, 390 },
 				}),
 				crit(2,  {	-- Ashlei (Shadowmoon Valley, Draenor)
-					["coord"] = { 50.0, 31.2, 539 },
+					["coord"] = { 50.0, 31.2, DRAENOR_SHADOWMOON_VALLEY },
 				}),
 				crit(3,  {	-- Beegle Blastfuse (Howling Fjord)
 					["coord"] = { 28.6, 33.8, 117 },

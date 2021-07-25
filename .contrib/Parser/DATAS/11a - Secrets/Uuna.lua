@@ -16,7 +16,7 @@ _.Secrets =
 			MOUNT_HYJAL,
 			379,
 			390,
-			539,
+			DRAENOR_SHADOWMOON_VALLEY,
 			627,
 			680,
 		},
@@ -78,7 +78,7 @@ _.Secrets =
 				["sourceQuests"] = { 50105 },	-- Step 8: Shooting Stars
 				["description"] = "Take Uuna to the small campsite northwest of Path of the Light in Draenor's Shadowmoon Valley.  She will pick up the flower crown that is resting on one of the chairs around the campfire.",
 				["name"] = "Step 9: Flower Crown",
-				["coord"] = { 55.9, 41.1, 539 },
+				["coord"] = { 55.9, 41.1, DRAENOR_SHADOWMOON_VALLEY },
 				["icon"] = "Interface\\Icons\\inv_misc_toy_02",
 			}),
 			q(50107, {	-- Step 10: Uuna Gets Kidnapped
@@ -153,7 +153,7 @@ _.Secrets =
 					q(50147, {	-- Step 8: Temple of Karabor
 						["sourceQuests"] = { 50146 },	-- Step 7: Blackrock Mountain
 						["name"] = "Step 8: Temple of Karabor",
-						["coord"] = { 70.7, 46.7, 539 },
+						["coord"] = { 70.7, 46.7, DRAENOR_SHADOWMOON_VALLEY },
 						["icon"] = "Interface\\Icons\\inv_misc_toy_02",
 					}),
 				},

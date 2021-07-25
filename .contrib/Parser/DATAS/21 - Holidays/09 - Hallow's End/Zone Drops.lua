@@ -7,7 +7,7 @@ _.Holidays = bubbleDown({["u"] = 26},
 	holiday(235462, {	-- Hallow's End
 		["g"] = {
 			n(ZONEDROPS, {
-				["maps"] = { 539 },	-- Shadowmoon Valley (Draenor)
+				["maps"] = { DRAENOR_SHADOWMOON_VALLEY },
 				["g"] = {
 					i(128807, {	-- Coin of Many Faces (TOY!)
 						["crs"] = {

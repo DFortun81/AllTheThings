@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(572, {	-- Draenor
-		m(539, {	-- Shadowmoon Valley
+		m(DRAENOR_SHADOWMOON_VALLEY, {
 			n(ZONEDROPS, {
 				i(113554, {	-- Zomstrok (PET!)
 					["description"] = "Can be found on the islands southwest of Socrethar's Rise.",

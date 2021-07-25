@@ -6,7 +6,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 	inst(537, {	-- Shadowmoon Burial Grounds
 		["lvl"] = 100,
 		["maps"] = { 574, 575, 576 },
-		["coord"] = { 31.91, 42.55, 539 },	-- Shadowmoon Valley, Draenor
+		["coord"] = { 31.91, 42.55, DRAENOR_SHADOWMOON_VALLEY },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(9838, {	-- What A Strange, Interdimensional Trip It's Been

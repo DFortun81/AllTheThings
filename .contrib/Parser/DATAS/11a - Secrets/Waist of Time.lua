@@ -27,7 +27,7 @@ _.Secrets =
 			125,
 			TWILIGHT_HIGHLANDS,
 			379,
-			539,
+			DRAENOR_SHADOWMOON_VALLEY,
 			542,
 		},
 		["lvl"] = 110,
@@ -82,7 +82,7 @@ _.Secrets =
 				["questID"] = 52901,
 				["sourceQuests"] = { 52900 },
 				["description"] = "Draenor SMV\n\nBrown cup, next to the fire. \n\nThe Odd Cup reads:\n\n\"<Something is written here.>\n\nEase off fruit...\"",
-				["coord"] = { 45.7, 26.2, 539 },	-- Odd Cup
+				["coord"] = { 45.7, 26.2, DRAENOR_SHADOWMOON_VALLEY },	-- Odd Cup
 			}),
 			o(294102, {	-- Interesting Rock
 				["model"] = 939054,

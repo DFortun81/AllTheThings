@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(572, {	-- Draenor
-		m(539, {	-- Shadowmoon Valley (Draenor)
+		m(DRAENOR_SHADOWMOON_VALLEY, {
 			n(ACHIEVEMENTS, {
 				ach(9437),	-- A Demidos of Reality
 				ach(9069, {	-- An Awfully Big Adventure
@@ -13,7 +13,7 @@ _.Zones =
 					["filterID"] = 101,	-- Battle Pet
 					["g"] = {
 						crit(2, {	-- Ashlei
-							["coord"] = { 50.0, 31.2, 539 },
+							["coord"] = { 50.0, 31.2, DRAENOR_SHADOWMOON_VALLEY },
 							["cr"] = 87124,	-- Ashlei <Grand Master Pet Tamer>
 						}),
 					},
@@ -51,13 +51,13 @@ _.Zones =
 				ach(9436, {	-- It's the Stones! (Socrethar's Rise)
 					["description"] = "Must be on the daily quest Assault on Socrethar's Rise.",
 					["coords"] = {
-						{ 46.4, 71.6, 539 },
-						{ 49.5, 71.6, 539 },
-						{ 47.0, 78.0, 539 },
-						{ 47.0, 76.0, 539 },
-						{ 52.0, 76.3, 539 },
-						{ 44.8, 82.5, 539 },
-						{ 52.6, 80.4, 539 },
+						{ 46.4, 71.6, DRAENOR_SHADOWMOON_VALLEY },
+						{ 49.5, 71.6, DRAENOR_SHADOWMOON_VALLEY },
+						{ 47.0, 78.0, DRAENOR_SHADOWMOON_VALLEY },
+						{ 47.0, 76.0, DRAENOR_SHADOWMOON_VALLEY },
+						{ 52.0, 76.3, DRAENOR_SHADOWMOON_VALLEY },
+						{ 44.8, 82.5, DRAENOR_SHADOWMOON_VALLEY },
+						{ 52.6, 80.4, DRAENOR_SHADOWMOON_VALLEY },
 					},
 				}),
 				ach(9483),	-- I Was Framed! (Darktide Roost)

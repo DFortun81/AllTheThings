@@ -7,56 +7,56 @@ _.Toys =
 	n(-3,  {	-- World Event
 		n(-173, {	-- Timewalking
 			i(144072),	-- Adopted Puppy Crate
-			i(129929, {  -- Ever-Shifting Mirror
+			i(129929, {	-- Ever-Shifting Mirror
 				["description"] = "Go to the waypoint and use the toy.\nIt will spawn a portal between the two continents.\nUse this to quickly get to raids or zones you need to clear.\nA few portals of note are listed below:\n\nBRF<--->Gruul's Lair\nWoD Nagrand(north most)<--->SSC\nWoD SMV(right most)<--->Black Temple\nTanaan Jungle(HFC)<--->Magtheridon's Lair",
 				["coords"] = {
-					{ 50.3, 57.2, 550 },  -- Nagrand (Draenor) Oshugun Spirit Woods 50.35 57.21
-					{ 41.3, 59.0, NAGRAND },  -- (Outland) Oshugun Spirit Fields 41.27 59.04
+					{ 50.3, 57.2, 550 },	-- Nagrand (Draenor) Oshugun Spirit Woods 50.35 57.21
+					{ 41.3, 59.0, NAGRAND },	-- (Outland) Oshugun Spirit Fields 41.27 59.04
 
-					{ 88.3, 22.8, 550 },  -- Nagrand (Draenor) Zangar Shore 88.30 22.84
-					{ 68.2, 88.5, ZANGARMARSH },  -- (Outland) Entrance to Nagrand 68.2 88.46
+					{ 88.3, 22.8, 550 },	-- Nagrand (Draenor) Zangar Shore 88.30 22.84
+					{ 68.2, 88.5, ZANGARMARSH },	-- (Outland) Entrance to Nagrand 68.2 88.46
 
-					{ 71.4, 21.9, 550 },  -- Nagrand (Draenor) Throne of the Elements 71.41 21.94
-					{ 60.4, 25.6, NAGRAND },  -- (Outland) Throne of the Elements 60.36 25.56
+					{ 71.4, 21.9, 550 },	-- Nagrand (Draenor) Throne of the Elements 71.41 21.94
+					{ 60.4, 25.6, NAGRAND },	-- (Outland) Throne of the Elements 60.36 25.56
 
-					{ 81.1, 09.0, 550 },  -- Zangar Sea (Draenor) 'North-East coast of Nagrand, under water, top a mushroom' 81.24 8.98
-					{ 49.2, 55.4, ZANGARMARSH },  -- (Outland) Twinspire Ruins 'top a mushroom' 49.19 55.37
+					{ 81.1, 09.0, 550 },	-- Zangar Sea (Draenor) 'North-East coast of Nagrand, under water, top a mushroom' 81.24 8.98
+					{ 49.2, 55.4, ZANGARMARSH },	-- (Outland) Twinspire Ruins 'top a mushroom' 49.19 55.37
 
-					{ 21.8, 45.3, 525 },  -- Frostfire Ridge (Draenor) Gormaul Tower 21.82 45.31
-					{ 46.4, 64.1, BLADES_EDGE_MOUNTAINS },  -- (Outland) Bloodmaul Ravine 46.4 64.66
+					{ 21.8, 45.3, 525 },	-- Frostfire Ridge (Draenor) Gormaul Tower 21.82 45.31
+					{ 46.4, 64.1, BLADES_EDGE_MOUNTAINS },	-- (Outland) Bloodmaul Ravine 46.4 64.66
 
-					{ 37.5, 60.7, 525 },  -- Frostfire Ridge (Draenor) The Burning Glacier 37.53 60.71
-					{ 39.6, 77.4, BLADES_EDGE_MOUNTAINS },  -- (Outland) Bloodmaul Ravine 39.63 77.39
+					{ 37.5, 60.7, 525 },	-- Frostfire Ridge (Draenor) The Burning Glacier 37.53 60.71
+					{ 39.6, 77.4, BLADES_EDGE_MOUNTAINS },	-- (Outland) Bloodmaul Ravine 39.63 77.39
 
-					{ 49.4, 73.7, GORGROND },  -- (Draenor) Razor Bloom 49.41 73.66
-					{ 59.1, 71.7, BLADES_EDGE_MOUNTAINS },  -- (Outland) Razor Ridge 59.11 71.69
+					{ 49.4, 73.7, GORGROND },	-- (Draenor) Razor Bloom 49.41 73.66
+					{ 59.1, 71.7, BLADES_EDGE_MOUNTAINS },	-- (Outland) Razor Ridge 59.11 71.69
 
-					{ 50.8, 31.4, GORGROND },  -- (Draenor) Outside BRF 50.82 31.43
-					{ 66.2, 26.3, BLADES_EDGE_MOUNTAINS },  -- (Outand) Gruul's Lair 50.82 31.43
+					{ 50.8, 31.4, GORGROND },	-- (Draenor) Outside BRF 50.82 31.43
+					{ 66.2, 26.3, BLADES_EDGE_MOUNTAINS },	-- (Outand) Gruul's Lair 50.82 31.43
 
-					{ 70.3, 54.5, 534 },  -- Tanaan Jungle (Draenor) 'Path of Glory' Dark Portal 70.3 54.53
-					{ 80.4, 51.6, HELLFIRE_PENINSULA },  -- (Outland) The Path of Glory Dark Portal 80.38 51.6
+					{ 70.3, 54.5, 534 },	-- Tanaan Jungle (Draenor) 'Path of Glory' Dark Portal 70.3 54.53
+					{ 80.4, 51.6, HELLFIRE_PENINSULA },	-- (Outland) The Path of Glory Dark Portal 80.38 51.6
 
-					{ 49.6, 50.7, 534 },  -- Tanaan Jungle (Draenor) 'Path of Glory' HFC 49.56 50.73
-					{ 55.0, 48.9, HELLFIRE_PENINSULA },  -- (Outland) The Path of Glory HFC 54.97 48.9
+					{ 49.6, 50.7, 534 },	-- Tanaan Jungle (Draenor) 'Path of Glory' HFC 49.56 50.73
+					{ 55.0, 48.9, HELLFIRE_PENINSULA },	-- (Outland) The Path of Glory HFC 54.97 48.9
 
-					{ 60.0, 48.4, 539 },  -- Shadowmoon Valley (Draenor) Path of Light 'Crossroad' 60.02 48.37
-					{ 61.5, 46.1, SHADOWMOON_VALLEY },  -- (Outland) The Warden's Cage 61.53 46.07
+					{ 60.0, 48.4, DRAENOR_SHADOWMOON_VALLEY },	-- Path of Light 'Crossroad' 60.02 48.37
+					{ 61.5, 46.1, SHADOWMOON_VALLEY },	-- (Outland) The Warden's Cage 61.53 46.07
 
-					{ 32.3, 28.8, 539 },  -- Shadowmoon Valley (Draenor) Moonflower Valley 'Crossroad near Alliance garrison' 32.33 28.76
-					{ 27.1, 33.3, SHADOWMOON_VALLEY },  -- (Outland) Legion Hold 'Crossroad' 27.1 33.36
+					{ 32.3, 28.8, DRAENOR_SHADOWMOON_VALLEY },	-- Moonflower Valley 'Crossroad near Alliance garrison' 32.33 28.76
+					{ 27.1, 33.3, SHADOWMOON_VALLEY },	-- (Outland) Legion Hold 'Crossroad' 27.1 33.36
 
-					{ 47.4, 12.4, 542 },  -- Spires of Arak (Draenor) 'Ridge on the boarder with Talador' 47.4 12.45
-					{ 70.8, 75.9, TEROKKAR_FOREST },  -- (Outland) Skettis 70.78 75.88
+					{ 47.4, 12.4, 542 },	-- Spires of Arak (Draenor) 'Ridge on the boarder with Talador' 47.4 12.45
+					{ 70.8, 75.9, TEROKKAR_FOREST },	-- (Outland) Skettis 70.78 75.88
 
-					{ 57.9, 80.5, 535 },  -- Talador (Draenor) Deathweb Hollow 57.85 80.53
-					{ 45.4, 47.5, TEROKKAR_FOREST },  -- (Outland) The Bone Wastes 45.37 47.53
+					{ 57.9, 80.5, 535 },	-- Talador (Draenor) Deathweb Hollow 57.85 80.53
+					{ 45.4, 47.5, TEROKKAR_FOREST },	-- (Outland) The Bone Wastes 45.37 47.53
 
-					{ 50.4, 35.2, 535 },  -- Talador (Draenor) Shattrath City 'New' 50.41 35.19
-					{ 35.3, 12.5, TEROKKAR_FOREST },  -- (Outland) Shattrath City 'Old' 35.27 12.51
+					{ 50.4, 35.2, 535 },	-- Talador (Draenor) Shattrath City 'New' 50.41 35.19
+					{ 35.3, 12.5, TEROKKAR_FOREST },	-- (Outland) Shattrath City 'Old' 35.27 12.51
 
-					{ 68.4, 09.3, 535 },  -- Talador (Draenor) 'Path of Glory' 68.42 9.32
-					{ 82.6, 66.1, ZANGARMARSH },  -- (Outland) Boarder between Hellfire and Zangarmarsh 82.59 66.13
+					{ 68.4, 09.3, 535 },	-- Talador (Draenor) 'Path of Glory' 68.42 9.32
+					{ 82.6, 66.1, ZANGARMARSH },	-- (Outland) Boarder between Hellfire and Zangarmarsh 82.59 66.13
 				}
 			}),
 			i(151016),	-- Fractured Necrolyte Skull
@@ -90,7 +90,7 @@ _.Toys =
 			i(126931),	-- Seafarer's Slidewhistle
 			i(138202),	-- Sparklepony XL
 		}),
-		holiday(235442, {    -- Brewfest
+		holiday(235442, {	-- Brewfest
 			["u"] = 24,
 			["g"] = sharedData({["u"] = 24,}, {
 				i(116758),	-- Brewfest Banner
@@ -103,14 +103,14 @@ _.Toys =
 				i(116757),	-- Steamworks Sausage Grill
 			}),
 		}),
-		holiday(235445, {    -- Children's Week
+		holiday(235445, {	-- Children's Week
 			["u"] = 20,
 			["g"] = sharedData({["u"] = 20,}, {
 				i(69895),	-- Green Balloon
 				i(69896),	-- Yellow Balloon
 			}),
 		}),
-		holiday(307365, {    -- Day of the Dead
+		holiday(307365, {	-- Day of the Dead
 			["u"] = HOLIDAY_DAY_OF_THE_DEAD,
 			["g"] = sharedData({["u"] = HOLIDAY_DAY_OF_THE_DEAD,}, {
 				i(116856),	-- "Blooming Rose" Contender's Costume
@@ -120,7 +120,7 @@ _.Toys =
 				i(116891),	-- "Snowy Owl" Contender's Costume
 			}),
 		}),
-		holiday(235485, {    -- Feast of Winter Veil
+		holiday(235485, {	-- Feast of Winter Veil
 			["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL,
 			["g"] = sharedData({["u"] = HOLIDAY_FEAST_OF_WINTER_VEIL,}, {
 				i(54343),	-- Blue Crashin' Thrashin' Racer Controller
@@ -191,7 +191,7 @@ _.Toys =
 				i(116651),	-- True Love Prism
 			}),
 		}),
-		holiday(235471, {    -- Lunar Festival
+		holiday(235471, {	-- Lunar Festival
 			["u"] = 17,
 			["g"] = sharedData({["u"] = 17,}, {
 				i(165672),	-- Blue Dragon Body Costume
@@ -222,13 +222,13 @@ _.Toys =
 				i(165802),	-- Noble Gardener's Hearthstone
 			}),
 		}),
-		holiday(235466, {    -- Pilgrim's Bounty
+		holiday(235466, {	-- Pilgrim's Bounty
 			["u"] = HOLIDAY_PILGRIMS_BOUNTY,
 			["g"] = sharedData({["u"] = HOLIDAY_PILGRIMS_BOUNTY,}, {
 				i(116400),	-- Silver-Plated Turkey Shooter
 			}),
 		}),
-		holiday(235481, {    -- Pirates' Day
+		holiday(235481, {	-- Pirates' Day
 			["u"] = 23,
 			["g"] = sharedData({["u"] = 23,}, {
 				i(150547),	-- Jolly Roger
