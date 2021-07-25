@@ -20077,7 +20077,7 @@ app.events.QUEST_ACCEPTED = function(questID)
 				local warning;
 				for _,group in pairs(nextQuests) do
 					if not group.collected and app.RecursiveGroupRequirementsFilter(group) then
-						app.print(string.format(L["QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT"], title, app:Linkify(questID, "149bfd", "search:"..questID), group.text or RETRIEVING_DATA, app:Linkify(group.questID, "7f40bf", "search:"..group.questID)));
+						app.print(string.format(L["QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT"], title, app:Linkify(questID, "149bfd", "search:questID:"..questID), group.text or RETRIEVING_DATA, app:Linkify(group.questID, "7f40bf", "search:questID:"..group.questID)));
 						warning = true;
 					end
 				end
