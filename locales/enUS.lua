@@ -217,7 +217,7 @@ app.L = {
 	["REAGENT_CACHE_OUT_OF_DATE"] = "Reagent Cache is out-of-date and will be re-cached when opening your professions!";
 	["ARTIFACT_CACHE_OUT_OF_DATE"] = "Artifact Cache is out-of-date/inaccurate and will be re-cached when logging onto each character!";
 	["QUEST_LOOP"] = "Likely just broke out of an infinite source quest loop.";
-	["QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT"] = "Quest '%s' [%d] will prevent collection of Breadcrumb Quest '%s' [%d]";
+	["QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT"] = "Quest '%s' %s will prevent collection of Breadcrumb Quest '%s' %s";
 	["QUEST_OBJECTIVE_INVALID"] = "Invalid Quest Objective";
 	["REFRESHING_COLLECTION"] = "Refreshing collection...";
 	["DONE_REFRESHING"] = "Done refreshing collection.";
@@ -2497,10 +2497,10 @@ app.L = {
 		-- [id] = {header, description, name}, header: header id, 1-3 as above, 4 is legacy.
 		[1] = {1, "|CFFFF0000This was never available to players.|r", "Never Implemented"}, -- No Hope
 		[2] = {1, "|CFFFF0000This has been removed from the game.|r", "Removed From Game"}, -- No Hope
-		
+
 		-- Hidden Filter (General Tab)
 		[12] = {0, "|CFF00FFDEThis item or achievement requires Player vs Player activities or a currency related to those activities.|r", "Requires PvP"},
-		
+
 		-- Arbitrary Filters
 		[9] = {3, "|CFFFF0000The original source of obtaining this has been removed and is now only available via the Black Market Auction House.|r", "Black Market AH [BMAH]"},
 		[10] = {3, "|CFFFF0000Originally obtained via a TCG card that is no longer in print, but may still be available via the Black Market, In-Game, or Real Life Auction House.|r", "Trading Card Game [TCG]"},
@@ -2513,7 +2513,7 @@ app.L = {
 		[38] = {1, "|CFFFF0000This is only available to players that completed the Legendary Cloak quest chain during Mists of Pandaria or via the BMAH.|r", "Ordos - Legendary Cloak"},
 		[41] = {1, "|CFFFF0000This is only available to players that completed the associated Mage Tower Artifact Challenges and earned the base appearance.|r", "Mage Tower Appearances"},
 		[45] = {1, "|CFFFF0000Blizzard's Loot changes broke several Items and made them Unobtainable.\nHouse of Nobles Cape/Gurubashi Empire Greatcloak (both BFA Emissary Rewards) & Ogom the Mangler\nare currently broken and need to be fixed.|r", "Broken Loot"},
-		
+
 		-- Seasonal Filters
 		[24] = {4, "|CFF00FFDEThis requires the Brewfest Holiday to be Active.|r", "Brewfest"},
 		[20] = {4, "|CFF00FFDEThis requires the Children's Week Holiday to be Active.|r", "Children's Week"},
