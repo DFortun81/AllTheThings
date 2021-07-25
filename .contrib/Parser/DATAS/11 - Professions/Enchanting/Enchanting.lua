@@ -13,7 +13,7 @@ profession(ENCHANTING, {
 			["provider"] = { "i", 115281 },	-- Enchanted Highmaul Bracer
 			["races"] = ALLIANCE_ONLY,
 			["maps"] = {
-				525,	-- Frostfire Ridge
+				FROSTFIRE_RIDGE,
 				GORGROND,
 				550,	-- Nagrand
 				DRAENOR_SHADOWMOON_VALLEY,
@@ -28,7 +28,7 @@ profession(ENCHANTING, {
 			["provider"] = { "i", 115008 },	-- Enchanted Highmaul Bracer
 			["races"] = HORDE_ONLY,
 			["maps"] = {
-				525,	-- Frostfire Ridge
+				FROSTFIRE_RIDGE,
 				GORGROND,
 				550,	-- Nagrand
 				DRAENOR_SHADOWMOON_VALLEY,

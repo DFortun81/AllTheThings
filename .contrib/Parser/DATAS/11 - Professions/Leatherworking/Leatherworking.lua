@@ -6,7 +6,7 @@ profession(LEATHERWORKING, {
 			["provider"] = { "i", 114877 },	-- Dirty Note
 			["races"] = ALLIANCE_ONLY,
 			["maps"] = {
-				525,	-- Frostfire Ridge
+				FROSTFIRE_RIDGE,
 				GORGROND,
 				550,	-- Nagrand
 				DRAENOR_SHADOWMOON_VALLEY,
@@ -20,7 +20,7 @@ profession(LEATHERWORKING, {
 			["provider"] = { "i", 116173 },	-- Tattered Frostwolf Shroud
 			["races"] = HORDE_ONLY,
 			["maps"] = {
-				525,	-- Frostfire Ridge
+				FROSTFIRE_RIDGE,
 				GORGROND,
 				550,	-- Nagrand
 				DRAENOR_SHADOWMOON_VALLEY,

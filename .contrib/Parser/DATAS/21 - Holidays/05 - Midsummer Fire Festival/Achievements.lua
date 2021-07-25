@@ -684,12 +684,12 @@ _.Holidays = applyholiday(MIDSUMMER_FIRE_FESTIVAL, { holiday(235474, {	-- Midsum
 		ach(8042,  {	-- Extinguishing Pandaria
 			["coord"] = { 77.9, 33.9, 390 },
 			["races"] = ALLIANCE_ONLY,
-			["maps"] = { 390, },	-- Vale of Eternal Blossoms
+			["maps"] = { 390 },	-- Vale of Eternal Blossoms
 		}),
 		ach(11276, {	-- Extinguishing Draenor
-			["coord"] = { 72.8, 65.2, 525 },
+			["coord"] = { 72.8, 65.2, FROSTFIRE_RIDGE },
 			["races"] = ALLIANCE_ONLY,
-			["maps"] = { 525, },	-- Frostfire Ridge
+			["maps"] = { FROSTFIRE_RIDGE },
 		}),
 		ach(11278, {	-- Extinguishing the Broken Isles
 			["coord"] = { 30.3, 45.4, 680 },
@@ -1331,9 +1331,9 @@ _.Holidays = applyholiday(MIDSUMMER_FIRE_FESTIVAL, { holiday(235474, {	-- Midsum
 					["maps"] = { GORGROND },
 				}),
 				crit(5, {	-- Frostfire Ridge
-					["coord"] = { 72.6, 65.0, 525 },
+					["coord"] = { 72.6, 65.0, FROSTFIRE_RIDGE },
 					["races"] = HORDE_ONLY,
-					["maps"] = { 525 },	-- Frostfire Ridge
+					["maps"] = { FROSTFIRE_RIDGE },
 				}),
 			},
 		}),

@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(DRAENOR, {
-		m(525, {	-- Frostfire Ridge
+		m(FROSTFIRE_RIDGE, {
 			filter(101, {	-- Pet Battles
 				p(1427, {	-- Frostfur Rat
 					["crs"] = { 82715 },	-- Frostfur Rat
@@ -30,7 +30,7 @@ _.Zones =
 				}),
 				q(37205, {	-- Gargra
 					["isDaily"] = true,
-					["coord"] = { 68.5, 64.7, 525 },
+					["coord"] = { 68.5, 64.7, FROSTFIRE_RIDGE },
 					["provider"] = { "n", 87122 },	-- Gargra
 					["g"] = {
 						currency(116415),	-- Shiny Pet Charm x2

@@ -9,7 +9,7 @@ _.Secrets =
 		["modelID"] = 80456,
 		["description"] = "***Quest tracking enabled is required to see all the steps.*** \n\n***Before you can complete the last step of Baa'l, an upgraded Uuna is required, so it is recommended that you complete that secret first.***\n\nOther things you may want to have on hand for this secret:\n-Goblin Gliders (if you don't have flying)\n-Invisibility potions\n-Underlight Angler or potions to increase your swim speed\n",
 		["maps"] = {
-			525,
+			FROSTFIRE_RIDGE,
 			646,
 			862,
 			863,
@@ -140,7 +140,7 @@ _.Secrets =
 			}),
 			n(141909, {	-- Baa'l
 				["questID"] = 52828,
-				["coord"] = { 62.3, 22.9, 525 },
+				["coord"] = { 62.3, 22.9, FROSTFIRE_RIDGE },
 				["sourceQuest"] = 52827,	-- Step 14: Thirteenth Ordinary Pebble
 				["description"] = "|cFFFFFFFFStep 15:|r Head to Frostfire Ridge.  You'll find Baa'l at the coordinates provided, in a volcano, just chilling, like you do.\n\nSummon your empowered Uuna to weaken him, and then attack!  Dragonkin pets are a wise choice, but he's very easy to beat post-Uuna Reckoning regardless.\n\nEnjoy your new pet!  Hail Satan!\n",
 				["g"] = {

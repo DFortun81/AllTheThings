@@ -11,7 +11,7 @@ profession(INSCRIPTION, {
 			["provider"] = { "i", 114984 },	-- Mysterious Satchel
 			["races"] = ALLIANCE_ONLY,
 			["maps"] = {
-				525,	-- Frostfire Ridge
+				FROSTFIRE_RIDGE,
 				GORGROND,
 				550,	-- Nagrand
 				DRAENOR_SHADOWMOON_VALLEY,
@@ -26,7 +26,7 @@ profession(INSCRIPTION, {
 			["provider"] = { "i", 115593 },	-- Illegible Sootstained Notes
 			["races"] = HORDE_ONLY,
 			["maps"] = {
-				525,	-- Frostfire Ridge
+				FROSTFIRE_RIDGE,
 				GORGROND,
 				550,	-- Nagrand
 				DRAENOR_SHADOWMOON_VALLEY,

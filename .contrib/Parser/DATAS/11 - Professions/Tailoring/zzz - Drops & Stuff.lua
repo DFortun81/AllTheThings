@@ -15,7 +15,7 @@ profession(TAILORING, {
 			["provider"] = { "i", 114972 },	-- Cryptic Tome of Tailoring
 			["races"] = ALLIANCE_ONLY,
 			["maps"] = {
-				525,	-- Frostfire Ridge
+				FROSTFIRE_RIDGE,
 				GORGROND,
 				550,	-- Nagrand
 				DRAENOR_SHADOWMOON_VALLEY,
@@ -29,7 +29,7 @@ profession(TAILORING, {
 			["provider"] = { "i", 114973 },	-- Frostwolf Tailoring Kit
 			["races"] = HORDE_ONLY,
 			["maps"] = {
-				525,	-- Frostfire Ridge
+				FROSTFIRE_RIDGE,
 				GORGROND,
 				550,	-- Nagrand
 				DRAENOR_SHADOWMOON_VALLEY,

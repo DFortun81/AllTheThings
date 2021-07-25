@@ -876,7 +876,7 @@ _.Zones =
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(175885, {	-- Sinful Aspirant's Necklace
-							["cost"] = { { "c", 1792,525} },
+							["cost"] = { { "c", 1792, 525} },
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(178265, {	-- Sinful Aspirant's Drape
@@ -896,7 +896,7 @@ _.Zones =
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(178329, {	-- Sinful Aspirant's Signet
-							["cost"] = { { "c", 1792, 525  } },
+							["cost"] = { { "c", 1792, 525 } },
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						i(178335, {	-- Sinful Aspirant's Pendant

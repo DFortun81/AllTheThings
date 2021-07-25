@@ -8,7 +8,7 @@ _.ExpansionFeatures =
 		m(590, {	-- Frostwall
 			n(-99, {	-- Buildings
 				garrisonBuilding(207, {	-- Frostwall Shipyard (rank 1: 205, rank 2: 206, rank 3: 207)
-					["maps"] = { 525 },	-- Frostfire Ridge
+					["maps"] = { FROSTFIRE_RIDGE },
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						n(ACHIEVEMENTS, {

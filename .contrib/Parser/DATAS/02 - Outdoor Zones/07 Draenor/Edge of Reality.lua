@@ -9,12 +9,12 @@ _.Zones =
 			["description"] = "When you click on the Edge of Reality, it will teleport you.  Click on the egg to receive the mount.\n\nIf you are not on your own realm when you click on the portal, you will NOT be teleported and the mount will be mailed to you.",
 			["coords"] = {
 				-- Frostfire Ridge
-				{ 51.1, 19.86, 525 },
-				{ 52.4, 18.18, 525 },
-				{ 53.8, 17.46, 525 },
-				{ 47.7, 27.57, 525 },
-				{ 39.0, 26.00, 525 },
-				{ 47.7, 27.57, 525 },
+				{ 51.1, 19.86, FROSTFIRE_RIDGE },
+				{ 52.4, 18.18, FROSTFIRE_RIDGE },
+				{ 53.8, 17.46, FROSTFIRE_RIDGE },
+				{ 47.7, 27.57, FROSTFIRE_RIDGE },
+				{ 39.0, 26.00, FROSTFIRE_RIDGE },
+				{ 47.7, 27.57, FROSTFIRE_RIDGE },
 
 				-- Gorgrond
 				{ 51.6, 38.8, GORGROND },
@@ -52,7 +52,7 @@ _.Zones =
 				{ 52.3, 25.8, 535 },
 			},
 			["maps"] = {
-				525,	-- Frostfire Ridge
+				FROSTFIRE_RIDGE,
 				GORGROND,
 				550,	-- Nagrand (Draenor)
 				DRAENOR_SHADOWMOON_VALLEY,

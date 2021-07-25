@@ -94,8 +94,8 @@ _.Achievements =
 				crit(15, {	-- Flowing Pandaren Spirit (Dread Wastes)
 					["coord"] = { 61.2, 87.6, 422 },
 				}),
-				crit(16, {	-- Gargra (Frostfire Ridge)
-					["coord"] = { 68.6, 64.6, 525 },
+				crit(16, {	-- Gargra
+					["coord"] = { 68.6, 64.6, FROSTFIRE_RIDGE },
 				}),
 				crit(17, {	-- Goz Banefury
 					["coord"] = { 56.6, 56.8, TWILIGHT_HIGHLANDS },

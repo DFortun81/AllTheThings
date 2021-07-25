@@ -22,10 +22,10 @@ _.Toys =
 					{ 81.1, 09.0, 550 },	-- Zangar Sea (Draenor) 'North-East coast of Nagrand, under water, top a mushroom' 81.24 8.98
 					{ 49.2, 55.4, ZANGARMARSH },	-- (Outland) Twinspire Ruins 'top a mushroom' 49.19 55.37
 
-					{ 21.8, 45.3, 525 },	-- Frostfire Ridge (Draenor) Gormaul Tower 21.82 45.31
+					{ 21.8, 45.3, FROSTFIRE_RIDGE },	-- Gormaul Tower 21.82 45.31
 					{ 46.4, 64.1, BLADES_EDGE_MOUNTAINS },	-- (Outland) Bloodmaul Ravine 46.4 64.66
 
-					{ 37.5, 60.7, 525 },	-- Frostfire Ridge (Draenor) The Burning Glacier 37.53 60.71
+					{ 37.5, 60.7, FROSTFIRE_RIDGE },	-- The Burning Glacier 37.53 60.71
 					{ 39.6, 77.4, BLADES_EDGE_MOUNTAINS },	-- (Outland) Bloodmaul Ravine 39.63 77.39
 
 					{ 49.4, 73.7, GORGROND },	-- (Draenor) Razor Bloom 49.41 73.66

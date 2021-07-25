@@ -5,14 +5,14 @@
 _.Zones =
 {
 	m(DRAENOR, {
-		m(525, {	-- Frostfire Ridge
+		m(FROSTFIRE_RIDGE, {
 			n(ACHIEVEMENTS, {
 				ach(9069, {	-- An Awfully Big Adventure
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
 					["g"] = {
 						crit(16, {	-- Gargra
-							["coord"] = { 68.6, 64.6, 525 },
+							["coord"] = { 68.6, 64.6, FROSTFIRE_RIDGE },
 							["cr"] = 87122,	-- Gargra <Grand Master Pet Tamer>
 						}),
 					},

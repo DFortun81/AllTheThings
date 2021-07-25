@@ -401,10 +401,10 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, holiday(235474, {	-- Midsum
 		q(44583, {	-- Desecrate this Fire! — Frostfire Ridge
 			["isYearly"] = true,
 			["provider"] = { "o", 259870 },	-- Horde Bonfire
-			["coord"] = { 72.8, 65.2, 525 },
+			["coord"] = { 72.8, 65.2, FROSTFIRE_RIDGE },
 			["races"] = ALLIANCE_ONLY,
 			["icon"] = "Interface\\Icons\\spell_fire_fire",
-			["maps"] = { 525, },	-- Frostfire Ridge
+			["maps"] = { FROSTFIRE_RIDGE },
 		}),
 		q(11774, {	-- Desecrate this Fire! — Ghostlands
 			["isYearly"] = true,
@@ -1701,9 +1701,9 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, holiday(235474, {	-- Midsum
 		q(44580, {	-- Honor the Flame — Frostfire Ridge
 			["provider"] = { "n", 114499 },	-- Frostfire Ridge Flame Keeper
 			["isYearly"] = true,
-			["coord"] = { 72.6, 65.0, 525 },
+			["coord"] = { 72.6, 65.0, FROSTFIRE_RIDGE },
 			["races"] = HORDE_ONLY,
-			["maps"] = { 525 },	-- Frostfire Ridge
+			["maps"] = { FROSTFIRE_RIDGE },
 		}),
 		q(11850, {	-- Honor the Flame — Ghostlands
 			["provider"] = { "n", 25933 },	-- Ghostlands Flame Keeper

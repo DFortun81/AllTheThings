@@ -6,7 +6,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 	inst(385, {	-- Bloodmaul Slag Mines
 		["lvl"] = 90,
 		["mapID"] = 573,
-		["coord"] = { 49.93, 24.8, 525 },	-- Frostfire Ridge, Draenor
+		["coord"] = { 49.93, 24.8, FROSTFIRE_RIDGE },
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(9838, {	-- What A Strange, Interdimensional Trip It's Been
