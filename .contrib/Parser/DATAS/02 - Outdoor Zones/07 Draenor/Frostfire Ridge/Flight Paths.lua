@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(572, {	-- Draenor
+	m(DRAENOR, {
 		m(525, {	-- Frostfire Ridge
 			n(FLIGHT_PATHS, {
 				fp(1387, {	-- Bladespire Citadel, Frostfire Ridge

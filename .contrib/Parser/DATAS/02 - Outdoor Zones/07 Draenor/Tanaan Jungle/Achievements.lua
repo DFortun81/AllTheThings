@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(572, {	-- Draenor
+	m(DRAENOR, {
 		m(534, {	-- Tanaan Jungle
 			n(ACHIEVEMENTS, {
 				ach(10072, {	-- Rumble in the Jungle (A)

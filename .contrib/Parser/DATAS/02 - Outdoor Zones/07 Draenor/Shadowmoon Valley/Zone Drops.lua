@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(572, {	-- Draenor
+	m(DRAENOR, {
 		m(DRAENOR_SHADOWMOON_VALLEY, {
 			n(ZONEDROPS, {
 				i(113554, {	-- Zomstrok (PET!)

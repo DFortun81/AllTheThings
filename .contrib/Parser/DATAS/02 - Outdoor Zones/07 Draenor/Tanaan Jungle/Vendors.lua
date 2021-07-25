@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(572, {	-- Draenor
+	m(DRAENOR, {
 		m(534, {	-- Tanaan Jungle
 			n(VENDORS, {
 				n(95424, {	-- Dawn-Seeker Krisek <Order of the Awakened>

@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(572, {	-- Draenor
+	m(DRAENOR, {
 		m(550, {	-- Nagrand (Draenor)
 			n(QUESTS, {
 				q(34719, {	-- ... and My Hammer

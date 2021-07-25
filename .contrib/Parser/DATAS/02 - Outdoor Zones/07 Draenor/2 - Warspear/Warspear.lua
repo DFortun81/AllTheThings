@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(572, {	-- Draenor
+	m(DRAENOR, {
 		m(624, {	-- Warspear
 			["achievementID"] = 9215,	-- Hero of Warspear
 			["isRaid"] = true,

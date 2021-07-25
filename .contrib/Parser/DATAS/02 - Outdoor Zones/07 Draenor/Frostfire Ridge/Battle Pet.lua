@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(572, {	-- Draenor
+	m(DRAENOR, {
 		m(525, {	-- Frostfire Ridge
 			filter(101, {	-- Pet Battles
 				p(1427, {	-- Frostfur Rat

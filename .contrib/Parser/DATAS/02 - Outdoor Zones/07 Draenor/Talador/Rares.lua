@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(572, {	-- Draenor
+	m(DRAENOR, {
 		m(535, {	-- Talador
 			n(RARES, {
 				-- Coords have been confirmed on rares except for Silthide and some noted rares on longer spawn timers.

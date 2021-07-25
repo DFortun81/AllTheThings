@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(572, {	-- Draenor
+	m(DRAENOR, {
 		m(534, {	-- Tanaan Jungle
 			n(FLIGHT_PATHS, {
 				fp(1643, {	-- Aktar's Post, Tanaan Jungle

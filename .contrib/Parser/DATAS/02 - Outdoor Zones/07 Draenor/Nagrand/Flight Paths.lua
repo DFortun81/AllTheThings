@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(572, {	-- Draenor
+	m(DRAENOR, {
 		m(550, {	-- Nagrand (Draenor)
 			n(FLIGHT_PATHS, {
 				fp(1574, {	-- Joz's Rylaks, Nagrand

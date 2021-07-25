@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(572, {	-- Draenor
+	m(DRAENOR, {
 		m(525, {	-- Frostfire Ridge
 			n(TREASURES, {
 				o(226955, {	-- Arena Master's War Horn

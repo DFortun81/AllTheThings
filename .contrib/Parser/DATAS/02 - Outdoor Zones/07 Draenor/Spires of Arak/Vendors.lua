@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(572, {	-- Draenor
+	m(DRAENOR, {
 		m(542, {	-- Spires of Arak
 			n(VENDORS, {
 				n(-390, {	-- Smuggler's Den

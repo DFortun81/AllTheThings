@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(572, {	-- Draenor
+	m(DRAENOR, {
 		m(550, {	-- Nagrand (Draenor)
 			n(VENDORS, {
 				n(82754, {	-- Nurse Lizz <First Aid>

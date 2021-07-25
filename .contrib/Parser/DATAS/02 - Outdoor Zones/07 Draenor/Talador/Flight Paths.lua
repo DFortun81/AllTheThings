@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(572, {	-- Draenor
+	m(DRAENOR, {
 		m(535, {	-- Talador
 			n(FLIGHT_PATHS, {
 				fp(1451, {	-- Anchorite's Sojourn, Talador

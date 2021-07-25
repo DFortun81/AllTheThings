@@ -5,7 +5,7 @@
 -- TODO: make real gear categories, not just comments
 _.Zones =
 {
-	m(572, {	-- Draenor
+	m(DRAENOR, {
 		m(542, {	-- Spires of Arak
 			n(TREASURES, {
 				o(235313, {	-- Abandoned Mining Pick (cannot be transmogged)

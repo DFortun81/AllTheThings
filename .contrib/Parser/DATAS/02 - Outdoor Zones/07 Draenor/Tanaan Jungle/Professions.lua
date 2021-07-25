@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(572, {	-- Draenor
+	m(DRAENOR, {
 		m(534, {	-- Tanaan Jungle
 			n(-38, {	-- Profession
 				o(243334, {	-- Withered Herb

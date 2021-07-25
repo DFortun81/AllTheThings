@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(572, {	-- Draenor
+	m(DRAENOR, {
 		m(534, {	-- Tanaan Jungle
 			n(TREASURES, {
 				o(241692, {	-- Axe of the Weeping Wolf

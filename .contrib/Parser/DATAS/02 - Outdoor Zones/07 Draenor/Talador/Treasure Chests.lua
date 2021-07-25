@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(572, {	-- Draenor
+	m(DRAENOR, {
 		m(535, {	-- Talador
 			n(TREASURES, {
 				n(77664, {	-- Aarko

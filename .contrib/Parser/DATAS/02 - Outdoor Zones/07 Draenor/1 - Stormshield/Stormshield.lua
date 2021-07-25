@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(572, {	-- Draenor
+	m(DRAENOR, {
 		m(622, {	-- Stormshield
 			["achievementID"] = 9214,	-- Hero of Stormshield
 			["isRaid"] = true,

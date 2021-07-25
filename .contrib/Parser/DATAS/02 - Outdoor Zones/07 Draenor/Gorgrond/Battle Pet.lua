@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(572, {	-- Draenor
+	m(DRAENOR, {
 		m(GORGROND, {
 			filter(101, {	-- Pet Battles
 				p(1465, {	-- Amberbarb Wasp

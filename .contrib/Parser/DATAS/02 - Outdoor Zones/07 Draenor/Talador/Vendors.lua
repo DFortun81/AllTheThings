@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(572, {	-- Draenor
+	m(DRAENOR, {
 		m(535, {	-- Talador
 			n(VENDORS, {
 				n(84212, {	-- Kazbala

@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(572, {	-- Draenor
+	m(DRAENOR, {
 		m(542, {	-- Spires of Arak
 			n(QUESTS, {
 				n(-391, {	-- Stroktron Brewery

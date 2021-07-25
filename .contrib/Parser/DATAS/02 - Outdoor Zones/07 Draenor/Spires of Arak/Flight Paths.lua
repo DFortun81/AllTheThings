@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(572, {	-- Draenor
+	m(DRAENOR, {
 		m(542, {	-- Spires of Arak
 			n(FLIGHT_PATHS, {
 				fp(1513, {	-- Apexis Excavation, Spires of Arak

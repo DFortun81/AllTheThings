@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(572, {	-- Draenor
+	m(DRAENOR, {
 		m(534, {	-- Tanaan Jungle
 			n(RARES, {
 				-- Coords have been confirmed on rares except for some noted rares on longer spawn timers.

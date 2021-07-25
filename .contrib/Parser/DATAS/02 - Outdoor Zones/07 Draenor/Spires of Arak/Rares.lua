@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(572, {	-- Draenor
+	m(DRAENOR, {
 		m(542, {	-- Spires of Arak
 			n(RARES, {
 				-- Coords have been confirmed on rares except for Edge of Reality and some noted rares on longer spawn timers.

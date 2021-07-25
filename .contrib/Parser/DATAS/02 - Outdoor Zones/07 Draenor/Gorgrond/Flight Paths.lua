@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(572, {	-- Draenor
+	m(DRAENOR, {
 		m(GORGROND, {
 			n(FLIGHT_PATHS, {
 				fp(1511, {	-- Bastion Rise, Gorgrond

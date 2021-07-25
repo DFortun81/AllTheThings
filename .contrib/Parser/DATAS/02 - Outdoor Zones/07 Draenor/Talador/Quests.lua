@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(572, {	-- Draenor
+	m(DRAENOR, {
 		m(535, {	-- Talador
 			n(QUESTS, {
 				n(-360, {	-- Arcane Sanctum

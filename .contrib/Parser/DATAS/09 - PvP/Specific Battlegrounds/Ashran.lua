@@ -377,7 +377,7 @@ _.PVP =
 						["g"] = {
 							i(135546, {	-- Fel-Touched Crate of Battlefield Goods
 								["sym"] = {
-									{"select", "mapID", 572 },	-- Select the "Draenor" header
+									{"select", "mapID", DRAENOR },	-- Select the "Draenor" header
 									{"pop"},	-- Discard the "Draenor" header and acquire the children.
 									{"where", "mapID", 588 },	-- Select the "Ashran" header
 									{"pop"},	-- Discard the "Ashran" header and acquire the children.
@@ -397,7 +397,7 @@ _.PVP =
 						["g"] = {
 							i(135546, {	-- Fel-Touched Crate of Battlefield Goods
 								["sym"] = {
-									{"select", "mapID", 572 },	-- Select the "Draenor" header
+									{"select", "mapID", DRAENOR },	-- Select the "Draenor" header
 									{"pop"},	-- Discard the "Draenor" header and acquire the children.
 									{"where", "mapID", 588 },	-- Select the "Ashran" header
 									{"pop"},	-- Discard the "Ashran" header and acquire the children.
@@ -417,7 +417,7 @@ _.PVP =
 						["g"] = {
 							i(135546, {	-- Fel-Touched Crate of Battlefield Goods
 								["sym"] = {
-									{"select", "mapID", 572 },	-- Select the "Draenor" header
+									{"select", "mapID", DRAENOR },	-- Select the "Draenor" header
 									{"pop"},	-- Discard the "Draenor" header and acquire the children.
 									{"where", "mapID", 588 },	-- Select the "Ashran" header
 									{"pop"},	-- Discard the "Ashran" header and acquire the children.

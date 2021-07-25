@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(572, {	-- Draenor
+	m(DRAENOR, {
 		m(525, {	-- Frostfire Ridge
 			n(QUESTS, {
 				q(34228, {	-- A Clew of Worms

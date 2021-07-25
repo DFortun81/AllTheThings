@@ -4,7 +4,7 @@
 
 _.Zones =
 {
-	m(572, {	-- Draenor
+	m(DRAENOR, {
 		m(DRAENOR_SHADOWMOON_VALLEY, {
 			filter(101, {	-- Pet Battles
 				p(407, {	-- Forest Spiderling
