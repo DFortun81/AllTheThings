@@ -5,14 +5,14 @@
 _.Zones =
 {
 	m(DRAENOR, {
-		m(550, {	-- Nagrand (Draenor)
+		m(DRAENOR_NAGRAND, {
 			n(ACHIEVEMENTS, {
 				ach(9069, {	-- An Awfully Big Adventure
 					["collectible"] = false,
 					["filterID"] = 101,	-- Battle Pet
 					["g"] = {
 						crit(38, {	-- Tarr the Terrible
-							["coord"] = { 56.2, 9.80, 550 },
+							["coord"] = { 56.2, 9.80, DRAENOR_NAGRAND },
 							["cr"] = 87110,	-- Tarr the Terrible <Grand Master Pet Tamer>
 						}),
 					},
@@ -20,52 +20,52 @@ _.Zones =
 				ach(9548,  {	-- Buried Treasures (Mok'gol Watchpost)
 					crit(1, {	-- Garrosh's Shackles
 						["questID"] = 37130,
-						["coord"] = { 41.7, 37.5, 550 },
+						["coord"] = { 41.7, 37.5, DRAENOR_NAGRAND },
 					}),
 					crit(2, {	-- Warsong Relics
 						["questID"] = 37132,
-						["coord"] = { 45.5, 36.8, 550 },
+						["coord"] = { 45.5, 36.8, DRAENOR_NAGRAND },
 					}),
 					crit(3, {	-- Warsong Remains
 						["questID"] = 37133,
 						["description"] = "Kill Mok'gol Wolfsong for a Wolf Totem, dig in dirt piles as a spectral wolf at a chance to find this item.",
 						["coords"] = {
-							{ 43.0, 35.6, 550 },
-							{ 45.7, 37.1, 550 },
-							{ 43.6, 38.8, 550 },
-							{ 44.0, 34.3, 550 },
-							{ 42.7, 37.6, 550 },
-							{ 43.3, 36.6, 550 },
+							{ 43.0, 35.6, DRAENOR_NAGRAND },
+							{ 45.7, 37.1, DRAENOR_NAGRAND },
+							{ 43.6, 38.8, DRAENOR_NAGRAND },
+							{ 44.0, 34.3, DRAENOR_NAGRAND },
+							{ 42.7, 37.6, DRAENOR_NAGRAND },
+							{ 43.3, 36.6, DRAENOR_NAGRAND },
 						},
 					}),
 					crit(4, {	-- Stolen Draenei Tome
 						["coords"] = {
-							{ 45.3, 33.8, 550 },
-							{ 45.1, 38.2, 550 },
-							{ 42.0, 34.0, 550 },
+							{ 45.3, 33.8, DRAENOR_NAGRAND },
+							{ 45.1, 38.2, DRAENOR_NAGRAND },
+							{ 42.0, 34.0, DRAENOR_NAGRAND },
 						},
 					}),
 					crit(5, {	-- Wolf Pup Remains
 						["questID"] = 37135,
 						["description"] = "Kill Mok'gol Wolfsong for a Wolf Totem, dig in dirt piles as a spectral wolf at a chance to find this item.",
 						["coords"] = {
-							{ 43.0, 35.6, 550 },
-							{ 45.7, 37.1, 550 },
-							{ 43.6, 38.8, 550 },
-							{ 44.0, 34.3, 550 },
-							{ 42.7, 37.6, 550 },
-							{ 43.3, 36.6, 550 },
+							{ 43.0, 35.6, DRAENOR_NAGRAND },
+							{ 45.7, 37.1, DRAENOR_NAGRAND },
+							{ 43.6, 38.8, DRAENOR_NAGRAND },
+							{ 44.0, 34.3, DRAENOR_NAGRAND },
+							{ 42.7, 37.6, DRAENOR_NAGRAND },
+							{ 43.3, 36.6, DRAENOR_NAGRAND },
 						},
 					}),
 					crit(6, {	-- Gnarled Bone
 						["description"] = "Kill Mok'gol Wolfsong for a Wolf Totem, dig in dirt piles as a spectral wolf at a chance to find this item.",
 						["coords"] = {
-							{ 43.0, 35.6, 550 },
-							{ 45.7, 37.1, 550 },
-							{ 43.6, 38.8, 550 },
-							{ 44.0, 34.3, 550 },
-							{ 42.7, 37.6, 550 },
-							{ 43.3, 36.6, 550 },
+							{ 43.0, 35.6, DRAENOR_NAGRAND },
+							{ 45.7, 37.1, DRAENOR_NAGRAND },
+							{ 43.6, 38.8, DRAENOR_NAGRAND },
+							{ 44.0, 34.3, DRAENOR_NAGRAND },
+							{ 42.7, 37.6, DRAENOR_NAGRAND },
+							{ 43.3, 36.6, DRAENOR_NAGRAND },
 						},
 					}),
 				}),
@@ -74,7 +74,7 @@ _.Zones =
 					["g"] = {
 						crit(1),	-- Krog the Dominator's Hammer
 						crit(2, {	-- Thak the Conqueror's Bust
-							["coord"] = { 41.2, 12.2, 550 },
+							["coord"] = { 41.2, 12.2, DRAENOR_NAGRAND },
 						}),
 						crit(3),	-- Thurg the Slave Lord's Necklace
 						crit(4),	-- Gorg the Subjugator's Idol
@@ -85,7 +85,7 @@ _.Zones =
 					["g"] = {
 						i(127865, {	-- A Tiny Viking Helmet
 							["questID"] = 39265,	-- Pepe can be sometimes be summoned with this mask
-							["coord"] = { 80.11, 50.4, 550 },
+							["coord"] = { 80.11, 50.4, DRAENOR_NAGRAND },
 							["g"] = {
 								crit(2),	-- Viking Pepe
 							},

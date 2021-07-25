@@ -149,10 +149,10 @@ _.Zones =
 					["g"] = {
 						q(53590, {	-- Elemental Plateau
 							["name"] = "Elemental Plateau",
-							["coord"] = { 65.74, 08.24, 550 },
+							["coord"] = { 65.74, 08.24, DRAENOR_NAGRAND },
 							["races"] = { DARKIRON },
 							["icon"] = "Interface\\Icons\\ability_racial_molemachine",
-							["maps"] = { 550 },	-- Nagrand
+							["maps"] = { DRAENOR_NAGRAND },
 						}),
 						q(53588, {	-- The Pit
 							["name"] = "The Pit",

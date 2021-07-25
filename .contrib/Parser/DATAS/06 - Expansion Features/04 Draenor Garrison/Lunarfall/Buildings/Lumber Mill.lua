@@ -76,8 +76,8 @@ _.ExpansionFeatures =
 								["description"] = "Weldon Barov is found at various locations in Draenor. He is stuck under a log and you need the lumber mill to get him out of there.",
 								["coords"] = {
 									{ 54.9, 79.7, 542 },	-- Spires of Arak
-									{ 59.0, 38.4, 550 },	-- Nagrand
-									{ 56.0, 70.0, 550 },	-- Nagrand
+									{ 59.0, 38.4, DRAENOR_NAGRAND },
+									{ 56.0, 70.0, DRAENOR_NAGRAND },
 									{ 59.0, 29.0, 535 },	-- Talador
 									{ 73.0, 28.0, 535 },	-- Talador
 									{ 73.7, 64.0, 535 },	-- Talador

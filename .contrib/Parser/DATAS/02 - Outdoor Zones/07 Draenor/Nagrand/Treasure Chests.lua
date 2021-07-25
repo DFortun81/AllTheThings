@@ -5,35 +5,35 @@
 _.Zones =
 {
 	m(DRAENOR, {
-		m(550, {	-- Nagrand
+		m(DRAENOR_NAGRAND, {
 			n(TREASURES, {
 				--[[
 				Note: These objects have known flags to mark completion but they never seem to fire.
 					  The coords have been added to the "Abu'gar" quest instead.
 				o(233157, {	-- Abu'gar's Vitality
 					["questID"] = 35711,
-					["coord"] = { 65.8, 61.1, 550 },
+					["coord"] = { 65.8, 61.1, DRAENOR_NAGRAND },
 				}),
 				o(233506, {	-- Abu'gar's Missing Reel
 					["questID"] = 36089,
-					["coord"] = { 85.4, 38.7, 550 },
+					["coord"] = { 85.4, 38.7, DRAENOR_NAGRAND },
 				}),
 				o(233642, {	-- Abu'Gar's Favorite Lure
 					["questID"] = 36072,
-					["coord"] = { 38.4, 49.3, 550 },
+					["coord"] = { 38.4, 49.3, DRAENOR_NAGRAND },
 					["description"] = "Hidden behind some reeds by the bridge.",
 				}),
 				]]--
 				o(233452, {	-- A Pile of Dirt
 					["questID"] = 35951,
-					["coord"] = { 73.1, 10.8, 550 },
+					["coord"] = { 73.1, 10.8, DRAENOR_NAGRAND },
 					["g"] = {
 						currency(824),	-- Garrison Resources
 					},
 				}),
 				o(233206, {	-- Abandoned Cargo
 					["questID"] = 35759,
-					["coord"] = { 67.6, 59.8, 550 },
+					["coord"] = { 67.6, 59.8, DRAENOR_NAGRAND },
 					["g"] = {
 						-- Weapons
 						i(116627),	-- Howling Axe
@@ -156,7 +156,7 @@ _.Zones =
 				}),
 				o(233650, {	-- Adventurer's Mace
 					["questID"] = 36077,
-					["coord"] = { 75.8, 62.0, 550 },
+					["coord"] = { 75.8, 62.0, DRAENOR_NAGRAND },
 					["g"] = {
 						i(116635),	-- Howling Mace
 						i(116636),	-- Oshu'gun Scepter
@@ -164,7 +164,7 @@ _.Zones =
 				}),
 				o(233218, {	-- Adventurer's Pack
 					["questID"] = 35765,
-					["coord"] = { 82.2, 56.5, 550 },
+					["coord"] = { 82.2, 56.5, DRAENOR_NAGRAND },
 					["g"] = {
 						-- Weapons
 						i(116627),	-- Howling Axe
@@ -288,7 +288,7 @@ _.Zones =
 				}),
 				o(233511, {	-- Adventurer's Pack
 					["questID"] = 35969,
-					["coord"] = { 45.6, 52.0, 550 },
+					["coord"] = { 45.6, 52.0, DRAENOR_NAGRAND },
 					["g"] = {
 						-- Weapons
 						i(116627),	-- Howling Axe
@@ -412,7 +412,7 @@ _.Zones =
 				}),
 				o(232406, {	-- Adventurer's Pack
 					["questID"] = 35597,
-					["coord"] = { 69.9, 52.5, 550 },
+					["coord"] = { 69.9, 52.5, DRAENOR_NAGRAND },
 					["description"] = "Hanging in a tree.",
 					["g"] = {
 						-- Weapons
@@ -540,7 +540,7 @@ _.Zones =
 					["questID"] = 36088,
 					["modelID"] = 32854,
 					["coords"] = {
-						{ 56.4, 61.8, 550 },	-- Cave Entrance
+						{ 56.4, 61.8, DRAENOR_NAGRAND },	-- Cave Entrance
 						{ 64.2, 37.9, 553 },	-- Start of Ramp
 						{ 65.8, 57.6, 553 },	-- Pouch
 					},
@@ -667,7 +667,7 @@ _.Zones =
 				}),
 				o(233623, {	-- Adventurer's Pouch
 					["questID"] = 36050,
-					["coord"] = { 56.6, 72.9, 550 },
+					["coord"] = { 56.6, 72.9, DRAENOR_NAGRAND },
 					["modelID"] = 32854,
 					["g"] = {
 						-- Weapons
@@ -793,7 +793,7 @@ _.Zones =
 				o(233499, {	-- Adventurer's Sack
 					["modelID"] = 32854,
 					["questID"] = 35955,
-					["coord"] = { 73.9, 14.1, 550 },
+					["coord"] = { 73.9, 14.1, DRAENOR_NAGRAND },
 					["g"] = {
 						-- Weapons
 						i(116627),	-- Howling Axe
@@ -917,32 +917,32 @@ _.Zones =
 				}),
 				o(233457, {	-- Adventurer's Staff
 					["questID"] = 35953,
-					["coord"] = { 81.5, 13.0, 550 },
+					["coord"] = { 81.5, 13.0, DRAENOR_NAGRAND },
 					["g"] = {
 						i(116640),  -- Howling Staff
 					},
 				}),
 				o(233773, {	-- Bag of Herbs
 					["questID"] = 36116,
-					["coord"] = { 62.6, 67.1, 550 },
+					["coord"] = { 62.6, 67.1, DRAENOR_NAGRAND },
 				}),
 				o(233532, {	-- Bone-Carved Dagger
 					["questID"] = 35986,
-					["coord"] = { 77.3, 28.1, 550 },
+					["coord"] = { 77.3, 28.1, DRAENOR_NAGRAND },
 					["g"] = {
 						i(116760),	-- Saberon-Fang Shanker
 					},
 				}),
 				o(233973, {	-- Bounty of the Elements
 					["questID"] = 36174,
-					["coord"] = { 77.1, 16.6, 550 },
+					["coord"] = { 77.1, 16.6, DRAENOR_NAGRAND },
 					["g"] = {
 						currency(824),	-- Garrison Resources
 					},
 				}),
 				o(233137, {	-- Burning Blade Cache
 					["questID"] = 35696,
-					["coord"] = { 85.4, 53.46, 550 },
+					["coord"] = { 85.4, 53.46, DRAENOR_NAGRAND },
 					["g"] = {
 						-- Weapons
 						i(116627),	-- Howling Axe
@@ -1066,70 +1066,70 @@ _.Zones =
 				}),
 				o(233492, {	-- Elemental Offering
 					["questID"] = 35954,
-					["coord"] = { 67.0, 19.5, 550 },
+					["coord"] = { 67.0, 19.5, DRAENOR_NAGRAND },
 					["g"] = {
 						i(118234),	-- Smoldering Offerings
 					},
 				}),
 				o(233598, {	-- Elemental Shackles
 					["questID"] = 36036,
-					["coord"] = { 78.9, 15.5, 550 },
+					["coord"] = { 78.9, 15.5, DRAENOR_NAGRAND },
 					["g"] = {
 						i(118251),	-- Trophy Gemstone of the Elements
 					},
 				}),
 				o(233560, {	-- Fragment of Oshu'gun
 					["questID"] = 36020,
-					["coord"] = { 45.8, 66.2, 550 },
+					["coord"] = { 45.8, 66.2, DRAENOR_NAGRAND },
 					["g"] = {
 						i(117981),	-- Fragment of Oshu'gun
 					},
 				}),
 				o(233539, {	-- Genedar Debris
 					["questID"] = 35987,
-					["coord"] = { 43.2, 57.6, 550 },
+					["coord"] = { 43.2, 57.6, DRAENOR_NAGRAND },
 					["g"] = {
 						currency(824),	-- Garrison Resources
 					},
 				}),
 				o(233549, {	-- Genedar Debris
 					["questID"] = 35999,
-					["coord"] = { 48.1, 60.1, 550 },
+					["coord"] = { 48.1, 60.1, DRAENOR_NAGRAND },
 					["g"] = {
 						currency(824),	-- Garrison Resources
 					},
 				}),
 				o(233551, {	-- Genedar Debris
 					["questID"] = 36002,
-					["coord"] = { 44.7, 67.6, 550 },
+					["coord"] = { 44.7, 67.6, DRAENOR_NAGRAND },
 					["g"] = {
 						currency(824),	-- Garrison Resources
 					},
 				}),
 				o(233555, {	-- Genedar Debris
 					["questID"] = 36008,
-					["coord"] = { 48.6, 72.8, 550 },
+					["coord"] = { 48.6, 72.8, DRAENOR_NAGRAND },
 					["g"] = {
 						currency(824),	-- Garrison Resources
 					},
 				}),
 				o(233557, {	-- Genedar Debris
 					["questID"] = 36011,
-					["coord"] = { 55.3, 68.3, 550 },
+					["coord"] = { 55.3, 68.3, DRAENOR_NAGRAND },
 					["g"] = {
 						currency(824),	-- Garrison Resources
 					},
 				}),
 				o(232597, {	-- Goblin Pack
 					["questID"] = 35590,
-					["coord"] = { 73.0, 62.1, 550 },
+					["coord"] = { 73.0, 62.1, DRAENOR_NAGRAND },
 					["g"] = {
 						currency(824),	-- Garrison Resources
 					},
 				}),
 				o(232571, {	-- Goblin Pack
 					["questID"] = 35576,
-					["coord"] = { 47.2, 74.3, 550 },
+					["coord"] = { 47.2, 74.3, DRAENOR_NAGRAND },
 					["description"] = "Hidden in the tree.",
 					["g"] = {
 						currency(824),	-- Garrison Resources
@@ -1137,77 +1137,77 @@ _.Zones =
 				}),
 				o(233134, {	-- Golden Kaliri Egg
 					["questID"] = 35694,
-					["coord"] = { 58.3, 52.5, 550 },
+					["coord"] = { 58.3, 52.5, DRAENOR_NAGRAND },
 					["g"] = {
 						i(118266),	-- Golden Kaliri Egg
 					},
 				}),
 				o(233626, {	-- Grizzlemaw's Bonepile
 					["questID"] = 36051,
-					["coord"] = { 87.1, 72.9, 550 },
+					["coord"] = { 87.1, 72.9, DRAENOR_NAGRAND },
 					["g"] = {
 						i(118054),	-- Discarded Bone x10
 					},
 				}),
 				o(232986, {	-- Hidden Stash
 					["questID"] = 35622,
-					["coord"] = { 87.6, 45.0, 550 },
+					["coord"] = { 87.6, 45.0, DRAENOR_NAGRAND },
 					["g"] = {
 						currency(824),	-- Garrison Resources
 					},
 				}),
 				o(233611, {	-- Highmaul Sledge
 					["questID"] = 36039,
-					["coord"] = { 67.3, 49.0, 550 },
+					["coord"] = { 67.3, 49.0, DRAENOR_NAGRAND },
 					["g"] = {
 						i(118252),	-- Trophy Loop of the Highmaul
 					},
 				}),
 				o(233696, {	-- Important Exploration Supplies
 					["questID"] = 36099,
-					["coord"] = { 75.2, 65.6, 550 },
+					["coord"] = { 75.2, 65.6, DRAENOR_NAGRAND },
 					["g"] = {
 						i(61986),	-- Tol Barad Coconut Rum
 					},
 				}),
 				o(233651, {	-- Lost Pendant
 					["questID"] = 36082,
-					["coord"] = { 61.8, 57.5, 550 },
+					["coord"] = { 61.8, 57.5, DRAENOR_NAGRAND },
 					["g"] = {
 						i(116687),	-- Oshu'gun Amulet
 					},
 				}),
 				o(233032, {	-- Mountain Climber's Pack
 					["questID"] = 35643,
-					["coord"] = { 70.5, 13.8, 550 },
+					["coord"] = { 70.5, 13.8, DRAENOR_NAGRAND },
 					["g"] = {
 						currency(824),	-- Garrison Resources
 					},
 				}),
 				o(233618, {	-- Ogre Beads
 					["questID"] = 36049,
-					["coord"] = { 80.9, 79.8, 550 },
+					["coord"] = { 80.9, 79.8, DRAENOR_NAGRAND },
 					["g"] = {
 						i(118255),	-- Trophy Ring of Gordal
 					},
 				}),
 				o(233593, {	-- Polished Saberon Skull
 					["questID"] = 36035,
-					["coord"] = { 72.7, 61.0, 550 },
+					["coord"] = { 72.7, 61.0, DRAENOR_NAGRAND },
 					["g"] = {
 						i(118254),	-- Trophy Signet of the Sabermaw
 					},
 				}),
 				o(233561, {	-- Pokkar's Thirteenth Axe
 					["questID"] = 36021,
-					["coord"] = { 58.3, 59.5, 550 },
+					["coord"] = { 58.3, 59.5, DRAENOR_NAGRAND },
 					["g"] = {
 						i(116688),	-- Pokhar's Thirteenth Axe
 					},
 				}),
 				o(233697, {	-- Saberon Stash
 					["questID"] = 36102,
-					["coord"] = { 75.2, 64.9, 550 },
+					["coord"] = { 75.2, 64.9, DRAENOR_NAGRAND },
 					["g"] = {
 						-- Weapons
 						i(116627),	-- Howling Axe
@@ -1331,63 +1331,63 @@ _.Zones =
 				}),
 				o(232985, {	-- Steamwheedle Supplies
 					["questID"] = 35616,
-					["coord"] = { 88.2, 42.6, 550 },
+					["coord"] = { 88.2, 42.6, DRAENOR_NAGRAND },
 				}),
 				o(232598, {	-- Steamwheedle Supplies
 					["questID"] = 35591,
-					["coord"] = { 77.8, 52.0, 550 },
+					["coord"] = { 77.8, 52.0, DRAENOR_NAGRAND },
 				}),
 				o(233034, {	-- Steamwheedle Supplies
 					["questID"] = 35648,
-					["coord"] = { 64.6, 17.6, 550 },
+					["coord"] = { 64.6, 17.6, DRAENOR_NAGRAND },
 				}),
 				o(232584, {	-- Steamwheedle Supplies
 					["questID"] = 35577,
-					["coord"] = { 50.1, 82.2, 550 },
+					["coord"] = { 50.1, 82.2, DRAENOR_NAGRAND },
 				}),
 				o(232595, {	-- Steamwheedle Supplies
 					["questID"] = 35583,
-					["coord"] = { 52.7, 80.1, 550 },
+					["coord"] = { 52.7, 80.1, DRAENOR_NAGRAND },
 				}),
 				o(233033, {	-- Steamwheedle Supplies
 					["questID"] = 35646,
-					["coord"] = { 70.6, 18.6, 550 },
+					["coord"] = { 70.6, 18.6, DRAENOR_NAGRAND },
 				}),
 				o(233052, {	-- Steamwheedle Supplies
 					["questID"] = 35662,
-					["coord"] = { 87.6, 20.5, 550 },
+					["coord"] = { 87.6, 20.5, DRAENOR_NAGRAND },
 				}),
 				o(233613, {	-- Telaar Defender Shield
 					["questID"] = 36046,
-					["coord"] = { 64.6, 65.8, 550 },
+					["coord"] = { 64.6, 65.8, DRAENOR_NAGRAND },
 					["g"] = {
 						i(118253),	-- Trophy Band of Telaar
 					},
 				}),
 				o(232590, {	-- Void-Infused Crystal
 					["questID"] = 35579,
-					["coord"] = { 50.0, 66.5, 550 },
+					["coord"] = { 50.0, 66.5, DRAENOR_NAGRAND },
 					["g"] = {
 						i(118264),	-- Serrated Void Crystal
 					},
 				}),
 				o(233645, {	-- Warsong Helm
 					["questID"] = 36073,
-					["coord"] = { 52.5, 44.5, 550 },
+					["coord"] = { 52.5, 44.5, DRAENOR_NAGRAND },
 					["g"] = {
 						i(118250),	-- Riverwashed Warsong Helm
 					},
 				}),
 				o(233113, {	-- Warsong Spear
 					["questID"] = 35682,
-					["coord"] = { 76.1, 69.9, 550 },
+					["coord"] = { 76.1, 69.9, DRAENOR_NAGRAND },
 					["g"] = {
 						i(118678),	-- Ceremonial Warsong Spear
 					},
 				}),
 				o(235307, {	-- Watertight Bag
 					["questID"] = 36071,
-					["coord"] = { 64.8, 35.7, 550 },
+					["coord"] = { 64.8, 35.7, DRAENOR_NAGRAND },
 					["g"] = {
 						i(118235),	-- Ogre Diving Cap
 					},

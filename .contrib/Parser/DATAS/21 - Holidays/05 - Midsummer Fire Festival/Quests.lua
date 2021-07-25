@@ -2011,8 +2011,8 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, holiday(235474, {	-- Midsum
 		q(44572, {	-- Honor the Flame — Nagrand (WoD)
 			["provider"] = { "n", 114490 },	-- Nagrand Flame Guardian
 			["isYearly"] = true,
-			["coord"] = { 80.4, 47.6, 550 },
-			["maps"] = { 550 },	-- Nagrand
+			["coord"] = { 80.4, 47.6, DRAENOR_NAGRAND },
+			["maps"] = { DRAENOR_NAGRAND },
 		}),
 		q(44570, {	-- Honor the Flame — Spires of Arak
 			["provider"] = { "n", 114488 },	-- Spires of Arak Flame Guardian

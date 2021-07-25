@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(DRAENOR, {
-		m(550, {	-- Nagrand (Draenor)
+		m(DRAENOR_NAGRAND, {
 			["achievementID"] = 8942,
 			["description"] = "Nagrand is a zone in western Draenor. It lies west of Talador. It is home to the Burning Blade and Warsong orcish clans, as well as a seat of the ogre empire situated on the continent of Draenor, with Highmaul as its capital.",
 			["maps"] = {

@@ -15,7 +15,7 @@ profession(ENCHANTING, {
 			["maps"] = {
 				FROSTFIRE_RIDGE,
 				GORGROND,
-				550,	-- Nagrand
+				DRAENOR_NAGRAND,
 				DRAENOR_SHADOWMOON_VALLEY,
 				542,	-- Spires of Arak
 				535,	-- Talador
@@ -30,7 +30,7 @@ profession(ENCHANTING, {
 			["maps"] = {
 				FROSTFIRE_RIDGE,
 				GORGROND,
-				550,	-- Nagrand
+				DRAENOR_NAGRAND,
 				DRAENOR_SHADOWMOON_VALLEY,
 				542,	-- Spires of Arak
 				535,	-- Talador

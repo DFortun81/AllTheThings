@@ -73,7 +73,7 @@ _.Toys =
 			}),
 			i(127865, {	-- A Tiny Viking Helmet
 				["questID"] = 39265,	-- Pepe can be sometimes be summoned with this mask
-				["coord"] = { 80.11, 50.4, 550 },
+				["coord"] = { 80.11, 50.4, DRAENOR_NAGRAND },
 			}),
 			i(161443, {	-- A Tiny Voodoo Mask
 				["questID"] = 52269,	-- Pepe can be sometimes be summoned with this mask

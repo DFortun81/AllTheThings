@@ -615,9 +615,9 @@ _.Holidays = applyholiday(MIDSUMMER_FIRE_FESTIVAL, { holiday(235474, {	-- Midsum
 					["maps"] = { 535 },	-- Talador
 				}),
 				crit(3, {	-- Nagrand
-					["coord"] = { 80.4, 47.6, 550 },
+					["coord"] = { 80.4, 47.6, DRAENOR_NAGRAND },
 					["races"] = ALLIANCE_ONLY,
-					["maps"] = { 550 },	-- Nagrand
+					["maps"] = { DRAENOR_NAGRAND },
 				}),
 				crit(4, {	-- Gorgrond
 					["coord"] = { 43.8, 93.8, GORGROND },
@@ -1321,9 +1321,9 @@ _.Holidays = applyholiday(MIDSUMMER_FIRE_FESTIVAL, { holiday(235474, {	-- Midsum
 					["maps"] = { 535 },	-- Talador
 				}),
 				crit(3, {	-- Nagrand
-					["coord"] = { 80.4, 47.6, 550 },
+					["coord"] = { 80.4, 47.6, DRAENOR_NAGRAND },
 					["races"] = HORDE_ONLY,
-					["maps"] = { 550 },	-- Nagrand
+					["maps"] = { DRAENOR_NAGRAND },
 				}),
 				crit(4, {	-- Gorgrond
 					["coord"] = { 43.8, 93.8, GORGROND },

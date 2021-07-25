@@ -160,8 +160,8 @@ _.Achievements =
 				crit(37, {	-- Taran Zhu (Celestial Tournament)
 					["coord"] = { 37.8, 57.2, 554 },
 				}),
-				crit(38, {	-- Tarr the Terrible (Nagrand)
-					["coord"] = { 56.2, 9.80, 550 },
+				crit(38, {	-- Tarr the Terrible
+					["coord"] = { 56.2, 9.80, DRAENOR_NAGRAND },
 				}),
 				crit(39, {	-- Thundering Pandaren Spirit  (Kun-Lai Summit)
 					["coord"] = { 64.8, 93.6, 379 },

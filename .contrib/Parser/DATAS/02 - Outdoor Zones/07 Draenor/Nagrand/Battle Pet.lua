@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(DRAENOR, {
-		m(550, {	-- Nagrand (Draenor)
+		m(DRAENOR_NAGRAND, {
 			filter(101, {	-- Pet Battles
 				p(635, {	-- Adder
 					["crs"] = { 61325 },	-- Adder
@@ -36,7 +36,7 @@ _.Zones =
 				}),
 				q(37206, {	-- Tarr the Terrible
 					["provider"] = { "n", 87110 },	-- Tar the Terrible
-					["coord"] = { 56.2, 9.8, 550 },
+					["coord"] = { 56.2, 9.8, DRAENOR_NAGRAND },
 					["isDaily"] = true,
 					["g"] = {
 						i(116415),	-- Shiny Pet Charm
