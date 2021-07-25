@@ -46,7 +46,7 @@ _.Toys =
 					{ 32.3, 28.8, DRAENOR_SHADOWMOON_VALLEY },	-- Moonflower Valley 'Crossroad near Alliance garrison' 32.33 28.76
 					{ 27.1, 33.3, SHADOWMOON_VALLEY },	-- (Outland) Legion Hold 'Crossroad' 27.1 33.36
 
-					{ 47.4, 12.4, 542 },	-- Spires of Arak (Draenor) 'Ridge on the boarder with Talador' 47.4 12.45
+					{ 47.4, 12.4, SPIRES_OF_ARAK },	-- 'Ridge on the boarder with Talador' 47.4 12.45
 					{ 70.8, 75.9, TEROKKAR_FOREST },	-- (Outland) Skettis 70.78 75.88
 
 					{ 57.9, 80.5, 535 },	-- Talador (Draenor) Deathweb Hollow 57.85 80.53

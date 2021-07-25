@@ -104,7 +104,7 @@ _.Secrets =
 						["icon"] = "Interface\\Icons\\inv_helmet_44",
 						["name"] = "Green Crystal Monocle",
 						["description"] = "Go to |cFFFFD700Skyreach|r in |cFFFFD700Spires of Arak|r. Behind the final boss of the instance, |cFFFFD700High Sage Viryx|r, you will find a console that you are able to interact with. Use the four glowing yellow balls to move the sun across the board (the north ball, for instance, makes the sun move up).\n\nThe directions and order in which you must move the sun are:\n\n|cFFFFFFFFRight -> Up -> Down -> Up -> Right -> Right -> Up -> Left -> Down -> Up -> Left -> Down|r\n\nLoot the chest that spawns to obtain the |cFFFFFFFFGreen Crystal Monocle|r\n",
-						["coord"] = { 35.3, 33.6, 542 },	-- Skyreach
+						["coord"] = { 35.3, 33.6, SPIRES_OF_ARAK },	-- Skyreach
 						["g"] = {
 							o(280883, {	-- Sun-Worn Chest
 								["questID"] = 50185,

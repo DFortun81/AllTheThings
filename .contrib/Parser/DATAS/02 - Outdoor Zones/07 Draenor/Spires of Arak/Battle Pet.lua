@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(DRAENOR, {
-		m(542, {	-- Spires of Arak
+		m(SPIRES_OF_ARAK, {
 			filter(101, {	-- Battle Pets
 				p(635,  {	-- Adder
 					["crs"] = { 61325 },	-- Adder
@@ -32,16 +32,16 @@ _.Zones =
 					["crs"] = { 88356 },	-- Sapphire Firefly
 					["description"] = "Only one is up at a time.  Once captured or killed, it immediately respawns.",
 					["coords"] = {
-						{ 37.8, 41.8, 542 },
-						{ 45.0, 35.0, 542 },
-						{ 45.6, 62.4, 542 },
-						{ 46.0, 48.4, 542 },
-						{ 49.6, 50.8, 542 },
-						{ 53.0, 70.6, 542 },
-						{ 55.6, 32.4, 542 },
-						{ 56.6, 42.0, 542 },
-						{ 57.8, 51.0, 542 },
-						{ 59.0, 68.6, 542 },
+						{ 37.8, 41.8, SPIRES_OF_ARAK },
+						{ 45.0, 35.0, SPIRES_OF_ARAK },
+						{ 45.6, 62.4, SPIRES_OF_ARAK },
+						{ 46.0, 48.4, SPIRES_OF_ARAK },
+						{ 49.6, 50.8, SPIRES_OF_ARAK },
+						{ 53.0, 70.6, SPIRES_OF_ARAK },
+						{ 55.6, 32.4, SPIRES_OF_ARAK },
+						{ 56.6, 42.0, SPIRES_OF_ARAK },
+						{ 57.8, 51.0, SPIRES_OF_ARAK },
+						{ 59.0, 68.6, SPIRES_OF_ARAK },
 					},
 				}),
 				p(568,  {	-- Silkbead Snail
@@ -67,7 +67,7 @@ _.Zones =
 				}),
 				q(37207, {	-- Vesharr
 					["provider"] = { "n", 87123 },	-- Vesharr
-					["coord"] = { 46.2, 45.3, 542 },
+					["coord"] = { 46.2, 45.3, SPIRES_OF_ARAK },
 					["isDaily"] = true,
 					["g"] = {
 						i(116415),	-- Shiny Pet Charm

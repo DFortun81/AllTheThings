@@ -31,11 +31,10 @@ _.Zones =
 				{ 49.6, 71.6, DRAENOR_SHADOWMOON_VALLEY },
 				{ 50.9, 72.5, DRAENOR_SHADOWMOON_VALLEY },
 				{ 51.6, 74.8, DRAENOR_SHADOWMOON_VALLEY },
-				-- Spires of Arak
-				{ 36.4, 18.3, 542 },
-				{ 47.0, 20.1, 542 },
-				{ 50.4, 6.10, 542 },
-				{ 60.8, 11.2, 542 },
+				{ 36.4, 18.3, SPIRES_OF_ARAK },
+				{ 47.0, 20.1, SPIRES_OF_ARAK },
+				{ 50.4, 6.10, SPIRES_OF_ARAK },
+				{ 60.8, 11.2, SPIRES_OF_ARAK },
 				-- Talador
 				{ 39.9, 55.6, 535 },
 				{ 46.3, 52.6, 535 },
@@ -48,7 +47,7 @@ _.Zones =
 				GORGROND,
 				DRAENOR_NAGRAND,
 				DRAENOR_SHADOWMOON_VALLEY,
-				542,	-- Spires of Arak
+				SPIRES_OF_ARAK,
 				535,	-- Talador
 			},
 			["g"] = {

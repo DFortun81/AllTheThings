@@ -2017,8 +2017,8 @@ _.Holidays = { applyholiday(MIDSUMMER_FIRE_FESTIVAL, holiday(235474, {	-- Midsum
 		q(44570, {	-- Honor the Flame — Spires of Arak
 			["provider"] = { "n", 114488 },	-- Spires of Arak Flame Guardian
 			["isYearly"] = true,
-			["coord"] = { 48.0, 44.6, 542 },
-			["maps"] = { 542 },	-- Spires of Arak
+			["coord"] = { 48.0, 44.6, SPIRES_OF_ARAK },
+			["maps"] = { SPIRES_OF_ARAK },
 		}),
 		q(44577, {	-- Honor the Flame — Stormheim
 			["provider"] = { "n", 114496 },	-- Stormheim Flame Guardian

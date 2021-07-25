@@ -10,7 +10,7 @@ profession(LEATHERWORKING, {
 				GORGROND,
 				DRAENOR_NAGRAND,
 				DRAENOR_SHADOWMOON_VALLEY,
-				542,	-- Spires of Arak
+				SPIRES_OF_ARAK,
 				535,	-- Talador
 			},
 		}),
@@ -24,7 +24,7 @@ profession(LEATHERWORKING, {
 				GORGROND,
 				DRAENOR_NAGRAND,
 				DRAENOR_SHADOWMOON_VALLEY,
-				542,	-- Spires of Arak
+				SPIRES_OF_ARAK,
 				535,	-- Talador
 			},
 		}),

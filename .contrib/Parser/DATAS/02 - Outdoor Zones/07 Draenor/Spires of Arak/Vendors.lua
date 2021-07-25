@@ -5,7 +5,7 @@
 _.Zones =
 {
 	m(DRAENOR, {
-		m(542, {	-- Spires of Arak
+		m(SPIRES_OF_ARAK, {
 			n(VENDORS, {
 				n(-390, {	-- Smuggler's Den
 					n(82459, {	-- Honest Jim
@@ -97,14 +97,14 @@ _.Zones =
 				}),
 				n(82432, {	-- Miril Dumonde
 					["description"] = "Vendor only sells Admiral Taylor's Greatsword to those who have completed the associated quest.",
-					["coord"] = { 37.6, 50.8, 542 },
+					["coord"] = { 37.6, 50.8, SPIRES_OF_ARAK },
 					["g"] = {
 						i(118080),	-- Admiral Taylor's Greatsword
 					},
 				}),
 				n(87123, {	-- Vesharr
 					["description"] = "Items will be unavailable until you complete the pet battle daily quest |cFFFFD700Vesharr|r.",
-					["coord"] = { 46.4, 45.2, 542 },
+					["coord"] = { 46.4, 45.2, SPIRES_OF_ARAK },
 					["g"] = {
 						i(120051),	-- Kaliri Hatchling
 						i(120050, {	-- Veilwatcher Hatchling

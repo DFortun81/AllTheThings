@@ -166,8 +166,8 @@ _.Achievements =
 				crit(39, {	-- Thundering Pandaren Spirit  (Kun-Lai Summit)
 					["coord"] = { 64.8, 93.6, 379 },
 				}),
-				crit(40, {	-- Vesharr (Spires of Arak)
-					["coord"] = { 46.4, 45.2, 542 },
+				crit(40, {	-- Vesharr
+					["coord"] = { 46.4, 45.2, SPIRES_OF_ARAK },
 				}),
 				crit(41, {	-- Wastewalker Shu (Dread Wastes)
 					["coord"] = { 55.0, 37.6, 422 },

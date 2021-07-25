@@ -605,9 +605,9 @@ _.Holidays = applyholiday(MIDSUMMER_FIRE_FESTIVAL, { holiday(235474, {	-- Midsum
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
 				crit(1, {	-- Spires of Arak
-					["coord"] = { 48.0, 44.6, 542 },
+					["coord"] = { 48.0, 44.6, SPIRES_OF_ARAK },
 					["races"] = ALLIANCE_ONLY,
-					["maps"] = { 542 },	-- Spires of Arak
+					["maps"] = { SPIRES_OF_ARAK },
 				}),
 				crit(2, {	-- Talador
 					["coord"] = { 43.4, 71.8, 535 },
@@ -1311,9 +1311,9 @@ _.Holidays = applyholiday(MIDSUMMER_FIRE_FESTIVAL, { holiday(235474, {	-- Midsum
 			["races"] = HORDE_ONLY,
 			["g"] = {
 				crit(1, {	-- Spires of Arak
-					["coord"] = { 48.0, 44.6, 542 },
+					["coord"] = { 48.0, 44.6, SPIRES_OF_ARAK },
 					["races"] = HORDE_ONLY,
-					["maps"] = { 542 },	-- Spires of Arak
+					["maps"] = { SPIRES_OF_ARAK },
 				}),
 				crit(2, {	-- Talador
 					["coord"] = { 43.4, 71.8, 535 },

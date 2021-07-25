@@ -6,18 +6,18 @@
 _.Zones =
 {
 	m(DRAENOR, {
-		m(542, {	-- Spires of Arak
+		m(SPIRES_OF_ARAK, {
 			n(TREASURES, {
 				o(235313, {	-- Abandoned Mining Pick (cannot be transmogged)
 					["questID"] = 36458,
-					["coord"]= { 40.6, 55.0, 542 },
+					["coord"]= { 40.6, 55.0, SPIRES_OF_ARAK },
 					["g"] = {
 						i(116913),	-- Peon's Mining Pick
 					},
 				}),
 				o(235143, {	-- Assassin's Spear
 					["questID"] = 36445,
-					["coord"] = { 49.2, 37.3, 542 },
+					["coord"] = { 49.2, 37.3, SPIRES_OF_ARAK },
 					["g"] = {
 						i(116835),	-- Assassin's Spear
 					},
@@ -26,19 +26,19 @@ _.Zones =
 					["questID"] = 35627,
 					["description"] = "Must establish your outpost to get this treasure.",
 					["coords"] = {
-						{ 40.1, 60.3, 542 },	-- alliance
-						{ 40.1, 43.9, 542 },	-- horde
+						{ 40.1, 60.3, SPIRES_OF_ARAK },	-- alliance
+						{ 40.1, 43.9, SPIRES_OF_ARAK },	-- horde
 					},
 				}),
 				o(234473, {	-- Campaign Contributions
 					["questID"] = 36367,
-					["coord"] = { 55.5, 90.8, 542 },
+					["coord"] = { 55.5, 90.8, SPIRES_OF_ARAK },
 					["description"] = "On a shelf above the doorway.",
 				}),
 				o(234704, {	-- Elixir of Shadow Sight
 					["collectible"] = false,	-- these reset.  i've collected every item you can get with the elixirs, so have nothing to use them on, but they still show up in ATT and even on the in-game treasure map.  if i re-collect them and delete them from my bags, they show up as a thing i need to collect again.  annoying!
 					["questID"] = 36397,
-					["coord"] = { 43.8, 24.7, 542 },
+					["coord"] = { 43.8, 24.7, SPIRES_OF_ARAK },
 					["icon"] = "Interface\\Icons\\inv_potion_122",
 					["g"] = {
 						i(115463),	-- Elixir of Shadow Sight
@@ -47,7 +47,7 @@ _.Zones =
 				o(234736, {	-- Elixir of Shadow Sight
 					["collectible"] = false,
 					["questID"] = 36401,
-					["coord"] = { 53.1, 84.5, 542 },
+					["coord"] = { 53.1, 84.5, SPIRES_OF_ARAK },
 					["icon"] = "Interface\\Icons\\inv_potion_122",
 					["g"] = {
 						i(115463),	-- Elixir of Shadow Sight
@@ -56,7 +56,7 @@ _.Zones =
 				o(234705, {	-- Elixir of Shadow Sight
 					["collectible"] = false,
 					["questID"] = 36398,
-					["coord"] = { 69.2, 43.5, 542 },
+					["coord"] = { 69.2, 43.5, SPIRES_OF_ARAK },
 					["icon"] = "Interface\\Icons\\inv_potion_122",
 					["g"] = {
 						i(115463),	-- Elixir of Shadow Sight
@@ -65,7 +65,7 @@ _.Zones =
 				o(234703, {	-- Elixir of Shadow Sight
 					["collectible"] = false,
 					["questID"] = 36395,
-					["coord"] = { 43.9, 15.0, 542 },
+					["coord"] = { 43.9, 15.0, SPIRES_OF_ARAK },
 					["icon"] = "Interface\\Icons\\inv_potion_122",
 					["g"] = {
 						i(115463),	-- Elixir of Shadow Sight
@@ -74,7 +74,7 @@ _.Zones =
 				o(234735, {	-- Elixir of Shadow Sight
 					["collectible"] = false,
 					["questID"] = 36400,
-					["coord"] = { 55.6, 22.1, 542 },
+					["coord"] = { 55.6, 22.1, SPIRES_OF_ARAK },
 					["icon"] = "Interface\\Icons\\inv_potion_122",
 					["g"] = {
 						i(115463),	-- Elixir of Shadow Sight
@@ -83,7 +83,7 @@ _.Zones =
 				o(234734, {	-- Elixir of Shadow Sight
 					["collectible"] = false,
 					["questID"] = 36399,
-					["coord"] = { 48.9, 62.5, 542 },
+					["coord"] = { 48.9, 62.5, SPIRES_OF_ARAK },
 					["icon"] = "Interface\\Icons\\inv_potion_122",
 					["g"] = {
 						i(115463),	-- Elixir of Shadow Sight
@@ -91,7 +91,7 @@ _.Zones =
 				}),
 				o(235097, {	-- Ephial's Dark Grimoire
 					["questID"] = 36418,
-					["coord"] = { 36.5, 57.9, 542 },
+					["coord"] = { 36.5, 57.9, SPIRES_OF_ARAK },
 					["icon"] = "Interface\\Icons\\inv_potion_122",
 					["g"] = {
 						i(116914),	-- Ephial's Grimoire
@@ -99,7 +99,7 @@ _.Zones =
 				}),
 				o(235289, {	-- Garrison Workman's Hammer
 					["questID"] = 36451,
-					["coord"] = { 41.8, 50.5, 542 },
+					["coord"] = { 41.8, 50.5, SPIRES_OF_ARAK },
 					["description"] = "This treasure is bugged as of 8.0.1. The hammer can be seen in the cart from a distance but disappears when you approach it due to zone phasing. If you fly in fast enough, you can still loot it.",
 					["g"] = {
 						i(116918),	-- Garrison Workman's Hammer
@@ -108,7 +108,7 @@ _.Zones =
 				o(234618, {	-- Gift of Anzu
 					["description"] = "Drink an Elixir of Shadow Sight near the Shrine to get the Gift of Anzu.",
 					["questID"] = 36381,
-					["coord"] = { 61.1, 55.3, 542 },
+					["coord"] = { 61.1, 55.3, SPIRES_OF_ARAK },
 					["model"] = 145256,
 					["modelScale"] = 0.4,
 					["g"] = {
@@ -118,7 +118,7 @@ _.Zones =
 				n(86961,  {	-- Gift of Anzu
 					["description"] = "Drink an Elixir of Shadow Sight near the Shrine to get the Gift of Anzu.",
 					["questID"] = 36386,
-					["coord"] = { 48.6, 44.4, 542 },
+					["coord"] = { 48.6, 44.4, SPIRES_OF_ARAK },
 					["icon"] = "Interface\\Icons\\inv-mount_raven_54",	-- TODO: not working
 					["g"] = {
 						i(118237),	-- Anzu's Malice
@@ -127,7 +127,7 @@ _.Zones =
 				n(86941,  {	-- Gift of Anzu
 					["description"] = "Drink an Elixir of Shadow Sight near the Shrine to get the Gift of Anzu.",
 					["questID"] = 36388,
-					["coord"] = { 42.42, 26.69, 542 },
+					["coord"] = { 42.42, 26.69, SPIRES_OF_ARAK },
 					["icon"] = "Interface\\Icons\\inv-mount_raven_54",	-- TODO: not working
 					["g"] = {
 						i(118242),	-- Anzu's Scorn
@@ -136,7 +136,7 @@ _.Zones =
 				n(86962,  {	-- Gift of Anzu
 					["description"] = "Drink an Elixir of Shadow Sight near the Shrine to get the Gift of Anzu.",
 					["questID"] = 36389,
-					["coord"] = { 46.9, 40.46, 542 },
+					["coord"] = { 46.9, 40.46, SPIRES_OF_ARAK },
 					["icon"] = "Interface\\Icons\\inv-mount_raven_54",	-- TODO: not working
 					["g"] = {
 						i(118238),	-- Anzu's Reach
@@ -145,7 +145,7 @@ _.Zones =
 				n(86953,  {	-- Gift of Anzu
 					["description"] = "Drink an Elixir of Shadow Sight near the Shrine to get the Gift of Anzu.",
 					["questID"] = 36390,
-					["coord"] = { 57.01, 78.93, 542 },
+					["coord"] = { 57.01, 78.93, SPIRES_OF_ARAK },
 					["icon"] = "Interface\\Icons\\inv-mount_raven_54",	-- TODO: not working
 					["g"] = {
 						i(118241),	-- Anzu's Piercing Talon
@@ -154,7 +154,7 @@ _.Zones =
 				n(86956,  {	-- Gift of Anzu
 					["description"] = "Drink an Elixir of Shadow Sight near the Shrine to get the Gift of Anzu.",
 					["questID"] = 36392,
-					["coord"] = { 52.0, 19.7, 542 },
+					["coord"] = { 52.0, 19.7, SPIRES_OF_ARAK },
 					["icon"] = "Interface\\Icons\\inv-mount_raven_54",	-- TODO: not working
 					["g"] = {
 						i(118239),	-- Anzu's Stoicism
@@ -162,7 +162,7 @@ _.Zones =
 				}),
 				o(235091, {	-- Lost Ring
 					["questID"] = 36411,
-					["coord"] = { 47.8, 36.1, 542 },
+					["coord"] = { 47.8, 36.1, SPIRES_OF_ARAK },
 					["g"] = {
 						i(116911),	-- Outcast Decoder Ring
 					},
@@ -170,21 +170,21 @@ _.Zones =
 				o(234154, {	-- Misplaced Scrolls
 					["questID"] = 36244,
 					["icon"] = "Interface\\Icons\\trade_archaeology_silverscrollcase",
-					["coord"] = { 42.7, 18.3, 542 },
+					["coord"] = { 42.7, 18.3, SPIRES_OF_ARAK },
 					["g"] = {
 						i(109585),	-- Arakkoa Cipher
 					},
 				}),
 				o(234740, {	-- Orcish Signaling Horn
 					["questID"] = 36402,
-					["coord"] = { 36.3, 39.5, 542 },
+					["coord"] = { 36.3, 39.5, SPIRES_OF_ARAK },
 					["g"] = {
 						i(120337),	-- Novice Rylak Hunter's Horn
 					},
 				}),
 				o(234147, {	-- Outcast's Belongings
 					["questID"] = 36243,
-					["coord"] = { 36.8, 17.2, 542 },
+					["coord"] = { 36.8, 17.2, SPIRES_OF_ARAK },
 					["model"] = 974207,
 					["g"] = {
 						-- Weapons
@@ -312,7 +312,7 @@ _.Zones =
 				}),
 				o(235172, {	-- Outcast's Belongings
 					["questID"] = 36447,
-					["coord"] = { 42.1, 21.7, 542 },
+					["coord"] = { 42.1, 21.7, SPIRES_OF_ARAK },
 					["model"] = 974207,
 					["g"] = {
 						-- Weapons
@@ -440,7 +440,7 @@ _.Zones =
 				}),
 				o(235168, {	-- Outcast's Pouch
 					["questID"] = 36446,
-					["coord"] = { 46.9, 34.0, 542 },
+					["coord"] = { 46.9, 34.0, SPIRES_OF_ARAK },
 					["modelID"] = 32854,
 					["g"] = {
 						-- Weapons
@@ -569,50 +569,50 @@ _.Zones =
 				o(234449, {	-- Relics of the Outcasts
 					["questID"] = 36355,
 					["icon"] = "Interface\\Icons\\achievement_dungeon_arakkoaspires",
-					["coord"] = { 43.2, 27.2, 542 },
+					["coord"] = { 43.2, 27.2, SPIRES_OF_ARAK },
 					["description"] = "Must have archaeology.",
 				}),
 				o(234454, {	-- Relics of the Outcasts
 					["questID"] = 36359,
 					["icon"] = "Interface\\Icons\\achievement_dungeon_arakkoaspires",
-					["coord"] = { 60.2, 53.8, 542 },
+					["coord"] = { 60.2, 53.8, SPIRES_OF_ARAK },
 					["description"] = "Requires archaeology.",
 				}),
 				o(234446, {	-- Relics of the Outcasts
 					["questID"] = 36354,
 					["icon"] = "Interface\\Icons\\achievement_dungeon_arakkoaspires",
-					["coord"] = { 45.9, 44.2, 542 },
+					["coord"] = { 45.9, 44.2, SPIRES_OF_ARAK },
 					["description"] = "Requires archaeology.",
 				}),
 				o(234451, {	-- Relics of the Outcasts
 					["questID"] = 36356,
 					["icon"] = "Interface\\Icons\\achievement_dungeon_arakkoaspires",
-					["coord"] = { 67.5, 39.9, 542 },
+					["coord"] = { 67.5, 39.9, SPIRES_OF_ARAK },
 					["description"] = "Requires archaeology.",
 				}),
 				o(234455, {	-- Relics of the Outcasts
 					["questID"] = 36360,
 					["icon"] = "Interface\\Icons\\achievement_dungeon_arakkoaspires",
-					["coord"] = { 51.8, 48.9, 542 },
+					["coord"] = { 51.8, 48.9, SPIRES_OF_ARAK },
 					["description"] = "Requires archaeology.",
 				}),
 				o(234155, {	-- Relics of the Outcasts
 					["questID"] = 36245,
 					["icon"] = "Interface\\Icons\\achievement_dungeon_arakkoaspires",
-					["coord"] = { 43.0, 16.5, 542 },
+					["coord"] = { 43.0, 16.5, SPIRES_OF_ARAK },
 					["description"] = "Requires archaeology.",
 				}),
 				o(233975, {	-- Rooby's Roo
 					["description"] = "Buy 3 Rooby Treats from Miril Dumonde in the basement of the inn and feed them to Rooby on the main floor of the inn.  Follow Rooby and feed him each time he stops until he leaves his treasure.",
 					["questID"] = 36657,
-					["coord"] = { 37.3, 50.7, 542 },
+					["coord"] = { 37.3, 50.7, SPIRES_OF_ARAK },
 					["g"] = {
 						i(116887),	-- Rooby Roo's Ruby Rollar
 					},
 				}),
 				o(234456, {	-- Shattered Hand Lockbox
 					["questID"] = 36361,
-					["coord"] = { 47.9, 30.7, 542 },
+					["coord"] = { 47.9, 30.7, SPIRES_OF_ARAK },
 					["g"] = {
 						i(116920, {	-- True Steel Lockbox
 							-- Weapons
@@ -675,25 +675,25 @@ _.Zones =
 				o(235135, {	-- Smuggled Apexis Artifacts
 					["questID"] = 36433,
 					["icon"] = "Interface\\Icons\\achievement_dungeon_arakkoaspires",
-					["coord"] = { 56.3, 45.3, 542 },
+					["coord"] = { 56.3, 45.3, SPIRES_OF_ARAK },
 					["description"] = "Requires archaeology.",
 				}),
 				o(235104, {	-- Sun-Touched Cache
 					["questID"] = 36421,
 					["icon"] = "Interface\\Icons\\achievement_dungeon_arakkoaspires",
-					["coord"] = { 34.1, 27.5, 542 },
+					["coord"] = { 34.1, 27.5, SPIRES_OF_ARAK },
 					["description"] = "Requires archaeology.",
 				}),
 				o(235105, {	-- Sun-Touched Cache
 					["questID"] = 36422,
 					["icon"] = "Interface\\Icons\\achievement_dungeon_arakkoaspires",
-					["coord"] = { 33.3, 27.3, 542 },
+					["coord"] = { 33.3, 27.3, SPIRES_OF_ARAK },
 					["description"] = "Requires archaeology.",
 				}),
 				o(235307, {	-- Waterlogged Satchel
 					["modelID"] = 32854,
 					["questID"] = 36455,
-					["coord"] = { 66.5, 56.5, 542 },
+					["coord"] = { 66.5, 56.5, SPIRES_OF_ARAK },
 					["g"] = {
 						-- Weapons
 						i(116593),	-- Bloodmane Axe

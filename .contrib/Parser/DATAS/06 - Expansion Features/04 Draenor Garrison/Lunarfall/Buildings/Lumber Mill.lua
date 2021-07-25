@@ -75,7 +75,7 @@ _.ExpansionFeatures =
 								["races"] = ALLIANCE_ONLY,
 								["description"] = "Weldon Barov is found at various locations in Draenor. He is stuck under a log and you need the lumber mill to get him out of there.",
 								["coords"] = {
-									{ 54.9, 79.7, 542 },	-- Spires of Arak
+									{ 54.9, 79.7, SPIRES_OF_ARAK },
 									{ 59.0, 38.4, DRAENOR_NAGRAND },
 									{ 56.0, 70.0, DRAENOR_NAGRAND },
 									{ 59.0, 29.0, 535 },	-- Talador

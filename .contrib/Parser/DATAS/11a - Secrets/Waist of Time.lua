@@ -28,7 +28,7 @@ _.Secrets =
 			TWILIGHT_HIGHLANDS,
 			379,
 			DRAENOR_SHADOWMOON_VALLEY,
-			542,
+			SPIRES_OF_ARAK,
 		},
 		["lvl"] = 110,
 		["g"] = {
@@ -43,7 +43,7 @@ _.Secrets =
 				["questID"] = 52830,	-- Orb click
 				["sourceQuests"] = { 52829 },
 				["description"] = "Your journey continues in Spires of Arak.  You must have summoned Baa'l at least once before you can continue. \n\nInside the small basket \n\nThe Orb Reads: \n\n\"<Something is written here.>\n\nPassive Ice Veins\"",
-				["coord"] = { 35.5, 32.0, 542 },	-- Lit Orb
+				["coord"] = { 35.5, 32.0, SPIRES_OF_ARAK },	-- Lit Orb
 			}),
 			o(294097, {	-- Strange Seed
 				["model"] = 940623,
@@ -59,7 +59,7 @@ _.Secrets =
 				["questID"] = 52898,
 				["sourceQuests"] = { 52831 },
 				["description"] = "Spires of Arak\n\nUnderwater on top of the large rock.  \n\nThe Tiny Frog says:\n\n\"<Something is written here.>\n\nDog wig moss?\"",
-				["coord"] = { 53.5, 10.8, 542 },	-- Tiny Frog
+				["coord"] = { 53.5, 10.8, SPIRES_OF_ARAK },	-- Tiny Frog
 			}),
 			o(294099, {	-- Brittle Bone
 				["model"] = 774346,
@@ -74,7 +74,7 @@ _.Secrets =
 				["questID"] = 52900,
 				["sourceQuests"] = { 52899 },
 				["description"] = "Spires of Arak\n\nNext to a large candle. \n\nThe Misplaced Candle reads:\n\n\"<Something is written here.>\n\nRankest Goldfish\"",
-				["coord"] = { 67.9, 41.0, 542 },	-- Misplaced Candle
+				["coord"] = { 67.9, 41.0, SPIRES_OF_ARAK },	-- Misplaced Candle
 			}),
 			o(294101, {		-- Odd Cup
 				["model"] = 1822968,

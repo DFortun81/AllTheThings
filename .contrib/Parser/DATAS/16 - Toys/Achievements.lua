@@ -57,7 +57,7 @@ _.Toys =
 			}),
 			i(127870, {	-- A Tiny Pirate Hat
 				["questID"] = 39268,	-- Pepe can be sometimes be summoned with this mask
-				["coord"] = { 54.11, 83.61, 542 },
+				["coord"] = { 54.11, 83.61, SPIRES_OF_ARAK },
 			}),
 			i(127869, {	-- A Tiny Plated Helm
 				["questID"] = 39266,	-- Pepe can be sometimes be summoned with this mask

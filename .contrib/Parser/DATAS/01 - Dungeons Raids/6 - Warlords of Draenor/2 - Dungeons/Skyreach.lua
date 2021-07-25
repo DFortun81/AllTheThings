@@ -6,7 +6,7 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 	inst(476, {	-- Skyreach
 		["lvl"] = 96,
 		["maps"] = { 601, 602 },
-		["coord"] = { 35.5, 33.6, 542 },	-- Spires of Arak, Draenor
+		["coord"] = { 35.5, 33.6, SPIRES_OF_ARAK },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(9838, {	-- What A Strange, Interdimensional Trip It's Been

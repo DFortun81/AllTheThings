@@ -52,8 +52,8 @@ _.Instances = { tier(6, {	-- Warlords of Draenor
 				["isWeekly"] = true,
 				["questID"] = 37464,
 				["isRaid"] = true,
-				["coord"] = { 37.0, 39.3, 542 },
-				["maps"] = { 542 },	-- Spires of Arak
+				["coord"] = { 37.0, 39.3, SPIRES_OF_ARAK },
+				["maps"] = { SPIRES_OF_ARAK },
 				["crs"] = {
 					87493,	-- Rukhmar (WoWHead)
 					83746,	-- Rukhmar (Crieve)
