@@ -52,7 +52,7 @@ _.Zones =
 							["provider"] = { "n", 131963 },	-- Nolan Speed
 						}),
 						q(50046, {	-- It's a Sabotage
-							["sourceQuest"] = 49981 ,	-- Witness to the Wound
+							["sourceQuest"] = 49981,	-- Witness to the Wound
 							["races"] = ALLIANCE_ONLY,
 							["provider"] = { "n", 130030 },	-- Kelsey Steelspark
 						}),

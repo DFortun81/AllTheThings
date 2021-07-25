@@ -148,7 +148,7 @@ _.Zones =
 				}),
 				n(84417, {	-- Mutafen
 					["questID"] = 36396,
-					["coords"]= {
+					["coords"] = {
 						{ 53.2, 89.0, SPIRES_OF_ARAK },
 						{ 54.8, 88.6, SPIRES_OF_ARAK },
 					},

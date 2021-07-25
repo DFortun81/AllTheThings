@@ -277,37 +277,37 @@ _.Zones =
 					["isDaily"] = true,
 				})),
 				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11063, {	-- Earning Your Wings
-					["provider"] = { "n", 22433 } ,	-- Ja'y Nosliw
+					["provider"] = { "n", 22433 },	-- Ja'y Nosliw
 					["sourceQuests"] = { 11084 },	-- Stand Tall, Captain!
 					["coord"] = { 65.9, 87.2, SHADOWMOON_VALLEY },
 				})),
 				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11064, {	-- Dragonmaw Race: The Ballad of Oldie McOld
-					["provider"] = { "n", 23340 } ,	-- Murg "Oldie" Muckjaw
+					["provider"] = { "n", 23340 },	-- Murg "Oldie" Muckjaw
 					["sourceQuests"] = { 11063 },	-- Earning Your Wings
 					["coord"] = { 65.2, 85.7, SHADOWMOON_VALLEY },
 				})),
 				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11067, {	-- Dragonmaw Race: Trope the Filth-Belcher
-					["provider"] = { "n", 23342 } ,	-- Trope the Filth-Belcher
+					["provider"] = { "n", 23342 },	-- Trope the Filth-Belcher
 					["sourceQuests"] = { 11064 },	-- Dragonmaw Race: The Ballad of Oldie McOld
 					["coord"] = { 65.2, 85.5, SHADOWMOON_VALLEY },
 				})),
 				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11068, {	-- Dragonmaw Race: Corlok the Vet
-					["provider"] = { "n", 23344 } ,	-- Corlok the Vet
+					["provider"] = { "n", 23344 },	-- Corlok the Vet
 					["sourceQuests"] = { 11067 },	-- Dragonmaw Race: Trope the Filth-Belcher
 					["coord"] = { 65.2, 85.2, SHADOWMOON_VALLEY },
 				})),
 				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11069, {	-- Dragonmaw Race: Wing Commander Ichman
-					["provider"] = { "n", 23345 } ,	-- Wing Commander Ichman
+					["provider"] = { "n", 23345 },	-- Wing Commander Ichman
 					["sourceQuests"] = { 11068 },	-- Dragonmaw Race: Corlok the Vet
 					["coord"] = { 65.2, 85.1, SHADOWMOON_VALLEY },
 				})),
 				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11070, {	-- Dragonmaw Race: Wing Commander Mulverick
-					["provider"] = { "n", 23346 } ,	-- Wing Commander Mulverick
+					["provider"] = { "n", 23346 },	-- Wing Commander Mulverick
 					["sourceQuests"] = { 11069 },	-- Dragonmaw Race: Wing Commander Ichman
 					["coord"] = { 65.2, 84.9, SHADOWMOON_VALLEY },
 				})),
 				applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11071, {	-- Dragonmaw Race: Captain Skyshatter
-					["provider"] = { "n", 23348 } ,	-- Captain Skyshatter
+					["provider"] = { "n", 23348 },	-- Captain Skyshatter
 					["sourceQuests"] = { 11070 },	-- Dragonmaw Race: Wing Commander Mulverick
 					["coord"] = { 65.5, 85.3, SHADOWMOON_VALLEY },
 					["groups"] = {

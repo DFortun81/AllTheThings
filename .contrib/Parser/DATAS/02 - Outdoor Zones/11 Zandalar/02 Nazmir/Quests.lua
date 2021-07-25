@@ -910,7 +910,7 @@ _.Zones =
 						47602,	-- Ready For Action
 					},
 					["provider"] = { "n", 131978 },	-- Lashk
-					["coord"] = { 67.4, 41.9 , 863 },
+					["coord"] = { 67.4, 41.9, 863 },
 					["races"] = HORDE_ONLY,
 				}),
 				q(48699, {	-- Sneaking into Zalamar

@@ -1647,16 +1647,16 @@ _.NeverImplemented =
 	n(-160, {	-- Mounts
 		a(model(9475, i(13325))),		-- Fluorescent Green Mechanostrider (Never added in Game)
 		h(model(11641, i(14062, {		-- Kodo Mount						(Never added in Game)
-			{ ["mountID"]= 18363, ["u"] = NEVER_IMPLEMENTED }
+			{ ["mountID"] = 18363, ["u"] = NEVER_IMPLEMENTED }
 		}))),
 		a(model(10662, n(11148, {	-- Purple Mechanostrider				(Never added in Game)
-			{ ["mountID"]= 17455, ["u"] = NEVER_IMPLEMENTED }
+			{ ["mountID"] = 17455, ["u"] = NEVER_IMPLEMENTED }
 		}))),
 		a(model(10664, n(11149, {	-- Red and Blue Mechanostrider			(Never added in Game)
-			{ ["mountID"]= 17456, ["u"] = NEVER_IMPLEMENTED }
+			{ ["mountID"] = 17456, ["u"] = NEVER_IMPLEMENTED }
 		}))),
 		a(model(9476, n(10180, {	-- Unpainted Mechanostrider				(Never added in Game)
-			{ ["mountID"]= 15781, ["u"] = NEVER_IMPLEMENTED }
+			{ ["mountID"] = 15781, ["u"] = NEVER_IMPLEMENTED }
 		}))),
 		i(168673),	-- keys to the silver mono-wheel (no mount in yet)
 		spell(215545),	-- Fel Bat (Test) (Actual name of the Item)
@@ -1664,10 +1664,10 @@ _.NeverImplemented =
 		i(8627),	-- Reins of the Nightsaber								(Never added in Game)
 		a(model(6447, i(8628))),	-- Reins of the Spotted Nightsaber		(Never added in Game)
 		a(model(6443, i(8630, {		-- Reins of the Bengal Tiger			(Never added in Game)
-			{ ["mountID"]= 10790 }
+			{ ["mountID"] = 10790 }
 		}))),
 		a(model(4805, i(8633, {		-- Reins of the Leopard					(Never added in Game)
-			{ ["mountID"]= 10788 }
+			{ ["mountID"] = 10788 }
 		}))),
 		a(model(4805, i(12325))),	-- Reins of the Primal Leopard			(Never added in Game)
 		a(model(6442, i(12326))),	-- Reins of the Tawny Sabercat			(Never added in Game)

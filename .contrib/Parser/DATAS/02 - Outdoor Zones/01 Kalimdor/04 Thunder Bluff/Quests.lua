@@ -56,7 +56,7 @@ _.Zones =
 				}),
 				q(1102,  {	-- A Vengeful Fate
 					["provider"] = { "n", 4451 },	-- Auld Stonespire
-					["coord"] = { 36.2, 59.8 , THUNDER_BLUFF },
+					["coord"] = { 36.2, 59.8, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["u"] = REMOVED_FROM_GAME,
 					["g"] = {

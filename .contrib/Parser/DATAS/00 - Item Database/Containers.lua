@@ -251,7 +251,7 @@
 -- i(32569);		--[[Apexis Shard]]
 -- i(32572);		--[[Apexis Crystal]]
 
--- i(32624);		--[[Large Iron Metamorphosis Geode ]]
+-- i(32624);		--[[Large Iron Metamorphosis Geode]]
 -- i(32625);		--[[Small Iron Metamorphosis Geode]]
 -- i(32626);		--[[Large Copper Metamorphosis Geode]]
 -- i(32627);		--[[Small Copper Metamorphosis Geode]]

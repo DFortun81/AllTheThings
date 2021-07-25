@@ -136,10 +136,10 @@ _.Achievements =
 			})),
 			un(REMOVED_FROM_GAME, ach(6433)),	-- Realm First! Challenge Conqueror: Gold
 			un(REMOVED_FROM_GAME, ach(1402, {	-- Realm First! Conqueror of Naxxramas
-				un(REMOVED_FROM_GAME, title(90)),	-- ,Conqueror of Naxxramas
+				un(REMOVED_FROM_GAME, title(90)),	-- , Conqueror of Naxxramas
 			})),
 			un(REMOVED_FROM_GAME, ach(3117, {	-- Realm First! Death's Demise
-				un(REMOVED_FROM_GAME, title(124)),	-- ,Death's Demise
+				un(REMOVED_FROM_GAME, title(124)),	-- , Death's Demise
 			})),
 			un(REMOVED_FROM_GAME, ach(4576)),	-- Realm First! Fall of the Lich King
 			un(REMOVED_FROM_GAME, ach(4078, {	-- Realm First! Grand Crusader

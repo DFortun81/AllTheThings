@@ -15,7 +15,7 @@ _.Zones =
 				q(57986, {	-- A Burden Worth Bearing
 					["sourceQuests"] = { 57984 },	-- The Ones in Charge
 					["provider"] = { "n", 160211 },	-- Aspirant Thales
-					["coord"] = { 32.0 , 27.4, MALDRAXXUS },
+					["coord"] = { 32.0, 27.4, MALDRAXXUS },
 				}),
 				q(58751, {	-- A Common Peril
 					["sourceQuests"] = { 60886 },	-- The Seat of the Primus

@@ -22,7 +22,7 @@ _.Zones =
 					}),
 				}),
 				n(QUESTS, {
-					q(36630 , {	-- A Surly Dwarf
+					q(36630, {	-- A Surly Dwarf
 						["provider"] = { "n", 86069 },	-- Lieutenant Howell
 						["coord"] = { 35.6, 75.1, 622 },
 						["sourceQuests"] = { 36629 },	-- Inspiring Ashran

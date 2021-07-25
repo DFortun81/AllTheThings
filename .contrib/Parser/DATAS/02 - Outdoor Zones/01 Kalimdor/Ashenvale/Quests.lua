@@ -1924,7 +1924,7 @@ _.Zones =
 					-- #endif
 					["cr"] = 12677,	-- Shadumbra
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(20, 7 ,20),
+					["lvl"] = lvlsquish(20, 7, 20),
 					["timeline"] = {
 						"added 1.11.1.10772",
 					},
@@ -1939,7 +1939,7 @@ _.Zones =
 					-- #endif
 					["cr"] = 12676,	-- Sharptalon
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(20, 7 ,20),
+					["lvl"] = lvlsquish(20, 7, 20),
 					["description"] = "Can be found roaming the woods.",
 					["timeline"] = {
 						"added 1.11.1.10772",
@@ -2673,7 +2673,7 @@ _.Zones =
 					["coord"] = { 12.06, 34.63, ASHENVALE },
 					["cr"] = 12940,	-- Vorsha the Lasher
 					["races"] = HORDE_ONLY,
-					["lvl"] = lvlsquish(20, 7 ,20),
+					["lvl"] = lvlsquish(20, 7, 20),
 					["groups"] = {
 						i(17692),	-- Horn Ring
 					},

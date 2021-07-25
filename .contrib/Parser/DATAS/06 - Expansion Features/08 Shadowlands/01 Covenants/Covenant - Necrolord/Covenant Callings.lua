@@ -59,28 +59,28 @@ _.ExpansionFeatures =
 					}),
 					q(60390, {	-- Aiding Ardenweald
 						["provider"] = { "n", 158339 },	-- Sergeant Romark
-						["coord"] = { 54.2, 68.8 , MALDRAXXUS },
+						["coord"] = { 54.2, 68.8, MALDRAXXUS },
 						["g"] = {
 							i(181732),	-- Tribute of the Ambitious
 						},
 					}),
 					q(60393, {	-- Aiding Bastion
 						["provider"] = { "n", 158339 },	-- Sergeant Romark
-						["coord"] = { 54.2, 68.8 , MALDRAXXUS },
+						["coord"] = { 54.2, 68.8, MALDRAXXUS },
 						["g"] = {
 							i(181732),	-- Tribute of the Ambitious
 						},
 					}),
 					q(60396, {	-- Aiding Maldraxxus
 						["provider"] = { "n", 158339 },	-- Sergeant Romark
-						["coord"] = { 54.2, 68.8 , MALDRAXXUS },
+						["coord"] = { 54.2, 68.8, MALDRAXXUS },
 						["g"] = {
 							i(181732),	-- Tribute of the Ambitious
 						},
 					}),
 					q(60398, {	-- Aiding Revendreth
 						["provider"] = { "n", 158339 },	-- Sergeant Romark
-						["coord"] = { 54.2, 68.8 , MALDRAXXUS },
+						["coord"] = { 54.2, 68.8, MALDRAXXUS },
 						["g"] = {
 							i(181732),	-- Tribute of the Ambitious
 						},

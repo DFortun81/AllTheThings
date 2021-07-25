@@ -43,7 +43,7 @@ _.Zones =
 						["lvl"] = 110,
 						["isWorldQuest"] = true,
 					}),
-					q(46008 ,{	-- Balnazoth (Invasion WQ)
+					q(46008, {	-- Balnazoth (Invasion WQ)
 						["lvl"] = 98,
 						["isWorldQuest"] = true,
 					}),

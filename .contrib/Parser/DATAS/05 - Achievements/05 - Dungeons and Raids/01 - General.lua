@@ -36,7 +36,7 @@ _.Achievements =
 				crit(9),		-- Heroic: Shadowfang Keep
 			}),
 			ach(1658, {		-- Champion of the Frozen Wastes
-				title(97),		-- ,Champion of the Frozen Wastes
+				title(97),		-- , Champion of the Frozen Wastes
 				crit(1),		-- Sartharion the Onyx Guardian (10 or 25 player)
 				crit(2),		-- Kel'Thuzad (10 or 25 player)
 				crit(3),		-- Malygos (10 or 25 player)

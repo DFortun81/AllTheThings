@@ -458,7 +458,7 @@ _.Zones =
 					["lvl"] = lvlsquish(98, 10, 98),
 					["coord"] = { 45.8, 15.1, DUROTAR },
 					["races"] = { BLOODELF },
-					["classes"]= { DEMONHUNTER },
+					["classes"] = { DEMONHUNTER },
 					["sourceQuests"] = { 40982 },	-- Second Sight
 					["timeline"] = {
 						"added 7.0.1.20796",

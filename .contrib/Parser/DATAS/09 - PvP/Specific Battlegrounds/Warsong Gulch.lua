@@ -5,7 +5,7 @@
 _.PVP =
 {
 	pvp(n(-304, {	-- Battlegrounds
-		m(92 , {	-- Warsong Gulch
+		m(92, {	-- Warsong Gulch
 			["maps"] = {
 				NORTHERN_BARRENS,
 				ASHENVALE,

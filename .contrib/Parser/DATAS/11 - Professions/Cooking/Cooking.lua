@@ -3005,7 +3005,7 @@ profession(COOKING, {
 	n(REWARDS, applyclassicphase(TBC_PHASE_ONE, {
 		["maps"] = { SHATTRATH_CITY },
 		["requireSkill"] = COOKING,
-		["groups"]= {
+		["groups"] = {
 			i(33844, {	-- Barrel of Fish
 				i(33869),	-- Recipe: Broiled Bloodfin
 				i(34834, {	-- Recipe: Captain Rumsey's Lager

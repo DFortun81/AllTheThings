@@ -33,14 +33,14 @@ _.Zones =
 				}),
 				o(228016, {	-- Barrel of Fish
 					["questID"] = 34252,
-					["coord"] = { 62.4, 48.0 , TALADOR },
+					["coord"] = { 62.4, 48.0, TALADOR },
 					["g"] = {
 						currency(824),	-- Garrison Resources
 					},
 				}),
 				o(228023, {	-- Bonechewer Remnants
 					["questID"] = 34259,
-					["coord"] = { 33.3, 76.8 , TALADOR },
+					["coord"] = { 33.3, 76.8, TALADOR },
 					["g"] = {
 						currency(824),	-- Garrison Resources
 					},
@@ -101,7 +101,7 @@ _.Zones =
 				o(236483, {	-- Gift of the Ancients
 					["description"] = "Turn each statue to face the center.",
 					["questID"] = 36829,
-					["coord"] = { 28.4, 74.2 , TALADOR },
+					["coord"] = { 28.4, 74.2, TALADOR },
 					["g"] = {
 						i(118686),	-- Signet Ring of Gehs'taal
 					},
@@ -155,14 +155,14 @@ _.Zones =
 				}),
 				o(228022, {	-- Light of the Sea
 					["questID"] = 34258,
-					["coord"] = { 38.2, 12.5 , TALADOR },
+					["coord"] = { 38.2, 12.5, TALADOR },
 					["g"] = {
 						currency(824),	-- Garrison Resources
 					},
 				}),
 				o(227527, {	-- Lightbearer
 					["questID"] = 35964,
-					["coord"] = { 68.8, 56.2 , TALADOR },
+					["coord"] = { 68.8, 56.2, TALADOR },
 					["g"] = {
 						i(109192),	-- Lightbearer
 					},
@@ -195,7 +195,7 @@ _.Zones =
 				}),
 				o(228014, {	-- Relic of Aruuna
 					["questID"] = 34250,
-					["coord"] = { 75.8, 44.7 , TALADOR },
+					["coord"] = { 75.8, 44.7, TALADOR },
 					["g"] = {
 						i(116128),	-- Tiny Naaru Statue
 					},
@@ -372,7 +372,7 @@ _.Zones =
 				}),
 				o(228021, {	-- Treasure of Ango'rosh
 					["questID"] = 34257,
-					["coord"] = { 38.3, 84.5 , TALADOR },
+					["coord"] = { 38.3, 84.5, TALADOR },
 					["g"] = {
 						i(116119),	-- Ango'rosh Sorcerer Stone
 					},

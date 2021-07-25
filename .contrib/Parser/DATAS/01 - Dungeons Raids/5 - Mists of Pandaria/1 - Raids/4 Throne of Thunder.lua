@@ -1788,8 +1788,8 @@ _.Instances = { tier(5, {	-- Mists of Pandaria
 						{	-- Heroic: Lei Shen
 							["achievementID"] = 8067,	-- Heroic: Lei Shen
 							["g"] = {
-								{	-- ,Storm's End
-									["titleID"] = 222,	-- ,Storm's End
+								{	-- , Storm's End
+									["titleID"] = 222,	-- , Storm's End
 								},
 							},
 						},

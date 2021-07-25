@@ -408,7 +408,7 @@ _.Zones =
 				}),
 				n(64691, {	-- Lorewalker Huynh <Inscription Trainer>
 					["coord"] = { 82.0, 29.3, 390 },
-					["g"]= {
+					["g"] = {
 						i(137788),	-- Technique: Songs of Peace
 					},
 				}),

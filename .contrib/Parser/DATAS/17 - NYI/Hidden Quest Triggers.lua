@@ -10,7 +10,7 @@ _.HiddenQuestTriggers = {
 
 
 		tier(8, {	-- Battle for Azeroth
-			["g"] = bubbleDown({["u"]=1}, {
+			["g"] = bubbleDown({["u"] = 1}, {
 				n(QUESTS, {
 					q(47860),	-- A Rude Awakening
 					q(48994),	-- Akunda the Liar

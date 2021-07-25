@@ -8,7 +8,7 @@ _.Zones =
 		m(371, {	-- The Jade Forest
 			n(QUESTS, {
 				q(29619, {	-- A Courteous Guest
-					["sourceQuests"] = { 29618 } ,	-- The High Elder
+					["sourceQuests"] = { 29618 },	-- The High Elder
 					["provider"] = { "n", 54913 },	-- Lin Tenderpaw
 					["coord"] = { 44.9, 24.9, 371 },
 				}),

@@ -10,7 +10,7 @@ _.Zones =
 			n(TREASURES, {
 				o(235313, {	-- Abandoned Mining Pick (cannot be transmogged)
 					["questID"] = 36458,
-					["coord"]= { 40.6, 55.0, SPIRES_OF_ARAK },
+					["coord"] = { 40.6, 55.0, SPIRES_OF_ARAK },
 					["g"] = {
 						i(116913),	-- Peon's Mining Pick
 					},

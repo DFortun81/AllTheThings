@@ -308,8 +308,8 @@ _.Achievements =
 			{	-- Heroic: Lei Shen
 				["achievementID"] = 8067,	-- Heroic: Lei Shen
 				["g"] = {
-					{	-- ,Storm's End
-						["titleID"] = 222,	-- ,Storm's End
+					{	-- , Storm's End
+						["titleID"] = 222,	-- , Storm's End
 					},
 				},
 			},
@@ -351,8 +351,8 @@ _.Achievements =
 			{	-- Heroic: Will of the Emperor
 				["achievementID"] = 6724,	-- Heroic: Will of the Emperor
 				["groups"] = {
-					{	-- ,Delver of the Vaults
-						["titleID"] = 204,	-- ,Delver of the Vaults
+					{	-- , Delver of the Vaults
+						["titleID"] = 204,	-- , Delver of the Vaults
 					},
 				},
 			},
@@ -407,8 +407,8 @@ _.Achievements =
 				["achievementID"] = 8680,	-- Liberator of Orgrimmar
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					{	-- ,Liberator of Orgrimmar
-						["titleID"] = 212,	-- ,Liberator of Orgrimmar
+					{	-- , Liberator of Orgrimmar
+						["titleID"] = 212,	-- , Liberator of Orgrimmar
 						["races"] = HORDE_ONLY,
 					},
 				},
@@ -434,8 +434,8 @@ _.Achievements =
 			{	-- Mythic: Garrosh Hellscream
 				["achievementID"] = 8482,	-- Mythic: Garrosh Hellscream
 				["g"] = {
-					{	-- ,Hellscream's Downfall
-						["titleID"] = 214,	-- ,Hellscream's Downfall
+					{	-- , Hellscream's Downfall
+						["titleID"] = 214,	-- , Hellscream's Downfall
 					},
 				},
 			},

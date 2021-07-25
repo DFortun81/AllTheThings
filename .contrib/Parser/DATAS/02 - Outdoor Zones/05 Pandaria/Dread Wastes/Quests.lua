@@ -1096,7 +1096,7 @@ _.Zones =
 					["coord"] = { 54.7, 34.0, 422 },
 					["provider"] = { "n", 64815 },	-- Kor'ik
 					["isBreadcrumb"] = true,
-					["minReputation"] = { 1337 , HONORED },
+					["minReputation"] = { 1337, HONORED },
 					["sourceQuest"] = 31066,	-- A Cry From Darkness
 				}),
 				q(31208, {	-- Venomous Intent

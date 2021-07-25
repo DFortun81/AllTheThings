@@ -70,7 +70,7 @@ _.Instances = { tier(9, {	-- Shadowlands
 				["isWeekly"] = true,
 				["questID"] = 64531,	-- Mor'geth (WQ)
 				["isRaid"] = true,
-			--	["coord"] = { , ,  },
+				--["coord"] = { , ,  },
 				["maps"] = { 1543, 1820, 1821, 1822, 1823 },	-- all maps in the Maw
 				["cr"] = 178958,	-- Mor'geth <Tormentor of the Damned>
 				["g"] = bubbleDown({ ["modID"] = 3 }, {

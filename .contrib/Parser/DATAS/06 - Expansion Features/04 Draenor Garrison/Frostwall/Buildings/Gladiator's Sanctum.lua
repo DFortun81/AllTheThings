@@ -18,15 +18,15 @@ _.ExpansionFeatures =
 								},
 							}),
 							ach(9508, {	-- Warlord of Draenor (Horde) achievements used instead of criteria as criteria are behaving strangely with debug mode on
-								title(269),		-- ,Warlord of Draenor
+								title(269),		-- , Warlord of Draenor
 								ach(9515, {	-- Nemesis: Worgen Hunter
 									title(265),		-- Worgen Hunter
 								}),
 								ach(9514, {	-- Nemesis: Terror of the Tushui
-									title(268),		-- ,Terror of the Tushui
+									title(268),		-- , Terror of the Tushui
 								}),
 								ach(9513, {	-- Nemesis: Scourge of the Kaldorei
-									title(266),		-- ,Scourge of the Kaldorei
+									title(266),		-- , Scourge of the Kaldorei
 								}),
 								ach(9512, {	-- Nemesis: Manslayer
 									title(262),		-- the Manslayer
@@ -38,7 +38,7 @@ _.ExpansionFeatures =
 									title(264),		-- the Dwarfstalker
 								}),
 								ach(9509, {	-- Nemesis: Draenei Destroyer
-									title(267),		-- ,Draenei Destroyer
+									title(267),		-- , Draenei Destroyer
 								}),
 									ach(9639),		-- Fight, Kill, Salute!
 								}),

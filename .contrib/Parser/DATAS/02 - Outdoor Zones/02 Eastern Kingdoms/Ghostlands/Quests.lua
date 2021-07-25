@@ -450,7 +450,7 @@ _.Zones =
 					["coord"] = { 71.9, 32.6, GHOSTLANDS },
 					-- #else
 					["qg"] = 16289,	-- Advisor Valwyn
-					-- ["sourceQuest"] = ,	-- TODO: Figure out if there was a source quest prior.
+					--["sourceQuest"] = ,	-- TODO: Figure out if there was a source quest prior.
 					["coord"] = { 44.8, 32.8, GHOSTLANDS },
 					-- #endif
 					["races"] = HORDE_ONLY,
@@ -799,7 +799,7 @@ _.Zones =
 					["coord"] = { 72.6, 31.5, GHOSTLANDS },
 					-- #else
 					["qg"] = 16251,	-- Deathstalker Maltendis
-					-- ["sourceQuest"] = ,	-- TODO: Not sure if there was one before, check this in TBC
+					--["sourceQuest"] = ,	-- TODO: Not sure if there was one before, check this in TBC
 					["coord"] = { 44.8, 32.4, GHOSTLANDS },
 					-- #endif
 					["cost"] = {

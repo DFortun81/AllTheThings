@@ -5,7 +5,7 @@
 _.PVP =
 {
 	pvp(n(-10002, {	-- Classic
-		m(91 , {	-- Alterac Valley
+		m(91, {	-- Alterac Valley
 			["achievementID"] = 218,	-- Alterac Valley Victory
 			["g"] = {
 				faction(729, {	-- Frostwolf Clan
@@ -174,7 +174,7 @@ _.PVP =
 				}),
 			},
 		}),
-		m(93 , {	-- Arathi Basin
+		m(93, {	-- Arathi Basin
 			["achievementID"] = 154,	-- Arathi Basin Victory
 			["g"] = {
 				-- Arathi Basin Horde
@@ -756,7 +756,7 @@ _.PVP =
 				}),
 			},
 		}),
-		m(92 , {	-- Warsong Gulch
+		m(92, {	-- Warsong Gulch
 			["achievementID"] = 166,	-- Warsong Gulch Victory
 			["g"] = {
 				faction(890, {	-- Silverwing Sentinels

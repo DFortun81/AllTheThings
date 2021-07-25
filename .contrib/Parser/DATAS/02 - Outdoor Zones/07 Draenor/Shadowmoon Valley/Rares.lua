@@ -62,7 +62,7 @@ _.Zones =
 				}),
 				n(82268, {	-- Darkmaster Go'vid
 					["questID"] = 35448,
-					["coords"]= {
+					["coords"] = {
 						{ 39.4, 83.0, DRAENOR_SHADOWMOON_VALLEY },
 						{ 41.2, 81.9, DRAENOR_SHADOWMOON_VALLEY },
 						{ 39.6, 80.8, DRAENOR_SHADOWMOON_VALLEY },

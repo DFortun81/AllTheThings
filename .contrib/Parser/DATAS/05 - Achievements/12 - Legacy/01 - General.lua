@@ -40,7 +40,7 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, a(ach(10021))),	-- Chapter IV: Darkness Incarnate (Alliance)
 			un(REMOVED_FROM_GAME, h(ach(10148))),	-- Chapter IV: Darkness Incarnate(Horde)
 			un(REMOVED_FROM_GAME, ach(8325, {		-- Chapter V: Judgment of the Black Prince
-				un(REMOVED_FROM_GAME, title(306)),		-- ,Legend of Pandaria
+				un(REMOVED_FROM_GAME, title(306)),		-- , Legend of Pandaria
 			})),
 			un(REMOVED_FROM_GAME, ach(2358, {		-- Charger
 				["classes"] = { PALADIN },

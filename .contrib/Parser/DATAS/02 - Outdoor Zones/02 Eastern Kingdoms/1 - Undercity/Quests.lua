@@ -456,7 +456,7 @@ _.Zones =
 					["provider"] = { "n", 97766 },	-- Francis Serbacon <Author Extrodinaire>
 					["coord"] = { 77.8, 38.8, UNDERCITY },
 					["races"] = HORDE_ONLY,
-					["g"]= {
+					["g"] = {
 						recipe(192804),	-- Steamy Romance Novel Kit
 					},
 				}),

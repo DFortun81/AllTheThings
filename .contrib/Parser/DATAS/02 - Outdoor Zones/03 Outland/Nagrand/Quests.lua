@@ -128,7 +128,7 @@ _.Zones =
 					["provider"] = { "n", 18106 },	-- Jorin Deadeye
 					["coord"] = { 55.6, 37.6, NAGRAND },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 9906 ,	-- Message in a Battle
+					["sourceQuest"] = 9906,	-- Message in a Battle
 					["g"] = {
 						i(25623),	-- Bracers of the Battle Cleric
 						i(25624),	-- King's Bulwark
@@ -517,7 +517,7 @@ _.Zones =
 					["provider"] = { "n", 18106 },	-- Jorin Deadeye
 					["coord"] = { 55.6, 37.6, NAGRAND },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 9891 ,	-- Because Kilrath is a Coward
+					["sourceQuest"] = 9891,	-- Because Kilrath is a Coward
 				}),
 				q(9934,  {	-- Message to Garadar
 					["provider"] = { "n", 18261 },	-- Lantresor of the Blade

@@ -15,7 +15,7 @@ _.Zones =
 				fp(1849, {	-- Dalaran (Eagle)
 					["coord"] = { 72.6, 41.6, 627 },
 					["classes"] = { HUNTER },
-				}), ]]--
+				}),]]--
 			}),
 		}),
 	}),

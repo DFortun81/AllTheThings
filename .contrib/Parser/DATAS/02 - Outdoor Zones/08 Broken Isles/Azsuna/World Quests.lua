@@ -605,7 +605,7 @@ _.Zones =
 						["lvl"] = 110,
 						["isWorldQuest"] = true,
 					}),
-					q(43426 ,{	-- WANTED: Brogozog
+					q(43426, {	-- WANTED: Brogozog
 						["lvl"] = 110,
 						["isWorldQuest"] = true,
 					}),

@@ -393,7 +393,7 @@ _.Zones =
 					}),
 					q(33663,  {	-- Shredder vs. Saberon (H)
 						["provider"] = { "n", 85089 },	-- Rakthoth
-						["coord"] = { 51.2 ,48.0, GORGROND },
+						["coord"] = { 51.2, 48.0, GORGROND },
 						["races"] = HORDE_ONLY,
 						["altQuests"] = { 33662 },	-- Beatface vs. Boulder
 						["sourceQuests"] = {
@@ -647,7 +647,7 @@ _.Zones =
 					}),
 					q(33662,  {	-- Beatface vs. Boulder (H)
 						["provider"] = { "n", 85089 },	-- Rakthoth
-						["coord"] = { 51.2 ,48.0, GORGROND },
+						["coord"] = { 51.2, 48.0, GORGROND },
 						["races"] = HORDE_ONLY,
 						["altQuests"] = { 33663 },	-- Shredder vs. Saberon
 						["sourceQuests"] = {
@@ -1627,7 +1627,7 @@ _.Zones =
 				q(36441, {	-- Reclaiming Property
 					--["objectID"] = 234474,	-- Saberon Stash
 					["icon"] = "Interface\\Icons\\inv_misc_herb_whiptail",
-					["coord"] = { 51.0 ,51.6, GORGROND },
+					["coord"] = { 51.0, 51.6, GORGROND },
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 36438,	-- Beatface vs. Boulder
 				}),
@@ -1668,7 +1668,7 @@ _.Zones =
 					},
 				}),
 				o(234474, {	-- Saberon Stash
-					["coord"] = { 51.0 ,51.6, GORGROND },
+					["coord"] = { 51.0, 51.6, GORGROND },
 					["g"] = {
 						q(33660, {	-- The Sacking of the Saberon
 							--["objectID"] = 234474,	-- Saberon Stash

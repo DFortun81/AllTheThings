@@ -21,7 +21,7 @@ _.Zones =
 					["questID"] = 54272,	-- Battle Bots (Alliance)
 					["icon"] = "Interface\\Icons\\INV_Engineering_ReavesBattery",
 					["races"] = ALLIANCE_ONLY,	-- Only Alliance can collect the parts from this.
-					["g"] ={
+					["g"] = {
 						i(166715, {	-- Rebuilt Gorilla Bot
 							--Note!! The description we want to use will be on the parts because we don't want it written on the item!  See below.
 							["coord"] = { 41.69, 42.54, 864 },	-- Location chest spawns

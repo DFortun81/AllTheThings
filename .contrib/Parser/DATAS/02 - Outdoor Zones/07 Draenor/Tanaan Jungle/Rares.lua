@@ -389,7 +389,7 @@ _.Zones =
 				n(91695, {	-- Grand Warlock Nethekurse
 					["questID"] = 38400,
 					["isDaily"] = true,
-					["coords" ] = {	-- **Coords unconfirmed, relied on wowhead**
+					["coords"] = {	-- **Coords unconfirmed, relied on wowhead**
 						{ 47.4, 40.6, 534 },
 						{ 46.2, 42.8, 534 },
 					},

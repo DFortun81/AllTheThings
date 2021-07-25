@@ -51,8 +51,8 @@ _.Achievements =
 			{	-- Bane of the Fallen King
 				["achievementID"] = 4583,	-- Bane of the Fallen King
 				["g"] = {
-					{	-- ,Bane of the Fallen King
-						["titleID"] = 139,	-- ,Bane of the Fallen King
+					{	-- , Bane of the Fallen King
+						["titleID"] = 139,	-- , Bane of the Fallen King
 					},
 					{	-- The Frozen Throne (10 player)
 						["achievementID"] = 4530,	-- The Frozen Throne (10 player)

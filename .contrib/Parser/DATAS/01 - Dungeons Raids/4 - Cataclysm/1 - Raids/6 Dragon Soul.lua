@@ -590,8 +590,8 @@ _.Instances = { tier(4, {	-- Cataclysm
 						{	-- Destroyer's End
 							["achievementID"] = 6177,	-- Destroyer's End
 							["g"] = {
-								{	-- ,Destroyer's End
-									["titleID"] = 196,	-- ,Destroyer's End
+								{	-- , Destroyer's End
+									["titleID"] = 196,	-- , Destroyer's End
 								},
 							},
 						},
@@ -877,8 +877,8 @@ _.Instances = { tier(4, {	-- Cataclysm
 						{	-- Destroyer's End
 							["achievementID"] = 6177,	-- Destroyer's End
 							["g"] = {
-								{	-- ,Destroyer's End
-									["titleID"] = 196,	-- ,Destroyer's End
+								{	-- , Destroyer's End
+									["titleID"] = 196,	-- , Destroyer's End
 								},
 							},
 						},
@@ -889,8 +889,8 @@ _.Instances = { tier(4, {	-- Cataclysm
 						{	-- Heroic: Madness of Deathwing
 							["achievementID"] = 6116,	-- Heroic: Madness of Deathwing
 							["g"] = {
-								{	-- ,Savior of Azeroth
-									["titleID"] = 194,	-- ,Savior of Azeroth
+								{	-- , Savior of Azeroth
+									["titleID"] = 194,	-- , Savior of Azeroth
 								},
 							},
 						},

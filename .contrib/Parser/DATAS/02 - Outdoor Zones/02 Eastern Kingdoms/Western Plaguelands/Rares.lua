@@ -71,7 +71,7 @@ _.Zones =
 
 				}),
 				n(50922, {	-- Warg
-					["coords" ] ={
+					["coords"] = {
 						{ 57.0, 63.4, WESTERN_PLAGUELANDS },
 						{ 57.2, 60.6, WESTERN_PLAGUELANDS },
 					},

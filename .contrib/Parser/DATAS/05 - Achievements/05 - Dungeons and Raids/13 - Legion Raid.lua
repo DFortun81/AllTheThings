@@ -111,7 +111,7 @@ _.Achievements =
 			ach(10849),		-- Mythic: Grand Magistrix Elisande
 			ach(11397),		-- Mythic: Guarm
 			ach(10850, {	-- Mythic: Gul'dan
-				title(342),		-- ,Vengeance Incarnate
+				title(342),		-- , Vengeance Incarnate
 			}),
 			ach(11775),		-- Mythic: Harjatan
 			ach(11398),		-- Mythic: Helya

@@ -57,7 +57,7 @@ _.Craftables =
             q(40753, { -- Blingtron 6000
                 ["qg"] = 101527,    -- Blingtron 6000
                 ["isDaily"] = true,
-                ["g"] ={
+                ["g"] = {
                     i(132892, {	-- Blingtron 6000 Gift Package
                         i(87250),	-- Depleted-Kyparium Rocket Mount
                         i(87251),	-- Geosynchronous World Spinner Mount

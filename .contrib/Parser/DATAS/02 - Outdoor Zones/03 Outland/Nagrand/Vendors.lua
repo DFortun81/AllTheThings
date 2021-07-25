@@ -322,7 +322,7 @@ _.Zones =
 					["description"] = "This NPC is only accessible when the Horde controls Halaa.",
 					["coord"] = { 41.2, 44.2, NAGRAND },
 					["races"] = HORDE_ONLY,
-					["groups"]= {
+					["groups"] = {
 						i(27654, {	-- Avenger's Legplates
 							["cost"] = {
 								{ "i", 26045, 40 },	-- 40x Halaa Battle Token

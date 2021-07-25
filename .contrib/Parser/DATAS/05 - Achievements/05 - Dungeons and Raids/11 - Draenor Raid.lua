@@ -78,7 +78,7 @@ _.Achievements =
 			ach(8977),		-- Lineage of Power
 			ach(8974),		-- More Like Wrecked-us
 			ach(10043, {	-- Mythic: Archimonde
-				title(319),		-- ,Defiler's End
+				title(319),		-- , Defiler's End
 			}),
 			ach(8956),		-- Mythic: Beastlord Darmac
 			ach(8973, {		-- Mythic: Blackhand's Crucible

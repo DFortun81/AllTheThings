@@ -387,7 +387,7 @@ _.ExpansionFeatures =
 						["maps"] = { 641 },	-- Val'sharah
 					}),
 					q(45425, {	-- Grovebound
-						["classes"]= { DRUID },
+						["classes"] = { DRUID },
 						["providers"] = {
 							{ "n", 120070 },	-- Thisalee Crow
 							{ "n", 120084 },	-- Druid of the Talon
@@ -518,7 +518,7 @@ _.ExpansionFeatures =
 						["maps"] = { MOONGLADE },
 					}),
 					q(46676, {	-- Nature's Touch
-						["classes"]= { DRUID },
+						["classes"] = { DRUID },
 						["providers"] = {
 							{ "n", 120070 },	-- Thisalee Crow
 							{ "n", 120084 },	-- Druid of the Talon
@@ -549,7 +549,7 @@ _.ExpansionFeatures =
 						["maps"] = { 747 },	-- The Dreamway
 					}),
 					q(46677, {	-- Prick of a Thistle
-						["classes"]= { DRUID },
+						["classes"] = { DRUID },
 						["providers"] = {
 							{ "n", 120070 },	-- Thisalee Crow
 							{ "n", 120084 },	-- Druid of the Talon
@@ -832,7 +832,7 @@ _.ExpansionFeatures =
 						["sourceQuests"] = { 41468 },	-- Mistress of the Claw
 					}),
 					q(46675, {	-- To Track a Demon
-						["classes"]= { DRUID },
+						["classes"] = { DRUID },
 						["providers"] = {
 							{ "n", 120070 },	-- Thisalee Crow
 							{ "n", 120084 },	-- Druid of the Talon

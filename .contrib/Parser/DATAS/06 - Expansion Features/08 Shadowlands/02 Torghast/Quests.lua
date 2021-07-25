@@ -307,7 +307,7 @@ _.ExpansionFeatures =
 					},
 				}),
 				-- 9.1
-				q(64170 , {	-- Champion: ELGU - 007 [Kyrian]
+				q(64170, {	-- Champion: ELGU - 007 [Kyrian]
 					["customCollect"] = "SL_COV_KYR",	-- Kyrian
 					["sourceQuests"] = { 64186 },	-- ELGU - 007's Missing Power Core
 					["provider"] = { "n", 179666 },	-- ELGU - 007
@@ -315,7 +315,7 @@ _.ExpansionFeatures =
 						follower(1328),	-- ELGU - 007
 					},
 				}),
-				q(64168 , {	-- Champion: Spore of Marasmius [Night Fae]
+				q(64168, {	-- Champion: Spore of Marasmius [Night Fae]
 					["customCollect"] = "SL_COV_NFA",	-- Night Fae
 					["sourceQuests"] = { 64184 },	-- Missing Friend
 					["provider"] = { "n", 179670 },	-- Spore of Marasmius
@@ -333,7 +333,7 @@ _.ExpansionFeatures =
 				}),
 				-------- unverifed on live yet 9.1 Champions
 				--[[
-				q(64654 , {	-- Champion: Ben Howell
+				q(64654, {	-- Champion: Ben Howell
 					["customCollect"] = "",	--
 					["sourceQuests"] = {  },	--
 					["provider"] = { "n",  },	--
@@ -342,7 +342,7 @@ _.ExpansionFeatures =
 					},
 				}),
 
-				q(64171 , {	-- Champion: Kiaranyka
+				q(64171, {	-- Champion: Kiaranyka
 					["customCollect"] = "",	--
 					["sourceQuests"] = {  },	--
 					["provider"] = { "n",  },	--
@@ -351,7 +351,7 @@ _.ExpansionFeatures =
 					},
 				}),
 
-				q(64175 , {	-- Champion: Lassik Spinebender
+				q(64175, {	-- Champion: Lassik Spinebender
 					["customCollect"] = "",	--
 					["sourceQuests"] = {  },	--
 					["provider"] = { "n",  },	--
@@ -360,7 +360,7 @@ _.ExpansionFeatures =
 					},
 				}),
 
-				q(64172 , {	-- Champion: Ryuja Shockfist
+				q(64172, {	-- Champion: Ryuja Shockfist
 					["customCollect"] = "",	--
 					["sourceQuests"] = {  },	--
 					["provider"] = { "n",  },	--
@@ -368,7 +368,7 @@ _.ExpansionFeatures =
 						follower(1330),	-- Ryuja Shockfist
 					},
 				}),
-				q(64173 , {	-- Champion: Kinessa the Absorbent
+				q(64173, {	-- Champion: Kinessa the Absorbent
 					["customCollect"] = "",	--
 					["sourceQuests"] = {  },	--
 					["provider"] = { "n",  },	--

@@ -5,7 +5,7 @@
 _.PVP =
 {
 	pvp(n(-304, {	-- Battlegrounds
-		m(93 , {	-- Arathi Basin
+		m(93, {	-- Arathi Basin
 			["maps"] = {
 				ARATHI_HIGHLANDS,
 				837,	-- Arathi Basin

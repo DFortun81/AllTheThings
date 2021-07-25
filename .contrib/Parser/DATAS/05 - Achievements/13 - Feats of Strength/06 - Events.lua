@@ -55,10 +55,10 @@ _.Achievements =
 			un(REMOVED_FROM_GAME, ach(2456)),		-- Vampire Hunter
 			un(REMOVED_FROM_GAME, ach(5533)),		-- Veteran of the Shifting Sands
 			un(REMOVED_FROM_GAME, a(ach(9729, {		-- Victory in Hillsbrad (Alliance)
-				un(REMOVED_FROM_GAME,title(280)),		-- ,Tarren Mill Terror
+				un(REMOVED_FROM_GAME, title(280)),		-- , Tarren Mill Terror
 			}))),
 			un(REMOVED_FROM_GAME,h(ach(9566, {		-- Victory in Hillsbrad (Horde)
-				un(REMOVED_FROM_GAME,title(281)),		-- ,Southshore Slayer
+				un(REMOVED_FROM_GAME, title(281)),		-- , Southshore Slayer
 			}))),
 			un(REMOVED_FROM_GAME, ach(2398)),		-- WoW's 4th Anniversary
 			un(REMOVED_FROM_GAME, ach(4400)),		-- WoW's 5th Anniversary

@@ -594,7 +594,7 @@ _.Zones =
 		m(SHATTRATH_CITY, {
 			n(VENDORS, {
 				n(19662, {	-- Aaron Hollman <Blacksmithing Supplies>
-					["coord" ] = { 64.0, 71.8, SHATTRATH_CITY },
+					["coord"] = { 64.0, 71.8, SHATTRATH_CITY },
 					["minReputation"] = { 1011, NEUTRAL },	-- Lower City, Neutral.
 					["groups"] = {
 						i(23591, {	-- Plans: Adamantite Cleaver
@@ -1039,7 +1039,7 @@ _.Zones =
 					["groups"] = MADAME_RUBY_GROUPS,
 				}),
 				n(21655, {	-- Nakodu <Lower City Quartermaster>
-					["coord" ] = { 62.6, 69.0, SHATTRATH_CITY },
+					["coord"] = { 62.6, 69.0, SHATTRATH_CITY },
 					["minReputation"] = { 1011, NEUTRAL },	-- Lower City, Neutral.
 					["groups"] = {
 						i(30633),	-- Auchenai Key
@@ -1217,7 +1217,7 @@ _.Zones =
 					},
 				}),
 				n(19331, {	-- Quartermaster Enuril <Scryer Quartermaster>
-					["coord" ] = { 60.6, 64.2, SHATTRATH_CITY },
+					["coord"] = { 60.6, 64.2, SHATTRATH_CITY },
 					["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
 					["groups"] = {
 						i(23133),	-- Design: Brilliant Blood Garnet

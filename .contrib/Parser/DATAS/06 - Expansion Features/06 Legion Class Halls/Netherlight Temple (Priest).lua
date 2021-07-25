@@ -140,7 +140,7 @@ _.ExpansionFeatures =
 						["provider"] = { "o", 248398 },	-- Ethereal Communication Device
 					}),
 					q(41632, {	-- A Gift of Time
-						["sourceQuests"] = { 41630 } ,	-- The Nexus Vault
+						["sourceQuests"] = { 41630 },	-- The Nexus Vault
 						["classes"] = { PRIEST },
 						["provider"] = { "n", 105081 },	-- Archmage Kalec
 						["coord"] = { 28.6, 49.9, 627 },	-- Dalaran
@@ -179,7 +179,7 @@ _.ExpansionFeatures =
 						["classes"] = { PRIEST },
 					}),
 					q(43797, {	-- Aiding the Conclave
-						["sourceQuests"] = { 43397 } ,	-- United As One
+						["sourceQuests"] = { 43397 },	-- United As One
 						["classes"] = { PRIEST },
 						["provider"] = { "n", 111616 },	-- Lady Liadrin
 						["coord"] = { 50.2, 74.1, 24 },	-- Dalaran
@@ -350,7 +350,7 @@ _.ExpansionFeatures =
 						["maps"] = { 630 },	-- Azsuna
 					}),
 					q(41628, {	-- Eyes of the Dragon
-						["sourceQuests"] = { 41626 } ,	-- A Forgotten Enemy
+						["sourceQuests"] = { 41626 },	-- A Forgotten Enemy
 						["classes"] = { PRIEST },
 						["provider"] = { "n", 105917 },	-- Image of Kalec
 					}),
@@ -377,7 +377,7 @@ _.ExpansionFeatures =
 						["coord"] = { 50.9, 46.8, 702 },
 					}),
 					q(41629, {	-- Harnessing the Holy Fire
-						["sourceQuests"] = { 41627 } ,	-- Eyes of the Dragon
+						["sourceQuests"] = { 41627 },	-- Eyes of the Dragon
 						["classes"] = { PRIEST },
 						["provider"] = { "n", 105917 },	-- Image of Kalec
 					}),
@@ -599,7 +599,7 @@ _.ExpansionFeatures =
 						["provider"] = { "n", 101313 },	-- Prophet Velen
 					}),
 					q(41625, {	-- The Light's Wrath
-						["sourceQuests"] = { 40706 } ,	-- A Legend You Can Hold
+						["sourceQuests"] = { 40706 },	-- A Legend You Can Hold
 						["classes"] = { PRIEST },
 						["coord"] = { 51.5, 47.9, 702 },
 						["provider"] = { "n", 101314 },	-- Alonsus Faol
@@ -612,13 +612,13 @@ _.ExpansionFeatures =
 						["maps"] = { 748 },
 					}),
 					q(41631, {	-- The Nexus Vault
-						["sourceQuests"] = { 41630 } ,	-- Unleashing Judgment
+						["sourceQuests"] = { 41630 },	-- Unleashing Judgment
 						["classes"] = { PRIEST },
 						["provider"] = { "n", 105917 },	-- Image of Kalec
 						["maps"] = { 736 },	-- The Nexus Vault
 					}),
 					q(45788, {	-- The Speaker Awaits
-						["sourceQuests"] = { 46246 } ,	-- Strike Them Down
+						["sourceQuests"] = { 46246 },	-- Strike Them Down
 						["classes"] = { PRIEST },
 						["maps"] = { 646 },	-- Broken Shore
 					}),
@@ -666,7 +666,7 @@ _.ExpansionFeatures =
 						["coord"] = { 51.1, 48.5, 702 },
 					}),
 					q(41630, {	-- Unleashing Judgment
-						["sourceQuests"] = { 41628 } ,	-- Harnessing the Holy Fire
+						["sourceQuests"] = { 41628 },	-- Harnessing the Holy Fire
 						["classes"] = { PRIEST },
 						["provider"] = { "n", 105917 },	-- Image of Kalec
 					}),

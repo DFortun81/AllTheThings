@@ -193,7 +193,7 @@ _.Zones =
 							["provider"] = { "n", 15119 },	-- Barrus
 							["coord"] = { 28.6, 74.6, IRONFORGE },
 							["isBreadcrumb"] = true,
-							["repeatable"]= true,
+							["repeatable"] = true,
 							["requireSkill"] = FISHING,
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 50,
@@ -274,7 +274,7 @@ _.Zones =
 							["requireSkill"] = INSCRIPTION,
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 108,
-							["g"]= {
+							["g"] = {
 								recipe(192804),	-- Steamy Romance Novel Kit
 							},
 						}),

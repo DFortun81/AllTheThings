@@ -640,7 +640,7 @@ _.Achievements =
 			ach(9738,  {	-- Warlord of Draenor (A)
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					title(269),	-- ,Warlord of Draenor
+					title(269),	-- , Warlord of Draenor
 					ach(9522, {	-- Nemesis: Troll Hunter
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {

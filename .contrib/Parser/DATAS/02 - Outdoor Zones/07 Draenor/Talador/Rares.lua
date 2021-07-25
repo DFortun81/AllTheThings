@@ -105,7 +105,7 @@ _.Zones =
 				}),
 				n(80471, {	-- Gennadian
 					["questID"] = 34929,
-					["coord"]= { 67.4, 80.6, TALADOR },
+					["coord"] = { 67.4, 80.6, TALADOR },
 					["g"] = {
 						i(116075),	-- Scales of Gennadian
 					},
@@ -365,7 +365,7 @@ _.Zones =
 				}),
 				n(86549, {	-- Steeltusk
 					["questID"] = 36858,
-					["coord" ] = { 67.7, 35.8, TALADOR },
+					["coord"] = { 67.7, 35.8, TALADOR },
 					["g"] = {
 						i(117562),	-- Steeltusk's Steel Tusk
 					},
@@ -373,7 +373,7 @@ _.Zones =
 				n(77634, {	-- Taladorantula
 					["description"] = "Kill small spiders around the egg sacs until you see warnings. The third warning should spawn the mob.",
 					["questID"] = 34171,
-					["coord" ] = { 59.0, 87.4, TALADOR },
+					["coord"] = { 59.0, 87.4, TALADOR },
 					["g"] = {
 						i(116126),	-- Taladorantula Terrofang
 					},

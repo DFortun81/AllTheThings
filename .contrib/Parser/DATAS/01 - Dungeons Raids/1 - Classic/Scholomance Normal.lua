@@ -158,7 +158,7 @@ _.Instances = { tier(1, {	-- Classic
 						})),
 						q(5262, {	-- The Truth Comes Crashing Down
 							["u"] = REMOVED_FROM_GAME,
-							["crs" ] = { 10813 },	-- Balnazzar
+							["crs"] = { 10813 },	-- Balnazzar
 							["provider"] = { "i", 13250 },	-- Head of Balnazzar
 							["sourceQuest"] = 5251,	-- The Archivist
 						}),
